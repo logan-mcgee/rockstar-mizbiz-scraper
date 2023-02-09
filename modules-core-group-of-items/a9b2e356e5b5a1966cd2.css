@@ -1,0 +1,93 @@
+.d43222c91b7813ddcb52 {
+  --padding-dynamic: var(--padding-static);
+  --padding-dynamic-tb: var(--grid-gap-static-lg);
+  padding: var(--padding-t, var(--padding-dynamic-tb, 0)) var(--padding-dynamic, 0) var(--padding-b, var(--padding-dynamic-tb, 0)) var(--padding-dynamic, 0)
+}
+
+[data-game=rdo][data-template=halloween] .d43222c91b7813ddcb52 {
+  --grid-gap-static-lg: 0
+}
+
+:root [data-game^=gta] .ad1bf0c179c133e32145 h4 {
+  font-family: var(--font-family-std);
+  font-size: var(--font-size-4)
+}
+
+:root [data-game=rdo] .ad1bf0c179c133e32145 h4,
+:root [data-game^=rdr] .ad1bf0c179c133e32145 h4 {
+  --color-h: #e8e8e8;
+  font-family: var(--font-family-std)
+}
+
+.c54517becdcc361e4d2c {
+  padding-top: 1.5rem
+}
+
+.a54825b2222b5c43e8e5 {
+  --padding-dynamic: var(--padding-static);
+  --padding-dynamic-tb: initial;
+  --grid-gap-dynamic: var(--grid-gap-static-lg);
+  margin: 0 auto;
+  max-width: calc(var(--max-width-dynamic, var(--max-width-static-md)) + var(--padding-dynamic, 0px) * 2) !important;
+  width: 100%
+}
+
+.d6ab9c37be8d844c7a6c,
+.a54825b2222b5c43e8e5 {
+  grid-gap: var(--grid-gap-dynamic);
+  display: grid;
+  grid-template-columns: repeat(var(--grid-num-columns, 1), minmax(0, 1fr));
+  padding: var(--padding-t, var(--padding-dynamic-tb, 0)) var(--padding-dynamic, 0) var(--padding-b, var(--padding-dynamic-tb, 0)) var(--padding-dynamic, 0)
+}
+
+.d6ab9c37be8d844c7a6c {
+  --grid-gap-dynamic: var(--grid-gap-static-md);
+  --background-color: var(--image-title-text-background, transparent);
+  --padding-dynamic: initial;
+  --padding-dynamic-tb: initial;
+  background-color: var(--background-color, transparent)
+}
+
+.d6ab9c37be8d844c7a6c h1,
+.d6ab9c37be8d844c7a6c h1.aaae53d5191443663ba0 {
+  color: var(--color-h-dynamic, var(--color-h1, var(--color-h, inherit)))
+}
+
+.d6ab9c37be8d844c7a6c h2 {
+  color: var(--color-h-dynamic, var(--color-h2, var(--color-h, inherit)))
+}
+
+.d6ab9c37be8d844c7a6c h3 {
+  color: var(--color-h-dynamic, var(--color-h3, var(--color-h, inherit)))
+}
+
+.d6ab9c37be8d844c7a6c h3[data-context=newswire-subtitle] {
+  color: var(--color-subtitle-dynamic, var(--color-h-dynamic, var(--color-h3, var(--color-h, inherit))))
+}
+
+.d6ab9c37be8d844c7a6c h4,
+.d6ab9c37be8d844c7a6c h5,
+.d6ab9c37be8d844c7a6c h6 {
+  color: var(--color-h-dynamic, var(--color-h, inherit))
+}
+
+.d6ab9c37be8d844c7a6c [template=community] {
+  --time-color: var(--body-color, #2d2d2d);
+  --breadcrumb-separator-filter-invert: invert(0)
+}
+
+.d6ab9c37be8d844c7a6c [template=community] main {
+  color: var(--color-h, #161616)
+}
+
+.d6ab9c37be8d844c7a6c [template=community] p {
+  color: var(--body-color, #2d2d2d)
+}
+
+.d6ab9c37be8d844c7a6c figure>div {
+  --padding-sides: 0px
+}
+
+.d6ab9c37be8d844c7a6c .a8bf1f04d75db58bdc23 {
+  --description-area-margin-top: 0px
+}
