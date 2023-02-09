@@ -1,0 +1,64 @@
+.e91e50dd7d33343905a6 {
+  --padding-dynamic-tb: initial
+}
+
+.e91e50dd7d33343905a6,
+.e91e50dd7d33343905a6 .c7a8d988e09ad045d3d0 {
+  --padding-dynamic: var(--padding-static);
+  --grid-gap-dynamic: var(--grid-gap-static-md);
+  grid-gap: var(--grid-gap-dynamic);
+  display: grid;
+  grid-template-columns: repeat(var(--grid-num-columns, 1), minmax(0, 1fr));
+  margin: 0 auto;
+  max-width: calc(var(--max-width-dynamic, var(--max-width-static-md)) + var(--padding-dynamic, 0px) * 2) !important;
+  padding: var(--padding-t, var(--padding-dynamic-tb, 0)) var(--padding-dynamic, 0) var(--padding-b, var(--padding-dynamic-tb, 0)) var(--padding-dynamic, 0);
+  width: 100%
+}
+
+.e91e50dd7d33343905a6 .c7a8d988e09ad045d3d0 {
+  --background-color: var(--image-title-text-background, transparent);
+  --padding-dynamic: initial;
+  --padding-dynamic-tb: initial;
+  --description-area-margin-top: 0px;
+  background-color: var(--background-color, transparent)
+}
+
+.e91e50dd7d33343905a6 .c7a8d988e09ad045d3d0 h1,
+.e91e50dd7d33343905a6 .c7a8d988e09ad045d3d0 h1.ad81ecacb956b13b9d80 {
+  color: var(--color-h-dynamic, var(--color-h1, var(--color-h, inherit)))
+}
+
+.e91e50dd7d33343905a6 .c7a8d988e09ad045d3d0 h2 {
+  color: var(--color-h-dynamic, var(--color-h2, var(--color-h, inherit)))
+}
+
+.e91e50dd7d33343905a6 .c7a8d988e09ad045d3d0 h3 {
+  color: var(--color-h-dynamic, var(--color-h3, var(--color-h, inherit)))
+}
+
+.e91e50dd7d33343905a6 .c7a8d988e09ad045d3d0 h3[data-context=newswire-subtitle] {
+  color: var(--color-subtitle-dynamic, var(--color-h-dynamic, var(--color-h3, var(--color-h, inherit))))
+}
+
+.e91e50dd7d33343905a6 .c7a8d988e09ad045d3d0 h4,
+.e91e50dd7d33343905a6 .c7a8d988e09ad045d3d0 h5,
+.e91e50dd7d33343905a6 .c7a8d988e09ad045d3d0 h6 {
+  color: var(--color-h-dynamic, var(--color-h, inherit))
+}
+
+.e91e50dd7d33343905a6 .c7a8d988e09ad045d3d0 [template=community] {
+  --time-color: var(--body-color, #2d2d2d);
+  --breadcrumb-separator-filter-invert: invert(0)
+}
+
+.e91e50dd7d33343905a6 .c7a8d988e09ad045d3d0 [template=community] main {
+  color: var(--color-h, #161616)
+}
+
+.e91e50dd7d33343905a6 .c7a8d988e09ad045d3d0 [template=community] p {
+  color: var(--body-color, #2d2d2d)
+}
+
+.e91e50dd7d33343905a6 .c7a8d988e09ad045d3d0 figure>div {
+  --padding-sides: 0px
+}
