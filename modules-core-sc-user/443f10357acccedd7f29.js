@@ -176,28 +176,28 @@
           let {
             characterData: t,
             setCurrentCharId: c,
-            currentCharId: l,
-            user: o
+            currentCharId: l
           } = e;
           const {
-            track: i
+            track: o
           } = n(), {
-            setMobbileCardWidth: u
-          } = (0, r.useRockstarUser)(), f = (0, s.createRef)(), m = v(f, !0), {
-            platform: b,
+            setMobbileCardWidth: i
+          } = (0, r.useRockstarUser)(), u = (0, s.createRef)(), f = v(u, !0), {
+            platform: m,
+            platformUsername: b,
             mugshotUrl: p,
             stats: x
-          } = t, [k, _] = (0, s.useState)(p), [C] = (0, s.useState)(t.characterId), S = g(b, "large"), j = l === C;
+          } = t, [_, k] = (0, s.useState)(p), [C] = (0, s.useState)(t.characterId), S = g(m, "large"), j = l === C;
           return (0, s.useEffect)((() => {
-            u(m)
-          }), [m]), (0, d.jsxs)("button", {
+            i(f)
+          }), [f]), (0, d.jsxs)("button", {
             className: "dee06086788899b4002f",
             type: "button",
             "aria-hidden": j,
             onClick: e => {
               e.stopPropagation(), c(C);
               let t = "";
-              "pc" === b ? t = "PC" : "ps4" === b ? t = "PS4" : "ps5" === b ? t = "PS5" : "xboxone" === b ? t = "Xbox One" : "xboxsx" === b && (t = "Xbox Series X|S"), i({
+              "pc" === m ? t = "PC" : "ps4" === m ? t = "PS4" : "ps5" === m ? t = "PS5" : "xboxone" === m ? t = "Xbox One" : "xboxsx" === m && (t = "Xbox Series X|S"), o({
                 event: "character_selector_select",
                 event_category: "character_selector",
                 event_action: "select",
@@ -205,15 +205,15 @@
                 position: C
               })
             },
-            ref: f,
+            ref: u,
             children: [(0, d.jsx)("div", {
               className: "ff6279c9ff9b88f1f1f6",
               "data-size": "small",
               children: (0, d.jsx)("img", {
-                src: k,
-                alt: o.nickname,
+                src: _,
+                alt: b,
                 onError: () => {
-                  _(a(493))
+                  k(a(493))
                 }
               })
             }), (0, d.jsxs)("div", {
@@ -226,7 +226,7 @@
                 }), (0, d.jsx)("div", {
                   className: "e176d7a04bacf4e0d725",
                   "data-size": "small",
-                  children: o.nickname
+                  children: b
                 })]
               }), (0, d.jsx)("div", {
                 className: "c08f37e001f1b148b046",
@@ -274,7 +274,7 @@
           } = e;
           const {
             track: o
-          } = n(), [i, u] = (0, s.useState)(null), [f, m] = (0, s.useState)(null), [g, v] = (0, s.useState)(!1), [b, x] = (0, s.useState)(-1), [k, _] = (0, s.useState)([]), [C, S] = (0, s.useState)(0), j = a(493), [N, w] = (0, s.useState)("0"), [y, L] = (0, s.useState)("0"), $ = e => parseInt(e, 10).toLocaleString("en-US", {
+          } = n(), [i, u] = (0, s.useState)(null), [f, m] = (0, s.useState)(null), [g, v] = (0, s.useState)(!1), [b, x] = (0, s.useState)(-1), [_, k] = (0, s.useState)([]), [C, S] = (0, s.useState)(0), j = a(493), [N, w] = (0, s.useState)("0"), [y, L] = (0, s.useState)("0"), $ = e => parseInt(e, 10).toLocaleString("en-US", {
             minimumFractionDigits: 0
           }), E = () => {
             P((0, d.jsx)("img", {
@@ -306,7 +306,7 @@
                   backgroundColor: null !== f ? f : ""
                 }
               }, `crewrankbar-${t}`));
-            _(e)
+            k(e)
           }), [b, g, f]);
           const M = e => {
             e.stopPropagation(), o({
@@ -341,13 +341,13 @@
                   className: p.scTagsNames,
                   children: [(0, d.jsx)("span", {
                     className: p.scUserName,
-                    children: t.nickname
+                    children: c.platformUsername
                   }), i && (0, d.jsxs)("span", {
                     className: p.scCrewName,
                     "data-arrow-tag": g,
                     children: [i, !g && (0, d.jsx)("div", {
                       className: p.scCrewRankBar,
-                      children: k
+                      children: _
                     })]
                   })]
                 })
@@ -376,7 +376,7 @@
             })]
           })
         })),
-        k = e => {
+        _ = e => {
           let {
             dragThreshold: t = 80,
             interactionDelay: a = 1e3,
@@ -392,8 +392,8 @@
             [m, g] = (0, s.useState)(!1),
             [h, b] = (0, s.useState)(0),
             [p, x] = (0, s.useState)(0),
-            [k, _] = (0, s.useState)([c]),
-            [C, S] = (0, s.useState)(k[0]),
+            [_, k] = (0, s.useState)([c]),
+            [C, S] = (0, s.useState)(_[0]),
             [j, N] = (0, s.useState)(252),
             [w, y] = (0, s.useState)(0),
             [L, $] = (0, s.useState)([]),
@@ -413,16 +413,16 @@
                 if (!0 === m) return;
                 g(!0);
                 const e = h - 1 < 0 ? 0 : h - 1;
-                b(e), S(k[e]), r && r(e)
+                b(e), S(_[e]), r && r(e)
               })() : (() => {
                 if (!0 === m) return;
                 g(!0);
-                let e = h + 1 >= k.length ? k.length - 1 : h + 1;
-                e < 0 && (e = 0), b(e), S(k[e]), r && r(e)
-              })(), x(0)) : S(k[h] + c * s)
+                let e = h + 1 >= _.length ? _.length - 1 : h + 1;
+                e < 0 && (e = 0), b(e), S(_[e]), r && r(e)
+              })(), x(0)) : S(_[h] + c * s)
             },
             U = () => {
-              !0 !== m && !0 !== i && (g(!0), !0 !== m && (S(k[h]), x(0)))
+              !0 !== m && !0 !== i && (g(!0), !0 !== m && (S(_[h]), x(0)))
             };
           return (0, s.useEffect)((() => {
             const e = [];
@@ -441,7 +441,7 @@
               g(!1)
             }), a)
           }), [m, a]), (0, s.useEffect)((() => {
-            _(l.map(((e, t) => (e => {
+            k(l.map(((e, t) => (e => {
               let t = 0;
               const a = l.length;
               return 1 === a ? .5 * f - .5 * j - 2 * c + w : (0 === e && (t = c - e * j), e === a - 1 && a > 1 && (t = a * j * -1 + (f - (c - w))), e > 0 && e < a - 1 && (t = e * j * -1 + (.5 * f - .5 * j + .5 * w)), t)
@@ -456,8 +456,8 @@
             var t;
             I(e)
           }), [l, h]), (0, s.useEffect)((() => {
-            !0 !== o && !0 !== i || S(k[0])
-          }), [i, o, k]), (0, d.jsxs)(d.Fragment, {
+            !0 !== o && !0 !== i || S(_[0])
+          }), [i, o, _]), (0, d.jsxs)(d.Fragment, {
             children: [(0, d.jsx)("div", {
               className: "bc373b520fbdca8d2f0f",
               ref: u,
@@ -495,7 +495,7 @@
             })]
           })
         },
-        _ = {
+        k = {
           scNavWrapper: "b37a25bc6761bd882dab",
           rpLevel: "de9cbe40526987515089",
           rpIcon: "c26aa647a6b6ed6ce54f",
@@ -616,24 +616,24 @@
             })
           }), [L]), (0, d.jsxs)(d.Fragment, {
             children: [null !== U && "gtao" === R && (0, d.jsxs)("div", {
-              className: _.scProfile,
+              className: k.scProfile,
               children: [(0, d.jsx)(x, {
-                s: _,
+                s: k,
                 user: l,
                 character: U,
                 platformTag: X,
                 crews: P
               }), !0 === D && (0, d.jsxs)("div", {
-                className: _.scCharacterSelector,
+                className: k.scCharacterSelector,
                 children: [(0, d.jsx)("button", {
-                  className: _.scCharacterSelectBtn,
+                  className: k.scCharacterSelectBtn,
                   type: "button",
                   onClick: e => {
                     e.stopPropagation();
                     const t = !o;
                     i(t), y({
                       event: !0 === t ? "character_selector_close" : "character_selector_open",
-                      event_action: !0 === t ? "open" : "close",
+                      event_action: !0 === t ? "close" : "open",
                       event_category: "character_selector"
                     })
                   },
@@ -642,7 +642,7 @@
                     children: c("Switch Character")
                   })
                 }), !1 === S && (0, d.jsx)("div", {
-                  className: _.scCharacterList,
+                  className: k.scCharacterList,
                   "data-long-list": p,
                   "aria-hidden": o,
                   ref: m,
@@ -654,12 +654,12 @@
                     characterId: t
                   }, e.mugshotUrl)))
                 }), !0 === S && (0, d.jsx)("div", {
-                  className: _.scCharacterList,
+                  className: k.scCharacterList,
                   "data-single-item": 2 === ae.length,
                   "data-swiper-disabled": B,
                   "aria-hidden": o,
                   ref: G,
-                  children: (0, d.jsx)(k, {
+                  children: (0, d.jsx)(_, {
                     interactionDelay: 350,
                     mobileGutterWidth: 17,
                     dragThreshold: 40,
@@ -684,9 +684,9 @@
                 })]
               })]
             }), (0, d.jsxs)("nav", {
-              className: _.scNav,
+              className: k.scNav,
               children: [(0, d.jsxs)("button", {
-                className: _.scNavHeader,
+                className: k.scNavHeader,
                 type: "button",
                 "data-opened": o,
                 "data-nav-opened": T,
@@ -700,7 +700,7 @@
                   alt: "Social Club"
                 })]
               }), (0, d.jsx)("div", {
-                className: _.scNavWrap,
+                className: k.scNavWrap,
                 "data-opened": o,
                 "data-logged-in": "true",
                 ref: Y,
@@ -734,14 +734,14 @@
           } = (0, l.useState)(), n = (0, r.useRockstarUser)(), [i, u] = (0, s.useState)(!0), [f, g] = (0, s.useState)(!1), [h, v] = (0, s.useState)(null), b = (0, l.useReactiveVar)(o.Z), {
             navOpen: p,
             setNavOpen: x
-          } = n, k = n?.data, _ = void 0 !== k, j = (0, s.useRef)(), [N, w] = (0, s.useState)(0), y = (0, s.createRef)(), [L, $] = (0, s.useState)(!1), [E, I] = (0, s.useState)(0), [P, M] = (0, s.useState)(!1), R = (0, s.useCallback)((e => {
+          } = n, _ = n?.data, k = void 0 !== _, j = (0, s.useRef)(), [N, w] = (0, s.useState)(0), y = (0, s.createRef)(), [L, $] = (0, s.useState)(!1), [E, I] = (0, s.useState)(0), [P, M] = (0, s.useState)(!1), R = (0, s.useCallback)((e => {
             u(e), j.current && !0 === e && (j.current.scrollTop = 0)
           }), [j]);
           return (0, s.useEffect)((() => {
             j.current && (!1 === i && !1 === f && (j.current.style.height = `${j.current.scrollHeight}px`), !0 === i && (j.current.style.height = null))
           }), [i, j, f]), (0, s.useEffect)((() => {
-            v(!!k && k.user)
-          }), [k]), (0, s.useEffect)((() => {
+            v(!!_ && _.user)
+          }), [_]), (0, s.useEffect)((() => {
             const e = () => {
               x(!1), R(!0)
             };
@@ -762,7 +762,7 @@
           }), []), null === h ? null : (0, d.jsxs)(d.Fragment, {
             children: [(0, d.jsxs)("div", {
               className: [S.scMenu, p ? S.navOpen : ""].join(" "),
-              "data-logged-in": _,
+              "data-logged-in": k,
               "data-mac-browser": P,
               ref: y,
               children: [(0, d.jsx)("button", {
@@ -782,7 +782,7 @@
                   src: a(762),
                   alt: t("Drag Menu Handle")
                 })
-              }), _ ? (0, d.jsx)(C, {
+              }), k ? (0, d.jsx)(C, {
                 user: h,
                 sc: b,
                 charListHidden: i,
@@ -799,7 +799,7 @@
               })]
             }), (0, d.jsx)("div", {
               className: [S.scOverlay, p ? S.navOpen : ""].join(" "),
-              "data-logged-in": _
+              "data-logged-in": k
             })]
           })
         })),
@@ -815,7 +815,7 @@
             charactersNeeded: o
           } = (0, r.useRockstarUser)(), {
             track: i
-          } = n(), [u, f] = (0, s.useState)(null), [m, h] = (0, s.useState)(!1), [v, b] = (0, s.useState)(null), [p, x] = (0, s.useState)(!1), k = (0, s.useCallback)((e => {
+          } = n(), [u, f] = (0, s.useState)(null), [m, h] = (0, s.useState)(!1), [v, b] = (0, s.useState)(null), [p, x] = (0, s.useState)(!1), _ = (0, s.useCallback)((e => {
             e.stopPropagation(), a(!c), i({
               event_action: "click",
               event_category: "account_menu",
@@ -834,7 +834,7 @@
             "data-img-set": p,
             "aria-label": "Toggle Social Club Menu",
             type: "button",
-            onClick: e => k(e),
+            onClick: e => _(e),
             children: [(0, d.jsx)("img", {
               className: "a9651d22866bf58ca4bd",
               src: u || "",
