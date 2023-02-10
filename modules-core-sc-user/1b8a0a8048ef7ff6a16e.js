@@ -1,14 +1,14 @@
-/*! For license information please see 09afec410b342c0597b6.js.LICENSE.txt */
+/*! For license information please see 1b8a0a8048ef7ff6a16e.js.LICENSE.txt */
 (self.webpackChunk_rockstargames_modules_core_sc_user = self.webpackChunk_rockstargames_modules_core_sc_user || []).push([
   [580], {
     50: (e, t, i) => {
       "use strict";
       i.d(t, {
-        Z: () => r
+        Z: () => n
       });
       var a = i(859);
-      const n = (0, i(929).getScConfigForOrigin)(),
-        r = (0, a.makeVar)(n)
+      const r = (0, i(929).getScConfigForOrigin)(),
+        n = (0, a.makeVar)(r)
     },
     580: (e, t, i) => {
       "use strict";
@@ -17,85 +17,112 @@
         useRockstarUser: () => f
       });
       var a = i(822),
-        n = i(859),
-        r = i(929),
+        r = i(859),
+        n = i(929),
         o = i(703),
         s = i(50);
       const l = i(483),
-        d = (0, n.makeVar)(!1),
-        h = e => d(e),
-        c = e => {
+        c = (0, r.makeVar)(!1),
+        d = e => c(e),
+        h = e => {
           let {
             pingPeriodically: t
           } = e;
-          const i = (0, n.useReactiveVar)(d),
-            [c, u] = (0, a.useState)(null),
-            [g, p] = (0, a.useState)(null);
-          let m = [];
-          m = (() => {
-            const [e, t] = (0, a.useState)([]), i = (0, n.useUserBearerToken)();
+          const i = (0, r.useReactiveVar)(c),
+            [h, u] = (0, a.useState)(null),
+            [g, p] = (0, a.useState)(null),
+            m = (0, r.useReactiveVar)(s.Z),
+            f = (0, r.useReactiveVar)(r.userBearerToken),
+            [S, x] = (0, a.useState)(!1),
+            {
+              data: T
+            } = (0, r.useQuery)(o.UserData, {
+              skip: "string" != typeof f
+            }),
+            [v, E] = (0, a.useState)(null),
+            [y, M] = (0, a.useState)(null),
+            [A, w] = (0, a.useState)(null),
+            [C, b] = (0, a.useState)(null),
+            [B, R] = (0, a.useState)(!1),
+            [_, O] = (0, a.useState)(null);
+          let P = [];
+          return P = (e => {
+            const [t, i] = (0, a.useState)([]), [o, s] = (0, a.useState)([]), [l, c] = (0, a.useState)(e), d = (0, r.useUserBearerToken)();
             return (0, a.useEffect)((() => {
-              if (!i) return;
+              c(e)
+            }), [e]), (0, a.useEffect)((() => {
+              if (!d) return;
               const e = [];
               (async () => {
-                const a = await (0, r.coreScApiFetch)("profile/playedplatforms?game=gtav", {
-                  bearerToken: i
+                const t = await (0, n.coreScApiFetch)("profile/playedplatforms?game=gtav", {
+                  bearerToken: d
                 });
-                await (a?.platforms?.reduce((async (t, a) => {
-                  if (await t, "ps3" === a) return;
-                  const n = await (0, r.coreScApiFetch)(`games/gtao/characters?platform=${a}`, {
-                    bearerToken: i
+                await (t?.platforms?.reduce((async (t, i) => {
+                  if (await t, ["ps3", "xbox", "xbox360"].includes(i)) return;
+                  const a = await (0, n.coreScApiFetch)(`games/gtao/characters?platform=${i}`, {
+                    bearerToken: d
                   });
-                  n?.status && n?.result?.map((t => e.push({
-                    platform: a,
-                    ...t
-                  })))
-                }), Promise.resolve())), t(e)
+                  a?.status && a?.result?.map((t => {
+                    const a = "ps4" === i || "ps5" === i ? t?.mugshotUrl.replace("cloud.rockstargames.com/", "ros.rockstargames.com/cloud/11/cloudservices/") : t?.mugshotUrl;
+                    return e.push({
+                      platform: i,
+                      ...t,
+                      mugshotUrl: a
+                    }), t
+                  }))
+                }), Promise.resolve())), i(e)
               })()
-            }), [i]), {
-              gtaoCharacters: e
+            }), [d]), (0, a.useEffect)((() => {
+              void 0 !== l && (async () => {
+                const {
+                  status: e,
+                  accounts: i
+                } = await (0, n.coreScApiFetch)(`profile/getprofile?nickname=${l?.user?.nickname}&maxFriends=0`, {
+                  bearerToken: d
+                });
+                e && i.length > 0 && i.forEach((e => {
+                  const {
+                    rockstarAccount: i,
+                    linkedAccounts: a
+                  } = e;
+                  if (i?.rockstarId === l?.user?.id) {
+                    const e = l?.user?.nickname;
+                    let i = "",
+                      r = "",
+                      n = "";
+                    a?.map((e => ("xbl" === e?.onlineService ? i = e.userName : "np" === e?.onlineService ? r = e.userName : "steam" === e?.onlineService && (n = e.userName), e))), s(t.map((t => ("pc" === t.platform ? t.platformUsername = "" === n ? e : n : "ps4" === t.platform || "ps5" === t.platform ? t.platformUsername = "" === r ? e : r : "xboxone" !== t.platform && "xboxsx" !== t.platform || (t.platformUsername = "" === i ? e : i), t))))
+                  }
+                }))
+              })()
+            }), [t, l]), {
+              gtaoCharacters: o
             }
-          })()?.gtaoCharacters?.filter((e => !0 === e.activeCharacter)) ?? [];
-          const f = (0, n.useReactiveVar)(s.Z),
-            S = (0, n.useReactiveVar)(n.userBearerToken),
-            [T, x] = (0, a.useState)(!1),
-            {
-              data: v
-            } = (0, n.useQuery)(o.UserData, {
-              skip: "string" != typeof S
-            }),
-            [E, y] = (0, a.useState)(null),
-            [M, A] = (0, a.useState)(null),
-            [w, C] = (0, a.useState)(null),
-            [b, B] = (0, a.useState)(null),
-            [R, _] = (0, a.useState)(!1),
-            [O, P] = (0, a.useState)(null);
-          return (0, a.useEffect)((() => {
-            v && (C(v.user.id ?? null), v.user.bearer_token_expired && (0, n.pingBearer)(f.pingBearer))
-          }), [v]), (0, a.useEffect)((() => {
-            S && w && (async () => {
+          })(T)?.gtaoCharacters?.filter((e => !0 === e.activeCharacter)) ?? [], (0, a.useEffect)((() => {
+            T && (w(T.user.id ?? null), T.user.bearer_token_expired && (0, r.pingBearer)(m.pingBearer))
+          }), [T]), (0, a.useEffect)((() => {
+            f && A && (async () => {
               const {
                 crews: e
-              } = await (0, r.coreScApiFetch)("crew/forMember", {
-                bearerToken: S,
+              } = await (0, n.coreScApiFetch)("crew/forMember", {
+                bearerToken: f,
                 query: {
-                  userId: w
+                  userId: A
                 }
               });
-              void 0 !== e && A(e);
+              void 0 !== e && M(e);
               const {
                 rockstarAccountList: t
-              } = await (0, r.coreScApiFetch)("friends/getInvites", {
-                bearerToken: S
+              } = await (0, n.coreScApiFetch)("friends/getInvites", {
+                bearerToken: f
               }), {
                 count: i
-              } = await (0, r.coreScApiFetch)("notification/count", {
-                bearerToken: S
+              } = await (0, n.coreScApiFetch)("notification/count", {
+                bearerToken: f
               });
-              _(i > 0 || t.total > 0)
+              R(i > 0 || t.total > 0)
             })()
-          }), [w, S]), (0, a.useEffect)((() => {
-            !1 === S && !1 === T && (x(!0), l.instance.get((async (e, t) => {
+          }), [A, f]), (0, a.useEffect)((() => {
+            !1 === f && !1 === S && (x(!0), l.instance.get((async (e, t) => {
               const i = {
                   method: "POST",
                   body: `fingerprint=${t}`,
@@ -105,45 +132,45 @@
                     "Content-type": "application/x-www-form-urlencoded; charset=utf-8"
                   }
                 },
-                a = await fetch(f.silentCheck, i);
+                a = await fetch(m.silentCheck, i);
               if (200 !== a.status) return;
-              const r = await a.json(),
-                o = `${f.gateway}?code=${r}`,
+              const n = await a.json(),
+                o = `${m.gateway}?code=${n}`,
                 s = await fetch(o, {
                   credentials: "include"
                 }),
                 l = await s.json();
-              (0, n.userBearerToken)(l.bearerToken)
-            }))), null === S && (0, n.pingBearer)(f.pingBearer)
-          }), [S, T]), (0, a.useEffect)((() => {
+              (0, r.userBearerToken)(l.bearerToken)
+            }))), null === f && (0, r.pingBearer)(m.pingBearer)
+          }), [f, S]), (0, a.useEffect)((() => {
             if (!t) return;
             const e = setInterval((() => {
-              (0, n.pingBearer)(f.pingBearer)
+              (0, r.pingBearer)(m.pingBearer)
             }), t);
             return () => clearInterval(e)
           }), [t]), (0, a.useEffect)((() => {
-            B(null === S ? null : !!S)
-          }), [S]), (0, a.useEffect)((() => {
-            if (null == E) return;
-            const e = m?.[E] ?? null;
+            b(null === f ? null : !!f)
+          }), [f]), (0, a.useEffect)((() => {
+            if (null == v) return;
+            const e = P?.[v] ?? null;
             p(e?.platform ? [e.platform, e.characterSlot] : null)
-          }), [E, JSON.stringify(m)]), {
-            data: v,
-            charactersNeeded: c,
+          }), [v, JSON.stringify(P)]), {
+            data: T,
+            charactersNeeded: h,
             characters: {
-              gtao: m
+              gtao: P
             },
-            currentCharId: E,
+            currentCharId: v,
             navOpen: i,
             selectedCharacterTuple: g,
             setCharactersNeeded: u,
-            setCurrentCharId: y,
-            setNavOpen: h,
-            crews: M,
-            hasNotification: R,
-            loggedIn: b,
-            mobileCardWidth: O,
-            setMobbileCardWidth: P
+            setCurrentCharId: E,
+            setNavOpen: d,
+            crews: y,
+            hasNotification: B,
+            loggedIn: C,
+            mobileCardWidth: _,
+            setMobbileCardWidth: O
           }
         };
       var u = i(668);
@@ -165,14 +192,14 @@
             children: t,
             pingPeriodically: i = 0
           } = e;
-          const n = c({
+          const r = h({
               pingPeriodically: i
             }),
-            r = (0, a.useMemo)((() => ({
-              ...n
-            })), [n]);
+            n = (0, a.useMemo)((() => ({
+              ...r
+            })), [r]);
           return (0, u.jsx)(p.Provider, {
-            value: r,
+            value: n,
             children: t
           })
         },
@@ -181,8 +208,8 @@
     670: (e, t, i) => {
       "use strict";
       var a = i(822),
-        n = Symbol.for("react.element"),
-        r = Symbol.for("react.fragment"),
+        r = Symbol.for("react.element"),
+        n = Symbol.for("react.fragment"),
         o = Object.prototype.hasOwnProperty,
         s = a.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         l = {
@@ -192,23 +219,23 @@
           __source: !0
         };
 
-      function d(e, t, i) {
-        var a, r = {},
-          d = null,
-          h = null;
-        for (a in void 0 !== i && (d = "" + i), void 0 !== t.key && (d = "" + t.key), void 0 !== t.ref && (h = t.ref), t) o.call(t, a) && !l.hasOwnProperty(a) && (r[a] = t[a]);
+      function c(e, t, i) {
+        var a, n = {},
+          c = null,
+          d = null;
+        for (a in void 0 !== i && (c = "" + i), void 0 !== t.key && (c = "" + t.key), void 0 !== t.ref && (d = t.ref), t) o.call(t, a) && !l.hasOwnProperty(a) && (n[a] = t[a]);
         if (e && e.defaultProps)
-          for (a in t = e.defaultProps) void 0 === r[a] && (r[a] = t[a]);
+          for (a in t = e.defaultProps) void 0 === n[a] && (n[a] = t[a]);
         return {
-          $$typeof: n,
+          $$typeof: r,
           type: e,
-          key: d,
-          ref: h,
-          props: r,
+          key: c,
+          ref: d,
+          props: n,
           _owner: s.current
         }
       }
-      t.Fragment = r, t.jsx = d, t.jsxs = d
+      t.Fragment = n, t.jsx = c, t.jsxs = c
     },
     668: (e, t, i) => {
       "use strict";
@@ -216,19 +243,19 @@
     },
     483: (e, t, i) => {
       "use strict";
-      var a, n;
+      var a, r;
       i.r(t), i.d(t, {
-        instance: () => r
-      }), e = i.hmd(e), a = window, n = () => {
+        instance: () => n
+      }), e = i.hmd(e), a = window, r = () => {
         Array.prototype.indexOf || (Array.prototype.indexOf = function(e, t) {
           let i;
           if (null == this) throw new TypeError("'this' is null or undefined");
           const a = Object(this),
-            n = a.length >>> 0;
-          if (0 === n) return -1;
-          let r = +t || 0;
-          if (Math.abs(r) === 1 / 0 && (r = 0), r >= n) return -1;
-          for (i = Math.max(r >= 0 ? r : n - Math.abs(r), 0); i < n;) {
+            r = a.length >>> 0;
+          if (0 === r) return -1;
+          let n = +t || 0;
+          if (Math.abs(n) === 1 / 0 && (n = 0), n >= r) return -1;
+          for (i = Math.max(n >= 0 ? n : r - Math.abs(n), 0); i < r;) {
             if (i in a && a[i] === e) return i;
             i++
           }
@@ -267,18 +294,18 @@
             const i = this;
             this.fontsKey(t, (t => {
               const a = [],
-                n = [];
+                r = [];
               i.each(t, (e => {
                 let {
                   value: t
                 } = e;
                 void 0 !== e.value.join && (t = e.value.join(";"));
-                const r = {};
-                r[e.key] = t.length > 32 && "device_name" !== e.key ? i.x64hash128(t, 31) : t, n.push(r), a.push(t)
+                const n = {};
+                n[e.key] = t.length > 32 && "device_name" !== e.key ? i.x64hash128(t, 31) : t, r.push(n), a.push(t)
               }));
-              const r = n.map((e => JSON.stringify(e).slice(1, -1))).join(","),
+              const n = r.map((e => JSON.stringify(e).slice(1, -1))).join(","),
                 o = i.x64hash128(a.join("~~~"), 31);
-              return e(o, `{"fp":{${r}}}`)
+              return e(o, `{"fp":{${n}}}`)
             }))
           },
           userAgentKey(e) {
@@ -438,25 +465,25 @@
             const i = this;
             return setTimeout((() => {
               const a = ["monospace", "sans-serif", "serif"];
-              let n = ["Andale Mono", "Arial", "Arial Black", "Arial Hebrew", "Arial MT", "Arial Narrow", "Arial Rounded MT Bold", "Arial Unicode MS", "Bitstream Vera Sans Mono", "Book Antiqua", "Bookman Old Style", "Calibri", "Cambria", "Cambria Math", "Century", "Century Gothic", "Century Schoolbook", "Comic Sans", "Comic Sans MS", "Consolas", "Courier", "Courier New", "Garamond", "Geneva", "Georgia", "Helvetica", "Helvetica Neue", "Impact", "Lucida Bright", "Lucida Calligraphy", "Lucida Console", "Lucida Fax", "LUCIDA GRANDE", "Lucida Handwriting", "Lucida Sans", "Lucida Sans Typewriter", "Lucida Sans Unicode", "Microsoft Sans Serif", "Monaco", "Monotype Corsiva", "MS Gothic", "MS Outlook", "MS PGothic", "MS Reference Sans Serif", "MS Sans Serif", "MS Serif", "MYRIAD", "MYRIAD PRO", "Palatino", "Palatino Linotype", "Segoe Print", "Segoe Script", "Segoe UI", "Segoe UI Light", "Segoe UI Semibold", "Segoe UI Symbol", "Tahoma", "Times", "Times New Roman", "Times New Roman PS", "Trebuchet MS", "Verdana", "Wingdings", "Wingdings 2", "Wingdings 3"];
-              i.options.extendedJsFonts && (n = n.concat(["Abadi MT Condensed Light", "Academy Engraved LET", "ADOBE CASLON PRO", "Adobe Garamond", "ADOBE GARAMOND PRO", "Agency FB", "Aharoni", "Albertus Extra Bold", "Albertus Medium", "Algerian", "Amazone BT", "American Typewriter", "American Typewriter Condensed", "AmerType Md BT", "Andalus", "Angsana New", "AngsanaUPC", "Antique Olive", "Aparajita", "Apple Chancery", "Apple Color Emoji", "Apple SD Gothic Neo", "Arabic Typesetting", "ARCHER", "ARNO PRO", "Arrus BT", "Aurora Cn BT", "AvantGarde Bk BT", "AvantGarde Md BT", "AVENIR", "Ayuthaya", "Bandy", "Bangla Sangam MN", "Bank Gothic", "BankGothic Md BT", "Baskerville", "Baskerville Old Face", "Batang", "BatangChe", "Bauer Bodoni", "Bauhaus 93", "Bazooka", "Bell MT", "Bembo", "Benguiat Bk BT", "Berlin Sans FB", "Berlin Sans FB Demi", "Bernard MT Condensed", "BernhardFashion BT", "BernhardMod BT", "Big Caslon", "BinnerD", "Blackadder ITC", "BlairMdITC TT", "Bodoni 72", "Bodoni 72 Oldstyle", "Bodoni 72 Smallcaps", "Bodoni MT", "Bodoni MT Black", "Bodoni MT Condensed", "Bodoni MT Poster Compressed", "Bookshelf Symbol 7", "Boulder", "Bradley Hand", "Bradley Hand ITC", "Bremen Bd BT", "Britannic Bold", "Broadway", "Browallia New", "BrowalliaUPC", "Brush Script MT", "Californian FB", "Calisto MT", "Calligrapher", "Candara", "CaslonOpnface BT", "Castellar", "Centaur", "Cezanne", "CG Omega", "CG Times", "Chalkboard", "Chalkboard SE", "Chalkduster", "Charlesworth", "Charter Bd BT", "Charter BT", "Chaucer", "ChelthmITC Bk BT", "Chiller", "Clarendon", "Clarendon Condensed", "CloisterBlack BT", "Cochin", "Colonna MT", "Constantia", "Cooper Black", "Copperplate", "Copperplate Gothic", "Copperplate Gothic Bold", "Copperplate Gothic Light", "CopperplGoth Bd BT", "Corbel", "Cordia New", "CordiaUPC", "Cornerstone", "Coronet", "Cuckoo", "Curlz MT", "DaunPenh", "Dauphin", "David", "DB LCD Temp", "DELICIOUS", "Denmark", "DFKai-SB", "Didot", "DilleniaUPC", "DIN", "DokChampa", "Dotum", "DotumChe", "Ebrima", "Edwardian Script ITC", "Elephant", "English 111 Vivace BT", "Engravers MT", "EngraversGothic BT", "Eras Bold ITC", "Eras Demi ITC", "Eras Light ITC", "Eras Medium ITC", "EucrosiaUPC", "Euphemia", "Euphemia UCAS", "EUROSTILE", "Exotc350 Bd BT", "FangSong", "Felix Titling", "Fixedsys", "FONTIN", "Footlight MT Light", "Forte", "FrankRuehl", "Fransiscan", "Freefrm721 Blk BT", "FreesiaUPC", "Freestyle Script", "French Script MT", "FrnkGothITC Bk BT", "Fruitger", "FRUTIGER", "Futura", "Futura Bk BT", "Futura Lt BT", "Futura Md BT", "Futura ZBlk BT", "FuturaBlack BT", "Gabriola", "Galliard BT", "Gautami", "Geeza Pro", "Geometr231 BT", "Geometr231 Hv BT", "Geometr231 Lt BT", "GeoSlab 703 Lt BT", "GeoSlab 703 XBd BT", "Gigi", "Gill Sans", "Gill Sans MT", "Gill Sans MT Condensed", "Gill Sans MT Ext Condensed Bold", "Gill Sans Ultra Bold", "Gill Sans Ultra Bold Condensed", "Gisha", "Gloucester MT Extra Condensed", "GOTHAM", "GOTHAM BOLD", "Goudy Old Style", "Goudy Stout", "GoudyHandtooled BT", "GoudyOLSt BT", "Gujarati Sangam MN", "Gulim", "GulimChe", "Gungsuh", "GungsuhChe", "Gurmukhi MN", "Haettenschweiler", "Harlow Solid Italic", "Harrington", "Heather", "Heiti SC", "Heiti TC", "HELV", "Herald", "High Tower Text", "Hiragino Kaku Gothic ProN", "Hiragino Mincho ProN", "Hoefler Text", "Humanst 521 Cn BT", "Humanst521 BT", "Humanst521 Lt BT", "Imprint MT Shadow", "Incised901 Bd BT", "Incised901 BT", "Incised901 Lt BT", "INCONSOLATA", "Informal Roman", "Informal011 BT", "INTERSTATE", "IrisUPC", "Iskoola Pota", "JasmineUPC", "Jazz LET", "Jenson", "Jester", "Jokerman", "Juice ITC", "Kabel Bk BT", "Kabel Ult BT", "Kailasa", "KaiTi", "Kalinga", "Kannada Sangam MN", "Kartika", "Kaufmann Bd BT", "Kaufmann BT", "Khmer UI", "KodchiangUPC", "Kokila", "Korinna BT", "Kristen ITC", "Krungthep", "Kunstler Script", "Lao UI", "Latha", "Leelawadee", "Letter Gothic", "Levenim MT", "LilyUPC", "Lithograph", "Lithograph Light", "Long Island", "Lydian BT", "Magneto", "Maiandra GD", "Malayalam Sangam MN", "Malgun Gothic", "Mangal", "Marigold", "Marion", "Marker Felt", "Market", "Marlett", "Matisse ITC", "Matura MT Script Capitals", "Meiryo", "Meiryo UI", "Microsoft Himalaya", "Microsoft JhengHei", "Microsoft New Tai Lue", "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Uighur", "Microsoft YaHei", "Microsoft Yi Baiti", "MingLiU", "MingLiU_HKSCS", "MingLiU_HKSCS-ExtB", "MingLiU-ExtB", "Minion", "Minion Pro", "Miriam", "Miriam Fixed", "Mistral", "Modern", "Modern No. 20", "Mona Lisa Solid ITC TT", "Mongolian Baiti", "MONO", "MoolBoran", "Mrs Eaves", "MS LineDraw", "MS Mincho", "MS PMincho", "MS Reference Specialty", "MS UI Gothic", "MT Extra", "MUSEO", "MV Boli", "Nadeem", "Narkisim", "NEVIS", "News Gothic", "News GothicMT", "NewsGoth BT", "Niagara Engraved", "Niagara Solid", "Noteworthy", "NSimSun", "Nyala", "OCR A Extended", "Old Century", "Old English Text MT", "Onyx", "Onyx BT", "OPTIMA", "Oriya Sangam MN", "OSAKA", "OzHandicraft BT", "Palace Script MT", "Papyrus", "Parchment", "Party LET", "Pegasus", "Perpetua", "Perpetua Titling MT", "PetitaBold", "Pickwick", "Plantagenet Cherokee", "Playbill", "PMingLiU", "PMingLiU-ExtB", "Poor Richard", "Poster", "PosterBodoni BT", "PRINCETOWN LET", "Pristina", "PTBarnum BT", "Pythagoras", "Raavi", "Rage Italic", "Ravie", "Ribbon131 Bd BT", "Rockwell", "Rockwell Condensed", "Rockwell Extra Bold", "Rod", "Roman", "Sakkal Majalla", "Santa Fe LET", "Savoye LET", "Sceptre", "Script", "Script MT Bold", "SCRIPTINA", "Serifa", "Serifa BT", "Serifa Th BT", "ShelleyVolante BT", "Sherwood", "Shonar Bangla", "Showcard Gothic", "Shruti", "Signboard", "SILKSCREEN", "SimHei", "Simplified Arabic", "Simplified Arabic Fixed", "SimSun", "SimSun-ExtB", "Sinhala Sangam MN", "Sketch Rockwell", "Skia", "Small Fonts", "Snap ITC", "Snell Roundhand", "Socket", "Souvenir Lt BT", "Staccato222 BT", "Steamer", "Stencil", "Storybook", "Styllo", "Subway", "Swis721 BlkEx BT", "Swiss911 XCm BT", "Sylfaen", "Synchro LET", "System", "Tamil Sangam MN", "Technical", "Teletype", "Telugu Sangam MN", "Tempus Sans ITC", "Terminal", "Thonburi", "Traditional Arabic", "Trajan", "TRAJAN PRO", "Tristan", "Tubular", "Tunga", "Tw Cen MT", "Tw Cen MT Condensed", "Tw Cen MT Condensed Extra Bold", "TypoUpright BT", "Unicorn", "Univers", "Univers CE 55 Medium", "Univers Condensed", "Utsaah", "Vagabond", "Vani", "Vijaya", "Viner Hand ITC", "VisualUI", "Vivaldi", "Vladimir Script", "Vrinda", "Westminster", "WHITNEY", "Wide Latin", "ZapfEllipt BT", "ZapfHumnst BT", "ZapfHumnst Dm BT", "Zapfino", "Zurich BlkEx BT", "Zurich Ex BT", "ZWAdobeF"]));
-              const r = document.getElementsByTagName("body")[0],
+              let r = ["Andale Mono", "Arial", "Arial Black", "Arial Hebrew", "Arial MT", "Arial Narrow", "Arial Rounded MT Bold", "Arial Unicode MS", "Bitstream Vera Sans Mono", "Book Antiqua", "Bookman Old Style", "Calibri", "Cambria", "Cambria Math", "Century", "Century Gothic", "Century Schoolbook", "Comic Sans", "Comic Sans MS", "Consolas", "Courier", "Courier New", "Garamond", "Geneva", "Georgia", "Helvetica", "Helvetica Neue", "Impact", "Lucida Bright", "Lucida Calligraphy", "Lucida Console", "Lucida Fax", "LUCIDA GRANDE", "Lucida Handwriting", "Lucida Sans", "Lucida Sans Typewriter", "Lucida Sans Unicode", "Microsoft Sans Serif", "Monaco", "Monotype Corsiva", "MS Gothic", "MS Outlook", "MS PGothic", "MS Reference Sans Serif", "MS Sans Serif", "MS Serif", "MYRIAD", "MYRIAD PRO", "Palatino", "Palatino Linotype", "Segoe Print", "Segoe Script", "Segoe UI", "Segoe UI Light", "Segoe UI Semibold", "Segoe UI Symbol", "Tahoma", "Times", "Times New Roman", "Times New Roman PS", "Trebuchet MS", "Verdana", "Wingdings", "Wingdings 2", "Wingdings 3"];
+              i.options.extendedJsFonts && (r = r.concat(["Abadi MT Condensed Light", "Academy Engraved LET", "ADOBE CASLON PRO", "Adobe Garamond", "ADOBE GARAMOND PRO", "Agency FB", "Aharoni", "Albertus Extra Bold", "Albertus Medium", "Algerian", "Amazone BT", "American Typewriter", "American Typewriter Condensed", "AmerType Md BT", "Andalus", "Angsana New", "AngsanaUPC", "Antique Olive", "Aparajita", "Apple Chancery", "Apple Color Emoji", "Apple SD Gothic Neo", "Arabic Typesetting", "ARCHER", "ARNO PRO", "Arrus BT", "Aurora Cn BT", "AvantGarde Bk BT", "AvantGarde Md BT", "AVENIR", "Ayuthaya", "Bandy", "Bangla Sangam MN", "Bank Gothic", "BankGothic Md BT", "Baskerville", "Baskerville Old Face", "Batang", "BatangChe", "Bauer Bodoni", "Bauhaus 93", "Bazooka", "Bell MT", "Bembo", "Benguiat Bk BT", "Berlin Sans FB", "Berlin Sans FB Demi", "Bernard MT Condensed", "BernhardFashion BT", "BernhardMod BT", "Big Caslon", "BinnerD", "Blackadder ITC", "BlairMdITC TT", "Bodoni 72", "Bodoni 72 Oldstyle", "Bodoni 72 Smallcaps", "Bodoni MT", "Bodoni MT Black", "Bodoni MT Condensed", "Bodoni MT Poster Compressed", "Bookshelf Symbol 7", "Boulder", "Bradley Hand", "Bradley Hand ITC", "Bremen Bd BT", "Britannic Bold", "Broadway", "Browallia New", "BrowalliaUPC", "Brush Script MT", "Californian FB", "Calisto MT", "Calligrapher", "Candara", "CaslonOpnface BT", "Castellar", "Centaur", "Cezanne", "CG Omega", "CG Times", "Chalkboard", "Chalkboard SE", "Chalkduster", "Charlesworth", "Charter Bd BT", "Charter BT", "Chaucer", "ChelthmITC Bk BT", "Chiller", "Clarendon", "Clarendon Condensed", "CloisterBlack BT", "Cochin", "Colonna MT", "Constantia", "Cooper Black", "Copperplate", "Copperplate Gothic", "Copperplate Gothic Bold", "Copperplate Gothic Light", "CopperplGoth Bd BT", "Corbel", "Cordia New", "CordiaUPC", "Cornerstone", "Coronet", "Cuckoo", "Curlz MT", "DaunPenh", "Dauphin", "David", "DB LCD Temp", "DELICIOUS", "Denmark", "DFKai-SB", "Didot", "DilleniaUPC", "DIN", "DokChampa", "Dotum", "DotumChe", "Ebrima", "Edwardian Script ITC", "Elephant", "English 111 Vivace BT", "Engravers MT", "EngraversGothic BT", "Eras Bold ITC", "Eras Demi ITC", "Eras Light ITC", "Eras Medium ITC", "EucrosiaUPC", "Euphemia", "Euphemia UCAS", "EUROSTILE", "Exotc350 Bd BT", "FangSong", "Felix Titling", "Fixedsys", "FONTIN", "Footlight MT Light", "Forte", "FrankRuehl", "Fransiscan", "Freefrm721 Blk BT", "FreesiaUPC", "Freestyle Script", "French Script MT", "FrnkGothITC Bk BT", "Fruitger", "FRUTIGER", "Futura", "Futura Bk BT", "Futura Lt BT", "Futura Md BT", "Futura ZBlk BT", "FuturaBlack BT", "Gabriola", "Galliard BT", "Gautami", "Geeza Pro", "Geometr231 BT", "Geometr231 Hv BT", "Geometr231 Lt BT", "GeoSlab 703 Lt BT", "GeoSlab 703 XBd BT", "Gigi", "Gill Sans", "Gill Sans MT", "Gill Sans MT Condensed", "Gill Sans MT Ext Condensed Bold", "Gill Sans Ultra Bold", "Gill Sans Ultra Bold Condensed", "Gisha", "Gloucester MT Extra Condensed", "GOTHAM", "GOTHAM BOLD", "Goudy Old Style", "Goudy Stout", "GoudyHandtooled BT", "GoudyOLSt BT", "Gujarati Sangam MN", "Gulim", "GulimChe", "Gungsuh", "GungsuhChe", "Gurmukhi MN", "Haettenschweiler", "Harlow Solid Italic", "Harrington", "Heather", "Heiti SC", "Heiti TC", "HELV", "Herald", "High Tower Text", "Hiragino Kaku Gothic ProN", "Hiragino Mincho ProN", "Hoefler Text", "Humanst 521 Cn BT", "Humanst521 BT", "Humanst521 Lt BT", "Imprint MT Shadow", "Incised901 Bd BT", "Incised901 BT", "Incised901 Lt BT", "INCONSOLATA", "Informal Roman", "Informal011 BT", "INTERSTATE", "IrisUPC", "Iskoola Pota", "JasmineUPC", "Jazz LET", "Jenson", "Jester", "Jokerman", "Juice ITC", "Kabel Bk BT", "Kabel Ult BT", "Kailasa", "KaiTi", "Kalinga", "Kannada Sangam MN", "Kartika", "Kaufmann Bd BT", "Kaufmann BT", "Khmer UI", "KodchiangUPC", "Kokila", "Korinna BT", "Kristen ITC", "Krungthep", "Kunstler Script", "Lao UI", "Latha", "Leelawadee", "Letter Gothic", "Levenim MT", "LilyUPC", "Lithograph", "Lithograph Light", "Long Island", "Lydian BT", "Magneto", "Maiandra GD", "Malayalam Sangam MN", "Malgun Gothic", "Mangal", "Marigold", "Marion", "Marker Felt", "Market", "Marlett", "Matisse ITC", "Matura MT Script Capitals", "Meiryo", "Meiryo UI", "Microsoft Himalaya", "Microsoft JhengHei", "Microsoft New Tai Lue", "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Uighur", "Microsoft YaHei", "Microsoft Yi Baiti", "MingLiU", "MingLiU_HKSCS", "MingLiU_HKSCS-ExtB", "MingLiU-ExtB", "Minion", "Minion Pro", "Miriam", "Miriam Fixed", "Mistral", "Modern", "Modern No. 20", "Mona Lisa Solid ITC TT", "Mongolian Baiti", "MONO", "MoolBoran", "Mrs Eaves", "MS LineDraw", "MS Mincho", "MS PMincho", "MS Reference Specialty", "MS UI Gothic", "MT Extra", "MUSEO", "MV Boli", "Nadeem", "Narkisim", "NEVIS", "News Gothic", "News GothicMT", "NewsGoth BT", "Niagara Engraved", "Niagara Solid", "Noteworthy", "NSimSun", "Nyala", "OCR A Extended", "Old Century", "Old English Text MT", "Onyx", "Onyx BT", "OPTIMA", "Oriya Sangam MN", "OSAKA", "OzHandicraft BT", "Palace Script MT", "Papyrus", "Parchment", "Party LET", "Pegasus", "Perpetua", "Perpetua Titling MT", "PetitaBold", "Pickwick", "Plantagenet Cherokee", "Playbill", "PMingLiU", "PMingLiU-ExtB", "Poor Richard", "Poster", "PosterBodoni BT", "PRINCETOWN LET", "Pristina", "PTBarnum BT", "Pythagoras", "Raavi", "Rage Italic", "Ravie", "Ribbon131 Bd BT", "Rockwell", "Rockwell Condensed", "Rockwell Extra Bold", "Rod", "Roman", "Sakkal Majalla", "Santa Fe LET", "Savoye LET", "Sceptre", "Script", "Script MT Bold", "SCRIPTINA", "Serifa", "Serifa BT", "Serifa Th BT", "ShelleyVolante BT", "Sherwood", "Shonar Bangla", "Showcard Gothic", "Shruti", "Signboard", "SILKSCREEN", "SimHei", "Simplified Arabic", "Simplified Arabic Fixed", "SimSun", "SimSun-ExtB", "Sinhala Sangam MN", "Sketch Rockwell", "Skia", "Small Fonts", "Snap ITC", "Snell Roundhand", "Socket", "Souvenir Lt BT", "Staccato222 BT", "Steamer", "Stencil", "Storybook", "Styllo", "Subway", "Swis721 BlkEx BT", "Swiss911 XCm BT", "Sylfaen", "Synchro LET", "System", "Tamil Sangam MN", "Technical", "Teletype", "Telugu Sangam MN", "Tempus Sans ITC", "Terminal", "Thonburi", "Traditional Arabic", "Trajan", "TRAJAN PRO", "Tristan", "Tubular", "Tunga", "Tw Cen MT", "Tw Cen MT Condensed", "Tw Cen MT Condensed Extra Bold", "TypoUpright BT", "Unicorn", "Univers", "Univers CE 55 Medium", "Univers Condensed", "Utsaah", "Vagabond", "Vani", "Vijaya", "Viner Hand ITC", "VisualUI", "Vivaldi", "Vladimir Script", "Vrinda", "Westminster", "WHITNEY", "Wide Latin", "ZapfEllipt BT", "ZapfHumnst BT", "ZapfHumnst Dm BT", "Zapfino", "Zurich BlkEx BT", "Zurich Ex BT", "ZWAdobeF"]));
+              const n = document.getElementsByTagName("body")[0],
                 o = document.createElement("div"),
                 s = document.createElement("div"),
                 l = {},
-                d = {},
-                h = function() {
+                c = {},
+                d = function() {
                   const e = document.createElement("span");
                   return e.style.position = "absolute", e.style.left = "-9999px", e.style.fontSize = "72px", e.innerHTML = "mmmmmmmmmmlli", e
                 },
-                c = function(e, t) {
-                  const i = h();
+                h = function(e, t) {
+                  const i = d();
                   return i.style.fontFamily = `'${e}',${t}`, i
                 },
                 u = function(e) {
                   let t = !1;
                   for (let i = 0; i < a.length; i++)
-                    if (t = e[i].offsetWidth !== l[a[i]] || e[i].offsetHeight !== d[a[i]], t) return t;
+                    if (t = e[i].offsetWidth !== l[a[i]] || e[i].offsetHeight !== c[a[i]], t) return t;
                   return t
                 },
                 g = function() {
@@ -464,31 +491,31 @@
                   for (let t = 0, {
                       length: i
                     } = a; t < i; t++) {
-                    const i = h();
+                    const i = d();
                     i.style.fontFamily = a[t], o.appendChild(i), e.push(i)
                   }
                   return e
                 }();
-              r.appendChild(o);
+              n.appendChild(o);
               for (let e = 0, {
                   length: t
-                } = a; e < t; e++) l[a[e]] = g[e].offsetWidth, d[a[e]] = g[e].offsetHeight;
+                } = a; e < t; e++) l[a[e]] = g[e].offsetWidth, c[a[e]] = g[e].offsetHeight;
               const p = function() {
                 const e = {};
-                for (let t = 0, i = n.length; t < i; t++) {
+                for (let t = 0, i = r.length; t < i; t++) {
                   const i = [];
-                  for (let e = 0, r = a.length; e < r; e++) {
-                    const r = c(n[t], a[e]);
-                    s.appendChild(r), i.push(r)
+                  for (let e = 0, n = a.length; e < n; e++) {
+                    const n = h(r[t], a[e]);
+                    s.appendChild(n), i.push(n)
                   }
-                  e[n[t]] = i
+                  e[r[t]] = i
                 }
                 return e
               }();
-              r.appendChild(s);
+              n.appendChild(s);
               const m = [];
-              for (let e = 0, t = n.length; e < t; e++) u(p[n[e]]) && m.push(n[e]);
-              r.removeChild(s), r.removeChild(o), e.push({
+              for (let e = 0, t = r.length; e < t; e++) u(p[r[e]]) && m.push(r[e]);
+              n.removeChild(s), n.removeChild(o), e.push({
                 key: "js_fonts",
                 value: m
               }), t(e)
@@ -594,13 +621,13 @@
             const i = [],
               a = e.createBuffer();
             e.bindBuffer(e.ARRAY_BUFFER, a);
-            const n = new Float32Array([-.2, -.9, 0, .4, -.26, 0, 0, .732134444, 0]);
-            e.bufferData(e.ARRAY_BUFFER, n, e.STATIC_DRAW), a.itemSize = 3, a.numItems = 3;
-            const r = e.createProgram(),
+            const r = new Float32Array([-.2, -.9, 0, .4, -.26, 0, 0, .732134444, 0]);
+            e.bufferData(e.ARRAY_BUFFER, r, e.STATIC_DRAW), a.itemSize = 3, a.numItems = 3;
+            const n = e.createProgram(),
               o = e.createShader(e.VERTEX_SHADER);
             e.shaderSource(o, "attribute vec2 attrVertex;varying vec2 varyinTexCoordinate;uniform vec2 uniformOffset;void main(){varyinTexCoordinate=attrVertex+uniformOffset;gl_Position=vec4(attrVertex,0,1);}"), e.compileShader(o);
             const s = e.createShader(e.FRAGMENT_SHADER);
-            return e.shaderSource(s, "precision mediump float;varying vec2 varyinTexCoordinate;void main() {gl_FragColor=vec4(varyinTexCoordinate,0,1);}"), e.compileShader(s), e.attachShader(r, o), e.attachShader(r, s), e.linkProgram(r), e.useProgram(r), r.vertexPosAttrib = e.getAttribLocation(r, "attrVertex"), r.offsetUniform = e.getUniformLocation(r, "uniformOffset"), e.enableVertexAttribArray(r.vertexPosArray), e.vertexAttribPointer(r.vertexPosAttrib, a.itemSize, e.FLOAT, !1, 0, 0), e.uniform2f(r.offsetUniform, 1, 1), e.drawArrays(e.TRIANGLE_STRIP, 0, a.numItems), null != e.canvas && i.push(e.canvas.toDataURL()), i.push(`extensions:${e.getSupportedExtensions().join(";")}`), i.push(`webgl aliased line width range:${t(e.getParameter(e.ALIASED_LINE_WIDTH_RANGE))}`), i.push(`webgl aliased point size range:${t(e.getParameter(e.ALIASED_POINT_SIZE_RANGE))}`), i.push(`webgl alpha bits:${e.getParameter(e.ALPHA_BITS)}`), i.push("webgl antialiasing:" + (e.getContextAttributes().antialias ? "yes" : "no")), i.push(`webgl blue bits:${e.getParameter(e.BLUE_BITS)}`), i.push(`webgl depth bits:${e.getParameter(e.DEPTH_BITS)}`), i.push(`webgl green bits:${e.getParameter(e.GREEN_BITS)}`), i.push(`webgl max anisotropy:${function(e){let t;const i=e.getExtension("EXT_texture_filter_anisotropic")||e.getExtension("WEBKIT_EXT_texture_filter_anisotropic")||e.getExtension("MOZ_EXT_texture_filter_anisotropic");return i?(t=e.getParameter(i.MAX_TEXTURE_MAX_ANISOTROPY_EXT),0===t&&(t=2),t):null}(e)}`), i.push(`webgl max combined texture image units:${e.getParameter(e.MAX_COMBINED_TEXTURE_IMAGE_UNITS)}`), i.push(`webgl max cube map texture size:${e.getParameter(e.MAX_CUBE_MAP_TEXTURE_SIZE)}`), i.push(`webgl max fragment uniform vectors:${e.getParameter(e.MAX_FRAGMENT_UNIFORM_VECTORS)}`), i.push(`webgl max render buffer size:${e.getParameter(e.MAX_RENDERBUFFER_SIZE)}`), i.push(`webgl max texture image units:${e.getParameter(e.MAX_TEXTURE_IMAGE_UNITS)}`), i.push(`webgl max texture size:${e.getParameter(e.MAX_TEXTURE_SIZE)}`), i.push(`webgl max varying vectors:${e.getParameter(e.MAX_VARYING_VECTORS)}`), i.push(`webgl max vertex attribs:${e.getParameter(e.MAX_VERTEX_ATTRIBS)}`), i.push(`webgl max vertex texture image units:${e.getParameter(e.MAX_VERTEX_TEXTURE_IMAGE_UNITS)}`), i.push(`webgl max vertex uniform vectors:${e.getParameter(e.MAX_VERTEX_UNIFORM_VECTORS)}`), i.push(`webgl max viewport dims:${t(e.getParameter(e.MAX_VIEWPORT_DIMS))}`), i.push(`webgl red bits:${e.getParameter(e.RED_BITS)}`), i.push(`webgl renderer:${e.getParameter(e.RENDERER)}`), i.push(`webgl shading language version:${e.getParameter(e.SHADING_LANGUAGE_VERSION)}`), i.push(`webgl stencil bits:${e.getParameter(e.STENCIL_BITS)}`), i.push(`webgl vendor:${e.getParameter(e.VENDOR)}`), i.push(`webgl version:${e.getParameter(e.VERSION)}`), e.getShaderPrecisionFormat ? (i.push(`webgl vertex shader high float precision:${e.getShaderPrecisionFormat(e.VERTEX_SHADER,e.HIGH_FLOAT).precision}`), i.push(`webgl vertex shader high float precision rangeMin:${e.getShaderPrecisionFormat(e.VERTEX_SHADER,e.HIGH_FLOAT).rangeMin}`), i.push(`webgl vertex shader high float precision rangeMax:${e.getShaderPrecisionFormat(e.VERTEX_SHADER,e.HIGH_FLOAT).rangeMax}`), i.push(`webgl vertex shader medium float precision:${e.getShaderPrecisionFormat(e.VERTEX_SHADER,e.MEDIUM_FLOAT).precision}`), i.push(`webgl vertex shader medium float precision rangeMin:${e.getShaderPrecisionFormat(e.VERTEX_SHADER,e.MEDIUM_FLOAT).rangeMin}`), i.push(`webgl vertex shader medium float precision rangeMax:${e.getShaderPrecisionFormat(e.VERTEX_SHADER,e.MEDIUM_FLOAT).rangeMax}`), i.push(`webgl vertex shader low float precision:${e.getShaderPrecisionFormat(e.VERTEX_SHADER,e.LOW_FLOAT).precision}`), i.push(`webgl vertex shader low float precision rangeMin:${e.getShaderPrecisionFormat(e.VERTEX_SHADER,e.LOW_FLOAT).rangeMin}`), i.push(`webgl vertex shader low float precision rangeMax:${e.getShaderPrecisionFormat(e.VERTEX_SHADER,e.LOW_FLOAT).rangeMax}`), i.push(`webgl fragment shader high float precision:${e.getShaderPrecisionFormat(e.FRAGMENT_SHADER,e.HIGH_FLOAT).precision}`), i.push(`webgl fragment shader high float precision rangeMin:${e.getShaderPrecisionFormat(e.FRAGMENT_SHADER,e.HIGH_FLOAT).rangeMin}`), i.push(`webgl fragment shader high float precision rangeMax:${e.getShaderPrecisionFormat(e.FRAGMENT_SHADER,e.HIGH_FLOAT).rangeMax}`), i.push(`webgl fragment shader medium float precision:${e.getShaderPrecisionFormat(e.FRAGMENT_SHADER,e.MEDIUM_FLOAT).precision}`), i.push(`webgl fragment shader medium float precision rangeMin:${e.getShaderPrecisionFormat(e.FRAGMENT_SHADER,e.MEDIUM_FLOAT).rangeMin}`), i.push(`webgl fragment shader medium float precision rangeMax:${e.getShaderPrecisionFormat(e.FRAGMENT_SHADER,e.MEDIUM_FLOAT).rangeMax}`), i.push(`webgl fragment shader low float precision:${e.getShaderPrecisionFormat(e.FRAGMENT_SHADER,e.LOW_FLOAT).precision}`), i.push(`webgl fragment shader low float precision rangeMin:${e.getShaderPrecisionFormat(e.FRAGMENT_SHADER,e.LOW_FLOAT).rangeMin}`), i.push(`webgl fragment shader low float precision rangeMax:${e.getShaderPrecisionFormat(e.FRAGMENT_SHADER,e.LOW_FLOAT).rangeMax}`), i.push(`webgl vertex shader high int precision:${e.getShaderPrecisionFormat(e.VERTEX_SHADER,e.HIGH_INT).precision}`), i.push(`webgl vertex shader high int precision rangeMin:${e.getShaderPrecisionFormat(e.VERTEX_SHADER,e.HIGH_INT).rangeMin}`), i.push(`webgl vertex shader high int precision rangeMax:${e.getShaderPrecisionFormat(e.VERTEX_SHADER,e.HIGH_INT).rangeMax}`), i.push(`webgl vertex shader medium int precision:${e.getShaderPrecisionFormat(e.VERTEX_SHADER,e.MEDIUM_INT).precision}`), i.push(`webgl vertex shader medium int precision rangeMin:${e.getShaderPrecisionFormat(e.VERTEX_SHADER,e.MEDIUM_INT).rangeMin}`), i.push(`webgl vertex shader medium int precision rangeMax:${e.getShaderPrecisionFormat(e.VERTEX_SHADER,e.MEDIUM_INT).rangeMax}`), i.push(`webgl vertex shader low int precision:${e.getShaderPrecisionFormat(e.VERTEX_SHADER,e.LOW_INT).precision}`), i.push(`webgl vertex shader low int precision rangeMin:${e.getShaderPrecisionFormat(e.VERTEX_SHADER,e.LOW_INT).rangeMin}`), i.push(`webgl vertex shader low int precision rangeMax:${e.getShaderPrecisionFormat(e.VERTEX_SHADER,e.LOW_INT).rangeMax}`), i.push(`webgl fragment shader high int precision:${e.getShaderPrecisionFormat(e.FRAGMENT_SHADER,e.HIGH_INT).precision}`), i.push(`webgl fragment shader high int precision rangeMin:${e.getShaderPrecisionFormat(e.FRAGMENT_SHADER,e.HIGH_INT).rangeMin}`), i.push(`webgl fragment shader high int precision rangeMax:${e.getShaderPrecisionFormat(e.FRAGMENT_SHADER,e.HIGH_INT).rangeMax}`), i.push(`webgl fragment shader medium int precision:${e.getShaderPrecisionFormat(e.FRAGMENT_SHADER,e.MEDIUM_INT).precision}`), i.push(`webgl fragment shader medium int precision rangeMin:${e.getShaderPrecisionFormat(e.FRAGMENT_SHADER,e.MEDIUM_INT).rangeMin}`), i.push(`webgl fragment shader medium int precision rangeMax:${e.getShaderPrecisionFormat(e.FRAGMENT_SHADER,e.MEDIUM_INT).rangeMax}`), i.push(`webgl fragment shader low int precision:${e.getShaderPrecisionFormat(e.FRAGMENT_SHADER,e.LOW_INT).precision}`), i.push(`webgl fragment shader low int precision rangeMin:${e.getShaderPrecisionFormat(e.FRAGMENT_SHADER,e.LOW_INT).rangeMin}`), i.push(`webgl fragment shader low int precision rangeMax:${e.getShaderPrecisionFormat(e.FRAGMENT_SHADER,e.LOW_INT).rangeMax}`), i.join("~")) : ("undefined" == typeof NODEBUG && this.log("WebGL fingerprinting is incomplete, because your browser does not support getShaderPrecisionFormat"), i.join("~"))
+            return e.shaderSource(s, "precision mediump float;varying vec2 varyinTexCoordinate;void main() {gl_FragColor=vec4(varyinTexCoordinate,0,1);}"), e.compileShader(s), e.attachShader(n, o), e.attachShader(n, s), e.linkProgram(n), e.useProgram(n), n.vertexPosAttrib = e.getAttribLocation(n, "attrVertex"), n.offsetUniform = e.getUniformLocation(n, "uniformOffset"), e.enableVertexAttribArray(n.vertexPosArray), e.vertexAttribPointer(n.vertexPosAttrib, a.itemSize, e.FLOAT, !1, 0, 0), e.uniform2f(n.offsetUniform, 1, 1), e.drawArrays(e.TRIANGLE_STRIP, 0, a.numItems), null != e.canvas && i.push(e.canvas.toDataURL()), i.push(`extensions:${e.getSupportedExtensions().join(";")}`), i.push(`webgl aliased line width range:${t(e.getParameter(e.ALIASED_LINE_WIDTH_RANGE))}`), i.push(`webgl aliased point size range:${t(e.getParameter(e.ALIASED_POINT_SIZE_RANGE))}`), i.push(`webgl alpha bits:${e.getParameter(e.ALPHA_BITS)}`), i.push("webgl antialiasing:" + (e.getContextAttributes().antialias ? "yes" : "no")), i.push(`webgl blue bits:${e.getParameter(e.BLUE_BITS)}`), i.push(`webgl depth bits:${e.getParameter(e.DEPTH_BITS)}`), i.push(`webgl green bits:${e.getParameter(e.GREEN_BITS)}`), i.push(`webgl max anisotropy:${function(e){let t;const i=e.getExtension("EXT_texture_filter_anisotropic")||e.getExtension("WEBKIT_EXT_texture_filter_anisotropic")||e.getExtension("MOZ_EXT_texture_filter_anisotropic");return i?(t=e.getParameter(i.MAX_TEXTURE_MAX_ANISOTROPY_EXT),0===t&&(t=2),t):null}(e)}`), i.push(`webgl max combined texture image units:${e.getParameter(e.MAX_COMBINED_TEXTURE_IMAGE_UNITS)}`), i.push(`webgl max cube map texture size:${e.getParameter(e.MAX_CUBE_MAP_TEXTURE_SIZE)}`), i.push(`webgl max fragment uniform vectors:${e.getParameter(e.MAX_FRAGMENT_UNIFORM_VECTORS)}`), i.push(`webgl max render buffer size:${e.getParameter(e.MAX_RENDERBUFFER_SIZE)}`), i.push(`webgl max texture image units:${e.getParameter(e.MAX_TEXTURE_IMAGE_UNITS)}`), i.push(`webgl max texture size:${e.getParameter(e.MAX_TEXTURE_SIZE)}`), i.push(`webgl max varying vectors:${e.getParameter(e.MAX_VARYING_VECTORS)}`), i.push(`webgl max vertex attribs:${e.getParameter(e.MAX_VERTEX_ATTRIBS)}`), i.push(`webgl max vertex texture image units:${e.getParameter(e.MAX_VERTEX_TEXTURE_IMAGE_UNITS)}`), i.push(`webgl max vertex uniform vectors:${e.getParameter(e.MAX_VERTEX_UNIFORM_VECTORS)}`), i.push(`webgl max viewport dims:${t(e.getParameter(e.MAX_VIEWPORT_DIMS))}`), i.push(`webgl red bits:${e.getParameter(e.RED_BITS)}`), i.push(`webgl renderer:${e.getParameter(e.RENDERER)}`), i.push(`webgl shading language version:${e.getParameter(e.SHADING_LANGUAGE_VERSION)}`), i.push(`webgl stencil bits:${e.getParameter(e.STENCIL_BITS)}`), i.push(`webgl vendor:${e.getParameter(e.VENDOR)}`), i.push(`webgl version:${e.getParameter(e.VERSION)}`), e.getShaderPrecisionFormat ? (i.push(`webgl vertex shader high float precision:${e.getShaderPrecisionFormat(e.VERTEX_SHADER,e.HIGH_FLOAT).precision}`), i.push(`webgl vertex shader high float precision rangeMin:${e.getShaderPrecisionFormat(e.VERTEX_SHADER,e.HIGH_FLOAT).rangeMin}`), i.push(`webgl vertex shader high float precision rangeMax:${e.getShaderPrecisionFormat(e.VERTEX_SHADER,e.HIGH_FLOAT).rangeMax}`), i.push(`webgl vertex shader medium float precision:${e.getShaderPrecisionFormat(e.VERTEX_SHADER,e.MEDIUM_FLOAT).precision}`), i.push(`webgl vertex shader medium float precision rangeMin:${e.getShaderPrecisionFormat(e.VERTEX_SHADER,e.MEDIUM_FLOAT).rangeMin}`), i.push(`webgl vertex shader medium float precision rangeMax:${e.getShaderPrecisionFormat(e.VERTEX_SHADER,e.MEDIUM_FLOAT).rangeMax}`), i.push(`webgl vertex shader low float precision:${e.getShaderPrecisionFormat(e.VERTEX_SHADER,e.LOW_FLOAT).precision}`), i.push(`webgl vertex shader low float precision rangeMin:${e.getShaderPrecisionFormat(e.VERTEX_SHADER,e.LOW_FLOAT).rangeMin}`), i.push(`webgl vertex shader low float precision rangeMax:${e.getShaderPrecisionFormat(e.VERTEX_SHADER,e.LOW_FLOAT).rangeMax}`), i.push(`webgl fragment shader high float precision:${e.getShaderPrecisionFormat(e.FRAGMENT_SHADER,e.HIGH_FLOAT).precision}`), i.push(`webgl fragment shader high float precision rangeMin:${e.getShaderPrecisionFormat(e.FRAGMENT_SHADER,e.HIGH_FLOAT).rangeMin}`), i.push(`webgl fragment shader high float precision rangeMax:${e.getShaderPrecisionFormat(e.FRAGMENT_SHADER,e.HIGH_FLOAT).rangeMax}`), i.push(`webgl fragment shader medium float precision:${e.getShaderPrecisionFormat(e.FRAGMENT_SHADER,e.MEDIUM_FLOAT).precision}`), i.push(`webgl fragment shader medium float precision rangeMin:${e.getShaderPrecisionFormat(e.FRAGMENT_SHADER,e.MEDIUM_FLOAT).rangeMin}`), i.push(`webgl fragment shader medium float precision rangeMax:${e.getShaderPrecisionFormat(e.FRAGMENT_SHADER,e.MEDIUM_FLOAT).rangeMax}`), i.push(`webgl fragment shader low float precision:${e.getShaderPrecisionFormat(e.FRAGMENT_SHADER,e.LOW_FLOAT).precision}`), i.push(`webgl fragment shader low float precision rangeMin:${e.getShaderPrecisionFormat(e.FRAGMENT_SHADER,e.LOW_FLOAT).rangeMin}`), i.push(`webgl fragment shader low float precision rangeMax:${e.getShaderPrecisionFormat(e.FRAGMENT_SHADER,e.LOW_FLOAT).rangeMax}`), i.push(`webgl vertex shader high int precision:${e.getShaderPrecisionFormat(e.VERTEX_SHADER,e.HIGH_INT).precision}`), i.push(`webgl vertex shader high int precision rangeMin:${e.getShaderPrecisionFormat(e.VERTEX_SHADER,e.HIGH_INT).rangeMin}`), i.push(`webgl vertex shader high int precision rangeMax:${e.getShaderPrecisionFormat(e.VERTEX_SHADER,e.HIGH_INT).rangeMax}`), i.push(`webgl vertex shader medium int precision:${e.getShaderPrecisionFormat(e.VERTEX_SHADER,e.MEDIUM_INT).precision}`), i.push(`webgl vertex shader medium int precision rangeMin:${e.getShaderPrecisionFormat(e.VERTEX_SHADER,e.MEDIUM_INT).rangeMin}`), i.push(`webgl vertex shader medium int precision rangeMax:${e.getShaderPrecisionFormat(e.VERTEX_SHADER,e.MEDIUM_INT).rangeMax}`), i.push(`webgl vertex shader low int precision:${e.getShaderPrecisionFormat(e.VERTEX_SHADER,e.LOW_INT).precision}`), i.push(`webgl vertex shader low int precision rangeMin:${e.getShaderPrecisionFormat(e.VERTEX_SHADER,e.LOW_INT).rangeMin}`), i.push(`webgl vertex shader low int precision rangeMax:${e.getShaderPrecisionFormat(e.VERTEX_SHADER,e.LOW_INT).rangeMax}`), i.push(`webgl fragment shader high int precision:${e.getShaderPrecisionFormat(e.FRAGMENT_SHADER,e.HIGH_INT).precision}`), i.push(`webgl fragment shader high int precision rangeMin:${e.getShaderPrecisionFormat(e.FRAGMENT_SHADER,e.HIGH_INT).rangeMin}`), i.push(`webgl fragment shader high int precision rangeMax:${e.getShaderPrecisionFormat(e.FRAGMENT_SHADER,e.HIGH_INT).rangeMax}`), i.push(`webgl fragment shader medium int precision:${e.getShaderPrecisionFormat(e.FRAGMENT_SHADER,e.MEDIUM_INT).precision}`), i.push(`webgl fragment shader medium int precision rangeMin:${e.getShaderPrecisionFormat(e.FRAGMENT_SHADER,e.MEDIUM_INT).rangeMin}`), i.push(`webgl fragment shader medium int precision rangeMax:${e.getShaderPrecisionFormat(e.FRAGMENT_SHADER,e.MEDIUM_INT).rangeMax}`), i.push(`webgl fragment shader low int precision:${e.getShaderPrecisionFormat(e.FRAGMENT_SHADER,e.LOW_INT).precision}`), i.push(`webgl fragment shader low int precision rangeMin:${e.getShaderPrecisionFormat(e.FRAGMENT_SHADER,e.LOW_INT).rangeMin}`), i.push(`webgl fragment shader low int precision rangeMax:${e.getShaderPrecisionFormat(e.FRAGMENT_SHADER,e.LOW_INT).rangeMax}`), i.join("~")) : ("undefined" == typeof NODEBUG && this.log("WebGL fingerprinting is incomplete, because your browser does not support getShaderPrecisionFormat"), i.join("~"))
           },
           getAdBlock() {
             const e = document.createElement("div");
@@ -718,7 +745,7 @@
             if (null !== e)
               if (this.nativeForEach && e.forEach === this.nativeForEach) e.forEach(t, i);
               else if (e.length === +e.length) {
-              for (let a = 0, n = e.length; a < n; a++)
+              for (let a = 0, r = e.length; a < r; a++)
                 if (t.call(i, e[a], a, e) === {}) return
             } else
               for (const a in e)
@@ -726,8 +753,8 @@
           },
           map(e, t, i) {
             const a = [];
-            return null == e ? a : this.nativeMap && e.map === this.nativeMap ? e.map(t, i) : (this.each(e, ((e, n, r) => {
-              a[a.length] = t.call(i, e, n, r)
+            return null == e ? a : this.nativeMap && e.map === this.nativeMap ? e.map(t, i) : (this.each(e, ((e, r, n) => {
+              a[a.length] = t.call(i, e, r, n)
             })), a)
           },
           x64Add(e, t) {
@@ -750,50 +777,50 @@
             t = t || 0;
             const i = (e = e || "").length % 16,
               a = e.length - i;
-            let n = [0, t],
-              r = [0, t],
+            let r = [0, t],
+              n = [0, t],
               o = [0, 0],
               s = [0, 0];
             const l = [2277735313, 289559509],
-              d = [1291169091, 658871167];
-            for (var h = 0; h < a; h += 16) o = [255 & e.charCodeAt(h + 4) | (255 & e.charCodeAt(h + 5)) << 8 | (255 & e.charCodeAt(h + 6)) << 16 | (255 & e.charCodeAt(h + 7)) << 24, 255 & e.charCodeAt(h) | (255 & e.charCodeAt(h + 1)) << 8 | (255 & e.charCodeAt(h + 2)) << 16 | (255 & e.charCodeAt(h + 3)) << 24], s = [255 & e.charCodeAt(h + 12) | (255 & e.charCodeAt(h + 13)) << 8 | (255 & e.charCodeAt(h + 14)) << 16 | (255 & e.charCodeAt(h + 15)) << 24, 255 & e.charCodeAt(h + 8) | (255 & e.charCodeAt(h + 9)) << 8 | (255 & e.charCodeAt(h + 10)) << 16 | (255 & e.charCodeAt(h + 11)) << 24], o = this.x64Multiply(o, l), o = this.x64Rotl(o, 31), o = this.x64Multiply(o, d), n = this.x64Xor(n, o), n = this.x64Rotl(n, 27), n = this.x64Add(n, r), n = this.x64Add(this.x64Multiply(n, [0, 5]), [0, 1390208809]), s = this.x64Multiply(s, d), s = this.x64Rotl(s, 33), s = this.x64Multiply(s, l), r = this.x64Xor(r, s), r = this.x64Rotl(r, 31), r = this.x64Add(r, n), r = this.x64Add(this.x64Multiply(r, [0, 5]), [0, 944331445]);
+              c = [1291169091, 658871167];
+            for (var d = 0; d < a; d += 16) o = [255 & e.charCodeAt(d + 4) | (255 & e.charCodeAt(d + 5)) << 8 | (255 & e.charCodeAt(d + 6)) << 16 | (255 & e.charCodeAt(d + 7)) << 24, 255 & e.charCodeAt(d) | (255 & e.charCodeAt(d + 1)) << 8 | (255 & e.charCodeAt(d + 2)) << 16 | (255 & e.charCodeAt(d + 3)) << 24], s = [255 & e.charCodeAt(d + 12) | (255 & e.charCodeAt(d + 13)) << 8 | (255 & e.charCodeAt(d + 14)) << 16 | (255 & e.charCodeAt(d + 15)) << 24, 255 & e.charCodeAt(d + 8) | (255 & e.charCodeAt(d + 9)) << 8 | (255 & e.charCodeAt(d + 10)) << 16 | (255 & e.charCodeAt(d + 11)) << 24], o = this.x64Multiply(o, l), o = this.x64Rotl(o, 31), o = this.x64Multiply(o, c), r = this.x64Xor(r, o), r = this.x64Rotl(r, 27), r = this.x64Add(r, n), r = this.x64Add(this.x64Multiply(r, [0, 5]), [0, 1390208809]), s = this.x64Multiply(s, c), s = this.x64Rotl(s, 33), s = this.x64Multiply(s, l), n = this.x64Xor(n, s), n = this.x64Rotl(n, 31), n = this.x64Add(n, r), n = this.x64Add(this.x64Multiply(n, [0, 5]), [0, 944331445]);
             switch (o = [0, 0], s = [0, 0], i) {
               case 15:
-                s = this.x64Xor(s, this.x64LeftShift([0, e.charCodeAt(h + 14)], 48));
+                s = this.x64Xor(s, this.x64LeftShift([0, e.charCodeAt(d + 14)], 48));
               case 14:
-                s = this.x64Xor(s, this.x64LeftShift([0, e.charCodeAt(h + 13)], 40));
+                s = this.x64Xor(s, this.x64LeftShift([0, e.charCodeAt(d + 13)], 40));
               case 13:
-                s = this.x64Xor(s, this.x64LeftShift([0, e.charCodeAt(h + 12)], 32));
+                s = this.x64Xor(s, this.x64LeftShift([0, e.charCodeAt(d + 12)], 32));
               case 12:
-                s = this.x64Xor(s, this.x64LeftShift([0, e.charCodeAt(h + 11)], 24));
+                s = this.x64Xor(s, this.x64LeftShift([0, e.charCodeAt(d + 11)], 24));
               case 11:
-                s = this.x64Xor(s, this.x64LeftShift([0, e.charCodeAt(h + 10)], 16));
+                s = this.x64Xor(s, this.x64LeftShift([0, e.charCodeAt(d + 10)], 16));
               case 10:
-                s = this.x64Xor(s, this.x64LeftShift([0, e.charCodeAt(h + 9)], 8));
+                s = this.x64Xor(s, this.x64LeftShift([0, e.charCodeAt(d + 9)], 8));
               case 9:
-                s = this.x64Xor(s, [0, e.charCodeAt(h + 8)]), s = this.x64Multiply(s, d), s = this.x64Rotl(s, 33), s = this.x64Multiply(s, l), r = this.x64Xor(r, s);
+                s = this.x64Xor(s, [0, e.charCodeAt(d + 8)]), s = this.x64Multiply(s, c), s = this.x64Rotl(s, 33), s = this.x64Multiply(s, l), n = this.x64Xor(n, s);
               case 8:
-                o = this.x64Xor(o, this.x64LeftShift([0, e.charCodeAt(h + 7)], 56));
+                o = this.x64Xor(o, this.x64LeftShift([0, e.charCodeAt(d + 7)], 56));
               case 7:
-                o = this.x64Xor(o, this.x64LeftShift([0, e.charCodeAt(h + 6)], 48));
+                o = this.x64Xor(o, this.x64LeftShift([0, e.charCodeAt(d + 6)], 48));
               case 6:
-                o = this.x64Xor(o, this.x64LeftShift([0, e.charCodeAt(h + 5)], 40));
+                o = this.x64Xor(o, this.x64LeftShift([0, e.charCodeAt(d + 5)], 40));
               case 5:
-                o = this.x64Xor(o, this.x64LeftShift([0, e.charCodeAt(h + 4)], 32));
+                o = this.x64Xor(o, this.x64LeftShift([0, e.charCodeAt(d + 4)], 32));
               case 4:
-                o = this.x64Xor(o, this.x64LeftShift([0, e.charCodeAt(h + 3)], 24));
+                o = this.x64Xor(o, this.x64LeftShift([0, e.charCodeAt(d + 3)], 24));
               case 3:
-                o = this.x64Xor(o, this.x64LeftShift([0, e.charCodeAt(h + 2)], 16));
+                o = this.x64Xor(o, this.x64LeftShift([0, e.charCodeAt(d + 2)], 16));
               case 2:
-                o = this.x64Xor(o, this.x64LeftShift([0, e.charCodeAt(h + 1)], 8));
+                o = this.x64Xor(o, this.x64LeftShift([0, e.charCodeAt(d + 1)], 8));
               case 1:
-                o = this.x64Xor(o, [0, e.charCodeAt(h)]), o = this.x64Multiply(o, l), o = this.x64Rotl(o, 31), o = this.x64Multiply(o, d), n = this.x64Xor(n, o)
+                o = this.x64Xor(o, [0, e.charCodeAt(d)]), o = this.x64Multiply(o, l), o = this.x64Rotl(o, 31), o = this.x64Multiply(o, c), r = this.x64Xor(r, o)
             }
-            return n = this.x64Xor(n, [0, e.length]), r = this.x64Xor(r, [0, e.length]), n = this.x64Add(n, r), r = this.x64Add(r, n), n = this.x64Fmix(n), r = this.x64Fmix(r), n = this.x64Add(n, r), r = this.x64Add(r, n), `00000000${(n[0]>>>0).toString(16)}`.slice(-8) + `00000000${(n[1]>>>0).toString(16)}`.slice(-8) + `00000000${(r[0]>>>0).toString(16)}`.slice(-8) + `00000000${(r[1]>>>0).toString(16)}`.slice(-8)
+            return r = this.x64Xor(r, [0, e.length]), n = this.x64Xor(n, [0, e.length]), r = this.x64Add(r, n), n = this.x64Add(n, r), r = this.x64Fmix(r), n = this.x64Fmix(n), r = this.x64Add(r, n), n = this.x64Add(n, r), `00000000${(r[0]>>>0).toString(16)}`.slice(-8) + `00000000${(r[1]>>>0).toString(16)}`.slice(-8) + `00000000${(n[0]>>>0).toString(16)}`.slice(-8) + `00000000${(n[1]>>>0).toString(16)}`.slice(-8)
           }
         }, e.VERSION = "1.4.0", e
-      }, e.exports ? e.exports = n() : "function" == typeof define && i.amdO ? define(n) : a.Fingerprint2 = n();
-      var r = new window.Fingerprint2
+      }, e.exports ? e.exports = r() : "function" == typeof define && i.amdO ? define(r) : a.Fingerprint2 = r();
+      var n = new window.Fingerprint2
     },
     703: e => {
       var t = {
@@ -936,7 +963,7 @@
       };
       var a = {};
 
-      function n(e, t) {
+      function r(e, t) {
         for (var i = 0; i < e.definitions.length; i++) {
           var a = e.definitions[i];
           if (a.name && a.name.value == t) return a
@@ -950,13 +977,13 @@
       })), e.exports = t, e.exports.UserData = function(e, t) {
         var i = {
           kind: e.kind,
-          definitions: [n(e, t)]
+          definitions: [r(e, t)]
         };
         e.hasOwnProperty("loc") && (i.loc = e.loc);
-        var r = a[t] || new Set,
+        var n = a[t] || new Set,
           o = new Set,
           s = new Set;
-        for (r.forEach((function(e) {
+        for (n.forEach((function(e) {
             s.add(e)
           })); s.size > 0;) {
           var l = s;
@@ -967,7 +994,7 @@
           }))
         }
         return o.forEach((function(t) {
-          var a = n(e, t);
+          var a = r(e, t);
           a && i.definitions.push(a)
         })), i
       }(t, "UserData")
