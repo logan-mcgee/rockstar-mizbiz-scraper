@@ -1908,6 +1908,7 @@
 [data-game=rdo] .c5c56c3e04a1851fa937.a0cac400610dc1c1e2b1,
 [data-game^=rdr] .c5c56c3e04a1851fa937.a0cac400610dc1c1e2b1 {
   --badge-text-color: #fff;
+  align-items: center;
   background-image: url(../img/cc3ba38f9c74389dc100.png);
   display: flex;
   font-family: var(--badge-font, "RDRLino-Regular");
@@ -1917,7 +1918,9 @@
 
 [data-game=rdo] .c5c56c3e04a1851fa937.a0cac400610dc1c1e2b1>div,
 [data-game^=rdr] .c5c56c3e04a1851fa937.a0cac400610dc1c1e2b1>div {
-  line-height: 95%
+  line-height: 100%;
+  margin: auto;
+  width: 80%
 }
 
 [data-game=rdo] .c5c56c3e04a1851fa937.a0cac400610dc1c1e2b1 img,

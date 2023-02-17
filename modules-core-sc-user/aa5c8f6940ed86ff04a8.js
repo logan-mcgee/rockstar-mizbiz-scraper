@@ -1,4 +1,4 @@
-/*! For license information please see 1b8a0a8048ef7ff6a16e.js.LICENSE.txt */
+/*! For license information please see aa5c8f6940ed86ff04a8.js.LICENSE.txt */
 (self.webpackChunk_rockstargames_modules_core_sc_user = self.webpackChunk_rockstargames_modules_core_sc_user || []).push([
   [580], {
     50: (e, t, i) => {
@@ -88,9 +88,8 @@
                   if (i?.rockstarId === l?.user?.id) {
                     const e = l?.user?.nickname;
                     let i = "",
-                      r = "",
-                      n = "";
-                    a?.map((e => ("xbl" === e?.onlineService ? i = e.userName : "np" === e?.onlineService ? r = e.userName : "steam" === e?.onlineService && (n = e.userName), e))), s(t.map((t => ("pc" === t.platform ? t.platformUsername = "" === n ? e : n : "ps4" === t.platform || "ps5" === t.platform ? t.platformUsername = "" === r ? e : r : "xboxone" !== t.platform && "xboxsx" !== t.platform || (t.platformUsername = "" === i ? e : i), t))))
+                      r = "";
+                    a?.map((e => ("xbl" === e?.onlineService ? i = e.userName : "np" === e?.onlineService && (r = e.userName), e))), s(t.map((t => ("ps4" === t.platform || "ps5" === t.platform ? t.platformUsername = "" === r ? e : r : "xboxone" === t.platform || "xboxsx" === t.platform ? t.platformUsername = "" === i ? e : i : t.platformUsername = e, t))))
                   }
                 }))
               })()

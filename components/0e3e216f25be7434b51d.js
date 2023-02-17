@@ -46,7 +46,7 @@
           columns: v,
           mobileColumns: f
         } = e;
-        const [p, b] = (0, i.useState)(null), k = t ? t.split("_#_") : a;
+        const [p, b] = (0, i.useState)(null), h = t ? t.split("_#_") : a;
         return (0, i.useEffect)((() => {
           b(a)
         }), [a]), t || a ? v && p ? (0, c.jsx)("div", {
@@ -67,7 +67,7 @@
         }) : (0, c.jsx)("ul", {
           style: (0, l.safeStyles)(s),
           className: (0, r.classList)(d.itemList, d.custom, g ? d.noImg : "", n ? d[n] : "", u ? d[u] : "", m ?? ""),
-          children: k.map((e => (0, c.jsx)("li", {
+          children: h.map((e => (0, c.jsx)("li", {
             dangerouslySetInnerHTML: {
               __html: o(e?.content ?? e)
             }
@@ -79,7 +79,7 @@
       "use strict";
       t.r(a), t.d(a, {
         A: () => c,
-        AudioPlayer: () => h,
+        AudioPlayer: () => k,
         Badge: () => x,
         Button: () => y,
         CalloutSection: () => M,
@@ -110,7 +110,7 @@
         NewswireTag: () => aa,
         Paging: () => ga,
         ParallaxCacheBuster: () => fa,
-        ParallaxInnerLayer: () => ka,
+        ParallaxInnerLayer: () => ha,
         ParallaxOuterLayer: () => xa,
         ParallaxWrapper: () => ba,
         Rating: () => _a,
@@ -248,7 +248,7 @@
           const v = (0, o.useRef)(null),
             p = (0, o.useRef)(null),
             b = (0, o.useRef)(null),
-            [k, h] = (0, o.useState)(null),
+            [h, k] = (0, o.useState)(null),
             [x, N] = (0, o.useState)(!1),
             y = e => {
               const a = new Date(1e3 * e),
@@ -259,7 +259,7 @@
           return (0, o.useEffect)((() => {
             if (!p.current || !b.current) return;
             const e = () => {
-              b.current && p.current && h(b.current.clientWidth > p.current.clientWidth)
+              b.current && p.current && k(b.current.clientWidth > p.current.clientWidth)
             };
             return window.addEventListener("resize", e), e(), () => window.removeEventListener("resize", e)
           }), [b, p, a]), (0, o.useEffect)((() => {
@@ -300,7 +300,7 @@
               className: f.controlsTrack,
               ref: p,
               children: (0, d.jsx)("span", {
-                className: [f.controlsTrackTitle, k ? f.controlsTrackAnimating : ""].join(" "),
+                className: [f.controlsTrackTitle, h ? f.controlsTrackAnimating : ""].join(" "),
                 ref: b,
                 children: l.title
               })
@@ -344,7 +344,7 @@
             })]
           })
         },
-        k = e => {
+        h = e => {
           let {
             tracks: a,
             trackId: t,
@@ -387,7 +387,7 @@
             })]
           })
         },
-        h = e => {
+        k = e => {
           let {
             id: a,
             className: t = ""
@@ -398,7 +398,7 @@
             variables: {
               id: a
             }
-          }), [n, s] = (0, o.useState)(), [r, l] = (0, o.useState)(), [c, m] = (0, o.useState)(), [u, h] = (0, o.useState)(!1), [x, N] = (0, o.useState)(!1), [y, _] = (0, o.useState)(new HTMLAudioElement), [j, S] = (0, o.useState)({
+          }), [n, s] = (0, o.useState)(), [r, l] = (0, o.useState)(), [c, m] = (0, o.useState)(), [u, k] = (0, o.useState)(!1), [x, N] = (0, o.useState)(!1), [y, _] = (0, o.useState)(new HTMLAudioElement), [j, S] = (0, o.useState)({
             current: 0,
             duration: 0
           }), [w, T] = (0, o.useState)(!0);
@@ -431,7 +431,7 @@
               from: "audio"
             })
           }), [x]), (0, o.useEffect)((() => {
-            y && (x ? y.play() : y.pause(), h(!1))
+            y && (x ? y.play() : y.pause(), k(!1))
           }), [x, y, c?.id]), (0, o.useEffect)((() => {
             if (!r) return;
             const {
@@ -447,12 +447,12 @@
                 _(e)
               },
               src: c.mp3_src
-            }), (0, d.jsx)(k, {
+            }), (0, d.jsx)(h, {
               tracks: i.audioAlbum.tracks,
               setTrackId: l,
               trackId: r,
               tracksOpen: u,
-              setTracksOpen: h,
+              setTracksOpen: k,
               setPlaying: N,
               setAutoNext: T
             }), (0, d.jsx)(p, {
@@ -461,7 +461,7 @@
               setTrackId: l,
               trackBounds: n,
               tracksOpen: u,
-              setTracksOpen: h,
+              setTracksOpen: k,
               playing: x,
               setPlaying: N,
               timing: j,
@@ -1303,7 +1303,7 @@
             }
           }
         },
-        ke = {
+        he = {
           container: "be57c52943608ddf59c2",
           content: "cfe275314abbd166e236",
           unexpandedButton: "b870021e51bcabfd89b2",
@@ -1318,7 +1318,7 @@
           pc: "c25189f8d019031cd50f",
           buttonText: "ecefe77b5da17c0a3751"
         },
-        he = e => {
+        ke = e => {
           let {
             buttonText: a = "",
             link: i = "",
@@ -1326,13 +1326,13 @@
             onClick: s
           } = e;
           const r = i.startsWith(document.location.origin) ? "_self" : "_blank",
-            c = [ke.platformButton, ke[n]].join(" "),
+            c = [he.platformButton, he[n]].join(" "),
             o = n ? t(3631)(`./${n}.svg`) : null,
             m = (0, d.jsxs)(d.Fragment, {
               children: [o ? (0, d.jsx)("img", {
                 src: o
               }) : "", (0, d.jsx)("div", {
-                className: ke.buttonText,
+                className: he.buttonText,
                 children: a
               })]
             });
@@ -1361,9 +1361,9 @@
             track: l
           } = (0, L.useGtmTrack)();
           return (0, d.jsxs)("div", {
-            className: ke.container,
+            className: he.container,
             children: [(0, d.jsx)(ue.E.div, {
-              className: ke.content,
+              className: he.content,
               animate: s ? "open" : "close",
               variants: fe,
               children: i
@@ -1371,25 +1371,25 @@
               onClick: () => {
                 r(!s)
               },
-              className: ke.unexpandedButton,
+              className: he.unexpandedButton,
               animate: s ? "open" : "closed",
               variants: be,
               initial: !1,
               children: [(0, d.jsx)(ue.E.div, {
-                className: ke.buttonText,
+                className: he.buttonText,
                 children: "string" == typeof a ? a : "Subscribe"
               }), (0, d.jsxs)(ue.E.div, {
-                className: ke.expandedArea,
+                className: he.expandedArea,
                 animate: s ? "open" : "closed",
                 variants: pe,
                 initial: !1,
                 children: [(0, d.jsx)("img", {
-                  className: ke.closeButton,
+                  className: he.closeButton,
                   onClick: () => r(!1),
                   src: t(9545)
                 }), (0, d.jsx)("div", {
-                  className: ke.platformButtons,
-                  children: n.length ? n.map(((e, a) => (0, d.jsx)(he, {
+                  className: he.platformButtons,
+                  children: n.length ? n.map(((e, a) => (0, d.jsx)(ke, {
                     buttonText: e.buttonText ?? "",
                     link: e.href,
                     platform: e.platform,
@@ -1583,7 +1583,7 @@
           } = e;
           const {
             track: u
-          } = (0, L.useGtmTrack)(), g = (0, o.useRef)(null), v = (0, o.useRef)(null), f = (0, o.useRef)(null), [p, b] = (0, o.useState)(null), [k, h] = (0, o.useState)(null), [, x] = (0, o.useState)({}), [N, y] = (0, o.useState)(), S = {
+          } = (0, L.useGtmTrack)(), g = (0, o.useRef)(null), v = (0, o.useRef)(null), f = (0, o.useRef)(null), [p, b] = (0, o.useState)(null), [h, k] = (0, o.useState)(null), [, x] = (0, o.useState)({}), [N, y] = (0, o.useState)(), S = {
             0: {
               spaceBetween: r ?? 16
             },
@@ -1603,7 +1603,7 @@
               if (g.current) {
                 const e = s || Number(window.getComputedStyle(g.current).getPropertyValue("--slides-per-view")),
                   a = s ? 1 : Number(window.getComputedStyle(g.current).getPropertyValue("--slides-per-view-multiplier"));
-                h(e * a)
+                k(e * a)
               }
             };
             return window.addEventListener("resize", e), e(), () => {
@@ -1613,7 +1613,7 @@
             if (!t) return;
             const e = t.map(((e, a) => (0, d.jsx)(j.o5, {
               children: e
-            }, a)));
+            }, Symbol(a).toString())));
             b(e)
           }), [t]), (0, o.useEffect)((() => {
             y({
@@ -1644,8 +1644,8 @@
               dangerouslySetInnerHTML: {
                 __html: a
               }
-            }), k ? (0, d.jsx)(j.tq, {
-              slidesPerView: k,
+            }), h ? (0, d.jsx)(j.tq, {
+              slidesPerView: h,
               onInit: e => x(e),
               grabCursor: !0,
               navigation: N,
@@ -1668,7 +1668,7 @@
                   event_label: n?.toLowerCase() ?? ""
                 })
               },
-              onSliderMove: () => {
+              onSlideChangeTransitionEnd: () => {
                 u({
                   event_action: "swipe",
                   event_category: "carousel",
@@ -2079,15 +2079,15 @@
             })(o),
             p = (0, _.useGetCdnSource)(t?.mobile?.full_src ?? null),
             b = (0, _.useGetCdnSource)(t?.desktop?.full_src ?? p),
-            k = (0, _.useGetCdnSource)(c?.mobile?.full_src ?? null),
-            h = (0, _.useGetCdnSource)(c?.desktop?.full_src ?? k);
+            h = (0, _.useGetCdnSource)(c?.mobile?.full_src ?? null),
+            k = (0, _.useGetCdnSource)(c?.desktop?.full_src ?? h);
           return (0, d.jsxs)(ue.E.div, {
             className: (0, _.classList)(Ae.hero, n),
             style: {
               "--background-image-desktop": `url(${b})`,
               "--background-image-mobile": `url(${p})`,
-              "--layered-image-desktop": `url(${h})`,
-              "--layered-image-mobile": `url(${k})`
+              "--layered-image-desktop": `url(${k})`,
+              "--layered-image-mobile": `url(${h})`
             },
             initial: "hidden",
             animate: "visible",
@@ -2099,7 +2099,7 @@
               children: [b && p ? (0, d.jsx)("div", {
                 className: Ae.background,
                 style: t?.style ?? {}
-              }) : "", k && h ? (0, d.jsx)("div", {
+              }) : "", h && k ? (0, d.jsx)("div", {
                 className: Ae.layered,
                 style: o ? f : {}
               }) : "", (0, d.jsx)("div", {
@@ -2368,8 +2368,8 @@
           } = e;
           const [s] = (0, l.useSearchParams)(), {
             tagId: r = null
-          } = (0, l.useParams)(), [c, m] = (0, o.useState)(r ?? t ?? s.get("tag_id")), [u, v] = (0, o.useState)(1), [f, p] = (0, o.useState)([]), [b, k] = (0, o.useState)(null), {
-            data: h
+          } = (0, l.useParams)(), [c, m] = (0, o.useState)(r ?? t ?? s.get("tag_id")), [u, v] = (0, o.useState)(1), [f, p] = (0, o.useState)([]), [b, h] = (0, o.useState)(null), {
+            data: k
           } = (0, g.useQuery)(sa(), {
             variables: {
               tagId: Number(c),
@@ -2381,8 +2381,8 @@
           return (0, o.useEffect)((() => {
             v(1), p([]), m(r ?? t ?? s.get("tag_id"))
           }), [s.get("tag_id")]), (0, o.useEffect)((() => {
-            h && h.posts && h.posts.paging && k(h.posts.paging), h && h.posts && h.posts.results && p(f.concat(h.posts.results))
-          }), [h]), f.length ? (0, d.jsxs)(d.Fragment, {
+            k && k.posts && k.posts.paging && h(k.posts.paging), k && k.posts && k.posts.results && p(f.concat(k.posts.results))
+          }), [k]), f.length ? (0, d.jsxs)(d.Fragment, {
             children: [(0, d.jsx)(oa, {
               posts: f,
               relativeTo: a,
@@ -2556,7 +2556,7 @@
             })
           })
         },
-        ka = e => {
+        ha = e => {
           let {
             layers: a = [],
             displayClass: t = "",
@@ -2579,7 +2579,7 @@
             style: i
           })
         },
-        ha = "d0b97ccb9b7b3592b1e9",
+        ka = "d0b97ccb9b7b3592b1e9",
         xa = e => {
           let {
             minOffset: a = 0,
@@ -2591,12 +2591,12 @@
           } = e;
           return "horizontal" === i ? (0, d.jsx)(va.VS, {
             x: [a, t],
-            className: (0, _.classList)(ha, n),
+            className: (0, _.classList)(ka, n),
             styleOuter: s,
             children: r
           }) : (0, d.jsx)(va.VS, {
             y: [a, t],
-            className: (0, _.classList)(ha, n),
+            className: (0, _.classList)(ka, n),
             styleOuter: s,
             children: r
           })
@@ -2860,7 +2860,7 @@
             if (!s) return;
             const e = s.map(((e, a) => (0, d.jsx)(j.o5, {
               children: e
-            }, a)));
+            }, Symbol(a).toString())));
             p(e)
           }), [s]), f ? (0, d.jsxs)(ue.E.div, {
             className: "b0678d1be99248011414",
@@ -2899,7 +2899,7 @@
                     event_label: a?.toLowerCase() ?? ""
                   })
                 },
-                onSliderMove: () => {
+                onSlideChangeTransitionEnd: () => {
                   c({
                     event_action: "swipe",
                     event_category: "carousel",
@@ -3209,7 +3209,7 @@
               e < 0 ? e = 0 : e >= a - 1 && (e = a - 1), v(e)
             },
             [p, b] = (0, o.useState)(0);
-          let k;
+          let h;
           return (0, o.useEffect)((() => {
             const e = () => {
               const e = e => window.matchMedia(`(max-width: ${e})`).matches,
@@ -3238,7 +3238,7 @@
                 e.off("swiperight", a), e.off("swipeleft", t), e.off("pan", i), e.off("panend", n), b(0)
               }
             }
-          }), [l.current, g]), k = "games" === s ? (0, d.jsx)(d.Fragment, {
+          }), [l.current, g]), h = "games" === s ? (0, d.jsx)(d.Fragment, {
             children: t.results.map((e => (0, d.jsx)(Se, {
               game: e,
               dontOverrideTo: !0,
@@ -3274,7 +3274,7 @@
                     transform: `translateX(calc(-${100*g}% + ${p}px - (var(--standard-grid-gap) * ${g}))`,
                     gridAutoColumns: `calc(100 / ${c} * 1% - calc(var(--standard-grid-gap) * (${c-1}/${c}))`
                   },
-                  children: k
+                  children: h
                 })
               })
             })]
