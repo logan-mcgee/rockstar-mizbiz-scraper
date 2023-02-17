@@ -489,7 +489,7 @@
                   event_label: s?.toLowerCase() ?? ""
                 })
               },
-              onSliderMove: () => {
+              onSlideChangeTransitionEnd: () => {
                 i({
                   event_action: "swipe",
                   event_category: "carousel",
@@ -1398,8 +1398,8 @@
         ImageTextGroup: () => _.Z,
         ImageTextGroupGroup: () => T.Z,
         LinkoutSection: () => C.Z,
-        Logo: () => M,
-        SectionTitle: () => E,
+        Logo: () => E,
+        SectionTitle: () => M,
         TinaWrapper: () => B.Z,
         VideoPlayerWrapper: () => L.Z
       });
@@ -1668,7 +1668,7 @@
         T = a(4268),
         C = a(7456);
       const w = {},
-        M = e => {
+        E = e => {
           let {
             brand: t
           } = e;
@@ -1676,7 +1676,7 @@
             className: w[t]
           })
         },
-        E = () => (0, s.jsx)("h2", {
+        M = () => (0, s.jsx)("h2", {
           children: "Section"
         });
       var B = a(1273),
