@@ -1,12 +1,12 @@
 "use strict";
 (self.webpackChunk_rockstargames_tina = self.webpackChunk_rockstargames_tina || []).push([
-  [164], {
-    164: (e, s, t) => {
+  [823], {
+    823: (e, s, t) => {
       t.r(s), t.d(s, {
         patch: () => n,
         pick: () => k
       });
-      var a = t(591),
+      var a = t(735),
         c = t.n(a);
       const n = (e, s) => {
           const t = c().cloneDeepWith(t, ((e, t, a) => {

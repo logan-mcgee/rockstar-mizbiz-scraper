@@ -1,7 +1,7 @@
 "use strict";
 (self.webpackChunk_rockstargames_tina = self.webpackChunk_rockstargames_tina || []).push([
-  [269, 312], {
-    826: (e, a, t) => {
+  [394, 142], {
+    460: (e, a, t) => {
       t.d(a, {
         Z: () => n
       });
@@ -10,13 +10,13 @@
         return [...a].filter(Boolean).join(" ")
       }
     },
-    245: (e, a, t) => {
+    979: (e, a, t) => {
       t.d(a, {
         Z: () => f
       });
       var n = t(822),
-        i = t(811);
-      var d = t(563);
+        i = t(554);
+      var d = t(668);
       const f = e => {
         let {
           style: a,
@@ -47,23 +47,23 @@
           style: a,
           children: [(0, d.jsxs)("label", {
             className: "dc10ff67c241feacb785 FieldLabel-sc-custom dzLxXV",
-            htmlFor: s ?? (null == b ? void 0 : b.name),
-            children: [_ ?? (null == b ? void 0 : b.label), (0, d.jsx)("span", {
+            htmlFor: s ?? b?.name,
+            children: [_ ?? b?.label, (0, d.jsx)("span", {
               className: "f2aa3128a2d6ebae9d50 FieldDescription-sc-custom cyKzVM",
-              children: l ?? (null == b ? void 0 : b.description)
+              children: l ?? b?.description
             })]
-          }), (0, d.jsx)(m, {}), (u || (null == r ? void 0 : r.error)) && (0, d.jsx)("div", {
+          }), (0, d.jsx)(m, {}), (u || r?.error) && (0, d.jsx)("div", {
             className: "FieldError_sc_custom",
-            children: u ?? (null == r ? void 0 : r.error)
+            children: u ?? r?.error
           })]
         })
       }
     },
-    575: (e, a, t) => {
+    931: (e, a, t) => {
       t.d(a, {
         Z: () => i
       });
-      var n = t(563);
+      var n = t(668);
       const i = e => {
         let {
           value: a,
@@ -96,7 +96,7 @@
         })
       }
     },
-    269: (e, a, t) => {
+    394: (e, a, t) => {
       t.r(a), t.d(a, {
         AnimationWrapper: () => _,
         FieldWrapper: () => l.Z,
@@ -229,7 +229,7 @@
           }, n), a)
         }
       }
-      var o = t(826);
+      var o = t(460);
       const r = {
         animate__animated: "bfbaafacb067bb02c9be",
         animate__infinite: "df8f989937480f98a0cf",
@@ -440,7 +440,7 @@
         animate__slideOutUp: "dada6806616da4e69e68",
         slideOutUp: "d085f3fae5a4780b36bb"
       };
-      var s = t(563);
+      var s = t(668);
       const _ = e => {
         let {
           animationClass: a,
@@ -474,7 +474,8 @@
           });
           h.current = s, n.useEffect((() => {
             if (b || !l) return;
-            let n = c(l, ((e, a) => {
+            let n;
+            return n = c(l, ((e, a) => {
               p({
                 inView: e,
                 entry: a
@@ -485,8 +486,7 @@
               threshold: e,
               trackVisibility: t,
               delay: a
-            }, r);
-            return () => {
+            }, r), () => {
               n && n()
             }
           }), [Array.isArray(e) ? e.toString() : e, l, d, i, f, b, t, r, a]);
@@ -510,8 +510,8 @@
           children: l
         })
       };
-      var l = t(245),
-        u = t(575)
+      var l = t(979),
+        u = t(931)
     }
   }
 ]);

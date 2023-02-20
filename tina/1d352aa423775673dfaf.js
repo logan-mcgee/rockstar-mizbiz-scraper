@@ -1,7 +1,7 @@
 "use strict";
 (self.webpackChunk_rockstargames_tina = self.webpackChunk_rockstargames_tina || []).push([
-  [11], {
-    11: (e, a, l) => {
+  [90], {
+    90: (e, a, l) => {
       l.r(a), l.d(a, {
         AnimationWrapper: () => n
       });
@@ -109,7 +109,7 @@
             style: l
           }),
           itemProps: e => (0, t.itemPropsWithKey)(e, {
-            label: `${(null==e?void 0:e.name)??"New"} [Animation Wrapper]`
+            label: `${e?.name??"New"} [Animation Wrapper]`
           })
         }
       }

@@ -1,14 +1,14 @@
 (self.webpackChunk_rockstargames_tina = self.webpackChunk_rockstargames_tina || []).push([
-  [821], {
-    501: (e, a, t) => {
+  [73], {
+    858: (e, a, t) => {
       "use strict";
       t.d(a, {
         I: () => d,
         d: () => r
       });
-      var l = t(822),
-        n = t(563);
-      const i = (0, l.createContext)(),
+      var n = t(822),
+        l = t(668);
+      const i = (0, n.createContext)(),
         {
           Provider: o
         } = i,
@@ -17,14 +17,14 @@
             children: a,
             payload: t
           } = e;
-          return (0, n.jsx)(o, {
+          return (0, l.jsx)(o, {
             value: t,
             children: a
           })
         },
-        d = () => (0, l.useContext)(i)
+        d = () => (0, n.useContext)(i)
     },
-    236: (e, a, t) => {
+    907: (e, a, t) => {
       "use strict";
       t.r(a), t.d(a, {
         parse: () => s,
@@ -33,69 +33,68 @@
         useGetCdnSource: () => d,
         useImageParser: () => r
       });
-      var l = t(822),
-        n = t(929),
-        i = t(501);
+      var n = t(822),
+        l = t(929),
+        i = t(858);
       Math.min(window.screen.width, 1920);
       const o = e => {
           if (!e) return null;
           const {
             hostname: a,
             pathname: t
-          } = new URL(e, (0, n.getCdnPrefix)(!0));
+          } = new URL(e, (0, l.getCdnPrefix)(!0));
           return "/" === t ? null : (a.endsWith("akamaized.net"), e)
         },
         r = e => {
-          var a, t, r, d;
           let {
-            alt: s = null,
-            mobile: m = null,
-            desktop: c = null,
-            ariaLabel: u = null,
-            sources: p = null,
-            prod: b = null
+            alt: a = null,
+            mobile: t = null,
+            desktop: r = null,
+            ariaLabel: d = null,
+            sources: s = null,
+            prod: m = null
           } = e;
-          const g = (0, n.useLocale)(),
+          const c = (0, l.useLocale)(),
             {
-              meta: v = {}
+              meta: u = {}
             } = (0, i.I)() ?? {},
-            [f, h] = (0, l.useState)(b ?? (null == v ? void 0 : v.cdn) ?? (null == v ? void 0 : v.prod) ?? !0);
-          (0, l.useEffect)((() => {
-            h(b ?? (null == v ? void 0 : v.cdn) ?? (null == v ? void 0 : v.prod) ?? !0)
-          }), [b, v]);
-          const S = (0, l.useCallback)((e => {
-            const a = null !== p,
-              t = "string" == typeof e ? e : "object" == typeof e ? (null == e ? void 0 : e.previewSrc) ?? null : null;
+            [p, b] = (0, n.useState)(m ?? u?.cdn ?? u?.prod ?? !0);
+          (0, n.useEffect)((() => {
+            b(m ?? u?.cdn ?? u?.prod ?? !0)
+          }), [m, u]);
+          const g = (0, n.useCallback)((e => {
+            const a = null !== s,
+              t = "string" == typeof e ? e : "object" == typeof e ? e?.previewSrc ?? null : null;
             if (null === t) return null;
             if (t.startsWith("http")) return o(t);
-            const l = `${a?(0,n.getCdnPrefix)(f):""}${t}`;
-            return o(l)
-          }), [f, p]);
+            const n = `${a?(0,l.getCdnPrefix)(p):""}${t}`;
+            return o(n)
+          }), [p, s]);
           return {
-            alt: s,
-            ariaLabel: u,
+            alt: a,
+            ariaLabel: d,
             src: {
-              mobile: S((null == p || null === (a = p[g]) || void 0 === a ? void 0 : a.mobile) ?? (null == p || null === (t = p.en_us) || void 0 === t ? void 0 : t.mobile) ?? m),
-              desktop: S((null == p || null === (r = p[g]) || void 0 === r ? void 0 : r.desktop) ?? (null == p || null === (d = p.en_us) || void 0 === d ? void 0 : d.desktop) ?? c)
+              mobile: g(s?.[c]?.mobile ?? s?.en_us?.mobile ?? t),
+              desktop: g(s?.[c]?.desktop ?? s?.en_us?.desktop ?? r)
             }
           }
         },
         d = e => {
           const {
             meta: a = {}
-          } = (0, i.I)(), [t, r] = (0, l.useState)((null == a ? void 0 : a.cdn) ?? (null == a ? void 0 : a.prod) ?? !1);
-          return (0, l.useEffect)((() => {
-            r((null == a ? void 0 : a.cdn) ?? (null == a ? void 0 : a.prod) ?? !1)
-          }), [a]), null === e ? null : e.startsWith("http") ? o(e) : o(`${(0,n.getCdnPrefix)(t)}${e}`)
+          } = (0, i.I)(), [t, r] = (0, n.useState)(a?.cdn ?? a?.prod ?? !1);
+          return (0, n.useEffect)((() => {
+            r(a?.cdn ?? a?.prod ?? !1)
+          }), [a]), null === e ? null : e.startsWith("http") ? o(e) : o(`${(0,l.getCdnPrefix)(t)}${e}`)
         },
         s = e => e.full_src,
-        m = e => `${(null==e?void 0:e.previewSrc)??e}`,
+        m = e => `${e?.previewSrc??e}`,
         c = e => e.meta.uploads_directory
     },
-    821: (e, a, t) => {
+    73: (e, a, t) => {
       "use strict";
       t.r(a), t.d(a, {
-        AriaLabelField: () => n,
+        AriaLabelField: () => l,
         AttributesFields: () => z,
         BorderField: () => r,
         BorderImageField: () => H,
@@ -104,33 +103,33 @@
         DisplayClassField: () => R,
         FormEntryField: () => K,
         GridContextField: () => Z,
-        ImageField: () => ee,
-        ItemsField: () => te,
+        ImageField: () => ae,
+        ItemsField: () => ne,
         LeadAssetToggle: () => le,
-        MediaQueryField: () => ie,
-        MemoQField: () => pe,
-        MetaField: () => be,
-        NameField: () => ge,
-        PlatformsAndLinksField: () => ve,
-        PostEntryFields: () => fe,
-        PostMetaField: () => he,
-        PreviewImagesField: () => Se,
+        MediaQueryField: () => oe,
+        MemoQField: () => be,
+        MetaField: () => ge,
+        NameField: () => ve,
+        PlatformsAndLinksField: () => fe,
+        PostEntryFields: () => he,
+        PostMetaField: () => Se,
+        PreviewImagesField: () => ke,
         StyleField: () => q,
-        TINA_MEMOQ_PREFIX: () => Te,
-        TINA_PARSER_KEY: () => Ie,
-        TagsField: () => xe,
-        TextField: () => ye,
-        ThemeField: () => we,
-        UploadsField: () => Ne,
-        XMLField: () => ce,
+        TINA_MEMOQ_PREFIX: () => Le,
+        TINA_PARSER_KEY: () => Te,
+        TagsField: () => ye,
+        TextField: () => we,
+        ThemeField: () => Ne,
+        UploadsField: () => De,
+        XMLField: () => ue,
         _defaultImageValues: () => J,
-        defaultItemUnique: () => Le,
-        itemPropsWithKey: () => Ce,
-        localizedImageField: () => Me,
-        translatedField: () => Fe
+        defaultItemUnique: () => Ce,
+        itemPropsWithKey: () => Fe,
+        localizedImageField: () => Ie,
+        translatedField: () => Pe
       });
-      var l = t(637);
-      const n = e => {
+      var n = t(874);
+      const l = e => {
           let {
             parent: a = null
           } = e;
@@ -147,19 +146,19 @@
             post: null
           };
           return [{
-            name: null != e && e.parent ? `${null==e?void 0:e.parent}.backgroundColor` : "backgroundColor",
+            name: e?.parent ? `${e?.parent}.backgroundColor` : "backgroundColor",
             label: "Background Color",
             component: "text"
           }, {
-            name: null != e && e.parent ? `${null==e?void 0:e.parent}.gradient` : "gradient",
+            name: e?.parent ? `${e?.parent}.gradient` : "gradient",
             label: "Background Gradient",
             component: "group",
             fields: [{
-              name: null != e && e.parent ? `${null==e?void 0:e.parent}.gradientStart` : "gradientStart",
+              name: e?.parent ? `${e?.parent}.gradientStart` : "gradientStart",
               label: "Start Color",
               component: "color"
             }, {
-              name: null != e && e.parent ? `${null==e?void 0:e.parent}.gradientEnd` : "gradientEnd",
+              name: e?.parent ? `${e?.parent}.gradientEnd` : "gradientEnd",
               label: "End Color",
               component: "color"
             }]
@@ -171,18 +170,18 @@
             post: null
           };
           return [{
-            name: null != e && e.parent ? `${null==e?void 0:e.parent}.backgroundImage` : "backgroundImage",
+            name: e?.parent ? `${e?.parent}.backgroundImage` : "backgroundImage",
             label: "Background Image",
             component: "text",
             initialValues: "url()",
             format: (e, a, t) => e ? -1 !== e.indexOf("url(") ? `url(${e.split("url(")[1].split(")")[0]})` : `url(${e})` : "url()"
           }, {
-            name: null != e && e.parent ? `${null==e?void 0:e.parent}.backgroundSize` : "backgroundSize",
+            name: e?.parent ? `${e?.parent}.backgroundSize` : "backgroundSize",
             label: "Background Size",
             component: "select",
             options: ["", "cover", "contain", "revert", "auto"]
           }, {
-            name: null != e && e.parent ? `${null==e?void 0:e.parent}.backgroundPosition` : "backgroundPosition",
+            name: e?.parent ? `${e?.parent}.backgroundPosition` : "backgroundPosition",
             label: "Background Position",
             component: "select",
             options: ["", "center", "left", "right", "top", "bottom"]
@@ -196,7 +195,7 @@
             component: "text"
           }
         };
-      var d = t(563);
+      var d = t(668);
       const s = function() {
           let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "Label";
           return {
@@ -542,13 +541,13 @@
           description: "Set the image width",
           component: "text"
         },
-        X = {
+        B = {
           label: "Image Min-Width",
           name: "min-width",
           description: "Set the image min-width",
           component: "text"
         },
-        B = {
+        X = {
           label: "Image Max-Width",
           name: "max-width",
           description: "Set the image max-width",
@@ -593,7 +592,7 @@
             }, {
               ...m("Position")
             }],
-            l = [{
+            n = [{
               ...s("Box Model")
             }, {
               ...S
@@ -639,7 +638,7 @@
             }, {
               ...m("Box Model")
             }],
-            n = [{
+            l = [{
               ...s("Text")
             }, {
               ...C
@@ -677,9 +676,9 @@
             }, {
               ...$
             }, {
-              ...X
-            }, {
               ...B
+            }, {
+              ...X
             }, {
               ...U
             }, {
@@ -689,7 +688,7 @@
             }, {
               ...m("Image")
             }];
-          let G = [...l, ...n, ...d];
+          let G = [...n, ...l, ...d];
           return "grid" === a && G.push(...c), "image" !== a && "layeredImage" !== a || G.push(...u), "layeredImage" !== a && "parallaxOuterLayer" !== a && "parallaxInnerLayer" !== a || G.push(...t), "gridItem" === a && G.push({
             ...I
           }), G
@@ -738,7 +737,7 @@
               name: "hiddenLarge",
               label: "Hide on Desktop",
               component: "toggle"
-            }, n({
+            }, l({
               parent: a
             }), q({
               filter: t
@@ -763,7 +762,7 @@
             }]
           }
         };
-      var O = t(236);
+      var O = t(907);
       const H = function() {
           return {
             name: "borderImage",
@@ -814,7 +813,7 @@
           }
         },
         Y = () => ({
-          name: Ie,
+          name: Te,
           label: "Content",
           component: "html"
         }),
@@ -846,7 +845,7 @@
           return {
             label: "Content",
             description: "Add/remove/arrange/configure sections",
-            name: Ie,
+            name: Te,
             component: "blocks",
             templates: a
           }
@@ -860,94 +859,94 @@
         },
         ee = e => {
           let {
+            name: a,
+            label: t = a
+          } = e;
+          return {
+            name: a,
+            label: t,
+            component: "group",
+            description: "(If responsive, only Mobile Source is needed)",
+            fields: [{
+              name: "mobile",
+              label: "Mobile Source",
+              component: "image",
+              clearable: !0,
+              uploadDir: O.uploadDir,
+              parse: O.parse,
+              previewSrc: O.previewSrc
+            }, {
+              name: "desktop",
+              label: "Desktop Source",
+              component: "image",
+              clearable: !0,
+              uploadDir: O.uploadDir,
+              parse: O.parse,
+              previewSrc: O.previewSrc
+            }]
+          }
+        },
+        ae = e => {
+          let {
             game: a = null,
             label: t = "Image configuration"
           } = e;
-          const l = e => {
-              let {
-                name: a,
-                label: t = a
-              } = e;
-              return {
-                name: a,
-                label: t,
-                component: "group",
-                description: "(If responsive, only Mobile Source is needed)",
-                fields: [{
-                  name: "mobile",
-                  label: "Mobile Source",
-                  component: "image",
-                  clearable: !0,
-                  uploadDir: O.uploadDir,
-                  parse: O.parse,
-                  previewSrc: O.previewSrc
-                }, {
-                  name: "desktop",
-                  label: "Desktop Source",
-                  component: "image",
-                  clearable: !0,
-                  uploadDir: O.uploadDir,
-                  parse: O.parse,
-                  previewSrc: O.previewSrc
-                }]
-              }
-            },
-            n = [Fe({
-              name: "alt",
-              label: "Alt Text",
-              component: "text"
-            }), Fe({
-              label: "Badge Text",
-              name: "badge",
-              description: "What text should appear inside the badge? (If blank, the badge will not be displayed)",
-              component: "text"
-            }), {
-              label: "Badge Text Splitter",
-              name: "splitter",
-              description: "Character that is used as a line break for badge text (Default is a space)",
-              component: "text"
-            }, l({
-              name: "sources.en_us",
-              label: "Upload global images"
-            }), {
-              name: "sources",
-              label: "Upload local images",
-              description: "The site will default to the global value, but use a local one on local sites if it exists here.",
-              component: "group",
-              fields: ["de_de", "fr_fr", "it_it", "ja_jp", "ru_ru", "es_es", "es_mx", "pt_br", "ko_kr", "zh_tw", "pl_pl", "zh_hans"].map((e => l({
-                name: e
-              })))
-            }, Fe({
-              name: "frame",
-              label: "Choose Frame",
-              component: "select",
-              options: [{
-                value: "",
-                label: "None"
-              }, {
-                value: "frame_1",
-                label: "Frame 1"
-              }, {
-                value: "frame_2",
-                label: "Frame 2"
-              }, {
-                value: "frame_3",
-                label: "Frame 3"
-              }, {
-                value: "frame_4",
-                label: "Frame 4"
-              }, {
-                value: "frame_5",
-                label: "Frame 5"
-              }, {
-                value: "frame_6",
-                label: "Frame 6"
-              }]
-            }), Fe({
-              name: "caption",
-              label: "Caption",
-              component: "html"
-            })];
+          const n = [Pe({
+            name: "alt",
+            label: "Alt Text",
+            component: "text"
+          }), Pe({
+            label: "Badge Text",
+            name: "badge",
+            description: "What text should appear inside the badge? (If blank, the badge will not be displayed)",
+            component: "text"
+          }), {
+            label: "Badge Text Splitter",
+            name: "splitter",
+            description: "Character that is used as a line break for badge text (Default is a space)",
+            component: "text"
+          }, ee({
+            name: "sources.en_us",
+            label: "Upload global images"
+          }), {
+            name: "sources",
+            label: "Upload local images",
+            description: "The site will default to the global value, but use a local one on local sites if it exists here.",
+            component: "group",
+            fields: ["de_de", "fr_fr", "it_it", "ja_jp", "ru_ru", "es_es", "es_mx", "pt_br", "ko_kr", "zh_tw", "pl_pl", "zh_hans"].map((e => ee({
+              name: e
+            })))
+          }, Pe({
+            name: "frame",
+            label: "Choose Frame",
+            component: "select",
+            options: [{
+              value: "",
+              label: "None"
+            }, {
+              value: "frame_1",
+              label: "Frame 1"
+            }, {
+              value: "frame_2",
+              label: "Frame 2"
+            }, {
+              value: "frame_3",
+              label: "Frame 3"
+            }, {
+              value: "frame_4",
+              label: "Frame 4"
+            }, {
+              value: "frame_5",
+              label: "Frame 5"
+            }, {
+              value: "frame_6",
+              label: "Frame 6"
+            }]
+          }), Pe({
+            name: "caption",
+            label: "Caption",
+            component: "html"
+          })];
           return "rdo" !== a && "rdr2" !== a || n.push({
             name: "role",
             label: "Role",
@@ -972,35 +971,44 @@
               value: "trader",
               label: "Trader"
             }]
+          }), n.push({
+            label: "Border Style",
+            name: "style.--image-border-style",
+            description: "(ex. 1px solid #fff)",
+            component: "text"
+          }, {
+            label: "Border Radius",
+            name: "style.--image-border-radius",
+            component: "text"
           }), {
             name: "image",
             label: t,
             component: "group",
             fields: n,
-            defaultItem: () => Le(J),
-            itemProps: e => Ce(e, {
-              label: null != e && e.name ? `${e.name} [Image]` : "New [Image]"
+            defaultItem: () => Ce(J),
+            itemProps: e => Fe(e, {
+              label: e?.name ? `${e.name} [Image]` : "New [Image]"
             })
           }
         },
-        ae = e => {
+        te = e => {
           let {
             game: a = null,
             filter: t = null
           } = e;
-          const l = [Fe({
+          const n = [Pe({
             label: "Title",
             name: "title",
             component: "text"
-          }), ee({
+          }), ae({
             game: a,
             label: "Image Sources"
           })];
-          return "discounts" !== t && l.push(Fe({
+          return "discounts" !== t && n.push(Pe({
             label: "Description",
             name: "description",
             component: "html"
-          })), l.push(Fe({
+          })), n.push(Pe({
             label: "Link",
             name: "to",
             component: "text"
@@ -1009,41 +1017,38 @@
           })), {
             label: "Image/Title/Text Block",
             component: "group",
-            fields: [...l, Q({
+            fields: [...n, Q({
               filter: "grid"
-            }), ie({
+            }), oe({
               filter: t,
-              fields: l,
+              fields: n,
               game: a
             })],
-            defaultItem: () => Le({
-              image: Le(J)
+            defaultItem: () => Ce({
+              image: Ce(J)
             }),
-            itemProps: e => {
-              var a;
-              return Ce(e, {
-                label: null != e && null !== (a = e[Te]) && void 0 !== a && a.title ? `${e[Te].title} [Image/Title/Text Block]` : "New [Image/Title/Text Block]"
-              })
-            }
+            itemProps: e => Fe(e, {
+              label: e?.[Le]?.title ? `${e[Le].title} [Image/Title/Text Block]` : "New [Image/Title/Text Block]"
+            })
           }
         },
-        te = e => {
+        ne = e => {
           let {
             filter: a = null,
             game: t = null,
-            label: l = null,
-            name: n = "items"
+            label: n = null,
+            name: l = "items"
           } = e;
           return {
-            name: n,
-            label: l ?? `Edit ${n}`,
+            name: l,
+            label: n ?? `Edit ${l}`,
             component: "blocks",
-            templates: [ae({
+            templates: [te({
               filter: a,
               game: t
             })],
-            defaultItem: () => Le(),
-            itemProps: e => Ce(e, {})
+            defaultItem: () => Ce(),
+            itemProps: e => Fe(e, {})
           }
         },
         le = () => ({
@@ -1051,11 +1056,11 @@
           label: "Is this a lead asset?",
           component: "toggle",
           defaultValue: !1,
-          defaultItem: () => Le({
+          defaultItem: () => Ce({
             hero: !1
           })
         }),
-        ne = e => {
+        ie = e => {
           let {
             fields: a = []
           } = e;
@@ -1070,13 +1075,13 @@
               description: "ex. (max-width: 600px)",
               component: "text"
             }, ...a],
-            defaultItem: () => Le(),
-            itemProps: e => Ce(e, {
-              label: `Media Query: ${(null==e?void 0:e.mediaQueryString)??"New"}`
+            defaultItem: () => Ce(),
+            itemProps: e => Fe(e, {
+              label: `Media Query: ${e?.mediaQueryString??"New"}`
             })
           }
         },
-        ie = e => {
+        oe = e => {
           let {
             fields: a = [],
             filter: t = null
@@ -1086,37 +1091,37 @@
             name: "mediaQueryList",
             description: "Override styles based on screen size",
             component: "blocks",
-            templates: [ne({
+            templates: [ie({
               filter: t,
               fields: a
             })]
           }
         };
-      var oe = t(822),
-        re = t(859),
-        de = t(245),
-        se = t(575);
-      const me = e => {
+      var re = t(822),
+        de = t(859),
+        se = t(979),
+        me = t(931);
+      const ce = e => {
           let {
             field: a,
             input: t,
-            form: l
+            form: n
           } = e;
           const {
-            name: n,
+            name: l,
             label: i,
             description: o,
             fileLoaded: r
-          } = a, [s, m] = (0, oe.useState)("");
-          return (0, d.jsxs)(de.Z, {
-            name: n,
+          } = a, [s, m] = (0, re.useState)("");
+          return (0, d.jsxs)(se.Z, {
+            name: l,
             label: i,
             description: o,
-            children: [(0, d.jsx)(se.Z, {
+            children: [(0, d.jsx)(me.Z, {
               onChange: e => {
                 m(e)
               },
-              name: null == t ? void 0 : t.name,
+              name: t?.name,
               value: s,
               accept: ".xml"
             }), (0, d.jsx)("button", {
@@ -1134,35 +1139,35 @@
             })]
           })
         },
-        ce = e => {
+        ue = e => {
           let {
             name: a,
             label: t,
-            description: l,
-            fileLoaded: n
+            description: n,
+            fileLoaded: l
           } = e;
           return {
             name: a,
             label: t,
-            description: l,
-            fileLoaded: n,
-            component: me,
+            description: n,
+            fileLoaded: l,
+            component: ce,
             clearable: !0
           }
         };
-      var ue = t(556);
-      const pe = e => {
+      var pe = t(556);
+      const be = e => {
           let {
             id: a,
             table: t,
-            initialStatus: l = null,
-            pingBearer: n,
+            initialStatus: n = null,
+            pingBearer: l,
             uploadSuccess: i = null,
             uploadError: o = null
           } = e;
-          const [, r] = (0, oe.useState)(l), [s] = (0, re.useMutation)(ue.MemoqXmlUpload), {
+          const [, r] = (0, re.useState)(n), [s] = (0, de.useMutation)(pe.MemoqXmlUpload), {
             refetch: m
-          } = (0, re.useQuery)(ue.MemoqXmlDownload, {
+          } = (0, de.useQuery)(pe.MemoqXmlDownload, {
             skip: !0,
             variables: {
               id: a,
@@ -1172,37 +1177,36 @@
           let c = [{
             name: "download",
             label: "Download XML",
-            component: () => (0, d.jsx)(de.Z, {
+            component: () => (0, d.jsx)(se.Z, {
               name: "download",
               label: "Download XML",
               description: "Download XML and upload to MemoQ.",
               children: (0, d.jsx)("button", {
                 onClick: () => (async () => {
-                  await n();
+                  await l();
                   const e = await m(),
                     t = `${a}-translations.xml`,
-                    l = document.createElement("a");
-                  r(e.data.memoqXmlDownload.translation_status), l.setAttribute("href", `data:text/xml;charset=utf-8,${encodeURIComponent(e.data.memoqXmlDownload.xml)}`), l.setAttribute("_target", "blank"), l.setAttribute("download", t), l.style.display = "none", document.body.appendChild(l), l.click(), document.body.removeChild(l)
+                    n = document.createElement("a");
+                  r(e.data.memoqXmlDownload.translation_status), n.setAttribute("href", `data:text/xml;charset=utf-8,${encodeURIComponent(e.data.memoqXmlDownload.xml)}`), n.setAttribute("_target", "blank"), n.setAttribute("download", t), n.style.display = "none", document.body.appendChild(n), n.click(), document.body.removeChild(n)
                 })(),
                 children: "Download XML"
               })
             })
-          }, ce({
+          }, ue({
             name: "upload",
             label: "Upload XML",
             description: "Upload translated XML file from MemoQ.",
             fileLoaded: async e => {
               try {
-                var l, d;
-                await n();
-                const o = await s({
+                await l();
+                const n = await s({
                   variables: {
                     table: t,
                     id: a,
                     xml: e
                   }
                 });
-                null != o && null !== (l = o.data) && void 0 !== l && null !== (d = l.memoqXmlUpload) && void 0 !== d && d.translation_status && (r(o.data.memoqXmlUpload.translation_status), "function" == typeof i && i())
+                n?.data?.memoqXmlUpload?.translation_status && (r(n.data.memoqXmlUpload.translation_status), "function" == typeof i && i())
               } catch (e) {
                 "function" == typeof o && o(e)
               }
@@ -1216,7 +1220,7 @@
             fields: c
           }
         },
-        be = function() {
+        ge = function() {
           return {
             name: "info",
             label: "Metadata",
@@ -1241,13 +1245,13 @@
             }]
           }
         },
-        ge = () => ({
+        ve = () => ({
           label: "Name",
           name: "name",
           component: "text",
           description: "Block label for internal use only"
         }),
-        ve = function() {
+        fe = function() {
           let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
           return {
             component: "group-list",
@@ -1287,13 +1291,13 @@
               component: "text"
             }],
             ...e,
-            itemProps: e => Ce(e, {
-              label: `Link for [${(null==e?void 0:e.platform)??""}]`
+            itemProps: e => Fe(e, {
+              label: `Link for [${e?.platform??""}]`
             }),
-            defaultItem: () => Le()
+            defaultItem: () => Ce()
           }
         },
-        fe = () => [{
+        he = () => [{
           name: "title",
           label: "Title",
           component: "text"
@@ -1329,21 +1333,21 @@
           name: "event_num",
           label: "Event Number",
           component: "number"
-        }, xe({
+        }, ye({
           name: "primary_tags",
           label: "Game",
           context: 1
-        }), xe({
+        }), ye({
           name: "secondary_tags",
           label: "Topic",
           context: 2
         })],
-        he = () => ({
+        Se = () => ({
           name: "meta",
           label: "Post Info",
           component: "group",
           description: "Title, subtitle, meta...",
-          fields: [...fe(), {
+          fields: [...he(), {
             name: "created",
             label: "Post Date",
             component: "date",
@@ -1391,9 +1395,9 @@
             label: "Translations Approved",
             component: "toggle",
             description: "If you want translations to sync, toggle this to on."
-          }, Se()]
+          }, ke()]
         }),
-        Se = () => ({
+        ke = () => ({
           name: "preview_images",
           label: "Manage preview images",
           description: "Upload images for use on newswire cards",
@@ -1421,12 +1425,12 @@
             }]
           })))
         });
-      var ke = t(496);
-      const xe = e => {
+      var xe = t(496);
+      const ye = e => {
           let {
             label: a = "Tags",
             name: t = "tags",
-            context: l = null
+            context: n = null
           } = e;
           return {
             label: a,
@@ -1435,25 +1439,25 @@
               let {
                 field: a,
                 input: t,
-                meta: n
+                meta: l
               } = e;
               const {
                 data: i
-              } = (0, re.useQuery)(ke.TagList, {
+              } = (0, de.useQuery)(xe.TagList, {
                 variables: {
                   locale: "en_us",
-                  context: l
+                  context: n
                 }
               });
-              if (!i || !((null == i ? void 0 : i.tagList) ?? []).length) return null;
+              if (!i || !(i?.tagList ?? []).length) return null;
               const o = [{
                 id: "",
                 name: "-- Select Tag --"
               }, ...i.tagList];
-              return (0, d.jsx)(de.Z, {
+              return (0, d.jsx)(se.Z, {
                 field: a,
                 input: t,
-                meta: n,
+                meta: l,
                 children: (0, d.jsx)("select", {
                   ...t,
                   children: o.map((e => (0, d.jsx)("option", {
@@ -1465,12 +1469,12 @@
             }
           }
         },
-        ye = () => Fe({
+        we = () => Pe({
           label: "Text",
-          name: Ie,
+          name: Te,
           component: "html"
         }),
-        we = () => ({
+        Ne = () => ({
           label: "Hardcoded Theme",
           name: "theme",
           description: "Dev-built themes for one-off posts.",
@@ -1498,7 +1502,7 @@
             label: "9998"
           }]
         }),
-        Ne = () => ({
+        De = () => ({
           label: "Image manager",
           name: "uploads",
           component: "group",
@@ -1513,7 +1517,7 @@
             component: "toggle"
           }]
         }),
-        De = e => {
+        _e = e => {
           let {
             name: a,
             label: t = a
@@ -1542,8 +1546,8 @@
             }]
           }
         },
-        _e = ["de_de", "fr_fr", "it_it", "ja_jp", "ru_ru", "es_es", "es_mx", "pt_br", "ko_kr", "zh_tw", "pl_pl", "zh_hans"],
-        Me = e => {
+        Me = ["de_de", "fr_fr", "it_it", "ja_jp", "ru_ru", "es_es", "es_mx", "pt_br", "ko_kr", "zh_tw", "pl_pl", "zh_hans"],
+        Ie = e => {
           let {
             name: a = "image",
             label: t = "Image configuration"
@@ -1552,11 +1556,11 @@
             name: a,
             label: t,
             component: "group",
-            fields: [Fe({
+            fields: [Pe({
               name: "alt",
               label: "Alt Text",
               component: "text"
-            }), De({
+            }), _e({
               name: "sources.en_us",
               label: "Upload global images"
             }), {
@@ -1564,49 +1568,49 @@
               label: "Upload local images",
               description: "The site will default to the global value, but use a local one on local sites if it exists here.",
               component: "group",
-              fields: _e.map((e => De({
+              fields: Me.map((e => _e({
                 name: e
               })))
-            }, Fe({
+            }, Pe({
               name: "caption",
               label: "Caption",
               component: "html"
             })],
-            defaultItem: () => Le(),
-            itemProps: e => Ce(e, {
+            defaultItem: () => Ce(),
+            itemProps: e => Fe(e, {
               label: `Image [${a}]`
             })
           }
         },
-        Ie = "content",
-        Te = "_memoq",
-        Le = function() {
+        Te = "content",
+        Le = "_memoq",
+        Ce = function() {
           let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
           return {
             ...e,
-            key: `key_${(0,l.Z)()}`
+            key: `key_${(0,n.Z)()}`
           }
         },
-        Ce = function(e) {
+        Fe = function(e) {
           let a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
           return {
             ...a,
             key: e.key
           }
         },
-        Fe = e => ({
+        Pe = e => ({
           ...e,
-          name: `${Te}.${e.name}`
+          name: `${Le}.${e.name}`
         })
     },
-    245: (e, a, t) => {
+    979: (e, a, t) => {
       "use strict";
       t.d(a, {
         Z: () => o
       });
-      var l = t(822),
-        n = t(811);
-      var i = t(563);
+      var n = t(822),
+        l = t(554);
+      var i = t(668);
       const o = e => {
         let {
           style: a,
@@ -1622,7 +1626,7 @@
           error: b,
           children: g
         } = e;
-        const v = () => r ? (0, i.jsx)(n.e, {
+        const v = () => r ? (0, i.jsx)(l.e, {
           defaultSize: {
             width: t || "100%",
             height: o || "500px"
@@ -1630,36 +1634,36 @@
           style: {
             paddingBottom: "10px"
           },
-          children: (0, l.cloneElement)(g, ...s)
+          children: (0, n.cloneElement)(g, ...s)
         }) : g;
         return (0, i.jsxs)("div", {
           className: "f3ec8d89954175f42137 FieldWrapper-sc-custom jpQZXK",
           style: a,
           children: [(0, i.jsxs)("label", {
             className: "dc10ff67c241feacb785 FieldLabel-sc-custom dzLxXV",
-            htmlFor: c ?? (null == d ? void 0 : d.name),
-            children: [u ?? (null == d ? void 0 : d.label), (0, i.jsx)("span", {
+            htmlFor: c ?? d?.name,
+            children: [u ?? d?.label, (0, i.jsx)("span", {
               className: "f2aa3128a2d6ebae9d50 FieldDescription-sc-custom cyKzVM",
-              children: p ?? (null == d ? void 0 : d.description)
+              children: p ?? d?.description
             })]
-          }), (0, i.jsx)(v, {}), (b || (null == m ? void 0 : m.error)) && (0, i.jsx)("div", {
+          }), (0, i.jsx)(v, {}), (b || m?.error) && (0, i.jsx)("div", {
             className: "FieldError_sc_custom",
-            children: b ?? (null == m ? void 0 : m.error)
+            children: b ?? m?.error
           })]
         })
       }
     },
-    575: (e, a, t) => {
+    931: (e, a, t) => {
       "use strict";
       t.d(a, {
-        Z: () => n
+        Z: () => l
       });
-      var l = t(563);
-      const n = e => {
+      var n = t(668);
+      const l = e => {
         let {
           value: a,
           onChange: t = (() => {}),
-          multi: n = !1,
+          multi: l = !1,
           ...i
         } = e;
         const o = e => {
@@ -1667,55 +1671,55 @@
             value: a,
             multi: t
           } = e;
-          return t ? (0, l.jsxs)("div", {
+          return t ? (0, n.jsxs)("div", {
             children: ["Selected files: ", a.map((e => e.name)).join(", ")]
-          }) : (0, l.jsxs)("div", {
+          }) : (0, n.jsxs)("div", {
             children: ["Selected file: ", a.name]
           })
         };
-        return (0, l.jsx)("label", {
-          children: a && "" !== a ? (0, l.jsx)(o, {
+        return (0, n.jsx)("label", {
+          children: a && "" !== a ? (0, n.jsx)(o, {
             value: a,
-            multi: n
-          }) : (0, l.jsx)("input", {
+            multi: l
+          }) : (0, n.jsx)("input", {
             ...i,
             type: "file",
             onChange: e => {
-              t(n ? [...e.target.files] : e.target.files[0])
+              t(l ? [...e.target.files] : e.target.files[0])
             }
           })
         })
       }
     },
-    637: (e, a, t) => {
+    874: (e, a, t) => {
       "use strict";
       t.d(a, {
         Z: () => d
       });
-      const l = {
+      const n = {
         randomUUID: "undefined" != typeof crypto && crypto.randomUUID && crypto.randomUUID.bind(crypto)
       };
-      let n;
+      let l;
       const i = new Uint8Array(16);
 
       function o() {
-        if (!n && (n = "undefined" != typeof crypto && crypto.getRandomValues && crypto.getRandomValues.bind(crypto), !n)) throw new Error("crypto.getRandomValues() not supported. See https://github.com/uuidjs/uuid#getrandomvalues-not-supported");
-        return n(i)
+        if (!l && (l = "undefined" != typeof crypto && crypto.getRandomValues && crypto.getRandomValues.bind(crypto), !l)) throw new Error("crypto.getRandomValues() not supported. See https://github.com/uuidjs/uuid#getrandomvalues-not-supported");
+        return l(i)
       }
       const r = [];
       for (let e = 0; e < 256; ++e) r.push((e + 256).toString(16).slice(1));
       const d = function(e, a, t) {
-        if (l.randomUUID && !a && !e) return l.randomUUID();
-        const n = (e = e || {}).random || (e.rng || o)();
-        if (n[6] = 15 & n[6] | 64, n[8] = 63 & n[8] | 128, a) {
+        if (n.randomUUID && !a && !e) return n.randomUUID();
+        const l = (e = e || {}).random || (e.rng || o)();
+        if (l[6] = 15 & l[6] | 64, l[8] = 63 & l[8] | 128, a) {
           t = t || 0;
-          for (let e = 0; e < 16; ++e) a[t + e] = n[e];
+          for (let e = 0; e < 16; ++e) a[t + e] = l[e];
           return a
         }
         return function(e) {
           let a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
           return (r[e[a + 0]] + r[e[a + 1]] + r[e[a + 2]] + r[e[a + 3]] + "-" + r[e[a + 4]] + r[e[a + 5]] + "-" + r[e[a + 6]] + r[e[a + 7]] + "-" + r[e[a + 8]] + r[e[a + 9]] + "-" + r[e[a + 10]] + r[e[a + 11]] + r[e[a + 12]] + r[e[a + 13]] + r[e[a + 14]] + r[e[a + 15]]).toLowerCase()
-        }(n)
+        }(l)
       }
     },
     556: e => {
@@ -1970,8 +1974,8 @@
       function t(e, a) {
         if ("FragmentSpread" === e.kind) a.add(e.name.value);
         else if ("VariableDefinition" === e.kind) {
-          var l = e.type;
-          "NamedType" === l.kind && a.add(l.name.value)
+          var n = e.type;
+          "NamedType" === n.kind && a.add(n.name.value)
         }
         e.selectionSet && e.selectionSet.selections.forEach((function(e) {
           t(e, a)
@@ -1989,22 +1993,22 @@
           column: 1
         }
       };
-      var l = {};
+      var n = {};
 
-      function n(e, a) {
+      function l(e, a) {
         for (var t = 0; t < e.definitions.length; t++) {
-          var l = e.definitions[t];
-          if (l.name && l.name.value == a) return l
+          var n = e.definitions[t];
+          if (n.name && n.name.value == a) return n
         }
       }
 
       function i(e, a) {
         var t = {
           kind: e.kind,
-          definitions: [n(e, a)]
+          definitions: [l(e, a)]
         };
         e.hasOwnProperty("loc") && (t.loc = e.loc);
-        var i = l[a] || new Set,
+        var i = n[a] || new Set,
           o = new Set,
           r = new Set;
         for (i.forEach((function(e) {
@@ -2012,20 +2016,20 @@
           })); r.size > 0;) {
           var d = r;
           r = new Set, d.forEach((function(e) {
-            o.has(e) || (o.add(e), (l[e] || new Set).forEach((function(e) {
+            o.has(e) || (o.add(e), (n[e] || new Set).forEach((function(e) {
               r.add(e)
             })))
           }))
         }
         return o.forEach((function(a) {
-          var l = n(e, a);
-          l && t.definitions.push(l)
+          var n = l(e, a);
+          n && t.definitions.push(n)
         })), t
       }
       a.definitions.forEach((function(e) {
         if (e.name) {
           var a = new Set;
-          t(e, a), l[e.name.value] = a
+          t(e, a), n[e.name.value] = a
         }
       })), e.exports = a, e.exports.MemoqXmlDownload = i(a, "MemoqXmlDownload"), e.exports.MemoqXmlUpload = i(a, "MemoqXmlUpload")
     },
@@ -2146,8 +2150,8 @@
       function t(e, a) {
         if ("FragmentSpread" === e.kind) a.add(e.name.value);
         else if ("VariableDefinition" === e.kind) {
-          var l = e.type;
-          "NamedType" === l.kind && a.add(l.name.value)
+          var n = e.type;
+          "NamedType" === n.kind && a.add(n.name.value)
         }
         e.selectionSet && e.selectionSet.selections.forEach((function(e) {
           t(e, a)
@@ -2165,26 +2169,26 @@
           column: 1
         }
       };
-      var l = {};
+      var n = {};
 
-      function n(e, a) {
+      function l(e, a) {
         for (var t = 0; t < e.definitions.length; t++) {
-          var l = e.definitions[t];
-          if (l.name && l.name.value == a) return l
+          var n = e.definitions[t];
+          if (n.name && n.name.value == a) return n
         }
       }
       a.definitions.forEach((function(e) {
         if (e.name) {
           var a = new Set;
-          t(e, a), l[e.name.value] = a
+          t(e, a), n[e.name.value] = a
         }
       })), e.exports = a, e.exports.TagList = function(e, a) {
         var t = {
           kind: e.kind,
-          definitions: [n(e, a)]
+          definitions: [l(e, a)]
         };
         e.hasOwnProperty("loc") && (t.loc = e.loc);
-        var i = l.TagList || new Set,
+        var i = n[a] || new Set,
           o = new Set,
           r = new Set;
         for (i.forEach((function(e) {
@@ -2192,14 +2196,14 @@
           })); r.size > 0;) {
           var d = r;
           r = new Set, d.forEach((function(e) {
-            o.has(e) || (o.add(e), (l[e] || new Set).forEach((function(e) {
+            o.has(e) || (o.add(e), (n[e] || new Set).forEach((function(e) {
               r.add(e)
             })))
           }))
         }
         return o.forEach((function(a) {
-          var l = n(e, a);
-          l && t.definitions.push(l)
+          var n = l(e, a);
+          n && t.definitions.push(n)
         })), t
       }(a, "TagList")
     }

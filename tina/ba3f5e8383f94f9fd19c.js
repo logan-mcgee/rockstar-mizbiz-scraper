@@ -1,6 +1,6 @@
 (self.webpackChunk_rockstargames_tina = self.webpackChunk_rockstargames_tina || []).push([
-  [36, 164, 312], {
-    826: (e, t, n) => {
+  [32, 823, 142], {
+    460: (e, t, n) => {
       "use strict";
       n.d(t, {
         Z: () => r
@@ -10,13 +10,13 @@
         return [...t].filter(Boolean).join(" ")
       }
     },
-    164: (e, t, n) => {
+    823: (e, t, n) => {
       "use strict";
       n.r(t), n.d(t, {
         patch: () => s,
         pick: () => a
       });
-      var r = n(591),
+      var r = n(735),
         o = n.n(r);
       const s = (e, t) => {
           const n = o().cloneDeepWith(n, ((e, n, r) => {
@@ -35,27 +35,27 @@
           })), n
         }
     },
-    8: (e, t, n) => {
+    129: (e, t, n) => {
       "use strict";
       n.r(t), n.d(t, {
-        TinaParser: () => S,
+        TinaParser: () => _,
         classList: () => r.Z,
         useGetCdnSource: () => o.useGetCdnSource,
         useImageParser: () => o.useImageParser,
-        useTinaComponents: () => d,
-        useTinaPayload: () => f.I,
-        useTranslations: () => O
+        useTinaComponents: () => f,
+        useTinaPayload: () => y.I,
+        useTranslations: () => g
       });
-      var r = n(826),
-        o = n(236),
+      var r = n(460),
+        o = n(907),
         s = n(822),
-        a = n(591),
-        l = n.n(a);
-      var i = n(563);
-      const c = (0, s.createContext)(),
+        a = n(735),
+        c = n.n(a);
+      var i = n(668);
+      const l = (0, s.createContext)(),
         {
           Provider: u
-        } = c,
+        } = l,
         p = e => {
           let {
             children: t,
@@ -66,38 +66,38 @@
             children: t
           })
         },
-        d = () => (0, s.useContext)(c);
-      var f = n(501),
-        y = n(34),
-        m = n.n(y),
-        v = n(164),
-        b = n(821);
-      const O = e => {
+        f = () => (0, s.useContext)(l);
+      var y = n(858),
+        m = n(391),
+        d = n.n(m),
+        b = n(823),
+        O = n(73);
+      const g = e => {
         let {
           payload: t,
           variables: n
         } = e;
         const [r, o] = (0, s.useState)(t), [a, i] = (0, s.useState)(n);
         return (0, s.useEffect)((() => {
-          const e = (0, v.pick)(t, b.TINA_MEMOQ_PREFIX),
-            r = JSON.parse(JSON.stringify(l().merge(JSON.parse(JSON.stringify(e)), JSON.parse(JSON.stringify((null == n ? void 0 : n.keys) ?? {})))));
+          const e = (0, b.pick)(t, O.TINA_MEMOQ_PREFIX),
+            r = JSON.parse(JSON.stringify(c().merge(JSON.parse(JSON.stringify(e)), JSON.parse(JSON.stringify(n?.keys ?? {})))));
           i(r)
         }), [JSON.stringify(t), n]), (0, s.useEffect)((() => {
           const e = JSON.parse(JSON.stringify(t)),
             n = JSON.parse(JSON.stringify(a));
-          l().cloneDeepWith(e, ((e, t, r) => {
+          c().cloneDeepWith(e, ((e, t, r) => {
             (e => {
               let {
                 item: t,
                 variableKey: r
               } = e;
-              if (!t || !l().has(t, "key") || t.translated) return;
+              if (!t || !c().has(t, "key") || t.translated) return;
               const o = n[t.key] ?? null;
               if (!o) return;
-              const s = m()(o);
+              const s = d()(o);
               Object.keys(s).map((e => {
-                l().set(t, e, s[e])
-              })), l().set(t, "translated", !0), Object.freeze(t)
+                c().set(t, e, s[e])
+              })), c().set(t, "translated", !0), Object.freeze(t)
             })({
               item: r,
               variableKey: e
@@ -105,42 +105,37 @@
           })), o(e)
         }), [JSON.stringify(t), JSON.stringify(a)]), r
       };
-      var g = n(637);
-      const j = e => {
+      var j = n(874);
+      const S = e => {
           let {
             components: t,
             payload: n,
             componentProps: r = {}
           } = e;
-          const o = (0, s.useMemo)((() => (l().cloneDeepWith(n, ((e, r) => {
-            "_template" !== r || Number.isInteger(Number(e)) || l().get(t, e) || (console.error(`TinaParser:useComponentRenderer: Component ${e} was found in payload, but not in renderable components.`), console.error("Payload:", n), console.error("Components:", t))
+          const o = (0, s.useMemo)((() => (c().cloneDeepWith(n, ((e, r) => {
+            "_template" !== r || Number.isInteger(Number(e)) || c().get(t, e) || (console.error(`TinaParser:useComponentRenderer: Component ${e} was found in payload, but not in renderable components.`), console.error("Payload:", n), console.error("Components:", t))
           })), (e => {
-            var t;
             let {
-              components: n,
-              payload: r,
-              componentProps: o
+              components: t,
+              payload: n,
+              componentProps: r
             } = e;
-            const a = e => {
-              var t;
-              let i = "";
-              if (i = Array.isArray(null == e ? void 0 : e[b.TINA_PARSER_KEY]) ? e[b.TINA_PARSER_KEY].map((e => a(e))) : (null == e ? void 0 : e[b.TINA_PARSER_KEY]) ?? "", null == e || !e._template) return i;
-              const c = l().get(n, null == e ? void 0 : e._template) ?? null,
-                u = [...(null == e ? void 0 : e.translations) ?? []].reverse(),
-                p = `componentProps_${(0,g.Z)()}`,
-                d = (0, s.createElement)(c, {
-                  ...null == r ? void 0 : r.meta,
+            const o = e => {
+              let a = "";
+              if (a = Array.isArray(e?.[O.TINA_PARSER_KEY]) ? e[O.TINA_PARSER_KEY].map((e => o(e))) : e?.[O.TINA_PARSER_KEY] ?? "", !e?._template) return a;
+              const i = c().get(t, e?._template) ?? null,
+                l = [...e?.translations ?? []].reverse(),
+                u = `componentProps_${(0,j.Z)()}`,
+                p = (0, s.createElement)(i, {
+                  ...n?.meta,
                   ...e,
-                  ...o,
-                  t: e => {
-                    var t;
-                    return (null === (t = u.find((t => (null == t ? void 0 : t._key) === e))) || void 0 === t ? void 0 : t.value) ?? e
-                  },
-                  key: p
-                }, i);
-              return null == r || null === (t = r.meta) || void 0 === t || t.animateIn, d
+                  ...r,
+                  t: e => l.find((t => t?._key === e))?.value ?? e,
+                  key: u
+                }, a);
+              return n?.meta?.animateIn, p
             };
-            return null != r && null !== (t = r[b.TINA_PARSER_KEY]) && void 0 !== t && t.length ? a(r) : null
+            return n?.[O.TINA_PARSER_KEY]?.length ? o(n) : null
           })({
             components: t,
             payload: n,
@@ -148,32 +143,32 @@
           }))), [JSON.stringify(n), JSON.stringify(t)]);
           return o
         },
-        S = e => {
+        _ = e => {
           let {
             tina: t,
             components: n = {},
             componentProps: r = {}
           } = e;
-          const o = (0, f.I)(),
-            [a, c] = (0, s.useState)(null),
-            [u, y] = (0, s.useState)(null);
+          const o = (0, y.I)(),
+            [a, l] = (0, s.useState)(null),
+            [u, m] = (0, s.useState)(null);
           (0, s.useEffect)((() => {
-            null != t && t.payload && c(t.payload), null != t && t.variables && y(t.variables)
+            t?.payload && l(t.payload), t?.variables && m(t.variables)
           }), [t]);
-          const [m] = (0, s.useState)({
+          const [d] = (0, s.useState)({
             ...n,
-            ...d() ?? {}
-          }), v = (e => {
+            ...f() ?? {}
+          }), b = (e => {
             let {
               payload: t
             } = e;
             const [n, r] = (0, s.useState)(t);
             return (0, s.useEffect)((() => {
-              const e = l().debounce((() => {
+              const e = c().debounce((() => {
                 const e = JSON.parse(JSON.stringify(t));
-                l().cloneDeepWith(e, ((e, t, n) => {
-                  null != n && n.mediaQueryList && (e => {
-                    null != e && e.__original_data || Object.assign(e, {
+                c().cloneDeepWith(e, ((e, t, n) => {
+                  n?.mediaQueryList && (e => {
+                    e?.__original_data || Object.assign(e, {
                       __original_data: {
                         ...e
                       }
@@ -186,9 +181,9 @@
                       })) ?? null,
                       n = Object.assign({}, ...t);
                     Object.assign(e, {
-                      ...null == e ? void 0 : e.__original_data,
+                      ...e?.__original_data,
                       ...n,
-                      _template: null == e ? void 0 : e._template
+                      _template: e?._template
                     })
                   })(n)
                 })), r(e)
@@ -197,37 +192,39 @@
             }), [t]), n
           })({
             payload: a
-          }), b = O({
+          }), O = g({
             payload: a,
             variables: u
           });
           return (0, s.useMemo)((() => {
-            var e, t, n, s;
             if (!a) return null;
-            const l = b,
-              c = (null == a || null === (e = a.meta) || void 0 === e ? void 0 : e.prod) ?? (null == a || null === (t = a.meta) || void 0 === t ? void 0 : t.cdn) ?? (null == o || null === (n = o.meta) || void 0 === n ? void 0 : n.prod) ?? (null == o || null === (s = o.meta) || void 0 === s ? void 0 : s.cdn) ?? !1,
-              u = {
+            const e = O,
+              n = a?.meta?.prod ?? a?.meta?.cdn ?? o?.meta?.prod ?? o?.meta?.cdn ?? !1,
+              s = {
                 ...a,
                 meta: {
-                  ...(null == a ? void 0 : a.meta) ?? {},
-                  prod: c
+                  ...a?.meta ?? {},
+                  prod: n
                 }
               };
-            return (0, i.jsx)(f.d, {
-              payload: u,
+            return (0, i.jsx)(y.d, {
+              payload: s,
               children: (0, i.jsx)(p, {
-                components: m,
-                children: (0, i.jsx)(j, {
-                  payload: l,
-                  components: m,
-                  componentProps: r
+                components: d,
+                children: (0, i.jsx)(S, {
+                  payload: e,
+                  components: d,
+                  componentProps: {
+                    ...r,
+                    tina: t
+                  }
                 })
               })
             })
-          }), [o, a, JSON.stringify(v), JSON.stringify(b)])
+          }), [o, a, JSON.stringify(b), JSON.stringify(O)])
         }
     },
-    34: e => {
+    391: e => {
       function t(e) {
         return e && e.constructor && "function" == typeof e.constructor.isBuffer && e.constructor.isBuffer(e)
       }
@@ -240,25 +237,25 @@
         const o = (r = r || {}).delimiter || ".",
           s = r.maxDepth,
           a = r.transformKey || n,
-          l = {};
-        return function e(n, i, c) {
-          c = c || 1, Object.keys(n).forEach((function(u) {
+          c = {};
+        return function e(n, i, l) {
+          l = l || 1, Object.keys(n).forEach((function(u) {
             const p = n[u],
-              d = r.safe && Array.isArray(p),
-              f = Object.prototype.toString.call(p),
-              y = t(p),
-              m = "[object Object]" === f || "[object Array]" === f,
-              v = i ? i + o + a(u) : a(u);
-            if (!d && !y && m && Object.keys(p).length && (!r.maxDepth || c < s)) return e(p, v, c + 1);
-            l[v] = p
+              f = r.safe && Array.isArray(p),
+              y = Object.prototype.toString.call(p),
+              m = t(p),
+              d = "[object Object]" === y || "[object Array]" === y,
+              b = i ? i + o + a(u) : a(u);
+            if (!f && !m && d && Object.keys(p).length && (!r.maxDepth || l < s)) return e(p, b, l + 1);
+            c[b] = p
           }))
-        }(e), l
+        }(e), c
       }
       e.exports = r, r.flatten = r, r.unflatten = function e(o, s) {
         const a = (s = s || {}).delimiter || ".",
-          l = s.overwrite || !1,
+          c = s.overwrite || !1,
           i = s.transformKey || n,
-          c = {};
+          l = {};
         if (t(o) || "[object Object]" !== Object.prototype.toString.call(o)) return o;
 
         function u(e) {
@@ -280,16 +277,16 @@
           const n = t.split(a).map(i);
           let r = u(n.shift()),
             p = u(n[0]),
-            d = c;
+            f = l;
           for (; void 0 !== p;) {
             if ("__proto__" === r) return;
-            const e = Object.prototype.toString.call(d[r]),
+            const e = Object.prototype.toString.call(f[r]),
               t = "[object Object]" === e || "[object Array]" === e;
-            if (!l && !t && void 0 !== d[r]) return;
-            (l && !t || !l && null == d[r]) && (d[r] = "number" != typeof p || s.object ? {} : []), d = d[r], n.length > 0 && (r = u(n.shift()), p = u(n[0]))
+            if (!c && !t && void 0 !== f[r]) return;
+            (c && !t || !c && null == f[r]) && (f[r] = "number" != typeof p || s.object ? {} : []), f = f[r], n.length > 0 && (r = u(n.shift()), p = u(n[0]))
           }
-          d[r] = e(o[t], s)
-        })), c
+          f[r] = e(o[t], s)
+        })), l
       }
     }
   }
