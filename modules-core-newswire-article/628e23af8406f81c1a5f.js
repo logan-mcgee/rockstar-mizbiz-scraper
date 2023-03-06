@@ -1,7 +1,7 @@
 "use strict";
 (self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
-  [458], {
-    1458: (e, t, l) => {
+  [289], {
+    5289: (e, t, l) => {
       l.r(t), l.d(t, {
         Discounts: () => u,
         Donate: () => c,

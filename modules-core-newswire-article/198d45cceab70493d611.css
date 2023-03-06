@@ -2805,7 +2805,7 @@
 [data-context=newswire-article][data-theme="9998"] {
   --gold-9998: #f4c220;
   --theme-header-fonts: "ITCMachineCyr", CorporateW05, ChaletComprime, NeueHelveticaW05, NotoSansJP, NotoSansSC, NotoSansTC, NotoSans, Helvetica, Arial, sans-serif;
-  --badge-text-color: var(--black-200);
+  --badge-text-color: var(--black-200, #000);
   --badge-background: var(--gold-9998);
   --badge-margin: 1rem;
   background-image: url(../img/1e76e6760ec799903eab.jpg);

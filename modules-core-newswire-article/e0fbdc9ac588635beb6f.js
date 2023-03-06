@@ -1,14 +1,14 @@
 "use strict";
 (self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
-  [198], {
-    6198: (e, s, r) => {
+  [403], {
+    7403: (e, s, r) => {
       r.r(s), r.d(s, {
         Jsx0: () => i,
         Jsx1: () => u,
         Jsx2: () => v
       });
       var a = r(8976);
-      var t = r(5668);
+      var t = r(3322);
       const i = e => {
         let {
           article: s,
@@ -47,14 +47,14 @@
         })
       };
       var n = r(822),
-        o = r(8919),
+        o = r(8254),
         l = r.n(o),
         d = r(9929),
         c = r(420),
         x = r.n(c),
         j = r(8356),
         m = r.n(j),
-        p = r(47);
+        p = r(3583);
       const u = (0, d.withTranslations)((0, d.withLocale)((e => {
         let {
           article: s,
@@ -187,7 +187,7 @@
         })
       })));
       var h = r(9542),
-        g = r(7767);
+        g = r(24);
       const v = e => {
         let {
           children: s,

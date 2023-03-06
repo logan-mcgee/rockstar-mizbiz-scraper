@@ -1,6 +1,6 @@
 (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
-  [170], {
-    8170: (e, a, t) => {
+  [396], {
+    2396: (e, a, t) => {
       "use strict";
       t.r(a), t.d(a, {
         Breadcrumbs: () => o,
@@ -18,7 +18,7 @@
         links: "b4b8f1f467f93b7b62e4",
         filter: "d6a49923db59e647d2ac"
       };
-      var c = t(5668);
+      var c = t(3322);
       const o = () => {
         const {
           state: {

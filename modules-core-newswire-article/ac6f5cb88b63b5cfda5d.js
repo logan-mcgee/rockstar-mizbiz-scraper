@@ -1,6 +1,6 @@
 (self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
-  [767], {
-    47: (e, i, a) => {
+  [24], {
+    3583: (e, i, a) => {
       "use strict";
       a.r(i), a.d(i, {
         AnchorLink: () => t,
@@ -16,7 +16,7 @@
         Podium: () => U
       });
       var n = a(822),
-        s = a(5668);
+        s = a(3322);
       const t = e => {
         let {
           children: i,
@@ -413,7 +413,7 @@
             })
           })
         };
-      var j = a(8866),
+      var j = a(2299),
         N = a.n(j);
       const y = {
           donate: "eb9e02d18c2e7b2b52b5",
@@ -533,7 +533,7 @@
             })
           })
         };
-      var T = a(735),
+      var T = a(7311),
         P = a.n(T),
         G = a(6947),
         D = a(9542),
@@ -667,7 +667,7 @@
             })]
           })
         };
-      var H = a(4768);
+      var H = a(6515);
       const O = e => {
           let {
             children: i,
@@ -852,7 +852,7 @@
           })
         }))
     },
-    7767: (e, i, a) => {
+    24: (e, i, a) => {
       "use strict";
       a.r(i), a.d(i, {
         componentsForTinaParser: () => p
@@ -870,7 +870,7 @@
         g = a.n(u);
       const p = {
         ...n,
-        ...a(47),
+        ...a(3583),
         ...{
           Gif: t(),
           GroupOfItems: d(),

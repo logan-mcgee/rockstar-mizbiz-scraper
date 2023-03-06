@@ -4,10 +4,10 @@ var modules_core_newswire_article;
   var e, r, t, o, n = {
       3072: (e, r, t) => {
         var o = {
-            "./NewswireArticle": () => Promise.all([t.e(678), t.e(919), t.e(976), t.e(767), t.e(757), t.e(425)]).then((() => () => t(425))),
-            "./index": () => Promise.all([t.e(678), t.e(976), t.e(767)]).then((() => () => t(7767))),
-            "./types": () => Promise.all([t.e(678), t.e(919), t.e(976), t.e(767), t.e(757), t.e(198)]).then((() => () => t(6198))),
-            "./tinaBlockTemplates": () => Promise.all([t.e(976), t.e(458)]).then((() => () => t(1458)))
+            "./NewswireArticle": () => Promise.all([t.e(30), t.e(254), t.e(976), t.e(24), t.e(757), t.e(631)]).then((() => () => t(6631))),
+            "./index": () => Promise.all([t.e(30), t.e(976), t.e(24)]).then((() => () => t(24))),
+            "./types": () => Promise.all([t.e(30), t.e(254), t.e(976), t.e(24), t.e(757), t.e(403)]).then((() => () => t(7403))),
+            "./tinaBlockTemplates": () => Promise.all([t.e(976), t.e(289)]).then((() => () => t(5289)))
           },
           n = (e, r) => (t.R = r, r = t.o(o, e) ? o[e]() : Promise.resolve().then((() => {
             throw new Error('Module "' + e + '" does not exist in container.')
@@ -169,18 +169,18 @@ var modules_core_newswire_article;
       get: r[t]
     })
   }, i.f = {}, i.e = e => Promise.all(Object.keys(i.f).reduce(((r, t) => (i.f[t](e, r), r)), [])), i.u = e => "js/" + {
-    198: "c11a415d68eee63705d3",
-    425: "b6e233253f022e67776c",
-    458: "3ea5b3657b388c1c2e2d",
-    661: "e6b67c477dc0059f7fb5",
-    678: "a2d334edbf2164009360",
-    757: "91ef73c49d63a48975f8",
-    767: "995df2922b857d7d9de0",
-    919: "4c9684fc59c2f6d5b9a4",
-    976: "23e323ffd74593dda39b"
+    24: "ac6f5cb88b63b5cfda5d",
+    30: "6f580a2203d201680ff6",
+    254: "d58d34cbf4f5a7fcae0f",
+    289: "628e23af8406f81c1a5f",
+    403: "e0fbdc9ac588635beb6f",
+    627: "72321f06a3290464e99d",
+    631: "aba84f5dbbde156db1cf",
+    757: "25605084718c4ad57769",
+    976: "79c7ed297ec0a43fab12"
   } [e] + ".js", i.miniCssF = e => "css/" + {
-    757: "bb5889ebd8f16a62e4a8",
-    767: "49f263848a9a1b8fa857"
+    24: "49f263848a9a1b8fa857",
+    757: "198d45cceab70493d611"
   } [e] + ".css", i.g = function() {
     if ("object" == typeof globalThis) return globalThis;
     try {
@@ -201,16 +201,16 @@ var modules_core_newswire_article;
           }
         }
       s || (d = !0, (s = document.createElement("script")).charset = "utf-8", s.timeout = 120, i.nc && s.setAttribute("nonce", i.nc), s.setAttribute("data-webpack", r + n), s.src = t), e[t] = [o];
-      var p = (r, o) => {
-          s.onerror = s.onload = null, clearTimeout(c);
+      var c = (r, o) => {
+          s.onerror = s.onload = null, clearTimeout(p);
           var n = e[t];
           if (delete e[t], s.parentNode && s.parentNode.removeChild(s), n && n.forEach((e => e(o))), r) return r(o)
         },
-        c = setTimeout(p.bind(null, void 0, {
+        p = setTimeout(c.bind(null, void 0, {
           type: "timeout",
           target: s
         }), 12e4);
-      s.onerror = p.bind(null, s.onerror), s.onload = p.bind(null, s.onload), d && document.head.appendChild(s)
+      s.onerror = c.bind(null, s.onerror), s.onload = c.bind(null, s.onload), d && document.head.appendChild(s)
     }
   }, i.r = e => {
     "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
@@ -219,9 +219,9 @@ var modules_core_newswire_article;
       value: !0
     })
   }, i.nmd = e => (e.paths = [], e.children || (e.children = []), e), t = {
-    425: [1968, 6077],
-    458: [559, 2324, 3204, 3616, 6307, 6904],
-    767: [420, 3657, 3750, 4224, 4859, 5551, 6947, 8356, 9542, 9929],
+    24: [420, 3657, 3750, 4224, 4859, 5551, 6947, 8356, 9542, 9929],
+    289: [559, 2324, 3204, 3616, 6307, 6904],
+    631: [1968, 6077],
     976: [8976]
   }, o = {
     420: ["default", "./index", 8546],
@@ -308,7 +308,7 @@ var modules_core_newswire_article;
           var n = a[e] = a[e] || {},
             d = n[r];
           (!d || !d.loaded && (1 != !d.eager ? o : s > d.from)) && (n[r] = {
-            get: () => i.e(661).then((() => () => i(5661))),
+            get: () => i.e(627).then((() => () => i(6627))),
             from: s,
             eager: !1
           })
@@ -360,13 +360,13 @@ var modules_core_newswire_article;
             } else "s" != f && "n" != f && (d = !1, s--)
           }
         }
-        var p = [],
-          c = p.pop.bind(p);
+        var c = [],
+          p = c.pop.bind(c);
         for (i = 1; i < t.length; i++) {
           var m = t[i];
-          p.push(1 == m ? c() | c() : 2 == m ? c() & c() : m ? r(m, o) : !c())
+          c.push(1 == m ? p() | p() : 2 == m ? p() & p() : m ? r(m, o) : !p())
         }
-        return !!c()
+        return !!p()
       },
       t = (t, o, n) => {
         var a = t[o];
@@ -394,10 +394,10 @@ var modules_core_newswire_article;
       })),
       n = {},
       a = {
-        822: () => o("default", "react", [1, 18, 2, 0], (() => i.e(661).then((() => () => i(5661)))))
+        822: () => o("default", "react", [1, 18, 2, 0], (() => i.e(627).then((() => () => i(6627)))))
       },
       s = {
-        767: [822]
+        24: [822]
       };
     i.f.consumes = (e, r) => {
       i.o(s, e) && s[e].forEach((e => {
@@ -427,8 +427,8 @@ var modules_core_newswire_article;
       };
       i.f.miniCss = (r, t) => {
         e[r] ? t.push(e[r]) : 0 !== e[r] && {
-          757: 1,
-          767: 1
+          24: 1,
+          757: 1
         } [r] && t.push(e[r] = (e => new Promise(((r, t) => {
           var o = i.miniCssF(e),
             n = i.p + o;
