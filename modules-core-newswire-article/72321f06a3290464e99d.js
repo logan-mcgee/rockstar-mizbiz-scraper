@@ -1,8 +1,8 @@
-/*! For license information please see e6b67c477dc0059f7fb5.js.LICENSE.txt */
+/*! For license information please see 72321f06a3290464e99d.js.LICENSE.txt */
 "use strict";
 (self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
-  [661], {
-    1994: (e, t) => {
+  [627], {
+    1798: (e, t) => {
       var r = Symbol.for("react.element"),
         n = Symbol.for("react.portal"),
         o = Symbol.for("react.fragment"),
@@ -297,8 +297,8 @@
         return I.current.useTransition()
       }, t.version = "18.2.0"
     },
-    5661: (e, t, r) => {
-      e.exports = r(1994)
+    6627: (e, t, r) => {
+      e.exports = r(1798)
     }
   }
 ]);

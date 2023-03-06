@@ -1,12 +1,12 @@
 (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
-  [641], {
-    2304: (e, a, n) => {
+  [79], {
+    3991: (e, a, n) => {
       "use strict";
       n.r(a), n(7842);
       var i = n(6331),
         t = n(4690),
         l = n.n(t),
-        d = n(6463),
+        d = n(3664),
         s = n(6026),
         r = n(9976),
         o = n(8976),
@@ -18,12 +18,12 @@
         f = n(1968),
         g = n(1458),
         p = n(6711),
-        h = n(8170),
+        h = n(2396),
         b = n(9929);
       const N = "d6f18ca5eb38255a12f2",
         S = "b9bb09c7276c243a56c3";
       var y = n(3492),
-        x = n(5668);
+        x = n(3322);
       const j = e => {
           let {
             games: a,
@@ -726,7 +726,7 @@
             })
           }) : null
         }));
-      var de = n(8919),
+      var de = n(8254),
         se = n.n(de);
       const re = {
         companyInfo: "fdf7ad7390432425a3f9",
@@ -1013,7 +1013,7 @@
           })]
         })
       }));
-      var we = n(8866),
+      var we = n(2299),
         Fe = n.n(we);
       const Ve = e => {
           let {
@@ -1267,7 +1267,7 @@
           })
         }),
         Ie = {
-          "frontline-heroes": (0, s.lazy)((() => n.e(694).then(n.bind(n, 7694)))),
+          "frontline-heroes": (0, s.lazy)((() => n.e(118).then(n.bind(n, 9118)))),
           "gta-tv": (0, s.lazy)((() => n.e(414).then(n.t.bind(n, 3414, 23)))),
           "modules-core-gif-viewer": (0, s.lazy)((() => n.e(774).then(n.t.bind(n, 2774, 23)))),
           "modules-core-videoplayer": (0, s.lazy)((() => n.e(876).then(n.t.bind(n, 9876, 23)))),
@@ -1409,7 +1409,11 @@
             element: (0, x.jsx)(q, {})
           }, {
             path: "*",
-            element: (0, x.jsx)(o.Wasted, {})
+            element: (0, x.jsx)(o.Wasted, {
+              error: {
+                code: window?.env?.responseStatusCode ?? 398
+              }
+            })
           }];
           return (0, r.useRoutes)(e)
         })),

@@ -1,6 +1,6 @@
 (self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
-  [425, 198], {
-    425: (e, n, i) => {
+  [631, 403], {
+    6631: (e, n, i) => {
       "use strict";
       i.r(n), i.d(n, {
         default: () => c
@@ -9,9 +9,9 @@
         t = i(4859),
         s = i(8976),
         d = i(1968),
-        l = i(6198),
+        l = i(7403),
         r = i(9408),
-        o = i(5668);
+        o = i(3322);
       const m = e => {
           let {
             article: n,
@@ -65,7 +65,7 @@
           })
         }
     },
-    6198: (e, n, i) => {
+    7403: (e, n, i) => {
       "use strict";
       i.r(n), i.d(n, {
         Jsx0: () => s,
@@ -73,7 +73,7 @@
         Jsx2: () => N
       });
       var a = i(8976);
-      var t = i(5668);
+      var t = i(3322);
       const s = e => {
         let {
           article: n,
@@ -112,14 +112,14 @@
         })
       };
       var d = i(822),
-        l = i(8919),
+        l = i(8254),
         r = i.n(l),
         o = i(9929),
         m = i(420),
         c = i.n(m),
         u = i(8356),
         k = i.n(u),
-        v = i(47);
+        v = i(3583);
       const g = (0, o.withTranslations)((0, o.withLocale)((e => {
         let {
           article: n,
@@ -252,7 +252,7 @@
         })
       })));
       var p = i(9542),
-        h = i(7767);
+        h = i(24);
       const N = e => {
         let {
           children: n,
