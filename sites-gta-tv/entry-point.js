@@ -4,7 +4,7 @@ var sites_gta_tv;
   var e, r, t, n, a = {
       288: (e, r, t) => {
         var n = {
-            "./index": () => Promise.all([t.e(822), t.e(804)]).then((() => () => t(804)))
+            "./index": () => Promise.all([t.e(822), t.e(22)]).then((() => () => t(22)))
           },
           a = (e, r) => (t.R = r, r = t.o(n, e) ? n[e]() : Promise.resolve().then((() => {
             throw new Error('Module "' + e + '" does not exist in container.')
@@ -92,10 +92,10 @@ var sites_gta_tv;
       get: r[t]
     })
   }, i.f = {}, i.e = e => Promise.all(Object.keys(i.f).reduce(((r, t) => (i.f[t](e, r), r)), [])), i.u = e => "js/" + {
-    246: "afc74782c3a593ee1695",
-    661: "cabb1c7dcc86cc0f77bf",
-    804: "223aa00c74f02366cfdd",
-    822: "efdcc5e8c7580a97ac78"
+    22: "23a33045daf05619d971",
+    513: "1dee49fa58691119f1c6",
+    627: "9a39f16be1c9ba7ae6b6",
+    822: "36a86b3a29825e61b46f"
   } [e] + ".js", i.miniCssF = e => "css/34105ffcdfb11a00c819.css", i.g = function() {
     if ("object" == typeof globalThis) return globalThis;
     try {
@@ -134,7 +134,7 @@ var sites_gta_tv;
       value: !0
     })
   }, t = {
-    804: [976, 859, 921, 929, 224]
+    22: [976, 859, 921, 929, 224]
   }, n = {
     224: ["default", "./index", 993],
     859: ["default", "./index", 171],
@@ -211,7 +211,7 @@ var sites_gta_tv;
             }
           },
           d = [];
-        return "default" === t && (l("react-router-dom", "6.6.1", (() => Promise.all([i.e(246), i.e(822)]).then((() => () => i(246))))), l("react", "18.2.0", (() => i.e(661).then((() => () => i(661))))), u(525), u(171), u(993), u(810)), d.length ? e[t] = Promise.all(d).then((() => e[t] = 1)) : e[t] = 1
+        return "default" === t && (l("react-router-dom", "6.8.2", (() => Promise.all([i.e(513), i.e(822)]).then((() => () => i(513))))), l("react", "18.2.0", (() => i.e(627).then((() => () => i(627))))), u(525), u(171), u(993), u(810)), d.length ? e[t] = Promise.all(d).then((() => e[t] = 1)) : e[t] = 1
       }
     }
   })(), (() => {
@@ -293,11 +293,11 @@ var sites_gta_tv;
       })),
       a = {},
       o = {
-        822: () => n("default", "react", [1, 18, 2, 0], (() => i.e(661).then((() => () => i(661))))),
-        163: () => n("default", "react-router-dom", [1, 6, 6, 1], (() => i.e(246).then((() => () => i(246)))))
+        822: () => n("default", "react", [1, 18, 2, 0], (() => i.e(627).then((() => () => i(627))))),
+        803: () => n("default", "react-router-dom", [1, 6, 8, 2], (() => i.e(513).then((() => () => i(513)))))
       },
       s = {
-        804: [163],
+        22: [803],
         822: [822]
       };
     i.f.consumes = (e, r) => {
@@ -328,7 +328,7 @@ var sites_gta_tv;
       };
       i.f.miniCss = (r, t) => {
         e[r] ? t.push(e[r]) : 0 !== e[r] && {
-          804: 1
+          22: 1
         } [r] && t.push(e[r] = (e => new Promise(((r, t) => {
           var n = i.miniCssF(e),
             a = i.p + n;
