@@ -4,8 +4,8 @@ var modules_core_group_of_items;
   var e, r, t, n, o = {
       812: (e, r, t) => {
         var n = {
-            "./index": () => t.e(935).then((() => () => t(935))),
-            "./tinaBlockTemplates": () => t.e(383).then((() => () => t(383)))
+            "./index": () => t.e(814).then((() => () => t(814))),
+            "./tinaBlockTemplates": () => t.e(4).then((() => () => t(4)))
           },
           o = (e, r) => (t.R = r, r = t.o(n, e) ? n[e]() : Promise.resolve().then((() => {
             throw new Error('Module "' + e + '" does not exist in container.')
@@ -81,9 +81,9 @@ var modules_core_group_of_items;
       get: r[t]
     })
   }, i.f = {}, i.e = e => Promise.all(Object.keys(i.f).reduce(((r, t) => (i.f[t](e, r), r)), [])), i.u = e => "js/" + {
-    383: "d4ba12e6d5ca65c71543",
-    661: "e7398bd94271cee388c0",
-    935: "0ea21914ec5f67a867e9"
+    4: "9c4eaa86a5ffc58c0b7d",
+    627: "d94fc174b10d57cea361",
+    814: "915aec8d2d547c7eeb0a"
   } [e] + ".js", i.miniCssF = e => "css/a9b2e356e5b5a1966cd2.css", i.g = function() {
     if ("object" == typeof globalThis) return globalThis;
     try {
@@ -96,8 +96,8 @@ var modules_core_group_of_items;
     else {
       var s, u;
       if (void 0 !== o)
-        for (var l = document.getElementsByTagName("script"), f = 0; f < l.length; f++) {
-          var d = l[f];
+        for (var f = document.getElementsByTagName("script"), l = 0; l < f.length; l++) {
+          var d = f[l];
           if (d.getAttribute("src") == t || d.getAttribute("data-webpack") == r + o) {
             s = d;
             break
@@ -122,8 +122,8 @@ var modules_core_group_of_items;
       value: !0
     })
   }, t = {
-    383: [616],
-    935: [224, 542, 976]
+    4: [616],
+    814: [224, 542, 976]
   }, n = {
     224: ["default", "./index", 993],
     542: ["default", "./index", 489],
@@ -143,17 +143,17 @@ var modules_core_group_of_items;
           },
           s = (e, t, n, i, s, u) => {
             try {
-              var l = e(t, n);
-              if (!l || !l.then) return s(l, i, u);
-              var f = l.then((e => s(e, i)), a);
-              if (!u) return f;
-              r.push(o.p = f)
+              var f = e(t, n);
+              if (!f || !f.then) return s(f, i, u);
+              var l = f.then((e => s(e, i)), a);
+              if (!u) return l;
+              r.push(o.p = l)
             } catch (e) {
               a(e)
             }
           },
-          u = (e, r, n) => s(r.get, o[1], t, 0, l, n),
-          l = r => {
+          u = (e, r, n) => s(r.get, o[1], t, 0, f, n),
+          f = r => {
             o.p = 1, i.m[e] = e => {
               e.exports = r()
             }
@@ -182,23 +182,23 @@ var modules_core_group_of_items;
               var o = i(e);
               if (!o) return;
               var a = e => e && e.init && e.init(i.S[t], n);
-              if (o.then) return l.push(o.then(a, r));
+              if (o.then) return f.push(o.then(a, r));
               var s = a(o);
-              if (s && s.then) return l.push(s.catch(r))
+              if (s && s.then) return f.push(s.catch(r))
             } catch (e) {
               r(e)
             }
           },
-          l = [];
+          f = [];
         return "default" === t && (((e, r, t, n) => {
           var o = a[e] = a[e] || {},
             u = o[r];
           (!u || !u.loaded && (1 != !u.eager ? n : s > u.from)) && (o[r] = {
-            get: () => i.e(661).then((() => () => i(661))),
+            get: () => i.e(627).then((() => () => i(627))),
             from: s,
             eager: !1
           })
-        })("react", "18.2.0"), u(525), u(993), u(489)), l.length ? e[t] = Promise.all(l).then((() => e[t] = 1)) : e[t] = 1
+        })("react", "18.2.0"), u(525), u(993), u(489)), f.length ? e[t] = Promise.all(f).then((() => e[t] = 1)) : e[t] = 1
       }
     }
   })(), (() => {
@@ -225,23 +225,23 @@ var modules_core_group_of_items;
             a = o < 0;
           a && (o = -o - 1);
           for (var i = 0, s = 1, u = !0;; s++, i++) {
-            var l, f, d = s < t.length ? (typeof t[s])[0] : "";
-            if (i >= n.length || "o" == (f = (typeof(l = n[i]))[0])) return !u || ("u" == d ? s > o && !a : "" == d != a);
-            if ("u" == f) {
+            var f, l, d = s < t.length ? (typeof t[s])[0] : "";
+            if (i >= n.length || "o" == (l = (typeof(f = n[i]))[0])) return !u || ("u" == d ? s > o && !a : "" == d != a);
+            if ("u" == l) {
               if (!u || "u" != d) return !1
             } else if (u)
-              if (d == f)
+              if (d == l)
                 if (s <= o) {
-                  if (l != t[s]) return !1
+                  if (f != t[s]) return !1
                 } else {
-                  if (a ? l > t[s] : l < t[s]) return !1;
-                  l != t[s] && (u = !1)
+                  if (a ? f > t[s] : f < t[s]) return !1;
+                  f != t[s] && (u = !1)
                 }
             else if ("s" != d && "n" != d) {
               if (a || s <= o) return !1;
               u = !1, s--
             } else {
-              if (s <= o || f < d != a) return !1;
+              if (s <= o || l < d != a) return !1;
               u = !1
             } else "s" != d && "n" != d && (u = !1, s--)
           }
@@ -280,10 +280,10 @@ var modules_core_group_of_items;
       })),
       o = {},
       a = {
-        822: () => n("default", "react", [1, 18, 2, 0], (() => i.e(661).then((() => () => i(661)))))
+        822: () => n("default", "react", [1, 18, 2, 0], (() => i.e(627).then((() => () => i(627)))))
       },
       s = {
-        935: [822]
+        814: [822]
       };
     i.f.consumes = (e, r) => {
       i.o(s, e) && s[e].forEach((e => {
@@ -313,7 +313,7 @@ var modules_core_group_of_items;
       };
       i.f.miniCss = (r, t) => {
         e[r] ? t.push(e[r]) : 0 !== e[r] && {
-          935: 1
+          814: 1
         } [r] && t.push(e[r] = (e => new Promise(((r, t) => {
           var n = i.miniCssF(e),
             o = i.p + n;
@@ -373,12 +373,12 @@ var modules_core_group_of_items;
         var n, o, a = t[0],
           s = t[1],
           u = t[2],
-          l = 0;
+          f = 0;
         if (a.some((r => 0 !== e[r]))) {
           for (n in s) i.o(s, n) && (i.m[n] = s[n]);
           u && u(i)
         }
-        for (r && r(t); l < a.length; l++) o = a[l], i.o(e, o) && e[o] && e[o][0](), e[o] = 0
+        for (r && r(t); f < a.length; f++) o = a[f], i.o(e, o) && e[o] && e[o][0](), e[o] = 0
       },
       t = self.webpackChunk_rockstargames_modules_core_group_of_items = self.webpackChunk_rockstargames_modules_core_group_of_items || [];
     t.forEach(r.bind(null, 0)), t.push = r.bind(null, t.push.bind(t))

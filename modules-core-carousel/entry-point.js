@@ -4,8 +4,8 @@ var modules_core_carousel;
   var e, r, t, n, a = {
       812: (e, r, t) => {
         var n = {
-            "./index": () => Promise.all([t.e(598), t.e(781)]).then((() => () => t(781))),
-            "./tinaBlockTemplates": () => t.e(828).then((() => () => t(828)))
+            "./index": () => Promise.all([t.e(964), t.e(615)]).then((() => () => t(615))),
+            "./tinaBlockTemplates": () => t.e(248).then((() => () => t(248)))
           },
           a = (e, r) => (t.R = r, r = t.o(n, e) ? n[e]() : Promise.resolve().then((() => {
             throw new Error('Module "' + e + '" does not exist in container.')
@@ -64,11 +64,11 @@ var modules_core_carousel;
       get: r[t]
     })
   }, i.f = {}, i.e = e => Promise.all(Object.keys(i.f).reduce(((r, t) => (i.f[t](e, r), r)), [])), i.u = e => "js/" + {
-    598: "9d2db4710b3b49a60c33",
-    661: "6ad663e93a7ca065ab22",
-    781: "ee56309a7f9c05337967",
-    828: "cba4803abc6fddf6940e"
-  } [e] + ".js", i.miniCssF = e => "css/e9b9477b6e1fef1b7762.css", i.g = function() {
+    248: "47cebcd1ae5b61c81d2d",
+    615: "bb9552a7fe134fc69ea6",
+    627: "61d9b498052d0f47a848",
+    964: "cf1cb48fa3c492b9a0a8"
+  } [e] + ".js", i.miniCssF = e => "css/dd6d794864e13bdf9446.css", i.g = function() {
     if ("object" == typeof globalThis) return globalThis;
     try {
       return this || new Function("return this")()
@@ -81,23 +81,23 @@ var modules_core_carousel;
       var s, u;
       if (void 0 !== a)
         for (var l = document.getElementsByTagName("script"), f = 0; f < l.length; f++) {
-          var c = l[f];
-          if (c.getAttribute("src") == t || c.getAttribute("data-webpack") == r + a) {
-            s = c;
+          var d = l[f];
+          if (d.getAttribute("src") == t || d.getAttribute("data-webpack") == r + a) {
+            s = d;
             break
           }
         }
       s || (u = !0, (s = document.createElement("script")).charset = "utf-8", s.timeout = 120, i.nc && s.setAttribute("nonce", i.nc), s.setAttribute("data-webpack", r + a), s.src = t), e[t] = [n];
-      var d = (r, n) => {
+      var c = (r, n) => {
           s.onerror = s.onload = null, clearTimeout(p);
           var a = e[t];
           if (delete e[t], s.parentNode && s.parentNode.removeChild(s), a && a.forEach((e => e(n))), r) return r(n)
         },
-        p = setTimeout(d.bind(null, void 0, {
+        p = setTimeout(c.bind(null, void 0, {
           type: "timeout",
           target: s
         }), 12e4);
-      s.onerror = d.bind(null, s.onerror), s.onload = d.bind(null, s.onload), u && document.head.appendChild(s)
+      s.onerror = c.bind(null, s.onerror), s.onload = c.bind(null, s.onload), u && document.head.appendChild(s)
     }
   }, i.r = e => {
     "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
@@ -106,8 +106,8 @@ var modules_core_carousel;
       value: !0
     })
   }, t = {
-    781: [542, 976],
-    828: [307, 616]
+    248: [307, 616],
+    615: [542, 976]
   }, n = {
     307: ["default", "./tinaBlockTemplates", 525],
     542: ["default", "./index", 489],
@@ -178,7 +178,7 @@ var modules_core_carousel;
           var a = o[e] = o[e] || {},
             u = a[r];
           (!u || !u.loaded && (1 != !u.eager ? n : s > u.from)) && (a[r] = {
-            get: () => i.e(661).then((() => () => i(661))),
+            get: () => i.e(627).then((() => () => i(627))),
             from: s,
             eager: !1
           })
@@ -209,32 +209,32 @@ var modules_core_carousel;
             o = a < 0;
           o && (a = -a - 1);
           for (var i = 0, s = 1, u = !0;; s++, i++) {
-            var l, f, c = s < t.length ? (typeof t[s])[0] : "";
-            if (i >= n.length || "o" == (f = (typeof(l = n[i]))[0])) return !u || ("u" == c ? s > a && !o : "" == c != o);
+            var l, f, d = s < t.length ? (typeof t[s])[0] : "";
+            if (i >= n.length || "o" == (f = (typeof(l = n[i]))[0])) return !u || ("u" == d ? s > a && !o : "" == d != o);
             if ("u" == f) {
-              if (!u || "u" != c) return !1
+              if (!u || "u" != d) return !1
             } else if (u)
-              if (c == f)
+              if (d == f)
                 if (s <= a) {
                   if (l != t[s]) return !1
                 } else {
                   if (o ? l > t[s] : l < t[s]) return !1;
                   l != t[s] && (u = !1)
                 }
-            else if ("s" != c && "n" != c) {
+            else if ("s" != d && "n" != d) {
               if (o || s <= a) return !1;
               u = !1, s--
             } else {
-              if (s <= a || f < c != o) return !1;
+              if (s <= a || f < d != o) return !1;
               u = !1
-            } else "s" != c && "n" != c && (u = !1, s--)
+            } else "s" != d && "n" != d && (u = !1, s--)
           }
         }
-        var d = [],
-          p = d.pop.bind(d);
+        var c = [],
+          p = c.pop.bind(c);
         for (i = 1; i < t.length; i++) {
           var h = t[i];
-          d.push(1 == h ? p() | p() : 2 == h ? p() & p() : h ? r(h, n) : !p())
+          c.push(1 == h ? p() | p() : 2 == h ? p() & p() : h ? r(h, n) : !p())
         }
         return !!p()
       },
@@ -264,10 +264,10 @@ var modules_core_carousel;
       })),
       a = {},
       o = {
-        822: () => n("default", "react", [1, 18, 2, 0], (() => i.e(661).then((() => () => i(661)))))
+        822: () => n("default", "react", [1, 18, 2, 0], (() => i.e(627).then((() => () => i(627)))))
       },
       s = {
-        781: [822]
+        615: [822]
       };
     i.f.consumes = (e, r) => {
       i.o(s, e) && s[e].forEach((e => {
@@ -297,7 +297,7 @@ var modules_core_carousel;
       };
       i.f.miniCss = (r, t) => {
         e[r] ? t.push(e[r]) : 0 !== e[r] && {
-          781: 1
+          615: 1
         } [r] && t.push(e[r] = (e => new Promise(((r, t) => {
           var n = i.miniCssF(e),
             a = i.p + n;
