@@ -1436,14 +1436,6 @@
   width: 100%
 }
 
-.eaaa89d602e502f9ab5a {
-  --modal-content-padding: 0 !important;
-  max-width: 100%;
-  opacity: 1 !important;
-  overflow: unset !important;
-  width: 100%
-}
-
 .e9e7ee7cbb3a089710cc {
   --modal-content-padding: 0 !important;
   --gallery-grid-gap: var(--grid-gap-sm);
@@ -1458,6 +1450,14 @@
     --card-aspect-ratio-LG: 3/4;
     --gallery-grid-gap: var(--grid-gap-xs)
   }
+}
+
+.eaaa89d602e502f9ab5a {
+  --modal-content-padding: 0 !important;
+  max-width: 100%;
+  opacity: 1 !important;
+  overflow: unset !important;
+  width: 100%
 }
 
 .e881a80105cd524eb2bf {
