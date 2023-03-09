@@ -71,18 +71,18 @@
         f = a(9542),
         p = a(1914),
         b = a(7519),
-        g = a(5220),
-        N = a(2091);
-      const h = {
+        N = a(5220),
+        g = a(2091);
+      const S = {
           BuyNow: p.Z,
           TinaWrapper: b.Z
         },
-        S = () => {
+        h = () => {
           const {
             track: e
           } = (0, d.useGtmTrack)(), [n, a] = (0, k.useSearchParams)(), {
             data: l
-          } = (0, v.useQuery)(N.BuyNowQ, {
+          } = (0, v.useQuery)(g.BuyNowQ, {
             variables: {
               ids: ["6a84"]
             }
@@ -96,7 +96,7 @@
             const i = l?.tinaModulesInfo?.[0].tina,
               t = (0, u.jsx)(f.TinaParser, {
                 components: {
-                  gen9: h
+                  gen9: S
                 },
                 tina: i
               }),
@@ -122,7 +122,7 @@
             })
           }), [l, n.get("info")]), (0, i.useEffect)((() => {
             if ("trailer" !== n.get("info")) return;
-            const i = (0, u.jsx)(g.Z, {
+            const i = (0, u.jsx)(N.Z, {
                 id: 12258
               }),
               t = {
@@ -164,17 +164,17 @@
           })
         })
       };
-      var E = a(9803),
-        V = a(7311),
-        T = a.n(V);
-      const _ = {
+      var V = a(9803),
+        E = a(7311),
+        T = a.n(E);
+      const j = {
           guideNavMobile: "f2d01cf17573bd802e0b",
           guideNavMobileContent: "ced39cc8b3a309d5ed39",
           sections: "ab0c2836b0df20857390",
           activeSection: "d7c364fa12fcf945179b",
           sectionsOpen: "b16827795aaa9023a0ca"
         },
-        j = e => {
+        _ = e => {
           let {
             currentId: n
           } = e;
@@ -192,11 +192,11 @@
               "id_hash" === n && v.get("section") === e && m(a)
             }))
           }), [o, v.get("section")]), o ? (0, u.jsx)("div", {
-            className: _.guideNavMobile,
+            className: j.guideNavMobile,
             children: (0, u.jsxs)("div", {
-              className: _.guideNavMobileContent,
+              className: j.guideNavMobileContent,
               children: [(0, u.jsx)("div", {
-                className: [_.sections, t ? _.sectionsOpen : ""].join(" "),
+                className: [j.sections, t ? j.sectionsOpen : ""].join(" "),
                 children: o.map((e => {
                   let {
                     id_hash: n,
@@ -204,7 +204,7 @@
                     to: i
                   } = e;
                   return (0, u.jsx)(r.A, {
-                    className: n === c?.id_hash ? _.activeSection : "",
+                    className: n === c?.id_hash ? j.activeSection : "",
                     to: i,
                     onClick: () => d(!1),
                     children: a
@@ -242,12 +242,12 @@
           if (n && "gen9-guide" !== n) throw Error("Invalid type, a guide is needed.");
           return (0, u.jsxs)("div", {
             className: "e806501412036864ea86",
-            children: [(0, u.jsx)(E.Z, {
+            children: [(0, u.jsx)(V.Z, {
               currentId: a
             }), e ? (0, u.jsx)(f.TinaParser, {
               components: D.componentsForTinaParserGuide,
               tina: e
-            }) : "", (0, u.jsx)(j, {
+            }) : "", (0, u.jsx)(_, {
               currentId: a
             })]
           })
@@ -289,33 +289,16 @@
             root: n
           } = e;
           const {
-            track: a
-          } = (0, d.useGtmTrack)(), [t] = (0, k.useSearchParams)(), {
-            pathname: l
-          } = (0, k.useLocation)(), o = (0, i.useMemo)((() => {
-            const e = l.replace(/\/$/, "");
+            pathname: a
+          } = (0, k.useLocation)();
+          return (0, i.useMemo)((() => {
+            const e = a.replace(/\/$/, "");
             return I.includes(e) ? (0, u.jsx)($, {
               componentsForTinaParser: D.componentsForTinaParser,
               root: n,
               url: e
             }) : null
-          }), [l]), s = (0, i.useMemo)((() => t.get("info")), [t]), c = (0, r.useTinaModuleFetchByIds)({
-            ids: [s]
-          });
-          return (0, i.useEffect)((() => {
-            if (c) {
-              let e;
-              const n = c?.[0];
-              e = n?.id ? {
-                event: "trackPageview",
-                link_url: window.location.href,
-                card_id: n.id,
-                card_name: n?.title?.toLowerCase()
-              } : {
-                event: "trackPageview"
-              }, a(e)
-            }
-          }), [c]), o
+          }), [a])
         },
         A = (0, r.withSearchbarErrorBoundary)((e => {
           let {
@@ -390,7 +373,7 @@
             a(!1), r(null)
           })), []), (0, u.jsxs)("div", {
             className: "e388538908afdf11891a",
-            children: [(0, u.jsx)(S, {}), (0, u.jsx)(m, {}), (0, u.jsx)(o.Z, {}), (0, u.jsx)(P, {
+            children: [(0, u.jsx)(h, {}), (0, u.jsx)(m, {}), (0, u.jsx)(o.Z, {}), (0, u.jsx)(P, {
               config: n
             })]
           })

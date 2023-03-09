@@ -1582,9 +1582,3 @@ ul {
     visibility: visible
   }
 }
-
-body {
-  background: #000;
-  color: #fff;
-  padding: 0 var(--padding-sides)
-}

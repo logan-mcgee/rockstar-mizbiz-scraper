@@ -262,12 +262,17 @@
             const e = window.getComputedStyle(u.current);
             d?.content && (g({
               content: d.content,
-              onClose: () => p({}),
+              onClose: x,
               rect: u.current.getBoundingClientRect(),
               width: parseInt(e.getPropertyValue("width")),
               height: parseInt(e.getPropertyValue("height")),
               className: d?.className,
               contentClassName: d?.contentClassName
+            }), track({
+              event: "trackPageview",
+              link_url: window.location.href,
+              card_id: a,
+              card_name: title?.toLowerCase()
             }), setTimeout((() => {
               u.current.style.opacity = 0
             }), 50), setTimeout((() => {
@@ -277,15 +282,27 @@
           (0, s.useEffect)((() => {
             c.get("info") === a && h()
           }), [c, a, h]);
-          const x = e => {
-            if ("linkout" !== r) return e.preventDefault(), e.stopPropagation(), a ? p({
-              info: a
-            }) : h(), null
-          };
+          const x = () => {
+              p({}), track({
+                event: "modal_close",
+                event_category: "modal",
+                event_action: "close",
+                event_label: title?.toLowerCase(),
+                card_id: a,
+                card_name: title?.toLowerCase()
+              }), track({
+                event: "trackPageview"
+              })
+            },
+            v = e => {
+              if ("linkout" !== r) return e.preventDefault(), e.stopPropagation(), a ? p({
+                info: a
+              }) : h(), null
+            };
           return (0, m.jsx)("div", {
             ref: u,
-            onClick: x,
-            onKeyUp: x,
+            onClick: v,
+            onKeyUp: v,
             className: l,
             "data-size": t,
             "data-type": r,
@@ -320,16 +337,16 @@
             modalProps: T = []
           } = e;
           const C = (0, o.useTinaComponents)(),
-            P = (0, s.useMemo)((() => ({
+            w = (0, s.useMemo)((() => ({
               ...C,
               HTMLElement: r.HTMLElement,
               ImageWithBadge: r.ImageWithBadge,
               Carousel: r.Carousel,
               GroupOfItems: l()
             })), [C]),
-            w = (0, s.useMemo)((() => (0, m.jsx)(c.Z, {
+            P = (0, s.useMemo)((() => (0, m.jsx)(c.Z, {
               type: v,
-              components: P,
+              components: w,
               payload: a,
               prod: t,
               images: n,
@@ -340,7 +357,7 @@
               animate: g,
               variants: h,
               children: f
-            })), [v, n, t, i, d, j, f, u, g, h, P, a]);
+            })), [v, n, t, i, d, j, f, u, g, h, w, a]);
           return (0, m.jsx)(p, {
             id: x,
             title: d,
@@ -349,7 +366,7 @@
             images: n,
             deckProps: b,
             modalProps: {
-              content: w,
+              content: P,
               ...T
             },
             className: "d44e1aa953059f5cf739",
@@ -668,8 +685,8 @@
         const [f, j] = (0, s.useState)(null), b = (0, n.useTinaPayload)();
         let T;
         T = y?.payload?.meta?.cdn ?? b?.meta?.prod ?? !1;
-        const [C, P] = (0, s.useState)(v?.size ?? u), {
-          parent: w,
+        const [C, w] = (0, s.useState)(v?.size ?? u), {
+          parent: P,
           main: z,
           thumbs: N
         } = p?.cardWithImageGallery?.gallery ?? {};
@@ -683,7 +700,7 @@
           } : e));
           j(e)
         }), [x]), (0, s.useEffect)((() => {
-          P(v?.size ?? u)
+          w(v?.size ?? u)
         }), [v?.size, u]), (0, c.jsx)(r.Z, {
           id: a,
           payload: {
@@ -708,7 +725,7 @@
             navigation: !0,
             thumbsVisible: !0,
             variants: {
-              parent: w,
+              parent: P,
               main: z,
               thumbs: N
             },

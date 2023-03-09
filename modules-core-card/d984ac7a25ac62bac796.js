@@ -1,7 +1,7 @@
 "use strict";
 (self.webpackChunk_rockstargames_modules_core_card = self.webpackChunk_rockstargames_modules_core_card || []).push([
-  [387], {
-    4387: (e, t, a) => {
+  [483], {
+    6483: (e, t, a) => {
       a.r(t), a.d(t, {
         Card: () => s,
         CardWithImageGallery: () => c,
@@ -557,8 +557,10 @@
             })
           }
         },
-        g = () => {
-          const e = [(0, l.translatedField)({
+        g = () => ({
+          label: "Events Deck",
+          component: "group",
+          fields: [(0, l.translatedField)({
             name: "title",
             label: "Title",
             component: "text"
@@ -567,20 +569,12 @@
             label: "Description",
             description: "Text that is displayed in between the Title and the row of cards.",
             component: "text"
-          })];
-          return {
-            label: "Events Deck",
-            name: "eventsDeck",
-            component: "group",
-            fields: [...e, (0, l.MediaQueryField)({
-              fields: e
-            })],
-            defaultItem: () => (0, l.defaultItemUnique)(),
-            itemProps: e => (0, l.itemPropsWithKey)(e, {
-              label: `${e?.[l.TINA_MEMOQ_PREFIX]?.title??"New"} [Events Deck]`
-            })
-          }
-        }
+          })],
+          defaultItem: () => (0, l.defaultItemUnique)(),
+          itemProps: e => (0, l.itemPropsWithKey)(e, {
+            label: `${e?.[l.TINA_MEMOQ_PREFIX]?.title??"New"} [Events Deck]`
+          })
+        })
     }
   }
 ]);

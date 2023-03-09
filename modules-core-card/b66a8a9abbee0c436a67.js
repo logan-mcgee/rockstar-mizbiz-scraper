@@ -29,10 +29,10 @@
           } = e;
           const c = (0, s.useRef)(null),
             u = i().map(a, "id"),
-            x = (0, r.useTinaModuleFetchByIds)({
+            g = (0, r.useTinaModuleFetchByIds)({
               ids: u
             }),
-            [g, h] = (0, s.useState)(o);
+            [x, h] = (0, s.useState)(o);
           (0, s.useEffect)((() => {
             if (!c.current) return;
             const e = () => {
@@ -43,7 +43,7 @@
               window.removeEventListener("resize", e)
             }
           }));
-          const v = (0, s.useMemo)((() => x ? x.reduce(((e, a) => {
+          const v = (0, s.useMemo)((() => g ? g.reduce(((e, a) => {
             if (a) {
               const {
                 id: s,
@@ -61,7 +61,7 @@
               }, s))
             }
             return e
-          }), []) : null), [x, t]);
+          }), []) : null), [g, t]);
           return (0, m.jsx)("div", {
             ref: c,
             children: (0, m.jsx)(r.Gen9CoreCarousel, {
@@ -69,7 +69,7 @@
               size: t,
               slideChildren: v,
               title: n,
-              customSlidesPerView: g
+              customSlidesPerView: x
             })
           })
         })))
@@ -193,8 +193,8 @@
           size: r,
           title: m,
           initial: u = "initial",
-          animate: x = "animate",
-          variants: g,
+          animate: g = "animate",
+          variants: x,
           type: h = null,
           context: v = null,
           textOverlayProps: y,
@@ -203,13 +203,13 @@
         } = e;
         const {
           tag: z,
-          expandedHasTag: T,
-          badges: b
+          expandedHasTag: b,
+          badges: T
         } = y;
         return n().set(t, "meta.prod", s), (0, o.jsxs)(c, {
           initial: u,
-          animate: x,
-          variants: g.expanded,
+          animate: g,
+          variants: x.expanded,
           transition: p.cardOpen,
           className: (0, i.classList)("b26588866b3f8cf68385", f),
           "data-type": h,
@@ -223,14 +223,14 @@
             children: j
           }), (0, o.jsxs)(c, {
             className: "c86efe7469f4c7bea32c",
-            variants: g.expandedContents,
+            variants: x.expandedContents,
             transition: p.afterCardOpen,
             children: [(0, o.jsxs)("div", {
               className: "d606f8b2c00b2c32599e",
               children: [(0, o.jsx)(d.Z, {
-                hasTag: T,
+                hasTag: b,
                 tag: z,
-                badges: b
+                badges: T
               }), (0, o.jsx)("h1", {
                 children: m
               })]
@@ -271,7 +271,7 @@
             expandedView: m,
             badges: p
           } = e;
-          const [u, x] = (0, s.useState)(null), g = (0, s.useMemo)((() => {
+          const [u, g] = (0, s.useState)(null), x = (0, s.useMemo)((() => {
             if (!a) return null;
             const e = "sm" !== o && l;
             return (0, i.jsx)(n.Z, {
@@ -285,8 +285,8 @@
             })
           }), [a, t, r, d, l, o, c, m, p]);
           return (0, s.useEffect)((() => {
-            x(g)
-          }), [g]), [u, x]
+            g(x)
+          }), [x]), [u, g]
         })({
           ...a,
           size: r,
@@ -329,35 +329,52 @@
             className: l,
             children: o
           } = e;
-          const [c, p] = (0, n.useSearchParams)(), u = (0, s.useRef)(null), [, x] = (0, i.useModal)(), g = (0, s.useCallback)((() => {
+          const [c, p] = (0, n.useSearchParams)(), u = (0, s.useRef)(null), [, g] = (0, i.useModal)(), x = (0, s.useCallback)((() => {
             if (!(u.current || r && "linkout" !== r)) return;
             const e = window.getComputedStyle(u.current);
-            d?.content && (x({
+            d?.content && (g({
               content: d.content,
-              onClose: () => p({}),
+              onClose: h,
               rect: u.current.getBoundingClientRect(),
               width: parseInt(e.getPropertyValue("width")),
               height: parseInt(e.getPropertyValue("height")),
               className: d?.className,
               contentClassName: d?.contentClassName
+            }), track({
+              event: "trackPageview",
+              link_url: window.location.href,
+              card_id: a,
+              card_name: title?.toLowerCase()
             }), setTimeout((() => {
               u.current.style.opacity = 0
             }), 50), setTimeout((() => {
               u.current.style.opacity = 1
             }), 1e3))
-          }), [u, r, d, x, p]);
+          }), [u, r, d, g, p]);
           (0, s.useEffect)((() => {
-            c.get("info") === a && g()
-          }), [c, a, g]);
-          const h = e => {
-            if ("linkout" !== r) return e.preventDefault(), e.stopPropagation(), a ? p({
-              info: a
-            }) : g(), null
-          };
+            c.get("info") === a && x()
+          }), [c, a, x]);
+          const h = () => {
+              p({}), track({
+                event: "modal_close",
+                event_category: "modal",
+                event_action: "close",
+                event_label: title?.toLowerCase(),
+                card_id: a,
+                card_name: title?.toLowerCase()
+              }), track({
+                event: "trackPageview"
+              })
+            },
+            v = e => {
+              if ("linkout" !== r) return e.preventDefault(), e.stopPropagation(), a ? p({
+                info: a
+              }) : x(), null
+            };
           return (0, m.jsx)("div", {
             ref: u,
-            onClick: h,
-            onKeyUp: h,
+            onClick: v,
+            onKeyUp: v,
             className: l,
             "data-size": t,
             "data-type": r,
@@ -374,8 +391,8 @@
             size: i,
             title: d,
             initial: u,
-            animate: x,
-            variants: g,
+            animate: g,
+            variants: x,
             id: h,
             expandedType: v,
             children: y,
@@ -389,19 +406,19 @@
               collapsedHasDescription: !1
             },
             deckProps: z = {},
-            modalProps: T = []
+            modalProps: b = []
           } = e;
-          const b = (0, o.useTinaComponents)(),
-            Z = (0, s.useMemo)((() => ({
-              ...b,
+          const T = (0, o.useTinaComponents)(),
+            w = (0, s.useMemo)((() => ({
+              ...T,
               HTMLElement: r.HTMLElement,
               ImageWithBadge: r.ImageWithBadge,
               Carousel: r.Carousel,
               GroupOfItems: l()
-            })), [b]),
+            })), [T]),
             C = (0, s.useMemo)((() => (0, m.jsx)(c.Z, {
               type: v,
-              components: Z,
+              components: w,
               payload: a,
               prod: t,
               images: n,
@@ -409,10 +426,10 @@
               title: d,
               textOverlayProps: j,
               initial: u,
-              animate: x,
-              variants: g,
+              animate: g,
+              variants: x,
               children: f
-            })), [v, n, t, i, d, j, f, u, x, g, Z, a]);
+            })), [v, n, t, i, d, j, f, u, g, x, w, a]);
           return (0, m.jsx)(p, {
             id: h,
             title: d,
@@ -422,7 +439,7 @@
             deckProps: z,
             modalProps: {
               content: C,
-              ...T
+              ...b
             },
             className: "d44e1aa953059f5cf739",
             children: y
@@ -431,7 +448,7 @@
     },
     507: (e, a, t) => {
       t.d(a, {
-        Z: () => g
+        Z: () => x
       });
       var s = t(822),
         n = t(9542),
@@ -453,7 +470,7 @@
         getVariant: m,
         variants: p,
         transitions: u
-      } = c, x = e => {
+      } = c, g = e => {
         let {
           image: a,
           i: t,
@@ -473,7 +490,7 @@
             "--z-index": t
           }
         })
-      }, g = e => {
+      }, x = e => {
         let {
           images: a = [],
           className: t = "",
@@ -481,7 +498,7 @@
           expandedView: r = !1,
           style: c = {}
         } = e;
-        const [g, h] = (0, s.useState)({
+        const [x, h] = (0, s.useState)({
           height: window.innerHeight,
           width: window.innerWidth
         });
@@ -495,18 +512,18 @@
           return window.addEventListener("resize", e), () => {
             window.removeEventListener("resize", e)
           }
-        }), [g]);
+        }), [x]);
         const v = (0, s.useMemo)((() => a?.length && 0 !== a.length ? a.map((e => (0, l.jsx)(o, {
           className: (0, n.classList)(d[e?.specialClass] ?? d.imageMask, d[e?.sizeClass], e.className),
           variants: m(e?.specialClass ?? "imageMask", r ? "expanded" : "collapsed"),
           initial: "initial",
           animate: "animate",
           transition: u.cardOpen,
-          children: (0, l.jsx)(x, {
+          children: (0, l.jsx)(g, {
             image: e,
             prod: i
           })
-        }, `${e.className}-${g.width}x${g.height}`))) : null), [a, g, r, i]);
+        }, `${e.className}-${x.width}x${x.height}`))) : null), [a, x, r, i]);
         return (0, l.jsx)(o, {
           className: (0, n.classList)(d.layeredImageFrame, a.length > 1 ? d.layered : d.flat, t),
           style: c,
@@ -640,8 +657,8 @@
           title: t,
           content: i,
           size: u = "md",
-          expandedType: x = "short",
-          textOverlayProps: g = {
+          expandedType: g = "short",
+          textOverlayProps: x = {
             hasTextOverlay: !1,
             tag: "",
             collapsedHasTag: !1,
@@ -656,14 +673,14 @@
         } = e;
         const j = (0, n.useTinaPayload)(),
           z = f?.payload?.meta?.cdn ?? j?.meta?.prod ?? !1,
-          [T, b] = (0, s.useState)(v?.size ?? u);
+          [b, T] = (0, s.useState)(v?.size ?? u);
         return (0, s.useEffect)((() => {
-          b(v?.size ?? u)
+          T(v?.size ?? u)
         }), [v?.size, u]), (0, m.jsx)(r.Z, {
           id: a,
           title: t,
-          size: T,
-          expandedType: x,
+          size: b,
+          expandedType: g,
           images: h,
           deckProps: v,
           prod: z,
@@ -672,7 +689,7 @@
             meta: {}
           },
           variants: p.plainCard,
-          textOverlayProps: g,
+          textOverlayProps: x,
           modalProps: {
             className: c.customModal,
             contentClassName: c.customModalContent
@@ -683,14 +700,14 @@
             expandedView: !0
           }),
           children: (0, m.jsx)(o.Z, {
-            expandedType: x,
+            expandedType: g,
             to: y,
             children: (0, m.jsx)("div", {
               className: c.content,
               children: (0, m.jsx)(d.Z, {
                 title: t,
-                size: T,
-                textOverlayProps: g,
+                size: b,
+                textOverlayProps: x,
                 children: (0, m.jsx)(l.Z, {
                   images: h,
                   prod: z
@@ -724,8 +741,8 @@
           title: t,
           content: i,
           size: u = "md",
-          expandedType: x = "gallery",
-          textOverlayProps: g = {
+          expandedType: g = "gallery",
+          textOverlayProps: x = {
             hasTextOverlay: !1,
             tag: "",
             collapsedHasTag: !1,
@@ -738,11 +755,11 @@
           tina: y = {}
         } = e;
         const [f, j] = (0, s.useState)(null), z = (0, n.useTinaPayload)();
-        let T;
-        T = y?.payload?.meta?.cdn ?? z?.meta?.prod ?? !1;
-        const [b, Z] = (0, s.useState)(v?.size ?? u), {
+        let b;
+        b = y?.payload?.meta?.cdn ?? z?.meta?.prod ?? !1;
+        const [T, w] = (0, s.useState)(v?.size ?? u), {
           parent: C,
-          main: w,
+          main: Z,
           thumbs: P
         } = p?.cardWithImageGallery?.gallery ?? {};
         return (0, s.useEffect)((() => {
@@ -750,12 +767,12 @@
             ...e,
             image: {
               ...e.image,
-              prod: T
+              prod: b
             }
           } : e));
           j(e)
         }), [h]), (0, s.useEffect)((() => {
-          Z(v?.size ?? u)
+          w(v?.size ?? u)
         }), [v?.size, u]), (0, c.jsx)(r.Z, {
           id: a,
           payload: {
@@ -763,13 +780,13 @@
             meta: {}
           },
           title: t,
-          size: b,
-          expandedType: x,
+          size: T,
+          expandedType: g,
           images: f,
           deckProps: v,
-          prod: T,
+          prod: b,
           variants: p.cardWithImageGallery,
-          textOverlayProps: g,
+          textOverlayProps: x,
           modalProps: {
             className: o.customModal,
             contentClassName: o.customModalContent
@@ -781,7 +798,7 @@
             thumbsVisible: !0,
             variants: {
               parent: C,
-              main: w,
+              main: Z,
               thumbs: P
             },
             transition: {
@@ -794,8 +811,8 @@
             className: o.content,
             children: (0, c.jsx)(d.Z, {
               title: t,
-              size: b,
-              textOverlayProps: g,
+              size: T,
+              textOverlayProps: x,
               children: (0, c.jsx)(l.Z, {
                 images: f,
                 title: t,
