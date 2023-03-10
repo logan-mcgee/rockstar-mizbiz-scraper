@@ -203,8 +203,8 @@
         } = e;
         const {
           tag: z,
-          expandedHasTag: b,
-          badges: T
+          expandedHasTag: T,
+          badges: b
         } = y;
         return n().set(t, "meta.prod", s), (0, o.jsxs)(c, {
           initial: u,
@@ -228,9 +228,9 @@
             children: [(0, o.jsxs)("div", {
               className: "d606f8b2c00b2c32599e",
               children: [(0, o.jsx)(d.Z, {
-                hasTag: b,
+                hasTag: T,
                 tag: z,
-                badges: T
+                badges: b
               }), (0, o.jsx)("h1", {
                 children: m
               })]
@@ -305,7 +305,7 @@
     },
     8819: (e, a, t) => {
       t.d(a, {
-        Z: () => u
+        Z: () => g
       });
       var s = t(822),
         n = t(6803),
@@ -314,83 +314,88 @@
         d = t(420),
         l = t.n(d),
         o = t(9542),
-        c = t(9525);
-      var m = t(3322);
-      const p = e => {
+        c = t(6711),
+        m = t(9525);
+      var p = t(3322);
+      const u = e => {
           let {
             id: a,
-            size: t = "md",
-            expandedType: r = null,
-            modalProps: d = {
+            position: t,
+            title: r,
+            size: d = "md",
+            expandedType: l = null,
+            modalProps: o = {
               content: null,
               className: "",
               contentClassName: ""
             },
-            className: l,
-            children: o
+            className: m,
+            children: u
           } = e;
-          const [c, p] = (0, n.useSearchParams)(), u = (0, s.useRef)(null), [, g] = (0, i.useModal)(), x = (0, s.useCallback)((() => {
-            if (!(u.current || r && "linkout" !== r)) return;
-            const e = window.getComputedStyle(u.current);
-            d?.content && (g({
-              content: d.content,
-              onClose: h,
-              rect: u.current.getBoundingClientRect(),
+          const [g, x] = (0, n.useSearchParams)(), h = (0, s.useRef)(null), [, v] = (0, i.useModal)(), {
+            track: y
+          } = (0, c.useGtmTrack)(), f = (0, s.useCallback)((() => {
+            if (!(h.current || l && "linkout" !== l)) return;
+            const e = window.getComputedStyle(h.current);
+            o?.content && (v({
+              content: o.content,
+              onClose: j,
+              rect: h.current.getBoundingClientRect(),
               width: parseInt(e.getPropertyValue("width")),
               height: parseInt(e.getPropertyValue("height")),
-              className: d?.className,
-              contentClassName: d?.contentClassName
-            }), track({
+              className: o?.className,
+              contentClassName: o?.contentClassName
+            }), y({
               event: "trackPageview",
               link_url: window.location.href,
               card_id: a,
-              card_name: title?.toLowerCase()
+              card_name: r?.toLowerCase()
             }), setTimeout((() => {
-              u.current.style.opacity = 0
+              h.current.style.opacity = 0
             }), 50), setTimeout((() => {
-              u.current.style.opacity = 1
+              h.current.style.opacity = 1
             }), 1e3))
-          }), [u, r, d, g, p]);
+          }), [h, l, o, v, x]);
           (0, s.useEffect)((() => {
-            c.get("info") === a && x()
-          }), [c, a, x]);
-          const h = () => {
-              p({}), track({
+            g.get("info") === a && f()
+          }), [g, a, f]);
+          const j = () => {
+              x({}), y({
                 event: "modal_close",
                 event_category: "modal",
                 event_action: "close",
-                event_label: title?.toLowerCase(),
+                event_label: r?.toLowerCase(),
                 card_id: a,
-                card_name: title?.toLowerCase()
-              }), track({
+                card_name: r?.toLowerCase()
+              }), y({
                 event: "trackPageview"
               })
             },
-            v = e => {
-              if ("linkout" !== r) return e.preventDefault(), e.stopPropagation(), a ? p({
+            z = e => {
+              if ("linkout" !== l) return e.preventDefault(), e.stopPropagation(), a ? x({
                 info: a
-              }) : x(), null
+              }) : f(), null
             };
-          return (0, m.jsx)("div", {
-            ref: u,
-            onClick: v,
-            onKeyUp: v,
-            className: l,
-            "data-size": t,
-            "data-type": r,
+          return (0, p.jsx)("div", {
+            ref: h,
+            onClick: z,
+            onKeyUp: z,
+            className: m,
+            "data-size": d,
+            "data-type": l,
             role: "button",
             tabIndex: 0,
-            children: o
+            children: u
           })
         },
-        u = e => {
+        g = e => {
           let {
             payload: a,
             prod: t,
             images: n,
             size: i,
             title: d,
-            initial: u,
+            initial: c,
             animate: g,
             variants: x,
             id: h,
@@ -406,17 +411,17 @@
               collapsedHasDescription: !1
             },
             deckProps: z = {},
-            modalProps: b = []
+            modalProps: T = []
           } = e;
-          const T = (0, o.useTinaComponents)(),
+          const b = (0, o.useTinaComponents)(),
             w = (0, s.useMemo)((() => ({
-              ...T,
+              ...b,
               HTMLElement: r.HTMLElement,
               ImageWithBadge: r.ImageWithBadge,
               Carousel: r.Carousel,
               GroupOfItems: l()
-            })), [T]),
-            C = (0, s.useMemo)((() => (0, m.jsx)(c.Z, {
+            })), [b]),
+            C = (0, s.useMemo)((() => (0, p.jsx)(m.Z, {
               type: v,
               components: w,
               payload: a,
@@ -425,12 +430,12 @@
               size: i,
               title: d,
               textOverlayProps: j,
-              initial: u,
+              initial: c,
               animate: g,
               variants: x,
               children: f
-            })), [v, n, t, i, d, j, f, u, g, x, w, a]);
-          return (0, m.jsx)(p, {
+            })), [v, n, t, i, d, j, f, c, g, x, w, a]);
+          return (0, p.jsx)(u, {
             id: h,
             title: d,
             size: i,
@@ -439,7 +444,7 @@
             deckProps: z,
             modalProps: {
               content: C,
-              ...b
+              ...T
             },
             className: "d44e1aa953059f5cf739",
             children: y
@@ -673,13 +678,13 @@
         } = e;
         const j = (0, n.useTinaPayload)(),
           z = f?.payload?.meta?.cdn ?? j?.meta?.prod ?? !1,
-          [b, T] = (0, s.useState)(v?.size ?? u);
+          [T, b] = (0, s.useState)(v?.size ?? u);
         return (0, s.useEffect)((() => {
-          T(v?.size ?? u)
+          b(v?.size ?? u)
         }), [v?.size, u]), (0, m.jsx)(r.Z, {
           id: a,
           title: t,
-          size: b,
+          size: T,
           expandedType: g,
           images: h,
           deckProps: v,
@@ -706,7 +711,7 @@
               className: c.content,
               children: (0, m.jsx)(d.Z, {
                 title: t,
-                size: b,
+                size: T,
                 textOverlayProps: x,
                 children: (0, m.jsx)(l.Z, {
                   images: h,
@@ -755,9 +760,9 @@
           tina: y = {}
         } = e;
         const [f, j] = (0, s.useState)(null), z = (0, n.useTinaPayload)();
-        let b;
-        b = y?.payload?.meta?.cdn ?? z?.meta?.prod ?? !1;
-        const [T, w] = (0, s.useState)(v?.size ?? u), {
+        let T;
+        T = y?.payload?.meta?.cdn ?? z?.meta?.prod ?? !1;
+        const [b, w] = (0, s.useState)(v?.size ?? u), {
           parent: C,
           main: Z,
           thumbs: P
@@ -767,7 +772,7 @@
             ...e,
             image: {
               ...e.image,
-              prod: b
+              prod: T
             }
           } : e));
           j(e)
@@ -780,11 +785,11 @@
             meta: {}
           },
           title: t,
-          size: T,
+          size: b,
           expandedType: g,
           images: f,
           deckProps: v,
-          prod: b,
+          prod: T,
           variants: p.cardWithImageGallery,
           textOverlayProps: x,
           modalProps: {
@@ -811,7 +816,7 @@
             className: o.content,
             children: (0, c.jsx)(d.Z, {
               title: t,
-              size: T,
+              size: b,
               textOverlayProps: x,
               children: (0, c.jsx)(l.Z, {
                 images: f,

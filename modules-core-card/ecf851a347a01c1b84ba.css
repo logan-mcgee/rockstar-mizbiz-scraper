@@ -14,7 +14,7 @@
 .cea2cd0b7399fcd5a0ce {
   display: block;
   height: 0;
-  margin: auto;
+  margin: 0;
   width: 86vw
 }
 
@@ -404,7 +404,6 @@
   border-radius: var(--border-radius-lg);
   margin: 0;
   max-height: 100%;
-  opacity: 0;
   pointer-events: none;
   transform-origin: top left;
   transition: all .5s ease-in-out;
@@ -417,7 +416,6 @@
 }
 
 .fde59cc0b211a74fd79f[data-modal-mode=true][data-up-next=true] {
-  opacity: .6;
   pointer-events: auto;
   z-index: 2
 }
