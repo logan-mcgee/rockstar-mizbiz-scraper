@@ -233,7 +233,7 @@
     },
     8819: (e, a, t) => {
       t.d(a, {
-        Z: () => u
+        Z: () => g
       });
       var s = t(822),
         n = t(6803),
@@ -242,83 +242,88 @@
         d = t(420),
         l = t.n(d),
         o = t(9542),
-        c = t(9525);
-      var m = t(3322);
-      const p = e => {
+        c = t(6711),
+        m = t(9525);
+      var p = t(3322);
+      const u = e => {
           let {
             id: a,
-            size: t = "md",
-            expandedType: r = null,
-            modalProps: d = {
+            position: t,
+            title: r,
+            size: d = "md",
+            expandedType: l = null,
+            modalProps: o = {
               content: null,
               className: "",
               contentClassName: ""
             },
-            className: l,
-            children: o
+            className: m,
+            children: u
           } = e;
-          const [c, p] = (0, n.useSearchParams)(), u = (0, s.useRef)(null), [, g] = (0, i.useModal)(), h = (0, s.useCallback)((() => {
-            if (!(u.current || r && "linkout" !== r)) return;
-            const e = window.getComputedStyle(u.current);
-            d?.content && (g({
-              content: d.content,
-              onClose: x,
-              rect: u.current.getBoundingClientRect(),
+          const [g, h] = (0, n.useSearchParams)(), x = (0, s.useRef)(null), [, v] = (0, i.useModal)(), {
+            track: y
+          } = (0, c.useGtmTrack)(), f = (0, s.useCallback)((() => {
+            if (!(x.current || l && "linkout" !== l)) return;
+            const e = window.getComputedStyle(x.current);
+            o?.content && (v({
+              content: o.content,
+              onClose: j,
+              rect: x.current.getBoundingClientRect(),
               width: parseInt(e.getPropertyValue("width")),
               height: parseInt(e.getPropertyValue("height")),
-              className: d?.className,
-              contentClassName: d?.contentClassName
-            }), track({
+              className: o?.className,
+              contentClassName: o?.contentClassName
+            }), y({
               event: "trackPageview",
               link_url: window.location.href,
               card_id: a,
-              card_name: title?.toLowerCase()
+              card_name: r?.toLowerCase()
             }), setTimeout((() => {
-              u.current.style.opacity = 0
+              x.current.style.opacity = 0
             }), 50), setTimeout((() => {
-              u.current.style.opacity = 1
+              x.current.style.opacity = 1
             }), 1e3))
-          }), [u, r, d, g, p]);
+          }), [x, l, o, v, h]);
           (0, s.useEffect)((() => {
-            c.get("info") === a && h()
-          }), [c, a, h]);
-          const x = () => {
-              p({}), track({
+            g.get("info") === a && f()
+          }), [g, a, f]);
+          const j = () => {
+              h({}), y({
                 event: "modal_close",
                 event_category: "modal",
                 event_action: "close",
-                event_label: title?.toLowerCase(),
+                event_label: r?.toLowerCase(),
                 card_id: a,
-                card_name: title?.toLowerCase()
-              }), track({
+                card_name: r?.toLowerCase()
+              }), y({
                 event: "trackPageview"
               })
             },
-            v = e => {
-              if ("linkout" !== r) return e.preventDefault(), e.stopPropagation(), a ? p({
+            b = e => {
+              if ("linkout" !== l) return e.preventDefault(), e.stopPropagation(), a ? h({
                 info: a
-              }) : h(), null
+              }) : f(), null
             };
-          return (0, m.jsx)("div", {
-            ref: u,
-            onClick: v,
-            onKeyUp: v,
-            className: l,
-            "data-size": t,
-            "data-type": r,
+          return (0, p.jsx)("div", {
+            ref: x,
+            onClick: b,
+            onKeyUp: b,
+            className: m,
+            "data-size": d,
+            "data-type": l,
             role: "button",
             tabIndex: 0,
-            children: o
+            children: u
           })
         },
-        u = e => {
+        g = e => {
           let {
             payload: a,
             prod: t,
             images: n,
             size: i,
             title: d,
-            initial: u,
+            initial: c,
             animate: g,
             variants: h,
             id: x,
@@ -344,7 +349,7 @@
               Carousel: r.Carousel,
               GroupOfItems: l()
             })), [C]),
-            P = (0, s.useMemo)((() => (0, m.jsx)(c.Z, {
+            P = (0, s.useMemo)((() => (0, p.jsx)(m.Z, {
               type: v,
               components: w,
               payload: a,
@@ -353,12 +358,12 @@
               size: i,
               title: d,
               textOverlayProps: j,
-              initial: u,
+              initial: c,
               animate: g,
               variants: h,
               children: f
-            })), [v, n, t, i, d, j, f, u, g, h, w, a]);
-          return (0, m.jsx)(p, {
+            })), [v, n, t, i, d, j, f, c, g, h, w, a]);
+          return (0, p.jsx)(u, {
             id: x,
             title: d,
             size: i,
