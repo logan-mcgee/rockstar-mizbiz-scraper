@@ -767,7 +767,7 @@
     9803: (e, n, a) => {
       "use strict";
       a.d(n, {
-        Z: () => h
+        Z: () => g
       });
       var t = a(822),
         i = a(6803),
@@ -802,13 +802,27 @@
         },
         f = e => {
           let {
+            to: n,
+            title: a,
+            id_hash: i,
+            query: s
+          } = e;
+          const [r, l] = (0, t.useState)(i === s), {
+            state: m
+          } = (0, c.MB)(), {
+            activeSection: v
+          } = m;
+          return (0, t.useEffect)((() => l(s !== v ? v === i : s === i)), [v]), (0, u.jsx)(d.A, {
+            to: n,
+            className: r ? o.activeSection : "",
+            children: a
+          }, n)
+        },
+        b = e => {
+          let {
             sections: n
           } = e;
-          const [a] = (0, i.useSearchParams)(), {
-            state: t
-          } = (0, c.MB)(), {
-            activeSection: s
-          } = t, r = (e, n) => n !== s ? s === e : n === e;
+          const [a] = (0, i.useSearchParams)();
           return (0, u.jsx)("div", {
             className: o.sections,
             children: n?.map((e => {
@@ -817,20 +831,21 @@
                 title: t,
                 to: i
               } = e;
-              return (0, u.jsx)(d.A, {
-                to: i,
-                className: r(n, a.get("section")) ? o.activeSection : "",
-                children: t
-              }, i)
+              return (0, u.jsx)(f, {
+                id_hash: n,
+                query: a,
+                title: t,
+                to: i
+              })
             }))
           })
         },
-        b = e => {
+        h = e => {
           let {
             currentId: n,
             group: a
           } = e;
-          const [i, s] = (0, t.useState)(null), [b, h] = (0, t.useState)(null), {
+          const [i, s] = (0, t.useState)(null), [f, h] = (0, t.useState)(null), {
             state: g
           } = (0, c.MB)(), {
             activeSection: p
@@ -866,7 +881,7 @@
                     className: [o.guideLink, n === i ? o.guideLinkCurrent : ""].join(" "),
                     to: r,
                     children: s
-                  }), a === b && t?.length ? (0, u.jsx)(f, {
+                  }), a === f && t?.length ? (0, u.jsx)(b, {
                     sections: t
                   }) : ""]
                 }, s)
@@ -874,7 +889,7 @@
             })]
           })
         },
-        h = e => {
+        g = e => {
           let {
             currentId: n
           } = e;
@@ -890,7 +905,7 @@
             style: {
               "--header-height": `${t}px`
             },
-            children: a?.map((e => (0, u.jsx)(b, {
+            children: a?.map((e => (0, u.jsx)(h, {
               currentId: n,
               group: e
             }, e.id_hash)))
@@ -1135,7 +1150,7 @@
           } = (0, i.useLocation)(), {
             freezeUserShouldSeeMore: N,
             userShouldSeeMore: j
-          } = (0, d.useScroll)(), [y, T] = (0, t.useState)(0), C = () => y > 1023;
+          } = (0, d.useScroll)(), [y, T] = (0, t.useState)(0), E = () => y > 1023;
           return (0, t.useEffect)((() => {
             o || N || v(j)
           }), [N, o, j]), (0, t.useEffect)((() => {
@@ -1162,10 +1177,10 @@
                   to: "../"
                 }), (0, f.jsx)("div", {
                   className: _.logoDivider
-                }), C() && (0, f.jsx)("div", {
+                }), E() && (0, f.jsx)("div", {
                   className: _.brandLogo
                 }), (0, f.jsx)(S, {})]
-              }), !C() && (0, f.jsx)("div", {
+              }), !E() && (0, f.jsx)("div", {
                 className: _.brandLogo,
                 "data-brand": a
               }), (0, f.jsx)(h, {}), (0, f.jsx)("div", {
@@ -1395,7 +1410,7 @@
         Hero: () => S,
         ImageTextGroup: () => _.Z,
         ImageTextGroupGroup: () => T.Z,
-        LinkoutSection: () => C.Z,
+        LinkoutSection: () => E.Z,
         Logo: () => w,
         SectionTitle: () => M,
         TinaWrapper: () => B.Z,
@@ -1664,14 +1679,14 @@
         };
       var _ = a(5178),
         T = a(3944),
-        C = a(7731);
-      const E = {},
+        E = a(7731);
+      const C = {},
         w = e => {
           let {
             brand: n
           } = e;
           return (0, i.jsx)("div", {
-            className: E[n]
+            className: C[n]
           })
         },
         M = () => (0, i.jsx)("h2", {
@@ -1789,29 +1804,26 @@
             children: n
           } = e;
           const [a, c] = (0, t.useState)(null), [o] = (0, i.useSearchParams)(), {
-            setActiveSection: u,
-            state: m
+            setActiveSection: u
           } = (0, r.MB)(), {
-            activeSection: v
-          } = m, {
-            pauseUserShouldSeeMore: f
-          } = (0, s.useScroll)(), b = (0, t.useCallback)((e => {
-            if (e !== o.get("section")) return void(e !== v && u(e));
+            pauseUserShouldSeeMore: m
+          } = (0, s.useScroll)(), v = (0, t.useCallback)((e => {
+            if (e !== o.get("section")) return void u(e);
             const n = document.getElementsByName(o.get("section"))?.[0];
-            n && (f(), u(o.get("section")), n.scrollIntoView({
+            n && (m(), u(o.get("section")), n.scrollIntoView({
               behavior: "smooth"
             }))
           }), [o.get("section"), a]);
           (0, t.useEffect)((() => {
-            o.get("section") && b(o.get("section"))
+            o.get("section") && v(o.get("section"))
           }), [o.get("section")]);
-          const h = (0, t.useMemo)((() => ({
-            announcePresence: b,
+          const f = (0, t.useMemo)((() => ({
+            announcePresence: v,
             section: a,
             setSection: c
-          })), [b, a, c]);
+          })), [v, a, c]);
           return (0, l.jsx)(d.Provider, {
-            value: h,
+            value: f,
             children: n
           })
         }
