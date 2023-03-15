@@ -9,8 +9,8 @@
         t = a(8008),
         d = a(6711),
         l = a(1338),
-        o = a(8820),
-        r = a(8976),
+        r = a(8820),
+        o = a(8976),
         s = a(9929);
       const c = {
         mobileNav: "e3487da3b1b0786f3445",
@@ -28,14 +28,14 @@
               headerHeight: t,
               mobileNavOpen: d
             },
-            setMobileNavOpen: o
+            setMobileNavOpen: r
           } = (0, l.MB)();
         return (0, i.useEffect)((() => {
           const e = e => {
             let {
               keyCode: n
             } = e;
-            27 === n && o(!1)
+            27 === n && r(!1)
           };
           return document.addEventListener("keydown", e, !1), () => {
             document.removeEventListener("keydown", e, !1)
@@ -51,7 +51,7 @@
               title: i,
               to: t
             } = e;
-            return (0, u.jsx)(r.A, {
+            return (0, u.jsx)(o.A, {
               end: a,
               to: t,
               target: t.startsWith("http") ? "_blank" : "_self",
@@ -86,11 +86,11 @@
             variables: {
               ids: ["6a84"]
             }
-          }), [o, r] = (0, t.useModal)();
+          }), [r, o] = (0, t.useModal)();
           return (0, i.useEffect)((() => {
-            document.documentElement.style.setProperty("--body-overflow", o ? "hidden" : "auto")
-          }), [o]), (0, i.useEffect)((() => {
-            n.get("info") || r(null)
+            document.documentElement.style.setProperty("--body-overflow", r ? "hidden" : "auto")
+          }), [r]), (0, i.useEffect)((() => {
+            n.get("info") || o(null)
           }), [n]), (0, i.useEffect)((() => {
             if ("order" !== n.get("info") || !l) return;
             const i = l?.tinaModulesInfo?.[0].tina,
@@ -104,7 +104,7 @@
                 left: window.innerWidth / 2,
                 top: window.innerHeight / 2
               };
-            r({
+            o({
               content: t,
               contentStyle: {
                 "--modal-content-max-width": "90%",
@@ -119,6 +119,10 @@
                   event_label: "buy now"
                 })
               }
+            }), e({
+              event: "trackPageview",
+              card_id: "order",
+              card_name: "order"
             })
           }), [l, n.get("info")]), (0, i.useEffect)((() => {
             if ("trailer" !== n.get("info")) return;
@@ -129,7 +133,7 @@
                 left: window.innerWidth / 2,
                 top: window.innerHeight / 2
               };
-            r({
+            o({
               content: i,
               rect: t,
               contentStyle: {
@@ -143,8 +147,12 @@
                   event_label: "trailer"
                 })
               }
+            }), e({
+              event: "trackPageview",
+              card_id: "trailer",
+              card_name: "trailer"
             })
-          }), [n.get("info")]), o
+          }), [n.get("info")]), r
         };
       var y = a(8865),
         w = a.n(y),
@@ -167,20 +175,20 @@
       var V = a(9803),
         E = a(7311),
         T = a.n(E);
-      const j = {
+      const _ = {
           guideNavMobile: "f2d01cf17573bd802e0b",
           guideNavMobileContent: "ced39cc8b3a309d5ed39",
           sections: "ab0c2836b0df20857390",
           activeSection: "d7c364fa12fcf945179b",
           sectionsOpen: "b16827795aaa9023a0ca"
         },
-        _ = e => {
+        j = e => {
           let {
             currentId: n
           } = e;
           const a = (0, l.yv)(),
             [t, d] = (0, i.useState)(!1),
-            [o, s] = (0, i.useState)(null),
+            [r, s] = (0, i.useState)(null),
             [c, m] = (0, i.useState)(null),
             [v] = (0, k.useSearchParams)();
           return (0, i.useEffect)((() => {
@@ -188,23 +196,23 @@
               n === e && s(i?.children ?? null)
             }))
           }), [n, a, v.get("section")]), (0, i.useEffect)((() => {
-            m(null), T().cloneDeepWith(o, ((e, n, a) => {
+            m(null), T().cloneDeepWith(r, ((e, n, a) => {
               "id_hash" === n && v.get("section") === e && m(a)
             }))
-          }), [o, v.get("section")]), o ? (0, u.jsx)("div", {
-            className: j.guideNavMobile,
+          }), [r, v.get("section")]), r ? (0, u.jsx)("div", {
+            className: _.guideNavMobile,
             children: (0, u.jsxs)("div", {
-              className: j.guideNavMobileContent,
+              className: _.guideNavMobileContent,
               children: [(0, u.jsx)("div", {
-                className: [j.sections, t ? j.sectionsOpen : ""].join(" "),
-                children: o.map((e => {
+                className: [_.sections, t ? _.sectionsOpen : ""].join(" "),
+                children: r.map((e => {
                   let {
                     id_hash: n,
                     title: a,
                     to: i
                   } = e;
-                  return (0, u.jsx)(r.A, {
-                    className: n === c?.id_hash ? j.activeSection : "",
+                  return (0, u.jsx)(o.A, {
+                    className: n === c?.id_hash ? _.activeSection : "",
                     to: i,
                     onClick: () => d(!1),
                     children: a
@@ -219,7 +227,7 @@
           }) : null
         };
       var D = a(2267);
-      const B = (0, r.withSimpleErrorBoundary)((() => {
+      const B = (0, o.withSimpleErrorBoundary)((() => {
         const {
           setBrand: e,
           state: n
@@ -229,7 +237,7 @@
         }), []);
         const {
           guideId: a
-        } = (0, k.useParams)(), t = (0, r.useTinaModuleFetchByIds)({
+        } = (0, k.useParams)(), t = (0, o.useTinaModuleFetchByIds)({
           ids: [a],
           setTitleDataPath: "tinaModulesInfo[0].title_doc"
         })?.[0] ?? {};
@@ -247,14 +255,14 @@
             }), e ? (0, u.jsx)(f.TinaParser, {
               components: D.componentsForTinaParserGuide,
               tina: e
-            }) : "", (0, u.jsx)(_, {
+            }) : "", (0, u.jsx)(j, {
               currentId: a
             })]
           })
         }), [JSON.stringify(t)])
       }));
       var M = a(5038);
-      const $ = (0, r.withSimpleErrorBoundary)((e => {
+      const $ = (0, o.withSimpleErrorBoundary)((e => {
           let {
             componentsForTinaParser: n,
             root: a,
@@ -268,18 +276,18 @@
             },
             setTitleDataPath: "metaUrlInfo.title"
           }), {
-            setBrand: o
-          } = (0, l.MB)(), [r, s] = (0, i.useState)(null);
+            setBrand: r
+          } = (0, l.MB)(), [o, s] = (0, i.useState)(null);
           return (0, i.useEffect)((() => {
             const e = d?.metaUrlInfo?.tina ?? null,
               n = e?.payload?.meta?.brand ?? null;
-            n && o(n), e && s(e)
-          }), [d]), r ? (0, u.jsx)("div", {
+            n && r(n), e && s(e)
+          }), [d]), o ? (0, u.jsx)("div", {
             "data-root": a,
             className: "f45d47478d161a2e784c",
             children: (0, u.jsx)(f.TinaParser, {
               components: n,
-              tina: r
+              tina: o
             })
           }) : null
         })),
@@ -300,7 +308,7 @@
             }) : null
           }), [a])
         },
-        A = (0, r.withSearchbarErrorBoundary)((e => {
+        A = (0, o.withSearchbarErrorBoundary)((e => {
           let {
             routeRoot: n
           } = e;
@@ -332,7 +340,7 @@
             })
           }, {
             path: "*",
-            element: (0, u.jsx)(r.Wasted, {
+            element: (0, u.jsx)(o.Wasted, {
               error: {
                 code: window?.env?.responseStatusCode ?? 398
               }
@@ -367,13 +375,13 @@
           const {
             setBrand: t
           } = (0, l.MB)(), {
-            setCharactersNeeded: r
+            setCharactersNeeded: o
           } = (0, d.useRockstarUser)();
-          return (0, i.useLayoutEffect)((() => (t("gtao"), a(!0), r("gtao"), () => {
-            a(!1), r(null)
+          return (0, i.useLayoutEffect)((() => (t("gtao"), a(!0), o("gtao"), () => {
+            a(!1), o(null)
           })), []), (0, u.jsxs)("div", {
             className: "e388538908afdf11891a",
-            children: [(0, u.jsx)(h, {}), (0, u.jsx)(m, {}), (0, u.jsx)(o.Z, {}), (0, u.jsx)(P, {
+            children: [(0, u.jsx)(h, {}), (0, u.jsx)(m, {}), (0, u.jsx)(r.Z, {}), (0, u.jsx)(P, {
               config: n
             })]
           })
@@ -867,14 +875,14 @@
         e.hasOwnProperty("loc") && (a.loc = e.loc);
         var d = i[n] || new Set,
           l = new Set,
-          o = new Set;
+          r = new Set;
         for (d.forEach((function(e) {
-            o.add(e)
-          })); o.size > 0;) {
-          var r = o;
-          o = new Set, r.forEach((function(e) {
+            r.add(e)
+          })); r.size > 0;) {
+          var o = r;
+          r = new Set, o.forEach((function(e) {
             l.has(e) || (l.add(e), (i[e] || new Set).forEach((function(e) {
-              o.add(e)
+              r.add(e)
             })))
           }))
         }
@@ -1077,14 +1085,14 @@
         e.hasOwnProperty("loc") && (a.loc = e.loc);
         var d = i[n] || new Set,
           l = new Set,
-          o = new Set;
+          r = new Set;
         for (d.forEach((function(e) {
-            o.add(e)
-          })); o.size > 0;) {
-          var r = o;
-          o = new Set, r.forEach((function(e) {
+            r.add(e)
+          })); r.size > 0;) {
+          var o = r;
+          r = new Set, o.forEach((function(e) {
             l.has(e) || (l.add(e), (i[e] || new Set).forEach((function(e) {
-              o.add(e)
+              r.add(e)
             })))
           }))
         }
@@ -1349,14 +1357,14 @@
         e.hasOwnProperty("loc") && (a.loc = e.loc);
         var d = i[n] || new Set,
           l = new Set,
-          o = new Set;
+          r = new Set;
         for (d.forEach((function(e) {
-            o.add(e)
-          })); o.size > 0;) {
-          var r = o;
-          o = new Set, r.forEach((function(e) {
+            r.add(e)
+          })); r.size > 0;) {
+          var o = r;
+          r = new Set, o.forEach((function(e) {
             l.has(e) || (l.add(e), (i[e] || new Set).forEach((function(e) {
-              o.add(e)
+              r.add(e)
             })))
           }))
         }

@@ -59,6 +59,12 @@
   color: var(--body-color, #2d2d2d)
 }
 
+.e91e50dd7d33343905a6 .c7a8d988e09ad045d3d0 .f7331d2ad1a9447bf57e {
+  margin: 0 auto;
+  max-width: calc(var(--max-width-dynamic, var(--max-width-static)) + var(--padding-dynamic, 0px) * 2) !important;
+  width: 100%
+}
+
 .e91e50dd7d33343905a6 .c7a8d988e09ad045d3d0 figure>div {
   --padding-sides: 0px
 }

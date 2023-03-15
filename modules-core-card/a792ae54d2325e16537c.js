@@ -334,12 +334,14 @@
           } = e;
           const [g, x] = (0, n.useSearchParams)(), h = (0, s.useRef)(null), [, v] = (0, i.useModal)(), {
             track: y
-          } = (0, c.useGtmTrack)(), f = (0, s.useCallback)((() => {
+          } = (0, c.useGtmTrack)(), [f, j] = (0, s.useState)(!0);
+          (0, s.useEffect)((() => j(!1)), []);
+          const z = (0, s.useCallback)((() => {
             if (!(h.current || l && "linkout" !== l)) return;
             const e = window.getComputedStyle(h.current);
-            o?.content && (v({
+            o?.content && (j(!0), v({
               content: o.content,
-              onClose: j,
+              onClose: T,
               rect: h.current.getBoundingClientRect(),
               width: parseInt(e.getPropertyValue("width")),
               height: parseInt(e.getPropertyValue("height")),
@@ -357,10 +359,10 @@
             }), 1e3))
           }), [h, l, o, v, x]);
           (0, s.useEffect)((() => {
-            g.get("info") === a && f()
-          }), [g, a, f]);
-          const j = () => {
-              x({}), y({
+            g.get("info") !== a || f || z()
+          }), [g, a, z, f]);
+          const T = () => {
+              j(!1), x({}), y({
                 event: "modal_close",
                 event_category: "modal",
                 event_action: "close",
@@ -371,15 +373,15 @@
                 event: "trackPageview"
               })
             },
-            z = e => {
+            b = e => {
               if ("linkout" !== l) return e.preventDefault(), e.stopPropagation(), a ? x({
                 info: a
-              }) : f(), null
+              }) : z(), null
             };
           return (0, p.jsx)("div", {
             ref: h,
-            onClick: z,
-            onKeyUp: z,
+            onClick: b,
+            onKeyUp: b,
             className: m,
             "data-size": d,
             "data-type": l,

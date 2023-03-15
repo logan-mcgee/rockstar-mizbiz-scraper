@@ -12,12 +12,12 @@
       });
       var l = a(3616),
         o = a(559);
-      const i = e => {
+      const n = e => {
           let {
             label: t = "Image",
             type: a = null
           } = e;
-          const i = e => {
+          const n = e => {
               let {
                 name: t,
                 label: a = t
@@ -37,11 +37,11 @@
                 }]
               }
             },
-            n = [(0, l.NameField)(), (0, l.translatedField)({
+            i = [(0, l.NameField)(), (0, l.translatedField)({
               name: "alt",
               label: "Alt Text",
               component: "text"
-            }), i({
+            }), n({
               name: "sources.en_us",
               label: "Upload global images"
             }), {
@@ -49,13 +49,13 @@
               label: "Upload local images",
               description: "The site will default to the global value, but use a local one on local sites if it exists here.",
               component: "group",
-              fields: ["de_de", "fr_fr", "it_it", "ja_jp", "ru_ru", "es_es", "es_mx", "pt_br", "ko_kr", "zh_tw", "pl_pl", "zh_hans"].map((e => i({
+              fields: ["de_de", "fr_fr", "it_it", "ja_jp", "ru_ru", "es_es", "es_mx", "pt_br", "ko_kr", "zh_tw", "pl_pl", "zh_hans"].map((e => n({
                 name: e
               })))
             }, (0, l.ClassNamesField)({
               filter: "image"
             })];
-          return "logo" === a && n.push({
+          return "logo" === a && i.push({
             name: "sizeClass",
             label: "Logo Size",
             component: "select",
@@ -70,7 +70,7 @@
             name: "image",
             label: t,
             component: "group",
-            fields: n,
+            fields: i,
             defaultItem: () => (0, l.defaultItemUnique)({
               specialClass: a,
               sizeClass: ""
@@ -80,7 +80,7 @@
             })
           }
         },
-        n = [{
+        i = [{
           value: "",
           label: "-- Select a Size --"
         }, {
@@ -113,18 +113,18 @@
             label: "Card Size",
             description: "Which kind of card should be displayed? (Deck settings may override this configuration.)",
             component: "select",
-            options: n
+            options: i
           }, {
             name: "images",
             label: "Images",
             description: "Add one or more images to layer over one another in this card.",
             component: "blocks",
-            templates: [i({
+            templates: [n({
               label: "Image"
-            }), i({
+            }), n({
               label: "Overlayed Foreground Image",
               type: "foreground"
-            }), i({
+            }), n({
               label: "Overlayed Logo",
               type: "logo"
             })]
@@ -233,7 +233,7 @@
             label: "Card Size",
             description: "Which kind of card should be displayed? (Deck settings may override this configuration.)",
             component: "select",
-            options: n
+            options: i
           }, {
             name: "images",
             label: "Images",
@@ -298,9 +298,7 @@
         },
         p = () => {
           const e = {
-            ...(0, d.ImageWithBadge)({
-              label: "Image"
-            })
+            ...(0, d.ImageWithBadge)({})
           };
           return e.fields.push({
             name: "objectPosition",
@@ -315,27 +313,27 @@
           } = e;
           return {
             label: "GTAO Event Info",
-            fields: [(0, l.translatedField)({
+            fields: [{
+              name: "images",
+              label: "Image & Badge Configuration",
+              description: "Displays in the collapsed card & on the left side of the expanded card.",
+              component: "blocks",
+              templates: [p()]
+            }, (0, l.translatedField)({
               name: "title",
               label: "Title",
               description: "This gets displayed in the text overlay (when collapsed) as well as at the top of the main content (when expanded). On Newswire it will display in between the image and text content.",
               component: "text"
             }), {
-              name: "size",
-              label: "Card Size",
-              description: "Which kind of card should be displayed? (Deck settings may override this configuration.)",
-              component: "select",
-              options: n
-            }, {
-              name: "images",
-              label: "Images",
-              description: "Add one or more images to layer over one another in this card.",
+              label: "Content",
+              name: l.TINA_PARSER_KEY,
               component: "blocks",
-              templates: [p()]
+              description: "If clicking the card triggers a modal, select content to go inside the modal.",
+              templates: t
             }, {
               name: "textOverlayProps",
-              label: "Text Overlay",
-              description: "Shown on top of the image when the card is collapsed. Some content is also used when card is expanded.",
+              label: "Misc. Configuration Options",
+              description: "Text overlay, and animation options.",
               component: "group",
               fields: [{
                 name: "hasTextOverlay",
@@ -347,96 +345,7 @@
                 label: "Has Hover Animation?",
                 description: 'If selected and "Text Overlay" is checked, the Title and the content below will be hidden by default on desktop (in collapsed view) and revealed on hover. It is always displayed on mobile.',
                 component: "toggle"
-              }, {
-                name: "badges",
-                label: "Badges",
-                description: "These badges are displayed above the Title in both the collapsed (when Primary) and expanded views.",
-                component: "blocks",
-                templates: [{
-                  name: "badge",
-                  label: "Badge",
-                  component: "group",
-                  fields: [(0, l.translatedField)({
-                    name: "text",
-                    label: "Badge Text",
-                    component: "text"
-                  }), {
-                    name: "style.--badge-color",
-                    label: "Text Color",
-                    component: "color"
-                  }, {
-                    name: "style.--badge-background-color",
-                    label: "Background Color",
-                    component: "color"
-                  }, {
-                    name: "isPrimary",
-                    label: "Is Primary Badge?",
-                    description: "If enabled, this badge will display on the collapsed card (when Text Overlay is enabled).",
-                    component: "toggle"
-                  }],
-                  defaultItem: () => (0, l.defaultItemUnique)({
-                    style: {
-                      "--badge-color": "#000000",
-                      "--badge-background-color": "#ffffff"
-                    }
-                  }),
-                  itemProps: e => (0, l.itemPropsWithKey)(e, {
-                    label: `${e?.[l.TINA_MEMOQ_PREFIX]?.text??"New"} [Badge]`
-                  })
-                }]
-              }, {
-                name: "collapsedHasTag",
-                label: "Collapsed Has (Primary) Badge(s)?",
-                description: 'If selected, display Badge(s) above the Title when the card is collapsed, ONLY if they have been marked as "Primary".',
-                component: "toggle"
-              }, {
-                name: "expandedHasTag",
-                label: "Expanded Has (All) Badge(s)?",
-                description: "If selected, display Badge(s) above the Title when the card is collapsed.",
-                component: "toggle"
-              }, (0, l.translatedField)({
-                name: "description",
-                label: "Description",
-                description: "If enabled, this is displayed below the Title when the card is collapsed. NOTE: The description is ALWAYS disabled for Small cards.",
-                component: "text"
-              }), {
-                name: "collapsedHasDescription",
-                label: "Collapsed Has Description?",
-                description: "If selected, display description below the Title when the card is collapsed.",
-                component: "toggle"
               }]
-            }, {
-              name: "expandedType",
-              label: "Click Action",
-              description: "When this card is clicked, what should happen? (Deck settings may override this configuration.)",
-              component: "select",
-              options: [{
-                value: "",
-                label: "-- Select a Type --"
-              }, {
-                value: "short",
-                label: "Trigger Modal, Side-by-Side (No Scroll)"
-              }, {
-                value: "gallery",
-                label: "Trigger Modal, Side-by-Side w/ Image Gallery (No Scroll)"
-              }, {
-                value: "long",
-                label: "Trigger Modal, Stacked (Scrolls)"
-              }, {
-                value: "linkout",
-                label: "Link to a New Page"
-              }]
-            }, {
-              label: "Content",
-              name: l.TINA_PARSER_KEY,
-              component: "blocks",
-              description: "If clicking the card triggers a modal, select content to go inside the modal.",
-              templates: t
-            }, {
-              name: "to",
-              label: "Link",
-              description: "If clicking the card links to a new page, what link does it go to?",
-              component: "text"
             }, {
               name: "startDate",
               label: "Start Date",
@@ -453,7 +362,10 @@
               timeFormat: "hh:mm:ss"
             }],
             defaultItem: () => (0, l.defaultItemUnique)({
-              textOverlayProps: (0, l.defaultItemUnique)()
+              textOverlayProps: (0, l.defaultItemUnique)({
+                hasTextOverlay: !0,
+                hasHoverAnimation: !0
+              })
             }),
             itemProps: e => (0, l.itemPropsWithKey)(e, {
               label: `${e?.[l.TINA_MEMOQ_PREFIX]?.title??"New"} [Event Info]`
@@ -473,7 +385,7 @@
             label: "Card Size",
             description: "Which kind of card should be displayed? (Deck settings may override this configuration.)",
             component: "select",
-            options: n
+            options: i
           }, (0, l.translatedField)({
             name: "badgeText",
             label: "Badge Text",
@@ -528,7 +440,7 @@
             label: "Card Size",
             description: "Which kind of cards should be displayed? (If blank, falls back to each card's configuration.)",
             component: "select",
-            options: n
+            options: i
           }, {
             name: "expandedType",
             label: "Expanded Type",
@@ -559,15 +471,11 @@
         },
         g = () => ({
           label: "Events Deck",
+          name: "eventsDeck",
           component: "group",
           fields: [(0, l.translatedField)({
             name: "title",
             label: "Title",
-            component: "text"
-          }), (0, l.translatedField)({
-            name: "description",
-            label: "Description",
-            description: "Text that is displayed in between the Title and the row of cards.",
             component: "text"
           })],
           defaultItem: () => (0, l.defaultItemUnique)(),

@@ -1,6 +1,6 @@
 "use strict";
 (self.webpackChunk_rockstargames_modules_core_card = self.webpackChunk_rockstargames_modules_core_card || []).push([
-  [912], {
+  [585], {
     7454: (e, a, t) => {
       t.d(a, {
         Z: () => u
@@ -125,28 +125,28 @@
           variants: h,
           type: x = null,
           context: v = null,
-          textOverlayProps: y,
-          className: f,
+          textOverlayProps: f,
+          className: y,
           children: j
         } = e;
         const {
           tag: b,
-          expandedHasTag: T,
-          badges: C
-        } = y;
+          expandedHasTag: C,
+          badges: T
+        } = f;
         return n().set(t, "meta.prod", s), (0, o.jsxs)(c, {
           initial: u,
           animate: g,
           variants: h.expanded,
           transition: p.cardOpen,
-          className: (0, i.classList)("b26588866b3f8cf68385", f),
+          className: (0, i.classList)("b26588866b3f8cf68385", y),
           "data-type": x,
           "data-size": r,
           "data-context": v,
           children: [(0, o.jsx)(l.Z, {
             size: r,
             title: m,
-            textOverlayProps: y,
+            textOverlayProps: f,
             expandedView: !0,
             children: j
           }), (0, o.jsxs)(c, {
@@ -156,9 +156,9 @@
             children: [(0, o.jsxs)("div", {
               className: "d606f8b2c00b2c32599e",
               children: [(0, o.jsx)(d.Z, {
-                hasTag: T,
+                hasTag: C,
                 tag: b,
-                badges: C
+                badges: T
               }), (0, o.jsx)("h1", {
                 children: m
               })]
@@ -261,19 +261,21 @@
             children: u
           } = e;
           const [g, h] = (0, n.useSearchParams)(), x = (0, s.useRef)(null), [, v] = (0, i.useModal)(), {
-            track: y
-          } = (0, c.useGtmTrack)(), f = (0, s.useCallback)((() => {
+            track: f
+          } = (0, c.useGtmTrack)(), [y, j] = (0, s.useState)(!0);
+          (0, s.useEffect)((() => j(!1)), []);
+          const b = (0, s.useCallback)((() => {
             if (!(x.current || l && "linkout" !== l)) return;
             const e = window.getComputedStyle(x.current);
-            o?.content && (v({
+            o?.content && (j(!0), v({
               content: o.content,
-              onClose: j,
+              onClose: C,
               rect: x.current.getBoundingClientRect(),
               width: parseInt(e.getPropertyValue("width")),
               height: parseInt(e.getPropertyValue("height")),
               className: o?.className,
               contentClassName: o?.contentClassName
-            }), y({
+            }), f({
               event: "trackPageview",
               link_url: window.location.href,
               card_id: a,
@@ -285,29 +287,29 @@
             }), 1e3))
           }), [x, l, o, v, h]);
           (0, s.useEffect)((() => {
-            g.get("info") === a && f()
-          }), [g, a, f]);
-          const j = () => {
-              h({}), y({
+            g.get("info") !== a || y || b()
+          }), [g, a, b, y]);
+          const C = () => {
+              j(!1), h({}), f({
                 event: "modal_close",
                 event_category: "modal",
                 event_action: "close",
                 event_label: r?.toLowerCase(),
                 card_id: a,
                 card_name: r?.toLowerCase()
-              }), y({
+              }), f({
                 event: "trackPageview"
               })
             },
-            b = e => {
+            T = e => {
               if ("linkout" !== l) return e.preventDefault(), e.stopPropagation(), a ? h({
                 info: a
-              }) : f(), null
+              }) : b(), null
             };
           return (0, p.jsx)("div", {
             ref: x,
-            onClick: b,
-            onKeyUp: b,
+            onClick: T,
+            onKeyUp: T,
             className: m,
             "data-size": d,
             "data-type": l,
@@ -328,8 +330,8 @@
             variants: h,
             id: x,
             expandedType: v,
-            children: y,
-            expandedCardContents: f,
+            children: f,
+            expandedCardContents: y,
             textOverlayProps: j = {
               hasTextOverlay: !1,
               tag: "",
@@ -339,16 +341,16 @@
               collapsedHasDescription: !1
             },
             deckProps: b = {},
-            modalProps: T = []
+            modalProps: C = []
           } = e;
-          const C = (0, o.useTinaComponents)(),
+          const T = (0, o.useTinaComponents)(),
             w = (0, s.useMemo)((() => ({
-              ...C,
+              ...T,
               HTMLElement: r.HTMLElement,
               ImageWithBadge: r.ImageWithBadge,
               Carousel: r.Carousel,
               GroupOfItems: l()
-            })), [C]),
+            })), [T]),
             P = (0, s.useMemo)((() => (0, p.jsx)(m.Z, {
               type: v,
               components: w,
@@ -361,8 +363,8 @@
               initial: c,
               animate: g,
               variants: h,
-              children: f
-            })), [v, n, t, i, d, j, f, c, g, h, w, a]);
+              children: y
+            })), [v, n, t, i, d, j, y, c, g, h, w, a]);
           return (0, p.jsx)(u, {
             id: x,
             title: d,
@@ -372,10 +374,10 @@
             deckProps: b,
             modalProps: {
               content: P,
-              ...T
+              ...C
             },
             className: "d44e1aa953059f5cf739",
-            children: y
+            children: f
           })
         }
     },
@@ -601,18 +603,18 @@
           },
           images: x = [],
           deckProps: v = {},
-          to: y = null,
-          tina: f = {}
+          to: f = null,
+          tina: y = {}
         } = e;
         const j = (0, n.useTinaPayload)(),
-          b = f?.payload?.meta?.cdn ?? j?.meta?.prod ?? !1,
-          [T, C] = (0, s.useState)(v?.size ?? u);
+          b = y?.payload?.meta?.cdn ?? j?.meta?.prod ?? !1,
+          [C, T] = (0, s.useState)(v?.size ?? u);
         return (0, s.useEffect)((() => {
-          C(v?.size ?? u)
+          T(v?.size ?? u)
         }), [v?.size, u]), (0, m.jsx)(r.Z, {
           id: a,
           title: t,
-          size: T,
+          size: C,
           expandedType: g,
           images: x,
           deckProps: v,
@@ -634,12 +636,12 @@
           }),
           children: (0, m.jsx)(o.Z, {
             expandedType: g,
-            to: y,
+            to: f,
             children: (0, m.jsx)("div", {
               className: c.content,
               children: (0, m.jsx)(d.Z, {
                 title: t,
-                size: T,
+                size: C,
                 textOverlayProps: h,
                 children: (0, m.jsx)(l.Z, {
                   images: x,
@@ -685,22 +687,22 @@
           },
           images: x = [],
           deckProps: v = {},
-          tina: y = {}
+          tina: f = {}
         } = e;
-        const [f, j] = (0, s.useState)(null), b = (0, n.useTinaPayload)();
-        let T;
-        T = y?.payload?.meta?.cdn ?? b?.meta?.prod ?? !1;
-        const [C, w] = (0, s.useState)(v?.size ?? u), {
+        const [y, j] = (0, s.useState)(null), b = (0, n.useTinaPayload)();
+        let C;
+        C = f?.payload?.meta?.cdn ?? b?.meta?.prod ?? !1;
+        const [T, w] = (0, s.useState)(v?.size ?? u), {
           parent: P,
-          main: z,
-          thumbs: N
+          main: N,
+          thumbs: z
         } = p?.cardWithImageGallery?.gallery ?? {};
         return (0, s.useEffect)((() => {
           const e = x?.map((e => e?.image ? {
             ...e,
             image: {
               ...e.image,
-              prod: T
+              prod: C
             }
           } : e));
           j(e)
@@ -713,11 +715,11 @@
             meta: {}
           },
           title: t,
-          size: C,
+          size: T,
           expandedType: g,
-          images: f,
+          images: y,
           deckProps: v,
-          prod: T,
+          prod: C,
           variants: p.cardWithImageGallery,
           textOverlayProps: h,
           modalProps: {
@@ -725,14 +727,14 @@
             contentClassName: o.customModalContent
           },
           expandedCardContents: (0, c.jsx)(l.Z, {
-            images: f,
+            images: y,
             title: t,
             navigation: !0,
             thumbsVisible: !0,
             variants: {
               parent: P,
-              main: z,
-              thumbs: N
+              main: N,
+              thumbs: z
             },
             transition: {
               parent: m.cardOpen,
@@ -744,10 +746,10 @@
             className: o.content,
             children: (0, c.jsx)(d.Z, {
               title: t,
-              size: C,
+              size: T,
               textOverlayProps: h,
               children: (0, c.jsx)(l.Z, {
-                images: f,
+                images: y,
                 title: t,
                 navigation: !1,
                 thumbsVisible: !1
@@ -756,6 +758,67 @@
           })
         })
       }
+    },
+    3923: (e, a, t) => {
+      t.d(a, {
+        Z: () => p
+      });
+      var s = t(822),
+        n = t(7311),
+        i = t.n(n),
+        r = t(8976),
+        d = t(420),
+        l = t.n(d),
+        o = t(9542);
+      var c = t(3322);
+      const m = e => {
+          let {
+            images: a
+          } = e;
+          return a?.length ? (a.length, (0, c.jsx)(r.ImageWithBadge, {
+            ...a[0]
+          })) : null
+        },
+        p = e => {
+          let {
+            images: a,
+            title: t,
+            content: n
+          } = e;
+          const d = (0, o.useTinaPayload)(),
+            p = d?.meta?.prod ?? !1,
+            u = (0, o.useTinaComponents)();
+          i().set(d, "meta.prod", p);
+          const g = (0, s.useMemo)((() => ({
+            ...u,
+            HTMLElement: r.HTMLElement,
+            ImageWithBadge: r.ImageWithBadge,
+            Carousel: r.Carousel,
+            GroupOfItems: l()
+          })), [u]);
+          return (0, c.jsxs)("div", {
+            className: "e91e50dd7d33343905a6",
+            children: [(0, c.jsx)(m, {
+              images: a
+            }), (0, c.jsxs)("div", {
+              className: "c7a8d988e09ad045d3d0",
+              children: [(0, c.jsx)("h3", {
+                className: "f7331d2ad1a9447bf57e",
+                children: t
+              }), (0, c.jsx)(o.TinaParser, {
+                components: g,
+                tina: {
+                  payload: {
+                    content: n,
+                    meta: {
+                      prod: p
+                    }
+                  }
+                }
+              })]
+            })]
+          })
+        }
     },
     4351: (e, a, t) => {
       t.d(a, {
@@ -802,80 +865,19 @@
         })
       }
     },
-    4912: (e, a, t) => {
+    4585: (e, a, t) => {
       t.r(a), t.d(a, {
         Card: () => s.Z,
         CardWithImageGallery: () => n.Z,
-        Deck: () => h.Z,
-        EventInfo: () => u,
-        TextCard: () => g.Z
+        Deck: () => d.Z,
+        EventInfo: () => i.Z,
+        TextCard: () => r.Z
       });
       var s = t(9373),
         n = t(1204),
-        i = t(822),
-        r = t(7311),
-        d = t.n(r),
-        l = t(8976),
-        o = t(420),
-        c = t.n(o),
-        m = t(9542);
-      var p = t(3322);
-      const u = e => {
-        let {
-          images: a,
-          title: t,
-          content: s,
-          textOverlayProps: n = {
-            hasTextOverlay: !1,
-            tag: "",
-            collapsedHasTag: !1,
-            expandedHasTag: !1,
-            description: "",
-            collapsedHasDescription: !1,
-            badges: []
-          }
-        } = e;
-        const r = (0, m.useTinaPayload)(),
-          o = r?.meta?.prod ?? !1,
-          u = (0, m.useTinaComponents)(),
-          g = (0, i.useMemo)((() => a?.[0]), [a]);
-        d().set(r, "meta.prod", o);
-        const h = (0, i.useMemo)((() => ({
-          ...u,
-          HTMLElement: l.HTMLElement,
-          ImageWithBadge: l.ImageWithBadge,
-          Carousel: l.Carousel,
-          GroupOfItems: c()
-        })), [u]);
-        return (0, p.jsxs)("div", {
-          className: "e91e50dd7d33343905a6",
-          children: [(0, p.jsx)(l.ImageWithBadge, {
-            ...g
-          }), (0, p.jsxs)("div", {
-            className: "c7a8d988e09ad045d3d0",
-            children: [(0, p.jsx)(l.DescriptionArea, {
-              item: {
-                title: t,
-                description: {
-                  content: [n?.description]
-                }
-              }
-            }), (0, p.jsx)(m.TinaParser, {
-              components: h,
-              tina: {
-                payload: {
-                  content: s,
-                  meta: {
-                    prod: o
-                  }
-                }
-              }
-            })]
-          })]
-        })
-      };
-      var g = t(4351),
-        h = t(7454)
+        i = t(3923),
+        r = t(4351),
+        d = t(7454)
     }
   }
 ]);
