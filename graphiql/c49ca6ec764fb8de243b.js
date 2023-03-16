@@ -1,11 +1,11 @@
 "use strict";
 (self.webpackChunk_rockstargames_graphiql = self.webpackChunk_rockstargames_graphiql || []).push([
-  [92], {
-    3092: (e, n, r) => {
+  [305], {
+    305: (e, n, r) => {
       r.r(n);
-      var t = r(1703),
+      var t = r(5489),
         a = r(398),
-        i = (r(1105), r(822), r(8853), Object.defineProperty),
+        i = (r(1851), r(822), r(7469), Object.defineProperty),
         s = (e, n) => i(e, "name", {
           value: n,
           configurable: !0
@@ -207,8 +207,8 @@
               s = n[i];
             s ? B(s, r.value).forEach((n => {
               let [r, a] = n;
-              t.push(q(e, r, a))
-            })) : t.push(q(e, r.key, `Variable "$${i}" does not appear in any GraphQL query.`))
+              t.push(V(e, r, a))
+            })) : t.push(V(e, r.key, `Variable "$${i}" does not appear in any GraphQL query.`))
           }
         })), t
       }
@@ -238,15 +238,16 @@
               ]
             }));
           return Object.keys(e.getFields()).forEach((i => {
-            r[i] || e.getFields()[i].type instanceof a.bM && t.push([n, `Object of type "${e}" is missing required field "${i}".`])
+            const s = e.getFields()[i];
+            !r[i] && s.type instanceof a.bM && !s.defaultValue && t.push([n, `Object of type "${e}" is missing required field "${i}".`])
           })), t
         }
-        return "Boolean" === e.name && "Boolean" !== n.kind || "String" === e.name && "String" !== n.kind || "ID" === e.name && "Number" !== n.kind && "String" !== n.kind || "Float" === e.name && "Number" !== n.kind || "Int" === e.name && ("Number" !== n.kind || (0 | n.value) !== n.value) || (e instanceof a.mR || e instanceof a.n2) && ("String" !== n.kind && "Number" !== n.kind && "Boolean" !== n.kind && "Null" !== n.kind || V(e.parseValue(n.value))) ? [
+        return "Boolean" === e.name && "Boolean" !== n.kind || "String" === e.name && "String" !== n.kind || "ID" === e.name && "Number" !== n.kind && "String" !== n.kind || "Float" === e.name && "Number" !== n.kind || "Int" === e.name && ("Number" !== n.kind || (0 | n.value) !== n.value) || (e instanceof a.mR || e instanceof a.n2) && ("String" !== n.kind && "Number" !== n.kind && "Boolean" !== n.kind && "Null" !== n.kind || q(e.parseValue(n.value))) ? [
           [n, `Expected value of type "${e}".`]
         ] : []
       }
 
-      function q(e, n, r) {
+      function V(e, n, r) {
         return {
           message: r,
           severity: "error",
@@ -256,7 +257,7 @@
         }
       }
 
-      function V(e) {
+      function q(e) {
         return null == e || e != e
       }
 
@@ -269,12 +270,14 @@
         try {
           t = c(e)
         } catch (e) {
-          if (e instanceof w) return [q(r, e.position, e.message)];
+          if (e instanceof w) return [V(r, e.position, e.message)];
           throw e
         }
-        const a = n.variableToType;
+        const {
+          variableToType: a
+        } = n;
         return a ? T(r, a, t) : []
-      })), s(T, "validateVariables"), s(B, "validateValue"), s(q, "lintError"), s(V, "isNullish"), s(A, "mapCat")
+      })), s(T, "validateVariables"), s(B, "validateValue"), s(V, "lintError"), s(q, "isNullish"), s(A, "mapCat")
     }
   }
 ]);

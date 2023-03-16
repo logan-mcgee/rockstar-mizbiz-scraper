@@ -1,10 +1,10 @@
 "use strict";
 (self.webpackChunk_rockstargames_graphiql = self.webpackChunk_rockstargames_graphiql || []).push([
-  [203], {
-    8203: (e, o, t) => {
+  [574], {
+    6574: (e, o, t) => {
       t.r(o);
-      var n = t(1703),
-        i = (t(1105), t(822), t(8853), Object.defineProperty),
+      var n = t(5489),
+        i = (t(1851), t(822), t(7469), Object.defineProperty),
         r = (e, o) => i(e, "name", {
           value: o,
           configurable: !0
@@ -19,7 +19,9 @@
       }
 
       function s(e) {
-        const o = e.state.info.options;
+        const {
+          options: o
+        } = e.state.info;
         return (null == o ? void 0 : o.hoverTime) || 500
       }
 
@@ -47,12 +49,15 @@
             left: (o.left + o.right) / 2,
             top: (o.top + o.bottom) / 2
           }),
-          n = e.state.info.options,
-          i = n.render || e.getHelper(t, "info");
-        if (i) {
-          const r = e.getTokenAt(t, !0);
-          if (r) {
-            const u = i(r, n, e, t);
+          n = e.state.info,
+          {
+            options: i
+          } = n,
+          r = i.render || e.getHelper(t, "info");
+        if (r) {
+          const n = e.getTokenAt(t, !0);
+          if (n) {
+            const u = r(n, i, e, t);
             u && f(e, o, u)
           }
         }

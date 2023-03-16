@@ -1,16 +1,19 @@
 "use strict";
 (self.webpackChunk_rockstargames_graphiql = self.webpackChunk_rockstargames_graphiql || []).push([
-  [591], {
-    2591: (e, t, r) => {
+  [260], {
+    260: (e, t, r) => {
       r.r(t);
-      var n = r(1703),
-        l = r(9207),
-        u = (r(1105), r(822), r(8853), Object.defineProperty);
+      var n = r(5489),
+        l = r(1851),
+        u = (r(822), r(7469), Object.defineProperty);
 
       function a(e, t) {
         var r, n;
-        const l = e.levels;
-        return ((l && 0 !== l.length ? l[l.length - 1] - ((null === (r = this.electricInput) || void 0 === r ? void 0 : r.test(t)) ? 1 : 0) : e.indentLevel) || 0) * ((null === (n = this.config) || void 0 === n ? void 0 : n.indentUnit) || 0)
+        const {
+          levels: l,
+          indentLevel: u
+        } = e;
+        return ((l && 0 !== l.length ? l[l.length - 1] - ((null === (r = this.electricInput) || void 0 === r ? void 0 : r.test(t)) ? 1 : 0) : u) || 0) * ((null === (n = this.config) || void 0 === n ? void 0 : n.indentUnit) || 0)
       }
       n.C.defineMode("graphql-results", (e => {
         const t = (0, l.o)({

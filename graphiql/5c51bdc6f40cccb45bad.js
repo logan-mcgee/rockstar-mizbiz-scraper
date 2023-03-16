@@ -1,7 +1,7 @@
 "use strict";
 (self.webpackChunk_rockstargames_graphiql = self.webpackChunk_rockstargames_graphiql || []).push([
-  [114, 203], {
-    7749: (e, t, n) => {
+  [565, 574], {
+    4630: (e, t, n) => {
       n.d(t, {
         a: () => p,
         b: () => s,
@@ -11,8 +11,8 @@
         g: () => c
       });
       var o = n(398),
-        i = n(6129),
-        r = n(6142),
+        i = n(1851),
+        r = n(8438),
         a = Object.defineProperty,
         l = (e, t) => a(e, "name", {
           value: t,
@@ -154,7 +154,7 @@
       }
       l(c, "getTypeInfo"), l(u, "getFieldDef"), l(d, "find"), l(p, "getFieldReference"), l(s, "getDirectiveReference"), l(f, "getArgumentReference"), l(m, "getEnumValueReference"), l(v, "getTypeReference"), l(g, "isMetaField")
     },
-    6142: (e, t, n) => {
+    8438: (e, t, n) => {
       function o(e, t) {
         const n = [];
         let o = e;
@@ -168,10 +168,10 @@
         configurable: !0
       })
     },
-    8203: (e, t, n) => {
+    6574: (e, t, n) => {
       n.r(t);
-      var o = n(1703),
-        i = (n(1105), n(822), n(8853), Object.defineProperty),
+      var o = n(5489),
+        i = (n(1851), n(822), n(7469), Object.defineProperty),
         r = (e, t) => i(e, "name", {
           value: t,
           configurable: !0
@@ -186,7 +186,9 @@
       }
 
       function l(e) {
-        const t = e.state.info.options;
+        const {
+          options: t
+        } = e.state.info;
         return (null == t ? void 0 : t.hoverTime) || 500
       }
 
@@ -214,12 +216,15 @@
             left: (t.left + t.right) / 2,
             top: (t.top + t.bottom) / 2
           }),
-          o = e.state.info.options,
-          i = o.render || e.getHelper(n, "info");
-        if (i) {
-          const r = e.getTokenAt(n, !0);
-          if (r) {
-            const a = i(r, o, e, n);
+          o = e.state.info,
+          {
+            options: i
+          } = o,
+          r = i.render || e.getHelper(n, "info");
+        if (r) {
+          const o = e.getTokenAt(n, !0);
+          if (o) {
+            const a = r(o, i, e, n);
             a && d(e, t, a)
           }
         }
@@ -260,12 +265,12 @@
         }
       })), r(a, "createState"), r(l, "getHoverTime"), r(c, "onMouseOver"), r(u, "onMouseHover"), r(d, "showPopup")
     },
-    6114: (e, t, n) => {
+    2565: (e, t, n) => {
       n.r(t);
       var o = n(398),
-        i = n(1703),
-        r = n(7749),
-        a = (n(8203), n(1105), n(822), n(8853), n(6129), n(6142), Object.defineProperty),
+        i = n(5489),
+        r = n(4630),
+        a = (n(6574), n(1851), n(822), n(7469), n(8438), Object.defineProperty),
         l = (e, t) => a(e, "name", {
           value: t,
           configurable: !0
@@ -306,7 +311,9 @@
       }
 
       function v(e, t, n) {
-        const o = n.description;
+        const {
+          description: o
+        } = n;
         if (o) {
           const n = document.createElement("div");
           n.className = "info-description", t.renderDescription ? n.innerHTML = t.renderDescription(o) : n.appendChild(document.createTextNode(o)), e.appendChild(n)
@@ -333,7 +340,9 @@
           },
           i = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : null;
         if (n) {
-          const r = o.onClick;
+          const {
+            onClick: r
+          } = o;
           let a;
           r ? (a = document.createElement("a"), a.href = "javascript:void 0", a.addEventListener("click", (e => {
             r(i, e)
@@ -342,39 +351,39 @@
       }
       i.C.registerHelper("info", "graphql", ((e, t) => {
         if (!t.schema || !e.state) return;
-        const n = e.state,
-          o = n.kind,
-          i = n.step,
-          a = (0, r.g)(t.schema, e.state);
-        if ("Field" === o && 0 === i && a.fieldDef || "AliasedField" === o && 2 === i && a.fieldDef) {
+        const {
+          kind: n,
+          step: o
+        } = e.state, i = (0, r.g)(t.schema, e.state);
+        if ("Field" === n && 0 === o && i.fieldDef || "AliasedField" === n && 2 === o && i.fieldDef) {
           const e = document.createElement("div");
-          e.className = "CodeMirror-info-header", c(e, a, t);
+          e.className = "CodeMirror-info-header", c(e, i, t);
           const n = document.createElement("div");
-          return n.appendChild(e), v(n, t, a.fieldDef), n
+          return n.appendChild(e), v(n, t, i.fieldDef), n
         }
-        if ("Directive" === o && 1 === i && a.directiveDef) {
+        if ("Directive" === n && 1 === o && i.directiveDef) {
           const e = document.createElement("div");
-          e.className = "CodeMirror-info-header", d(e, a, t);
+          e.className = "CodeMirror-info-header", d(e, i, t);
           const n = document.createElement("div");
-          return n.appendChild(e), v(n, t, a.directiveDef), n
+          return n.appendChild(e), v(n, t, i.directiveDef), n
         }
-        if ("Argument" === o && 0 === i && a.argDef) {
+        if ("Argument" === n && 0 === o && i.argDef) {
           const e = document.createElement("div");
-          e.className = "CodeMirror-info-header", p(e, a, t);
+          e.className = "CodeMirror-info-header", p(e, i, t);
           const n = document.createElement("div");
-          return n.appendChild(e), v(n, t, a.argDef), n
+          return n.appendChild(e), v(n, t, i.argDef), n
         }
-        if ("EnumValue" === o && a.enumValue && a.enumValue.description) {
+        if ("EnumValue" === n && i.enumValue && i.enumValue.description) {
           const e = document.createElement("div");
-          e.className = "CodeMirror-info-header", s(e, a, t);
+          e.className = "CodeMirror-info-header", s(e, i, t);
           const n = document.createElement("div");
-          return n.appendChild(e), v(n, t, a.enumValue), n
+          return n.appendChild(e), v(n, t, i.enumValue), n
         }
-        if ("NamedType" === o && a.type && a.type.description) {
+        if ("NamedType" === n && i.type && i.type.description) {
           const e = document.createElement("div");
-          e.className = "CodeMirror-info-header", m(e, a, t, a.type);
+          e.className = "CodeMirror-info-header", m(e, i, t, i.type);
           const n = document.createElement("div");
-          return n.appendChild(e), v(n, t, a.type), n
+          return n.appendChild(e), v(n, t, i.type), n
         }
       })), l(c, "renderField"), l(u, "renderQualifiedField"), l(d, "renderDirective"), l(p, "renderArg"), l(s, "renderEnumValue"), l(f, "renderTypeAnnotation"), l(m, "renderType"), l(v, "renderDescription"), l(g, "renderDeprecation"), l(y, "text")
     }

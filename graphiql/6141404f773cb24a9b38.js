@@ -1,11 +1,11 @@
 "use strict";
 (self.webpackChunk_rockstargames_graphiql = self.webpackChunk_rockstargames_graphiql || []).push([
-  [357], {
-    1357: (e, t, a) => {
+  [230], {
+    9230: (e, t, a) => {
       a.r(t);
-      var l = a(1703),
-        r = a(9207),
-        n = (a(1105), a(822), a(8853), Object.defineProperty),
+      var l = a(5489),
+        r = a(1851),
+        n = (a(822), a(7469), Object.defineProperty),
         u = (e, t) => n(e, "name", {
           value: t,
           configurable: !0
@@ -13,8 +13,11 @@
 
       function i(e, t) {
         var a, l;
-        const r = e.levels;
-        return ((r && 0 !== r.length ? r[r.length - 1] - ((null === (a = this.electricInput) || void 0 === a ? void 0 : a.test(t)) ? 1 : 0) : e.indentLevel) || 0) * ((null === (l = this.config) || void 0 === l ? void 0 : l.indentUnit) || 0)
+        const {
+          levels: r,
+          indentLevel: n
+        } = e;
+        return ((r && 0 !== r.length ? r[r.length - 1] - ((null === (a = this.electricInput) || void 0 === a ? void 0 : a.test(t)) ? 1 : 0) : n) || 0) * ((null === (l = this.config) || void 0 === l ? void 0 : l.indentUnit) || 0)
       }
       l.C.defineMode("graphql-variables", (e => {
         const t = (0, r.o)({
@@ -45,7 +48,7 @@
           Keyword: /^true|false|null/
         },
         c = {
-          Document: [(0, r.p)("{"), (0, r.l)("Variable", (0, r.a)((0, r.p)(","))), (0, r.p)("}")],
+          Document: [(0, r.p)("{"), (0, r.l)("Variable", (0, r.b)((0, r.p)(","))), (0, r.p)("}")],
           Variable: [o("variable"), (0, r.p)(":"), "Value"],
           Value(e) {
             switch (e.kind) {
@@ -76,8 +79,8 @@
           StringValue: [(0, r.t)("String", "string")],
           BooleanValue: [(0, r.t)("Keyword", "builtin")],
           NullValue: [(0, r.t)("Keyword", "keyword")],
-          ListValue: [(0, r.p)("["), (0, r.l)("Value", (0, r.a)((0, r.p)(","))), (0, r.p)("]")],
-          ObjectValue: [(0, r.p)("{"), (0, r.l)("ObjectField", (0, r.a)((0, r.p)(","))), (0, r.p)("}")],
+          ListValue: [(0, r.p)("["), (0, r.l)("Value", (0, r.b)((0, r.p)(","))), (0, r.p)("]")],
+          ObjectValue: [(0, r.p)("{"), (0, r.l)("ObjectField", (0, r.b)((0, r.p)(","))), (0, r.p)("}")],
           ObjectField: [o("attribute"), (0, r.p)(":"), "Value"]
         };
 

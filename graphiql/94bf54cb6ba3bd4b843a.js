@@ -1,12 +1,12 @@
 "use strict";
 (self.webpackChunk_rockstargames_graphiql = self.webpackChunk_rockstargames_graphiql || []).push([
-  [187], {
-    1187: (t, e, r) => {
+  [237], {
+    6237: (t, e, r) => {
       r.r(e), r.d(e, {
         a: () => o,
         m: () => s
       });
-      var n = r(1703),
+      var n = r(5489),
         a = Object.defineProperty,
         c = (t, e) => a(t, "name", {
           value: e,

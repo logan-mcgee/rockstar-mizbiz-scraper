@@ -1,7 +1,7 @@
 "use strict";
 (self.webpackChunk_rockstargames_graphiql = self.webpackChunk_rockstargames_graphiql || []).push([
-  [664], {
-    7749: (e, t, n) => {
+  [454], {
+    4630: (e, t, n) => {
       n.d(t, {
         a: () => c,
         b: () => f,
@@ -11,8 +11,8 @@
         g: () => l
       });
       var i = n(398),
-        a = n(6129),
-        r = n(6142),
+        a = n(1851),
+        r = n(8438),
         u = Object.defineProperty,
         o = (e, t) => u(e, "name", {
           value: t,
@@ -154,7 +154,7 @@
       }
       o(l, "getTypeInfo"), o(s, "getFieldDef"), o(p, "find"), o(c, "getFieldReference"), o(f, "getDirectiveReference"), o(d, "getArgumentReference"), o(m, "getEnumValueReference"), o(g, "getTypeReference"), o(y, "isMetaField")
     },
-    6142: (e, t, n) => {
+    8438: (e, t, n) => {
       function i(e, t) {
         const n = [];
         let i = e;
@@ -168,11 +168,11 @@
         configurable: !0
       })
     },
-    6664: (e, t, n) => {
+    454: (e, t, n) => {
       n.r(t);
-      var i = n(1703),
-        a = n(7749),
-        r = (n(1105), n(822), n(8853), n(6129), n(6142), Object.defineProperty),
+      var i = n(5489),
+        a = n(4630),
+        r = (n(1851), n(822), n(7469), n(8438), Object.defineProperty),
         u = (e, t) => r(e, "name", {
           value: t,
           configurable: !0
@@ -201,8 +201,11 @@
             u.code === t.code && (e.state.jump.isHoldingModifier = !1, e.state.jump.marker && d(e), i.C.off(document, "keyup", n), i.C.off(document, "click", a), e.off("mousedown", r))
           }), "onKeyUp"),
           a = u((t => {
-            const n = e.state.jump.destination;
-            n && e.state.jump.options.onClick(n, t)
+            const {
+              destination: n,
+              options: i
+            } = e.state.jump;
+            n && i.onClick(n, t)
           }), "onClick"),
           r = u(((t, n) => {
             e.state.jump.destination && (n.codemirrorIgnore = !0)
@@ -226,7 +229,7 @@
           i.C.on(e.getWrapperElement(), "mouseover", n.onMouseOver), i.C.on(e.getWrapperElement(), "mouseout", n.onMouseOut), i.C.on(document, "keydown", n.onKeyDown)
         }
       })), u(o, "onMouseOver"), u(l, "onMouseOut"), u(s, "onKeyDown");
-      const p = "undefined" != typeof navigator && navigator && -1 !== navigator.appVersion.indexOf("Mac");
+      const p = "undefined" != typeof navigator && navigator && navigator.appVersion.includes("Mac");
 
       function c(e) {
         return e === (p ? "Meta" : "Control")
@@ -234,38 +237,41 @@
 
       function f(e) {
         if (e.state.jump.marker) return;
-        const t = e.state.jump.cursor,
-          n = e.coordsChar(t),
-          i = e.getTokenAt(n, !0),
-          a = e.state.jump.options,
-          r = a.getDestination || e.getHelper(n, "jump");
+        const {
+          cursor: t,
+          options: n
+        } = e.state.jump, i = e.coordsChar(t), a = e.getTokenAt(i, !0), r = n.getDestination || e.getHelper(i, "jump");
         if (r) {
-          const t = r(i, a, e);
+          const t = r(a, n, e);
           if (t) {
-            const a = e.markText({
-              line: n.line,
-              ch: i.start
+            const n = e.markText({
+              line: i.line,
+              ch: a.start
             }, {
-              line: n.line,
-              ch: i.end
+              line: i.line,
+              ch: a.end
             }, {
               className: "CodeMirror-jump-token"
             });
-            e.state.jump.marker = a, e.state.jump.destination = t
+            e.state.jump.marker = n, e.state.jump.destination = t
           }
         }
       }
 
       function d(e) {
-        const t = e.state.jump.marker;
+        const {
+          marker: t
+        } = e.state.jump;
         e.state.jump.marker = null, e.state.jump.destination = null, t.clear()
       }
       u(c, "isJumpModifier"), u(f, "enableJumpMode"), u(d, "disableJumpMode"), i.C.registerHelper("jump", "graphql", ((e, t) => {
         if (!t.schema || !t.onClick || !e.state) return;
-        const n = e.state,
-          i = n.kind,
-          r = n.step,
-          u = (0, a.g)(t.schema, n);
+        const {
+          state: n
+        } = e, {
+          kind: i,
+          step: r
+        } = n, u = (0, a.g)(t.schema, n);
         return "Field" === i && 0 === r && u.fieldDef || "AliasedField" === i && 2 === r && u.fieldDef ? (0, a.a)(u) : "Directive" === i && 1 === r && u.directiveDef ? (0, a.b)(u) : "Argument" === i && 0 === r && u.argDef ? (0, a.c)(u) : "EnumValue" === i && u.enumValue ? (0, a.d)(u) : "NamedType" === i && u.type ? (0, a.e)(u) : void 0
       }))
     }

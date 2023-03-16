@@ -1,7 +1,7 @@
 "use strict";
 (self.webpackChunk_rockstargames_graphiql = self.webpackChunk_rockstargames_graphiql || []).push([
-  [631], {
-    6142: (e, t, n) => {
+  [353], {
+    8438: (e, t, n) => {
       function i(e, t) {
         const n = [];
         let i = e;
@@ -15,13 +15,13 @@
         configurable: !0
       })
     },
-    3590: (e, t, n) => {
+    3353: (e, t, n) => {
       n.r(t);
-      var i = n(1703),
+      var i = n(5489),
         r = n(398),
         l = n(3801),
-        o = n(6142),
-        s = (n(1105), n(822), n(8853), Object.defineProperty),
+        o = n(8438),
+        s = (n(1851), n(822), n(7469), Object.defineProperty),
         a = (e, t) => s(e, "name", {
           value: t,
           configurable: !0
@@ -82,12 +82,16 @@
 
       function m(e, t, n) {
         const i = "Invalid" === t.state.kind ? t.state.prevState : t.state,
-          o = i.kind,
-          s = i.step;
+          {
+            kind: o,
+            step: s
+          } = i;
         if ("Document" === o && 0 === s) return c(e, t, [{
           text: "{"
         }]);
-        const a = n.variableToType;
+        const {
+          variableToType: a
+        } = n;
         if (!a) return;
         const f = g(a, t.state);
         if ("Document" === o || "Variable" === o && 0 === s) return c(e, t, Object.keys(a).map((e => ({

@@ -1,11 +1,11 @@
 "use strict";
 (self.webpackChunk_rockstargames_graphiql = self.webpackChunk_rockstargames_graphiql || []).push([
-  [871], {
-    9871: (t, e, i) => {
+  [208], {
+    4208: (t, e, i) => {
       i.r(e), i.d(e, {
         s: () => l
       });
-      var n = i(1703),
+      var n = i(5489),
         o = Object.defineProperty,
         s = (t, e) => o(t, "name", {
           value: e,
@@ -34,7 +34,10 @@
         exports: {}
       };
       ! function(t) {
-        function e(t, e) {
+        var e = "CodeMirror-hint",
+          i = "CodeMirror-hint-active";
+
+        function n(t, e) {
           if (this.cm = t, this.options = e, this.widget = null, this.debounce = 0, this.tick = 0, this.startPos = this.cm.getCursor("start"), this.startLen = this.cm.getLine(this.startPos.line).length - this.cm.getSelection().length, this.options.updateOnCursorActivity) {
             var i = this;
             t.on("cursorActivity", this.activityFunc = function() {
@@ -51,31 +54,31 @@
           if (i)
             for (var o in i) n[o] = i[o];
           return t.showHint(n)
-        }, t.defineExtension("showHint", (function(i) {
-          i = o(this, this.getCursor("start"), i);
-          var n = this.listSelections();
-          if (!(n.length > 1)) {
+        }, t.defineExtension("showHint", (function(e) {
+          e = c(this, this.getCursor("start"), e);
+          var i = this.listSelections();
+          if (!(i.length > 1)) {
             if (this.somethingSelected()) {
-              if (!i.hint.supportsSelection) return;
-              for (var s = 0; s < n.length; s++)
-                if (n[s].head.line != n[s].anchor.line) return
+              if (!e.hint.supportsSelection) return;
+              for (var o = 0; o < i.length; o++)
+                if (i[o].head.line != i[o].anchor.line) return
             }
             this.state.completionActive && this.state.completionActive.close();
-            var r = this.state.completionActive = new e(this, i);
-            r.options.hint && (t.signal(this, "startCompletion", this), r.update(!0))
+            var s = this.state.completionActive = new n(this, e);
+            s.options.hint && (t.signal(this, "startCompletion", this), s.update(!0))
           }
         })), t.defineExtension("closeHint", (function() {
           this.state.completionActive && this.state.completionActive.close()
-        })), s(e, "Completion");
-        var i = window.requestAnimationFrame || function(t) {
+        })), s(n, "Completion");
+        var o = window.requestAnimationFrame || function(t) {
             return setTimeout(t, 1e3 / 60)
           },
-          n = window.cancelAnimationFrame || clearTimeout;
+          r = window.cancelAnimationFrame || clearTimeout;
 
-        function o(t, e, i) {
+        function c(t, e, i) {
           var n = t.options.hintOptions,
             o = {};
-          for (var s in d) o[s] = d[s];
+          for (var s in m) o[s] = m[s];
           if (n)
             for (var s in n) void 0 !== n[s] && (o[s] = n[s]);
           if (i)
@@ -83,11 +86,11 @@
           return o.hint.resolve && (o.hint = o.hint.resolve(t, e)), o
         }
 
-        function r(t) {
+        function l(t) {
           return "string" == typeof t ? t : t.text
         }
 
-        function c(t, e) {
+        function a(t, e) {
           var i = {
             Up: function() {
               e.moveFocus(-1)
@@ -133,116 +136,116 @@
           return o
         }
 
-        function l(t, e) {
+        function h(t, e) {
           for (; e && e != t;) {
             if ("LI" === e.nodeName.toUpperCase() && e.parentNode == t) return e;
             e = e.parentNode
           }
         }
 
-        function a(e, i) {
-          this.id = "cm-complete-" + Math.floor(Math.random(1e6)), this.completion = e, this.data = i, this.picked = !1;
-          var n = this,
-            o = e.cm,
-            s = o.getInputField().ownerDocument,
-            a = s.defaultView || s.parentWindow,
-            h = this.hints = s.createElement("ul");
-          h.setAttribute("role", "listbox"), h.setAttribute("aria-expanded", "true"), h.id = this.id;
-          var u = e.cm.options.theme;
-          h.className = "CodeMirror-hints " + u, this.selectedHint = i.selectedHint || 0;
-          for (var f = i.list, d = 0; d < f.length; ++d) {
-            var p = h.appendChild(s.createElement("li")),
-              m = f[d],
-              g = "CodeMirror-hint" + (d != this.selectedHint ? "" : " CodeMirror-hint-active");
-            null != m.className && (g = m.className + " " + g), p.className = g, d == this.selectedHint && p.setAttribute("aria-selected", "true"), p.id = this.id + "-" + d, p.setAttribute("role", "option"), m.render ? m.render(p, i, m) : p.appendChild(s.createTextNode(m.displayText || r(m))), p.hintId = d
+        function u(n, o) {
+          this.id = "cm-complete-" + Math.floor(Math.random(1e6)), this.completion = n, this.data = o, this.picked = !1;
+          var s = this,
+            r = n.cm,
+            c = r.getInputField().ownerDocument,
+            u = c.defaultView || c.parentWindow,
+            f = this.hints = c.createElement("ul");
+          f.setAttribute("role", "listbox"), f.setAttribute("aria-expanded", "true"), f.id = this.id;
+          var p = n.cm.options.theme;
+          f.className = "CodeMirror-hints " + p, this.selectedHint = o.selectedHint || 0;
+          for (var d = o.list, m = 0; m < d.length; ++m) {
+            var g = f.appendChild(c.createElement("li")),
+              v = d[m],
+              y = e + (m != this.selectedHint ? "" : " " + i);
+            null != v.className && (y = v.className + " " + y), g.className = y, m == this.selectedHint && g.setAttribute("aria-selected", "true"), g.id = this.id + "-" + m, g.setAttribute("role", "option"), v.render ? v.render(g, o, v) : g.appendChild(c.createTextNode(v.displayText || l(v))), g.hintId = m
           }
-          var v = e.options.container || s.body,
-            y = o.cursorCoords(e.options.alignWithWord ? i.from : null),
-            b = y.left,
-            w = y.bottom,
-            H = !0,
-            A = 0,
-            C = 0;
-          if (v !== s.body) {
-            var k = -1 !== ["absolute", "relative", "fixed"].indexOf(a.getComputedStyle(v).position) ? v : v.offsetParent,
-              x = k.getBoundingClientRect(),
-              O = s.body.getBoundingClientRect();
-            A = x.left - O.left - k.scrollLeft, C = x.top - O.top - k.scrollTop
+          var b = n.options.container || c.body,
+            w = r.cursorCoords(n.options.alignWithWord ? o.from : null),
+            H = w.left,
+            A = w.bottom,
+            C = !0,
+            k = 0,
+            x = 0;
+          if (b !== c.body) {
+            var O = -1 !== ["absolute", "relative", "fixed"].indexOf(u.getComputedStyle(b).position) ? b : b.offsetParent,
+              S = O.getBoundingClientRect(),
+              T = c.body.getBoundingClientRect();
+            k = S.left - T.left - O.scrollLeft, x = S.top - T.top - O.scrollTop
           }
-          h.style.left = b - A + "px", h.style.top = w - C + "px";
-          var S = a.innerWidth || Math.max(s.body.offsetWidth, s.documentElement.offsetWidth),
-            T = a.innerHeight || Math.max(s.body.offsetHeight, s.documentElement.offsetHeight);
-          v.appendChild(h), o.getInputField().setAttribute("aria-autocomplete", "list"), o.getInputField().setAttribute("aria-owns", this.id), o.getInputField().setAttribute("aria-activedescendant", this.id + "-" + this.selectedHint);
-          var M, F = e.options.moveOnOverlap ? h.getBoundingClientRect() : new DOMRect,
-            N = !!e.options.paddingForScrollbar && h.scrollHeight > h.clientHeight + 1;
+          f.style.left = H - k + "px", f.style.top = A - x + "px";
+          var F = u.innerWidth || Math.max(c.body.offsetWidth, c.documentElement.offsetWidth),
+            M = u.innerHeight || Math.max(c.body.offsetHeight, c.documentElement.offsetHeight);
+          b.appendChild(f), r.getInputField().setAttribute("aria-autocomplete", "list"), r.getInputField().setAttribute("aria-owns", this.id), r.getInputField().setAttribute("aria-activedescendant", this.id + "-" + this.selectedHint);
+          var N, P = n.options.moveOnOverlap ? f.getBoundingClientRect() : new DOMRect,
+            E = !!n.options.paddingForScrollbar && f.scrollHeight > f.clientHeight + 1;
           if (setTimeout((function() {
-              M = o.getScrollInfo()
-            })), F.bottom - T > 0) {
-            var P = F.bottom - F.top;
-            if (y.top - (y.bottom - F.top) - P > 0) h.style.top = (w = y.top - P - C) + "px", H = !1;
-            else if (P > T) {
-              h.style.height = T - 5 + "px", h.style.top = (w = y.bottom - F.top - C) + "px";
-              var E = o.getCursor();
-              i.from.ch != E.ch && (y = o.cursorCoords(E), h.style.left = (b = y.left - A) + "px", F = h.getBoundingClientRect())
+              N = r.getScrollInfo()
+            })), P.bottom - M > 0) {
+            var I = P.bottom - P.top;
+            if (w.top - (w.bottom - P.top) - I > 0) f.style.top = (A = w.top - I - x) + "px", C = !1;
+            else if (I > M) {
+              f.style.height = M - 5 + "px", f.style.top = (A = w.bottom - P.top - x) + "px";
+              var W = r.getCursor();
+              o.from.ch != W.ch && (w = r.cursorCoords(W), f.style.left = (H = w.left - k) + "px", P = f.getBoundingClientRect())
             }
           }
-          var I, W = F.right - S;
-          if (N && (W += o.display.nativeBarWidth), W > 0 && (F.right - F.left > S && (h.style.width = S - 5 + "px", W -= F.right - F.left - S), h.style.left = (b = y.left - W - A) + "px"), N)
-            for (var R = h.firstChild; R; R = R.nextSibling) R.style.paddingRight = o.display.nativeBarWidth + "px";
-          o.addKeyMap(this.keyMap = c(e, {
+          var R, B = P.right - F;
+          if (E && (B += r.display.nativeBarWidth), B > 0 && (P.right - P.left > F && (f.style.width = F - 5 + "px", B -= P.right - P.left - F), f.style.left = (H = w.left - B - k) + "px"), E)
+            for (var K = f.firstChild; K; K = K.nextSibling) K.style.paddingRight = r.display.nativeBarWidth + "px";
+          r.addKeyMap(this.keyMap = a(n, {
             moveFocus: function(t, e) {
-              n.changeActive(n.selectedHint + t, e)
+              s.changeActive(s.selectedHint + t, e)
             },
             setFocus: function(t) {
-              n.changeActive(t)
+              s.changeActive(t)
             },
             menuSize: function() {
-              return n.screenAmount()
+              return s.screenAmount()
             },
-            length: f.length,
+            length: d.length,
             close: function() {
-              e.close()
+              n.close()
             },
             pick: function() {
-              n.pick()
+              s.pick()
             },
-            data: i
-          })), e.options.closeOnUnfocus && (o.on("blur", this.onBlur = function() {
-            I = setTimeout((function() {
-              e.close()
+            data: o
+          })), n.options.closeOnUnfocus && (r.on("blur", this.onBlur = function() {
+            R = setTimeout((function() {
+              n.close()
             }), 100)
-          }), o.on("focus", this.onFocus = function() {
-            clearTimeout(I)
-          })), o.on("scroll", this.onScroll = function() {
-            var t = o.getScrollInfo(),
-              i = o.getWrapperElement().getBoundingClientRect();
-            M || (M = o.getScrollInfo());
-            var n = w + M.top - t.top,
-              r = n - (a.pageYOffset || (s.documentElement || s.body).scrollTop);
-            if (H || (r += h.offsetHeight), r <= i.top || r >= i.bottom) return e.close();
-            h.style.top = n + "px", h.style.left = b + M.left - t.left + "px"
-          }), t.on(h, "dblclick", (function(t) {
-            var e = l(h, t.target || t.srcElement);
-            e && null != e.hintId && (n.changeActive(e.hintId), n.pick())
-          })), t.on(h, "click", (function(t) {
-            var i = l(h, t.target || t.srcElement);
-            i && null != i.hintId && (n.changeActive(i.hintId), e.options.completeOnSingleClick && n.pick())
-          })), t.on(h, "mousedown", (function() {
+          }), r.on("focus", this.onFocus = function() {
+            clearTimeout(R)
+          })), r.on("scroll", this.onScroll = function() {
+            var t = r.getScrollInfo(),
+              e = r.getWrapperElement().getBoundingClientRect();
+            N || (N = r.getScrollInfo());
+            var i = A + N.top - t.top,
+              o = i - (u.pageYOffset || (c.documentElement || c.body).scrollTop);
+            if (C || (o += f.offsetHeight), o <= e.top || o >= e.bottom) return n.close();
+            f.style.top = i + "px", f.style.left = H + N.left - t.left + "px"
+          }), t.on(f, "dblclick", (function(t) {
+            var e = h(f, t.target || t.srcElement);
+            e && null != e.hintId && (s.changeActive(e.hintId), s.pick())
+          })), t.on(f, "click", (function(t) {
+            var e = h(f, t.target || t.srcElement);
+            e && null != e.hintId && (s.changeActive(e.hintId), n.options.completeOnSingleClick && s.pick())
+          })), t.on(f, "mousedown", (function() {
             setTimeout((function() {
-              o.focus()
+              r.focus()
             }), 20)
           }));
-          var B = this.getSelectedHintRange();
-          return 0 === B.from && 0 === B.to || this.scrollToActive(), t.signal(i, "select", f[this.selectedHint], h.childNodes[this.selectedHint]), !0
+          var _ = this.getSelectedHintRange();
+          return 0 === _.from && 0 === _.to || this.scrollToActive(), t.signal(o, "select", d[this.selectedHint], f.childNodes[this.selectedHint]), !0
         }
 
-        function h(t, e) {
+        function f(t, e) {
           if (!t.somethingSelected()) return e;
           for (var i = [], n = 0; n < e.length; n++) e[n].supportsSelection && i.push(e[n]);
           return i
         }
 
-        function u(t, e, i, n) {
+        function p(t, e, i, n) {
           if (t.async) t(e, n, i);
           else {
             var o = t(e, i);
@@ -250,15 +253,15 @@
           }
         }
 
-        function f(e, i) {
+        function d(e, i) {
           var n, o = e.getHelpers(i, "hint");
           if (o.length) {
             var r = s((function(t, e, i) {
-              var n = h(t, o);
+              var n = f(t, o);
 
               function r(o) {
                 if (o == n.length) return e(null);
-                u(n[o], t, i, (function(t) {
+                p(n[o], t, i, (function(t) {
                   t && t.list.length > 0 ? e(t) : r(o + 1)
                 }))
               }
@@ -274,7 +277,7 @@
             return t.hint.anyword(e, i)
           } : function() {}
         }
-        e.prototype = {
+        n.prototype = {
           close: function() {
             this.active() && (this.cm.state.completionActive = null, this.tick = null, this.options.updateOnCursorActivity && this.cm.off("cursorActivity", this.activityFunc), this.widget && this.data && t.signal(this.data, "close"), this.widget && this.widget.close(), t.signal(this.cm, "endCompletion", this.cm))
           },
@@ -285,20 +288,20 @@
             var n = e.list[i],
               o = this;
             this.cm.operation((function() {
-              n.hint ? n.hint(o.cm, e, n) : o.cm.replaceRange(r(n), n.from || e.from, n.to || e.to, "complete"), t.signal(e, "pick", n), o.cm.scrollIntoView()
+              n.hint ? n.hint(o.cm, e, n) : o.cm.replaceRange(l(n), n.from || e.from, n.to || e.to, "complete"), t.signal(e, "pick", n), o.cm.scrollIntoView()
             })), this.options.closeOnPick && this.close()
           },
           cursorActivity: function() {
-            this.debounce && (n(this.debounce), this.debounce = 0);
+            this.debounce && (r(this.debounce), this.debounce = 0);
             var t = this.startPos;
             this.data && (t = this.data.from);
             var e = this.cm.getCursor(),
-              o = this.cm.getLine(e.line);
-            if (e.line != this.startPos.line || o.length - e.ch != this.startLen - this.startPos.ch || e.ch < t.ch || this.cm.somethingSelected() || !e.ch || this.options.closeCharacters.test(o.charAt(e.ch - 1))) this.close();
+              i = this.cm.getLine(e.line);
+            if (e.line != this.startPos.line || i.length - e.ch != this.startLen - this.startPos.ch || e.ch < t.ch || this.cm.somethingSelected() || !e.ch || this.options.closeCharacters.test(i.charAt(e.ch - 1))) this.close();
             else {
-              var s = this;
-              this.debounce = i((function() {
-                s.update()
+              var n = this;
+              this.debounce = o((function() {
+                n.update()
               })), this.widget && this.widget.disable()
             }
           },
@@ -306,7 +309,7 @@
             if (null != this.tick) {
               var e = this,
                 i = ++this.tick;
-              u(this.options.hint, this.cm, this.options, (function(n) {
+              p(this.options.hint, this.cm, this.options, (function(n) {
                 e.tick == i && e.finishUpdate(n, t)
               }))
             }
@@ -314,9 +317,9 @@
           finishUpdate: function(e, i) {
             this.data && t.signal(this.data, "update");
             var n = this.widget && this.widget.picked || i && this.options.completeSingle;
-            this.widget && this.widget.close(), this.data = e, e && e.list.length && (n && 1 == e.list.length ? this.pick(e, 0) : (this.widget = new a(this, e), t.signal(e, "shown")))
+            this.widget && this.widget.close(), this.data = e, e && e.list.length && (n && 1 == e.list.length ? this.pick(e, 0) : (this.widget = new u(this, e), t.signal(e, "shown")))
           }
-        }, s(o, "parseOptions"), s(r, "getText"), s(c, "buildKeyMap"), s(l, "getHintElement"), s(a, "Widget"), a.prototype = {
+        }, s(c, "parseOptions"), s(l, "getText"), s(a, "buildKeyMap"), s(h, "getHintElement"), s(u, "Widget"), u.prototype = {
           close: function() {
             if (this.completion.widget == this) {
               this.completion.widget = null, this.hints.parentNode && this.hints.parentNode.removeChild(this.hints), this.completion.cm.removeKeyMap(this.keyMap);
@@ -338,10 +341,10 @@
           pick: function() {
             this.completion.pick(this.data, this.selectedHint)
           },
-          changeActive: function(e, i) {
-            if (e >= this.data.list.length ? e = i ? this.data.list.length - 1 : 0 : e < 0 && (e = i ? 0 : this.data.list.length - 1), this.selectedHint != e) {
-              var n = this.hints.childNodes[this.selectedHint];
-              n && (n.className = n.className.replace(" CodeMirror-hint-active", ""), n.removeAttribute("aria-selected")), (n = this.hints.childNodes[this.selectedHint = e]).className += " CodeMirror-hint-active", n.setAttribute("aria-selected", "true"), this.completion.cm.getInputField().setAttribute("aria-activedescendant", n.id), this.scrollToActive(), t.signal(this.data, "select", this.data.list[this.selectedHint], n)
+          changeActive: function(e, n) {
+            if (e >= this.data.list.length ? e = n ? this.data.list.length - 1 : 0 : e < 0 && (e = n ? 0 : this.data.list.length - 1), this.selectedHint != e) {
+              var o = this.hints.childNodes[this.selectedHint];
+              o && (o.className = o.className.replace(" " + i, ""), o.removeAttribute("aria-selected")), (o = this.hints.childNodes[this.selectedHint = e]).className += " " + i, o.setAttribute("aria-selected", "true"), this.completion.cm.getInputField().setAttribute("aria-activedescendant", o.id), this.scrollToActive(), t.signal(this.data, "select", this.data.list[this.selectedHint], o)
             }
           },
           scrollToActive: function() {
@@ -361,8 +364,8 @@
               to: Math.min(this.data.list.length - 1, this.selectedHint + t)
             }
           }
-        }, s(h, "applicableHelpers"), s(u, "fetchHints"), s(f, "resolveAutoHints"), t.registerHelper("hint", "auto", {
-          resolve: f
+        }, s(f, "applicableHelpers"), s(p, "fetchHints"), s(d, "resolveAutoHints"), t.registerHelper("hint", "auto", {
+          resolve: d
         }), t.registerHelper("hint", "fromList", (function(e, i) {
           var n, o = e.getCursor(),
             s = e.getTokenAt(o),
@@ -379,7 +382,7 @@
             to: c
           }
         })), t.commands.autocomplete = t.showHint;
-        var d = {
+        var m = {
           hint: t.hint.auto,
           completeSingle: !0,
           alignWithWord: !0,
