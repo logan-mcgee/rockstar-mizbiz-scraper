@@ -1,6 +1,6 @@
 (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
-  [79], {
-    3991: (e, a, n) => {
+  [231], {
+    533: (e, a, n) => {
       "use strict";
       n.r(a), n(7842);
       var i = n(6331),
@@ -157,9 +157,9 @@
             idHash: String(n.articleId)
           })
         })),
-        A = "cf17a6d004f287e319c2";
-      var D = n(2992),
-        $ = n.n(D);
+        D = "cf17a6d004f287e319c2";
+      var A = n(2992),
+        $ = n.n(A);
       const L = (0, b.withTranslations)((e => {
         let {
           t: a
@@ -188,7 +188,7 @@
             })
           }), [t.get("type"), t.get("gameId")]), (0, s.useEffect)((() => (i(!1), () => i(!0))), []), !r) return null;
         if (r?.game && r?.gameVideos) return (0, x.jsx)("div", {
-          className: A,
+          className: D,
           children: (0, x.jsx)(o.VideoList, {
             vids: r.gameVideos.results,
             title: a("Videos from %s").replace("%s", r.game.title)
@@ -202,7 +202,7 @@
           rdo: g
         } = r;
         return (0, x.jsx)("div", {
-          className: A,
+          className: D,
           children: l.type ? "" : (0, x.jsxs)(x.Fragment, {
             children: [(0, x.jsx)(o.VideoCarousel, {
               videos: f.results,
@@ -1099,7 +1099,7 @@
         }));
       var Te = n(4533),
         Ee = n.n(Te);
-      const Ae = () => {
+      const De = () => {
           const e = (0, b.useQueryParams)(),
             a = Number(e.get("gameId")),
             n = Number(e.get("songId")),
@@ -1133,7 +1133,7 @@
             }) : null]
           })
         },
-        De = (0, b.withTranslations)((e => {
+        Ae = (0, b.withTranslations)((e => {
           let {
             t: a
           } = e;
@@ -1266,7 +1266,15 @@
             })]
           })
         }),
-        Ie = {
+        Ie = () => (0, x.jsxs)("div", {
+          className: "b39a5d752efba84c2088",
+          children: [(0, x.jsx)("div", {
+            className: "abd863939e037fa8cd4a"
+          }), (0, x.jsx)("h3", {
+            children: "Standard Deviation is now a part of Rockstar Games."
+          })]
+        }),
+        Ce = {
           "frontline-heroes": (0, s.lazy)((() => n.e(118).then(n.bind(n, 9118)))),
           "gta-tv": (0, s.lazy)((() => n.e(414).then(n.t.bind(n, 3414, 23)))),
           "modules-core-gif-viewer": (0, s.lazy)((() => n.e(774).then(n.t.bind(n, 2774, 23)))),
@@ -1279,9 +1287,9 @@
           "sites-red-dead-online": (0, s.lazy)((() => n.e(308).then(n.t.bind(n, 308, 23)))),
           "sites-rockstargames-downloads": (0, s.lazy)((() => n.e(70).then(n.t.bind(n, 1070, 23))))
         },
-        Ce = function(e) {
+        qe = function(e) {
           let a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-          const n = Ie[e],
+          const n = Ce[e],
             {
               setHeaderHidden: i
             } = (0, v.useRockstarLocalState)();
@@ -1293,7 +1301,7 @@
             })
           })
         },
-        qe = (0, o.withSearchbarErrorBoundary)((() => {
+        Ge = (0, o.withSearchbarErrorBoundary)((() => {
           const e = [{
             path: "/",
             element: (0, x.jsx)(F, {})
@@ -1308,7 +1316,7 @@
             element: (0, x.jsx)(ue, {})
           }, {
             path: "/contact",
-            element: (0, x.jsx)(De, {})
+            element: (0, x.jsx)(Ae, {})
           }, {
             path: "/cookies",
             element: (0, x.jsx)(be, {})
@@ -1333,47 +1341,50 @@
               title: "v"
             })
           }, {
+            path: "/standarddeviation",
+            element: (0, x.jsx)(Ie, {})
+          }, {
             path: "/careers/*",
-            element: Ce("sites-careers")
+            element: qe("sites-careers")
           }, {
             path: "/downloads/*",
-            element: Ce("sites-rockstargames-downloads")
+            element: qe("sites-rockstargames-downloads")
           }, {
             path: "/reddeadonline/*",
-            element: Ce("sites-red-dead-online")
+            element: qe("sites-red-dead-online")
           }, {
             path: "/frontline-heroes",
-            element: Ce("frontline-heroes")
+            element: qe("frontline-heroes")
           }, {
             path: "/gifs/:hashId",
-            element: Ce("modules-core-gif-viewer")
+            element: qe("modules-core-gif-viewer")
           }, {
             path: "/gta-v/*",
-            element: Ce("sites-gta-gen9", {
+            element: qe("sites-gta-gen9", {
               routeRoot: "/gta-v"
             })
           }, {
             path: "/gta-plus/*",
-            element: Ce("sites-gta-gen9", {
+            element: qe("sites-gta-gen9", {
               routeRoot: "/gta-plus"
             })
           }, {
             path: "/gta-online/*",
-            element: Ce("sites-gta-gen9", {
+            element: qe("sites-gta-gen9", {
               routeRoot: "/gta-online"
             })
           }, {
             path: "/GTATrilogy",
-            element: Ce("sites-gta-trilogy")
+            element: qe("sites-gta-trilogy")
           }, {
             path: "/gtatv/*",
-            element: Ce("gta-tv")
+            element: qe("gta-tv")
           }, {
             path: "/manuals",
             element: (0, x.jsx)(je, {})
           }, {
             path: "/manuals/music",
-            element: (0, x.jsx)(Ae, {})
+            element: (0, x.jsx)(De, {})
           }, {
             path: "/newswire",
             element: (0, x.jsx)(V, {})
@@ -1388,10 +1399,10 @@
             element: (0, x.jsx)(pe, {})
           }, {
             path: "/rockstartv/*",
-            element: Ce("rockstar-tv")
+            element: qe("rockstar-tv")
           }, {
             path: "/screenshot-viewer/*",
-            element: Ce("screenshot-viewer")
+            element: qe("screenshot-viewer")
           }, {
             path: "/search",
             element: (0, x.jsx)(le, {})
@@ -1400,7 +1411,7 @@
             element: (0, x.jsx)(Le, {})
           }, {
             path: "/videoplayer",
-            element: Ce("modules-core-videoplayer")
+            element: qe("modules-core-videoplayer")
           }, {
             path: "/videos",
             element: (0, x.jsx)(L, {})
@@ -1417,14 +1428,14 @@
           }];
           return (0, r.useRoutes)(e)
         })),
-        Ge = {
+        Oe = {
           main: "aaf63b52008f75924bfd",
           gameSite: "cd11032e8b42a51c2e09",
           "theme-std": "a11e15134625e6be7114",
           standalone: "c7d686e28fbcff5e154b",
           headerHidden: "cb24ea20571cdd3eeb64"
         },
-        Oe = (0, i.withAutoRouteTracking)((() => {
+        Be = (0, i.withAutoRouteTracking)((() => {
           const {
             state: {
               headerHidden: e,
@@ -1437,15 +1448,15 @@
             }))
           }), []), (0, x.jsx)("main", {
             role: "main",
-            className: [Ge.main, a ? Ge.standalone : "", e ? Ge.headerHidden : ""].join(" "),
-            children: (0, x.jsx)(qe, {})
+            className: [Oe.main, a ? Oe.standalone : "", e ? Oe.headerHidden : ""].join(" "),
+            children: (0, x.jsx)(Ge, {})
           })
         })),
-        Be = ((0, k.makeVar)({
+        Pe = ((0, k.makeVar)({
           base: "",
           navOpen: !1
         }), document.location.pathname),
-        Pe = {
+        Re = {
           search: "",
           navOpen: !1,
           navHidden: !1,
@@ -1453,7 +1464,7 @@
           normalLogo: !0,
           loading: !1,
           headerHidden: !1,
-          standalone: (["/careers", "/gta-v/thankyou", "/gifs", "/frontline-heroes", "/gtatv", "/gta-v/thankyou", "/rockstartv", "/screenshot-viewer", "/videoplayer"].find((e => Be.includes(e))) ?? []).length > 0,
+          standalone: (["/careers", "/gta-v/thankyou", "/gifs", "/frontline-heroes", "/gtatv", "/gta-v/thankyou", "/rockstartv", "/screenshot-viewer", "/videoplayer"].find((e => Pe.includes(e))) ?? []).length > 0,
           error: {
             message: window?.errorFromServer?.message ?? null,
             code: window?.errorFromServer?.code ?? null
@@ -1463,15 +1474,15 @@
             filter: ""
           }
         },
-        Re = (0, k.makeVar)(Pe),
-        Ue = window?.env?.graphEnv ?? "prod",
-        ze = e => {
+        Ue = (0, k.makeVar)(Re),
+        ze = window?.env?.graphEnv ?? "prod",
+        Me = e => {
           let a, {
             children: n
           } = e;
           return a = !1, n
         },
-        Me = () => {
+        He = () => {
           const [e] = (0, c.useModal)(), a = (0, k.useBase)(), {
             state: {
               standalone: n,
@@ -1486,38 +1497,38 @@
               const a = e.data?.type ?? null;
               "graph.titleUpdate" === a && d(e.data.title), "graph.loadingUpdate" === a && l(e.data.loading)
             }))
-          }), [l, d]), (0, x.jsx)(ze, {
+          }), [l, d]), (0, x.jsx)(Me, {
             children: (0, x.jsx)(f.ScrollProvider, {
               children: (0, x.jsx)(r.BrowserRouter, {
                 basename: a,
                 children: (0, x.jsxs)(g.RockstarUserProvider, {
                   pingPeriodically: 6e4,
-                  children: [e, (0, x.jsx)(o.ScrollToTop, {}), n ? "" : (0, x.jsx)(h.Header, {}), (0, x.jsx)(p.Menu, {}), (0, x.jsx)(Oe, {}), n ? "" : (0, x.jsx)(h.FooterNav, {})]
+                  children: [e, (0, x.jsx)(o.ScrollToTop, {}), n ? "" : (0, x.jsx)(h.Header, {}), (0, x.jsx)(p.Menu, {}), (0, x.jsx)(Be, {}), n ? "" : (0, x.jsx)(h.FooterNav, {})]
                 })
               })
             })
           })
         },
-        He = (0, k.withReactiveState)((() => (0, x.jsx)(c.ModalProvider, {
-          children: (0, x.jsx)(Me, {})
+        Qe = (0, k.withReactiveState)((() => (0, x.jsx)(c.ModalProvider, {
+          children: (0, x.jsx)(He, {})
         })), {
-          state: Re
+          state: Ue
         }),
-        Qe = (0, k.withRockstarGraph)(He, {
-          env: Ue,
+        Ke = (0, k.withRockstarGraph)(Qe, {
+          env: ze,
           typePolicies: {
             ...u()
           }
         }),
-        Ke = window?.env?.gtmId ?? null,
-        We = window?.env?.oneTrustId ?? null;
+        We = window?.env?.gtmId ?? null,
+        Je = window?.env?.oneTrustId ?? null;
       (0, i.init)({
-        id: Ke
+        id: We
       }), l()({
-        id: We,
+        id: Je,
         init: () => {
           const e = document.createElement("div");
-          document.body.appendChild(e), (0, d.s)(e).render((0, x.jsx)(Qe, {}))
+          document.body.appendChild(e), (0, d.s)(e).render((0, x.jsx)(Ke, {}))
         }
       })
     },

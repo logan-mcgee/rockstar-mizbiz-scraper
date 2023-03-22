@@ -1186,6 +1186,27 @@ section.c61473be173bf0339bad.ae70ef252c5b38a62b36 span {
   width: 100%
 }
 
+.b39a5d752efba84c2088 {
+  grid-gap: 2rem;
+  align-content: center;
+  display: grid;
+  justify-items: center;
+  min-height: calc(100vh - var(--header-height));
+  padding: 1rem;
+  text-align: center
+}
+
+.abd863939e037fa8cd4a {
+  background: url(../img/abcf26dbf78f44eb396f.svg) no-repeat 50%/contain;
+  width: 245px
+}
+
+.abd863939e037fa8cd4a:after {
+  content: "";
+  display: block;
+  padding-top: 92.1875%
+}
+
 .aaf63b52008f75924bfd {
   color: var(--body-color);
   display: flex;
