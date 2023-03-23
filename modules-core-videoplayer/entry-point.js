@@ -4,9 +4,9 @@ var modules_core_videoplayer;
   var e, r, t, n, a = {
       215: (e, r, t) => {
         var n = {
-            "./index": () => Promise.all([t.e(102), t.e(613), t.e(727), t.e(710)]).then((() => () => t(710))),
-            "./lazy": () => Promise.all([t.e(102), t.e(613), t.e(727), t.e(78)]).then((() => () => t(78))),
-            "./tinaBlockTemplates": () => Promise.all([t.e(291), t.e(613), t.e(448)]).then((() => () => t(448)))
+            "./index": () => Promise.all([t.e(957), t.e(613), t.e(689), t.e(723)]).then((() => () => t(723))),
+            "./lazy": () => Promise.all([t.e(957), t.e(613), t.e(689), t.e(425)]).then((() => () => t(425))),
+            "./tinaBlockTemplates": () => Promise.all([t.e(345), t.e(613), t.e(352)]).then((() => () => t(352)))
           },
           a = (e, r) => (t.R = r, r = t.o(n, e) ? n[e]() : Promise.resolve().then((() => {
             throw new Error('Module "' + e + '" does not exist in container.')
@@ -108,18 +108,18 @@ var modules_core_videoplayer;
       get: r[t]
     })
   }, i.f = {}, i.e = e => Promise.all(Object.keys(i.f).reduce(((r, t) => (i.f[t](e, r), r)), [])), i.u = e => "js/" + {
-    78: "42474b03f226cdad4a56",
-    102: "da4082e05cf378b6bf19",
-    291: "324a90be19db59daf52d",
-    448: "58682755d9f513670cf6",
-    613: "6345e878076b050b012f",
-    661: "54e6fcffdd4f084d5f38",
-    710: "50f055e13f8198d4694e",
-    727: "ebdb3425d511bd419418"
+    345: "682bb1cde8e9b1c1eb1f",
+    352: "39cb9011822ee6bc2f0b",
+    425: "f14fe0006ef858f849cb",
+    613: "be0fa2b31d5e56a893b1",
+    627: "8e810be9bcb4ca221083",
+    689: "918a8364515cead52ced",
+    723: "16e6614a8169a9fb6b7d",
+    957: "23377ac2ed20e8e4a2ce"
   } [e] + ".js", i.miniCssF = e => "css/" + {
-    78: "878fcf52f09190b367d5",
-    710: "e5d9d3aee53115dbb6f3",
-    727: "0987ffe7ca8cac983a66"
+    425: "878fcf52f09190b367d5",
+    689: "0987ffe7ca8cac983a66",
+    723: "e5d9d3aee53115dbb6f3"
   } [e] + ".css", i.g = function() {
     if ("object" == typeof globalThis) return globalThis;
     try {
@@ -140,16 +140,16 @@ var modules_core_videoplayer;
           }
         }
       s || (d = !0, (s = document.createElement("script")).charset = "utf-8", s.timeout = 120, i.nc && s.setAttribute("nonce", i.nc), s.setAttribute("data-webpack", r + a), s.src = t), e[t] = [n];
-      var c = (r, n) => {
-          s.onerror = s.onload = null, clearTimeout(p);
+      var p = (r, n) => {
+          s.onerror = s.onload = null, clearTimeout(c);
           var a = e[t];
           if (delete e[t], s.parentNode && s.parentNode.removeChild(s), a && a.forEach((e => e(n))), r) return r(n)
         },
-        p = setTimeout(c.bind(null, void 0, {
+        c = setTimeout(p.bind(null, void 0, {
           type: "timeout",
           target: s
         }), 12e4);
-      s.onerror = c.bind(null, s.onerror), s.onload = c.bind(null, s.onload), d && document.head.appendChild(s)
+      s.onerror = p.bind(null, s.onerror), s.onload = p.bind(null, s.onload), d && document.head.appendChild(s)
     }
   }, i.r = e => {
     "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
@@ -158,9 +158,9 @@ var modules_core_videoplayer;
       value: !0
     })
   }, i.nmd = e => (e.paths = [], e.children || (e.children = []), e), t = {
-    448: [374, 616, 761],
+    352: [374, 616, 761],
     613: [859, 976],
-    727: [194, 929]
+    689: [194, 929]
   }, n = {
     194: ["default", "./index", 850],
     374: ["default", "./ui", 489],
@@ -234,7 +234,7 @@ var modules_core_videoplayer;
           var a = o[e] = o[e] || {},
             d = a[r];
           (!d || !d.loaded && (1 != !d.eager ? n : s > d.from)) && (a[r] = {
-            get: () => i.e(661).then((() => () => i(661))),
+            get: () => i.e(627).then((() => () => i(627))),
             from: s,
             eager: !1
           })
@@ -286,13 +286,13 @@ var modules_core_videoplayer;
             } else "s" != f && "n" != f && (d = !1, s--)
           }
         }
-        var c = [],
-          p = c.pop.bind(c);
+        var p = [],
+          c = p.pop.bind(p);
         for (i = 1; i < t.length; i++) {
           var h = t[i];
-          c.push(1 == h ? p() | p() : 2 == h ? p() & p() : h ? r(h, n) : !p())
+          p.push(1 == h ? c() | c() : 2 == h ? c() & c() : h ? r(h, n) : !c())
         }
-        return !!p()
+        return !!c()
       },
       t = (t, n, a) => {
         var o = t[n];
@@ -320,7 +320,7 @@ var modules_core_videoplayer;
       })),
       a = {},
       o = {
-        822: () => n("default", "react", [1, 18, 2, 0], (() => i.e(661).then((() => () => i(661)))))
+        822: () => n("default", "react", [1, 18, 2, 0], (() => i.e(627).then((() => () => i(627)))))
       },
       s = {
         613: [822]
@@ -353,9 +353,9 @@ var modules_core_videoplayer;
       };
       i.f.miniCss = (r, t) => {
         e[r] ? t.push(e[r]) : 0 !== e[r] && {
-          78: 1,
-          710: 1,
-          727: 1
+          425: 1,
+          689: 1,
+          723: 1
         } [r] && t.push(e[r] = (e => new Promise(((r, t) => {
           var n = i.miniCssF(e),
             a = i.p + n;

@@ -1,12 +1,12 @@
 var modules_sc_ugc_spotlight;
 (() => {
   "use strict";
-  var e, r, t, n, a, o, i = {
+  var e, r, t, n, a = {
       5041: (e, r, t) => {
         var n = {
-            "./bootstrap": () => t.e(284).then((() => () => t(6284))),
-            "./index": () => t.e(910).then((() => () => t(4910))),
-            "./tinaBlockTemplates": () => t.e(593).then((() => () => t(4593)))
+            "./bootstrap": () => t.e(470).then((() => () => t(3470))),
+            "./index": () => t.e(24).then((() => () => t(24))),
+            "./tinaBlockTemplates": () => t.e(796).then((() => () => t(1796)))
           },
           a = (e, r) => (t.R = r, r = t.o(n, e) ? n[e]() : Promise.resolve().then((() => {
             throw new Error('Module "' + e + '" does not exist in container.')
@@ -97,73 +97,73 @@ var modules_sc_ugc_spotlight;
         })).then((() => utils))
       }
     },
-    s = {};
+    o = {};
 
-  function l(e) {
-    var r = s[e];
+  function i(e) {
+    var r = o[e];
     if (void 0 !== r) return r.exports;
-    var t = s[e] = {
+    var t = o[e] = {
       exports: {}
     };
-    return i[e](t, t.exports, l), t.exports
+    return a[e](t, t.exports, i), t.exports
   }
-  l.m = i, l.c = s, l.n = e => {
+  i.m = a, i.c = o, i.n = e => {
     var r = e && e.__esModule ? () => e.default : () => e;
-    return l.d(r, {
+    return i.d(r, {
       a: r
     }), r
-  }, l.d = (e, r) => {
-    for (var t in r) l.o(r, t) && !l.o(e, t) && Object.defineProperty(e, t, {
+  }, i.d = (e, r) => {
+    for (var t in r) i.o(r, t) && !i.o(e, t) && Object.defineProperty(e, t, {
       enumerable: !0,
       get: r[t]
     })
-  }, l.f = {}, l.e = e => Promise.all(Object.keys(l.f).reduce(((r, t) => (l.f[t](e, r), r)), [])), l.u = e => "js/" + {
-    30: "b6f30ea56ce69329c932",
-    148: "7ab17d711f8b61bd033b",
-    284: "4eae09f2baada444ab3b",
-    593: "69a9998e9d2fed3327e5",
-    910: "70c663a68b47c99900a8",
-    982: "446fe721138162ee177f"
-  } [e] + ".js", l.miniCssF = e => "css/430e0b804e47f42a390c.css", l.g = function() {
+  }, i.f = {}, i.e = e => Promise.all(Object.keys(i.f).reduce(((r, t) => (i.f[t](e, r), r)), [])), i.u = e => "js/" + {
+    24: "1410abde782be3349b98",
+    346: "97fccf166bca5abdefcd",
+    428: "558b906c7fe7f2d5b361",
+    470: "c657825ba48df2f8bbf3",
+    627: "5cfa5a29acd0229782e1",
+    796: "c303a7e2e8ce818deed0"
+  } [e] + ".js", i.miniCssF = e => "css/430e0b804e47f42a390c.css", i.g = function() {
     if ("object" == typeof globalThis) return globalThis;
     try {
       return this || new Function("return this")()
     } catch (e) {
       if ("object" == typeof window) return window
     }
-  }(), l.o = (e, r) => Object.prototype.hasOwnProperty.call(e, r), e = {}, r = "@rockstargames/modules-sc-ugc-spotlight:", l.l = (t, n, a, o) => {
+  }(), i.o = (e, r) => Object.prototype.hasOwnProperty.call(e, r), e = {}, r = "@rockstargames/modules-sc-ugc-spotlight:", i.l = (t, n, a, o) => {
     if (e[t]) e[t].push(n);
     else {
-      var i, s;
+      var s, l;
       if (void 0 !== a)
         for (var u = document.getElementsByTagName("script"), d = 0; d < u.length; d++) {
           var f = u[d];
           if (f.getAttribute("src") == t || f.getAttribute("data-webpack") == r + a) {
-            i = f;
+            s = f;
             break
           }
         }
-      i || (s = !0, (i = document.createElement("script")).charset = "utf-8", i.timeout = 120, l.nc && i.setAttribute("nonce", l.nc), i.setAttribute("data-webpack", r + a), i.src = t), e[t] = [n];
+      s || (l = !0, (s = document.createElement("script")).charset = "utf-8", s.timeout = 120, i.nc && s.setAttribute("nonce", i.nc), s.setAttribute("data-webpack", r + a), s.src = t), e[t] = [n];
       var p = (r, n) => {
-          i.onerror = i.onload = null, clearTimeout(c);
+          s.onerror = s.onload = null, clearTimeout(c);
           var a = e[t];
-          if (delete e[t], i.parentNode && i.parentNode.removeChild(i), a && a.forEach((e => e(n))), r) return r(n)
+          if (delete e[t], s.parentNode && s.parentNode.removeChild(s), a && a.forEach((e => e(n))), r) return r(n)
         },
         c = setTimeout(p.bind(null, void 0, {
           type: "timeout",
-          target: i
+          target: s
         }), 12e4);
-      i.onerror = p.bind(null, i.onerror), i.onload = p.bind(null, i.onload), s && document.head.appendChild(i)
+      s.onerror = p.bind(null, s.onerror), s.onload = p.bind(null, s.onload), l && document.head.appendChild(s)
     }
-  }, l.r = e => {
+  }, i.r = e => {
     "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
       value: "Module"
     }), Object.defineProperty(e, "__esModule", {
       value: !0
     })
   }, t = {
-    593: [3616],
-    982: [1458, 2324, 3657, 4859, 5269, 6711, 7842, 8976]
+    346: [1458, 2324, 3657, 4859, 5269, 6711, 7842, 8976],
+    796: [3616]
   }, n = {
     1458: ["default", "./providers", 7426],
     2324: ["default", "./helpers", 1489],
@@ -174,19 +174,19 @@ var modules_sc_ugc_spotlight;
     6711: ["default", "./index", 7426],
     7842: ["default", "./browser", 692],
     8976: ["default", "./index", 9525]
-  }, l.f.remotes = (e, r) => {
-    l.o(t, e) && t[e].forEach((e => {
-      var t = l.R;
+  }, i.f.remotes = (e, r) => {
+    i.o(t, e) && t[e].forEach((e => {
+      var t = i.R;
       t || (t = []);
       var a = n[e];
       if (!(t.indexOf(a) >= 0)) {
         if (t.push(a), a.p) return r.push(a.p);
         var o = r => {
-            r || (r = new Error("Container missing")), "string" == typeof r.message && (r.message += '\nwhile loading "' + a[1] + '" from ' + a[2]), l.m[e] = () => {
+            r || (r = new Error("Container missing")), "string" == typeof r.message && (r.message += '\nwhile loading "' + a[1] + '" from ' + a[2]), i.m[e] = () => {
               throw r
             }, a.p = 0
           },
-          i = (e, t, n, i, s, l) => {
+          s = (e, t, n, i, s, l) => {
             try {
               var u = e(t, n);
               if (!u || !u.then) return s(u, i, l);
@@ -197,61 +197,65 @@ var modules_sc_ugc_spotlight;
               o(e)
             }
           },
-          s = (e, r, n) => i(r.get, a[1], t, 0, u, n),
+          l = (e, r, n) => s(r.get, a[1], t, 0, u, n),
           u = r => {
-            a.p = 1, l.m[e] = e => {
+            a.p = 1, i.m[e] = e => {
               e.exports = r()
             }
           };
-        i(l, a[2], 0, 0, ((e, r, t) => e ? i(l.I, a[0], 0, e, s, t) : o()), 1)
+        s(i, a[2], 0, 0, ((e, r, t) => e ? s(i.I, a[0], 0, e, l, t) : o()), 1)
       }
     }))
   }, (() => {
-    l.S = {};
+    i.S = {};
     var e = {},
       r = {};
-    l.I = (t, n) => {
+    i.I = (t, n) => {
       n || (n = []);
-      var a, o, i, s, u = r[t];
-      if (u || (u = r[t] = {}), !(n.indexOf(u) >= 0)) {
-        if (n.push(u), e[t]) return e[t];
-        l.o(l.S, t) || (l.S[t] = {});
-        var d = l.S[t],
-          f = "@rockstargames/modules-sc-ugc-spotlight",
-          p = e => {
+      var a = r[t];
+      if (a || (a = r[t] = {}), !(n.indexOf(a) >= 0)) {
+        if (n.push(a), e[t]) return e[t];
+        i.o(i.S, t) || (i.S[t] = {});
+        var o = i.S[t],
+          s = "@rockstargames/modules-sc-ugc-spotlight",
+          l = e => {
             var r = e => {
               return r = "Initialization of sharing external failed: " + e, "undefined" != typeof console && console.warn && console.warn(r);
               var r
             };
             try {
-              var a = l(e);
+              var a = i(e);
               if (!a) return;
-              var o = e => e && e.init && e.init(l.S[t], n);
-              if (a.then) return c.push(a.then(o, r));
-              var i = o(a);
-              if (i && i.then) return c.push(i.catch(r))
+              var o = e => e && e.init && e.init(i.S[t], n);
+              if (a.then) return u.push(a.then(o, r));
+              var s = o(a);
+              if (s && s.then) return u.push(s.catch(r))
             } catch (e) {
               r(e)
             }
           },
-          c = [];
-        return "default" === t && (a = "18.2.0", i = d.react = d.react || {}, (!(s = i[a]) || !s.loaded && (1 != !s.eager ? o : f > s.from)) && (i[a] = {
-          get: () => l.e(30).then((() => () => l(6030))),
-          from: f,
-          eager: !1
-        }), p(1489), p(9525), p(5171), p(7426), p(692), p(8810)), c.length ? e[t] = Promise.all(c).then((() => e[t] = 1)) : e[t] = 1
+          u = [];
+        return "default" === t && (((e, r, t, n) => {
+          var a = o[e] = o[e] || {},
+            l = a[r];
+          (!l || !l.loaded && (1 != !l.eager ? n : s > l.from)) && (a[r] = {
+            get: () => i.e(627).then((() => () => i(6627))),
+            from: s,
+            eager: !1
+          })
+        })("react", "18.2.0"), l(1489), l(9525), l(5171), l(7426), l(692), l(8810)), u.length ? e[t] = Promise.all(u).then((() => e[t] = 1)) : e[t] = 1
       }
     }
   })(), (() => {
     var e;
-    l.g.importScripts && (e = l.g.location + "");
-    var r = l.g.document;
+    i.g.importScripts && (e = i.g.location + "");
+    var r = i.g.document;
     if (!e && r && (r.currentScript && (e = r.currentScript.src), !e)) {
       var t = r.getElementsByTagName("script");
       t.length && (e = t[t.length - 1].src)
     }
     if (!e) throw new Error("Automatic publicPath is not supported in this browser");
-    e = e.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/"), l.p = e
+    e = e.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/"), i.p = e
   })(), (() => {
     var e = e => {
         var r = e => e.split(".").map((e => +e == e ? +e : e)),
@@ -313,112 +317,117 @@ var modules_sc_ugc_spotlight;
         })(t, n) ? t : n), 0)) && o[n]
       },
       n = (e => function(r, t, n, a) {
-        var o = l.I(r);
-        return o && o.then ? o.then(e.bind(e, r, l.S[r], t, n, a)) : e(r, l.S[r], t, n, a)
+        var o = i.I(r);
+        return o && o.then ? o.then(e.bind(e, r, i.S[r], t, n, a)) : e(r, i.S[r], t, n, a)
       })(((e, r, n, a, o) => {
-        var i = r && l.o(r, n) && t(r, n, a);
-        return i ? (e => (e.loaded = 1, e.get()))(i) : o()
+        var s = r && i.o(r, n) && t(r, n, a);
+        return s ? (e => (e.loaded = 1, e.get()))(s) : o()
       })),
       a = {},
       o = {
-        822: () => n("default", "react", [1, 18, 2, 0], (() => l.e(30).then((() => () => l(6030)))))
+        822: () => n("default", "react", [1, 18, 2, 0], (() => i.e(627).then((() => () => i(6627)))))
       },
-      i = {
-        982: [822]
+      s = {
+        346: [822]
       };
-    l.f.consumes = (e, r) => {
-      l.o(i, e) && i[e].forEach((e => {
-        if (l.o(a, e)) return r.push(a[e]);
+    i.f.consumes = (e, r) => {
+      i.o(s, e) && s[e].forEach((e => {
+        if (i.o(a, e)) return r.push(a[e]);
         var t = r => {
-            a[e] = 0, l.m[e] = t => {
-              delete l.c[e], t.exports = r()
+            a[e] = 0, i.m[e] = t => {
+              delete i.c[e], t.exports = r()
             }
           },
           n = r => {
-            delete a[e], l.m[e] = t => {
-              throw delete l.c[e], r
+            delete a[e], i.m[e] = t => {
+              throw delete i.c[e], r
             }
           };
         try {
-          var i = o[e]();
-          i.then ? r.push(a[e] = i.then(t).catch(n)) : t(i)
+          var s = o[e]();
+          s.then ? r.push(a[e] = s.then(t).catch(n)) : t(s)
         } catch (e) {
           n(e)
         }
       }))
     }
-  })(), a = e => new Promise(((r, t) => {
-    var n = l.miniCssF(e),
-      a = l.p + n;
-    if (((e, r) => {
-        for (var t = document.getElementsByTagName("link"), n = 0; n < t.length; n++) {
-          var a = (i = t[n]).getAttribute("data-href") || i.getAttribute("href");
-          if ("stylesheet" === i.rel && (a === e || a === r)) return i
-        }
-        var o = document.getElementsByTagName("style");
-        for (n = 0; n < o.length; n++) {
-          var i;
-          if ((a = (i = o[n]).getAttribute("data-href")) === e || a === r) return i
-        }
-      })(n, a)) return r();
-    ((e, r, t, n) => {
-      var a = document.createElement("link");
-      a.rel = "stylesheet", a.type = "text/css", a.onerror = a.onload = o => {
-        if (a.onerror = a.onload = null, "load" === o.type) t();
-        else {
-          var i = o && ("load" === o.type ? "missing" : o.type),
-            s = o && o.target && o.target.href || r,
-            l = new Error("Loading CSS chunk " + e + " failed.\n(" + s + ")");
-          l.code = "CSS_CHUNK_LOAD_FAILED", l.type = i, l.request = s, a.parentNode.removeChild(a), n(l)
-        }
-      }, a.href = r, document.head.appendChild(a)
-    })(e, a, r, t)
-  })), o = {
-    711: 0
-  }, l.f.miniCss = (e, r) => {
-    o[e] ? r.push(o[e]) : 0 !== o[e] && {
-      982: 1
-    } [e] && r.push(o[e] = a(e).then((() => {
-      o[e] = 0
-    }), (r => {
-      throw delete o[e], r
-    })))
-  }, (() => {
+  })(), (() => {
+    if ("undefined" != typeof document) {
+      var e = {
+        711: 0
+      };
+      i.f.miniCss = (r, t) => {
+        e[r] ? t.push(e[r]) : 0 !== e[r] && {
+          346: 1
+        } [r] && t.push(e[r] = (e => new Promise(((r, t) => {
+          var n = i.miniCssF(e),
+            a = i.p + n;
+          if (((e, r) => {
+              for (var t = document.getElementsByTagName("link"), n = 0; n < t.length; n++) {
+                var a = (i = t[n]).getAttribute("data-href") || i.getAttribute("href");
+                if ("stylesheet" === i.rel && (a === e || a === r)) return i
+              }
+              var o = document.getElementsByTagName("style");
+              for (n = 0; n < o.length; n++) {
+                var i;
+                if ((a = (i = o[n]).getAttribute("data-href")) === e || a === r) return i
+              }
+            })(n, a)) return r();
+          ((e, r, t, n, a) => {
+            var o = document.createElement("link");
+            o.rel = "stylesheet", o.type = "text/css", o.onerror = o.onload = t => {
+              if (o.onerror = o.onload = null, "load" === t.type) n();
+              else {
+                var i = t && ("load" === t.type ? "missing" : t.type),
+                  s = t && t.target && t.target.href || r,
+                  l = new Error("Loading CSS chunk " + e + " failed.\n(" + s + ")");
+                l.code = "CSS_CHUNK_LOAD_FAILED", l.type = i, l.request = s, o.parentNode.removeChild(o), a(l)
+              }
+            }, o.href = r, document.head.appendChild(o)
+          })(e, a, 0, r, t)
+        })))(r).then((() => {
+          e[r] = 0
+        }), (t => {
+          throw delete e[r], t
+        })))
+      }
+    }
+  })(), (() => {
     var e = {
       711: 0
     };
-    l.f.j = (r, t) => {
-      var n = l.o(e, r) ? e[r] : void 0;
+    i.f.j = (r, t) => {
+      var n = i.o(e, r) ? e[r] : void 0;
       if (0 !== n)
         if (n) t.push(n[2]);
         else {
           var a = new Promise(((t, a) => n = e[r] = [t, a]));
           t.push(n[2] = a);
-          var o = l.p + l.u(r),
-            i = new Error;
-          l.l(o, (t => {
-            if (l.o(e, r) && (0 !== (n = e[r]) && (e[r] = void 0), n)) {
+          var o = i.p + i.u(r),
+            s = new Error;
+          i.l(o, (t => {
+            if (i.o(e, r) && (0 !== (n = e[r]) && (e[r] = void 0), n)) {
               var a = t && ("load" === t.type ? "missing" : t.type),
                 o = t && t.target && t.target.src;
-              i.message = "Loading chunk " + r + " failed.\n(" + a + ": " + o + ")", i.name = "ChunkLoadError", i.type = a, i.request = o, n[1](i)
+              s.message = "Loading chunk " + r + " failed.\n(" + a + ": " + o + ")", s.name = "ChunkLoadError", s.type = a, s.request = o, n[1](s)
             }
           }), "chunk-" + r, r)
         }
     };
     var r = (r, t) => {
         var n, a, o = t[0],
-          i = t[1],
-          s = t[2],
+          s = t[1],
+          l = t[2],
           u = 0;
         if (o.some((r => 0 !== e[r]))) {
-          for (n in i) l.o(i, n) && (l.m[n] = i[n]);
-          s && s(l)
+          for (n in s) i.o(s, n) && (i.m[n] = s[n]);
+          l && l(i)
         }
-        for (r && r(t); u < o.length; u++) a = o[u], l.o(e, a) && e[a] && e[a][0](), e[a] = 0
+        for (r && r(t); u < o.length; u++) a = o[u], i.o(e, a) && e[a] && e[a][0](), e[a] = 0
       },
       t = self.webpackChunk_rockstargames_modules_sc_ugc_spotlight = self.webpackChunk_rockstargames_modules_sc_ugc_spotlight || [];
     t.forEach(r.bind(null, 0)), t.push = r.bind(null, t.push.bind(t))
   })();
-  var u = l(5041);
-  modules_sc_ugc_spotlight = u
+  var s = i(5041);
+  modules_sc_ugc_spotlight = s
 })();
