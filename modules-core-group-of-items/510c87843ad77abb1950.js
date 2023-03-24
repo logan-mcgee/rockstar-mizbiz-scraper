@@ -47,6 +47,8 @@
               label: "Description",
               name: "description",
               component: "html"
+            }), (0, a.StyleField)({
+              filter: "text"
             })]
           }, (0, a.StyleField)({
             filter: "grid"

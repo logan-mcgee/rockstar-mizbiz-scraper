@@ -81,9 +81,9 @@ var modules_core_group_of_items;
       get: r[t]
     })
   }, i.f = {}, i.e = e => Promise.all(Object.keys(i.f).reduce(((r, t) => (i.f[t](e, r), r)), [])), i.u = e => "js/" + {
-    4: "9c4eaa86a5ffc58c0b7d",
+    4: "510c87843ad77abb1950",
     627: "d94fc174b10d57cea361",
-    814: "915aec8d2d547c7eeb0a"
+    814: "6b2cae8ab16775fa9d13"
   } [e] + ".js", i.miniCssF = e => "css/a9b2e356e5b5a1966cd2.css", i.g = function() {
     if ("object" == typeof globalThis) return globalThis;
     try {
