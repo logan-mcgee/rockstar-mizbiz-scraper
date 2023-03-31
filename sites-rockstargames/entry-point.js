@@ -11570,6 +11570,18 @@ var sites_rockstargames;
           }), "sites_red_dead_online")
         })).then((() => sites_red_dead_online))
       },
+      7964: (e, t, n) => {
+        var r = new Error;
+        e.exports = new Promise(((e, t) => {
+          if ("undefined" != typeof sites_red_dead_redemption_2) return e();
+          n.l(window.mfe.path("@rockstargames/sites-red-dead-redemption-2"), (n => {
+            if ("undefined" != typeof sites_red_dead_redemption_2) return e();
+            var a = n && ("load" === n.type ? "missing" : n.type),
+              o = n && n.target && n.target.src;
+            r.message = "Loading script failed.\n(" + a + ": " + o + ")", r.name = "ScriptExternalLoadError", r.type = a, r.request = o, t(r)
+          }), "sites_red_dead_redemption_2")
+        })).then((() => sites_red_dead_redemption_2))
+      },
       665: (e, t, n) => {
         var r = new Error;
         e.exports = new Promise(((e, t) => {
@@ -11645,21 +11657,22 @@ var sites_rockstargames;
     107: "ecd1e571656edb2772a6",
     118: "88c041129bfcd3d51b73",
     142: "c356883c6a8464c49b6b",
-    178: "2722aafe4b14951f1df6",
     221: "6ee7276c9aa99bf1e645",
+    231: "950e1b306d6d4ceaa054",
     291: "2652f642cc090a1f0cb5",
     308: "ff03f23baf43c34a0dab",
     322: "e9ab8b08e55f7f34c6dd",
     396: "ffd370033785e88fe598",
     414: "1a8625df472693ea11ac",
-    445: "75251a2b700a0459cb55",
+    445: "e302f70d977d089a1288",
+    570: "05a2b5c44953311085a4",
     710: "35be5f10480a32ad88c1",
     774: "6df6b30e2c2c1ee395ef",
     829: "ccb14d8f87c8e5468539",
     876: "4759fb6c0541b18c3ba6"
   } [e] + ".js", u.miniCssF = e => "css/" + {
     118: "8bb7fa10a136865499b6",
-    178: "a531b6289b564e126eef",
+    231: "7e1d0116389d1cc7e015",
     396: "53d4c08eaf52f1a0c62c"
   } [e] + ".css", u.g = function() {
     if ("object" == typeof globalThis) return globalThis;
@@ -11702,11 +11715,12 @@ var sites_rockstargames;
     70: [1070],
     107: [4107],
     142: [1142],
-    178: [1458, 1968, 4224, 4524, 4690, 5269, 6077, 6331, 6921, 7842, 8008, 9349],
+    231: [1458, 1968, 4224, 4524, 4690, 5269, 6077, 6331, 6921, 7842, 8008, 9349],
     291: [6291],
     308: [308],
     396: [3657, 4859, 6711, 8976, 9929],
     414: [3414],
+    570: [2570],
     710: [1710],
     774: [2774],
     829: [3829],
@@ -11718,6 +11732,7 @@ var sites_rockstargames;
     1458: ["default", "./providers", 7426],
     1710: ["default", "./index", 7233],
     1968: ["default", "./providers", 8810],
+    2570: ["default", "./index", 7964],
     2774: ["default", "./lazy", 3113],
     3414: ["default", "./index", 5330],
     3657: ["default", "./hooks", 8810],
@@ -11809,7 +11824,7 @@ var sites_rockstargames;
             }
           },
           c = [];
-        return "default" === n && (i("react-dom", "18.2.0", (() => () => u(7469)), 1), i("react-router-dom", "6.9.0", (() => () => u(456)), 1), i("react-router", "6.9.0", (() => () => u(3059)), 1), i("react", "18.2.0", (() => () => u(6627)), 1), s(9525), s(5171), s(7426), s(8810), s(9220), s(6993), s(692), s(5330), s(3113), s(665), s(2443), s(7233), s(5599), s(9617), s(8013), s(4344)), c.length ? e[n] = Promise.all(c).then((() => e[n] = 1)) : e[n] = 1
+        return "default" === n && (i("react-dom", "18.2.0", (() => () => u(7469)), 1), i("react-router-dom", "6.9.0", (() => () => u(456)), 1), i("react-router", "6.9.0", (() => () => u(3059)), 1), i("react", "18.2.0", (() => () => u(6627)), 1), s(9525), s(5171), s(7426), s(8810), s(9220), s(6993), s(692), s(5330), s(3113), s(665), s(2443), s(7233), s(5599), s(9617), s(8013), s(7964), s(4344)), c.length ? e[n] = Promise.all(c).then((() => e[n] = 1)) : e[n] = 1
       }
     }
   })(), (() => {
@@ -11905,7 +11920,7 @@ var sites_rockstargames;
       }
     }));
     var l = {
-      178: [1466],
+      231: [1466],
       396: [3443]
     };
     u.f.consumes = (e, t) => {
@@ -11937,7 +11952,7 @@ var sites_rockstargames;
       u.f.miniCss = (t, n) => {
         e[t] ? n.push(e[t]) : 0 !== e[t] && {
           118: 1,
-          178: 1,
+          231: 1,
           396: 1
         } [t] && n.push(e[t] = (e => new Promise(((t, n) => {
           var r = u.miniCssF(e),
@@ -11980,7 +11995,7 @@ var sites_rockstargames;
       var r = u.o(e, t) ? e[t] : void 0;
       if (0 !== r)
         if (r) n.push(r[2]);
-        else if (/^([34]22|118|178|221|396|445)$/.test(t)) {
+        else if (/^([34]22|118|221|231|396|445)$/.test(t)) {
         var a = new Promise(((n, a) => r = e[t] = [n, a]));
         n.push(r[2] = a);
         var o = u.p + u.u(t),

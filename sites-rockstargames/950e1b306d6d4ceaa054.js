@@ -1,6 +1,6 @@
 (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
-  [178], {
-    1723: (e, a, n) => {
+  [231], {
+    533: (e, a, n) => {
       "use strict";
       n.r(a), n(7842);
       var i = n(6331),
@@ -293,7 +293,7 @@
       }));
       var P = n(3444),
         R = n.n(P);
-      const U = e => {
+      const z = e => {
           let {
             game: a,
             t: n
@@ -332,7 +332,7 @@
             children: n("Buy Now")
           }) : null
         },
-        z = e => {
+        U = e => {
           let {
             game: a
           } = e;
@@ -535,12 +535,12 @@
               className: "e3dd0b8721e5b51d0e97",
               children: [(0, x.jsxs)("div", {
                 className: "b76354fb05b980942662",
-                children: [(0, x.jsx)(z, {
+                children: [(0, x.jsx)(U, {
                   game: d,
                   t: a
                 }), (0, x.jsxs)("div", {
                   className: "e80d6fc21095d8e57319",
-                  children: [(0, x.jsx)(U, {
+                  children: [(0, x.jsx)(z, {
                     game: d,
                     t: a
                   }), d.has_official_site && (0, x.jsx)(o.Button, {
@@ -1285,6 +1285,7 @@
           "sites-gta-gen9": (0, s.lazy)((() => n.e(291).then(n.t.bind(n, 6291, 23)))),
           "sites-gta-trilogy": (0, s.lazy)((() => n.e(829).then(n.t.bind(n, 3829, 23)))),
           "sites-red-dead-online": (0, s.lazy)((() => n.e(308).then(n.t.bind(n, 308, 23)))),
+          "sites-red-dead-redemption-2": (0, s.lazy)((() => n.e(570).then(n.t.bind(n, 2570, 23)))),
           "sites-rockstargames-downloads": (0, s.lazy)((() => n.e(70).then(n.t.bind(n, 1070, 23))))
         },
         qe = function(e) {
@@ -1475,8 +1476,8 @@
             filter: ""
           }
         },
-        Ue = (0, k.makeVar)(Re),
-        ze = window?.env?.graphEnv ?? "prod",
+        ze = (0, k.makeVar)(Re),
+        Ue = window?.env?.graphEnv ?? "prod",
         Me = e => {
           let a, {
             children: n
@@ -1503,7 +1504,6 @@
               children: (0, x.jsx)(r.BrowserRouter, {
                 basename: a,
                 children: (0, x.jsxs)(g.RockstarUserProvider, {
-                  pingPeriodically: 6e4,
                   children: [e, (0, x.jsx)(o.ScrollToTop, {}), n ? "" : (0, x.jsx)(h.Header, {}), (0, x.jsx)(p.Menu, {}), (0, x.jsx)(Be, {}), n ? "" : (0, x.jsx)(h.FooterNav, {})]
                 })
               })
@@ -1513,10 +1513,10 @@
         Qe = (0, k.withReactiveState)((() => (0, x.jsx)(c.ModalProvider, {
           children: (0, x.jsx)(He, {})
         })), {
-          state: Ue
+          state: ze
         }),
         Ke = (0, k.withRockstarGraph)(Qe, {
-          env: ze,
+          env: Ue,
           typePolicies: {
             ...u()
           }
