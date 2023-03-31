@@ -1,0 +1,3030 @@
+.cc49415d2df0352f357b {
+  border-top: 1px solid #000;
+  color: #111;
+  font-size: var(--font-size-1);
+  margin-top: auto;
+  padding: 1rem;
+  text-transform: uppercase
+}
+
+.a2e740a3e030726b8f4c {
+  grid-gap: .5rem;
+  display: grid;
+  justify-items: center;
+  margin: 0 auto;
+  max-width: 1800px
+}
+
+@media (min-width:768px) {
+  .a2e740a3e030726b8f4c {
+    align-items: center;
+    grid-template-columns: 1fr 50px 1fr;
+    justify-items: inherit;
+    margin: 0 4rem
+  }
+}
+
+@media (min-width:1920px) {
+  .a2e740a3e030726b8f4c {
+    margin: 0 auto;
+    padding: 1rem 1.75rem;
+    width: 1800px
+  }
+}
+
+.cb79e97ad0b101a112c0 {
+  grid-template-columns: max-content 22px 22px
+}
+
+.b59ba2a782ff31e356d4 {
+  background: url(../img/5058d3d8c4ef7014ac28.svg) no-repeat 50%/contain
+}
+
+.b59ba2a782ff31e356d4:after {
+  content: "";
+  display: block;
+  padding-top: 100%
+}
+
+.f8d5e01c2aff097b658c {
+  background: url(../img/63dc6286b5e4caa48ce1.svg) no-repeat 50%/contain
+}
+
+.f8d5e01c2aff097b658c:after {
+  content: "";
+  display: block;
+  padding-top: 100%
+}
+
+.a0a17b83b90d4f570f12 {
+  background: url(../img/9d192e2455b2e5572dc2.svg) no-repeat 50%/contain;
+  order: -1;
+  width: 50px
+}
+
+.a0a17b83b90d4f570f12:after {
+  content: "";
+  display: block;
+  padding-top: 101.44927536%
+}
+
+@media (min-width:768px) {
+  .a0a17b83b90d4f570f12 {
+    order: unset
+  }
+}
+
+.fe31733e3d4248f2ef25,
+.cb79e97ad0b101a112c0 {
+  grid-gap: .5rem;
+  align-items: center;
+  display: grid;
+  line-height: 1
+}
+
+.fe31733e3d4248f2ef25 {
+  grid-auto-flow: column;
+  justify-content: right;
+  text-align: right
+}
+
+.fe31733e3d4248f2ef25 a:hover {
+  color: #555;
+  transition: color .2s
+}
+
+.cb012e66821114145092 {
+  display: grid
+}
+
+.cb012e66821114145092 form {
+  overflow: hidden
+}
+
+.f42c0dcfb3945c2e9276 {
+  grid-gap: .5rem;
+  align-content: center;
+  background: var(--standard-color);
+  display: grid;
+  font-size: .75rem;
+  grid-template-columns: 1fr 11px;
+  justify-content: center;
+  justify-items: center;
+  padding: .5rem 1rem;
+  text-align: center;
+  width: 100%
+}
+
+.f42c0dcfb3945c2e9276 p {
+  align-self: center;
+  justify-self: center
+}
+
+.f42c0dcfb3945c2e9276 p a {
+  text-decoration: underline !important
+}
+
+.f6f33a8c231b4c033e07 {
+  background: url(../img/f96dada7db7d4bb831ed.png) no-repeat 50%/11px;
+  border: none;
+  cursor: pointer;
+  padding: 1rem
+}
+
+.fc43abc4727024afd74e {
+  grid-gap: .75rem;
+  align-content: center;
+  background: #000;
+  color: #fff;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  padding: 1rem;
+  text-align: center
+}
+
+@media (min-width:1024px) {
+  .fc43abc4727024afd74e {
+    padding: 1.25rem
+  }
+}
+
+.fc43abc4727024afd74e h1 {
+  color: #fff !important;
+  font-size: 1.75rem
+}
+
+.b2fdd72e271098917bf0 {
+  background: url(../img/34bff16d7bfbda59b541.svg) no-repeat 50%/contain;
+  width: 70px
+}
+
+.b2fdd72e271098917bf0:after {
+  content: "";
+  display: block;
+  padding-top: 91.86046512%
+}
+
+.f35f70180df47063a0b5 {
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  left: 50%;
+  margin: 0 auto;
+  max-width: 60vw;
+  min-width: 300px;
+  position: fixed;
+  top: 20%;
+  transform: translate(-50%);
+  z-index: 999
+}
+
+@media (max-height:600px) {
+  .f35f70180df47063a0b5 {
+    max-height: 100%;
+    overflow-y: scroll;
+    top: 10vh
+  }
+}
+
+@media (min-width:768px) {
+  .f35f70180df47063a0b5 {
+    min-width: 500px
+  }
+}
+
+.f35f70180df47063a0b5 .e08d6e6928d1b9b75c6b {
+  align-self: end;
+  background: url(../img/f96dada7db7d4bb831ed.png) no-repeat 50%/11px;
+  border: none;
+  cursor: pointer;
+  padding: 1rem
+}
+
+.f35f70180df47063a0b5 .ee528068e83ff0d87716 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 2rem 2rem
+}
+
+.f35f70180df47063a0b5 .ee528068e83ff0d87716 .bdc30d6b402baeead010 {
+  font-family: var(--font-family-h, HelveticaNowDisplayBold);
+  margin: 0 0 .75rem;
+  text-transform: uppercase
+}
+
+.f35f70180df47063a0b5 .ee528068e83ff0d87716 .ab500f1c3a138fcd138f {
+  display: flex;
+  flex-direction: column;
+  width: 100%
+}
+
+.f35f70180df47063a0b5 .ee528068e83ff0d87716 .ab500f1c3a138fcd138f input[type=email],
+.f35f70180df47063a0b5 .ee528068e83ff0d87716 .ab500f1c3a138fcd138f input[type=text] {
+  margin: 0 0 .5rem;
+  padding: .5rem .25rem
+}
+
+.f35f70180df47063a0b5 .ee528068e83ff0d87716 .ab500f1c3a138fcd138f textarea {
+  margin: 0;
+  min-height: 165px;
+  padding: .5rem .25rem
+}
+
+.f35f70180df47063a0b5 .ee528068e83ff0d87716 .ab500f1c3a138fcd138f input[type=submit] {
+  background-color: #ffab00;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  padding: .5rem 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: transform .2s ease-in
+}
+
+.f35f70180df47063a0b5 .ee528068e83ff0d87716 .ab500f1c3a138fcd138f input[type=submit]:hover {
+  transform: translateY(-3px)
+}
+
+.f35f70180df47063a0b5 .e690df8ecf906dcdb3c4 {
+  margin: 1rem 0
+}
+
+.bd9fd462473d65e8877e {
+  background-color: #000;
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: .5;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 998
+}
+
+.bd9fd462473d65e8877e:hover {
+  cursor: pointer
+}
+
+.e12575564fe9725b362a {
+  grid-gap: 1.25rem;
+  align-items: baseline;
+  border-bottom: 1px solid #000;
+  display: grid;
+  font-family: HelveticaNeue-75Bld;
+  font-size: .65rem;
+  grid-auto-flow: column;
+  justify-content: start;
+  margin: 0 1rem;
+  overflow: hidden;
+  padding: 1.75rem 2rem 0;
+  text-transform: uppercase
+}
+
+@media (min-width:768px) {
+  .e12575564fe9725b362a {
+    margin: 0 4rem
+  }
+}
+
+@media (min-width:1920px) {
+  .e12575564fe9725b362a {
+    margin: 0 auto;
+    width: 1800px
+  }
+}
+
+.e12575564fe9725b362a a {
+  padding-bottom: .5rem;
+  position: relative
+}
+
+.e12575564fe9725b362a a:after {
+  background: #000;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 0;
+  left: 0;
+  position: absolute;
+  transition: height .2s;
+  width: 100%
+}
+
+.e12575564fe9725b362a a.feee4a61825bca411ac5:after,
+.e12575564fe9725b362a a:hover:after {
+  height: 3px
+}
+
+.e12575564fe9725b362a form input {
+  border: 1px solid #ccc;
+  color: #505050;
+  max-width: 30vw;
+  padding: .25rem .5rem;
+  width: 80px
+}
+
+@media (min-width:768px) {
+  .e12575564fe9725b362a form input {
+    width: 150px
+  }
+}
+
+.a2c4281c8f43d5c2c491 {
+  grid-gap: 1rem;
+  display: grid;
+  margin: 0 auto;
+  max-width: calc(var(--max-width-dynamic, 800px) + var(--padding-dynamic, 0px) * 2) !important;
+  width: 100%
+}
+
+.a2c4281c8f43d5c2c491 a {
+  text-decoration: underline
+}
+
+.a2c4281c8f43d5c2c491 h2 {
+  text-align: center
+}
+
+.a2c4281c8f43d5c2c491 h3 {
+  text-decoration: underline
+}
+
+.a082a5bca00c4d9981dc {
+  font-weight: 700
+}
+
+.c4b20405ad56a3b4dd00,
+.df8abe33c6a249e3cb46 {
+  grid-gap: 2rem;
+  display: grid
+}
+
+.df8abe33c6a249e3cb46 {
+  grid-template-columns: repeat(var(--numcols, 1), 1fr)
+}
+
+@media (min-width:768px) {
+  .df8abe33c6a249e3cb46 {
+    --numcols: 2
+  }
+}
+
+@media (min-width:1024px) {
+  .df8abe33c6a249e3cb46 {
+    --numcols: 3
+  }
+}
+
+@media (min-width:1920px) {
+  .df8abe33c6a249e3cb46 {
+    --numcols: 4
+  }
+}
+
+.df8abe33c6a249e3cb46 a {
+  grid-gap: .25rem;
+  bottom: 0;
+  display: grid;
+  left: 0;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  transition: bottom .4s
+}
+
+.df8abe33c6a249e3cb46 a:hover {
+  bottom: 3px
+}
+
+.df8abe33c6a249e3cb46 a dt {
+  font: 2.5rem var(--font-family-h);
+  font-weight: 400;
+  line-height: 1
+}
+
+.df8abe33c6a249e3cb46 a dd {
+  font-size: .65rem;
+  margin: 0
+}
+
+.f60af5cbf6af7455edea {
+  grid-gap: .5rem;
+  display: grid;
+  font-size: var(--font-size-2);
+  margin: 0 auto;
+  max-width: calc(var(--max-width-dynamic, 800px) + var(--padding-dynamic, 0px) * 2) !important;
+  width: 100%
+}
+
+@media (min-width:768px) {
+  .f60af5cbf6af7455edea {
+    margin: 0 auto
+  }
+}
+
+.f60af5cbf6af7455edea a {
+  color: #337ab7 !important;
+  cursor: pointer;
+  text-decoration: underline !important
+}
+
+.f60af5cbf6af7455edea a:hover {
+  color: #135188 !important
+}
+
+.d3fede0908a77a291bfc {
+  margin: 0 auto
+}
+
+.d3fede0908a77a291bfc .d79b2040f206df1a46a0 {
+  background-color: #ffab00;
+  border: none;
+  bottom: 0;
+  cursor: pointer;
+  font-weight: 700;
+  left: 0;
+  max-width: 300px;
+  padding: .5rem 1rem;
+  position: relative;
+  text-transform: uppercase;
+  transition: bottom .2s
+}
+
+.d3fede0908a77a291bfc .d79b2040f206df1a46a0:hover {
+  bottom: 3px
+}
+
+@font-face {
+  font-family: HelveticaNeue-75Bld;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/1f77dc180cc996938676.woff) format("woff")
+}
+
+.d6a6d2483c7a19b86881 {
+  -moz-column-break-inside: avoid;
+  break-inside: avoid;
+  margin: 0 0 1.5rem;
+  page-break-inside: avoid
+}
+
+@media (min-width:768px) {
+  .d6a6d2483c7a19b86881 {
+    margin: 0 0 2rem
+  }
+}
+
+.d6a6d2483c7a19b86881 h4 {
+  font-family: var(--rsg-font-family-h) !important;
+  font-size: var(--font-size-3) !important;
+  font-weight: 700;
+  letter-spacing: 0 !important;
+  margin: 1rem 0 .5rem !important;
+  text-transform: var(--text-transform-h)
+}
+
+.d6a6d2483c7a19b86881 h4:first-of-type {
+  margin: 0 0 .5rem !important
+}
+
+.f0a715c25c7b91159874 {
+  grid-gap: .55rem;
+  color: #111;
+  display: grid;
+  font-size: var(--font-size-3);
+  line-height: 1
+}
+
+@media (min-width:768px) {
+  .f0a715c25c7b91159874 {
+    font-size: var(--font-size-1)
+  }
+}
+
+.f0a715c25c7b91159874 a {
+  transition: color .3s
+}
+
+.f0a715c25c7b91159874 a:hover {
+  color: #666
+}
+
+.fbfa556311cc0fcc0906 {
+  grid-gap: 2rem;
+  display: grid
+}
+
+.a857fc1889ba5b594104 {
+  align-items: flex-start;
+  -moz-column-count: 1;
+  column-count: 1;
+  grid-template-columns: repeat(var(--numcols, 1), 1fr)
+}
+
+@media (min-width:768px) {
+  .a857fc1889ba5b594104 {
+    -moz-column-count: 3;
+    column-count: 3
+  }
+}
+
+@media (min-width:1024px) {
+  .a857fc1889ba5b594104 {
+    -moz-column-count: 4;
+    column-count: 4
+  }
+}
+
+@media (min-width:1920px) {
+  .a857fc1889ba5b594104 {
+    -moz-column-count: 5;
+    column-count: 5
+  }
+}
+
+@media (min-width:2560px) {
+  .a857fc1889ba5b594104 {
+    -moz-column-count: 6;
+    column-count: 6
+  }
+}
+
+.cb2070ba798f70a24146 {
+  grid-gap: 2rem;
+  display: grid
+}
+
+.ea48bb4e8e134b65a96b {
+  font-size: var(--font-size-1);
+  text-transform: uppercase
+}
+
+@media (min-width:768px) {
+  .ea48bb4e8e134b65a96b {
+    grid-gap: 1rem;
+    align-items: center;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start
+  }
+}
+
+.ea48bb4e8e134b65a96b span {
+  display: none
+}
+
+@media (min-width:768px) {
+  .ea48bb4e8e134b65a96b span {
+    display: inline-block
+  }
+}
+
+.ea48bb4e8e134b65a96b .e51b8f0742c0138ffeab {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%
+}
+
+@media (min-width:768px) {
+  .ea48bb4e8e134b65a96b .e51b8f0742c0138ffeab {
+    display: inline-block
+  }
+}
+
+.ea48bb4e8e134b65a96b .e51b8f0742c0138ffeab button {
+  background: none;
+  border: 1px solid #000;
+  cursor: pointer;
+  font-size: var(--font-size-2);
+  font-weight: 600;
+  line-height: 1;
+  opacity: .5;
+  padding: .75rem 1.25rem .65rem;
+  text-transform: uppercase;
+  transition: opacity .3s
+}
+
+@media (min-width:768px) {
+  .ea48bb4e8e134b65a96b .e51b8f0742c0138ffeab button {
+    font-size: unset;
+    padding: .65rem 1rem .5rem
+  }
+}
+
+.ea48bb4e8e134b65a96b .e51b8f0742c0138ffeab button:first-of-type {
+  margin-right: 16px
+}
+
+.ea48bb4e8e134b65a96b .e51b8f0742c0138ffeab button.eb8cffa4fdd3ba4f582a,
+.ea48bb4e8e134b65a96b .e51b8f0742c0138ffeab button:hover {
+  opacity: 1
+}
+
+.af07421b41d05eb636c2 {
+  -moz-column-count: 1;
+  column-count: 1
+}
+
+@media (min-width:768px) {
+  .af07421b41d05eb636c2 {
+    -moz-column-count: 2;
+    column-count: 2
+  }
+}
+
+@media (min-width:1024px) {
+  .af07421b41d05eb636c2 {
+    -moz-column-count: 4;
+    column-count: 4
+  }
+}
+
+@media (min-width:1920px) {
+  .af07421b41d05eb636c2 {
+    -moz-column-count: 5;
+    column-count: 5
+  }
+}
+
+.ea49c15802a4484e8380 {
+  -moz-column-break-inside: avoid;
+  break-inside: avoid;
+  margin: 0 0 1.75rem !important;
+  page-break-inside: avoid
+}
+
+.b7866b1d6c0afbba8ab8 {
+  line-height: 1
+}
+
+.b7866b1d6c0afbba8ab8 a {
+  grid-gap: .75rem;
+  display: grid;
+  grid-auto-flow: column;
+  margin: 0 0 .75rem
+}
+
+.b7866b1d6c0afbba8ab8.f18c31e32012b32cd0f9 a {
+  align-items: center;
+  grid-template-columns: 40px 1fr
+}
+
+.a9283744e85061b646c0 {
+  grid-gap: .5rem;
+  display: grid
+}
+
+.a9283744e85061b646c0 a {
+  text-decoration: underline
+}
+
+.f75b666913554bd8839f {
+  background-color: #ffab00;
+  border: none;
+  bottom: 0;
+  cursor: pointer;
+  font-weight: 700;
+  left: 0;
+  margin: 2rem 0;
+  max-width: 300px;
+  padding: .5rem 1rem;
+  position: relative;
+  text-transform: uppercase;
+  transition: bottom .2s
+}
+
+.f75b666913554bd8839f:hover {
+  bottom: 3px
+}
+
+@font-face {
+  font-family: HelveticaNeue-75Bld;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/1f77dc180cc996938676.woff) format("woff")
+}
+
+@font-face {
+  font-family: leaguegothic-regular-webfont;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/fb1fcd9058f72639849a.woff) format("woff")
+}
+
+.ce5d984f9667741c4c32 {
+  grid-gap: 2rem;
+  display: grid;
+  justify-content: flex-start
+}
+
+@media (min-width:1024px) {
+  .ce5d984f9667741c4c32 {
+    min-width: 1800px
+  }
+}
+
+.fb7497900f485b7f2086 {
+  grid-gap: .85rem;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 70px 1fr
+}
+
+.d40469300f9aab709d5e {
+  align-content: space-between;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  font-family: leaguegothic-regular-webfont;
+  justify-content: flex-end;
+  text-transform: uppercase
+}
+
+.d40469300f9aab709d5e h2 {
+  letter-spacing: 0 !important
+}
+
+.a8e5419aed657e6b6256 {
+  grid-gap: .75rem;
+  display: grid;
+  font-size: var(--font-size-3);
+  margin: 0 auto;
+  max-width: calc(var(--max-width-dynamic, 800px) + var(--padding-dynamic, 0px) * 2) !important;
+  width: 100%
+}
+
+@media (min-width:768px) {
+  .a8e5419aed657e6b6256 {
+    font-size: var(--font-size-2) !important
+  }
+}
+
+.a8e5419aed657e6b6256 ul {
+  margin: 0;
+  padding: 0
+}
+
+.a8e5419aed657e6b6256 h4 {
+  font-family: var(--rsg-font-family-h) !important;
+  font-size: var(--font-size-3) !important;
+  font-weight: 700;
+  letter-spacing: 0 !important;
+  margin: .75rem 0 .25rem !important
+}
+
+@media (min-width:768px) {
+  .a8e5419aed657e6b6256 h4 {
+    font-size: var(--font-size-2) !important
+  }
+}
+
+.ae80613c743d77803e5c {
+  font-size: var(--font-size-4);
+  line-height: 1
+}
+
+.ae80613c743d77803e5c a {
+  transition: color .2s
+}
+
+.ae80613c743d77803e5c a:hover {
+  color: #909090
+}
+
+.cfd7f46eb3ca403b2b3b {
+  grid-gap: .5rem;
+  display: grid;
+  justify-content: flex-start;
+  text-transform: uppercase
+}
+
+.cfd7f46eb3ca403b2b3b a {
+  cursor: pointer;
+  font: var(--font-size-2) HelveticaNeue-75Bld
+}
+
+.e17065c171512c1dafd3 {
+  background: #ffab00;
+  padding: .5rem 1.5rem;
+  text-align: center;
+  transition: transform .2s ease-in
+}
+
+.e17065c171512c1dafd3:hover {
+  transform: translateY(-3px)
+}
+
+.b64e6b84a06e62e54a4f {
+  grid-gap: .5rem;
+  color: #000 !important;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1rem 1fr;
+  padding: .5rem 0;
+  transition: color .2s
+}
+
+.b64e6b84a06e62e54a4f:before {
+  background: url(../img/9dbf41995b40bcbfd32a.png) no-repeat 50%/contain;
+  content: "";
+  display: block;
+  width: 1rem
+}
+
+.b64e6b84a06e62e54a4f:hover {
+  color: #909090 !important
+}
+
+.fea46db119d2e97b0b46 {
+  background: #d3d3d3;
+  padding: .5rem 1.5rem;
+  text-align: center;
+  transition: transform .2s ease-in
+}
+
+.fea46db119d2e97b0b46:hover {
+  transform: translateY(-3px)
+}
+
+.fee3148629e4a9bd084a {
+  display: block;
+  font-size: var(--font-size-2);
+  margin: 1rem 0 .25rem
+}
+
+.b09c4ae80bd36eb2c441 {
+  color: #777;
+  display: block;
+  font-size: var(--font-size-1)
+}
+
+.a15491b3c8142330c17a {
+  color: red;
+  margin: 0 0 0 .25rem
+}
+
+.a41fe732485a09be51ab {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 12.8px;
+  min-width: 100%;
+  padding: .39rem .45rem
+}
+
+@media (min-width:768px) {
+  .a41fe732485a09be51ab {
+    font-size: 14.4px;
+    max-width: 550px;
+    min-width: 550px
+  }
+}
+
+@media (min-width:1024px) {
+  .a41fe732485a09be51ab {
+    font-size: 16px;
+    max-width: 650px;
+    min-width: 650px;
+    padding: .34rem .45rem
+  }
+}
+
+.f5c85d286962da6fdd15 {
+  display: block;
+  font-size: var(--font-size-2);
+  margin: 1rem 0 .25rem
+}
+
+.f5c85d286962da6fdd15 .da9cd3edc5a2fddefa4f {
+  color: red;
+  margin: 0 0 0 .25rem
+}
+
+.bd054d54bd430c1bf9e6 {
+  color: #5e5e5e;
+  display: block;
+  font-size: var(--font-size-1);
+  margin: 0 0 .25rem
+}
+
+.bfecebe5f04004c49b2b {
+  font-size: var(--font-size-2);
+  max-width: 250px;
+  min-width: 100%
+}
+
+@media (min-width:768px) {
+  .bfecebe5f04004c49b2b {
+    max-width: 550px;
+    min-width: 550px
+  }
+}
+
+@media (min-width:1024px) {
+  .bfecebe5f04004c49b2b {
+    max-width: 650px;
+    min-width: 650px
+  }
+}
+
+.a334a0b7778699e0fc53 {
+  display: block;
+  font-size: var(--font-size-2);
+  margin: 1rem 0 .25rem
+}
+
+.dcfafd97d95614518ef8 {
+  color: red;
+  margin: 0 0 0 .25rem
+}
+
+.d29e4424fa1bbceb2b53 {
+  -moz-column-count: 1;
+  column-count: 1
+}
+
+@media (min-width:1024px) {
+  .d29e4424fa1bbceb2b53 {
+    -moz-column-count: 2;
+    column-count: 2
+  }
+}
+
+.f419982fdd5039f80de1 {
+  display: block
+}
+
+.f419982fdd5039f80de1 .b2950d17eaed43a8b7f2 {
+  font-size: var(--font-size-2);
+  max-width: 100%;
+  padding: .25rem .25rem .25rem .5rem
+}
+
+.bc7ee1b96cf660d8c238 {
+  display: block;
+  font-size: var(--font-size-2);
+  margin: 1rem 0 .25rem
+}
+
+.bc7ee1b96cf660d8c238 .ea2f1b952d254615ee74 {
+  color: red;
+  margin: 0 0 0 .25rem
+}
+
+.e0139f5ad8198c40ed53 {
+  display: flex
+}
+
+.a828213ca8d78518eb96 {
+  font-size: var(--font-size-2);
+  min-width: 50%
+}
+
+@media (min-width:1024px) {
+  .a828213ca8d78518eb96 {
+    min-width: calc(650px/2)
+  }
+}
+
+.e59e698571114c58efb8 {
+  width: 100%
+}
+
+@media (min-width:768px) {
+  .e59e698571114c58efb8 {
+    max-width: 550px
+  }
+}
+
+@media (min-width:1024px) {
+  .e59e698571114c58efb8 {
+    max-width: 820px
+  }
+}
+
+.c531f9581fb248c52d76,
+.e25fe9ee1b69e16adbf1,
+.d955037116162c716986 {
+  display: block;
+  font-size: var(--font-size-2)
+}
+
+@media (min-width:1024px) {
+
+  .c531f9581fb248c52d76,
+  .e25fe9ee1b69e16adbf1,
+  .d955037116162c716986 {
+    max-width: 620px
+  }
+}
+
+.fd1c19854a1b7ea70bf7 {
+  margin: 2rem 0 1rem !important
+}
+
+.e25fe9ee1b69e16adbf1 {
+  font-style: italic;
+  margin: 0 0 2rem !important
+}
+
+.e25fe9ee1b69e16adbf1 .b5e808c4c275fa083850 {
+  color: red;
+  margin: 0 .25rem 0 0
+}
+
+.c90a2471b2d08d28d174 {
+  text-decoration: underline !important
+}
+
+.c90a2471b2d08d28d174:hover {
+  color: #555;
+  transition: color .2s
+}
+
+.d955037116162c716986 {
+  margin: 2rem 0 !important
+}
+
+.e3b0872ac475e352fd57 {
+  background-color: #fcaf17;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: var(--font-size-2);
+  font-weight: 700;
+  padding: 1rem 2rem
+}
+
+.b9e37859700dd0d6a9ce {
+  margin: 0 0 1rem
+}
+
+@font-face {
+  font-family: leaguegothic-regular-webfont;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/fb1fcd9058f72639849a.woff) format("woff")
+}
+
+.beba36ec69e024d112b8 {
+  --color-h: #000;
+  --font-family-h: leaguegothic-regular-webfont;
+  --font-weight-h: 500;
+  --letter-spacing-h: 1px;
+  --line-height-h: 1;
+  --text-transform-h: uppercase;
+  background: #fff;
+  color: #000;
+  margin: 0;
+  min-height: 100vh
+}
+
+.e0c63f1c13c0922fcf66 {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh
+}
+
+.e3e3144f8074bf13ff68 {
+  max-width: 1800px;
+  padding: 2rem 2.75rem 1.75rem
+}
+
+@media (min-width:768px) {
+  .e3e3144f8074bf13ff68 {
+    padding: 2rem 5.75rem
+  }
+}
+
+@media (min-width:1920px) {
+  .e3e3144f8074bf13ff68 {
+    margin: 0 auto;
+    min-width: 1800px;
+    padding: 2rem 1.75rem
+  }
+}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+html {
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.15
+}
+
+body {
+  margin: 0
+}
+
+main {
+  display: block
+}
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0
+}
+
+hr {
+  box-sizing: initial;
+  height: 0;
+  overflow: visible
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em
+}
+
+a {
+  background-color: initial
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted
+}
+
+b,
+strong {
+  font-weight: bolder
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em
+}
+
+small {
+  font-size: 80%
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: initial
+}
+
+sub {
+  bottom: -.25em
+}
+
+sup {
+  top: -.5em
+}
+
+img {
+  border-style: none
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0
+}
+
+button,
+input {
+  overflow: visible
+}
+
+button,
+select {
+  text-transform: none
+}
+
+[type=button],
+[type=reset],
+[type=submit],
+button {
+  -webkit-appearance: button
+}
+
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner,
+button::-moz-focus-inner {
+  border-style: none;
+  padding: 0
+}
+
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring,
+button:-moz-focusring {
+  outline: 1px dotted ButtonText
+}
+
+fieldset {
+  padding: .35em .75em .625em
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal
+}
+
+progress {
+  vertical-align: initial
+}
+
+textarea {
+  overflow: auto
+}
+
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  padding: 0
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px
+}
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit
+}
+
+details {
+  display: block
+}
+
+summary {
+  display: list-item
+}
+
+[hidden],
+template {
+  display: none
+}
+
+:root {
+  --text-section-max-width: 640px;
+  --base-pixel-size: 12px;
+  --base-rem-size: 0.75rem;
+  --half-rem-size: calc(var(--base-rem-size) / 2);
+  --twice-rem-size: calc(var(--base-rem-size) * 2);
+  --section-margin-bottom: calc(var(--base-rem-size) * 4);
+  --header-height: 60px;
+  --breadcrumbs-height: calc(var(--base-pixel-size) * 3.5);
+  --max-width: 1920px;
+  --standard-color: #fcaf17;
+  --color-h: #fff;
+  --body-color: #e8e8e8;
+  --background-color: #0b0b0b;
+  --card-background-color: #000;
+  --border-color: #282828;
+  --privacy-banner-height: 0px;
+  --game-header-height: 50px;
+  --standard-grid-gap: calc(var(--base-rem-size) * 2);
+  --image-margin-bottom: inherit;
+  --image-rounding: 0px;
+  --image-rounding-static: 16px;
+  --image-rounding-static-sm: 8px;
+  --image-rounding-static-xs: 4px;
+  --grid-gap-static-xs: 0.5rem;
+  --grid-gap-static-sm: 1rem;
+  --grid-gap-static-md: 2rem;
+  --grid-gap-static-lg: 4rem;
+  --grid-gap-static-xl: 8rem;
+  --max-width-static: 640px;
+  --max-width-static-md: 1088px;
+  --max-width-static-lg: 1920px;
+  --max-width-static-xl: 2560px;
+  --margin-static: 0 0 2rem;
+  --h2-margin: 2rem 0 0 0;
+  --padding-sides: var(--grid-gap-static-lg);
+  --padding-top-bottom: var(--padding-sides);
+  --padding-static: var(--padding-sides);
+  --font-size-1: 0.64rem;
+  --font-size-2: 0.8rem;
+  --font-size-3: 1rem;
+  --font-size-4: 1.25rem;
+  --font-size-5: 1.563rem;
+  --font-size-6: 1.953rem;
+  --font-size-7: 2.441rem;
+  --font-size-8: 3.052rem;
+  --font-size-9: 3.815rem;
+  --font-size-10: 4.768rem;
+  --font-family-std: var(--rsg-font-family-std);
+  --font-family-h: var(--rsg-font-family-h);
+  --font-family-h-halloween: nightmar;
+  --rsg-font-family-std: HelveticaNowText;
+  --rsg-font-family-h: HelveticaNowDisplayBold;
+  --gta-font-family-std: Chalet;
+  --gta-font-family-h: ChaletComprime;
+  --gta-font-family-badge: Pricedown;
+  --rdr-font-family-std: HapnaSlabSerif;
+  --rdr-font-family-h: RDRLino-Regular;
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif;
+  --rdr-area-font: RDRCatalogueBold;
+  --header-multiplier: var(--header-numerator, var(--root-font-size)) /var(--root-font-size);
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--background-color, transparent);
+  font-family: var(--font-family-std, HelveticaNowText);
+  font-size: calc(var(--root-font-size) * 1px);
+  font-weight: var(--font-weight-std, 400);
+  letter-spacing: var(--letter-spacing-std, -.025em);
+  line-height: var(--line-height-std, 1.6)
+}
+
+@media (max-width:767px) {
+  :root {
+    --grid-gap-static-lg: 2rem;
+    --grid-gap-static-xl: 4rem
+  }
+}
+
+@media (min-width:2560px) {
+  :root {
+    --max-width-static-md: 1440px
+  }
+}
+
+@font-face {
+  font-family: HelveticaNowText;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/daffe25cf3a522a0662b.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNowText;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/1c23ad3bd8f4ac8d4f58.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNowText;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/43c87a78e295c91e475d.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNowDisplayBold;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/019a37634dda55c34e74.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNowDisplayMedium;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/8d9665f5c3f922814371.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNeueLTW05;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/5821888d211d6db6b916.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNeueLTW05;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/6254fae1ffa5c0b60e1f.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNeueLTW07;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/f3be7ed00861dd13472c.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNeueLTW07;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/0e155779f06c0df62911.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNeueLTW07;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/eecedce21cd5e7bc5a06.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNeueLTW07;
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/9e6720ee8a12e33dd442.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNeueLTW07-85Heavy;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/52311dcdb6857e4fc4ad.woff) format("woff")
+}
+
+@font-face {
+  font-family: SackersGothicW01-Square;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/28b89548417ca2a10931.woff) format("woff")
+}
+
+@font-face {
+  font-family: Cabrito-Nordem;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/18aadd46c7583c265c5c.woff) format("woff")
+}
+
+@font-face {
+  font-family: Droid-Serif-Pro;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/c559691f19190ffa4f91.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansSC;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/60625dd9dcbb711cebd5.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansSC;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/0d6661641995c28b4430.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansSC;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/b76b22f5feed95af23eb.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansSC;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/f6f097535b11d28742d1.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansTC;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/7459dd4e77bc2f260f9a.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansTC;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/21b71a694a4804bed375.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansTC;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/304d5c39e2b624111334.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansTC;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/d63df344651531f19e59.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansJP;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/dd17c827fc404f1fab82.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansJP;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/6ba2930e076392937061.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansJP;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/13f9fb885f7b59a9ca64.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansJP;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/eacc7598f5451b714002.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansKR;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/1ed88468d8b70e957b21.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansKR;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/386f62c0f4f9bcf91277.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansKR;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/cccb1c6ec3ccbbaaa90c.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansKR;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/2b2801bbdf254e8da3c1.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSerifJP;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/20a30c556225eff3a1b0.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSerifJP;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/8af8d5e0ef907d10587f.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSerifKR;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/0b9459405df1aec7f585.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSerifKR;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/0b9459405df1aec7f585.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSerifSC;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/1fde089d23afe566ed2f.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSerifSC;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/af5fddd08d604bc5b22e.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSerifTC;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/639639f588351d52252b.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSerifTC;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/a31187ab8cf9b5b6baab.woff) format("woff")
+}
+
+@font-face {
+  font-family: ChaletComprime;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/0b050e3931bdee7b4e47.woff) format("woff")
+}
+
+@font-face {
+  font-family: ChaletComprime;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/40a9579b16876325cf5d.woff) format("woff")
+}
+
+@font-face {
+  font-family: Chalet;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/6f94170675eae637b839.woff) format("woff")
+}
+
+@font-face {
+  font-family: Chalet;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/c07cd84eb88be5ed61da.woff) format("woff")
+}
+
+@font-face {
+  font-family: Pricedown;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/be58f8316924c2c9242f.woff) format("woff")
+}
+
+@font-face {
+  font-family: NeueHelveticaW05;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/a90a09d35ad69302407d.woff) format("woff")
+}
+
+@font-face {
+  font-family: NeueHelveticaW05;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/1395879dc836e2eea564.woff) format("woff")
+}
+
+@font-face {
+  font-family: NeueHelveticaW05;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/fec71193179b1f860772.woff) format("woff")
+}
+
+@font-face {
+  font-family: FrizQuadrataW05;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/a38b86a13cff1af877a2.woff) format("woff")
+}
+
+@font-face {
+  font-family: FrizQuadrataW05;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/8a419d27a1eec96fdaad.woff) format("woff")
+}
+
+@font-face {
+  font-family: FrizQuadrataW05;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/9867287e6c1fc83a89cb.woff) format("woff")
+}
+
+@font-face {
+  font-family: FrizQuadrataW05;
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/00c4190f2bbfb0e99c2a.woff) format("woff")
+}
+
+@font-face {
+  font-family: CorporateW05;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/31e60f7b23377bec9894.woff) format("woff")
+}
+
+@font-face {
+  font-family: NimbusSansW05;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/707f38ea81e69d75f3e8.woff) format("woff")
+}
+
+@font-face {
+  font-family: NimbusSansW05;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/29ae0fa4aabe2e795b92.woff) format("woff")
+}
+
+@font-face {
+  font-family: EurostileNextW05;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/39163b1c27d4874840f8.woff) format("woff")
+}
+
+@font-face {
+  font-family: Diploma;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/5086f4019f360fde9779.woff) format("woff")
+}
+
+@font-face {
+  font-family: BrushScriptMT;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/0174dd7c8b071617cb8c.woff) format("woff")
+}
+
+@font-face {
+  font-family: BankGothicBT;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/09081caba15b8def6692.woff) format("woff")
+}
+
+@font-face {
+  font-family: MeltdownRegular;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/b1d8448f1da0a818ac88.woff) format("woff")
+}
+
+@font-face {
+  font-family: SharkSnackRegular;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/12e2c084a9c416285c96.woff) format("woff")
+}
+
+@font-face {
+  font-family: RDRLino-Regular;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/5d64fc45d52e2bdd2d4c.woff) format("woff")
+}
+
+@font-face {
+  font-family: HapnaSlabSerif;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/c58f85482530be4ffcac.woff) format("woff")
+}
+
+@font-face {
+  font-family: HapnaSlabSerif;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/347c4201aa82d7497522.woff) format("woff")
+}
+
+@font-face {
+  font-family: nightmar;
+  font-style: normal;
+  font-weight: 100;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/3c3a1029d1863fba66a7.woff) format("woff")
+}
+
+@font-face {
+  font-family: RDRCatalogueBold;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/c1c092eb55240be87a6b.woff) format("woff")
+}
+
+@media (min-width:0px) {
+  :root {
+    --root-font-size: 16
+  }
+}
+
+@media (min-width:768px) {
+  :root {
+    --root-font-size: 18
+  }
+}
+
+@media (min-width:1024px) {
+  :root {
+    --root-font-size: 20
+  }
+}
+
+@media (min-width:1920px) {
+  :root {
+    --root-font-size: 22
+  }
+}
+
+:root * {
+  box-sizing: border-box
+}
+
+:root a {
+  color: inherit;
+  text-decoration: none
+}
+
+:root h1,
+:root h2,
+:root h3,
+:root h4,
+:root h5,
+:root h6,
+:root p {
+  margin: 0
+}
+
+:root figure {
+  margin: 0
+}
+
+:root caption,
+:root figcaption {
+  --padding-dynamic: var(--padding-sides);
+  --padding-dynamic-tb: initial;
+  display: block;
+  font-family: var(--font-family-std);
+  font-size: var(--font-size-2);
+  font-style: italic;
+  margin: var(--grid-gap-static-sm) auto 0;
+  padding: var(--padding-t, var(--padding-dynamic-tb, 0)) var(--padding-dynamic, 0) var(--padding-b, var(--padding-dynamic-tb, 0)) var(--padding-dynamic, 0);
+  text-align: center
+}
+
+:root caption p,
+:root figcaption p {
+  display: block
+}
+
+:root :lang(ru_ru) {
+  --font-family-h-halloween: RDRLino-Regular
+}
+
+:root :lang(ko_kr) {
+  word-break: keep-all
+}
+
+:root:lang(ja_jp) {
+  --rsg-font-family-std: HelveticaNowText, NotoSansJP
+}
+
+:root:lang(zh_hans) {
+  --rsg-font-family-std: HelveticaNowText, NotoSansSC
+}
+
+:root:lang(zh_tw) {
+  --rsg-font-family-std: HelveticaNowText, NotoSansTC
+}
+
+:root:lang(ja_jp) {
+  --rsg-font-family-h: HelveticaNowDisplayBold, NotoSansJP
+}
+
+:root:lang(zh_hans) {
+  --rsg-font-family-h: HelveticaNowDisplayBold, NotoSansSC
+}
+
+:root:lang(zh_tw) {
+  --rsg-font-family-h: HelveticaNowDisplayBold, NotoSansTC
+}
+
+:root:lang(ja_jp) {
+  --gta-font-family-std: Chalet, NotoSansJP
+}
+
+:root:lang(zh_hans) {
+  --gta-font-family-std: Chalet, NotoSansSC
+}
+
+:root:lang(zh_tw) {
+  --gta-font-family-std: Chalet, NotoSansTC
+}
+
+:root:lang(ja_jp) {
+  --gta-font-family-h: ChaletComprime, NotoSansJP
+}
+
+:root:lang(zh_hans) {
+  --gta-font-family-h: ChaletComprime, NotoSansSC
+}
+
+:root:lang(zh_tw) {
+  --gta-font-family-h: ChaletComprime, NotoSansTC
+}
+
+:root:lang(ja_jp) {
+  --gta-font-family-badge: Pricedown, NotoSansJP
+}
+
+:root:lang(zh_hans) {
+  --gta-font-family-badge: Pricedown, NotoSansSC
+}
+
+:root:lang(zh_tw) {
+  --gta-font-family-badge: Pricedown, NotoSansTC
+}
+
+:root:lang(ja_jp) {
+  --rdr-font-family-std: HapnaSlabSerif, NotoSansJP
+}
+
+:root:lang(zh_hans) {
+  --rdr-font-family-std: HapnaSlabSerif, NotoSansSC
+}
+
+:root:lang(zh_tw) {
+  --rdr-font-family-std: HapnaSlabSerif, NotoSansTC
+}
+
+:root:lang(ja_jp) {
+  --rdr-font-family-h: RDRLino-Regular, NotoSansJP
+}
+
+:root:lang(zh_hans) {
+  --rdr-font-family-h: RDRLino-Regular, NotoSansSC
+}
+
+:root:lang(zh_tw) {
+  --rdr-font-family-h: RDRLino-Regular, NotoSansTC
+}
+
+:root:lang(ja_jp) {
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif, NotoSansJP
+}
+
+:root:lang(zh_hans) {
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif, NotoSansSC
+}
+
+:root:lang(zh_tw) {
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif, NotoSansTC
+}
+
+:root:lang(ja_jp) {
+  --rdr-area-font: RDRCatalogueBold, NotoSansJP
+}
+
+:root:lang(zh_hans) {
+  --rdr-area-font: RDRCatalogueBold, NotoSansSC
+}
+
+:root:lang(zh_tw) {
+  --rdr-area-font: RDRCatalogueBold, NotoSansTC
+}
+
+:root h1,
+:root h1.large,
+:root h2,
+:root h3,
+:root h4 {
+  font-family: var(--font-family-h, HelveticaNowDisplayBold);
+  letter-spacing: var(--letter-spacing-h, -.025em)
+}
+
+:root h1,
+:root h1.large {
+  font-weight: var(--font-weight-h1, var(--font-weight-h, 700));
+  line-height: var(--line-height-h1, var(--line-height-h, 1.1));
+  text-transform: var(--text-transform-h1, var(--text-transform-h, none))
+}
+
+:root h1.large {
+  font-size: calc(var(--font-size-8) * var(--header-multiplier))
+}
+
+:root h1 {
+  font-size: calc(var(--font-size-7) * var(--header-multiplier))
+}
+
+:root h2 {
+  font-size: calc(var(--font-size-6) * var(--header-multiplier));
+  font-weight: var(--font-weight-h2, var(--font-weight-h, 700));
+  line-height: var(--line-height-h, 1.1);
+  text-transform: var(--text-transform-h2, var(--text-transform-h, none))
+}
+
+:root h3 {
+  font-size: calc(var(--font-size-5) * var(--header-multiplier));
+  font-weight: var(--font-weight-h3, var(--font-weight-h, 700));
+  line-height: var(--line-height-h, 1.1);
+  text-transform: var(--text-transform-h3, var(--text-transform-h, none))
+}
+
+:root h3[data-context=newswire-subtitle] {
+  font-family: var(--font-family-newswire-subtitle, var(--font-family-h));
+  font-size: calc(var(--font-size-5) * var(--h3-numerator-override-newswire-subtitle, var(--header-multiplier)));
+  font-weight: var(--font-weight-newswire-subtitle, var(--font-weight-h));
+  text-transform: var(--text-transform-newswire-subtitle)
+}
+
+[data-game=rdo] :root h3,
+[data-game^=rdr] :root h3 {
+  font-weight: var(--font-weight-h3, var(--font-weight-h, 400))
+}
+
+:root h4,
+:root h5,
+:root h6 {
+  font-size: calc(var(--font-size-4) * var(--header-multiplier));
+  line-height: var(--line-height-h, 1.1)
+}
+
+:root h1,
+:root h1.large {
+  color: var(--color-h-dynamic, var(--color-h1, var(--color-h, inherit)))
+}
+
+:root h2 {
+  color: var(--color-h-dynamic, var(--color-h2, var(--color-h, inherit)))
+}
+
+:root h3 {
+  color: var(--color-h-dynamic, var(--color-h3, var(--color-h, inherit)))
+}
+
+:root h3[data-context=newswire-subtitle] {
+  color: var(--color-subtitle-dynamic, var(--color-h-dynamic, var(--color-h3, var(--color-h, inherit))))
+}
+
+:root h4,
+:root h5,
+:root h6 {
+  color: var(--color-h-dynamic, var(--color-h, inherit))
+}
+
+:root [template=community] {
+  --time-color: var(--body-color, #2d2d2d);
+  --breadcrumb-separator-filter-invert: invert(0)
+}
+
+:root [template=community] main {
+  color: var(--color-h, #161616)
+}
+
+:root [template=community] p {
+  color: var(--body-color, #2d2d2d)
+}
+
+:root [data-game^=gta] {
+  --font-family-std: var(--gta-font-family-std);
+  --font-family-h: var(--gta-font-family-h);
+  --letter-spacing-h: 0;
+  --line-height-h1: 1;
+  --font-weight-newswire-subtitle: 400;
+  --letter-spacing-std: 0;
+  --color-h: #fff;
+  --body-color: #e8e8e8;
+  --background-color: var(var(--background-color));
+  --tag-color: #e8e8e8;
+  --rsg-font-family-std: HelveticaNowText;
+  --rsg-font-family-h: HelveticaNowDisplayBold;
+  --gta-font-family-std: Chalet;
+  --gta-font-family-h: ChaletComprime;
+  --gta-font-family-badge: Pricedown;
+  --rdr-font-family-std: HapnaSlabSerif;
+  --rdr-font-family-h: RDRLino-Regular;
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif;
+  --rdr-area-font: RDRCatalogueBold;
+  --header-multiplier: var(--header-numerator, var(--root-font-size)) /var(--root-font-size);
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--background-color, transparent);
+  color: #e8e8e8;
+  font-family: var(--font-family-std, HelveticaNowText);
+  font-size: calc(var(--root-font-size) * 1px);
+  font-weight: var(--font-weight-std, 400);
+  letter-spacing: var(--letter-spacing-std, -.025em);
+  line-height: var(--line-height-std, 1.6)
+}
+
+@media (min-width:0px) {
+  :root [data-game^=gta] {
+    --header-numerator: 20.8
+  }
+}
+
+@media (min-width:768px) {
+  :root [data-game^=gta] {
+    --header-numerator: 23.4
+  }
+}
+
+@media (min-width:1024px) {
+  :root [data-game^=gta] {
+    --header-numerator: 26
+  }
+}
+
+@media (min-width:1920px) {
+  :root [data-game^=gta] {
+    --header-numerator: 29.25
+  }
+}
+
+:root [data-game^=gta]:lang(ja_jp) {
+  --rsg-font-family-std: HelveticaNowText, NotoSansJP
+}
+
+:root [data-game^=gta]:lang(zh_hans) {
+  --rsg-font-family-std: HelveticaNowText, NotoSansSC
+}
+
+:root [data-game^=gta]:lang(zh_tw) {
+  --rsg-font-family-std: HelveticaNowText, NotoSansTC
+}
+
+:root [data-game^=gta]:lang(ja_jp) {
+  --rsg-font-family-h: HelveticaNowDisplayBold, NotoSansJP
+}
+
+:root [data-game^=gta]:lang(zh_hans) {
+  --rsg-font-family-h: HelveticaNowDisplayBold, NotoSansSC
+}
+
+:root [data-game^=gta]:lang(zh_tw) {
+  --rsg-font-family-h: HelveticaNowDisplayBold, NotoSansTC
+}
+
+:root [data-game^=gta]:lang(ja_jp) {
+  --gta-font-family-std: Chalet, NotoSansJP
+}
+
+:root [data-game^=gta]:lang(zh_hans) {
+  --gta-font-family-std: Chalet, NotoSansSC
+}
+
+:root [data-game^=gta]:lang(zh_tw) {
+  --gta-font-family-std: Chalet, NotoSansTC
+}
+
+:root [data-game^=gta]:lang(ja_jp) {
+  --gta-font-family-h: ChaletComprime, NotoSansJP
+}
+
+:root [data-game^=gta]:lang(zh_hans) {
+  --gta-font-family-h: ChaletComprime, NotoSansSC
+}
+
+:root [data-game^=gta]:lang(zh_tw) {
+  --gta-font-family-h: ChaletComprime, NotoSansTC
+}
+
+:root [data-game^=gta]:lang(ja_jp) {
+  --gta-font-family-badge: Pricedown, NotoSansJP
+}
+
+:root [data-game^=gta]:lang(zh_hans) {
+  --gta-font-family-badge: Pricedown, NotoSansSC
+}
+
+:root [data-game^=gta]:lang(zh_tw) {
+  --gta-font-family-badge: Pricedown, NotoSansTC
+}
+
+:root [data-game^=gta]:lang(ja_jp) {
+  --rdr-font-family-std: HapnaSlabSerif, NotoSansJP
+}
+
+:root [data-game^=gta]:lang(zh_hans) {
+  --rdr-font-family-std: HapnaSlabSerif, NotoSansSC
+}
+
+:root [data-game^=gta]:lang(zh_tw) {
+  --rdr-font-family-std: HapnaSlabSerif, NotoSansTC
+}
+
+:root [data-game^=gta]:lang(ja_jp) {
+  --rdr-font-family-h: RDRLino-Regular, NotoSansJP
+}
+
+:root [data-game^=gta]:lang(zh_hans) {
+  --rdr-font-family-h: RDRLino-Regular, NotoSansSC
+}
+
+:root [data-game^=gta]:lang(zh_tw) {
+  --rdr-font-family-h: RDRLino-Regular, NotoSansTC
+}
+
+:root [data-game^=gta]:lang(ja_jp) {
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif, NotoSansJP
+}
+
+:root [data-game^=gta]:lang(zh_hans) {
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif, NotoSansSC
+}
+
+:root [data-game^=gta]:lang(zh_tw) {
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif, NotoSansTC
+}
+
+:root [data-game^=gta]:lang(ja_jp) {
+  --rdr-area-font: RDRCatalogueBold, NotoSansJP
+}
+
+:root [data-game^=gta]:lang(zh_hans) {
+  --rdr-area-font: RDRCatalogueBold, NotoSansSC
+}
+
+:root [data-game^=gta]:lang(zh_tw) {
+  --rdr-area-font: RDRCatalogueBold, NotoSansTC
+}
+
+:root [data-game^=gta] h1,
+:root [data-game^=gta] h1.large,
+:root [data-game^=gta] h2,
+:root [data-game^=gta] h3,
+:root [data-game^=gta] h4 {
+  font-family: var(--font-family-h, HelveticaNowDisplayBold);
+  letter-spacing: var(--letter-spacing-h, -.025em)
+}
+
+:root [data-game^=gta] h1,
+:root [data-game^=gta] h1.large {
+  font-weight: var(--font-weight-h1, var(--font-weight-h, 700));
+  line-height: var(--line-height-h1, var(--line-height-h, 1.1));
+  text-transform: var(--text-transform-h1, var(--text-transform-h, none))
+}
+
+:root [data-game^=gta] h1.large {
+  font-size: calc(var(--font-size-8) * var(--header-multiplier))
+}
+
+:root [data-game^=gta] h1 {
+  font-size: calc(var(--font-size-7) * var(--header-multiplier))
+}
+
+:root [data-game^=gta] h2 {
+  font-size: calc(var(--font-size-6) * var(--header-multiplier));
+  font-weight: var(--font-weight-h2, var(--font-weight-h, 700));
+  line-height: var(--line-height-h, 1.1);
+  text-transform: var(--text-transform-h2, var(--text-transform-h, none))
+}
+
+:root [data-game^=gta] h3 {
+  font-size: calc(var(--font-size-5) * var(--header-multiplier));
+  font-weight: var(--font-weight-h3, var(--font-weight-h, 700));
+  line-height: var(--line-height-h, 1.1);
+  text-transform: var(--text-transform-h3, var(--text-transform-h, none))
+}
+
+:root [data-game^=gta] h3[data-context=newswire-subtitle] {
+  font-family: var(--font-family-newswire-subtitle, var(--font-family-h));
+  font-size: calc(var(--font-size-5) * var(--h3-numerator-override-newswire-subtitle, var(--header-multiplier)));
+  font-weight: var(--font-weight-newswire-subtitle, var(--font-weight-h));
+  text-transform: var(--text-transform-newswire-subtitle)
+}
+
+[data-game=rdo] :root [data-game^=gta] h3,
+[data-game^=rdr] :root [data-game^=gta] h3 {
+  font-weight: var(--font-weight-h3, var(--font-weight-h, 400))
+}
+
+:root [data-game^=gta] h4,
+:root [data-game^=gta] h5,
+:root [data-game^=gta] h6 {
+  font-size: calc(var(--font-size-4) * var(--header-multiplier));
+  line-height: var(--line-height-h, 1.1)
+}
+
+:root [data-game^=gta] h1,
+:root [data-game^=gta] h1.large {
+  color: var(--color-h-dynamic, var(--color-h1, var(--color-h, inherit)))
+}
+
+:root [data-game^=gta] h2 {
+  color: var(--color-h-dynamic, var(--color-h2, var(--color-h, inherit)))
+}
+
+:root [data-game^=gta] h3 {
+  color: var(--color-h-dynamic, var(--color-h3, var(--color-h, inherit)))
+}
+
+:root [data-game^=gta] h3[data-context=newswire-subtitle] {
+  color: var(--color-subtitle-dynamic, var(--color-h-dynamic, var(--color-h3, var(--color-h, inherit))))
+}
+
+:root [data-game^=gta] h4,
+:root [data-game^=gta] h5,
+:root [data-game^=gta] h6 {
+  color: var(--color-h-dynamic, var(--color-h, inherit))
+}
+
+:root [data-game^=gta] [template=community] {
+  --time-color: var(--body-color, #2d2d2d);
+  --breadcrumb-separator-filter-invert: invert(0)
+}
+
+:root [data-game^=gta] [template=community] main {
+  color: var(--color-h, #161616)
+}
+
+:root [data-game^=gta] [template=community] p {
+  color: var(--body-color, #2d2d2d)
+}
+
+:root [data-game^=gta] .badge {
+  font-family: var(--gta-font-family-badge)
+}
+
+:root :lang(pl_pl) [data-game^=gta] {
+  --font-family-h: ChaletComprime, NeueHelveticaW05;
+  --font-family-newswire-subtitle: ChaletComprime, NeueHelveticaW05;
+  --badge-font: Pricedown, NeueHelveticaW05
+}
+
+:root :lang(ru_ru) [data-game^=gta] {
+  --font-family-h: NeueHelveticaW05;
+  --font-family-newswire-subtitle: NeueHelveticaW05;
+  --badge-font: Pricedown, NeueHelveticaW05
+}
+
+:root :lang(zh_hans) [data-game^=gta] {
+  --font-family-h: NotoSansSC;
+  --font-family-newswire-subtitle: NotoSansSC;
+  --font-family-std: NotoSansSC;
+  --badge-font: Pricedown, NotoSansSC
+}
+
+:root :lang(zh_hant) [data-game^=gta] {
+  --font-family-h: NotoSansTC;
+  --font-family-newswire-subtitle: NotoSansTC;
+  --font-family-std: NotoSansTC;
+  --badge-font: Pricedown, NotoSansTC
+}
+
+:root :lang(ja_jp) [data-game^=gta] {
+  --font-family-h: NotoSansJP;
+  --font-family-newswire-subtitle: NotoSansJP;
+  --font-family-std: NotoSansJP;
+  --badge-font: Pricedown, NotoSansJP
+}
+
+:root :lang(ko_kr) [data-game^=gta] {
+  --font-family-h: NotoSansKR;
+  --font-family-newswire-subtitle: NotoSansKR;
+  --font-family-std: NotoSansKR;
+  --badge-font: Pricedown, NotoSansKR
+}
+
+:root [data-game=rdo],
+:root [data-game^=rdr] {
+  --font-family-std: var(--rdr-font-family-std);
+  --font-family-h: var(--rdr-font-family-h);
+  --font-family-newswire-subtitle: var(--rdr-font-family-newswire-subtitle);
+  --area-font: var(--rdr-area-font);
+  --font-weight-h: 400;
+  --font-weight-h1: 400;
+  --font-weight-h3: 400;
+  --font-weight-newswire-subtitle: 700;
+  --h3-numerator-override-newswire-subtitle: 1;
+  --letter-spacing-h: 0;
+  --line-height-h: 1.2;
+  --letter-spacing-std: 0;
+  --text-transform-newswire-subtitle: initial;
+  --color-h: #c00;
+  --color-h3: #fff;
+  --color-h4: #fff;
+  --body-color: #e8e8e8;
+  --text-transform-h: uppercase;
+  --background-color: var(var(--background-color));
+  --tag-color: #e8e8e8;
+  --rsg-font-family-std: HelveticaNowText;
+  --rsg-font-family-h: HelveticaNowDisplayBold;
+  --gta-font-family-std: Chalet;
+  --gta-font-family-h: ChaletComprime;
+  --gta-font-family-badge: Pricedown;
+  --rdr-font-family-std: HapnaSlabSerif;
+  --rdr-font-family-h: RDRLino-Regular;
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif;
+  --rdr-area-font: RDRCatalogueBold;
+  --header-multiplier: var(--header-numerator, var(--root-font-size)) /var(--root-font-size);
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--background-color, transparent);
+  color: #e8e8e8;
+  font-family: var(--font-family-std, HelveticaNowText);
+  font-size: calc(var(--root-font-size) * 1px);
+  font-weight: var(--font-weight-std, 400);
+  letter-spacing: var(--letter-spacing-std, -.025em);
+  line-height: var(--line-height-std, 1.6)
+}
+
+@media (min-width:0px) {
+
+  :root [data-game=rdo],
+  :root [data-game^=rdr] {
+    --header-numerator: 15
+  }
+}
+
+@media (min-width:768px) {
+
+  :root [data-game=rdo],
+  :root [data-game^=rdr] {
+    --header-numerator: 16.88
+  }
+}
+
+@media (min-width:1024px) {
+
+  :root [data-game=rdo],
+  :root [data-game^=rdr] {
+    --header-numerator: 18.75
+  }
+}
+
+@media (min-width:1920px) {
+
+  :root [data-game=rdo],
+  :root [data-game^=rdr] {
+    --header-numerator: 21.09
+  }
+}
+
+:root [data-game=rdo]:lang(ja_jp),
+:root [data-game^=rdr]:lang(ja_jp) {
+  --rsg-font-family-std: HelveticaNowText, NotoSansJP
+}
+
+:root [data-game=rdo]:lang(zh_hans),
+:root [data-game^=rdr]:lang(zh_hans) {
+  --rsg-font-family-std: HelveticaNowText, NotoSansSC
+}
+
+:root [data-game=rdo]:lang(zh_tw),
+:root [data-game^=rdr]:lang(zh_tw) {
+  --rsg-font-family-std: HelveticaNowText, NotoSansTC
+}
+
+:root [data-game=rdo]:lang(ja_jp),
+:root [data-game^=rdr]:lang(ja_jp) {
+  --rsg-font-family-h: HelveticaNowDisplayBold, NotoSansJP
+}
+
+:root [data-game=rdo]:lang(zh_hans),
+:root [data-game^=rdr]:lang(zh_hans) {
+  --rsg-font-family-h: HelveticaNowDisplayBold, NotoSansSC
+}
+
+:root [data-game=rdo]:lang(zh_tw),
+:root [data-game^=rdr]:lang(zh_tw) {
+  --rsg-font-family-h: HelveticaNowDisplayBold, NotoSansTC
+}
+
+:root [data-game=rdo]:lang(ja_jp),
+:root [data-game^=rdr]:lang(ja_jp) {
+  --gta-font-family-std: Chalet, NotoSansJP
+}
+
+:root [data-game=rdo]:lang(zh_hans),
+:root [data-game^=rdr]:lang(zh_hans) {
+  --gta-font-family-std: Chalet, NotoSansSC
+}
+
+:root [data-game=rdo]:lang(zh_tw),
+:root [data-game^=rdr]:lang(zh_tw) {
+  --gta-font-family-std: Chalet, NotoSansTC
+}
+
+:root [data-game=rdo]:lang(ja_jp),
+:root [data-game^=rdr]:lang(ja_jp) {
+  --gta-font-family-h: ChaletComprime, NotoSansJP
+}
+
+:root [data-game=rdo]:lang(zh_hans),
+:root [data-game^=rdr]:lang(zh_hans) {
+  --gta-font-family-h: ChaletComprime, NotoSansSC
+}
+
+:root [data-game=rdo]:lang(zh_tw),
+:root [data-game^=rdr]:lang(zh_tw) {
+  --gta-font-family-h: ChaletComprime, NotoSansTC
+}
+
+:root [data-game=rdo]:lang(ja_jp),
+:root [data-game^=rdr]:lang(ja_jp) {
+  --gta-font-family-badge: Pricedown, NotoSansJP
+}
+
+:root [data-game=rdo]:lang(zh_hans),
+:root [data-game^=rdr]:lang(zh_hans) {
+  --gta-font-family-badge: Pricedown, NotoSansSC
+}
+
+:root [data-game=rdo]:lang(zh_tw),
+:root [data-game^=rdr]:lang(zh_tw) {
+  --gta-font-family-badge: Pricedown, NotoSansTC
+}
+
+:root [data-game=rdo]:lang(ja_jp),
+:root [data-game^=rdr]:lang(ja_jp) {
+  --rdr-font-family-std: HapnaSlabSerif, NotoSansJP
+}
+
+:root [data-game=rdo]:lang(zh_hans),
+:root [data-game^=rdr]:lang(zh_hans) {
+  --rdr-font-family-std: HapnaSlabSerif, NotoSansSC
+}
+
+:root [data-game=rdo]:lang(zh_tw),
+:root [data-game^=rdr]:lang(zh_tw) {
+  --rdr-font-family-std: HapnaSlabSerif, NotoSansTC
+}
+
+:root [data-game=rdo]:lang(ja_jp),
+:root [data-game^=rdr]:lang(ja_jp) {
+  --rdr-font-family-h: RDRLino-Regular, NotoSansJP
+}
+
+:root [data-game=rdo]:lang(zh_hans),
+:root [data-game^=rdr]:lang(zh_hans) {
+  --rdr-font-family-h: RDRLino-Regular, NotoSansSC
+}
+
+:root [data-game=rdo]:lang(zh_tw),
+:root [data-game^=rdr]:lang(zh_tw) {
+  --rdr-font-family-h: RDRLino-Regular, NotoSansTC
+}
+
+:root [data-game=rdo]:lang(ja_jp),
+:root [data-game^=rdr]:lang(ja_jp) {
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif, NotoSansJP
+}
+
+:root [data-game=rdo]:lang(zh_hans),
+:root [data-game^=rdr]:lang(zh_hans) {
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif, NotoSansSC
+}
+
+:root [data-game=rdo]:lang(zh_tw),
+:root [data-game^=rdr]:lang(zh_tw) {
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif, NotoSansTC
+}
+
+:root [data-game=rdo]:lang(ja_jp),
+:root [data-game^=rdr]:lang(ja_jp) {
+  --rdr-area-font: RDRCatalogueBold, NotoSansJP
+}
+
+:root [data-game=rdo]:lang(zh_hans),
+:root [data-game^=rdr]:lang(zh_hans) {
+  --rdr-area-font: RDRCatalogueBold, NotoSansSC
+}
+
+:root [data-game=rdo]:lang(zh_tw),
+:root [data-game^=rdr]:lang(zh_tw) {
+  --rdr-area-font: RDRCatalogueBold, NotoSansTC
+}
+
+:root [data-game=rdo] h1,
+:root [data-game=rdo] h1.large,
+:root [data-game=rdo] h2,
+:root [data-game=rdo] h3,
+:root [data-game=rdo] h4,
+:root [data-game^=rdr] h1,
+:root [data-game^=rdr] h1.large,
+:root [data-game^=rdr] h2,
+:root [data-game^=rdr] h3,
+:root [data-game^=rdr] h4 {
+  font-family: var(--font-family-h, HelveticaNowDisplayBold);
+  letter-spacing: var(--letter-spacing-h, -.025em)
+}
+
+:root [data-game=rdo] h1,
+:root [data-game=rdo] h1.large,
+:root [data-game^=rdr] h1,
+:root [data-game^=rdr] h1.large {
+  font-weight: var(--font-weight-h1, var(--font-weight-h, 700));
+  line-height: var(--line-height-h1, var(--line-height-h, 1.1));
+  text-transform: var(--text-transform-h1, var(--text-transform-h, none))
+}
+
+:root [data-game=rdo] h1.large,
+:root [data-game^=rdr] h1.large {
+  font-size: calc(var(--font-size-8) * var(--header-multiplier))
+}
+
+:root [data-game=rdo] h1,
+:root [data-game^=rdr] h1 {
+  font-size: calc(var(--font-size-7) * var(--header-multiplier))
+}
+
+:root [data-game=rdo] h2,
+:root [data-game^=rdr] h2 {
+  font-size: calc(var(--font-size-6) * var(--header-multiplier));
+  font-weight: var(--font-weight-h2, var(--font-weight-h, 700));
+  line-height: var(--line-height-h, 1.1);
+  text-transform: var(--text-transform-h2, var(--text-transform-h, none))
+}
+
+:root [data-game=rdo] h3,
+:root [data-game^=rdr] h3 {
+  font-size: calc(var(--font-size-5) * var(--header-multiplier));
+  font-weight: var(--font-weight-h3, var(--font-weight-h, 700));
+  line-height: var(--line-height-h, 1.1);
+  text-transform: var(--text-transform-h3, var(--text-transform-h, none))
+}
+
+:root [data-game=rdo] h3[data-context=newswire-subtitle],
+:root [data-game^=rdr] h3[data-context=newswire-subtitle] {
+  font-family: var(--font-family-newswire-subtitle, var(--font-family-h));
+  font-size: calc(var(--font-size-5) * var(--h3-numerator-override-newswire-subtitle, var(--header-multiplier)));
+  font-weight: var(--font-weight-newswire-subtitle, var(--font-weight-h));
+  text-transform: var(--text-transform-newswire-subtitle)
+}
+
+[data-game=rdo] :root [data-game=rdo] h3,
+[data-game=rdo] :root [data-game^=rdr] h3,
+[data-game^=rdr] :root [data-game=rdo] h3,
+[data-game^=rdr] :root [data-game^=rdr] h3 {
+  font-weight: var(--font-weight-h3, var(--font-weight-h, 400))
+}
+
+:root [data-game=rdo] h4,
+:root [data-game=rdo] h5,
+:root [data-game=rdo] h6,
+:root [data-game^=rdr] h4,
+:root [data-game^=rdr] h5,
+:root [data-game^=rdr] h6 {
+  font-size: calc(var(--font-size-4) * var(--header-multiplier));
+  line-height: var(--line-height-h, 1.1)
+}
+
+:root [data-game=rdo] h1,
+:root [data-game=rdo] h1.large,
+:root [data-game^=rdr] h1,
+:root [data-game^=rdr] h1.large {
+  color: var(--color-h-dynamic, var(--color-h1, var(--color-h, inherit)))
+}
+
+:root [data-game=rdo] h2,
+:root [data-game^=rdr] h2 {
+  color: var(--color-h-dynamic, var(--color-h2, var(--color-h, inherit)))
+}
+
+:root [data-game=rdo] h3,
+:root [data-game^=rdr] h3 {
+  color: var(--color-h-dynamic, var(--color-h3, var(--color-h, inherit)))
+}
+
+:root [data-game=rdo] h3[data-context=newswire-subtitle],
+:root [data-game^=rdr] h3[data-context=newswire-subtitle] {
+  color: var(--color-subtitle-dynamic, var(--color-h-dynamic, var(--color-h3, var(--color-h, inherit))))
+}
+
+:root [data-game=rdo] h4,
+:root [data-game=rdo] h5,
+:root [data-game=rdo] h6,
+:root [data-game^=rdr] h4,
+:root [data-game^=rdr] h5,
+:root [data-game^=rdr] h6 {
+  color: var(--color-h-dynamic, var(--color-h, inherit))
+}
+
+:root [data-game=rdo] [template=community],
+:root [data-game^=rdr] [template=community] {
+  --time-color: var(--body-color, #2d2d2d);
+  --breadcrumb-separator-filter-invert: invert(0)
+}
+
+:root [data-game=rdo] [template=community] main,
+:root [data-game^=rdr] [template=community] main {
+  color: var(--color-h, #161616)
+}
+
+:root [data-game=rdo] [template=community] p,
+:root [data-game^=rdr] [template=community] p {
+  color: var(--body-color, #2d2d2d)
+}
+
+:root :lang(pl_pl) [data-game=rdo],
+:root :lang(pl_pl) [data-game^=rdr] {
+  --font-family-h: RDRLino-Regular;
+  --font-family-newswire-subtitle: HapnaSlabSerif;
+  --font-family-std: HapnaSlabSerif;
+  --badge-font: RDRLino-Regular
+}
+
+:root :lang(zh_hans) [data-game=rdo],
+:root :lang(zh_hans) [data-game^=rdr] {
+  --font-family-h: NotoSerifSC;
+  --font-family-newswire-subtitle: NotoSansSC, ;
+  --font-family-std: NotoSansSC;
+  --area-font: NotoSansSC;
+  --badge-font: RDRLino-Regular, NotoSerifSC
+}
+
+:root :lang(zh_hant) [data-game=rdo],
+:root :lang(zh_hant) [data-game^=rdr] {
+  --font-family-h: NotoSerifTC;
+  --font-family-newswire-subtitle: NotoSansTC;
+  --font-family-std: NotoSansTC;
+  --area-font: NotoSansTC;
+  --badge-font: RDRLino-Regular, NotoSerifTC
+}
+
+:root :lang(ja_jp) [data-game=rdo],
+:root :lang(ja_jp) [data-game^=rdr] {
+  --font-family-h: NotoSerifJP;
+  --font-family-newswire-subtitle: NotoSansJP;
+  --font-family-std: NotoSansJP;
+  --area-font: NotoSansJP;
+  --badge-font: RDRLino-Regular, NotoSerifTC
+}
+
+:root :lang(ko_kr) [data-game=rdo],
+:root :lang(ko_kr) [data-game^=rdr] {
+  --font-family-h: NotoSerifKR;
+  --font-family-newswire-subtitle: NotoSansKR;
+  --font-family-std: NotoSansKR;
+  --area-font: NotoSansKR;
+  --badge-font: RDRLino-Regular, NotoSerifKR
+}
+
+:root .hiddenMobile {
+  display: none
+}
+
+@media (min-width:768px) {
+  :root .hiddenMobile {
+    display: var(--display-original, block)
+  }
+}
+
+:root .hiddenLarge {
+  display: var(--display-original, block)
+}
+
+@media (min-width:768px) {
+  :root .hiddenLarge {
+    display: none
+  }
+}
+
+:root .hidden-sm {
+  display: var(--display-original, block)
+}
+
+@media (min-width:0px) {
+  :root .hidden-sm {
+    display: none
+  }
+}
+
+@media (min-width:0px) {
+  :root .show-sm {
+    display: var(--display-original, block)
+  }
+}
+
+:root .hidden-md {
+  display: var(--display-original, block)
+}
+
+@media (min-width:768px) {
+  :root .hidden-md {
+    display: none
+  }
+}
+
+@media (min-width:768px) {
+  :root .show-md {
+    display: var(--display-original, block)
+  }
+}
+
+:root .hidden-lg {
+  display: var(--display-original, block)
+}
+
+@media (min-width:1024px) {
+  :root .hidden-lg {
+    display: none
+  }
+}
+
+@media (min-width:1024px) {
+  :root .show-lg {
+    display: var(--display-original, block)
+  }
+}
+
+:root .hidden-xl {
+  display: var(--display-original, block)
+}
+
+@media (min-width:1920px) {
+  :root .hidden-xl {
+    display: none
+  }
+}
+
+@media (min-width:1920px) {
+  :root .show-xl {
+    display: var(--display-original, block)
+  }
+}
+
+:root .hidden-xxl {
+  display: var(--display-original, block)
+}
+
+@media (min-width:2560px) {
+  :root .hidden-xxl {
+    display: none
+  }
+}
+
+@media (min-width:2560px) {
+  :root .show-xxl {
+    display: var(--display-original, block)
+  }
+}
+
+:root .full-width {
+  left: 50%;
+  margin-left: calc((100vw / 2) * -1);
+  margin-right: calc((100vw / 2) * -1);
+  max-width: 100vw !important;
+  position: relative;
+  right: 50%;
+  width: 100vw
+}
+
+@media (max-width:767px) {
+  :root .reverse-mobile {
+    display: flex;
+    flex-direction: column-reverse
+  }
+}
+
+:root .center-children {
+  align-items: center;
+  display: flex;
+  justify-content: center
+}
+
+:root .std-padding-mobile-desktop-none {
+  --padding-dynamic: var(--padding-static)
+}
+
+@media (min-width:1024px) {
+  :root .std-padding-mobile-desktop-none {
+    --padding-dynamic: 0
+  }
+}
+
+:root .std-padding-desktop-mobile-none {
+  --padding-dynamic: 0
+}
+
+@media (min-width:1024px) {
+  :root .std-padding-desktop-mobile-none {
+    --padding-dynamic: var(--padding-static)
+  }
+}
+
+:root .horizontal-line {
+  background: #fff;
+  height: 2px;
+  margin-top: var(--grid-gap-static-sm);
+  width: 100%
+}
+
+@media (max-width:1023px) {
+  :root .horizontal-line {
+    margin-top: var(--grid-gap-static-xs)
+  }
+}
+
+:root .horizontal-line.gold {
+  background: linear-gradient(96deg, #977b52 18%, #ded0a4 51%, #b19b6b 85%)
+}
+
+body {
+  background: var(--background-color);
+  overflow-x: hidden;
+  overflow-y: scroll
+}
+
+ul {
+  padding-left: 40px !important
+}
+
+@supports (--custom:property) {
+  [style*="--aspect-ratio"] {
+    position: relative
+  }
+
+  [style*="--aspect-ratio"]:before {
+    content: "";
+    display: block;
+    height: 0;
+    padding-bottom: calc(100% / calc(var(--aspect-ratio)))
+  }
+
+  [style*="--aspect-ratio"]>* {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
+  }
+}
+
+[class^=SidebarContainer-] {
+  --color-h-dynamic: #000
+}
+
+[class^=SidebarContainer-] .prose {
+  background: var(--tina-color-grey-0);
+  background-color: var(--tina-color-grey-0);
+  border: 1px solid var(--tina-color-grey-2);
+  border-radius: var(--tina-radius-small);
+  box-shadow: 0 0 0 2px transparent;
+  color: var(--tina-color-grey-10);
+  margin-bottom: 14px;
+  padding: var(--tina-padding-small)
+}
+
+[class^=SidebarContainer-] .prose .ProseMirror {
+  grid-gap: var(--grid-gap-static-sm);
+  display: grid
+}
+
+[class^=SidebarContainer-] .prose .ProseMirror a {
+  text-decoration: underline
+}
+
+[class^=BlockMenuList-] button {
+  --color-h: #000
+}
+
+@keyframes globalFadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px)
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible
+  }
+}
+
+@keyframes globalFadeIn {
+  0% {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1;
+    visibility: visible
+  }
+}
+
+body {
+  overflow-y: var(--body-overflow, auto)
+}
+
+#main {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  min-height: 100vh
+}
