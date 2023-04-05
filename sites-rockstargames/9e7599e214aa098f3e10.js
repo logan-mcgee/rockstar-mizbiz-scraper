@@ -94,7 +94,7 @@
                 })]
               }), (0, n.jsx)("p", {
                 className: g.description,
-                "data-game": t,
+                "data-title": t,
                 children: a(`credits.${t}.desc`)
               })]
             })
