@@ -1344,7 +1344,7 @@
             path: "/standarddeviation",
             element: (0, x.jsx)(Ie, {})
           }, {
-            path: "/reddeadonline/credits",
+            path: "/reddeadonline/thankyou",
             element: (0, x.jsx)(h.Credits, {
               title: "rdr2"
             })
@@ -1470,7 +1470,7 @@
           normalLogo: !0,
           loading: !1,
           headerHidden: !1,
-          standalone: (["/careers", "/gta-v/thankyou", "/gifs", "/frontline-heroes", "/gtatv", "/gta-v/thankyou", "/reddeadonline/credits", "/rockstartv", "/screenshot-viewer", "/videoplayer"].find((e => Pe.includes(e))) ?? []).length > 0,
+          standalone: (["/careers", "/gifs", "/frontline-heroes", "/gtatv", "/rockstartv", "/screenshot-viewer", "/videoplayer"].find((e => Pe.includes(e))) ?? []).length > 0,
           error: {
             message: window?.errorFromServer?.message ?? null,
             code: window?.errorFromServer?.code ?? null

@@ -121,7 +121,7 @@
   background: var(--bg-img) bottom /cover no-repeat;
   color: #fff;
   display: grid;
-  min-height: 100vh
+  min-height: calc(100vh - var(--header-height))
 }
 
 @media (min-width:3400px) {
