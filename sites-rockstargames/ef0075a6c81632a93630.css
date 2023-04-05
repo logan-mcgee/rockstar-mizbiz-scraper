@@ -236,6 +236,10 @@
   width: 100%
 }
 
+.f4baa7c9e33b6836a685[data-game=v] {
+  font-weight: 700
+}
+
 @media (min-width:768px) {
   .f4baa7c9e33b6836a685 {
     font-size: var(--font-size-4)
