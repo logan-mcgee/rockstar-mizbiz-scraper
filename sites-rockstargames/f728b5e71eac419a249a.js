@@ -18,7 +18,7 @@
         f = n(1968),
         g = n(1458),
         p = n(6711),
-        h = n(2396),
+        h = n(4309),
         b = n(9929);
       const N = "d6f18ca5eb38255a12f2",
         S = "b9bb09c7276c243a56c3";
@@ -293,7 +293,7 @@
       }));
       var P = n(3444),
         R = n.n(P);
-      const z = e => {
+      const U = e => {
           let {
             game: a,
             t: n
@@ -332,7 +332,7 @@
             children: n("Buy Now")
           }) : null
         },
-        U = e => {
+        z = e => {
           let {
             game: a
           } = e;
@@ -535,12 +535,12 @@
               className: "e3dd0b8721e5b51d0e97",
               children: [(0, x.jsxs)("div", {
                 className: "b76354fb05b980942662",
-                children: [(0, x.jsx)(U, {
+                children: [(0, x.jsx)(z, {
                   game: d,
                   t: a
                 }), (0, x.jsxs)("div", {
                   className: "e80d6fc21095d8e57319",
-                  children: [(0, x.jsx)(z, {
+                  children: [(0, x.jsx)(U, {
                     game: d,
                     t: a
                   }), d.has_official_site && (0, x.jsx)(o.Button, {
@@ -1285,7 +1285,6 @@
           "sites-gta-gen9": (0, s.lazy)((() => n.e(291).then(n.t.bind(n, 6291, 23)))),
           "sites-gta-trilogy": (0, s.lazy)((() => n.e(829).then(n.t.bind(n, 3829, 23)))),
           "sites-red-dead-online": (0, s.lazy)((() => n.e(308).then(n.t.bind(n, 308, 23)))),
-          "sites-red-dead-redemption-2": (0, s.lazy)((() => n.e(570).then(n.t.bind(n, 2570, 23)))),
           "sites-rockstargames-downloads": (0, s.lazy)((() => n.e(70).then(n.t.bind(n, 1070, 23))))
         },
         qe = function(e) {
@@ -1344,6 +1343,11 @@
           }, {
             path: "/standarddeviation",
             element: (0, x.jsx)(Ie, {})
+          }, {
+            path: "/reddeadonline/credits",
+            element: (0, x.jsx)(h.Credits, {
+              title: "rdr2"
+            })
           }, {
             path: "/careers/*",
             element: qe("sites-careers")
@@ -1466,7 +1470,7 @@
           normalLogo: !0,
           loading: !1,
           headerHidden: !1,
-          standalone: (["/careers", "/gta-v/thankyou", "/gifs", "/frontline-heroes", "/gtatv", "/gta-v/thankyou", "/rockstartv", "/screenshot-viewer", "/videoplayer"].find((e => Pe.includes(e))) ?? []).length > 0,
+          standalone: (["/careers", "/gta-v/thankyou", "/gifs", "/frontline-heroes", "/gtatv", "/gta-v/thankyou", "/reddeadonline/credits", "/rockstartv", "/screenshot-viewer", "/videoplayer"].find((e => Pe.includes(e))) ?? []).length > 0,
           error: {
             message: window?.errorFromServer?.message ?? null,
             code: window?.errorFromServer?.code ?? null
@@ -1476,8 +1480,8 @@
             filter: ""
           }
         },
-        ze = (0, k.makeVar)(Re),
-        Ue = window?.env?.graphEnv ?? "prod",
+        Ue = (0, k.makeVar)(Re),
+        ze = window?.env?.graphEnv ?? "prod",
         Me = e => {
           let a, {
             children: n
@@ -1513,10 +1517,10 @@
         Qe = (0, k.withReactiveState)((() => (0, x.jsx)(c.ModalProvider, {
           children: (0, x.jsx)(He, {})
         })), {
-          state: ze
+          state: Ue
         }),
         Ke = (0, k.withRockstarGraph)(Qe, {
-          env: Ue,
+          env: ze,
           typePolicies: {
             ...u()
           }
