@@ -240,6 +240,10 @@
   font-weight: 700
 }
 
+.f4baa7c9e33b6836a685 a {
+  text-decoration: underline !important
+}
+
 @media (min-width:768px) {
   .f4baa7c9e33b6836a685 {
     font-size: var(--font-size-4)

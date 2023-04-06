@@ -126,7 +126,7 @@
   --grid-num-columns: 2;
   grid-row-gap: 0;
   border-bottom: 3px solid transparent;
-  border-image: url(../img/4f4af8ec618d659afb3f.png) 10 round;
+  border-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/4f4af8ec618d659afb3f.png) 10 round;
   border-top: 3px solid transparent
 }
 
@@ -141,7 +141,7 @@
 .ab9f12604c018853a308 .ee961e47b32d65061386.e0672125aba71dce5e07:before {
   border-image-repeat: repeat;
   border-image-slice: 14;
-  border-image-source: url(../img/eee7226dc23365aed11c.png);
+  border-image-source: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/eee7226dc23365aed11c.png);
   border-style: solid;
   border-width: 0 3px 0 0;
   content: "";
@@ -209,7 +209,7 @@
   --grid-num-columns: 3;
   grid-row-gap: 0;
   border-bottom: 3px solid transparent;
-  border-image: url(../img/4f4af8ec618d659afb3f.png) 10 round;
+  border-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/4f4af8ec618d659afb3f.png) 10 round;
   border-top: 3px solid transparent
 }
 
@@ -224,7 +224,7 @@
 .ab9f12604c018853a308 .ee961e47b32d65061386.a7043faf0a658ff4328a:before {
   border-image-repeat: repeat;
   border-image-slice: 14;
-  border-image-source: url(../img/eee7226dc23365aed11c.png);
+  border-image-source: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/eee7226dc23365aed11c.png);
   border-style: solid;
   border-width: 0 3px 0 0;
   content: "";
@@ -296,7 +296,7 @@
   --grid-num-columns: 4;
   grid-row-gap: 0;
   border-bottom: 3px solid transparent;
-  border-image: url(../img/4f4af8ec618d659afb3f.png) 10 round;
+  border-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/4f4af8ec618d659afb3f.png) 10 round;
   border-top: 3px solid transparent
 }
 
@@ -311,7 +311,7 @@
 .ab9f12604c018853a308 .ee961e47b32d65061386.fc538cbda060a473ba1b:before {
   border-image-repeat: repeat;
   border-image-slice: 14;
-  border-image-source: url(../img/eee7226dc23365aed11c.png);
+  border-image-source: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/eee7226dc23365aed11c.png);
   border-style: solid;
   border-width: 0 3px 0 0;
   content: "";
@@ -373,14 +373,14 @@
 
 .ab9f12604c018853a308 .ee961e47b32d65061386 .fc1568b77cc287420646 {
   border-bottom: 3px solid transparent;
-  border-image: url(../img/b3149ff4c9686aef2641.png) 0 0 10 0 round;
+  border-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/b3149ff4c9686aef2641.png) 0 0 10 0 round;
   display: flex;
   flex-flow: column;
   justify-content: flex-start
 }
 
 .ab9f12604c018853a308 .ee961e47b32d65061386 .fc1568b77cc287420646.ee55d82807507d7ffa2d {
-  background-image: url(../img/3f96a37d3e1ba6b0b181.png);
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/3f96a37d3e1ba6b0b181.png);
   background-origin: content-box;
   background-repeat: no-repeat;
   background-size: cover;
@@ -429,7 +429,7 @@
 }
 
 .b5915942ffe5f300bc4b {
-  background-image: url(../img/fe653916e8a634331a3b.jpg)
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/fe653916e8a634331a3b.jpg)
 }
 
 img.ecf4053f24a1ea762cbb {
@@ -443,7 +443,7 @@ img.ecf4053f24a1ea762cbb {
 .b71bc87fe69e5e8e4ab7 {
   --padding-dynamic: var(--padding-static);
   --padding-dynamic-tb: initial;
-  background-image: url(../img/8433cae60566d87b2144.png);
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/8433cae60566d87b2144.png);
   background-origin: content-box;
   background-repeat: no-repeat;
   background-size: cover;
@@ -462,7 +462,7 @@ img.ecf4053f24a1ea762cbb {
 
 @media (min-width:768px) {
   .b71bc87fe69e5e8e4ab7 {
-    background-image: url(../img/6f5fe9883d9bf968fb24.png);
+    background-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/6f5fe9883d9bf968fb24.png);
     background-origin: content-box;
     background-repeat: no-repeat;
     background-size: cover
@@ -482,13 +482,13 @@ img.ecf4053f24a1ea762cbb {
 
 .c6f2704eec0039dc99fd {
   border-bottom: 8px solid transparent;
-  border-image: url(../img/f87ab308b66e7566bf72.png) 8 repeat;
+  border-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/f87ab308b66e7566bf72.png) 8 repeat;
   border-top: 8px solid transparent;
   margin-bottom: var(--area-spacing)
 }
 
 .c6f2704eec0039dc99fd .eb5100dcfafe9290815d {
-  background-image: url(../img/c677bdf825b9b8071be5.png);
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/c677bdf825b9b8071be5.png);
   background-origin: content-box;
   background-position-x: 80%;
   background-repeat: no-repeat;
@@ -516,7 +516,7 @@ img.ecf4053f24a1ea762cbb {
 }
 
 .c6f2704eec0039dc99fd .eb5100dcfafe9290815d:after {
-  background-image: url(../img/ffdd18cb7750abec6902.png);
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/ffdd18cb7750abec6902.png);
   background-origin: content-box;
   background-position: 50%;
   background-repeat: no-repeat;
@@ -542,7 +542,7 @@ img.ecf4053f24a1ea762cbb {
 
 @media (min-width:768px) {
   .c6f2704eec0039dc99fd .eb5100dcfafe9290815d:after {
-    background-image: url(../img/60db52c08ef987a285f3.png);
+    background-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/60db52c08ef987a285f3.png);
     background-origin: content-box;
     background-repeat: no-repeat;
     background-size: cover;
@@ -668,7 +668,7 @@ img.ecf4053f24a1ea762cbb {
 
 [data-game=rdo] .aef21ffeff79dc62ba24,
 [data-game^=rdr] .aef21ffeff79dc62ba24 {
-  background-image: url(../img/fe653916e8a634331a3b.jpg)
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/fe653916e8a634331a3b.jpg)
 }
 
 [data-game^=gta] {
@@ -715,7 +715,7 @@ img.ecf4053f24a1ea762cbb {
 .a1c51a7aa9369eaf079c {
   --padding-dynamic: var(--padding-static);
   --padding-dynamic-tb: initial;
-  background-image: url(../img/87b0b31542f1aaee709d.png);
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/87b0b31542f1aaee709d.png);
   background-origin: content-box;
   background-repeat: no-repeat;
   background-size: cover;
@@ -903,11 +903,11 @@ img.ecf4053f24a1ea762cbb {
 }
 
 .ca901535ed8040e1c467 {
-  background-image: url(../img/c30b4d29f87d457edd6c.jpg)
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/c30b4d29f87d457edd6c.jpg)
 }
 
 .e7678c54af2658902efe {
-  background-image: url(../img/aa3ed65c76c61807e6e5.jpg)
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/aa3ed65c76c61807e6e5.jpg)
 }
 
 @media (min-width:0px) {
@@ -944,7 +944,7 @@ img.ecf4053f24a1ea762cbb {
 [data-game=rdo] .bfcd25af2b432261c26b {
   --padding-dynamic: initial;
   --grid-column-gap: var(--grid-gap-static-lg);
-  --gaming-background-img: url(../img/8503ef50c5c6de52bf7e.png);
+  --gaming-background-img: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/8503ef50c5c6de52bf7e.png);
   --image-margin-bottom: 0;
   --grid-row-gap: 2rem
 }
@@ -1036,7 +1036,7 @@ img.ecf4053f24a1ea762cbb {
 }
 
 .bfcd25af2b432261c26b.b4538e93d172276607d0 ul.aa03d239a9b0983fb5bb li:before {
-  background-image: url(../img/f46348780a767e7cbb16.svg);
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/f46348780a767e7cbb16.svg);
   content: "";
   height: .5rem;
   margin-right: 1rem;
@@ -1083,11 +1083,11 @@ img.ecf4053f24a1ea762cbb {
 }
 
 [data-game=rdo] .bd25cae14a3ba24b11cf {
-  background: url(../img/81779d7f7dd074facb3b.jpg) 50%/cover
+  background: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/81779d7f7dd074facb3b.jpg) 50%/cover
 }
 
 [data-game=gtao] .bd25cae14a3ba24b11cf {
-  background: url(../img/ffc5b89eaf6a01e3395f.jpg) 50%/cover
+  background: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/ffc5b89eaf6a01e3395f.jpg) 50%/cover
 }
 
 .db774e916b16318ae327 {
@@ -2035,7 +2035,7 @@ img.ecf4053f24a1ea762cbb {
 }
 
 .newswireFull .gridStyles.podium {
-  background-image: url(../img/453cfa96a5bca5c0e46a.jpg)
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/453cfa96a5bca5c0e46a.jpg)
 }
 
 @media (max-width:767px) {
@@ -2173,7 +2173,7 @@ img.ecf4053f24a1ea762cbb {
 
 .newswireFull .rdoAccountConnection {
   align-self: auto;
-  background-image: url(../img/5ae8f944f472dd75fab1.jpg);
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/5ae8f944f472dd75fab1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -2287,7 +2287,7 @@ img.ecf4053f24a1ea762cbb {
   --font-title-family: "RDRLino-Regular";
   --font-title-letter-spacing: 0.01rem;
   --font-title-word-spacing: 0.07rem;
-  background: var(--background-img, url(../img/600399c959fd4880d028.jpg)) var(--background-color, #000);
+  background: var(--background-img, url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/600399c959fd4880d028.jpg)) var(--background-color, #000);
   background-size: contain;
   color: #fff;
   font-family: "HapnaSlabSerif";

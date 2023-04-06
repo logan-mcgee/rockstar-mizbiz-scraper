@@ -8,12 +8,12 @@
       var n = a(8976),
         s = a(9542),
         t = a(9929);
-      const l = {
+      const d = {
         title: "adb8c90b39b6855c758d",
         main: "b71b10432f44c16d125f",
         breadcrumbs: "c2bf1c67c354c461aa89"
       };
-      var d = a(3322);
+      var l = a(3322);
       const r = (0, t.withTranslations)((e => {
         let {
           children: i,
@@ -25,10 +25,10 @@
           variant: u = null
         } = e;
         const g = (0, t.useNewswirePost)(),
-          p = {},
-          f = p?.meta?.title ?? g?.title,
-          v = p?.meta?.subtitle ?? g?.subtitle,
-          b = v ? (0, d.jsx)("h3", {
+          f = {},
+          p = f?.meta?.title ?? g?.title,
+          v = f?.meta?.subtitle ?? g?.subtitle,
+          b = v ? (0, l.jsx)("h3", {
             "data-context": "newswire-subtitle",
             children: v
           }) : "",
@@ -39,11 +39,11 @@
           {
             src: k
           } = (0, s.useImageParser)(r),
-          x = (0, d.jsxs)(d.Fragment, {
-            children: [(0, d.jsx)("time", {
+          x = (0, l.jsxs)(l.Fragment, {
+            children: [(0, l.jsx)("time", {
               dateTime: g.created,
               children: g.created_formatted
-            }), a ? (0, d.jsx)(n.DescriptionArea, {
+            }), a ? (0, l.jsx)(n.DescriptionArea, {
               item: a
             }) : "", i]
           });
@@ -54,31 +54,31 @@
           text: g.secondary_tags[0].name,
           to: `/newswire?tag_id=${g.secondary_tags[0].id}`
         });
-        const j = (0, d.jsx)("div", {
-          className: l.breadcrumbs,
-          children: h.map((e => (0, d.jsx)(n.A, {
+        const j = (0, l.jsx)("div", {
+          className: d.breadcrumbs,
+          children: h.map((e => (0, l.jsx)(n.A, {
             to: e.to,
             children: e.text
           }, e.to)))
         });
-        return k?.desktop && (c.background = `url(${k.desktop}) center/cover no-repeat`), (0, d.jsx)("div", {
-          className: [m, l.title].join(" "),
+        return k?.desktop && (c.background = `url(${k.desktop}) center/cover no-repeat`), (0, l.jsx)("div", {
+          className: [m, d.title].join(" "),
           style: c,
-          children: "separated" === u ? (0, d.jsxs)(d.Fragment, {
-            children: [(0, d.jsxs)("header", {
+          children: "separated" === u ? (0, l.jsxs)(l.Fragment, {
+            children: [(0, l.jsxs)("header", {
               "data-context": "title",
-              children: [j, (0, d.jsx)("h1", {
-                children: f
+              children: [j, (0, l.jsx)("h1", {
+                children: p
               })]
-            }), (0, d.jsxs)("footer", {
+            }), (0, l.jsxs)("footer", {
               "data-context": "title",
               children: [b, x]
             })]
-          }) : (0, d.jsxs)(d.Fragment, {
-            children: [j, (0, d.jsxs)("div", {
-              className: l.main,
-              children: [(0, d.jsx)("h1", {
-                children: f
+          }) : (0, l.jsxs)(l.Fragment, {
+            children: [j, (0, l.jsxs)("div", {
+              className: d.main,
+              children: [(0, l.jsx)("h1", {
+                children: p
               }), b]
             }), x]
           })
@@ -108,10 +108,10 @@
           hash: a
         } = e;
         const t = (0, n.useRef)(null),
-          l = window.location.hash?.replace("#", "") === a ? a : null;
+          d = window.location.hash?.replace("#", "") === a ? a : null;
         return (0, n.useEffect)((() => {
-          l && setTimeout((() => {
-            const e = document.getElementById(l);
+          d && setTimeout((() => {
+            const e = document.getElementById(d);
             e && e.scrollIntoView()
           }), 1e3)
         }), []), (0, s.jsx)("div", {
@@ -120,24 +120,24 @@
           children: i
         })
       };
-      var l = a(420),
-        d = a.n(l);
+      var d = a(420),
+        l = a.n(d);
       const r = e => {
         let {
           items: i,
           columns: a = {},
           noCarousel: n = !1,
           noInfiniteScroll: t = !1,
-          ...l
+          ...d
         } = e;
-        const r = l?.style ?? {};
+        const r = d?.style ?? {};
         return n && (a?.mobile && (r["--mobile-cols"] = a.mobile), a?.desktop && (r["--desktop-cols"] = a.desktop)), (0, s.jsxs)(s.Fragment, {
-          children: [l.title && (0, s.jsx)("p", {
+          children: [d.title && (0, s.jsx)("p", {
             className: "cc23ea60d10b10978740",
-            children: l.title
+            children: d.title
           }), (0, s.jsxs)("div", {
             className: "c9824c3db07a3f15334b",
-            children: [n && (0, s.jsx)(d(), {
+            children: [n && (0, s.jsx)(l(), {
               style: {
                 ...r,
                 "--grid-gap-dynamic": "2rem 0"
@@ -145,7 +145,7 @@
               className: "b6ef0aec65f96384d4cd",
               renderTemplate: "standard",
               items: i,
-              ...l
+              ...d
             }), !n && (0, s.jsx)(v, {
               items: i,
               noInfiniteScroll: t,
@@ -191,18 +191,18 @@
             items: i,
             noTextFit: a,
             type: t,
-            carouselOnMobile: l,
-            columns: d = {
+            carouselOnMobile: d,
+            columns: l = {
               desktop: 3,
               mobile: 2
             }
           } = e;
-          const [r, u] = (0, n.useState)(null), [g, p] = (0, n.useState)(3), f = (0, n.useRef)(null);
+          const [r, u] = (0, n.useState)(null), [g, f] = (0, n.useState)(3), p = (0, n.useRef)(null);
           return (0, n.useEffect)((() => {
-            const e = window.getComputedStyle(f.current).getPropertyValue("--divisible-desktop"),
+            const e = window.getComputedStyle(p.current).getPropertyValue("--divisible-desktop"),
               a = () => {
                 const i = window.innerWidth;
-                p(i <= 767 ? 2 : e)
+                f(i <= 767 ? 2 : e)
               };
             if (i?.content.length && i?.content.length >= g) {
               let {
@@ -220,15 +220,15 @@
               u(a)
             }
             return window.addEventListener("resize", a), a(), () => window.removeEventListener("resize", a)
-          }), [g, f]), (0, s.jsxs)("div", {
-            className: `${o.limitedGrid} ${l?o.carouselOnMobile:""}`,
+          }), [g, p]), (0, s.jsxs)("div", {
+            className: `${o.limitedGrid} ${d?o.carouselOnMobile:""}`,
             children: [(0, s.jsxs)("div", {
-              ref: f,
+              ref: p,
               style: {
-                "--divisible-desktop": d.desktop,
-                "--divisible-mobile": d.mobile
+                "--divisible-desktop": l.desktop,
+                "--divisible-mobile": l.mobile
               },
-              className: `\n                    ${o.limitedGridContent}\n                    ${2===d.desktop?o.columnsDesktop2:""}\n                    ${3===d.desktop?o.columnsDesktop3:""}\n                    ${d.desktop>=4?o.columnsDesktop4:""}\n                    ${a?o.noTextFit:""}\n                    ${t?o[t]:""}\n                `,
+              className: `\n                    ${o.limitedGridContent}\n                    ${2===l.desktop?o.columnsDesktop2:""}\n                    ${3===l.desktop?o.columnsDesktop3:""}\n                    ${l.desktop>=4?o.columnsDesktop4:""}\n                    ${a?o.noTextFit:""}\n                    ${t?o[t]:""}\n                `,
               children: [(0, s.jsx)("div", {
                 className: o.thirdLine
               }), i.content.map(((e, i) => (0, s.jsx)("div", {
@@ -254,7 +254,7 @@
                   })]
                 })
               }, i))), r]
-            }), l && (0, s.jsx)("div", {
+            }), d && (0, s.jsx)("div", {
               className: o.gridCarousel,
               children: (0, s.jsx)(c.Carousel, {
                 children: i.content.map(((e, i) => (0, s.jsxs)("div", {
@@ -328,13 +328,13 @@
             return null
           }))
         },
-        p = {
+        f = {
           discountsCarouselItem: "f9c21e26992205ac01be",
           fontUpdate: "f37fa2503116c2fcad05",
           discountsCarousel: "b420f85959d96ba8f2f5",
           singleImage: "fce6b1a83c6b2a049943"
         },
-        f = e => {
+        p = e => {
           let {
             wrapper: i,
             children: a,
@@ -347,31 +347,31 @@
             items: i,
             noInfiniteScroll: a = !1,
             size: t = null,
-            perPage: l = null,
-            customSlidesPerView: d = null,
+            perPage: d = null,
+            customSlidesPerView: l = null,
             style: r = {}
           } = e;
           const o = (0, n.useRef)(null),
             [m, u] = (0, n.useState)(null),
             [g, v] = (0, n.useState)(t);
           return (0, n.useEffect)((() => {
-            !t && l && v(1 === l ? "lg" : "sm"), t || l || (v("lg"), console.error('Error: DiscountsCarousel expects a prop "size" in order to display the correct amount of slides. Defaulting to lg.'))
-          }), [t, l]), (0, n.useEffect)((() => {
+            !t && d && v(1 === d ? "lg" : "sm"), t || d || (v("lg"), console.error('Error: DiscountsCarousel expects a prop "size" in order to display the correct amount of slides. Defaulting to lg.'))
+          }), [t, d]), (0, n.useEffect)((() => {
             if (!o.current) return;
             const e = () => {
-              const e = d || window.getComputedStyle(o.current).getPropertyValue("--slides-per-view");
+              const e = l || window.getComputedStyle(o.current).getPropertyValue("--slides-per-view");
               u(e)
             };
             return window.addEventListener("resize", e), e(), () => {
               window.removeEventListener("resize", e)
             }
-          }), [o, d]), i.length ? (0, s.jsx)(f, {
+          }), [o, l]), i.length ? (0, s.jsx)(p, {
             length: i.length,
             wrapper: e => (0, s.jsx)("div", {
               "data-size": g,
               ref: o,
               children: (0, s.jsx)(c.Carousel, {
-                className: p.discountsCarousel,
+                className: f.discountsCarousel,
                 noInfiniteScroll: a,
                 style: {
                   ...r,
@@ -382,7 +382,7 @@
               })
             }),
             children: i.map(((e, a) => (0, s.jsxs)("div", {
-              className: [p.discountsCarouselItem, 1 === i.length ? p.singleImage : ""].join(" "),
+              className: [f.discountsCarouselItem, 1 === i.length ? f.singleImage : ""].join(" "),
               children: [(0, s.jsx)(c.ImageWithBadge, {
                 ariaLabel: e?.ariaLabel,
                 image: e?.image ?? {
@@ -394,7 +394,7 @@
                 splitter: e?.splitter ?? e?.image?.splitter,
                 badgeType: "badgeSizeUpdate"
               }), (0, s.jsx)(c.DescriptionArea, {
-                className: p.fontUpdate,
+                className: f.fontUpdate,
                 item: e
               })]
             }, e?.key ?? a)))
@@ -560,8 +560,8 @@
             headline: i,
             plainImage: n,
             top: t,
-            unorderedList: l,
-            bottom: d,
+            unorderedList: d,
+            bottom: l,
             rewards: r = "primeGaming",
             style: o = {}
           } = e;
@@ -596,18 +596,18 @@
                     dangerouslySetInnerHTML: {
                       __html: t.text
                     }
-                  }), l?.list && (0, s.jsx)("div", {
+                  }), d?.list && (0, s.jsx)("div", {
                     className: G.listArea,
                     children: (0, s.jsx)(c.UnorderedList, {
                       className: "gtaPlus" === r ? G.plus : "",
-                      ...l,
-                      list: l.list,
-                      ...l?.attributes
+                      ...d,
+                      list: d.list,
+                      ...d?.attributes
                     })
-                  }), d?.text && (0, s.jsx)("p", {
-                    ...d,
+                  }), l?.text && (0, s.jsx)("p", {
+                    ...l,
                     dangerouslySetInnerHTML: {
-                      __html: d.text
+                      __html: l.text
                     }
                   })]
                 }), (0, s.jsx)(c.ResponsiveGridItem, {
@@ -631,7 +631,7 @@
           deckHash: a = "",
           perPage: t = null
         } = e;
-        const [l, d] = (0, n.useState)(null), r = (0, I.useGetCdnSource)(i?.backgroundImg?.full_src ?? null), o = (0, I.useGetCdnSource)(i?.layeredImg?.full_src ?? null), m = (0, n.useRef)(null), {
+        const [d, l] = (0, n.useState)(null), r = (0, I.useGetCdnSource)(i?.backgroundImg?.full_src ?? null), o = (0, I.useGetCdnSource)(i?.layeredImg?.full_src ?? null), m = (0, n.useRef)(null), {
           data: u,
           error: g
         } = (0, C.useQuery)(M.TinaModulesInfo, {
@@ -648,9 +648,9 @@
                 tina: a
               } = e,
               n = _().clone(a);
-            _().set(n, "payload.meta.id", i), d(n)
+            _().set(n, "payload.meta.id", i), l(n)
           }
-        }), [u]), u && l ? g ? (0, s.jsx)(c.Wasted, {
+        }), [u]), u && d ? g ? (0, s.jsx)(c.Wasted, {
           error: g
         }) : (0, s.jsx)("div", {
           className: "db774e916b16318ae327",
@@ -670,7 +670,7 @@
                 components: {
                   Deck: $.Deck
                 },
-                tina: l
+                tina: d
               })
             })]
           })
@@ -710,7 +710,7 @@
             className: a = "",
             src: n = {},
             image: t = null,
-            video: l = null
+            video: d = null
           } = e;
           return (0, s.jsxs)("div", {
             className: ((n?.videoPlayerId || n?.gifHash) && z.heroImage, a),
@@ -742,12 +742,12 @@
               })
             }), t && (0, s.jsx)(c.ImageWithBadge, {
               image: t
-            }), l && (0, s.jsx)("div", {
+            }), d && (0, s.jsx)("div", {
               className: [z.responsiveVideo, z.trailer].join(" "),
               children: (0, s.jsx)(A(), {
                 context: "site",
-                autoplay: l?.autoplay ?? !1,
-                id: l.id,
+                autoplay: d?.autoplay ?? !1,
+                id: d.id,
                 hero: !0
               })
             })]
@@ -759,16 +759,16 @@
             children: i,
             className: a = "",
             style: t,
-            game: l
+            game: d
           } = e;
           return (0, n.useEffect)((() => {
             document.fonts.ready.then((() => {
               W.balanceText()
             }))
           }), [i]), (0, s.jsx)("div", {
-            className: ["newswireFull", l, a].join(" "),
+            className: ["newswireFull", d, a].join(" "),
             style: t,
-            "data-game": l,
+            "data-game": d,
             children: i
           })
         },
@@ -804,14 +804,14 @@
             desc: a,
             img: n,
             imgMobile: t,
-            bgColor: l,
-            descPositionBottom: d,
+            bgColor: d,
+            descPositionBottom: l,
             fontColor: r = "#fff"
           } = e;
           return (0, s.jsxs)(s.Fragment, {
-            children: [d ?? (0, s.jsx)(c.ResponsiveSection, {
+            children: [l ?? (0, s.jsx)(c.ResponsiveSection, {
               style: {
-                backgroundColor: `${l}`,
+                backgroundColor: `${d}`,
                 "--padding-top-bottom": "1.75rem"
               },
               className: "normalPaddingTopBottom largePaddingSides",
@@ -830,7 +830,7 @@
                 })]
               })
             }), (0, s.jsxs)(c.ResponsiveSection, {
-              className: [d ?? "spacing"].join(" "),
+              className: [l ?? "spacing"].join(" "),
               children: [(0, s.jsx)(c.ResponsiveImg, {
                 className: "hiddenMobile",
                 src: n
@@ -838,9 +838,9 @@
                 className: "hiddenLarge",
                 src: t
               })]
-            }), d ? (0, s.jsx)(c.ResponsiveSection, {
+            }), l ? (0, s.jsx)(c.ResponsiveSection, {
               style: {
-                backgroundColor: `${l}`,
+                backgroundColor: `${d}`,
                 "--padding-top-bottom": "1.75rem"
               },
               className: "normalPaddingTopBottom largePaddingSides spacing",
@@ -1383,35 +1383,35 @@
         };
         e.hasOwnProperty("loc") && (a.loc = e.loc);
         var t = n[i] || new Set,
-          l = new Set,
-          d = new Set;
+          d = new Set,
+          l = new Set;
         for (t.forEach((function(e) {
-            d.add(e)
-          })); d.size > 0;) {
-          var r = d;
-          d = new Set, r.forEach((function(e) {
-            l.has(e) || (l.add(e), (n[e] || new Set).forEach((function(e) {
-              d.add(e)
+            l.add(e)
+          })); l.size > 0;) {
+          var r = l;
+          l = new Set, r.forEach((function(e) {
+            d.has(e) || (d.add(e), (n[e] || new Set).forEach((function(e) {
+              l.add(e)
             })))
           }))
         }
-        return l.forEach((function(i) {
+        return d.forEach((function(i) {
           var n = s(e, i);
           n && a.definitions.push(n)
         })), a
       }(i, "TinaModulesInfo")
     },
-    1630: (e, i, a) => {
+    1630: e => {
       "use strict";
-      e.exports = a.p + "img/c957a3210117cf0e5e6a.svg"
+      e.exports = "https://media-rockstargames-com.akamaized.net/mfe4/__common/img/c957a3210117cf0e5e6a.svg"
     },
-    6469: (e, i, a) => {
+    6469: e => {
       "use strict";
-      e.exports = a.p + "img/c5b831ad44e0f2012e2f.png"
+      e.exports = "https://media-rockstargames-com.akamaized.net/mfe4/__common/img/c5b831ad44e0f2012e2f.png"
     },
-    4024: (e, i, a) => {
+    4024: e => {
       "use strict";
-      e.exports = a.p + "img/8d473777119f38062c5a.svg"
+      e.exports = "https://media-rockstargames-com.akamaized.net/mfe4/__common/img/e73c2fba147b4d905059.svg"
     }
   }
 ]);

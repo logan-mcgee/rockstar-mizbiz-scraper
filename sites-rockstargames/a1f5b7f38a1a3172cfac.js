@@ -7,8 +7,8 @@
         Breadcrumbs: () => l,
         Credits: () => v,
         FooterNav: () => S,
-        FooterStuck: () => y,
-        Header: () => I,
+        FooterStuck: () => w,
+        Header: () => O,
         Nav: () => A
       });
       var n = t(3322);
@@ -94,8 +94,10 @@
                 })]
               }), (0, n.jsx)("p", {
                 className: g.description,
-                "data-title": t,
-                children: a(`credits.${t}.desc`)
+                dangerouslySetInnerHTML: {
+                  __html: a(`credits.${t}.desc`)
+                },
+                "data-title": t
               })]
             })
           })
@@ -479,24 +481,24 @@
             })]
           })
         })),
-        w = {
+        y = {
           showsOver: "c66421b47ad45455dfb2",
           standalone: "b3e4d7fbda382c75e905",
           places: "ae62e3bd463d4ba42fa5"
         },
-        y = () => {
+        w = () => {
           const {
             state: {
               standalone: e
             }
           } = (0, c.useRockstarLocalState)();
           return (0, n.jsxs)("footer", {
-            className: [w.showsOver, e && w.standalone].join(" "),
+            className: [y.showsOver, e && y.standalone].join(" "),
             children: [(0, n.jsx)("div", {
-              className: w.whatTeamWildcats,
+              className: y.whatTeamWildcats,
               children: "Rockstar Games"
             }), (0, n.jsxs)("div", {
-              className: w.places,
+              className: y.places,
               children: [(0, n.jsx)("span", {
                 children: "New York"
               }), (0, n.jsx)("span", {
@@ -507,7 +509,7 @@
                 children: "Bogotá"
               })]
             }), (0, n.jsx)("div", {
-              className: w.sophomore,
+              className: y.sophomore,
               children: "MCMXCVIII"
             })]
           })
@@ -642,7 +644,7 @@
             })]
           })
         }))),
-        O = {
+        I = {
           header: "c88e3bf2c5a3eea47de1",
           headerHidden: "d47f3266f70158f40c19",
           standalone: "de5fe6dbf601131bf572",
@@ -659,7 +661,7 @@
           menuOpener: "a69f93a42729f8a8c895",
           navOpen: "c9b3960def8d1c6e2ba0"
         },
-        I = () => {
+        O = () => {
           const {
             state: {
               headerHidden: e,
@@ -684,11 +686,11 @@
             !0 === g && !0 === t && m()
           }), [g]), (0, n.jsxs)(n.Fragment, {
             children: [(0, n.jsxs)("header", {
-              className: [O.header, e ? O.headerHidden : "", r ? O.standalone : "", t ? O.navOpen : "", a ? O.loading : "", i ? O.hidden : ""].join(" "),
+              className: [I.header, e ? I.headerHidden : "", r ? I.standalone : "", t ? I.navOpen : "", a ? I.loading : "", i ? I.hidden : ""].join(" "),
               children: [(0, n.jsxs)("div", {
-                className: O.left,
+                className: I.left,
                 children: [(0, n.jsx)("div", {
-                  className: O.menuOpener,
+                  className: I.menuOpener,
                   children: (0, n.jsxs)(s.A, {
                     to: "#",
                     onClick: e => {
@@ -700,7 +702,7 @@
                   })
                 }), (0, n.jsx)(l, {})]
               }), (0, n.jsx)("div", {
-                className: O.logo,
+                className: I.logo,
                 children: (0, n.jsxs)(s.A, {
                   "data-gtm-category": "Mega Nav",
                   "data-gtm-action": "Main Nav",
@@ -710,18 +712,18 @@
                   title: "Home",
                   role: "link",
                   children: [(0, n.jsx)("div", {
-                    className: [O.logoNormal, o ? "" : O.active].join(" ")
+                    className: [I.logoNormal, o ? "" : I.active].join(" ")
                   }), (0, n.jsx)("div", {
-                    className: [O.logoNormal, o ? O.active : ""].join(" ")
+                    className: [I.logoNormal, o ? I.active : ""].join(" ")
                   })]
                 })
               }), (0, n.jsx)("div", {
-                className: O.signin,
+                className: I.signin,
                 children: (0, n.jsx)(h.MenuButton, {})
               }), (0, n.jsx)("div", {
-                className: O.bg
+                className: I.bg
               }), (0, n.jsx)("div", {
-                className: [O.loader, a ? O.loading : ""].join(" ")
+                className: [I.loader, a ? I.loading : ""].join(" ")
               })]
             }), (0, n.jsx)(A, {})]
           })
