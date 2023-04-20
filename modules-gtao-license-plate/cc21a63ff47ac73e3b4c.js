@@ -4687,7 +4687,7 @@
                     platform: t
                   }
                 }), n = r?.result?.plates?.map((e => {
-                  const t = x(e?.vehicles?.[0]?.plateStyle) ?? x("YellowBlack");
+                  const t = x(e?.vehicles?.[0]?.plateStyle ?? "YellowBlack") ?? x("YellowBlack");
                   return {
                     ...e,
                     style: t
