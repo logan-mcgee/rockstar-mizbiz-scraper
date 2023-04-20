@@ -1,0 +1,256 @@
+.a913315bef66f9841193 {
+  --unordered-list-grid-column-responsive: var(--unordered-list-grid-column, 1);
+  display: flex;
+  grid-template-columns: repeat(var(--unordered-list-grid-column-responsive), 1fr);
+  justify-content: space-around
+}
+
+@media (max-width:767px) {
+  .a913315bef66f9841193 {
+    --unordered-list-grid-column-responsive: var(--unordered-list-grid-column-mobile, 1) !important
+  }
+}
+
+.b47c4ec3ee5a7b25272a {
+  grid-gap: var(--grid-gap-static-md);
+  --unordered-list-grid-column-responsive: var(--unordered-list-grid-column, 1);
+  display: grid;
+  grid-template-columns: repeat(var(--unordered-list-grid-column-responsive), 1fr);
+  margin: 0 auto;
+  max-width: calc(var(--max-width-dynamic, 1000000px) + var(--padding-dynamic, 0px) * 2) !important;
+  padding-left: 0 !important;
+  row-gap: 0;
+  text-align: left;
+  width: 100%;
+  width: auto
+}
+
+@media (max-width:767px) {
+  .b47c4ec3ee5a7b25272a {
+    --unordered-list-grid-column-responsive: var(--unordered-list-grid-column-mobile, 1) !important
+  }
+}
+
+.b47c4ec3ee5a7b25272a li:not(:last-child) {
+  margin-bottom: var(--li-margin-tb, var(--grid-gap-static-sm, .5rem))
+}
+
+.b47c4ec3ee5a7b25272a.f62d53aa88002b52a1ea {
+  margin: 0;
+  padding-left: var(--list-padding-left, 0)
+}
+
+.b47c4ec3ee5a7b25272a.f62d53aa88002b52a1ea li {
+  font-weight: var(--li-font-weight, 400);
+  line-height: var(--li-line-height, 1.4rem);
+  list-style-type: none;
+  margin: var(--li-margin-tb, var(--grid-gap-static-sm, 1rem)) 0;
+  padding-left: calc(var(--base-rem-size) * 1.3);
+  position: relative
+}
+
+.b47c4ec3ee5a7b25272a.f62d53aa88002b52a1ea li:before {
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/f46348780a767e7cbb16.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  height: .5rem;
+  left: 0;
+  position: absolute;
+  top: .45rem;
+  width: .5rem
+}
+
+.b47c4ec3ee5a7b25272a.cb929b69e72d0b745821,
+.newswireFull.rdo .b47c4ec3ee5a7b25272a,
+[data-game=rdo] .b47c4ec3ee5a7b25272a {
+  margin: 0;
+  padding-left: 0
+}
+
+.b47c4ec3ee5a7b25272a.cb929b69e72d0b745821 li,
+.newswireFull.rdo .b47c4ec3ee5a7b25272a li,
+[data-game=rdo] .b47c4ec3ee5a7b25272a li {
+  list-style-type: none;
+  margin: 1rem 0;
+  padding-left: calc(var(--base-rem-size) * 1.3);
+  position: relative
+}
+
+.b47c4ec3ee5a7b25272a.cb929b69e72d0b745821 li:before,
+.newswireFull.rdo .b47c4ec3ee5a7b25272a li:before,
+[data-game=rdo] .b47c4ec3ee5a7b25272a li:before {
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/9c893c1b460cc05780cc.svg);
+  background-repeat: no-repeat;
+  content: "";
+  height: 11px;
+  left: 0;
+  position: absolute;
+  top: .6rem;
+  width: 11px
+}
+
+@media (max-width:767px) {
+
+  .b47c4ec3ee5a7b25272a.cb929b69e72d0b745821 li:before,
+  .newswireFull.rdo .b47c4ec3ee5a7b25272a li:before,
+  [data-game=rdo] .b47c4ec3ee5a7b25272a li:before {
+    top: .3rem
+  }
+}
+
+.b47c4ec3ee5a7b25272a.cb929b69e72d0b745821 li:not(:last-child),
+.newswireFull.rdo .b47c4ec3ee5a7b25272a li:not(:last-child),
+[data-game=rdo] .b47c4ec3ee5a7b25272a li:not(:last-child) {
+  margin-bottom: var(--base-rem-size)
+}
+
+.b47c4ec3ee5a7b25272a.cb929b69e72d0b745821.d488e38df25c0b9a4c20,
+.newswireFull.rdo .b47c4ec3ee5a7b25272a.d488e38df25c0b9a4c20,
+[data-game=rdo] .b47c4ec3ee5a7b25272a.d488e38df25c0b9a4c20 {
+  padding-left: var(--grid-gap-static-md)
+}
+
+.b47c4ec3ee5a7b25272a.cb929b69e72d0b745821.d488e38df25c0b9a4c20 li,
+.newswireFull.rdo .b47c4ec3ee5a7b25272a.d488e38df25c0b9a4c20 li,
+[data-game=rdo] .b47c4ec3ee5a7b25272a.d488e38df25c0b9a4c20 li {
+  list-style-type: disc;
+  margin: 0 0 1rem;
+  padding: 0 0 0 .5rem
+}
+
+.b47c4ec3ee5a7b25272a.cb929b69e72d0b745821.d488e38df25c0b9a4c20 li:last-child,
+.newswireFull.rdo .b47c4ec3ee5a7b25272a.d488e38df25c0b9a4c20 li:last-child,
+[data-game=rdo] .b47c4ec3ee5a7b25272a.d488e38df25c0b9a4c20 li:last-child {
+  margin: 0
+}
+
+.b47c4ec3ee5a7b25272a.cb929b69e72d0b745821.d488e38df25c0b9a4c20 li:before,
+.newswireFull.rdo .b47c4ec3ee5a7b25272a.d488e38df25c0b9a4c20 li:before,
+[data-game=rdo] .b47c4ec3ee5a7b25272a.d488e38df25c0b9a4c20 li:before {
+  content: none
+}
+
+.b47c4ec3ee5a7b25272a.ce5462c5860712b67002,
+.newswireFull.gtao .b47c4ec3ee5a7b25272a,
+[data-game=gtao] .b47c4ec3ee5a7b25272a {
+  margin: 0 auto;
+  padding-left: 0
+}
+
+.b47c4ec3ee5a7b25272a.ce5462c5860712b67002 li,
+.newswireFull.gtao .b47c4ec3ee5a7b25272a li,
+[data-game=gtao] .b47c4ec3ee5a7b25272a li {
+  font-weight: var(--li-font-weight, 700);
+  line-height: var(--li-line-height, 1.4rem);
+  list-style-type: none;
+  margin: var(--grid-gap-static-sm, 1rem) 0;
+  padding-left: calc(var(--base-rem-size) * 1.3);
+  position: relative
+}
+
+.b47c4ec3ee5a7b25272a.ce5462c5860712b67002 li:before,
+.newswireFull.gtao .b47c4ec3ee5a7b25272a li:before,
+[data-game=gtao] .b47c4ec3ee5a7b25272a li:before {
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/de349307277a7bfbc620.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  height: 11px;
+  left: 0;
+  position: absolute;
+  top: 20%;
+  width: 11px
+}
+
+.b47c4ec3ee5a7b25272a.ce5462c5860712b67002.a1eadd442b1479e27d60 li:before,
+.newswireFull.gtao .b47c4ec3ee5a7b25272a.a1eadd442b1479e27d60 li:before,
+[data-game=gtao] .b47c4ec3ee5a7b25272a.a1eadd442b1479e27d60 li:before {
+  background-image: var(--custom-star, none)
+}
+
+.b47c4ec3ee5a7b25272a.ce5462c5860712b67002.eb8d7b0da6967262905d li:before,
+.newswireFull.gtao .b47c4ec3ee5a7b25272a.eb8d7b0da6967262905d li:before,
+[data-game=gtao] .b47c4ec3ee5a7b25272a.eb8d7b0da6967262905d li:before {
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/393e0d58615be4021366.svg)
+}
+
+.b47c4ec3ee5a7b25272a.ce5462c5860712b67002.ef6a35989cf7f2815a81 li:before,
+.newswireFull.gtao .b47c4ec3ee5a7b25272a.ef6a35989cf7f2815a81 li:before,
+[data-game=gtao] .b47c4ec3ee5a7b25272a.ef6a35989cf7f2815a81 li:before {
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/ac5ab42905130554a36f.svg)
+}
+
+.b47c4ec3ee5a7b25272a.ce5462c5860712b67002.f16f93451d76eff119ef li:before,
+.newswireFull.gtao .b47c4ec3ee5a7b25272a.f16f93451d76eff119ef li:before,
+[data-game=gtao] .b47c4ec3ee5a7b25272a.f16f93451d76eff119ef li:before {
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/38d2cc367b1075d22f80.svg)
+}
+
+.b47c4ec3ee5a7b25272a.ce5462c5860712b67002.b68b8022cefb15c42493 li:before,
+.newswireFull.gtao .b47c4ec3ee5a7b25272a.b68b8022cefb15c42493 li:before,
+[data-game=gtao] .b47c4ec3ee5a7b25272a.b68b8022cefb15c42493 li:before {
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/14d8db31ba31665627cb.svg)
+}
+
+.b47c4ec3ee5a7b25272a.ce5462c5860712b67002.b81f26d04bea51236b12 li:before,
+.newswireFull.gtao .b47c4ec3ee5a7b25272a.b81f26d04bea51236b12 li:before,
+[data-game=gtao] .b47c4ec3ee5a7b25272a.b81f26d04bea51236b12 li:before {
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/17cb71842d27dd54e7ce.svg)
+}
+
+.b47c4ec3ee5a7b25272a.ce5462c5860712b67002.eabe5a1697de9f60444b li:before,
+.newswireFull.gtao .b47c4ec3ee5a7b25272a.eabe5a1697de9f60444b li:before,
+[data-game=gtao] .b47c4ec3ee5a7b25272a.eabe5a1697de9f60444b li:before {
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/61ecee0b1ffc5fca1ad9.svg)
+}
+
+.b47c4ec3ee5a7b25272a.ce5462c5860712b67002.cab0d114386be0534b0a li:before,
+.newswireFull.gtao .b47c4ec3ee5a7b25272a.cab0d114386be0534b0a li:before,
+[data-game=gtao] .b47c4ec3ee5a7b25272a.cab0d114386be0534b0a li:before {
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/9c9782816f0b95619055.svg)
+}
+
+.b47c4ec3ee5a7b25272a.ce5462c5860712b67002.e6521308cf3d4cbcd0eb li:before,
+.newswireFull.gtao .b47c4ec3ee5a7b25272a.e6521308cf3d4cbcd0eb li:before,
+[data-game=gtao] .b47c4ec3ee5a7b25272a.e6521308cf3d4cbcd0eb li:before {
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/66c1122380d396f6b280.svg)
+}
+
+.b47c4ec3ee5a7b25272a.ce5462c5860712b67002.da07f0da46dc71261efb li:before,
+.newswireFull.gtao .b47c4ec3ee5a7b25272a.da07f0da46dc71261efb li:before,
+[data-game=gtao] .b47c4ec3ee5a7b25272a.da07f0da46dc71261efb li:before {
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/9bb5e5043e8694ad37d3.svg)
+}
+
+.b47c4ec3ee5a7b25272a.ce5462c5860712b67002.db540e4cd55e1fd039f6 li:before,
+.newswireFull.gtao .b47c4ec3ee5a7b25272a.db540e4cd55e1fd039f6 li:before,
+[data-game=gtao] .b47c4ec3ee5a7b25272a.db540e4cd55e1fd039f6 li:before {
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/ac1e8c909ec2dd591123.svg)
+}
+
+.b47c4ec3ee5a7b25272a.ce5462c5860712b67002.d2ccafcdd0dbfba68f90 li:before,
+.newswireFull.gtao .b47c4ec3ee5a7b25272a.d2ccafcdd0dbfba68f90 li:before,
+[data-game=gtao] .b47c4ec3ee5a7b25272a.d2ccafcdd0dbfba68f90 li:before {
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/de3738240e0b17b6d57a.svg)
+}
+
+.b47c4ec3ee5a7b25272a.ce5462c5860712b67002.d5f11f6a0da20e30e1cc li:before,
+.newswireFull.gtao .b47c4ec3ee5a7b25272a.d5f11f6a0da20e30e1cc li:before,
+[data-game=gtao] .b47c4ec3ee5a7b25272a.d5f11f6a0da20e30e1cc li:before {
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/f2dbe5eb510f730b43ca.svg);
+  background-size: 105%;
+  height: 100%;
+  width: 12px
+}
+
+.b47c4ec3ee5a7b25272a span {
+  color: var(--list-color-span, inherit);
+  font-weight: var(--list-font-weight-span, inherit)
+}
+
+@media (max-width:640px) {
+  .b47c4ec3ee5a7b25272a {
+    width: auto
+  }
+}

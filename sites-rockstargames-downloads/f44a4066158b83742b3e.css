@@ -1,0 +1,341 @@
+.d90aabe3249729d15b02 {
+  margin: 0 auto;
+  max-width: var(--max-width);
+  padding: var(--padding-top-bottom) var(--padding-sides);
+  width: 100%
+}
+
+.d90aabe3249729d15b02 .f2faa00815518578c68e {
+  --line-height-h: 1.3;
+  font-family: var(--font-family-h);
+  font-size: var(--font-size-5);
+  font-weight: var(--font-weight-h);
+  margin: 0 0 1.5rem
+}
+
+@media (min-width:1920px) {
+  .d90aabe3249729d15b02 .f2faa00815518578c68e {
+    font-size: var(--font-size-6)
+  }
+}
+
+.d90aabe3249729d15b02 .a547f90348f175714fd3 {
+  --grid-gap-dynamic: var(--grid-gap-static-xl);
+  grid-gap: var(--grid-gap-dynamic);
+  display: grid;
+  grid-template-columns: repeat(var(--grid-num-columns, 1), minmax(0, 1fr))
+}
+
+.a0ef8e1aa2d02f5ffc24 {
+  grid-gap: var(--standard-grid-gap);
+  grid-row-gap: var(--grid-gap-static-lg);
+  display: grid
+}
+
+@media (max-width:767px) {
+  .a0ef8e1aa2d02f5ffc24 {
+    grid-template-columns: repeat(1, minmax(0, 1fr))
+  }
+}
+
+@media screen and (min-width:0px) and (max-width:1023px) {
+  .a0ef8e1aa2d02f5ffc24 {
+    grid-template-columns: repeat(2, minmax(0, 1fr))
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .a0ef8e1aa2d02f5ffc24 {
+    grid-template-columns: repeat(4, minmax(0, 1fr))
+  }
+}
+
+.b8474cb6668f1211bdda {
+  grid-row-gap: var(--standard-grid-gap);
+  grid-column-gap: var(--standard-grid-gap);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))
+}
+
+.b034144ce798fcf650c7,
+.d34308477e4b49656d80 {
+  --image-rounding-dynamic: var(--image-rounding-static-sm);
+  --image-rounding-dynamic: 0;
+  --card-background-color: transparent;
+  grid-gap: var(--grid-gap-static-sm);
+  background: var(--card-background-color);
+  border: none;
+  border-radius: var(--image-rounding-dynamic, 0);
+  display: flex;
+  flex-flow: column;
+  overflow: hidden;
+  overflow: unset;
+  transition: transform .2s ease
+}
+
+.b034144ce798fcf650c7 .adbab2664417a0ed7d5f,
+.d34308477e4b49656d80 .adbab2664417a0ed7d5f {
+  --grid-gap-dynamic: var(--grid-gap-static-md);
+  grid-gap: var(--grid-gap-dynamic);
+  --grid-gap-dynamic: var(--grid-gap-static-xs);
+  display: grid;
+  grid-template-columns: repeat(var(--grid-num-columns, 1), minmax(0, 1fr));
+  padding: 2rem 1.5rem
+}
+
+.b034144ce798fcf650c7 .adbab2664417a0ed7d5f .da1792d577a30b2a5eb5,
+.d34308477e4b49656d80 .adbab2664417a0ed7d5f .da1792d577a30b2a5eb5 {
+  --line-height-h: 1.3;
+  color: var(--color-h)
+}
+
+.b034144ce798fcf650c7 .adbab2664417a0ed7d5f,
+.d34308477e4b49656d80 .adbab2664417a0ed7d5f {
+  padding: 1.5rem
+}
+
+.b034144ce798fcf650c7 .da1792d577a30b2a5eb5,
+.d34308477e4b49656d80 .da1792d577a30b2a5eb5 {
+  font-size: var(--font-size-3);
+  font-weight: 400
+}
+
+.b034144ce798fcf650c7 .adbab2664417a0ed7d5f,
+.d34308477e4b49656d80 .adbab2664417a0ed7d5f {
+  padding: 0
+}
+
+.b034144ce798fcf650c7 .ff2ba9f753b41e31c3de,
+.d34308477e4b49656d80 .ff2ba9f753b41e31c3de {
+  --image-rounding-dynamic: var(--image-rounding-static-sm);
+  border-radius: var(--image-rounding-dynamic, 0)
+}
+
+.b034144ce798fcf650c7 .d36abe7e30df6da5334a,
+.d34308477e4b49656d80 .d36abe7e30df6da5334a {
+  grid-gap: var(--grid-gap-static-xs);
+  display: grid
+}
+
+.b034144ce798fcf650c7 .d36abe7e30df6da5334a h5,
+.d34308477e4b49656d80 .d36abe7e30df6da5334a h5 {
+  color: var(--color-h);
+  font-family: var(--font-family-h)
+}
+
+.ff2ba9f753b41e31c3de {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+.e7debcafd87087f5109a {
+  cursor: pointer;
+  position: relative
+}
+
+.e7debcafd87087f5109a .da1792d577a30b2a5eb5 {
+  align-items: center;
+  border-bottom: 1px solid hsla(0, 0%, 100%, .65);
+  display: flex;
+  padding: var(--grid-gap-static-xs)
+}
+
+.e7debcafd87087f5109a ul.a35e046871f1f35a9a62 {
+  background-color: var(--background-color);
+  border-radius: 0 0 var(--image-rounding-static-xs) var(--image-rounding-static-xs);
+  box-shadow: 0 0 0 transparent;
+  color: var(--body-color);
+  list-style-type: none;
+  margin: 0;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  padding-left: 0 !important;
+  position: absolute;
+  transition: all .3s ease-in-out, opacity .1s ease-out;
+  width: 100%;
+  z-index: 151
+}
+
+.e7debcafd87087f5109a ul.a35e046871f1f35a9a62.b489cd10b9367ed3522b {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .5);
+  max-height: 280px;
+  opacity: 1
+}
+
+.e7debcafd87087f5109a ul.a35e046871f1f35a9a62 li.eeb8b8af7d551129bdfe a {
+  display: block;
+  padding: var(--grid-gap-static-xs) var(--grid-gap-static-sm)
+}
+
+.e7debcafd87087f5109a ul.a35e046871f1f35a9a62 li.eeb8b8af7d551129bdfe a:hover {
+  background: var(--standard-color);
+  color: #161616
+}
+
+.e7debcafd87087f5109a .e0957b687cdd7da97aec {
+  background-size: cover;
+  right: var(--grid-gap-static-sm);
+  transition: .3s ease;
+  width: 13px
+}
+
+.e7debcafd87087f5109a .e0957b687cdd7da97aec,
+.e7debcafd87087f5109a .e0957b687cdd7da97aec:after {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
+  position: absolute;
+  transform: rotate(0deg)
+}
+
+.e7debcafd87087f5109a .e0957b687cdd7da97aec:after {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width=%2724%27 height=%2724%27 fill=%27none%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cpath d=%27m6 9 6 6 6-6%27 stroke=%27%23fff%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27/%3E%3C/svg%3E");
+  content: "";
+  display: inline-block;
+  right: 0;
+  top: 0;
+  transition: transform .3s;
+  width: 24px
+}
+
+.e7debcafd87087f5109a .e0957b687cdd7da97aec.b489cd10b9367ed3522b,
+.b489cd10b9367ed3522b.e7debcafd87087f5109a .e0957b687cdd7da97aec:after {
+  transform: rotate(180deg)
+}
+
+.e5f4620d306947a52385 {
+  margin-top: var(--grid-gap-static-md);
+  text-align: center
+}
+
+.d69c388caa4ade94c70d .a65ba55e591bf70981c1 {
+  --standard-grid-gap: var(--grid-gap-static-md);
+  background: var(--card-background-color);
+  border-radius: var(--image-rounding-static);
+  margin-bottom: var(--grid-gap-static-xl);
+  overflow: hidden;
+  padding: var(--grid-gap-static-md)
+}
+
+@media (max-width:1023px) {
+  .d69c388caa4ade94c70d .a65ba55e591bf70981c1 {
+    --standard-grid-gap: 0;
+    border-radius: 0;
+    grid-template-columns: 100%;
+    margin-bottom: var(--grid-gap-static-xl);
+    margin-left: calc(var(--padding-sides) * -1);
+    margin-top: calc(var(--padding-top-bottom) * -1);
+    width: 100vw
+  }
+}
+
+@media (min-width:1024px) and (max-width:1400px) {
+  .d69c388caa4ade94c70d .a65ba55e591bf70981c1 {
+    padding: var(--grid-gap-static-lg) var(--grid-gap-static-md)
+  }
+
+  .d69c388caa4ade94c70d .a65ba55e591bf70981c1 .ff2ba9f753b41e31c3de {
+    background-position: top;
+    background-size: contain
+  }
+
+  .d69c388caa4ade94c70d .a65ba55e591bf70981c1 p {
+    font-size: var(--font-size-2)
+  }
+}
+
+@media (min-width:1024px) {
+  .d69c388caa4ade94c70d .a65ba55e591bf70981c1 {
+    grid-template-columns: 50% 1fr;
+    padding: var(--grid-gap-static-lg)
+  }
+}
+
+@media (min-width:1920px) {
+  .d69c388caa4ade94c70d .a65ba55e591bf70981c1 {
+    --standard-grid-gap: var(--grid-gap-static-lg);
+    grid-template-columns: 55% 1fr;
+    padding: var(--grid-gap-static-md) var(--grid-gap-static-lg)
+  }
+}
+
+.d69c388caa4ade94c70d .ff2ba9f753b41e31c3de {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+.d69c388caa4ade94c70d .facc33b5bc397c627bc3 {
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/4008775794df379a870b.jpg);
+  background-size: cover
+}
+
+.d69c388caa4ade94c70d .d40d0170b22ec042c3d5 {
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/3b4d29057ecd8a99b39d.jpg)
+}
+
+.d69c388caa4ade94c70d .b98f6ff13a1a129ed290 {
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/7dcdb207fec12e87005f.jpg)
+}
+
+.d69c388caa4ade94c70d .f07cc6813d34099c704a {
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/737a16ac7e26efb3b871.jpg)
+}
+
+.d69c388caa4ade94c70d .e28d780daeb6859945bd {
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/e2104266be454646fa13.jpg)
+}
+
+.d69c388caa4ade94c70d .f2ff69f41f6b24744700 {
+  grid-gap: var(--grid-gap-static-md);
+  align-items: flex-start;
+  display: flex;
+  flex-flow: column
+}
+
+@media (max-width:1023px) {
+  .d69c388caa4ade94c70d .f2ff69f41f6b24744700 {
+    padding: 0 0 var(--grid-gap-static-md)
+  }
+}
+
+@media (min-width:1920px) {
+  .d69c388caa4ade94c70d .f2ff69f41f6b24744700 {
+    padding: var(--grid-gap-static-md) 0
+  }
+}
+
+.d69c388caa4ade94c70d .f2ff69f41f6b24744700 .e59d1cc927f84e3710e3 {
+  --grid-gap-dynamic: var(--grid-gap-static-xs);
+  grid-gap: var(--grid-gap-dynamic);
+  display: grid;
+  grid-template-columns: repeat(var(--grid-num-columns, 1), minmax(0, 1fr))
+}
+
+.d69c388caa4ade94c70d .f2ff69f41f6b24744700 h2 {
+  --line-height-h: 1.5
+}
+
+.d69c388caa4ade94c70d .f2ff69f41f6b24744700 a {
+  align-self: flex-start
+}
+
+@media (max-width:1023px) {
+  .d69c388caa4ade94c70d .f2ff69f41f6b24744700 a {
+    text-align: center;
+    width: 100%
+  }
+}
+
+.f2faa00815518578c68e.dbe3750fc036b6cbb39d {
+  grid-gap: var(--grid-gap-static-sm);
+  display: grid
+}
+
+.f2faa00815518578c68e.dbe3750fc036b6cbb39d .d3ee36dc2a9ddf1e1f35 {
+  font-size: var(--font-size-3)
+}

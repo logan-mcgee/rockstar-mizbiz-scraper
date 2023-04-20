@@ -2,10 +2,9 @@ var modules_core_agegate;
 (() => {
   "use strict";
   var e, r, t, n, a = {
-      933: (e, r, t) => {
+      288: (e, r, t) => {
         var n = {
-            "./index": () => Promise.all([t.e(232), t.e(859), t.e(398)]).then((() => () => t(313))),
-            "./graph/reactive": () => Promise.all([t.e(859), t.e(814)]).then((() => () => t(814)))
+            "./index": () => Promise.all([t.e(232), t.e(527)]).then((() => () => t(726)))
           },
           a = (e, r) => (t.R = r, r = t.o(n, e) ? n[e]() : Promise.resolve().then((() => {
             throw new Error('Module "' + e + '" does not exist in container.')
@@ -22,18 +21,6 @@ var modules_core_agegate;
           get: () => a,
           init: () => o
         })
-      },
-      171: (e, r, t) => {
-        var n = new Error;
-        e.exports = new Promise(((e, r) => {
-          if ("undefined" != typeof graph_client) return e();
-          t.l(window.mfe.path("@rockstargames/graph-client"), (t => {
-            if ("undefined" != typeof graph_client) return e();
-            var a = t && ("load" === t.type ? "missing" : t.type),
-              o = t && t.target && t.target.src;
-            n.message = "Loading script failed.\n(" + a + ": " + o + ")", n.name = "ScriptExternalLoadError", n.type = a, n.request = o, r(n)
-          }), "graph_client")
-        })).then((() => graph_client))
       },
       426: (e, r, t) => {
         var n = new Error;
@@ -84,10 +71,8 @@ var modules_core_agegate;
     })
   }, i.f = {}, i.e = e => Promise.all(Object.keys(i.f).reduce(((r, t) => (i.f[t](e, r), r)), [])), i.u = e => "js/" + {
     232: "51947ea897805cc2100f",
-    398: "4d059dd490c0e908d129",
-    627: "717210f45bb1388db530",
-    814: "8cbccedd8a7dd7943987",
-    859: "a21b21a06175a03f3245"
+    527: "16148a9c7b2c6db581d2",
+    627: "717210f45bb1388db530"
   } [e] + ".js", i.miniCssF = e => "css/45e5bc19e20e4dfe8e85.css", i.g = function() {
     if ("object" == typeof globalThis) return globalThis;
     try {
@@ -98,16 +83,16 @@ var modules_core_agegate;
   }(), i.o = (e, r) => Object.prototype.hasOwnProperty.call(e, r), e = {}, r = "@rockstargames/modules-core-agegate:", i.l = (t, n, a, o) => {
     if (e[t]) e[t].push(n);
     else {
-      var s, l;
+      var s, u;
       if (void 0 !== a)
-        for (var u = document.getElementsByTagName("script"), d = 0; d < u.length; d++) {
-          var f = u[d];
+        for (var l = document.getElementsByTagName("script"), d = 0; d < l.length; d++) {
+          var f = l[d];
           if (f.getAttribute("src") == t || f.getAttribute("data-webpack") == r + a) {
             s = f;
             break
           }
         }
-      s || (l = !0, (s = document.createElement("script")).charset = "utf-8", s.timeout = 120, i.nc && s.setAttribute("nonce", i.nc), s.setAttribute("data-webpack", r + a), s.src = t), e[t] = [n];
+      s || (u = !0, (s = document.createElement("script")).charset = "utf-8", s.timeout = 120, i.nc && s.setAttribute("nonce", i.nc), s.setAttribute("data-webpack", r + a), s.src = t), e[t] = [n];
       var c = (r, n) => {
           s.onerror = s.onload = null, clearTimeout(p);
           var a = e[t];
@@ -117,7 +102,7 @@ var modules_core_agegate;
           type: "timeout",
           target: s
         }), 12e4);
-      s.onerror = c.bind(null, s.onerror), s.onload = c.bind(null, s.onload), l && document.head.appendChild(s)
+      s.onerror = c.bind(null, s.onerror), s.onload = c.bind(null, s.onload), u && document.head.appendChild(s)
     }
   }, i.r = e => {
     "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
@@ -126,11 +111,9 @@ var modules_core_agegate;
       value: !0
     })
   }, i.nmd = e => (e.paths = [], e.children || (e.children = []), e), t = {
-    398: [711, 929],
-    859: [859]
+    527: [711, 929]
   }, n = {
     711: ["default", "./index", 426],
-    859: ["default", "./index", 171],
     929: ["default", "./index", 810]
   }, i.f.remotes = (e, r) => {
     i.o(t, e) && t[e].forEach((e => {
@@ -144,24 +127,24 @@ var modules_core_agegate;
               throw r
             }, a.p = 0
           },
-          s = (e, t, n, i, s, l) => {
+          s = (e, t, n, i, s, u) => {
             try {
-              var u = e(t, n);
-              if (!u || !u.then) return s(u, i, l);
-              var d = u.then((e => s(e, i)), o);
-              if (!l) return d;
+              var l = e(t, n);
+              if (!l || !l.then) return s(l, i, u);
+              var d = l.then((e => s(e, i)), o);
+              if (!u) return d;
               r.push(a.p = d)
             } catch (e) {
               o(e)
             }
           },
-          l = (e, r, n) => s(r.get, a[1], t, 0, u, n),
-          u = r => {
+          u = (e, r, n) => s(r.get, a[1], t, 0, l, n),
+          l = r => {
             a.p = 1, i.m[e] = e => {
               e.exports = r()
             }
           };
-        s(i, a[2], 0, 0, ((e, r, t) => e ? s(i.I, a[0], 0, e, l, t) : o()), 1)
+        s(i, a[2], 0, 0, ((e, r, t) => e ? s(i.I, a[0], 0, e, u, t) : o()), 1)
       }
     }))
   }, (() => {
@@ -176,7 +159,7 @@ var modules_core_agegate;
         i.o(i.S, t) || (i.S[t] = {});
         var o = i.S[t],
           s = "@rockstargames/modules-core-agegate",
-          l = e => {
+          u = e => {
             var r = e => {
               return r = "Initialization of sharing external failed: " + e, "undefined" != typeof console && console.warn && console.warn(r);
               var r
@@ -185,23 +168,23 @@ var modules_core_agegate;
               var a = i(e);
               if (!a) return;
               var o = e => e && e.init && e.init(i.S[t], n);
-              if (a.then) return u.push(a.then(o, r));
+              if (a.then) return l.push(a.then(o, r));
               var s = o(a);
-              if (s && s.then) return u.push(s.catch(r))
+              if (s && s.then) return l.push(s.catch(r))
             } catch (e) {
               r(e)
             }
           },
-          u = [];
+          l = [];
         return "default" === t && (((e, r, t, n) => {
           var a = o[e] = o[e] || {},
-            l = a[r];
-          (!l || !l.loaded && (1 != !l.eager ? n : s > l.from)) && (a[r] = {
+            u = a[r];
+          (!u || !u.loaded && (1 != !u.eager ? n : s > u.from)) && (a[r] = {
             get: () => i.e(627).then((() => () => i(627))),
             from: s,
             eager: !1
           })
-        })("react", "18.2.0"), l(171), l(426), l(810)), u.length ? e[t] = Promise.all(u).then((() => e[t] = 1)) : e[t] = 1
+        })("react", "18.2.0"), u(426), u(810)), l.length ? e[t] = Promise.all(l).then((() => e[t] = 1)) : e[t] = 1
       }
     }
   })(), (() => {
@@ -227,26 +210,26 @@ var modules_core_agegate;
           var a = t[0],
             o = a < 0;
           o && (a = -a - 1);
-          for (var i = 0, s = 1, l = !0;; s++, i++) {
-            var u, d, f = s < t.length ? (typeof t[s])[0] : "";
-            if (i >= n.length || "o" == (d = (typeof(u = n[i]))[0])) return !l || ("u" == f ? s > a && !o : "" == f != o);
+          for (var i = 0, s = 1, u = !0;; s++, i++) {
+            var l, d, f = s < t.length ? (typeof t[s])[0] : "";
+            if (i >= n.length || "o" == (d = (typeof(l = n[i]))[0])) return !u || ("u" == f ? s > a && !o : "" == f != o);
             if ("u" == d) {
-              if (!l || "u" != f) return !1
-            } else if (l)
+              if (!u || "u" != f) return !1
+            } else if (u)
               if (f == d)
                 if (s <= a) {
-                  if (u != t[s]) return !1
+                  if (l != t[s]) return !1
                 } else {
-                  if (o ? u > t[s] : u < t[s]) return !1;
-                  u != t[s] && (l = !1)
+                  if (o ? l > t[s] : l < t[s]) return !1;
+                  l != t[s] && (u = !1)
                 }
             else if ("s" != f && "n" != f) {
               if (o || s <= a) return !1;
-              l = !1, s--
+              u = !1, s--
             } else {
               if (s <= a || d < f != o) return !1;
-              l = !1
-            } else "s" != f && "n" != f && (l = !1, s--)
+              u = !1
+            } else "s" != f && "n" != f && (u = !1, s--)
           }
         }
         var c = [],
@@ -286,7 +269,7 @@ var modules_core_agegate;
         822: () => n("default", "react", [1, 18, 2, 0], (() => i.e(627).then((() => () => i(627)))))
       },
       s = {
-        398: [822]
+        527: [822]
       };
     i.f.consumes = (e, r) => {
       i.o(s, e) && s[e].forEach((e => {
@@ -316,7 +299,7 @@ var modules_core_agegate;
       };
       i.f.miniCss = (r, t) => {
         e[r] ? t.push(e[r]) : 0 !== e[r] && {
-          398: 1
+          527: 1
         } [r] && t.push(e[r] = (e => new Promise(((r, t) => {
           var n = i.miniCssF(e),
             a = i.p + n;
@@ -338,8 +321,8 @@ var modules_core_agegate;
               else {
                 var i = t && ("load" === t.type ? "missing" : t.type),
                   s = t && t.target && t.target.href || r,
-                  l = new Error("Loading CSS chunk " + e + " failed.\n(" + s + ")");
-                l.code = "CSS_CHUNK_LOAD_FAILED", l.type = i, l.request = s, o.parentNode.removeChild(o), a(l)
+                  u = new Error("Loading CSS chunk " + e + " failed.\n(" + s + ")");
+                u.code = "CSS_CHUNK_LOAD_FAILED", u.type = i, u.request = s, o.parentNode.removeChild(o), a(u)
               }
             }, o.href = r, document.head.appendChild(o)
           })(e, a, 0, r, t)
@@ -358,34 +341,34 @@ var modules_core_agegate;
       var n = i.o(e, r) ? e[r] : void 0;
       if (0 !== n)
         if (n) t.push(n[2]);
-        else if (859 != r) {
-        var a = new Promise(((t, a) => n = e[r] = [t, a]));
-        t.push(n[2] = a);
-        var o = i.p + i.u(r),
-          s = new Error;
-        i.l(o, (t => {
-          if (i.o(e, r) && (0 !== (n = e[r]) && (e[r] = void 0), n)) {
-            var a = t && ("load" === t.type ? "missing" : t.type),
-              o = t && t.target && t.target.src;
-            s.message = "Loading chunk " + r + " failed.\n(" + a + ": " + o + ")", s.name = "ChunkLoadError", s.type = a, s.request = o, n[1](s)
-          }
-        }), "chunk-" + r, r)
-      } else e[r] = 0
+        else {
+          var a = new Promise(((t, a) => n = e[r] = [t, a]));
+          t.push(n[2] = a);
+          var o = i.p + i.u(r),
+            s = new Error;
+          i.l(o, (t => {
+            if (i.o(e, r) && (0 !== (n = e[r]) && (e[r] = void 0), n)) {
+              var a = t && ("load" === t.type ? "missing" : t.type),
+                o = t && t.target && t.target.src;
+              s.message = "Loading chunk " + r + " failed.\n(" + a + ": " + o + ")", s.name = "ChunkLoadError", s.type = a, s.request = o, n[1](s)
+            }
+          }), "chunk-" + r, r)
+        }
     };
     var r = (r, t) => {
         var n, a, o = t[0],
           s = t[1],
-          l = t[2],
-          u = 0;
+          u = t[2],
+          l = 0;
         if (o.some((r => 0 !== e[r]))) {
           for (n in s) i.o(s, n) && (i.m[n] = s[n]);
-          l && l(i)
+          u && u(i)
         }
-        for (r && r(t); u < o.length; u++) a = o[u], i.o(e, a) && e[a] && e[a][0](), e[a] = 0
+        for (r && r(t); l < o.length; l++) a = o[l], i.o(e, a) && e[a] && e[a][0](), e[a] = 0
       },
       t = self.webpackChunk_rockstargames_modules_core_agegate = self.webpackChunk_rockstargames_modules_core_agegate || [];
     t.forEach(r.bind(null, 0)), t.push = r.bind(null, t.push.bind(t))
   })();
-  var s = i(933);
+  var s = i(288);
   modules_core_agegate = s
 })();

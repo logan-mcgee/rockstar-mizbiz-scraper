@@ -1,7 +1,28 @@
 var polyfills;
 (() => {
   "use strict";
-  var e, r, t, o, n = {},
+  var e, r, t, o, n = {
+      5895: (e, r, t) => {
+        var o = {
+            "./browser": () => t.e(802).then((() => () => t(6802)))
+          },
+          n = (e, r) => (t.R = r, r = t.o(o, e) ? o[e]() : Promise.resolve().then((() => {
+            throw new Error('Module "' + e + '" does not exist in container.')
+          })), t.R = void 0, r),
+          i = (e, r) => {
+            if (t.S) {
+              var o = "default",
+                n = t.S[o];
+              if (n && n !== e) throw new Error("Container initialization failed as it has already been initialized with a different share scope");
+              return t.S[o] = e, t.I(o, r)
+            }
+          };
+        t.d(r, {
+          get: () => n,
+          init: () => i
+        })
+      }
+    },
     i = {};
 
   function a(e) {
@@ -12,7 +33,7 @@ var polyfills;
     };
     return n[e](t, t.exports, a), t.exports
   }
-  a.m = n, a.n = e => {
+  a.m = n, a.c = i, a.n = e => {
     var r = e && e.__esModule ? () => e.default : () => e;
     return a.d(r, {
       a: r
@@ -22,7 +43,7 @@ var polyfills;
       enumerable: !0,
       get: r[t]
     })
-  }, a.f = {}, a.e = e => Promise.all(Object.keys(a.f).reduce(((r, t) => (a.f[t](e, r), r)), [])), a.u = e => "js/f9574de7f6587dc111b8.js", a.miniCssF = e => {}, a.g = function() {
+  }, a.f = {}, a.e = e => Promise.all(Object.keys(a.f).reduce(((r, t) => (a.f[t](e, r), r)), [])), a.u = e => "js/85583347ccd3730ec4c2.js", a.miniCssF = e => {}, a.g = function() {
     if ("object" == typeof globalThis) return globalThis;
     try {
       return this || new Function("return this")()
@@ -34,10 +55,10 @@ var polyfills;
     else {
       var s, l;
       if (void 0 !== n)
-        for (var u = document.getElementsByTagName("script"), p = 0; p < u.length; p++) {
-          var c = u[p];
-          if (c.getAttribute("src") == t || c.getAttribute("data-webpack") == r + n) {
-            s = c;
+        for (var u = document.getElementsByTagName("script"), c = 0; c < u.length; c++) {
+          var p = u[c];
+          if (p.getAttribute("src") == t || p.getAttribute("data-webpack") == r + n) {
+            s = p;
             break
           }
         }
@@ -75,9 +96,9 @@ var polyfills;
             try {
               var u = e(t, o);
               if (!u || !u.then) return s(u, a, l);
-              var p = u.then((e => s(e, a)), i);
-              if (!l) return p;
-              r.push(n.p = p)
+              var c = u.then((e => s(e, a)), i);
+              if (!l) return c;
+              r.push(n.p = c)
             } catch (e) {
               i(e)
             }
@@ -151,20 +172,6 @@ var polyfills;
       t = self.webpackChunk_rockstargames_polyfills = self.webpackChunk_rockstargames_polyfills || [];
     t.forEach(r.bind(null, 0)), t.push = r.bind(null, t.push.bind(t))
   })();
-  var s, l, u, p, c = {};
-  s = c, l = {
-    "./browser": () => a.e(618).then((() => () => a(3618)))
-  }, u = (e, r) => (a.R = r, r = a.o(l, e) ? l[e]() : Promise.resolve().then((() => {
-    throw new Error('Module "' + e + '" does not exist in container.')
-  })), a.R = void 0, r), p = (e, r) => {
-    if (a.S) {
-      var t = "default",
-        o = a.S[t];
-      if (o && o !== e) throw new Error("Container initialization failed as it has already been initialized with a different share scope");
-      return a.S[t] = e, a.I(t, r)
-    }
-  }, a.d(s, {
-    get: () => u,
-    init: () => p
-  }), polyfills = c
+  var s = a(5895);
+  polyfills = s
 })();

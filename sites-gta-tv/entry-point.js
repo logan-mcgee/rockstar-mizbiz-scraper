@@ -96,7 +96,7 @@ var sites_gta_tv;
     627: "9a39f16be1c9ba7ae6b6",
     822: "36a86b3a29825e61b46f",
     893: "618e929afc8068879b52"
-  } [e] + ".js", i.miniCssF = e => "css/34105ffcdfb11a00c819.css", i.g = function() {
+  } [e] + ".js", i.miniCssF = e => "css/217c564f8ddb0b48ca83.css", i.g = function() {
     if ("object" == typeof globalThis) return globalThis;
     try {
       return this || new Function("return this")()

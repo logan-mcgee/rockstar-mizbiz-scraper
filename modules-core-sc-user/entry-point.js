@@ -4,9 +4,9 @@ var modules_core_sc_user;
   var e, r, t, n, a = {
       512: (e, r, t) => {
         var n = {
-            "./index": () => Promise.all([t.e(63), t.e(640)]).then((() => () => t(640))),
-            "./providers": () => t.e(63).then((() => () => t(63))),
-            "./graph/policies": () => Promise.all([t.e(798), t.e(543)]).then((() => () => t(321)))
+            "./index": () => Promise.all([t.e(929), t.e(675), t.e(77)]).then((() => () => t(77))),
+            "./providers": () => Promise.all([t.e(929), t.e(675)]).then((() => () => t(675))),
+            "./graph/policies": () => Promise.all([t.e(798), t.e(929), t.e(543)]).then((() => () => t(321)))
           },
           a = (e, r) => (t.R = r, r = t.o(n, e) ? n[e]() : Promise.resolve().then((() => {
             throw new Error('Module "' + e + '" does not exist in container.')
@@ -35,18 +35,6 @@ var modules_core_sc_user;
             n.message = "Loading script failed.\n(" + a + ": " + o + ")", n.name = "ScriptExternalLoadError", n.type = a, n.request = o, r(n)
           }), "graph_client")
         })).then((() => graph_client))
-      },
-      850: (e, r, t) => {
-        var n = new Error;
-        e.exports = new Promise(((e, r) => {
-          if ("undefined" != typeof modules_core_agegate) return e();
-          t.l(window.mfe.path("@rockstargames/modules-core-agegate"), (t => {
-            if ("undefined" != typeof modules_core_agegate) return e();
-            var a = t && ("load" === t.type ? "missing" : t.type),
-              o = t && t.target && t.target.src;
-            n.message = "Loading script failed.\n(" + a + ": " + o + ")", n.name = "ScriptExternalLoadError", n.type = a, n.request = o, r(n)
-          }), "modules_core_agegate")
-        })).then((() => modules_core_agegate))
       },
       810: (e, r, t) => {
         var n = new Error;
@@ -84,12 +72,13 @@ var modules_core_sc_user;
       get: r[t]
     })
   }, i.f = {}, i.e = e => Promise.all(Object.keys(i.f).reduce(((r, t) => (i.f[t](e, r), r)), [])), i.u = e => "js/" + {
-    63: "a23d04982997a7e1199c",
-    543: "2fe1c82c847acd79ba24",
+    77: "fcfbd82d1c2afc273714",
+    543: "00fa3683c5f5fa008300",
     627: "12b5871ee29c754a03fd",
-    640: "a39fc77e761b9e0b40b1",
-    798: "99eb12f5dbfd1e855c23"
-  } [e] + ".js", i.miniCssF = e => "css/115dc485c5d44de29604.css", i.g = function() {
+    675: "ecdf9b2b7cae492953b1",
+    798: "99eb12f5dbfd1e855c23",
+    929: "c63eccb420a8b51f021d"
+  } [e] + ".js", i.miniCssF = e => "css/c6e27426b1ced03efa6f.css", i.g = function() {
     if ("object" == typeof globalThis) return globalThis;
     try {
       return this || new Function("return this")()
@@ -132,12 +121,10 @@ var modules_core_sc_user;
       value: !0
     })
   }, i.nmd = e => (e.paths = [], e.children || (e.children = []), e), t = {
-    63: [859, 929],
-    543: [370],
-    640: [331]
+    675: [331, 859],
+    929: [929]
   }, n = {
     331: ["default", "./gtm", 810],
-    370: ["default", "./graph/reactive", 850],
     859: ["default", "./index", 171],
     929: ["default", "./index", 810]
   }, i.f.remotes = (e, r) => {
@@ -209,7 +196,7 @@ var modules_core_sc_user;
             from: s,
             eager: !1
           })
-        })("react", "18.2.0"), l(171), l(810), l(850)), u.length ? e[t] = Promise.all(u).then((() => e[t] = 1)) : e[t] = 1
+        })("react", "18.2.0"), l(810), l(171)), u.length ? e[t] = Promise.all(u).then((() => e[t] = 1)) : e[t] = 1
       }
     }
   })(), (() => {
@@ -294,7 +281,7 @@ var modules_core_sc_user;
         822: () => n("default", "react", [1, 18, 2, 0], (() => i.e(627).then((() => () => i(627)))))
       },
       s = {
-        63: [822]
+        675: [822]
       };
     i.f.consumes = (e, r) => {
       i.o(s, e) && s[e].forEach((e => {
@@ -324,7 +311,7 @@ var modules_core_sc_user;
       };
       i.f.miniCss = (r, t) => {
         e[r] ? t.push(e[r]) : 0 !== e[r] && {
-          640: 1
+          77: 1
         } [r] && t.push(e[r] = (e => new Promise(((r, t) => {
           var n = i.miniCssF(e),
             a = i.p + n;
@@ -366,19 +353,19 @@ var modules_core_sc_user;
       var n = i.o(e, r) ? e[r] : void 0;
       if (0 !== n)
         if (n) t.push(n[2]);
-        else {
-          var a = new Promise(((t, a) => n = e[r] = [t, a]));
-          t.push(n[2] = a);
-          var o = i.p + i.u(r),
-            s = new Error;
-          i.l(o, (t => {
-            if (i.o(e, r) && (0 !== (n = e[r]) && (e[r] = void 0), n)) {
-              var a = t && ("load" === t.type ? "missing" : t.type),
-                o = t && t.target && t.target.src;
-              s.message = "Loading chunk " + r + " failed.\n(" + a + ": " + o + ")", s.name = "ChunkLoadError", s.type = a, s.request = o, n[1](s)
-            }
-          }), "chunk-" + r, r)
-        }
+        else if (929 != r) {
+        var a = new Promise(((t, a) => n = e[r] = [t, a]));
+        t.push(n[2] = a);
+        var o = i.p + i.u(r),
+          s = new Error;
+        i.l(o, (t => {
+          if (i.o(e, r) && (0 !== (n = e[r]) && (e[r] = void 0), n)) {
+            var a = t && ("load" === t.type ? "missing" : t.type),
+              o = t && t.target && t.target.src;
+            s.message = "Loading chunk " + r + " failed.\n(" + a + ": " + o + ")", s.name = "ChunkLoadError", s.type = a, s.request = o, n[1](s)
+          }
+        }), "chunk-" + r, r)
+      } else e[r] = 0
     };
     var r = (r, t) => {
         var n, a, o = t[0],

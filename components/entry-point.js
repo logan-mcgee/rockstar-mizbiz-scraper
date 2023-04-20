@@ -4,9 +4,9 @@ var components;
   var e, r, t, n, a = {
       8656: (e, r, t) => {
         var n = {
-            "./index": () => Promise.all([t.e(759), t.e(299), t.e(944), t.e(822), t.e(542), t.e(813), t.e(482)]).then((() => () => t(3482))),
+            "./index": () => Promise.all([t.e(759), t.e(299), t.e(944), t.e(822), t.e(542), t.e(813), t.e(702)]).then((() => () => t(9702))),
             "./providers": () => Promise.all([t.e(759), t.e(822), t.e(542), t.e(772)]).then((() => () => t(4772))),
-            "./tinaBlockTemplates": () => Promise.all([t.e(299), t.e(822), t.e(542), t.e(813), t.e(449)]).then((() => () => t(9449)))
+            "./tinaBlockTemplates": () => Promise.all([t.e(299), t.e(822), t.e(542), t.e(813), t.e(216)]).then((() => () => t(5216)))
           },
           a = (e, r) => (t.R = r, r = t.o(n, e) ? n[e]() : Promise.resolve().then((() => {
             throw new Error('Module "' + e + '" does not exist in container.')
@@ -96,21 +96,21 @@ var components;
       get: r[t]
     })
   }, i.f = {}, i.e = e => Promise.all(Object.keys(i.f).reduce(((r, t) => (i.f[t](e, r), r)), [])), i.u = e => "js/" + {
+    216: "0a67552d23be413a6914",
     299: "bb5a106e838200dbe853",
-    449: "8037420110ffc9d6d82e",
-    482: "9bdc01a97bc5261b57ee",
     542: "a2686900bdf1f6a9d358",
     627: "3075173c41ac1816932c",
+    702: "5356d25a41f04863279b",
     759: "50446408c24cc4ab1e83",
-    772: "174af6d3c75e21557bf8",
+    772: "d385ff4a445b79d45de9",
     813: "58b74044738b0ca2ea53",
     822: "8ccaf0b7017167adc2ef",
     893: "f512b95a2d5badd4f850",
     944: "c435f6882896e40a888e"
   } [e] + ".js", i.miniCssF = e => "css/" + {
-    449: "7d1e4d2e381e7493039c",
-    482: "926fba3391e8b420beaa",
-    772: "f6e7b24da2163b411f22"
+    216: "4f8731cc9971788d1ec8",
+    702: "6ff06f5930aa07b635d4",
+    772: "9757bfc5acd498ccef66"
   } [e] + ".css", i.g = function() {
     if ("object" == typeof globalThis) return globalThis;
     try {
@@ -121,16 +121,16 @@ var components;
   }(), i.o = (e, r) => Object.prototype.hasOwnProperty.call(e, r), e = {}, r = "@rockstargames/components:", i.l = (t, n, a, o) => {
     if (e[t]) e[t].push(n);
     else {
-      var s, d;
+      var s, l;
       if (void 0 !== a)
-        for (var l = document.getElementsByTagName("script"), u = 0; u < l.length; u++) {
-          var f = l[u];
+        for (var d = document.getElementsByTagName("script"), u = 0; u < d.length; u++) {
+          var f = d[u];
           if (f.getAttribute("src") == t || f.getAttribute("data-webpack") == r + a) {
             s = f;
             break
           }
         }
-      s || (d = !0, (s = document.createElement("script")).charset = "utf-8", s.timeout = 120, i.nc && s.setAttribute("nonce", i.nc), s.setAttribute("data-webpack", r + a), s.src = t), e[t] = [n];
+      s || (l = !0, (s = document.createElement("script")).charset = "utf-8", s.timeout = 120, i.nc && s.setAttribute("nonce", i.nc), s.setAttribute("data-webpack", r + a), s.src = t), e[t] = [n];
       var c = (r, n) => {
           s.onerror = s.onload = null, clearTimeout(p);
           var a = e[t];
@@ -140,7 +140,7 @@ var components;
           type: "timeout",
           target: s
         }), 12e4);
-      s.onerror = c.bind(null, s.onerror), s.onload = c.bind(null, s.onload), d && document.head.appendChild(s)
+      s.onerror = c.bind(null, s.onerror), s.onload = c.bind(null, s.onload), l && document.head.appendChild(s)
     }
   }, i.r = e => {
     "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
@@ -149,15 +149,17 @@ var components;
       value: !0
     })
   }, i.nmd = e => (e.paths = [], e.children || (e.children = []), e), t = {
-    449: [3374, 3616, 5607],
-    482: [2324, 3761, 6077, 6711, 9349],
+    216: [3374, 3616, 5607],
     542: [9542],
+    702: [2324, 3761, 6077, 6711, 9349],
+    772: [3657],
     813: [4859, 559, 9929]
   }, n = {
     559: ["default", "./helpers/uploads", 1489],
     2324: ["default", "./helpers", 1489],
     3374: ["default", "./ui", 1489],
     3616: ["default", "./properties", 1489],
+    3657: ["default", "./hooks", 8810],
     3761: ["default", "./operations/queries", 5171],
     4859: ["default", "./index", 5171],
     5607: ["default", "./functions", 8810],
@@ -178,24 +180,24 @@ var components;
               throw r
             }, a.p = 0
           },
-          s = (e, t, n, i, s, d) => {
+          s = (e, t, n, i, s, l) => {
             try {
-              var l = e(t, n);
-              if (!l || !l.then) return s(l, i, d);
-              var u = l.then((e => s(e, i)), o);
-              if (!d) return u;
+              var d = e(t, n);
+              if (!d || !d.then) return s(d, i, l);
+              var u = d.then((e => s(e, i)), o);
+              if (!l) return u;
               r.push(a.p = u)
             } catch (e) {
               o(e)
             }
           },
-          d = (e, r, n) => s(r.get, a[1], t, 0, l, n),
-          l = r => {
+          l = (e, r, n) => s(r.get, a[1], t, 0, d, n),
+          d = r => {
             a.p = 1, i.m[e] = e => {
               e.exports = r()
             }
           };
-        s(i, a[2], 0, 0, ((e, r, t) => e ? s(i.I, a[0], 0, e, d, t) : o()), 1)
+        s(i, a[2], 0, 0, ((e, r, t) => e ? s(i.I, a[0], 0, e, l, t) : o()), 1)
       }
     }))
   }, (() => {
@@ -210,7 +212,7 @@ var components;
         i.o(i.S, t) || (i.S[t] = {});
         var o = i.S[t],
           s = "@rockstargames/components",
-          d = (e, r, t, n) => {
+          l = (e, r, t, n) => {
             var a = o[e] = o[e] || {},
               i = a[r];
             (!i || !i.loaded && (!n != !i.eager ? n : s > i.from)) && (a[r] = {
@@ -219,7 +221,7 @@ var components;
               eager: !!n
             })
           },
-          l = e => {
+          d = e => {
             var r = e => {
               return r = "Initialization of sharing external failed: " + e, "undefined" != typeof console && console.warn && console.warn(r);
               var r
@@ -236,7 +238,7 @@ var components;
             }
           },
           u = [];
-        return "default" === t && (d("react-router-dom", "6.9.0", (() => Promise.all([i.e(893), i.e(822)]).then((() => () => i(8893))))), d("react", "18.2.0", (() => i.e(627).then((() => () => i(6627))))), l(1489), l(5171), l(8810), l(7426)), u.length ? e[t] = Promise.all(u).then((() => e[t] = 1)) : e[t] = 1
+        return "default" === t && (l("react-router-dom", "6.9.0", (() => Promise.all([i.e(893), i.e(822)]).then((() => () => i(8893))))), l("react", "18.2.0", (() => i.e(627).then((() => () => i(6627))))), d(1489), d(5171), d(8810), d(7426)), u.length ? e[t] = Promise.all(u).then((() => e[t] = 1)) : e[t] = 1
       }
     }
   })(), (() => {
@@ -262,26 +264,26 @@ var components;
           var a = t[0],
             o = a < 0;
           o && (a = -a - 1);
-          for (var i = 0, s = 1, d = !0;; s++, i++) {
-            var l, u, f = s < t.length ? (typeof t[s])[0] : "";
-            if (i >= n.length || "o" == (u = (typeof(l = n[i]))[0])) return !d || ("u" == f ? s > a && !o : "" == f != o);
+          for (var i = 0, s = 1, l = !0;; s++, i++) {
+            var d, u, f = s < t.length ? (typeof t[s])[0] : "";
+            if (i >= n.length || "o" == (u = (typeof(d = n[i]))[0])) return !l || ("u" == f ? s > a && !o : "" == f != o);
             if ("u" == u) {
-              if (!d || "u" != f) return !1
-            } else if (d)
+              if (!l || "u" != f) return !1
+            } else if (l)
               if (f == u)
                 if (s <= a) {
-                  if (l != t[s]) return !1
+                  if (d != t[s]) return !1
                 } else {
-                  if (o ? l > t[s] : l < t[s]) return !1;
-                  l != t[s] && (d = !1)
+                  if (o ? d > t[s] : d < t[s]) return !1;
+                  d != t[s] && (l = !1)
                 }
             else if ("s" != f && "n" != f) {
               if (o || s <= a) return !1;
-              d = !1, s--
+              l = !1, s--
             } else {
               if (s <= a || u < f != o) return !1;
-              d = !1
-            } else "s" != f && "n" != f && (d = !1, s--)
+              l = !1
+            } else "s" != f && "n" != f && (l = !1, s--)
           }
         }
         var c = [],
@@ -322,7 +324,7 @@ var components;
         7814: () => n("default", "react-router-dom", [1, 6, 9, 0], (() => i.e(893).then((() => () => i(8893)))))
       },
       s = {
-        482: [7814],
+        702: [7814],
         822: [822]
       };
     i.f.consumes = (e, r) => {
@@ -353,8 +355,8 @@ var components;
       };
       i.f.miniCss = (r, t) => {
         e[r] ? t.push(e[r]) : 0 !== e[r] && {
-          449: 1,
-          482: 1,
+          216: 1,
+          702: 1,
           772: 1
         } [r] && t.push(e[r] = (e => new Promise(((r, t) => {
           var n = i.miniCssF(e),
@@ -377,8 +379,8 @@ var components;
               else {
                 var i = t && ("load" === t.type ? "missing" : t.type),
                   s = t && t.target && t.target.href || r,
-                  d = new Error("Loading CSS chunk " + e + " failed.\n(" + s + ")");
-                d.code = "CSS_CHUNK_LOAD_FAILED", d.type = i, d.request = s, o.parentNode.removeChild(o), a(d)
+                  l = new Error("Loading CSS chunk " + e + " failed.\n(" + s + ")");
+                l.code = "CSS_CHUNK_LOAD_FAILED", l.type = i, l.request = s, o.parentNode.removeChild(o), a(l)
               }
             }, o.href = r, document.head.appendChild(o)
           })(e, a, 0, r, t)
@@ -415,13 +417,13 @@ var components;
     var r = (r, t) => {
         var n, a, o = t[0],
           s = t[1],
-          d = t[2],
-          l = 0;
+          l = t[2],
+          d = 0;
         if (o.some((r => 0 !== e[r]))) {
           for (n in s) i.o(s, n) && (i.m[n] = s[n]);
-          d && d(i)
+          l && l(i)
         }
-        for (r && r(t); l < o.length; l++) a = o[l], i.o(e, a) && e[a] && e[a][0](), e[a] = 0
+        for (r && r(t); d < o.length; d++) a = o[d], i.o(e, a) && e[a] && e[a][0](), e[a] = 0
       },
       t = self.webpackChunk_rockstargames_components = self.webpackChunk_rockstargames_components || [];
     t.forEach(r.bind(null, 0)), t.push = r.bind(null, t.push.bind(t))
