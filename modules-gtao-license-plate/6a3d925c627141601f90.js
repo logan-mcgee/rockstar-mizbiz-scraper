@@ -4524,7 +4524,7 @@
             view_name: "license plate creator - landing page logged " + (c ? "in" : "out")
           };
           return (0, Te.jsx)("button", {
-            "aria-label": `${t.style.displayName||""} license plate ${t.plateText?`with the number ${t.plateText}`:""}`.trim(),
+            "aria-label": `${t?.style?.displayName||""} license plate ${t.plateText?`with the number ${t.plateText}`:""}`.trim(),
             className: "dfcce6149acc6235b802",
             id: `keyboard-accessible-license-plate-${a}`,
             style: {
@@ -4687,7 +4687,7 @@
                     platform: t
                   }
                 }), n = r?.result?.plates?.map((e => {
-                  const t = x(e?.vehicles?.[0]?.plateStyle ?? "YellowBlack");
+                  const t = x(e?.vehicles?.[0]?.plateStyle) ?? x("YellowBlack");
                   return {
                     ...e,
                     style: t
