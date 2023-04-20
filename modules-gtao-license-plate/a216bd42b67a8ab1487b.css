@@ -146,8 +146,12 @@
   transition: color .15s ease-in-out
 }
 
+.b78b65ece97c489311aa .f2ab95570f791dbca865.fc1a5cb44b899b14a45e,
+.b78b65ece97c489311aa .f2ab95570f791dbca865:lang(ja_jp),
 .b78b65ece97c489311aa .f2ab95570f791dbca865:lang(pl_pl),
 .b78b65ece97c489311aa .f2ab95570f791dbca865:lang(ru_ru),
+.d09aecd4d58aeb14e15e .f2ab95570f791dbca865.fc1a5cb44b899b14a45e,
+.d09aecd4d58aeb14e15e .f2ab95570f791dbca865:lang(ja_jp),
 .d09aecd4d58aeb14e15e .f2ab95570f791dbca865:lang(pl_pl),
 .d09aecd4d58aeb14e15e .f2ab95570f791dbca865:lang(ru_ru) {
   height: auto
@@ -187,6 +191,8 @@
   transition: color .15s ease-in-out
 }
 
+.f70b0bf7f92aef13ca2c .f2ab95570f791dbca865.fc1a5cb44b899b14a45e,
+.f70b0bf7f92aef13ca2c .f2ab95570f791dbca865:lang(ja_jp),
 .f70b0bf7f92aef13ca2c .f2ab95570f791dbca865:lang(pl_pl),
 .f70b0bf7f92aef13ca2c .f2ab95570f791dbca865:lang(ru_ru) {
   height: auto
@@ -762,6 +768,8 @@
   transition: color .15s ease-in-out
 }
 
+.cf5bbe6406012d6190c3 .e89f1318679b1cb5b981.acf477b296ffd5f6518d,
+.cf5bbe6406012d6190c3 .e89f1318679b1cb5b981:lang(ja_jp),
 .cf5bbe6406012d6190c3 .e89f1318679b1cb5b981:lang(pl_pl),
 .cf5bbe6406012d6190c3 .e89f1318679b1cb5b981:lang(ru_ru) {
   height: auto
@@ -1625,6 +1633,8 @@ p.fbe02591dfe1e747a935 {
   white-space: nowrap
 }
 
+.b6a7586175bf01b715d6 .ce05d9898b38a31c3fe9 p.db3c4b65429b61ddff96,
+.b6a7586175bf01b715d6 .ce05d9898b38a31c3fe9 p:lang(ja_jp),
 .b6a7586175bf01b715d6 .ce05d9898b38a31c3fe9 p:lang(pl_pl),
 .b6a7586175bf01b715d6 .ce05d9898b38a31c3fe9 p:lang(ru_ru) {
   height: auto
@@ -1636,6 +1646,8 @@ p.fbe02591dfe1e747a935 {
     height: 1rem
   }
 
+  .b6a7586175bf01b715d6 .ce05d9898b38a31c3fe9 p.db3c4b65429b61ddff96,
+  .b6a7586175bf01b715d6 .ce05d9898b38a31c3fe9 p:lang(ja_jp),
   .b6a7586175bf01b715d6 .ce05d9898b38a31c3fe9 p:lang(pl_pl),
   .b6a7586175bf01b715d6 .ce05d9898b38a31c3fe9 p:lang(ru_ru) {
     height: auto
@@ -1801,6 +1813,8 @@ p.e2d9a88190e1e3de5bb6 span {
   transition: color .15s ease-in-out
 }
 
+.b7ac25abe12168157046 .d2ccddbaa18bbe20a426.b236dd886c9982522324,
+.b7ac25abe12168157046 .d2ccddbaa18bbe20a426:lang(ja_jp),
 .b7ac25abe12168157046 .d2ccddbaa18bbe20a426:lang(pl_pl),
 .b7ac25abe12168157046 .d2ccddbaa18bbe20a426:lang(ru_ru) {
   height: auto
@@ -2940,6 +2954,8 @@ p.b97c15f1f2e891588f33 span {
   transition: color .15s ease-in-out
 }
 
+.f55a2a90573ac015425e .feb57e679bed534fda36.a1c5d794c0b065b51321,
+.f55a2a90573ac015425e .feb57e679bed534fda36:lang(ja_jp),
 .f55a2a90573ac015425e .feb57e679bed534fda36:lang(pl_pl),
 .f55a2a90573ac015425e .feb57e679bed534fda36:lang(ru_ru) {
   height: auto
@@ -3054,6 +3070,8 @@ span.b0922946a512c5c777b2 {
   transition: color .15s ease-in-out
 }
 
+span.b0922946a512c5c777b2.c624f48df45e7425eedc,
+span.b0922946a512c5c777b2:lang(ja_jp),
 span.b0922946a512c5c777b2:lang(pl_pl),
 span.b0922946a512c5c777b2:lang(ru_ru) {
   height: auto

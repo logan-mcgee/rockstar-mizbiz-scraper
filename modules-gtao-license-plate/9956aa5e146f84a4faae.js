@@ -3,7 +3,7 @@
   [572], {
     5572: (e, t, a) => {
       a.d(t, {
-        Z: () => jt
+        Z: () => Lt
       });
       var r = a(822),
         n = a(2178),
@@ -730,6 +730,7 @@
           signIn: "d09aecd4d58aeb14e15e",
           hover: "c13648f71e994e0f8458",
           ctaText: "f2ab95570f791dbca865",
+          isWindows: "fc1a5cb44b899b14a45e",
           tryWithoutSigningIn: "f70b0bf7f92aef13ca2c",
           maxPlatesReached: "a00f9428dc1e65319e6b",
           hidden: "cfe744f3b51090d0f4c5",
@@ -2409,43 +2410,46 @@
           })
         },
         ut = "ce05d9898b38a31c3fe9",
-        pt = (0, o.withTranslations)((e => {
+        pt = "db3c4b65429b61ddff96",
+        mt = (0, o.withTranslations)((e => {
           let {
             onToggleView: t = (() => {}),
             t: a
           } = e;
-          const [n, s] = (0, r.useState)(!1), {
-            state: o,
-            setRefs: l
+          const [n, s] = (0, r.useState)(!1), [o, l] = (0, r.useState)(!1), {
+            state: c,
+            setRefs: d
           } = Se(), {
-            currentView: c,
-            isMobile: d
-          } = o, {
-            track: u
-          } = (0, i.useGtmTrack)(), p = {
+            currentView: u,
+            isMobile: p
+          } = c, {
+            track: m
+          } = (0, i.useGtmTrack)(), f = {
             view_name: "license plate creator - create plate form"
-          }, m = (0, r.useRef)(null);
+          }, g = (0, r.useRef)(null);
           return (0, r.useEffect)((() => {
-            l(D.TOGGLE_VIEW_BUTTON, m)
-          }), [m.current]), (0, r.useEffect)((() => {
-            c === Z.NEW_PLATE && (n ? (u({
-              ...p,
+            l(/([wW]in)/i.test(window.navigator.userAgent))
+          }), []), (0, r.useEffect)((() => {
+            d(D.TOGGLE_VIEW_BUTTON, g)
+          }), [g.current]), (0, r.useEffect)((() => {
+            u === Z.NEW_PLATE && (n ? (m({
+              ...f,
               event: "virtualPageview",
-              display_type: d ? "mobile" : "desktop",
+              display_type: p ? "mobile" : "desktop",
               view_name: "license plate creator - car view"
-            }), u({
-              ...p,
+            }), m({
+              ...f,
               event: "license_plate_preview_car",
               event_category: "license_plate",
               event_action: "preview_car",
               text: a("lp.create.carview").toLowerCase()
-            })) : u({
-              ...p,
+            })) : m({
+              ...f,
               event: "virtualPageview",
-              display_type: d ? "mobile" : "desktop"
+              display_type: p ? "mobile" : "desktop"
             }))
-          }), [n, c]), (0, Te.jsxs)("button", {
-            ref: m,
+          }), [n, u]), (0, Te.jsxs)("button", {
+            ref: g,
             type: "button",
             role: "switch",
             "aria-checked": n,
@@ -2456,12 +2460,12 @@
             tabIndex: 0,
             "aria-label": "Switch between viewing the plate on a car and by itself",
             children: [(0, Te.jsx)("div", {
-              className: ut,
+              className: `${ut} ${o?pt:""}`,
               children: (0, Te.jsx)("p", {
                 children: a("lp.create.plateview")
               })
             }), (0, Te.jsx)("div", {
-              className: ut,
+              className: `${ut} ${o?pt:""}`,
               children: (0, Te.jsx)("p", {
                 children: a("lp.create.carview")
               })
@@ -2470,7 +2474,7 @@
             })]
           })
         })),
-        mt = {
+        ft = {
           orderConfirmed: "cf7e5e0923b8256a2323",
           visible: "f49f2ce6c0c2c3078641",
           background: "f6e84201dac89879fbbd",
@@ -2480,9 +2484,10 @@
           plateRedemptionInstructions: "e2d9a88190e1e3de5bb6",
           backToPlatesButton: "b7ac25abe12168157046",
           hover: "d6fcaa3a9d4229d26b6c",
-          ctaText: "d2ccddbaa18bbe20a426"
+          ctaText: "d2ccddbaa18bbe20a426",
+          isWindows: "b236dd886c9982522324"
         },
-        ft = (0, o.withTranslations)((e => {
+        gt = (0, o.withTranslations)((e => {
           let {
             isVisible: t,
             vehicleModel: a,
@@ -2670,36 +2675,36 @@
               })
             }
           }), [t, T.current, h, m, v ? o : void 0]), (0, Te.jsx)("div", {
-            className: [mt.orderConfirmed, f ? mt.visible : ""].join(" "),
+            className: [ft.orderConfirmed, f ? ft.visible : ""].join(" "),
             children: (0, Te.jsx)("div", {
               ref: T,
-              className: mt.background,
+              className: ft.background,
               children: (0, Te.jsxs)("div", {
-                className: mt.content,
+                className: ft.content,
                 children: [(0, Te.jsx)("h1", {
                   ref: x,
-                  className: mt.contentHeading,
+                  className: ft.contentHeading,
                   children: n("lp.success.title")
                 }), (0, Te.jsxs)("div", {
                   ref: w,
-                  className: mt.secondaryWrap,
+                  className: ft.secondaryWrap,
                   children: [(0, Te.jsx)("p", {
                     ref: E,
-                    className: mt.plateRedemptionInstructions,
+                    className: ft.plateRedemptionInstructions,
                     dangerouslySetInnerHTML: {
                       __html: n("lp.success.description").replace("{car_name}", a)
                     }
                   }), (0, Te.jsx)("button", {
                     ref: S,
                     type: "button",
-                    className: mt.backToPlatesButton,
+                    className: ft.backToPlatesButton,
                     onClick: () => {
                       $()
                     },
                     "aria-label": n("lp.success.cta"),
                     tabIndex: l,
                     children: (0, Te.jsx)("span", {
-                      className: mt.ctaText,
+                      className: ft.ctaText,
                       children: n("lp.success.cta")
                     })
                   })]
@@ -2708,14 +2713,14 @@
             })
           })
         }));
-      var gt = a(2973),
-        ht = a.n(gt);
-      const bt = JSON.parse('{"assets":[],"layers":[{"ddd":0,"ind":0,"ty":4,"nm":"Shape Layer 1","ks":{"o":{"k":100},"r":{"k":0},"p":{"k":[300,300,0]},"a":{"k":[0,0,0]},"s":{"k":[244,244,100]}},"ao":0,"shapes":[{"d":1,"ty":"el","s":{"k":[100,100]},"p":{"k":[0,0]},"nm":"Ellipse Path 1","mn":"ADBE Vector Shape - Ellipse"},{"ty":"tm","s":{"k":[{"i":{"x":[0.439],"y":[1.016]},"o":{"x":[0.561],"y":[0.015]},"n":["0p439_1p016_0p561_0p015"],"t":5,"s":[100],"e":[0]},{"t":33.0000013441176}],"ix":1},"e":{"k":[{"i":{"x":[0.439],"y":[1.017]},"o":{"x":[0.561],"y":[0.016]},"n":["0p439_1p017_0p561_0p016"],"t":0,"s":[100],"e":[0]},{"t":30.0000012219251}],"ix":2},"o":{"k":0,"ix":3},"m":1,"ix":2,"nm":"Trim Paths 1","mn":"ADBE Vector Filter - Trim"},{"ty":"st","fillEnabled":true,"c":{"k":[1,1,1,1]},"o":{"k":100},"w":{"k":16},"lc":2,"lj":1,"ml":4,"nm":"Stroke 1","mn":"ADBE Vector Graphic - Stroke"}],"ip":0,"op":900.000036657751,"st":0,"bm":0,"sr":1}],"v":"4.5.3","ddd":0,"ip":1.00000004073083,"op":33.0000013441175,"fr":29.9700012207031,"w":600,"h":600}'),
-        yt = () => (0, Te.jsx)(ht(), {
+      var ht = a(2973),
+        bt = a.n(ht);
+      const yt = JSON.parse('{"assets":[],"layers":[{"ddd":0,"ind":0,"ty":4,"nm":"Shape Layer 1","ks":{"o":{"k":100},"r":{"k":0},"p":{"k":[300,300,0]},"a":{"k":[0,0,0]},"s":{"k":[244,244,100]}},"ao":0,"shapes":[{"d":1,"ty":"el","s":{"k":[100,100]},"p":{"k":[0,0]},"nm":"Ellipse Path 1","mn":"ADBE Vector Shape - Ellipse"},{"ty":"tm","s":{"k":[{"i":{"x":[0.439],"y":[1.016]},"o":{"x":[0.561],"y":[0.015]},"n":["0p439_1p016_0p561_0p015"],"t":5,"s":[100],"e":[0]},{"t":33.0000013441176}],"ix":1},"e":{"k":[{"i":{"x":[0.439],"y":[1.017]},"o":{"x":[0.561],"y":[0.016]},"n":["0p439_1p017_0p561_0p016"],"t":0,"s":[100],"e":[0]},{"t":30.0000012219251}],"ix":2},"o":{"k":0,"ix":3},"m":1,"ix":2,"nm":"Trim Paths 1","mn":"ADBE Vector Filter - Trim"},{"ty":"st","fillEnabled":true,"c":{"k":[1,1,1,1]},"o":{"k":100},"w":{"k":16},"lc":2,"lj":1,"ml":4,"nm":"Stroke 1","mn":"ADBE Vector Graphic - Stroke"}],"ip":0,"op":900.000036657751,"st":0,"bm":0,"sr":1}],"v":"4.5.3","ddd":0,"ip":1.00000004073083,"op":33.0000013441175,"fr":29.9700012207031,"w":600,"h":600}'),
+        vt = () => (0, Te.jsx)(bt(), {
           options: {
             loop: !0,
             autoplay: !0,
-            animationData: bt,
+            animationData: yt,
             rendererSettings: {
               preserveAspectRatio: "xMidYMid slice"
             }
@@ -2723,7 +2728,7 @@
           height: 50,
           width: 50
         }),
-        vt = (0, o.withTranslations)((e => {
+        xt = (0, o.withTranslations)((e => {
           let {
             t,
             top: a,
@@ -2964,7 +2969,7 @@
                   })
                 }
               }, {
-                buttonText: k ? (0, Te.jsx)(yt, {}) : t("lp.confirm.next"),
+                buttonText: k ? (0, Te.jsx)(vt, {}) : t("lp.confirm.next"),
                 isDisabled: !C || !h || k,
                 onClick: () => {
                   Q(), V({
@@ -3036,7 +3041,7 @@
                     children: t("lp.confirm.info")
                   })]
                 }), w ? ae : te]
-              }), (0, Te.jsx)(ft, {
+              }), (0, Te.jsx)(gt, {
                 drawerY: n,
                 top: a,
                 isVisible: P,
@@ -3046,8 +3051,8 @@
             })
           })
         })),
-        xt = "visible",
-        wt = (0, o.withTranslations)((e => {
+        wt = "visible",
+        Et = (0, o.withTranslations)((e => {
           let {
             t
           } = e;
@@ -3098,7 +3103,7 @@
               }
             });
             switch (e) {
-              case xt: {
+              case wt: {
                 if (!r.current) return;
                 const e = new c.Vector3;
                 oe?.current && oe.current.getWorldPosition(e);
@@ -3387,7 +3392,7 @@
           (0, r.useEffect)((() => {
             v?.scene && !Y.current && (Y.current = v.camera.fov)
           }), [Y.current, v]), (0, r.useEffect)((() => {
-            v?.scene && le.current && ue(_ ? xt : "hidden")
+            v?.scene && le.current && ue(_ ? wt : "hidden")
           }), [v, _, l === Z.CONFIRM_ORDER]), (0, r.useEffect)((() => {
             if (le?.current && m && se.current) {
               const e = se.current.offsetHeight + 80,
@@ -3728,7 +3733,7 @@
               const {
                 isValid: e,
                 statusPlateNumberBasis: a
-              } = h, r = P ? (0, Te.jsx)(yt, {}) : t("lp.create.next");
+              } = h, r = P ? (0, Te.jsx)(vt, {}) : t("lp.create.next");
               return (0, Te.jsx)(dt, {
                 buttons: [{
                   buttonText: p ? r : t("lp.create.signin"),
@@ -3766,7 +3771,7 @@
               children: [(0, Te.jsx)(ct, {
                 validateFnRef: ee,
                 setIsLoading: R
-              }), (0, Te.jsx)(vt, {
+              }), (0, Te.jsx)(xt, {
                 top: O,
                 drawerY: L
               })]
@@ -3802,7 +3807,7 @@
                 style: L ? {
                   y: L
                 } : void 0,
-                children: (0, Te.jsx)(pt, {
+                children: (0, Te.jsx)(mt, {
                   onToggleView: xe
                 })
               })]
@@ -3816,7 +3821,7 @@
             })]
           })
         })),
-        Et = (0, o.withTranslations)((e => {
+        _t = (0, o.withTranslations)((e => {
           let {
             t
           } = e;
@@ -3880,10 +3885,10 @@
           })
         })),
         {
-          lerp: _t
+          lerp: St
         } = c.MathUtils,
-        St = "visible",
-        Tt = () => {
+        Tt = "visible",
+        Pt = () => {
           const {
             state: e,
             setDeletedPlateIndex: t,
@@ -3921,7 +3926,7 @@
               ease: i ? v.mobile.drawer.ease : b.ease
             });
             switch (e) {
-              case St: {
+              case Tt: {
                 if (!n.current) return;
                 const e = {
                     current: 0
@@ -3972,11 +3977,11 @@
                       r.position.set(a.x, a.y, a.z);
                       const o = s.controlsTarget.start.clone().lerp(s.controlsTarget.end, t);
                       if (n.current.target.x = o.x, n.current.target.y = o.y, n.current.target.z = o.z, _.forEach(((e, a) => {
-                          e.material && (e.material.opacity = _t(s.plateOpacity[a].start, s.plateOpacity[a].end, t))
-                        })), U.saturation.value = _t(s.firstPlateSaturation.start, s.firstPlateSaturation.end, t), i) {
-                        const e = _t(s.canvasTranslateY.start, s.canvasTranslateY.end, t);
+                          e.material && (e.material.opacity = St(s.plateOpacity[a].start, s.plateOpacity[a].end, t))
+                        })), U.saturation.value = St(s.firstPlateSaturation.start, s.firstPlateSaturation.end, t), i) {
+                        const e = St(s.canvasTranslateY.start, s.canvasTranslateY.end, t);
                         if (g.domElement.style.transform = `translateY(${e}px)`, u.current) {
-                          const e = _t(s.drawerHeight.start, s.drawerHeight.end, t);
+                          const e = St(s.drawerHeight.start, s.drawerHeight.end, t);
                           u.current.style.transform = `translateY(${e}px)`
                         }
                       }
@@ -4055,14 +4060,14 @@
             }
           }), [l, s, i, o]);
           return (0, r.useEffect)((() => {
-            o && o?.[D.FOOTER]?.current && o?.[D.SIDEBAR]?.current && o?.[D.UI]?.current && u.current && s?.scene && s?.controls && g(p ? St : "hidden")
+            o && o?.[D.FOOTER]?.current && o?.[D.SIDEBAR]?.current && o?.[D.UI]?.current && u.current && s?.scene && s?.controls && g(p ? Tt : "hidden")
           }), [o, p, u.current, s, i, o?.[D.FOOTER]?.current, o?.[D.SIDEBAR]?.current]), (0, Te.jsx)("div", {
             ref: u,
             className: "fe2f56dce20f2cc23636",
-            children: (0, Te.jsx)(Et, {})
+            children: (0, Te.jsx)(_t, {})
           })
         },
-        Pt = e => {
+        It = e => {
           let {
             isMobile: t
           } = e;
@@ -4078,13 +4083,13 @@
               a(D.UI, l)
             }), [l.current]), !s) return null;
           let d;
-          return t && (d = c ? (0, Ge.createPortal)((0, Te.jsx)(Tt, {}), c) : null), (0, Te.jsxs)("div", {
+          return t && (d = c ? (0, Ge.createPortal)((0, Te.jsx)(Pt, {}), c) : null), (0, Te.jsxs)("div", {
             ref: l,
             className: "cf4e3950dff0bf598a46",
-            children: [i && !t && (0, Te.jsx)(vt, {}), t ? d : (0, Te.jsx)(Tt, {}), i && (0, Te.jsx)(nt, {}), (0, Te.jsx)(wt, {})]
+            children: [i && !t && (0, Te.jsx)(xt, {}), t ? d : (0, Te.jsx)(Pt, {}), i && (0, Te.jsx)(nt, {}), (0, Te.jsx)(Et, {})]
           })
         },
-        It = {
+        Rt = {
           orderInProgressCTA: "a33e9cc54c59f4165751",
           expanded: "e4a93c76d496871dace2",
           backToPlatesButton: "e2e2eee2c661c4dbd09a",
@@ -4093,9 +4098,10 @@
           hidden: "b64ce673d0fce1813ea4",
           orderInstructions: "b97c15f1f2e891588f33",
           buttonWrap: "f55a2a90573ac015425e",
-          ctaText: "feb57e679bed534fda36"
+          ctaText: "feb57e679bed534fda36",
+          isWindows: "a1c5d794c0b065b51321"
         },
-        Rt = e => {
+        Ct = e => {
           let {
             vehicleName: t,
             onClickEdit: a,
@@ -4146,24 +4152,24 @@
             })()
           }), [u, y, v]);
           return (0, Te.jsxs)("div", {
-            className: [It.orderInProgressCTA, n ? "" : It.hidden].join(" "),
+            className: [Rt.orderInProgressCTA, n ? "" : Rt.hidden].join(" "),
             children: [(0, Te.jsx)("h1", {
-              className: It.contentHeading,
+              className: Rt.contentHeading,
               children: l("lp.inprogress.title")
             }), (0, Te.jsx)("p", {
-              className: It.orderInstructions,
+              className: Rt.orderInstructions,
               dangerouslySetInnerHTML: {
-                __html: l("lp.inprogress.description").replace("<span>{car_name}</span>", `<span className=${It.vehicleName}>${t}</span>`)
+                __html: l("lp.inprogress.description").replace("<span>{car_name}</span>", `<span className=${Rt.vehicleName}>${t}</span>`)
               }
             }), (0, Te.jsxs)("div", {
-              className: It.buttonWrap,
+              className: Rt.buttonWrap,
               children: [(0, Te.jsx)("button", {
                 type: "button",
                 onClick: a,
                 "aria-label": l("lp.inprogress.edit"),
                 tabIndex: S,
                 children: (0, Te.jsx)("span", {
-                  className: It.ctaText,
+                  className: Rt.ctaText,
                   children: l("lp.inprogress.edit")
                 })
               }), (0, Te.jsx)("button", {
@@ -4172,7 +4178,7 @@
                 "aria-label": l("lp.inprogress.cancel"),
                 tabIndex: S,
                 children: (0, Te.jsx)("span", {
-                  className: It.ctaText,
+                  className: Rt.ctaText,
                   children: l("lp.inprogress.cancel")
                 })
               })]
@@ -4201,7 +4207,7 @@
             })]
           })
         },
-        Ct = e => {
+        Nt = e => {
           let {
             plateData: t,
             plateWidthInPixels: a,
@@ -4260,7 +4266,7 @@
             })
           })
         },
-        Nt = e => {
+        At = e => {
           let {
             t
           } = e;
@@ -4280,75 +4286,77 @@
             refs: g,
             isMobile: h,
             realHeight: b
-          } = a;
+          } = a, [y, v] = (0, r.useState)(!1);
           (0, r.useEffect)((() => {
-            f.length && w(f[0])
+            v(/([wW]in)/i.test(window.navigator.userAgent))
+          }), []), (0, r.useEffect)((() => {
+            f.length && _(f[0])
           }), [f]);
-          const [y, v] = (0, r.useState)(null), [x, w] = (0, r.useState)(null), E = g[D.FIRST_PLATE_MESH], _ = g[D.ROOT], S = (0, r.useRef)(null);
+          const [x, w] = (0, r.useState)(null), [E, _] = (0, r.useState)(null), S = g[D.FIRST_PLATE_MESH], T = g[D.ROOT], I = (0, r.useRef)(null);
           (0, r.useEffect)((() => {
             const e = g[D.SIDEBAR];
-            if (!(e?.current && _?.current && d?.gridOptions && x)) return;
+            if (!(e?.current && T?.current && d?.gridOptions && E)) return;
             const t = e.current,
               a = {
                 x: h ? 0 : t.offsetWidth,
                 y: 0
               },
-              r = R(x.index, _.current, Number(b.replace("px", "")), d, a);
-            v(r)
-          }), [d, _?.current, x, g, S.current, b]);
+              r = R(E.index, T.current, Number(b.replace("px", "")), d, a);
+            w(r)
+          }), [d, T?.current, E, g, I.current, b]);
           const {
-            track: T
-          } = (0, i.useGtmTrack)(), I = {
+            track: A
+          } = (0, i.useGtmTrack)(), O = {
             view_name: "license plate creator - landing page logged " + (u ? "in" : "out")
-          }, A = (0, r.useRef)(null);
+          }, k = (0, r.useRef)(null);
           (0, r.useEffect)((() => {
-            l(D.CTA_WRAP, S)
-          }), [S.current]);
-          const O = c === Z.LIST_PLATES ? 0 : -1,
-            k = (0, r.useCallback)((e => {
+            l(D.CTA_WRAP, I)
+          }), [I.current]);
+          const j = c === Z.LIST_PLATES ? 0 : -1,
+            L = (0, r.useCallback)((e => {
               if (n() === Z.LIST_PLATES) {
                 const t = 0 === e ? Z.NEW_PLATE : Z.VIEW_PLATE;
-                e && (T({
-                  ...I,
+                e && (A({
+                  ...O,
                   event: "license_plate_open",
                   event_category: "license_plate",
                   event_action: "open",
                   view_name: "list plates",
                   position: e
-                }), T({
-                  ...I,
+                }), A({
+                  ...O,
                   event: "virtualPageview",
                   display_type: h ? "mobile" : "desktop",
                   view_name: "license plate creator - view plate"
                 })), s(f[e]), o(e), n(t)
               }
             }), [f]),
-            j = (0, r.useCallback)((e => {
+            M = (0, r.useCallback)((e => {
               C(e, c)
             }), [c]),
-            L = (0, r.useMemo)((() => y ? (0, Te.jsx)(Ct, {
-              plateData: x,
-              plateWidthInPixels: y.width,
+            V = (0, r.useMemo)((() => x ? (0, Te.jsx)(Nt, {
+              plateData: E,
+              plateWidthInPixels: x.width,
               currentView: c,
               loginUrl: p,
-              inputTabIndex: O,
-              track: T,
-              trackingPresets: I,
-              onClickPlate: k,
+              inputTabIndex: j,
+              track: A,
+              trackingPresets: O,
+              onClickPlate: L,
               t
-            }) : null), [c, p, y]),
-            M = (0, r.useMemo)((() => void 0 !== f ? P(m, f) ? (0, Te.jsx)(Rt, {
+            }) : null), [c, p, x]),
+            W = (0, r.useMemo)((() => void 0 !== f ? P(m, f) ? (0, Te.jsx)(Ct, {
               t,
               vehicleName: `${m.manufacturerName} ${m.vehicleName}`,
               onClickEdit: () => {
-                T({
-                  ...I,
+                A({
+                  ...O,
                   event: "license_plate_edit_click",
                   event_category: "license_plate",
                   event_action: "edit",
                   event_label: "click",
                   text: t("lp.inprogress.edit").toLowerCase()
-                }), k(x.index)
+                }), L(E.index)
               },
               isVisible: c === Z.LIST_PLATES
             }) : f.filter((e => {
@@ -4362,59 +4370,59 @@
             }) : 0 === f.length ? null : (0, Te.jsxs)("button", {
               type: "button",
               onClick: () => {
-                T({
-                  ...I,
+                A({
+                  ...O,
                   event: "license_plate_create_click",
                   event_category: "license_plate",
                   event_action: "create",
                   event_label: "click",
                   text: t("lp.landing.newcta").toLowerCase()
-                }), k(x.index)
+                }), L(E.index)
               },
               onPointerOver: h ? void 0 : () => {
-                E?.current && j(E?.current)
+                S?.current && M(S?.current)
               },
               onPointerOut: h ? void 0 : () => {
                 var e;
-                E?.current && (e = E?.current, N(e))
+                S?.current && (e = S?.current, N(e))
               },
               className: [Ce.createNewPlate, c !== Z.LIST_PLATES ? Ce.hidden : ""].join(" "),
-              ref: A,
-              tabIndex: O,
+              ref: k,
+              tabIndex: j,
               children: [(0, Te.jsx)("span", {
-                className: Ce.ctaText,
+                className: `${Ce.ctaText} ${y?Ce.isWindows:""}`,
                 children: t("lp.landing.newcta")
               }), (0, Te.jsx)("div", {
                 className: Ce.ctaIcon,
                 role: "presentation",
                 "aria-label": "Plus Icon"
               })]
-            }) : null), [c, m, g, y, f, h]),
-            V = (0, r.useMemo)((() => void 0 !== m && y ? (0, Te.jsx)("div", {
+            }) : null), [c, m, g, x, f, h]),
+            z = (0, r.useMemo)((() => void 0 !== m && x ? (0, Te.jsx)("div", {
               style: {
-                width: `${y.width}px`,
-                height: y.width / 2 + "px",
+                width: `${x.width}px`,
+                height: x.width / 2 + "px",
                 pointerEvents: "none",
-                fontSize: y.width / 2 * .075 + "px",
+                fontSize: x.width / 2 * .075 + "px",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center"
               },
-              children: M
-            }) : null), [c, m, y, g, M, h]);
+              children: W
+            }) : null), [c, m, x, g, W, h]);
           return (0, r.useMemo)((() => {
-            if (!y || !x || !d?.gridOptions) return null;
+            if (!x || !E || !d?.gridOptions) return null;
             const {
               width: e,
               height: t
-            } = y, {
+            } = x, {
               top: a,
               left: r,
               right: n,
               bottom: s
-            } = y.rect;
+            } = x.rect;
             return (0, Te.jsx)("div", {
-              ref: S,
+              ref: I,
               className: Ce.CTAWrap,
               style: {
                 top: a,
@@ -4424,11 +4432,11 @@
                 width: e,
                 height: t
               },
-              children: u ? V : L
+              children: u ? z : V
             })
-          }), [y, x, d, u, c, M, f, h])
+          }), [x, E, d, u, c, W, f, h])
         },
-        At = e => {
+        Ot = e => {
           let {
             t
           } = e;
@@ -4495,7 +4503,7 @@
             })]
           })
         },
-        Ot = e => {
+        kt = e => {
           let {
             plate: t,
             index: a,
@@ -4545,7 +4553,7 @@
             }
           })
         },
-        kt = () => {
+        jt = () => {
           const {
             state: {
               gridState: e,
@@ -4583,7 +4591,7 @@
               }
             })), l([...o]))
           }), [e, t, a, s[D.ROOT]?.current?.offsetHeight]), o.length ? (0, Te.jsx)(Te.Fragment, {
-            children: t.filter(((e, t) => t)).map(((e, t) => (0, Te.jsx)(Ot, {
+            children: t.filter(((e, t) => t)).map(((e, t) => (0, Te.jsx)(kt, {
               plate: e,
               index: t,
               details: o[t],
@@ -4591,7 +4599,7 @@
             }, e.plateText + e.vehicles.toString())))
           }) : null
         },
-        jt = (0, o.withTranslations)((e => {
+        Lt = (0, o.withTranslations)((e => {
           let {
             t
           } = e;
@@ -4776,7 +4784,7 @@
               loadedAssets: $
             })
           })), [$]);
-          return K && null !== B ? O ? (0, Te.jsx)(At, {
+          return K && null !== B ? O ? (0, Te.jsx)(Ot, {
             t
           }) : (0, Te.jsxs)("div", {
             ref: U,
@@ -4786,7 +4794,7 @@
               ref: F
             }), (0, Te.jsxs)("div", {
               className: "e679d5c0c7e82b869590",
-              children: [(0, Te.jsx)(Pt, {
+              children: [(0, Te.jsx)(It, {
                 isMobile: L
               }), (0, Te.jsx)("div", {
                 className: "d171b6e11feaaa0e6b49",
@@ -4795,9 +4803,9 @@
               })]
             }), (0, Te.jsx)("span", {
               className: "c23379ba67d2aa3b2d3d"
-            }), (0, Te.jsx)(Nt, {
+            }), (0, Te.jsx)(At, {
               t
-            }), (0, Te.jsx)(kt, {}), (0, Te.jsx)(Pe, {
+            }), (0, Te.jsx)(jt, {}), (0, Te.jsx)(Pe, {
               t
             })]
           }) : null
