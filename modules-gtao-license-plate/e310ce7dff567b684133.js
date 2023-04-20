@@ -168,7 +168,7 @@
           })
         };
 
-      function A(e, t) {
+      function O(e, t) {
         const {
           plateIndex: a,
           timeline: r,
@@ -238,7 +238,7 @@
         }, "<")
       }
 
-      function O() {
+      function A() {
         return navigator.userAgent.toLowerCase().indexOf("firefox") > -1
       }
       const k = "GTALicensePlatesRegular",
@@ -583,8 +583,8 @@
             R = (0, s.useReactiveVar)(ye),
             C = (0, i.useScConfig)(),
             N = (0, s.useReactiveVar)(xe),
-            A = (0, s.useReactiveVar)(we),
-            O = (0, s.useReactiveVar)(Ee),
+            O = (0, s.useReactiveVar)(we),
+            A = (0, s.useReactiveVar)(Ee),
             k = (0, s.useReactiveVar)(_e);
           return (0, r.useEffect)((() => {
             const e = (0, o.toScLocaleString)(v),
@@ -617,8 +617,8 @@
               plateStyles: P,
               refs: R,
               selectedStyle: N,
-              selectedVehicle: A,
-              three: O,
+              selectedVehicle: O,
+              three: A,
               vehicles: k
             },
             setCanvasDimensions: J,
@@ -762,8 +762,8 @@
             object: i
           })
         };
-      var Ae = a(7028);
-      const Oe = "#898989",
+      var Oe = a(7028);
+      const Ae = "#898989",
         ke = "#000000",
         je = ["0.05", "0.15", "0.4"],
         Le = ["0.0", "0.5", "1.0"],
@@ -815,7 +815,7 @@
             isMobile: _,
             selectedStyle: S,
             gridScale: T
-          } = u, [P, I] = (0, r.useState)(v(n.style.id)), R = [0, 0, 0], A = [1, 1, 1], [O] = (0, r.useState)(0 === n.index), k = (0, r.useRef)(), j = E.filter((e => {
+          } = u, [P, I] = (0, r.useState)(v(n.style.id)), R = [0, 0, 0], O = [1, 1, 1], [A] = (0, r.useState)(0 === n.index), k = (0, r.useRef)(), j = E.filter((e => {
             let {
               faux: t
             } = e;
@@ -855,16 +855,16 @@
             }), [E]),
             $ = (0, r.useCallback)((e => {
               var t;
-              O && (e.uniforms.saturation = U.saturation, e.uniforms.fade = U.fade, e.uniforms.shaderIndex = U.shaderIndex, e.fragmentShader = `uniform float saturation;\nuniform float fade;\nuniform int shaderIndex;\n${e.fragmentShader}`, e.fragmentShader = e.fragmentShader.replace("#include <dithering_fragment>", `\n        #include <dithering_fragment>\n\n        vec3 lerpedColor;\n\n        if (shaderIndex == ${Y}) {\n            float desaturationOpacity = gl_FragColor.a * (saturation + 0.3);\n            vec3 desaturationColor = vec3(\n                ${Me[0]},\n                ${Me[1]},\n                ${Me[2]}\n            );\n            lerpedColor =  mix(\n                vec3(dot(gl_FragColor.rgb, desaturationColor)),\n                gl_FragColor.rgb,\n                saturation\n            );\n            gl_FragColor = vec4(lerpedColor, desaturationOpacity);\n\n        } else if (shaderIndex == ${H}) {\n            float gradient;\n                if (vUv.y < 0.5) {\n                    gradient = mix(${(t=b?je:Le)[0]}, ${t[1]}, vUv.y * 2.0);\n                } else {\n                    gradient = mix(${t[1]}, ${t[2]}, ((vUv.y - 0.5) * 2.0));\n                }\n                lerpedColor = mix(gl_FragColor.rgb, gl_FragColor.rgb * saturation, 1.0 - gradient);\n\n                float lerpedAlpha = mix(gl_FragColor.a * 0.8, gl_FragColor.a, saturation);\n\n                gl_FragColor = vec4(lerpedColor, lerpedAlpha);\n\n        } else {\n            lerpedColor = mix(gl_FragColor.rgb, gl_FragColor.rgb * saturation, 1.0 - vUv.y);\n\n            gl_FragColor = vec4(lerpedColor, 1);\n\n        }\n    `))
-            }), [O, b, x]);
+              A && (e.uniforms.saturation = U.saturation, e.uniforms.fade = U.fade, e.uniforms.shaderIndex = U.shaderIndex, e.fragmentShader = `uniform float saturation;\nuniform float fade;\nuniform int shaderIndex;\n${e.fragmentShader}`, e.fragmentShader = e.fragmentShader.replace("#include <dithering_fragment>", `\n        #include <dithering_fragment>\n\n        vec3 lerpedColor;\n\n        if (shaderIndex == ${Y}) {\n            float desaturationOpacity = gl_FragColor.a * (saturation + 0.3);\n            vec3 desaturationColor = vec3(\n                ${Me[0]},\n                ${Me[1]},\n                ${Me[2]}\n            );\n            lerpedColor =  mix(\n                vec3(dot(gl_FragColor.rgb, desaturationColor)),\n                gl_FragColor.rgb,\n                saturation\n            );\n            gl_FragColor = vec4(lerpedColor, desaturationOpacity);\n\n        } else if (shaderIndex == ${H}) {\n            float gradient;\n                if (vUv.y < 0.5) {\n                    gradient = mix(${(t=b?je:Le)[0]}, ${t[1]}, vUv.y * 2.0);\n                } else {\n                    gradient = mix(${t[1]}, ${t[2]}, ((vUv.y - 0.5) * 2.0));\n                }\n                lerpedColor = mix(gl_FragColor.rgb, gl_FragColor.rgb * saturation, 1.0 - gradient);\n\n                float lerpedAlpha = mix(gl_FragColor.a * 0.8, gl_FragColor.a, saturation);\n\n                gl_FragColor = vec4(lerpedColor, lerpedAlpha);\n\n        } else {\n            lerpedColor = mix(gl_FragColor.rgb, gl_FragColor.rgb * saturation, 1.0 - vUv.y);\n\n            gl_FragColor = vec4(lerpedColor, 1);\n\n        }\n    `))
+            }), [A, b, x]);
           return (0, r.useEffect)((() => {
-            O && (n.plateText = w)
-          }), [O ? w : null]), (0, r.useEffect)((() => {
-            if (O && P && P.id !== S) {
+            A && (n.plateText = w)
+          }), [A ? w : null]), (0, r.useEffect)((() => {
+            if (A && P && P.id !== S) {
               const e = v(S);
               I(e)
             }
-          }), [O, S]), (0, r.useEffect)((() => {
+          }), [A, S]), (0, r.useEffect)((() => {
             U.shaderIndex.value = b ? x ? H : Y : H, L.current && (L.current.bumpScale = .015 * T, L.current.needsUpdate = !0)
           }), [L.current, x, b, T]), (0, r.useMemo)((() => {
             if (!y) return null;
@@ -882,7 +882,7 @@
                   const s = t.fontSize * r;
                   a.strokeStyle = "white", a.fillStyle = "white", a.clearRect(0, 0, a.canvas.width, a.canvas.height), a.font = `${s}px ${t.fontName}`;
                   const i = 5 * r;
-                  return Ve || (a.filter = `blur(${i}px)`), t?.bumpMap?.image && a.drawImage(t.bumpMap.image, 0, 0, a.canvas.width, a.canvas.height), a.strokeText(e, a.canvas.width / 2, a.canvas.height / 1.7), a.fillText(e, a.canvas.width / 2, a.canvas.height / 1.7), Ve && Ae.canvasRGB(a.canvas, 0, 0, a.canvas.width, a.canvas.height, 3 * i), new c.CanvasTexture(a.canvas)
+                  return Ve || (a.filter = `blur(${i}px)`), t?.bumpMap?.image && a.drawImage(t.bumpMap.image, 0, 0, a.canvas.width, a.canvas.height), a.strokeText(e, a.canvas.width / 2, a.canvas.height / 1.7), a.fillText(e, a.canvas.width / 2, a.canvas.height / 1.7), Ve && Oe.canvasRGB(a.canvas, 0, 0, a.canvas.width, a.canvas.height, 3 * i), new c.CanvasTexture(a.canvas)
                 })(a, P),
                 n = ((e, t) => {
                   delete De.map, De.map = We();
@@ -905,11 +905,11 @@
                   n <= B.sm ? r = 1 / 4 : n <= B.md && (r = .5);
                   const s = t.fontSize * r;
                   a.strokeStyle = ke, a.fillStyle = ke, a.fillRect(0, 0, a.canvas.width, a.canvas.height), a.font = `${s}px ${t.fontName}`;
-                  for (let r = 1; r < 2; r += 1) t?.roughnessMap?.image && a.drawImage(t.roughnessMap.image, 0, 0, a.canvas.width, a.canvas.height), a.strokeStyle = Oe, a.fillStyle = Oe, a.strokeText(e, a.canvas.width / 2, a.canvas.height / 1.7), a.fillText(e, a.canvas.width / 2, a.canvas.height / 1.7);
+                  for (let r = 1; r < 2; r += 1) t?.roughnessMap?.image && a.drawImage(t.roughnessMap.image, 0, 0, a.canvas.width, a.canvas.height), a.strokeStyle = Ae, a.fillStyle = Ae, a.strokeText(e, a.canvas.width / 2, a.canvas.height / 1.7), a.fillText(e, a.canvas.width / 2, a.canvas.height / 1.7);
                   return new c.CanvasTexture(a.canvas)
                 })(a, P);
               return [r, n, s]
-            })(O ? w : n.plateText);
+            })(A ? w : n.plateText);
             return (0, Te.jsxs)("mesh", {
               name: X.LP,
               visible: !0,
@@ -918,7 +918,7 @@
               },
               position: l,
               rotation: R,
-              scale: A,
+              scale: O,
               ref: k,
               onClick: () => {
                 b && (!n.index && j || F(n.index))
@@ -942,14 +942,14 @@
                 envMapIntensity: G.envMapIntensity.plateView,
                 map: r,
                 metalness: .4,
-                onBeforeCompile: O && $ || void 0,
+                onBeforeCompile: A && $ || void 0,
                 ref: L,
                 roughness: .3,
                 roughnessMap: i,
                 transparent: !0
               })]
             })
-          }), [O ? M.current : void 0, O, b, _, y, n, o, O ? w : void 0, O ? P : void 0])
+          }), [A ? M.current : void 0, A, b, _, y, n, o, A ? w : void 0, A ? P : void 0])
         },
         Be = e => {
           let {
@@ -980,7 +980,7 @@
             isLoggedIn: R,
             isMobile: C,
             realHeight: N,
-            refs: A,
+            refs: O,
             currentPlateIndex: k,
             three: j,
             canvasDimensions: L
@@ -1014,7 +1014,7 @@
                 const e = z.domElement.offsetHeight,
                   t = p * e + v * e + f * e,
                   a = S(),
-                  r = A[D.ROOT]?.current;
+                  r = O[D.ROOT]?.current;
                 r && (r.style.height = `${t}px`), ne({
                   canvasHeight: e,
                   rootHeight: t
@@ -1044,18 +1044,18 @@
             })) ?? null), [Y, I]),
             oe = (0, r.useCallback)((function() {
               if (!K || arguments.length > 0 && void 0 !== arguments[0] && arguments[0]) {
-                const e = A[D.ROOT].current,
+                const e = O[D.ROOT].current,
                   t = document.body;
-                t.style.removeProperty("overflow"), e && (e.style.touchAction = "auto"), O() || requestAnimationFrame((() => {
+                t.style.removeProperty("overflow"), e && (e.style.touchAction = "auto"), A() || requestAnimationFrame((() => {
                   t.style.removeProperty("position"), t.style.removeProperty("top"), window.scrollTo(0, G)
                 })), J(!0)
               }
             }), [C, G, K]),
             le = (0, r.useCallback)((() => {
               if (K) {
-                const e = A[D.ROOT].current,
+                const e = O[D.ROOT].current,
                   t = document.body;
-                if (e && (e.style.touchAction = "none", t.style.overflow = "hidden"), !O()) {
+                if (e && (e.style.touchAction = "none", t.style.overflow = "hidden"), !A()) {
                   const e = window.scrollY;
                   requestAnimationFrame((() => {
                     t.style.position = "fixed", t.style.top = `-${e}px`, q(e)
@@ -1063,7 +1063,7 @@
                 }
                 J(!1)
               }
-            }), [C, A, K]);
+            }), [C, O, K]);
           (0, r.useEffect)((() => {
             T !== Z.LIST_PLATES ? le() : oe()
           }), [T]), (0, r.useEffect)((() => () => {
@@ -1072,7 +1072,7 @@
           const ce = (0, r.useCallback)((function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
             if (_() === Z.LIST_PLATES || e) {
-              const e = A[D.ROOT]?.current;
+              const e = O[D.ROOT]?.current;
               if (!e || !re) return;
               const {
                 canvasHeight: t,
@@ -1083,13 +1083,13 @@
               const s = B.y + F * n;
               M?.current?.position?.set(B.x, Number(s.toFixed(3)), B.z)
             }
-          }), [M.current, B, A, F, re, R, C]);
+          }), [M.current, B, O, F, re, R, C]);
           return (0, r.useEffect)((() => {
             const e = e => {
               ce(!1), e && (e.stopPropagation(), e.preventDefault())
             };
             return 0 !== window.scrollY && e(null), window.addEventListener("scroll", e), () => window.removeEventListener("scroll", e)
-          }), [M.current, R, B, m, N, A, F, re]), (0, r.useEffect)((() => {
+          }), [M.current, R, B, m, N, O, F, re]), (0, r.useEffect)((() => {
             if (!M.current || !W) return;
             const e = W.getObjectByName("Scene");
             M.current.add(e), e && e.scale.set(6.5, 6.5, 6.5)
@@ -1288,14 +1288,14 @@
               }
             })() : 1,
             N = Math.ceil(u.length / C),
-            A = a * C + n * (C - 1),
-            O = r * Math.ceil(u.length / C) + s * (Math.ceil(u.length / C) - 1),
+            O = a * C + n * (C - 1),
+            A = r * Math.ceil(u.length / C) + s * (Math.ceil(u.length / C) - 1),
             k = Math.abs(R.z) * Math.tan((0, Re.Id)(b.fov / 2)) * 2,
             j = x * (k * (g / h)),
             L = _ * k,
             M = I * k,
             V = Math.abs(2 * R.x),
-            W = V / A * O;
+            W = V / O * A;
           o({
             gridPosition: R,
             gridOptions: {
@@ -1352,11 +1352,11 @@
             envModel: t.environmentModel,
             onLoad: I
           }) : null), [t]),
-          A = (0, r.useMemo)((() => (0, Te.jsx)(Ye, {
+          O = (0, r.useMemo)((() => (0, Te.jsx)(Ye, {
             baseIntensity: .6,
             mapSize: 1024
           })), []),
-          O = (0, r.useMemo)((() => (0, Te.jsx)(Be, {
+          A = (0, r.useMemo)((() => (0, Te.jsx)(Be, {
             gridState: l,
             loadedAssets: t
           })), [l, t]),
@@ -1375,7 +1375,7 @@
             maxDistance: 100
           })), [b, x, y]);
         return (0, Te.jsxs)(Te.Fragment, {
-          children: [A, N, E && l ? O : "", k]
+          children: [O, N, E && l ? A : "", k]
         })
       };
       var Ge = a(3468),
@@ -1657,7 +1657,7 @@
               three: P
             } = p,
             [R, C] = (0, r.useState)(b === Z.VIEW_PLATE),
-            [N, O] = (0, r.useState)([]),
+            [N, A] = (0, r.useState)([]),
             [k, j] = (0, r.useState)(!1),
             [L, z] = (0, r.useState)(!1),
             B = (0, r.useRef)(null),
@@ -1701,7 +1701,7 @@
             const {
               renderer: r
             } = P;
-            A({
+            O({
               plateIndex: de.current,
               three: P,
               timeline: e,
@@ -1769,7 +1769,7 @@
           (0, r.useEffect)((() => {
             d(D.VIEW_PLATE, G)
           }), [G.current]), (0, r.useEffect)((() => {
-            O(S?.[f]?.vehicles ?? [])
+            A(S?.[f]?.vehicles ?? [])
           }), [f, S]), (0, r.useEffect)((() => {
             C(b === Z.VIEW_PLATE)
           }), [b]), (0, r.useEffect)((() => {
@@ -2064,7 +2064,8 @@
                       if (!a) return;
                       z(!0);
                       const {
-                        status: t
+                        error: t,
+                        status: r
                       } = await (0, o.coreScApiFetch)("games/gtao/licensePlates/plate", {
                         bearerToken: a,
                         fetchOptions: {
@@ -2074,9 +2075,10 @@
                           plateText: e
                         }
                       });
-                      t && m(f), fe()
+                      if (t) throw Object.assign(new Error(""), t);
+                      r && m(f), fe()
                     } catch (e) {
-                      u("api")
+                      u(["api", e])
                     }
                   })(), oe({
                     ...le,
@@ -2239,12 +2241,12 @@
             R = (0, r.useRef)(null),
             C = (0, r.useRef)(null),
             N = (0, r.useRef)(null),
-            A = (0, r.useRef)(null),
-            O = (0, r.useRef)(null);
+            O = (0, r.useRef)(null),
+            A = (0, r.useRef)(null);
           (0, r.useEffect)((() => {
             m(D.NEW_PLATE_FORM, C)
           }), [C.current]), (0, r.useEffect)((() => {
-            g === Z.NEW_PLATE && document.activeElement === (x ? O.current : A.current) && A.current?.setSelectionRange(w, w)
+            g === Z.NEW_PLATE && document.activeElement === (x ? A.current : O.current) && O.current?.setSelectionRange(w, w)
           }), [w]);
           const k = e => {
               const t = e.target.value.replace(/[^a-zA-Z0-9 ]/g, "").toUpperCase().slice(0, 8);
@@ -2257,7 +2259,7 @@
               })
             },
             j = e => {
-              "Enter" === e.code && (O.current && O.current.blur(), A.current && A.current.blur())
+              "Enter" === e.code && (A.current && A.current.blur(), O.current && O.current.blur())
             },
             L = g === Z.NEW_PLATE ? 0 : -1,
             M = (0, r.useCallback)((() => {
@@ -2276,7 +2278,7 @@
                       plateText: y
                     }
                   });
-                  t(!1), e?.code;
+                  if (t(!1), e) throw Object.assign(new Error(""), e);
                   const {
                     isMalformed: r,
                     isProfane: n,
@@ -2296,7 +2298,7 @@
                     view_name: "license plate creator - confirm order"
                   }))
                 } catch (e) {
-                  p("api"), console.error("Error:", e)
+                  p(["api", e])
                 }
               })()
             }), [l, h, y]);
@@ -2311,7 +2313,7 @@
             ref: C,
             className: "c03fbea909908002e429",
             onSubmit: e => {
-              e.preventDefault(), O.current?.blur(), A.current?.blur()
+              e.preventDefault(), A.current?.blur(), O.current?.blur()
             },
             onFocusCapture: e => e.preventDefault(),
             children: [(0, Te.jsxs)("section", {
@@ -2330,7 +2332,7 @@
                   maxLength: 8,
                   onInput: k,
                   onFocusCapture: e => {
-                    x && A?.current && (A?.current.focus({
+                    x && O?.current && (O?.current.focus({
                       preventScroll: !0
                     }), e.preventDefault(), e.stopPropagation())
                   },
@@ -2340,7 +2342,7 @@
                   value: S,
                   tabIndex: L,
                   onKeyDown: j,
-                  ref: x ? O : A
+                  ref: x ? A : O
                 }), x && (0, Te.jsx)("input", {
                   style: {
                     position: "absolute",
@@ -2357,7 +2359,7 @@
                   type: "text",
                   onKeyDown: j,
                   value: S,
-                  ref: A
+                  ref: O
                 }), (0, Te.jsx)(st, {
                   plateNumberStatus: v
                 })]
@@ -2460,13 +2462,15 @@
             tabIndex: 0,
             "aria-label": "Switch between viewing the plate on a car and by itself",
             children: [(0, Te.jsx)("div", {
-              className: `${ut} ${o?pt:""}`,
+              className: ut,
               children: (0, Te.jsx)("p", {
+                className: o ? pt : "",
                 children: a("lp.create.plateview")
               })
             }), (0, Te.jsx)("div", {
-              className: `${ut} ${o?pt:""}`,
+              className: ut,
               children: (0, Te.jsx)("p", {
+                className: o ? pt : "",
                 children: a("lp.create.carview")
               })
             }), (0, Te.jsx)("span", {
@@ -2518,8 +2522,8 @@
           const R = g[D.CONFIRM_CONTENT]?.current,
             C = g[D.CONFIRM_SIDEBAR]?.current,
             N = g[D.CONFIRM_SIDEBAR_BUTTONS_PORTAL]?.current,
-            A = g[D.CONFIRM_SIDEBAR_BUTTONS]?.current,
-            O = g[D.NEW_PLATE_SIDEBAR]?.current,
+            O = g[D.CONFIRM_SIDEBAR_BUTTONS]?.current,
+            A = g[D.NEW_PLATE_SIDEBAR]?.current,
             k = g[D.CANVAS_WRAP]?.current,
             j = g[D.SIDEBAR_BUTTONS]?.current,
             L = T.current,
@@ -2589,7 +2593,7 @@
                 zIndex: "revert"
               }, 0), t.to(L, {
                 x: "-100vw"
-              }, 0), y().set([O, H], {
+              }, 0), y().set([A, H], {
                 x: 0
               }), y().set(C, {
                 left: "revert"
@@ -2644,7 +2648,7 @@
                     drawerHeight: s,
                     lerp: 1,
                     onUpdate: () => {
-                      L.style.transform = `translateY(${s-e.drawerHeight}px`, o.set(e.drawerHeight), A && (A.style.pointerEvents = "none", A.style.opacity = String(1 - e.lerp), A.style.transform = `translateY(${100*e.lerp}%)`), N && (N.style.pointerEvents = "none", N.style.opacity = String(1 - e.lerp)), t.to(j, {
+                      L.style.transform = `translateY(${s-e.drawerHeight}px`, o.set(e.drawerHeight), O && (O.style.pointerEvents = "none", O.style.opacity = String(1 - e.lerp), O.style.transform = `translateY(${100*e.lerp}%)`), N && (N.style.pointerEvents = "none", N.style.opacity = String(1 - e.lerp)), t.to(j, {
                         autoAlpha: 0
                       }, "<"), L.style.opacity = e.lerp
                     }
@@ -2755,7 +2759,7 @@
             isExpanded: I
           } = l, {
             selectedCharacterTuple: R
-          } = (0, i.useRockstarUser)(), C = (0, s.useUserBearerToken)(), N = g === Z.CONFIRM_ORDER, [A, O] = (0, r.useState)(I), [k, j] = (0, r.useState)(!1), L = (0, r.useRef)(null), M = (0, r.useRef)(null), {
+          } = (0, i.useRockstarUser)(), C = (0, s.useUserBearerToken)(), N = g === Z.CONFIRM_ORDER, [O, A] = (0, r.useState)(I), [k, j] = (0, r.useState)(!1), L = (0, r.useRef)(null), M = (0, r.useRef)(null), {
             track: V
           } = (0, i.useGtmTrack)(), W = {
             view_name: "license plate creator - confirm order"
@@ -2791,7 +2795,7 @@
                   ...e
                 },
                 onComplete: () => {
-                  O(!1)
+                  A(!1)
                 }
               });
             y().set(q, {
@@ -2808,45 +2812,50 @@
               x: "100vw"
             }, "<"))
           }(0, r.useEffect)((() => {
-            g === Z.LIST_PLATES && A && J()
-          }), [g, A]);
+            g === Z.LIST_PLATES && O && J()
+          }), [g, O]);
           const Q = (0, r.useCallback)((() => {
             (async () => {
-              const e = v(T);
-              if (!(C && h && e?.name && R)) return;
-              const [t, a] = R, {
-                index: r
-              } = h, n = {
-                vehicleIndex: r,
-                plateText: b?.[0]?.plateText,
-                plateStyle: e.name
-              };
-              j(!0);
-              const {
-                status: s
-              } = await (0, o.coreScApiFetch)("games/gtao/licensePlates/order", {
-                bearerToken: C,
-                fetchOptions: {
-                  body: JSON.stringify(n),
-                  method: "POST"
-                },
-                query: {
-                  character: a,
-                  platform: t
-                }
-              });
-              if (s) {
-                j(!1), u(!0);
+              try {
+                const e = v(T);
+                if (!(C && h && e?.name && R)) return;
+                const [t, a] = R, {
+                  index: r
+                } = h, n = {
+                  vehicleIndex: r,
+                  plateText: b?.[0]?.plateText,
+                  plateStyle: e.name
+                };
+                j(!0);
                 const {
-                  result: e
+                  error: s
+                } = await (0, o.coreScApiFetch)("games/gtao/licensePlates/order", {
+                  bearerToken: C,
+                  fetchOptions: {
+                    body: JSON.stringify(n),
+                    method: "POST"
+                  },
+                  query: {
+                    character: a,
+                    platform: t
+                  }
+                });
+                if (j(!1), s) throw Object.assign(new Error(""), s);
+                u(!0);
+                const {
+                  error: i,
+                  result: l
                 } = await (0, o.coreScApiFetch)("games/gtao/licensePlates/order", {
                   bearerToken: C,
                   query: {
                     platform: t
                   }
                 });
-                e ? e[`character${a}Pending`] && p(e) : c("api")
-              } else j(!1), c("api")
+                if (i) throw Object.assign(new Error(""), i);
+                l[`character${a}Pending`] && p(l)
+              } catch (e) {
+                c(["api", e])
+              }
             })()
           }), [C, String(R), b?.[0]?.plateText, h, k, T]);
           (0, r.useEffect)((() => {
@@ -2885,7 +2894,7 @@
                     duration: F.transaction.confirmOrder.duration
                   },
                   onComplete: () => {
-                    O(!0)
+                    A(!0)
                   }
                 }),
                 a = {
@@ -2934,7 +2943,7 @@
                 x: `${-100+e}vw`
               }, "<")
             }
-            A && !N && P && u(!1)
+            O && !N && P && u(!1)
           }), [x, g, w, $, P, U, _()]), (0, r.useEffect)((() => {
             g !== Z.CONFIRM_ORDER && f(null)
           }), [S]);
@@ -3072,7 +3081,7 @@
             plateNumberStatus: h,
             refs: b,
             three: v
-          } = a, [x, w] = (0, r.useState)(0), [_, S] = (0, r.useState)(!1), [P, R] = (0, r.useState)(!1), [C, N] = (0, r.useState)(.4 * window.innerHeight), [O, k] = (0, r.useState)(-1 * (.6 * window.innerHeight - 80)), j = (0, r.useRef)(C), [L, z] = (0, r.useState)(null), B = (0, r.useRef)(null), H = (0, r.useRef)(null), Y = (0, r.useRef)(null), q = (0, r.useRef)(!1), [K, J] = (0, r.useState)(null), Q = (0, r.useRef)(K), ee = (0, r.useRef)(null), te = (0, r.useRef)(null), ae = (0, r.useRef)(null), re = (0, r.useRef)(null), ne = (0, r.useRef)(null), se = (0, r.useRef)(null), ie = (0, r.useRef)(null), oe = (0, r.useRef)(null), le = (0, r.useRef)(null), {
+          } = a, [x, w] = (0, r.useState)(0), [_, S] = (0, r.useState)(!1), [P, R] = (0, r.useState)(!1), [C, N] = (0, r.useState)(.4 * window.innerHeight), [A, k] = (0, r.useState)(-1 * (.6 * window.innerHeight - 80)), j = (0, r.useRef)(C), [L, z] = (0, r.useState)(null), B = (0, r.useRef)(null), H = (0, r.useRef)(null), Y = (0, r.useRef)(null), q = (0, r.useRef)(!1), [K, J] = (0, r.useState)(null), Q = (0, r.useRef)(K), ee = (0, r.useRef)(null), te = (0, r.useRef)(null), ae = (0, r.useRef)(null), re = (0, r.useRef)(null), ne = (0, r.useRef)(null), se = (0, r.useRef)(null), ie = (0, r.useRef)(null), oe = (0, r.useRef)(null), le = (0, r.useRef)(null), {
             track: ce
           } = (0, i.useGtmTrack)(), de = {
             view_name: "license plate creator - create plate form"
@@ -3137,10 +3146,10 @@
                   end: C / -2
                 }, t.canvasYConfirmOrder = {
                   start: Number(I(n.domElement).y),
-                  end: O / 1.5
+                  end: A / 1.5
                 }, t.drawerHeight = {
                   start: B.current ? B.current.get() : 0,
-                  end: l === Z.NEW_PLATE ? 0 : O / (f ? 1 : 2)
+                  end: l === Z.NEW_PLATE ? 0 : A / (f ? 1 : 2)
                 }, t.cameraFov = {
                   start: a.fov,
                   end: l === Z.CONFIRM_ORDER ? 1.2 * Y.current : Y.current
@@ -3275,7 +3284,7 @@
                 }
                 r?.current && (r.current.minDistance = 0), Q.current = !1, J(!1)
             }
-          }), [l, v, m, d, L, O, B.current, Q.current]);
+          }), [l, v, m, d, L, A, B.current, Q.current]);
           (0, r.useEffect)((() => {
             b?.[D.SIDEBAR_BUTTONS]?.current && (le.current = b[D.SIDEBAR_BUTTONS].current)
           }), [b]), (0, r.useEffect)((() => {
@@ -3319,7 +3328,7 @@
               const {
                 renderer: a
               } = pe.current;
-              _ ? (l === Z.NEW_PLATE && (E() ? a.domElement.style.transform = `translateY(${C/-2}px)` : a.domElement.style.transform = "translateY(0px)", te.current && (te.current.style.opacity = "1", te.current.style.visibility = "visible", te.current.style.pointerEvents = "all")), l === Z.CONFIRM_ORDER && E() && (a.domElement.style.transform = `translateY(${O/1.5}px)`)) : l !== Z.CONFIRM_ORDER || E() || (a.domElement.style.transform = "translateY(0px)")
+              _ ? (l === Z.NEW_PLATE && (E() ? a.domElement.style.transform = `translateY(${C/-2}px)` : a.domElement.style.transform = "translateY(0px)", te.current && (te.current.style.opacity = "1", te.current.style.visibility = "visible", te.current.style.pointerEvents = "all")), l === Z.CONFIRM_ORDER && E() && (a.domElement.style.transform = `translateY(${A/1.5}px)`)) : l !== Z.CONFIRM_ORDER || E() || (a.domElement.style.transform = "translateY(0px)")
             }), [E(), _, l, v, te.current, d]),
             fe = (0, r.useCallback)((function() {
               let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
@@ -3415,7 +3424,7 @@
             const {
               renderer: r
             } = v;
-            A({
+            O({
               plateIndex: 0,
               three: v,
               timeline: e,
@@ -3765,14 +3774,14 @@
               onHide: we,
               onShow: Ee,
               onTap: ye,
-              top: O,
+              top: A,
               drawerY: L,
               mobileSidebarHeight: C,
               children: [(0, Te.jsx)(ct, {
                 validateFnRef: ee,
                 setIsLoading: R
               }), (0, Te.jsx)(xt, {
-                top: O,
+                top: A,
                 drawerY: L
               })]
             }) : (0, Te.jsxs)("div", {
@@ -3788,7 +3797,7 @@
                 validateFnRef: ee,
                 setIsLoading: R
               }), _e]
-            })), [g, x, f, m, _, te.current, O, L, P, C]);
+            })), [g, x, f, m, _, te.current, A, L, P, C]);
           return (0, Te.jsxs)("div", {
             ref: se,
             className: "caf43b491abf74b06503",
@@ -4127,7 +4136,7 @@
             (async () => {
               if (!u || !y) return;
               const [e] = y, {
-                status: t
+                error: t
               } = await (0, o.coreScApiFetch)("games/gtao/licensePlates/order", {
                 bearerToken: u,
                 fetchOptions: {
@@ -4137,11 +4146,9 @@
                   platform: e
                 }
               });
-              if (t) {
-                const e = [q, ...v.slice(1, v.length)];
-                p(e), m(null), f(""), g(x(q.style.name).id)
-              } else h("api");
-              E({
+              if (t) return void h(["api", t]);
+              const a = [q, ...v.slice(1, v.length)];
+              p(a), m(null), f(""), g(x(q.style.name).id), E({
                 ..._,
                 event: "cta_cancel",
                 event_category: "cta",
@@ -4266,7 +4273,7 @@
             })
           })
         },
-        At = e => {
+        Ot = e => {
           let {
             t
           } = e;
@@ -4305,8 +4312,8 @@
             w(r)
           }), [d, T?.current, E, g, I.current, b]);
           const {
-            track: A
-          } = (0, i.useGtmTrack)(), O = {
+            track: O
+          } = (0, i.useGtmTrack)(), A = {
             view_name: "license plate creator - landing page logged " + (u ? "in" : "out")
           }, k = (0, r.useRef)(null);
           (0, r.useEffect)((() => {
@@ -4316,15 +4323,15 @@
             L = (0, r.useCallback)((e => {
               if (n() === Z.LIST_PLATES) {
                 const t = 0 === e ? Z.NEW_PLATE : Z.VIEW_PLATE;
-                e && (A({
-                  ...O,
+                e && (O({
+                  ...A,
                   event: "license_plate_open",
                   event_category: "license_plate",
                   event_action: "open",
                   view_name: "list plates",
                   position: e
-                }), A({
-                  ...O,
+                }), O({
+                  ...A,
                   event: "virtualPageview",
                   display_type: h ? "mobile" : "desktop",
                   view_name: "license plate creator - view plate"
@@ -4340,8 +4347,8 @@
               currentView: c,
               loginUrl: p,
               inputTabIndex: j,
-              track: A,
-              trackingPresets: O,
+              track: O,
+              trackingPresets: A,
               onClickPlate: L,
               t
             }) : null), [c, p, x]),
@@ -4349,8 +4356,8 @@
               t,
               vehicleName: `${m.manufacturerName} ${m.vehicleName}`,
               onClickEdit: () => {
-                A({
-                  ...O,
+                O({
+                  ...A,
                   event: "license_plate_edit_click",
                   event_category: "license_plate",
                   event_action: "edit",
@@ -4370,8 +4377,8 @@
             }) : 0 === f.length ? null : (0, Te.jsxs)("button", {
               type: "button",
               onClick: () => {
-                A({
-                  ...O,
+                O({
+                  ...A,
                   event: "license_plate_create_click",
                   event_category: "license_plate",
                   event_action: "create",
@@ -4436,72 +4443,93 @@
             })
           }), [x, E, d, u, c, W, f, h])
         },
-        Ot = e => {
+        At = e => {
           let {
             t
           } = e;
-          const {
-            state: {
-              error: a,
-              isMobile: n
-            }
-          } = Se(), s = {
-            api: t("lp.error.api.description"),
-            browser: t("lp.error.browser.description"),
-            character: t("lp.error.nocharacter.description"),
-            vehicles: t("lp.error.novehicle.description"),
-            webgl: t("lp.error.webgl.description")
-          }, o = {
-            api: t("lp.error.api.cta"),
-            browser: t("lp.error.browser.cta"),
-            character: t("lp.error.nocharacter.cta"),
-            vehicles: t("lp.error.api.cta"),
-            webgl: t("lp.error.api.cta")
-          }, {
-            track: l
-          } = (0, i.useGtmTrack)(), {
-            data: c
-          } = (0, i.useRockstarUser)(), d = {
-            member_id: c?.user ? c.user?.id : void 0,
-            view_name: "license plate creator - error screen"
-          };
+          const a = {
+              code: null,
+              logId: null
+            },
+            {
+              state: {
+                error: n,
+                isMobile: s
+              }
+            } = Se(),
+            [o, l] = (0, r.useState)(null),
+            [c, d] = (0, r.useState)(null),
+            p = {
+              api: t("lp.error.api.description"),
+              browser: t("lp.error.browser.description"),
+              character: t("lp.error.nocharacter.description"),
+              vehicles: t("lp.error.novehicle.description"),
+              webgl: t("lp.error.webgl.description")
+            },
+            m = {
+              api: t("lp.error.api.cta"),
+              browser: t("lp.error.browser.cta"),
+              character: t("lp.error.nocharacter.cta"),
+              vehicles: t("lp.error.api.cta"),
+              webgl: t("lp.error.api.cta")
+            },
+            {
+              track: f
+            } = (0, i.useGtmTrack)(),
+            {
+              data: g
+            } = (0, i.useRockstarUser)(),
+            h = {
+              member_id: g?.user ? g.user?.id : void 0,
+              view_name: "license plate creator - error screen"
+            };
           return (0, r.useEffect)((() => {
-            l({
-              ...d,
+            if (!n) return l(null), void d(null);
+            l(n[0]), d(n[1] ?? a)
+          }), [String(n)]), (0, r.useEffect)((() => {
+            f({
+              ...h,
               event: "alert_error",
               event_category: "alert",
               event_action: "error",
-              text: s[a] || t("lp.error.unexpected.description")
-            }), l({
-              ...d,
+              text: p[o] || t("lp.error.unexpected.description")
+            }), f({
+              ...h,
               event: "trackPageview",
-              display_type: n ? "mobile" : "desktop"
+              display_type: s ? "mobile" : "desktop"
             })
-          }), []), (0, Te.jsxs)("div", {
+          }), []), o ? (0, Te.jsxs)("div", {
             className: "edb361b16208ea39b04d",
             children: [(0, Te.jsxs)("div", {
               className: "f989292c56d125a42b05",
               children: [(0, Te.jsxs)("div", {
                 className: "d8a0031e9fbf468e335f",
                 children: [(0, Te.jsx)("i", {}), (0, Te.jsx)("h4", {
-                  children: s[a] || t("lp.error.unexpected.description")
+                  children: p[o] || t("lp.error.unexpected.description")
+                }), c?.code && (0, Te.jsxs)("div", {
+                  className: "e79427410b0638c42413",
+                  children: [(0, Te.jsx)("p", {
+                    children: `Code: ${c.code}`
+                  }), c?.logId && (0, Te.jsx)("p", {
+                    children: `LogID: ${c?.logId}`
+                  })]
                 })]
               }), (0, Te.jsx)(u.NavLink, {
-                to: "character" !== a ? "/gta-online" : "https://socialclub.rockstargames.com/settings/linkedaccounts",
+                to: "character" !== n ? "/gta-online" : "https://socialclub.rockstargames.com/settings/linkedaccounts",
                 children: (0, Te.jsx)("button", {
                   className: "e93e0cb9f21eac83e021",
                   type: "button",
                   tabIndex: 0,
                   children: (0, Te.jsx)("span", {
                     className: "b0922946a512c5c777b2",
-                    children: o[a]
+                    children: m[o]
                   })
                 })
               })]
             }), (0, Te.jsx)("div", {
               className: "d7b9f55b7895c5fc08c6"
             })]
-          })
+          }) : null
         },
         kt = e => {
           let {
@@ -4618,8 +4646,8 @@
             setVehicles: C,
             state: N
           } = Se(), {
-            isLoggedIn: A,
-            error: O,
+            isLoggedIn: O,
+            error: A,
             plates: k,
             pendingOrder: j,
             isMobile: L,
@@ -4640,7 +4668,7 @@
                 }));
               if (!window.WebGLRenderingContext || !t) throw new Error("webgl")
             } catch (e) {
-              y(e?.message)
+              y([e?.message])
             } finally {
               J(!0)
             }
@@ -4669,68 +4697,80 @@
           }), [U.current]), (0, r.useEffect)((() => {
             I(D.MOBILE_SIDEBAR_PORTAL_TARGET, F)
           }), [F.current]), (0, r.useEffect)((() => {
-            if (!K || "webgl" === O || "browser" === O) return;
+            if (!K || "webgl" === A || "browser" === A) return;
             y(null), h(H), b(Z.LIST_PLATES), _(null);
             const e = (B ? [] : [q]).map(((e, t) => ({
               ...e,
               index: t
             })));
-            null !== A && T(e), C([]), (async () => {
+            null !== O && T(e), C([]), (async () => {
               try {
                 const e = y();
                 if (!V || null === H || e) return;
-                if (!1 === H) return void y("character");
-                const [t, a] = H, r = await (0, o.coreScApiFetch)("games/gtao/licensePlates/owned", {
+                if (!1 === H) return void y(["character"]);
+                const [t, a] = H, {
+                  error: r = null,
+                  result: n
+                } = await (0, o.coreScApiFetch)("games/gtao/licensePlates/owned", {
                   bearerToken: V,
                   query: {
                     character: a,
                     platform: t
                   }
-                }), n = r?.result?.plates?.map((e => {
-                  const t = x(e?.vehicles?.[0]?.plateStyle ?? "YellowBlack") ?? x("YellowBlack");
-                  return {
-                    ...e,
-                    style: t
-                  }
-                })) ?? [], s = await (0, o.coreScApiFetch)("games/gtao/licensePlates/availableVehicles", {
-                  bearerToken: V,
-                  query: {
-                    character: a,
-                    platform: t
-                  }
-                }), i = g().uniqBy(s?.result?.vehicles ?? [], (e => {
+                });
+                if (r) throw Object.assign(new Error(""), r);
+                const s = n?.plates?.map((e => {
+                    const t = x(e?.vehicles?.[0]?.plateStyle ?? "YellowBlack") ?? x("YellowBlack");
+                    return {
+                      ...e,
+                      style: t
+                    }
+                  })) ?? [],
+                  {
+                    error: i = null,
+                    result: l
+                  } = await (0, o.coreScApiFetch)("games/gtao/licensePlates/availableVehicles", {
+                    bearerToken: V,
+                    query: {
+                      character: a,
+                      platform: t
+                    }
+                  });
+                if (i) throw Object.assign(new Error(""), i);
+                const c = g().uniqBy(l?.vehicles ?? [], (e => {
                   let {
                     id: t
                   } = e;
                   return t
                 }));
-                if (!i.length) return void y("vehicles");
-                C(i);
-                const l = await (0, o.coreScApiFetch)("games/gtao/licensePlates/order", {
-                    bearerToken: V,
-                    query: {
-                      platform: t
-                    }
-                  }),
-                  {
-                    result: c
-                  } = l,
-                  d = P(c, k);
-                let u = [q, ...n];
-                u = u.map(((e, t) => ({
+                if (!c.length) return void y(["vehicles"]);
+                C(c);
+                const {
+                  error: d,
+                  result: u
+                } = await (0, o.coreScApiFetch)("games/gtao/licensePlates/order", {
+                  bearerToken: V,
+                  query: {
+                    platform: t
+                  }
+                });
+                if (d) throw Object.assign(new Error(""), d);
+                const p = P(u, k);
+                let m = [q, ...s];
+                m = m.map(((e, t) => ({
                   ...e,
                   index: t
-                }))), d ? (_(c), R(q.style.id)) : _(null), S(q.plateText), T(u)
+                }))), p ? (_(u), R(q.style.id)) : _(null), S(q.plateText), T(m)
               } catch (e) {
-                y("api")
+                y(["api", e])
               }
             })()
-          }), [typeof V, String(H), A, K]), (0, r.useEffect)((() => {
+          }), [typeof V, String(H), O, K]), (0, r.useEffect)((() => {
             P(j, k) && (R(x(j.plateStyle).id), S(j.plateText))
           }), [j, k]), (0, r.useEffect)((() => {
             v(!!B)
           }), [B]), (0, r.useEffect)((() => {
-            if ($ || !z || O || !K) return;
+            if ($ || !z || A || !K) return;
             const e = X.get("envUrl") || a(3924),
               t = new c.LoadingManager((() => {
                 G({
@@ -4764,7 +4804,7 @@
                   fontSize: a
                 }
               }))
-          }), [$, z, O, K]);
+          }), [$, z, A, K]);
           const ee = (0, r.useMemo)((() => (0, Te.jsx)(n.Canvas, {
             shadows: !E(),
             linear: !0,
@@ -4784,7 +4824,7 @@
               loadedAssets: $
             })
           })), [$]);
-          return K && null !== B ? O ? (0, Te.jsx)(Ot, {
+          return K && null !== B ? A ? (0, Te.jsx)(At, {
             t
           }) : (0, Te.jsxs)("div", {
             ref: U,
@@ -4803,7 +4843,7 @@
               })]
             }), (0, Te.jsx)("span", {
               className: "c23379ba67d2aa3b2d3d"
-            }), (0, Te.jsx)(At, {
+            }), (0, Te.jsx)(Ot, {
               t
             }), (0, Te.jsx)(jt, {}), (0, Te.jsx)(Pe, {
               t

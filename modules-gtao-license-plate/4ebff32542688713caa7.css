@@ -3026,6 +3026,12 @@ p.b97c15f1f2e891588f33 span {
   }
 }
 
+.e79427410b0638c42413 {
+  grid-gap: .25rem;
+  --font-size-3: 75%;
+  display: grid
+}
+
 .e93e0cb9f21eac83e021 {
   grid-gap: var(--grid-gap-xs);
   align-items: center;
