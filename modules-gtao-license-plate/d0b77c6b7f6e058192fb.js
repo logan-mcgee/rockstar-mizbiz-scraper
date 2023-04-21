@@ -4515,7 +4515,7 @@
                   })]
                 })]
               }), (0, Te.jsx)(u.NavLink, {
-                to: "character" !== n ? "/gta-online" : "https://socialclub.rockstargames.com/settings/linkedaccounts",
+                to: "character" !== o ? "/gta-online" : "https://socialclub.rockstargames.com/settings/linkedaccounts",
                 children: (0, Te.jsx)("button", {
                   className: "e93e0cb9f21eac83e021",
                   type: "button",
