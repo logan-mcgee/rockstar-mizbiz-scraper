@@ -1077,13 +1077,13 @@
               const {
                 canvasHeight: t,
                 rootHeight: a
-              } = re, r = C && !R ? 2 : 1;
+              } = re, r = C && I.length <= 2 ? 2 : 1;
               let n = Number(Math.min(window.scrollY / (a - t), r).toFixed(4));
               (Number.isNaN(n) || a === t) && (n = 0);
               const s = B.y + F * n;
               M?.current?.position?.set(B.x, Number(s.toFixed(3)), B.z)
             }
-          }), [M.current, B, O, F, re, R, C]);
+          }), [M.current, B, O, F, I, re, R, C]);
           return (0, r.useEffect)((() => {
             const e = e => {
               ce(!1), e && (e.stopPropagation(), e.preventDefault())
