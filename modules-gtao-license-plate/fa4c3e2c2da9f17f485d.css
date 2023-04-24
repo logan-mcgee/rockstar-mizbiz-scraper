@@ -1934,6 +1934,7 @@ p.e2d9a88190e1e3de5bb6 span {
 }
 
 .e6e66ce12aa2d8d190ef {
+  grid-gap: var(--grid-gap-md);
   display: grid;
   overflow-y: auto
 }
@@ -1968,7 +1969,6 @@ p.e2d9a88190e1e3de5bb6 span {
 
 @media (max-width:1023px) {
   .e6e66ce12aa2d8d190ef {
-    grid-gap: var(--grid-gap-md);
     align-content: flex-start;
     height: 100%;
     height: -webkit-fill-available;
@@ -2076,10 +2076,13 @@ p.d6bae7e0151e183d3293 {
 
 p.d6bae7e0151e183d3293 {
   grid-gap: var(--grid-gap-xs);
+  background: linear-gradient(var(--white-15), var(--white-15)), var(--black-100);
+  border-radius: var(--border-radius-sm);
   color: var(--color-body);
   display: grid;
   grid-auto-flow: column;
   justify-content: left;
+  padding: var(--padding-xs);
   width: 100%
 }
 
@@ -2092,6 +2095,12 @@ p.d6bae7e0151e183d3293:before {
   width: 1rem
 }
 
+@media (min-width:1440px) {
+  p.d6bae7e0151e183d3293 {
+    padding: .75rem
+  }
+}
+
 @media only screen and (min-width:480px) and (max-width:1023px) and (orientation:landscape) {
   .e6e66ce12aa2d8d190ef {
     padding-bottom: 10rem
@@ -2102,7 +2111,10 @@ p.d6bae7e0151e183d3293:before {
   }
 
   p.d6bae7e0151e183d3293 {
-    justify-content: right
+    justify-content: right;
+    justify-self: flex-end;
+    width: -moz-fit-content;
+    width: fit-content
   }
 }
 
