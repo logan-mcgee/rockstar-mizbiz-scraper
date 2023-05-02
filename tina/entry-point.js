@@ -4,11 +4,11 @@ var tina;
   var e, r, t, a, n = {
       697: (e, r, t) => {
         var a = {
-            "./index": () => Promise.all([t.e(515), t.e(311), t.e(822), t.e(468), t.e(929), t.e(437), t.e(774)]).then((() => () => t(562))),
+            "./index": () => Promise.all([t.e(515), t.e(311), t.e(822), t.e(468), t.e(929), t.e(269), t.e(774)]).then((() => () => t(562))),
             "./helpers": () => t.e(446).then((() => () => t(446))),
             "./helpers/payload": () => Promise.all([t.e(311), t.e(305)]).then((() => () => t(305))),
             "./helpers/uploads": () => Promise.all([t.e(822), t.e(929), t.e(69)]).then((() => () => t(69))),
-            "./properties": () => Promise.all([t.e(515), t.e(822), t.e(468), t.e(929), t.e(437), t.e(142)]).then((() => () => t(437))),
+            "./properties": () => Promise.all([t.e(515), t.e(822), t.e(468), t.e(929), t.e(269), t.e(142)]).then((() => () => t(269))),
             "./tinaBlockTemplates": () => t.e(220).then((() => () => t(220))),
             "./ui": () => Promise.all([t.e(515), t.e(822), t.e(468), t.e(408)]).then((() => () => t(408)))
           },
@@ -88,19 +88,19 @@ var tina;
       get: r[t]
     })
   }, o.f = {}, o.e = e => Promise.all(Object.keys(o.f).reduce(((r, t) => (o.f[t](e, r), r)), [])), o.u = e => "js/" + {
-    69: "54dcfbf47bf4c0064e74",
+    69: "b5b9e7417a4de6c91b57",
     142: "cac4c36117ef59b29b62",
     220: "d7dd34fcdcb9a39b4c8c",
+    269: "d6f6729f8e84882b769a",
     305: "5b2785c98cb17d7ea237",
     311: "57c9b733caf22e59badf",
     408: "8beee03b02bd81a9849c",
-    437: "f8a33deeece89f5bc559",
     446: "7d564d05da3319f8835e",
     468: "1f6bf1165ef4ecd4885b",
     469: "4fca377ba8ba0aa9cc76",
     515: "8c3effc9bea2a6998691",
     627: "f05ca634f702db89fd66",
-    774: "ba24243b1edeb4ca74fc",
+    774: "90516ff37b12b599a393",
     822: "23748c683bf17f9d5183",
     929: "f9c65267a8545e659f24"
   } [e] + ".js", o.miniCssF = e => "css/" + {
@@ -146,7 +146,7 @@ var tina;
     })
   }, o.nmd = e => (e.paths = [], e.children || (e.children = []), e), t = {
     220: [616],
-    437: [859],
+    269: [859],
     929: [929]
   }, a = {
     616: ["default", "./properties", 489],

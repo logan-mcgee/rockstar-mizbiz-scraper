@@ -428,14 +428,13 @@
           fetchOptions: a = {},
           query: i = null
         } = t;
-        const s = (0, r.useUserBearerToken)(),
+        const s = (0, r.useRockstarToken)(),
           [c, d] = (0, o.useState)(null),
           [l, m] = (0, o.useState)(!1),
           [g, f] = (0, o.useState)(null),
           h = (0, o.useCallback)((async function() {
             let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
               n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
-            if (null === s) return null;
             try {
               const {
                 fetchOptions: r = {}
@@ -587,13 +586,14 @@
           return (0, a.useEffect)((() => {
             let e;
             const t = () => {
+              if (f) return;
               const t = Math.max(0, window.pageYOffset);
               d(t), m || u(t > 60 && t > e), e = t
             };
             return window.addEventListener("scroll", t), () => {
               window.removeEventListener("scroll", t)
             }
-          }), [m]), (0, a.useMemo)((() => (0, i.jsx)(c.Provider, {
+          }), [m, f]), (0, a.useMemo)((() => (0, i.jsx)(c.Provider, {
             value: {
               freezeUserShouldSeeMore: f,
               pageYOffset: n,

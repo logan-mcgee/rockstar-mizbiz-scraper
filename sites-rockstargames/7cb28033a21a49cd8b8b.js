@@ -18,8 +18,8 @@
         f = n(1968),
         g = n(1458),
         p = n(6711),
-        h = n(2752),
-        b = n(9929);
+        h = n(9929),
+        b = n(2752);
       const N = "d6f18ca5eb38255a12f2",
         S = "b9bb09c7276c243a56c3";
       var y = n(3492),
@@ -85,7 +85,7 @@
             })]
           })
         },
-        F = (0, b.withTranslations)((e => {
+        F = (0, h.withTranslations)((e => {
           let {
             t: a
           } = e;
@@ -117,7 +117,7 @@
             })]
           })
         })),
-        V = (0, b.withTranslations)((e => {
+        V = (0, h.withTranslations)((e => {
           let {
             t: a
           } = e;
@@ -139,7 +139,7 @@
         }));
       var _ = n(4524),
         T = n.n(_);
-      const E = (0, b.withTranslations)((e => {
+      const E = (0, h.withTranslations)((e => {
           let {
             t: a
           } = e;
@@ -160,14 +160,14 @@
         A = "cf17a6d004f287e319c2";
       var D = n(2992),
         $ = n.n(D);
-      const L = (0, b.withTranslations)((e => {
+      const L = (0, h.withTranslations)((e => {
         let {
           t: a
         } = e;
         const {
           setBreadcrumb: n,
           setNormalLogo: i
-        } = (0, v.useRockstarLocalState)(), t = (0, b.useQueryParams)(), [l, d] = (0, s.useState)({}), {
+        } = (0, v.useRockstarLocalState)(), t = (0, h.useQueryParams)(), [l, d] = (0, s.useState)({}), {
           data: r
         } = (0, k.useQuery)($(), {
           variables: l,
@@ -228,7 +228,7 @@
       }));
       var I = n(4224),
         C = n(6109);
-      const q = (0, b.withTranslations)((e => {
+      const q = (0, h.withTranslations)((e => {
         let {
           t: a
         } = e;
@@ -270,7 +270,7 @@
       }));
       var G = n(5104),
         O = n.n(G);
-      const B = (0, b.withTranslations)((e => {
+      const B = (0, h.withTranslations)((e => {
         let {
           t: a
         } = e;
@@ -509,7 +509,7 @@
             }) : "", i]
           })
         },
-        X = (0, b.withTranslations)((e => {
+        X = (0, h.withTranslations)((e => {
           let {
             t: a
           } = e;
@@ -663,7 +663,7 @@
             })]
           }, t)
         },
-        le = (0, b.withTranslations)((e => {
+        le = (0, h.withTranslations)((e => {
           let {
             t: a
           } = e;
@@ -673,7 +673,7 @@
             },
             setSearch: i,
             setTitle: t
-          } = (0, v.useRockstarLocalState)(), l = (0, b.useQueryParams)(), [d, r] = (0, s.useState)(null), [c, m] = (0, s.useState)({}), [u, f] = (0, s.useState)(l.get("tab") ?? null), {
+          } = (0, v.useRockstarLocalState)(), l = (0, h.useQueryParams)(), [d, r] = (0, s.useState)(null), [c, m] = (0, s.useState)({}), [u, f] = (0, s.useState)(l.get("tab") ?? null), {
             data: g = {},
             loading: p
           } = (0, k.useQuery)(ne(), {
@@ -761,7 +761,7 @@
       };
       var oe = n(8469),
         ce = n.n(oe);
-      const me = (0, o.withSearchbarErrorBoundary)((0, b.withTranslations)((e => {
+      const me = (0, o.withSearchbarErrorBoundary)((0, h.withTranslations)((e => {
           let {
             CookieSettingsModal: a,
             noCountrySelector: n,
@@ -771,8 +771,8 @@
           } = e;
           const d = (0, r.useNavigate)(),
             c = (0, r.useLocation)(),
-            m = (0, b.useLocale)(),
-            u = (0, b.useQueryParams)(),
+            m = (0, h.useLocale)(),
+            u = (0, h.useQueryParams)(),
             v = (0, s.useRef)(),
             f = (e, a) => {
               const n = a ?? e.target.hash,
@@ -788,7 +788,7 @@
             },
             [g, p] = (0, s.useState)({}),
             {
-              data: h,
+              data: b,
               loading: N
             } = (0, k.useQuery)(ce(), {
               variables: g,
@@ -819,10 +819,10 @@
             })), "" !== c.hash && setTimeout((() => {
               f(!1, c.hash)
             }), 10)
-          }), [h]);
+          }), [b]);
           const {
             content: S
-          } = h?.companyInfo ?? "";
+          } = b?.companyInfo ?? "";
           return (0, x.jsxs)("div", {
             className: re.companyInfo,
             "data-locale": g.jsonLocale,
@@ -838,9 +838,9 @@
                   className: re[e]
                 }, a)))
               })]
-            }), h && !N ? (0, x.jsx)("section", {
+            }), b && !N ? (0, x.jsx)("section", {
               className: re.content,
-              children: "cookies" === t && h ? (0, x.jsx)(se(), {
+              children: "cookies" === t && b ? (0, x.jsx)(se(), {
                 renderInWrapper: !1,
                 components: {
                   CookieSettingsModal: a
@@ -896,7 +896,7 @@
         be = () => (0, x.jsx)(me, {
           jsonType: "cookies",
           titleKey: "Cookie Policy",
-          CookieSettingsModal: (0, b.withTranslations)(he)
+          CookieSettingsModal: (0, h.withTranslations)(he)
         }),
         Ne = () => (0, x.jsx)(me, {
           jsonType: "ccpa",
@@ -969,7 +969,7 @@
         };
       var ye = n(1737),
         xe = n.n(ye);
-      const je = (0, b.withTranslations)((e => {
+      const je = (0, h.withTranslations)((e => {
         let {
           t: a
         } = e;
@@ -1038,7 +1038,7 @@
             })]
           })
         },
-        _e = (0, b.withTranslations)((e => {
+        _e = (0, h.withTranslations)((e => {
           let {
             stations: a,
             gameId: n,
@@ -1100,7 +1100,7 @@
       var Te = n(4533),
         Ee = n.n(Te);
       const Ae = () => {
-          const e = (0, b.useQueryParams)(),
+          const e = (0, h.useQueryParams)(),
             a = Number(e.get("gameId")),
             n = Number(e.get("songId")),
             i = Number(e.get("stationId"));
@@ -1133,7 +1133,7 @@
             }) : null]
           })
         },
-        De = (0, b.withTranslations)((e => {
+        De = (0, h.withTranslations)((e => {
           let {
             t: a
           } = e;
@@ -1337,7 +1337,7 @@
             element: (0, x.jsx)(fe, {})
           }, {
             path: "/gta-v/thankyou",
-            element: (0, x.jsx)(h.Credits, {
+            element: (0, x.jsx)(b.Credits, {
               title: "v"
             })
           }, {
@@ -1345,7 +1345,7 @@
             element: (0, x.jsx)(Ie, {})
           }, {
             path: "/reddeadonline/thankyou",
-            element: (0, x.jsx)(h.Credits, {
+            element: (0, x.jsx)(b.Credits, {
               title: "rdr2"
             })
           }, {
@@ -1508,32 +1508,37 @@
               children: (0, x.jsx)(r.BrowserRouter, {
                 basename: a,
                 children: (0, x.jsxs)(g.RockstarUserProvider, {
-                  children: [(0, x.jsx)(h.AccessibilityButton, {}), e, (0, x.jsx)(o.ScrollToTop, {}), n || i ? "" : (0, x.jsx)(h.Header, {}), (0, x.jsx)(p.Menu, {}), (0, x.jsx)(Be, {}), n || t ? "" : (0, x.jsx)(h.FooterNav, {})]
+                  children: [(0, x.jsx)(b.AccessibilityButton, {}), e, (0, x.jsx)(o.ScrollToTop, {}), n || i ? "" : (0, x.jsx)(b.Header, {}), (0, x.jsx)(p.Menu, {}), (0, x.jsx)(Be, {}), n || t ? "" : (0, x.jsx)(b.FooterNav, {})]
                 })
               })
             })
           })
         },
-        Qe = (0, k.withReactiveState)((() => (0, x.jsx)(c.ModalProvider, {
+        {
+          pingBearer: Qe
+        } = (0, h.getScConfigForOrigin)(),
+        Ke = (0, k.withReactiveState)((() => (0, x.jsx)(c.ModalProvider, {
           children: (0, x.jsx)(He, {})
         })), {
           state: Ue
         }),
-        Ke = (0, k.withRockstarGraph)(Qe, {
+        We = (0, k.withRockstarGraph)(Ke, {
           env: ze,
+          token: (0, k.makeVar)(null),
+          tokenPing: Qe,
           typePolicies: {
             ...u()
           }
         }),
-        We = window?.env?.gtmId ?? null,
-        Je = window?.env?.oneTrustId ?? null;
+        Je = window?.env?.gtmId ?? null,
+        Ye = window?.env?.oneTrustId ?? null;
       (0, i.init)({
-        id: We
+        id: Je
       }), l()({
-        id: Je,
+        id: Ye,
         init: () => {
           const e = document.createElement("div");
-          document.body.appendChild(e), (0, d.s)(e).render((0, x.jsx)(Ke, {}))
+          document.body.appendChild(e), (0, d.s)(e).render((0, x.jsx)(We, {}))
         }
       })
     },

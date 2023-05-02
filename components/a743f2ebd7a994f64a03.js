@@ -82,7 +82,7 @@
         AudioPlayer: () => h,
         Badge: () => x,
         Button: () => y,
-        CalloutSection: () => D,
+        CalloutSection: () => R,
         Carousel: () => C,
         ConditionalBlock: () => $,
         Cta: () => A,
@@ -121,7 +121,7 @@
         ResponsiveGridBox: () => $a,
         ResponsiveGridItem: () => Fa,
         ResponsiveImg: () => Ma,
-        ResponsiveSection: () => Da,
+        ResponsiveSection: () => Ra,
         ScrollToTop: () => Aa,
         ScrollTracker: () => Oa,
         SearchBox: () => Pa,
@@ -764,8 +764,8 @@
           return (0, l.useEffect)((() => {
             a && t && (async () => {
               const e = await n({
-                foreign_id: a,
-                foreign_type: t
+                foreignId: a,
+                foreignType: t
               });
               o(e?.data?.userGetVote?.vote ?? null)
             })()
@@ -786,7 +786,7 @@
             })]
           })
         },
-        R = e => {
+        D = e => {
           let {
             action_text: a,
             link: t
@@ -804,7 +804,7 @@
             })
           })
         },
-        D = (0, E.withTranslations)((e => {
+        R = (0, E.withTranslations)((e => {
           let {
             header: a,
             subheader: t,
@@ -843,7 +843,7 @@
               }));
               break;
             case "link":
-              n && s && (u = (0, d.jsx)(R, {
+              n && s && (u = (0, d.jsx)(D, {
                 action_text: n,
                 link: s
               }));
@@ -1838,7 +1838,7 @@
             }))
           }) : null
         },
-        Re = {
+        De = {
           hero: "bece3423e7348fe897dd",
           images: "e4f748c1ff815d8b9037",
           background: "b5ced9959e35f2253f74",
@@ -1850,7 +1850,7 @@
           legalText: "fdc2ef25c828ac791dc6",
           shardsCarousel: "a10586bf7a52bd0b2244"
         },
-        De = {
+        Re = {
           visible: {
             opacity: 1,
             transition: {
@@ -1892,7 +1892,7 @@
           const n = (0, N.useGetCdnSource)(t ?? null),
             s = (0, N.useGetCdnSource)(i ?? n);
           return (0, d.jsx)("div", {
-            className: Re.shard,
+            className: De.shard,
             style: {
               "--background-image-mobile": `url(${n})`,
               "--background-image-desktop": `url(${s})`
@@ -1925,7 +1925,7 @@
               })), e
             }), []))
           }), [t]), i ? (0, d.jsx)("div", {
-            className: Re.shardsCarousel,
+            className: De.shardsCarousel,
             children: (0, d.jsx)(Ie, {
               title: a,
               slideChildren: i,
@@ -1959,7 +1959,7 @@
               buttonText: n,
               platformsAndLinks: r,
               children: [(0, d.jsxs)(ue.E.div, {
-                className: Re.descriptions,
+                className: De.descriptions,
                 variants: a ? Ae : void 0,
                 children: [(0, d.jsx)("h2", {
                   dangerouslySetInnerHTML: {
@@ -1974,13 +1974,13 @@
                 variants: Ae,
                 children: (0, d.jsx)(Me, {
                   buttons: c,
-                  className: Re.buttonGroup
+                  className: De.buttonGroup
                 })
               })]
             })
           }) : (0, d.jsxs)(d.Fragment, {
             children: [(0, d.jsxs)(ue.E.div, {
-              className: Re.descriptions,
+              className: De.descriptions,
               variants: a ? Ae : void 0,
               children: [(0, d.jsx)("h2", {
                 dangerouslySetInnerHTML: {
@@ -1995,11 +1995,11 @@
               variants: Ae,
               children: (0, d.jsx)(Me, {
                 buttons: c,
-                className: Re.buttonGroup
+                className: De.buttonGroup
               })
             })]
           }) : (0, d.jsxs)(ue.E.div, {
-            className: Re.descriptions,
+            className: De.descriptions,
             variants: a ? Ae : void 0,
             children: [(0, d.jsx)("h2", {
               dangerouslySetInnerHTML: {
@@ -2023,10 +2023,10 @@
             legalText: o
           } = e;
           return (0, d.jsxs)(ue.E.div, {
-            className: Re.content,
+            className: De.content,
             initial: "hidden",
             animate: "visible",
-            variants: a ? De : void 0,
+            variants: a ? Re : void 0,
             children: [(0, d.jsx)(ue.E.div, {
               variants: a ? Ae : void 0,
               children: (0, d.jsx)(Ve, {
@@ -2039,7 +2039,7 @@
               expandingButtonLabel: s,
               title: r
             }), o && (0, d.jsx)(ue.E.div, {
-              className: Re.legalText,
+              className: De.legalText,
               variants: a ? Ae : void 0,
               children: (0, d.jsx)("p", {
                 dangerouslySetInnerHTML: {
@@ -2097,7 +2097,7 @@
             k = (0, N.useGetCdnSource)(c?.mobile?.full_src ?? null),
             h = (0, N.useGetCdnSource)(c?.desktop?.full_src ?? k);
           return (0, d.jsxs)(ue.E.div, {
-            className: (0, N.classList)(Re.hero, n),
+            className: (0, N.classList)(De.hero, n),
             style: {
               "--background-image-desktop": `url(${b})`,
               "--background-image-mobile": `url(${p})`,
@@ -2106,19 +2106,19 @@
             },
             initial: "hidden",
             animate: "visible",
-            variants: a ? De : void 0,
+            variants: a ? Re : void 0,
             "data-type": "hero",
             theme: g,
             children: [(0, d.jsxs)("div", {
-              className: Re.images,
+              className: De.images,
               children: [b && p ? (0, d.jsx)("div", {
-                className: Re.background,
+                className: De.background,
                 style: t?.style ?? {}
               }) : "", k && h ? (0, d.jsx)("div", {
-                className: Re.layered,
+                className: De.layered,
                 style: l ? v : {}
               }) : "", (0, d.jsx)("div", {
-                className: Re.gradient
+                className: De.gradient
               })]
             }), (0, d.jsx)(He, {
               animated: a,
@@ -2939,11 +2939,11 @@
             }
           })) : null
         },
-        Ra = {
+        Da = {
           responsiveSection: "d06d23f23d3a5ecb6e50",
           maxWidth: "b4e4e0028c2d2643c29a"
         },
-        Da = e => {
+        Ra = e => {
           let {
             children: a,
             className: t,
@@ -2951,10 +2951,10 @@
             maxWidth: n
           } = e;
           return (0, d.jsx)("section", {
-            className: [Ra.responsiveSection, void 0 !== t ? t : ""].join(" "),
+            className: [Da.responsiveSection, void 0 !== t ? t : ""].join(" "),
             style: i,
             children: n ? (0, d.jsx)("div", {
-              className: Ra.maxWidth,
+              className: Da.maxWidth,
               children: a
             }) : a
           })
@@ -2991,6 +2991,11 @@
                 scrollY: window.pageYOffset
               })))
             }), []), (0, l.useEffect)((() => {
+              n({
+                scrollDepths: e,
+                scrollY: 0
+              })
+            }), [window.location.pathname]), (0, l.useEffect)((() => {
               if ("undefined" == typeof window) return;
               const e = t ?? window,
                 r = () => e.removeEventListener("scroll", o),
@@ -4161,7 +4166,7 @@
               kind: "Variable",
               name: {
                 kind: "Name",
-                value: "foreign_id"
+                value: "foreignId"
               }
             },
             type: {
@@ -4181,7 +4186,7 @@
               kind: "Variable",
               name: {
                 kind: "Name",
-                value: "foreign_type"
+                value: "foreignType"
               }
             },
             type: {
@@ -4215,7 +4220,7 @@
                   kind: "Variable",
                   name: {
                     kind: "Name",
-                    value: "foreign_id"
+                    value: "foreignId"
                   }
                 }
               }, {
@@ -4228,7 +4233,7 @@
                   kind: "Variable",
                   name: {
                     kind: "Name",
-                    value: "foreign_type"
+                    value: "foreignType"
                   }
                 }
               }],
@@ -4260,7 +4265,7 @@
               kind: "Variable",
               name: {
                 kind: "Name",
-                value: "foreign_id"
+                value: "foreignId"
               }
             },
             type: {
@@ -4280,7 +4285,7 @@
               kind: "Variable",
               name: {
                 kind: "Name",
-                value: "foreign_type"
+                value: "foreignType"
               }
             },
             type: {
@@ -4334,7 +4339,7 @@
                   kind: "Variable",
                   name: {
                     kind: "Name",
-                    value: "foreign_id"
+                    value: "foreignId"
                   }
                 }
               }, {
@@ -4347,7 +4352,7 @@
                   kind: "Variable",
                   name: {
                     kind: "Name",
-                    value: "foreign_type"
+                    value: "foreignType"
                   }
                 }
               }, {
@@ -4382,7 +4387,7 @@
         }],
         loc: {
           start: 0,
-          end: 394
+          end: 386
         }
       };
 
@@ -4401,7 +4406,7 @@
         }))
       }
       a.loc.source = {
-        body: "query UserGetVote($foreign_id: String!, $foreign_type: String!) {\n    userGetVote(foreign_id: $foreign_id, foreign_type: $foreign_type) {\n        vote\n    }\n}\n\nmutation UserCastVote(\n    $foreign_id: String!\n    $foreign_type: String!\n    $vote: Boolean!\n) {\n    userCastVote(\n        foreign_id: $foreign_id\n        foreign_type: $foreign_type\n        vote: $vote\n    ) {\n        vote\n    }\n}\n",
+        body: "query UserGetVote($foreignId: String!, $foreignType: String!) {\n    userGetVote(foreign_id: $foreignId, foreign_type: $foreignType) {\n        vote\n    }\n}\n\nmutation UserCastVote(\n    $foreignId: String!\n    $foreignType: String!\n    $vote: Boolean!\n) {\n    userCastVote(\n        foreign_id: $foreignId\n        foreign_type: $foreignType\n        vote: $vote\n    ) {\n        vote\n    }\n}\n",
         name: "GraphQL request",
         locationOffset: {
           line: 1,

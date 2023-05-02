@@ -7,7 +7,7 @@
         t = s(7814),
         a = s(1458),
         c = s(1968),
-        l = s(5572),
+        l = s(9784),
         d = s(3322);
       const n = document.createElement("div");
       document.querySelector("body").append(n), (0, o.s)(n).render((0, d.jsx)(c.ScrollProvider, {

@@ -119,7 +119,7 @@ var modules_sc_ugc_spotlight;
     })
   }, i.f = {}, i.e = e => Promise.all(Object.keys(i.f).reduce(((r, t) => (i.f[t](e, r), r)), [])), i.u = e => "js/" + {
     24: "1410abde782be3349b98",
-    346: "f28605b8a78b32bcb027",
+    346: "0bebb6fe92a176361827",
     470: "495c1339064debe6bf98",
     627: "5cfa5a29acd0229782e1",
     783: "ca7dc56eb334b2fa0c64",

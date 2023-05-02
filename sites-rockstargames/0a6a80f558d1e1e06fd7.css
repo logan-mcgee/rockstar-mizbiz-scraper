@@ -12,16 +12,16 @@
   padding: 1rem 2rem;
   position: absolute;
   text-transform: uppercase;
-  top: 0;
-  transform: translateY(calc(-100% - 2rem));
+  top: calc(100% + 2rem);
   transition: transform .3s ease-in-out, opacity .3s ease-in-out
 }
 
 .da5c9e4eca60c874705b:focus {
   border: 1px solid #fff;
   color: #000;
+  left: 0;
   opacity: 1;
-  transform: translateY(0);
+  top: 0;
   z-index: 100
 }
 

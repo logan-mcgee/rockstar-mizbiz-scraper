@@ -1263,6 +1263,27 @@
   margin: 0 0 0 var(--spacing-xxs)
 }
 
+[data-context=clr-card] .e3914a61fd9aa859a9d0 .e49bc9f67aeaa386f866 {
+  --font-family-h: Raleway;
+  --font-weight-regular: 700
+}
+
+[data-context=clr-card] .e3914a61fd9aa859a9d0 .e49bc9f67aeaa386f866 .b7127a98bd0551a9025e h1,
+[data-context=clr-card] .e3914a61fd9aa859a9d0 .e49bc9f67aeaa386f866 .b7127a98bd0551a9025e h2 {
+  font-size: var(--font-size-4) !important
+}
+
+[data-context=clr-card] .e3914a61fd9aa859a9d0 .e49bc9f67aeaa386f866 .e22ad31b0334db688e53 {
+  --font-weight-regular: 600;
+  font-family: Rubik !important;
+  font-size: var(--font-size-2);
+  padding: 0
+}
+
+[data-context=clr-card] .e3914a61fd9aa859a9d0 .e49bc9f67aeaa386f866 .a0b361cb8442e24823f8 {
+  margin: 0 0 0 var(--spacing-xxs)
+}
+
 .ac33f7c504f5254f8e80 {
   background: var(--cta-background, #000);
   color: var(--cta-color, #fff);
@@ -3106,8 +3127,11 @@ a.a1d8ee283069b56fe549 {
 }
 
 .b64388286d495640e2ab .swiper-button-disabled {
-  opacity: .15;
   pointer-events: none
+}
+
+.b64388286d495640e2ab .swiper-button-disabled:after {
+  opacity: .15
 }
 
 .b64388286d495640e2ab .swiper-button-lock {
@@ -3125,6 +3149,7 @@ a.a1d8ee283069b56fe549 {
 }
 
 .f342658f4bc799d5517c {
+  border: 1px solid var(--border-color);
   border-radius: var(--border-radius-sm, 4px);
   display: inline-flex;
   flex-direction: row;

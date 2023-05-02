@@ -522,7 +522,7 @@
             mobileCardWidth: T,
             charactersNeeded: M,
             navOpen: U
-          } = (0, c.useRockstarUser)(), [$, z] = (0, l.useState)(null), [O, X] = (0, l.useState)(null), [H, D] = (0, l.useState)(!1), [W, B] = (0, l.useState)(!1), [Z, A] = (0, l.useState)(0), [F, G] = (0, l.useState)(0), [V, K] = (0, l.useState)(0), q = (0, l.createRef)(), J = g(q, !1), Y = (0, l.createRef)(), [Q, ee] = (0, l.useState)(0), ae = e => {
+          } = (0, c.useRockstarUser)(), [$, z] = (0, l.useState)(null), [O, X] = (0, l.useState)(null), [H, D] = (0, l.useState)(!1), [W, B] = (0, l.useState)(!1), [Z, A] = (0, l.useState)(0), [F, G] = (0, l.useState)(0), [V, K] = (0, l.useState)(0), Y = (0, l.createRef)(), q = g(Y, !1), J = (0, l.createRef)(), [Q, ee] = (0, l.useState)(0), ae = e => {
             if (0 === e.length) return e;
             const a = e.map(((e, a) => ({
               ...e,
@@ -566,10 +566,10 @@
             target: "_self",
             analytics: ce
           }], ne = () => {
-            if (Y.current) {
+            if (J.current) {
               const {
                 current: e
-              } = Y, a = e?.scrollHeight;
+              } = J, a = e?.scrollHeight;
               ee(a)
             }
           };
@@ -590,10 +590,10 @@
           }), [E, te]), (0, l.useEffect)((() => {
             se(ae(I?.gtao ?? []))
           }), [I]), (0, l.useEffect)((() => {
-            B(b + T * Z < J)
+            B(b + T * Z < q)
           }), [Z, C, F, te]), (0, l.useEffect)((() => {
             ne(), setTimeout(ne, 1e3)
-          }), [Y, F, V]), (0, l.useEffect)((() => {
+          }), [J, F, V]), (0, l.useEffect)((() => {
             P(j?.currentCharId ?? 0)
           }), [j]), (0, l.useEffect)((() => {
             null !== E && w({
@@ -644,7 +644,7 @@
                   "data-single-item": 2 === te.length,
                   "data-swiper-disabled": W,
                   "aria-hidden": o,
-                  ref: q,
+                  ref: Y,
                   children: (0, d.jsx)(x, {
                     interactionDelay: 350,
                     mobileGutterWidth: 17,
@@ -689,7 +689,7 @@
                 className: k.scNavWrap,
                 "data-opened": o,
                 "data-logged-in": "true",
-                ref: Y,
+                ref: J,
                 style: {
                   maxHeight: `${Q}px`
                 },
@@ -723,7 +723,7 @@
           } = o, k = o?.data, C = void 0 !== k, N = (0, l.useRef)(), [j, w] = (0, l.useState)(0), y = (0, l.createRef)(), [E, L] = (0, l.useState)(!1), [P, I] = (0, l.useState)(0), [R, T] = (0, l.useState)(!1), M = (0, l.useCallback)((e => {
             m(e), N.current && !0 === e && (N.current.scrollTop = 0)
           }), [N]);
-          return (0, l.useEffect)((() => {
+          (0, l.useEffect)((() => {
             N.current && (!1 === i && !1 === f && (N.current.style.height = `${N.current.scrollHeight}px`), !0 === i && (N.current.style.height = null))
           }), [i, N, f]), (0, l.useEffect)((() => {
             p(!!k && k.user)
@@ -741,8 +741,10 @@
               } = y, a = window.getComputedStyle(e);
               w(parseInt(a.paddingRight, 10) + parseInt(a.paddingLeft, 10))
             }
-          }), [y]), (0, l.useEffect)((() => {
-            document.body.style.overflowY = !0 === v && !0 === E ? "hidden" : "auto"
+          }), [y]);
+          const [U, $] = (0, l.useState)(!1);
+          return (0, l.useEffect)((() => {
+            !0 === E && (!0 === v ? (document.body.style.overflowY = "hidden", $(!0)) : U && ($(!1), document.body.style.overflowY = "auto"))
           }), [v, E]), (0, l.useEffect)((() => {
             T(window.navigator.userAgent.includes("Mac"))
           }), []), null === g ? null : (0, d.jsxs)(d.Fragment, {

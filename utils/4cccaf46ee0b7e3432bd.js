@@ -1,4 +1,4 @@
-/*! For license information please see 47242ecf411edef3f4bd.js.LICENSE.txt */
+/*! For license information please see 4cccaf46ee0b7e3432bd.js.LICENSE.txt */
 "use strict";
 (self.webpackChunk_rockstargames_utils = self.webpackChunk_rockstargames_utils || []).push([
   [682], {
@@ -61,13 +61,14 @@
           return (0, s.useEffect)((() => {
             let e;
             const r = () => {
+              if (_) return;
               const r = Math.max(0, window.pageYOffset);
               c(r), f || d(r > 60 && r > e), e = r
             };
             return window.addEventListener("scroll", r), () => {
               window.removeEventListener("scroll", r)
             }
-          }), [f]), (0, s.useMemo)((() => (0, n.jsx)(a.Provider, {
+          }), [f, _]), (0, s.useMemo)((() => (0, n.jsx)(a.Provider, {
             value: {
               freezeUserShouldSeeMore: _,
               pageYOffset: t,

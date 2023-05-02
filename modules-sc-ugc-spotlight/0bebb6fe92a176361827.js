@@ -7,9 +7,9 @@
         c = s(8893),
         r = s(4859),
         m = s(5269),
-        i = s.n(m),
-        o = s(1458),
-        n = (s(7842), s(822)),
+        o = s.n(m),
+        n = s(1458),
+        i = (s(7842), s(822)),
         d = s(8976),
         l = s(2324),
         u = s(6711),
@@ -51,7 +51,8 @@
               className: "b26e7342eed0484a1e21",
               children: [(0, f.jsx)("img", {
                 className: "f3e40cb62e1821890e19",
-                src: `https://a.rsg.sc/n/${a?.nickname?.toLowerCase()}/l`
+                src: `https://a.rsg.sc/n/${a?.nickname?.toLowerCase()}/l`,
+                alt: "Avatar"
               }), (0, f.jsx)(k, {
                 username: a?.nickname,
                 crewName: s?.tag,
@@ -67,9 +68,9 @@
             contentId: t,
             title: c
           } = e;
-          const [m, i] = (0, n.useState)(a), {
-            login: o
-          } = (0, u.useScConfig)(), d = (0, r.useUserBearerToken)(), {
+          const [m, o] = (0, i.useState)(a), {
+            login: n
+          } = (0, u.useScConfig)(), d = (0, r.useRockstarToken)(), {
             _fetch: l
           } = (0, g.useScApi)("ugc/mission/bookmark", {
             host: "dev.scapi",
@@ -89,31 +90,40 @@
                     method: "POST"
                   }
                 });
-              s && i(e)
+              s && o(e)
             } catch (e) {
               console.error(e)
             }
           };
-          return (0, n.useEffect)((() => {
-            i(a)
+          return (0, i.useEffect)((() => {
+            o(a)
           }), [a]), null === d ? null : !1 === d ? (0, f.jsx)("a", {
-            href: `${o}?returnUrl=${document.location.pathname}${document.location.search}`,
+            href: `${n}?returnUrl=${document.location.pathname}${document.location.search}`,
             children: (0, f.jsxs)("div", {
               className: h,
               children: [(0, f.jsx)("img", {
+                alt: "bookmark",
                 src: s(5258)
               }), "Sign In To Bookmark Job"]
             })
           }) : m ? (0, f.jsxs)("div", {
             className: h,
             onClick: () => k(!1),
+            onKeyUp: () => k(!1),
+            role: "button",
+            tabIndex: 0,
             children: [(0, f.jsx)("img", {
+              alt: "bookmark",
               src: s(6533)
             }), "Remove Bookmark"]
           }) : (0, f.jsxs)("div", {
             className: h,
             onClick: () => k(!0),
+            onKeyUp: () => k(!0),
+            role: "button",
+            tabIndex: 0,
             children: [(0, f.jsx)("img", {
+              alt: "bookmark",
               src: s(5258)
             }), "Bookmark Job"]
           })
@@ -125,7 +135,7 @@
           const t = function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
             if (!e) return "job";
-            switch (e = e.replace(/P2P/gi, ""), e) {
+            switch (e.replace(/P2P/gi, "")) {
               case "Mission":
               case "Heist":
               case "ContactMission":
@@ -181,6 +191,7 @@
           return (0, f.jsx)("div", {
             className: "d9a3187c6e4bf2b26f9c",
             children: (0, f.jsx)("img", {
+              alt: t,
               src: s(2653)(`./${t}.svg`)
             })
           })
@@ -193,9 +204,9 @@
             className: c = "",
             style: r = {}
           } = e;
-          const [m, i] = (0, n.useState)(null), [o, d] = (0, n.useState)(null), [u, h] = (0, n.useState)(null), [k, b] = (0, n.useState)(null), [x, j] = (0, n.useState)(null), [w, N] = (0, n.useState)(null), [S, z] = (0, n.useState)({}), [y, R] = (0, n.useState)({}), {
-            data: I,
-            error: T
+          const [m, o] = (0, i.useState)(null), [n, d] = (0, i.useState)(null), [u, h] = (0, i.useState)(null), [k, b] = (0, i.useState)(null), [x, j] = (0, i.useState)(null), [w, N] = (0, i.useState)({}), [S, y] = (0, i.useState)({}), {
+            data: z,
+            error: R
           } = (0, g.useScApi)("ugc/mission/details", {
             env: t,
             query: {
@@ -203,24 +214,24 @@
               title: s
             }
           });
-          return (0, n.useEffect)((() => {
-            if (!I) return;
+          return (0, i.useEffect)((() => {
+            if (!z) return;
             const {
               content: e,
               users: a,
               crews: s
-            } = I;
+            } = z;
             if (!e) return;
             const {
               userId: t,
               type: c,
               imgSrc: r,
               platform: m,
-              name: o,
-              bookmarked: n
-            } = e, l = a[t], u = s[l?.crewId] ?? null;
-            i(t), d(c), h(r), b(m), j(o), N(n), z(l), R(u)
-          }), [I]), !I || T ? null : (0, f.jsxs)("div", {
+              name: n,
+              bookmarked: i
+            } = e, l = a[t], u = s[w?.crewId] ?? null;
+            o(c), d(r), h(m), b(n), j(i), N(l), y(u)
+          }), [z]), !z || R ? null : (0, f.jsxs)("div", {
             className: (0, l.classList)("f831abba98943ab530a4", c),
             style: r,
             children: [(0, f.jsxs)("div", {
@@ -228,25 +239,26 @@
               children: [(0, f.jsx)("div", {
                 className: "d05fbb21dca24af998e4",
                 children: (0, f.jsx)("img", {
+                  alt: "Job",
                   className: "bac9c68bfb3726e1f59d",
-                  src: u
+                  src: n
                 })
               }), (0, f.jsx)("div", {
                 className: "c40c15f961a8396c8d9f",
-                children: k
+                children: u
               }), (0, f.jsx)(p, {
-                missionType: o
+                missionType: m
               })]
             }), (0, f.jsxs)("div", {
               className: "f619adf04d065f025cfd",
               children: [(0, f.jsx)("h3", {
                 className: "beeaec1b8a4df1fd3c3c",
-                children: x
+                children: k
               }), (0, f.jsx)(v, {
-                userInfo: S,
-                crewInfo: y
+                userInfo: w,
+                crewInfo: S
               }), (0, f.jsx)(_, {
-                bookmarked: w,
+                bookmarked: x,
                 contentId: a,
                 title: s
               })]
@@ -259,14 +271,14 @@
           } = e;
           return (0, f.jsx)(c.VK, {
             basename: "/",
-            children: (0, f.jsx)(o.RockstarUserProvider, {
+            children: (0, f.jsx)(n.RockstarUserProvider, {
               children: a
             })
           })
         }), {
           env: "dev",
           typePolicies: {
-            ...i()
+            ...o()
           }
         });
       t.render((0, f.jsx)(x, {

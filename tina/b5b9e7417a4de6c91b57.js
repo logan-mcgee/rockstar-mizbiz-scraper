@@ -1,4 +1,4 @@
-/*! For license information please see 54dcfbf47bf4c0064e74.js.LICENSE.txt */
+/*! For license information please see b5b9e7417a4de6c91b57.js.LICENSE.txt */
 "use strict";
 (self.webpackChunk_rockstargames_tina = self.webpackChunk_rockstargames_tina || []).push([
   [69], {
@@ -81,7 +81,7 @@
         u = e => {
           const {
             meta: r = {}
-          } = (0, s.I)(), [t, a] = (0, n.useState)(r?.cdn ?? r?.prod ?? !1);
+          } = (0, s.I)() ?? {}, [t, a] = (0, n.useState)(r?.cdn ?? r?.prod ?? !1);
           return (0, n.useEffect)((() => {
             a(r?.cdn ?? r?.prod ?? !1)
           }), [r]), null === e ? null : e.startsWith("http") ? o(e) : o(`${(0,l.getCdnPrefix)(t)}${e}`)

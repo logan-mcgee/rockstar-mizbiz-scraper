@@ -327,7 +327,7 @@
       }
     },
     1633: (t, e, r) => {
-      r(7968);
+      r(3726);
       var i = r(5371).Object;
       t.exports = function(t, e, r) {
         return i.defineProperty(t, e, r)
@@ -1004,7 +1004,7 @@
         create: r(3017)
       })
     },
-    7968: (t, e, r) => {
+    3726: (t, e, r) => {
       var i = r(3476);
       i(i.S + i.F * !r(8427), "Object", {
         defineProperty: r(735).f

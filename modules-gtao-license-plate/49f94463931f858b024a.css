@@ -1652,6 +1652,10 @@ p.fbe02591dfe1e747a935 {
   .b6a7586175bf01b715d6 .ce05d9898b38a31c3fe9 p:lang(ru_ru) {
     height: auto
   }
+
+  .b6a7586175bf01b715d6 .ce05d9898b38a31c3fe9 p:lang(ja_jp) {
+    overflow: visible
+  }
 }
 
 .b6a7586175bf01b715d6 .ac1419f5f7d4f893d8e0 {
@@ -2424,6 +2428,31 @@ p.d6bae7e0151e183d3293:before {
   }
 }
 
+.b00be5267e4e3e70e97f {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  transition: opacity .3s;
+  width: 4rem;
+  z-index: 4
+}
+
+.b00be5267e4e3e70e97f.eade32da81574d4b6ca7 {
+  opacity: 1
+}
+
+.b00be5267e4e3e70e97f svg {
+  left: 0;
+  position: absolute;
+  top: 0
+}
+
 .e34b13392437e67c024e {
   grid-gap: var(--sidebar-padding);
   display: grid;
@@ -2536,12 +2565,28 @@ p.be91057254fd4da9b396 {
   display: flex;
   font-family: Pricedown;
   font-size: var(--font-size-6);
-  line-height: .75
+  line-height: .75;
+  position: relative
 }
 
 .b2b7f5dbc7c91066f920 {
+  align-items: flex-end;
   color: var(--white-100);
-  font-size: var(--font-size-9)
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-size-9);
+  justify-content: center;
+  text-align: right;
+  width: 4rem
+}
+
+.c8177c0c51aa4a3017cf {
+  opacity: 0;
+  transition: opacity .3s
+}
+
+.c8177c0c51aa4a3017cf.f09ca3dd068fb4f0cd0a {
+  opacity: 1
 }
 
 .e2bf820b93754f519b30 {
@@ -2610,6 +2655,47 @@ p.be91057254fd4da9b396 {
     pointer-events: none;
     top: auto
   }
+}
+
+.a76020cf52b63db690ab {
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  transition: opacity .3s;
+  width: 100%;
+  z-index: 4
+}
+
+@media (min-width:1024px) {
+  .a76020cf52b63db690ab {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+  }
+}
+
+.a76020cf52b63db690ab .c62ab050cb79d2037711 {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  justify-content: center;
+  width: 100%
+}
+
+@media (max-width:1023px) {
+  .a76020cf52b63db690ab .c62ab050cb79d2037711 {
+    position: absolute;
+    top: -50px;
+    top: calc(var(--app-height) - var(--sidebar-height-mobile))
+  }
+}
+
+.a76020cf52b63db690ab.eb0df59dc5cb7bf90dce {
+  opacity: 1
 }
 
 .cf4e3950dff0bf598a46 {
