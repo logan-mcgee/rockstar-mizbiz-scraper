@@ -2056,6 +2056,7 @@ p.e2d9a88190e1e3de5bb6 span {
   background: 50%/contain no-repeat url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/ef808bd72c2fbedf162b.svg);
   content: "";
   height: 1.5rem;
+  pointer-events: none;
   position: absolute;
   right: var(--padding-sm);
   top: 50%;
