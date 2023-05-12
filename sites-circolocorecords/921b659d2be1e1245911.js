@@ -1,17 +1,17 @@
-/*! For license information please see 7797c4a40aef1fca76a8.js.LICENSE.txt */
+/*! For license information please see 921b659d2be1e1245911.js.LICENSE.txt */
 "use strict";
 (self.webpackChunk_rockstargames_sites_circolocorecords = self.webpackChunk_rockstargames_sites_circolocorecords || []).push([
-  [537, 243], {
-    7537: (e, t, l) => {
+  [258, 479], {
+    4258: (e, t, l) => {
       l.r(t), l.d(t, {
         FormMetaField: () => c,
         MetaFields: () => r,
         componentsForTinaParser: () => x,
-        formTemplates: () => h,
+        formTemplates: () => g,
         tinaBlockTemplates: () => k
       });
       var a = l(559),
-        o = l(5243);
+        o = l(4479);
       const n = [{
         value: null,
         label: "-- Select Type of CLR Page This is --"
@@ -95,7 +95,7 @@
         medium: "e66576c42e8ccacfe69c",
         small: "c6ae2cbf9cbbb29c9004"
       };
-      var p = l(3322);
+      var p = l(9706);
       const f = e => {
           let {
             text: t,
@@ -133,24 +133,28 @@
                 desktopImg: r = "",
                 video: s = null,
                 backgroundColor: c,
-                buttons: d = {}
+                buttons: d = {},
+                style: u
               } = e;
-              const u = {
+              const x = {
                   oneCol: "eed263f2885de52aa695",
                   twoCol: "ed10144f7a2d4bc2539d"
                 },
-                x = d.button1 || {},
+                g = d.button1 || {},
                 h = d.button2 || {},
-                g = {
+                y = {
                   "--background": c ?? "var(--black-200)",
                   "--mobile-image": `url(${(0,b.useGetCdnSource)(n)})` ?? 0,
                   "--desktop-image": `url(${(0,b.useGetCdnSource)(r)})` ?? 0
                 };
               return (0, p.jsx)("section", {
                 className: "f93d8050c96c297d55c8",
-                style: g,
+                style: {
+                  ...y,
+                  ...u
+                },
                 children: (0, p.jsxs)(i.Grid, {
-                  className: u[t],
+                  className: x[t],
                   children: [(0, p.jsx)("div", {
                     className: "c532bb32973c988d7995",
                     children: r ? (0, p.jsxs)("div", {
@@ -183,11 +187,11 @@
                         className: "f5213190b84727d0dca4",
                         children: o
                       })]
-                    }), (x.text || h.text) && (0, p.jsxs)("div", {
+                    }), (g.text || h.text) && (0, p.jsxs)("div", {
                       className: "fef7924889170b0ecd1c",
-                      children: [x.text && (0, p.jsx)(f, {
+                      children: [g.text && (0, p.jsx)(f, {
                         className: "heroBtn",
-                        text: x.text,
+                        text: g.text,
                         size: "medium",
                         onClick: () => {},
                         btnColor: "white"
@@ -205,7 +209,7 @@
             },
             NewsIntro: e => {
               let {
-                created: t,
+                created_formatted: t,
                 title: l,
                 subtitle: a
               } = e;
@@ -224,7 +228,7 @@
           ImageWithBadge: i.ImageWithBadge,
           CalloutSection: i.CalloutSection
         },
-        h = e => {
+        g = e => {
           switch (e) {
             case o.types.RELEASE.value:
               return {
@@ -252,10 +256,10 @@
               return []
           }
         };
-      var g = l(6307),
-        C = l(3616),
-        v = l(3204),
-        y = l.n(v);
+      var h = l(6307),
+        y = l(3616),
+        C = l(3204),
+        v = l.n(C);
       const k = {
         Hero: () => ({
           label: "CLR Hero",
@@ -290,17 +294,17 @@
             uploadDir: a.uploadDir,
             parse: a.parse,
             previewSrc: a.previewSrc
-          }, (0, C.translatedField)({
+          }, (0, y.translatedField)({
             name: "title",
             label: "Title",
             description: "CLR Hero title text",
             component: "text"
-          }), (0, C.translatedField)({
+          }), (0, y.translatedField)({
             name: "subtitle",
             label: "Subtitle",
             description: "CLR Hero subtitle text",
             component: "text"
-          }), (0, C.translatedField)({
+          }), (0, y.translatedField)({
             name: "body",
             label: "Body Text",
             description: "CLR Hero body text",
@@ -309,7 +313,7 @@
             name: "video",
             label: "Video Source",
             component: "group",
-            fields: y()().fields
+            fields: v()().fields
           }, {
             name: "buttons",
             label: "Buttons (optional)",
@@ -341,24 +345,26 @@
                 component: "text"
               }]
             }]
-          }],
-          defaultItem: () => (0, C.defaultItemUnique)(),
-          itemProps: e => (0, C.itemPropsWithKey)(e, {
-            label: `${e?.[C.TINA_MEMOQ_PREFIX]?.title??"NEW"} [CLR Hero]`
+          }, (0, y.StyleField)({
+            filter: "image"
+          })],
+          defaultItem: () => (0, y.defaultItemUnique)(),
+          itemProps: e => (0, y.itemPropsWithKey)(e, {
+            label: `${e?.[y.TINA_MEMOQ_PREFIX]?.title??"NEW"} [CLR Hero]`
           })
         }),
-        ImageWithBadge: g.ImageWithBadge,
+        ImageWithBadge: h.ImageWithBadge,
         NewsIntro: () => ({
           label: "CLR News Intro",
-          defaultItem: () => (0, C.defaultItemUnique)(),
-          itemProps: e => (0, C.itemPropsWithKey)(e, {
-            label: `${e?.[C.TINA_MEMOQ_PREFIX]?.title??"NEW"} [CLR News Intro]`
+          defaultItem: () => (0, y.defaultItemUnique)(),
+          itemProps: e => (0, y.itemPropsWithKey)(e, {
+            label: `${e?.[y.TINA_MEMOQ_PREFIX]?.title??"NEW"} [CLR News Intro]`
           })
         }),
-        CalloutSection: g.CalloutSection
+        CalloutSection: h.CalloutSection
       }
     },
-    5243: (e, t, l) => {
+    4479: (e, t, l) => {
       l.r(t), l.d(t, {
         faux: () => o,
         types: () => a
@@ -375,7 +381,7 @@
         },
         o = 12
     },
-    8652: (e, t, l) => {
+    115: (e, t, l) => {
       var a = l(1853),
         o = Symbol.for("react.element"),
         n = (Symbol.for("react.fragment"), Object.prototype.hasOwnProperty),
@@ -405,8 +411,8 @@
       }
       t.jsx = c, t.jsxs = c
     },
-    3322: (e, t, l) => {
-      e.exports = l(8652)
+    9706: (e, t, l) => {
+      e.exports = l(115)
     }
   }
 ]);
