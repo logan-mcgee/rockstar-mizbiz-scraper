@@ -4,9 +4,9 @@ var modules_core_sc_user;
   var e, r, t, n, a = {
       512: (e, r, t) => {
         var n = {
-            "./index": () => Promise.all([t.e(929), t.e(675), t.e(77)]).then((() => () => t(77))),
-            "./providers": () => Promise.all([t.e(929), t.e(675)]).then((() => () => t(675))),
-            "./graph/policies": () => Promise.all([t.e(798), t.e(929), t.e(543)]).then((() => () => t(321)))
+            "./index": () => Promise.all([t.e(531), t.e(929), t.e(804), t.e(958)]).then((() => () => t(958))),
+            "./providers": () => Promise.all([t.e(531), t.e(929), t.e(804), t.e(330)]).then((() => () => t(330))),
+            "./graph/policies": () => Promise.all([t.e(562), t.e(929), t.e(570)]).then((() => () => t(487)))
           },
           a = (e, r) => (t.R = r, r = t.o(n, e) ? n[e]() : Promise.resolve().then((() => {
             throw new Error('Module "' + e + '" does not exist in container.')
@@ -61,7 +61,7 @@ var modules_core_sc_user;
     };
     return a[e].call(t.exports, t, t.exports, i), t.loaded = !0, t.exports
   }
-  i.m = a, i.c = o, i.amdO = {}, i.n = e => {
+  i.m = a, i.c = o, i.n = e => {
     var r = e && e.__esModule ? () => e.default : () => e;
     return i.d(r, {
       a: r
@@ -72,12 +72,14 @@ var modules_core_sc_user;
       get: r[t]
     })
   }, i.f = {}, i.e = e => Promise.all(Object.keys(i.f).reduce(((r, t) => (i.f[t](e, r), r)), [])), i.u = e => "js/" + {
-    77: "bc655e4d0937b7ffee7a",
-    543: "00fa3683c5f5fa008300",
-    627: "12b5871ee29c754a03fd",
-    675: "172589c55dc4ade04c81",
-    798: "99eb12f5dbfd1e855c23",
-    929: "c63eccb420a8b51f021d"
+    330: "3d920abfb5965cc3e535",
+    531: "2f29ef523d1d9a4095f9",
+    562: "67308f89fb295d4150ff",
+    570: "1984a427637091ebccd6",
+    769: "50200822ba36b01477d3",
+    804: "f3c5c1c6532622ff5505",
+    929: "b73f12c2b9f047694cc5",
+    958: "276d95bdb852ae88913d"
   } [e] + ".js", i.miniCssF = e => "css/c6e27426b1ced03efa6f.css", i.g = function() {
     if ("object" == typeof globalThis) return globalThis;
     try {
@@ -85,34 +87,29 @@ var modules_core_sc_user;
     } catch (e) {
       if ("object" == typeof window) return window
     }
-  }(), i.hmd = e => ((e = Object.create(e)).children || (e.children = []), Object.defineProperty(e, "exports", {
-    enumerable: !0,
-    set: () => {
-      throw new Error("ES Modules may not assign module.exports or exports.*, Use ESM export syntax, instead: " + e.id)
-    }
-  }), e), i.o = (e, r) => Object.prototype.hasOwnProperty.call(e, r), e = {}, r = "@rockstargames/modules-core-sc-user:", i.l = (t, n, a, o) => {
+  }(), i.o = (e, r) => Object.prototype.hasOwnProperty.call(e, r), e = {}, r = "@rockstargames/modules-core-sc-user:", i.l = (t, n, a, o) => {
     if (e[t]) e[t].push(n);
     else {
       var s, l;
       if (void 0 !== a)
-        for (var u = document.getElementsByTagName("script"), d = 0; d < u.length; d++) {
-          var c = u[d];
-          if (c.getAttribute("src") == t || c.getAttribute("data-webpack") == r + a) {
-            s = c;
+        for (var u = document.getElementsByTagName("script"), f = 0; f < u.length; f++) {
+          var d = u[f];
+          if (d.getAttribute("src") == t || d.getAttribute("data-webpack") == r + a) {
+            s = d;
             break
           }
         }
       s || (l = !0, (s = document.createElement("script")).charset = "utf-8", s.timeout = 120, i.nc && s.setAttribute("nonce", i.nc), s.setAttribute("data-webpack", r + a), s.src = t), e[t] = [n];
-      var f = (r, n) => {
+      var c = (r, n) => {
           s.onerror = s.onload = null, clearTimeout(p);
           var a = e[t];
           if (delete e[t], s.parentNode && s.parentNode.removeChild(s), a && a.forEach((e => e(n))), r) return r(n)
         },
-        p = setTimeout(f.bind(null, void 0, {
+        p = setTimeout(c.bind(null, void 0, {
           type: "timeout",
           target: s
         }), 12e4);
-      s.onerror = f.bind(null, s.onerror), s.onload = f.bind(null, s.onload), l && document.head.appendChild(s)
+      s.onerror = c.bind(null, s.onerror), s.onload = c.bind(null, s.onload), l && document.head.appendChild(s)
     }
   }, i.r = e => {
     "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
@@ -121,8 +118,9 @@ var modules_core_sc_user;
       value: !0
     })
   }, i.nmd = e => (e.paths = [], e.children || (e.children = []), e), t = {
-    675: [331, 859],
-    929: [929]
+    804: [859],
+    929: [929],
+    958: [331]
   }, n = {
     331: ["default", "./gtm", 810],
     859: ["default", "./index", 171],
@@ -143,9 +141,9 @@ var modules_core_sc_user;
             try {
               var u = e(t, n);
               if (!u || !u.then) return s(u, i, l);
-              var d = u.then((e => s(e, i)), o);
-              if (!l) return d;
-              r.push(a.p = d)
+              var f = u.then((e => s(e, i)), o);
+              if (!l) return f;
+              r.push(a.p = f)
             } catch (e) {
               o(e)
             }
@@ -173,7 +171,7 @@ var modules_core_sc_user;
           s = "@rockstargames/modules-core-sc-user",
           l = e => {
             var r = e => {
-              return r = "Initialization of sharing external failed: " + e, "undefined" != typeof console && console.warn && console.warn(r);
+              return r = "Initialization of sharing external failed: " + e, void("undefined" != typeof console && console.warn && console.warn(r));
               var r
             };
             try {
@@ -192,7 +190,7 @@ var modules_core_sc_user;
           var a = o[e] = o[e] || {},
             l = a[r];
           (!l || !l.loaded && (1 != !l.eager ? n : s > l.from)) && (a[r] = {
-            get: () => i.e(627).then((() => () => i(627))),
+            get: () => i.e(769).then((() => () => i(769))),
             from: s,
             eager: !1
           })
@@ -205,7 +203,8 @@ var modules_core_sc_user;
     var r = i.g.document;
     if (!e && r && (r.currentScript && (e = r.currentScript.src), !e)) {
       var t = r.getElementsByTagName("script");
-      t.length && (e = t[t.length - 1].src)
+      if (t.length)
+        for (var n = t.length - 1; n > -1 && !e;) e = t[n--].src
     }
     if (!e) throw new Error("Automatic publicPath is not supported in this browser");
     e = e.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/"), i.p = e
@@ -223,32 +222,32 @@ var modules_core_sc_user;
             o = a < 0;
           o && (a = -a - 1);
           for (var i = 0, s = 1, l = !0;; s++, i++) {
-            var u, d, c = s < t.length ? (typeof t[s])[0] : "";
-            if (i >= n.length || "o" == (d = (typeof(u = n[i]))[0])) return !l || ("u" == c ? s > a && !o : "" == c != o);
-            if ("u" == d) {
-              if (!l || "u" != c) return !1
+            var u, f, d = s < t.length ? (typeof t[s])[0] : "";
+            if (i >= n.length || "o" == (f = (typeof(u = n[i]))[0])) return !l || ("u" == d ? s > a && !o : "" == d != o);
+            if ("u" == f) {
+              if (!l || "u" != d) return !1
             } else if (l)
-              if (c == d)
+              if (d == f)
                 if (s <= a) {
                   if (u != t[s]) return !1
                 } else {
                   if (o ? u > t[s] : u < t[s]) return !1;
                   u != t[s] && (l = !1)
                 }
-            else if ("s" != c && "n" != c) {
+            else if ("s" != d && "n" != d) {
               if (o || s <= a) return !1;
               l = !1, s--
             } else {
-              if (s <= a || d < c != o) return !1;
+              if (s <= a || f < d != o) return !1;
               l = !1
-            } else "s" != c && "n" != c && (l = !1, s--)
+            } else "s" != d && "n" != d && (l = !1, s--)
           }
         }
-        var f = [],
-          p = f.pop.bind(f);
+        var c = [],
+          p = c.pop.bind(c);
         for (i = 1; i < t.length; i++) {
           var h = t[i];
-          f.push(1 == h ? p() | p() : 2 == h ? p() & p() : h ? r(h, n) : !p())
+          c.push(1 == h ? p() | p() : 2 == h ? p() & p() : h ? r(h, n) : !p())
         }
         return !!p()
       },
@@ -278,10 +277,10 @@ var modules_core_sc_user;
       })),
       a = {},
       o = {
-        822: () => n("default", "react", [1, 18, 2, 0], (() => i.e(627).then((() => () => i(627)))))
+        822: () => n("default", "react", [1, 18, 2, 0], (() => i.e(769).then((() => () => i(769)))))
       },
       s = {
-        675: [822]
+        804: [822]
       };
     i.f.consumes = (e, r) => {
       i.o(s, e) && s[e].forEach((e => {
@@ -311,7 +310,7 @@ var modules_core_sc_user;
       };
       i.f.miniCss = (r, t) => {
         e[r] ? t.push(e[r]) : 0 !== e[r] && {
-          77: 1
+          958: 1
         } [r] && t.push(e[r] = (e => new Promise(((r, t) => {
           var n = i.miniCssF(e),
             a = i.p + n;
@@ -353,7 +352,8 @@ var modules_core_sc_user;
       var n = i.o(e, r) ? e[r] : void 0;
       if (0 !== n)
         if (n) t.push(n[2]);
-        else if (929 != r) {
+        else if (/^(804|929)$/.test(r)) e[r] = 0;
+      else {
         var a = new Promise(((t, a) => n = e[r] = [t, a]));
         t.push(n[2] = a);
         var o = i.p + i.u(r),
@@ -365,7 +365,7 @@ var modules_core_sc_user;
             s.message = "Loading chunk " + r + " failed.\n(" + a + ": " + o + ")", s.name = "ChunkLoadError", s.type = a, s.request = o, n[1](s)
           }
         }), "chunk-" + r, r)
-      } else e[r] = 0
+      }
     };
     var r = (r, t) => {
         var n, a, o = t[0],
