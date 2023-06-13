@@ -4,13 +4,13 @@ var tina;
   var e, r, t, a, n = {
       697: (e, r, t) => {
         var a = {
-            "./index": () => Promise.all([t.e(515), t.e(311), t.e(822), t.e(468), t.e(929), t.e(269), t.e(774)]).then((() => () => t(562))),
-            "./helpers": () => t.e(446).then((() => () => t(446))),
-            "./helpers/payload": () => Promise.all([t.e(311), t.e(305)]).then((() => () => t(305))),
-            "./helpers/uploads": () => Promise.all([t.e(822), t.e(929), t.e(69)]).then((() => () => t(69))),
-            "./properties": () => Promise.all([t.e(515), t.e(822), t.e(468), t.e(929), t.e(269), t.e(142)]).then((() => () => t(269))),
-            "./tinaBlockTemplates": () => t.e(220).then((() => () => t(220))),
-            "./ui": () => Promise.all([t.e(515), t.e(822), t.e(468), t.e(408)]).then((() => () => t(408)))
+            "./index": () => Promise.all([t.e(945), t.e(948), t.e(822), t.e(468), t.e(929), t.e(166), t.e(509)]).then((() => () => t(347))),
+            "./helpers": () => t.e(128).then((() => () => t(128))),
+            "./helpers/payload": () => Promise.all([t.e(948), t.e(924)]).then((() => () => t(924))),
+            "./helpers/uploads": () => Promise.all([t.e(822), t.e(929), t.e(479)]).then((() => () => t(479))),
+            "./properties": () => Promise.all([t.e(945), t.e(822), t.e(468), t.e(929), t.e(166), t.e(895)]).then((() => () => t(166))),
+            "./tinaBlockTemplates": () => t.e(91).then((() => () => t(91))),
+            "./ui": () => Promise.all([t.e(945), t.e(822), t.e(468), t.e(35)]).then((() => () => t(35)))
           },
           n = (e, r) => (t.R = r, r = t.o(a, e) ? a[e]() : Promise.resolve().then((() => {
             throw new Error('Module "' + e + '" does not exist in container.')
@@ -88,25 +88,25 @@ var tina;
       get: r[t]
     })
   }, o.f = {}, o.e = e => Promise.all(Object.keys(o.f).reduce(((r, t) => (o.f[t](e, r), r)), [])), o.u = e => "js/" + {
-    69: "b5b9e7417a4de6c91b57",
-    142: "cac4c36117ef59b29b62",
-    220: "d7dd34fcdcb9a39b4c8c",
-    269: "d6f6729f8e84882b769a",
-    305: "5b2785c98cb17d7ea237",
-    311: "57c9b733caf22e59badf",
-    408: "8beee03b02bd81a9849c",
-    446: "7d564d05da3319f8835e",
-    468: "1f6bf1165ef4ecd4885b",
-    469: "4fca377ba8ba0aa9cc76",
-    515: "8c3effc9bea2a6998691",
-    627: "f05ca634f702db89fd66",
-    774: "90516ff37b12b599a393",
-    822: "23748c683bf17f9d5183",
-    929: "f9c65267a8545e659f24"
+    35: "1d9aa7fadcfd0a24f12e",
+    91: "56b3a4b61398073e997e",
+    128: "7387d0a06414109da0aa",
+    166: "152227401f506df65b1b",
+    468: "302dd4b61a88efe5f450",
+    479: "b46f3174d64274dbe7e8",
+    509: "94fd0f88141a9fd08e19",
+    591: "50c9f73182c82085af33",
+    769: "1ebb62390c8d42b42d6f",
+    822: "5c74e6af4030bee40cc1",
+    895: "49614ec1aa7832b18506",
+    924: "4044f947fa2d86342f5d",
+    929: "59f6f69c71010b5da0b9",
+    945: "e71a353692e71cef358a",
+    948: "d2ff1b84adfd5fcc4650"
   } [e] + ".js", o.miniCssF = e => "css/" + {
-    142: "f60d4f6b568cfefe64f0",
-    408: "01afdd3ae1751c42b476",
-    774: "f60d4f6b568cfefe64f0"
+    35: "cabb8aad370eedadb687",
+    509: "108a96a4ada4cbc2c357",
+    895: "108a96a4ada4cbc2c357"
   } [e] + ".css", o.g = function() {
     if ("object" == typeof globalThis) return globalThis;
     try {
@@ -119,8 +119,8 @@ var tina;
     else {
       var s, l;
       if (void 0 !== n)
-        for (var f = document.getElementsByTagName("script"), d = 0; d < f.length; d++) {
-          var u = f[d];
+        for (var d = document.getElementsByTagName("script"), f = 0; f < d.length; f++) {
+          var u = d[f];
           if (u.getAttribute("src") == t || u.getAttribute("data-webpack") == r + n) {
             s = u;
             break
@@ -145,8 +145,8 @@ var tina;
       value: !0
     })
   }, o.nmd = e => (e.paths = [], e.children || (e.children = []), e), t = {
-    220: [616],
-    269: [859],
+    91: [616],
+    166: [859],
     929: [929]
   }, a = {
     616: ["default", "./properties", 489],
@@ -166,17 +166,17 @@ var tina;
           },
           s = (e, t, a, o, s, l) => {
             try {
-              var f = e(t, a);
-              if (!f || !f.then) return s(f, o, l);
-              var d = f.then((e => s(e, o)), i);
-              if (!l) return d;
-              r.push(n.p = d)
+              var d = e(t, a);
+              if (!d || !d.then) return s(d, o, l);
+              var f = d.then((e => s(e, o)), i);
+              if (!l) return f;
+              r.push(n.p = f)
             } catch (e) {
               i(e)
             }
           },
-          l = (e, r, a) => s(r.get, n[1], t, 0, f, a),
-          f = r => {
+          l = (e, r, a) => s(r.get, n[1], t, 0, d, a),
+          d = r => {
             n.p = 1, o.m[e] = e => {
               e.exports = r()
             }
@@ -205,24 +205,24 @@ var tina;
               eager: !!a
             })
           },
-          f = e => {
+          d = e => {
             var r = e => {
-              return r = "Initialization of sharing external failed: " + e, "undefined" != typeof console && console.warn && console.warn(r);
+              return r = "Initialization of sharing external failed: " + e, void("undefined" != typeof console && console.warn && console.warn(r));
               var r
             };
             try {
               var n = o(e);
               if (!n) return;
               var i = e => e && e.init && e.init(o.S[t], a);
-              if (n.then) return d.push(n.then(i, r));
+              if (n.then) return f.push(n.then(i, r));
               var s = i(n);
-              if (s && s.then) return d.push(s.catch(r))
+              if (s && s.then) return f.push(s.catch(r))
             } catch (e) {
               r(e)
             }
           },
-          d = [];
-        return "default" === t && (l("react-dom", "18.2.0", (() => Promise.all([o.e(469), o.e(822)]).then((() => () => o(469))))), l("react", "18.2.0", (() => o.e(627).then((() => () => o(627))))), f(810), f(171), f(489)), d.length ? e[t] = Promise.all(d).then((() => e[t] = 1)) : e[t] = 1
+          f = [];
+        return "default" === t && (l("react-dom", "18.2.0", (() => Promise.all([o.e(591), o.e(822)]).then((() => () => o(591))))), l("react", "18.2.0", (() => o.e(769).then((() => () => o(769))))), d(810), d(171), d(489)), f.length ? e[t] = Promise.all(f).then((() => e[t] = 1)) : e[t] = 1
       }
     }
   })(), (() => {
@@ -231,7 +231,8 @@ var tina;
     var r = o.g.document;
     if (!e && r && (r.currentScript && (e = r.currentScript.src), !e)) {
       var t = r.getElementsByTagName("script");
-      t.length && (e = t[t.length - 1].src)
+      if (t.length)
+        for (var a = t.length - 1; a > -1 && !e;) e = t[a--].src
     }
     if (!e) throw new Error("Automatic publicPath is not supported in this browser");
     e = e.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/"), o.p = e
@@ -249,23 +250,23 @@ var tina;
             i = n < 0;
           i && (n = -n - 1);
           for (var o = 0, s = 1, l = !0;; s++, o++) {
-            var f, d, u = s < t.length ? (typeof t[s])[0] : "";
-            if (o >= a.length || "o" == (d = (typeof(f = a[o]))[0])) return !l || ("u" == u ? s > n && !i : "" == u != i);
-            if ("u" == d) {
+            var d, f, u = s < t.length ? (typeof t[s])[0] : "";
+            if (o >= a.length || "o" == (f = (typeof(d = a[o]))[0])) return !l || ("u" == u ? s > n && !i : "" == u != i);
+            if ("u" == f) {
               if (!l || "u" != u) return !1
             } else if (l)
-              if (u == d)
+              if (u == f)
                 if (s <= n) {
-                  if (f != t[s]) return !1
+                  if (d != t[s]) return !1
                 } else {
-                  if (i ? f > t[s] : f < t[s]) return !1;
-                  f != t[s] && (l = !1)
+                  if (i ? d > t[s] : d < t[s]) return !1;
+                  d != t[s] && (l = !1)
                 }
             else if ("s" != u && "n" != u) {
               if (i || s <= n) return !1;
               l = !1, s--
             } else {
-              if (s <= n || d < u != i) return !1;
+              if (s <= n || f < u != i) return !1;
               l = !1
             } else "s" != u && "n" != u && (l = !1, s--)
           }
@@ -304,8 +305,8 @@ var tina;
       })),
       n = {},
       i = {
-        822: () => a("default", "react", [1, 18, 2, 0], (() => o.e(627).then((() => () => o(627))))),
-        468: () => a("default", "react-dom", [1, 18, 2, 0], (() => o.e(469).then((() => () => o(469)))))
+        822: () => a("default", "react", [1, 18, 2, 0], (() => o.e(769).then((() => () => o(769))))),
+        468: () => a("default", "react-dom", [1, 18, 2, 0], (() => o.e(591).then((() => () => o(591)))))
       },
       s = {
         468: [468],
@@ -339,9 +340,9 @@ var tina;
       };
       o.f.miniCss = (r, t) => {
         e[r] ? t.push(e[r]) : 0 !== e[r] && {
-          142: 1,
-          408: 1,
-          774: 1
+          35: 1,
+          509: 1,
+          895: 1
         } [r] && t.push(e[r] = (e => new Promise(((r, t) => {
           var a = o.miniCssF(e),
             n = o.p + a;
@@ -364,7 +365,7 @@ var tina;
                 var o = t && ("load" === t.type ? "missing" : t.type),
                   s = t && t.target && t.target.href || r,
                   l = new Error("Loading CSS chunk " + e + " failed.\n(" + s + ")");
-                l.code = "CSS_CHUNK_LOAD_FAILED", l.type = o, l.request = s, i.parentNode.removeChild(i), n(l)
+                l.code = "CSS_CHUNK_LOAD_FAILED", l.type = o, l.request = s, i.parentNode && i.parentNode.removeChild(i), n(l)
               }
             }, i.href = r, document.head.appendChild(i)
           })(e, n, 0, r, t)
@@ -383,7 +384,7 @@ var tina;
       var a = o.o(e, r) ? e[r] : void 0;
       if (0 !== a)
         if (a) t.push(a[2]);
-        else if (/^(142|468|822|929)$/.test(r)) e[r] = 0;
+        else if (/^(468|822|895|929)$/.test(r)) e[r] = 0;
       else {
         var n = new Promise(((t, n) => a = e[r] = [t, n]));
         t.push(a[2] = n);
@@ -402,12 +403,12 @@ var tina;
         var a, n, i = t[0],
           s = t[1],
           l = t[2],
-          f = 0;
+          d = 0;
         if (i.some((r => 0 !== e[r]))) {
           for (a in s) o.o(s, a) && (o.m[a] = s[a]);
           l && l(o)
         }
-        for (r && r(t); f < i.length; f++) n = i[f], o.o(e, n) && e[n] && e[n][0](), e[n] = 0
+        for (r && r(t); d < i.length; d++) n = i[d], o.o(e, n) && e[n] && e[n][0](), e[n] = 0
       },
       t = self.webpackChunk_rockstargames_tina = self.webpackChunk_rockstargames_tina || [];
     t.forEach(r.bind(null, 0)), t.push = r.bind(null, t.push.bind(t))

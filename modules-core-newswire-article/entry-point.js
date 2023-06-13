@@ -4,12 +4,12 @@ var modules_core_newswire_article;
   var e, r, t, a, o = {
       1103: (e, r, t) => {
         var a = {
-            "./NewswireArticle": () => Promise.all([t.e(30), t.e(254), t.e(976), t.e(985), t.e(430), t.e(510), t.e(757), t.e(631)]).then((() => () => t(6631))),
-            "./NewswireTitle": () => Promise.all([t.e(976), t.e(985), t.e(281)]).then((() => () => t(281))),
-            "./index": () => Promise.all([t.e(30), t.e(976), t.e(985), t.e(430), t.e(510), t.e(24)]).then((() => () => t(24))),
-            "./components": () => Promise.all([t.e(30), t.e(976), t.e(985), t.e(430)]).then((() => () => t(9430))),
-            "./types": () => Promise.all([t.e(30), t.e(254), t.e(976), t.e(985), t.e(430), t.e(510), t.e(757), t.e(403)]).then((() => () => t(7403))),
-            "./tinaBlockTemplates": () => Promise.all([t.e(976), t.e(289)]).then((() => () => t(5289)))
+            "./NewswireArticle": () => Promise.all([t.e(742), t.e(719), t.e(976), t.e(985), t.e(413), t.e(510), t.e(334), t.e(746)]).then((() => () => t(1746))),
+            "./NewswireTitle": () => Promise.all([t.e(976), t.e(985), t.e(951)]).then((() => () => t(1951))),
+            "./index": () => Promise.all([t.e(742), t.e(976), t.e(985), t.e(413), t.e(510), t.e(578)]).then((() => () => t(9578))),
+            "./components": () => Promise.all([t.e(742), t.e(976), t.e(985), t.e(413)]).then((() => () => t(1413))),
+            "./types": () => Promise.all([t.e(742), t.e(719), t.e(976), t.e(985), t.e(413), t.e(510), t.e(334), t.e(573)]).then((() => () => t(6573))),
+            "./tinaBlockTemplates": () => Promise.all([t.e(976), t.e(699)]).then((() => () => t(6699)))
           },
           o = (e, r) => (t.R = r, r = t.o(a, e) ? a[e]() : Promise.resolve().then((() => {
             throw new Error('Module "' + e + '" does not exist in container.')
@@ -171,23 +171,23 @@ var modules_core_newswire_article;
       get: r[t]
     })
   }, i.f = {}, i.e = e => Promise.all(Object.keys(i.f).reduce(((r, t) => (i.f[t](e, r), r)), [])), i.u = e => "js/" + {
-    24: "9194425a5a7a3b5a4ae8",
-    30: "6f580a2203d201680ff6",
-    254: "d58d34cbf4f5a7fcae0f",
-    281: "9eef49179202138e3b45",
-    289: "628e23af8406f81c1a5f",
-    403: "6ddbff2fa957795cde1c",
-    430: "9224fb6dc62c0b92b6a7",
-    510: "e5f7f84ff8a49be07dfa",
-    627: "72321f06a3290464e99d",
-    631: "1c4db645d347876493ff",
-    757: "25605084718c4ad57769",
-    976: "79c7ed297ec0a43fab12",
-    985: "4f0db821867ad5dc6818"
+    334: "d9f664cd6296de29bbae",
+    413: "cf26b99652944a39d3da",
+    510: "113b89b9f4c8ad0af64c",
+    573: "c22639fd5f988498d834",
+    578: "e16dcad311c0e5f17d21",
+    699: "50194e89226be1f5c75b",
+    719: "abe981d8fdad8d41937a",
+    742: "3a9c982abbc7d8ae8b91",
+    746: "71780d8bf083edf5cf8c",
+    769: "9e7d7dca789d0bc505f9",
+    951: "44899bbaca04ab3216a1",
+    976: "8588115fb29797f8a174",
+    985: "12ab1ccb9d93cf748885"
   } [e] + ".js", i.miniCssF = e => "css/" + {
-    281: "8895e27b2ffc1fc6c4fc",
-    430: "d4188a48bb4884ff35bf",
-    757: "8e3771b038731ecd1675"
+    334: "bca55d8bc3aa51996615",
+    413: "1d299b6d0c13c22bbe4f",
+    951: "441e04071467a3408264"
   } [e] + ".css", i.g = function() {
     if ("object" == typeof globalThis) return globalThis;
     try {
@@ -226,10 +226,10 @@ var modules_core_newswire_article;
       value: !0
     })
   }, i.nmd = e => (e.paths = [], e.children || (e.children = []), e), t = {
-    289: [559, 2324, 3204, 3616, 6307, 6904],
-    430: [420, 3657, 4224, 4859, 6947, 8356],
+    413: [420, 3657, 4224, 4859, 6947, 8356],
     510: [3750, 5551],
-    631: [1968, 6077],
+    699: [559, 2324, 3204, 3616, 6307, 6904],
+    746: [1968, 6077],
     976: [8976],
     985: [9542, 9929]
   }, a = {
@@ -298,7 +298,7 @@ var modules_core_newswire_article;
           s = "@rockstargames/modules-core-newswire-article",
           d = e => {
             var r = e => {
-              return r = "Initialization of sharing external failed: " + e, "undefined" != typeof console && console.warn && console.warn(r);
+              return r = "Initialization of sharing external failed: " + e, void("undefined" != typeof console && console.warn && console.warn(r));
               var r
             };
             try {
@@ -317,7 +317,7 @@ var modules_core_newswire_article;
           var o = n[e] = n[e] || {},
             d = o[r];
           (!d || !d.loaded && (1 != !d.eager ? a : s > d.from)) && (o[r] = {
-            get: () => i.e(627).then((() => () => i(6627))),
+            get: () => i.e(769).then((() => () => i(1769))),
             from: s,
             eager: !1
           })
@@ -330,7 +330,8 @@ var modules_core_newswire_article;
     var r = i.g.document;
     if (!e && r && (r.currentScript && (e = r.currentScript.src), !e)) {
       var t = r.getElementsByTagName("script");
-      t.length && (e = t[t.length - 1].src)
+      if (t.length)
+        for (var a = t.length - 1; a > -1 && !e;) e = t[a--].src
     }
     if (!e) throw new Error("Automatic publicPath is not supported in this browser");
     e = e.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/"), i.p = e
@@ -403,7 +404,7 @@ var modules_core_newswire_article;
       })),
       o = {},
       n = {
-        822: () => a("default", "react", [1, 18, 2, 0], (() => i.e(627).then((() => () => i(6627)))))
+        822: () => a("default", "react", [1, 18, 2, 0], (() => i.e(769).then((() => () => i(1769)))))
       },
       s = {
         985: [822]
@@ -436,9 +437,9 @@ var modules_core_newswire_article;
       };
       i.f.miniCss = (r, t) => {
         e[r] ? t.push(e[r]) : 0 !== e[r] && {
-          281: 1,
-          430: 1,
-          757: 1
+          334: 1,
+          413: 1,
+          951: 1
         } [r] && t.push(e[r] = (e => new Promise(((r, t) => {
           var a = i.miniCssF(e),
             o = i.p + a;
@@ -461,7 +462,7 @@ var modules_core_newswire_article;
                 var i = t && ("load" === t.type ? "missing" : t.type),
                   s = t && t.target && t.target.href || r,
                   d = new Error("Loading CSS chunk " + e + " failed.\n(" + s + ")");
-                d.code = "CSS_CHUNK_LOAD_FAILED", d.type = i, d.request = s, n.parentNode.removeChild(n), o(d)
+                d.code = "CSS_CHUNK_LOAD_FAILED", d.type = i, d.request = s, n.parentNode && n.parentNode.removeChild(n), o(d)
               }
             }, n.href = r, document.head.appendChild(n)
           })(e, o, 0, r, t)
@@ -480,7 +481,7 @@ var modules_core_newswire_article;
       var a = i.o(e, r) ? e[r] : void 0;
       if (0 !== a)
         if (a) t.push(a[2]);
-        else if (/^(510|757|976|985)$/.test(r)) e[r] = 0;
+        else if (/^(334|510|976|985)$/.test(r)) e[r] = 0;
       else {
         var o = new Promise(((t, o) => a = e[r] = [t, o]));
         t.push(a[2] = o);

@@ -1,0 +1,249 @@
+.e1f70512631dd5a6fe0c0d0b3f72589dfd69 {
+  --font-size-1: 0.5rem;
+  --font-size-2: 0.75rem;
+  --font-size-3: 1rem;
+  --font-size-4: 1.25rem;
+  --font-size-5: 1.5rem;
+  --font-size-6: 2rem;
+  --font-size-7: 2.5rem;
+  --font-size-8: 3rem;
+  --font-size-9: 4rem;
+  --font-size-10: 5rem;
+  --font-family-body: "Chalet";
+  --font-family-h: "ChaletComprime";
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --letter-spacing-body: 0;
+  --letter-spacing-h: 0;
+  --line-height-sm: 1;
+  --line-height-md: 1.1;
+  --line-height-lg: 1.6;
+  --black-200: #000;
+  --black-65: hsla(0, 0%, 7%, .65);
+  --black-40: hsla(0, 0%, 7%, .4);
+  --black-15: hsla(0, 0%, 7%, .15);
+  --text-dark: #2d2d2d;
+  --border-color: #2d2d2d;
+  --white-100: #fff;
+  --white-65: hsla(0, 0%, 100%, .65);
+  --white-40: hsla(0, 0%, 100%, .4);
+  --white-15: hsla(0, 0%, 100%, .15);
+  --text-light: #e8e8e8;
+  --red: #c00;
+  --circoloco-red: #eb1818;
+  --rockstar-gold: #fcaf17;
+  --playstation-blue: #00439c;
+  --microsoft-green: #387a26;
+  --color-h: var(--white-100);
+  --color-body: var(--text-light);
+  --green-light: #c1f7bd;
+  --green-dark: #81da85;
+  --max-width-sm: 640px;
+  --max-width-md: 1088px;
+  --max-width-lg: 1920px;
+  --max-width-xl: 2560px;
+  --spacing-xxs: 0.25rem;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 8rem;
+  --grid-gap-xxs: var(--spacing-xxs);
+  --grid-gap-xs: var(--spacing-xs);
+  --grid-gap-sm: var(--spacing-sm);
+  --grid-gap-md: var(--spacing-md);
+  --grid-gap-lg: var(--spacing-lg);
+  --grid-gap-xl: var(--spacing-xl);
+  --padding-xxs: var(--spacing-xxs);
+  --padding-xs: var(--spacing-xs);
+  --padding-sm: var(--spacing-sm);
+  --padding-md: var(--spacing-md);
+  --padding-lg: var(--spacing-lg);
+  --padding-xl: var(--spacing-xl);
+  --margin-xxs: var(--spacing-xxs);
+  --margin-xs: var(--spacing-xs);
+  --margin-sm: var(--spacing-sm);
+  --margin-md: var(--spacing-md);
+  --margin-lg: var(--spacing-lg);
+  --margin-xl: var(--spacing-xl);
+  --border-radius-xs: 2px;
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 16px;
+  --gradient-overlay-bottom: linear-gradient(180.08deg, transparent 25%, rgba(0, 0, 0, .5) 65%, rgba(0, 0, 0, .6))
+}
+
+@media (min-width:0px) {
+  .e1f70512631dd5a6fe0c0d0b3f72589dfd69 {
+    --root-font-size: 16
+  }
+}
+
+@media (min-width:1024px) {
+  .e1f70512631dd5a6fe0c0d0b3f72589dfd69 {
+    --root-font-size: 18
+  }
+}
+
+@media (min-width:1920px) {
+  .e1f70512631dd5a6fe0c0d0b3f72589dfd69 {
+    --root-font-size: 20
+  }
+}
+
+@media (min-width:2560px) {
+  .e1f70512631dd5a6fe0c0d0b3f72589dfd69 {
+    --root-font-size: 22;
+    --max-width-md: 1440px
+  }
+}
+
+@media (max-width:767px) {
+  .e1f70512631dd5a6fe0c0d0b3f72589dfd69 {
+    --spacing-lg: 2rem;
+    --spacing-xl: 4rem
+  }
+}
+
+.e1f70512631dd5a6fcc01a21ba6273e262bd {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+  z-index: 10
+}
+
+.e1f70512631dd5a6df0821d6f0e927283e86 {
+  --modal-content-padding: calc(var(--modal-padding) + var(--padding-xl)) 0;
+  display: flex;
+  flex: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: var(--modal-content-padding, 0)
+}
+
+@media (min-width:768px) {
+  .e1f70512631dd5a6df0821d6f0e927283e86 {
+    --modal-content-padding: calc(var(--modal-padding) + var(--padding-lg)) 0
+  }
+}
+
+@media (min-width:1024px) {
+  .e1f70512631dd5a6df0821d6f0e927283e86 {
+    --modal-content-padding: calc(var(--modal-padding) + var(--padding-md)) 0
+  }
+}
+
+@media (min-width:1920px) {
+  .e1f70512631dd5a6df0821d6f0e927283e86 {
+    --modal-content-padding: calc(var(--modal-padding) + var(--padding-md)) var(--padding-lg) var(--padding-lg);
+    max-width: var(--modal-content-max-width, none)
+  }
+}
+
+.e1f70512631dd5a6df0821d6f0e927283e86>* {
+  flex: 1
+}
+
+.e1f70512631dd5a6b6365baf583b9e283753 {
+  background: var(--black-65, rgba(0, 0, 0, .65));
+  border: 1px solid var(--white-100, #fff);
+  border-radius: 50%;
+  cursor: pointer;
+  height: 2rem;
+  padding: 0;
+  position: relative;
+  position: absolute;
+  right: var(--padding-sm, 1rem);
+  top: var(--padding-sm, 1rem);
+  transition: background .3s ease-in-out;
+  width: 2rem;
+  z-index: 1
+}
+
+.e1f70512631dd5a6b6365baf583b9e283753:after {
+  background: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/e20279ac4433a2ac0422.svg) no-repeat 50%/1rem;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: .3s ease-in-out;
+  width: 100%
+}
+
+@media (pointer:coarse) {
+
+  .e1f70512631dd5a6b6365baf583b9e283753:active,
+  .e1f70512631dd5a6b6365baf583b9e283753:focus {
+    background: var(--white-100, #fff)
+  }
+
+  .e1f70512631dd5a6b6365baf583b9e283753:active:after,
+  .e1f70512631dd5a6b6365baf583b9e283753:focus:after {
+    filter: invert(1)
+  }
+}
+
+@media not ((pointer:coarse)) {
+
+  .e1f70512631dd5a6b6365baf583b9e283753:focus,
+  .e1f70512631dd5a6b6365baf583b9e283753:hover {
+    background: var(--white-100, #fff)
+  }
+
+  .e1f70512631dd5a6b6365baf583b9e283753:focus:after,
+  .e1f70512631dd5a6b6365baf583b9e283753:hover:after {
+    filter: invert(1)
+  }
+}
+
+@media (min-width:1024px) {
+  .e1f70512631dd5a6b6365baf583b9e283753 {
+    right: var(--padding-md, 1rem);
+    top: var(--padding-md, 1rem)
+  }
+}
+
+.e1f70512631dd5a6fe0c0d0b3f72589dfd69 {
+  --modal-height: calc(100vh - (var(--modal-padding) * 2));
+  --modal-padding: var(--padding-sm, 1rem);
+  --black-100: #121212;
+  border: 1px solid var(--border-color, #2d2d2d);
+  border-radius: var(--border-radius-lg, 16px);
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  top: 0;
+  z-index: 1000
+}
+
+@supports (height:100dvh) {
+  .e1f70512631dd5a6fe0c0d0b3f72589dfd69 {
+    --modal-height: calc(100dvh - (var(--modal-padding) * 2))
+  }
+}
+
+@media (orientation:landscape) and (min-width:1024px) {
+  .e1f70512631dd5a6fe0c0d0b3f72589dfd69 {
+    max-height: 50vw;
+    max-width: 200vh
+  }
+}
+
+@media (orientation:landscape) and (min-width:1920px) {
+  .e1f70512631dd5a6fe0c0d0b3f72589dfd69 {
+    max-height: 1080px;
+    max-width: 1920px
+  }
+}
+
+.e1f70512631dd5a6a205bb0837fde83d182f {
+  background: rgba(0, 0, 0, .9);
+  height: 100vh;
+  opacity: 0;
+  position: fixed;
+  width: 100vw;
+  z-index: 1000
+}
