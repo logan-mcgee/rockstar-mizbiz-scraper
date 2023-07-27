@@ -37,10 +37,10 @@
         } = e;
         const h = (0, s.useRef)(null),
           x = n().map(t, "id"),
-          f = g({
+          v = g({
             ids: x
           }),
-          [v, y] = (0, s.useState)(r);
+          [f, y] = (0, s.useState)(r);
         (0, s.useEffect)((() => {
           if (!h.current) return;
           const e = () => {
@@ -53,7 +53,7 @@
         }));
         const j = (0, s.useMemo)((() => {
           let e = 0;
-          return f ? f.reduce(((t, s) => {
+          return v ? v.reduce(((t, s) => {
             if (s) {
               const {
                 id: d,
@@ -77,7 +77,7 @@
             }
             return t
           }), []) : null
-        }), [f, a]);
+        }), [v, a]);
         return (0, m.jsx)("div", {
           className: "d82452706eccb7b8cd5e4502d7fca0835dd4",
           "data-theme": o,
@@ -88,7 +88,7 @@
             cardSizeBreakpoints: l,
             slideChildren: j,
             title: i,
-            customSlidesPerView: v,
+            customSlidesPerView: f,
             customAspectRatio: u
           })
         })
@@ -144,8 +144,8 @@
           prod: i,
           size: h,
           title: x,
-          initial: f = "initial",
-          animate: v = "animate",
+          initial: v = "initial",
+          animate: f = "animate",
           variants: y,
           type: j = null,
           context: w = null,
@@ -182,8 +182,8 @@
             trackRef: "long" === j ? O : Z,
             children: (0, u.jsxs)(g, {
               ref: O,
-              initial: f,
-              animate: v,
+              initial: v,
+              animate: f,
               variants: y.expanded,
               transition: b.cardOpen,
               className: (0, c.classList)("d82452706eccb7b8b26588866b3f8cf68385", P),
@@ -333,10 +333,10 @@
             cardIds: b = null,
             theme: x = "none"
           } = e;
-          const [f, v] = (0, o.useSearchParams)(), y = (0, s.useRef)(null), [, j] = (0, l.useModal)(), {
+          const [v, f] = (0, o.useSearchParams)(), y = (0, s.useRef)(null), [, j] = (0, l.useModal)(), {
             track: w
           } = (0, m.useGtmTrack)(), [T, P] = (0, s.useState)(!1), C = () => {
-            P(!1), j(null), v({}), w({
+            P(!1), j(null), f({}), w({
               event: "modal_close",
               event_category: "modal",
               event_action: "close",
@@ -375,7 +375,7 @@
               position: a
             })
           }, _ = e => {
-            "linkout" !== c && (e.preventDefault(), e.stopPropagation(), t ? v({
+            "linkout" !== c && (e.preventDefault(), e.stopPropagation(), t ? f({
               info: t
             }) : k(), w({
               event: "card_click",
@@ -391,8 +391,8 @@
           return (0, s.useEffect)((() => {
             T && k()
           }), [T]), (0, s.useEffect)((() => {
-            P(f.get("info") === t)
-          }), [f.get("info"), t]), (0, p.jsx)("div", {
+            P(v.get("info") === t)
+          }), [v.get("info"), t]), (0, p.jsx)("div", {
             ref: y,
             onClick: _,
             onKeyUp: e => {
@@ -420,8 +420,8 @@
             variants: h,
             id: b,
             position: x,
-            sectionTitle: f,
-            expandedType: v,
+            sectionTitle: v,
+            expandedType: f,
             context: y,
             children: j,
             expandedCardContents: w,
@@ -449,7 +449,7 @@
               GroupOfItems: d()
             })), [z]),
             L = (0, s.useMemo)((() => (0, p.jsx)(r.Z, {
-              type: v,
+              type: f,
               components: Z,
               payload: t,
               prod: a,
@@ -466,14 +466,14 @@
               pricingOptions: N,
               id: b,
               children: w
-            })), [v, n, a, o, l, T, w, m, g, h, Z, t]);
+            })), [f, n, a, o, l, T, w, m, g, h, Z, t]);
           return (0, p.jsx)(u, {
             id: b,
             position: x,
-            sectionTitle: f,
+            sectionTitle: v,
             title: l,
             size: o,
-            expandedType: v,
+            expandedType: f,
             images: n,
             deckProps: P,
             modalProps: {
@@ -617,40 +617,41 @@
     },
     9813: (e, t, a) => {
       a.d(t, {
-        Z: () => i
+        Z: () => n
       });
-      var s = a(6160);
-      const i = e => {
+      var s = a(4932);
+      var i = a(6160);
+      const n = e => {
         let {
           title: t,
           showTitle: a = !0,
-          showBackground: i = !0,
-          tag: n,
-          tagStyle: d,
-          discountPrice: c,
-          originalPrice: r,
-          setPricingContainerHeight: o = null
+          showBackground: n = !0,
+          tag: d,
+          tagStyle: c,
+          discountPrice: r,
+          originalPrice: o,
+          setPricingContainerHeight: l = null
         } = e;
-        const l = createRef();
-        return (0, s.jsxs)("div", {
+        const m = (0, s.createRef)();
+        return (0, i.jsxs)("div", {
           className: "d82452706eccb7b8b87b1cad353b616da6a4",
-          ref: l,
-          "data-show-background": i,
-          children: [a && (0, s.jsx)("span", {
+          ref: m,
+          "data-show-background": n,
+          children: [a && (0, i.jsx)("span", {
             className: "d82452706eccb7b8c42eda1240c596f0d785",
             children: t
-          }), (0, s.jsxs)("div", {
+          }), (0, i.jsxs)("div", {
             className: "d82452706eccb7b8b0f482f2d0f16c294d3c",
-            children: [(0, s.jsx)("span", {
+            children: [(0, i.jsx)("span", {
               className: "d82452706eccb7b8a7aa97d72858d6ca3f16",
-              "data-tag-style": d || "free",
-              children: n
-            }), (0, s.jsx)("span", {
+              "data-tag-style": c || "free",
+              children: d
+            }), (0, i.jsx)("span", {
               className: "d82452706eccb7b8bda97786d5063ef9b8f6",
-              children: c
-            }), (0, s.jsx)("span", {
-              className: "d82452706eccb7b8c235f619535bec335f09",
               children: r
+            }), (0, i.jsx)("span", {
+              className: "d82452706eccb7b8c235f619535bec335f09",
+              children: o
             })]
           })]
         })
@@ -773,8 +774,8 @@
           },
           images: b = [],
           deckProps: x = {},
-          to: f = null,
-          tina: v = {},
+          to: v = null,
+          tina: f = {},
           position: y = 0,
           sectionTitle: j = "",
           theme: w,
@@ -782,7 +783,7 @@
           cardIds: P
         } = e;
         const C = (0, i.useTinaPayload)(),
-          k = v?.payload?.meta?.cdn ?? C?.meta?.prod ?? !1,
+          k = f?.payload?.meta?.cdn ?? C?.meta?.prod ?? !1,
           [_, N] = (0, s.useState)(x?.size ?? u),
           z = void 0 !== T;
         return (0, s.useEffect)((() => {
@@ -817,7 +818,7 @@
           pricingOptions: T,
           children: (0, m.jsx)(o.Z, {
             expandedType: g,
-            to: f,
+            to: v,
             sectionTitle: j,
             id: t,
             cardTitle: a,
@@ -874,14 +875,14 @@
           },
           images: b = [],
           deckProps: x = {},
-          tina: f = {},
-          payload: v,
+          tina: v = {},
+          payload: f,
           position: y = 0,
           sectionTitle: j = ""
         } = e;
         const w = (0, i.useTinaPayload)(),
-          T = v ?? w,
-          P = f?.payload?.meta?.cdn ?? T?.meta?.prod ?? !1,
+          T = f ?? w,
+          P = v?.payload?.meta?.cdn ?? T?.meta?.prod ?? !1,
           C = ((e, t) => e?.map((e => e?.image ? {
             ...e,
             image: {
