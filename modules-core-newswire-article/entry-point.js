@@ -4,12 +4,12 @@ var modules_core_newswire_article;
   var e, r, t, a, o = {
       1103: (e, r, t) => {
         var a = {
-            "./NewswireArticle": () => Promise.all([t.e(742), t.e(719), t.e(976), t.e(985), t.e(413), t.e(510), t.e(334), t.e(746)]).then((() => () => t(1746))),
-            "./NewswireTitle": () => Promise.all([t.e(976), t.e(985), t.e(951)]).then((() => () => t(1951))),
-            "./index": () => Promise.all([t.e(742), t.e(976), t.e(985), t.e(413), t.e(510), t.e(578)]).then((() => () => t(9578))),
-            "./components": () => Promise.all([t.e(742), t.e(976), t.e(985), t.e(413)]).then((() => () => t(1413))),
-            "./types": () => Promise.all([t.e(742), t.e(719), t.e(976), t.e(985), t.e(413), t.e(510), t.e(334), t.e(573)]).then((() => () => t(6573))),
-            "./tinaBlockTemplates": () => Promise.all([t.e(976), t.e(699)]).then((() => () => t(6699)))
+            "./NewswireArticle": () => Promise.all([t.e(688), t.e(218), t.e(976), t.e(634), t.e(975), t.e(510), t.e(357), t.e(76)]).then((() => () => t(8076))),
+            "./NewswireTitle": () => Promise.all([t.e(976), t.e(634), t.e(765)]).then((() => () => t(1765))),
+            "./index": () => Promise.all([t.e(688), t.e(976), t.e(634), t.e(975), t.e(510), t.e(986)]).then((() => () => t(7986))),
+            "./components": () => Promise.all([t.e(688), t.e(976), t.e(634), t.e(975)]).then((() => () => t(3975))),
+            "./types": () => Promise.all([t.e(688), t.e(218), t.e(976), t.e(634), t.e(975), t.e(510), t.e(357), t.e(417)]).then((() => () => t(417))),
+            "./tinaBlockTemplates": () => Promise.all([t.e(976), t.e(814)]).then((() => () => t(8814)))
           },
           o = (e, r) => (t.R = r, r = t.o(a, e) ? a[e]() : Promise.resolve().then((() => {
             throw new Error('Module "' + e + '" does not exist in container.')
@@ -171,23 +171,23 @@ var modules_core_newswire_article;
       get: r[t]
     })
   }, i.f = {}, i.e = e => Promise.all(Object.keys(i.f).reduce(((r, t) => (i.f[t](e, r), r)), [])), i.u = e => "js/" + {
-    334: "d9f664cd6296de29bbae",
-    413: "cf26b99652944a39d3da",
+    76: "551e314c55e2afeee696",
+    218: "daa90d938067bcf9c323",
+    252: "470f98c9c3c9818c84c9",
+    357: "24a013e2186f65eaee90",
+    417: "5cac79d5e62016b2e4dd",
     510: "113b89b9f4c8ad0af64c",
-    573: "c22639fd5f988498d834",
-    578: "e16dcad311c0e5f17d21",
-    699: "50194e89226be1f5c75b",
-    719: "abe981d8fdad8d41937a",
-    742: "3a9c982abbc7d8ae8b91",
-    746: "71780d8bf083edf5cf8c",
-    769: "9e7d7dca789d0bc505f9",
-    951: "44899bbaca04ab3216a1",
+    634: "6394a7f512b11408aa93",
+    688: "a62fa47fcf9bc82f8a8f",
+    765: "f709174dad4026f5d4df",
+    814: "b6f497970c2f08634db4",
+    975: "689e19246e922744af78",
     976: "8588115fb29797f8a174",
-    985: "12ab1ccb9d93cf748885"
+    986: "0aeb428f93a989461b29"
   } [e] + ".js", i.miniCssF = e => "css/" + {
-    334: "bca55d8bc3aa51996615",
-    413: "1d299b6d0c13c22bbe4f",
-    951: "441e04071467a3408264"
+    357: "4964c6c4a25f5ddd43aa",
+    765: "9dd6b269fafbfba94abc",
+    975: "f3cbaff77aa51fe5c4a9"
   } [e] + ".css", i.g = function() {
     if ("object" == typeof globalThis) return globalThis;
     try {
@@ -226,15 +226,17 @@ var modules_core_newswire_article;
       value: !0
     })
   }, i.nmd = e => (e.paths = [], e.children || (e.children = []), e), t = {
-    413: [420, 3657, 4224, 4859, 6947, 8356],
+    76: [1968, 6077],
     510: [3750, 5551],
-    699: [559, 2324, 3204, 3616, 6307, 6904],
-    746: [1968, 6077],
-    976: [8976],
-    985: [9542, 9929]
+    634: [9542, 9929],
+    814: [334, 559, 1719, 2324, 3204, 3616, 6307, 6904],
+    975: [420, 3657, 4224, 4859, 6947, 8356],
+    976: [8976]
   }, a = {
+    334: ["default", "./tina", 3113],
     420: ["default", "./index", 8546],
     559: ["default", "./helpers/uploads", 1489],
+    1719: ["default", "./tina", 6993],
     1968: ["default", "./providers", 8810],
     2324: ["default", "./helpers", 1489],
     3204: ["default", "./tinaBlockTemplates", 6993],
@@ -317,7 +319,7 @@ var modules_core_newswire_article;
           var o = n[e] = n[e] || {},
             d = o[r];
           (!d || !d.loaded && (1 != !d.eager ? a : s > d.from)) && (o[r] = {
-            get: () => i.e(769).then((() => () => i(1769))),
+            get: () => i.e(252).then((() => () => i(8252))),
             from: s,
             eager: !1
           })
@@ -404,10 +406,10 @@ var modules_core_newswire_article;
       })),
       o = {},
       n = {
-        822: () => a("default", "react", [1, 18, 2, 0], (() => i.e(769).then((() => () => i(1769)))))
+        4932: () => a("default", "react", [1, 18, 2, 0], (() => i.e(252).then((() => () => i(8252)))))
       },
       s = {
-        985: [822]
+        634: [4932]
       };
     i.f.consumes = (e, r) => {
       i.o(s, e) && s[e].forEach((e => {
@@ -437,9 +439,9 @@ var modules_core_newswire_article;
       };
       i.f.miniCss = (r, t) => {
         e[r] ? t.push(e[r]) : 0 !== e[r] && {
-          334: 1,
-          413: 1,
-          951: 1
+          357: 1,
+          765: 1,
+          975: 1
         } [r] && t.push(e[r] = (e => new Promise(((r, t) => {
           var a = i.miniCssF(e),
             o = i.p + a;
@@ -481,7 +483,7 @@ var modules_core_newswire_article;
       var a = i.o(e, r) ? e[r] : void 0;
       if (0 !== a)
         if (a) t.push(a[2]);
-        else if (/^(334|510|976|985)$/.test(r)) e[r] = 0;
+        else if (/^(357|510|634|976)$/.test(r)) e[r] = 0;
       else {
         var o = new Promise(((t, o) => a = e[r] = [t, o]));
         t.push(a[2] = o);

@@ -4,11 +4,11 @@ var sites_gta_gen9;
   var e, r, t, a, n = {
       2577: (e, r, t) => {
         var a = {
-            "./bootstrap": () => t.e(366).then((() => () => t(7366))),
-            "./components": () => Promise.all([t.e(898), t.e(822), t.e(559), t.e(942)]).then((() => () => t(9981))),
-            "./index": () => Promise.all([t.e(898), t.e(822), t.e(559), t.e(942), t.e(405), t.e(801)]).then((() => () => t(5489))),
-            "./tina": () => Promise.all([t.e(559), t.e(226)]).then((() => () => t(226))),
-            "./utils": () => Promise.all([t.e(898), t.e(822), t.e(559), t.e(942)]).then((() => () => t(2253)))
+            "./bootstrap": () => t.e(533).then((() => () => t(6533))),
+            "./components": () => Promise.all([t.e(834), t.e(932), t.e(559), t.e(133)]).then((() => () => t(8262))),
+            "./index": () => Promise.all([t.e(834), t.e(932), t.e(559), t.e(133), t.e(860), t.e(325)]).then((() => () => t(5860))),
+            "./tina": () => Promise.all([t.e(559), t.e(641)]).then((() => () => t(2641))),
+            "./utils": () => Promise.all([t.e(834), t.e(932), t.e(559), t.e(133)]).then((() => () => t(5921)))
           },
           n = (e, r) => (t.R = r, r = t.o(a, e) ? a[e]() : Promise.resolve().then((() => {
             throw new Error('Module "' + e + '" does not exist in container.')
@@ -85,6 +85,18 @@ var sites_gta_gen9;
             a.message = "Loading script failed.\n(" + n + ": " + o + ")", a.name = "ScriptExternalLoadError", a.type = n, a.request = o, r(a)
           }), "modules_core_group_of_items")
         })).then((() => modules_core_group_of_items))
+      },
+      9220: (e, r, t) => {
+        var a = new Error;
+        e.exports = new Promise(((e, r) => {
+          if ("undefined" != typeof modules_core_newswire_article) return e();
+          t.l(window.mfe.path("@rockstargames/modules-core-newswire-article"), (t => {
+            if ("undefined" != typeof modules_core_newswire_article) return e();
+            var n = t && ("load" === t.type ? "missing" : t.type),
+              o = t && t.target && t.target.src;
+            a.message = "Loading script failed.\n(" + n + ": " + o + ")", a.name = "ScriptExternalLoadError", a.type = n, a.request = o, r(a)
+          }), "modules_core_newswire_article")
+        })).then((() => modules_core_newswire_article))
       },
       7426: (e, r, t) => {
         var a = new Error;
@@ -182,21 +194,21 @@ var sites_gta_gen9;
       get: r[t]
     })
   }, i.f = {}, i.e = e => Promise.all(Object.keys(i.f).reduce(((r, t) => (i.f[t](e, r), r)), [])), i.u = e => "js/" + {
-    226: "67e522bfdd8a12f00af9",
-    232: "0fd7df8c4f305e796251",
-    366: "69c9c88d861456fa1a2c",
-    405: "1bf555f17f62a6cdf01d",
-    489: "3d7eb71908043d3945e4",
+    77: "e98b2707b6dd4d5cf9f8",
+    133: "277f0f42d3e0c413d3fa",
+    252: "533e0e389c4e0e0364b0",
+    325: "b2b2acd6bad238ac7bba",
+    533: "957d50c66b591c3511fd",
     559: "b565f9c946d13414869b",
-    769: "8b38a55352d193b59d51",
-    801: "f35e15d1c3ac6dbb95b4",
-    822: "c52e1a0240c17e5d3973",
-    898: "1ba7fc3ff12e5b4e05cc",
-    942: "5031da69d2db69613119"
+    641: "c51d6b3c90ff4195de92",
+    834: "5b529c3c8bc23e58e654",
+    860: "14f319f4029e137247db",
+    932: "39d7bf7e4ff162253335",
+    976: "80a869d49e562d7988af"
   } [e] + ".js", i.miniCssF = e => "css/" + {
-    232: "bf7de2c6bc20b50fc500",
-    801: "bf7de2c6bc20b50fc500",
-    942: "abd1cecbd308197b8610"
+    77: "5d6b915d85f4e07f1286",
+    133: "54f9a1de2a393ee7778e",
+    325: "5d6b915d85f4e07f1286"
   } [e] + ".css", i.g = function() {
     if ("object" == typeof globalThis) return globalThis;
     try {
@@ -235,10 +247,10 @@ var sites_gta_gen9;
       value: !0
     })
   }, i.nmd = e => (e.paths = [], e.children || (e.children = []), e), t = {
-    226: [3616],
-    405: [389, 8008, 8865],
+    133: [420, 2672, 3657, 4224, 4859, 5255, 6386, 6711, 6947, 8976, 9542, 9929],
     559: [559],
-    942: [420, 2672, 3657, 4224, 4859, 5255, 6711, 6947, 8976, 9542, 9929]
+    641: [3616],
+    860: [389, 8008, 8865]
   }, a = {
     389: ["default", "./index", 1876],
     420: ["default", "./index", 8546],
@@ -249,6 +261,7 @@ var sites_gta_gen9;
     4224: ["default", "./index", 6993],
     4859: ["default", "./index", 5171],
     5255: ["default", "./index", 359],
+    6386: ["default", "./index", 9220],
     6711: ["default", "./index", 7426],
     6947: ["default", "./components", 7048],
     8008: ["default", "./providers", 9525],
@@ -326,7 +339,7 @@ var sites_gta_gen9;
             }
           },
           u = [];
-        return "default" === t && (d("react-router-dom", "6.11.2", (() => Promise.all([i.e(489), i.e(822)]).then((() => () => i(3489))))), d("react", "18.2.0", (() => i.e(769).then((() => () => i(1769))))), l(1489), l(9525), l(5171), l(7048), l(8546), l(7426), l(6993), l(359), l(8810), l(505), l(1876)), u.length ? e[t] = Promise.all(u).then((() => e[t] = 1)) : e[t] = 1
+        return "default" === t && (d("react-router-dom", "6.11.2", (() => Promise.all([i.e(976), i.e(932)]).then((() => () => i(4976))))), d("react", "18.2.0", (() => i.e(252).then((() => () => i(8252))))), l(1489), l(9525), l(5171), l(7048), l(8546), l(9220), l(7426), l(6993), l(359), l(8810), l(505), l(1876)), u.length ? e[t] = Promise.all(u).then((() => e[t] = 1)) : e[t] = 1
       }
     }
   })(), (() => {
@@ -409,12 +422,12 @@ var sites_gta_gen9;
       })),
       n = {},
       o = {
-        822: () => a("default", "react", [1, 18, 2, 0], (() => i.e(769).then((() => () => i(1769))))),
-        2310: () => a("default", "react-router-dom", [1, 6, 11, 2], (() => i.e(489).then((() => () => i(3489)))))
+        4932: () => a("default", "react", [1, 18, 2, 0], (() => i.e(252).then((() => () => i(8252))))),
+        3102: () => a("default", "react-router-dom", [1, 6, 11, 2], (() => i.e(976).then((() => () => i(4976)))))
       },
       s = {
-        822: [822],
-        942: [2310]
+        133: [3102],
+        932: [4932]
       };
     i.f.consumes = (e, r) => {
       i.o(s, e) && s[e].forEach((e => {
@@ -444,9 +457,9 @@ var sites_gta_gen9;
       };
       i.f.miniCss = (r, t) => {
         e[r] ? t.push(e[r]) : 0 !== e[r] && {
-          232: 1,
-          801: 1,
-          942: 1
+          77: 1,
+          133: 1,
+          325: 1
         } [r] && t.push(e[r] = (e => new Promise(((r, t) => {
           var a = i.miniCssF(e),
             n = i.p + a;
@@ -488,7 +501,7 @@ var sites_gta_gen9;
       var a = i.o(e, r) ? e[r] : void 0;
       if (0 !== a)
         if (a) t.push(a[2]);
-        else if (/^(559|801|822)$/.test(r)) e[r] = 0;
+        else if (/^(325|559|932)$/.test(r)) e[r] = 0;
       else {
         var n = new Promise(((t, n) => a = e[r] = [t, n]));
         t.push(a[2] = n);
