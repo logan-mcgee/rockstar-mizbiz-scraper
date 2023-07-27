@@ -1,27 +1,33 @@
-/*! For license information please see 76b94fd1fdd43a6bb26e.js.LICENSE.txt */
+/*! For license information please see a790f0ddb50e677d28c0.js.LICENSE.txt */
 "use strict";
 (self.webpackChunk_rockstargames_utils = self.webpackChunk_rockstargames_utils || []).push([
-  [685], {
-    685: (e, t, a) => {
+  [961], {
+    961: (e, t, a) => {
       a.r(t), a.d(t, {
         TagManager: () => n(),
-        init: () => c,
+        init: () => u,
         track: () => i.Z,
-        withAutoRouteTracking: () => s
+        withAutoRouteTracking: () => c
       });
-      var r = a(449),
+      var r = a(806),
         n = a.n(r),
-        i = a(865),
-        o = a(822),
-        d = a(706);
-      const s = e => t => ((e, t) => ((0, o.useEffect)((() => {
-          (0, i.Z)({
-            event: "trackPageview"
+        i = a(190),
+        o = a(932),
+        d = a(30),
+        s = a(160);
+      const c = e => t => ((e, t) => {
+          const {
+            pathname: a
+          } = (0, d.useLocation)();
+          return (0, o.useEffect)((() => {
+            (0, i.Z)({
+              event: "trackPageview"
+            })
+          }), [a]), (0, s.jsx)(e, {
+            ...t
           })
-        }), [window.location.pathname]), (0, d.jsx)(e, {
-          ...t
-        })))(e, t),
-        c = e => {
+        })(e, t),
+        u = e => {
           let {
             id: t
           } = e;
@@ -32,11 +38,11 @@
           n().initialize(a)
         }
     },
-    865: (e, t, a) => {
+    190: (e, t, a) => {
       a.d(t, {
         Z: () => d
       });
-      var r = a(449),
+      var r = a(806),
         n = a.n(r);
       const i = "www.rockstargames.com" === document?.location?.hostname ? "prod" : "dev",
         o = /Mobi/i.test(window.navigator.userAgent) ? "mobile" : "desktop",
@@ -51,8 +57,8 @@
           })
         }
     },
-    472: (e, t, a) => {
-      var r, n = (r = a(496)) && r.__esModule ? r : {
+    143: (e, t, a) => {
+      var r, n = (r = a(680)) && r.__esModule ? r : {
           default: r
         },
         i = {
@@ -76,8 +82,8 @@
         };
       e.exports = i
     },
-    357: (e, t, a) => {
-      var r, n = (r = a(472)) && r.__esModule ? r : {
+    248: (e, t, a) => {
+      var r, n = (r = a(143)) && r.__esModule ? r : {
           default: r
         },
         i = {
@@ -132,21 +138,21 @@
         };
       e.exports = i
     },
-    449: (e, t, a) => {
-      var r, n = (r = a(357)) && r.__esModule ? r : {
+    806: (e, t, a) => {
+      var r, n = (r = a(248)) && r.__esModule ? r : {
         default: r
       };
       e.exports = n.default
     },
-    496: (e, t) => {
+    680: (e, t) => {
       Object.defineProperty(t, "__esModule", {
         value: !0
       }), t.default = function(e) {
         console.warn("[react-gtm]", e)
       }
     },
-    115: (e, t, a) => {
-      var r = a(822),
+    970: (e, t, a) => {
+      var r = a(932),
         n = Symbol.for("react.element"),
         i = (Symbol.for("react.fragment"), Object.prototype.hasOwnProperty),
         o = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
@@ -173,8 +179,8 @@
         }
       }
     },
-    706: (e, t, a) => {
-      e.exports = a(115)
+    160: (e, t, a) => {
+      e.exports = a(970)
     }
   }
 ]);

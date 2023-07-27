@@ -1,6 +1,6 @@
 (self.webpackChunk_rockstargames_utils = self.webpackChunk_rockstargames_utils || []).push([
-  [725, 779, 618, 142, 387], {
-    76: (e, t, n) => {
+  [667, 490, 342, 188, 681], {
+    761: (e, t, n) => {
       "use strict";
       n.d(t, {
         Z: () => f
@@ -19,12 +19,12 @@
         })(r) : r
       }, a = (r("SHA-1"), r("SHA-256"));
       r("SHA-384"), r("SHA-512");
-      var i = n(616),
+      var i = n(617),
         o = n.n(i),
-        s = n(948),
+        s = n(653),
         c = n.n(s),
-        l = n(850),
-        d = n(209);
+        l = n(901),
+        d = n(82);
       const {
         apiHost: u
       } = (0, l.Z)(), m = (0, d.r)(document.documentElement.lang), g = {}, f = async function(e) {
@@ -49,12 +49,12 @@
         let h = `${u}/${e}`;
         if (null === r || c().isEmpty(r) || (h += `?${new URLSearchParams(r)}`), !d && s) return null;
         d && (f.Authorization = `Bearer ${d}`);
-        const p = {
+        const v = {
             headers: f
           },
-          v = o().all([p, t, n]),
+          p = o().all([v, t, n]),
           w = JSON.stringify({
-            ...v,
+            ...p,
             url: h
           }),
           y = await a(w);
@@ -68,7 +68,7 @@
             loading: !0
           }
         }
-        const S = await fetch(h, v),
+        const S = await fetch(h, p),
           b = await S.json();
         return l && (g[y] = {
           response: b,
@@ -76,7 +76,7 @@
         }), b
       }
     },
-    850: (e, t, n) => {
+    901: (e, t, n) => {
       "use strict";
       n.d(t, {
         Z: () => a
@@ -137,7 +137,7 @@
           })) || r[0]
         }
     },
-    779: (e, t, n) => {
+    490: (e, t, n) => {
       "use strict";
       n.r(t), n.d(t, {
         ArraySort: () => s,
@@ -150,9 +150,9 @@
         prettyPrint: () => u,
         stripHTML: () => d
       });
-      var r = n(948),
+      var r = n(653),
         a = n.n(r),
-        i = n(706);
+        i = n(160);
       const o = e => e.keys().forEach(e),
         s = {
           alphabetical: {
@@ -221,7 +221,7 @@
         f = () => ["xbox360", "ps4", "ps3"],
         h = () => ["xboxone", "ps5", "pc"]
     },
-    209: (e, t, n) => {
+    82: (e, t, n) => {
       "use strict";
       n.d(t, {
         r: () => r
@@ -231,12 +231,12 @@
         return "zh-hans" === t ? "zh-cn" : t
       }
     },
-    865: (e, t, n) => {
+    190: (e, t, n) => {
       "use strict";
       n.d(t, {
         Z: () => s
       });
-      var r = n(449),
+      var r = n(806),
         a = n.n(r);
       const i = "www.rockstargames.com" === document?.location?.hostname ? "prod" : "dev",
         o = /Mobi/i.test(window.navigator.userAgent) ? "mobile" : "desktop",
@@ -251,7 +251,7 @@
           })
         }
     },
-    618: (e, t, n) => {
+    342: (e, t, n) => {
       "use strict";
       n.r(t), n.d(t, {
         withGtmTracking: () => i,
@@ -259,8 +259,8 @@
         withMediaBasedProps: () => m,
         withTranslations: () => f
       });
-      var r = n(865),
-        a = n(706);
+      var r = n(190),
+        a = n(160);
       const i = e => t => ((e, t) => (0, a.jsx)(e, {
         ...t,
         gtmTrack: e => {
@@ -276,8 +276,8 @@
           locale: n
         })
       })(e, t);
-      var l = n(822),
-        d = n(948),
+      var l = n(932),
+        d = n(653),
         u = n.n(d);
       const m = function(e) {
         let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 250;
@@ -310,7 +310,7 @@
           })
         })(e, n, t)
       };
-      var g = n(167);
+      var g = n(390);
       const f = function(e) {
         let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "default";
         return n => ((e, t, n) => {
@@ -332,7 +332,7 @@
         })(e, n, t)
       }
     },
-    142: (e, t, n) => {
+    188: (e, t, n) => {
       "use strict";
       n.r(t), n.d(t, {
         setFreezeUserShouldSeeMore: () => f.rj,
@@ -347,7 +347,7 @@
       var r = n(859),
         a = n(285);
       const i = () => (0, r.useReactiveVar)(a.locale);
-      var o = n(822);
+      var o = n(932);
       const s = e => {
         const [t, n] = (0, o.useState)(null), [r, a] = (0, o.useState)(null), [i, s] = (0, o.useState)({});
         return (0, o.useLayoutEffect)((() => {
@@ -365,7 +365,7 @@
           }
         }), [e]), [t, i]
       };
-      var c = n(310);
+      var c = n(30);
       const l = () => {
           const {
             search: e
@@ -473,7 +473,7 @@
             }
           }
         };
-      var u = n(76);
+      var u = n(761);
       const m = (e, t) => {
         let {
           autoFetch: n = !0,
@@ -513,43 +513,45 @@
           fetch: h
         }
       };
-      var g = n(784),
-        f = n(759)
+      var g = n(711),
+        f = n(550)
     },
-    725: (e, t, n) => {
+    667: (e, t, n) => {
       "use strict";
       n.r(t), n.d(t, {
-        ResizeProvider: () => y.ph,
+        DataLayerProvider: () => y.DataLayerProvider,
+        ResizeProvider: () => S.ph,
         coreScApiFetch: () => u.Z,
         getCdnPrefix: () => a.getCdnPrefix,
         getGen8Consoles: () => a.getGen8Consoles,
         getGen9Consoles: () => a.getGen9Consoles,
         getScConfigForOrigin: () => m.Z,
         importAll: () => a.importAll,
-        lsSettingsReactive: () => v.settingsReactive,
-        mutateLSSettings: () => v.mutateLSSettings,
-        safeStyles: () => p,
+        lsSettingsReactive: () => p.settingsReactive,
+        mutateLSSettings: () => p.mutateLSSettings,
+        safeStyles: () => v,
         supportedBrowsers: () => w,
         toScLocaleString: () => g.r,
         useBodyScrollable: () => d,
+        useDataLayer: () => y.useDataLayer,
         useLocale: () => i.useLocale,
         useNewswirePost: () => i.useNewswirePost,
         usePreloadImg: () => i.usePreloadImg,
         useQueryParams: () => i.useQueryParams,
         useRockstarLocalState: () => i.useRockstarLocalState,
-        useRockstarWebLSSettings: () => v.useRockstarWebLSSettings,
+        useRockstarWebLSSettings: () => p.useRockstarWebLSSettings,
         useScApi: () => i.useScApi,
         useScroll: () => i.useScroll,
-        useWindowResize: () => y.w_,
+        useWindowResize: () => S.w_,
         withGtmTracking: () => r.withGtmTracking,
         withLocale: () => r.withLocale,
         withMediaBasedProps: () => r.withMediaBasedProps,
         withTranslations: () => r.withTranslations
       });
-      var r = n(618),
-        a = n(779),
-        i = n(142),
-        o = n(822),
+      var r = n(342),
+        a = n(490),
+        i = n(188),
+        o = n(932),
         s = n(859);
       const c = (0, s.makeVar)(!0),
         l = "data-disallow-body-scroll",
@@ -562,20 +564,21 @@
             setBodyIsScrollable: c
           }
         };
-      var u = n(76),
-        m = n(850),
-        g = n(209),
-        f = n(948),
+      var u = n(761),
+        m = n(901),
+        g = n(82),
+        f = n(653),
         h = n.n(f);
-      const p = e => {
+      const v = e => {
         const t = h().clone(e);
         return t?.["margin-top"] && (t.marginTop = t["margin-top"]), t?.["margin-bottom"] && (t.marginBottom = t["margin-bottom"]), t?.["margin-left"] && (t.marginLeft = t["margin-left"]), t?.["margin-right"] && (t.marginRight = t["margin-right"]), t?.["object-fit"] && (t.objectFit = t["object-fit"]), delete t?.["margin-top"], delete t?.["margin-bottom"], delete t?.["margin-right"], delete t?.["margin-left"], delete t?.["object-fit"], t
       };
-      var v = n(387);
+      var p = n(681);
       const w = /Edge?\/(109|1[1-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Firefox\/(10[2-9]|1[1-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Chrom(ium|e)\/(10[89]|1[1-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Maci.+ Version\/(15\.([6-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(9[4-9]|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(14[._]([5-9]|\d{2,})|(1[5-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](109|1[1-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Mobile Safari.+OPR\/(7[3-9]|[89]\d|\d{3,})\.\d+\.\d+|Android.+Firefox\/(1{2}\d|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(1{2}\d|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+(UC? ?Browser|UCWEB|U3)[ /]?(13\.([4-9]|\d{2,})|(1[4-9]|[2-9]\d|\d{3,})\.\d+)\.\d+|SamsungBrowser\/(19|[2-9]\d|\d{3,})\.\d+|Android.+MQ{2}Browser\/(13(\.([1-9]|\d{2,})|)|(1[4-9]|[2-9]\d|\d{3,})(\.\d+|))(\.\d+|)|K[Aa][Ii]OS\/(2\.([5-9]|\d{2,})|([3-9]|\d{2,})\.\d+)(\.\d+|)/;
-      var y = n(623)
+      var y = n(460),
+        S = n(373)
     },
-    387: (e, t, n) => {
+    681: (e, t, n) => {
       "use strict";
       n.r(t), n.d(t, {
         mutateLSSettings: () => s,
@@ -606,15 +609,47 @@
           mutateLSSettings: s
         })
     },
-    784: (e, t, n) => {
+    460: (e, t, n) => {
+      "use strict";
+      n.r(t), n.d(t, {
+        DataLayerProvider: () => d,
+        ResizeProvider: () => a.ph,
+        ScrollProvider: () => i.ID,
+        newswirePost: () => r,
+        useDataLayer: () => l
+      });
+      var r = n(711),
+        a = n(373),
+        i = n(550),
+        o = n(932),
+        s = n(160);
+      const c = (0, o.createContext)({}),
+        l = () => (0, o.useContext)(c),
+        d = e => {
+          let {
+            children: t,
+            ...n
+          } = e;
+          const r = l() ?? {},
+            a = (0, o.useMemo)((() => ({
+              ...r,
+              ...n
+            })), [r, n]);
+          return (0, s.jsx)(c.Provider, {
+            value: a,
+            children: t
+          })
+        }
+    },
+    711: (e, t, n) => {
       "use strict";
       n.r(t), n.d(t, {
         Consumer: () => o,
         Provider: () => s,
         useNewswirePost: () => c
       });
-      var r = n(822),
-        a = n(706);
+      var r = n(932),
+        a = n(160);
       const i = (0, r.createContext)(),
         {
           Consumer: o
@@ -631,15 +666,15 @@
         },
         c = () => (0, r.useContext)(i)
     },
-    623: (e, t, n) => {
+    373: (e, t, n) => {
       "use strict";
       n.d(t, {
         ph: () => u,
         w_: () => m
       });
-      var r = n(822),
+      var r = n(932),
         a = n(859),
-        i = n(706);
+        i = n(160);
       const o = {
           xxs: {
             min: 0,
@@ -716,7 +751,7 @@
         },
         m = () => (0, r.useContext)(c)
     },
-    759: (e, t, n) => {
+    550: (e, t, n) => {
       "use strict";
       n.d(t, {
         ID: () => d,
@@ -724,8 +759,8 @@
         vO: () => l
       });
       var r = n(859),
-        a = n(822),
-        i = n(706);
+        a = n(932),
+        i = n(160);
       const o = (0, r.makeVar)(!1),
         s = e => o(e),
         c = (0, a.createContext)(null),
@@ -736,7 +771,7 @@
           } = e;
           const [n, l] = (0, a.useState)(window.pageYOffset), [d, u] = (0, a.useState)(null), [m, g] = (0, a.useState)(!1), f = (0, r.useReactiveVar)(o);
           let h;
-          const p = () => {
+          const v = () => {
             g(!0), clearTimeout(h), h = setTimeout((() => {
               g(!1)
             }), 2e3)
@@ -755,15 +790,15 @@
             value: {
               freezeUserShouldSeeMore: f,
               pageYOffset: n,
-              pauseUserShouldSeeMore: p,
+              pauseUserShouldSeeMore: v,
               setFreezeUserShouldSeeMore: s,
               userShouldSeeMore: d
             },
             children: t
-          })), [f, n, p, d])
+          })), [f, n, v, d])
         }
     },
-    616: e => {
+    617: e => {
       "use strict";
       var t = function(e) {
           return function(e) {
@@ -831,9 +866,9 @@
       var c = s;
       e.exports = c
     },
-    472: (e, t, n) => {
+    143: (e, t, n) => {
       "use strict";
-      var r, a = (r = n(496)) && r.__esModule ? r : {
+      var r, a = (r = n(680)) && r.__esModule ? r : {
           default: r
         },
         i = {
@@ -857,9 +892,9 @@
         };
       e.exports = i
     },
-    357: (e, t, n) => {
+    248: (e, t, n) => {
       "use strict";
-      var r, a = (r = n(472)) && r.__esModule ? r : {
+      var r, a = (r = n(143)) && r.__esModule ? r : {
           default: r
         },
         i = {
@@ -914,14 +949,14 @@
         };
       e.exports = i
     },
-    449: (e, t, n) => {
+    806: (e, t, n) => {
       "use strict";
-      var r, a = (r = n(357)) && r.__esModule ? r : {
+      var r, a = (r = n(248)) && r.__esModule ? r : {
         default: r
       };
       e.exports = a.default
     },
-    496: (e, t) => {
+    680: (e, t) => {
       "use strict";
       Object.defineProperty(t, "__esModule", {
         value: !0
@@ -929,7 +964,7 @@
         console.warn("[react-gtm]", e)
       }
     },
-    167: e => {
+    390: e => {
       var t = {
         kind: "Document",
         definitions: [{

@@ -1,25 +1,46 @@
-/*! For license information please see 9f076a675a32496fd3ae.js.LICENSE.txt */
+/*! For license information please see 1708a58b66cc566345b1.js.LICENSE.txt */
 "use strict";
 (self.webpackChunk_rockstargames_utils = self.webpackChunk_rockstargames_utils || []).push([
-  [957], {
-    957: (e, r, t) => {
+  [460], {
+    460: (e, r, t) => {
       t.r(r), t.d(r, {
+        DataLayerProvider: () => c,
         ResizeProvider: () => o.ph,
         ScrollProvider: () => s.ID,
-        newswirePost: () => n
+        newswirePost: () => n,
+        useDataLayer: () => l
       });
-      var n = t(784),
-        o = t(623),
-        s = t(759)
+      var n = t(711),
+        o = t(373),
+        s = t(550),
+        i = t(932),
+        a = t(160);
+      const u = (0, i.createContext)({}),
+        l = () => (0, i.useContext)(u),
+        c = e => {
+          let {
+            children: r,
+            ...t
+          } = e;
+          const n = l() ?? {},
+            o = (0, i.useMemo)((() => ({
+              ...n,
+              ...t
+            })), [n, t]);
+          return (0, a.jsx)(u.Provider, {
+            value: o,
+            children: r
+          })
+        }
     },
-    784: (e, r, t) => {
+    711: (e, r, t) => {
       t.r(r), t.d(r, {
         Consumer: () => i,
         Provider: () => a,
-        useNewswirePost: () => l
+        useNewswirePost: () => u
       });
-      var n = t(822),
-        o = t(706);
+      var n = t(932),
+        o = t(160);
       const s = (0, n.createContext)(),
         {
           Consumer: i
@@ -34,16 +55,16 @@
             children: t
           })
         },
-        l = () => (0, n.useContext)(s)
+        u = () => (0, n.useContext)(s)
     },
-    623: (e, r, t) => {
+    373: (e, r, t) => {
       t.d(r, {
         ph: () => d,
         w_: () => m
       });
-      var n = t(822),
+      var n = t(932),
         o = t(859),
-        s = t(706);
+        s = t(160);
       const i = {
           xxs: {
             min: 0,
@@ -96,10 +117,10 @@
             windowHeight: r
           }
         },
-        l = (0, n.createContext)(a()),
+        u = (0, n.createContext)(a()),
         {
-          Consumer: u
-        } = l,
+          Consumer: l
+        } = u,
         c = (0, o.makeVar)(a()),
         d = e => {
           let {
@@ -113,34 +134,34 @@
             return window.addEventListener("resize", e), () => {
               window.removeEventListener("resize", e)
             }
-          }), []), (0, s.jsx)(l.Provider, {
+          }), []), (0, s.jsx)(u.Provider, {
             value: t,
             children: r
           })
         },
-        m = () => (0, n.useContext)(l)
+        m = () => (0, n.useContext)(u)
     },
-    759: (e, r, t) => {
+    550: (e, r, t) => {
       t.d(r, {
         ID: () => c,
         rj: () => a,
-        vO: () => u
+        vO: () => l
       });
       var n = t(859),
-        o = t(822),
-        s = t(706);
+        o = t(932),
+        s = t(160);
       const i = (0, n.makeVar)(!1),
         a = e => i(e),
-        l = (0, o.createContext)(null),
-        u = () => (0, o.useContext)(l),
+        u = (0, o.createContext)(null),
+        l = () => (0, o.useContext)(u),
         c = e => {
           let {
             children: r
           } = e;
-          const [t, u] = (0, o.useState)(window.pageYOffset), [c, d] = (0, o.useState)(null), [m, v] = (0, o.useState)(!1), w = (0, n.useReactiveVar)(i);
-          let f;
-          const x = () => {
-            v(!0), clearTimeout(f), f = setTimeout((() => {
+          const [t, l] = (0, o.useState)(window.pageYOffset), [c, d] = (0, o.useState)(null), [m, v] = (0, o.useState)(!1), w = (0, n.useReactiveVar)(i);
+          let x;
+          const f = () => {
+            v(!0), clearTimeout(x), x = setTimeout((() => {
               v(!1)
             }), 2e3)
           };
@@ -149,25 +170,25 @@
             const r = () => {
               if (w) return void d(!1);
               const r = Math.max(0, window.pageYOffset);
-              u(r), m || d(r > 60 && r > e), e = r
+              l(r), m || d(r > 60 && r > e), e = r
             };
             return window.addEventListener("scroll", r), () => {
               window.removeEventListener("scroll", r)
             }
-          }), [m, w]), (0, o.useMemo)((() => (0, s.jsx)(l.Provider, {
+          }), [m, w]), (0, o.useMemo)((() => (0, s.jsx)(u.Provider, {
             value: {
               freezeUserShouldSeeMore: w,
               pageYOffset: t,
-              pauseUserShouldSeeMore: x,
+              pauseUserShouldSeeMore: f,
               setFreezeUserShouldSeeMore: a,
               userShouldSeeMore: c
             },
             children: r
-          })), [w, t, x, c])
+          })), [w, t, f, c])
         }
     },
-    115: (e, r, t) => {
-      var n = t(822),
+    970: (e, r, t) => {
+      var n = t(932),
         o = Symbol.for("react.element"),
         s = (Symbol.for("react.fragment"), Object.prototype.hasOwnProperty),
         i = n.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
@@ -178,24 +199,24 @@
           __source: !0
         };
       r.jsx = function(e, r, t) {
-        var n, l = {},
-          u = null,
+        var n, u = {},
+          l = null,
           c = null;
-        for (n in void 0 !== t && (u = "" + t), void 0 !== r.key && (u = "" + r.key), void 0 !== r.ref && (c = r.ref), r) s.call(r, n) && !a.hasOwnProperty(n) && (l[n] = r[n]);
+        for (n in void 0 !== t && (l = "" + t), void 0 !== r.key && (l = "" + r.key), void 0 !== r.ref && (c = r.ref), r) s.call(r, n) && !a.hasOwnProperty(n) && (u[n] = r[n]);
         if (e && e.defaultProps)
-          for (n in r = e.defaultProps) void 0 === l[n] && (l[n] = r[n]);
+          for (n in r = e.defaultProps) void 0 === u[n] && (u[n] = r[n]);
         return {
           $$typeof: o,
           type: e,
-          key: u,
+          key: l,
           ref: c,
-          props: l,
+          props: u,
           _owner: i.current
         }
       }
     },
-    706: (e, r, t) => {
-      e.exports = t(115)
+    160: (e, r, t) => {
+      e.exports = t(970)
     }
   }
 ]);

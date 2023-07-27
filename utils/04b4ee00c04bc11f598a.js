@@ -1,11 +1,11 @@
 (self.webpackChunk_rockstargames_utils = self.webpackChunk_rockstargames_utils || []).push([
-  [618], {
-    865: (e, n, t) => {
+  [342], {
+    190: (e, n, t) => {
       "use strict";
       t.d(n, {
         Z: () => d
       });
-      var a = t(449),
+      var a = t(806),
         i = t.n(a);
       const r = "www.rockstargames.com" === document?.location?.hostname ? "prod" : "dev",
         o = /Mobi/i.test(window.navigator.userAgent) ? "mobile" : "desktop",
@@ -20,7 +20,7 @@
           })
         }
     },
-    618: (e, n, t) => {
+    342: (e, n, t) => {
       "use strict";
       t.r(n), t.d(n, {
         withGtmTracking: () => r,
@@ -28,8 +28,8 @@
         withMediaBasedProps: () => m,
         withTranslations: () => v
       });
-      var a = t(865),
-        i = t(706);
+      var a = t(190),
+        i = t(160);
       const r = e => n => ((e, n) => (0, i.jsx)(e, {
         ...n,
         gtmTrack: e => {
@@ -45,8 +45,8 @@
           locale: t
         })
       })(e, n);
-      var c = t(822),
-        l = t(948),
+      var c = t(932),
+        l = t(653),
         u = t.n(l);
       const m = function(e) {
         let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 250;
@@ -79,7 +79,7 @@
           })
         })(e, t, n)
       };
-      var f = t(167);
+      var f = t(390);
       const v = function(e) {
         let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "default";
         return t => ((e, n, t) => {
@@ -101,9 +101,9 @@
         })(e, t, n)
       }
     },
-    472: (e, n, t) => {
+    143: (e, n, t) => {
       "use strict";
-      var a, i = (a = t(496)) && a.__esModule ? a : {
+      var a, i = (a = t(680)) && a.__esModule ? a : {
           default: a
         },
         r = {
@@ -127,9 +127,9 @@
         };
       e.exports = r
     },
-    357: (e, n, t) => {
+    248: (e, n, t) => {
       "use strict";
-      var a, i = (a = t(472)) && a.__esModule ? a : {
+      var a, i = (a = t(143)) && a.__esModule ? a : {
           default: a
         },
         r = {
@@ -184,14 +184,14 @@
         };
       e.exports = r
     },
-    449: (e, n, t) => {
+    806: (e, n, t) => {
       "use strict";
-      var a, i = (a = t(357)) && a.__esModule ? a : {
+      var a, i = (a = t(248)) && a.__esModule ? a : {
         default: a
       };
       e.exports = i.default
     },
-    496: (e, n) => {
+    680: (e, n) => {
       "use strict";
       Object.defineProperty(n, "__esModule", {
         value: !0
@@ -199,7 +199,7 @@
         console.warn("[react-gtm]", e)
       }
     },
-    167: e => {
+    390: e => {
       var n = {
         kind: "Document",
         definitions: [{

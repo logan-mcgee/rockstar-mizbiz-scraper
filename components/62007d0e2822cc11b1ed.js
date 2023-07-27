@@ -25,31 +25,31 @@
               top: 0
             },
             contentStyle: f = {},
-            contentClassName: b = "",
-            width: u
+            contentClassName: u = "",
+            width: b
           } = t, {
             left: h,
             top: m
           } = r;
-          const [p] = (0, n.useState)({
+          const [p, v] = (0, n.useState)(null), [y] = (0, n.useState)({
             y: m,
             x: h,
             top: 0,
             left: 0,
-            width: u,
+            width: b,
             height: c,
             border: "0px solid transparent",
             background: "transparent"
-          }), v = {
+          }), k = {
             opacity: 1
-          }, y = (0, n.useRef)(null), k = {
+          }, x = (0, n.useRef)(null), w = {
             ease: [.77, 0, .175, 1],
             duration: .5
-          }, x = {
+          }, g = {
             ease: "easeIn",
             duration: .3,
             delay: .5
-          }, [w] = (0, n.useState)({
+          }, [E] = (0, n.useState)({
             x: "-50%",
             y: "-50%",
             top: "50%",
@@ -59,33 +59,33 @@
             border: "1px solid var(--border-color, #2d2d2d)",
             background: "var(--black-100)",
             transition: {
-              x: k,
-              y: k,
-              top: k,
-              left: k,
-              width: k,
-              height: k,
-              border: k,
+              x: w,
+              y: w,
+              top: w,
+              left: w,
+              width: w,
+              height: w,
+              border: w,
               background: {
                 delay: .3
               }
             }
-          }), [g, E] = (0, n.useState)({
-            initial: p,
-            shown: w
+          }), [_, C] = (0, n.useState)({
+            initial: y,
+            shown: E
           });
           (0, n.useEffect)((() => {
-            E({
-              initial: p,
-              shown: w
+            C({
+              initial: y,
+              shown: E
             })
-          }), [p, w]), (0, n.useEffect)((() => {
+          }), [y, E]), (0, n.useEffect)((() => {
             const e = e => {
               "function" == typeof d && 27 === e.keyCode && d()
             };
             return document.addEventListener("keydown", e, !1), () => document.removeEventListener("keydown", e, !1)
           }), []);
-          const _ = () => "function" == typeof d ? d() : null;
+          const j = () => "function" == typeof d ? d() : null;
           return (0, n.useMemo)((() => (0, l.jsxs)("div", {
             className: "_93f8151fb9eb5ac4b1b29da799154d1b51b7",
             "data-show-nav": false,
@@ -94,28 +94,28 @@
               initial: {
                 opacity: 0
               },
-              animate: v,
-              transition: k,
-              onClick: () => _()
+              animate: k,
+              transition: w,
+              onClick: () => j()
             }), false, (0, l.jsx)(o.E.div, {
               className: "_93f8151fb9eb5ac4fe0c0d0b3f72589dfd69",
-              ref: y,
+              ref: x,
               initial: "initial",
               animate: "shown",
-              variants: g,
-              transition: k,
+              variants: _,
+              transition: w,
               style: f,
               children: (0, l.jsxs)(o.E.div, {
                 className: (0, i.classList)("_93f8151fb9eb5ac4fcc01a21ba6273e262bd", s),
                 children: [(0, l.jsx)(o.E.div, {
-                  className: (0, i.classList)("_93f8151fb9eb5ac4df0821d6f0e927283e86", b),
+                  className: (0, i.classList)("_93f8151fb9eb5ac4df0821d6f0e927283e86", u),
                   initial: {
                     opacity: 0
                   },
                   animate: {
                     opacity: 1
                   },
-                  transition: x,
+                  transition: g,
                   children: a
                 }), (0, l.jsx)(o.E.button, {
                   className: "_93f8151fb9eb5ac4b6365baf583b9e283753",
@@ -125,14 +125,14 @@
                   animate: {
                     opacity: 1
                   },
-                  transition: x,
+                  transition: g,
                   onClick: () => {
-                    _()
+                    j()
                   }
                 })]
               })
             })]
-          })), [a, cardPosition, f])
+          })), [a, p, f])
         },
         d = (0, n.createContext)(null),
         r = () => (0, n.useContext)(d),

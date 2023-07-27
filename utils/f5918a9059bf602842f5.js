@@ -1,7 +1,7 @@
 "use strict";
 (self.webpackChunk_rockstargames_utils = self.webpackChunk_rockstargames_utils || []).push([
-  [387], {
-    387: (e, t, s) => {
+  [681], {
+    681: (e, t, s) => {
       s.r(t), s.d(t, {
         mutateLSSettings: () => c,
         settingsReactive: () => n,
