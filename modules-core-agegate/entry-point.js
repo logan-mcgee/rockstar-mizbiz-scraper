@@ -4,7 +4,7 @@ var modules_core_agegate;
   var e, r, t, n, a = {
       288: (e, r, t) => {
         var n = {
-            "./index": () => Promise.all([t.e(232), t.e(527)]).then((() => () => t(726)))
+            "./index": () => Promise.all([t.e(447), t.e(142)]).then((() => () => t(45)))
           },
           a = (e, r) => (t.R = r, r = t.o(n, e) ? n[e]() : Promise.resolve().then((() => {
             throw new Error('Module "' + e + '" does not exist in container.')
@@ -70,10 +70,10 @@ var modules_core_agegate;
       get: r[t]
     })
   }, i.f = {}, i.e = e => Promise.all(Object.keys(i.f).reduce(((r, t) => (i.f[t](e, r), r)), [])), i.u = e => "js/" + {
-    232: "51947ea897805cc2100f",
-    527: "16148a9c7b2c6db581d2",
-    627: "717210f45bb1388db530"
-  } [e] + ".js", i.miniCssF = e => "css/45e5bc19e20e4dfe8e85.css", i.g = function() {
+    142: "4135349b85aedaae5078",
+    252: "12eec31e4ea9a15c85ad",
+    447: "5e9362efafd57373f4eb"
+  } [e] + ".js", i.miniCssF = e => "css/de01874c49c61f8fb916.css", i.g = function() {
     if ("object" == typeof globalThis) return globalThis;
     try {
       return this || new Function("return this")()
@@ -111,7 +111,7 @@ var modules_core_agegate;
       value: !0
     })
   }, i.nmd = e => (e.paths = [], e.children || (e.children = []), e), t = {
-    527: [711, 929]
+    142: [711, 929]
   }, n = {
     711: ["default", "./index", 426],
     929: ["default", "./index", 810]
@@ -161,7 +161,7 @@ var modules_core_agegate;
           s = "@rockstargames/modules-core-agegate",
           u = e => {
             var r = e => {
-              return r = "Initialization of sharing external failed: " + e, "undefined" != typeof console && console.warn && console.warn(r);
+              return r = "Initialization of sharing external failed: " + e, void("undefined" != typeof console && console.warn && console.warn(r));
               var r
             };
             try {
@@ -180,7 +180,7 @@ var modules_core_agegate;
           var a = o[e] = o[e] || {},
             u = a[r];
           (!u || !u.loaded && (1 != !u.eager ? n : s > u.from)) && (a[r] = {
-            get: () => i.e(627).then((() => () => i(627))),
+            get: () => i.e(252).then((() => () => i(252))),
             from: s,
             eager: !1
           })
@@ -193,7 +193,8 @@ var modules_core_agegate;
     var r = i.g.document;
     if (!e && r && (r.currentScript && (e = r.currentScript.src), !e)) {
       var t = r.getElementsByTagName("script");
-      t.length && (e = t[t.length - 1].src)
+      if (t.length)
+        for (var n = t.length - 1; n > -1 && !e;) e = t[n--].src
     }
     if (!e) throw new Error("Automatic publicPath is not supported in this browser");
     e = e.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/"), i.p = e
@@ -266,10 +267,10 @@ var modules_core_agegate;
       })),
       a = {},
       o = {
-        822: () => n("default", "react", [1, 18, 2, 0], (() => i.e(627).then((() => () => i(627)))))
+        932: () => n("default", "react", [1, 18, 2, 0], (() => i.e(252).then((() => () => i(252)))))
       },
       s = {
-        527: [822]
+        142: [932]
       };
     i.f.consumes = (e, r) => {
       i.o(s, e) && s[e].forEach((e => {
@@ -299,7 +300,7 @@ var modules_core_agegate;
       };
       i.f.miniCss = (r, t) => {
         e[r] ? t.push(e[r]) : 0 !== e[r] && {
-          527: 1
+          142: 1
         } [r] && t.push(e[r] = (e => new Promise(((r, t) => {
           var n = i.miniCssF(e),
             a = i.p + n;
@@ -322,7 +323,7 @@ var modules_core_agegate;
                 var i = t && ("load" === t.type ? "missing" : t.type),
                   s = t && t.target && t.target.href || r,
                   u = new Error("Loading CSS chunk " + e + " failed.\n(" + s + ")");
-                u.code = "CSS_CHUNK_LOAD_FAILED", u.type = i, u.request = s, o.parentNode.removeChild(o), a(u)
+                u.code = "CSS_CHUNK_LOAD_FAILED", u.type = i, u.request = s, o.parentNode && o.parentNode.removeChild(o), a(u)
               }
             }, o.href = r, document.head.appendChild(o)
           })(e, a, 0, r, t)

@@ -4,13 +4,13 @@ var tina;
   var e, r, t, a, n = {
       697: (e, r, t) => {
         var a = {
-            "./index": () => Promise.all([t.e(945), t.e(948), t.e(822), t.e(468), t.e(929), t.e(166), t.e(509)]).then((() => () => t(347))),
-            "./helpers": () => t.e(128).then((() => () => t(128))),
-            "./helpers/payload": () => Promise.all([t.e(948), t.e(924)]).then((() => () => t(924))),
-            "./helpers/uploads": () => Promise.all([t.e(822), t.e(929), t.e(479)]).then((() => () => t(479))),
-            "./properties": () => Promise.all([t.e(945), t.e(822), t.e(468), t.e(929), t.e(166), t.e(895)]).then((() => () => t(166))),
-            "./tinaBlockTemplates": () => t.e(91).then((() => () => t(91))),
-            "./ui": () => Promise.all([t.e(945), t.e(822), t.e(468), t.e(35)]).then((() => () => t(35)))
+            "./index": () => Promise.all([t.e(16), t.e(653), t.e(932), t.e(722), t.e(929), t.e(223), t.e(601)]).then((() => () => t(521))),
+            "./helpers": () => t.e(995).then((() => () => t(995))),
+            "./helpers/payload": () => Promise.all([t.e(653), t.e(310)]).then((() => () => t(310))),
+            "./helpers/uploads": () => Promise.all([t.e(932), t.e(929), t.e(308)]).then((() => () => t(308))),
+            "./properties": () => Promise.all([t.e(16), t.e(932), t.e(722), t.e(929), t.e(223), t.e(455)]).then((() => () => t(223))),
+            "./tinaBlockTemplates": () => t.e(156).then((() => () => t(156))),
+            "./ui": () => Promise.all([t.e(16), t.e(932), t.e(722), t.e(967)]).then((() => () => t(967)))
           },
           n = (e, r) => (t.R = r, r = t.o(a, e) ? a[e]() : Promise.resolve().then((() => {
             throw new Error('Module "' + e + '" does not exist in container.')
@@ -88,25 +88,25 @@ var tina;
       get: r[t]
     })
   }, o.f = {}, o.e = e => Promise.all(Object.keys(o.f).reduce(((r, t) => (o.f[t](e, r), r)), [])), o.u = e => "js/" + {
-    35: "1d9aa7fadcfd0a24f12e",
-    91: "56b3a4b61398073e997e",
-    128: "7387d0a06414109da0aa",
-    166: "152227401f506df65b1b",
-    468: "302dd4b61a88efe5f450",
-    479: "b46f3174d64274dbe7e8",
-    509: "94fd0f88141a9fd08e19",
-    591: "50c9f73182c82085af33",
-    769: "1ebb62390c8d42b42d6f",
-    822: "5c74e6af4030bee40cc1",
-    895: "49614ec1aa7832b18506",
-    924: "4044f947fa2d86342f5d",
+    16: "6fc1ee6c25e3308d4f6b",
+    156: "32bcbd0cf8403dc72537",
+    223: "5869d0b61b5e04fe3458",
+    252: "5a5f296235e71ce3da2d",
+    308: "91c2cf7369a8b2d2fbe5",
+    310: "22ba25e1e6c14bac9027",
+    364: "82731f042987d64dc350",
+    455: "b9eea9d40b457e0da242",
+    601: "47eeed065986f64dc3b8",
+    653: "2b800c07512ae67695ef",
+    722: "ef1134c3d20810138c58",
     929: "59f6f69c71010b5da0b9",
-    945: "e71a353692e71cef358a",
-    948: "d2ff1b84adfd5fcc4650"
+    932: "553c7d18a4956c0b02eb",
+    967: "3cdd3f8cb722b6eabb82",
+    995: "98e266175feb57b21d01"
   } [e] + ".js", o.miniCssF = e => "css/" + {
-    35: "cabb8aad370eedadb687",
-    509: "108a96a4ada4cbc2c357",
-    895: "108a96a4ada4cbc2c357"
+    455: "a26c7fa9d5c544aafe61",
+    601: "a26c7fa9d5c544aafe61",
+    967: "36dcaa2c15b3b824a72c"
   } [e] + ".css", o.g = function() {
     if ("object" == typeof globalThis) return globalThis;
     try {
@@ -145,8 +145,8 @@ var tina;
       value: !0
     })
   }, o.nmd = e => (e.paths = [], e.children || (e.children = []), e), t = {
-    91: [616],
-    166: [859],
+    156: [616],
+    223: [859],
     929: [929]
   }, a = {
     616: ["default", "./properties", 489],
@@ -222,7 +222,7 @@ var tina;
             }
           },
           f = [];
-        return "default" === t && (l("react-dom", "18.2.0", (() => Promise.all([o.e(591), o.e(822)]).then((() => () => o(591))))), l("react", "18.2.0", (() => o.e(769).then((() => () => o(769))))), d(810), d(171), d(489)), f.length ? e[t] = Promise.all(f).then((() => e[t] = 1)) : e[t] = 1
+        return "default" === t && (l("react-dom", "18.2.0", (() => Promise.all([o.e(364), o.e(932)]).then((() => () => o(364))))), l("react", "18.2.0", (() => o.e(252).then((() => () => o(252))))), d(810), d(171), d(489)), f.length ? e[t] = Promise.all(f).then((() => e[t] = 1)) : e[t] = 1
       }
     }
   })(), (() => {
@@ -305,12 +305,12 @@ var tina;
       })),
       n = {},
       i = {
-        822: () => a("default", "react", [1, 18, 2, 0], (() => o.e(769).then((() => () => o(769))))),
-        468: () => a("default", "react-dom", [1, 18, 2, 0], (() => o.e(591).then((() => () => o(591)))))
+        932: () => a("default", "react", [1, 18, 2, 0], (() => o.e(252).then((() => () => o(252))))),
+        722: () => a("default", "react-dom", [1, 18, 2, 0], (() => o.e(364).then((() => () => o(364)))))
       },
       s = {
-        468: [468],
-        822: [822]
+        722: [722],
+        932: [932]
       };
     o.f.consumes = (e, r) => {
       o.o(s, e) && s[e].forEach((e => {
@@ -340,9 +340,9 @@ var tina;
       };
       o.f.miniCss = (r, t) => {
         e[r] ? t.push(e[r]) : 0 !== e[r] && {
-          35: 1,
-          509: 1,
-          895: 1
+          455: 1,
+          601: 1,
+          967: 1
         } [r] && t.push(e[r] = (e => new Promise(((r, t) => {
           var a = o.miniCssF(e),
             n = o.p + a;
@@ -384,7 +384,7 @@ var tina;
       var a = o.o(e, r) ? e[r] : void 0;
       if (0 !== a)
         if (a) t.push(a[2]);
-        else if (/^(468|822|895|929)$/.test(r)) e[r] = 0;
+        else if (/^(455|722|929|932)$/.test(r)) e[r] = 0;
       else {
         var n = new Promise(((t, n) => a = e[r] = [t, n]));
         t.push(a[2] = n);

@@ -2,11 +2,12 @@ var modules_core_gif_viewer;
 (() => {
   "use strict";
   var e, r, t, n, a = {
-      215: (e, r, t) => {
+      749: (e, r, t) => {
         var n = {
-            "./index": () => Promise.all([t.e(822), t.e(859), t.e(199)]).then((() => () => t(199))),
-            "./lazy": () => Promise.all([t.e(822), t.e(859), t.e(425)]).then((() => () => t(425))),
-            "./tinaBlockTemplates": () => Promise.all([t.e(822), t.e(859), t.e(352)]).then((() => () => t(352)))
+            "./index": () => Promise.all([t.e(932), t.e(859), t.e(248)]).then((() => () => t(248))),
+            "./lazy": () => Promise.all([t.e(932), t.e(859), t.e(182)]).then((() => () => t(182))),
+            "./tinaBlockTemplates": () => Promise.all([t.e(932), t.e(859), t.e(215)]).then((() => () => t(215))),
+            "./tina": () => Promise.all([t.e(932), t.e(859), t.e(215)]).then((() => () => t(215)))
           },
           a = (e, r) => (t.R = r, r = t.o(n, e) ? n[e]() : Promise.resolve().then((() => {
             throw new Error('Module "' + e + '" does not exist in container.')
@@ -82,16 +83,16 @@ var modules_core_gif_viewer;
       get: r[t]
     })
   }, i.f = {}, i.e = e => Promise.all(Object.keys(i.f).reduce(((r, t) => (i.f[t](e, r), r)), [])), i.u = e => "js/" + {
-    199: "c37d0277df10d9a9645e",
-    352: "940401cb4f7179825b0c",
-    425: "9a7099fca0c511266a67",
-    627: "caa47fd00167bfb8b035",
-    822: "c0354d50282dc97b92ec",
-    859: "e4caf27b84608577be3e",
-    893: "c6ccf57540d4bcf9bb27"
+    182: "71ba7ff959a9a29e3d80",
+    215: "0947186146e0f4783014",
+    248: "866b80f0c43c70ced5cf",
+    252: "c8f83a9d436318076953",
+    528: "3219d59fd678d2e1e7fb",
+    859: "8138c0838b6d63535b79",
+    932: "fe660ac2529756c9938d"
   } [e] + ".js", i.miniCssF = e => "css/" + {
-    199: "8534ddbf090f8f018cbf",
-    425: "93926393d68a405975eb"
+    182: "343d25192422a35f8d99",
+    248: "0aceb8334ffacc6803e4"
   } [e] + ".css", i.g = function() {
     if ("object" == typeof globalThis) return globalThis;
     try {
@@ -102,16 +103,16 @@ var modules_core_gif_viewer;
   }(), i.o = (e, r) => Object.prototype.hasOwnProperty.call(e, r), e = {}, r = "@rockstargames/modules-core-gif-viewer:", i.l = (t, n, a, o) => {
     if (e[t]) e[t].push(n);
     else {
-      var s, f;
+      var s, l;
       if (void 0 !== a)
-        for (var l = document.getElementsByTagName("script"), u = 0; u < l.length; u++) {
-          var d = l[u];
+        for (var u = document.getElementsByTagName("script"), f = 0; f < u.length; f++) {
+          var d = u[f];
           if (d.getAttribute("src") == t || d.getAttribute("data-webpack") == r + a) {
             s = d;
             break
           }
         }
-      s || (f = !0, (s = document.createElement("script")).charset = "utf-8", s.timeout = 120, i.nc && s.setAttribute("nonce", i.nc), s.setAttribute("data-webpack", r + a), s.src = t), e[t] = [n];
+      s || (l = !0, (s = document.createElement("script")).charset = "utf-8", s.timeout = 120, i.nc && s.setAttribute("nonce", i.nc), s.setAttribute("data-webpack", r + a), s.src = t), e[t] = [n];
       var c = (r, n) => {
           s.onerror = s.onload = null, clearTimeout(p);
           var a = e[t];
@@ -121,7 +122,7 @@ var modules_core_gif_viewer;
           type: "timeout",
           target: s
         }), 12e4);
-      s.onerror = c.bind(null, s.onerror), s.onload = c.bind(null, s.onload), f && document.head.appendChild(s)
+      s.onerror = c.bind(null, s.onerror), s.onload = c.bind(null, s.onload), l && document.head.appendChild(s)
     }
   }, i.r = e => {
     "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
@@ -130,7 +131,7 @@ var modules_core_gif_viewer;
       value: !0
     })
   }, t = {
-    352: [374, 616, 976],
+    215: [374, 616, 976],
     859: [859]
   }, n = {
     374: ["default", "./ui", 489],
@@ -149,24 +150,24 @@ var modules_core_gif_viewer;
               throw r
             }, a.p = 0
           },
-          s = (e, t, n, i, s, f) => {
+          s = (e, t, n, i, s, l) => {
             try {
-              var l = e(t, n);
-              if (!l || !l.then) return s(l, i, f);
-              var u = l.then((e => s(e, i)), o);
-              if (!f) return u;
-              r.push(a.p = u)
+              var u = e(t, n);
+              if (!u || !u.then) return s(u, i, l);
+              var f = u.then((e => s(e, i)), o);
+              if (!l) return f;
+              r.push(a.p = f)
             } catch (e) {
               o(e)
             }
           },
-          f = (e, r, n) => s(r.get, a[1], t, 0, l, n),
-          l = r => {
+          l = (e, r, n) => s(r.get, a[1], t, 0, u, n),
+          u = r => {
             a.p = 1, i.m[e] = e => {
               e.exports = r()
             }
           };
-        s(i, a[2], 0, 0, ((e, r, t) => e ? s(i.I, a[0], 0, e, f, t) : o()), 1)
+        s(i, a[2], 0, 0, ((e, r, t) => e ? s(i.I, a[0], 0, e, l, t) : o()), 1)
       }
     }))
   }, (() => {
@@ -181,7 +182,7 @@ var modules_core_gif_viewer;
         i.o(i.S, t) || (i.S[t] = {});
         var o = i.S[t],
           s = "@rockstargames/modules-core-gif-viewer",
-          f = (e, r, t, n) => {
+          l = (e, r, t, n) => {
             var a = o[e] = o[e] || {},
               i = a[r];
             (!i || !i.loaded && (!n != !i.eager ? n : s > i.from)) && (a[r] = {
@@ -190,24 +191,24 @@ var modules_core_gif_viewer;
               eager: !!n
             })
           },
-          l = e => {
+          u = e => {
             var r = e => {
-              return r = "Initialization of sharing external failed: " + e, "undefined" != typeof console && console.warn && console.warn(r);
+              return r = "Initialization of sharing external failed: " + e, void("undefined" != typeof console && console.warn && console.warn(r));
               var r
             };
             try {
               var a = i(e);
               if (!a) return;
               var o = e => e && e.init && e.init(i.S[t], n);
-              if (a.then) return u.push(a.then(o, r));
+              if (a.then) return f.push(a.then(o, r));
               var s = o(a);
-              if (s && s.then) return u.push(s.catch(r))
+              if (s && s.then) return f.push(s.catch(r))
             } catch (e) {
               r(e)
             }
           },
-          u = [];
-        return "default" === t && (f("react-router-dom", "6.9.0", (() => Promise.all([i.e(893), i.e(822)]).then((() => () => i(893))))), f("react", "18.2.0", (() => i.e(627).then((() => () => i(627))))), l(171), l(525), l(489)), u.length ? e[t] = Promise.all(u).then((() => e[t] = 1)) : e[t] = 1
+          f = [];
+        return "default" === t && (l("react-router-dom", "6.11.2", (() => Promise.all([i.e(528), i.e(932)]).then((() => () => i(528))))), l("react", "18.2.0", (() => i.e(252).then((() => () => i(252))))), u(171), u(525), u(489)), f.length ? e[t] = Promise.all(f).then((() => e[t] = 1)) : e[t] = 1
       }
     }
   })(), (() => {
@@ -216,7 +217,8 @@ var modules_core_gif_viewer;
     var r = i.g.document;
     if (!e && r && (r.currentScript && (e = r.currentScript.src), !e)) {
       var t = r.getElementsByTagName("script");
-      t.length && (e = t[t.length - 1].src)
+      if (t.length)
+        for (var n = t.length - 1; n > -1 && !e;) e = t[n--].src
     }
     if (!e) throw new Error("Automatic publicPath is not supported in this browser");
     e = e.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/"), i.p = e
@@ -233,26 +235,26 @@ var modules_core_gif_viewer;
           var a = t[0],
             o = a < 0;
           o && (a = -a - 1);
-          for (var i = 0, s = 1, f = !0;; s++, i++) {
-            var l, u, d = s < t.length ? (typeof t[s])[0] : "";
-            if (i >= n.length || "o" == (u = (typeof(l = n[i]))[0])) return !f || ("u" == d ? s > a && !o : "" == d != o);
-            if ("u" == u) {
-              if (!f || "u" != d) return !1
-            } else if (f)
-              if (d == u)
+          for (var i = 0, s = 1, l = !0;; s++, i++) {
+            var u, f, d = s < t.length ? (typeof t[s])[0] : "";
+            if (i >= n.length || "o" == (f = (typeof(u = n[i]))[0])) return !l || ("u" == d ? s > a && !o : "" == d != o);
+            if ("u" == f) {
+              if (!l || "u" != d) return !1
+            } else if (l)
+              if (d == f)
                 if (s <= a) {
-                  if (l != t[s]) return !1
+                  if (u != t[s]) return !1
                 } else {
-                  if (o ? l > t[s] : l < t[s]) return !1;
-                  l != t[s] && (f = !1)
+                  if (o ? u > t[s] : u < t[s]) return !1;
+                  u != t[s] && (l = !1)
                 }
             else if ("s" != d && "n" != d) {
               if (o || s <= a) return !1;
-              f = !1, s--
+              l = !1, s--
             } else {
-              if (s <= a || u < d != o) return !1;
-              f = !1
-            } else "s" != d && "n" != d && (f = !1, s--)
+              if (s <= a || f < d != o) return !1;
+              l = !1
+            } else "s" != d && "n" != d && (l = !1, s--)
           }
         }
         var c = [],
@@ -289,12 +291,12 @@ var modules_core_gif_viewer;
       })),
       a = {},
       o = {
-        822: () => n("default", "react", [1, 18, 2, 0], (() => i.e(627).then((() => () => i(627))))),
-        575: () => n("default", "react-router-dom", [1, 6, 9, 0], (() => i.e(893).then((() => () => i(893)))))
+        932: () => n("default", "react", [1, 18, 2, 0], (() => i.e(252).then((() => () => i(252))))),
+        455: () => n("default", "react-router-dom", [1, 6, 11, 2], (() => i.e(528).then((() => () => i(528)))))
       },
       s = {
-        425: [575],
-        822: [822]
+        182: [455],
+        932: [932]
       };
     i.f.consumes = (e, r) => {
       i.o(s, e) && s[e].forEach((e => {
@@ -324,8 +326,8 @@ var modules_core_gif_viewer;
       };
       i.f.miniCss = (r, t) => {
         e[r] ? t.push(e[r]) : 0 !== e[r] && {
-          199: 1,
-          425: 1
+          182: 1,
+          248: 1
         } [r] && t.push(e[r] = (e => new Promise(((r, t) => {
           var n = i.miniCssF(e),
             a = i.p + n;
@@ -347,8 +349,8 @@ var modules_core_gif_viewer;
               else {
                 var i = t && ("load" === t.type ? "missing" : t.type),
                   s = t && t.target && t.target.href || r,
-                  f = new Error("Loading CSS chunk " + e + " failed.\n(" + s + ")");
-                f.code = "CSS_CHUNK_LOAD_FAILED", f.type = i, f.request = s, o.parentNode.removeChild(o), a(f)
+                  l = new Error("Loading CSS chunk " + e + " failed.\n(" + s + ")");
+                l.code = "CSS_CHUNK_LOAD_FAILED", l.type = i, l.request = s, o.parentNode && o.parentNode.removeChild(o), a(l)
               }
             }, o.href = r, document.head.appendChild(o)
           })(e, a, 0, r, t)
@@ -367,7 +369,7 @@ var modules_core_gif_viewer;
       var n = i.o(e, r) ? e[r] : void 0;
       if (0 !== n)
         if (n) t.push(n[2]);
-        else if (/^8(22|59)$/.test(r)) e[r] = 0;
+        else if (/^(859|932)$/.test(r)) e[r] = 0;
       else {
         var a = new Promise(((t, a) => n = e[r] = [t, a]));
         t.push(n[2] = a);
@@ -385,17 +387,17 @@ var modules_core_gif_viewer;
     var r = (r, t) => {
         var n, a, o = t[0],
           s = t[1],
-          f = t[2],
-          l = 0;
+          l = t[2],
+          u = 0;
         if (o.some((r => 0 !== e[r]))) {
           for (n in s) i.o(s, n) && (i.m[n] = s[n]);
-          f && f(i)
+          l && l(i)
         }
-        for (r && r(t); l < o.length; l++) a = o[l], i.o(e, a) && e[a] && e[a][0](), e[a] = 0
+        for (r && r(t); u < o.length; u++) a = o[u], i.o(e, a) && e[a] && e[a][0](), e[a] = 0
       },
       t = self.webpackChunk_rockstargames_modules_core_gif_viewer = self.webpackChunk_rockstargames_modules_core_gif_viewer || [];
     t.forEach(r.bind(null, 0)), t.push = r.bind(null, t.push.bind(t))
   })();
-  var s = i(215);
+  var s = i(749);
   modules_core_gif_viewer = s
 })();

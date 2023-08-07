@@ -1,86 +1,123 @@
 var modules_core_videoplayer;
 (() => {
   "use strict";
-  var e, r, t, n, a = {
-      215: (e, r, t) => {
-        var n = {
-            "./index": () => Promise.all([t.e(957), t.e(613), t.e(689), t.e(723)]).then((() => () => t(723))),
-            "./lazy": () => Promise.all([t.e(957), t.e(613), t.e(689), t.e(425)]).then((() => () => t(425))),
-            "./tinaBlockTemplates": () => Promise.all([t.e(345), t.e(613), t.e(352)]).then((() => () => t(352)))
+  var e, r, t, a, n = {
+      2221: (e, r, t) => {
+        var a = {
+            "./index": () => Promise.all([t.e(798), t.e(485), t.e(932), t.e(773), t.e(610), t.e(872)]).then((() => () => t(4872))),
+            "./bootstrap": () => t.e(533).then((() => () => t(6533))),
+            "./tina": () => Promise.all([t.e(798), t.e(932), t.e(773), t.e(215)]).then((() => () => t(6215))),
+            "./tinaBlockTemplates": () => Promise.all([t.e(798), t.e(932), t.e(773), t.e(215)]).then((() => () => t(6215)))
           },
-          a = (e, r) => (t.R = r, r = t.o(n, e) ? n[e]() : Promise.resolve().then((() => {
+          n = (e, r) => (t.R = r, r = t.o(a, e) ? a[e]() : Promise.resolve().then((() => {
             throw new Error('Module "' + e + '" does not exist in container.')
           })), t.R = void 0, r),
           o = (e, r) => {
             if (t.S) {
-              var n = "default",
-                a = t.S[n];
-              if (a && a !== e) throw new Error("Container initialization failed as it has already been initialized with a different share scope");
-              return t.S[n] = e, t.I(n, r)
+              var a = "default",
+                n = t.S[a];
+              if (n && n !== e) throw new Error("Container initialization failed as it has already been initialized with a different share scope");
+              return t.S[a] = e, t.I(a, r)
             }
           };
         t.d(r, {
-          get: () => a,
+          get: () => n,
           init: () => o
         })
       },
-      525: (e, r, t) => {
-        var n = new Error;
+      9525: (e, r, t) => {
+        var a = new Error;
         e.exports = new Promise(((e, r) => {
           if ("undefined" != typeof components) return e();
           t.l(window.mfe.path("@rockstargames/components"), (t => {
             if ("undefined" != typeof components) return e();
-            var a = t && ("load" === t.type ? "missing" : t.type),
+            var n = t && ("load" === t.type ? "missing" : t.type),
               o = t && t.target && t.target.src;
-            n.message = "Loading script failed.\n(" + a + ": " + o + ")", n.name = "ScriptExternalLoadError", n.type = a, n.request = o, r(n)
+            a.message = "Loading script failed.\n(" + n + ": " + o + ")", a.name = "ScriptExternalLoadError", a.type = n, a.request = o, r(a)
           }), "components")
         })).then((() => components))
       },
-      171: (e, r, t) => {
-        var n = new Error;
+      5171: (e, r, t) => {
+        var a = new Error;
         e.exports = new Promise(((e, r) => {
           if ("undefined" != typeof graph_client) return e();
           t.l(window.mfe.path("@rockstargames/graph-client"), (t => {
             if ("undefined" != typeof graph_client) return e();
-            var a = t && ("load" === t.type ? "missing" : t.type),
+            var n = t && ("load" === t.type ? "missing" : t.type),
               o = t && t.target && t.target.src;
-            n.message = "Loading script failed.\n(" + a + ": " + o + ")", n.name = "ScriptExternalLoadError", n.type = a, n.request = o, r(n)
+            a.message = "Loading script failed.\n(" + n + ": " + o + ")", a.name = "ScriptExternalLoadError", a.type = n, a.request = o, r(a)
           }), "graph_client")
         })).then((() => graph_client))
       },
-      850: (e, r, t) => {
-        var n = new Error;
+      8413: (e, r, t) => {
+        var a = new Error;
+        e.exports = new Promise(((e, r) => {
+          if ("undefined" != typeof intl) return e();
+          t.l(window.mfe.path("@rockstargames/intl"), (t => {
+            if ("undefined" != typeof intl) return e();
+            var n = t && ("load" === t.type ? "missing" : t.type),
+              o = t && t.target && t.target.src;
+            a.message = "Loading script failed.\n(" + n + ": " + o + ")", a.name = "ScriptExternalLoadError", a.type = n, a.request = o, r(a)
+          }), "intl")
+        })).then((() => intl))
+      },
+      4850: (e, r, t) => {
+        var a = new Error;
         e.exports = new Promise(((e, r) => {
           if ("undefined" != typeof modules_core_agegate) return e();
           t.l(window.mfe.path("@rockstargames/modules-core-agegate"), (t => {
             if ("undefined" != typeof modules_core_agegate) return e();
-            var a = t && ("load" === t.type ? "missing" : t.type),
+            var n = t && ("load" === t.type ? "missing" : t.type),
               o = t && t.target && t.target.src;
-            n.message = "Loading script failed.\n(" + a + ": " + o + ")", n.name = "ScriptExternalLoadError", n.type = a, n.request = o, r(n)
+            a.message = "Loading script failed.\n(" + n + ": " + o + ")", a.name = "ScriptExternalLoadError", a.type = n, a.request = o, r(a)
           }), "modules_core_agegate")
         })).then((() => modules_core_agegate))
       },
-      489: (e, r, t) => {
-        var n = new Error;
+      7426: (e, r, t) => {
+        var a = new Error;
+        e.exports = new Promise(((e, r) => {
+          if ("undefined" != typeof modules_core_sc_user) return e();
+          t.l(window.mfe.path("@rockstargames/modules-core-sc-user"), (t => {
+            if ("undefined" != typeof modules_core_sc_user) return e();
+            var n = t && ("load" === t.type ? "missing" : t.type),
+              o = t && t.target && t.target.src;
+            a.message = "Loading script failed.\n(" + n + ": " + o + ")", a.name = "ScriptExternalLoadError", a.type = n, a.request = o, r(a)
+          }), "modules_core_sc_user")
+        })).then((() => modules_core_sc_user))
+      },
+      692: (e, r, t) => {
+        var a = new Error;
+        e.exports = new Promise(((e, r) => {
+          if ("undefined" != typeof polyfills) return e();
+          t.l(window.mfe.path("@rockstargames/polyfills"), (t => {
+            if ("undefined" != typeof polyfills) return e();
+            var n = t && ("load" === t.type ? "missing" : t.type),
+              o = t && t.target && t.target.src;
+            a.message = "Loading script failed.\n(" + n + ": " + o + ")", a.name = "ScriptExternalLoadError", a.type = n, a.request = o, r(a)
+          }), "polyfills")
+        })).then((() => polyfills))
+      },
+      1489: (e, r, t) => {
+        var a = new Error;
         e.exports = new Promise(((e, r) => {
           if ("undefined" != typeof tina) return e();
           t.l(window.mfe.path("@rockstargames/tina"), (t => {
             if ("undefined" != typeof tina) return e();
-            var a = t && ("load" === t.type ? "missing" : t.type),
+            var n = t && ("load" === t.type ? "missing" : t.type),
               o = t && t.target && t.target.src;
-            n.message = "Loading script failed.\n(" + a + ": " + o + ")", n.name = "ScriptExternalLoadError", n.type = a, n.request = o, r(n)
+            a.message = "Loading script failed.\n(" + n + ": " + o + ")", a.name = "ScriptExternalLoadError", a.type = n, a.request = o, r(a)
           }), "tina")
         })).then((() => tina))
       },
-      810: (e, r, t) => {
-        var n = new Error;
+      8810: (e, r, t) => {
+        var a = new Error;
         e.exports = new Promise(((e, r) => {
           if ("undefined" != typeof utils) return e();
           t.l(window.mfe.path("@rockstargames/utils"), (t => {
             if ("undefined" != typeof utils) return e();
-            var a = t && ("load" === t.type ? "missing" : t.type),
+            var n = t && ("load" === t.type ? "missing" : t.type),
               o = t && t.target && t.target.src;
-            n.message = "Loading script failed.\n(" + a + ": " + o + ")", n.name = "ScriptExternalLoadError", n.type = a, n.request = o, r(n)
+            a.message = "Loading script failed.\n(" + n + ": " + o + ")", a.name = "ScriptExternalLoadError", a.type = n, a.request = o, r(a)
           }), "utils")
         })).then((() => utils))
       }
@@ -95,9 +132,9 @@ var modules_core_videoplayer;
       loaded: !1,
       exports: {}
     };
-    return a[e].call(t.exports, t, t.exports, i), t.loaded = !0, t.exports
+    return n[e].call(t.exports, t, t.exports, i), t.loaded = !0, t.exports
   }
-  i.m = a, i.c = o, i.n = e => {
+  i.m = n, i.c = o, i.n = e => {
     var r = e && e.__esModule ? () => e.default : () => e;
     return i.d(r, {
       a: r
@@ -108,18 +145,22 @@ var modules_core_videoplayer;
       get: r[t]
     })
   }, i.f = {}, i.e = e => Promise.all(Object.keys(i.f).reduce(((r, t) => (i.f[t](e, r), r)), [])), i.u = e => "js/" + {
-    345: "682bb1cde8e9b1c1eb1f",
-    352: "39cb9011822ee6bc2f0b",
-    425: "f14fe0006ef858f849cb",
-    613: "be0fa2b31d5e56a893b1",
-    627: "8e810be9bcb4ca221083",
-    689: "918a8364515cead52ced",
-    723: "16e6614a8169a9fb6b7d",
-    957: "23377ac2ed20e8e4a2ce"
+    215: "034238fa59d9d3d74996",
+    252: "f27562174d7dafa3e1c4",
+    280: "431ec890cceb46fe4d44",
+    334: "ce9efb0b7dd76f70e54a",
+    485: "4366e010b23f936d495f",
+    533: "09d1f85df7d67e419d39",
+    610: "13e294720c58812acf08",
+    773: "12ece128f810ad940287",
+    798: "fe4b0edb33e917f4d9ce",
+    872: "bd521b71fe1434cc57af",
+    932: "5dc5fb5ebfc9fc7df0f2",
+    944: "7a5d99336f446c2e15b2"
   } [e] + ".js", i.miniCssF = e => "css/" + {
-    425: "878fcf52f09190b367d5",
-    689: "0987ffe7ca8cac983a66",
-    723: "e5d9d3aee53115dbb6f3"
+    610: "97095d25fadbc721d8a9",
+    872: "d2feade5c41fbdc93c0b",
+    944: "eca52e67dbc3a7b3f2be"
   } [e] + ".css", i.g = function() {
     if ("object" == typeof globalThis) return globalThis;
     try {
@@ -127,23 +168,23 @@ var modules_core_videoplayer;
     } catch (e) {
       if ("object" == typeof window) return window
     }
-  }(), i.o = (e, r) => Object.prototype.hasOwnProperty.call(e, r), e = {}, r = "@rockstargames/modules-core-videoplayer:", i.l = (t, n, a, o) => {
-    if (e[t]) e[t].push(n);
+  }(), i.o = (e, r) => Object.prototype.hasOwnProperty.call(e, r), e = {}, r = "@rockstargames/modules-core-videoplayer:", i.l = (t, a, n, o) => {
+    if (e[t]) e[t].push(a);
     else {
       var s, d;
-      if (void 0 !== a)
-        for (var l = document.getElementsByTagName("script"), u = 0; u < l.length; u++) {
-          var f = l[u];
-          if (f.getAttribute("src") == t || f.getAttribute("data-webpack") == r + a) {
-            s = f;
+      if (void 0 !== n)
+        for (var l = document.getElementsByTagName("script"), f = 0; f < l.length; f++) {
+          var u = l[f];
+          if (u.getAttribute("src") == t || u.getAttribute("data-webpack") == r + n) {
+            s = u;
             break
           }
         }
-      s || (d = !0, (s = document.createElement("script")).charset = "utf-8", s.timeout = 120, i.nc && s.setAttribute("nonce", i.nc), s.setAttribute("data-webpack", r + a), s.src = t), e[t] = [n];
-      var p = (r, n) => {
+      s || (d = !0, (s = document.createElement("script")).charset = "utf-8", s.timeout = 120, i.nc && s.setAttribute("nonce", i.nc), s.setAttribute("data-webpack", r + n), s.src = t), e[t] = [a];
+      var p = (r, a) => {
           s.onerror = s.onload = null, clearTimeout(c);
-          var a = e[t];
-          if (delete e[t], s.parentNode && s.parentNode.removeChild(s), a && a.forEach((e => e(n))), r) return r(n)
+          var n = e[t];
+          if (delete e[t], s.parentNode && s.parentNode.removeChild(s), n && n.forEach((e => e(a))), r) return r(a)
         },
         c = setTimeout(p.bind(null, void 0, {
           type: "timeout",
@@ -158,87 +199,94 @@ var modules_core_videoplayer;
       value: !0
     })
   }, i.nmd = e => (e.paths = [], e.children || (e.children = []), e), t = {
-    352: [374, 616, 761],
-    613: [859, 976],
-    689: [194, 929]
-  }, n = {
-    194: ["default", "./index", 850],
-    374: ["default", "./ui", 489],
-    616: ["default", "./properties", 489],
-    761: ["default", "./operations/queries", 171],
-    859: ["default", "./index", 171],
-    929: ["default", "./index", 810],
-    976: ["default", "./index", 525]
+    215: [3374, 3616, 3761],
+    610: [1570, 6711, 7194, 9929],
+    773: [8976, 4859],
+    944: [1458, 6331, 7842]
+  }, a = {
+    1458: ["default", "./providers", 7426],
+    1570: ["default", "./index", 8413],
+    3374: ["default", "./ui", 1489],
+    3616: ["default", "./properties", 1489],
+    3761: ["default", "./operations/queries", 5171],
+    4859: ["default", "./index", 5171],
+    6331: ["default", "./gtm", 8810],
+    6711: ["default", "./index", 7426],
+    7194: ["default", "./index", 4850],
+    7842: ["default", "./browser", 692],
+    8976: ["default", "./index", 9525],
+    9929: ["default", "./index", 8810]
   }, i.f.remotes = (e, r) => {
     i.o(t, e) && t[e].forEach((e => {
       var t = i.R;
       t || (t = []);
-      var a = n[e];
-      if (!(t.indexOf(a) >= 0)) {
-        if (t.push(a), a.p) return r.push(a.p);
+      var n = a[e];
+      if (!(t.indexOf(n) >= 0)) {
+        if (t.push(n), n.p) return r.push(n.p);
         var o = r => {
-            r || (r = new Error("Container missing")), "string" == typeof r.message && (r.message += '\nwhile loading "' + a[1] + '" from ' + a[2]), i.m[e] = () => {
+            r || (r = new Error("Container missing")), "string" == typeof r.message && (r.message += '\nwhile loading "' + n[1] + '" from ' + n[2]), i.m[e] = () => {
               throw r
-            }, a.p = 0
+            }, n.p = 0
           },
-          s = (e, t, n, i, s, d) => {
+          s = (e, t, a, i, s, d) => {
             try {
-              var l = e(t, n);
+              var l = e(t, a);
               if (!l || !l.then) return s(l, i, d);
-              var u = l.then((e => s(e, i)), o);
-              if (!d) return u;
-              r.push(a.p = u)
+              var f = l.then((e => s(e, i)), o);
+              if (!d) return f;
+              r.push(n.p = f)
             } catch (e) {
               o(e)
             }
           },
-          d = (e, r, n) => s(r.get, a[1], t, 0, l, n),
+          d = (e, r, a) => s(r.get, n[1], t, 0, l, a),
           l = r => {
-            a.p = 1, i.m[e] = e => {
+            n.p = 1, i.m[e] = e => {
               e.exports = r()
             }
           };
-        s(i, a[2], 0, 0, ((e, r, t) => e ? s(i.I, a[0], 0, e, d, t) : o()), 1)
+        s(i, n[2], 0, 0, ((e, r, t) => e ? s(i.I, n[0], 0, e, d, t) : o()), 1)
       }
     }))
   }, (() => {
     i.S = {};
     var e = {},
       r = {};
-    i.I = (t, n) => {
-      n || (n = []);
-      var a = r[t];
-      if (a || (a = r[t] = {}), !(n.indexOf(a) >= 0)) {
-        if (n.push(a), e[t]) return e[t];
+    i.I = (t, a) => {
+      a || (a = []);
+      var n = r[t];
+      if (n || (n = r[t] = {}), !(a.indexOf(n) >= 0)) {
+        if (a.push(n), e[t]) return e[t];
         i.o(i.S, t) || (i.S[t] = {});
         var o = i.S[t],
           s = "@rockstargames/modules-core-videoplayer",
-          d = e => {
+          d = (e, r, t, a) => {
+            var n = o[e] = o[e] || {},
+              i = n[r];
+            (!i || !i.loaded && (!a != !i.eager ? a : s > i.from)) && (n[r] = {
+              get: t,
+              from: s,
+              eager: !!a
+            })
+          },
+          l = e => {
             var r = e => {
-              return r = "Initialization of sharing external failed: " + e, "undefined" != typeof console && console.warn && console.warn(r);
+              return r = "Initialization of sharing external failed: " + e, void("undefined" != typeof console && console.warn && console.warn(r));
               var r
             };
             try {
-              var a = i(e);
-              if (!a) return;
-              var o = e => e && e.init && e.init(i.S[t], n);
-              if (a.then) return l.push(a.then(o, r));
-              var s = o(a);
-              if (s && s.then) return l.push(s.catch(r))
+              var n = i(e);
+              if (!n) return;
+              var o = e => e && e.init && e.init(i.S[t], a);
+              if (n.then) return f.push(n.then(o, r));
+              var s = o(n);
+              if (s && s.then) return f.push(s.catch(r))
             } catch (e) {
               r(e)
             }
           },
-          l = [];
-        return "default" === t && (((e, r, t, n) => {
-          var a = o[e] = o[e] || {},
-            d = a[r];
-          (!d || !d.loaded && (1 != !d.eager ? n : s > d.from)) && (a[r] = {
-            get: () => i.e(627).then((() => () => i(627))),
-            from: s,
-            eager: !1
-          })
-        })("react", "18.2.0"), d(525), d(171), d(850), d(810), d(489)), l.length ? e[t] = Promise.all(l).then((() => e[t] = 1)) : e[t] = 1
+          f = [];
+        return "default" === t && (d("react-dom", "18.2.0", (() => Promise.all([i.e(280), i.e(932)]).then((() => () => i(2280))))), d("react-router-dom", "6.11.2", (() => Promise.all([i.e(334), i.e(932)]).then((() => () => i(5334))))), d("react", "18.2.0", (() => i.e(252).then((() => () => i(8252))))), l(9525), l(5171), l(8413), l(4850), l(7426), l(8810), l(1489), l(692)), f.length ? e[t] = Promise.all(f).then((() => e[t] = 1)) : e[t] = 1
       }
     }
   })(), (() => {
@@ -247,7 +295,8 @@ var modules_core_videoplayer;
     var r = i.g.document;
     if (!e && r && (r.currentScript && (e = r.currentScript.src), !e)) {
       var t = r.getElementsByTagName("script");
-      t.length && (e = t[t.length - 1].src)
+      if (t.length)
+        for (var a = t.length - 1; a > -1 && !e;) e = t[a--].src
     }
     if (!e) throw new Error("Automatic publicPath is not supported in this browser");
     e = e.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/"), i.p = e
@@ -255,94 +304,98 @@ var modules_core_videoplayer;
     var e = e => {
         var r = e => e.split(".").map((e => +e == e ? +e : e)),
           t = /^([^-+]+)?(?:-([^+]+))?(?:\+(.+))?$/.exec(e),
-          n = t[1] ? r(t[1]) : [];
-        return t[2] && (n.length++, n.push.apply(n, r(t[2]))), t[3] && (n.push([]), n.push.apply(n, r(t[3]))), n
+          a = t[1] ? r(t[1]) : [];
+        return t[2] && (a.length++, a.push.apply(a, r(t[2]))), t[3] && (a.push([]), a.push.apply(a, r(t[3]))), a
       },
-      r = (t, n) => {
+      r = (t, a) => {
         if (0 in t) {
-          n = e(n);
-          var a = t[0],
-            o = a < 0;
-          o && (a = -a - 1);
+          a = e(a);
+          var n = t[0],
+            o = n < 0;
+          o && (n = -n - 1);
           for (var i = 0, s = 1, d = !0;; s++, i++) {
-            var l, u, f = s < t.length ? (typeof t[s])[0] : "";
-            if (i >= n.length || "o" == (u = (typeof(l = n[i]))[0])) return !d || ("u" == f ? s > a && !o : "" == f != o);
-            if ("u" == u) {
-              if (!d || "u" != f) return !1
+            var l, f, u = s < t.length ? (typeof t[s])[0] : "";
+            if (i >= a.length || "o" == (f = (typeof(l = a[i]))[0])) return !d || ("u" == u ? s > n && !o : "" == u != o);
+            if ("u" == f) {
+              if (!d || "u" != u) return !1
             } else if (d)
-              if (f == u)
-                if (s <= a) {
+              if (u == f)
+                if (s <= n) {
                   if (l != t[s]) return !1
                 } else {
                   if (o ? l > t[s] : l < t[s]) return !1;
                   l != t[s] && (d = !1)
                 }
-            else if ("s" != f && "n" != f) {
-              if (o || s <= a) return !1;
+            else if ("s" != u && "n" != u) {
+              if (o || s <= n) return !1;
               d = !1, s--
             } else {
-              if (s <= a || u < f != o) return !1;
+              if (s <= n || f < u != o) return !1;
               d = !1
-            } else "s" != f && "n" != f && (d = !1, s--)
+            } else "s" != u && "n" != u && (d = !1, s--)
           }
         }
         var p = [],
           c = p.pop.bind(p);
         for (i = 1; i < t.length; i++) {
-          var h = t[i];
-          p.push(1 == h ? c() | c() : 2 == h ? c() & c() : h ? r(h, n) : !c())
+          var m = t[i];
+          p.push(1 == m ? c() | c() : 2 == m ? c() & c() : m ? r(m, a) : !c())
         }
         return !!c()
       },
-      t = (t, n, a) => {
-        var o = t[n];
-        return (n = Object.keys(o).reduce(((t, n) => !r(a, n) || t && !((r, t) => {
+      t = (t, a, n) => {
+        var o = t[a];
+        return (a = Object.keys(o).reduce(((t, a) => !r(n, a) || t && !((r, t) => {
           r = e(r), t = e(t);
-          for (var n = 0;;) {
-            if (n >= r.length) return n < t.length && "u" != (typeof t[n])[0];
-            var a = r[n],
-              o = (typeof a)[0];
-            if (n >= t.length) return "u" == o;
-            var i = t[n],
+          for (var a = 0;;) {
+            if (a >= r.length) return a < t.length && "u" != (typeof t[a])[0];
+            var n = r[a],
+              o = (typeof n)[0];
+            if (a >= t.length) return "u" == o;
+            var i = t[a],
               s = (typeof i)[0];
             if (o != s) return "o" == o && "n" == s || "s" == s || "u" == o;
-            if ("o" != o && "u" != o && a != i) return a < i;
-            n++
+            if ("o" != o && "u" != o && n != i) return n < i;
+            a++
           }
-        })(t, n) ? t : n), 0)) && o[n]
+        })(t, a) ? t : a), 0)) && o[a]
       },
-      n = (e => function(r, t, n, a) {
+      a = (e => function(r, t, a, n) {
         var o = i.I(r);
-        return o && o.then ? o.then(e.bind(e, r, i.S[r], t, n, a)) : e(r, i.S[r], t, n, a)
-      })(((e, r, n, a, o) => {
-        var s = r && i.o(r, n) && t(r, n, a);
+        return o && o.then ? o.then(e.bind(e, r, i.S[r], t, a, n)) : e(r, i.S[r], t, a, n)
+      })(((e, r, a, n, o) => {
+        var s = r && i.o(r, a) && t(r, a, n);
         return s ? (e => (e.loaded = 1, e.get()))(s) : o()
       })),
-      a = {},
+      n = {},
       o = {
-        822: () => n("default", "react", [1, 18, 2, 0], (() => i.e(627).then((() => () => i(627)))))
+        4932: () => a("default", "react", [1, 18, 2, 0], (() => i.e(252).then((() => () => i(8252))))),
+        1424: () => a("default", "react-router-dom", [1, 6, 11, 2], (() => i.e(334).then((() => () => i(5334))))),
+        8677: () => a("default", "react-dom", [1, 18, 2, 0], (() => i.e(280).then((() => () => i(2280)))))
       },
       s = {
-        613: [822]
+        610: [1424],
+        932: [4932],
+        944: [8677]
       };
     i.f.consumes = (e, r) => {
       i.o(s, e) && s[e].forEach((e => {
-        if (i.o(a, e)) return r.push(a[e]);
+        if (i.o(n, e)) return r.push(n[e]);
         var t = r => {
-            a[e] = 0, i.m[e] = t => {
+            n[e] = 0, i.m[e] = t => {
               delete i.c[e], t.exports = r()
             }
           },
-          n = r => {
-            delete a[e], i.m[e] = t => {
+          a = r => {
+            delete n[e], i.m[e] = t => {
               throw delete i.c[e], r
             }
           };
         try {
           var s = o[e]();
-          s.then ? r.push(a[e] = s.then(t).catch(n)) : t(s)
+          s.then ? r.push(n[e] = s.then(t).catch(a)) : t(s)
         } catch (e) {
-          n(e)
+          a(e)
         }
       }))
     }
@@ -353,35 +406,35 @@ var modules_core_videoplayer;
       };
       i.f.miniCss = (r, t) => {
         e[r] ? t.push(e[r]) : 0 !== e[r] && {
-          425: 1,
-          689: 1,
-          723: 1
+          610: 1,
+          872: 1,
+          944: 1
         } [r] && t.push(e[r] = (e => new Promise(((r, t) => {
-          var n = i.miniCssF(e),
-            a = i.p + n;
+          var a = i.miniCssF(e),
+            n = i.p + a;
           if (((e, r) => {
-              for (var t = document.getElementsByTagName("link"), n = 0; n < t.length; n++) {
-                var a = (i = t[n]).getAttribute("data-href") || i.getAttribute("href");
-                if ("stylesheet" === i.rel && (a === e || a === r)) return i
+              for (var t = document.getElementsByTagName("link"), a = 0; a < t.length; a++) {
+                var n = (i = t[a]).getAttribute("data-href") || i.getAttribute("href");
+                if ("stylesheet" === i.rel && (n === e || n === r)) return i
               }
               var o = document.getElementsByTagName("style");
-              for (n = 0; n < o.length; n++) {
+              for (a = 0; a < o.length; a++) {
                 var i;
-                if ((a = (i = o[n]).getAttribute("data-href")) === e || a === r) return i
+                if ((n = (i = o[a]).getAttribute("data-href")) === e || n === r) return i
               }
-            })(n, a)) return r();
-          ((e, r, t, n, a) => {
+            })(a, n)) return r();
+          ((e, r, t, a, n) => {
             var o = document.createElement("link");
             o.rel = "stylesheet", o.type = "text/css", o.onerror = o.onload = t => {
-              if (o.onerror = o.onload = null, "load" === t.type) n();
+              if (o.onerror = o.onload = null, "load" === t.type) a();
               else {
                 var i = t && ("load" === t.type ? "missing" : t.type),
                   s = t && t.target && t.target.href || r,
                   d = new Error("Loading CSS chunk " + e + " failed.\n(" + s + ")");
-                d.code = "CSS_CHUNK_LOAD_FAILED", d.type = i, d.request = s, o.parentNode.removeChild(o), a(d)
+                d.code = "CSS_CHUNK_LOAD_FAILED", d.type = i, d.request = s, o.parentNode && o.parentNode.removeChild(o), n(d)
               }
             }, o.href = r, document.head.appendChild(o)
-          })(e, a, 0, r, t)
+          })(e, n, 0, r, t)
         })))(r).then((() => {
           e[r] = 0
         }), (t => {
@@ -394,37 +447,38 @@ var modules_core_videoplayer;
       893: 0
     };
     i.f.j = (r, t) => {
-      var n = i.o(e, r) ? e[r] : void 0;
-      if (0 !== n)
-        if (n) t.push(n[2]);
-        else if (613 != r) {
-        var a = new Promise(((t, a) => n = e[r] = [t, a]));
-        t.push(n[2] = a);
+      var a = i.o(e, r) ? e[r] : void 0;
+      if (0 !== a)
+        if (a) t.push(a[2]);
+        else if (/^(773|932)$/.test(r)) e[r] = 0;
+      else {
+        var n = new Promise(((t, n) => a = e[r] = [t, n]));
+        t.push(a[2] = n);
         var o = i.p + i.u(r),
           s = new Error;
         i.l(o, (t => {
-          if (i.o(e, r) && (0 !== (n = e[r]) && (e[r] = void 0), n)) {
-            var a = t && ("load" === t.type ? "missing" : t.type),
+          if (i.o(e, r) && (0 !== (a = e[r]) && (e[r] = void 0), a)) {
+            var n = t && ("load" === t.type ? "missing" : t.type),
               o = t && t.target && t.target.src;
-            s.message = "Loading chunk " + r + " failed.\n(" + a + ": " + o + ")", s.name = "ChunkLoadError", s.type = a, s.request = o, n[1](s)
+            s.message = "Loading chunk " + r + " failed.\n(" + n + ": " + o + ")", s.name = "ChunkLoadError", s.type = n, s.request = o, a[1](s)
           }
         }), "chunk-" + r, r)
-      } else e[r] = 0
+      }
     };
     var r = (r, t) => {
-        var n, a, o = t[0],
+        var a, n, o = t[0],
           s = t[1],
           d = t[2],
           l = 0;
         if (o.some((r => 0 !== e[r]))) {
-          for (n in s) i.o(s, n) && (i.m[n] = s[n]);
+          for (a in s) i.o(s, a) && (i.m[a] = s[a]);
           d && d(i)
         }
-        for (r && r(t); l < o.length; l++) a = o[l], i.o(e, a) && e[a] && e[a][0](), e[a] = 0
+        for (r && r(t); l < o.length; l++) n = o[l], i.o(e, n) && e[n] && e[n][0](), e[n] = 0
       },
       t = self.webpackChunk_rockstargames_modules_core_videoplayer = self.webpackChunk_rockstargames_modules_core_videoplayer || [];
     t.forEach(r.bind(null, 0)), t.push = r.bind(null, t.push.bind(t))
   })();
-  var s = i(215);
+  var s = i(2221);
   modules_core_videoplayer = s
 })();
