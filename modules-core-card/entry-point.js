@@ -5,8 +5,8 @@ var modules_core_card;
       1750: (e, r, t) => {
         var n = {
             "./bootstrap": () => t.e(39).then((() => () => t(5039))),
-            "./components": () => Promise.all([t.e(798), t.e(932), t.e(559), t.e(165), t.e(228)]).then((() => () => t(9228))),
-            "./modules": () => Promise.all([t.e(798), t.e(932), t.e(559), t.e(165), t.e(568)]).then((() => () => t(568))),
+            "./components": () => Promise.all([t.e(798), t.e(932), t.e(559), t.e(165), t.e(570), t.e(228)]).then((() => () => t(9228))),
+            "./modules": () => Promise.all([t.e(798), t.e(932), t.e(559), t.e(165), t.e(570), t.e(890)]).then((() => () => t(4890))),
             "./tina": () => Promise.all([t.e(559), t.e(904)]).then((() => () => t(4904)))
           },
           a = (e, r) => (t.R = r, r = t.o(n, e) ? n[e]() : Promise.resolve().then((() => {
@@ -48,6 +48,18 @@ var modules_core_card;
             n.message = "Loading script failed.\n(" + a + ": " + o + ")", n.name = "ScriptExternalLoadError", n.type = a, n.request = o, r(n)
           }), "graph_client")
         })).then((() => graph_client))
+      },
+      8413: (e, r, t) => {
+        var n = new Error;
+        e.exports = new Promise(((e, r) => {
+          if ("undefined" != typeof intl) return e();
+          t.l(window.mfe.path("@rockstargames/intl"), (t => {
+            if ("undefined" != typeof intl) return e();
+            var a = t && ("load" === t.type ? "missing" : t.type),
+              o = t && t.target && t.target.src;
+            n.message = "Loading script failed.\n(" + a + ": " + o + ")", n.name = "ScriptExternalLoadError", n.type = a, n.request = o, r(n)
+          }), "intl")
+        })).then((() => intl))
       },
       8546: (e, r, t) => {
         var n = new Error;
@@ -122,22 +134,23 @@ var modules_core_card;
     })
   }, i.f = {}, i.e = e => Promise.all(Object.keys(i.f).reduce(((r, t) => (i.f[t](e, r), r)), [])), i.u = e => "js/" + {
     39: "fbb76b1d81e5f1823c1f",
-    165: "96e37405560309b84a3b",
-    228: "b787ec3f22a235d7b754",
+    165: "ef75ab9bce3dc4aed6de",
+    228: "ff78202c7820c9632fc2",
     252: "11d285c6091ba48d0b8e",
     364: "950b723fbe10421a5e1e",
     536: "62e77992ac34d2ed55f6",
     559: "be3c403a1468dc71e620",
-    568: "6a4fc512b9edc57b82b0",
+    570: "b17ac3cdb0a417ed8130",
     798: "cb6ca2093bea0c329be9",
-    904: "2a1543bec1062d2cfac7",
+    890: "0156eac765d698d18fdd",
+    904: "6c488f7c7dc40b3cb6f1",
     932: "c40af45025535d4b47ab",
     976: "cce59a53235b0086d737"
   } [e] + ".js", i.miniCssF = e => "css/" + {
-    165: "4408a644a00aa02cd7b5",
-    228: "f8d2433304e04b7fe7b3",
-    536: "15e236d84513b3a08aed",
-    568: "6d68151a739b47d0528e"
+    165: "f89341c58213f9164ba8",
+    228: "23d23cb75ae7b2afda6d",
+    536: "3492977fa2e10ff9ea04",
+    890: "7a8a9138ad6a0bc7de9d"
   } [e] + ".css", i.g = function() {
     if ("object" == typeof globalThis) return globalThis;
     try {
@@ -150,8 +163,8 @@ var modules_core_card;
     else {
       var s, d;
       if (void 0 !== a)
-        for (var u = document.getElementsByTagName("script"), l = 0; l < u.length; l++) {
-          var f = u[l];
+        for (var l = document.getElementsByTagName("script"), u = 0; u < l.length; u++) {
+          var f = l[u];
           if (f.getAttribute("src") == t || f.getAttribute("data-webpack") == r + a) {
             s = f;
             break
@@ -178,10 +191,12 @@ var modules_core_card;
   }, i.nmd = e => (e.paths = [], e.children || (e.children = []), e), t = {
     165: [420, 4859, 6711, 8008, 8976, 9542, 9929],
     559: [559],
+    570: [1570],
     904: [3616, 6307]
   }, n = {
     420: ["default", "./index", 8546],
     559: ["default", "./helpers/uploads", 1489],
+    1570: ["default", "./index", 8413],
     3616: ["default", "./properties", 1489],
     4859: ["default", "./index", 5171],
     6307: ["default", "./tinaBlockTemplates", 9525],
@@ -204,17 +219,17 @@ var modules_core_card;
           },
           s = (e, t, n, i, s, d) => {
             try {
-              var u = e(t, n);
-              if (!u || !u.then) return s(u, i, d);
-              var l = u.then((e => s(e, i)), o);
-              if (!d) return l;
-              r.push(a.p = l)
+              var l = e(t, n);
+              if (!l || !l.then) return s(l, i, d);
+              var u = l.then((e => s(e, i)), o);
+              if (!d) return u;
+              r.push(a.p = u)
             } catch (e) {
               o(e)
             }
           },
-          d = (e, r, n) => s(r.get, a[1], t, 0, u, n),
-          u = r => {
+          d = (e, r, n) => s(r.get, a[1], t, 0, l, n),
+          l = r => {
             a.p = 1, i.m[e] = e => {
               e.exports = r()
             }
@@ -243,7 +258,7 @@ var modules_core_card;
               eager: !!n
             })
           },
-          u = e => {
+          l = e => {
             var r = e => {
               return r = "Initialization of sharing external failed: " + e, void("undefined" != typeof console && console.warn && console.warn(r));
               var r
@@ -252,15 +267,15 @@ var modules_core_card;
               var a = i(e);
               if (!a) return;
               var o = e => e && e.init && e.init(i.S[t], n);
-              if (a.then) return l.push(a.then(o, r));
+              if (a.then) return u.push(a.then(o, r));
               var s = o(a);
-              if (s && s.then) return l.push(s.catch(r))
+              if (s && s.then) return u.push(s.catch(r))
             } catch (e) {
               r(e)
             }
           },
-          l = [];
-        return "default" === t && (d("react-dom", "18.2.0", (() => Promise.all([i.e(364), i.e(932)]).then((() => () => i(2364))))), d("react-router-dom", "6.11.2", (() => Promise.all([i.e(976), i.e(932)]).then((() => () => i(4976))))), d("react", "18.2.0", (() => i.e(252).then((() => () => i(8252))))), u(1489), u(9525), u(5171), u(8546), u(7426), u(8810)), l.length ? e[t] = Promise.all(l).then((() => e[t] = 1)) : e[t] = 1
+          u = [];
+        return "default" === t && (d("react-dom", "18.2.0", (() => Promise.all([i.e(364), i.e(932)]).then((() => () => i(2364))))), d("react-router-dom", "6.11.2", (() => Promise.all([i.e(976), i.e(932)]).then((() => () => i(4976))))), d("react", "18.2.0", (() => i.e(252).then((() => () => i(8252))))), l(1489), l(9525), l(5171), l(8546), l(7426), l(8810), l(8413)), u.length ? e[t] = Promise.all(u).then((() => e[t] = 1)) : e[t] = 1
       }
     }
   })(), (() => {
@@ -288,23 +303,23 @@ var modules_core_card;
             o = a < 0;
           o && (a = -a - 1);
           for (var i = 0, s = 1, d = !0;; s++, i++) {
-            var u, l, f = s < t.length ? (typeof t[s])[0] : "";
-            if (i >= n.length || "o" == (l = (typeof(u = n[i]))[0])) return !d || ("u" == f ? s > a && !o : "" == f != o);
-            if ("u" == l) {
+            var l, u, f = s < t.length ? (typeof t[s])[0] : "";
+            if (i >= n.length || "o" == (u = (typeof(l = n[i]))[0])) return !d || ("u" == f ? s > a && !o : "" == f != o);
+            if ("u" == u) {
               if (!d || "u" != f) return !1
             } else if (d)
-              if (f == l)
+              if (f == u)
                 if (s <= a) {
-                  if (u != t[s]) return !1
+                  if (l != t[s]) return !1
                 } else {
-                  if (o ? u > t[s] : u < t[s]) return !1;
-                  u != t[s] && (d = !1)
+                  if (o ? l > t[s] : l < t[s]) return !1;
+                  l != t[s] && (d = !1)
                 }
             else if ("s" != f && "n" != f) {
               if (o || s <= a) return !1;
               d = !1, s--
             } else {
-              if (s <= a || l < f != o) return !1;
+              if (s <= a || u < f != o) return !1;
               d = !1
             } else "s" != f && "n" != f && (d = !1, s--)
           }
@@ -383,7 +398,7 @@ var modules_core_card;
           165: 1,
           228: 1,
           536: 1,
-          568: 1
+          890: 1
         } [r] && t.push(e[r] = (e => new Promise(((r, t) => {
           var n = i.miniCssF(e),
             a = i.p + n;
@@ -425,7 +440,7 @@ var modules_core_card;
       var n = i.o(e, r) ? e[r] : void 0;
       if (0 !== n)
         if (n) t.push(n[2]);
-        else if (/^(559|932)$/.test(r)) e[r] = 0;
+        else if (/^(559|570|932)$/.test(r)) e[r] = 0;
       else {
         var a = new Promise(((t, a) => n = e[r] = [t, a]));
         t.push(n[2] = a);
@@ -444,12 +459,12 @@ var modules_core_card;
         var n, a, o = t[0],
           s = t[1],
           d = t[2],
-          u = 0;
+          l = 0;
         if (o.some((r => 0 !== e[r]))) {
           for (n in s) i.o(s, n) && (i.m[n] = s[n]);
           d && d(i)
         }
-        for (r && r(t); u < o.length; u++) a = o[u], i.o(e, a) && e[a] && e[a][0](), e[a] = 0
+        for (r && r(t); l < o.length; l++) a = o[l], i.o(e, a) && e[a] && e[a][0](), e[a] = 0
       },
       t = self.webpackChunk_rockstargames_modules_core_card = self.webpackChunk_rockstargames_modules_core_card || [];
     t.forEach(r.bind(null, 0)), t.push = r.bind(null, t.push.bind(t))

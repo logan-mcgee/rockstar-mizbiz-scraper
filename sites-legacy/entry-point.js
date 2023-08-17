@@ -3495,10 +3495,10 @@ var sites_legacy;
       },
       4818: (e, t, r) => {
         var n = {
-            "./index": () => Promise.all([r.e(916), r.e(59), r.e(248)]).then((() => () => r(1248))),
-            "./bootstrap": () => Promise.all([r.e(916), r.e(59), r.e(8), r.e(831)]).then((() => () => r(5831))),
-            "./tina": () => Promise.all([r.e(916), r.e(59), r.e(181), r.e(599)]).then((() => () => r(5599))),
-            "./site-routes/RedDeadRedemption": () => Promise.all([r.e(916), r.e(59), r.e(181), r.e(8), r.e(62)]).then((() => () => r(5062)))
+            "./index": () => Promise.all([r.e(916), r.e(424), r.e(248)]).then((() => () => r(1248))),
+            "./bootstrap": () => Promise.all([r.e(916), r.e(424), r.e(8), r.e(831)]).then((() => () => r(5831))),
+            "./tina": () => Promise.all([r.e(916), r.e(424), r.e(753), r.e(599)]).then((() => () => r(5599))),
+            "./site-routes/RedDeadRedemption": () => Promise.all([r.e(916), r.e(424), r.e(753), r.e(8), r.e(62)]).then((() => () => r(5062)))
           },
           o = (e, t) => (r.R = t, t = r.o(n, e) ? n[e]() : Promise.resolve().then((() => {
             throw new Error('Module "' + e + '" does not exist in container.')
@@ -3563,6 +3563,18 @@ var sites_legacy;
             n.message = "Loading script failed.\n(" + o + ": " + a + ")", n.name = "ScriptExternalLoadError", n.type = o, n.request = a, t(n)
           }), "modules_core_hero")
         })).then((() => modules_core_hero))
+      },
+      4551: (e, t, r) => {
+        var n = new Error;
+        e.exports = new Promise(((e, t) => {
+          if ("undefined" != typeof modules_core_highlights) return e();
+          r.l(window.mfe.path("@rockstargames/modules-core-highlights"), (r => {
+            if ("undefined" != typeof modules_core_highlights) return e();
+            var o = r && ("load" === r.type ? "missing" : r.type),
+              a = r && r.target && r.target.src;
+            n.message = "Loading script failed.\n(" + o + ": " + a + ")", n.name = "ScriptExternalLoadError", n.type = o, n.request = a, t(n)
+          }), "modules_core_highlights")
+        })).then((() => modules_core_highlights))
       },
       7426: (e, t, r) => {
         var n = new Error;
@@ -3647,17 +3659,17 @@ var sites_legacy;
     })
   }, i.f = {}, i.e = e => Promise.all(Object.keys(i.f).reduce(((t, r) => (i.f[r](e, t), t)), [])), i.u = e => "js/" + {
     8: "bfad8148f69f172b9189",
-    59: "b2c624fbc9b90ea6f553",
-    62: "3e0ffb67b5e8844277db",
-    181: "e98bcdbe33cc9ff788aa",
-    248: "eba1ed866145a1800bfc",
-    599: "8ea12b6df12c7687af1d",
-    831: "7b1cef27b58f399dc63c",
+    62: "6b201c982c8155c09fae",
+    248: "bcbee34e27f194eaa1f7",
+    424: "167bd19f241cd7309bab",
+    599: "c82bbd4c1f8e3ff5c67b",
+    753: "3f9dddf8487fa879ca20",
+    831: "838c36affe7ff83dcdf3",
     916: "501a4a1822567beea56b"
   } [e] + ".js", i.miniCssF = e => "css/" + {
-    59: "0374f911546ea987641e",
-    62: "5f033bf69d82b87f9cf1",
-    831: "2580961ebbe5809d1fe4"
+    62: "966d187823108e8e42a3",
+    424: "ad8b4060b9599b6b8301",
+    831: "799ba9704ba2a540cd1f"
   } [e] + ".css", i.g = function() {
     if ("object" == typeof globalThis) return globalThis;
     try {
@@ -3697,8 +3709,8 @@ var sites_legacy;
     })
   }, r = {
     8: [8008],
-    59: [1570, 2286, 4224, 4859, 6711, 8976, 9542, 9929],
-    181: [2909, 1719, 559, 3616, 3374],
+    424: [1570, 2286, 4224, 4859, 6573, 6711, 8976, 9542, 9929],
+    753: [2909, 2026, 1719, 559, 3616, 3374],
     831: [1458, 1968, 7842]
   }, n = {
     559: ["default", "./helpers/uploads", 1489],
@@ -3706,12 +3718,14 @@ var sites_legacy;
     1570: ["default", "./index", 8413],
     1719: ["default", "./tina", 6993],
     1968: ["default", "./providers", 8810],
+    2026: ["default", "./tina", 4551],
     2286: ["default", "./index", 8294],
     2909: ["default", "./tina", 8294],
     3374: ["default", "./ui", 1489],
     3616: ["default", "./properties", 1489],
     4224: ["default", "./index", 6993],
     4859: ["default", "./index", 5171],
+    6573: ["default", "./index", 4551],
     6711: ["default", "./index", 7426],
     7842: ["default", "./browser", 692],
     8008: ["default", "./providers", 9525],
@@ -3788,7 +3802,7 @@ var sites_legacy;
             }
           },
           c = [];
-        return "default" === r && (s("react-router-dom", "6.11.2", (() => () => i(4061)), 1), s("react", "18.2.0", (() => () => i(8252)), 1), u(9525), u(5171), u(8413), u(8294), u(7426), u(6993), u(1489), u(8810), u(692)), c.length ? e[r] = Promise.all(c).then((() => e[r] = 1)) : e[r] = 1
+        return "default" === r && (s("react-router-dom", "6.11.2", (() => () => i(4061)), 1), s("react", "18.2.0", (() => () => i(8252)), 1), u(9525), u(5171), u(8413), u(8294), u(4551), u(7426), u(6993), u(1489), u(8810), u(692)), c.length ? e[r] = Promise.all(c).then((() => e[r] = 1)) : e[r] = 1
       }
     }
   })(), (() => {
@@ -3883,7 +3897,7 @@ var sites_legacy;
       }
     }));
     var l = {
-      59: [6780]
+      424: [6780]
     };
     i.f.consumes = (e, t) => {
       i.o(l, e) && l[e].forEach((e => {
@@ -3913,8 +3927,8 @@ var sites_legacy;
       };
       i.f.miniCss = (t, r) => {
         e[t] ? r.push(e[t]) : 0 !== e[t] && {
-          59: 1,
           62: 1,
+          424: 1,
           831: 1
         } [t] && r.push(e[t] = (e => new Promise(((t, r) => {
           var n = i.miniCssF(e),
@@ -3957,7 +3971,7 @@ var sites_legacy;
       var n = i.o(e, t) ? e[t] : void 0;
       if (0 !== n)
         if (n) r.push(n[2]);
-        else if (/^(181|8)$/.test(t)) e[t] = 0;
+        else if (/^(753|8)$/.test(t)) e[t] = 0;
       else {
         var o = new Promise(((r, o) => n = e[t] = [r, o]));
         r.push(n[2] = o);

@@ -1,0 +1,2144 @@
+.adf6a2318b1780fffb3ccb39529a72dc1e3b,
+.adf6a2318b1780ffea20461230ed7493b641 {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  left: 50%;
+  max-width: 8rem;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: background-size .2s;
+  width: 12vw;
+  z-index: 1
+}
+
+.adf6a2318b1780ffea20461230ed7493b641 {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27110%27 height=%27100%27%3E%3Cg fill=%27none%27 fill-rule=%27evenodd%27%3E%3Crect width=%27110%27 height=%27100%27 fill=%27%23FCAF17%27 rx=%2720%27/%3E%3Cpath fill=%27%23000%27 d=%27m42 70 34.641-20L42 30z%27/%3E%3C/g%3E%3C/svg%3E"), url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 xml:space=%27preserve%27 style=%27enable-background:new 0 0 110 100%27 viewBox=%270 0 110 100%27%3E%3Cpath d=%27M20 0h70c11.046 0 20 8.954 20 20v60c0 11.046-8.954 20-20 20H20C8.954 100 0 91.046 0 80V20C0 8.954 8.954 0 20 0z%27 style=%27opacity:.75%27/%3E%3Cpath d=%27m42 70 34.641-20L42 30z%27 style=%27fill:%23fff%27/%3E%3C/svg%3E");
+  background-size: var(--player-bigplay-active-size, 0), var(--player-bigplay-inactive-size, 100%)
+}
+
+.adf6a2318b1780ffea20461230ed7493b641:after {
+  content: "";
+  display: block;
+  padding-top: 90.90909091%
+}
+
+.adf6a2318b1780fffb3ccb39529a72dc1e3b {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 110 100%27%3E%3Cg fill=%27none%27 fill-rule=%27evenodd%27%3E%3Crect width=%27110%27 height=%27100%27 fill=%27%23eb1818%27 rx=%2720%27/%3E%3Cpath fill=%27%23000%27 d=%27m42 70 34.641-20L42 30z%27/%3E%3C/g%3E%3C/svg%3E"), url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 xml:space=%27preserve%27 style=%27enable-background:new 0 0 110 100%27 viewBox=%270 0 110 100%27%3E%3Cpath d=%27M20 0h70c11.046 0 20 8.954 20 20v60c0 11.046-8.954 20-20 20H20C8.954 100 0 91.046 0 80V20C0 8.954 8.954 0 20 0z%27 style=%27opacity:.75%27/%3E%3Cpath d=%27m42 70 34.641-20L42 30z%27 style=%27fill:%23fff%27/%3E%3C/svg%3E");
+  background-size: var(--player-bigplay-active-size, 0), var(--player-bigplay-inactive-size, 100%)
+}
+
+.adf6a2318b1780fffb3ccb39529a72dc1e3b:after {
+  content: "";
+  display: block;
+  padding-top: 90.90909091%
+}
+
+.adf6a2318b1780fffc18db9ee8d323e8e064 {
+  filter: blur(var(--blur-because-in-bg, 0));
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: filter .8s;
+  width: 100%
+}
+
+.adf6a2318b1780fffc18db9ee8d323e8e064>* {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%)
+}
+
+.adf6a2318b1780ffabcb1284b449dd16992f {
+  align-items: flex-start;
+  background: rgba(0, 0, 0, .75);
+  display: grid;
+  grid-template-columns: 100%;
+  height: calc(var(--effective-player-height) - var(--effective-title-height) - 40px - 1rem - var(--padding-top-bottom));
+  justify-content: center;
+  overflow: auto
+}
+
+.adf6a2318b1780ffabcb1284b449dd16992f h4 {
+  border-bottom: 1px solid hsla(0, 0%, 100%, .25);
+  grid-column: 1/-1
+}
+
+.adf6a2318b1780ffd36117d3d03c69e4ca24 {
+  grid-gap: 1rem;
+  --video-card-display: none;
+  align-items: flex-start;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%
+}
+
+@media (min-width:1024px) {
+  .adf6a2318b1780ffd36117d3d03c69e4ca24 {
+    grid-template-columns: repeat(4, 1fr)
+  }
+}
+
+@media (min-width:1920px) {
+  .adf6a2318b1780ffd36117d3d03c69e4ca24 {
+    grid-template-columns: repeat(5, 1fr)
+  }
+}
+
+@media (min-width:768px) {
+  .adf6a2318b1780ffd36117d3d03c69e4ca24 {
+    --video-card-display: block
+  }
+}
+
+.adf6a2318b1780ffbb58c696251a788e82eb {
+  align-items: flex-end;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  position: relative
+}
+
+.adf6a2318b1780ffbb58c696251a788e82eb:hover .adf6a2318b1780ffe95137e9d16c71ca6e96 {
+  opacity: 1;
+  transform: scale(1) translateZ(0)
+}
+
+.adf6a2318b1780ffe95137e9d16c71ca6e96 {
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+  background: rgba(0, 0, 0, .5);
+  font-size: var(--font-size-2);
+  line-height: 1.1;
+  opacity: 0;
+  padding: .5rem;
+  position: absolute;
+  transform: scale(.8) translateZ(0);
+  transition: all .2s;
+  width: 100%
+}
+
+.adf6a2318b1780ffdfaaf496dd413131a7a6 {
+  padding-top: 56.25%;
+  width: 100%
+}
+
+.adf6a2318b1780ffeb0df59dc5cb7bf90dce {
+  align-items: center;
+  display: flex;
+  justify-content: center
+}
+
+.adf6a2318b1780ffd6aa7439030114b4e8de {
+  align-content: flex-start;
+  display: grid;
+  gap: 1rem;
+  padding: var(--padding-top-bottom) var(--padding-sides);
+  transform: translateY(0);
+  transition: transform .3s;
+  width: 100%;
+  z-index: 1
+}
+
+.adf6a2318b1780fff1964402c785d2f60a54 {
+  grid-gap: .5rem;
+  align-items: center;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: flex-start;
+  line-height: 1.1;
+  text-shadow: 0 0 1rem #000
+}
+
+[data-context=newswire-article] .adf6a2318b1780fff1964402c785d2f60a54 {
+  display: none
+}
+
+.adf6a2318b1780ffcd32b8dc4c2edc58cced {
+  transform: translateY(-100%)
+}
+
+.adf6a2318b1780ffa9e05293eef9a4adf368 {
+  background: #000;
+  cursor: pointer;
+  line-height: 1;
+  padding: .5rem;
+  width: -moz-max-content;
+  width: max-content
+}
+
+.adf6a2318b1780ffefd87836708f2a04a33e {
+  height: 2rem;
+  overflow: hidden;
+  text-indent: -100vw
+}
+
+.adf6a2318b1780ffefd87836708f2a04a33e.adf6a2318b1780ffc2afdb2cb6245c7ff979 {
+  aspect-ratio: 1;
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2732%27 height=%2732%27 fill=%27none%27%3E%3Cpath fill=%27%23CF242B%27 fill-rule=%27evenodd%27 d=%27M16 32c8.837 0 16-7.163 16-16S24.837 0 16 0 0 7.163 0 16s7.163 16 16 16Zm5.013-8-1.088-7.417L26 12.333h-6.74L18.093 5l-4.298 7.26H7l4.135 4.353-3.397 7.296 7.423-4.407L21.013 24Z%27 clip-rule=%27evenodd%27/%3E%3C/svg%3E") no-repeat 50% /contain
+}
+
+.adf6a2318b1780ffefd87836708f2a04a33e.adf6a2318b1780ffd22ddde5266d9afa1138 {
+  aspect-ratio: 1.09090909;
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 216 198.83%27%3E%3Cg data-name=%27Layer 2%27%3E%3Cg data-name=%27Layer 1%27%3E%3Cpath d=%27M214.55 197.37a4.94 4.94 0 1 1 1.45-3.5 4.75 4.75 0 0 1-1.45 3.5Zm-6.52-6.5a4.27 4.27 0 0 0 0 6 4.25 4.25 0 0 0 6 0 4.26 4.26 0 0 0-6-6Zm2.92.27a4.24 4.24 0 0 1 1.5.2 1.36 1.36 0 0 1 .84 1.38 1.17 1.17 0 0 1-.53 1.08 2.45 2.45 0 0 1-.78.26 1.32 1.32 0 0 1 .93.52 1.57 1.57 0 0 1 .3.84v.8a1.2 1.2 0 0 0 0 .28v.07h-.89v-.66c0-.63-.17-1.05-.52-1.24a2.45 2.45 0 0 0-1.07-.17H210v2.12h-.95v-5.43Zm1 .89a2.38 2.38 0 0 0-1.16-.2H210v1.94h.87a2.48 2.48 0 0 0 .93-.13.94.94 0 0 0 .2-1.64Z%27/%3E%3Cpath d=%27M178.43 0H38.26C17.17 0 0 16.66 0 37.12v124.51c0 20.74 16.65 37 37.91 37h140.17c21.26 0 37.92-16.26 37.92-37V37.12C216 16.31 199.5 0 178.43 0Zm33.31 161.62c0 18.36-14.78 32.75-33.66 32.75H37.91C19 194.37 4.25 180 4.25 161.62V37.11c0-18.43 15-32.86 34-32.86h140.18c18.68 0 33.31 14.43 33.31 32.86Z%27/%3E%3Cpath d=%27M178.43 4.25H38.26c-19.06 0-34 14.43-34 32.86v124.51C4.25 180 19 194.37 37.91 194.37h140.17c18.88 0 33.66-14.39 33.66-32.75V37.11c0-18.43-14.63-32.86-33.31-32.86Z%27 style=%27fill:%23fcaf17%27/%3E%3Cpath d=%27M185.49 118.2h-27.06l-4.29-27-15.86 26.8h-3a23.14 23.14 0 0 1-2.52-10.42c0-4.6.34-9.1.34-15 0-7.76-2.28-11.92-8.37-13.38V79c12.94-1.8 18.81-10.36 18.81-22.42 0-17.12-11.39-20.84-26.32-20.84H77.08l-17 80.4h21.37l6.18-29.25h14.19c7.57 0 10.67 3.7 10.67 10.79 0 5.39-.56 9.66-.56 13.81 0 1.54.35 5.11 1.38 6.49l15.43 16.29-13.27 28.55L143.86 146 165 162.23l-4-26.93ZM108.2 71.86h-17l4.1-19.38h15.79c5.62 0 11.46 1.46 11.46 8.34 0 8.67-6.65 11.04-14.35 11.04Z%27/%3E%3Cpath d=%27M173.03 122.13h-17.95l-3.11-19.53-11.44 19.34h-18.11l11.01 11.6-9.05 19.44 19.78-11.75 15.58 11.98-2.9-19.75 16.19-11.33z%27 style=%27fill:%23fff%27/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") no-repeat 50% /contain
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 {
+  --font-family-std: var(--rsg-font-family-std);
+  --font-family-h: var(--rsg-font-family-h);
+  --font-family-h-halloween: nightmar;
+  --rsg-font-family-std: HelveticaNowText;
+  --rsg-font-family-h: HelveticaNowDisplayBold;
+  --gta-font-family-std: Chalet;
+  --gta-font-family-h: ChaletComprime;
+  --gta-font-family-badge: Pricedown;
+  --rdr-font-family-std: HapnaSlabSerif;
+  --rdr-font-family-h: RDRLino-Regular;
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif;
+  --rdr-area-font: RDRCatalogueBold;
+  --header-multiplier: var(--header-numerator, var(--root-font-size)) /var(--root-font-size);
+  -webkit-font-smoothing: antialiased;
+  --text-section-max-width: 640px;
+  --base-pixel-size: 12px;
+  --base-rem-size: 0.75rem;
+  --half-rem-size: calc(var(--base-rem-size) / 2);
+  --twice-rem-size: calc(var(--base-rem-size) * 2);
+  --section-margin-bottom: calc(var(--base-rem-size) * 4);
+  --header-height: 60px;
+  --breadcrumbs-height: calc(var(--base-pixel-size) * 3.5);
+  --max-width: 1920px;
+  --standard-color: #fcaf17;
+  --body-color: #e8e8e8;
+  --background-color: #0b0b0b;
+  --card-background-color: #000;
+  --border-color: #282828;
+  --privacy-banner-height: 0px;
+  --game-header-height: 50px;
+  --standard-grid-gap: calc(var(--base-rem-size) * 2);
+  --image-margin-bottom: inherit;
+  --image-rounding: 0px;
+  --image-rounding-static: 16px;
+  --image-rounding-static-sm: 8px;
+  --image-rounding-static-xs: 4px;
+  --grid-gap-static-xs: 0.5rem;
+  --grid-gap-static-sm: 1rem;
+  --grid-gap-static-md: 2rem;
+  --grid-gap-static-lg: 4rem;
+  --grid-gap-static-xl: 8rem;
+  --max-width-static: 640px;
+  --max-width-static-md: 1088px;
+  --max-width-static-lg: 1920px;
+  --max-width-static-xl: 2560px;
+  --margin-static: 0 0 2rem;
+  --h2-margin: 2rem 0 0 0;
+  --padding-sides: var(--grid-gap-static-lg);
+  --padding-top-bottom: var(--padding-sides);
+  --padding-static: var(--padding-sides);
+  --background-color: #000;
+  --color-h: #fff;
+  --color-h-dynamic: #fff;
+  background-color: var(--background-color, transparent);
+  border: var(--border-width, 1) solid hsla(0, 0%, 100%, .1);
+  color: #fff;
+  display: grid;
+  font-family: var(--font-family-std, HelveticaNowText);
+  font-size: calc(var(--root-font-size) * 1px);
+  font-weight: var(--font-weight-std, 400);
+  height: 100%;
+  letter-spacing: var(--letter-spacing-std, -.025em);
+  line-height: var(--line-height-std, 1.6);
+  overflow: hidden;
+  position: relative
+}
+
+@font-face {
+  font-family: HelveticaNowText;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/daffe25cf3a522a0662b.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNowText;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/1c23ad3bd8f4ac8d4f58.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNowText;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/43c87a78e295c91e475d.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNowDisplayBold;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/019a37634dda55c34e74.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNowDisplayMedium;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/8d9665f5c3f922814371.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNeueLTW05;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/5821888d211d6db6b916.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNeueLTW05;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/6254fae1ffa5c0b60e1f.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNeueLTW07;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/f3be7ed00861dd13472c.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNeueLTW07;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/0e155779f06c0df62911.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNeueLTW07;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/eecedce21cd5e7bc5a06.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNeueLTW07;
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/9e6720ee8a12e33dd442.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNeueLTW07-85Heavy;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/52311dcdb6857e4fc4ad.woff) format("woff")
+}
+
+@font-face {
+  font-family: SackersGothicW01-Square;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/28b89548417ca2a10931.woff) format("woff")
+}
+
+@font-face {
+  font-family: Cabrito-Nordem;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/18aadd46c7583c265c5c.woff) format("woff")
+}
+
+@font-face {
+  font-family: Droid-Serif-Pro;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/c559691f19190ffa4f91.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansSC;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/60625dd9dcbb711cebd5.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansSC;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/0d6661641995c28b4430.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansSC;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/b76b22f5feed95af23eb.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansSC;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/f6f097535b11d28742d1.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansTC;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/7459dd4e77bc2f260f9a.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansTC;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/21b71a694a4804bed375.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansTC;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/304d5c39e2b624111334.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansTC;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/d63df344651531f19e59.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansJP;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/dd17c827fc404f1fab82.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansJP;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/6ba2930e076392937061.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansJP;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/13f9fb885f7b59a9ca64.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansJP;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/eacc7598f5451b714002.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansKR;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/1ed88468d8b70e957b21.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansKR;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/386f62c0f4f9bcf91277.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansKR;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/cccb1c6ec3ccbbaaa90c.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansKR;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/2b2801bbdf254e8da3c1.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSerifJP;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/20a30c556225eff3a1b0.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSerifJP;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/8af8d5e0ef907d10587f.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSerifKR;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/0b9459405df1aec7f585.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSerifKR;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/0b9459405df1aec7f585.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSerifSC;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/1fde089d23afe566ed2f.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSerifSC;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/af5fddd08d604bc5b22e.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSerifTC;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/639639f588351d52252b.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSerifTC;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/a31187ab8cf9b5b6baab.woff) format("woff")
+}
+
+@font-face {
+  font-family: ChaletComprime;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/0b050e3931bdee7b4e47.woff) format("woff")
+}
+
+@font-face {
+  font-family: ChaletComprime;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/40a9579b16876325cf5d.woff) format("woff")
+}
+
+@font-face {
+  font-family: Chalet;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/6f94170675eae637b839.woff) format("woff")
+}
+
+@font-face {
+  font-family: Chalet;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/c07cd84eb88be5ed61da.woff) format("woff")
+}
+
+@font-face {
+  font-family: Pricedown;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/be58f8316924c2c9242f.woff) format("woff")
+}
+
+@font-face {
+  font-family: NeueHelveticaW05;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/a90a09d35ad69302407d.woff) format("woff")
+}
+
+@font-face {
+  font-family: NeueHelveticaW05;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/1395879dc836e2eea564.woff) format("woff")
+}
+
+@font-face {
+  font-family: NeueHelveticaW05;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/fec71193179b1f860772.woff) format("woff")
+}
+
+@font-face {
+  font-family: FrizQuadrataW05;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/a38b86a13cff1af877a2.woff) format("woff")
+}
+
+@font-face {
+  font-family: FrizQuadrataW05;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/8a419d27a1eec96fdaad.woff) format("woff")
+}
+
+@font-face {
+  font-family: FrizQuadrataW05;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/9867287e6c1fc83a89cb.woff) format("woff")
+}
+
+@font-face {
+  font-family: FrizQuadrataW05;
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/00c4190f2bbfb0e99c2a.woff) format("woff")
+}
+
+@font-face {
+  font-family: CorporateW05;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/31e60f7b23377bec9894.woff) format("woff")
+}
+
+@font-face {
+  font-family: NimbusSansW05;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/707f38ea81e69d75f3e8.woff) format("woff")
+}
+
+@font-face {
+  font-family: NimbusSansW05;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/29ae0fa4aabe2e795b92.woff) format("woff")
+}
+
+@font-face {
+  font-family: EurostileNextW05;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/39163b1c27d4874840f8.woff) format("woff")
+}
+
+@font-face {
+  font-family: Diploma;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/5086f4019f360fde9779.woff) format("woff")
+}
+
+@font-face {
+  font-family: BrushScriptMT;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/0174dd7c8b071617cb8c.woff) format("woff")
+}
+
+@font-face {
+  font-family: BankGothicBT;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/09081caba15b8def6692.woff) format("woff")
+}
+
+@font-face {
+  font-family: MeltdownRegular;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/b1d8448f1da0a818ac88.woff) format("woff")
+}
+
+@font-face {
+  font-family: SharkSnackRegular;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/12e2c084a9c416285c96.woff) format("woff")
+}
+
+@font-face {
+  font-family: RDRLino-Regular;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/5d64fc45d52e2bdd2d4c.woff) format("woff")
+}
+
+@font-face {
+  font-family: HapnaSlabSerif;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/c58f85482530be4ffcac.woff) format("woff")
+}
+
+@font-face {
+  font-family: HapnaSlabSerif;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/347c4201aa82d7497522.woff) format("woff")
+}
+
+@font-face {
+  font-family: nightmar;
+  font-style: normal;
+  font-weight: 100;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/3c3a1029d1863fba66a7.woff) format("woff")
+}
+
+@font-face {
+  font-family: RDRCatalogueBold;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/c1c092eb55240be87a6b.woff) format("woff")
+}
+
+@font-face {
+  font-family: RDRUltraHeadline;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/28a1db376124dcc8700a.woff) format("woff")
+}
+
+@media (min-width:0px) {
+  .adf6a2318b1780fffe272cb30137b53bdf00 {
+    --root-font-size: 16
+  }
+}
+
+@media (min-width:768px) {
+  .adf6a2318b1780fffe272cb30137b53bdf00 {
+    --root-font-size: 18
+  }
+}
+
+@media (min-width:1024px) {
+  .adf6a2318b1780fffe272cb30137b53bdf00 {
+    --root-font-size: 20
+  }
+}
+
+@media (min-width:1920px) {
+  .adf6a2318b1780fffe272cb30137b53bdf00 {
+    --root-font-size: 22
+  }
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 * {
+  box-sizing: border-box
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 a {
+  color: inherit;
+  text-decoration: none
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 figure,
+.adf6a2318b1780fffe272cb30137b53bdf00 h1,
+.adf6a2318b1780fffe272cb30137b53bdf00 h2,
+.adf6a2318b1780fffe272cb30137b53bdf00 h3,
+.adf6a2318b1780fffe272cb30137b53bdf00 h4,
+.adf6a2318b1780fffe272cb30137b53bdf00 h5,
+.adf6a2318b1780fffe272cb30137b53bdf00 h6,
+.adf6a2318b1780fffe272cb30137b53bdf00 p {
+  margin: 0
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 caption,
+.adf6a2318b1780fffe272cb30137b53bdf00 figcaption {
+  --padding-dynamic: var(--padding-sides);
+  --padding-dynamic-tb: initial;
+  display: block;
+  font-family: var(--font-family-std);
+  font-size: var(--font-size-2);
+  font-style: italic;
+  margin: var(--grid-gap-static-sm) auto 0;
+  padding: var(--padding-t, var(--padding-dynamic-tb, 0)) var(--padding-dynamic, 0) var(--padding-b, var(--padding-dynamic-tb, 0)) var(--padding-dynamic, 0);
+  text-align: center
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 caption p,
+.adf6a2318b1780fffe272cb30137b53bdf00 figcaption p {
+  display: block
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 :lang(ru_ru) {
+  --font-family-h-halloween: RDRLino-Regular
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 :lang(ko_kr) {
+  word-break: keep-all
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00:lang(ja_jp) {
+  --rsg-font-family-std: HelveticaNowText, NotoSansJP
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00:lang(zh_hans) {
+  --rsg-font-family-std: HelveticaNowText, NotoSansSC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00:lang(zh_tw) {
+  --rsg-font-family-std: HelveticaNowText, NotoSansTC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00:lang(ja_jp) {
+  --rsg-font-family-h: HelveticaNowDisplayBold, NotoSansJP
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00:lang(zh_hans) {
+  --rsg-font-family-h: HelveticaNowDisplayBold, NotoSansSC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00:lang(zh_tw) {
+  --rsg-font-family-h: HelveticaNowDisplayBold, NotoSansTC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00:lang(ja_jp) {
+  --gta-font-family-std: Chalet, NotoSansJP
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00:lang(zh_hans) {
+  --gta-font-family-std: Chalet, NotoSansSC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00:lang(zh_tw) {
+  --gta-font-family-std: Chalet, NotoSansTC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00:lang(ja_jp) {
+  --gta-font-family-h: ChaletComprime, NotoSansJP
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00:lang(zh_hans) {
+  --gta-font-family-h: ChaletComprime, NotoSansSC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00:lang(zh_tw) {
+  --gta-font-family-h: ChaletComprime, NotoSansTC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00:lang(ja_jp) {
+  --gta-font-family-badge: Pricedown, NotoSansJP
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00:lang(zh_hans) {
+  --gta-font-family-badge: Pricedown, NotoSansSC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00:lang(zh_tw) {
+  --gta-font-family-badge: Pricedown, NotoSansTC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00:lang(ja_jp) {
+  --rdr-font-family-std: HapnaSlabSerif, NotoSansJP
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00:lang(zh_hans) {
+  --rdr-font-family-std: HapnaSlabSerif, NotoSansSC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00:lang(zh_tw) {
+  --rdr-font-family-std: HapnaSlabSerif, NotoSansTC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00:lang(ja_jp) {
+  --rdr-font-family-h: RDRLino-Regular, NotoSansJP
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00:lang(zh_hans) {
+  --rdr-font-family-h: RDRLino-Regular, NotoSansSC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00:lang(zh_tw) {
+  --rdr-font-family-h: RDRLino-Regular, NotoSansTC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00:lang(ja_jp) {
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif, NotoSansJP
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00:lang(zh_hans) {
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif, NotoSansSC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00:lang(zh_tw) {
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif, NotoSansTC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00:lang(ja_jp) {
+  --rdr-area-font: RDRCatalogueBold, NotoSansJP
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00:lang(zh_hans) {
+  --rdr-area-font: RDRCatalogueBold, NotoSansSC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00:lang(zh_tw) {
+  --rdr-area-font: RDRCatalogueBold, NotoSansTC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 h1,
+.adf6a2318b1780fffe272cb30137b53bdf00 h1.adf6a2318b1780ffe4d3aaa6803560b4dc89,
+.adf6a2318b1780fffe272cb30137b53bdf00 h2,
+.adf6a2318b1780fffe272cb30137b53bdf00 h3,
+.adf6a2318b1780fffe272cb30137b53bdf00 h4 {
+  font-family: var(--font-family-h, HelveticaNowDisplayBold);
+  letter-spacing: var(--letter-spacing-h, -.025em)
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 h1,
+.adf6a2318b1780fffe272cb30137b53bdf00 h1.adf6a2318b1780ffe4d3aaa6803560b4dc89 {
+  font-weight: var(--font-weight-h1, var(--font-weight-h, 700));
+  line-height: var(--line-height-h1, var(--line-height-h, 1.1));
+  text-transform: var(--text-transform-h1, var(--text-transform-h, none))
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 h1.adf6a2318b1780ffe4d3aaa6803560b4dc89 {
+  font-size: calc(var(--font-size-8) * var(--header-multiplier))
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 h1 {
+  font-size: calc(var(--font-size-7) * var(--header-multiplier))
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 h2 {
+  font-size: calc(var(--font-size-6) * var(--header-multiplier));
+  font-weight: var(--font-weight-h2, var(--font-weight-h, 700));
+  text-transform: var(--text-transform-h2, var(--text-transform-h, none))
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 h2,
+.adf6a2318b1780fffe272cb30137b53bdf00 h3 {
+  line-height: var(--line-height-h, 1.1)
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 h3 {
+  font-size: calc(var(--font-size-5) * var(--header-multiplier));
+  font-weight: var(--font-weight-h3, var(--font-weight-h, 700));
+  text-transform: var(--text-transform-h3, var(--text-transform-h, none))
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 h3[data-context=newswire-subtitle] {
+  font-family: var(--font-family-newswire-subtitle, var(--font-family-h));
+  font-size: calc(var(--font-size-5) * var(--h3-numerator-override-newswire-subtitle, var(--header-multiplier)));
+  font-weight: var(--font-weight-newswire-subtitle, var(--font-weight-h));
+  text-transform: var(--text-transform-newswire-subtitle)
+}
+
+[data-game=rdo] .adf6a2318b1780fffe272cb30137b53bdf00 h3,
+[data-game^=rdr] .adf6a2318b1780fffe272cb30137b53bdf00 h3 {
+  font-weight: var(--font-weight-h3, var(--font-weight-h, 400))
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 h4,
+.adf6a2318b1780fffe272cb30137b53bdf00 h5,
+.adf6a2318b1780fffe272cb30137b53bdf00 h6 {
+  font-size: calc(var(--font-size-4) * var(--header-multiplier));
+  line-height: var(--line-height-h, 1.1)
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta] {
+  --font-family-std: var(--gta-font-family-std);
+  --font-family-h: var(--gta-font-family-h);
+  --letter-spacing-h: 0;
+  --line-height-h1: 1;
+  --font-weight-newswire-subtitle: 400;
+  --letter-spacing-std: 0;
+  --color-h: #fff;
+  --body-color: #e8e8e8;
+  --background-color: var(var(--background-color));
+  --tag-color: #e8e8e8;
+  --rsg-font-family-std: HelveticaNowText;
+  --rsg-font-family-h: HelveticaNowDisplayBold;
+  --gta-font-family-std: Chalet;
+  --gta-font-family-h: ChaletComprime;
+  --gta-font-family-badge: Pricedown;
+  --rdr-font-family-std: HapnaSlabSerif;
+  --rdr-font-family-h: RDRLino-Regular;
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif;
+  --rdr-area-font: RDRCatalogueBold;
+  --header-multiplier: var(--header-numerator, var(--root-font-size)) /var(--root-font-size);
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--background-color, transparent);
+  color: #e8e8e8;
+  font-family: var(--font-family-std, HelveticaNowText);
+  font-size: calc(var(--root-font-size) * 1px);
+  font-weight: var(--font-weight-std, 400);
+  letter-spacing: var(--letter-spacing-std, -.025em);
+  line-height: var(--line-height-std, 1.6)
+}
+
+@media (min-width:0px) {
+  .adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta] {
+    --header-numerator: 20.8
+  }
+}
+
+@media (min-width:768px) {
+  .adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta] {
+    --header-numerator: 23.4
+  }
+}
+
+@media (min-width:1024px) {
+  .adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta] {
+    --header-numerator: 26
+  }
+}
+
+@media (min-width:1920px) {
+  .adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta] {
+    --header-numerator: 29.25
+  }
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta]:lang(ja_jp) {
+  --rsg-font-family-std: HelveticaNowText, NotoSansJP
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta]:lang(zh_hans) {
+  --rsg-font-family-std: HelveticaNowText, NotoSansSC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta]:lang(zh_tw) {
+  --rsg-font-family-std: HelveticaNowText, NotoSansTC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta]:lang(ja_jp) {
+  --rsg-font-family-h: HelveticaNowDisplayBold, NotoSansJP
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta]:lang(zh_hans) {
+  --rsg-font-family-h: HelveticaNowDisplayBold, NotoSansSC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta]:lang(zh_tw) {
+  --rsg-font-family-h: HelveticaNowDisplayBold, NotoSansTC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta]:lang(ja_jp) {
+  --gta-font-family-std: Chalet, NotoSansJP
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta]:lang(zh_hans) {
+  --gta-font-family-std: Chalet, NotoSansSC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta]:lang(zh_tw) {
+  --gta-font-family-std: Chalet, NotoSansTC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta]:lang(ja_jp) {
+  --gta-font-family-h: ChaletComprime, NotoSansJP
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta]:lang(zh_hans) {
+  --gta-font-family-h: ChaletComprime, NotoSansSC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta]:lang(zh_tw) {
+  --gta-font-family-h: ChaletComprime, NotoSansTC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta]:lang(ja_jp) {
+  --gta-font-family-badge: Pricedown, NotoSansJP
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta]:lang(zh_hans) {
+  --gta-font-family-badge: Pricedown, NotoSansSC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta]:lang(zh_tw) {
+  --gta-font-family-badge: Pricedown, NotoSansTC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta]:lang(ja_jp) {
+  --rdr-font-family-std: HapnaSlabSerif, NotoSansJP
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta]:lang(zh_hans) {
+  --rdr-font-family-std: HapnaSlabSerif, NotoSansSC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta]:lang(zh_tw) {
+  --rdr-font-family-std: HapnaSlabSerif, NotoSansTC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta]:lang(ja_jp) {
+  --rdr-font-family-h: RDRLino-Regular, NotoSansJP
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta]:lang(zh_hans) {
+  --rdr-font-family-h: RDRLino-Regular, NotoSansSC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta]:lang(zh_tw) {
+  --rdr-font-family-h: RDRLino-Regular, NotoSansTC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta]:lang(ja_jp) {
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif, NotoSansJP
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta]:lang(zh_hans) {
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif, NotoSansSC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta]:lang(zh_tw) {
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif, NotoSansTC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta]:lang(ja_jp) {
+  --rdr-area-font: RDRCatalogueBold, NotoSansJP
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta]:lang(zh_hans) {
+  --rdr-area-font: RDRCatalogueBold, NotoSansSC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta]:lang(zh_tw) {
+  --rdr-area-font: RDRCatalogueBold, NotoSansTC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta] h1,
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta] h1.adf6a2318b1780ffe4d3aaa6803560b4dc89,
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta] h2,
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta] h3,
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta] h4 {
+  font-family: var(--font-family-h, HelveticaNowDisplayBold);
+  letter-spacing: var(--letter-spacing-h, -.025em)
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta] h1,
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta] h1.adf6a2318b1780ffe4d3aaa6803560b4dc89 {
+  font-weight: var(--font-weight-h1, var(--font-weight-h, 700));
+  line-height: var(--line-height-h1, var(--line-height-h, 1.1));
+  text-transform: var(--text-transform-h1, var(--text-transform-h, none))
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta] h1.adf6a2318b1780ffe4d3aaa6803560b4dc89 {
+  font-size: calc(var(--font-size-8) * var(--header-multiplier))
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta] h1 {
+  font-size: calc(var(--font-size-7) * var(--header-multiplier))
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta] h2 {
+  font-size: calc(var(--font-size-6) * var(--header-multiplier));
+  font-weight: var(--font-weight-h2, var(--font-weight-h, 700));
+  line-height: var(--line-height-h, 1.1);
+  text-transform: var(--text-transform-h2, var(--text-transform-h, none))
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta] h3 {
+  font-size: calc(var(--font-size-5) * var(--header-multiplier));
+  font-weight: var(--font-weight-h3, var(--font-weight-h, 700));
+  line-height: var(--line-height-h, 1.1);
+  text-transform: var(--text-transform-h3, var(--text-transform-h, none))
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta] h3[data-context=newswire-subtitle] {
+  font-family: var(--font-family-newswire-subtitle, var(--font-family-h));
+  font-size: calc(var(--font-size-5) * var(--h3-numerator-override-newswire-subtitle, var(--header-multiplier)));
+  font-weight: var(--font-weight-newswire-subtitle, var(--font-weight-h));
+  text-transform: var(--text-transform-newswire-subtitle)
+}
+
+[data-game=rdo] .adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta] h3,
+[data-game^=rdr] .adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta] h3 {
+  font-weight: var(--font-weight-h3, var(--font-weight-h, 400))
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta] h4,
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta] h5,
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta] h6 {
+  font-size: calc(var(--font-size-4) * var(--header-multiplier));
+  line-height: var(--line-height-h, 1.1)
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta] h1,
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta] h1.adf6a2318b1780ffe4d3aaa6803560b4dc89 {
+  color: var(--color-h-dynamic, var(--color-h1, var(--color-h, inherit)))
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta] h2 {
+  color: var(--color-h-dynamic, var(--color-h2, var(--color-h, inherit)))
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta] h3 {
+  color: var(--color-h-dynamic, var(--color-h3, var(--color-h, inherit)))
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta] h3[data-context=newswire-subtitle] {
+  color: var(--color-subtitle-dynamic, var(--color-h-dynamic, var(--color-h3, var(--color-h, inherit))))
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta] h4,
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta] h5,
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta] h6 {
+  color: var(--color-h-dynamic, var(--color-h, inherit))
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta] [template=community] {
+  --time-color: var(--body-color, #2d2d2d);
+  --breadcrumb-separator-filter-invert: invert(0)
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta] [template=community] main {
+  color: var(--color-h, #161616)
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta] [template=community] p {
+  color: var(--body-color, #2d2d2d)
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=gta] .adf6a2318b1780ffc2d669abc0ac0ed138ed {
+  font-family: var(--gta-font-family-badge)
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 :lang(pl_pl) [data-game^=gta] {
+  --font-family-h: ChaletComprime, NeueHelveticaW05;
+  --font-family-newswire-subtitle: ChaletComprime, NeueHelveticaW05;
+  --badge-font: Pricedown, NeueHelveticaW05
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 :lang(pl_pl) [data-context=newswire-article] h1 {
+  --font-family-h: ChaletComprime, NeueHelveticaW05
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 :lang(ru_ru) [data-game^=gta] {
+  --font-family-h: NeueHelveticaW05;
+  --font-family-newswire-subtitle: NeueHelveticaW05;
+  --badge-font: Pricedown, NeueHelveticaW05
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 :lang(ru_ru) [data-context=newswire-article] h1 {
+  --font-family-h: NeueHelveticaW05
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 :lang(zh_hans) [data-game^=gta] {
+  --font-family-h: NotoSansSC;
+  --font-family-newswire-subtitle: NotoSansSC;
+  --font-family-std: NotoSansSC;
+  --badge-font: Pricedown, NotoSansSC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 :lang(zh_hant) [data-game^=gta] {
+  --font-family-h: NotoSansTC;
+  --font-family-newswire-subtitle: NotoSansTC;
+  --font-family-std: NotoSansTC;
+  --badge-font: Pricedown, NotoSansTC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 :lang(ja_jp) [data-game^=gta] {
+  --font-family-h: NotoSansJP;
+  --font-family-newswire-subtitle: NotoSansJP;
+  --font-family-std: NotoSansJP;
+  --badge-font: Pricedown, NotoSansJP
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 :lang(ja_jp) [data-context=newswire-article] h1 {
+  --font-family-h: NotoSansJP
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 :lang(ko_kr) [data-game^=gta] {
+  --font-family-h: NotoSansKR;
+  --font-family-newswire-subtitle: NotoSansKR;
+  --font-family-std: NotoSansKR;
+  --badge-font: Pricedown, NotoSansKR
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo],
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr] {
+  --font-family-std: var(--rdr-font-family-std);
+  --font-family-h: var(--rdr-font-family-h);
+  --font-family-newswire-subtitle: var(--rdr-font-family-newswire-subtitle);
+  --area-font: var(--rdr-area-font);
+  --font-weight-h: 400;
+  --font-weight-h1: 400;
+  --font-weight-h3: 400;
+  --font-weight-newswire-subtitle: 700;
+  --h3-numerator-override-newswire-subtitle: 1;
+  --letter-spacing-h: 0;
+  --line-height-h: 1.2;
+  --letter-spacing-std: 0;
+  --text-transform-newswire-subtitle: initial;
+  --color-h: #c00;
+  --color-h3: #fff;
+  --color-h4: #fff;
+  --body-color: #e8e8e8;
+  --text-transform-h: uppercase;
+  --background-color: var(var(--background-color));
+  --tag-color: #e8e8e8;
+  --rsg-font-family-std: HelveticaNowText;
+  --rsg-font-family-h: HelveticaNowDisplayBold;
+  --gta-font-family-std: Chalet;
+  --gta-font-family-h: ChaletComprime;
+  --gta-font-family-badge: Pricedown;
+  --rdr-font-family-std: HapnaSlabSerif;
+  --rdr-font-family-h: RDRLino-Regular;
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif;
+  --rdr-area-font: RDRCatalogueBold;
+  --header-multiplier: var(--header-numerator, var(--root-font-size)) /var(--root-font-size);
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--background-color, transparent);
+  color: #e8e8e8;
+  font-family: var(--font-family-std, HelveticaNowText);
+  font-size: calc(var(--root-font-size) * 1px);
+  font-weight: var(--font-weight-std, 400);
+  letter-spacing: var(--letter-spacing-std, -.025em);
+  line-height: var(--line-height-std, 1.6)
+}
+
+@media (min-width:0px) {
+
+  .adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo],
+  .adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr] {
+    --header-numerator: 15
+  }
+}
+
+@media (min-width:768px) {
+
+  .adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo],
+  .adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr] {
+    --header-numerator: 16.88
+  }
+}
+
+@media (min-width:1024px) {
+
+  .adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo],
+  .adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr] {
+    --header-numerator: 18.75
+  }
+}
+
+@media (min-width:1920px) {
+
+  .adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo],
+  .adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr] {
+    --header-numerator: 21.09
+  }
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo]:lang(ja_jp),
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr]:lang(ja_jp) {
+  --rsg-font-family-std: HelveticaNowText, NotoSansJP
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo]:lang(zh_hans),
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr]:lang(zh_hans) {
+  --rsg-font-family-std: HelveticaNowText, NotoSansSC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo]:lang(zh_tw),
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr]:lang(zh_tw) {
+  --rsg-font-family-std: HelveticaNowText, NotoSansTC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo]:lang(ja_jp),
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr]:lang(ja_jp) {
+  --rsg-font-family-h: HelveticaNowDisplayBold, NotoSansJP
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo]:lang(zh_hans),
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr]:lang(zh_hans) {
+  --rsg-font-family-h: HelveticaNowDisplayBold, NotoSansSC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo]:lang(zh_tw),
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr]:lang(zh_tw) {
+  --rsg-font-family-h: HelveticaNowDisplayBold, NotoSansTC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo]:lang(ja_jp),
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr]:lang(ja_jp) {
+  --gta-font-family-std: Chalet, NotoSansJP
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo]:lang(zh_hans),
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr]:lang(zh_hans) {
+  --gta-font-family-std: Chalet, NotoSansSC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo]:lang(zh_tw),
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr]:lang(zh_tw) {
+  --gta-font-family-std: Chalet, NotoSansTC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo]:lang(ja_jp),
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr]:lang(ja_jp) {
+  --gta-font-family-h: ChaletComprime, NotoSansJP
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo]:lang(zh_hans),
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr]:lang(zh_hans) {
+  --gta-font-family-h: ChaletComprime, NotoSansSC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo]:lang(zh_tw),
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr]:lang(zh_tw) {
+  --gta-font-family-h: ChaletComprime, NotoSansTC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo]:lang(ja_jp),
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr]:lang(ja_jp) {
+  --gta-font-family-badge: Pricedown, NotoSansJP
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo]:lang(zh_hans),
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr]:lang(zh_hans) {
+  --gta-font-family-badge: Pricedown, NotoSansSC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo]:lang(zh_tw),
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr]:lang(zh_tw) {
+  --gta-font-family-badge: Pricedown, NotoSansTC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo]:lang(ja_jp),
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr]:lang(ja_jp) {
+  --rdr-font-family-std: HapnaSlabSerif, NotoSansJP
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo]:lang(zh_hans),
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr]:lang(zh_hans) {
+  --rdr-font-family-std: HapnaSlabSerif, NotoSansSC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo]:lang(zh_tw),
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr]:lang(zh_tw) {
+  --rdr-font-family-std: HapnaSlabSerif, NotoSansTC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo]:lang(ja_jp),
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr]:lang(ja_jp) {
+  --rdr-font-family-h: RDRLino-Regular, NotoSansJP
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo]:lang(zh_hans),
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr]:lang(zh_hans) {
+  --rdr-font-family-h: RDRLino-Regular, NotoSansSC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo]:lang(zh_tw),
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr]:lang(zh_tw) {
+  --rdr-font-family-h: RDRLino-Regular, NotoSansTC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo]:lang(ja_jp),
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr]:lang(ja_jp) {
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif, NotoSansJP
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo]:lang(zh_hans),
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr]:lang(zh_hans) {
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif, NotoSansSC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo]:lang(zh_tw),
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr]:lang(zh_tw) {
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif, NotoSansTC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo]:lang(ja_jp),
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr]:lang(ja_jp) {
+  --rdr-area-font: RDRCatalogueBold, NotoSansJP
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo]:lang(zh_hans),
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr]:lang(zh_hans) {
+  --rdr-area-font: RDRCatalogueBold, NotoSansSC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo]:lang(zh_tw),
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr]:lang(zh_tw) {
+  --rdr-area-font: RDRCatalogueBold, NotoSansTC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo] h1,
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo] h1.adf6a2318b1780ffe4d3aaa6803560b4dc89,
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo] h2,
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo] h3,
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo] h4,
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr] h1,
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr] h1.adf6a2318b1780ffe4d3aaa6803560b4dc89,
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr] h2,
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr] h3,
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr] h4 {
+  font-family: var(--font-family-h, HelveticaNowDisplayBold);
+  letter-spacing: var(--letter-spacing-h, -.025em)
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo] h1,
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo] h1.adf6a2318b1780ffe4d3aaa6803560b4dc89,
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr] h1,
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr] h1.adf6a2318b1780ffe4d3aaa6803560b4dc89 {
+  font-weight: var(--font-weight-h1, var(--font-weight-h, 700));
+  line-height: var(--line-height-h1, var(--line-height-h, 1.1));
+  text-transform: var(--text-transform-h1, var(--text-transform-h, none))
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo] h1.adf6a2318b1780ffe4d3aaa6803560b4dc89,
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr] h1.adf6a2318b1780ffe4d3aaa6803560b4dc89 {
+  font-size: calc(var(--font-size-8) * var(--header-multiplier))
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo] h1,
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr] h1 {
+  font-size: calc(var(--font-size-7) * var(--header-multiplier))
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo] h2,
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr] h2 {
+  font-size: calc(var(--font-size-6) * var(--header-multiplier));
+  font-weight: var(--font-weight-h2, var(--font-weight-h, 700));
+  line-height: var(--line-height-h, 1.1);
+  text-transform: var(--text-transform-h2, var(--text-transform-h, none))
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo] h3,
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr] h3 {
+  font-size: calc(var(--font-size-5) * var(--header-multiplier));
+  font-weight: var(--font-weight-h3, var(--font-weight-h, 700));
+  line-height: var(--line-height-h, 1.1);
+  text-transform: var(--text-transform-h3, var(--text-transform-h, none))
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo] h3[data-context=newswire-subtitle],
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr] h3[data-context=newswire-subtitle] {
+  font-family: var(--font-family-newswire-subtitle, var(--font-family-h));
+  font-size: calc(var(--font-size-5) * var(--h3-numerator-override-newswire-subtitle, var(--header-multiplier)));
+  font-weight: var(--font-weight-newswire-subtitle, var(--font-weight-h));
+  text-transform: var(--text-transform-newswire-subtitle)
+}
+
+[data-game=rdo] .adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo] h3,
+[data-game=rdo] .adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr] h3,
+[data-game^=rdr] .adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo] h3,
+[data-game^=rdr] .adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr] h3 {
+  font-weight: var(--font-weight-h3, var(--font-weight-h, 400))
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo] h4,
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo] h5,
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo] h6,
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr] h4,
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr] h5,
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr] h6 {
+  font-size: calc(var(--font-size-4) * var(--header-multiplier));
+  line-height: var(--line-height-h, 1.1)
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo] h1,
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo] h1.adf6a2318b1780ffe4d3aaa6803560b4dc89,
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr] h1,
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr] h1.adf6a2318b1780ffe4d3aaa6803560b4dc89 {
+  color: var(--color-h-dynamic, var(--color-h1, var(--color-h, inherit)))
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo] h2,
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr] h2 {
+  color: var(--color-h-dynamic, var(--color-h2, var(--color-h, inherit)))
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo] h3,
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr] h3 {
+  color: var(--color-h-dynamic, var(--color-h3, var(--color-h, inherit)))
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo] h3[data-context=newswire-subtitle],
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr] h3[data-context=newswire-subtitle] {
+  color: var(--color-subtitle-dynamic, var(--color-h-dynamic, var(--color-h3, var(--color-h, inherit))))
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo] h4,
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo] h5,
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo] h6,
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr] h4,
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr] h5,
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr] h6 {
+  color: var(--color-h-dynamic, var(--color-h, inherit))
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo] [template=community],
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr] [template=community] {
+  --time-color: var(--body-color, #2d2d2d);
+  --breadcrumb-separator-filter-invert: invert(0)
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo] [template=community] main,
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr] [template=community] main {
+  color: var(--color-h, #161616)
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game=rdo] [template=community] p,
+.adf6a2318b1780fffe272cb30137b53bdf00 [data-game^=rdr] [template=community] p {
+  color: var(--body-color, #2d2d2d)
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 :lang(pl_pl) [data-game=rdo],
+.adf6a2318b1780fffe272cb30137b53bdf00 :lang(pl_pl) [data-game^=rdr] {
+  --font-family-h: RDRLino-Regular;
+  --font-family-newswire-subtitle: HapnaSlabSerif;
+  --font-family-std: HapnaSlabSerif;
+  --badge-font: RDRLino-Regular
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 :lang(zh_hans) [data-game=rdo],
+.adf6a2318b1780fffe272cb30137b53bdf00 :lang(zh_hans) [data-game^=rdr] {
+  --font-family-h: NotoSerifSC;
+  --font-family-newswire-subtitle: NotoSansSC, ;
+  --font-family-std: NotoSansSC;
+  --area-font: NotoSansSC;
+  --badge-font: RDRLino-Regular, NotoSerifSC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 :lang(zh_hant) [data-game=rdo],
+.adf6a2318b1780fffe272cb30137b53bdf00 :lang(zh_hant) [data-game^=rdr] {
+  --font-family-h: NotoSerifTC;
+  --font-family-newswire-subtitle: NotoSansTC;
+  --font-family-std: NotoSansTC;
+  --area-font: NotoSansTC;
+  --badge-font: RDRLino-Regular, NotoSerifTC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 :lang(ja_jp) [data-game=rdo],
+.adf6a2318b1780fffe272cb30137b53bdf00 :lang(ja_jp) [data-game^=rdr] {
+  --font-family-h: NotoSerifJP;
+  --font-family-newswire-subtitle: NotoSansJP;
+  --font-family-std: NotoSansJP;
+  --area-font: NotoSansJP;
+  --badge-font: RDRLino-Regular, NotoSerifTC
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 :lang(ko_kr) [data-game=rdo],
+.adf6a2318b1780fffe272cb30137b53bdf00 :lang(ko_kr) [data-game^=rdr] {
+  --font-family-h: NotoSerifKR;
+  --font-family-newswire-subtitle: NotoSansKR;
+  --font-family-std: NotoSansKR;
+  --area-font: NotoSansKR;
+  --badge-font: RDRLino-Regular, NotoSerifKR
+}
+
+@media (max-width:767px) {
+  .adf6a2318b1780fffe272cb30137b53bdf00 {
+    --grid-gap-static-lg: 2rem;
+    --grid-gap-static-xl: 4rem
+  }
+}
+
+@media (min-width:2560px) {
+  .adf6a2318b1780fffe272cb30137b53bdf00 {
+    --max-width-static-md: 1440px
+  }
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 h1,
+.adf6a2318b1780fffe272cb30137b53bdf00 h1.adf6a2318b1780ffe4d3aaa6803560b4dc89 {
+  color: var(--color-h-dynamic, var(--color-h1, var(--color-h, inherit)))
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 h2 {
+  color: var(--color-h-dynamic, var(--color-h2, var(--color-h, inherit)))
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 h3 {
+  color: var(--color-h-dynamic, var(--color-h3, var(--color-h, inherit)))
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 h3[data-context=newswire-subtitle] {
+  color: var(--color-subtitle-dynamic, var(--color-h-dynamic, var(--color-h3, var(--color-h, inherit))))
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 h4,
+.adf6a2318b1780fffe272cb30137b53bdf00 h5,
+.adf6a2318b1780fffe272cb30137b53bdf00 h6 {
+  color: var(--color-h-dynamic, var(--color-h, inherit))
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [template=community] {
+  --time-color: var(--body-color, #2d2d2d);
+  --breadcrumb-separator-filter-invert: invert(0)
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [template=community] main {
+  color: var(--color-h, #161616)
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00 [template=community] p {
+  color: var(--body-color, #2d2d2d)
+}
+
+.adf6a2318b1780fffe272cb30137b53bdf00.adf6a2318b1780ffc201c9742f2829fd89c6 {
+  max-height: 70vh;
+  min-height: 30vw
+}
+
+.adf6a2318b1780ffa325d1936f965cbc1ced {
+  aspect-ratio: 16/9;
+  position: relative
+}
+
+.adf6a2318b1780ffa325d1936f965cbc1ced:before {
+  content: "";
+  display: block;
+  height: 0;
+  padding-bottom: calc(100% / calc(var(--aspect-ratio)))
+}
+
+.adf6a2318b1780ffa325d1936f965cbc1ced>* {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%
+}
+
+[data-context=clr-about] .adf6a2318b1780ffa325d1936f965cbc1ced,
+[data-context=clr-article] .adf6a2318b1780ffa325d1936f965cbc1ced {
+  justify-self: center;
+  min-height: 35vw
+}
+
+@media (max-width:1023px) {
+
+  [data-context=clr-about] .adf6a2318b1780ffa325d1936f965cbc1ced,
+  [data-context=clr-article] .adf6a2318b1780ffa325d1936f965cbc1ced {
+    justify-self: auto
+  }
+}
+
+.adf6a2318b1780ffcfe1159c77904f2d7bf9 {
+  --padding-sides: 1rem;
+  --padding-top-bottom: 1rem;
+  align-items: flex-start;
+  cursor: pointer;
+  display: flex;
+  height: 100%;
+  justify-content: flex-start;
+  width: 100%
+}
+
+.adf6a2318b1780ffcfe1159c77904f2d7bf9:active,
+.adf6a2318b1780ffcfe1159c77904f2d7bf9:focus {
+  --player-bigplay-active-size: 100%;
+  --player-bigplay-inactive-size: 1%
+}
+
+@media (hover:hover) {
+  .adf6a2318b1780ffcfe1159c77904f2d7bf9:hover {
+    --player-bigplay-active-size: 100%;
+    --player-bigplay-inactive-size: 1%
+  }
+}
+
+.adf6a2318b1780ffa06068f3ff876dfa07bc {
+  cursor: pointer;
+  opacity: .85;
+  padding: 0 calc(var(--icon-size) / 2);
+  transition: opacity .2s
+}
+
+.adf6a2318b1780ffa06068f3ff876dfa07bc.adf6a2318b1780ffe98746e03d34eec539bf {
+  opacity: .25;
+  pointer-events: none
+}
+
+.adf6a2318b1780ffa06068f3ff876dfa07bc:hover {
+  opacity: 1
+}
+
+.adf6a2318b1780ffa06068f3ff876dfa07bc.adf6a2318b1780ffabda1d64203debe22e7d {
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 xml:space=%27preserve%27 id=%27Layer_1%27 x=%270%27 y=%270%27 style=%27enable-background:new 0 0 48 48%27 version=%271.1%27 viewBox=%270 0 48 48%27%3E%3Cstyle%3E.st0{fill:%23fff}%3C/style%3E%3Cg id=%27VIDEO-PLAYER%27%3E%3Cg id=%27Components%27 transform=%27translate%28-1248 -1300%29%27%3E%3Cg id=%27UI-COMPONENTS%27 transform=%27translate%28288 942%29%27%3E%3Cg id=%27EXIT-FULL-SCREEN%27 transform=%27translate%28960 358%29%27%3E%3Cg id=%27Group-5%27 transform=%27translate%2816 16%29%27%3E%3Cpath id=%27Fill-1%27 d=%27M10 0v6h6V3h-3V0z%27 class=%27st0%27/%3E%3Cpath id=%27Fill-2%27 d=%27M10 10v6h3v-3h3v-3z%27 class=%27st0%27/%3E%3Cpath id=%27Fill-3%27 d=%27M3 0v3H0v3h6V0z%27 class=%27st0%27/%3E%3Cpath id=%27Fill-4%27 d=%27M0 10v3h3v3h3v-6z%27 class=%27st0%27/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E") no-repeat 50% /cover
+}
+
+.adf6a2318b1780ffa06068f3ff876dfa07bc.adf6a2318b1780ffa58fabca95efe50e8164 {
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 xml:space=%27preserve%27 id=%27Layer_1%27 x=%270%27 y=%270%27 style=%27enable-background:new 0 0 48 48%27 version=%271.1%27 viewBox=%270 0 48 48%27%3E%3Cstyle%3E.st0{fill:%23fff}%3C/style%3E%3Cg id=%27VIDEO-PLAYER%27%3E%3Cg id=%27Components%27 transform=%27translate%28-1248 -1236%29%27%3E%3Cg id=%27UI-COMPONENTS%27 transform=%27translate%28288 942%29%27%3E%3Cg id=%27FULL-SCREEN%27 transform=%27translate%28960 294%29%27%3E%3Cg id=%27Group-5%27 transform=%27translate%2816 16%29%27%3E%3Cpath id=%27Fill-1%27 d=%27M0 10v6h6v-3H3v-3z%27 class=%27st0%27/%3E%3Cpath id=%27Fill-2%27 d=%27M0 0v6h3V3h3V0z%27 class=%27st0%27/%3E%3Cpath id=%27Fill-3%27 d=%27M13 10v3h-3v3h6v-6z%27 class=%27st0%27/%3E%3Cpath id=%27Fill-4%27 d=%27M10 0v3h3v3h3V0z%27 class=%27st0%27/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E") no-repeat 50% /cover
+}
+
+.adf6a2318b1780ffd81a4b30205f7d649215 {
+  cursor: pointer;
+  opacity: .85;
+  padding: 0 calc(var(--icon-size) / 2);
+  transition: opacity .2s
+}
+
+.adf6a2318b1780ffd81a4b30205f7d649215.adf6a2318b1780ffd32c19afa09385b0ef81 {
+  opacity: .25;
+  pointer-events: none
+}
+
+.adf6a2318b1780ffd81a4b30205f7d649215:hover {
+  opacity: 1
+}
+
+.adf6a2318b1780ffd81a4b30205f7d649215.adf6a2318b1780ffc0466813ab5905502908 {
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 xml:space=%27preserve%27 style=%27enable-background:new 0 0 48 48%27 viewBox=%270 0 48 48%27%3E%3Cg transform=%27translate%2816 16%29%27%3E%3Cdefs%3E%3Cfilter id=%27a%27 width=%2718%27 height=%2716%27 x=%270%27 y=%270%27 filterUnits=%27userSpaceOnUse%27%3E%3CfeColorMatrix values=%271 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0%27/%3E%3C/filter%3E%3C/defs%3E%3Cmask id=%27b%27 width=%2718%27 height=%2716%27 x=%270%27 y=%270%27 maskUnits=%27userSpaceOnUse%27%3E%3Cg style=%27filter:url%28%23a%29%27%3E%3Cpath d=%27M0 0h18v16H0z%27 style=%27fill:%23fff%27/%3E%3C/g%3E%3C/mask%3E%3Cpath d=%27M11.5 11.5c-.9.9-2.1 1.5-3.5 1.5-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5h-2l3.5 4L18 8h-2c0-4.4-3.6-8-8-8S0 3.6 0 8s3.6 8 8 8c2.2 0 4.2-.9 5.7-2.3l-2.2-2.2z%27 style=%27mask:url%28%23b%29;fill:%23fff%27/%3E%3C/g%3E%3C/svg%3E") no-repeat 50% /cover
+}
+
+.adf6a2318b1780ffd81a4b30205f7d649215.adf6a2318b1780ffb419e1c2c4807d7e894b {
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 xml:space=%27preserve%27 id=%27Layer_1%27 x=%270%27 y=%270%27 style=%27enable-background:new 0 0 48 48%27 version=%271.1%27 viewBox=%270 0 48 48%27%3E%3Cstyle%3E.st0{fill:%23fff}%3C/style%3E%3Cg id=%27VIDEO-PLAYER%27%3E%3Cg id=%27Components%27 transform=%27translate%28-288 -1300%29%27%3E%3Cg id=%27UI-COMPONENTS%27 transform=%27translate%28288 942%29%27%3E%3Cg id=%27PAUSE%27 transform=%27translate%280 358%29%27%3E%3Cg id=%27Group-3%27 transform=%27translate%2818 16%29%27%3E%3Cpath id=%27Fill-1%27 d=%27M0 16h4V0H0z%27 class=%27st0%27/%3E%3Cpath id=%27Fill-2%27 d=%27M8 16h4V0H8z%27 class=%27st0%27/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E") no-repeat 50% /cover
+}
+
+.adf6a2318b1780ffd81a4b30205f7d649215.adf6a2318b1780fff2c67752c7b776d2b76f {
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 xml:space=%27preserve%27 style=%27enable-background:new 0 0 48 48%27 viewBox=%270 0 48 48%27%3E%3Cpath d=%27M19 16v16l14-8z%27 style=%27fill:%23fff%27/%3E%3C/svg%3E") no-repeat 50% /cover
+}
+
+.adf6a2318b1780ffa672020aaa1f609ff63d {
+  cursor: pointer;
+  height: 2rem;
+  position: relative
+}
+
+.adf6a2318b1780ffa672020aaa1f609ff63d .adf6a2318b1780ffb21601ff656d592093d6,
+.adf6a2318b1780ffa672020aaa1f609ff63d canvas {
+  width: 100%
+}
+
+.adf6a2318b1780ffa672020aaa1f609ff63d .adf6a2318b1780ffb21601ff656d592093d6,
+.adf6a2318b1780ffa672020aaa1f609ff63d .adf6a2318b1780ffb2527569d065def372e2,
+.adf6a2318b1780ffa672020aaa1f609ff63d canvas {
+  bottom: 0;
+  height: .5rem;
+  left: 0;
+  position: absolute;
+  transition: height .3s, bottom .3s
+}
+
+:active.adf6a2318b1780ffa672020aaa1f609ff63d .adf6a2318b1780ffb21601ff656d592093d6,
+:active.adf6a2318b1780ffa672020aaa1f609ff63d .adf6a2318b1780ffb2527569d065def372e2,
+:active.adf6a2318b1780ffa672020aaa1f609ff63d canvas {
+  height: 1rem
+}
+
+@media (hover:hover) {
+
+  :hover.adf6a2318b1780ffa672020aaa1f609ff63d .adf6a2318b1780ffb21601ff656d592093d6,
+  :hover.adf6a2318b1780ffa672020aaa1f609ff63d .adf6a2318b1780ffb2527569d065def372e2,
+  :hover.adf6a2318b1780ffa672020aaa1f609ff63d canvas {
+    height: 1rem
+  }
+}
+
+.adf6a2318b1780ffb2527569d065def372e2 {
+  background: var(--videoplayer-time-bg, #fcaf17);
+  width: calc(var(--pct-current, 0) * 100%)
+}
+
+.adf6a2318b1780ffb21601ff656d592093d6 {
+  background: hsla(0, 0%, 100%, .25)
+}
+
+.adf6a2318b1780ffae8ca19eaf3c385cf4c8 {
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 xml:space=%27preserve%27 style=%27enable-background:new 0 0 48 48%27 viewBox=%270 0 48 48%27%3E%3Cpath d=%27M8 11c-1.7 0-3-1.3-3-3s1.3-3 3-3 3 1.3 3 3-1.3 3-3 3zm8-1.5v-3h-2.2c-.1-.5-.4-1.1-.6-1.5l1.6-1.6-2.1-2.1L11 2.8c-.5-.3-1-.5-1.5-.6V0h-3v2.2c-.5.1-1.1.4-1.5.6L3.4 1.3 1.3 3.4 2.8 5c-.2.4-.5 1-.6 1.5H0v3h2.2c.1.5.4 1.1.6 1.5l-1.6 1.6 2.1 2.1L5 13.2c.5.3 1 .5 1.5.6V16h3v-2.2c.5-.1 1.1-.4 1.5-.6l1.6 1.6 2.1-2.1-1.5-1.7c.3-.5.5-1 .6-1.5H16z%27 style=%27fill:%23fff%27 transform=%27translate%2816 16%29%27/%3E%3C/svg%3E") no-repeat 50% /cover;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  opacity: .85;
+  padding: 0 calc(var(--icon-size) / 2);
+  position: relative;
+  transition: opacity .2s
+}
+
+.adf6a2318b1780ffae8ca19eaf3c385cf4c8.adf6a2318b1780ffab0fc6547d723d4322b1 {
+  opacity: .25;
+  pointer-events: none
+}
+
+.adf6a2318b1780ffae8ca19eaf3c385cf4c8:hover {
+  opacity: 1
+}
+
+.adf6a2318b1780ffbfb574a75027ce10b2c4 {
+  background: rgba(0, 0, 0, .75);
+  bottom: 100%;
+  display: flex;
+  flex-flow: column;
+  opacity: 0;
+  padding: 1rem 0;
+  pointer-events: none;
+  position: absolute;
+  text-align: left;
+  transition: opacity .2s
+}
+
+.adf6a2318b1780ffbfb574a75027ce10b2c4 button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  outline: none;
+  padding: calc(var(--padding-top-bottom) / 4) var(--padding-sides);
+  transition: color .2s
+}
+
+.adf6a2318b1780ffbfb574a75027ce10b2c4 button.adf6a2318b1780ffef268f4b1d80b25ca878,
+.adf6a2318b1780ffbfb574a75027ce10b2c4 button:hover {
+  color: #fcaf17
+}
+
+.adf6a2318b1780ffbfb574a75027ce10b2c4.adf6a2318b1780ffd6310bd6f0cd25eb252a {
+  opacity: 1;
+  pointer-events: auto
+}
+
+.adf6a2318b1780ffba9d41749f149de5ccff {
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 xml:space=%27preserve%27 id=%27Layer_1%27 x=%270%27 y=%270%27 style=%27enable-background:new 0 0 48 48%27 version=%271.1%27 viewBox=%270 0 48 48%27%3E%3Cstyle%3E.st0{fill:%23fff}%3C/style%3E%3Cg id=%27VIDEO-PLAYER%27%3E%3Cg id=%27Components%27 transform=%27translate%28-1103 -1236%29%27%3E%3Cg id=%27UI-COMPONENTS%27 transform=%27translate%28288 942%29%27%3E%3Cg id=%27SHARE%27 transform=%27translate%28815 294%29%27%3E%3Cg id=%27Group-3%27 transform=%27translate%2816 16%29%27%3E%3Cpath id=%27Fill-1%27 d=%27M0 0v16h16v-6h-3v3H3V3h3V0z%27 class=%27st0%27/%3E%3Cpath id=%27Fill-2%27 d=%27M8 0v3h2.9L5.4 8.5l2.1 2.1L13 5.1V8h3V0z%27 class=%27st0%27/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E") no-repeat 50% /cover;
+  cursor: pointer;
+  opacity: .85;
+  padding: 0 calc(var(--icon-size) / 2);
+  transition: opacity .2s
+}
+
+.adf6a2318b1780ffba9d41749f149de5ccff.adf6a2318b1780fff14c617db91eb94b018d {
+  opacity: .25;
+  pointer-events: none
+}
+
+.adf6a2318b1780ffba9d41749f149de5ccff:hover {
+  opacity: 1
+}
+
+.adf6a2318b1780ffe0fe62466f7a0b13b378 {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 .75rem 0 0
+}
+
+.adf6a2318b1780ffe0fe62466f7a0b13b378.adf6a2318b1780ffca50e0fc81343da3169c {
+  opacity: .25;
+  pointer-events: none
+}
+
+.adf6a2318b1780ffe0fe62466f7a0b13b378.adf6a2318b1780ffa1c4952f576f7071bc86 {
+  color: #fff
+}
+
+.adf6a2318b1780fff3bdce796bad450cb8cc {
+  cursor: pointer;
+  opacity: .85;
+  padding: 0 calc(var(--icon-size) / 2);
+  transition: opacity .2s
+}
+
+.adf6a2318b1780fff3bdce796bad450cb8cc.adf6a2318b1780ffa819a4708bd3e0eaff88 {
+  opacity: .25;
+  pointer-events: none
+}
+
+.adf6a2318b1780fff3bdce796bad450cb8cc:hover {
+  opacity: 1
+}
+
+.adf6a2318b1780fff3bdce796bad450cb8cc.adf6a2318b1780ffca10ddf8858db2d1735a {
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 xml:space=%27preserve%27 id=%27Layer_1%27 x=%270%27 y=%270%27 style=%27enable-background:new 0 0 48 48%27 version=%271.1%27 viewBox=%270 0 48 48%27%3E%3Cstyle%3E.st0{fill:%23fff}%3C/style%3E%3Cg id=%27VIDEO-PLAYER%27%3E%3Cg id=%27Components%27 transform=%27translate%28-432 -1364%29%27%3E%3Cg id=%27UI-COMPONENTS%27 transform=%27translate%28288 942%29%27%3E%3Cg id=%27VOLUME-OFF%27 transform=%27translate%28144 422%29%27%3E%3Cg id=%27Group-4%27 transform=%27translate%2816 16%29%27%3E%3Cpath id=%27Fill-1%27 d=%27M8 0 4 4H0v8h4l4 4z%27 class=%27st0%27/%3E%3Cpath d=%27M16 6.3 14.7 5 13 6.7 11.3 5 10 6.3 11.7 8 10 9.7l1.3 1.3L13 9.3l1.7 1.7L16 9.7 14.3 8z%27 class=%27st0%27/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E") no-repeat 50% /cover
+}
+
+.adf6a2318b1780fff3bdce796bad450cb8cc.adf6a2318b1780ffcf4ab0aaf05036d0ecde {
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 xml:space=%27preserve%27 id=%27Layer_1%27 x=%270%27 y=%270%27 style=%27enable-background:new 0 0 48 48%27 version=%271.1%27 viewBox=%270 0 48 48%27%3E%3Cstyle%3E.st0{fill:%23fff}%3C/style%3E%3Cg id=%27VIDEO-PLAYER%27%3E%3Cg id=%27Components%27 transform=%27translate%28-432 -1300%29%27%3E%3Cg id=%27UI-COMPONENTS%27 transform=%27translate%28288 942%29%27%3E%3Cg id=%27VOLUME-HALF%27 transform=%27translate%28144 358%29%27%3E%3Cg id=%27Group-7%27 transform=%27translate%2816 16%29%27%3E%3Cpath id=%27Fill-3%27 d=%27M12 8c0-1.5-.8-2.9-2-3.6v7.2c1.2-.7 2-2.1 2-3.6%27 class=%27st0%27/%3E%3Cpath id=%27Fill-5%27 d=%27M0 4v8h4l4 4V0L4 4z%27 class=%27st0%27/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E") no-repeat 50% /cover
+}
+
+.adf6a2318b1780fff3bdce796bad450cb8cc.adf6a2318b1780fff38d1c00bb124be082f1 {
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 xml:space=%27preserve%27 id=%27Layer_1%27 x=%270%27 y=%270%27 style=%27enable-background:new 0 0 48 48%27 version=%271.1%27 viewBox=%270 0 48 48%27%3E%3Cstyle%3E.st0{fill:%23fff}%3C/style%3E%3Cg id=%27VIDEO-PLAYER%27%3E%3Cg id=%27Components%27 transform=%27translate%28-432 -1236%29%27%3E%3Cg id=%27UI-COMPONENTS%27 transform=%27translate%28288 942%29%27%3E%3Cg id=%27VOLUME-ON%27 transform=%27translate%28144 294%29%27%3E%3Cg id=%27Group-7%27 transform=%27translate%2816 16%29%27%3E%3Cpath id=%27Fill-1%27 d=%27M10 0v2.2c2.3.8 4 3.1 4 5.8s-1.7 5-4 5.8V16c3.4-.9 6-4.1 6-8S13.4.9 10 0%27 class=%27st0%27/%3E%3Cpath id=%27Fill-3%27 d=%27M12 8c0-1.5-.8-2.9-2-3.6v7.2c1.2-.7 2-2.1 2-3.6%27 class=%27st0%27/%3E%3Cpath id=%27Fill-5%27 d=%27M0 4v8h4l4 4V0L4 4z%27 class=%27st0%27/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E") no-repeat 50% /cover
+}
+
+.adf6a2318b1780fffaff2f2376054f65bff9 {
+  bottom: 0;
+  font-size: .75rem;
+  left: 0;
+  padding: 0;
+  position: absolute;
+  transition: transform .3s;
+  width: 100%;
+  z-index: 1
+}
+
+.adf6a2318b1780fffaff2f2376054f65bff9.adf6a2318b1780ffcab551130a7070d39655 {
+  transform: translateY(100%)
+}
+
+.adf6a2318b1780fff0cb45bf69c7da94aed9 {
+  background: rgba(0, 0, 0, .85);
+  display: grid;
+  grid-template-columns: var(--icon-size) var(--icon-size) 1fr var(--icon-size) var(--icon-size) var(--icon-size);
+  grid-template-rows: var(--icon-size)
+}
+
+.adf6a2318b1780ffe252bcc1d1ac2f74777e {
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+  background: rgba(0, 0, 0, .85);
+  bottom: calc(var(--icon-size) + 1rem);
+  max-width: 480px;
+  opacity: 0;
+  padding: var(--padding-top-bottom) var(--padding-sides);
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  transition: opacity .2s;
+  width: 100%;
+  z-index: 5
+}
+
+.adf6a2318b1780ffe252bcc1d1ac2f74777e.adf6a2318b1780ffc57ffc4c6829b0f12938 {
+  opacity: 1;
+  pointer-events: auto
+}
+
+.adf6a2318b1780ffbc00594ea7b04725cc34 {
+  position: relative
+}
+
+.adf6a2318b1780ffbc00594ea7b04725cc34 h3 {
+  margin-bottom: 20px
+}
+
+.adf6a2318b1780ffbf25f441fe387c19223e {
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2730%27 height=%2730%27%3E%3Cpath fill=%27%23FFF%27 d=%27m19.243 15 10.606 10.607-4.242 4.242L15 19.243 4.393 29.849.151 25.607 10.757 15 .151 4.393 4.393.151 15 10.757 25.607.151l4.242 4.242z%27/%3E%3C/svg%3E") 50% /contain;
+  cursor: pointer;
+  height: 1rem;
+  opacity: .85;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: opacity .2s;
+  width: 1rem
+}
+
+.adf6a2318b1780ffbf25f441fe387c19223e:hover {
+  opacity: 1
+}
+
+.adf6a2318b1780ffb96269caa362542e8dd6 {
+  display: flex;
+  margin-bottom: 20px
+}
+
+.adf6a2318b1780ffb96269caa362542e8dd6 a {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50px;
+  opacity: .75;
+  overflow: hidden;
+  text-indent: -15vw;
+  transition: opacity .2s;
+  width: 50px
+}
+
+.adf6a2318b1780ffb96269caa362542e8dd6 a:hover {
+  opacity: 1
+}
+
+.adf6a2318b1780ffb96269caa362542e8dd6 a.adf6a2318b1780fff7d1a5c4fd2882e40b0e {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 xml:space=%27preserve%27 id=%27Layer_1%27 x=%270%27 y=%270%27 style=%27enable-background:new 0 0 48 48%27 version=%271.1%27 viewBox=%270 0 48 48%27%3E%3Cstyle%3E.st0{fill:%23fff}%3C/style%3E%3Ccircle cx=%2724%27 cy=%2724%27 r=%2723%27/%3E%3Cpath d=%27M24 0C10.7 0 0 10.7 0 24s10.7 24 24 24 24-10.7 24-24S37.3 0 24 0zm0 47C11.3 47 1 36.7 1 24S11.3 1 24 1s23 10.3 23 23-10.3 23-23 23z%27 class=%27st0%27/%3E%3Cpath d=%27m33.3 30.9 1.1-6.9h-6.7v-4.5c0-1.9.9-3.7 3.9-3.7h3v-6s-2.7-.5-5.4-.5c-5.5 0-9.1 3.3-9.1 9.3V24H14v6.9h6.1v16.8c1.2.2 2.5.3 3.8.3s2.5-.1 3.8-.3V30.9h5.6z%27 class=%27st0%27/%3E%3C/svg%3E")
+}
+
+.adf6a2318b1780ffb96269caa362542e8dd6 a.adf6a2318b1780ffe469662b9e58eca48cb1 {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 xml:space=%27preserve%27 id=%27Layer_1%27 x=%270%27 y=%270%27 style=%27enable-background:new 0 0 48 48%27 version=%271.1%27 viewBox=%270 0 48 48%27%3E%3Cstyle%3E.st0{fill:%23fff}%3C/style%3E%3Ccircle cx=%2724%27 cy=%2724%27 r=%2723%27/%3E%3Cpath d=%27M24 0C10.7 0 0 10.7 0 24s10.7 24 24 24 24-10.7 24-24S37.3 0 24 0zm0 47C11.3 47 1 36.7 1 24S11.3 1 24 1s23 10.3 23 23-10.3 23-23 23z%27 class=%27st0%27/%3E%3Cpath d=%27M19.6 36.7c10.6 0 16.5-8.8 16.5-16.5v-.7c1.1-.8 2.1-1.8 2.9-3-1 .5-2.2.8-3.3.9 1.2-.7 2.1-1.9 2.5-3.2-1.1.7-2.4 1.1-3.7 1.4-1.1-1.1-2.6-1.8-4.2-1.8-3.2 0-5.8 2.6-5.8 5.8 0 .5.1.9.1 1.3-4.8-.2-9.1-2.5-11.9-6-.5.9-.8 1.8-.8 2.9 0 2 1 3.8 2.6 4.8-.9 0-1.8-.3-2.6-.7v.1c0 2.8 2 5.1 4.6 5.7-.5.1-1 .2-1.5.2-.4 0-.7 0-1.1-.1.7 2.3 2.9 4 5.4 4-2 1.6-4.5 2.5-7.2 2.5-.5 0-.9 0-1.4-.1 2.6 1.5 5.6 2.5 8.9 2.5%27 class=%27st0%27/%3E%3C/svg%3E")
+}
+
+.adf6a2318b1780ffb96269caa362542e8dd6 a.adf6a2318b1780fff98d80e61775bc42a300 {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 xml:space=%27preserve%27 id=%27Layer_1%27 x=%270%27 y=%270%27 style=%27enable-background:new 0 0 48 48%27 version=%271.1%27 viewBox=%270 0 48 48%27%3E%3Cstyle%3E.st0{fill:%23fff}%3C/style%3E%3Cpath d=%27M24 0C10.7 0 0 10.7 0 24s10.7 24 24 24 24-10.7 24-24S37.3 0 24 0zm0 47C11.3 47 1 36.7 1 24S11.3 1 24 1s23 10.3 23 23-10.3 23-23 23z%27 class=%27st0%27/%3E%3Ccircle cx=%2724%27 cy=%2724%27 r=%2723%27/%3E%3Cpath d=%27M24 10.9c4.3 0 4.8 0 6.5.1 1.6.1 2.4.3 3 .6.7.3 1.3.6 1.8 1.2s.9 1.1 1.2 1.8c.2.6.5 1.4.6 3 .1 1.7.1 2.2.1 6.5s0 4.8-.1 6.5c-.1 1.6-.3 2.4-.6 3-.3.7-.6 1.3-1.2 1.8-.6.6-1.1.9-1.8 1.2-.6.2-1.4.5-3 .6-1.7.1-2.2.1-6.5.1s-4.8 0-6.5-.1c-1.6-.1-2.4-.3-3-.6-.7-.3-1.3-.6-1.8-1.2-.6-.6-.9-1.1-1.2-1.8-.2-.6-.5-1.4-.6-3-.1-1.7-.1-2.2-.1-6.5s0-4.8.1-6.5c.1-1.6.3-2.4.6-3 .3-.7.6-1.3 1.2-1.8s1.1-.9 1.8-1.2c.6-.2 1.4-.5 3-.6 1.7-.1 2.2-.1 6.5-.1M24 8c-4.3 0-4.9 0-6.6.1-1.7.1-2.9.3-3.9.7-1.1.4-1.9 1-2.8 1.8s-1.4 1.8-1.8 2.8c-.4 1-.7 2.2-.7 3.9C8 19.1 8 19.7 8 24s0 4.9.1 6.6c.1 1.7.3 2.9.7 3.9.4 1.1 1 1.9 1.8 2.8s1.8 1.4 2.8 1.8c1 .4 2.2.7 3.9.7 1.8.2 2.4.2 6.7.2s4.9 0 6.6-.1c1.7-.1 2.9-.3 3.9-.7 1.1-.4 1.9-1 2.8-1.8s1.4-1.8 1.8-2.8c.4-1 .7-2.2.7-3.9.2-1.8.2-2.4.2-6.7s0-4.9-.1-6.6c-.1-1.7-.3-2.9-.7-3.9-.4-1.1-1-1.9-1.8-2.8s-1.8-1.4-2.8-1.8c-1-.4-2.2-.7-3.9-.7C28.9 8 28.3 8 24 8z%27 class=%27st0%27/%3E%3Cpath d=%27M24 15.8c-4.5 0-8.2 3.7-8.2 8.2s3.7 8.2 8.2 8.2 8.2-3.7 8.2-8.2-3.7-8.2-8.2-8.2zm0 13.5c-2.9 0-5.3-2.4-5.3-5.3s2.4-5.3 5.3-5.3 5.3 2.4 5.3 5.3-2.4 5.3-5.3 5.3z%27 class=%27st0%27/%3E%3Ccircle cx=%2732.5%27 cy=%2715.5%27 r=%271.9%27 class=%27st0%27/%3E%3C/svg%3E")
+}
+
+.adf6a2318b1780ffb96269caa362542e8dd6 a.adf6a2318b1780ffab1b430b0806a1a44901 {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 xmlns:xlink=%27http://www.w3.org/1999/xlink%27 xml:space=%27preserve%27 id=%27Layer_1%27 x=%270%27 y=%270%27 style=%27enable-background:new 0 0 48 48%27 version=%271.1%27 viewBox=%270 0 48 48%27%3E%3Cstyle%3E.st0{fill:%23fff}%3C/style%3E%3Csymbol id=%27icon_2%27 viewBox=%27-16 -14 32 28.5%27%3E%3Cpath d=%27M16 0c0 1.9-1.6 3.5-3.5 3.5-.9 0-1.8-.4-2.4-1-2.4 1.7-5.7 2.8-9.4 3L2.3 13l5.2-1.1c.1-1.3 1.1-2.4 2.5-2.4s2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5c-1 0-1.8-.6-2.2-1.4L2 14.3c-.2 0-.3 0-.5-.1s-.3-.2-.3-.3L-.6 5.5c-3.7-.1-7.1-1.2-9.5-3-.6.6-1.5 1-2.4 1-1.9 0-3.5-1.6-3.5-3.5 0-1.4.9-2.6 2.1-3.2-.1-.3-.1-.7-.1-1C-14-9.6-7.7-14 0-14s14 4.4 14 9.8c0 .4 0 .7-.1 1.1C15.1-2.7 16-1.4 16 0zM-8-2.5C-8-1.1-6.9 0-5.5 0S-3-1.1-3-2.5-4.1-5-5.5-5-8-3.9-8-2.5zM5.9-9.1c-1.7-1.7-5-1.8-5.9-1.8-1 0-4.2.1-5.9 1.8-.3.3-.3.7 0 .9.3.3.7.3.9 0 1.1-1.1 3.4-1.5 5-1.5s3.9.4 5 1.5c.3.3.7.3.9 0 .3-.2.3-.7 0-.9zM5.5-5C4.1-5 3-3.9 3-2.5S4.1 0 5.5 0 8-1.1 8-2.5 6.9-5 5.5-5z%27 class=%27st0%27/%3E%3C/symbol%3E%3Ccircle cx=%2724%27 cy=%2724%27 r=%2723%27/%3E%3Cpath d=%27M24 0C10.7 0 0 10.7 0 24s10.7 24 24 24 24-10.7 24-24S37.3 0 24 0zm0 47C11.3 47 1 36.7 1 24S11.3 1 24 1s23 10.3 23 23-10.3 23-23 23z%27 class=%27st0%27/%3E%3Ccircle cx=%2724%27 cy=%2724%27 r=%2723%27/%3E%3Cuse xlink:href=%27%23icon_2%27 id=%27XMLID_6_%27 width=%2732%27 height=%2728.5%27 x=%27-16%27 y=%27-14%27 style=%27overflow:visible%27 transform=%27matrix%281 0 0 -1 24 24%29%27/%3E%3C/svg%3E")
+}
+
+.adf6a2318b1780ffb96269caa362542e8dd6 a.adf6a2318b1780fffbef457395b67e6be870 {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 xml:space=%27preserve%27 id=%27Layer_1%27 x=%270%27 y=%270%27 style=%27enable-background:new 0 0 48 48%27 version=%271.1%27 viewBox=%270 0 48 48%27%3E%3Cstyle%3E.st0{fill:%23fff}%3C/style%3E%3Cpath d=%27M24 0C10.7 0 0 10.7 0 24s10.7 24 24 24 24-10.7 24-24S37.3 0 24 0zm0 47C11.3 47 1 36.7 1 24S11.3 1 24 1s23 10.3 23 23-10.3 23-23 23z%27 class=%27st0%27/%3E%3Ccircle cx=%2724%27 cy=%2724%27 r=%2723%27/%3E%3Cpath d=%27M15.6 11.7c0 1.8-1.3 3.2-3.5 3.2-2 0-3.4-1.4-3.4-3.2 0-1.8 1.4-3.2 3.4-3.2 2.2 0 3.5 1.4 3.5 3.2zM8.9 38V17.4h6.5V38H8.9zm10.4-14c0-2.6-.1-4.7-.2-6.6h5.6l.3 2.9h.1c.9-1.3 3-3.3 6.4-3.3 4.2 0 7.4 2.8 7.4 8.9V38h-6.5V26.6c0-2.6-.9-4.5-3.3-4.5-1.8 0-2.8 1.2-3.3 2.4-.2.4-.2 1-.2 1.6V38h-6.5l.2-14z%27 class=%27st0%27/%3E%3C/svg%3E")
+}
+
+.adf6a2318b1780ffb96269caa362542e8dd6 a:not(:last-child) {
+  margin-right: 12px
+}
+
+.adf6a2318b1780ffdcbf4f849359481e1cb7 {
+  display: flex
+}
+
+.adf6a2318b1780ffdcbf4f849359481e1cb7:not(:last-child) {
+  margin-bottom: 12px
+}
+
+.adf6a2318b1780ffdcbf4f849359481e1cb7 input {
+  background: #292929;
+  border: none;
+  color: #fff;
+  flex-grow: 1;
+  font-size: 75%;
+  font-size: .75rem
+}
+
+.adf6a2318b1780ffdcbf4f849359481e1cb7 button {
+  background: #fcaf17;
+  border: none;
+  cursor: pointer;
+  flex-grow: 0;
+  font-weight: 700
+}
+
+.adf6a2318b1780ffdcbf4f849359481e1cb7 button,
+.adf6a2318b1780ffdcbf4f849359481e1cb7 input {
+  padding: calc(var(--padding-top-bottom) / 2) calc(var(--padding-sides))
+}
+
+video.adf6a2318b1780ffcaded5047c2fa094d46a {
+  background: #000;
+  cursor: pointer;
+  filter: blur(var(--blur-because-in-bg, 0));
+  height: 100%;
+  left: 0;
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  transition: filter .8s;
+  width: 100%
+}
+
+.adf6a2318b1780ffeae9488d6ef8287c53b2 {
+  --padding-sides: 1rem;
+  --padding-top-bottom: 1rem;
+  --icon-size: 2.5rem;
+  height: 100%;
+  z-index: 1
+}
+
+.adf6a2318b1780ffeae9488d6ef8287c53b2.adf6a2318b1780ffa8887175f0f987bad4e5 {
+  --blur-because-in-bg: 10px
+}
+
+.adf6a2318b1780ffeae9488d6ef8287c53b2.adf6a2318b1780fff3b610ed684ceab614f7 {
+  cursor: pointer
+}
+
+.adf6a2318b1780ffeae9488d6ef8287c53b2.adf6a2318b1780fff3b610ed684ceab614f7 .adf6a2318b1780ffefe011c1ad38a1cecfee {
+  display: none
+}
+
+.adf6a2318b1780ffeae90eddb5866e3bd40d {
+  border: none;
+  height: 100%;
+  width: 100%
+}

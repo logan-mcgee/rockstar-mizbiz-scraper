@@ -4,7 +4,7 @@ var intl;
   var e, r, t, n, a = {
       288: (e, r, t) => {
         var n = {
-            "./index": () => Promise.all([t.e(102), t.e(481)]).then((() => () => t(821)))
+            "./index": () => Promise.all([t.e(742), t.e(63)]).then((() => () => t(63)))
           },
           a = (e, r) => (t.R = r, r = t.o(n, e) ? n[e]() : Promise.resolve().then((() => {
             throw new Error('Module "' + e + '" does not exist in container.')
@@ -56,9 +56,9 @@ var intl;
       get: r[t]
     })
   }, o.f = {}, o.e = e => Promise.all(Object.keys(o.f).reduce(((r, t) => (o.f[t](e, r), r)), [])), o.u = e => "js/" + {
-    102: "82c45988766760db42df",
+    63: "1e4c6d72062a047313ad",
     252: "6716ace7863b42c34f4b",
-    481: "5bf9ba5203b11d812fbd"
+    742: "907200518539520f6d01"
   } [e] + ".js", o.miniCssF = e => {}, o.g = function() {
     if ("object" == typeof globalThis) return globalThis;
     try {
@@ -97,7 +97,7 @@ var intl;
       value: !0
     })
   }, t = {
-    481: [657]
+    63: [657]
   }, n = {
     657: ["default", "./hooks", 810]
   }, o.f.remotes = (e, r) => {
@@ -254,7 +254,7 @@ var intl;
         932: () => n("default", "react", [1, 18, 2, 0], (() => o.e(252).then((() => () => o(252)))))
       },
       s = {
-        481: [932]
+        63: [932]
       };
     o.f.consumes = (e, r) => {
       o.o(s, e) && s[e].forEach((e => {

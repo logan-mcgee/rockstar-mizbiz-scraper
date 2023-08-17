@@ -1,0 +1,4187 @@
+@font-face {
+  font-family: UniversalCyrillic;
+  font-style: italic;
+  font-weight: 500;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/26e5a66418fa0c236d7f.woff) format("woff")
+}
+
+@font-face {
+  font-family: UniversalCyrillic;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/ec75ef1bf879e85f73ea.woff) format("woff")
+}
+
+@font-face {
+  font-family: UniversalCyrillic;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/66ded8deceb2a2e3ba4b.woff) format("woff")
+}
+
+@font-face {
+  font-family: UniversalCyrillic;
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/fb4775197101f0e0a0ba.woff) format("woff")
+}
+
+@font-face {
+  font-family: RDRUltra;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/28a1db376124dcc8700a.woff) format("woff")
+}
+
+._560823421a0f2e0ab3a2b9480e2de3533862 {
+  grid-gap: var(--grid-gap-md);
+  --image-size: 1fr;
+  --gtc-left: var(--image-size);
+  --gtc-right: 1fr;
+  align-items: center;
+  color: #fff;
+  display: grid;
+  max-width: var(--content-max-width);
+  padding: var(--content-padding);
+  z-index: 1
+}
+
+._560823421a0f2e0ab3a2b9480e2de3533862._560823421a0f2e0ae02b227008cd654c9631 {
+  --gtc-left: 1fr;
+  --gtc-right: var(--image-size)
+}
+
+@media (min-width:1440px) {
+  ._560823421a0f2e0ab3a2b9480e2de3533862 {
+    grid-gap: var(--grid-gap-lg);
+    grid-auto-flow: column;
+    grid-template-columns: var(--gtc-left) var(--gtc-right)
+  }
+}
+
+@media (min-width:1920px) {
+  ._560823421a0f2e0ab3a2b9480e2de3533862 {
+    --image-size: 1.25fr
+  }
+}
+
+@media (min-width:2560px) {
+  ._560823421a0f2e0ab3a2b9480e2de3533862 {
+    --image-size: 1.75fr;
+    grid-gap: 0
+  }
+}
+
+._560823421a0f2e0ab3a2b9480e2de3533862._560823421a0f2e0acfd9cdff3e78992a9a41 {
+  grid-template-columns: 1fr;
+  justify-content: center
+}
+
+@media (max-width:1023px) {
+  ._560823421a0f2e0ac7a6a80868ad42e86081 {
+    padding: 0
+  }
+}
+
+@media (min-width:1440px) {
+  ._560823421a0f2e0ac7a6a80868ad42e86081 {
+    grid-gap: 0
+  }
+}
+
+._560823421a0f2e0ac7a6a80868ad42e86081 ._560823421a0f2e0ab1921c2502b1e826fa36 {
+  --aspect-ratio: 1;
+  order: 1;
+  position: relative
+}
+
+._560823421a0f2e0ac7a6a80868ad42e86081 ._560823421a0f2e0ab1921c2502b1e826fa36:before {
+  content: "";
+  display: block;
+  height: 0;
+  padding-bottom: calc(100% / calc(var(--aspect-ratio)))
+}
+
+._560823421a0f2e0ac7a6a80868ad42e86081 ._560823421a0f2e0ab1921c2502b1e826fa36>* {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%
+}
+
+@media (min-width:1024px) {
+  ._560823421a0f2e0ac7a6a80868ad42e86081 ._560823421a0f2e0ab1921c2502b1e826fa36 {
+    --aspect-ratio: 2949/2560;
+    position: relative
+  }
+
+  ._560823421a0f2e0ac7a6a80868ad42e86081 ._560823421a0f2e0ab1921c2502b1e826fa36:before {
+    content: "";
+    display: block;
+    height: 0;
+    padding-bottom: calc(100% / calc(var(--aspect-ratio)))
+  }
+
+  ._560823421a0f2e0ac7a6a80868ad42e86081 ._560823421a0f2e0ab1921c2502b1e826fa36>* {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
+  }
+}
+
+._560823421a0f2e0ac7a6a80868ad42e86081 ._560823421a0f2e0adefa47d004e4bb63169b {
+  order: 2
+}
+
+@media (max-width:1023px) {
+  ._560823421a0f2e0ac7a6a80868ad42e86081 ._560823421a0f2e0adefa47d004e4bb63169b {
+    padding: var(--content-padding)
+  }
+}
+
+@media (min-width:2560px) {
+  ._560823421a0f2e0ac7a6a80868ad42e86081 ._560823421a0f2e0adefa47d004e4bb63169b {
+    padding: 0
+  }
+}
+
+._560823421a0f2e0ac7b5a55806c5b9346d03 {
+  font-size: var(--font-size-7)
+}
+
+._560823421a0f2e0ac7a6a80868ad42e86081 ._560823421a0f2e0ac7b5a55806c5b9346d03,
+._560823421a0f2e0ac7b5a55806c5b9346d03 {
+  color: var(--color-h);
+  font-family: var(--font-family-h);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-h);
+  line-height: var(--line-height-md)
+}
+
+._560823421a0f2e0ac7a6a80868ad42e86081 ._560823421a0f2e0ac7b5a55806c5b9346d03 {
+  font-size: var(--font-size-8)
+}
+
+._560823421a0f2e0ab1921c2502b1e826fa36 {
+  --aspect-ratio: 16/9;
+  border-radius: var(--border-radius-md);
+  position: relative
+}
+
+._560823421a0f2e0ab1921c2502b1e826fa36:before {
+  content: "";
+  display: block;
+  height: 0;
+  padding-bottom: calc(100% / calc(var(--aspect-ratio)))
+}
+
+._560823421a0f2e0ab1921c2502b1e826fa36>* {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%
+}
+
+._560823421a0f2e0adefa47d004e4bb63169b {
+  grid-gap: var(--grid-gap-md);
+  display: grid;
+  margin: auto;
+  max-width: var(--max-width-sm);
+  position: relative
+}
+
+@media (min-width:1440px) {
+  ._560823421a0f2e0ae02b227008cd654c9631 ._560823421a0f2e0adefa47d004e4bb63169b {
+    order: -1
+  }
+}
+
+@media (min-width:2560px) {
+  ._560823421a0f2e0adefa47d004e4bb63169b {
+    padding: 0 var(--padding-lg)
+  }
+}
+
+._560823421a0f2e0aa8e1bc26d200facb17a5 {
+  border: none;
+  outline: none
+}
+
+._560823421a0f2e0ac8677a490fca6b766d60,
+._560823421a0f2e0ae1f0b4c0a4666b75e478 {
+  grid-gap: var(--grid-gap-xs);
+  display: grid
+}
+
+._560823421a0f2e0ae1f0b4c0a4666b75e478 img {
+  object-fit: contain;
+  object-position: left
+}
+
+._560823421a0f2e0ad2601c62671dbd1e4fac {
+  color: var(--white-65, hsla(0, 0%, 100%, .65));
+  font-size: var(--font-size-2) !important;
+  line-height: 1.5
+}
+
+._560823421a0f2e0ab11bf7470e0c46b247df {
+  --font-family-h: RDRUltra, Arial;
+  --letter-spacing-h: 0
+}
+
+._560823421a0f2e0aa0a9e4babf3ba41e8d0d {
+  --font-family-h: "UnivsersalCyrillic"
+}
+
+._560823421a0f2e0aa6b191a625e9878823b3 {
+  --features-padding-top: var(--padding-lg);
+  --features-offset-top: calc(50% + var(--features-padding-top));
+  --features-mask-height: 4rem;
+  background: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/e5abfcab01b2bd47f303.png) 50%/60%;
+  margin: var(--features-offset-top) 0 var(--features-mask-height);
+  position: relative
+}
+
+@media (min-width:768px) {
+  ._560823421a0f2e0aa6b191a625e9878823b3 {
+    --features-offset-top: calc(48% + var(--features-padding-top))
+  }
+}
+
+@media (min-width:1440px) {
+  ._560823421a0f2e0aa6b191a625e9878823b3 {
+    --features-offset-top: calc(25% + var(--features-padding-top))
+  }
+}
+
+._560823421a0f2e0aa6b191a625e9878823b3:before {
+  background-position: top;
+  -webkit-mask-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/a557629c14a7f761c04c.png);
+  mask-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/a557629c14a7f761c04c.png);
+  top: calc(var(--features-mask-height) * -1)
+}
+
+._560823421a0f2e0aa6b191a625e9878823b3:after,
+._560823421a0f2e0aa6b191a625e9878823b3:before {
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/e5abfcab01b2bd47f303.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  height: var(--features-mask-height);
+  left: 0;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  position: absolute;
+  right: 0;
+  z-index: 0
+}
+
+._560823421a0f2e0aa6b191a625e9878823b3:after {
+  background-position: bottom;
+  bottom: calc(var(--features-mask-height) * -1);
+  -webkit-mask-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/6b75557f6c5ce222b9ca.png);
+  mask-image: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/6b75557f6c5ce222b9ca.png);
+  transform: scale(-1)
+}
+
+._560823421a0f2e0ac9cad8199db99d807319 {
+  align-items: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--grid-gap-xl);
+  justify-content: center;
+  margin: calc(var(--features-offset-top) * -1) 0 0;
+  padding: var(--features-padding-top) 0;
+  position: relative
+}
+
+._560823421a0f2e0ae829b15c6f832e481776 {
+  aspect-ratio: var(--aspect-ratio-mobile, "16/9");
+  border: 1px solid transparent;
+  border-radius: var(--border-radius-md);
+  cursor: pointer;
+  display: flex;
+  flex: none;
+  height: 100%;
+  position: relative;
+  transition: .3s ease-in-out;
+  width: 100%
+}
+
+._560823421a0f2e0ae829b15c6f832e481776:hover {
+  background-position: top;
+  border-color: var(--white-100)
+}
+
+._560823421a0f2e0ae829b15c6f832e481776:hover ._560823421a0f2e0ad5f6cb2b591ae76d3cc3 {
+  transform: scale(1.02)
+}
+
+@media (min-width:1024px) {
+  ._560823421a0f2e0ae829b15c6f832e481776 {
+    flex: 1 1 0
+  }
+}
+
+@media (min-width:768px) {
+  ._560823421a0f2e0ae829b15c6f832e481776 {
+    aspect-ratio: var(--aspect-ratio-desktop, var(--aspect-ratio-mobile, "16/9"));
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover
+  }
+}
+
+._560823421a0f2e0ae829b15c6f832e481776 div {
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  transition: all .2s ease-in-out
+}
+
+@media (max-width:414px) {
+  ._560823421a0f2e0ae829b15c6f832e481776 div {
+    overflow: unset
+  }
+}
+
+._560823421a0f2e0ae829b15c6f832e481776 div img {
+  aspect-ratio: var(--aspect-ratio-mobile, "16/9");
+  height: 100%;
+  max-width: unset
+}
+
+@media (min-width:768px) {
+  ._560823421a0f2e0ae829b15c6f832e481776 div img {
+    aspect-ratio: var(--aspect-ratio-desktop, var(--aspect-ratio-mobile, "16/9"));
+    height: auto;
+    width: 100%
+  }
+}
+
+._560823421a0f2e0abd7fb13962aaa619886a,
+._560823421a0f2e0ab445745e0771435925c8,
+._560823421a0f2e0ab09d5f791c02f3e34549,
+._560823421a0f2e0ad4ba72e3c292e491c812,
+._560823421a0f2e0aa19f6f9bc69c43c4b70e {
+  border-radius: 100% !important;
+  bottom: 1rem;
+  height: 50px !important;
+  left: auto !important;
+  right: 1rem;
+  top: auto !important;
+  width: 50px !important;
+  z-index: 1
+}
+
+._560823421a0f2e0abd7fb13962aaa619886a:after,
+._560823421a0f2e0ab445745e0771435925c8:after,
+._560823421a0f2e0ab09d5f791c02f3e34549:after,
+._560823421a0f2e0ad4ba72e3c292e491c812:after,
+._560823421a0f2e0aa19f6f9bc69c43c4b70e:after {
+  background-size: .75rem
+}
+
+._560823421a0f2e0ad4ba72e3c292e491c812 {
+  background: var(--black-65, rgba(0, 0, 0, .65));
+  border: 1px solid var(--white-100, #fff);
+  border-radius: 50%;
+  cursor: pointer;
+  height: 2rem;
+  padding: 0;
+  position: relative;
+  transition: background .3s ease-in-out;
+  width: 2rem
+}
+
+._560823421a0f2e0ad4ba72e3c292e491c812:after {
+  background: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/3ffdb1e004aa0d8bde9d.svg) no-repeat 50%/1rem;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: .3s ease-in-out;
+  width: 100%
+}
+
+@media (pointer:coarse) {
+
+  ._560823421a0f2e0ad4ba72e3c292e491c812:active,
+  ._560823421a0f2e0ad4ba72e3c292e491c812:focus {
+    background: var(--white-100, #fff)
+  }
+
+  ._560823421a0f2e0ad4ba72e3c292e491c812:active:after,
+  ._560823421a0f2e0ad4ba72e3c292e491c812:focus:after {
+    filter: invert(1)
+  }
+}
+
+@media not ((pointer:coarse)) {
+
+  ._560823421a0f2e0ad4ba72e3c292e491c812:focus,
+  ._560823421a0f2e0ad4ba72e3c292e491c812:hover {
+    background: var(--white-100, #fff)
+  }
+
+  ._560823421a0f2e0ad4ba72e3c292e491c812:focus:after,
+  ._560823421a0f2e0ad4ba72e3c292e491c812:hover:after {
+    filter: invert(1)
+  }
+}
+
+._560823421a0f2e0ad4ba72e3c292e491c812:after {
+  background-size: .875rem;
+  left: 2px
+}
+
+._560823421a0f2e0aa19f6f9bc69c43c4b70e {
+  background: var(--black-65, rgba(0, 0, 0, .65));
+  border: 1px solid var(--white-100, #fff);
+  border-radius: 50%;
+  cursor: pointer;
+  height: 2rem;
+  padding: 0;
+  position: relative;
+  transition: background .3s ease-in-out;
+  width: 2rem
+}
+
+._560823421a0f2e0aa19f6f9bc69c43c4b70e:after {
+  background: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/ada643924a0e071c033c.svg) no-repeat 50%/1rem;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: .3s ease-in-out;
+  width: 100%
+}
+
+@media (pointer:coarse) {
+
+  ._560823421a0f2e0aa19f6f9bc69c43c4b70e:active,
+  ._560823421a0f2e0aa19f6f9bc69c43c4b70e:focus {
+    background: var(--white-100, #fff)
+  }
+
+  ._560823421a0f2e0aa19f6f9bc69c43c4b70e:active:after,
+  ._560823421a0f2e0aa19f6f9bc69c43c4b70e:focus:after {
+    filter: invert(1)
+  }
+}
+
+@media not ((pointer:coarse)) {
+
+  ._560823421a0f2e0aa19f6f9bc69c43c4b70e:focus,
+  ._560823421a0f2e0aa19f6f9bc69c43c4b70e:hover {
+    background: var(--white-100, #fff)
+  }
+
+  ._560823421a0f2e0aa19f6f9bc69c43c4b70e:focus:after,
+  ._560823421a0f2e0aa19f6f9bc69c43c4b70e:hover:after {
+    filter: invert(1)
+  }
+}
+
+._560823421a0f2e0abd7fb13962aaa619886a {
+  background: var(--black-65, rgba(0, 0, 0, .65));
+  border: 1px solid var(--white-100, #fff);
+  border-radius: 50%;
+  cursor: pointer;
+  height: 2rem;
+  padding: 0;
+  position: relative;
+  transition: background .3s ease-in-out;
+  width: 2rem
+}
+
+._560823421a0f2e0abd7fb13962aaa619886a:after {
+  background: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/cab7ef8a2f7de83a0f02.svg) no-repeat 50%/1rem;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: .3s ease-in-out;
+  width: 100%
+}
+
+@media (pointer:coarse) {
+
+  ._560823421a0f2e0abd7fb13962aaa619886a:active,
+  ._560823421a0f2e0abd7fb13962aaa619886a:focus {
+    background: var(--white-100, #fff)
+  }
+
+  ._560823421a0f2e0abd7fb13962aaa619886a:active:after,
+  ._560823421a0f2e0abd7fb13962aaa619886a:focus:after {
+    filter: invert(1)
+  }
+}
+
+@media not ((pointer:coarse)) {
+
+  ._560823421a0f2e0abd7fb13962aaa619886a:focus,
+  ._560823421a0f2e0abd7fb13962aaa619886a:hover {
+    background: var(--white-100, #fff)
+  }
+
+  ._560823421a0f2e0abd7fb13962aaa619886a:focus:after,
+  ._560823421a0f2e0abd7fb13962aaa619886a:hover:after {
+    filter: invert(1)
+  }
+}
+
+._560823421a0f2e0ab445745e0771435925c8 {
+  background: var(--black-65, rgba(0, 0, 0, .65));
+  border: 1px solid var(--white-100, #fff);
+  border-radius: 50%;
+  cursor: pointer;
+  height: 2rem;
+  padding: 0;
+  position: relative;
+  transition: background .3s ease-in-out;
+  width: 2rem
+}
+
+._560823421a0f2e0ab445745e0771435925c8:after {
+  background: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/ee240337f671a455bf80.svg) no-repeat 50%/1rem;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: .3s ease-in-out;
+  width: 100%
+}
+
+@media (pointer:coarse) {
+
+  ._560823421a0f2e0ab445745e0771435925c8:active,
+  ._560823421a0f2e0ab445745e0771435925c8:focus {
+    background: var(--white-100, #fff)
+  }
+
+  ._560823421a0f2e0ab445745e0771435925c8:active:after,
+  ._560823421a0f2e0ab445745e0771435925c8:focus:after {
+    filter: invert(1)
+  }
+}
+
+@media not ((pointer:coarse)) {
+
+  ._560823421a0f2e0ab445745e0771435925c8:focus,
+  ._560823421a0f2e0ab445745e0771435925c8:hover {
+    background: var(--white-100, #fff)
+  }
+
+  ._560823421a0f2e0ab445745e0771435925c8:focus:after,
+  ._560823421a0f2e0ab445745e0771435925c8:hover:after {
+    filter: invert(1)
+  }
+}
+
+._560823421a0f2e0ad5f6cb2b591ae76d3cc3 {
+  border-radius: var(--border-radius-md);
+  transition: all .3s ease-in-out
+}
+
+._560823421a0f2e0abf78911e90c4f90fef85 {
+  --font-family-h: "HelveticaNowDisplayBold";
+  --letter-spacing-h: -0.025rem;
+  align-items: flex-start;
+  background: linear-gradient(var(--gradient-angle, 90deg), var(--gradient-start-color) 0, var(--gradient-end-color) var(--gradient-end-percentage, 70%), transparent 100%);
+  border-radius: var(--border-radius-md) 0 0 var(--border-radius-md);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: var(--grid-gap-xxs);
+  height: 100%;
+  justify-content: center;
+  max-width: 50%;
+  padding: var(--padding-md) 0 var(--padding-md) var(--padding-md);
+  position: relative;
+  text-align: left;
+  width: 100%
+}
+
+@media (min-width:768px) {
+  ._560823421a0f2e0abf78911e90c4f90fef85 {
+    align-items: flex-start;
+    justify-content: center
+  }
+}
+
+@media (max-width:1440px) {
+  ._560823421a0f2e0abf78911e90c4f90fef85 {
+    max-width: 65%
+  }
+}
+
+@media (max-width:1024px) {
+  ._560823421a0f2e0abf78911e90c4f90fef85 {
+    max-width: 50%
+  }
+}
+
+@media (max-width:768px) {
+  ._560823421a0f2e0abf78911e90c4f90fef85 {
+    max-width: 60%
+  }
+}
+
+@media (max-width:414px) {
+  ._560823421a0f2e0abf78911e90c4f90fef85 {
+    padding: var(--padding-md) 0 var(--padding-md) var(--padding-sm)
+  }
+}
+
+@media (min-width:1440px) {
+  ._560823421a0f2e0abf78911e90c4f90fef85 {
+    padding: var(--padding-lg) 0 var(--padding-lg) var(--padding-md)
+  }
+}
+
+._560823421a0f2e0abf78911e90c4f90fef85 h1,
+._560823421a0f2e0abf78911e90c4f90fef85 h2,
+._560823421a0f2e0abf78911e90c4f90fef85 h3,
+._560823421a0f2e0abf78911e90c4f90fef85 h4,
+._560823421a0f2e0abf78911e90c4f90fef85 h5 {
+  display: block;
+  margin: 0;
+  text-align: left
+}
+
+._560823421a0f2e0abf78911e90c4f90fef85 ._560823421a0f2e0aa9a1d42ddbd7508c76b2 {
+  --font-family-h: "HelveticaNowDisplayBold";
+  font-size: var(--font-size-5);
+  max-width: var(--max-width-sm)
+}
+
+@media (max-width:1439px) {
+  ._560823421a0f2e0abf78911e90c4f90fef85 ._560823421a0f2e0aa9a1d42ddbd7508c76b2 {
+    font-size: var(--font-size-4)
+  }
+}
+
+@media (max-width:1024px) {
+  ._560823421a0f2e0abf78911e90c4f90fef85 ._560823421a0f2e0aa9a1d42ddbd7508c76b2 {
+    font-size: var(--font-size-6)
+  }
+}
+
+@media (max-width:414px) {
+  ._560823421a0f2e0abf78911e90c4f90fef85 ._560823421a0f2e0aa9a1d42ddbd7508c76b2 {
+    font-size: var(--font-size-4)
+  }
+}
+
+@media (min-width:2560px) {
+  ._560823421a0f2e0abf78911e90c4f90fef85 ._560823421a0f2e0aa9a1d42ddbd7508c76b2 {
+    font-size: var(--font-size-6)
+  }
+}
+
+._560823421a0f2e0abf78911e90c4f90fef85 p {
+  color: var(--color-body);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-3);
+  font-weight: var(--font-weight-regular);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-body);
+  line-height: var(--line-height-lg)
+}
+
+@media (min-width:2560px) {
+  ._560823421a0f2e0abf78911e90c4f90fef85 p {
+    font-size: var(--font-size-4)
+  }
+}
+
+._560823421a0f2e0ace5eaa4eefb9d018642f {
+  padding: var(--padding-lg) var(--padding-sides)
+}
+
+._560823421a0f2e0ac6e72db53b44166b396b,
+._560823421a0f2e0ace5eaa4eefb9d018642f {
+  display: flex;
+  flex-direction: column;
+  gap: var(--grid-gap-sm)
+}
+
+@media (min-width:1024px) {
+  ._560823421a0f2e0ac6e72db53b44166b396b {
+    flex-direction: row
+  }
+}
+
+._560823421a0f2e0aa14cf0c1eb166653f8c5 {
+  align-items: center;
+  background: linear-gradient(var(--white-15), var(--white-15)), var(--black-100);
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  padding: 3px
+}
+
+._560823421a0f2e0ac3a28a754664659a6995 {
+  background: transparent;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  line-height: 0 !important;
+  padding: var(--padding-xs, .5rem) var(--padding-sm, 1rem);
+  position: relative
+}
+
+._560823421a0f2e0add1ad4dd4fe72996cd90 {
+  line-height: normal;
+  position: relative;
+  z-index: 2
+}
+
+._560823421a0f2e0add1ad4dd4fe72996cd90 ._560823421a0f2e0ad12571bbf42e604a16e7 {
+  display: flex;
+  height: .8rem
+}
+
+._560823421a0f2e0acdf3ae5032b44d881977 {
+  color: var(--color-body);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-2);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--letter-spacing-body);
+  line-height: var(--line-height-lg);
+  line-height: 100%;
+  position: relative;
+  transition: color .5s ease-in-out;
+  white-space: nowrap;
+  z-index: 10
+}
+
+._560823421a0f2e0ab86febf8db354327a2ae {
+  background: var(--white-15);
+  border-radius: 40px;
+  bottom: 0;
+  color: var(--black-200, #000);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1
+}
+
+@media screen and (max-width:414px) {
+  ._560823421a0f2e0aac86249740a635ec921a {
+    min-width: 100%;
+    overflow: auto;
+    position: relative;
+    white-space: nowrap;
+    width: calc(100vw - 4rem)
+  }
+
+  ._560823421a0f2e0aac86249740a635ec921a ._560823421a0f2e0aa14cf0c1eb166653f8c5 {
+    justify-content: start;
+    width: -moz-fit-content;
+    width: fit-content
+  }
+}
+
+@keyframes _560823421a0f2e0ae61c3d7845ee89c31729 {
+  0% {
+    opacity: .4
+  }
+
+  50% {
+    opacity: .75
+  }
+
+  to {
+    opacity: .4
+  }
+}
+
+._560823421a0f2e0ac9682c5edf886f64d9b2 {
+  animation: _560823421a0f2e0ae61c3d7845ee89c31729 1.5s ease-in-out infinite
+}
+
+._560823421a0f2e0ae8fd918316cf7a7a49f8 {
+  align-items: center;
+  background-color: rgba(0, 0, 0, .95);
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  opacity: 1;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 99
+}
+
+._560823421a0f2e0ad51ff2fbb0bfd8232a25 {
+  align-items: center;
+  background: transparent
+}
+
+._560823421a0f2e0ad51ff2fbb0bfd8232a25,
+._560823421a0f2e0ab705965e95bbcad00df1 {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: auto
+}
+
+._560823421a0f2e0ab705965e95bbcad00df1 {
+  flex-direction: column;
+  justify-self: center
+}
+
+@media only screen and (max-width:1368px) {
+  ._560823421a0f2e0ab705965e95bbcad00df1 {
+    width: 100%
+  }
+}
+
+._560823421a0f2e0aa027ea990705fce92268 {
+  left: 0;
+  position: absolute;
+  top: 0
+}
+
+._560823421a0f2e0ab0c56ae71f7c2fac6c1c {
+  display: flex;
+  flex-shrink: 0;
+  height: 100%;
+  left: 50%;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 1
+}
+
+._560823421a0f2e0af827fc08f8b9a502dece {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  width: auto
+}
+
+@media only screen and (max-width:1368px) {
+  ._560823421a0f2e0af827fc08f8b9a502dece {
+    --aspect-ratio: 1.7777;
+    height: auto;
+    position: relative
+  }
+
+  ._560823421a0f2e0af827fc08f8b9a502dece:before {
+    content: "";
+    display: block;
+    height: 0;
+    padding-bottom: calc(100% / calc(var(--aspect-ratio)))
+  }
+
+  ._560823421a0f2e0af827fc08f8b9a502dece>* {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
+  }
+}
+
+@media only screen and (orientation:landscape) and (max-height:776px) {
+  ._560823421a0f2e0af827fc08f8b9a502dece div {
+    padding: 0
+  }
+}
+
+._560823421a0f2e0ab1a7c230fb5f9aa38049 {
+  --aspect-ratio: 1.7777;
+  height: 100%;
+  object-fit: contain !important;
+  position: relative;
+  width: auto
+}
+
+._560823421a0f2e0ab1a7c230fb5f9aa38049:before {
+  content: "";
+  display: block;
+  height: 0;
+  padding-bottom: calc(100% / calc(var(--aspect-ratio)))
+}
+
+._560823421a0f2e0ab1a7c230fb5f9aa38049>* {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%
+}
+
+._560823421a0f2e0aa953c82e5fc786c39338 {
+  height: 100%;
+  max-height: 1080px;
+  width: auto
+}
+
+._560823421a0f2e0ad7fa2217be54d3b56327 {
+  --aspect-ratio: 1.7777;
+  display: inline-block;
+  height: 100%;
+  position: relative;
+  transform: scale(1);
+  transition: all .3s ease-out;
+  vertical-align: middle;
+  width: 100%
+}
+
+._560823421a0f2e0ad7fa2217be54d3b56327:before {
+  content: "";
+  display: block;
+  height: 0;
+  padding-bottom: calc(100% / calc(var(--aspect-ratio)))
+}
+
+._560823421a0f2e0ad7fa2217be54d3b56327>* {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%
+}
+
+@media only screen and (max-width:768px) {
+  ._560823421a0f2e0ad7fa2217be54d3b56327 {
+    object-fit: contain
+  }
+}
+
+._560823421a0f2e0ad24d7cbb76f9606a2ef1 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  min-height: 3rem;
+  position: relative;
+  width: 100%;
+  z-index: 2
+}
+
+._560823421a0f2e0aca572afcbc6b1ccf458e {
+  background: #000;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-sm, 4px);
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 2
+}
+
+._560823421a0f2e0aca572afcbc6b1ccf458e ._560823421a0f2e0aafb4ef1b53b7a0ba259c {
+  background: var(--black-65, rgba(0, 0, 0, .65));
+  background: var(--black-200);
+  border: none;
+  border-radius: 50%;
+  border-radius: 0;
+  cursor: pointer;
+  height: 3rem;
+  padding: 0;
+  position: relative;
+  transition: background .3s ease-in-out;
+  width: 3rem
+}
+
+._560823421a0f2e0aca572afcbc6b1ccf458e ._560823421a0f2e0aafb4ef1b53b7a0ba259c:after {
+  background: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/e684cb98f4103b0520a1.svg) no-repeat 50%/1rem;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: .3s ease-in-out;
+  width: 100%
+}
+
+@media (pointer:coarse) {
+
+  ._560823421a0f2e0aca572afcbc6b1ccf458e ._560823421a0f2e0aafb4ef1b53b7a0ba259c:active,
+  ._560823421a0f2e0aca572afcbc6b1ccf458e ._560823421a0f2e0aafb4ef1b53b7a0ba259c:focus {
+    background: var(--white-100, #fff)
+  }
+
+  ._560823421a0f2e0aca572afcbc6b1ccf458e ._560823421a0f2e0aafb4ef1b53b7a0ba259c:active:after,
+  ._560823421a0f2e0aca572afcbc6b1ccf458e ._560823421a0f2e0aafb4ef1b53b7a0ba259c:focus:after {
+    filter: invert(1)
+  }
+}
+
+@media not ((pointer:coarse)) {
+
+  ._560823421a0f2e0aca572afcbc6b1ccf458e ._560823421a0f2e0aafb4ef1b53b7a0ba259c:focus,
+  ._560823421a0f2e0aca572afcbc6b1ccf458e ._560823421a0f2e0aafb4ef1b53b7a0ba259c:hover {
+    background: var(--white-100, #fff)
+  }
+
+  ._560823421a0f2e0aca572afcbc6b1ccf458e ._560823421a0f2e0aafb4ef1b53b7a0ba259c:focus:after,
+  ._560823421a0f2e0aca572afcbc6b1ccf458e ._560823421a0f2e0aafb4ef1b53b7a0ba259c:hover:after {
+    filter: invert(1)
+  }
+}
+
+._560823421a0f2e0aca572afcbc6b1ccf458e ._560823421a0f2e0aafb4ef1b53b7a0ba259c:after {
+  background-size: 1.5rem
+}
+
+._560823421a0f2e0aca572afcbc6b1ccf458e ._560823421a0f2e0ac1444989821aab0eb71e {
+  background: var(--black-65, rgba(0, 0, 0, .65));
+  background: var(--black-200);
+  border: none;
+  border-radius: 50%;
+  border-radius: 0;
+  cursor: pointer;
+  height: 3rem;
+  padding: 0;
+  position: relative;
+  transition: background .3s ease-in-out;
+  width: 3rem
+}
+
+._560823421a0f2e0aca572afcbc6b1ccf458e ._560823421a0f2e0ac1444989821aab0eb71e:after {
+  background: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/d5bb5aa47dcc9670eb93.svg) no-repeat 50%/1rem;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: .3s ease-in-out;
+  width: 100%
+}
+
+@media (pointer:coarse) {
+
+  ._560823421a0f2e0aca572afcbc6b1ccf458e ._560823421a0f2e0ac1444989821aab0eb71e:active,
+  ._560823421a0f2e0aca572afcbc6b1ccf458e ._560823421a0f2e0ac1444989821aab0eb71e:focus {
+    background: var(--white-100, #fff)
+  }
+
+  ._560823421a0f2e0aca572afcbc6b1ccf458e ._560823421a0f2e0ac1444989821aab0eb71e:active:after,
+  ._560823421a0f2e0aca572afcbc6b1ccf458e ._560823421a0f2e0ac1444989821aab0eb71e:focus:after {
+    filter: invert(1)
+  }
+}
+
+@media not ((pointer:coarse)) {
+
+  ._560823421a0f2e0aca572afcbc6b1ccf458e ._560823421a0f2e0ac1444989821aab0eb71e:focus,
+  ._560823421a0f2e0aca572afcbc6b1ccf458e ._560823421a0f2e0ac1444989821aab0eb71e:hover {
+    background: var(--white-100, #fff)
+  }
+
+  ._560823421a0f2e0aca572afcbc6b1ccf458e ._560823421a0f2e0ac1444989821aab0eb71e:focus:after,
+  ._560823421a0f2e0aca572afcbc6b1ccf458e ._560823421a0f2e0ac1444989821aab0eb71e:hover:after {
+    filter: invert(1)
+  }
+}
+
+._560823421a0f2e0aca572afcbc6b1ccf458e ._560823421a0f2e0ac1444989821aab0eb71e:after {
+  background-size: 1.5rem
+}
+
+._560823421a0f2e0aca572afcbc6b1ccf458e ._560823421a0f2e0aafb4ef1b53b7a0ba259c[disabled],
+._560823421a0f2e0aca572afcbc6b1ccf458e ._560823421a0f2e0ac1444989821aab0eb71e[disabled] {
+  background: transparent
+}
+
+._560823421a0f2e0aca572afcbc6b1ccf458e ._560823421a0f2e0aafb4ef1b53b7a0ba259c[disabled]:after,
+._560823421a0f2e0aca572afcbc6b1ccf458e ._560823421a0f2e0ac1444989821aab0eb71e[disabled]:after {
+  filter: none;
+  opacity: .15
+}
+
+._560823421a0f2e0acf136ff35e49c7744520 {
+  background: var(--black-65, rgba(0, 0, 0, .65));
+  border: 1px solid var(--white-100, #fff);
+  border-radius: 50%;
+  cursor: pointer;
+  height: 2rem;
+  padding: 0;
+  position: relative;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background .3s ease-in-out;
+  width: 2rem
+}
+
+._560823421a0f2e0acf136ff35e49c7744520:after {
+  background: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/e20279ac4433a2ac0422.svg) no-repeat 50%/1rem;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: .3s ease-in-out;
+  width: 100%
+}
+
+@media (pointer:coarse) {
+
+  ._560823421a0f2e0acf136ff35e49c7744520:active,
+  ._560823421a0f2e0acf136ff35e49c7744520:focus {
+    background: var(--white-100, #fff)
+  }
+
+  ._560823421a0f2e0acf136ff35e49c7744520:active:after,
+  ._560823421a0f2e0acf136ff35e49c7744520:focus:after {
+    filter: invert(1)
+  }
+}
+
+@media not ((pointer:coarse)) {
+
+  ._560823421a0f2e0acf136ff35e49c7744520:focus,
+  ._560823421a0f2e0acf136ff35e49c7744520:hover {
+    background: var(--white-100, #fff)
+  }
+
+  ._560823421a0f2e0acf136ff35e49c7744520:focus:after,
+  ._560823421a0f2e0acf136ff35e49c7744520:hover:after {
+    filter: invert(1)
+  }
+}
+
+._560823421a0f2e0affcdc4542245867d1a6b {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 1fr 1fr
+}
+
+._560823421a0f2e0aa3c47b1efa37c0537d62 {
+  display: inline-block;
+  height: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+  width: 100%
+}
+
+._560823421a0f2e0ac39603540e530da252a4 {
+  aspect-ratio: 16/9;
+  border: var(--gallery-border, 1px solid var(--border-color));
+  cursor: pointer;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%
+}
+
+._560823421a0f2e0ac39603540e530da252a4,
+._560823421a0f2e0ac39603540e530da252a4 img {
+  transition: all .3s ease-in-out
+}
+
+._560823421a0f2e0ac39603540e530da252a4 img {
+  transform: scale(1.015)
+}
+
+._560823421a0f2e0ac39603540e530da252a4:hover {
+  border-color: var(--white-100)
+}
+
+._560823421a0f2e0ac39603540e530da252a4:hover img {
+  opacity: .8;
+  transform: scale(1.035)
+}
+
+._560823421a0f2e0ae922d8c04b65ddf8580f {
+  display: inline-block;
+  height: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+  width: 100%
+}
+
+._560823421a0f2e0aee443f71ef6bbd40a62a {
+  aspect-ratio: 16/9;
+  border: var(--gallery-border, 1px solid var(--border-color));
+  cursor: pointer;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%
+}
+
+._560823421a0f2e0aee443f71ef6bbd40a62a,
+._560823421a0f2e0aee443f71ef6bbd40a62a img {
+  transition: all .3s ease-in-out
+}
+
+._560823421a0f2e0aee443f71ef6bbd40a62a img {
+  transform: scale(1.015)
+}
+
+._560823421a0f2e0aee443f71ef6bbd40a62a:hover {
+  border-color: var(--white-100)
+}
+
+._560823421a0f2e0aee443f71ef6bbd40a62a:hover img {
+  opacity: .8;
+  transform: scale(1.035)
+}
+
+._560823421a0f2e0aab5f3ea9d1452cf0e6d1 {
+  align-self: var(--pagination-position);
+  background-color: initial
+}
+
+._560823421a0f2e0abc936877a3779c73b08c {
+  align-items: center;
+  background: #000;
+  display: flex;
+  flex-direction: row;
+  gap: var(--grid-gap-xs);
+  list-style: none;
+  margin: 0;
+  padding: 6px !important
+}
+
+._560823421a0f2e0aa70d86a80d7a9e36206c {
+  color: var(--color-body);
+  cursor: pointer;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-2);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--letter-spacing-body);
+  line-height: var(--line-height-lg);
+  text-transform: uppercase;
+  transition: all .3s ease-in
+}
+
+._560823421a0f2e0adea8cec8afdc7a279ca9,
+._560823421a0f2e0aa70d86a80d7a9e36206c {
+  align-items: center;
+  display: flex;
+  gap: var(--grid-gap-xxs);
+  justify-content: center
+}
+
+._560823421a0f2e0adea8cec8afdc7a279ca9 {
+  color: var(--white-100);
+  min-width: 60px
+}
+
+._560823421a0f2e0ae6758143538969405710 {
+  background: var(--black-65, rgba(0, 0, 0, .65));
+  border: 1px solid var(--white-100, #fff);
+  border-radius: 50%;
+  cursor: pointer;
+  height: 2rem;
+  padding: 0;
+  position: relative;
+  transition: background .3s ease-in-out;
+  width: 2rem
+}
+
+._560823421a0f2e0ae6758143538969405710:after {
+  background: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/d5bb5aa47dcc9670eb93.svg) no-repeat 50%/1rem;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: .3s ease-in-out;
+  width: 100%
+}
+
+@media (pointer:coarse) {
+
+  ._560823421a0f2e0ae6758143538969405710:active,
+  ._560823421a0f2e0ae6758143538969405710:focus {
+    background: var(--white-100, #fff)
+  }
+
+  ._560823421a0f2e0ae6758143538969405710:active:after,
+  ._560823421a0f2e0ae6758143538969405710:focus:after {
+    filter: invert(1)
+  }
+}
+
+@media not ((pointer:coarse)) {
+
+  ._560823421a0f2e0ae6758143538969405710:focus,
+  ._560823421a0f2e0ae6758143538969405710:hover {
+    background: var(--white-100, #fff)
+  }
+
+  ._560823421a0f2e0ae6758143538969405710:focus:after,
+  ._560823421a0f2e0ae6758143538969405710:hover:after {
+    filter: invert(1)
+  }
+}
+
+._560823421a0f2e0adeb110c9a2344fb78544 {
+  background: var(--black-65, rgba(0, 0, 0, .65));
+  border: 1px solid var(--white-100, #fff);
+  border-radius: 50%;
+  cursor: pointer;
+  height: 2rem;
+  padding: 0;
+  position: relative;
+  transition: background .3s ease-in-out;
+  width: 2rem
+}
+
+._560823421a0f2e0adeb110c9a2344fb78544:after {
+  background: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/img/e684cb98f4103b0520a1.svg) no-repeat 50%/1rem;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: .3s ease-in-out;
+  width: 100%
+}
+
+@media (pointer:coarse) {
+
+  ._560823421a0f2e0adeb110c9a2344fb78544:active,
+  ._560823421a0f2e0adeb110c9a2344fb78544:focus {
+    background: var(--white-100, #fff)
+  }
+
+  ._560823421a0f2e0adeb110c9a2344fb78544:active:after,
+  ._560823421a0f2e0adeb110c9a2344fb78544:focus:after {
+    filter: invert(1)
+  }
+}
+
+@media not ((pointer:coarse)) {
+
+  ._560823421a0f2e0adeb110c9a2344fb78544:focus,
+  ._560823421a0f2e0adeb110c9a2344fb78544:hover {
+    background: var(--white-100, #fff)
+  }
+
+  ._560823421a0f2e0adeb110c9a2344fb78544:focus:after,
+  ._560823421a0f2e0adeb110c9a2344fb78544:hover:after {
+    filter: invert(1)
+  }
+}
+
+._560823421a0f2e0adeb110c9a2344fb78544,
+._560823421a0f2e0ae6758143538969405710 {
+  border: none;
+  border-radius: 0;
+  font-weight: 700;
+  height: var(--rem-25-rem, 50px);
+  width: var(--rem-25-rem, 50px)
+}
+
+._560823421a0f2e0ae217507ffc174e416254 {
+  display: flex;
+  flex-direction: row
+}
+
+._560823421a0f2e0aea74189592c1f9ba14ee {
+  display: grid;
+  gap: var(--grid-gap-xs);
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  position: relative;
+  width: 100%
+}
+
+._560823421a0f2e0aea74189592c1f9ba14ee>div {
+  align-items: center;
+  justify-content: center;
+  overflow: hidden
+}
+
+._560823421a0f2e0aea74189592c1f9ba14ee>div:first-child {
+  order: 1
+}
+
+._560823421a0f2e0aea74189592c1f9ba14ee>div:nth-child(2) {
+  order: 2
+}
+
+._560823421a0f2e0aea74189592c1f9ba14ee>div:nth-child(3) {
+  order: 3
+}
+
+._560823421a0f2e0aea74189592c1f9ba14ee>div:nth-child(4) {
+  order: 4
+}
+
+._560823421a0f2e0aea74189592c1f9ba14ee>div:nth-child(5) {
+  order: 5
+}
+
+._560823421a0f2e0aea74189592c1f9ba14ee>div:nth-child(6) {
+  order: 6
+}
+
+._560823421a0f2e0aea74189592c1f9ba14ee>div:nth-child(7) {
+  order: 7
+}
+
+._560823421a0f2e0aea74189592c1f9ba14ee>div:nth-child(8) {
+  order: 8
+}
+
+@media only screen and (max-width:1200px) {
+  ._560823421a0f2e0aea74189592c1f9ba14ee {
+    grid-template-columns: 1fr
+  }
+
+  ._560823421a0f2e0aea74189592c1f9ba14ee>div:first-child {
+    order: 1
+  }
+
+  ._560823421a0f2e0aea74189592c1f9ba14ee>div:nth-child(2) {
+    order: 2
+  }
+
+  ._560823421a0f2e0aea74189592c1f9ba14ee>div:nth-child(3) {
+    order: 4
+  }
+
+  ._560823421a0f2e0aea74189592c1f9ba14ee>div:nth-child(4) {
+    order: 3
+  }
+
+  ._560823421a0f2e0aea74189592c1f9ba14ee>div:nth-child(5) {
+    order: 5
+  }
+
+  ._560823421a0f2e0aea74189592c1f9ba14ee>div:nth-child(6) {
+    order: 6
+  }
+
+  ._560823421a0f2e0aea74189592c1f9ba14ee>div:nth-child(7) {
+    order: 8
+  }
+
+  ._560823421a0f2e0aea74189592c1f9ba14ee>div:nth-child(8) {
+    order: 7
+  }
+}
+
+._560823421a0f2e0ac31d48e858de2c00f517 {
+  aspect-ratio: 16/9;
+  color: #fff;
+  width: 100%
+}
+
+._560823421a0f2e0abcd93e12b3f607e10ee3 {
+  text-align: center
+}
+
+._560823421a0f2e0add5080878c99b45c43a0 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem
+}
+
+@font-face {
+  font-family: ChaletComprime;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/0b050e3931bdee7b4e47.woff) format("woff")
+}
+
+._560823421a0f2e0aa193c3c368e981fe0391 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  padding: var(--padding-lg) var(--padding-sides);
+  position: relative
+}
+
+._560823421a0f2e0abb35424bfc01208af131 {
+  align-items: flex-start;
+  flex-direction: column
+}
+
+._560823421a0f2e0ae77da06d26a86afa9cdd,
+._560823421a0f2e0abb35424bfc01208af131 {
+  display: flex;
+  gap: var(--grid-gap-sm);
+  width: 100%
+}
+
+._560823421a0f2e0ae77da06d26a86afa9cdd {
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between
+}
+
+@media only screen and (max-width:768px) {
+  ._560823421a0f2e0ae77da06d26a86afa9cdd {
+    align-items: flex-start;
+    flex-direction: column
+  }
+}
+
+._560823421a0f2e0ab8f1dad968c0897a0e02 {
+  color: var(--color-h);
+  color: var(--white-text, #e8e8e8);
+  font-family: var(--font-family-h);
+  font-size: var(--font-size-7);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-h);
+  line-height: var(--line-height-md)
+}
+
+._560823421a0f2e0af581d47907c5f8155410 {
+  align-items: center;
+  background: linear-gradient(var(--white-15), var(--white-15)), var(--black-100);
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  padding: 3px
+}
+
+._560823421a0f2e0aee8e3999f779badb508f {
+  background: transparent;
+  border: none;
+  border-radius: 40px;
+  color: var(--white-text, #e8e8e8);
+  cursor: pointer;
+  line-height: 100%;
+  padding: var(--padding-xs, 10px) var(--padding-sm, 20px);
+  position: relative;
+  text-transform: uppercase
+}
+
+._560823421a0f2e0af63178a69c9cf66a748a {
+  color: var(--black-200, #000)
+}
+
+._560823421a0f2e0ade9288acf024850ae7a8 {
+  font-family: ChaletComprime, HelveticaNowText, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: var(--letter-spacing-h);
+  position: relative;
+  transition: color .15s ease-in-out;
+  white-space: nowrap;
+  z-index: 10
+}
+
+._560823421a0f2e0ac2aa072d8f51f6ddabb1 {
+  background: var(--white-100, #fff);
+  border-radius: 40px;
+  bottom: 0;
+  color: var(--black-200, #000);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1
+}
+
+._560823421a0f2e0aeb9feac09744607f1014 {
+  --font-family-h: "RDRUltra";
+  --letter-spacing-h: 0
+}
+
+@font-face {
+  font-family: RDRUltra;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/28a1db376124dcc8700a.woff) format("woff")
+}
+
+._560823421a0f2e0ab0f539e698f4f00121fd {
+  --font-family-h: "UnivsersalCyrillic"
+}
+
+@font-face {
+  font-family: UniversalCyrillic;
+  font-style: italic;
+  font-weight: 500;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/26e5a66418fa0c236d7f.woff) format("woff")
+}
+
+@font-face {
+  font-family: UniversalCyrillic;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/ec75ef1bf879e85f73ea.woff) format("woff")
+}
+
+@font-face {
+  font-family: UniversalCyrillic;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/66ded8deceb2a2e3ba4b.woff) format("woff")
+}
+
+@font-face {
+  font-family: UniversalCyrillic;
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/fb4775197101f0e0a0ba.woff) format("woff")
+}
+
+._560823421a0f2e0ab7840db40ddec26f58c8 {
+  --font-family-h: "HelveticaNowText"
+}
+
+@font-face {
+  font-family: HelveticaNowText;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/daffe25cf3a522a0662b.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNowText;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/1c23ad3bd8f4ac8d4f58.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNowText;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/43c87a78e295c91e475d.woff) format("woff")
+}
+
+._560823421a0f2e0adbcf45a7d24606f9fc39 {
+  margin: 0 auto
+}
+
+@media (min-width:1280px) {
+  ._560823421a0f2e0adbcf45a7d24606f9fc39 {
+    padding: var(--padding-lg) 0
+  }
+}
+
+._560823421a0f2e0ab0eb78cc76de29e01f7e {
+  --text-transform-h: uppercase;
+  align-items: center;
+  height: calc(100% - 8rem);
+  margin: 2rem auto;
+  padding: 0 var(--padding-sides);
+  position: relative
+}
+
+@media only screen and (max-width:1279px) {
+  ._560823421a0f2e0ab0eb78cc76de29e01f7e {
+    margin: 8rem auto 4rem
+  }
+}
+
+._560823421a0f2e0ab0eb78cc76de29e01f7e:before {
+  background-attachment: var(--background-attachment);
+  background-clip: var(--background-clip);
+  background-color: var(--background-color);
+  background-image: var(--background-image-desktop);
+  background-origin: var(--background-origin);
+  background-position: var(--background-position);
+  background-repeat: var(--background-repeat);
+  background-size: var(--background-size);
+  content: "";
+  height: 100%;
+  left: 0;
+  -webkit-mask-image: var(--image-mask-mobile);
+  mask-image: var(--image-mask-mobile);
+  mask-mode: alpha;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  position: absolute;
+  top: 0;
+  width: 100%
+}
+
+._560823421a0f2e0aa4360ffde9f4417a2a7c {
+  grid-gap: var(--grid-gap-md);
+  --image-size: 0.75fr;
+  --rdr-left: var(--image-size);
+  --rdr-right: 1fr;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  z-index: 1
+}
+
+@media only screen and (max-width:1279px) {
+  ._560823421a0f2e0aa4360ffde9f4417a2a7c {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0
+  }
+}
+
+@media (min-width:1280px) {
+  ._560823421a0f2e0aa4360ffde9f4417a2a7c {
+    grid-gap: var(--grid-gap-lg);
+    --image-size: 1fr;
+    grid-auto-flow: column;
+    grid-template-columns: var(--rdr-left) var(--rdr-right)
+  }
+}
+
+@media (min-width:1580px) {
+  ._560823421a0f2e0aa4360ffde9f4417a2a7c {
+    grid-gap: 0;
+    --image-size: 0.75fr
+  }
+}
+
+._560823421a0f2e0acd9c706553e5452c5523 {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  z-index: 1
+}
+
+._560823421a0f2e0acd9c706553e5452c5523 img {
+  --aspect-ratio: 0.81012;
+  height: auto;
+  position: relative;
+  width: 100%
+}
+
+._560823421a0f2e0acd9c706553e5452c5523 img:before {
+  content: "";
+  display: block;
+  height: 0;
+  padding-bottom: calc(100% / calc(var(--aspect-ratio)))
+}
+
+._560823421a0f2e0acd9c706553e5452c5523 img>* {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%
+}
+
+@media only screen and (max-width:1366px) {
+  ._560823421a0f2e0acd9c706553e5452c5523 img {
+    height: auto;
+    object-fit: cover;
+    width: 100%
+  }
+}
+
+@media only screen and (max-width:1279px) {
+  ._560823421a0f2e0acd9c706553e5452c5523 img {
+    margin: -4rem auto 0;
+    width: 50%
+  }
+}
+
+@media only screen and (max-width:1024px) {
+  ._560823421a0f2e0acd9c706553e5452c5523 img {
+    width: 75%
+  }
+}
+
+._560823421a0f2e0abd71ae7dd03fb9a4bab3 {
+  --aspect-ratio: 0.81012;
+  background: #d3d3d3 50%/contain no-repeat;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, .33);
+  height: auto;
+  margin: -98px 0;
+  overflow: visible;
+  position: relative
+}
+
+._560823421a0f2e0abd71ae7dd03fb9a4bab3:before {
+  content: "";
+  display: block;
+  height: 0;
+  padding-bottom: calc(100% / calc(var(--aspect-ratio)))
+}
+
+._560823421a0f2e0abd71ae7dd03fb9a4bab3>* {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%
+}
+
+@media only screen and (max-width:1366px) {
+  ._560823421a0f2e0abd71ae7dd03fb9a4bab3 {
+    background: #d3d3d3 50%/cover no-repeat;
+    height: 100%
+  }
+}
+
+@media only screen and (max-width:1279px) {
+  ._560823421a0f2e0abd71ae7dd03fb9a4bab3 {
+    margin: -4rem auto 0;
+    width: 50%
+  }
+}
+
+._560823421a0f2e0adf7b9bc0c51447f90251 {
+  grid-gap: var(--grid-gap-md);
+  align-items: center;
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  justify-content: center;
+  justify-self: center;
+  max-width: var(--max-width-sm);
+  position: relative
+}
+
+@media (max-width:1023px) {
+  ._560823421a0f2e0adf7b9bc0c51447f90251 {
+    max-width: 640px
+  }
+}
+
+@media (min-width:2560px) {
+  ._560823421a0f2e0adf7b9bc0c51447f90251 {
+    max-width: 900px
+  }
+}
+
+@media only screen and (max-width:1024px) {
+  ._560823421a0f2e0adf7b9bc0c51447f90251 {
+    align-self: center;
+    gap: var(--grid-gap-md, 32px)
+  }
+}
+
+@media (min-width:1280px) {
+  ._560823421a0f2e0adf7b9bc0c51447f90251 {
+    padding: var(--padding-lg) 0
+  }
+}
+
+._560823421a0f2e0aa93c4cef013891e7bb69 {
+  grid-gap: var(--grid-gap-xs);
+  display: grid
+}
+
+._560823421a0f2e0add4b7c2eead3a22f40f4 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--grid-gap-sm);
+  justify-content: center;
+  text-align: left
+}
+
+._560823421a0f2e0ade84bdb38a77368bd905 {
+  color: var(--white-100, #fff)
+}
+
+._560823421a0f2e0ad8ae2def2e6eaf6b72e3>._560823421a0f2e0adf7b9bc0c51447f90251,
+._560823421a0f2e0ad8ae2def2e6eaf6b72e3>._560823421a0f2e0adf7b9bc0c51447f90251>div {
+  margin-bottom: 0
+}
+
+._560823421a0f2e0ad8ae2def2e6eaf6b72e3 ._560823421a0f2e0afd7cfa70ce1eac61e80a:hover {
+  color: #fff
+}
+
+._560823421a0f2e0afe82dfbbeb1ce6cc1ad5 {
+  grid-gap: var(--grid-gap-xs);
+  color: var(--color-body);
+  color: var(--white-text, #e8e8e8);
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-3);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--letter-spacing-body);
+  line-height: var(--line-height-lg)
+}
+
+._560823421a0f2e0ab6f89e65a24857a73da3 {
+  grid-gap: var(--grid-gap-sm);
+  align-content: flex-start;
+  align-items: center;
+  align-self: stretch;
+  color: var(--white-text);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  opacity: 1;
+  transition: all .3s ease-in
+}
+
+@media (min-width:768px) {
+  ._560823421a0f2e0ab6f89e65a24857a73da3 {
+    grid-gap: var(--grid-gap-md)
+  }
+}
+
+._560823421a0f2e0ab5e1aba9780f25e7e3d2 {
+  height: 1rem;
+  width: auto
+}
+
+@media (min-width:768px) {
+  ._560823421a0f2e0ab5e1aba9780f25e7e3d2 {
+    height: 1.25rem
+  }
+}
+
+._560823421a0f2e0ace5911e3dc0cf65c7e15 {
+  opacity: 0
+}
+
+.stackButtons ._560823421a0f2e0abc52f3ccdfb7d6e07b76 {
+  display: flex;
+  flex-direction: column
+}
+
+.stackButtons ._560823421a0f2e0abc52f3ccdfb7d6e07b76 span a {
+  width: 100%
+}
+
+._560823421a0f2e0ab9c477258da2f0f8fda4 {
+  grid-gap: var(--grid-gap-xs);
+  display: grid;
+  max-width: var(--hero-text-width)
+}
+
+@font-face {
+  font-family: RDRUltra;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/28a1db376124dcc8700a.woff) format("woff")
+}
+
+@font-face {
+  font-family: UniversalCyrillic;
+  font-style: italic;
+  font-weight: 500;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/26e5a66418fa0c236d7f.woff) format("woff")
+}
+
+@font-face {
+  font-family: UniversalCyrillic;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/ec75ef1bf879e85f73ea.woff) format("woff")
+}
+
+@font-face {
+  font-family: UniversalCyrillic;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/66ded8deceb2a2e3ba4b.woff) format("woff")
+}
+
+@font-face {
+  font-family: UniversalCyrillic;
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/fb4775197101f0e0a0ba.woff) format("woff")
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 {
+  /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+  --font-family-body: "Chalet";
+  --font-family-h: "ChaletComprime";
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --letter-spacing-body: 0;
+  --letter-spacing-h: 0;
+  --line-height-sm: 1;
+  --line-height-md: 1.1;
+  --line-height-lg: 1.6;
+  --black-200: #000;
+  --black-100: #121212;
+  --black-65: hsla(0, 0%, 7%, .65);
+  --black-40: hsla(0, 0%, 7%, .4);
+  --black-15: hsla(0, 0%, 7%, .15);
+  --text-dark: #2d2d2d;
+  --border-color: #2d2d2d;
+  --white-100: #fff;
+  --white-65: hsla(0, 0%, 100%, .65);
+  --white-40: hsla(0, 0%, 100%, .4);
+  --white-15: hsla(0, 0%, 100%, .15);
+  --text-light: #e8e8e8;
+  --focusring-blue: blue;
+  --red: #c00;
+  --circoloco-red: #eb1818;
+  --rockstar-gold: #fcaf17;
+  --playstation-blue: #00439c;
+  --microsoft-green: #387a26;
+  --color-h: var(--white-100);
+  --color-body: var(--text-light);
+  --green-light: #c1f7bd;
+  --green-dark: #81da85;
+  --max-width-sm: 640px;
+  --max-width-md: 1088px;
+  --max-width-lg: 1920px;
+  --max-width-xl: 2560px;
+  --spacing-xxs: 0.25rem;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 8rem;
+  --grid-gap-xxs: var(--spacing-xxs);
+  --grid-gap-xs: var(--spacing-xs);
+  --grid-gap-sm: var(--spacing-sm);
+  --grid-gap-md: var(--spacing-md);
+  --grid-gap-lg: var(--spacing-lg);
+  --grid-gap-xl: var(--spacing-xl);
+  --padding-xxs: var(--spacing-xxs);
+  --padding-xs: var(--spacing-xs);
+  --padding-sm: var(--spacing-sm);
+  --padding-md: var(--spacing-md);
+  --padding-lg: var(--spacing-lg);
+  --padding-xl: var(--spacing-xl);
+  --margin-xxs: var(--spacing-xxs);
+  --margin-xs: var(--spacing-xs);
+  --margin-sm: var(--spacing-sm);
+  --margin-md: var(--spacing-md);
+  --margin-lg: var(--spacing-lg);
+  --margin-xl: var(--spacing-xl);
+  --border-radius-xs: 2px;
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 16px;
+  --gradient-overlay-bottom: linear-gradient(180.08deg, transparent 25%, rgba(0, 0, 0, .5) 65%, rgba(0, 0, 0, .6));
+  --gen9-max-width: 3840px;
+  --padding-sides: var(--padding-lg);
+  --content-max-width: var(--gen9-max-width);
+  --content-padding: 0 var(--padding-sides);
+  --font-family-h: HelveticaNowDisplayBold;
+  --font-family-body: HelveticaNowText;
+  --letter-spacing-h: -0.025em;
+  background: #161616;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  scroll-behavior: smooth
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 html {
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.15
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 body {
+  margin: 0
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 main {
+  display: block
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 h1 {
+  font-size: 2em;
+  margin: .67em 0
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 hr {
+  box-sizing: initial;
+  height: 0;
+  overflow: visible
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 pre {
+  font-family: monospace, monospace;
+  font-size: 1em
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 a {
+  background-color: initial
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 b,
+._560823421a0f2e0afe87e3fc1302eca7e415 strong {
+  font-weight: bolder
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 code,
+._560823421a0f2e0afe87e3fc1302eca7e415 kbd,
+._560823421a0f2e0afe87e3fc1302eca7e415 samp {
+  font-family: monospace, monospace;
+  font-size: 1em
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 small {
+  font-size: 80%
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 sub,
+._560823421a0f2e0afe87e3fc1302eca7e415 sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: initial
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 sub {
+  bottom: -.25em
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 sup {
+  top: -.5em
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 img {
+  border-style: none
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 button,
+._560823421a0f2e0afe87e3fc1302eca7e415 input,
+._560823421a0f2e0afe87e3fc1302eca7e415 optgroup,
+._560823421a0f2e0afe87e3fc1302eca7e415 select,
+._560823421a0f2e0afe87e3fc1302eca7e415 textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 button,
+._560823421a0f2e0afe87e3fc1302eca7e415 input {
+  overflow: visible
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 button,
+._560823421a0f2e0afe87e3fc1302eca7e415 select {
+  text-transform: none
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 [type=button],
+._560823421a0f2e0afe87e3fc1302eca7e415 [type=reset],
+._560823421a0f2e0afe87e3fc1302eca7e415 [type=submit],
+._560823421a0f2e0afe87e3fc1302eca7e415 button {
+  -webkit-appearance: button
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 [type=button]::-moz-focus-inner,
+._560823421a0f2e0afe87e3fc1302eca7e415 [type=reset]::-moz-focus-inner,
+._560823421a0f2e0afe87e3fc1302eca7e415 [type=submit]::-moz-focus-inner,
+._560823421a0f2e0afe87e3fc1302eca7e415 button::-moz-focus-inner {
+  border-style: none;
+  padding: 0
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 [type=button]:-moz-focusring,
+._560823421a0f2e0afe87e3fc1302eca7e415 [type=reset]:-moz-focusring,
+._560823421a0f2e0afe87e3fc1302eca7e415 [type=submit]:-moz-focusring,
+._560823421a0f2e0afe87e3fc1302eca7e415 button:-moz-focusring {
+  outline: 1px dotted ButtonText
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 fieldset {
+  padding: .35em .75em .625em
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 progress {
+  vertical-align: initial
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 textarea {
+  overflow: auto
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 [type=checkbox],
+._560823421a0f2e0afe87e3fc1302eca7e415 [type=radio] {
+  box-sizing: border-box;
+  padding: 0
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 [type=number]::-webkit-inner-spin-button,
+._560823421a0f2e0afe87e3fc1302eca7e415 [type=number]::-webkit-outer-spin-button {
+  height: auto
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 [type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 ::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 details {
+  display: block
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 summary {
+  display: list-item
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 [hidden],
+._560823421a0f2e0afe87e3fc1302eca7e415 template {
+  display: none
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root {
+  --text-section-max-width: 640px;
+  --base-pixel-size: 12px;
+  --base-rem-size: 0.75rem;
+  --half-rem-size: calc(var(--base-rem-size) / 2);
+  --twice-rem-size: calc(var(--base-rem-size) * 2);
+  --section-margin-bottom: calc(var(--base-rem-size) * 4);
+  --header-height: 60px;
+  --breadcrumbs-height: calc(var(--base-pixel-size) * 3.5);
+  --max-width: 1920px;
+  --standard-color: #fcaf17;
+  --color-h: #fff;
+  --body-color: #e8e8e8;
+  --background-color: #0b0b0b;
+  --card-background-color: #000;
+  --border-color: #282828;
+  --privacy-banner-height: 0px;
+  --game-header-height: 50px;
+  --standard-grid-gap: calc(var(--base-rem-size) * 2);
+  --image-margin-bottom: inherit;
+  --image-rounding: 0px;
+  --image-rounding-static: 16px;
+  --image-rounding-static-sm: 8px;
+  --image-rounding-static-xs: 4px;
+  --grid-gap-static-xs: 0.5rem;
+  --grid-gap-static-sm: 1rem;
+  --grid-gap-static-md: 2rem;
+  --grid-gap-static-lg: 4rem;
+  --grid-gap-static-xl: 8rem;
+  --max-width-static: 640px;
+  --max-width-static-md: 1088px;
+  --max-width-static-lg: 1920px;
+  --max-width-static-xl: 2560px;
+  --margin-static: 0 0 2rem;
+  --h2-margin: 2rem 0 0 0;
+  --padding-sides: var(--grid-gap-static-lg);
+  --padding-top-bottom: var(--padding-sides);
+  --padding-static: var(--padding-sides);
+  --font-size-1: 0.75rem;
+  --font-size-2: 0.75rem;
+  --font-size-3: 1rem;
+  --font-size-4: 1.25rem;
+  --font-size-5: 1.5rem;
+  --font-size-6: 2rem;
+  --font-size-7: 2.5rem;
+  --font-size-8: 3rem;
+  --font-size-9: 4rem;
+  --font-size-10: 5rem;
+  --font-family-std: var(--rsg-font-family-std);
+  --font-family-h: var(--rsg-font-family-h);
+  --font-family-h-halloween: nightmar;
+  --rsg-font-family-std: HelveticaNowText;
+  --rsg-font-family-h: HelveticaNowDisplayBold;
+  --gta-font-family-std: Chalet;
+  --gta-font-family-h: ChaletComprime;
+  --gta-font-family-badge: Pricedown;
+  --rdr-font-family-std: HapnaSlabSerif;
+  --rdr-font-family-h: RDRLino-Regular;
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif;
+  --rdr-area-font: RDRCatalogueBold;
+  --header-multiplier: var(--header-numerator, var(--root-font-size)) /var(--root-font-size);
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--background-color, transparent);
+  font-family: var(--font-family-std, HelveticaNowText);
+  font-size: calc(var(--root-font-size) * 1px);
+  font-weight: var(--font-weight-std, 400);
+  letter-spacing: var(--letter-spacing-std, -.025em);
+  line-height: var(--line-height-std, 1.6)
+}
+
+@media (max-width:767px) {
+  ._560823421a0f2e0afe87e3fc1302eca7e415 :root {
+    --grid-gap-static-lg: 2rem;
+    --grid-gap-static-xl: 4rem
+  }
+}
+
+@media (min-width:2560px) {
+  ._560823421a0f2e0afe87e3fc1302eca7e415 :root {
+    --max-width-static-md: 1440px
+  }
+}
+
+@font-face {
+  font-family: HelveticaNowText;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/daffe25cf3a522a0662b.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNowText;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/1c23ad3bd8f4ac8d4f58.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNowText;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/43c87a78e295c91e475d.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNowDisplayBold;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/019a37634dda55c34e74.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNowDisplayMedium;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/8d9665f5c3f922814371.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNeueLTW05;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/5821888d211d6db6b916.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNeueLTW05;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/6254fae1ffa5c0b60e1f.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNeueLTW07;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/f3be7ed00861dd13472c.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNeueLTW07;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/0e155779f06c0df62911.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNeueLTW07;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/eecedce21cd5e7bc5a06.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNeueLTW07;
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/9e6720ee8a12e33dd442.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNeueLTW07-85Heavy;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/52311dcdb6857e4fc4ad.woff) format("woff")
+}
+
+@font-face {
+  font-family: SackersGothicW01-Square;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/28b89548417ca2a10931.woff) format("woff")
+}
+
+@font-face {
+  font-family: Cabrito-Nordem;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/18aadd46c7583c265c5c.woff) format("woff")
+}
+
+@font-face {
+  font-family: Droid-Serif-Pro;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/c559691f19190ffa4f91.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansSC;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/60625dd9dcbb711cebd5.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansSC;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/0d6661641995c28b4430.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansSC;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/b76b22f5feed95af23eb.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansSC;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/f6f097535b11d28742d1.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansTC;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/7459dd4e77bc2f260f9a.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansTC;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/21b71a694a4804bed375.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansTC;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/304d5c39e2b624111334.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansTC;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/d63df344651531f19e59.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansJP;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/dd17c827fc404f1fab82.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansJP;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/6ba2930e076392937061.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansJP;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/13f9fb885f7b59a9ca64.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansJP;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/eacc7598f5451b714002.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansKR;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/1ed88468d8b70e957b21.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansKR;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/386f62c0f4f9bcf91277.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansKR;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/cccb1c6ec3ccbbaaa90c.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansKR;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/2b2801bbdf254e8da3c1.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSerifJP;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/20a30c556225eff3a1b0.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSerifJP;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/8af8d5e0ef907d10587f.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSerifKR;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/0b9459405df1aec7f585.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSerifKR;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/0b9459405df1aec7f585.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSerifSC;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/1fde089d23afe566ed2f.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSerifSC;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/af5fddd08d604bc5b22e.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSerifTC;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/639639f588351d52252b.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSerifTC;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/a31187ab8cf9b5b6baab.woff) format("woff")
+}
+
+@font-face {
+  font-family: MeltdownRegular;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/b1d8448f1da0a818ac88.woff) format("woff")
+}
+
+@font-face {
+  font-family: SharkSnackRegular;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/12e2c084a9c416285c96.woff) format("woff")
+}
+
+@font-face {
+  font-family: RDRLino-Regular;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/5d64fc45d52e2bdd2d4c.woff) format("woff")
+}
+
+@font-face {
+  font-family: HapnaSlabSerif;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/c58f85482530be4ffcac.woff) format("woff")
+}
+
+@font-face {
+  font-family: HapnaSlabSerif;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/347c4201aa82d7497522.woff) format("woff")
+}
+
+@font-face {
+  font-family: nightmar;
+  font-style: normal;
+  font-weight: 100;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/3c3a1029d1863fba66a7.woff) format("woff")
+}
+
+@font-face {
+  font-family: RDRCatalogueBold;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/c1c092eb55240be87a6b.woff) format("woff")
+}
+
+@font-face {
+  font-family: RDRUltraHeadline;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/28a1db376124dcc8700a.woff) format("woff")
+}
+
+@media (min-width:0px) {
+  ._560823421a0f2e0afe87e3fc1302eca7e415 :root {
+    --root-font-size: 16
+  }
+}
+
+@media (min-width:768px) {
+  ._560823421a0f2e0afe87e3fc1302eca7e415 :root {
+    --root-font-size: 18
+  }
+}
+
+@media (min-width:1024px) {
+  ._560823421a0f2e0afe87e3fc1302eca7e415 :root {
+    --root-font-size: 20
+  }
+}
+
+@media (min-width:1920px) {
+  ._560823421a0f2e0afe87e3fc1302eca7e415 :root {
+    --root-font-size: 22
+  }
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root * {
+  box-sizing: border-box
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root a {
+  color: inherit;
+  text-decoration: none
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root h1,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root h2,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root h3,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root h4,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root h5,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root h6,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root p {
+  margin: 0
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root figure {
+  margin: 0
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root caption,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root figcaption {
+  --padding-dynamic: var(--padding-sides);
+  --padding-dynamic-tb: initial;
+  display: block;
+  font-family: var(--font-family-std);
+  font-size: var(--font-size-2);
+  font-style: italic;
+  margin: var(--grid-gap-static-sm) auto 0;
+  padding: var(--padding-t, var(--padding-dynamic-tb, 0)) var(--padding-dynamic, 0) var(--padding-b, var(--padding-dynamic-tb, 0)) var(--padding-dynamic, 0);
+  text-align: center
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root caption p,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root figcaption p {
+  display: block
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root :lang(ru_ru) {
+  --font-family-h-halloween: RDRLino-Regular
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root :lang(ko_kr) {
+  word-break: keep-all
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root:lang(ja_jp) {
+  --rsg-font-family-std: HelveticaNowText, NotoSansJP
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root:lang(zh_hans) {
+  --rsg-font-family-std: HelveticaNowText, NotoSansSC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root:lang(zh_tw) {
+  --rsg-font-family-std: HelveticaNowText, NotoSansTC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root:lang(ja_jp) {
+  --rsg-font-family-h: HelveticaNowDisplayBold, NotoSansJP
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root:lang(zh_hans) {
+  --rsg-font-family-h: HelveticaNowDisplayBold, NotoSansSC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root:lang(zh_tw) {
+  --rsg-font-family-h: HelveticaNowDisplayBold, NotoSansTC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root:lang(ja_jp) {
+  --gta-font-family-std: Chalet, NotoSansJP
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root:lang(zh_hans) {
+  --gta-font-family-std: Chalet, NotoSansSC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root:lang(zh_tw) {
+  --gta-font-family-std: Chalet, NotoSansTC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root:lang(ja_jp) {
+  --gta-font-family-h: ChaletComprime, NotoSansJP
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root:lang(zh_hans) {
+  --gta-font-family-h: ChaletComprime, NotoSansSC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root:lang(zh_tw) {
+  --gta-font-family-h: ChaletComprime, NotoSansTC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root:lang(ja_jp) {
+  --gta-font-family-badge: Pricedown, NotoSansJP
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root:lang(zh_hans) {
+  --gta-font-family-badge: Pricedown, NotoSansSC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root:lang(zh_tw) {
+  --gta-font-family-badge: Pricedown, NotoSansTC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root:lang(ja_jp) {
+  --rdr-font-family-std: HapnaSlabSerif, NotoSansJP
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root:lang(zh_hans) {
+  --rdr-font-family-std: HapnaSlabSerif, NotoSansSC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root:lang(zh_tw) {
+  --rdr-font-family-std: HapnaSlabSerif, NotoSansTC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root:lang(ja_jp) {
+  --rdr-font-family-h: RDRLino-Regular, NotoSansJP
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root:lang(zh_hans) {
+  --rdr-font-family-h: RDRLino-Regular, NotoSansSC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root:lang(zh_tw) {
+  --rdr-font-family-h: RDRLino-Regular, NotoSansTC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root:lang(ja_jp) {
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif, NotoSansJP
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root:lang(zh_hans) {
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif, NotoSansSC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root:lang(zh_tw) {
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif, NotoSansTC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root:lang(ja_jp) {
+  --rdr-area-font: RDRCatalogueBold, NotoSansJP
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root:lang(zh_hans) {
+  --rdr-area-font: RDRCatalogueBold, NotoSansSC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root:lang(zh_tw) {
+  --rdr-area-font: RDRCatalogueBold, NotoSansTC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root h1,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root h1.large,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root h2,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root h3,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root h4 {
+  font-family: var(--font-family-h, HelveticaNowDisplayBold);
+  letter-spacing: var(--letter-spacing-h, -.025em)
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root h1,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root h1.large {
+  font-weight: var(--font-weight-h1, var(--font-weight-h, 700));
+  line-height: var(--line-height-h1, var(--line-height-h, 1.1));
+  text-transform: var(--text-transform-h1, var(--text-transform-h, none))
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root h1.large {
+  font-size: calc(var(--font-size-8) * var(--header-multiplier))
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root h1 {
+  font-size: calc(var(--font-size-7) * var(--header-multiplier))
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root h2 {
+  font-size: calc(var(--font-size-6) * var(--header-multiplier));
+  font-weight: var(--font-weight-h2, var(--font-weight-h, 700));
+  line-height: var(--line-height-h, 1.1);
+  text-transform: var(--text-transform-h2, var(--text-transform-h, none))
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root h3 {
+  font-size: calc(var(--font-size-5) * var(--header-multiplier));
+  font-weight: var(--font-weight-h3, var(--font-weight-h, 700));
+  line-height: var(--line-height-h, 1.1);
+  text-transform: var(--text-transform-h3, var(--text-transform-h, none))
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root h3[data-context=newswire-subtitle] {
+  font-family: var(--font-family-newswire-subtitle, var(--font-family-h));
+  font-size: calc(var(--font-size-5) * var(--h3-numerator-override-newswire-subtitle, var(--header-multiplier)));
+  font-weight: var(--font-weight-newswire-subtitle, var(--font-weight-h));
+  text-transform: var(--text-transform-newswire-subtitle)
+}
+
+[data-game=rdo] ._560823421a0f2e0afe87e3fc1302eca7e415 :root h3,
+[data-game^=rdr] ._560823421a0f2e0afe87e3fc1302eca7e415 :root h3 {
+  font-weight: var(--font-weight-h3, var(--font-weight-h, 400))
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root h4,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root h5,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root h6 {
+  font-size: calc(var(--font-size-4) * var(--header-multiplier));
+  line-height: var(--line-height-h, 1.1)
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root h1,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root h1.large {
+  color: var(--color-h-dynamic, var(--color-h1, var(--color-h, inherit)))
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root h2 {
+  color: var(--color-h-dynamic, var(--color-h2, var(--color-h, inherit)))
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root h3 {
+  color: var(--color-h-dynamic, var(--color-h3, var(--color-h, inherit)))
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root h3[data-context=newswire-subtitle] {
+  color: var(--color-subtitle-dynamic, var(--color-h-dynamic, var(--color-h3, var(--color-h, inherit))))
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root h4,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root h5,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root h6 {
+  color: var(--color-h-dynamic, var(--color-h, inherit))
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [template=community] {
+  --time-color: var(--body-color, #2d2d2d);
+  --breadcrumb-separator-filter-invert: invert(0)
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [template=community] main {
+  color: var(--color-h, #161616)
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [template=community] p {
+  color: var(--body-color, #2d2d2d)
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta] {
+  --font-family-std: var(--gta-font-family-std);
+  --font-family-h: var(--gta-font-family-h);
+  --letter-spacing-h: 0;
+  --line-height-h1: 1;
+  --font-weight-newswire-subtitle: 400;
+  --letter-spacing-std: 0;
+  --color-h: #fff;
+  --body-color: #e8e8e8;
+  --background-color: var(var(--background-color));
+  --tag-color: #e8e8e8;
+  --rsg-font-family-std: HelveticaNowText;
+  --rsg-font-family-h: HelveticaNowDisplayBold;
+  --gta-font-family-std: Chalet;
+  --gta-font-family-h: ChaletComprime;
+  --gta-font-family-badge: Pricedown;
+  --rdr-font-family-std: HapnaSlabSerif;
+  --rdr-font-family-h: RDRLino-Regular;
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif;
+  --rdr-area-font: RDRCatalogueBold;
+  --header-multiplier: var(--header-numerator, var(--root-font-size)) /var(--root-font-size);
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--background-color, transparent);
+  color: #e8e8e8;
+  font-family: var(--font-family-std, HelveticaNowText);
+  font-size: calc(var(--root-font-size) * 1px);
+  font-weight: var(--font-weight-std, 400);
+  letter-spacing: var(--letter-spacing-std, -.025em);
+  line-height: var(--line-height-std, 1.6)
+}
+
+@media (min-width:0px) {
+  ._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta] {
+    --header-numerator: 20.8
+  }
+}
+
+@media (min-width:768px) {
+  ._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta] {
+    --header-numerator: 23.4
+  }
+}
+
+@media (min-width:1024px) {
+  ._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta] {
+    --header-numerator: 26
+  }
+}
+
+@media (min-width:1920px) {
+  ._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta] {
+    --header-numerator: 29.25
+  }
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta]:lang(ja_jp) {
+  --rsg-font-family-std: HelveticaNowText, NotoSansJP
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta]:lang(zh_hans) {
+  --rsg-font-family-std: HelveticaNowText, NotoSansSC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta]:lang(zh_tw) {
+  --rsg-font-family-std: HelveticaNowText, NotoSansTC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta]:lang(ja_jp) {
+  --rsg-font-family-h: HelveticaNowDisplayBold, NotoSansJP
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta]:lang(zh_hans) {
+  --rsg-font-family-h: HelveticaNowDisplayBold, NotoSansSC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta]:lang(zh_tw) {
+  --rsg-font-family-h: HelveticaNowDisplayBold, NotoSansTC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta]:lang(ja_jp) {
+  --gta-font-family-std: Chalet, NotoSansJP
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta]:lang(zh_hans) {
+  --gta-font-family-std: Chalet, NotoSansSC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta]:lang(zh_tw) {
+  --gta-font-family-std: Chalet, NotoSansTC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta]:lang(ja_jp) {
+  --gta-font-family-h: ChaletComprime, NotoSansJP
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta]:lang(zh_hans) {
+  --gta-font-family-h: ChaletComprime, NotoSansSC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta]:lang(zh_tw) {
+  --gta-font-family-h: ChaletComprime, NotoSansTC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta]:lang(ja_jp) {
+  --gta-font-family-badge: Pricedown, NotoSansJP
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta]:lang(zh_hans) {
+  --gta-font-family-badge: Pricedown, NotoSansSC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta]:lang(zh_tw) {
+  --gta-font-family-badge: Pricedown, NotoSansTC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta]:lang(ja_jp) {
+  --rdr-font-family-std: HapnaSlabSerif, NotoSansJP
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta]:lang(zh_hans) {
+  --rdr-font-family-std: HapnaSlabSerif, NotoSansSC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta]:lang(zh_tw) {
+  --rdr-font-family-std: HapnaSlabSerif, NotoSansTC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta]:lang(ja_jp) {
+  --rdr-font-family-h: RDRLino-Regular, NotoSansJP
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta]:lang(zh_hans) {
+  --rdr-font-family-h: RDRLino-Regular, NotoSansSC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta]:lang(zh_tw) {
+  --rdr-font-family-h: RDRLino-Regular, NotoSansTC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta]:lang(ja_jp) {
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif, NotoSansJP
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta]:lang(zh_hans) {
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif, NotoSansSC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta]:lang(zh_tw) {
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif, NotoSansTC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta]:lang(ja_jp) {
+  --rdr-area-font: RDRCatalogueBold, NotoSansJP
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta]:lang(zh_hans) {
+  --rdr-area-font: RDRCatalogueBold, NotoSansSC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta]:lang(zh_tw) {
+  --rdr-area-font: RDRCatalogueBold, NotoSansTC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta] h1,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta] h1.large,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta] h2,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta] h3,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta] h4 {
+  font-family: var(--font-family-h, HelveticaNowDisplayBold);
+  letter-spacing: var(--letter-spacing-h, -.025em)
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta] h1,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta] h1.large {
+  font-weight: var(--font-weight-h1, var(--font-weight-h, 700));
+  line-height: var(--line-height-h1, var(--line-height-h, 1.1));
+  text-transform: var(--text-transform-h1, var(--text-transform-h, none))
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta] h1.large {
+  font-size: calc(var(--font-size-8) * var(--header-multiplier))
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta] h1 {
+  font-size: calc(var(--font-size-7) * var(--header-multiplier))
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta] h2 {
+  font-size: calc(var(--font-size-6) * var(--header-multiplier));
+  font-weight: var(--font-weight-h2, var(--font-weight-h, 700));
+  line-height: var(--line-height-h, 1.1);
+  text-transform: var(--text-transform-h2, var(--text-transform-h, none))
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta] h3 {
+  font-size: calc(var(--font-size-5) * var(--header-multiplier));
+  font-weight: var(--font-weight-h3, var(--font-weight-h, 700));
+  line-height: var(--line-height-h, 1.1);
+  text-transform: var(--text-transform-h3, var(--text-transform-h, none))
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta] h3[data-context=newswire-subtitle] {
+  font-family: var(--font-family-newswire-subtitle, var(--font-family-h));
+  font-size: calc(var(--font-size-5) * var(--h3-numerator-override-newswire-subtitle, var(--header-multiplier)));
+  font-weight: var(--font-weight-newswire-subtitle, var(--font-weight-h));
+  text-transform: var(--text-transform-newswire-subtitle)
+}
+
+[data-game=rdo] ._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta] h3,
+[data-game^=rdr] ._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta] h3 {
+  font-weight: var(--font-weight-h3, var(--font-weight-h, 400))
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta] h4,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta] h5,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta] h6 {
+  font-size: calc(var(--font-size-4) * var(--header-multiplier));
+  line-height: var(--line-height-h, 1.1)
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta] h1,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta] h1.large {
+  color: var(--color-h-dynamic, var(--color-h1, var(--color-h, inherit)))
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta] h2 {
+  color: var(--color-h-dynamic, var(--color-h2, var(--color-h, inherit)))
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta] h3 {
+  color: var(--color-h-dynamic, var(--color-h3, var(--color-h, inherit)))
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta] h3[data-context=newswire-subtitle] {
+  color: var(--color-subtitle-dynamic, var(--color-h-dynamic, var(--color-h3, var(--color-h, inherit))))
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta] h4,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta] h5,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta] h6 {
+  color: var(--color-h-dynamic, var(--color-h, inherit))
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta] [template=community] {
+  --time-color: var(--body-color, #2d2d2d);
+  --breadcrumb-separator-filter-invert: invert(0)
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta] [template=community] main {
+  color: var(--color-h, #161616)
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta] [template=community] p {
+  color: var(--body-color, #2d2d2d)
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=gta] .badge {
+  font-family: var(--gta-font-family-badge)
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root :lang(pl_pl) [data-game^=gta] {
+  --font-family-h: ChaletComprime, NeueHelveticaW05;
+  --font-family-newswire-subtitle: ChaletComprime, NeueHelveticaW05;
+  --badge-font: Pricedown, NeueHelveticaW05
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root :lang(pl_pl) [data-context=newswire-article] h1 {
+  --font-family-h: NeueHelveticaPaneuropean
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root :lang(ru_ru) [data-game^=gta] {
+  --font-family-h: NeueHelveticaW05;
+  --font-family-newswire-subtitle: NeueHelveticaW05;
+  --badge-font: Pricedown, NeueHelveticaW05
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root :lang(ru_ru) [data-context=newswire-article] h1 {
+  --font-family-h: NeueHelveticaW05
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root :lang(zh_hans) [data-game^=gta] {
+  --font-family-h: NotoSansSC;
+  --font-family-newswire-subtitle: NotoSansSC;
+  --font-family-std: NotoSansSC;
+  --badge-font: Pricedown, NotoSansSC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root :lang(zh_hant) [data-game^=gta] {
+  --font-family-h: NotoSansTC;
+  --font-family-newswire-subtitle: NotoSansTC;
+  --font-family-std: NotoSansTC;
+  --badge-font: Pricedown, NotoSansTC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root :lang(ja_jp) [data-game^=gta] {
+  --font-family-h: NotoSansJP;
+  --font-family-newswire-subtitle: NotoSansJP;
+  --font-family-std: NotoSansJP;
+  --badge-font: Pricedown, NotoSansJP
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root :lang(ja_jp) [data-context=newswire-article] h1 {
+  --font-family-h: NotoSansJP
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root :lang(ko_kr) [data-game^=gta] {
+  --font-family-h: NotoSansKR;
+  --font-family-newswire-subtitle: NotoSansKR;
+  --font-family-std: NotoSansKR;
+  --badge-font: Pricedown, NotoSansKR
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo],
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr] {
+  --font-family-std: var(--rdr-font-family-std);
+  --font-family-h: var(--rdr-font-family-h);
+  --font-family-newswire-subtitle: var(--rdr-font-family-newswire-subtitle);
+  --area-font: var(--rdr-area-font);
+  --font-weight-h: 400;
+  --font-weight-h1: 400;
+  --font-weight-h3: 400;
+  --font-weight-newswire-subtitle: 700;
+  --h3-numerator-override-newswire-subtitle: 1;
+  --letter-spacing-h: 0;
+  --line-height-h: 1.2;
+  --letter-spacing-std: 0;
+  --text-transform-newswire-subtitle: initial;
+  --color-h: #c00;
+  --color-h3: #fff;
+  --color-h4: #fff;
+  --body-color: #e8e8e8;
+  --text-transform-h: uppercase;
+  --background-color: var(var(--background-color));
+  --tag-color: #e8e8e8;
+  --rsg-font-family-std: HelveticaNowText;
+  --rsg-font-family-h: HelveticaNowDisplayBold;
+  --gta-font-family-std: Chalet;
+  --gta-font-family-h: ChaletComprime;
+  --gta-font-family-badge: Pricedown;
+  --rdr-font-family-std: HapnaSlabSerif;
+  --rdr-font-family-h: RDRLino-Regular;
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif;
+  --rdr-area-font: RDRCatalogueBold;
+  --header-multiplier: var(--header-numerator, var(--root-font-size)) /var(--root-font-size);
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--background-color, transparent);
+  color: #e8e8e8;
+  font-family: var(--font-family-std, HelveticaNowText);
+  font-size: calc(var(--root-font-size) * 1px);
+  font-weight: var(--font-weight-std, 400);
+  letter-spacing: var(--letter-spacing-std, -.025em);
+  line-height: var(--line-height-std, 1.6)
+}
+
+@media (min-width:0px) {
+
+  ._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo],
+  ._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr] {
+    --header-numerator: 15
+  }
+}
+
+@media (min-width:768px) {
+
+  ._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo],
+  ._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr] {
+    --header-numerator: 16.88
+  }
+}
+
+@media (min-width:1024px) {
+
+  ._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo],
+  ._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr] {
+    --header-numerator: 18.75
+  }
+}
+
+@media (min-width:1920px) {
+
+  ._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo],
+  ._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr] {
+    --header-numerator: 21.09
+  }
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo]:lang(ja_jp),
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr]:lang(ja_jp) {
+  --rsg-font-family-std: HelveticaNowText, NotoSansJP
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo]:lang(zh_hans),
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr]:lang(zh_hans) {
+  --rsg-font-family-std: HelveticaNowText, NotoSansSC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo]:lang(zh_tw),
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr]:lang(zh_tw) {
+  --rsg-font-family-std: HelveticaNowText, NotoSansTC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo]:lang(ja_jp),
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr]:lang(ja_jp) {
+  --rsg-font-family-h: HelveticaNowDisplayBold, NotoSansJP
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo]:lang(zh_hans),
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr]:lang(zh_hans) {
+  --rsg-font-family-h: HelveticaNowDisplayBold, NotoSansSC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo]:lang(zh_tw),
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr]:lang(zh_tw) {
+  --rsg-font-family-h: HelveticaNowDisplayBold, NotoSansTC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo]:lang(ja_jp),
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr]:lang(ja_jp) {
+  --gta-font-family-std: Chalet, NotoSansJP
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo]:lang(zh_hans),
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr]:lang(zh_hans) {
+  --gta-font-family-std: Chalet, NotoSansSC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo]:lang(zh_tw),
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr]:lang(zh_tw) {
+  --gta-font-family-std: Chalet, NotoSansTC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo]:lang(ja_jp),
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr]:lang(ja_jp) {
+  --gta-font-family-h: ChaletComprime, NotoSansJP
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo]:lang(zh_hans),
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr]:lang(zh_hans) {
+  --gta-font-family-h: ChaletComprime, NotoSansSC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo]:lang(zh_tw),
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr]:lang(zh_tw) {
+  --gta-font-family-h: ChaletComprime, NotoSansTC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo]:lang(ja_jp),
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr]:lang(ja_jp) {
+  --gta-font-family-badge: Pricedown, NotoSansJP
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo]:lang(zh_hans),
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr]:lang(zh_hans) {
+  --gta-font-family-badge: Pricedown, NotoSansSC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo]:lang(zh_tw),
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr]:lang(zh_tw) {
+  --gta-font-family-badge: Pricedown, NotoSansTC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo]:lang(ja_jp),
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr]:lang(ja_jp) {
+  --rdr-font-family-std: HapnaSlabSerif, NotoSansJP
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo]:lang(zh_hans),
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr]:lang(zh_hans) {
+  --rdr-font-family-std: HapnaSlabSerif, NotoSansSC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo]:lang(zh_tw),
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr]:lang(zh_tw) {
+  --rdr-font-family-std: HapnaSlabSerif, NotoSansTC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo]:lang(ja_jp),
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr]:lang(ja_jp) {
+  --rdr-font-family-h: RDRLino-Regular, NotoSansJP
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo]:lang(zh_hans),
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr]:lang(zh_hans) {
+  --rdr-font-family-h: RDRLino-Regular, NotoSansSC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo]:lang(zh_tw),
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr]:lang(zh_tw) {
+  --rdr-font-family-h: RDRLino-Regular, NotoSansTC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo]:lang(ja_jp),
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr]:lang(ja_jp) {
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif, NotoSansJP
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo]:lang(zh_hans),
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr]:lang(zh_hans) {
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif, NotoSansSC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo]:lang(zh_tw),
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr]:lang(zh_tw) {
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif, NotoSansTC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo]:lang(ja_jp),
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr]:lang(ja_jp) {
+  --rdr-area-font: RDRCatalogueBold, NotoSansJP
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo]:lang(zh_hans),
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr]:lang(zh_hans) {
+  --rdr-area-font: RDRCatalogueBold, NotoSansSC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo]:lang(zh_tw),
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr]:lang(zh_tw) {
+  --rdr-area-font: RDRCatalogueBold, NotoSansTC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo] h1,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo] h1.large,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo] h2,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo] h3,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo] h4,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr] h1,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr] h1.large,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr] h2,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr] h3,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr] h4 {
+  font-family: var(--font-family-h, HelveticaNowDisplayBold);
+  letter-spacing: var(--letter-spacing-h, -.025em)
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo] h1,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo] h1.large,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr] h1,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr] h1.large {
+  font-weight: var(--font-weight-h1, var(--font-weight-h, 700));
+  line-height: var(--line-height-h1, var(--line-height-h, 1.1));
+  text-transform: var(--text-transform-h1, var(--text-transform-h, none))
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo] h1.large,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr] h1.large {
+  font-size: calc(var(--font-size-8) * var(--header-multiplier))
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo] h1,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr] h1 {
+  font-size: calc(var(--font-size-7) * var(--header-multiplier))
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo] h2,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr] h2 {
+  font-size: calc(var(--font-size-6) * var(--header-multiplier));
+  font-weight: var(--font-weight-h2, var(--font-weight-h, 700));
+  line-height: var(--line-height-h, 1.1);
+  text-transform: var(--text-transform-h2, var(--text-transform-h, none))
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo] h3,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr] h3 {
+  font-size: calc(var(--font-size-5) * var(--header-multiplier));
+  font-weight: var(--font-weight-h3, var(--font-weight-h, 700));
+  line-height: var(--line-height-h, 1.1);
+  text-transform: var(--text-transform-h3, var(--text-transform-h, none))
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo] h3[data-context=newswire-subtitle],
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr] h3[data-context=newswire-subtitle] {
+  font-family: var(--font-family-newswire-subtitle, var(--font-family-h));
+  font-size: calc(var(--font-size-5) * var(--h3-numerator-override-newswire-subtitle, var(--header-multiplier)));
+  font-weight: var(--font-weight-newswire-subtitle, var(--font-weight-h));
+  text-transform: var(--text-transform-newswire-subtitle)
+}
+
+[data-game=rdo] ._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo] h3,
+[data-game=rdo] ._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr] h3,
+[data-game^=rdr] ._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo] h3,
+[data-game^=rdr] ._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr] h3 {
+  font-weight: var(--font-weight-h3, var(--font-weight-h, 400))
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo] h4,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo] h5,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo] h6,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr] h4,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr] h5,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr] h6 {
+  font-size: calc(var(--font-size-4) * var(--header-multiplier));
+  line-height: var(--line-height-h, 1.1)
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo] h1,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo] h1.large,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr] h1,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr] h1.large {
+  color: var(--color-h-dynamic, var(--color-h1, var(--color-h, inherit)))
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo] h2,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr] h2 {
+  color: var(--color-h-dynamic, var(--color-h2, var(--color-h, inherit)))
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo] h3,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr] h3 {
+  color: var(--color-h-dynamic, var(--color-h3, var(--color-h, inherit)))
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo] h3[data-context=newswire-subtitle],
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr] h3[data-context=newswire-subtitle] {
+  color: var(--color-subtitle-dynamic, var(--color-h-dynamic, var(--color-h3, var(--color-h, inherit))))
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo] h4,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo] h5,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo] h6,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr] h4,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr] h5,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr] h6 {
+  color: var(--color-h-dynamic, var(--color-h, inherit))
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo] [template=community],
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr] [template=community] {
+  --time-color: var(--body-color, #2d2d2d);
+  --breadcrumb-separator-filter-invert: invert(0)
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo] [template=community] main,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr] [template=community] main {
+  color: var(--color-h, #161616)
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game=rdo] [template=community] p,
+._560823421a0f2e0afe87e3fc1302eca7e415 :root [data-game^=rdr] [template=community] p {
+  color: var(--body-color, #2d2d2d)
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root :lang(pl_pl) [data-game=rdo],
+._560823421a0f2e0afe87e3fc1302eca7e415 :root :lang(pl_pl) [data-game^=rdr] {
+  --font-family-h: RDRLino-Regular;
+  --font-family-newswire-subtitle: HapnaSlabSerif;
+  --font-family-std: HapnaSlabSerif;
+  --badge-font: RDRLino-Regular
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root :lang(zh_hans) [data-game=rdo],
+._560823421a0f2e0afe87e3fc1302eca7e415 :root :lang(zh_hans) [data-game^=rdr] {
+  --font-family-h: NotoSerifSC;
+  --font-family-newswire-subtitle: NotoSansSC, ;
+  --font-family-std: NotoSansSC;
+  --area-font: NotoSansSC;
+  --badge-font: RDRLino-Regular, NotoSerifSC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root :lang(zh_hant) [data-game=rdo],
+._560823421a0f2e0afe87e3fc1302eca7e415 :root :lang(zh_hant) [data-game^=rdr] {
+  --font-family-h: NotoSerifTC;
+  --font-family-newswire-subtitle: NotoSansTC;
+  --font-family-std: NotoSansTC;
+  --area-font: NotoSansTC;
+  --badge-font: RDRLino-Regular, NotoSerifTC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root :lang(ja_jp) [data-game=rdo],
+._560823421a0f2e0afe87e3fc1302eca7e415 :root :lang(ja_jp) [data-game^=rdr] {
+  --font-family-h: NotoSerifJP;
+  --font-family-newswire-subtitle: NotoSansJP;
+  --font-family-std: NotoSansJP;
+  --area-font: NotoSansJP;
+  --badge-font: RDRLino-Regular, NotoSerifTC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root :lang(ko_kr) [data-game=rdo],
+._560823421a0f2e0afe87e3fc1302eca7e415 :root :lang(ko_kr) [data-game^=rdr] {
+  --font-family-h: NotoSerifKR;
+  --font-family-newswire-subtitle: NotoSansKR;
+  --font-family-std: NotoSansKR;
+  --area-font: NotoSansKR;
+  --badge-font: RDRLino-Regular, NotoSerifKR
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root .hiddenMobile {
+  display: none
+}
+
+@media (min-width:768px) {
+  ._560823421a0f2e0afe87e3fc1302eca7e415 :root .hiddenMobile {
+    display: var(--display-original, block)
+  }
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root .hiddenLarge {
+  display: var(--display-original, block)
+}
+
+@media (min-width:768px) {
+  ._560823421a0f2e0afe87e3fc1302eca7e415 :root .hiddenLarge {
+    display: none
+  }
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root .hidden-sm {
+  display: var(--display-original, block)
+}
+
+@media (min-width:0px) {
+  ._560823421a0f2e0afe87e3fc1302eca7e415 :root .hidden-sm {
+    display: none
+  }
+}
+
+@media (min-width:0px) {
+  ._560823421a0f2e0afe87e3fc1302eca7e415 :root .show-sm {
+    display: var(--display-original, block)
+  }
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root .hidden-md {
+  display: var(--display-original, block)
+}
+
+@media (min-width:768px) {
+  ._560823421a0f2e0afe87e3fc1302eca7e415 :root .hidden-md {
+    display: none
+  }
+}
+
+@media (min-width:768px) {
+  ._560823421a0f2e0afe87e3fc1302eca7e415 :root .show-md {
+    display: var(--display-original, block)
+  }
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root .hidden-lg {
+  display: var(--display-original, block)
+}
+
+@media (min-width:1024px) {
+  ._560823421a0f2e0afe87e3fc1302eca7e415 :root .hidden-lg {
+    display: none
+  }
+}
+
+@media (min-width:1024px) {
+  ._560823421a0f2e0afe87e3fc1302eca7e415 :root .show-lg {
+    display: var(--display-original, block)
+  }
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root .hidden-xl {
+  display: var(--display-original, block)
+}
+
+@media (min-width:1920px) {
+  ._560823421a0f2e0afe87e3fc1302eca7e415 :root .hidden-xl {
+    display: none
+  }
+}
+
+@media (min-width:1920px) {
+  ._560823421a0f2e0afe87e3fc1302eca7e415 :root .show-xl {
+    display: var(--display-original, block)
+  }
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root .hidden-xxl {
+  display: var(--display-original, block)
+}
+
+@media (min-width:2560px) {
+  ._560823421a0f2e0afe87e3fc1302eca7e415 :root .hidden-xxl {
+    display: none
+  }
+}
+
+@media (min-width:2560px) {
+  ._560823421a0f2e0afe87e3fc1302eca7e415 :root .show-xxl {
+    display: var(--display-original, block)
+  }
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root .full-width {
+  left: 50%;
+  margin-left: calc((100vw / 2) * -1);
+  margin-right: calc((100vw / 2) * -1);
+  max-width: 100vw !important;
+  position: relative;
+  right: 50%;
+  width: 100vw
+}
+
+@media (max-width:767px) {
+  ._560823421a0f2e0afe87e3fc1302eca7e415 :root .reverse-mobile {
+    display: flex;
+    flex-direction: column-reverse
+  }
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root .center-children {
+  align-items: center;
+  display: flex;
+  justify-content: center
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root .std-padding-mobile-desktop-none {
+  --padding-dynamic: var(--padding-static)
+}
+
+@media (min-width:1024px) {
+  ._560823421a0f2e0afe87e3fc1302eca7e415 :root .std-padding-mobile-desktop-none {
+    --padding-dynamic: 0
+  }
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root .std-padding-desktop-mobile-none {
+  --padding-dynamic: 0
+}
+
+@media (min-width:1024px) {
+  ._560823421a0f2e0afe87e3fc1302eca7e415 :root .std-padding-desktop-mobile-none {
+    --padding-dynamic: var(--padding-static)
+  }
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root .horizontal-line {
+  background: #fff;
+  height: 2px;
+  margin-top: var(--grid-gap-static-sm);
+  width: 100%
+}
+
+@media (max-width:1023px) {
+  ._560823421a0f2e0afe87e3fc1302eca7e415 :root .horizontal-line {
+    margin-top: var(--grid-gap-static-xs)
+  }
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :root .horizontal-line.gold {
+  background: linear-gradient(96deg, #977b52 18%, #ded0a4 51%, #b19b6b 85%)
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 body {
+  background: var(--background-color);
+  overflow-x: hidden;
+  overflow-y: scroll
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 ul {
+  padding-left: 40px !important
+}
+
+@supports (--custom:property) {
+  ._560823421a0f2e0afe87e3fc1302eca7e415 [style*="--aspect-ratio"] {
+    position: relative
+  }
+
+  ._560823421a0f2e0afe87e3fc1302eca7e415 [style*="--aspect-ratio"]:before {
+    content: "";
+    display: block;
+    height: 0;
+    padding-bottom: calc(100% / calc(var(--aspect-ratio)))
+  }
+
+  ._560823421a0f2e0afe87e3fc1302eca7e415 [style*="--aspect-ratio"]>* {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
+  }
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 [class^=SidebarContainer-] {
+  --color-h-dynamic: #000
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 [class^=SidebarContainer-] .prose {
+  background: var(--tina-color-grey-0);
+  background-color: var(--tina-color-grey-0);
+  border: 1px solid var(--tina-color-grey-2);
+  border-radius: var(--tina-radius-small);
+  box-shadow: 0 0 0 2px transparent;
+  color: var(--tina-color-grey-10);
+  margin-bottom: 14px;
+  padding: var(--tina-padding-small)
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 [class^=SidebarContainer-] .prose .ProseMirror {
+  grid-gap: var(--grid-gap-static-sm);
+  display: grid
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 [class^=SidebarContainer-] .prose .ProseMirror a {
+  text-decoration: underline
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 [class^=BlockMenuList-] button {
+  --color-h: #000
+}
+
+@keyframes globalFadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px)
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible
+  }
+}
+
+@keyframes globalFadeIn {
+  0% {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1;
+    visibility: visible
+  }
+}
+
+@media (min-width:2560px) {
+  ._560823421a0f2e0afe87e3fc1302eca7e415 {
+    --max-width-md: 1440px
+  }
+}
+
+@media (max-width:767px) {
+  ._560823421a0f2e0afe87e3fc1302eca7e415 {
+    --spacing-lg: 2rem;
+    --spacing-xl: 4rem
+  }
+}
+
+@font-face {
+  font-family: ChaletComprime;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/0b050e3931bdee7b4e47.woff) format("woff")
+}
+
+@font-face {
+  font-family: ChaletComprime;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/40a9579b16876325cf5d.woff) format("woff")
+}
+
+@font-face {
+  font-family: Chalet;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/6f94170675eae637b839.woff) format("woff")
+}
+
+@font-face {
+  font-family: Chalet;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/c07cd84eb88be5ed61da.woff) format("woff")
+}
+
+@font-face {
+  font-family: Pricedown;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/be58f8316924c2c9242f.woff) format("woff")
+}
+
+@font-face {
+  font-family: NeueHelveticaW05;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/a90a09d35ad69302407d.woff) format("woff")
+}
+
+@font-face {
+  font-family: NeueHelveticaW05;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/1395879dc836e2eea564.woff) format("woff")
+}
+
+@font-face {
+  font-family: NeueHelveticaW05;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/fec71193179b1f860772.woff) format("woff")
+}
+
+@font-face {
+  font-family: FrizQuadrataW05;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/a38b86a13cff1af877a2.woff) format("woff")
+}
+
+@font-face {
+  font-family: FrizQuadrataW05;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/8a419d27a1eec96fdaad.woff) format("woff")
+}
+
+@font-face {
+  font-family: FrizQuadrataW05;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/9867287e6c1fc83a89cb.woff) format("woff")
+}
+
+@font-face {
+  font-family: FrizQuadrataW05;
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/00c4190f2bbfb0e99c2a.woff) format("woff")
+}
+
+@font-face {
+  font-family: CorporateW05;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/31e60f7b23377bec9894.woff) format("woff")
+}
+
+@font-face {
+  font-family: NimbusSansW05;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/707f38ea81e69d75f3e8.woff) format("woff")
+}
+
+@font-face {
+  font-family: NimbusSansW05;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/29ae0fa4aabe2e795b92.woff) format("woff")
+}
+
+@font-face {
+  font-family: EurostileNextW05;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/39163b1c27d4874840f8.woff) format("woff")
+}
+
+@font-face {
+  font-family: Diploma;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/5086f4019f360fde9779.woff) format("woff")
+}
+
+@font-face {
+  font-family: BrushScriptMT;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/0174dd7c8b071617cb8c.woff) format("woff")
+}
+
+@font-face {
+  font-family: BankGothicBT;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/09081caba15b8def6692.woff) format("woff")
+}
+
+@font-face {
+  font-family: NeueHelveticaPaneuropean;
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/8d82b2da4cb1ce25dc67.woff) format("woff")
+}
+
+@font-face {
+  font-family: NeueHelveticaPaneuropean;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/c94455ca12280f0f0064.woff) format("woff")
+}
+
+@font-face {
+  font-family: NeueHelveticaPaneuropean;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/ec1e7e19642cc9cf2684.woff) format("woff")
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :lang(pl_pl) {
+  --font-family-h: NeueHelveticaPaneuropean;
+  --font-family-std: NeueHelveticaPaneuropean
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :lang(ru_ru) {
+  --font-family-h: NeueHelveticaPaneuropean
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 [data-type-lang=pl],
+._560823421a0f2e0afe87e3fc1302eca7e415 [data-type-lang=ru] {
+  font-family: NeueHelveticaPaneuropean !important
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :lang(zh_hans) {
+  --font-family-h: ChaletComprime, NotoSansSC;
+  --font-family-body: NotoSansSC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 [data-type-lang=zh] {
+  font-family: ChaletComprime, NotoSansSC !important
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :lang(zh_tw) {
+  --font-family-h: ChaletComprime, NotoSansTC;
+  --font-family-body: NotoSansTC
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 [data-type-lang=tw] {
+  font-family: ChaletComprime, NotoSansTC !important
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :lang(ja_jp) {
+  --font-family-h: ChaletComprime, NotoSansJP;
+  --font-family-body: NotoSansJP
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 [data-type-lang=jp] {
+  font-family: ChaletComprime, NotoSansJP !important
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 :lang(ko_kr) {
+  --font-family-h: ChaletComprime, NotoSansKR;
+  --font-family-body: NotoSansKR
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 [data-type-lang=kr] {
+  font-family: ChaletComprime, NotoSansKR !important
+}
+
+@media (min-width:1920px) {
+  ._560823421a0f2e0afe87e3fc1302eca7e415 {
+    --padding-sides: var(--padding-xl)
+  }
+}
+
+@media (min-width:2560px) {
+  ._560823421a0f2e0afe87e3fc1302eca7e415 {
+    --padding-sides: 16rem
+  }
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 h1 {
+  font-size: var(--font-size-8)
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 h1,
+._560823421a0f2e0afe87e3fc1302eca7e415 h2 {
+  color: var(--color-h);
+  font-family: var(--font-family-h);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-h);
+  line-height: var(--line-height-md)
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 h2 {
+  font-size: var(--font-size-7)
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 h3 {
+  font-size: var(--font-size-6)
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 h3,
+._560823421a0f2e0afe87e3fc1302eca7e415 h4 {
+  color: var(--color-h);
+  font-family: var(--font-family-h);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--letter-spacing-h);
+  line-height: var(--line-height-md)
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 h4 {
+  font-size: var(--font-size-5)
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 h5 {
+  color: var(--color-h);
+  font-family: var(--font-family-h);
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--letter-spacing-h);
+  line-height: var(--line-height-md)
+}
+
+._560823421a0f2e0afe87e3fc1302eca7e415 p {
+  color: var(--color-body);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-3);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--letter-spacing-body);
+  line-height: var(--line-height-lg)
+}
+
+._560823421a0f2e0afeec0fc92574e44f6146 {
+  margin: 0 auto;
+  max-width: 3840px;
+  padding-bottom: var(--padding-lg)
+}
+
+._560823421a0f2e0af9f7071451bc7de89988 {
+  --font-family-h: "RDRUltra";
+  --letter-spacing-h: 0
+}
+
+._560823421a0f2e0afe90f13c9d95ce1d65b7 {
+  --font-family-h: "UnivsersalCyrillic"
+}
