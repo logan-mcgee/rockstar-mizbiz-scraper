@@ -22,7 +22,7 @@
         const [a, t] = (0, s.useState)([]), [n, i] = (0, s.useState)([]), [o, l] = (0, s.useState)(null), {
           data: d,
           loggedIn: u
-        } = (0, r.useRockstarUser)(), m = (e, s) => {
+        } = (0, r.useRockstarUser)(), f = (e, s) => {
           const r = [];
           e.forEach((e => {
             if (-1 === a.indexOf(e)) {
@@ -36,14 +36,14 @@
         };
         (0, s.useEffect)((() => {
           if (d && null !== u) {
-            const e = b(d);
-            n.length && e && m(n, e), l(e)
-          } else e || n.length && m(n)
+            const e = m(d);
+            n.length && e && f(n, e), l(e)
+          } else e || n.length && f(n)
         }), [d, u, n]), (0, s.useEffect)((() => {
           const e = n.filter((e => -1 === a.indexOf(e)));
           i(e)
         }), [a]);
-        const b = e => {
+        const m = e => {
           const a = [],
             t = [],
             s = [];
@@ -78,8 +78,8 @@
     67: (e, a, t) => {
       "use strict";
       t.d(a, {
-        R: () => f,
-        Z: () => k
+        R: () => h,
+        Z: () => b
       });
       var s = t(859);
       const c = (0, s.makeVar)(!1),
@@ -90,33 +90,33 @@
         l = e => o(e),
         d = (0, s.makeVar)(null),
         u = e => d(e),
-        m = (0, s.makeVar)(null),
-        b = e => m(e),
         f = (0, s.makeVar)(null),
+        m = e => f(e),
         h = (0, s.makeVar)(null),
-        g = e => h(e),
-        p = (0, s.makeVar)(null),
-        v = e => p(e),
-        k = () => {
-          const e = (0, s.useReactiveVar)(h),
+        g = (0, s.makeVar)(null),
+        p = e => g(e),
+        v = (0, s.makeVar)(null),
+        k = e => v(e),
+        b = () => {
+          const e = (0, s.useReactiveVar)(g),
             a = (0, s.useReactiveVar)(d),
             t = (0, s.useReactiveVar)(c),
-            f = (0, s.useReactiveVar)(o),
-            k = (0, s.useReactiveVar)(m);
+            h = (0, s.useReactiveVar)(o),
+            b = (0, s.useReactiveVar)(f);
           return {
             charactersNeeded: e,
             currentCharId: a,
-            hasNotifications: f,
+            hasNotifications: h,
             navOpen: t,
-            userData: (0, s.useReactiveVar)(p),
-            selectedCharacterTuple: k,
+            userData: (0, s.useReactiveVar)(v),
+            selectedCharacterTuple: b,
             jumpScMenuFocus: (0, s.useReactiveVar)(n),
-            setCharactersNeeded: g,
+            setCharactersNeeded: p,
             setCurrentCharId: u,
             setHasNotifications: l,
             setNavOpen: r,
-            setSelectedCharacterTuple: b,
-            setUserData: v,
+            setSelectedCharacterTuple: m,
+            setUserData: k,
             setJumpScMenuFocus: i
           }
         }
@@ -130,7 +130,7 @@
         useGtmTrack: () => s.useGtmTrack,
         useRockstarUser: () => s.useRockstarUser,
         useRockstarUserState: () => c.Z,
-        useRpCategory: () => h,
+        useRpCategory: () => g,
         useScConfig: () => i
       });
       var s = t(59),
@@ -142,7 +142,7 @@
         l = t(929),
         d = t(239);
       var u = t(160);
-      const m = e => {
+      const f = e => {
           let {
             text: a,
             target: t,
@@ -154,7 +154,7 @@
             track: n
           } = (0, d.Z)();
           return (0, u.jsxs)("a", {
-            className: "_52bd8c97e5b56b1bf1f57df4d89347d3a5a4",
+            className: "_74c6ed1e7c68394ff1f57df4d89347d3a5a4",
             title: a,
             href: s,
             target: t,
@@ -168,18 +168,18 @@
               })
             },
             children: [a, r && (0, u.jsx)("span", {
-              className: "_52bd8c97e5b56b1bdfdd843dadc8fe0cc756"
+              className: "_74c6ed1e7c68394fdfdd843dadc8fe0cc756"
             })]
           }, a)
         },
-        b = (0, l.withTranslations)((e => {
+        m = (0, l.withTranslations)((e => {
           let {
             sc: a,
             t
           } = e;
           const {
             setSelectedCharacterTuple: s
-          } = (0, c.Z)(), r = (0, l.useLocale)(), n = (0, l.toScLocaleString)(r), i = `${document.location.pathname}${document.location.search}`, d = `${a.login}?returnUrl=${i}&lang=${n}`, b = `${a.signup}&returnUrl=${i}&lang=${n}`, f = [{
+          } = (0, c.Z)(), r = (0, l.useLocale)(), n = (0, l.toScLocaleString)(r), i = `${document.location.pathname}${document.location.search}`, d = `${a.login}?returnUrl=${i}&lang=${n}`, m = `${a.signup}&returnUrl=${i}&lang=${n}`, h = [{
             text: t("Sign In"),
             href: d,
             analytics: {
@@ -189,7 +189,7 @@
             }
           }, {
             text: t("Join Social Club"),
-            href: b,
+            href: m,
             analytics: {
               event_action: "register",
               event_category: "cta",
@@ -199,20 +199,20 @@
           return (0, o.useEffect)((() => {
             s(!1)
           }), []), (0, u.jsx)("nav", {
-            className: "_52bd8c97e5b56b1bb7294b05abb682e53b6c",
+            className: "_74c6ed1e7c68394fb7294b05abb682e53b6c",
             "aria-label": "sc menu",
             title: t("Social Club"),
             children: (0, u.jsx)("div", {
-              className: "_52bd8c97e5b56b1bc09cf59bedf70da20f41",
+              className: "_74c6ed1e7c68394fc09cf59bedf70da20f41",
               "data-logged-in": "false",
-              children: f.map((e => (0, o.createElement)(m, {
+              children: h.map((e => (0, o.createElement)(f, {
                 ...e,
                 key: e.text
               })))
             })
           })
         })),
-        f = (e, a) => {
+        h = (e, a) => {
           switch (e) {
             case "pc":
               return "small" === a ? {
@@ -260,8 +260,8 @@
               }
           }
         },
-        h = e => t(e < 100 ? 910 : e > 99 && e < 500 ? 185 : e > 499 && e < 750 ? 60 : 981),
-        g = (0, l.withTranslations)((e => {
+        g = e => t(e < 100 ? 910 : e > 99 && e < 500 ? 185 : e > 499 && e < 750 ? 60 : 981),
+        p = (0, l.withTranslations)((e => {
           let {
             characterData: a,
             setMobileCardWidth: s
@@ -272,21 +272,21 @@
           } = (0, c.Z)(), {
             track: i
           } = (0, d.Z)(), l = (0, o.createRef)(), {
-            platform: m,
-            platformUsername: b,
-            mugshotUrl: g,
-            stats: p
-          } = a, [v, k] = (0, o.useState)(g), [_] = (0, o.useState)(a.index), x = f(m, "large"), S = r === a.index;
+            platform: f,
+            platformUsername: m,
+            mugshotUrl: p,
+            stats: v
+          } = a, [k, b] = (0, o.useState)(p), [_] = (0, o.useState)(a.index), x = h(f, "large"), S = r === a.index;
           return (0, o.useEffect)((() => {
             l.current && s && s(l.current.offsetWidth)
           }), [l]), (0, u.jsxs)("button", {
-            className: "_52bd8c97e5b56b1bdee06086788899b4002f",
+            className: "_74c6ed1e7c68394fdee06086788899b4002f",
             type: "button",
             "aria-hidden": S,
             onClick: e => {
               e.stopPropagation(), n(_);
               let a = "";
-              "pc" === m ? a = "PC" : "ps4" === m ? a = "PS4" : "ps5" === m ? a = "PS5" : "xboxone" === m ? a = "Xbox One" : "xboxsx" === m && (a = "Xbox Series X|S"), i({
+              "pc" === f ? a = "PC" : "ps4" === f ? a = "PS4" : "ps5" === f ? a = "PS5" : "xboxone" === f ? a = "Xbox One" : "xboxsx" === f && (a = "Xbox Series X|S"), i({
                 event: "character_selector_select",
                 event_category: "character_selector",
                 event_action: "select",
@@ -296,34 +296,34 @@
             },
             ref: l,
             children: [(0, u.jsx)("div", {
-              className: "_52bd8c97e5b56b1bff6279c9ff9b88f1f1f6",
+              className: "_74c6ed1e7c68394fff6279c9ff9b88f1f1f6",
               "data-size": "small",
               children: (0, u.jsx)("img", {
-                src: v,
-                alt: b,
+                src: k,
+                alt: m,
                 onError: () => {
-                  k(t(493))
+                  b(t(493))
                 }
               })
             }), (0, u.jsxs)("div", {
-              className: "_52bd8c97e5b56b1bdb0c1a05fff15a2418f2",
+              className: "_74c6ed1e7c68394fdb0c1a05fff15a2418f2",
               children: [(0, u.jsxs)("div", {
-                className: "_52bd8c97e5b56b1bfd06288478a14cd32f05",
+                className: "_74c6ed1e7c68394ffd06288478a14cd32f05",
                 children: [(0, u.jsx)("img", {
                   src: x.src,
                   alt: x.alt
                 }), (0, u.jsx)("div", {
-                  className: "_52bd8c97e5b56b1be176d7a04bacf4e0d725",
+                  className: "_74c6ed1e7c68394fe176d7a04bacf4e0d725",
                   "data-size": "small",
-                  children: b
+                  children: m
                 })]
               }), (0, u.jsx)("div", {
-                className: "_52bd8c97e5b56b1bc08f37e001f1b148b046",
+                className: "_74c6ed1e7c68394fc08f37e001f1b148b046",
                 children: (0, u.jsxs)("div", {
-                  className: "_52bd8c97e5b56b1bf4e32f1fa3917b84d463",
+                  className: "_74c6ed1e7c68394ff4e32f1fa3917b84d463",
                   children: [(0, u.jsx)("img", {
-                    className: "_52bd8c97e5b56b1bf519c818d4a8d1520bfe",
-                    src: h(p.overview.rank.value),
+                    className: "_74c6ed1e7c68394ff519c818d4a8d1520bfe",
+                    src: g(v.overview.rank.value),
                     alt: "RP Category"
                   }), (0, u.jsx)("span", {
                     children: a.stats.overview.rank.value
@@ -333,28 +333,28 @@
             })]
           })
         })),
-        p = {
-          scNavWrapper: "_52bd8c97e5b56b1bc3de120a19e6aafa6a68",
-          rpLevel: "_52bd8c97e5b56b1ba2e820529d46c5f70e84",
-          rpIcon: "_52bd8c97e5b56b1baf0e82b0e5d21b75663d",
-          scProfileDetails: "_52bd8c97e5b56b1bc1282f49e4228a2879de",
-          scAvatar: "_52bd8c97e5b56b1bcf0c4dbbcd8335929278",
-          scAvatarPlatform: "_52bd8c97e5b56b1bc525dacab0321297baef",
-          scProfileStats: "_52bd8c97e5b56b1bb99e82fade4d0e6ee847",
-          scNames: "_52bd8c97e5b56b1bd1c87934eb071ff85281",
-          scTagsNames: "_52bd8c97e5b56b1bd92a6e128c9fe3167010",
-          scUserName: "_52bd8c97e5b56b1bbd8f666c94e4ab99427e",
-          scCrewName: "_52bd8c97e5b56b1ba3366651dd3b56c45d56",
-          scCrewRankBar: "_52bd8c97e5b56b1bdc7ce2270b1c04168b20",
-          scCrewRankBarItem: "_52bd8c97e5b56b1bc0f3bee37355ef121582",
-          scProgress: "_52bd8c97e5b56b1bb3232d788aa7f1095ffe",
-          scRpLevel: "_52bd8c97e5b56b1baeca1876088169a80360",
-          scRpIcon: "_52bd8c97e5b56b1bf3226c91d969e7ea84f3",
-          scMoney: "_52bd8c97e5b56b1bf1091a6533945fd2eee3",
-          scCash: "_52bd8c97e5b56b1bcc969e3d73b7e5134a6f",
-          scBank: "_52bd8c97e5b56b1be575e510309d38665272"
+        v = {
+          scNavWrapper: "_74c6ed1e7c68394fc3de120a19e6aafa6a68",
+          rpLevel: "_74c6ed1e7c68394fa2e820529d46c5f70e84",
+          rpIcon: "_74c6ed1e7c68394faf0e82b0e5d21b75663d",
+          scProfileDetails: "_74c6ed1e7c68394fc1282f49e4228a2879de",
+          scAvatar: "_74c6ed1e7c68394fcf0c4dbbcd8335929278",
+          scAvatarPlatform: "_74c6ed1e7c68394fc525dacab0321297baef",
+          scProfileStats: "_74c6ed1e7c68394fb99e82fade4d0e6ee847",
+          scNames: "_74c6ed1e7c68394fd1c87934eb071ff85281",
+          scTagsNames: "_74c6ed1e7c68394fd92a6e128c9fe3167010",
+          scUserName: "_74c6ed1e7c68394fbd8f666c94e4ab99427e",
+          scCrewName: "_74c6ed1e7c68394fa3366651dd3b56c45d56",
+          scCrewRankBar: "_74c6ed1e7c68394fdc7ce2270b1c04168b20",
+          scCrewRankBarItem: "_74c6ed1e7c68394fc0f3bee37355ef121582",
+          scProgress: "_74c6ed1e7c68394fb3232d788aa7f1095ffe",
+          scRpLevel: "_74c6ed1e7c68394faeca1876088169a80360",
+          scRpIcon: "_74c6ed1e7c68394ff3226c91d969e7ea84f3",
+          scMoney: "_74c6ed1e7c68394ff1091a6533945fd2eee3",
+          scCash: "_74c6ed1e7c68394fcc969e3d73b7e5134a6f",
+          scBank: "_74c6ed1e7c68394fe575e510309d38665272"
         },
-        v = (0, l.withTranslations)((e => {
+        k = (0, l.withTranslations)((e => {
           let {
             character: a,
             platformTag: c
@@ -363,7 +363,7 @@
             data: r
           } = (0, s.useRockstarUser)(), {
             track: n
-          } = (0, d.Z)(), [i, l] = (0, o.useState)([]), [m, b] = (0, o.useState)(null), [f, g] = (0, o.useState)(null), [v, k] = (0, o.useState)(!1), [_, x] = (0, o.useState)(-1), [S, N] = (0, o.useState)([]), [C, w] = (0, o.useState)(0), j = t(493), [y, E] = (0, o.useState)("0"), [R, P] = (0, o.useState)("0"), T = e => parseInt(e, 10).toLocaleString("en-US", {
+          } = (0, d.Z)(), [i, l] = (0, o.useState)([]), [f, m] = (0, o.useState)(null), [h, p] = (0, o.useState)(null), [k, b] = (0, o.useState)(!1), [_, x] = (0, o.useState)(-1), [S, N] = (0, o.useState)([]), [C, w] = (0, o.useState)(0), j = t(493), [y, E] = (0, o.useState)("0"), [R, P] = (0, o.useState)("0"), T = e => parseInt(e, 10).toLocaleString("en-US", {
             minimumFractionDigits: 0
           }), I = () => {
             L((0, u.jsx)("img", {
@@ -371,7 +371,7 @@
               alt: r.nickname
             }))
           }, [U, L] = (0, o.useState)((0, u.jsx)("img", {
-            className: p.scAvatarImg,
+            className: v.scAvatarImg,
             src: a.mugshotUrl,
             alt: r.nickname,
             onError: I
@@ -386,19 +386,19 @@
             })), E(T(a.stats.overview.bank.value)), P(T(a.stats.overview.cash.value)), w(a.stats.overview.rank.value)
           }), [a, r]), (0, o.useEffect)((() => {
             i && i.forEach((e => {
-              !0 === e.isPrimary && (b(e.crewTag), g(e.crewColour), x(e.rankOrder), k(!1), !0 === Object.prototype.hasOwnProperty.call(e, "crewType") && "rockstar" === e.crewType && k(!0))
+              !0 === e.isPrimary && (m(e.crewTag), p(e.crewColour), x(e.rankOrder), b(!1), !0 === Object.prototype.hasOwnProperty.call(e, "crewType") && "rockstar" === e.crewType && b(!0))
             }))
           }), [i]), (0, o.useEffect)((() => {
             const e = [];
-            if (!v && _ > -1)
+            if (!k && _ > -1)
               for (let a = 5; a > _; a -= 1) e.push((0, u.jsx)("div", {
-                className: p.scCrewRankBarItem,
+                className: v.scCrewRankBarItem,
                 style: {
-                  backgroundColor: null !== f ? f : ""
+                  backgroundColor: null !== h ? h : ""
                 }
               }, `crewrankbar-${a}`));
             N(e)
-          }), [_, v, f]);
+          }), [_, k, h]);
           const M = e => {
             e.stopPropagation(), n({
               event: "character_selector_profile_click",
@@ -409,15 +409,15 @@
             })
           };
           return (0, u.jsxs)("div", {
-            className: p.scProfileDetails,
+            className: v.scProfileDetails,
             onClick: M,
             onKeyUp: M,
             role: "button",
             tabIndex: -1,
             children: [(0, u.jsxs)("div", {
-              className: p.scAvatar,
+              className: v.scAvatar,
               children: [U, (0, u.jsx)("div", {
-                className: p.scAvatarPlatform,
+                className: v.scAvatarPlatform,
                 "data-platform": a.platform,
                 children: (0, u.jsx)("img", {
                   src: c.src,
@@ -425,41 +425,41 @@
                 })
               })]
             }), (0, u.jsxs)("div", {
-              className: p.scProfileStats,
+              className: v.scProfileStats,
               children: [(0, u.jsx)("div", {
-                className: p.scNames,
+                className: v.scNames,
                 children: (0, u.jsxs)("div", {
-                  className: p.scTagsNames,
+                  className: v.scTagsNames,
                   children: [(0, u.jsx)("span", {
-                    className: p.scUserName,
+                    className: v.scUserName,
                     children: a.platformUsername
-                  }), m && (0, u.jsxs)("span", {
-                    className: p.scCrewName,
-                    "data-arrow-tag": v,
-                    children: [m, !v && (0, u.jsx)("div", {
-                      className: p.scCrewRankBar,
+                  }), f && (0, u.jsxs)("span", {
+                    className: v.scCrewName,
+                    "data-arrow-tag": k,
+                    children: [f, !k && (0, u.jsx)("div", {
+                      className: v.scCrewRankBar,
                       children: S
                     })]
                   })]
                 })
               }), (0, u.jsxs)("div", {
-                className: p.scProgress,
+                className: v.scProgress,
                 children: [(0, u.jsxs)("div", {
-                  className: p.scRpLevel,
+                  className: v.scRpLevel,
                   children: [(0, u.jsx)("img", {
-                    className: p.scRpIcon,
-                    src: h(C),
+                    className: v.scRpIcon,
+                    src: g(C),
                     alt: "RP Category"
                   }), (0, u.jsx)("span", {
                     children: a.stats.overview.rank.value
                   })]
                 }), (0, u.jsxs)("div", {
-                  className: p.scMoney,
+                  className: v.scMoney,
                   children: [(0, u.jsxs)("span", {
-                    className: p.scBank,
+                    className: v.scBank,
                     children: ["$", y]
                   }), (0, u.jsxs)("span", {
-                    className: p.scCash,
+                    className: v.scCash,
                     children: ["$", R]
                   })]
                 })]
@@ -467,7 +467,7 @@
             })]
           })
         })),
-        k = (e, a) => {
+        b = (e, a) => {
           const [t, s] = (0, o.useState)(0);
           return (0, o.useEffect)((() => {
             if (e.current) {
@@ -497,10 +497,10 @@
             disableSwiper: l = !1
           } = e;
           const d = (0, o.createRef)(),
-            m = k(d, !1),
-            [b, f] = (0, o.useState)(!1),
-            [h, g] = (0, o.useState)(0),
-            [p, v] = (0, o.useState)(0),
+            f = b(d, !1),
+            [m, h] = (0, o.useState)(!1),
+            [g, p] = (0, o.useState)(0),
+            [v, k] = (0, o.useState)(0),
             [_, x] = (0, o.useState)([s]),
             [S, N] = (0, o.useState)(_[0]),
             [C, w] = (0, o.useState)(252),
@@ -509,29 +509,29 @@
             [P, T] = (0, o.useState)([]),
             [I, U] = (0, o.useState)(!1),
             L = e => {
-              if (!0 === b || !0 === l) return;
+              if (!0 === m || !0 === l) return;
               const a = void 0 !== e.changedTouches ? e.touches[0].screenX : e.screenX;
-              v(a)
+              k(a)
             },
             M = e => {
-              if (!0 === b || 0 === p || !0 === l) return;
+              if (!0 === m || 0 === v || !0 === l) return;
               const t = void 0 !== e.changedTouches ? e.changedTouches[0].screenX : e.screenX,
-                s = t > p ? 1 : -1,
-                r = Math.abs(p - t);
+                s = t > v ? 1 : -1,
+                r = Math.abs(v - t);
               r > a ? (s > 0 ? (() => {
-                if (!0 === b) return;
-                f(!0);
-                const e = h - 1 < 0 ? 0 : h - 1;
-                g(e), N(_[e]), c && c(e)
+                if (!0 === m) return;
+                h(!0);
+                const e = g - 1 < 0 ? 0 : g - 1;
+                p(e), N(_[e]), c && c(e)
               })() : (() => {
-                if (!0 === b) return;
-                f(!0);
-                let e = h + 1 >= _.length ? _.length - 1 : h + 1;
-                e < 0 && (e = 0), g(e), N(_[e]), c && c(e)
-              })(), v(0)) : N(_[h] + r * s)
+                if (!0 === m) return;
+                h(!0);
+                let e = g + 1 >= _.length ? _.length - 1 : g + 1;
+                e < 0 && (e = 0), p(e), N(_[e]), c && c(e)
+              })(), k(0)) : N(_[g] + r * s)
             },
             D = () => {
-              !0 !== b && !0 !== l && (f(!0), !0 !== b && (N(_[h]), v(0)))
+              !0 !== m && !0 !== l && (h(!0), !0 !== m && (N(_[g]), k(0)))
             };
           return (0, o.useEffect)((() => {
             const e = [];
@@ -546,17 +546,17 @@
               t = Number(window.getComputedStyle(e).marginLeft.replace("px", ""));
             y(t + a)
           }), [E]), (0, o.useEffect)((() => {
-            !1 !== b && setTimeout((() => {
-              f(!1)
+            !1 !== m && setTimeout((() => {
+              h(!1)
             }), t)
-          }), [b, t]), (0, o.useEffect)((() => {
+          }), [m, t]), (0, o.useEffect)((() => {
             x(n.map(((e, a) => (e => {
               let a = 0;
               const t = n.length;
-              return 1 === t ? .5 * m - .5 * C - 2 * s + j : (0 === e && (a = s - e * C), e === t - 1 && t > 1 && (a = t * C * -1 + (m - (s - j))), e > 0 && e < t - 1 && (a = e * C * -1 + (.5 * m - .5 * C + .5 * j)), a)
+              return 1 === t ? .5 * f - .5 * C - 2 * s + j : (0 === e && (a = s - e * C), e === t - 1 && t > 1 && (a = t * C * -1 + (f - (s - j))), e > 0 && e < t - 1 && (a = e * C * -1 + (.5 * f - .5 * C + .5 * j)), a)
             })(a)))), 1 === n.length ? U(!0) : U(!1)
-          }), [d.current, n, m]), (0, o.useEffect)((() => {
-            const e = (a = h, n.map(((e, t) => {
+          }), [d.current, n, f]), (0, o.useEffect)((() => {
+            const e = (a = g, n.map(((e, t) => {
               const s = {
                 active: !1
               };
@@ -564,11 +564,11 @@
             })));
             var a;
             T(e)
-          }), [n, h]), (0, o.useEffect)((() => {
+          }), [n, g]), (0, o.useEffect)((() => {
             !0 !== i && !0 !== l || N(_[0])
           }), [l, i, _]), (0, u.jsxs)(u.Fragment, {
             children: [(0, u.jsx)("div", {
-              className: "_52bd8c97e5b56b1bbc373b520fbdca8d2f0f",
+              className: "_74c6ed1e7c68394fbc373b520fbdca8d2f0f",
               ref: d,
               onTouchStart: L,
               onTouchMove: M,
@@ -577,54 +577,54 @@
               onMouseMove: M,
               onMouseUp: D,
               onClick: () => {
-                null !== r && r(h)
+                null !== r && r(g)
               },
               onKeyPress: () => null,
               tabIndex: -1,
               role: "presentation",
               children: (0, u.jsx)("div", {
-                className: "_52bd8c97e5b56b1bb996a7ad30d05022b3d6",
-                "data-interaction-blocked": b,
+                className: "_74c6ed1e7c68394fb996a7ad30d05022b3d6",
+                "data-interaction-blocked": m,
                 "data-single-item": I,
                 style: {
                   transform: I ? null : `translateX(${S}px)`
                 },
                 children: n.map(((e, a) => (0, u.jsx)("div", {
-                  className: "_52bd8c97e5b56b1beaede6f31bdcb7819f48",
+                  className: "_74c6ed1e7c68394feaede6f31bdcb7819f48",
                   ref: E[a],
                   children: e
                 }, `csItem-${e?.props?.characterData?.mugshotUrl}`)))
               })
             }), P.length > 1 && !1 === i && (0, u.jsx)("div", {
-              className: "_52bd8c97e5b56b1bb27bbf1bb846c8fd855b",
+              className: "_74c6ed1e7c68394fb27bbf1bb846c8fd855b",
               children: P.map((e => (0, u.jsx)("div", {
-                className: "_52bd8c97e5b56b1baf5997d414baf32e73b3",
+                className: "_74c6ed1e7c68394faf5997d414baf32e73b3",
                 "data-active": e.active
               }, e.mugshotUrl)))
             })]
           })
         },
         x = {
-          scNavWrapper: "_52bd8c97e5b56b1bb37a25bc6761bd882dab",
-          rpLevel: "_52bd8c97e5b56b1bde9cbe40526987515089",
-          rpIcon: "_52bd8c97e5b56b1bc26aa647a6b6ed6ce54f",
-          scProfile: "_52bd8c97e5b56b1baa422ee77017648494c4",
-          scCharacterSelector: "_52bd8c97e5b56b1ba43958d6263ec45d37c8",
-          scCharacterSelectBtn: "_52bd8c97e5b56b1bba70cc2e07922955d3eb",
-          open: "_52bd8c97e5b56b1be220b500bf382530bec5",
-          scCharacterList: "_52bd8c97e5b56b1bab26bb433acbeec7eedf",
-          scNav: "_52bd8c97e5b56b1bdcf1528386921ba96c80",
-          scNavHeader: "_52bd8c97e5b56b1bce29cf42c14f31f963f7",
-          scNavWrap: "_52bd8c97e5b56b1bc866301c326745076636"
+          scNavWrapper: "_74c6ed1e7c68394fb37a25bc6761bd882dab",
+          rpLevel: "_74c6ed1e7c68394fde9cbe40526987515089",
+          rpIcon: "_74c6ed1e7c68394fc26aa647a6b6ed6ce54f",
+          scProfile: "_74c6ed1e7c68394faa422ee77017648494c4",
+          scCharacterSelector: "_74c6ed1e7c68394fa43958d6263ec45d37c8",
+          scCharacterSelectBtn: "_74c6ed1e7c68394fba70cc2e07922955d3eb",
+          open: "_74c6ed1e7c68394fe220b500bf382530bec5",
+          scCharacterList: "_74c6ed1e7c68394fab26bb433acbeec7eedf",
+          scNav: "_74c6ed1e7c68394fdcf1528386921ba96c80",
+          scNavHeader: "_74c6ed1e7c68394fce29cf42c14f31f963f7",
+          scNavWrap: "_74c6ed1e7c68394fc866301c326745076636"
         },
         S = (0, l.withTranslations)((e => {
           let {
             sc: a,
             t: n,
             charListHidden: i,
-            hideCharacterList: b,
-            refCharacterListDesktop: h,
-            menuPadding: p,
+            hideCharacterList: m,
+            refCharacterListDesktop: g,
+            menuPadding: v,
             longCharList: S,
             setLongCharList: N,
             isMobileMode: C,
@@ -646,7 +646,7 @@
             setHasNotifications: D,
             setSelectedCharacterTuple: O,
             setUserData: $
-          } = (0, c.Z)(), [F, B] = (0, o.useState)(null), [z, V] = (0, o.useState)(null), [X, Z] = (0, o.useState)(!1), [H, W] = (0, o.useState)(!1), [A, G] = (0, o.useState)(0), [q, J] = (0, o.useState)(0), [K, Q] = (0, o.useState)(0), Y = (0, o.createRef)(), ee = k(Y, !1), ae = (0, o.createRef)(), [te, se] = (0, o.useState)(0), [ce, re] = (0, o.useState)([]), [ne, ie] = (0, o.useState)(244);
+          } = (0, c.Z)(), [F, B] = (0, o.useState)(null), [z, V] = (0, o.useState)(null), [X, Z] = (0, o.useState)(!1), [H, W] = (0, o.useState)(!1), [A, G] = (0, o.useState)(0), [q, J] = (0, o.useState)(0), [K, Q] = (0, o.useState)(0), Y = (0, o.createRef)(), ee = b(Y, !1), ae = (0, o.createRef)(), [te, se] = (0, o.useState)(0), [ce, re] = (0, o.useState)([]), [ne, ie] = (0, o.useState)(244);
           (0, o.useEffect)((() => {
             re(R.characters[T] ?? [])
           }), [R, T]), (0, o.useEffect)((() => {
@@ -711,7 +711,7 @@
               analytics: oe
             }],
             de = () => {
-              W(p + ne * A < ee)
+              W(v + ne * A < ee)
             };
           (0, o.useEffect)((() => {
             de()
@@ -726,7 +726,7 @@
           };
           return (0, o.useEffect)((() => {
             const e = () => {
-              J(window.innerWidth), Q(window.innerHeight), window.innerWidth < 768 || window.innerHeight < 649 ? w(!0) : w(!1), b(!0)
+              J(window.innerWidth), Q(window.innerHeight), window.innerWidth < 768 || window.innerHeight < 649 ? w(!0) : w(!1), m(!0)
             };
             return window.addEventListener("resize", e), e(), () => {
               window.removeEventListener("resize", e)
@@ -736,7 +736,7 @@
             e < 0 && (e = 0), G(e);
             const a = ce.length > 0 ? ce[I] ?? ce[0] : null;
             if (!a) return;
-            const t = null !== a ? f(a.platform, "large") : null;
+            const t = null !== a ? h(a.platform, "large") : null;
             V(t), B(a), ce.length > 1 ? Z(!0) : Z(!1), N(ce.length - 1 > 3)
           }), [I, ce]), (0, o.useEffect)((() => {
             de()
@@ -750,7 +750,7 @@
               className: x.scProfile,
               tabIndex: -1,
               "aria-label": "Profile Card",
-              children: [(0, u.jsx)(v, {
+              children: [(0, u.jsx)(k, {
                 s: x,
                 character: F,
                 platformTag: z
@@ -762,7 +762,7 @@
                   onClick: e => {
                     e.stopPropagation();
                     const a = !i;
-                    b(a), y({
+                    m(a), y({
                       event: !0 === a ? "character_selector_close" : "character_selector_open",
                       event_action: !0 === a ? "close" : "open",
                       event_category: "character_selector"
@@ -776,8 +776,8 @@
                   className: x.scCharacterList,
                   "data-long-list": S,
                   "aria-hidden": i,
-                  ref: h,
-                  children: ce.map((e => (0, u.jsx)(g, {
+                  ref: g,
+                  children: ce.map((e => (0, u.jsx)(p, {
                     characterData: e
                   }, e.mugshotUrl)))
                 }), !0 === C && (0, u.jsx)("div", {
@@ -800,7 +800,7 @@
                     },
                     disablePager: H,
                     disableSwiper: H,
-                    children: ce.filter(((e, a) => a !== I)).map((e => (0, o.createElement)(g, {
+                    children: ce.filter(((e, a) => a !== I)).map((e => (0, o.createElement)(p, {
                       characterData: e,
                       setMobileCardWidth: ie,
                       key: e.mugshotUrl
@@ -817,7 +817,7 @@
                 "data-opened": i,
                 "data-nav-opened": L,
                 onClick: e => {
-                  e.stopPropagation(), !1 === i && b(!0)
+                  e.stopPropagation(), !1 === i && m(!0)
                 },
                 children: [(0, u.jsx)("span", {
                   children: R.nickname
@@ -833,7 +833,7 @@
                 style: {
                   maxHeight: `${te}px`
                 },
-                children: le.map((e => (0, o.createElement)(m, {
+                children: le.map((e => (0, o.createElement)(f, {
                   ...e,
                   key: e.text
                 })))
@@ -842,14 +842,14 @@
           })
         })),
         N = {
-          scNavWrapper: "_52bd8c97e5b56b1bd7bac12a82ffc52818c3",
-          rpLevel: "_52bd8c97e5b56b1be2e5c1bfb71e9ff95838",
-          rpIcon: "_52bd8c97e5b56b1bcd60c6f857f6da4611af",
-          scMenu: "_52bd8c97e5b56b1bfb9966f65cb155635c74",
-          navOpen: "_52bd8c97e5b56b1bff3d86ee58e3e40e9424",
-          dragHandle: "_52bd8c97e5b56b1bdc573b70b5fa74fbc251",
-          dragHandleBtn: "_52bd8c97e5b56b1bcbaf32fb58cd4992ca4e",
-          scOverlay: "_52bd8c97e5b56b1bd6934ce9e7a8c717c2f5"
+          scNavWrapper: "_74c6ed1e7c68394fd7bac12a82ffc52818c3",
+          rpLevel: "_74c6ed1e7c68394fe2e5c1bfb71e9ff95838",
+          rpIcon: "_74c6ed1e7c68394fcd60c6f857f6da4611af",
+          scMenu: "_74c6ed1e7c68394ffb9966f65cb155635c74",
+          navOpen: "_74c6ed1e7c68394fff3d86ee58e3e40e9424",
+          dragHandle: "_74c6ed1e7c68394fdc573b70b5fa74fbc251",
+          dragHandleBtn: "_74c6ed1e7c68394fcbaf32fb58cd4992ca4e",
+          scOverlay: "_74c6ed1e7c68394fd6934ce9e7a8c717c2f5"
         },
         C = (0, l.withTranslations)((e => {
           let {
@@ -860,33 +860,33 @@
           } = (0, l.useBodyScrollable)(), {
             navHidden: d = !1
           } = (0, r.useState)(), {
-            loggedIn: m
+            loggedIn: f
           } = (0, s.useRockstarUser)(), {
-            currentCharId: f,
-            navOpen: h,
-            setNavOpen: g
-          } = (0, c.Z)(), [p, v] = (0, o.useState)(!0), [k, _] = (0, o.useState)(!1), x = (0, r.useReactiveVar)(n.Z), C = (0, o.useRef)(), [w, j] = (0, o.useState)(0), y = (0, o.createRef)(), [E, R] = (0, o.useState)(!1), [P, T] = (0, o.useState)(0), [I, U] = (0, o.useState)(!1), {
+            currentCharId: h,
+            navOpen: g,
+            setNavOpen: p
+          } = (0, c.Z)(), [v, k] = (0, o.useState)(!0), [b, _] = (0, o.useState)(!1), x = (0, r.useReactiveVar)(n.Z), C = (0, o.useRef)(), [w, j] = (0, o.useState)(0), y = (0, o.createRef)(), [E, R] = (0, o.useState)(!1), [P, T] = (0, o.useState)(0), [I, U] = (0, o.useState)(!1), {
             mutateLSSettings: L
           } = (0, l.useRockstarWebLSSettings)(), M = (0, o.useCallback)((e => {
-            v(e), C.current && !0 === e && (C.current.scrollTop = 0)
+            k(e), C.current && !0 === e && (C.current.scrollTop = 0)
           }), [C]);
           return (0, o.useEffect)((() => {
-            null !== f && L({
+            null !== h && L({
               key: "currentCharId",
-              value: f
-            }), !1 === m && L({
+              value: h
+            }), !1 === f && L({
               key: "currentCharId",
               value: null
             })
-          }), [f, m]), (0, o.useEffect)((() => {
-            C.current && (!1 === p && !1 === k && (C.current.style.height = `${C.current.scrollHeight}px`), !0 === p && (C.current.style.height = null))
-          }), [p, C, k]), (0, o.useEffect)((() => {
+          }), [h, f]), (0, o.useEffect)((() => {
+            C.current && (!1 === v && !1 === b && (C.current.style.height = `${C.current.scrollHeight}px`), !0 === v && (C.current.style.height = null))
+          }), [v, C, b]), (0, o.useEffect)((() => {
             const e = () => {
-              g(!1), M(!0)
+              p(!1), M(!0)
             };
             return document.addEventListener("click", e), () => document.removeEventListener("click", e)
           }), []), (0, o.useEffect)((() => {
-            g(!1), M(!0)
+            p(!1), M(!0)
           }), [d]), (0, o.useEffect)((() => {
             if (y.current) {
               const {
@@ -895,16 +895,16 @@
               j(parseInt(a.paddingRight, 10) + parseInt(a.paddingLeft, 10))
             }
           }), [y]), (0, o.useEffect)((() => {
-            i(!E || !h)
-          }), [h, E]), (0, o.useEffect)((() => {
+            i(!E || !g)
+          }), [g, E]), (0, o.useEffect)((() => {
             U(window.navigator.userAgent.includes("Mac"))
-          }), []), null === m ? null : (0, u.jsxs)(u.Fragment, {
+          }), []), null === f ? null : (0, u.jsxs)(u.Fragment, {
             children: [(0, u.jsxs)("div", {
-              className: [N.scMenu, h ? N.navOpen : ""].join(" "),
-              "data-logged-in": m,
+              className: [N.scMenu, g ? N.navOpen : ""].join(" "),
+              "data-logged-in": f,
               "data-mac-browser": I,
               ref: y,
-              "aria-hidden": !h,
+              "aria-hidden": !g,
               children: [(0, u.jsx)("button", {
                 className: N.dragHandleBtn,
                 type: "button",
@@ -915,30 +915,30 @@
                 onTouchMove: e => {
                   if (0 === P) return;
                   const a = void 0 !== e.changedTouches ? e.changedTouches[0].screenX : e.screenX;
-                  Math.abs(P - a) > 1 && (T(0), g(!1))
+                  Math.abs(P - a) > 1 && (T(0), p(!1))
                 },
                 children: (0, u.jsx)("img", {
                   className: N.dragHandle,
                   src: t(762),
                   alt: a("Drag Menu Handle")
                 })
-              }), m ? (0, u.jsx)(S, {
+              }), f ? (0, u.jsx)(S, {
                 sc: x,
-                charListHidden: p,
+                charListHidden: v,
                 hideCharacterList: M,
                 refCharacterListDesktop: C,
                 menuPadding: w,
-                longCharList: k,
+                longCharList: b,
                 setLongCharList: _,
                 isMobileMode: E,
                 setIsMobileMode: R
-              }) : (0, u.jsx)(b, {
+              }) : (0, u.jsx)(m, {
                 sc: x,
-                navOpen: h
+                navOpen: g
               })]
             }), (0, u.jsx)("div", {
-              className: [N.scOverlay, h ? N.navOpen : ""].join(" "),
-              "data-logged-in": m
+              className: [N.scOverlay, g ? N.navOpen : ""].join(" "),
+              "data-logged-in": f
             })]
           })
         })),
@@ -954,7 +954,7 @@
             setNavOpen: n
           } = (0, c.Z)(), {
             track: i
-          } = (0, d.Z)(), [l, m] = (0, o.useState)(null), [b, h] = (0, o.useState)(!1), [g, p] = (0, o.useState)(null), [v, k] = (0, o.useState)(!1), [_, x] = (0, o.useState)([]);
+          } = (0, d.Z)(), [l, f] = (0, o.useState)(null), [m, g] = (0, o.useState)(!1), [p, v] = (0, o.useState)(null), [k, b] = (0, o.useState)(!1), [_, x] = (0, o.useState)([]);
           (0, o.useEffect)((() => {
             x(e.characters[a] ?? [])
           }), [e, a]);
@@ -970,27 +970,27 @@
           return (0, o.useEffect)((() => {
             const a = e?.id ?? !1,
               s = a ? (_?.[t]?.mugshotUrl ?? e?.avatar) || w : j,
-              c = f(_?.[t]?.platform, "small") ?? null;
-            p(c), m(s), h(a), k(!!_?.[t]?.mugshotUrl)
+              c = h(_?.[t]?.platform, "small") ?? null;
+            v(c), f(s), g(a), b(!!_?.[t]?.mugshotUrl)
           }), [e, _, t, w, j]), (0, u.jsxs)("button", {
-            className: "_52bd8c97e5b56b1bf60d175890a158a2eeca",
-            "data-img-set": v,
+            className: "_74c6ed1e7c68394ff60d175890a158a2eeca",
+            "data-img-set": k,
             "aria-label": "Toggle Social Club Menu",
             type: "button",
             onClick: e => S(e),
             children: [(0, u.jsx)("img", {
-              className: "_52bd8c97e5b56b1ba9651d22866bf58ca4bd",
+              className: "_74c6ed1e7c68394fa9651d22866bf58ca4bd",
               src: l || "",
               onError: () => {
-                m(w)
+                f(w)
               },
               alt: e?.nickname || ""
-            }), b && null !== g && (0, u.jsx)("img", {
-              className: "_52bd8c97e5b56b1be8c699c608f17bc081aa",
-              src: g.src,
-              alt: g.alt
-            }), b && (0, u.jsx)("div", {
-              className: "_52bd8c97e5b56b1bacba28aeab3965a49753",
+            }), m && null !== p && (0, u.jsx)("img", {
+              className: "_74c6ed1e7c68394fe8c699c608f17bc081aa",
+              src: p.src,
+              alt: p.alt
+            }), m && (0, u.jsx)("div", {
+              className: "_74c6ed1e7c68394facba28aeab3965a49753",
               "data-platform": _?.[a]?.[t]?.platform ?? null
             })]
           })
@@ -1000,9 +1000,9 @@
       "use strict";
       t.r(a), t.d(a, {
         GtmProvider: () => x,
-        RockstarUserProvider: () => p,
-        useGtmTrack: () => S,
-        useRockstarUser: () => v
+        RockstarUserProvider: () => v,
+        useGtmTrack: () => N,
+        useRockstarUser: () => k
       });
       var s = t(932),
         c = t(859),
@@ -1014,7 +1014,7 @@
         d = t(845);
       const {
         graphEnv: u
-      } = (0, r.getScConfigForOrigin)(), m = (0, c.uriForGraphEnv)(u), b = () => {
+      } = (0, r.getScConfigForOrigin)(), f = (0, c.uriForGraphEnv)(u), m = () => {
         const e = (0, c.useRockstarToken)(),
           [a, t] = (0, s.useState)({
             id: null,
@@ -1027,25 +1027,25 @@
             }
           }),
           [o, u] = (0, s.useState)(!0),
-          [b, , f] = (0, c.useRockstarTokenReactive)(),
-          h = (0, c.useRockstarTokenPing)(),
+          [m, , h] = (0, c.useRockstarTokenReactive)(),
+          g = (0, c.useRockstarTokenPing)(),
           {
-            refetch: g
+            refetch: p
           } = (0, c.useQuery)(n.userData, {
             skip: !0,
             context: {
-              uri: m
+              uri: f
             }
           }),
-          [p, v] = (0, s.useState)(null),
-          [k, _] = (0, s.useState)(!1),
+          [v, k] = (0, s.useState)(null),
+          [b, _] = (0, s.useState)(!1),
           [x, S] = (0, s.useState)(!1);
         return (0, s.useEffect)((() => {
           (async () => {
             const s = null === e ? null : !!e;
-            if (s && !k) {
+            if (s && !b) {
               u(!0), _(!0);
-              const e = await g(),
+              const e = await p(),
                 s = e?.data?.user?.id,
                 c = await (async e => {
                   let {
@@ -1062,7 +1062,7 @@
                   });
                   return s
                 })({
-                  pingBearer: h,
+                  pingBearer: g,
                   rockstarId: s
                 }),
                 n = await (async e => {
@@ -1116,7 +1116,7 @@
                     r?.map((e => ("xbl" === e?.onlineService ? i = e.userName : "np" === e?.onlineService && (o = e.userName), e))), c.sort(((e, a) => Number(a.activeCharacter) - Number(e.activeCharacter))), c.map(((e, a) => (e.platformUsername = n, e.index = a, ["ps4", "ps5"].includes(e.platform) && (e.platformUsername = o || n), ["xboxone", "xboxsx"].includes(e.platform) && (e.platformUsername = i || n), e)))
                   })), c) : c
                 })({
-                  pingBearer: h,
+                  pingBearer: g,
                   nickname: e?.data?.user?.nickname,
                   rockstarId: s
                 }),
@@ -1128,7 +1128,7 @@
                     gtao: n
                   }
                 };
-              u(!1), t(o), v(!0), (0, i.R)(s)
+              u(!1), t(o), k(!0), (0, i.R)(s)
             }!1 !== s || x || (await (async e => {
               let {
                 token: a,
@@ -1156,54 +1156,57 @@
                 } = await i.json();
               return a(o), t(u), o
             })({
-              token: b,
-              tokenPingExpires: f
-            }), S(!0)), !1 === s && x && (_(!0), v(!1), u(!1)), null === e && h()
+              token: m,
+              tokenPingExpires: h
+            }), S(!0)), !1 === s && x && (_(!0), k(!1), u(!1)), null === e && g()
           })()
-        }), [e, k, x]), {
+        }), [e, b, x]), {
           data: a,
           loading: o,
-          loggedIn: p
+          loggedIn: v
         }
       };
-      var f = t(160);
-      const h = {
+      var h = t(160);
+      const g = {
           data: null,
           characters: {
             gtao: []
           },
           loggedIn: !0
         },
-        g = (0, s.createContext)(h),
-        p = e => {
+        p = (0, s.createContext)(g),
+        v = e => {
           let {
             children: a
           } = e;
-          const t = b(),
+          const t = m(),
             c = (0, s.useMemo)((() => ({
               ...t
             })), [t]);
-          return (0, f.jsx)(g.Provider, {
+          return (0, h.jsx)(p.Provider, {
             value: c,
             children: a
           })
         },
-        v = () => (0, s.useContext)(g);
-      var k = t(239);
+        k = () => (0, s.useContext)(p);
+      var b = t(239);
       const _ = (0, s.createContext)(void 0),
         x = e => {
           let {
             checkUser: a,
             children: t
           } = e;
-          const c = (0, k.Z)(a),
+          const c = (0, b.Z)(a),
             r = (0, s.useMemo)((() => c), [c, a]);
-          return (0, f.jsx)(_.Provider, {
+          return (0, h.jsx)(_.Provider, {
             value: r,
             children: t
           })
         },
-        S = () => (0, s.useContext)(_)
+        S = {
+          track: () => null
+        },
+        N = () => (0, s.useContext)(_) ?? S
     },
     938: e => {
       var a = {

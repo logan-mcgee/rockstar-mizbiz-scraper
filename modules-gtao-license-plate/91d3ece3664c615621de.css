@@ -215,16 +215,16 @@ template {
   --padding-sides: var(--grid-gap-static-lg);
   --padding-top-bottom: var(--padding-sides);
   --padding-static: var(--padding-sides);
-  --font-size-1: 0.5rem;
-  --font-size-2: 0.75rem;
+  --font-size-1: 0.64rem;
+  --font-size-2: 0.8rem;
   --font-size-3: 1rem;
   --font-size-4: 1.25rem;
-  --font-size-5: 1.5rem;
-  --font-size-6: 2rem;
-  --font-size-7: 2.5rem;
-  --font-size-8: 3rem;
-  --font-size-9: 4rem;
-  --font-size-10: 5rem;
+  --font-size-5: 1.563rem;
+  --font-size-6: 1.953rem;
+  --font-size-7: 2.441rem;
+  --font-size-8: 3.052rem;
+  --font-size-9: 3.815rem;
+  --font-size-10: 4.768rem;
   --font-family-std: var(--rsg-font-family-std);
   --font-family-h: var(--rsg-font-family-h);
   --font-family-h-halloween: nightmar;
@@ -580,13 +580,6 @@ template {
   font-style: normal;
   font-weight: 700;
   src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/c1c092eb55240be87a6b.woff) format("woff")
-}
-
-@font-face {
-  font-family: RDRUltraHeadline;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/28a1db376124dcc8700a.woff) format("woff")
 }
 
 @media (min-width:0px) {
@@ -1129,18 +1122,10 @@ template {
   --badge-font: Pricedown, NeueHelveticaW05
 }
 
-:root :lang(pl_pl) [data-context=newswire-article] h1 {
-  --font-family-h: ChaletComprime, NeueHelveticaW05
-}
-
 :root :lang(ru_ru) [data-game^=gta] {
   --font-family-h: NeueHelveticaW05;
   --font-family-newswire-subtitle: NeueHelveticaW05;
   --badge-font: Pricedown, NeueHelveticaW05
-}
-
-:root :lang(ru_ru) [data-context=newswire-article] h1 {
-  --font-family-h: NeueHelveticaW05
 }
 
 :root :lang(zh_hans) [data-game^=gta] {
@@ -1162,10 +1147,6 @@ template {
   --font-family-newswire-subtitle: NotoSansJP;
   --font-family-std: NotoSansJP;
   --badge-font: Pricedown, NotoSansJP
-}
-
-:root :lang(ja_jp) [data-context=newswire-article] h1 {
-  --font-family-h: NotoSansJP
 }
 
 :root :lang(ko_kr) [data-game^=gta] {
@@ -1793,6 +1774,16 @@ ul {
 }
 
 :root {
+  --font-size-1: 0.5rem;
+  --font-size-2: 0.75rem;
+  --font-size-3: 1rem;
+  --font-size-4: 1.25rem;
+  --font-size-5: 1.5rem;
+  --font-size-6: 2rem;
+  --font-size-7: 2.5rem;
+  --font-size-8: 3rem;
+  --font-size-9: 4rem;
+  --font-size-10: 5rem;
   --font-family-body: "Chalet";
   --font-family-h: "ChaletComprime";
   --font-weight-regular: 400;
@@ -1814,7 +1805,6 @@ ul {
   --white-40: hsla(0, 0%, 100%, .4);
   --white-15: hsla(0, 0%, 100%, .15);
   --text-light: #e8e8e8;
-  --focusring-blue: blue;
   --red: #c00;
   --circoloco-red: #eb1818;
   --rockstar-gold: #fcaf17;
@@ -1852,7 +1842,6 @@ ul {
   --margin-md: var(--spacing-md);
   --margin-lg: var(--spacing-lg);
   --margin-xl: var(--spacing-xl);
-  --border-radius-xs: 2px;
   --border-radius-sm: 4px;
   --border-radius-md: 8px;
   --border-radius-lg: 16px;
@@ -1866,8 +1855,21 @@ ul {
   justify-content: center
 }
 
+@media (min-width:1024px) {
+  :root {
+    --root-font-size: 18
+  }
+}
+
+@media (min-width:1920px) {
+  :root {
+    --root-font-size: 20
+  }
+}
+
 @media (min-width:2560px) {
   :root {
+    --root-font-size: 22;
     --max-width-md: 1440px
   }
 }
