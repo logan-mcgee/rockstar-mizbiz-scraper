@@ -70,7 +70,7 @@
             inView: j
           } = (0, b.YD)({
             threshold: .6
-          }), [C, N] = (0, c.useState)(!1), [w, I] = (0, c.useState)(!1), L = d ? p[d] : "", S = t?._memoq?.maxHeight || "auto", P = t?._memoq?.maxWidth || "auto";
+          }), [C, N] = (0, c.useState)(!1), [w, I] = (0, c.useState)(!1), S = d ? p[d] : "", L = t?._memoq?.maxHeight || "auto", P = t?._memoq?.maxWidth || "auto";
           return (0, c.useEffect)((() => {
             I(t?.setLogoAsDefault || !1)
           }), []), (0, c.useEffect)((() => {
@@ -104,7 +104,7 @@
                       className: p.headerLogo,
                       image: e,
                       imageStyle: {
-                        maxHeight: S,
+                        maxHeight: L,
                         maxWidth: P,
                         margin: 0
                       }
@@ -116,7 +116,7 @@
                       children: a
                     })]
                   }) : a && (0, r.jsx)("h3", {
-                    className: [p.title, L].join(" "),
+                    className: [p.title, S].join(" "),
                     tabIndex: 0,
                     children: a
                   })
@@ -305,7 +305,7 @@
           relatedLinksContainer: "_560823421a0f2e0ace5eaa4eefb9d018642f",
           buttonContainer: "_560823421a0f2e0ac6e72db53b44166b396b"
         },
-        L = e => {
+        S = e => {
           let {
             title: a,
             id: t,
@@ -349,7 +349,7 @@
             })]
           }) : null
         };
-      var S = t(1244),
+      var L = t(1244),
         P = t(4160);
       const $ = {
           tabControl: "_560823421a0f2e0aa14cf0c1eb166653f8c5",
@@ -378,7 +378,7 @@
                   isHidden: a
                 } = e;
                 return 1 !== a
-              }))?.map(((e, s) => (0, r.jsxs)(S.E.button, {
+              }))?.map(((e, s) => (0, r.jsxs)(L.E.button, {
                 type: "button",
                 className: [$.tabButton, s === n ? $.activeTabButton : ""].join(" "),
                 onClick: () => (e => {
@@ -402,7 +402,7 @@
                 }) : (0, r.jsx)("span", {
                   className: $.tabLabel,
                   children: e?.name?.toUpperCase()
-                }), s === n ? (0, r.jsx)(S.E.div, {
+                }), s === n ? (0, r.jsx)(L.E.div, {
                   className: $.tabBackground,
                   layoutId: "tabBackground"
                 }) : null]
@@ -412,6 +412,8 @@
         };
       var T = t(2280);
       const B = {
+          multiSourceContainer: "_560823421a0f2e0aa73add806a2a22c7ac93",
+          multiSourceImage: "_560823421a0f2e0af9239b3c355a43bcf8f2",
           animatePlaceholder: "_560823421a0f2e0ac9682c5edf886f64d9b2",
           "loader-keyframes": "_560823421a0f2e0ae61c3d7845ee89c31729"
         },
@@ -419,33 +421,32 @@
           let {
             imageUrl: a,
             className: t,
-            alt: n
+            alt: n,
+            sizes: i = [320, 480, 768, 1024, 1440, 1920, 2560]
           } = e;
-          const [i, s] = (0, c.useState)(!1);
+          const [s, o] = (0, c.useState)(!1);
           return (0, r.jsxs)("div", {
-            style: {
-              aspectRatio: 16 / 9
-            },
-            children: [!i && (0, r.jsx)("img", {
+            className: B.multiSourceContainer,
+            children: [!s && (0, r.jsx)("img", {
               className: [t, B.animatePlaceholder].join(" "),
-              sizes: "(max-width: 1080px) 100vw, 1080px",
-              src: "https://media-rockstargames-com.akamaized.net/mfe4/__common/img/0c1f159ae3b8604527fb.svg?im=Resize=1080",
+              sizes: "(max-width: 1024px) 100vw, 1024px",
+              src: "https://media-rockstargames-com.akamaized.net/mfe4/__common/img/0c1f159ae3b8604527fb.svg?im=Resize=1024",
               alt: "Loading..."
             }), (0, r.jsx)("img", {
-              className: [t].join(" "),
-              srcSet: (o = a, [320, 480, 768, 1024, 1440, 1920, 3840].map((e => `${o}?im=Resize=${e} ${e}w`)).join(", ")),
-              sizes: "(max-width: 1080px) 100vw, 1080px",
-              src: `${a}?im=Resize=1080`,
-              alt: n,
+              className: [t, B.multiSourceImage].join(" "),
+              srcSet: (l = a, i.map((e => `${l}?im=Resize=${e} ${e}w`)).join(", ")),
+              sizes: "(max-width: 1920px) 100vw, 1920px",
+              src: `${a}?im=Resize=1920`,
+              alt: n ?? "Multi-Source Image",
               onLoad: () => {
-                s(!0)
+                o(!0)
               }
             })]
           });
-          var o
+          var l
         };
-      var D = t(7817);
-      const W = {
+      var W = t(7817);
+      const z = {
           overlay: "_560823421a0f2e0ae8fd918316cf7a7a49f8",
           masonryDialog: "_560823421a0f2e0ad51ff2fbb0bfd8232a25",
           masonryDialogWrapper: "_560823421a0f2e0ab705965e95bbcad00df1",
@@ -461,7 +462,7 @@
           modalPrevious: "_560823421a0f2e0ac1444989821aab0eb71e",
           closeBtn: "_560823421a0f2e0acf136ff35e49c7744520"
         },
-        M = e => {
+        D = e => {
           let {
             navigatePrevious: a,
             navigateNext: t,
@@ -469,23 +470,23 @@
             nextDisabled: i
           } = e;
           return (0, r.jsxs)("div", {
-            className: W.modalControls,
+            className: z.modalControls,
             children: [(0, r.jsx)("button", {
               type: "button",
               "aria-label": "Previous",
-              className: W.modalPrevious,
+              className: z.modalPrevious,
               onClick: a,
               disabled: n
             }), (0, r.jsx)("button", {
               type: "button",
               "aria-label": "Next",
-              className: W.modalNext,
+              className: z.modalNext,
               onClick: t,
               disabled: i
             })]
           })
         },
-        z = e => {
+        M = e => {
           let {
             images: a,
             selectedImage: t,
@@ -555,10 +556,10 @@
             return window.addEventListener("keydown", e), () => {
               window.removeEventListener("keydown", e)
             }
-          }), [m, h, _, i]), (0, r.jsx)(D.M, {
-            children: (0, r.jsx)(S.E.div, {
+          }), [m, h, _, i]), (0, r.jsx)(W.M, {
+            children: (0, r.jsx)(L.E.div, {
               role: "presentation",
-              className: W.overlay,
+              className: z.overlay,
               onClick: p,
               "aria-label": "dismiss modal",
               initial: {
@@ -571,12 +572,12 @@
               children: (0, r.jsx)("dialog", {
                 role: "presentation",
                 id: "masonryDialog",
-                className: W.masonryDialog,
+                className: z.masonryDialog,
                 onClick: e => p(e),
                 children: (0, r.jsxs)("div", {
-                  className: W.masonryDialogWrapper,
-                  children: [(0, r.jsxs)(S.E.div, {
-                    className: W.controlsWrapper,
+                  className: z.masonryDialogWrapper,
+                  children: [(0, r.jsxs)(L.E.div, {
+                    className: z.controlsWrapper,
                     initial: {
                       opacity: 0
                     },
@@ -588,7 +589,7 @@
                       duration: .3,
                       delay: .5
                     },
-                    children: [(0, r.jsx)(M, {
+                    children: [(0, r.jsx)(D, {
                       navigatePrevious: h,
                       navigateNext: _,
                       prevDisabled: s,
@@ -597,7 +598,7 @@
                       type: "button",
                       id: "close",
                       "aria-label": "close",
-                      className: W.closeBtn,
+                      className: z.closeBtn,
                       onClick: () => {
                         f({
                           event: "modal_close",
@@ -611,8 +612,8 @@
                         }), i()
                       }
                     })]
-                  }), (0, r.jsx)(S.E.div, {
-                    className: W.modal,
+                  }), (0, r.jsx)(L.E.div, {
+                    className: z.modal,
                     initial: {
                       opacity: 0,
                       scale: .5
@@ -623,7 +624,7 @@
                     },
                     transition: b,
                     children: (0, r.jsx)(n.MultiSourceImage, {
-                      className: [W.modalMultisourceImage, W.galleryImage].join(" "),
+                      className: [z.modalMultisourceImage, z.galleryImage].join(" "),
                       style: {
                         width: "100%",
                         height: "100%",
@@ -644,14 +645,15 @@
             handleImageClick: n
           } = e;
           const i = (0, f.useImageParser)(a?.image);
-          return (0, r.jsx)(S.E.div, {
+          return (0, r.jsx)(L.E.div, {
             className: "_560823421a0f2e0ac39603540e530da252a4",
             onClick: () => n(a),
             variants: t,
             children: (0, r.jsx)(E, {
               imageUrl: i?.src?.desktop,
               className: "_560823421a0f2e0aa3c47b1efa37c0537d62",
-              alt: i?.alt
+              alt: i?.alt,
+              sizes: [320, 480, 768, 1024, 1440]
             })
           }, `grid-item-${a?.key}`)
         },
@@ -677,32 +679,35 @@
               opacity: 1
             }
           };
-          return (0, r.jsxs)(S.E.div, {
-            className: "_560823421a0f2e0affcdc4542245867d1a6b",
-            variants: {
-              hidden: {
-                opacity: 0
-              },
-              show: {
-                opacity: 1,
-                transition: {
-                  duration: .75
+          return (0, r.jsx)("div", {
+            className: "_560823421a0f2e0af53086e19b65dea94139",
+            children: (0, r.jsxs)(L.E.div, {
+              className: "_560823421a0f2e0affcdc4542245867d1a6b",
+              variants: {
+                hidden: {
+                  opacity: 0
+                },
+                show: {
+                  opacity: 1,
+                  transition: {
+                    duration: .75
+                  }
                 }
-              }
-            },
-            initial: "hidden",
-            animate: "show",
-            children: [a?.map((e => (0, r.jsx)(H, {
-              image: e,
-              item: d,
-              handleImageClick: l
-            }, e?.key))), n && (0, T.createPortal)((0, r.jsx)(z, {
-              images: o,
-              selectedImage: n,
-              onClose: () => {
-                i(null)
-              }
-            }), document.body)]
+              },
+              initial: "hidden",
+              animate: "show",
+              children: [a?.map((e => (0, r.jsx)(H, {
+                image: e,
+                item: d,
+                handleImageClick: l
+              }, e?.key))), n && (0, T.createPortal)((0, r.jsx)(M, {
+                images: o,
+                selectedImage: n,
+                onClose: () => {
+                  i(null)
+                }
+              }), document.body)]
+            })
           })
         },
         A = e => {
@@ -712,7 +717,7 @@
             handleImageClick: n
           } = e;
           const i = (0, f.useImageParser)(a?.image);
-          return (0, r.jsx)(S.E.div, {
+          return (0, r.jsx)(L.E.div, {
             className: "_560823421a0f2e0aee443f71ef6bbd40a62a",
             onClick: () => n(a),
             variants: t,
@@ -721,11 +726,12 @@
             children: (0, r.jsx)(E, {
               imageUrl: i?.src?.desktop,
               className: "_560823421a0f2e0ae922d8c04b65ddf8580f",
-              alt: i?.alt
+              alt: i?.alt,
+              sizes: [320, 480, 768, 1024, 1440]
             })
           }, `single-item-${a.key}`)
         },
-        R = e => {
+        q = e => {
           let {
             images: a = [],
             gallery: t = []
@@ -754,12 +760,13 @@
               }
             }
           };
-          return (0, r.jsxs)(r.Fragment, {
+          return (0, r.jsxs)("div", {
+            className: "_560823421a0f2e0aa02b1ecedb79904f1a1d",
             children: [a?.map((e => (0, r.jsx)(A, {
               image: e,
               item: d,
               handleImageClick: l
-            }, e?.key))), n && (0, T.createPortal)((0, r.jsx)(z, {
+            }, e?.key))), n && (0, T.createPortal)((0, r.jsx)(M, {
               images: o,
               selectedImage: n,
               onClose: () => {
@@ -768,8 +775,8 @@
             }), document.body)]
           })
         },
-        q = "_560823421a0f2e0aa70d86a80d7a9e36206c",
-        F = e => {
+        R = "_560823421a0f2e0aa70d86a80d7a9e36206c",
+        U = e => {
           let {
             sectionsPerPage: a,
             totalSections: t,
@@ -793,7 +800,7 @@
                 padding: 0
               },
               children: [(0, r.jsx)("div", {
-                className: q,
+                className: R,
                 children: (0, r.jsx)("div", {
                   role: "button",
                   onClick: i,
@@ -812,7 +819,7 @@
                   children: l
                 })]
               }), (0, r.jsx)("div", {
-                className: q,
+                className: R,
                 children: (0, r.jsx)("div", {
                   role: "button",
                   onClick: s,
@@ -825,24 +832,29 @@
             })
           })
         },
-        U = {
+        F = {
           tabControl: "_560823421a0f2e0ae217507ffc174e416254",
           galleryWrapper: "_560823421a0f2e0aea74189592c1f9ba14ee",
+          gridItemWrapper: "_560823421a0f2e0ae844fb1ec0776201c780",
+          noImagesContainer: "_560823421a0f2e0ac26286482b7cb0417425",
           noImages: "_560823421a0f2e0ac31d48e858de2c00f517",
           unsupportedSection: "_560823421a0f2e0abcd93e12b3f607e10ee3",
           heading: "_560823421a0f2e0add5080878c99b45c43a0"
         },
         Y = () => (0, r.jsx)("div", {
-          className: U.noImages,
+          className: F.noImagesContainer,
           children: (0, r.jsx)("div", {
-            className: U.heading,
-            children: (0, r.jsxs)("span", {
-              className: U.text,
-              children: [(0, r.jsx)("h3", {
-                children: "Unsupported Section Type"
-              }), (0, r.jsx)("p", {
-                children: "This section type is not supported."
-              })]
+            className: F.noImages,
+            children: (0, r.jsx)("div", {
+              className: F.heading,
+              children: (0, r.jsxs)("span", {
+                className: F.text,
+                children: [(0, r.jsx)("h3", {
+                  children: "Unsupported Section Type"
+                }), (0, r.jsx)("p", {
+                  children: "This section type is not supported."
+                })]
+              })
             })
           })
         }),
@@ -858,20 +870,20 @@
             d = l - i,
             m = a.slice(d, l);
           return 0 === a?.length ? (0, r.jsx)("div", {
-            className: U.gallerWrapper,
+            className: F.gallerWrapper,
             children: (0, r.jsx)("div", {
-              className: U.noImages,
+              className: F.noImages,
               children: (0, r.jsx)("div", {
-                className: U.heading,
+                className: F.heading,
                 children: (0, r.jsx)("span", {
-                  className: U.text,
+                  className: F.text,
                   children: "No images available"
                 })
               })
             })
-          }) : (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(S.E.div, {
-              className: U.galleryWrapper,
+          }) : (a?.map((e => n.push(e?.images))), (0, r.jsxs)(r.Fragment, {
+            children: [(0, r.jsx)(L.E.div, {
+              className: F.galleryWrapper,
               initial: {
                 opacity: 0
               },
@@ -884,17 +896,17 @@
               },
               children: m?.map(((e, a) => {
                 let t;
-                if (n.push(e?.images), "1x1" === e?.type) t = V;
+                if ("1x1" === e?.type) t = V;
                 else {
                   if ("2x2" !== e?.type) return (0, r.jsx)(Y, {}, `unsupported-section-${a}`);
-                  t = R
+                  t = q
                 }
                 return (0, r.jsx)(t, {
                   images: e?.images,
                   gallery: n
                 }, `grid-section-${e?.type}-${a})}`)
               }))
-            }), t?.paginationEnabled && (0, r.jsx)(F, {
+            }), t?.paginationEnabled && (0, r.jsx)(U, {
               sectionsPerPage: i,
               totalSections: a.length,
               currentPage: s,
@@ -906,7 +918,7 @@
               },
               paginationPosition: t?.paginationPosition || "center"
             })]
-          })
+          }))
         },
         O = {
           sectionWrapper: "_560823421a0f2e0aa193c3c368e981fe0391",
@@ -1010,7 +1022,7 @@
             entry: k
           } = (0, b.YD)({
             threshold: .6
-          }), [y, j] = (0, c.useState)(!1), [C, N] = (0, c.useState)(!1), w = o?.buttons, I = [], L = (0, f.useGetCdnSource)(p ?? null), P = (0, f.useGetCdnSource)(s?.backgroundImage?.mobile), $ = (0, f.useGetCdnSource)(s?.backgroundImage?.desktop ?? P), G = (0, f.useGetCdnSource)(s?.backgroundImageMask?.mobile), T = (0, f.useGetCdnSource)(s?.backgroundImageMask?.desktop ?? G), B = s?.backgroundImage?._memoq?.backgroundAttachment || "", E = s?.backgroundImage?._memoq?.backgroundClip || "", D = s?.backgroundImage?._memoq?.backgroundColor || "", W = s?.backgroundImage?._memoq?.backgroundOrigin || "", M = s?.backgroundImage?._memoq?.backgroundPosition || "", z = s?.backgroundImage?._memoq?.backgroundRepeat || "", H = s?.backgroundImage?._memoq?.backgroundSize || "", V = {
+          }), [y, j] = (0, c.useState)(!1), [C, N] = (0, c.useState)(!1), w = o?.buttons, I = [], S = (0, f.useGetCdnSource)(p ?? null), P = (0, f.useGetCdnSource)(s?.backgroundImage?.mobile), $ = (0, f.useGetCdnSource)(s?.backgroundImage?.desktop ?? P), G = (0, f.useGetCdnSource)(s?.backgroundImageMask?.mobile), T = (0, f.useGetCdnSource)(s?.backgroundImageMask?.desktop ?? G), B = s?.backgroundImage?._memoq?.backgroundAttachment || "", E = s?.backgroundImage?._memoq?.backgroundClip || "", W = s?.backgroundImage?._memoq?.backgroundColor || "", z = s?.backgroundImage?._memoq?.backgroundOrigin || "", D = s?.backgroundImage?._memoq?.backgroundPosition || "", M = s?.backgroundImage?._memoq?.backgroundRepeat || "", H = s?.backgroundImage?._memoq?.backgroundSize || "", V = {
             visible: {
               opacity: 1,
               y: 0,
@@ -1036,7 +1048,7 @@
               event_category: "page_section",
               event_label: `buy now - ${t}`.toLowerCase()
             }), j(!0))
-          }), [v]), (0, r.jsx)(S.E.div, {
+          }), [v]), (0, r.jsx)(L.E.div, {
             className: Q.fob,
             initial: "hidden",
             animate: "visible",
@@ -1067,18 +1079,18 @@
                 "--image-mask-mobile": `url(${G})`,
                 "--background-attachment": B,
                 "--background-clip": E,
-                "--background-color": D,
-                "--background-origin": W,
-                "--background-position": M,
-                "--background-repeat": z,
+                "--background-color": W,
+                "--background-origin": z,
+                "--background-position": D,
+                "--background-repeat": M,
                 "--background-size": H
               },
               children: (0, r.jsxs)("div", {
                 className: Q.inner,
                 children: [(0, r.jsx)("div", {
                   className: Q.imgWrapper,
-                  children: L && (0, r.jsx)("img", {
-                    src: L,
+                  children: S && (0, r.jsx)("img", {
+                    src: S,
                     alt: "Red Dead Redemption"
                   })
                 }), (0, r.jsxs)("div", {
@@ -1109,7 +1121,7 @@
                         })
                       }, `${t}-${a}`) : null
                     }))
-                  }), o?.buttons?.length ? (0, r.jsx)(S.E.div, {
+                  }), o?.buttons?.length ? (0, r.jsx)(L.E.div, {
                     className: [Q.expandingButtonWrapper, Q.fobExpandingButton].join(" "),
                     variants: V,
                     onClick: () => {
@@ -1120,7 +1132,7 @@
                       platformsAndLinks: o?.buttons,
                       trackingType: "select_platform",
                       trackingParent: "fob",
-                      children: (0, r.jsx)(S.E.div, {
+                      children: (0, r.jsx)(L.E.div, {
                         variants: V,
                         style: {
                           marginBottom: 0
@@ -1131,7 +1143,7 @@
                         })
                       })
                     })
-                  }) : (0, r.jsx)(S.E.div, {
+                  }) : (0, r.jsx)(L.E.div, {
                     variants: V,
                     children: (0, r.jsx)(n.ButtonGroup, {
                       buttons: I,
@@ -1193,7 +1205,7 @@
                 }), u && (0, r.jsx)(ee, {
                   id: "order",
                   ...u
-                }), m && (0, r.jsx)(L, {
+                }), m && (0, r.jsx)(S, {
                   id: "relatedLinks",
                   title: m?.title,
                   buttons: m?.buttons
