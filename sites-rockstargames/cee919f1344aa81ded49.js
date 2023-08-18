@@ -236,20 +236,24 @@
           let {
             t: a
           } = e;
-          const {
-            host: t
-          } = (0, h.useScConfig)(), {
-            track: i
-          } = (0, h.useGtmTrack)(), {
-            state: o,
-            toggleNavOpen: l
-          } = (0, c.useRockstarLocalState)(), r = () => {
-            l(!1)
-          };
+          const t = (0, r.useBase)(),
+            {
+              host: i
+            } = (0, h.useScConfig)(),
+            {
+              track: o
+            } = (0, h.useGtmTrack)(),
+            {
+              state: l,
+              toggleNavOpen: d
+            } = (0, c.useRockstarLocalState)(),
+            m = () => {
+              d(!1)
+            };
           return (0, n.jsxs)("footer", {
             role: "navigation",
             title: "Footer",
-            className: [N.siteFooter, o.loading ? N.loading : ""].join(" "),
+            className: [N.siteFooter, l.loading ? N.loading : ""].join(" "),
             children: [(0, n.jsx)("div", {
               className: N.languageSelector,
               children: (0, n.jsx)(s.LanguageSelector, {})
@@ -257,28 +261,28 @@
               className: N.links,
               children: [(0, n.jsx)(s.A, {
                 to: "/contact",
-                onClick: r,
+                onClick: m,
                 "data-gtm-category": "Footer",
                 "data-gtm-action": "Link Click",
                 "data-gtm-label": "Contact",
                 children: a("Contact")
               }), (0, n.jsx)(s.A, {
-                to: "/careers",
-                onClick: r,
+                to: `${document.location.origin}${t}careers`,
+                onClick: m,
                 "data-gtm-category": "Footer",
                 "data-gtm-action": "Link Click",
                 "data-gtm-label": "Careers",
                 children: a("Careers")
               }), (0, n.jsx)(s.A, {
-                to: `https://${t}.rockstargames.com/settings/email`,
+                to: `https://${i}.rockstargames.com/settings/email`,
                 onClick: () => {
-                  r(), i({
+                  m(), o({
                     event: "cta_subscribe_news",
                     event_category: "cta",
                     event_action: "subscribe_news",
                     event_label: "site footer",
                     text: a("Subscribe").toLowerCase(),
-                    link_url: `https://${t}.rockstargames.com/settings/email`
+                    link_url: `https://${i}.rockstargames.com/settings/email`
                   })
                 },
                 "data-gtm-category": "Footer",
@@ -290,14 +294,14 @@
               className: N.companyInfoLinks,
               children: [(0, n.jsx)(s.A, {
                 to: "/corpinfo",
-                onClick: r,
+                onClick: m,
                 "data-gtm-category": "Footer",
                 "data-gtm-action": "Link Click",
                 "data-gtm-label": "Corporate Info",
                 children: a("Corporate")
               }), (0, n.jsx)(s.A, {
                 to: "/privacy",
-                onClick: r,
+                onClick: m,
                 "data-gtm-category": "Footer",
                 "data-gtm-action": "Link Click",
                 "data-gtm-label": "Privacy",
@@ -310,21 +314,21 @@
                 children: a("Cookie Settings")
               }), (0, n.jsx)(s.A, {
                 to: "/cookies",
-                onClick: r,
+                onClick: m,
                 "data-gtm-category": "Footer",
                 "data-gtm-action": "Link Click",
                 "data-gtm-label": "Cookie policy",
                 children: a("Cookie Policy")
               }), (0, n.jsx)(s.A, {
                 to: "/legal",
-                onClick: r,
+                onClick: m,
                 "data-gtm-category": "Footer",
                 "data-gtm-action": "Link Click",
                 "data-gtm-label": "Legal",
                 children: a("Legal")
               }), (0, n.jsx)(s.A, {
                 to: "/ccpa",
-                onClick: r,
+                onClick: m,
                 "data-gtm-category": "Footer",
                 "data-gtm-action": "CCPA Link",
                 "data-gtm-label": "View CCPA Info",
@@ -334,7 +338,7 @@
               className: N.social,
               children: [(0, n.jsx)(s.A, {
                 to: "https://twitch.tv/rockstargames",
-                onClick: r,
+                onClick: m,
                 target: "_blank",
                 className: N.twitch,
                 "data-gtm-category": "Footer",
@@ -343,7 +347,7 @@
                 title: "Twitch"
               }), (0, n.jsx)(s.A, {
                 to: "https://instagram.com/rockstargames",
-                onClick: r,
+                onClick: m,
                 target: "_blank",
                 className: N.instagram,
                 "data-gtm-category": "Footer",
@@ -352,7 +356,7 @@
                 title: "Instagram"
               }), (0, n.jsx)(s.A, {
                 to: "https://twitter.com/rockstargames",
-                onClick: r,
+                onClick: m,
                 target: "_blank",
                 className: N.twitter,
                 "data-gtm-category": "Footer",
@@ -361,7 +365,7 @@
                 title: "Twitter"
               }), (0, n.jsx)(s.A, {
                 to: "https://www.youtube.com/rockstargames",
-                onClick: r,
+                onClick: m,
                 target: "_blank",
                 className: N.youtube,
                 "data-gtm-category": "Footer",
@@ -370,7 +374,7 @@
                 title: "YouTube"
               }), (0, n.jsx)(s.A, {
                 to: "https://www.facebook.com/rockstargames",
-                onClick: r,
+                onClick: m,
                 target: "_blank",
                 className: N.facebook,
                 "data-gtm-category": "Footer",

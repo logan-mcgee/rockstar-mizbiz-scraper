@@ -215,16 +215,16 @@ template {
   --padding-sides: var(--grid-gap-static-lg);
   --padding-top-bottom: var(--padding-sides);
   --padding-static: var(--padding-sides);
-  --font-size-1: 0.64rem;
-  --font-size-2: 0.8rem;
+  --font-size-1: 0.75rem;
+  --font-size-2: 0.75rem;
   --font-size-3: 1rem;
   --font-size-4: 1.25rem;
-  --font-size-5: 1.563rem;
-  --font-size-6: 1.953rem;
-  --font-size-7: 2.441rem;
-  --font-size-8: 3.052rem;
-  --font-size-9: 3.815rem;
-  --font-size-10: 4.768rem;
+  --font-size-5: 1.5rem;
+  --font-size-6: 2rem;
+  --font-size-7: 2.5rem;
+  --font-size-8: 3rem;
+  --font-size-9: 4rem;
+  --font-size-10: 5rem;
   --font-family-std: var(--rsg-font-family-std);
   --font-family-h: var(--rsg-font-family-h);
   --font-family-h-halloween: nightmar;
@@ -342,6 +342,13 @@ template {
   font-style: normal;
   font-weight: 700;
   src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/52311dcdb6857e4fc4ad.woff) format("woff")
+}
+
+@font-face {
+  font-family: NeueHelveticaPaneuropean;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/ec1e7e19642cc9cf2684.woff) format("woff")
 }
 
 @font-face {
@@ -713,6 +720,13 @@ template {
   font-style: normal;
   font-weight: 700;
   src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/c1c092eb55240be87a6b.woff) format("woff")
+}
+
+@font-face {
+  font-family: RDRUltraHeadline;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe4/__common/fonts/28a1db376124dcc8700a.woff) format("woff")
 }
 
 @media (min-width:0px) {
@@ -1255,10 +1269,18 @@ template {
   --badge-font: Pricedown, NeueHelveticaW05
 }
 
+:root :lang(pl_pl) [data-context=newswire-article] h1 {
+  --font-family-h: NeueHelveticaPaneuropean
+}
+
 :root :lang(ru_ru) [data-game^=gta] {
   --font-family-h: NeueHelveticaW05;
   --font-family-newswire-subtitle: NeueHelveticaW05;
   --badge-font: Pricedown, NeueHelveticaW05
+}
+
+:root :lang(ru_ru) [data-context=newswire-article] h1 {
+  --font-family-h: NeueHelveticaW05
 }
 
 :root :lang(zh_hans) [data-game^=gta] {
@@ -1280,6 +1302,10 @@ template {
   --font-family-newswire-subtitle: NotoSansJP;
   --font-family-std: NotoSansJP;
   --badge-font: Pricedown, NotoSansJP
+}
+
+:root :lang(ja_jp) [data-context=newswire-article] h1 {
+  --font-family-h: NotoSansJP
 }
 
 :root :lang(ko_kr) [data-game^=gta] {

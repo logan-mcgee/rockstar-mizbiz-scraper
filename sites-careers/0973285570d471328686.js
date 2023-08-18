@@ -1,35 +1,38 @@
 (self.webpackChunk_rockstargames_sites_careers = self.webpackChunk_rockstargames_sites_careers || []).push([
-  [105], {
-    8149: (e, a, n) => {
+  [517], {
+    7040: (e, a, n) => {
       "use strict";
       n.d(a, {
-        Z: () => ne
+        Z: () => ae
       });
-      var i = n(5171),
+      var i = n(7635),
         s = n(8976);
-      var t = n(9706);
+      var t = n(6160);
       const o = () => (0, t.jsx)("footer", {
-        className: "_08984b4d0fc3b846cc49415d2df0352f357b",
+        className: "_6b12df106adcc8d5cc49415d2df0352f357b",
         children: (0, t.jsxs)("div", {
-          className: "_08984b4d0fc3b846a2e740a3e030726b8f4c",
+          className: "_6b12df106adcc8d5a2e740a3e030726b8f4c",
           children: [(0, t.jsxs)("div", {
-            className: "_08984b4d0fc3b846cb79e97ad0b101a112c0",
+            className: "_6b12df106adcc8d5cb79e97ad0b101a112c0",
             children: [(0, t.jsx)("span", {
               children: "Follow Rockstar Games Careers:"
-            }), (0, t.jsx)(s.A, {
-              to: "https://twitter.com/RockstarCareers",
-              target: "_blank",
-              className: "_08984b4d0fc3b846b59ba2a782ff31e356d4"
-            }), (0, t.jsx)(s.A, {
-              to: "https://www.linkedin.com/company/rockstar-games",
-              target: "_blank",
-              className: "_08984b4d0fc3b846f8d5e01c2aff097b658c"
+            }), (0, t.jsxs)("div", {
+              className: "_6b12df106adcc8d5afffc3d9e95a491d1d01",
+              children: [(0, t.jsx)(s.A, {
+                to: "https://twitter.com/RockstarCareers",
+                target: "_blank",
+                className: "_6b12df106adcc8d5b59ba2a782ff31e356d4"
+              }), (0, t.jsx)(s.A, {
+                to: "https://www.linkedin.com/company/rockstar-games",
+                target: "_blank",
+                className: "_6b12df106adcc8d5f8d5e01c2aff097b658c"
+              })]
             })]
           }), (0, t.jsx)(s.A, {
             to: "https://www.rockstargames.com",
-            className: "_08984b4d0fc3b846a0a17b83b90d4f570f12"
+            className: "_6b12df106adcc8d5a0a17b83b90d4f570f12"
           }), (0, t.jsxs)("div", {
-            className: "_08984b4d0fc3b846fe31733e3d4248f2ef25",
+            className: "_6b12df106adcc8d5fe31733e3d4248f2ef25",
             children: [(0, t.jsx)(s.A, {
               to: "https://www.rockstargames.com/corpinfo",
               children: "Corporate"
@@ -46,64 +49,32 @@
           })]
         })
       });
-      var r = n(822),
-        c = n(9929);
-      const l = (0, c.withTranslations)((e => {
-        let {
-          t: a
-        } = e;
-        const [n, i] = (0, r.useState)(Boolean(sessionStorage.getItem("careersHeaderMsgOpen")));
-        return (0, r.useEffect)((() => {
-          sessionStorage.setItem("careersHeaderMsgOpen", String(Boolean(n)))
-        }), [n]), (0, t.jsxs)("header", {
-          className: "_08984b4d0fc3b846cb012e66821114145092",
-          children: [n && (0, t.jsxs)("div", {
-            className: "_08984b4d0fc3b846f42c0dcfb3945c2e9276",
-            children: [(0, t.jsx)("p", {
-              dangerouslySetInnerHTML: {
-                __html: a("careers.header_msg")
-              }
-            }), (0, t.jsx)("button", {
-              className: "_08984b4d0fc3b846f6f33a8c231b4c033e07",
-              "aria-label": "Close Banner Message Button",
-              onClick: () => i(!1),
-              type: "button"
-            })]
-          }), (0, t.jsxs)(s.A, {
-            className: "_08984b4d0fc3b846fc43abc4727024afd74e",
-            to: ".",
-            children: [(0, t.jsx)("div", {
-              className: "_08984b4d0fc3b846b2fdd72e271098917bf0"
-            }), (0, t.jsx)("h1", {
-              children: "Rockstar Games Careers"
-            })]
-          })]
-        })
-      }));
-      var d = n(2310),
-        m = n(4859),
-        u = n(6014);
-      const p = (0, c.withTranslations)((e => {
+      var r = n(4932),
+        c = n(9929),
+        d = n(3102),
+        l = n(4859),
+        m = n(7791);
+      const u = (0, c.withTranslations)((e => {
           let {
             openModal: a = !1,
             setOpenModal: n
           } = e;
-          const [s, o] = (0, r.useState)(null), c = (0, r.useRef)(), l = (0, r.useRef)(), d = (0, r.useRef)(), [p] = (0, m.useMutation)(u.ContactUs), [f, h] = (0, r.useState)("");
+          const [s, o] = (0, r.useState)(null), c = (0, r.useRef)(), d = (0, r.useRef)(), u = (0, r.useRef)(), [p] = (0, l.useMutation)(m.ContactUs), [f, h] = (0, r.useState)("");
           return a ? (0, t.jsxs)(t.Fragment, {
             children: [(0, t.jsx)("div", {
-              className: "_08984b4d0fc3b846bd9fd462473d65e8877e",
+              className: "_6b12df106adcc8d5bd9fd462473d65e8877e",
               onClick: () => n(!1)
             }), (0, t.jsxs)("div", {
-              className: "_08984b4d0fc3b846f35f70180df47063a0b5",
+              className: "_6b12df106adcc8d5f35f70180df47063a0b5",
               children: [(0, t.jsx)("button", {
-                className: "_08984b4d0fc3b846e08d6e6928d1b9b75c6b",
+                className: "_6b12df106adcc8d5e08d6e6928d1b9b75c6b",
                 "aria-label": "Close Contact Us Modal Button",
                 onClick: () => n(!1),
                 type: "button"
               }), (0, t.jsxs)("div", {
-                className: "_08984b4d0fc3b846ee528068e83ff0d87716",
+                className: "_6b12df106adcc8d5ee528068e83ff0d87716",
                 children: [(0, t.jsx)("h1", {
-                  className: "_08984b4d0fc3b846bdc30d6b402baeead010",
+                  className: "_6b12df106adcc8d5bdc30d6b402baeead010",
                   children: "Contact Us"
                 }), f || (0, t.jsxs)("form", {
                   onSubmit: e => (async e => {
@@ -112,8 +83,8 @@
                       recaptcha_token: s,
                       data: {
                         name: c.current.value,
-                        email: l.current.value,
-                        message: d.current.value
+                        email: d.current.value,
+                        message: u.current.value
                       }
                     };
                     try {
@@ -124,7 +95,7 @@
                       h("Something went wrong. Please try again later.")
                     }
                   })(e),
-                  className: "_08984b4d0fc3b846ab500f1c3a138fcd138f",
+                  className: "_6b12df106adcc8d5ab500f1c3a138fcd138f",
                   children: [f, (0, t.jsx)("input", {
                     type: "text",
                     id: "name",
@@ -137,13 +108,13 @@
                     id: "email",
                     name: "email",
                     placeholder: "Email Address",
-                    ref: l,
+                    ref: d,
                     required: !0
                   }), (0, t.jsx)("textarea", {
                     id: "message",
                     name: "message",
                     placeholder: "Talk to Us",
-                    ref: d,
+                    ref: u,
                     required: !0
                   }), (0, t.jsx)(i.mP, {
                     onVerify: e => {
@@ -158,51 +129,90 @@
             })]
           }) : null
         })),
-        f = "_08984b4d0fc3b846feee4a61825bca411ac5",
-        h = (0, c.withTranslations)((e => {
+        p = {
+          siteNav: "_6b12df106adcc8d5e12575564fe9725b362a",
+          activeNavLink: "_6b12df106adcc8d5feee4a61825bca411ac5"
+        },
+        f = (0, c.withTranslations)((e => {
           let {
             t: a
           } = e;
           const {
             pathname: n
-          } = (0, d.useLocation)(), i = (0, r.useRef)(), o = (0, d.useNavigate)(), [c, l] = (0, r.useState)(!1), [m] = (0, d.useSearchParams)(), u = m.get("q");
-          return (0, t.jsxs)(t.Fragment, {
+          } = (0, d.useLocation)(), i = (0, r.useRef)(), o = (0, d.useNavigate)(), [c, l] = (0, r.useState)(!1), [m] = (0, d.useSearchParams)(), f = m.get("q");
+          return (0, t.jsxs)("div", {
+            className: p.siteNav,
             children: [(0, t.jsxs)("nav", {
-              className: "_08984b4d0fc3b846e12575564fe9725b362a",
+              className: p.links,
               children: [(0, t.jsx)(s.A, {
                 to: ".",
-                className: "/" === n ? f : "",
+                className: "/" === n ? p.activeNavLink : "",
                 children: a("Home")
               }), (0, t.jsx)(s.A, {
                 to: "./openings",
-                className: "/openings" === n ? f : "",
+                className: "/openings" === n ? p.activeNavLink : "",
                 children: a("Openings")
               }), (0, t.jsx)(s.A, {
                 to: "#",
                 onClick: () => l(!c),
                 children: a("Contact Us")
-              }), (0, t.jsx)("form", {
-                onSubmit: e => (e => {
-                  e.preventDefault();
-                  const a = i.current.value ?? null,
-                    n = "./openings" + (a ? `?q=${a}` : "");
-                  document.activeElement.blur(), o(n)
-                })(e),
-                children: (0, t.jsx)("input", {
-                  placeholder: "Search...",
-                  ref: i,
-                  defaultValue: u
-                })
               })]
-            }), (0, t.jsx)(p, {
+            }), (0, t.jsx)("form", {
+              onSubmit: e => (e => {
+                e.preventDefault();
+                const a = i.current.value ?? null,
+                  n = "./openings" + (a ? `?q=${a}` : "");
+                document.activeElement.blur(), o(n)
+              })(e),
+              children: (0, t.jsx)("input", {
+                placeholder: "Search",
+                ref: i,
+                defaultValue: f
+              })
+            }), (0, t.jsx)(u, {
               openModal: c,
               setOpenModal: l
             })]
           })
         })),
-        b = "_08984b4d0fc3b846a082a5bca00c4d9981dc",
+        h = (0, c.withTranslations)((e => {
+          let {
+            t: a
+          } = e;
+          const [n, i] = (0, r.useState)(Boolean(sessionStorage.getItem("careersHeaderMsgOpen")));
+          return (0, r.useEffect)((() => {
+            sessionStorage.setItem("careersHeaderMsgOpen", String(Boolean(n)))
+          }), [n]), (0, t.jsxs)("header", {
+            className: "_6b12df106adcc8d5cb012e66821114145092",
+            children: [n && (0, t.jsxs)("div", {
+              className: "_6b12df106adcc8d5f42c0dcfb3945c2e9276",
+              children: [(0, t.jsx)("p", {
+                dangerouslySetInnerHTML: {
+                  __html: a("careers.header_msg")
+                }
+              }), (0, t.jsx)("button", {
+                className: "_6b12df106adcc8d5f6f33a8c231b4c033e07",
+                "aria-label": "Close Banner Message Button",
+                onClick: () => i(!1),
+                type: "button"
+              })]
+            }), (0, t.jsxs)("div", {
+              className: "_6b12df106adcc8d5f7636ca3aa0b5f9b82a4",
+              children: [(0, t.jsxs)(s.A, {
+                className: "_6b12df106adcc8d5fc43abc4727024afd74e",
+                to: ".",
+                children: [(0, t.jsx)("div", {
+                  className: "_6b12df106adcc8d5b2fdd72e271098917bf0"
+                }), (0, t.jsx)("h1", {
+                  children: "Rockstar Games Careers"
+                })]
+              }), (0, t.jsx)(f, {})]
+            })]
+          })
+        })),
+        b = "_6b12df106adcc8d5a082a5bca00c4d9981dc",
         v = () => (0, t.jsxs)("div", {
-          className: "_08984b4d0fc3b846a2c4281c8f43d5c2c491",
+          className: "_6b12df106adcc8d5a2c4281c8f43d5c2c491",
           children: [(0, t.jsxs)("h2", {
             children: ["Accessibility Policy", (0, t.jsx)("br", {}), " ", "& Multi-Year Accessibility Plan for Rockstar Games Toronto ULC"]
           }), (0, t.jsxs)("p", {
@@ -276,7 +286,7 @@
             children: [(0, t.jsx)("span", {
               className: b,
               children: "Implementation Timeframe:"
-            }), (0, t.jsx)("br", {}), " ", "Effective", (0, t.jsx)("span", {
+            }), (0, t.jsx)("br", {}), " ", "Effective", " ", (0, t.jsx)("span", {
               className: b,
               children: "January 1, 2012"
             }), " ", "and ongoing."]
@@ -426,7 +436,7 @@
             children: [(0, t.jsx)("span", {
               className: b,
               children: "Implementation Timeframe:"
-            }), (0, t.jsx)("br", {}), " ", "By", (0, t.jsx)("span", {
+            }), (0, t.jsx)("br", {}), " ", "By", " ", (0, t.jsx)("span", {
               className: b,
               children: "January 1, 2014"
             }), " ", "and ongoing."]
@@ -614,23 +624,24 @@
             children: "Please note accessible formats of this Accessibility Policy and Multi-Year Accessibility Plan are available free upon request at the contacts listed above."
           })]
         });
-      var k = n(9657);
+      var k = n(8469);
       const g = {
-          home: "_08984b4d0fc3b846c4b20405ad56a3b4dd00",
-          offices: "_08984b4d0fc3b846df8abe33c6a249e3cb46",
-          blurb: "_08984b4d0fc3b846f60af5cbf6af7455edea",
-          viewOpeningsButtonContainer: "_08984b4d0fc3b846d3fede0908a77a291bfc",
-          viewOpeningsButton: "_08984b4d0fc3b846d79b2040f206df1a46a0"
+          home: "_6b12df106adcc8d5c4b20405ad56a3b4dd00",
+          offices: "_6b12df106adcc8d5df8abe33c6a249e3cb46",
+          blurb: "_6b12df106adcc8d5f60af5cbf6af7455edea",
+          viewOpeningsButtonContainer: "_6b12df106adcc8d5d3fede0908a77a291bfc",
+          viewOpeningsButton: "_6b12df106adcc8d5d79b2040f206df1a46a0",
+          secondary: "_6b12df106adcc8d5b86422f5b376df177080"
         },
         j = () => {
           const {
             data: e
-          } = (0, m.useQuery)(k.HomeData);
+          } = (0, l.useQuery)(k.HomeData);
           return e ? (0, t.jsxs)("div", {
             className: g.home,
-            children: [(0, t.jsx)("div", {
+            children: [(0, t.jsxs)("div", {
               className: g.offices,
-              children: e.jobsOffices.map((e => (0, t.jsxs)(s.A, {
+              children: [e.jobsOffices.map((e => (0, t.jsxs)(s.A, {
                 to: `./offices/${e.seo_url}`,
                 className: g.office,
                 children: [(0, t.jsx)("dt", {
@@ -638,7 +649,15 @@
                 }), (0, t.jsx)("dd", {
                   children: e.location
                 })]
-              }, e.name)))
+              }, e.name))), (0, t.jsx)(s.A, {
+                className: g.viewOpeningsButtonContainer,
+                to: "./openings",
+                children: (0, t.jsx)("button", {
+                  className: g.viewOpeningsButton,
+                  type: "button",
+                  children: "View All Openings"
+                })
+              })]
             }), (0, t.jsxs)("div", {
               className: g.blurb,
               children: [(0, t.jsx)("p", {
@@ -657,17 +676,10 @@
                   children: "@rockstarcareers"
                 }), " ", "on Twitter."]
               })]
-            }), (0, t.jsx)(s.A, {
-              className: g.viewOpeningsButtonContainer,
-              to: "./openings",
-              children: (0, t.jsx)("button", {
-                className: g.viewOpeningsButton,
-                children: "View All Openings"
-              })
             })]
           }) : null
         },
-        x = e => {
+        y = e => {
           let {
             headType: a,
             positions: n,
@@ -677,14 +689,14 @@
             officesLinkRelative: c = "../"
           } = e;
           return (0, t.jsxs)("div", {
-            className: "_08984b4d0fc3b846d6a6d2483c7a19b86881",
+            className: "_6b12df106adcc8d5d6a6d2483c7a19b86881",
             children: [(0, t.jsx)("h4", {
               children: (0, t.jsx)(s.A, {
                 to: "department" === a ? `${o}?department=${encodeURIComponent(i)}` : `${c}offices/${n[0].company.seo_url}`,
                 children: i
               })
             }), (0, t.jsx)("div", {
-              className: "_08984b4d0fc3b846f0a715c25c7b91159874",
+              className: "_6b12df106adcc8d5f0a715c25c7b91159874",
               children: n.map((e => {
                 let {
                   id: a,
@@ -698,9 +710,9 @@
             })]
           })
         };
-      var y = n(948),
-        _ = n.n(y);
-      const w = e => {
+      var x = n(3653),
+        _ = n.n(x);
+      const N = e => {
           let {
             positions: a,
             key: n
@@ -710,17 +722,17 @@
             positions: e
           }))).value()
         },
-        N = e => {
+        w = e => {
           let {
             positions: a,
             key: n
           } = e;
           return _().orderBy(a, [n], ["asc"])
         };
-      var S = n(9536);
+      var S = n(9679);
       const C = {
-        office: "_08984b4d0fc3b846fbfa556311cc0fcc0906",
-        positionGroups: "_08984b4d0fc3b846a857fc1889ba5b594104"
+        positionGroups: "_6b12df106adcc8d5a857fc1889ba5b594104",
+        mapImg: "_6b12df106adcc8d5fd18c0f690522be4e2fe"
       };
       (0, c.importAll)(n(5683));
       const T = () => {
@@ -728,18 +740,18 @@
           office_seo: e
         } = (0, d.useParams)(), {
           data: a
-        } = (0, m.useQuery)(S.OfficeData, {
+        } = (0, l.useQuery)(S.OfficeData, {
           variables: {
             companySlug: e
           }
         }), [i, s] = (0, r.useState)(null);
         return (0, r.useEffect)((() => {
           if (!a) return;
-          const e = w({
+          const e = N({
               key: "department",
               positions: a.jobsPositionList
             }),
-            n = N({
+            n = w({
               key: "department",
               positions: e
             });
@@ -759,7 +771,7 @@
                 department: a,
                 positions: n
               } = e;
-              return (0, t.jsx)(x, {
+              return (0, t.jsx)(y, {
                 positions: n,
                 title: a,
                 headType: "department",
@@ -770,38 +782,27 @@
           })]
         }) : null
       };
-      (0, c.importAll)(n(8415));
-      const R = (0, s.withSimpleErrorBoundary)((e => {
-        let {
-          officeSeo: a
-        } = e;
-        return (0, t.jsx)("div", {
-          style: {
-            background: `url(${n(1597)(`./${a}.svg`)}) no-repeat center/contain`,
-            "--aspect-ratio": 60.91 / 56.07
-          }
-        })
-      }));
-      var A = n(8893);
-      const O = {
-          openings: "_08984b4d0fc3b846cb2070ba798f70a24146",
-          sort: "_08984b4d0fc3b846ea48bb4e8e134b65a96b",
-          sortButtons: "_08984b4d0fc3b846e51b8f0742c0138ffeab",
-          activeSort: "_08984b4d0fc3b846eb8cffa4fdd3ba4f582a",
-          heirarchy: "_08984b4d0fc3b846af07421b41d05eb636c2",
-          primaryGrid: "_08984b4d0fc3b846ea49c15802a4484e8380",
-          primaryHeaderH: "_08984b4d0fc3b846b7866b1d6c0afbba8ab8",
-          primaryIsCompany: "_08984b4d0fc3b846f18c31e32012b32cd0f9",
-          searchHeader: "_08984b4d0fc3b846a9283744e85061b646c0",
-          viewOpeningsButton: "_08984b4d0fc3b846f75b666913554bd8839f"
+      var R = n(9625);
+      const A = {
+          openings: "_6b12df106adcc8d5cb2070ba798f70a24146",
+          sort: "_6b12df106adcc8d5ea48bb4e8e134b65a96b",
+          sortButtons: "_6b12df106adcc8d5e51b8f0742c0138ffeab",
+          secondary: "_6b12df106adcc8d5d7ed96b79d9905817db0",
+          activeSort: "_6b12df106adcc8d5eb8cffa4fdd3ba4f582a",
+          heirarchy: "_6b12df106adcc8d5af07421b41d05eb636c2",
+          primaryGrid: "_6b12df106adcc8d5ea49c15802a4484e8380",
+          primaryHeaderH: "_6b12df106adcc8d5b7866b1d6c0afbba8ab8",
+          primaryIsCompany: "_6b12df106adcc8d5f18c31e32012b32cd0f9",
+          searchHeader: "_6b12df106adcc8d5a9283744e85061b646c0",
+          viewOpeningsButton: "_6b12df106adcc8d5f75b666913554bd8839f"
         },
         D = e => {
           let {
             positions: a,
             key: n
           } = e;
-          return N({
-            positions: w({
+          return w({
+            positions: N({
               positions: a,
               key: n
             }),
@@ -809,19 +810,19 @@
           })
         },
         F = () => {
-          const [e, a] = (0, r.useState)("companyName"), [n, i] = (0, r.useState)("department"), [o, c] = (0, r.useState)(null), [l, u] = (0, r.useState)(null), [p, f] = (0, r.useState)(null), [h, b] = (0, r.useState)(null), [v, k] = (0, r.useState)(!0), {
+          const [e, a] = (0, r.useState)("companyName"), [n, i] = (0, r.useState)("department"), [o, c] = (0, r.useState)(null), [m, u] = (0, r.useState)(null), [p, f] = (0, r.useState)(null), [h, b] = (0, r.useState)(null), [v, k] = (0, r.useState)(!0), {
             refetch: g
-          } = (0, m.useQuery)(A.OpeningsData, {
+          } = (0, l.useQuery)(R.OpeningsData, {
             skip: !0
-          }), [j] = (0, d.useSearchParams)(), y = j.get("department"), _ = j.get("q"), w = e => {
+          }), [j] = (0, d.useSearchParams)(), x = j.get("department"), _ = j.get("q"), N = e => {
             a(e), i("companyName" === e ? "department" : "companyName")
           };
           return (0, r.useEffect)((() => {
             f({
-              department: y ?? null,
+              department: x ?? null,
               query: _ ?? null
             })
-          }), [y, _]), (0, r.useEffect)((() => {
+          }), [x, _]), (0, r.useEffect)((() => {
             p && (u(null), b(null), k(!0), (async () => {
               try {
                 const {
@@ -833,14 +834,14 @@
               }
             })(), k(!1))
           }), [p]), (0, r.useEffect)((() => {
-            l && c((e => {
+            m && c((e => {
               let {
                 positions: a,
                 primary: n,
                 secondary: i
               } = e;
               return (0, t.jsx)("div", {
-                className: O.heirarchy,
+                className: A.heirarchy,
                 children: D({
                   key: n,
                   positions: a
@@ -849,14 +850,12 @@
                     [n]: a, positions: o
                   } = e;
                   return (0, t.jsxs)("div", {
-                    className: O.primaryGrid,
+                    className: A.primaryGrid,
                     children: [(0, t.jsx)("h3", {
-                      className: [O.primaryHeaderH, "companyName" === n ? O.primaryIsCompany : ""].join(" "),
-                      children: (0, t.jsxs)(s.A, {
+                      className: [A.primaryHeaderH, "companyName" === n ? A.primaryIsCompany : ""].join(" "),
+                      children: (0, t.jsx)(s.A, {
                         to: "companyName" === n ? `../offices/${o[0].company.seo_url}` : `?department=${o[0].department}`,
-                        children: ["companyName" === n ? (0, t.jsx)(R, {
-                          officeSeo: o[0].company.seo_url
-                        }) : "", a]
+                        children: a
                       })
                     }), D({
                       key: i,
@@ -865,7 +864,7 @@
                       let {
                         [i]: n, positions: s
                       } = e;
-                      return (0, t.jsx)(x, {
+                      return (0, t.jsx)(y, {
                         positions: s,
                         title: n,
                         headType: i,
@@ -878,116 +877,113 @@
                 }))
               })
             })({
-              positions: l,
+              positions: m,
               primary: e,
               secondary: n
             }))
-          }), [l, e, n]), (0, t.jsxs)("div", {
-            className: O.openings,
-            children: [h || "", !h && v ? "Searching..." : "", h || v || !l || !y && !_ ? "" : (0, t.jsxs)("p", {
-              className: O.searchHeader,
-              children: [`${l.length} positions found ${_?` matching "${_}"`:""}${y?` in the ${y} department`:""}.`, (0, t.jsx)(s.A, {
+          }), [m, e, n]), (0, t.jsxs)("div", {
+            className: A.openings,
+            children: [h || "", !h && v ? "Searching..." : "", h || v || !m || !x && !_ ? "" : (0, t.jsxs)("p", {
+              className: A.searchHeader,
+              children: [`${m.length} positions found ${_?` matching "${_}"`:""}${x?` in the ${x} department`:""}.`, (0, t.jsx)(s.A, {
                 to: "./",
                 children: (0, t.jsx)("button", {
-                  className: O.viewOpeningsButton,
+                  className: A.viewOpeningsButton,
+                  type: "button",
                   children: "View All Openings"
                 })
               })]
-            }), l?.length ? (0, t.jsxs)("div", {
-              className: O.sort,
+            }), m?.length ? (0, t.jsxs)("div", {
+              className: A.sort,
               children: [(0, t.jsx)("span", {
-                children: "Sort positions:"
+                children: "Sort by:"
               }), (0, t.jsxs)("div", {
-                className: O.sortButtons,
+                className: A.sortButtons,
                 children: [(0, t.jsx)("button", {
-                  className: "companyName" === e ? O.activeSort : "",
-                  onClick: () => w("companyName"),
+                  className: "companyName" === e ? A.activeSort : "",
+                  onClick: () => N("companyName"),
                   type: "button",
-                  children: "By Location"
+                  children: "Location"
                 }), (0, t.jsx)("button", {
-                  className: "department" === e ? O.activeSort : "",
-                  onClick: () => w("department"),
+                  className: "department" === e ? A.activeSort : "",
+                  onClick: () => N("department"),
                   type: "button",
-                  children: "By Department"
+                  children: "Department"
                 })]
               })]
-            }) : "", l?.length && o ? o : ""]
+            }) : "", m?.length && o ? o : ""]
           })
         };
-      var E = n(5636);
-      const L = "_08984b4d0fc3b846ce5d984f9667741c4c32",
-        P = "_08984b4d0fc3b846fea46db119d2e97b0b46",
-        q = e => {
+      var E = n(6922);
+      const O = "_6b12df106adcc8d5ce5d984f9667741c4c32",
+        L = "_6b12df106adcc8d5fea46db119d2e97b0b46",
+        P = e => {
           let {
             position: a
           } = e;
-          return (0, t.jsxs)("footer", {
-            className: "_08984b4d0fc3b846cfd7f46eb3ca403b2b3b",
+          return (0, t.jsxs)(t.Fragment, {
             children: [(0, t.jsx)(s.A, {
               to: a.apply_href,
               target: "_blank",
-              className: "_08984b4d0fc3b846e17065c171512c1dafd3",
+              className: "_6b12df106adcc8d5e17065c171512c1dafd3",
               children: "Apply now"
-            }), (0, t.jsx)(s.A, {
-              to: `../offices/${a.company.seo_url}`,
-              className: P,
-              children: `See all ${a.company.name} positions`
-            }), (0, t.jsx)(s.A, {
-              to: `../openings?department=${encodeURIComponent(a.department)}`,
-              className: P,
-              children: `See all ${a.department} positions`
-            }), (0, t.jsx)(s.A, {
-              to: "https://www.linkedin.com/company/rockstar-games",
-              target: "_blank",
-              className: "_08984b4d0fc3b846b64e6b84a06e62e54a4f",
-              children: "FOLLOW ROCKSTAR GAMES CAREERS"
+            }), (0, t.jsxs)("footer", {
+              className: "_6b12df106adcc8d5cfd7f46eb3ca403b2b3b",
+              children: [(0, t.jsxs)(s.A, {
+                to: `../offices/${a.company.seo_url}`,
+                className: L,
+                children: ["See all", (0, t.jsx)("b", {
+                  children: a.company.name
+                }), "positions"]
+              }), (0, t.jsxs)(s.A, {
+                to: `../openings?department=${encodeURIComponent(a.department)}`,
+                className: L,
+                children: ["See all", (0, t.jsx)("b", {
+                  children: a.department
+                }), "positions"]
+              })]
             })]
           })
         },
-        I = (0, s.withSimpleErrorBoundary)((() => {
+        q = (0, s.withSimpleErrorBoundary)((() => {
           const {
             position_id: e
           } = (0, d.useParams)(), {
             data: a
-          } = (0, m.useQuery)(E.PositionData, {
+          } = (0, l.useQuery)(E.PositionData, {
             variables: {
               positionId: Number(e)
             }
           });
           if (!a) return (0, t.jsx)("div", {
-            className: L,
+            className: O,
             children: "Loading..."
           });
           const {
             jobsPosition: n
           } = a;
           return (0, t.jsxs)("div", {
-            className: L,
+            className: O,
             children: [(0, t.jsxs)("header", {
-              className: "_08984b4d0fc3b846fb7497900f485b7f2086",
-              children: [(0, t.jsx)(R, {
-                officeSeo: n.company.seo_url
-              }), (0, t.jsxs)("div", {
-                className: "_08984b4d0fc3b846d40469300f9aab709d5e",
-                children: [(0, t.jsxs)("div", {
-                  className: "_08984b4d0fc3b846ae80613c743d77803e5c",
-                  children: [(0, t.jsx)(s.A, {
-                    to: `../offices/${n.company.seo_url}`,
-                    children: n.company.name
-                  }), " . ", (0, t.jsx)(s.A, {
-                    to: `../openings?department=${encodeURIComponent(n.department)}`,
-                    children: n.department
-                  })]
-                }), (0, t.jsx)("h2", {
-                  children: n.title
+              className: "_6b12df106adcc8d5fb7497900f485b7f2086",
+              children: [(0, t.jsxs)("div", {
+                className: "_6b12df106adcc8d5ae80613c743d77803e5c",
+                children: [(0, t.jsx)(s.A, {
+                  to: `../offices/${n.company.seo_url}`,
+                  children: n.company.name
+                }), (0, t.jsx)(s.A, {
+                  to: `../openings?department=${encodeURIComponent(n.department)}`,
+                  children: n.department
                 })]
+              }), (0, t.jsx)("h1", {
+                children: n.title
               })]
             }), (0, t.jsx)("div", {
-              className: "_08984b4d0fc3b846a8e5419aed657e6b6256",
+              className: "_6b12df106adcc8d5a8e5419aed657e6b6256",
               dangerouslySetInnerHTML: {
                 __html: n.description
               }
-            }), (0, t.jsx)(q, {
+            }), (0, t.jsx)(P, {
               position: n
             })]
           })
@@ -1025,10 +1021,10 @@
             fill: "white"
           })]
         }),
-        $ = "_08984b4d0fc3b846fee3148629e4a9bd084a",
-        H = "_08984b4d0fc3b846b09c4ae80bd36eb2c441",
-        G = "_08984b4d0fc3b846a41fe732485a09be51ab",
-        M = e => {
+        I = "_6b12df106adcc8d5fee3148629e4a9bd084a",
+        $ = "_6b12df106adcc8d5b09c4ae80bd36eb2c441",
+        H = "_6b12df106adcc8d5a41fe732485a09be51ab",
+        G = e => {
           let {
             label: a,
             clarification: n,
@@ -1041,40 +1037,40 @@
           return r ? (0, t.jsxs)(t.Fragment, {
             children: [(0, t.jsxs)("label", {
               htmlFor: a,
-              className: $,
+              className: I,
               children: [a, (0, t.jsx)("span", {
-                className: "_08984b4d0fc3b846a15491b3c8142330c17a",
+                className: "_6b12df106adcc8d5a15491b3c8142330c17a",
                 children: "*"
               })]
             }), n && (0, t.jsx)("span", {
-              className: H,
+              className: $,
               children: n
             }), (0, t.jsx)("input", {
               type: o,
               name: i,
               placeholder: s,
-              className: G,
+              className: H,
               required: !0,
               onChange: c
             })]
           }) : (0, t.jsxs)(t.Fragment, {
             children: [(0, t.jsx)("label", {
               htmlFor: a,
-              className: $,
+              className: I,
               children: a
             }), n && (0, t.jsx)("span", {
-              className: H,
+              className: $,
               children: n
             }), (0, t.jsx)("input", {
               type: o,
               name: a,
               placeholder: s,
-              className: G,
+              className: H,
               onChange: c
             })]
           })
         };
-      var z = n(8485);
+      var M = n(2177);
       const B = e => {
           let {
             label: a,
@@ -1083,24 +1079,24 @@
             data: s,
             placeholder: o,
             required: c = !0,
-            update: l,
-            isMulti: d
+            update: d,
+            isMulti: l
           } = e;
           const m = (0, r.useRef)(),
             [u, p] = (0, r.useState)("");
           return (0, t.jsxs)(t.Fragment, {
             children: [(0, t.jsxs)("label", {
               htmlFor: i,
-              className: "_08984b4d0fc3b846f5c85d286962da6fdd15",
+              className: "_6b12df106adcc8d5f5c85d286962da6fdd15",
               children: [a, c && (0, t.jsx)("span", {
-                className: "_08984b4d0fc3b846da9cd3edc5a2fddefa4f",
+                className: "_6b12df106adcc8d5da9cd3edc5a2fddefa4f",
                 children: "*"
               })]
             }), n && (0, t.jsx)("span", {
-              className: "_08984b4d0fc3b846bd054d54bd430c1bf9e6",
+              className: "_6b12df106adcc8d5bd054d54bd430c1bf9e6",
               children: n
-            }), (0, t.jsx)(z.ZP, {
-              className: "_08984b4d0fc3b846bfecebe5f04004c49b2b",
+            }), (0, t.jsx)(M.ZP, {
+              className: "_6b12df106adcc8d5bfecebe5f04004c49b2b",
               isClearable: !0,
               isSearchable: !0,
               name: i,
@@ -1112,9 +1108,9 @@
               }],
               ref: m,
               onChange: e => (e => {
-                p(e || ""), l(e)
+                p(e || ""), d(e)
               })(e),
-              isMulti: d || !1
+              isMulti: l || !1
             }), c && (0, t.jsx)("input", {
               tabIndex: -1,
               autoComplete: "off",
@@ -1153,13 +1149,13 @@
               selectedSkills: e
             })
           }), [i]);
-          const l = a?.custom_field_options?.map(((e, n) => {
+          const d = a?.custom_field_options?.map(((e, n) => {
             let {
               label: r,
               value: c
             } = e;
             return (0, t.jsxs)("div", {
-              className: "_08984b4d0fc3b846f419982fdd5039f80de1",
+              className: "_6b12df106adcc8d5f419982fdd5039f80de1",
               children: [(0, t.jsx)("input", {
                 type: "checkbox",
                 name: a.name,
@@ -1176,7 +1172,7 @@
                 })(n),
                 disabled: !i[n] && o
               }), (0, t.jsx)("label", {
-                className: "_08984b4d0fc3b846b2950d17eaed43a8b7f2",
+                className: "_6b12df106adcc8d5b2950d17eaed43a8b7f2",
                 htmlFor: r.toLowerCase(),
                 children: r
               })]
@@ -1184,19 +1180,19 @@
           }));
           return (0, t.jsxs)(t.Fragment, {
             children: [(0, t.jsxs)("legend", {
-              className: "_08984b4d0fc3b846a334a0b7778699e0fc53",
+              className: "_6b12df106adcc8d5a334a0b7778699e0fc53",
               children: ["Which option(s) best represents your strongest skillset? Choose up to 3", (0, t.jsx)("span", {
-                className: "_08984b4d0fc3b846dcfafd97d95614518ef8",
+                className: "_6b12df106adcc8d5dcfafd97d95614518ef8",
                 children: "*"
               })]
             }), (0, t.jsx)("div", {
-              className: "_08984b4d0fc3b846d29e4424fa1bbceb2b53",
-              children: l
+              className: "_6b12df106adcc8d5d29e4424fa1bbceb2b53",
+              children: d
             })]
           })
         },
-        J = "_08984b4d0fc3b846a828213ca8d78518eb96",
-        W = e => {
+        z = "_6b12df106adcc8d5a828213ca8d78518eb96",
+        J = e => {
           let {
             label: a,
             seasonsData: n,
@@ -1205,8 +1201,8 @@
             updateYear: o
           } = e;
           const c = (0, r.useRef)(),
-            l = (0, r.useRef)(),
-            [d, m] = (0, r.useState)(""),
+            d = (0, r.useRef)(),
+            [l, m] = (0, r.useState)(""),
             [u, p] = (0, r.useState)(""),
             f = function() {
               let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 10;
@@ -1228,15 +1224,15 @@
             };
           return (0, t.jsxs)(t.Fragment, {
             children: [(0, t.jsxs)("label", {
-              className: "_08984b4d0fc3b846bc7ee1b96cf660d8c238",
+              className: "_6b12df106adcc8d5bc7ee1b96cf660d8c238",
               children: [a, i && (0, t.jsx)("span", {
-                className: "_08984b4d0fc3b846ea2f1b952d254615ee74",
+                className: "_6b12df106adcc8d5ea2f1b952d254615ee74",
                 children: "*"
               })]
             }), (0, t.jsxs)("div", {
-              className: "_08984b4d0fc3b846e0139f5ad8198c40ed53",
-              children: [(0, t.jsx)(z.ZP, {
-                className: J,
+              className: "_6b12df106adcc8d5e0139f5ad8198c40ed53",
+              children: [(0, t.jsx)(M.ZP, {
+                className: z,
                 isClearable: !0,
                 isSearchable: !0,
                 name: "anticipated_graduation_season",
@@ -1246,14 +1242,14 @@
                 onChange: e => (e => {
                   s(e), m(e ?? "")
                 })(e)
-              }), (0, t.jsx)(z.ZP, {
-                className: J,
+              }), (0, t.jsx)(M.ZP, {
+                className: z,
                 isClearable: !0,
                 isSearchable: !0,
                 name: "anticipated_graduation_year",
                 placeholder: "Select year",
                 options: f,
-                ref: l,
+                ref: d,
                 onChange: e => (e => {
                   o(e), p(e ?? "")
                 })(e)
@@ -1263,7 +1259,7 @@
                   autoComplete: "off",
                   style: h,
                   onChange: () => null,
-                  value: d,
+                  value: l,
                   onFocus: () => {
                     c.current && c.current.focus()
                   },
@@ -1275,7 +1271,7 @@
                   onChange: () => null,
                   value: u,
                   onFocus: () => {
-                    l.current && l.current.focus()
+                    d.current && d.current.focus()
                   },
                   required: i
                 })]
@@ -1283,62 +1279,62 @@
             })]
           })
         };
-      var Z = n(3239);
-      const Y = "_08984b4d0fc3b846c90a2471b2d08d28d174",
-        Q = () => (0, t.jsxs)(t.Fragment, {
+      var W = n(9600);
+      const Z = "_6b12df106adcc8d5c90a2471b2d08d28d174",
+        Y = () => (0, t.jsxs)(t.Fragment, {
           children: [(0, t.jsx)(V, {}), (0, t.jsxs)("div", {
-            className: "_08984b4d0fc3b846c531f9581fb248c52d76",
+            className: "_6b12df106adcc8d5c531f9581fb248c52d76",
             children: [(0, t.jsxs)("p", {
-              className: "_08984b4d0fc3b846fd1c19854a1b7ea70bf7",
+              className: "_6b12df106adcc8d5fd1c19854a1b7ea70bf7",
               children: ["Thank you for your interest in Rockstar Games. If you'd like us to stay in touch with you regarding future opportunities, please submit your information below. To view our current job openings, please", " ", (0, t.jsx)(s.A, {
                 to: "../openings",
-                className: Y,
+                className: Z,
                 children: "visit our careers site"
               }), "."]
             }), (0, t.jsxs)("p", {
-              className: "_08984b4d0fc3b846e25fe9ee1b69e16adbf1",
+              className: "_6b12df106adcc8d5e25fe9ee1b69e16adbf1",
               children: [(0, t.jsx)("span", {
-                className: "_08984b4d0fc3b846b5e808c4c275fa083850",
+                className: "_6b12df106adcc8d5b5e808c4c275fa083850",
                 children: "*"
               }), "indicates a required field"]
             })]
           })]
         }),
-        K = () => (0, t.jsxs)("p", {
-          className: "_08984b4d0fc3b846d955037116162c716986",
+        Q = () => (0, t.jsxs)("p", {
+          className: "_6b12df106adcc8d5d955037116162c716986",
           children: ["For all information on how we use your personal data please see our", " ", (0, t.jsx)(s.A, {
             to: "https://www.rockstargames.com/careers-privacy",
-            className: Y,
+            className: Z,
             children: "applicant privacy policy"
           }), "."]
         }),
-        X = () => (0, t.jsxs)("span", {
+        K = () => (0, t.jsxs)("span", {
           children: ["Thank you for your interest in Rockstar Games. Your information has submitted successfully. To view our current job openings, please", " ", (0, t.jsx)(s.A, {
             to: "../openings",
-            className: Y,
+            className: Z,
             children: "visit our careers site"
           }), "."]
         }),
-        ee = () => {
-          const [e, a] = (0, r.useState)(null), [n, s] = (0, r.useState)({}), [o, c] = (0, r.useState)(!1), [l, d] = (0, r.useState)(!1), [u, p] = (0, r.useState)(""), [f, h] = (0, r.useState)(!1), [b, v] = (0, r.useState)(!1), {
+        X = () => {
+          const [e, a] = (0, r.useState)(null), [n, s] = (0, r.useState)({}), [o, c] = (0, r.useState)(!1), [d, m] = (0, r.useState)(!1), [u, p] = (0, r.useState)(""), [f, h] = (0, r.useState)(!1), [b, v] = (0, r.useState)(!1), {
             data: k
-          } = (0, m.useQuery)(Z.greenhouseData), [g] = (0, m.useMutation)(Z.AddProspect), j = i => {
+          } = (0, l.useQuery)(W.greenhouseData), [g] = (0, l.useMutation)(W.AddProspect), j = i => {
             let {
               key: s,
               value: t
             } = i;
             const o = [...e?.custom_fields?.filter((e => e.id && e.id !== n[s]?.id)) ?? []];
-            x(n[s]?.id, t), a({
+            y(n[s]?.id, t), a({
               ...e,
               custom_fields: [...o, {
                 id: n[s]?.id,
                 value: t
               }]
             })
-          }, x = (e, a) => {
+          }, y = (e, a) => {
             const i = n.university_sponsored_event?.id,
               s = n.university_sponsored_event?.custom_field_options.find((e => "Project Review" === e.label)).value;
-            i && e === i && (s && a === s ? d(!0) : (d(!1), j({
+            i && e === i && (s && a === s ? m(!0) : (m(!1), j({
               key: "project_review_game_name",
               value: void 0
             })))
@@ -1416,11 +1412,11 @@
               value: void 0
             }))
           }), [o]);
-          const y = (0, r.useCallback)((e => {
+          const x = (0, r.useCallback)((e => {
             p(e)
           }), []);
-          return k || n ? b ? (0, t.jsx)(X, {}) : (0, t.jsxs)("form", {
-            className: "_08984b4d0fc3b846e59e698571114c58efb8",
+          return k || n ? b ? (0, t.jsx)(K, {}) : (0, t.jsxs)("form", {
+            className: "_6b12df106adcc8d5e59e698571114c58efb8",
             onSubmit: a => (async a => {
               a.preventDefault();
               const n = {
@@ -1435,7 +1431,7 @@
                 console.error(e)
               }
             })(a),
-            children: [(0, t.jsx)(Q, {}), (0, t.jsx)(M, {
+            children: [(0, t.jsx)(Y, {}), (0, t.jsx)(G, {
               label: "First Name",
               placeholder: "Enter first name",
               name: "first_name",
@@ -1443,7 +1439,7 @@
                 ...e,
                 first_name: n.target.value
               })
-            }), (0, t.jsx)(M, {
+            }), (0, t.jsx)(G, {
               label: "Last Name",
               placeholder: "Enter last name",
               name: "last_name",
@@ -1451,7 +1447,7 @@
                 ...e,
                 last_name: n.target.value
               })
-            }), (0, t.jsx)(M, {
+            }), (0, t.jsx)(G, {
               label: "Email Address",
               placeholder: "Enter email address",
               name: "email",
@@ -1493,7 +1489,7 @@
                   school_id: n.value
                 }]
               }) : null
-            }), (0, t.jsx)(M, {
+            }), (0, t.jsx)(G, {
               label: n.discipline?.description,
               placeholder: "Enter major/course subject",
               name: "discipline",
@@ -1510,7 +1506,7 @@
                 key: "degree",
                 value: e ? e.value : void 0
               })
-            }), (0, t.jsx)(W, {
+            }), (0, t.jsx)(J, {
               label: "When do you anticipate graduating?",
               seasonsData: n.anticipated_graduation_season?.custom_field_options,
               updateSeason: e => j({
@@ -1541,7 +1537,7 @@
                 key: "university_sponsored_event",
                 value: e ? e.value : void 0
               })
-            }), o && l && (0, t.jsx)(M, {
+            }), o && d && (0, t.jsx)(G, {
               label: "What is the game you are working on?",
               placeholder: "Enter game name",
               name: "project_review_game_name",
@@ -1560,7 +1556,7 @@
                   value: a
                 })
               }
-            }), (0, t.jsx)(M, {
+            }), (0, t.jsx)(G, {
               label: "Please submit a link to your website/portfolio.",
               placeholder: "Enter URL",
               name: "website_addresses",
@@ -1573,16 +1569,16 @@
                   value: n.target.value
                 }]
               })
-            }), (0, t.jsx)(K, {}), (0, t.jsx)(i.mP, {
-              onVerify: y,
+            }), (0, t.jsx)(Q, {}), (0, t.jsx)(i.mP, {
+              onVerify: x,
               refreshReCaptcha: f
             }), (0, t.jsx)("input", {
               type: "submit",
-              className: "_08984b4d0fc3b846e3b0872ac475e352fd57"
+              className: "_6b12df106adcc8d5e3b0872ac475e352fd57"
             })]
           }) : "Loading..."
         },
-        ae = () => {
+        ee = () => {
           const e = [{
             path: "/",
             element: (0, t.jsx)(j, {})
@@ -1597,28 +1593,28 @@
             element: (0, t.jsx)(F, {})
           }, {
             path: "/openings/position/:position_id",
-            element: (0, t.jsx)(I, {})
+            element: (0, t.jsx)(q, {})
           }, {
             path: "/register",
-            element: (0, t.jsx)(ee, {})
+            element: (0, t.jsx)(X, {})
           }];
           return (0, d.useRoutes)(e)
         },
-        ne = () => (0, t.jsx)(i.pm, {
+        ae = () => (0, t.jsx)(i.pm, {
           reCaptchaKey: "6LcY_tohAAAAACJJTRGxlkVO89ud1jP0WbeHftvL",
           children: (0, t.jsx)("div", {
-            className: "_08984b4d0fc3b846beba36ec69e024d112b8",
+            className: "_6b12df106adcc8d5beba36ec69e024d112b8",
             children: (0, t.jsxs)("div", {
-              className: "_08984b4d0fc3b846e0c63f1c13c0922fcf66",
-              children: [(0, t.jsx)(l, {}), (0, t.jsx)(h, {}), (0, t.jsx)("div", {
-                className: "_08984b4d0fc3b846e3e3144f8074bf13ff68",
-                children: (0, t.jsx)(ae, {})
+              className: "_6b12df106adcc8d5e0c63f1c13c0922fcf66",
+              children: [(0, t.jsx)(h, {}), (0, t.jsx)("div", {
+                className: "_6b12df106adcc8d5e3e3144f8074bf13ff68",
+                children: (0, t.jsx)(ee, {})
               }), (0, t.jsx)(o, {})]
             })
           })
         })
     },
-    6014: e => {
+    7791: e => {
       var a = {
         kind: "Document",
         definitions: [{
@@ -1787,7 +1783,7 @@
         })), n
       }(a, "ContactUs")
     },
-    9657: e => {
+    8469: e => {
       var a = {
         kind: "Document",
         definitions: [{
@@ -1906,7 +1902,7 @@
         })), n
       }(a, "HomeData")
     },
-    9536: e => {
+    9679: e => {
       var a = {
         kind: "Document",
         definitions: [{
@@ -2107,7 +2103,7 @@
         })), n
       }(a, "OfficeData")
     },
-    8893: e => {
+    9625: e => {
       var a = {
         kind: "Document",
         definitions: [{
@@ -2326,7 +2322,7 @@
         })), n
       }(a, "OpeningsData")
     },
-    5636: e => {
+    6922: e => {
       var a = {
         kind: "Document",
         definitions: [{
@@ -2514,7 +2510,7 @@
         })), n
       }(a, "PositionData")
     },
-    3239: e => {
+    9600: e => {
       var a = {
         kind: "Document",
         definitions: [{
@@ -2778,85 +2774,6 @@
         }
       })), e.exports = a, e.exports.greenhouseData = t(a, "greenhouseData"), e.exports.AddProspect = t(a, "AddProspect")
     },
-    8415: (e, a, n) => {
-      var i = {
-        "./rockstar-dundee.svg": 2331,
-        "./rockstar-india.svg": 8879,
-        "./rockstar-international.svg": 6623,
-        "./rockstar-leeds.svg": 9004,
-        "./rockstar-lincoln.svg": 450,
-        "./rockstar-london.svg": 4056,
-        "./rockstar-new-england.svg": 6018,
-        "./rockstar-new-york.svg": 2372,
-        "./rockstar-north.svg": 918,
-        "./rockstar-outline-white.svg": 7597,
-        "./rockstar-san-diego.svg": 1148,
-        "./rockstar-toronto.svg": 6320,
-        "./rockstar-yellow.svg": 1627,
-        "components/OfficeLogo/img/rockstar-dundee.svg": 2331,
-        "components/OfficeLogo/img/rockstar-india.svg": 8879,
-        "components/OfficeLogo/img/rockstar-international.svg": 6623,
-        "components/OfficeLogo/img/rockstar-leeds.svg": 9004,
-        "components/OfficeLogo/img/rockstar-lincoln.svg": 450,
-        "components/OfficeLogo/img/rockstar-london.svg": 4056,
-        "components/OfficeLogo/img/rockstar-new-england.svg": 6018,
-        "components/OfficeLogo/img/rockstar-new-york.svg": 2372,
-        "components/OfficeLogo/img/rockstar-north.svg": 918,
-        "components/OfficeLogo/img/rockstar-outline-white.svg": 7597,
-        "components/OfficeLogo/img/rockstar-san-diego.svg": 1148,
-        "components/OfficeLogo/img/rockstar-toronto.svg": 6320,
-        "components/OfficeLogo/img/rockstar-yellow.svg": 1627
-      };
-
-      function s(e) {
-        var a = t(e);
-        return n(a)
-      }
-
-      function t(e) {
-        if (!n.o(i, e)) {
-          var a = new Error("Cannot find module '" + e + "'");
-          throw a.code = "MODULE_NOT_FOUND", a
-        }
-        return i[e]
-      }
-      s.keys = function() {
-        return Object.keys(i)
-      }, s.resolve = t, e.exports = s, s.id = 8415
-    },
-    1597: (e, a, n) => {
-      var i = {
-        "./rockstar-dundee.svg": 2331,
-        "./rockstar-india.svg": 8879,
-        "./rockstar-international.svg": 6623,
-        "./rockstar-leeds.svg": 9004,
-        "./rockstar-lincoln.svg": 450,
-        "./rockstar-london.svg": 4056,
-        "./rockstar-new-england.svg": 6018,
-        "./rockstar-new-york.svg": 2372,
-        "./rockstar-north.svg": 918,
-        "./rockstar-outline-white.svg": 7597,
-        "./rockstar-san-diego.svg": 1148,
-        "./rockstar-toronto.svg": 6320,
-        "./rockstar-yellow.svg": 1627
-      };
-
-      function s(e) {
-        var a = t(e);
-        return n(a)
-      }
-
-      function t(e) {
-        if (!n.o(i, e)) {
-          var a = new Error("Cannot find module '" + e + "'");
-          throw a.code = "MODULE_NOT_FOUND", a
-        }
-        return i[e]
-      }
-      s.keys = function() {
-        return Object.keys(i)
-      }, s.resolve = t, e.exports = s, s.id = 1597
-    },
     5683: (e, a, n) => {
       var i = {
         "./rockstar-dundee.jpg": 8343,
@@ -2869,18 +2786,7 @@
         "./rockstar-new-york.jpg": 9429,
         "./rockstar-north.jpg": 7953,
         "./rockstar-san-diego.jpg": 6566,
-        "./rockstar-toronto.jpg": 112,
-        "pages/OfficeIndex/img/rockstar-dundee.jpg": 8343,
-        "pages/OfficeIndex/img/rockstar-india.jpg": 2027,
-        "pages/OfficeIndex/img/rockstar-international.jpg": 6552,
-        "pages/OfficeIndex/img/rockstar-leeds.jpg": 6033,
-        "pages/OfficeIndex/img/rockstar-lincoln.jpg": 6261,
-        "pages/OfficeIndex/img/rockstar-london.jpg": 2631,
-        "pages/OfficeIndex/img/rockstar-new-england.jpg": 4598,
-        "pages/OfficeIndex/img/rockstar-new-york.jpg": 9429,
-        "pages/OfficeIndex/img/rockstar-north.jpg": 7953,
-        "pages/OfficeIndex/img/rockstar-san-diego.jpg": 6566,
-        "pages/OfficeIndex/img/rockstar-toronto.jpg": 112
+        "./rockstar-toronto.jpg": 112
       };
 
       function s(e) {
@@ -2929,58 +2835,6 @@
       s.keys = function() {
         return Object.keys(i)
       }, s.resolve = t, e.exports = s, s.id = 670
-    },
-    2331: e => {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe4/__common/img/e6432521ca423fd9a141.svg"
-    },
-    8879: e => {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe4/__common/img/93a2b588d3b38eb7e123.svg"
-    },
-    6623: e => {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe4/__common/img/880d9c746d9ff10e4304.svg"
-    },
-    9004: e => {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe4/__common/img/37cc40d4ef2d9b25a70b.svg"
-    },
-    450: e => {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe4/__common/img/1b8d16497a3105a5af67.svg"
-    },
-    4056: e => {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe4/__common/img/c26751a87817a13fd333.svg"
-    },
-    6018: e => {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe4/__common/img/f17a4f751a3f1cce36f8.svg"
-    },
-    2372: e => {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe4/__common/img/880d9c746d9ff10e4304.svg"
-    },
-    918: e => {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe4/__common/img/6599e50ff7d8673de657.svg"
-    },
-    7597: e => {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe4/__common/img/14c8563f8e71d467d28c.svg"
-    },
-    1148: e => {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe4/__common/img/f2ef344225a60474bb8a.svg"
-    },
-    6320: e => {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe4/__common/img/33aea96ec33078fb9b41.svg"
-    },
-    1627: e => {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe4/__common/img/b065bce3c3a592f16be6.svg"
     },
     8343: e => {
       "use strict";
