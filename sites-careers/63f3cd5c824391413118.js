@@ -1,5 +1,5 @@
 (self.webpackChunk_rockstargames_sites_careers = self.webpackChunk_rockstargames_sites_careers || []).push([
-  [295], {
+  [749], {
     42: (e, a, n) => {
       "use strict";
       n.d(a, {
@@ -51,7 +51,7 @@
       });
       var r = n(4932),
         c = n(9929),
-        d = n(2086),
+        d = n(3102),
         l = n(4859),
         m = n(7791);
       const u = (0, c.withTranslations)((e => {
@@ -167,7 +167,8 @@
               children: (0, t.jsx)("input", {
                 placeholder: "Search",
                 ref: i,
-                defaultValue: f
+                defaultValue: f,
+                enterKeyHint: "search"
               })
             }), (0, t.jsx)(u, {
               openModal: c,
@@ -626,8 +627,8 @@
         });
       var k = n(1570),
         g = n(8469),
-        j = n(3653),
-        y = n.n(j);
+        y = n(3653),
+        j = n.n(y);
       const x = (0, k.defineMessages)({
           careers_home_msg: {
             id: "careers_home_msg",
@@ -640,7 +641,7 @@
             positions: a,
             key: n
           } = e;
-          return y()(a).groupBy((e => e[n])).map(((e, a) => ({
+          return j()(a).groupBy((e => e[n])).map(((e, a) => ({
             [n]: a,
             positions: e
           }))).value()
@@ -650,7 +651,7 @@
             positions: a,
             key: n
           } = e;
-          return y().orderBy(a, [n], ["asc"])
+          return j().orderBy(a, [n], ["asc"])
         },
         w = {
           home: "_6b12df106adcc8d5c4b20405ad56a3b4dd00",
@@ -729,20 +730,27 @@
       var T = n(9679);
       const R = {
         positionGroups: "_6b12df106adcc8d5a857fc1889ba5b594104",
-        mapImg: "_6b12df106adcc8d5fd18c0f690522be4e2fe"
+        positionGroupsRendered: "_6b12df106adcc8d5c426e82043beb520b79c",
+        mapImg: "_6b12df106adcc8d5fd18c0f690522be4e2fe",
+        office: "_6b12df106adcc8d5fbfa556311cc0fcc0906"
       };
       (0, c.importAll)(n(5683));
       const A = () => {
         const {
           office_seo: e
         } = (0, d.useParams)(), {
-          data: a
+          data: a,
+          loading: n
         } = (0, l.useQuery)(T.OfficeData, {
           variables: {
             companySlug: e
           }
-        }), [i, s] = (0, r.useState)(null);
+        }), [i, s] = (0, r.useState)(null), [o, c] = (0, r.useState)(!1);
         return (0, r.useEffect)((() => {
+          c(!1), setTimeout((() => {
+            c(!0)
+          }), 1e3)
+        }), [n]), (0, r.useEffect)((() => {
           if (!a) return;
           const e = _({
               key: "department",
@@ -755,14 +763,10 @@
           s(n)
         }), [a]), i ? (0, t.jsxs)("div", {
           className: R.office,
-          children: [(0, t.jsx)("div", {
-            className: R.mapImg,
-            style: {
-              background: `url(${n(670)(`./${e}.jpg`)}) no-repeat center/contain`,
-              "--aspect-ratio": 1920 / 867
-            }
+          children: [(0, t.jsx)("h2", {
+            children: a?.jobsOffices[0]?.name
           }), (0, t.jsx)("div", {
-            className: R.positionGroups,
+            className: [R.positionGroups, o ? R.positionGroupsRendered : ""].join(" "),
             children: i.map((e => {
               let {
                 department: a,
@@ -787,6 +791,7 @@
           secondary: "_6b12df106adcc8d5d7ed96b79d9905817db0",
           activeSort: "_6b12df106adcc8d5eb8cffa4fdd3ba4f582a",
           heirarchy: "_6b12df106adcc8d5af07421b41d05eb636c2",
+          heirarchyRendered: "_6b12df106adcc8d5bf8aaa65cd3f7fa3cb15",
           primaryGrid: "_6b12df106adcc8d5ea49c15802a4484e8380",
           primaryHeaderH: "_6b12df106adcc8d5b7866b1d6c0afbba8ab8",
           primaryIsCompany: "_6b12df106adcc8d5f18c31e32012b32cd0f9",
@@ -811,15 +816,19 @@
             refetch: g
           } = (0, l.useQuery)(D.OpeningsData, {
             skip: !0
-          }), [j] = (0, d.useSearchParams)(), y = j.get("department"), x = j.get("q"), _ = e => {
+          }), [y] = (0, d.useSearchParams)(), j = y.get("department"), x = y.get("q"), _ = e => {
             a(e), i("companyName" === e ? "department" : "companyName")
-          };
+          }, [N, w] = (0, r.useState)(!1);
           return (0, r.useEffect)((() => {
+            w(!1), setTimeout((() => {
+              w(!0)
+            }), 1e3)
+          }), [v, e]), (0, r.useEffect)((() => {
             f({
-              department: y ?? null,
+              department: j ?? null,
               query: x ?? null
             })
-          }), [y, x]), (0, r.useEffect)((() => {
+          }), [j, x]), (0, r.useEffect)((() => {
             p && (u(null), b(null), k(!0), (async () => {
               try {
                 const {
@@ -835,10 +844,11 @@
               let {
                 positions: a,
                 primary: n,
-                secondary: i
+                secondary: i,
+                rendered: o
               } = e;
               return (0, t.jsx)("div", {
-                className: F.heirarchy,
+                className: [F.heirarchy, o ? F.heirarchyRendered : ""].join(" "),
                 children: E({
                   key: n,
                   positions: a
@@ -851,7 +861,7 @@
                     children: [(0, t.jsx)("h3", {
                       className: [F.primaryHeaderH, "companyName" === n ? F.primaryIsCompany : ""].join(" "),
                       children: (0, t.jsx)(s.A, {
-                        to: "companyName" === n ? `../offices/${o[0].company.seo_url}` : `?department=${o[0].department}`,
+                        to: "companyName" === n ? `../offices/${o[0].company.seo_url}` : `?department=${escape(o[0].department)}`,
                         children: a
                       })
                     }), E({
@@ -876,13 +886,14 @@
             })({
               positions: m,
               primary: e,
-              secondary: n
+              secondary: n,
+              rendered: N
             }))
-          }), [m, e, n]), (0, t.jsxs)("div", {
+          }), [m, e, n, N]), (0, t.jsxs)("div", {
             className: F.openings,
-            children: [h || "", !h && v ? "Searching..." : "", h || v || !m || !y && !x ? "" : (0, t.jsxs)("p", {
+            children: [h || "", !h && v ? "Searching..." : "", h || v || !m || !j && !x ? "" : (0, t.jsxs)("p", {
               className: F.searchHeader,
-              children: [`${m.length} positions found ${x?` matching "${x}"`:""}${y?` in the ${y} department`:""}.`, (0, t.jsx)(s.A, {
+              children: [`${m.length} positions found ${x?` matching "${x}"`:""}${j?` in the ${j} department`:""}.`, (0, t.jsx)(s.A, {
                 to: "./",
                 children: (0, t.jsx)("button", {
                   className: F.viewOpeningsButton,
@@ -1019,8 +1030,8 @@
           })]
         }),
         $ = "_6b12df106adcc8d5fee3148629e4a9bd084a",
-        M = "_6b12df106adcc8d5b09c4ae80bd36eb2c441",
-        G = "_6b12df106adcc8d5a41fe732485a09be51ab",
+        G = "_6b12df106adcc8d5b09c4ae80bd36eb2c441",
+        M = "_6b12df106adcc8d5a41fe732485a09be51ab",
         B = e => {
           let {
             label: a,
@@ -1040,13 +1051,13 @@
                 children: "*"
               })]
             }), n && (0, t.jsx)("span", {
-              className: M,
+              className: G,
               children: n
             }), (0, t.jsx)("input", {
               type: o,
               name: i,
               placeholder: s,
-              className: G,
+              className: M,
               required: !0,
               onChange: c
             })]
@@ -1056,19 +1067,19 @@
               className: $,
               children: a
             }), n && (0, t.jsx)("span", {
-              className: M,
+              className: G,
               children: n
             }), (0, t.jsx)("input", {
               type: o,
               name: a,
               placeholder: s,
-              className: G,
+              className: M,
               onChange: c
             })]
           })
         };
       var J = n(2177);
-      const U = e => {
+      const z = e => {
           let {
             label: a,
             clarification: n,
@@ -1128,7 +1139,7 @@
             })]
           })
         },
-        z = e => {
+        U = e => {
           let {
             data: a,
             update: n
@@ -1315,23 +1326,23 @@
         ae = () => {
           const [e, a] = (0, r.useState)(null), [n, s] = (0, r.useState)({}), [o, c] = (0, r.useState)(!1), [d, m] = (0, r.useState)(!1), [u, p] = (0, r.useState)(""), [f, h] = (0, r.useState)(!1), [b, v] = (0, r.useState)(!1), {
             data: k
-          } = (0, l.useQuery)(Y.greenhouseData), [g] = (0, l.useMutation)(Y.AddProspect), j = i => {
+          } = (0, l.useQuery)(Y.greenhouseData), [g] = (0, l.useMutation)(Y.AddProspect), y = i => {
             let {
               key: s,
               value: t
             } = i;
             const o = [...e?.custom_fields?.filter((e => e.id && e.id !== n[s]?.id)) ?? []];
-            y(n[s]?.id, t), a({
+            j(n[s]?.id, t), a({
               ...e,
               custom_fields: [...o, {
                 id: n[s]?.id,
                 value: t
               }]
             })
-          }, y = (e, a) => {
+          }, j = (e, a) => {
             const i = n.university_sponsored_event?.id,
               s = n.university_sponsored_event?.custom_field_options.find((e => "Project Review" === e.label)).value;
-            i && e === i && (s && a === s ? m(!0) : (m(!1), j({
+            i && e === i && (s && a === s ? m(!0) : (m(!1), y({
               key: "project_review_game_name",
               value: void 0
             })))
@@ -1404,7 +1415,7 @@
               }))
             })
           }), [k]), (0, r.useEffect)((() => {
-            k && (o || j({
+            k && (o || y({
               key: "university_sponsored_event",
               value: void 0
             }))
@@ -1456,14 +1467,14 @@
                   value: n.target.value
                 }]
               })
-            }), (0, t.jsx)(U, {
+            }), (0, t.jsx)(z, {
               label: "Please indicate your preferred studio location.",
               clarification: "Note: Please only select locations where you currently have a legal right to work.",
               placeholder: "Select your preferred work location",
               name: "preferred_location__university_multi_",
               data: n.preferred_work_location?.custom_field_options,
               update: e => {
-                j({
+                y({
                   key: "preferred_work_location",
                   value: e.length && e[0].value ? e.map((e => {
                     let {
@@ -1474,7 +1485,7 @@
                 })
               },
               isMulti: !0
-            }), (0, t.jsx)(U, {
+            }), (0, t.jsx)(z, {
               label: "What school do you currently attend?",
               placeholder: "Select your school",
               name: "school_name",
@@ -1490,47 +1501,47 @@
               label: n.discipline?.description,
               placeholder: "Enter major/course subject",
               name: "discipline",
-              onChange: e => j({
+              onChange: e => y({
                 key: "discipline",
                 value: e.target.value
               })
-            }), (0, t.jsx)(U, {
+            }), (0, t.jsx)(z, {
               label: n.degree?.description,
               placeholder: "Select your degree level",
               name: "degree",
               data: n.degree?.custom_field_options,
-              update: e => j({
+              update: e => y({
                 key: "degree",
                 value: e ? e.value : void 0
               })
             }), (0, t.jsx)(W, {
               label: "When do you anticipate graduating?",
               seasonsData: n.anticipated_graduation_season?.custom_field_options,
-              updateSeason: e => j({
+              updateSeason: e => y({
                 key: "anticipated_graduation_season",
                 value: e ? e.value : void 0
               }),
-              updateYear: e => j({
+              updateYear: e => y({
                 key: "anticipated_graduation_year",
                 value: e ? e.value : void 0
               })
-            }), (0, t.jsx)(U, {
+            }), (0, t.jsx)(z, {
               label: "Have you recently attended a university-sponsored event with Rockstar Games?",
               placeholder: "Select yes or no",
               name: "attended_university_event",
               data: n.attended_university_event?.custom_field_options,
               update: e => {
-                c(!!e && "Yes" === e.label), j({
+                c(!!e && "Yes" === e.label), y({
                   key: "attended_university_event",
                   value: e ? e.value : void 0
                 })
               }
-            }), o && (0, t.jsx)(U, {
+            }), o && (0, t.jsx)(z, {
               label: "What event did you attend?",
               data: n.university_sponsored_event?.custom_field_options,
               name: "university_sponsored_event",
               placeholder: "Select a Rockstar event",
-              update: e => j({
+              update: e => y({
                 key: "university_sponsored_event",
                 value: e ? e.value : void 0
               })
@@ -1538,17 +1549,17 @@
               label: "What is the game you are working on?",
               placeholder: "Enter game name",
               name: "project_review_game_name",
-              onChange: e => j({
+              onChange: e => y({
                 key: "project_review_game_name",
                 value: e ? e?.target?.value : void 0
               })
-            }), (0, t.jsx)(z, {
+            }), (0, t.jsx)(U, {
               data: n.skills,
               update: e => {
                 let {
                   selectedSkills: a
                 } = e;
-                return j({
+                return y({
                   key: "skills",
                   value: a
                 })
@@ -2801,37 +2812,6 @@
       s.keys = function() {
         return Object.keys(i)
       }, s.resolve = t, e.exports = s, s.id = 5683
-    },
-    670: (e, a, n) => {
-      var i = {
-        "./rockstar-dundee.jpg": 8343,
-        "./rockstar-india.jpg": 2027,
-        "./rockstar-international.jpg": 6552,
-        "./rockstar-leeds.jpg": 6033,
-        "./rockstar-lincoln.jpg": 6261,
-        "./rockstar-london.jpg": 2631,
-        "./rockstar-new-england.jpg": 4598,
-        "./rockstar-new-york.jpg": 9429,
-        "./rockstar-north.jpg": 7953,
-        "./rockstar-san-diego.jpg": 6566,
-        "./rockstar-toronto.jpg": 112
-      };
-
-      function s(e) {
-        var a = t(e);
-        return n(a)
-      }
-
-      function t(e) {
-        if (!n.o(i, e)) {
-          var a = new Error("Cannot find module '" + e + "'");
-          throw a.code = "MODULE_NOT_FOUND", a
-        }
-        return i[e]
-      }
-      s.keys = function() {
-        return Object.keys(i)
-      }, s.resolve = t, e.exports = s, s.id = 670
     },
     8343: e => {
       "use strict";
