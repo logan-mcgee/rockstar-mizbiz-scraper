@@ -1,9 +1,9 @@
 (self.webpackChunk_rockstargames_sites_careers = self.webpackChunk_rockstargames_sites_careers || []).push([
-  [517], {
-    7040: (e, a, n) => {
+  [295], {
+    42: (e, a, n) => {
       "use strict";
       n.d(a, {
-        Z: () => ae
+        Z: () => ie
       });
       var i = n(7635),
         s = n(8976);
@@ -51,7 +51,7 @@
       });
       var r = n(4932),
         c = n(9929),
-        d = n(3102),
+        d = n(2086),
         l = n(4859),
         m = n(7791);
       const u = (0, c.withTranslations)((e => {
@@ -624,8 +624,35 @@
             children: "Please note accessible formats of this Accessibility Policy and Multi-Year Accessibility Plan are available free upon request at the contacts listed above."
           })]
         });
-      var k = n(8469);
-      const g = {
+      var k = n(1570),
+        g = n(8469),
+        j = n(3653),
+        y = n.n(j);
+      const x = (0, k.defineMessages)({
+          careers_home_msg: {
+            id: "careers_home_msg",
+            description: "Text on /careers page",
+            defaultMessage: "<p>Join a tight-knit team responsible for creating and publishing some of the most popular, innovative and critically acclaimed interactive entertainment in the world including the Grand Theft Auto series, the Red Dead series and many more.</p><p>Known for our dedication to quality and authenticity, a career at Rockstar Games is an opportunity to work on some of the most cutting edge, creatively rewarding and challenging projects available in any entertainment medium with some of the most talented people in the industry.</p><p>We offer successful candidates highly competitive salary and compensation packages, including a comprehensive benefits package for all eligible employees. Rockstar Games is an equal opportunity employer.</p>"
+          }
+        }),
+        _ = e => {
+          let {
+            positions: a,
+            key: n
+          } = e;
+          return y()(a).groupBy((e => e[n])).map(((e, a) => ({
+            [n]: a,
+            positions: e
+          }))).value()
+        },
+        N = e => {
+          let {
+            positions: a,
+            key: n
+          } = e;
+          return y().orderBy(a, [n], ["asc"])
+        },
+        w = {
           home: "_6b12df106adcc8d5c4b20405ad56a3b4dd00",
           offices: "_6b12df106adcc8d5df8abe33c6a249e3cb46",
           blurb: "_6b12df106adcc8d5f60af5cbf6af7455edea",
@@ -633,53 +660,42 @@
           viewOpeningsButton: "_6b12df106adcc8d5d79b2040f206df1a46a0",
           secondary: "_6b12df106adcc8d5b86422f5b376df177080"
         },
-        j = () => {
+        S = () => {
           const {
-            data: e
-          } = (0, l.useQuery)(k.HomeData);
-          return e ? (0, t.jsxs)("div", {
-            className: g.home,
+            formatMessage: e
+          } = (0, k.useIntl)(), {
+            data: a
+          } = (0, l.useQuery)(g.HomeData);
+          return a ? (0, t.jsxs)("div", {
+            className: w.home,
             children: [(0, t.jsxs)("div", {
-              className: g.offices,
-              children: [e.jobsOffices.map((e => (0, t.jsxs)(s.A, {
+              className: w.offices,
+              children: [a.jobsOffices.map((e => (0, t.jsxs)(s.A, {
                 to: `./offices/${e.seo_url}`,
-                className: g.office,
+                className: w.office,
                 children: [(0, t.jsx)("dt", {
                   children: e.name
                 }), (0, t.jsx)("dd", {
                   children: e.location
                 })]
               }, e.name))), (0, t.jsx)(s.A, {
-                className: g.viewOpeningsButtonContainer,
+                className: w.viewOpeningsButtonContainer,
                 to: "./openings",
                 children: (0, t.jsx)("button", {
-                  className: g.viewOpeningsButton,
+                  className: w.viewOpeningsButton,
                   type: "button",
                   children: "View All Openings"
                 })
               })]
-            }), (0, t.jsxs)("div", {
-              className: g.blurb,
-              children: [(0, t.jsx)("p", {
-                children: "Want to be a part of a tight-knit team responsible for creating and publishing some of the most popular and critically acclaimed games in the world, including such videogame franchises as Grand Theft Auto, Max Payne and Red Dead?"
-              }), (0, t.jsx)("p", {
-                children: "At Rockstar Games, we focus intently on quality and content to proudly produce exactly the kind of games we would want to play ourselves."
-              }), (0, t.jsx)("p", {
-                children: "A career at Rockstar Games is about passion and commitment, to the projects and to each other, all the while working on some of the most creatively rewarding and challenging projects to be found in any entertainment medium with some of the most talented people in the industry."
-              }), (0, t.jsx)("p", {
-                children: "We offer successful candidates a highly competitive salary and compensation package, including a comprehensive benefits package for all eligible employees. Rockstar Games is an equal opportunity employer."
-              }), (0, t.jsxs)("p", {
-                children: ["Follow", " ", (0, t.jsx)("a", {
-                  href: "https://twitter.com/RockstarCareers",
-                  target: "_blank",
-                  rel: "noreferrer",
-                  children: "@rockstarcareers"
-                }), " ", "on Twitter."]
-              })]
+            }), (0, t.jsx)("div", {
+              className: w.blurb,
+              dangerouslySetInnerHTML: {
+                __html: e(x.careers_home_msg)
+              }
             })]
           }) : null
         },
-        y = e => {
+        C = e => {
           let {
             headType: a,
             positions: n,
@@ -710,68 +726,49 @@
             })]
           })
         };
-      var x = n(3653),
-        _ = n.n(x);
-      const N = e => {
-          let {
-            positions: a,
-            key: n
-          } = e;
-          return _()(a).groupBy((e => e[n])).map(((e, a) => ({
-            [n]: a,
-            positions: e
-          }))).value()
-        },
-        w = e => {
-          let {
-            positions: a,
-            key: n
-          } = e;
-          return _().orderBy(a, [n], ["asc"])
-        };
-      var S = n(9679);
-      const C = {
+      var T = n(9679);
+      const R = {
         positionGroups: "_6b12df106adcc8d5a857fc1889ba5b594104",
         mapImg: "_6b12df106adcc8d5fd18c0f690522be4e2fe"
       };
       (0, c.importAll)(n(5683));
-      const T = () => {
+      const A = () => {
         const {
           office_seo: e
         } = (0, d.useParams)(), {
           data: a
-        } = (0, l.useQuery)(S.OfficeData, {
+        } = (0, l.useQuery)(T.OfficeData, {
           variables: {
             companySlug: e
           }
         }), [i, s] = (0, r.useState)(null);
         return (0, r.useEffect)((() => {
           if (!a) return;
-          const e = N({
+          const e = _({
               key: "department",
               positions: a.jobsPositionList
             }),
-            n = w({
+            n = N({
               key: "department",
               positions: e
             });
           s(n)
         }), [a]), i ? (0, t.jsxs)("div", {
-          className: C.office,
+          className: R.office,
           children: [(0, t.jsx)("div", {
-            className: C.mapImg,
+            className: R.mapImg,
             style: {
               background: `url(${n(670)(`./${e}.jpg`)}) no-repeat center/contain`,
               "--aspect-ratio": 1920 / 867
             }
           }), (0, t.jsx)("div", {
-            className: C.positionGroups,
+            className: R.positionGroups,
             children: i.map((e => {
               let {
                 department: a,
                 positions: n
               } = e;
-              return (0, t.jsx)(y, {
+              return (0, t.jsx)(C, {
                 positions: n,
                 title: a,
                 headType: "department",
@@ -782,8 +779,8 @@
           })]
         }) : null
       };
-      var R = n(9625);
-      const A = {
+      var D = n(9625);
+      const F = {
           openings: "_6b12df106adcc8d5cb2070ba798f70a24146",
           sort: "_6b12df106adcc8d5ea48bb4e8e134b65a96b",
           sortButtons: "_6b12df106adcc8d5e51b8f0742c0138ffeab",
@@ -796,33 +793,33 @@
           searchHeader: "_6b12df106adcc8d5a9283744e85061b646c0",
           viewOpeningsButton: "_6b12df106adcc8d5f75b666913554bd8839f"
         },
-        D = e => {
+        E = e => {
           let {
             positions: a,
             key: n
           } = e;
-          return w({
-            positions: N({
+          return N({
+            positions: _({
               positions: a,
               key: n
             }),
             key: n
           })
         },
-        F = () => {
+        O = () => {
           const [e, a] = (0, r.useState)("companyName"), [n, i] = (0, r.useState)("department"), [o, c] = (0, r.useState)(null), [m, u] = (0, r.useState)(null), [p, f] = (0, r.useState)(null), [h, b] = (0, r.useState)(null), [v, k] = (0, r.useState)(!0), {
             refetch: g
-          } = (0, l.useQuery)(R.OpeningsData, {
+          } = (0, l.useQuery)(D.OpeningsData, {
             skip: !0
-          }), [j] = (0, d.useSearchParams)(), x = j.get("department"), _ = j.get("q"), N = e => {
+          }), [j] = (0, d.useSearchParams)(), y = j.get("department"), x = j.get("q"), _ = e => {
             a(e), i("companyName" === e ? "department" : "companyName")
           };
           return (0, r.useEffect)((() => {
             f({
-              department: x ?? null,
-              query: _ ?? null
+              department: y ?? null,
+              query: x ?? null
             })
-          }), [x, _]), (0, r.useEffect)((() => {
+          }), [y, x]), (0, r.useEffect)((() => {
             p && (u(null), b(null), k(!0), (async () => {
               try {
                 const {
@@ -841,8 +838,8 @@
                 secondary: i
               } = e;
               return (0, t.jsx)("div", {
-                className: A.heirarchy,
-                children: D({
+                className: F.heirarchy,
+                children: E({
                   key: n,
                   positions: a
                 }).map((e => {
@@ -850,21 +847,21 @@
                     [n]: a, positions: o
                   } = e;
                   return (0, t.jsxs)("div", {
-                    className: A.primaryGrid,
+                    className: F.primaryGrid,
                     children: [(0, t.jsx)("h3", {
-                      className: [A.primaryHeaderH, "companyName" === n ? A.primaryIsCompany : ""].join(" "),
+                      className: [F.primaryHeaderH, "companyName" === n ? F.primaryIsCompany : ""].join(" "),
                       children: (0, t.jsx)(s.A, {
                         to: "companyName" === n ? `../offices/${o[0].company.seo_url}` : `?department=${o[0].department}`,
                         children: a
                       })
-                    }), D({
+                    }), E({
                       key: i,
                       positions: o
                     }).map((e => {
                       let {
                         [i]: n, positions: s
                       } = e;
-                      return (0, t.jsx)(y, {
+                      return (0, t.jsx)(C, {
                         positions: s,
                         title: n,
                         headType: i,
@@ -882,31 +879,31 @@
               secondary: n
             }))
           }), [m, e, n]), (0, t.jsxs)("div", {
-            className: A.openings,
-            children: [h || "", !h && v ? "Searching..." : "", h || v || !m || !x && !_ ? "" : (0, t.jsxs)("p", {
-              className: A.searchHeader,
-              children: [`${m.length} positions found ${_?` matching "${_}"`:""}${x?` in the ${x} department`:""}.`, (0, t.jsx)(s.A, {
+            className: F.openings,
+            children: [h || "", !h && v ? "Searching..." : "", h || v || !m || !y && !x ? "" : (0, t.jsxs)("p", {
+              className: F.searchHeader,
+              children: [`${m.length} positions found ${x?` matching "${x}"`:""}${y?` in the ${y} department`:""}.`, (0, t.jsx)(s.A, {
                 to: "./",
                 children: (0, t.jsx)("button", {
-                  className: A.viewOpeningsButton,
+                  className: F.viewOpeningsButton,
                   type: "button",
                   children: "View All Openings"
                 })
               })]
             }), m?.length ? (0, t.jsxs)("div", {
-              className: A.sort,
+              className: F.sort,
               children: [(0, t.jsx)("span", {
                 children: "Sort by:"
               }), (0, t.jsxs)("div", {
-                className: A.sortButtons,
+                className: F.sortButtons,
                 children: [(0, t.jsx)("button", {
-                  className: "companyName" === e ? A.activeSort : "",
-                  onClick: () => N("companyName"),
+                  className: "companyName" === e ? F.activeSort : "",
+                  onClick: () => _("companyName"),
                   type: "button",
                   children: "Location"
                 }), (0, t.jsx)("button", {
-                  className: "department" === e ? A.activeSort : "",
-                  onClick: () => N("department"),
+                  className: "department" === e ? F.activeSort : "",
+                  onClick: () => _("department"),
                   type: "button",
                   children: "Department"
                 })]
@@ -914,10 +911,10 @@
             }) : "", m?.length && o ? o : ""]
           })
         };
-      var E = n(6922);
-      const O = "_6b12df106adcc8d5ce5d984f9667741c4c32",
-        L = "_6b12df106adcc8d5fea46db119d2e97b0b46",
-        P = e => {
+      var L = n(6922);
+      const P = "_6b12df106adcc8d5ce5d984f9667741c4c32",
+        q = "_6b12df106adcc8d5fea46db119d2e97b0b46",
+        V = e => {
           let {
             position: a
           } = e;
@@ -931,13 +928,13 @@
               className: "_6b12df106adcc8d5cfd7f46eb3ca403b2b3b",
               children: [(0, t.jsxs)(s.A, {
                 to: `../offices/${a.company.seo_url}`,
-                className: L,
+                className: q,
                 children: ["See all", (0, t.jsx)("b", {
                   children: a.company.name
                 }), "positions"]
               }), (0, t.jsxs)(s.A, {
                 to: `../openings?department=${encodeURIComponent(a.department)}`,
-                className: L,
+                className: q,
                 children: ["See all", (0, t.jsx)("b", {
                   children: a.department
                 }), "positions"]
@@ -945,25 +942,25 @@
             })]
           })
         },
-        q = (0, s.withSimpleErrorBoundary)((() => {
+        I = (0, s.withSimpleErrorBoundary)((() => {
           const {
             position_id: e
           } = (0, d.useParams)(), {
             data: a
-          } = (0, l.useQuery)(E.PositionData, {
+          } = (0, l.useQuery)(L.PositionData, {
             variables: {
               positionId: Number(e)
             }
           });
           if (!a) return (0, t.jsx)("div", {
-            className: O,
+            className: P,
             children: "Loading..."
           });
           const {
             jobsPosition: n
           } = a;
           return (0, t.jsxs)("div", {
-            className: O,
+            className: P,
             children: [(0, t.jsxs)("header", {
               className: "_6b12df106adcc8d5fb7497900f485b7f2086",
               children: [(0, t.jsxs)("div", {
@@ -983,12 +980,12 @@
               dangerouslySetInnerHTML: {
                 __html: n.description
               }
-            }), (0, t.jsx)(P, {
+            }), (0, t.jsx)(V, {
               position: n
             })]
           })
         }), "That position was not found."),
-        V = () => (0, t.jsxs)("svg", {
+        H = () => (0, t.jsxs)("svg", {
           width: "100",
           height: "92",
           viewBox: "0 0 100 92",
@@ -1021,10 +1018,10 @@
             fill: "white"
           })]
         }),
-        I = "_6b12df106adcc8d5fee3148629e4a9bd084a",
-        $ = "_6b12df106adcc8d5b09c4ae80bd36eb2c441",
-        H = "_6b12df106adcc8d5a41fe732485a09be51ab",
-        G = e => {
+        $ = "_6b12df106adcc8d5fee3148629e4a9bd084a",
+        M = "_6b12df106adcc8d5b09c4ae80bd36eb2c441",
+        G = "_6b12df106adcc8d5a41fe732485a09be51ab",
+        B = e => {
           let {
             label: a,
             clarification: n,
@@ -1037,41 +1034,41 @@
           return r ? (0, t.jsxs)(t.Fragment, {
             children: [(0, t.jsxs)("label", {
               htmlFor: a,
-              className: I,
+              className: $,
               children: [a, (0, t.jsx)("span", {
                 className: "_6b12df106adcc8d5a15491b3c8142330c17a",
                 children: "*"
               })]
             }), n && (0, t.jsx)("span", {
-              className: $,
+              className: M,
               children: n
             }), (0, t.jsx)("input", {
               type: o,
               name: i,
               placeholder: s,
-              className: H,
+              className: G,
               required: !0,
               onChange: c
             })]
           }) : (0, t.jsxs)(t.Fragment, {
             children: [(0, t.jsx)("label", {
               htmlFor: a,
-              className: I,
+              className: $,
               children: a
             }), n && (0, t.jsx)("span", {
-              className: $,
+              className: M,
               children: n
             }), (0, t.jsx)("input", {
               type: o,
               name: a,
               placeholder: s,
-              className: H,
+              className: G,
               onChange: c
             })]
           })
         };
-      var M = n(2177);
-      const B = e => {
+      var J = n(2177);
+      const U = e => {
           let {
             label: a,
             clarification: n,
@@ -1095,7 +1092,7 @@
             }), n && (0, t.jsx)("span", {
               className: "_6b12df106adcc8d5bd054d54bd430c1bf9e6",
               children: n
-            }), (0, t.jsx)(M.ZP, {
+            }), (0, t.jsx)(J.ZP, {
               className: "_6b12df106adcc8d5bfecebe5f04004c49b2b",
               isClearable: !0,
               isSearchable: !0,
@@ -1131,7 +1128,7 @@
             })]
           })
         },
-        U = e => {
+        z = e => {
           let {
             data: a,
             update: n
@@ -1191,8 +1188,8 @@
             })]
           })
         },
-        z = "_6b12df106adcc8d5a828213ca8d78518eb96",
-        J = e => {
+        Z = "_6b12df106adcc8d5a828213ca8d78518eb96",
+        W = e => {
           let {
             label: a,
             seasonsData: n,
@@ -1231,8 +1228,8 @@
               })]
             }), (0, t.jsxs)("div", {
               className: "_6b12df106adcc8d5e0139f5ad8198c40ed53",
-              children: [(0, t.jsx)(M.ZP, {
-                className: z,
+              children: [(0, t.jsx)(J.ZP, {
+                className: Z,
                 isClearable: !0,
                 isSearchable: !0,
                 name: "anticipated_graduation_season",
@@ -1242,8 +1239,8 @@
                 onChange: e => (e => {
                   s(e), m(e ?? "")
                 })(e)
-              }), (0, t.jsx)(M.ZP, {
-                className: z,
+              }), (0, t.jsx)(J.ZP, {
+                className: Z,
                 isClearable: !0,
                 isSearchable: !0,
                 name: "anticipated_graduation_year",
@@ -1279,16 +1276,16 @@
             })]
           })
         };
-      var W = n(9600);
-      const Z = "_6b12df106adcc8d5c90a2471b2d08d28d174",
-        Y = () => (0, t.jsxs)(t.Fragment, {
-          children: [(0, t.jsx)(V, {}), (0, t.jsxs)("div", {
+      var Y = n(9600);
+      const Q = "_6b12df106adcc8d5c90a2471b2d08d28d174",
+        K = () => (0, t.jsxs)(t.Fragment, {
+          children: [(0, t.jsx)(H, {}), (0, t.jsxs)("div", {
             className: "_6b12df106adcc8d5c531f9581fb248c52d76",
             children: [(0, t.jsxs)("p", {
               className: "_6b12df106adcc8d5fd1c19854a1b7ea70bf7",
               children: ["Thank you for your interest in Rockstar Games. If you'd like us to stay in touch with you regarding future opportunities, please submit your information below. To view our current job openings, please", " ", (0, t.jsx)(s.A, {
                 to: "../openings",
-                className: Z,
+                className: Q,
                 children: "visit our careers site"
               }), "."]
             }), (0, t.jsxs)("p", {
@@ -1300,25 +1297,25 @@
             })]
           })]
         }),
-        Q = () => (0, t.jsxs)("p", {
+        X = () => (0, t.jsxs)("p", {
           className: "_6b12df106adcc8d5d955037116162c716986",
           children: ["For all information on how we use your personal data please see our", " ", (0, t.jsx)(s.A, {
             to: "https://www.rockstargames.com/careers-privacy",
-            className: Z,
+            className: Q,
             children: "applicant privacy policy"
           }), "."]
         }),
-        K = () => (0, t.jsxs)("span", {
+        ee = () => (0, t.jsxs)("span", {
           children: ["Thank you for your interest in Rockstar Games. Your information has submitted successfully. To view our current job openings, please", " ", (0, t.jsx)(s.A, {
             to: "../openings",
-            className: Z,
+            className: Q,
             children: "visit our careers site"
           }), "."]
         }),
-        X = () => {
+        ae = () => {
           const [e, a] = (0, r.useState)(null), [n, s] = (0, r.useState)({}), [o, c] = (0, r.useState)(!1), [d, m] = (0, r.useState)(!1), [u, p] = (0, r.useState)(""), [f, h] = (0, r.useState)(!1), [b, v] = (0, r.useState)(!1), {
             data: k
-          } = (0, l.useQuery)(W.greenhouseData), [g] = (0, l.useMutation)(W.AddProspect), j = i => {
+          } = (0, l.useQuery)(Y.greenhouseData), [g] = (0, l.useMutation)(Y.AddProspect), j = i => {
             let {
               key: s,
               value: t
@@ -1415,7 +1412,7 @@
           const x = (0, r.useCallback)((e => {
             p(e)
           }), []);
-          return k || n ? b ? (0, t.jsx)(K, {}) : (0, t.jsxs)("form", {
+          return k || n ? b ? (0, t.jsx)(ee, {}) : (0, t.jsxs)("form", {
             className: "_6b12df106adcc8d5e59e698571114c58efb8",
             onSubmit: a => (async a => {
               a.preventDefault();
@@ -1431,7 +1428,7 @@
                 console.error(e)
               }
             })(a),
-            children: [(0, t.jsx)(Y, {}), (0, t.jsx)(G, {
+            children: [(0, t.jsx)(K, {}), (0, t.jsx)(B, {
               label: "First Name",
               placeholder: "Enter first name",
               name: "first_name",
@@ -1439,7 +1436,7 @@
                 ...e,
                 first_name: n.target.value
               })
-            }), (0, t.jsx)(G, {
+            }), (0, t.jsx)(B, {
               label: "Last Name",
               placeholder: "Enter last name",
               name: "last_name",
@@ -1447,7 +1444,7 @@
                 ...e,
                 last_name: n.target.value
               })
-            }), (0, t.jsx)(G, {
+            }), (0, t.jsx)(B, {
               label: "Email Address",
               placeholder: "Enter email address",
               name: "email",
@@ -1459,7 +1456,7 @@
                   value: n.target.value
                 }]
               })
-            }), (0, t.jsx)(B, {
+            }), (0, t.jsx)(U, {
               label: "Please indicate your preferred studio location.",
               clarification: "Note: Please only select locations where you currently have a legal right to work.",
               placeholder: "Select your preferred work location",
@@ -1477,7 +1474,7 @@
                 })
               },
               isMulti: !0
-            }), (0, t.jsx)(B, {
+            }), (0, t.jsx)(U, {
               label: "What school do you currently attend?",
               placeholder: "Select your school",
               name: "school_name",
@@ -1489,7 +1486,7 @@
                   school_id: n.value
                 }]
               }) : null
-            }), (0, t.jsx)(G, {
+            }), (0, t.jsx)(B, {
               label: n.discipline?.description,
               placeholder: "Enter major/course subject",
               name: "discipline",
@@ -1497,7 +1494,7 @@
                 key: "discipline",
                 value: e.target.value
               })
-            }), (0, t.jsx)(B, {
+            }), (0, t.jsx)(U, {
               label: n.degree?.description,
               placeholder: "Select your degree level",
               name: "degree",
@@ -1506,7 +1503,7 @@
                 key: "degree",
                 value: e ? e.value : void 0
               })
-            }), (0, t.jsx)(J, {
+            }), (0, t.jsx)(W, {
               label: "When do you anticipate graduating?",
               seasonsData: n.anticipated_graduation_season?.custom_field_options,
               updateSeason: e => j({
@@ -1517,7 +1514,7 @@
                 key: "anticipated_graduation_year",
                 value: e ? e.value : void 0
               })
-            }), (0, t.jsx)(B, {
+            }), (0, t.jsx)(U, {
               label: "Have you recently attended a university-sponsored event with Rockstar Games?",
               placeholder: "Select yes or no",
               name: "attended_university_event",
@@ -1528,7 +1525,7 @@
                   value: e ? e.value : void 0
                 })
               }
-            }), o && (0, t.jsx)(B, {
+            }), o && (0, t.jsx)(U, {
               label: "What event did you attend?",
               data: n.university_sponsored_event?.custom_field_options,
               name: "university_sponsored_event",
@@ -1537,7 +1534,7 @@
                 key: "university_sponsored_event",
                 value: e ? e.value : void 0
               })
-            }), o && d && (0, t.jsx)(G, {
+            }), o && d && (0, t.jsx)(B, {
               label: "What is the game you are working on?",
               placeholder: "Enter game name",
               name: "project_review_game_name",
@@ -1545,7 +1542,7 @@
                 key: "project_review_game_name",
                 value: e ? e?.target?.value : void 0
               })
-            }), (0, t.jsx)(U, {
+            }), (0, t.jsx)(z, {
               data: n.skills,
               update: e => {
                 let {
@@ -1556,7 +1553,7 @@
                   value: a
                 })
               }
-            }), (0, t.jsx)(G, {
+            }), (0, t.jsx)(B, {
               label: "Please submit a link to your website/portfolio.",
               placeholder: "Enter URL",
               name: "website_addresses",
@@ -1569,7 +1566,7 @@
                   value: n.target.value
                 }]
               })
-            }), (0, t.jsx)(Q, {}), (0, t.jsx)(i.mP, {
+            }), (0, t.jsx)(X, {}), (0, t.jsx)(i.mP, {
               onVerify: x,
               refreshReCaptcha: f
             }), (0, t.jsx)("input", {
@@ -1578,29 +1575,29 @@
             })]
           }) : "Loading..."
         },
-        ee = () => {
+        ne = () => {
           const e = [{
             path: "/",
-            element: (0, t.jsx)(j, {})
+            element: (0, t.jsx)(S, {})
           }, {
             path: "/accessibility",
             element: (0, t.jsx)(v, {})
           }, {
             path: "/offices/:office_seo",
-            element: (0, t.jsx)(T, {})
+            element: (0, t.jsx)(A, {})
           }, {
             path: "/openings",
-            element: (0, t.jsx)(F, {})
+            element: (0, t.jsx)(O, {})
           }, {
             path: "/openings/position/:position_id",
-            element: (0, t.jsx)(q, {})
+            element: (0, t.jsx)(I, {})
           }, {
             path: "/register",
-            element: (0, t.jsx)(X, {})
+            element: (0, t.jsx)(ae, {})
           }];
           return (0, d.useRoutes)(e)
         },
-        ae = () => (0, t.jsx)(i.pm, {
+        ie = () => (0, t.jsx)(i.pm, {
           reCaptchaKey: "6LcY_tohAAAAACJJTRGxlkVO89ud1jP0WbeHftvL",
           children: (0, t.jsx)("div", {
             className: "_6b12df106adcc8d5beba36ec69e024d112b8",
@@ -1608,7 +1605,7 @@
               className: "_6b12df106adcc8d5e0c63f1c13c0922fcf66",
               children: [(0, t.jsx)(h, {}), (0, t.jsx)("div", {
                 className: "_6b12df106adcc8d5e3e3144f8074bf13ff68",
-                children: (0, t.jsx)(ee, {})
+                children: (0, t.jsx)(ne, {})
               }), (0, t.jsx)(o, {})]
             })
           })
