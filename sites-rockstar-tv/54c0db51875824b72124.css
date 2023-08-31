@@ -1,0 +1,103 @@
+.cdcf4dc512f21ea2ea23ee47c231cf87cc38 {
+  grid-gap: .5rem;
+  --header-multiplier: 0.25;
+  --color-h: rgba(0, 0, 0, .5);
+  align-items: center;
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  margin: 0 auto;
+  max-width: var(--maxw);
+  padding: 1rem
+}
+
+.cdcf4dc512f21ea2ea23ee47c231cf87cc38 h1 {
+  font-style: italic;
+  text-align: right;
+  text-transform: uppercase
+}
+
+.cdcf4dc512f21ea2ea23ee47c231cf87cc38 h1 em {
+  text-decoration: underline
+}
+
+.cdcf4dc512f21ea2ed6b20663ab3d651fa61 {
+  background: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/e88410bd93255f30b6c1.png) no-repeat 50%/contain;
+  max-width: 234px
+}
+
+.cdcf4dc512f21ea2ed6b20663ab3d651fa61:after {
+  content: "";
+  display: block;
+  padding-top: 15.81196581%
+}
+
+.cdcf4dc512f21ea2b6c299fcfb63d886c48b {
+  grid-gap: 1rem;
+  align-items: flex-start;
+  border-top: 1px solid rgba(0, 0, 0, .6);
+  display: grid;
+  padding-top: 1rem
+}
+
+@media (min-width:768px) {
+  .cdcf4dc512f21ea2b6c299fcfb63d886c48b {
+    grid-template-columns: repeat(2, 1fr)
+  }
+}
+
+@media (min-width:1024px) {
+  .cdcf4dc512f21ea2b6c299fcfb63d886c48b {
+    grid-template-columns: repeat(3, 1fr)
+  }
+}
+
+@media (min-width:1920px) {
+  .cdcf4dc512f21ea2b6c299fcfb63d886c48b {
+    grid-template-columns: repeat(4, 1fr)
+  }
+}
+
+.cdcf4dc512f21ea2e21139138fb118469df8 {
+  grid-gap: .5rem;
+  --color-h: #000;
+  --header-multiplier: 0.65;
+  color: inherit;
+  display: grid;
+  font-size: 80%;
+  padding: .5rem
+}
+
+.cdcf4dc512f21ea2e21139138fb118469df8.cdcf4dc512f21ea2fe244655aff4257932ff,
+.cdcf4dc512f21ea2e21139138fb118469df8:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, .5)
+}
+
+.cdcf4dc512f21ea2c4b20405ad56a3b4dd00 {
+  grid-gap: 2rem;
+  display: grid
+}
+
+.cdcf4dc512f21ea2c9052727a8c85a5dee2f {
+  grid-gap: 1rem;
+  --color-h: #000;
+  --header-multiplier: 0.8;
+  display: grid
+}
+
+.cdcf4dc512f21ea2f8298d14a5a120ca5c92 {
+  --maxw: 1400px;
+  background: #fff;
+  color: #000;
+  flex: 1
+}
+
+.cdcf4dc512f21ea2e0c63f1c13c0922fcf66 {
+  display: grid
+}
+
+.cdcf4dc512f21ea2e3e3144f8074bf13ff68 {
+  margin: 0 auto;
+  max-width: var(--maxw);
+  padding: 0 1rem 2rem;
+  width: 100%
+}

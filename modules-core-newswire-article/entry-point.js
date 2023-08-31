@@ -1,517 +1,524 @@
-var modules_core_newswire_article;
-(() => {
-  "use strict";
-  var e, r, t, a, o = {
-      1103: (e, r, t) => {
-        var a = {
-            "./NewswireArticle": () => Promise.all([t.e(688), t.e(218), t.e(976), t.e(634), t.e(975), t.e(510), t.e(357), t.e(76)]).then((() => () => t(8076))),
-            "./NewswireTitle": () => Promise.all([t.e(976), t.e(634), t.e(765)]).then((() => () => t(1765))),
-            "./index": () => Promise.all([t.e(688), t.e(976), t.e(634), t.e(975), t.e(510), t.e(986)]).then((() => () => t(7986))),
-            "./components": () => Promise.all([t.e(688), t.e(976), t.e(634), t.e(975)]).then((() => () => t(3975))),
-            "./types": () => Promise.all([t.e(688), t.e(218), t.e(976), t.e(634), t.e(975), t.e(510), t.e(357), t.e(417)]).then((() => () => t(417))),
-            "./tinaBlockTemplates": () => Promise.all([t.e(976), t.e(814)]).then((() => () => t(8814)))
-          },
-          o = (e, r) => (t.R = r, r = t.o(a, e) ? a[e]() : Promise.resolve().then((() => {
-            throw new Error('Module "' + e + '" does not exist in container.')
-          })), t.R = void 0, r),
-          n = (e, r) => {
-            if (t.S) {
-              var a = "default",
-                o = t.S[a];
-              if (o && o !== e) throw new Error("Container initialization failed as it has already been initialized with a different share scope");
-              return t.S[a] = e, t.I(a, r)
-            }
-          };
-        t.d(r, {
-          get: () => o,
-          init: () => n
-        })
-      },
-      9525: (e, r, t) => {
-        var a = new Error;
-        e.exports = new Promise(((e, r) => {
-          if ("undefined" != typeof components) return e();
-          t.l(window.mfe.path("@rockstargames/components"), (t => {
-            if ("undefined" != typeof components) return e();
-            var o = t && ("load" === t.type ? "missing" : t.type),
-              n = t && t.target && t.target.src;
-            a.message = "Loading script failed.\n(" + o + ": " + n + ")", a.name = "ScriptExternalLoadError", a.type = o, a.request = n, r(a)
-          }), "components")
-        })).then((() => components))
-      },
-      5171: (e, r, t) => {
-        var a = new Error;
-        e.exports = new Promise(((e, r) => {
-          if ("undefined" != typeof graph_client) return e();
-          t.l(window.mfe.path("@rockstargames/graph-client"), (t => {
-            if ("undefined" != typeof graph_client) return e();
-            var o = t && ("load" === t.type ? "missing" : t.type),
-              n = t && t.target && t.target.src;
-            a.message = "Loading script failed.\n(" + o + ": " + n + ")", a.name = "ScriptExternalLoadError", a.type = o, a.request = n, r(a)
-          }), "graph_client")
-        })).then((() => graph_client))
-      },
-      7048: (e, r, t) => {
-        var a = new Error;
-        e.exports = new Promise(((e, r) => {
-          if ("undefined" != typeof modules_core_card) return e();
-          t.l(window.mfe.path("@rockstargames/modules-core-card"), (t => {
-            if ("undefined" != typeof modules_core_card) return e();
-            var o = t && ("load" === t.type ? "missing" : t.type),
-              n = t && t.target && t.target.src;
-            a.message = "Loading script failed.\n(" + o + ": " + n + ")", a.name = "ScriptExternalLoadError", a.type = o, a.request = n, r(a)
-          }), "modules_core_card")
-        })).then((() => modules_core_card))
-      },
-      7304: (e, r, t) => {
-        var a = new Error;
-        e.exports = new Promise(((e, r) => {
-          if ("undefined" != typeof modules_core_carousel) return e();
-          t.l(window.mfe.path("@rockstargames/modules-core-carousel"), (t => {
-            if ("undefined" != typeof modules_core_carousel) return e();
-            var o = t && ("load" === t.type ? "missing" : t.type),
-              n = t && t.target && t.target.src;
-            a.message = "Loading script failed.\n(" + o + ": " + n + ")", a.name = "ScriptExternalLoadError", a.type = o, a.request = n, r(a)
-          }), "modules_core_carousel")
-        })).then((() => modules_core_carousel))
-      },
-      3113: (e, r, t) => {
-        var a = new Error;
-        e.exports = new Promise(((e, r) => {
-          if ("undefined" != typeof modules_core_gif_viewer) return e();
-          t.l(window.mfe.path("@rockstargames/modules-core-gif-viewer"), (t => {
-            if ("undefined" != typeof modules_core_gif_viewer) return e();
-            var o = t && ("load" === t.type ? "missing" : t.type),
-              n = t && t.target && t.target.src;
-            a.message = "Loading script failed.\n(" + o + ": " + n + ")", a.name = "ScriptExternalLoadError", a.type = o, a.request = n, r(a)
-          }), "modules_core_gif_viewer")
-        })).then((() => modules_core_gif_viewer))
-      },
-      8546: (e, r, t) => {
-        var a = new Error;
-        e.exports = new Promise(((e, r) => {
-          if ("undefined" != typeof modules_core_group_of_items) return e();
-          t.l(window.mfe.path("@rockstargames/modules-core-group-of-items"), (t => {
-            if ("undefined" != typeof modules_core_group_of_items) return e();
-            var o = t && ("load" === t.type ? "missing" : t.type),
-              n = t && t.target && t.target.src;
-            a.message = "Loading script failed.\n(" + o + ": " + n + ")", a.name = "ScriptExternalLoadError", a.type = o, a.request = n, r(a)
-          }), "modules_core_group_of_items")
-        })).then((() => modules_core_group_of_items))
-      },
-      6993: (e, r, t) => {
-        var a = new Error;
-        e.exports = new Promise(((e, r) => {
-          if ("undefined" != typeof modules_core_videoplayer) return e();
-          t.l(window.mfe.path("@rockstargames/modules-core-videoplayer"), (t => {
-            if ("undefined" != typeof modules_core_videoplayer) return e();
-            var o = t && ("load" === t.type ? "missing" : t.type),
-              n = t && t.target && t.target.src;
-            a.message = "Loading script failed.\n(" + o + ": " + n + ")", a.name = "ScriptExternalLoadError", a.type = o, a.request = n, r(a)
-          }), "modules_core_videoplayer")
-        })).then((() => modules_core_videoplayer))
-      },
-      7958: (e, r, t) => {
-        var a = new Error;
-        e.exports = new Promise(((e, r) => {
-          if ("undefined" != typeof modules_sc_ugc_spotlight) return e();
-          t.l(window.mfe.path("@rockstargames/modules-sc-ugc-spotlight"), (t => {
-            if ("undefined" != typeof modules_sc_ugc_spotlight) return e();
-            var o = t && ("load" === t.type ? "missing" : t.type),
-              n = t && t.target && t.target.src;
-            a.message = "Loading script failed.\n(" + o + ": " + n + ")", a.name = "ScriptExternalLoadError", a.type = o, a.request = n, r(a)
-          }), "modules_sc_ugc_spotlight")
-        })).then((() => modules_sc_ugc_spotlight))
-      },
-      1489: (e, r, t) => {
-        var a = new Error;
-        e.exports = new Promise(((e, r) => {
-          if ("undefined" != typeof tina) return e();
-          t.l(window.mfe.path("@rockstargames/tina"), (t => {
-            if ("undefined" != typeof tina) return e();
-            var o = t && ("load" === t.type ? "missing" : t.type),
-              n = t && t.target && t.target.src;
-            a.message = "Loading script failed.\n(" + o + ": " + n + ")", a.name = "ScriptExternalLoadError", a.type = o, a.request = n, r(a)
-          }), "tina")
-        })).then((() => tina))
-      },
-      8810: (e, r, t) => {
-        var a = new Error;
-        e.exports = new Promise(((e, r) => {
-          if ("undefined" != typeof utils) return e();
-          t.l(window.mfe.path("@rockstargames/utils"), (t => {
-            if ("undefined" != typeof utils) return e();
-            var o = t && ("load" === t.type ? "missing" : t.type),
-              n = t && t.target && t.target.src;
-            a.message = "Loading script failed.\n(" + o + ": " + n + ")", a.name = "ScriptExternalLoadError", a.type = o, a.request = n, r(a)
-          }), "utils")
-        })).then((() => utils))
-      }
-    },
-    n = {};
-
-  function i(e) {
-    var r = n[e];
-    if (void 0 !== r) return r.exports;
-    var t = n[e] = {
-      id: e,
-      loaded: !1,
-      exports: {}
-    };
-    return o[e].call(t.exports, t, t.exports, i), t.loaded = !0, t.exports
-  }
-  i.m = o, i.c = n, i.n = e => {
-    var r = e && e.__esModule ? () => e.default : () => e;
-    return i.d(r, {
-      a: r
-    }), r
-  }, i.d = (e, r) => {
-    for (var t in r) i.o(r, t) && !i.o(e, t) && Object.defineProperty(e, t, {
-      enumerable: !0,
-      get: r[t]
-    })
-  }, i.f = {}, i.e = e => Promise.all(Object.keys(i.f).reduce(((r, t) => (i.f[t](e, r), r)), [])), i.u = e => "js/" + {
-    76: "a795c9ca81222c56913c",
-    218: "daa90d938067bcf9c323",
-    252: "470f98c9c3c9818c84c9",
-    357: "24a013e2186f65eaee90",
-    417: "3eda0fdb3c3cbc0b1b35",
-    510: "113b89b9f4c8ad0af64c",
-    634: "6394a7f512b11408aa93",
-    688: "a62fa47fcf9bc82f8a8f",
-    765: "6e82a37dcdab828ca0ec",
-    814: "b6f497970c2f08634db4",
-    975: "f7ddb2d78f634c61f85c",
-    976: "8588115fb29797f8a174",
-    986: "0aeb428f93a989461b29"
-  } [e] + ".js", i.miniCssF = e => "css/" + {
-    357: "398e6d2bb9cfc9fe6c89",
-    765: "441e04071467a3408264",
-    975: "95d64b8fb8565e696ddd"
-  } [e] + ".css", i.g = function() {
-    if ("object" == typeof globalThis) return globalThis;
-    try {
-      return this || new Function("return this")()
-    } catch (e) {
-      if ("object" == typeof window) return window
-    }
-  }(), i.o = (e, r) => Object.prototype.hasOwnProperty.call(e, r), e = {}, r = "@rockstargames/modules-core-newswire-article:", i.l = (t, a, o, n) => {
-    if (e[t]) e[t].push(a);
-    else {
-      var s, d;
-      if (void 0 !== o)
-        for (var l = document.getElementsByTagName("script"), u = 0; u < l.length; u++) {
-          var f = l[u];
-          if (f.getAttribute("src") == t || f.getAttribute("data-webpack") == r + o) {
-            s = f;
-            break
-          }
-        }
-      s || (d = !0, (s = document.createElement("script")).charset = "utf-8", s.timeout = 120, i.nc && s.setAttribute("nonce", i.nc), s.setAttribute("data-webpack", r + o), s.src = t), e[t] = [a];
-      var c = (r, a) => {
-          s.onerror = s.onload = null, clearTimeout(p);
-          var o = e[t];
-          if (delete e[t], s.parentNode && s.parentNode.removeChild(s), o && o.forEach((e => e(a))), r) return r(a)
-        },
-        p = setTimeout(c.bind(null, void 0, {
-          type: "timeout",
-          target: s
-        }), 12e4);
-      s.onerror = c.bind(null, s.onerror), s.onload = c.bind(null, s.onload), d && document.head.appendChild(s)
-    }
-  }, i.r = e => {
-    "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
-      value: "Module"
-    }), Object.defineProperty(e, "__esModule", {
-      value: !0
-    })
-  }, i.nmd = e => (e.paths = [], e.children || (e.children = []), e), t = {
-    76: [1968, 6077],
-    510: [3750, 5551],
-    634: [9542, 9929],
-    814: [334, 559, 1719, 2324, 3204, 3616, 6307, 6904],
-    975: [420, 3657, 4224, 4859, 6947, 8356],
-    976: [8976]
-  }, a = {
-    334: ["default", "./tina", 3113],
-    420: ["default", "./index", 8546],
-    559: ["default", "./helpers/uploads", 1489],
-    1719: ["default", "./tina", 6993],
-    1968: ["default", "./providers", 8810],
-    2324: ["default", "./helpers", 1489],
-    3204: ["default", "./tinaBlockTemplates", 6993],
-    3616: ["default", "./properties", 1489],
-    3657: ["default", "./hooks", 8810],
-    3750: ["default", "./index", 7304],
-    4224: ["default", "./index", 6993],
-    4859: ["default", "./index", 5171],
-    5551: ["default", "./index", 7958],
-    6077: ["default", "./operations/fragments/newswire-post.graphql", 5171],
-    6307: ["default", "./tinaBlockTemplates", 9525],
-    6904: ["default", "./tinaBlockTemplates", 3113],
-    6947: ["default", "./components", 7048],
-    8356: ["default", "./index", 3113],
-    8976: ["default", "./index", 9525],
-    9542: ["default", "./index", 1489],
-    9929: ["default", "./index", 8810]
-  }, i.f.remotes = (e, r) => {
-    i.o(t, e) && t[e].forEach((e => {
-      var t = i.R;
-      t || (t = []);
-      var o = a[e];
-      if (!(t.indexOf(o) >= 0)) {
-        if (t.push(o), o.p) return r.push(o.p);
-        var n = r => {
-            r || (r = new Error("Container missing")), "string" == typeof r.message && (r.message += '\nwhile loading "' + o[1] + '" from ' + o[2]), i.m[e] = () => {
-              throw r
-            }, o.p = 0
-          },
-          s = (e, t, a, i, s, d) => {
-            try {
-              var l = e(t, a);
-              if (!l || !l.then) return s(l, i, d);
-              var u = l.then((e => s(e, i)), n);
-              if (!d) return u;
-              r.push(o.p = u)
-            } catch (e) {
-              n(e)
-            }
-          },
-          d = (e, r, a) => s(r.get, o[1], t, 0, l, a),
-          l = r => {
-            o.p = 1, i.m[e] = e => {
-              e.exports = r()
-            }
-          };
-        s(i, o[2], 0, 0, ((e, r, t) => e ? s(i.I, o[0], 0, e, d, t) : n()), 1)
-      }
-    }))
-  }, (() => {
-    i.S = {};
-    var e = {},
-      r = {};
-    i.I = (t, a) => {
-      a || (a = []);
-      var o = r[t];
-      if (o || (o = r[t] = {}), !(a.indexOf(o) >= 0)) {
-        if (a.push(o), e[t]) return e[t];
-        i.o(i.S, t) || (i.S[t] = {});
-        var n = i.S[t],
-          s = "@rockstargames/modules-core-newswire-article",
-          d = e => {
-            var r = e => {
-              return r = "Initialization of sharing external failed: " + e, void("undefined" != typeof console && console.warn && console.warn(r));
-              var r
-            };
-            try {
-              var o = i(e);
-              if (!o) return;
-              var n = e => e && e.init && e.init(i.S[t], a);
-              if (o.then) return l.push(o.then(n, r));
-              var s = n(o);
-              if (s && s.then) return l.push(s.catch(r))
-            } catch (e) {
-              r(e)
-            }
-          },
-          l = [];
-        return "default" === t && (((e, r, t, a) => {
-          var o = n[e] = n[e] || {},
-            d = o[r];
-          (!d || !d.loaded && (1 != !d.eager ? a : s > d.from)) && (o[r] = {
-            get: () => i.e(252).then((() => () => i(8252))),
-            from: s,
-            eager: !1
-          })
-        })("react", "18.2.0"), d(9525), d(1489), d(8810), d(5171), d(7048), d(3113), d(8546), d(6993), d(7304), d(7958)), l.length ? e[t] = Promise.all(l).then((() => e[t] = 1)) : e[t] = 1
-      }
-    }
-  })(), (() => {
-    var e;
-    i.g.importScripts && (e = i.g.location + "");
-    var r = i.g.document;
-    if (!e && r && (r.currentScript && (e = r.currentScript.src), !e)) {
-      var t = r.getElementsByTagName("script");
-      if (t.length)
-        for (var a = t.length - 1; a > -1 && !e;) e = t[a--].src
-    }
-    if (!e) throw new Error("Automatic publicPath is not supported in this browser");
-    e = e.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/"), i.p = e
-  })(), (() => {
-    var e = e => {
-        var r = e => e.split(".").map((e => +e == e ? +e : e)),
-          t = /^([^-+]+)?(?:-([^+]+))?(?:\+(.+))?$/.exec(e),
-          a = t[1] ? r(t[1]) : [];
-        return t[2] && (a.length++, a.push.apply(a, r(t[2]))), t[3] && (a.push([]), a.push.apply(a, r(t[3]))), a
-      },
-      r = (t, a) => {
-        if (0 in t) {
-          a = e(a);
-          var o = t[0],
-            n = o < 0;
-          n && (o = -o - 1);
-          for (var i = 0, s = 1, d = !0;; s++, i++) {
-            var l, u, f = s < t.length ? (typeof t[s])[0] : "";
-            if (i >= a.length || "o" == (u = (typeof(l = a[i]))[0])) return !d || ("u" == f ? s > o && !n : "" == f != n);
-            if ("u" == u) {
-              if (!d || "u" != f) return !1
-            } else if (d)
-              if (f == u)
-                if (s <= o) {
-                  if (l != t[s]) return !1
-                } else {
-                  if (n ? l > t[s] : l < t[s]) return !1;
-                  l != t[s] && (d = !1)
-                }
-            else if ("s" != f && "n" != f) {
-              if (n || s <= o) return !1;
-              d = !1, s--
-            } else {
-              if (s <= o || u < f != n) return !1;
-              d = !1
-            } else "s" != f && "n" != f && (d = !1, s--)
-          }
-        }
-        var c = [],
-          p = c.pop.bind(c);
-        for (i = 1; i < t.length; i++) {
-          var m = t[i];
-          c.push(1 == m ? p() | p() : 2 == m ? p() & p() : m ? r(m, a) : !p())
-        }
-        return !!p()
-      },
-      t = (t, a, o) => {
-        var n = t[a];
-        return (a = Object.keys(n).reduce(((t, a) => !r(o, a) || t && !((r, t) => {
-          r = e(r), t = e(t);
-          for (var a = 0;;) {
-            if (a >= r.length) return a < t.length && "u" != (typeof t[a])[0];
-            var o = r[a],
-              n = (typeof o)[0];
-            if (a >= t.length) return "u" == n;
-            var i = t[a],
-              s = (typeof i)[0];
-            if (n != s) return "o" == n && "n" == s || "s" == s || "u" == n;
-            if ("o" != n && "u" != n && o != i) return o < i;
-            a++
-          }
-        })(t, a) ? t : a), 0)) && n[a]
-      },
-      a = (e => function(r, t, a, o) {
-        var n = i.I(r);
-        return n && n.then ? n.then(e.bind(e, r, i.S[r], t, a, o)) : e(r, i.S[r], t, a, o)
-      })(((e, r, a, o, n) => {
-        var s = r && i.o(r, a) && t(r, a, o);
-        return s ? (e => (e.loaded = 1, e.get()))(s) : n()
-      })),
-      o = {},
-      n = {
-        4932: () => a("default", "react", [1, 18, 2, 0], (() => i.e(252).then((() => () => i(8252)))))
-      },
-      s = {
-        634: [4932]
-      };
-    i.f.consumes = (e, r) => {
-      i.o(s, e) && s[e].forEach((e => {
-        if (i.o(o, e)) return r.push(o[e]);
-        var t = r => {
-            o[e] = 0, i.m[e] = t => {
-              delete i.c[e], t.exports = r()
-            }
-          },
-          a = r => {
-            delete o[e], i.m[e] = t => {
-              throw delete i.c[e], r
-            }
-          };
-        try {
-          var s = n[e]();
-          s.then ? r.push(o[e] = s.then(t).catch(a)) : t(s)
-        } catch (e) {
-          a(e)
-        }
+System.register(["@rockstargames/components", "@rockstargames/graph-client", "@rockstargames/modules-core-card", "@rockstargames/modules-core-carousel", "@rockstargames/modules-core-gif-viewer", "@rockstargames/modules-core-group-of-items", "@rockstargames/modules-core-videoplayer", "@rockstargames/modules-sc-ugc-spotlight", "@rockstargames/tina", "@rockstargames/utils"], (function(e, t) {
+  var r = {},
+    n = {},
+    o = {},
+    a = {},
+    s = {},
+    i = {},
+    u = {},
+    c = {},
+    l = {},
+    f = {};
+  return Object.defineProperty(r, "__esModule", {
+    value: !0
+  }), Object.defineProperty(n, "__esModule", {
+    value: !0
+  }), Object.defineProperty(o, "__esModule", {
+    value: !0
+  }), Object.defineProperty(a, "__esModule", {
+    value: !0
+  }), Object.defineProperty(s, "__esModule", {
+    value: !0
+  }), Object.defineProperty(i, "__esModule", {
+    value: !0
+  }), Object.defineProperty(u, "__esModule", {
+    value: !0
+  }), Object.defineProperty(c, "__esModule", {
+    value: !0
+  }), Object.defineProperty(l, "__esModule", {
+    value: !0
+  }), Object.defineProperty(f, "__esModule", {
+    value: !0
+  }), {
+    setters: [function(e) {
+      Object.keys(e).forEach((function(t) {
+        r[t] = e[t]
       }))
-    }
-  })(), (() => {
-    if ("undefined" != typeof document) {
-      var e = {
-        203: 0
-      };
-      i.f.miniCss = (r, t) => {
-        e[r] ? t.push(e[r]) : 0 !== e[r] && {
-          357: 1,
-          765: 1,
-          975: 1
-        } [r] && t.push(e[r] = (e => new Promise(((r, t) => {
-          var a = i.miniCssF(e),
-            o = i.p + a;
-          if (((e, r) => {
-              for (var t = document.getElementsByTagName("link"), a = 0; a < t.length; a++) {
-                var o = (i = t[a]).getAttribute("data-href") || i.getAttribute("href");
-                if ("stylesheet" === i.rel && (o === e || o === r)) return i
+    }, function(e) {
+      Object.keys(e).forEach((function(t) {
+        n[t] = e[t]
+      }))
+    }, function(e) {
+      Object.keys(e).forEach((function(t) {
+        o[t] = e[t]
+      }))
+    }, function(e) {
+      Object.keys(e).forEach((function(t) {
+        a[t] = e[t]
+      }))
+    }, function(e) {
+      Object.keys(e).forEach((function(t) {
+        s[t] = e[t]
+      }))
+    }, function(e) {
+      Object.keys(e).forEach((function(t) {
+        i[t] = e[t]
+      }))
+    }, function(e) {
+      Object.keys(e).forEach((function(t) {
+        u[t] = e[t]
+      }))
+    }, function(e) {
+      Object.keys(e).forEach((function(t) {
+        c[t] = e[t]
+      }))
+    }, function(e) {
+      Object.keys(e).forEach((function(t) {
+        l[t] = e[t]
+      }))
+    }, function(e) {
+      Object.keys(e).forEach((function(t) {
+        f[t] = e[t]
+      }))
+    }],
+    execute: function() {
+      e((() => {
+        var e, d, p, h, m = {
+            3580: (e, t, r) => {
+              (0, r(4879).s)(1)
+            },
+            4879: (e, t, r) => {
+              const n = r(2490).R;
+              t.s = function(e) {
+                if (e || (e = 1), !r.y.meta || !r.y.meta.url) throw console.error("__system_context__", r.y), Error("systemjs-webpack-interop was provided an unknown SystemJS context. Expected context.meta.url, but none was provided");
+                r.p = n(r.y.meta.url, e)
               }
-              var n = document.getElementsByTagName("style");
-              for (a = 0; a < n.length; a++) {
-                var i;
-                if ((o = (i = n[a]).getAttribute("data-href")) === e || o === r) return i
-              }
-            })(a, o)) return r();
-          ((e, r, t, a, o) => {
-            var n = document.createElement("link");
-            n.rel = "stylesheet", n.type = "text/css", n.onerror = n.onload = t => {
-              if (n.onerror = n.onload = null, "load" === t.type) a();
-              else {
-                var i = t && ("load" === t.type ? "missing" : t.type),
-                  s = t && t.target && t.target.href || r,
-                  d = new Error("Loading CSS chunk " + e + " failed.\n(" + s + ")");
-                d.code = "CSS_CHUNK_LOAD_FAILED", d.type = i, d.request = s, n.parentNode && n.parentNode.removeChild(n), o(d)
-              }
-            }, n.href = r, document.head.appendChild(n)
-          })(e, o, 0, r, t)
-        })))(r).then((() => {
-          e[r] = 0
-        }), (t => {
-          throw delete e[r], t
-        })))
-      }
-    }
-  })(), (() => {
-    var e = {
-      203: 0
-    };
-    i.f.j = (r, t) => {
-      var a = i.o(e, r) ? e[r] : void 0;
-      if (0 !== a)
-        if (a) t.push(a[2]);
-        else if (/^(357|510|634|976)$/.test(r)) e[r] = 0;
-      else {
-        var o = new Promise(((t, o) => a = e[r] = [t, o]));
-        t.push(a[2] = o);
-        var n = i.p + i.u(r),
-          s = new Error;
-        i.l(n, (t => {
-          if (i.o(e, r) && (0 !== (a = e[r]) && (e[r] = void 0), a)) {
-            var o = t && ("load" === t.type ? "missing" : t.type),
-              n = t && t.target && t.target.src;
-            s.message = "Loading chunk " + r + " failed.\n(" + o + ": " + n + ")", s.name = "ChunkLoadError", s.type = o, s.request = n, a[1](s)
-          }
-        }), "chunk-" + r, r)
-      }
-    };
-    var r = (r, t) => {
-        var a, o, n = t[0],
-          s = t[1],
-          d = t[2],
-          l = 0;
-        if (n.some((r => 0 !== e[r]))) {
-          for (a in s) i.o(s, a) && (i.m[a] = s[a]);
-          d && d(i)
+            },
+            1308: (e, t, r) => {
+              r(3580)
+            },
+            2490: (e, t, r) => {
+              t.R = function(e, t) {
+                var r = document.createElement("a");
+                r.href = e;
+                for (var n = "/" === r.pathname[0] ? r.pathname : "/" + r.pathname, o = 0, a = n.length; o !== t && a >= 0;) "/" === n[--a] && o++;
+                if (o !== t) throw Error("systemjs-webpack-interop: rootDirectoryLevel (" + t + ") is greater than the number of directories (" + o + ") in the URL path " + e);
+                var s = n.slice(0, a + 1);
+                return r.protocol + "//" + r.host + s
+              };
+              Number.isInteger
+            },
+            1103: (e, t, r) => {
+              "use strict";
+              var n = {
+                  "./NewswireArticle": () => Promise.all([r.e(688), r.e(218), r.e(976), r.e(634), r.e(975), r.e(510), r.e(357), r.e(76)]).then((() => () => r(8076))),
+                  "./NewswireTitle": () => Promise.all([r.e(976), r.e(634), r.e(765)]).then((() => () => r(1765))),
+                  "./index": () => Promise.all([r.e(688), r.e(976), r.e(634), r.e(975), r.e(510), r.e(986)]).then((() => () => r(7986))),
+                  "./components": () => Promise.all([r.e(688), r.e(976), r.e(634), r.e(975)]).then((() => () => r(3975))),
+                  "./types": () => Promise.all([r.e(688), r.e(218), r.e(976), r.e(634), r.e(975), r.e(510), r.e(357), r.e(417)]).then((() => () => r(417))),
+                  "./tinaBlockTemplates": () => Promise.all([r.e(976), r.e(814)]).then((() => () => r(8814)))
+                },
+                o = (e, t) => (r.R = t, t = r.o(n, e) ? n[e]() : Promise.resolve().then((() => {
+                  throw new Error('Module "' + e + '" does not exist in container.')
+                })), r.R = void 0, t),
+                a = (e, t) => {
+                  if (r.S) {
+                    var n = "default",
+                      o = r.S[n];
+                    if (o && o !== e) throw new Error("Container initialization failed as it has already been initialized with a different share scope");
+                    return r.S[n] = e, r.I(n, t)
+                  }
+                };
+              r.d(t, {
+                get: () => o,
+                init: () => a
+              })
+            },
+            5286: e => {
+              "use strict";
+              e.exports = r
+            },
+            5081: e => {
+              "use strict";
+              e.exports = n
+            },
+            4110: e => {
+              "use strict";
+              e.exports = o
+            },
+            9838: e => {
+              "use strict";
+              e.exports = a
+            },
+            3642: e => {
+              "use strict";
+              e.exports = s
+            },
+            299: e => {
+              "use strict";
+              e.exports = i
+            },
+            7124: e => {
+              "use strict";
+              e.exports = u
+            },
+            871: e => {
+              "use strict";
+              e.exports = c
+            },
+            7559: e => {
+              "use strict";
+              e.exports = l
+            },
+            2369: e => {
+              "use strict";
+              e.exports = f
+            }
+          },
+          v = {};
+
+        function b(e) {
+          var t = v[e];
+          if (void 0 !== t) return t.exports;
+          var r = v[e] = {
+            id: e,
+            loaded: !1,
+            exports: {}
+          };
+          return m[e].call(r.exports, r, r.exports, b), r.loaded = !0, r.exports
         }
-        for (r && r(t); l < n.length; l++) o = n[l], i.o(e, o) && e[o] && e[o][0](), e[o] = 0
-      },
-      t = self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || [];
-    t.forEach(r.bind(null, 0)), t.push = r.bind(null, t.push.bind(t))
-  })();
-  var s = i(1103);
-  modules_core_newswire_article = s
-})();
+        return b.m = m, b.c = v, b.y = t, b.n = e => {
+          var t = e && e.__esModule ? () => e.default : () => e;
+          return b.d(t, {
+            a: t
+          }), t
+        }, b.d = (e, t) => {
+          for (var r in t) b.o(t, r) && !b.o(e, r) && Object.defineProperty(e, r, {
+            enumerable: !0,
+            get: t[r]
+          })
+        }, b.f = {}, b.e = e => Promise.all(Object.keys(b.f).reduce(((t, r) => (b.f[r](e, t), t)), [])), b.u = e => "js/" + {
+          76: "551e314c55e2afeee696",
+          218: "daa90d938067bcf9c323",
+          252: "470f98c9c3c9818c84c9",
+          357: "24a013e2186f65eaee90",
+          417: "5cac79d5e62016b2e4dd",
+          510: "113b89b9f4c8ad0af64c",
+          634: "6394a7f512b11408aa93",
+          688: "a62fa47fcf9bc82f8a8f",
+          765: "f709174dad4026f5d4df",
+          814: "b6f497970c2f08634db4",
+          975: "cb60eeaea15c9066dc1a",
+          976: "8588115fb29797f8a174",
+          986: "0aeb428f93a989461b29"
+        } [e] + ".js", b.miniCssF = e => "css/" + {
+          357: "824ad19611a859d31a73",
+          765: "9dd6b269fafbfba94abc",
+          975: "3191df2bb33326844f1b"
+        } [e] + ".css", b.g = function() {
+          if ("object" == typeof globalThis) return globalThis;
+          try {
+            return this || new Function("return this")()
+          } catch (e) {
+            if ("object" == typeof window) return window
+          }
+        }(), b.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t), e = {}, d = "@rockstargames/modules-core-newswire-article:", b.l = (t, r, n, o) => {
+          if (e[t]) e[t].push(r);
+          else {
+            var a, s;
+            if (void 0 !== n)
+              for (var i = document.getElementsByTagName("script"), u = 0; u < i.length; u++) {
+                var c = i[u];
+                if (c.getAttribute("src") == t || c.getAttribute("data-webpack") == d + n) {
+                  a = c;
+                  break
+                }
+              }
+            a || (s = !0, (a = document.createElement("script")).charset = "utf-8", a.timeout = 120, b.nc && a.setAttribute("nonce", b.nc), a.setAttribute("data-webpack", d + n), a.src = t), e[t] = [r];
+            var l = (r, n) => {
+                a.onerror = a.onload = null, clearTimeout(f);
+                var o = e[t];
+                if (delete e[t], a.parentNode && a.parentNode.removeChild(a), o && o.forEach((e => e(n))), r) return r(n)
+              },
+              f = setTimeout(l.bind(null, void 0, {
+                type: "timeout",
+                target: a
+              }), 12e4);
+            a.onerror = l.bind(null, a.onerror), a.onload = l.bind(null, a.onload), s && document.head.appendChild(a)
+          }
+        }, b.r = e => {
+          "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
+            value: "Module"
+          }), Object.defineProperty(e, "__esModule", {
+            value: !0
+          })
+        }, b.nmd = e => (e.paths = [], e.children || (e.children = []), e), p = {
+          76: [1968, 6077],
+          510: [3750, 5551],
+          634: [9542, 9929],
+          814: [334, 559, 1719, 2324, 3204, 3616, 6307, 6904],
+          975: [420, 3657, 4224, 4859, 6947, 8356],
+          976: [8976]
+        }, h = {
+          334: ["default", "./tina", 3642],
+          420: ["default", "./index", 299],
+          559: ["default", "./helpers/uploads", 7559],
+          1719: ["default", "./tina", 7124],
+          1968: ["default", "./providers", 2369],
+          2324: ["default", "./helpers", 7559],
+          3204: ["default", "./tinaBlockTemplates", 7124],
+          3616: ["default", "./properties", 7559],
+          3657: ["default", "./hooks", 2369],
+          3750: ["default", "./index", 9838],
+          4224: ["default", "./index", 7124],
+          4859: ["default", "./index", 5081],
+          5551: ["default", "./index", 871],
+          6077: ["default", "./operations/fragments/newswire-post.graphql", 5081],
+          6307: ["default", "./tinaBlockTemplates", 5286],
+          6904: ["default", "./tinaBlockTemplates", 3642],
+          6947: ["default", "./components", 4110],
+          8356: ["default", "./index", 3642],
+          8976: ["default", "./index", 5286],
+          9542: ["default", "./index", 7559],
+          9929: ["default", "./index", 2369]
+        }, b.f.remotes = (e, t) => {
+          b.o(p, e) && p[e].forEach((e => {
+            var r = b.R;
+            r || (r = []);
+            var n = h[e];
+            if (!(r.indexOf(n) >= 0)) {
+              if (r.push(n), n.p) return t.push(n.p);
+              var o = t => {
+                  t || (t = new Error("Container missing")), "string" == typeof t.message && (t.message += '\nwhile loading "' + n[1] + '" from ' + n[2]), b.m[e] = () => {
+                    throw t
+                  }, n.p = 0
+                },
+                a = (e, r, a, s, i, u) => {
+                  try {
+                    var c = e(r, a);
+                    if (!c || !c.then) return i(c, s, u);
+                    var l = c.then((e => i(e, s)), o);
+                    if (!u) return l;
+                    t.push(n.p = l)
+                  } catch (e) {
+                    o(e)
+                  }
+                },
+                s = (e, t, o) => a(t.get, n[1], r, 0, i, o),
+                i = t => {
+                  n.p = 1, b.m[e] = e => {
+                    e.exports = t()
+                  }
+                };
+              a(b, n[2], 0, 0, ((e, t, r) => e ? a(b.I, n[0], 0, e, s, r) : o()), 1)
+            }
+          }))
+        }, (() => {
+          b.S = {};
+          var e = {},
+            t = {};
+          b.I = (r, n) => {
+            n || (n = []);
+            var o = t[r];
+            if (o || (o = t[r] = {}), !(n.indexOf(o) >= 0)) {
+              if (n.push(o), e[r]) return e[r];
+              b.o(b.S, r) || (b.S[r] = {});
+              var a = b.S[r],
+                s = "@rockstargames/modules-core-newswire-article",
+                i = e => {
+                  var t = e => {
+                    return t = "Initialization of sharing external failed: " + e, void("undefined" != typeof console && console.warn && console.warn(t));
+                    var t
+                  };
+                  try {
+                    var o = b(e);
+                    if (!o) return;
+                    var a = e => e && e.init && e.init(b.S[r], n);
+                    if (o.then) return u.push(o.then(a, t));
+                    var s = a(o);
+                    if (s && s.then) return u.push(s.catch(t))
+                  } catch (e) {
+                    t(e)
+                  }
+                },
+                u = [];
+              return "default" === r && (((e, t, r, n) => {
+                var o = a[e] = a[e] || {},
+                  i = o[t];
+                (!i || !i.loaded && (1 != !i.eager ? n : s > i.from)) && (o[t] = {
+                  get: () => b.e(252).then((() => () => b(8252))),
+                  from: s,
+                  eager: !1
+                })
+              })("react", "18.2.0"), i(5286), i(7559), i(2369), i(5081), i(4110), i(3642), i(299), i(7124), i(9838), i(871)), u.length ? e[r] = Promise.all(u).then((() => e[r] = 1)) : e[r] = 1
+            }
+          }
+        })(), b.p = "", (() => {
+          var e = e => {
+              var t = e => e.split(".").map((e => +e == e ? +e : e)),
+                r = /^([^-+]+)?(?:-([^+]+))?(?:\+(.+))?$/.exec(e),
+                n = r[1] ? t(r[1]) : [];
+              return r[2] && (n.length++, n.push.apply(n, t(r[2]))), r[3] && (n.push([]), n.push.apply(n, t(r[3]))), n
+            },
+            t = (r, n) => {
+              if (0 in r) {
+                n = e(n);
+                var o = r[0],
+                  a = o < 0;
+                a && (o = -o - 1);
+                for (var s = 0, i = 1, u = !0;; i++, s++) {
+                  var c, l, f = i < r.length ? (typeof r[i])[0] : "";
+                  if (s >= n.length || "o" == (l = (typeof(c = n[s]))[0])) return !u || ("u" == f ? i > o && !a : "" == f != a);
+                  if ("u" == l) {
+                    if (!u || "u" != f) return !1
+                  } else if (u)
+                    if (f == l)
+                      if (i <= o) {
+                        if (c != r[i]) return !1
+                      } else {
+                        if (a ? c > r[i] : c < r[i]) return !1;
+                        c != r[i] && (u = !1)
+                      }
+                  else if ("s" != f && "n" != f) {
+                    if (a || i <= o) return !1;
+                    u = !1, i--
+                  } else {
+                    if (i <= o || l < f != a) return !1;
+                    u = !1
+                  } else "s" != f && "n" != f && (u = !1, i--)
+                }
+              }
+              var d = [],
+                p = d.pop.bind(d);
+              for (s = 1; s < r.length; s++) {
+                var h = r[s];
+                d.push(1 == h ? p() | p() : 2 == h ? p() & p() : h ? t(h, n) : !p())
+              }
+              return !!p()
+            },
+            r = (r, n, o) => {
+              var a = r[n];
+              return (n = Object.keys(a).reduce(((r, n) => !t(o, n) || r && !((t, r) => {
+                t = e(t), r = e(r);
+                for (var n = 0;;) {
+                  if (n >= t.length) return n < r.length && "u" != (typeof r[n])[0];
+                  var o = t[n],
+                    a = (typeof o)[0];
+                  if (n >= r.length) return "u" == a;
+                  var s = r[n],
+                    i = (typeof s)[0];
+                  if (a != i) return "o" == a && "n" == i || "s" == i || "u" == a;
+                  if ("o" != a && "u" != a && o != s) return o < s;
+                  n++
+                }
+              })(r, n) ? r : n), 0)) && a[n]
+            },
+            n = (e => function(t, r, n, o) {
+              var a = b.I(t);
+              return a && a.then ? a.then(e.bind(e, t, b.S[t], r, n, o)) : e(t, b.S[t], r, n, o)
+            })(((e, t, n, o, a) => {
+              var s = t && b.o(t, n) && r(t, n, o);
+              return s ? (e => (e.loaded = 1, e.get()))(s) : a()
+            })),
+            o = {},
+            a = {
+              4932: () => n("default", "react", [1, 18, 2, 0], (() => b.e(252).then((() => () => b(8252)))))
+            },
+            s = {
+              634: [4932]
+            };
+          b.f.consumes = (e, t) => {
+            b.o(s, e) && s[e].forEach((e => {
+              if (b.o(o, e)) return t.push(o[e]);
+              var r = t => {
+                  o[e] = 0, b.m[e] = r => {
+                    delete b.c[e], r.exports = t()
+                  }
+                },
+                n = t => {
+                  delete o[e], b.m[e] = r => {
+                    throw delete b.c[e], t
+                  }
+                };
+              try {
+                var s = a[e]();
+                s.then ? t.push(o[e] = s.then(r).catch(n)) : r(s)
+              } catch (e) {
+                n(e)
+              }
+            }))
+          }
+        })(), (() => {
+          if ("undefined" != typeof document) {
+            var e = {
+              947: 0
+            };
+            b.f.miniCss = (t, r) => {
+              e[t] ? r.push(e[t]) : 0 !== e[t] && {
+                357: 1,
+                765: 1,
+                975: 1
+              } [t] && r.push(e[t] = (e => new Promise(((t, r) => {
+                var n = b.miniCssF(e),
+                  o = b.p + n;
+                if (((e, t) => {
+                    for (var r = document.getElementsByTagName("link"), n = 0; n < r.length; n++) {
+                      var o = (s = r[n]).getAttribute("data-href") || s.getAttribute("href");
+                      if ("stylesheet" === s.rel && (o === e || o === t)) return s
+                    }
+                    var a = document.getElementsByTagName("style");
+                    for (n = 0; n < a.length; n++) {
+                      var s;
+                      if ((o = (s = a[n]).getAttribute("data-href")) === e || o === t) return s
+                    }
+                  })(n, o)) return t();
+                ((e, t, r, n, o) => {
+                  var a = document.createElement("link");
+                  a.rel = "stylesheet", a.type = "text/css", a.onerror = a.onload = r => {
+                    if (a.onerror = a.onload = null, "load" === r.type) n();
+                    else {
+                      var s = r && ("load" === r.type ? "missing" : r.type),
+                        i = r && r.target && r.target.href || t,
+                        u = new Error("Loading CSS chunk " + e + " failed.\n(" + i + ")");
+                      u.code = "CSS_CHUNK_LOAD_FAILED", u.type = s, u.request = i, a.parentNode && a.parentNode.removeChild(a), o(u)
+                    }
+                  }, a.href = t, document.head.appendChild(a)
+                })(e, o, 0, t, r)
+              })))(t).then((() => {
+                e[t] = 0
+              }), (r => {
+                throw delete e[t], r
+              })))
+            }
+          }
+        })(), (() => {
+          var e = {
+            947: 0
+          };
+          b.f.j = (t, r) => {
+            var n = b.o(e, t) ? e[t] : void 0;
+            if (0 !== n)
+              if (n) r.push(n[2]);
+              else if (/^(357|510|634|976)$/.test(t)) e[t] = 0;
+            else {
+              var o = new Promise(((r, o) => n = e[t] = [r, o]));
+              r.push(n[2] = o);
+              var a = b.p + b.u(t),
+                s = new Error;
+              b.l(a, (r => {
+                if (b.o(e, t) && (0 !== (n = e[t]) && (e[t] = void 0), n)) {
+                  var o = r && ("load" === r.type ? "missing" : r.type),
+                    a = r && r.target && r.target.src;
+                  s.message = "Loading chunk " + t + " failed.\n(" + o + ": " + a + ")", s.name = "ChunkLoadError", s.type = o, s.request = a, n[1](s)
+                }
+              }), "chunk-" + t, t)
+            }
+          };
+          var t = (t, r) => {
+              var n, o, a = r[0],
+                s = r[1],
+                i = r[2],
+                u = 0;
+              if (a.some((t => 0 !== e[t]))) {
+                for (n in s) b.o(s, n) && (b.m[n] = s[n]);
+                i && i(b)
+              }
+              for (t && t(r); u < a.length; u++) o = a[u], b.o(e, o) && e[o] && e[o][0](), e[o] = 0
+            },
+            r = self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || [];
+          r.forEach(t.bind(null, 0)), r.push = t.bind(null, r.push.bind(r))
+        })(), b(1308), b(1103)
+      })())
+    }
+  }
+}));
