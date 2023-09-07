@@ -92,6 +92,11 @@
             description: "Aria label when a metal level is not unlocked",
             defaultMessage: "Not unlocked"
           },
+          cph_progress_bar_aria: {
+            id: "cph_progress_bar_aria",
+            description: "Label for progress bar on the Career Progress Hub",
+            defaultMessage: "Progress Bar"
+          },
           cph_progress_tracker_title: {
             id: "cph_progress_tracker_title",
             description: "Title for section on the Career Progress Hub",
@@ -200,7 +205,7 @@
           cph_login_prompt_button_helper_link: {
             id: "cph_login_prompt_button_helper_link",
             description: "Helper text link for under login prompt button",
-            defaultMessage: "Join Social Club."
+            defaultMessage: "Join Social Club"
           },
           cph_callout_feedback_title: {
             id: "cph_callout_feedback_title",
@@ -253,22 +258,22 @@
             defaultMessage: "Highlight {index} of {total}"
           }
         }),
-        u = (0, m.makeVar)({
+        b = (0, m.makeVar)({
           awardsKey: null,
           rewardsKey: null
         }),
-        b = e => u({
-          ...u(),
+        u = e => b({
+          ...b(),
           awardsKey: e
         }),
-        h = e => u({
-          ...u(),
+        h = e => b({
+          ...b(),
           rewardsKey: e
         }),
         k = () => {
-          const e = (0, m.useReactiveVar)(u);
+          const e = (0, m.useReactiveVar)(b);
           return {
-            setAwardsKey: b,
+            setAwardsKey: u,
             setRewardsKey: h,
             state: e
           }
@@ -308,7 +313,7 @@
             }))
           })
         },
-        A = {
+        v = {
           progressBar: "_0713d670aa98ab78f9dd52f0104ffc554a4f",
           bronze: "_0713d670aa98ab78ffeee3b6bfb9ce085d23",
           silver: "_0713d670aa98ab78dc5a1b4987769b776c93",
@@ -318,23 +323,25 @@
           collapsed: "_0713d670aa98ab78f8df00393e1c037f1afc",
           visuallyHidden: "_0713d670aa98ab78cdd7d528c83f6fcfc68f"
         },
-        v = e => {
+        A = e => {
           let {
             theme: a,
             percentage: t,
             isExpanded: s = !1,
             classes: r = ""
           } = e;
+          const c = (0, i.useIntl)();
           return (0, R.jsx)("div", {
-            className: `${r} ${[A.progressBar,a&&A[a],s?"":A.collapsed].join(" ")}`,
+            className: `${r} ${[v.progressBar,a&&v[a],s?"":v.collapsed].join(" ")}`,
             role: "progressbar",
+            "aria-label": c.formatMessage(f.cph_progress_bar_aria),
             children: (0, R.jsx)("div", {
-              className: [A.filler, a && A[a]].join(" "),
+              className: [v.filler, a && v[a]].join(" "),
               style: {
                 width: `${t}%`
               },
               children: (0, R.jsx)("span", {
-                className: A.visuallyHidden,
+                className: v.visuallyHidden,
                 children: `${t}%`
               })
             })
@@ -385,7 +392,8 @@
           awardDetails: "_0713d670aa98ab78f317c539f80024bc7c28",
           awardImage: "_0713d670aa98ab78c548f5286fc7ba071736",
           expanded: "_0713d670aa98ab78bc4c7d07fb9a091808d9",
-          tooltipInner: "_0713d670aa98ab78fbf920236ea1fcdc4a8a"
+          tooltipInner: "_0713d670aa98ab78fbf920236ea1fcdc4a8a",
+          progressCounter: "_0713d670aa98ab78bcd1599498c111da3100"
         },
         {
           cdnBase: O
@@ -401,9 +409,11 @@
             toggleModal: c,
             classes: o,
             position: i,
-            hoverFn: n
+            hoverFn: n,
+            setHoveredAwardId: m,
+            isShowTooltip: _
           } = e;
-          const m = function(e) {
+          const g = function(e) {
               let a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [];
               const t = {
                 progress: void 0 === e ? void 0 : Number(e),
@@ -428,18 +438,17 @@
               var s, r, c;
               return t
             }(a.playerProgress, a.levels),
-            _ = r ? l.E.button : "li",
-            [g, E] = (0, s.useState)(null),
+            E = r ? l.E.button : "li",
             [S, f] = (0, s.useState)(null),
-            [u, b] = (0, s.useState)(!1),
+            [b, u] = (0, s.useState)(null),
             [h, k] = (0, s.useState)(null),
             {
               track: j
             } = (0, d.useGtmTrack)(),
             {
-              styles: A,
+              styles: v,
               attributes: P
-            } = (0, p.D)(g, S, {
+            } = (0, p.D)(S, b, {
               placement: "auto",
               modifiers: [{
                 name: "flip",
@@ -451,10 +460,10 @@
             });
 
           function w(e) {
-            r || (b(e), n(e))
+            r || (n(e), m(i))
           }(0, s.useEffect)((() => {
-            if (!u && h) clearTimeout(h), k(null);
-            else if (u && !h) {
+            if (!_ && h) clearTimeout(h), k(null);
+            else if (_ && !h) {
               const e = setTimeout((() => {
                 j({
                   event: "awards_hover",
@@ -467,15 +476,15 @@
               }), 1e3);
               k(e)
             }
-          }), [u, h]);
+          }), [_, h]);
           const G = (0, s.useRef)(null);
           return (0, R.jsxs)(R.Fragment, {
-            children: [(0, R.jsxs)(_, {
-              ..."li" !== _ && {
+            children: [(0, R.jsxs)(E, {
+              ..."li" !== E && {
                 layout: "position"
               },
-              className: [x.award, ...m.isComplete ? [x.completed] : [], ...t ? [x.expanded] : [], ...u ? [x.hovered] : [], ...o ? [o] : []].join(" "),
-              ref: r ? G : E,
+              className: [x.award, ...g.isComplete ? [x.completed] : [], ...t ? [x.expanded] : [], ..._ ? [x.hovered] : [], ...o ? [o] : []].join(" "),
+              ref: r ? G : f,
               tabIndex: 0,
               ...r && !t && {
                 onClick: () => {
@@ -507,7 +516,7 @@
                   children: [(0, R.jsx)("div", {
                     className: x.awardImage,
                     children: (0, R.jsx)("img", {
-                      src: `${O}/images/games/GTAV/multiplayer/award/${m.currentLevel}/${a.imageName}.png`,
+                      src: `${O}/images/games/GTAV/multiplayer/award/${g.currentLevel}/${a.imageName}.png`,
                       alt: a.name
                     })
                   }), (0, R.jsxs)("div", {
@@ -519,14 +528,15 @@
                       className: x.awardHint,
                       children: a.hint
                     }), (0, R.jsx)(T, {
-                      theme: m.currentLevel,
-                      value: m.progress,
-                      total: m.levelEnd
+                      theme: g.currentLevel,
+                      value: g.progress,
+                      total: g.levelEnd,
+                      classes: x.progressCounter
                     })]
                   })]
-                }), !m.isComplete && (0, R.jsx)(v, {
-                  theme: m.currentLevel,
-                  percentage: m.percent,
+                }), !g.isComplete && (0, R.jsx)(A, {
+                  theme: g.currentLevel,
+                  percentage: g.percent,
                   isExpanded: t,
                   classes: x.progressBar
                 })]
@@ -534,15 +544,15 @@
                 className: x.metalLegendContainer,
                 children: (0, R.jsx)(I, {
                   metals: a.levels && a.levels.length > 1 ? C : [N],
-                  currentLevel: m.currentLevel,
-                  currentLevelComplete: m.isComplete,
+                  currentLevel: g.currentLevel,
+                  currentLevelComplete: g.isComplete,
                   classes: x.metalLegend
                 })
               })]
-            }), !r && u && (0, R.jsx)("div", {
+            }), !r && _ && (0, R.jsx)("div", {
               className: x.tooltip,
-              style: A.popper,
-              ref: f,
+              style: v.popper,
+              ref: u,
               ...P,
               children: (0, R.jsx)("div", {
                 className: x.tooltipInner,
@@ -609,14 +619,14 @@
             loggedIn: E
           } = (0, d.useRockstarUser)(), {
             selectedCharacterTuple: S
-          } = (0, d.useRockstarUserState)(), u = o ? function() {
+          } = (0, d.useRockstarUserState)(), b = o ? function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [],
               a = 0;
             return e && e.forEach((e => {
               const t = e.levels ? Number(e.levels[e.levels.length - 1]) : 1;
               e.playerProgress && e.playerProgress >= t && (a += 1)
             })), a
-          }(o) : 0, [b, h] = (0, s.useState)(!1), [j, I] = (0, s.useState)(!1), [A, v] = (0, s.useState)(!1), {
+          }(o) : 0, [u, h] = (0, s.useState)(!1), [j, I] = (0, s.useState)(!1), [v, A] = (0, s.useState)(!1), {
             setBodyIsScrollable: P
           } = (0, n.useBodyScrollable)(), {
             track: x
@@ -624,13 +634,13 @@
             inView: L
           } = (0, _.YD)({
             threshold: .6
-          });
+          }), [H, U] = (0, s.useState)(0);
           (0, s.useEffect)((() => {
             D.forEach((e => {
               a > e.min && a < e.max && (W(e.show), C(e.peek))
             }))
           }), [a]), (0, s.useEffect)((() => {
-            b && !e ? P(!0) : b && e && h(!1)
+            u && !e ? P(!0) : u && e && h(!1)
           }), [e]), (0, s.useEffect)((() => {
             L && !z && (x({
               event: "page_section_impression",
@@ -640,16 +650,16 @@
               element_placement: "awards"
             }), M(!0))
           }), [L]);
-          const H = (0, s.useCallback)((() => {
+          const B = (0, s.useCallback)((() => {
             const a = V.current;
-            e && P(b), a && (b || x({
+            e && P(u), a && (u || x({
               event: "view_all",
               event_action: "view_all",
               event_category: "click",
               event_label: "awards",
               text: "awards",
               element_placement: "awards"
-            })), b && (I(!0), x({
+            })), u && (I(!0), x({
               event: "nav_back",
               event_action: "back",
               event_category: "nav",
@@ -662,8 +672,8 @@
               behavior: "smooth"
             })), setTimeout((() => {
               I(!1)
-            }), 400), h(!b)
-          }), [b, V?.current, e]);
+            }), 400), h(!u)
+          }), [u, V?.current, e]);
           if ((0, s.useEffect)((() => {
               (async () => {
                 if (null === E || null === S || !c) return;
@@ -701,12 +711,12 @@
                 p(t)
               })()
             }), [c, E, S]), !c || !o.length) return null;
-          const U = e ? "div" : "ul",
-            B = e ? l.E.div : "div";
+          const F = e ? "div" : "ul",
+            $ = e ? l.E.div : "div";
           return (0, R.jsx)("div", {
             className: G.awardsOuter,
-            children: (0, R.jsxs)(B, {
-              "data-open": b && e,
+            children: (0, R.jsxs)($, {
+              "data-open": u && e,
               ...e && {
                 layout: "position"
               },
@@ -716,53 +726,58 @@
                 damping: 100,
                 duration: .3
               },
-              className: [G.awardsContainer, b && e ? G.modalOpen : "", b && !e ? G.expanded : "", !b && j ? G.isClosed : "", A && !e ? G.hovered : ""].join(" "),
+              className: [G.awardsContainer, u && e ? G.modalOpen : "", u && !e ? G.expanded : "", !u && j ? G.isClosed : "", v && !e ? G.hovered : ""].join(" "),
               ref: V,
               children: [(0, R.jsxs)("div", {
                 className: G.awardCategoryContainer,
-                children: [(0, R.jsxs)("h2", {
-                  className: G.awardCategoryName,
-                  children: [b && e && (0, R.jsx)("button", {
-                    type: "button",
-                    onClick: () => H(),
-                    children: (0, R.jsx)("img", {
-                      src: t(9806),
-                      alt: "Back"
-                    })
-                  }), (0, R.jsx)(i.FormattedMessage, {
-                    ...f.cph_awards_title
-                  })]
+                children: [(0, R.jsx)("div", {
+                  className: G.awardsTitle,
+                  children: (0, R.jsxs)("h2", {
+                    className: G.awardCategoryName,
+                    children: [u && e && (0, R.jsx)("button", {
+                      type: "button",
+                      onClick: () => B(),
+                      children: (0, R.jsx)("img", {
+                        src: t(9806),
+                        alt: "Back"
+                      })
+                    }), (0, R.jsx)(i.FormattedMessage, {
+                      ...f.cph_awards_title
+                    })]
+                  })
                 }), (0, R.jsx)("span", {
                   children: (0, R.jsx)(T, {
-                    value: u,
+                    value: b,
                     total: o.length,
                     theme: "platinum",
                     classes: G.awardCount
                   })
                 })]
-              }), (0, R.jsxs)(B, {
+              }), (0, R.jsxs)($, {
                 ...e && {
                   layout: "position"
                 },
                 className: G.categoryWrapper,
-                children: [(0, R.jsx)(U, {
+                children: [(0, R.jsx)(F, {
                   className: G.awardCategory,
                   ref: y,
                   children: o.map(((a, t) => (0, R.jsx)(w, {
                     position: t,
                     award: a,
-                    isExpanded: e && b,
+                    isExpanded: e && u,
                     isMobile: e,
-                    toggleModal: e && H,
-                    hoverFn: v,
+                    toggleModal: e && B,
+                    hoverFn: A,
+                    setHoveredAwardId: U,
+                    isShowTooltip: t === H,
                     classes: [G.award, t >= O + N ? G.fadeIn : "", t >= O && t < O + N ? G.peek : ""].join(" ")
                   }, a.imageName)))
                 }), o.length > O && (0, R.jsx)("div", {
-                  className: b ? G.showLess : G.showMore,
+                  className: u ? G.showLess : G.showMore,
                   children: (0, R.jsx)("button", {
                     type: "button",
-                    onClick: () => H(),
-                    children: b ? (0, R.jsx)(i.FormattedMessage, {
+                    onClick: () => B(),
+                    children: u ? (0, R.jsx)(i.FormattedMessage, {
                       ...f.cph_progress_rewards_view_less
                     }) : (0, R.jsx)(i.FormattedMessage, {
                       ...f.cph_progress_rewards_view_all
@@ -786,9 +801,8 @@
       }
       const L = e => s.createElement("svg", M({
         xmlns: "http://www.w3.org/2000/svg",
-        width: 96,
-        height: 21,
-        fill: "none"
+        fill: "none",
+        viewBox: "0 0 96 21"
       }, e), y || (y = s.createElement("g", {
         fill: "#fff",
         clipPath: "url(#ps5_svg__a)"
@@ -815,9 +829,8 @@
       }
       const F = e => s.createElement("svg", B({
           xmlns: "http://www.w3.org/2000/svg",
-          width: 160,
-          height: 20,
-          fill: "none"
+          fill: "none",
+          viewBox: "0 0 160 20"
         }, e), H || (H = s.createElement("g", {
           clipPath: "url(#xboxseriesxs_svg__a)"
         }, s.createElement("path", {
@@ -920,11 +933,11 @@
             setIsModalOpen: _,
             rewardsContainer: p
           } = e;
-          const [g, E] = (0, s.useState)(window.innerWidth >= 1280), [S, u] = (0, s.useState)(1), [b, h] = (0, s.useState)("auto"), {
+          const [g, E] = (0, s.useState)(window.innerWidth >= 1280), [S, b] = (0, s.useState)(1), [u, h] = (0, s.useState)("auto"), {
             track: k
           } = (0, d.useGtmTrack)(), {
             setBodyIsScrollable: j
-          } = (0, n.useBodyScrollable)(), [I, A] = (0, s.useState)(!1), v = (0, s.useRef)(), P = g ? Z.tq : "div", T = g ? Z.o5 : "li", x = (0, s.useRef)(null), O = (0, s.useRef)(null), W = r.some((e => e.isCompleted && e?.numClaimable > 0)), N = (0, i.useIntl)(), C = (0, s.useMemo)((() => {
+          } = (0, n.useBodyScrollable)(), [I, v] = (0, s.useState)(!1), A = (0, s.useRef)(), P = g ? Z.tq : "div", T = g ? Z.o5 : "li", x = (0, s.useRef)(null), O = (0, s.useRef)(null), W = r.some((e => e.isCompleted && e?.numClaimable > 0)), N = (0, i.useIntl)(), C = (0, s.useMemo)((() => {
             const e = [];
             return r.forEach(((a, t) => {
               a.rewards.forEach(((a, s) => {
@@ -958,23 +971,23 @@
                 text: "rewards",
                 element_placement: "rewards"
               }), g)
-              if (m) v.current?.swiper.disable(), u(0), setTimeout((() => {
-                v.current?.swiper.enable();
+              if (m) A.current?.swiper.disable(), b(0), setTimeout((() => {
+                A.current?.swiper.enable();
                 const e = C.findIndex((e => e.id === `reward-${a}-0`));
-                v.current?.swiper.slideTo(e), v.current?.swiper.disable(), A(!1), v.current?.swiper.enable(), v.current?.swiper.slideTo(0)
+                A.current?.swiper.slideTo(e), A.current?.swiper.disable(), v(!1), A.current?.swiper.enable(), A.current?.swiper.slideTo(0)
               }), 100), setTimeout((() => {
-                _(!1), u(1)
+                _(!1), b(1)
               }), 250);
               else {
                 const e = p.current,
                   t = e?.offsetTop;
-                o(t), v.current?.swiper.disable(), A(!0);
+                o(t), A.current?.swiper.disable(), v(!0);
                 let s = C.findIndex((e => e.id === `reward-${a}-0`));
-                1 === r[a].rewards.length && (s -= 1), v.current?.swiper.slideTo(s), setTimeout((() => {
-                  v.current?.swiper.enable(), v.current?.swiper.slideTo(s), _(!0)
+                1 === r[a].rewards.length && (s -= 1), A.current?.swiper.slideTo(s), setTimeout((() => {
+                  A.current?.swiper.enable(), A.current?.swiper.slideTo(s), _(!0)
                 }), 10)
               }
-            else j(m), _(!m), A(!m)
+            else j(m), _(!m), v(!m)
           }
           return (0, s.useEffect)((() => (window.addEventListener("resize", w), w(), () => {
             window.removeEventListener("resize", w)
@@ -1026,10 +1039,10 @@
             }), (0, R.jsx)("div", {
               className: q.container,
               style: {
-                "--max-width-static-md": `${b}px`
+                "--max-width-static-md": `${u}px`
               },
               children: (0, R.jsxs)(P, {
-                ref: v,
+                ref: A,
                 modules: [K.Qr, K.W_],
                 ...g && {
                   breakpoints: {
@@ -1081,12 +1094,13 @@
                 })).filter(Boolean)]
               })
             })]
-          })), [a, C?.length, g, m, b, I, S])
+          })), [a, C?.length, g, m, u, I, S])
         },
         Q = {
           progressTracker: "_0713d670aa98ab78cfdee6636785b5ed6619",
           progressTrackerHeader: "_0713d670aa98ab78cfd3873d5fc89521cf03",
           platformAvailability: "_0713d670aa98ab78a2d5d9219bf1c396a633",
+          platformIcons: "_0713d670aa98ab78a39129c69f16848fc824",
           container: "_0713d670aa98ab78f5a146d8ef384e95fc19",
           tiers: "_0713d670aa98ab78b2573543a428855aee30",
           active: "_0713d670aa98ab78e4a0d1857c1a44e5a07e",
@@ -1126,13 +1140,13 @@
                 ...r
               })
             })), a
-          })(o.tiers) : null, [E, u] = (0, s.useState)(0), [b, h] = (0, s.useState)(!1), {
+          })(o.tiers) : null, [E, b] = (0, s.useState)(0), [u, h] = (0, s.useState)(!1), {
             ref: j,
             inView: I
           } = (0, _.YD)({
             threshold: .6
-          }), A = (0, m.useRockstarTokenPing)(), {
-            loggedIn: v
+          }), v = (0, m.useRockstarTokenPing)(), {
+            loggedIn: A
           } = (0, d.useRockstarUser)(), {
             selectedCharacterTuple: P
           } = (0, d.useRockstarUserState)(), {
@@ -1141,7 +1155,7 @@
             track: x
           } = (0, d.useGtmTrack)(), [O, W] = (0, s.useState)(!1), [N, C] = (0, s.useState)("auto"), [w, G] = (0, s.useState)("auto"), D = (0, s.useRef)(null), V = (0, s.useRef)();
           if ((0, s.useEffect)((() => {
-              I && !b && (x({
+              I && !u && (x({
                 event: "page_section_impression",
                 event_action: "impression",
                 event_category: "page_section",
@@ -1149,15 +1163,15 @@
                 element_placement: "progress & rewards"
               }), h(!0))
             }), [I]), (0, s.useEffect)((() => {
-              null !== v && null !== P && c && (async e => {
+              null !== A && null !== P && c && (async e => {
                 (async () => {
                   const {
                     error: a = null,
                     result: t
                   } = await (0, n.coreScApiFetch)("games/gtao/career/progress/section", {
-                    pingBearer: A,
+                    pingBearer: v,
                     useCache: !0,
-                    ...v ? {} : {
+                    ...A ? {} : {
                       requireBearerToken: !1
                     },
                     query: e
@@ -1170,7 +1184,7 @@
                 platform: P?.[0],
                 slot: P?.[1]
               })
-            }), [v, P, c]), !g?.[E] || !c) return null;
+            }), [A, P, c]), !g?.[E] || !c) return null;
           const {
             challenges: y,
             rewards: z
@@ -1196,6 +1210,7 @@
                     ...f.cph_progress_available_on
                   })
                 }), (0, R.jsxs)("div", {
+                  className: Q.platformIcons,
                   children: [(0, R.jsx)(L, {
                     "aria-label": T(f.cph_progress_available_on_aria_ps5)
                   }), (0, R.jsx)(F, {
@@ -1219,7 +1234,9 @@
                       type: "button",
                       className: [Q.tier, E === a ? Q.active : ""].join(" "),
                       onClick: () => {
-                        switchTiers(a), x({
+                        ! function(e) {
+                          b(e)
+                        }(a), x({
                           event: "component_tab_click",
                           event_action: "tab_click",
                           event_category: "component",
@@ -1268,7 +1285,9 @@
                   tiers: g,
                   activeTier: E,
                   isModalOpen: O,
-                  setIsModalOpen: e => {},
+                  setIsModalOpen: e => {
+                    W(e)
+                  },
                   setHeight: C,
                   setOffset: G,
                   rewardsContainer: V
@@ -1441,7 +1460,7 @@
         fe = {
           navScrollButton: "_0713d670aa98ab78b252dd6a81cf8eae3032"
         },
-        ue = e => {
+        be = e => {
           let {
             direction: a,
             className: t,
@@ -1454,7 +1473,7 @@
             children: ["left" === a && (0, R.jsx)(ge, {}), "right" === a && (0, R.jsx)(Se, {})]
           })
         },
-        be = {
+        ue = {
           initial: {
             height: "0dvh"
           },
@@ -1488,23 +1507,23 @@
             _ = (0, s.useMemo)((() => Math.max(a.findIndex((e => e.name === t)), 0)), [a, m]),
             [p, g] = (0, s.useState)(_),
             [E, S] = (0, s.useState)(!1),
-            [u, b] = (0, s.useState)(!1),
+            [b, u] = (0, s.useState)(!1),
             [h, k] = (0, s.useState)(!1),
             j = (0, s.useRef)(null),
             {
               track: I
             } = (0, d.useGtmTrack)(),
-            A = (0, s.useContext)(je),
-            v = [...a],
-            P = v[p],
+            v = (0, s.useContext)(je),
+            A = [...a],
+            P = A[p],
             T = e => {
-              e.isEnd ? b(!0) : b(!1), e.isBeginning ? k(!0) : k(!1)
+              e.isEnd ? u(!0) : u(!1), e.isBeginning ? k(!0) : k(!1)
             };
           return (0, s.useEffect)((() => {
             j.current && ((j.current?.wrapperEl.clientWidth || 0) > (j.current?.el.clientWidth || 0) ? (S(!0), j.current.params.centeredSlides = !0, j.current.params.centeredSlidesBounds = !0) : (S(!1), j.current.params.centeredSlides = !1, j.current.params.centeredSlidesBounds = !1))
           }), [j.current?.wrapperEl.clientWidth, j.current?.el.clientWidth]), (0, R.jsx)(l.E.div, {
             className: _e.navMenu,
-            variants: be,
+            variants: ue,
             initial: "initial",
             animate: c ? "open" : "closed",
             children: (0, R.jsxs)("div", {
@@ -1513,7 +1532,7 @@
                 className: _e.sectionMenu,
                 children: [!h && E && (0, R.jsx)("div", {
                   className: _e.previousSectionNavButton,
-                  children: (0, R.jsx)(ue, {
+                  children: (0, R.jsx)(be, {
                     direction: "left",
                     className: _e.previousNavButton,
                     onClick: () => j.current?.slidePrev(),
@@ -1533,9 +1552,9 @@
                     initialSlide: p,
                     onSlideChange: T,
                     onResize: T,
-                    onReachEnd: () => b(!0),
+                    onReachEnd: () => u(!0),
                     onReachBeginning: () => k(!0),
-                    children: v.map(((e, a) => {
+                    children: A.map(((e, a) => {
                       let {
                         title: t
                       } = e;
@@ -1548,7 +1567,7 @@
                               event_action: "click",
                               event_category: "nav",
                               event_label: `Secondary Nav > ${a}`,
-                              text: `Secondary Nav > ${A} > ${a}`,
+                              text: `Secondary Nav > ${v} > ${a}`,
                               link_url: void 0,
                               element_placement: "Secondary Nav"
                             })
@@ -1560,9 +1579,9 @@
                       }, t)
                     }))
                   })
-                }), !u && E && (0, R.jsx)("div", {
+                }), !b && E && (0, R.jsx)("div", {
                   className: _e.nextSectionNavButton,
-                  children: (0, R.jsx)(ue, {
+                  children: (0, R.jsx)(be, {
                     direction: "right",
                     className: _e.nextNavButton,
                     onClick: () => j.current?.slideNext(),
@@ -1589,8 +1608,8 @@
                           event: "nav_click",
                           event_action: "click",
                           event_category: "nav",
-                          event_label: `Secondary Nav > ${A} > ${P.title} > ${e}`,
-                          text: `Secondary Nav > ${A} > ${P.title} > ${e}`,
+                          event_label: `Secondary Nav > ${v} > ${P.title} > ${e}`,
+                          text: `Secondary Nav > ${v} > ${P.title} > ${e}`,
                           link_url: a,
                           element_placement: "Secondary Nav"
                         }), r()
@@ -1634,7 +1653,7 @@
             }
           }
         },
-        Ae = e => {
+        ve = e => {
           let {
             title: a
           } = e;
@@ -1675,13 +1694,13 @@
             setBodyIsScrollable: i
           } = (0, n.useBodyScrollable)(), {
             state: _
-          } = (0, n.useRockstarLocalState)(), [p, g] = (0, s.useState)(!1), [E, S] = (0, s.useState)(!1), [f, u] = (0, s.useState)(!1), {
-            pageYOffset: b
+          } = (0, n.useRockstarLocalState)(), [p, g] = (0, s.useState)(!1), [E, S] = (0, s.useState)(!1), [f, b] = (0, s.useState)(!1), {
+            pageYOffset: u
           } = (0, n.useScroll)(), {
             track: h
-          } = (0, d.useGtmTrack)(), k = (0, s.useContext)(je), j = !_.navHidden, I = !o && c?.length > 0, A = (0, s.useMemo)((() => r["*"]?.slice(0, r["*"].indexOf("/"))), [c, t]), v = (0, s.useMemo)((() => {
+          } = (0, d.useGtmTrack)(), k = (0, s.useContext)(je), j = !_.navHidden, I = !o && c?.length > 0, v = (0, s.useMemo)((() => r["*"]?.slice(0, r["*"].indexOf("/"))), [c, t]), A = (0, s.useMemo)((() => {
             if (!I) return null;
-            const e = c.find((e => e.name === A))?.subNavItems?.find((e => e.name.toLowerCase() === r.section)),
+            const e = c.find((e => e.name === v))?.subNavItems?.find((e => e.name.toLowerCase() === r.section)),
               a = e?.imageUrl;
             return a ? `${a}?im=Resize,height=32,width=32` : null
           }), [a, I]);
@@ -1689,7 +1708,7 @@
             const e = e => {
               "Escape" === e.key && g(!1)
             };
-            return p ? (f || u(!0), S(!1), h({
+            return p ? (f || b(!0), S(!1), h({
               event: "nav_open",
               event_action: "open",
               event_category: "nav",
@@ -1721,15 +1740,15 @@
               children: (0, R.jsxs)("nav", {
                 className: ke.nav,
                 children: [(0, R.jsx)("div", {
-                  className: [ke.navBar, b > 0 ? ke.navBarVisible : ""].join(" "),
+                  className: [ke.navBar, u > 0 ? ke.navBarVisible : ""].join(" "),
                   children: (0, R.jsx)(oe, {
-                    imageUrl: v,
+                    imageUrl: A,
                     isOpen: p,
                     onClick: () => g(!p)
                   })
                 }), (0, R.jsx)(he, {
                   navItems: c,
-                  category: A,
+                  category: v,
                   isHeaderVisible: j,
                   onNavItemClick: () => {
                     g(!1), S(!0)
@@ -1740,7 +1759,7 @@
             })]
           }) : null
         },
-        ve = e => {
+        Ae = e => {
           let {
             title: a,
             heroImages: t
@@ -1910,16 +1929,16 @@
           highlights: S
         } = e;
         const {
-          windowWidth: u
+          windowWidth: b
         } = (0, n.useWindowResize)(), {
-          selectedCharacterTuple: b
+          selectedCharacterTuple: u
         } = (0, d.useRockstarUserState)(), {
           loading: h,
           loggedIn: j
         } = (0, d.useRockstarUser)(), {
           setAwardsKey: I,
-          setRewardsKey: A
-        } = k(), [v, P] = (0, s.useState)("unknown"), T = (0, s.useRef)(null), x = (0, s.useRef)(null), {
+          setRewardsKey: v
+        } = k(), [A, P] = (0, s.useState)("unknown"), T = (0, s.useRef)(null), x = (0, s.useRef)(null), {
           formatMessage: O
         } = (0, i.useIntl)(), {
           track: W
@@ -1927,21 +1946,21 @@
         (0, s.useEffect)((() => {
           t && I(t)
         }), [t]), (0, s.useEffect)((() => {
-          g && A(g)
+          g && v(g)
         }), [g]), (0, s.useEffect)((() => () => {
-          I(null), A(null)
+          I(null), v(null)
         }), []), (0, s.useEffect)((() => {
-          if (null === j || !Array.isArray(b)) return;
-          const e = (0, n.getGen9Consoles)().includes(b[0]),
-            a = (0, n.getGen8Consoles)().includes(b[0]);
+          if (null === j || !Array.isArray(u)) return;
+          const e = (0, n.getGen9Consoles)().includes(u[0]),
+            a = (0, n.getGen8Consoles)().includes(u[0]);
           a || e ? e ? P("gen9") : a && P("gen8") : P("loggedOut")
-        }), [j, b]), (0, s.useEffect)((() => {
-          h || w || null === j || "unknown" === v || (W({
+        }), [j, u]), (0, s.useEffect)((() => {
+          h || w || null === j || "unknown" === A || (W({
             event: "virtualPageview",
             view_name: `career progress hub: ${c.toLowerCase()}`,
-            page_layout: v
+            page_layout: A
           }), G(!0))
-        }), [j, v, h]);
+        }), [j, A, h]);
         const M = r.p8.matchMedia();
         return (0, s.useLayoutEffect)((() => {
           if (!x.current) return;
@@ -1980,20 +1999,20 @@
               ease: "none"
             })
           }))
-        }), [h, v, x.current]), (0, s.useEffect)((() => {
+        }), [h, A, x.current]), (0, s.useEffect)((() => {
           r.p8.matchMediaRefresh()
-        }), [u]), h ? (0, R.jsx)("div", {
+        }), [b]), h ? (0, R.jsx)("div", {
           className: Oe.loadingScreen,
           children: (0, R.jsx)(o.LoadingAnimation, {
             type: "SPINNING"
           })
         }) : (0, R.jsxs)(R.Fragment, {
-          children: [(0, R.jsx)(Ae, {
+          children: [(0, R.jsx)(ve, {
             title: c
           }), (0, R.jsxs)("div", {
-            className: Oe[v],
+            className: Oe[A],
             ref: T,
-            children: [(0, R.jsx)(ve, {
+            children: [(0, R.jsx)(Ae, {
               title: c,
               heroImages: a ?? {}
             }), (0, R.jsx)(xe, {
@@ -2029,7 +2048,7 @@
                 link_url: D,
                 element_placement: "callout section"
               }
-            }), j && !1 === b && (0, R.jsx)(o.CalloutSection, {
+            }), j && !1 === u && (0, R.jsx)(o.CalloutSection, {
               header: O(f.cph_loggedin_nochar_title),
               subheader: O(f.cph_loggedin_nochar_body),
               type: "button",
@@ -3179,3 +3198,4 @@
     }
   }
 ]);
+//# sourceMappingURL=2781bd58c27630899773.js.map

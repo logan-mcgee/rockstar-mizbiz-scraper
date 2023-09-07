@@ -405,6 +405,20 @@ button._0713d670aa98ab78f5ee3a2b92ba9fd8b841 {
   padding: var(--margin-sm)
 }
 
+._0713d670aa98ab78bcd1599498c111da3100 {
+  color: var(--color-body);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-3);
+  font-weight: var(--font-weight-regular);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-body);
+  line-height: var(--line-height-lg)
+}
+
+._0713d670aa98ab78bcd1599498c111da3100 span {
+  font-size: inherit
+}
+
 @keyframes _0713d670aa98ab78facf99335f42d20bd9a2 {
   0% {
     max-height: 0
@@ -510,7 +524,6 @@ button._0713d670aa98ab78f5ee3a2b92ba9fd8b841 {
   background: var(--black-200);
   height: 4rem;
   left: 0;
-  overflow: hidden;
   padding: var(--padding-sm) var(--padding-md) var(--padding-xs) var(--padding-sm);
   position: fixed;
   right: 0;
@@ -1353,7 +1366,6 @@ button._0713d670aa98ab78f5ee3a2b92ba9fd8b841 {
 }
 
 ._0713d670aa98ab78c1ccbe992cc4b43a70e9 .swiper-backface-hidden .swiper-slide {
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transform: translateZ(0)
 }
@@ -1437,7 +1449,6 @@ button._0713d670aa98ab78f5ee3a2b92ba9fd8b841 {
 }
 
 ._0713d670aa98ab78c1ccbe992cc4b43a70e9 .swiper-centered.swiper-horizontal>.swiper-wrapper>.swiper-slide:first-child {
-  -webkit-margin-start: var(--swiper-centered-offset-before);
   margin-inline-start: var(--swiper-centered-offset-before)
 }
 
@@ -1448,7 +1459,6 @@ button._0713d670aa98ab78f5ee3a2b92ba9fd8b841 {
 }
 
 ._0713d670aa98ab78c1ccbe992cc4b43a70e9 .swiper-centered.swiper-vertical>.swiper-wrapper>.swiper-slide:first-child {
-  -webkit-margin-before: var(--swiper-centered-offset-before);
   margin-block-start: var(--swiper-centered-offset-before)
 }
 
@@ -1636,9 +1646,9 @@ button._0713d670aa98ab78f5ee3a2b92ba9fd8b841 {
 }
 
 ._0713d670aa98ab78d52ecf6f25b277c1536c {
-  align-items: flex-end;
+  align-items: center;
   display: flex;
-  margin: 0
+  margin: 0 0 var(--margin-xs)
 }
 
 ._0713d670aa98ab78d52ecf6f25b277c1536c ._0713d670aa98ab78f68c06f186313b2f9e08 {
@@ -1649,7 +1659,7 @@ button._0713d670aa98ab78f5ee3a2b92ba9fd8b841 {
   font-weight: var(--font-weight-regular);
   letter-spacing: var(--letter-spacing-h);
   line-height: var(--line-height-sm);
-  margin: 0 0 var(--margin-sm);
+  margin: 0;
   text-transform: uppercase
 }
 
@@ -1659,7 +1669,7 @@ button._0713d670aa98ab78f5ee3a2b92ba9fd8b841 {
 
 @media (min-width:1280px) {
   ._0713d670aa98ab78d52ecf6f25b277c1536c {
-    padding: var(--padding-md) 0 0
+    margin-top: var(--margin-md)
   }
 }
 
@@ -1703,7 +1713,7 @@ button._0713d670aa98ab78f5ee3a2b92ba9fd8b841 {
   font-weight: var(--font-weight-regular);
   letter-spacing: var(--letter-spacing-h);
   line-height: var(--line-height-md);
-  margin: 0 0 var(--margin-sm);
+  margin: 0;
   text-align: left
 }
 
@@ -1817,6 +1827,16 @@ button._0713d670aa98ab78f5ee3a2b92ba9fd8b841 {
     top: 0;
     transition: .3s ease-in-out;
     width: 100%
+  }
+
+  ._0713d670aa98ab78aa18d8e68c6f9bcfdcc2 ._0713d670aa98ab78a40e7e47ac41b9f69fcf:focus,
+  ._0713d670aa98ab78aa18d8e68c6f9bcfdcc2 ._0713d670aa98ab78a40e7e47ac41b9f69fcf:hover {
+    background: var(--white-100)
+  }
+
+  ._0713d670aa98ab78aa18d8e68c6f9bcfdcc2 ._0713d670aa98ab78a40e7e47ac41b9f69fcf:focus:after,
+  ._0713d670aa98ab78aa18d8e68c6f9bcfdcc2 ._0713d670aa98ab78a40e7e47ac41b9f69fcf:hover:after {
+    filter: invert()
   }
 }
 
@@ -2097,17 +2117,33 @@ button._0713d670aa98ab78f5ee3a2b92ba9fd8b841 {
   }
 }
 
+@media (max-width:476px) {
+  ._0713d670aa98ab78a2d5d9219bf1c396a633 span {
+    display: block;
+    margin-bottom: var(--grid-gap-xs);
+    width: 100%
+  }
+}
+
 ._0713d670aa98ab78a2d5d9219bf1c396a633 span,
 ._0713d670aa98ab78a2d5d9219bf1c396a633 svg {
-  margin-right: 10px
+  margin-right: var(--grid-gap-xs)
 }
 
 ._0713d670aa98ab78a2d5d9219bf1c396a633 svg {
   height: 1rem
 }
 
+._0713d670aa98ab78a2d5d9219bf1c396a633 svg:first-of-type {
+  margin-right: var(--margin-sm)
+}
+
 ._0713d670aa98ab78a2d5d9219bf1c396a633 svg path {
   fill: var(--white-65)
+}
+
+._0713d670aa98ab78a39129c69f16848fc824 {
+  display: flex
 }
 
 ._0713d670aa98ab78f5a146d8ef384e95fc19 {
@@ -2133,7 +2169,8 @@ button._0713d670aa98ab78f5ee3a2b92ba9fd8b841 {
 
 ._0713d670aa98ab78b2573543a428855aee30 {
   background: hsla(0, 0%, 100%, .15);
-  border-bottom: 1px solid var(--border-color)
+  border-bottom: 1px solid var(--border-color);
+  transition: opacity .6s ease-in
 }
 
 @media (min-width:1280px) {
@@ -2222,7 +2259,8 @@ button._0713d670aa98ab78f5ee3a2b92ba9fd8b841 {
 ._0713d670aa98ab78ea73baff98189b606660 {
   display: grid;
   flex: 1;
-  grid-template-rows: min-content
+  grid-template-rows: min-content;
+  transition: opacity .6s ease-in
 }
 
 @media (min-width:1024px) {
@@ -2233,17 +2271,17 @@ button._0713d670aa98ab78f5ee3a2b92ba9fd8b841 {
 }
 
 ._0713d670aa98ab78ea73baff98189b606660 ._0713d670aa98ab78ad653eaab7494cd72e86 {
-  align-items: baseline;
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  margin: var(--margin-sm) 0;
+  margin: var(--margin-sm) 0 var(--margin-xs);
   max-height: 3rem;
   padding: var(--content-padding)
 }
 
 @media (min-width:1024px) {
   ._0713d670aa98ab78ea73baff98189b606660 ._0713d670aa98ab78ad653eaab7494cd72e86 {
-    margin: 0 0 var(--margin-sm);
+    margin: 0 0 var(--margin-xs);
     padding: 0 var(--padding-md)
   }
 }
@@ -2337,6 +2375,12 @@ button._0713d670aa98ab78f5ee3a2b92ba9fd8b841 {
 
 ._0713d670aa98ab78ef238081f81733ae7ea3 {
   position: relative
+}
+
+._0713d670aa98ab78ef238081f81733ae7ea3 ._0713d670aa98ab78ea73baff98189b606660,
+._0713d670aa98ab78ef238081f81733ae7ea3 ._0713d670aa98ab78b2573543a428855aee30 {
+  opacity: 0;
+  transition: opacity .6s ease-out
 }
 
 ._0713d670aa98ab78e0437ea246b06e8143e2[data-open=true] {
@@ -3004,7 +3048,7 @@ button._0713d670aa98ab78f5ee3a2b92ba9fd8b841 {
   background-color: var(--white-15);
   border-radius: var(--border-radius-md);
   color: var(--white-100);
-  padding: var(--pack-page-section-padding)
+  padding: 1.5rem var(--pack-page-section-padding)
 }
 
 ._0713d670aa98ab78e7ed3d6591d76d554d56 h1 {
@@ -3054,7 +3098,7 @@ button._0713d670aa98ab78f5ee3a2b92ba9fd8b841 {
   flex-wrap: wrap;
   gap: var(--spacing-sm);
   justify-content: space-between;
-  padding: var(--pack-page-section-padding);
+  padding: 1.5rem var(--pack-page-section-padding);
   width: 100%
 }
 
@@ -3122,35 +3166,35 @@ button._0713d670aa98ab78f5ee3a2b92ba9fd8b841 {
 }
 
 ._0713d670aa98ab78cf84c163cc29ab4d7992 {
-  grid-template-areas: "hero hero hero" ". intro ." "imageGallery imageGallery imageGallery" ". highlights ." "rewardsTracker rewardsTracker rewardsTracker" ". awards ." "ctaLinkACharacter ctaLinkACharacter ctaLinkACharacter" "feedback feedback feedback" "rating rating rating"
+  grid-template-areas: "hero hero hero" ". intro ." "imageGallery imageGallery imageGallery" "ctaLinkACharacter ctaLinkACharacter ctaLinkACharacter" ". highlights ." "rewardsTracker rewardsTracker rewardsTracker" ". awards ." "feedback feedback feedback" "rating rating rating"
 }
 
 @media (min-width:1024px) {
   ._0713d670aa98ab78cf84c163cc29ab4d7992 {
-    grid-template-areas: "hero hero hero" ". intro ." "imageGallery imageGallery imageGallery" ". highlights ." ". rewardsTracker ." ". awards ." "ctaLinkACharacter ctaLinkACharacter ctaLinkACharacter" "feedback feedback feedback" "rating rating rating"
+    grid-template-areas: "hero hero hero" ". intro ." "imageGallery imageGallery imageGallery" "ctaLinkACharacter ctaLinkACharacter ctaLinkACharacter" ". highlights ." ". rewardsTracker ." ". awards ." "feedback feedback feedback" "rating rating rating"
   }
 }
 
 ._0713d670aa98ab78a544d5bfda76e76ab075 {
-  grid-template-areas: "hero hero hero" ". intro ." "imageGallery imageGallery imageGallery" ". awards ." "rewardsTracker rewardsTracker rewardsTracker" "ctaLinkACharacter ctaLinkACharacter ctaLinkACharacter" "feedback feedback feedback" "rating rating rating"
+  grid-template-areas: "hero hero hero" ". intro ." "imageGallery imageGallery imageGallery" "ctaLinkACharacter ctaLinkACharacter ctaLinkACharacter" ". awards ." "rewardsTracker rewardsTracker rewardsTracker" "feedback feedback feedback" "rating rating rating"
 }
 
 @media (min-width:1024px) {
   ._0713d670aa98ab78a544d5bfda76e76ab075 {
-    grid-template-areas: "hero hero hero" ". intro ." "imageGallery imageGallery imageGallery" ". highlights ." ". awards ." ". rewardsTracker ." "ctaLinkACharacter ctaLinkACharacter ctaLinkACharacter" "feedback feedback feedback" "rating rating rating"
+    grid-template-areas: "hero hero hero" ". intro ." "imageGallery imageGallery imageGallery" "ctaLinkACharacter ctaLinkACharacter ctaLinkACharacter" ". highlights ." ". awards ." ". rewardsTracker ." "feedback feedback feedback" "rating rating rating"
   }
 }
 
 ._0713d670aa98ab78dfabe22a516248474244,
 ._0713d670aa98ab78eb3b22d7e40ed6c4c3c4 {
-  grid-template-areas: "hero hero hero" ". intro ." "imageGallery imageGallery imageGallery" ". highlights ." "login login login" "rewardsTracker rewardsTracker rewardsTracker" "ctaLinkACharacter ctaLinkACharacter ctaLinkACharacter" ". awards ." "feedback feedback feedback" "rating rating rating"
+  grid-template-areas: "hero hero hero" ". intro ." "imageGallery imageGallery imageGallery" "ctaLinkACharacter ctaLinkACharacter ctaLinkACharacter" ". highlights ." "login login login" "rewardsTracker rewardsTracker rewardsTracker" ". awards ." "feedback feedback feedback" "rating rating rating"
 }
 
 @media (min-width:1024px) {
 
   ._0713d670aa98ab78dfabe22a516248474244,
   ._0713d670aa98ab78eb3b22d7e40ed6c4c3c4 {
-    grid-template-areas: "hero hero hero" ". intro ." "imageGallery imageGallery imageGallery" ". highlights ." "login login login" ". rewardsTracker ." "ctaLinkACharacter ctaLinkACharacter ctaLinkACharacter" ". awards ." "feedback feedback feedback" "rating rating rating"
+    grid-template-areas: "hero hero hero" ". intro ." "imageGallery imageGallery imageGallery" "ctaLinkACharacter ctaLinkACharacter ctaLinkACharacter" ". highlights ." "login login login" ". rewardsTracker ." ". awards ." "feedback feedback feedback" "rating rating rating"
   }
 }
 
@@ -3220,3 +3264,5 @@ button._0713d670aa98ab78f5ee3a2b92ba9fd8b841 {
     padding: 0 calc(var(--padding-sides) - var(--padding-lg))
   }
 }
+
+/*# sourceMappingURL=03488d7077e531e333f2.css.map*/
