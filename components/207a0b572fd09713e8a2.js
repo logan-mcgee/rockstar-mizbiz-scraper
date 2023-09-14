@@ -1,6 +1,81 @@
-/*! For license information please see b960df6f3e40fe91586e.js.LICENSE.txt */
+/*! For license information please see 207a0b572fd09713e8a2.js.LICENSE.txt */
 (self.webpackChunk_rockstargames_components = self.webpackChunk_rockstargames_components || []).push([
-  [121], {
+  [916], {
+    6886: (e, l, a) => {
+      "use strict";
+      a.d(l, {
+        Z: () => u
+      });
+      var t = a(4932),
+        n = a(3205),
+        i = a.n(n),
+        o = a(9542),
+        r = a(9929);
+      const s = {
+        grid: "_93f8151fb9eb5ac4c89161c6ad22d2dc691e",
+        itemList: "_93f8151fb9eb5ac4aeed45e36e2fc223fb9b",
+        gtaplus: "_93f8151fb9eb5ac4a94d8221792ee3d1ee37",
+        rdo: "_93f8151fb9eb5ac4c9104bac1ba9fe88116a",
+        noImg: "_93f8151fb9eb5ac4f86567dc9c46964ed881",
+        gtao: "_93f8151fb9eb5ac4f25978c2a77052c2267c",
+        custom: "_93f8151fb9eb5ac4c2246e99cd35a0f82086",
+        yellow: "_93f8151fb9eb5ac4a0002aff4143a00a57e4",
+        hotPink: "_93f8151fb9eb5ac4c6db845149d2b9d0344b",
+        red: "_93f8151fb9eb5ac4a9c7659c95e05538c243",
+        turquoise: "_93f8151fb9eb5ac4a5dfc4f60b3837df9ba9",
+        purple: "_93f8151fb9eb5ac4bb00befaa9ddecaa642a",
+        teal: "_93f8151fb9eb5ac4a3c59c6aaa744688a0c0",
+        blue: "_93f8151fb9eb5ac4b64557dc83a6418e621b",
+        green: "_93f8151fb9eb5ac4dcb28fe6e466a3c0a91e",
+        darkRed: "_93f8151fb9eb5ac4eea2f560977905393a6a",
+        darkBlue: "_93f8151fb9eb5ac4e465ba0afc74d677584c",
+        goldenrod: "_93f8151fb9eb5ac4fd1ceddbe0451d6077f6",
+        skull: "_93f8151fb9eb5ac4f8bb4c9647138419a301"
+      };
+      var d = a(6160);
+      const {
+        sanitize: m
+      } = i(), u = e => {
+        let {
+          list: l,
+          string: a,
+          starColor: n,
+          style: i,
+          className: u,
+          game: c,
+          noImg: p,
+          columns: b,
+          mobileColumns: f
+        } = e;
+        const [v, g] = (0, t.useState)(null);
+        return (0, t.useEffect)((() => {
+          g(l)
+        }), [l]), a || l ? b && v ? (0, d.jsx)("div", {
+          className: s.grid,
+          style: {
+            "--ordered-list-grid-column": b,
+            "--ordered-list-grid-column-mobile": f ?? b
+          },
+          children: (0, d.jsx)("ol", {
+            style: (0, r.safeStyles)(i),
+            className: (0, o.classList)(s.itemList, s.noImg, s[n], s[c]),
+            children: v.map((e => (0, d.jsx)("li", {
+              dangerouslySetInnerHTML: {
+                __html: m(e.content)
+              }
+            }, e.content)))
+          })
+        }) : (0, d.jsx)("ol", {
+          style: (0, r.safeStyles)(i),
+          className: (0, o.classList)(s.itemList, s.custom, p ? s.noImg : "", n ? s[n] : "", c ? s[c] : "", u ?? ""),
+          children: l.map((e => (0, d.jsx)("li", {
+            dangerouslySetInnerHTML: {
+              __html: m(e?.content ?? e)
+            }
+          }, e?.content)))
+        }) : null
+      }
+    },
     3699: (e, l, a) => {
       "use strict";
       a.d(l, {
@@ -47,10 +122,10 @@
           columns: b,
           mobileColumns: f
         } = e;
-        const [g, v] = (0, t.useState)(null), h = a ? a.split("_#_") : l;
+        const [v, g] = (0, t.useState)(null), h = a ? a.split("_#_") : l;
         return (0, t.useEffect)((() => {
-          v(l)
-        }), [l]), a || l ? b && g ? (0, d.jsx)("div", {
+          g(l)
+        }), [l]), a || l ? b && v ? (0, d.jsx)("div", {
           className: s.grid,
           style: {
             "--unordered-list-grid-column": b,
@@ -59,7 +134,7 @@
           children: (0, d.jsx)("ul", {
             style: (0, r.safeStyles)(i),
             className: (0, o.classList)(s.itemList, s.noImg, s[n], s[c]),
-            children: g.map((e => (0, d.jsx)("li", {
+            children: v.map((e => (0, d.jsx)("li", {
               dangerouslySetInnerHTML: {
                 __html: m(e.content)
               }
@@ -76,7 +151,7 @@
         }) : null
       }
     },
-    4121: (e, l, a) => {
+    2916: (e, l, a) => {
       "use strict";
       a.r(l), a.d(l, {
         BrandsField: () => o,
@@ -84,8 +159,8 @@
         ButtonGroup: () => r,
         CalloutSection: () => p,
         Carousel: () => b,
-        ConditionalBlock: () => g,
-        Cta: () => v,
+        ConditionalBlock: () => v,
+        Cta: () => g,
         Embed: () => h,
         ExpandingPlatformButton: () => y,
         Grid: () => k,
@@ -93,10 +168,11 @@
         Hero: () => c,
         ImageWithBadge: () => S,
         LayeredImage: () => N,
-        ListItem: () => P,
+        ListItem: () => F,
         MultiSourceImage: () => T,
-        NewswireRelated: () => L,
-        ParallaxInnerLayer: () => _,
+        NewswireRelated: () => _,
+        OrderedList: () => Y,
+        ParallaxInnerLayer: () => L,
         ParallaxOuterLayer: () => C,
         ParallaxWrapper: () => w,
         PromoModule: () => A,
@@ -105,11 +181,11 @@
         ResponsiveFlexItem: () => E,
         ResponsiveImg: () => W,
         Separator: () => $,
-        TinaModuleFetchNRender: () => G,
-        TinaWrapper: () => H,
+        TinaModuleFetchNRender: () => K,
+        TinaWrapper: () => z,
         TrackList: () => X,
-        UnorderedList: () => Y,
-        UserVote: () => Z,
+        UnorderedList: () => Z,
+        UserVote: () => ee,
         brandField: () => i,
         tinaModuleParentSelectorPlugin: () => V,
         tinaModuleSelectorPlugin: () => O
@@ -557,17 +633,17 @@
               label: "Vote",
               value: "vote"
             }]
-          }, {
+          }, (0, t.translatedField)({
             label: "Link/Button Text",
             description: "Required for Link- and Button-type Callout Sections",
             name: "action_text",
             component: "text"
-          }, {
+          }), (0, t.translatedField)({
             label: "Link/Button Link",
             description: "Required for Link- and Button-type Callout Sections",
             name: "link",
             component: "text"
-          }],
+          })],
           defaultItem: () => (0, t.defaultItemUnique)({}),
           itemProps: e => (0, t.itemPropsWithKey)(e, {
             label: `${e?.name??"New"} [Callout Section]`
@@ -679,7 +755,7 @@
             }
           }
         },
-        g = e => {
+        v = e => {
           let {
             label: l = "Group of Conditional Blocks",
             templates: a = []
@@ -703,7 +779,7 @@
             })
           }
         },
-        v = e => {
+        g = e => {
           let {
             parent: l = null
           } = e;
@@ -720,7 +796,7 @@
             }, {
               name: "variant",
               label: "Variant",
-              description: "(Optional) Primary, Secondary, etc.",
+              description: "(Optional) Primary, Secondary, Platform, etc.",
               component: "select",
               options: [{
                 value: "",
@@ -731,8 +807,56 @@
               }, {
                 value: "secondary",
                 label: "Secondary"
+              }, {
+                value: "platform",
+                label: "Platform"
               }]
-            }, (0, t.AttributesFields)({
+            }, (0, t.translatedField)({
+              name: "platformItem",
+              label: "Select Platform Item",
+              description: "If you selected Platform from above, please platforms here.",
+              component: "select",
+              options: [{
+                label: "--- SELECT ---",
+                value: null
+              }, {
+                label: "PlayStation",
+                value: "ps"
+              }, {
+                label: "PlayStation 3",
+                value: "ps3"
+              }, {
+                label: "PlayStation 4",
+                value: "ps4"
+              }, {
+                label: "PlayStation 5",
+                value: "ps5"
+              }, {
+                label: "Nintendo Switch",
+                value: "switch"
+              }, {
+                label: "Xbox",
+                value: "xbox"
+              }, {
+                label: "Xbox One",
+                value: "xboxone"
+              }, {
+                label: "Xbox Series X|S",
+                value: "xboxseriesxs"
+              }, {
+                label: "Xbox360",
+                value: "xbox360"
+              }, {
+                label: "PC",
+                value: "pc"
+              }, {
+                label: "Apple App Store",
+                value: "applestore"
+              }, {
+                label: "Android Playstore",
+                value: "googleplay"
+              }]
+            }), (0, t.AttributesFields)({
               parent: l
             }), (0, t.GtmField)()],
             defaultItem: () => (0, t.defaultItemUnique)({}),
@@ -1179,8 +1303,8 @@
             })
           }
         };
-      var F = a(5607);
-      const P = function() {
+      var P = a(5607);
+      const F = function() {
           let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {
             parent: "",
             post: null
@@ -1199,7 +1323,7 @@
               content: ""
             }),
             itemProps: e => (0, t.itemPropsWithKey)(e, {
-              label: (0, F.stripHTML)(`${e?.name??e?.[t.TINA_MEMOQ_PREFIX]?.content??"New"} [List Item]`)
+              label: (0, P.stripHTML)(`${e?.name??e?.[t.TINA_MEMOQ_PREFIX]?.content??"New"} [List Item]`)
             })
           }
         },
@@ -1225,7 +1349,7 @@
             })
           }
         },
-        L = function() {
+        _ = function() {
           return {
             label: "Related Posts",
             fields: [],
@@ -1233,7 +1357,7 @@
             itemProps: e => (0, t.itemPropsWithKey)(e)
           }
         },
-        _ = () => ({
+        L = () => ({
           name: "parallaxInnerLayer",
           label: "Parallax Inner Layer",
           component: "group",
@@ -1571,8 +1695,8 @@
             })
           }
         };
-      var U = a(4859),
-        q = a(3374);
+      var q = a(4859),
+        B = a(3374);
       const D = {
         name: "skeleton",
         label: "Skeleton Type",
@@ -1586,9 +1710,9 @@
           label: "A gen9 Hero"
         }]
       };
-      var B = a(4658),
-        K = a(6160);
-      const G = e => {
+      var U = a(4658),
+        G = a(6160);
+      const K = e => {
           let {
             name: l,
             component: a,
@@ -1624,7 +1748,7 @@
               variables: n = {}
             } = l, {
               data: i
-            } = (0, U.useQuery)(B.TinaModulesList, {
+            } = (0, q.useQuery)(U.TinaModulesList, {
               variables: n
             });
             if (!i) return null;
@@ -1634,11 +1758,11 @@
               title: null,
               name: "-- Select Module --"
             }, ...i.tinaModulesList.results];
-            return (0, K.jsx)(q.FieldWrapper, {
+            return (0, G.jsx)(B.FieldWrapper, {
               field: l,
               input: a,
               meta: t,
-              children: (0, K.jsx)("select", {
+              children: (0, G.jsx)("select", {
                 ...a,
                 children: o.map((e => {
                   let {
@@ -1646,7 +1770,7 @@
                     title: a,
                     type: t
                   } = e;
-                  return (0, K.jsx)("option", {
+                  return (0, G.jsx)("option", {
                     value: l,
                     children: `${t?`[${t}]`:""} ${a} ${l?`(${l})`:""}`
                   }, l)
@@ -1668,7 +1792,7 @@
               variables: n = {}
             } = l, {
               data: i
-            } = (0, U.useQuery)(B.TinaModulesList, {
+            } = (0, q.useQuery)(U.TinaModulesList, {
               variables: n
             });
             if (!i) return null;
@@ -1678,11 +1802,11 @@
               title: null,
               name: "-- Select Parent of this Module --"
             }, ...i.tinaModulesList.results];
-            return (0, K.jsx)(q.FieldWrapper, {
+            return (0, G.jsx)(B.FieldWrapper, {
               field: l,
               input: a,
               meta: t,
-              children: (0, K.jsx)("select", {
+              children: (0, G.jsx)("select", {
                 ...a,
                 children: o.map((e => {
                   let {
@@ -1690,7 +1814,7 @@
                     name: a,
                     type: t
                   } = e;
-                  return (0, K.jsx)("option", {
+                  return (0, G.jsx)("option", {
                     value: l,
                     children: `${t?`[${t}]`:""} ${a} ${l?`(${l})`:""}`
                   }, l)
@@ -1699,7 +1823,7 @@
             })
           }
         },
-        z = e => {
+        H = e => {
           let {
             label: l
           } = e;
@@ -1723,7 +1847,7 @@
             label: "--spacing-xxl"
           }]
         },
-        H = e => {
+        z = e => {
           let {
             templates: l
           } = e;
@@ -1744,7 +1868,7 @@
                 name: "gridGap",
                 description: "Set the grid gap",
                 component: "select",
-                options: z({
+                options: H({
                   label: "-- Select Grid Gap --"
                 })
               }]
@@ -1783,8 +1907,97 @@
             label: `${e?.[t.TINA_MEMOQ_PREFIX]?.title??"NEW"} [CLR TrackList]`
           })
         });
-      var j = a(3699);
+      var j = a(6886);
       const Y = e => {
+        let {
+          game: l = null,
+          parent: a = null
+        } = e;
+        const n = [(0, t.NameField)()];
+        return "gtao" !== l && "gtav" !== l || n.push({
+          name: "starColor",
+          label: "Star Color",
+          description: 'If "none", it will use default bullet styles',
+          component: "select",
+          options: [{
+            value: "noImg",
+            label: "None"
+          }, {
+            value: "white",
+            label: "White"
+          }, {
+            value: "yellow",
+            label: "Yellow"
+          }, {
+            value: "hotPink",
+            label: "Hot Pink"
+          }, {
+            value: "red",
+            label: "Red"
+          }, {
+            value: "turquoise",
+            label: "Turquoise"
+          }, {
+            value: "purple",
+            label: "Purple"
+          }, {
+            value: "teal",
+            label: "Teal"
+          }, {
+            value: "blue",
+            label: "Blue"
+          }, {
+            value: "green",
+            label: "Green"
+          }, {
+            value: "darkRed",
+            label: "Dark Red"
+          }, {
+            value: "darkBlue",
+            label: "Dark Blue"
+          }, {
+            value: "goldenrod",
+            label: "Goldenrod"
+          }, {
+            value: "gtaplus",
+            label: "GTA+ Icon"
+          }]
+        }), n.push({
+          name: "columns",
+          label: "Columns",
+          description: "How many columns should the list be broken into? (Leave blank if less than 2)",
+          component: "number"
+        }, {
+          name: "mobileColumns",
+          label: "Mobile Columns",
+          description: "How many columns should the list be broken into on mobile? (Leave blank if less than 2)",
+          component: "number"
+        }, {
+          name: "list",
+          label: "List Items",
+          component: "blocks",
+          templates: [F({})]
+        }, (0, t.StyleField)({
+          parent: a
+        })), {
+          name: "orderedList",
+          label: "Ordered List",
+          component: "group",
+          fields: n,
+          defaultItem: () => (0, t.defaultItemUnique)({
+            content: j.Z,
+            columns: 1,
+            mobileColumns: 1,
+            starColor: "noImg",
+            listItems: []
+          }),
+          itemProps: e => (0, t.itemPropsWithKey)(e, {
+            label: e?.name ? `${e.name} [Ordered List]` : "New [Ordered List]"
+          })
+        }
+      };
+      var Q = a(3699);
+      const Z = e => {
           let {
             game: l = null,
             parent: a = null
@@ -1852,7 +2065,7 @@
             name: "list",
             label: "List Items",
             component: "blocks",
-            templates: [P({})]
+            templates: [F({})]
           }, (0, t.StyleField)({
             parent: a
           })), {
@@ -1861,7 +2074,7 @@
             component: "group",
             fields: n,
             defaultItem: () => (0, t.defaultItemUnique)({
-              content: j.Z,
+              content: Q.Z,
               columns: 1,
               mobileColumns: 1,
               starColor: "noImg",
@@ -1872,9 +2085,9 @@
             })
           }
         },
-        Q = '"Was this helpful?" module.',
-        Z = () => ({
-          label: Q,
+        J = '"Was this helpful?" module.',
+        ee = () => ({
+          label: J,
           name: "user_vote",
           component: "group",
           fields: [(0, t.translatedField)({
@@ -1888,7 +2101,7 @@
           })],
           defaultItem: () => (0, t.defaultItemUnique)(),
           itemProps: e => (0, t.itemPropsWithKey)(e, {
-            label: Q
+            label: J
           })
         })
     },
@@ -2606,3 +2819,4 @@
     }
   }
 ]);
+//# sourceMappingURL=207a0b572fd09713e8a2.js.map

@@ -1,13 +1,88 @@
 (self.webpackChunk_rockstargames_components = self.webpackChunk_rockstargames_components || []).push([
-  [154], {
+  [320], {
+    6886: (e, a, t) => {
+      "use strict";
+      t.d(a, {
+        Z: () => m
+      });
+      var n = t(4932),
+        i = t(3205),
+        s = t.n(i),
+        r = t(9542),
+        c = t(9929);
+      const o = {
+        grid: "_93f8151fb9eb5ac4c89161c6ad22d2dc691e",
+        itemList: "_93f8151fb9eb5ac4aeed45e36e2fc223fb9b",
+        gtaplus: "_93f8151fb9eb5ac4a94d8221792ee3d1ee37",
+        rdo: "_93f8151fb9eb5ac4c9104bac1ba9fe88116a",
+        noImg: "_93f8151fb9eb5ac4f86567dc9c46964ed881",
+        gtao: "_93f8151fb9eb5ac4f25978c2a77052c2267c",
+        custom: "_93f8151fb9eb5ac4c2246e99cd35a0f82086",
+        yellow: "_93f8151fb9eb5ac4a0002aff4143a00a57e4",
+        hotPink: "_93f8151fb9eb5ac4c6db845149d2b9d0344b",
+        red: "_93f8151fb9eb5ac4a9c7659c95e05538c243",
+        turquoise: "_93f8151fb9eb5ac4a5dfc4f60b3837df9ba9",
+        purple: "_93f8151fb9eb5ac4bb00befaa9ddecaa642a",
+        teal: "_93f8151fb9eb5ac4a3c59c6aaa744688a0c0",
+        blue: "_93f8151fb9eb5ac4b64557dc83a6418e621b",
+        green: "_93f8151fb9eb5ac4dcb28fe6e466a3c0a91e",
+        darkRed: "_93f8151fb9eb5ac4eea2f560977905393a6a",
+        darkBlue: "_93f8151fb9eb5ac4e465ba0afc74d677584c",
+        goldenrod: "_93f8151fb9eb5ac4fd1ceddbe0451d6077f6",
+        skull: "_93f8151fb9eb5ac4f8bb4c9647138419a301"
+      };
+      var d = t(6160);
+      const {
+        sanitize: l
+      } = s(), m = e => {
+        let {
+          list: a,
+          string: t,
+          starColor: i,
+          style: s,
+          className: m,
+          game: f,
+          noImg: b,
+          columns: u,
+          mobileColumns: g
+        } = e;
+        const [p, v] = (0, n.useState)(null);
+        return (0, n.useEffect)((() => {
+          v(a)
+        }), [a]), t || a ? u && p ? (0, d.jsx)("div", {
+          className: o.grid,
+          style: {
+            "--ordered-list-grid-column": u,
+            "--ordered-list-grid-column-mobile": g ?? u
+          },
+          children: (0, d.jsx)("ol", {
+            style: (0, c.safeStyles)(s),
+            className: (0, r.classList)(o.itemList, o.noImg, o[i], o[f]),
+            children: p.map((e => (0, d.jsx)("li", {
+              dangerouslySetInnerHTML: {
+                __html: l(e.content)
+              }
+            }, e.content)))
+          })
+        }) : (0, d.jsx)("ol", {
+          style: (0, c.safeStyles)(s),
+          className: (0, r.classList)(o.itemList, o.custom, b ? o.noImg : "", i ? o[i] : "", f ? o[f] : "", m ?? ""),
+          children: a.map((e => (0, d.jsx)("li", {
+            dangerouslySetInnerHTML: {
+              __html: l(e?.content ?? e)
+            }
+          }, e?.content)))
+        }) : null
+      }
+    },
     3699: (e, a, t) => {
       "use strict";
       t.d(a, {
         Z: () => m
       });
-      var i = t(4932),
-        n = t(3205),
-        s = t.n(n),
+      var n = t(4932),
+        i = t(3205),
+        s = t.n(i),
         r = t(9542),
         c = t(9929);
       const o = {
@@ -31,54 +106,54 @@
         goldenrod: "_93f8151fb9eb5ac4d2ccafcdd0dbfba68f90",
         skull: "_93f8151fb9eb5ac4d5f11f6a0da20e30e1cc"
       };
-      var l = t(6160);
+      var d = t(6160);
       const {
-        sanitize: d
+        sanitize: l
       } = s(), m = e => {
         let {
           list: a,
           string: t,
-          starColor: n,
+          starColor: i,
           style: s,
           className: m,
           game: f,
-          noImg: u,
-          columns: b,
+          noImg: b,
+          columns: u,
           mobileColumns: g
         } = e;
-        const [p, v] = (0, i.useState)(null), k = t ? t.split("_#_") : a;
-        return (0, i.useEffect)((() => {
+        const [p, v] = (0, n.useState)(null), k = t ? t.split("_#_") : a;
+        return (0, n.useEffect)((() => {
           v(a)
-        }), [a]), t || a ? b && p ? (0, l.jsx)("div", {
+        }), [a]), t || a ? u && p ? (0, d.jsx)("div", {
           className: o.grid,
           style: {
-            "--unordered-list-grid-column": b,
-            "--unordered-list-grid-column-mobile": g ?? b
+            "--unordered-list-grid-column": u,
+            "--unordered-list-grid-column-mobile": g ?? u
           },
-          children: (0, l.jsx)("ul", {
+          children: (0, d.jsx)("ul", {
             style: (0, c.safeStyles)(s),
-            className: (0, r.classList)(o.itemList, o.noImg, o[n], o[f]),
-            children: p.map((e => (0, l.jsx)("li", {
+            className: (0, r.classList)(o.itemList, o.noImg, o[i], o[f]),
+            children: p.map((e => (0, d.jsx)("li", {
               dangerouslySetInnerHTML: {
-                __html: d(e.content)
+                __html: l(e.content)
               }
             }, e.content)))
           })
-        }) : (0, l.jsx)("ul", {
+        }) : (0, d.jsx)("ul", {
           style: (0, c.safeStyles)(s),
-          className: (0, r.classList)(o.itemList, o.custom, u ? o.noImg : "", n ? o[n] : "", f ? o[f] : "", m ?? ""),
-          children: k.map((e => (0, l.jsx)("li", {
+          className: (0, r.classList)(o.itemList, o.custom, b ? o.noImg : "", i ? o[i] : "", f ? o[f] : "", m ?? ""),
+          children: k.map((e => (0, d.jsx)("li", {
             dangerouslySetInnerHTML: {
-              __html: d(e?.content ?? e)
+              __html: l(e?.content ?? e)
             }
           }, e?.content)))
         }) : null
       }
     },
-    6154: (e, a, t) => {
+    9668: (e, a, t) => {
       "use strict";
       t.r(a), t.d(a, {
-        A: () => l,
+        A: () => d,
         AudioPlayer: () => h,
         Badge: () => _,
         Brands: () => x,
@@ -87,104 +162,106 @@
         CalloutSection: () => Y,
         Carousel: () => $,
         ConditionalBlock: () => P,
+        CookieAB: () => J,
         CountryInputField: () => K,
-        Cta: () => J,
-        DescriptionArea: () => me,
-        DiscountsBadge: () => pe,
-        DotLoader: () => ke,
-        Dropdown: () => _e,
-        Embed: () => je,
-        ExpandingPlatformButton: () => Be,
-        FadeInContent: () => $e,
-        GameCard: () => i,
-        GameSiteHeader: () => Pe,
+        Cta: () => ne,
+        DescriptionArea: () => ge,
+        DiscountsBadge: () => _e,
+        DotLoader: () => ye,
+        Dropdown: () => je,
+        Embed: () => Ce,
+        ExpandingPlatformButton: () => Fe,
+        FadeInContent: () => Ae,
+        GameCard: () => n,
+        GameSiteHeader: () => Ue,
         Gen9Button: () => C,
-        Gen9CoreCarousel: () => Re,
-        Grid: () => ye,
-        HTMLElement: () => ta,
-        Hero: () => Je,
+        Gen9CoreCarousel: () => Ze,
+        Grid: () => we,
+        HTMLElement: () => ra,
+        Hero: () => na,
         HookStore: () => M,
-        ImageWithBadge: () => la,
-        LanguageSelector: () => na,
-        LayeredImage: () => ca,
-        LoadingAnimation: () => Wt,
-        MultiSourceImage: () => se,
-        NewswireBlocks: () => ya,
-        NewswireCard: () => ga,
-        NewswireList: () => ka,
-        NewswireRelated: () => _a,
-        NewswireTag: () => ua,
-        Paging: () => Sa,
-        ParallaxCacheBuster: () => Ta,
-        ParallaxInnerLayer: () => Ia,
-        ParallaxOuterLayer: () => Va,
-        ParallaxWrapper: () => Ea,
-        PromoModule: () => Da,
-        Rating: () => Aa,
-        ResponsiveFlexBox: () => Ga,
-        ResponsiveFlexItem: () => Ha,
-        ResponsiveGridBox: () => Ra,
-        ResponsiveGridItem: () => Wa,
-        ResponsiveImg: () => Qa,
-        ResponsiveSection: () => Xa,
-        RockstarLogo: () => Ka,
-        ScrollToTop: () => Ja,
-        ScrollTracker: () => et,
-        SearchBox: () => at,
-        Separator: () => oe,
-        Skeleton: () => it,
-        SrcsetImage: () => ma,
-        TextFit: () => ue,
-        ThumbsGallery: () => dt,
-        TinaModuleFetchNRender: () => ut,
-        TinaWrapper: () => bt,
-        TrackList: () => rt,
-        UnorderedList: () => re.Z,
-        UserVote: () => vt,
-        VideoCard: () => n,
-        VideoCarousel: () => ht,
-        VideoList: () => xt,
-        Wasted: () => yt,
+        ImageWithBadge: () => ba,
+        LanguageSelector: () => oa,
+        LayeredImage: () => ma,
+        LoadingAnimation: () => Jt,
+        MultiSourceImage: () => de,
+        NewswireBlocks: () => wa,
+        NewswireCard: () => ha,
+        NewswireList: () => ya,
+        NewswireRelated: () => ja,
+        NewswireTag: () => va,
+        OrderedList: () => Ta.Z,
+        Paging: () => Ia,
+        ParallaxCacheBuster: () => Va,
+        ParallaxInnerLayer: () => $a,
+        ParallaxOuterLayer: () => Fa,
+        ParallaxWrapper: () => za,
+        PromoModule: () => Aa,
+        Rating: () => Ra,
+        ResponsiveFlexBox: () => Wa,
+        ResponsiveFlexItem: () => Za,
+        ResponsiveGridBox: () => Xa,
+        ResponsiveGridItem: () => Ja,
+        ResponsiveImg: () => at,
+        ResponsiveSection: () => nt,
+        RockstarLogo: () => it,
+        ScrollToTop: () => st,
+        ScrollTracker: () => rt,
+        SearchBox: () => ct,
+        Separator: () => fe,
+        Skeleton: () => dt,
+        SrcsetImage: () => ga,
+        TextFit: () => ve,
+        ThumbsGallery: () => pt,
+        TinaModuleFetchNRender: () => ht,
+        TinaWrapper: () => _t,
+        TrackList: () => ft,
+        UnorderedList: () => le.Z,
+        UserVote: () => Nt,
+        VideoCard: () => i,
+        VideoCarousel: () => St,
+        VideoList: () => Tt,
+        Wasted: () => Ct,
         framer: () => r,
-        useTinaModuleFetchByIds: () => ft,
-        withSearchbarErrorBoundary: () => Tt,
-        withSimpleErrorBoundary: () => He
-      });
-      var i = {};
-      t.r(i), t.d(i, {
-        Art: () => ze,
-        Link: () => Me
+        useTinaModuleFetchByIds: () => kt,
+        withSearchbarErrorBoundary: () => Bt,
+        withSimpleErrorBoundary: () => We
       });
       var n = {};
       t.r(n), t.d(n, {
-        Art: () => jt,
-        Link: () => St
+        Art: () => Ge,
+        Link: () => Oe
+      });
+      var i = {};
+      t.r(i), t.d(i, {
+        Art: () => It,
+        Link: () => Lt
       });
       var s = {};
       t.r(s), t.d(s, {
-        getVariant: () => Ot,
-        transitions: () => Pt,
-        variants: () => Gt
+        getVariant: () => Yt,
+        transitions: () => qt,
+        variants: () => Wt
       });
       var r = {};
       t.r(r), t.d(r, {
         Animations: () => s,
-        LiteMotion: () => Lt,
-        withFadeIn: () => $t,
-        withFadeUp: () => At
+        LiteMotion: () => Ft,
+        withFadeIn: () => Gt,
+        withFadeUp: () => Rt
       });
       var c = t(1424),
         o = t(6160);
-      const l = e => {
+      const d = e => {
         let {
           children: a,
           to: t = "#",
-          alt: i = "",
-          autoBlank: n = !1,
+          alt: n = "",
+          autoBlank: i = !1,
           onClick: s = (() => {}),
           ...r
         } = e;
-        const l = !/^(https?|mailto):/i.test(t);
+        const d = !/^(https?|mailto):/i.test(t);
         if (/^#/.test(t)) {
           const e = e => {
             e.preventDefault(), document?.querySelector(`[id='${t.replace("#","")}']`)?.scrollIntoView({
@@ -193,39 +270,39 @@
             }), s && s(e)
           };
           return (0, o.jsx)("a", {
-            title: i,
+            title: n,
             href: t,
             onClick: e,
             ...r,
             children: a
           })
         }
-        if (l) return (0, o.jsx)(c.NavLink, {
-          title: i,
+        if (d) return (0, o.jsx)(c.NavLink, {
+          title: n,
           to: t,
           onClick: e => s(e),
           ...r,
           children: a
         });
-        const d = Object.keys(r).filter((e => !["activeClassName", "key", "end"].includes(e))).reduce(((e, a) => ({
+        const l = Object.keys(r).filter((e => !["activeClassName", "key", "end"].includes(e))).reduce(((e, a) => ({
             ...e,
             [a]: r[a]
           })), {}),
-          m = r?.target ?? (n ? "_blank" : "_self");
-        return "function" == typeof d?.className && delete d.className, (0, o.jsx)("a", {
+          m = r?.target ?? (i ? "_blank" : "_self");
+        return "function" == typeof l?.className && delete l.className, (0, o.jsx)("a", {
           href: t,
-          ...d,
-          title: i,
+          ...l,
+          title: n,
           onClick: e => s(e),
           target: m,
           children: a
         })
       };
-      var d = t(4932),
+      var l = t(4932),
         m = t(6716),
         f = t.n(m),
-        u = t(4859),
-        b = t(5873);
+        b = t(4859),
+        u = t(5873);
       const g = {
           player: "_93f8151fb9eb5ac4a9efacd688ca13e254dd",
           fixedToBottom: "_93f8151fb9eb5ac4b33c2f80bdcdf6b9ee7c",
@@ -271,58 +348,58 @@
               duration: 0
             },
             playing: t,
-            audioRef: i,
-            setPlaying: n,
+            audioRef: n,
+            setPlaying: i,
             tracksOpen: s,
             setTracksOpen: r,
             trackData: c,
-            setTrackId: l,
+            setTrackId: d,
             trackBounds: m,
-            setAutoNext: u
+            setAutoNext: b
           } = e;
-          const b = (0, d.useRef)(null),
-            p = (0, d.useRef)(null),
-            v = (0, d.useRef)(null),
-            [k, h] = (0, d.useState)(null),
-            [_, x] = (0, d.useState)(!1),
+          const u = (0, l.useRef)(null),
+            p = (0, l.useRef)(null),
+            v = (0, l.useRef)(null),
+            [k, h] = (0, l.useState)(null),
+            [_, x] = (0, l.useState)(!1),
             y = e => {
               const a = new Date(1e3 * e),
                 t = a.getUTCMinutes(),
-                i = a.getSeconds();
-              return `${t.toString().padStart(2,"0")}:${i.toString().padStart(2,"0")}`
+                n = a.getSeconds();
+              return `${t.toString().padStart(2,"0")}:${n.toString().padStart(2,"0")}`
             };
-          return (0, d.useEffect)((() => {
+          return (0, l.useEffect)((() => {
             if (!p.current || !v.current) return;
             const e = () => {
               v.current && p.current && h(v.current.clientWidth > p.current.clientWidth)
             };
             return window.addEventListener("resize", e), e(), () => window.removeEventListener("resize", e)
-          }), [v, p, a]), (0, d.useEffect)((() => {
-            if (!b.current || !a?.duration) return;
+          }), [v, p, a]), (0, l.useEffect)((() => {
+            if (!u.current || !a?.duration) return;
             let e = null;
-            const t = new(f())(b.current),
-              n = e => {
-                if (b.current) {
-                  const t = b.current.clientWidth;
-                  if (!b.current.contains(e.srcEvent.target)) return;
-                  const n = Math.max(0, e.srcEvent.offsetX),
-                    s = Number(n / t * a.duration);
-                  i.currentTime = s
+            const t = new(f())(u.current),
+              i = e => {
+                if (u.current) {
+                  const t = u.current.clientWidth;
+                  if (!u.current.contains(e.srcEvent.target)) return;
+                  const i = Math.max(0, e.srcEvent.offsetX),
+                    s = Number(i / t * a.duration);
+                  n.currentTime = s
                 }
               },
               s = () => {
-                e ? i.pause() : i.play()
+                e ? n.pause() : n.play()
               },
               r = () => {
-                e = i.paused, i.pause()
+                e = n.paused, n.pause()
               };
-            return t.on("panstart", r), t.on("panleft", n), t.on("panright", n), t.on("panend", s), t.on("tap", n), () => {
-              t.off("panstart", r), t.off("panleft", n), t.off("panright", n), t.off("panend", s), t.off("tap", n)
+            return t.on("panstart", r), t.on("panleft", i), t.on("panright", i), t.on("panend", s), t.on("tap", i), () => {
+              t.off("panstart", r), t.off("panleft", i), t.off("panright", i), t.off("panend", s), t.off("tap", i)
             }
-          }), [b.current, a.duration]), (0, d.useEffect)((() => {
-            const e = Number(i?.currentTime);
+          }), [u.current, a.duration]), (0, l.useEffect)((() => {
+            const e = Number(n?.currentTime);
             (t || !isNaN(e) && 0 !== e) && x(!0)
-          }), [t, i?.currentTime]), (0, o.jsxs)("div", {
+          }), [t, n?.currentTime]), (0, o.jsxs)("div", {
             className: g.controls,
             style: {
               "--track-color": c.color,
@@ -344,17 +421,17 @@
               children: [(0, o.jsx)("div", {
                 className: g.controlsPrevTrack,
                 onClick: () => {
-                  m && (l(m[0]), u(!0), n(!0))
+                  m && (d(m[0]), b(!0), i(!0))
                 }
               }), (0, o.jsx)("div", {
                 className: [g.controlsPlayPause, t ? g.controlsPlayPausePlaying : ""].join(" "),
                 onClick: () => {
-                  n(!t)
+                  i(!t)
                 }
               }), (0, o.jsx)("div", {
                 className: g.controlsNextTrack,
                 onClick: () => {
-                  m && (l(m[1]), u(!0), n(!0))
+                  m && (d(m[1]), b(!0), i(!0))
                 }
               })]
             }), (0, o.jsx)("div", {
@@ -372,7 +449,7 @@
                 children: y(a.current)
               }), (0, o.jsx)("div", {
                 className: g.controlsScrubTrack,
-                ref: b
+                ref: u
               }), (0, o.jsx)("span", {
                 children: y(a.duration)
               })]
@@ -383,8 +460,8 @@
           let {
             tracks: a,
             trackId: t,
-            setTrackId: i,
-            tracksOpen: n,
+            setTrackId: n,
+            tracksOpen: i,
             setTracksOpen: s,
             setPlaying: r,
             setAutoNext: c
@@ -396,7 +473,7 @@
             }), (0, o.jsx)("div", {
               className: g.trackBurger,
               onClick: () => {
-                s(!n)
+                s(!i)
               }
             }), (0, o.jsx)("div", {
               className: g.trackList,
@@ -406,7 +483,7 @@
                 },
                 className: t === e.id ? g.trackActive : "",
                 onClick: () => {
-                  i(e.id), r(!0), c(!0)
+                  n(e.id), r(!0), c(!0)
                 },
                 children: [(0, o.jsx)("span", {
                   className: g.trackIndex,
@@ -428,16 +505,16 @@
             className: t = ""
           } = e;
           const {
-            data: i
-          } = (0, u.useQuery)(b.GetAudioAlbum, {
+            data: n
+          } = (0, b.useQuery)(u.GetAudioAlbum, {
             variables: {
               id: a
             }
-          }), [n, s] = (0, d.useState)(), [r, c] = (0, d.useState)(), [l, m] = (0, d.useState)(), [f, h] = (0, d.useState)(!1), [_, x] = (0, d.useState)(!1), [y, N] = (0, d.useState)(new HTMLAudioElement), [j, S] = (0, d.useState)({
+          }), [i, s] = (0, l.useState)(), [r, c] = (0, l.useState)(), [d, m] = (0, l.useState)(), [f, h] = (0, l.useState)(!1), [_, x] = (0, l.useState)(!1), [y, N] = (0, l.useState)(new HTMLAudioElement), [j, S] = (0, l.useState)({
             current: 0,
             duration: 0
-          }), [w, T] = (0, d.useState)(!0);
-          return (0, d.useEffect)((() => {
+          }), [w, T] = (0, l.useState)(!0);
+          return (0, l.useEffect)((() => {
             const e = "audio",
               a = a => {
                 a?.data?.rockstarAudioPlayerPlayTrackId && (c(a.data.rockstarAudioPlayerPlayTrackId), T(!1), x(!0)), _ && a?.data?.attentionBlurredElsewhere && a?.data?.from !== e && x(!1)
@@ -446,7 +523,7 @@
               attentionBlurredElsewhere: !0,
               from: e
             }), window.addEventListener("message", a, !1), () => window.removeEventListener("message", a, !1)
-          }), [_]), (0, d.useEffect)((() => {
+          }), [_]), (0, l.useEffect)((() => {
             if (!y) return;
             const e = () => {
                 isNaN(y.duration) || S({
@@ -455,35 +532,35 @@
                 })
               },
               a = () => {
-                w && n && c(n[1])
+                w && i && c(i[1])
               };
             return y.addEventListener("loadedmetadata", e), y.addEventListener("timeupdate", e), y.addEventListener("ended", a), () => {
               y.removeEventListener("loadedmetadata", e), y.removeEventListener("timeupdate", e), y.removeEventListener("ended", a)
             }
-          }), [y, n, w]), (0, d.useEffect)((() => {
+          }), [y, i, w]), (0, l.useEffect)((() => {
             _ && window.postMessage({
               attentionBlurredElsewhere: !0,
               from: "audio"
             })
-          }), [_]), (0, d.useEffect)((() => {
+          }), [_]), (0, l.useEffect)((() => {
             y && (_ ? y.play() : y.pause(), h(!1))
-          }), [_, y, l?.id]), (0, d.useEffect)((() => {
+          }), [_, y, d?.id]), (0, l.useEffect)((() => {
             if (!r) return;
             const {
               tracks: e
-            } = i.audioAlbum, a = i.audioAlbum.tracks.findIndex((e => e.id === r));
+            } = n.audioAlbum, a = n.audioAlbum.tracks.findIndex((e => e.id === r));
             s([e[a - 1]?.id ?? e[e.length - 1].id, e[a + 1]?.id ?? e[0].id]), m(e[a])
-          }), [r]), (0, d.useEffect)((() => {
-            i && c(i.audioAlbum.tracks[0].id)
-          }), [i]), l ? (0, o.jsxs)("div", {
+          }), [r]), (0, l.useEffect)((() => {
+            n && c(n.audioAlbum.tracks[0].id)
+          }), [n]), d ? (0, o.jsxs)("div", {
             className: [g.player, g[t], f ? g.tracksOpen : ""].join(" "),
             children: [(0, o.jsx)("audio", {
               ref: e => {
                 N(e)
               },
-              src: l.mp3_src
+              src: d.mp3_src
             }), (0, o.jsx)(k, {
-              tracks: i.audioAlbum.tracks,
+              tracks: n.audioAlbum.tracks,
               setTrackId: c,
               trackId: r,
               tracksOpen: f,
@@ -491,16 +568,16 @@
               setPlaying: x,
               setAutoNext: T
             }), (0, o.jsx)(p, {
-              src: l.cover_src
+              src: d.cover_src
             }), (0, o.jsx)(v, {
               setTrackId: c,
-              trackBounds: n,
+              trackBounds: i,
               tracksOpen: f,
               setTracksOpen: h,
               playing: _,
               setPlaying: x,
               timing: j,
-              trackData: l,
+              trackData: d,
               audioRef: y,
               setAutoNext: T
             })]
@@ -542,15 +619,15 @@
           let {
             className: a = "",
             children: t,
-            context: i = "",
-            to: n,
+            context: n = "",
+            to: i,
             onClick: s,
             ...r
           } = e;
-          const c = [y.button, y[i], a].join(" ");
-          return n ? (0, o.jsx)(l, {
+          const c = [y.button, y[n], a].join(" ");
+          return i ? (0, o.jsx)(d, {
             ...r,
-            to: n,
+            to: i,
             className: c,
             onClick: s ? () => s() : () => {},
             children: t
@@ -583,13 +660,13 @@
           let {
             children: a,
             className: t,
-            onClick: i,
-            style: n
+            onClick: n,
+            style: i
           } = e;
           return (0, o.jsx)("button", {
             className: t,
-            onClick: i ? () => i() : () => {},
-            style: n,
+            onClick: n ? () => n() : () => {},
+            style: i,
             type: "button",
             children: a
           })
@@ -598,14 +675,14 @@
           let {
             children: a,
             className: t,
-            onClick: i,
-            style: n,
+            onClick: n,
+            style: i,
             to: s
           } = e;
           return (0, o.jsx)(c.NavLink, {
             className: t,
-            onClick: i ? () => i() : () => {},
-            style: n,
+            onClick: n ? () => n() : () => {},
+            style: i,
             to: s,
             children: a
           })
@@ -614,18 +691,18 @@
           let {
             btnColor: a = "#fff",
             className: t = "",
-            consoleBtn: i,
-            icon: n = "",
+            consoleBtn: n,
+            icon: i = "",
             img: s,
             labelColor: r = "#000",
             onClick: c,
-            secondText: l,
-            size: d,
+            secondText: d,
+            size: l,
             text: m,
             to: f,
-            type: u = ""
+            type: b = ""
           } = e;
-          const b = [S.plusButton, S[u] ?? "", S[d] ?? "", S[i] ?? "", t].join(" "),
+          const u = [S.plusButton, S[b] ?? "", S[l] ?? "", S[n] ?? "", t].join(" "),
             g = {
               "--hvr-color": a ?? r,
               "--hvr-bg-color": r ?? a,
@@ -637,9 +714,9 @@
                 alt: ""
               }) : "", (0, o.jsxs)("div", {
                 className: S.btnText,
-                icon: n,
-                children: [m, l ? (0, o.jsx)("span", {
-                  children: l
+                icon: i,
+                children: [m, d ? (0, o.jsx)("span", {
+                  children: d
                 }) : ""]
               })]
             });
@@ -649,7 +726,7 @@
               return (0, o.jsx)("span", {
                 onClick: c ? () => c() : () => {},
                 onKeyDown: c,
-                className: b,
+                className: u,
                 role: "button",
                 tabIndex: 0,
                 children: (0, o.jsx)("a", {
@@ -660,7 +737,7 @@
               })
             }
             return (0, o.jsx)(T, {
-              className: b,
+              className: u,
               onClick: c ? () => c() : () => {},
               style: g,
               to: f,
@@ -668,7 +745,7 @@
             })
           }
           return (0, o.jsx)(w, {
-            className: b,
+            className: u,
             onClick: c ? () => c() : () => {},
             style: g,
             children: p
@@ -684,13 +761,13 @@
             children: a.map(((e, a) => {
               let {
                 icon: t,
-                title: i,
-                to: n
+                title: n,
+                to: i
               } = e;
-              return i ? (0, o.jsx)(C, {
+              return n ? (0, o.jsx)(C, {
                 icon: t,
-                text: i,
-                to: n
+                text: n,
+                to: i
               }, a) : ""
             }))
           }) : null
@@ -720,7 +797,7 @@
             item: a
           } = e;
           return (0, o.jsxs)("div", {
-            children: [(0, o.jsx)(la, {
+            children: [(0, o.jsx)(ba, {
               image: a?.image,
               badge: a?.badge ?? a?.image?.badge,
               badgeType: "badge3",
@@ -730,12 +807,12 @@
               ariaLabel: a?.image?.ariaLabel ?? a.description,
               style: a?.style,
               className: (0, j.classList)(V.img, a?.className)
-            }), (a?.title || a?.description) && (0, o.jsx)(me, {
+            }), (a?.title || a?.description) && (0, o.jsx)(ge, {
               item: a
             })]
           })
         },
-        D = e => {
+        z = e => {
           let {
             current: a,
             total: t
@@ -755,43 +832,43 @@
           let {
             children: a,
             items: t = [],
-            style: i = {},
-            noInfiniteScroll: n = !1,
+            style: n = {},
+            noInfiniteScroll: i = !1,
             className: s = "",
             renderTemplate: r = "standard",
             text: c,
-            customSpaceBetween: l = null,
+            customSpaceBetween: d = null,
             centerSlides: m = !0,
             centeredSlidesBounds: f = !1
           } = e;
-          const [u, b] = (0, d.useState)(0), g = (0, d.useMemo)((() => a && Array.isArray(a) ? a.map((() => (0, L.Z)())) : null), [a]);
+          const [b, u] = (0, l.useState)(0), g = (0, l.useMemo)((() => a && Array.isArray(a) ? a.map((() => (0, L.Z)())) : null), [a]);
           if (!(t && 0 !== t?.length || a)) return null;
           const p = {
             0: {
-              spaceBetween: l ?? 16
+              spaceBetween: d ?? 16
             },
             1024: {
-              spaceBetween: l ?? 18
+              spaceBetween: d ?? 18
             },
             1920: {
-              spaceBetween: l ?? 20
+              spaceBetween: d ?? 20
             },
             2560: {
-              spaceBetween: l ?? 22
+              spaceBetween: d ?? 22
             }
           };
           return (0, o.jsxs)("div", {
-            className: (0, j.classList)(V.deprecatedCarousel, V[r], V[`infinite_${!n}`], a ? V.renderedWithChildren : "", s),
-            style: i,
+            className: (0, j.classList)(V.deprecatedCarousel, V[r], V[`infinite_${!i}`], a ? V.renderedWithChildren : "", s),
+            style: n,
             children: [(0, o.jsxs)(I.tq, {
-              loop: !n,
+              loop: !i,
               grabCursor: !0,
               centeredSlides: m,
               centerInsufficientSlides: m,
               slidesPerView: "auto",
               speed: 700,
               breakpoints: p,
-              onActiveIndexChange: e => b(e?.realIndex ?? 0),
+              onActiveIndexChange: e => u(e?.realIndex ?? 0),
               centeredSlidesBounds: f,
               children: [(0, o.jsx)("div", {
                 className: V.trackWrapper,
@@ -805,74 +882,74 @@
                     children: e
                   }, g && g[a])))]
                 })
-              }), (0, o.jsx)(D, {
-                current: u,
+              }), (0, o.jsx)(z, {
+                current: b,
                 total: a ? a.length : t.length
               })]
-            }), (c?.title || c?.description) && (0, o.jsx)(me, {
+            }), (c?.title || c?.description) && (0, o.jsx)(ge, {
               item: c
             })]
           })
         };
-      var F = t(9929),
-        z = t(6711);
+      var D = t(9929),
+        F = t(6711);
       const M = (0, t(454).Hu)(),
         A = e => {
           let {
             condition: a = null,
             children: t
           } = e;
-          const [i, n] = (0, d.useState)(!1), s = (e => {
-            const [a] = (0, c.useSearchParams)(), [t, i] = (0, d.useState)(null), n = (0, z.useRockstarUser)(), {
+          const [n, i] = (0, l.useState)(!1), s = (e => {
+            const [a] = (0, c.useSearchParams)(), [t, n] = (0, l.useState)(null), i = (0, F.useRockstarUser)(), {
               loggedIn: s
-            } = n, {
+            } = i, {
               currentCharId: r
-            } = (0, z.useRockstarUserState)(), o = function(e) {
+            } = (0, F.useRockstarUserState)(), o = function(e) {
               let a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0,
                 t = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "gtao";
-              return (0, d.useMemo)((() => {
-                const i = e?.data?.characters?.[t];
-                return "1" === (i?.[a]?.stats?.overview?.hasGtaPlus?.value ?? "0")
+              return (0, l.useMemo)((() => {
+                const n = e?.data?.characters?.[t];
+                return "1" === (n?.[a]?.stats?.overview?.hasGtaPlus?.value ?? "0")
               }), [e, t, a])
-            }(n, r);
-            return (0, d.useEffect)((() => {
-              i(null);
-              const n = "true" === a.get("conditionPreview");
+            }(i, r);
+            return (0, l.useEffect)((() => {
+              n(null);
+              const i = "true" === a.get("conditionPreview");
               if (!(!e?.length > 0)) return M.applyFilters("preview_conditions", e), e.forEach((e => {
                 const {
                   value: r
                 } = e;
-                if (n) return "true" === a.get(r) ? (i(!0), !0) : (i(!1), !1);
+                if (i) return "true" === a.get(r) ? (n(!0), !0) : (n(!1), !1);
                 if (!1 === t) return !1;
                 switch (r) {
                   case "user:is:loggedIn":
-                    i(!0 === s);
+                    n(!0 === s);
                     break;
                   case "user:not:loggedIn":
-                    i(!1 === s);
+                    n(!1 === s);
                     break;
                   case "user:is:gtaPlus":
-                    i(!0 === o);
+                    n(!0 === o);
                     break;
                   case "user:not:gtaPlus":
-                    i(!1 === o);
+                    n(!1 === o);
                     break;
                   default:
-                    i(!1)
+                    n(!1)
                 }
                 return null
               })), () => {}
-            }), [a, e, o, n, s]), t
+            }), [a, e, o, i, s]), t
           })(a);
-          return (0, d.useEffect)((() => {
-            n(s)
-          }), [s]), (0, d.useMemo)((() => i ? t : null), [i])
+          return (0, l.useEffect)((() => {
+            i(s)
+          }), [s]), (0, l.useMemo)((() => n ? t : null), [n])
         },
-        P = (0, F.withTranslations)((e => {
+        P = (0, D.withTranslations)((e => {
           let {
             children: a
           } = e;
-          return d.Children.map(d.Children.toArray(a), (e => (0, o.jsx)(A, {
+          return l.Children.map(l.Children.toArray(a), (e => (0, o.jsx)(A, {
             ...e?.props
           })))
         }));
@@ -928,35 +1005,35 @@
             foreign_type: t
           } = e;
           const {
-            track: i
-          } = (0, z.useGtmTrack)(), {
-            refetch: n
-          } = (0, u.useQuery)(O.UserGetVote, {
+            track: n
+          } = (0, F.useGtmTrack)(), {
+            refetch: i
+          } = (0, b.useQuery)(O.UserGetVote, {
             skip: !0
-          }), [s] = (0, u.useMutation)(O.UserCastVote), [r, c] = (0, d.useState)(null), l = (0, d.useCallback)((e => {
+          }), [s] = (0, b.useMutation)(O.UserCastVote), [r, c] = (0, l.useState)(null), d = (0, l.useCallback)((e => {
             (async () => {
               if (e === r && null !== r) c(null);
               else {
-                c(e), i({
+                c(e), n({
                   event_action: e ? "like" : "dislike",
                   event_category: "cta",
                   event: "cta_" + (e ? "like" : "dislike"),
                   event_label: a
                 });
-                const n = {
+                const i = {
                   foreignId: a,
                   foreignType: t,
                   vote: e
                 };
                 await s({
-                  variables: n
+                  variables: i
                 })
               }
             })()
           }), [a, t, r]);
-          return (0, d.useEffect)((() => {
+          return (0, l.useEffect)((() => {
             a && t && (async () => {
-              const e = await n({
+              const e = await i({
                 foreignId: a,
                 foreignType: t
               });
@@ -968,13 +1045,13 @@
               "aria-label": "upvote",
               className: [U.upvote, U.voteButton, r ? U.active : ""].join(" "),
               name: "upvote",
-              onClick: () => l(!0),
+              onClick: () => d(!0),
               type: "button"
             }), (0, o.jsx)("button", {
               "aria-label": "downvote",
               className: [U.downvote, U.voteButton, !1 === r ? U.active : ""].join(" "),
               name: "downvote",
-              onClick: () => l(!1),
+              onClick: () => d(!1),
               type: "button"
             })]
           })
@@ -983,11 +1060,11 @@
           let {
             action_text: a,
             link: t,
-            trackingData: i
+            trackingData: n
           } = e;
           const {
-            track: n
-          } = (0, z.useGtmTrack)();
+            track: i
+          } = (0, F.useGtmTrack)();
           return (0, o.jsx)("a", {
             href: t,
             target: "_blank",
@@ -995,8 +1072,8 @@
             children: (0, o.jsxs)("button", {
               className: U.calloutLink,
               type: "button",
-              onClick: i ? () => n({
-                ...i
+              onClick: n ? () => i({
+                ...n
               }) : () => {},
               children: [a, (0, o.jsx)(H, {
                 className: U.calloutLinkIcon
@@ -1008,52 +1085,52 @@
           let {
             helperText: a,
             linkText: t,
-            link: i,
-            trackingData: n
+            link: n,
+            trackingData: i
           } = e;
           const {
             track: s
-          } = (0, z.useGtmTrack)();
+          } = (0, F.useGtmTrack)();
           return (0, o.jsxs)("div", {
             className: U.actionFooter,
             children: [a, t && " ", t && (0, o.jsx)("a", {
-              href: i ?? "",
+              href: n ?? "",
               onClick: () => s({
-                ...n
+                ...i
               }),
               children: t
             })]
           })
         },
-        Y = (0, F.withTranslations)((e => {
+        Y = (0, D.withTranslations)((e => {
           let {
             header: a,
             subheader: t,
-            type: i,
-            action_text: n,
+            type: n,
+            action_text: i,
             link: s,
             foreign_id: r = document.location.pathname,
             foreign_type: c = "url",
-            className: l = "",
+            className: d = "",
             actionFooterHelperText: m,
             actionFooterLinkText: f,
-            actionFooterLink: u,
-            trackingData: b = {},
+            actionFooterLink: b,
+            trackingData: u = {},
             actionFooterLinkTrackingData: g = {},
             t: p
           } = e;
           const {
             loggedIn: v
-          } = (0, z.useRockstarUser)(), {
+          } = (0, F.useRockstarUser)(), {
             track: k
-          } = (0, z.useGtmTrack)(), h = `${document.location.origin}/auth/sc-auth-login?returnUrl=${window.location.pathname}`, {
+          } = (0, F.useGtmTrack)(), h = `${document.location.origin}/auth/sc-auth-login?returnUrl=${window.location.pathname}`, {
             ref: _,
             inView: x
           } = (0, G.YD)({
             threshold: .6
-          }), [y, j] = (0, d.useState)(!1);
+          }), [y, j] = (0, l.useState)(!1);
           let S;
-          if ((0, d.useEffect)((() => {
+          if ((0, l.useEffect)((() => {
               x && !y && (k({
                 event: "page_section_impression",
                 event_action: "impression",
@@ -1062,14 +1139,14 @@
                 element_placement: "callout section"
               }), j(!0))
             }), [x]), !a && !t) return null;
-          switch (i) {
+          switch (n) {
             case "vote":
               if (!v) {
                 S = (0, o.jsx)(N, {
                   to: h,
                   className: U.calloutButton,
-                  onClick: b ? () => k({
-                    ...b
+                  onClick: u ? () => k({
+                    ...u
                   }) : () => {},
                   children: "Log In"
                 });
@@ -1081,27 +1158,27 @@
               });
               break;
             case "button":
-              n && s && (S = (0, o.jsx)(N, {
+              i && s && (S = (0, o.jsx)(N, {
                 to: s,
                 className: U.calloutButton,
-                onClick: b ? () => k({
-                  ...b
+                onClick: u ? () => k({
+                  ...u
                 }) : () => {},
-                children: n
+                children: i
               }));
               break;
             case "link":
-              n && s && (S = (0, o.jsx)(q, {
-                action_text: n,
+              i && s && (S = (0, o.jsx)(q, {
+                action_text: i,
                 link: s,
-                trackingData: b
+                trackingData: u
               }));
               break;
             default:
               S = null
           }
           return (0, o.jsx)("div", {
-            className: `${U.calloutContainer} ${l||""}`,
+            className: `${U.calloutContainer} ${d||""}`,
             ref: _,
             children: (0, o.jsxs)("div", {
               className: U.calloutSection,
@@ -1119,139 +1196,214 @@
                 children: [S, m && (0, o.jsx)(W, {
                   helperText: m,
                   linkText: f,
-                  link: u,
+                  link: b,
                   trackingData: g
                 })]
               })]
             })
           })
         }));
-      var Q = t(9285),
-        Z = t(5633),
-        X = t.n(Z);
+      var Z = t(9285),
+        Q = t(5633),
+        X = t.n(Q);
       const K = e => {
           let {
             isMulti: a,
             allowSelectAll: t,
-            label: i,
-            miscProps: n
+            label: n,
+            miscProps: i
           } = e;
-          const [s, r] = (0, d.useState)(""), c = (0, d.useMemo)((() => X()().getData()), []);
-          return (0, o.jsx)(Q.ZP, {
+          const [s, r] = (0, l.useState)(""), c = (0, l.useMemo)((() => X()().getData()), []);
+          return (0, o.jsx)(Z.ZP, {
             unstyled: !0,
             value: s,
             isMulti: a,
             allowSelectAll: t,
             options: c,
-            placeholder: i,
+            placeholder: n,
             onChange: e => {
               return a = e?.target?.value, void r(a);
               var a
             },
             classNamePrefix: "country-select",
-            ...n
+            ...i
           })
         },
         J = e => {
           let {
+            cookieName: a,
+            cookieValue: t,
+            trueComponent: n,
+            falseComponent: i
+          } = e;
+          const s = (e => {
+              const a = document.cookie.split("; "),
+                t = `${e}=`,
+                n = a.find((e => e.startsWith(t)));
+              return n?.substring(t.length, n.length)
+            })(a),
+            [r] = (0, c.useSearchParams)(),
+            o = r.get(a);
+          return o && ((e, a) => {
+            e && a && (document.cookie = `${e}=${a}; domain=${(()=>{const e=window.location.hostname.split(".");return e.slice(e.length-2).join(".")})()}; path=/;`)
+          })(a, o), s === t || o === t ? n : i
+        },
+        ee = {
+          ps: "https://media-rockstargames-com.akamaized.net/mfe5/__common/img/f440137b017e0d8346de.svg",
+          ps3: "https://media-rockstargames-com.akamaized.net/mfe5/__common/img/c362395c2a7ba52d8e93.svg",
+          ps4: "https://media-rockstargames-com.akamaized.net/mfe5/__common/img/399e4fadd28201f041fe.svg",
+          ps5: "https://media-rockstargames-com.akamaized.net/mfe5/__common/img/6c6092979b344bb70ea6.svg",
+          switch: "https://media-rockstargames-com.akamaized.net/mfe5/__common/img/fc5864f34c72e5763bea.svg",
+          xbox: "https://media-rockstargames-com.akamaized.net/mfe5/__common/img/96b3858c446374dbe3a1.svg",
+          xboxone: "https://media-rockstargames-com.akamaized.net/mfe5/__common/img/3852a2c6a70d09be710a.svg",
+          xboxseriesxs: "https://media-rockstargames-com.akamaized.net/mfe5/__common/img/ef962ee0eb1746b9363f.svg",
+          xbox360: "https://media-rockstargames-com.akamaized.net/mfe5/__common/img/3ab3afe4e696bde1c015.svg",
+          pc: "https://media-rockstargames-com.akamaized.net/mfe5/__common/img/af7a4b3f215a9ffd7074.svg",
+          play: "https://media-rockstargames-com.akamaized.net/mfe5/__common/img/3ffdb1e004aa0d8bde9d.svg",
+          applestore: "https://media-rockstargames-com.akamaized.net/mfe5/__common/img/36f080306901cc2d0b77.svg",
+          googleplay: "https://media-rockstargames-com.akamaized.net/mfe5/__common/img/f8d68313a152407ac2cb.svg",
+          questionMark: "https://media-rockstargames-com.akamaized.net/mfe5/__common/img/e17029ee821cf4c19a4b.svg",
+          default: ""
+        },
+        ae = {
+          cta: "_93f8151fb9eb5ac4ac33f7c504f5254f8e80",
+          xbox: "_93f8151fb9eb5ac4e4d53f93af9a551a8f1e",
+          xboxone: "_93f8151fb9eb5ac4ac1ed06ce72d8779fe3c",
+          xboxseriesxs: "_93f8151fb9eb5ac4e486c6915fdad3d0d58b",
+          ps: "_93f8151fb9eb5ac4c5e2b24d089be9c9e698",
+          ps4: "_93f8151fb9eb5ac4b92c4ed75a97418d3463",
+          ps5: "_93f8151fb9eb5ac4fd9b33cbebecbffa019c",
+          pc: "_93f8151fb9eb5ac4ec25b4170dd37471e0b3",
+          switch: "_93f8151fb9eb5ac4d8244eabc67dc26103c8",
+          googleplay: "_93f8151fb9eb5ac4aa9a86ce6b3178793b58",
+          applestore: "_93f8151fb9eb5ac4e75a9a7d271fa20297bb",
+          platformIcon: "_93f8151fb9eb5ac4a73cc112e668f07114e8"
+        },
+        te = e => {
+          let {
+            platform: a = "",
+            href: t
+          } = e;
+          const n = t && t.startsWith(document.location.origin) ? "_self" : "_blank",
+            i = a ? ee[a] || null : null,
+            s = i ? (0, o.jsx)("img", {
+              className: ae.platformIcon,
+              src: i,
+              alt: ""
+            }) : null;
+          return (0, o.jsx)("a", {
+            href: t,
+            className: ae.platformButton,
+            target: n,
+            rel: "noreferrer",
+            tabIndex: -1,
+            children: s
+          })
+        },
+        ne = e => {
+          let {
             children: a,
             href: t,
-            style: i,
-            content: n,
+            style: n,
+            content: i,
             variant: s = null,
-            gtm: r = {}
+            platformItem: r,
+            gtm: c = {}
           } = e;
           const {
-            track: c
-          } = (0, z.useGtmTrack)(), l = (0, F.useDataLayer)(), m = n ?? a, f = (0, d.useCallback)((() => {
-            c({
+            track: d
+          } = (0, F.useGtmTrack)(), m = (0, D.useDataLayer)(), f = i ?? a, b = (0, l.useCallback)((() => {
+            d({
               event: "cta_other",
-              ...l,
-              ...r,
+              ...m,
+              ...c,
               link_url: t ?? void 0,
-              text: m ?? void 0
+              text: f ?? void 0
             })
-          }), [r, t, l]);
+          }), [c, t, m]);
           return (0, o.jsx)("div", {
-            className: "_93f8151fb9eb5ac4ac33f7c504f5254f8e80",
-            style: i,
+            className: [ae.cta, "platform" === s && r ? ae[r] : ""].join(" "),
+            style: n,
             "data-variant": s,
             role: "button",
-            onClick: f,
-            onKeyDown: f,
+            onClick: b,
+            onKeyDown: b,
             tabIndex: 0,
-            children: (0, o.jsx)("a", {
+            children: "platform" === s && r ? (0, o.jsx)(te, {
+              platform: r,
+              href: t
+            }) : (0, o.jsx)("a", {
               href: t,
               target: "_blank",
               rel: "noreferrer",
               tabIndex: -1,
-              children: m
+              children: f
             })
           })
         };
-      var ee = t(559);
-      const ae = "_93f8151fb9eb5ac4bf242a69d5229fde1671",
-        te = "_93f8151fb9eb5ac4e5458c4a3f0cb5663be4",
-        ie = "_93f8151fb9eb5ac4c46ce1b6b8ea1aeb98cd",
-        ne = e => {
+      var ie = t(559);
+      const se = "_93f8151fb9eb5ac4bf242a69d5229fde1671",
+        re = "_93f8151fb9eb5ac4e5458c4a3f0cb5663be4",
+        ce = "_93f8151fb9eb5ac4c46ce1b6b8ea1aeb98cd",
+        oe = e => {
           let {
             alt: a,
-            className: i,
-            src: n,
+            className: n,
+            src: i,
             style: s
           } = e;
-          const [r, c] = (0, F.usePreloadImg)(n);
-          let l = n;
-          !1 === r && (i === ie && (l = t(8280)), l = t(8933));
-          const d = {
+          const [r, c] = (0, D.usePreloadImg)(i);
+          let d = i;
+          !1 === r && (n === ce && (d = t(8280)), d = t(8933));
+          const l = {
             "--aspect-ratio": c.width / c.height,
             ...s
           };
           return (0, o.jsx)("img", {
-            src: l,
-            className: i ?? "",
+            src: d,
+            className: n ?? "",
             alt: a,
-            style: d
+            style: l
           })
         },
-        se = e => {
+        de = e => {
           let {
             className: a,
-            style: i = {},
-            image: n = {},
+            style: n = {},
+            image: i = {},
             imageStyle: s = {}
           } = e, {
             alt: r,
             src: c
-          } = (0, ee.useImageParser)(n);
+          } = (0, ie.useImageParser)(i);
           return c.desktop || c.mobile || (r = "placeholder", c = {
             mobile: t(8280),
             desktop: t(8933)
           }), (0, o.jsx)("div", {
-            className: n.frame ? `${n.frame} ${ae}` : ae,
-            style: i,
+            className: i.frame ? `${i.frame} ${se}` : se,
+            style: n,
             children: c?.desktop && c?.mobile ? (0, o.jsxs)(o.Fragment, {
-              children: [(0, o.jsx)(ne, {
+              children: [(0, o.jsx)(oe, {
                 style: {
                   ...s,
-                  ...n?.style
+                  ...i?.style
                 },
                 src: c.desktop,
                 alt: r,
-                className: a ? `${a} ${te}` : te
-              }), (0, o.jsx)(ne, {
+                className: a ? `${a} ${re}` : re
+              }), (0, o.jsx)(oe, {
                 style: {
                   ...s,
-                  ...n?.style
+                  ...i?.style
                 },
                 src: c.mobile,
                 alt: r,
-                className: a ? `${a} ${ie}` : ie
+                className: a ? `${a} ${ce}` : ce
               })]
-            }) : (0, o.jsx)(ne, {
+            }) : (0, o.jsx)(oe, {
               style: {
                 ...s,
-                ...n?.style
+                ...i?.style
               },
               src: c?.desktop ?? c?.mobile,
               alt: r,
@@ -1259,25 +1411,25 @@
             })
           })
         };
-      var re = t(3699);
-      const ce = {
+      var le = t(3699);
+      const me = {
           hr: "_93f8151fb9eb5ac4ae0c477489451041502f",
           redLine: "_93f8151fb9eb5ac4e35f43016ae1f2345302",
           gtao: "_93f8151fb9eb5ac4d04040a5527314201aa6"
         },
-        oe = e => {
+        fe = e => {
           let {
             style: a,
             className: t = "",
-            type: i
+            type: n
           } = e;
           return (0, o.jsx)("div", {
             style: a,
-            className: [ce.hr, ce[i], t].join(" ")
+            className: [me.hr, me[n], t].join(" ")
           })
         },
-        le = "_93f8151fb9eb5ac4bb5b7b532ca0340c3435",
-        de = e => {
+        be = "_93f8151fb9eb5ac4bb5b7b532ca0340c3435",
+        ue = e => {
           let {
             to: a,
             children: t
@@ -1289,19 +1441,19 @@
             children: t
           }) : t
         },
-        me = e => {
+        ge = e => {
           let {
             item: a,
             className: t = ""
           } = e;
           return (0, o.jsxs)("div", {
             className: (0, j.classList)("_93f8151fb9eb5ac4fd88ba706e803a317850", t),
-            children: [a.title && (0, o.jsx)(de, {
+            children: [a.title && (0, o.jsx)(ue, {
               to: a?.href ?? a?.to,
               children: (0, o.jsx)("h3", {
                 children: a.title
               })
-            }), Array.isArray(a?.description?.content) ? a.description.content?.map(((e, a) => e?.unorderedList ? (0, o.jsx)(re.Z, {
+            }), Array.isArray(a?.description?.content) ? a.description.content?.map(((e, a) => e?.unorderedList ? (0, o.jsx)(le.Z, {
               columns: e.unorderedList.columns ?? null,
               style: {
                 "--unordered-list-padding": "var(--grid-gap-static-sm)",
@@ -1309,7 +1461,7 @@
               },
               noImg: !0,
               list: e.unorderedList.list
-            }, a) : e?.image ? (0, o.jsx)(se, {
+            }, a) : e?.image ? (0, o.jsx)(de, {
               image: e.image,
               className: e?.className,
               ariaLabel: e.image?.ariaLabel
@@ -1317,86 +1469,86 @@
               style: {
                 margin: `${e.separator.spacing} 0`
               },
-              children: (0, o.jsx)(oe, {})
+              children: (0, o.jsx)(fe, {})
             }, a) : (0, o.jsx)("p", {
               children: (0, o.jsx)("span", {
-                className: le,
+                className: be,
                 dangerouslySetInnerHTML: {
                   __html: e
                 }
               })
             }, a))) : (0, o.jsx)("span", {
-              className: le,
+              className: be,
               dangerouslySetInnerHTML: {
                 __html: a.description
               }
             })]
           })
         };
-      var fe = t(5439);
-      const ue = e => {
+      var pe = t(5439);
+      const ve = e => {
           let {
             children: a,
             ...t
           } = e;
-          const [i, n] = (0, d.useState)(!1);
-          return (0, o.jsx)(fe.iF, {
+          const [n, i] = (0, l.useState)(!1);
+          return (0, o.jsx)(pe.iF, {
             ...t,
             onReady: () => {
               document.fonts.ready.then((() => {
-                n(!0)
+                i(!0)
               }))
             },
             children: a
           })
         },
-        be = {
+        ke = {
           badge: "_93f8151fb9eb5ac4c5c56c3e04a1851fa937",
           badgeSizeUpdate: "_93f8151fb9eb5ac4a316681347778ad4f119",
           badge2: "_93f8151fb9eb5ac4bce164d72f6012df909f",
           badge3: "_93f8151fb9eb5ac4a0cac400610dc1c1e2b1"
         },
-        ge = e => {
+        he = e => {
           let {
             wrapper: a,
             children: t,
-            role: i,
-            splitter: n
+            role: n,
+            splitter: i
           } = e;
-          return n || i ? a(t) : t
+          return i || n ? a(t) : t
         },
-        pe = e => {
+        _e = e => {
           let {
             badge: a,
-            badgeType: i,
-            role: n,
+            badgeType: n,
+            role: i,
             splitter: s
           } = e;
           const r = [];
           s ? a.split(s).map(((e, a) => r.push(e))) : r.push(a);
           let c = 100;
-          return 2 == r.length && r[1].length < 4 && "off" !== r[1].toLowerCase() && 45, (0, o.jsxs)(ge, {
+          return 2 == r.length && r[1].length < 4 && "off" !== r[1].toLowerCase() && 45, (0, o.jsxs)(he, {
             splitter: s,
-            role: n,
+            role: i,
             wrapper: e => (0, o.jsx)("div", {
-              className: `${be.badge} ${i?be[i]:""} `,
+              className: `${ke.badge} ${n?ke[n]:""} `,
               children: e
             }),
             children: [(0, o.jsx)(o.Fragment, {
-              children: n && (0, o.jsx)(se, {
+              children: i && (0, o.jsx)(de, {
                 image: {
-                  alt: n,
-                  desktop: t(9065)(`./${n}.png`)
+                  alt: i,
+                  desktop: t(9065)(`./${i}.png`)
                 }
               })
-            }), (0, o.jsx)(ue, {
-              className: `${s||n?"":be.badge} ${i?be[i]:""}`,
+            }), (0, o.jsx)(ve, {
+              className: `${s||i?"":ke.badge} ${n?ke[n]:""}`,
               min: 8,
               max: 1e3,
-              mode: s || n ? "single" : "multi",
+              mode: s || i ? "single" : "multi",
               children: r[0]
             }), (0, o.jsx)(o.Fragment, {
-              children: r.shift() && s && r.length >= 1 && (0, o.jsx)(ue, {
+              children: r.shift() && s && r.length >= 1 && (0, o.jsx)(ve, {
                 min: 8,
                 max: 1e3,
                 mode: "single",
@@ -1406,8 +1558,8 @@
             })]
           }, "badge-wrapper")
         },
-        ve = "_93f8151fb9eb5ac4d6ddb0500c624a198b6f",
-        ke = e => {
+        xe = "_93f8151fb9eb5ac4d6ddb0500c624a198b6f",
+        ye = e => {
           let {
             color: a
           } = e;
@@ -1417,55 +1569,55 @@
               "--loader-color": a
             },
             children: [(0, o.jsx)("div", {
-              className: ve
+              className: xe
             }), (0, o.jsx)("div", {
-              className: ve
+              className: xe
             }), (0, o.jsx)("div", {
-              className: ve
+              className: xe
             })]
           })
         },
-        he = {
+        Ne = {
           dropdownWrapper: "_93f8151fb9eb5ac4fadfba853d9b4c486799",
           items: "_93f8151fb9eb5ac4cade19d95e11809396b0",
           open: "_93f8151fb9eb5ac4ae54547249588b7983c8",
           opener: "_93f8151fb9eb5ac4b845334a62d364009081",
           secondary: "_93f8151fb9eb5ac4a66203f2848fe6ca7929"
         },
-        _e = e => {
+        je = e => {
           let {
             children: a,
             className: t,
-            title: i
+            title: n
           } = e;
-          const [n, s] = (0, d.useState)(!1);
+          const [i, s] = (0, l.useState)(!1);
           return (0, o.jsxs)("div", {
-            className: [he.dropdownWrapper, n ? he.open : "", void 0 !== t ? t : ""].join(" "),
+            className: [Ne.dropdownWrapper, i ? Ne.open : "", void 0 !== t ? t : ""].join(" "),
             children: [(0, o.jsx)("button", {
-              className: he.opener,
-              onClick: () => s(!n),
-              children: i
+              className: Ne.opener,
+              onClick: () => s(!i),
+              children: n
             }), (0, o.jsx)("div", {
-              className: he.items,
+              className: Ne.items,
               onClick: () => s(!1),
               children: a
             })]
           })
         };
-      var xe = t(2324);
-      const ye = e => {
+      var Se = t(2324);
+      const we = e => {
           let {
             children: a,
             context: t = null,
-            game: i,
-            image: n = {},
+            game: n,
+            image: i = {},
             style: s = {},
             template: r = null,
             theme: c = null,
-            reversedOnMobile: l = !1,
-            className: d = ""
+            reversedOnMobile: d = !1,
+            className: l = ""
           } = e;
-          const m = (0, ee.useImageParser)(n),
+          const m = (0, ie.useImageParser)(i),
             f = {
               ...s
             };
@@ -1475,23 +1627,23 @@
             f.background = `url(${m?.src?.desktop}) ${e} ${a}`
           }
           return (0, o.jsx)("div", {
-            className: (0, xe.classList)("_93f8151fb9eb5ac4c697c87f7c313df51629", l ? "_93f8151fb9eb5ac4ef02be9b8858c9180702" : "", d),
-            "data-game": "community" === r ? null : i,
-            style: (0, F.safeStyles)(f),
+            className: (0, Se.classList)("_93f8151fb9eb5ac4c697c87f7c313df51629", d ? "_93f8151fb9eb5ac4ef02be9b8858c9180702" : "", l),
+            "data-game": "community" === r ? null : n,
+            style: (0, D.safeStyles)(f),
             "data-context": t,
             "data-template": r,
             "data-theme": c,
             children: a
           })
         },
-        Ne = e => {
+        Te = e => {
           let {
             caption: a,
             children: t,
-            ...i
+            ...n
           } = e;
           return a ? (0, o.jsxs)("figure", {
-            ...i,
+            ...n,
             children: [t, (0, o.jsx)("figcaption", {
               dangerouslySetInnerHTML: {
                 __html: a
@@ -1499,22 +1651,22 @@
             })]
           }) : t
         },
-        je = e => {
+        Ce = e => {
           let {
             componentTitle: a,
             type: t,
-            items: i
+            items: n
           } = e;
-          return i?.length ? (0, o.jsx)("div", {
+          return n?.length ? (0, o.jsx)("div", {
             className: "_93f8151fb9eb5ac4e690331a56059fbc1bea",
             type: t,
-            children: (0, o.jsxs)(ye, {
+            children: (0, o.jsxs)(we, {
               children: [a && (0, o.jsx)("h3", {
                 children: a
-              }), (0, o.jsx)(ye, {
+              }), (0, o.jsx)(we, {
                 className: "_93f8151fb9eb5ac4e015a00e3540621e8966",
-                children: i.map(((e, a) => {
-                  return e?.embed ? (0, o.jsx)(Ne, {
+                children: n.map(((e, a) => {
+                  return e?.embed ? (0, o.jsx)(Te, {
                     caption: e?.caption,
                     children: (0, o.jsx)("div", {
                       className: "_93f8151fb9eb5ac4a4fc1364a24525bdd78b",
@@ -1533,18 +1685,18 @@
             })
           }) : null
         };
-      var Se = t(9270);
-      const we = {
+      var Ee = t(9270);
+      const Ie = {
           type: "spring",
           stiffness: 650,
           damping: 45
         },
-        Te = {
+        Le = {
           ease: "easeOut",
           duration: .9,
           delay: .3
         },
-        Ce = {
+        Ve = {
           open: {
             opacity: 0,
             transition: {
@@ -1554,16 +1706,16 @@
           },
           closed: {
             opacity: 1,
-            transition: Te
+            transition: Le
           }
         },
-        Ee = {
+        Be = {
           open: {
             opacity: 1,
             display: "grid",
             height: "auto",
             transition: {
-              opacity: Te,
+              opacity: Le,
               height: {
                 type: "spring",
                 stiffness: 425,
@@ -1579,14 +1731,14 @@
                 ease: "easeOut",
                 duration: .1
               },
-              height: we
+              height: Ie
             },
             transitionEnd: {
               display: "none"
             }
           }
         },
-        Ie = {
+        ze = {
           open: {
             "--cta-border-color": "var(--white-15)",
             "--cta-background-color": "rgba(255,255,255,.1)",
@@ -1605,7 +1757,7 @@
             "--cta-background-color-noBlur": "inherit",
             padding: "var(--padding-sm) var(--padding-md)",
             gridGap: 0,
-            transition: we,
+            transition: Ie,
             transitionEnd: {
               "--btn-hover-bg-color": "inherit",
               "--btn-hover-bg-color-noBlur": "inherit",
@@ -1614,7 +1766,7 @@
             }
           }
         },
-        Le = {
+        $e = {
           container: "_93f8151fb9eb5ac4be57c52943608ddf59c2",
           content: "_93f8151fb9eb5ac4cfe275314abbd166e236",
           unexpandedButton: "_93f8151fb9eb5ac4b870021e51bcabfd89b2",
@@ -1631,101 +1783,108 @@
           switch: "_93f8151fb9eb5ac4c0fafd02c2d647495517",
           buttonText: "_93f8151fb9eb5ac4ecefe77b5da17c0a3751"
         },
-        Ve = e => {
+        De = e => {
           let {
             buttonText: a = "",
-            link: i = "",
-            platform: n = "",
-            onClick: s
+            link: n = "",
+            platform: i = "",
+            target: s = null,
+            onClick: r
           } = e;
-          const r = i.startsWith(document.location.origin) ? "_self" : "_blank",
-            l = [Le.platformButton, Le[n]].join(" "),
-            d = n ? t(3631)(`./${n}.svg`) : null,
-            m = (0, o.jsxs)(o.Fragment, {
-              children: [d ? (0, o.jsx)("img", {
-                src: d,
+          const d = s ?? (n.startsWith(document.location.origin) ? "_self" : "_blank"),
+            l = [$e.platformButton, $e[i]].join(" "),
+            m = i ? t(3631)(`./${i}.svg`) : null,
+            f = (0, o.jsxs)(o.Fragment, {
+              children: [m ? (0, o.jsx)("img", {
+                src: m,
                 alt: a
               }) : "", (0, o.jsx)("div", {
-                className: Le.buttonText,
+                className: $e.buttonText,
                 children: a
               })]
             });
-          return i.startsWith("http") ? (0, o.jsx)("span", {
-            onClick: s,
-            onKeyDown: s,
+          return n.startsWith("http") ? (0, o.jsx)("span", {
+            onClick: r,
+            onKeyDown: r,
             role: "link",
             tabIndex: 0,
             children: (0, o.jsx)("a", {
-              href: i,
+              href: n,
               className: l,
-              target: r,
-              children: m
+              target: d,
+              children: f
             })
           }) : (0, o.jsx)(c.NavLink, {
             className: l,
-            onClick: s,
-            to: i,
-            children: m
+            onClick: r,
+            to: n,
+            children: f
           })
         },
-        Be = e => {
+        Fe = e => {
           let {
             buttonText: a = "Subscribe",
-            children: i,
-            platformsAndLinks: n = [],
+            children: n,
+            platformsAndLinks: i = [],
             trackingType: s = "buy",
-            trackingParent: r
+            trackingParent: r,
+            target: c = null
           } = e;
-          const [c, l] = (0, d.useState)(!1), {
-            track: m
-          } = (0, z.useGtmTrack)();
+          const [d, m] = (0, l.useState)(!1), {
+            track: f
+          } = (0, F.useGtmTrack)();
           return (0, o.jsxs)("div", {
-            className: Le.container,
-            children: [(0, o.jsx)(Se.E.div, {
-              className: Le.content,
-              animate: c ? "open" : "close",
-              variants: Ce,
-              children: i
-            }), (0, o.jsxs)(Se.E.div, {
+            className: $e.container,
+            children: [(0, o.jsx)(Ee.E.div, {
+              className: $e.content,
+              animate: d ? "open" : "close",
+              variants: Ve,
+              children: n
+            }), (0, o.jsxs)(Ee.E.div, {
               onClick: () => {
-                l(!c), c || ("buy" === s ? m({
-                  event_action: "buy",
-                  event_category: "cta",
-                  event: "cta_buy",
-                  event_label: r,
-                  text: a?.toLowerCase() ?? "subscribe"
-                }) : "select_platform" === s && m({
+                m(!d), d || f("select_platform" === s ? {
                   event_action: "select_platform",
                   event_category: "cta",
                   event: "select_platform",
                   event_label: r,
                   text: a?.toLowerCase() ?? "subscribe"
-                }))
+                } : "link_account" === s ? {
+                  event: "cta_link_account",
+                  event_category: "cta",
+                  event_action: "link_account",
+                  event_label: r
+                } : {
+                  event_action: "buy",
+                  event_category: "cta",
+                  event: "cta_buy",
+                  event_label: r,
+                  text: a?.toLowerCase() ?? "subscribe"
+                })
               },
-              className: Le.unexpandedButton,
-              animate: c ? "open" : "closed",
-              variants: Ie,
+              className: $e.unexpandedButton,
+              animate: d ? "open" : "closed",
+              variants: ze,
               initial: !1,
-              children: [(0, o.jsx)(Se.E.div, {
-                className: Le.buttonText,
+              children: [(0, o.jsx)(Ee.E.div, {
+                className: $e.buttonText,
                 children: "string" == typeof a ? a : "Subscribe"
-              }), (0, o.jsxs)(Se.E.div, {
-                className: Le.expandedArea,
-                animate: c ? "open" : "closed",
-                variants: Ee,
+              }), (0, o.jsxs)(Ee.E.div, {
+                className: $e.expandedArea,
+                animate: d ? "open" : "closed",
+                variants: Be,
                 initial: !1,
                 children: [(0, o.jsx)("img", {
-                  className: Le.closeButton,
-                  onClick: () => l(!1),
+                  className: $e.closeButton,
+                  onClick: () => m(!1),
                   onKeyDown: e => {
-                    l(!1)
+                    m(!1)
                   },
                   src: t(9545),
                   alt: "Close",
                   role: "button"
                 }), (0, o.jsx)("div", {
-                  className: Le.platformButtons,
-                  children: n.length ? n.map((e => (0, o.jsx)(Ve, {
+                  className: $e.platformButtons,
+                  children: i.length ? i.map((e => (0, o.jsx)(De, {
                     buttonText: e.buttonText ?? "",
                     link: e.href,
                     platform: e.platform,
@@ -1734,7 +1893,7 @@
                         href: a,
                         platform: t
                       } = e;
-                      m({
+                      f({
                         event_action: "store_link",
                         event_category: "cta",
                         event: "cta_store_link",
@@ -1742,14 +1901,15 @@
                         text: t,
                         link_url: a
                       })
-                    })(e)
+                    })(e),
+                    target: c
                   }, e.key))) : ""
                 })]
               })]
             })]
           })
         },
-        De = {
+        Me = {
           animateBox: "_93f8151fb9eb5ac4d79e4df595c4196a4456",
           fadeArea: "_93f8151fb9eb5ac4b6209d5da943d66d8b63",
           visible: "_93f8151fb9eb5ac4ee34ae7cf81c1083ffc9",
@@ -1757,58 +1917,58 @@
           bar: "_93f8151fb9eb5ac4e839fdcdcef89badd41c",
           animateMe: "_93f8151fb9eb5ac4cf9b5b4b10438cc31240"
         },
-        $e = e => {
+        Ae = e => {
           let {
             children: a,
             style: t
           } = e;
-          const i = (0, d.useRef)(null);
-          return (0, d.useEffect)((() => {
+          const n = (0, l.useRef)(null);
+          return (0, l.useEffect)((() => {
             new IntersectionObserver((e => {
               e.forEach((e => {
-                e.isIntersecting && e.target.classList.add([De.visible])
+                e.isIntersecting && e.target.classList.add([Me.visible])
               }))
-            })).observe(i?.current)
+            })).observe(n?.current)
           }), []), (0, o.jsx)("div", {
             style: t,
-            className: [De.fadeArea].join(" "),
-            ref: i,
+            className: [Me.fadeArea].join(" "),
+            ref: n,
             children: a
           })
         },
-        Fe = {
+        Pe = {
           img: "_93f8151fb9eb5ac4dc8c683c436f74586e7b",
           startAnimation: "_93f8151fb9eb5ac4a1b95a9bde496a003c95"
         },
-        ze = e => {
+        Ge = e => {
           let {
             imgSrc: a,
             titleSlug: t
           } = e;
-          const [i] = (0, F.usePreloadImg)(a);
+          const [n] = (0, D.usePreloadImg)(a);
           return (0, o.jsx)("div", {
             role: "img",
             "aria-label": t,
-            className: [Fe.img, i ? Fe.startAnimation : ""].join(" "),
+            className: [Pe.img, n ? Pe.startAnimation : ""].join(" "),
             style: {
               backgroundImage: `url(${a})`
             }
           })
         },
-        Me = e => {
+        Oe = e => {
           let {
             game: a,
             to: t
           } = e;
           const {
-            fob_640: i,
-            site_in_rockstar: n = !1,
+            fob_640: n,
+            site_in_rockstar: i = !1,
             title_slug: s
           } = a;
           let r = s;
           "V" === s && (r = "gta-v"), "GTAOnline" === s && (r = "gta-online"), "undeadnightmare" === s && (r = "reddeadredemption");
-          const c = t ?? `${n?"":"/games"}/${r}`;
-          return (0, o.jsx)(l, {
+          const c = t ?? `${i?"":"/games"}/${r}`;
+          return (0, o.jsx)(d, {
             "aria-label": a,
             "data-gtm-category": "Games",
             "data-gtm-action": "Game Click-through",
@@ -1816,13 +1976,13 @@
             to: c,
             target: "_self",
             className: "_93f8151fb9eb5ac4a1d8ee283069b56fe549",
-            children: (0, o.jsx)(ze, {
-              imgSrc: i,
+            children: (0, o.jsx)(Ge, {
+              imgSrc: n,
               titleSlug: s
             })
           })
         },
-        Ae = {
+        He = {
           gameSiteHeader: "_93f8151fb9eb5ac4fe27c37cb6585d7b7d60",
           activeNavItem: "_93f8151fb9eb5ac4a744303e87236a7fe626",
           navHidden: "_93f8151fb9eb5ac4deccde34bbfbdbaadbec",
@@ -1831,31 +1991,31 @@
           headerLogo: "_93f8151fb9eb5ac4f272d361dcbf5808666b",
           bg: "_93f8151fb9eb5ac4d8c7366f10a21fc14628"
         },
-        Pe = e => {
+        Ue = e => {
           let {
             buttonText: a = null,
             gameOverrideStyles: t,
-            navLinks: i,
-            cta: n = "",
+            navLinks: n,
+            cta: i = "",
             game: s
           } = e;
-          const [r, c] = (0, d.useState)(!1), l = (0, u.useMutateState)(), {
+          const [r, c] = (0, l.useState)(!1), d = (0, b.useMutateState)(), {
             navHidden: m
-          } = (0, u.useState)();
-          return (0, d.useEffect)((() => {
-            l({
+          } = (0, b.useState)();
+          return (0, l.useEffect)((() => {
+            d({
               gameSiteNavOpen: r
             })
-          }), [r]), (0, d.useEffect)((() => {
+          }), [r]), (0, l.useEffect)((() => {
             const e = () => {
               c(!1)
             };
             return document.addEventListener("click", e), () => document.removeEventListener("click", e)
           }), []), (0, o.jsxs)("header", {
             "data-game": s,
-            className: [Ae.gameSiteHeader, r ? Ae.headerNavOpen : "", m ? Ae.navHidden : "", t.gameSiteHeader, r ? t.headerNavOpen : ""].join(" "),
+            className: [He.gameSiteHeader, r ? He.headerNavOpen : "", m ? He.navHidden : "", t.gameSiteHeader, r ? t.headerNavOpen : ""].join(" "),
             children: [(0, o.jsx)("button", {
-              className: [Ae.headerLogo, t.headerLogo].join(" "),
+              className: [He.headerLogo, t.headerLogo].join(" "),
               onClick: e => {
                 c(!r), e.nativeEvent.stopImmediatePropagation()
               },
@@ -1865,17 +2025,17 @@
                 __html: a
               }
             }), (0, o.jsx)("div", {
-              className: Ae.bg
+              className: He.bg
             }), (0, o.jsx)("nav", {
               children: (0, o.jsx)("div", {
-                className: Ae.navContent,
-                children: i
+                className: He.navContent,
+                children: n
               })
-            }), n]
+            }), i]
           })
         };
-      var Ge = t(7131);
-      class Oe extends d.Component {
+      var Re = t(7131);
+      class qe extends l.Component {
         constructor(e) {
           super(e), this.state = {
             header: e.header ?? null
@@ -1899,10 +2059,10 @@
           }) : this.props.children
         }
       }
-      const He = function(e) {
+      const We = function(e) {
           let a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
           return function(t) {
-            return (0, o.jsx)(Oe, {
+            return (0, o.jsx)(qe, {
               header: a,
               children: (0, o.jsx)(e, {
                 ...t
@@ -1910,19 +2070,19 @@
             })
           }
         },
-        Ue = e => {
+        Ye = e => {
           let {
             prevRef: a,
             nextRef: t,
-            onNextClicked: i,
-            onPrevClicked: n
+            onNextClicked: n,
+            onPrevClicked: i
           } = e;
           return (0, o.jsxs)("div", {
             className: "_93f8151fb9eb5ac4f342658f4bc799d5517c",
             children: [(0, o.jsx)("div", {
               className: "_93f8151fb9eb5ac4ff2aff376d6a01f6cb73",
               ref: a,
-              onClick: n,
+              onClick: i,
               "aria-label": "Previous",
               role: "button",
               tabIndex: 0,
@@ -1930,7 +2090,7 @@
             }), (0, o.jsx)("div", {
               className: "_93f8151fb9eb5ac4ee9bbee58d7d850c5a49",
               ref: t,
-              onClick: i,
+              onClick: n,
               "aria-label": "Next",
               role: "button",
               tabIndex: 0,
@@ -1938,33 +2098,29 @@
             })]
           })
         },
-        Re = He((e => {
+        Ze = We((e => {
           let {
             description: a,
             slideChildren: t,
-            size: i,
-            title: n,
+            size: n,
+            title: i,
             customSlidesPerView: s = null,
             customSpaceBetween: r = null,
             slideClass: c,
-            style: l,
+            style: d,
             className: m,
             cardSizeBreakpoints: f = {},
-            customAspectRatio: u
+            customAspectRatio: b
           } = e;
           const {
-            track: b
-          } = (0, z.useGtmTrack)(), g = (0, d.useRef)(null), p = (0, d.useRef)(null), v = (0, d.useRef)(null), [k, h] = (0, d.useState)(null), [_, x] = (0, d.useState)(!1), [y, N] = (0, d.useState)(null), [S, w] = (0, d.useState)({}), [, T] = (0, d.useState)(), {
-            ref: C,
-            inView: E
+            track: u
+          } = (0, F.useGtmTrack)(), g = (0, l.useRef)(null), p = (0, l.useRef)(null), v = (0, l.useRef)(null), [k, h] = (0, l.useState)(null), [_, x] = (0, l.useState)(!1), [y, N] = (0, l.useState)(null), [S, w] = (0, l.useState)({}), [T, C] = (0, l.useState)(), {
+            ref: E,
+            inView: L
           } = (0, G.YD)({
             threshold: .6
-          });
-          let L = !1;
-          const [V, B] = (0, d.useState)(!1);
-          L = !0;
-          const [D, $] = (0, d.useState)(null), [F, M] = (0, d.useState)(!1);
-          (0, d.useEffect)((() => {
+          }), [V, B] = (0, l.useState)(!1), [z, $] = (0, l.useState)(null), [D, M] = (0, l.useState)(!1);
+          (0, l.useEffect)((() => {
             const e = () => {
               M(window.innerWidth < 1024)
             };
@@ -1992,7 +2148,7 @@
                 spaceBetween: r ?? 22
               }
             };
-          (0, d.useEffect)((() => {
+          (0, l.useEffect)((() => {
             if (!g.current) return;
             const e = () => {
               if (g.current) {
@@ -2004,76 +2160,74 @@
             return window.addEventListener("resize", e), e(), () => {
               window.removeEventListener("resize", e)
             }
-          }), [g, s]), (0, d.useEffect)((() => {
+          }), [g, s]), (0, l.useEffect)((() => {
             if (!t) return;
             let e = !1;
             t.forEach((a => {
               "cover-card" === a?.props?.tina?.payload?.meta?.type && (e = !0, $(a))
             })), B(e);
-            const a = t.map(((e, a) => "cover-card" === e?.props?.tina?.payload?.meta?.type && F ? null : (0, o.jsx)(I.o5, {
+            const a = t.map(((e, a) => "cover-card" === e?.props?.tina?.payload?.meta?.type && D ? null : (0, o.jsx)(I.o5, {
               children: e
             }, Symbol(a).toString())));
             h(a)
-          }), [t, F]), (0, d.useEffect)((() => {
-            T({
+          }), [t, D]), (0, l.useEffect)((() => {
+            C({
               nextEl: v.current,
               prevEl: p.current
             })
-          }), [v, p]), (0, d.useEffect)((() => {
-            E && !_ && t && (b({
+          }), [v, p]), (0, l.useEffect)((() => {
+            L && !_ && t && (u({
               event: "page_section_impression",
               event_action: "impression",
               event_category: "page_section",
-              event_label: `deck - ${n}`.toLowerCase(),
-              element_placement: `deck - ${n}`.toLowerCase()
+              event_label: `deck - ${i}`.toLowerCase(),
+              element_placement: `deck - ${i}`.toLowerCase()
             }), x(!0))
-          }), [E, t]);
-          const H = "custom" === i ? {
-            "--custom-aspect-ratio": u,
-            ...l
+          }), [L, t]);
+          const H = "custom" === n ? {
+            "--custom-aspect-ratio": b,
+            ...d
           } : {
-            ...l
+            ...d
           };
           return (0, o.jsxs)("div", {
             className: (0, j.classList)("_93f8151fb9eb5ac4b64388286d495640e2ab", m),
-            "data-size": i,
-            "data-sm": f?.sm ? f?.sm : i,
-            "data-md": f?.md ? f?.md : i,
-            "data-lg": f?.lg ? f?.lg : i,
-            "data-xl": f?.xl ? f?.xl : i,
-            "data-xxl": f?.xxl ? f?.xxl : i,
+            "data-size": n,
+            "data-sm": f?.sm ? f?.sm : n,
+            "data-md": f?.md ? f?.md : n,
+            "data-lg": f?.lg ? f?.lg : n,
+            "data-xl": f?.xl ? f?.xl : n,
+            "data-xxl": f?.xxl ? f?.xxl : n,
             "data-has-covercard": V,
             ref: g,
             style: H,
             children: [(0, o.jsx)("div", {
               className: "_93f8151fb9eb5ac4e5cc113d03c02f2bc75f",
-              ref: C
-            }), V && F && (0, o.jsx)("div", {
+              ref: E
+            }), V && D && (0, o.jsx)("div", {
               className: "_93f8151fb9eb5ac4a5a7fd063761a9f5821c",
-              children: D
+              children: z
             }), (0, o.jsxs)("div", {
               className: "_93f8151fb9eb5ac4b1b0c02e52077bb30d3f",
               children: [(0, o.jsxs)("div", {
                 className: "_93f8151fb9eb5ac4c317036cad59ac2c6e5b",
-                children: [(0, o.jsx)("div", {
+                children: [!V && (0, o.jsxs)("div", {
                   className: "_93f8151fb9eb5ac4ae2914403608eaaf3ded",
-                  children: !V && (0, o.jsxs)(o.Fragment, {
-                    children: [n && (0, o.jsx)("h2", {
-                      children: n
-                    }), (0, o.jsx)(Ue, {
-                      prevRef: p,
-                      nextRef: v,
-                      onNextClicked: A,
-                      onPrevClicked: P
-                    })]
-                  })
+                  children: [i && (0, o.jsx)("h2", {
+                    children: i
+                  }), i && !1, (0, o.jsx)(Ye, {
+                    prevRef: p,
+                    nextRef: v,
+                    onNextClicked: A,
+                    onPrevClicked: P
+                  })]
                 }), a && (0, o.jsx)("div", {
                   className: "_93f8151fb9eb5ac4f759f04301770fdd6a1b",
                   dangerouslySetInnerHTML: {
                     __html: a
                   }
                 })]
-              }), V && F && (0, o.jsx)(Ue, {
+              }), V && (0, o.jsx)(Ye, {
                 prevRef: p,
                 nextRef: v,
                 onNextClicked: A,
@@ -2083,38 +2237,39 @@
               slidesPerView: y,
               onInit: e => w(e),
               grabCursor: !0,
-              modules: [Ge.W_],
+              navigation: T,
+              modules: [Re.W_],
               breakpoints: O,
               slideClass: (0, j.classList)("swiper-slide", c),
               onSlideNextTransitionEnd: () => {
-                b({
+                u({
                   event_action: "next",
                   event_category: "carousel",
                   event: "carousel_next",
-                  event_label: n?.toLowerCase() ?? ""
+                  event_label: i?.toLowerCase() ?? ""
                 })
               },
               onSlidePrevTransitionEnd: () => {
-                b({
+                u({
                   event_action: "previous",
                   event_category: "carousel",
                   event: "carousel_previous",
-                  event_label: n?.toLowerCase() ?? ""
+                  event_label: i?.toLowerCase() ?? ""
                 })
               },
               onSlideChangeTransitionEnd: () => {
-                b({
+                u({
                   event_action: "swipe",
                   event_category: "carousel",
                   event: "carousel_swipe",
-                  event_label: n?.toLowerCase() ?? ""
+                  event_label: i?.toLowerCase() ?? ""
                 })
               },
               children: k
             }) : ""]
           })
         }), null),
-        qe = {
+        Qe = {
           hero: "_93f8151fb9eb5ac4bece3423e7348fe897dd",
           images: "_93f8151fb9eb5ac4e4f748c1ff815d8b9037",
           background: "_93f8151fb9eb5ac4b5ced9959e35f2253f74",
@@ -2126,7 +2281,7 @@
           legalText: "_93f8151fb9eb5ac4fdc2ef25c828ac791dc6",
           shardsCarousel: "_93f8151fb9eb5ac4a10586bf7a52bd0b2244"
         },
-        We = {
+        Xe = {
           visible: {
             opacity: 1,
             transition: {
@@ -2141,7 +2296,7 @@
             opacity: 0
           }
         },
-        Ye = {
+        Ke = {
           visible: {
             opacity: 1,
             y: 0,
@@ -2159,18 +2314,18 @@
             overflow: "hidden"
           }
         },
-        Qe = e => {
+        Je = e => {
           let {
             title: a = "",
             mobileImg: t,
-            desktopImg: i
+            desktopImg: n
           } = e;
-          const n = (0, j.useGetCdnSource)(t ?? null),
-            s = (0, j.useGetCdnSource)(i ?? n);
+          const i = (0, j.useGetCdnSource)(t ?? null),
+            s = (0, j.useGetCdnSource)(n ?? i);
           return (0, o.jsx)("div", {
-            className: qe.shard,
+            className: Qe.shard,
             style: {
-              "--background-image-mobile": `url(${n})`,
+              "--background-image-mobile": `url(${i})`,
               "--background-image-desktop": `url(${s})`
             },
             children: (0, o.jsx)("h5", {
@@ -2178,48 +2333,48 @@
             })
           })
         },
-        Ze = e => {
+        ea = e => {
           let {
             title: a = "Membership Rewards",
             shards: t
           } = e;
-          const [i, n] = (0, d.useState)(null);
-          return (0, d.useEffect)((() => {
-            t && n(t.reduce(((e, a) => {
+          const [n, i] = (0, l.useState)(null);
+          return (0, l.useEffect)((() => {
+            t && i(t.reduce(((e, a) => {
               if (!a?.shardImg) return e;
               const {
                 title: t,
-                shardImg: i
+                shardImg: n
               } = a, {
-                mobile: n,
+                mobile: i,
                 desktop: s
-              } = i;
-              return e.push((0, o.jsx)(Qe, {
+              } = n;
+              return e.push((0, o.jsx)(Je, {
                 title: t,
-                mobileImg: n?.full_src,
+                mobileImg: i?.full_src,
                 desktopImg: s?.full_src
               })), e
             }), []))
-          }), [t]), i ? (0, o.jsx)("div", {
-            className: qe.shardsCarousel,
-            children: (0, o.jsx)(Re, {
+          }), [t]), n ? (0, o.jsx)("div", {
+            className: Qe.shardsCarousel,
+            children: (0, o.jsx)(Ze, {
               title: a,
-              slideChildren: i,
+              slideChildren: n,
               size: "lg",
               customSpaceBetween: 0
             })
           }) : null
         },
-        Xe = e => {
+        aa = e => {
           let {
             animated: a = !1,
             ctas: t = [],
-            description: i,
-            expandingButtonLabel: n = "Subscribe",
+            description: n,
+            expandingButtonLabel: i = "Subscribe",
             title: s
           } = e;
-          const [r, c] = (0, d.useState)([]), [l, m] = (0, d.useState)([]);
-          return (0, d.useEffect)((() => {
+          const [r, c] = (0, l.useState)([]), [d, m] = (0, l.useState)([]);
+          return (0, l.useEffect)((() => {
             c(t.reduce(((e, a) => a.isInExpandingButton ? (e.push({
               href: a.href,
               platform: a.platform,
@@ -2229,94 +2384,94 @@
               title: a.buttonText,
               to: a.href
             }), e)), []))
-          }), t), t.length ? r.length ? (0, o.jsx)(Se.E.div, {
-            variants: a ? Ye : void 0,
-            children: (0, o.jsxs)(Be, {
-              buttonText: n,
+          }), t), t.length ? r.length ? (0, o.jsx)(Ee.E.div, {
+            variants: a ? Ke : void 0,
+            children: (0, o.jsxs)(Fe, {
+              buttonText: i,
               platformsAndLinks: r,
-              children: [(0, o.jsxs)(Se.E.div, {
-                className: qe.descriptions,
-                variants: a ? Ye : void 0,
+              children: [(0, o.jsxs)(Ee.E.div, {
+                className: Qe.descriptions,
+                variants: a ? Ke : void 0,
                 children: [(0, o.jsx)("h2", {
                   dangerouslySetInnerHTML: {
                     __html: s
                   }
                 }), (0, o.jsx)("p", {
                   dangerouslySetInnerHTML: {
-                    __html: i
+                    __html: n
                   }
                 })]
-              }), !!l && !!l.length && (0, o.jsx)(Se.E.div, {
-                variants: Ye,
+              }), !!d && !!d.length && (0, o.jsx)(Ee.E.div, {
+                variants: Ke,
                 children: (0, o.jsx)(E, {
-                  buttons: l,
-                  className: qe.buttonGroup
+                  buttons: d,
+                  className: Qe.buttonGroup
                 })
               })]
             })
           }) : (0, o.jsxs)(o.Fragment, {
-            children: [(0, o.jsxs)(Se.E.div, {
-              className: qe.descriptions,
-              variants: a ? Ye : void 0,
+            children: [(0, o.jsxs)(Ee.E.div, {
+              className: Qe.descriptions,
+              variants: a ? Ke : void 0,
               children: [(0, o.jsx)("h2", {
                 dangerouslySetInnerHTML: {
                   __html: s
                 }
               }), (0, o.jsx)("p", {
                 dangerouslySetInnerHTML: {
-                  __html: i
+                  __html: n
                 }
               })]
-            }), !!l && !!l.length && (0, o.jsx)(Se.E.div, {
-              variants: Ye,
+            }), !!d && !!d.length && (0, o.jsx)(Ee.E.div, {
+              variants: Ke,
               children: (0, o.jsx)(E, {
-                buttons: l,
-                className: qe.buttonGroup
+                buttons: d,
+                className: Qe.buttonGroup
               })
             })]
-          }) : (0, o.jsxs)(Se.E.div, {
-            className: qe.descriptions,
-            variants: a ? Ye : void 0,
+          }) : (0, o.jsxs)(Ee.E.div, {
+            className: Qe.descriptions,
+            variants: a ? Ke : void 0,
             children: [(0, o.jsx)("h2", {
               dangerouslySetInnerHTML: {
                 __html: s
               }
             }), (0, o.jsx)("p", {
               dangerouslySetInnerHTML: {
-                __html: i
+                __html: n
               }
             })]
           })
         },
-        Ke = e => {
+        ta = e => {
           let {
             animated: a = !1,
             brands: t = [],
-            ctas: i = [],
-            description: n = "",
+            ctas: n = [],
+            description: i = "",
             expandingButtonLabel: s = "Subscribe",
             title: r = "",
             legalText: c
           } = e;
-          return (0, o.jsxs)(Se.E.div, {
-            className: qe.content,
+          return (0, o.jsxs)(Ee.E.div, {
+            className: Qe.content,
             initial: "hidden",
             animate: "visible",
-            variants: a ? We : void 0,
-            children: [(0, o.jsx)(Se.E.div, {
-              variants: a ? Ye : void 0,
+            variants: a ? Xe : void 0,
+            children: [(0, o.jsx)(Ee.E.div, {
+              variants: a ? Ke : void 0,
               children: (0, o.jsx)(x, {
                 brands: t
               })
-            }), (0, o.jsx)(Xe, {
+            }), (0, o.jsx)(aa, {
               animated: a,
-              ctas: i,
-              description: n,
+              ctas: n,
+              description: i,
               expandingButtonLabel: s,
               title: r
-            }), c && (0, o.jsx)(Se.E.div, {
-              className: qe.legalText,
-              variants: a ? Ye : void 0,
+            }), c && (0, o.jsx)(Ee.E.div, {
+              className: Qe.legalText,
+              variants: a ? Ke : void 0,
               children: (0, o.jsx)("p", {
                 dangerouslySetInnerHTML: {
                   __html: c
@@ -2325,21 +2480,21 @@
             })]
           })
         },
-        Je = e => {
+        na = e => {
           let {
             animated: a = !1,
             backgroundImage: t,
-            brands: i = [],
-            className: n,
+            brands: n = [],
+            className: i,
             ctas: s = [],
             description: r = "",
             expandingButtonLabel: c = "Subscribe",
-            layeredImage: l,
-            layeredImageSettings: d,
+            layeredImage: d,
+            layeredImageSettings: l,
             legalText: m,
             shardsSection: f = {},
-            theme: u = "gen9",
-            title: b = ""
+            theme: b = "gen9",
+            title: u = ""
           } = e;
           const g = (e => {
               if (!e) return null;
@@ -2355,25 +2510,25 @@
                   ["imageWidth", "--layered-image-width-"]
                 ]);
               return Object.entries(e).forEach((e => {
-                const [i, n] = e;
-                if (t.has(i)) {
-                  const e = t.get(i);
-                  Object.entries(n).forEach((n => {
-                    const [s, r] = n;
-                    if (t.has(i) && t.has(s)) {
-                      const i = `${t.get(s)}${e}`;
-                      a[i] = "imageWidth" !== s ? r ? `${r}px` : "0px" : r ? `${r}vw` : "100vw"
+                const [n, i] = e;
+                if (t.has(n)) {
+                  const e = t.get(n);
+                  Object.entries(i).forEach((i => {
+                    const [s, r] = i;
+                    if (t.has(n) && t.has(s)) {
+                      const n = `${t.get(s)}${e}`;
+                      a[n] = "imageWidth" !== s ? r ? `${r}px` : "0px" : r ? `${r}vw` : "100vw"
                     }
                   }))
                 }
               })), a
-            })(d),
+            })(l),
             p = (0, j.useGetCdnSource)(t?.mobile?.full_src ?? null),
             v = (0, j.useGetCdnSource)(t?.desktop?.full_src ?? p),
-            k = (0, j.useGetCdnSource)(l?.mobile?.full_src ?? null),
-            h = (0, j.useGetCdnSource)(l?.desktop?.full_src ?? k);
-          return (0, o.jsxs)(Se.E.div, {
-            className: (0, j.classList)(qe.hero, n),
+            k = (0, j.useGetCdnSource)(d?.mobile?.full_src ?? null),
+            h = (0, j.useGetCdnSource)(d?.desktop?.full_src ?? k);
+          return (0, o.jsxs)(Ee.E.div, {
+            className: (0, j.classList)(Qe.hero, i),
             style: {
               "--background-image-desktop": `url(${v})`,
               "--background-image-mobile": `url(${p})`,
@@ -2382,62 +2537,62 @@
             },
             initial: "hidden",
             animate: "visible",
-            variants: a ? We : void 0,
+            variants: a ? Xe : void 0,
             "data-type": "hero",
-            theme: u,
+            theme: b,
             children: [(0, o.jsxs)("div", {
-              className: qe.images,
+              className: Qe.images,
               children: [v && p ? (0, o.jsx)("div", {
-                className: qe.background,
+                className: Qe.background,
                 style: t?.style ?? {}
               }) : "", k && h ? (0, o.jsx)("div", {
-                className: qe.layered,
-                style: d ? g : {}
+                className: Qe.layered,
+                style: l ? g : {}
               }) : "", (0, o.jsx)("div", {
-                className: qe.gradient
+                className: Qe.gradient
               })]
-            }), (0, o.jsx)(Ke, {
+            }), (0, o.jsx)(ta, {
               animated: a,
               ctas: s,
               description: r,
               expandingButtonLabel: c,
-              title: b,
-              brands: i,
+              title: u,
+              brands: n,
               legalText: m
-            }), f?.shards && (0, o.jsx)(Ze, {
+            }), f?.shards && (0, o.jsx)(ea, {
               ...f
             })]
           })
         };
-      var ea = t(3653),
-        aa = t.n(ea);
-      const ta = e => {
+      var ia = t(3653),
+        sa = t.n(ia);
+      const ra = e => {
           let {
             children: a,
             attributes: t = {},
-            className: i = "",
-            style: n = {}
+            className: n = "",
+            style: i = {}
           } = e;
           return (0, o.jsx)("span", {
-            className: (0, j.classList)(i, t?.className, "_93f8151fb9eb5ac4d29f95ed3bc7c6d7c617"),
-            style: (0, F.safeStyles)(n ?? t?.style ?? {}),
+            className: (0, j.classList)(n, t?.className, "_93f8151fb9eb5ac4d29f95ed3bc7c6d7c617"),
+            style: (0, D.safeStyles)(i ?? t?.style ?? {}),
             dangerouslySetInnerHTML: {
-              __html: aa().unescape(a)
+              __html: sa().unescape(a)
             }
           })
         },
-        ia = {
+        ca = {
           languageSelector: "_93f8151fb9eb5ac4f166a9ac105f2369a3dc",
           open: "_93f8151fb9eb5ac4dae05bdd156653f28cc6",
           linkWrapper: "_93f8151fb9eb5ac4b8a37e9fec4e19718bad",
           links: "_93f8151fb9eb5ac4d68cd45af954ada8339b"
         },
-        na = (0, F.withTranslations)((e => {
+        oa = (0, D.withTranslations)((e => {
           let {
             t: a
           } = e;
           const t = (0, c.useLocation)(),
-            [i, n] = (0, d.useState)(!1),
+            [n, i] = (0, l.useState)(!1),
             s = [{
               base: "",
               text: a("English")
@@ -2479,33 +2634,33 @@
               text: a("Polski")
             }];
           return (0, o.jsxs)("div", {
-            className: [ia.languageSelector, i ? ia.open : ""].join(" "),
+            className: [ca.languageSelector, n ? ca.open : ""].join(" "),
             children: [(0, o.jsxs)("button", {
-              onClick: () => n(!i),
+              onClick: () => i(!n),
               type: "button",
               "aria-label": "Language Selector",
               children: [(0, o.jsx)("i", {}), (0, o.jsx)("span", {
                 children: a("current-language")
               })]
             }), (0, o.jsx)("div", {
-              className: ia.linkWrapper,
+              className: ca.linkWrapper,
               children: (0, o.jsx)("div", {
-                className: ia.links,
+                className: ca.links,
                 children: s.map((e => {
                   let {
                     base: a,
-                    text: i
+                    text: n
                   } = e;
-                  return (0, o.jsx)(l, {
+                  return (0, o.jsx)(d, {
                     to: `${window.location.origin}${a}${t.pathname}${t.search}`,
-                    children: i
-                  }, i)
+                    children: n
+                  }, n)
                 }))
               })
             })]
           })
         })),
-        sa = {
+        da = {
           layeredImage: "_93f8151fb9eb5ac4fe055e03d755d327f68b",
           layersWrapper: "_93f8151fb9eb5ac4ed9fb715b12c8922091c",
           "hero-lg": "_93f8151fb9eb5ac4b14311c40aa111444c4f",
@@ -2540,59 +2695,59 @@
           shards_two: "_93f8151fb9eb5ac4c02b70bf2011870f3b5b",
           dual: "_93f8151fb9eb5ac4e8db8a69d0b33f0a6fe6"
         },
-        ra = e => {
+        la = e => {
           let {
             style: a,
             className: t
           } = e;
-          const i = {
+          const n = {
               ...a
             },
-            n = a["--border-image-source"];
-          return n && (i["--border-image-source"] = `url(${(0,j.useGetCdnSource)(n)})`), (0, o.jsx)("div", {
-            className: (0, j.classList)(sa.border, t),
+            i = a["--border-image-source"];
+          return i && (n["--border-image-source"] = `url(${(0,j.useGetCdnSource)(i)})`), (0, o.jsx)("div", {
+            className: (0, j.classList)(da.border, t),
             style: {
-              ...i
+              ...n
             }
           })
         },
-        ca = e => e?.images ? (0, o.jsx)("div", {
-          className: (0, j.classList)(sa.layeredImage, sa[e?.variantClass], sa[e?.wrapperSizeClass]),
+        ma = e => e?.images ? (0, o.jsx)("div", {
+          className: (0, j.classList)(da.layeredImage, da[e?.variantClass], da[e?.wrapperSizeClass]),
           style: {
             ...e?.style ?? {}
           },
           children: (0, o.jsxs)("div", {
-            className: sa.layersWrapper,
+            className: da.layersWrapper,
             children: [e?.images?.map(((e, a) => {
               const {
                 image: t,
-                paddingClass: i,
-                imageSizeClass: n,
+                paddingClass: n,
+                imageSizeClass: i,
                 objectFitClass: s,
                 positionClassX: r,
                 positionClassY: c,
-                zIndex: l,
-                className: d,
+                zIndex: d,
+                className: l,
                 style: m,
                 alt: f,
-                displayClass: u
+                displayClass: b
               } = e;
-              return (0, o.jsx)(se, {
+              return (0, o.jsx)(de, {
                 image: t,
                 style: {
-                  zIndex: l ?? ++a
+                  zIndex: d ?? ++a
                 },
                 imageStyle: m,
-                className: (0, j.classList)(d, u, sa.imageLayer, sa[i], sa[n], sa[s], sa[r], sa[c]),
+                className: (0, j.classList)(l, b, da.imageLayer, da[n], da[i], da[s], da[r], da[c]),
                 alt: f
-              }, l ?? ++a)
-            })), e?.borderImage && (0, o.jsx)(ra, {
+              }, d ?? ++a)
+            })), e?.borderImage && (0, o.jsx)(la, {
               style: e?.borderImage,
               className: e?.borderImage?.displayClass
             })]
           })
         }) : null,
-        oa = e => {
+        fa = e => {
           let {
             hero: a,
             children: t
@@ -2602,37 +2757,37 @@
             children: t
           }) : t
         },
-        la = e => {
+        ba = e => {
           let {
             badge: a = null,
             badgeType: t,
-            discountTxt: i,
-            splitter: n,
+            discountTxt: n,
+            splitter: i,
             image: s,
             style: r,
             className: c = "",
-            attributes: l = {},
-            role: d,
+            attributes: d = {},
+            role: l,
             hero: m = !1
           } = e;
-          return (0, o.jsx)(oa, {
+          return (0, o.jsx)(fa, {
             hero: m,
             children: (0, o.jsx)("figure", {
               children: (0, o.jsxs)("div", {
-                className: (0, j.classList)("_93f8151fb9eb5ac4bf489090b1d2699c92a4", m ? "_93f8151fb9eb5ac4e5c17109e2f485cf10fa" : "", l?.hiddenMobile ? "hiddenMobile" : "", l?.hiddenLarge ? "hiddenLarge" : "", l?.className, c),
-                style: (0, F.safeStyles)({
+                className: (0, j.classList)("_93f8151fb9eb5ac4bf489090b1d2699c92a4", m ? "_93f8151fb9eb5ac4e5c17109e2f485cf10fa" : "", d?.hiddenMobile ? "hiddenMobile" : "", d?.hiddenLarge ? "hiddenLarge" : "", d?.className, c),
+                style: (0, D.safeStyles)({
                   ...r,
-                  ...l?.style
+                  ...d?.style
                 }),
-                ...l,
-                children: [(0, o.jsx)(se, {
+                ...d,
+                children: [(0, o.jsx)(de, {
                   image: s,
                   className: c
-                }), (s?.badge || s?.discountTxt || a || i) && (0, o.jsx)(pe, {
-                  badge: s?.discountTxt ?? s?.badge ?? a ?? i,
+                }), (s?.badge || s?.discountTxt || a || n) && (0, o.jsx)(_e, {
+                  badge: s?.discountTxt ?? s?.badge ?? a ?? n,
                   badgeType: t,
-                  splitter: s?.splitter ?? n,
-                  role: s?.role ?? d
+                  splitter: s?.splitter ?? i,
+                  role: s?.role ?? l
                 }), s?.caption && (0, o.jsx)("figcaption", {
                   dangerouslySetInnerHTML: {
                     __html: s.caption
@@ -2642,38 +2797,38 @@
             })
           })
         },
-        da = {
+        ua = {
           multiSourceContainer: "_93f8151fb9eb5ac4a286c96ead55565c9ec6",
           multiSourceImage: "_93f8151fb9eb5ac4e29a46d7ad9aca9bbcc5",
           animatePlaceholder: "_93f8151fb9eb5ac4ee2cde56cd8662f21104",
           "loader-keyframes": "_93f8151fb9eb5ac4c638010855d392e29c00"
         },
-        ma = e => {
+        ga = e => {
           let {
             imageUrl: a,
             className: t,
-            alt: i,
-            style: n,
+            alt: n,
+            style: i,
             lazy: s = !1,
             decoding: r = "auto",
             sizes: c = [320, 480, 768, 1024, 1440, 1920, 2560]
           } = e;
-          const [l, m] = (0, d.useState)(!1);
+          const [d, m] = (0, l.useState)(!1);
           return (0, o.jsxs)("div", {
-            className: da.multiSourceContainer,
-            children: [!l && (0, o.jsx)("img", {
-              className: [t, da.animatePlaceholder].join(" "),
+            className: ua.multiSourceContainer,
+            children: [!d && (0, o.jsx)("img", {
+              className: [t, ua.animatePlaceholder].join(" "),
               src: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiB2aWV3Qm94PSIwIDAgMTkyMCAxMDgwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cmVjdCB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiBmaWxsPSIjMzMzMzMzIi8+Cjwvc3ZnPgo=",
               sizes: "(max-width: 1024px) 100vw, 1024px",
               alt: "Loading...",
-              style: n
+              style: i
             }), (0, o.jsx)("img", {
-              className: [da.multiSourceImage, t].join(" "),
+              className: [ua.multiSourceImage, t].join(" "),
               src: `${a}?im=Resize=1920`,
               srcSet: (f = a, c.map((e => `${f}?im=Resize=${e} ${e}w`)).join(", ")),
               sizes: "(max-width: 400px) 200px, (max-width: 1920px) 100vw, 1920px",
-              alt: i ?? "Multi-Source Image",
-              style: n,
+              alt: n ?? "Multi-Source Image",
+              style: i,
               onLoad: () => {
                 m(!0)
               },
@@ -2683,27 +2838,27 @@
           });
           var f
         },
-        fa = {
+        pa = {
           tag: "_93f8151fb9eb5ac4c34ddc7e68d6e0a43aa3"
         },
-        ua = e => {
+        va = e => {
           let {
             className: a,
             href: t,
-            title: i,
-            style: n
+            title: n,
+            style: i
           } = e;
           const s = (0, o.jsxs)("div", {
-            style: n,
-            className: [fa.tag, a].join(" "),
-            children: [(0, o.jsx)("i", {}), i]
+            style: i,
+            className: [pa.tag, a].join(" "),
+            children: [(0, o.jsx)("i", {}), n]
           });
-          return void 0 !== t ? (0, o.jsx)(l, {
+          return void 0 !== t ? (0, o.jsx)(d, {
             to: t,
             children: s
           }) : s
         },
-        ba = {
+        ka = {
           newswireBlock: "_93f8151fb9eb5ac4a97e3c48c2de4beda1b1",
           info: "_93f8151fb9eb5ac4b37e339b7babb86eb265",
           title: "_93f8151fb9eb5ac4b536165692b314b850e2",
@@ -2713,54 +2868,54 @@
           top: "_93f8151fb9eb5ac4a3662abbd063913c0a3b",
           startAnimation: "_93f8151fb9eb5ac4c8bf6fa8ccd8d8248584"
         },
-        ga = e => {
+        ha = e => {
           let {
             index: a,
             post: t,
-            noSpecialOrder: i = !1,
-            style: n = {}
+            noSpecialOrder: n = !1,
+            style: i = {}
           } = e;
-          const [s] = (0, c.useSearchParams)(), r = t.preview_images_parsed.newswire_block, d = {
-            default: 0 !== a || i ? r.square || r.d16x9 || r._fallback : r.d16x9 || r.square || r._fallback,
+          const [s] = (0, c.useSearchParams)(), r = t.preview_images_parsed.newswire_block, l = {
+            default: 0 !== a || n ? r.square || r.d16x9 || r._fallback : r.d16x9 || r.square || r._fallback,
             mobile: r.square || r._fallback
-          }, [m, f] = (0, F.usePreloadImg)(d.default), [u, b] = (0, F.usePreloadImg)(d.mobile), g = {
+          }, [m, f] = (0, D.usePreloadImg)(l.default), [b, u] = (0, D.usePreloadImg)(l.mobile), g = {
             default: {
-              backgroundImage: `url(${d.default})`
+              backgroundImage: `url(${l.default})`
             },
             mobile: {
-              backgroundImage: `url(${d.mobile})`
+              backgroundImage: `url(${l.mobile})`
             }
           };
-          return (0, o.jsx)(l, {
+          return (0, o.jsx)(d, {
             "data-gtm-category": "Newswire",
             "data-gtm-action": "Article Block Click",
             "data-gtm-label": `${t.title}`,
             to: t.url,
-            className: [ba.newswireBlock, i ? ba.newswireBlockNoSpecialOrder : "", null !== m ? ba.startAnimation : ""].join(" "),
+            className: [ka.newswireBlock, n ? ka.newswireBlockNoSpecialOrder : "", null !== m ? ka.startAnimation : ""].join(" "),
             children: (0, o.jsxs)(o.Fragment, {
               children: [0 !== a || s.get("tag_id") ? (0, o.jsx)("div", {
-                className: ba.preview,
+                className: ka.preview,
                 style: g.default
               }) : (0, o.jsxs)(o.Fragment, {
                 children: [(0, o.jsx)("div", {
-                  className: ba.previewMobile,
+                  className: ka.previewMobile,
                   style: g.mobile
                 }), (0, o.jsx)("div", {
-                  className: ba.preview,
+                  className: ka.preview,
                   style: g.default
                 })]
               }), (0, o.jsxs)("div", {
-                className: ba.info,
+                className: ka.info,
                 children: [(0, o.jsxs)("div", {
-                  className: ba.top,
-                  children: [t.primary_tags.length ? (0, o.jsx)(ua, {
+                  className: ka.top,
+                  children: [t.primary_tags.length ? (0, o.jsx)(va, {
                     title: t.primary_tags[t.primary_tags.length > 1 && 722 === t.primary_tags[0].id ? 1 : 0].name
                   }) : "", (0, o.jsx)("time", {
                     dateTime: t.created,
                     children: t.created_formatted
                   })]
                 }), (0, o.jsx)("h5", {
-                  className: ba.title,
+                  className: ka.title,
                   dangerouslySetInnerHTML: {
                     __html: t.title
                   }
@@ -2769,79 +2924,79 @@
             })
           })
         };
-      var pa = t(3651),
-        va = t.n(pa);
-      const ka = (0, F.withTranslations)((e => {
+      var _a = t(3651),
+        xa = t.n(_a);
+      const ya = (0, D.withTranslations)((e => {
           let {
             relativeTo: a = "",
             tagId: t = null,
-            metaUrl: i = "/newswire",
-            t: n
+            metaUrl: n = "/newswire",
+            t: i
           } = e;
           const [s] = (0, c.useSearchParams)(), {
             tagId: r = null
-          } = (0, c.useParams)(), [l, m] = (0, d.useState)(r ?? t ?? s.get("tag_id")), [f, b] = (0, d.useState)(1), [g, p] = (0, d.useState)([]), [v, k] = (0, d.useState)(null), {
+          } = (0, c.useParams)(), [d, m] = (0, l.useState)(r ?? t ?? s.get("tag_id")), [f, u] = (0, l.useState)(1), [g, p] = (0, l.useState)([]), [v, k] = (0, l.useState)(null), {
             data: h
-          } = (0, u.useQuery)(va(), {
+          } = (0, b.useQuery)(xa(), {
             variables: {
-              tagId: Number(l),
+              tagId: Number(d),
               page: f,
-              metaUrl: i
+              metaUrl: n
             },
             autoSetLoading: !0
           });
-          return (0, d.useEffect)((() => {
-            b(1), p([]), m(r ?? t ?? s.get("tag_id"))
-          }), [s.get("tag_id")]), (0, d.useEffect)((() => {
+          return (0, l.useEffect)((() => {
+            u(1), p([]), m(r ?? t ?? s.get("tag_id"))
+          }), [s.get("tag_id")]), (0, l.useEffect)((() => {
             h && h.posts && h.posts.paging && k(h.posts.paging), h && h.posts && h.posts.results && p(g.concat(h.posts.results))
           }), [h]), g.length ? (0, o.jsxs)(o.Fragment, {
-            children: [(0, o.jsx)(ya, {
+            children: [(0, o.jsx)(wa, {
               posts: g,
               relativeTo: a,
-              noSpecialOrder: null !== l
+              noSpecialOrder: null !== d
             }), null !== v && v.nextPage ? (0, o.jsx)(N, {
-              onClick: () => b(f + 1),
+              onClick: () => u(f + 1),
               disabled: !1,
               context: "secondary",
-              children: n("More Stories")
+              children: i("More Stories")
             }) : ""]
           }) : null
         })),
-        ha = {
+        Na = {
           related: "_93f8151fb9eb5ac4dab943d0a03bc8dd3045",
           posts: "_93f8151fb9eb5ac4dc1a17e1a45a2aad85c4",
           just1post: "_93f8151fb9eb5ac4a5966adf644cfbc3adc6"
         },
-        _a = (0, F.withTranslations)((e => {
+        ja = (0, D.withTranslations)((e => {
           let {
             posts: a,
             t
           } = e;
           return (0, o.jsxs)("section", {
-            className: ha.related,
+            className: Na.related,
             children: [(0, o.jsx)("h2", {
               children: t("Related Stories")
             }), (0, o.jsx)("div", {
-              className: [ha.posts, 1 === a.length ? ha.just1post : ""].join(" "),
-              children: a.map((e => (0, o.jsx)(ga, {
+              className: [Na.posts, 1 === a.length ? Na.just1post : ""].join(" "),
+              children: a.map((e => (0, o.jsx)(ha, {
                 noSpecialOrder: !0,
                 post: e
               }, e.id)))
             })]
           })
         })),
-        xa = {
+        Sa = {
           newswireBlocks: "_93f8151fb9eb5ac4fc028fb629fcb496e293",
           noSpecialOrder: "_93f8151fb9eb5ac4bdf712cf14c051816b0b"
         },
-        ya = (0, F.withGtmTracking)((e => {
+        wa = (0, D.withGtmTracking)((e => {
           let {
             noSpecialOrder: a = !1,
             posts: t,
-            gtmTrack: i,
-            relativeTo: n
+            gtmTrack: n,
+            relativeTo: i
           } = e;
-          return (0, d.useEffect)((() => {
+          return (0, l.useEffect)((() => {
             if (!t.length) return;
             const e = {
               event: "trackEvent",
@@ -2858,65 +3013,66 @@
                 position: t + 1,
                 list: "Home"
               })
-            })), i(e)
+            })), n(e)
           }), [t.length]), (0, o.jsx)("div", {
-            className: [xa.newswireBlocks, a ? xa.noSpecialOrder : "", xa.contextHome].join(" "),
-            children: t.map(((e, t) => (0, o.jsx)(ga, {
+            className: [Sa.newswireBlocks, a ? Sa.noSpecialOrder : "", Sa.contextHome].join(" "),
+            children: t.map(((e, t) => (0, o.jsx)(ha, {
               index: t,
               noSpecialOrder: a,
               post: e
             }, e.id)))
           })
-        })),
-        Na = "_93f8151fb9eb5ac4e5f2890c085fc047351c",
-        ja = e => {
+        }));
+      var Ta = t(6886);
+      const Ca = "_93f8151fb9eb5ac4e5f2890c085fc047351c",
+        Ea = e => {
           let {
             children: a,
             data: t,
-            onPageUpdate: i,
-            page: n,
+            onPageUpdate: n,
+            page: i,
             className: s
           } = e;
           return (0, o.jsx)("a", {
             href: "#",
-            className: n === t.page ? `_93f8151fb9eb5ac4e081ffd856ce7ff3aa7a ${s??""}` : "",
+            className: i === t.page ? `_93f8151fb9eb5ac4e081ffd856ce7ff3aa7a ${s??""}` : "",
             onClick: e => {
-              e.preventDefault(), i(n)
+              e.preventDefault(), n(i)
             },
             children: a
           })
         },
-        Sa = e => {
+        Ia = e => {
           let {
             data: a,
             onPageUpdate: t,
-            className: i
+            className: n
           } = e;
           if (1 === a.pageCount) return null;
-          const n = Array.from(new Array(Math.min(a.pageCount, 8)), ((e, t) => t + Math.min(Math.max(a.pageCount - 8, 1), Math.max(2, a.page - 4))));
+          const i = Array.from(new Array(Math.min(a.pageCount, 8)), ((e, t) => t + Math.min(Math.max(a.pageCount - 8, 1), Math.max(2, a.page - 4))));
           return (0, o.jsxs)("div", {
-            className: `_93f8151fb9eb5ac4a2b5d74732328a24711b ${i??""}`,
+            className: `_93f8151fb9eb5ac4a2b5d74732328a24711b ${n??""}`,
             children: [a.pageCount > 8 ? (0, o.jsxs)(o.Fragment, {
-              children: [(0, o.jsx)(ja, {
+              children: [(0, o.jsx)(Ea, {
                 data: a,
                 onPageUpdate: t,
                 page: 1,
                 children: "1"
-              }), 2 !== n[0] ? (0, o.jsx)("div", {
-                className: Na,
+              }), 2 !== i[0] ? (0, o.jsx)("div", {
+                className: Ca,
                 children: "..."
               }) : ""]
-            }) : "", n.map((e => (0, o.jsx)(ja, {
+            }) : "", i.map((e => (0, o.jsx)(Ea, {
               data: a,
               onPageUpdate: t,
               page: e,
-              className: i,
+              className: n,
               children: e
             }, e))), a.pageCount > 8 ? (0, o.jsxs)(o.Fragment, {
-              children: [n.slice(-1)[0] + 1 < a.pageCount ? (0, o.jsx)("div", {
-                className: Na,
+              children: [i.slice(-1)[0] + 1 < a.pageCount ? (0, o.jsx)("div", {
+                className: Ca,
                 children: "..."
-              }) : "", (0, o.jsx)(ja, {
+              }) : "", (0, o.jsx)(Ea, {
                 data: a,
                 onPageUpdate: t,
                 page: a.pageCount,
@@ -2925,15 +3081,15 @@
             }) : ""]
           })
         };
-      var wa = t(2345);
-      const Ta = e => {
+      var La = t(2345);
+      const Va = e => {
           let {
             children: a
           } = e;
           const {
             parallaxController: t
-          } = (0, wa.bc)();
-          return (0, d.useLayoutEffect)((() => {
+          } = (0, La.bc)();
+          return (0, l.useLayoutEffect)((() => {
             if (!t) return;
             const e = setInterval((() => {
               t.update()
@@ -2941,40 +3097,44 @@
             return () => clearInterval(e)
           }), [t]), a
         },
-        Ca = {
+        Ba = {
           parallaxWrapper: "_93f8151fb9eb5ac4aca7e7408c96c3836597",
           large: "_93f8151fb9eb5ac4bc4f5c2a498cd14dad61",
           medium: "_93f8151fb9eb5ac4bf2bfc259c1bf5ea828e",
           small: "_93f8151fb9eb5ac4c88305647760d3c2405f"
         },
-        Ea = e => {
+        za = e => {
           let {
             scrollAxis: a = "vertical",
             size: t = "",
-            style: i = {},
-            children: n
+            style: n = {},
+            children: i
           } = e;
-          return (0, o.jsx)(wa.Xu, {
+          return (0, o.jsx)(La.Xu, {
             scrollAxis: a,
-            children: (0, o.jsx)(Ta, {
+            children: (0, o.jsx)(Va, {
               children: (0, o.jsx)("div", {
-                className: (0, j.classList)(Ca.parallaxWrapper, Ca[t]),
-                style: i,
+                className: (0, j.classList)(Ba.parallaxWrapper, Ba[t]),
+                style: n,
                 "data-context": "parallax-wrapper",
-                children: n ? n.map((e => (0, d.cloneElement)(e, {
-                  scrollAxis: a
+                children: i ? i.map(((e, t) => (0, l.cloneElement)(e, {
+                  scrollAxis: a,
+                  style: {
+                    ...e?.props?.style,
+                    zIndex: t
+                  }
                 }))) : (0, o.jsx)("div", {})
               })
             })
           })
         },
-        Ia = e => {
+        $a = e => {
           let {
             layers: a = [],
             displayClass: t = "",
-            style: i = {}
+            style: n = {}
           } = e;
-          const n = (0, j.useGenerateCdnSource)();
+          const i = (0, j.useGenerateCdnSource)();
           if (!a || !a[0]?.image) return null;
           const s = a.map((e => ({
             ...e,
@@ -2984,37 +3144,37 @@
               }
             },
             style: void 0,
-            image: n(e?.image ?? null)
+            image: i(e?.image ?? null)
           })));
-          return (0, o.jsx)(wa.UG, {
+          return (0, o.jsx)(La.UG, {
             className: (0, j.classList)("_93f8151fb9eb5ac4ad9cd218591d2cf7dbab", t),
             layers: s,
-            style: i
+            style: n
           })
         },
-        La = "_93f8151fb9eb5ac4d0b97ccb9b7b3592b1e9",
-        Va = e => {
+        Da = "_93f8151fb9eb5ac4d0b97ccb9b7b3592b1e9",
+        Fa = e => {
           let {
             minOffset: a = 0,
             maxOffset: t = 0,
-            scrollAxis: i = "vertical",
-            displayClass: n = "",
+            scrollAxis: n = "vertical",
+            displayClass: i = "",
             style: s = {},
             children: r
           } = e;
-          return "horizontal" === i ? (0, o.jsx)(wa.VS, {
+          return "horizontal" === n ? (0, o.jsx)(La.VS, {
             x: [a, t],
-            className: (0, j.classList)(La, n),
+            className: (0, j.classList)(Da, i),
             styleOuter: s,
             children: r
-          }) : (0, o.jsx)(wa.VS, {
+          }) : (0, o.jsx)(La.VS, {
             y: [a, t],
-            className: (0, j.classList)(La, n),
+            className: (0, j.classList)(Da, i),
             styleOuter: s,
             children: r
           })
         },
-        Ba = {
+        Ma = {
           promoModule: "_93f8151fb9eb5ac4dc6b9943bd5638e92bf1",
           promoModuleImage: "_93f8151fb9eb5ac4c31e1f05a9d9e386cb59",
           gradient: "_93f8151fb9eb5ac4e4422c8b7198431ac1a3",
@@ -3023,40 +3183,40 @@
           right: "_93f8151fb9eb5ac4ffb17488f0d5a5bd3860",
           promoModuleTextContent: "_93f8151fb9eb5ac4bb09e437d125424fff9b"
         },
-        Da = e => {
+        Aa = e => {
           let {
             backgroundColor: a,
             brands: t = [],
-            description: i = "",
-            ctaLabel: n = "Click here",
+            description: n = "",
+            ctaLabel: i = "Click here",
             ctaLink: s = "https://rockstargames.com",
             gradient: r = !0,
             image: c,
-            imageOrientation: l = "right",
+            imageOrientation: d = "right",
             title: m = ""
           } = e;
-          const [f, u] = (0, d.useState)(!1), {
-            ref: b,
+          const [f, b] = (0, l.useState)(!1), {
+            ref: u,
             inView: g
           } = (0, G.YD)({
             threshold: .6
           }), {
             track: p
-          } = (0, z.useGtmTrack)(), v = {
+          } = (0, F.useGtmTrack)(), v = {
             "--promo-background": a ?? "var(--black-200)",
             "--promo-image": `url(${(0,j.useGetCdnSource)(c)})` ?? 0,
-            "--promo-order": "left" === l ? "row" : "row-reverse"
+            "--promo-order": "left" === d ? "row" : "row-reverse"
           };
-          return (0, d.useEffect)((() => {
+          return (0, l.useEffect)((() => {
             g && !f && (p({
               event: "page_section_impression",
               event_action: "impression",
               event_category: "page_section",
               event_label: "promo module",
               element_placement: "promo module"
-            }), u(!0))
-          }), [g]), (0, o.jsxs)(Se.E.div, {
-            className: Ba.promoModule,
+            }), b(!0))
+          }), [g]), (0, o.jsxs)(Ee.E.div, {
+            className: Ma.promoModule,
             style: v,
             initial: {
               opacity: 0
@@ -3072,112 +3232,114 @@
               ease: "easeIn",
               duration: .4
             },
-            ref: b,
+            ref: u,
             children: [(0, o.jsx)("div", {
-              className: [Ba.promoModuleImage, r ? Ba.gradient : "", "left" === l ? Ba.left : Ba.right].join(" ")
+              className: [Ma.promoModuleImage, r ? Ma.gradient : "", "left" === d ? Ma.left : Ma.right].join(" ")
             }), (0, o.jsxs)("div", {
-              className: Ba.promoModuleContentContainer,
+              className: Ma.promoModuleContentContainer,
               children: [(0, o.jsx)(x, {
                 brands: t,
-                className: Ba.promoModuleBrands
+                className: Ma.promoModuleBrands
               }), (0, o.jsxs)("div", {
-                className: Ba.promoModuleTextContent,
+                className: Ma.promoModuleTextContent,
                 children: [m && (0, o.jsx)("h3", {
                   children: m
-                }), i && (0, o.jsx)("p", {
-                  children: i
+                }), n && (0, o.jsx)("p", {
+                  children: n
                 })]
-              }), n && (0, o.jsx)(C, {
+              }), i && (0, o.jsx)(C, {
                 to: s,
-                text: n,
+                text: i,
                 onClick: () => {
                   p({
                     event: "cta_other",
                     event_category: "cta",
                     event_action: "other",
-                    event_label: n,
+                    event_label: i,
                     element_placement: "promo module",
                     link_url: s,
-                    text: n
+                    text: i
                   })
                 }
               })]
             })]
           })
         };
-      var $a = t(3761),
-        Fa = t(1570);
-      const za = (0, Fa.defineMessages)({
+      var Pa = t(3761),
+        Ga = t(5217),
+        Oa = t(4029);
+      t(3657);
+      const Ha = (0, Ga.vU)({
           components_ratings_link_alt: {
             id: "components_ratings_link_alt",
             description: "Ratings link alt text",
             defaultMessage: "Rating: {rating}. Click here learn more about rating systems"
           }
         }),
-        Ma = {
+        Ua = {
           rating: "_93f8151fb9eb5ac4fb3c2b9e8611c7ddad31",
           withDescriptors: "_93f8151fb9eb5ac4fe0db64422f7ad32b362",
           withOutDescriptors: "_93f8151fb9eb5ac4be8b79703bc2dbd5a25c",
           text: "_93f8151fb9eb5ac4d935da760642ecc52de9"
         };
-      (0, F.importAll)(t(5570));
-      const Aa = He((e => {
+      (0, D.importAll)(t(5570));
+      const Ra = We((e => {
           let {
             descriptors: a = null,
-            footer: i = null,
-            href: n,
+            footer: n = null,
+            href: i,
             img: s = null,
             titleSlug: r = null,
             style: c = {},
             className: m
           } = e;
-          const [f, b] = (0, d.useState)(!1), {
+          const [f, u] = (0, l.useState)(!1), {
             inView: g
           } = (0, G.YD)({
             threshold: .6
-          }), [p, v] = (0, d.useState)({
+          }), [p, v] = (0, l.useState)({
             img_rating: s,
             rating_descriptors: a,
-            rating_footer: i,
-            url_rating: n
+            rating_footer: n,
+            url_rating: i
           }), {
             track: k
-          } = (0, z.useGtmTrack)(), h = (0, Fa.useIntl)(), {
+          } = (0, F.useGtmTrack)(), h = (0, Oa.Z)(), {
             data: _
-          } = (0, u.useQuery)($a.GameData, {
+          } = (0, b.useQuery)(Pa.GameData, {
             variables: {
               titleSlug: r
             },
             skip: !r
           });
-          if ((0, d.useEffect)((() => {
+          if ((0, l.useEffect)((() => {
               _ && v(_?.game)
-            }), [_]), (0, d.useEffect)((() => {
+            }), [_]), (0, l.useEffect)((() => {
               g && !f && p.img_rating && (k({
                 event: "page_section_impression",
                 event_action: "impression",
                 event_category: "page_section",
                 event_label: "rating",
                 element_placement: "rating"
-              }), b(!0))
+              }), u(!0))
             }), [g]), !p.img_rating) return null;
           const x = !!p.rating_descriptors;
           return (0, o.jsxs)("div", {
-            className: [Ma.rating, x ? Ma.withDescriptors : Ma.withOutDescriptors, m || ""].join(" "),
-            style: (0, F.safeStyles)(c),
-            children: [(0, o.jsx)(l, {
+            className: [Ua.rating, x ? Ua.withDescriptors : Ua.withOutDescriptors, m || ""].join(" "),
+            style: (0, D.safeStyles)(c),
+            children: [(0, o.jsx)(d, {
               to: p.url_rating,
               target: "_blank",
               children: (0, o.jsx)("img", {
-                alt: h.formatMessage(za.components_ratings_link_alt, {
+                alt: h.formatMessage(Ha.components_ratings_link_alt, {
                   rating: (y = p.img_rating, y.replace(/_/g, " ").split(".")[0].toUpperCase())
                 }),
                 src: t(4593)(`./${p.img_rating}`)
               })
             }), x && (0, o.jsxs)("div", {
-              className: Ma.text,
+              className: Ua.text,
               children: [(0, o.jsx)("p", {
-                className: Ma.descriptors,
+                className: Ua.descriptors,
                 dangerouslySetInnerHTML: {
                   __html: p.rating_descriptors.replace(/<br>/g, ", ").substring(0, p.rating_descriptors.length - 2)
                 }
@@ -3190,185 +3352,185 @@
           });
           var y
         })),
-        Pa = {
+        qa = {
           responsiveFlexBox: "_93f8151fb9eb5ac4e4465a9b663320c80468",
           responsiveFlexItem: "_93f8151fb9eb5ac4aa986045cb58e89e61c5",
           responsiveImage: "_93f8151fb9eb5ac4c046dde6984fbd4bbe65"
-        },
-        Ga = e => {
-          let {
-            children: a,
-            className: t,
-            style: i
-          } = e;
-          return (0, o.jsx)("div", {
-            className: [Pa.responsiveFlexBox, void 0 !== t ? t : ""].join(" "),
-            style: i,
-            children: a
-          })
-        },
-        Oa = {
-          responsiveFlexItem: "_93f8151fb9eb5ac4e53c0594adfb5e74c89e"
-        },
-        Ha = e => {
-          let {
-            children: a,
-            className: t,
-            style: i
-          } = e;
-          return (0, o.jsx)("div", {
-            className: [Oa.responsiveFlexItem, void 0 !== t ? t : ""].join(" "),
-            style: i,
-            children: a
-          })
-        },
-        Ua = {
-          responsiveGridBox: "_93f8151fb9eb5ac4f6ded382294f08f6f94e",
-          responsiveGridItem: "_93f8151fb9eb5ac4c45f810f4e651dc7b020"
-        },
-        Ra = e => {
-          let {
-            children: a,
-            cols: t,
-            className: i,
-            rows: n,
-            style: s
-          } = e;
-          return void 0 === s && (s = {}), void 0 !== t && (s.gridTemplateColumns = `repeat(${t}, 1fr)`), void 0 !== n && (s.gridTemplateRows = `repeat(${n}, 1fr)`), (0, o.jsx)("div", {
-            className: [Ua.responsiveGridBox, void 0 !== i ? i : ""].join(" "),
-            style: s,
-            children: a
-          })
-        },
-        qa = {
-          responsiveGridBox: "_93f8151fb9eb5ac4f0f3911598f858700269",
-          responsiveGridItem: "_93f8151fb9eb5ac4e874fac9914cac099c13"
         },
         Wa = e => {
           let {
             children: a,
             className: t,
-            style: i
+            style: n
           } = e;
           return (0, o.jsx)("div", {
-            className: [qa.responsiveGridItem, void 0 !== t ? t : ""].join(" "),
-            style: i,
+            className: [qa.responsiveFlexBox, void 0 !== t ? t : ""].join(" "),
+            style: n,
             children: a
           })
         },
         Ya = {
+          responsiveFlexItem: "_93f8151fb9eb5ac4e53c0594adfb5e74c89e"
+        },
+        Za = e => {
+          let {
+            children: a,
+            className: t,
+            style: n
+          } = e;
+          return (0, o.jsx)("div", {
+            className: [Ya.responsiveFlexItem, void 0 !== t ? t : ""].join(" "),
+            style: n,
+            children: a
+          })
+        },
+        Qa = {
+          responsiveGridBox: "_93f8151fb9eb5ac4f6ded382294f08f6f94e",
+          responsiveGridItem: "_93f8151fb9eb5ac4c45f810f4e651dc7b020"
+        },
+        Xa = e => {
+          let {
+            children: a,
+            cols: t,
+            className: n,
+            rows: i,
+            style: s
+          } = e;
+          return void 0 === s && (s = {}), void 0 !== t && (s.gridTemplateColumns = `repeat(${t}, 1fr)`), void 0 !== i && (s.gridTemplateRows = `repeat(${i}, 1fr)`), (0, o.jsx)("div", {
+            className: [Qa.responsiveGridBox, void 0 !== n ? n : ""].join(" "),
+            style: s,
+            children: a
+          })
+        },
+        Ka = {
+          responsiveGridBox: "_93f8151fb9eb5ac4f0f3911598f858700269",
+          responsiveGridItem: "_93f8151fb9eb5ac4e874fac9914cac099c13"
+        },
+        Ja = e => {
+          let {
+            children: a,
+            className: t,
+            style: n
+          } = e;
+          return (0, o.jsx)("div", {
+            className: [Ka.responsiveGridItem, void 0 !== t ? t : ""].join(" "),
+            style: n,
+            children: a
+          })
+        },
+        et = {
           responsiveImage: "_93f8151fb9eb5ac4da2dc19dd9dd16116d08"
         },
-        Qa = e => {
+        at = e => {
           let {
             src: a,
             className: t = "",
-            animate: i,
-            ariaLabel: n,
+            animate: n,
+            ariaLabel: i,
             style: s = {}
           } = e;
-          const [r, c] = (0, F.usePreloadImg)(a);
+          const [r, c] = (0, D.usePreloadImg)(a);
           return r ? (s.backgroundImage = `url(${a})`, (0, o.jsx)("div", {
             role: "img",
-            "aria-label": n ?? "R* Games",
-            className: [Ya.responsiveImage, i ? Ya.animateBox : "", t].join(" "),
+            "aria-label": i ?? "R* Games",
+            className: [et.responsiveImage, n ? et.animateBox : "", t].join(" "),
             style: {
               ...s,
               "--aspect-ratio": c.width / c.height
             }
           })) : null
         },
-        Za = {
+        tt = {
           responsiveSection: "_93f8151fb9eb5ac4d06d23f23d3a5ecb6e50",
           maxWidth: "_93f8151fb9eb5ac4b4e4e0028c2d2643c29a"
         },
-        Xa = e => {
+        nt = e => {
           let {
             children: a,
             className: t,
-            style: i,
-            maxWidth: n
+            style: n,
+            maxWidth: i
           } = e;
           return (0, o.jsx)("section", {
-            className: [Za.responsiveSection, void 0 !== t ? t : ""].join(" "),
-            style: i,
-            children: n ? (0, o.jsx)("div", {
-              className: Za.maxWidth,
+            className: [tt.responsiveSection, void 0 !== t ? t : ""].join(" "),
+            style: n,
+            children: i ? (0, o.jsx)("div", {
+              className: tt.maxWidth,
               children: a
             }) : a
           })
         },
-        Ka = () => (0, o.jsx)(l, {
+        it = () => (0, o.jsx)(d, {
           className: "_93f8151fb9eb5ac4ea893b17b58c097a0539",
           alt: "Rockstar Games Home",
           to: "/"
         }),
-        Ja = () => {
+        st = () => {
           const {
             pathname: e
           } = (0, c.useLocation)();
-          return (0, d.useEffect)((() => {
+          return (0, l.useEffect)((() => {
             window.scrollTo(0, 0)
           }), [e]), null
         },
-        et = (0, d.forwardRef)(((e, a) => {
+        rt = (0, l.forwardRef)(((e, a) => {
           const {
             threshold: t,
-            callback: i,
-            children: n,
+            callback: n,
+            children: i,
             requireUser: s
           } = e, {
             track: r
-          } = (0, z.useGtmTrack)(s), [c, o] = (0, d.useState)(a?.current);
-          return (0, d.useEffect)((() => {
+          } = (0, F.useGtmTrack)(s), [c, o] = (0, l.useState)(a?.current);
+          return (0, l.useEffect)((() => {
             a?.current && o(a.current)
           }), [a]), ((e, a, t) => {
-            const [i, n] = (0, d.useState)({
+            const [n, i] = (0, l.useState)({
               scrollDepths: e,
               scrollY: 0
             }), {
               scrollDepths: s,
               scrollY: r
-            } = i;
-            (0, d.useEffect)((() => {
-              "undefined" != typeof window && 0 !== window.pageYOffset && n((e => ({
+            } = n;
+            (0, l.useEffect)((() => {
+              "undefined" != typeof window && 0 !== window.pageYOffset && i((e => ({
                 ...e,
                 scrollY: window.pageYOffset
               })))
-            }), []), (0, d.useEffect)((() => {
-              n({
+            }), []), (0, l.useEffect)((() => {
+              i({
                 scrollDepths: e,
                 scrollY: 0
               })
             }), [window.location.pathname]);
-            const c = (0, d.useCallback)((() => {
+            const c = (0, l.useCallback)((() => {
               const e = document.documentElement,
                 r = document.body,
                 o = t?.scrollTop || e.scrollTop || r.scrollTop,
-                l = t?.scrollHeight || e.scrollHeight || r.scrollHeight,
+                d = t?.scrollHeight || e.scrollHeight || r.scrollHeight,
                 {
-                  clientHeight: d
+                  clientHeight: l
                 } = e,
-                m = o / (l - d) * 100;
+                m = o / (d - l) * 100;
               if (s) {
-                const e = Math.min(...s, l);
+                const e = Math.min(...s, d);
                 if (m >= e) {
-                  const i = s.filter((a => a !== e));
-                  0 === i.length && (t ?? window).removeEventListener("scroll", c), a && a({
+                  const n = s.filter((a => a !== e));
+                  0 === n.length && (t ?? window).removeEventListener("scroll", c), a && a({
                     scrollY: e,
                     scrollPercent: m,
-                    remainingDepths: i
-                  }), n({
+                    remainingDepths: n
+                  }), i({
                     scrollY: e,
-                    scrollDepths: i
+                    scrollDepths: n
                   })
                 }
-              } else n({
-                ...i,
+              } else i({
+                ...n,
                 scrollY: m
               })
             }), [s, t, a]);
-            (0, d.useEffect)((() => {
+            (0, l.useEffect)((() => {
               if ("undefined" == typeof window) return;
               const e = t ?? window;
               return e.addEventListener("scroll", c), () => e.removeEventListener("scroll", c)
@@ -3382,21 +3544,21 @@
               event_category: "page_scroll",
               event_action: a,
               scroll_depth: a
-            }), "function" == typeof i && i(a)
-          }), c), n
+            }), "function" == typeof n && n(a)
+          }), c), i
         })),
-        at = (0, F.withTranslations)((e => {
+        ct = (0, D.withTranslations)((e => {
           let {
             t: a
           } = e;
-          const [t] = (0, d.useState)(""), i = (0, c.useNavigate)(), n = (0, u.useMutateState)();
+          const [t] = (0, l.useState)(""), n = (0, c.useNavigate)(), i = (0, b.useMutateState)();
           return (0, o.jsxs)("form", {
             action: "#",
             className: "_93f8151fb9eb5ac4d190f154b297a6c860c6",
             onSubmit: e => {
-              e.preventDefault(), n({
+              e.preventDefault(), i({
                 navOpen: !1
-              }), document.activeElement?.blur(), i(`/search?q=${e.target.q.value}`)
+              }), document.activeElement?.blur(), n(`/search?q=${e.target.q.value}`)
             },
             role: "search",
             children: [(0, o.jsx)("button", {
@@ -3412,38 +3574,38 @@
             })]
           })
         })),
-        tt = {
+        ot = {
           skeleton: "_93f8151fb9eb5ac4fab0211fa18900cc53a3",
           pulse: "_93f8151fb9eb5ac4ed1b5302c777175acc6c",
           gen9Hero: "_93f8151fb9eb5ac4fae9afdda65a4353f796"
         },
-        it = e => {
+        dt = e => {
           let {
             skeleton: a
           } = e;
           return a ? (0, o.jsx)("div", {
-            className: [tt.skeleton, tt[a]].join(" ")
+            className: [ot.skeleton, ot[a]].join(" ")
           }) : null
         },
-        nt = {
+        lt = {
           bodySmall: "_93f8151fb9eb5ac4ee6ce2e1ba16af34ab0c"
         },
-        st = e => {
+        mt = e => {
           let {
             track: a,
             artist: t
           } = e;
           return (0, o.jsxs)("div", {
-            className: nt.track,
+            className: lt.track,
             children: [(0, o.jsx)("p", {
               children: a
             }), (0, o.jsx)("p", {
-              className: nt.bodySmall,
+              className: lt.bodySmall,
               children: t
             })]
           })
         },
-        rt = e => {
+        ft = e => {
           let {
             children: a
           } = e;
@@ -3456,16 +3618,16 @@
               className: "_93f8151fb9eb5ac4cbbee7b911cca07d19ef",
               children: (0, o.jsx)("div", {
                 className: "_93f8151fb9eb5ac4dd4f4f3f5296eec6af3d",
-                children: d.Children.map(d.Children.toArray(a), (e => (0, o.jsx)(st, {
+                children: l.Children.map(l.Children.toArray(a), (e => (0, o.jsx)(mt, {
                   ...e?.props
                 })))
               })
             })]
           })
         },
-        ct = "_93f8151fb9eb5ac4a3203eaeb7aa17a50d1d",
-        ot = "_93f8151fb9eb5ac4da5aca5b612ae73726aa",
-        lt = {
+        bt = "_93f8151fb9eb5ac4a3203eaeb7aa17a50d1d",
+        ut = "_93f8151fb9eb5ac4da5aca5b612ae73726aa",
+        gt = {
           0: {
             spaceBetween: 8
           },
@@ -3482,12 +3644,12 @@
             spaceBetween: 22
           }
         },
-        dt = e => {
+        pt = e => {
           let {
             title: a = "thumbnail gallery",
             thumbsPerView: t = 3,
-            loop: i = !1,
-            navigation: n = !1,
+            loop: n = !1,
+            navigation: i = !1,
             slideChildren: s = [],
             variants: r = {
               parent: void 0,
@@ -3501,43 +3663,43 @@
             }
           } = e;
           const {
-            track: l
-          } = (0, z.useGtmTrack)(), [m, f] = (0, d.useState)([Ge.Rv, Ge.o3, Ge.tl]), [u, b] = (0, d.useState)(null), [g, p] = (0, d.useState)(null);
-          return (0, d.useEffect)((() => {
-            const e = [Ge.Rv, Ge.o3, Ge.tl];
-            n && e.push(Ge.W_), f(e)
-          }), [n]), (0, d.useEffect)((() => {
+            track: d
+          } = (0, F.useGtmTrack)(), [m, f] = (0, l.useState)([Re.Rv, Re.o3, Re.tl]), [b, u] = (0, l.useState)(null), [g, p] = (0, l.useState)(null);
+          return (0, l.useEffect)((() => {
+            const e = [Re.Rv, Re.o3, Re.tl];
+            i && e.push(Re.W_), f(e)
+          }), [i]), (0, l.useEffect)((() => {
             if (!s) return;
             const e = s.map(((e, a) => (0, o.jsx)(I.o5, {
               children: e
             }, Symbol(a).toString())));
             p(e)
-          }), [s]), g ? (0, o.jsxs)(Se.E.div, {
+          }), [s]), g ? (0, o.jsxs)(Ee.E.div, {
             className: "_93f8151fb9eb5ac4b0678d1be99248011414",
             variants: r.parent,
             transition: c.parent,
             initial: "initial",
             animate: "animate",
-            children: [(0, o.jsx)(Se.E.div, {
-              className: ct,
+            children: [(0, o.jsx)(Ee.E.div, {
+              className: bt,
               variants: r.main,
               transition: c.main,
               initial: "initial",
               animate: "animate",
               children: (0, o.jsx)(I.tq, {
-                loop: i,
-                navigation: n,
+                loop: n,
+                navigation: i,
                 pagination: {
                   clickable: !0
                 },
                 thumbs: {
-                  swiper: u
+                  swiper: b
                 },
                 modules: m,
-                breakpoints: lt,
-                className: ct,
+                breakpoints: gt,
+                className: bt,
                 onSlideNextTransitionEnd: () => {
-                  l({
+                  d({
                     event_action: "next",
                     event_category: "carousel",
                     event: "carousel_next",
@@ -3545,7 +3707,7 @@
                   })
                 },
                 onSlidePrevTransitionEnd: () => {
-                  l({
+                  d({
                     event_action: "previous",
                     event_category: "carousel",
                     event: "carousel_previous",
@@ -3553,7 +3715,7 @@
                   })
                 },
                 onSlideChangeTransitionEnd: () => {
-                  l({
+                  d({
                     event_action: "swipe",
                     event_category: "carousel",
                     event: "carousel_swipe",
@@ -3562,71 +3724,71 @@
                 },
                 children: g
               })
-            }), (0, o.jsx)(Se.E.div, {
-              className: ot,
+            }), (0, o.jsx)(Ee.E.div, {
+              className: ut,
               variants: r.thumbs,
               transition: c.thumbs,
               initial: "initial",
               animate: "animate",
               children: (0, o.jsx)(I.tq, {
                 threshold: 50,
-                onSwiper: b,
-                loop: i,
-                breakpoints: lt,
+                onSwiper: u,
+                loop: n,
+                breakpoints: gt,
                 slidesPerView: t,
                 freeMode: !0,
                 watchSlidesProgress: !0,
                 modules: m,
-                className: ot,
+                className: ut,
                 children: g
               })
             })]
           }) : null
         };
-      var mt = t(4658);
-      const ft = e => {
+      var vt = t(4658);
+      const kt = e => {
           let {
             id: a = null,
             ids: t = null,
-            setTitleDataPath: i = null,
-            sync: n = !1
+            setTitleDataPath: n = null,
+            sync: i = !1
           } = e;
           const s = t ?? [a],
             {
               data: r
-            } = (0, u.useQuery)(mt.TinaModulesInfo, {
+            } = (0, b.useQuery)(vt.TinaModulesInfo, {
               variables: {
                 ids: s,
-                sync: n
+                sync: i
               },
-              setTitleDataPath: i,
+              setTitleDataPath: n,
               skip: !s.length
             });
           return r?.tinaModulesInfo ?? null
         },
-        ut = He((e => {
+        ht = We((e => {
           let {
             components: a = {},
             id: t = null,
-            ids: i = null,
-            skeleton: n
+            ids: n = null,
+            skeleton: i
           } = e;
-          const s = ft({
+          const s = kt({
             id: t,
-            ids: i
+            ids: n
           });
-          if (!s) return (0, o.jsx)(it, {
-            skeleton: n
+          if (!s) return (0, o.jsx)(dt, {
+            skeleton: i
           });
           const r = s?.[0]?.tina;
           return r ? (0, o.jsx)(o.Fragment, {
             children: s.map(((e, t) => {
               let {
-                tina: i
+                tina: n
               } = e;
               return (0, o.jsx)(j.TinaParser, {
                 components: a,
-                tina: i,
+                tina: n,
                 componentProps: {
                   tinaModulesInfo: s
                 }
@@ -3634,24 +3796,24 @@
             }))
           }) : null
         })),
-        bt = e => {
+        _t = e => {
           let {
             children: a,
             style: t,
-            theme: i
+            theme: n
           } = e;
-          const [n, s] = (0, d.useState)(i);
-          return (0, d.useEffect)((() => {
-            i && s(i)
-          }), [i]), (0, o.jsx)("div", {
+          const [i, s] = (0, l.useState)(n);
+          return (0, l.useEffect)((() => {
+            n && s(n)
+          }), [n]), (0, o.jsx)("div", {
             className: "_93f8151fb9eb5ac4e801cba24942f489915c",
             style: t,
-            "data-theme": n,
+            "data-theme": i,
             children: a
           })
         };
-      var gt = t(1683);
-      const pt = {
+      var xt = t(1683);
+      const yt = {
           userVote: "_93f8151fb9eb5ac4b5700f09cbc9b2b23c79",
           info: "_93f8151fb9eb5ac4ad1b94250411ea25716e",
           voteContent: "_93f8151fb9eb5ac4df8160525942f733eaef",
@@ -3661,22 +3823,22 @@
           upVote: "_93f8151fb9eb5ac4fb08e95d888a401bad87",
           voteButtonActive: "_93f8151fb9eb5ac4ae4dbdbe47f0d59447e3"
         },
-        vt = e => {
+        Nt = e => {
           let {
             description: a,
             foreign_id: t = document.location.pathname,
-            foreign_type: i = "url",
-            title: n
+            foreign_type: n = "url",
+            title: i
           } = e;
           const {
             track: s
-          } = (0, z.useGtmTrack)(), {
+          } = (0, F.useGtmTrack)(), {
             loggedIn: r
-          } = (0, z.useRockstarUser)(), {
+          } = (0, F.useRockstarUser)(), {
             refetch: c
-          } = (0, u.useQuery)(gt.UserGetVote, {
+          } = (0, b.useQuery)(xt.UserGetVote, {
             skip: !0
-          }), [l] = (0, u.useMutation)(gt.UserCastVote), [m, f] = (0, d.useState)(null), b = (0, d.useCallback)((async e => {
+          }), [d] = (0, b.useMutation)(xt.UserCastVote), [m, f] = (0, l.useState)(null), u = (0, l.useCallback)((async e => {
             s({
               event_action: m ? "like" : "dislike",
               event_category: "cta",
@@ -3685,44 +3847,44 @@
             });
             const a = {
                 foreign_id: t,
-                foreign_type: i,
+                foreign_type: n,
                 vote: e
               },
-              n = await l({
+              i = await d({
                 variables: a
               });
-            f(n?.data?.userCastVote?.vote ?? null)
-          }), [t, i]);
-          return (0, d.useEffect)((() => {
+            f(i?.data?.userCastVote?.vote ?? null)
+          }), [t, n]);
+          return (0, l.useEffect)((() => {
             (async () => {
-              if (!r || !t || !i) return;
+              if (!r || !t || !n) return;
               const e = await c({
                 foreign_id: t,
-                foreign_type: i
+                foreign_type: n
               });
               f(e?.data?.userGetVote?.vote ?? null)
             })()
-          }), [t, i, r]), (0, o.jsx)("div", {
-            className: pt.userVote,
+          }), [t, n, r]), (0, o.jsx)("div", {
+            className: yt.userVote,
             children: (0, o.jsxs)("div", {
-              className: pt.voteContent,
+              className: yt.voteContent,
               children: [(0, o.jsxs)("div", {
-                className: pt.info,
+                className: yt.info,
                 children: [(0, o.jsx)("h3", {
-                  children: n
+                  children: i
                 }), (0, o.jsx)("p", {
                   children: a
                 })]
               }), (0, o.jsxs)("div", {
-                className: [pt.voteButtons, r ? "" : pt.loggedOutButtons].join(" "),
+                className: [yt.voteButtons, r ? "" : yt.loggedOutButtons].join(" "),
                 children: [(0, o.jsx)("button", {
-                  onClick: () => b(!0),
-                  className: [pt.upVote, m ? pt.voteButtonActive : ""].join(" "),
+                  onClick: () => u(!0),
+                  className: [yt.upVote, m ? yt.voteButtonActive : ""].join(" "),
                   type: "button",
                   "aria-label": "Vote up"
                 }), (0, o.jsx)("button", {
-                  className: [pt.downVote, !1 === m ? pt.voteButtonActive : ""].join(" "),
-                  onClick: () => b(!1),
+                  className: [yt.downVote, !1 === m ? yt.voteButtonActive : ""].join(" "),
+                  onClick: () => u(!1),
                   type: "button",
                   "aria-label": "Vote down"
                 })]
@@ -3730,7 +3892,7 @@
             })
           })
         },
-        kt = {
+        jt = {
           carousel: "_93f8151fb9eb5ac4df4cbe643bcdb344e8ed",
           text: "_93f8151fb9eb5ac4d3ebdcf6ee34d0d8705b",
           info: "_93f8151fb9eb5ac4af49b9b914c87b1a71ba",
@@ -3745,18 +3907,18 @@
           dragging: "_93f8151fb9eb5ac4c2aec297ba49d82429e9",
           dots: "_93f8151fb9eb5ac4e49d717d9755f47a7ca3"
         },
-        ht = (0, F.withLocale)((e => {
+        St = (0, D.withLocale)((e => {
           let {
             locale: a,
             t,
-            videos: i
+            videos: n
           } = e;
           const {
-            setBodyIsScrollable: n
-          } = (0, F.useBodyScrollable)(), [s, r] = (0, d.useState)(0), [c, m] = (0, d.useState)(0), u = (0, d.useRef)(null), b = (0, d.useRef)(null);
-          return (0, d.useEffect)((() => {
-            if (!u.current || b.current) return;
-            const e = new(f())(u.current);
+            setBodyIsScrollable: i
+          } = (0, D.useBodyScrollable)(), [s, r] = (0, l.useState)(0), [c, m] = (0, l.useState)(0), b = (0, l.useRef)(null), u = (0, l.useRef)(null);
+          return (0, l.useEffect)((() => {
+            if (!b.current || u.current) return;
+            const e = new(f())(b.current);
             e.get("press").set({
               time: 0
             }), e.get("tap").set({
@@ -3767,47 +3929,47 @@
                 r(s - 1 < 0 ? 0 : s - 1), m(0)
               },
               c = () => {
-                const e = s + 1 >= i.length - 1 ? i.length - 1 : s + 1;
+                const e = s + 1 >= n.length - 1 ? n.length - 1 : s + 1;
                 r(e), m(0)
               },
               o = e => {
-                m(e.isFinal ? 0 : e.deltaX), "panleft" !== e.additionalEvent && "panright" !== e.additionalEvent || !b.current?.classList.contains(kt.dragging) || a() && n(!1)
+                m(e.isFinal ? 0 : e.deltaX), "panleft" !== e.additionalEvent && "panright" !== e.additionalEvent || !u.current?.classList.contains(jt.dragging) || a() && i(!1)
               },
-              l = () => {
-                a() && n(!0), m(0)
+              d = () => {
+                a() && i(!0), m(0)
               },
-              d = e => {
-                "press" === e.type && u.current?.classList.add(`${kt.disableClick}`), "tap" === e.type && (u.current?.classList.remove(`${kt.disableClick}`), document.elementFromPoint(e.center.x, e.center.y).click())
+              l = e => {
+                "press" === e.type && b.current?.classList.add(`${jt.disableClick}`), "tap" === e.type && (b.current?.classList.remove(`${jt.disableClick}`), document.elementFromPoint(e.center.x, e.center.y).click())
               },
               g = () => {
-                a() && n(!0), u.current && u.current.classList.remove(`${kt.disableClick}`)
+                a() && i(!0), b.current && b.current.classList.remove(`${jt.disableClick}`)
               },
               p = () => {
-                a() && n(!0)
+                a() && i(!0)
               };
-            return b.current.addEventListener("transitionend", p), e.on("swiperight", t), e.on("swipeleft", c), e.on("pan", o), e.on("panend", l), e.on("press tap", d), e.on("pressup", g), () => {
-              e.off("swiperight", t), e.off("swipeleft", c), e.off("pan", o), e.off("panend", l), e.off("press tap", d), e.off("pressup", g), b.current && b.current.removeEventListener("transitionend", p), m(0)
+            return u.current.addEventListener("transitionend", p), e.on("swiperight", t), e.on("swipeleft", c), e.on("pan", o), e.on("panend", d), e.on("press tap", l), e.on("pressup", g), () => {
+              e.off("swiperight", t), e.off("swipeleft", c), e.off("pan", o), e.off("panend", d), e.off("press tap", l), e.off("pressup", g), u.current && u.current.removeEventListener("transitionend", p), m(0)
             }
-          }), [u.current, s]), (0, o.jsxs)("section", {
-            className: kt.carousel,
+          }), [b.current, s]), (0, o.jsxs)("section", {
+            className: jt.carousel,
             children: [(0, o.jsx)("div", {
-              className: kt.track,
-              ref: u,
+              className: jt.track,
+              ref: b,
               children: (0, o.jsx)("div", {
-                className: `${kt.items} ${0!==c?kt.dragging:""}`,
-                ref: b,
+                className: `${jt.items} ${0!==c?jt.dragging:""}`,
+                ref: u,
                 style: {
                   transform: `translateX(calc(-${100*s}% + ${c}px))`
                 },
-                children: i.map(((e, a) => (0, o.jsx)(l, {
+                children: n.map(((e, a) => (0, o.jsx)(d, {
                   "data-gtm-category": "Carousel",
                   "data-gtm-action": "Click-through screencap",
                   "data-gtm-label": `/videos/${e.id}`,
                   to: `/videos/${e.id}`,
-                  className: s === a ? kt.active : "",
+                  className: s === a ? jt.active : "",
                   role: "link",
                   title: e.title,
-                  children: (0, o.jsx)(jt, {
+                  children: (0, o.jsx)(It, {
                     video: e,
                     active: s === a
                   })
@@ -3815,8 +3977,8 @@
               })
             }), (0, o.jsxs)("footer", {
               children: [(0, o.jsx)("div", {
-                className: kt.text,
-                children: i.map(((e, i) => (0, o.jsx)(l, {
+                className: jt.text,
+                children: n.map(((e, n) => (0, o.jsx)(d, {
                   "data-gtm-category": "Carousel",
                   "data-gtm-action": "Click-through footer",
                   "data-gtm-label": `/videos/${e.id}`,
@@ -3824,38 +3986,38 @@
                   role: "link",
                   title: e.title,
                   children: (0, o.jsxs)("div", {
-                    className: [kt.info, i === s ? kt.active : ""].join(" "),
+                    className: [jt.info, n === s ? jt.active : ""].join(" "),
                     children: [(0, o.jsxs)("div", {
-                      className: kt.title,
+                      className: jt.title,
                       children: [(0, o.jsx)("div", {
-                        className: kt.gameTitle,
+                        className: jt.gameTitle,
                         children: `${e.game.title}${"fr_fr"===a?" ":""}`
                       }), (0, o.jsx)("h2", {
-                        className: kt.videoTitle,
+                        className: jt.videoTitle,
                         children: `${e.title}`
                       })]
                     }), (0, o.jsx)(N, {
-                      className: kt.cta,
+                      className: jt.cta,
                       children: t("Watch Now")
                     })]
                   })
                 }, e.id)))
               }), (0, o.jsx)("div", {
-                className: kt.dots,
-                children: i.map(((e, a) => (0, o.jsx)("button", {
+                className: jt.dots,
+                children: n.map(((e, a) => (0, o.jsx)("button", {
                   "aria-label": `Slide ${a}`,
                   "data-gtm-category": "Marquee",
                   "data-gtm-action": "Dot click",
                   "data-gtm-label": `Dot clicked to ${a}`,
                   onClick: () => r(a),
-                  className: s === a ? kt.active : "",
+                  className: s === a ? jt.active : "",
                   type: "button"
                 }, e.id)))
               })]
             })]
           })
         })),
-        _t = {
+        wt = {
           videoList: "_93f8151fb9eb5ac4ee6bbf953d025e89de3e",
           sectionHeader: "_93f8151fb9eb5ac4aff592c13e7c6efe9403",
           arrowNav: "_93f8151fb9eb5ac4c4d1686e768de3bb2a72",
@@ -3868,25 +4030,25 @@
           next: "_93f8151fb9eb5ac4e839ba4e0441e11b4480",
           disabled: "_93f8151fb9eb5ac4c37dca9479cc10f4f30e"
         },
-        xt = (0, F.withTranslations)((e => {
+        Tt = (0, D.withTranslations)((e => {
           let {
             vids: a,
             games: t,
-            title: i,
-            gameTitleNecessary: n
+            title: n,
+            gameTitleNecessary: i
           } = e;
           const s = void 0 !== t ? "games" : "videos",
             r = "videos" === s ? a : t.results,
-            c = (0, d.useRef)(null),
-            [l, m] = (0, d.useState)(0),
-            [u, b] = (0, d.useState)(0),
+            c = (0, l.useRef)(null),
+            [d, m] = (0, l.useState)(0),
+            [b, u] = (0, l.useState)(0),
             g = e => {
-              const a = Math.ceil(r.length / l);
-              e < 0 ? e = 0 : e >= a - 1 && (e = a - 1), b(e)
+              const a = Math.ceil(r.length / d);
+              e < 0 ? e = 0 : e >= a - 1 && (e = a - 1), u(e)
             },
-            [p, v] = (0, d.useState)(0);
+            [p, v] = (0, l.useState)(0);
           let k;
-          return (0, d.useEffect)((() => {
+          return (0, l.useEffect)((() => {
             const e = () => {
               const e = e => window.matchMedia(`(max-width: ${e})`).matches,
                 a = e("768px") ? 1 : e("990px") || e("1440px") ? 2 : e("1920px") ? 3 : 4;
@@ -3895,60 +4057,60 @@
             return window.addEventListener("resize", e), e(), () => {
               window.removeEventListener("resize", e)
             }
-          }), [l]), (0, d.useEffect)((() => {
+          }), [d]), (0, l.useEffect)((() => {
             if (c.current) {
               const e = new(f())(c.current),
                 a = () => {
-                  g(u - 1), v(0)
+                  g(b - 1), v(0)
                 },
                 t = () => {
-                  g(u + 1), v(0)
+                  g(b + 1), v(0)
                 },
-                i = e => {
+                n = e => {
                   v(e.isFinal ? 0 : e.deltaX)
                 },
-                n = () => {
+                i = () => {
                   v(0)
                 };
-              return e.on("swiperight", a), e.on("swipeleft", t), e.on("pan", i), e.on("panend", n), () => {
-                e.off("swiperight", a), e.off("swipeleft", t), e.off("pan", i), e.off("panend", n), v(0)
+              return e.on("swiperight", a), e.on("swipeleft", t), e.on("pan", n), e.on("panend", i), () => {
+                e.off("swiperight", a), e.off("swipeleft", t), e.off("pan", n), e.off("panend", i), v(0)
               }
             }
-          }), [c.current, u]), k = "games" === s ? (0, o.jsx)(o.Fragment, {
-            children: t.results.map((e => (0, o.jsx)(Me, {
+          }), [c.current, b]), k = "games" === s ? (0, o.jsx)(o.Fragment, {
+            children: t.results.map((e => (0, o.jsx)(Oe, {
               game: e,
               dontOverrideTo: !0,
               to: `/videos?type=game&gameId=${e.id}`
             }, e.id)))
           }) : (0, o.jsx)(o.Fragment, {
-            children: a.map((e => (0, o.jsx)(St, {
+            children: a.map((e => (0, o.jsx)(Lt, {
               video: e,
-              gameTitleNecessary: n
+              gameTitleNecessary: i
             }, e.id)))
           }), (0, o.jsxs)("section", {
-            className: _t.videoList,
+            className: wt.videoList,
             children: [(0, o.jsxs)("h3", {
-              className: _t.sectionHeader,
-              children: [i, (0, o.jsxs)("div", {
-                className: _t.arrowNav,
+              className: wt.sectionHeader,
+              children: [n, (0, o.jsxs)("div", {
+                className: wt.arrowNav,
                 children: [(0, o.jsx)("div", {
-                  className: [_t.arrow, _t.previous, 0 === u ? _t.disabled : ""].join(" "),
-                  onClick: () => g(u - 1)
+                  className: [wt.arrow, wt.previous, 0 === b ? wt.disabled : ""].join(" "),
+                  onClick: () => g(b - 1)
                 }), (0, o.jsx)("div", {
-                  className: [_t.arrow, _t.next, u === Math.ceil(r.length / l) - 1 ? _t.disabled : ""].join(" "),
-                  onClick: () => g(u + 1)
+                  className: [wt.arrow, wt.next, b === Math.ceil(r.length / d) - 1 ? wt.disabled : ""].join(" "),
+                  onClick: () => g(b + 1)
                 })]
               })]
             }), (0, o.jsx)("div", {
-              className: _t.items,
+              className: wt.items,
               children: (0, o.jsx)("div", {
-                className: _t.trackWrapper,
+                className: wt.trackWrapper,
                 children: (0, o.jsx)("div", {
-                  className: [_t.track, 0 !== p ? _t.dragging : ""].join(" "),
+                  className: [wt.track, 0 !== p ? wt.dragging : ""].join(" "),
                   ref: c,
                   style: {
-                    transform: `translateX(calc(-${100*u}% + ${p}px - (var(--standard-grid-gap) * ${u}))`,
-                    gridAutoColumns: `calc(100 / ${l} * 1% - calc(var(--standard-grid-gap) * (${l-1}/${l}))`
+                    transform: `translateX(calc(-${100*b}% + ${p}px - (var(--standard-grid-gap) * ${b}))`,
+                    gridAutoColumns: `calc(100 / ${d} * 1% - calc(var(--standard-grid-gap) * (${d-1}/${d}))`
                   },
                   children: k
                 })
@@ -3956,29 +4118,29 @@
             })]
           })
         })),
-        yt = (0, F.withTranslations)((e => {
+        Ct = (0, D.withTranslations)((e => {
           let {
             error: a,
             t,
-            domain: i = ""
+            domain: n = ""
           } = e;
           console.error({
             error: a
           });
-          let n = a?.message ?? t("error-404-new");
-          n = t("error-404-new");
+          let i = a?.message ?? t("error-404-new");
+          i = t("error-404-new");
           const s = a?.code ?? 398;
           return (0, o.jsxs)("div", {
             className: "_93f8151fb9eb5ac4acc888afe9790ff737d7",
             children: [(0, o.jsx)("h3", {
-              children: `${n} (${s})`
-            }), (0, o.jsx)(l, {
+              children: `${i} (${s})`
+            }), (0, o.jsx)(d, {
               to: "/",
               children: t("Home")
-            }), "clr" !== i && (0, o.jsx)(at, {})]
+            }), "clr" !== n && (0, o.jsx)(ct, {})]
           })
         })),
-        Nt = {
+        Et = {
           videoPreview: "_93f8151fb9eb5ac4f57a66c11909dd3794fc",
           card: "_93f8151fb9eb5ac4e76ee574eec60bb13889",
           info: "_93f8151fb9eb5ac4ba5ee66f0a4a93fd6686",
@@ -3987,62 +4149,62 @@
           screencapLoaded: "_93f8151fb9eb5ac4c0b5ce25b1edb0582326",
           gameTitle: "_93f8151fb9eb5ac4c05b6eea8e77156def92"
         },
-        jt = e => {
+        It = e => {
           let {
             video: a
           } = e;
-          const [t] = (0, F.usePreloadImg)(a.screencap);
+          const [t] = (0, D.usePreloadImg)(a.screencap);
           return (0, o.jsx)("div", {
-            className: [Nt.screencap, t ? Nt.screencapLoaded : ""].join(" "),
+            className: [Et.screencap, t ? Et.screencapLoaded : ""].join(" "),
             style: {
               background: `url(${a.screencap}) center/cover`
             }
           })
         },
-        St = e => {
+        Lt = e => {
           let {
             gameTitleNecessary: a = !0,
             openInNewWindow: t = !1,
-            video: i
+            video: n
           } = e;
-          const n = `/videos/${i.id}`,
+          const i = `/videos/${n.id}`,
             s = {
-              className: Nt.videoPreview,
+              className: Et.videoPreview,
               "data-gtm-category": "Videos",
               "data-gtm-action": "Video Click-through",
-              "data-gtm-label": n
+              "data-gtm-label": i
             },
             r = (0, o.jsxs)("div", {
-              className: Nt.card,
-              children: [(0, o.jsx)(jt, {
-                video: i
+              className: Et.card,
+              children: [(0, o.jsx)(It, {
+                video: n
               }), (0, o.jsxs)("div", {
-                className: Nt.info,
+                className: Et.info,
                 children: [a ? (0, o.jsx)("div", {
-                  className: Nt.gameTitle,
+                  className: Et.gameTitle,
                   dangerouslySetInnerHTML: {
-                    __html: i.game.title
+                    __html: n.game.title
                   }
                 }) : "", (0, o.jsx)("h5", {
-                  className: Nt.title,
+                  className: Et.title,
                   dangerouslySetInnerHTML: {
-                    __html: i.title
+                    __html: n.title
                   }
                 })]
               })]
             });
           return t ? (0, o.jsx)("a", {
-            href: n,
+            href: i,
             target: "_blank",
             ...s,
             children: r
-          }) : (0, o.jsx)(l, {
-            to: n,
+          }) : (0, o.jsx)(d, {
+            to: i,
             ...s,
             children: r
           })
         };
-      class wt extends d.Component {
+      class Vt extends l.Component {
         constructor(e) {
           super(e), this.state = {
             error: {
@@ -4066,15 +4228,15 @@
           }
         }
         render() {
-          return null !== this.state.error.code ? (0, o.jsx)(yt, {
+          return null !== this.state.error.code ? (0, o.jsx)(Ct, {
             error: this.state.error
           }) : this.props.children
         }
       }
-      const Tt = function(e) {
+      const Bt = function(e) {
         let a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
         return function(t) {
-          return (0, o.jsx)(wt, {
+          return (0, o.jsx)(Vt, {
             header: a,
             children: (0, o.jsx)(e, {
               ...t
@@ -4082,24 +4244,24 @@
           })
         }
       };
-      var Ct = t(7644),
-        Et = t(5476),
-        It = t(6502);
-      const Lt = (0, d.forwardRef)(((e, a) => {
+      var zt = t(7644),
+        $t = t(5476),
+        Dt = t(6502);
+      const Ft = (0, l.forwardRef)(((e, a) => {
           const {
             children: t,
-            tag: i = "div"
-          } = e, n = Ct.m[i];
-          return (0, o.jsx)(Et.X, {
-            features: It.H,
-            children: (0, o.jsx)(n, {
+            tag: n = "div"
+          } = e, i = zt.m[n];
+          return (0, o.jsx)($t.X, {
+            features: Dt.H,
+            children: (0, o.jsx)(i, {
               ref: a,
               ...e,
               children: t
             })
           })
         })),
-        Vt = {
+        Mt = {
           visible: {
             opacity: 1
           },
@@ -4107,32 +4269,32 @@
             opacity: 0
           }
         },
-        Bt = {
+        At = {
           ease: "easeIn",
           duration: .4
         },
-        Dt = e => {
+        Pt = e => {
           let {
             children: a
           } = e;
-          return (0, o.jsx)(Se.E.div, Object.assign({
+          return (0, o.jsx)(Ee.E.div, Object.assign({
             className: "_93f8151fb9eb5ac4e0dc5d79dc36b7b8c013",
-            variants: Vt,
+            variants: Mt,
             initial: "hidden",
             whileInView: "visible",
             viewport: {
               margin: "-20%",
               once: !0
             },
-            transition: Bt
+            transition: At
           }, {
             children: a
           }))
         },
-        $t = e => a => (0, o.jsx)(Dt, {
+        Gt = e => a => (0, o.jsx)(Pt, {
           children: (0, o.jsx)(e, Object.assign({}, a))
         }),
-        Ft = {
+        Ot = {
           visible: {
             opacity: 1,
             y: 0
@@ -4142,33 +4304,33 @@
             y: 40
           }
         },
-        zt = {
+        Ht = {
           ease: "easeIn",
           duration: .75
         },
-        Mt = e => {
+        Ut = e => {
           let {
             children: a
           } = e;
-          return (0, o.jsx)(Se.E.div, {
+          return (0, o.jsx)(Ee.E.div, {
             className: "_93f8151fb9eb5ac4df9075608452635d71d4",
-            variants: Ft,
+            variants: Ot,
             initial: "hidden",
             whileInView: "visible",
             viewport: {
               margin: "-20%",
               once: !0
             },
-            transition: zt,
+            transition: Ht,
             children: a
           })
         },
-        At = e => a => (0, o.jsx)(Mt, {
+        Rt = e => a => (0, o.jsx)(Ut, {
           children: (0, o.jsx)(e, {
             ...a
           })
         }),
-        Pt = {
+        qt = {
           cardOpen: {
             ease: [.77, 0, .175, 1],
             duration: .5
@@ -4186,7 +4348,7 @@
             duration: .05
           }
         },
-        Gt = {
+        Wt = {
           plainCard: {
             expanded: {
               initial: {
@@ -4342,30 +4504,30 @@
             }
           }
         },
-        Ot = function() {
+        Yt = function() {
           let e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "collapsed";
-          return Gt[arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "imageMask"][e]
+          return Wt[arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "imageMask"][e]
         };
-      var Ht = t(1322);
-      const Ut = JSON.parse('{"assets":[],"layers":[{"ddd":0,"ind":0,"ty":4,"nm":"Shape Layer 1","ks":{"o":{"k":100},"r":{"k":0},"p":{"k":[300,300,0]},"a":{"k":[0,0,0]},"s":{"k":[244,244,100]}},"ao":0,"shapes":[{"d":1,"ty":"el","s":{"k":[100,100]},"p":{"k":[0,0]},"nm":"Ellipse Path 1","mn":"ADBE Vector Shape - Ellipse"},{"ty":"tm","s":{"k":[{"i":{"x":[0.439],"y":[1.016]},"o":{"x":[0.561],"y":[0.015]},"n":["0p439_1p016_0p561_0p015"],"t":5,"s":[100],"e":[0]},{"t":33.0000013441176}],"ix":1},"e":{"k":[{"i":{"x":[0.439],"y":[1.017]},"o":{"x":[0.561],"y":[0.016]},"n":["0p439_1p017_0p561_0p016"],"t":0,"s":[100],"e":[0]},{"t":30.0000012219251}],"ix":2},"o":{"k":0,"ix":3},"m":1,"ix":2,"nm":"Trim Paths 1","mn":"ADBE Vector Filter - Trim"},{"ty":"st","fillEnabled":true,"c":{"k":[1,1,1,1]},"o":{"k":100},"w":{"k":16},"lc":2,"lj":1,"ml":4,"nm":"Stroke 1","mn":"ADBE Vector Graphic - Stroke"}],"ip":0,"op":900.000036657751,"st":0,"bm":0,"sr":1}],"v":"4.5.3","ddd":0,"ip":1.00000004073083,"op":33.0000013441175,"fr":29.9700012207031,"w":600,"h":600}'),
-        Rt = JSON.parse('{"v":"5.7.3","fr":60,"ip":0,"op":64,"w":300,"h":300,"nm":"Dot_Loading","ddd":0,"assets":[],"layers":[{"ddd":0,"ind":1,"ty":4,"nm":"center","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":1,"k":[{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":10,"s":[144,144,0],"to":[0,-3.333,0],"ti":[0,0,0]},{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":22,"s":[144,124,0],"to":[0,0,0],"ti":[0,-3.333,0]},{"t":34,"s":[144,144,0]}],"ix":2},"a":{"a":0,"k":[12.5,6,0],"ix":1},"s":{"a":0,"k":[764.558,764.558,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,-0.828],[0.828,0],[0,0.828],[-0.828,0]],"o":[[0,0.828],[-0.828,0],[0,-0.828],[0.828,0]],"v":[[1.5,0],[0,1.5],[-1.5,0],[0,-1.5]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fond 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[17.667,5.833],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Groupe 1","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":76,"st":-62,"bm":0},{"ddd":0,"ind":2,"ty":4,"nm":"right","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":1,"k":[{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":5,"s":[144,144,0],"to":[0,-3.333,0],"ti":[0,0,0]},{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":17,"s":[144,124,0],"to":[0,0,0],"ti":[0,-3.333,0]},{"t":29,"s":[144,144,0]}],"ix":2},"a":{"a":0,"k":[12.5,6,0],"ix":1},"s":{"a":0,"k":[764.558,764.558,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,-0.828],[0.828,0],[0,0.828],[-0.828,0]],"o":[[0,0.828],[-0.828,0],[0,-0.828],[0.828,0]],"v":[[1.5,0],[0,1.5],[-1.5,0],[0,-1.5]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fond 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[12.333,5.833],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Groupe 2","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":76,"st":-62,"bm":0},{"ddd":0,"ind":3,"ty":4,"nm":"left","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":1,"k":[{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":0,"s":[144,144,0],"to":[0,-3.333,0],"ti":[0,0,0]},{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":12,"s":[144,124,0],"to":[0,0,0],"ti":[0,-3.333,0]},{"t":24,"s":[144,144,0]}],"ix":2},"a":{"a":0,"k":[12.5,6,0],"ix":1},"s":{"a":0,"k":[764.558,764.558,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,-0.828],[0.828,0],[0,0.828],[-0.828,0]],"o":[[0,0.828],[-0.828,0],[0,-0.828],[0.828,0]],"v":[[1.5,0],[0,1.5],[-1.5,0],[0,-1.5]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fond 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[7,5.833],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Groupe 3","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":76,"st":-62,"bm":0}],"markers":[]}'),
-        qt = {
+      var Zt = t(1322);
+      const Qt = JSON.parse('{"assets":[],"layers":[{"ddd":0,"ind":0,"ty":4,"nm":"Shape Layer 1","ks":{"o":{"k":100},"r":{"k":0},"p":{"k":[300,300,0]},"a":{"k":[0,0,0]},"s":{"k":[244,244,100]}},"ao":0,"shapes":[{"d":1,"ty":"el","s":{"k":[100,100]},"p":{"k":[0,0]},"nm":"Ellipse Path 1","mn":"ADBE Vector Shape - Ellipse"},{"ty":"tm","s":{"k":[{"i":{"x":[0.439],"y":[1.016]},"o":{"x":[0.561],"y":[0.015]},"n":["0p439_1p016_0p561_0p015"],"t":5,"s":[100],"e":[0]},{"t":33.0000013441176}],"ix":1},"e":{"k":[{"i":{"x":[0.439],"y":[1.017]},"o":{"x":[0.561],"y":[0.016]},"n":["0p439_1p017_0p561_0p016"],"t":0,"s":[100],"e":[0]},{"t":30.0000012219251}],"ix":2},"o":{"k":0,"ix":3},"m":1,"ix":2,"nm":"Trim Paths 1","mn":"ADBE Vector Filter - Trim"},{"ty":"st","fillEnabled":true,"c":{"k":[1,1,1,1]},"o":{"k":100},"w":{"k":16},"lc":2,"lj":1,"ml":4,"nm":"Stroke 1","mn":"ADBE Vector Graphic - Stroke"}],"ip":0,"op":900.000036657751,"st":0,"bm":0,"sr":1}],"v":"4.5.3","ddd":0,"ip":1.00000004073083,"op":33.0000013441175,"fr":29.9700012207031,"w":600,"h":600}'),
+        Xt = JSON.parse('{"v":"5.7.3","fr":60,"ip":0,"op":64,"w":300,"h":300,"nm":"Dot_Loading","ddd":0,"assets":[],"layers":[{"ddd":0,"ind":1,"ty":4,"nm":"center","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":1,"k":[{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":10,"s":[144,144,0],"to":[0,-3.333,0],"ti":[0,0,0]},{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":22,"s":[144,124,0],"to":[0,0,0],"ti":[0,-3.333,0]},{"t":34,"s":[144,144,0]}],"ix":2},"a":{"a":0,"k":[12.5,6,0],"ix":1},"s":{"a":0,"k":[764.558,764.558,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,-0.828],[0.828,0],[0,0.828],[-0.828,0]],"o":[[0,0.828],[-0.828,0],[0,-0.828],[0.828,0]],"v":[[1.5,0],[0,1.5],[-1.5,0],[0,-1.5]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fond 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[17.667,5.833],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Groupe 1","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":76,"st":-62,"bm":0},{"ddd":0,"ind":2,"ty":4,"nm":"right","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":1,"k":[{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":5,"s":[144,144,0],"to":[0,-3.333,0],"ti":[0,0,0]},{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":17,"s":[144,124,0],"to":[0,0,0],"ti":[0,-3.333,0]},{"t":29,"s":[144,144,0]}],"ix":2},"a":{"a":0,"k":[12.5,6,0],"ix":1},"s":{"a":0,"k":[764.558,764.558,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,-0.828],[0.828,0],[0,0.828],[-0.828,0]],"o":[[0,0.828],[-0.828,0],[0,-0.828],[0.828,0]],"v":[[1.5,0],[0,1.5],[-1.5,0],[0,-1.5]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fond 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[12.333,5.833],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Groupe 2","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":76,"st":-62,"bm":0},{"ddd":0,"ind":3,"ty":4,"nm":"left","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":1,"k":[{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":0,"s":[144,144,0],"to":[0,-3.333,0],"ti":[0,0,0]},{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":12,"s":[144,124,0],"to":[0,0,0],"ti":[0,-3.333,0]},{"t":24,"s":[144,144,0]}],"ix":2},"a":{"a":0,"k":[12.5,6,0],"ix":1},"s":{"a":0,"k":[764.558,764.558,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,-0.828],[0.828,0],[0,0.828],[-0.828,0]],"o":[[0,0.828],[-0.828,0],[0,-0.828],[0.828,0]],"v":[[1.5,0],[0,1.5],[-1.5,0],[0,-1.5]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fond 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[7,5.833],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Groupe 3","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":76,"st":-62,"bm":0}],"markers":[]}'),
+        Kt = {
           SPINNING: "spinning",
           THREE_DOTS: "threeDots"
         },
-        Wt = e => {
+        Jt = e => {
           let a, {
-            type: t = qt.SPINNING
+            type: t = Kt.SPINNING
           } = e;
           switch (t) {
-            case qt.THREE_DOTS:
-              a = Rt;
+            case Kt.THREE_DOTS:
+              a = Xt;
               break;
-            case qt.SPINNING:
+            case Kt.SPINNING:
             default:
-              a = Ut
+              a = Qt
           }
-          return (0, o.jsx)(Ht.Z, {
+          return (0, o.jsx)(Zt.Z, {
             options: {
               loop: !0,
               autoplay: !0,
@@ -4579,8 +4741,8 @@
       function t(e, a) {
         if ("FragmentSpread" === e.kind) a.add(e.name.value);
         else if ("VariableDefinition" === e.kind) {
-          var i = e.type;
-          "NamedType" === i.kind && a.add(i.name.value)
+          var n = e.type;
+          "NamedType" === n.kind && a.add(n.name.value)
         }
         e.selectionSet && e.selectionSet.selections.forEach((function(e) {
           t(e, a)
@@ -4598,26 +4760,26 @@
           column: 1
         }
       };
-      var i = {};
+      var n = {};
 
-      function n(e, a) {
+      function i(e, a) {
         for (var t = 0; t < e.definitions.length; t++) {
-          var i = e.definitions[t];
-          if (i.name && i.name.value == a) return i
+          var n = e.definitions[t];
+          if (n.name && n.name.value == a) return n
         }
       }
       a.definitions.forEach((function(e) {
         if (e.name) {
           var a = new Set;
-          t(e, a), i[e.name.value] = a
+          t(e, a), n[e.name.value] = a
         }
       })), e.exports = a, e.exports.GetAudioAlbum = function(e, a) {
         var t = {
           kind: e.kind,
-          definitions: [n(e, a)]
+          definitions: [i(e, a)]
         };
         e.hasOwnProperty("loc") && (t.loc = e.loc);
-        var s = i[a] || new Set,
+        var s = n[a] || new Set,
           r = new Set,
           c = new Set;
         for (s.forEach((function(e) {
@@ -4625,14 +4787,14 @@
           })); c.size > 0;) {
           var o = c;
           c = new Set, o.forEach((function(e) {
-            r.has(e) || (r.add(e), (i[e] || new Set).forEach((function(e) {
+            r.has(e) || (r.add(e), (n[e] || new Set).forEach((function(e) {
               c.add(e)
             })))
           }))
         }
         return r.forEach((function(a) {
-          var i = n(e, a);
-          i && t.definitions.push(i)
+          var n = i(e, a);
+          n && t.definitions.push(n)
         })), t
       }(a, "GetAudioAlbum")
     },
@@ -4880,8 +5042,8 @@
       function t(e, a) {
         if ("FragmentSpread" === e.kind) a.add(e.name.value);
         else if ("VariableDefinition" === e.kind) {
-          var i = e.type;
-          "NamedType" === i.kind && a.add(i.name.value)
+          var n = e.type;
+          "NamedType" === n.kind && a.add(n.name.value)
         }
         e.selectionSet && e.selectionSet.selections.forEach((function(e) {
           t(e, a)
@@ -4899,22 +5061,22 @@
           column: 1
         }
       };
-      var i = {};
+      var n = {};
 
-      function n(e, a) {
+      function i(e, a) {
         for (var t = 0; t < e.definitions.length; t++) {
-          var i = e.definitions[t];
-          if (i.name && i.name.value == a) return i
+          var n = e.definitions[t];
+          if (n.name && n.name.value == a) return n
         }
       }
 
       function s(e, a) {
         var t = {
           kind: e.kind,
-          definitions: [n(e, a)]
+          definitions: [i(e, a)]
         };
         e.hasOwnProperty("loc") && (t.loc = e.loc);
-        var s = i[a] || new Set,
+        var s = n[a] || new Set,
           r = new Set,
           c = new Set;
         for (s.forEach((function(e) {
@@ -4922,20 +5084,20 @@
           })); c.size > 0;) {
           var o = c;
           c = new Set, o.forEach((function(e) {
-            r.has(e) || (r.add(e), (i[e] || new Set).forEach((function(e) {
+            r.has(e) || (r.add(e), (n[e] || new Set).forEach((function(e) {
               c.add(e)
             })))
           }))
         }
         return r.forEach((function(a) {
-          var i = n(e, a);
-          i && t.definitions.push(i)
+          var n = i(e, a);
+          n && t.definitions.push(n)
         })), t
       }
       a.definitions.forEach((function(e) {
         if (e.name) {
           var a = new Set;
-          t(e, a), i[e.name.value] = a
+          t(e, a), n[e.name.value] = a
         }
       })), e.exports = a, e.exports.UserGetVote = s(a, "UserGetVote"), e.exports.UserCastVote = s(a, "UserCastVote")
     },
@@ -5556,8 +5718,8 @@
       function t(e, a) {
         if ("FragmentSpread" === e.kind) a.add(e.name.value);
         else if ("VariableDefinition" === e.kind) {
-          var i = e.type;
-          "NamedType" === i.kind && a.add(i.name.value)
+          var n = e.type;
+          "NamedType" === n.kind && a.add(n.name.value)
         }
         e.selectionSet && e.selectionSet.selections.forEach((function(e) {
           t(e, a)
@@ -5575,22 +5737,22 @@
           column: 1
         }
       };
-      var i = {};
+      var n = {};
 
-      function n(e, a) {
+      function i(e, a) {
         for (var t = 0; t < e.definitions.length; t++) {
-          var i = e.definitions[t];
-          if (i.name && i.name.value == a) return i
+          var n = e.definitions[t];
+          if (n.name && n.name.value == a) return n
         }
       }
 
       function s(e, a) {
         var t = {
           kind: e.kind,
-          definitions: [n(e, a)]
+          definitions: [i(e, a)]
         };
         e.hasOwnProperty("loc") && (t.loc = e.loc);
-        var s = i[a] || new Set,
+        var s = n[a] || new Set,
           r = new Set,
           c = new Set;
         for (s.forEach((function(e) {
@@ -5598,20 +5760,20 @@
           })); c.size > 0;) {
           var o = c;
           c = new Set, o.forEach((function(e) {
-            r.has(e) || (r.add(e), (i[e] || new Set).forEach((function(e) {
+            r.has(e) || (r.add(e), (n[e] || new Set).forEach((function(e) {
               c.add(e)
             })))
           }))
         }
         return r.forEach((function(a) {
-          var i = n(e, a);
-          i && t.definitions.push(i)
+          var n = i(e, a);
+          n && t.definitions.push(n)
         })), t
       }
       a.definitions.forEach((function(e) {
         if (e.name) {
           var a = new Set;
-          t(e, a), i[e.name.value] = a
+          t(e, a), n[e.name.value] = a
         }
       })), e.exports = a, e.exports.TinaModulesList = s(a, "TinaModulesList"), e.exports.TinaModulesInfo = s(a, "TinaModulesInfo")
     },
@@ -5859,8 +6021,8 @@
       function t(e, a) {
         if ("FragmentSpread" === e.kind) a.add(e.name.value);
         else if ("VariableDefinition" === e.kind) {
-          var i = e.type;
-          "NamedType" === i.kind && a.add(i.name.value)
+          var n = e.type;
+          "NamedType" === n.kind && a.add(n.name.value)
         }
         e.selectionSet && e.selectionSet.selections.forEach((function(e) {
           t(e, a)
@@ -5878,22 +6040,22 @@
           column: 1
         }
       };
-      var i = {};
+      var n = {};
 
-      function n(e, a) {
+      function i(e, a) {
         for (var t = 0; t < e.definitions.length; t++) {
-          var i = e.definitions[t];
-          if (i.name && i.name.value == a) return i
+          var n = e.definitions[t];
+          if (n.name && n.name.value == a) return n
         }
       }
 
       function s(e, a) {
         var t = {
           kind: e.kind,
-          definitions: [n(e, a)]
+          definitions: [i(e, a)]
         };
         e.hasOwnProperty("loc") && (t.loc = e.loc);
-        var s = i[a] || new Set,
+        var s = n[a] || new Set,
           r = new Set,
           c = new Set;
         for (s.forEach((function(e) {
@@ -5901,25 +6063,25 @@
           })); c.size > 0;) {
           var o = c;
           c = new Set, o.forEach((function(e) {
-            r.has(e) || (r.add(e), (i[e] || new Set).forEach((function(e) {
+            r.has(e) || (r.add(e), (n[e] || new Set).forEach((function(e) {
               c.add(e)
             })))
           }))
         }
         return r.forEach((function(a) {
-          var i = n(e, a);
-          i && t.definitions.push(i)
+          var n = i(e, a);
+          n && t.definitions.push(n)
         })), t
       }
       a.definitions.forEach((function(e) {
         if (e.name) {
           var a = new Set;
-          t(e, a), i[e.name.value] = a
+          t(e, a), n[e.name.value] = a
         }
       })), e.exports = a, e.exports.UserGetVote = s(a, "UserGetVote"), e.exports.UserCastVote = s(a, "UserCastVote")
     },
     3651: (e, a, t) => {
-      var i = {
+      var n = {
         kind: "Document",
         definitions: [{
           kind: "OperationDefinition",
@@ -6188,7 +6350,7 @@
           end: 537
         }
       };
-      i.loc.source = {
+      n.loc.source = {
         body: '#import "@rockstargames/graph-client/operations/fragments/newswire-post.graphql"\n#import "@rockstargames/graph-client/operations/fragments/paging.graphql"\n\nquery NewswireList(\n    $locale: String!\n    $page: Int!\n    $tagId: Int\n    $metaUrl: String!\n    $cache: Boolean = true\n) {\n    meta: metaUrl(url: $metaUrl, domain: "www", locale: $locale) {\n        title\n    }\n    posts(page: $page, tagId: $tagId, locale: $locale) {\n        paging {\n            ...paging\n        }\n        results {\n            ...postFields\n        }\n    }\n}\n',
         name: "GraphQL request",
         locationOffset: {
@@ -6196,13 +6358,13 @@
           column: 1
         }
       };
-      var n = {};
+      var i = {};
 
       function s(e) {
         return e.filter((function(e) {
           if ("FragmentDefinition" !== e.kind) return !0;
           var a = e.name.value;
-          return !n[a] && (n[a] = !0, !0)
+          return !i[a] && (i[a] = !0, !0)
         }))
       }
 
@@ -6220,47 +6382,47 @@
           r(e, a)
         }))
       }
-      i.definitions = i.definitions.concat(s(t(6077).definitions)), i.definitions = i.definitions.concat(s(t(9349).definitions));
+      n.definitions = n.definitions.concat(s(t(6077).definitions)), n.definitions = n.definitions.concat(s(t(9349).definitions));
       var c = {};
 
       function o(e, a) {
         for (var t = 0; t < e.definitions.length; t++) {
-          var i = e.definitions[t];
-          if (i.name && i.name.value == a) return i
+          var n = e.definitions[t];
+          if (n.name && n.name.value == a) return n
         }
       }
-      i.definitions.forEach((function(e) {
+      n.definitions.forEach((function(e) {
         if (e.name) {
           var a = new Set;
           r(e, a), c[e.name.value] = a
         }
-      })), e.exports = i, e.exports.NewswireList = function(e, a) {
+      })), e.exports = n, e.exports.NewswireList = function(e, a) {
         var t = {
           kind: e.kind,
           definitions: [o(e, a)]
         };
         e.hasOwnProperty("loc") && (t.loc = e.loc);
-        var i = c[a] || new Set,
-          n = new Set,
+        var n = c[a] || new Set,
+          i = new Set,
           s = new Set;
-        for (i.forEach((function(e) {
+        for (n.forEach((function(e) {
             s.add(e)
           })); s.size > 0;) {
           var r = s;
           s = new Set, r.forEach((function(e) {
-            n.has(e) || (n.add(e), (c[e] || new Set).forEach((function(e) {
+            i.has(e) || (i.add(e), (c[e] || new Set).forEach((function(e) {
               s.add(e)
             })))
           }))
         }
-        return n.forEach((function(a) {
-          var i = o(e, a);
-          i && t.definitions.push(i)
+        return i.forEach((function(a) {
+          var n = o(e, a);
+          n && t.definitions.push(n)
         })), t
-      }(i, "NewswireList")
+      }(n, "NewswireList")
     },
     3631: (e, a, t) => {
-      var i = {
+      var n = {
         "./left.svg": 4377,
         "./pc.svg": 6475,
         "./ps3.svg": 73,
@@ -6274,24 +6436,24 @@
         "./xboxseriesxs.svg": 1699
       };
 
-      function n(e) {
+      function i(e) {
         var a = s(e);
         return t(a)
       }
 
       function s(e) {
-        if (!t.o(i, e)) {
+        if (!t.o(n, e)) {
           var a = new Error("Cannot find module '" + e + "'");
           throw a.code = "MODULE_NOT_FOUND", a
         }
-        return i[e]
+        return n[e]
       }
-      n.keys = function() {
-        return Object.keys(i)
-      }, n.resolve = s, e.exports = n, n.id = 3631
+      i.keys = function() {
+        return Object.keys(n)
+      }, i.resolve = s, e.exports = i, i.id = 3631
     },
     5570: (e, a, t) => {
-      var i = {
+      var n = {
         "./cero_a.png": 8865,
         "./cero_b.svg": 1314,
         "./cero_c.svg": 2123,
@@ -6355,24 +6517,24 @@
         "./usk_6.svg": 483
       };
 
-      function n(e) {
+      function i(e) {
         var a = s(e);
         return t(a)
       }
 
       function s(e) {
-        if (!t.o(i, e)) {
+        if (!t.o(n, e)) {
           var a = new Error("Cannot find module '" + e + "'");
           throw a.code = "MODULE_NOT_FOUND", a
         }
-        return i[e]
+        return n[e]
       }
-      n.keys = function() {
-        return Object.keys(i)
-      }, n.resolve = s, e.exports = n, n.id = 5570
+      i.keys = function() {
+        return Object.keys(n)
+      }, i.resolve = s, e.exports = i, i.id = 5570
     },
     4593: (e, a, t) => {
-      var i = {
+      var n = {
         "./cero_a.png": 8865,
         "./cero_b.svg": 1314,
         "./cero_c.svg": 2123,
@@ -6436,24 +6598,24 @@
         "./usk_6.svg": 483
       };
 
-      function n(e) {
+      function i(e) {
         var a = s(e);
         return t(a)
       }
 
       function s(e) {
-        if (!t.o(i, e)) {
+        if (!t.o(n, e)) {
           var a = new Error("Cannot find module '" + e + "'");
           throw a.code = "MODULE_NOT_FOUND", a
         }
-        return i[e]
+        return n[e]
       }
-      n.keys = function() {
-        return Object.keys(i)
-      }, n.resolve = s, e.exports = n, n.id = 4593
+      i.keys = function() {
+        return Object.keys(n)
+      }, i.resolve = s, e.exports = i, i.id = 4593
     },
     9065: (e, a, t) => {
-      var i = {
+      var n = {
         "./bounty.png": 3709,
         "./collector.png": 4041,
         "./moonshiner.png": 1012,
@@ -6461,21 +6623,21 @@
         "./trader.png": 4669
       };
 
-      function n(e) {
+      function i(e) {
         var a = s(e);
         return t(a)
       }
 
       function s(e) {
-        if (!t.o(i, e)) {
+        if (!t.o(n, e)) {
           var a = new Error("Cannot find module '" + e + "'");
           throw a.code = "MODULE_NOT_FOUND", a
         }
-        return i[e]
+        return n[e]
       }
-      n.keys = function() {
-        return Object.keys(i)
-      }, n.resolve = s, e.exports = n, n.id = 9065
+      i.keys = function() {
+        return Object.keys(n)
+      }, i.resolve = s, e.exports = i, i.id = 9065
     },
     4377: e => {
       "use strict";
@@ -6795,3 +6957,4 @@
     }
   }
 ]);
+//# sourceMappingURL=17bf005c42873e8c7114.js.map

@@ -1341,7 +1341,6 @@ print {
 
 .b8556f6133e2002ebfbaafacb067bb02c9be.b8556f6133e2002ea659742dbe050425ff34 {
   animation-name: b8556f6133e2002ef4237e8859c50b96d459;
-  -webkit-backface-visibility: visible;
   backface-visibility: visible
 }
 
@@ -1373,7 +1372,6 @@ print {
 
 .b8556f6133e2002ef361ac790140f204b1ae {
   animation-name: b8556f6133e2002ed32fda5537595a71806a;
-  -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important
 }
 
@@ -1405,7 +1403,6 @@ print {
 
 .b8556f6133e2002ec4909af842fc01565c49 {
   animation-name: b8556f6133e2002ed5e7e6f88c8a3f21a733;
-  -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important
 }
 
@@ -1429,7 +1426,6 @@ print {
   animation-duration: calc(1s * .75);
   animation-duration: calc(var(--animate-duration) * .75);
   animation-name: b8556f6133e2002eba89df7f7626c3b5c0f5;
-  -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important
 }
 
@@ -1453,7 +1449,6 @@ print {
   animation-duration: calc(1s * .75);
   animation-duration: calc(var(--animate-duration) * .75);
   animation-name: b8556f6133e2002eb33f22363712f26c0ee9;
-  -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important
 }
 
@@ -2184,3 +2179,5 @@ print {
 button[class^=CreateButton-] {
   color: #000
 }
+
+/*# sourceMappingURL=e1dfce0453658606a7a0.css.map*/
