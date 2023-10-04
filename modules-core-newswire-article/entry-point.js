@@ -74,20 +74,20 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
     execute: function() {
       e((() => {
         var e, d, p, h, m = {
-            3580: (e, t, r) => {
-              (0, r(4879).s)(1)
+            8252: (e, t, r) => {
+              (0, r(9555).s)(1)
             },
-            4879: (e, t, r) => {
-              const o = r(2490).R;
+            9555: (e, t, r) => {
+              const o = r(8555).R;
               t.s = function(e) {
                 if (e || (e = 1), !r.y.meta || !r.y.meta.url) throw console.error("__system_context__", r.y), Error("systemjs-webpack-interop was provided an unknown SystemJS context. Expected context.meta.url, but none was provided");
                 r.p = o(r.y.meta.url, e)
               }
             },
-            1308: (e, t, r) => {
-              r(3580)
+            9626: (e, t, r) => {
+              r(8252)
             },
-            2490: (e, t, r) => {
+            8555: (e, t, r) => {
               t.R = function(e, t) {
                 var r = document.createElement("a");
                 r.href = e;
@@ -101,12 +101,12 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
             6801: (e, t, r) => {
               "use strict";
               var o = {
-                  "./NewswireArticle": () => Promise.all([r.e(688), r.e(218), r.e(976), r.e(634), r.e(975), r.e(510), r.e(357), r.e(76)]).then((() => () => r(8076))),
-                  "./NewswireTitle": () => Promise.all([r.e(976), r.e(634), r.e(765)]).then((() => () => r(1765))),
-                  "./components": () => Promise.all([r.e(688), r.e(976), r.e(634), r.e(975)]).then((() => () => r(3975))),
-                  "./index": () => Promise.all([r.e(688), r.e(976), r.e(634), r.e(975), r.e(510), r.e(986)]).then((() => () => r(7986))),
-                  "./tinaBlockTemplates": () => Promise.all([r.e(976), r.e(814)]).then((() => () => r(8814))),
-                  "./types": () => Promise.all([r.e(688), r.e(218), r.e(976), r.e(634), r.e(975), r.e(510), r.e(357), r.e(417)]).then((() => () => r(417)))
+                  "./NewswireArticle": () => Promise.all([r.e(610), r.e(319), r.e(976), r.e(634), r.e(879), r.e(510), r.e(692), r.e(128)]).then((() => () => r(128))),
+                  "./NewswireTitle": () => Promise.all([r.e(976), r.e(634), r.e(378)]).then((() => () => r(4378))),
+                  "./components": () => Promise.all([r.e(610), r.e(976), r.e(634), r.e(879)]).then((() => () => r(6879))),
+                  "./index": () => Promise.all([r.e(610), r.e(976), r.e(634), r.e(879), r.e(510), r.e(595)]).then((() => () => r(6595))),
+                  "./tinaBlockTemplates": () => Promise.all([r.e(976), r.e(282)]).then((() => () => r(3282))),
+                  "./types": () => Promise.all([r.e(610), r.e(319), r.e(976), r.e(634), r.e(879), r.e(510), r.e(692), r.e(736)]).then((() => () => r(1736)))
                 },
                 n = (e, t) => (r.R = t, t = r.o(o, e) ? o[e]() : Promise.resolve().then((() => {
                   throw new Error('Module "' + e + '" does not exist in container.')
@@ -188,23 +188,23 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
             get: t[r]
           })
         }, b.f = {}, b.e = e => Promise.all(Object.keys(b.f).reduce(((t, r) => (b.f[r](e, t), t)), [])), b.u = e => "js/" + {
-          76: "c65eb6399e9cb1e0c908",
-          218: "022d87286cdaaa026678",
-          252: "406729bef360d371138c",
-          357: "24a013e2186f65eaee90",
-          417: "198459cfcc4c8eda20a6",
-          510: "113b89b9f4c8ad0af64c",
-          634: "6394a7f512b11408aa93",
-          688: "ac709e74aa5bd388cc0c",
-          765: "d2f7bdd59423eb8a4387",
-          814: "58153166384f60f826c0",
-          975: "81715cf54297eb276424",
-          976: "8588115fb29797f8a174",
-          986: "d511a9e2a116adc7e71d"
+          128: "fe50bf28389153085df9",
+          266: "b218214a8ea627e0045d",
+          282: "d86326cd6044fee97ff8",
+          319: "c3ca07bff0797a1ff21a",
+          378: "877c4ff382c6f8775975",
+          510: "0e953b9614e51efe60df",
+          595: "6c5fd4fed0f84581f616",
+          610: "d34b364728489e2507ec",
+          634: "31f578ec524ea99c6b6a",
+          692: "6d5585ef69a015eb3f05",
+          736: "fcdf03825e541589c87b",
+          879: "fe60f63155ab93e79bdd",
+          976: "008b060d9deb1343aabd"
         } [e] + ".js", b.miniCssF = e => "css/" + {
-          357: "c5166e110fa5eb6cc611",
-          765: "f385c8a76ee000e3cfa7",
-          975: "11e3c4d58deaea77233e"
+          378: "1691d463889020de61ff",
+          692: "438b240f9b0db9b6cf96",
+          879: "03a9ef0b649e66556a18"
         } [e] + ".css", b.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
@@ -243,11 +243,11 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
             value: !0
           })
         }, b.nmd = e => (e.paths = [], e.children || (e.children = []), e), p = {
-          76: [1968, 6077],
+          128: [1968, 6077],
+          282: [334, 559, 1719, 2324, 3204, 3616, 6307, 6904],
           510: [3750, 5551],
           634: [9542, 9929],
-          814: [334, 559, 1719, 2324, 3204, 3616, 6307, 6904],
-          975: [420, 3657, 4224, 4859, 6947, 8356],
+          879: [420, 3657, 4224, 4859, 6947, 8356],
           976: [8976]
         }, h = {
           334: ["default", "./tina", 3642],
@@ -336,7 +336,7 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
                 var n = a[e] = a[e] || {},
                   s = n[t];
                 (!s || !s.loaded && (1 != !s.eager ? o : i > s.from)) && (n[t] = {
-                  get: () => b.e(252).then((() => () => b(8252))),
+                  get: () => b.e(266).then((() => () => b(9266))),
                   from: i,
                   eager: !1
                 })
@@ -423,7 +423,7 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
             })),
             n = {},
             a = {
-              4932: () => o("default", "react", [1, 18, 2, 0], (() => b.e(252).then((() => () => b(8252)))))
+              4932: () => o("default", "react", [1, 18, 2, 0], (() => b.e(266).then((() => () => b(9266)))))
             },
             i = {
               634: [4932]
@@ -456,9 +456,9 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
             };
             b.f.miniCss = (t, r) => {
               e[t] ? r.push(e[t]) : 0 !== e[t] && {
-                357: 1,
-                765: 1,
-                975: 1
+                378: 1,
+                692: 1,
+                879: 1
               } [t] && r.push(e[t] = (e => new Promise(((t, r) => {
                 var o = b.miniCssF(e),
                   n = b.p + o;
@@ -500,7 +500,7 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
             var o = b.o(e, t) ? e[t] : void 0;
             if (0 !== o)
               if (o) r.push(o[2]);
-              else if (/^(357|510|634|976)$/.test(t)) e[t] = 0;
+              else if (/^(510|634|692|976)$/.test(t)) e[t] = 0;
             else {
               var n = new Promise(((r, n) => o = e[t] = [r, n]));
               r.push(o[2] = n);
@@ -528,9 +528,8 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
             },
             r = self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || [];
           r.forEach(t.bind(null, 0)), r.push = t.bind(null, r.push.bind(r))
-        })(), b(1308), b(6801)
+        })(), b(9626), b(6801)
       })())
     }
   }
 }));
-//# sourceMappingURL=remote-entry.js.map

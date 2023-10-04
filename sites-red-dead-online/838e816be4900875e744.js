@@ -1,7 +1,7 @@
-/*! For license information please see 515d06501aa7a2b21a0c.js.LICENSE.txt */
+/*! For license information please see 838e816be4900875e744.js.LICENSE.txt */
 (self.webpackChunk_rockstargames_sites_red_dead_online = self.webpackChunk_rockstargames_sites_red_dead_online || []).push([
-  [697], {
-    6716: (t, e, i) => {
+  [562], {
+    9097: (t, e, i) => {
       var n;
       ! function(r, s, o, a) {
         "use strict";
@@ -146,68 +146,67 @@
           W = "mouse",
           L = 25,
           q = 1,
-          H = 2,
-          U = 4,
-          j = 8,
-          V = 1,
-          G = 2,
-          B = 4,
-          Z = 8,
-          $ = 16,
-          J = G | B,
-          K = Z | $,
-          Q = J | K,
-          tt = ["x", "y"],
-          et = ["clientX", "clientY"];
+          H = 4,
+          U = 8,
+          j = 1,
+          V = 2,
+          G = 4,
+          B = 8,
+          Z = 16,
+          $ = V | G,
+          J = B | Z,
+          K = $ | J,
+          Q = ["x", "y"],
+          tt = ["clientX", "clientY"];
 
-        function it(t, e) {
+        function et(t, e) {
           var i = this;
           this.manager = t, this.callback = e, this.element = t.element, this.target = t.options.inputTarget, this.domHandler = function(e) {
             A(t.options.enable, [t]) && i.handler(e)
           }, this.init()
         }
 
-        function nt(t, e, i) {
+        function it(t, e, i) {
           var n = i.pointers.length,
             r = i.changedPointers.length,
             s = e & q && n - r == 0,
-            o = e & (U | j) && n - r == 0;
+            o = e & (H | U) && n - r == 0;
           i.isFirst = !!s, i.isFinal = !!o, s && (t.session = {}), i.eventType = e,
             function(t, e) {
               var i = t.session,
                 n = e.pointers,
                 r = n.length;
-              i.firstInput || (i.firstInput = rt(e)), r > 1 && !i.firstMultiple ? i.firstMultiple = rt(e) : 1 === r && (i.firstMultiple = !1);
+              i.firstInput || (i.firstInput = nt(e)), r > 1 && !i.firstMultiple ? i.firstMultiple = nt(e) : 1 === r && (i.firstMultiple = !1);
               var s = i.firstInput,
                 o = i.firstMultiple,
                 h = o ? o.center : s.center,
-                u = e.center = st(n);
-              e.timeStamp = v(), e.deltaTime = e.timeStamp - s.timeStamp, e.angle = ut(h, u), e.distance = ht(h, u),
+                u = e.center = rt(n);
+              e.timeStamp = v(), e.deltaTime = e.timeStamp - s.timeStamp, e.angle = ht(h, u), e.distance = at(h, u),
                 function(t, e) {
                   var i = e.center,
                     n = t.offsetDelta || {},
                     r = t.prevDelta || {},
                     s = t.prevInput || {};
-                  e.eventType !== q && s.eventType !== U || (r = t.prevDelta = {
+                  e.eventType !== q && s.eventType !== H || (r = t.prevDelta = {
                     x: s.deltaX || 0,
                     y: s.deltaY || 0
                   }, n = t.offsetDelta = {
                     x: i.x,
                     y: i.y
                   }), e.deltaX = r.x + (i.x - n.x), e.deltaY = r.y + (i.y - n.y)
-                }(i, e), e.offsetDirection = at(e.deltaX, e.deltaY);
-              var c, l, p = ot(e.deltaTime, e.deltaX, e.deltaY);
-              e.overallVelocityX = p.x, e.overallVelocityY = p.y, e.overallVelocity = f(p.x) > f(p.y) ? p.x : p.y, e.scale = o ? (c = o.pointers, ht((l = n)[0], l[1], et) / ht(c[0], c[1], et)) : 1, e.rotation = o ? function(t, e) {
-                  return ut(e[1], e[0], et) + ut(t[1], t[0], et)
+                }(i, e), e.offsetDirection = ot(e.deltaX, e.deltaY);
+              var c, l, p = st(e.deltaTime, e.deltaX, e.deltaY);
+              e.overallVelocityX = p.x, e.overallVelocityY = p.y, e.overallVelocity = f(p.x) > f(p.y) ? p.x : p.y, e.scale = o ? (c = o.pointers, at((l = n)[0], l[1], tt) / at(c[0], c[1], tt)) : 1, e.rotation = o ? function(t, e) {
+                  return ht(e[1], e[0], tt) + ht(t[1], t[0], tt)
                 }(o.pointers, n) : 0, e.maxPointers = i.prevInput ? e.pointers.length > i.prevInput.maxPointers ? e.pointers.length : i.prevInput.maxPointers : e.pointers.length,
                 function(t, e) {
                   var i, n, r, s, o = t.lastInterval || e,
                     h = e.timeStamp - o.timeStamp;
-                  if (e.eventType != j && (h > L || o.velocity === a)) {
+                  if (e.eventType != U && (h > L || o.velocity === a)) {
                     var u = e.deltaX - o.deltaX,
                       c = e.deltaY - o.deltaY,
-                      l = ot(h, u, c);
-                    n = l.x, r = l.y, i = f(l.x) > f(l.y) ? l.x : l.y, s = at(u, c), t.lastInterval = e
+                      l = st(h, u, c);
+                    n = l.x, r = l.y, i = f(l.x) > f(l.y) ? l.x : l.y, s = ot(u, c), t.lastInterval = e
                   } else i = o.velocity, n = o.velocityX, r = o.velocityY, s = o.direction;
                   e.velocity = i, e.velocityX = n, e.velocityY = r, e.direction = s
                 }(i, e);
@@ -216,7 +215,7 @@
             }(t, i), t.emit("hammer.input", i), t.recognize(i), t.session.prevInput = i
         }
 
-        function rt(t) {
+        function nt(t) {
           for (var e = [], i = 0; i < t.pointers.length;) e[i] = {
             clientX: p(t.pointers[i].clientX),
             clientY: p(t.pointers[i].clientY)
@@ -224,13 +223,13 @@
           return {
             timeStamp: v(),
             pointers: e,
-            center: st(e),
+            center: rt(e),
             deltaX: t.deltaX,
             deltaY: t.deltaY
           }
         }
 
-        function st(t) {
+        function rt(t) {
           var e = t.length;
           if (1 === e) return {
             x: p(t[0].clientX),
@@ -243,31 +242,31 @@
           }
         }
 
-        function ot(t, e, i) {
+        function st(t, e, i) {
           return {
             x: e / t || 0,
             y: i / t || 0
           }
         }
 
-        function at(t, e) {
-          return t === e ? V : f(t) >= f(e) ? t < 0 ? G : B : e < 0 ? Z : $
+        function ot(t, e) {
+          return t === e ? j : f(t) >= f(e) ? t < 0 ? V : G : e < 0 ? B : Z
         }
 
-        function ht(t, e, i) {
-          i || (i = tt);
+        function at(t, e, i) {
+          i || (i = Q);
           var n = e[i[0]] - t[i[0]],
             r = e[i[1]] - t[i[1]];
           return Math.sqrt(n * n + r * r)
         }
 
-        function ut(t, e, i) {
-          i || (i = tt);
+        function ht(t, e, i) {
+          i || (i = Q);
           var n = e[i[0]] - t[i[0]],
             r = e[i[1]] - t[i[1]];
           return 180 * Math.atan2(r, n) / Math.PI
         }
-        it.prototype = {
+        et.prototype = {
           handler: function() {},
           init: function() {
             this.evEl && b(this.element, this.evEl, this.domHandler), this.evTarget && b(this.target, this.evTarget, this.domHandler), this.evWin && b(z(this.element), this.evWin, this.domHandler)
@@ -276,21 +275,21 @@
             this.evEl && C(this.element, this.evEl, this.domHandler), this.evTarget && C(this.target, this.evTarget, this.domHandler), this.evWin && C(z(this.element), this.evWin, this.domHandler)
           }
         };
-        var ct = {
+        var ut = {
             mousedown: q,
-            mousemove: H,
-            mouseup: U
+            mousemove: 2,
+            mouseup: H
           },
-          lt = "mousedown",
-          pt = "mousemove mouseup";
+          ct = "mousedown",
+          lt = "mousemove mouseup";
 
-        function ft() {
-          this.evEl = lt, this.evWin = pt, this.pressed = !1, it.apply(this, arguments)
+        function pt() {
+          this.evEl = ct, this.evWin = lt, this.pressed = !1, et.apply(this, arguments)
         }
-        _(ft, it, {
+        _(pt, et, {
           handler: function(t) {
-            var e = ct[t.type];
-            e & q && 0 === t.button && (this.pressed = !0), e & H && 1 !== t.which && (e = U), this.pressed && (e & U && (this.pressed = !1), this.callback(this.manager, e, {
+            var e = ut[t.type];
+            e & q && 0 === t.button && (this.pressed = !0), 2 & e && 1 !== t.which && (e = H), this.pressed && (e & H && (this.pressed = !1), this.callback(this.manager, e, {
               pointers: [t],
               changedPointers: [t],
               pointerType: W,
@@ -298,35 +297,35 @@
             }))
           }
         });
-        var vt = {
+        var ft = {
             pointerdown: q,
-            pointermove: H,
-            pointerup: U,
-            pointercancel: j,
-            pointerout: j
+            pointermove: 2,
+            pointerup: H,
+            pointercancel: U,
+            pointerout: U
           },
-          dt = {
+          vt = {
             2: F,
             3: "pen",
             4: W,
             5: "kinect"
           },
-          mt = "pointerdown",
-          gt = "pointermove pointerup pointercancel";
+          dt = "pointerdown",
+          mt = "pointermove pointerup pointercancel";
 
-        function yt() {
-          this.evEl = mt, this.evWin = gt, it.apply(this, arguments), this.store = this.manager.session.pointerEvents = []
+        function gt() {
+          this.evEl = dt, this.evWin = mt, et.apply(this, arguments), this.store = this.manager.session.pointerEvents = []
         }
-        r.MSPointerEvent && !r.PointerEvent && (mt = "MSPointerDown", gt = "MSPointerMove MSPointerUp MSPointerCancel"), _(yt, it, {
+        r.MSPointerEvent && !r.PointerEvent && (dt = "MSPointerDown", mt = "MSPointerMove MSPointerUp MSPointerCancel"), _(gt, et, {
           handler: function(t) {
             var e = this.store,
               i = !1,
               n = t.type.toLowerCase().replace("ms", ""),
-              r = vt[n],
-              s = dt[t.pointerType] || t.pointerType,
+              r = ft[n],
+              s = vt[t.pointerType] || t.pointerType,
               o = s == F,
               a = O(e, t.pointerId, "pointerId");
-            r & q && (0 === t.button || o) ? a < 0 && (e.push(t), a = e.length - 1) : r & (U | j) && (i = !0), a < 0 || (e[a] = t, this.callback(this.manager, r, {
+            r & q && (0 === t.button || o) ? a < 0 && (e.push(t), a = e.length - 1) : r & (H | U) && (i = !0), a < 0 || (e[a] = t, this.callback(this.manager, r, {
               pointers: e,
               changedPointers: [t],
               pointerType: s,
@@ -334,28 +333,28 @@
             }), i && e.splice(a, 1))
           }
         });
-        var Tt = {
+        var yt = {
           touchstart: q,
-          touchmove: H,
-          touchend: U,
-          touchcancel: j
+          touchmove: 2,
+          touchend: H,
+          touchcancel: U
         };
 
-        function Et() {
-          this.evTarget = "touchstart", this.evWin = "touchstart touchmove touchend touchcancel", this.started = !1, it.apply(this, arguments)
+        function Tt() {
+          this.evTarget = "touchstart", this.evWin = "touchstart touchmove touchend touchcancel", this.started = !1, et.apply(this, arguments)
         }
 
-        function _t(t, e) {
+        function Et(t, e) {
           var i = x(t.touches),
             n = x(t.changedTouches);
-          return e & (U | j) && (i = R(i.concat(n), "identifier", !0)), [i, n]
+          return e & (H | U) && (i = R(i.concat(n), "identifier", !0)), [i, n]
         }
-        _(Et, it, {
+        _(Tt, et, {
           handler: function(t) {
-            var e = Tt[t.type];
+            var e = yt[t.type];
             if (e === q && (this.started = !0), this.started) {
-              var i = _t.call(this, t, e);
-              e & (U | j) && i[0].length - i[1].length == 0 && (this.started = !1), this.callback(this.manager, e, {
+              var i = Et.call(this, t, e);
+              e & (H | U) && i[0].length - i[1].length == 0 && (this.started = !1), this.callback(this.manager, e, {
                 pointers: i[0],
                 changedPointers: i[1],
                 pointerType: F,
@@ -364,22 +363,22 @@
             }
           }
         });
-        var It = {
+        var _t = {
             touchstart: q,
-            touchmove: H,
-            touchend: U,
-            touchcancel: j
+            touchmove: 2,
+            touchend: H,
+            touchcancel: U
           },
-          At = "touchstart touchmove touchend touchcancel";
+          It = "touchstart touchmove touchend touchcancel";
 
-        function St() {
-          this.evTarget = At, this.targetIds = {}, it.apply(this, arguments)
+        function At() {
+          this.evTarget = It, this.targetIds = {}, et.apply(this, arguments)
         }
 
-        function bt(t, e) {
+        function St(t, e) {
           var i = x(t.touches),
             n = this.targetIds;
-          if (e & (q | H) && 1 === i.length) return n[i[0].identifier] = !0, [i, i];
+          if (e & (2 | q) && 1 === i.length) return n[i[0].identifier] = !0, [i, i];
           var r, s, o = x(t.changedTouches),
             a = [],
             h = this.target;
@@ -387,13 +386,13 @@
               return P(t.target, h)
             })), e === q)
             for (r = 0; r < s.length;) n[s[r].identifier] = !0, r++;
-          for (r = 0; r < o.length;) n[o[r].identifier] && a.push(o[r]), e & (U | j) && delete n[o[r].identifier], r++;
+          for (r = 0; r < o.length;) n[o[r].identifier] && a.push(o[r]), e & (H | U) && delete n[o[r].identifier], r++;
           return a.length ? [R(s.concat(a), "identifier", !0), a] : void 0
         }
-        _(St, it, {
+        _(At, et, {
           handler: function(t) {
-            var e = It[t.type],
-              i = bt.call(this, t, e);
+            var e = _t[t.type],
+              i = St.call(this, t, e);
             i && this.callback(this.manager, e, {
               pointers: i[0],
               changedPointers: i[1],
@@ -402,19 +401,19 @@
             })
           }
         });
-        var Ct = 2500;
+        var bt = 2500;
 
-        function Pt() {
-          it.apply(this, arguments);
+        function Ct() {
+          et.apply(this, arguments);
           var t = I(this.handler, this);
-          this.touch = new St(this.manager, t), this.mouse = new ft(this.manager, t), this.primaryTouch = null, this.lastTouches = []
+          this.touch = new At(this.manager, t), this.mouse = new pt(this.manager, t), this.primaryTouch = null, this.lastTouches = []
         }
 
-        function Dt(t, e) {
-          t & q ? (this.primaryTouch = e.changedPointers[0].identifier, wt.call(this, e)) : t & (U | j) && wt.call(this, e)
+        function Pt(t, e) {
+          t & q ? (this.primaryTouch = e.changedPointers[0].identifier, Dt.call(this, e)) : t & (H | U) && Dt.call(this, e)
         }
 
-        function wt(t) {
+        function Dt(t) {
           var e = t.changedPointers[0];
           if (e.identifier === this.primaryTouch) {
             var i = {
@@ -426,11 +425,11 @@
             setTimeout((function() {
               var t = n.indexOf(i);
               t > -1 && n.splice(t, 1)
-            }), Ct)
+            }), bt)
           }
         }
 
-        function Ot(t) {
+        function wt(t) {
           for (var e = t.srcEvent.clientX, i = t.srcEvent.clientY, n = 0; n < this.lastTouches.length; n++) {
             var r = this.lastTouches[n],
               s = Math.abs(e - r.x),
@@ -439,13 +438,13 @@
           }
           return !1
         }
-        _(Pt, it, {
+        _(Ct, et, {
           handler: function(t, e, i) {
             var n = i.pointerType == F,
               r = i.pointerType == W;
             if (!(r && i.sourceCapabilities && i.sourceCapabilities.firesTouchEvents)) {
-              if (n) Dt.call(this, e, i);
-              else if (r && Ot.call(this, i)) return;
+              if (n) Pt.call(this, e, i);
+              else if (r && wt.call(this, i)) return;
               this.callback(t, e, i)
             }
           },
@@ -453,16 +452,16 @@
             this.touch.destroy(), this.mouse.destroy()
           }
         });
-        var xt = M(c.style, "touchAction"),
-          Rt = xt !== a,
-          Mt = "compute",
-          Nt = "auto",
-          zt = "manipulation",
-          Yt = "none",
-          Xt = "pan-x",
-          kt = "pan-y",
-          Ft = function() {
-            if (!Rt) return !1;
+        var Ot = M(c.style, "touchAction"),
+          xt = Ot !== a,
+          Rt = "compute",
+          Mt = "auto",
+          Nt = "manipulation",
+          zt = "none",
+          Yt = "pan-x",
+          Xt = "pan-y",
+          kt = function() {
+            if (!xt) return !1;
             var t = {},
               e = r.CSS && r.CSS.supports;
             return ["auto", "manipulation", "pan-y", "pan-x", "pan-x pan-y", "none"].forEach((function(i) {
@@ -470,12 +469,12 @@
             })), t
           }();
 
-        function Wt(t, e) {
+        function Ft(t, e) {
           this.manager = t, this.set(e)
         }
-        Wt.prototype = {
+        Ft.prototype = {
           set: function(t) {
-            t == Mt && (t = this.compute()), Rt && this.manager.element.style && Ft[t] && (this.manager.element.style[xt] = t), this.actions = t.toLowerCase().trim()
+            t == Rt && (t = this.compute()), xt && this.manager.element.style && kt[t] && (this.manager.element.style[Ot] = t), this.actions = t.toLowerCase().trim()
           },
           update: function() {
             this.set(this.manager.options.touchAction)
@@ -486,10 +485,10 @@
                 A(e.options.enable, [e]) && (t = t.concat(e.getTouchAction()))
               })),
               function(t) {
-                if (D(t, Yt)) return Yt;
-                var e = D(t, Xt),
-                  i = D(t, kt);
-                return e && i ? Yt : e || i ? e ? Xt : kt : D(t, zt) ? zt : Nt
+                if (D(t, zt)) return zt;
+                var e = D(t, Yt),
+                  i = D(t, Xt);
+                return e && i ? zt : e || i ? e ? Yt : Xt : D(t, Nt) ? Nt : Mt
               }(t.join(" "))
           },
           preventDefaults: function(t) {
@@ -498,93 +497,88 @@
             if (this.manager.session.prevented) e.preventDefault();
             else {
               var n = this.actions,
-                r = D(n, Yt) && !Ft[Yt],
-                s = D(n, kt) && !Ft[kt],
-                o = D(n, Xt) && !Ft[Xt];
+                r = D(n, zt) && !kt[zt],
+                s = D(n, Xt) && !kt[Xt],
+                o = D(n, Yt) && !kt[Yt];
               if (r) {
                 var a = 1 === t.pointers.length,
                   h = t.distance < 2,
                   u = t.deltaTime < 250;
                 if (a && h && u) return
               }
-              if (!o || !s) return r || s && i & J || o && i & K ? this.preventSrc(e) : void 0
+              if (!o || !s) return r || s && i & $ || o && i & J ? this.preventSrc(e) : void 0
             }
           },
           preventSrc: function(t) {
             this.manager.session.prevented = !0, t.preventDefault()
           }
         };
-        var Lt = 1,
-          qt = 2,
-          Ht = 4,
-          Ut = 8,
-          jt = Ut,
-          Vt = 16,
-          Gt = 32;
+        var Wt = 1,
+          Lt = 32;
 
-        function Bt(t) {
-          this.options = h({}, this.defaults, t || {}), this.id = N++, this.manager = null, this.options.enable = S(this.options.enable, !0), this.state = Lt, this.simultaneous = {}, this.requireFail = []
+        function qt(t) {
+          this.options = h({}, this.defaults, t || {}), this.id = N++, this.manager = null, this.options.enable = S(this.options.enable, !0), this.state = Wt, this.simultaneous = {}, this.requireFail = []
         }
 
-        function Zt(t) {
-          return t & Vt ? "cancel" : t & Ut ? "end" : t & Ht ? "move" : t & qt ? "start" : ""
+        function Ht(t) {
+          return 16 & t ? "cancel" : 8 & t ? "end" : 4 & t ? "move" : 2 & t ? "start" : ""
         }
 
-        function $t(t) {
-          return t == $ ? "down" : t == Z ? "up" : t == G ? "left" : t == B ? "right" : ""
+        function Ut(t) {
+          return t == Z ? "down" : t == B ? "up" : t == V ? "left" : t == G ? "right" : ""
         }
 
-        function Jt(t, e) {
+        function jt(t, e) {
           var i = e.manager;
           return i ? i.get(t) : t
         }
 
+        function Vt() {
+          qt.apply(this, arguments)
+        }
+
+        function Gt() {
+          Vt.apply(this, arguments), this.pX = null, this.pY = null
+        }
+
+        function Bt() {
+          Vt.apply(this, arguments)
+        }
+
+        function Zt() {
+          qt.apply(this, arguments), this._timer = null, this._input = null
+        }
+
+        function $t() {
+          Vt.apply(this, arguments)
+        }
+
+        function Jt() {
+          Vt.apply(this, arguments)
+        }
+
         function Kt() {
-          Bt.apply(this, arguments)
+          qt.apply(this, arguments), this.pTime = !1, this.pCenter = !1, this._timer = null, this._input = null, this.count = 0
         }
 
-        function Qt() {
-          Kt.apply(this, arguments), this.pX = null, this.pY = null
+        function Qt(t, e) {
+          return (e = e || {}).recognizers = S(e.recognizers, Qt.defaults.preset), new te(t, e)
         }
 
-        function te() {
-          Kt.apply(this, arguments)
-        }
-
-        function ee() {
-          Bt.apply(this, arguments), this._timer = null, this._input = null
-        }
-
-        function ie() {
-          Kt.apply(this, arguments)
-        }
-
-        function ne() {
-          Kt.apply(this, arguments)
-        }
-
-        function re() {
-          Bt.apply(this, arguments), this.pTime = !1, this.pCenter = !1, this._timer = null, this._input = null, this.count = 0
-        }
-
-        function se(t, e) {
-          return (e = e || {}).recognizers = S(e.recognizers, se.defaults.preset), new oe(t, e)
-        }
-
-        function oe(t, e) {
-          this.options = h({}, se.defaults, e || {}), this.options.inputTarget = this.options.inputTarget || t, this.handlers = {}, this.session = {}, this.recognizers = [], this.oldCssProps = {}, this.element = t, this.input = new(this.options.inputClass || (X ? yt : k ? St : Y ? Pt : ft))(this, nt), this.touchAction = new Wt(this, this.options.touchAction), ae(this, !0), g(this.options.recognizers, (function(t) {
+        function te(t, e) {
+          this.options = h({}, Qt.defaults, e || {}), this.options.inputTarget = this.options.inputTarget || t, this.handlers = {}, this.session = {}, this.recognizers = [], this.oldCssProps = {}, this.element = t, this.input = new(this.options.inputClass || (X ? gt : k ? At : Y ? Ct : pt))(this, it), this.touchAction = new Ft(this, this.options.touchAction), ee(this, !0), g(this.options.recognizers, (function(t) {
             var e = this.add(new t[0](t[1]));
             t[2] && e.recognizeWith(t[2]), t[3] && e.requireFailure(t[3])
           }), this)
         }
 
-        function ae(t, e) {
+        function ee(t, e) {
           var i, n = t.element;
           n.style && (g(t.options.cssProps, (function(r, s) {
             i = M(n.style, s), e ? (t.oldCssProps[i] = n.style[i], n.style[i] = r) : n.style[i] = t.oldCssProps[i] || ""
           })), e || (t.oldCssProps = {}))
         }
-        Bt.prototype = {
+        qt.prototype = {
           defaults: {},
           set: function(t) {
             return h(this.options, t), this.manager && this.manager.touchAction.update(), this
@@ -592,19 +586,19 @@
           recognizeWith: function(t) {
             if (m(t, "recognizeWith", this)) return this;
             var e = this.simultaneous;
-            return e[(t = Jt(t, this)).id] || (e[t.id] = t, t.recognizeWith(this)), this
+            return e[(t = jt(t, this)).id] || (e[t.id] = t, t.recognizeWith(this)), this
           },
           dropRecognizeWith: function(t) {
-            return m(t, "dropRecognizeWith", this) || (t = Jt(t, this), delete this.simultaneous[t.id]), this
+            return m(t, "dropRecognizeWith", this) || (t = jt(t, this), delete this.simultaneous[t.id]), this
           },
           requireFailure: function(t) {
             if (m(t, "requireFailure", this)) return this;
             var e = this.requireFail;
-            return -1 === O(e, t = Jt(t, this)) && (e.push(t), t.requireFailure(this)), this
+            return -1 === O(e, t = jt(t, this)) && (e.push(t), t.requireFailure(this)), this
           },
           dropRequireFailure: function(t) {
             if (m(t, "dropRequireFailure", this)) return this;
-            t = Jt(t, this);
+            t = jt(t, this);
             var e = O(this.requireFail, t);
             return e > -1 && this.requireFail.splice(e, 1), this
           },
@@ -621,28 +615,28 @@
             function n(i) {
               e.manager.emit(i, t)
             }
-            i < Ut && n(e.options.event + Zt(i)), n(e.options.event), t.additionalEvent && n(t.additionalEvent), i >= Ut && n(e.options.event + Zt(i))
+            i < 8 && n(e.options.event + Ht(i)), n(e.options.event), t.additionalEvent && n(t.additionalEvent), i >= 8 && n(e.options.event + Ht(i))
           },
           tryEmit: function(t) {
             if (this.canEmit()) return this.emit(t);
-            this.state = Gt
+            this.state = Lt
           },
           canEmit: function() {
             for (var t = 0; t < this.requireFail.length;) {
-              if (!(this.requireFail[t].state & (Gt | Lt))) return !1;
+              if (!(this.requireFail[t].state & (Lt | Wt))) return !1;
               t++
             }
             return !0
           },
           recognize: function(t) {
             var e = h({}, t);
-            if (!A(this.options.enable, [this, e])) return this.reset(), void(this.state = Gt);
-            this.state & (jt | Vt | Gt) && (this.state = Lt), this.state = this.process(e), this.state & (qt | Ht | Ut | Vt) && this.tryEmit(e)
+            if (!A(this.options.enable, [this, e])) return this.reset(), void(this.state = Lt);
+            56 & this.state && (this.state = Wt), this.state = this.process(e), 30 & this.state && this.tryEmit(e)
           },
           process: function(t) {},
           getTouchAction: function() {},
           reset: function() {}
-        }, _(Kt, Bt, {
+        }, _(Vt, qt, {
           defaults: {
             pointers: 1
           },
@@ -653,21 +647,21 @@
           process: function(t) {
             var e = this.state,
               i = t.eventType,
-              n = e & (qt | Ht),
+              n = 6 & e,
               r = this.attrTest(t);
-            return n && (i & j || !r) ? e | Vt : n || r ? i & U ? e | Ut : e & qt ? e | Ht : qt : Gt
+            return n && (i & U || !r) ? 16 | e : n || r ? i & H ? 8 | e : 2 & e ? 4 | e : 2 : Lt
           }
-        }), _(Qt, Kt, {
+        }), _(Gt, Vt, {
           defaults: {
             event: "pan",
             threshold: 10,
             pointers: 1,
-            direction: Q
+            direction: K
           },
           getTouchAction: function() {
             var t = this.options.direction,
               e = [];
-            return t & J && e.push(kt), t & K && e.push(Xt), e
+            return t & $ && e.push(Xt), t & J && e.push(Yt), e
           },
           directionTest: function(t) {
             var e = this.options,
@@ -676,27 +670,27 @@
               r = t.direction,
               s = t.deltaX,
               o = t.deltaY;
-            return r & e.direction || (e.direction & J ? (r = 0 === s ? V : s < 0 ? G : B, i = s != this.pX, n = Math.abs(t.deltaX)) : (r = 0 === o ? V : o < 0 ? Z : $, i = o != this.pY, n = Math.abs(t.deltaY))), t.direction = r, i && n > e.threshold && r & e.direction
+            return r & e.direction || (e.direction & $ ? (r = 0 === s ? j : s < 0 ? V : G, i = s != this.pX, n = Math.abs(t.deltaX)) : (r = 0 === o ? j : o < 0 ? B : Z, i = o != this.pY, n = Math.abs(t.deltaY))), t.direction = r, i && n > e.threshold && r & e.direction
           },
           attrTest: function(t) {
-            return Kt.prototype.attrTest.call(this, t) && (this.state & qt || !(this.state & qt) && this.directionTest(t))
+            return Vt.prototype.attrTest.call(this, t) && (2 & this.state || !(2 & this.state) && this.directionTest(t))
           },
           emit: function(t) {
             this.pX = t.deltaX, this.pY = t.deltaY;
-            var e = $t(t.direction);
+            var e = Ut(t.direction);
             e && (t.additionalEvent = this.options.event + e), this._super.emit.call(this, t)
           }
-        }), _(te, Kt, {
+        }), _(Bt, Vt, {
           defaults: {
             event: "pinch",
             threshold: 0,
             pointers: 2
           },
           getTouchAction: function() {
-            return [Yt]
+            return [zt]
           },
           attrTest: function(t) {
-            return this._super.attrTest.call(this, t) && (Math.abs(t.scale - 1) > this.options.threshold || this.state & qt)
+            return this._super.attrTest.call(this, t) && (Math.abs(t.scale - 1) > this.options.threshold || 2 & this.state)
           },
           emit: function(t) {
             if (1 !== t.scale) {
@@ -705,7 +699,7 @@
             }
             this._super.emit.call(this, t)
           }
-        }), _(ee, Bt, {
+        }), _(Zt, qt, {
           defaults: {
             event: "press",
             pointers: 1,
@@ -713,58 +707,58 @@
             threshold: 9
           },
           getTouchAction: function() {
-            return [Nt]
+            return [Mt]
           },
           process: function(t) {
             var e = this.options,
               i = t.pointers.length === e.pointers,
               n = t.distance < e.threshold,
               r = t.deltaTime > e.time;
-            if (this._input = t, !n || !i || t.eventType & (U | j) && !r) this.reset();
+            if (this._input = t, !n || !i || t.eventType & (H | U) && !r) this.reset();
             else if (t.eventType & q) this.reset(), this._timer = d((function() {
-              this.state = jt, this.tryEmit()
+              this.state = 8, this.tryEmit()
             }), e.time, this);
-            else if (t.eventType & U) return jt;
-            return Gt
+            else if (t.eventType & H) return 8;
+            return Lt
           },
           reset: function() {
             clearTimeout(this._timer)
           },
           emit: function(t) {
-            this.state === jt && (t && t.eventType & U ? this.manager.emit(this.options.event + "up", t) : (this._input.timeStamp = v(), this.manager.emit(this.options.event, this._input)))
+            8 === this.state && (t && t.eventType & H ? this.manager.emit(this.options.event + "up", t) : (this._input.timeStamp = v(), this.manager.emit(this.options.event, this._input)))
           }
-        }), _(ie, Kt, {
+        }), _($t, Vt, {
           defaults: {
             event: "rotate",
             threshold: 0,
             pointers: 2
           },
           getTouchAction: function() {
-            return [Yt]
+            return [zt]
           },
           attrTest: function(t) {
-            return this._super.attrTest.call(this, t) && (Math.abs(t.rotation) > this.options.threshold || this.state & qt)
+            return this._super.attrTest.call(this, t) && (Math.abs(t.rotation) > this.options.threshold || 2 & this.state)
           }
-        }), _(ne, Kt, {
+        }), _(Jt, Vt, {
           defaults: {
             event: "swipe",
             threshold: 10,
             velocity: .3,
-            direction: J | K,
+            direction: $ | J,
             pointers: 1
           },
           getTouchAction: function() {
-            return Qt.prototype.getTouchAction.call(this)
+            return Gt.prototype.getTouchAction.call(this)
           },
           attrTest: function(t) {
             var e, i = this.options.direction;
-            return i & (J | K) ? e = t.overallVelocity : i & J ? e = t.overallVelocityX : i & K && (e = t.overallVelocityY), this._super.attrTest.call(this, t) && i & t.offsetDirection && t.distance > this.options.threshold && t.maxPointers == this.options.pointers && f(e) > this.options.velocity && t.eventType & U
+            return i & ($ | J) ? e = t.overallVelocity : i & $ ? e = t.overallVelocityX : i & J && (e = t.overallVelocityY), this._super.attrTest.call(this, t) && i & t.offsetDirection && t.distance > this.options.threshold && t.maxPointers == this.options.pointers && f(e) > this.options.velocity && t.eventType & H
           },
           emit: function(t) {
-            var e = $t(t.offsetDirection);
+            var e = Ut(t.offsetDirection);
             e && this.manager.emit(this.options.event + e, t), this.manager.emit(this.options.event, t)
           }
-        }), _(re, Bt, {
+        }), _(Kt, qt, {
           defaults: {
             event: "tap",
             pointers: 1,
@@ -775,7 +769,7 @@
             posThreshold: 10
           },
           getTouchAction: function() {
-            return [zt]
+            return [Nt]
           },
           process: function(t) {
             var e = this.options,
@@ -784,57 +778,57 @@
               r = t.deltaTime < e.time;
             if (this.reset(), t.eventType & q && 0 === this.count) return this.failTimeout();
             if (n && r && i) {
-              if (t.eventType != U) return this.failTimeout();
+              if (t.eventType != H) return this.failTimeout();
               var s = !this.pTime || t.timeStamp - this.pTime < e.interval,
-                o = !this.pCenter || ht(this.pCenter, t.center) < e.posThreshold;
+                o = !this.pCenter || at(this.pCenter, t.center) < e.posThreshold;
               if (this.pTime = t.timeStamp, this.pCenter = t.center, o && s ? this.count += 1 : this.count = 1, this._input = t, 0 == this.count % e.taps) return this.hasRequireFailures() ? (this._timer = d((function() {
-                this.state = jt, this.tryEmit()
-              }), e.interval, this), qt) : jt
+                this.state = 8, this.tryEmit()
+              }), e.interval, this), 2) : 8
             }
-            return Gt
+            return Lt
           },
           failTimeout: function() {
             return this._timer = d((function() {
-              this.state = Gt
-            }), this.options.interval, this), Gt
+              this.state = Lt
+            }), this.options.interval, this), Lt
           },
           reset: function() {
             clearTimeout(this._timer)
           },
           emit: function() {
-            this.state == jt && (this._input.tapCount = this.count, this.manager.emit(this.options.event, this._input))
+            8 == this.state && (this._input.tapCount = this.count, this.manager.emit(this.options.event, this._input))
           }
-        }), se.VERSION = "2.0.7", se.defaults = {
+        }), Qt.VERSION = "2.0.7", Qt.defaults = {
           domEvents: !1,
-          touchAction: Mt,
+          touchAction: Rt,
           enable: !0,
           inputTarget: null,
           inputClass: null,
           preset: [
-            [ie, {
+            [$t, {
               enable: !1
             }],
-            [te, {
+            [Bt, {
                 enable: !1
               },
               ["rotate"]
             ],
-            [ne, {
-              direction: J
+            [Jt, {
+              direction: $
             }],
-            [Qt, {
-                direction: J
+            [Gt, {
+                direction: $
               },
               ["swipe"]
             ],
-            [re],
-            [re, {
+            [Kt],
+            [Kt, {
                 event: "doubletap",
                 taps: 2
               },
               ["tap"]
             ],
-            [ee]
+            [Zt]
           ],
           cssProps: {
             userSelect: "none",
@@ -844,7 +838,7 @@
             userDrag: "none",
             tapHighlightColor: "rgba(0,0,0,0)"
           }
-        }, oe.prototype = {
+        }, te.prototype = {
           set: function(t) {
             return h(this.options, t), t.touchAction && this.touchAction.update(), t.inputTarget && (this.input.destroy(), this.input.target = t.inputTarget, this.input.init()), this
           },
@@ -858,12 +852,12 @@
               this.touchAction.preventDefaults(t);
               var n = this.recognizers,
                 r = e.curRecognizer;
-              (!r || r && r.state & jt) && (r = e.curRecognizer = null);
-              for (var s = 0; s < n.length;) i = n[s], 2 === e.stopped || r && i != r && !i.canRecognizeWith(r) ? i.reset() : i.recognize(t), !r && i.state & (qt | Ht | Ut) && (r = e.curRecognizer = i), s++
+              (!r || r && 8 & r.state) && (r = e.curRecognizer = null);
+              for (var s = 0; s < n.length;) i = n[s], 2 === e.stopped || r && i != r && !i.canRecognizeWith(r) ? i.reset() : i.recognize(t), !r && 14 & i.state && (r = e.curRecognizer = i), s++
             }
           },
           get: function(t) {
-            if (t instanceof Bt) return t;
+            if (t instanceof qt) return t;
             for (var e = this.recognizers, i = 0; i < e.length; i++)
               if (e[i].options.event == t) return e[i];
             return null
@@ -911,44 +905,44 @@
             }
           },
           destroy: function() {
-            this.element && ae(this, !1), this.handlers = {}, this.session = {}, this.input.destroy(), this.element = null
+            this.element && ee(this, !1), this.handlers = {}, this.session = {}, this.input.destroy(), this.element = null
           }
-        }, h(se, {
+        }, h(Qt, {
           INPUT_START: q,
-          INPUT_MOVE: H,
-          INPUT_END: U,
-          INPUT_CANCEL: j,
-          STATE_POSSIBLE: Lt,
-          STATE_BEGAN: qt,
-          STATE_CHANGED: Ht,
-          STATE_ENDED: Ut,
-          STATE_RECOGNIZED: jt,
-          STATE_CANCELLED: Vt,
-          STATE_FAILED: Gt,
-          DIRECTION_NONE: V,
-          DIRECTION_LEFT: G,
-          DIRECTION_RIGHT: B,
-          DIRECTION_UP: Z,
-          DIRECTION_DOWN: $,
-          DIRECTION_HORIZONTAL: J,
-          DIRECTION_VERTICAL: K,
-          DIRECTION_ALL: Q,
-          Manager: oe,
-          Input: it,
-          TouchAction: Wt,
-          TouchInput: St,
-          MouseInput: ft,
-          PointerEventInput: yt,
-          TouchMouseInput: Pt,
-          SingleTouchInput: Et,
-          Recognizer: Bt,
-          AttrRecognizer: Kt,
-          Tap: re,
-          Pan: Qt,
-          Swipe: ne,
-          Pinch: te,
-          Rotate: ie,
-          Press: ee,
+          INPUT_MOVE: 2,
+          INPUT_END: H,
+          INPUT_CANCEL: U,
+          STATE_POSSIBLE: Wt,
+          STATE_BEGAN: 2,
+          STATE_CHANGED: 4,
+          STATE_ENDED: 8,
+          STATE_RECOGNIZED: 8,
+          STATE_CANCELLED: 16,
+          STATE_FAILED: Lt,
+          DIRECTION_NONE: j,
+          DIRECTION_LEFT: V,
+          DIRECTION_RIGHT: G,
+          DIRECTION_UP: B,
+          DIRECTION_DOWN: Z,
+          DIRECTION_HORIZONTAL: $,
+          DIRECTION_VERTICAL: J,
+          DIRECTION_ALL: K,
+          Manager: te,
+          Input: et,
+          TouchAction: Ft,
+          TouchInput: At,
+          MouseInput: pt,
+          PointerEventInput: gt,
+          TouchMouseInput: Ct,
+          SingleTouchInput: Tt,
+          Recognizer: qt,
+          AttrRecognizer: Vt,
+          Tap: Kt,
+          Pan: Gt,
+          Swipe: Jt,
+          Pinch: Bt,
+          Rotate: $t,
+          Press: Zt,
           on: b,
           off: C,
           each: g,
@@ -958,12 +952,12 @@
           inherit: _,
           bindFn: I,
           prefixed: M
-        }), (void 0 !== r ? r : "undefined" != typeof self ? self : {}).Hammer = se, (n = function() {
-          return se
+        }), (void 0 !== r ? r : "undefined" != typeof self ? self : {}).Hammer = Qt, (n = function() {
+          return Qt
         }.call(e, i, e, t)) === a || (t.exports = n)
       }(window, document)
     },
-    3970: (t, e, i) => {
+    6162: (t, e, i) => {
       "use strict";
       var n = i(4932),
         r = Symbol.for("react.element"),
@@ -995,9 +989,9 @@
       }
       e.Fragment = s, e.jsx = u, e.jsxs = u
     },
-    6160: (t, e, i) => {
+    9817: (t, e, i) => {
       "use strict";
-      t.exports = i(3970)
+      t.exports = i(6162)
     }
   }
 ]);

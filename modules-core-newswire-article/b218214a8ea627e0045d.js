@@ -1,14 +1,14 @@
-/*! For license information please see 278f1cdcf588d5ab8f85.js.LICENSE.txt */
+/*! For license information please see b218214a8ea627e0045d.js.LICENSE.txt */
 "use strict";
-(self.webpackChunk_rockstargames_sites_red_dead_online = self.webpackChunk_rockstargames_sites_red_dead_online || []).push([
-  [252], {
-    8401: (e, t) => {
+(self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
+  [266], {
+    849: (e, t) => {
       var r = Symbol.for("react.element"),
         n = Symbol.for("react.portal"),
         o = Symbol.for("react.fragment"),
         u = Symbol.for("react.strict_mode"),
-        a = Symbol.for("react.profiler"),
-        c = Symbol.for("react.provider"),
+        c = Symbol.for("react.profiler"),
+        a = Symbol.for("react.provider"),
         i = Symbol.for("react.context"),
         f = Symbol.for("react.forward_ref"),
         s = Symbol.for("react.suspense"),
@@ -43,8 +43,8 @@
       }, b.prototype = m.prototype;
       var S = v.prototype = new b;
       S.constructor = v, _(S, m.prototype), S.isPureReactComponent = !0;
-      var k = Array.isArray,
-        w = Object.prototype.hasOwnProperty,
+      var w = Array.isArray,
+        k = Object.prototype.hasOwnProperty,
         E = {
           current: null
         },
@@ -57,10 +57,10 @@
 
       function R(e, t, n) {
         var o, u = {},
-          a = null,
-          c = null;
+          c = null,
+          a = null;
         if (null != t)
-          for (o in void 0 !== t.ref && (c = t.ref), void 0 !== t.key && (a = "" + t.key), t) w.call(t, o) && !$.hasOwnProperty(o) && (u[o] = t[o]);
+          for (o in void 0 !== t.ref && (a = t.ref), void 0 !== t.key && (c = "" + t.key), t) k.call(t, o) && !$.hasOwnProperty(o) && (u[o] = t[o]);
         var i = arguments.length - 2;
         if (1 === i) u.children = n;
         else if (1 < i) {
@@ -72,8 +72,8 @@
         return {
           $$typeof: r,
           type: e,
-          key: a,
-          ref: c,
+          key: c,
+          ref: a,
           props: u,
           _owner: E.current
         }
@@ -96,12 +96,12 @@
         }("" + e.key) : t.toString(36)
       }
 
-      function O(e, t, o, u, a) {
-        var c = typeof e;
-        "undefined" !== c && "boolean" !== c || (e = null);
+      function O(e, t, o, u, c) {
+        var a = typeof e;
+        "undefined" !== a && "boolean" !== a || (e = null);
         var i = !1;
         if (null === e) i = !0;
-        else switch (c) {
+        else switch (a) {
           case "string":
           case "number":
             i = !0;
@@ -113,9 +113,9 @@
                 i = !0
             }
         }
-        if (i) return a = a(i = e), e = "" === u ? "." + j(i, 0) : u, k(a) ? (o = "", null != e && (o = e.replace(g, "$&/") + "/"), O(a, t, o, "", (function(e) {
+        if (i) return c = c(i = e), e = "" === u ? "." + j(i, 0) : u, w(c) ? (o = "", null != e && (o = e.replace(g, "$&/") + "/"), O(c, t, o, "", (function(e) {
           return e
-        }))) : null != a && (C(a) && (a = function(e, t) {
+        }))) : null != c && (C(c) && (c = function(e, t) {
           return {
             $$typeof: r,
             type: e.type,
@@ -124,16 +124,16 @@
             props: e.props,
             _owner: e._owner
           }
-        }(a, o + (!a.key || i && i.key === a.key ? "" : ("" + a.key).replace(g, "$&/") + "/") + e)), t.push(a)), 1;
-        if (i = 0, u = "" === u ? "." : u + ":", k(e))
+        }(c, o + (!c.key || i && i.key === c.key ? "" : ("" + c.key).replace(g, "$&/") + "/") + e)), t.push(c)), 1;
+        if (i = 0, u = "" === u ? "." : u + ":", w(e))
           for (var f = 0; f < e.length; f++) {
-            var s = u + j(c = e[f], f);
-            i += O(c, t, o, s, a)
+            var s = u + j(a = e[f], f);
+            i += O(a, t, o, s, c)
           } else if (s = function(e) {
               return null === e || "object" != typeof e ? null : "function" == typeof(e = y && e[y] || e["@@iterator"]) ? e : null
             }(e), "function" == typeof s)
-            for (e = s.call(e), f = 0; !(c = e.next()).done;) i += O(c = c.value, t, o, s = u + j(c, f++), a);
-          else if ("object" === c) throw t = String(e), Error("Objects are not valid as a React child (found: " + ("[object Object]" === t ? "object with keys {" + Object.keys(e).join(", ") + "}" : t) + "). If you meant to render a collection of children, use an array instead.");
+            for (e = s.call(e), f = 0; !(a = e.next()).done;) i += O(a = a.value, t, o, s = u + j(a, f++), c);
+          else if ("object" === a) throw t = String(e), Error("Objects are not valid as a React child (found: " + ("[object Object]" === t ? "object with keys {" + Object.keys(e).join(", ") + "}" : t) + "). If you meant to render a collection of children, use an array instead.");
         return i
       }
 
@@ -191,15 +191,15 @@
           if (!C(e)) throw Error("React.Children.only expected to receive a single React element child.");
           return e
         }
-      }, t.Component = m, t.Fragment = o, t.Profiler = a, t.PureComponent = v, t.StrictMode = u, t.Suspense = s, t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = V, t.cloneElement = function(e, t, n) {
+      }, t.Component = m, t.Fragment = o, t.Profiler = c, t.PureComponent = v, t.StrictMode = u, t.Suspense = s, t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = V, t.cloneElement = function(e, t, n) {
         if (null == e) throw Error("React.cloneElement(...): The argument must be a React element, but you passed " + e + ".");
         var o = _({}, e.props),
           u = e.key,
-          a = e.ref,
-          c = e._owner;
+          c = e.ref,
+          a = e._owner;
         if (null != t) {
-          if (void 0 !== t.ref && (a = t.ref, c = E.current), void 0 !== t.key && (u = "" + t.key), e.type && e.type.defaultProps) var i = e.type.defaultProps;
-          for (f in t) w.call(t, f) && !$.hasOwnProperty(f) && (o[f] = void 0 === t[f] && void 0 !== i ? i[f] : t[f])
+          if (void 0 !== t.ref && (c = t.ref, a = E.current), void 0 !== t.key && (u = "" + t.key), e.type && e.type.defaultProps) var i = e.type.defaultProps;
+          for (f in t) k.call(t, f) && !$.hasOwnProperty(f) && (o[f] = void 0 === t[f] && void 0 !== i ? i[f] : t[f])
         }
         var f = arguments.length - 2;
         if (1 === f) o.children = n;
@@ -212,9 +212,9 @@
           $$typeof: r,
           type: e.type,
           key: u,
-          ref: a,
+          ref: c,
           props: o,
-          _owner: c
+          _owner: a
         }
       }, t.createContext = function(e) {
         return (e = {
@@ -227,7 +227,7 @@
           _defaultValue: null,
           _globalName: null
         }).Provider = {
-          $$typeof: c,
+          $$typeof: a,
           _context: e
         }, e.Consumer = e
       }, t.createElement = R, t.createFactory = function(e) {
@@ -297,8 +297,8 @@
         return I.current.useTransition()
       }, t.version = "18.2.0"
     },
-    8252: (e, t, r) => {
-      e.exports = r(8401)
+    9266: (e, t, r) => {
+      e.exports = r(849)
     }
   }
 ]);

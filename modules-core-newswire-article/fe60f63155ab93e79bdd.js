@@ -1,52 +1,52 @@
 (self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
-  [975], {
-    1765: (e, a, i) => {
+  [879], {
+    4378: (e, a, i) => {
       "use strict";
       i.r(a), i.d(a, {
-        default: () => r
+        default: () => l
       });
       var n = i(8976),
         s = i(9542),
         t = i(9929);
       const d = {
-        title: "a6afed00140449f9adb8c90b39b6855c758d",
-        main: "a6afed00140449f9b71b10432f44c16d125f",
-        breadcrumbs: "a6afed00140449f9c2bf1c67c354c461aa89"
+        title: "_1c6c5e2e5850fea8adb8c90b39b6855c758d",
+        main: "_1c6c5e2e5850fea8b71b10432f44c16d125f",
+        breadcrumbs: "_1c6c5e2e5850fea8c2bf1c67c354c461aa89"
       };
-      var l = i(6160);
-      const r = (0, t.withTranslations)((e => {
+      var c = i(9817);
+      const l = (0, t.withTranslations)((e => {
         let {
           children: a,
           intro: i,
-          image: r = {},
-          style: o = {},
-          t: c,
+          image: l = {},
+          style: r = {},
+          t: o,
           className: m = "",
-          variant: f = null
-        } = e, u = {};
-        void 0 !== o.toggleInvertSeparator && (u = {
-          "--breadcrumb-separator-filter-invert": o.toggleInvertSeparator ? "invert(0)" : "invert(1)"
+          variant: u = null
+        } = e, f = {};
+        void 0 !== r.toggleInvertSeparator && (f = {
+          "--breadcrumb-separator-filter-invert": r.toggleInvertSeparator ? "invert(0)" : "invert(1)"
         });
         const g = (0, t.useNewswirePost)(),
           p = {},
           v = p?.meta?.title ?? g?.title,
           h = p?.meta?.subtitle ?? g?.subtitle,
-          b = h ? (0, l.jsx)("h3", {
+          b = h ? (0, c.jsx)("h3", {
             "data-context": "newswire-subtitle",
             children: h
           }) : "",
           k = [{
-            text: c("Newswire"),
+            text: o("Newswire"),
             to: "/newswire"
           }],
           {
             src: x
-          } = (0, s.useImageParser)(r),
-          j = (0, l.jsxs)(l.Fragment, {
-            children: [(0, l.jsx)("time", {
+          } = (0, s.useImageParser)(l),
+          _ = (0, c.jsxs)(c.Fragment, {
+            children: [(0, c.jsx)("time", {
               dateTime: g.created,
               children: g.created_formatted
-            }), i ? (0, l.jsx)(n.DescriptionArea, {
+            }), i ? (0, c.jsx)(n.DescriptionArea, {
               item: i
             }) : "", a]
           });
@@ -57,46 +57,46 @@
           text: g.secondary_tags[0].name,
           to: `/newswire?tag_id=${g.secondary_tags[0].id}`
         });
-        const N = (0, l.jsx)("div", {
+        const j = (0, c.jsx)("div", {
           className: d.breadcrumbs,
-          children: k.map((e => (0, l.jsx)(n.A, {
+          children: k.map((e => (0, c.jsx)(n.A, {
             to: e.to,
             children: e.text
           }, e.to)))
         });
-        return x?.desktop && (o.background = `url(${x.desktop}) center/cover no-repeat`), (0, l.jsx)("div", {
+        return x?.desktop && (r.background = `url(${x.desktop}) center/cover no-repeat`), (0, c.jsx)("div", {
           className: [m, d.title].join(" "),
           style: {
-            ...o,
-            ...u
+            ...r,
+            ...f
           },
-          children: "separated" === f ? (0, l.jsxs)(l.Fragment, {
-            children: [(0, l.jsxs)("header", {
+          children: "separated" === u ? (0, c.jsxs)(c.Fragment, {
+            children: [(0, c.jsxs)("header", {
               "data-context": "title",
-              children: [N, (0, l.jsx)("h1", {
+              children: [j, (0, c.jsx)("h1", {
                 children: v
               })]
-            }), (0, l.jsxs)("footer", {
+            }), (0, c.jsxs)("footer", {
               "data-context": "title",
-              children: [b, j]
+              children: [b, _]
             })]
-          }) : (0, l.jsxs)(l.Fragment, {
-            children: [N, (0, l.jsxs)("div", {
+          }) : (0, c.jsxs)(c.Fragment, {
+            children: [j, (0, c.jsxs)("div", {
               className: d.main,
-              children: [(0, l.jsx)("h1", {
+              children: [(0, c.jsx)("h1", {
                 children: v
               }), b]
-            }), j]
+            }), _]
           })
         })
       }))
     },
-    3975: (e, a, i) => {
+    6879: (e, a, i) => {
       "use strict";
       i.r(a), i.d(a, {
         AnchorLink: () => t,
         Discounts: () => x,
-        Donate: () => S,
+        Donate: () => y,
         EventInfo: () => C,
         FeaturedEventInfo: () => $,
         FontClip: () => E,
@@ -109,7 +109,7 @@
         Podium: () => X
       });
       var n = i(4932),
-        s = i(6160);
+        s = i(9817);
       const t = e => {
         let {
           children: a,
@@ -129,8 +129,8 @@
         })
       };
       var d = i(420),
-        l = i.n(d);
-      const r = e => {
+        c = i.n(d);
+      const l = e => {
         let {
           items: a,
           columns: i = {},
@@ -138,19 +138,19 @@
           noInfiniteScroll: t = !1,
           ...d
         } = e;
-        const r = d?.style ?? {};
-        return n && (i?.mobile && (r["--mobile-cols"] = i.mobile), i?.desktop && (r["--desktop-cols"] = i.desktop)), (0, s.jsxs)(s.Fragment, {
+        const l = d?.style ?? {};
+        return n && (i?.mobile && (l["--mobile-cols"] = i.mobile), i?.desktop && (l["--desktop-cols"] = i.desktop)), (0, s.jsxs)(s.Fragment, {
           children: [d.title && (0, s.jsx)("p", {
-            className: "a6afed00140449f9cc23ea60d10b10978740",
+            className: "_1c6c5e2e5850fea8cc23ea60d10b10978740",
             children: d.title
           }), (0, s.jsxs)("div", {
-            className: "a6afed00140449f9c9824c3db07a3f15334b",
-            children: [n && (0, s.jsx)(l(), {
+            className: "_1c6c5e2e5850fea8c9824c3db07a3f15334b",
+            children: [n && (0, s.jsx)(c(), {
               style: {
-                ...r,
+                ...l,
                 "--grid-gap-dynamic": "2rem 0"
               },
-              className: "a6afed00140449f9b6ef0aec65f96384d4cd",
+              className: "_1c6c5e2e5850fea8b6ef0aec65f96384d4cd",
               renderTemplate: "standard",
               items: a,
               ...d
@@ -163,24 +163,24 @@
           })]
         })
       };
-      var o = i(8976);
-      const c = {
-          limitedGrid: "a6afed00140449f9ab9f12604c018853a308",
-          gridCarousel: "a6afed00140449f9c0608394773250c28a1c",
-          limitedGridContent: "a6afed00140449f9ee961e47b32d65061386",
-          columnsDesktop2: "a6afed00140449f9e0672125aba71dce5e07",
-          thirdLine: "a6afed00140449f9cd50d53d3b617640dabb",
-          gridItem: "a6afed00140449f9fc1568b77cc287420646",
-          columnsDesktop3: "a6afed00140449f9a7043faf0a658ff4328a",
-          columnsDesktop4: "a6afed00140449f9fc538cbda060a473ba1b",
-          extraDiv: "a6afed00140449f9ee55d82807507d7ffa2d",
-          gridText: "a6afed00140449f9c49b07718b793fbbf0e1",
-          noTextFit: "a6afed00140449f9f30240c7088b463a9458",
-          coupons: "a6afed00140449f9ecf4053f24a1ea762cbb",
-          imageArea: "a6afed00140449f9ece1738ecb734a0cc174",
-          carouselOnMobile: "a6afed00140449f9b52aa02f8029431b58ee",
-          imageAreaBg: "a6afed00140449f9b5915942ffe5f300bc4b",
-          carouselDesc: "a6afed00140449f9f1b6246a59e1a1757f2a"
+      var r = i(8976);
+      const o = {
+          limitedGrid: "_1c6c5e2e5850fea8ab9f12604c018853a308",
+          gridCarousel: "_1c6c5e2e5850fea8c0608394773250c28a1c",
+          limitedGridContent: "_1c6c5e2e5850fea8ee961e47b32d65061386",
+          columnsDesktop2: "_1c6c5e2e5850fea8e0672125aba71dce5e07",
+          thirdLine: "_1c6c5e2e5850fea8cd50d53d3b617640dabb",
+          gridItem: "_1c6c5e2e5850fea8fc1568b77cc287420646",
+          columnsDesktop3: "_1c6c5e2e5850fea8a7043faf0a658ff4328a",
+          columnsDesktop4: "_1c6c5e2e5850fea8fc538cbda060a473ba1b",
+          extraDiv: "_1c6c5e2e5850fea8ee55d82807507d7ffa2d",
+          gridText: "_1c6c5e2e5850fea8c49b07718b793fbbf0e1",
+          noTextFit: "_1c6c5e2e5850fea8f30240c7088b463a9458",
+          coupons: "_1c6c5e2e5850fea8ecf4053f24a1ea762cbb",
+          imageArea: "_1c6c5e2e5850fea8ece1738ecb734a0cc174",
+          carouselOnMobile: "_1c6c5e2e5850fea8b52aa02f8029431b58ee",
+          imageAreaBg: "_1c6c5e2e5850fea8b5915942ffe5f300bc4b",
+          carouselDesc: "_1c6c5e2e5850fea8f1b6246a59e1a1757f2a"
         },
         m = e => {
           let {
@@ -194,64 +194,64 @@
             children: i
           }) : i
         },
-        f = e => {
+        u = e => {
           let {
             items: a,
             noTextFit: i,
             type: t,
             carouselOnMobile: d,
-            columns: l = {
+            columns: c = {
               desktop: 3,
               mobile: 2
             }
           } = e;
-          const [r, f] = (0, n.useState)(null), [u, g] = (0, n.useState)(3), p = (0, n.useRef)(null);
+          const [l, u] = (0, n.useState)(null), [f, g] = (0, n.useState)(3), p = (0, n.useRef)(null);
           return (0, n.useEffect)((() => {
             const e = window.getComputedStyle(p.current).getPropertyValue("--divisible-desktop"),
               i = () => {
                 const a = window.innerWidth;
                 g(a <= 767 ? 2 : e)
               };
-            if (a?.content.length && a?.content.length >= u) {
+            if (a?.content.length && a?.content.length >= f) {
               let {
                 length: e
               } = a.content;
               const i = [];
-              if (e % u != 0) {
+              if (e % f != 0) {
                 let a = 0;
                 do {
                   i.push((0, s.jsx)("div", {
-                    className: `${c.gridItem} ${c.extraDiv}`
+                    className: `${o.gridItem} ${o.extraDiv}`
                   }, "limited-grid-" + a++)), e++
-                } while (e % u != 0)
+                } while (e % f != 0)
               }
-              f(i)
+              u(i)
             }
             return window.addEventListener("resize", i), i(), () => window.removeEventListener("resize", i)
-          }), [u, p]), (0, s.jsxs)("div", {
-            className: `${c.limitedGrid} ${d?c.carouselOnMobile:""}`,
+          }), [f, p]), (0, s.jsxs)("div", {
+            className: `${o.limitedGrid} ${d?o.carouselOnMobile:""}`,
             children: [(0, s.jsxs)("div", {
               ref: p,
               style: {
-                "--divisible-desktop": l.desktop,
-                "--divisible-mobile": l.mobile
+                "--divisible-desktop": c.desktop,
+                "--divisible-mobile": c.mobile
               },
-              className: `\n                    ${c.limitedGridContent}\n                    ${2===l.desktop?c.columnsDesktop2:""}\n                    ${3===l.desktop?c.columnsDesktop3:""}\n                    ${l.desktop>=4?c.columnsDesktop4:""}\n                    ${i?c.noTextFit:""}\n                    ${t?c[t]:""}\n                `,
+              className: `\n                    ${o.limitedGridContent}\n                    ${2===c.desktop?o.columnsDesktop2:""}\n                    ${3===c.desktop?o.columnsDesktop3:""}\n                    ${c.desktop>=4?o.columnsDesktop4:""}\n                    ${i?o.noTextFit:""}\n                    ${t?o[t]:""}\n                `,
               children: [(0, s.jsx)("div", {
-                className: c.thirdLine
+                className: o.thirdLine
               }), a.content.map(((e, a) => (0, s.jsx)("div", {
-                className: c.gridItem,
+                className: o.gridItem,
                 children: (0, s.jsxs)(m, {
                   to: e?.href ?? e?.to,
-                  children: [!i && (0, s.jsx)(o.TextFit, {
-                    className: c.gridText,
+                  children: [!i && (0, s.jsx)(r.TextFit, {
+                    className: o.gridText,
                     min: 16,
                     max: 1e3,
                     mode: "single",
                     children: e.title
                   }), (0, s.jsx)("div", {
-                    className: c.imageArea,
-                    children: (0, s.jsx)(o.ImageWithBadge, {
+                    className: o.imageArea,
+                    children: (0, s.jsx)(r.ImageWithBadge, {
                       image: e.image,
                       ariaLabel: e.ariaLabel,
                       badgeType: "badge2",
@@ -261,22 +261,22 @@
                     children: e.title
                   })]
                 })
-              }, a))), r]
+              }, a))), l]
             }), d && (0, s.jsx)("div", {
-              className: c.gridCarousel,
-              children: (0, s.jsx)(o.Carousel, {
+              className: o.gridCarousel,
+              children: (0, s.jsx)(r.Carousel, {
                 children: a.content.map(((e, a) => (0, s.jsxs)("div", {
                   children: [(0, s.jsx)("div", {
-                    className: `${c.imageArea} ${c.imageAreaBg}`,
-                    children: (0, s.jsx)(o.ImageWithBadge, {
-                      className: t ? c[t] : "",
+                    className: `${o.imageArea} ${o.imageAreaBg}`,
+                    children: (0, s.jsx)(r.ImageWithBadge, {
+                      className: t ? o[t] : "",
                       image: e.image,
                       ariaLabel: e.ariaLabel,
                       badgeType: "badge2",
                       badge: e.badge
                     })
                   }), e.title && (0, s.jsx)("p", {
-                    className: c.carouselDesc,
+                    className: o.carouselDesc,
                     children: (0, s.jsx)(m, {
                       to: e?.href ?? e?.to,
                       children: e.title
@@ -287,7 +287,7 @@
             })]
           })
         },
-        u = e => {
+        f = e => {
           let {
             items: a = []
           } = e;
@@ -301,14 +301,14 @@
                 items: e.limitedList.content,
                 noInfiniteScroll: e?.noInfiniteScroll,
                 perPage: e?.perPage
-              }, e?.key ?? a)), e.limitedGridList?.content && i.push((0, s.jsx)(f, {
+              }, e?.key ?? a)), e.limitedGridList?.content && i.push((0, s.jsx)(u, {
                 columns: e.limitedGridList.columns,
                 items: e.limitedGridList
               }, e?.key ?? a)), n++, (0, s.jsxs)("div", {
                 children: [1 === n && (0, s.jsx)("div", {
-                  className: "a6afed00140449f9c6f2704eec0039dc99fd",
+                  className: "_1c6c5e2e5850fea8c6f2704eec0039dc99fd",
                   children: (0, s.jsx)("div", {
-                    className: "a6afed00140449f9eb5100dcfafe9290815d"
+                    className: "_1c6c5e2e5850fea8eb5100dcfafe9290815d"
                   })
                 }), i]
               }, a)
@@ -319,17 +319,17 @@
                 items: e.discountsList.content,
                 noInfiniteScroll: e?.noInfiniteScroll,
                 perPage: e?.perPage
-              }, e?.key ?? a)), e.discountsGridList?.content && n.push((0, s.jsx)(f, {
+              }, e?.key ?? a)), e.discountsGridList?.content && n.push((0, s.jsx)(u, {
                 noTextFit: !0,
                 carouselOnMobile: !0,
                 type: e.type ?? e.discountsGridList.type,
                 columns: e.discountsGridList.columns,
                 items: e.discountsGridList
-              }, e?.key ?? a)), e?.list && n.push((0, s.jsx)(o.UnorderedList, {
+              }, e?.key ?? a)), e?.list && n.push((0, s.jsx)(r.UnorderedList, {
                 ...e
               })), i++, (0, s.jsxs)("div", {
                 children: [1 === i && (0, s.jsx)("div", {
-                  className: "a6afed00140449f9b71bc87fe69e5e8e4ab7"
+                  className: "_1c6c5e2e5850fea8b71bc87fe69e5e8e4ab7"
                 }), n]
               }, a)
             }
@@ -337,10 +337,10 @@
           }))
         },
         g = {
-          discountsCarouselItem: "a6afed00140449f9f9c21e26992205ac01be",
-          fontUpdate: "a6afed00140449f9f37fa2503116c2fcad05",
-          discountsCarousel: "a6afed00140449f9b420f85959d96ba8f2f5",
-          singleImage: "a6afed00140449f9fce6b1a83c6b2a049943"
+          discountsCarouselItem: "_1c6c5e2e5850fea8f9c21e26992205ac01be",
+          fontUpdate: "_1c6c5e2e5850fea8f37fa2503116c2fcad05",
+          discountsCarousel: "_1c6c5e2e5850fea8b420f85959d96ba8f2f5",
+          singleImage: "_1c6c5e2e5850fea8fce6b1a83c6b2a049943"
         },
         p = e => {
           let {
@@ -356,33 +356,33 @@
             noInfiniteScroll: i = !1,
             size: t = null,
             perPage: d = null,
-            customSlidesPerView: l = null,
-            style: r = {}
+            customSlidesPerView: c = null,
+            style: l = {}
           } = e;
-          const c = (0, n.useRef)(null),
-            [m, f] = (0, n.useState)(null),
-            [u, v] = (0, n.useState)(t);
+          const o = (0, n.useRef)(null),
+            [m, u] = (0, n.useState)(null),
+            [f, v] = (0, n.useState)(t);
           return (0, n.useEffect)((() => {
             !t && d && v(1 === d ? "lg" : "sm"), t || d || (v("lg"), console.error('Error: DiscountsCarousel expects a prop "size" in order to display the correct amount of slides. Defaulting to lg.'))
           }), [t, d]), (0, n.useEffect)((() => {
-            if (!c.current) return;
+            if (!o.current) return;
             const e = () => {
-              const e = l || window.getComputedStyle(c.current).getPropertyValue("--slides-per-view");
-              f(e)
+              const e = c || window.getComputedStyle(o.current).getPropertyValue("--slides-per-view");
+              u(e)
             };
             return window.addEventListener("resize", e), e(), () => {
               window.removeEventListener("resize", e)
             }
-          }), [c, l]), a.length ? (0, s.jsx)(p, {
+          }), [o, c]), a.length ? (0, s.jsx)(p, {
             length: a.length,
             wrapper: e => (0, s.jsx)("div", {
-              "data-size": u,
-              ref: c,
-              children: (0, s.jsx)(o.Carousel, {
+              "data-size": f,
+              ref: o,
+              children: (0, s.jsx)(r.Carousel, {
                 className: g.discountsCarousel,
                 noInfiniteScroll: i,
                 style: {
-                  ...r,
+                  ...l,
                   "--per-page": m,
                   "--carousel-column-gap": "1rem"
                 },
@@ -391,7 +391,7 @@
             }),
             children: a.map(((e, i) => (0, s.jsxs)("div", {
               className: [g.discountsCarouselItem, 1 === a.length ? g.singleImage : ""].join(" "),
-              children: [(0, s.jsx)(o.ImageWithBadge, {
+              children: [(0, s.jsx)(r.ImageWithBadge, {
                 ariaLabel: e?.ariaLabel,
                 image: e?.image ?? {
                   alt: e?.alt ?? "",
@@ -401,7 +401,7 @@
                 badge: e?.badge ?? e?.image?.badge ?? e.discountTxt,
                 splitter: e?.splitter ?? e?.image?.splitter,
                 badgeType: "badgeSizeUpdate"
-              }), (0, s.jsx)(o.DescriptionArea, {
+              }), (0, s.jsx)(r.DescriptionArea, {
                 className: g.fontUpdate,
                 item: e
               })]
@@ -413,7 +413,7 @@
             items: a = [],
             style: i = {}
           } = e;
-          return a.length ? (0, s.jsx)(o.Grid, {
+          return a.length ? (0, s.jsx)(r.Grid, {
             style: {
               "--background-color": "#000",
               "--grid-gap-dynamic": "var(--grid-gap-static-lg)",
@@ -421,7 +421,7 @@
               "--image-rounding-dynamic": "0",
               ...i
             },
-            children: a.map(((e, a) => e?.title_and_description ? (0, s.jsxs)(o.Grid, {
+            children: a.map(((e, a) => e?.title_and_description ? (0, s.jsxs)(r.Grid, {
               context: "readable-text",
               style: {
                 textAlign: "left",
@@ -441,23 +441,23 @@
               noInfiniteScroll: e?.noInfiniteScroll,
               perPage: e?.perPage,
               size: e?.size
-            }, e?.key ?? a) : e?.discountsGridList?.content ? (0, s.jsx)(r, {
+            }, e?.key ?? a) : e?.discountsGridList?.content ? (0, s.jsx)(l, {
               noCarousel: !0,
               columns: e.discountsGridList?.columns,
               items: e.discountsGridList.content
-            }, e?.key ?? a) : e?.content ? (0, s.jsx)(o.HTMLElement, {
+            }, e?.key ?? a) : e?.content ? (0, s.jsx)(r.HTMLElement, {
               ...e,
               children: e.content
-            }, e?.key ?? a) : e?.list ? (0, s.jsx)(o.UnorderedList, {
+            }, e?.key ?? a) : e?.list ? (0, s.jsx)(r.UnorderedList, {
               ...e
             }) : void 0))
           }) : null
         },
         b = {
-          area: "a6afed00140449f9aef21ffeff79dc62ba24",
-          btmImg: "a6afed00140449f9a1c51a7aa9369eaf079c",
-          limitedTopImg: "a6afed00140449f9fa1c3afa7e5f8f6902a7",
-          topImg: "a6afed00140449f9f34e40ec1e46045b6556"
+          area: "_1c6c5e2e5850fea8aef21ffeff79dc62ba24",
+          btmImg: "_1c6c5e2e5850fea8a1c51a7aa9369eaf079c",
+          limitedTopImg: "_1c6c5e2e5850fea8fa1c3afa7e5f8f6902a7",
+          topImg: "_1c6c5e2e5850fea8f34e40ec1e46045b6556"
         },
         k = e => {
           let {
@@ -473,12 +473,12 @@
                 ...n
               });
             case "grid":
-              return (0, s.jsx)(r, {
+              return (0, s.jsx)(l, {
                 items: a,
                 ...n
               });
             default:
-              return (0, s.jsx)(u, {
+              return (0, s.jsx)(f, {
                 items: a
               })
           }
@@ -506,21 +506,21 @@
             })
           })
         };
-      var j = i(3205),
-        N = i.n(j);
-      const y = {
-          donate: "a6afed00140449f9eb9e02d18c2e7b2b52b5",
-          largePaddingSides: "a6afed00140449f9fa870f1909d3ea0301ec"
+      var _ = i(9696),
+        j = i.n(_);
+      const N = {
+          donate: "_1c6c5e2e5850fea8eb9e02d18c2e7b2b52b5",
+          largePaddingSides: "_1c6c5e2e5850fea8fa870f1909d3ea0301ec"
         },
-        S = e => {
+        y = e => {
           let {
             text: a
           } = e;
           const {
             sanitize: i
-          } = N();
+          } = j();
           return (0, s.jsx)("div", {
-            className: [y.donate, "normalPaddingTopBottom largePaddingSides"].join(" "),
+            className: [N.donate, "normalPaddingTopBottom largePaddingSides"].join(" "),
             children: (0, s.jsx)("p", {
               dangerouslySetInnerHTML: {
                 __html: i(a)
@@ -528,28 +528,28 @@
             })
           })
         };
-      var I = i(3653),
-        w = i.n(I),
-        _ = i(9542),
+      var S = i(2999),
+        I = i.n(S),
+        w = i(9542),
         L = i(8356),
         P = i.n(L),
         T = i(4224),
         F = i.n(T),
-        G = i(1765);
+        G = i(4378);
       const D = {
-          event: "a6afed00140449f9ed5f9280b13b59a49eec",
-          featured: "a6afed00140449f9d1f2db52d32a7225d61b",
-          eventInfo: "a6afed00140449f9dcf127a634221b8098a3",
-          large: "a6afed00140449f9c002528278e1cdbec437",
-          videoWrapper: "a6afed00140449f9f3260737e9b7c57df84f"
+          event: "_1c6c5e2e5850fea8ed5f9280b13b59a49eec",
+          featured: "_1c6c5e2e5850fea8d1f2db52d32a7225d61b",
+          eventInfo: "_1c6c5e2e5850fea8dcf127a634221b8098a3",
+          large: "_1c6c5e2e5850fea8c002528278e1cdbec437",
+          videoWrapper: "_1c6c5e2e5850fea8f3260737e9b7c57df84f"
         },
         V = e => {
           let {
             images: a
           } = e;
-          return a?.length ? 1 === a.length ? (0, s.jsx)(o.ImageWithBadge, {
+          return a?.length ? 1 === a.length ? (0, s.jsx)(r.ImageWithBadge, {
             ...a[0]
-          }) : (0, s.jsx)(o.Carousel, {
+          }) : (0, s.jsx)(r.Carousel, {
             items: a
           }) : null
         },
@@ -559,39 +559,39 @@
             title: i,
             content: t,
             isFeatured: d = !1,
-            className: r = null,
-            videoInHeroProps: c
+            className: l = null,
+            videoInHeroProps: o
           } = e;
-          const m = (0, _.useTinaPayload)(),
-            f = m?.meta?.prod ?? !1,
-            u = (0, _.useTinaComponents)();
-          w().set(m, "meta.prod", f);
-          let g = c?.gifVideoProps?.hasVideoInHero || !1;
-          const p = c?.htmlVideoProps?.id || !1,
-            v = !!c?.htmlVideoProps?.hasHtmlVideoInHero && p;
+          const m = (0, w.useTinaPayload)(),
+            u = m?.meta?.prod ?? !1,
+            f = (0, w.useTinaComponents)();
+          I().set(m, "meta.prod", u);
+          let g = o?.gifVideoProps?.hasVideoInHero || !1;
+          const p = o?.htmlVideoProps?.id || !1,
+            v = !!o?.htmlVideoProps?.hasHtmlVideoInHero && p;
           v && g && (g = !1);
-          const h = void 0 === c || !g && !v,
+          const h = void 0 === o || !g && !v,
             b = (0, n.useMemo)((() => ({
-              ...u,
-              HTMLElement: o.HTMLElement,
-              ImageWithBadge: o.ImageWithBadge,
-              GroupOfItems: l()
-            })), [u]);
+              ...f,
+              HTMLElement: r.HTMLElement,
+              ImageWithBadge: r.ImageWithBadge,
+              GroupOfItems: c()
+            })), [f]);
           return (0, s.jsxs)("div", {
-            className: (0, _.classList)(D.event, r),
+            className: (0, w.classList)(D.event, l),
             children: [g && (0, s.jsx)("div", {
               className: D.videoWrapper,
               children: (0, s.jsx)(P(), {
                 hash: {
-                  desktop: c?.gifVideoProps?.hash?.desktop,
-                  mobile: c?.gifVideoProps?.hash?.mobile
+                  desktop: o?.gifVideoProps?.hash?.desktop,
+                  mobile: o?.gifVideoProps?.hash?.mobile
                 },
-                loop: c?.gifVideoProps?.isLooping
+                loop: o?.gifVideoProps?.isLooping
               })
             }), v && p && (0, s.jsx)("div", {
               className: D.videoWrapper,
               children: (0, s.jsx)(F(), {
-                autoplay: c?.htmlVideoProps?.autoPlay || !1,
+                autoplay: o?.htmlVideoProps?.autoPlay || !1,
                 id: p
               })
             }), h && (0, s.jsx)(V, {
@@ -601,13 +601,13 @@
               children: [!d && (0, s.jsx)("h3", {
                 className: D.eventTitle,
                 children: i
-              }), (0, s.jsx)(_.TinaParser, {
+              }), (0, s.jsx)(w.TinaParser, {
                 components: b,
                 tina: {
                   payload: {
                     content: t,
                     meta: {
-                      prod: f
+                      prod: u
                     }
                   }
                 }
@@ -621,9 +621,9 @@
           isFeatured: !0
         }),
         M = {
-          clip: "a6afed00140449f9c690130b61bb7ff08523",
-          redTexture: "a6afed00140449f9ca901535ed8040e1c467",
-          greyTexture: "a6afed00140449f9e7678c54af2658902efe"
+          clip: "_1c6c5e2e5850fea8c690130b61bb7ff08523",
+          redTexture: "_1c6c5e2e5850fea8ca901535ed8040e1c467",
+          greyTexture: "_1c6c5e2e5850fea8e7678c54af2658902efe"
         },
         E = e => {
           let {
@@ -641,15 +641,15 @@
         };
       var B = i(3657);
       const R = {
-          gamingWrapper: "a6afed00140449f9dac29c965cc5e1c26e56",
-          gamingRewards: "a6afed00140449f9bfcd25af2b432261c26b",
-          psPlus: "a6afed00140449f9ee6e703409860b14015d",
-          rightSide: "a6afed00140449f9b531aec805fdbc421fb0",
-          primeGamingSocialLogo: "a6afed00140449f9b9bff8272ca0f1235eec",
-          gtaPlus: "a6afed00140449f9b4538e93d172276607d0",
-          plus: "a6afed00140449f9aa03d239a9b0983fb5bb",
-          listArea: "a6afed00140449f9a9e798941ccde7b0c567",
-          psPlusDefaultImg: "a6afed00140449f9bd25cae14a3ba24b11cf"
+          gamingWrapper: "_1c6c5e2e5850fea8dac29c965cc5e1c26e56",
+          gamingRewards: "_1c6c5e2e5850fea8bfcd25af2b432261c26b",
+          psPlus: "_1c6c5e2e5850fea8ee6e703409860b14015d",
+          rightSide: "_1c6c5e2e5850fea8b531aec805fdbc421fb0",
+          primeGamingSocialLogo: "_1c6c5e2e5850fea8b9bff8272ca0f1235eec",
+          gtaPlus: "_1c6c5e2e5850fea8b4538e93d172276607d0",
+          plus: "_1c6c5e2e5850fea8aa03d239a9b0983fb5bb",
+          listArea: "_1c6c5e2e5850fea8a9e798941ccde7b0c567",
+          psPlusDefaultImg: "_1c6c5e2e5850fea8bd25cae14a3ba24b11cf"
         },
         A = e => {
           let {
@@ -657,33 +657,33 @@
             plainImage: n,
             top: t,
             unorderedList: d,
-            bottom: l,
-            rewards: r = "primeGaming",
-            style: c = {}
+            bottom: c,
+            rewards: l = "primeGaming",
+            style: o = {}
           } = e;
           const m = (0, B.useLocale)();
-          return "primeGaming" === r && ["ru", "kr", "ko_kr", "ru_ru"].includes(m) ? null : (0, s.jsx)("div", {
+          return "primeGaming" === l && ["ru", "kr", "ko_kr", "ru_ru"].includes(m) ? null : (0, s.jsx)("div", {
             className: R.gamingWrapper,
             children: (0, s.jsx)("div", {
-              className: `${R.gamingRewards} ${R[r]}`,
-              style: c,
-              children: (0, s.jsxs)(o.ResponsiveGridBox, {
+              className: `${R.gamingRewards} ${R[l]}`,
+              style: o,
+              children: (0, s.jsxs)(r.ResponsiveGridBox, {
                 style: {
                   "--grid-align-items": "center",
                   "--grid-row-gap": "2rem"
                 },
-                children: [(0, s.jsxs)(o.ResponsiveGridItem, {
+                children: [(0, s.jsxs)(r.ResponsiveGridItem, {
                   children: [a && (0, s.jsx)("h3", {
                     children: a
-                  }), "psPlus" === r && (0, s.jsx)("img", {
+                  }), "psPlus" === l && (0, s.jsx)("img", {
                     "aria-label": "Playstation Plus Benefit",
                     className: R.primeGamingSocialLogo,
                     src: i(6469)
-                  }), "primeGaming" === r && (0, s.jsx)("img", {
+                  }), "primeGaming" === l && (0, s.jsx)("img", {
                     "aria-label": "Social Club | Prime Gaming",
                     className: R.primeGamingSocialLogo,
                     src: i(4024)
-                  }), "gtaPlus" === r && (0, s.jsx)("img", {
+                  }), "gtaPlus" === l && (0, s.jsx)("img", {
                     "aria-label": "GTA Plus",
                     className: R.primeGamingSocialLogo,
                     src: i(1630)
@@ -694,21 +694,21 @@
                     }
                   }), d?.list && (0, s.jsx)("div", {
                     className: R.listArea,
-                    children: (0, s.jsx)(o.UnorderedList, {
-                      className: "gtaPlus" === r ? R.plus : "",
+                    children: (0, s.jsx)(r.UnorderedList, {
+                      className: "gtaPlus" === l ? R.plus : "",
                       ...d,
                       list: d.list,
                       ...d?.attributes
                     })
-                  }), l?.text && (0, s.jsx)("p", {
-                    ...l,
+                  }), c?.text && (0, s.jsx)("p", {
+                    ...c,
                     dangerouslySetInnerHTML: {
-                      __html: l.text
+                      __html: c.text
                     }
                   })]
-                }), (0, s.jsx)(o.ResponsiveGridItem, {
+                }), (0, s.jsx)(r.ResponsiveGridItem, {
                   className: R.rightSide,
-                  children: n?.image ? (0, s.jsx)(o.MultiSourceImage, {
+                  children: n?.image ? (0, s.jsx)(r.MultiSourceImage, {
                     image: n.image
                   }) : (0, s.jsx)("div", {
                     className: R.psPlusDefaultImg
@@ -727,9 +727,9 @@
             deckHash: i = "",
             perPage: t = null
           } = e;
-          const [d, l] = (0, n.useState)(null), r = (0, _.useGetCdnSource)(a?.backgroundImg?.full_src ?? null), c = (0, _.useGetCdnSource)(a?.layeredImg?.full_src ?? null), m = (0, n.useRef)(null), {
-            data: f,
-            error: u
+          const [d, c] = (0, n.useState)(null), l = (0, w.useGetCdnSource)(a?.backgroundImg?.full_src ?? null), o = (0, w.useGetCdnSource)(a?.layeredImg?.full_src ?? null), m = (0, n.useRef)(null), {
+            data: u,
+            error: f
           } = (0, H.useQuery)(W.TinaModulesInfo, {
             variables: {
               ids: i
@@ -737,32 +737,32 @@
             skip: !i
           });
           return (0, n.useEffect)((() => {
-            if (f?.tinaModulesInfo) {
-              const e = f.tinaModulesInfo[0],
+            if (u?.tinaModulesInfo) {
+              const e = u.tinaModulesInfo[0],
                 {
                   id: a,
                   tina: i
                 } = e,
-                n = w().clone(i);
-              w().set(n, "payload.meta.id", a), l(n)
+                n = I().clone(i);
+              I().set(n, "payload.meta.id", a), c(n)
             }
-          }), [f]), f && d ? u ? (0, s.jsx)(o.Wasted, {
-            error: u
+          }), [u]), u && d ? f ? (0, s.jsx)(r.Wasted, {
+            error: f
           }) : (0, s.jsx)("div", {
-            className: "a6afed00140449f9db774e916b16318ae327",
+            className: "_1c6c5e2e5850fea8db774e916b16318ae327",
             ref: m,
             style: {
-              "--background-image": `url(${r})`,
-              "--layered-image": `url(${c})`,
+              "--background-image": `url(${l})`,
+              "--layered-image": `url(${o})`,
               "--slides-per-view-desktop": t
             },
             children: (0, s.jsxs)("div", {
-              className: "a6afed00140449f9f455e6d9f8157a14665a",
-              children: [c ? (0, s.jsx)("div", {
-                className: "a6afed00140449f9e4bebd4c2131ade1d9c1"
+              className: "_1c6c5e2e5850fea8f455e6d9f8157a14665a",
+              children: [o ? (0, s.jsx)("div", {
+                className: "_1c6c5e2e5850fea8e4bebd4c2131ade1d9c1"
               }) : "", (0, s.jsx)("div", {
-                className: "a6afed00140449f9c4e52217bf1e1984b197",
-                children: (0, s.jsx)(_.TinaParser, {
+                className: "_1c6c5e2e5850fea8c4e52217bf1e1984b197",
+                children: (0, s.jsx)(w.TinaParser, {
                   components: {
                     Deck: z.Deck
                   },
@@ -773,28 +773,28 @@
           }) : null
         },
         U = {
-          hiddenMobile: "a6afed00140449f9e96a63eec3122dc2a4f5",
-          hiddenLarge: "a6afed00140449f9eed7a702464fd229d881",
-          "hidden-sm": "a6afed00140449f9af3842b947053cf2932e",
-          "show-sm": "a6afed00140449f9daf236def146d5984332",
-          "hidden-md": "a6afed00140449f9ef90d488c8f49b134e8b",
-          "show-md": "a6afed00140449f9ed4ec616c6c7c8840514",
-          "hidden-lg": "a6afed00140449f9a11425ac101c440709c0",
-          "show-lg": "a6afed00140449f9c1b1f6cd526524fc4ce4",
-          "hidden-xl": "a6afed00140449f9bc7425f876dbbfafc359",
-          "show-xl": "a6afed00140449f9a2a9889ffb089e23dfe1",
-          "hidden-xxl": "a6afed00140449f9bab72c30a7c66b393b54",
-          "show-xxl": "a6afed00140449f9a052de34831b84cf470a",
-          "full-width": "a6afed00140449f9f5937043c4f02ec43709",
-          "reverse-mobile": "a6afed00140449f9d00d706245a1594dc25b",
-          "center-children": "a6afed00140449f9af5cd07ecb23db699714",
-          "std-padding-mobile-desktop-none": "a6afed00140449f9da3c8590d87c28680c7c",
-          "std-padding-desktop-mobile-none": "a6afed00140449f9d4451bc3c8bec7c2ebd1",
-          "horizontal-line": "a6afed00140449f9dfaf731745ab9b4e53c3",
-          gold: "a6afed00140449f9e23f08b60c2c1c99a883",
-          heroImage: "a6afed00140449f9bcce02f64dfa789d982b",
-          responsiveImage: "a6afed00140449f9a0d8db2d99e68f049876",
-          responsiveVideo: "a6afed00140449f9cfe91d32e301b62619c9"
+          hiddenMobile: "_1c6c5e2e5850fea8e96a63eec3122dc2a4f5",
+          hiddenLarge: "_1c6c5e2e5850fea8eed7a702464fd229d881",
+          "hidden-sm": "_1c6c5e2e5850fea8af3842b947053cf2932e",
+          "show-sm": "_1c6c5e2e5850fea8daf236def146d5984332",
+          "hidden-md": "_1c6c5e2e5850fea8ef90d488c8f49b134e8b",
+          "show-md": "_1c6c5e2e5850fea8ed4ec616c6c7c8840514",
+          "hidden-lg": "_1c6c5e2e5850fea8a11425ac101c440709c0",
+          "show-lg": "_1c6c5e2e5850fea8c1b1f6cd526524fc4ce4",
+          "hidden-xl": "_1c6c5e2e5850fea8bc7425f876dbbfafc359",
+          "show-xl": "_1c6c5e2e5850fea8a2a9889ffb089e23dfe1",
+          "hidden-xxl": "_1c6c5e2e5850fea8bab72c30a7c66b393b54",
+          "show-xxl": "_1c6c5e2e5850fea8a052de34831b84cf470a",
+          "full-width": "_1c6c5e2e5850fea8f5937043c4f02ec43709",
+          "reverse-mobile": "_1c6c5e2e5850fea8d00d706245a1594dc25b",
+          "center-children": "_1c6c5e2e5850fea8af5cd07ecb23db699714",
+          "std-padding-mobile-desktop-none": "_1c6c5e2e5850fea8da3c8590d87c28680c7c",
+          "std-padding-desktop-mobile-none": "_1c6c5e2e5850fea8d4451bc3c8bec7c2ebd1",
+          "horizontal-line": "_1c6c5e2e5850fea8dfaf731745ab9b4e53c3",
+          gold: "_1c6c5e2e5850fea8e23f08b60c2c1c99a883",
+          heroImage: "_1c6c5e2e5850fea8bcce02f64dfa789d982b",
+          responsiveImage: "_1c6c5e2e5850fea8a0d8db2d99e68f049876",
+          responsiveVideo: "_1c6c5e2e5850fea8cfe91d32e301b62619c9"
         },
         q = e => {
           let {
@@ -806,12 +806,12 @@
           } = e;
           return (0, s.jsxs)("div", {
             className: ((n?.videoPlayerId || n?.gifHash) && U.heroImage, i),
-            children: [n?.mobile && (0, s.jsx)(o.ResponsiveImg, {
+            children: [n?.mobile && (0, s.jsx)(r.ResponsiveImg, {
               src: n.mobile,
               ariaLabel: a,
               className: [n?.desktop && U.hiddenLarge, U.responsiveImage].join(" "),
               noRatioPlease: !0
-            }), n?.desktop && (0, s.jsx)(o.ResponsiveImg, {
+            }), n?.desktop && (0, s.jsx)(r.ResponsiveImg, {
               src: n.desktop,
               ariaLabel: a,
               className: [n?.mobile && U.hiddenMobile, U.responsiveImage].join(" ")
@@ -832,7 +832,7 @@
                   mobile: n?.gifHash?.mobile
                 }]
               })
-            }), t && (0, s.jsx)(o.ImageWithBadge, {
+            }), t && (0, s.jsx)(r.ImageWithBadge, {
               image: t
             }), d && (0, s.jsx)("div", {
               className: [U.responsiveVideo, U.trailer].join(" "),
@@ -845,7 +845,7 @@
             })]
           })
         };
-      var Q = i(3032);
+      var Q = i(2224);
       const J = e => {
           let {
             children: a,
@@ -878,7 +878,7 @@
               backgroundColor: i
             },
             children: (0, s.jsx)("div", {
-              className: "a6afed00140449f9a1f51d5da3595dd14065",
+              className: "_1c6c5e2e5850fea8a1f51d5da3595dd14065",
               style: {
                 backgroundColor: n,
                 position: "absolute",
@@ -897,53 +897,53 @@
             img: n,
             imgMobile: t,
             bgColor: d,
-            descPositionBottom: l,
-            fontColor: r = "#fff"
+            descPositionBottom: c,
+            fontColor: l = "#fff"
           } = e;
           return (0, s.jsxs)(s.Fragment, {
-            children: [l ?? (0, s.jsx)(o.ResponsiveSection, {
+            children: [c ?? (0, s.jsx)(r.ResponsiveSection, {
               style: {
                 backgroundColor: `${d}`,
                 "--padding-top-bottom": "1.75rem"
               },
               className: "normalPaddingTopBottom largePaddingSides",
-              children: (0, s.jsxs)(o.ResponsiveSection, {
+              children: (0, s.jsxs)(r.ResponsiveSection, {
                 className: "maxDescArea",
                 style: {
                   "--desc-h3-margin-bottom": "var(--h-rem-size)"
                 },
                 children: [(0, s.jsx)("h3", {
                   style: {
-                    "--color-span": `${r}`
+                    "--color-span": `${l}`
                   },
                   children: a
                 }), (0, s.jsx)("p", {
                   children: i
                 })]
               })
-            }), (0, s.jsxs)(o.ResponsiveSection, {
-              className: [l ?? "spacing"].join(" "),
-              children: [(0, s.jsx)(o.ResponsiveImg, {
+            }), (0, s.jsxs)(r.ResponsiveSection, {
+              className: [c ?? "spacing"].join(" "),
+              children: [(0, s.jsx)(r.ResponsiveImg, {
                 className: "hiddenMobile",
                 src: n
-              }), (0, s.jsx)(o.ResponsiveImg, {
+              }), (0, s.jsx)(r.ResponsiveImg, {
                 className: "hiddenLarge",
                 src: t
               })]
-            }), l ? (0, s.jsx)(o.ResponsiveSection, {
+            }), c ? (0, s.jsx)(r.ResponsiveSection, {
               style: {
                 backgroundColor: `${d}`,
                 "--padding-top-bottom": "1.75rem"
               },
               className: "normalPaddingTopBottom largePaddingSides spacing",
-              children: (0, s.jsxs)(o.ResponsiveSection, {
+              children: (0, s.jsxs)(r.ResponsiveSection, {
                 className: "maxDescArea",
                 style: {
                   "--desc-h3-margin-bottom": "var(--h-rem-size)"
                 },
                 children: [(0, s.jsx)("h3", {
                   style: {
-                    "--color-span": `${r}`
+                    "--color-span": `${l}`
                   },
                   children: a
                 }), (0, s.jsx)("p", {
@@ -1476,14 +1476,14 @@
         e.hasOwnProperty("loc") && (i.loc = e.loc);
         var t = n[a] || new Set,
           d = new Set,
-          l = new Set;
+          c = new Set;
         for (t.forEach((function(e) {
-            l.add(e)
-          })); l.size > 0;) {
-          var r = l;
-          l = new Set, r.forEach((function(e) {
+            c.add(e)
+          })); c.size > 0;) {
+          var l = c;
+          c = new Set, l.forEach((function(e) {
             d.has(e) || (d.add(e), (n[e] || new Set).forEach((function(e) {
-              l.add(e)
+              c.add(e)
             })))
           }))
         }
@@ -1507,4 +1507,3 @@
     }
   }
 ]);
-//# sourceMappingURL=81715cf54297eb276424.js.map

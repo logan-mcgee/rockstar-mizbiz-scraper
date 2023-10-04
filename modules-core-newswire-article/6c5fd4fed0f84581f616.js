@@ -1,7 +1,7 @@
 "use strict";
 (self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
-  [986], {
-    7986: (e, r, s) => {
+  [595], {
+    6595: (e, r, s) => {
       s.r(r), s.d(r, {
         componentsForTinaParser: () => w
       });
@@ -18,7 +18,7 @@
         p = s.n(k);
       const w = {
         ...o,
-        ...s(3975),
+        ...s(6879),
         ...{
           Gif: n(),
           GroupOfItems: t(),
@@ -30,4 +30,3 @@
     }
   }
 ]);
-//# sourceMappingURL=d511a9e2a116adc7e71d.js.map

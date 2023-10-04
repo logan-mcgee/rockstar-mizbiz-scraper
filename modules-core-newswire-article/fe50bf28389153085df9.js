@@ -1,79 +1,14 @@
 (self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
-  [76, 986, 417], {
-    8076: (e, n, i) => {
-      "use strict";
-      i.r(n), i.d(n, {
-        default: () => c
-      });
-      var a = i(4932),
-        t = i(4859),
-        s = i(8976),
-        d = i(1968),
-        l = i(417),
-        r = i(7259),
-        o = i(6160);
-      const m = e => {
-          let {
-            article: n,
-            relatedBlock: i
-          } = e;
-          switch (n.jsx) {
-            case 0:
-              return (0, o.jsx)(l.Jsx0, {
-                article: n,
-                children: i
-              });
-            case 1:
-              return (0, o.jsx)(l.Jsx1, {
-                article: n,
-                children: i
-              });
-            default:
-              return (0, o.jsx)(l.Jsx2, {
-                payload: n.tina.payload,
-                variablesKeys: n.tina.variables.keys,
-                children: i
-              })
-          }
-        },
-        c = e => {
-          let {
-            idHash: n
-          } = e;
-          const {
-            data: i,
-            loading: l
-          } = (0, t.useQuery)(r.NewswirePost, {
-            variables: {
-              id_hash: n
-            },
-            setTitleDataPath: "post.title",
-            autoSetLoading: !0
-          }), c = i?.post ?? null, u = i?.related?.results ?? null;
-          if ((0, a.useEffect)((() => {
-              c && (window?.instgrm?.Embeds?.process?.(), window?.twttr?.widgets?.load?.())
-            }), [c]), !c || l) return null;
-          const k = u && c.show_related ? (0, o.jsx)(s.NewswireRelated, {
-            posts: u
-          }) : "";
-          return (0, o.jsx)(d.newswirePost.Provider, {
-            article: c,
-            children: (0, o.jsx)(m, {
-              article: c,
-              relatedBlock: k
-            })
-          })
-        }
-    },
-    417: (e, n, i) => {
+  [128, 595, 736], {
+    1736: (e, n, i) => {
       "use strict";
       i.r(n), i.d(n, {
         Jsx0: () => s,
         Jsx1: () => g,
-        Jsx2: () => h
+        Jsx2: () => f
       });
       var a = i(8976);
-      var t = i(6160);
+      var t = i(9817);
       const s = e => {
         let {
           article: n,
@@ -81,15 +16,15 @@
         } = e;
         const s = n.primary_tags[n.primary_tags.length > 1 && 722 === n.primary_tags[0].id ? 1 : 0];
         return (0, t.jsxs)("div", {
-          className: "a6afed00140449f9d680dbb62ac2c9a59f44",
+          className: "_1c6c5e2e5850fea8d680dbb62ac2c9a59f44",
           children: [(0, t.jsxs)("div", {
-            className: "a6afed00140449f9fe0c9ab354abbddb8756",
+            className: "_1c6c5e2e5850fea8fe0c9ab354abbddb8756",
             children: [(0, t.jsxs)("h1", {
               children: [n.title, n.subtitle ? (0, t.jsx)("span", {
                 children: n.subtitle
               }) : ""]
             }), (0, t.jsxs)("div", {
-              className: "a6afed00140449f9ddb6daf6f9db42766ee7",
+              className: "_1c6c5e2e5850fea8ddb6daf6f9db42766ee7",
               children: [n.primary_tags.length ? (0, t.jsx)(a.NewswireTag, {
                 title: s.name,
                 href: `/newswire?tag_id=${s.id}`
@@ -98,12 +33,12 @@
                 children: n.created_formatted
               })]
             }), n.posts_hero && "iframe" === n.posts_hero.type ? (0, t.jsx)("div", {
-              className: "a6afed00140449f9f2956f0c5077d5814eed",
+              className: "_1c6c5e2e5850fea8f2956f0c5077d5814eed",
               children: (0, t.jsx)("iframe", {
                 src: n.posts_hero.hero
               })
             }) : "", (0, t.jsx)("div", {
-              className: "a6afed00140449f9cd439fe9262aab24bbd5",
+              className: "_1c6c5e2e5850fea8cd439fe9262aab24bbd5",
               dangerouslySetInnerHTML: {
                 __html: n.content
               }
@@ -112,14 +47,14 @@
         })
       };
       var d = i(4932),
-        l = i(7218),
+        l = i(3319),
         r = i.n(l),
         o = i(9929),
-        m = i(420),
-        c = i.n(m),
+        c = i(420),
+        m = i.n(c),
         u = i(8356),
         k = i.n(u),
-        v = i(3975);
+        v = i(6879);
       const g = (0, o.withTranslations)((0, o.withLocale)((e => {
         let {
           article: n,
@@ -170,7 +105,7 @@
             Grid: e => (0, t.jsx)(a.Grid, {
               ...e
             }),
-            GroupOfItems: e => (0, t.jsx)(c(), {
+            GroupOfItems: e => (0, t.jsx)(m(), {
               ...e
             }),
             HeroImage: e => (0, t.jsx)(v.HeroImage, {
@@ -225,7 +160,7 @@
               ...e
             })
           },
-          m = n.posts_jsx.variables_us_defaulted,
+          c = n.posts_jsx.variables_us_defaulted,
           [u] = (0, d.useState)((0, t.jsx)(r(), {
             renderInWrapper: !1,
             bindings: {
@@ -238,7 +173,7 @@
               article: n,
               locale: s,
               t: l,
-              variables: m
+              variables: c
             },
             components: o,
             jsx: n.posts_jsx.markup,
@@ -247,20 +182,20 @@
             }
           }));
         return (0, t.jsxs)("div", {
-          className: "a6afed00140449f9dca988c805a8fc3cf0b8",
+          className: "_1c6c5e2e5850fea8dca988c805a8fc3cf0b8",
           children: [u, i]
         })
       })));
       var p = i(9542),
-        f = i(7986);
-      const h = e => {
+        h = i(6595);
+      const f = e => {
         let {
           children: n,
           payload: i,
           variablesKeys: a
         } = e;
         return (0, t.jsxs)("div", {
-          className: "a6afed00140449f9f5d1f51c8ee4ad8ccbbd",
+          className: "_1c6c5e2e5850fea8f5d1f51c8ee4ad8ccbbd",
           children: [(0, t.jsx)(p.TinaParser, {
             tina: {
               payload: i,
@@ -268,12 +203,12 @@
                 keys: a
               }
             },
-            components: f.componentsForTinaParser
+            components: h.componentsForTinaParser
           }), n]
         })
       }
     },
-    7986: (e, n, i) => {
+    6595: (e, n, i) => {
       "use strict";
       i.r(n), i.d(n, {
         componentsForTinaParser: () => v
@@ -285,21 +220,86 @@
         l = i.n(d),
         r = i(3750),
         o = i.n(r),
-        m = i(4224),
-        c = i.n(m),
+        c = i(4224),
+        m = i.n(c),
         u = i(5551),
         k = i.n(u);
       const v = {
         ...a,
-        ...i(3975),
+        ...i(6879),
         ...{
           Gif: s(),
           GroupOfItems: l(),
           SwiperCarousel: o(),
-          RockstarVideoPlayer: c(),
+          RockstarVideoPlayer: m(),
           UGCJobSpotlight: k()
         }
       }
+    },
+    128: (e, n, i) => {
+      "use strict";
+      i.r(n), i.d(n, {
+        default: () => m
+      });
+      var a = i(4932),
+        t = i(4859),
+        s = i(8976),
+        d = i(1968),
+        l = i(1736),
+        r = i(7259),
+        o = i(9817);
+      const c = e => {
+          let {
+            article: n,
+            relatedBlock: i
+          } = e;
+          switch (n.jsx) {
+            case 0:
+              return (0, o.jsx)(l.Jsx0, {
+                article: n,
+                children: i
+              });
+            case 1:
+              return (0, o.jsx)(l.Jsx1, {
+                article: n,
+                children: i
+              });
+            default:
+              return (0, o.jsx)(l.Jsx2, {
+                payload: n.tina.payload,
+                variablesKeys: n.tina.variables.keys,
+                children: i
+              })
+          }
+        },
+        m = e => {
+          let {
+            idHash: n
+          } = e;
+          const {
+            data: i,
+            loading: l
+          } = (0, t.useQuery)(r.NewswirePost, {
+            variables: {
+              id_hash: n
+            },
+            setTitleDataPath: "post.title",
+            autoSetLoading: !0
+          }), m = i?.post ?? null, u = i?.related?.results ?? null;
+          if ((0, a.useEffect)((() => {
+              m && (window?.instgrm?.Embeds?.process?.(), window?.twttr?.widgets?.load?.())
+            }), [m]), !m || l) return null;
+          const k = u && m.show_related ? (0, o.jsx)(s.NewswireRelated, {
+            posts: u
+          }) : "";
+          return (0, o.jsx)(d.newswirePost.Provider, {
+            article: m,
+            children: (0, o.jsx)(c, {
+              article: m,
+              relatedBlock: k
+            })
+          })
+        }
     },
     7259: (e, n, i) => {
       var a = {
@@ -934,4 +934,3 @@
     }
   }
 ]);
-//# sourceMappingURL=c65eb6399e9cb1e0c908.js.map

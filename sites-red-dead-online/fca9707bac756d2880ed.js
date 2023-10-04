@@ -1,6 +1,6 @@
 (self.webpackChunk_rockstargames_sites_red_dead_online = self.webpackChunk_rockstargames_sites_red_dead_online || []).push([
-  [307], {
-    6307: (e, a, t) => {
+  [532], {
+    8532: (e, a, t) => {
       "use strict";
       t.r(a), t.d(a, {
         default: () => Oe
@@ -9,36 +9,36 @@
         i = t(8976),
         s = t(4932),
         o = t(9929),
-        r = t(6716),
+        r = t(9097),
         m = t.n(r),
-        c = t(3646);
-      const d = {
-        clubRewardsModule: "_660934dec68cf206ccadaab2fcaf7e08c313",
-        mainImg: "_660934dec68cf206af5622b6110ec369e00c",
-        imgLoaded: "_660934dec68cf206c9238225678388da5457",
-        imgHidden: "_660934dec68cf206ccd94928871795f54b93",
-        trackGrid: "_660934dec68cf206e6fd99433636a9632159",
-        trackDragging: "_660934dec68cf206b70571c92b7c8a31580c",
-        trackWrapper: "_660934dec68cf206aa246fdd28391d4b0807",
-        pass_1: "_660934dec68cf206ab83cdd82f92c74f1a12",
-        activeTrackItem: "_660934dec68cf206d24ea1430f9e42ef6ef7",
-        pagingWrapper: "_660934dec68cf206a72ee0b3431e25be1dc9",
-        paging: "_660934dec68cf206b4c2be9e247d30d0d353",
-        activePage: "_660934dec68cf206b0f9cab80748df0f1976",
-        description: "_660934dec68cf206e0c48f1b2f7953f76ed4",
-        iconPass_0: "_660934dec68cf206a145de0418a424ea1618",
-        iconPass_1: "_660934dec68cf206aeb0748cdadf55361773"
+        d = t(3646);
+      const c = {
+        clubRewardsModule: "_162f0ace902dd580ccadaab2fcaf7e08c313",
+        mainImg: "_162f0ace902dd580af5622b6110ec369e00c",
+        imgLoaded: "_162f0ace902dd580c9238225678388da5457",
+        imgHidden: "_162f0ace902dd580ccd94928871795f54b93",
+        trackGrid: "_162f0ace902dd580e6fd99433636a9632159",
+        trackDragging: "_162f0ace902dd580b70571c92b7c8a31580c",
+        trackWrapper: "_162f0ace902dd580aa246fdd28391d4b0807",
+        pass_1: "_162f0ace902dd580ab83cdd82f92c74f1a12",
+        activeTrackItem: "_162f0ace902dd580d24ea1430f9e42ef6ef7",
+        pagingWrapper: "_162f0ace902dd580a72ee0b3431e25be1dc9",
+        paging: "_162f0ace902dd580b4c2be9e247d30d0d353",
+        activePage: "_162f0ace902dd580b0f9cab80748df0f1976",
+        description: "_162f0ace902dd580e0c48f1b2f7953f76ed4",
+        iconPass_0: "_162f0ace902dd580a145de0418a424ea1618",
+        iconPass_1: "_162f0ace902dd580aeb0748cdadf55361773"
       };
-      var l = t(6160);
+      var l = t(9817);
       const p = e => {
           let {
             activeItem: a,
             pass: t
           } = e;
           return (0, l.jsxs)("div", {
-            className: d.description,
+            className: c.description,
             children: [(0, l.jsx)("i", {
-              className: d[`iconPass_${t}`]
+              className: c[`iconPass_${t}`]
             }), (0, l.jsx)("h3", {
               children: a.name
             }), (0, l.jsx)("p", {
@@ -55,7 +55,7 @@
             [i] = (0, o.usePreloadImg)(n);
           return (0, l.jsx)("div", {
             role: "img",
-            className: [d.mainImg, i ? d.imgLoaded : d.imgHidden].join(" "),
+            className: [c.mainImg, i ? c.imgLoaded : c.imgHidden].join(" "),
             style: {
               background: `url(${n}) no-repeat center/cover`
             },
@@ -71,16 +71,16 @@
             pass: o
           } = e;
           const r = (0, s.useRef)(null),
-            [c, p] = (0, s.useState)(0),
+            [d, p] = (0, s.useState)(0),
             [g, u] = (0, s.useState)(0),
             [f, k] = (0, s.useState)(null);
           return (0, s.useEffect)((() => {
             const e = new(m())(r.current),
               a = e => {
-                p(c - 1 < 0 ? 0 : c - 1), u(0)
+                p(d - 1 < 0 ? 0 : d - 1), u(0)
               },
               t = () => {
-                p(c + 1 >= f ? f - 1 : c + 1), u(0)
+                p(d + 1 >= f ? f - 1 : d + 1), u(0)
               },
               n = e => {
                 u(e.isFinal ? 0 : e.deltaX)
@@ -91,22 +91,22 @@
             return e.on("swiperight", a), e.on("swipeleft", t), e.on("pan", n), e.on("panend", i), () => {
               e.off("swiperight", a), e.off("swipeleft", t), e.off("pan", n), e.off("panend", i), u(0)
             }
-          }), [r.current, c]), (0, s.useEffect)((() => {
+          }), [r.current, d]), (0, s.useEffect)((() => {
             const e = () => {
               const e = window.getComputedStyle(r.current).getPropertyValue("--per-page"),
                 a = Math.ceil(n.length / Number(e));
-              c >= a && p(a - 1), k(a)
+              d >= a && p(a - 1), k(a)
             };
             return window.addEventListener("resize", e), e(), () => {
               window.removeEventListener("resize", e)
             }
           }), []), (0, l.jsxs)("div", {
-            className: [d.trackWrapper, d[`pass_${o}`]].join(" "),
+            className: [c.trackWrapper, c[`pass_${o}`]].join(" "),
             style: {
-              "--current-page": c
+              "--current-page": d
             },
             children: [(0, l.jsx)("div", {
-              className: [d.trackGrid, 0 !== g ? d.trackDragging : ""].join(" "),
+              className: [c.trackGrid, 0 !== g ? c.trackDragging : ""].join(" "),
               ref: r,
               style: {
                 "--drag-x": `${g}px`
@@ -115,7 +115,7 @@
                 onClick: () => {
                   t && i(e)
                 },
-                className: a.id === e.id ? d.activeTrackItem : "",
+                className: a.id === e.id ? c.activeTrackItem : "",
                 style: {
                   backgroundImage: `url(${e.img_thumb})`
                 },
@@ -124,12 +124,12 @@
                 })
               }, e.id)))
             }), (0, l.jsx)("div", {
-              className: d.pagingWrapper,
+              className: c.pagingWrapper,
               children: (0, l.jsx)("div", {
-                className: d.paging,
+                className: c.paging,
                 children: Array.from(new Array(f)).map(((e, a) => (0, l.jsx)("a", {
                   onClick: () => p(a),
-                  className: c === a ? d.activePage : ""
+                  className: d === a ? c.activePage : ""
                 }, a)))
               })
             })]
@@ -143,7 +143,7 @@
           } = e;
           const {
             data: o
-          } = (0, n.useQuery)(c.RDOClubRewards, {
+          } = (0, n.useQuery)(d.RDOClubRewards, {
             variables: {
               clubId: t
             }
@@ -154,7 +154,7 @@
               m(e), k(e[0])
             }
           }), [o]), o && r.length ? (0, l.jsxs)("div", {
-            className: d.clubRewardsModule,
+            className: c.clubRewardsModule,
             children: [a ? (0, l.jsx)(g, {
               activeItem: f,
               clubId: t,
@@ -178,7 +178,7 @@
             t
           } = e;
           return (0, l.jsxs)("section", {
-            className: "_660934dec68cf206f1055fa289795198755f",
+            className: "_162f0ace902dd580f1055fa289795198755f",
             children: [(0, l.jsx)(i.A, {
               to: "../features",
               children: t("Features")
@@ -193,13 +193,13 @@
             feature: a
           } = e;
           return (0, l.jsx)("section", {
-            className: "_660934dec68cf206ee922d017311487a492e",
+            className: "_162f0ace902dd580ee922d017311487a492e",
             dangerouslySetInnerHTML: {
               __html: a.description
             }
           })
         },
-        h = "_660934dec68cf206eacd88231f2d9c4026ee";
+        h = "_162f0ace902dd580eacd88231f2d9c4026ee";
       (0, o.importAll)(t(8354));
       const b = e => {
           let {
@@ -232,7 +232,7 @@
           })
         },
         x = {
-          title: "_660934dec68cf206a5e019f178b514f6ab59"
+          title: "_162f0ace902dd580a5e019f178b514f6ab59"
         };
       (0, o.importAll)(t(1144));
       const j = (0, o.withLocale)((e => {
@@ -256,12 +256,12 @@
             relativeTo: t = ""
           } = e;
           return (0, l.jsxs)(i.A, {
-            className: "_660934dec68cf206abfafaee40039fe70d45",
+            className: "_162f0ace902dd580abfafaee40039fe70d45",
             to: `${t}features/${a.title_slug}`,
             children: [(0, l.jsx)(b, {
               titleSlug: a.title_slug
             }), (0, l.jsx)(j, {
-              className: "_660934dec68cf206d447420c58422bfaa72f",
+              className: "_162f0ace902dd580d447420c58422bfaa72f",
               titleSlug: a.title_slug
             })]
           })
@@ -272,7 +272,7 @@
           titleSlug: a
         } = e;
         return (0, l.jsxs)("section", {
-          className: "_660934dec68cf206fb3f3d58ed88db9ca53d",
+          className: "_162f0ace902dd580fb3f3d58ed88db9ca53d",
           children: [(0, l.jsx)("video", {
             src: t(3271)(`./${a}.mp4`),
             muted: !0,
@@ -291,18 +291,18 @@
             t: i
           } = e;
           return n.length ? (0, l.jsxs)("section", {
-            className: "_660934dec68cf206b7dc4eccfc0d4377cf7a",
+            className: "_162f0ace902dd580b7dc4eccfc0d4377cf7a",
             children: [(0, l.jsx)("h2", {
               children: i("Tips")
             }), (0, l.jsx)("div", {
-              className: "_660934dec68cf206fa7d86bb1b6fe3142155",
+              className: "_162f0ace902dd580fa7d86bb1b6fe3142155",
               children: n.map((e => {
                 const n = t(9424)(`./${a.title_slug}/${e.slug}.jpg`);
                 return (0, l.jsxs)("div", {
                   children: [(0, l.jsx)("div", {
                     role: "img",
                     "aria-label": e?.description ?? "",
-                    className: "_660934dec68cf206da6e35425feb789bef9f",
+                    className: "_162f0ace902dd580da6e35425feb789bef9f",
                     style: {
                       "--aspect-ratio": "16/9",
                       background: `url(${n}) center/cover`
@@ -314,10 +314,10 @@
           }) : null
         }), "rdo"),
         S = {
-          cta: "_660934dec68cf206a15dfc4e294d6c9ad6cd",
-          gameSiteHeader: "_660934dec68cf206dbfca4ba756deb0d120e",
-          headerLogo: "_660934dec68cf206aa07874833f3354e7dbd",
-          activeClassName: "_660934dec68cf206bbe36be5a185d0ab4f7c"
+          cta: "_162f0ace902dd580a15dfc4e294d6c9ad6cd",
+          gameSiteHeader: "_162f0ace902dd580dbfca4ba756deb0d120e",
+          headerLogo: "_162f0ace902dd580aa07874833f3354e7dbd",
+          activeClassName: "_162f0ace902dd580bbe36be5a185d0ab4f7c"
         },
         y = (0, o.withTranslations)((0, o.withLocale)((e => {
           let {
@@ -401,7 +401,7 @@
             text: a
           } = e;
           return (0, l.jsx)("h2", {
-            className: "_660934dec68cf206ed9d370aef3c2328abaa",
+            className: "_162f0ace902dd580ed9d370aef3c2328abaa",
             children: (0, l.jsx)("span", {
               children: a
             })
@@ -413,7 +413,7 @@
             highlight: a
           } = e;
           return (0, l.jsx)(i.A, {
-            className: "_660934dec68cf206a85193327cc1dd801753",
+            className: "_162f0ace902dd580a85193327cc1dd801753",
             style: {
               "--aspect-ratio": "1/1",
               background: `url(${t(9578)(`./${a.title_slug}.jpg`)}) center/contain`
@@ -422,11 +422,11 @@
           })
         })),
         O = {
-          swipe: "_660934dec68cf206d2eebb12f1a5664cbae0",
-          red: "_660934dec68cf206a150ce1b48e72bcc895f",
-          gray: "_660934dec68cf206fb83e1a328187cce0542",
-          gold: "_660934dec68cf206d026f02a6d6d5d507051",
-          link: "_660934dec68cf206c3c2fb4a86b610aee3a5"
+          swipe: "_162f0ace902dd580d2eebb12f1a5664cbae0",
+          red: "_162f0ace902dd580a150ce1b48e72bcc895f",
+          gray: "_162f0ace902dd580fb83e1a328187cce0542",
+          gold: "_162f0ace902dd580d026f02a6d6d5d507051",
+          link: "_162f0ace902dd580c3c2fb4a86b610aee3a5"
         },
         T = e => {
           let {
@@ -442,22 +442,22 @@
             children: t
           })
         };
-      var V = t(7455);
+      var V = t(6195);
       const E = {
-        bottom: "_660934dec68cf206cb25dd514d4388b5473f",
-        top: "_660934dec68cf206fc083bcad8f56dcdfe04",
-        topImg1: "_660934dec68cf206a8e77fd0d09118d5509f",
-        shopImg: "_660934dec68cf206d030020b32a1d352e29c",
-        shops: "_660934dec68cf206ad0db887485bc77c0a73",
-        shop: "_660934dec68cf206b043cdc0273b1bc1e87b",
-        wheelerLink: "_660934dec68cf206a323d909c4cbc9f2b5f3",
-        goldImg: "_660934dec68cf206fa70c187dcb415b696a2",
-        bars: "_660934dec68cf206b5ffda2a56276daa9b7f",
-        bar: "_660934dec68cf206dba52709d23873dc0dfa",
-        activeBar: "_660934dec68cf206ded0dd437157d5023e32",
-        barOptions: "_660934dec68cf206ec3d5f34279ec45a4a43",
-        barPs4: "_660934dec68cf206b5cde09fc5de3967a884",
-        barXbox: "_660934dec68cf206b2e699d0bc427428b5d1"
+        bottom: "_162f0ace902dd580cb25dd514d4388b5473f",
+        top: "_162f0ace902dd580fc083bcad8f56dcdfe04",
+        topImg1: "_162f0ace902dd580a8e77fd0d09118d5509f",
+        shopImg: "_162f0ace902dd580d030020b32a1d352e29c",
+        shops: "_162f0ace902dd580ad0db887485bc77c0a73",
+        shop: "_162f0ace902dd580b043cdc0273b1bc1e87b",
+        wheelerLink: "_162f0ace902dd580a323d909c4cbc9f2b5f3",
+        goldImg: "_162f0ace902dd580fa70c187dcb415b696a2",
+        bars: "_162f0ace902dd580b5ffda2a56276daa9b7f",
+        bar: "_162f0ace902dd580dba52709d23873dc0dfa",
+        activeBar: "_162f0ace902dd580ded0dd437157d5023e32",
+        barOptions: "_162f0ace902dd580ec3d5f34279ec45a4a43",
+        barPs4: "_162f0ace902dd580b5cde09fc5de3967a884",
+        barXbox: "_162f0ace902dd580b2e699d0bc427428b5d1"
       };
       (0, o.importAll)(t(5543));
       const I = (0, o.withTranslations)((e => {
@@ -553,15 +553,15 @@
         A = t(4224),
         L = t.n(A);
       const R = {
-          clubRewards: "_660934dec68cf206b1577a4e13a17a0345fc",
-          appreciation: "_660934dec68cf206cda92f3a22294ba07942",
-          top: "_660934dec68cf206ca0b9995351bd58be1a6",
-          topImg: "_660934dec68cf206bb22b2594e8554ec92ed",
-          infoGrid: "_660934dec68cf206ae9cd5ee33eb9632cb84",
-          vid: "_660934dec68cf206d29acc3add5988133a11",
-          previously: "_660934dec68cf206bac88d29194fe8e0cf2f",
-          "smMax({\n            grid-area: span 1 / span 2;\n        })": "_660934dec68cf206df637f0c556aefd31b95",
-          vidWrapper: "_660934dec68cf206af6f8550d3db99ca2225"
+          clubRewards: "_162f0ace902dd580b1577a4e13a17a0345fc",
+          appreciation: "_162f0ace902dd580cda92f3a22294ba07942",
+          top: "_162f0ace902dd580ca0b9995351bd58be1a6",
+          topImg: "_162f0ace902dd580bb22b2594e8554ec92ed",
+          infoGrid: "_162f0ace902dd580ae9cd5ee33eb9632cb84",
+          vid: "_162f0ace902dd580d29acc3add5988133a11",
+          previously: "_162f0ace902dd580bac88d29194fe8e0cf2f",
+          "smMax({\n            grid-area: span 1 / span 2;\n        })": "_162f0ace902dd580df637f0c556aefd31b95",
+          vidWrapper: "_162f0ace902dd580af6f8550d3db99ca2225"
         },
         C = (0, o.withTranslations)((e => {
           let {
@@ -621,11 +621,11 @@
           })
         }), "rdo"),
         U = {
-          clubRewards: "_660934dec68cf206e47471bff97dba4f905a",
-          info: "_660934dec68cf206f41c60e8a1919c0d2e4f",
-          vid: "_660934dec68cf206d3bbedbbf2e704ae7fe9",
-          appreciation: "_660934dec68cf206e20ab13adce413d0741b",
-          topImg: "_660934dec68cf206a859a1dc78097b8fa167"
+          clubRewards: "_162f0ace902dd580e47471bff97dba4f905a",
+          info: "_162f0ace902dd580f41c60e8a1919c0d2e4f",
+          vid: "_162f0ace902dd580d3bbedbbf2e704ae7fe9",
+          appreciation: "_162f0ace902dd580e20ab13adce413d0741b",
+          topImg: "_162f0ace902dd580a859a1dc78097b8fa167"
         },
         M = (0, o.withTranslations)((e => {
           let {
@@ -687,17 +687,14 @@
           } = e;
           return "halloween" === a ? (0, l.jsx)(M, {}) : (0, l.jsx)(C, {})
         },
-        q = e => {
-          let {
-            t: a
-          } = e;
-          return (0, n.useQuery)($.Meta, {
-            variables: {
-              url: "/reddeadonline/clubrewards"
-            },
-            autoSetLoading: !0
-          }), (0, l.jsx)(B, {})
-        };
+        q = () => ((0, n.useQuery)($.Meta, {
+          variables: {
+            url: "/reddeadonline/clubrewards"
+          },
+          autoSetLoading: !0
+        }), (0, l.jsx)(B, {
+          type: "halloween"
+        }));
       var H = t(9418);
       const P = () => {
         const {
@@ -706,7 +703,7 @@
           autoSetLoading: !0
         }), a = e?.features;
         return a ? (0, l.jsx)("section", {
-          className: "_660934dec68cf206b23f05875f7ffabcd274",
+          className: "_162f0ace902dd580b23f05875f7ffabcd274",
           children: a.map(((e, a) => (0, l.jsx)(N, {
             feature: e,
             relativeTo: "../"
@@ -736,24 +733,24 @@
               behavior: "smooth"
             })
           }), [i]), (0, l.jsxs)("div", {
-            className: "_660934dec68cf206b49ec1143b8ca1126605",
+            className: "_162f0ace902dd580b49ec1143b8ca1126605",
             children: [(0, l.jsx)(w, {
               titleSlug: a.title_slug,
               titleImg: a.img_title
             }), (0, l.jsx)(_, {
               feature: a
             }), (0, l.jsx)("section", {
-              className: "_660934dec68cf206e1b0bf5481c9ca8c3eaf",
+              className: "_162f0ace902dd580e1b0bf5481c9ca8c3eaf",
               ref: n,
               children: a.sub_features.map(((e, a) => (0, l.jsx)("button", {
-                className: i === a ? "_660934dec68cf206b708e4c7cc6bb33d4fe4" : "",
+                className: i === a ? "_162f0ace902dd580b708e4c7cc6bb33d4fe4" : "",
                 onClick: () => o(a),
                 children: e.title
               }, e.title_slug)))
             }), (0, l.jsx)("section", {
-              className: "_660934dec68cf206bf34f1b8d6f84177a93f",
+              className: "_162f0ace902dd580bf34f1b8d6f84177a93f",
               children: a.sub_features.map(((e, n) => (0, l.jsxs)("div", {
-                className: "_660934dec68cf206fc2f955af0c582bc1679",
+                className: "_162f0ace902dd580fc2f955af0c582bc1679",
                 ref: e => t.current[n] = e,
                 children: [(0, l.jsx)(v, {
                   titleSlug: a.title_slug,
@@ -761,12 +758,12 @@
                 }), (0, l.jsx)("h1", {
                   children: e.title
                 }), e.description ? (0, l.jsx)("div", {
-                  className: "_660934dec68cf206c449a2e164887b3bac8e",
+                  className: "_162f0ace902dd580c449a2e164887b3bac8e",
                   dangerouslySetInnerHTML: {
                     __html: e.description
                   }
                 }) : "", e.details ? (0, l.jsx)("span", {
-                  className: "_660934dec68cf206ee230c8a048c1e8cf597",
+                  className: "_162f0ace902dd580ee230c8a048c1e8cf597",
                   dangerouslySetInnerHTML: {
                     __html: e.details
                   }
@@ -776,24 +773,24 @@
           })
         },
         K = {
-          roles: "_660934dec68cf206e7698dc932dfb1be3219",
-          details: "_660934dec68cf206d18a8c35c21f59c09878",
-          infoBlocks: "_660934dec68cf206f71b2bb46495a1c57c6b",
-          nav: "_660934dec68cf206d062cfc4d789f4e8ed68",
-          prestigious: "_660934dec68cf206c998bcb05b1017938fe9",
-          progression: "_660934dec68cf206eb7677ea5f2b7b1852d8",
-          top: "_660934dec68cf206cc536ba173219eb00706",
-          activeNavItem: "_660934dec68cf206afcaea8df76fb38e0a97",
-          navImg: "_660934dec68cf206b8ba043fd0de82b79d25",
-          mobileActiveRole: "_660934dec68cf206f83c69f3251d3cf56763",
-          infoBlock: "_660934dec68cf206d53c14c1663d3b20b407",
-          infoBlockImg: "_660934dec68cf206ec5d4f9c815547bfa3a2",
-          navTitle: "_660934dec68cf206c3b892344bc0f558df44",
-          detailsText: "_660934dec68cf206dcda64b437f0674107b6",
-          progressionText: "_660934dec68cf206c6ef35b3d8045c419715",
-          progressionItems: "_660934dec68cf206bab913608fd5d31732ac",
-          progressionItem: "_660934dec68cf206d40277eab3f53d095825",
-          progressionItemText: "_660934dec68cf206d51d5d8b18e137d0fc5a"
+          roles: "_162f0ace902dd580e7698dc932dfb1be3219",
+          details: "_162f0ace902dd580d18a8c35c21f59c09878",
+          infoBlocks: "_162f0ace902dd580f71b2bb46495a1c57c6b",
+          nav: "_162f0ace902dd580d062cfc4d789f4e8ed68",
+          prestigious: "_162f0ace902dd580c998bcb05b1017938fe9",
+          progression: "_162f0ace902dd580eb7677ea5f2b7b1852d8",
+          top: "_162f0ace902dd580cc536ba173219eb00706",
+          activeNavItem: "_162f0ace902dd580afcaea8df76fb38e0a97",
+          navImg: "_162f0ace902dd580b8ba043fd0de82b79d25",
+          mobileActiveRole: "_162f0ace902dd580f83c69f3251d3cf56763",
+          infoBlock: "_162f0ace902dd580d53c14c1663d3b20b407",
+          infoBlockImg: "_162f0ace902dd580ec5d4f9c815547bfa3a2",
+          navTitle: "_162f0ace902dd580c3b892344bc0f558df44",
+          detailsText: "_162f0ace902dd580dcda64b437f0674107b6",
+          progressionText: "_162f0ace902dd580c6ef35b3d8045c419715",
+          progressionItems: "_162f0ace902dd580bab913608fd5d31732ac",
+          progressionItem: "_162f0ace902dd580d40277eab3f53d095825",
+          progressionItemText: "_162f0ace902dd580d51d5d8b18e137d0fc5a"
         };
       (0, o.importAll)(t(7848));
       const Y = e => {
@@ -873,11 +870,11 @@
             roles: n,
             t: r
           } = e;
-          const [m, c] = (0, s.useState)(null), d = (0, o.useQueryParams)();
+          const [m, d] = (0, s.useState)(null), c = (0, o.useQueryParams)();
           return (0, s.useEffect)((() => {
-            const e = null === d.get("active") ? n[0] : n.find((e => e.title_slug === d.get("active")));
-            c(e)
-          }), [d.get("active")]), null === m ? null : (0, l.jsxs)("div", {
+            const e = null === c.get("active") ? n[0] : n.find((e => e.title_slug === c.get("active")));
+            d(e)
+          }), [c.get("active")]), null === m ? null : (0, l.jsxs)("div", {
             className: K.roles,
             children: [(0, l.jsxs)("section", {
               className: K.top,
@@ -975,7 +972,7 @@
           })
         }), "rdo"),
         ne = {
-          showdownAndElimination: "_660934dec68cf206a1e115a2a97b6e796bda"
+          showdownAndElimination: "_162f0ace902dd580a1e115a2a97b6e796bda"
         },
         ie = e => {
           let {
@@ -1030,9 +1027,9 @@
               feature: a,
               tips: a.tips
             }), (0, l.jsx)("section", {
-              className: "_660934dec68cf206e43765ef28087b6494a8",
+              className: "_162f0ace902dd580e43765ef28087b6494a8",
               children: a.sub_features.map((e => (0, l.jsxs)("div", {
-                className: "_660934dec68cf206dc432c1eb1d7f5bd377d",
+                className: "_162f0ace902dd580dc432c1eb1d7f5bd377d",
                 ref: a => t.current[e.title_slug] = a,
                 children: [(0, l.jsx)(v, {
                   titleSlug: a.title_slug,
@@ -1097,39 +1094,39 @@
             })
         }
         return (0, l.jsxs)("div", {
-          className: "_660934dec68cf206b8b3e25094ac7b4b250d",
+          className: "_162f0ace902dd580b8b3e25094ac7b4b250d",
           children: [(0, l.jsx)(k, {
             breadcrumbs: i
           }), o]
         })
       };
-      var ce = t(4407);
-      const de = {
-          home: "_660934dec68cf206c4b20405ad56a3b4dd00",
-          top: "_660934dec68cf206f4d9c4aff7bbdda6dd45",
-          intro: "_660934dec68cf206a9114d72a13d3e645f63",
-          introContent: "_660934dec68cf206e40b113a28ae6dc1f8c8",
-          content: "_660934dec68cf206d75da5505f268ff6f00b",
-          links: "_660934dec68cf206ba7c7f2fa9ba22983387",
-          dirt: "_660934dec68cf206fedf889fd13baa47cb8e",
-          wheelerRawson: "_660934dec68cf206ec8885f19d3f32213cbf",
-          wheelerWrapper: "_660934dec68cf206e906099377a0b46cbdb5",
-          wheelerContent: "_660934dec68cf206ec6c594ee87e83e17197",
-          pcHighlight: "_660934dec68cf206ba7ffaa4732eed8bfeba",
-          grid: "_660934dec68cf206aa5b8dd9b429d6f0467b",
-          news: "_660934dec68cf206f309d1f3cf9ce61221f9",
-          newsEtc: "_660934dec68cf206d2090ed57483dc68c00b",
-          gameLogo: "_660934dec68cf206cb75b9c48f5bfdad35bd",
-          features: "_660934dec68cf206c974aa4051cf82c33b74"
+      var de = t(4407);
+      const ce = {
+          home: "_162f0ace902dd580c4b20405ad56a3b4dd00",
+          top: "_162f0ace902dd580f4d9c4aff7bbdda6dd45",
+          intro: "_162f0ace902dd580a9114d72a13d3e645f63",
+          introContent: "_162f0ace902dd580e40b113a28ae6dc1f8c8",
+          content: "_162f0ace902dd580d75da5505f268ff6f00b",
+          links: "_162f0ace902dd580ba7c7f2fa9ba22983387",
+          dirt: "_162f0ace902dd580fedf889fd13baa47cb8e",
+          wheelerRawson: "_162f0ace902dd580ec8885f19d3f32213cbf",
+          wheelerWrapper: "_162f0ace902dd580e906099377a0b46cbdb5",
+          wheelerContent: "_162f0ace902dd580ec6c594ee87e83e17197",
+          pcHighlight: "_162f0ace902dd580ba7ffaa4732eed8bfeba",
+          grid: "_162f0ace902dd580aa5b8dd9b429d6f0467b",
+          news: "_162f0ace902dd580f309d1f3cf9ce61221f9",
+          newsEtc: "_162f0ace902dd580d2090ed57483dc68c00b",
+          gameLogo: "_162f0ace902dd580cb75b9c48f5bfdad35bd",
+          features: "_162f0ace902dd580c974aa4051cf82c33b74"
         },
         le = e => {
           let {
             t: a
           } = e;
           return (0, l.jsx)("section", {
-            className: de.intro,
+            className: ce.intro,
             children: (0, l.jsxs)("div", {
-              className: de.introContent,
+              className: ce.introContent,
               children: [(0, l.jsx)("h3", {
                 children: a("home-intro")
               }), (0, l.jsx)("p", {
@@ -1145,9 +1142,9 @@
             t: a
           } = e;
           return (0, l.jsx)("div", {
-            className: de.wheelerRawson,
+            className: ce.wheelerRawson,
             children: (0, l.jsxs)("div", {
-              className: de.wheelerContent,
+              className: ce.wheelerContent,
               children: [(0, l.jsx)("h2", {
                 children: a("clubrewards-header")
               }), (0, l.jsx)("h3", {
@@ -1166,16 +1163,16 @@
             features: t
           } = e;
           return (0, l.jsxs)("section", {
-            className: de.features,
+            className: ce.features,
             children: [(0, l.jsx)(F, {
               text: a("Features")
             }), (0, l.jsx)("div", {
-              className: de.grid,
+              className: ce.grid,
               children: t.map((e => (0, l.jsx)(N, {
                 feature: e
               }, e.title_slug)))
             }), (0, l.jsx)("div", {
-              className: de.newsEtc,
+              className: ce.newsEtc,
               children: (0, l.jsx)(T, {
                 color: "red",
                 text: a("more-features"),
@@ -1190,13 +1187,13 @@
             highlights: t
           } = e;
           return (0, l.jsxs)("section", {
-            className: de.highlights,
+            className: ce.highlights,
             children: [(0, l.jsx)(F, {
               text: a("Highlights")
             }), (0, l.jsx)(pe, {
               t: a
             }), (0, l.jsx)("div", {
-              className: de.grid,
+              className: ce.grid,
               children: t.map((e => (0, l.jsx)(D, {
                 highlight: e
               }, e.title_slug)))
@@ -1210,11 +1207,11 @@
             posts: n
           } = e;
           return (0, l.jsxs)("section", {
-            className: de.news,
+            className: ce.news,
             children: [(0, l.jsx)(F, {
               text: a("News")
             }), (0, l.jsx)("div", {
-              className: de.grid,
+              className: ce.grid,
               children: n.map((e => (0, l.jsxs)(i.A, {
                 to: e.url,
                 children: [(0, l.jsx)("div", {
@@ -1227,7 +1224,7 @@
                 })]
               }, e.id)))
             }), (0, l.jsxs)("div", {
-              className: de.newsEtc,
+              className: ce.newsEtc,
               children: [(0, l.jsx)(T, {
                 color: "gray",
                 text: t.title,
@@ -1251,13 +1248,13 @@
           return (0, s.useEffect)((() => {
             i || o ? r.current.pause() : r.current.play()
           }), [i, o]), (0, l.jsxs)("section", {
-            className: de.top,
+            className: ce.top,
             children: [(0, l.jsxs)("div", {
-              className: de.content,
+              className: ce.content,
               children: [(0, l.jsx)("div", {
-                className: de.gameLogo
+                className: ce.gameLogo
               }), (0, l.jsxs)("div", {
-                className: de.links,
+                className: ce.links,
                 children: [(0, l.jsx)(T, {
                   color: "gray",
                   text: n.title,
@@ -1276,7 +1273,7 @@
               playsInline: !0,
               autoPlay: !0
             }), (0, l.jsx)("div", {
-              className: de.dirt
+              className: ce.dirt
             })]
           })
         },
@@ -1289,11 +1286,11 @@
             gameSiteNavOpen: i
           } = (0, n.useState)(), {
             data: s
-          } = (0, n.useQuery)(ce.HomeData, {
+          } = (0, n.useQuery)(de.HomeData, {
             autoSetLoading: !0
           });
           return s ? (0, l.jsxs)("div", {
-            className: de.home,
+            className: ce.home,
             children: [(0, l.jsx)(ke, {
               t: a,
               video: s.video,
@@ -1325,17 +1322,17 @@
           })
         },
         xe = () => (0, l.jsx)("div", {
-          className: "_660934dec68cf206a3cff2a855ab7a4cd29b",
+          className: "_162f0ace902dd580a3cff2a855ab7a4cd29b",
           children: (0, l.jsx)(i.NewswireList, {
             tagId: 736,
             metaUrl: "/reddeadonline/newswire"
           })
         }),
         je = {
-          videosIndex: "_660934dec68cf206cf17a6d004f287e319c2",
-          latest: "_660934dec68cf206d2bd8700280f286851cb",
-          preview: "_660934dec68cf206a279ffcf5eb9a85f047f",
-          grid: "_660934dec68cf206ccb94b568d5a93ed7c17"
+          videosIndex: "_162f0ace902dd580cf17a6d004f287e319c2",
+          latest: "_162f0ace902dd580d2bd8700280f286851cb",
+          preview: "_162f0ace902dd580a279ffcf5eb9a85f047f",
+          grid: "_162f0ace902dd580ccb94b568d5a93ed7c17"
         };
       var Ne = t(7202);
       const we = (0, o.withTranslations)((e => {
@@ -1401,15 +1398,15 @@
             videos: r
           } = s;
           return (0, l.jsxs)("div", {
-            className: "_660934dec68cf206e3327b83dffba016e73a",
+            className: "_162f0ace902dd580e3327b83dffba016e73a",
             children: [(0, l.jsx)(A.PlayerWithInfo, {
               video: o
             }), (0, l.jsxs)("section", {
-              className: "_660934dec68cf206f73ee4dd8091b8cdfbb2",
+              className: "_162f0ace902dd580f73ee4dd8091b8cdfbb2",
               children: [(0, l.jsx)("h2", {
                 children: a("Trailers")
               }), (0, l.jsx)("div", {
-                className: "_660934dec68cf206e2f9f1d04cadc844b943",
+                className: "_162f0ace902dd580e2f9f1d04cadc844b943",
                 children: r.results.map((e => (0, l.jsx)(i.VideoCard.Link, {
                   video: e
                 }, e.id)))
@@ -1457,11 +1454,11 @@
         }],
         Fe = (0, i.withSimpleErrorBoundary)((() => (0, V.useRoutes)(ye))),
         De = {
-          gameSite: "_660934dec68cf206a9cc8464d3f7cc91bf13",
-          large: "_660934dec68cf206a69c84dab308fc8949cd",
-          gameSiteContent: "_660934dec68cf206eed552ce6552ff4672ec",
-          navOpen: "_660934dec68cf206cb518c23314a0d6d0fa8",
-          reddeadrating: "_660934dec68cf206bfb01eb5ee9ccf327bb3"
+          gameSite: "_162f0ace902dd580a9cc8464d3f7cc91bf13",
+          large: "_162f0ace902dd580a69c84dab308fc8949cd",
+          gameSiteContent: "_162f0ace902dd580eed552ce6552ff4672ec",
+          navOpen: "_162f0ace902dd580cb518c23314a0d6d0fa8",
+          reddeadrating: "_162f0ace902dd580bfb01eb5ee9ccf327bb3"
         },
         Oe = () => {
           const {
@@ -4334,7 +4331,7 @@
     },
     7143: (e, a, t) => {
       var n = {
-        "./a-land-of-opportunities.mp4": 3705,
+        "./a-land-of-opportunities.mp4": 3970,
         "./customization.mp4": 1436,
         "./getting-started.mp4": 9388,
         "./posses-and-free-roam.mp4": 3304,
@@ -4360,7 +4357,7 @@
     },
     3271: (e, a, t) => {
       var n = {
-        "./a-land-of-opportunities.mp4": 3705,
+        "./a-land-of-opportunities.mp4": 3970,
         "./customization.mp4": 1436,
         "./getting-started.mp4": 9388,
         "./posses-and-free-roam.mp4": 3304,
@@ -5294,7 +5291,7 @@
       "use strict";
       e.exports = "https://media-rockstargames-com.akamaized.net/mfe5/__common/img/88b3dd008564486a19c8.jpg"
     },
-    3705: e => {
+    3970: e => {
       "use strict";
       e.exports = "https://media-rockstargames-com.akamaized.net/mfe5/__common/video/840d4a66eb6f7d44db71.mp4"
     },

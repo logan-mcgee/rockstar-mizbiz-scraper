@@ -6,19 +6,19 @@
       function n(e, n) {
         return Object.prototype.hasOwnProperty.call(e, n)
       }
-      e.exports = function(e, r, o, i) {
-        r = r || "&", o = o || "=";
+      e.exports = function(e, r, i, o) {
+        r = r || "&", i = i || "=";
         var a = {};
         if ("string" != typeof e || 0 === e.length) return a;
         var s = /\+/g;
         e = e.split(r);
         var c = 1e3;
-        i && "number" == typeof i.maxKeys && (c = i.maxKeys);
-        var d = e.length;
-        c > 0 && d > c && (d = c);
-        for (var l = 0; l < d; ++l) {
-          var u, p, m, f, h = e[l].replace(s, "%20"),
-            v = h.indexOf(o);
+        o && "number" == typeof o.maxKeys && (c = o.maxKeys);
+        var l = e.length;
+        c > 0 && l > c && (l = c);
+        for (var d = 0; d < l; ++d) {
+          var u, p, m, f, h = e[d].replace(s, "%20"),
+            v = h.indexOf(i);
           v >= 0 ? (u = h.substr(0, v), p = h.substr(v + 1)) : (u = h, p = ""), m = decodeURIComponent(u), f = decodeURIComponent(p), n(a, m) ? t(a[m]) ? a[m].push(f) : a[m] = [a[m], f] : a[m] = f
         }
         return a
@@ -41,13 +41,13 @@
             return ""
         }
       };
-      e.exports = function(e, i, a, s) {
-        return i = i || "&", a = a || "=", null === e && (e = void 0), "object" == typeof e ? r(o(e), (function(o) {
-          var s = encodeURIComponent(n(o)) + a;
-          return t(e[o]) ? r(e[o], (function(e) {
+      e.exports = function(e, o, a, s) {
+        return o = o || "&", a = a || "=", null === e && (e = void 0), "object" == typeof e ? r(i(e), (function(i) {
+          var s = encodeURIComponent(n(i)) + a;
+          return t(e[i]) ? r(e[i], (function(e) {
             return s + encodeURIComponent(n(e))
-          })).join(i) : s + encodeURIComponent(n(e[o]))
-        })).join(i) : s ? encodeURIComponent(n(s)) + a + encodeURIComponent(n(e)) : ""
+          })).join(o) : s + encodeURIComponent(n(e[i]))
+        })).join(o) : s ? encodeURIComponent(n(s)) + a + encodeURIComponent(n(e)) : ""
       };
       var t = Array.isArray || function(e) {
         return "[object Array]" === Object.prototype.toString.call(e)
@@ -58,7 +58,7 @@
         for (var t = [], r = 0; r < e.length; r++) t.push(n(e[r], r));
         return t
       }
-      var o = Object.keys || function(e) {
+      var i = Object.keys || function(e) {
         var n = [];
         for (var t in e) Object.prototype.hasOwnProperty.call(e, t) && n.push(t);
         return n
@@ -73,13 +73,13 @@
       t.r(n), t.d(n, {
         default: () => g
       });
-      var r, o = t(4859),
-        i = t(9929),
+      var r, i = t(4859),
+        o = t(9929),
         a = t(2327),
         s = t.n(a),
         c = t(289),
-        d = t(6444),
-        l = (r = function(e, n) {
+        l = t(6444),
+        d = (r = function(e, n) {
           return r = Object.setPrototypeOf || {
             __proto__: []
           }
@@ -99,7 +99,7 @@
         u = function() {
           return u = Object.assign || function(e) {
             for (var n, t = 1, r = arguments.length; t < r; t++)
-              for (var o in n = arguments[t]) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o]);
+              for (var i in n = arguments[t]) Object.prototype.hasOwnProperty.call(n, i) && (e[i] = n[i]);
             return e
           }, u.apply(this, arguments)
         };
@@ -118,8 +118,8 @@
             clearTimeout(t.timer), t.props.onFailure && t.props.onFailure(e)
           }, t.createRequestPromise = function(e) {
             var n = {};
-            return n.promise = new Promise((function(r, o) {
-              var i = fetch(e, {
+            return n.promise = new Promise((function(r, i) {
+              var o = fetch(e, {
                 headers: {
                   Authorization: "Bearer " + t.props.clientAccessToken
                 }
@@ -128,17 +128,17 @@
               })).then((function(e) {
                 return r(e)
               })).catch((function(e) {
-                return o(e)
+                return i(e)
               }));
               return n.cancel = function() {
-                return o(new Error("Cancelled"))
-              }, i
+                return i(new Error("Cancelled"))
+              }, o
             })), n
           }, t.state = {
             html: null
           }, t
         }
-        return l(n, e), n.prototype.componentDidMount = function() {
+        return d(n, e), n.prototype.componentDidMount = function() {
           var e = this;
           window.instgrm ? this.fetchEmbed(this.getQueryParams(this.props)) : (this.props.injectScript && !document.getElementById("react-instagram-embed-script") && this.injectScript(), this.checkAPI().then((function() {
             e.fetchEmbed(e.getQueryParams(e.props))
@@ -147,11 +147,11 @@
           var n = this.props,
             t = n.url,
             r = n.clientAccessToken,
-            o = n.hideCaption,
-            i = n.maxWidth,
+            i = n.hideCaption,
+            o = n.maxWidth,
             a = n.containerTagName,
             s = n.className;
-          e.url === t && e.clientAccessToken === r && e.hideCaption === o && e.maxWidth === i && e.containerTagName === a && e.className === s || (this.request.cancel(), this.fetchEmbed(this.getQueryParams(this.props)))
+          e.url === t && e.clientAccessToken === r && e.hideCaption === i && e.maxWidth === o && e.containerTagName === a && e.className === s || (this.request.cancel(), this.fetchEmbed(this.getQueryParams(this.props)))
         }, n.prototype.componentWillUnmount = function() {
           this.cancel()
         }, n.prototype.render = function() {
@@ -170,8 +170,8 @@
               var t = {};
               for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && n.indexOf(r) < 0 && (t[r] = e[r]);
               if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
-                var o = 0;
-                for (r = Object.getOwnPropertySymbols(e); o < r.length; o++) n.indexOf(r[o]) < 0 && Object.prototype.propertyIsEnumerable.call(e, r[o]) && (t[r[o]] = e[r[o]])
+                var i = 0;
+                for (r = Object.getOwnPropertySymbols(e); i < r.length; i++) n.indexOf(r[i]) < 0 && Object.prototype.propertyIsEnumerable.call(e, r[i]) && (t[r[i]] = e[r[i]])
               }
               return t
             }(e, ["url", "clientAccessToken", "hideCaption", "maxWidth", "containerTagName", "onLoading", "onSuccess", "onAfterRender", "onFailure", "protocol", "injectScript"])
@@ -194,13 +194,13 @@
           var n = e.url,
             t = e.hideCaption,
             r = e.maxWidth,
-            o = {
+            i = {
               url: n,
               hidecaption: t,
               omitscript: !0,
               fields: "html"
             };
-          return "number" == typeof r && 320 <= r && r <= 658 && (o.maxwidth = r), (0, d.stringify)(o)
+          return "number" == typeof r && 320 <= r && r <= 658 && (i.maxwidth = r), (0, l.stringify)(i)
         }, n.defaultProps = {
           hideCaption: !1,
           containerTagName: "div",
@@ -216,19 +216,19 @@
             person: n
           } = e;
           const t = n.covid_people_images.length ? (0, h.jsx)("div", {
-            className: "-Users-pconroy-Work-void-heart-packages-frontend-micro-frontends-sites-rockstargames-7185b668a703e593f8df05f07a2272ed6e83",
+            className: "@rockstargames-sites-rockstargames-2f41663b9c098a92f8df05f07a2272ed6e83",
             children: n.covid_people_images.map((e => (0, h.jsx)("img", {
               src: e.img_full
             }, e.id)))
           }) : "";
           return (0, h.jsxs)("div", {
-            className: "-Users-pconroy-Work-void-heart-packages-frontend-micro-frontends-sites-rockstargames-7185b668a703e593ec3117c15dbfede4678c",
+            className: "@rockstargames-sites-rockstargames-2f41663b9c098a92ec3117c15dbfede4678c",
             children: [t, (0, h.jsx)("h2", {
               children: n.hero
             }), (0, h.jsx)("h3", {
               children: `${n.employee} - ${n.studio.name}`
             }), (0, h.jsx)("div", {
-              className: "-Users-pconroy-Work-void-heart-packages-frontend-micro-frontends-sites-rockstargames-7185b668a703e593fcd132fcc8b374da63a4",
+              className: "@rockstargames-sites-rockstargames-2f41663b9c098a92fcd132fcc8b374da63a4",
               children: (0, h.jsx)(s(), {
                 components: {
                   instagramembed: p
@@ -241,32 +241,32 @@
             })]
           }, n.id)
         },
-        g = (0, i.withTranslations)((e => {
+        g = (0, o.withTranslations)((e => {
           let {
             t: n
           } = e;
           const {
             data: t
-          } = (0, o.useQuery)(f());
+          } = (0, i.useQuery)(f());
           if (!t) return null;
           const {
             frontlineHeroes: r
           } = t;
           return (0, h.jsxs)("div", {
-            className: "-Users-pconroy-Work-void-heart-packages-frontend-micro-frontends-sites-rockstargames-7185b668a703e593d012bdff95af16800e32",
+            className: "@rockstargames-sites-rockstargames-2f41663b9c098a92d012bdff95af16800e32",
             children: [(0, h.jsx)("div", {
-              className: "-Users-pconroy-Work-void-heart-packages-frontend-micro-frontends-sites-rockstargames-7185b668a703e593f3cbb9594fe59400fe54"
+              className: "@rockstargames-sites-rockstargames-2f41663b9c098a92f3cbb9594fe59400fe54"
             }), (0, h.jsxs)("div", {
-              className: "-Users-pconroy-Work-void-heart-packages-frontend-micro-frontends-sites-rockstargames-7185b668a703e593d8cd58bb136a9cabdcf3",
+              className: "@rockstargames-sites-rockstargames-2f41663b9c098a92d8cd58bb136a9cabdcf3",
               children: [(0, h.jsx)("h1", {
                 children: n("covid-title")
               }), (0, h.jsx)("div", {
-                className: "-Users-pconroy-Work-void-heart-packages-frontend-micro-frontends-sites-rockstargames-7185b668a703e593fbc031f0bd0eeb37f87f",
+                className: "@rockstargames-sites-rockstargames-2f41663b9c098a92fbc031f0bd0eeb37f87f",
                 dangerouslySetInnerHTML: {
                   __html: n("covid-desc")
                 }
               }), (0, h.jsx)("div", {
-                className: "-Users-pconroy-Work-void-heart-packages-frontend-micro-frontends-sites-rockstargames-7185b668a703e593ba600fcac7d5b30d0ff3",
+                className: "@rockstargames-sites-rockstargames-2f41663b9c098a92ba600fcac7d5b30d0ff3",
                 children: r.map(((e, n) => (0, h.jsx)(v, {
                   person: e
                 }, n)))
@@ -431,7 +431,7 @@
       };
       var r = {};
 
-      function o(e, n) {
+      function i(e, n) {
         for (var t = 0; t < e.definitions.length; t++) {
           var r = e.definitions[t];
           if (r.name && r.name.value == n) return r
@@ -445,13 +445,13 @@
       })), e.exports = n, e.exports.FrontlineHeroes = function(e, n) {
         var t = {
           kind: e.kind,
-          definitions: [o(e, n)]
+          definitions: [i(e, n)]
         };
         e.hasOwnProperty("loc") && (t.loc = e.loc);
-        var i = r[n] || new Set,
+        var o = r[n] || new Set,
           a = new Set,
           s = new Set;
-        for (i.forEach((function(e) {
+        for (o.forEach((function(e) {
             s.add(e)
           })); s.size > 0;) {
           var c = s;
@@ -462,11 +462,11 @@
           }))
         }
         return a.forEach((function(n) {
-          var r = o(e, n);
+          var r = i(e, n);
           r && t.definitions.push(r)
         })), t
       }(n, "FrontlineHeroes")
     }
   }
 ]);
-//# sourceMappingURL=1ab1d2d0acd749a8d1e7.js.map
+//# sourceMappingURL=cf424a1fcbf9bfadbd55.js.map

@@ -1,7 +1,7 @@
-/*! For license information please see ac709e74aa5bd388cc0c.js.LICENSE.txt */
+/*! For license information please see d34b364728489e2507ec.js.LICENSE.txt */
 (self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
-  [688], {
-    3205: function(t) {
+  [610], {
+    9696: function(t) {
       t.exports = function() {
         "use strict";
 
@@ -101,14 +101,15 @@
         }
 
         function O(t, n, e) {
-          e = e || b, o && o(t, null);
-          for (var r = n.length; r--;) {
-            var i = n[r];
-            if ("string" == typeof i) {
-              var u = e(i);
-              u !== i && (a(n) || (n[r] = u), i = u)
+          var r;
+          e = null !== (r = e) && void 0 !== r ? r : b, o && o(t, null);
+          for (var i = n.length; i--;) {
+            var u = n[i];
+            if ("string" == typeof u) {
+              var c = e(u);
+              c !== u && (a(n) || (n[i] = c), u = c)
             }
-            t[i] = !0
+            t[u] = !0
           }
           return t
         }
@@ -160,7 +161,7 @@
             i = function(t) {
               return n(t)
             };
-          if (i.version = "2.4.5", i.removed = [], !e || !e.document || 9 !== e.document.nodeType) return i.isSupported = !1, i;
+          if (i.version = "2.4.7", i.removed = [], !e || !e.document || 9 !== e.document.nodeType) return i.isSupported = !1, i;
           var u = e.document,
             o = e.document,
             a = e.DocumentFragment,
@@ -390,7 +391,7 @@
                 var e = b(t.tagName),
                   r = b(n.tagName);
                 return !!on[t.namespaceURI] && (t.namespaceURI === nn ? n.namespaceURI === en ? "svg" === e : n.namespaceURI === tn ? "svg" === e && ("annotation-xml" === r || hn[r]) : Boolean(gn[e]) : t.namespaceURI === tn ? n.namespaceURI === en ? "math" === e : n.namespaceURI === nn ? "math" === e && vn[r] : Boolean(dn[e]) : t.namespaceURI === en ? !(n.namespaceURI === nn && !vn[r]) && !(n.namespaceURI === tn && !hn[r]) && !dn[e] && (_n[e] || !gn[e]) : !("application/xhtml+xml" !== _t || !on[t.namespaceURI]))
-              }(t) ? (mn(t), !0) : "noscript" !== r && "noembed" !== r || !k(/<\/no(script|embed)/i, t.innerHTML) ? (Mt && 3 === t.nodeType && (n = t.textContent, n = A(n, dt, " "), n = A(n, mt, " "), n = A(n, yt, " "), t.textContent !== n && (y(i.removed, {
+              }(t) ? (mn(t), !0) : "noscript" !== r && "noembed" !== r && "noframes" !== r || !k(/<\/no(script|embed|frames)/i, t.innerHTML) ? (Mt && 3 === t.nodeType && (n = t.textContent, n = A(n, dt, " "), n = A(n, mt, " "), n = A(n, yt, " "), t.textContent !== n && (y(i.removed, {
                 element: t.cloneNode()
               }), t.textContent = n)), An("afterSanitizeElements", t, null), !1) : (mn(t), !0)
             },
@@ -508,7 +509,7 @@
         }()
       }()
     },
-    3653: function(t, n, e) {
+    2999: function(t, n, e) {
       var r;
       t = e.nmd(t),
         function() {
@@ -4193,7 +4194,7 @@
           }.call(n, e, n, t)) === i || (t.exports = r)
         }.call(this)
     },
-    3970: (t, n, e) => {
+    6162: (t, n, e) => {
       "use strict";
       var r = e(4932),
         i = Symbol.for("react.element"),
@@ -4225,11 +4226,11 @@
       }
       n.Fragment = u, n.jsx = f, n.jsxs = f
     },
-    6160: (t, n, e) => {
+    9817: (t, n, e) => {
       "use strict";
-      t.exports = e(3970)
+      t.exports = e(6162)
     },
-    3032: (t, n) => {
+    2224: (t, n) => {
       var e = [],
         r = function() {
           var t, n;
@@ -4267,4 +4268,3 @@
     }
   }
 ]);
-//# sourceMappingURL=ac709e74aa5bd388cc0c.js.map

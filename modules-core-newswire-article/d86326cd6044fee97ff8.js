@@ -1,7 +1,7 @@
 "use strict";
 (self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
-  [814], {
-    8814: (e, t, l) => {
+  [282], {
+    3282: (e, t, l) => {
       l.r(t), l.d(t, {
         Discounts: () => p,
         Donate: () => u,
@@ -671,4 +671,3 @@
     }
   }
 ]);
-//# sourceMappingURL=58153166384f60f826c0.js.map

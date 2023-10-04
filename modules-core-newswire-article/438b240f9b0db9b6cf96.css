@@ -1,4 +1,4 @@
-.a6afed00140449f9fe0c9ab354abbddb8756 {
+._1c6c5e2e5850fea8fe0c9ab354abbddb8756 {
   align-items: center;
   display: flex;
   flex-flow: column;
@@ -9,21 +9,21 @@
   width: 100%
 }
 
-.a6afed00140449f9fe0c9ab354abbddb8756 h1 {
+._1c6c5e2e5850fea8fe0c9ab354abbddb8756 h1 {
   margin-bottom: var(--base-rem-size);
   text-align: center
 }
 
-.a6afed00140449f9fe0c9ab354abbddb8756 h1 span {
+._1c6c5e2e5850fea8fe0c9ab354abbddb8756 h1 span {
   display: block;
   font-size: 75%
 }
 
-.a6afed00140449f9ddb6daf6f9db42766ee7 {
+._1c6c5e2e5850fea8ddb6daf6f9db42766ee7 {
   margin-bottom: var(--twice-rem-size)
 }
 
-.a6afed00140449f9f2956f0c5077d5814eed {
+._1c6c5e2e5850fea8f2956f0c5077d5814eed {
   --aspect-ratio: 16/9;
   background: #000;
   margin: 0 auto;
@@ -35,66 +35,66 @@
   width: 100%
 }
 
-.a6afed00140449f9f2956f0c5077d5814eed:before {
+._1c6c5e2e5850fea8f2956f0c5077d5814eed:before {
   content: "";
   display: block;
   height: 0;
   padding-bottom: calc(100% / calc(var(--aspect-ratio)))
 }
 
-.a6afed00140449f9f2956f0c5077d5814eed>* {
+._1c6c5e2e5850fea8f2956f0c5077d5814eed>* {
   left: 0;
   position: absolute;
   top: 0
 }
 
-.a6afed00140449f9f2956f0c5077d5814eed iframe,
-.a6afed00140449f9f2956f0c5077d5814eed>* {
+._1c6c5e2e5850fea8f2956f0c5077d5814eed iframe,
+._1c6c5e2e5850fea8f2956f0c5077d5814eed>* {
   height: 100%;
   width: 100%
 }
 
-.a6afed00140449f9f2956f0c5077d5814eed iframe {
+._1c6c5e2e5850fea8f2956f0c5077d5814eed iframe {
   border: none
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 {
   width: 100%
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 .instagram-media-registered,
-.a6afed00140449f9cd439fe9262aab24bbd5 blockquote.instagram-media,
-.a6afed00140449f9cd439fe9262aab24bbd5 iframe.instagram-media:not(.instagram-media-rendered) {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .instagram-media-registered,
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 blockquote.instagram-media,
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 iframe.instagram-media:not(.instagram-media-rendered) {
   opacity: 0
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 .instagram-media-rendered {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .instagram-media-rendered {
   margin: 0 auto var(--padding-top-bottom) !important
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 ul {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 ul {
   list-style-type: none;
   padding-left: var(--padding-sides)
 }
 
 @media (min-width:0px) {
 
-  .a6afed00140449f9cd439fe9262aab24bbd5 ol.item-list,
-  .a6afed00140449f9cd439fe9262aab24bbd5 ul.item-list {
+  ._1c6c5e2e5850fea8cd439fe9262aab24bbd5 ol.item-list,
+  ._1c6c5e2e5850fea8cd439fe9262aab24bbd5 ul.item-list {
     -moz-column-count: 2;
     column-count: 2
   }
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 ol li,
-.a6afed00140449f9cd439fe9262aab24bbd5 ul li {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 ol li,
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 ul li {
   margin-bottom: .25rem;
   padding-left: var(--padding-sides);
   position: relative
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 ol li:before,
-.a6afed00140449f9cd439fe9262aab24bbd5 ul li:before {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 ol li:before,
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 ul li:before {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/e4aaab56bd8e7d436de3.svg);
   background-size: 100% 100%;
   content: "";
@@ -105,8 +105,8 @@
   width: 11px
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 .caption,
-.a6afed00140449f9cd439fe9262aab24bbd5 .legal {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .caption,
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .legal {
   display: block;
   font-size: .8em;
   line-height: 135%;
@@ -114,11 +114,11 @@
   text-align: center
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 .legal {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .legal {
   font-size: .6em
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 .black-swipe-exciting-rdr2 {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .black-swipe-exciting-rdr2 {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   color: #fff !important;
@@ -126,49 +126,49 @@
   padding: 25px 20px 20px
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 .black-swipe-exciting-rdr2.bg-big-1 {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .black-swipe-exciting-rdr2.bg-big-1 {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/7b576bac484aa57d3b05.png);
   padding: 35px 25px 30px !important
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 .black-swipe-exciting-rdr2.bg-big-2 {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .black-swipe-exciting-rdr2.bg-big-2 {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/cc12c6c48be46f01a894.png);
   padding-top: 45px !important
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 .black-swipe-exciting-rdr2.bg-headline {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .black-swipe-exciting-rdr2.bg-headline {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/239cae518f798d90cb75.png);
   padding-top: 25px !important
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 .black-swipe-exciting-rdr2.bg-headline h4 {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .black-swipe-exciting-rdr2.bg-headline h4 {
   margin: 5px !important
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 .black-swipe-exciting-rdr2.bg-headline h5 {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .black-swipe-exciting-rdr2.bg-headline h5 {
   margin-bottom: 5px !important
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 .black-swipe-exciting-rdr2 h3 {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .black-swipe-exciting-rdr2 h3 {
   font-size: 34px;
   margin-bottom: 5px !important
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 .black-swipe-exciting-rdr2 h4 {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .black-swipe-exciting-rdr2 h4 {
   font-size: 30px;
   margin: 20px 0 0 !important
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 .black-swipe-exciting-rdr2 h5 {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .black-swipe-exciting-rdr2 h5 {
   font-size: 18px;
   margin-bottom: 10px !important
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 .black-swipe-exciting-rdr2 h1,
-.a6afed00140449f9cd439fe9262aab24bbd5 .black-swipe-exciting-rdr2 h2,
-.a6afed00140449f9cd439fe9262aab24bbd5 .black-swipe-exciting-rdr2 h3,
-.a6afed00140449f9cd439fe9262aab24bbd5 .black-swipe-exciting-rdr2 h4,
-.a6afed00140449f9cd439fe9262aab24bbd5 .black-swipe-exciting-rdr2 h5 {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .black-swipe-exciting-rdr2 h1,
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .black-swipe-exciting-rdr2 h2,
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .black-swipe-exciting-rdr2 h3,
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .black-swipe-exciting-rdr2 h4,
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .black-swipe-exciting-rdr2 h5 {
   color: inherit;
   font-family: RDRLino-Regular !important;
   font-weight: 400;
@@ -177,19 +177,19 @@
   text-align: inherit
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 .black-swipe-exciting-rdr2 p {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .black-swipe-exciting-rdr2 p {
   margin: 0 0 15px
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 .black-swipe-exciting-rdr2 .font-red {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .black-swipe-exciting-rdr2 .font-red {
   color: #c00 !important
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 .black-swipe-exciting-rdr2 .font-yellow {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .black-swipe-exciting-rdr2 .font-yellow {
   color: #ffb000 !important
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section {
   color: #fff;
   font-family: DINNext-HvyIta, sans-serif !important;
   font-size: 1.2em !important;
@@ -200,17 +200,17 @@
   width: calc(100% - 25px)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section:lang(ja_jp),
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section:lang(ko_kr),
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section:lang(pl_pl),
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section:lang(ru_ru),
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section:lang(zh_hans),
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section:lang(zh_tw) {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section:lang(ja_jp),
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section:lang(ko_kr),
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section:lang(pl_pl),
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section:lang(ru_ru),
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section:lang(zh_hans),
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section:lang(zh_tw) {
   font-family: Arial, sans-serif !important;
   font-weight: 700 !important
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section:before {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section:before {
   background: #000;
   content: "";
   height: 25px;
@@ -222,18 +222,18 @@
   z-index: -1
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section:after {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section:after {
   clear: both;
   content: "";
   display: table
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span {
   float: left;
   margin: 0 3px
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title) {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title) {
   background-repeat: no-repeat !important;
   background-size: 100% 100% !important;
   display: inline-block;
@@ -242,239 +242,239 @@
   width: 35px
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title):after {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title):after {
   content: "";
   display: block;
   padding-top: 100%
 }
 
 @media (min-width:768px) {
-  .a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).spacer {
+  ._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).spacer {
     display: none !important
   }
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).ammo {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).ammo {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/17d73ac62a59097ade3a.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).arm-wrestling {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).arm-wrestling {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/b31d40ea616a7f51e982.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).avenger {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).avenger {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/eef34325a193787d583a.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).bennys {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).bennys {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/0b35d72dd777268ec748.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).bikes {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).bikes {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/ed8913860a630019a2f6.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).boats {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).boats {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/0b306e5164ec3fadfd34.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).body-armor {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).body-armor {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/20e34e153a2e4e8c95d7.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).bunker {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).bunker {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/128b1f861943700f7f0a.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).capture {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).capture {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/006600b5d84a3d4e2a07.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).clothes {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).clothes {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/23f82d76820e8fa836fc.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).clubhouse {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).clubhouse {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/2ee44a770a07c2d8817c.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).crew {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).crew {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/e9f119fff4caa3bcca88.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).darts {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).darts {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/791bb7d62166eea57e10.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).deathmatch {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).deathmatch {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/db3b9ed26b07fee6a874.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).dollar {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).dollar {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/0598a7592240da12a3d6.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).explosives {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).explosives {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/8496ef1f1514e4f18d1e.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).facilities {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).facilities {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/29e129a371c1b02288b4.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).flight-school {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).flight-school {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/7e35bdd8d287f4f8905a.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).garage {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).garage {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/8779ab6d794ea782a544.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).golf {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).golf {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/7958fbd479e6b104668c.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).haircuts {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).haircuts {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/623397f9af63cdc9af89.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).hangar {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).hangar {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/11958894f32a5b4136d6.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).helicopter {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).helicopter {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/72a189768d28632b5998.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).hotring {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).hotring {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/c75e73cecbccc2dc56ba.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).lastteamstanding {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).lastteamstanding {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/a32e4eae0f12711c2985.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).livestream {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).livestream {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/9d3b0b64737ed5e9d7db.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).masks {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).masks {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/7cc826798d8434f1c8a6.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).moc {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).moc {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/740261d2e2c2e8c1bf69.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).modshops {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).modshops {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/02066facab48117c11c0.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).movies {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).movies {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/21394cf11b3c4d5ef0db.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).office {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).office {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/f6e781329cc24e5606d1.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).parachuting {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).parachuting {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/c6b84279e77112e8b661.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).planes {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).planes {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/07bbab48625c8fdd40d4.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).premiumrace {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).premiumrace {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/eb6162f4c791b38e7e24.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).properties {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).properties {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/37329e91ad1475846aef.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).race-air {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).race-air {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/60f2bef737687ad0429e.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).race-bike {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).race-bike {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/7de5f5283f741bd270e8.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).race-land {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).race-land {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/17cf2b23e0b1e5d3b15c.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).race-sea {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).race-sea {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/58f1acf842c71defbd0f.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).race-stuntraces {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).race-stuntraces {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/e8324e0dbd98894505c7.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).rp {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).rp {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/ba966a9e4ce7fdfc9bed.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).special-races {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).special-races {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/81ce37e84ff20773fd11.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).stunt-races {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).stunt-races {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/89dd4c38947eb2b1c392.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).survival {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).survival {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/2de592e30fc350e26d47.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).target-assault {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).target-assault {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/0b9bddeee518ba9331d9.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).tattoos {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).tattoos {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/5093b108be5988a31a82.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).teamdeathmatch {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).teamdeathmatch {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/f5359b1b197f11a3c907.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).tennis {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).tennis {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/23f2f237f6e91d08c834.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).timetrial {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).timetrial {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/42a6f8da620dd620ecda.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).transform-races {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).transform-races {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/7aad2f30b1cdba09df1f.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).unlock {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).unlock {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/0c23d11592d4b17dc3dc.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).vehicledeathmatch {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).vehicledeathmatch {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/ecd446554b527e89d08d.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).vehicles {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).vehicles {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/7a495328b3b5cf6d7fa1.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).vehicle-warehouse {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).vehicle-warehouse {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/c131d4d502c21dc2f96f.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).yacht {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title).yacht {
   background-image: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/img/d04de721a9e42823e23c.svg)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span.title {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span.title {
   line-height: 25px;
   margin-bottom: 0;
   margin-left: 5px
@@ -482,109 +482,109 @@
 
 @media (min-width:1024px) {
 
-  .a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span.title:lang(ja_jp),
-  .a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span.title:lang(ko_kr),
-  .a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span.title:lang(zh_tw) {
+  ._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span.title:lang(ja_jp),
+  ._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span.title:lang(ko_kr),
+  ._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span.title:lang(zh_tw) {
     padding-top: 1px
   }
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section:lang(fr_fr),
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section:lang(ja_jp),
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section:lang(ko_kr),
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section:lang(pt_br),
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section:lang(zh_hans),
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section:lang(zh_tw) {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section:lang(fr_fr),
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section:lang(ja_jp),
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section:lang(ko_kr),
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section:lang(pt_br),
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section:lang(zh_hans),
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section:lang(zh_tw) {
   font-size: 1em !important
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section:lang(pl_pl),
-.a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section:lang(ru_ru) {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section:lang(pl_pl),
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section:lang(ru_ru) {
   font-size: .85em !important
 }
 
 @media (min-width:1023px) {
-  .a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section {
+  ._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section {
     margin-bottom: 20px !important;
     padding: 0;
     text-align: center
   }
 
-  .a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span {
+  ._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span {
     float: none
   }
 
-  .a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span.title {
+  ._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span.title {
     border-bottom: 1px solid #ccc;
     color: #000;
     display: block;
     padding-bottom: 12px
   }
 
-  .a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section span:not(.title) {
+  ._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section span:not(.title) {
     width: 40px
   }
 
-  .a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section:lang(pl_pl),
-  .a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section:lang(ru_ru) {
+  ._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section:lang(pl_pl),
+  ._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section:lang(ru_ru) {
     font-size: 1.1em !important
   }
 
-  .a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section:lang(fr_fr),
-  .a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section:lang(ja_jp),
-  .a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section:lang(ko_kr),
-  .a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section:lang(pt_br),
-  .a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section:lang(zh_hans),
-  .a6afed00140449f9cd439fe9262aab24bbd5 h4.newswire-section:lang(zh_tw) {
+  ._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section:lang(fr_fr),
+  ._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section:lang(ja_jp),
+  ._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section:lang(ko_kr),
+  ._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section:lang(pt_br),
+  ._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section:lang(zh_hans),
+  ._1c6c5e2e5850fea8cd439fe9262aab24bbd5 h4.newswire-section:lang(zh_tw) {
     font-size: 1.2em !important
   }
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 .horizontal-items {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .horizontal-items {
   font-size: 0
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 .horizontal-items>* {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .horizontal-items>* {
   display: inline-block;
   margin: 0 2px;
   vertical-align: top
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 .horizontal-items>:first-of-type {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .horizontal-items>:first-of-type {
   margin-left: 0
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 .horizontal-items>:last-of-type {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .horizontal-items>:last-of-type {
   margin-right: 0
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 .horizontal-items>:first-child:last-child {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .horizontal-items>:first-child:last-child {
   width: 100%
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 .horizontal-items>:first-child:nth-last-child(2),
-.a6afed00140449f9cd439fe9262aab24bbd5 .horizontal-items>:first-child:nth-last-child(2)~* {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .horizontal-items>:first-child:nth-last-child(2),
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .horizontal-items>:first-child:nth-last-child(2)~* {
   width: calc(50% - 2px)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 .horizontal-items>:first-child:nth-last-child(3),
-.a6afed00140449f9cd439fe9262aab24bbd5 .horizontal-items>:first-child:nth-last-child(3)~* {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .horizontal-items>:first-child:nth-last-child(3),
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .horizontal-items>:first-child:nth-last-child(3)~* {
   width: calc(33.3333% - 3px)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 .horizontal-items>:first-child:nth-last-child(4),
-.a6afed00140449f9cd439fe9262aab24bbd5 .horizontal-items>:first-child:nth-last-child(4)~* {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .horizontal-items>:first-child:nth-last-child(4),
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .horizontal-items>:first-child:nth-last-child(4)~* {
   width: calc(25% - 4px)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 .horizontal-items span.caption {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .horizontal-items span.caption {
   font-size: 13px;
   line-height: 13px;
   margin-top: 5px !important;
   padding: 0 5px
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 .horizontal-items span.caption.bullet-caption {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .horizontal-items span.caption.bullet-caption {
   font-family: DINNext, sans-serif !important;
   font-size: 16px;
   line-height: 16px;
@@ -594,17 +594,17 @@
   text-align: left
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 .horizontal-items span.caption.bullet-caption:lang(ja_jp),
-.a6afed00140449f9cd439fe9262aab24bbd5 .horizontal-items span.caption.bullet-caption:lang(ko_kr),
-.a6afed00140449f9cd439fe9262aab24bbd5 .horizontal-items span.caption.bullet-caption:lang(pl_pl),
-.a6afed00140449f9cd439fe9262aab24bbd5 .horizontal-items span.caption.bullet-caption:lang(ru_ru),
-.a6afed00140449f9cd439fe9262aab24bbd5 .horizontal-items span.caption.bullet-caption:lang(zh_hans),
-.a6afed00140449f9cd439fe9262aab24bbd5 .horizontal-items span.caption.bullet-caption:lang(zh_tw) {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .horizontal-items span.caption.bullet-caption:lang(ja_jp),
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .horizontal-items span.caption.bullet-caption:lang(ko_kr),
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .horizontal-items span.caption.bullet-caption:lang(pl_pl),
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .horizontal-items span.caption.bullet-caption:lang(ru_ru),
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .horizontal-items span.caption.bullet-caption:lang(zh_hans),
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .horizontal-items span.caption.bullet-caption:lang(zh_tw) {
   font-family: Arial, sans-serif !important;
   font-weight: 400 !important
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 .horizontal-items span.caption.bullet-caption:before {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .horizontal-items span.caption.bullet-caption:before {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 xml:space=%27preserve%27 style=%27enable-background:new 0 0 50.61 50.61%27 viewBox=%270 0 50.61 50.61%27%3E%3Cpath d=%27M50.61 19.53H32.65L29.55 0 18.1 19.34H0l11.01 11.6-9.05 19.44 19.77-11.75 15.58 11.98-2.89-19.75z%27/%3E%3C/svg%3E");
   background-size: 100% 100%;
   content: "";
@@ -615,58 +615,58 @@
   width: 11px
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 .horizontal-items span.caption.bullet-caption .title {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .horizontal-items span.caption.bullet-caption .title {
   font-family: DINNext-Bld, sans-serif !important;
   text-transform: uppercase
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 .float-img-left,
-.a6afed00140449f9cd439fe9262aab24bbd5 .float-img-right {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .float-img-left,
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .float-img-right {
   margin-bottom: 20px
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 .float-img-left {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .float-img-left {
   float: left;
   margin-right: 20px
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 .float-img-right {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .float-img-right {
   float: right;
   margin-left: 20px
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 #sugoi .col-xxs-12,
-.a6afed00140449f9cd439fe9262aab24bbd5 #sugoi .col-xxs-4,
-.a6afed00140449f9cd439fe9262aab24bbd5 #sugoi .col-xxs-8 {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #sugoi .col-xxs-12,
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #sugoi .col-xxs-4,
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #sugoi .col-xxs-8 {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 #sugoi .col-xxs-12,
-.a6afed00140449f9cd439fe9262aab24bbd5 #sugoi .col-xxs-4,
-.a6afed00140449f9cd439fe9262aab24bbd5 #sugoi .col-xxs-8 {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #sugoi .col-xxs-12,
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #sugoi .col-xxs-4,
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #sugoi .col-xxs-8 {
   float: left
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 #sugoi .col-xxs-12 {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #sugoi .col-xxs-12 {
   width: 100%
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 #sugoi .col-xxs-4 {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #sugoi .col-xxs-4 {
   width: 33.33333333%
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 #sugoi .col-xxs-8 {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #sugoi .col-xxs-8 {
   width: 66.66666667%
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 #sugoi .row {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #sugoi .row {
   margin-left: -15px;
   margin-right: -15px
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 #sugoi p {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #sugoi p {
   font-size: 85%;
   margin-bottom: 15px;
   text-align: center;
@@ -674,21 +674,21 @@
   width: 85%
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 #sugoi p.sugoi-title {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #sugoi p.sugoi-title {
   font-size: 250%
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 #sugoi .iframe-wrapper {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #sugoi .iframe-wrapper {
   background-color: #000
 }
 
 @media (min-width:767px) {
-  .a6afed00140449f9cd439fe9262aab24bbd5 #sugoi .iframe-wrapper.d_16x9:before {
+  ._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #sugoi .iframe-wrapper.d_16x9:before {
     padding-top: 56.25% !important
   }
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 #sugoi .flex {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #sugoi .flex {
   align-items: center;
   color: #fff;
   display: flex;
@@ -696,18 +696,18 @@
   justify-content: flex-end
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 #sugoi .flex.sugoi-row {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #sugoi .flex.sugoi-row {
   align-items: stretch;
   flex-flow: row
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 #sugoi .orange {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #sugoi .orange {
   background-image: url(https://media.rockstargames.com/rockstargames-newsite/uploads/sugoi/orange.jpg);
   background-position: 50%;
   background-size: cover
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 #sugoi .sugoi-desc-top {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #sugoi .sugoi-desc-top {
   font-size: inherit;
   margin: 30px auto;
   max-width: 800px;
@@ -715,19 +715,19 @@
   text-transform: none !important
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 #sugoi .interior {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #sugoi .interior {
   background-image: url(https://media.rockstargames.com/rockstargames-newsite/uploads/sugoi/interior.jpg);
   background-position: 50%;
   background-size: cover
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 #sugoi .interior:before {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #sugoi .interior:before {
   content: "";
   display: block;
   padding-top: 845/1280 * 100%
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 #sugoi .interior-desc {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #sugoi .interior-desc {
   align-items: center;
   background-color: #000;
   display: flex;
@@ -735,85 +735,85 @@
   justify-content: center
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 #sugoi .interior-desc p {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #sugoi .interior-desc p {
   font-size: 5vw;
   line-height: 5vw;
   text-transform: uppercase
 }
 
 @media (min-width:768px) {
-  .a6afed00140449f9cd439fe9262aab24bbd5 #sugoi .interior-desc p {
+  ._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #sugoi .interior-desc p {
     font-size: 267%;
     line-height: 45px
   }
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 #sugoi .blue {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #sugoi .blue {
   background-image: url(https://media.rockstargames.com/rockstargames-newsite/uploads/sugoi/blue.jpg);
   background-position: 50%;
   background-size: cover
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 #sugoi .blue-sunset {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #sugoi .blue-sunset {
   background-image: url(https://media.rockstargames.com/rockstargames-newsite/uploads/sugoi/blue-sunset.jpg);
   background-position: 50%;
   background-size: cover;
   font-family: neue-helvetica-w01-67-condensed-medium-oblique
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 #sugoi .blue-sunset p {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #sugoi .blue-sunset p {
   font-size: 5vw;
   margin-bottom: 4vw;
   text-transform: uppercase
 }
 
 @media (min-width:768px) {
-  .a6afed00140449f9cd439fe9262aab24bbd5 #sugoi .blue-sunset p {
+  ._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #sugoi .blue-sunset p {
     font-size: 267%;
     margin-bottom: 30px
   }
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 #sugoi .squares>div {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #sugoi .squares>div {
   padding: 0
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 #sugoi .squares>div:first-child {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #sugoi .squares>div:first-child {
   background-image: url(https://media.rockstargames.com/rockstargames-newsite/uploads/sugoi/square-01.jpg);
   background-position: 50%;
   background-size: cover
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 #sugoi .squares>div:nth-child(2) {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #sugoi .squares>div:nth-child(2) {
   background-image: url(https://media.rockstargames.com/rockstargames-newsite/uploads/sugoi/square-02.jpg);
   background-position: 50%;
   background-size: cover
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 #sugoi .squares>div:nth-child(3) {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #sugoi .squares>div:nth-child(3) {
   background-image: url(https://media.rockstargames.com/rockstargames-newsite/uploads/sugoi/square-03.jpg);
   background-position: 50%;
   background-size: cover
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 #sugoi .bottom-dinka {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #sugoi .bottom-dinka {
   background-color: #2298dc;
   padding: 20px
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 #sugoi .dinka {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #sugoi .dinka {
   background-image: url(https://media.rockstargames.com/rockstargames-newsite/uploads/sugoi/dinka.svg);
   background-position-x: center;
   background-repeat: no-repeat
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 #sugoi .dinka:before {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #sugoi .dinka:before {
   content: "";
   display: block;
   padding-top: 70px
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 #sugoi .sugoi {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #sugoi .sugoi {
   background-image: url(https://media.rockstargames.com/rockstargames-newsite/uploads/sugoi/sugoi.svg);
   background-position-x: center;
   background-repeat: no-repeat;
@@ -821,38 +821,38 @@
 }
 
 @media (min-width:768px) {
-  .a6afed00140449f9cd439fe9262aab24bbd5 #sugoi .sugoi {
+  ._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #sugoi .sugoi {
     margin-bottom: 30px
   }
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 #sugoi .sugoi:before {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #sugoi .sugoi:before {
   content: "";
   display: block;
   padding-top: 9%
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 #sugoi .sugoi-desc {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #sugoi .sugoi-desc {
   width: auto
 }
 
 @media (min-width:767px) {
-  .a6afed00140449f9cd439fe9262aab24bbd5 #sugoi .d_16x9:before {
+  ._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #sugoi .d_16x9:before {
     padding-top: 100% !important
   }
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 #responsive-car-ad {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #responsive-car-ad {
   max-width: none !important
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 #responsive-car-ad p:not(.no-max-width) {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #responsive-car-ad p:not(.no-max-width) {
   margin-left: auto;
   margin-right: auto;
   max-width: 800px
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 #responsive-car-ad .img {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #responsive-car-ad .img {
   background-image: var(--img-src);
   background-repeat: no-repeat;
   background-size: contain;
@@ -860,31 +860,31 @@
   width: 100%
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 #responsive-car-ad .img:after {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #responsive-car-ad .img:after {
   content: "";
   display: block;
   padding-bottom: calc(100% / calc(var(--img-ratio)))
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 #responsive-car-ad .flex-columns {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #responsive-car-ad .flex-columns {
   display: flex;
   flex-flow: column
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 #responsive-car-ad .flex-columns>* {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #responsive-car-ad .flex-columns>* {
   flex-basis: auto
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 #responsive-car-ad section.text-and-car {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #responsive-car-ad section.text-and-car {
   align-items: center;
   display: flex
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 #responsive-car-ad section.text-and-car p {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #responsive-car-ad section.text-and-car p {
   max-width: none
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 #responsive-car-ad section.text-and-car p.italic {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #responsive-car-ad section.text-and-car p.italic {
   font-family: Times New Roman;
   font-style: italic;
   font-weight: 700;
@@ -892,17 +892,17 @@
   padding: 20px
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 #responsive-car-ad section.text-and-car p.italic span {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #responsive-car-ad section.text-and-car p.italic span {
   text-transform: uppercase
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 #responsive-car-ad section.text-and-car p.headline {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #responsive-car-ad section.text-and-car p.headline {
   font-family: Times New Roman;
   line-height: 1em;
   margin-bottom: 30px
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 #responsive-car-ad section.text-and-car p.line-above {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #responsive-car-ad section.text-and-car p.line-above {
   border-top: 2px solid #000;
   margin-top: 30px;
   padding-top: 30px;
@@ -910,32 +910,32 @@
   width: 100%
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 #responsive-car-ad section.text-and-car p.loud {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #responsive-car-ad section.text-and-car p.loud {
   font-size: 32px
 }
 
 @media (min-width:768px) {
-  .a6afed00140449f9cd439fe9262aab24bbd5 #responsive-car-ad section:not(:last-child) {
+  ._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #responsive-car-ad section:not(:last-child) {
     margin-bottom: 80px
   }
 
-  .a6afed00140449f9cd439fe9262aab24bbd5 #responsive-car-ad section.text-and-car {
+  ._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #responsive-car-ad section.text-and-car {
     padding-left: 80px;
     padding-right: 80px
   }
 
-  .a6afed00140449f9cd439fe9262aab24bbd5 #responsive-car-ad .side {
+  ._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #responsive-car-ad .side {
     flex-basis: 370px;
     flex-shrink: 0;
     margin-left: 10px !important;
     margin-right: 10px !important
   }
 
-  .a6afed00140449f9cd439fe9262aab24bbd5 #responsive-car-ad p.headline {
+  ._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #responsive-car-ad p.headline {
     font-size: 72px
   }
 
-  .a6afed00140449f9cd439fe9262aab24bbd5 #responsive-car-ad p.overlap {
+  ._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #responsive-car-ad p.overlap {
     font-size: calc(32px / 1.25);
     transform: scale(1.25);
     transform-origin: left
@@ -943,59 +943,59 @@
 }
 
 @media (max-width:768px) {
-  .a6afed00140449f9cd439fe9262aab24bbd5 #responsive-car-ad section:not(:last-child) {
+  ._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #responsive-car-ad section:not(:last-child) {
     margin-bottom: 24px
   }
 
-  .a6afed00140449f9cd439fe9262aab24bbd5 #responsive-car-ad section.text-and-car {
+  ._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #responsive-car-ad section.text-and-car {
     padding-left: 20px;
     padding-right: 20px
   }
 
-  .a6afed00140449f9cd439fe9262aab24bbd5 #responsive-car-ad .side {
+  ._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #responsive-car-ad .side {
     margin: 20px auto
   }
 
-  .a6afed00140449f9cd439fe9262aab24bbd5 #responsive-car-ad section.text-and-car {
+  ._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #responsive-car-ad section.text-and-car {
     flex-flow: column
   }
 
-  .a6afed00140449f9cd439fe9262aab24bbd5 #responsive-car-ad p.headline {
+  ._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #responsive-car-ad p.headline {
     font-size: 36px
   }
 
-  .a6afed00140449f9cd439fe9262aab24bbd5 #responsive-car-ad p.overlap {
+  ._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #responsive-car-ad p.overlap {
     font-size: 32px
   }
 
-  .a6afed00140449f9cd439fe9262aab24bbd5 #responsive-car-ad .car-img {
+  ._1c6c5e2e5850fea8cd439fe9262aab24bbd5 #responsive-car-ad .car-img {
     width: 100%
   }
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5>:not(.no-max-width) {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5>:not(.no-max-width) {
   margin-left: auto;
   margin-right: auto;
   max-width: 800px
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5>:not(:last-child) {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5>:not(:last-child) {
   margin-bottom: var(--twice-rem-size)
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 .iframe-wrapper {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .iframe-wrapper {
   --aspect-ratio: 16/9;
   position: relative
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 .iframe-wrapper:before {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .iframe-wrapper:before {
   content: "";
   display: block;
   height: 0;
   padding-bottom: calc(100% / calc(var(--aspect-ratio)))
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 .iframe-wrapper>* {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .iframe-wrapper>* {
   height: 100%;
   left: 0;
   position: absolute;
@@ -1003,24 +1003,24 @@
   width: 100%
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 .iframe-wrapper iframe {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .iframe-wrapper iframe {
   height: 100% !important;
   width: 100% !important
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 .d_16x9 {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .d_16x9 {
   --aspect-ratio: 16/9;
   position: relative
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 .d_16x9:before {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .d_16x9:before {
   content: "";
   display: block;
   height: 0;
   padding-bottom: calc(100% / calc(var(--aspect-ratio)))
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 .d_16x9>* {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .d_16x9>* {
   height: 100%;
   left: 0;
   position: absolute;
@@ -1028,19 +1028,19 @@
   width: 100%
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 .d_1x1 {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .d_1x1 {
   --aspect-ratio: 1/1;
   position: relative
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 .d_1x1:before {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .d_1x1:before {
   content: "";
   display: block;
   height: 0;
   padding-bottom: calc(100% / calc(var(--aspect-ratio)))
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 .d_1x1>* {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 .d_1x1>* {
   height: 100%;
   left: 0;
   position: absolute;
@@ -1048,11 +1048,11 @@
   width: 100%
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 img {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 img {
   max-width: 100%
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 a {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 a {
   background: transparent;
   display: inline-block;
   padding: 0;
@@ -1062,12 +1062,12 @@
 
 @media (min-width:0px) {
 
-  .a6afed00140449f9cd439fe9262aab24bbd5 a,
-  .a6afed00140449f9cd439fe9262aab24bbd5 a:before {
+  ._1c6c5e2e5850fea8cd439fe9262aab24bbd5 a,
+  ._1c6c5e2e5850fea8cd439fe9262aab24bbd5 a:before {
     transition: all .2s ease
   }
 
-  .a6afed00140449f9cd439fe9262aab24bbd5 a:before {
+  ._1c6c5e2e5850fea8cd439fe9262aab24bbd5 a:before {
     background: var(--body-color);
     border-radius: .25rem;
     bottom: 0;
@@ -1080,31 +1080,31 @@
     z-index: -1
   }
 
-  .a6afed00140449f9cd439fe9262aab24bbd5 a:hover {
+  ._1c6c5e2e5850fea8cd439fe9262aab24bbd5 a:hover {
     color: #161616
   }
 
-  .a6afed00140449f9cd439fe9262aab24bbd5 a:hover:before {
+  ._1c6c5e2e5850fea8cd439fe9262aab24bbd5 a:hover:before {
     height: 100%;
     left: -.25rem;
     width: calc(100% + .5rem)
   }
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 a img {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 a img {
   display: block
 }
 
-.a6afed00140449f9cd439fe9262aab24bbd5 u {
+._1c6c5e2e5850fea8cd439fe9262aab24bbd5 u {
   text-decoration: none
 }
 
-.a6afed00140449f9d680dbb62ac2c9a59f44 {
+._1c6c5e2e5850fea8d680dbb62ac2c9a59f44 {
   grid-gap: var(--grid-gap-static-xl);
   display: grid
 }
 
-.a6afed00140449f9dca988c805a8fc3cf0b8 {
+._1c6c5e2e5850fea8dca988c805a8fc3cf0b8 {
   grid-gap: var(--grid-gap-static-xl);
   display: grid
 }
@@ -2300,7 +2300,7 @@
 }
 
 [data-context=newswire-article] h1,
-[data-context=newswire-article] h1.a6afed00140449f9b7a0f01413719ce7ed4f,
+[data-context=newswire-article] h1._1c6c5e2e5850fea8b7a0f01413719ce7ed4f,
 [data-context=newswire-article] h2,
 [data-context=newswire-article] h3,
 [data-context=newswire-article] h4 {
@@ -2309,13 +2309,13 @@
 }
 
 [data-context=newswire-article] h1,
-[data-context=newswire-article] h1.a6afed00140449f9b7a0f01413719ce7ed4f {
+[data-context=newswire-article] h1._1c6c5e2e5850fea8b7a0f01413719ce7ed4f {
   font-weight: var(--font-weight-h1, var(--font-weight-h, 700));
   line-height: var(--line-height-h1, var(--line-height-h, 1.1));
   text-transform: var(--text-transform-h1, var(--text-transform-h, none))
 }
 
-[data-context=newswire-article] h1.a6afed00140449f9b7a0f01413719ce7ed4f {
+[data-context=newswire-article] h1._1c6c5e2e5850fea8b7a0f01413719ce7ed4f {
   font-size: calc(var(--font-size-8) * var(--header-multiplier))
 }
 
@@ -2357,7 +2357,7 @@
 }
 
 [data-context=newswire-article] h1,
-[data-context=newswire-article] h1.a6afed00140449f9b7a0f01413719ce7ed4f {
+[data-context=newswire-article] h1._1c6c5e2e5850fea8b7a0f01413719ce7ed4f {
   color: var(--color-h-dynamic, var(--color-h1, var(--color-h, inherit)))
 }
 
@@ -2556,7 +2556,7 @@
 }
 
 [data-context=newswire-article] [data-game^=gta] h1,
-[data-context=newswire-article] [data-game^=gta] h1.a6afed00140449f9b7a0f01413719ce7ed4f,
+[data-context=newswire-article] [data-game^=gta] h1._1c6c5e2e5850fea8b7a0f01413719ce7ed4f,
 [data-context=newswire-article] [data-game^=gta] h2,
 [data-context=newswire-article] [data-game^=gta] h3,
 [data-context=newswire-article] [data-game^=gta] h4 {
@@ -2565,13 +2565,13 @@
 }
 
 [data-context=newswire-article] [data-game^=gta] h1,
-[data-context=newswire-article] [data-game^=gta] h1.a6afed00140449f9b7a0f01413719ce7ed4f {
+[data-context=newswire-article] [data-game^=gta] h1._1c6c5e2e5850fea8b7a0f01413719ce7ed4f {
   font-weight: var(--font-weight-h1, var(--font-weight-h, 700));
   line-height: var(--line-height-h1, var(--line-height-h, 1.1));
   text-transform: var(--text-transform-h1, var(--text-transform-h, none))
 }
 
-[data-context=newswire-article] [data-game^=gta] h1.a6afed00140449f9b7a0f01413719ce7ed4f {
+[data-context=newswire-article] [data-game^=gta] h1._1c6c5e2e5850fea8b7a0f01413719ce7ed4f {
   font-size: calc(var(--font-size-8) * var(--header-multiplier))
 }
 
@@ -2613,7 +2613,7 @@
 }
 
 [data-context=newswire-article] [data-game^=gta] h1,
-[data-context=newswire-article] [data-game^=gta] h1.a6afed00140449f9b7a0f01413719ce7ed4f {
+[data-context=newswire-article] [data-game^=gta] h1._1c6c5e2e5850fea8b7a0f01413719ce7ed4f {
   color: var(--color-h-dynamic, var(--color-h1, var(--color-h, inherit)))
 }
 
@@ -2648,7 +2648,7 @@
   color: var(--body-color, #2d2d2d)
 }
 
-[data-context=newswire-article] [data-game^=gta] .a6afed00140449f9ed3627344f81cddf8727 {
+[data-context=newswire-article] [data-game^=gta] ._1c6c5e2e5850fea8ed3627344f81cddf8727 {
   font-family: var(--gta-font-family-badge)
 }
 
@@ -2914,12 +2914,12 @@
 }
 
 [data-context=newswire-article] [data-game=rdo] h1,
-[data-context=newswire-article] [data-game=rdo] h1.a6afed00140449f9b7a0f01413719ce7ed4f,
+[data-context=newswire-article] [data-game=rdo] h1._1c6c5e2e5850fea8b7a0f01413719ce7ed4f,
 [data-context=newswire-article] [data-game=rdo] h2,
 [data-context=newswire-article] [data-game=rdo] h3,
 [data-context=newswire-article] [data-game=rdo] h4,
 [data-context=newswire-article] [data-game^=rdr] h1,
-[data-context=newswire-article] [data-game^=rdr] h1.a6afed00140449f9b7a0f01413719ce7ed4f,
+[data-context=newswire-article] [data-game^=rdr] h1._1c6c5e2e5850fea8b7a0f01413719ce7ed4f,
 [data-context=newswire-article] [data-game^=rdr] h2,
 [data-context=newswire-article] [data-game^=rdr] h3,
 [data-context=newswire-article] [data-game^=rdr] h4 {
@@ -2928,16 +2928,16 @@
 }
 
 [data-context=newswire-article] [data-game=rdo] h1,
-[data-context=newswire-article] [data-game=rdo] h1.a6afed00140449f9b7a0f01413719ce7ed4f,
+[data-context=newswire-article] [data-game=rdo] h1._1c6c5e2e5850fea8b7a0f01413719ce7ed4f,
 [data-context=newswire-article] [data-game^=rdr] h1,
-[data-context=newswire-article] [data-game^=rdr] h1.a6afed00140449f9b7a0f01413719ce7ed4f {
+[data-context=newswire-article] [data-game^=rdr] h1._1c6c5e2e5850fea8b7a0f01413719ce7ed4f {
   font-weight: var(--font-weight-h1, var(--font-weight-h, 700));
   line-height: var(--line-height-h1, var(--line-height-h, 1.1));
   text-transform: var(--text-transform-h1, var(--text-transform-h, none))
 }
 
-[data-context=newswire-article] [data-game=rdo] h1.a6afed00140449f9b7a0f01413719ce7ed4f,
-[data-context=newswire-article] [data-game^=rdr] h1.a6afed00140449f9b7a0f01413719ce7ed4f {
+[data-context=newswire-article] [data-game=rdo] h1._1c6c5e2e5850fea8b7a0f01413719ce7ed4f,
+[data-context=newswire-article] [data-game^=rdr] h1._1c6c5e2e5850fea8b7a0f01413719ce7ed4f {
   font-size: calc(var(--font-size-8) * var(--header-multiplier))
 }
 
@@ -2988,9 +2988,9 @@
 }
 
 [data-context=newswire-article] [data-game=rdo] h1,
-[data-context=newswire-article] [data-game=rdo] h1.a6afed00140449f9b7a0f01413719ce7ed4f,
+[data-context=newswire-article] [data-game=rdo] h1._1c6c5e2e5850fea8b7a0f01413719ce7ed4f,
 [data-context=newswire-article] [data-game^=rdr] h1,
-[data-context=newswire-article] [data-game^=rdr] h1.a6afed00140449f9b7a0f01413719ce7ed4f {
+[data-context=newswire-article] [data-game^=rdr] h1._1c6c5e2e5850fea8b7a0f01413719ce7ed4f {
   color: var(--color-h-dynamic, var(--color-h1, var(--color-h, inherit)))
 }
 
@@ -3084,6 +3084,7 @@
   --discounts-carousel-item-font-family: var(--font-family-h)
 }
 
+[data-context=newswire-article][data-theme=gtao-halloween-2022] h1,
 [data-context=newswire-article][data-theme=gtao-halloween-2022] h3 {
   --font-family-h: SharkSnackRegular, var(--gta-font-family-h)
 }
@@ -3170,11 +3171,11 @@
   background-size: contain
 }
 
-[data-context=newswire-article] [data-theme="9998"] .a6afed00140449f9fd4c7bacacc4a8a036fb,
+[data-context=newswire-article] [data-theme="9998"] ._1c6c5e2e5850fea8fd4c7bacacc4a8a036fb,
 [data-context=newswire-article] [data-theme="9998"] [data-context=discounts] h1,
 [data-context=newswire-article] [data-theme="9998"] h1,
 [data-context=newswire-article] [data-theme="9998"] h3,
-[data-context=newswire-article][data-theme="9998"] .a6afed00140449f9fd4c7bacacc4a8a036fb,
+[data-context=newswire-article][data-theme="9998"] ._1c6c5e2e5850fea8fd4c7bacacc4a8a036fb,
 [data-context=newswire-article][data-theme="9998"] [data-context=discounts] h1,
 [data-context=newswire-article][data-theme="9998"] h1,
 [data-context=newswire-article][data-theme="9998"] h3 {
@@ -3216,7 +3217,7 @@
   -webkit-background-clip: text
 }
 
-.a6afed00140449f9f5d1f51c8ee4ad8ccbbd {
+._1c6c5e2e5850fea8f5d1f51c8ee4ad8ccbbd {
   --text-section-max-width: 640px;
   --base-pixel-size: 12px;
   --base-rem-size: 0.75rem;
@@ -3259,14 +3260,14 @@
 }
 
 @media (max-width:767px) {
-  .a6afed00140449f9f5d1f51c8ee4ad8ccbbd {
+  ._1c6c5e2e5850fea8f5d1f51c8ee4ad8ccbbd {
     --grid-gap-static-lg: 2rem;
     --grid-gap-static-xl: 4rem
   }
 }
 
 @media (min-width:2560px) {
-  .a6afed00140449f9f5d1f51c8ee4ad8ccbbd {
+  ._1c6c5e2e5850fea8f5d1f51c8ee4ad8ccbbd {
     --max-width-static-md: 1440px
   }
 }
@@ -3298,5 +3299,3 @@
   font-weight: 300;
   src: url(https://media-rockstargames-com.akamaized.net/mfe5/__common/fonts/a04098dd0d60a8bd59a8.woff) format("woff")
 }
-
-/*# sourceMappingURL=c5166e110fa5eb6cc611.css.map*/

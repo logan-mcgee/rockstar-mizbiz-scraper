@@ -1,14 +1,14 @@
 "use strict";
 (self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
-  [417, 986], {
-    417: (e, s, a) => {
+  [736, 595], {
+    1736: (e, s, a) => {
       a.r(s), a.d(s, {
         Jsx0: () => i,
-        Jsx1: () => f,
+        Jsx1: () => u,
         Jsx2: () => g
       });
       var r = a(8976);
-      var t = a(6160);
+      var t = a(9817);
       const i = e => {
         let {
           article: s,
@@ -16,15 +16,15 @@
         } = e;
         const i = s.primary_tags[s.primary_tags.length > 1 && 722 === s.primary_tags[0].id ? 1 : 0];
         return (0, t.jsxs)("div", {
-          className: "a6afed00140449f9d680dbb62ac2c9a59f44",
+          className: "_1c6c5e2e5850fea8d680dbb62ac2c9a59f44",
           children: [(0, t.jsxs)("div", {
-            className: "a6afed00140449f9fe0c9ab354abbddb8756",
+            className: "_1c6c5e2e5850fea8fe0c9ab354abbddb8756",
             children: [(0, t.jsxs)("h1", {
               children: [s.title, s.subtitle ? (0, t.jsx)("span", {
                 children: s.subtitle
               }) : ""]
             }), (0, t.jsxs)("div", {
-              className: "a6afed00140449f9ddb6daf6f9db42766ee7",
+              className: "_1c6c5e2e5850fea8ddb6daf6f9db42766ee7",
               children: [s.primary_tags.length ? (0, t.jsx)(r.NewswireTag, {
                 title: i.name,
                 href: `/newswire?tag_id=${i.id}`
@@ -33,12 +33,12 @@
                 children: s.created_formatted
               })]
             }), s.posts_hero && "iframe" === s.posts_hero.type ? (0, t.jsx)("div", {
-              className: "a6afed00140449f9f2956f0c5077d5814eed",
+              className: "_1c6c5e2e5850fea8f2956f0c5077d5814eed",
               children: (0, t.jsx)("iframe", {
                 src: s.posts_hero.hero
               })
             }) : "", (0, t.jsx)("div", {
-              className: "a6afed00140449f9cd439fe9262aab24bbd5",
+              className: "_1c6c5e2e5850fea8cd439fe9262aab24bbd5",
               dangerouslySetInnerHTML: {
                 __html: s.content
               }
@@ -47,15 +47,15 @@
         })
       };
       var n = a(4932),
-        o = a(7218),
-        d = a.n(o),
+        o = a(3319),
+        c = a.n(o),
         l = a(9929),
-        c = a(420),
-        x = a.n(c),
+        d = a(420),
+        x = a.n(d),
         j = a(8356),
         m = a.n(j),
-        p = a(3975);
-      const f = (0, l.withTranslations)((0, l.withLocale)((e => {
+        p = a(6879);
+      const u = (0, l.withTranslations)((0, l.withLocale)((e => {
         let {
           article: s,
           children: a,
@@ -160,8 +160,8 @@
               ...e
             })
           },
-          c = s.posts_jsx.variables_us_defaulted,
-          [j] = (0, n.useState)((0, t.jsx)(d(), {
+          d = s.posts_jsx.variables_us_defaulted,
+          [j] = (0, n.useState)((0, t.jsx)(c(), {
             renderInWrapper: !1,
             bindings: {
               getArray: (e, s) => e[s],
@@ -173,7 +173,7 @@
               article: s,
               locale: i,
               t: o,
-              variables: c
+              variables: d
             },
             components: l,
             jsx: s.posts_jsx.markup,
@@ -182,12 +182,12 @@
             }
           }));
         return (0, t.jsxs)("div", {
-          className: "a6afed00140449f9dca988c805a8fc3cf0b8",
+          className: "_1c6c5e2e5850fea8dca988c805a8fc3cf0b8",
           children: [j, a]
         })
       })));
-      var u = a(9542),
-        h = a(7986);
+      var _ = a(9542),
+        h = a(6595);
       const g = e => {
         let {
           children: s,
@@ -195,8 +195,8 @@
           variablesKeys: r
         } = e;
         return (0, t.jsxs)("div", {
-          className: "a6afed00140449f9f5d1f51c8ee4ad8ccbbd",
-          children: [(0, t.jsx)(u.TinaParser, {
+          className: "_1c6c5e2e5850fea8f5d1f51c8ee4ad8ccbbd",
+          children: [(0, t.jsx)(_.TinaParser, {
             tina: {
               payload: a,
               variables: {
@@ -208,7 +208,7 @@
         })
       }
     },
-    7986: (e, s, a) => {
+    6595: (e, s, a) => {
       a.r(s), a.d(s, {
         componentsForTinaParser: () => p
       });
@@ -217,15 +217,15 @@
         i = a.n(t),
         n = a(420),
         o = a.n(n),
-        d = a(3750),
-        l = a.n(d),
-        c = a(4224),
-        x = a.n(c),
+        c = a(3750),
+        l = a.n(c),
+        d = a(4224),
+        x = a.n(d),
         j = a(5551),
         m = a.n(j);
       const p = {
         ...r,
-        ...a(3975),
+        ...a(6879),
         ...{
           Gif: i(),
           GroupOfItems: o(),
@@ -237,4 +237,3 @@
     }
   }
 ]);
-//# sourceMappingURL=198459cfcc4c8eda20a6.js.map
