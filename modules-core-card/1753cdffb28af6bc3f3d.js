@@ -1,8 +1,8 @@
-/*! For license information please see 30e7bf9bcee2aa694169.js.LICENSE.txt */
+/*! For license information please see 1753cdffb28af6bc3f3d.js.LICENSE.txt */
 "use strict";
 (self.webpackChunk_rockstargames_modules_core_card = self.webpackChunk_rockstargames_modules_core_card || []).push([
-  [252], {
-    8401: (e, t) => {
+  [674], {
+    4525: (e, t) => {
       var r = Symbol.for("react.element"),
         n = Symbol.for("react.portal"),
         o = Symbol.for("react.fragment"),
@@ -297,9 +297,8 @@
         return I.current.useTransition()
       }, t.version = "18.2.0"
     },
-    8252: (e, t, r) => {
-      e.exports = r(8401)
+    1674: (e, t, r) => {
+      e.exports = r(4525)
     }
   }
 ]);
-//# sourceMappingURL=30e7bf9bcee2aa694169.js.map

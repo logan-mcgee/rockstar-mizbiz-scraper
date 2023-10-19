@@ -1,49 +1,46 @@
 "use strict";
 (self.webpackChunk_rockstargames_components = self.webpackChunk_rockstargames_components || []).push([
-  [515], {
-    7515: (e, a, t) => {
-      t.r(a), t.d(a, {
-        ModalProvider: () => f,
-        useModal: () => b
+  [94], {
+    1094: (e, t, a) => {
+      a.r(t), a.d(t, {
+        ModalProvider: () => u,
+        useModal: () => f
       });
-      var n = t(4932),
-        l = t(9270),
-        o = t(9542),
-        s = t(6711),
-        i = t(1424);
-      var c = t(6160);
-      const d = e => {
+      var n = a(927),
+        o = a(7638),
+        l = a(9542),
+        s = a(6711),
+        i = a(6602);
+      var d = a(5770);
+      const c = e => {
           let {
-            modal: a
+            modal: t
           } = e;
           const {
-            content: t,
-            className: d,
+            content: a,
+            className: c,
             height: r,
-            onClose: b,
-            rect: f = {
+            onClose: f,
+            rect: u = {
               left: 0,
               top: 0
             },
-            contentStyle: u = {},
+            contentStyle: b = {},
             contentClassName: m = "",
             width: v,
             fadeIn: h = !0,
             cardIds: p,
-            theme: _,
-            title: g,
-            gtm: y = {},
-            aspectRatio: x = "default",
+            theme: g,
+            title: y,
+            gtm: x = {},
+            aspectRatio: _ = "default",
             cardDimensions: k
-          } = a, {
+          } = t, {
             left: j,
             top: E
-          } = f, [N, w] = (0, n.useState)(null), {
+          } = u, [N, w] = (0, n.useState)(null), {
             track: C
-          } = (0, s.useGtmTrack)();
-          let S = null !== p && "flag_bg" === _;
-          S = null !== p && (p?.length || 0) > 1 && ("flag_bg" === _ || "fob" === k?.size);
-          const [L, M] = (0, i.useSearchParams)(), [P, I] = (0, n.useState)(!1), [T, R] = (0, n.useState)(!1), z = () => {
+          } = (0, s.useGtmTrack)(), S = null !== p && (p?.length || 0) > 1 && ("flag_bg" === g || "fob" === k?.size), [L, M] = (0, i.useSearchParams)(), [P, I] = (0, n.useState)(!1), [T, R] = (0, n.useState)(!1), z = () => {
             const e = N - 1;
             w(e), R(e <= 0), I(e >= (p?.length || 0) - 1), C({
               event: "modal_previous",
@@ -69,8 +66,8 @@
           }), [N, p]), (0, n.useEffect)((() => {
             if (null !== p && null === N && p?.length > 0) {
               const e = L.get("info");
-              p?.forEach(((a, t) => {
-                a === e && (w(t), R(t <= 0), I(t >= (p?.length || 0) - 1))
+              p?.forEach(((t, a) => {
+                t === e && (w(a), R(a <= 0), I(a >= (p?.length || 0) - 1))
               }))
             }
           }), [p, N]);
@@ -126,55 +123,57 @@
             })
           }), [G, F]), (0, n.useEffect)((() => {
             const e = e => {
-              "function" == typeof b && 27 === e.keyCode && (b(), C({
+              "function" == typeof f && 27 === e.keyCode && (f(), C({
                 event: "modal_close",
                 event_action: "close",
                 event_category: "modal",
-                event_label: g ?? void 0,
-                ...y
+                event_label: y ?? void 0,
+                ...x
               }))
             };
             return document.addEventListener("keydown", e, !1), () => document.removeEventListener("keydown", e, !1)
           }), []);
           const O = () => {
-              "function" == typeof b && (b(), C({
-                event: "modal_close",
-                event_action: "close",
-                event_category: "modal",
-                event_label: g ?? void 0,
-                ...y
-              }))
+            "function" == typeof f && (f(), C({
+              event: "modal_close",
+              event_action: "close",
+              event_category: "modal",
+              event_label: y ?? void 0,
+              ...x
+            }))
+          };
+          let Q = 0;
+          Q = h ? 0 : 1;
+          const U = (0, d.jsx)(o.E.button, {
+            className: "c81dee7fd0870f89b6365baf583b9e283753",
+            "aria-label": "Close",
+            initial: {
+              opacity: 0
             },
-            Q = (0, c.jsx)(l.E.button, {
-              className: "_93f8151fb9eb5ac4b6365baf583b9e283753",
-              "aria-label": "Close",
-              initial: {
-                opacity: 0
-              },
-              animate: {
-                opacity: 1
-              },
-              transition: B,
-              onClick: () => {
-                O()
-              }
-            });
-          return (0, n.useMemo)((() => (0, c.jsxs)("div", {
-            className: "_93f8151fb9eb5ac4b1b29da799154d1b51b7",
+            animate: {
+              opacity: 1
+            },
+            transition: B,
+            onClick: () => {
+              O()
+            }
+          });
+          return (0, n.useMemo)((() => (0, d.jsxs)("div", {
+            className: "c81dee7fd0870f89b1b29da799154d1b51b7",
             "data-show-nav": S,
-            "data-aspect-ratio": x,
-            children: [(0, c.jsx)(l.E.div, {
-              className: "_93f8151fb9eb5ac4a205bb0837fde83d182f",
+            "data-aspect-ratio": _,
+            children: [(0, d.jsx)(o.E.div, {
+              className: "c81dee7fd0870f89a205bb0837fde83d182f",
               initial: {
                 opacity: 0
               },
               animate: H,
               transition: A,
               onClick: () => O()
-            }), S && (0, c.jsxs)("div", {
-              className: "_93f8151fb9eb5ac4a170a8ff8afa41c02b8d",
-              children: [(0, c.jsxs)(l.E.div, {
-                className: "_93f8151fb9eb5ac4e497f927dc015e9b9629",
+            }), S && (0, d.jsxs)("div", {
+              className: "c81dee7fd0870f89a170a8ff8afa41c02b8d",
+              children: [(0, d.jsxs)(o.E.div, {
+                className: "c81dee7fd0870f89e497f927dc015e9b9629",
                 initial: {
                   opacity: 0
                 },
@@ -182,67 +181,66 @@
                   opacity: 1
                 },
                 transition: B,
-                children: [(0, c.jsx)("button", {
+                children: [(0, d.jsx)("button", {
                   type: "button",
                   "aria-label": "Previous",
                   onClick: z,
                   disabled: T
-                }), (0, c.jsxs)("div", {
-                  className: "_93f8151fb9eb5ac4bea33fae7718c7fbfdb0",
-                  children: [" ", N + 1, (0, c.jsx)("div", {
-                    className: "_93f8151fb9eb5ac4cb551a1570b2a1e5f5ee"
+                }), (0, d.jsxs)("div", {
+                  className: "c81dee7fd0870f89bea33fae7718c7fbfdb0",
+                  children: [" ", N + 1, (0, d.jsx)("div", {
+                    className: "c81dee7fd0870f89cb551a1570b2a1e5f5ee"
                   }), p?.length, " "]
-                }), (0, c.jsx)("button", {
+                }), (0, d.jsx)("button", {
                   type: "button",
                   "aria-label": "Next",
                   onClick: D,
                   disabled: P
                 })]
-              }), Q]
-            }), (0, c.jsx)(l.E.div, {
-              className: "_93f8151fb9eb5ac4fe0c0d0b3f72589dfd69",
+              }), U]
+            }), (0, d.jsx)(o.E.div, {
+              className: "c81dee7fd0870f89fe0c0d0b3f72589dfd69",
               ref: q,
               initial: "initial",
               animate: "shown",
               variants: J,
               transition: A,
-              style: u,
-              children: (0, c.jsxs)(l.E.div, {
-                className: (0, o.classList)("_93f8151fb9eb5ac4fcc01a21ba6273e262bd", d),
-                children: [!S && Q, (0, c.jsx)(l.E.div, {
-                  className: (0, o.classList)("_93f8151fb9eb5ac4df0821d6f0e927283e86", m),
+              style: b,
+              children: (0, d.jsxs)(o.E.div, {
+                className: (0, l.classList)("c81dee7fd0870f89fcc01a21ba6273e262bd", c),
+                children: [!S && U, (0, d.jsx)(o.E.div, {
+                  className: (0, l.classList)("c81dee7fd0870f89df0821d6f0e927283e86", m),
                   initial: {
-                    opacity: 0
+                    opacity: Q
                   },
                   animate: {
                     opacity: 1
                   },
                   transition: B,
-                  children: t
-                }), (0, c.jsx)("button", {
-                  className: "_93f8151fb9eb5ac4f2858aa2b04e3da87391",
+                  children: a
+                }), (0, d.jsx)("button", {
+                  className: "c81dee7fd0870f89f2858aa2b04e3da87391",
                   type: "button",
                   "aria-label": "End of modal"
                 })]
               })
             })]
-          })), [t, N, u])
+          })), [a, N, b])
         },
         r = (0, n.createContext)(null),
-        b = () => (0, n.useContext)(r),
-        f = e => {
+        f = () => (0, n.useContext)(r),
+        u = e => {
           let {
-            children: a
+            children: t
           } = e;
-          const [t, l] = (0, n.useState)(null), o = (0, n.useMemo)((() => t?.content ? (0, c.jsx)(d, {
-            modal: t
-          }) : null), [t]);
-          return (0, c.jsx)(r.Provider, {
-            value: [o, l],
-            children: a
+          const [a, o] = (0, n.useState)(null), l = (0, n.useMemo)((() => a?.content ? (0, d.jsx)(c, {
+            modal: a
+          }) : null), [a]);
+          return (0, d.jsx)(r.Provider, {
+            value: [l, o],
+            children: t
           })
         }
     }
   }
 ]);
-//# sourceMappingURL=420da3d1eb30fa358e82.js.map

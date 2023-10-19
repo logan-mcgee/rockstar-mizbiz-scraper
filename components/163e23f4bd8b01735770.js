@@ -1,38 +1,74 @@
-/*! For license information please see 207a0b572fd09713e8a2.js.LICENSE.txt */
+/*! For license information please see 163e23f4bd8b01735770.js.LICENSE.txt */
 (self.webpackChunk_rockstargames_components = self.webpackChunk_rockstargames_components || []).push([
-  [916], {
-    6886: (e, l, a) => {
+  [77], {
+    6574: (e, l, a) => {
+      "use strict";
+      var t = a(927),
+        n = Symbol.for("react.element"),
+        i = Symbol.for("react.fragment"),
+        o = Object.prototype.hasOwnProperty,
+        r = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        d = {
+          key: !0,
+          ref: !0,
+          __self: !0,
+          __source: !0
+        };
+
+      function s(e, l, a) {
+        var t, i = {},
+          s = null,
+          m = null;
+        for (t in void 0 !== a && (s = "" + a), void 0 !== l.key && (s = "" + l.key), void 0 !== l.ref && (m = l.ref), l) o.call(l, t) && !d.hasOwnProperty(t) && (i[t] = l[t]);
+        if (e && e.defaultProps)
+          for (t in l = e.defaultProps) void 0 === i[t] && (i[t] = l[t]);
+        return {
+          $$typeof: n,
+          type: e,
+          key: s,
+          ref: m,
+          props: i,
+          _owner: r.current
+        }
+      }
+      l.Fragment = i, l.jsx = s, l.jsxs = s
+    },
+    5770: (e, l, a) => {
+      "use strict";
+      e.exports = a(6574)
+    },
+    4739: (e, l, a) => {
       "use strict";
       a.d(l, {
         Z: () => u
       });
-      var t = a(4932),
-        n = a(3205),
+      var t = a(927),
+        n = a(7192),
         i = a.n(n),
         o = a(9542),
         r = a(9929);
-      const s = {
-        grid: "_93f8151fb9eb5ac4c89161c6ad22d2dc691e",
-        itemList: "_93f8151fb9eb5ac4aeed45e36e2fc223fb9b",
-        gtaplus: "_93f8151fb9eb5ac4a94d8221792ee3d1ee37",
-        rdo: "_93f8151fb9eb5ac4c9104bac1ba9fe88116a",
-        noImg: "_93f8151fb9eb5ac4f86567dc9c46964ed881",
-        gtao: "_93f8151fb9eb5ac4f25978c2a77052c2267c",
-        custom: "_93f8151fb9eb5ac4c2246e99cd35a0f82086",
-        yellow: "_93f8151fb9eb5ac4a0002aff4143a00a57e4",
-        hotPink: "_93f8151fb9eb5ac4c6db845149d2b9d0344b",
-        red: "_93f8151fb9eb5ac4a9c7659c95e05538c243",
-        turquoise: "_93f8151fb9eb5ac4a5dfc4f60b3837df9ba9",
-        purple: "_93f8151fb9eb5ac4bb00befaa9ddecaa642a",
-        teal: "_93f8151fb9eb5ac4a3c59c6aaa744688a0c0",
-        blue: "_93f8151fb9eb5ac4b64557dc83a6418e621b",
-        green: "_93f8151fb9eb5ac4dcb28fe6e466a3c0a91e",
-        darkRed: "_93f8151fb9eb5ac4eea2f560977905393a6a",
-        darkBlue: "_93f8151fb9eb5ac4e465ba0afc74d677584c",
-        goldenrod: "_93f8151fb9eb5ac4fd1ceddbe0451d6077f6",
-        skull: "_93f8151fb9eb5ac4f8bb4c9647138419a301"
+      const d = {
+        grid: "c81dee7fd0870f89c89161c6ad22d2dc691e",
+        itemList: "c81dee7fd0870f89aeed45e36e2fc223fb9b",
+        gtaplus: "c81dee7fd0870f89a94d8221792ee3d1ee37",
+        rdo: "c81dee7fd0870f89c9104bac1ba9fe88116a",
+        noImg: "c81dee7fd0870f89f86567dc9c46964ed881",
+        gtao: "c81dee7fd0870f89f25978c2a77052c2267c",
+        custom: "c81dee7fd0870f89c2246e99cd35a0f82086",
+        yellow: "c81dee7fd0870f89a0002aff4143a00a57e4",
+        hotPink: "c81dee7fd0870f89c6db845149d2b9d0344b",
+        red: "c81dee7fd0870f89a9c7659c95e05538c243",
+        turquoise: "c81dee7fd0870f89a5dfc4f60b3837df9ba9",
+        purple: "c81dee7fd0870f89bb00befaa9ddecaa642a",
+        teal: "c81dee7fd0870f89a3c59c6aaa744688a0c0",
+        blue: "c81dee7fd0870f89b64557dc83a6418e621b",
+        green: "c81dee7fd0870f89dcb28fe6e466a3c0a91e",
+        darkRed: "c81dee7fd0870f89eea2f560977905393a6a",
+        darkBlue: "c81dee7fd0870f89e465ba0afc74d677584c",
+        goldenrod: "c81dee7fd0870f89fd1ceddbe0451d6077f6",
+        skull: "c81dee7fd0870f89f8bb4c9647138419a301"
       };
-      var d = a(6160);
+      var s = a(5770);
       const {
         sanitize: m
       } = i(), u = e => {
@@ -50,25 +86,25 @@
         const [v, g] = (0, t.useState)(null);
         return (0, t.useEffect)((() => {
           g(l)
-        }), [l]), a || l ? b && v ? (0, d.jsx)("div", {
-          className: s.grid,
+        }), [l]), a || l ? b && v ? (0, s.jsx)("div", {
+          className: d.grid,
           style: {
             "--ordered-list-grid-column": b,
             "--ordered-list-grid-column-mobile": f ?? b
           },
-          children: (0, d.jsx)("ol", {
+          children: (0, s.jsx)("ol", {
             style: (0, r.safeStyles)(i),
-            className: (0, o.classList)(s.itemList, s.noImg, s[n], s[c]),
-            children: v.map((e => (0, d.jsx)("li", {
+            className: (0, o.classList)(d.itemList, d.noImg, d[n], d[c]),
+            children: v.map((e => (0, s.jsx)("li", {
               dangerouslySetInnerHTML: {
                 __html: m(e.content)
               }
             }, e.content)))
           })
-        }) : (0, d.jsx)("ol", {
+        }) : (0, s.jsx)("ol", {
           style: (0, r.safeStyles)(i),
-          className: (0, o.classList)(s.itemList, s.custom, p ? s.noImg : "", n ? s[n] : "", c ? s[c] : "", u ?? ""),
-          children: l.map((e => (0, d.jsx)("li", {
+          className: (0, o.classList)(d.itemList, d.custom, p ? d.noImg : "", n ? d[n] : "", c ? d[c] : "", u ?? ""),
+          children: l.map((e => (0, s.jsx)("li", {
             dangerouslySetInnerHTML: {
               __html: m(e?.content ?? e)
             }
@@ -76,38 +112,38 @@
         }) : null
       }
     },
-    3699: (e, l, a) => {
+    6475: (e, l, a) => {
       "use strict";
       a.d(l, {
         Z: () => u
       });
-      var t = a(4932),
-        n = a(3205),
+      var t = a(927),
+        n = a(7192),
         i = a.n(n),
         o = a(9542),
         r = a(9929);
-      const s = {
-        grid: "_93f8151fb9eb5ac4a913315bef66f9841193",
-        itemList: "_93f8151fb9eb5ac4b47c4ec3ee5a7b25272a",
-        gtaplus: "_93f8151fb9eb5ac4f62d53aa88002b52a1ea",
-        rdo: "_93f8151fb9eb5ac4cb929b69e72d0b745821",
-        noImg: "_93f8151fb9eb5ac4d488e38df25c0b9a4c20",
-        gtao: "_93f8151fb9eb5ac4ce5462c5860712b67002",
-        custom: "_93f8151fb9eb5ac4a1eadd442b1479e27d60",
-        yellow: "_93f8151fb9eb5ac4eb8d7b0da6967262905d",
-        hotPink: "_93f8151fb9eb5ac4ef6a35989cf7f2815a81",
-        red: "_93f8151fb9eb5ac4f16f93451d76eff119ef",
-        turquoise: "_93f8151fb9eb5ac4b68b8022cefb15c42493",
-        purple: "_93f8151fb9eb5ac4b81f26d04bea51236b12",
-        teal: "_93f8151fb9eb5ac4eabe5a1697de9f60444b",
-        blue: "_93f8151fb9eb5ac4cab0d114386be0534b0a",
-        green: "_93f8151fb9eb5ac4e6521308cf3d4cbcd0eb",
-        darkRed: "_93f8151fb9eb5ac4da07f0da46dc71261efb",
-        darkBlue: "_93f8151fb9eb5ac4db540e4cd55e1fd039f6",
-        goldenrod: "_93f8151fb9eb5ac4d2ccafcdd0dbfba68f90",
-        skull: "_93f8151fb9eb5ac4d5f11f6a0da20e30e1cc"
+      const d = {
+        grid: "c81dee7fd0870f89a913315bef66f9841193",
+        itemList: "c81dee7fd0870f89b47c4ec3ee5a7b25272a",
+        gtaplus: "c81dee7fd0870f89f62d53aa88002b52a1ea",
+        rdo: "c81dee7fd0870f89cb929b69e72d0b745821",
+        noImg: "c81dee7fd0870f89d488e38df25c0b9a4c20",
+        gtao: "c81dee7fd0870f89ce5462c5860712b67002",
+        custom: "c81dee7fd0870f89a1eadd442b1479e27d60",
+        yellow: "c81dee7fd0870f89eb8d7b0da6967262905d",
+        hotPink: "c81dee7fd0870f89ef6a35989cf7f2815a81",
+        red: "c81dee7fd0870f89f16f93451d76eff119ef",
+        turquoise: "c81dee7fd0870f89b68b8022cefb15c42493",
+        purple: "c81dee7fd0870f89b81f26d04bea51236b12",
+        teal: "c81dee7fd0870f89eabe5a1697de9f60444b",
+        blue: "c81dee7fd0870f89cab0d114386be0534b0a",
+        green: "c81dee7fd0870f89e6521308cf3d4cbcd0eb",
+        darkRed: "c81dee7fd0870f89da07f0da46dc71261efb",
+        darkBlue: "c81dee7fd0870f89db540e4cd55e1fd039f6",
+        goldenrod: "c81dee7fd0870f89d2ccafcdd0dbfba68f90",
+        skull: "c81dee7fd0870f89d5f11f6a0da20e30e1cc"
       };
-      var d = a(6160);
+      var s = a(5770);
       const {
         sanitize: m
       } = i(), u = e => {
@@ -125,25 +161,25 @@
         const [v, g] = (0, t.useState)(null), h = a ? a.split("_#_") : l;
         return (0, t.useEffect)((() => {
           g(l)
-        }), [l]), a || l ? b && v ? (0, d.jsx)("div", {
-          className: s.grid,
+        }), [l]), a || l ? b && v ? (0, s.jsx)("div", {
+          className: d.grid,
           style: {
             "--unordered-list-grid-column": b,
             "--unordered-list-grid-column-mobile": f ?? b
           },
-          children: (0, d.jsx)("ul", {
+          children: (0, s.jsx)("ul", {
             style: (0, r.safeStyles)(i),
-            className: (0, o.classList)(s.itemList, s.noImg, s[n], s[c]),
-            children: v.map((e => (0, d.jsx)("li", {
+            className: (0, o.classList)(d.itemList, d.noImg, d[n], d[c]),
+            children: v.map((e => (0, s.jsx)("li", {
               dangerouslySetInnerHTML: {
                 __html: m(e.content)
               }
             }, e.content)))
           })
-        }) : (0, d.jsx)("ul", {
+        }) : (0, s.jsx)("ul", {
           style: (0, r.safeStyles)(i),
-          className: (0, o.classList)(s.itemList, s.custom, p ? s.noImg : "", n ? s[n] : "", c ? s[c] : "", u ?? ""),
-          children: h.map((e => (0, d.jsx)("li", {
+          className: (0, o.classList)(d.itemList, d.custom, p ? d.noImg : "", n ? d[n] : "", c ? d[c] : "", u ?? ""),
+          children: h.map((e => (0, s.jsx)("li", {
             dangerouslySetInnerHTML: {
               __html: m(e?.content ?? e)
             }
@@ -151,7 +187,7 @@
         }) : null
       }
     },
-    2916: (e, l, a) => {
+    8527: (e, l, a) => {
       "use strict";
       a.r(l), a.d(l, {
         BrandsField: () => o,
@@ -170,12 +206,12 @@
         LayeredImage: () => N,
         ListItem: () => F,
         MultiSourceImage: () => T,
-        NewswireRelated: () => _,
+        NewswireRelated: () => L,
         OrderedList: () => Y,
-        ParallaxInnerLayer: () => L,
-        ParallaxOuterLayer: () => C,
-        ParallaxWrapper: () => w,
-        PromoModule: () => A,
+        ParallaxInnerLayer: () => w,
+        ParallaxOuterLayer: () => A,
+        ParallaxWrapper: () => C,
+        PromoModule: () => _,
         Rating: () => R,
         ResponsiveFlexBox: () => M,
         ResponsiveFlexItem: () => E,
@@ -409,20 +445,20 @@
             }
           }
         };
-      var s = a(559);
-      const d = function() {
+      var d = a(559);
+      const s = function() {
           let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "background";
           const l = [{
             name: "mobile",
             label: "Mobile",
             component: "image",
             description: "(If responsive, only Mobile Source is needed)",
-            uploadDir: s.uploadDir
+            uploadDir: d.uploadDir
           }, {
             name: "desktop",
             label: "Desktop",
             component: "image",
-            uploadDir: s.uploadDir
+            uploadDir: d.uploadDir
           }];
           return "background" === e && l.push((0, t.StyleField)({
             filter: "image"
@@ -541,7 +577,7 @@
             label: "Legal Text",
             component: "text",
             description: "Display smaller legal text underneath the CTA buttons."
-          }), d(), d("layered"), {
+          }), s(), s("layered"), {
             name: "layeredImageSettings",
             label: "Layered Image Position Settings",
             component: "group",
@@ -585,7 +621,7 @@
                 label: "Title",
                 component: "text",
                 description: "Text to be overlayed on top of the image."
-              }), d("shard")],
+              }), s("shard")],
               defaultItem: () => (0, t.defaultItemUnique)(),
               itemProps: e => (0, t.itemPropsWithKey)(e, {
                 label: `${e?.[t.TINA_MEMOQ_PREFIX]?.title??"New"} [Shard]`
@@ -1210,7 +1246,7 @@
           }), r.push((0, t.DisplayClassField)({}), (0, t.StyleField)({
             filter: "layeredImage"
           }));
-          const s = {
+          const d = {
             layer: {},
             background: {
               style: {
@@ -1227,7 +1263,7 @@
             component: "group",
             description: n,
             fields: r,
-            defaultItem: () => (0, t.defaultItemUnique)(s[i]),
+            defaultItem: () => (0, t.defaultItemUnique)(d[i]),
             itemProps: e => (0, t.itemPropsWithKey)(e, {
               label: `${e?.name??"New"} [${a}]`
             })
@@ -1349,7 +1385,7 @@
             })
           }
         },
-        _ = function() {
+        L = function() {
           return {
             label: "Related Posts",
             fields: [],
@@ -1357,7 +1393,7 @@
             itemProps: e => (0, t.itemPropsWithKey)(e)
           }
         },
-        L = () => ({
+        w = () => ({
           name: "parallaxInnerLayer",
           label: "Parallax Inner Layer",
           component: "group",
@@ -1375,9 +1411,9 @@
                 description: "Image source that will be applied as a CSS background image on the layer.",
                 component: "image",
                 clearable: !0,
-                uploadDir: s.uploadDir,
-                parse: s.parse,
-                previewSrc: s.previewSrc
+                uploadDir: d.uploadDir,
+                parse: d.parse,
+                previewSrc: d.previewSrc
               }, {
                 name: "amount",
                 label: "Parallax Amount",
@@ -1408,7 +1444,7 @@
             label: `${e?.name??"New"} [Parallax Inner Layer]`
           })
         }),
-        w = e => {
+        C = e => {
           let {
             game: l = null,
             templates: a = null
@@ -1462,7 +1498,7 @@
             })
           }
         },
-        C = e => {
+        A = e => {
           let {
             game: l = null,
             templates: a = null
@@ -1500,7 +1536,7 @@
             })
           }
         },
-        A = () => ({
+        _ = () => ({
           label: "Promo Module",
           component: "group",
           fields: [(0, t.NameField)(), {
@@ -1535,9 +1571,9 @@
             name: "image",
             component: "image",
             clearable: !0,
-            uploadDir: s.uploadDir,
-            parse: s.parse,
-            previewSrc: s.previewSrc
+            uploadDir: d.uploadDir,
+            parse: d.parse,
+            previewSrc: d.previewSrc
           }, {
             name: "imageOrientation",
             label: "Which side would you like the image on?",
@@ -1710,8 +1746,8 @@
           label: "A gen9 Hero"
         }]
       };
-      var U = a(4658),
-        G = a(6160);
+      var U = a(5066),
+        G = a(5770);
       const K = e => {
           let {
             name: l,
@@ -1907,7 +1943,7 @@
             label: `${e?.[t.TINA_MEMOQ_PREFIX]?.title??"NEW"} [CLR TrackList]`
           })
         });
-      var j = a(6886);
+      var j = a(4739);
       const Y = e => {
         let {
           game: l = null,
@@ -1996,7 +2032,7 @@
           })
         }
       };
-      var Q = a(3699);
+      var Q = a(6475);
       const Z = e => {
           let {
             game: l = null,
@@ -2105,43 +2141,7 @@
           })
         })
     },
-    3970: (e, l, a) => {
-      "use strict";
-      var t = a(4932),
-        n = Symbol.for("react.element"),
-        i = Symbol.for("react.fragment"),
-        o = Object.prototype.hasOwnProperty,
-        r = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        s = {
-          key: !0,
-          ref: !0,
-          __self: !0,
-          __source: !0
-        };
-
-      function d(e, l, a) {
-        var t, i = {},
-          d = null,
-          m = null;
-        for (t in void 0 !== a && (d = "" + a), void 0 !== l.key && (d = "" + l.key), void 0 !== l.ref && (m = l.ref), l) o.call(l, t) && !s.hasOwnProperty(t) && (i[t] = l[t]);
-        if (e && e.defaultProps)
-          for (t in l = e.defaultProps) void 0 === i[t] && (i[t] = l[t]);
-        return {
-          $$typeof: n,
-          type: e,
-          key: d,
-          ref: m,
-          props: i,
-          _owner: r.current
-        }
-      }
-      l.Fragment = i, l.jsx = d, l.jsxs = d
-    },
-    6160: (e, l, a) => {
-      "use strict";
-      e.exports = a(3970)
-    },
-    4658: e => {
+    5066: e => {
       var l = {
         kind: "Document",
         definitions: [{
@@ -2798,8 +2798,8 @@
         for (i.forEach((function(e) {
             r.add(e)
           })); r.size > 0;) {
-          var s = r;
-          r = new Set, s.forEach((function(e) {
+          var d = r;
+          r = new Set, d.forEach((function(e) {
             o.has(e) || (o.add(e), (t[e] || new Set).forEach((function(e) {
               r.add(e)
             })))
@@ -2819,4 +2819,3 @@
     }
   }
 ]);
-//# sourceMappingURL=207a0b572fd09713e8a2.js.map

@@ -1,7 +1,7 @@
-/*! For license information please see 7ecf76ee13a4d190e7c1.js.LICENSE.txt */
+/*! For license information please see bc88c5d32ca5fe938df9.js.LICENSE.txt */
 (self.webpackChunk_rockstargames_modules_core_card = self.webpackChunk_rockstargames_modules_core_card || []).push([
-  [798], {
-    3653: function(n, t, r) {
+  [886], {
+    3448: function(n, t, r) {
       var e;
       n = r.nmd(n),
         function() {
@@ -3686,9 +3686,9 @@
           }.call(t, r, t, n)) === u || (n.exports = e)
         }.call(this)
     },
-    3970: (n, t, r) => {
+    6574: (n, t, r) => {
       "use strict";
-      var e = r(4932),
+      var e = r(927),
         u = Symbol.for("react.element"),
         i = Symbol.for("react.fragment"),
         o = Object.prototype.hasOwnProperty,
@@ -3718,10 +3718,9 @@
       }
       t.Fragment = i, t.jsx = c, t.jsxs = c
     },
-    6160: (n, t, r) => {
+    5770: (n, t, r) => {
       "use strict";
-      n.exports = r(3970)
+      n.exports = r(6574)
     }
   }
 ]);
-//# sourceMappingURL=7ecf76ee13a4d190e7c1.js.map

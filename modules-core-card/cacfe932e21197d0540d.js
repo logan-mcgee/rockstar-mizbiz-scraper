@@ -1,40 +1,40 @@
 (self.webpackChunk_rockstargames_modules_core_card = self.webpackChunk_rockstargames_modules_core_card || []).push([
-  [8], {
-    3008: (e, a, n) => {
+  [487], {
+    5487: (e, a, n) => {
       "use strict";
       n.r(a), n.d(a, {
         Card: () => i.Z,
         CardGrid: () => T,
         CardWithImageGallery: () => I.Z,
         CoverCard: () => B,
-        Deck: () => V.Z,
+        Deck: () => L.Z,
         TextCard: () => w.Z
       });
-      var i = n(498),
-        d = n(4932),
-        t = n(3653),
+      var i = n(2473),
+        d = n(927),
+        t = n(3448),
         r = n.n(t),
         s = n(8976),
         c = n(420),
         l = n.n(c),
         o = n(9542),
-        m = n(3684);
+        m = n(8125);
       const u = {
-        clrCollapsedCard: "d82452706eccb7b8f6b60ed0528262116599",
-        cardContainer: "d82452706eccb7b8eb92e279865c9000b72a",
-        cardInfo: "d82452706eccb7b8e58bfe52c22f632dc039",
-        subtitle: "d82452706eccb7b8a95eca18e1ad770ea596",
-        price: "d82452706eccb7b8e48b1713bf2de6b8abc0",
-        newBadge: "d82452706eccb7b8b0aca41f30620c3d2493",
-        outOfStockBadge: "d82452706eccb7b8c1e731016dcfde4718af",
-        saleBadge: "d82452706eccb7b8b7acd2f4b0a9d92d8d5d",
-        slashedPrice: "d82452706eccb7b8a6c6824725dc7d6616e6",
-        storeInfo: "d82452706eccb7b8eee54d2e0d1b2ce5b7e3",
-        priceInfo: "d82452706eccb7b8da4f70065c6b04b9392e",
-        cardDesc: "d82452706eccb7b8f45af61905d26c0592eb"
+        clrCollapsedCard: "f3cc5628ab9066a1f6b60ed0528262116599",
+        cardContainer: "f3cc5628ab9066a1eb92e279865c9000b72a",
+        cardInfo: "f3cc5628ab9066a1e58bfe52c22f632dc039",
+        subtitle: "f3cc5628ab9066a1a95eca18e1ad770ea596",
+        price: "f3cc5628ab9066a1e48b1713bf2de6b8abc0",
+        newBadge: "f3cc5628ab9066a1b0aca41f30620c3d2493",
+        outOfStockBadge: "f3cc5628ab9066a1c1e731016dcfde4718af",
+        saleBadge: "f3cc5628ab9066a1b7acd2f4b0a9d92d8d5d",
+        slashedPrice: "f3cc5628ab9066a1a6c6824725dc7d6616e6",
+        storeInfo: "f3cc5628ab9066a1eee54d2e0d1b2ce5b7e3",
+        priceInfo: "f3cc5628ab9066a1da4f70065c6b04b9392e",
+        cardDesc: "f3cc5628ab9066a1f45af61905d26c0592eb"
       };
-      var p = n(6160);
-      const b = e => {
+      var p = n(5770);
+      const f = e => {
           let {
             videoUrl: a,
             expandedType: n,
@@ -63,7 +63,7 @@
             className: [u.clrCollapsedCard, a].join(" "),
             role: "button",
             tabIndex: 0,
-            children: (0, p.jsx)(b, {
+            children: (0, p.jsx)(f, {
               videoUrl: v,
               expandedType: m,
               children: (0, p.jsxs)("div", {
@@ -115,14 +115,14 @@
             })
           })
         };
-      var k = n(2174),
-        f = n(9361);
+      var b = n(2333),
+        k = n(8380);
       const y = {
-          clrCardModalContent: "d82452706eccb7b8de3a11886ff7c7c01a80",
-          expandedCard: "d82452706eccb7b8e1a0223a78c9aa470ef6",
-          content: "d82452706eccb7b8d104d01f2048b62b51d8",
-          details: "d82452706eccb7b8cc5da9e77f92def47e14",
-          calloutHeaders: "d82452706eccb7b8ac6438a76bed0e28cf70"
+          clrCardModalContent: "f3cc5628ab9066a1de3a11886ff7c7c01a80",
+          expandedCard: "f3cc5628ab9066a1e1a0223a78c9aa470ef6",
+          content: "f3cc5628ab9066a1d104d01f2048b62b51d8",
+          details: "f3cc5628ab9066a1cc5da9e77f92def47e14",
+          calloutHeaders: "f3cc5628ab9066a1ac6438a76bed0e28cf70"
         },
         {
           variants: h
@@ -139,7 +139,7 @@
             storeInfo: c = {},
             expandedType: l,
             to: u,
-            image: b,
+            image: f,
             deckProps: g,
             tina: x = {},
             position: N
@@ -148,11 +148,11 @@
             T = x?.payload?.meta?.cdn ?? C?.meta?.prod ?? !1,
             S = {
               image: {
-                ...b,
+                ...f,
                 prod: T
               }
             },
-            j = [b];
+            j = [f];
           return (0, p.jsx)(m.Z, {
             id: a,
             title: t,
@@ -171,11 +171,11 @@
             payload: {
               content: n
             },
-            expandedCardContents: (0, p.jsx)(f.Z, {
+            expandedCardContents: (0, p.jsx)(k.Z, {
               images: j,
               prod: T
             }),
-            children: (0, p.jsx)(k.Z, {
+            children: (0, p.jsx)(b.Z, {
               expandedType: l,
               to: u,
               style: {
@@ -196,7 +196,7 @@
           })
         };
       var x = n(4859),
-        N = n(3385);
+        N = n(693);
 
       function C(e, a) {
         const n = {
@@ -258,21 +258,21 @@
                 c = s?.meta?.cdn ?? !1 ?? m?.meta?.prod ?? !1,
                 l = C(s?.content?.[0], c),
                 u = s?.meta?.title,
-                b = l?._memoq?.subheader,
+                f = l?._memoq?.subheader,
                 v = l?.image,
-                k = s?.content?.[0].expandedType,
-                f = s?.content?.[0].cardType,
+                b = s?.content?.[0].expandedType,
+                k = s?.content?.[0].cardType,
                 y = l?.content ?? [];
-              "release" === f && e.push((0, p.jsx)(o.TinaParser, {
+              "release" === k && e.push((0, p.jsx)(o.TinaParser, {
                 components: t,
                 tina: d,
                 componentProps: {
                   id: n,
                   tina: d,
                   title: u,
-                  subheader: b,
+                  subheader: f,
                   image: v,
-                  expandedType: k,
+                  expandedType: b,
                   modalContent: y
                 }
               }, n))
@@ -284,19 +284,20 @@
           children: u
         })
       };
-      var S = n(5217),
-        j = n(3086);
+      var S = n(7306),
+        j = n(8600);
       n(3657);
-      const _ = (0, S.vU)({
+      const M = (0, S.vU)({
           card_learn_more: {
-            id: "card_learn_more"
+            id: "card_learn_more",
+            defaultMessage: "Learn More"
           }
         }),
-        M = {
-          customModalContent: "d82452706eccb7b8f348dacb636353b11c51",
-          content: "d82452706eccb7b8df95f12ea94658664861",
-          secondary: "d82452706eccb7b8ac4425db45829109b6bb",
-          logo: "d82452706eccb7b8e0170396b8c6129f37ee"
+        _ = {
+          customModalContent: "f3cc5628ab9066a1f348dacb636353b11c51",
+          content: "f3cc5628ab9066a1df95f12ea94658664861",
+          secondary: "f3cc5628ab9066a1ac4425db45829109b6bb",
+          logo: "f3cc5628ab9066a1e0170396b8c6129f37ee"
         },
         {
           variants: D
@@ -320,12 +321,12 @@
             images: c = [],
             deckProps: l = {},
             to: u = null,
-            tina: b = {},
+            tina: f = {},
             cardIds: v,
             theme: y
           } = e;
           const h = (0, o.useTinaPayload)(),
-            g = b?.payload?.meta?.cdn ?? h?.meta?.prod ?? !1,
+            g = f?.payload?.meta?.cdn ?? h?.meta?.prod ?? !1,
             [x, N] = (0, d.useState)(l?.size ?? t);
           let C = null;
           return h.content && (C = h?.content[0]?._memoq ? h?.content[0]?._memoq?.body : null), (0, d.useEffect)((() => {
@@ -345,10 +346,10 @@
             variants: D.plainCard,
             textOverlayProps: s,
             modalProps: {
-              className: M.customModal,
-              contentClassName: M.customModalContent
+              className: _.customModal,
+              contentClassName: _.customModalContent
             },
-            expandedCardContents: (0, p.jsx)(f.Z, {
+            expandedCardContents: (0, p.jsx)(k.Z, {
               images: c,
               prod: g,
               expandedView: !0
@@ -356,13 +357,13 @@
             theme: y,
             cardIds: v,
             isCoverCard: !0,
-            children: (0, p.jsx)(k.Z, {
+            children: (0, p.jsx)(b.Z, {
               expandedType: r,
               to: u,
               children: (0, p.jsxs)("div", {
-                className: M.content,
+                className: _.content,
                 children: [(0, p.jsx)("img", {
-                  className: M.logo,
+                  className: _.logo,
                   alt: "logo",
                   src: P
                 }), (0, p.jsx)("h2", {
@@ -372,18 +373,18 @@
                 }), (0, p.jsx)("button", {
                   type: "button",
                   children: (0, p.jsx)(j.Z, {
-                    ..._.card_learn_more
+                    ...M.card_learn_more
                   })
                 })]
               })
             })
           })
         };
-      var I = n(3614),
-        w = n(1324),
-        V = n(2)
+      var I = n(1497),
+        w = n(5837),
+        L = n(7097)
     },
-    3385: e => {
+    693: e => {
       var a = {
         kind: "Document",
         definitions: [{
@@ -695,4 +696,3 @@
     }
   }
 ]);
-//# sourceMappingURL=4b9aa235082d0519722f.js.map

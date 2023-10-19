@@ -1,7 +1,7 @@
 "use strict";
 (self.webpackChunk_rockstargames_modules_core_card = self.webpackChunk_rockstargames_modules_core_card || []).push([
-  [904], {
-    4904: (e, t, l) => {
+  [159], {
+    6159: (e, t, l) => {
       l.r(t), l.d(t, {
         Card: () => s,
         CardGrid: () => r,
@@ -223,7 +223,27 @@
               label: "Has Platform Options?",
               description: "If selected, the Title and the content below will be shown when the card is collapsed.",
               component: "toggle"
-            }, (0, a.PlatformsAndLinksField)()]
+            }, (0, a.translatedField)({
+              name: "platformTag",
+              label: "Tag",
+              description: "If enabled, this is displayed above the Title in both the collapsed and expanded views.",
+              component: "text"
+            }), (0, a.translatedField)({
+              name: "platformTagStyle",
+              label: "Tag Style",
+              description: "This controls the background color.",
+              component: "select",
+              options: [{
+                value: "",
+                label: "-- Select a Tag Style --"
+              }, {
+                value: "gold",
+                label: "Gold"
+              }, {
+                value: "red",
+                label: "Red"
+              }]
+            }), (0, a.PlatformsAndLinksField)()]
           }, {
             name: "expandedType",
             label: "Click Action",
@@ -261,7 +281,8 @@
             })],
             defaultItem: () => (0, a.defaultItemUnique)({
               textOverlayProps: (0, a.defaultItemUnique)(),
-              pricingOptions: (0, a.defaultPricingOptionsUnique)()
+              pricingOptions: (0, a.defaultPricingOptionsUnique)(),
+              platformOptions: (0, a.defaultPricingOptionsUnique)()
             }),
             itemProps: e => (0, a.itemPropsWithKey)(e, {
               label: `Card [${e?.[a.TINA_MEMOQ_PREFIX]?.title??null}]`
@@ -817,4 +838,3 @@
     }
   }
 ]);
-//# sourceMappingURL=eb0865939f7d63710cd1.js.map
