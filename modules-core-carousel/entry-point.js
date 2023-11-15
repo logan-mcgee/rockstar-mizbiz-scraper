@@ -18,20 +18,20 @@ System.register(["@rockstargames/components", "@rockstargames/tina"], (function(
     execute: function() {
       e((() => {
         var e, o, a, i, s = {
-            580: (e, r, t) => {
-              (0, t(879).s)(1)
+            100: (e, r, t) => {
+              (0, t(487).s)(1)
             },
-            879: (e, r, t) => {
-              const n = t(490).R;
+            487: (e, r, t) => {
+              const n = t(175).R;
               r.s = function(e) {
                 if (e || (e = 1), !t.y.meta || !t.y.meta.url) throw console.error("__system_context__", t.y), Error("systemjs-webpack-interop was provided an unknown SystemJS context. Expected context.meta.url, but none was provided");
                 t.p = n(t.y.meta.url, e)
               }
             },
-            308: (e, r, t) => {
-              t(580)
+            473: (e, r, t) => {
+              t(100)
             },
-            490: (e, r, t) => {
+            175: (e, r, t) => {
               r.R = function(e, r) {
                 var t = document.createElement("a");
                 t.href = e;
@@ -45,8 +45,8 @@ System.register(["@rockstargames/components", "@rockstargames/tina"], (function(
             812: (e, r, t) => {
               "use strict";
               var n = {
-                  "./index": () => Promise.all([t.e(978), t.e(727)]).then((() => () => t(727))),
-                  "./tinaBlockTemplates": () => t.e(953).then((() => () => t(953)))
+                  "./index": () => Promise.all([t.e(761), t.e(614)]).then((() => () => t(614))),
+                  "./tinaBlockTemplates": () => t.e(370).then((() => () => t(370)))
                 },
                 o = (e, r) => (t.R = r, r = t.o(n, e) ? n[e]() : Promise.resolve().then((() => {
                   throw new Error('Module "' + e + '" does not exist in container.')
@@ -89,19 +89,26 @@ System.register(["@rockstargames/components", "@rockstargames/tina"], (function(
             get: r[t]
           })
         }, l.f = {}, l.e = e => Promise.all(Object.keys(l.f).reduce(((r, t) => (l.f[t](e, r), r)), [])), l.u = e => "js/" + {
-          252: "99df556bb3105f8874e0",
-          727: "833a611496ec20c3a3d9",
-          953: "8027991c20796f9a77ea",
-          978: "24e8964dc78a1468e60d"
-        } [e] + ".js", l.miniCssF = e => "css/76ed7801809bf0bc3dcd.css", l.o = (e, r) => Object.prototype.hasOwnProperty.call(e, r), e = {}, o = "@rockstargames/modules-core-carousel:", l.l = (r, t, n, a) => {
+          370: "e06b4aef54024bccaa2ecd9292d007e8",
+          377: "a25e7c53c838be942cec555a6e16eb5c",
+          614: "9a003ba3bce1b5d793639139ed8c08d0",
+          761: "85ac4371931ceb61a5a7b9db6f289c84"
+        } [e] + ".js", l.miniCssF = e => "css/ac412a518bb8102d0807586457cc399a.css", l.g = function() {
+          if ("object" == typeof globalThis) return globalThis;
+          try {
+            return this || new Function("return this")()
+          } catch (e) {
+            if ("object" == typeof window) return window
+          }
+        }(), l.o = (e, r) => Object.prototype.hasOwnProperty.call(e, r), e = {}, o = "@rockstargames/modules-core-carousel:", l.l = (r, t, n, a) => {
           if (e[r]) e[r].push(t);
           else {
             var i, s;
             if (void 0 !== n)
-              for (var u = document.getElementsByTagName("script"), f = 0; f < u.length; f++) {
-                var c = u[f];
-                if (c.getAttribute("src") == r || c.getAttribute("data-webpack") == o + n) {
-                  i = c;
+              for (var u = document.getElementsByTagName("script"), c = 0; c < u.length; c++) {
+                var f = u[c];
+                if (f.getAttribute("src") == r || f.getAttribute("data-webpack") == o + n) {
+                  i = f;
                   break
                 }
               }
@@ -124,8 +131,8 @@ System.register(["@rockstargames/components", "@rockstargames/tina"], (function(
             value: !0
           })
         }, a = {
-          727: [542, 976],
-          953: [307, 616]
+          370: [307, 616],
+          614: [542, 976]
         }, i = {
           307: ["default", "./tinaBlockTemplates", 286],
           542: ["default", "./index", 559],
@@ -147,9 +154,9 @@ System.register(["@rockstargames/components", "@rockstargames/tina"], (function(
                   try {
                     var l = e(t, a);
                     if (!l || !l.then) return s(l, i, u);
-                    var f = l.then((e => s(e, i)), o);
-                    if (!u) return f;
-                    r.push(n.p = f)
+                    var c = l.then((e => s(e, i)), o);
+                    if (!u) return c;
+                    r.push(n.p = c)
                   } catch (e) {
                     o(e)
                   }
@@ -196,14 +203,25 @@ System.register(["@rockstargames/components", "@rockstargames/tina"], (function(
                 var o = a[e] = a[e] || {},
                   s = o[r];
                 (!s || !s.loaded && (1 != !s.eager ? n : i > s.from)) && (o[r] = {
-                  get: () => l.e(252).then((() => () => l(252))),
+                  get: () => l.e(377).then((() => () => l(377))),
                   from: i,
                   eager: !1
                 })
               })("react", "18.2.0"), s(286), s(559)), u.length ? e[t] = Promise.all(u).then((() => e[t] = 1)) : e[t] = 1
             }
           }
-        })(), l.p = "", (() => {
+        })(), (() => {
+          var e;
+          l.g.importScripts && (e = l.g.location + "");
+          var r = l.g.document;
+          if (!e && r && (r.currentScript && (e = r.currentScript.src), !e)) {
+            var t = r.getElementsByTagName("script");
+            if (t.length)
+              for (var n = t.length - 1; n > -1 && !e;) e = t[n--].src
+          }
+          if (!e) throw new Error("Automatic publicPath is not supported in this browser");
+          e = e.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/"), l.p = e
+        })(), (() => {
           var e = e => {
               var r = e => e.split(".").map((e => +e == e ? +e : e)),
                 t = /^([^-+]+)?(?:-([^+]+))?(?:\+(.+))?$/.exec(e),
@@ -217,25 +235,25 @@ System.register(["@rockstargames/components", "@rockstargames/tina"], (function(
                   a = o < 0;
                 a && (o = -o - 1);
                 for (var i = 0, s = 1, u = !0;; s++, i++) {
-                  var l, f, c = s < t.length ? (typeof t[s])[0] : "";
-                  if (i >= n.length || "o" == (f = (typeof(l = n[i]))[0])) return !u || ("u" == c ? s > o && !a : "" == c != a);
-                  if ("u" == f) {
-                    if (!u || "u" != c) return !1
+                  var l, c, f = s < t.length ? (typeof t[s])[0] : "";
+                  if (i >= n.length || "o" == (c = (typeof(l = n[i]))[0])) return !u || ("u" == f ? s > o && !a : "" == f != a);
+                  if ("u" == c) {
+                    if (!u || "u" != f) return !1
                   } else if (u)
-                    if (c == f)
+                    if (f == c)
                       if (s <= o) {
                         if (l != t[s]) return !1
                       } else {
                         if (a ? l > t[s] : l < t[s]) return !1;
                         l != t[s] && (u = !1)
                       }
-                  else if ("s" != c && "n" != c) {
+                  else if ("s" != f && "n" != f) {
                     if (a || s <= o) return !1;
                     u = !1, s--
                   } else {
-                    if (s <= o || f < c != a) return !1;
+                    if (s <= o || c < f != a) return !1;
                     u = !1
-                  } else "s" != c && "n" != c && (u = !1, s--)
+                  } else "s" != f && "n" != f && (u = !1, s--)
                 }
               }
               var d = [],
@@ -272,10 +290,10 @@ System.register(["@rockstargames/components", "@rockstargames/tina"], (function(
             })),
             o = {},
             a = {
-              932: () => n("default", "react", [1, 18, 2, 0], (() => l.e(252).then((() => () => l(252)))))
+              927: () => n("default", "react", [1, 18, 2, 0], (() => l.e(377).then((() => () => l(377)))))
             },
             i = {
-              727: [932]
+              614: [927]
             };
           l.f.consumes = (e, r) => {
             l.o(i, e) && i[e].forEach((e => {
@@ -305,7 +323,7 @@ System.register(["@rockstargames/components", "@rockstargames/tina"], (function(
             };
             l.f.miniCss = (r, t) => {
               e[r] ? t.push(e[r]) : 0 !== e[r] && {
-                727: 1
+                614: 1
               } [r] && t.push(e[r] = (e => new Promise(((r, t) => {
                 var n = l.miniCssF(e),
                   o = l.p + n;
@@ -374,7 +392,7 @@ System.register(["@rockstargames/components", "@rockstargames/tina"], (function(
             },
             t = self.webpackChunk_rockstargames_modules_core_carousel = self.webpackChunk_rockstargames_modules_core_carousel || [];
           t.forEach(r.bind(null, 0)), t.push = r.bind(null, t.push.bind(t))
-        })(), l(308), l(812)
+        })(), l(473), l(812)
       })())
     }
   }

@@ -1,0 +1,1499 @@
+.rockstargames-sites-gta-trilogyb3f2c71a5c27e002148765bd45a8f945 {
+  --grid-gap-dynamic: var(--grid-gap-static-md);
+  grid-gap: var(--grid-gap-dynamic);
+  --grid-num-columns: 3;
+  align-content: var(--grid-align-content);
+  align-items: var(--grid-align-items);
+  align-self: var(--grid-align-self);
+  display: grid;
+  grid-template-columns: repeat(var(--grid-num-columns, 1), minmax(0, 1fr));
+  grid-template: var(--grid-template-override, auto/repeat(var(--grid-num-columns, 1), minmax(0, 1fr)));
+  height: 100%;
+  justify-content: var(--grid-justify-content);
+  justify-items: var(--grid-justify-items);
+  justify-self: var(--grid-justify-self);
+  overflow-x: hidden;
+  width: 100%
+}
+
+@media (min-width:0px) {
+  .rockstargames-sites-gta-trilogyb3f2c71a5c27e002148765bd45a8f945 {
+    --grid-gap-dynamic: 3%
+  }
+}
+
+@media (min-width:768px) {
+  .rockstargames-sites-gta-trilogyb3f2c71a5c27e002148765bd45a8f945 {
+    --grid-gap-dynamic: 2%
+  }
+}
+
+@media (min-width:1024px) {
+  .rockstargames-sites-gta-trilogyb3f2c71a5c27e002148765bd45a8f945 {
+    --grid-gap-dynamic: 3%
+  }
+}
+
+@media (min-width:1920px) {
+  .rockstargames-sites-gta-trilogyb3f2c71a5c27e002148765bd45a8f945 {
+    --grid-gap-dynamic: 2%
+  }
+}
+
+.rockstargames-sites-gta-trilogya590c78396ad12a0134e4fe83d46d6c5 {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  background-image: var(--background-image);
+  background-position: 50%;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0);
+  width: 100%
+}
+
+@media (max-width:1023px) {
+  .rockstargames-sites-gta-trilogya590c78396ad12a0134e4fe83d46d6c5 {
+    padding-top: 165.75%
+  }
+}
+
+@media (max-width:767px) {
+  .rockstargames-sites-gta-trilogya590c78396ad12a0134e4fe83d46d6c5 {
+    padding-top: 250%
+  }
+}
+
+.rockstargames-sites-gta-trilogye713aa2e2995a6755fff195529f21156 {
+  height: var(--logo-height, auto);
+  max-width: var(--logo-maxWidth, auto);
+  min-width: var(--logo-minWidth, auto);
+  width: var(--logo-width, auto)
+}
+
+.rockstargames-sites-gta-trilogyb6ec590bc1cb44bd8dd2cfe8f3c5c8ac {
+  border: 2px solid #fff;
+  border-radius: 4px;
+  font-family: var(--display-font-family);
+  font-size: var(--font-size-3);
+  line-height: 1.1;
+  padding: var(--grid-gap-static-sm) var(--grid-gap-static-md);
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all .3s ease;
+  width: auto;
+  z-index: 0
+}
+
+@media (min-width:2560px) {
+  .rockstargames-sites-gta-trilogyb6ec590bc1cb44bd8dd2cfe8f3c5c8ac {
+    font-size: .85vw;
+    padding: .85vw 1.7vw
+  }
+}
+
+.rockstargames-sites-gta-trilogyb6ec590bc1cb44bd8dd2cfe8f3c5c8ac:before {
+  background: var(--trilogy-gradient);
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: opacity .3s ease;
+  width: 100%;
+  z-index: -1
+}
+
+.rockstargames-sites-gta-trilogyb6ec590bc1cb44bd8dd2cfe8f3c5c8ac:hover {
+  border-color: var(--trilogy-gold);
+  color: #000
+}
+
+.rockstargames-sites-gta-trilogyb6ec590bc1cb44bd8dd2cfe8f3c5c8ac:hover:before {
+  opacity: 1
+}
+
+.rockstargames-sites-gta-trilogye06ad1179cdbca03d9b8c92489d722f5 {
+  font-family: var(--display-font-family)
+}
+
+.rockstargames-sites-gta-trilogye06ad1179cdbca03d9b8c92489d722f5,
+.rockstargames-sites-gta-trilogye06ad1179cdbca03d9b8c92489d722f5 .rockstargames-sites-gta-trilogya7fb7c7a032b27d60edb1c63d750d256 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+
+.rockstargames-sites-gta-trilogye06ad1179cdbca03d9b8c92489d722f5 .rockstargames-sites-gta-trilogya7fb7c7a032b27d60edb1c63d750d256 {
+  color: #fff;
+  height: 100%;
+  width: 100%
+}
+
+@media (min-width:0px) {
+  .rockstargames-sites-gta-trilogye06ad1179cdbca03d9b8c92489d722f5 .rockstargames-sites-gta-trilogya7fb7c7a032b27d60edb1c63d750d256 {
+    grid-gap: var(--grid-gap-static-lg);
+    padding: var(--grid-gap-static-xl) var(--grid-gap-static-md)
+  }
+}
+
+@media (min-width:768px) {
+  .rockstargames-sites-gta-trilogye06ad1179cdbca03d9b8c92489d722f5 .rockstargames-sites-gta-trilogya7fb7c7a032b27d60edb1c63d750d256 {
+    grid-gap: var(--grid-gap-static-md);
+    padding: var(--grid-gap-static-lg) var(--grid-gap-static-md)
+  }
+}
+
+@media (min-width:1920px) {
+  .rockstargames-sites-gta-trilogye06ad1179cdbca03d9b8c92489d722f5 .rockstargames-sites-gta-trilogya7fb7c7a032b27d60edb1c63d750d256 {
+    grid-gap: 2.5rem;
+    padding: var(--grid-gap-static-xl) var(--grid-gap-static-lg)
+  }
+}
+
+@media (min-width:2560px) {
+  .rockstargames-sites-gta-trilogye06ad1179cdbca03d9b8c92489d722f5 .rockstargames-sites-gta-trilogya7fb7c7a032b27d60edb1c63d750d256 {
+    grid-gap: 2.125vw
+  }
+}
+
+.rockstargames-sites-gta-trilogye06ad1179cdbca03d9b8c92489d722f5 .rockstargames-sites-gta-trilogya7fb7c7a032b27d60edb1c63d750d256 .rockstargames-sites-gta-trilogye1a17b9ee6face3d3a9c76913e25d228 {
+  grid-gap: var(--grid-gap-static-md);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+
+@media (min-width:2560px) {
+  .rockstargames-sites-gta-trilogye06ad1179cdbca03d9b8c92489d722f5 .rockstargames-sites-gta-trilogya7fb7c7a032b27d60edb1c63d750d256 .rockstargames-sites-gta-trilogye1a17b9ee6face3d3a9c76913e25d228 {
+    grid-gap: 1.7vw
+  }
+}
+
+.rockstargames-sites-gta-trilogye06ad1179cdbca03d9b8c92489d722f5 .rockstargames-sites-gta-trilogya7fb7c7a032b27d60edb1c63d750d256 .rockstargames-sites-gta-trilogye1a17b9ee6face3d3a9c76913e25d228 .rockstargames-sites-gta-trilogyc1acc35818d3bcf2b1bef14f37e21788 {
+  --logo-height: auto
+}
+
+@media (min-width:0px) {
+  .rockstargames-sites-gta-trilogye06ad1179cdbca03d9b8c92489d722f5 .rockstargames-sites-gta-trilogya7fb7c7a032b27d60edb1c63d750d256 .rockstargames-sites-gta-trilogye1a17b9ee6face3d3a9c76913e25d228 .rockstargames-sites-gta-trilogyc1acc35818d3bcf2b1bef14f37e21788 {
+    --logo-width: 50%;
+    --logo-maxWidth: 12rem;
+    --logo-minWidth: 7rem
+  }
+}
+
+@media (min-width:768px) {
+  .rockstargames-sites-gta-trilogye06ad1179cdbca03d9b8c92489d722f5 .rockstargames-sites-gta-trilogya7fb7c7a032b27d60edb1c63d750d256 .rockstargames-sites-gta-trilogye1a17b9ee6face3d3a9c76913e25d228 .rockstargames-sites-gta-trilogyc1acc35818d3bcf2b1bef14f37e21788 {
+    --logo-width: 45%;
+    --logo-maxWidth: 13rem;
+    --logo-minWidth: 8rem
+  }
+}
+
+@media (min-width:1024px) {
+  .rockstargames-sites-gta-trilogye06ad1179cdbca03d9b8c92489d722f5 .rockstargames-sites-gta-trilogya7fb7c7a032b27d60edb1c63d750d256 .rockstargames-sites-gta-trilogye1a17b9ee6face3d3a9c76913e25d228 .rockstargames-sites-gta-trilogyc1acc35818d3bcf2b1bef14f37e21788 {
+    --logo-width: 40%;
+    --logo-maxWidth: 14rem;
+    --logo-minWidth: 9rem
+  }
+}
+
+@media (min-width:1920px) {
+  .rockstargames-sites-gta-trilogye06ad1179cdbca03d9b8c92489d722f5 .rockstargames-sites-gta-trilogya7fb7c7a032b27d60edb1c63d750d256 .rockstargames-sites-gta-trilogye1a17b9ee6face3d3a9c76913e25d228 .rockstargames-sites-gta-trilogyc1acc35818d3bcf2b1bef14f37e21788 {
+    --logo-width: 50%;
+    --logo-maxWidth: 15rem;
+    --logo-minWidth: 10rem
+  }
+}
+
+@media (min-width:2560px) {
+  .rockstargames-sites-gta-trilogye06ad1179cdbca03d9b8c92489d722f5 .rockstargames-sites-gta-trilogya7fb7c7a032b27d60edb1c63d750d256 .rockstargames-sites-gta-trilogye1a17b9ee6face3d3a9c76913e25d228 .rockstargames-sites-gta-trilogyc1acc35818d3bcf2b1bef14f37e21788 {
+    --logo-width: 11vw;
+    --logo-maxWidth: unset;
+    --logo-minWidth: unset
+  }
+}
+
+.rockstargames-sites-gta-trilogye06ad1179cdbca03d9b8c92489d722f5 .rockstargames-sites-gta-trilogya7fb7c7a032b27d60edb1c63d750d256 .rockstargames-sites-gta-trilogye7e37cac02926147260e4be917570b65 {
+  font-size: var(--font-size-3);
+  text-align: center;
+  text-transform: uppercase
+}
+
+@media (min-width:1920px) {
+  .rockstargames-sites-gta-trilogye06ad1179cdbca03d9b8c92489d722f5 .rockstargames-sites-gta-trilogya7fb7c7a032b27d60edb1c63d750d256 .rockstargames-sites-gta-trilogye7e37cac02926147260e4be917570b65 {
+    font-size: var(--font-size-4)
+  }
+}
+
+@media (min-width:2560px) {
+  .rockstargames-sites-gta-trilogye06ad1179cdbca03d9b8c92489d722f5 .rockstargames-sites-gta-trilogya7fb7c7a032b27d60edb1c63d750d256 .rockstargames-sites-gta-trilogye7e37cac02926147260e4be917570b65 {
+    font-size: 1.1vw
+  }
+}
+
+.rockstargames-sites-gta-trilogye06ad1179cdbca03d9b8c92489d722f5 .rockstargames-sites-gta-trilogya7fb7c7a032b27d60edb1c63d750d256 .rockstargames-sites-gta-trilogyd17090820a2431a292835621e09a5d59 {
+  grid-gap: var(--grid-gap-static-sm);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center
+}
+
+@media (min-width:2560px) {
+  .rockstargames-sites-gta-trilogye06ad1179cdbca03d9b8c92489d722f5 .rockstargames-sites-gta-trilogya7fb7c7a032b27d60edb1c63d750d256 .rockstargames-sites-gta-trilogyd17090820a2431a292835621e09a5d59 {
+    grid-gap: var(--grid-gap-static-md)
+  }
+}
+
+.rockstargames-sites-gta-trilogye06ad1179cdbca03d9b8c92489d722f5 .rockstargames-sites-gta-trilogya7fb7c7a032b27d60edb1c63d750d256 .rockstargames-sites-gta-trilogyd17090820a2431a292835621e09a5d59 .rockstargames-sites-gta-trilogya0b342d557fa7f9e2c7aa7701c8150e7 {
+  height: .8rem;
+  width: auto
+}
+
+@media (min-width:768px) {
+  .rockstargames-sites-gta-trilogye06ad1179cdbca03d9b8c92489d722f5 .rockstargames-sites-gta-trilogya7fb7c7a032b27d60edb1c63d750d256 .rockstargames-sites-gta-trilogyd17090820a2431a292835621e09a5d59 .rockstargames-sites-gta-trilogya0b342d557fa7f9e2c7aa7701c8150e7 {
+    height: .75rem
+  }
+}
+
+@media (min-width:1920px) {
+  .rockstargames-sites-gta-trilogye06ad1179cdbca03d9b8c92489d722f5 .rockstargames-sites-gta-trilogya7fb7c7a032b27d60edb1c63d750d256 .rockstargames-sites-gta-trilogyd17090820a2431a292835621e09a5d59 .rockstargames-sites-gta-trilogya0b342d557fa7f9e2c7aa7701c8150e7 {
+    height: 1rem
+  }
+}
+
+@media (min-width:2560px) {
+  .rockstargames-sites-gta-trilogye06ad1179cdbca03d9b8c92489d722f5 .rockstargames-sites-gta-trilogya7fb7c7a032b27d60edb1c63d750d256 .rockstargames-sites-gta-trilogyd17090820a2431a292835621e09a5d59 .rockstargames-sites-gta-trilogya0b342d557fa7f9e2c7aa7701c8150e7 {
+    height: .85vw
+  }
+}
+
+.rockstargames-sites-gta-trilogyf6018228cfb05f954ab28bd5ce03108f {
+  background: linear-gradient(10.51718892deg, #a48955, #977b52 11.99999973%, #e2d6b0 25%, #ded09f 30.00000119%, #dcce99 34.00000036%, #ab9467 57.99999833%, #977c52 68.99999976%, #b8a36c);
+  display: grid;
+  height: auto;
+  min-height: calc(100vh - 60px);
+  overflow: hidden;
+  padding: 4px;
+  width: 100%
+}
+
+@media (max-width:1023px) {
+  .rockstargames-sites-gta-trilogyf6018228cfb05f954ab28bd5ce03108f {
+    grid-template-rows: 1fr min-content;
+    margin-bottom: var(--section-padding)
+  }
+}
+
+@media (min-width:1024px) {
+  .rockstargames-sites-gta-trilogyf6018228cfb05f954ab28bd5ce03108f {
+    grid-template-columns: 1fr 50%;
+    height: calc(100vh - 60px)
+  }
+}
+
+@media (min-width:1024px) and (orientation:portrait) {
+  .rockstargames-sites-gta-trilogyf6018228cfb05f954ab28bd5ce03108f {
+    grid-template-columns: unset;
+    grid-template-rows: 1fr min-content;
+    margin-bottom: var(--section-padding)
+  }
+}
+
+.rockstargames-sites-gta-trilogyf6018228cfb05f954ab28bd5ce03108f .rockstargames-sites-gta-trilogyf78809f3a6f868ddbb69bf0dc94f8608,
+.rockstargames-sites-gta-trilogyf6018228cfb05f954ab28bd5ce03108f .rockstargames-sites-gta-trilogyc0e6ab6e0547bff20fa5beb941851297 {
+  background: #000;
+  height: 100%
+}
+
+.rockstargames-sites-gta-trilogyc4b62be59154f67f28815d02813c6b78 {
+  margin: auto;
+  max-width: 2560px;
+  padding: var(--section-padding)
+}
+
+.rockstargames-sites-gta-trilogyc2632fd95330b74d5dd3fb784ed24b73 {
+  --grid-gap-dynamic: var(--grid-gap-static-md);
+  grid-gap: var(--grid-gap-dynamic);
+  align-content: var(--grid-align-content);
+  align-items: var(--grid-align-items);
+  align-items: center;
+  align-self: var(--grid-align-self);
+  display: grid;
+  grid-template-columns: repeat(var(--grid-num-columns, 1), minmax(0, 1fr));
+  grid-template: var(--grid-template-override, auto/repeat(var(--grid-num-columns, 1), minmax(0, 1fr)));
+  justify-content: var(--grid-justify-content);
+  justify-items: var(--grid-justify-items);
+  justify-self: var(--grid-justify-self);
+  width: 100%
+}
+
+@media (min-width:0px) {
+  .rockstargames-sites-gta-trilogyc2632fd95330b74d5dd3fb784ed24b73 {
+    grid-template-columns: 100%
+  }
+}
+
+@media (min-width:1280px) {
+  .rockstargames-sites-gta-trilogyc2632fd95330b74d5dd3fb784ed24b73 {
+    --grid-gap-dynamic: var(--grid-gap-static-lg);
+    grid-template-columns: 50% 1fr
+  }
+}
+
+@media (min-width:1920px) {
+  .rockstargames-sites-gta-trilogyc2632fd95330b74d5dd3fb784ed24b73 {
+    grid-template-columns: 45% 1fr
+  }
+}
+
+@media (min-width:2560px) {
+  .rockstargames-sites-gta-trilogyc2632fd95330b74d5dd3fb784ed24b73 {
+    --grid-gap-dynamic: var(--grid-gap-static-xl);
+    grid-template-columns: 40% 1fr
+  }
+}
+
+.rockstargames-sites-gta-trilogyc2632fd95330b74d5dd3fb784ed24b73 .rockstargames-sites-gta-trilogye7f8ed9a18eb203787dc2c282f755da7 {
+  --grid-gap-dynamic: var(--grid-gap-static-sm);
+  grid-gap: var(--grid-gap-dynamic);
+  align-content: var(--grid-align-content);
+  align-items: var(--grid-align-items);
+  align-self: var(--grid-align-self);
+  display: grid;
+  grid-template-columns: repeat(var(--grid-num-columns, 1), minmax(0, 1fr));
+  grid-template: var(--grid-template-override, auto/repeat(var(--grid-num-columns, 1), minmax(0, 1fr)));
+  justify-content: var(--grid-justify-content);
+  justify-items: var(--grid-justify-items);
+  justify-self: var(--grid-justify-self)
+}
+
+.rockstargames-sites-gta-trilogyc2632fd95330b74d5dd3fb784ed24b73 .rockstargames-sites-gta-trilogye7f8ed9a18eb203787dc2c282f755da7 h3 {
+  text-transform: uppercase
+}
+
+.rockstargames-sites-gta-trilogyc2632fd95330b74d5dd3fb784ed24b73 .rockstargames-sites-gta-trilogyad9e8c3af7501dbae1538c50aa477734 {
+  --grid-num-columns: 3;
+  --grid-gap-dynamic: var(--image-grid-gap);
+  grid-gap: var(--grid-gap-dynamic);
+  align-content: var(--grid-align-content);
+  align-items: var(--grid-align-items);
+  align-self: var(--grid-align-self);
+  display: grid;
+  grid-template-columns: repeat(var(--grid-num-columns, 1), minmax(0, 1fr));
+  grid-template: var(--grid-template-override, auto/repeat(var(--grid-num-columns, 1), minmax(0, 1fr)));
+  justify-content: var(--grid-justify-content);
+  justify-items: var(--grid-justify-items);
+  justify-self: var(--grid-justify-self)
+}
+
+@media (max-width:1279px) {
+  .rockstargames-sites-gta-trilogyc2632fd95330b74d5dd3fb784ed24b73 .rockstargames-sites-gta-trilogyad9e8c3af7501dbae1538c50aa477734 {
+    grid-row-start: 1;
+    padding: 3.3% 0
+  }
+}
+
+.rockstargames-sites-gta-trilogyc2632fd95330b74d5dd3fb784ed24b73 .rockstargames-sites-gta-trilogyad9e8c3af7501dbae1538c50aa477734 img {
+  height: auto;
+  position: relative;
+  width: 100%
+}
+
+.rockstargames-sites-gta-trilogyc2632fd95330b74d5dd3fb784ed24b73 .rockstargames-sites-gta-trilogyad9e8c3af7501dbae1538c50aa477734 img.rockstargames-sites-gta-trilogyed7288ec5cd27db1bc123f2fc9a6d951 {
+  bottom: 5%
+}
+
+.rockstargames-sites-gta-trilogyc2632fd95330b74d5dd3fb784ed24b73 .rockstargames-sites-gta-trilogyad9e8c3af7501dbae1538c50aa477734 img.rockstargames-sites-gta-trilogyf65984b0b5e380f2679469d5dc374e18 {
+  top: 5%
+}
+
+.rockstargames-sites-gta-trilogyc2632fd95330b74d5dd3fb784ed24b73 .rockstargames-sites-gta-trilogyad9e8c3af7501dbae1538c50aa477734 img.rockstargames-sites-gta-trilogyf57363f71e1cdcb73e866e745d2d8a37 {
+  bottom: 2.5%
+}
+
+.rockstargames-sites-gta-trilogyd4701b70db493e5c28da87a2b72a3de5 {
+  background: #000;
+  border: 1px solid #282828;
+  border-radius: var(--border-radius-static);
+  overflow: hidden
+}
+
+.rockstargames-sites-gta-trilogyd4701b70db493e5c28da87a2b72a3de5 .rockstargames-sites-gta-trilogyeea77eac0b39a8921982484cfa0f198d {
+  height: auto;
+  overflow: hidden;
+  width: 100%
+}
+
+.rockstargames-sites-gta-trilogyd4701b70db493e5c28da87a2b72a3de5 .rockstargames-sites-gta-trilogyeea77eac0b39a8921982484cfa0f198d img {
+  object-fit: contain;
+  object-position: center;
+  width: 100%
+}
+
+.rockstargames-sites-gta-trilogyd4701b70db493e5c28da87a2b72a3de5 .rockstargames-sites-gta-trilogyc187feb573f88c0ef5bb9326fd3f268b {
+  padding: var(--grid-gap-static-md);
+  width: 100%
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe {
+  --grid-gap-dynamic: var(--grid-gap-static-sm);
+  grid-gap: var(--grid-gap-dynamic);
+  align-content: var(--grid-align-content);
+  align-items: var(--grid-align-items);
+  align-self: var(--grid-align-self);
+  display: grid;
+  grid-template-columns: repeat(var(--grid-num-columns, 1), minmax(0, 1fr));
+  grid-template: var(--grid-template-override, auto/repeat(var(--grid-num-columns, 1), minmax(0, 1fr)));
+  justify-content: var(--grid-justify-content);
+  justify-items: var(--grid-justify-items);
+  justify-self: var(--grid-justify-self);
+  margin-bottom: calc(var(--section-padding) * 2);
+  overflow: hidden
+}
+
+@font-face {
+  font-family: swiper-icons;
+  font-style: normal;
+  font-weight: 400;
+  src: url("data:application/font-woff;charset=utf-8;base64, d09GRgABAAAAAAZgABAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAAGRAAAABoAAAAci6qHkUdERUYAAAWgAAAAIwAAACQAYABXR1BPUwAABhQAAAAuAAAANuAY7+xHU1VCAAAFxAAAAFAAAABm2fPczU9TLzIAAAHcAAAASgAAAGBP9V5RY21hcAAAAkQAAACIAAABYt6F0cBjdnQgAAACzAAAAAQAAAAEABEBRGdhc3AAAAWYAAAACAAAAAj//wADZ2x5ZgAAAywAAADMAAAD2MHtryVoZWFkAAABbAAAADAAAAA2E2+eoWhoZWEAAAGcAAAAHwAAACQC9gDzaG10eAAAAigAAAAZAAAArgJkABFsb2NhAAAC0AAAAFoAAABaFQAUGG1heHAAAAG8AAAAHwAAACAAcABAbmFtZQAAA/gAAAE5AAACXvFdBwlwb3N0AAAFNAAAAGIAAACE5s74hXjaY2BkYGAAYpf5Hu/j+W2+MnAzMYDAzaX6QjD6/4//Bxj5GA8AuRwMYGkAPywL13jaY2BkYGA88P8Agx4j+/8fQDYfA1AEBWgDAIB2BOoAeNpjYGRgYNBh4GdgYgABEMnIABJzYNADCQAACWgAsQB42mNgYfzCOIGBlYGB0YcxjYGBwR1Kf2WQZGhhYGBiYGVmgAFGBiQQkOaawtDAoMBQxXjg/wEGPcYDDA4wNUA2CCgwsAAAO4EL6gAAeNpj2M0gyAACqxgGNWBkZ2D4/wMA+xkDdgAAAHjaY2BgYGaAYBkGRgYQiAHyGMF8FgYHIM3DwMHABGQrMOgyWDLEM1T9/w8UBfEMgLzE////P/5//f/V/xv+r4eaAAeMbAxwIUYmIMHEgKYAYjUcsDAwsLKxc3BycfPw8jEQA/gZBASFhEVExcQlJKWkZWTl5BUUlZRVVNXUNTQZBgMAAMR+E+gAEQFEAAAAKgAqACoANAA+AEgAUgBcAGYAcAB6AIQAjgCYAKIArAC2AMAAygDUAN4A6ADyAPwBBgEQARoBJAEuATgBQgFMAVYBYAFqAXQBfgGIAZIBnAGmAbIBzgHsAAB42u2NMQ6CUAyGW568x9AneYYgm4MJbhKFaExIOAVX8ApewSt4Bic4AfeAid3VOBixDxfPYEza5O+Xfi04YADggiUIULCuEJK8VhO4bSvpdnktHI5QCYtdi2sl8ZnXaHlqUrNKzdKcT8cjlq+rwZSvIVczNiezsfnP/uznmfPFBNODM2K7MTQ45YEAZqGP81AmGGcF3iPqOop0r1SPTaTbVkfUe4HXj97wYE+yNwWYxwWu4v1ugWHgo3S1XdZEVqWM7ET0cfnLGxWfkgR42o2PvWrDMBSFj/IHLaF0zKjRgdiVMwScNRAoWUoH78Y2icB/yIY09An6AH2Bdu/UB+yxopYshQiEvnvu0dURgDt8QeC8PDw7Fpji3fEA4z/PEJ6YOB5hKh4dj3EvXhxPqH/SKUY3rJ7srZ4FZnh1PMAtPhwP6fl2PMJMPDgeQ4rY8YT6Gzao0eAEA409DuggmTnFnOcSCiEiLMgxCiTI6Cq5DZUd3Qmp10vO0LaLTd2cjN4fOumlc7lUYbSQcZFkutRG7g6JKZKy0RmdLY680CDnEJ+UMkpFFe1RN7nxdVpXrC4aTtnaurOnYercZg2YVmLN/d/gczfEimrE/fs/bOuq29Zmn8tloORaXgZgGa78yO9/cnXm2BpaGvq25Dv9S4E9+5SIc9PqupJKhYFSSl47+Qcr1mYNAAAAeNptw0cKwkAAAMDZJA8Q7OUJvkLsPfZ6zFVERPy8qHh2YER+3i/BP83vIBLLySsoKimrqKqpa2hp6+jq6RsYGhmbmJqZSy0sraxtbO3sHRydnEMU4uR6yx7JJXveP7WrDycAAAAAAAH//wACeNpjYGRgYOABYhkgZgJCZgZNBkYGLQZtIJsFLMYAAAw3ALgAeNolizEKgDAQBCchRbC2sFER0YD6qVQiBCv/H9ezGI6Z5XBAw8CBK/m5iQQVauVbXLnOrMZv2oLdKFa8Pjuru2hJzGabmOSLzNMzvutpB3N42mNgZGBg4GKQYzBhYMxJLMlj4GBgAYow/P/PAJJhLM6sSoWKfWCAAwDAjgbRAAB42mNgYGBkAIIbCZo5IPrmUn0hGA0AO8EFTQAA")
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe :root {
+  --swiper-theme-color: #007aff
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogyf0f23054211e47ea8a8fde9d73e5d33c {
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  z-index: 1
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogye56465a64ea4cf8ad2ebfb60dc0fc8e7>.rockstargames-sites-gta-trilogycdabd30324f14ad7b5aba1b76791f25f {
+  flex-direction: column
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogycdabd30324f14ad7b5aba1b76791f25f {
+  box-sizing: initial;
+  display: flex;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+  width: 100%;
+  z-index: 1
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogycd361479ebf67e75fcf7ada6fd9fd8e9 .rockstargames-sites-gta-trilogya6ee780f18c6ce8bcaa5cb110acdeca0,
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogycdabd30324f14ad7b5aba1b76791f25f {
+  transform: translateZ(0)
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogyd7b77f45ae089dd677e2afbe1ed5091e {
+  touch-action: pan-y
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogyd7b77f45ae089dd677e2afbe1ed5091e.rockstargames-sites-gta-trilogye56465a64ea4cf8ad2ebfb60dc0fc8e7 {
+  touch-action: pan-x
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogya6ee780f18c6ce8bcaa5cb110acdeca0 {
+  flex-shrink: 0;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+  width: 100%
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogyf17fcc3396a39dae287e25d62c578a6f {
+  visibility: hidden
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogyf34d0ebae8a7dd161c1519a7065ce95d,
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogyf34d0ebae8a7dd161c1519a7065ce95d .rockstargames-sites-gta-trilogya6ee780f18c6ce8bcaa5cb110acdeca0 {
+  height: auto
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogyf34d0ebae8a7dd161c1519a7065ce95d .rockstargames-sites-gta-trilogycdabd30324f14ad7b5aba1b76791f25f {
+  align-items: flex-start;
+  transition-property: transform, height
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogydaa3f8ac65ad51f69b5f719152e5653c .rockstargames-sites-gta-trilogya6ee780f18c6ce8bcaa5cb110acdeca0 {
+  backface-visibility: hidden;
+  transform: translateZ(0)
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogyee9ebce9b5572b109c24f22268fe6a74,
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogyee9ebce9b5572b109c24f22268fe6a74.rockstargames-sites-gta-trilogye267b5c997c0ee7e66c7ab440474f009 .rockstargames-sites-gta-trilogycdabd30324f14ad7b5aba1b76791f25f {
+  perspective: 1200px
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogyee9ebce9b5572b109c24f22268fe6a74 .rockstargames-sites-gta-trilogyd9a0157919a60e144ecd2636b3a3323f,
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogyee9ebce9b5572b109c24f22268fe6a74 .rockstargames-sites-gta-trilogya6ee780f18c6ce8bcaa5cb110acdeca0,
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogyee9ebce9b5572b109c24f22268fe6a74 .rockstargames-sites-gta-trilogye2b3e708425f81c6e055935628ceb8c3,
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogyee9ebce9b5572b109c24f22268fe6a74 .rockstargames-sites-gta-trilogya1ac6f2fddc815071779f9ba8778a394,
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogyee9ebce9b5572b109c24f22268fe6a74 .rockstargames-sites-gta-trilogyb1029bb721f0ea4b381ab098ddd450f2,
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogyee9ebce9b5572b109c24f22268fe6a74 .rockstargames-sites-gta-trilogyd0c4eaf8af592244d10096499827f8f9,
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogyee9ebce9b5572b109c24f22268fe6a74 .rockstargames-sites-gta-trilogyc767210eb491703863b3d3261bca6b70,
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogyee9ebce9b5572b109c24f22268fe6a74 .rockstargames-sites-gta-trilogycdabd30324f14ad7b5aba1b76791f25f {
+  transform-style: preserve-3d
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogyee9ebce9b5572b109c24f22268fe6a74 .rockstargames-sites-gta-trilogye2b3e708425f81c6e055935628ceb8c3,
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogyee9ebce9b5572b109c24f22268fe6a74 .rockstargames-sites-gta-trilogya1ac6f2fddc815071779f9ba8778a394,
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogyee9ebce9b5572b109c24f22268fe6a74 .rockstargames-sites-gta-trilogyb1029bb721f0ea4b381ab098ddd450f2,
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogyee9ebce9b5572b109c24f22268fe6a74 .rockstargames-sites-gta-trilogyd0c4eaf8af592244d10096499827f8f9,
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogyee9ebce9b5572b109c24f22268fe6a74 .rockstargames-sites-gta-trilogyc767210eb491703863b3d3261bca6b70 {
+  height: 100%;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogyee9ebce9b5572b109c24f22268fe6a74 .rockstargames-sites-gta-trilogye2b3e708425f81c6e055935628ceb8c3 {
+  background: rgba(0, 0, 0, .15)
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogyee9ebce9b5572b109c24f22268fe6a74 .rockstargames-sites-gta-trilogyb1029bb721f0ea4b381ab098ddd450f2 {
+  background-image: linear-gradient(270deg, rgba(0, 0, 0, .5), transparent)
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogyee9ebce9b5572b109c24f22268fe6a74 .rockstargames-sites-gta-trilogyd0c4eaf8af592244d10096499827f8f9 {
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, .5), transparent)
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogyee9ebce9b5572b109c24f22268fe6a74 .rockstargames-sites-gta-trilogyc767210eb491703863b3d3261bca6b70 {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, .5), transparent)
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogyee9ebce9b5572b109c24f22268fe6a74 .rockstargames-sites-gta-trilogya1ac6f2fddc815071779f9ba8778a394 {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, .5), transparent)
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogye267b5c997c0ee7e66c7ab440474f009>.rockstargames-sites-gta-trilogycdabd30324f14ad7b5aba1b76791f25f {
+  -ms-overflow-style: none;
+  overflow: auto;
+  scrollbar-width: none
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogye267b5c997c0ee7e66c7ab440474f009>.rockstargames-sites-gta-trilogycdabd30324f14ad7b5aba1b76791f25f::-webkit-scrollbar {
+  display: none
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogye267b5c997c0ee7e66c7ab440474f009>.rockstargames-sites-gta-trilogycdabd30324f14ad7b5aba1b76791f25f>.rockstargames-sites-gta-trilogya6ee780f18c6ce8bcaa5cb110acdeca0 {
+  scroll-snap-align: start start
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogya4bfcaf9e4ffc2c21ce338c3a145f966.rockstargames-sites-gta-trilogye267b5c997c0ee7e66c7ab440474f009>.rockstargames-sites-gta-trilogycdabd30324f14ad7b5aba1b76791f25f {
+  scroll-snap-type: x mandatory
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogye56465a64ea4cf8ad2ebfb60dc0fc8e7.rockstargames-sites-gta-trilogye267b5c997c0ee7e66c7ab440474f009>.rockstargames-sites-gta-trilogycdabd30324f14ad7b5aba1b76791f25f {
+  scroll-snap-type: y mandatory
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogye9008d2fbb391566d1dce81b14fbbc72>.rockstargames-sites-gta-trilogycdabd30324f14ad7b5aba1b76791f25f:before {
+  content: "";
+  flex-shrink: 0;
+  order: 9999
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogye9008d2fbb391566d1dce81b14fbbc72.rockstargames-sites-gta-trilogya4bfcaf9e4ffc2c21ce338c3a145f966>.rockstargames-sites-gta-trilogycdabd30324f14ad7b5aba1b76791f25f>.rockstargames-sites-gta-trilogya6ee780f18c6ce8bcaa5cb110acdeca0:first-child {
+  margin-inline-start: var(--swiper-centered-offset-before)
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogye9008d2fbb391566d1dce81b14fbbc72.rockstargames-sites-gta-trilogya4bfcaf9e4ffc2c21ce338c3a145f966>.rockstargames-sites-gta-trilogycdabd30324f14ad7b5aba1b76791f25f:before {
+  height: 100%;
+  min-height: 1px;
+  width: var(--swiper-centered-offset-after)
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogye9008d2fbb391566d1dce81b14fbbc72.rockstargames-sites-gta-trilogye56465a64ea4cf8ad2ebfb60dc0fc8e7>.rockstargames-sites-gta-trilogycdabd30324f14ad7b5aba1b76791f25f>.rockstargames-sites-gta-trilogya6ee780f18c6ce8bcaa5cb110acdeca0:first-child {
+  margin-block-start: var(--swiper-centered-offset-before)
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogye9008d2fbb391566d1dce81b14fbbc72.rockstargames-sites-gta-trilogye56465a64ea4cf8ad2ebfb60dc0fc8e7>.rockstargames-sites-gta-trilogycdabd30324f14ad7b5aba1b76791f25f:before {
+  height: var(--swiper-centered-offset-after);
+  min-width: 1px;
+  width: 100%
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogye9008d2fbb391566d1dce81b14fbbc72>.rockstargames-sites-gta-trilogycdabd30324f14ad7b5aba1b76791f25f>.rockstargames-sites-gta-trilogya6ee780f18c6ce8bcaa5cb110acdeca0 {
+  scroll-snap-align: center center;
+  scroll-snap-stop: always
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogyad197b358eb70feadc8019f0c4efdf49 {
+  background: rgba(0, 0, 0, .1);
+  border-radius: 10px;
+  position: relative;
+  -ms-touch-action: none
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogyad197b358eb70feadc8019f0c4efdf49.rockstargames-sites-gta-trilogyfa35458a6045b6fc634c2efeeb22523b,
+.rockstargames-sites-gta-trilogyfa35458a6045b6fc634c2efeeb22523b>.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogyad197b358eb70feadc8019f0c4efdf49 {
+  display: none !important
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogyad197b358eb70feadc8019f0c4efdf49.rockstargames-sites-gta-trilogyfbbcca90630af945b692da95d42dc66b,
+.rockstargames-sites-gta-trilogya4bfcaf9e4ffc2c21ce338c3a145f966>.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogyad197b358eb70feadc8019f0c4efdf49 {
+  bottom: 3px;
+  height: 5px;
+  left: 1%;
+  position: absolute;
+  width: 98%;
+  z-index: 50
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogyad197b358eb70feadc8019f0c4efdf49.rockstargames-sites-gta-trilogyfaf6924df6decbb71a54feceb439d5b4,
+.rockstargames-sites-gta-trilogye56465a64ea4cf8ad2ebfb60dc0fc8e7>.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogyad197b358eb70feadc8019f0c4efdf49 {
+  height: 98%;
+  position: absolute;
+  right: 3px;
+  top: 1%;
+  width: 5px;
+  z-index: 50
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogyf1b2b6220cf7f67a1ee3f0f42c8fbc18 {
+  background: rgba(0, 0, 0, .5);
+  border-radius: 10px;
+  height: 100%;
+  left: 0;
+  position: relative;
+  top: 0;
+  width: 100%
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogyd3295e9707831b3f3802d6585e2f188f {
+  cursor: move
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogyda0dd47c591fead19a72a3acbea85048 {
+  display: none
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .swiper {
+  overflow: unset;
+  width: 100%
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .swiper-horizontal>.swiper-pagination-bullets,
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .swiper-pagination-bullets.swiper-pagination-horizontal {
+  --swiper-pagination-color: hsla(0, 0%, 100%, .85);
+  --swiper-pagination-bullet-inactive-color: hsla(0, 0%, 100%, .5);
+  --swiper-pagination-bullet-horizontal-gap: 0.35rem;
+  bottom: -2.5rem
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .swiper-wrapper {
+  display: grid;
+  grid-auto-flow: column;
+  width: 100%
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogyef7774d3a3f0808310323089434e4c9c {
+  --grid-num-columns: 1;
+  --grid-gap-dynamic: var(--grid-gap-static-sm);
+  grid-gap: var(--grid-gap-dynamic);
+  align-content: var(--grid-align-content);
+  align-items: var(--grid-align-items);
+  align-self: var(--grid-align-self);
+  display: grid;
+  grid-template-columns: repeat(var(--grid-num-columns, 1), minmax(0, 1fr));
+  grid-template: var(--grid-template-override, auto/repeat(var(--grid-num-columns, 1), minmax(0, 1fr)));
+  justify-content: var(--grid-justify-content);
+  justify-items: var(--grid-justify-items);
+  justify-self: var(--grid-justify-self)
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogyc1a19a201a67e5b2fb26247e2661850e {
+  height: 100%
+}
+
+@media (max-width:1919px) {
+  .rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogyc1a19a201a67e5b2fb26247e2661850e {
+    cursor: grab
+  }
+
+  .rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogyc1a19a201a67e5b2fb26247e2661850e:active {
+    cursor: grabbing
+  }
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogyd54fa7627079eedbb51bd51370499ee8 {
+  font-size: var(--font-size-3);
+  line-height: 1.4
+}
+
+@media (min-width:2560px) {
+  .rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe .rockstargames-sites-gta-trilogyd54fa7627079eedbb51bd51370499ee8 {
+    font-size: var(--font-size-4)
+  }
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe ul {
+  grid-gap: var(--grid-gap-static-xs);
+  color: #bcbcbc;
+  display: grid;
+  font-size: var(--font-size-2);
+  list-style: none;
+  padding-left: var(--grid-gap-static-sm) !important
+}
+
+.rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe ul li:not(:last-child):after {
+  background-color: hsla(0, 0%, 100%, .2);
+  content: "";
+  display: block;
+  height: 1px;
+  margin-top: var(--grid-gap-static-sm);
+  width: 3rem
+}
+
+@media (min-width:1920px) {
+  .rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe ul {
+    grid-gap: var(--grid-gap-static-sm)
+  }
+}
+
+@media (min-width:2560px) {
+  .rockstargames-sites-gta-trilogyabb29043b941172bcd96e548321d6ffe ul {
+    font-size: var(--font-size-3)
+  }
+}
+
+.rockstargames-sites-gta-trilogyb27c2ebcfe15c41df0c992d67fc15aed {
+  grid-gap: var(--image-grid-gap);
+  align-items: center;
+  align-items: flex-start;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  overflow-x: hidden;
+  position: sticky;
+  top: -1px;
+  width: 100%;
+  will-change: transform
+}
+
+@media (max-width:1439px) {
+  .rockstargames-sites-gta-trilogyb27c2ebcfe15c41df0c992d67fc15aed {
+    height: calc(100vh - 60px);
+    top: 60px
+  }
+}
+
+.rockstargames-sites-gta-trilogyf4a72102ceddef029be930bb493b8d88 {
+  align-items: center;
+  background-position: 50%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: 100%;
+  justify-content: center;
+  min-width: 33%;
+  overflow: hidden;
+  position: relative;
+  will-change: transform, width, height
+}
+
+@media (min-width:0px) {
+  .rockstargames-sites-gta-trilogyf4a72102ceddef029be930bb493b8d88 {
+    grid-gap: var(--grid-gap-static-md);
+    justify-content: end;
+    padding-top: 15vh
+  }
+}
+
+@media (min-width:768px) {
+  .rockstargames-sites-gta-trilogyf4a72102ceddef029be930bb493b8d88 {
+    justify-content: space-around;
+    padding-top: 20vh
+  }
+}
+
+@media (min-width:1024px) {
+  .rockstargames-sites-gta-trilogyf4a72102ceddef029be930bb493b8d88 {
+    grid-gap: var(--grid-gap-static-lg)
+  }
+}
+
+@media (min-aspect-ratio:7/3) {
+  .rockstargames-sites-gta-trilogyf4a72102ceddef029be930bb493b8d88 {
+    grid-gap: var(--grid-gap-static-sm)
+  }
+}
+
+.rockstargames-sites-gta-trilogyf4a72102ceddef029be930bb493b8d88[data-game=III] {
+  background-color: #192b37;
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/0988c84d88cc5515cdb8f12e7e3bc552.jpg)
+}
+
+.rockstargames-sites-gta-trilogyf4a72102ceddef029be930bb493b8d88[data-game=VC] {
+  background-color: #4bc6d6;
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/ca94f1e16bdc6ea4c4eac7ff565aa716.jpg)
+}
+
+@media (orientation:portrait) {
+  .rockstargames-sites-gta-trilogyf4a72102ceddef029be930bb493b8d88[data-game=VC] .rockstargames-sites-gta-trilogyd3c78232d1c0927ec585487469a7ff98 {
+    margin-left: 10vw
+  }
+}
+
+.rockstargames-sites-gta-trilogyf4a72102ceddef029be930bb493b8d88[data-game=SA] {
+  background-color: #c2d6a3;
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/a10051bad8f0ee42e8ef29ded6ec4223.jpg)
+}
+
+@media (orientation:portrait) {
+  .rockstargames-sites-gta-trilogyf4a72102ceddef029be930bb493b8d88[data-game=SA] .rockstargames-sites-gta-trilogyd3c78232d1c0927ec585487469a7ff98 {
+    margin-left: 10vw
+  }
+}
+
+.rockstargames-sites-gta-trilogyf4a72102ceddef029be930bb493b8d88 .rockstargames-sites-gta-trilogyd3c78232d1c0927ec585487469a7ff98 {
+  bottom: 0;
+  height: 90%;
+  position: absolute
+}
+
+.rockstargames-sites-gta-trilogyf4a72102ceddef029be930bb493b8d88 .rockstargames-sites-gta-trilogybc67a77bd0be6d9e4963002edc9eb1c9 {
+  bottom: 0;
+  z-index: 5
+}
+
+@media (min-width:0px) {
+  .rockstargames-sites-gta-trilogyf4a72102ceddef029be930bb493b8d88 .rockstargames-sites-gta-trilogybc67a77bd0be6d9e4963002edc9eb1c9 {
+    max-width: 9rem;
+    width: 28vw
+  }
+}
+
+@media (min-width:768px) {
+  .rockstargames-sites-gta-trilogyf4a72102ceddef029be930bb493b8d88 .rockstargames-sites-gta-trilogybc67a77bd0be6d9e4963002edc9eb1c9 {
+    max-width: unset;
+    width: 20vw
+  }
+}
+
+@media (min-width:1024px) {
+  .rockstargames-sites-gta-trilogyf4a72102ceddef029be930bb493b8d88 .rockstargames-sites-gta-trilogybc67a77bd0be6d9e4963002edc9eb1c9 {
+    max-width: 35vh;
+    width: 15vw
+  }
+}
+
+@media (min-width:2560px) {
+  .rockstargames-sites-gta-trilogyf4a72102ceddef029be930bb493b8d88 .rockstargames-sites-gta-trilogybc67a77bd0be6d9e4963002edc9eb1c9 {
+    width: 11vw
+  }
+}
+
+.rockstargames-sites-gta-trilogyf4a72102ceddef029be930bb493b8d88 .rockstargames-sites-gta-trilogyc35094365e57ebef18fcf1fbd503ec51 {
+  grid-gap: var(--grid-gap-static-xs);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-size-3);
+  justify-content: flex-start;
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: left
+}
+
+@media (min-width:0px) {
+  .rockstargames-sites-gta-trilogyf4a72102ceddef029be930bb493b8d88 .rockstargames-sites-gta-trilogyc35094365e57ebef18fcf1fbd503ec51 {
+    height: 100%;
+    width: calc(100vw - (var(--section-padding) * 2))
+  }
+}
+
+@media (min-width:768px) {
+  .rockstargames-sites-gta-trilogyf4a72102ceddef029be930bb493b8d88 .rockstargames-sites-gta-trilogyc35094365e57ebef18fcf1fbd503ec51 {
+    width: 600px
+  }
+}
+
+@media (min-width:1920px) {
+  .rockstargames-sites-gta-trilogyf4a72102ceddef029be930bb493b8d88 .rockstargames-sites-gta-trilogyc35094365e57ebef18fcf1fbd503ec51 {
+    max-width: 800px;
+    width: 800px
+  }
+}
+
+.rockstargames-sites-gta-trilogyf4a72102ceddef029be930bb493b8d88 .rockstargames-sites-gta-trilogyc35094365e57ebef18fcf1fbd503ec51 p {
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 0 0 10px var(--text-shadow-color)
+}
+
+@media (min-width:0px) {
+  .rockstargames-sites-gta-trilogyf4a72102ceddef029be930bb493b8d88 .rockstargames-sites-gta-trilogyc35094365e57ebef18fcf1fbd503ec51 p {
+    font-size: var(--font-size-4)
+  }
+}
+
+@media (min-width:768px) {
+  .rockstargames-sites-gta-trilogyf4a72102ceddef029be930bb493b8d88 .rockstargames-sites-gta-trilogyc35094365e57ebef18fcf1fbd503ec51 p {
+    font-size: 1.15rem
+  }
+}
+
+@media (min-width:1920px) {
+  .rockstargames-sites-gta-trilogyf4a72102ceddef029be930bb493b8d88 .rockstargames-sites-gta-trilogyc35094365e57ebef18fcf1fbd503ec51 p {
+    font-size: var(--font-size-4)
+  }
+}
+
+.rockstargames-sites-gta-trilogyf4a72102ceddef029be930bb493b8d88 .rockstargames-sites-gta-trilogyc35094365e57ebef18fcf1fbd503ec51 h3 {
+  text-shadow: 1px 2px 0 #000;
+  text-transform: none;
+  width: 100%
+}
+
+@media (min-width:0px) {
+  .rockstargames-sites-gta-trilogyf4a72102ceddef029be930bb493b8d88 .rockstargames-sites-gta-trilogyc35094365e57ebef18fcf1fbd503ec51 h3 {
+    font-size: calc(8.8vw * var(--font-multiplier))
+  }
+}
+
+@media (min-width:500px) {
+  .rockstargames-sites-gta-trilogyf4a72102ceddef029be930bb493b8d88 .rockstargames-sites-gta-trilogyc35094365e57ebef18fcf1fbd503ec51 h3 {
+    font-size: calc(6.5vw * var(--font-multiplier))
+  }
+}
+
+@media (min-width:768px) {
+  .rockstargames-sites-gta-trilogyf4a72102ceddef029be930bb493b8d88 .rockstargames-sites-gta-trilogyc35094365e57ebef18fcf1fbd503ec51 h3 {
+    font-size: calc(2.5rem * var(--font-multiplier))
+  }
+}
+
+@media (min-width:1024px) {
+  .rockstargames-sites-gta-trilogyf4a72102ceddef029be930bb493b8d88 .rockstargames-sites-gta-trilogyc35094365e57ebef18fcf1fbd503ec51 h3 {
+    font-size: calc(2.2rem * var(--font-multiplier))
+  }
+}
+
+@media (min-width:1920px) {
+  .rockstargames-sites-gta-trilogyf4a72102ceddef029be930bb493b8d88 .rockstargames-sites-gta-trilogyc35094365e57ebef18fcf1fbd503ec51 h3 {
+    font-size: calc(2.5rem * var(--font-multiplier))
+  }
+}
+
+@media (min-width:2560px) {
+  .rockstargames-sites-gta-trilogyf4a72102ceddef029be930bb493b8d88 .rockstargames-sites-gta-trilogyc35094365e57ebef18fcf1fbd503ec51 h3 {
+    font-size: calc(2.99rem * var(--font-multiplier))
+  }
+}
+
+.rockstargames-sites-gta-trilogye931a8ec0b56a01e03bfbdd0c1b504e3 {
+  --vh: 100vh;
+  --vmax: 100vw;
+  --multiplier: 1;
+  --transition-multiplier: 1;
+  --gamesTriggers: calc(var(--vmax) * 0.8);
+  --transition-distance: calc((var(--description-width) * 2) + var(--image-grid-gap));
+  height: calc(var(--gamesTriggers) + (var(--transition-distance) * var(--transition-multiplier)));
+  margin-bottom: var(--grid-gap-static-xl);
+  position: relative;
+  width: 100%
+}
+
+@media (max-width:1439px) {
+  .rockstargames-sites-gta-trilogye931a8ec0b56a01e03bfbdd0c1b504e3 {
+    --vh: calc(100vh - 60px)
+  }
+}
+
+@media (min-width:0px) {
+  .rockstargames-sites-gta-trilogye931a8ec0b56a01e03bfbdd0c1b504e3 {
+    --description-width: 100vw
+  }
+}
+
+@media (min-width:1024px) {
+  .rockstargames-sites-gta-trilogye931a8ec0b56a01e03bfbdd0c1b504e3 {
+    --description-width: calc(100vw * 0.9)
+  }
+}
+
+@media (min-width:1920px) {
+  .rockstargames-sites-gta-trilogye931a8ec0b56a01e03bfbdd0c1b504e3 {
+    --description-width: calc(100vw * 0.75)
+  }
+}
+
+@media (orientation:portrait) {
+  .rockstargames-sites-gta-trilogye931a8ec0b56a01e03bfbdd0c1b504e3 {
+    --multiplier: 1.3;
+    --transition-multiplier: 2;
+    --vmax: calc(var(--vh) * var(--multiplier));
+    --gamesTriggers: calc((var(--vmax) * 0.8) + (var(--vmax) * 0.2))
+  }
+}
+
+.rockstargames-sites-gta-trilogyba94f48290f0eba9b255628fb73650af {
+  --grid-gap-dynamic: var(--image-grid-gap);
+  grid-gap: var(--grid-gap-dynamic);
+  align-content: var(--grid-align-content);
+  align-items: var(--grid-align-items);
+  align-self: var(--grid-align-self);
+  display: grid;
+  grid-template-columns: repeat(var(--grid-num-columns, 1), minmax(0, 1fr));
+  grid-template: var(--grid-template-override, auto/repeat(var(--grid-num-columns, 1), minmax(0, 1fr)));
+  justify-content: var(--grid-justify-content);
+  justify-items: var(--grid-justify-items);
+  justify-self: var(--grid-justify-self);
+  padding: var(--section-padding)
+}
+
+.rockstargames-sites-gta-trilogyba94f48290f0eba9b255628fb73650af .rockstargames-sites-gta-trilogydd750bad3aae896ea003606d8b71367d {
+  padding: 0 0 var(--grid-gap-static-sm)
+}
+
+.rockstargames-sites-gta-trilogyba94f48290f0eba9b255628fb73650af .rockstargames-sites-gta-trilogybaf0910838232b08c92edcb6a981d263 {
+  grid-gap: var(--image-grid-gap);
+  display: flex;
+  position: relative;
+  width: 100%
+}
+
+.rockstargames-sites-gta-trilogyba94f48290f0eba9b255628fb73650af .rockstargames-sites-gta-trilogybaf0910838232b08c92edcb6a981d263.rockstargames-sites-gta-trilogyc12b85147ab877bdd1e264eae95885ec {
+  grid-template-columns: 100%
+}
+
+@media (max-width:1023px) {
+  .rockstargames-sites-gta-trilogyba94f48290f0eba9b255628fb73650af .rockstargames-sites-gta-trilogybaf0910838232b08c92edcb6a981d263.rockstargames-sites-gta-trilogyc12b85147ab877bdd1e264eae95885ec {
+    --aspect-ratio: 16/9;
+    position: relative
+  }
+
+  .rockstargames-sites-gta-trilogyba94f48290f0eba9b255628fb73650af .rockstargames-sites-gta-trilogybaf0910838232b08c92edcb6a981d263.rockstargames-sites-gta-trilogyc12b85147ab877bdd1e264eae95885ec:before {
+    content: "";
+    display: block;
+    height: 0;
+    padding-bottom: calc(100% / calc(var(--aspect-ratio)))
+  }
+
+  .rockstargames-sites-gta-trilogyba94f48290f0eba9b255628fb73650af .rockstargames-sites-gta-trilogybaf0910838232b08c92edcb6a981d263.rockstargames-sites-gta-trilogyc12b85147ab877bdd1e264eae95885ec>* {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
+  }
+}
+
+.rockstargames-sites-gta-trilogyba94f48290f0eba9b255628fb73650af .rockstargames-sites-gta-trilogybaf0910838232b08c92edcb6a981d263.rockstargames-sites-gta-trilogyb9c2f6d143c919d269e79c918c9119bd img {
+  width: 66.66%
+}
+
+.rockstargames-sites-gta-trilogyba94f48290f0eba9b255628fb73650af .rockstargames-sites-gta-trilogybaf0910838232b08c92edcb6a981d263.rockstargames-sites-gta-trilogyb9c2f6d143c919d269e79c918c9119bd img:first-child,
+.rockstargames-sites-gta-trilogyba94f48290f0eba9b255628fb73650af .rockstargames-sites-gta-trilogybaf0910838232b08c92edcb6a981d263.rockstargames-sites-gta-trilogycc94677a83f454af7a5022a362878d7d img {
+  width: calc(33.33% - var(--image-grid-gap))
+}
+
+.rockstargames-sites-gta-trilogyba94f48290f0eba9b255628fb73650af .rockstargames-sites-gta-trilogybaf0910838232b08c92edcb6a981d263.rockstargames-sites-gta-trilogycc94677a83f454af7a5022a362878d7d img:first-child {
+  width: 66.66%
+}
+
+.rockstargames-sites-gta-trilogyba94f48290f0eba9b255628fb73650af .rockstargames-sites-gta-trilogybaf0910838232b08c92edcb6a981d263.rockstargames-sites-gta-trilogydb25c893ecdb3316b14c93891cbd4296 img {
+  width: calc(50% - var(--image-grid-gap) / 2)
+}
+
+.rockstargames-sites-gta-trilogyba94f48290f0eba9b255628fb73650af .rockstargames-sites-gta-trilogybaf0910838232b08c92edcb6a981d263 img {
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+  width: 100%
+}
+
+.rockstargames-sites-gta-trilogyba94f48290f0eba9b255628fb73650af .rockstargames-sites-gta-trilogybaf0910838232b08c92edcb6a981d263 .rockstargames-sites-gta-trilogyd0a69bb831b4e0786451f3fb0a98caf5 {
+  --badge-height: 7rem;
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+  background: rgba(0, 0, 0, .7);
+  border-radius: var(--border-radius-static);
+  box-sizing: border-box;
+  height: var(--badge-height);
+  left: var(--grid-gap-static-lg);
+  padding: var(--grid-gap-static-sm) 1.5rem;
+  position: absolute;
+  top: calc((100% - var(--badge-height)) / 2);
+  width: auto
+}
+
+@media (max-width:1023px) {
+  .rockstargames-sites-gta-trilogyba94f48290f0eba9b255628fb73650af .rockstargames-sites-gta-trilogybaf0910838232b08c92edcb6a981d263 .rockstargames-sites-gta-trilogyd0a69bb831b4e0786451f3fb0a98caf5 {
+    left: 50%;
+    transform: translateX(-50%)
+  }
+}
+
+@media (min-width:768px) {
+  .rockstargames-sites-gta-trilogyba94f48290f0eba9b255628fb73650af .rockstargames-sites-gta-trilogybaf0910838232b08c92edcb6a981d263 .rockstargames-sites-gta-trilogyd0a69bb831b4e0786451f3fb0a98caf5 {
+    --badge-height: 9rem
+  }
+}
+
+@media (min-width:1024px) {
+  .rockstargames-sites-gta-trilogyba94f48290f0eba9b255628fb73650af .rockstargames-sites-gta-trilogybaf0910838232b08c92edcb6a981d263 .rockstargames-sites-gta-trilogyd0a69bb831b4e0786451f3fb0a98caf5 {
+    --badge-height: 10rem;
+    padding: 1.5rem var(--grid-gap-static-md)
+  }
+}
+
+@media (min-width:1920px) {
+  .rockstargames-sites-gta-trilogyba94f48290f0eba9b255628fb73650af .rockstargames-sites-gta-trilogybaf0910838232b08c92edcb6a981d263 .rockstargames-sites-gta-trilogyd0a69bb831b4e0786451f3fb0a98caf5 {
+    --badge-height: 11rem
+  }
+}
+
+@media (min-width:2560px) {
+  .rockstargames-sites-gta-trilogyba94f48290f0eba9b255628fb73650af .rockstargames-sites-gta-trilogybaf0910838232b08c92edcb6a981d263 .rockstargames-sites-gta-trilogyd0a69bb831b4e0786451f3fb0a98caf5 {
+    --badge-height: 15rem
+  }
+}
+
+.rockstargames-sites-gta-trilogyba94f48290f0eba9b255628fb73650af .rockstargames-sites-gta-trilogybaf0910838232b08c92edcb6a981d263 .rockstargames-sites-gta-trilogyd0a69bb831b4e0786451f3fb0a98caf5 .rockstargames-sites-gta-trilogyd557c3260fa1478a9ab89ebdcf82b84b {
+  height: 100%;
+  width: auto
+}
+
+.rockstargames-sites-gta-trilogyff81c758ae8f9c1c968caed27bf65d9c {
+  background: #000;
+  overflow: hidden;
+  width: 100%
+}
+
+.rockstargames-sites-gta-trilogycea07dd04748f0d5a5a5e847dea51d49 {
+  --grid-gap-dynamic: 0;
+  grid-gap: var(--grid-gap-dynamic);
+  align-content: var(--grid-align-content);
+  align-items: var(--grid-align-items);
+  align-items: center;
+  align-self: var(--grid-align-self);
+  display: grid;
+  grid-template-columns: repeat(var(--grid-num-columns, 1), minmax(0, 1fr));
+  grid-template: var(--grid-template-override, auto/repeat(var(--grid-num-columns, 1), minmax(0, 1fr)));
+  justify-content: var(--grid-justify-content);
+  justify-items: var(--grid-justify-items);
+  justify-self: var(--grid-justify-self)
+}
+
+@media (min-width:0px) {
+  .rockstargames-sites-gta-trilogycea07dd04748f0d5a5a5e847dea51d49 {
+    grid-template-columns: 100%
+  }
+}
+
+@media (min-width:1024px) {
+  .rockstargames-sites-gta-trilogycea07dd04748f0d5a5a5e847dea51d49 {
+    grid-template-columns: 1fr 60%
+  }
+}
+
+@media (min-width:1920px) {
+  .rockstargames-sites-gta-trilogycea07dd04748f0d5a5a5e847dea51d49 {
+    grid-template-columns: 1fr 65%
+  }
+}
+
+@media (min-width:2560px) {
+  .rockstargames-sites-gta-trilogycea07dd04748f0d5a5a5e847dea51d49 {
+    grid-template-columns: 1fr 70%
+  }
+}
+
+.rockstargames-sites-gta-trilogyad8d2b9a429671ba124f56d8aef0336c img {
+  width: 100%
+}
+
+@media (min-width:768px) and (max-width:1023px) {
+  .rockstargames-sites-gta-trilogyad8d2b9a429671ba124f56d8aef0336c img {
+    padding: 0 8rem
+  }
+}
+
+.rockstargames-sites-gta-trilogye3d53937910b56e85b616c18d3fefae2 img {
+  --logo-maxWidth: unset !important;
+  --logo-minWidth: unset !important
+}
+
+@media (min-width:0px) {
+  .rockstargames-sites-gta-trilogye3d53937910b56e85b616c18d3fefae2 img {
+    --logo-width: 100% !important
+  }
+}
+
+@media (min-width:768px) {
+  .rockstargames-sites-gta-trilogye3d53937910b56e85b616c18d3fefae2 img {
+    --logo-width: 70% !important
+  }
+}
+
+@media (min-width:1024px) {
+  .rockstargames-sites-gta-trilogye3d53937910b56e85b616c18d3fefae2 img {
+    --logo-width: 75% !important
+  }
+}
+
+@media (min-width:1920px) {
+  .rockstargames-sites-gta-trilogye3d53937910b56e85b616c18d3fefae2 img {
+    --logo-width: 65% !important
+  }
+}
+
+@media (min-width:2560px) {
+  .rockstargames-sites-gta-trilogye3d53937910b56e85b616c18d3fefae2 img {
+    --logo-width: 60% !important
+  }
+}
+
+.rockstargames-sites-gta-trilogyb42a248ee8b56a330c2c3349b94d10d2 {
+  background: #0b0b0b
+}
+
+.rockstargames-sites-gta-trilogyb42a248ee8b56a330c2c3349b94d10d2 section {
+  --grid-gap-dynamic: var(--grid-gap-static-md);
+  grid-gap: var(--grid-gap-dynamic);
+  align-content: var(--grid-align-content);
+  align-items: var(--grid-align-items);
+  align-items: center;
+  align-self: var(--grid-align-self);
+  display: grid;
+  grid-template-columns: repeat(var(--grid-num-columns, 1), minmax(0, 1fr));
+  grid-template: var(--grid-template-override, auto/repeat(var(--grid-num-columns, 1), minmax(0, 1fr)));
+  grid-template-columns: auto 1fr;
+  justify-content: var(--grid-justify-content);
+  justify-items: var(--grid-justify-items);
+  justify-self: var(--grid-justify-self);
+  max-width: 1440px
+}
+
+@media (max-width:767px) {
+  .rockstargames-sites-gta-trilogyb42a248ee8b56a330c2c3349b94d10d2 section {
+    grid-template-columns: 100%
+  }
+}
+
+@media (min-width:1920px) {
+  .rockstargames-sites-gta-trilogyb42a248ee8b56a330c2c3349b94d10d2 section {
+    --grid-gap-dynamic: var(--grid-gap-static-lg)
+  }
+}
+
+.rockstargames-sites-gta-trilogyd8ad2b2c61621cb0980b9e3ec08f4445 {
+  color: hsla(0, 0%, 100%, .65);
+  font-size: var(--font-size-1);
+  letter-spacing: -.025em;
+  line-height: 160%
+}
+
+.rockstargames-sites-gta-trilogyc6cca253803cc97d8a71219be0247b49 {
+  background: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/ddc7f58f966b10d1b638351a45c0cfe1.svg) 50%/contain no-repeat;
+  display: inline-block;
+  height: 14px;
+  vertical-align: middle;
+  width: 15px
+}
+
+:root {
+  --body-font-size: var(--font-size-3);
+  --body-line-height: 1.6;
+  --body-font-family: "HelveticaNowText", sans-serif;
+  --header-font-size: var(--font-size-4);
+  --header-line-height: 1.1;
+  --header-font-family: "BankGothicBT", sans-serif;
+  --display-font-family: "BankGothicBT", sans-serif;
+  --border-radius-static: 8px;
+  --section-padding: var(--grid-gap-static-lg);
+  --image-grid-gap: var(--grid-gap-static-xs);
+  -webkit-font-smoothing: antialiased;
+  --trilogy-gold: #a68d61;
+  --trilogy-gradient: linear-gradient(85deg, #a48955 -42.67%, #977b52 -24.49%, #e2d6b0 -4.78%, #ded09f 2.79%, #dcce99 8.86%, #ab9467 45.23%, #977c52 61.9%, #b8a36c 108.88%);
+  background: #0b0b0b
+}
+
+@media (min-width:768px) {
+  :root {
+    --header-font-size: var(--font-size-5)
+  }
+}
+
+@media (min-width:1920px) {
+  :root {
+    --section-padding: var(--grid-gap-static-xl);
+    --image-grid-gap: var(--grid-gap-static-sm)
+  }
+}
+
+@media (min-width:2560px) {
+  :root {
+    --header-font-size: 1.35vw;
+    --body-font-size: 0.85vw
+  }
+}
+
+#rockstargames-sites-gta-trilogyc52996daa36359d1f2b3d102b6623b25,
+body {
+  max-width: 100vw;
+  overflow-x: hidden
+}
+
+.rockstargames-sites-gta-trilogyb8cf5407890c35f4d571c2b3cb58647b {
+  background: #0b0b0b;
+  color: #e8e8e8;
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size);
+  line-height: var(--body-line-height);
+  position: relative;
+  width: 100%
+}
+
+.rockstargames-sites-gta-trilogyb8cf5407890c35f4d571c2b3cb58647b .title,
+.rockstargames-sites-gta-trilogyb8cf5407890c35f4d571c2b3cb58647b h3 {
+  color: #fff;
+  font-family: var(--header-font-family);
+  font-size: var(--header-font-size);
+  letter-spacing: 0;
+  line-height: var(--header-line-height);
+  text-transform: uppercase
+}
+
+.rockstargames-sites-gta-trilogyb8cf5407890c35f4d571c2b3cb58647b [data-game=III] {
+  --header-font-family: "Pricedown", sans-serif;
+  --font-multiplier: 1;
+  --text-shadow-color: #26303a
+}
+
+.rockstargames-sites-gta-trilogyb8cf5407890c35f4d571c2b3cb58647b [data-game=VC] {
+  --header-font-family: "BrushScriptMT", sans-serif;
+  --font-multiplier: 1.3;
+  --text-shadow-color: #3498af
+}
+
+.rockstargames-sites-gta-trilogyb8cf5407890c35f4d571c2b3cb58647b [data-game=SA] {
+  --header-font-family: "Diploma", sans-serif;
+  --font-multiplier: 1.1;
+  --text-shadow-color: #95b286
+}
+
+.rockstargames-sites-gta-trilogyc4dfd198843fa9cb49f13f86bcb03c30 {
+  --logo-width: 240px;
+  grid-gap: 4rem;
+  align-items: center;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, .95);
+  border: 1px solid hsla(0, 0%, 100%, .1);
+  border-radius: var(--border-radius-static);
+  box-shadow: 0 1px 42px 0 rgba(0, 0, 0, .15);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 80px;
+  justify-content: space-between;
+  left: 50%;
+  max-width: 1440px;
+  opacity: 0;
+  padding: .5rem 2rem;
+  position: fixed;
+  top: 1rem;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  width: auto;
+  z-index: 199
+}
+
+@media (max-width:1440px) {
+  .rockstargames-sites-gta-trilogyc4dfd198843fa9cb49f13f86bcb03c30 {
+    grid-gap: unset;
+    border: none;
+    border-bottom: 1px solid #161616;
+    border-radius: 0;
+    box-shadow: none;
+    max-width: unset;
+    padding: .5rem var(--padding-sides);
+    top: 0;
+    width: 100%
+  }
+}
+
+@media (max-width:1919px) {
+  .rockstargames-sites-gta-trilogyc4dfd198843fa9cb49f13f86bcb03c30 {
+    --logo-width: 200px;
+    height: 60px
+  }
+}
+
+@media (max-width:767px) {
+  .rockstargames-sites-gta-trilogyc4dfd198843fa9cb49f13f86bcb03c30 {
+    --logo-width: 150px
+  }
+}
+
+.rockstargames-sites-gta-trilogyc4dfd198843fa9cb49f13f86bcb03c30 :last-child {
+  font-size: .75rem;
+  padding: .5rem 1rem
+}
+
+@media (max-width:1919px) {
+  .rockstargames-sites-gta-trilogyc4dfd198843fa9cb49f13f86bcb03c30 :last-child {
+    border-radius: 2px;
+    border-width: 1px;
+    font-size: .65rem
+  }
+}
+
+.rockstargames-sites-gta-trilogyc4dfd198843fa9cb49f13f86bcb03c30 .rockstargames-sites-gta-trilogyeb8736bf47ca81c3f10f7c97c8ea7eee {
+  grid-gap: 1rem;
+  display: flex
+}
+
+.rockstargames-sites-gta-trilogyc4dfd198843fa9cb49f13f86bcb03c30 .rockstargames-sites-gta-trilogyeb8736bf47ca81c3f10f7c97c8ea7eee a {
+  color: hsla(0, 0%, 100%, .9);
+  cursor: pointer;
+  font-family: var(--display-font-family);
+  font-size: var(--font-size-2);
+  letter-spacing: 0;
+  line-height: 1;
+  padding: unset;
+  text-align: center;
+  text-transform: uppercase;
+  transform: scale(1)
+}
+
+.rockstargames-sites-gta-trilogyc4dfd198843fa9cb49f13f86bcb03c30 .rockstargames-sites-gta-trilogyeb8736bf47ca81c3f10f7c97c8ea7eee a:active,
+.rockstargames-sites-gta-trilogyc4dfd198843fa9cb49f13f86bcb03c30 .rockstargames-sites-gta-trilogyeb8736bf47ca81c3f10f7c97c8ea7eee a:hover {
+  color: var(--trilogy-gold)
+}
+
+@media (max-width:1919px) {
+  .rockstargames-sites-gta-trilogyc4dfd198843fa9cb49f13f86bcb03c30 .rockstargames-sites-gta-trilogyeb8736bf47ca81c3f10f7c97c8ea7eee a {
+    font-size: .6rem
+  }
+}
+
+@media (max-width:1023px) {
+  .rockstargames-sites-gta-trilogyc4dfd198843fa9cb49f13f86bcb03c30 .rockstargames-sites-gta-trilogyeb8736bf47ca81c3f10f7c97c8ea7eee {
+    display: none
+  }
+}

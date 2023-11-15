@@ -3,8 +3,8 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
     n = {},
     o = {},
     a = {},
-    s = {},
-    i = {};
+    i = {},
+    s = {};
   return Object.defineProperty(r, "__esModule", {
     value: !0
   }), Object.defineProperty(n, "__esModule", {
@@ -13,9 +13,9 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
     value: !0
   }), Object.defineProperty(a, "__esModule", {
     value: !0
-  }), Object.defineProperty(s, "__esModule", {
-    value: !0
   }), Object.defineProperty(i, "__esModule", {
+    value: !0
+  }), Object.defineProperty(s, "__esModule", {
     value: !0
   }), {
     setters: [function(e) {
@@ -36,46 +36,46 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
       }))
     }, function(e) {
       Object.keys(e).forEach((function(t) {
-        s[t] = e[t]
+        i[t] = e[t]
       }))
     }, function(e) {
       Object.keys(e).forEach((function(t) {
-        i[t] = e[t]
+        s[t] = e[t]
       }))
     }],
     execute: function() {
       e((() => {
-        var e, u, c, l, f = {
-            3580: (e, t, r) => {
-              (0, r(4879).s)(1)
+        var e, u, c, f, l = {
+            6100: (e, t, r) => {
+              (0, r(487).s)(1)
             },
-            4879: (e, t, r) => {
-              const n = r(2490).R;
+            487: (e, t, r) => {
+              const n = r(6175).R;
               t.s = function(e) {
                 if (e || (e = 1), !r.y.meta || !r.y.meta.url) throw console.error("__system_context__", r.y), Error("systemjs-webpack-interop was provided an unknown SystemJS context. Expected context.meta.url, but none was provided");
                 r.p = n(r.y.meta.url, e)
               }
             },
-            1308: (e, t, r) => {
-              r(3580)
+            9473: (e, t, r) => {
+              r(6100)
             },
-            2490: (e, t, r) => {
+            6175: (e, t, r) => {
               t.R = function(e, t) {
                 var r = document.createElement("a");
                 r.href = e;
                 for (var n = "/" === r.pathname[0] ? r.pathname : "/" + r.pathname, o = 0, a = n.length; o !== t && a >= 0;) "/" === n[--a] && o++;
                 if (o !== t) throw Error("systemjs-webpack-interop: rootDirectoryLevel (" + t + ") is greater than the number of directories (" + o + ") in the URL path " + e);
-                var s = n.slice(0, a + 1);
-                return r.protocol + "//" + r.host + s
+                var i = n.slice(0, a + 1);
+                return r.protocol + "//" + r.host + i
               };
               Number.isInteger
             },
             5041: (e, t, r) => {
               "use strict";
               var n = {
-                  "./bootstrap": () => r.e(39).then((() => () => r(5039))),
-                  "./index": () => r.e(986).then((() => () => r(7986))),
-                  "./tinaBlockTemplates": () => r.e(879).then((() => () => r(1879)))
+                  "./bootstrap": () => r.e(828).then((() => () => r(2828))),
+                  "./index": () => r.e(344).then((() => () => r(2344))),
+                  "./tinaBlockTemplates": () => r.e(296).then((() => () => r(7296)))
                 },
                 o = (e, t) => (r.R = t, t = r.o(n, e) ? n[e]() : Promise.resolve().then((() => {
                   throw new Error('Module "' + e + '" does not exist in container.')
@@ -111,11 +111,11 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
             },
             7559: e => {
               "use strict";
-              e.exports = s
+              e.exports = i
             },
             2369: e => {
               "use strict";
-              e.exports = i
+              e.exports = s
             }
           },
           d = {};
@@ -126,9 +126,9 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
           var r = d[e] = {
             exports: {}
           };
-          return f[e](r, r.exports, p), r.exports
+          return l[e](r, r.exports, p), r.exports
         }
-        return p.m = f, p.c = d, p.y = t, p.n = e => {
+        return p.m = l, p.c = d, p.y = t, p.n = e => {
           var t = e && e.__esModule ? () => e.default : () => e;
           return p.d(t, {
             a: t
@@ -139,35 +139,42 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
             get: t[r]
           })
         }, p.f = {}, p.e = e => Promise.all(Object.keys(p.f).reduce(((t, r) => (p.f[r](e, t), t)), [])), p.u = e => "js/" + {
-          39: "9370237fcffe0f6db9ec",
-          252: "c9b51df55d64f193500c",
-          690: "a1c114b0fa883b0ec372",
-          741: "46df2864524586c99309",
-          879: "b522c892944ce46f52bb",
-          986: "b9d53ec7f96dd755a6d8"
-        } [e] + ".js", p.miniCssF = e => "css/3f6a0d49dbecb7ccc503.css", p.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t), e = {}, u = "@rockstargames/modules-sc-ugc-spotlight:", p.l = (t, r, n, o) => {
+          95: "83dfdf342e14d0546535b35a21e07f10",
+          296: "27ac4c9f96c234d043f30c87a6ae9609",
+          344: "5b0b7b3a2ba0da04b96e83afb6d839dd",
+          358: "db28674e37b69a6e50ea7f8b12d899c4",
+          377: "aeeb1eb8870a4523e2fa4a9e69ee1362",
+          828: "bccbc19eb77054b367c804ada04b3d51"
+        } [e] + ".js", p.miniCssF = e => "css/1f64ec4b2b1c8bb7fd4ce79c3cb0493c.css", p.g = function() {
+          if ("object" == typeof globalThis) return globalThis;
+          try {
+            return this || new Function("return this")()
+          } catch (e) {
+            if ("object" == typeof window) return window
+          }
+        }(), p.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t), e = {}, u = "@rockstargames/modules-sc-ugc-spotlight:", p.l = (t, r, n, o) => {
           if (e[t]) e[t].push(r);
           else {
-            var a, s;
+            var a, i;
             if (void 0 !== n)
-              for (var i = document.getElementsByTagName("script"), c = 0; c < i.length; c++) {
-                var l = i[c];
-                if (l.getAttribute("src") == t || l.getAttribute("data-webpack") == u + n) {
-                  a = l;
+              for (var s = document.getElementsByTagName("script"), c = 0; c < s.length; c++) {
+                var f = s[c];
+                if (f.getAttribute("src") == t || f.getAttribute("data-webpack") == u + n) {
+                  a = f;
                   break
                 }
               }
-            a || (s = !0, (a = document.createElement("script")).charset = "utf-8", a.timeout = 120, p.nc && a.setAttribute("nonce", p.nc), a.setAttribute("data-webpack", u + n), a.src = t), e[t] = [r];
-            var f = (r, n) => {
+            a || (i = !0, (a = document.createElement("script")).charset = "utf-8", a.timeout = 120, p.nc && a.setAttribute("nonce", p.nc), a.setAttribute("data-webpack", u + n), a.src = t), e[t] = [r];
+            var l = (r, n) => {
                 a.onerror = a.onload = null, clearTimeout(d);
                 var o = e[t];
                 if (delete e[t], a.parentNode && a.parentNode.removeChild(a), o && o.forEach((e => e(n))), r) return r(n)
               },
-              d = setTimeout(f.bind(null, void 0, {
+              d = setTimeout(l.bind(null, void 0, {
                 type: "timeout",
                 target: a
               }), 12e4);
-            a.onerror = f.bind(null, a.onerror), a.onload = f.bind(null, a.onload), s && document.head.appendChild(a)
+            a.onerror = l.bind(null, a.onerror), a.onload = l.bind(null, a.onload), i && document.head.appendChild(a)
           }
         }, p.r = e => {
           "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
@@ -176,9 +183,9 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
             value: !0
           })
         }, c = {
-          741: [1458, 2324, 3657, 4859, 5269, 6711, 7842, 8976],
-          879: [3616]
-        }, l = {
+          296: [3616],
+          358: [1458, 2324, 3657, 4859, 5269, 6711, 7842, 8976]
+        }, f = {
           1458: ["default", "./providers", 4031],
           2324: ["default", "./helpers", 7559],
           3616: ["default", "./properties", 7559],
@@ -192,7 +199,7 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
           p.o(c, e) && c[e].forEach((e => {
             var r = p.R;
             r || (r = []);
-            var n = l[e];
+            var n = f[e];
             if (!(r.indexOf(n) >= 0)) {
               if (r.push(n), n.p) return t.push(n.p);
               var o = t => {
@@ -200,24 +207,24 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
                     throw t
                   }, n.p = 0
                 },
-                a = (e, r, a, s, i, u) => {
+                a = (e, r, a, i, s, u) => {
                   try {
                     var c = e(r, a);
-                    if (!c || !c.then) return i(c, s, u);
-                    var l = c.then((e => i(e, s)), o);
-                    if (!u) return l;
-                    t.push(n.p = l)
+                    if (!c || !c.then) return s(c, i, u);
+                    var f = c.then((e => s(e, i)), o);
+                    if (!u) return f;
+                    t.push(n.p = f)
                   } catch (e) {
                     o(e)
                   }
                 },
-                s = (e, t, o) => a(t.get, n[1], r, 0, i, o),
-                i = t => {
+                i = (e, t, o) => a(t.get, n[1], r, 0, s, o),
+                s = t => {
                   n.p = 1, p.m[e] = e => {
                     e.exports = t()
                   }
                 };
-              a(p, n[2], 0, 0, ((e, t, r) => e ? a(p.I, n[0], 0, e, s, r) : o()), 1)
+              a(p, n[2], 0, 0, ((e, t, r) => e ? a(p.I, n[0], 0, e, i, r) : o()), 1)
             }
           }))
         }, (() => {
@@ -231,8 +238,8 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
               if (n.push(o), e[r]) return e[r];
               p.o(p.S, r) || (p.S[r] = {});
               var a = p.S[r],
-                s = "@rockstargames/modules-sc-ugc-spotlight",
-                i = e => {
+                i = "@rockstargames/modules-sc-ugc-spotlight",
+                s = e => {
                   var t = e => {
                     return t = "Initialization of sharing external failed: " + e, void("undefined" != typeof console && console.warn && console.warn(t));
                     var t
@@ -242,8 +249,8 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
                     if (!o) return;
                     var a = e => e && e.init && e.init(p.S[r], n);
                     if (o.then) return u.push(o.then(a, t));
-                    var s = a(o);
-                    if (s && s.then) return u.push(s.catch(t))
+                    var i = a(o);
+                    if (i && i.then) return u.push(i.catch(t))
                   } catch (e) {
                     t(e)
                   }
@@ -251,16 +258,27 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
                 u = [];
               return "default" === r && (((e, t, r, n) => {
                 var o = a[e] = a[e] || {},
-                  i = o[t];
-                (!i || !i.loaded && (1 != !i.eager ? n : s > i.from)) && (o[t] = {
-                  get: () => p.e(252).then((() => () => p(8252))),
-                  from: s,
+                  s = o[t];
+                (!s || !s.loaded && (1 != !s.eager ? n : i > s.from)) && (o[t] = {
+                  get: () => p.e(377).then((() => () => p(5377))),
+                  from: i,
                   eager: !1
                 })
-              })("react", "18.2.0"), i(7559), i(5286), i(5081), i(4031), i(1861), i(2369)), u.length ? e[r] = Promise.all(u).then((() => e[r] = 1)) : e[r] = 1
+              })("react", "18.2.0"), s(7559), s(5286), s(5081), s(4031), s(1861), s(2369)), u.length ? e[r] = Promise.all(u).then((() => e[r] = 1)) : e[r] = 1
             }
           }
-        })(), p.p = "", (() => {
+        })(), (() => {
+          var e;
+          p.g.importScripts && (e = p.g.location + "");
+          var t = p.g.document;
+          if (!e && t && (t.currentScript && (e = t.currentScript.src), !e)) {
+            var r = t.getElementsByTagName("script");
+            if (r.length)
+              for (var n = r.length - 1; n > -1 && !e;) e = r[n--].src
+          }
+          if (!e) throw new Error("Automatic publicPath is not supported in this browser");
+          e = e.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/"), p.p = e
+        })(), (() => {
           var e = e => {
               var t = e => e.split(".").map((e => +e == e ? +e : e)),
                 r = /^([^-+]+)?(?:-([^+]+))?(?:\+(.+))?$/.exec(e),
@@ -273,32 +291,32 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
                 var o = r[0],
                   a = o < 0;
                 a && (o = -o - 1);
-                for (var s = 0, i = 1, u = !0;; i++, s++) {
-                  var c, l, f = i < r.length ? (typeof r[i])[0] : "";
-                  if (s >= n.length || "o" == (l = (typeof(c = n[s]))[0])) return !u || ("u" == f ? i > o && !a : "" == f != a);
-                  if ("u" == l) {
-                    if (!u || "u" != f) return !1
+                for (var i = 0, s = 1, u = !0;; s++, i++) {
+                  var c, f, l = s < r.length ? (typeof r[s])[0] : "";
+                  if (i >= n.length || "o" == (f = (typeof(c = n[i]))[0])) return !u || ("u" == l ? s > o && !a : "" == l != a);
+                  if ("u" == f) {
+                    if (!u || "u" != l) return !1
                   } else if (u)
-                    if (f == l)
-                      if (i <= o) {
-                        if (c != r[i]) return !1
+                    if (l == f)
+                      if (s <= o) {
+                        if (c != r[s]) return !1
                       } else {
-                        if (a ? c > r[i] : c < r[i]) return !1;
-                        c != r[i] && (u = !1)
+                        if (a ? c > r[s] : c < r[s]) return !1;
+                        c != r[s] && (u = !1)
                       }
-                  else if ("s" != f && "n" != f) {
-                    if (a || i <= o) return !1;
-                    u = !1, i--
+                  else if ("s" != l && "n" != l) {
+                    if (a || s <= o) return !1;
+                    u = !1, s--
                   } else {
-                    if (i <= o || l < f != a) return !1;
+                    if (s <= o || f < l != a) return !1;
                     u = !1
-                  } else "s" != f && "n" != f && (u = !1, i--)
+                  } else "s" != l && "n" != l && (u = !1, s--)
                 }
               }
               var d = [],
                 p = d.pop.bind(d);
-              for (s = 1; s < r.length; s++) {
-                var h = r[s];
+              for (i = 1; i < r.length; i++) {
+                var h = r[i];
                 d.push(1 == h ? p() | p() : 2 == h ? p() & p() : h ? t(h, n) : !p())
               }
               return !!p()
@@ -312,10 +330,10 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
                   var o = t[n],
                     a = (typeof o)[0];
                   if (n >= r.length) return "u" == a;
-                  var s = r[n],
-                    i = (typeof s)[0];
-                  if (a != i) return "o" == a && "n" == i || "s" == i || "u" == a;
-                  if ("o" != a && "u" != a && o != s) return o < s;
+                  var i = r[n],
+                    s = (typeof i)[0];
+                  if (a != s) return "o" == a && "n" == s || "s" == s || "u" == a;
+                  if ("o" != a && "u" != a && o != i) return o < i;
                   n++
                 }
               })(r, n) ? r : n), 0)) && a[n]
@@ -324,18 +342,18 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
               var a = p.I(t);
               return a && a.then ? a.then(e.bind(e, t, p.S[t], r, n, o)) : e(t, p.S[t], r, n, o)
             })(((e, t, n, o, a) => {
-              var s = t && p.o(t, n) && r(t, n, o);
-              return s ? (e => (e.loaded = 1, e.get()))(s) : a()
+              var i = t && p.o(t, n) && r(t, n, o);
+              return i ? (e => (e.loaded = 1, e.get()))(i) : a()
             })),
             o = {},
             a = {
-              4932: () => n("default", "react", [1, 18, 2, 0], (() => p.e(252).then((() => () => p(8252)))))
+              927: () => n("default", "react", [1, 18, 2, 0], (() => p.e(377).then((() => () => p(5377)))))
             },
-            s = {
-              741: [4932]
+            i = {
+              358: [927]
             };
           p.f.consumes = (e, t) => {
-            p.o(s, e) && s[e].forEach((e => {
+            p.o(i, e) && i[e].forEach((e => {
               if (p.o(o, e)) return t.push(o[e]);
               var r = t => {
                   o[e] = 0, p.m[e] = r => {
@@ -348,8 +366,8 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
                   }
                 };
               try {
-                var s = a[e]();
-                s.then ? t.push(o[e] = s.then(r).catch(n)) : r(s)
+                var i = a[e]();
+                i.then ? t.push(o[e] = i.then(r).catch(n)) : r(i)
               } catch (e) {
                 n(e)
               }
@@ -362,19 +380,19 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
             };
             p.f.miniCss = (t, r) => {
               e[t] ? r.push(e[t]) : 0 !== e[t] && {
-                741: 1
+                358: 1
               } [t] && r.push(e[t] = (e => new Promise(((t, r) => {
                 var n = p.miniCssF(e),
                   o = p.p + n;
                 if (((e, t) => {
                     for (var r = document.getElementsByTagName("link"), n = 0; n < r.length; n++) {
-                      var o = (s = r[n]).getAttribute("data-href") || s.getAttribute("href");
-                      if ("stylesheet" === s.rel && (o === e || o === t)) return s
+                      var o = (i = r[n]).getAttribute("data-href") || i.getAttribute("href");
+                      if ("stylesheet" === i.rel && (o === e || o === t)) return i
                     }
                     var a = document.getElementsByTagName("style");
                     for (n = 0; n < a.length; n++) {
-                      var s;
-                      if ((o = (s = a[n]).getAttribute("data-href")) === e || o === t) return s
+                      var i;
+                      if ((o = (i = a[n]).getAttribute("data-href")) === e || o === t) return i
                     }
                   })(n, o)) return t();
                 ((e, t, r, n, o) => {
@@ -382,10 +400,10 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
                   a.rel = "stylesheet", a.type = "text/css", a.onerror = a.onload = r => {
                     if (a.onerror = a.onload = null, "load" === r.type) n();
                     else {
-                      var s = r && ("load" === r.type ? "missing" : r.type),
-                        i = r && r.target && r.target.href || t,
-                        u = new Error("Loading CSS chunk " + e + " failed.\n(" + i + ")");
-                      u.code = "CSS_CHUNK_LOAD_FAILED", u.type = s, u.request = i, a.parentNode && a.parentNode.removeChild(a), o(u)
+                      var i = r && ("load" === r.type ? "missing" : r.type),
+                        s = r && r.target && r.target.href || t,
+                        u = new Error("Loading CSS chunk " + e + " failed.\n(" + s + ")");
+                      u.code = "CSS_CHUNK_LOAD_FAILED", u.type = i, u.request = s, a.parentNode && a.parentNode.removeChild(a), o(u)
                     }
                   }, a.href = t, document.head.appendChild(a)
                 })(e, o, 0, t, r)
@@ -408,30 +426,30 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
                 var o = new Promise(((r, o) => n = e[t] = [r, o]));
                 r.push(n[2] = o);
                 var a = p.p + p.u(t),
-                  s = new Error;
+                  i = new Error;
                 p.l(a, (r => {
                   if (p.o(e, t) && (0 !== (n = e[t]) && (e[t] = void 0), n)) {
                     var o = r && ("load" === r.type ? "missing" : r.type),
                       a = r && r.target && r.target.src;
-                    s.message = "Loading chunk " + t + " failed.\n(" + o + ": " + a + ")", s.name = "ChunkLoadError", s.type = o, s.request = a, n[1](s)
+                    i.message = "Loading chunk " + t + " failed.\n(" + o + ": " + a + ")", i.name = "ChunkLoadError", i.type = o, i.request = a, n[1](i)
                   }
                 }), "chunk-" + t, t)
               }
           };
           var t = (t, r) => {
               var n, o, a = r[0],
-                s = r[1],
-                i = r[2],
+                i = r[1],
+                s = r[2],
                 u = 0;
               if (a.some((t => 0 !== e[t]))) {
-                for (n in s) p.o(s, n) && (p.m[n] = s[n]);
-                i && i(p)
+                for (n in i) p.o(i, n) && (p.m[n] = i[n]);
+                s && s(p)
               }
               for (t && t(r); u < a.length; u++) o = a[u], p.o(e, o) && e[o] && e[o][0](), e[o] = 0
             },
             r = self.webpackChunk_rockstargames_modules_sc_ugc_spotlight = self.webpackChunk_rockstargames_modules_sc_ugc_spotlight || [];
           r.forEach(t.bind(null, 0)), r.push = t.bind(null, r.push.bind(r))
-        })(), p(1308), p(5041)
+        })(), p(9473), p(5041)
       })())
     }
   }

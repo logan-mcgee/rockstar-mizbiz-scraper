@@ -3,20 +3,20 @@ System.register([], (function(e, r) {
     execute: function() {
       e((() => {
         var e, t, n, o, a = {
-            580: (e, r, t) => {
-              (0, t(879).s)(1)
+            100: (e, r, t) => {
+              (0, t(487).s)(1)
             },
-            879: (e, r, t) => {
-              const n = t(490).R;
+            487: (e, r, t) => {
+              const n = t(175).R;
               r.s = function(e) {
                 if (e || (e = 1), !t.y.meta || !t.y.meta.url) throw console.error("__system_context__", t.y), Error("systemjs-webpack-interop was provided an unknown SystemJS context. Expected context.meta.url, but none was provided");
                 t.p = n(t.y.meta.url, e)
               }
             },
-            308: (e, r, t) => {
-              t(580)
+            473: (e, r, t) => {
+              t(100)
             },
-            490: (e, r, t) => {
+            175: (e, r, t) => {
               r.R = function(e, r) {
                 var t = document.createElement("a");
                 t.href = e;
@@ -30,7 +30,7 @@ System.register([], (function(e, r) {
             288: (e, r, t) => {
               "use strict";
               var n = {
-                  "./index": () => Promise.all([t.e(932), t.e(511)]).then((() => () => t(511)))
+                  "./index": () => Promise.all([t.e(927), t.e(188)]).then((() => () => t(188)))
                 },
                 o = (e, r) => (t.R = r, r = t.o(n, e) ? n[e]() : Promise.resolve().then((() => {
                   throw new Error('Module "' + e + '" does not exist in container.')
@@ -65,33 +65,40 @@ System.register([], (function(e, r) {
             get: r[t]
           })
         }, s.f = {}, s.e = e => Promise.all(Object.keys(s.f).reduce(((r, t) => (s.f[t](e, r), r)), [])), s.u = e => "js/" + {
-          252: "5808e4ad45197e227c30",
-          511: "373834459e50983d98f0",
-          528: "b0b69d4ddb7f599208d0",
-          932: "355d60d965f6072ddb0b"
-        } [e] + ".js", s.miniCssF = e => "css/5eb65ebdcbeb937817b9.css", s.o = (e, r) => Object.prototype.hasOwnProperty.call(e, r), e = {}, t = "@rockstargames/modules-core-screenshot-viewer:", s.l = (r, n, o, a) => {
+          73: "681a4f01700f959ff849502e1ac167bc",
+          188: "0e8c242ece6f684da5a545c418d5125c",
+          377: "f69617120d9d0e048421ad37ad12b14f",
+          927: "212aac02fbe327135747e7df18ca8370"
+        } [e] + ".js", s.miniCssF = e => "css/17664c695760dd3b24858767d6739963.css", s.g = function() {
+          if ("object" == typeof globalThis) return globalThis;
+          try {
+            return this || new Function("return this")()
+          } catch (e) {
+            if ("object" == typeof window) return window
+          }
+        }(), s.o = (e, r) => Object.prototype.hasOwnProperty.call(e, r), e = {}, t = "@rockstargames/modules-core-screenshot-viewer:", s.l = (r, n, o, a) => {
           if (e[r]) e[r].push(n);
           else {
             var i, u;
             if (void 0 !== o)
-              for (var l = document.getElementsByTagName("script"), d = 0; d < l.length; d++) {
-                var f = l[d];
-                if (f.getAttribute("src") == r || f.getAttribute("data-webpack") == t + o) {
-                  i = f;
+              for (var l = document.getElementsByTagName("script"), f = 0; f < l.length; f++) {
+                var c = l[f];
+                if (c.getAttribute("src") == r || c.getAttribute("data-webpack") == t + o) {
+                  i = c;
                   break
                 }
               }
             i || (u = !0, (i = document.createElement("script")).charset = "utf-8", i.timeout = 120, s.nc && i.setAttribute("nonce", s.nc), i.setAttribute("data-webpack", t + o), i.src = r), e[r] = [n];
-            var c = (t, n) => {
+            var d = (t, n) => {
                 i.onerror = i.onload = null, clearTimeout(h);
                 var o = e[r];
                 if (delete e[r], i.parentNode && i.parentNode.removeChild(i), o && o.forEach((e => e(n))), t) return t(n)
               },
-              h = setTimeout(c.bind(null, void 0, {
+              h = setTimeout(d.bind(null, void 0, {
                 type: "timeout",
                 target: i
               }), 12e4);
-            i.onerror = c.bind(null, i.onerror), i.onload = c.bind(null, i.onload), u && document.head.appendChild(i)
+            i.onerror = d.bind(null, i.onerror), i.onload = d.bind(null, i.onload), u && document.head.appendChild(i)
           }
         }, s.r = e => {
           "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
@@ -115,9 +122,9 @@ System.register([], (function(e, r) {
                   try {
                     var l = e(t, o);
                     if (!l || !l.then) return s(l, i, u);
-                    var d = l.then((e => s(e, i)), a);
-                    if (!u) return d;
-                    r.push(n.p = d)
+                    var f = l.then((e => s(e, i)), a);
+                    if (!u) return f;
+                    r.push(n.p = f)
                   } catch (e) {
                     a(e)
                   }
@@ -153,10 +160,21 @@ System.register([], (function(e, r) {
                   })
                 },
                 l = [];
-              return "default" === t && (u("react-router-dom", "6.11.2", (() => Promise.all([s.e(528), s.e(932)]).then((() => () => s(528))))), u("react", "18.2.0", (() => s.e(252).then((() => () => s(252)))))), e[t] = l.length ? Promise.all(l).then((() => e[t] = 1)) : 1
+              return "default" === t && (u("react-router-dom", "6.17.0", (() => Promise.all([s.e(73), s.e(927)]).then((() => () => s(73))))), u("react", "18.2.0", (() => s.e(377).then((() => () => s(377)))))), e[t] = l.length ? Promise.all(l).then((() => e[t] = 1)) : 1
             }
           }
-        })(), s.p = "", (() => {
+        })(), (() => {
+          var e;
+          s.g.importScripts && (e = s.g.location + "");
+          var r = s.g.document;
+          if (!e && r && (r.currentScript && (e = r.currentScript.src), !e)) {
+            var t = r.getElementsByTagName("script");
+            if (t.length)
+              for (var n = t.length - 1; n > -1 && !e;) e = t[n--].src
+          }
+          if (!e) throw new Error("Automatic publicPath is not supported in this browser");
+          e = e.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/"), s.p = e
+        })(), (() => {
           var e = e => {
               var r = e => e.split(".").map((e => +e == e ? +e : e)),
                 t = /^([^-+]+)?(?:-([^+]+))?(?:\+(.+))?$/.exec(e),
@@ -170,32 +188,32 @@ System.register([], (function(e, r) {
                   a = o < 0;
                 a && (o = -o - 1);
                 for (var i = 0, s = 1, u = !0;; s++, i++) {
-                  var l, d, f = s < t.length ? (typeof t[s])[0] : "";
-                  if (i >= n.length || "o" == (d = (typeof(l = n[i]))[0])) return !u || ("u" == f ? s > o && !a : "" == f != a);
-                  if ("u" == d) {
-                    if (!u || "u" != f) return !1
+                  var l, f, c = s < t.length ? (typeof t[s])[0] : "";
+                  if (i >= n.length || "o" == (f = (typeof(l = n[i]))[0])) return !u || ("u" == c ? s > o && !a : "" == c != a);
+                  if ("u" == f) {
+                    if (!u || "u" != c) return !1
                   } else if (u)
-                    if (f == d)
+                    if (c == f)
                       if (s <= o) {
                         if (l != t[s]) return !1
                       } else {
                         if (a ? l > t[s] : l < t[s]) return !1;
                         l != t[s] && (u = !1)
                       }
-                  else if ("s" != f && "n" != f) {
+                  else if ("s" != c && "n" != c) {
                     if (a || s <= o) return !1;
                     u = !1, s--
                   } else {
-                    if (s <= o || d < f != a) return !1;
+                    if (s <= o || f < c != a) return !1;
                     u = !1
-                  } else "s" != f && "n" != f && (u = !1, s--)
+                  } else "s" != c && "n" != c && (u = !1, s--)
                 }
               }
-              var c = [],
-                h = c.pop.bind(c);
+              var d = [],
+                h = d.pop.bind(d);
               for (i = 1; i < t.length; i++) {
                 var p = t[i];
-                c.push(1 == p ? h() | h() : 2 == p ? h() & h() : p ? r(p, n) : !h())
+                d.push(1 == p ? h() | h() : 2 == p ? h() & h() : p ? r(p, n) : !h())
               }
               return !!h()
             },
@@ -225,12 +243,12 @@ System.register([], (function(e, r) {
             })),
             o = {},
             a = {
-              932: () => n("default", "react", [1, 18, 2, 0], (() => s.e(252).then((() => () => s(252))))),
-              455: () => n("default", "react-router-dom", [1, 6, 11, 2], (() => s.e(528).then((() => () => s(528)))))
+              927: () => n("default", "react", [1, 18, 2, 0], (() => s.e(377).then((() => () => s(377))))),
+              583: () => n("default", "react-router-dom", [1, 6, 11, 2], (() => s.e(73).then((() => () => s(73)))))
             },
             i = {
-              511: [455],
-              932: [932]
+              188: [583],
+              927: [927]
             };
           s.f.consumes = (e, r) => {
             s.o(i, e) && i[e].forEach((e => {
@@ -260,7 +278,7 @@ System.register([], (function(e, r) {
             };
             s.f.miniCss = (r, t) => {
               e[r] ? t.push(e[r]) : 0 !== e[r] && {
-                511: 1
+                188: 1
               } [r] && t.push(e[r] = (e => new Promise(((r, t) => {
                 var n = s.miniCssF(e),
                   o = s.p + n;
@@ -302,7 +320,7 @@ System.register([], (function(e, r) {
             var n = s.o(e, r) ? e[r] : void 0;
             if (0 !== n)
               if (n) t.push(n[2]);
-              else if (932 != r) {
+              else if (927 != r) {
               var o = new Promise(((t, o) => n = e[r] = [t, o]));
               t.push(n[2] = o);
               var a = s.p + s.u(r),
@@ -329,7 +347,7 @@ System.register([], (function(e, r) {
             },
             t = self.webpackChunk_rockstargames_modules_core_screenshot_viewer = self.webpackChunk_rockstargames_modules_core_screenshot_viewer || [];
           t.forEach(r.bind(null, 0)), t.push = r.bind(null, t.push.bind(t))
-        })(), s(308), s(288)
+        })(), s(473), s(288)
       })())
     }
   }
