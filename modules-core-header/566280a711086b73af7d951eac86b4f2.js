@@ -317,7 +317,7 @@
     2376: (e, a, t) => {
       "use strict";
       t.d(a, {
-        Z: () => Mr
+        Z: () => wr
       });
       var n = {};
       t.r(n), t.d(n, {
@@ -370,53 +370,53 @@
       });
       var s = {};
       t.r(s), t.d(s, {
-        beaterator: () => cs,
-        bully: () => ds,
-        careers: () => ls,
-        gta: () => gs,
-        gta2: () => ms,
-        gta3: () => vs,
-        gta4: () => us,
-        gta5: () => ps,
-        gtaadvance: () => fs,
-        gtactw: () => hs,
-        gtaiveflc: () => ks,
-        gtalcs: () => bs,
-        gtalondon: () => ws,
-        gtaonline: () => ys,
-        gtaplus: () => xs,
-        gtasanandreas: () => Ms,
-        gtatrilogy: () => Ss,
-        gtav: () => ps,
-        gtavc: () => Ns,
-        gtavcs: () => Cs,
-        lanoire: () => js,
-        manhunt: () => Ts,
-        manhunt2: () => zs,
-        manhunt3: () => Is,
-        maxpayne: () => Ls,
-        maxpayne2: () => As,
-        maxpayne3: () => Es,
-        midnightclub2: () => Ps,
-        midnightclub3dub: () => Ds,
-        midnightclubla: () => Vs,
-        midnightclubstreetracing: () => Os,
-        oni: () => Gs,
-        reddeadonline: () => Bs,
-        reddeadredemption: () => Rs,
-        reddeadredemption2: () => Fs,
-        reddeadredemptionundeadnightmare: () => $s,
-        reddeadrevolver: () => qs,
-        rockstar: () => Us,
-        smugglersrun: () => Hs,
-        smugglersrun2hostileterritory: () => Ws,
-        smugglersrunwarzones: () => Js,
-        stateofemergency: () => Zs,
-        tabletennis: () => Xs,
-        theitalianjob: () => Ks,
-        thewarriors: () => Qs,
-        thrashersad: () => Ys,
-        wildmetal: () => er
+        beaterator: () => is,
+        bully: () => _s,
+        careers: () => os,
+        gta: () => cs,
+        gta2: () => ls,
+        gta3: () => ds,
+        gta4: () => gs,
+        gta5: () => ms,
+        gtaadvance: () => vs,
+        gtactw: () => us,
+        gtaiveflc: () => ps,
+        gtalcs: () => fs,
+        gtalondon: () => hs,
+        gtaonline: () => ks,
+        gtaplus: () => bs,
+        gtasanandreas: () => ws,
+        gtatrilogy: () => ys,
+        gtav: () => ms,
+        gtavc: () => xs,
+        gtavcs: () => Ms,
+        lanoire: () => Ss,
+        manhunt: () => Ns,
+        manhunt2: () => Cs,
+        manhunt3: () => js,
+        maxpayne: () => Ts,
+        maxpayne2: () => zs,
+        maxpayne3: () => Is,
+        midnightclub2: () => Ls,
+        midnightclub3dub: () => As,
+        midnightclubla: () => Es,
+        midnightclubstreetracing: () => Ps,
+        oni: () => Ds,
+        reddeadonline: () => Vs,
+        reddeadredemption: () => Os,
+        reddeadredemption2: () => Gs,
+        reddeadredemptionundeadnightmare: () => Bs,
+        reddeadrevolver: () => Rs,
+        rockstar: () => Fs,
+        smugglersrun: () => $s,
+        smugglersrun2hostileterritory: () => qs,
+        smugglersrunwarzones: () => Us,
+        stateofemergency: () => Hs,
+        tabletennis: () => Ws,
+        theitalianjob: () => Js,
+        thewarriors: () => Zs,
+        thrashersad: () => Xs,
+        wildmetal: () => Ks
       });
       var r = t(3645),
         i = t(9089),
@@ -4457,41 +4457,26 @@
             children: a
           })
         },
-        Oa = () => (0, _.useContext)(Pa),
-        Ga = e => {
-          if (!e) return null;
-          const {
-            hostname: a,
-            pathname: t
-          } = new URL(e, (0, b.kX)(!0));
-          return "/" === t ? null : (a.endsWith("akamaized.net"), e)
-        },
-        Ba = () => {
-          const {
-            meta: e = {}
-          } = Oa() ?? {}, a = (0, _.useMemo)((() => e?.cdn ?? e?.prod ?? !1), [e]);
-          return (0, _.useCallback)((e => e ? e?.startsWith("http") ? Ga(e) : Ga(`${(0,b.kX)(a)}${e}`) : null), [a])
-        },
-        Ra = (0, _.createContext)(),
+        Oa = (0, _.createContext)(),
         {
-          Provider: Fa
-        } = Ra,
-        $a = e => {
+          Provider: Ga
+        } = Oa,
+        Ba = e => {
           let {
             children: a,
             components: t
           } = e;
-          return (0, l.jsx)(Fa, {
+          return (0, l.jsx)(Ga, {
             value: t,
             children: a
           })
         };
-      var qa = t(4947),
-        Ua = t.n(qa);
+      var Ra = t(4947),
+        Fa = t.n(Ra);
       t(5821), t(4675), t(3520);
-      const Ha = "content";
-      var Wa = t(8061);
-      const Ja = e => {
+      const $a = "content";
+      var qa = t(8061);
+      const Ua = e => {
           let {
             components: a,
             payload: t,
@@ -4507,14 +4492,14 @@
             } = e;
             const s = e => {
               let r = "";
-              if (r = Array.isArray(e?.[Ha]) ? e[Ha].map((e => s(e))) : e?.[Ha] ?? "", !e?._template) return r;
+              if (r = Array.isArray(e?.[$a]) ? e[$a].map((e => s(e))) : e?.[$a] ?? "", !e?._template) return r;
               let i = he().get(a, e?._template) ?? null;
               "0" === e?._template && (console.warn(`The _template "${e?._template}" wasn't found in the available components. The _template "${e?._template}" was replaced with "gen9.Hero".`, {
                 availableComponents: Object.keys(a),
                 payload: e
               }), i = he().get(a, "gen9.Hero") ?? null);
               const o = [...e?.translations ?? []].reverse(),
-                c = `componentProps_${(0,Wa.Z)()}`;
+                c = `componentProps_${(0,qa.Z)()}`;
               return (0, _.createElement)(i, {
                 ...t?.meta,
                 ...e,
@@ -4523,7 +4508,7 @@
                 key: c
               }, r)
             };
-            return t?.[Ha]?.length ? s(t) : null
+            return t?.[$a]?.length ? s(t) : null
           })({
             components: a,
             payload: t,
@@ -4531,13 +4516,13 @@
           }))), [JSON.stringify(t), JSON.stringify(a)]);
           return s
         },
-        Za = e => {
+        Ha = e => {
           let {
             tina: a,
             components: t = {},
             componentProps: n = {}
           } = e;
-          const s = Oa(),
+          const s = (0, _.useContext)(Pa),
             [r, i] = (0, _.useState)(null),
             [o, c] = (0, _.useState)(null);
           (0, _.useEffect)((() => {
@@ -4545,7 +4530,7 @@
           }), [a]);
           const [d] = (0, _.useState)({
             ...t,
-            ...(0, _.useContext)(Ra) ?? {}
+            ...(0, _.useContext)(Oa) ?? {}
           }), g = (e => {
             let {
               payload: a
@@ -4607,7 +4592,7 @@
                   if (!a || !he().has(a, "key") || a.translated) return;
                   const s = t[a.key] ?? null;
                   if (!s) return;
-                  const r = Ua()(s);
+                  const r = Fa()(s);
                   Object.keys(r).map((e => {
                     he().set(a, e, r[e])
                   })), he().set(a, "translated", !0), Object.freeze(a)
@@ -4634,9 +4619,9 @@
               };
             return (0, l.jsx)(Va, {
               payload: i,
-              children: (0, l.jsx)($a, {
+              children: (0, l.jsx)(Ba, {
                 components: d,
-                children: (0, l.jsx)(Ja, {
+                children: (0, l.jsx)(Ua, {
                   payload: e,
                   components: d,
                   componentProps: {
@@ -4648,9 +4633,9 @@
             })
           }), [s, r, JSON.stringify(g), JSON.stringify(m)])
         };
-      var Xa = t(2965);
-      const Ka = (0, t(2).Hu)(),
-        Qa = e => {
+      var Wa = t(2965);
+      const Ja = (0, t(2).Hu)(),
+        Za = e => {
           let {
             condition: a = null,
             children: t
@@ -4671,7 +4656,7 @@
             return (0, _.useEffect)((() => {
               n(null);
               const s = "true" === a.get("conditionPreview");
-              if (!(!e?.length > 0)) return Ka.applyFilters("preview_conditions", e), e.forEach((e => {
+              if (!(!e?.length > 0)) return Ja.applyFilters("preview_conditions", e), e.forEach((e => {
                 const {
                   value: i
                 } = e;
@@ -4705,13 +4690,13 @@
         let {
           children: a
         } = e;
-        return _.Children.map(_.Children.toArray(a), (e => (0, l.jsx)(Qa, {
+        return _.Children.map(_.Children.toArray(a), (e => (0, l.jsx)(Za, {
           ...e?.props
         })))
       }));
-      var Ya = t(6809),
-        et = t(3483);
-      const at = e => {
+      var Xa = t(6809),
+        Ka = t(3483);
+      const Qa = e => {
           let {
             className: a
           } = e;
@@ -4737,7 +4722,7 @@
             })]
           })
         },
-        tt = {
+        Ya = {
           calloutContainer: "rockstargames-modules-core-headerb0a754f750081425a38defaa39b7506c",
           calloutSection: "rockstargames-modules-core-headerea4e5718129b5e8b6cffbe0f8697c797",
           calloutHeaders: "rockstargames-modules-core-headerdebc6790ede2093ac31e9c2afb4b1cdf",
@@ -4755,7 +4740,7 @@
           actionBlock: "rockstargames-modules-core-headercf17898f2f47656cb7494a29c90dafd2",
           actionFooter: "rockstargames-modules-core-headerf9a6d7fd5eb72043ad7e89178325f09c"
         },
-        nt = e => {
+        et = e => {
           let {
             foreign_id: a,
             foreign_type: t
@@ -4764,9 +4749,9 @@
             track: n
           } = te(), {
             refetch: s
-          } = (0, k.aM)(et.UserGetVote, {
+          } = (0, k.aM)(Ka.UserGetVote, {
             skip: !0
-          }), [r] = (0, k.Db)(et.UserCastVote), [i, o] = (0, _.useState)(null), c = (0, _.useCallback)((e => {
+          }), [r] = (0, k.Db)(Ka.UserCastVote), [i, o] = (0, _.useState)(null), c = (0, _.useCallback)((e => {
             (async () => {
               if (e === i && null !== i) o(null);
               else {
@@ -4796,23 +4781,23 @@
               o(e?.data?.userGetVote?.vote ?? null)
             })()
           }), [a, t]), (0, l.jsxs)("div", {
-            className: tt.calloutVoteForm,
+            className: Ya.calloutVoteForm,
             children: [(0, l.jsx)("button", {
               "aria-label": "upvote",
-              className: [tt.upvote, tt.voteButton, i ? tt.active : ""].join(" "),
+              className: [Ya.upvote, Ya.voteButton, i ? Ya.active : ""].join(" "),
               name: "upvote",
               onClick: () => c(!0),
               type: "button"
             }), (0, l.jsx)("button", {
               "aria-label": "downvote",
-              className: [tt.downvote, tt.voteButton, !1 === i ? tt.active : ""].join(" "),
+              className: [Ya.downvote, Ya.voteButton, !1 === i ? Ya.active : ""].join(" "),
               name: "downvote",
               onClick: () => c(!1),
               type: "button"
             })]
           })
         },
-        st = e => {
+        at = e => {
           let {
             action_text: a,
             link: t,
@@ -4826,18 +4811,18 @@
             target: "_blank",
             rel: "noopener noreferrer",
             children: (0, l.jsxs)("button", {
-              className: tt.calloutLink,
+              className: Ya.calloutLink,
               type: "button",
               onClick: n ? () => s({
                 ...n
               }) : () => {},
-              children: [a, (0, l.jsx)(at, {
-                className: tt.calloutLinkIcon
+              children: [a, (0, l.jsx)(Qa, {
+                className: Ya.calloutLinkIcon
               })]
             })
           })
         },
-        rt = e => {
+        tt = e => {
           let {
             helperText: a,
             linkText: t,
@@ -4848,7 +4833,7 @@
             track: r
           } = te();
           return (0, l.jsxs)("div", {
-            className: tt.actionFooter,
+            className: Ya.actionFooter,
             children: [a, t && " ", t && (0, l.jsx)("a", {
               href: n ?? "",
               onClick: () => r({
@@ -4882,7 +4867,7 @@
         } = te(), k = `${document.location.origin}/auth/sc-auth-login?returnUrl=${window.location.pathname}`, {
           ref: b,
           inView: w
-        } = (0, Ya.YD)({
+        } = (0, Xa.YD)({
           threshold: .6
         }), [y, x] = (0, _.useState)(!1);
         let M;
@@ -4900,7 +4885,7 @@
             if (!f) {
               M = (0, l.jsx)(Aa, {
                 to: k,
-                className: tt.calloutButton,
+                className: Ya.calloutButton,
                 onClick: v ? () => h({
                   ...v
                 }) : () => {},
@@ -4908,7 +4893,7 @@
               });
               break
             }
-            M = (0, l.jsx)(nt, {
+            M = (0, l.jsx)(et, {
               foreign_id: i,
               foreign_type: o
             });
@@ -4916,7 +4901,7 @@
           case "button":
             s && r && (M = (0, l.jsx)(Aa, {
               to: r,
-              className: tt.calloutButton,
+              className: Ya.calloutButton,
               onClick: v ? () => h({
                 ...v
               }) : () => {},
@@ -4924,7 +4909,7 @@
             }));
             break;
           case "link":
-            s && r && (M = (0, l.jsx)(st, {
+            s && r && (M = (0, l.jsx)(at, {
               action_text: s,
               link: r,
               trackingData: v
@@ -4934,22 +4919,22 @@
             M = null
         }
         return (0, l.jsx)("div", {
-          className: `${tt.calloutContainer} ${c||""}`,
+          className: `${Ya.calloutContainer} ${c||""}`,
           ref: b,
           children: (0, l.jsxs)("div", {
-            className: tt.calloutSection,
+            className: Ya.calloutSection,
             children: [(0, l.jsxs)("div", {
-              className: [tt.calloutHeaders, M ? tt.calloutHeaderMargins : ""].join(" "),
+              className: [Ya.calloutHeaders, M ? Ya.calloutHeaderMargins : ""].join(" "),
               children: [a && (0, l.jsx)("h1", {
-                className: tt.calloutHeader,
+                className: Ya.calloutHeader,
                 children: p(a)
               }), t && (0, l.jsx)("h2", {
-                className: tt.calloutSubheader,
+                className: Ya.calloutSubheader,
                 children: p(t)
               })]
             }), (0, l.jsxs)("div", {
-              className: tt.actionBlock,
-              children: [M, d && (0, l.jsx)(rt, {
+              className: Ya.actionBlock,
+              children: [M, d && (0, l.jsx)(tt, {
                 helperText: d,
                 linkText: g,
                 link: m,
@@ -4959,17 +4944,17 @@
           })
         })
       })), t(2187);
-      var it = t(9885),
-        ot = t.n(it);
+      var nt = t(9885),
+        st = t.n(nt);
       const {
-        sanitize: _t
-      } = ot();
+        sanitize: rt
+      } = st();
       t(8507);
-      const ct = {
+      const it = {
           img: "rockstargames-modules-core-headerbf430847a4fc75f43c281b702cb67775",
           startAnimation: "rockstargames-modules-core-headerf937aa11d861c7446258df7cfd669940"
         },
-        lt = e => {
+        ot = e => {
           let {
             imgSrc: a,
             titleSlug: t
@@ -4978,13 +4963,13 @@
           return (0, l.jsx)("div", {
             role: "img",
             "aria-label": t,
-            className: [ct.img, n ? ct.startAnimation : ""].join(" "),
+            className: [it.img, n ? it.startAnimation : ""].join(" "),
             style: {
               backgroundImage: `url(${a})`
             }
           })
         },
-        dt = e => {
+        _t = e => {
           let {
             game: a,
             to: t
@@ -5006,14 +4991,14 @@
             to: o,
             target: "_self",
             className: "rockstargames-modules-core-headerab00cee9c6ebfc9dde968ca69f3f8b52",
-            children: (0, l.jsx)(lt, {
+            children: (0, l.jsx)(ot, {
               imgSrc: n,
               titleSlug: r
             })
           })
         };
-      var gt = t(3118);
-      class mt extends _.Component {
+      var ct = t(3118);
+      class lt extends _.Component {
         constructor(e) {
           super(e), this.state = {
             header: e.header ?? null
@@ -5037,10 +5022,10 @@
           }) : this.props.children
         }
       }
-      const vt = function(e) {
+      const dt = function(e) {
           let a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
           return function(t) {
-            return (0, l.jsx)(mt, {
+            return (0, l.jsx)(lt, {
               header: a,
               children: (0, l.jsx)(e, {
                 ...t
@@ -5048,7 +5033,7 @@
             })
           }
         },
-        ut = e => {
+        gt = e => {
           let {
             prevRef: a,
             nextRef: t,
@@ -5076,7 +5061,7 @@
             })]
           })
         },
-        pt = (vt((e => {
+        mt = (dt((e => {
           let {
             description: a,
             slideChildren: t,
@@ -5096,7 +5081,7 @@
           } = te(), p = (0, _.useRef)(null), f = (0, _.useRef)(null), h = (0, _.useRef)(null), [k, b] = (0, _.useState)(null), [w, y] = (0, _.useState)(!1), [x, M] = (0, _.useState)(null), [S, N] = (0, _.useState)({}), [C, j] = (0, _.useState)(), {
             ref: T,
             inView: z
-          } = (0, Ya.YD)({
+          } = (0, Xa.YD)({
             threshold: .6
           }), [I, L] = (0, _.useState)(!1), [A, E] = (0, _.useState)(null), [P, D] = (0, _.useState)(!1);
           (0, _.useEffect)((() => {
@@ -5139,7 +5124,7 @@
             t.forEach((a => {
               "cover-card" === a?.props?.tina?.payload?.meta?.type && (e = !0, E(a))
             })), L(e);
-            const a = t.map(((e, a) => "cover-card" === e?.props?.tina?.payload?.meta?.type && P ? null : (0, l.jsx)(Xa.o5, {
+            const a = t.map(((e, a) => "cover-card" === e?.props?.tina?.payload?.meta?.type && P ? null : (0, l.jsx)(Wa.o5, {
               children: e
             }, Symbol(a).toString())));
             b(a)
@@ -5194,7 +5179,7 @@
                       className: "rockstargames-modules-core-headerb73f00c53394c6282e0d22da20410913",
                       children: v
                     })]
-                  }), (0, l.jsx)(ut, {
+                  }), (0, l.jsx)(gt, {
                     prevRef: f,
                     nextRef: h,
                     onNextClicked: () => {},
@@ -5207,14 +5192,14 @@
                   }
                 })]
               })
-            }), x ? (0, l.jsx)(Xa.tq, {
+            }), x ? (0, l.jsx)(Wa.tq, {
               slidesPerView: x,
               onInit: e => {
                 N(e)
               },
               grabCursor: !0,
               navigation: C,
-              modules: [gt.W_],
+              modules: [ct.W_],
               breakpoints: V,
               slideClass: Ea("swiper-slide", o),
               onSlideNextTransitionEnd: () => {
@@ -5254,9 +5239,9 @@
           selectBox: "rockstargames-modules-core-headerfa5d93789da028ad988798450fe34680",
           selectBoxOption: "rockstargames-modules-core-headerfcc44b6cd14ec9c4f152d4318ce36bac"
         }),
-        ft = "Select a Language";
-      let ht;
-      ht = e => {
+        vt = "Select a Language";
+      let ut;
+      ut = e => {
         let {
           theme: a,
           languageSelectorOpened: t,
@@ -5288,30 +5273,30 @@
         }), [t]), (0, _.useEffect)((() => {
           w.current && x(w.current.scrollHeight)
         }), [w]), (0, l.jsxs)("div", {
-          className: [pt.languageSelector, v ? pt.open : ""].join(" "),
+          className: [mt.languageSelector, v ? mt.open : ""].join(" "),
           "data-theme": a,
           children: [(0, l.jsxs)(l.Fragment, {
             children: [M && "sc-menu" === a && (0, l.jsx)("div", {
-              className: pt.selectBoxWrapper,
+              className: mt.selectBoxWrapper,
               children: (0, l.jsxs)("select", {
-                className: pt.selectBox,
+                className: mt.selectBox,
                 onClick: e => e.stopPropagation(),
                 onChange: e => {
                   S(e.currentTarget.value)
                 },
                 children: [(0, l.jsx)("option", {
-                  className: pt.selectBoxOption,
+                  className: mt.selectBoxOption,
                   value: "none",
                   children: s ? (0, l.jsx)(i.Z, {
                     ...s
-                  }) : ft
+                  }) : vt
                 }), m.map((e => {
                   let {
                     label: a,
                     subdomaincom: t
                   } = e;
                   return (0, l.jsx)("option", {
-                    className: pt.selectBoxOption,
+                    className: mt.selectBoxOption,
                     value: t,
                     children: a
                   }, `mobile-${t}`)
@@ -5323,20 +5308,20 @@
                   e.stopPropagation(), n && n(!v), p(!v)
                 },
                 type: "button",
-                "aria-label": s ? c.formatMessage(s) : ft,
+                "aria-label": s ? c.formatMessage(s) : vt,
                 children: [(0, l.jsx)("i", {}), (0, l.jsx)("span", {
                   children: s ? (0, l.jsx)(i.Z, {
                     ...s
-                  }) : ft
+                  }) : vt
                 })]
               }), (0, l.jsx)("div", {
-                className: pt.linkWrapper,
+                className: mt.linkWrapper,
                 ref: w,
                 style: {
                   "--ls-linkWrapper-opened-height": `${y}px`
                 },
                 children: (0, l.jsx)("div", {
-                  className: pt.links,
+                  className: mt.links,
                   children: m.map((e => {
                     let {
                       subdomaincom: a,
@@ -5356,11 +5341,11 @@
           }), !1]
         })
       };
-      const kt = ht,
-        bt = {
+      const pt = ut,
+        ft = {
           tag: "rockstargames-modules-core-headerf5978929e516a7f156d3d81ca93d966a"
         },
-        wt = e => {
+        ht = e => {
           let {
             className: a,
             href: t,
@@ -5369,7 +5354,7 @@
           } = e;
           const r = (0, l.jsxs)("div", {
             style: s,
-            className: [bt.tag, a].join(" "),
+            className: [ft.tag, a].join(" "),
             children: [(0, l.jsx)("i", {}), n]
           });
           return void 0 !== t ? (0, l.jsx)(Ta, {
@@ -5377,7 +5362,7 @@
             children: r
           }) : r
         },
-        yt = {
+        kt = {
           newswireBlock: "rockstargames-modules-core-headerba2782b4444a519a060ddc4727f3fd79",
           info: "rockstargames-modules-core-headerb760fbda945b1aababe2df978bd27419",
           title: "rockstargames-modules-core-headerf23284941e0f8ffc13c9e4d77d2b7251",
@@ -5387,7 +5372,7 @@
           top: "rockstargames-modules-core-headera364218e924ffd9f280ad0b05495683b",
           startAnimation: "rockstargames-modules-core-headerc68720aaf32901f2a1946f596fd1f0a3"
         },
-        xt = e => {
+        bt = e => {
           let {
             index: a,
             post: t,
@@ -5410,31 +5395,31 @@
             "data-gtm-action": "Article Block Click",
             "data-gtm-label": `${t.title}`,
             to: t.url,
-            className: [yt.newswireBlock, n ? yt.newswireBlockNoSpecialOrder : "", null !== _ ? yt.startAnimation : ""].join(" "),
+            className: [kt.newswireBlock, n ? kt.newswireBlockNoSpecialOrder : "", null !== _ ? kt.startAnimation : ""].join(" "),
             children: (0, l.jsxs)(l.Fragment, {
               children: [0 !== a || r.get("tag_id") ? (0, l.jsx)("div", {
-                className: yt.preview,
+                className: kt.preview,
                 style: m.default
               }) : (0, l.jsxs)(l.Fragment, {
                 children: [(0, l.jsx)("div", {
-                  className: yt.previewMobile,
+                  className: kt.previewMobile,
                   style: m.mobile
                 }), (0, l.jsx)("div", {
-                  className: yt.preview,
+                  className: kt.preview,
                   style: m.default
                 })]
               }), (0, l.jsxs)("div", {
-                className: yt.info,
+                className: kt.info,
                 children: [(0, l.jsxs)("div", {
-                  className: yt.top,
-                  children: [t.primary_tags.length ? (0, l.jsx)(wt, {
+                  className: kt.top,
+                  children: [t.primary_tags.length ? (0, l.jsx)(ht, {
                     title: t.primary_tags[t.primary_tags.length > 1 && 722 === t.primary_tags[0].id ? 1 : 0].name
                   }) : "", (0, l.jsx)("time", {
                     dateTime: t.created,
                     children: t.created_formatted
                   })]
                 }), (0, l.jsx)("h5", {
-                  className: yt.title,
+                  className: kt.title,
                   dangerouslySetInnerHTML: {
                     __html: t.title
                   }
@@ -5443,8 +5428,8 @@
             })
           })
         };
-      var Mt = t(8300),
-        St = t.n(Mt);
+      var wt = t(8300),
+        yt = t.n(wt);
       (0, b.zv)((e => {
         let {
           relativeTo: a = "",
@@ -5456,7 +5441,7 @@
           tagId: i = null
         } = (0, Q.useParams)(), [o, c] = (0, _.useState)(i ?? t ?? r.get("tag_id")), [d, g] = (0, _.useState)(1), [m, v] = (0, _.useState)([]), [u, p] = (0, _.useState)(null), {
           data: f
-        } = (0, k.aM)(St(), {
+        } = (0, k.aM)(yt(), {
           variables: {
             tagId: Number(o),
             page: d,
@@ -5469,7 +5454,7 @@
         }), [r.get("tag_id")]), (0, _.useEffect)((() => {
           f && f.posts && f.posts.paging && p(f.posts.paging), f && f.posts && f.posts.results && v(m.concat(f.posts.results))
         }), [f]), m.length ? (0, l.jsxs)(l.Fragment, {
-          children: [(0, l.jsx)(jt, {
+          children: [(0, l.jsx)(St, {
             posts: m,
             relativeTo: a,
             noSpecialOrder: null !== o
@@ -5481,23 +5466,23 @@
           }) : ""]
         }) : null
       }));
-      const Nt = {
+      const xt = {
           related: "rockstargames-modules-core-headerdf69a7aae85a9ec8b5ebd0a64496fb0e",
           posts: "rockstargames-modules-core-headera18a73cb511122aa4c3de9ffcb8363b2",
           just1post: "rockstargames-modules-core-headerf2c39530c1bf7492516d298384b1a3d2"
         },
-        Ct = ((0, b.zv)((e => {
+        Mt = ((0, b.zv)((e => {
           let {
             posts: a,
             t
           } = e;
           return (0, l.jsxs)("section", {
-            className: Nt.related,
+            className: xt.related,
             children: [(0, l.jsx)("h2", {
               children: t("Related Stories")
             }), (0, l.jsx)("div", {
-              className: [Nt.posts, 1 === a.length ? Nt.just1post : ""].join(" "),
-              children: a.map((e => (0, l.jsx)(xt, {
+              className: [xt.posts, 1 === a.length ? xt.just1post : ""].join(" "),
+              children: a.map((e => (0, l.jsx)(bt, {
                 noSpecialOrder: !0,
                 post: e
               }, e.id)))
@@ -5507,7 +5492,7 @@
           newswireBlocks: "rockstargames-modules-core-headerdf082531ed434e4a44ea2c3474a07465",
           noSpecialOrder: "rockstargames-modules-core-headerf7a8b59f042399a20d9c74b1e2b76f4a"
         }),
-        jt = (0, b.zt)((e => {
+        St = (0, b.zt)((e => {
           let {
             noSpecialOrder: a = !1,
             posts: t,
@@ -5533,8 +5518,8 @@
               })
             })), n(e)
           }), [t.length]), (0, l.jsx)("div", {
-            className: [Ct.newswireBlocks, a ? Ct.noSpecialOrder : "", Ct.contextHome].join(" "),
-            children: t.map(((e, t) => (0, l.jsx)(xt, {
+            className: [Mt.newswireBlocks, a ? Mt.noSpecialOrder : "", Mt.contextHome].join(" "),
+            children: t.map(((e, t) => (0, l.jsx)(bt, {
               index: t,
               noSpecialOrder: a,
               post: e
@@ -5542,10 +5527,10 @@
           })
         })),
         {
-          sanitize: Tt
-        } = ot();
+          sanitize: Nt
+        } = st();
       t(6147);
-      var zt = t(7968);
+      var Ct = t(7968);
       t(7724), t(1785), (0, r.vU)({
         card_learn_more: {
           id: "card_learn_more",
@@ -5729,7 +5714,7 @@
           defaultMessage: "Complete unique challenges to earn GTA$, bonus items, and more including RP bonuses for each Level:"
         }
       });
-      const It = (0, r.vU)({
+      const jt = (0, r.vU)({
           components_ratings_link_alt: {
             id: "components_ratings_link_alt",
             defaultMessage: "Rating: {rating}. Click here learn more about rating systems"
@@ -5743,7 +5728,7 @@
             defaultMessage: "Select a Language"
           }
         }),
-        Lt = ((0, r.vU)({
+        Tt = ((0, r.vU)({
           engagement_title: {
             id: "engagement_title",
             defaultMessage: "Get an Extra GTA$300,000"
@@ -6108,7 +6093,7 @@
           withOutDescriptors: "rockstargames-modules-core-headere9b3aea7eb8a2525a70a3ba80f745751",
           text: "rockstargames-modules-core-headerc4698286c35a48702e43df24ba196769"
         });
-      (0, b.s8)(t(8948)), vt((e => {
+      (0, b.s8)(t(8948)), dt((e => {
         let {
           descriptors: a = null,
           footer: n = null,
@@ -6120,7 +6105,7 @@
         } = e;
         const [g, m] = (0, _.useState)(!1), {
           inView: v
-        } = (0, Ya.YD)({
+        } = (0, Xa.YD)({
           threshold: .6
         }), [u, p] = (0, _.useState)({
           img_rating: r,
@@ -6131,7 +6116,7 @@
           track: f
         } = te(), h = (0, o.Z)(), {
           data: w
-        } = (0, k.aM)(zt.GameData, {
+        } = (0, k.aM)(Ct.GameData, {
           variables: {
             titleSlug: i
           },
@@ -6150,21 +6135,21 @@
           }), [v]), !u.img_rating) return null;
         const y = !!u.rating_descriptors;
         return (0, l.jsxs)("div", {
-          className: [Lt.rating, y ? Lt.withDescriptors : Lt.withOutDescriptors, d || ""].join(" "),
+          className: [Tt.rating, y ? Tt.withDescriptors : Tt.withOutDescriptors, d || ""].join(" "),
           style: (0, b.IO)(c),
           children: [(0, l.jsx)(Ta, {
             to: u.url_rating,
             target: "_blank",
             children: (0, l.jsx)("img", {
-              alt: h.formatMessage(It.components_ratings_link_alt, {
+              alt: h.formatMessage(jt.components_ratings_link_alt, {
                 rating: (x = u.img_rating, x.replace(/_/g, " ").split(".")[0].toUpperCase())
               }),
               src: t(8214)(`./${u.img_rating}`)
             })
           }), y && (0, l.jsxs)("div", {
-            className: Lt.text,
+            className: Tt.text,
             children: [(0, l.jsx)("p", {
-              className: Lt.descriptors,
+              className: Tt.descriptors,
               dangerouslySetInnerHTML: {
                 __html: u.rating_descriptors.replace(/<br>/g, ", ").substring(0, u.rating_descriptors.length - 2)
               }
@@ -6177,7 +6162,7 @@
         });
         var x
       }));
-      const At = (0, b.zv)((e => {
+      const zt = (0, b.zv)((e => {
           let {
             t: a
           } = e;
@@ -6204,21 +6189,21 @@
             })]
           })
         })),
-        Et = {
+        It = {
           skeleton: "rockstargames-modules-core-headerc073586d2c66f4d535b12cc27e125167",
           pulse: "rockstargames-modules-core-headerdd37397ba93ec7045dbf175d34f4d0f3",
           gen9Hero: "rockstargames-modules-core-headerf0603e7614d1053bfa5d7691ad6926b6"
         },
-        Pt = e => {
+        Lt = e => {
           let {
             skeleton: a
           } = e;
           return a ? (0, l.jsx)("div", {
-            className: [Et.skeleton, Et[a]].join(" ")
+            className: [It.skeleton, It[a]].join(" ")
           }) : null
         };
-      var Dt = t(7790);
-      vt((e => {
+      var At = t(7790);
+      dt((e => {
         let {
           components: a = {},
           id: t = null,
@@ -6235,7 +6220,7 @@
           const r = t ?? [a],
             {
               data: i
-            } = (0, k.aM)(Dt.TinaModulesInfo, {
+            } = (0, k.aM)(At.TinaModulesInfo, {
               variables: {
                 ids: r,
                 sync: s
@@ -6248,7 +6233,7 @@
           id: t,
           ids: n
         });
-        if (!r) return (0, l.jsx)(Pt, {
+        if (!r) return (0, l.jsx)(Lt, {
           skeleton: s
         });
         const i = r?.[0]?.tina;
@@ -6257,7 +6242,7 @@
             let {
               tina: n
             } = e;
-            return (0, l.jsx)(Za, {
+            return (0, l.jsx)(Ha, {
               components: a,
               tina: n,
               componentProps: {
@@ -6267,7 +6252,7 @@
           }))
         }) : null
       })), t(3005);
-      const Vt = {
+      const Et = {
           carousel: "rockstargames-modules-core-headercf15fdf56f32c3f87bbc6de364ca6549",
           text: "rockstargames-modules-core-headeradd9c2e579e8b5fa1d63c815c3888fda",
           info: "rockstargames-modules-core-headera8ee3e01f327ae5fe07c9e0bfa86e688",
@@ -6282,7 +6267,7 @@
           dragging: "rockstargames-modules-core-headercdaba64562ba35e1389ee1eef2958081",
           dots: "rockstargames-modules-core-headere0dacc69309c9d6fcb6b0b3147884d9a"
         },
-        Ot = ((0, b.rE)((e => {
+        Pt = ((0, b.rE)((e => {
           let {
             locale: a,
             t,
@@ -6308,16 +6293,16 @@
                 i(e), c(0)
               },
               _ = e => {
-                c(e.isFinal ? 0 : e.deltaX), "panleft" !== e.additionalEvent && "panright" !== e.additionalEvent || !g.current?.classList.contains(Vt.dragging) || a() && s(!1)
+                c(e.isFinal ? 0 : e.deltaX), "panleft" !== e.additionalEvent && "panright" !== e.additionalEvent || !g.current?.classList.contains(Et.dragging) || a() && s(!1)
               },
               l = () => {
                 a() && s(!0), c(0)
               },
               m = e => {
-                "press" === e.type && d.current?.classList.add(`${Vt.disableClick}`), "tap" === e.type && (d.current?.classList.remove(`${Vt.disableClick}`), document.elementFromPoint(e.center.x, e.center.y).click())
+                "press" === e.type && d.current?.classList.add(`${Et.disableClick}`), "tap" === e.type && (d.current?.classList.remove(`${Et.disableClick}`), document.elementFromPoint(e.center.x, e.center.y).click())
               },
               v = () => {
-                a() && s(!0), d.current && d.current.classList.remove(`${Vt.disableClick}`)
+                a() && s(!0), d.current && d.current.classList.remove(`${Et.disableClick}`)
               },
               u = () => {
                 a() && s(!0)
@@ -6326,12 +6311,12 @@
               e.off("swiperight", t), e.off("swipeleft", o), e.off("pan", _), e.off("panend", l), e.off("press tap", m), e.off("pressup", v), g.current && g.current.removeEventListener("transitionend", u), c(0)
             }
           }), [d.current, r]), (0, l.jsxs)("section", {
-            className: Vt.carousel,
+            className: Et.carousel,
             children: [(0, l.jsx)("div", {
-              className: Vt.track,
+              className: Et.track,
               ref: d,
               children: (0, l.jsx)("div", {
-                className: `${Vt.items} ${0!==o?Vt.dragging:""}`,
+                className: `${Et.items} ${0!==o?Et.dragging:""}`,
                 ref: g,
                 style: {
                   transform: `translateX(calc(-${100*r}% + ${o}px))`
@@ -6341,10 +6326,10 @@
                   "data-gtm-action": "Click-through screencap",
                   "data-gtm-label": `/videos/${e.id}`,
                   to: `/videos/${e.id}`,
-                  className: r === a ? Vt.active : "",
+                  className: r === a ? Et.active : "",
                   role: "link",
                   title: e.title,
-                  children: (0, l.jsx)(Rt, {
+                  children: (0, l.jsx)(Ot, {
                     video: e,
                     active: r === a
                   })
@@ -6352,7 +6337,7 @@
               })
             }), (0, l.jsxs)("footer", {
               children: [(0, l.jsx)("div", {
-                className: Vt.text,
+                className: Et.text,
                 children: n.map(((e, n) => (0, l.jsx)(Ta, {
                   "data-gtm-category": "Carousel",
                   "data-gtm-action": "Click-through footer",
@@ -6361,31 +6346,31 @@
                   role: "link",
                   title: e.title,
                   children: (0, l.jsxs)("div", {
-                    className: [Vt.info, n === r ? Vt.active : ""].join(" "),
+                    className: [Et.info, n === r ? Et.active : ""].join(" "),
                     children: [(0, l.jsxs)("div", {
-                      className: Vt.title,
+                      className: Et.title,
                       children: [(0, l.jsx)("div", {
-                        className: Vt.gameTitle,
+                        className: Et.gameTitle,
                         children: `${e.game.title}${"fr_fr"===a?" ":""}`
                       }), (0, l.jsx)("h2", {
-                        className: Vt.videoTitle,
+                        className: Et.videoTitle,
                         children: `${e.title}`
                       })]
                     }), (0, l.jsx)(Aa, {
-                      className: Vt.cta,
+                      className: Et.cta,
                       children: t("Watch Now")
                     })]
                   })
                 }, e.id)))
               }), (0, l.jsx)("div", {
-                className: Vt.dots,
+                className: Et.dots,
                 children: n.map(((e, a) => (0, l.jsx)("button", {
                   "aria-label": `Slide ${a}`,
                   "data-gtm-category": "Marquee",
                   "data-gtm-action": "Dot click",
                   "data-gtm-label": `Dot clicked to ${a}`,
                   onClick: () => i(a),
-                  className: r === a ? Vt.active : "",
+                  className: r === a ? Et.active : "",
                   type: "button"
                 }, e.id)))
               })]
@@ -6404,7 +6389,7 @@
           next: "rockstargames-modules-core-headerdbaec7d7e7c561a002be980a374474d6",
           disabled: "rockstargames-modules-core-headera9cd773a9e9cb799aaf655d52088af78"
         }),
-        Gt = ((0, b.zv)((e => {
+        Dt = ((0, b.zv)((e => {
           let {
             vids: a,
             games: t,
@@ -6451,36 +6436,36 @@
               }
             }
           }), [o.current, g]), f = "games" === r ? (0, l.jsx)(l.Fragment, {
-            children: t.results.map((e => (0, l.jsx)(dt, {
+            children: t.results.map((e => (0, l.jsx)(_t, {
               game: e,
               dontOverrideTo: !0,
               to: `/videos?type=game&gameId=${e.id}`
             }, e.id)))
           }) : (0, l.jsx)(l.Fragment, {
-            children: a.map((e => (0, l.jsx)(Ft, {
+            children: a.map((e => (0, l.jsx)(Gt, {
               video: e,
               gameTitleNecessary: s
             }, e.id)))
           }), (0, l.jsxs)("section", {
-            className: Ot.videoList,
+            className: Pt.videoList,
             children: [(0, l.jsxs)("h3", {
-              className: Ot.sectionHeader,
+              className: Pt.sectionHeader,
               children: [n, (0, l.jsxs)("div", {
-                className: Ot.arrowNav,
+                className: Pt.arrowNav,
                 children: [(0, l.jsx)("div", {
-                  className: [Ot.arrow, Ot.previous, 0 === g ? Ot.disabled : ""].join(" "),
+                  className: [Pt.arrow, Pt.previous, 0 === g ? Pt.disabled : ""].join(" "),
                   onClick: () => v(g - 1)
                 }), (0, l.jsx)("div", {
-                  className: [Ot.arrow, Ot.next, g === Math.ceil(i.length / c) - 1 ? Ot.disabled : ""].join(" "),
+                  className: [Pt.arrow, Pt.next, g === Math.ceil(i.length / c) - 1 ? Pt.disabled : ""].join(" "),
                   onClick: () => v(g + 1)
                 })]
               })]
             }), (0, l.jsx)("div", {
-              className: Ot.items,
+              className: Pt.items,
               children: (0, l.jsx)("div", {
-                className: Ot.trackWrapper,
+                className: Pt.trackWrapper,
                 children: (0, l.jsx)("div", {
-                  className: [Ot.track, 0 !== u ? Ot.dragging : ""].join(" "),
+                  className: [Pt.track, 0 !== u ? Pt.dragging : ""].join(" "),
                   ref: o,
                   style: {
                     transform: `translateX(calc(-${100*g}% + ${u}px - (var(--standard-grid-gap) * ${g}))`,
@@ -6492,7 +6477,7 @@
             })]
           })
         })), "rockstargames-modules-core-headerdde12a3eeb657b92d78550534aad83a4"),
-        Bt = ((0, b.zv)((e => {
+        Vt = ((0, b.zv)((e => {
           let {
             error: a,
             t,
@@ -6505,13 +6490,13 @@
           s = t("error-404-new");
           const r = a?.code ?? 398;
           return (0, l.jsxs)("div", {
-            className: Gt,
+            className: Dt,
             children: [(0, l.jsx)("h3", {
               children: `${s} (${r})`
             }), (0, l.jsx)(Ta, {
               to: "/",
               children: t("Home")
-            }), "clr" !== n && (0, l.jsx)(At, {})]
+            }), "clr" !== n && (0, l.jsx)(zt, {})]
           })
         })), {
           videoPreview: "rockstargames-modules-core-headerfc0e81ebc632610b064bd79bae533a74",
@@ -6522,19 +6507,19 @@
           screencapLoaded: "rockstargames-modules-core-headerf5f152f73966c479dd7074174c910b5c",
           gameTitle: "rockstargames-modules-core-headerd25ff4ef3c29e0f22f716fbd7b790dcb"
         }),
-        Rt = e => {
+        Ot = e => {
           let {
             video: a
           } = e;
           const [t] = (0, b.TZ)(a.screencap);
           return (0, l.jsx)("div", {
-            className: [Bt.screencap, t ? Bt.screencapLoaded : ""].join(" "),
+            className: [Vt.screencap, t ? Vt.screencapLoaded : ""].join(" "),
             style: {
               background: `url(${a.screencap}) center/cover`
             }
           })
         },
-        Ft = e => {
+        Gt = e => {
           let {
             gameTitleNecessary: a = !0,
             openInNewWindow: t = !1,
@@ -6542,24 +6527,24 @@
           } = e;
           const s = `/videos/${n.id}`,
             r = {
-              className: Bt.videoPreview,
+              className: Vt.videoPreview,
               "data-gtm-category": "Videos",
               "data-gtm-action": "Video Click-through",
               "data-gtm-label": s
             },
             i = (0, l.jsxs)("div", {
-              className: Bt.card,
-              children: [(0, l.jsx)(Rt, {
+              className: Vt.card,
+              children: [(0, l.jsx)(Ot, {
                 video: n
               }), (0, l.jsxs)("div", {
-                className: Bt.info,
+                className: Vt.info,
                 children: [a ? (0, l.jsx)("div", {
-                  className: Bt.gameTitle,
+                  className: Vt.gameTitle,
                   dangerouslySetInnerHTML: {
                     __html: n.game.title
                   }
                 }) : "", (0, l.jsx)("h5", {
-                  className: Bt.title,
+                  className: Vt.title,
                   dangerouslySetInnerHTML: {
                     __html: n.title
                   }
@@ -6578,15 +6563,15 @@
           })
         };
       t(400);
-      const $t = {
+      const Bt = {
           event: "account_menu_click",
           element_placement: "Account Menu"
         },
-        qt = (e, a, t, n) => ({
+        Rt = (e, a, t, n) => ({
           text: e.formatMessage(a.sc_link_help),
           target: "_self",
           ga: {
-            ...$t,
+            ...Bt,
             text: a.sc_link_help.defaultMessage
           },
           dataTestId: "helpButton",
@@ -6595,7 +6580,7 @@
             href: "https://support.rockstargames.com/",
             target: "_self",
             ga: {
-              ...$t,
+              ...Bt,
               text: a.sc_link_support.defaultMessage,
               link_url: "https://support.rockstargames.com/"
             },
@@ -6605,7 +6590,7 @@
             href: `https://${t.sites.www}.rockstargames.com/legal`,
             target: "_self",
             ga: {
-              ...$t,
+              ...Bt,
               text: a.sc_link_legal.defaultMessage,
               link_url: `https://${t.sites.www}.rockstargames.com/legal`
             },
@@ -6615,7 +6600,7 @@
             href: `https://${t.sites.www}.rockstargames.com/privacy`,
             target: "_self",
             ga: {
-              ...$t,
+              ...Bt,
               text: a.sc_link_privacy_policy.defaultMessage,
               link_url: `https://${t.sites.www}.rockstargames.com/privacy`
             },
@@ -6625,7 +6610,7 @@
             href: `https://${t.sites.www}.rockstargames.com/cookies`,
             target: "_self",
             ga: {
-              ...$t,
+              ...Bt,
               text: a.sc_link_cookies_policy.defaultMessage,
               link_url: `https://${t.sites.www}.rockstargames.com/cookies`
             },
@@ -6637,7 +6622,7 @@
             },
             target: "_self",
             ga: {
-              ...$t,
+              ...Bt,
               text: a.sc_link_cookies_settings.defaultMessage,
               link_url: ""
             },
@@ -6647,14 +6632,14 @@
             href: `https://${t.sites.www}.rockstargames.com/ccpa`,
             target: "_self",
             ga: {
-              ...$t,
+              ...Bt,
               text: a.sc_link_do_not_sell_my_information.defaultMessage,
               link_url: `https://${t.sites.www}.rockstargames.com/ccpa`
             },
             dataTestId: "doNotSellMyInformationLink"
           }]
         }),
-        Ut = e => {
+        Ft = e => {
           let {
             text: a,
             target: t,
@@ -6685,7 +6670,7 @@
             })]
           })
         },
-        Ht = e => {
+        $t = e => {
           let {
             id: a,
             text: t,
@@ -6741,14 +6726,14 @@
               style: {
                 height: y ? null : `${h}px`
               },
-              children: c.map((e => (0, l.jsx)(Ut, {
+              children: c.map((e => (0, l.jsx)(Ft, {
                 ...e,
                 isSubLink: !0,
                 key: e.text,
                 tabIndex: y || !p ? -1 : 0
               })))
             })]
-          }, t) : (0, l.jsx)(Ut, {
+          }, t) : (0, l.jsx)(Ft, {
             text: t,
             target: n,
             href: s,
@@ -6760,7 +6745,7 @@
             tabIndex: p ? 0 : -1
           })
         },
-        Wt = e => {
+        qt = e => {
           let {
             sc: a
           } = e, t = !1;
@@ -6805,7 +6790,7 @@
                   element_placement: "Account Menu"
                 },
                 dataTestId: "signUpLink"
-              }, qt(a, e, s, r)])(ga, n, w, y, x, window?.OneTrust);
+              }, Rt(a, e, s, r)])(ga, n, w, y, x, window?.OneTrust);
               return e
             }), [ga, n, w, y, x]);
           return (0, _.useEffect)((() => {
@@ -6824,7 +6809,7 @@
                 style: {
                   "--scNavWrap-max-height": `${d}px`
                 },
-                children: M.map((e => (0, _.createElement)(Ht, {
+                children: M.map((e => (0, _.createElement)($t, {
                   ...e,
                   activeSubNavId: i,
                   setActiveSubNavId: c,
@@ -6834,7 +6819,7 @@
               })
             }), (0, l.jsx)("div", {
               className: "rockstargames-modules-core-headerc38508c13f75b99affdabef433c631ce",
-              children: (0, l.jsx)(kt, {
+              children: (0, l.jsx)(pt, {
                 theme: "sc-menu",
                 languageSelectorOpened: s,
                 setLanguageSelectorOpened: r,
@@ -6843,9 +6828,9 @@
             })]
           })
         },
-        Jt = e => t(e < 100 ? 4655 : e > 99 && e < 500 ? 98 : e > 499 && e < 750 ? 3662 : 9533),
-        Zt = "rockstargames-modules-core-headerc335fbb3ea8b49739cc397a7d53b5f8a",
-        Xt = e => {
+        Ut = e => t(e < 100 ? 4655 : e > 99 && e < 500 ? 98 : e > 499 && e < 750 ? 3662 : 9533),
+        Ht = "rockstargames-modules-core-headerc335fbb3ea8b49739cc397a7d53b5f8a",
+        Wt = e => {
           let {
             characterData: a,
             setMobileCardWidth: n,
@@ -6912,12 +6897,12 @@
                 children: (0, l.jsxs)("div", {
                   className: "rockstargames-modules-core-headerba6ead477fdd2f3147b4360899c2d68e",
                   children: [(0, l.jsx)("img", {
-                    className: Zt,
-                    src: Jt(u.overview.rank.value),
+                    className: Ht,
+                    src: Ut(u.overview.rank.value),
                     alt: "RP Category"
                   }), (0, l.jsx)("img", {
-                    className: Zt,
-                    src: Jt(u.overview.rank.value),
+                    className: Ht,
+                    src: Ut(u.overview.rank.value),
                     alt: w.formatMessage(ga.profile_selector_rp_icon)
                   }), (0, l.jsx)("span", {
                     children: a.stats.overview.rank.value
@@ -6927,7 +6912,7 @@
             })]
           })
         },
-        Kt = {
+        Jt = {
           scNavWrapper: "rockstargames-modules-core-headerfefba4e30506c0f8ecc093516c3b914b",
           rpLevel: "rockstargames-modules-core-headerbeb2be934b029558ef8e27e5673af2ac",
           rpIcon: "rockstargames-modules-core-headerdacab97f333174c4d84479bc1c9ae9c7",
@@ -6948,7 +6933,7 @@
           scCash: "rockstargames-modules-core-headera4c426e004158e68bb9fc089bfd6da2b",
           scBank: "rockstargames-modules-core-headerc38d10918e911b5a7f7f0253d0e4db6c"
         },
-        Qt = e => {
+        Zt = e => {
           let {
             character: a,
             platformTag: n
@@ -6975,13 +6960,13 @@
             }))
           };
           let [I, L] = (0, _.useState)((0, l.jsx)("img", {
-            className: Kt.scAvatarImg,
+            className: Jt.scAvatarImg,
             src: a.mugshotUrl,
             alt: s.nickname,
             onError: z
           }));
           [I, L] = (0, _.useState)((0, l.jsx)("img", {
-            className: Kt.scAvatarImg,
+            className: Jt.scAvatarImg,
             src: a.mugshotUrl,
             alt: i.formatMessage(ga.profile_selector_mugshot, {
               userName: s.nickname
@@ -7003,7 +6988,7 @@
             const e = [];
             if (!p && h > -1)
               for (let a = 5; a > h; a -= 1) e.push((0, l.jsx)("div", {
-                className: Kt.scCrewRankBarItem,
+                className: Jt.scCrewRankBarItem,
                 style: {
                   backgroundColor: null !== v ? v : ""
                 }
@@ -7020,15 +7005,15 @@
             })
           };
           return (0, l.jsxs)("div", {
-            className: Kt.scProfileDetails,
+            className: Jt.scProfileDetails,
             onClick: A,
             onKeyUp: A,
             role: "button",
             tabIndex: -1,
             children: [(0, l.jsxs)("div", {
-              className: Kt.scAvatar,
+              className: Jt.scAvatar,
               children: [I, (0, l.jsx)("div", {
-                className: Kt.scAvatarPlatform,
+                className: Jt.scAvatarPlatform,
                 "data-platform": a.platform,
                 children: (0, l.jsx)("img", {
                   src: n.src,
@@ -7036,45 +7021,45 @@
                 })
               })]
             }), (0, l.jsxs)("div", {
-              className: Kt.scProfileStats,
+              className: Jt.scProfileStats,
               children: [(0, l.jsx)("div", {
-                className: Kt.scNames,
+                className: Jt.scNames,
                 children: (0, l.jsxs)("div", {
-                  className: Kt.scTagsNames,
+                  className: Jt.scTagsNames,
                   children: [(0, l.jsx)("span", {
-                    className: Kt.scUserName,
+                    className: Jt.scUserName,
                     children: a.platformUsername
                   }), g && (0, l.jsxs)("span", {
-                    className: Kt.scCrewName,
+                    className: Jt.scCrewName,
                     "data-arrow-tag": p,
                     children: [g, !p && (0, l.jsx)("div", {
-                      className: Kt.scCrewRankBar,
+                      className: Jt.scCrewRankBar,
                       children: b
                     })]
                   })]
                 })
               }), (0, l.jsxs)("div", {
-                className: Kt.scProgress,
+                className: Jt.scProgress,
                 children: [(0, l.jsxs)("div", {
-                  className: Kt.scRpLevel,
+                  className: Jt.scRpLevel,
                   children: [(0, l.jsx)("img", {
-                    className: Kt.scRpIcon,
-                    src: Jt(y),
+                    className: Jt.scRpIcon,
+                    src: Ut(y),
                     alt: i.formatMessage(ga.profile_selector_rp_icon)
                   }), (0, l.jsx)("img", {
-                    className: Kt.scRpIcon,
-                    src: Jt(y),
+                    className: Jt.scRpIcon,
+                    src: Ut(y),
                     alt: "RP Level Icon"
                   }), (0, l.jsx)("span", {
                     children: a.stats.overview.rank.value
                   })]
                 }), (0, l.jsxs)("div", {
-                  className: Kt.scMoney,
+                  className: Jt.scMoney,
                   children: [(0, l.jsxs)("span", {
-                    className: Kt.scCash,
+                    className: Jt.scCash,
                     children: ["$", C]
                   }), (0, l.jsxs)("span", {
-                    className: Kt.scBank,
+                    className: Jt.scBank,
                     children: ["$", S]
                   })]
                 })]
@@ -7082,7 +7067,7 @@
             })]
           })
         },
-        Yt = (e, a) => {
+        Xt = (e, a) => {
           const [t, n] = (0, _.useState)(0);
           return (0, _.useEffect)((() => {
             if (e.current) {
@@ -7100,7 +7085,7 @@
             }
           }), [e]), t
         },
-        en = e => {
+        Kt = e => {
           let {
             dragThreshold: a = 80,
             interactionDelay: t = 1e3,
@@ -7112,7 +7097,7 @@
             disableSwiper: c = !1
           } = e;
           const d = (0, _.createRef)(),
-            g = Yt(d, !1),
+            g = Xt(d, !1),
             [m, v] = (0, _.useState)(!1),
             [u, p] = (0, _.useState)(0),
             [f, h] = (0, _.useState)(0),
@@ -7219,7 +7204,7 @@
             })]
           })
         },
-        an = {
+        Qt = {
           scNavWrapper: "rockstargames-modules-core-headerfa53f18852129e03ba8dc060b55b825f",
           rpLevel: "rockstargames-modules-core-headerba92fb9b79d8b55e93cf33d80ef256ec",
           rpIcon: "rockstargames-modules-core-headeree3f66d9e70ca49601c42bec7bcfe91e",
@@ -7233,7 +7218,7 @@
           scNavHeader: "rockstargames-modules-core-headerf5c1e3c28f2ba35f04f4b8406ed50acc",
           scNavWrap: "rockstargames-modules-core-headerd4eccedfc49db199a17e889e285311f5"
         },
-        tn = (0, b.zv)((e => {
+        Yt = (0, b.zv)((e => {
           let {
             sc: a,
             charListHidden: t,
@@ -7287,7 +7272,7 @@
             [ae, ne] = (0, _.useState)(0),
             [se, re] = (0, _.useState)(0),
             ie = (0, _.createRef)(),
-            oe = Yt(ie, !1),
+            oe = Xt(ie, !1),
             _e = (0, _.createRef)(),
             [ce, le] = (0, _.useState)(0),
             [de, ge] = (0, _.useState)([]),
@@ -7302,7 +7287,7 @@
               href: `https://${t.host}.rockstargames.com/`,
               target: "_self",
               ga: {
-                ...$t,
+                ...Bt,
                 text: e.sc_link_activity_feed.defaultMessage,
                 link_url: `https://${t.host}.rockstargames.com/`
               },
@@ -7316,7 +7301,7 @@
                 href: n.profile_link,
                 target: "_self",
                 ga: {
-                  ...$t,
+                  ...Bt,
                   text: e.sc_link_view_my_profile.defaultMessage,
                   link_url: n.profile_link
                 },
@@ -7326,7 +7311,7 @@
                 href: `https://${t.host}.rockstargames.com/message`,
                 target: "_self",
                 ga: {
-                  ...$t,
+                  ...Bt,
                   text: e.sc_link_messages.defaultMessage,
                   link_url: `https://${t.host}.rockstargames.com/message`
                 },
@@ -7336,7 +7321,7 @@
                 href: `https://${t.host}.rockstargames.com/activate`,
                 target: "_self",
                 ga: {
-                  ...$t,
+                  ...Bt,
                   text: e.sc_link_game_activation.defaultMessage,
                   link_url: `https://${t.host}.rockstargames.com/activate`
                 },
@@ -7348,7 +7333,7 @@
               target: "_self",
               hasNotifications: s,
               ga: {
-                ...$t,
+                ...Bt,
                 text: e.sc_link_notifications.defaultMessage,
                 link_url: `https://${t.host}.rockstargames.com/notifications`
               },
@@ -7358,7 +7343,7 @@
               href: `https://${t.host}.rockstargames.com/member/${n.nickname}/crews`,
               target: "_self",
               ga: {
-                ...$t,
+                ...Bt,
                 text: e.sc_link_crews.defaultMessage,
                 link_url: `https://${t.host}.rockstargames.com/member/${n.nickname}/crews`
               },
@@ -7372,7 +7357,7 @@
                 href: `https://${t.host}.rockstargames.com/member/${n.nickname}/friends`,
                 target: "_self",
                 ga: {
-                  ...$t,
+                  ...Bt,
                   text: e.sc_link_my_friends.defaultMessage,
                   link_url: `https://${t.host}.rockstargames.com/member/${n.nickname}/friends`
                 },
@@ -7382,7 +7367,7 @@
                 href: `https://${t.host}.rockstargames.com/friends/import`,
                 target: "_self",
                 ga: {
-                  ...$t,
+                  ...Bt,
                   text: e.sc_link_import_friends.defaultMessage,
                   link_url: `https://${t.host}.rockstargames.com/friends/import`
                 },
@@ -7392,7 +7377,7 @@
                 href: `https://${t.host}.rockstargames.com/members`,
                 target: "_self",
                 ga: {
-                  ...$t,
+                  ...Bt,
                   text: e.sc_link_import_friends.defaultMessage,
                   link_url: `https://${t.host}.rockstargames.com/members`
                 },
@@ -7403,17 +7388,17 @@
               href: `https://${t.host}.rockstargames.com/settings`,
               target: "_self",
               ga: {
-                ...$t,
+                ...Bt,
                 text: e.sc_link_settings.defaultMessage,
                 link_url: `https://${t.host}.rockstargames.com/settings`
               },
               dataTestId: "settingsLink"
-            }, qt(a, e, i, o), {
+            }, Rt(a, e, i, o), {
               text: a.formatMessage(e.sc_link_log_out),
               href: `${t.logout}?returnUrl=${r}`,
               target: "_self",
               ga: {
-                ...$t,
+                ...Bt,
                 text: e.sc_link_log_out.defaultMessage,
                 link_url: `${t.logout}?returnUrl=${r}`
               },
@@ -7485,17 +7470,17 @@
             G(Math.max(0, Math.min(e, de.length - 1)))
           }), [de, T]), (0, l.jsxs)(l.Fragment, {
             children: [null !== $ && "gtao" === E && (0, l.jsxs)("div", {
-              className: an.scProfile,
+              className: Qt.scProfile,
               tabIndex: -1,
               "aria-label": v.formatMessage(ga.profile_selector_profile_card),
-              children: [(0, l.jsx)(Qt, {
-                s: an,
+              children: [(0, l.jsx)(Zt, {
+                s: Qt,
                 character: $,
                 platformTag: U
               }), !0 === W && (0, l.jsxs)("div", {
-                className: an.scCharacterSelector,
+                className: Qt.scCharacterSelector,
                 children: [(0, l.jsx)("button", {
-                  className: an.scCharacterSelectBtn,
+                  className: Qt.scCharacterSelectBtn,
                   type: "button",
                   onClick: e => {
                     e.stopPropagation();
@@ -7513,21 +7498,21 @@
                     })
                   })
                 }), !1 === g && (0, l.jsx)("div", {
-                  className: an.scCharacterList,
+                  className: Qt.scCharacterList,
                   "data-long-list": c,
                   "aria-hidden": t,
                   ref: s,
-                  children: de.map((e => (0, l.jsx)(Xt, {
+                  children: de.map((e => (0, l.jsx)(Wt, {
                     tabIndex: t ? -1 : 0,
                     characterData: e
                   }, e.mugshotUrl)))
                 }), !0 === g && (0, l.jsx)("div", {
-                  className: an.scCharacterList,
+                  className: Qt.scCharacterList,
                   "data-single-item": 2 === de.length,
                   "data-swiper-disabled": Z,
                   "aria-hidden": t,
                   ref: ie,
-                  children: (0, l.jsx)(en, {
+                  children: (0, l.jsx)(Kt, {
                     interactionDelay: 350,
                     mobileGutterWidth: 17,
                     dragThreshold: 40,
@@ -7541,7 +7526,7 @@
                     },
                     disablePager: Z,
                     disableSwiper: Z,
-                    children: de.filter(((e, a) => a !== P)).map((e => (0, _.createElement)(Xt, {
+                    children: de.filter(((e, a) => a !== P)).map((e => (0, _.createElement)(Wt, {
                       characterData: e,
                       setMobileCardWidth: ve,
                       key: e.mugshotUrl,
@@ -7551,10 +7536,10 @@
                 })]
               })]
             }), (0, l.jsxs)("nav", {
-              className: an.scNav,
+              className: Qt.scNav,
               "aria-hidden": !V,
               children: [(0, l.jsx)("button", {
-                className: an.scNavHeader,
+                className: Qt.scNavHeader,
                 type: "button",
                 "data-opened": M,
                 "data-nav-opened": V,
@@ -7566,7 +7551,7 @@
                   children: L.nickname
                 })
               }), (0, l.jsx)("div", {
-                className: an.scNavWrap,
+                className: Qt.scNavWrap,
                 "data-opened": M,
                 "data-logged-in": "true",
                 ref: _e,
@@ -7574,7 +7559,7 @@
                 style: {
                   "--scNavWrap-max-height": `${ce+y}px`
                 },
-                children: he.map(((e, a) => (0, _.createElement)(Ht, {
+                children: he.map(((e, a) => (0, _.createElement)($t, {
                   ...e,
                   id: a,
                   activeSubNavId: h,
@@ -7584,12 +7569,12 @@
                 })))
               })]
             }), (0, l.jsx)("div", {
-              className: an.scLanguageSelector,
+              className: Qt.scLanguageSelector,
               tabIndex: -1,
               style: {
                 visibility: V ? null : "hidden"
               },
-              children: (0, l.jsx)(kt, {
+              children: (0, l.jsx)(pt, {
                 theme: "sc-menu",
                 languageSelectorOpened: p,
                 setLanguageSelectorOpened: f,
@@ -7598,7 +7583,7 @@
             })]
           })
         })),
-        nn = {
+        en = {
           scNavWrapper: "rockstargames-modules-core-headere838e44838fa7da64c336b852ea24768",
           rpLevel: "rockstargames-modules-core-headerb7db666a33c3691e5a8abdfc26fada5f",
           rpIcon: "rockstargames-modules-core-headerab2979bf0b93aeaa2e599785a1769750",
@@ -7608,7 +7593,7 @@
           dragHandleBtn: "rockstargames-modules-core-headerdb7e8039eb4bbe26b77f3b269ba8a692",
           scOverlay: "rockstargames-modules-core-headerb1e1c10079e10528c1bcb20fea525546"
         },
-        sn = () => {
+        an = () => {
           let e = !1;
           e = !0;
           const a = (0, o.Z)(),
@@ -7699,14 +7684,14 @@
             i && (n && s(!1), d || V(!0))
           }), [i]), null === f ? null : (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsxs)("div", {
-              className: [nn.scMenu, w ? nn.navOpen : ""].join(" "),
+              className: [en.scMenu, w ? en.navOpen : ""].join(" "),
               "data-logged-in": f,
               "data-mac-browser": E,
               "data-scroll-mode": m,
               ref: T,
               "aria-hidden": !w,
               children: [(0, l.jsx)("button", {
-                className: nn.dragHandleBtn,
+                className: en.dragHandleBtn,
                 type: "button",
                 onTouchStart: e => {
                   const a = void 0 !== e.changedTouches ? e.touches[0].screenX : e.screenX;
@@ -7718,11 +7703,11 @@
                   Math.abs(L - a) > 1 && (A(0), y(!1))
                 },
                 children: (0, l.jsx)("img", {
-                  className: nn.dragHandle,
+                  className: en.dragHandle,
                   src: t(9963),
                   alt: a.formatMessage(ga.sc_menu_drag_handle)
                 })
-              }), f ? (0, l.jsx)(tn, {
+              }), f ? (0, l.jsx)(Yt, {
                 sc: S,
                 charListHidden: d,
                 hideCharacterList: V,
@@ -7732,25 +7717,25 @@
                 setLongCharList: M,
                 isMobileMode: z,
                 setIsMobileMode: I
-              }) : (0, l.jsx)(Wt, {
+              }) : (0, l.jsx)(qt, {
                 sc: S,
                 navOpen: w
               })]
             }), (0, l.jsx)("div", {
-              className: [nn.scOverlay, w ? nn.navOpen : ""].join(" "),
+              className: [en.scOverlay, w ? en.navOpen : ""].join(" "),
               "data-logged-in": f
             })]
           })
         },
-        rn = (e, a, t, n) => ({
+        tn = (e, a, t, n) => ({
           event: e || "nav_click",
           link_url: a,
           text: t,
           element_placement: `Global Nav > ${n}`
         }),
-        on = "https",
-        _n = "rockstargames.com",
-        cn = () => {
+        nn = "https",
+        sn = "rockstargames.com",
+        rn = () => {
           const e = ge(),
             a = (() => {
               const e = (0, _.useContext)(le);
@@ -7764,7 +7749,7 @@
                 sites: t,
                 currentSite: n
               } = a;
-              return t[e.domain] ? new URL(`${on}://${t[e.domain]}.${_n}`) : 0 === e.domain.indexOf("http") ? new URL(e.domain) : new URL(`${on}://${t[n?.subDomain||t.www]}.${_n}`)
+              return t[e.domain] ? new URL(`${nn}://${t[e.domain]}.${sn}`) : 0 === e.domain.indexOf("http") ? new URL(e.domain) : new URL(`${nn}://${t[n?.subDomain||t.www]}.${sn}`)
             })(n, e);
             if (!n.path) return new URL(s);
             const r = [
@@ -7782,10 +7767,10 @@
             return new URL(o, s)
           }
         },
-        ln = "nav-external",
-        dn = "nav-dropdown",
-        gn = "games-menu",
-        mn = e => {
+        on = "nav-external",
+        _n = "nav-dropdown",
+        cn = "games-menu",
+        ln = e => {
           let {
             children: a,
             location: t,
@@ -7808,7 +7793,7 @@
             {
               track: k
             } = te(),
-            b = cn(),
+            b = rn(),
             w = (0, _.useMemo)((() => {
               const e = {};
               return "_blank" === c && (e["aria-label"] = f.formatMessage(_e.nav_opens_in_new_window, {
@@ -7817,14 +7802,14 @@
             }), [r, c]);
           if (!t) return null;
           const y = b(t),
-            x = i === ln,
+            x = i === on,
             M = x || h && h.site !== t.domain ? y.href : y.pathname + y.search + y.hash,
             S = Boolean(x || s || document.documentElement.classList.contains("legacyPage"));
           return (0, l.jsx)(Q.Link, {
             className: n,
             target: c,
             to: M,
-            onClick: () => (k(rn(d, y.toString(), g, m)), void u?.()),
+            onClick: () => (k(tn(d, y.toString(), g, m)), void u?.()),
             reloadDocument: S,
             "data-testid": v,
             ...p,
@@ -7832,11 +7817,11 @@
             children: a
           })
         },
-        vn = {
+        dn = {
           callToAction: "rockstargames-modules-core-headerc82c6509b58380dd464812d2c26863ba",
           highlight: "rockstargames-modules-core-headerf530a8cc3c7d4c9e1f119a6a76ebb853"
         },
-        un = e => {
+        gn = e => {
           let {
             children: a,
             dataTestId: t,
@@ -7848,9 +7833,9 @@
             onNavigate: _
           } = e;
           return (0, l.jsx)("div", {
-            className: vn.callToActionContainer,
-            children: (0, l.jsx)(mn, {
-              className: [vn.callToAction, s ? vn[s] : ""].join(" "),
+            className: dn.callToActionContainer,
+            children: (0, l.jsx)(ln, {
+              className: [dn.callToAction, s ? dn[s] : ""].join(" "),
               dataTestId: t,
               location: n,
               gaEvent: r,
@@ -7862,7 +7847,7 @@
             })
           })
         },
-        pn = {
+        mn = {
           targets: [{
             intlMessage: _e.search_target_games,
             tab: "games",
@@ -7929,18 +7914,18 @@
             }]
           }]
         };
-      var fn = t(2430),
-        hn = t(6567);
-      const kn = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/902006563577748c7d58ac9c2bf5e6df.svg",
-        bn = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/beb0cbcbb7dc7cfe8e4d127512ef5f57.svg",
-        wn = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/af22c6826e05c14923a3f11c69a2130c.svg",
-        yn = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/9db08c7809308ca2fa4614f3c2d45a91.svg",
-        xn = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/e5fca59d373ed4d2aa00584b688c3da3.svg",
-        Mn = {
+      var vn = t(2430),
+        un = t(6567);
+      const pn = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/902006563577748c7d58ac9c2bf5e6df.svg",
+        fn = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/beb0cbcbb7dc7cfe8e4d127512ef5f57.svg",
+        hn = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/af22c6826e05c14923a3f11c69a2130c.svg",
+        kn = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/9db08c7809308ca2fa4614f3c2d45a91.svg",
+        bn = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/e5fca59d373ed4d2aa00584b688c3da3.svg",
+        wn = {
           pillButton: "rockstargames-modules-core-headerff69ac71bd625f2fffaa47c831767ea5",
           selected: "rockstargames-modules-core-headera0399789b5f8119314e2ee494274ef8a"
         },
-        Sn = e => {
+        yn = e => {
           let {
             children: a,
             selected: t,
@@ -7948,17 +7933,17 @@
           } = e;
           return (0, l.jsx)("button", {
             type: "button",
-            className: [Mn.pillButton, t ? Mn.selected : ""].join(" "),
+            className: [wn.pillButton, t ? wn.selected : ""].join(" "),
             ...n,
             children: a
           })
         };
-      var Nn = t(9113);
-      const Cn = {
+      var xn = t(9113);
+      const Mn = {
           subMenu: "rockstargames-modules-core-headere93b49b419838ee4e2be9f55b68de66d",
           fadeIn: "rockstargames-modules-core-headerae33d9922a0df7157a8ae8af16f46854"
         },
-        jn = {
+        Sn = {
           enter: {
             opacity: 1,
             zIndex: 101,
@@ -7972,7 +7957,7 @@
             }
           }
         },
-        Tn = e => {
+        Nn = e => {
           let {
             openerRef: a,
             isOpen: t,
@@ -7983,7 +7968,7 @@
             styles: o,
             attributes: c,
             forceUpdate: d
-          } = (0, Nn.D)(a, r, {
+          } = (0, xn.D)(a, r, {
             placement: "bottom-start",
             modifiers: [{
               name: "offset",
@@ -8001,15 +7986,15 @@
           });
           return (0, _.useEffect)((() => {
             d && d()
-          }), [a, t, n]), (0, l.jsx)(hn.E.div, {
+          }), [a, t, n]), (0, l.jsx)(un.E.div, {
             initial: "exit",
             animate: t ? "enter" : "exit",
             transition: {
               ease: "easeInOut",
               duration: .3
             },
-            variants: jn,
-            className: [Cn.subMenu].join(" "),
+            variants: Sn,
+            className: [Mn.subMenu].join(" "),
             style: {
               ...o.popper
             },
@@ -8018,7 +8003,7 @@
             children: s
           })
         },
-        zn = e => {
+        Cn = e => {
           let {
             children: a,
             ...t
@@ -8030,12 +8015,12 @@
             children: a
           })
         },
-        In = {
+        jn = {
           backgroundElevation: "rockstargames-modules-core-headerd803e72fb936c18155db46ae42dd74f0",
           backgroundOverlay: "rockstargames-modules-core-headeraf311f256f0989aaa668a6d60f37ab83",
           backgroundVisible: "rockstargames-modules-core-headere8da5672530e8e7e170953df4907a3cf"
         },
-        Ln = e => {
+        Tn = e => {
           let {
             children: a,
             isOpen: t,
@@ -8043,14 +8028,14 @@
             visible: s
           } = e;
           return t ? (0, l.jsxs)("div", {
-            className: [In.backgroundElevation].join(" "),
+            className: [jn.backgroundElevation].join(" "),
             onClick: n,
             children: [(0, l.jsx)("div", {
-              className: [In.backgroundOverlay, s ? In.backgroundVisible : ""].join(" ")
+              className: [jn.backgroundOverlay, s ? jn.backgroundVisible : ""].join(" ")
             }), a]
           }) : null
         },
-        An = e => {
+        zn = e => {
           let {
             target: a,
             selected: t,
@@ -8062,10 +8047,10 @@
           const c = (0, o.Z)(),
             [d, g] = (0, _.useState)(!1),
             [m, v] = (0, _.useState)(null);
-          return a.type === dn ? (0, l.jsxs)(l.Fragment, {
+          return a.type === _n ? (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsx)("div", {
               ref: v,
-              children: (0, l.jsxs)(Sn, {
+              children: (0, l.jsxs)(yn, {
                 "aria-label": c.formatMessage(_e.search_target_aria_label, {
                   target: n && a?.targets?.indexOf(n) >= 0 ? c.formatMessage(n.intlMessage) : c.formatMessage(a.intlMessage)
                 }),
@@ -8073,18 +8058,18 @@
                 onClick: () => g(!d),
                 ...i,
                 children: [n && a?.targets?.indexOf(n) >= 0 ? c.formatMessage(n.intlMessage) : c.formatMessage(a.intlMessage), (0, l.jsx)("img", {
-                  src: wn,
+                  src: hn,
                   alt: ""
                 })]
               }, a.intlMessage.defaultMessage)
-            }), (0, l.jsx)(Ln, {
+            }), (0, l.jsx)(Tn, {
               isOpen: d,
               onClose: () => g(!1),
-              children: (0, l.jsx)(Tn, {
+              children: (0, l.jsx)(Nn, {
                 isOpen: d,
                 openerRef: m,
                 isMobile: r,
-                children: a.targets?.map((e => (0, l.jsx)(zn, {
+                children: a.targets?.map((e => (0, l.jsx)(Cn, {
                   "aria-label": c.formatMessage(_e.search_target_aria_label, {
                     target: c.formatMessage(e.intlMessage)
                   }),
@@ -8093,7 +8078,7 @@
                 }, e.intlMessage.defaultMessage)))
               })
             })]
-          }) : (0, l.jsx)(Sn, {
+          }) : (0, l.jsx)(yn, {
             "aria-label": c.formatMessage(_e.search_target_aria_label, {
               target: c.formatMessage(a.intlMessage)
             }),
@@ -8103,12 +8088,12 @@
             children: c.formatMessage(a.intlMessage)
           }, a.tab)
         },
-        En = {
+        In = {
           secondaryNavigationSlide: "rockstargames-modules-core-headerb17059127d33dc4c94ee131eb131fb19",
           secondaryNavigationOverlay: "rockstargames-modules-core-headerc7e991fff98d1e6d8c35f5c74f6b5b95",
           open: "rockstargames-modules-core-headered23f58994f4b57468fdb9e4c40bb38c"
         },
-        Pn = e => {
+        Ln = e => {
           let {
             children: a,
             isOpen: t,
@@ -8117,25 +8102,25 @@
             onMouseAway: r,
             style: i
           } = e;
-          const o = t ? [En.open] : [],
+          const o = t ? [In.open] : [],
             c = e => {
               "Escape" === e.key && s?.()
             };
           return (0, _.useEffect)((() => (t ? window.addEventListener("keyup", c) : window.removeEventListener("keyup", c), () => window.removeEventListener("keyup", c))), [c, t]), t ? (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsx)("div", {
-              className: [En.secondaryNavigationOverlay, ...o].join(" "),
+              className: [In.secondaryNavigationOverlay, ...o].join(" "),
               onClick: n,
               onMouseEnter: r,
               style: {
                 ...i
               }
             }), a && (0, l.jsx)("div", {
-              className: [En.secondaryNavigationSlide, ...o].join(" "),
+              className: [In.secondaryNavigationSlide, ...o].join(" "),
               children: a
             })]
           }) : null
         },
-        Dn = e => {
+        An = e => {
           let {
             handleSearch: a,
             handleSearchKeypress: t,
@@ -8173,11 +8158,11 @@
               type: "button",
               onClick: h,
               children: (0, l.jsx)("img", {
-                src: kn,
+                src: pn,
                 alt: p.formatMessage(i ? _e.search_close_button : _e.search_open_button)
               })
-            }), (0, l.jsx)(fn.M, {
-              children: i && (0, l.jsxs)(hn.E.div, {
+            }), (0, l.jsx)(vn.M, {
+              children: i && (0, l.jsxs)(un.E.div, {
                 initial: {
                   opacity: 0
                 },
@@ -8188,11 +8173,11 @@
                   opacity: 0
                 },
                 transition: b,
-                children: [(0, l.jsx)(Pn, {
+                children: [(0, l.jsx)(Ln, {
                   isOpen: !m,
                   onEscapeKey: k,
                   onMouseClick: k
-                }), (0, l.jsxs)(hn.E.div, {
+                }), (0, l.jsxs)(un.E.div, {
                   className: "rockstargames-modules-core-headerbcdd6908ee6f75b884724b42304c4fa0",
                   initial: {
                     height: 0,
@@ -8215,7 +8200,7 @@
                         type: "button",
                         onClick: a,
                         children: (0, l.jsx)("img", {
-                          src: kn,
+                          src: pn,
                           alt: p.formatMessage(_e.search_action)
                         })
                       })
@@ -8233,7 +8218,7 @@
                       })
                     }), (0, l.jsx)("div", {
                       className: "rockstargames-modules-core-headerc52c2aba0e44186a883c1f2955167cde",
-                      children: pn.targets.map(((e, a) => (0, l.jsx)(An, {
+                      children: mn.targets.map(((e, a) => (0, l.jsx)(zn, {
                         target: e,
                         onClick: e => n(e, a),
                         selected: g === a,
@@ -8245,7 +8230,7 @@
                         type: "button",
                         onClick: h,
                         children: (0, l.jsx)("img", {
-                          src: bn,
+                          src: fn,
                           alt: p.formatMessage(_e.search_close_button)
                         })
                       })
@@ -8260,14 +8245,14 @@
             })]
           })
         },
-        Vn = {
+        En = {
           search: "rockstargames-modules-core-headerff2a3a5885c54cc839c3684a72ac24be",
           targetsOuter: "rockstargames-modules-core-headerb8edda6b9b58803aa76c1d591cb6c750",
           hasScroll: "rockstargames-modules-core-headerf4a1a19cd54b9fdacba83551d7b595fd",
           targets: "rockstargames-modules-core-headerb85e2ca642065ab25737f4335826185c",
           errorMessage: "rockstargames-modules-core-headere03104e3157e0392e02406c0b163e2b3"
         },
-        On = e => {
+        Pn = e => {
           let {
             handleSearch: a,
             handleSearchKeypress: t,
@@ -8314,12 +8299,12 @@
             }
           })), (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsxs)("div", {
-              className: Vn.search,
+              className: En.search,
               children: [(0, l.jsx)("button", {
                 type: "button",
                 onClick: () => i ? a() : s(!0),
                 children: (0, l.jsx)("img", {
-                  src: kn,
+                  src: pn,
                   alt: p.formatMessage(_e.search_action)
                 })
               }), (0, l.jsx)("input", {
@@ -8335,16 +8320,16 @@
                 type: "button",
                 onClick: () => s(!1),
                 children: (0, l.jsx)("img", {
-                  src: bn,
+                  src: fn,
                   alt: p.formatMessage(_e.search_close_button)
                 })
               })]
             }), i && (0, l.jsxs)("div", {
-              className: [Vn.targetsOuter, h ? Vn.hasScroll : ""].join(" "),
+              className: [En.targetsOuter, h ? En.hasScroll : ""].join(" "),
               children: [(0, l.jsx)("div", {
-                className: Vn.targets,
+                className: En.targets,
                 ref: f,
-                children: pn.targets.map(((e, a) => (0, l.jsx)(An, {
+                children: mn.targets.map(((e, a) => (0, l.jsx)(zn, {
                   target: e,
                   selected: g === a,
                   selectedTarget: d,
@@ -8352,15 +8337,15 @@
                   isMobile: !0
                 }, e.tab)))
               }), v && (0, l.jsx)("div", {
-                className: Vn.errorMessage,
+                className: En.errorMessage,
                 "aria-live": "polite",
                 children: v
               })]
             })]
           })
         },
-        Gn = "global-nav-search",
-        Bn = e => {
+        Dn = "global-nav-search",
+        Vn = e => {
           let {
             ...a
           } = e;
@@ -8369,12 +8354,12 @@
             search: n
           } = (0, Q.useLocation)(), {
             currentSite: s
-          } = ge(), [r] = (0, Q.useSearchParams)(), [i, c] = (0, _.useState)(""), [d, g] = ve(), [m, v] = (0, _.useState)(!1), [p, f] = (0, _.useState)(0), [h, k] = (0, _.useState)(pn.targets[0]), [b, w] = (0, _.useState)(""), y = (() => {
+          } = ge(), [r] = (0, Q.useSearchParams)(), [i, c] = (0, _.useState)(""), [d, g] = ve(), [m, v] = (0, _.useState)(!1), [p, f] = (0, _.useState)(0), [h, k] = (0, _.useState)(mn.targets[0]), [b, w] = (0, _.useState)(""), y = (() => {
             const e = (0, Q.useNavigate)(),
               {
                 currentSite: a
               } = ge(),
-              t = cn();
+              t = rn();
             return (n, s) => {
               const r = s.domain !== a?.site,
                 i = {
@@ -8384,7 +8369,7 @@
                 o = r ? t(i).href : i.path;
               return r ? window.location.href = o : e ? e(o) : window.history.pushState({}, "", o), []
             }
-          })(), x = ue(), M = (0, o.Z)(), S = x || d === Gn, N = /[*?\\<>&%@:~]/g, C = e => {
+          })(), x = ue(), M = (0, o.Z)(), S = x || d === Dn, N = /[*?\\<>&%@:~]/g, C = e => {
             if ("" === i) return !1;
             e.length > 100 && c(e.substring(0, 100));
             const a = e.split(/\s+/),
@@ -8407,17 +8392,17 @@
           }), []), (0, _.useEffect)((() => {
             const e = s?.site === u.z.www && x,
               a = s?.site === u.z.socialClub && x;
-            if (x || (f(0), k(pn.targets[0])), e) {
+            if (x || (f(0), k(mn.targets[0])), e) {
               const e = r.get("q"),
                 a = r.get("tab");
               if (e && (c(e), C(e)), a) {
-                const e = pn.targets.findIndex((e => e.tab === a));
-                f(e), k(pn.targets[e])
+                const e = mn.targets.findIndex((e => e.tab === a));
+                f(e), k(mn.targets[e])
               }
             }
             if (a) {
-              const e = pn.targets.findIndex((e => e.tab === u.z.socialClub)),
-                a = pn.targets[e].targets,
+              const e = mn.targets.findIndex((e => e.tab === u.z.socialClub)),
+                a = mn.targets[e].targets,
                 n = a?.find((e => e.location.path.startsWith(t))),
                 s = t.split("/")[2];
               s && c(s), f(e), n && k(n)
@@ -8431,7 +8416,7 @@
             handleSearchTargetSelect: (e, a) => {
               k(e), f(a), C(i) && y(i, e.location)
             },
-            setIsSearchOpen: () => g(Gn),
+            setIsSearchOpen: () => g(Dn),
             setSearchQuery: c,
             isSearchOpen: S,
             searchQuery: i,
@@ -8441,14 +8426,14 @@
             searchError: b,
             maxSearchLength: 100
           };
-          return m ? (0, l.jsx)(On, {
+          return m ? (0, l.jsx)(Pn, {
             ...T,
             ...a
-          }) : (0, l.jsx)(Dn, {
+          }) : (0, l.jsx)(An, {
             ...T
           })
         },
-        Rn = e => {
+        On = e => {
           let {
             cta: a,
             search: t = !0,
@@ -8458,7 +8443,7 @@
           return (0, l.jsxs)("div", {
             className: "rockstargames-modules-core-headerd755a8be16d6c9603965d6d61ce44387",
             children: [a && (0, l.jsx)("div", {
-              children: (0, l.jsx)(un, {
+              children: (0, l.jsx)(gn, {
                 variant: a.variant,
                 location: a.location,
                 dataTestId: a.dataTestId,
@@ -8467,17 +8452,17 @@
                 target: a.target,
                 children: s.formatMessage(a.intlMessage)
               })
-            }), t && (0, l.jsx)(Bn, {}), (0, l.jsxs)("div", {
-              children: [(0, l.jsx)(pa, {}), !n && (0, l.jsx)(sn, {})]
+            }), t && (0, l.jsx)(Vn, {}), (0, l.jsxs)("div", {
+              children: [(0, l.jsx)(pa, {}), !n && (0, l.jsx)(an, {})]
             })]
           })
         },
-        Fn = {
+        Gn = {
           navigationItem: "rockstargames-modules-core-headere4791244cfb12101d21ef44f3e26ac97",
           active: "rockstargames-modules-core-headerbe8bcc6c46d70212d01dc83c68e67c0a"
         },
-        $n = ["pc", "ps4", "ps5", "xboxone", "xboxsx"],
-        qn = e => {
+        Bn = ["pc", "ps4", "ps5", "xboxone", "xboxsx"],
+        Rn = e => {
           const {
             pathname: a
           } = (0, Q.useLocation)(), {
@@ -8487,13 +8472,13 @@
             if (e?.domain !== t?.site) return null;
             let n;
             if (t?.site === u.z.socialClub) {
-              const e = RegExp(`/(${$n.join("|")})`);
+              const e = RegExp(`/(${Bn.join("|")})`);
               n = a.match(e) ? a.replace(e, "") : a
             } else n = a;
             return (0, Q.matchPath)(e?.path || "", n)
           })) : []
         },
-        Un = e => {
+        Fn = e => {
           let {
             text: a,
             type: t,
@@ -8505,9 +8490,9 @@
             target: _,
             ...c
           } = e;
-          const [d] = qn([n]), g = t === ln;
-          return (0, l.jsxs)(mn, {
-            className: [Fn.navigationItem, d ? Fn.active : ""].join(" "),
+          const [d] = Rn([n]), g = t === on;
+          return (0, l.jsxs)(ln, {
+            className: [Gn.navigationItem, d ? Gn.active : ""].join(" "),
             location: n,
             isLegacy: s,
             type: t,
@@ -8519,16 +8504,16 @@
             ...c,
             children: [a, g && (0, l.jsx)("img", {
               alt: "",
-              src: yn
+              src: kn
             })]
           })
         },
-        Hn = {
+        $n = {
           navigationDropdownButton: "rockstargames-modules-core-headera3a570b3fc00ad9e0274623661e88c7a",
           open: "rockstargames-modules-core-headerdbc174ea06ad91b5938af1465fdd3696",
           active: "rockstargames-modules-core-headerdb65254f84c5afcf987b23948ce1cf64"
         },
-        Wn = e => {
+        qn = e => {
           let {
             text: a,
             isOpen: t,
@@ -8542,7 +8527,7 @@
           const {
             track: d
           } = te(), g = (0, _.useCallback)((() => {
-            d(rn(void 0, "", i, o)), n()
+            d(tn(void 0, "", i, o)), n()
           }), [i, o, t, n]), m = (0, _.useMemo)((() => {
             if (!r) return;
             const e = (a, t) => {
@@ -8550,23 +8535,23 @@
               return n = t.children ? t.children.reduce(e, []) : [t.location], [...a, ...n]
             };
             return r.reduce(e, [])
-          }), [r]), v = qn(m), u = v?.some(Boolean);
+          }), [r]), v = Rn(m), u = v?.some(Boolean);
           return (0, l.jsx)("div", {
-            className: Hn.navigationDropdown,
+            className: $n.navigationDropdown,
             ref: s,
             children: (0, l.jsxs)("button", {
-              className: [Hn.navigationDropdownButton, u ? Hn.active : "", t ? Hn.open : ""].join(" "),
+              className: [$n.navigationDropdownButton, u ? $n.active : "", t ? $n.open : ""].join(" "),
               type: "button",
               "data-testid": c || "navDropdown",
               onClick: g,
               children: [a, (0, l.jsx)("img", {
-                src: wn,
+                src: hn,
                 alt: ""
               })]
             })
           })
         },
-        Jn = e => {
+        Un = e => {
           let {
             title: a,
             location: t,
@@ -8579,7 +8564,7 @@
           } = e;
           return (0, l.jsx)("div", {
             className: "rockstargames-modules-core-headerc2b06d9afe0933250fc72b9117858265",
-            children: (0, l.jsx)(mn, {
+            children: (0, l.jsx)(ln, {
               location: t,
               gaText: s,
               gaBreadCrumb: r,
@@ -8593,13 +8578,12 @@
             })
           }, a)
         },
-        Zn = {
+        Hn = {
           domain: u.z.www,
           path: "/games"
         },
-        Xn = () => {
-          const e = (0, o.Z)(),
-            a = Ba();
+        Wn = () => {
+          const e = (0, o.Z)();
           return (0, l.jsxs)("div", {
             className: "rockstargames-modules-core-headerf4a613c7c0cc9bef8df3ee832d883ead",
             "data-testid": "gamesMenu",
@@ -8611,31 +8595,31 @@
                   children: e.formatMessage(_e.games_menu_featured)
                 })
               }), (0, l.jsx)("div", {
-                children: (0, l.jsxs)(mn, {
+                children: (0, l.jsxs)(ln, {
                   className: "rockstargames-modules-core-headera3a0b6b909900e4677b64d48a0f9192d",
                   gaText: _e.games_menu_view_all.defaultMessage,
                   gaBreadCrumb: `Games > ${_e.games_menu_view_all.defaultMessage}`,
-                  location: Zn,
+                  location: Hn,
                   children: [e.formatMessage(_e.games_menu_view_all), (0, l.jsx)("img", {
-                    src: xn,
+                    src: bn,
                     alt: e.formatMessage(_e.nav_view_all_games)
                   })]
                 })
               })]
             }), (0, l.jsx)("div", {
               className: "rockstargames-modules-core-headerbbf167776ba1b263a8376030db8c6f35",
-              children: pe.map((t => (0, l.jsx)(Jn, {
-                title: e.formatMessage(t.intlMessage),
-                gaText: t.intlMessage.defaultMessage,
-                gaBreadCrumb: `Games > ${t.intlMessage.defaultMessage}`,
-                location: t.location,
-                imgUrl: a(t.imageSrc),
-                dataTestId: t.dataTestId
-              }, t.imageSrc)))
+              children: pe.map((a => (0, l.jsx)(Un, {
+                title: e.formatMessage(a.intlMessage),
+                gaText: a.intlMessage.defaultMessage,
+                gaBreadCrumb: `Games > ${a.intlMessage.defaultMessage}`,
+                location: a.location,
+                imgUrl: (0, b.kX)(!0) + a.imageSrc,
+                dataTestId: a.dataTestId
+              }, a.imageSrc)))
             })]
           })
         },
-        Kn = {
+        Jn = {
           subMenuDropdownContainer: "rockstargames-modules-core-headerae2bc6580acf5b4362b457cc75833bb8",
           nested: "rockstargames-modules-core-headerd6f17c0b3966d498f9a2fc3a9f9de38d",
           subMenuDropdownButton: "rockstargames-modules-core-headerdab571ebee31eca114e2a074de69472c",
@@ -8643,16 +8627,16 @@
           openChevron: "rockstargames-modules-core-headerdb0c8d634787e7aaf33e858747e52b05",
           subMenuDropdownItems: "rockstargames-modules-core-headerde63d9fdafaf4995f8b95fdef3a8d551"
         },
-        Qn = {
+        Zn = {
           subMenuItem: "rockstargames-modules-core-headere7cf207577cfec29877f7387fa7cb412",
           nested: "rockstargames-modules-core-headerfb8268fb2131202c7ee66ce7f684012f"
         },
-        Yn = {
+        Xn = {
           navigationLink: "rockstargames-modules-core-headerc638ccc027700497fe811881feb02f1e",
           active: "rockstargames-modules-core-headerf53cd2bce32edf82c615316c826f8477"
         },
-        es = e => [Yn.navigationLink, e ? Yn.active : ""].join(" "),
-        as = e => {
+        Kn = e => [Xn.navigationLink, e ? Xn.active : ""].join(" "),
+        Qn = e => {
           let {
             text: a,
             type: t,
@@ -8666,10 +8650,10 @@
             dataTestId: d,
             ...g
           } = e;
-          const m = t === ln,
-            [v] = qn(n ? [n] : void 0);
-          return (0, l.jsxs)(mn, {
-            className: [es(Boolean(v)), Qn.subMenuItem, o ? Qn.nested : "", s].join(" "),
+          const m = t === on,
+            [v] = Rn(n ? [n] : void 0);
+          return (0, l.jsxs)(ln, {
+            className: [Kn(Boolean(v)), Zn.subMenuItem, o ? Zn.nested : "", s].join(" "),
             location: n,
             isLegacy: r,
             type: t,
@@ -8682,13 +8666,13 @@
             ...g,
             children: [a, m && (0, l.jsx)("img", {
               alt: "",
-              src: yn
+              src: kn
             })]
           })
         },
-        ts = "nav-dropdown",
-        ns = (e, a) => !(!(e?.path && e.path.indexOf("{username}") >= 0) || a),
-        ss = e => {
+        Yn = "nav-dropdown",
+        es = (e, a) => !(!(e?.path && e.path.indexOf("{username}") >= 0) || a),
+        as = e => {
           let {
             text: a,
             navChildren: t,
@@ -8708,7 +8692,7 @@
             null === v && d(null)
           }), [v]);
           const w = e => {
-              p(rn(void 0, "", n, s)), d(e ? c : null)
+              p(tn(void 0, "", n, s)), d(e ? c : null)
             },
             y = e => {
               "ArrowLeft" === e.code && (w(!1), f?.current?.focus())
@@ -8733,12 +8717,12 @@
               }
             };
           return (0, l.jsxs)("div", {
-            className: [Kn.subMenuDropdownContainer, r ? Kn.nested : ""].join(" "),
+            className: [Jn.subMenuDropdownContainer, r ? Jn.nested : ""].join(" "),
             ...m,
             "data-ui-name": "sub-menu-item",
             children: [(0, l.jsxs)("button", {
               type: "button",
-              className: [Kn.subMenuDropdownButton, r ? Kn.nested : "", g ? Kn.open : ""].join(" "),
+              className: [Jn.subMenuDropdownButton, r ? Jn.nested : "", g ? Jn.open : ""].join(" "),
               onClick: () => w(!g),
               onKeyUp: e => {
                 "Enter" === e.code && w(!0), "ArrowRight" === e.code && w(!0), "ArrowLeft" === e.code && w(!1)
@@ -8746,18 +8730,18 @@
               ref: f,
               "data-testid": i,
               children: [a, (0, l.jsx)("img", {
-                src: wn,
-                className: Kn.openChevron,
+                src: hn,
+                className: Jn.openChevron,
                 alt: ""
               })]
-            }), (0, l.jsx)(fn.M, {
-              children: g && t && (0, l.jsx)(hn.E.div, {
-                className: Kn.subMenuDropdownItems,
+            }), (0, l.jsx)(vn.M, {
+              children: g && t && (0, l.jsx)(un.E.div, {
+                className: Jn.subMenuDropdownItems,
                 variants: M,
                 animate: "open",
                 initial: "closed",
                 exit: "closed",
-                children: t.map((e => ns(e.location, b.nickname) ? null : e.type === ts ? (0, l.jsx)(ss, {
+                children: t.map((e => es(e.location, b.nickname) ? null : e.type === Yn ? (0, l.jsx)(as, {
                   text: u.formatMessage(e.intlMessage),
                   navChildren: e.children,
                   gaText: e.intlMessage.defaultMessage,
@@ -8767,7 +8751,7 @@
                   subMenuId: `desktop-submenu-${e.intlMessage.defaultMessage}`,
                   isOpen: h === `desktop-submenu-${e.intlMessage.defaultMessage}`,
                   toggleOpen: k
-                }, e.intlMessage.defaultMessage) : (0, l.jsx)(as, {
+                }, e.intlMessage.defaultMessage) : (0, l.jsx)(Qn, {
                   text: u.formatMessage(e.intlMessage),
                   type: e.type,
                   location: e.location,
@@ -8782,8 +8766,8 @@
             })]
           })
         },
-        rs = ss,
-        is = {
+        ts = as,
+        ns = {
           enter: {
             opacity: 1,
             zIndex: 101,
@@ -8798,7 +8782,7 @@
             }
           }
         },
-        os = e => {
+        ss = e => {
           let {
             intlMessage: a,
             type: t,
@@ -8832,8 +8816,8 @@
             b(null)
           }), [h.pathname, h.key]);
           const N = c ? `${c} > ${a.defaultMessage}` : a.defaultMessage;
-          return t === dn ? (0, l.jsxs)(l.Fragment, {
-            children: [(0, l.jsx)(Wn, {
+          return t === _n ? (0, l.jsxs)(l.Fragment, {
+            children: [(0, l.jsx)(qn, {
               text: u.formatMessage(a),
               gaText: a.defaultMessage,
               gaBreadCrumb: N,
@@ -8844,14 +8828,14 @@
               dataTestId: m,
               ...v
             }), !g && (0, l.jsxs)(l.Fragment, {
-              children: [(0, l.jsx)(Pn, {
+              children: [(0, l.jsx)(Ln, {
                 isOpen: M,
                 onMouseClick: () => b(null),
                 onEscapeKey: () => b(null)
-              }), (0, l.jsx)(Tn, {
+              }), (0, l.jsx)(Nn, {
                 isOpen: M,
                 openerRef: p,
-                children: s?.map((e => ns(e.location, w.nickname) ? null : e.type === dn ? (0, l.jsx)(rs, {
+                children: s?.map((e => es(e.location, w.nickname) ? null : e.type === _n ? (0, l.jsx)(ts, {
                   text: u.formatMessage(e.intlMessage),
                   navChildren: e.children,
                   gaText: e.intlMessage.defaultMessage,
@@ -8860,7 +8844,7 @@
                   subMenuId: `desktop-submenu-${e.intlMessage.defaultMessage}`,
                   isOpen: y === `desktop-submenu-${e.intlMessage.defaultMessage}`,
                   toggleOpen: x
-                }, `desktop-submenu-${e.intlMessage.defaultMessage}`) : (0, l.jsx)(as, {
+                }, `desktop-submenu-${e.intlMessage.defaultMessage}`) : (0, l.jsx)(Qn, {
                   location: e.location,
                   text: u.formatMessage(e.intlMessage),
                   type: e.type,
@@ -8872,8 +8856,8 @@
                 }, e.intlMessage.defaultMessage)))
               })]
             })]
-          }) : t === gn ? (0, l.jsxs)(l.Fragment, {
-            children: [(0, l.jsx)(Wn, {
+          }) : t === cn ? (0, l.jsxs)(l.Fragment, {
+            children: [(0, l.jsx)(qn, {
               text: u.formatMessage(a),
               gaText: a.defaultMessage,
               gaBreadCrumb: c ? `${c} > ${a.defaultMessage}` : a.defaultMessage,
@@ -8881,23 +8865,23 @@
               isOpen: M,
               dataTestId: m,
               ...v
-            }), !g && (0, l.jsx)(Pn, {
+            }), !g && (0, l.jsx)(Ln, {
               isOpen: !0,
               onMouseClick: () => b(null),
               onEscapeKey: () => b(null),
               style: S,
-              children: (0, l.jsx)(hn.E.div, {
+              children: (0, l.jsx)(un.E.div, {
                 initial: "exit",
                 animate: M ? "enter" : "exit",
                 transition: {
                   ease: "easeInOut",
                   duration: .3
                 },
-                variants: is,
-                children: (0, l.jsx)(Xn, {})
+                variants: ns,
+                children: (0, l.jsx)(Wn, {})
               })
             })]
-          }) : n ? ns(n, w.nickname) ? null : (0, l.jsx)(Un, {
+          }) : n ? es(n, w.nickname) ? null : (0, l.jsx)(Fn, {
             location: n,
             type: t,
             text: u.formatMessage(a),
@@ -8909,7 +8893,7 @@
             ...v
           }) : null
         },
-        _s = e => {
+        rs = e => {
           let {
             links: a
           } = e;
@@ -8940,7 +8924,7 @@
             className: "rockstargames-modules-core-headerf3e86ba2e4808f8537da93ae608b41fd",
             "aria-hidden": "true",
             children: a.map((e => (0, l.jsx)("li", {
-              children: (0, l.jsx)(os, {
+              children: (0, l.jsx)(ss, {
                 intlMessage: e.intlMessage,
                 type: e.type,
                 target: e.target,
@@ -8956,7 +8940,7 @@
             children: [(0, l.jsxs)("ul", {
               ref: i,
               children: [t.map((e => (0, l.jsx)("li", {
-                children: (0, l.jsx)(os, {
+                children: (0, l.jsx)(ss, {
                   intlMessage: e.intlMessage,
                   type: e.type,
                   target: e.target,
@@ -8966,9 +8950,9 @@
                   dataTestId: e?.dataTestId
                 })
               }, `desktop-nav-link-${e.text}`))), s.length > 0 && (0, l.jsx)("li", {
-                children: (0, l.jsx)(os, {
+                children: (0, l.jsx)(ss, {
                   intlMessage: _e.nav_more_dropdown,
-                  type: dn,
+                  type: _n,
                   navChildren: s,
                   navKey: "more",
                   dataTestId: "navMore"
@@ -8977,61 +8961,61 @@
             }), d]
           })
         },
-        cs = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/4f9915b608d2f8e73cc53e3f08205b71.png",
-        ls = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/3a6910245d0cd177a1c2228d2f661b86.svg",
-        ds = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/b2e6fe18e15f1109b7d442881fccb9a6.svg",
-        gs = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/65f1aec1603710b9836acf07cf9ac79d.svg",
-        ms = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/d183c567f4254a34a55e0bc49cf69fe6.svg",
-        vs = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/70d4774a8eb28cbdc69793504746f961.svg",
-        us = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/01dcdecd53de88ec599ab76ce2863fcd.svg",
-        ps = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/732efc56393d89076732e76b0a2b55b2.svg",
-        fs = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/1c2406b2d84fbe619ab07b1971ecf579.svg",
-        hs = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/02cb5f725e6afe939eba7948707242f5.svg",
-        ks = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/6a7dfd2058127cb6f5adca6c9b1d91cc.png",
-        bs = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/0e39e530c8e7a5b1a3243edeaaf0b223.svg",
-        ws = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/6177d74645c9cd4e1bad75e86cadd1f8.png",
-        ys = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/9d2753ceddb2213d956d51d369985513.svg",
-        xs = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/fc25f8fbec3c2644cf5cfd072937df26.svg",
-        Ms = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/854bac2f4c6c23fb7ca33f9407ac3c0d.svg",
-        Ss = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/7ccc721c72fc5553108c7e70b0778dba.svg",
-        Ns = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/9333c000d509d8c82858967b42ff46f8.svg",
-        Cs = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/a73128cb6201d9d830f2ac4802ad6c2f.svg",
-        js = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/63c149607e42c3f7a8988ef21d53ec97.svg",
-        Ts = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/36e8ec97940586d12e63320c75c99d03.svg",
-        zs = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/ceb3dacaa63b2f3036670bbf7e677dc2.png",
-        Is = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/790f72b723ee040bae9e43e3d2785c89.svg",
-        Ls = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/d866f8e4ea468c7ad8fb5d301228c1b2.svg",
-        As = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/c3f251fe931f3533cb980bbc23e599b8.svg",
-        Es = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/ba94346e4b206acc56976b59974bffbe.png",
-        Ps = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5aa516901becb336d1d5ddc08401e490.png",
-        Ds = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/a4863c27d856c6ce47b49aed738df14a.png",
-        Vs = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/0333d6f30ad108c77944b8faf6f34c03.png",
-        Os = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/fce5da0e35899b99c836bd73e2f7aa7a.png",
-        Gs = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/753452f0a8e31d63b8cc1b3337ca8dd1.png",
-        Bs = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/1b2f9181adacf5b0713a311fb0065164.svg",
-        Rs = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/afce1282be848202a965031813991b09.svg",
-        Fs = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5e3cf24e53a1fb96410ddbe7d17ca96f.svg",
-        $s = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/27bc39e322a4e55dc8b34fa4543269b8.svg",
-        qs = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/8f508003b671cb320749ffc1eb2aab25.svg",
-        Us = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/7384158b621d54ecf527a5f9dee06bbc.svg",
-        Hs = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/56ad67de5fcb23d5170c6ab1c22090a9.png",
-        Ws = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/95c570982247f87a5720d3b09edea287.png",
-        Js = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/76ea0a9986ebf83e1bc9be3e03a0433f.png",
-        Zs = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/2b4f7013cd8954b8f41c5bc60173b1e6.svg",
-        Xs = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/6168a999187a8807caacf4d106a60a80.svg",
-        Ks = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/dfc0cce899459d99bc2403b124a5d30d.svg",
-        Qs = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/afa9c45d4c8ee52983534b4be5504ff0.svg",
-        Ys = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/0e24eba17ceb19c8e953425fdc8f69bf.svg",
-        er = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/95bd5f94c3522fcf1ebc9e1254522379.svg",
-        ar = e => s[e] ? s[e] : null,
-        tr = () => (0, l.jsx)("div", {
+        is = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/4f9915b608d2f8e73cc53e3f08205b71.png",
+        os = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/3a6910245d0cd177a1c2228d2f661b86.svg",
+        _s = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/b2e6fe18e15f1109b7d442881fccb9a6.svg",
+        cs = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/65f1aec1603710b9836acf07cf9ac79d.svg",
+        ls = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/d183c567f4254a34a55e0bc49cf69fe6.svg",
+        ds = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/70d4774a8eb28cbdc69793504746f961.svg",
+        gs = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/01dcdecd53de88ec599ab76ce2863fcd.svg",
+        ms = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/732efc56393d89076732e76b0a2b55b2.svg",
+        vs = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/1c2406b2d84fbe619ab07b1971ecf579.svg",
+        us = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/02cb5f725e6afe939eba7948707242f5.svg",
+        ps = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/6a7dfd2058127cb6f5adca6c9b1d91cc.png",
+        fs = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/0e39e530c8e7a5b1a3243edeaaf0b223.svg",
+        hs = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/6177d74645c9cd4e1bad75e86cadd1f8.png",
+        ks = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/9d2753ceddb2213d956d51d369985513.svg",
+        bs = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/fc25f8fbec3c2644cf5cfd072937df26.svg",
+        ws = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/854bac2f4c6c23fb7ca33f9407ac3c0d.svg",
+        ys = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/7ccc721c72fc5553108c7e70b0778dba.svg",
+        xs = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/9333c000d509d8c82858967b42ff46f8.svg",
+        Ms = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/a73128cb6201d9d830f2ac4802ad6c2f.svg",
+        Ss = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/63c149607e42c3f7a8988ef21d53ec97.svg",
+        Ns = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/36e8ec97940586d12e63320c75c99d03.svg",
+        Cs = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/ceb3dacaa63b2f3036670bbf7e677dc2.png",
+        js = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/790f72b723ee040bae9e43e3d2785c89.svg",
+        Ts = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/d866f8e4ea468c7ad8fb5d301228c1b2.svg",
+        zs = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/c3f251fe931f3533cb980bbc23e599b8.svg",
+        Is = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/ba94346e4b206acc56976b59974bffbe.png",
+        Ls = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5aa516901becb336d1d5ddc08401e490.png",
+        As = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/a4863c27d856c6ce47b49aed738df14a.png",
+        Es = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/0333d6f30ad108c77944b8faf6f34c03.png",
+        Ps = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/fce5da0e35899b99c836bd73e2f7aa7a.png",
+        Ds = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/753452f0a8e31d63b8cc1b3337ca8dd1.png",
+        Vs = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/1b2f9181adacf5b0713a311fb0065164.svg",
+        Os = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/afce1282be848202a965031813991b09.svg",
+        Gs = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5e3cf24e53a1fb96410ddbe7d17ca96f.svg",
+        Bs = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/27bc39e322a4e55dc8b34fa4543269b8.svg",
+        Rs = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/8f508003b671cb320749ffc1eb2aab25.svg",
+        Fs = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/7384158b621d54ecf527a5f9dee06bbc.svg",
+        $s = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/56ad67de5fcb23d5170c6ab1c22090a9.png",
+        qs = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/95c570982247f87a5720d3b09edea287.png",
+        Us = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/76ea0a9986ebf83e1bc9be3e03a0433f.png",
+        Hs = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/2b4f7013cd8954b8f41c5bc60173b1e6.svg",
+        Ws = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/6168a999187a8807caacf4d106a60a80.svg",
+        Js = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/dfc0cce899459d99bc2403b124a5d30d.svg",
+        Zs = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/afa9c45d4c8ee52983534b4be5504ff0.svg",
+        Xs = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/0e24eba17ceb19c8e953425fdc8f69bf.svg",
+        Ks = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/95bd5f94c3522fcf1ebc9e1254522379.svg",
+        Qs = e => s[e] ? s[e] : null,
+        Ys = () => (0, l.jsx)("div", {
           className: "rockstargames-modules-core-headerc5182c35b0d08cbfd5c48a29103c987d"
         }),
-        nr = {
+        er = {
           quickAccess: "rockstargames-modules-core-headerdd98ab26460bc8af09e869527e025790",
           link: "rockstargames-modules-core-headerb9254c00c41acd171bd25c1a6e49171e"
         },
-        sr = () => {
+        ar = () => {
           const e = (0, o.Z)(),
             a = {
               home: {
@@ -9049,24 +9033,24 @@
             },
             t = "Quick Access";
           return (0, l.jsxs)("ul", {
-            className: nr.quickAccess,
+            className: er.quickAccess,
             children: [(0, l.jsx)("li", {
-              children: (0, l.jsxs)(mn, {
+              children: (0, l.jsxs)(ln, {
                 location: a.home,
-                className: [es(), nr.link].join(" "),
+                className: [Kn(), er.link].join(" "),
                 gaText: _e.nav_quick_access_home.defaultMessage,
                 gaBreadCrumb: `${t} > ${_e.nav_quick_access_home.defaultMessage}`,
                 children: [(0, l.jsx)("img", {
                   alt: "Rockstar Games",
-                  src: Us
+                  src: Fs
                 }), (0, l.jsx)(i.Z, {
                   ..._e.nav_quick_access_home
                 })]
               })
             }), (0, l.jsx)("li", {
-              children: (0, l.jsxs)(mn, {
+              children: (0, l.jsxs)(ln, {
                 location: a.games,
-                className: [es(), nr.link].join(" "),
+                className: [Kn(), er.link].join(" "),
                 gaText: _e.nav_quick_access_games.defaultMessage,
                 gaBreadCrumb: `${t} > ${_e.nav_quick_access_games.defaultMessage}`,
                 children: [(0, l.jsx)("img", {
@@ -9077,9 +9061,9 @@
                 })]
               })
             }), (0, l.jsx)("li", {
-              children: (0, l.jsxs)(mn, {
+              children: (0, l.jsxs)(ln, {
                 location: a.newswire,
-                className: [es(), nr.link].join(" "),
+                className: [Kn(), er.link].join(" "),
                 gaText: _e.nav_quick_access_newswire.defaultMessage,
                 gaBreadCrumb: `${t} > ${_e.nav_quick_access_newswire.defaultMessage}`,
                 children: [(0, l.jsx)("img", {
@@ -9092,8 +9076,8 @@
             })]
           })
         },
-        rr = "quick-access-menu",
-        ir = e => {
+        tr = "quick-access-menu",
+        nr = e => {
           let {
             site: a,
             brand: t,
@@ -9104,7 +9088,7 @@
             [c, d] = (0, _.useState)(null),
             [g, m] = (0, _.useState)(null),
             [v, u] = ve(),
-            p = v === rr;
+            p = v === tr;
           (0, _.useEffect)((() => {
             const e = () => {
               i(window.innerWidth < 1024)
@@ -9117,7 +9101,7 @@
             styles: f,
             attributes: h,
             forceUpdate: k
-          } = (0, Nn.D)(c, g, {
+          } = (0, xn.D)(c, g, {
             placement: "bottom-start",
             modifiers: [{
               name: "offset",
@@ -9139,23 +9123,23 @@
             className: "rockstargames-modules-core-headeracf0fe31775e9e9f76e57a6356c3073d",
             children: [!n && (0, l.jsxs)("div", {
               className: "rockstargames-modules-core-headerae7adffe4295955d4ea126909f0f7027",
-              children: [r && (0, l.jsx)(mn, {
+              children: [r && (0, l.jsx)(ln, {
                 location: {
                   domain: "www",
                   path: "/"
                 },
                 gaText: _e.nav_rockstargames_home.defaultMessage,
                 gaBreadCrumb: _e.nav_rockstargames_home.defaultMessage,
-                children: (0, l.jsx)(tr, {})
+                children: (0, l.jsx)(Ys, {})
               }), !r && (0, l.jsx)("button", {
                 type: "button",
                 className: "rockstargames-modules-core-headerfe08980c15b4c9d647ad67b3e69df46c",
-                onClick: () => u(rr),
+                onClick: () => u(tr),
                 "aria-label": s.formatMessage(_e.nav_rockstargames_logo),
                 ref: d,
-                children: (0, l.jsx)(tr, {})
+                children: (0, l.jsx)(Ys, {})
               }), p && (0, l.jsxs)(l.Fragment, {
-                children: [(0, l.jsx)(Pn, {
+                children: [(0, l.jsx)(Ln, {
                   isOpen: p,
                   onEscapeKey: () => u(null),
                   onMouseClick: () => u(null)
@@ -9166,7 +9150,7 @@
                   },
                   ref: m,
                   ...h.popper,
-                  children: (0, l.jsx)(sr, {})
+                  children: (0, l.jsx)(ar, {})
                 })]
               })]
             }), t && (0, l.jsxs)(l.Fragment, {
@@ -9177,20 +9161,20 @@
                 children: (0, l.jsx)("img", {
                   className: "rockstargames-modules-core-headerae86867dea4ec0a8cdea5642f4c291d3",
                   alt: a,
-                  src: ar(t)
+                  src: Qs(t)
                 })
               })]
             })]
           })
         },
-        or = {
+        sr = {
           header: "rockstargames-modules-core-headerd2dbf5efb1484f71a302d2b217900031",
           fluid: "rockstargames-modules-core-headercfa07fc8efab2e71f97a4b728dee6586",
           fixed: "rockstargames-modules-core-headerfcaaa17901eb60439448b4351d15f0b2",
           title: "rockstargames-modules-core-headere171ca1389a17285caa5dfa568adfac8",
           quickAccessWrapper: "rockstargames-modules-core-headera4ef54292d023f37220cb09dffe7c81a"
         },
-        _r = e => {
+        rr = e => {
           let {
             data: a
           } = e;
@@ -9203,32 +9187,32 @@
             }
           }), []);
           return (0, l.jsxs)("header", {
-            className: [or.header, or.fixed].join(" "),
+            className: [sr.header, sr.fixed].join(" "),
             style: t,
             children: [(0, l.jsx)("div", {
-              className: or.title,
-              children: (0, l.jsx)(ir, {
+              className: sr.title,
+              children: (0, l.jsx)(nr, {
                 site: a.site,
                 brand: a.brand
               })
             }), (0, l.jsx)("div", {
-              className: or.fluid,
-              children: (0, l.jsx)(_s, {
+              className: sr.fluid,
+              children: (0, l.jsx)(rs, {
                 links: a.links
               })
             }), (0, l.jsx)("div", {
-              className: or.fixed,
-              children: (0, l.jsx)(Rn, {
+              className: sr.fixed,
+              children: (0, l.jsx)(On, {
                 cta: a.cta
               })
             })]
           })
         },
-        cr = {
+        ir = {
           hamburger: "rockstargames-modules-core-headerd45fd161655450522fd627346eda32f6",
           open: "rockstargames-modules-core-headerefcc59509afc394cff54203b433d510e"
         },
-        lr = e => {
+        or = e => {
           let {
             toggle: a,
             isMenuOpen: t
@@ -9237,7 +9221,7 @@
             track: n
           } = te();
           return (0, l.jsx)("div", {
-            className: [cr.hamburger, t ? cr.open : ""].join(" "),
+            className: [ir.hamburger, t ? ir.open : ""].join(" "),
             children: (0, l.jsxs)("button", {
               onClick: () => {
                 n({
@@ -9251,7 +9235,7 @@
             })
           })
         },
-        dr = {
+        _r = {
           header: "rockstargames-modules-core-headerc6c3d0fc75c97585f6ca0f5805999412",
           title: "rockstargames-modules-core-headeraa1441b47dbc6f5a653a59ed4d9f9433",
           nav: "rockstargames-modules-core-headere454c30b7535de52d50c84ba33bd6a10",
@@ -9260,22 +9244,21 @@
           navContainer: "rockstargames-modules-core-headerbf0d2e00daa366e9d881eb1631eb799f",
           searchOpen: "rockstargames-modules-core-headerf9ef7f85a5d81d00b1d680003a076fa3"
         },
-        gr = {
+        cr = {
           domain: u.z.www,
           path: "/games"
         },
-        mr = e => {
+        lr = e => {
           let {
             text: a,
             onNavigate: t
           } = e;
-          const n = Ba(),
-            s = (0, o.Z)(),
-            r = (0, _.useRef)(),
-            [c, d] = (0, _.useState)(2.5);
+          const n = (0, o.Z)(),
+            s = (0, _.useRef)(),
+            [r, c] = (0, _.useState)(2.5);
           return (0, _.useEffect)((() => {
             const e = () => {
-              d(window.innerWidth < 768 ? 2.5 : 3.5)
+              c(window.innerWidth < 768 ? 2.5 : 3.5)
             };
             return e(), window.addEventListener("resize", e), () => {
               window.removeEventListener("resize", e)
@@ -9287,36 +9270,36 @@
               className: "rockstargames-modules-core-headerdc05e5d1b9cadf7aaf9ca6bf2115d812",
               children: [(0, l.jsx)("h2", {
                 children: a
-              }), (0, l.jsxs)(mn, {
+              }), (0, l.jsxs)(ln, {
                 gaText: _e.nav_view_all_games.defaultMessage,
                 gaBreadCrumb: `Games > ${_e.nav_view_all_games.defaultMessage}`,
-                location: gr,
+                location: cr,
                 onNavigate: t,
-                className: Yn.navigationLink,
+                className: Xn.navigationLink,
                 children: [(0, l.jsx)(i.Z, {
                   ..._e.nav_view_all_games
                 }), (0, l.jsx)("img", {
-                  src: xn,
-                  alt: s.formatMessage(_e.nav_view_all_games)
+                  src: bn,
+                  alt: n.formatMessage(_e.nav_view_all_games)
                 })]
               })]
-            }), (0, l.jsx)(Xa.tq, {
+            }), (0, l.jsx)(Wa.tq, {
               className: "rockstargames-modules-core-headera91f871c6f287f959df91085cef76f22",
-              ref: r,
+              ref: s,
               spaceBetween: 12.8,
               loop: !1,
               grabCursor: !0,
               centeredSlides: !1,
-              slidesPerView: c,
+              slidesPerView: r,
               speed: 700,
-              children: pe.map((e => (0, l.jsx)(Xa.o5, {
+              children: pe.map((e => (0, l.jsx)(Wa.o5, {
                 className: "rockstargames-modules-core-headere094133e33c8cdf2873ff7e08c34dd0a",
-                children: (0, l.jsx)(Jn, {
-                  title: s.formatMessage(e.intlMessage),
+                children: (0, l.jsx)(Un, {
+                  title: n.formatMessage(e.intlMessage),
                   gaText: e.intlMessage.defaultMessage,
                   gaBreadCrumb: `Games > ${e.intlMessage.defaultMessage}`,
                   location: e.location,
-                  imgUrl: n(e.imageSrc),
+                  imgUrl: (0, b.kX)(!0) + e.imageSrc,
                   onNavigate: t,
                   dataTestId: e.dataTestId
                 })
@@ -9324,7 +9307,7 @@
             })]
           })
         },
-        vr = e => {
+        dr = e => {
           let {
             children: a,
             isOpen: t
@@ -9348,8 +9331,8 @@
                 transition: n
               }
             };
-          return (0, l.jsx)(fn.M, {
-            children: t && (0, l.jsx)(hn.E.div, {
+          return (0, l.jsx)(vn.M, {
+            children: t && (0, l.jsx)(un.E.div, {
               className: "rockstargames-modules-core-headerc69df84ab1249c0ea218884e3459e5cc",
               variants: s,
               animate: "open",
@@ -9359,14 +9342,14 @@
             })
           })
         },
-        ur = {
+        gr = {
           subMenuDropdownContainer: "rockstargames-modules-core-headerd4d2f7b0358d7c2b7c482bea7a243acd",
           subMenuDropdownButton: "rockstargames-modules-core-headerc09e65bd027917e0f29da9a6ef0e91f8",
           open: "rockstargames-modules-core-headerae62683c5e47c10b3260c7a63544e9d1",
           subMenuDropdownItems: "rockstargames-modules-core-headera015481239e04732ecf001df49c29311"
         },
-        pr = {},
-        fr = e => {
+        mr = {},
+        vr = e => {
           let {
             text: a,
             dataTestId: t,
@@ -9380,9 +9363,9 @@
             onNavigate: d,
             ...g
           } = e;
-          const [m] = qn(r ? [r] : void 0), v = n === ln;
-          return (0, l.jsxs)(mn, {
-            className: [es(Boolean(m)), pr.subMenuItem, i].join(" "),
+          const [m] = Rn(r ? [r] : void 0), v = n === on;
+          return (0, l.jsxs)(ln, {
+            className: [Kn(Boolean(m)), mr.subMenuItem, i].join(" "),
             dataTestId: t,
             location: r,
             type: n,
@@ -9395,11 +9378,11 @@
             ...g,
             children: [a, v && (0, l.jsx)("img", {
               alt: "",
-              src: yn
+              src: kn
             })]
           })
         },
-        hr = e => {
+        ur = e => {
           let {
             text: a,
             dataTestId: t,
@@ -9435,27 +9418,27 @@
               }
             };
           return (0, l.jsxs)("div", {
-            className: ur.subMenuDropdownContainer,
+            className: gr.subMenuDropdownContainer,
             ...d,
             children: [(0, l.jsxs)("button", {
               type: "button",
               "data-testid": t,
-              className: [ur.subMenuDropdownButton, _ ? ur.open : ""].join(" "),
+              className: [gr.subMenuDropdownButton, _ ? gr.open : ""].join(" "),
               onClick: () => {
-                m(rn(void 0, "", s, r)), c()
+                m(tn(void 0, "", s, r)), c()
               },
               children: [a, (0, l.jsx)("img", {
-                src: wn,
+                src: hn,
                 alt: ""
               })]
-            }), (0, l.jsx)(fn.M, {
-              children: _ && (0, l.jsx)(hn.E.div, {
-                className: ur.subMenuDropdownItems,
+            }), (0, l.jsx)(vn.M, {
+              children: _ && (0, l.jsx)(un.E.div, {
+                className: gr.subMenuDropdownItems,
                 variants: u,
                 animate: "open",
                 initial: "closed",
                 exit: "closed",
-                children: n.map((e => (0, l.jsx)(fr, {
+                children: n.map((e => (0, l.jsx)(vr, {
                   text: g.formatMessage(e.intlMessage),
                   dataTestId: e.dataTestId,
                   type: e.type,
@@ -9469,7 +9452,7 @@
             })]
           })
         },
-        kr = e => {
+        pr = e => {
           let {
             intlMessage: a,
             dataTestId: t,
@@ -9485,14 +9468,14 @@
           } = e;
           const u = (0, o.Z)(),
             [p, f] = (0, _.useState)(null),
-            [h] = qn(r ? [r] : void 0),
+            [h] = Rn(r ? [r] : void 0),
             k = (0, Q.useLocation)();
           (0, _.useEffect)((() => {
             m()
           }), [k.pathname]);
           const b = c ? `${c} > ${a.defaultMessage}` : a.defaultMessage;
-          if (n === dn) return (0, l.jsxs)(l.Fragment, {
-            children: [(0, l.jsx)(Wn, {
+          if (n === _n) return (0, l.jsxs)(l.Fragment, {
+            children: [(0, l.jsx)(qn, {
               text: u.formatMessage(a),
               dataTestId: t,
               gaText: a.defaultMessage,
@@ -9500,9 +9483,9 @@
               onClick: () => m(),
               isOpen: g,
               ...v
-            }), (0, l.jsx)(vr, {
+            }), (0, l.jsx)(dr, {
               isOpen: g,
-              children: i?.map(((e, a) => e.type === dn ? (0, l.jsx)(hr, {
+              children: i?.map(((e, a) => e.type === _n ? (0, l.jsx)(ur, {
                 text: u.formatMessage(e.intlMessage),
                 dataTestId: e.dataTestId,
                 navChildren: e.children || [],
@@ -9511,7 +9494,7 @@
                 onNavigate: d,
                 isSubMenuOpen: p === a,
                 toggleMenuOpen: () => f(p !== a ? a : null)
-              }, e.intlMessage.defaultMessage) : (0, l.jsx)(fr, {
+              }, e.intlMessage.defaultMessage) : (0, l.jsx)(vr, {
                 location: e.location,
                 dataTestId: e.dataTestId,
                 target: e.target,
@@ -9523,12 +9506,12 @@
               }, e.intlMessage.defaultMessage)))
             })]
           });
-          if (n === gn) return (0, l.jsx)(mr, {
+          if (n === cn) return (0, l.jsx)(lr, {
             text: u.formatMessage(a),
             onNavigate: d
           });
-          const w = n === ln;
-          return (0, l.jsxs)(mn, {
+          const w = n === on;
+          return (0, l.jsxs)(ln, {
             location: r,
             dataTestId: t,
             type: n,
@@ -9536,16 +9519,16 @@
             gaText: a.defaultMessage,
             gaBreadCrumb: b,
             onNavigate: d,
-            className: [es(Boolean(h)), h ? "rockstargames-modules-core-headere316012f5bea2b6722ee4b7d7b466cf2" : ""].join(" "),
+            className: [Kn(Boolean(h)), h ? "rockstargames-modules-core-headere316012f5bea2b6722ee4b7d7b466cf2" : ""].join(" "),
             label: u.formatMessage(a),
             ...v,
             children: [u.formatMessage(a), w && (0, l.jsx)("img", {
               alt: "",
-              src: yn
+              src: kn
             })]
           })
         },
-        br = e => {
+        fr = e => {
           let {
             links: a,
             cta: t,
@@ -9557,7 +9540,7 @@
             className: "rockstargames-modules-core-headerb15d5468019b2ad71c74bc93146eeffe",
             children: (0, l.jsxs)("ul", {
               children: [a.map(((e, a) => (0, l.jsx)("li", {
-                children: (0, l.jsx)(kr, {
+                children: (0, l.jsx)(pr, {
                   intlMessage: e.intlMessage,
                   dataTestId: e.dataTestId,
                   type: e.type,
@@ -9570,7 +9553,7 @@
                 })
               }, e.text))), t && (0, l.jsx)("li", {
                 className: "rockstargames-modules-core-headerda158a2d181d8898c98800dfd9a76691",
-                children: (0, l.jsx)(un, {
+                children: (0, l.jsx)(gn, {
                   variant: t.variant,
                   dataTestId: t.dataTestId,
                   location: t.location,
@@ -9583,7 +9566,7 @@
             })
           })
         },
-        wr = e => {
+        hr = e => {
           let {
             data: a,
             isMobile: t
@@ -9614,50 +9597,50 @@
             i(!1), s(!1)
           }), [c, d, g]), (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsxs)("header", {
-              className: dr.header,
-              children: [(0, l.jsx)(lr, {
+              className: _r.header,
+              children: [(0, l.jsx)(or, {
                 toggle: () => {
                   s(!n), i(!1)
                 },
                 isMenuOpen: n
               }), (0, l.jsx)("div", {
-                className: dr.title,
-                children: (0, l.jsx)(ir, {
+                className: _r.title,
+                children: (0, l.jsx)(nr, {
                   site: a.site,
                   brand: a.brand,
                   hideRockstarBrand: !!a.brand
                 })
               }), (0, l.jsx)("div", {
-                children: (0, l.jsx)(Rn, {
+                children: (0, l.jsx)(On, {
                   search: !1,
                   isMobile: t
                 })
               })]
-            }), (0, l.jsx)(fn.M, {
-              children: (n || r || o) && (0, l.jsxs)(hn.E.nav, {
-                className: [dr.nav, n && a.brand ? dr.paddingBottom : "", n ? dr.fullMenuOpen : ""].join(" "),
+            }), (0, l.jsx)(vn.M, {
+              children: (n || r || o) && (0, l.jsxs)(un.E.nav, {
+                className: [_r.nav, n && a.brand ? _r.paddingBottom : "", n ? _r.fullMenuOpen : ""].join(" "),
                 variants: v,
                 animate: "open",
                 initial: "closed",
                 exit: "closed",
-                children: [(0, l.jsx)(Bn, {
+                children: [(0, l.jsx)(Vn, {
                   isSearchOpen: r || o,
                   setIsSearchOpen: i
                 }), n && (0, l.jsxs)("div", {
-                  className: [dr.navContainer, r ? dr.searchOpen : ""].join(" "),
-                  children: [(0, l.jsx)(br, {
+                  className: [_r.navContainer, r ? _r.searchOpen : ""].join(" "),
+                  children: [(0, l.jsx)(fr, {
                     links: a.links,
                     cta: a.cta,
                     onNavigate: () => {
                       s(!1), i(!1)
                     }
-                  }), a.brand && !a.hideQuickAccess && (0, l.jsx)(sr, {})]
+                  }), a.brand && !a.hideQuickAccess && (0, l.jsx)(ar, {})]
                 })]
               })
-            }), t && (0, l.jsx)(sn, {})]
+            }), t && (0, l.jsx)(an, {})]
           })
         },
-        yr = () => {
+        kr = () => {
           const [e, a] = (0, _.useState)(!1), t = ue(), {
             currentSite: s
           } = ge(), [r] = (0, Q.useSearchParams)(), {
@@ -9689,10 +9672,10 @@
                 let c = null;
                 return o?.links?.length < 1 && (c = he().cloneDeep(o), c.links = n?.rsg?.links, c.hideQuickAccess = !0, c.cta && delete c.cta), {
                   path: _,
-                  element: e ? (0, l.jsx)(wr, {
+                  element: e ? (0, l.jsx)(hr, {
                     isMobile: e,
                     data: c ?? o
-                  }) : (0, l.jsx)(_r, {
+                  }) : (0, l.jsx)(rr, {
                     data: o
                   })
                 }
@@ -9706,7 +9689,7 @@
             }), c]
           })
         },
-        xr = () => {
+        br = () => {
           const e = (0, _.useMemo)((() => (0, u.Z)()), []),
             [a, t] = (0, _.useState)("#main");
           return (0, _.useEffect)((() => {
@@ -9719,7 +9702,7 @@
             })
           })
         },
-        Mr = e => {
+        wr = e => {
           let {
             baseName: a
           } = e;
@@ -9747,7 +9730,7 @@
                 basename: a,
                 history: t,
                 children: (0, l.jsxs)(de, {
-                  children: [(0, l.jsx)(xr, {}), (0, l.jsx)(yr, {})]
+                  children: [(0, l.jsx)(br, {}), (0, l.jsx)(kr, {})]
                 })
               })
             })
@@ -9760,7 +9743,7 @@
                   basename: a,
                   history: t,
                   children: (0, l.jsxs)(de, {
-                    children: [(0, l.jsx)(xr, {}), (0, l.jsx)(yr, {})]
+                    children: [(0, l.jsx)(br, {}), (0, l.jsx)(kr, {})]
                   })
                 })
               })
