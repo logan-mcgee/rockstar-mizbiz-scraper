@@ -1,10 +1,9 @@
-System.register(["@rockstargames/components", "@rockstargames/graph-client", "@rockstargames/modules-core-feedback", "@rockstargames/modules-core-newswire-article", "@rockstargames/modules-core-videoplayer", "@rockstargames/utils"], (function(e, r) {
+System.register(["@rockstargames/components", "@rockstargames/graph-client", "@rockstargames/modules-core-agegate", "@rockstargames/modules-core-videoplayer", "@rockstargames/utils"], (function(e, r) {
   var t = {},
     n = {},
     o = {},
     a = {},
-    i = {},
-    s = {};
+    i = {};
   return Object.defineProperty(t, "__esModule", {
     value: !0
   }), Object.defineProperty(n, "__esModule", {
@@ -14,8 +13,6 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
   }), Object.defineProperty(a, "__esModule", {
     value: !0
   }), Object.defineProperty(i, "__esModule", {
-    value: !0
-  }), Object.defineProperty(s, "__esModule", {
     value: !0
   }), {
     setters: [function(e) {
@@ -38,28 +35,24 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
       Object.keys(e).forEach((function(r) {
         i[r] = e[r]
       }))
-    }, function(e) {
-      Object.keys(e).forEach((function(r) {
-        s[r] = e[r]
-      }))
     }],
     execute: function() {
       e((() => {
-        var e, u, c, f, l = {
-            6100: (e, r, t) => {
-              (0, t(487).s)(1)
+        var e, s, u, d, c = {
+            86100: (e, r, t) => {
+              (0, t(80487).s)(1)
             },
-            487: (e, r, t) => {
-              const n = t(6175).R;
+            80487: (e, r, t) => {
+              const n = t(26175).R;
               r.s = function(e) {
                 if (e || (e = 1), !t.y.meta || !t.y.meta.url) throw console.error("__system_context__", t.y), Error("systemjs-webpack-interop was provided an unknown SystemJS context. Expected context.meta.url, but none was provided");
                 t.p = n(t.y.meta.url, e)
               }
             },
-            9473: (e, r, t) => {
-              t(6100)
+            29473: (e, r, t) => {
+              t(86100)
             },
-            6175: (e, r, t) => {
+            26175: (e, r, t) => {
               r.R = function(e, r) {
                 var t = document.createElement("a");
                 t.href = e;
@@ -70,10 +63,10 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
               };
               Number.isInteger
             },
-            6380: (e, r, t) => {
+            93288: (e, r, t) => {
               "use strict";
               var n = {
-                  "./index": () => Promise.all([t.e(332), t.e(927), t.e(878)]).then((() => () => t(3878)))
+                  "./index": () => Promise.all([t.e(876), t.e(927), t.e(322)]).then((() => () => t(22322)))
                 },
                 o = (e, r) => (t.R = r, r = t.o(n, e) ? n[e]() : Promise.resolve().then((() => {
                   throw new Error('Module "' + e + '" does not exist in container.')
@@ -91,149 +84,146 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
                 init: () => a
               })
             },
-            5286: e => {
+            85286: e => {
               "use strict";
               e.exports = t
             },
-            5081: e => {
+            25081: e => {
               "use strict";
               e.exports = n
             },
-            2845: e => {
+            90649: e => {
               "use strict";
               e.exports = o
             },
-            9724: e => {
+            47124: e => {
               "use strict";
               e.exports = a
             },
-            7124: e => {
+            22369: e => {
               "use strict";
               e.exports = i
-            },
-            2369: e => {
-              "use strict";
-              e.exports = s
             }
           },
-          d = {};
+          l = {};
 
-        function p(e) {
-          var r = d[e];
+        function f(e) {
+          var r = l[e];
           if (void 0 !== r) return r.exports;
-          var t = d[e] = {
+          var t = l[e] = {
+            id: e,
+            loaded: !1,
             exports: {}
           };
-          return l[e](t, t.exports, p), t.exports
+          return c[e].call(t.exports, t, t.exports, f), t.loaded = !0, t.exports
         }
-        return p.m = l, p.c = d, p.y = r, p.n = e => {
+        return f.m = c, f.c = l, f.y = r, f.n = e => {
           var r = e && e.__esModule ? () => e.default : () => e;
-          return p.d(r, {
+          return f.d(r, {
             a: r
           }), r
-        }, p.d = (e, r) => {
-          for (var t in r) p.o(r, t) && !p.o(e, t) && Object.defineProperty(e, t, {
+        }, f.d = (e, r) => {
+          for (var t in r) f.o(r, t) && !f.o(e, t) && Object.defineProperty(e, t, {
             enumerable: !0,
             get: r[t]
           })
-        }, p.f = {}, p.e = e => Promise.all(Object.keys(p.f).reduce(((r, t) => (p.f[t](e, r), r)), [])), p.u = e => "js/" + {
-          73: "5016af6bf1261d95afd0bbbfa41727b3",
-          332: "88b38b1f0d70aba417db70c8d6414505",
-          377: "e5430a820b5b8a22267d6abcd415609d",
-          878: "a9c3c0d0c0204e0f5ebe354e3ae492c3",
-          927: "3887301e085f8dbf137f5489c24f7363"
-        } [e] + ".js", p.miniCssF = e => "css/89c26eccdb6fb16183e1f74f8e269df7.css", p.g = function() {
+        }, f.f = {}, f.e = e => Promise.all(Object.keys(f.f).reduce(((r, t) => (f.f[t](e, r), r)), [])), f.u = e => "js/" + {
+          73: "c8919c62fe49d2408bcac33064309fbf",
+          322: "95fee2241bf81feccd24b9a0320219b6",
+          377: "9814ff4e6c8a05bca81d194cb01a9b43",
+          876: "941703cd0ebab10e196c93ff950360b0",
+          927: "84dfdc7872856a05c355e9d2dee198ae"
+        } [e] + ".js", f.miniCssF = e => "css/c1c4c6854d7df30ca2693d20718000c2.css", f.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
             return this || new Function("return this")()
           } catch (e) {
             if ("object" == typeof window) return window
           }
-        }(), p.o = (e, r) => Object.prototype.hasOwnProperty.call(e, r), e = {}, u = "@rockstargames/sites-red-dead-online:", p.l = (r, t, n, o) => {
+        }(), f.o = (e, r) => Object.prototype.hasOwnProperty.call(e, r), e = {}, s = "@rockstargames/sites-red-dead-redemption-2:", f.l = (r, t, n, o) => {
           if (e[r]) e[r].push(t);
           else {
             var a, i;
             if (void 0 !== n)
-              for (var s = document.getElementsByTagName("script"), c = 0; c < s.length; c++) {
-                var f = s[c];
-                if (f.getAttribute("src") == r || f.getAttribute("data-webpack") == u + n) {
-                  a = f;
+              for (var u = document.getElementsByTagName("script"), d = 0; d < u.length; d++) {
+                var c = u[d];
+                if (c.getAttribute("src") == r || c.getAttribute("data-webpack") == s + n) {
+                  a = c;
                   break
                 }
               }
-            a || (i = !0, (a = document.createElement("script")).charset = "utf-8", a.timeout = 120, p.nc && a.setAttribute("nonce", p.nc), a.setAttribute("data-webpack", u + n), a.src = r), e[r] = [t];
+            a || (i = !0, (a = document.createElement("script")).charset = "utf-8", a.timeout = 120, f.nc && a.setAttribute("nonce", f.nc), a.setAttribute("data-webpack", s + n), a.src = r), e[r] = [t];
             var l = (t, n) => {
-                a.onerror = a.onload = null, clearTimeout(d);
+                a.onerror = a.onload = null, clearTimeout(p);
                 var o = e[r];
                 if (delete e[r], a.parentNode && a.parentNode.removeChild(a), o && o.forEach((e => e(n))), t) return t(n)
               },
-              d = setTimeout(l.bind(null, void 0, {
+              p = setTimeout(l.bind(null, void 0, {
                 type: "timeout",
                 target: a
               }), 12e4);
             a.onerror = l.bind(null, a.onerror), a.onload = l.bind(null, a.onload), i && document.head.appendChild(a)
           }
-        }, p.r = e => {
+        }, f.r = e => {
           "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
             value: "Module"
           }), Object.defineProperty(e, "__esModule", {
             value: !0
           })
-        }, c = {
-          878: [3761, 4224, 4524, 4859, 6921, 8865, 8976, 9929]
-        }, f = {
-          3761: ["default", "./operations/queries", 5081],
-          4224: ["default", "./index", 7124],
-          4524: ["default", "./NewswireArticle", 9724],
-          4859: ["default", "./index", 5081],
-          6921: ["default", "./operations/fragments/video-fields.graphql", 5081],
-          8865: ["default", "./index", 2845],
-          8976: ["default", "./index", 5286],
-          9929: ["default", "./index", 2369]
-        }, p.f.remotes = (e, r) => {
-          p.o(c, e) && c[e].forEach((e => {
-            var t = p.R;
+        }, f.nmd = e => (e.paths = [], e.children || (e.children = []), e), u = {
+          322: [7194, 29929, 34224, 43657, 64859, 68976, 76921]
+        }, d = {
+          7194: ["default", "./index", 90649],
+          29929: ["default", "./index", 22369],
+          34224: ["default", "./index", 47124],
+          43657: ["default", "./hooks", 22369],
+          64859: ["default", "./index", 25081],
+          68976: ["default", "./index", 85286],
+          76921: ["default", "./operations/fragments/video-fields.graphql", 25081]
+        }, f.f.remotes = (e, r) => {
+          f.o(u, e) && u[e].forEach((e => {
+            var t = f.R;
             t || (t = []);
-            var n = f[e];
+            var n = d[e];
             if (!(t.indexOf(n) >= 0)) {
               if (t.push(n), n.p) return r.push(n.p);
               var o = r => {
-                  r || (r = new Error("Container missing")), "string" == typeof r.message && (r.message += '\nwhile loading "' + n[1] + '" from ' + n[2]), p.m[e] = () => {
+                  r || (r = new Error("Container missing")), "string" == typeof r.message && (r.message += '\nwhile loading "' + n[1] + '" from ' + n[2]), f.m[e] = () => {
                     throw r
                   }, n.p = 0
                 },
                 a = (e, t, a, i, s, u) => {
                   try {
-                    var c = e(t, a);
-                    if (!c || !c.then) return s(c, i, u);
-                    var f = c.then((e => s(e, i)), o);
-                    if (!u) return f;
-                    r.push(n.p = f)
+                    var d = e(t, a);
+                    if (!d || !d.then) return s(d, i, u);
+                    var c = d.then((e => s(e, i)), o);
+                    if (!u) return c;
+                    r.push(n.p = c)
                   } catch (e) {
                     o(e)
                   }
                 },
                 i = (e, r, o) => a(r.get, n[1], t, 0, s, o),
                 s = r => {
-                  n.p = 1, p.m[e] = e => {
+                  n.p = 1, f.m[e] = e => {
                     e.exports = r()
                   }
                 };
-              a(p, n[2], 0, 0, ((e, r, t) => e ? a(p.I, n[0], 0, e, i, t) : o()), 1)
+              a(f, n[2], 0, 0, ((e, r, t) => e ? a(f.I, n[0], 0, e, i, t) : o()), 1)
             }
           }))
         }, (() => {
-          p.S = {};
+          f.S = {};
           var e = {},
             r = {};
-          p.I = (t, n) => {
+          f.I = (t, n) => {
             n || (n = []);
             var o = r[t];
             if (o || (o = r[t] = {}), !(n.indexOf(o) >= 0)) {
               if (n.push(o), e[t]) return e[t];
-              p.o(p.S, t) || (p.S[t] = {});
-              var a = p.S[t],
-                i = "@rockstargames/sites-red-dead-online",
+              f.o(f.S, t) || (f.S[t] = {});
+              var a = f.S[t],
+                i = "@rockstargames/sites-red-dead-redemption-2",
                 s = (e, r, t, n) => {
                   var o = a[e] = a[e] || {},
                     s = o[r];
@@ -249,31 +239,31 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
                     var r
                   };
                   try {
-                    var o = p(e);
+                    var o = f(e);
                     if (!o) return;
-                    var a = e => e && e.init && e.init(p.S[t], n);
-                    if (o.then) return c.push(o.then(a, r));
+                    var a = e => e && e.init && e.init(f.S[t], n);
+                    if (o.then) return d.push(o.then(a, r));
                     var i = a(o);
-                    if (i && i.then) return c.push(i.catch(r))
+                    if (i && i.then) return d.push(i.catch(r))
                   } catch (e) {
                     r(e)
                   }
                 },
-                c = [];
-              return "default" === t && (s("react-router-dom", "6.17.0", (() => Promise.all([p.e(73), p.e(927)]).then((() => () => p(3073))))), s("react", "18.2.0", (() => p.e(377).then((() => () => p(5377))))), u(5286), u(5081), u(2845), u(9724), u(7124), u(2369)), c.length ? e[t] = Promise.all(c).then((() => e[t] = 1)) : e[t] = 1
+                d = [];
+              return "default" === t && (s("react-router-dom", "6.17.0", (() => Promise.all([f.e(73), f.e(927)]).then((() => () => f(63073))))), s("react", "18.2.0", (() => f.e(377).then((() => () => f(65377))))), u(85286), u(25081), u(90649), u(47124), u(22369)), d.length ? e[t] = Promise.all(d).then((() => e[t] = 1)) : e[t] = 1
             }
           }
         })(), (() => {
           var e;
-          p.g.importScripts && (e = p.g.location + "");
-          var r = p.g.document;
+          f.g.importScripts && (e = f.g.location + "");
+          var r = f.g.document;
           if (!e && r && (r.currentScript && (e = r.currentScript.src), !e)) {
             var t = r.getElementsByTagName("script");
             if (t.length)
               for (var n = t.length - 1; n > -1 && !e;) e = t[n--].src
           }
           if (!e) throw new Error("Automatic publicPath is not supported in this browser");
-          e = e.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/"), p.p = e
+          e = e.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/"), f.p = e
         })(), (() => {
           var e = e => {
               var r = e => e.split(".").map((e => +e == e ? +e : e)),
@@ -288,32 +278,32 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
                   a = o < 0;
                 a && (o = -o - 1);
                 for (var i = 0, s = 1, u = !0;; s++, i++) {
-                  var c, f, l = s < t.length ? (typeof t[s])[0] : "";
-                  if (i >= n.length || "o" == (f = (typeof(c = n[i]))[0])) return !u || ("u" == l ? s > o && !a : "" == l != a);
-                  if ("u" == f) {
+                  var d, c, l = s < t.length ? (typeof t[s])[0] : "";
+                  if (i >= n.length || "o" == (c = (typeof(d = n[i]))[0])) return !u || ("u" == l ? s > o && !a : "" == l != a);
+                  if ("u" == c) {
                     if (!u || "u" != l) return !1
                   } else if (u)
-                    if (l == f)
+                    if (l == c)
                       if (s <= o) {
-                        if (c != t[s]) return !1
+                        if (d != t[s]) return !1
                       } else {
-                        if (a ? c > t[s] : c < t[s]) return !1;
-                        c != t[s] && (u = !1)
+                        if (a ? d > t[s] : d < t[s]) return !1;
+                        d != t[s] && (u = !1)
                       }
                   else if ("s" != l && "n" != l) {
                     if (a || s <= o) return !1;
                     u = !1, s--
                   } else {
-                    if (s <= o || f < l != a) return !1;
+                    if (s <= o || c < l != a) return !1;
                     u = !1
                   } else "s" != l && "n" != l && (u = !1, s--)
                 }
               }
-              var d = [],
-                p = d.pop.bind(d);
+              var f = [],
+                p = f.pop.bind(f);
               for (i = 1; i < t.length; i++) {
                 var h = t[i];
-                d.push(1 == h ? p() | p() : 2 == h ? p() & p() : h ? r(h, n) : !p())
+                f.push(1 == h ? p() | p() : 2 == h ? p() & p() : h ? r(h, n) : !p())
               }
               return !!p()
             },
@@ -335,32 +325,32 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
               })(t, n) ? t : n), 0)) && a[n]
             },
             n = (e => function(r, t, n, o) {
-              var a = p.I(r);
-              return a && a.then ? a.then(e.bind(e, r, p.S[r], t, n, o)) : e(r, p.S[r], t, n, o)
+              var a = f.I(r);
+              return a && a.then ? a.then(e.bind(e, r, f.S[r], t, n, o)) : e(r, f.S[r], t, n, o)
             })(((e, r, n, o, a) => {
-              var i = r && p.o(r, n) && t(r, n, o);
+              var i = r && f.o(r, n) && t(r, n, o);
               return i ? (e => (e.loaded = 1, e.get()))(i) : a()
             })),
             o = {},
             a = {
-              927: () => n("default", "react", [1, 18, 2, 0], (() => p.e(377).then((() => () => p(5377))))),
-              7583: () => n("default", "react-router-dom", [1, 6, 11, 2], (() => p.e(73).then((() => () => p(3073)))))
+              80927: () => n("default", "react", [1, 18, 2, 0], (() => f.e(377).then((() => () => f(65377))))),
+              57583: () => n("default", "react-router-dom", [1, 6, 11, 2], (() => f.e(73).then((() => () => f(63073)))))
             },
             i = {
-              878: [7583],
-              927: [927]
+              322: [57583],
+              927: [80927]
             };
-          p.f.consumes = (e, r) => {
-            p.o(i, e) && i[e].forEach((e => {
-              if (p.o(o, e)) return r.push(o[e]);
+          f.f.consumes = (e, r) => {
+            f.o(i, e) && i[e].forEach((e => {
+              if (f.o(o, e)) return r.push(o[e]);
               var t = r => {
-                  o[e] = 0, p.m[e] = t => {
-                    delete p.c[e], t.exports = r()
+                  o[e] = 0, f.m[e] = t => {
+                    delete f.c[e], t.exports = r()
                   }
                 },
                 n = r => {
-                  delete o[e], p.m[e] = t => {
-                    throw delete p.c[e], r
+                  delete o[e], f.m[e] = t => {
+                    throw delete f.c[e], r
                   }
                 };
               try {
@@ -374,14 +364,14 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
         })(), (() => {
           if ("undefined" != typeof document) {
             var e = {
-              595: 0
+              857: 0
             };
-            p.f.miniCss = (r, t) => {
+            f.f.miniCss = (r, t) => {
               e[r] ? t.push(e[r]) : 0 !== e[r] && {
-                878: 1
+                322: 1
               } [r] && t.push(e[r] = (e => new Promise(((r, t) => {
-                var n = p.miniCssF(e),
-                  o = p.p + n;
+                var n = f.miniCssF(e),
+                  o = f.p + n;
                 if (((e, r) => {
                     for (var t = document.getElementsByTagName("link"), n = 0; n < t.length; n++) {
                       var o = (i = t[n]).getAttribute("data-href") || i.getAttribute("href");
@@ -414,19 +404,19 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
           }
         })(), (() => {
           var e = {
-            595: 0
+            857: 0
           };
-          p.f.j = (r, t) => {
-            var n = p.o(e, r) ? e[r] : void 0;
+          f.f.j = (r, t) => {
+            var n = f.o(e, r) ? e[r] : void 0;
             if (0 !== n)
               if (n) t.push(n[2]);
               else if (927 != r) {
               var o = new Promise(((t, o) => n = e[r] = [t, o]));
               t.push(n[2] = o);
-              var a = p.p + p.u(r),
+              var a = f.p + f.u(r),
                 i = new Error;
-              p.l(a, (t => {
-                if (p.o(e, r) && (0 !== (n = e[r]) && (e[r] = void 0), n)) {
+              f.l(a, (t => {
+                if (f.o(e, r) && (0 !== (n = e[r]) && (e[r] = void 0), n)) {
                   var o = t && ("load" === t.type ? "missing" : t.type),
                     a = t && t.target && t.target.src;
                   i.message = "Loading chunk " + r + " failed.\n(" + o + ": " + a + ")", i.name = "ChunkLoadError", i.type = o, i.request = a, n[1](i)
@@ -440,14 +430,14 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
                 s = t[2],
                 u = 0;
               if (a.some((r => 0 !== e[r]))) {
-                for (n in i) p.o(i, n) && (p.m[n] = i[n]);
-                s && s(p)
+                for (n in i) f.o(i, n) && (f.m[n] = i[n]);
+                s && s(f)
               }
-              for (r && r(t); u < a.length; u++) o = a[u], p.o(e, o) && e[o] && e[o][0](), e[o] = 0
+              for (r && r(t); u < a.length; u++) o = a[u], f.o(e, o) && e[o] && e[o][0](), e[o] = 0
             },
-            t = self.webpackChunk_rockstargames_sites_red_dead_online = self.webpackChunk_rockstargames_sites_red_dead_online || [];
+            t = self.webpackChunk_rockstargames_sites_red_dead_redemption_2 = self.webpackChunk_rockstargames_sites_red_dead_redemption_2 || [];
           t.forEach(r.bind(null, 0)), t.push = r.bind(null, t.push.bind(t))
-        })(), p(9473), p(6380)
+        })(), f(29473), f(93288)
       })())
     }
   }

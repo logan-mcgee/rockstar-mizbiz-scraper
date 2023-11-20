@@ -3971,10 +3971,10 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
             2885: (e, t, r) => {
               "use strict";
               var n = {
-                  "./bootstrap": () => Promise.all([r.e(442), r.e(721), r.e(8), r.e(652)]).then((() => () => r(5652))),
-                  "./index": () => Promise.all([r.e(442), r.e(721), r.e(357)]).then((() => () => r(8357))),
-                  "./site-routes/RedDeadRedemption": () => Promise.all([r.e(442), r.e(721), r.e(753), r.e(8), r.e(611)]).then((() => () => r(611))),
-                  "./tina": () => Promise.all([r.e(442), r.e(721), r.e(753), r.e(844)]).then((() => () => r(4844)))
+                  "./bootstrap": () => Promise.all([r.e(830), r.e(721), r.e(8), r.e(652)]).then((() => () => r(5652))),
+                  "./index": () => Promise.all([r.e(830), r.e(721), r.e(357)]).then((() => () => r(8357))),
+                  "./site-routes/RedDeadRedemption": () => Promise.all([r.e(830), r.e(721), r.e(753), r.e(8), r.e(565)]).then((() => () => r(7565))),
+                  "./tina": () => Promise.all([r.e(830), r.e(721), r.e(753), r.e(844)]).then((() => () => r(4844)))
                 },
                 o = (e, t) => (r.R = t, t = r.o(n, e) ? n[e]() : Promise.resolve().then((() => {
                   throw new Error('Module "' + e + '" does not exist in container.')
@@ -4056,14 +4056,14 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
         }, y.f = {}, y.e = e => Promise.all(Object.keys(y.f).reduce(((t, r) => (y.f[r](e, t), t)), [])), y.u = e => "js/" + {
           8: "14166e2b13893417c4d97cb074be1d82",
           357: "5cc874c690331090c36bd8a31f5cc69f",
-          442: "e52f7500345f3fe9a21b8ee37ef6565e",
-          611: "c6442536edfca7a6031a2b025229fa27",
+          565: "5407d653c8a9fc15cd56b0a5aba7b26f",
           652: "6fc0bf963cddaf48d21b4df7c73dcd34",
-          721: "daf2b25851f2f65a90d20400b96cf56a",
+          721: "ea212be680ae65a851b8f9140d373c13",
           753: "38e0d2747bc7eef20aef9b16c0721c6a",
+          830: "6903dc32dd2b58706b9623e83f048d42",
           844: "9e53eafbd9321ac536035c32862f9583"
         } [e] + ".js", y.miniCssF = e => "css/" + {
-          611: "091cd3d2255d03ce35acd864d42ffdb3",
+          565: "26e270abc86e7f12af0077860e022c66",
           652: "4eec1cd07cbb86f88f5b25f2480f333c",
           721: "02653ea86385cf2d4c2b35fedef29b8f"
         } [e] + ".css", y.g = function() {
@@ -4325,7 +4325,7 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
             };
             y.f.miniCss = (t, r) => {
               e[t] ? r.push(e[t]) : 0 !== e[t] && {
-                611: 1,
+                565: 1,
                 652: 1,
                 721: 1
               } [t] && r.push(e[t] = (e => new Promise(((t, r) => {
