@@ -740,7 +740,7 @@
           }), [f, r.get("tab")]), (0, d.useEffect)((() => {
             void 0 !== f?.games?.paging?.count && (c((f?.games?.paging?.count ?? 0) + (f?.videos?.paging?.count ?? 0) + (f?.posts?.paging?.count ?? 0)), s(f?.meta?.title.replace("%s", n)))
           }), [f, k]), Object.entries(m).length ? m.q ? null === l ? null : (0, o.jsx)(o.Fragment, {
-            children: l ? (0, o.jsxs)("div", {
+            children: f[k].results.length ? (0, o.jsxs)("div", {
               className: ce,
               children: [(0, o.jsx)("section", {
                 className: "rockstargames-sites-rockstargamesb54a20d6c2a28171fc3b24fa6d2df86f",

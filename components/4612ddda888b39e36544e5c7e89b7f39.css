@@ -6342,7 +6342,7 @@ a.rockstargames-componentsead163175b3ecbafda6260fc8bfd88b2 {
 
 .rockstargames-componentsea0618e2f79b93278088f08dde2476c4 {
   grid-gap: .3rem;
-  background: #000;
+  background: inherit;
   display: grid;
   grid-auto-flow: column;
   justify-content: center;

@@ -507,7 +507,8 @@ section.rockstargames-sites-rockstargamesb6a41ef752e979cced54d95e69679ae9 {
   --font-family-h: HelveticaNowText;
   grid-gap: 1.25rem;
   display: grid;
-  margin-top: 6.25rem
+  margin-top: 6.25rem;
+  padding-top: 3rem
 }
 
 @media (min-width:2560px) {

@@ -2843,6 +2843,7 @@
                       onClick: () => {
                         _(a)
                       },
+                      tabindex: g ? 0 : -1,
                       children: t
                     }, `desktop-${a}`)
                   }))
