@@ -8742,7 +8742,7 @@ a.rockstargames-modules-core-headerab00cee9c6ebfc9dde968ca69f3f8b52 {
 
 .rockstargames-modules-core-headerb3c0d609829041fa94f09cb406e43598 {
   grid-gap: .3rem;
-  background: #000;
+  background: inherit;
   display: grid;
   grid-auto-flow: column;
   justify-content: center;
@@ -13168,7 +13168,7 @@ screen and (max-height:840px) and (max-width:767px) {
   border-bottom: 1px solid hsla(0, 0%, 100%, .25);
   display: flex;
   gap: var(--grid-gap-static-xs);
-  padding: var(--margin-md) var(--padding-lg)
+  padding: var(--padding-sm) var(--padding-lg)
 }
 
 .rockstargames-modules-core-headerd0846246b7f8111a7c8dd61d8977f797 button {
@@ -13178,10 +13178,11 @@ screen and (max-height:840px) and (max-width:767px) {
   padding: 0
 }
 
+.rockstargames-modules-core-headerf1451c6007fa33b27b2919fa85e91762 button,
 .rockstargames-modules-core-headerd0846246b7f8111a7c8dd61d8977f797 button,
 .rockstargames-modules-core-headerd0846246b7f8111a7c8dd61d8977f797 img {
-  height: var(--rem-2);
-  width: var(--rem-2)
+  height: var(--rem-15);
+  width: var(--rem-15)
 }
 
 .rockstargames-modules-core-headerf1451c6007fa33b27b2919fa85e91762 button {
@@ -13193,14 +13194,14 @@ screen and (max-height:840px) and (max-width:767px) {
   padding: 0
 }
 
-.rockstargames-modules-core-headerf1451c6007fa33b27b2919fa85e91762 button,
 .rockstargames-modules-core-headerf1451c6007fa33b27b2919fa85e91762 img {
   height: var(--rem-15);
   width: var(--rem-15)
 }
 
 .rockstargames-modules-core-headerd35c5f222e110578e123ed49f56bba40 {
-  flex-grow: 1
+  flex-grow: 1;
+  margin-right: var(--margin-md)
 }
 
 .rockstargames-modules-core-headerd35c5f222e110578e123ed49f56bba40 input {
@@ -13209,7 +13210,7 @@ screen and (max-height:840px) and (max-width:767px) {
   color: var(--white-65);
   color: var(--white-100);
   font-family: var(--font-family-h);
-  font-size: 39.06px;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 700;
   height: 100%;
@@ -13545,6 +13546,7 @@ a.rockstargames-modules-core-headere4791244cfb12101d21ef44f3e26ac97 {
 }
 
 .rockstargames-modules-core-headerc2b06d9afe0933250fc72b9117858265 img {
+  display: block;
   width: 100%
 }
 
