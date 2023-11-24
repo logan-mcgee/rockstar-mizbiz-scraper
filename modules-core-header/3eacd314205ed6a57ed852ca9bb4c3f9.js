@@ -10098,15 +10098,16 @@
         N = {}
       }
       const C = (0, i.QS)(N),
-        j = async e => {
+        j = e => {
           let {
             key: a,
             value: t
           } = e;
           if (null == a) throw Error("You have to specify a key and a value.");
           const n = C() ?? {};
-          return n[a] = t, null === t && delete n[a], await window.localStorage.setItem(S, JSON.stringify(n)), n
-        }, T = () => ({
+          return n[a] = t, null === t && delete n[a], window.localStorage.setItem(S, JSON.stringify(n)), n
+        },
+        T = () => ({
           lsSettings: (0, i.lY)(C),
           settingsReactive: C,
           mutateLSSettings: j
