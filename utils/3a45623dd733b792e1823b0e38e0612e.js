@@ -830,15 +830,16 @@
         o = {}
       }
       const i = (0, r.makeVar)(o),
-        s = async e => {
+        s = e => {
           let {
             key: t,
             value: n
           } = e;
           if (null == t) throw Error("You have to specify a key and a value.");
           const r = i() ?? {};
-          return r[t] = n, null === n && delete r[t], await window.localStorage.setItem(a, JSON.stringify(r)), r
-        }, c = () => ({
+          return r[t] = n, null === n && delete r[t], window.localStorage.setItem(a, JSON.stringify(r)), r
+        },
+        c = () => ({
           lsSettings: (0, r.useReactiveVar)(i),
           settingsReactive: i,
           mutateLSSettings: s

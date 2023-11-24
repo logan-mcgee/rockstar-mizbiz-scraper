@@ -53,7 +53,7 @@
                   s = c()(a, "YYYY-MM-DD", !0).isValid();
                 if (i(s), s) {
                   const e = c()().diff(a, "years"),
-                    s = await n({
+                    s = n({
                       key: "agegatePass",
                       value: e >= 17
                     });

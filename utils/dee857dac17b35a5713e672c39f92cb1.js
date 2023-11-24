@@ -1,13 +1,13 @@
 "use strict";
 (self.webpackChunk_rockstargames_utils = self.webpackChunk_rockstargames_utils || []).push([
   [19], {
-    19: (e, t, a) => {
-      a.r(t), a.d(t, {
+    19: (e, t, s) => {
+      s.r(t), s.d(t, {
         mutateLSSettings: () => c,
         settingsReactive: () => n,
         useRockstarWebLSSettings: () => i
       });
-      var s = a(859);
+      var a = s(859);
       const r = "rockstar-games-web";
       let l;
       try {
@@ -15,17 +15,18 @@
       } catch (e) {
         l = {}
       }
-      const n = (0, s.makeVar)(l),
-        c = async e => {
+      const n = (0, a.makeVar)(l),
+        c = e => {
           let {
             key: t,
-            value: a
+            value: s
           } = e;
           if (null == t) throw Error("You have to specify a key and a value.");
-          const s = n() ?? {};
-          return s[t] = a, null === a && delete s[t], await window.localStorage.setItem(r, JSON.stringify(s)), s
-        }, i = () => ({
-          lsSettings: (0, s.useReactiveVar)(n),
+          const a = n() ?? {};
+          return a[t] = s, null === s && delete a[t], window.localStorage.setItem(r, JSON.stringify(a)), a
+        },
+        i = () => ({
+          lsSettings: (0, a.useReactiveVar)(n),
           settingsReactive: n,
           mutateLSSettings: c
         })

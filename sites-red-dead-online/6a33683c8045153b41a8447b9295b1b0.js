@@ -82,15 +82,25 @@
             }), (0, m.jsx)("div", {
               className: d.bars,
               children: [{
-                name: 25
+                name: 25,
+                xbl: "https://www.xbox.com/en-US/games/store/25-gold-bars/C4MKRGLZBCS1",
+                psn: "https://store.playstation.com/en-us/product/UP1004-CUSA03041_00-REDEMPTION2GLDO1"
               }, {
-                name: 55
+                name: 55,
+                xbl: "https://www.xbox.com/en-us/games/store/55-gold-bars/c25lnchxqcqd",
+                psn: "https://store.playstation.com/en-us/product/UP1004-CUSA03041_00-REDEMPTION2GLDO2"
               }, {
-                name: 150
+                name: 150,
+                xbl: "https://www.xbox.com/en-us/games/store/150-Gold-Bars/BW64MFQ52PK5",
+                psn: "https://store.playstation.com/en-us/product/UP1004-CUSA03041_00-REDEMPTION2GLDO3"
               }, {
-                name: 245
+                name: 245,
+                xbl: "https://www.xbox.com/en-us/games/store/245-Gold-Bars/BWJRVRRD5KF9",
+                psn: "https://store.playstation.com/en-us/product/UP1004-CUSA03041_00-REDEMPTION2GLDO4"
               }, {
-                name: 350
+                name: 350,
+                xbl: "https://www.xbox.com/en-us/games/store/350-Gold-Bars/C4TVZB9BWQ9W",
+                psn: "https://store.playstation.com/en-us/product/UP1004-CUSA03041_00-REDEMPTION2GLDO5"
               }].map((e => {
                 const a = t(2768)(`./gold-${e.name}.jpg`);
                 return (0, m.jsx)("div", {
@@ -104,11 +114,11 @@
                     children: [(0, m.jsx)(s.A, {
                       className: d.barPs4,
                       target: "_blank",
-                      to: `https://www.rockstargames.com/reddeadredemption2/order/external?platform=ps4-digital&edition=gold-${e.name}`
+                      to: e.psn
                     }), (0, m.jsx)(s.A, {
                       className: d.barXbox,
                       target: "_blank",
-                      to: `https://www.rockstargames.com/reddeadredemption2/order/external?platform=xbox_one-digital&edition=gold-${e.name}`
+                      to: e.xbl
                     })]
                   })
                 }, e.name)
@@ -394,7 +404,7 @@
         })
       };
       (0, o.importAll)(t(5706));
-      const V = (0, o.withTranslations)((e => {
+      const T = (0, o.withTranslations)((e => {
           let {
             feature: a,
             tips: n = [],
@@ -423,7 +433,7 @@
             })]
           }) : null
         }), "rdo"),
-        T = e => {
+        V = e => {
           let {
             text: a
           } = e;
@@ -604,7 +614,7 @@
           } = e;
           return "halloween" === a ? (0, m.jsx)(U, {}) : (0, m.jsx)(L, {})
         },
-        M = () => ((0, n.useQuery)(p.Meta, {
+        B = () => ((0, n.useQuery)(p.Meta, {
           variables: {
             url: "/reddeadonline/clubrewards"
           },
@@ -612,11 +622,11 @@
         }), (0, m.jsx)(C, {
           type: "halloween"
         }));
-      var B = t(98);
+      var M = t(98);
       const q = () => {
         const {
           data: e
-        } = (0, n.useQuery)(B.RDOFeatures, {
+        } = (0, n.useQuery)(M.RDOFeatures, {
           autoSetLoading: !0
         }), a = e?.features;
         return a ? (0, m.jsx)("section", {
@@ -627,12 +637,12 @@
           }, a)))
         }) : null
       };
-      var H = t(8865),
-        P = t.n(H),
-        Q = t(187);
-      const G = () => (0, m.jsx)(P(), {
-          mutation: Q.SubmitFeedback,
-          query: Q.FeedbackSteps,
+      var P = t(8865),
+        H = t.n(P),
+        G = t(187);
+      const Q = () => (0, m.jsx)(H(), {
+          mutation: G.SubmitFeedback,
+          query: G.FeedbackSteps,
           type: "rdo"
         }),
         W = e => {
@@ -689,7 +699,7 @@
             })]
           })
         },
-        X = {
+        K = {
           roles: "rockstargames-sites-red-dead-onlinefe9ddf5dacf4459a2c83a5192f2cf7b5",
           details: "rockstargames-sites-red-dead-onlinedc2d60bb2d93d4fbd572f14626f70493",
           infoBlocks: "rockstargames-sites-red-dead-onlinecaba5ad375a8d11ecd89124b20549d3a",
@@ -710,7 +720,7 @@
           progressionItemText: "rockstargames-sites-red-dead-onlineda49ad334a858f54efd6238423ffcaf3"
         };
       (0, o.importAll)(t(7848));
-      const J = e => {
+      const X = e => {
           let {
             activeRole: a,
             role: t
@@ -719,41 +729,41 @@
           return t ? (0, m.jsxs)(s.A, {
             to: `?active=${t.title_slug}`,
             isActive: () => n,
-            className: X.activeNavItem,
+            className: K.activeNavItem,
             children: [(0, m.jsx)("div", {
-              className: [X.navTitle, I.swipe, n ? I.red : I.gray].join(" "),
+              className: [K.navTitle, I.swipe, n ? I.red : I.gray].join(" "),
               children: t.title
-            }), (0, m.jsx)(K, {
+            }), (0, m.jsx)(Z, {
               role: t
             })]
           }) : null
         },
-        K = e => {
+        Z = e => {
           let {
             role: a
           } = e;
           const n = t(6540)(`./${a.title_slug}.jpg`),
             [, s] = (0, o.usePreloadImg)(n);
           return (0, m.jsx)("div", {
-            className: X.navImg,
+            className: K.navImg,
             style: {
               "--aspect-ratio": `${s.width}/${s.height}`,
               background: `url(${n}) center/cover`
             }
           })
         },
-        Y = e => {
+        J = e => {
           let {
             item: a
           } = e;
           return (0, m.jsxs)("div", {
-            className: [X.progressionItem, I.swipe, I.gray].join(" "),
+            className: [K.progressionItem, I.swipe, I.gray].join(" "),
             children: [(0, m.jsx)("i", {
               style: {
                 background: `url(${t(4799)(`./${a.title_slug}.png`)}) no-repeat center/contain`
               }
             }), (0, m.jsxs)("div", {
-              className: X.progressionItemText,
+              className: K.progressionItemText,
               children: [(0, m.jsx)("h5", {
                 children: a.title
               }), (0, m.jsx)("div", {
@@ -762,16 +772,16 @@
             })]
           })
         },
-        Z = e => {
+        Y = e => {
           let {
             item: a
           } = e;
           const n = t(9736)(`./${a.title_slug}.png`),
             [s, i] = (0, o.usePreloadImg)(n);
           return s ? (0, m.jsxs)("div", {
-            className: X.prestigiousItem,
+            className: K.prestigiousItem,
             children: [(0, m.jsx)("div", {
-              className: X.prestigiousImg,
+              className: K.prestigiousImg,
               style: {
                 "--aspect-ratio": `${i.width}/${i.height}`,
                 background: `url(${n}) no-repeat center/contain`
@@ -792,34 +802,34 @@
             const e = null === p.get("active") ? n[0] : n.find((e => e.title_slug === p.get("active")));
             c(e)
           }), [p.get("active")]), null === d ? null : (0, m.jsxs)("div", {
-            className: X.roles,
+            className: K.roles,
             children: [(0, m.jsxs)("section", {
-              className: X.top,
+              className: K.top,
               children: [(0, m.jsx)("h1", {
                 children: a.title
               }), (0, m.jsx)("div", {
-                className: X.description,
+                className: K.description,
                 dangerouslySetInnerHTML: {
                   __html: a.description
                 }
               })]
             }), (0, m.jsx)("section", {
-              className: X.nav,
-              children: n.map((e => (0, m.jsx)(J, {
+              className: K.nav,
+              children: n.map((e => (0, m.jsx)(X, {
                 activeRole: d,
                 role: e
               }, e.title_slug)))
             }), d && (0, m.jsx)("section", {
-              className: X.mobileActiveRole,
-              children: (0, m.jsx)(K, {
+              className: K.mobileActiveRole,
+              children: (0, m.jsx)(Z, {
                 role: d
               })
             }), (0, m.jsx)("section", {
-              className: X.infoBlocks,
+              className: K.infoBlocks,
               children: d.roles_info_blocks.map((e => (0, m.jsxs)("div", {
-                className: X.infoBlock,
+                className: K.infoBlock,
                 children: [(0, m.jsx)("div", {
-                  className: X.infoBlockImg,
+                  className: K.infoBlockImg,
                   style: {
                     "--aspect-ratio": "16/9",
                     background: `url(${t(3189)(`./${d.title_slug}/${e.key}.jpg`)}) no-repeat center/cover`
@@ -831,32 +841,32 @@
                 })]
               }, e.key)))
             }), d.prestigious_intro_text && (0, m.jsx)("section", {
-              className: X.prestigious,
+              className: K.prestigious,
               children: (0, m.jsx)("div", {
-                className: X.progressionText,
+                className: K.progressionText,
                 dangerouslySetInnerHTML: {
                   __html: d.prestigious_intro_text
                 }
               })
             }), (0, m.jsxs)("section", {
-              className: X.progression,
+              className: K.progression,
               children: [(0, m.jsx)("div", {
-                className: X.progressionText,
+                className: K.progressionText,
                 dangerouslySetInnerHTML: {
                   __html: d.progression_text
                 }
               }), (0, m.jsx)("div", {
-                className: X.progressionItems,
+                className: K.progressionItems,
                 children: d.roles_items.map(((e, a) => {
-                  if (!e.type) return (0, m.jsx)(Y, {
+                  if (!e.type) return (0, m.jsx)(J, {
                     item: e
                   }, `progression-items-${a}`)
                 })).filter(Boolean)
               })]
             }), d.prestigious_item_text && (0, m.jsxs)("section", {
-              className: X.prestigious,
+              className: K.prestigious,
               children: [(0, m.jsx)("div", {
-                className: X.progressionText,
+                className: K.progressionText,
                 dangerouslySetInnerHTML: {
                   __html: d.prestigious_item_text
                 }
@@ -866,17 +876,17 @@
                   "--carousel-column-gap": ".5rem"
                 },
                 children: d.roles_items.filter((e => "prestigious" === e.type)).map(((e, a) => (0, m.jsx)("div", {
-                  children: (0, m.jsx)(Z, {
+                  children: (0, m.jsx)(Y, {
                     item: e
                   })
                 }, `prestigious-items-${a}`)))
               })]
             }), (0, m.jsxs)("section", {
-              className: X.details,
+              className: K.details,
               children: [(0, m.jsx)("h2", {
                 children: i("Bonuses and Tokens")
               }), (0, m.jsx)("div", {
-                className: X.detailsText,
+                className: K.detailsText,
                 dangerouslySetInnerHTML: {
                   __html: a.details
                 }
@@ -940,7 +950,7 @@
               titleImg: a.img_title
             }), (0, m.jsx)(N, {
               feature: a
-            }), (0, m.jsx)(V, {
+            }), (0, m.jsx)(T, {
               feature: a,
               tips: a.tips
             }), (0, m.jsx)("section", {
@@ -957,7 +967,7 @@
                   dangerouslySetInnerHTML: {
                     __html: e.description
                   }
-                }), (0, m.jsx)(V, {
+                }), (0, m.jsx)(T, {
                   feature: a,
                   subFeature: e,
                   tips: e.tips
@@ -1081,7 +1091,7 @@
           } = e;
           return (0, m.jsxs)("section", {
             className: de.features,
-            children: [(0, m.jsx)(T, {
+            children: [(0, m.jsx)(V, {
               text: a("Features")
             }), (0, m.jsx)("div", {
               className: de.grid,
@@ -1105,7 +1115,7 @@
           } = e;
           return (0, m.jsxs)("section", {
             className: de.highlights,
-            children: [(0, m.jsx)(T, {
+            children: [(0, m.jsx)(V, {
               text: a("Highlights")
             }), (0, m.jsx)(ce, {
               t: a
@@ -1125,7 +1135,7 @@
           } = e;
           return (0, m.jsxs)("section", {
             className: de.news,
-            children: [(0, m.jsx)(T, {
+            children: [(0, m.jsx)(V, {
               text: a("News")
             }), (0, m.jsx)("div", {
               className: de.grid,
@@ -1345,7 +1355,7 @@
           element: (0, m.jsx)(_e, {})
         }, {
           path: "clubrewards",
-          element: (0, m.jsx)(M, {})
+          element: (0, m.jsx)(B, {})
         }, {
           path: "features",
           element: (0, m.jsx)(q, {})
@@ -1354,7 +1364,7 @@
           element: (0, m.jsx)(re, {})
         }, {
           path: "feedback",
-          element: (0, m.jsx)(G, {})
+          element: (0, m.jsx)(Q, {})
         }, {
           path: "videos/:id",
           element: (0, m.jsx)(we, {})
