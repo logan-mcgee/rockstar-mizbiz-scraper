@@ -836,7 +836,9 @@
             value: n
           } = e;
           if (null == t) throw Error("You have to specify a key and a value.");
-          const r = i() ?? {};
+          const r = {
+            ...i() ?? {}
+          };
           return r[t] = n, null === n && delete r[t], window.localStorage.setItem(a, JSON.stringify(r)), r
         },
         c = () => ({

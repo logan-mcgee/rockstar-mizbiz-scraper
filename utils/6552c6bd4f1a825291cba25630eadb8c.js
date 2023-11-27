@@ -22,7 +22,9 @@
             value: s
           } = e;
           if (null == t) throw Error("You have to specify a key and a value.");
-          const a = n() ?? {};
+          const a = {
+            ...n() ?? {}
+          };
           return a[t] = s, null === s && delete a[t], window.localStorage.setItem(r, JSON.stringify(a)), a
         },
         i = () => ({

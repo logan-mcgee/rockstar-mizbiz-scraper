@@ -739,7 +739,7 @@
             v(r.get("tab") ?? e ?? null)
           }), [f, r.get("tab")]), (0, d.useEffect)((() => {
             void 0 !== f?.games?.paging?.count && (c((f?.games?.paging?.count ?? 0) + (f?.videos?.paging?.count ?? 0) + (f?.posts?.paging?.count ?? 0)), s(f?.meta?.title.replace("%s", n)))
-          }), [f, k]), Object.entries(m).length ? m.q ? null === l ? null : (0, o.jsx)(o.Fragment, {
+          }), [f, k]), Object.entries(m).length ? m.q ? null === l || b ? null : (0, o.jsx)(o.Fragment, {
             children: f[k].results.length ? (0, o.jsxs)("div", {
               className: ce,
               children: [(0, o.jsx)("section", {
