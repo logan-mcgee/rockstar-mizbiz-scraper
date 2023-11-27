@@ -9167,7 +9167,7 @@
             className: "rockstargames-modules-core-headeracf0fe31775e9e9f76e57a6356c3073d",
             children: [!n && (0, l.jsxs)("div", {
               className: "rockstargames-modules-core-headerae7adffe4295955d4ea126909f0f7027",
-              children: [i && (0, l.jsx)(ln, {
+              children: [(i || s) && (0, l.jsx)(ln, {
                 location: {
                   domain: "www",
                   path: "/"
@@ -9175,7 +9175,7 @@
                 gaText: _e.nav_rockstargames_home.defaultMessage,
                 gaBreadCrumb: _e.nav_rockstargames_home.defaultMessage,
                 children: (0, l.jsx)(Qs, {})
-              }), !i && (0, l.jsx)("button", {
+              }), !i && !s && (0, l.jsx)("button", {
                 type: "button",
                 className: "rockstargames-modules-core-headerfe08980c15b4c9d647ad67b3e69df46c",
                 onClick: () => p(ar),
@@ -10104,7 +10104,9 @@
             value: t
           } = e;
           if (null == a) throw Error("You have to specify a key and a value.");
-          const n = C() ?? {};
+          const n = {
+            ...C() ?? {}
+          };
           return n[a] = t, null === t && delete n[a], window.localStorage.setItem(S, JSON.stringify(n)), n
         },
         T = () => ({
