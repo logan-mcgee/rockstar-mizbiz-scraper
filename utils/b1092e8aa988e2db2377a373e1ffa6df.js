@@ -25,7 +25,7 @@
           const a = {
             ...n() ?? {}
           };
-          return a[t] = s, null === s && delete a[t], window.localStorage.setItem(r, JSON.stringify(a)), a
+          return a[t] = s, null === s && delete a[t], window.localStorage.setItem(r, JSON.stringify(a)), n(a), a
         },
         i = () => ({
           lsSettings: (0, a.useReactiveVar)(n),

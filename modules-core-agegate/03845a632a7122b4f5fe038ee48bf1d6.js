@@ -52,12 +52,11 @@
                 const a = `${b.current.value}-${h.current.value.padStart(2,0)}-${m.current.value.padStart(2,0)}`,
                   s = c()(a, "YYYY-MM-DD", !0).isValid();
                 if (i(s), s) {
-                  const e = c()().diff(a, "years"),
-                    s = n({
-                      key: "agegatePass",
-                      value: e >= 17
-                    });
-                  d(s)
+                  const e = c()().diff(a, "years");
+                  n({
+                    key: "agegatePass",
+                    value: e >= 17
+                  })
                 }
               },
               children: [(0, o.jsx)("h5", {

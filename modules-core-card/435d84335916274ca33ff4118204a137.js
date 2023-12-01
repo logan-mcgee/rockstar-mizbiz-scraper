@@ -53,45 +53,46 @@
           prod: r,
           size: u,
           title: b,
-          initial: v = "initial",
-          animate: x = "animate",
+          initial: x = "initial",
+          animate: v = "animate",
           variants: k,
           type: y = null,
           context: w = null,
           textOverlayProps: C,
-          className: j,
-          children: P,
+          className: P,
+          children: j,
           theme: T = "none",
           cardIds: _,
           id: z,
           pricingOptions: O,
           pricingContainerHeight: N,
           isCoverCard: Z,
-          platformOptions: L
+          platformOptions: L,
+          isProductCard: H = !1
         } = e;
-        const H = (0, s.useRef)(),
-          E = (0, s.useRef)(),
+        const E = (0, s.useRef)(),
+          S = (0, s.useRef)(),
           {
-            tag: S,
-            expandedHasTag: I,
-            badges: M
+            tag: I,
+            expandedHasTag: M,
+            badges: V
           } = C;
         i().set(t, "meta.prod", r);
-        const [, V] = (0, n.useSearchParams)(), [B, q] = (0, s.useState)(null), W = void 0 !== O?.hasPricingOptions || null !== L, R = P?.props?.images.length > 0;
+        const [, B] = (0, n.useSearchParams)(), [q, W] = (0, s.useState)(null), R = j?.props?.images.length > 0;
         let A = (0, g.jsx)("h1", {
           children: b
         });
         return Z && (A = null), (0, s.useEffect)((() => {
-          null !== B && B < _?.length && B > -1 && V({
-            info: _[B]
+          null !== q && q < _?.length && q > -1 && B({
+            info: _[q]
           })
-        }), [B, _]), (0, s.useEffect)((() => {
+        }), [q, _]), (0, s.useEffect)((() => {
           _?.forEach(((e, a) => {
-            e === z && q(a)
+            e === z && W(a)
           }))
         }), [_, z]), (0, s.useEffect)((() => {
           const e = () => {
-            H.current && H.current.scrollTop > 0 && window.innerWidth >= window.innerHeight && (H.current.scrollTop = 0)
+            E.current && E.current.scrollTop > 0 && window.innerWidth >= window.innerHeight && (E.current.scrollTop = 0)
           };
           return window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
         }), []), (0, g.jsx)(d.DataLayerProvider, {
@@ -99,17 +100,17 @@
           card_name: b?.toLowerCase(),
           children: (0, g.jsx)(c.ScrollTracker, {
             threshold: [25, 50, 75, 90, 100],
-            trackRef: "long" === y ? H : E,
+            trackRef: "long" === y ? E : S,
             children: (0, g.jsxs)(f, {
-              ref: H,
-              initial: v,
-              animate: x,
+              ref: E,
+              initial: x,
+              animate: v,
               variants: k.expanded,
               transition: h.cardOpen,
-              className: (0, o.classList)("rockstargames-modules-core-cardab2ff002fe79682e12519c4608068662", j),
+              className: (0, o.classList)("rockstargames-modules-core-cardab2ff002fe79682e12519c4608068662", P),
               "data-type": y,
               "data-size": u,
-              "data-product": W || !1,
+              "data-product": H,
               "data-covercard": Z || !1,
               "data-context": w,
               style: {
@@ -123,9 +124,9 @@
                 pricingOptions: O,
                 platformOptions: L,
                 isCoverCard: Z,
-                children: P
+                children: j
               }), (0, g.jsxs)(f, {
-                ref: E,
+                ref: S,
                 className: "rockstargames-modules-core-cardb89031a2a4f7d385a3a1d17e583f4dc4",
                 variants: k.expandedContents,
                 transition: h.afterCardOpen,
@@ -133,10 +134,10 @@
                 children: [(0, g.jsxs)("div", {
                   className: "rockstargames-modules-core-cardfbc985f4e3df2ee4a37d472282b9cd95",
                   children: [(0, g.jsx)(l.Z, {
-                    hasTag: I,
-                    tag: S,
-                    badges: M
-                  }), A, W && (0, g.jsxs)(g.Fragment, {
+                    hasTag: M,
+                    tag: I,
+                    badges: V
+                  }), A, H && (0, g.jsxs)(g.Fragment, {
                     children: [!0 === L?.hasPlatformOptions && (0, g.jsx)("div", {
                       className: "rockstargames-modules-core-cardc3a31a2bbef2ccc93f46ce3486249f7a",
                       children: (0, g.jsx)(l.Z, {
@@ -195,8 +196,7 @@
             setPricingContainerHeight: d = (() => {})
           } = e;
           const l = (0, s.createRef)();
-          let m = !1;
-          return m = !0, (0, s.useEffect)((() => {
+          return (0, s.useEffect)((() => {
             const e = () => {
               l.current && null !== d && d(l.current.clientHeight)
             };
@@ -230,7 +230,7 @@
                   }, a)
                 }))
               })]
-            }), !1]
+            })]
           })
         },
         l = e => {
@@ -337,12 +337,12 @@
             isProductCard: u,
             cardIds: h = null,
             theme: b = "none",
-            isCoverCard: v
+            isCoverCard: x
           } = e;
-          const [x, k] = (0, d.useSearchParams)(), y = (0, s.useRef)(null), [, w] = (0, l.useModal)(), {
+          const [v, k] = (0, d.useSearchParams)(), y = (0, s.useRef)(null), [, w] = (0, l.useModal)(), {
             track: C
-          } = (0, m.useGtmTrack)(), [j, P] = (0, s.useState)(!1), T = () => {
-            P(!1), w(null), k({}), C({
+          } = (0, m.useGtmTrack)(), [P, j] = (0, s.useState)(!1), T = () => {
+            j(!1), w(null), k({}), C({
               event: "trackPageview"
             })
           }, _ = () => {
@@ -388,7 +388,7 @@
               position: t
             })
           }, z = e => {
-            v && "button" !== e.target.type || "linkout" !== o && (e.preventDefault(), e.stopPropagation(), a ? k({
+            x && "button" !== e.target.type || "linkout" !== o && (e.preventDefault(), e.stopPropagation(), a ? k({
               info: a
             }) : _(), C({
               event: "card_click",
@@ -402,10 +402,10 @@
             }))
           };
           return (0, s.useEffect)((() => {
-            j && _()
-          }), [j]), (0, s.useEffect)((() => {
-            P(x.get("info") === a)
-          }), [x.get("info"), a]), (0, p.jsx)("div", {
+            P && _()
+          }), [P]), (0, s.useEffect)((() => {
+            j(v.get("info") === a)
+          }), [v.get("info"), a]), (0, p.jsx)("div", {
             ref: y,
             onClick: z,
             onKeyUp: e => {
@@ -442,13 +442,13 @@
             animate: u,
             variants: h,
             id: b,
-            position: v,
-            sectionTitle: x,
+            position: x,
+            sectionTitle: v,
             expandedType: k,
             context: y,
             children: w,
             expandedCardContents: C,
-            textOverlayProps: j = {
+            textOverlayProps: P = {
               hasTextOverlay: !1,
               tag: "",
               collapsedHasTag: !1,
@@ -456,24 +456,24 @@
               description: "",
               collapsedHasDescription: !1
             },
-            deckProps: P = {},
+            deckProps: j = {},
             modalProps: T = [],
             theme: _,
             cardIds: z,
             pricingOptions: O,
             platformOptions: N = null,
             pricingContainerHeight: Z,
-            isCoverCard: L = !1
+            isCoverCard: L = !1,
+            isProductCard: H = !1
           } = e;
-          const H = (0, o.useTinaComponents)(),
-            E = void 0 !== O?.hasPricingOptions || null !== N,
+          const E = (0, o.useTinaComponents)(),
             S = (0, s.useMemo)((() => ({
-              ...H,
+              ...E,
               HTMLElement: r.HTMLElement,
               ImageWithBadge: r.ImageWithBadge,
               Carousel: r.Carousel,
               GroupOfItems: n()
-            })), [H]),
+            })), [E]),
             I = (0, s.useMemo)((() => (0, p.jsx)(c.Z, {
               type: k,
               components: S,
@@ -483,7 +483,7 @@
               size: d,
               title: l,
               context: y,
-              textOverlayProps: j,
+              textOverlayProps: P,
               initial: m,
               animate: u,
               variants: h,
@@ -494,24 +494,25 @@
               pricingContainerHeight: Z,
               isCoverCard: L,
               platformOptions: N,
+              isProductCard: H,
               children: C
-            })), [k, i, t, d, l, j, C, m, u, h, S, a]),
+            })), [k, i, t, d, l, P, C, m, u, h, S, a, H]),
             M = [f.card, L ? f.coverCardWrapper : ""].join(" ");
           return (0, p.jsx)(g, {
             id: b,
-            position: v,
-            sectionTitle: x,
+            position: x,
+            sectionTitle: v,
             title: l,
             size: d,
             expandedType: k,
             images: i,
-            deckProps: P,
+            deckProps: j,
             modalProps: {
               content: I,
               ...T
             },
             className: M,
-            isProductCard: E,
+            isProductCard: H,
             cardIds: z,
             theme: _,
             isCoverCard: L,
@@ -814,20 +815,20 @@
           },
           images: h = [],
           deckProps: b = {},
-          to: v = null,
-          tina: x = {},
+          to: x = null,
+          tina: v = {},
           position: k = 0,
           sectionTitle: y = "",
           theme: w,
           pricingOptions: C,
-          cardIds: j,
-          platformOptions: P = null
+          cardIds: P,
+          platformOptions: j = null
         } = e;
         const T = (0, r.useTinaPayload)(),
-          _ = x?.payload?.meta?.cdn ?? T?.meta?.prod ?? !1,
+          _ = v?.payload?.meta?.cdn ?? T?.meta?.prod ?? !1,
           [z, O] = (0, s.useState)(b?.size ?? g),
-          N = void 0 !== C?.hasPricingOptions || null !== P,
-          [Z, L] = (0, s.useState)(0);
+          [N, Z] = (0, s.useState)(0),
+          L = void 0 !== C?.hasPricingOptions || void 0 !== j?.hasPlatformOptions;
         return (0, s.useEffect)((() => {
           O(b?.size ?? g)
         }), [b?.size, g]), (0, m.jsx)(n.Z, {
@@ -856,27 +857,27 @@
           position: k,
           sectionTitle: y,
           theme: w,
-          cardIds: j,
+          cardIds: P,
           pricingOptions: C,
-          platformOptions: P,
-          pricingContainerHeight: Z,
+          platformOptions: j,
+          pricingContainerHeight: N,
           children: (0, m.jsx)(d.Z, {
             expandedType: f,
-            to: v,
+            to: x,
             sectionTitle: y,
             id: a,
             cardTitle: t,
             position: k,
             children: (0, m.jsx)("div", {
               className: l.content,
-              "data-product": N,
+              "data-product": L,
               children: (0, m.jsx)(o.Z, {
                 title: t,
                 size: z,
                 textOverlayProps: u,
                 pricingOptions: C,
-                platformOptions: P,
-                setPricingContainerHeight: L,
+                platformOptions: j,
+                setPricingContainerHeight: Z,
                 children: (0, m.jsx)(c.Z, {
                   images: h,
                   prod: _
@@ -921,22 +922,22 @@
           },
           images: h = [],
           deckProps: b = {},
-          tina: v = {},
-          payload: x,
+          tina: x = {},
+          payload: v,
           position: k = 0,
           sectionTitle: y = "",
           cardIds: w
         } = e;
         const C = (0, r.useTinaPayload)(),
-          j = x ?? C,
-          P = v?.payload?.meta?.cdn ?? j?.meta?.prod ?? !1,
+          P = v ?? C,
+          j = x?.payload?.meta?.cdn ?? P?.meta?.prod ?? !1,
           T = ((e, a) => e?.map((e => e?.image ? {
             ...e,
             image: {
               ...e.image,
               prod: a
             }
-          } : e)))(h, P),
+          } : e)))(h, j),
           [_, z] = (0, s.useState)(b?.size ?? g),
           {
             parent: O,
@@ -952,14 +953,14 @@
           payload: {
             content: i,
             meta: {},
-            payload: j
+            payload: P
           },
           title: t,
           size: _,
           expandedType: f,
           images: T,
           deckProps: b,
-          prod: P,
+          prod: j,
           variants: p.cardWithImageGallery,
           textOverlayProps: u,
           modalProps: {
@@ -1047,7 +1048,7 @@
     },
     5786: (e, a, t) => {
       t.d(a, {
-        Z: () => v
+        Z: () => x
       });
       var s = t(927),
         r = t(6237),
@@ -1069,7 +1070,7 @@
         CardWithImageGallery: l.Z,
         TextCard: m.Z,
         ...o
-      }, v = f.withFadeIn(h((e => {
+      }, x = f.withFadeIn(h((e => {
         let {
           cards: a = [],
           size: t,
@@ -1081,26 +1082,26 @@
           customAspectRatio: f = "3/1",
           titleBadge: h = null
         } = e;
-        const v = (0, s.useRef)(null),
-          x = n().map(a, "id"),
+        const x = (0, s.useRef)(null),
+          v = n().map(a, "id"),
           k = u({
-            ids: x
+            ids: v
           }),
           [y, w] = (0, s.useState)(d),
           [C] = (0, r.useSearchParams)(),
-          [j, P] = (0, s.useState)(!1);
+          [P, j] = (0, s.useState)(!1);
         (0, s.useEffect)((() => {
           if ("fob" === t) {
             const e = C.get("section");
-            if (e && "games" === e && !j && (P(!0), v.current)) {
+            if (e && "games" === e && !P && (j(!0), x.current)) {
               const e = 100;
-              window.scrollTo(0, v.current.offsetTop - e)
+              window.scrollTo(0, x.current.offsetTop - e)
             }
           }
         }), []), (0, s.useEffect)((() => {
-          if (!v.current) return;
+          if (!x.current) return;
           const e = () => {
-            const e = d || window.getComputedStyle(v.current).getPropertyValue("--slides-per-view");
+            const e = d || window.getComputedStyle(x.current).getPropertyValue("--slides-per-view");
             w(e)
           };
           return window.addEventListener("resize", e), e(), () => {
@@ -1127,7 +1128,7 @@
                   position: e,
                   sectionTitle: i,
                   theme: l,
-                  cardIds: x
+                  cardIds: v
                 }
               }, r)), e += 1
             }
@@ -1137,7 +1138,7 @@
         return (0, p.jsx)("div", {
           className: "rockstargames-modules-core-carde756d7ada0a1e3e90ffe947506688185",
           "data-theme": l,
-          ref: v,
+          ref: x,
           children: (0, p.jsx)(g, {
             description: o,
             size: t,

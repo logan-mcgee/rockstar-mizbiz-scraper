@@ -680,6 +680,20 @@
 }
 
 @font-face {
+  font-family: GTAArtDeco;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/20f419b63a6f61085c182ec2f1cd8fa0.woff) format("woff")
+}
+
+@font-face {
+  font-family: GTAArtDeco;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/62b84dbfc20341e064c88ec93455ccac.woff) format("woff")
+}
+
+@font-face {
   font-family: RDRLino-Regular;
   font-style: normal;
   font-weight: 400;

@@ -345,6 +345,13 @@ template {
 }
 
 @font-face {
+  font-family: NeueHelveticaPaneuropean;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/bf1c99f9a5316689221de8a3540abf38.woff) format("woff")
+}
+
+@font-face {
   font-family: SackersGothicW01-Square;
   font-style: normal;
   font-weight: 400;
@@ -534,6 +541,139 @@ template {
 }
 
 @font-face {
+  font-family: ChaletComprime;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/95ca59e1c2cf140daa8b024c6a139e4c.woff) format("woff")
+}
+
+@font-face {
+  font-family: ChaletComprime;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/aa2a7321d65db9f2de3cafabeb37e354.woff) format("woff")
+}
+
+@font-face {
+  font-family: Chalet;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/ee9fe642d516bd426445b83dfe08cd39.woff) format("woff")
+}
+
+@font-face {
+  font-family: Chalet;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/ef44f43ca79bb1aee29fbc2d457e7dee.woff) format("woff")
+}
+
+@font-face {
+  font-family: Pricedown;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/099c158b47220bfa6b52c3aaf2ff3753.woff) format("woff")
+}
+
+@font-face {
+  font-family: NeueHelveticaW05;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/a531a5aaeac0ada2930fd697606d7e9e.woff) format("woff")
+}
+
+@font-face {
+  font-family: NeueHelveticaW05;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/0c60fa85dfc771ab4d15d175246263b5.woff) format("woff")
+}
+
+@font-face {
+  font-family: NeueHelveticaW05;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/acbb38cbe0ae2cdfc5f72a96cd32fe86.woff) format("woff")
+}
+
+@font-face {
+  font-family: FrizQuadrataW05;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/e4be9aed1e8beccc21ffb995f0a89da0.woff) format("woff")
+}
+
+@font-face {
+  font-family: FrizQuadrataW05;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/db765ccb047ec8429212c1a913914694.woff) format("woff")
+}
+
+@font-face {
+  font-family: FrizQuadrataW05;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/202c95f3c4658c54223b0f4166bd3825.woff) format("woff")
+}
+
+@font-face {
+  font-family: FrizQuadrataW05;
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/a5e4e77906b6b4b3cbf21f4c26271861.woff) format("woff")
+}
+
+@font-face {
+  font-family: CorporateW05;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/a8da93d3b93aa6f5b995c8fca0a49d56.woff) format("woff")
+}
+
+@font-face {
+  font-family: NimbusSansW05;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/f09f2d938e708e14f4211b5c41b1ae2c.woff) format("woff")
+}
+
+@font-face {
+  font-family: NimbusSansW05;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/c70a0570c2d0687a208d5612623a9fdc.woff) format("woff")
+}
+
+@font-face {
+  font-family: EurostileNextW05;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/63234fb79c05a628350bb714e8b70f1d.woff) format("woff")
+}
+
+@font-face {
+  font-family: Diploma;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/bc4df074e2a0a7a841c564dba3e08fe8.woff) format("woff")
+}
+
+@font-face {
+  font-family: BrushScriptMT;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/ab64825965d1d9e6e8721c549ca9b65a.woff) format("woff")
+}
+
+@font-face {
+  font-family: BankGothicBT;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/59de0d7e9b43e1cc0cab80a770e9efe6.woff) format("woff")
+}
+
+@font-face {
   font-family: MeltdownRegular;
   font-style: normal;
   font-weight: 400;
@@ -545,6 +685,20 @@ template {
   font-style: normal;
   font-weight: 400;
   src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/976c864a7229fe453650a438f00e0d3e.woff) format("woff")
+}
+
+@font-face {
+  font-family: GTAArtDeco;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/20f419b63a6f61085c182ec2f1cd8fa0.woff) format("woff")
+}
+
+@font-face {
+  font-family: GTAArtDeco;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/62b84dbfc20341e064c88ec93455ccac.woff) format("woff")
 }
 
 @font-face {
@@ -1792,379 +1946,13 @@ ul {
   }
 }
 
-:root {
-  --font-family-body: "Chalet";
-  --font-family-h: "ChaletComprime";
-  --font-weight-regular: 400;
-  --font-weight-bold: 700;
-  --letter-spacing-body: 0;
-  --letter-spacing-h: 0;
-  --line-height-sm: 1;
-  --line-height-md: 1.1;
-  --line-height-lg: 1.6;
-  --black-200: #000;
-  --black-100: #121212;
-  --black-65: hsla(0, 0%, 7%, .65);
-  --black-40: hsla(0, 0%, 7%, .4);
-  --black-15: hsla(0, 0%, 7%, .15);
-  --text-dark: #2d2d2d;
-  --border-color: #2d2d2d;
-  --white-100: #fff;
-  --white-65: hsla(0, 0%, 100%, .65);
-  --white-40: hsla(0, 0%, 100%, .4);
-  --white-15: hsla(0, 0%, 100%, .15);
-  --text-light: #e8e8e8;
-  --focusring-blue: blue;
-  --red: #e03232;
-  --circoloco-red: #eb1818;
-  --rockstar-gold: #fcaf17;
-  --playstation-blue: #00439c;
-  --microsoft-green: #387a26;
-  --color-h: var(--white-100);
-  --color-body: var(--text-light);
-  --green-light: #c1f7bd;
-  --green-dark: #81da85;
-  --max-width-sm: 640px;
-  --max-width-md: 1088px;
-  --max-width-lg: 1920px;
-  --max-width-xl: 2560px;
-  --spacing-xxs: 0.25rem;
-  --spacing-xs: 0.5rem;
-  --spacing-sm: 1rem;
-  --spacing-md: 2rem;
-  --spacing-lg: 4rem;
-  --spacing-xl: 8rem;
-  --grid-gap-xxs: var(--spacing-xxs);
-  --grid-gap-xs: var(--spacing-xs);
-  --grid-gap-sm: var(--spacing-sm);
-  --grid-gap-md: var(--spacing-md);
-  --grid-gap-lg: var(--spacing-lg);
-  --grid-gap-xl: var(--spacing-xl);
-  --padding-xxs: var(--spacing-xxs);
-  --padding-xs: var(--spacing-xs);
-  --padding-sm: var(--spacing-sm);
-  --padding-md: var(--spacing-md);
-  --padding-lg: var(--spacing-lg);
-  --padding-xl: var(--spacing-xl);
-  --margin-xxs: var(--spacing-xxs);
-  --margin-xs: var(--spacing-xs);
-  --margin-sm: var(--spacing-sm);
-  --margin-md: var(--spacing-md);
-  --margin-lg: var(--spacing-lg);
-  --margin-xl: var(--spacing-xl);
-  --border-radius-xs: 2px;
-  --border-radius-sm: 4px;
-  --border-radius-md: 8px;
-  --border-radius-lg: 16px;
-  --gradient-overlay-bottom: linear-gradient(180.08deg, transparent 25%, rgba(0, 0, 0, .5) 65%, rgba(0, 0, 0, .6));
-  --gen9-max-width: 3840px;
-  --padding-sides: var(--padding-lg);
-  --content-max-width: var(--gen9-max-width);
-  --content-padding: 0 var(--padding-sides);
+body {
+  overflow-y: var(--body-overflow, auto)
+}
+
+#main {
   display: flex;
-  flex: 1;
-  justify-content: center
-}
-
-@media (min-width:2560px) {
-  :root {
-    --max-width-md: 1440px
-  }
-}
-
-@media (max-width:767px) {
-  :root {
-    --spacing-lg: 2rem;
-    --spacing-xl: 4rem
-  }
-}
-
-@font-face {
-  font-family: ChaletComprime;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/95ca59e1c2cf140daa8b024c6a139e4c.woff) format("woff")
-}
-
-@font-face {
-  font-family: ChaletComprime;
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/aa2a7321d65db9f2de3cafabeb37e354.woff) format("woff")
-}
-
-@font-face {
-  font-family: Chalet;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/ee9fe642d516bd426445b83dfe08cd39.woff) format("woff")
-}
-
-@font-face {
-  font-family: Chalet;
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/ef44f43ca79bb1aee29fbc2d457e7dee.woff) format("woff")
-}
-
-@font-face {
-  font-family: Pricedown;
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/099c158b47220bfa6b52c3aaf2ff3753.woff) format("woff")
-}
-
-@font-face {
-  font-family: NeueHelveticaW05;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/a531a5aaeac0ada2930fd697606d7e9e.woff) format("woff")
-}
-
-@font-face {
-  font-family: NeueHelveticaW05;
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/0c60fa85dfc771ab4d15d175246263b5.woff) format("woff")
-}
-
-@font-face {
-  font-family: NeueHelveticaW05;
-  font-style: normal;
-  font-weight: 900;
-  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/acbb38cbe0ae2cdfc5f72a96cd32fe86.woff) format("woff")
-}
-
-@font-face {
-  font-family: FrizQuadrataW05;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/e4be9aed1e8beccc21ffb995f0a89da0.woff) format("woff")
-}
-
-@font-face {
-  font-family: FrizQuadrataW05;
-  font-style: italic;
-  font-weight: 400;
-  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/db765ccb047ec8429212c1a913914694.woff) format("woff")
-}
-
-@font-face {
-  font-family: FrizQuadrataW05;
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/202c95f3c4658c54223b0f4166bd3825.woff) format("woff")
-}
-
-@font-face {
-  font-family: FrizQuadrataW05;
-  font-style: italic;
-  font-weight: 700;
-  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/a5e4e77906b6b4b3cbf21f4c26271861.woff) format("woff")
-}
-
-@font-face {
-  font-family: CorporateW05;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/a8da93d3b93aa6f5b995c8fca0a49d56.woff) format("woff")
-}
-
-@font-face {
-  font-family: NimbusSansW05;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/f09f2d938e708e14f4211b5c41b1ae2c.woff) format("woff")
-}
-
-@font-face {
-  font-family: NimbusSansW05;
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/c70a0570c2d0687a208d5612623a9fdc.woff) format("woff")
-}
-
-@font-face {
-  font-family: EurostileNextW05;
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/63234fb79c05a628350bb714e8b70f1d.woff) format("woff")
-}
-
-@font-face {
-  font-family: Diploma;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/bc4df074e2a0a7a841c564dba3e08fe8.woff) format("woff")
-}
-
-@font-face {
-  font-family: BrushScriptMT;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/ab64825965d1d9e6e8721c549ca9b65a.woff) format("woff")
-}
-
-@font-face {
-  font-family: BankGothicBT;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/59de0d7e9b43e1cc0cab80a770e9efe6.woff) format("woff")
-}
-
-@font-face {
-  font-family: NeueHelveticaPaneuropean;
-  font-style: italic;
-  font-weight: 700;
-  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/b2ebeec4803f0df250c5e20b396162b4.woff) format("woff")
-}
-
-@font-face {
-  font-family: NeueHelveticaPaneuropean;
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/c02857e0585008d14d216e4a43b8c746.woff) format("woff")
-}
-
-@font-face {
-  font-family: NeueHelveticaPaneuropean;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/bf1c99f9a5316689221de8a3540abf38.woff) format("woff")
-}
-
-:root :lang(pl_pl) {
-  --font-family-h: NeueHelveticaPaneuropean;
-  --font-family-std: NeueHelveticaPaneuropean
-}
-
-:root :lang(ru_ru) {
-  --font-family-h: NeueHelveticaPaneuropean
-}
-
-:root [data-type-lang=pl],
-:root [data-type-lang=ru] {
-  font-family: NeueHelveticaPaneuropean !important
-}
-
-:root :lang(zh_hans) {
-  --font-family-h: ChaletComprime, NotoSansSC;
-  --font-family-body: NotoSansSC
-}
-
-:root [data-type-lang=zh] {
-  font-family: ChaletComprime, NotoSansSC !important
-}
-
-:root :lang(zh_tw) {
-  --font-family-h: ChaletComprime, NotoSansTC;
-  --font-family-body: NotoSansTC
-}
-
-:root [data-type-lang=tw] {
-  font-family: ChaletComprime, NotoSansTC !important
-}
-
-:root :lang(ja_jp) {
-  --font-family-h: ChaletComprime, NotoSansJP;
-  --font-family-body: NotoSansJP
-}
-
-:root [data-type-lang=jp] {
-  font-family: ChaletComprime, NotoSansJP !important
-}
-
-:root :lang(ko_kr) {
-  --font-family-h: ChaletComprime, NotoSansKR;
-  --font-family-body: NotoSansKR
-}
-
-:root [data-type-lang=kr] {
-  font-family: ChaletComprime, NotoSansKR !important
-}
-
-@media (min-width:0px) {
-  :root {
-    --root-font-size: 16
-  }
-}
-
-@media (min-width:768px) {
-  :root {
-    --root-font-size: 18
-  }
-}
-
-@media (min-width:1024px) {
-  :root {
-    --root-font-size: 20
-  }
-}
-
-@media (min-width:1920px) {
-  :root {
-    --root-font-size: 22;
-    --padding-sides: var(--padding-xl)
-  }
-}
-
-@media (min-width:2560px) {
-  :root {
-    --padding-sides: 16rem
-  }
-}
-
-:root h1 {
-  font-size: var(--font-size-8)
-}
-
-:root h1,
-:root h2 {
-  color: var(--color-h);
-  font-family: var(--font-family-h);
-  font-weight: var(--font-weight-bold);
-  letter-spacing: var(--letter-spacing-h);
-  line-height: var(--line-height-md)
-}
-
-:root h2 {
-  font-size: var(--font-size-7)
-}
-
-:root h3 {
-  font-size: var(--font-size-6)
-}
-
-:root h3,
-:root h4 {
-  color: var(--color-h);
-  font-family: var(--font-family-h);
-  font-weight: var(--font-weight-regular);
-  letter-spacing: var(--letter-spacing-h);
-  line-height: var(--line-height-md)
-}
-
-:root h4 {
-  font-size: var(--font-size-5)
-}
-
-:root h5 {
-  color: var(--color-h);
-  font-family: var(--font-family-h);
-  font-size: var(--font-size-4);
-  letter-spacing: var(--letter-spacing-h);
-  line-height: var(--line-height-md)
-}
-
-:root h5,
-:root p {
-  font-weight: var(--font-weight-regular)
-}
-
-:root p {
-  color: var(--color-body);
-  font-family: var(--font-family-body);
-  font-size: var(--font-size-3);
-  letter-spacing: var(--letter-spacing-body);
-  line-height: var(--line-height-lg)
+  flex-flow: column;
+  justify-content: space-between;
+  min-height: 100vh
 }

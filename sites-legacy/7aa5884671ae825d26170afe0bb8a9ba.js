@@ -76,9 +76,9 @@
           const {
             setState: n
           } = (0, g.NE)();
-          return (0, o.useLayoutEffect)((() => (n("brand", l), t(!0), () => {
-            t(!1)
-          })), []), (0, p.jsx)("div", {
+          return (0, o.useLayoutEffect)((() => {
+            n("brand", l)
+          }), []), (0, p.jsx)("div", {
             className: "rockstargames-sites-legacyfa85682f753d59e768dbb3eedf01a62a",
             "data-brand": l,
             children: a

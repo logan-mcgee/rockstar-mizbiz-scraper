@@ -839,7 +839,7 @@
           const r = {
             ...i() ?? {}
           };
-          return r[t] = n, null === n && delete r[t], window.localStorage.setItem(a, JSON.stringify(r)), r
+          return r[t] = n, null === n && delete r[t], window.localStorage.setItem(a, JSON.stringify(r)), i(r), r
         },
         c = () => ({
           lsSettings: (0, r.useReactiveVar)(i),

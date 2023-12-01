@@ -1,6 +1,6 @@
 (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
-  [670], {
-    6670: (e, a, t) => {
+  [501], {
+    4501: (e, a, t) => {
       "use strict";
       t.r(a), t.d(a, {
         AccessibilityButton: () => i,
@@ -8,7 +8,6 @@
         Credits: () => v,
         FooterNav: () => j,
         FooterStuck: () => C,
-        Header: () => A,
         Nav: () => _
       });
       var s = t(3705);
@@ -17,8 +16,8 @@
         href: window.location.pathname.startsWith("gta-online") ? "#main" : "#content",
         children: "Skip to main content"
       });
-      var r = t(8976),
-        c = t(3657);
+      var c = t(8976),
+        r = t(3657);
       const n = {
           breadcrumbs: "rockstargames-sites-rockstargamesc90ab7e2d9702e1e823580125ae83856",
           disabled: "rockstargames-sites-rockstargamesd0624dc88a8c5ca33e6b5fb04b6ea9f4",
@@ -32,7 +31,7 @@
               navHidden: a
             },
             toggleNavOpen: t
-          } = (0, c.useRockstarLocalState)(), {
+          } = (0, r.useRockstarLocalState)(), {
             filter: i = "",
             links: o = []
           } = e;
@@ -42,7 +41,7 @@
             title: "Breadcrumbs",
             children: [(0, s.jsx)("div", {
               className: n.links,
-              children: o.map((e => (0, s.jsx)(r.A, {
+              children: o.map((e => (0, s.jsx)(c.A, {
                 to: e.href,
                 onClick: () => t(!1),
                 children: e.title
@@ -192,18 +191,18 @@
           } = e;
           const i = "v" === t,
             {
-              data: r
+              data: c
             } = (0, d.useQuery)(m.CreditData, {
               variables: {
                 needsIfruit: i,
                 title: t
               }
             });
-          if (!r) return null;
+          if (!c) return null;
           const {
-            creditsForTitle: c,
+            creditsForTitle: r,
             creditsIfruit: n
-          } = r;
+          } = c;
           return (0, s.jsxs)("div", {
             className: g.allCredits,
             "data-title": t,
@@ -211,15 +210,15 @@
               title: t,
               t: a
             }), (0, s.jsx)(b, {
-              data: c
+              data: r
             }), "v" === t ? (0, s.jsx)(u, {
               data: n
             }) : ""]
           })
         }));
       var h = t(3111),
-        N = t(6711);
-      const p = {
+        p = t(6711);
+      const N = {
           siteFooter: "rockstargames-sites-rockstargamesb09dd7fc17f8fe2828d82a908d4c76a9",
           links: "rockstargames-sites-rockstargamese2dc9e7d2ed91f615f39a77bfac250ff",
           companyInfoLinks: "rockstargames-sites-rockstargamesc21db3bc5f9a4dc9a2ff06df01efc758",
@@ -240,30 +239,30 @@
           const t = (0, d.useBase)(),
             {
               host: i
-            } = (0, N.useScConfig)(),
+            } = (0, p.useScConfig)(),
             {
               track: n
-            } = (0, N.useGtmTrack)(),
+            } = (0, p.useGtmTrack)(),
             {
               state: o,
               toggleNavOpen: l
-            } = (0, c.useRockstarLocalState)(),
+            } = (0, r.useRockstarLocalState)(),
             m = () => {
               l(!1)
             };
           return (0, s.jsxs)("footer", {
             role: "navigation",
             title: "Footer",
-            className: [p.siteFooter, o.loading ? p.loading : ""].join(" "),
+            className: [N.siteFooter, o.loading ? N.loading : ""].join(" "),
             "data-testid": "footerNav",
             children: [(0, s.jsx)("div", {
-              className: p.languageSelector,
-              children: (0, s.jsx)(r.LanguageSelector, {
+              className: N.languageSelector,
+              children: (0, s.jsx)(c.LanguageSelector, {
                 defaultMessage: h.components.language_selector_default
               })
             }), (0, s.jsxs)("div", {
-              className: p.links,
-              children: [(0, s.jsx)(r.A, {
+              className: N.links,
+              children: [(0, s.jsx)(c.A, {
                 to: "/contact",
                 onClick: m,
                 "data-gtm-category": "Footer",
@@ -271,7 +270,7 @@
                 "data-gtm-label": "Contact",
                 "data-testid": "contactButton",
                 children: a("Contact")
-              }), (0, s.jsx)(r.A, {
+              }), (0, s.jsx)(c.A, {
                 to: `${document.location.origin}${t}careers`,
                 onClick: m,
                 "data-gtm-category": "Footer",
@@ -279,7 +278,7 @@
                 "data-gtm-label": "Careers",
                 "data-testid": "careersLink",
                 children: a("Careers")
-              }), (0, s.jsx)(r.A, {
+              }), (0, s.jsx)(c.A, {
                 to: `https://${i}.rockstargames.com/settings/email`,
                 onClick: () => {
                   m(), n({
@@ -298,8 +297,8 @@
                 children: a("Subscribe")
               })]
             }), (0, s.jsxs)("div", {
-              className: p.companyInfoLinks,
-              children: [(0, s.jsx)(r.A, {
+              className: N.companyInfoLinks,
+              children: [(0, s.jsx)(c.A, {
                 to: "/corpinfo",
                 onClick: m,
                 "data-gtm-category": "Footer",
@@ -307,7 +306,7 @@
                 "data-gtm-label": "Corporate Info",
                 "data-testid": "coporateButton",
                 children: a("Corporate")
-              }), (0, s.jsx)(r.A, {
+              }), (0, s.jsx)(c.A, {
                 to: "/privacy",
                 onClick: m,
                 "data-gtm-category": "Footer",
@@ -315,14 +314,14 @@
                 "data-gtm-label": "Privacy",
                 "data-testid": "privacyButton",
                 children: a("Privacy")
-              }), (0, s.jsx)(r.A, {
+              }), (0, s.jsx)(c.A, {
                 onClick: () => window.OneTrust?.ToggleInfoDisplay(),
                 "data-gtm-category": "Footer",
                 "data-gtm-action": "Link Click",
                 "data-gtm-label": "Cookie settings",
                 "data-testid": "cookieSettingsButton",
                 children: a("Cookie Settings")
-              }), (0, s.jsx)(r.A, {
+              }), (0, s.jsx)(c.A, {
                 to: "/cookies",
                 onClick: m,
                 "data-gtm-category": "Footer",
@@ -330,7 +329,7 @@
                 "data-gtm-label": "Cookie policy",
                 "data-testid": "cookiePolicyButton",
                 children: a("Cookie Policy")
-              }), (0, s.jsx)(r.A, {
+              }), (0, s.jsx)(c.A, {
                 to: "/legal",
                 onClick: m,
                 "data-gtm-category": "Footer",
@@ -338,7 +337,7 @@
                 "data-gtm-label": "Legal",
                 "data-testid": "legalButton",
                 children: a("Legal")
-              }), (0, s.jsx)(r.A, {
+              }), (0, s.jsx)(c.A, {
                 to: "/ccpa",
                 onClick: m,
                 "data-gtm-category": "Footer",
@@ -348,52 +347,52 @@
                 children: a("Do Not Sell My Info")
               })]
             }), (0, s.jsxs)("div", {
-              className: p.social,
-              children: [(0, s.jsx)(r.A, {
+              className: N.social,
+              children: [(0, s.jsx)(c.A, {
                 to: "https://twitch.tv/rockstargames",
                 onClick: m,
                 target: "_blank",
-                className: p.twitch,
+                className: N.twitch,
                 "data-gtm-category": "Footer",
                 "data-gtm-action": "Social Click",
                 "data-gtm-label": "Twitch",
                 title: "Twitch",
                 "data-testid": "twitchLink"
-              }), (0, s.jsx)(r.A, {
+              }), (0, s.jsx)(c.A, {
                 to: "https://instagram.com/rockstargames",
                 onClick: m,
                 target: "_blank",
-                className: p.instagram,
+                className: N.instagram,
                 "data-gtm-category": "Footer",
                 "data-gtm-action": "Social Click",
                 "data-gtm-label": "Instagram",
                 title: "Instagram",
                 "data-testid": "instagramLink"
-              }), (0, s.jsx)(r.A, {
+              }), (0, s.jsx)(c.A, {
                 to: "https://twitter.com/rockstargames",
                 onClick: m,
                 target: "_blank",
-                className: p.twitter,
+                className: N.twitter,
                 "data-gtm-category": "Footer",
                 "data-gtm-action": "Social Click",
                 "data-gtm-label": "Twitter",
                 title: "Twitter",
                 "data-testid": "twitterLink"
-              }), (0, s.jsx)(r.A, {
+              }), (0, s.jsx)(c.A, {
                 to: "https://www.youtube.com/rockstargames",
                 onClick: m,
                 target: "_blank",
-                className: p.youtube,
+                className: N.youtube,
                 "data-gtm-category": "Footer",
                 "data-gtm-action": "Social Click",
                 "data-gtm-label": "YouTube",
                 title: "YouTube",
                 "data-testid": "youtubeLink"
-              }), (0, s.jsx)(r.A, {
+              }), (0, s.jsx)(c.A, {
                 to: "https://www.facebook.com/rockstargames",
                 onClick: m,
                 target: "_blank",
-                className: p.facebook,
+                className: N.facebook,
                 "data-gtm-category": "Footer",
                 "data-gtm-action": " Social Click",
                 "data-gtm-label": "Facebook",
@@ -401,12 +400,12 @@
                 "data-testid": "facebookLink"
               })]
             }), (0, s.jsxs)("section", {
-              className: p.showsOver,
+              className: N.showsOver,
               children: [(0, s.jsx)("div", {
-                className: p.whatTeamWildcats,
+                className: N.whatTeamWildcats,
                 children: "Rockstar Games"
               }), (0, s.jsxs)("div", {
-                className: p.places,
+                className: N.places,
                 children: [(0, s.jsx)("span", {
                   children: "New York"
                 }), (0, s.jsx)("span", {
@@ -417,7 +416,7 @@
                   children: "Bogotá"
                 })]
               }), (0, s.jsx)("div", {
-                className: p.sophomore,
+                className: N.sophomore,
                 children: "MCMXCVIII"
               })]
             })]
@@ -433,7 +432,7 @@
             state: {
               standalone: e
             }
-          } = (0, c.useRockstarLocalState)();
+          } = (0, r.useRockstarLocalState)();
           return (0, s.jsxs)("footer", {
             className: [x.showsOver, e && x.standalone].join(" "),
             children: [(0, s.jsx)("div", {
@@ -484,7 +483,7 @@
             onKeyUp: () => i(!1),
             role: "button",
             tabIndex: 0,
-            children: [(0, s.jsx)(r.A, {
+            children: [(0, s.jsx)(c.A, {
               "data-gtm-category": "Site Nav",
               "data-gtm-action": "Main Nav Click",
               "data-gtm-label": "Newswire",
@@ -492,7 +491,7 @@
               to: "/newswire",
               className: w,
               children: t("Newswire")
-            }), (0, s.jsx)(r.A, {
+            }), (0, s.jsx)(c.A, {
               "data-gtm-category": "Site Nav",
               "data-gtm-action": "Main Nav Click",
               "data-gtm-label": "Games",
@@ -500,7 +499,7 @@
               to: "/games",
               className: w,
               children: t("Games")
-            }), (0, s.jsx)(r.A, {
+            }), (0, s.jsx)(c.A, {
               "data-gtm-category": "Site Nav",
               "data-gtm-action": "Main Nav Click",
               "data-gtm-label": "Videos",
@@ -508,7 +507,7 @@
               to: "/videos",
               className: w,
               children: t("Videos")
-            }), (0, s.jsx)(r.A, {
+            }), (0, s.jsx)(c.A, {
               "data-gtm-category": "Site Nav",
               "data-gtm-action": "Main Nav Click",
               "data-gtm-label": "Downloads",
@@ -516,7 +515,7 @@
               to: "/downloads",
               className: w,
               children: t("Downloads")
-            }), (0, s.jsx)(r.A, {
+            }), (0, s.jsx)(c.A, {
               "data-gtm-category": "Site Nav",
               "data-gtm-action": "Main Nav Click",
               "data-gtm-label": "Support",
@@ -524,7 +523,7 @@
               to: `https://support.rockstargames.com?redirect_lang=${a}`,
               target: "_blank",
               children: t("Support")
-            }), (0, s.jsx)(r.A, {
+            }), (0, s.jsx)(c.A, {
               "data-gtm-category": "Site Nav",
               "data-gtm-action": "Main Nav Click",
               "data-gtm-label": "Socialclub",
@@ -532,7 +531,7 @@
               to: "https://socialclub.rockstargames.com/",
               target: "_blank",
               children: t("Social Club")
-            }), (0, s.jsx)(r.A, {
+            }), (0, s.jsx)(c.A, {
               "data-gtm-category": "Site Nav",
               "data-gtm-action": "Main Nav Click",
               "data-gtm-label": "Launcher",
@@ -540,7 +539,7 @@
               to: "https://socialclub.rockstargames.com/rockstar-games-launcher",
               target: "_blank",
               children: t("Launcher")
-            }), (0, s.jsx)(r.A, {
+            }), (0, s.jsx)(c.A, {
               "data-gtm-category": "Site Nav",
               "data-gtm-action": "Main Nav Click",
               "data-gtm-label": "Store",
@@ -559,7 +558,7 @@
           const {
             state: i,
             toggleNavOpen: n
-          } = (0, c.useRockstarLocalState)(), o = () => {
+          } = (0, r.useRockstarLocalState)(), o = () => {
             n(!1)
           };
           return (0, S.useEffect)((() => {
@@ -579,7 +578,7 @@
                 className: y.content,
                 children: [(0, s.jsx)("div", {
                   className: y.searchbox,
-                  children: (0, s.jsx)(r.SearchBox, {})
+                  children: (0, s.jsx)(c.SearchBox, {})
                 }), (0, s.jsx)(L, {
                   locale: a,
                   t,
@@ -596,94 +595,7 @@
               tabIndex: 0
             })]
           })
-        }))),
-        F = {
-          header: "rockstargames-sites-rockstargamesd2dbf5efb1484f71a302d2b217900031",
-          headerHidden: "rockstargames-sites-rockstargamesc32405cfc6e0c3c08c43ee85898a64ee",
-          standalone: "rockstargames-sites-rockstargamese4752f6f345f04882afa2f7ba60d4b52",
-          hidden: "rockstargames-sites-rockstargamesb2ab827765a02fdf1b867452f1f0839f",
-          logo: "rockstargames-sites-rockstargamesaac66bb6b0e78833c471045bc3dc872d",
-          logoBlack: "rockstargames-sites-rockstargamese1f18112d96aaeea32e02eb2f0c5d30a",
-          logoNormal: "rockstargames-sites-rockstargamesf2fe38f8b4ae03c3bdd3a0081153e273",
-          active: "rockstargames-sites-rockstargamesbbcd9809b7442e70d3e2c5b1c474a840",
-          signin: "rockstargames-sites-rockstargamesa796b2b174f6bea965239bf931b69b19",
-          bg: "rockstargames-sites-rockstargamesbe773665368f1c07f2edd5c2a13867e8",
-          loader: "rockstargames-sites-rockstargamesd5b6519effe3a4ae1c092533107daec0",
-          loading: "rockstargames-sites-rockstargamesadbffde25c632b8627ac75a410c4bb09",
-          left: "rockstargames-sites-rockstargamesf48c98f58d842511fec736cf1da18543",
-          menuOpener: "rockstargames-sites-rockstargamese39263331666b45e97de2069f1ea218e",
-          navOpen: "rockstargames-sites-rockstargamesfb35bc6b1f4f342810aeaa65982fcf94"
-        },
-        A = () => {
-          const {
-            state: {
-              headerHidden: e,
-              loading: a,
-              navOpen: t,
-              navHidden: i,
-              normalLogo: n,
-              standalone: d
-            },
-            setNavHidden: l,
-            toggleNavOpen: m
-          } = (0, c.useRockstarLocalState)(), {
-            navOpen: g,
-            setNavOpen: k
-          } = (0, N.useRockstarUserState)(), {
-            freezeUserShouldSeeMore: f,
-            userShouldSeeMore: b
-          } = (0, c.useScroll)();
-          return (0, S.useEffect)((() => {
-            f || g || t || l(b)
-          }), [f, t, g, b]), (0, S.useEffect)((() => {
-            !0 === g && !0 === t && m()
-          }), [g]), (0, s.jsxs)(s.Fragment, {
-            children: [(0, s.jsxs)("header", {
-              className: [F.header, e ? F.headerHidden : "", d ? F.standalone : "", t ? F.navOpen : "", a ? F.loading : "", i ? F.hidden : ""].join(" "),
-              "data-testid": "headerBar",
-              children: [(0, s.jsxs)("div", {
-                className: F.left,
-                children: [(0, s.jsx)("div", {
-                  className: F.menuOpener,
-                  children: (0, s.jsxs)(r.A, {
-                    to: "#",
-                    onClick: e => {
-                      e.preventDefault(), m(), !0 === g && k(!1)
-                    },
-                    title: "Open Menu",
-                    role: "button",
-                    "data-testid": "openNavButton",
-                    children: [(0, s.jsx)("span", {}), (0, s.jsx)("span", {}), (0, s.jsx)("span", {})]
-                  })
-                }), (0, s.jsx)(o, {})]
-              }), (0, s.jsx)("div", {
-                className: F.logo,
-                children: (0, s.jsxs)(r.A, {
-                  "data-gtm-category": "Mega Nav",
-                  "data-gtm-action": "Main Nav",
-                  "data-gtm-label": "Main Logo",
-                  "data-testid": "homeButton",
-                  onClick: () => m(!1),
-                  to: "/",
-                  title: "Home",
-                  role: "link",
-                  children: [(0, s.jsx)("div", {
-                    className: [F.logoNormal, n ? "" : F.active].join(" ")
-                  }), (0, s.jsx)("div", {
-                    className: [F.logoNormal, n ? F.active : ""].join(" ")
-                  })]
-                })
-              }), (0, s.jsx)("div", {
-                className: F.signin,
-                children: (0, s.jsx)(N.MenuButton, {})
-              }), (0, s.jsx)("div", {
-                className: F.bg
-              }), (0, s.jsx)("div", {
-                className: [F.loader, a ? F.loading : ""].join(" ")
-              })]
-            }), (0, s.jsx)(_, {})]
-          })
-        }
+        })))
     },
     8139: e => {
       var a = {
@@ -899,20 +811,20 @@
           definitions: [i(e, a)]
         };
         e.hasOwnProperty("loc") && (t.loc = e.loc);
-        var r = s[a] || new Set,
-          c = new Set,
+        var c = s[a] || new Set,
+          r = new Set,
           n = new Set;
-        for (r.forEach((function(e) {
+        for (c.forEach((function(e) {
             n.add(e)
           })); n.size > 0;) {
           var o = n;
           n = new Set, o.forEach((function(e) {
-            c.has(e) || (c.add(e), (s[e] || new Set).forEach((function(e) {
+            r.has(e) || (r.add(e), (s[e] || new Set).forEach((function(e) {
               n.add(e)
             })))
           }))
         }
-        return c.forEach((function(a) {
+        return r.forEach((function(a) {
           var s = i(e, a);
           s && t.definitions.push(s)
         })), t

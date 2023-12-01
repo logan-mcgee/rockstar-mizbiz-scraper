@@ -153,7 +153,7 @@
     9832: (e, a, t) => {
       "use strict";
       t.r(a), t.d(a, {
-        A: () => d,
+        A: () => l,
         AudioPlayer: () => h,
         Badge: () => x,
         Brands: () => y,
@@ -170,7 +170,7 @@
         DotLoader: () => _e,
         Dropdown: () => je,
         Embed: () => Ce,
-        ExpandingPlatformButton: () => Fe,
+        ExpandingPlatformButton: () => Me,
         FadeInContent: () => Ae,
         GameCard: () => s,
         GameSiteHeader: () => Ue,
@@ -179,13 +179,13 @@
         Grid: () => we,
         HTMLElement: () => oa,
         Hero: () => sa,
-        HookStore: () => M,
+        HookStore: () => F,
         ImageWithBadge: () => Sa,
         LanguageSelector: () => xa,
         LayeredImage: () => Na,
         LoadingAnimation: () => ds,
         MultiSourceImage: () => de,
-        NewswireBlocks: () => Ma,
+        NewswireBlocks: () => Fa,
         NewswireCard: () => La,
         NewswireList: () => Ba,
         NewswireRelated: () => Da,
@@ -220,8 +220,8 @@
         UserVote: () => $t,
         VideoCard: () => n,
         VideoCarousel: () => zt,
-        VideoList: () => Ft,
-        Wasted: () => Mt,
+        VideoList: () => Mt,
+        Wasted: () => Ft,
         framer: () => o,
         useTinaModuleFetchByIds: () => Ct,
         withSearchbarErrorBoundary: () => Ht,
@@ -250,9 +250,10 @@
         withFadeIn: () => Xt,
         withFadeUp: () => as
       });
-      var i = t(4175),
-        c = t(3705);
-      const d = e => {
+      var i = t(927),
+        c = t(4175),
+        d = t(3705);
+      const l = e => {
         let {
           children: a,
           to: t = "#",
@@ -261,7 +262,7 @@
           onClick: r = (() => {}),
           ...o
         } = e;
-        const d = !/^(https?|mailto):/i.test(t);
+        const i = !/^(https?|mailto):/i.test(t);
         if (/^#/.test(t)) {
           const e = e => {
             e.preventDefault(), document?.querySelector(`[id='${t.replace("#","")}']`)?.scrollIntoView({
@@ -269,7 +270,7 @@
               block: "center"
             }), r && r(e)
           };
-          return (0, c.jsx)("a", {
+          return (0, d.jsx)("a", {
             title: s,
             href: t,
             onClick: e,
@@ -277,7 +278,7 @@
             children: a
           })
         }
-        if (d) return (0, c.jsx)(i.NavLink, {
+        if (i) return (0, d.jsx)(c.NavLink, {
           title: s,
           to: t,
           onClick: e => r(e),
@@ -289,7 +290,7 @@
             [a]: o[a]
           })), {}),
           m = o?.target ?? (n ? "_blank" : "_self");
-        return "function" == typeof l?.className && delete l.className, (0, c.jsx)("a", {
+        return "function" == typeof l?.className && delete l.className, (0, d.jsx)("a", {
           href: t,
           ...l,
           title: s,
@@ -298,8 +299,7 @@
           children: a
         })
       };
-      var l = t(927),
-        m = t(6588),
+      var m = t(6588),
         p = t.n(m),
         g = t(4859),
         f = t(7715);
@@ -334,7 +334,7 @@
           let {
             src: a
           } = e;
-          return (0, c.jsx)("div", {
+          return (0, d.jsx)("div", {
             className: u.cover,
             style: {
               background: `url(${a}) center/cover`
@@ -352,29 +352,29 @@
             setPlaying: n,
             tracksOpen: r,
             setTracksOpen: o,
-            trackData: i,
-            setTrackId: d,
+            trackData: c,
+            setTrackId: l,
             trackBounds: m,
             setAutoNext: g
           } = e;
-          const f = (0, l.useRef)(null),
-            b = (0, l.useRef)(null),
-            k = (0, l.useRef)(null),
-            [v, h] = (0, l.useState)(null),
-            [x, y] = (0, l.useState)(!1),
+          const f = (0, i.useRef)(null),
+            b = (0, i.useRef)(null),
+            k = (0, i.useRef)(null),
+            [v, h] = (0, i.useState)(null),
+            [x, y] = (0, i.useState)(!1),
             _ = e => {
               const a = new Date(1e3 * e),
                 t = a.getUTCMinutes(),
                 s = a.getSeconds();
               return `${t.toString().padStart(2,"0")}:${s.toString().padStart(2,"0")}`
             };
-          return (0, l.useEffect)((() => {
+          return (0, i.useEffect)((() => {
             if (!b.current || !k.current) return;
             const e = () => {
               k.current && b.current && h(k.current.clientWidth > b.current.clientWidth)
             };
             return window.addEventListener("resize", e), e(), () => window.removeEventListener("resize", e)
-          }), [k, b, a]), (0, l.useEffect)((() => {
+          }), [k, b, a]), (0, i.useEffect)((() => {
             if (!f.current || !a?.duration) return;
             let e = null;
             const t = new(p())(f.current),
@@ -396,61 +396,61 @@
             return t.on("panstart", o), t.on("panleft", n), t.on("panright", n), t.on("panend", r), t.on("tap", n), () => {
               t.off("panstart", o), t.off("panleft", n), t.off("panright", n), t.off("panend", r), t.off("tap", n)
             }
-          }), [f.current, a.duration]), (0, l.useEffect)((() => {
+          }), [f.current, a.duration]), (0, i.useEffect)((() => {
             const e = Number(s?.currentTime);
             (t || !isNaN(e) && 0 !== e) && y(!0)
-          }), [t, s?.currentTime]), (0, c.jsxs)("div", {
+          }), [t, s?.currentTime]), (0, d.jsxs)("div", {
             className: u.controls,
             style: {
-              "--track-color": i.color,
-              "--track-mix-blend-mode": i.mix_blend_mode,
+              "--track-color": c.color,
+              "--track-mix-blend-mode": c.mix_blend_mode,
               "--current-pct": a.current / a.duration
             },
-            children: [(0, c.jsx)("div", {
+            children: [(0, d.jsx)("div", {
               className: [u.controlsCurrentBg, x ? u.controlsCurrentBgVisible : ""].join(" ")
-            }), (0, c.jsx)("div", {
+            }), (0, d.jsx)("div", {
               className: u.controlsTrack,
               ref: b,
-              children: (0, c.jsx)("span", {
+              children: (0, d.jsx)("span", {
                 className: [u.controlsTrackTitle, v ? u.controlsTrackAnimating : ""].join(" "),
                 ref: k,
-                children: i.title
+                children: c.title
               })
-            }), (0, c.jsxs)("div", {
+            }), (0, d.jsxs)("div", {
               className: u.controlsButtons,
-              children: [(0, c.jsx)("div", {
+              children: [(0, d.jsx)("div", {
                 className: u.controlsPrevTrack,
                 onClick: () => {
-                  m && (d(m[0]), g(!0), n(!0))
+                  m && (l(m[0]), g(!0), n(!0))
                 }
-              }), (0, c.jsx)("div", {
+              }), (0, d.jsx)("div", {
                 className: [u.controlsPlayPause, t ? u.controlsPlayPausePlaying : ""].join(" "),
                 onClick: () => {
                   n(!t)
                 }
-              }), (0, c.jsx)("div", {
+              }), (0, d.jsx)("div", {
                 className: u.controlsNextTrack,
                 onClick: () => {
-                  m && (d(m[1]), g(!0), n(!0))
+                  m && (l(m[1]), g(!0), n(!0))
                 }
               })]
-            }), (0, c.jsx)("div", {
+            }), (0, d.jsx)("div", {
               active: r ? "" : null,
               className: u.controlsTrackBurger,
-              children: (0, c.jsx)("div", {
+              children: (0, d.jsx)("div", {
                 className: u.iconBurger,
                 onClick: () => {
                   o(!r)
                 }
               })
-            }), (0, c.jsxs)("div", {
+            }), (0, d.jsxs)("div", {
               className: u.controlsScrub,
-              children: [(0, c.jsx)("span", {
+              children: [(0, d.jsx)("span", {
                 children: _(a.current)
-              }), (0, c.jsx)("div", {
+              }), (0, d.jsx)("div", {
                 className: u.controlsScrubTrack,
                 ref: f
-              }), (0, c.jsx)("span", {
+              }), (0, d.jsx)("span", {
                 children: _(a.duration)
               })]
             })]
@@ -466,18 +466,18 @@
             setPlaying: o,
             setAutoNext: i
           } = e;
-          return (0, c.jsxs)("div", {
+          return (0, d.jsxs)("div", {
             className: u.tracks,
-            children: [(0, c.jsx)("h4", {
+            children: [(0, d.jsx)("h4", {
               children: "Tracks"
-            }), (0, c.jsx)("div", {
+            }), (0, d.jsx)("div", {
               className: u.trackBurger,
               onClick: () => {
                 r(!n)
               }
-            }), (0, c.jsx)("div", {
+            }), (0, d.jsx)("div", {
               className: u.trackList,
-              children: a.map(((e, a) => (0, c.jsxs)("a", {
+              children: a.map(((e, a) => (0, d.jsxs)("a", {
                 style: {
                   "--highlight-color": e.color
                 },
@@ -485,13 +485,13 @@
                 onClick: () => {
                   s(e.id), o(!0), i(!0)
                 },
-                children: [(0, c.jsx)("span", {
+                children: [(0, d.jsx)("span", {
                   className: u.trackIndex,
                   children: String(a + 1).padStart(2, "0")
-                }), (0, c.jsx)("span", {
+                }), (0, d.jsx)("span", {
                   className: u.trackTitle,
                   children: e.title
-                }), (0, c.jsx)("span", {
+                }), (0, d.jsx)("span", {
                   className: u.trackTime,
                   children: e.duration
                 })]
@@ -510,20 +510,20 @@
             variables: {
               id: a
             }
-          }), [n, r] = (0, l.useState)(), [o, i] = (0, l.useState)(), [d, m] = (0, l.useState)(), [p, h] = (0, l.useState)(!1), [x, y] = (0, l.useState)(!1), [_, N] = (0, l.useState)(new HTMLAudioElement), [j, S] = (0, l.useState)({
+          }), [n, r] = (0, i.useState)(), [o, c] = (0, i.useState)(), [l, m] = (0, i.useState)(), [p, h] = (0, i.useState)(!1), [x, y] = (0, i.useState)(!1), [_, N] = (0, i.useState)(new HTMLAudioElement), [j, S] = (0, i.useState)({
             current: 0,
             duration: 0
-          }), [w, T] = (0, l.useState)(!0);
-          return (0, l.useEffect)((() => {
+          }), [w, T] = (0, i.useState)(!0);
+          return (0, i.useEffect)((() => {
             const e = "audio",
               a = a => {
-                a?.data?.rockstarAudioPlayerPlayTrackId && (i(a.data.rockstarAudioPlayerPlayTrackId), T(!1), y(!0)), x && a?.data?.attentionBlurredElsewhere && a?.data?.from !== e && y(!1)
+                a?.data?.rockstarAudioPlayerPlayTrackId && (c(a.data.rockstarAudioPlayerPlayTrackId), T(!1), y(!0)), x && a?.data?.attentionBlurredElsewhere && a?.data?.from !== e && y(!1)
               };
             return x && window.postMessage({
               attentionBlurredElsewhere: !0,
               from: e
             }), window.addEventListener("message", a, !1), () => window.removeEventListener("message", a, !1)
-          }), [x]), (0, l.useEffect)((() => {
+          }), [x]), (0, i.useEffect)((() => {
             if (!_) return;
             const e = () => {
                 isNaN(_.duration) || S({
@@ -532,52 +532,52 @@
                 })
               },
               a = () => {
-                w && n && i(n[1])
+                w && n && c(n[1])
               };
             return _.addEventListener("loadedmetadata", e), _.addEventListener("timeupdate", e), _.addEventListener("ended", a), () => {
               _.removeEventListener("loadedmetadata", e), _.removeEventListener("timeupdate", e), _.removeEventListener("ended", a)
             }
-          }), [_, n, w]), (0, l.useEffect)((() => {
+          }), [_, n, w]), (0, i.useEffect)((() => {
             x && window.postMessage({
               attentionBlurredElsewhere: !0,
               from: "audio"
             })
-          }), [x]), (0, l.useEffect)((() => {
+          }), [x]), (0, i.useEffect)((() => {
             _ && (x ? _.play() : _.pause(), h(!1))
-          }), [x, _, d?.id]), (0, l.useEffect)((() => {
+          }), [x, _, l?.id]), (0, i.useEffect)((() => {
             if (!o) return;
             const {
               tracks: e
             } = s.audioAlbum, a = s.audioAlbum.tracks.findIndex((e => e.id === o));
             r([e[a - 1]?.id ?? e[e.length - 1].id, e[a + 1]?.id ?? e[0].id]), m(e[a])
-          }), [o]), (0, l.useEffect)((() => {
-            s && i(s.audioAlbum.tracks[0].id)
-          }), [s]), d ? (0, c.jsxs)("div", {
+          }), [o]), (0, i.useEffect)((() => {
+            s && c(s.audioAlbum.tracks[0].id)
+          }), [s]), l ? (0, d.jsxs)("div", {
             className: [u.player, u[t], p ? u.tracksOpen : ""].join(" "),
-            children: [(0, c.jsx)("audio", {
+            children: [(0, d.jsx)("audio", {
               ref: e => {
                 N(e)
               },
-              src: d.mp3_src
-            }), (0, c.jsx)(v, {
+              src: l.mp3_src
+            }), (0, d.jsx)(v, {
               tracks: s.audioAlbum.tracks,
-              setTrackId: i,
+              setTrackId: c,
               trackId: o,
               tracksOpen: p,
               setTracksOpen: h,
               setPlaying: y,
               setAutoNext: T
-            }), (0, c.jsx)(b, {
-              src: d.cover_src
-            }), (0, c.jsx)(k, {
-              setTrackId: i,
+            }), (0, d.jsx)(b, {
+              src: l.cover_src
+            }), (0, d.jsx)(k, {
+              setTrackId: c,
               trackBounds: n,
               tracksOpen: p,
               setTracksOpen: h,
               playing: x,
               setPlaying: y,
               timing: j,
-              trackData: d,
+              trackData: l,
               audioRef: _,
               setAutoNext: T
             })]
@@ -588,7 +588,7 @@
             text: a,
             style: t
           } = e;
-          return (0, c.jsx)("div", {
+          return (0, d.jsx)("div", {
             className: "rockstargames-componentsd1b139df2f344d8623f1761b1c22851e",
             style: t,
             children: a
@@ -598,13 +598,13 @@
           let {
             brands: a = []
           } = e;
-          return a.length ? (0, c.jsx)("div", {
+          return a.length ? (0, d.jsx)("div", {
             className: "rockstargames-componentsf50b14e327e838ce8adc869a5eea825e",
             children: a.map(((e, a) => {
               let {
                 brand: t
               } = e;
-              return (0, c.jsx)("div", {
+              return (0, d.jsx)("div", {
                 className: "rockstargames-componentsde14434878d3a4254243321c61af830f",
                 "data-brand": t
               }, a)
@@ -625,13 +625,13 @@
             ...o
           } = e;
           const i = [_.button, _[s], a].join(" ");
-          return n ? (0, c.jsx)(d, {
+          return n ? (0, d.jsx)(l, {
             ...o,
             to: n,
             className: i,
             onClick: r ? () => r() : () => {},
             children: t
-          }) : (0, c.jsx)("button", {
+          }) : (0, d.jsx)("button", {
             ...o,
             type: "button",
             className: i,
@@ -663,7 +663,7 @@
             onClick: s,
             style: n
           } = e;
-          return (0, c.jsx)("button", {
+          return (0, d.jsx)("button", {
             className: t,
             onClick: s ? () => s() : () => {},
             style: n,
@@ -679,7 +679,7 @@
             style: n,
             to: r
           } = e;
-          return (0, c.jsx)(i.NavLink, {
+          return (0, d.jsx)(c.NavLink, {
             className: t,
             onClick: s ? () => s() : () => {},
             style: n,
@@ -696,7 +696,7 @@
             img: r,
             labelColor: o = "#000",
             onClick: i,
-            secondText: d,
+            secondText: c,
             size: l,
             text: m,
             to: p,
@@ -708,35 +708,35 @@
               "--hvr-bg-color": o ?? a,
               "--hvr-border-color": a ?? o
             },
-            b = (0, c.jsxs)(c.Fragment, {
-              children: [r ? (0, c.jsx)("img", {
+            b = (0, d.jsxs)(d.Fragment, {
+              children: [r ? (0, d.jsx)("img", {
                 src: r,
                 alt: ""
-              }) : "", (0, c.jsxs)("div", {
+              }) : "", (0, d.jsxs)("div", {
                 className: S.btnText,
                 icon: n,
-                children: [m, d ? (0, c.jsx)("span", {
-                  children: d
+                children: [m, c ? (0, d.jsx)("span", {
+                  children: c
                 }) : ""]
               })]
             });
           if (p) {
             if (p.startsWith("http")) {
               const e = p.startsWith(document.location.origin) ? "_self" : "_blank";
-              return (0, c.jsx)("span", {
+              return (0, d.jsx)("span", {
                 onClick: i ? () => i() : () => {},
                 onKeyDown: i,
                 className: f,
                 role: "button",
                 tabIndex: 0,
-                children: (0, c.jsx)("a", {
+                children: (0, d.jsx)("a", {
                   href: p,
                   target: e,
                   children: b
                 })
               })
             }
-            return (0, c.jsx)(T, {
+            return (0, d.jsx)(T, {
               className: f,
               onClick: i ? () => i() : () => {},
               style: u,
@@ -744,7 +744,7 @@
               children: b
             })
           }
-          return (0, c.jsx)(w, {
+          return (0, d.jsx)(w, {
             className: f,
             onClick: i ? () => i() : () => {},
             style: u,
@@ -756,7 +756,7 @@
             buttons: a = [],
             className: t
           } = e;
-          return a.length ? (0, c.jsx)("div", {
+          return a.length ? (0, d.jsx)("div", {
             className: (0, j.classList)("rockstargames-componentse41a240a5f0751a81fe26be55331d947", t),
             children: a.map(((e, a) => {
               let {
@@ -764,7 +764,7 @@
                 title: s,
                 to: n
               } = e;
-              return s ? (0, c.jsx)(C, {
+              return s ? (0, d.jsx)(C, {
                 icon: t,
                 text: s,
                 to: n
@@ -796,8 +796,8 @@
           let {
             item: a
           } = e;
-          return (0, c.jsxs)("div", {
-            children: [(0, c.jsx)(Sa, {
+          return (0, d.jsxs)("div", {
+            children: [(0, d.jsx)(Sa, {
               image: a?.image,
               badge: a?.badge ?? a?.image?.badge,
               badgeType: "badge3",
@@ -807,7 +807,7 @@
               ariaLabel: a?.image?.ariaLabel ?? a.description,
               style: a?.style,
               className: (0, j.classList)(V.img, a?.className)
-            }), (a?.title || a?.description) && (0, c.jsx)(ue, {
+            }), (a?.title || a?.description) && (0, d.jsx)(ue, {
               item: a
             })]
           })
@@ -817,13 +817,13 @@
             current: a,
             total: t
           } = e;
-          return (0, c.jsx)("div", {
+          return (0, d.jsx)("div", {
             className: "swiper-scrollbar",
             style: {
               "--current-slide": a,
               "--total-slides": t
             },
-            children: (0, c.jsx)("div", {
+            children: (0, d.jsx)("div", {
               className: "swiper-scrollbar-drag"
             })
           })
@@ -836,31 +836,31 @@
             noInfiniteScroll: n = !1,
             className: r = "",
             renderTemplate: o = "standard",
-            text: i,
-            customSpaceBetween: d = null,
+            text: c,
+            customSpaceBetween: l = null,
             centerSlides: m = !0,
             centeredSlidesBounds: p = !1
           } = e;
-          const [g, f] = (0, l.useState)(0), u = (0, l.useMemo)((() => a && Array.isArray(a) ? a.map((() => (0, L.Z)())) : null), [a]);
+          const [g, f] = (0, i.useState)(0), u = (0, i.useMemo)((() => a && Array.isArray(a) ? a.map((() => (0, L.Z)())) : null), [a]);
           if (!(t && 0 !== t?.length || a)) return null;
           const b = {
             0: {
-              spaceBetween: d ?? 16
+              spaceBetween: l ?? 16
             },
             1024: {
-              spaceBetween: d ?? 18
+              spaceBetween: l ?? 18
             },
             1920: {
-              spaceBetween: d ?? 20
+              spaceBetween: l ?? 20
             },
             2560: {
-              spaceBetween: d ?? 22
+              spaceBetween: l ?? 22
             }
           };
-          return (0, c.jsxs)("div", {
+          return (0, d.jsxs)("div", {
             className: (0, j.classList)(V.deprecatedCarousel, V[o], V[`infinite_${!n}`], a ? V.renderedWithChildren : "", r),
             style: s,
-            children: [(0, c.jsxs)(E.tq, {
+            children: [(0, d.jsxs)(E.tq, {
               loop: !n,
               grabCursor: !0,
               centeredSlides: m,
@@ -870,52 +870,52 @@
               breakpoints: b,
               onActiveIndexChange: e => f(e?.realIndex ?? 0),
               centeredSlidesBounds: p,
-              children: [(0, c.jsx)("div", {
+              children: [(0, d.jsx)("div", {
                 className: V.trackWrapper,
-                children: (0, c.jsxs)("div", {
+                children: (0, d.jsxs)("div", {
                   className: V.track,
-                  children: [t?.map((e => (0, c.jsx)(E.o5, {
-                    children: (0, c.jsx)($, {
+                  children: [t?.map((e => (0, d.jsx)(E.o5, {
+                    children: (0, d.jsx)($, {
                       item: e
                     })
-                  }, e))), a && a?.map(((e, a) => e && (0, c.jsx)(E.o5, {
+                  }, e))), a && a?.map(((e, a) => e && (0, d.jsx)(E.o5, {
                     children: e
                   }, u && u[a])))]
                 })
-              }), (0, c.jsx)(B, {
+              }), (0, d.jsx)(B, {
                 current: g,
                 total: a ? a.length : t.length
               })]
-            }), (i?.title || i?.description) && (0, c.jsx)(ue, {
-              item: i
+            }), (c?.title || c?.description) && (0, d.jsx)(ue, {
+              item: c
             })]
           })
         };
       var D = t(9929),
-        F = t(6711);
-      const M = (0, t(2).Hu)(),
+        M = t(6711);
+      const F = (0, t(2).Hu)(),
         A = e => {
           let {
             condition: a = null,
             children: t
           } = e;
-          const [s, n] = (0, l.useState)(!1), r = (e => {
-            const [a] = (0, i.useSearchParams)(), [t, s] = (0, l.useState)(null), n = (0, F.useRockstarUser)(), {
+          const [s, n] = (0, i.useState)(!1), r = (e => {
+            const [a] = (0, c.useSearchParams)(), [t, s] = (0, i.useState)(null), n = (0, M.useRockstarUser)(), {
               loggedIn: r
             } = n, {
               currentCharId: o
-            } = (0, F.useRockstarUserState)(), c = function(e) {
+            } = (0, M.useRockstarUserState)(), d = function(e) {
               let a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0,
                 t = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "gtao";
-              return (0, l.useMemo)((() => {
+              return (0, i.useMemo)((() => {
                 const s = e?.data?.characters?.[t];
                 return "1" === (s?.[a]?.stats?.overview?.hasGtaPlus?.value ?? "0")
               }), [e, t, a])
             }(n, o);
-            return (0, l.useEffect)((() => {
+            return (0, i.useEffect)((() => {
               s(null);
               const n = "true" === a.get("conditionPreview");
-              if (!(!e?.length > 0)) return M.applyFilters("preview_conditions", e), e.forEach((e => {
+              if (!(!e?.length > 0)) return F.applyFilters("preview_conditions", e), e.forEach((e => {
                 const {
                   value: o
                 } = e;
@@ -929,27 +929,27 @@
                     s(!1 === r);
                     break;
                   case "user:is:gtaPlus":
-                    s(!0 === c);
+                    s(!0 === d);
                     break;
                   case "user:not:gtaPlus":
-                    s(!1 === c);
+                    s(!1 === d);
                     break;
                   default:
                     s(!1)
                 }
                 return null
               })), () => {}
-            }), [a, e, c, n, r]), t
+            }), [a, e, d, n, r]), t
           })(a);
-          return (0, l.useEffect)((() => {
+          return (0, i.useEffect)((() => {
             n(r)
-          }), [r]), (0, l.useMemo)((() => s ? t : null), [s])
+          }), [r]), (0, i.useMemo)((() => s ? t : null), [s])
         },
         P = (0, D.withTranslations)((e => {
           let {
             children: a
           } = e;
-          return l.Children.map(l.Children.toArray(a), (e => (0, c.jsx)(A, {
+          return i.Children.map(i.Children.toArray(a), (e => (0, d.jsx)(A, {
             ...e?.props
           })))
         }));
@@ -959,20 +959,20 @@
           let {
             className: a
           } = e;
-          return (0, c.jsxs)("svg", {
+          return (0, d.jsxs)("svg", {
             className: a,
             width: "16",
             height: "17",
             viewBox: "0 0 16 17",
             fill: "none",
             xmlns: "http://www.w3.org/2000/svg",
-            children: [(0, c.jsx)("path", {
+            children: [(0, d.jsx)("path", {
               d: "M3.33203 8.5H12.6654",
               stroke: "white",
               strokeWidth: "1.33",
               strokeLinecap: "round",
               strokeLinejoin: "round"
-            }), (0, c.jsx)("path", {
+            }), (0, d.jsx)("path", {
               d: "M8 3.83331L12.6667 8.49998L8 13.1666",
               stroke: "white",
               strokeWidth: "1.33",
@@ -1006,15 +1006,15 @@
           } = e;
           const {
             track: s
-          } = (0, F.useGtmTrack)(), {
+          } = (0, M.useGtmTrack)(), {
             refetch: n
           } = (0, g.useQuery)(O.UserGetVote, {
             skip: !0
-          }), [r] = (0, g.useMutation)(O.UserCastVote), [o, i] = (0, l.useState)(null), d = (0, l.useCallback)((e => {
+          }), [r] = (0, g.useMutation)(O.UserCastVote), [o, c] = (0, i.useState)(null), l = (0, i.useCallback)((e => {
             (async () => {
-              if (e === o && null !== o) i(null);
+              if (e === o && null !== o) c(null);
               else {
-                i(e), s({
+                c(e), s({
                   event_action: e ? "like" : "dislike",
                   event_category: "cta",
                   event: "cta_" + (e ? "like" : "dislike"),
@@ -1031,27 +1031,27 @@
               }
             })()
           }), [a, t, o]);
-          return (0, l.useEffect)((() => {
+          return (0, i.useEffect)((() => {
             a && t && (async () => {
               const e = await n({
                 foreignId: a,
                 foreignType: t
               });
-              i(e?.data?.userGetVote?.vote ?? null)
+              c(e?.data?.userGetVote?.vote ?? null)
             })()
-          }), [a, t]), (0, c.jsxs)("div", {
+          }), [a, t]), (0, d.jsxs)("div", {
             className: U.calloutVoteForm,
-            children: [(0, c.jsx)("button", {
+            children: [(0, d.jsx)("button", {
               "aria-label": "upvote",
               className: [U.upvote, U.voteButton, o ? U.active : ""].join(" "),
               name: "upvote",
-              onClick: () => d(!0),
+              onClick: () => l(!0),
               type: "button"
-            }), (0, c.jsx)("button", {
+            }), (0, d.jsx)("button", {
               "aria-label": "downvote",
               className: [U.downvote, U.voteButton, !1 === o ? U.active : ""].join(" "),
               name: "downvote",
-              onClick: () => d(!1),
+              onClick: () => l(!1),
               type: "button"
             })]
           })
@@ -1064,18 +1064,18 @@
           } = e;
           const {
             track: n
-          } = (0, F.useGtmTrack)();
-          return (0, c.jsx)("a", {
+          } = (0, M.useGtmTrack)();
+          return (0, d.jsx)("a", {
             href: t,
             target: "_blank",
             rel: "noopener noreferrer",
-            children: (0, c.jsxs)("button", {
+            children: (0, d.jsxs)("button", {
               className: U.calloutLink,
               type: "button",
               onClick: s ? () => n({
                 ...s
               }) : () => {},
-              children: [a, (0, c.jsx)(H, {
+              children: [a, (0, d.jsx)(H, {
                 className: U.calloutLinkIcon
               })]
             })
@@ -1090,10 +1090,10 @@
           } = e;
           const {
             track: r
-          } = (0, F.useGtmTrack)();
-          return (0, c.jsxs)("div", {
+          } = (0, M.useGtmTrack)();
+          return (0, d.jsxs)("div", {
             className: U.actionFooter,
-            children: [a, t && " ", t && (0, c.jsx)("a", {
+            children: [a, t && " ", t && (0, d.jsx)("a", {
               href: s ?? "",
               onClick: () => r({
                 ...n
@@ -1110,8 +1110,8 @@
             action_text: n,
             link: r,
             foreign_id: o = document.location.pathname,
-            foreign_type: i = "url",
-            className: d = "",
+            foreign_type: c = "url",
+            className: l = "",
             actionFooterHelperText: m,
             actionFooterLinkText: p,
             actionFooterLink: g,
@@ -1121,16 +1121,16 @@
           } = e;
           const {
             loggedIn: k
-          } = (0, F.useRockstarUser)(), {
+          } = (0, M.useRockstarUser)(), {
             track: v
-          } = (0, F.useGtmTrack)(), h = `${document.location.origin}/auth/sc-auth-login?returnUrl=${window.location.pathname}`, {
+          } = (0, M.useGtmTrack)(), h = `${document.location.origin}/auth/sc-auth-login?returnUrl=${window.location.pathname}`, {
             ref: x,
             inView: y
           } = (0, G.YD)({
             threshold: .6
-          }), [_, j] = (0, l.useState)(!1);
+          }), [_, j] = (0, i.useState)(!1);
           let S;
-          if ((0, l.useEffect)((() => {
+          if ((0, i.useEffect)((() => {
               y && !_ && (v({
                 event: "page_section_impression",
                 event_action: "impression",
@@ -1142,7 +1142,7 @@
           switch (s) {
             case "vote":
               if (!k) {
-                S = (0, c.jsx)(N, {
+                S = (0, d.jsx)(N, {
                   to: h,
                   className: U.calloutButton,
                   onClick: f ? () => v({
@@ -1152,13 +1152,13 @@
                 });
                 break
               }
-              S = (0, c.jsx)(R, {
+              S = (0, d.jsx)(R, {
                 foreign_id: o,
-                foreign_type: i
+                foreign_type: c
               });
               break;
             case "button":
-              n && r && (S = (0, c.jsx)(N, {
+              n && r && (S = (0, d.jsx)(N, {
                 to: r,
                 className: U.calloutButton,
                 onClick: f ? () => v({
@@ -1168,7 +1168,7 @@
               }));
               break;
             case "link":
-              n && r && (S = (0, c.jsx)(W, {
+              n && r && (S = (0, d.jsx)(W, {
                 action_text: n,
                 link: r,
                 trackingData: f
@@ -1177,23 +1177,23 @@
             default:
               S = null
           }
-          return (0, c.jsx)("div", {
-            className: `${U.calloutContainer} ${d||""}`,
+          return (0, d.jsx)("div", {
+            className: `${U.calloutContainer} ${l||""}`,
             ref: x,
-            children: (0, c.jsxs)("div", {
+            children: (0, d.jsxs)("div", {
               className: U.calloutSection,
-              children: [(0, c.jsxs)("div", {
+              children: [(0, d.jsxs)("div", {
                 className: [U.calloutHeaders, S ? U.calloutHeaderMargins : ""].join(" "),
-                children: [a && (0, c.jsx)("h1", {
+                children: [a && (0, d.jsx)("h1", {
                   className: U.calloutHeader,
                   children: b(a)
-                }), t && (0, c.jsx)("h2", {
+                }), t && (0, d.jsx)("h2", {
                   className: U.calloutSubheader,
                   children: b(t)
                 })]
-              }), (0, c.jsxs)("div", {
+              }), (0, d.jsxs)("div", {
                 className: U.actionBlock,
-                children: [S, m && (0, c.jsx)(q, {
+                children: [S, m && (0, d.jsx)(q, {
                   helperText: m,
                   linkText: p,
                   link: g,
@@ -1213,13 +1213,13 @@
             label: s,
             miscProps: n
           } = e;
-          const [r, o] = (0, l.useState)(""), i = (0, l.useMemo)((() => X()().getData()), []);
-          return (0, c.jsx)(Y.ZP, {
+          const [r, o] = (0, i.useState)(""), c = (0, i.useMemo)((() => X()().getData()), []);
+          return (0, d.jsx)(Y.ZP, {
             unstyled: !0,
             value: r,
             isMulti: a,
             allowSelectAll: t,
-            options: i,
+            options: c,
             placeholder: s,
             onChange: e => {
               return a = e?.target?.value, void o(a);
@@ -1288,12 +1288,12 @@
             platform: a = ""
           } = e;
           const t = a ? ee[a] || null : null,
-            s = t ? (0, c.jsx)("img", {
+            s = t ? (0, d.jsx)("img", {
               className: ae.platformIcon,
               src: t,
               alt: "Platform Icon"
             }) : null;
-          return (0, c.jsx)("span", {
+          return (0, d.jsx)("span", {
             className: [ae.btnContent, ae.platformButton].join(" "),
             children: s
           })
@@ -1306,8 +1306,8 @@
             content: n,
             variant: r = null,
             icon: o,
-            iconPosition: i = "none",
-            iconStyle: d,
+            iconPosition: c = "none",
+            iconStyle: l,
             badge: m,
             badgeStyle: p,
             platformItem: g,
@@ -1316,7 +1316,7 @@
           } = e;
           const {
             track: b
-          } = (0, F.useGtmTrack)(), k = (0, D.useDataLayer)(), v = n ?? a, h = `Redirect to ${t}`, x = (0, l.useCallback)((() => {
+          } = (0, M.useGtmTrack)(), k = (0, D.useDataLayer)(), v = n ?? a, h = `Redirect to ${t}`, x = (0, i.useCallback)((() => {
             if (!u) {
               const e = window.location.hostname,
                 a = new URL(t).hostname;
@@ -1328,16 +1328,16 @@
                 text: v ?? void 0
               }), e === a ? window.location.href = t : window.open(t, "_blank")
             }
-          }), [f, t, k]), y = () => o ? (0, c.jsx)("span", {
-            className: [ae.icon, `icon-${i}`].join(" "),
-            style: d,
-            children: (0, c.jsx)("img", {
+          }), [f, t, k]), y = () => o ? (0, d.jsx)("span", {
+            className: [ae.icon, `icon-${c}`].join(" "),
+            style: l,
+            children: (0, d.jsx)("img", {
               className: ae.btnIcon,
               src: o,
               alt: "Button Icon"
             })
           }) : null;
-          return (0, c.jsx)("button", {
+          return (0, d.jsx)("button", {
             className: [ae.cta, "platform" === r && g ? ae[g] : "", u ? ae.disabled : ""].join(" "),
             style: s,
             "data-variant": r,
@@ -1345,13 +1345,13 @@
             onClick: x,
             disabled: u,
             "aria-label": h,
-            children: "platform" === r && g ? (0, c.jsx)(te, {
+            children: "platform" === r && g ? (0, d.jsx)(te, {
               platform: g
-            }) : (0, c.jsxs)("div", {
+            }) : (0, d.jsxs)("div", {
               className: ae.btnContent,
-              children: ["left" === i && y(), (0, c.jsx)("span", {
+              children: ["left" === c && y(), (0, d.jsx)("span", {
                 children: v
-              }), "right" === i && y(), m ? (0, c.jsx)("span", {
+              }), "right" === c && y(), m ? (0, d.jsx)("span", {
                 className: ae.badge,
                 style: p,
                 children: m
@@ -1371,14 +1371,14 @@
             style: r
           } = e;
           const [o, i] = (0, D.usePreloadImg)(n);
-          let d = n;
-          !1 === o && (s === ie && (d = t(8280)), d = t(8933));
+          let c = n;
+          !1 === o && (s === ie && (c = t(8280)), c = t(8933));
           const l = {
             "--aspect-ratio": i.width / i.height,
             ...r
           };
-          return (0, c.jsx)("img", {
-            src: d,
+          return (0, d.jsx)("img", {
+            src: c,
             className: s ?? "",
             alt: a,
             style: l
@@ -1397,11 +1397,11 @@
           return i.desktop || i.mobile || (o = "placeholder", i = {
             mobile: t(8280),
             desktop: t(8933)
-          }), (0, c.jsx)("div", {
+          }), (0, d.jsx)("div", {
             className: n.frame ? `${n.frame} ${re}` : re,
             style: s,
-            children: i?.desktop && i?.mobile ? (0, c.jsxs)(c.Fragment, {
-              children: [(0, c.jsx)(ce, {
+            children: i?.desktop && i?.mobile ? (0, d.jsxs)(d.Fragment, {
+              children: [(0, d.jsx)(ce, {
                 style: {
                   ...r,
                   ...n?.style
@@ -1409,7 +1409,7 @@
                 src: i.desktop,
                 alt: o,
                 className: a ? `${a} ${oe}` : oe
-              }), (0, c.jsx)(ce, {
+              }), (0, d.jsx)(ce, {
                 style: {
                   ...r,
                   ...n?.style
@@ -1418,7 +1418,7 @@
                 alt: o,
                 className: a ? `${a} ${ie}` : ie
               })]
-            }) : (0, c.jsx)(ce, {
+            }) : (0, d.jsx)(ce, {
               style: {
                 ...r,
                 ...n?.style
@@ -1441,7 +1441,7 @@
             className: t = "",
             type: s
           } = e;
-          return (0, c.jsx)("div", {
+          return (0, d.jsx)("div", {
             style: a,
             className: [me.hr, me[s], t].join(" ")
           })
@@ -1452,7 +1452,7 @@
             to: a,
             children: t
           } = e;
-          return a ? (0, c.jsx)("a", {
+          return a ? (0, d.jsx)("a", {
             href: a,
             target: "_blank",
             rel: "noreferrer",
@@ -1464,14 +1464,14 @@
             item: a,
             className: t = ""
           } = e;
-          return (0, c.jsxs)("div", {
+          return (0, d.jsxs)("div", {
             className: (0, j.classList)("rockstargames-componentsfd0d7e84a734f6a4d9774b75dd083634", t),
-            children: [a.title && (0, c.jsx)(fe, {
+            children: [a.title && (0, d.jsx)(fe, {
               to: a?.href ?? a?.to,
-              children: (0, c.jsx)("h3", {
+              children: (0, d.jsx)("h3", {
                 children: a.title
               })
-            }), Array.isArray(a?.description?.content) ? a.description.content?.map(((e, a) => e?.unorderedList ? (0, c.jsx)(le.Z, {
+            }), Array.isArray(a?.description?.content) ? a.description.content?.map(((e, a) => e?.unorderedList ? (0, d.jsx)(le.Z, {
               columns: e.unorderedList.columns ?? null,
               style: {
                 "--unordered-list-padding": "var(--grid-gap-static-sm)",
@@ -1479,23 +1479,23 @@
               },
               noImg: !0,
               list: e.unorderedList.list
-            }, a) : e?.image ? (0, c.jsx)(de, {
+            }, a) : e?.image ? (0, d.jsx)(de, {
               image: e.image,
               className: e?.className,
               ariaLabel: e.image?.ariaLabel
-            }, a) : e?.separator ? (0, c.jsx)("div", {
+            }, a) : e?.separator ? (0, d.jsx)("div", {
               style: {
                 margin: `${e.separator.spacing} 0`
               },
-              children: (0, c.jsx)(pe, {})
-            }, a) : (0, c.jsx)("p", {
-              children: (0, c.jsx)("span", {
+              children: (0, d.jsx)(pe, {})
+            }, a) : (0, d.jsx)("p", {
+              children: (0, d.jsx)("span", {
                 className: ge,
                 dangerouslySetInnerHTML: {
                   __html: e
                 }
               })
-            }, a))) : (0, c.jsx)("span", {
+            }, a))) : (0, d.jsx)("span", {
               className: ge,
               dangerouslySetInnerHTML: {
                 __html: a.description
@@ -1509,8 +1509,8 @@
             children: a,
             ...t
           } = e;
-          const [s, n] = (0, l.useState)(!1);
-          return (0, c.jsx)(be.iF, {
+          const [s, n] = (0, i.useState)(!1);
+          return (0, d.jsx)(be.iF, {
             ...t,
             onReady: () => {
               document.fonts.ready.then((() => {
@@ -1545,28 +1545,28 @@
           const o = [];
           r ? a.split(r).map(((e, a) => o.push(e))) : o.push(a);
           let i = 100;
-          return 2 == o.length && o[1].length < 4 && "off" !== o[1].toLowerCase() && 45, (0, c.jsxs)(he, {
+          return 2 == o.length && o[1].length < 4 && "off" !== o[1].toLowerCase() && 45, (0, d.jsxs)(he, {
             splitter: r,
             role: n,
-            wrapper: e => (0, c.jsx)("div", {
+            wrapper: e => (0, d.jsx)("div", {
               className: `${ve.badge} ${s?ve[s]:""} `,
               children: e
             }),
-            children: [(0, c.jsx)(c.Fragment, {
-              children: n && (0, c.jsx)(de, {
+            children: [(0, d.jsx)(d.Fragment, {
+              children: n && (0, d.jsx)(de, {
                 image: {
                   alt: n,
                   desktop: t(9065)(`./${n}.png`)
                 }
               })
-            }), (0, c.jsx)(ke, {
+            }), (0, d.jsx)(ke, {
               className: `${r||n?"":ve.badge} ${s?ve[s]:""}`,
               min: 8,
               max: 1e3,
               mode: r || n ? "single" : "multi",
               children: o[0]
-            }), (0, c.jsx)(c.Fragment, {
-              children: o.shift() && r && o.length >= 1 && (0, c.jsx)(ke, {
+            }), (0, d.jsx)(d.Fragment, {
+              children: o.shift() && r && o.length >= 1 && (0, d.jsx)(ke, {
                 min: 8,
                 max: 1e3,
                 mode: "single",
@@ -1581,16 +1581,16 @@
           let {
             color: a
           } = e;
-          return (0, c.jsxs)("div", {
+          return (0, d.jsxs)("div", {
             className: "rockstargames-componentsbb9ff64a38e9b92229c0e2343a9a0b28",
             style: {
               "--loader-color": a
             },
-            children: [(0, c.jsx)("div", {
+            children: [(0, d.jsx)("div", {
               className: ye
-            }), (0, c.jsx)("div", {
+            }), (0, d.jsx)("div", {
               className: ye
-            }), (0, c.jsx)("div", {
+            }), (0, d.jsx)("div", {
               className: ye
             })]
           })
@@ -1608,14 +1608,14 @@
             className: t,
             title: s
           } = e;
-          const [n, r] = (0, l.useState)(!1);
-          return (0, c.jsxs)("div", {
+          const [n, r] = (0, i.useState)(!1);
+          return (0, d.jsxs)("div", {
             className: [Ne.dropdownWrapper, n ? Ne.open : "", void 0 !== t ? t : ""].join(" "),
-            children: [(0, c.jsx)("button", {
+            children: [(0, d.jsx)("button", {
               className: Ne.opener,
               onClick: () => r(!n),
               children: s
-            }), (0, c.jsx)("div", {
+            }), (0, d.jsx)("div", {
               className: Ne.items,
               onClick: () => r(!1),
               children: a
@@ -1632,7 +1632,7 @@
             style: r = {},
             template: o = null,
             theme: i = null,
-            reversedOnMobile: d = !1,
+            reversedOnMobile: c = !1,
             className: l = ""
           } = e;
           const m = (0, ne.useImageParser)(n),
@@ -1644,8 +1644,8 @@
               a = "var(--grid-background-position, center)/var(--grid-background-size, cover)";
             p.background = `url(${m?.src?.desktop}) ${e} ${a}`
           }
-          return (0, c.jsx)("div", {
-            className: (0, Se.classList)("rockstargames-componentsc66ba86806f14d412203f27b13204c61", d ? "rockstargames-componentsda2f0f78b942fbdc0b92617629d4d499" : "", l),
+          return (0, d.jsx)("div", {
+            className: (0, Se.classList)("rockstargames-componentsc66ba86806f14d412203f27b13204c61", c ? "rockstargames-componentsda2f0f78b942fbdc0b92617629d4d499" : "", l),
             "data-game": "community" === o ? null : s,
             style: (0, D.safeStyles)(p),
             "data-context": t,
@@ -1660,9 +1660,9 @@
             children: t,
             ...s
           } = e;
-          return a ? (0, c.jsxs)("figure", {
+          return a ? (0, d.jsxs)("figure", {
             ...s,
-            children: [t, (0, c.jsx)("figcaption", {
+            children: [t, (0, d.jsx)("figcaption", {
               dangerouslySetInnerHTML: {
                 __html: a
               }
@@ -1675,24 +1675,24 @@
             type: t,
             items: s
           } = e;
-          return s?.length ? (0, c.jsx)("div", {
+          return s?.length ? (0, d.jsx)("div", {
             className: "rockstargames-componentse1282836fd9646f998af6d71740d8973",
             type: t,
-            children: (0, c.jsxs)(we, {
-              children: [a && (0, c.jsx)("h3", {
+            children: (0, d.jsxs)(we, {
+              children: [a && (0, d.jsx)("h3", {
                 children: a
-              }), (0, c.jsx)(we, {
+              }), (0, d.jsx)(we, {
                 className: "rockstargames-componentsb2a9e47e4cfa6fb773f4367d3fdfdffb",
                 children: s.map(((e, a) => {
-                  return e?.embed ? (0, c.jsx)(Te, {
+                  return e?.embed ? (0, d.jsx)(Te, {
                     caption: e?.caption,
-                    children: (0, c.jsx)("div", {
+                    children: (0, d.jsx)("div", {
                       className: "rockstargames-componentscf81724e842e41b1c3e15a3ffbc64768",
                       dangerouslySetInnerHTML: {
                         __html: (t = e.embed, t.replace(/&gt;/g, ">").replace(/&lt;/g, "<"))
                       }
                     }, `${e?.key??a}_div`)
-                  }, e?.key ?? a) : e?.text ? (0, c.jsx)("p", {
+                  }, e?.key ?? a) : e?.text ? (0, d.jsx)("p", {
                     dangerouslySetInnerHTML: {
                       __html: e.text
                     }
@@ -1809,58 +1809,58 @@
             target: r = null,
             onClick: o
           } = e;
-          const d = r ?? (s.startsWith(document.location.origin) ? "_self" : "_blank"),
+          const i = r ?? (s.startsWith(document.location.origin) ? "_self" : "_blank"),
             l = [ze.platformButton, ze[n]].join(" "),
             m = n ? t(3631)(`./${n}.svg`) : null,
-            p = (0, c.jsxs)(c.Fragment, {
-              children: [m ? (0, c.jsx)("img", {
+            p = (0, d.jsxs)(d.Fragment, {
+              children: [m ? (0, d.jsx)("img", {
                 src: m,
                 alt: a
-              }) : "", (0, c.jsx)("div", {
+              }) : "", (0, d.jsx)("div", {
                 className: ze.buttonText,
                 children: a
               })]
             });
-          return s.startsWith("http") ? (0, c.jsx)("span", {
+          return s.startsWith("http") ? (0, d.jsx)("span", {
             onClick: o,
             onKeyDown: o,
             role: "link",
             tabIndex: 0,
-            children: (0, c.jsx)("a", {
+            children: (0, d.jsx)("a", {
               href: s,
               className: l,
-              target: d,
+              target: i,
               children: p
             })
-          }) : (0, c.jsx)(i.NavLink, {
+          }) : (0, d.jsx)(c.NavLink, {
             className: l,
             onClick: o,
             to: s,
             children: p
           })
         },
-        Fe = e => {
+        Me = e => {
           let {
             buttonText: a = "Subscribe",
             children: s,
             platformsAndLinks: n = [],
             trackingType: r = "buy",
             trackingParent: o,
-            target: i = null
+            target: c = null
           } = e;
-          const [d, m] = (0, l.useState)(!1), {
+          const [l, m] = (0, i.useState)(!1), {
             track: p
-          } = (0, F.useGtmTrack)();
-          return (0, c.jsxs)("div", {
+          } = (0, M.useGtmTrack)();
+          return (0, d.jsxs)("div", {
             className: ze.container,
-            children: [(0, c.jsx)(Ie.E.div, {
+            children: [(0, d.jsx)(Ie.E.div, {
               className: ze.content,
-              animate: d ? "open" : "close",
+              animate: l ? "open" : "close",
               variants: Ve,
               children: s
-            }), (0, c.jsxs)(Ie.E.div, {
+            }), (0, d.jsxs)(Ie.E.div, {
               onClick: () => {
-                m(!d), d || p("select_platform" === r ? {
+                m(!l), l || p("select_platform" === r ? {
                   event_action: "select_platform",
                   event_category: "cta",
                   event: "select_platform",
@@ -1880,18 +1880,18 @@
                 })
               },
               className: ze.unexpandedButton,
-              animate: d ? "open" : "closed",
+              animate: l ? "open" : "closed",
               variants: Be,
               initial: !1,
-              children: [(0, c.jsx)(Ie.E.div, {
+              children: [(0, d.jsx)(Ie.E.div, {
                 className: ze.buttonText,
                 children: "string" == typeof a ? a : "Subscribe"
-              }), (0, c.jsxs)(Ie.E.div, {
+              }), (0, d.jsxs)(Ie.E.div, {
                 className: ze.expandedArea,
-                animate: d ? "open" : "closed",
+                animate: l ? "open" : "closed",
                 variants: $e,
                 initial: !1,
-                children: [(0, c.jsx)("img", {
+                children: [(0, d.jsx)("img", {
                   className: ze.closeButton,
                   onClick: () => m(!1),
                   onKeyDown: e => {
@@ -1900,9 +1900,9 @@
                   src: t(9545),
                   alt: "Close",
                   role: "button"
-                }), (0, c.jsx)("div", {
+                }), (0, d.jsx)("div", {
                   className: ze.platformButtons,
-                  children: n.length ? n.map((e => (0, c.jsx)(De, {
+                  children: n.length ? n.map((e => (0, d.jsx)(De, {
                     buttonText: e.buttonText ?? "",
                     link: e.href,
                     platform: e.platform,
@@ -1920,14 +1920,14 @@
                         link_url: a
                       })
                     })(e),
-                    target: i
+                    target: c
                   }, `${e.key}-${e.href}-${e.platform}`))) : ""
                 })]
               })]
             })]
           })
         },
-        Me = {
+        Fe = {
           animateBox: "rockstargames-componentsbdeffede001e78dee0b5045fcf215759",
           fadeArea: "rockstargames-componentse60c0d0b8a412ef87a25bcff0601d934",
           visible: "rockstargames-componentsf1026e3be9b17c93264a95314e011e26",
@@ -1940,16 +1940,16 @@
             children: a,
             style: t
           } = e;
-          const s = (0, l.useRef)(null);
-          return (0, l.useEffect)((() => {
+          const s = (0, i.useRef)(null);
+          return (0, i.useEffect)((() => {
             new IntersectionObserver((e => {
               e.forEach((e => {
-                e.isIntersecting && e.target.classList.add([Me.visible])
+                e.isIntersecting && e.target.classList.add([Fe.visible])
               }))
             })).observe(s?.current)
-          }), []), (0, c.jsx)("div", {
+          }), []), (0, d.jsx)("div", {
             style: t,
-            className: [Me.fadeArea].join(" "),
+            className: [Fe.fadeArea].join(" "),
             ref: s,
             children: a
           })
@@ -1964,7 +1964,7 @@
             titleSlug: t
           } = e;
           const [s] = (0, D.usePreloadImg)(a);
-          return (0, c.jsx)("div", {
+          return (0, d.jsx)("div", {
             role: "img",
             "aria-label": t,
             className: [Pe.img, s ? Pe.startAnimation : ""].join(" "),
@@ -1986,7 +1986,7 @@
           let o = r;
           "V" === r && (o = "gta-v"), "GTAOnline" === r && (o = "gta-online"), "undeadnightmare" === r && (o = "reddeadredemption");
           const i = t ?? `${n?"":"/games"}/${o}`;
-          return (0, c.jsx)(d, {
+          return (0, d.jsx)(l, {
             "aria-label": a,
             "data-gtm-category": "Games",
             "data-gtm-action": "Game Click-through",
@@ -1995,7 +1995,7 @@
             to: i,
             target: "_self",
             className: "rockstargames-componentsead163175b3ecbafda6260fc8bfd88b2",
-            children: (0, c.jsx)(Ge, {
+            children: (0, d.jsx)(Ge, {
               imgSrc: s,
               titleSlug: r
             })
@@ -2018,35 +2018,35 @@
             cta: n = "",
             game: r
           } = e;
-          const [o, i] = (0, l.useState)(!1), d = (0, g.useMutateState)(), {
+          const [o, c] = (0, i.useState)(!1), l = (0, g.useMutateState)(), {
             navHidden: m
           } = (0, g.useState)();
-          return (0, l.useEffect)((() => {
-            d({
+          return (0, i.useEffect)((() => {
+            l({
               gameSiteNavOpen: o
             })
-          }), [o]), (0, l.useEffect)((() => {
+          }), [o]), (0, i.useEffect)((() => {
             const e = () => {
-              i(!1)
+              c(!1)
             };
             return document.addEventListener("click", e), () => document.removeEventListener("click", e)
-          }), []), (0, c.jsxs)("header", {
+          }), []), (0, d.jsxs)("header", {
             "data-game": r,
             className: [He.gameSiteHeader, o ? He.headerNavOpen : "", m ? He.navHidden : "", t.gameSiteHeader, o ? t.headerNavOpen : ""].join(" "),
-            children: [(0, c.jsx)("button", {
+            children: [(0, d.jsx)("button", {
               className: [He.headerLogo, t.headerLogo].join(" "),
               onClick: e => {
-                i(!o), e.nativeEvent.stopImmediatePropagation()
+                c(!o), e.nativeEvent.stopImmediatePropagation()
               },
               type: "button",
               "aria-label": "Open Game Site Nav",
               dangerouslySetInnerHTML: {
                 __html: a
               }
-            }), (0, c.jsx)("div", {
+            }), (0, d.jsx)("div", {
               className: He.bg
-            }), (0, c.jsx)("nav", {
-              children: (0, c.jsx)("div", {
+            }), (0, d.jsx)("nav", {
+              children: (0, d.jsx)("div", {
                 className: He.navContent,
                 children: s
               })
@@ -2054,7 +2054,7 @@
           })
         };
       var Re = t(3824);
-      class We extends l.Component {
+      class We extends i.Component {
         constructor(e) {
           super(e), this.state = {
             header: e.header ?? null
@@ -2068,11 +2068,11 @@
           }
         }
         render() {
-          return this?.state?.error?.message ? (0, c.jsxs)("div", {
+          return this?.state?.error?.message ? (0, d.jsxs)("div", {
             className: "rockstargames-componentsf33a81ed3f256e9c144aa4cda0d1e488",
-            children: [(0, c.jsx)("h1", {
+            children: [(0, d.jsx)("h1", {
               children: this.state.header ?? "An error occurred."
-            }), (0, c.jsx)("span", {
+            }), (0, d.jsx)("span", {
               children: this.state.error.message
             })]
           }) : this.props.children
@@ -2081,9 +2081,9 @@
       const qe = function(e) {
           let a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
           return function(t) {
-            return (0, c.jsx)(We, {
+            return (0, d.jsx)(We, {
               header: a,
-              children: (0, c.jsx)(e, {
+              children: (0, d.jsx)(e, {
                 ...t
               })
             })
@@ -2096,9 +2096,9 @@
             onNextClicked: s,
             onPrevClicked: n
           } = e;
-          return (0, c.jsxs)("div", {
+          return (0, d.jsxs)("div", {
             className: "rockstargames-componentsa605daa93f1e34f3276364f03e8e4c98",
-            children: [(0, c.jsx)("div", {
+            children: [(0, d.jsx)("div", {
               className: "rockstargames-componentsacf5c45538091cc0afc02972101e975c",
               ref: a,
               onClick: n,
@@ -2106,7 +2106,7 @@
               role: "button",
               tabIndex: 0,
               onKeyUp: () => {}
-            }), (0, c.jsx)("div", {
+            }), (0, d.jsx)("div", {
               className: "rockstargames-componentsb8b8ba20b8035927c16a363321ecb527",
               ref: t,
               onClick: s,
@@ -2125,8 +2125,8 @@
             title: n,
             customSlidesPerView: r = null,
             customSpaceBetween: o = null,
-            slideClass: i,
-            style: d,
+            slideClass: c,
+            style: l,
             className: m,
             cardSizeBreakpoints: p = {},
             customAspectRatio: g,
@@ -2134,13 +2134,13 @@
           } = e;
           const {
             track: u
-          } = (0, F.useGtmTrack)(), b = (0, l.useRef)(null), k = (0, l.useRef)(null), v = (0, l.useRef)(null), [h, x] = (0, l.useState)(null), [y, _] = (0, l.useState)(!1), [N, S] = (0, l.useState)(null), [w, T] = (0, l.useState)({}), [C, I] = (0, l.useState)(), {
+          } = (0, M.useGtmTrack)(), b = (0, i.useRef)(null), k = (0, i.useRef)(null), v = (0, i.useRef)(null), [h, x] = (0, i.useState)(null), [y, _] = (0, i.useState)(!1), [N, S] = (0, i.useState)(null), [w, T] = (0, i.useState)({}), [C, I] = (0, i.useState)(), {
             ref: L,
             inView: V
           } = (0, G.YD)({
             threshold: .6
-          }), [$, B] = (0, l.useState)(!1), [z, D] = (0, l.useState)(null), [M, A] = (0, l.useState)(!1);
-          (0, l.useEffect)((() => {
+          }), [$, B] = (0, i.useState)(!1), [z, D] = (0, i.useState)(null), [F, A] = (0, i.useState)(!1);
+          (0, i.useEffect)((() => {
             const e = () => {
               A(window.innerWidth < 1024)
             };
@@ -2162,7 +2162,7 @@
               spaceBetween: o ?? 22
             }
           };
-          (0, l.useEffect)((() => {
+          (0, i.useEffect)((() => {
             if (!b.current) return;
             const e = () => {
               if (b.current) {
@@ -2174,22 +2174,22 @@
             return window.addEventListener("resize", e), e(), () => {
               window.removeEventListener("resize", e)
             }
-          }), [b, r]), (0, l.useEffect)((() => {
+          }), [b, r]), (0, i.useEffect)((() => {
             if (!t) return;
             let e = !1;
             t.forEach((a => {
               "cover-card" === a?.props?.tina?.payload?.meta?.type && (e = !0, D(a))
             })), B(e);
-            const a = t.map(((e, a) => "cover-card" === e?.props?.tina?.payload?.meta?.type && M ? null : (0, c.jsx)(E.o5, {
+            const a = t.map(((e, a) => "cover-card" === e?.props?.tina?.payload?.meta?.type && F ? null : (0, d.jsx)(E.o5, {
               children: e
             }, Symbol(a).toString())));
             x(a)
-          }), [t, M]), (0, l.useEffect)((() => {
+          }), [t, F]), (0, i.useEffect)((() => {
             I({
               nextEl: v.current,
               prevEl: k.current
             })
-          }), [v, k]), (0, l.useEffect)((() => {
+          }), [v, k]), (0, i.useEffect)((() => {
             V && !y && t && (u({
               event: "page_section_impression",
               event_action: "impression",
@@ -2200,11 +2200,11 @@
           }), [V, t]);
           let O = "custom" === s ? {
             "--custom-aspect-ratio": g,
-            ...d
+            ...l
           } : {
-            ...d
+            ...l
           };
-          return (0, c.jsxs)("div", {
+          return (0, d.jsxs)("div", {
             className: (0, j.classList)("rockstargames-componentsb3a7aaa29b6ef23aac8133f2ae1fd6b7", m),
             "data-size": s,
             "data-sm": p?.sm ? p?.sm : s,
@@ -2215,40 +2215,40 @@
             "data-has-covercard": $,
             ref: b,
             style: O,
-            children: [(0, c.jsx)("div", {
+            children: [(0, d.jsx)("div", {
               className: "rockstargames-componentsf51f54a638399dffff60d4d8428837e4",
               ref: L
-            }), $ && M && (0, c.jsx)("div", {
+            }), $ && F && (0, d.jsx)("div", {
               className: "rockstargames-componentse9c2cc27bdead5c3de23967ff37d0f50",
               children: z
-            }), (0, c.jsx)("div", {
+            }), (0, d.jsx)("div", {
               className: "rockstargames-componentscf1e71f0c17c181209e94f5cebc5631c",
-              children: (0, c.jsxs)("div", {
+              children: (0, d.jsxs)("div", {
                 className: "rockstargames-componentse3676128a2d23c0cb6cd8d6c8ead6825",
-                children: [(0, c.jsxs)("div", {
+                children: [(0, d.jsxs)("div", {
                   className: "rockstargames-componentsad882a0c502ecc7fe80626043f44c5c0",
-                  children: [!$ && n && (0, c.jsxs)("div", {
+                  children: [!$ && n && (0, d.jsxs)("div", {
                     className: "rockstargames-componentsc8b9414a9c96a396ba5183a35491e361",
-                    children: [(0, c.jsx)("h2", {
+                    children: [(0, d.jsx)("h2", {
                       children: n
-                    }), f && (0, c.jsx)("span", {
+                    }), f && (0, d.jsx)("span", {
                       className: "rockstargames-componentsf6d4ec0614d41da309ced4301a2ae14d",
                       children: f
                     })]
-                  }), (0, c.jsx)(Ze, {
+                  }), (0, d.jsx)(Ze, {
                     prevRef: k,
                     nextRef: v,
                     onNextClicked: () => {},
                     onPrevClicked: () => {}
                   })]
-                }), a && (0, c.jsx)("div", {
+                }), a && (0, d.jsx)("div", {
                   className: "rockstargames-componentsb6a2056c096581ee6dfc1a45dae4f0bf",
                   dangerouslySetInnerHTML: {
                     __html: a
                   }
                 })]
               })
-            }), N ? (0, c.jsx)(E.tq, {
+            }), N ? (0, d.jsx)(E.tq, {
               slidesPerView: N,
               onInit: e => {
                 T(e)
@@ -2257,7 +2257,7 @@
               navigation: C,
               modules: [Re.W_],
               breakpoints: P,
-              slideClass: (0, j.classList)("swiper-slide", i),
+              slideClass: (0, j.classList)("swiper-slide", c),
               onSlideNextTransitionEnd: () => {
                 u({
                   event_action: "next",
@@ -2339,13 +2339,13 @@
           } = e;
           const n = (0, j.useGetCdnSource)(t ?? null),
             r = (0, j.useGetCdnSource)(s ?? n);
-          return (0, c.jsx)("div", {
+          return (0, d.jsx)("div", {
             className: Qe.shard,
             style: {
               "--background-image-mobile": `url(${n})`,
               "--background-image-desktop": `url(${r})`
             },
-            children: (0, c.jsx)("h5", {
+            children: (0, d.jsx)("h5", {
               children: a
             })
           })
@@ -2355,8 +2355,8 @@
             title: a = "Membership Rewards",
             shards: t
           } = e;
-          const [s, n] = (0, l.useState)(null);
-          return (0, l.useEffect)((() => {
+          const [s, n] = (0, i.useState)(null);
+          return (0, i.useEffect)((() => {
             t && n(t.reduce(((e, a) => {
               if (!a?.shardImg) return e;
               const {
@@ -2366,15 +2366,15 @@
                 mobile: n,
                 desktop: r
               } = s;
-              return e.push((0, c.jsx)(Je, {
+              return e.push((0, d.jsx)(Je, {
                 title: t,
                 mobileImg: n?.full_src,
                 desktopImg: r?.full_src
               })), e
             }), []))
-          }), [t]), s ? (0, c.jsx)("div", {
+          }), [t]), s ? (0, d.jsx)("div", {
             className: Qe.shardsCarousel,
-            children: (0, c.jsx)(Ye, {
+            children: (0, d.jsx)(Ye, {
               title: a,
               slideChildren: s,
               size: "lg",
@@ -2390,9 +2390,9 @@
             expandingButtonLabel: n = "Subscribe",
             title: r
           } = e;
-          const [o, i] = (0, l.useState)([]), [d, m] = (0, l.useState)([]);
-          return (0, l.useEffect)((() => {
-            i(t.reduce(((e, a) => a.isInExpandingButton ? (e.push({
+          const [o, c] = (0, i.useState)([]), [l, m] = (0, i.useState)([]);
+          return (0, i.useEffect)((() => {
+            c(t.reduce(((e, a) => a.isInExpandingButton ? (e.push({
               href: a.href,
               platform: a.platform,
               buttonText: a.buttonText
@@ -2401,59 +2401,59 @@
               title: a.buttonText,
               to: a.href
             }), e)), []))
-          }), t), t.length ? o.length ? (0, c.jsx)(Ie.E.div, {
+          }), t), t.length ? o.length ? (0, d.jsx)(Ie.E.div, {
             variants: a ? Ke : void 0,
-            children: (0, c.jsxs)(Fe, {
+            children: (0, d.jsxs)(Me, {
               buttonText: n,
               platformsAndLinks: o,
-              children: [(0, c.jsxs)(Ie.E.div, {
+              children: [(0, d.jsxs)(Ie.E.div, {
                 className: Qe.descriptions,
                 variants: a ? Ke : void 0,
-                children: [(0, c.jsx)("h2", {
+                children: [(0, d.jsx)("h2", {
                   dangerouslySetInnerHTML: {
                     __html: r
                   }
-                }), (0, c.jsx)("p", {
+                }), (0, d.jsx)("p", {
                   dangerouslySetInnerHTML: {
                     __html: s
                   }
                 })]
-              }), !!d && !!d.length && (0, c.jsx)(Ie.E.div, {
+              }), !!l && !!l.length && (0, d.jsx)(Ie.E.div, {
                 variants: Ke,
-                children: (0, c.jsx)(I, {
-                  buttons: d,
+                children: (0, d.jsx)(I, {
+                  buttons: l,
                   className: Qe.buttonGroup
                 })
               })]
             })
-          }) : (0, c.jsxs)(c.Fragment, {
-            children: [(0, c.jsxs)(Ie.E.div, {
+          }) : (0, d.jsxs)(d.Fragment, {
+            children: [(0, d.jsxs)(Ie.E.div, {
               className: Qe.descriptions,
               variants: a ? Ke : void 0,
-              children: [(0, c.jsx)("h2", {
+              children: [(0, d.jsx)("h2", {
                 dangerouslySetInnerHTML: {
                   __html: r
                 }
-              }), (0, c.jsx)("p", {
+              }), (0, d.jsx)("p", {
                 dangerouslySetInnerHTML: {
                   __html: s
                 }
               })]
-            }), !!d && !!d.length && (0, c.jsx)(Ie.E.div, {
+            }), !!l && !!l.length && (0, d.jsx)(Ie.E.div, {
               variants: Ke,
-              children: (0, c.jsx)(I, {
-                buttons: d,
+              children: (0, d.jsx)(I, {
+                buttons: l,
                 className: Qe.buttonGroup
               })
             })]
-          }) : (0, c.jsxs)(Ie.E.div, {
+          }) : (0, d.jsxs)(Ie.E.div, {
             className: Qe.descriptions,
             variants: a ? Ke : void 0,
-            children: [(0, c.jsx)("h2", {
+            children: [(0, d.jsx)("h2", {
               dangerouslySetInnerHTML: {
                 __html: r
               }
-            }), (0, c.jsx)("p", {
+            }), (0, d.jsx)("p", {
               dangerouslySetInnerHTML: {
                 __html: s
               }
@@ -2470,26 +2470,26 @@
             title: o = "",
             legalText: i
           } = e;
-          return (0, c.jsxs)(Ie.E.div, {
+          return (0, d.jsxs)(Ie.E.div, {
             className: Qe.content,
             initial: "hidden",
             animate: "visible",
             variants: a ? Xe : void 0,
-            children: [(0, c.jsx)(Ie.E.div, {
+            children: [(0, d.jsx)(Ie.E.div, {
               variants: a ? Ke : void 0,
-              children: (0, c.jsx)(y, {
+              children: (0, d.jsx)(y, {
                 brands: t
               })
-            }), (0, c.jsx)(aa, {
+            }), (0, d.jsx)(aa, {
               animated: a,
               ctas: s,
               description: n,
               expandingButtonLabel: r,
               title: o
-            }), i && (0, c.jsx)(Ie.E.div, {
+            }), i && (0, d.jsx)(Ie.E.div, {
               className: Qe.legalText,
               variants: a ? Ke : void 0,
-              children: (0, c.jsx)("p", {
+              children: (0, d.jsx)("p", {
                 dangerouslySetInnerHTML: {
                   __html: i
                 }
@@ -2506,7 +2506,7 @@
             ctas: r = [],
             description: o = "",
             expandingButtonLabel: i = "Subscribe",
-            layeredImage: d,
+            layeredImage: c,
             layeredImageSettings: l,
             legalText: m,
             shardsSection: p = {},
@@ -2542,9 +2542,9 @@
             })(l),
             b = (0, j.useGetCdnSource)(t?.mobile?.full_src ?? null),
             k = (0, j.useGetCdnSource)(t?.desktop?.full_src ?? b),
-            v = (0, j.useGetCdnSource)(d?.mobile?.full_src ?? null),
-            h = (0, j.useGetCdnSource)(d?.desktop?.full_src ?? v);
-          return (0, c.jsxs)(Ie.E.div, {
+            v = (0, j.useGetCdnSource)(c?.mobile?.full_src ?? null),
+            h = (0, j.useGetCdnSource)(c?.desktop?.full_src ?? v);
+          return (0, d.jsxs)(Ie.E.div, {
             className: (0, j.classList)(Qe.hero, n),
             style: {
               "--background-image-desktop": `url(${k})`,
@@ -2557,18 +2557,18 @@
             variants: a ? Xe : void 0,
             "data-type": "hero",
             theme: g,
-            children: [(0, c.jsxs)("div", {
+            children: [(0, d.jsxs)("div", {
               className: Qe.images,
-              children: [k && b ? (0, c.jsx)("div", {
+              children: [k && b ? (0, d.jsx)("div", {
                 className: Qe.background,
                 style: t?.style ?? {}
-              }) : "", v && h ? (0, c.jsx)("div", {
+              }) : "", v && h ? (0, d.jsx)("div", {
                 className: Qe.layered,
                 style: l ? u : {}
-              }) : "", (0, c.jsx)("div", {
+              }) : "", (0, d.jsx)("div", {
                 className: Qe.gradient
               })]
-            }), (0, c.jsx)(ta, {
+            }), (0, d.jsx)(ta, {
               animated: a,
               ctas: r,
               description: o,
@@ -2576,7 +2576,7 @@
               title: f,
               brands: s,
               legalText: m
-            }), p?.shards && (0, c.jsx)(ea, {
+            }), p?.shards && (0, d.jsx)(ea, {
               ...p
             })]
           })
@@ -2590,7 +2590,7 @@
           className: s = "",
           style: n = {}
         } = e;
-        return (0, c.jsx)("span", {
+        return (0, d.jsx)("span", {
           className: (0, j.classList)(s, t?.className, "rockstargames-componentsf938ddf11a5375276f8e733f5f4e5953"),
           style: (0, D.safeStyles)(n ?? t?.style ?? {}),
           dangerouslySetInnerHTML: {
@@ -2759,46 +2759,46 @@
           setLanguageSelectorOpened: s,
           defaultMessage: n
         } = e;
-        const r = (0, i.useLocation)(),
+        const r = (0, c.useLocation)(),
           o = (0, ca.Z)(),
           [m, p] = ba(),
-          [g, f] = (0, l.useState)(!1),
-          u = (0, l.useMemo)((() => ga()), []),
-          b = (0, l.useCallback)((e => {
+          [g, f] = (0, i.useState)(!1),
+          u = (0, i.useMemo)((() => ga()), []),
+          b = (0, i.useCallback)((e => {
             let a = r.pathname;
             const t = a.split("/");
             return la.map((e => e.subdomaincom)).includes(t[0]) && (a = t.slice(1).join("/")), "www" === u.currentSite?.site ? "en" === e ? `${window.location.origin}${a}${r.search}` : `${window.location.origin}/${e}${a}${r.search}` : `${window.location.origin}${a}${r.search}`
           }), [r]);
         let k = !1;
         k = !0;
-        const v = (0, l.useRef)(null),
-          [h, x] = (0, l.useState)(0),
+        const v = (0, i.useRef)(null),
+          [h, x] = (0, i.useState)(0),
           y = matchMedia("(hover: none) and (pointer: coarse)").matches,
           _ = e => {
             if (s && s(!1), m.subdomaincom === e || "none" === e) return void(s && s(!1));
             const a = la.find((a => a.subdomaincom === e));
             a && (p(a.iso), window.location.href = b(e))
           };
-        return (0, l.useEffect)((() => {
+        return (0, i.useEffect)((() => {
           void 0 !== t && !1 === t && !0 === g && f(!1)
-        }), [t]), (0, l.useEffect)((() => {
+        }), [t]), (0, i.useEffect)((() => {
           v.current && x(v.current.scrollHeight)
-        }), [v]), (0, c.jsxs)("div", {
+        }), [v]), (0, d.jsxs)("div", {
           className: [ka.languageSelector, g ? ka.open : ""].join(" "),
           "data-theme": a,
-          children: [(0, c.jsxs)(c.Fragment, {
-            children: [y && "sc-menu" === a && (0, c.jsx)("div", {
+          children: [(0, d.jsxs)(d.Fragment, {
+            children: [y && "sc-menu" === a && (0, d.jsx)("div", {
               className: ka.selectBoxWrapper,
-              children: (0, c.jsxs)("select", {
+              children: (0, d.jsxs)("select", {
                 className: ka.selectBox,
                 onClick: e => e.stopPropagation(),
                 onChange: e => {
                   _(e.currentTarget.value)
                 },
-                children: [(0, c.jsx)("option", {
+                children: [(0, d.jsx)("option", {
                   className: ka.selectBoxOption,
                   value: "none",
-                  children: n ? (0, c.jsx)(ia.Z, {
+                  children: n ? (0, d.jsx)(ia.Z, {
                     ...n
                   }) : va
                 }), la.map((e => {
@@ -2806,44 +2806,44 @@
                     label: a,
                     subdomaincom: t
                   } = e;
-                  return (0, c.jsx)("option", {
+                  return (0, d.jsx)("option", {
                     className: ka.selectBoxOption,
                     value: t,
                     children: a
                   }, `mobile-${t}`)
                 }))]
               })
-            }), (!y || "sc-menu" !== a) && (0, c.jsxs)(c.Fragment, {
-              children: [(0, c.jsxs)("button", {
+            }), (!y || "sc-menu" !== a) && (0, d.jsxs)(d.Fragment, {
+              children: [(0, d.jsxs)("button", {
                 onClick: e => {
                   e.stopPropagation(), s && s(!g), f(!g)
                 },
                 type: "button",
                 "aria-label": n ? o.formatMessage(n) : va,
-                children: [(0, c.jsx)("i", {}), (0, c.jsx)("span", {
-                  children: n ? (0, c.jsx)(ia.Z, {
+                children: [(0, d.jsx)("i", {}), (0, d.jsx)("span", {
+                  children: n ? (0, d.jsx)(ia.Z, {
                     ...n
                   }) : va
                 })]
-              }), (0, c.jsx)("div", {
+              }), (0, d.jsx)("div", {
                 className: ka.linkWrapper,
                 ref: v,
                 style: {
                   "--ls-linkWrapper-opened-height": `${h}px`
                 },
-                children: (0, c.jsx)("div", {
+                children: (0, d.jsx)("div", {
                   className: ka.links,
                   children: la.map((e => {
                     let {
                       subdomaincom: a,
                       label: t
                     } = e;
-                    return (0, c.jsx)(d, {
+                    return (0, d.jsx)(l, {
                       to: b(a),
                       onClick: () => {
                         _(a)
                       },
-                      tabindex: g ? 0 : -1,
+                      tabIndex: g ? 0 : -1,
                       children: t
                     }, `desktop-${a}`)
                   }))
@@ -2898,19 +2898,19 @@
               ...a
             },
             n = a["--border-image-source"];
-          return n && (s["--border-image-source"] = `url(${(0,j.useGetCdnSource)(n)})`), (0, c.jsx)("div", {
+          return n && (s["--border-image-source"] = `url(${(0,j.useGetCdnSource)(n)})`), (0, d.jsx)("div", {
             className: (0, j.classList)(ya.border, t),
             style: {
               ...s
             }
           })
         },
-        Na = e => e?.images ? (0, c.jsx)("div", {
+        Na = e => e?.images ? (0, d.jsx)("div", {
           className: (0, j.classList)(ya.layeredImage, ya[e?.variantClass], ya[e?.wrapperSizeClass]),
           style: {
             ...e?.style ?? {}
           },
-          children: (0, c.jsxs)("div", {
+          children: (0, d.jsxs)("div", {
             className: ya.layersWrapper,
             children: [e?.images?.map(((e, a) => {
               const {
@@ -2920,22 +2920,22 @@
                 objectFitClass: r,
                 positionClassX: o,
                 positionClassY: i,
-                zIndex: d,
+                zIndex: c,
                 className: l,
                 style: m,
                 alt: p,
                 displayClass: g
               } = e;
-              return (0, c.jsx)(de, {
+              return (0, d.jsx)(de, {
                 image: t,
                 style: {
-                  zIndex: d ?? ++a
+                  zIndex: c ?? ++a
                 },
                 imageStyle: m,
                 className: (0, j.classList)(l, g, ya.imageLayer, ya[s], ya[n], ya[r], ya[o], ya[i]),
                 alt: p
-              }, d ?? ++a)
-            })), e?.borderImage && (0, c.jsx)(_a, {
+              }, c ?? ++a)
+            })), e?.borderImage && (0, d.jsx)(_a, {
               style: e?.borderImage,
               className: e?.borderImage?.displayClass
             })]
@@ -2946,7 +2946,7 @@
             hero: a,
             children: t
           } = e;
-          return a ? (0, c.jsx)("div", {
+          return a ? (0, d.jsx)("div", {
             className: "rockstargames-componentsaf5742f5a161e16cb38c8bd614a7fdbf",
             children: t
           }) : t
@@ -2960,29 +2960,29 @@
             image: r,
             style: o,
             className: i = "",
-            attributes: d = {},
+            attributes: c = {},
             role: l,
             hero: m = !1
           } = e;
-          return (0, c.jsx)(ja, {
+          return (0, d.jsx)(ja, {
             hero: m,
-            children: (0, c.jsx)("figure", {
-              children: (0, c.jsxs)("div", {
-                className: (0, j.classList)("rockstargames-componentsab10d5a913595e2fbbe0612d75f320b8", m ? "rockstargames-componentsb8558839bcd23d06fc3453876f54199b" : "", d?.hiddenMobile ? "hiddenMobile" : "", d?.hiddenLarge ? "hiddenLarge" : "", d?.className, i),
+            children: (0, d.jsx)("figure", {
+              children: (0, d.jsxs)("div", {
+                className: (0, j.classList)("rockstargames-componentsab10d5a913595e2fbbe0612d75f320b8", m ? "rockstargames-componentsb8558839bcd23d06fc3453876f54199b" : "", c?.hiddenMobile ? "hiddenMobile" : "", c?.hiddenLarge ? "hiddenLarge" : "", c?.className, i),
                 style: (0, D.safeStyles)({
                   ...o,
-                  ...d?.style
+                  ...c?.style
                 }),
-                ...d,
-                children: [(0, c.jsx)(de, {
+                ...c,
+                children: [(0, d.jsx)(de, {
                   image: r,
                   className: i
-                }), (r?.badge || r?.discountTxt || a || s) && (0, c.jsx)(xe, {
+                }), (r?.badge || r?.discountTxt || a || s) && (0, d.jsx)(xe, {
                   badge: r?.discountTxt ?? r?.badge ?? a ?? s,
                   badgeType: t,
                   splitter: r?.splitter ?? n,
                   role: r?.role ?? l
-                }), r?.caption && (0, c.jsx)("figcaption", {
+                }), r?.caption && (0, d.jsx)("figcaption", {
                   dangerouslySetInnerHTML: {
                     __html: r.caption
                   }
@@ -3005,21 +3005,21 @@
             style: n,
             lazy: r = !1,
             decoding: o = "auto",
-            sizes: i = [320, 480, 768, 1024, 1440, 1920, 2560]
+            sizes: c = [320, 480, 768, 1024, 1440, 1920, 2560]
           } = e;
-          const [d, m] = (0, l.useState)(!1);
-          return (0, c.jsxs)("div", {
+          const [l, m] = (0, i.useState)(!1);
+          return (0, d.jsxs)("div", {
             className: wa.multiSourceContainer,
-            children: [!d && (0, c.jsx)("img", {
+            children: [!l && (0, d.jsx)("img", {
               className: [t, wa.animatePlaceholder].join(" "),
               src: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiB2aWV3Qm94PSIwIDAgMTkyMCAxMDgwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cmVjdCB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiBmaWxsPSIjMzMzMzMzIi8+Cjwvc3ZnPgo=",
               sizes: "(max-width: 1024px) 100vw, 1024px",
               alt: "Loading...",
               style: n
-            }), (0, c.jsx)("img", {
+            }), (0, d.jsx)("img", {
               className: [wa.multiSourceImage, t].join(" "),
               src: `${a}?im=Resize=1920`,
-              srcSet: (p = a, i.map((e => `${p}?im=Resize=${e} ${e}w`)).join(", ")),
+              srcSet: (p = a, c.map((e => `${p}?im=Resize=${e} ${e}w`)).join(", ")),
               sizes: "(max-width: 400px) 200px, (max-width: 1920px) 100vw, 1920px",
               alt: s ?? "Multi-Source Image",
               style: n,
@@ -3042,12 +3042,12 @@
             title: s,
             style: n
           } = e;
-          const r = (0, c.jsxs)("div", {
+          const r = (0, d.jsxs)("div", {
             style: n,
             className: [Ca.tag, a].join(" "),
-            children: [(0, c.jsx)("i", {}), s]
+            children: [(0, d.jsx)("i", {}), s]
           });
-          return void 0 !== t ? (0, c.jsx)(d, {
+          return void 0 !== t ? (0, d.jsx)(l, {
             to: t,
             children: r
           }) : r
@@ -3069,46 +3069,46 @@
             noSpecialOrder: s = !1,
             style: n = {}
           } = e;
-          const [r] = (0, i.useSearchParams)(), o = t.preview_images_parsed.newswire_block, l = {
+          const [r] = (0, c.useSearchParams)(), o = t.preview_images_parsed.newswire_block, i = {
             default: 0 !== a || s ? o.square || o.d16x9 || o._fallback : o.d16x9 || o.square || o._fallback,
             mobile: o.square || o._fallback
-          }, [m, p] = (0, D.usePreloadImg)(l.default), [g, f] = (0, D.usePreloadImg)(l.mobile), u = {
+          }, [m, p] = (0, D.usePreloadImg)(i.default), [g, f] = (0, D.usePreloadImg)(i.mobile), u = {
             default: {
-              backgroundImage: `url(${l.default})`
+              backgroundImage: `url(${i.default})`
             },
             mobile: {
-              backgroundImage: `url(${l.mobile})`
+              backgroundImage: `url(${i.mobile})`
             }
           };
-          return (0, c.jsx)(d, {
+          return (0, d.jsx)(l, {
             "data-gtm-category": "Newswire",
             "data-gtm-action": "Article Block Click",
             "data-gtm-label": `${t.title}`,
             to: t.url,
             className: [Ea.newswireBlock, s ? Ea.newswireBlockNoSpecialOrder : "", null !== m ? Ea.startAnimation : ""].join(" "),
-            children: (0, c.jsxs)(c.Fragment, {
-              children: [0 !== a || r.get("tag_id") ? (0, c.jsx)("div", {
+            children: (0, d.jsxs)(d.Fragment, {
+              children: [0 !== a || r.get("tag_id") ? (0, d.jsx)("div", {
                 className: Ea.preview,
                 style: u.default
-              }) : (0, c.jsxs)(c.Fragment, {
-                children: [(0, c.jsx)("div", {
+              }) : (0, d.jsxs)(d.Fragment, {
+                children: [(0, d.jsx)("div", {
                   className: Ea.previewMobile,
                   style: u.mobile
-                }), (0, c.jsx)("div", {
+                }), (0, d.jsx)("div", {
                   className: Ea.preview,
                   style: u.default
                 })]
-              }), (0, c.jsxs)("div", {
+              }), (0, d.jsxs)("div", {
                 className: Ea.info,
-                children: [(0, c.jsxs)("div", {
+                children: [(0, d.jsxs)("div", {
                   className: Ea.top,
-                  children: [t.primary_tags.length ? (0, c.jsx)(Ia, {
+                  children: [t.primary_tags.length ? (0, d.jsx)(Ia, {
                     title: t.primary_tags[t.primary_tags.length > 1 && 722 === t.primary_tags[0].id ? 1 : 0].name
-                  }) : "", (0, c.jsx)("time", {
+                  }) : "", (0, d.jsx)("time", {
                     dateTime: t.created,
                     children: t.created_formatted
                   })]
-                }), (0, c.jsx)("h5", {
+                }), (0, d.jsx)("h5", {
                   className: Ea.title,
                   dangerouslySetInnerHTML: {
                     __html: t.title
@@ -3127,28 +3127,28 @@
             metaUrl: s = "/newswire",
             t: n
           } = e;
-          const [r] = (0, i.useSearchParams)(), {
+          const [r] = (0, c.useSearchParams)(), {
             tagId: o = null
-          } = (0, i.useParams)(), [d, m] = (0, l.useState)(o ?? t ?? r.get("tag_id")), [p, f] = (0, l.useState)(1), [u, b] = (0, l.useState)([]), [k, v] = (0, l.useState)(null), {
+          } = (0, c.useParams)(), [l, m] = (0, i.useState)(o ?? t ?? r.get("tag_id")), [p, f] = (0, i.useState)(1), [u, b] = (0, i.useState)([]), [k, v] = (0, i.useState)(null), {
             data: h
           } = (0, g.useQuery)($a(), {
             variables: {
-              tagId: Number(d),
+              tagId: Number(l),
               page: p,
               metaUrl: s
             },
             autoSetLoading: !0
           });
-          return (0, l.useEffect)((() => {
+          return (0, i.useEffect)((() => {
             f(1), b([]), m(o ?? t ?? r.get("tag_id"))
-          }), [r.get("tag_id")]), (0, l.useEffect)((() => {
+          }), [r.get("tag_id")]), (0, i.useEffect)((() => {
             h && h.posts && h.posts.paging && v(h.posts.paging), h && h.posts && h.posts.results && b(u.concat(h.posts.results))
-          }), [h]), u.length ? (0, c.jsxs)(c.Fragment, {
-            children: [(0, c.jsx)(Ma, {
+          }), [h]), u.length ? (0, d.jsxs)(d.Fragment, {
+            children: [(0, d.jsx)(Fa, {
               posts: u,
               relativeTo: a,
-              noSpecialOrder: null !== d
-            }), null !== k && k.nextPage ? (0, c.jsx)(N, {
+              noSpecialOrder: null !== l
+            }), null !== k && k.nextPage ? (0, d.jsx)(N, {
               onClick: () => f(p + 1),
               disabled: !1,
               context: "secondary",
@@ -3166,31 +3166,31 @@
             posts: a,
             t
           } = e;
-          return (0, c.jsxs)("section", {
+          return (0, d.jsxs)("section", {
             className: za.related,
-            children: [(0, c.jsx)("h2", {
+            children: [(0, d.jsx)("h2", {
               children: t("Related Stories")
-            }), (0, c.jsx)("div", {
+            }), (0, d.jsx)("div", {
               className: [za.posts, 1 === a.length ? za.just1post : ""].join(" "),
-              children: a.map((e => (0, c.jsx)(La, {
+              children: a.map((e => (0, d.jsx)(La, {
                 noSpecialOrder: !0,
                 post: e
               }, e.id)))
             })]
           })
         })),
-        Fa = {
+        Ma = {
           newswireBlocks: "rockstargames-componentsb787e2cc67a938470008b0fa3c5e57f8",
           noSpecialOrder: "rockstargames-componentse3641b4f2f8f6fa67e5d06eba31981e1"
         },
-        Ma = (0, D.withGtmTracking)((e => {
+        Fa = (0, D.withGtmTracking)((e => {
           let {
             noSpecialOrder: a = !1,
             posts: t,
             gtmTrack: s,
             relativeTo: n
           } = e;
-          return (0, l.useEffect)((() => {
+          return (0, i.useEffect)((() => {
             if (!t.length) return;
             const e = {
               event: "trackEvent",
@@ -3208,9 +3208,9 @@
                 list: "Home"
               })
             })), s(e)
-          }), [t.length]), (0, c.jsx)("div", {
-            className: [Fa.newswireBlocks, a ? Fa.noSpecialOrder : "", Fa.contextHome].join(" "),
-            children: t.map(((e, t) => (0, c.jsx)(La, {
+          }), [t.length]), (0, d.jsx)("div", {
+            className: [Ma.newswireBlocks, a ? Ma.noSpecialOrder : "", Ma.contextHome].join(" "),
+            children: t.map(((e, t) => (0, d.jsx)(La, {
               index: t,
               noSpecialOrder: a,
               post: e
@@ -3227,7 +3227,7 @@
             page: n,
             className: r
           } = e;
-          return (0, c.jsx)("a", {
+          return (0, d.jsx)("a", {
             href: "#",
             className: n === t.page ? `rockstargames-componentsc18f44f69dad760ad748324d98f1efcd ${r??""}` : "",
             onClick: e => {
@@ -3244,29 +3244,29 @@
           } = e;
           if (1 === a.pageCount) return null;
           const n = Array.from(new Array(Math.min(a.pageCount, 8)), ((e, t) => t + Math.min(Math.max(a.pageCount - 8, 1), Math.max(2, a.page - 4))));
-          return (0, c.jsxs)("div", {
+          return (0, d.jsxs)("div", {
             className: `rockstargames-componentsea0618e2f79b93278088f08dde2476c4 ${s??""}`,
-            children: [a.pageCount > 8 ? (0, c.jsxs)(c.Fragment, {
-              children: [(0, c.jsx)(Ga, {
+            children: [a.pageCount > 8 ? (0, d.jsxs)(d.Fragment, {
+              children: [(0, d.jsx)(Ga, {
                 data: a,
                 onPageUpdate: t,
                 page: 1,
                 children: "1"
-              }), 2 !== n[0] ? (0, c.jsx)("div", {
+              }), 2 !== n[0] ? (0, d.jsx)("div", {
                 className: Pa,
                 children: "..."
               }) : ""]
-            }) : "", n.map((e => (0, c.jsx)(Ga, {
+            }) : "", n.map((e => (0, d.jsx)(Ga, {
               data: a,
               onPageUpdate: t,
               page: e,
               className: s,
               children: e
-            }, e))), a.pageCount > 8 ? (0, c.jsxs)(c.Fragment, {
-              children: [n.slice(-1)[0] + 1 < a.pageCount ? (0, c.jsx)("div", {
+            }, e))), a.pageCount > 8 ? (0, d.jsxs)(d.Fragment, {
+              children: [n.slice(-1)[0] + 1 < a.pageCount ? (0, d.jsx)("div", {
                 className: Pa,
                 children: "..."
-              }) : "", (0, c.jsx)(Ga, {
+              }) : "", (0, d.jsx)(Ga, {
                 data: a,
                 onPageUpdate: t,
                 page: a.pageCount,
@@ -3283,7 +3283,7 @@
           const {
             parallaxController: t
           } = (0, Ha.bc)();
-          return (0, l.useLayoutEffect)((() => {
+          return (0, i.useLayoutEffect)((() => {
             if (!t) return;
             const e = setInterval((() => {
               t.update()
@@ -3304,20 +3304,20 @@
             style: s = {},
             children: n
           } = e;
-          return (0, c.jsx)(Ha.Xu, {
+          return (0, d.jsx)(Ha.Xu, {
             scrollAxis: a,
-            children: (0, c.jsx)(Ua, {
-              children: (0, c.jsx)("div", {
+            children: (0, d.jsx)(Ua, {
+              children: (0, d.jsx)("div", {
                 className: (0, j.classList)(Ra.parallaxWrapper, Ra[t]),
                 style: s,
                 "data-context": "parallax-wrapper",
-                children: n ? n.map(((e, t) => (0, l.cloneElement)(e, {
+                children: n ? n.map(((e, t) => (0, i.cloneElement)(e, {
                   scrollAxis: a,
                   style: {
                     ...e?.props?.style,
                     zIndex: t
                   }
-                }))) : (0, c.jsx)("div", {})
+                }))) : (0, d.jsx)("div", {})
               })
             })
           })
@@ -3340,7 +3340,7 @@
             style: void 0,
             image: n(e?.image ?? null)
           })));
-          return (0, c.jsx)(Ha.UG, {
+          return (0, d.jsx)(Ha.UG, {
             className: (0, j.classList)("rockstargames-componentsd97831cde902af87ada6d20331a1b381", t),
             layers: r,
             style: s
@@ -3356,12 +3356,12 @@
             style: r = {},
             children: o
           } = e;
-          return "horizontal" === s ? (0, c.jsx)(Ha.VS, {
+          return "horizontal" === s ? (0, d.jsx)(Ha.VS, {
             x: [a, t],
             className: (0, j.classList)(Za, n),
             styleOuter: r,
             children: o
-          }) : (0, c.jsx)(Ha.VS, {
+          }) : (0, d.jsx)(Ha.VS, {
             y: [a, t],
             className: (0, j.classList)(Za, n),
             styleOuter: r,
@@ -3385,23 +3385,23 @@
             ctaLabel: n = "Click here",
             ctaLink: r = "https://rockstargames.com",
             gradient: o = !0,
-            image: i,
-            imageOrientation: d = "right",
+            image: c,
+            imageOrientation: l = "right",
             title: m = ""
           } = e;
-          const [p, g] = (0, l.useState)(!1), {
+          const [p, g] = (0, i.useState)(!1), {
             ref: f,
             inView: u
           } = (0, G.YD)({
             threshold: .6
           }), {
             track: b
-          } = (0, F.useGtmTrack)(), k = {
+          } = (0, M.useGtmTrack)(), k = {
             "--promo-background": a ?? "var(--black-200)",
-            "--promo-image": `url(${(0,j.useGetCdnSource)(i)})` ?? 0,
-            "--promo-order": "left" === d ? "row" : "row-reverse"
+            "--promo-image": `url(${(0,j.useGetCdnSource)(c)})` ?? 0,
+            "--promo-order": "left" === l ? "row" : "row-reverse"
           };
-          return (0, l.useEffect)((() => {
+          return (0, i.useEffect)((() => {
             u && !p && (b({
               event: "page_section_impression",
               event_action: "impression",
@@ -3409,7 +3409,7 @@
               event_label: "promo module",
               element_placement: "promo module"
             }), g(!0))
-          }), [u]), (0, c.jsxs)(Ie.E.div, {
+          }), [u]), (0, d.jsxs)(Ie.E.div, {
             className: Qa.promoModule,
             style: k,
             initial: {
@@ -3427,21 +3427,21 @@
               duration: .4
             },
             ref: f,
-            children: [(0, c.jsx)("div", {
-              className: [Qa.promoModuleImage, o ? Qa.gradient : "", "left" === d ? Qa.left : Qa.right].join(" ")
-            }), (0, c.jsxs)("div", {
+            children: [(0, d.jsx)("div", {
+              className: [Qa.promoModuleImage, o ? Qa.gradient : "", "left" === l ? Qa.left : Qa.right].join(" ")
+            }), (0, d.jsxs)("div", {
               className: Qa.promoModuleContentContainer,
-              children: [(0, c.jsx)(y, {
+              children: [(0, d.jsx)(y, {
                 brands: t,
                 className: Qa.promoModuleBrands
-              }), (0, c.jsxs)("div", {
+              }), (0, d.jsxs)("div", {
                 className: Qa.promoModuleTextContent,
-                children: [m && (0, c.jsx)("h3", {
+                children: [m && (0, d.jsx)("h3", {
                   children: m
-                }), s && (0, c.jsx)("p", {
+                }), s && (0, d.jsx)("p", {
                   children: s
                 })]
-              }), n && (0, c.jsx)(C, {
+              }), n && (0, d.jsx)(C, {
                 to: r,
                 text: n,
                 onClick: () => {
@@ -3475,21 +3475,21 @@
             href: n,
             img: r = null,
             titleSlug: o = null,
-            style: i = {},
+            style: c = {},
             className: m
           } = e;
-          const [p, f] = (0, l.useState)(!1), {
+          const [p, f] = (0, i.useState)(!1), {
             inView: u
           } = (0, G.YD)({
             threshold: .6
-          }), [b, k] = (0, l.useState)({
+          }), [b, k] = (0, i.useState)({
             img_rating: r,
             rating_descriptors: a,
             rating_footer: s,
             url_rating: n
           }), {
             track: v
-          } = (0, F.useGtmTrack)(), h = (0, ca.Z)(), {
+          } = (0, M.useGtmTrack)(), h = (0, ca.Z)(), {
             data: x
           } = (0, g.useQuery)(Ka.GameData, {
             variables: {
@@ -3497,9 +3497,9 @@
             },
             skip: !o
           });
-          if ((0, l.useEffect)((() => {
+          if ((0, i.useEffect)((() => {
               x && k(x?.game)
-            }), [x]), (0, l.useEffect)((() => {
+            }), [x]), (0, i.useEffect)((() => {
               u && !p && b.img_rating && (v({
                 event: "page_section_impression",
                 event_action: "impression",
@@ -3509,26 +3509,26 @@
               }), f(!0))
             }), [u]), !b.img_rating) return null;
           const y = !!b.rating_descriptors;
-          return (0, c.jsxs)("div", {
+          return (0, d.jsxs)("div", {
             className: [et.rating, y ? et.withDescriptors : et.withOutDescriptors, m || ""].join(" "),
-            style: (0, D.safeStyles)(i),
-            children: [(0, c.jsx)(d, {
+            style: (0, D.safeStyles)(c),
+            children: [(0, d.jsx)(l, {
               to: b.url_rating,
               target: "_blank",
-              children: (0, c.jsx)("img", {
+              children: (0, d.jsx)("img", {
                 alt: h.formatMessage(Ja.components.components_ratings_link_alt, {
                   rating: (_ = b.img_rating, _.replace(/_/g, " ").split(".")[0].toUpperCase())
                 }),
                 src: t(4593)(`./${b.img_rating}`)
               })
-            }), y && (0, c.jsxs)("div", {
+            }), y && (0, d.jsxs)("div", {
               className: et.text,
-              children: [(0, c.jsx)("p", {
+              children: [(0, d.jsx)("p", {
                 className: et.descriptors,
                 dangerouslySetInnerHTML: {
-                  __html: b.rating_descriptors.replace(/<br>/g, ", ").substring(0, b.rating_descriptors.length - 2)
+                  __html: b?.rating_descriptors?.split(/<br\s?\/?>/).join(", ") || ""
                 }
-              }), b.rating_footer && (0, c.jsx)("hr", {}), b.rating_footer && (0, c.jsx)("p", {
+              }), b.rating_footer && (0, d.jsx)("hr", {}), b.rating_footer && (0, d.jsx)("p", {
                 dangerouslySetInnerHTML: {
                   __html: b.rating_footer.replace(/ \//g, ", ")
                 }
@@ -3548,7 +3548,7 @@
             className: t,
             style: s
           } = e;
-          return (0, c.jsx)("div", {
+          return (0, d.jsx)("div", {
             className: [tt.responsiveFlexBox, void 0 !== t ? t : ""].join(" "),
             style: s,
             children: a
@@ -3563,7 +3563,7 @@
             className: t,
             style: s
           } = e;
-          return (0, c.jsx)("div", {
+          return (0, d.jsx)("div", {
             className: [nt.responsiveFlexItem, void 0 !== t ? t : ""].join(" "),
             style: s,
             children: a
@@ -3581,7 +3581,7 @@
             rows: n,
             style: r
           } = e;
-          return void 0 === r && (r = {}), void 0 !== t && (r.gridTemplateColumns = `repeat(${t}, 1fr)`), void 0 !== n && (r.gridTemplateRows = `repeat(${n}, 1fr)`), (0, c.jsx)("div", {
+          return void 0 === r && (r = {}), void 0 !== t && (r.gridTemplateColumns = `repeat(${t}, 1fr)`), void 0 !== n && (r.gridTemplateRows = `repeat(${n}, 1fr)`), (0, d.jsx)("div", {
             className: [ot.responsiveGridBox, void 0 !== s ? s : ""].join(" "),
             style: r,
             children: a
@@ -3597,7 +3597,7 @@
             className: t,
             style: s
           } = e;
-          return (0, c.jsx)("div", {
+          return (0, d.jsx)("div", {
             className: [ct.responsiveGridItem, void 0 !== t ? t : ""].join(" "),
             style: s,
             children: a
@@ -3615,7 +3615,7 @@
             style: r = {}
           } = e;
           const [o, i] = (0, D.usePreloadImg)(a);
-          return o ? (r.backgroundImage = `url(${a})`, (0, c.jsx)("div", {
+          return o ? (r.backgroundImage = `url(${a})`, (0, d.jsx)("div", {
             role: "img",
             "aria-label": n ?? "R* Games",
             className: [lt.responsiveImage, s ? lt.animateBox : "", t].join(" "),
@@ -3636,16 +3636,16 @@
             style: s,
             maxWidth: n
           } = e;
-          return (0, c.jsx)("section", {
+          return (0, d.jsx)("section", {
             className: [pt.responsiveSection, void 0 !== t ? t : ""].join(" "),
             style: s,
-            children: n ? (0, c.jsx)("div", {
+            children: n ? (0, d.jsx)("div", {
               className: pt.maxWidth,
               children: a
             }) : a
           })
         },
-        ft = () => (0, c.jsx)(d, {
+        ft = () => (0, d.jsx)(l, {
           className: "rockstargames-componentscc006d4ff1bfa49216622ebc92289fb0",
           alt: "Rockstar Games Home",
           to: "/"
@@ -3653,12 +3653,12 @@
         ut = () => {
           const {
             pathname: e
-          } = (0, i.useLocation)();
-          return (0, l.useEffect)((() => {
+          } = (0, c.useLocation)();
+          return (0, i.useEffect)((() => {
             window.scrollTo(0, 0)
           }), [e]), null
         },
-        bt = (0, l.forwardRef)(((e, a) => {
+        bt = (0, i.forwardRef)(((e, a) => {
           const {
             threshold: t,
             callback: s,
@@ -3666,42 +3666,42 @@
             requireUser: r
           } = e, {
             track: o
-          } = (0, F.useGtmTrack)(r), [i, c] = (0, l.useState)(a?.current);
-          return (0, l.useEffect)((() => {
-            a?.current && c(a.current)
+          } = (0, M.useGtmTrack)(r), [c, d] = (0, i.useState)(a?.current);
+          return (0, i.useEffect)((() => {
+            a?.current && d(a.current)
           }), [a]), ((e, a, t) => {
-            const [s, n] = (0, l.useState)({
+            const [s, n] = (0, i.useState)({
               scrollDepths: e,
               scrollY: 0
             }), {
               scrollDepths: r,
               scrollY: o
             } = s;
-            (0, l.useEffect)((() => {
+            (0, i.useEffect)((() => {
               "undefined" != typeof window && 0 !== window.pageYOffset && n((e => ({
                 ...e,
                 scrollY: window.pageYOffset
               })))
-            }), []), (0, l.useEffect)((() => {
+            }), []), (0, i.useEffect)((() => {
               n({
                 scrollDepths: e,
                 scrollY: 0
               })
             }), [window.location.pathname]);
-            const i = (0, l.useCallback)((() => {
+            const c = (0, i.useCallback)((() => {
               const e = document.documentElement,
                 o = document.body,
-                c = t?.scrollTop || e.scrollTop || o.scrollTop,
+                i = t?.scrollTop || e.scrollTop || o.scrollTop,
                 d = t?.scrollHeight || e.scrollHeight || o.scrollHeight,
                 {
                   clientHeight: l
                 } = e,
-                m = c / (d - l) * 100;
+                m = i / (d - l) * 100;
               if (r) {
                 const e = Math.min(...r, d);
                 if (m >= e) {
                   const s = r.filter((a => a !== e));
-                  0 === s.length && (t ?? window).removeEventListener("scroll", i), a && a({
+                  0 === s.length && (t ?? window).removeEventListener("scroll", c), a && a({
                     scrollY: e,
                     scrollPercent: m,
                     remainingDepths: s
@@ -3715,11 +3715,11 @@
                 scrollY: m
               })
             }), [r, t, a]);
-            (0, l.useEffect)((() => {
+            (0, i.useEffect)((() => {
               if ("undefined" == typeof window) return;
               const e = t ?? window;
-              return e.addEventListener("scroll", i), () => e.removeEventListener("scroll", i)
-            }), [i])
+              return e.addEventListener("scroll", c), () => e.removeEventListener("scroll", c)
+            }), [c])
           })(t, (e => {
             let {
               scrollY: a
@@ -3730,14 +3730,14 @@
               event_action: a,
               scroll_depth: a
             }), "function" == typeof s && s(a)
-          }), i), n
+          }), c), n
         })),
         kt = (0, D.withTranslations)((e => {
           let {
             t: a
           } = e;
-          const [t] = (0, l.useState)(""), s = (0, i.useNavigate)(), n = (0, g.useMutateState)();
-          return (0, c.jsxs)("form", {
+          const [t] = (0, i.useState)(""), s = (0, c.useNavigate)(), n = (0, g.useMutateState)();
+          return (0, d.jsxs)("form", {
             action: "#",
             className: "rockstargames-componentsb3a5dd3d369564e67254698a18833f98",
             onSubmit: e => {
@@ -3746,11 +3746,11 @@
               }), document.activeElement?.blur(), s(`/search?q=${e.target.q.value}`)
             },
             role: "search",
-            children: [(0, c.jsx)("button", {
+            children: [(0, d.jsx)("button", {
               type: "submit",
               role: "button",
               title: "Submit"
-            }), (0, c.jsx)("input", {
+            }), (0, d.jsx)("input", {
               autoComplete: "off",
               defaultValue: t,
               enterKeyHint: "search",
@@ -3768,7 +3768,7 @@
           let {
             skeleton: a
           } = e;
-          return a ? (0, c.jsx)("div", {
+          return a ? (0, d.jsx)("div", {
             className: [vt.skeleton, vt[a]].join(" ")
           }) : null
         },
@@ -3780,11 +3780,11 @@
             track: a,
             artist: t
           } = e;
-          return (0, c.jsxs)("div", {
+          return (0, d.jsxs)("div", {
             className: xt.track,
-            children: [(0, c.jsx)("p", {
+            children: [(0, d.jsx)("p", {
               children: a
-            }), (0, c.jsx)("p", {
+            }), (0, d.jsx)("p", {
               className: xt.bodySmall,
               children: t
             })]
@@ -3794,18 +3794,18 @@
           let {
             children: a
           } = e;
-          return (0, c.jsxs)("div", {
+          return (0, d.jsxs)("div", {
             className: "rockstargames-componentsadbe1e185cd3cd1481eb242c25b0eb14",
-            children: [(0, c.jsx)("h4", {
+            children: [(0, d.jsx)("h4", {
               className: "rockstargames-componentsa37f37abb5276c67d47bca88073adb3f",
-              children: (0, c.jsx)(ia.Z, {
+              children: (0, d.jsx)(ia.Z, {
                 ...Ja.components.components_track_list_title
               })
-            }), (0, c.jsx)("div", {
+            }), (0, d.jsx)("div", {
               className: "rockstargames-componentsc0e76cb19681f62e125f0b004c296f0a",
-              children: (0, c.jsx)("div", {
+              children: (0, d.jsx)("div", {
                 className: "rockstargames-componentsb2a58aa8f0fbec82f1c7e834739aabad",
-                children: l.Children.map(l.Children.toArray(a), (e => (0, c.jsx)(yt, {
+                children: i.Children.map(i.Children.toArray(a), (e => (0, d.jsx)(yt, {
                   ...e?.props
                 })))
               })
@@ -3843,37 +3843,37 @@
               main: void 0,
               thumbs: void 0
             },
-            transition: i = {
+            transition: c = {
               parent: void 0,
               main: void 0,
               thumbs: void 0
             }
           } = e;
           const {
-            track: d
-          } = (0, F.useGtmTrack)(), [m, p] = (0, l.useState)([Re.Rv, Re.o3, Re.tl]), [g, f] = (0, l.useState)(null), [u, b] = (0, l.useState)(null);
-          return (0, l.useEffect)((() => {
+            track: l
+          } = (0, M.useGtmTrack)(), [m, p] = (0, i.useState)([Re.Rv, Re.o3, Re.tl]), [g, f] = (0, i.useState)(null), [u, b] = (0, i.useState)(null);
+          return (0, i.useEffect)((() => {
             const e = [Re.Rv, Re.o3, Re.tl];
             n && e.push(Re.W_), p(e)
-          }), [n]), (0, l.useEffect)((() => {
+          }), [n]), (0, i.useEffect)((() => {
             if (!r) return;
-            const e = r.map(((e, a) => (0, c.jsx)(E.o5, {
+            const e = r.map(((e, a) => (0, d.jsx)(E.o5, {
               children: e
             }, Symbol(a).toString())));
             b(e)
-          }), [r]), u ? (0, c.jsxs)(Ie.E.div, {
+          }), [r]), u ? (0, d.jsxs)(Ie.E.div, {
             className: "rockstargames-componentsabb6bd9f780af17f6dcf79964e885edb",
             variants: o.parent,
-            transition: i.parent,
+            transition: c.parent,
             initial: "initial",
             animate: "animate",
-            children: [(0, c.jsx)(Ie.E.div, {
+            children: [(0, d.jsx)(Ie.E.div, {
               className: Nt,
               variants: o.main,
-              transition: i.main,
+              transition: c.main,
               initial: "initial",
               animate: "animate",
-              children: (0, c.jsx)(E.tq, {
+              children: (0, d.jsx)(E.tq, {
                 loop: s,
                 navigation: n,
                 pagination: {
@@ -3886,7 +3886,7 @@
                 breakpoints: St,
                 className: Nt,
                 onSlideNextTransitionEnd: () => {
-                  d({
+                  l({
                     event_action: "next",
                     event_category: "carousel",
                     event: "carousel_next",
@@ -3894,7 +3894,7 @@
                   })
                 },
                 onSlidePrevTransitionEnd: () => {
-                  d({
+                  l({
                     event_action: "previous",
                     event_category: "carousel",
                     event: "carousel_previous",
@@ -3902,7 +3902,7 @@
                   })
                 },
                 onSlideChangeTransitionEnd: () => {
-                  d({
+                  l({
                     event_action: "swipe",
                     event_category: "carousel",
                     event: "carousel_swipe",
@@ -3911,13 +3911,13 @@
                 },
                 children: u
               })
-            }), (0, c.jsx)(Ie.E.div, {
+            }), (0, d.jsx)(Ie.E.div, {
               className: jt,
               variants: o.thumbs,
-              transition: i.thumbs,
+              transition: c.thumbs,
               initial: "initial",
               animate: "animate",
-              children: (0, c.jsx)(E.tq, {
+              children: (0, d.jsx)(E.tq, {
                 threshold: 50,
                 onSwiper: f,
                 loop: s,
@@ -3964,16 +3964,16 @@
             id: t,
             ids: s
           });
-          if (!r) return (0, c.jsx)(ht, {
+          if (!r) return (0, d.jsx)(ht, {
             skeleton: n
           });
           const o = r?.[0]?.tina;
-          return o ? (0, c.jsx)(c.Fragment, {
+          return o ? (0, d.jsx)(d.Fragment, {
             children: r.map(((e, t) => {
               let {
                 tina: s
               } = e;
-              return (0, c.jsx)(j.TinaParser, {
+              return (0, d.jsx)(j.TinaParser, {
                 components: a,
                 tina: s,
                 componentProps: {
@@ -3989,10 +3989,10 @@
             style: t,
             theme: s
           } = e;
-          const [n, r] = (0, l.useState)(s);
-          return (0, l.useEffect)((() => {
+          const [n, r] = (0, i.useState)(s);
+          return (0, i.useEffect)((() => {
             s && r(s)
-          }), [s]), (0, c.jsx)("div", {
+          }), [s]), (0, d.jsx)("div", {
             className: "rockstargames-componentsf1a049e5eed244f3a602a9842424d1c3",
             style: t,
             "data-theme": n,
@@ -4019,13 +4019,13 @@
           } = e;
           const {
             track: r
-          } = (0, F.useGtmTrack)(), {
+          } = (0, M.useGtmTrack)(), {
             loggedIn: o
-          } = (0, F.useRockstarUser)(), {
-            refetch: i
+          } = (0, M.useRockstarUser)(), {
+            refetch: c
           } = (0, g.useQuery)(Lt.UserGetVote, {
             skip: !0
-          }), [d] = (0, g.useMutation)(Lt.UserCastVote), [m, p] = (0, l.useState)(null), f = (0, l.useCallback)((async e => {
+          }), [l] = (0, g.useMutation)(Lt.UserCastVote), [m, p] = (0, i.useState)(null), f = (0, i.useCallback)((async e => {
             r({
               event_action: m ? "like" : "dislike",
               event_category: "cta",
@@ -4037,39 +4037,39 @@
                 foreign_type: s,
                 vote: e
               },
-              n = await d({
+              n = await l({
                 variables: a
               });
             p(n?.data?.userCastVote?.vote ?? null)
           }), [t, s]);
-          return (0, l.useEffect)((() => {
+          return (0, i.useEffect)((() => {
             (async () => {
               if (!o || !t || !s) return;
-              const e = await i({
+              const e = await c({
                 foreign_id: t,
                 foreign_type: s
               });
               p(e?.data?.userGetVote?.vote ?? null)
             })()
-          }), [t, s, o]), (0, c.jsx)("div", {
+          }), [t, s, o]), (0, d.jsx)("div", {
             className: Vt.userVote,
-            children: (0, c.jsxs)("div", {
+            children: (0, d.jsxs)("div", {
               className: Vt.voteContent,
-              children: [(0, c.jsxs)("div", {
+              children: [(0, d.jsxs)("div", {
                 className: Vt.info,
-                children: [(0, c.jsx)("h3", {
+                children: [(0, d.jsx)("h3", {
                   children: n
-                }), (0, c.jsx)("p", {
+                }), (0, d.jsx)("p", {
                   children: a
                 })]
-              }), (0, c.jsxs)("div", {
+              }), (0, d.jsxs)("div", {
                 className: [Vt.voteButtons, o ? "" : Vt.loggedOutButtons].join(" "),
-                children: [(0, c.jsx)("button", {
+                children: [(0, d.jsx)("button", {
                   onClick: () => f(!0),
                   className: [Vt.upVote, m ? Vt.voteButtonActive : ""].join(" "),
                   type: "button",
                   "aria-label": "Vote up"
-                }), (0, c.jsx)("button", {
+                }), (0, d.jsx)("button", {
                   className: [Vt.downVote, !1 === m ? Vt.voteButtonActive : ""].join(" "),
                   onClick: () => f(!1),
                   type: "button",
@@ -4102,8 +4102,8 @@
           } = e;
           const {
             setBodyIsScrollable: n
-          } = (0, D.useBodyScrollable)(), [r, o] = (0, l.useState)(0), [i, m] = (0, l.useState)(0), g = (0, l.useRef)(null), f = (0, l.useRef)(null);
-          return (0, l.useEffect)((() => {
+          } = (0, D.useBodyScrollable)(), [r, o] = (0, i.useState)(0), [c, m] = (0, i.useState)(0), g = (0, i.useRef)(null), f = (0, i.useRef)(null);
+          return (0, i.useEffect)((() => {
             if (!g.current || f.current) return;
             const e = new(p())(g.current);
             e.get("press").set({
@@ -4137,18 +4137,18 @@
             return f.current.addEventListener("transitionend", b), e.on("swiperight", t), e.on("swipeleft", i), e.on("pan", c), e.on("panend", d), e.on("press tap", l), e.on("pressup", u), () => {
               e.off("swiperight", t), e.off("swipeleft", i), e.off("pan", c), e.off("panend", d), e.off("press tap", l), e.off("pressup", u), f.current && f.current.removeEventListener("transitionend", b), m(0)
             }
-          }), [g.current, r]), (0, c.jsxs)("section", {
+          }), [g.current, r]), (0, d.jsxs)("section", {
             className: Bt.carousel,
-            children: [(0, c.jsx)("div", {
+            children: [(0, d.jsx)("div", {
               className: Bt.track,
               ref: g,
-              children: (0, c.jsx)("div", {
-                className: `${Bt.items} ${0!==i?Bt.dragging:""}`,
+              children: (0, d.jsx)("div", {
+                className: `${Bt.items} ${0!==c?Bt.dragging:""}`,
                 ref: f,
                 style: {
-                  transform: `translateX(calc(-${100*r}% + ${i}px))`
+                  transform: `translateX(calc(-${100*r}% + ${c}px))`
                 },
-                children: s.map(((e, a) => (0, c.jsx)(d, {
+                children: s.map(((e, a) => (0, d.jsx)(l, {
                   "data-gtm-category": "Carousel",
                   "data-gtm-action": "Click-through screencap",
                   "data-gtm-label": `/videos/${e.id}`,
@@ -4156,42 +4156,42 @@
                   className: r === a ? Bt.active : "",
                   role: "link",
                   title: e.title,
-                  children: (0, c.jsx)(Pt, {
+                  children: (0, d.jsx)(Pt, {
                     video: e,
                     active: r === a
                   })
                 }, e.id)))
               })
-            }), (0, c.jsxs)("footer", {
-              children: [(0, c.jsx)("div", {
+            }), (0, d.jsxs)("footer", {
+              children: [(0, d.jsx)("div", {
                 className: Bt.text,
-                children: s.map(((e, s) => (0, c.jsx)(d, {
+                children: s.map(((e, s) => (0, d.jsx)(l, {
                   "data-gtm-category": "Carousel",
                   "data-gtm-action": "Click-through footer",
                   "data-gtm-label": `/videos/${e.id}`,
                   to: `/videos/${e.id}`,
                   role: "link",
                   title: e.title,
-                  children: (0, c.jsxs)("div", {
+                  children: (0, d.jsxs)("div", {
                     className: [Bt.info, s === r ? Bt.active : ""].join(" "),
-                    children: [(0, c.jsxs)("div", {
+                    children: [(0, d.jsxs)("div", {
                       className: Bt.title,
-                      children: [(0, c.jsx)("div", {
+                      children: [(0, d.jsx)("div", {
                         className: Bt.gameTitle,
                         children: `${e.game.title}${"fr_fr"===a?" ":""}`
-                      }), (0, c.jsx)("h2", {
+                      }), (0, d.jsx)("h2", {
                         className: Bt.videoTitle,
                         children: `${e.title}`
                       })]
-                    }), (0, c.jsx)(N, {
+                    }), (0, d.jsx)(N, {
                       className: Bt.cta,
                       children: t("Watch Now")
                     })]
                   })
                 }, e.id)))
-              }), (0, c.jsx)("div", {
+              }), (0, d.jsx)("div", {
                 className: Bt.dots,
-                children: s.map(((e, a) => (0, c.jsx)("button", {
+                children: s.map(((e, a) => (0, d.jsx)("button", {
                   "aria-label": `Slide ${a}`,
                   "data-gtm-category": "Marquee",
                   "data-gtm-action": "Dot click",
@@ -4217,7 +4217,7 @@
           next: "rockstargames-componentsc1fd555dd7b904ebe9f23e233c63b0b8",
           disabled: "rockstargames-componentsc9b97437b4e75cef0bb78c0c136c81e9"
         },
-        Ft = (0, D.withTranslations)((e => {
+        Mt = (0, D.withTranslations)((e => {
           let {
             vids: a,
             games: t,
@@ -4226,16 +4226,16 @@
           } = e;
           const r = void 0 !== t ? "games" : "videos",
             o = "videos" === r ? a : t.results,
-            i = (0, l.useRef)(null),
-            [d, m] = (0, l.useState)(0),
-            [g, f] = (0, l.useState)(0),
+            c = (0, i.useRef)(null),
+            [l, m] = (0, i.useState)(0),
+            [g, f] = (0, i.useState)(0),
             u = e => {
-              const a = Math.ceil(o.length / d);
+              const a = Math.ceil(o.length / l);
               e < 0 ? e = 0 : e >= a - 1 && (e = a - 1), f(e)
             },
-            [b, k] = (0, l.useState)(0);
+            [b, k] = (0, i.useState)(0);
           let v;
-          return (0, l.useEffect)((() => {
+          return (0, i.useEffect)((() => {
             const e = () => {
               const e = e => window.matchMedia(`(max-width: ${e})`).matches,
                 a = e("768px") ? 1 : e("990px") || e("1440px") ? 2 : e("1920px") ? 3 : 4;
@@ -4244,9 +4244,9 @@
             return window.addEventListener("resize", e), e(), () => {
               window.removeEventListener("resize", e)
             }
-          }), [d]), (0, l.useEffect)((() => {
-            if (i.current) {
-              const e = new(p())(i.current),
+          }), [l]), (0, i.useEffect)((() => {
+            if (c.current) {
+              const e = new(p())(c.current),
                 a = () => {
                   u(g - 1), k(0)
                 },
@@ -4263,41 +4263,41 @@
                 e.off("swiperight", a), e.off("swipeleft", t), e.off("pan", s), e.off("panend", n), k(0)
               }
             }
-          }), [i.current, g]), v = "games" === r ? (0, c.jsx)(c.Fragment, {
-            children: t.results.map((e => (0, c.jsx)(Oe, {
+          }), [c.current, g]), v = "games" === r ? (0, d.jsx)(d.Fragment, {
+            children: t.results.map((e => (0, d.jsx)(Oe, {
               game: e,
               dontOverrideTo: !0,
               to: `/videos?type=game&gameId=${e.id}`
             }, e.id)))
-          }) : (0, c.jsx)(c.Fragment, {
-            children: a.map((e => (0, c.jsx)(Gt, {
+          }) : (0, d.jsx)(d.Fragment, {
+            children: a.map((e => (0, d.jsx)(Gt, {
               video: e,
               gameTitleNecessary: n
             }, e.id)))
-          }), (0, c.jsxs)("section", {
+          }), (0, d.jsxs)("section", {
             className: Dt.videoList,
-            children: [(0, c.jsxs)("h3", {
+            children: [(0, d.jsxs)("h3", {
               className: Dt.sectionHeader,
-              children: [s, (0, c.jsxs)("div", {
+              children: [s, (0, d.jsxs)("div", {
                 className: Dt.arrowNav,
-                children: [(0, c.jsx)("div", {
+                children: [(0, d.jsx)("div", {
                   className: [Dt.arrow, Dt.previous, 0 === g ? Dt.disabled : ""].join(" "),
                   onClick: () => u(g - 1)
-                }), (0, c.jsx)("div", {
-                  className: [Dt.arrow, Dt.next, g === Math.ceil(o.length / d) - 1 ? Dt.disabled : ""].join(" "),
+                }), (0, d.jsx)("div", {
+                  className: [Dt.arrow, Dt.next, g === Math.ceil(o.length / l) - 1 ? Dt.disabled : ""].join(" "),
                   onClick: () => u(g + 1)
                 })]
               })]
-            }), (0, c.jsx)("div", {
+            }), (0, d.jsx)("div", {
               className: Dt.items,
-              children: (0, c.jsx)("div", {
+              children: (0, d.jsx)("div", {
                 className: Dt.trackWrapper,
-                children: (0, c.jsx)("div", {
+                children: (0, d.jsx)("div", {
                   className: [Dt.track, 0 !== b ? Dt.dragging : ""].join(" "),
-                  ref: i,
+                  ref: c,
                   style: {
                     transform: `translateX(calc(-${100*g}% + ${b}px - (var(--standard-grid-gap) * ${g}))`,
-                    gridAutoColumns: `calc(100 / ${d} * 1% - calc(var(--standard-grid-gap) * (${d-1}/${d}))`
+                    gridAutoColumns: `calc(100 / ${l} * 1% - calc(var(--standard-grid-gap) * (${l-1}/${l}))`
                   },
                   children: v
                 })
@@ -4305,7 +4305,7 @@
             })]
           })
         })),
-        Mt = (0, D.withTranslations)((e => {
+        Ft = (0, D.withTranslations)((e => {
           let {
             error: a,
             t,
@@ -4317,14 +4317,14 @@
           let n = a?.message ?? t("error-404-new");
           n = t("error-404-new");
           const r = a?.code ?? 398;
-          return (0, c.jsxs)("div", {
+          return (0, d.jsxs)("div", {
             className: "rockstargames-componentsc7fe032eaf0127cb44b3aec94a930688",
-            children: [(0, c.jsx)("h3", {
+            children: [(0, d.jsx)("h3", {
               children: `${n} (${r})`
-            }), (0, c.jsx)(d, {
+            }), (0, d.jsx)(l, {
               to: "/",
               children: t("Home")
-            }), "clr" !== s && (0, c.jsx)(kt, {})]
+            }), "clr" !== s && (0, d.jsx)(kt, {})]
           })
         })),
         At = {
@@ -4341,7 +4341,7 @@
             video: a
           } = e;
           const [t] = (0, D.usePreloadImg)(a.screencap);
-          return (0, c.jsx)("div", {
+          return (0, d.jsx)("div", {
             className: [At.screencap, t ? At.screencapLoaded : ""].join(" "),
             style: {
               background: `url(${a.screencap}) center/cover`
@@ -4361,18 +4361,18 @@
               "data-gtm-action": "Video Click-through",
               "data-gtm-label": n
             },
-            o = (0, c.jsxs)("div", {
+            o = (0, d.jsxs)("div", {
               className: At.card,
-              children: [(0, c.jsx)(Pt, {
+              children: [(0, d.jsx)(Pt, {
                 video: s
-              }), (0, c.jsxs)("div", {
+              }), (0, d.jsxs)("div", {
                 className: At.info,
-                children: [a ? (0, c.jsx)("div", {
+                children: [a ? (0, d.jsx)("div", {
                   className: At.gameTitle,
                   dangerouslySetInnerHTML: {
                     __html: s.game.title
                   }
-                }) : "", (0, c.jsx)("h5", {
+                }) : "", (0, d.jsx)("h5", {
                   className: At.title,
                   dangerouslySetInnerHTML: {
                     __html: s.title
@@ -4380,18 +4380,18 @@
                 })]
               })]
             });
-          return t ? (0, c.jsx)("a", {
+          return t ? (0, d.jsx)("a", {
             href: n,
             target: "_blank",
             ...r,
             children: o
-          }) : (0, c.jsx)(d, {
+          }) : (0, d.jsx)(l, {
             to: n,
             ...r,
             children: o
           })
         };
-      class Ot extends l.Component {
+      class Ot extends i.Component {
         constructor(e) {
           super(e), this.state = {
             error: {
@@ -4415,7 +4415,7 @@
           }
         }
         render() {
-          return null !== this.state.error.code ? (0, c.jsx)(Mt, {
+          return null !== this.state.error.code ? (0, d.jsx)(Ft, {
             error: this.state.error
           }) : this.props.children
         }
@@ -4423,9 +4423,9 @@
       const Ht = function(e) {
         let a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
         return function(t) {
-          return (0, c.jsx)(Ot, {
+          return (0, d.jsx)(Ot, {
             header: a,
-            children: (0, c.jsx)(e, {
+            children: (0, d.jsx)(e, {
               ...t
             })
           })
@@ -4434,14 +4434,14 @@
       var Ut = t(1085),
         Rt = t(9683),
         Wt = t(423);
-      const qt = (0, l.forwardRef)(((e, a) => {
+      const qt = (0, i.forwardRef)(((e, a) => {
           const {
             children: t,
             tag: s = "div"
           } = e, n = Ut.m[s];
-          return (0, c.jsx)(Rt.X, {
+          return (0, d.jsx)(Rt.X, {
             features: Wt.H,
-            children: (0, c.jsx)(n, {
+            children: (0, d.jsx)(n, {
               ref: a,
               ...e,
               children: t
@@ -4464,7 +4464,7 @@
           let {
             children: a
           } = e;
-          return (0, c.jsx)(Ie.E.div, Object.assign({
+          return (0, d.jsx)(Ie.E.div, Object.assign({
             className: "rockstargames-componentsf530747be99449caf15a0155061aee75",
             variants: Zt,
             initial: "hidden",
@@ -4478,8 +4478,8 @@
             children: a
           }))
         },
-        Xt = e => a => (0, c.jsx)(Qt, {
-          children: (0, c.jsx)(e, Object.assign({}, a))
+        Xt = e => a => (0, d.jsx)(Qt, {
+          children: (0, d.jsx)(e, Object.assign({}, a))
         }),
         Kt = {
           visible: {
@@ -4499,7 +4499,7 @@
           let {
             children: a
           } = e;
-          return (0, c.jsx)(Ie.E.div, {
+          return (0, d.jsx)(Ie.E.div, {
             className: "rockstargames-componentse88740b4d3c20ab9f8656e87b324d143",
             variants: Kt,
             initial: "hidden",
@@ -4512,8 +4512,8 @@
             children: a
           })
         },
-        as = e => a => (0, c.jsx)(es, {
-          children: (0, c.jsx)(e, {
+        as = e => a => (0, d.jsx)(es, {
+          children: (0, d.jsx)(e, {
             ...a
           })
         }),
@@ -4714,7 +4714,7 @@
             default:
               a = os
           }
-          return (0, c.jsx)(rs.Z, {
+          return (0, d.jsx)(rs.Z, {
             options: {
               loop: !0,
               autoplay: !0,
@@ -5711,102 +5711,6 @@
                   kind: "Field",
                   name: {
                     kind: "Name",
-                    value: "tina_uploads"
-                  },
-                  arguments: [],
-                  directives: [],
-                  selectionSet: {
-                    kind: "SelectionSet",
-                    selections: [{
-                      kind: "Field",
-                      name: {
-                        kind: "Name",
-                        value: "id"
-                      },
-                      arguments: [],
-                      directives: []
-                    }, {
-                      kind: "Field",
-                      name: {
-                        kind: "Name",
-                        value: "type"
-                      },
-                      arguments: [],
-                      directives: []
-                    }, {
-                      kind: "Field",
-                      name: {
-                        kind: "Name",
-                        value: "directory"
-                      },
-                      arguments: [],
-                      directives: []
-                    }, {
-                      kind: "Field",
-                      alias: {
-                        kind: "Name",
-                        value: "filename"
-                      },
-                      name: {
-                        kind: "Name",
-                        value: "input_filename"
-                      },
-                      arguments: [],
-                      directives: []
-                    }, {
-                      kind: "Field",
-                      alias: {
-                        kind: "Name",
-                        value: "hashed_filename"
-                      },
-                      name: {
-                        kind: "Name",
-                        value: "filename"
-                      },
-                      arguments: [],
-                      directives: []
-                    }, {
-                      kind: "Field",
-                      alias: {
-                        kind: "Name",
-                        value: "previewSrc"
-                      },
-                      name: {
-                        kind: "Name",
-                        value: "preview_src"
-                      },
-                      arguments: [],
-                      directives: []
-                    }, {
-                      kind: "Field",
-                      name: {
-                        kind: "Name",
-                        value: "full_src"
-                      },
-                      arguments: [],
-                      directives: []
-                    }, {
-                      kind: "Field",
-                      name: {
-                        kind: "Name",
-                        value: "prod"
-                      },
-                      arguments: [],
-                      directives: []
-                    }, {
-                      kind: "Field",
-                      name: {
-                        kind: "Name",
-                        value: "created_by"
-                      },
-                      arguments: [],
-                      directives: []
-                    }]
-                  }
-                }, {
-                  kind: "Field",
-                  name: {
-                    kind: "Name",
                     value: "tina"
                   },
                   arguments: [],
@@ -5898,7 +5802,7 @@
         }],
         loc: {
           start: 0,
-          end: 1222
+          end: 963
         }
       };
 
@@ -5917,7 +5821,7 @@
         }))
       }
       a.loc.source = {
-        body: "query TinaModulesList($types: [String], $locale: String!) {\n    tinaModulesList(types: $types, locale: $locale) {\n        results {\n            id_hash\n            id\n            title\n            type\n        }\n    }\n}\n\nquery TinaModulesInfo(\n    $ids: [String]!\n    $locale: String!\n    $sync: Boolean = false\n    $cache: Boolean = false\n) {\n    tinaModulesInfo(ids: $ids, locale: $locale, cache: $cache) {\n        id: id_hash\n        title\n        title_doc\n        type\n        sync_hash\n        to\n        visible\n        children {\n            title\n            id_hash\n            to\n            tina {\n                payload\n                variables {\n                    keys\n                }\n            }\n        }\n        tina_uploads {\n            id\n            type\n            directory\n            filename: input_filename\n            hashed_filename: filename\n            previewSrc: preview_src\n            full_src\n            prod\n            created_by\n        }\n        tina {\n            payload\n            variables {\n                keys\n                _translations @include(if: $sync) {\n                    locale\n                    keys\n                }\n            }\n        }\n    }\n}\n",
+        body: "query TinaModulesList($types: [String], $locale: String!) {\n    tinaModulesList(types: $types, locale: $locale) {\n        results {\n            id_hash\n            id\n            title\n            type\n        }\n    }\n}\n\nquery TinaModulesInfo(\n    $ids: [String]!\n    $locale: String!\n    $sync: Boolean = false\n    $cache: Boolean = false\n) {\n    tinaModulesInfo(ids: $ids, locale: $locale, cache: $cache) {\n        id: id_hash\n        title\n        title_doc\n        type\n        sync_hash\n        to\n        visible\n        children {\n            title\n            id_hash\n            to\n            tina {\n                payload\n                variables {\n                    keys\n                }\n            }\n        }\n        tina {\n            payload\n            variables {\n                keys\n                _translations @include(if: $sync) {\n                    locale\n                    keys\n                }\n            }\n        }\n    }\n}\n",
         name: "GraphQL request",
         locationOffset: {
           line: 1,

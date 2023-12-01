@@ -1,9 +1,9 @@
-/*! For license information please see 4c594f83c4ac2670a139c582d87375cb.js.LICENSE.txt */
+/*! For license information please see 1731245311ed60e43ea582ac4fa53064.js.LICENSE.txt */
 (self.webpackChunk_rockstargames_components = self.webpackChunk_rockstargames_components || []).push([
   [270], {
-    3032: (e, a, l) => {
+    3032: (e, l, a) => {
       "use strict";
-      var t = l(927),
+      var t = a(927),
         n = Symbol.for("react.element"),
         i = Symbol.for("react.fragment"),
         o = Object.prototype.hasOwnProperty,
@@ -15,13 +15,13 @@
           __source: !0
         };
 
-      function m(e, a, l) {
+      function m(e, l, a) {
         var t, i = {},
           m = null,
           d = null;
-        for (t in void 0 !== l && (m = "" + l), void 0 !== a.key && (m = "" + a.key), void 0 !== a.ref && (d = a.ref), a) o.call(a, t) && !r.hasOwnProperty(t) && (i[t] = a[t]);
+        for (t in void 0 !== a && (m = "" + a), void 0 !== l.key && (m = "" + l.key), void 0 !== l.ref && (d = l.ref), l) o.call(l, t) && !r.hasOwnProperty(t) && (i[t] = l[t]);
         if (e && e.defaultProps)
-          for (t in a = e.defaultProps) void 0 === i[t] && (i[t] = a[t]);
+          for (t in l = e.defaultProps) void 0 === i[t] && (i[t] = l[t]);
         return {
           $$typeof: n,
           type: e,
@@ -31,22 +31,22 @@
           _owner: s.current
         }
       }
-      a.Fragment = i, a.jsx = m, a.jsxs = m
+      l.Fragment = i, l.jsx = m, l.jsxs = m
     },
-    3705: (e, a, l) => {
+    3705: (e, l, a) => {
       "use strict";
-      e.exports = l(3032)
+      e.exports = a(3032)
     },
-    9997: (e, a, l) => {
+    9997: (e, l, a) => {
       "use strict";
-      l.d(a, {
+      a.d(l, {
         Z: () => u
       });
-      var t = l(927),
-        n = l(9885),
-        i = l.n(n),
-        o = l(9542),
-        s = l(9929);
+      var t = a(927),
+        n = a(9885),
+        i = a.n(n),
+        o = a(9542),
+        s = a(9929);
       const r = {
         grid: "rockstargames-componentsdebe9dcb1f7173c7819134eb6306602e",
         itemList: "rockstargames-componentsef6c598b9b7622adff2026dec903f790",
@@ -68,13 +68,13 @@
         goldenrod: "rockstargames-componentsbe9a0d659fd5a7b58d3201c931bafd66",
         skull: "rockstargames-componentsd7be25cefb21d3912007e5ec987f35ba"
       };
-      var m = l(3705);
+      var m = a(3705);
       const {
         sanitize: d
       } = i(), u = e => {
         let {
-          list: a,
-          string: l,
+          list: l,
+          string: a,
           starColor: n,
           style: i,
           className: u,
@@ -85,8 +85,8 @@
         } = e;
         const [f, v] = (0, t.useState)(null);
         return (0, t.useEffect)((() => {
-          v(a)
-        }), [a]), l || a ? b && f ? (0, m.jsx)("div", {
+          v(l)
+        }), [l]), a || l ? b && f ? (0, m.jsx)("div", {
           className: r.grid,
           style: {
             "--ordered-list-grid-column": b,
@@ -104,7 +104,7 @@
         }) : (0, m.jsx)("ol", {
           style: (0, s.safeStyles)(i),
           className: (0, o.classList)(r.itemList, r.custom, p ? r.noImg : "", n ? r[n] : "", c ? r[c] : "", u ?? ""),
-          children: a.map((e => (0, m.jsx)("li", {
+          children: l.map((e => (0, m.jsx)("li", {
             dangerouslySetInnerHTML: {
               __html: d(e?.content ?? e)
             }
@@ -112,16 +112,16 @@
         }) : null
       }
     },
-    4457: (e, a, l) => {
+    4457: (e, l, a) => {
       "use strict";
-      l.d(a, {
+      a.d(l, {
         Z: () => u
       });
-      var t = l(927),
-        n = l(9885),
-        i = l.n(n),
-        o = l(9542),
-        s = l(9929);
+      var t = a(927),
+        n = a(9885),
+        i = a.n(n),
+        o = a(9542),
+        s = a(9929);
       const r = {
         grid: "rockstargames-componentsed478db3df0bb24d8430e5f2c3db50e7",
         itemList: "rockstargames-componentsae1d16253b1fc6703f5efac102a44af0",
@@ -143,13 +143,13 @@
         goldenrod: "rockstargames-componentsa30641b08e9f3c2ce6608a387abf5e62",
         skull: "rockstargames-componentsa82bbef0b3177b321657177dd01be991"
       };
-      var m = l(3705);
+      var m = a(3705);
       const {
         sanitize: d
       } = i(), u = e => {
         let {
-          list: a,
-          string: l,
+          list: l,
+          string: a,
           starColor: n,
           style: i,
           className: u,
@@ -158,10 +158,10 @@
           columns: b,
           mobileColumns: g
         } = e;
-        const [f, v] = (0, t.useState)(null), h = l ? l.split("_#_") : a;
+        const [f, v] = (0, t.useState)(null), h = a ? a.split("_#_") : l;
         return (0, t.useEffect)((() => {
-          v(a)
-        }), [a]), l || a ? b && f ? (0, m.jsx)("div", {
+          v(l)
+        }), [l]), a || l ? b && f ? (0, m.jsx)("div", {
           className: r.grid,
           style: {
             "--unordered-list-grid-column": b,
@@ -187,9 +187,9 @@
         }) : null
       }
     },
-    2270: (e, a, l) => {
+    2270: (e, l, a) => {
       "use strict";
-      l.r(a), l.d(a, {
+      a.r(l), a.d(l, {
         BrandsField: () => o,
         Button: () => n,
         ButtonGroup: () => s,
@@ -198,21 +198,21 @@
         ConditionalBlock: () => f,
         Cta: () => v,
         Embed: () => h,
-        ExpandingPlatformButton: () => k,
-        Grid: () => y,
+        ExpandingPlatformButton: () => y,
+        Grid: () => k,
         HTMLElement: () => I,
         Hero: () => c,
         ImageWithBadge: () => S,
         LayeredImage: () => N,
-        ListItem: () => F,
-        MultiSourceImage: () => T,
+        ListItem: () => T,
+        MultiSourceImage: () => F,
         NewswireRelated: () => L,
         OrderedList: () => Y,
-        ParallaxInnerLayer: () => w,
+        ParallaxInnerLayer: () => C,
         ParallaxOuterLayer: () => A,
-        ParallaxWrapper: () => C,
-        PromoModule: () => _,
-        Rating: () => R,
+        ParallaxWrapper: () => w,
+        PromoModule: () => R,
+        Rating: () => _,
         ResponsiveFlexBox: () => M,
         ResponsiveFlexItem: () => E,
         ResponsiveImg: () => W,
@@ -226,10 +226,10 @@
         tinaModuleParentSelectorPlugin: () => V,
         tinaModuleSelectorPlugin: () => O
       });
-      var t = l(3616);
+      var t = a(3616);
       const n = e => {
           let {
-            parent: a = null
+            parent: l = null
           } = e;
           return {
             label: "Button",
@@ -238,11 +238,11 @@
               label: "Button Text",
               component: "text"
             }, {
-              name: a ? `${a}.to` : "to",
+              name: l ? `${l}.to` : "to",
               label: "HREF",
               component: "text"
             }, (0, t.AttributesFields)({
-              parent: a
+              parent: l
             })],
             defaultItem: () => (0, t.defaultItemUnique)({
               content: "Click Me",
@@ -445,10 +445,10 @@
             }
           }
         };
-      var r = l(559);
+      var r = a(559);
       const m = function() {
           let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "background";
-          const a = [{
+          const l = [{
             name: "mobile",
             label: "Mobile",
             component: "image",
@@ -460,13 +460,13 @@
             component: "image",
             uploadDir: r.uploadDir
           }];
-          return "background" === e && a.push((0, t.StyleField)({
+          return "background" === e && l.push((0, t.StyleField)({
             filter: "image"
           })), {
             component: "group",
             name: `${e}Image`,
             label: `${e.charAt(0).toUpperCase()+e.slice(1)} Images`,
-            fields: a
+            fields: l
           }
         },
         d = function() {
@@ -687,8 +687,8 @@
         }),
         b = e => {
           let {
-            game: a,
-            filter: l = null,
+            game: l,
+            filter: a = null,
             label: n = "Carousel"
           } = e;
           const i = [(0, t.StyleField)({
@@ -711,8 +711,8 @@
             description: "Should infinite scroll be DISABLED for this carousel?",
             component: "toggle"
           }, (0, t.ItemsField)({
-            filter: l,
-            game: a
+            filter: a,
+            game: l
           }), {
             label: "Static Copy",
             name: "text",
@@ -735,9 +735,9 @@
             fields: [...i, (0, t.ClassNamesField)({
               filter: "carousel"
             }), (0, t.MediaQueryField)({
-              filter: l,
+              filter: a,
               fields: i,
-              game: a
+              game: l
             })],
             defaultItem: () => (0, t.defaultItemUnique)({
               renderTemplate: "",
@@ -750,12 +750,12 @@
         },
         g = e => {
           let {
-            label: a = "Conditional Block",
-            templates: l = []
+            label: l = "Conditional Block",
+            templates: a = []
           } = e;
           return {
             name: "conditionalBlockField",
-            label: a,
+            label: l,
             component: "group",
             fields: [{
               label: "Condition(s)",
@@ -780,25 +780,25 @@
               name: t.TINA_PARSER_KEY,
               description: "The content that is shown ONLY if the condition(s) are ALL true.",
               component: "blocks",
-              templates: l
+              templates: a
             }],
             defaultItem: () => (0, t.defaultItemUnique)({}),
             itemProps: e => {
               return (0, t.itemPropsWithKey)(e, {
-                label: `${a=e?.condition,Array.isArray(a)?a.map((e=>e.label)).join(", "):"New"} [Conditional Block]`
+                label: `${l=e?.condition,Array.isArray(l)?l.map((e=>e.label)).join(", "):"New"} [Conditional Block]`
               });
-              var a
+              var l
             }
           }
         },
         f = e => {
           let {
-            label: a = "Group of Conditional Blocks",
-            templates: l = []
+            label: l = "Group of Conditional Blocks",
+            templates: a = []
           } = e;
           return {
             name: "groupOfConditionalBlocks",
-            label: a,
+            label: l,
             component: "group",
             fields: [(0, t.NameField)(), {
               name: t.TINA_PARSER_KEY,
@@ -806,7 +806,7 @@
               description: "Sections of content that are only displayed if the selected condition(s) are true.",
               component: "blocks",
               templates: [g({
-                templates: l
+                templates: a
               })]
             }],
             defaultItem: () => (0, t.defaultItemUnique)({}),
@@ -817,7 +817,7 @@
         },
         v = e => {
           let {
-            parent: a = null
+            parent: l = null
           } = e;
           return {
             label: "CTA",
@@ -826,7 +826,7 @@
               label: "CTA Text",
               component: "text"
             }, {
-              name: a ? `${a}.href` : "href",
+              name: l ? `${l}.href` : "href",
               label: "href",
               component: "text"
             }, {
@@ -893,7 +893,7 @@
                 value: "googleplay"
               }]
             }), (0, t.AttributesFields)({
-              parent: a
+              parent: l
             }), (0, t.GtmField)()],
             defaultItem: () => (0, t.defaultItemUnique)({}),
             itemProps: e => (0, t.itemPropsWithKey)(e, {
@@ -903,8 +903,8 @@
         },
         h = e => {
           let {
-            parent: a = null,
-            post: l = {},
+            parent: l = null,
+            post: a = {},
             game: n = null,
             filter: i = ""
           } = e;
@@ -987,9 +987,9 @@
             })
           }
         },
-        k = e => {
+        y = e => {
           let {
-            templates: a = null
+            templates: l = null
           } = e;
           return {
             name: "type",
@@ -1003,7 +1003,7 @@
               name: t.TINA_PARSER_KEY,
               label: "Content Above Button (fades out when button expands)",
               component: "blocks",
-              templates: a
+              templates: l
             }, (0, t.PlatformsAndLinksField)()],
             defaultItem: () => (0, t.defaultItemUnique)({
               buttonText: (0, t.defaultItemUnique)()
@@ -1013,10 +1013,10 @@
             })
           }
         },
-        y = e => {
+        k = e => {
           let {
-            game: a = null,
-            templates: l = null,
+            game: l = null,
+            templates: a = null,
             styleDefaults: n = {},
             context: i = null,
             label: o = "Grid",
@@ -1030,7 +1030,7 @@
               label: "Grid Items",
               name: t.TINA_PARSER_KEY,
               component: "blocks",
-              templates: l
+              templates: a
             }, {
               name: "reversedOnMobile",
               label: "Reversed on Mobile?",
@@ -1039,7 +1039,7 @@
             }, (0, t.StyleField)({
               filter: "grid"
             }), (0, t.ImageField)({
-              game: a,
+              game: l,
               label: "Background Image"
             }), (0, t.ThemeField)()],
             defaultItem: () => (0, t.defaultItemUnique)({
@@ -1053,7 +1053,7 @@
         },
         I = e => {
           let {
-            parent: a = null
+            parent: l = null
           } = e;
           return {
             name: "type",
@@ -1076,17 +1076,17 @@
         },
         S = e => {
           let {
-            game: a = null,
-            label: l = "Image",
+            game: l = null,
+            label: a = "Image",
             description: n = ""
           } = e;
           return {
             name: "imageWithBadge",
-            label: l,
+            label: a,
             description: n,
             component: "group",
             fields: [(0, t.NameField)(), (0, t.ImageField)({
-              game: a
+              game: l
             }), (0, t.LeadAssetToggle)(), (0, t.ClassNamesField)({
               filter: "image"
             }), (0, t.StyleField)({
@@ -1094,7 +1094,7 @@
             })],
             defaultItem: () => (0, t.defaultItemUnique)({
               image: (0, t.defaultItemUnique)(t._defaultImageValues),
-              badgeType: "rdr2" === a ? "badge3" : ""
+              badgeType: "rdr2" === l ? "badge3" : ""
             }),
             itemProps: e => (0, t.itemPropsWithKey)(e, {
               label: e?.name ? `${e.name} [Image]` : "New [Image]"
@@ -1103,8 +1103,8 @@
         },
         x = e => {
           let {
-            name: a = null,
-            label: l = null,
+            name: l = null,
+            label: a = null,
             description: n = null,
             filter: i = null,
             game: o
@@ -1258,20 +1258,20 @@
             }
           };
           return {
-            name: a ?? "imageLayer",
-            label: l ?? "Image Layer",
+            name: l ?? "imageLayer",
+            label: a ?? "Image Layer",
             component: "group",
             description: n,
             fields: s,
             defaultItem: () => (0, t.defaultItemUnique)(r[i]),
             itemProps: e => (0, t.itemPropsWithKey)(e, {
-              label: `${e?.name??"New"} [${l}]`
+              label: `${e?.name??"New"} [${a}]`
             })
           }
         },
         N = e => {
           let {
-            game: a = null
+            game: l = null
           } = e;
           return {
             label: "Layered Image",
@@ -1321,9 +1321,9 @@
                 label: "Background Image",
                 description: "Image that sits behind every other layer",
                 filter: "background",
-                game: a
+                game: l
               }), x({
-                game: a,
+                game: l,
                 label: "Image Layer",
                 filter: "layer"
               })]
@@ -1339,8 +1339,8 @@
             })
           }
         };
-      var P = l(5607);
-      const F = function() {
+      var P = a(5607);
+      const T = function() {
           let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {
             parent: "",
             post: null
@@ -1363,16 +1363,16 @@
             })
           }
         },
-        T = e => {
+        F = e => {
           let {
-            game: a = null
+            game: l = null
           } = e;
           return {
             name: "plainImage",
             label: "Image",
             component: "group",
             fields: [(0, t.NameField)(), (0, t.ImageField)({
-              game: a,
+              game: l,
               label: "Sources"
             }), (0, t.StyleField)({
               filter: "image"
@@ -1393,7 +1393,7 @@
             itemProps: e => (0, t.itemPropsWithKey)(e)
           }
         },
-        w = () => ({
+        C = () => ({
           name: "parallaxInnerLayer",
           label: "Parallax Inner Layer",
           component: "group",
@@ -1444,10 +1444,10 @@
             label: `${e?.name??"New"} [Parallax Inner Layer]`
           })
         }),
-        C = e => {
+        w = e => {
           let {
-            game: a = null,
-            templates: l = null
+            game: l = null,
+            templates: a = null
           } = e;
           return {
             name: "parallaxWrapper",
@@ -1486,7 +1486,7 @@
               label: "Parallax Items",
               name: t.TINA_PARSER_KEY,
               component: "blocks",
-              templates: l
+              templates: a
             }, (0, t.StyleField)({
               filter: "parallaxWrapper"
             })],
@@ -1500,8 +1500,8 @@
         },
         A = e => {
           let {
-            game: a = null,
-            templates: l = null
+            game: l = null,
+            templates: a = null
           } = e;
           return {
             name: "parallaxOuterLayer",
@@ -1523,7 +1523,7 @@
               label: "Parallax Items",
               name: t.TINA_PARSER_KEY,
               component: "blocks",
-              templates: l
+              templates: a
             }, (0, t.DisplayClassField)({}), (0, t.StyleField)({
               filter: "parallaxOuterLayer"
             })],
@@ -1536,7 +1536,7 @@
             })
           }
         },
-        _ = () => ({
+        R = () => ({
           label: "Promo Module",
           component: "group",
           fields: [(0, t.NameField)(), {
@@ -1591,10 +1591,10 @@
             label: `${e?.name??"New"} [Promo Module]`
           })
         }),
-        R = e => {
+        _ = e => {
           let {
-            defaults: a = {},
-            game: l = null,
+            defaults: l = {},
+            game: a = null,
             filter: n = null
           } = e;
           const i = [(0, t.NameField)(), {
@@ -1629,11 +1629,11 @@
             fields: [...i, (0, t.MediaQueryField)({
               filter: n,
               fields: i,
-              game: l,
-              defaults: a
+              game: a,
+              defaults: l
             })],
             defaultItem: () => (0, t.defaultItemUnique)({
-              style: a?.style ?? {}
+              style: l?.style ?? {}
             }),
             itemProps: e => (0, t.itemPropsWithKey)(e, {
               label: e?.name ? `${e.name} [Rating]` : "New [Rating]"
@@ -1677,7 +1677,7 @@
         },
         W = e => {
           let {
-            parent: a = null
+            parent: l = null
           } = e;
           return {
             label: "Responsive Image",
@@ -1686,19 +1686,19 @@
               label: "Source",
               component: "text"
             }, {
-              name: a ? `${a}.overwrite_ratio` : "overwrite_ratio",
+              name: l ? `${l}.overwrite_ratio` : "overwrite_ratio",
               label: "Overwrite Ratio",
               component: "text"
             }, {
-              name: a ? `${a}.animate` : "animate",
+              name: l ? `${l}.animate` : "animate",
               label: "Animate",
               component: "toggle"
             }, {
-              name: a ? `${a}.manual` : "manual",
+              name: l ? `${l}.manual` : "manual",
               label: "Manual",
               component: "toggle"
             }, (0, t.AttributesFields)({
-              parent: a
+              parent: l
             })],
             defaultItem: () => (0, t.defaultItemUnique)({
               content: "",
@@ -1713,17 +1713,17 @@
         },
         $ = e => {
           let {
-            parent: a = null
+            parent: l = null
           } = e;
           return {
             label: "Separator",
             fields: [{
-              name: a ? `${a}.type` : "type",
+              name: l ? `${l}.type` : "type",
               label: "Type",
               component: "text",
               initialValues: ""
             }, (0, t.AttributesFields)({
-              parent: a
+              parent: l
             })],
             defaultItem: () => (0, t.defaultItemUnique)(),
             itemProps: e => (0, t.itemPropsWithKey)(e, {
@@ -1731,8 +1731,8 @@
             })
           }
         };
-      var q = l(4859),
-        B = l(3374);
+      var q = a(4859),
+        B = a(3374);
       const D = {
         name: "skeleton",
         label: "Skeleton Type",
@@ -1746,21 +1746,21 @@
           label: "A gen9 Hero"
         }]
       };
-      var U = l(2968),
-        G = l(3705);
+      var U = a(2968),
+        G = a(3705);
       const K = e => {
           let {
-            name: a,
-            component: l,
+            name: l,
+            component: a,
             label: n,
             variables: i = {}
           } = e;
           return {
             label: n,
-            name: a,
+            name: l,
             component: "group-list",
             fields: [(0, t.NameField)(), D, {
-              component: l,
+              component: a,
               label: n,
               name: "id",
               variables: i
@@ -1776,13 +1776,13 @@
           name: "tina-module-selector",
           Component: e => {
             let {
-              field: a,
-              input: l,
+              field: l,
+              input: a,
               meta: t
             } = e;
             const {
               variables: n = {}
-            } = a, {
+            } = l, {
               data: i
             } = (0, q.useQuery)(U.TinaModulesList, {
               variables: n
@@ -1795,21 +1795,21 @@
               name: "-- Select Module --"
             }, ...i.tinaModulesList.results];
             return (0, G.jsx)(B.FieldWrapper, {
-              field: a,
-              input: l,
+              field: l,
+              input: a,
               meta: t,
               children: (0, G.jsx)("select", {
-                ...l,
+                ...a,
                 children: o.map((e => {
                   let {
-                    id_hash: a,
-                    title: l,
+                    id_hash: l,
+                    title: a,
                     type: t
                   } = e;
                   return (0, G.jsx)("option", {
-                    value: a,
-                    children: `${t?`[${t}]`:""} ${l} ${a?`(${a})`:""}`
-                  }, a)
+                    value: l,
+                    children: `${t?`[${t}]`:""} ${a} ${l?`(${l})`:""}`
+                  }, l)
                 }))
               })
             })
@@ -1820,13 +1820,13 @@
           name: "tina-module-parent-selector",
           Component: e => {
             let {
-              field: a,
-              input: l,
+              field: l,
+              input: a,
               meta: t
             } = e;
             const {
               variables: n = {}
-            } = a, {
+            } = l, {
               data: i
             } = (0, q.useQuery)(U.TinaModulesList, {
               variables: n
@@ -1839,21 +1839,21 @@
               name: "-- Select Parent of this Module --"
             }, ...i.tinaModulesList.results];
             return (0, G.jsx)(B.FieldWrapper, {
-              field: a,
-              input: l,
+              field: l,
+              input: a,
               meta: t,
               children: (0, G.jsx)("select", {
-                ...l,
+                ...a,
                 children: o.map((e => {
                   let {
-                    id: a,
-                    name: l,
+                    id: l,
+                    name: a,
                     type: t
                   } = e;
                   return (0, G.jsx)("option", {
-                    value: a,
-                    children: `${t?`[${t}]`:""} ${l} ${a?`(${a})`:""}`
-                  }, a)
+                    value: l,
+                    children: `${t?`[${t}]`:""} ${a} ${l?`(${l})`:""}`
+                  }, l)
                 }))
               })
             })
@@ -1861,11 +1861,11 @@
         },
         H = e => {
           let {
-            label: a
+            label: l
           } = e;
           return [{
             value: "",
-            label: a
+            label: l
           }, {
             value: "var(--spacing-sm)",
             label: "--spacing-sm"
@@ -1885,7 +1885,7 @@
         },
         z = e => {
           let {
-            templates: a
+            templates: l
           } = e;
           return {
             label: "Gen 9 page wrapper grid",
@@ -1894,7 +1894,7 @@
               label: "Page sections",
               name: t.TINA_PARSER_KEY,
               component: "blocks",
-              templates: a
+              templates: l
             }, {
               name: "style",
               label: "Style Overrides",
@@ -1943,14 +1943,14 @@
             label: `${e?.[t.TINA_MEMOQ_PREFIX]?.title??"NEW"} [CLR TrackList]`
           })
         });
-      var j = l(9997);
+      var j = a(9997);
       const Y = e => {
         let {
-          game: a = null,
-          parent: l = null
+          game: l = null,
+          parent: a = null
         } = e;
         const n = [(0, t.NameField)()];
-        return "gtao" !== a && "gtav" !== a || n.push({
+        return "gtao" !== l && "gtav" !== l || n.push({
           name: "starColor",
           label: "Star Color",
           description: 'If "none", it will use default bullet styles',
@@ -2012,9 +2012,9 @@
           name: "list",
           label: "List Items",
           component: "blocks",
-          templates: [F({})]
+          templates: [T({})]
         }, (0, t.StyleField)({
-          parent: l
+          parent: a
         })), {
           name: "orderedList",
           label: "Ordered List",
@@ -2032,14 +2032,14 @@
           })
         }
       };
-      var Q = l(4457);
+      var Q = a(4457);
       const Z = e => {
           let {
-            game: a = null,
-            parent: l = null
+            game: l = null,
+            parent: a = null
           } = e;
           const n = [(0, t.NameField)()];
-          return "gtao" !== a && "gtav" !== a || n.push({
+          return "gtao" !== l && "gtav" !== l || n.push({
             name: "starColor",
             label: "Star Color",
             description: 'If "none", it will use default bullet styles',
@@ -2101,9 +2101,9 @@
             name: "list",
             label: "List Items",
             component: "blocks",
-            templates: [F({})]
+            templates: [T({})]
           }, (0, t.StyleField)({
-            parent: l
+            parent: a
           })), {
             name: "unorderedList",
             label: "Unordered List",
@@ -2142,7 +2142,7 @@
         })
     },
     2968: e => {
-      var a = {
+      var l = {
         kind: "Document",
         definitions: [{
           kind: "OperationDefinition",
@@ -2564,102 +2564,6 @@
                   kind: "Field",
                   name: {
                     kind: "Name",
-                    value: "tina_uploads"
-                  },
-                  arguments: [],
-                  directives: [],
-                  selectionSet: {
-                    kind: "SelectionSet",
-                    selections: [{
-                      kind: "Field",
-                      name: {
-                        kind: "Name",
-                        value: "id"
-                      },
-                      arguments: [],
-                      directives: []
-                    }, {
-                      kind: "Field",
-                      name: {
-                        kind: "Name",
-                        value: "type"
-                      },
-                      arguments: [],
-                      directives: []
-                    }, {
-                      kind: "Field",
-                      name: {
-                        kind: "Name",
-                        value: "directory"
-                      },
-                      arguments: [],
-                      directives: []
-                    }, {
-                      kind: "Field",
-                      alias: {
-                        kind: "Name",
-                        value: "filename"
-                      },
-                      name: {
-                        kind: "Name",
-                        value: "input_filename"
-                      },
-                      arguments: [],
-                      directives: []
-                    }, {
-                      kind: "Field",
-                      alias: {
-                        kind: "Name",
-                        value: "hashed_filename"
-                      },
-                      name: {
-                        kind: "Name",
-                        value: "filename"
-                      },
-                      arguments: [],
-                      directives: []
-                    }, {
-                      kind: "Field",
-                      alias: {
-                        kind: "Name",
-                        value: "previewSrc"
-                      },
-                      name: {
-                        kind: "Name",
-                        value: "preview_src"
-                      },
-                      arguments: [],
-                      directives: []
-                    }, {
-                      kind: "Field",
-                      name: {
-                        kind: "Name",
-                        value: "full_src"
-                      },
-                      arguments: [],
-                      directives: []
-                    }, {
-                      kind: "Field",
-                      name: {
-                        kind: "Name",
-                        value: "prod"
-                      },
-                      arguments: [],
-                      directives: []
-                    }, {
-                      kind: "Field",
-                      name: {
-                        kind: "Name",
-                        value: "created_by"
-                      },
-                      arguments: [],
-                      directives: []
-                    }]
-                  }
-                }, {
-                  kind: "Field",
-                  name: {
-                    kind: "Name",
                     value: "tina"
                   },
                   arguments: [],
@@ -2751,26 +2655,26 @@
         }],
         loc: {
           start: 0,
-          end: 1222
+          end: 963
         }
       };
 
-      function l(e, a) {
-        if ("FragmentSpread" === e.kind) a.add(e.name.value);
+      function a(e, l) {
+        if ("FragmentSpread" === e.kind) l.add(e.name.value);
         else if ("VariableDefinition" === e.kind) {
           var t = e.type;
-          "NamedType" === t.kind && a.add(t.name.value)
+          "NamedType" === t.kind && l.add(t.name.value)
         }
         e.selectionSet && e.selectionSet.selections.forEach((function(e) {
-          l(e, a)
+          a(e, l)
         })), e.variableDefinitions && e.variableDefinitions.forEach((function(e) {
-          l(e, a)
+          a(e, l)
         })), e.definitions && e.definitions.forEach((function(e) {
-          l(e, a)
+          a(e, l)
         }))
       }
-      a.loc.source = {
-        body: "query TinaModulesList($types: [String], $locale: String!) {\n    tinaModulesList(types: $types, locale: $locale) {\n        results {\n            id_hash\n            id\n            title\n            type\n        }\n    }\n}\n\nquery TinaModulesInfo(\n    $ids: [String]!\n    $locale: String!\n    $sync: Boolean = false\n    $cache: Boolean = false\n) {\n    tinaModulesInfo(ids: $ids, locale: $locale, cache: $cache) {\n        id: id_hash\n        title\n        title_doc\n        type\n        sync_hash\n        to\n        visible\n        children {\n            title\n            id_hash\n            to\n            tina {\n                payload\n                variables {\n                    keys\n                }\n            }\n        }\n        tina_uploads {\n            id\n            type\n            directory\n            filename: input_filename\n            hashed_filename: filename\n            previewSrc: preview_src\n            full_src\n            prod\n            created_by\n        }\n        tina {\n            payload\n            variables {\n                keys\n                _translations @include(if: $sync) {\n                    locale\n                    keys\n                }\n            }\n        }\n    }\n}\n",
+      l.loc.source = {
+        body: "query TinaModulesList($types: [String], $locale: String!) {\n    tinaModulesList(types: $types, locale: $locale) {\n        results {\n            id_hash\n            id\n            title\n            type\n        }\n    }\n}\n\nquery TinaModulesInfo(\n    $ids: [String]!\n    $locale: String!\n    $sync: Boolean = false\n    $cache: Boolean = false\n) {\n    tinaModulesInfo(ids: $ids, locale: $locale, cache: $cache) {\n        id: id_hash\n        title\n        title_doc\n        type\n        sync_hash\n        to\n        visible\n        children {\n            title\n            id_hash\n            to\n            tina {\n                payload\n                variables {\n                    keys\n                }\n            }\n        }\n        tina {\n            payload\n            variables {\n                keys\n                _translations @include(if: $sync) {\n                    locale\n                    keys\n                }\n            }\n        }\n    }\n}\n",
         name: "GraphQL request",
         locationOffset: {
           line: 1,
@@ -2779,20 +2683,20 @@
       };
       var t = {};
 
-      function n(e, a) {
-        for (var l = 0; l < e.definitions.length; l++) {
-          var t = e.definitions[l];
-          if (t.name && t.name.value == a) return t
+      function n(e, l) {
+        for (var a = 0; a < e.definitions.length; a++) {
+          var t = e.definitions[a];
+          if (t.name && t.name.value == l) return t
         }
       }
 
-      function i(e, a) {
-        var l = {
+      function i(e, l) {
+        var a = {
           kind: e.kind,
-          definitions: [n(e, a)]
+          definitions: [n(e, l)]
         };
-        e.hasOwnProperty("loc") && (l.loc = e.loc);
-        var i = t[a] || new Set,
+        e.hasOwnProperty("loc") && (a.loc = e.loc);
+        var i = t[l] || new Set,
           o = new Set,
           s = new Set;
         for (i.forEach((function(e) {
@@ -2805,17 +2709,17 @@
             })))
           }))
         }
-        return o.forEach((function(a) {
-          var t = n(e, a);
-          t && l.definitions.push(t)
-        })), l
+        return o.forEach((function(l) {
+          var t = n(e, l);
+          t && a.definitions.push(t)
+        })), a
       }
-      a.definitions.forEach((function(e) {
+      l.definitions.forEach((function(e) {
         if (e.name) {
-          var a = new Set;
-          l(e, a), t[e.name.value] = a
+          var l = new Set;
+          a(e, l), t[e.name.value] = l
         }
-      })), e.exports = a, e.exports.TinaModulesList = i(a, "TinaModulesList"), e.exports.TinaModulesInfo = i(a, "TinaModulesInfo")
+      })), e.exports = l, e.exports.TinaModulesList = i(l, "TinaModulesList"), e.exports.TinaModulesInfo = i(l, "TinaModulesInfo")
     }
   }
 ]);

@@ -1335,8 +1335,8 @@
             }))
           })
         }));
-      var E = t(3682),
-        w = t(3153);
+      var w = t(3682),
+        E = t(3153);
       const M = {
           closed: {
             d: "M3 12H21"
@@ -1379,7 +1379,7 @@
           } = (0, _.MB)(), {
             navOpen: t,
             setNavOpen: s
-          } = (0, k.useRockstarUserState)(), r = (0, E._)(), i = (0, E._)(), c = (0, E._)();
+          } = (0, k.useRockstarUserState)(), r = (0, w._)(), i = (0, w._)(), c = (0, w._)();
           return (0, b.useEffect)((() => {
             !0 === t && !0 === e && a(!1)
           }), [t]), (0, b.useEffect)((() => {
@@ -1392,15 +1392,15 @@
             width: "24",
             height: "24",
             viewBox: "0 0 24 24",
-            children: [(0, n.jsx)(w.E.path, {
+            children: [(0, n.jsx)(E.E.path, {
               ...B.closed,
               ...G,
               animate: c
-            }), (0, n.jsx)(w.E.path, {
+            }), (0, n.jsx)(E.E.path, {
               ...L.closed,
               ...G,
               animate: i
-            }), (0, n.jsx)(w.E.path, {
+            }), (0, n.jsx)(E.E.path, {
               ...M.closed,
               ...G,
               animate: r
@@ -1441,13 +1441,9 @@
             freezeUserShouldSeeMore: f,
             userShouldSeeMore: p
           } = (0, x.useScroll)(), [j, y] = (0, b.useState)(0), S = () => j > 1023;
-          return (0, b.useEffect)((() => {
-            r || d || f && p || c(p)
-          }), [f, r, p, d]), (0, b.useEffect)((() => {
+          return (0, b.useEffect)((() => {}), [f, r, p, d]), (0, b.useEffect)((() => {
             o(!1)
           }), [u]), (0, b.useEffect)((() => {
-            r && c(!1)
-          }), [r]), (0, b.useEffect)((() => {
             const e = () => {
               l.current && i(l.current.offsetHeight), y(window.innerWidth)
             };
@@ -1611,7 +1607,7 @@
                 overflow: "hidden"
               }
             };
-          return (0, n.jsxs)(w.E.div, {
+          return (0, n.jsxs)(E.E.div, {
             className: (0, D.classList)($.hero, u),
             style: {
               "--background-image-desktop": `url(${b})`,
@@ -1632,23 +1628,23 @@
               }) : "", (0, n.jsx)("div", {
                 className: $.gradient
               })]
-            }), (0, n.jsxs)(w.E.div, {
+            }), (0, n.jsxs)(E.E.div, {
               className: $.content,
               initial: "hidden",
               animate: "visible",
               variants: p,
-              children: [(0, n.jsx)(w.E.div, {
+              children: [(0, n.jsx)(E.E.div, {
                 variants: x,
                 children: (0, n.jsx)(s.Z, {
                   brands: a
                 })
-              }), o.length ? (0, n.jsx)(w.E.div, {
+              }), o.length ? (0, n.jsx)(E.E.div, {
                 variants: x,
                 children: (0, n.jsx)(h.ExpandingPlatformButton, {
                   buttonText: c,
                   platformsAndLinks: o,
                   children: (0, n.jsxs)(n.Fragment, {
-                    children: [(0, n.jsxs)(w.E.div, {
+                    children: [(0, n.jsxs)(E.E.div, {
                       className: $.descriptions,
                       variants: x,
                       children: [(0, n.jsx)("h2", {
@@ -1660,7 +1656,7 @@
                           __html: d
                         }
                       })]
-                    }), (0, n.jsx)(w.E.div, {
+                    }), (0, n.jsx)(E.E.div, {
                       variants: x,
                       children: (0, n.jsx)(O.Z, {
                         buttons: i,
@@ -1670,7 +1666,7 @@
                   })
                 })
               }) : (0, n.jsxs)(n.Fragment, {
-                children: [(0, n.jsxs)(w.E.div, {
+                children: [(0, n.jsxs)(E.E.div, {
                   className: $.descriptions,
                   variants: x,
                   children: [(0, n.jsx)("h2", {
@@ -1682,14 +1678,14 @@
                       __html: d
                     }
                   })]
-                }), (0, n.jsx)(w.E.div, {
+                }), (0, n.jsx)(E.E.div, {
                   variants: x,
                   children: (0, n.jsx)(O.Z, {
                     buttons: i,
                     className: $.buttonGroup
                   })
                 })]
-              }), g && (0, n.jsx)(w.E.div, {
+              }), g && (0, n.jsx)(E.E.div, {
                 className: $.legalText,
                 variants: x,
                 children: (0, n.jsx)("p", {

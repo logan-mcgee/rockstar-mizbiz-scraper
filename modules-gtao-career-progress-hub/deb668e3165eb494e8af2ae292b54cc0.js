@@ -1967,10 +1967,11 @@
         }), [b]), (0, r.useEffect)((() => () => {
           v(null), A(null)
         }), []), (0, r.useEffect)((() => {
-          if (null === P || !Array.isArray(h)) return;
-          const e = (0, n.getGen9Consoles)().includes(h[0]),
-            a = (0, n.getGen8Consoles)().includes(h[0]);
-          a || e ? e ? T("gen9") : a && T("gen8") : T("loggedOut")
+          if (!1 === P && T("loggedOut"), P && Array.isArray(h)) {
+            const e = (0, n.getGen9Consoles)().includes(h[0]),
+              a = (0, n.getGen8Consoles)().includes(h[0]);
+            e ? T("gen9") : a && T("gen8")
+          }
         }), [P, h]), (0, r.useEffect)((() => {
           I || D || null === P || "unknown" === x || (C({
             event: "virtualPageview",

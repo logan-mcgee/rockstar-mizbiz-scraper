@@ -1,23 +1,23 @@
 (self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
   [715], {
-    4211: (e, a, i) => {
+    4211: (e, a, s) => {
       "use strict";
-      i.r(a), i.d(a, {
+      s.r(a), s.d(a, {
         default: () => d
       });
-      var s = i(8976),
-        r = i(9542),
-        t = i(9929);
+      var i = s(8976),
+        r = s(9542),
+        t = s(9929);
       const n = {
         title: "rockstargames-modules-core-newswire-articleca3619ec694712f8ef44a0673cc5cd2a",
         main: "rockstargames-modules-core-newswire-articleb604683b1b1cf1316f5cf35ce2fe4b31",
         breadcrumbs: "rockstargames-modules-core-newswire-articled1965b8d8252ea2aaac5bde77b3bcef0"
       };
-      var l = i(3705);
+      var l = s(3705);
       const d = (0, t.withTranslations)((e => {
         let {
           children: a,
-          intro: i,
+          intro: s,
           image: d = {},
           style: c = {},
           t: o,
@@ -29,42 +29,42 @@
         });
         const f = (0, t.useNewswirePost)(),
           b = {},
-          k = b?.meta?.title ?? f?.title,
-          p = b?.meta?.subtitle ?? f?.subtitle,
-          v = p ? (0, l.jsx)("h3", {
+          p = b?.meta?.title ?? f?.title,
+          k = b?.meta?.subtitle ?? f?.subtitle,
+          h = k ? (0, l.jsx)("h3", {
             "data-context": "newswire-subtitle",
-            children: p
+            children: k
           }) : "",
-          h = [{
+          w = [{
             text: o("Newswire"),
             to: "/newswire"
           }],
           {
-            src: w
+            src: v
           } = (0, r.useImageParser)(d),
           x = (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsx)("time", {
               dateTime: f.created,
               children: f.created_formatted
-            }), i ? (0, l.jsx)(s.DescriptionArea, {
-              item: i
+            }), s ? (0, l.jsx)(i.DescriptionArea, {
+              item: s
             }) : "", a]
           });
-        f?.primary_tags?.length && h.push({
+        f?.primary_tags?.length && w.push({
           text: f.primary_tags[0].name,
           to: `/newswire?tag_id=${f.primary_tags[0].id}`
-        }), f?.secondary_tags?.length && h.push({
+        }), f?.secondary_tags?.length && w.push({
           text: f.secondary_tags[0].name,
           to: `/newswire?tag_id=${f.secondary_tags[0].id}`
         });
         const j = (0, l.jsx)("div", {
           className: n.breadcrumbs,
-          children: h.map((e => (0, l.jsx)(s.A, {
+          children: w.map((e => (0, l.jsx)(i.A, {
             to: e.to,
             children: e.text
           }, e.to)))
         });
-        return w?.desktop && (c.background = `url(${w.desktop}) center/cover no-repeat`), (0, l.jsx)("div", {
+        return v?.desktop && (c.background = `url(${v.desktop}) center/cover no-repeat`), (0, l.jsx)("div", {
           className: [m, n.title].join(" "),
           style: {
             ...c,
@@ -74,29 +74,29 @@
             children: [(0, l.jsxs)("header", {
               "data-context": "title",
               children: [j, (0, l.jsx)("h1", {
-                children: k
+                children: p
               })]
             }), (0, l.jsxs)("footer", {
               "data-context": "title",
-              children: [v, x]
+              children: [h, x]
             })]
           }) : (0, l.jsxs)(l.Fragment, {
             children: [j, (0, l.jsxs)("div", {
               className: n.main,
               children: [(0, l.jsx)("h1", {
-                children: k
-              }), v]
+                children: p
+              }), h]
             }), x]
           })
         })
       }))
     },
-    4715: (e, a, i) => {
+    4715: (e, a, s) => {
       "use strict";
-      i.r(a), i.d(a, {
+      s.r(a), s.d(a, {
         AnchorLink: () => t,
-        Discounts: () => w,
-        Donate: () => y,
+        Discounts: () => v,
+        Donate: () => N,
         EventInfo: () => C,
         FeaturedEventInfo: () => $,
         FontClip: () => E,
@@ -108,44 +108,44 @@
         PctBar: () => K,
         Podium: () => X
       });
-      var s = i(927),
-        r = i(3705);
+      var i = s(927),
+        r = s(3705);
       const t = e => {
         let {
           children: a,
-          hash: i
+          hash: s
         } = e;
-        const t = (0, s.useRef)(null),
-          n = window.location.hash?.replace("#", "") === i ? i : null;
-        return (0, s.useEffect)((() => {
+        const t = (0, i.useRef)(null),
+          n = window.location.hash?.replace("#", "") === s ? s : null;
+        return (0, i.useEffect)((() => {
           n && setTimeout((() => {
             const e = document.getElementById(n);
             e && e.scrollIntoView()
           }), 1e3)
         }), []), (0, r.jsx)("div", {
           ref: t,
-          id: i,
+          id: s,
           children: a
         })
       };
-      var n = i(420),
-        l = i.n(n);
+      var n = s(420),
+        l = s.n(n);
       const d = e => {
         let {
           items: a,
-          columns: i = {},
-          noCarousel: s = !1,
+          columns: s = {},
+          noCarousel: i = !1,
           noInfiniteScroll: t = !1,
           ...n
         } = e;
         const d = n?.style ?? {};
-        return s && (i?.mobile && (d["--mobile-cols"] = i.mobile), i?.desktop && (d["--desktop-cols"] = i.desktop)), (0, r.jsxs)(r.Fragment, {
+        return i && (s?.mobile && (d["--mobile-cols"] = s.mobile), s?.desktop && (d["--desktop-cols"] = s.desktop)), (0, r.jsxs)(r.Fragment, {
           children: [n.title && (0, r.jsx)("p", {
             className: "rockstargames-modules-core-newswire-articleaff0b1cbcafd725c58c239e5c027d99c",
             children: n.title
           }), (0, r.jsxs)("div", {
             className: "rockstargames-modules-core-newswire-articlef21b886c69c9d2c51f97af89d920996b",
-            children: [s && (0, r.jsx)(l(), {
+            children: [i && (0, r.jsx)(l(), {
               style: {
                 ...d,
                 "--grid-gap-dynamic": "2rem 0"
@@ -154,7 +154,7 @@
               renderTemplate: "standard",
               items: a,
               ...n
-            }), !s && (0, r.jsx)(k, {
+            }), !i && (0, r.jsx)(p, {
               items: a,
               noInfiniteScroll: t,
               perPage: 2,
@@ -163,7 +163,7 @@
           })]
         })
       };
-      var c = i(8976);
+      var c = s(8976);
       const o = {
           limitedGrid: "rockstargames-modules-core-newswire-articled84c2dff4228f60ad6d32e1b56fb9ac1",
           gridCarousel: "rockstargames-modules-core-newswire-articlec8d973199844852aadd8606029f0daa6",
@@ -185,19 +185,19 @@
         m = e => {
           let {
             to: a,
-            children: i
+            children: s
           } = e;
           return a ? (0, r.jsx)("a", {
             href: a,
             target: "_blank",
             rel: "noreferrer",
-            children: i
-          }) : i
+            children: s
+          }) : s
         },
         u = e => {
           let {
             items: a,
-            noTextFit: i,
+            noTextFit: s,
             type: t,
             carouselOnMobile: n,
             columns: l = {
@@ -205,10 +205,10 @@
               mobile: 2
             }
           } = e;
-          const [d, u] = (0, s.useState)(null), [g, f] = (0, s.useState)(3), b = (0, s.useRef)(null);
-          return (0, s.useEffect)((() => {
+          const [d, u] = (0, i.useState)(null), [g, f] = (0, i.useState)(3), b = (0, i.useRef)(null);
+          return (0, i.useEffect)((() => {
             const e = window.getComputedStyle(b.current).getPropertyValue("--divisible-desktop"),
-              i = () => {
+              s = () => {
                 const a = window.innerWidth;
                 f(a <= 767 ? 2 : e)
               };
@@ -216,18 +216,18 @@
               let {
                 length: e
               } = a.content;
-              const i = [];
+              const s = [];
               if (e % g != 0) {
                 let a = 0;
                 do {
-                  i.push((0, r.jsx)("div", {
+                  s.push((0, r.jsx)("div", {
                     className: `${o.gridItem} ${o.extraDiv}`
                   }, "limited-grid-" + a++)), e++
                 } while (e % g != 0)
               }
-              u(i)
+              u(s)
             }
-            return window.addEventListener("resize", i), i(), () => window.removeEventListener("resize", i)
+            return window.addEventListener("resize", s), s(), () => window.removeEventListener("resize", s)
           }), [g, b]), (0, r.jsxs)("div", {
             className: `${o.limitedGrid} ${n?o.carouselOnMobile:""}`,
             children: [(0, r.jsxs)("div", {
@@ -236,14 +236,14 @@
                 "--divisible-desktop": l.desktop,
                 "--divisible-mobile": l.mobile
               },
-              className: `\n                    ${o.limitedGridContent}\n                    ${2===l.desktop?o.columnsDesktop2:""}\n                    ${3===l.desktop?o.columnsDesktop3:""}\n                    ${l.desktop>=4?o.columnsDesktop4:""}\n                    ${i?o.noTextFit:""}\n                    ${t?o[t]:""}\n                `,
+              className: `\n                    ${o.limitedGridContent}\n                    ${2===l.desktop?o.columnsDesktop2:""}\n                    ${3===l.desktop?o.columnsDesktop3:""}\n                    ${l.desktop>=4?o.columnsDesktop4:""}\n                    ${s?o.noTextFit:""}\n                    ${t?o[t]:""}\n                `,
               children: [(0, r.jsx)("div", {
                 className: o.thirdLine
               }), a.content.map(((e, a) => (0, r.jsx)("div", {
                 className: o.gridItem,
                 children: (0, r.jsxs)(m, {
                   to: e?.href ?? e?.to,
-                  children: [!i && (0, r.jsx)(c.TextFit, {
+                  children: [!s && (0, r.jsx)(c.TextFit, {
                     className: o.gridText,
                     min: 16,
                     max: 1e3,
@@ -257,7 +257,7 @@
                       badgeType: "badge2",
                       badge: e.badge
                     })
-                  }), i && (0, r.jsx)("p", {
+                  }), s && (0, r.jsx)("p", {
                     children: e.title
                   })]
                 })
@@ -292,45 +292,45 @@
             items: a = []
           } = e;
           if (!a.length) return null;
-          let i = 0,
-            s = 0;
+          let s = 0,
+            i = 0;
           return a.map(((e, a) => {
             if (e.limitedList?.content || e.limitedGridList?.content) {
-              const i = [];
-              return e.limitedList?.content && i.push((0, r.jsx)(k, {
+              const s = [];
+              return e.limitedList?.content && s.push((0, r.jsx)(p, {
                 items: e.limitedList.content,
                 noInfiniteScroll: e?.noInfiniteScroll,
                 perPage: e?.perPage
-              }, e?.key ?? a)), e.limitedGridList?.content && i.push((0, r.jsx)(u, {
+              }, e?.key ?? a)), e.limitedGridList?.content && s.push((0, r.jsx)(u, {
                 columns: e.limitedGridList.columns,
                 items: e.limitedGridList
-              }, e?.key ?? a)), s++, (0, r.jsxs)("div", {
-                children: [1 === s && (0, r.jsx)("div", {
+              }, e?.key ?? a)), i++, (0, r.jsxs)("div", {
+                children: [1 === i && (0, r.jsx)("div", {
                   className: "rockstargames-modules-core-newswire-articleec69a1e1d83f2c9b2d71b4afc2e8d41e",
                   children: (0, r.jsx)("div", {
                     className: "rockstargames-modules-core-newswire-articlef28c9e814f58215db0c40753bd85a265"
                   })
-                }), i]
+                }), s]
               }, a)
             }
             if (e.discountsList?.content || e.discountsGridList?.content) {
-              const s = [];
-              return e.discountsList?.content && s.push((0, r.jsx)(k, {
+              const i = [];
+              return e.discountsList?.content && i.push((0, r.jsx)(p, {
                 items: e.discountsList.content,
                 noInfiniteScroll: e?.noInfiniteScroll,
                 perPage: e?.perPage
-              }, e?.key ?? a)), e.discountsGridList?.content && s.push((0, r.jsx)(u, {
+              }, e?.key ?? a)), e.discountsGridList?.content && i.push((0, r.jsx)(u, {
                 noTextFit: !0,
                 carouselOnMobile: !0,
                 type: e.type ?? e.discountsGridList.type,
                 columns: e.discountsGridList.columns,
                 items: e.discountsGridList
-              }, e?.key ?? a)), e?.list && s.push((0, r.jsx)(c.UnorderedList, {
+              }, e?.key ?? a)), e?.list && i.push((0, r.jsx)(c.UnorderedList, {
                 ...e
-              })), i++, (0, r.jsxs)("div", {
-                children: [1 === i && (0, r.jsx)("div", {
+              })), s++, (0, r.jsxs)("div", {
+                children: [1 === s && (0, r.jsx)("div", {
                   className: "rockstargames-modules-core-newswire-articlea6b9b7f63ef349c57f3045b559b9a238"
-                }), s]
+                }), i]
               }, a)
             }
             return null
@@ -345,26 +345,26 @@
         b = e => {
           let {
             wrapper: a,
-            children: i,
-            length: s
+            children: s,
+            length: i
           } = e;
-          return s > 1 ? a(i) : i
+          return i > 1 ? a(s) : s
         },
-        k = e => {
+        p = e => {
           let {
             items: a,
-            noInfiniteScroll: i = !1,
+            noInfiniteScroll: s = !1,
             size: t = null,
             perPage: n = null,
             customSlidesPerView: l = null,
             style: d = {}
           } = e;
-          const o = (0, s.useRef)(null),
-            [m, u] = (0, s.useState)(null),
-            [g, k] = (0, s.useState)(t);
-          return (0, s.useEffect)((() => {
-            !t && n && k(1 === n ? "lg" : "sm"), t || n || (k("lg"), console.error('Error: DiscountsCarousel expects a prop "size" in order to display the correct amount of slides. Defaulting to lg.'))
-          }), [t, n]), (0, s.useEffect)((() => {
+          const o = (0, i.useRef)(null),
+            [m, u] = (0, i.useState)(null),
+            [g, p] = (0, i.useState)(t);
+          return (0, i.useEffect)((() => {
+            !t && n && p(1 === n ? "lg" : "sm"), t || n || (p("lg"), console.error('Error: DiscountsCarousel expects a prop "size" in order to display the correct amount of slides. Defaulting to lg.'))
+          }), [t, n]), (0, i.useEffect)((() => {
             if (!o.current) return;
             const e = () => {
               const e = l || window.getComputedStyle(o.current).getPropertyValue("--slides-per-view");
@@ -380,7 +380,7 @@
               ref: o,
               children: (0, r.jsx)(c.Carousel, {
                 className: f.discountsCarousel,
-                noInfiniteScroll: i,
+                noInfiniteScroll: s,
                 style: {
                   ...d,
                   "--per-page": m,
@@ -389,7 +389,7 @@
                 children: e
               })
             }),
-            children: a.map(((e, i) => (0, r.jsxs)("div", {
+            children: a.map(((e, s) => (0, r.jsxs)("div", {
               className: [f.discountsCarouselItem, 1 === a.length ? f.singleImage : ""].join(" "),
               children: [(0, r.jsx)(c.ImageWithBadge, {
                 ariaLabel: e?.ariaLabel,
@@ -405,13 +405,13 @@
                 className: f.fontUpdate,
                 item: e
               })]
-            }, e?.key ?? i)))
+            }, e?.key ?? s)))
           }) : (console.error('Error: DiscountsCarousel expects a prop "items" that contains an array of objects.'), null)
         },
-        p = e => {
+        k = e => {
           let {
             items: a = [],
-            style: i = {}
+            style: s = {}
           } = e;
           return a.length ? (0, r.jsx)(c.Grid, {
             style: {
@@ -419,7 +419,7 @@
               "--grid-gap-dynamic": "var(--grid-gap-static-lg)",
               "--padding-dynamic-tb": "var(--grid-gap-static-lg)",
               "--image-rounding-dynamic": "0",
-              ...i
+              ...s
             },
             children: a.map(((e, a) => e?.title_and_description ? (0, r.jsxs)(c.Grid, {
               context: "readable-text",
@@ -436,7 +436,7 @@
                   __html: e.title_and_description.description
                 }
               })]
-            }, e?.key ?? a) : e?.limitedList?.content ? (0, r.jsx)(k, {
+            }, e?.key ?? a) : e?.limitedList?.content ? (0, r.jsx)(p, {
               items: e.limitedList.content,
               noInfiniteScroll: e?.noInfiniteScroll,
               perPage: e?.perPage,
@@ -453,29 +453,29 @@
             }) : void 0))
           }) : null
         },
-        v = {
+        h = {
           area: "rockstargames-modules-core-newswire-articlebd369197d34037ca950bc456ae0edbfa",
           btmImg: "rockstargames-modules-core-newswire-articlea96546818d0319df5a2790c88dc1f5ea",
           limitedTopImg: "rockstargames-modules-core-newswire-articlec42389be5e7c869431a648165a5cae18",
           topImg: "rockstargames-modules-core-newswire-articleaffb8cefb29b116795380aa5314d5127"
         },
-        h = e => {
+        w = e => {
           let {
             items: a,
-            renderTemplate: i,
-            ...s
+            renderTemplate: s,
+            ...i
           } = e;
-          switch (i) {
+          switch (s) {
             case "gtav":
             case "gtao":
-              return (0, r.jsx)(p, {
+              return (0, r.jsx)(k, {
                 items: a,
-                ...s
+                ...i
               });
             case "grid":
               return (0, r.jsx)(d, {
                 items: a,
-                ...s
+                ...i
               });
             default:
               return (0, r.jsx)(g, {
@@ -483,59 +483,59 @@
               })
           }
         },
-        w = e => {
+        v = e => {
           let {
             items: a,
-            renderTemplate: i,
-            style: s,
+            renderTemplate: s,
+            style: i,
             ...t
           } = e;
           return (0, r.jsx)("div", {
-            className: v.area,
+            className: h.area,
             "data-context": "discounts",
             children: (0, r.jsxs)("div", {
-              className: v.discountsContent,
-              children: [(0, r.jsx)(h, {
-                renderTemplate: i,
+              className: h.discountsContent,
+              children: [(0, r.jsx)(w, {
+                renderTemplate: s,
                 items: a,
                 props: t,
-                style: s
+                style: i
               }), (0, r.jsx)("div", {
-                className: v.btmImg
+                className: h.btmImg
               })]
             })
           })
         };
-      var x = i(9885),
-        j = i.n(x);
-      const N = {
+      var x = s(9885),
+        j = s.n(x);
+      const y = {
           donate: "rockstargames-modules-core-newswire-articleff9f3568a504aa9435bb271c905604c6",
           largePaddingSides: "rockstargames-modules-core-newswire-articleeda019a9aff0ac7012c1f9d07452fb57"
         },
-        y = e => {
+        N = e => {
           let {
             text: a
           } = e;
           const {
-            sanitize: i
+            sanitize: s
           } = j();
           return (0, r.jsx)("div", {
-            className: [N.donate, "normalPaddingTopBottom largePaddingSides"].join(" "),
+            className: [y.donate, "normalPaddingTopBottom largePaddingSides"].join(" "),
             children: (0, r.jsx)("p", {
               dangerouslySetInnerHTML: {
-                __html: i(a)
+                __html: s(a)
               }
             })
           })
         };
-      var S = i(5370),
-        I = i.n(S),
-        _ = i(9542),
-        L = i(8356),
-        P = i.n(L),
-        T = i(4224),
-        F = i.n(T),
-        G = i(4211);
+      var S = s(5370),
+        I = s.n(S),
+        L = s(9542),
+        _ = s(8356),
+        P = s.n(_),
+        T = s(4224),
+        F = s.n(T),
+        G = s(4211);
       const D = {
           event: "rockstargames-modules-core-newswire-articledeb35a20cd305c1c3f58adf38c18a13b",
           featured: "rockstargames-modules-core-newswire-articlec9494ef21ed459fabdebc24519c1880c",
@@ -556,30 +556,30 @@
         C = e => {
           let {
             images: a,
-            title: i,
+            title: s,
             content: t,
             isFeatured: n = !1,
             className: d = null,
             videoInHeroProps: o,
             hideNewswireTitle: m = !1
           } = e;
-          const u = (0, _.useTinaPayload)(),
+          const u = (0, L.useTinaPayload)(),
             g = u?.meta?.prod ?? !1,
-            f = (0, _.useTinaComponents)();
+            f = (0, L.useTinaComponents)();
           I().set(u, "meta.prod", g);
           let b = o?.gifVideoProps?.hasVideoInHero || !1;
-          const k = o?.htmlVideoProps?.id || !1,
-            p = !!o?.htmlVideoProps?.hasHtmlVideoInHero && k;
-          p && b && (b = !1);
-          const v = void 0 === o || !b && !p,
-            h = (0, s.useMemo)((() => ({
+          const p = o?.htmlVideoProps?.id || !1,
+            k = !!o?.htmlVideoProps?.hasHtmlVideoInHero && p;
+          k && b && (b = !1);
+          const h = void 0 === o || !b && !k,
+            w = (0, i.useMemo)((() => ({
               ...f,
               HTMLElement: c.HTMLElement,
               ImageWithBadge: c.ImageWithBadge,
               GroupOfItems: l()
             })), [f]);
           return (0, r.jsxs)("div", {
-            className: (0, _.classList)(D.event, d),
+            className: (0, L.classList)(D.event, d),
             children: [b && (0, r.jsx)("div", {
               className: D.videoWrapper,
               children: (0, r.jsx)(P(), {
@@ -589,21 +589,21 @@
                 },
                 loop: o?.gifVideoProps?.isLooping
               })
-            }), p && k && (0, r.jsx)("div", {
+            }), k && p && (0, r.jsx)("div", {
               className: D.videoWrapper,
               children: (0, r.jsx)(F(), {
                 autoplay: o?.htmlVideoProps?.autoPlay || !1,
-                id: k
+                id: p
               })
-            }), v && (0, r.jsx)(V, {
+            }), h && (0, r.jsx)(V, {
               images: a
             }), n && (0, r.jsx)(G.default, {}), (0, r.jsxs)("div", {
               className: D.eventInfo,
               children: [!n && !m && (0, r.jsx)("h3", {
                 className: D.eventTitle,
-                children: i
-              }), (0, r.jsx)(_.TinaParser, {
-                components: h,
+                children: s
+              }), (0, r.jsx)(L.TinaParser, {
+                components: w,
                 tina: {
                   payload: {
                     content: t,
@@ -629,18 +629,18 @@
         E = e => {
           let {
             fontFamily: a = "inherit",
-            fontBg: i,
-            string: s
+            fontBg: s,
+            string: i
           } = e;
           return (0, r.jsx)("span", {
             style: {
               "--font-family-clip": a
             },
-            className: [M.clip, M[i]].join(" "),
-            children: s
+            className: [M.clip, M[s]].join(" "),
+            children: i
           })
         };
-      var B = i(3657);
+      var B = s(3657);
       const R = {
           gamingWrapper: "rockstargames-modules-core-newswire-articlec33afa2532a66477387c16a5b7609e34",
           gamingRewards: "rockstargames-modules-core-newswire-articleb322b28290c4e636c9b32f29917c5142",
@@ -655,7 +655,7 @@
         A = e => {
           let {
             headline: a,
-            plainImage: s,
+            plainImage: i,
             top: t,
             unorderedList: n,
             bottom: l,
@@ -679,15 +679,15 @@
                   }), "psPlus" === d && (0, r.jsx)("img", {
                     "aria-label": "Playstation Plus Benefit",
                     className: R.primeGamingSocialLogo,
-                    src: i(6469)
+                    src: s(6469)
                   }), "primeGaming" === d && (0, r.jsx)("img", {
                     "aria-label": "Social Club | Prime Gaming",
                     className: R.primeGamingSocialLogo,
-                    src: i(4024)
+                    src: s(4024)
                   }), "gtaPlus" === d && (0, r.jsx)("img", {
                     "aria-label": "GTA Plus",
                     className: R.primeGamingSocialLogo,
-                    src: i(1630)
+                    src: s(1630)
                   }), t?.text && (0, r.jsx)("p", {
                     ...t,
                     dangerouslySetInnerHTML: {
@@ -709,8 +709,8 @@
                   })]
                 }), (0, r.jsx)(c.ResponsiveGridItem, {
                   className: R.rightSide,
-                  children: s?.image ? (0, r.jsx)(c.MultiSourceImage, {
-                    image: s.image
+                  children: i?.image ? (0, r.jsx)(c.MultiSourceImage, {
+                    image: i.image
                   }) : (0, r.jsx)("div", {
                     className: R.psPlusDefaultImg
                   })
@@ -719,33 +719,33 @@
             })
           })
         };
-      var z = i(6947),
-        H = i(4859),
-        W = i(6141);
+      var z = s(6947),
+        H = s(4859),
+        W = s(6141);
       const O = e => {
           let {
             backgroundImages: a,
-            deckHash: i = "",
+            deckHash: s = "",
             perPage: t = null
           } = e;
-          const [n, l] = (0, s.useState)(null), d = (0, _.useGetCdnSource)(a?.backgroundImg?.full_src ?? null), o = (0, _.useGetCdnSource)(a?.layeredImg?.full_src ?? null), m = (0, s.useRef)(null), {
+          const [n, l] = (0, i.useState)(null), d = (0, L.useGetCdnSource)(a?.backgroundImg?.full_src ?? null), o = (0, L.useGetCdnSource)(a?.layeredImg?.full_src ?? null), m = (0, i.useRef)(null), {
             data: u,
             error: g
           } = (0, H.useQuery)(W.TinaModulesInfo, {
             variables: {
-              ids: i
+              ids: s
             },
-            skip: !i
+            skip: !s
           });
-          return (0, s.useEffect)((() => {
+          return (0, i.useEffect)((() => {
             if (u?.tinaModulesInfo) {
               const e = u.tinaModulesInfo[0],
                 {
                   id: a,
-                  tina: i
+                  tina: s
                 } = e,
-                s = I().clone(i);
-              I().set(s, "payload.meta.id", a), l(s)
+                i = I().clone(s);
+              I().set(i, "payload.meta.id", a), l(i)
             }
           }), [u]), u && n ? g ? (0, r.jsx)(c.Wasted, {
             error: g
@@ -763,7 +763,7 @@
                 className: "rockstargames-modules-core-newswire-articlef24111149ce32640ed3990c565f1f663"
               }) : "", (0, r.jsx)("div", {
                 className: "rockstargames-modules-core-newswire-articled816468db56e41fe199319fd7f20b8fd",
-                children: (0, r.jsx)(_.TinaParser, {
+                children: (0, r.jsx)(L.TinaParser, {
                   components: {
                     Deck: z.Deck
                   },
@@ -800,37 +800,37 @@
         q = e => {
           let {
             alt: a = "",
-            className: i = "",
-            src: s = {},
+            className: s = "",
+            src: i = {},
             image: t = null,
             video: n = null
           } = e;
           return (0, r.jsxs)("div", {
-            className: ((s?.videoPlayerId || s?.gifHash) && U.heroImage, i),
-            children: [s?.mobile && (0, r.jsx)(c.ResponsiveImg, {
-              src: s.mobile,
+            className: ((i?.videoPlayerId || i?.gifHash) && U.heroImage, s),
+            children: [i?.mobile && (0, r.jsx)(c.ResponsiveImg, {
+              src: i.mobile,
               ariaLabel: a,
-              className: [s?.desktop && U.hiddenLarge, U.responsiveImage].join(" "),
+              className: [i?.desktop && U.hiddenLarge, U.responsiveImage].join(" "),
               noRatioPlease: !0
-            }), s?.desktop && (0, r.jsx)(c.ResponsiveImg, {
-              src: s.desktop,
+            }), i?.desktop && (0, r.jsx)(c.ResponsiveImg, {
+              src: i.desktop,
               ariaLabel: a,
-              className: [s?.mobile && U.hiddenMobile, U.responsiveImage].join(" ")
-            }), s?.videoPlayerId && (0, r.jsx)("div", {
+              className: [i?.mobile && U.hiddenMobile, U.responsiveImage].join(" ")
+            }), i?.videoPlayerId && (0, r.jsx)("div", {
               className: [U.responsiveVideo, U.trailer].join(" "),
               children: (0, r.jsx)(F(), {
                 context: "site",
                 autoplay: !1,
-                id: s.videoPlayerId,
+                id: i.videoPlayerId,
                 hero: !0
               })
-            }), s?.gifHash && (0, r.jsx)("div", {
+            }), i?.gifHash && (0, r.jsx)("div", {
               className: U.responsiveVideo,
               children: (0, r.jsx)(P(), {
                 hash: [{
-                  desktop: s?.gifHash?.desktop
+                  desktop: i?.gifHash?.desktop
                 }, {
-                  mobile: s?.gifHash?.mobile
+                  mobile: i?.gifHash?.mobile
                 }]
               })
             }), t && (0, r.jsx)(c.ImageWithBadge, {
@@ -846,20 +846,20 @@
             })]
           })
         };
-      var Q = i(1188);
+      var Q = s(1188);
       const J = e => {
           let {
             children: a,
-            className: i = "",
+            className: s = "",
             style: t,
             game: n
           } = e;
-          return (0, s.useEffect)((() => {
+          return (0, i.useEffect)((() => {
             document.fonts.ready.then((() => {
               Q.balanceText()
             }))
           }), [a]), (0, r.jsx)("div", {
-            className: ["newswireFull", n, i].join(" "),
+            className: ["newswireFull", n, s].join(" "),
             style: t,
             "data-game": n,
             children: a
@@ -868,20 +868,20 @@
         K = e => {
           let {
             pct: a,
-            bgColor: i,
-            primaryColor: s
+            bgColor: s,
+            primaryColor: i
           } = e;
           return (0, r.jsx)("div", {
             style: {
               position: "relative",
               width: "100%",
               height: "20px",
-              backgroundColor: i
+              backgroundColor: s
             },
             children: (0, r.jsx)("div", {
               className: "rockstargames-modules-core-newswire-articlebd486f774b8499df78c2751a83ceb906",
               style: {
-                backgroundColor: s,
+                backgroundColor: i,
                 position: "absolute",
                 top: "0",
                 left: "0",
@@ -894,8 +894,8 @@
         X = e => {
           let {
             title: a,
-            desc: i,
-            img: s,
+            desc: s,
+            img: i,
             imgMobile: t,
             bgColor: n,
             descPositionBottom: l,
@@ -919,14 +919,14 @@
                   },
                   children: a
                 }), (0, r.jsx)("p", {
-                  children: i
+                  children: s
                 })]
               })
             }), (0, r.jsxs)(c.ResponsiveSection, {
               className: [l ?? "spacing"].join(" "),
               children: [(0, r.jsx)(c.ResponsiveImg, {
                 className: "hiddenMobile",
-                src: s
+                src: i
               }), (0, r.jsx)(c.ResponsiveImg, {
                 className: "hiddenLarge",
                 src: t
@@ -948,7 +948,7 @@
                   },
                   children: a
                 }), (0, r.jsx)("p", {
-                  children: i
+                  children: s
                 })]
               })
             }) : null]
@@ -1243,102 +1243,6 @@
                   kind: "Field",
                   name: {
                     kind: "Name",
-                    value: "tina_uploads"
-                  },
-                  arguments: [],
-                  directives: [],
-                  selectionSet: {
-                    kind: "SelectionSet",
-                    selections: [{
-                      kind: "Field",
-                      name: {
-                        kind: "Name",
-                        value: "id"
-                      },
-                      arguments: [],
-                      directives: []
-                    }, {
-                      kind: "Field",
-                      name: {
-                        kind: "Name",
-                        value: "type"
-                      },
-                      arguments: [],
-                      directives: []
-                    }, {
-                      kind: "Field",
-                      name: {
-                        kind: "Name",
-                        value: "directory"
-                      },
-                      arguments: [],
-                      directives: []
-                    }, {
-                      kind: "Field",
-                      alias: {
-                        kind: "Name",
-                        value: "filename"
-                      },
-                      name: {
-                        kind: "Name",
-                        value: "input_filename"
-                      },
-                      arguments: [],
-                      directives: []
-                    }, {
-                      kind: "Field",
-                      alias: {
-                        kind: "Name",
-                        value: "hashed_filename"
-                      },
-                      name: {
-                        kind: "Name",
-                        value: "filename"
-                      },
-                      arguments: [],
-                      directives: []
-                    }, {
-                      kind: "Field",
-                      alias: {
-                        kind: "Name",
-                        value: "previewSrc"
-                      },
-                      name: {
-                        kind: "Name",
-                        value: "preview_src"
-                      },
-                      arguments: [],
-                      directives: []
-                    }, {
-                      kind: "Field",
-                      name: {
-                        kind: "Name",
-                        value: "full_src"
-                      },
-                      arguments: [],
-                      directives: []
-                    }, {
-                      kind: "Field",
-                      name: {
-                        kind: "Name",
-                        value: "prod"
-                      },
-                      arguments: [],
-                      directives: []
-                    }, {
-                      kind: "Field",
-                      name: {
-                        kind: "Name",
-                        value: "created_by"
-                      },
-                      arguments: [],
-                      directives: []
-                    }]
-                  }
-                }, {
-                  kind: "Field",
-                  name: {
-                    kind: "Name",
                     value: "tina"
                   },
                   arguments: [],
@@ -1430,52 +1334,52 @@
         }],
         loc: {
           start: 0,
-          end: 1001
+          end: 742
         }
       };
 
-      function i(e, a) {
+      function s(e, a) {
         if ("FragmentSpread" === e.kind) a.add(e.name.value);
         else if ("VariableDefinition" === e.kind) {
-          var s = e.type;
-          "NamedType" === s.kind && a.add(s.name.value)
+          var i = e.type;
+          "NamedType" === i.kind && a.add(i.name.value)
         }
         e.selectionSet && e.selectionSet.selections.forEach((function(e) {
-          i(e, a)
+          s(e, a)
         })), e.variableDefinitions && e.variableDefinitions.forEach((function(e) {
-          i(e, a)
+          s(e, a)
         })), e.definitions && e.definitions.forEach((function(e) {
-          i(e, a)
+          s(e, a)
         }))
       }
       a.loc.source = {
-        body: "query TinaModulesInfo(\n    $ids: [String]!\n    $locale: String!\n    $sync: Boolean = false\n    $cache: Boolean = false\n) {\n    tinaModulesInfo(ids: $ids, locale: $locale, cache: $cache) {\n        id: id_hash\n        title\n        title_doc\n        type\n        sync_hash\n        to\n        visible\n        children {\n            title\n            id_hash\n            to\n            tina {\n                payload\n                variables {\n                    keys\n                }\n            }\n        }\n        tina_uploads {\n            id\n            type\n            directory\n            filename: input_filename\n            hashed_filename: filename\n            previewSrc: preview_src\n            full_src\n            prod\n            created_by\n        }\n        tina {\n            payload\n            variables {\n                keys\n                _translations @include(if: $sync) {\n                    locale\n                    keys\n                }\n            }\n        }\n    }\n}\n",
+        body: "query TinaModulesInfo(\n    $ids: [String]!\n    $locale: String!\n    $sync: Boolean = false\n    $cache: Boolean = false\n) {\n    tinaModulesInfo(ids: $ids, locale: $locale, cache: $cache) {\n        id: id_hash\n        title\n        title_doc\n        type\n        sync_hash\n        to\n        visible\n        children {\n            title\n            id_hash\n            to\n            tina {\n                payload\n                variables {\n                    keys\n                }\n            }\n        }\n        tina {\n            payload\n            variables {\n                keys\n                _translations @include(if: $sync) {\n                    locale\n                    keys\n                }\n            }\n        }\n    }\n}\n",
         name: "GraphQL request",
         locationOffset: {
           line: 1,
           column: 1
         }
       };
-      var s = {};
+      var i = {};
 
       function r(e, a) {
-        for (var i = 0; i < e.definitions.length; i++) {
-          var s = e.definitions[i];
-          if (s.name && s.name.value == a) return s
+        for (var s = 0; s < e.definitions.length; s++) {
+          var i = e.definitions[s];
+          if (i.name && i.name.value == a) return i
         }
       }
       a.definitions.forEach((function(e) {
         if (e.name) {
           var a = new Set;
-          i(e, a), s[e.name.value] = a
+          s(e, a), i[e.name.value] = a
         }
       })), e.exports = a, e.exports.TinaModulesInfo = function(e, a) {
-        var i = {
+        var s = {
           kind: e.kind,
           definitions: [r(e, a)]
         };
-        e.hasOwnProperty("loc") && (i.loc = e.loc);
-        var t = s[a] || new Set,
+        e.hasOwnProperty("loc") && (s.loc = e.loc);
+        var t = i[a] || new Set,
           n = new Set,
           l = new Set;
         for (t.forEach((function(e) {
@@ -1483,15 +1387,15 @@
           })); l.size > 0;) {
           var d = l;
           l = new Set, d.forEach((function(e) {
-            n.has(e) || (n.add(e), (s[e] || new Set).forEach((function(e) {
+            n.has(e) || (n.add(e), (i[e] || new Set).forEach((function(e) {
               l.add(e)
             })))
           }))
         }
         return n.forEach((function(a) {
-          var s = r(e, a);
-          s && i.definitions.push(s)
-        })), i
+          var i = r(e, a);
+          i && s.definitions.push(i)
+        })), s
       }(a, "TinaModulesInfo")
     },
     1630: e => {

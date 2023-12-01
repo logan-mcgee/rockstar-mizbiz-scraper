@@ -134,30 +134,29 @@
             return document.addEventListener("keydown", e, !1), () => document.removeEventListener("keydown", e, !1)
           }), []);
           const O = () => {
-            "function" == typeof m && (m(), C({
-              event: "modal_close",
-              event_action: "close",
-              event_category: "modal",
-              event_label: k ?? void 0,
-              ...y
-            }))
-          };
-          let Q = 0;
-          Q = f ? 0 : 1;
-          const U = (0, i.jsx)(o.E.button, {
-            className: "rockstargames-componentscdbb5ba9912cec6e57ad413e8649903a",
-            "aria-label": "Close",
-            initial: {
-              opacity: 0
+              "function" == typeof m && (m(), C({
+                event: "modal_close",
+                event_action: "close",
+                event_category: "modal",
+                event_label: k ?? void 0,
+                ...y
+              }))
             },
-            animate: {
-              opacity: 1
-            },
-            transition: B,
-            onClick: () => {
-              O()
-            }
-          });
+            Q = f ? 0 : 1,
+            U = (0, i.jsx)(o.E.button, {
+              className: "rockstargames-componentscdbb5ba9912cec6e57ad413e8649903a",
+              "aria-label": "Close",
+              initial: {
+                opacity: 0
+              },
+              animate: {
+                opacity: 1
+              },
+              transition: B,
+              onClick: () => {
+                O()
+              }
+            });
           return (0, n.useMemo)((() => (0, i.jsxs)("div", {
             className: "rockstargames-componentsd1eb1ee15b16b69427f2206ad52db2e0",
             "data-show-nav": S,

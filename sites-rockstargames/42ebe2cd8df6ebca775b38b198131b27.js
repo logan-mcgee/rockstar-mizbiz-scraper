@@ -76,7 +76,7 @@
         _ = i(1570),
         V = i(8038),
         T = i.n(V),
-        A = i(6670),
+        A = i(4501),
         E = i(398);
       const D = "rockstargames-sites-rockstargamesf75798e3984014f9cd35c5956e94fbb3",
         L = "rockstargames-sites-rockstargamesaa6bc8070e5e81ea0594636575db8fd6";
@@ -643,11 +643,11 @@
             })]
           }) : null
         }));
-      var oe = i(3111);
-      const ce = "rockstargames-sites-rockstargamesfb53bedab2c55d1a3c602f6d22cbf878";
-      var me = i(4187),
-        ue = i.n(me);
-      const ke = e => {
+      var oe = i(3111),
+        ce = i(4187),
+        me = i.n(ce);
+      const ue = "rockstargames-sites-rockstargamesfb53bedab2c55d1a3c602f6d22cbf878",
+        ke = e => {
           let {
             loading: a,
             searchResponse: i,
@@ -717,7 +717,7 @@
             {
               data: f = {},
               loading: b
-            } = (0, p.useQuery)(ue(), {
+            } = (0, p.useQuery)(me(), {
               variables: m,
               skip: !Object.entries(m).length || !m.q,
               autoSetLoading: !0
@@ -741,7 +741,7 @@
             void 0 !== f?.games?.paging?.count && (c((f?.games?.paging?.count ?? 0) + (f?.videos?.paging?.count ?? 0) + (f?.posts?.paging?.count ?? 0)), s(f?.meta?.title.replace("%s", n)))
           }), [f, k]), Object.entries(m).length ? m.q ? null === l || b ? null : (0, o.jsx)(o.Fragment, {
             children: f[k].results.length ? (0, o.jsxs)("div", {
-              className: ce,
+              className: ue,
               children: [(0, o.jsx)("section", {
                 className: "rockstargames-sites-rockstargamesb54a20d6c2a28171fc3b24fa6d2df86f",
                 children: (0, o.jsx)("h4", {
@@ -765,7 +765,7 @@
                 t: a
               })]
             }) : (0, o.jsx)("div", {
-              className: ce,
+              className: ue,
               children: (0, o.jsxs)("section", {
                 className: "rockstargames-sites-rockstargamesb408f6bebfeb1b3462c8dabcb36e0d9b",
                 children: [(0, o.jsx)("div", {
@@ -1606,8 +1606,9 @@
           gameSiteNavOpen: !1,
           normalLogo: !0,
           loading: !1,
-          headerHidden: !1,
-          standalone: (["/gifs", "/screenshot-viewer", "/videoplayer"].find((e => Je.includes(e))) ?? []).length > 0,
+          headerHidden: ([].find((e => Je.includes(e))) ?? []).length > 0,
+          customFooter: (["gta-online/license-plates"].find((e => Je.includes(e))) ?? []).length > 0,
+          standalone: (["/screenshot-viewer", "/videoplayer"].find((e => Je.includes(e))) ?? []).length > 0,
           error: {
             message: window?.errorFromServer?.message ?? null,
             code: window?.errorFromServer?.code ?? null
@@ -1656,7 +1657,8 @@
               setLoading: a,
               setTitle: i,
               state: {
-                standalone: n
+                headerHidden: n,
+                standalone: t
               }
             } = (0, h.useRockstarLocalState)();
           return (0, d.useEffect)((() => {
@@ -1667,7 +1669,7 @@
           }), [a, i]), (0, o.jsx)(h.ResizeProvider, {
             children: (0, o.jsx)(N.ScrollProvider, {
               children: (0, o.jsxs)(S.RockstarUserProvider, {
-                children: [!n && (0, o.jsx)(T(), {
+                children: [!t && !n && (0, o.jsx)(T(), {
                   baseName: e
                 }), (0, o.jsx)(c, {
                   history: na,

@@ -428,8 +428,8 @@
           } = (0, l.MB)(), {
             setCharactersNeeded: o
           } = (0, s.useRockstarUserState)();
-          return (0, i.useLayoutEffect)((() => (t("gtao"), a(!0), o("gtao"), () => {
-            a(!1), o(null)
+          return (0, i.useLayoutEffect)((() => (t("gtao"), o("gtao"), () => {
+            o(null)
           })), []), (0, c.jsxs)("div", {
             className: "rockstargames-sites-gta-gen9deaacbee4aef528355067efdd6b118c2",
             children: [(0, c.jsx)(N, {}), (0, c.jsx)(u, {}), (0, c.jsx)(U, {
