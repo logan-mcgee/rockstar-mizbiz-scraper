@@ -9,28 +9,28 @@
       o.r(n);
       var t = o(1787),
         r = o(6210),
-        a = o(441),
-        d = o(6420),
+        d = o(441),
+        a = o(6061),
         s = o(3705);
-      const {
-        graphEnv: c,
-        pingBearer: l
-      } = (0, r.E$)();
+      const c = window?.env?.graphEnv ?? "prod",
+        {
+          pingBearer: i
+        } = (0, r.E$)();
 
-      function u() {
+      function l() {
         const e = document.createElement("div");
         e.id = "global-nav-root", document.body.prepend(e);
-        const n = (0, a.s)(e),
-          o = (0, t.dd)(d.Z, {
+        const n = (0, d.s)(e),
+          o = (0, t.dd)(a.Z, {
             env: c,
             token: (0, t.QS)(null),
-            tokenPing: l,
+            tokenPing: i,
             tokenPingExpires: (0, t.QS)(null),
             typePolicies: {}
           });
         n.render((0, s.jsx)(o, {}))
       }
-      "loading" === document.readyState ? document.addEventListener("DOMContentLoaded", u) : u()
+      "loading" == document.readyState ? document.addEventListener("DOMContentLoaded", l) : l()
     }
   }
 ]);
