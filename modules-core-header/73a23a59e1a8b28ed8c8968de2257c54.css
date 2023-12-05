@@ -326,7 +326,8 @@
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
-  width: var(--hero-image-width)
+  width: var(--hero-image-width);
+  will-change: height, width, bottom
 }
 
 .rockstargames-modules-core-headera5da7a9bfdd60a0a82e0c82f4a3129fe .rockstargames-modules-core-headerd86c52bd1138a5ac64fbd953c221901f,
@@ -443,6 +444,7 @@
   position: absolute;
   top: 0;
   width: 100vw;
+  will-change: opacity;
   z-index: 2
 }
 
@@ -687,6 +689,7 @@
   padding: 0;
   position: absolute;
   top: 0;
+  will-change: opacity;
   z-index: 999999999999999
 }
 
