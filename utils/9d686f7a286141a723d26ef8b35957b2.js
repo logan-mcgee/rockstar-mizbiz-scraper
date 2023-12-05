@@ -825,7 +825,8 @@
       const a = "rockstar-games-web";
       let o;
       try {
-        o = JSON.parse(window.localStorage.getItem(a) ?? null)
+        const e = window.localStorage.getItem(a);
+        o = null !== e ? JSON.parse(e) : {}
       } catch (e) {
         o = {}
       }

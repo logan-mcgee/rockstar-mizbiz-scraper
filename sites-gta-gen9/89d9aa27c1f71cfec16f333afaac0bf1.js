@@ -250,11 +250,11 @@
             type: "spring",
             stiffness: 650,
             damping: 45
-          }, y = {
+          }, _ = {
             ease: "easeOut",
             duration: .9,
             delay: .3
-          }, _ = {
+          }, y = {
             open: {
               opacity: 0,
               transition: {
@@ -264,7 +264,7 @@
             },
             closed: {
               opacity: 1,
-              transition: y
+              transition: _
             }
           }, S = {
             open: {
@@ -272,7 +272,7 @@
               display: "grid",
               height: "auto",
               transition: {
-                opacity: y,
+                opacity: _,
                 height: N
               }
             },
@@ -336,7 +336,7 @@
                 children: [(0, f.jsxs)(n.E.div, {
                   className: m.contentGrid,
                   animate: p ? "open" : "closed",
-                  variants: _,
+                  variants: y,
                   children: [(0, f.jsxs)("div", {
                     className: m.titleArea,
                     children: [(0, f.jsx)("h2", {
@@ -364,7 +364,7 @@
                     __html: a
                   },
                   animate: p ? "open" : "closed",
-                  variants: _
+                  variants: y
                 }) : "", r ? (0, f.jsxs)(n.E.div, {
                   onClick: () => {
                     x(!p), h(k), p || h({
@@ -653,61 +653,84 @@
     4185: (e, a, t) => {
       "use strict";
       t.d(a, {
-        Z: () => l
+        Z: () => g
       });
       var s = t(927),
         n = t(5370),
         r = t.n(n),
         i = t(8976),
-        c = t(559);
-      var o = t(3705);
-      const d = e => {
+        c = t(559),
+        o = t(6711);
+      var d = t(3705);
+      const l = e => {
           let {
-            guide: a
-          } = e, t = {
+            guide: a,
+            parentTitle: t,
+            index: s
+          } = e;
+          const {
+            track: n
+          } = (0, o.useGtmTrack)();
+          let l = {
             hero: {}
           };
           r().cloneDeepWith(a, ((e, a) => {
-            "images" === a && (t = e)
+            "images" === a && (l = e)
           }));
           const {
-            src: s
-          } = (0, c.useImageParser)(t?.thumb ?? {});
-          return (0, o.jsx)("div", {
+            src: g
+          } = (0, c.useImageParser)(l?.thumb ?? {});
+          return (0, d.jsx)("div", {
             className: "rockstargames-sites-gta-gen9b40f08dc1045d471f902655ea561c15e",
-            children: (0, o.jsxs)(i.A, {
+            children: (0, d.jsxs)(i.A, {
               to: a.to,
-              children: [(0, o.jsx)("div", {
+              onClick: () => {
+                n({
+                  event: "card_click",
+                  event_category: "card",
+                  event_action: "click",
+                  event_label: t,
+                  card_id: a.id,
+                  card_name: a.title.toLowerCase(),
+                  link_url: a.to,
+                  position: s,
+                  element_placement: t
+                })
+              },
+              children: [(0, d.jsx)("div", {
                 style: {
                   "--aspect-ratio": 1,
-                  background: `url(${s?.mobile}) no-repeat center/cover`
+                  background: `url(${g?.mobile}) no-repeat center/cover`
                 }
-              }), (0, o.jsx)("h4", {
+              }), (0, d.jsx)("h4", {
                 children: a.title
               })]
             })
           })
         },
-        l = e => {
+        g = e => {
           let {
             guides: a = {},
             tinaModulesInfo: t,
             title: n
           } = e;
           const c = r().map(a, "guide_id"),
-            l = (0, i.useTinaModuleFetchByIds)({
+            o = (0, i.useTinaModuleFetchByIds)({
               ids: c
             }),
-            [g, m] = (0, s.useState)(null);
+            g = t?.[0]?.title ?? n,
+            [m, u] = (0, s.useState)(null);
           return (0, s.useEffect)((() => {
-            const e = l?.map(((e, a) => (0, o.jsx)(d, {
-              guide: e
-            }, a)));
-            m(e)
-          }), [l]), (0, o.jsx)(i.Gen9CoreCarousel, {
+            const e = o?.map(((e, a) => (0, d.jsx)(l, {
+              guide: e,
+              parentTitle: g,
+              index: a
+            }, e.id)));
+            u(e)
+          }), [o]), (0, d.jsx)(i.Gen9CoreCarousel, {
             size: "lg",
-            slideChildren: g,
-            title: t?.[0]?.title ?? n
+            slideChildren: m,
+            title: g
           })
         }
     },
@@ -993,7 +1016,7 @@
           inView: N
         } = (0, c.YD)({
           threshold: .6
-        }), [j, y] = (0, s.useState)(!1), _ = (0, r.useGetCdnSource)(u?.full_src ?? null) ?? null;
+        }), [j, _] = (0, s.useState)(!1), y = (0, r.useGetCdnSource)(u?.full_src ?? null) ?? null;
         return (0, s.useEffect)((() => {
           N && !j && (p({
             event: "page_section_impression",
@@ -1001,15 +1024,15 @@
             event_category: "page_section",
             event_label: `image text group - ${b}`.toLowerCase(),
             element_placement: `image text group - ${b}`.toLowerCase()
-          }), y(!0))
+          }), _(!0))
         }), [N]), (0, g.jsxs)("div", {
-          className: (0, r.classList)("rockstargames-sites-gta-gen9f6868d96e7b25bdb74435d0559970e75", f ? "rockstargames-sites-gta-gen9c9ca8e3e22865d04f816a0923489b124" : "", v ? "rockstargames-sites-gta-gen9f044d09bcae5bc48eef278aa1c8600a2" : "", _ ? "" : "rockstargames-sites-gta-gen9a6ec7a3705521eae985d53eb2769018c", k),
+          className: (0, r.classList)("rockstargames-sites-gta-gen9f6868d96e7b25bdb74435d0559970e75", f ? "rockstargames-sites-gta-gen9c9ca8e3e22865d04f816a0923489b124" : "", v ? "rockstargames-sites-gta-gen9f044d09bcae5bc48eef278aa1c8600a2" : "", y ? "" : "rockstargames-sites-gta-gen9a6ec7a3705521eae985d53eb2769018c", k),
           style: h,
           ref: x,
-          children: [_ ? (0, g.jsx)("div", {
+          children: [y ? (0, g.jsx)("div", {
             className: "rockstargames-sites-gta-gen9aa09f1e58f180b91c4f1795f60448086",
             style: {
-              background: `url(${_}) no-repeat center/cover`
+              background: `url(${y}) no-repeat center/cover`
             }
           }) : "", (0, g.jsxs)("div", {
             className: "rockstargames-sites-gta-gen9ed0a185c4fc5fc35cfe58c069276b698",
@@ -1244,8 +1267,8 @@
         x = t(3657),
         N = t(1189),
         j = t(5370),
-        y = t.n(j),
-        _ = t(215);
+        _ = t.n(j),
+        y = t(215);
       const S = {
           gen9Nav: "rockstargames-sites-gta-gen9ad5645cb6bdee2fec9d8b69059ff5ee1",
           activeLink: "rockstargames-sites-gta-gen9c605b91c52259c35a1db33336335fcab",
@@ -1266,7 +1289,7 @@
           } = e;
           const {
             track: o
-          } = (0, k.useGtmTrack)(), [d, l] = (0, b.useState)(!1), g = y().debounce((() => {
+          } = (0, k.useGtmTrack)(), [d, l] = (0, b.useState)(!1), g = _().debounce((() => {
             l(!1)
           }), 250), m = (0, b.useCallback)((() => {
             g?.cancel(), l(!0)
@@ -1317,7 +1340,7 @@
           let {
             t: a
           } = e;
-          const t = (0, _.YM)();
+          const t = (0, y.YM)();
           return (0, n.jsx)("nav", {
             className: S.gen9Nav,
             children: t.map((e => {
@@ -1376,7 +1399,7 @@
               mobileNavOpen: e
             },
             setMobileNavOpen: a
-          } = (0, _.MB)(), {
+          } = (0, y.MB)(), {
             navOpen: t,
             setNavOpen: s
           } = (0, k.useRockstarUserState)(), r = (0, w._)(), i = (0, w._)(), c = (0, w._)();
@@ -1431,7 +1454,7 @@
             setHeaderHeight: i,
             setHeaderHidden: c,
             setMobileNavOpen: o
-          } = (0, _.MB)(), {
+          } = (0, y.MB)(), {
             navOpen: d
           } = (0, k.useRockstarUserState)(), l = (0, b.useRef)(), {
             track: g
@@ -1440,12 +1463,12 @@
           } = (0, v.useLocation)(), {
             freezeUserShouldSeeMore: f,
             userShouldSeeMore: p
-          } = (0, x.useScroll)(), [j, y] = (0, b.useState)(0), S = () => j > 1023;
+          } = (0, x.useScroll)(), [j, _] = (0, b.useState)(0), S = () => j > 1023;
           return (0, b.useEffect)((() => {}), [f, r, p, d]), (0, b.useEffect)((() => {
             o(!1)
           }), [u]), (0, b.useEffect)((() => {
             const e = () => {
-              l.current && i(l.current.offsetHeight), y(window.innerWidth)
+              l.current && i(l.current.offsetHeight), _(window.innerWidth)
             };
             return window.addEventListener("resize", e), e(), () => {
               window.removeEventListener("resize", e)
@@ -1890,7 +1913,7 @@
     7311: (e, a, t) => {
       "use strict";
       t.r(a), t.d(a, {
-        componentsForTinaParser: () => _,
+        componentsForTinaParser: () => y,
         componentsForTinaParserGuide: () => S
       });
       var s = t(8976),
@@ -1913,8 +1936,8 @@
         x = t(4593),
         N = t(9273),
         j = t(1410),
-        y = t(7995);
-      const _ = {
+        _ = t(7995);
+      const y = {
           CalloutSection: s.CalloutSection,
           Card: n.Card,
           CardWithImageGallery: n.CardWithImageGallery,
@@ -1935,7 +1958,7 @@
           Carousel: s.Carousel,
           GroupOfItems: o(),
           Rating: s.Rating,
-          gen9: y,
+          gen9: _,
           TinaModuleFetchNRender: s.TinaModuleFetchNRender,
           PromoModule: s.PromoModule,
           Engagement: m()

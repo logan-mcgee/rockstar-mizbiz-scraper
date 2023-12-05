@@ -73,9 +73,9 @@
         }, t[0])
       };
       var F = i(3657),
-        _ = i(1570),
-        V = i(8038),
-        T = i.n(V),
+        V = i(1570),
+        _ = i(8038),
+        T = i.n(_),
         A = i(4501),
         E = i(398);
       const D = "rockstargames-sites-rockstargamesf75798e3984014f9cd35c5956e94fbb3",
@@ -943,7 +943,7 @@
           jsonType: "privacy",
           titleKey: "Privacy Policy"
         }),
-        _e = e => {
+        Ve = e => {
           let {
             t: a
           } = e;
@@ -953,10 +953,10 @@
             children: a("gdpr-settings-button-title")
           })
         },
-        Ve = () => (0, o.jsx)(Ne, {
+        _e = () => (0, o.jsx)(Ne, {
           jsonType: "cookies",
           titleKey: "Cookie Policy",
-          CookieSettingsModal: (0, h.withTranslations)(_e)
+          CookieSettingsModal: (0, h.withTranslations)(Ve)
         }),
         Te = () => (0, o.jsx)(Ne, {
           jsonType: "ccpa",
@@ -1412,6 +1412,7 @@
           "sites-gta-trilogy": (0, d.lazy)((() => i.e(829).then(i.t.bind(i, 3829, 23)))),
           "sites-red-dead-online": (0, d.lazy)((() => i.e(308).then(i.t.bind(i, 308, 23)))),
           "sites-red-dead-redemption-2": (0, d.lazy)((() => i.e(570).then(i.t.bind(i, 2570, 23)))),
+          "sites-gta": (0, d.lazy)((() => i.e(621).then(i.t.bind(i, 9621, 23)))),
           "sites-red-dead-redemption": (0, d.lazy)((() => i.e(295).then(i.t.bind(i, 5295, 23)))),
           "sites-rockstargames-downloads": (0, d.lazy)((() => i.e(70).then(i.t.bind(i, 1070, 23))))
         },
@@ -1447,7 +1448,7 @@
             element: (0, o.jsx)(Be, {})
           }, {
             path: "/cookies",
-            element: (0, o.jsx)(Ve, {})
+            element: (0, o.jsx)(_e, {})
           }, {
             path: "/corpinfo",
             element: (0, o.jsx)(xe, {})
@@ -1561,6 +1562,9 @@
             path: "/videos/:videoId",
             element: (0, o.jsx)(Q, {})
           }, {
+            path: "/VI",
+            element: Ke("sites-gta")
+          }, {
             path: "*",
             element: (0, o.jsx)(g.Wasted, {
               error: {
@@ -1608,7 +1612,7 @@
           loading: !1,
           headerHidden: ([].find((e => Je.includes(e))) ?? []).length > 0,
           customFooter: (["gta-online/license-plates"].find((e => Je.includes(e))) ?? []).length > 0,
-          standalone: (["/screenshot-viewer", "/videoplayer"].find((e => Je.includes(e))) ?? []).length > 0,
+          standalone: (["/screenshot-viewer", "/VI", "/videoplayer"].find((e => Je.includes(e))) ?? []).length > 0,
           error: {
             message: window?.errorFromServer?.message ?? null,
             code: window?.errorFromServer?.code ?? null
@@ -1635,7 +1639,7 @@
             }
           } = (0, h.useRockstarLocalState)(), [i] = (0, v.useModal)(), n = (0, h.useLocale)();
           return (0, o.jsx)(w, {
-            locales: _.intlMessages,
+            locales: V.intlMessages,
             lang: n,
             children: (0, o.jsx)(S.GtmProvider, {
               children: (0, o.jsxs)(g.ScrollTracker, {

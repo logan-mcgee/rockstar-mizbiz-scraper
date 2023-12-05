@@ -1,6 +1,6 @@
-/*! For license information please see 1731245311ed60e43ea582ac4fa53064.js.LICENSE.txt */
+/*! For license information please see 772217f2d0f90d57acb570da5b644b8c.js.LICENSE.txt */
 (self.webpackChunk_rockstargames_components = self.webpackChunk_rockstargames_components || []).push([
-  [270], {
+  [580], {
     3032: (e, l, a) => {
       "use strict";
       var t = a(927),
@@ -187,7 +187,7 @@
         }) : null
       }
     },
-    2270: (e, l, a) => {
+    7580: (e, l, a) => {
       "use strict";
       a.r(l), a.d(l, {
         BrandsField: () => o,
@@ -208,23 +208,23 @@
         MultiSourceImage: () => F,
         NewswireRelated: () => L,
         OrderedList: () => Y,
-        ParallaxInnerLayer: () => C,
+        ParallaxInnerLayer: () => w,
         ParallaxOuterLayer: () => A,
-        ParallaxWrapper: () => w,
+        ParallaxWrapper: () => C,
         PromoModule: () => R,
         Rating: () => _,
         ResponsiveFlexBox: () => M,
         ResponsiveFlexItem: () => E,
         ResponsiveImg: () => W,
         Separator: () => $,
-        TinaModuleFetchNRender: () => K,
+        TinaModuleFetchNRender: () => O,
         TinaWrapper: () => z,
         TrackList: () => X,
         UnorderedList: () => Z,
         UserVote: () => ee,
         brandField: () => i,
         tinaModuleParentSelectorPlugin: () => V,
-        tinaModuleSelectorPlugin: () => O
+        tinaModuleSelectorPlugin: () => K
       });
       var t = a(3616);
       const n = e => {
@@ -892,9 +892,93 @@
                 label: "Android Playstore",
                 value: "googleplay"
               }]
-            }), (0, t.AttributesFields)({
-              parent: l
-            }), (0, t.GtmField)()],
+            }), {
+              name: "icon",
+              label: "Icon",
+              component: "select",
+              description: "Adds an icon inside of the button.",
+              options: [{
+                label: "-- Select Icon --",
+                value: ""
+              }, {
+                label: "ps",
+                value: "ps"
+              }, {
+                label: "ps3",
+                value: "ps3"
+              }, {
+                label: "ps4",
+                value: "ps4"
+              }, {
+                label: "ps5",
+                value: "ps5"
+              }, {
+                label: "nintendo switch",
+                value: "nintendoSwitch"
+              }, {
+                label: "xbox",
+                value: "xbox"
+              }, {
+                label: "xbox one",
+                value: "xboxone"
+              }, {
+                label: "xbox series x|s",
+                value: "xboxseriesxs"
+              }, {
+                label: "xbox 360",
+                value: "xbox360"
+              }, {
+                label: "pc",
+                value: "pc"
+              }, {
+                label: "play button",
+                value: "play"
+              }, {
+                label: "apple store",
+                value: "applestore"
+              }, {
+                label: "googleplay",
+                value: "googleplay"
+              }, {
+                label: "question mark",
+                value: "questionMark"
+              }]
+            }, {
+              name: "iconPosition",
+              label: "Icon Position",
+              component: "select",
+              description: "If you selected an icon above, which side should it be aligned to?",
+              options: [{
+                label: "-- Select Icon Position --",
+                value: "none"
+              }, {
+                label: "left",
+                value: "left"
+              }, {
+                label: "right",
+                value: "right"
+              }]
+            }, (0, t.StyleField)({
+              name: "iconStyle",
+              label: "Icon Styles"
+            }), {
+              name: "style.width",
+              label: "Button Width",
+              component: "text"
+            }, {
+              name: "style.--btn-hover-bg-color",
+              label: "Hover BG Color",
+              component: "color"
+            }, {
+              name: "style.--btn-hover-border-color",
+              label: "Hover Border Color",
+              component: "color"
+            }, {
+              name: "style.--btn-hover-font-color",
+              label: "Hover Font Color",
+              description: "Please note this will NOT affect the icon (which is a static image).",
+              component: "color"
+            }, (0, t.GtmField)(), (0, t.StyleField)({})],
             defaultItem: () => (0, t.defaultItemUnique)({}),
             itemProps: e => (0, t.itemPropsWithKey)(e, {
               label: `${e?.content??"New"} [CTA]`
@@ -1393,7 +1477,7 @@
             itemProps: e => (0, t.itemPropsWithKey)(e)
           }
         },
-        C = () => ({
+        w = () => ({
           name: "parallaxInnerLayer",
           label: "Parallax Inner Layer",
           component: "group",
@@ -1444,7 +1528,7 @@
             label: `${e?.name??"New"} [Parallax Inner Layer]`
           })
         }),
-        w = e => {
+        C = e => {
           let {
             game: l = null,
             templates: a = null
@@ -1748,7 +1832,7 @@
       };
       var U = a(2968),
         G = a(3705);
-      const K = e => {
+      const O = e => {
           let {
             name: l,
             component: a,
@@ -1771,7 +1855,7 @@
             })
           }
         },
-        O = {
+        K = {
           __type: "field",
           name: "tina-module-selector",
           Component: e => {

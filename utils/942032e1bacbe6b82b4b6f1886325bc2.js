@@ -11,7 +11,8 @@
       const r = "rockstar-games-web";
       let l;
       try {
-        l = JSON.parse(window.localStorage.getItem(r) ?? null)
+        const e = window.localStorage.getItem(r);
+        l = null !== e ? JSON.parse(e) : {}
       } catch (e) {
         l = {}
       }

@@ -861,6 +861,7 @@
           pricingOptions: C,
           platformOptions: j,
           pricingContainerHeight: N,
+          isProductCard: L,
           children: (0, m.jsx)(d.Z, {
             expandedType: f,
             to: x,

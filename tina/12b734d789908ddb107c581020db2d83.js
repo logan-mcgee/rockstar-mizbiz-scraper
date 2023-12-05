@@ -1025,11 +1025,13 @@
         },
         re = e => {
           let {
-            filter: t = null
+            filter: t = null,
+            name: a = "style",
+            label: l = "CSS Variables"
           } = e;
           return {
-            label: "CSS Variables",
-            name: "style",
+            label: l,
+            name: a,
             description: "Override CSS Variables",
             component: "group",
             fields: [...oe({

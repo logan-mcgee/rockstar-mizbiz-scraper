@@ -164,91 +164,91 @@
         ConditionalBlock: () => P,
         CookieAB: () => J,
         CountryInputField: () => K,
-        Cta: () => se,
-        DescriptionArea: () => ue,
-        DiscountsBadge: () => xe,
-        DotLoader: () => _e,
-        Dropdown: () => je,
-        Embed: () => Ce,
-        ExpandingPlatformButton: () => Me,
-        FadeInContent: () => Ae,
+        Cta: () => ne,
+        DescriptionArea: () => be,
+        DiscountsBadge: () => ye,
+        DotLoader: () => Ne,
+        Dropdown: () => Se,
+        Embed: () => Ie,
+        ExpandingPlatformButton: () => Fe,
+        FadeInContent: () => Pe,
         GameCard: () => s,
-        GameSiteHeader: () => Ue,
+        GameSiteHeader: () => Re,
         Gen9Button: () => C,
-        Gen9CoreCarousel: () => Ye,
-        Grid: () => we,
-        HTMLElement: () => oa,
-        Hero: () => sa,
+        Gen9CoreCarousel: () => Qe,
+        Grid: () => Te,
+        HTMLElement: () => ia,
+        Hero: () => na,
         HookStore: () => F,
-        ImageWithBadge: () => Sa,
-        LanguageSelector: () => xa,
-        LayeredImage: () => Na,
-        LoadingAnimation: () => ds,
-        MultiSourceImage: () => de,
-        NewswireBlocks: () => Fa,
-        NewswireCard: () => La,
-        NewswireList: () => Ba,
-        NewswireRelated: () => Da,
-        NewswireTag: () => Ia,
-        OrderedList: () => Aa.Z,
-        Paging: () => Oa,
-        ParallaxCacheBuster: () => Ua,
-        ParallaxInnerLayer: () => qa,
-        ParallaxOuterLayer: () => Ya,
-        ParallaxWrapper: () => Wa,
-        PromoModule: () => Xa,
-        Rating: () => at,
-        ResponsiveFlexBox: () => st,
-        ResponsiveFlexItem: () => rt,
-        ResponsiveGridBox: () => it,
-        ResponsiveGridItem: () => dt,
-        ResponsiveImg: () => mt,
-        ResponsiveSection: () => gt,
-        RockstarLogo: () => ft,
-        ScrollToTop: () => ut,
-        ScrollTracker: () => bt,
-        SearchBox: () => kt,
-        Separator: () => pe,
-        Skeleton: () => ht,
-        SrcsetImage: () => Ta,
-        TextFit: () => ke,
-        ThumbsGallery: () => wt,
-        TinaModuleFetchNRender: () => It,
-        TinaWrapper: () => Et,
-        TrackList: () => _t,
-        UnorderedList: () => le.Z,
-        UserVote: () => $t,
+        ImageWithBadge: () => wa,
+        LanguageSelector: () => ya,
+        LayeredImage: () => ja,
+        LoadingAnimation: () => ls,
+        MultiSourceImage: () => le,
+        NewswireBlocks: () => Aa,
+        NewswireCard: () => Va,
+        NewswireList: () => za,
+        NewswireRelated: () => Ma,
+        NewswireTag: () => Ea,
+        OrderedList: () => Pa.Z,
+        Paging: () => Ha,
+        ParallaxCacheBuster: () => Ra,
+        ParallaxInnerLayer: () => Za,
+        ParallaxOuterLayer: () => Qa,
+        ParallaxWrapper: () => qa,
+        PromoModule: () => Ka,
+        Rating: () => tt,
+        ResponsiveFlexBox: () => nt,
+        ResponsiveFlexItem: () => ot,
+        ResponsiveGridBox: () => ct,
+        ResponsiveGridItem: () => lt,
+        ResponsiveImg: () => pt,
+        ResponsiveSection: () => ft,
+        RockstarLogo: () => ut,
+        ScrollToTop: () => bt,
+        ScrollTracker: () => kt,
+        SearchBox: () => vt,
+        Separator: () => ge,
+        Skeleton: () => xt,
+        SrcsetImage: () => Ca,
+        TextFit: () => ve,
+        ThumbsGallery: () => Tt,
+        TinaModuleFetchNRender: () => Et,
+        TinaWrapper: () => Lt,
+        TrackList: () => Nt,
+        UnorderedList: () => me.Z,
+        UserVote: () => Bt,
         VideoCard: () => n,
-        VideoCarousel: () => zt,
-        VideoList: () => Mt,
-        Wasted: () => Ft,
+        VideoCarousel: () => Dt,
+        VideoList: () => Ft,
+        Wasted: () => At,
         framer: () => o,
-        useTinaModuleFetchByIds: () => Ct,
-        withSearchbarErrorBoundary: () => Ht,
-        withSimpleErrorBoundary: () => qe
+        useTinaModuleFetchByIds: () => It,
+        withSearchbarErrorBoundary: () => Ut,
+        withSimpleErrorBoundary: () => Ze
       });
       var s = {};
       t.r(s), t.d(s, {
-        Art: () => Ge,
-        Link: () => Oe
+        Art: () => Oe,
+        Link: () => He
       });
       var n = {};
       t.r(n), t.d(n, {
-        Art: () => Pt,
-        Link: () => Gt
+        Art: () => Gt,
+        Link: () => Ot
       });
       var r = {};
       t.r(r), t.d(r, {
-        getVariant: () => ns,
-        transitions: () => ts,
-        variants: () => ss
+        getVariant: () => rs,
+        transitions: () => ss,
+        variants: () => ns
       });
       var o = {};
       t.r(o), t.d(o, {
         Animations: () => r,
-        LiteMotion: () => qt,
-        withFadeIn: () => Xt,
-        withFadeUp: () => as
+        LiteMotion: () => Zt,
+        withFadeIn: () => Kt,
+        withFadeUp: () => ts
       });
       var i = t(927),
         c = t(4175),
@@ -797,7 +797,7 @@
             item: a
           } = e;
           return (0, d.jsxs)("div", {
-            children: [(0, d.jsx)(Sa, {
+            children: [(0, d.jsx)(wa, {
               image: a?.image,
               badge: a?.badge ?? a?.image?.badge,
               badgeType: "badge3",
@@ -807,7 +807,7 @@
               ariaLabel: a?.image?.ariaLabel ?? a.description,
               style: a?.style,
               className: (0, j.classList)(V.img, a?.className)
-            }), (a?.title || a?.description) && (0, d.jsx)(ue, {
+            }), (a?.title || a?.description) && (0, d.jsx)(be, {
               item: a
             })]
           })
@@ -886,7 +886,7 @@
                 current: g,
                 total: a ? a.length : t.length
               })]
-            }), (c?.title || c?.description) && (0, d.jsx)(ue, {
+            }), (c?.title || c?.description) && (0, d.jsx)(be, {
               item: c
             })]
           })
@@ -1264,7 +1264,8 @@
           questionMark: "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/e6833fa9baf4a5382bdd84b0b7d2c03f.svg",
           default: ""
         },
-        ae = {
+        ae = e => ee[e] || null,
+        te = {
           cta: "rockstargames-componentsbe39fbdcbb3b9229e6fd8207fb9b716d",
           xbox: "rockstargames-componentsbb69ac0896f6db542346e36a15a4a2a6",
           xboxone: "rockstargames-componentsbcc2edfb2d346d958b617a06be9e7818",
@@ -1277,28 +1278,29 @@
           googleplay: "rockstargames-componentsd68e8a06e9d81fa7f3d53896780346c3",
           platformIcon: "rockstargames-componentsea0f1ce19bd982385507a977fec591c8",
           applestore: "rockstargames-componentsbb18e35f5295e93bd362e93419fddae4",
+          btnIcon: "rockstargames-componentsc1544cd82744081706f4f5def406d828",
           btnContent: "rockstargames-componentsa1fadf1cdd8ec7e3c0ad4315b8c7f66e",
           icon: "rockstargames-componentsdc22762e1eae3f953ea7dcb97173e041",
           "icon-left": "rockstargames-componentse976616192648af8434af7f580f488c4",
           "icon-right": "rockstargames-componentsbf2911524d31c435a07365163223e0b9",
           disabled: "rockstargames-componentsd30d809341f5b67393bd8788c9971249"
         },
-        te = e => {
+        se = e => {
           let {
             platform: a = ""
           } = e;
-          const t = a ? ee[a] || null : null,
+          const t = a ? ae(a) : null,
             s = t ? (0, d.jsx)("img", {
-              className: ae.platformIcon,
+              className: te.platformIcon,
               src: t,
               alt: "Platform Icon"
             }) : null;
           return (0, d.jsx)("span", {
-            className: [ae.btnContent, ae.platformButton].join(" "),
+            className: [te.btnContent, te.platformButton].join(" "),
             children: s
           })
         },
-        se = e => {
+        ne = e => {
           let {
             children: a,
             href: t,
@@ -1329,41 +1331,41 @@
               }), e === a ? window.location.href = t : window.open(t, "_blank")
             }
           }), [f, t, k]), y = () => o ? (0, d.jsx)("span", {
-            className: [ae.icon, `icon-${c}`].join(" "),
+            className: [te.icon, `icon-${c}`].join(" "),
             style: l,
             children: (0, d.jsx)("img", {
-              className: ae.btnIcon,
-              src: o,
-              alt: "Button Icon"
+              className: te.btnIcon,
+              src: ae(o),
+              alt: `${o} icon`
             })
           }) : null;
           return (0, d.jsx)("button", {
-            className: [ae.cta, "platform" === r && g ? ae[g] : "", u ? ae.disabled : ""].join(" "),
+            className: [te.cta, "platform" === r && g ? te[g] : "", u ? te.disabled : ""].join(" "),
             style: s,
             "data-variant": r,
             type: "button",
             onClick: x,
             disabled: u,
             "aria-label": h,
-            children: "platform" === r && g ? (0, d.jsx)(te, {
+            children: "platform" === r && g ? (0, d.jsx)(se, {
               platform: g
             }) : (0, d.jsxs)("div", {
-              className: ae.btnContent,
+              className: te.btnContent,
               children: ["left" === c && y(), (0, d.jsx)("span", {
                 children: v
               }), "right" === c && y(), m ? (0, d.jsx)("span", {
-                className: ae.badge,
+                className: te.badge,
                 style: p,
                 children: m
               }) : null]
             })
           })
         };
-      var ne = t(559);
-      const re = "rockstargames-componentsf6ed43b225fde028df4ad1be1f6cf9b2",
-        oe = "rockstargames-componentscadcad87be7ddfa9f93a8d7e56c70c27",
-        ie = "rockstargames-componentsb4a61261f9b92ee9f88bc262c25b8db5",
-        ce = e => {
+      var re = t(559);
+      const oe = "rockstargames-componentsf6ed43b225fde028df4ad1be1f6cf9b2",
+        ie = "rockstargames-componentscadcad87be7ddfa9f93a8d7e56c70c27",
+        ce = "rockstargames-componentsb4a61261f9b92ee9f88bc262c25b8db5",
+        de = e => {
           let {
             alt: a,
             className: s,
@@ -1372,7 +1374,7 @@
           } = e;
           const [o, i] = (0, D.usePreloadImg)(n);
           let c = n;
-          !1 === o && (s === ie && (c = t(8280)), c = t(8933));
+          !1 === o && (s === ce && (c = t(8280)), c = t(8933));
           const l = {
             "--aspect-ratio": i.width / i.height,
             ...r
@@ -1384,7 +1386,7 @@
             style: l
           })
         },
-        de = e => {
+        le = e => {
           let {
             className: a,
             style: s = {},
@@ -1393,32 +1395,32 @@
           } = e, {
             alt: o,
             src: i
-          } = (0, ne.useImageParser)(n);
+          } = (0, re.useImageParser)(n);
           return i.desktop || i.mobile || (o = "placeholder", i = {
             mobile: t(8280),
             desktop: t(8933)
           }), (0, d.jsx)("div", {
-            className: n.frame ? `${n.frame} ${re}` : re,
+            className: n.frame ? `${n.frame} ${oe}` : oe,
             style: s,
             children: i?.desktop && i?.mobile ? (0, d.jsxs)(d.Fragment, {
-              children: [(0, d.jsx)(ce, {
+              children: [(0, d.jsx)(de, {
                 style: {
                   ...r,
                   ...n?.style
                 },
                 src: i.desktop,
                 alt: o,
-                className: a ? `${a} ${oe}` : oe
-              }), (0, d.jsx)(ce, {
+                className: a ? `${a} ${ie}` : ie
+              }), (0, d.jsx)(de, {
                 style: {
                   ...r,
                   ...n?.style
                 },
                 src: i.mobile,
                 alt: o,
-                className: a ? `${a} ${ie}` : ie
+                className: a ? `${a} ${ce}` : ce
               })]
-            }) : (0, d.jsx)(ce, {
+            }) : (0, d.jsx)(de, {
               style: {
                 ...r,
                 ...n?.style
@@ -1429,13 +1431,13 @@
             })
           })
         };
-      var le = t(4457);
-      const me = {
+      var me = t(4457);
+      const pe = {
           hr: "rockstargames-componentsf8a3b2c8f2a22335f6e3376d656ca4fc",
           redLine: "rockstargames-componentsaf9bbd6f886f5a7006a7627cbb6e580a",
           gtao: "rockstargames-componentsba2d02287a5ca877fe016e8d0d2a6918"
         },
-        pe = e => {
+        ge = e => {
           let {
             style: a,
             className: t = "",
@@ -1443,11 +1445,11 @@
           } = e;
           return (0, d.jsx)("div", {
             style: a,
-            className: [me.hr, me[s], t].join(" ")
+            className: [pe.hr, pe[s], t].join(" ")
           })
         },
-        ge = "rockstargames-componentsf0975df7973ad18b515ce054411ab11d",
-        fe = e => {
+        fe = "rockstargames-componentsf0975df7973ad18b515ce054411ab11d",
+        ue = e => {
           let {
             to: a,
             children: t
@@ -1459,19 +1461,19 @@
             children: t
           }) : t
         },
-        ue = e => {
+        be = e => {
           let {
             item: a,
             className: t = ""
           } = e;
           return (0, d.jsxs)("div", {
             className: (0, j.classList)("rockstargames-componentsfd0d7e84a734f6a4d9774b75dd083634", t),
-            children: [a.title && (0, d.jsx)(fe, {
+            children: [a.title && (0, d.jsx)(ue, {
               to: a?.href ?? a?.to,
               children: (0, d.jsx)("h3", {
                 children: a.title
               })
-            }), Array.isArray(a?.description?.content) ? a.description.content?.map(((e, a) => e?.unorderedList ? (0, d.jsx)(le.Z, {
+            }), Array.isArray(a?.description?.content) ? a.description.content?.map(((e, a) => e?.unorderedList ? (0, d.jsx)(me.Z, {
               columns: e.unorderedList.columns ?? null,
               style: {
                 "--unordered-list-padding": "var(--grid-gap-static-sm)",
@@ -1479,7 +1481,7 @@
               },
               noImg: !0,
               list: e.unorderedList.list
-            }, a) : e?.image ? (0, d.jsx)(de, {
+            }, a) : e?.image ? (0, d.jsx)(le, {
               image: e.image,
               className: e?.className,
               ariaLabel: e.image?.ariaLabel
@@ -1487,30 +1489,30 @@
               style: {
                 margin: `${e.separator.spacing} 0`
               },
-              children: (0, d.jsx)(pe, {})
+              children: (0, d.jsx)(ge, {})
             }, a) : (0, d.jsx)("p", {
               children: (0, d.jsx)("span", {
-                className: ge,
+                className: fe,
                 dangerouslySetInnerHTML: {
                   __html: e
                 }
               })
             }, a))) : (0, d.jsx)("span", {
-              className: ge,
+              className: fe,
               dangerouslySetInnerHTML: {
                 __html: a.description
               }
             })]
           })
         };
-      var be = t(8507);
-      const ke = e => {
+      var ke = t(8507);
+      const ve = e => {
           let {
             children: a,
             ...t
           } = e;
           const [s, n] = (0, i.useState)(!1);
-          return (0, d.jsx)(be.iF, {
+          return (0, d.jsx)(ke.iF, {
             ...t,
             onReady: () => {
               document.fonts.ready.then((() => {
@@ -1520,13 +1522,13 @@
             children: a
           })
         },
-        ve = {
+        he = {
           badge: "rockstargames-componentsb255ec6ba1899d9b47851a077d480563",
           badgeSizeUpdate: "rockstargames-componentsf437aab1239e8cecc4e0626335d35778",
           badge2: "rockstargames-componentsffd14a47d0321c6013c06040fd382014",
           badge3: "rockstargames-componentsbc6eb2cd59bc5c25b101f4cc87538d37"
         },
-        he = e => {
+        xe = e => {
           let {
             wrapper: a,
             children: t,
@@ -1535,7 +1537,7 @@
           } = e;
           return n || s ? a(t) : t
         },
-        xe = e => {
+        ye = e => {
           let {
             badge: a,
             badgeType: s,
@@ -1545,28 +1547,28 @@
           const o = [];
           r ? a.split(r).map(((e, a) => o.push(e))) : o.push(a);
           let i = 100;
-          return 2 == o.length && o[1].length < 4 && "off" !== o[1].toLowerCase() && 45, (0, d.jsxs)(he, {
+          return 2 == o.length && o[1].length < 4 && "off" !== o[1].toLowerCase() && 45, (0, d.jsxs)(xe, {
             splitter: r,
             role: n,
             wrapper: e => (0, d.jsx)("div", {
-              className: `${ve.badge} ${s?ve[s]:""} `,
+              className: `${he.badge} ${s?he[s]:""} `,
               children: e
             }),
             children: [(0, d.jsx)(d.Fragment, {
-              children: n && (0, d.jsx)(de, {
+              children: n && (0, d.jsx)(le, {
                 image: {
                   alt: n,
                   desktop: t(9065)(`./${n}.png`)
                 }
               })
-            }), (0, d.jsx)(ke, {
-              className: `${r||n?"":ve.badge} ${s?ve[s]:""}`,
+            }), (0, d.jsx)(ve, {
+              className: `${r||n?"":he.badge} ${s?he[s]:""}`,
               min: 8,
               max: 1e3,
               mode: r || n ? "single" : "multi",
               children: o[0]
             }), (0, d.jsx)(d.Fragment, {
-              children: o.shift() && r && o.length >= 1 && (0, d.jsx)(ke, {
+              children: o.shift() && r && o.length >= 1 && (0, d.jsx)(ve, {
                 min: 8,
                 max: 1e3,
                 mode: "single",
@@ -1576,8 +1578,8 @@
             })]
           }, "badge-wrapper")
         },
-        ye = "rockstargames-componentse59ae95c65bdeb501f86807cb3bd0939",
-        _e = e => {
+        _e = "rockstargames-componentse59ae95c65bdeb501f86807cb3bd0939",
+        Ne = e => {
           let {
             color: a
           } = e;
@@ -1587,22 +1589,22 @@
               "--loader-color": a
             },
             children: [(0, d.jsx)("div", {
-              className: ye
+              className: _e
             }), (0, d.jsx)("div", {
-              className: ye
+              className: _e
             }), (0, d.jsx)("div", {
-              className: ye
+              className: _e
             })]
           })
         },
-        Ne = {
+        je = {
           dropdownWrapper: "rockstargames-componentsb775232124e9901acb9b5c823beba64f",
           items: "rockstargames-componentscaa34ae3ff26d0c50fe1c3bca2294d26",
           open: "rockstargames-componentsa7c9b4acbd2af6d4589f08854adfca3e",
           opener: "rockstargames-componentsca6664cb672281a5037835ba0251cd53",
           secondary: "rockstargames-componentscdbe59933dd2f6ffac6d1aefd76cfa71"
         },
-        je = e => {
+        Se = e => {
           let {
             children: a,
             className: t,
@@ -1610,20 +1612,20 @@
           } = e;
           const [n, r] = (0, i.useState)(!1);
           return (0, d.jsxs)("div", {
-            className: [Ne.dropdownWrapper, n ? Ne.open : "", void 0 !== t ? t : ""].join(" "),
+            className: [je.dropdownWrapper, n ? je.open : "", void 0 !== t ? t : ""].join(" "),
             children: [(0, d.jsx)("button", {
-              className: Ne.opener,
+              className: je.opener,
               onClick: () => r(!n),
               children: s
             }), (0, d.jsx)("div", {
-              className: Ne.items,
+              className: je.items,
               onClick: () => r(!1),
               children: a
             })]
           })
         };
-      var Se = t(2324);
-      const we = e => {
+      var we = t(2324);
+      const Te = e => {
           let {
             children: a,
             context: t = null,
@@ -1635,7 +1637,7 @@
             reversedOnMobile: c = !1,
             className: l = ""
           } = e;
-          const m = (0, ne.useImageParser)(n),
+          const m = (0, re.useImageParser)(n),
             p = {
               ...r
             };
@@ -1645,7 +1647,7 @@
             p.background = `url(${m?.src?.desktop}) ${e} ${a}`
           }
           return (0, d.jsx)("div", {
-            className: (0, Se.classList)("rockstargames-componentsc66ba86806f14d412203f27b13204c61", c ? "rockstargames-componentsda2f0f78b942fbdc0b92617629d4d499" : "", l),
+            className: (0, we.classList)("rockstargames-componentsc66ba86806f14d412203f27b13204c61", c ? "rockstargames-componentsda2f0f78b942fbdc0b92617629d4d499" : "", l),
             "data-game": "community" === o ? null : s,
             style: (0, D.safeStyles)(p),
             "data-context": t,
@@ -1654,7 +1656,7 @@
             children: a
           })
         },
-        Te = e => {
+        Ce = e => {
           let {
             caption: a,
             children: t,
@@ -1669,7 +1671,7 @@
             })]
           }) : t
         },
-        Ce = e => {
+        Ie = e => {
           let {
             componentTitle: a,
             type: t,
@@ -1678,13 +1680,13 @@
           return s?.length ? (0, d.jsx)("div", {
             className: "rockstargames-componentse1282836fd9646f998af6d71740d8973",
             type: t,
-            children: (0, d.jsxs)(we, {
+            children: (0, d.jsxs)(Te, {
               children: [a && (0, d.jsx)("h3", {
                 children: a
-              }), (0, d.jsx)(we, {
+              }), (0, d.jsx)(Te, {
                 className: "rockstargames-componentsb2a9e47e4cfa6fb773f4367d3fdfdffb",
                 children: s.map(((e, a) => {
-                  return e?.embed ? (0, d.jsx)(Te, {
+                  return e?.embed ? (0, d.jsx)(Ce, {
                     caption: e?.caption,
                     children: (0, d.jsx)("div", {
                       className: "rockstargames-componentscf81724e842e41b1c3e15a3ffbc64768",
@@ -1703,18 +1705,18 @@
             })
           }) : null
         };
-      var Ie = t(7638);
-      const Ee = {
+      var Ee = t(7638);
+      const Le = {
           type: "spring",
           stiffness: 650,
           damping: 45
         },
-        Le = {
+        Ve = {
           ease: "easeOut",
           duration: .9,
           delay: .3
         },
-        Ve = {
+        $e = {
           open: {
             opacity: 0,
             transition: {
@@ -1724,16 +1726,16 @@
           },
           closed: {
             opacity: 1,
-            transition: Le
+            transition: Ve
           }
         },
-        $e = {
+        Be = {
           open: {
             opacity: 1,
             display: "grid",
             height: "auto",
             transition: {
-              opacity: Le,
+              opacity: Ve,
               height: {
                 type: "spring",
                 stiffness: 425,
@@ -1749,14 +1751,14 @@
                 ease: "easeOut",
                 duration: .1
               },
-              height: Ee
+              height: Le
             },
             transitionEnd: {
               display: "none"
             }
           }
         },
-        Be = {
+        ze = {
           open: {
             "--cta-border-color": "var(--white-15)",
             "--cta-background-color": "rgba(255,255,255,.1)",
@@ -1775,7 +1777,7 @@
             "--cta-background-color-noBlur": "inherit",
             padding: "var(--padding-sm) var(--padding-md)",
             gridGap: 0,
-            transition: Ee,
+            transition: Le,
             transitionEnd: {
               "--btn-hover-bg-color": "inherit",
               "--btn-hover-bg-color-noBlur": "inherit",
@@ -1784,7 +1786,7 @@
             }
           }
         },
-        ze = {
+        De = {
           container: "rockstargames-componentsde8401a35718d73ff854bccd1d8919c6",
           content: "rockstargames-componentsd9351ab21d3e266809de4b39a2e6b999",
           unexpandedButton: "rockstargames-componentsb6023ac0e62267cdc9ce43067c47a2fa",
@@ -1801,7 +1803,7 @@
           switch: "rockstargames-componentsc07ece91333a7bf5b4c417fbd3f8ac9e",
           buttonText: "rockstargames-componentsba10eba33247b3750338627fc88fb9d3"
         },
-        De = e => {
+        Me = e => {
           let {
             buttonText: a = "",
             link: s = "",
@@ -1810,14 +1812,14 @@
             onClick: o
           } = e;
           const i = r ?? (s.startsWith(document.location.origin) ? "_self" : "_blank"),
-            l = [ze.platformButton, ze[n]].join(" "),
+            l = [De.platformButton, De[n]].join(" "),
             m = n ? t(3631)(`./${n}.svg`) : null,
             p = (0, d.jsxs)(d.Fragment, {
               children: [m ? (0, d.jsx)("img", {
                 src: m,
                 alt: a
               }) : "", (0, d.jsx)("div", {
-                className: ze.buttonText,
+                className: De.buttonText,
                 children: a
               })]
             });
@@ -1839,7 +1841,7 @@
             children: p
           })
         },
-        Me = e => {
+        Fe = e => {
           let {
             buttonText: a = "Subscribe",
             children: s,
@@ -1852,13 +1854,13 @@
             track: p
           } = (0, M.useGtmTrack)();
           return (0, d.jsxs)("div", {
-            className: ze.container,
-            children: [(0, d.jsx)(Ie.E.div, {
-              className: ze.content,
+            className: De.container,
+            children: [(0, d.jsx)(Ee.E.div, {
+              className: De.content,
               animate: l ? "open" : "close",
-              variants: Ve,
+              variants: $e,
               children: s
-            }), (0, d.jsxs)(Ie.E.div, {
+            }), (0, d.jsxs)(Ee.E.div, {
               onClick: () => {
                 m(!l), l || p("select_platform" === r ? {
                   event_action: "select_platform",
@@ -1879,20 +1881,20 @@
                   text: a?.toLowerCase() ?? "subscribe"
                 })
               },
-              className: ze.unexpandedButton,
+              className: De.unexpandedButton,
               animate: l ? "open" : "closed",
-              variants: Be,
+              variants: ze,
               initial: !1,
-              children: [(0, d.jsx)(Ie.E.div, {
-                className: ze.buttonText,
+              children: [(0, d.jsx)(Ee.E.div, {
+                className: De.buttonText,
                 children: "string" == typeof a ? a : "Subscribe"
-              }), (0, d.jsxs)(Ie.E.div, {
-                className: ze.expandedArea,
+              }), (0, d.jsxs)(Ee.E.div, {
+                className: De.expandedArea,
                 animate: l ? "open" : "closed",
-                variants: $e,
+                variants: Be,
                 initial: !1,
                 children: [(0, d.jsx)("img", {
-                  className: ze.closeButton,
+                  className: De.closeButton,
                   onClick: () => m(!1),
                   onKeyDown: e => {
                     m(!1)
@@ -1901,8 +1903,8 @@
                   alt: "Close",
                   role: "button"
                 }), (0, d.jsx)("div", {
-                  className: ze.platformButtons,
-                  children: n.length ? n.map((e => (0, d.jsx)(De, {
+                  className: De.platformButtons,
+                  children: n.length ? n.map((e => (0, d.jsx)(Me, {
                     buttonText: e.buttonText ?? "",
                     link: e.href,
                     platform: e.platform,
@@ -1927,7 +1929,7 @@
             })]
           })
         },
-        Fe = {
+        Ae = {
           animateBox: "rockstargames-componentsbdeffede001e78dee0b5045fcf215759",
           fadeArea: "rockstargames-componentse60c0d0b8a412ef87a25bcff0601d934",
           visible: "rockstargames-componentsf1026e3be9b17c93264a95314e011e26",
@@ -1935,7 +1937,7 @@
           bar: "rockstargames-componentse68b81a34b39281b39ac976917124293",
           animateMe: "rockstargames-componentsb5f3875daeee53716994ff4a15d4513e"
         },
-        Ae = e => {
+        Pe = e => {
           let {
             children: a,
             style: t
@@ -1944,21 +1946,21 @@
           return (0, i.useEffect)((() => {
             new IntersectionObserver((e => {
               e.forEach((e => {
-                e.isIntersecting && e.target.classList.add([Fe.visible])
+                e.isIntersecting && e.target.classList.add([Ae.visible])
               }))
             })).observe(s?.current)
           }), []), (0, d.jsx)("div", {
             style: t,
-            className: [Fe.fadeArea].join(" "),
+            className: [Ae.fadeArea].join(" "),
             ref: s,
             children: a
           })
         },
-        Pe = {
+        Ge = {
           img: "rockstargames-componentsd28fb79514f182557a4adcdc0ae3cd4d",
           startAnimation: "rockstargames-componentsce6df99c485041bc3a86c61896052b72"
         },
-        Ge = e => {
+        Oe = e => {
           let {
             imgSrc: a,
             titleSlug: t
@@ -1967,13 +1969,13 @@
           return (0, d.jsx)("div", {
             role: "img",
             "aria-label": t,
-            className: [Pe.img, s ? Pe.startAnimation : ""].join(" "),
+            className: [Ge.img, s ? Ge.startAnimation : ""].join(" "),
             style: {
               backgroundImage: `url(${a})`
             }
           })
         },
-        Oe = e => {
+        He = e => {
           let {
             game: a,
             to: t
@@ -1995,13 +1997,13 @@
             to: i,
             target: "_self",
             className: "rockstargames-componentsead163175b3ecbafda6260fc8bfd88b2",
-            children: (0, d.jsx)(Ge, {
+            children: (0, d.jsx)(Oe, {
               imgSrc: s,
               titleSlug: r
             })
           })
         },
-        He = {
+        Ue = {
           gameSiteHeader: "rockstargames-componentsf27c38ae3aaaa656366568be7a7680ff",
           activeNavItem: "rockstargames-componentsf3ad0db7601d2e52de4a89b2a46fb74f",
           navHidden: "rockstargames-componentsce1c0d4ba324740f8cb3d7794e67b9cf",
@@ -2010,7 +2012,7 @@
           headerLogo: "rockstargames-componentsf7a6ef451ea21d9af97db1d190b2e955",
           bg: "rockstargames-componentsdbcbd0c4304ae2e3ee6126812fb4ee94"
         },
-        Ue = e => {
+        Re = e => {
           let {
             buttonText: a = null,
             gameOverrideStyles: t,
@@ -2032,9 +2034,9 @@
             return document.addEventListener("click", e), () => document.removeEventListener("click", e)
           }), []), (0, d.jsxs)("header", {
             "data-game": r,
-            className: [He.gameSiteHeader, o ? He.headerNavOpen : "", m ? He.navHidden : "", t.gameSiteHeader, o ? t.headerNavOpen : ""].join(" "),
+            className: [Ue.gameSiteHeader, o ? Ue.headerNavOpen : "", m ? Ue.navHidden : "", t.gameSiteHeader, o ? t.headerNavOpen : ""].join(" "),
             children: [(0, d.jsx)("button", {
-              className: [He.headerLogo, t.headerLogo].join(" "),
+              className: [Ue.headerLogo, t.headerLogo].join(" "),
               onClick: e => {
                 c(!o), e.nativeEvent.stopImmediatePropagation()
               },
@@ -2044,17 +2046,17 @@
                 __html: a
               }
             }), (0, d.jsx)("div", {
-              className: He.bg
+              className: Ue.bg
             }), (0, d.jsx)("nav", {
               children: (0, d.jsx)("div", {
-                className: He.navContent,
+                className: Ue.navContent,
                 children: s
               })
             }), n]
           })
         };
-      var Re = t(3824);
-      class We extends i.Component {
+      var We = t(3824);
+      class qe extends i.Component {
         constructor(e) {
           super(e), this.state = {
             header: e.header ?? null
@@ -2078,10 +2080,10 @@
           }) : this.props.children
         }
       }
-      const qe = function(e) {
+      const Ze = function(e) {
           let a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
           return function(t) {
-            return (0, d.jsx)(We, {
+            return (0, d.jsx)(qe, {
               header: a,
               children: (0, d.jsx)(e, {
                 ...t
@@ -2089,7 +2091,7 @@
             })
           }
         },
-        Ze = e => {
+        Ye = e => {
           let {
             prevRef: a,
             nextRef: t,
@@ -2117,7 +2119,7 @@
             })]
           })
         },
-        Ye = qe((e => {
+        Qe = Ze((e => {
           let {
             description: a,
             slideChildren: t,
@@ -2235,7 +2237,7 @@
                       className: "rockstargames-componentsf6d4ec0614d41da309ced4301a2ae14d",
                       children: f
                     })]
-                  }), (0, d.jsx)(Ze, {
+                  }), (0, d.jsx)(Ye, {
                     prevRef: k,
                     nextRef: v,
                     onNextClicked: () => {},
@@ -2255,7 +2257,7 @@
               },
               grabCursor: !0,
               navigation: C,
-              modules: [Re.W_],
+              modules: [We.W_],
               breakpoints: P,
               slideClass: (0, j.classList)("swiper-slide", c),
               onSlideNextTransitionEnd: () => {
@@ -2286,7 +2288,7 @@
             }) : ""]
           })
         }), null),
-        Qe = {
+        Xe = {
           hero: "rockstargames-componentsf0de7eca94401887aca97de7659dd11a",
           images: "rockstargames-componentsca3c4bde4a85699dfc8aad6311a416c5",
           background: "rockstargames-componentsac386d519e499a5bccd351707172b4f1",
@@ -2298,7 +2300,7 @@
           legalText: "rockstargames-componentsf54370cd355f9a305f9a6181c957fb1d",
           shardsCarousel: "rockstargames-componentsd741a7d47b43c68d8555f4c0119a57bf"
         },
-        Xe = {
+        Ke = {
           visible: {
             opacity: 1,
             transition: {
@@ -2313,7 +2315,7 @@
             opacity: 0
           }
         },
-        Ke = {
+        Je = {
           visible: {
             opacity: 1,
             y: 0,
@@ -2331,7 +2333,7 @@
             overflow: "hidden"
           }
         },
-        Je = e => {
+        ea = e => {
           let {
             title: a = "",
             mobileImg: t,
@@ -2340,7 +2342,7 @@
           const n = (0, j.useGetCdnSource)(t ?? null),
             r = (0, j.useGetCdnSource)(s ?? n);
           return (0, d.jsx)("div", {
-            className: Qe.shard,
+            className: Xe.shard,
             style: {
               "--background-image-mobile": `url(${n})`,
               "--background-image-desktop": `url(${r})`
@@ -2350,7 +2352,7 @@
             })
           })
         },
-        ea = e => {
+        aa = e => {
           let {
             title: a = "Membership Rewards",
             shards: t
@@ -2366,15 +2368,15 @@
                 mobile: n,
                 desktop: r
               } = s;
-              return e.push((0, d.jsx)(Je, {
+              return e.push((0, d.jsx)(ea, {
                 title: t,
                 mobileImg: n?.full_src,
                 desktopImg: r?.full_src
               })), e
             }), []))
           }), [t]), s ? (0, d.jsx)("div", {
-            className: Qe.shardsCarousel,
-            children: (0, d.jsx)(Ye, {
+            className: Xe.shardsCarousel,
+            children: (0, d.jsx)(Qe, {
               title: a,
               slideChildren: s,
               size: "lg",
@@ -2382,7 +2384,7 @@
             })
           }) : null
         },
-        aa = e => {
+        ta = e => {
           let {
             animated: a = !1,
             ctas: t = [],
@@ -2401,14 +2403,14 @@
               title: a.buttonText,
               to: a.href
             }), e)), []))
-          }), t), t.length ? o.length ? (0, d.jsx)(Ie.E.div, {
-            variants: a ? Ke : void 0,
-            children: (0, d.jsxs)(Me, {
+          }), t), t.length ? o.length ? (0, d.jsx)(Ee.E.div, {
+            variants: a ? Je : void 0,
+            children: (0, d.jsxs)(Fe, {
               buttonText: n,
               platformsAndLinks: o,
-              children: [(0, d.jsxs)(Ie.E.div, {
-                className: Qe.descriptions,
-                variants: a ? Ke : void 0,
+              children: [(0, d.jsxs)(Ee.E.div, {
+                className: Xe.descriptions,
+                variants: a ? Je : void 0,
                 children: [(0, d.jsx)("h2", {
                   dangerouslySetInnerHTML: {
                     __html: r
@@ -2418,18 +2420,18 @@
                     __html: s
                   }
                 })]
-              }), !!l && !!l.length && (0, d.jsx)(Ie.E.div, {
-                variants: Ke,
+              }), !!l && !!l.length && (0, d.jsx)(Ee.E.div, {
+                variants: Je,
                 children: (0, d.jsx)(I, {
                   buttons: l,
-                  className: Qe.buttonGroup
+                  className: Xe.buttonGroup
                 })
               })]
             })
           }) : (0, d.jsxs)(d.Fragment, {
-            children: [(0, d.jsxs)(Ie.E.div, {
-              className: Qe.descriptions,
-              variants: a ? Ke : void 0,
+            children: [(0, d.jsxs)(Ee.E.div, {
+              className: Xe.descriptions,
+              variants: a ? Je : void 0,
               children: [(0, d.jsx)("h2", {
                 dangerouslySetInnerHTML: {
                   __html: r
@@ -2439,16 +2441,16 @@
                   __html: s
                 }
               })]
-            }), !!l && !!l.length && (0, d.jsx)(Ie.E.div, {
-              variants: Ke,
+            }), !!l && !!l.length && (0, d.jsx)(Ee.E.div, {
+              variants: Je,
               children: (0, d.jsx)(I, {
                 buttons: l,
-                className: Qe.buttonGroup
+                className: Xe.buttonGroup
               })
             })]
-          }) : (0, d.jsxs)(Ie.E.div, {
-            className: Qe.descriptions,
-            variants: a ? Ke : void 0,
+          }) : (0, d.jsxs)(Ee.E.div, {
+            className: Xe.descriptions,
+            variants: a ? Je : void 0,
             children: [(0, d.jsx)("h2", {
               dangerouslySetInnerHTML: {
                 __html: r
@@ -2460,7 +2462,7 @@
             })]
           })
         },
-        ta = e => {
+        sa = e => {
           let {
             animated: a = !1,
             brands: t = [],
@@ -2470,25 +2472,25 @@
             title: o = "",
             legalText: i
           } = e;
-          return (0, d.jsxs)(Ie.E.div, {
-            className: Qe.content,
+          return (0, d.jsxs)(Ee.E.div, {
+            className: Xe.content,
             initial: "hidden",
             animate: "visible",
-            variants: a ? Xe : void 0,
-            children: [(0, d.jsx)(Ie.E.div, {
-              variants: a ? Ke : void 0,
+            variants: a ? Ke : void 0,
+            children: [(0, d.jsx)(Ee.E.div, {
+              variants: a ? Je : void 0,
               children: (0, d.jsx)(y, {
                 brands: t
               })
-            }), (0, d.jsx)(aa, {
+            }), (0, d.jsx)(ta, {
               animated: a,
               ctas: s,
               description: n,
               expandingButtonLabel: r,
               title: o
-            }), i && (0, d.jsx)(Ie.E.div, {
-              className: Qe.legalText,
-              variants: a ? Ke : void 0,
+            }), i && (0, d.jsx)(Ee.E.div, {
+              className: Xe.legalText,
+              variants: a ? Je : void 0,
               children: (0, d.jsx)("p", {
                 dangerouslySetInnerHTML: {
                   __html: i
@@ -2497,7 +2499,7 @@
             })]
           })
         },
-        sa = e => {
+        na = e => {
           let {
             animated: a = !1,
             backgroundImage: t,
@@ -2544,8 +2546,8 @@
             k = (0, j.useGetCdnSource)(t?.desktop?.full_src ?? b),
             v = (0, j.useGetCdnSource)(c?.mobile?.full_src ?? null),
             h = (0, j.useGetCdnSource)(c?.desktop?.full_src ?? v);
-          return (0, d.jsxs)(Ie.E.div, {
-            className: (0, j.classList)(Qe.hero, n),
+          return (0, d.jsxs)(Ee.E.div, {
+            className: (0, j.classList)(Xe.hero, n),
             style: {
               "--background-image-desktop": `url(${k})`,
               "--background-image-mobile": `url(${b})`,
@@ -2554,21 +2556,21 @@
             },
             initial: "hidden",
             animate: "visible",
-            variants: a ? Xe : void 0,
+            variants: a ? Ke : void 0,
             "data-type": "hero",
             theme: g,
             children: [(0, d.jsxs)("div", {
-              className: Qe.images,
+              className: Xe.images,
               children: [k && b ? (0, d.jsx)("div", {
-                className: Qe.background,
+                className: Xe.background,
                 style: t?.style ?? {}
               }) : "", v && h ? (0, d.jsx)("div", {
-                className: Qe.layered,
+                className: Xe.layered,
                 style: l ? u : {}
               }) : "", (0, d.jsx)("div", {
-                className: Qe.gradient
+                className: Xe.gradient
               })]
-            }), (0, d.jsx)(ta, {
+            }), (0, d.jsx)(sa, {
               animated: a,
               ctas: r,
               description: o,
@@ -2576,14 +2578,14 @@
               title: f,
               brands: s,
               legalText: m
-            }), p?.shards && (0, d.jsx)(ea, {
+            }), p?.shards && (0, d.jsx)(aa, {
               ...p
             })]
           })
         };
-      var na = t(5370),
-        ra = t.n(na);
-      const oa = e => {
+      var ra = t(5370),
+        oa = t.n(ra);
+      const ia = e => {
         let {
           children: a,
           attributes: t = {},
@@ -2594,14 +2596,14 @@
           className: (0, j.classList)(s, t?.className, "rockstargames-componentsf938ddf11a5375276f8e733f5f4e5953"),
           style: (0, D.safeStyles)(n ?? t?.style ?? {}),
           dangerouslySetInnerHTML: {
-            __html: ra().unescape(a)
+            __html: oa().unescape(a)
           }
         })
       };
-      var ia = t(9089),
-        ca = t(2204);
+      var ca = t(9089),
+        da = t(2204);
       t(3657);
-      const da = [{
+      const la = [{
           label: "Deutsch",
           subdomain: "de",
           subdomaincom: "de",
@@ -2680,9 +2682,9 @@
           support: "zh",
           iso: "zh-CN"
         }],
-        la = da,
-        ma = da[1],
-        pa = [{
+        ma = la,
+        pa = la[1],
+        ga = [{
           id: "prod",
           sites: {
             www: "www",
@@ -2692,11 +2694,11 @@
           },
           cookieIdentifier: "prod"
         }],
-        ga = () => {
+        fa = () => {
           let e;
           const {
             location: a
-          } = window, t = a.hostname.substring(0, a.hostname.indexOf(".rockstargames.com")), s = pa.findIndex((a => Object.entries(a.sites).findIndex((a => {
+          } = window, t = a.hostname.substring(0, a.hostname.indexOf(".rockstargames.com")), s = ga.findIndex((a => Object.entries(a.sites).findIndex((a => {
             let [s, n] = a;
             return n === t && (e = {
               site: s,
@@ -2704,43 +2706,43 @@
             }, !0)
           })) >= 0));
           return {
-            ...pa[s >= 0 ? s : 0],
+            ...ga[s >= 0 ? s : 0],
             currentSite: e
           }
         },
-        fa = (e, a) => {
-          e && a ? document.cookie = `${e}=${a}; domain=${ua()}; path=/;` : console.log(`Couldn't set cookie (${e}) to value (${a})`)
+        ua = (e, a) => {
+          e && a ? document.cookie = `${e}=${a}; domain=${ba()}; path=/;` : console.log(`Couldn't set cookie (${e}) to value (${a})`)
         },
-        ua = () => {
+        ba = () => {
           const e = window.location.hostname.split(".");
           return e.slice(e.length - 2).join(".")
         },
-        ba = () => {
+        ka = () => {
           const {
             location: e
-          } = window, a = ga(), t = (e => {
-            const a = la.map((e => e.subdomaincom)),
+          } = window, a = fa(), t = (e => {
+            const a = ma.map((e => e.subdomaincom)),
               t = e.pathname.substring(1).split("/"),
               s = "detect-locals" === t[0] ? 1 : 0;
             return -1 !== a.indexOf(t[s]) ? t[s] : null
           })(e), s = (e => {
             const a = e.search.substring(1).split("&").find((e => e.startsWith("lang")));
             return a?.split("=")[1]
-          })(e), n = ma, [r, o] = function(e, a) {
+          })(e), n = pa, [r, o] = function(e, a) {
             let t = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
             const s = document.cookie.split("; "),
               n = `${e}=`,
               r = s.find((e => e.startsWith(n))),
               o = r?.substring(n.length, r.length);
-            return o && !t || fa(e, a), [o, (i = e, e => {
-              fa(i, e)
+            return o && !t || ua(e, a), [o, (i = e, e => {
+              ua(i, e)
             })];
             var i
           }(`rockstarweb_lang.${a.cookieIdentifier}`, t ?? void 0);
           let i = n;
-          return i = "www" === a.currentSite?.site ? la.find((e => e.subdomaincom === s)) || la.find((e => e.subdomaincom === t)) || n : la.find((e => e.iso === r)) || n, [i, o]
+          return i = "www" === a.currentSite?.site ? ma.find((e => e.subdomaincom === s)) || ma.find((e => e.subdomaincom === t)) || n : ma.find((e => e.iso === r)) || n, [i, o]
         },
-        ka = {
+        va = {
           scMenuStyles: "rockstargames-componentsd926e6b28cbf4824e5866f8622a7260e",
           languageSelector: "rockstargames-componentse14a60fb74372ed5ce3dab2037b0b53a",
           open: "rockstargames-componentsa5aa43385996d6dee58075ebac8ef59a",
@@ -2750,9 +2752,9 @@
           selectBox: "rockstargames-componentsdaa6ec79d09781fc643d4325314c542f",
           selectBoxOption: "rockstargames-componentsf5f53de5f32822c4b48314addb0839f4"
         },
-        va = "Select a Language";
-      let ha;
-      ha = e => {
+        ha = "Select a Language";
+      let xa;
+      xa = e => {
         let {
           theme: a,
           languageSelectorOpened: t,
@@ -2760,14 +2762,14 @@
           defaultMessage: n
         } = e;
         const r = (0, c.useLocation)(),
-          o = (0, ca.Z)(),
-          [m, p] = ba(),
+          o = (0, da.Z)(),
+          [m, p] = ka(),
           [g, f] = (0, i.useState)(!1),
-          u = (0, i.useMemo)((() => ga()), []),
+          u = (0, i.useMemo)((() => fa()), []),
           b = (0, i.useCallback)((e => {
             let a = r.pathname;
             const t = a.split("/");
-            return la.map((e => e.subdomaincom)).includes(t[0]) && (a = t.slice(1).join("/")), "www" === u.currentSite?.site ? "en" === e ? `${window.location.origin}${a}${r.search}` : `${window.location.origin}/${e}${a}${r.search}` : `${window.location.origin}${a}${r.search}`
+            return ma.map((e => e.subdomaincom)).includes(t[0]) && (a = t.slice(1).join("/")), "www" === u.currentSite?.site ? "en" === e ? `${window.location.origin}${a}${r.search}` : `${window.location.origin}/${e}${a}${r.search}` : `${window.location.origin}${a}${r.search}`
           }), [r]);
         let k = !1;
         k = !0;
@@ -2776,7 +2778,7 @@
           y = matchMedia("(hover: none) and (pointer: coarse)").matches,
           _ = e => {
             if (s && s(!1), m.subdomaincom === e || "none" === e) return void(s && s(!1));
-            const a = la.find((a => a.subdomaincom === e));
+            const a = ma.find((a => a.subdomaincom === e));
             a && (p(a.iso), window.location.href = b(e))
           };
         return (0, i.useEffect)((() => {
@@ -2784,30 +2786,30 @@
         }), [t]), (0, i.useEffect)((() => {
           v.current && x(v.current.scrollHeight)
         }), [v]), (0, d.jsxs)("div", {
-          className: [ka.languageSelector, g ? ka.open : ""].join(" "),
+          className: [va.languageSelector, g ? va.open : ""].join(" "),
           "data-theme": a,
           children: [(0, d.jsxs)(d.Fragment, {
             children: [y && "sc-menu" === a && (0, d.jsx)("div", {
-              className: ka.selectBoxWrapper,
+              className: va.selectBoxWrapper,
               children: (0, d.jsxs)("select", {
-                className: ka.selectBox,
+                className: va.selectBox,
                 onClick: e => e.stopPropagation(),
                 onChange: e => {
                   _(e.currentTarget.value)
                 },
                 children: [(0, d.jsx)("option", {
-                  className: ka.selectBoxOption,
+                  className: va.selectBoxOption,
                   value: "none",
-                  children: n ? (0, d.jsx)(ia.Z, {
+                  children: n ? (0, d.jsx)(ca.Z, {
                     ...n
-                  }) : va
-                }), la.map((e => {
+                  }) : ha
+                }), ma.map((e => {
                   let {
                     label: a,
                     subdomaincom: t
                   } = e;
                   return (0, d.jsx)("option", {
-                    className: ka.selectBoxOption,
+                    className: va.selectBoxOption,
                     value: t,
                     children: a
                   }, `mobile-${t}`)
@@ -2819,21 +2821,21 @@
                   e.stopPropagation(), s && s(!g), f(!g)
                 },
                 type: "button",
-                "aria-label": n ? o.formatMessage(n) : va,
+                "aria-label": n ? o.formatMessage(n) : ha,
                 children: [(0, d.jsx)("i", {}), (0, d.jsx)("span", {
-                  children: n ? (0, d.jsx)(ia.Z, {
+                  children: n ? (0, d.jsx)(ca.Z, {
                     ...n
-                  }) : va
+                  }) : ha
                 })]
               }), (0, d.jsx)("div", {
-                className: ka.linkWrapper,
+                className: va.linkWrapper,
                 ref: v,
                 style: {
                   "--ls-linkWrapper-opened-height": `${h}px`
                 },
                 children: (0, d.jsx)("div", {
-                  className: ka.links,
-                  children: la.map((e => {
+                  className: va.links,
+                  children: ma.map((e => {
                     let {
                       subdomaincom: a,
                       label: t
@@ -2853,8 +2855,8 @@
           }), !1]
         })
       };
-      const xa = ha,
-        ya = {
+      const ya = xa,
+        _a = {
           layeredImage: "rockstargames-componentsf1a2f28c7d1ed62492810fb403c40b2c",
           layersWrapper: "rockstargames-componentsf8441f69ffcfe4080ee2b4e9fec249e1",
           "hero-lg": "rockstargames-componentsc20b598f678033b9f78e02cb505cd8a0",
@@ -2889,7 +2891,7 @@
           shards_two: "rockstargames-componentsa517489d376abdec0ed96460ccc81ad9",
           dual: "rockstargames-componentsbb6e0f8ba4660e96b3712faf6c54aa89"
         },
-        _a = e => {
+        Na = e => {
           let {
             style: a,
             className: t
@@ -2899,19 +2901,19 @@
             },
             n = a["--border-image-source"];
           return n && (s["--border-image-source"] = `url(${(0,j.useGetCdnSource)(n)})`), (0, d.jsx)("div", {
-            className: (0, j.classList)(ya.border, t),
+            className: (0, j.classList)(_a.border, t),
             style: {
               ...s
             }
           })
         },
-        Na = e => e?.images ? (0, d.jsx)("div", {
-          className: (0, j.classList)(ya.layeredImage, ya[e?.variantClass], ya[e?.wrapperSizeClass]),
+        ja = e => e?.images ? (0, d.jsx)("div", {
+          className: (0, j.classList)(_a.layeredImage, _a[e?.variantClass], _a[e?.wrapperSizeClass]),
           style: {
             ...e?.style ?? {}
           },
           children: (0, d.jsxs)("div", {
-            className: ya.layersWrapper,
+            className: _a.layersWrapper,
             children: [e?.images?.map(((e, a) => {
               const {
                 image: t,
@@ -2926,22 +2928,22 @@
                 alt: p,
                 displayClass: g
               } = e;
-              return (0, d.jsx)(de, {
+              return (0, d.jsx)(le, {
                 image: t,
                 style: {
                   zIndex: c ?? ++a
                 },
                 imageStyle: m,
-                className: (0, j.classList)(l, g, ya.imageLayer, ya[s], ya[n], ya[r], ya[o], ya[i]),
+                className: (0, j.classList)(l, g, _a.imageLayer, _a[s], _a[n], _a[r], _a[o], _a[i]),
                 alt: p
               }, c ?? ++a)
-            })), e?.borderImage && (0, d.jsx)(_a, {
+            })), e?.borderImage && (0, d.jsx)(Na, {
               style: e?.borderImage,
               className: e?.borderImage?.displayClass
             })]
           })
         }) : null,
-        ja = e => {
+        Sa = e => {
           let {
             hero: a,
             children: t
@@ -2951,7 +2953,7 @@
             children: t
           }) : t
         },
-        Sa = e => {
+        wa = e => {
           let {
             badge: a = null,
             badgeType: t,
@@ -2964,7 +2966,7 @@
             role: l,
             hero: m = !1
           } = e;
-          return (0, d.jsx)(ja, {
+          return (0, d.jsx)(Sa, {
             hero: m,
             children: (0, d.jsx)("figure", {
               children: (0, d.jsxs)("div", {
@@ -2974,10 +2976,10 @@
                   ...c?.style
                 }),
                 ...c,
-                children: [(0, d.jsx)(de, {
+                children: [(0, d.jsx)(le, {
                   image: r,
                   className: i
-                }), (r?.badge || r?.discountTxt || a || s) && (0, d.jsx)(xe, {
+                }), (r?.badge || r?.discountTxt || a || s) && (0, d.jsx)(ye, {
                   badge: r?.discountTxt ?? r?.badge ?? a ?? s,
                   badgeType: t,
                   splitter: r?.splitter ?? n,
@@ -2991,13 +2993,13 @@
             })
           })
         },
-        wa = {
+        Ta = {
           multiSourceContainer: "rockstargames-componentse381fc56c6aa2467c3da35e4707e738d",
           multiSourceImage: "rockstargames-componentsf49fdfd7fb9f5fac000a0d3e8a454278",
           animatePlaceholder: "rockstargames-componentsee3004f447a07ee4350e4c7f66988279",
           "loader-keyframes": "rockstargames-componentsceffe0f096f9f99f1d2c31063115c45d"
         },
-        Ta = e => {
+        Ca = e => {
           let {
             imageUrl: a,
             className: t,
@@ -3009,15 +3011,15 @@
           } = e;
           const [l, m] = (0, i.useState)(!1);
           return (0, d.jsxs)("div", {
-            className: wa.multiSourceContainer,
+            className: Ta.multiSourceContainer,
             children: [!l && (0, d.jsx)("img", {
-              className: [t, wa.animatePlaceholder].join(" "),
+              className: [t, Ta.animatePlaceholder].join(" "),
               src: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiB2aWV3Qm94PSIwIDAgMTkyMCAxMDgwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cmVjdCB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiBmaWxsPSIjMzMzMzMzIi8+Cjwvc3ZnPgo=",
               sizes: "(max-width: 1024px) 100vw, 1024px",
               alt: "Loading...",
               style: n
             }), (0, d.jsx)("img", {
-              className: [wa.multiSourceImage, t].join(" "),
+              className: [Ta.multiSourceImage, t].join(" "),
               src: `${a}?im=Resize=1920`,
               srcSet: (p = a, c.map((e => `${p}?im=Resize=${e} ${e}w`)).join(", ")),
               sizes: "(max-width: 400px) 200px, (max-width: 1920px) 100vw, 1920px",
@@ -3032,10 +3034,10 @@
           });
           var p
         },
-        Ca = {
+        Ia = {
           tag: "rockstargames-componentsc1e678bcb5a1e1a1be6114282f264928"
         },
-        Ia = e => {
+        Ea = e => {
           let {
             className: a,
             href: t,
@@ -3044,7 +3046,7 @@
           } = e;
           const r = (0, d.jsxs)("div", {
             style: n,
-            className: [Ca.tag, a].join(" "),
+            className: [Ia.tag, a].join(" "),
             children: [(0, d.jsx)("i", {}), s]
           });
           return void 0 !== t ? (0, d.jsx)(l, {
@@ -3052,7 +3054,7 @@
             children: r
           }) : r
         },
-        Ea = {
+        La = {
           newswireBlock: "rockstargames-componentsab12ad38cf58ad5fbb7ddff2a9e1889d",
           info: "rockstargames-componentsf54c31159d25a80251ae553245d153a3",
           title: "rockstargames-componentsc5b842792dd570d6a4fc662a012371c7",
@@ -3062,7 +3064,7 @@
           top: "rockstargames-componentse273dbd6f05af08d429fbf75c4f27f83",
           startAnimation: "rockstargames-componentsdc02b8411cb8c96f531faaed38022cc3"
         },
-        La = e => {
+        Va = e => {
           let {
             index: a,
             post: t,
@@ -3085,31 +3087,31 @@
             "data-gtm-action": "Article Block Click",
             "data-gtm-label": `${t.title}`,
             to: t.url,
-            className: [Ea.newswireBlock, s ? Ea.newswireBlockNoSpecialOrder : "", null !== m ? Ea.startAnimation : ""].join(" "),
+            className: [La.newswireBlock, s ? La.newswireBlockNoSpecialOrder : "", null !== m ? La.startAnimation : ""].join(" "),
             children: (0, d.jsxs)(d.Fragment, {
               children: [0 !== a || r.get("tag_id") ? (0, d.jsx)("div", {
-                className: Ea.preview,
+                className: La.preview,
                 style: u.default
               }) : (0, d.jsxs)(d.Fragment, {
                 children: [(0, d.jsx)("div", {
-                  className: Ea.previewMobile,
+                  className: La.previewMobile,
                   style: u.mobile
                 }), (0, d.jsx)("div", {
-                  className: Ea.preview,
+                  className: La.preview,
                   style: u.default
                 })]
               }), (0, d.jsxs)("div", {
-                className: Ea.info,
+                className: La.info,
                 children: [(0, d.jsxs)("div", {
-                  className: Ea.top,
-                  children: [t.primary_tags.length ? (0, d.jsx)(Ia, {
+                  className: La.top,
+                  children: [t.primary_tags.length ? (0, d.jsx)(Ea, {
                     title: t.primary_tags[t.primary_tags.length > 1 && 722 === t.primary_tags[0].id ? 1 : 0].name
                   }) : "", (0, d.jsx)("time", {
                     dateTime: t.created,
                     children: t.created_formatted
                   })]
                 }), (0, d.jsx)("h5", {
-                  className: Ea.title,
+                  className: La.title,
                   dangerouslySetInnerHTML: {
                     __html: t.title
                   }
@@ -3118,9 +3120,9 @@
             })
           })
         };
-      var Va = t(4917),
-        $a = t.n(Va);
-      const Ba = (0, D.withTranslations)((e => {
+      var $a = t(4917),
+        Ba = t.n($a);
+      const za = (0, D.withTranslations)((e => {
           let {
             relativeTo: a = "",
             tagId: t = null,
@@ -3131,7 +3133,7 @@
             tagId: o = null
           } = (0, c.useParams)(), [l, m] = (0, i.useState)(o ?? t ?? r.get("tag_id")), [p, f] = (0, i.useState)(1), [u, b] = (0, i.useState)([]), [k, v] = (0, i.useState)(null), {
             data: h
-          } = (0, g.useQuery)($a(), {
+          } = (0, g.useQuery)(Ba(), {
             variables: {
               tagId: Number(l),
               page: p,
@@ -3144,7 +3146,7 @@
           }), [r.get("tag_id")]), (0, i.useEffect)((() => {
             h && h.posts && h.posts.paging && v(h.posts.paging), h && h.posts && h.posts.results && b(u.concat(h.posts.results))
           }), [h]), u.length ? (0, d.jsxs)(d.Fragment, {
-            children: [(0, d.jsx)(Fa, {
+            children: [(0, d.jsx)(Aa, {
               posts: u,
               relativeTo: a,
               noSpecialOrder: null !== l
@@ -3156,34 +3158,34 @@
             }) : ""]
           }) : null
         })),
-        za = {
+        Da = {
           related: "rockstargames-componentse992dd17114710edcb26fbc8dc8e666d",
           posts: "rockstargames-componentsa49f6938e087663b1ac0fd1b93456487",
           just1post: "rockstargames-componentsb5303ef0b966b9d4d4486db944b9b78c"
         },
-        Da = (0, D.withTranslations)((e => {
+        Ma = (0, D.withTranslations)((e => {
           let {
             posts: a,
             t
           } = e;
           return (0, d.jsxs)("section", {
-            className: za.related,
+            className: Da.related,
             children: [(0, d.jsx)("h2", {
               children: t("Related Stories")
             }), (0, d.jsx)("div", {
-              className: [za.posts, 1 === a.length ? za.just1post : ""].join(" "),
-              children: a.map((e => (0, d.jsx)(La, {
+              className: [Da.posts, 1 === a.length ? Da.just1post : ""].join(" "),
+              children: a.map((e => (0, d.jsx)(Va, {
                 noSpecialOrder: !0,
                 post: e
               }, e.id)))
             })]
           })
         })),
-        Ma = {
+        Fa = {
           newswireBlocks: "rockstargames-componentsb787e2cc67a938470008b0fa3c5e57f8",
           noSpecialOrder: "rockstargames-componentse3641b4f2f8f6fa67e5d06eba31981e1"
         },
-        Fa = (0, D.withGtmTracking)((e => {
+        Aa = (0, D.withGtmTracking)((e => {
           let {
             noSpecialOrder: a = !1,
             posts: t,
@@ -3209,17 +3211,17 @@
               })
             })), s(e)
           }), [t.length]), (0, d.jsx)("div", {
-            className: [Ma.newswireBlocks, a ? Ma.noSpecialOrder : "", Ma.contextHome].join(" "),
-            children: t.map(((e, t) => (0, d.jsx)(La, {
+            className: [Fa.newswireBlocks, a ? Fa.noSpecialOrder : "", Fa.contextHome].join(" "),
+            children: t.map(((e, t) => (0, d.jsx)(Va, {
               index: t,
               noSpecialOrder: a,
               post: e
             }, e.id)))
           })
         }));
-      var Aa = t(9997);
-      const Pa = "rockstargames-componentsd86a3089b6f6e51c437bc17b703ac57b",
-        Ga = e => {
+      var Pa = t(9997);
+      const Ga = "rockstargames-componentsd86a3089b6f6e51c437bc17b703ac57b",
+        Oa = e => {
           let {
             children: a,
             data: t,
@@ -3236,7 +3238,7 @@
             children: a
           })
         },
-        Oa = e => {
+        Ha = e => {
           let {
             data: a,
             onPageUpdate: t,
@@ -3247,16 +3249,16 @@
           return (0, d.jsxs)("div", {
             className: `rockstargames-componentsea0618e2f79b93278088f08dde2476c4 ${s??""}`,
             children: [a.pageCount > 8 ? (0, d.jsxs)(d.Fragment, {
-              children: [(0, d.jsx)(Ga, {
+              children: [(0, d.jsx)(Oa, {
                 data: a,
                 onPageUpdate: t,
                 page: 1,
                 children: "1"
               }), 2 !== n[0] ? (0, d.jsx)("div", {
-                className: Pa,
+                className: Ga,
                 children: "..."
               }) : ""]
-            }) : "", n.map((e => (0, d.jsx)(Ga, {
+            }) : "", n.map((e => (0, d.jsx)(Oa, {
               data: a,
               onPageUpdate: t,
               page: e,
@@ -3264,9 +3266,9 @@
               children: e
             }, e))), a.pageCount > 8 ? (0, d.jsxs)(d.Fragment, {
               children: [n.slice(-1)[0] + 1 < a.pageCount ? (0, d.jsx)("div", {
-                className: Pa,
+                className: Ga,
                 children: "..."
-              }) : "", (0, d.jsx)(Ga, {
+              }) : "", (0, d.jsx)(Oa, {
                 data: a,
                 onPageUpdate: t,
                 page: a.pageCount,
@@ -3275,14 +3277,14 @@
             }) : ""]
           })
         };
-      var Ha = t(6147);
-      const Ua = e => {
+      var Ua = t(6147);
+      const Ra = e => {
           let {
             children: a
           } = e;
           const {
             parallaxController: t
-          } = (0, Ha.bc)();
+          } = (0, Ua.bc)();
           return (0, i.useLayoutEffect)((() => {
             if (!t) return;
             const e = setInterval((() => {
@@ -3291,24 +3293,24 @@
             return () => clearInterval(e)
           }), [t]), a
         },
-        Ra = {
+        Wa = {
           parallaxWrapper: "rockstargames-componentsac6a811a2c026eb9d37c82e804870efc",
           large: "rockstargames-componentsa8acf06a80d716956d8490e4d8c223f7",
           medium: "rockstargames-componentsbd7e3cede84d0e9316f0577f23921911",
           small: "rockstargames-componentsd56e2c3a2b2a210394852ba9e95b4cce"
         },
-        Wa = e => {
+        qa = e => {
           let {
             scrollAxis: a = "vertical",
             size: t = "",
             style: s = {},
             children: n
           } = e;
-          return (0, d.jsx)(Ha.Xu, {
+          return (0, d.jsx)(Ua.Xu, {
             scrollAxis: a,
-            children: (0, d.jsx)(Ua, {
+            children: (0, d.jsx)(Ra, {
               children: (0, d.jsx)("div", {
-                className: (0, j.classList)(Ra.parallaxWrapper, Ra[t]),
+                className: (0, j.classList)(Wa.parallaxWrapper, Wa[t]),
                 style: s,
                 "data-context": "parallax-wrapper",
                 children: n ? n.map(((e, t) => (0, i.cloneElement)(e, {
@@ -3322,7 +3324,7 @@
             })
           })
         },
-        qa = e => {
+        Za = e => {
           let {
             layers: a = [],
             displayClass: t = "",
@@ -3340,14 +3342,14 @@
             style: void 0,
             image: n(e?.image ?? null)
           })));
-          return (0, d.jsx)(Ha.UG, {
+          return (0, d.jsx)(Ua.UG, {
             className: (0, j.classList)("rockstargames-componentsd97831cde902af87ada6d20331a1b381", t),
             layers: r,
             style: s
           })
         },
-        Za = "rockstargames-componentsa84defbd41213ae39ad00cd983c9fdf3",
-        Ya = e => {
+        Ya = "rockstargames-componentsa84defbd41213ae39ad00cd983c9fdf3",
+        Qa = e => {
           let {
             minOffset: a = 0,
             maxOffset: t = 0,
@@ -3356,19 +3358,19 @@
             style: r = {},
             children: o
           } = e;
-          return "horizontal" === s ? (0, d.jsx)(Ha.VS, {
+          return "horizontal" === s ? (0, d.jsx)(Ua.VS, {
             x: [a, t],
-            className: (0, j.classList)(Za, n),
+            className: (0, j.classList)(Ya, n),
             styleOuter: r,
             children: o
-          }) : (0, d.jsx)(Ha.VS, {
+          }) : (0, d.jsx)(Ua.VS, {
             y: [a, t],
-            className: (0, j.classList)(Za, n),
+            className: (0, j.classList)(Ya, n),
             styleOuter: r,
             children: o
           })
         },
-        Qa = {
+        Xa = {
           promoModule: "rockstargames-componentsa96cf75058f24406ae69280956e81864",
           promoModuleImage: "rockstargames-componentsb6b59b287601476f0e2a16f0c432bdb6",
           gradient: "rockstargames-componentsd0268af224555225272412ec734df075",
@@ -3377,7 +3379,7 @@
           right: "rockstargames-componentscb9a693453841566594ff1e66bf1a0a2",
           promoModuleTextContent: "rockstargames-componentsb3c7d9385f30c83c8b1efd8f5fb0ba3f"
         },
-        Xa = e => {
+        Ka = e => {
           let {
             backgroundColor: a,
             brands: t = [],
@@ -3409,8 +3411,8 @@
               event_label: "promo module",
               element_placement: "promo module"
             }), g(!0))
-          }), [u]), (0, d.jsxs)(Ie.E.div, {
-            className: Qa.promoModule,
+          }), [u]), (0, d.jsxs)(Ee.E.div, {
+            className: Xa.promoModule,
             style: k,
             initial: {
               opacity: 0
@@ -3428,14 +3430,14 @@
             },
             ref: f,
             children: [(0, d.jsx)("div", {
-              className: [Qa.promoModuleImage, o ? Qa.gradient : "", "left" === l ? Qa.left : Qa.right].join(" ")
+              className: [Xa.promoModuleImage, o ? Xa.gradient : "", "left" === l ? Xa.left : Xa.right].join(" ")
             }), (0, d.jsxs)("div", {
-              className: Qa.promoModuleContentContainer,
+              className: Xa.promoModuleContentContainer,
               children: [(0, d.jsx)(y, {
                 brands: t,
-                className: Qa.promoModuleBrands
+                className: Xa.promoModuleBrands
               }), (0, d.jsxs)("div", {
-                className: Qa.promoModuleTextContent,
+                className: Xa.promoModuleTextContent,
                 children: [m && (0, d.jsx)("h3", {
                   children: m
                 }), s && (0, d.jsx)("p", {
@@ -3459,16 +3461,16 @@
             })]
           })
         };
-      var Ka = t(3761),
-        Ja = t(3111);
-      const et = {
+      var Ja = t(3761),
+        et = t(3111);
+      const at = {
         rating: "rockstargames-componentsc004868ea6a6081b6841ea37941dc6dc",
         withDescriptors: "rockstargames-componentsc4c1846c85cbccacafd56ae4b957c2c2",
         withOutDescriptors: "rockstargames-componentse3265d7edca1582513d0fdc449236c9b",
         text: "rockstargames-componentseee91c3283b0b0f696b1792bb7176175"
       };
       (0, D.importAll)(t(5570));
-      const at = qe((e => {
+      const tt = Ze((e => {
           let {
             descriptors: a = null,
             footer: s = null,
@@ -3489,9 +3491,9 @@
             url_rating: n
           }), {
             track: v
-          } = (0, M.useGtmTrack)(), h = (0, ca.Z)(), {
+          } = (0, M.useGtmTrack)(), h = (0, da.Z)(), {
             data: x
-          } = (0, g.useQuery)(Ka.GameData, {
+          } = (0, g.useQuery)(Ja.GameData, {
             variables: {
               titleSlug: o
             },
@@ -3510,21 +3512,21 @@
             }), [u]), !b.img_rating) return null;
           const y = !!b.rating_descriptors;
           return (0, d.jsxs)("div", {
-            className: [et.rating, y ? et.withDescriptors : et.withOutDescriptors, m || ""].join(" "),
+            className: [at.rating, y ? at.withDescriptors : at.withOutDescriptors, m || ""].join(" "),
             style: (0, D.safeStyles)(c),
             children: [(0, d.jsx)(l, {
               to: b.url_rating,
               target: "_blank",
               children: (0, d.jsx)("img", {
-                alt: h.formatMessage(Ja.components.components_ratings_link_alt, {
+                alt: h.formatMessage(et.components.components_ratings_link_alt, {
                   rating: (_ = b.img_rating, _.replace(/_/g, " ").split(".")[0].toUpperCase())
                 }),
                 src: t(4593)(`./${b.img_rating}`)
               })
             }), y && (0, d.jsxs)("div", {
-              className: et.text,
+              className: at.text,
               children: [(0, d.jsx)("p", {
-                className: et.descriptors,
+                className: at.descriptors,
                 dangerouslySetInnerHTML: {
                   __html: b?.rating_descriptors?.split(/<br\s?\/?>/).join(", ") || ""
                 }
@@ -3537,43 +3539,43 @@
           });
           var _
         })),
-        tt = {
+        st = {
           responsiveFlexBox: "rockstargames-componentse4a3b9b6071fe50e64de8f4c9c6841d3",
           responsiveFlexItem: "rockstargames-componentsaa899ffe0d4ed9474eb2058b5884ee51",
           responsiveImage: "rockstargames-componentsaaa1a0871637276a49c581a317952643"
         },
-        st = e => {
+        nt = e => {
           let {
             children: a,
             className: t,
             style: s
           } = e;
           return (0, d.jsx)("div", {
-            className: [tt.responsiveFlexBox, void 0 !== t ? t : ""].join(" "),
+            className: [st.responsiveFlexBox, void 0 !== t ? t : ""].join(" "),
             style: s,
             children: a
           })
         },
-        nt = {
+        rt = {
           responsiveFlexItem: "rockstargames-componentse8d9468ec8cdbdcf6b00a4daedcfbab5"
         },
-        rt = e => {
+        ot = e => {
           let {
             children: a,
             className: t,
             style: s
           } = e;
           return (0, d.jsx)("div", {
-            className: [nt.responsiveFlexItem, void 0 !== t ? t : ""].join(" "),
+            className: [rt.responsiveFlexItem, void 0 !== t ? t : ""].join(" "),
             style: s,
             children: a
           })
         },
-        ot = {
+        it = {
           responsiveGridBox: "rockstargames-componentse91d4d1de6e479c331b2bc50227fae96",
           responsiveGridItem: "rockstargames-componentsb7b98f304a0507fadedd1e3449fba010"
         },
-        it = e => {
+        ct = e => {
           let {
             children: a,
             cols: t,
@@ -3582,31 +3584,31 @@
             style: r
           } = e;
           return void 0 === r && (r = {}), void 0 !== t && (r.gridTemplateColumns = `repeat(${t}, 1fr)`), void 0 !== n && (r.gridTemplateRows = `repeat(${n}, 1fr)`), (0, d.jsx)("div", {
-            className: [ot.responsiveGridBox, void 0 !== s ? s : ""].join(" "),
+            className: [it.responsiveGridBox, void 0 !== s ? s : ""].join(" "),
             style: r,
             children: a
           })
         },
-        ct = {
+        dt = {
           responsiveGridBox: "rockstargames-componentsd2a57229e98f203a0df1d5e4dc5168e7",
           responsiveGridItem: "rockstargames-componentsa550b6abbcce0c5385bb1bbf3aaaaf89"
         },
-        dt = e => {
+        lt = e => {
           let {
             children: a,
             className: t,
             style: s
           } = e;
           return (0, d.jsx)("div", {
-            className: [ct.responsiveGridItem, void 0 !== t ? t : ""].join(" "),
+            className: [dt.responsiveGridItem, void 0 !== t ? t : ""].join(" "),
             style: s,
             children: a
           })
         },
-        lt = {
+        mt = {
           responsiveImage: "rockstargames-componentscf17dc54f4db5d6644c56b416b15b33f"
         },
-        mt = e => {
+        pt = e => {
           let {
             src: a,
             className: t = "",
@@ -3618,18 +3620,18 @@
           return o ? (r.backgroundImage = `url(${a})`, (0, d.jsx)("div", {
             role: "img",
             "aria-label": n ?? "R* Games",
-            className: [lt.responsiveImage, s ? lt.animateBox : "", t].join(" "),
+            className: [mt.responsiveImage, s ? mt.animateBox : "", t].join(" "),
             style: {
               ...r,
               "--aspect-ratio": i.width / i.height
             }
           })) : null
         },
-        pt = {
+        gt = {
           responsiveSection: "rockstargames-componentsc5c99169fa31c5009611af9233db5968",
           maxWidth: "rockstargames-componentsd4363484ab65e013f4e7583a00c7a5f4"
         },
-        gt = e => {
+        ft = e => {
           let {
             children: a,
             className: t,
@@ -3637,20 +3639,20 @@
             maxWidth: n
           } = e;
           return (0, d.jsx)("section", {
-            className: [pt.responsiveSection, void 0 !== t ? t : ""].join(" "),
+            className: [gt.responsiveSection, void 0 !== t ? t : ""].join(" "),
             style: s,
             children: n ? (0, d.jsx)("div", {
-              className: pt.maxWidth,
+              className: gt.maxWidth,
               children: a
             }) : a
           })
         },
-        ft = () => (0, d.jsx)(l, {
+        ut = () => (0, d.jsx)(l, {
           className: "rockstargames-componentscc006d4ff1bfa49216622ebc92289fb0",
           alt: "Rockstar Games Home",
           to: "/"
         }),
-        ut = () => {
+        bt = () => {
           const {
             pathname: e
           } = (0, c.useLocation)();
@@ -3658,7 +3660,7 @@
             window.scrollTo(0, 0)
           }), [e]), null
         },
-        bt = (0, i.forwardRef)(((e, a) => {
+        kt = (0, i.forwardRef)(((e, a) => {
           const {
             threshold: t,
             callback: s,
@@ -3732,7 +3734,7 @@
             }), "function" == typeof s && s(a)
           }), c), n
         })),
-        kt = (0, D.withTranslations)((e => {
+        vt = (0, D.withTranslations)((e => {
           let {
             t: a
           } = e;
@@ -3759,38 +3761,38 @@
             })]
           })
         })),
-        vt = {
+        ht = {
           skeleton: "rockstargames-componentsa76d39bab84e8f469972e22834204389",
           pulse: "rockstargames-componentse8aa563c46cfd0a74ea4dcfc1bb8a9e4",
           gen9Hero: "rockstargames-componentsd63bf424caff53fef09b8e4c2e20a3c3"
         },
-        ht = e => {
+        xt = e => {
           let {
             skeleton: a
           } = e;
           return a ? (0, d.jsx)("div", {
-            className: [vt.skeleton, vt[a]].join(" ")
+            className: [ht.skeleton, ht[a]].join(" ")
           }) : null
         },
-        xt = {
+        yt = {
           bodySmall: "rockstargames-componentsb9aa3afbdb37ff0aea705849df408c42"
         },
-        yt = e => {
+        _t = e => {
           let {
             track: a,
             artist: t
           } = e;
           return (0, d.jsxs)("div", {
-            className: xt.track,
+            className: yt.track,
             children: [(0, d.jsx)("p", {
               children: a
             }), (0, d.jsx)("p", {
-              className: xt.bodySmall,
+              className: yt.bodySmall,
               children: t
             })]
           })
         },
-        _t = e => {
+        Nt = e => {
           let {
             children: a
           } = e;
@@ -3798,23 +3800,23 @@
             className: "rockstargames-componentsadbe1e185cd3cd1481eb242c25b0eb14",
             children: [(0, d.jsx)("h4", {
               className: "rockstargames-componentsa37f37abb5276c67d47bca88073adb3f",
-              children: (0, d.jsx)(ia.Z, {
-                ...Ja.components.components_track_list_title
+              children: (0, d.jsx)(ca.Z, {
+                ...et.components.components_track_list_title
               })
             }), (0, d.jsx)("div", {
               className: "rockstargames-componentsc0e76cb19681f62e125f0b004c296f0a",
               children: (0, d.jsx)("div", {
                 className: "rockstargames-componentsb2a58aa8f0fbec82f1c7e834739aabad",
-                children: i.Children.map(i.Children.toArray(a), (e => (0, d.jsx)(yt, {
+                children: i.Children.map(i.Children.toArray(a), (e => (0, d.jsx)(_t, {
                   ...e?.props
                 })))
               })
             })]
           })
         },
-        Nt = "rockstargames-componentsce552800b27ae8165e7d3dc5a189fe11",
-        jt = "rockstargames-componentsf1715da046f9be2e226bc9f6342294c0",
-        St = {
+        jt = "rockstargames-componentsce552800b27ae8165e7d3dc5a189fe11",
+        St = "rockstargames-componentsf1715da046f9be2e226bc9f6342294c0",
+        wt = {
           0: {
             spaceBetween: 8
           },
@@ -3831,7 +3833,7 @@
             spaceBetween: 22
           }
         },
-        wt = e => {
+        Tt = e => {
           let {
             title: a = "thumbnail gallery",
             thumbsPerView: t = 3,
@@ -3851,24 +3853,24 @@
           } = e;
           const {
             track: l
-          } = (0, M.useGtmTrack)(), [m, p] = (0, i.useState)([Re.Rv, Re.o3, Re.tl]), [g, f] = (0, i.useState)(null), [u, b] = (0, i.useState)(null);
+          } = (0, M.useGtmTrack)(), [m, p] = (0, i.useState)([We.Rv, We.o3, We.tl]), [g, f] = (0, i.useState)(null), [u, b] = (0, i.useState)(null);
           return (0, i.useEffect)((() => {
-            const e = [Re.Rv, Re.o3, Re.tl];
-            n && e.push(Re.W_), p(e)
+            const e = [We.Rv, We.o3, We.tl];
+            n && e.push(We.W_), p(e)
           }), [n]), (0, i.useEffect)((() => {
             if (!r) return;
             const e = r.map(((e, a) => (0, d.jsx)(E.o5, {
               children: e
             }, Symbol(a).toString())));
             b(e)
-          }), [r]), u ? (0, d.jsxs)(Ie.E.div, {
+          }), [r]), u ? (0, d.jsxs)(Ee.E.div, {
             className: "rockstargames-componentsabb6bd9f780af17f6dcf79964e885edb",
             variants: o.parent,
             transition: c.parent,
             initial: "initial",
             animate: "animate",
-            children: [(0, d.jsx)(Ie.E.div, {
-              className: Nt,
+            children: [(0, d.jsx)(Ee.E.div, {
+              className: jt,
               variants: o.main,
               transition: c.main,
               initial: "initial",
@@ -3883,8 +3885,8 @@
                   swiper: g
                 },
                 modules: m,
-                breakpoints: St,
-                className: Nt,
+                breakpoints: wt,
+                className: jt,
                 onSlideNextTransitionEnd: () => {
                   l({
                     event_action: "next",
@@ -3911,8 +3913,8 @@
                 },
                 children: u
               })
-            }), (0, d.jsx)(Ie.E.div, {
-              className: jt,
+            }), (0, d.jsx)(Ee.E.div, {
+              className: St,
               variants: o.thumbs,
               transition: c.thumbs,
               initial: "initial",
@@ -3921,19 +3923,19 @@
                 threshold: 50,
                 onSwiper: f,
                 loop: s,
-                breakpoints: St,
+                breakpoints: wt,
                 slidesPerView: t,
                 freeMode: !0,
                 watchSlidesProgress: !0,
                 modules: m,
-                className: jt,
+                className: St,
                 children: u
               })
             })]
           }) : null
         };
-      var Tt = t(2968);
-      const Ct = e => {
+      var Ct = t(2968);
+      const It = e => {
           let {
             id: a = null,
             ids: t = null,
@@ -3943,7 +3945,7 @@
           const r = t ?? [a],
             {
               data: o
-            } = (0, g.useQuery)(Tt.TinaModulesInfo, {
+            } = (0, g.useQuery)(Ct.TinaModulesInfo, {
               variables: {
                 ids: r,
                 sync: n
@@ -3953,18 +3955,18 @@
             });
           return o?.tinaModulesInfo ?? null
         },
-        It = qe((e => {
+        Et = Ze((e => {
           let {
             components: a = {},
             id: t = null,
             ids: s = null,
             skeleton: n
           } = e;
-          const r = Ct({
+          const r = It({
             id: t,
             ids: s
           });
-          if (!r) return (0, d.jsx)(ht, {
+          if (!r) return (0, d.jsx)(xt, {
             skeleton: n
           });
           const o = r?.[0]?.tina;
@@ -3983,7 +3985,7 @@
             }))
           }) : null
         })),
-        Et = e => {
+        Lt = e => {
           let {
             children: a,
             style: t,
@@ -3999,8 +4001,8 @@
             children: a
           })
         };
-      var Lt = t(9714);
-      const Vt = {
+      var Vt = t(9714);
+      const $t = {
           userVote: "rockstargames-componentsed30a827a4ee0c0fe965dbb8c52b61f6",
           info: "rockstargames-componentsbae3af054b3b38745be7b59e4338172e",
           voteContent: "rockstargames-componentse0f8555223a6d38a90a0cadb4d312769",
@@ -4010,7 +4012,7 @@
           upVote: "rockstargames-componentsbf4e6863e21e200ba89eaf06cf1f70de",
           voteButtonActive: "rockstargames-componentsf470bab88d3ac74c73e2dc6aaa71e62f"
         },
-        $t = e => {
+        Bt = e => {
           let {
             description: a,
             foreign_id: t = document.location.pathname,
@@ -4023,9 +4025,9 @@
             loggedIn: o
           } = (0, M.useRockstarUser)(), {
             refetch: c
-          } = (0, g.useQuery)(Lt.UserGetVote, {
+          } = (0, g.useQuery)(Vt.UserGetVote, {
             skip: !0
-          }), [l] = (0, g.useMutation)(Lt.UserCastVote), [m, p] = (0, i.useState)(null), f = (0, i.useCallback)((async e => {
+          }), [l] = (0, g.useMutation)(Vt.UserCastVote), [m, p] = (0, i.useState)(null), f = (0, i.useCallback)((async e => {
             r({
               event_action: m ? "like" : "dislike",
               event_category: "cta",
@@ -4052,25 +4054,25 @@
               p(e?.data?.userGetVote?.vote ?? null)
             })()
           }), [t, s, o]), (0, d.jsx)("div", {
-            className: Vt.userVote,
+            className: $t.userVote,
             children: (0, d.jsxs)("div", {
-              className: Vt.voteContent,
+              className: $t.voteContent,
               children: [(0, d.jsxs)("div", {
-                className: Vt.info,
+                className: $t.info,
                 children: [(0, d.jsx)("h3", {
                   children: n
                 }), (0, d.jsx)("p", {
                   children: a
                 })]
               }), (0, d.jsxs)("div", {
-                className: [Vt.voteButtons, o ? "" : Vt.loggedOutButtons].join(" "),
+                className: [$t.voteButtons, o ? "" : $t.loggedOutButtons].join(" "),
                 children: [(0, d.jsx)("button", {
                   onClick: () => f(!0),
-                  className: [Vt.upVote, m ? Vt.voteButtonActive : ""].join(" "),
+                  className: [$t.upVote, m ? $t.voteButtonActive : ""].join(" "),
                   type: "button",
                   "aria-label": "Vote up"
                 }), (0, d.jsx)("button", {
-                  className: [Vt.downVote, !1 === m ? Vt.voteButtonActive : ""].join(" "),
+                  className: [$t.downVote, !1 === m ? $t.voteButtonActive : ""].join(" "),
                   onClick: () => f(!1),
                   type: "button",
                   "aria-label": "Vote down"
@@ -4079,7 +4081,7 @@
             })
           })
         },
-        Bt = {
+        zt = {
           carousel: "rockstargames-componentsf022bf9e72dc1703e9e349d33b94f1af",
           text: "rockstargames-componentsd13ac10ef642d12233ef4c9b26a9805c",
           info: "rockstargames-componentsc3600a5b5e3fb1e3a927caa4d6cfeac2",
@@ -4094,7 +4096,7 @@
           dragging: "rockstargames-componentsbb5ecb6b4e8e81e432a59eac0a5f4985",
           dots: "rockstargames-componentsdcabe0c33f6868691c42df0d3684d20d"
         },
-        zt = (0, D.withLocale)((e => {
+        Dt = (0, D.withLocale)((e => {
           let {
             locale: a,
             t,
@@ -4120,16 +4122,16 @@
                 o(e), m(0)
               },
               c = e => {
-                m(e.isFinal ? 0 : e.deltaX), "panleft" !== e.additionalEvent && "panright" !== e.additionalEvent || !f.current?.classList.contains(Bt.dragging) || a() && n(!1)
+                m(e.isFinal ? 0 : e.deltaX), "panleft" !== e.additionalEvent && "panright" !== e.additionalEvent || !f.current?.classList.contains(zt.dragging) || a() && n(!1)
               },
               d = () => {
                 a() && n(!0), m(0)
               },
               l = e => {
-                "press" === e.type && g.current?.classList.add(`${Bt.disableClick}`), "tap" === e.type && (g.current?.classList.remove(`${Bt.disableClick}`), document.elementFromPoint(e.center.x, e.center.y).click())
+                "press" === e.type && g.current?.classList.add(`${zt.disableClick}`), "tap" === e.type && (g.current?.classList.remove(`${zt.disableClick}`), document.elementFromPoint(e.center.x, e.center.y).click())
               },
               u = () => {
-                a() && n(!0), g.current && g.current.classList.remove(`${Bt.disableClick}`)
+                a() && n(!0), g.current && g.current.classList.remove(`${zt.disableClick}`)
               },
               b = () => {
                 a() && n(!0)
@@ -4138,12 +4140,12 @@
               e.off("swiperight", t), e.off("swipeleft", i), e.off("pan", c), e.off("panend", d), e.off("press tap", l), e.off("pressup", u), f.current && f.current.removeEventListener("transitionend", b), m(0)
             }
           }), [g.current, r]), (0, d.jsxs)("section", {
-            className: Bt.carousel,
+            className: zt.carousel,
             children: [(0, d.jsx)("div", {
-              className: Bt.track,
+              className: zt.track,
               ref: g,
               children: (0, d.jsx)("div", {
-                className: `${Bt.items} ${0!==c?Bt.dragging:""}`,
+                className: `${zt.items} ${0!==c?zt.dragging:""}`,
                 ref: f,
                 style: {
                   transform: `translateX(calc(-${100*r}% + ${c}px))`
@@ -4153,10 +4155,10 @@
                   "data-gtm-action": "Click-through screencap",
                   "data-gtm-label": `/videos/${e.id}`,
                   to: `/videos/${e.id}`,
-                  className: r === a ? Bt.active : "",
+                  className: r === a ? zt.active : "",
                   role: "link",
                   title: e.title,
-                  children: (0, d.jsx)(Pt, {
+                  children: (0, d.jsx)(Gt, {
                     video: e,
                     active: r === a
                   })
@@ -4164,7 +4166,7 @@
               })
             }), (0, d.jsxs)("footer", {
               children: [(0, d.jsx)("div", {
-                className: Bt.text,
+                className: zt.text,
                 children: s.map(((e, s) => (0, d.jsx)(l, {
                   "data-gtm-category": "Carousel",
                   "data-gtm-action": "Click-through footer",
@@ -4173,38 +4175,38 @@
                   role: "link",
                   title: e.title,
                   children: (0, d.jsxs)("div", {
-                    className: [Bt.info, s === r ? Bt.active : ""].join(" "),
+                    className: [zt.info, s === r ? zt.active : ""].join(" "),
                     children: [(0, d.jsxs)("div", {
-                      className: Bt.title,
+                      className: zt.title,
                       children: [(0, d.jsx)("div", {
-                        className: Bt.gameTitle,
+                        className: zt.gameTitle,
                         children: `${e.game.title}${"fr_fr"===a?" ":""}`
                       }), (0, d.jsx)("h2", {
-                        className: Bt.videoTitle,
+                        className: zt.videoTitle,
                         children: `${e.title}`
                       })]
                     }), (0, d.jsx)(N, {
-                      className: Bt.cta,
+                      className: zt.cta,
                       children: t("Watch Now")
                     })]
                   })
                 }, e.id)))
               }), (0, d.jsx)("div", {
-                className: Bt.dots,
+                className: zt.dots,
                 children: s.map(((e, a) => (0, d.jsx)("button", {
                   "aria-label": `Slide ${a}`,
                   "data-gtm-category": "Marquee",
                   "data-gtm-action": "Dot click",
                   "data-gtm-label": `Dot clicked to ${a}`,
                   onClick: () => o(a),
-                  className: r === a ? Bt.active : "",
+                  className: r === a ? zt.active : "",
                   type: "button"
                 }, e.id)))
               })]
             })]
           })
         })),
-        Dt = {
+        Mt = {
           videoList: "rockstargames-componentse49dd5596165ea04152c8356209a1cca",
           sectionHeader: "rockstargames-componentsb3dfec0109576abb1fd036096e6b117a",
           arrowNav: "rockstargames-componentsd608a61eb851b602c357831dc1922f8d",
@@ -4217,7 +4219,7 @@
           next: "rockstargames-componentsc1fd555dd7b904ebe9f23e233c63b0b8",
           disabled: "rockstargames-componentsc9b97437b4e75cef0bb78c0c136c81e9"
         },
-        Mt = (0, D.withTranslations)((e => {
+        Ft = (0, D.withTranslations)((e => {
           let {
             vids: a,
             games: t,
@@ -4264,36 +4266,36 @@
               }
             }
           }), [c.current, g]), v = "games" === r ? (0, d.jsx)(d.Fragment, {
-            children: t.results.map((e => (0, d.jsx)(Oe, {
+            children: t.results.map((e => (0, d.jsx)(He, {
               game: e,
               dontOverrideTo: !0,
               to: `/videos?type=game&gameId=${e.id}`
             }, e.id)))
           }) : (0, d.jsx)(d.Fragment, {
-            children: a.map((e => (0, d.jsx)(Gt, {
+            children: a.map((e => (0, d.jsx)(Ot, {
               video: e,
               gameTitleNecessary: n
             }, e.id)))
           }), (0, d.jsxs)("section", {
-            className: Dt.videoList,
+            className: Mt.videoList,
             children: [(0, d.jsxs)("h3", {
-              className: Dt.sectionHeader,
+              className: Mt.sectionHeader,
               children: [s, (0, d.jsxs)("div", {
-                className: Dt.arrowNav,
+                className: Mt.arrowNav,
                 children: [(0, d.jsx)("div", {
-                  className: [Dt.arrow, Dt.previous, 0 === g ? Dt.disabled : ""].join(" "),
+                  className: [Mt.arrow, Mt.previous, 0 === g ? Mt.disabled : ""].join(" "),
                   onClick: () => u(g - 1)
                 }), (0, d.jsx)("div", {
-                  className: [Dt.arrow, Dt.next, g === Math.ceil(o.length / l) - 1 ? Dt.disabled : ""].join(" "),
+                  className: [Mt.arrow, Mt.next, g === Math.ceil(o.length / l) - 1 ? Mt.disabled : ""].join(" "),
                   onClick: () => u(g + 1)
                 })]
               })]
             }), (0, d.jsx)("div", {
-              className: Dt.items,
+              className: Mt.items,
               children: (0, d.jsx)("div", {
-                className: Dt.trackWrapper,
+                className: Mt.trackWrapper,
                 children: (0, d.jsx)("div", {
-                  className: [Dt.track, 0 !== b ? Dt.dragging : ""].join(" "),
+                  className: [Mt.track, 0 !== b ? Mt.dragging : ""].join(" "),
                   ref: c,
                   style: {
                     transform: `translateX(calc(-${100*g}% + ${b}px - (var(--standard-grid-gap) * ${g}))`,
@@ -4305,7 +4307,7 @@
             })]
           })
         })),
-        Ft = (0, D.withTranslations)((e => {
+        At = (0, D.withTranslations)((e => {
           let {
             error: a,
             t,
@@ -4324,10 +4326,10 @@
             }), (0, d.jsx)(l, {
               to: "/",
               children: t("Home")
-            }), "clr" !== s && (0, d.jsx)(kt, {})]
+            }), "clr" !== s && (0, d.jsx)(vt, {})]
           })
         })),
-        At = {
+        Pt = {
           videoPreview: "rockstargames-componentsfe7a3e548d37991de12016a69af8e6c0",
           card: "rockstargames-componentsdaabbfc1eda1710ae7d1346162b9392e",
           info: "rockstargames-componentsa7ab9b6f9cb9bbc84106a35eb5bec944",
@@ -4336,19 +4338,19 @@
           screencapLoaded: "rockstargames-componentsed8b59749d6b49b669bfdd77a2d05da6",
           gameTitle: "rockstargames-componentse0e54e027a19ac5f0b1e839fd68b8795"
         },
-        Pt = e => {
+        Gt = e => {
           let {
             video: a
           } = e;
           const [t] = (0, D.usePreloadImg)(a.screencap);
           return (0, d.jsx)("div", {
-            className: [At.screencap, t ? At.screencapLoaded : ""].join(" "),
+            className: [Pt.screencap, t ? Pt.screencapLoaded : ""].join(" "),
             style: {
               background: `url(${a.screencap}) center/cover`
             }
           })
         },
-        Gt = e => {
+        Ot = e => {
           let {
             gameTitleNecessary: a = !0,
             openInNewWindow: t = !1,
@@ -4356,24 +4358,24 @@
           } = e;
           const n = `/videos/${s.id}`,
             r = {
-              className: At.videoPreview,
+              className: Pt.videoPreview,
               "data-gtm-category": "Videos",
               "data-gtm-action": "Video Click-through",
               "data-gtm-label": n
             },
             o = (0, d.jsxs)("div", {
-              className: At.card,
-              children: [(0, d.jsx)(Pt, {
+              className: Pt.card,
+              children: [(0, d.jsx)(Gt, {
                 video: s
               }), (0, d.jsxs)("div", {
-                className: At.info,
+                className: Pt.info,
                 children: [a ? (0, d.jsx)("div", {
-                  className: At.gameTitle,
+                  className: Pt.gameTitle,
                   dangerouslySetInnerHTML: {
                     __html: s.game.title
                   }
                 }) : "", (0, d.jsx)("h5", {
-                  className: At.title,
+                  className: Pt.title,
                   dangerouslySetInnerHTML: {
                     __html: s.title
                   }
@@ -4391,7 +4393,7 @@
             children: o
           })
         };
-      class Ot extends i.Component {
+      class Ht extends i.Component {
         constructor(e) {
           super(e), this.state = {
             error: {
@@ -4415,15 +4417,15 @@
           }
         }
         render() {
-          return null !== this.state.error.code ? (0, d.jsx)(Ft, {
+          return null !== this.state.error.code ? (0, d.jsx)(At, {
             error: this.state.error
           }) : this.props.children
         }
       }
-      const Ht = function(e) {
+      const Ut = function(e) {
         let a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
         return function(t) {
-          return (0, d.jsx)(Ot, {
+          return (0, d.jsx)(Ht, {
             header: a,
             children: (0, d.jsx)(e, {
               ...t
@@ -4431,16 +4433,16 @@
           })
         }
       };
-      var Ut = t(1085),
-        Rt = t(9683),
-        Wt = t(423);
-      const qt = (0, i.forwardRef)(((e, a) => {
+      var Rt = t(1085),
+        Wt = t(9683),
+        qt = t(423);
+      const Zt = (0, i.forwardRef)(((e, a) => {
           const {
             children: t,
             tag: s = "div"
-          } = e, n = Ut.m[s];
-          return (0, d.jsx)(Rt.X, {
-            features: Wt.H,
+          } = e, n = Rt.m[s];
+          return (0, d.jsx)(Wt.X, {
+            features: qt.H,
             children: (0, d.jsx)(n, {
               ref: a,
               ...e,
@@ -4448,7 +4450,7 @@
             })
           })
         })),
-        Zt = {
+        Yt = {
           visible: {
             opacity: 1
           },
@@ -4456,32 +4458,32 @@
             opacity: 0
           }
         },
-        Yt = {
+        Qt = {
           ease: "easeIn",
           duration: .4
         },
-        Qt = e => {
+        Xt = e => {
           let {
             children: a
           } = e;
-          return (0, d.jsx)(Ie.E.div, Object.assign({
+          return (0, d.jsx)(Ee.E.div, Object.assign({
             className: "rockstargames-componentsf530747be99449caf15a0155061aee75",
-            variants: Zt,
+            variants: Yt,
             initial: "hidden",
             whileInView: "visible",
             viewport: {
               margin: "-20%",
               once: !0
             },
-            transition: Yt
+            transition: Qt
           }, {
             children: a
           }))
         },
-        Xt = e => a => (0, d.jsx)(Qt, {
+        Kt = e => a => (0, d.jsx)(Xt, {
           children: (0, d.jsx)(e, Object.assign({}, a))
         }),
-        Kt = {
+        Jt = {
           visible: {
             opacity: 1,
             y: 0
@@ -4491,33 +4493,33 @@
             y: 40
           }
         },
-        Jt = {
+        es = {
           ease: "easeIn",
           duration: .75
         },
-        es = e => {
+        as = e => {
           let {
             children: a
           } = e;
-          return (0, d.jsx)(Ie.E.div, {
+          return (0, d.jsx)(Ee.E.div, {
             className: "rockstargames-componentse88740b4d3c20ab9f8656e87b324d143",
-            variants: Kt,
+            variants: Jt,
             initial: "hidden",
             whileInView: "visible",
             viewport: {
               margin: "-20%",
               once: !0
             },
-            transition: Jt,
+            transition: es,
             children: a
           })
         },
-        as = e => a => (0, d.jsx)(es, {
+        ts = e => a => (0, d.jsx)(as, {
           children: (0, d.jsx)(e, {
             ...a
           })
         }),
-        ts = {
+        ss = {
           cardOpen: {
             ease: [.77, 0, .175, 1],
             duration: .5
@@ -4535,7 +4537,7 @@
             duration: .05
           }
         },
-        ss = {
+        ns = {
           plainCard: {
             expanded: {
               initial: {
@@ -4691,30 +4693,30 @@
             }
           }
         },
-        ns = function() {
+        rs = function() {
           let e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "collapsed";
-          return ss[arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "imageMask"][e]
+          return ns[arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "imageMask"][e]
         };
-      var rs = t(400);
-      const os = JSON.parse('{"assets":[],"layers":[{"ddd":0,"ind":0,"ty":4,"nm":"Shape Layer 1","ks":{"o":{"k":100},"r":{"k":0},"p":{"k":[300,300,0]},"a":{"k":[0,0,0]},"s":{"k":[244,244,100]}},"ao":0,"shapes":[{"d":1,"ty":"el","s":{"k":[100,100]},"p":{"k":[0,0]},"nm":"Ellipse Path 1","mn":"ADBE Vector Shape - Ellipse"},{"ty":"tm","s":{"k":[{"i":{"x":[0.439],"y":[1.016]},"o":{"x":[0.561],"y":[0.015]},"n":["0p439_1p016_0p561_0p015"],"t":5,"s":[100],"e":[0]},{"t":33.0000013441176}],"ix":1},"e":{"k":[{"i":{"x":[0.439],"y":[1.017]},"o":{"x":[0.561],"y":[0.016]},"n":["0p439_1p017_0p561_0p016"],"t":0,"s":[100],"e":[0]},{"t":30.0000012219251}],"ix":2},"o":{"k":0,"ix":3},"m":1,"ix":2,"nm":"Trim Paths 1","mn":"ADBE Vector Filter - Trim"},{"ty":"st","fillEnabled":true,"c":{"k":[1,1,1,1]},"o":{"k":100},"w":{"k":16},"lc":2,"lj":1,"ml":4,"nm":"Stroke 1","mn":"ADBE Vector Graphic - Stroke"}],"ip":0,"op":900.000036657751,"st":0,"bm":0,"sr":1}],"v":"4.5.3","ddd":0,"ip":1.00000004073083,"op":33.0000013441175,"fr":29.9700012207031,"w":600,"h":600}'),
-        is = JSON.parse('{"v":"5.7.3","fr":60,"ip":0,"op":64,"w":300,"h":300,"nm":"Dot_Loading","ddd":0,"assets":[],"layers":[{"ddd":0,"ind":1,"ty":4,"nm":"center","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":1,"k":[{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":10,"s":[144,144,0],"to":[0,-3.333,0],"ti":[0,0,0]},{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":22,"s":[144,124,0],"to":[0,0,0],"ti":[0,-3.333,0]},{"t":34,"s":[144,144,0]}],"ix":2},"a":{"a":0,"k":[12.5,6,0],"ix":1},"s":{"a":0,"k":[764.558,764.558,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,-0.828],[0.828,0],[0,0.828],[-0.828,0]],"o":[[0,0.828],[-0.828,0],[0,-0.828],[0.828,0]],"v":[[1.5,0],[0,1.5],[-1.5,0],[0,-1.5]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fond 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[17.667,5.833],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Groupe 1","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":76,"st":-62,"bm":0},{"ddd":0,"ind":2,"ty":4,"nm":"right","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":1,"k":[{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":5,"s":[144,144,0],"to":[0,-3.333,0],"ti":[0,0,0]},{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":17,"s":[144,124,0],"to":[0,0,0],"ti":[0,-3.333,0]},{"t":29,"s":[144,144,0]}],"ix":2},"a":{"a":0,"k":[12.5,6,0],"ix":1},"s":{"a":0,"k":[764.558,764.558,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,-0.828],[0.828,0],[0,0.828],[-0.828,0]],"o":[[0,0.828],[-0.828,0],[0,-0.828],[0.828,0]],"v":[[1.5,0],[0,1.5],[-1.5,0],[0,-1.5]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fond 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[12.333,5.833],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Groupe 2","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":76,"st":-62,"bm":0},{"ddd":0,"ind":3,"ty":4,"nm":"left","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":1,"k":[{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":0,"s":[144,144,0],"to":[0,-3.333,0],"ti":[0,0,0]},{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":12,"s":[144,124,0],"to":[0,0,0],"ti":[0,-3.333,0]},{"t":24,"s":[144,144,0]}],"ix":2},"a":{"a":0,"k":[12.5,6,0],"ix":1},"s":{"a":0,"k":[764.558,764.558,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,-0.828],[0.828,0],[0,0.828],[-0.828,0]],"o":[[0,0.828],[-0.828,0],[0,-0.828],[0.828,0]],"v":[[1.5,0],[0,1.5],[-1.5,0],[0,-1.5]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fond 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[7,5.833],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Groupe 3","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":76,"st":-62,"bm":0}],"markers":[]}'),
-        cs = {
+      var os = t(400);
+      const is = JSON.parse('{"assets":[],"layers":[{"ddd":0,"ind":0,"ty":4,"nm":"Shape Layer 1","ks":{"o":{"k":100},"r":{"k":0},"p":{"k":[300,300,0]},"a":{"k":[0,0,0]},"s":{"k":[244,244,100]}},"ao":0,"shapes":[{"d":1,"ty":"el","s":{"k":[100,100]},"p":{"k":[0,0]},"nm":"Ellipse Path 1","mn":"ADBE Vector Shape - Ellipse"},{"ty":"tm","s":{"k":[{"i":{"x":[0.439],"y":[1.016]},"o":{"x":[0.561],"y":[0.015]},"n":["0p439_1p016_0p561_0p015"],"t":5,"s":[100],"e":[0]},{"t":33.0000013441176}],"ix":1},"e":{"k":[{"i":{"x":[0.439],"y":[1.017]},"o":{"x":[0.561],"y":[0.016]},"n":["0p439_1p017_0p561_0p016"],"t":0,"s":[100],"e":[0]},{"t":30.0000012219251}],"ix":2},"o":{"k":0,"ix":3},"m":1,"ix":2,"nm":"Trim Paths 1","mn":"ADBE Vector Filter - Trim"},{"ty":"st","fillEnabled":true,"c":{"k":[1,1,1,1]},"o":{"k":100},"w":{"k":16},"lc":2,"lj":1,"ml":4,"nm":"Stroke 1","mn":"ADBE Vector Graphic - Stroke"}],"ip":0,"op":900.000036657751,"st":0,"bm":0,"sr":1}],"v":"4.5.3","ddd":0,"ip":1.00000004073083,"op":33.0000013441175,"fr":29.9700012207031,"w":600,"h":600}'),
+        cs = JSON.parse('{"v":"5.7.3","fr":60,"ip":0,"op":64,"w":300,"h":300,"nm":"Dot_Loading","ddd":0,"assets":[],"layers":[{"ddd":0,"ind":1,"ty":4,"nm":"center","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":1,"k":[{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":10,"s":[144,144,0],"to":[0,-3.333,0],"ti":[0,0,0]},{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":22,"s":[144,124,0],"to":[0,0,0],"ti":[0,-3.333,0]},{"t":34,"s":[144,144,0]}],"ix":2},"a":{"a":0,"k":[12.5,6,0],"ix":1},"s":{"a":0,"k":[764.558,764.558,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,-0.828],[0.828,0],[0,0.828],[-0.828,0]],"o":[[0,0.828],[-0.828,0],[0,-0.828],[0.828,0]],"v":[[1.5,0],[0,1.5],[-1.5,0],[0,-1.5]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fond 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[17.667,5.833],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Groupe 1","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":76,"st":-62,"bm":0},{"ddd":0,"ind":2,"ty":4,"nm":"right","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":1,"k":[{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":5,"s":[144,144,0],"to":[0,-3.333,0],"ti":[0,0,0]},{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":17,"s":[144,124,0],"to":[0,0,0],"ti":[0,-3.333,0]},{"t":29,"s":[144,144,0]}],"ix":2},"a":{"a":0,"k":[12.5,6,0],"ix":1},"s":{"a":0,"k":[764.558,764.558,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,-0.828],[0.828,0],[0,0.828],[-0.828,0]],"o":[[0,0.828],[-0.828,0],[0,-0.828],[0.828,0]],"v":[[1.5,0],[0,1.5],[-1.5,0],[0,-1.5]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fond 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[12.333,5.833],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Groupe 2","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":76,"st":-62,"bm":0},{"ddd":0,"ind":3,"ty":4,"nm":"left","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":1,"k":[{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":0,"s":[144,144,0],"to":[0,-3.333,0],"ti":[0,0,0]},{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":12,"s":[144,124,0],"to":[0,0,0],"ti":[0,-3.333,0]},{"t":24,"s":[144,144,0]}],"ix":2},"a":{"a":0,"k":[12.5,6,0],"ix":1},"s":{"a":0,"k":[764.558,764.558,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,-0.828],[0.828,0],[0,0.828],[-0.828,0]],"o":[[0,0.828],[-0.828,0],[0,-0.828],[0.828,0]],"v":[[1.5,0],[0,1.5],[-1.5,0],[0,-1.5]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fond 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[7,5.833],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Groupe 3","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":76,"st":-62,"bm":0}],"markers":[]}'),
+        ds = {
           SPINNING: "spinning",
           THREE_DOTS: "threeDots"
         },
-        ds = e => {
+        ls = e => {
           let a, {
-            type: t = cs.SPINNING
+            type: t = ds.SPINNING
           } = e;
           switch (t) {
-            case cs.THREE_DOTS:
-              a = is;
+            case ds.THREE_DOTS:
+              a = cs;
               break;
-            case cs.SPINNING:
+            case ds.SPINNING:
             default:
-              a = os
+              a = is
           }
-          return (0, d.jsx)(rs.Z, {
+          return (0, d.jsx)(os.Z, {
             options: {
               loop: !0,
               autoplay: !0,
@@ -6549,6 +6551,7 @@
         "./cero_b.svg": 1314,
         "./cero_c.svg": 2123,
         "./cero_d.svg": 8064,
+        "./cero_rp.png": 9063,
         "./cero_z.svg": 3353,
         "./djctq_10.svg": 6456,
         "./djctq_12.svg": 2790,
@@ -6596,6 +6599,7 @@
         "./pegi_4.svg": 9194,
         "./pegi_6.svg": 9306,
         "./pegi_7.svg": 4340,
+        "./pegi_rp.png": 8982,
         "./rars_0.svg": 2921,
         "./rars_12.svg": 3749,
         "./rars_16.svg": 8127,
@@ -6605,7 +6609,9 @@
         "./usk_12.svg": 202,
         "./usk_16.svg": 7597,
         "./usk_18.svg": 1187,
-        "./usk_6.svg": 483
+        "./usk_6.svg": 483,
+        "./usk_rp.svg": 7152,
+        "./vaci_rp.png": 4147
       };
 
       function n(e) {
@@ -6630,6 +6636,7 @@
         "./cero_b.svg": 1314,
         "./cero_c.svg": 2123,
         "./cero_d.svg": 8064,
+        "./cero_rp.png": 9063,
         "./cero_z.svg": 3353,
         "./djctq_10.svg": 6456,
         "./djctq_12.svg": 2790,
@@ -6677,6 +6684,7 @@
         "./pegi_4.svg": 9194,
         "./pegi_6.svg": 9306,
         "./pegi_7.svg": 4340,
+        "./pegi_rp.png": 8982,
         "./rars_0.svg": 2921,
         "./rars_12.svg": 3749,
         "./rars_16.svg": 8127,
@@ -6686,7 +6694,9 @@
         "./usk_12.svg": 202,
         "./usk_16.svg": 7597,
         "./usk_18.svg": 1187,
-        "./usk_6.svg": 483
+        "./usk_6.svg": 483,
+        "./usk_rp.svg": 7152,
+        "./vaci_rp.png": 4147
       };
 
       function n(e) {
@@ -6789,6 +6799,10 @@
     8064: e => {
       "use strict";
       e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/16ba95f97d23ba2c8c73b59495f90cdf.svg"
+    },
+    9063: e => {
+      "use strict";
+      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/676b3908098d8b19f1019ce361af45ec.png"
     },
     3353: e => {
       "use strict";
@@ -6978,6 +6992,10 @@
       "use strict";
       e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/caec52daa668bf39bce12bbef32290fa.svg"
     },
+    8982: e => {
+      "use strict";
+      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/a380d3ce353544a356e8ce48f8586804.png"
+    },
     2921: e => {
       "use strict";
       e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/2583ed174e341e7d325ef2abe3c9a9a1.svg"
@@ -7017,6 +7035,14 @@
     483: e => {
       "use strict";
       e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/a4b48a64eff8f222f63d75eb75fb5aba.svg"
+    },
+    7152: e => {
+      "use strict";
+      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/278e84e5a41407499c43a30f545da3e8.svg"
+    },
+    4147: e => {
+      "use strict";
+      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/703a546f7a5109c1e2af87a212135aad.png"
     },
     3709: e => {
       "use strict";

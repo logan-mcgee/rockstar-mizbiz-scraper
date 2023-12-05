@@ -12,47 +12,48 @@
     489: (e, a, t) => {
       "use strict";
       t.d(a, {
-        R: () => p,
-        Z: () => w
+        R: () => k,
+        Z: () => R
       });
-      var r = t(859);
-      const n = (0, r.makeVarNamespace)("@rockstargames/modules-core-sc-user"),
-        i = n("navOpenReactive", !1),
-        s = e => i(e),
-        c = n("jumpScMenuFocusReactive", !1),
-        o = e => c(e),
-        u = n("hasNotificationsReactive", !1),
-        l = e => u(e),
-        d = n("currentCharIdReactive", null),
-        m = e => d(e),
-        f = n("selectedCharacterTupleReactive", null),
-        v = e => f(e),
-        p = n(null),
-        k = n("charactersNeededReactive", null),
-        g = e => k(e),
-        h = n("userDataReactive", null),
-        S = e => h(e),
-        w = () => {
-          const e = (0, r.useReactiveVar)(k),
-            a = (0, r.useReactiveVar)(d),
-            t = (0, r.useReactiveVar)(i),
-            n = (0, r.useReactiveVar)(u),
-            p = (0, r.useReactiveVar)(f);
+      var r = t(859),
+        n = t(929);
+      const i = (0, r.makeVarNamespace)("@rockstargames/modules-core-sc-user"),
+        s = i("navOpenReactive", !1),
+        c = e => s(e),
+        o = i("jumpScMenuFocusReactive", !1),
+        u = e => o(e),
+        l = i("hasNotificationsReactive", !1),
+        d = e => l(e),
+        m = i("currentCharIdReactive", (0, n.lsSettingsReactive)()?.currentCharId),
+        v = e => m(e),
+        f = i("selectedCharacterTupleReactive", null),
+        p = e => f(e),
+        k = i("rockstarIdReactive", null),
+        g = i("charactersNeededReactive", null),
+        h = e => g(e),
+        S = i("userDataReactive", null),
+        w = e => S(e),
+        R = () => {
+          const e = (0, r.useReactiveVar)(g),
+            a = (0, r.useReactiveVar)(m),
+            t = (0, r.useReactiveVar)(s),
+            n = (0, r.useReactiveVar)(l),
+            i = (0, r.useReactiveVar)(f);
           return {
             charactersNeeded: e,
             currentCharId: a,
             hasNotifications: n,
             navOpen: t,
-            userData: (0, r.useReactiveVar)(h),
-            selectedCharacterTuple: p,
-            jumpScMenuFocus: (0, r.useReactiveVar)(c),
-            setCharactersNeeded: g,
-            setCurrentCharId: m,
-            setHasNotifications: l,
-            setNavOpen: s,
-            setSelectedCharacterTuple: v,
-            setUserData: S,
-            setJumpScMenuFocus: o
+            userData: (0, r.useReactiveVar)(S),
+            selectedCharacterTuple: i,
+            jumpScMenuFocus: (0, r.useReactiveVar)(o),
+            setCharactersNeeded: h,
+            setCurrentCharId: v,
+            setHasNotifications: d,
+            setNavOpen: c,
+            setSelectedCharacterTuple: p,
+            setUserData: w,
+            setJumpScMenuFocus: u
           }
         }
     },
@@ -76,7 +77,7 @@
       t.r(a), t.d(a, {
         GtmProvider: () => N,
         RockstarUserProvider: () => h,
-        useGtmTrack: () => b,
+        useGtmTrack: () => C,
         useRockstarUser: () => S
       });
       var r = t(927),
@@ -89,7 +90,7 @@
         l = t(404);
       const {
         graphEnv: d
-      } = (0, i.getScConfigForOrigin)(), m = (0, n.uriForGraphEnv)(d), f = () => {
+      } = (0, i.getScConfigForOrigin)(), m = (0, n.uriForGraphEnv)(d), v = () => {
         const e = (0, n.useRockstarToken)(),
           [a, t] = (0, r.useState)({
             id: null,
@@ -102,7 +103,7 @@
             }
           }),
           [o, d] = (0, r.useState)(!0),
-          [f, , v] = (0, n.useRockstarTokenReactive)(),
+          [v, , f] = (0, n.useRockstarTokenReactive)(),
           p = (0, n.useRockstarTokenPing)(),
           {
             refetch: k
@@ -114,7 +115,7 @@
           }),
           [g, h] = (0, r.useState)(null),
           [S, w] = (0, r.useState)(!1),
-          [x, R] = (0, r.useState)(!1);
+          [R, x] = (0, r.useState)(!1);
         return (0, r.useEffect)((() => {
           (async () => {
             const r = null === e ? null : !!e;
@@ -204,7 +205,7 @@
                 };
               d(!1), t(o), h(!0), (0, c.R)(r)
             }
-            if (!1 === r && !x) {
+            if (!1 === r && !R) {
               try {
                 await (async e => {
                   let {
@@ -233,20 +234,20 @@
                     } = await c.json();
                   return a(o), t(d), o
                 })({
-                  token: f,
-                  tokenPingExpires: v
+                  token: v,
+                  tokenPingExpires: f
                 })
               } catch (e) {}
-              R(!0)
-            }!1 === r && x && (w(!0), h(!1), d(!1)), null === e && p()
+              x(!0)
+            }!1 === r && R && (w(!0), h(!1), d(!1)), null === e && p()
           })()
-        }), [e, S, x]), {
+        }), [e, S, R]), {
           data: a,
           loading: o,
           loggedIn: g
         }
       };
-      var v = t(705);
+      var f = t(705);
       const p = {
           data: null,
           characters: {
@@ -262,20 +263,20 @@
           let {
             children: a
           } = e;
-          const t = f(),
+          const t = v(),
             n = (0, r.useMemo)((() => ({
               ...t,
               hasProvider: !0
             })), [t]);
-          return (0, v.jsx)(g.Provider, {
+          return (0, f.jsx)(g.Provider, {
             value: n,
             children: a
           })
         },
         S = () => (0, r.useContext)(g);
       var w = t(331),
-        x = t(841);
-      const R = (0, r.createContext)(void 0),
+        R = t(841);
+      const x = (0, r.createContext)(void 0),
         N = e => {
           let {
             checkUser: a,
@@ -286,7 +287,7 @@
               const [a, t] = (0, r.useState)([]), [n, i] = (0, r.useState)([]), [s, c] = (0, r.useState)(null), {
                 data: o,
                 loggedIn: u
-              } = (0, x.useRockstarUser)(), l = (e, r) => {
+              } = (0, R.useRockstarUser)(), l = (e, r) => {
                 const n = [];
                 e.forEach((e => {
                   if (-1 === a.indexOf(e)) {
@@ -339,7 +340,7 @@
               }
             }(a),
             i = (0, r.useMemo)((() => n), [n, a]);
-          return (0, v.jsx)(R.Provider, {
+          return (0, f.jsx)(x.Provider, {
             value: i,
             children: t
           })
@@ -347,7 +348,7 @@
         _ = {
           track: () => null
         },
-        b = () => (0, r.useContext)(R) ?? _
+        C = () => (0, r.useContext)(x) ?? _
     },
     244: e => {
       var a = {
