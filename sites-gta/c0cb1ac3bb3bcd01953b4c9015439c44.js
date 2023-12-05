@@ -3,7 +3,7 @@
   [784], {
     495: (e, t, r) => {
       r.r(t), r.d(t, {
-        default: () => N
+        default: () => C
       });
       var s = r(927),
         n = r(7661),
@@ -60,11 +60,10 @@
           header: d
         } = e;
         const {
-          createYouTubePlayer: u,
-          setIsVideoPlayerActive: h,
-          timelines: b
+          setIsVideoPlayerActive: u,
+          playButtonRef: h
         } = (0, g.TR)(), {
-          track: w
+          track: b
         } = (0, c.useGtmTrack)();
         return (0, f.jsxs)("div", {
           className: [m.infoSection, o || ""].join(" "),
@@ -83,7 +82,7 @@
               }), (0, f.jsx)("div", {
                 className: m.blurb,
                 dangerouslySetInnerHTML: {
-                  __html: (v = s, v.split(/\r\n|\r|\n/).reduce(((e, t) => {
+                  __html: (w = s, w.split(/\r\n|\r|\n/).reduce(((e, t) => {
                     let r = e;
                     return t.trim().length && (r += `<p>${t}</p>`), r
                   })))
@@ -95,7 +94,7 @@
               onClick: () => {
                 n.gsap.set(window, {
                   scrollTo: 0
-                }), setTimeout((() => b.playVideoTimeline?.play()), 750), h(!0), a.i.refresh(), setTimeout((() => u()), 3e3), w({
+                }), setTimeout((() => h.current.click()), 750), u(!0), a.i.refresh(), b({
                   event: "video_play",
                   event_category: "video",
                   event_action: "play",
@@ -111,19 +110,19 @@
             })]
           })]
         });
-        var v
+        var w
       }));
       var b = r(8976),
         w = r(3657);
       r(668);
-      const v = {
+      const x = {
           infoSectionFooter: "rockstargames-sites-gtaa6534d16de3de0cad30f0cc18bef18ce",
           logo: "rockstargames-sites-gtad5e76dfe433e84eeb3f450cdb02d64f8",
           platforms: "rockstargames-sites-gtaa5a6a6858bae074d7a93de089b73cd2a",
           rating: "rockstargames-sites-gtaff1b0cadd8996e1e7c9529fe7ada9ec0",
           withoutBorder: "rockstargames-sites-gtaa747edf520af07704d6be4f93c40e226"
         },
-        x = {
+        v = {
           rating_img: "pegi_rp.png",
           rating_link: "https://pegi.info/"
         },
@@ -151,17 +150,17 @@
             rating_img: "usk_rp.svg",
             rating_link: "http://www.usk.de"
           },
-          es: x,
-          fr: x,
+          es: v,
+          fr: v,
           hans: k,
-          it: x,
+          it: v,
           jp: {
             rating_img: "cero_rp.png",
             rating_link: "https://www.cero.gr.jp/"
           },
           kr: k,
           mx: k,
-          pl: x,
+          pl: v,
           ru: k,
           tw: k
         }),
@@ -181,12 +180,12 @@
             o = "esrb_rp.svg" === i.rating_img ? "<p>May contain content inappropriate for children.</p>" : void 0,
             c = "esrb_rp.svg" === i.rating_img ? '<p>Visit <a href="https://esrb.org" target="_blank">esrb.org</a> for rating information.</p>' : void 0;
           return (0, f.jsxs)("div", {
-            className: [v.infoSectionFooter, s || ""].join(" "),
+            className: [x.infoSectionFooter, s || ""].join(" "),
             ref: t,
             children: [(0, f.jsx)("div", {
-              className: v.rating,
+              className: x.rating,
               children: (0, f.jsx)(b.Rating, {
-                className: [v.mobileRating, v.rating, v.withoutBorder].join(" "),
+                className: [x.mobileRating, x.rating, x.withoutBorder].join(" "),
                 titleSlug: n || null,
                 img: i.rating_img,
                 descriptors: o,
@@ -194,7 +193,7 @@
                 footer: c
               })
             }), a.length && (0, f.jsx)("div", {
-              className: [v.platforms, v.hideOnMobile].join(" "),
+              className: [x.platforms, x.hideOnMobile].join(" "),
               children: a.map((e => {
                 let {
                   name: t,
@@ -206,7 +205,7 @@
                 }, s)
               }))
             }), (0, f.jsx)("img", {
-              className: [v.logo, v.hideOnMobile].join(" "),
+              className: [x.logo, x.hideOnMobile].join(" "),
               src: r(4640),
               alt: "Rockstar Games logo"
             })]
@@ -229,18 +228,18 @@
             isVideoPlayerActive: r
           } = (0, g.TR)(), {
             setStandalone: o
-          } = (0, d.useRockstarLocalState)(), p = (0, s.useRef)(), m = (0, s.useRef)(null), b = (0, s.useRef)(null), w = (0, s.useRef)(null), v = (0, s.useRef)(null), x = (0, s.useRef)(null), k = (0, s.useRef)(null), _ = (0, s.useRef)(null), R = (0, s.useRef)(r), {
-            track: N
+          } = (0, d.useRockstarLocalState)(), p = (0, s.useRef)(), m = (0, s.useRef)(null), b = (0, s.useRef)(null), w = (0, s.useRef)(null), x = (0, s.useRef)(null), v = (0, s.useRef)(null), k = (0, s.useRef)(null), _ = (0, s.useRef)(null), R = (0, s.useRef)(r), {
+            track: C
           } = (0, c.useGtmTrack)(), {
-            loading: C,
-            translation: L
+            loading: N,
+            translation: I
           } = (0, g.T_)();
           (0, s.useEffect)((() => {
             n.gsap.set(window, {
               scrollTo: 0
             })
           }), []);
-          const I = e => {
+          const S = e => {
             const t = e.relatedTarget;
             m.current && (b?.current?.heroUIRef?.current.contains(t) ? n.gsap.set(window, {
               scrollTo: 0
@@ -248,17 +247,17 @@
               scrollTo: t
             }))
           };
-          return (0, s.useEffect)((() => (t(!0), o(!0), window.document.body.style.overflowY = "hidden", window.document.addEventListener("focusout", I), () => {
-            window.document.body.style.overflowY = "unset", window.document.removeEventListener("focusout", I), o(!1)
+          return (0, s.useEffect)((() => (t(!0), o(!0), window.document.body.style.overflowY = "hidden", window.document.addEventListener("focusout", S), () => {
+            window.document.body.style.overflowY = "unset", window.document.removeEventListener("focusout", S), o(!1)
           })), []), (0, s.useEffect)((() => {
             R.current = r, p.current && p.current.paused(r)
-          }), [r]), (0, s.useEffect)((() => (x.current && (p.current = i.x.create({
-            content: x.current,
+          }), [r]), (0, s.useEffect)((() => (v.current && (p.current = i.x.create({
+            content: v.current,
             smooth: .5,
             normalizeScroll: !0
           }), p.current.paused(!0)), () => {
             p.current?.kill()
-          })), [x.current]), (0, s.useLayoutEffect)((() => {
+          })), [v.current]), (0, s.useLayoutEffect)((() => {
             const t = n.gsap.matchMedia();
             e?.introTimeline && t.add({
               isVerticalLayout: "(max-width: 1279px)",
@@ -268,11 +267,12 @@
               const {
                 isVerticalLayout: e,
                 isHorizontalLayout: r
-              } = t.conditions, s = b?.current?.heroUIRef?.current, i = b?.current?.heroImagesRefs?.current?.heroLogoRef?.current, o = b?.current?.heroImagesRefs?.current?.heroImagesRef?.current, c = a.i.isTouch ? .75 : 100, l = a.i.isTouch ? n.Expo.easeInOut : "none";
+              } = t.conditions, s = b?.current?.heroUIRef?.current, i = b?.current?.heroImagesRefs?.current?.heroImagesRef?.current, o = a.i.isTouch ? .75 : 100, c = a.i.isTouch ? n.Expo.easeInOut : "none";
               _.current && _.current.progress(0).kill(), _.current = n.gsap.timeline({
                 paused: !0,
                 defaults: {
-                  duration: c
+                  duration: o,
+                  force3D: !0
                 },
                 scrollTrigger: {
                   trigger: m.current,
@@ -297,12 +297,14 @@
                     })
                   },
                   onToggle: e => {
-                    p.current && n.gsap.set(k?.current, {
+                    p.current && (n.gsap.set(k?.current, {
                       display: e.isActive ? "none" : "block"
-                    })
+                    }), -1 !== e.direction && (R || (p.current.paused(!0), setTimeout((() => {
+                      R.current || p.current.paused(!1)
+                    }), 500))))
                   },
                   onLeave: () => {
-                    N({
+                    C({
                       event: "page_section_impression",
                       event_category: "page_section",
                       event_action: "impression",
@@ -322,22 +324,16 @@
                   })
                 }
               }).set(m.current, {
-                height: () => v?.current?.clientHeight,
-                maxHeight: () => v?.current?.clientHeight
+                height: () => x?.current?.clientHeight,
+                maxHeight: () => x?.current?.clientHeight
               }).fromTo(s, {
                 opacity: 1
               }, {
                 opacity: 0,
-                duration: a.i.isTouch ? .4 * c : .2 * c,
+                duration: a.i.isTouch ? .4 * o : .2 * o,
                 ease: a.i.isTouch ? n.Sine.easeInOut : "sine.easeInOut",
                 immediateRender: !1
-              }).fromTo(i, {
-                opacity: 1
-              }, {
-                opacity: 0,
-                duration: (a.i.isTouch, .8 * c),
-                ease: a.i.isTouch ? n.Power2.easeIn : "none"
-              }, "<").fromTo(b?.current?.heroRef?.current, {
+              }).fromTo(b?.current?.heroRef?.current, {
                 backgroundSize: () => 10 * window.innerWidth + "px",
                 maskSize: () => 10 * window.innerWidth + "px",
                 backgroundPosition: () => a.i.isTouch ? `${10*window.innerWidth*-.285}px ${10*window.innerWidth*-.2}px` : `${10*window.innerWidth*-.285}px ${10*window.innerWidth*-.3}px`,
@@ -345,17 +341,23 @@
               }, {
                 backgroundSize: () => w?.current?.children[0].clientWidth || w?.current?.children[0].scrollWidth || 0,
                 maskSize: () => w?.current?.children[0].clientWidth || w?.current?.children[0].scrollWidth || 0,
-                backgroundPosition: () => `${w?.current?.children[0].offsetLeft}px ${w?.current?.children[0].offsetTop}px`,
-                maskPosition: () => `${w?.current?.children[0].offsetLeft}px ${w?.current?.children[0].offsetTop}px`,
-                ease: a.i.isTouch ? l : "power2.easeInOut"
-              }, "<").to(o, {
+                backgroundPosition: () => {
+                  const e = w?.current?.children[0]?.getBoundingClientRect();
+                  return `${e?.x??0}px ${e?.y??0}px`
+                },
+                maskPosition: () => {
+                  const e = w?.current?.children[0]?.getBoundingClientRect();
+                  return `${e?.x??0}px ${e?.y??0}px`
+                },
+                ease: a.i.isTouch ? c : "power2.easeInOut"
+              }, "<").to(i, {
                 "--hero-image-width": a.i.isTouch ? "110%" : "105%",
                 "--hero-image-height": a.i.isTouch ? "110%" : "105%",
                 "--hero-image-offset-bottom": a.i.isTouch ? "110%" : "105%",
-                ease: a.i.isTouch ? l : "none"
-              }, "<").to(o, {
+                ease: a.i.isTouch ? c : "none"
+              }, "<").to(i, {
                 opacity: 0,
-                duration: .2 * c,
+                duration: .2 * o,
                 ease: "power2.easeInOut"
               }, "<85%").fromTo(w.current, {
                 opacity: 0,
@@ -363,13 +365,13 @@
               }, {
                 opacity: 1,
                 pointerEvents: "auto",
-                duration: .2 * c,
+                duration: .2 * o,
                 ease: a.i.isTouch ? n.Power1.easeInOut : "power1.easeInOut"
               }, "<20%")
             }), []), () => {})))
-          }), [r, e?.introTimeline, m?.current, b?.current?.heroRef?.current, b?.current?.heroUIRef?.current, b?.current?.heroLogoRef?.current, b?.current?.heroImagesRef?.current, w?.current, k?.current]), (0, f.jsxs)("div", {
+          }), [r, e?.introTimeline, m?.current, b?.current?.heroRef?.current, b?.current?.heroUIRef?.current, b?.current?.heroImagesRef?.current, w?.current, k?.current]), (0, f.jsxs)("div", {
             className: j.destinationPage,
-            ref: x,
+            ref: v,
             children: [(0, f.jsxs)("div", {
               className: j.destinationContainer,
               ref: m,
@@ -378,12 +380,12 @@
                 className: j.hero,
                 standalone: !0
               }), (0, f.jsx)("div", {
-                ref: v,
+                ref: x,
                 className: j.infoSectionContainer,
                 children: (0, f.jsx)(h, {
-                  blurb: C ? "" : L("d2.destDescription"),
-                  buttonText: C ? "" : L("d2.playbackCTA"),
-                  header: C ? "" : L("d2.destHeadline"),
+                  blurb: N ? "" : I("d2.destDescription"),
+                  buttonText: N ? "" : I("d2.playbackCTA"),
+                  header: N ? "" : I("d2.destHeadline"),
                   className: j.infoSection,
                   ref: w
                 })
@@ -405,7 +407,7 @@
             })]
           })
         },
-        N = () => (0, f.jsx)(g.A1, {
+        C = () => (0, f.jsx)(g.A1, {
           children: (0, f.jsx)("span", {
             children: (0, f.jsx)(R, {})
           })

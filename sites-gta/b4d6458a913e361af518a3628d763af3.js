@@ -148,7 +148,8 @@
                 paused: !0,
                 defaults: {
                   duration: y.th.takeover,
-                  ease: y.QE.takeover
+                  ease: y.QE.takeover,
+                  force3D: !0
                 },
                 onStart: () => {
                   l({
