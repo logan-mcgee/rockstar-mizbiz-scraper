@@ -1,4 +1,4 @@
-/*! For license information please see 344bb98bebe0e40c63511cd5ae607788.js.LICENSE.txt */
+/*! For license information please see 1495e3351912c3b039b8b59f63397d6e.js.LICENSE.txt */
 (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [877], {
     1787: (e, a, t) => {
@@ -4501,7 +4501,7 @@
           const [t, s] = (0, l.useState)(!1), [n, r] = (0, l.useState)(), {
             data: i,
             translation: o
-          } = mc(), [c, d] = (0, l.useState)({}), [g, m] = (0, l.useState)(!1), u = (() => {
+          } = mc(), [c, d] = (0, l.useState)({}), [g, m] = (0, l.useState)(!1), [u, p] = (0, l.useState)(!1), h = (() => {
             const {
               lsSettings: e,
               mutateLSSettings: a
@@ -4533,23 +4533,26 @@
               isInitialExpansion: g,
               doesPageDisplayBanner: o
             }
-          })(), p = (0, l.useRef)(null), h = (0, l.useRef)(null), f = (0, l.useRef)(null), b = (0, l.useRef)(null), y = {
+          })(), f = (0, l.useRef)(null), b = (0, l.useRef)(null), y = (0, l.useRef)(null), w = (0, l.useRef)(null), x = (0, l.useRef)(null), M = {
             createYouTubePlayer: async function() {
               let {
-                onVideoComplete: e
+                onVideoComplete: e,
+                target: a,
+                id: t
               } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-              h.current = await (e => {
+              const s = await (e => {
                 let {
                   onStateChange: a,
                   playerVars: t = {},
                   target: s,
-                  videoId: n
+                  videoId: n,
+                  playerId: r
                 } = e;
-                return new Promise(((e, r) => {
-                  const i = `youtube-player-${n}`,
-                    o = document.createElement("div");
-                  o.id = i, s.appendChild(o);
-                  const l = () => new window.YT.Player(i, {
+                return new Promise(((e, i) => {
+                  const o = `youtube-player-${r}`,
+                    l = document.createElement("div");
+                  l.id = o, s.appendChild(l);
+                  const c = () => new window.YT.Player(o, {
                     videoId: n,
                     width: "100%",
                     height: "100%",
@@ -4560,17 +4563,17 @@
                           const t = await a.target;
                           e(t)
                         } catch (e) {
-                          r(e)
+                          i(e)
                         }
                       },
                       onStateChange: a
                     }
                   });
-                  if (window.YT) l();
+                  if (window.YT) c();
                   else {
                     const e = document.createElement("script");
                     e.src = "https://www.youtube.com/iframe_api", window.onYouTubeIframeAPIReady = () => {
-                      l()
+                      c()
                     }, document.head.appendChild(e)
                   }
                 }))
@@ -4578,7 +4581,7 @@
                 onStateChange: async a => {
                   switch (a.data) {
                     case window.YT.PlayerState.UNSTARTED:
-                      await h.current.mute(), await h.current.playVideo();
+                      await b.current.mute(), await b.current.playVideo();
                       break;
                     case window.YT.PlayerState.ENDED:
                       e?.();
@@ -4588,55 +4591,61 @@
                 playerVars: {
                   rel: 0,
                   autoplay: 1,
+                  playlist: n,
                   controls: 1
                 },
-                target: f.current,
-                videoId: n
-              })
+                target: a.current,
+                videoId: n,
+                playerId: t
+              });
+              b.current = s
             },
             playVideo: async () => {
-              await (h?.current?.playVideo())
+              await (b?.current?.playVideo())
             },
             pauseVideo: async () => {
-              await (h?.current?.pauseVideo())
+              await (b?.current?.pauseVideo())
             },
             stopVideo: async () => {
-              await (h?.current?.stopVideo())
+              await (b?.current?.stopVideo())
             },
             resetVideo: async () => {
-              await (h?.current?.pauseVideo()), await (h?.current?.seekTo(0))
+              await (b?.current?.pauseVideo()), await (b?.current?.seekTo(0))
             }
-          }, w = (e, a) => {
+          }, S = (e, a) => {
             d((t => ({
               ...t,
               [e]: a
             })))
-          }, x = () => {
+          }, T = () => {
             for (const e in c) Object.hasOwn(c, e) && c[e].reverse()
           };
           (0, l.useEffect)((() => {
             r(o("youtubeId"))
           }), [i]), (0, l.useEffect)((() => () => {
-            x()
+            T()
           }), [c]);
-          const M = (0, l.useMemo)((() => ({
-            ctaButtonRef: p,
+          const C = (0, l.useMemo)((() => ({
+            ctaButtonRef: f,
             timelines: c,
-            addTimeline: w,
-            reverseAllTimelines: x,
+            addTimeline: S,
+            reverseAllTimelines: T,
             isStandalone: t,
             setIsStandalone: s,
-            ...u,
+            isModalOpen: u,
+            setIsModalOpen: p,
+            ...h,
             isVideoPlayerActive: g,
             setIsVideoPlayerActive: m,
-            youtubeRef: h,
-            playerRef: f,
-            playButtonRef: b,
-            ...y,
+            youtubeRef: b,
+            heroPlayerRef: w,
+            dialogPlayerRef: x,
+            playButtonRef: y,
+            ...M,
             videoId: n
-          })), [p, i, c, w, x, u, g, m, h, f, b, y, n]);
+          })), [f, i, c, S, T, h, g, m, b, w, x, y, M, n]);
           return (0, _.jsx)(xc.Provider, {
-            value: M,
+            value: C,
             children: a
           })
         },
@@ -4705,19 +4714,17 @@
               timelines: r,
               isVideoPlayerActive: i,
               youtubeRef: o,
-              playerRef: c,
-              resetVideo: d,
-              playVideo: g
+              heroPlayerRef: c,
+              resetVideo: d
             } = Sc();
-          let m;
-          return m = "promo_banner2", (0, l.useLayoutEffect)((() => {
+          let g;
+          return g = "promo_banner2", (0, l.useLayoutEffect)((() => {
             r.playVideoTimeline?.fromTo(t.current, {
               autoAlpha: 0
             }, {
               autoAlpha: 1,
               duration: yc,
-              ease: bc.playVideo.fadeIn,
-              onStart: () => g()
+              ease: bc.playVideo.fadeIn
             }).fromTo(s.current, {
               autoAlpha: 0
             }, {
@@ -4741,7 +4748,7 @@
                   element_placement: "promo_banner2"
                 })),
                 closeRef: s
-              }), (0, _.jsx)("div", {
+              }), i && (0, _.jsx)("div", {
                 className: "rockstargames-modules-core-headerebef736066db14259826ab425227f754",
                 ref: c
               })]
@@ -4805,9 +4812,11 @@
             isExpanded: s,
             createYouTubePlayer: n,
             isStandalone: r,
-            playButtonRef: i
+            playButtonRef: i,
+            playVideo: o,
+            heroPlayerRef: l
           } = Sc(), {
-            track: o
+            track: c
           } = te();
           return (0, _.jsx)("button", {
             type: "button",
@@ -4841,9 +4850,13 @@
                   ease: bc.playVideo.cta
                 })
               };
-              a.playVideoTimeline?.play(), setTimeout((() => n({
-                onVideoComplete: t
-              })), 3e3), o({
+              a.playVideoTimeline?.play(), setTimeout((async () => {
+                await n({
+                  onVideoComplete: t,
+                  target: l,
+                  id: "hero"
+                }), await o()
+              }), 2e3), c({
                 event: "video_play",
                 event_category: "video",
                 event_action: "play",
@@ -5009,7 +5022,7 @@
           }), []), (0, l.useEffect)((() => {
             n?.current && d?.introTimeline && d?.introTimeline.play()
           }), [n?.current, d?.introTimeline, s]), (0, l.useLayoutEffect)((() => {
-            s && d?.playVideoTimeline && r?.current && (d.playVideoTimeline.eventCallback("onStart", (() => {
+            d?.playVideoTimeline && r?.current && (d.playVideoTimeline.eventCallback("onStart", (() => {
               d?.playVideoTimeline.timeScale(1), g(!0), gr.set(r?.current, {
                 background: "transparent"
               })
@@ -9259,7 +9272,7 @@
               event_action: "impression",
               event_category: "page_section",
               event_label: "callout section",
-              element_placement: "callout section"
+              element_placement: `callout section - ${a}`
             }), x(!0))
           }), [y]), !a && !t) return null;
         switch (s) {
@@ -10006,7 +10019,7 @@
         },
         cph_login_prompt_body: {
           id: "cph_login_prompt_body",
-          defaultMessage: "Sign in to Social Club to see all the rewards you can earn, the awards you've won, and the possibilities still ahead of you."
+          defaultMessage: "Sign in to your account to see all the rewards you can earn, the awards you've won, and the possibilities still ahead of you."
         },
         cph_login_prompt_button: {
           id: "cph_login_prompt_button",
@@ -10018,7 +10031,7 @@
         },
         cph_login_prompt_button_helper_link: {
           id: "cph_login_prompt_button_helper_link",
-          defaultMessage: "Join Social Club"
+          defaultMessage: "Create an Account"
         },
         cph_callout_feedback_title: {
           id: "cph_callout_feedback_title",
@@ -10038,11 +10051,27 @@
         },
         cph_loggedin_nochar_body: {
           id: "cph_loggedin_nochar_body",
-          defaultMessage: "We couldn't find a GTA Online character linked to your Social Club account. Link one or switch to a different Social Club account."
+          defaultMessage: "We couldn't find a GTA Online character linked to your account. Link one or switch to a different account."
         },
         cph_loggedin_nochar_button: {
           id: "cph_loggedin_nochar_button",
           defaultMessage: "Link a game account"
+        },
+        cph_reward_locked_alt: {
+          id: "cph_reward_locked",
+          defaultMessage: "Reward locked"
+        },
+        cph_reward_claimable: {
+          id: "cph_reward_claimable",
+          defaultMessage: "Ready to claim"
+        },
+        cph_reward_claimed: {
+          id: "cph_reward_claimed",
+          defaultMessage: "Claimed"
+        },
+        cph_tier_complete: {
+          id: "cph_tier_complete",
+          defaultMessage: "Tier Complete"
         },
         cph_reward_ready_to_claim: {
           id: "cph_reward_ready_to_claim",
@@ -10259,7 +10288,7 @@
           },
           cph_login_prompt_body: {
             id: "cph_login_prompt_body",
-            defaultMessage: "Sign in to Social Club to see all the rewards you can earn, the awards you've won, and the possibilities still ahead of you."
+            defaultMessage: "Sign in to your account to see all the rewards you can earn, the awards you've won, and the possibilities still ahead of you."
           },
           cph_login_prompt_button: {
             id: "cph_login_prompt_button",
@@ -10271,7 +10300,7 @@
           },
           cph_login_prompt_button_helper_link: {
             id: "cph_login_prompt_button_helper_link",
-            defaultMessage: "Join Social Club"
+            defaultMessage: "Create an Account"
           },
           cph_callout_feedback_title: {
             id: "cph_callout_feedback_title",
@@ -10291,11 +10320,35 @@
           },
           cph_loggedin_nochar_body: {
             id: "cph_loggedin_nochar_body",
-            defaultMessage: "We couldn't find a GTA Online character linked to your Social Club account. Link one or switch to a different Social Club account."
+            defaultMessage: "We couldn't find a GTA Online character linked to your account. Link one or switch to a different account."
           },
           cph_loggedin_nochar_button: {
             id: "cph_loggedin_nochar_button",
             defaultMessage: "Link a game account"
+          },
+          cph_reward_locked_alt: {
+            id: "cph_reward_locked",
+            defaultMessage: "Reward locked"
+          },
+          cph_reward_claimable: {
+            id: "cph_reward_claimable",
+            defaultMessage: "Ready to claim"
+          },
+          cph_reward_claimed: {
+            id: "cph_reward_claimed",
+            defaultMessage: "Claimed"
+          },
+          cph_tier_complete: {
+            id: "cph_tier_complete",
+            defaultMessage: "Tier Complete"
+          },
+          cph_reward_ready_to_claim: {
+            id: "cph_reward_ready_to_claim",
+            defaultMessage: "Rewards ready to be claimed"
+          },
+          cph_reward_how_to_claim: {
+            id: "cph_reward_how_to_claim",
+            defaultMessage: "Rewards ready to be claimed. Visit the Career Progress Menu in-game to claim."
           },
           cph_highlights_heading: {
             id: "cph_highlights_heading",
@@ -10714,7 +10767,7 @@
                   title: e.title,
                   children: (0, _.jsx)(yg, {
                     video: e,
-                    active: r === a
+                    size: 1280
                   })
                 }, e.id)))
               })
@@ -10892,13 +10945,15 @@
         }),
         yg = e => {
           let {
-            video: a
+            video: a,
+            size: t = 640
           } = e;
-          const [t] = (0, k.TZ)(a.screencap);
+          const s = `${a.screencap}?im=Resize=${t}`,
+            [n] = (0, k.TZ)(s);
           return (0, _.jsx)("div", {
-            className: [kg.screencap, t ? kg.screencapLoaded : ""].join(" "),
+            className: [kg.screencap, n ? kg.screencapLoaded : ""].join(" "),
             style: {
-              background: `url(${a.screencap}) center/cover`
+              background: `url(${s}) center/cover`
             }
           })
         },
@@ -10906,19 +10961,21 @@
           let {
             gameTitleNecessary: a = !0,
             openInNewWindow: t = !1,
-            video: s
+            video: s,
+            size: n
           } = e;
-          const n = `/videos/${s.id}`,
-            r = {
+          const r = `/videos/${s.id}`,
+            i = {
               className: kg.videoPreview,
               "data-gtm-category": "Videos",
               "data-gtm-action": "Video Click-through",
-              "data-gtm-label": n
+              "data-gtm-label": r
             },
-            i = (0, _.jsxs)("div", {
+            o = (0, _.jsxs)("div", {
               className: kg.card,
               children: [(0, _.jsx)(yg, {
-                video: s
+                video: s,
+                size: n
               }), (0, _.jsxs)("div", {
                 className: kg.info,
                 children: [a ? (0, _.jsx)("div", {
@@ -10935,14 +10992,14 @@
               })]
             });
           return t ? (0, _.jsx)("a", {
-            href: n,
+            href: r,
             target: "_blank",
-            ...r,
-            children: i
+            ...i,
+            children: o
           }) : (0, _.jsx)(gd, {
-            to: n,
-            ...r,
-            children: i
+            to: r,
+            ...i,
+            children: o
           })
         };
       t(400);
@@ -11158,8 +11215,8 @@
                 text: a.formatMessage(e.sc_link_sign_in),
                 href: t,
                 ga: {
-                  event: "account_menu_click",
-                  text: e.defaultMessage,
+                  event: "cta_login",
+                  text: e.sc_link_sign_in.defaultMessage,
                   link_url: t,
                   element_placement: "Account Menu"
                 },
@@ -11168,8 +11225,8 @@
                 text: a.formatMessage(e.sc_link_join_social_club),
                 href: s,
                 ga: {
-                  event: "account_menu_click",
-                  text: e.defaultMessage,
+                  event: "cta_signup",
+                  text: e.sc_link_join_social_club.defaultMessage,
                   link_url: s,
                   element_placement: "Account Menu"
                 },
