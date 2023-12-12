@@ -1,13 +1,16 @@
 /*! For license information please see remote-entry.js.LICENSE.txt */
-System.register(["@rockstargames/intl", "@rockstargames/tina", "@rockstargames/utils"], (function(e, t) {
+System.register(["@rockstargames/intl", "@rockstargames/modules-core-sc-user", "@rockstargames/tina", "@rockstargames/utils"], (function(e, t) {
   var r = {},
     n = {},
-    o = {};
+    o = {},
+    u = {};
   return Object.defineProperty(r, "__esModule", {
     value: !0
   }), Object.defineProperty(n, "__esModule", {
     value: !0
   }), Object.defineProperty(o, "__esModule", {
+    value: !0
+  }), Object.defineProperty(u, "__esModule", {
     value: !0
   }), {
     setters: [function(e) {
@@ -22,10 +25,14 @@ System.register(["@rockstargames/intl", "@rockstargames/tina", "@rockstargames/u
       Object.keys(e).forEach((function(t) {
         o[t] = e[t]
       }))
+    }, function(e) {
+      Object.keys(e).forEach((function(t) {
+        u[t] = e[t]
+      }))
     }],
     execute: function() {
       e((() => {
-        var e, u, a, i, s = {
+        var e, a, i, s, c = {
             6100: (e, t, r) => {
               (0, r(487).s)(1)
             },
@@ -186,7 +193,7 @@ System.register(["@rockstargames/intl", "@rockstargames/tina", "@rockstargames/u
                 return s
               }
 
-              function $(e, t, r) {
+              function P(e, t, r) {
                 if (null == e) return e;
                 var n = [],
                   o = 0;
@@ -195,7 +202,7 @@ System.register(["@rockstargames/intl", "@rockstargames/tina", "@rockstargames/u
                 })), n
               }
 
-              function P(e) {
+              function $(e) {
                 if (-1 === e._status) {
                   var t = e._result;
                   (t = t()).then((function(t) {
@@ -219,20 +226,20 @@ System.register(["@rockstargames/intl", "@rockstargames/tina", "@rockstargames/u
                   ReactCurrentOwner: k
                 };
               t.Children = {
-                map: $,
+                map: P,
                 forEach: function(e, t, r) {
-                  $(e, (function() {
+                  P(e, (function() {
                     t.apply(this, arguments)
                   }), r)
                 },
                 count: function(e) {
                   var t = 0;
-                  return $(e, (function() {
+                  return P(e, (function() {
                     t++
                   })), t
                 },
                 toArray: function(e) {
-                  return $(e, (function(e) {
+                  return P(e, (function(e) {
                     return e
                   })) || []
                 },
@@ -298,7 +305,7 @@ System.register(["@rockstargames/intl", "@rockstargames/tina", "@rockstargames/u
                     _status: -1,
                     _result: e
                   },
-                  _init: P
+                  _init: $
                 }
               }, t.memo = function(e, t) {
                 return {
@@ -353,7 +360,7 @@ System.register(["@rockstargames/intl", "@rockstargames/tina", "@rockstargames/u
             5139: (e, t, r) => {
               "use strict";
               var n = {
-                  "./index": () => Promise.all([r.e(434), r.e(887)]).then((() => () => r(4887))),
+                  "./index": () => Promise.all([r.e(643), r.e(887)]).then((() => () => r(4887))),
                   "./tina": () => r.e(191).then((() => () => r(5191)))
                 },
                 o = (e, t) => (r.R = t, t = r.o(n, e) ? n[e]() : Promise.resolve().then((() => {
@@ -376,89 +383,94 @@ System.register(["@rockstargames/intl", "@rockstargames/tina", "@rockstargames/u
               "use strict";
               e.exports = r
             },
-            7559: e => {
+            4031: e => {
               "use strict";
               e.exports = n
             },
-            2369: e => {
+            7559: e => {
               "use strict";
               e.exports = o
+            },
+            2369: e => {
+              "use strict";
+              e.exports = u
             }
           },
-          c = {};
+          f = {};
 
-        function f(e) {
-          var t = c[e];
+        function l(e) {
+          var t = f[e];
           if (void 0 !== t) return t.exports;
-          var r = c[e] = {
+          var r = f[e] = {
             exports: {}
           };
-          return s[e](r, r.exports, f), r.exports
+          return c[e](r, r.exports, l), r.exports
         }
-        return f.m = s, f.c = c, f.y = t, f.d = (e, t) => {
-          for (var r in t) f.o(t, r) && !f.o(e, r) && Object.defineProperty(e, r, {
+        return l.m = c, l.c = f, l.y = t, l.d = (e, t) => {
+          for (var r in t) l.o(t, r) && !l.o(e, r) && Object.defineProperty(e, r, {
             enumerable: !0,
             get: t[r]
           })
-        }, f.f = {}, f.e = e => Promise.all(Object.keys(f.f).reduce(((t, r) => (f.f[r](e, t), t)), [])), f.u = e => "js/" + {
+        }, l.f = {}, l.e = e => Promise.all(Object.keys(l.f).reduce(((t, r) => (l.f[r](e, t), t)), [])), l.u = e => "js/" + {
           191: "ad66b022b23fb543f40fbf1b8750d1b3",
-          434: "5759db08b901a98a2e01f99730bfd5cd",
-          887: "7be78ac64433a86fa7de2d3d5123a145"
-        } [e] + ".js", f.miniCssF = e => "css/5f654da6403e0c861d6e3c1ed9f52c97.css", f.g = function() {
+          643: "56dc699d14032a7c7f6ef183838e5f26",
+          887: "794ae2697a02bc45cc08014d26cbc09c"
+        } [e] + ".js", l.miniCssF = e => "css/5f654da6403e0c861d6e3c1ed9f52c97.css", l.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
             return this || new Function("return this")()
           } catch (e) {
             if ("object" == typeof window) return window
           }
-        }(), f.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t), e = {}, u = "@rockstargames/modules-core-highlights:", f.l = (t, r, n, o) => {
+        }(), l.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t), e = {}, a = "@rockstargames/modules-core-highlights:", l.l = (t, r, n, o) => {
           if (e[t]) e[t].push(r);
           else {
-            var a, i;
+            var u, i;
             if (void 0 !== n)
               for (var s = document.getElementsByTagName("script"), c = 0; c < s.length; c++) {
-                var l = s[c];
-                if (l.getAttribute("src") == t || l.getAttribute("data-webpack") == u + n) {
-                  a = l;
+                var f = s[c];
+                if (f.getAttribute("src") == t || f.getAttribute("data-webpack") == a + n) {
+                  u = f;
                   break
                 }
               }
-            a || (i = !0, (a = document.createElement("script")).charset = "utf-8", a.timeout = 120, f.nc && a.setAttribute("nonce", f.nc), a.setAttribute("data-webpack", u + n), a.src = t), e[t] = [r];
+            u || (i = !0, (u = document.createElement("script")).charset = "utf-8", u.timeout = 120, l.nc && u.setAttribute("nonce", l.nc), u.setAttribute("data-webpack", a + n), u.src = t), e[t] = [r];
             var p = (r, n) => {
-                a.onerror = a.onload = null, clearTimeout(d);
+                u.onerror = u.onload = null, clearTimeout(d);
                 var o = e[t];
-                if (delete e[t], a.parentNode && a.parentNode.removeChild(a), o && o.forEach((e => e(n))), r) return r(n)
+                if (delete e[t], u.parentNode && u.parentNode.removeChild(u), o && o.forEach((e => e(n))), r) return r(n)
               },
               d = setTimeout(p.bind(null, void 0, {
                 type: "timeout",
-                target: a
+                target: u
               }), 12e4);
-            a.onerror = p.bind(null, a.onerror), a.onload = p.bind(null, a.onload), i && document.head.appendChild(a)
+            u.onerror = p.bind(null, u.onerror), u.onload = p.bind(null, u.onload), i && document.head.appendChild(u)
           }
-        }, f.r = e => {
+        }, l.r = e => {
           "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
             value: "Module"
           }), Object.defineProperty(e, "__esModule", {
             value: !0
           })
-        }, a = {
-          191: [559, 3616],
-          887: [3111, 3657, 9542]
         }, i = {
+          191: [559, 3616],
+          887: [3111, 3657, 6711, 9542]
+        }, s = {
           559: ["default", "./helpers/uploads", 7559],
           3111: ["default", "./messages", 5016],
           3616: ["default", "./properties", 7559],
           3657: ["default", "./hooks", 2369],
+          6711: ["default", "./index", 4031],
           9542: ["default", "./index", 7559]
-        }, f.f.remotes = (e, t) => {
-          f.o(a, e) && a[e].forEach((e => {
-            var r = f.R;
+        }, l.f.remotes = (e, t) => {
+          l.o(i, e) && i[e].forEach((e => {
+            var r = l.R;
             r || (r = []);
-            var n = i[e];
+            var n = s[e];
             if (!(r.indexOf(n) >= 0)) {
               if (r.push(n), n.p) return t.push(n.p);
               var o = t => {
-                  t || (t = new Error("Container missing")), "string" == typeof t.message && (t.message += '\nwhile loading "' + n[1] + '" from ' + n[2]), f.m[e] = () => {
+                  t || (t = new Error("Container missing")), "string" == typeof t.message && (t.message += '\nwhile loading "' + n[1] + '" from ' + n[2]), l.m[e] = () => {
                     throw t
                   }, n.p = 0
                 },
@@ -473,26 +485,26 @@ System.register(["@rockstargames/intl", "@rockstargames/tina", "@rockstargames/u
                     o(e)
                   }
                 },
-                a = (e, t, o) => u(t.get, n[1], r, 0, s, o),
-                s = t => {
-                  n.p = 1, f.m[e] = e => {
+                a = (e, t, o) => u(t.get, n[1], r, 0, i, o),
+                i = t => {
+                  n.p = 1, l.m[e] = e => {
                     e.exports = t()
                   }
                 };
-              u(f, n[2], 0, 0, ((e, t, r) => e ? u(f.I, n[0], 0, e, a, r) : o()), 1)
+              u(l, n[2], 0, 0, ((e, t, r) => e ? u(l.I, n[0], 0, e, a, r) : o()), 1)
             }
           }))
         }, (() => {
-          f.S = {};
+          l.S = {};
           var e = {},
             t = {};
-          f.I = (r, n) => {
+          l.I = (r, n) => {
             n || (n = []);
             var o = t[r];
             if (o || (o = t[r] = {}), !(n.indexOf(o) >= 0)) {
               if (n.push(o), e[r]) return e[r];
-              f.o(f.S, r) || (f.S[r] = {});
-              var u = f.S[r],
+              l.o(l.S, r) || (l.S[r] = {});
+              var u = l.S[r],
                 a = "@rockstargames/modules-core-highlights",
                 i = e => {
                   var t = e => {
@@ -500,9 +512,9 @@ System.register(["@rockstargames/intl", "@rockstargames/tina", "@rockstargames/u
                     var t
                   };
                   try {
-                    var o = f(e);
+                    var o = l(e);
                     if (!o) return;
-                    var u = e => e && e.init && e.init(f.S[r], n);
+                    var u = e => e && e.init && e.init(l.S[r], n);
                     if (o.then) return s.push(o.then(u, t));
                     var a = u(o);
                     if (a && a.then) return s.push(a.catch(t))
@@ -515,24 +527,24 @@ System.register(["@rockstargames/intl", "@rockstargames/tina", "@rockstargames/u
                 var o = u[e] = u[e] || {},
                   i = o[t];
                 (!i || !i.loaded && (0 != !i.eager || a > i.from)) && (o[t] = {
-                  get: () => () => f(5377),
+                  get: () => () => l(5377),
                   from: a,
                   eager: !0
                 })
-              })("react", "18.2.0"), i(5016), i(7559), i(2369)), s.length ? e[r] = Promise.all(s).then((() => e[r] = 1)) : e[r] = 1
+              })("react", "18.2.0"), i(5016), i(4031), i(7559), i(2369)), s.length ? e[r] = Promise.all(s).then((() => e[r] = 1)) : e[r] = 1
             }
           }
         })(), (() => {
           var e;
-          f.g.importScripts && (e = f.g.location + "");
-          var t = f.g.document;
+          l.g.importScripts && (e = l.g.location + "");
+          var t = l.g.document;
           if (!e && t && (t.currentScript && (e = t.currentScript.src), !e)) {
             var r = t.getElementsByTagName("script");
             if (r.length)
               for (var n = r.length - 1; n > -1 && !e;) e = r[n--].src
           }
           if (!e) throw new Error("Automatic publicPath is not supported in this browser");
-          e = e.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/"), f.p = e
+          e = e.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/"), l.p = e
         })(), (() => {
           var e = e => {
               var t = e => e.split(".").map((e => +e == e ? +e : e)),
@@ -594,30 +606,30 @@ System.register(["@rockstargames/intl", "@rockstargames/tina", "@rockstargames/u
               })(r, n) ? r : n), 0)) && u[n]
             },
             n = (e => function(t, r, n, o) {
-              var u = f.I(t);
-              return u && u.then ? u.then(e.bind(e, t, f.S[t], r, n, o)) : e(t, f.S[t], r, n, o)
+              var u = l.I(t);
+              return u && u.then ? u.then(e.bind(e, t, l.S[t], r, n, o)) : e(t, l.S[t], r, n, o)
             })(((e, t, n, o, u) => {
-              var a = t && f.o(t, n) && r(t, n, o);
+              var a = t && l.o(t, n) && r(t, n, o);
               return a ? (e => (e.loaded = 1, e.get()))(a) : u()
             })),
             o = {},
             u = {
-              279: () => n("default", "react", [1, 18, 2, 0], (() => () => f(5377)))
+              279: () => n("default", "react", [1, 18, 2, 0], (() => () => l(5377)))
             },
             a = {
               887: [279]
             };
-          f.f.consumes = (e, t) => {
-            f.o(a, e) && a[e].forEach((e => {
-              if (f.o(o, e)) return t.push(o[e]);
+          l.f.consumes = (e, t) => {
+            l.o(a, e) && a[e].forEach((e => {
+              if (l.o(o, e)) return t.push(o[e]);
               var r = t => {
-                  o[e] = 0, f.m[e] = r => {
-                    delete f.c[e], r.exports = t()
+                  o[e] = 0, l.m[e] = r => {
+                    delete l.c[e], r.exports = t()
                   }
                 },
                 n = t => {
-                  delete o[e], f.m[e] = r => {
-                    throw delete f.c[e], t
+                  delete o[e], l.m[e] = r => {
+                    throw delete l.c[e], t
                   }
                 };
               try {
@@ -633,12 +645,12 @@ System.register(["@rockstargames/intl", "@rockstargames/tina", "@rockstargames/u
             var e = {
               619: 0
             };
-            f.f.miniCss = (t, r) => {
+            l.f.miniCss = (t, r) => {
               e[t] ? r.push(e[t]) : 0 !== e[t] && {
                 887: 1
               } [t] && r.push(e[t] = (e => new Promise(((t, r) => {
-                var n = f.miniCssF(e),
-                  o = f.p + n;
+                var n = l.miniCssF(e),
+                  o = l.p + n;
                 if (((e, t) => {
                     for (var r = document.getElementsByTagName("link"), n = 0; n < r.length; n++) {
                       var o = (a = r[n]).getAttribute("data-href") || a.getAttribute("href");
@@ -673,17 +685,17 @@ System.register(["@rockstargames/intl", "@rockstargames/tina", "@rockstargames/u
           var e = {
             619: 0
           };
-          f.f.j = (t, r) => {
-            var n = f.o(e, t) ? e[t] : void 0;
+          l.f.j = (t, r) => {
+            var n = l.o(e, t) ? e[t] : void 0;
             if (0 !== n)
               if (n) r.push(n[2]);
               else {
                 var o = new Promise(((r, o) => n = e[t] = [r, o]));
                 r.push(n[2] = o);
-                var u = f.p + f.u(t),
+                var u = l.p + l.u(t),
                   a = new Error;
-                f.l(u, (r => {
-                  if (f.o(e, t) && (0 !== (n = e[t]) && (e[t] = void 0), n)) {
+                l.l(u, (r => {
+                  if (l.o(e, t) && (0 !== (n = e[t]) && (e[t] = void 0), n)) {
                     var o = r && ("load" === r.type ? "missing" : r.type),
                       u = r && r.target && r.target.src;
                     a.message = "Loading chunk " + t + " failed.\n(" + o + ": " + u + ")", a.name = "ChunkLoadError", a.type = o, a.request = u, n[1](a)
@@ -697,14 +709,14 @@ System.register(["@rockstargames/intl", "@rockstargames/tina", "@rockstargames/u
                 i = r[2],
                 s = 0;
               if (u.some((t => 0 !== e[t]))) {
-                for (n in a) f.o(a, n) && (f.m[n] = a[n]);
-                i && i(f)
+                for (n in a) l.o(a, n) && (l.m[n] = a[n]);
+                i && i(l)
               }
-              for (t && t(r); s < u.length; s++) o = u[s], f.o(e, o) && e[o] && e[o][0](), e[o] = 0
+              for (t && t(r); s < u.length; s++) o = u[s], l.o(e, o) && e[o] && e[o][0](), e[o] = 0
             },
             r = self.webpackChunk_rockstargames_modules_core_highlights = self.webpackChunk_rockstargames_modules_core_highlights || [];
           r.forEach(t.bind(null, 0)), r.push = t.bind(null, r.push.bind(r))
-        })(), f(9473), f(5139)
+        })(), l(9473), l(5139)
       })())
     }
   }

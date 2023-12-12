@@ -4,9 +4,9 @@
     215: (e, a, t) => {
       t.r(a), t.d(a, {
         card: () => r,
-        careerProgressHub: () => o,
-        components: () => i,
-        engagement: () => _,
+        careerProgressHub: () => _,
+        components: () => o,
+        engagement: () => i,
         highlights: () => l,
         sitesCareers: () => n,
         sitesCirco: () => d,
@@ -22,7 +22,7 @@
             defaultMessage: "Learn More"
           }
         }),
-        o = (0, s.vU)({
+        _ = (0, s.vU)({
           cph_awards_title: {
             id: "cph_awards_title",
             defaultMessage: "Awards"
@@ -109,7 +109,7 @@
           },
           cph_login_prompt_body: {
             id: "cph_login_prompt_body",
-            defaultMessage: "Sign in to Social Club to see all the rewards you can earn, the awards you've won, and the possibilities still ahead of you."
+            defaultMessage: "Sign in to your account to see all the rewards you can earn, the awards you've won, and the possibilities still ahead of you."
           },
           cph_login_prompt_button: {
             id: "cph_login_prompt_button",
@@ -121,7 +121,7 @@
           },
           cph_login_prompt_button_helper_link: {
             id: "cph_login_prompt_button_helper_link",
-            defaultMessage: "Join Social Club"
+            defaultMessage: "Create an Account"
           },
           cph_callout_feedback_title: {
             id: "cph_callout_feedback_title",
@@ -141,11 +141,27 @@
           },
           cph_loggedin_nochar_body: {
             id: "cph_loggedin_nochar_body",
-            defaultMessage: "We couldn't find a GTA Online character linked to your Social Club account. Link one or switch to a different Social Club account."
+            defaultMessage: "We couldn't find a GTA Online character linked to your account. Link one or switch to a different account."
           },
           cph_loggedin_nochar_button: {
             id: "cph_loggedin_nochar_button",
             defaultMessage: "Link a game account"
+          },
+          cph_reward_locked_alt: {
+            id: "cph_reward_locked",
+            defaultMessage: "Reward locked"
+          },
+          cph_reward_claimable: {
+            id: "cph_reward_claimable",
+            defaultMessage: "Ready to claim"
+          },
+          cph_reward_claimed: {
+            id: "cph_reward_claimed",
+            defaultMessage: "Claimed"
+          },
+          cph_tier_complete: {
+            id: "cph_tier_complete",
+            defaultMessage: "Tier Complete"
           },
           cph_reward_ready_to_claim: {
             id: "cph_reward_ready_to_claim",
@@ -200,7 +216,7 @@
             defaultMessage: "Complete unique challenges to earn GTA$, bonus items, and more including RP bonuses for each Level:"
           }
         }),
-        i = (0, s.vU)({
+        o = (0, s.vU)({
           components_ratings_link_alt: {
             id: "components_ratings_link_alt",
             defaultMessage: "Rating: {rating}. Click here learn more about rating systems"
@@ -214,7 +230,7 @@
             defaultMessage: "Select a Language"
           }
         }),
-        _ = (0, s.vU)({
+        i = (0, s.vU)({
           engagement_title: {
             id: "engagement_title",
             defaultMessage: "Get an Extra GTA$300,000"
@@ -363,7 +379,7 @@
           },
           cph_login_prompt_body: {
             id: "cph_login_prompt_body",
-            defaultMessage: "Sign in to Social Club to see all the rewards you can earn, the awards you've won, and the possibilities still ahead of you."
+            defaultMessage: "Sign in to your account to see all the rewards you can earn, the awards you've won, and the possibilities still ahead of you."
           },
           cph_login_prompt_button: {
             id: "cph_login_prompt_button",
@@ -375,7 +391,7 @@
           },
           cph_login_prompt_button_helper_link: {
             id: "cph_login_prompt_button_helper_link",
-            defaultMessage: "Join Social Club"
+            defaultMessage: "Create an Account"
           },
           cph_callout_feedback_title: {
             id: "cph_callout_feedback_title",
@@ -395,11 +411,35 @@
           },
           cph_loggedin_nochar_body: {
             id: "cph_loggedin_nochar_body",
-            defaultMessage: "We couldn't find a GTA Online character linked to your Social Club account. Link one or switch to a different Social Club account."
+            defaultMessage: "We couldn't find a GTA Online character linked to your account. Link one or switch to a different account."
           },
           cph_loggedin_nochar_button: {
             id: "cph_loggedin_nochar_button",
             defaultMessage: "Link a game account"
+          },
+          cph_reward_locked_alt: {
+            id: "cph_reward_locked",
+            defaultMessage: "Reward locked"
+          },
+          cph_reward_claimable: {
+            id: "cph_reward_claimable",
+            defaultMessage: "Ready to claim"
+          },
+          cph_reward_claimed: {
+            id: "cph_reward_claimed",
+            defaultMessage: "Claimed"
+          },
+          cph_tier_complete: {
+            id: "cph_tier_complete",
+            defaultMessage: "Tier Complete"
+          },
+          cph_reward_ready_to_claim: {
+            id: "cph_reward_ready_to_claim",
+            defaultMessage: "Rewards ready to be claimed"
+          },
+          cph_reward_how_to_claim: {
+            id: "cph_reward_how_to_claim",
+            defaultMessage: "Rewards ready to be claimed. Visit the Career Progress Menu in-game to claim."
           },
           cph_highlights_heading: {
             id: "cph_highlights_heading",

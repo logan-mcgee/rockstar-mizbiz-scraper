@@ -375,7 +375,7 @@
         };
       var _ = t(6588),
         F = t.n(_);
-      const T = () => {
+      const O = () => {
           const {
             state: e,
             setState: a,
@@ -467,7 +467,7 @@
             })]
           })
         },
-        O = {
+        T = {
           time: "rockstargames-modules-core-videoplayerd8208db9e68317cc0e4055c94cf06a62",
           disabledControlItem: "rockstargames-modules-core-videoplayeread56ab78db230296c4841fcdb5e7032",
           clr: "rockstargames-modules-core-videoplayerc30193a8318e8f564adaf8790bd6a606"
@@ -489,7 +489,7 @@
             duration: r
           } = t;
           return (0, c.jsx)("div", {
-            className: [O.time, O[a]].join(" "),
+            className: [T.time, T[a]].join(" "),
             children: `${I(n)} / ${I(r)}`
           })
         },
@@ -533,7 +533,7 @@
           } = e;
           return (0, c.jsxs)("div", {
             className: [M.controls, a ? "" : M.controlsInactive].join(" "),
-            children: [(0, c.jsx)(T, {}), (0, c.jsxs)("div", {
+            children: [(0, c.jsx)(O, {}), (0, c.jsxs)("div", {
               className: M.controlsBottom,
               children: [(0, c.jsx)(C, {}), (0, c.jsx)(R, {}), (0, c.jsx)(V, {}), (0, c.jsx)(x, {}), (0, c.jsx)(S, {}), (0, c.jsx)(j, {})]
             })]
@@ -850,46 +850,46 @@
             id: s,
             locale: N
           }), {
-            loading: T,
-            video: O
+            loading: O,
+            video: T
           } = F, I = (0, d.useGtmTrack)(), V = (0, l.useAgegated)(), $ = (0, r.useNavigate)();
           return (0, n.useEffect)((() => {
             S("onVideoComplete", g)
           }), [g]), (0, n.useEffect)((() => {
-            if (!O) return;
+            if (!T) return;
             const {
               files: e
-            } = O, a = e.findIndex((e => e.resolution === v)), t = e.findIndex((e => e.default));
+            } = T, a = e.findIndex((e => e.resolution === v)), t = e.findIndex((e => e.default));
             S("fileIndex", -1 !== a ? a : -1 !== t ? t : 0)
-          }), [v, O]), (0, n.useEffect)((() => {
-            if (!O) return;
+          }), [v, T]), (0, n.useEffect)((() => {
+            if (!T) return;
             let e;
-            e = "clr" === w ? "https://circolocorecords.com" : `https://www.rockstargames.com/videos/${O.id}?embed`;
+            e = "clr" === w ? "https://circolocorecords.com" : `https://www.rockstargames.com/videos/${T.id}?embed`;
             const a = {
-              title: O.title,
-              text: O.description,
+              title: T.title,
+              text: T.description,
               url: e,
-              embed: `<iframe src="https://www.rockstargames.com/videoplayer/?id=${O.id}&locale=en_us&resolution=${O.files[C]?.resolution}&embed" allowfullscreen style="width:640px; height:360px; border:none;"title="Rockstar Games Video: ${O.title}"></iframe>`
+              embed: `<iframe src="https://www.rockstargames.com/videoplayer/?id=${T.id}&locale=en_us&resolution=${T.files[C]?.resolution}&embed" allowfullscreen style="width:640px; height:360px; border:none;"title="Rockstar Games Video: ${T.title}"></iframe>`
             };
             S("shareData", a)
-          }), [w, C, O]), (0, n.useEffect)((() => {
+          }), [w, C, T]), (0, n.useEffect)((() => {
             if (_) {
-              if (S("autoplay", !0), S("running", !0), !O) return;
+              if (S("autoplay", !0), S("running", !0), !T) return;
               I.track({
                 event: "video_autoplay",
                 video_id: s,
-                video_title: O.title,
-                video_type: O.group_type,
+                video_title: T.title,
+                video_type: T.group_type,
                 video_language: N
               })
             }
           }), [_]), (0, n.useEffect)((() => {
             const e = t || j || !1;
-            E(1, "Video started"), S("controlsActive", !0), S("currentTime", 0), S("fullscreen", !1), S("idle", !1), S("meta", null), S("playerEnded", !1), S("playing", e), S("progressBarState", {}), S("settingsMenuOpen", !1), S("shareOpen", !1), S("videoId", s), O && (I.track({
+            E(1, "Video started"), S("controlsActive", !0), S("currentTime", 0), S("fullscreen", !1), S("idle", !1), S("meta", null), S("playerEnded", !1), S("playing", e), S("progressBarState", {}), S("settingsMenuOpen", !1), S("shareOpen", !1), S("videoId", s), T && (I.track({
               event: "video_started",
               video_id: s,
-              video_title: O.title,
-              video_type: O.group_type,
+              video_title: T.title,
+              video_type: T.group_type,
               video_language: N
             }), e && E(1, `Autoplay video with id: [${s}]`, `autoplay[videoId: ${s}]`))
           }), [s]), (0, n.useEffect)((() => {
@@ -909,19 +909,19 @@
             S("context", i)
           }), [i]), (0, n.useEffect)((() => {
             S("resolution", v)
-          }), [v]), !O || T ? (0, c.jsx)(h.Z, {
+          }), [v]), !T || O ? (0, c.jsx)(h.Z, {
             hero: u,
             wrapper: f,
             children: (0, c.jsx)(y.Z, {})
-          }) : ["gtaosession", "gtaostream", "community"].includes(O.group_type) ? O.agegated ? V((0, c.jsx)(K, {
-            id: O.youtube_id
+          }) : ["gtaosession", "gtaostream", "community"].includes(T.group_type) || T.youtubeOnly ? T.agegated ? V((0, c.jsx)(K, {
+            id: T.youtube_id
           })) : (0, c.jsx)(K, {
-            id: O.youtube_id
-          }) : j ? O.agegated ? (0, c.jsx)(h.Z, {
+            id: T.youtube_id
+          }) : j ? T.agegated ? (0, c.jsx)(h.Z, {
             hero: u,
             wrapper: f,
             children: V((0, c.jsx)(B, {}), {
-              bgImg: O.screencap
+              bgImg: T.screencap
             })
           }) : (0, c.jsx)(h.Z, {
             hero: u,
@@ -1358,6 +1358,14 @@
                   directives: []
                 }, {
                   kind: "Field",
+                  name: {
+                    kind: "Name",
+                    value: "youtubeOnly"
+                  },
+                  arguments: [],
+                  directives: []
+                }, {
+                  kind: "Field",
                   alias: {
                     kind: "Name",
                     value: "files"
@@ -1651,7 +1659,7 @@
         }],
         loc: {
           start: 0,
-          end: 1116
+          end: 1136
         }
       };
 
@@ -1670,7 +1678,7 @@
         }))
       }
       a.loc.source = {
-        body: 'query Video(\n    $id: Int!\n    $locale: String!\n    $withTranslations: Boolean! = false\n    $cache: Boolean = true\n) {\n    video(id: $id, locale: $locale) {\n        id\n        title\n        screencap\n        art_layers {\n            src\n            animation\n        }\n        game {\n            id\n            title\n            title_slug\n        }\n        created_formatted\n        created\n        description\n        agegated\n        group_type\n        youtube_id\n        files: files_processed {\n            resolution\n            sprite\n            src\n            default\n        }\n    }\n    related: videos(relatedToId: $id, locale: $locale, limit: 50) {\n        results {\n            id\n            title\n            screencap\n            created_formatted\n            created\n            art_layers {\n                src\n                animation\n            }\n            game {\n                id\n                title\n                title_slug\n            }\n        }\n    }\n    translations(locale: $locale, config: "default")\n        @include(if: $withTranslations) {\n        key\n        value\n    }\n}\n',
+        body: 'query Video(\n    $id: Int!\n    $locale: String!\n    $withTranslations: Boolean! = false\n    $cache: Boolean = true\n) {\n    video(id: $id, locale: $locale) {\n        id\n        title\n        screencap\n        art_layers {\n            src\n            animation\n        }\n        game {\n            id\n            title\n            title_slug\n        }\n        created_formatted\n        created\n        description\n        agegated\n        group_type\n        youtube_id\n        youtubeOnly\n        files: files_processed {\n            resolution\n            sprite\n            src\n            default\n        }\n    }\n    related: videos(relatedToId: $id, locale: $locale, limit: 50) {\n        results {\n            id\n            title\n            screencap\n            created_formatted\n            created\n            art_layers {\n                src\n                animation\n            }\n            game {\n                id\n                title\n                title_slug\n            }\n        }\n    }\n    translations(locale: $locale, config: "default")\n        @include(if: $withTranslations) {\n        key\n        value\n    }\n}\n',
         name: "GraphQL request",
         locationOffset: {
           line: 1,

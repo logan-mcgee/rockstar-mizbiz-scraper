@@ -1,9 +1,9 @@
 (self.webpackChunk_rockstargames_modules_gtao_career_progress_hub = self.webpackChunk_rockstargames_modules_gtao_career_progress_hub || []).push([
-  [197], {
-    1197: (e, a, s) => {
+  [387], {
+    1387: (e, a, s) => {
       "use strict";
       s.d(a, {
-        Z: () => De
+        Z: () => Me
       });
       var r = s(927),
         t = s(6527),
@@ -15,11 +15,12 @@
       s(3657);
       var n = s(9929),
         g = s(6711),
+        l = s(6573),
         p = s(4859),
-        l = s(9113),
-        _ = s(4751),
-        b = s(6864);
-      const u = {
+        _ = s(9113),
+        b = s(4751),
+        u = s(6864);
+      const f = {
           check: "rockstargames-modules-gtao-career-progress-hubc622fd82e3ed025021f058613d9881f0",
           bronze: "rockstargames-modules-gtao-career-progress-hube53ba4714998619cf49789c1563d094e",
           silver: "rockstargames-modules-gtao-career-progress-hube8f36b96a23a013d7dc4eca95b5c7e4e",
@@ -34,7 +35,7 @@
             classes: r = ""
           } = e;
           return (0, i.jsx)("div", {
-            className: [r, u.check, s ? u[s] : null].join(" "),
+            className: [r, f.check, s ? f[s] : null].join(" "),
             children: (0, i.jsxs)("svg", {
               width: "6",
               height: "4",
@@ -53,8 +54,8 @@
             })
           })
         };
-      var f = s(3111);
-      const E = {
+      var E = s(3111);
+      const S = {
           GUNRUNNING: 1471810592,
           LSDRUGWARS: -1859518261,
           CONTRACT: -392727791,
@@ -82,25 +83,26 @@
           DEATHMATCHES: -1232781894,
           VEHICLE: -584819812,
           WEAPONS: -2143405780,
-          ARENAWAR: -57043721
+          ARENAWAR: -57043721,
+          CHOPSHOP: -4750723
         },
-        S = (0, p.makeVar)({
+        h = (0, p.makeVar)({
           awardsKey: null,
           rewardsKey: null
         }),
-        h = e => S({
-          ...S(),
+        k = e => h({
+          ...h(),
           awardsKey: e
         }),
-        k = e => S({
-          ...S(),
+        j = e => h({
+          ...h(),
           rewardsKey: e
         }),
-        j = () => {
-          const e = (0, p.useReactiveVar)(S);
+        P = () => {
+          const e = (0, p.useReactiveVar)(h);
           return {
-            setAwardsKey: h,
-            setRewardsKey: k,
+            setAwardsKey: k,
+            setRewardsKey: j,
             state: e
           }
         },
@@ -110,7 +112,7 @@
           completed: "rockstargames-modules-gtao-career-progress-huba8ea6fc19c62c1938a518d7bccab0c1f",
           locked: "rockstargames-modules-gtao-career-progress-hubbb34c746882ca6f5b0ca4f6421d59239"
         },
-        P = e => {
+        v = e => {
           let {
             metals: a,
             currentLevel: s,
@@ -132,14 +134,14 @@
                   classes: I.completed
                 }) : (0, i.jsx)("div", {
                   className: [I.locked, I[e]].join(" "),
-                  "aria-label": o(f.careerProgressHub.cph_awards_not_unlocked),
+                  "aria-label": o(E.careerProgressHub.cph_awards_not_unlocked),
                   role: "img"
                 })
               }, e)
             }))
           })
         },
-        v = {
+        x = {
           progressBar: "rockstargames-modules-gtao-career-progress-hubd9a25aac53d91f8f27d4e34ff478192b",
           bronze: "rockstargames-modules-gtao-career-progress-hubbcdf522653a2ad75b910d1ffaa26eaee",
           silver: "rockstargames-modules-gtao-career-progress-hubf300b5171a8f02e33767f3be902b1c42",
@@ -158,30 +160,31 @@
           } = e;
           const o = (0, m.Z)();
           return (0, i.jsx)("div", {
-            className: `${t} ${[v.progressBar,a&&v[a],r?"":v.collapsed].join(" ")}`,
+            className: `${t} ${[x.progressBar,a&&x[a],r?"":x.collapsed].join(" ")}`,
             role: "progressbar",
-            "aria-label": o.formatMessage(f.careerProgressHub.cph_progress_bar_aria),
+            "aria-label": o.formatMessage(E.careerProgressHub.cph_progress_bar_aria),
             children: (0, i.jsx)("div", {
-              className: [v.filler, a && v[a]].join(" "),
+              className: [x.filler, a && x[a]].join(" "),
               style: {
                 width: `${s}%`
               },
               children: (0, i.jsx)("span", {
-                className: v.visuallyHidden,
+                className: x.visuallyHidden,
                 children: `${s}%`
               })
             })
           })
         },
-        x = {
+        T = {
           progressCounter: "rockstargames-modules-gtao-career-progress-hubcf064d357c5807bbf02c498b0ccea29d",
           slash: "rockstargames-modules-gtao-career-progress-hubb328e1767737df6d8446386ebb97bd1f",
           bronze: "rockstargames-modules-gtao-career-progress-hubdd5dc90ce0c66689e04a00cf159d6001",
           silver: "rockstargames-modules-gtao-career-progress-hubaada5bb3f550c8a26053e47ba516cc26",
           gold: "rockstargames-modules-gtao-career-progress-hubc3088302e6ffa6faaa30b324090c1e54",
-          platinum: "rockstargames-modules-gtao-career-progress-hubfdb611341b63c7205ea2345e2e211158"
+          platinum: "rockstargames-modules-gtao-career-progress-hubfdb611341b63c7205ea2345e2e211158",
+          light: "rockstargames-modules-gtao-career-progress-hube7c1b78aacf918fd702e16d3db42b27f"
         },
-        T = e => {
+        N = e => {
           let {
             value: a,
             total: s,
@@ -189,15 +192,15 @@
             classes: t
           } = e;
           return (0, i.jsxs)("div", {
-            className: [x.progressCounter, ...t ? [t] : []].join(" "),
+            className: [T.progressCounter, ...t ? [t] : []].join(" "),
             "aria-label": `${a}/${s}`,
             "data-testid": "progressCounter",
             children: [(0, i.jsx)("span", {
               children: void 0 === a ? "--" : a
             }), (0, i.jsx)("span", {
-              className: x.slash
+              className: T.slash
             }), (0, i.jsx)("span", {
-              className: r && x[r],
+              className: r && T[r],
               children: s
             })]
           })
@@ -220,47 +223,47 @@
           tooltipInner: "rockstargames-modules-gtao-career-progress-hubc3b10ba545ad1f815277f55a302a97e1",
           progressCounter: "rockstargames-modules-gtao-career-progress-hubcf08c8ac5d19e66a57cb436514116cfa"
         },
-        N = {
+        W = {
           title: "rockstargames-modules-gtao-career-progress-hubad48e58a2dc3106dc694151f02e2597f",
           bonusList: "rockstargames-modules-gtao-career-progress-hubbae7bd12162bcfaa1c3c1a268637e3d6",
           platinum: "rockstargames-modules-gtao-career-progress-hubb0954d33a610798e8d5daa2c22eb0c8e",
           check: "rockstargames-modules-gtao-career-progress-hubb978e60b8909c59eca38bfaaa31d5fc8",
           isComplete: "rockstargames-modules-gtao-career-progress-hubcc717a8be35838a59d0197f7e35c6f88"
         },
-        W = e => {
+        C = e => {
           let {
             bonuses: a,
             currentLevelComplete: s
           } = e;
           const r = (0, m.Z)();
           return (0, i.jsxs)("div", {
-            className: N.bonuses,
+            className: W.bonuses,
             children: [(0, i.jsx)("h6", {
-              className: N.title,
-              children: r.formatMessage(f.careerProgressHub.cph_awards_bonuses_title)
+              className: W.title,
+              children: r.formatMessage(E.careerProgressHub.cph_awards_bonuses_title)
             }), (0, i.jsx)("ul", {
-              className: N.bonusList,
+              className: W.bonusList,
               children: a.map((e => (0, i.jsxs)("li", {
                 children: [(0, i.jsx)(R, {
                   alt: e.title,
-                  classes: [N.check, s ? N.isComplete : ""].join(" ")
-                }), "TATTOO" === e.type ? r.formatMessage(f.careerProgressHub.cph_awards_bonuses_tattoo, {
+                  classes: [W.check, s ? W.isComplete : ""].join(" ")
+                }), "TATTOO" === e.type ? r.formatMessage(E.careerProgressHub.cph_awards_bonuses_tattoo, {
                   tattooName: e.title
                 }) : e.title, (0, i.jsx)("span", {
-                  className: N.platinum,
-                  children: `(${r.formatMessage(f.careerProgressHub.cph_awards_platinum)})`
+                  className: W.platinum,
+                  children: `(${r.formatMessage(E.careerProgressHub.cph_awards_platinum)})`
                 })]
               }, e.title)))
             })]
           })
         },
         {
-          cdnBase: C
+          cdnBase: w
         } = (0, n.getScConfigForOrigin)(),
-        w = "bronze",
-        G = "platinum",
-        D = [w, "silver", "gold", G],
-        V = e => {
+        G = "bronze",
+        D = "platinum",
+        V = [G, "silver", "gold", D],
+        y = e => {
           let {
             award: a,
             isExpanded: s,
@@ -270,20 +273,20 @@
             position: d,
             hoverFn: m,
             setHoveredAwardId: n,
-            isShowTooltip: p
+            isShowTooltip: l
           } = e;
-          const _ = function(e) {
+          const p = function(e) {
               let a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [];
               const s = {
                 progress: void 0 === e ? void 0 : Number(e),
-                currentLevel: a.length && a.length > 1 ? w : G,
+                currentLevel: a.length && a.length > 1 ? G : D,
                 levelEnd: a.length > 0 ? a[0] : 1,
                 isComplete: !1,
                 percent: 0,
                 metalLevel: 0
               };
               if (void 0 === s.progress || 0 === s.progress) return s;
-              if (a.length > 1 && s.progress >= a[a.length - 1] || !a.length && s.progress >= 1) s.isComplete = !0, s.percent = 100, s.levelEnd = a.length ? a[a.length - 1] : 1, s.currentLevel = a.length ? D[a.length - 1] : s.currentLevel, s.progress = s.levelEnd;
+              if (a.length > 1 && s.progress >= a[a.length - 1] || !a.length && s.progress >= 1) s.isComplete = !0, s.percent = 100, s.levelEnd = a.length ? a[a.length - 1] : 1, s.currentLevel = a.length ? V[a.length - 1] : s.currentLevel, s.progress = s.levelEnd;
               else if (1 === a.length) s.percent = s.progress > 0 ? s.progress / s.levelEnd * 100 : 0, s.isComplete = Boolean(s.progress >= s.levelEnd), s.progress = s.isComplete ? s.levelEnd : s.progress;
               else {
                 let e = a.findIndex(((e, r) => {
@@ -292,23 +295,23 @@
                 }));
                 if (e < 0 && (e = 0), e >= 0) {
                   const c = 0 === e ? 0 : e - 1;
-                  s.currentLevel = D[e], s.levelEnd = a[e], s.metalLevel = e, s.percent = (r = s.progress, t = c, o = s.levelEnd, Math.floor(100 * (r - t) / (o - t) + 0))
+                  s.currentLevel = V[e], s.levelEnd = a[e], s.metalLevel = e, s.percent = (r = s.progress, t = c, o = s.levelEnd, Math.floor(100 * (r - t) / (o - t) + 0))
                 }
               }
               var r, t, o;
               return s
             }(a.playerProgress, a.levels),
-            u = t ? b.E.button : "li",
-            [R, f] = (0, r.useState)(null),
+            b = t ? u.E.button : "li",
+            [f, R] = (0, r.useState)(null),
             [E, S] = (0, r.useState)(null),
             [h, k] = (0, r.useState)(null),
             {
               track: j
             } = (0, g.useGtmTrack)(),
             {
-              styles: I,
-              attributes: v
-            } = (0, l.D)(R, E, {
+              styles: P,
+              attributes: I
+            } = (0, _.D)(f, E, {
               placement: "auto",
               modifiers: [{
                 name: "flip",
@@ -322,8 +325,8 @@
           function x(e) {
             t || (m(e), n(d))
           }(0, r.useEffect)((() => {
-            if (!p && h) clearTimeout(h), k(null);
-            else if (p && !h) {
+            if (!l && h) clearTimeout(h), k(null);
+            else if (l && !h) {
               const e = setTimeout((() => {
                 j({
                   event: "awards_hover",
@@ -336,8 +339,8 @@
               }), 1e3);
               k(e)
             }
-          }), [p, h]);
-          const N = {
+          }), [l, h]);
+          const T = {
               collapsed: {
                 maxHeight: "0",
                 overflow: "hidden",
@@ -360,14 +363,14 @@
                 }
               }
             },
-            V = (0, r.useRef)(null);
+            W = (0, r.useRef)(null);
           return (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsxs)(u, {
-              ..."li" !== u && {
+            children: [(0, i.jsxs)(b, {
+              ..."li" !== b && {
                 layout: "position"
               },
-              className: [O.award, ..._.isComplete ? [O.completed] : [], ...s ? [O.expanded] : [], ...p ? [O.hovered] : [], ...c ? [c] : []].join(" "),
-              ref: t ? V : f,
+              className: [O.award, ...p.isComplete ? [O.completed] : [], ...s ? [O.expanded] : [], ...l ? [O.hovered] : [], ...c ? [c] : []].join(" "),
+              ref: t ? W : R,
               tabIndex: 0,
               ...t && !s && {
                 onClick: () => {
@@ -391,69 +394,69 @@
                 onBlur: () => x(!1)
               },
               "data-testid": "award",
-              children: [(0, i.jsxs)(b.E.div, {
+              children: [(0, i.jsxs)(u.E.div, {
                 className: O.awardContent,
                 children: [(0, i.jsxs)("div", {
                   className: O.awardInfo,
-                  children: [(0, i.jsx)(b.E.div, {
+                  children: [(0, i.jsx)(u.E.div, {
                     className: O.awardImage,
                     layout: "position",
-                    children: (0, i.jsx)(b.E.img, {
-                      src: `${C}/images/games/GTAV/multiplayer/award/${_.currentLevel}/${a.imageName}.png`,
+                    children: (0, i.jsx)(u.E.img, {
+                      src: `${w}/images/games/GTAV/multiplayer/award/${p.currentLevel}/${a.imageName}.png`,
                       alt: a.name,
                       layout: "position"
                     })
-                  }), (0, i.jsxs)(b.E.div, {
+                  }), (0, i.jsxs)(u.E.div, {
                     className: O.awardDetails,
                     layout: !0,
                     children: [(0, i.jsx)("h3", {
                       className: O.awardName,
                       children: a.name
-                    }), t && (0, i.jsx)(b.E.div, {
+                    }), t && (0, i.jsx)(u.E.div, {
                       className: O.awardHint,
                       initial: "collapsed",
-                      variants: N,
+                      variants: T,
                       animate: s ? "expanded" : "collapsed",
                       children: a.hint
-                    }), (0, i.jsx)(T, {
-                      theme: _.currentLevel,
-                      value: _.progress,
-                      total: _.levelEnd,
+                    }), (0, i.jsx)(N, {
+                      theme: p.currentLevel,
+                      value: p.progress,
+                      total: p.levelEnd,
                       classes: O.progressCounter
-                    }), a.bonuses && t && (0, i.jsx)(b.E.div, {
+                    }), a.bonuses && t && (0, i.jsx)(u.E.div, {
                       initial: "collapsed",
-                      variants: N,
+                      variants: T,
                       animate: s ? "expanded" : "collapsed",
-                      children: (0, i.jsx)(W, {
-                        currentLevelComplete: _.isComplete,
+                      children: (0, i.jsx)(C, {
+                        currentLevelComplete: p.isComplete,
                         bonuses: a.bonuses
                       })
                     })]
                   })]
-                }), !_.isComplete && (0, i.jsx)(A, {
-                  theme: _.currentLevel,
-                  percentage: _.percent,
+                }), !p.isComplete && (0, i.jsx)(A, {
+                  theme: p.currentLevel,
+                  percentage: p.percent,
                   isExpanded: s,
                   classes: O.progressBar
                 })]
               }), (0, i.jsx)("div", {
                 className: O.metalLegendContainer,
-                children: (0, i.jsx)(P, {
-                  metals: a.levels && a.levels.length > 1 ? D : [G],
-                  currentLevel: _.currentLevel,
-                  currentLevelComplete: _.isComplete,
+                children: (0, i.jsx)(v, {
+                  metals: a.levels && a.levels.length > 1 ? V : [D],
+                  currentLevel: p.currentLevel,
+                  currentLevelComplete: p.isComplete,
                   classes: O.metalLegend
                 })
               })]
-            }), !t && p && (0, i.jsx)("div", {
+            }), !t && l && (0, i.jsx)("div", {
               className: O.tooltip,
-              style: I.popper,
+              style: P.popper,
               ref: S,
-              ...v,
+              ...I,
               children: (0, i.jsxs)("div", {
                 className: O.tooltipInner,
-                children: [a.hint, a.bonuses && (0, i.jsx)(W, {
-                  currentLevelComplete: _.isComplete,
+                children: [a.hint, a.bonuses && (0, i.jsx)(C, {
+                  currentLevelComplete: p.isComplete,
                   bonuses: a.bonuses
                 })]
               })
@@ -496,7 +499,7 @@
           tooltipInner: "rockstargames-modules-gtao-career-progress-hube6d20188fe54dec4fd00c8dc5dbeb260",
           tooltipIcon: "rockstargames-modules-gtao-career-progress-huba359c5d9306d0c6727ffc0e84213a306"
         },
-        y = [{
+        H = [{
           min: 0,
           max: 767,
           show: 6,
@@ -517,16 +520,16 @@
           show: 16,
           peek: 4
         }],
-        H = () => {
+        L = () => {
           const {
             isMobile: e,
             windowWidth: a
           } = (0, n.useWindowResize)(), {
             state: t
-          } = j(), {
+          } = P(), {
             awardsKey: o
-          } = t, [c, u] = (0, r.useState)([]), R = (0, p.useRockstarTokenPing)(), {
-            loggedIn: E
+          } = t, [c, l] = (0, r.useState)([]), f = (0, p.useRockstarTokenPing)(), {
+            loggedIn: R
           } = (0, g.useRockstarUser)(), {
             selectedCharacterTuple: S
           } = (0, g.useRockstarUserState)(), h = c ? function() {
@@ -536,25 +539,25 @@
               const s = e.levels ? Number(e.levels[e.levels.length - 1]) : 1;
               e.playerProgress && e.playerProgress >= s && (a += 1)
             })), a
-          }(c) : 0, [k, I] = (0, r.useState)(!1), [P, v] = (0, r.useState)(!1), [A, x] = (0, r.useState)(!1), {
-            setBodyIsScrollable: O
+          }(c) : 0, [k, j] = (0, r.useState)(!1), [I, v] = (0, r.useState)(!1), [x, A] = (0, r.useState)(!1), {
+            setBodyIsScrollable: T
           } = (0, n.useBodyScrollable)(), {
-            track: N
-          } = (0, g.useGtmTrack)(), [W, C] = (0, r.useState)(12), [w, G] = (0, r.useState)(4), D = (0, r.useRef)(null), H = (0, r.useRef)(null), [L, M] = (0, r.useState)(!1), {
+            track: O
+          } = (0, g.useGtmTrack)(), [W, C] = (0, r.useState)(12), [w, G] = (0, r.useState)(4), D = (0, r.useRef)(null), V = (0, r.useRef)(null), [L, M] = (0, r.useState)(!1), {
             inView: U
-          } = (0, _.YD)({
+          } = (0, b.YD)({
             threshold: .6
           }), [B, Z] = (0, r.useState)(null), [$, F] = (0, r.useState)(null), [Y, K] = (0, r.useState)(0), {
             formatMessage: q
           } = (0, m.Z)();
           (0, r.useEffect)((() => {
-            y.forEach((e => {
+            H.forEach((e => {
               a > e.min && a < e.max && (C(e.show), G(e.peek))
             }))
           }), [a]), (0, r.useEffect)((() => {
-            k && !e ? O(!0) : k && e && I(!1)
+            k && !e ? T(!0) : k && e && j(!1)
           }), [e]), (0, r.useEffect)((() => {
-            U && !L && (N({
+            U && !L && (O({
               event: "page_section_impression",
               event_action: "impression",
               event_category: "page_section",
@@ -564,14 +567,14 @@
           }), [U]);
           const X = (0, r.useCallback)((() => {
             const a = D.current;
-            e && O(k), a && (k || N({
+            e && T(k), a && (k || O({
               event: "view_all",
               event_action: "view_all",
               event_category: "click",
               event_label: "awards",
               text: "awards",
               element_placement: "awards"
-            })), k && (v(!0), N({
+            })), k && (v(!0), O({
               event: "nav_back",
               event_action: "back",
               event_category: "nav",
@@ -584,13 +587,13 @@
               behavior: "smooth"
             })), setTimeout((() => {
               v(!1)
-            }), 400), I(!k)
+            }), 400), j(!k)
           }), [k, D?.current, e]);
           (0, r.useEffect)((() => {
             (async () => {
-              if (null === E || null === S || !o) return;
+              if (null === R || null === S || !o) return;
               let e = {};
-              if (E && !1 !== S) {
+              if (R && !1 !== S) {
                 const [a, s] = S;
                 e = {
                   platform: a,
@@ -603,9 +606,9 @@
                   error: a = null,
                   result: s
                 } = await (0, n.coreScApiFetch)("games/gtao/awards", {
-                  pingBearer: R,
+                  pingBearer: f,
                   useCache: !0,
-                  ...E ? {} : {
+                  ...R ? {} : {
                     requireBearerToken: !1
                   },
                   query: e
@@ -620,19 +623,19 @@
                   }))
                 })), s
               }(o, a);
-              u(s)
+              l(s)
             })()
-          }), [o, E, S]);
+          }), [o, R, S]);
           const {
             styles: Q,
             attributes: J,
             update: ee
-          } = (0, l.D)(B, $, {
+          } = (0, _.D)(B, $, {
             placement: "bottom-end"
           });
           if (!o || !c.length) return null;
           const ae = e ? "div" : "ul",
-            se = e ? b.E.div : "div";
+            se = e ? u.E.div : "div";
           return (0, i.jsx)("div", {
             className: z.awardsOuter,
             children: (0, i.jsxs)(se, {
@@ -643,17 +646,17 @@
                 damping: 100,
                 duration: .2
               },
-              className: [z.awardsContainer, k && e ? z.modalOpen : "", k && !e ? z.expanded : "", !k && P ? z.isClosed : "", A && !e ? z.hovered : ""].join(" "),
+              className: [z.awardsContainer, k && e ? z.modalOpen : "", k && !e ? z.expanded : "", !k && I ? z.isClosed : "", x && !e ? z.hovered : ""].join(" "),
               ref: D,
               layout: !0,
-              children: [(0, i.jsxs)(b.E.div, {
+              children: [(0, i.jsxs)(u.E.div, {
                 className: z.awardCategoryContainer,
                 layout: !0,
-                children: [(0, i.jsxs)(b.E.div, {
+                children: [(0, i.jsxs)(u.E.div, {
                   className: z.awardsTitle,
                   children: [(0, i.jsxs)("h2", {
                     className: z.awardCategoryName,
-                    children: [k && e && (0, i.jsx)(b.E.button, {
+                    children: [k && e && (0, i.jsx)(u.E.button, {
                       type: "button",
                       onClick: () => X(),
                       layout: !0,
@@ -682,12 +685,12 @@
                       },
                       initial: "closed",
                       animate: k && e ? "open" : "closed",
-                      children: (0, i.jsx)(b.E.img, {
+                      children: (0, i.jsx)(u.E.img, {
                         src: s(9806),
                         alt: "Back"
                       })
                     }), (0, i.jsx)(d.Z, {
-                      ...f.careerProgressHub.cph_awards_title
+                      ...E.careerProgressHub.cph_awards_title
                     })]
                   }), (0, i.jsxs)("div", {
                     className: z.rpInfo,
@@ -699,7 +702,7 @@
                         onMouseOver: ee,
                         onFocus: ee
                       },
-                      "aria-label": q(f.careerProgressHub.cph_reward_ready_to_claim)
+                      "aria-label": q(E.careerProgressHub.cph_reward_ready_to_claim)
                     }), (0, i.jsx)("div", {
                       className: z.tooltip,
                       style: Q.popper,
@@ -708,7 +711,7 @@
                       children: (0, i.jsxs)("div", {
                         className: z.tooltipInner,
                         children: [(0, i.jsx)(d.Z, {
-                          ...f.careerProgressHub.cph_awards_rp_bonus_info
+                          ...E.careerProgressHub.cph_awards_rp_bonus_info
                         }), (0, i.jsxs)("div", {
                           className: z.rpGrid,
                           children: [(0, i.jsx)("div", {
@@ -716,7 +719,7 @@
                             children: (0, i.jsx)("span", {
                               className: [z.rpBronze, z.rpLevel].join(" "),
                               children: (0, i.jsx)(d.Z, {
-                                ...f.careerProgressHub.cph_awards_bronze
+                                ...E.careerProgressHub.cph_awards_bronze
                               })
                             })
                           }), (0, i.jsx)("div", {
@@ -727,7 +730,7 @@
                             children: (0, i.jsx)("span", {
                               className: [z.rpSilver, z.rpLevel].join(" "),
                               children: (0, i.jsx)(d.Z, {
-                                ...f.careerProgressHub.cph_awards_silver
+                                ...E.careerProgressHub.cph_awards_silver
                               })
                             })
                           }), (0, i.jsx)("div", {
@@ -738,7 +741,7 @@
                             children: (0, i.jsx)("span", {
                               className: [z.rpGold, z.rpLevel].join(" "),
                               children: (0, i.jsx)(d.Z, {
-                                ...f.careerProgressHub.cph_awards_gold
+                                ...E.careerProgressHub.cph_awards_gold
                               })
                             })
                           }), (0, i.jsx)("div", {
@@ -749,7 +752,7 @@
                             children: (0, i.jsx)("span", {
                               className: [z.rpPlatinum, z.rpLevel].join(" "),
                               children: (0, i.jsx)(d.Z, {
-                                ...f.careerProgressHub.cph_awards_platinum
+                                ...E.careerProgressHub.cph_awards_platinum
                               })
                             })
                           }), (0, i.jsx)("div", {
@@ -761,7 +764,7 @@
                     })]
                   })]
                 }), (0, i.jsx)("span", {
-                  children: (0, i.jsx)(T, {
+                  children: (0, i.jsx)(N, {
                     value: h,
                     total: c.length,
                     theme: "platinum",
@@ -772,14 +775,14 @@
                 className: z.categoryWrapper,
                 children: [(0, i.jsx)(ae, {
                   className: z.awardCategory,
-                  ref: H,
-                  children: c.map(((a, s) => (0, i.jsx)(V, {
+                  ref: V,
+                  children: c.map(((a, s) => (0, i.jsx)(y, {
                     position: s,
                     award: a,
                     isExpanded: e && k,
                     isMobile: e,
                     toggleModal: e && X,
-                    hoverFn: x,
+                    hoverFn: A,
                     setHoveredAwardId: K,
                     isShowTooltip: s === Y,
                     classes: [z.award, s >= W + w ? z.fadeIn : "", s >= W && s < W + w ? z.peek : ""].join(" ")
@@ -790,9 +793,9 @@
                     type: "button",
                     onClick: () => X(),
                     children: k ? (0, i.jsx)(d.Z, {
-                      ...f.careerProgressHub.cph_progress_rewards_view_less
+                      ...E.careerProgressHub.cph_progress_rewards_view_less
                     }) : (0, i.jsx)(d.Z, {
-                      ...f.careerProgressHub.cph_progress_rewards_view_all
+                      ...E.careerProgressHub.cph_progress_rewards_view_all
                     })
                   })
                 })]
@@ -800,117 +803,269 @@
             })
           })
         };
-      var L, M;
+      var M, U;
 
-      function U() {
-        return U = Object.assign ? Object.assign.bind() : function(e) {
+      function B() {
+        return B = Object.assign ? Object.assign.bind() : function(e) {
           for (var a = 1; a < arguments.length; a++) {
             var s = arguments[a];
             for (var r in s) Object.prototype.hasOwnProperty.call(s, r) && (e[r] = s[r])
           }
           return e
-        }, U.apply(this, arguments)
+        }, B.apply(this, arguments)
       }
-      const B = e => r.createElement("svg", U({
+      const Z = e => r.createElement("svg", B({
         xmlns: "http://www.w3.org/2000/svg",
         fill: "none",
         viewBox: "0 0 96 21"
-      }, e), L || (L = r.createElement("g", {
+      }, e), M || (M = r.createElement("g", {
         fill: "#fff",
         clipPath: "url(#ps5_svg__a)"
       }, r.createElement("path", {
         d: "M10.017 0v19.278l4.361 1.392V4.488c0-.749.337-1.265.883-1.093.748.202.853.898.853 1.654v6.47c2.723 1.31 4.862 0 4.862-3.47 0-3.472-1.257-5.132-4.952-6.404A52.984 52.984 0 0 0 10.017 0Z"
       }), r.createElement("path", {
         d: "m15.208 17.85 7.017-2.5c.793-.291.92-.695.27-.904a4.773 4.773 0 0 0-2.611.134l-4.676 1.646v-2.618l.27-.09a15.875 15.875 0 0 1 3.224-.688 13.81 13.81 0 0 1 6.052.748c2.064.65 2.289 1.608 1.773 2.244a4.982 4.982 0 0 1-1.81 1.137l-9.509 3.419v-2.529ZM2.012 17.58c-2.117-.591-2.469-1.833-1.496-2.544a10.475 10.475 0 0 1 2.401-1.16l6.254-2.244v2.581l-4.488 1.609c-.793.291-.92.695-.27.905.866.199 1.77.152 2.611-.135l2.162-.748v2.244l-.434.075a14.154 14.154 0 0 1-6.733-.546M61.59 17.655a3.433 3.433 0 0 0 3.426-3.441V8.319a2.072 2.072 0 0 1 2.072-2.065h6.65a.09.09 0 0 0 .09-.09V4.982a.09.09 0 0 0-.09-.09h-8.02a3.426 3.426 0 0 0-3.425 3.427v5.895a2.072 2.072 0 0 1-2.073 2.072h-6.56a.09.09 0 0 0-.09.09v1.182a.098.098 0 0 0 .09.09l7.93.007ZM76.573 9.725V4.982a.09.09 0 0 1 .09-.09h18.119a.09.09 0 0 1 .097.09v1.182a.09.09 0 0 1-.097.09H79.394a.09.09 0 0 0-.098.09V9.41a.987.987 0 0 0 .988.98h11.46a3.636 3.636 0 0 1 0 7.264h-15.08a.097.097 0 0 1-.09-.09v-1.182a.09.09 0 0 1 .09-.09h13.712a2.27 2.27 0 1 0 0-4.54h-11.73a2.072 2.072 0 0 1-2.073-2.028ZM49.672 10.39a2.072 2.072 0 0 0 0-4.136H35.773a.09.09 0 0 1-.097-.09V4.982a.09.09 0 0 1 .097-.09h15.261a3.434 3.434 0 0 1 0 6.86H40.471a2.065 2.065 0 0 0-2.065 2.065v3.74a.097.097 0 0 1-.09.09h-2.543a.097.097 0 0 1-.097-.09v-3.74a3.434 3.434 0 0 1 3.433-3.426h10.563Z"
-      }))), M || (M = r.createElement("defs", null, r.createElement("clipPath", {
+      }))), U || (U = r.createElement("defs", null, r.createElement("clipPath", {
         id: "ps5_svg__a"
       }, r.createElement("path", {
         fill: "#fff",
         d: "M0 0h95.755v20.946H0z"
       })))));
-      var Z, $;
+      var $, F;
 
-      function F() {
-        return F = Object.assign ? Object.assign.bind() : function(e) {
+      function Y() {
+        return Y = Object.assign ? Object.assign.bind() : function(e) {
           for (var a = 1; a < arguments.length; a++) {
             var s = arguments[a];
             for (var r in s) Object.prototype.hasOwnProperty.call(s, r) && (e[r] = s[r])
           }
           return e
-        }, F.apply(this, arguments)
+        }, Y.apply(this, arguments)
       }
-      const Y = e => r.createElement("svg", F({
+      const K = e => r.createElement("svg", Y({
           xmlns: "http://www.w3.org/2000/svg",
           fill: "none",
           viewBox: "0 0 160 20"
-        }, e), Z || (Z = r.createElement("g", {
+        }, e), $ || ($ = r.createElement("g", {
           clipPath: "url(#xboxseriesxs_svg__a)"
         }, r.createElement("path", {
           fill: "#fff",
           d: "M10.17 8.02a.063.063 0 0 1 .034.017c3.041 2.274 8.249 7.901 6.661 9.49A10.272 10.272 0 0 1 10.17 20c-2.463 0-4.842-.878-6.696-2.472-1.587-1.59 3.62-7.217 6.661-9.491a.067.067 0 0 1 .035-.017Zm5.299-6.556C13.91.556 12.223 0 10.17 0 8.118 0 6.43.556 4.872 1.463a.038.038 0 0 0-.017.05.04.04 0 0 0 .05.017c1.969-.418 4.96 1.254 5.244 1.422a.034.034 0 0 0 .043 0c.282-.167 3.277-1.84 5.244-1.422a.04.04 0 0 0 .05-.017.038.038 0 0 0-.018-.05v.001ZM3.05 2.87a.178.178 0 0 0-.045.034A9.925 9.925 0 0 0 .024 9.31a9.88 9.88 0 0 0 2.056 6.75c.005.008.014.015.025.018.01.003.022.002.031-.003a.04.04 0 0 0 .012-.051C1.37 13.667 5.334 7.953 7.38 5.556a.046.046 0 0 0 .015-.03.043.043 0 0 0-.018-.033C4.275 2.461 3.221 2.783 3.051 2.87Zm9.912 2.625a.043.043 0 0 0-.018.034.045.045 0 0 0 .014.029c2.047 2.395 6.011 8.11 5.235 10.466a.04.04 0 0 0 .01.051.044.044 0 0 0 .057-.016 9.88 9.88 0 0 0 2.056-6.749 9.925 9.925 0 0 0-2.982-6.406.178.178 0 0 0-.045-.034c-.17-.086-1.225-.408-4.327 2.625Zm22.431 10.667h-2.082l-3.582-4.848-3.582 4.848H24.07l4.623-6.256-4.263-5.766h2.081l3.22 4.357 3.221-4.357h2.08L30.77 9.904l4.623 6.257Zm10.802-3.418c0 1.055-.356 1.898-1.059 2.505-.703.606-1.723.913-3.033.913H36.37v-5.354h-2.724l1.133-1.534h1.59V4.14h5.493c1.232 0 2.19.29 2.846.863.656.573.99 1.337.99 2.27 0 1.155-.533 2.032-1.582 2.605.678.259 1.2.638 1.547 1.13.357.51.542 1.116.531 1.735h.001Zm-7.958-3.47h3.503c.706 0 1.243-.155 1.594-.462.35-.308.529-.774.529-1.39 0-.53-.186-.95-.55-1.249-.366-.298-.893-.45-1.57-.45H38.24l-.002 3.551Zm6.073 3.435c0-.63-.194-1.11-.576-1.426-.382-.315-.966-.475-1.735-.475h-3.762v3.77H42c.746 0 1.324-.164 1.718-.485.395-.322.593-.786.593-1.384Zm14.443-2.559c0 .93-.137 1.783-.408 2.535a5.748 5.748 0 0 1-1.222 2.005 5.377 5.377 0 0 1-1.907 1.305c-.718.289-1.533.435-2.421.435-.9 0-1.72-.146-2.438-.435a5.217 5.217 0 0 1-1.89-1.304 5.663 5.663 0 0 1-1.236-1.997c-.273-.753-.412-1.61-.412-2.544 0-.932.139-1.783.412-2.539a5.819 5.819 0 0 1 1.236-2.017 5.213 5.213 0 0 1 1.89-1.292c.718-.286 1.538-.431 2.438-.431.888 0 1.703.145 2.42.43.724.29 1.375.73 1.907 1.292a5.837 5.837 0 0 1 1.223 2.02c.27.754.408 1.61.408 2.537Zm-10 0c0 1.415.372 2.55 1.108 3.373.724.833 1.71 1.256 2.931 1.256 1.222 0 2.208-.423 2.93-1.256.725-.813 1.092-1.945 1.092-3.373 0-1.427-.367-2.565-1.091-3.388-.735-.823-1.721-1.24-2.931-1.24s-2.197.417-2.932 1.24c-.732.845-1.105 1.986-1.105 3.388h-.003Zm15.896-.245 4.26-5.765h-2.08l-3.22 4.357-3.22-4.357h-2.08l4.26 5.765-4.622 6.256h2.081l3.583-4.848 3.581 4.848h2.082l-4.626-6.256Zm20.17-4.111v3.483h6.074v1.533h-6.07v3.702h6.866v1.651h-8.733V4.14h8.733V5.79l-6.87.002Zm-4.293 4.8c-.61-.55-1.624-.975-3.013-1.266l-1.062-.22c-1.008-.21-1.708-.47-2.081-.77-.37-.278-.558-.69-.558-1.232 0-.53.21-.944.626-1.232.415-.287 1.03-.434 1.821-.434 1.017 0 1.766.183 2.224.543.457.36.715.93.772 1.696v.017h1.85v-.018c-.024-1.178-.443-2.117-1.248-2.79-.806-.675-2.02-1.015-3.617-1.015-1.321 0-2.385.299-3.16.89-.775.59-1.172 1.388-1.172 2.378 0 .99.325 1.774.965 2.336.64.562 1.598.97 2.85 1.216l1.045.22c1.03.221 1.751.479 2.15.762.399.284.592.687.592 1.207 0 .641-.243 1.138-.72 1.475-.478.337-1.176.51-2.07.51-1.08 0-1.906-.225-2.454-.667-.548-.44-.832-1.118-.848-2.006v-.026h-1.867v.017c.012 1.38.472 2.445 1.368 3.162.896.716 2.163 1.081 3.769 1.081 1.48 0 2.656-.324 3.495-.963s1.265-1.528 1.265-2.64c0-.93-.31-1.682-.921-2.233l-.001.002Zm22.396 4.085-.12-1.867c-.023-.663-.173-1.201-.448-1.6-.267-.39-.689-.67-1.255-.841.624-.205 1.119-.556 1.469-1.041.359-.5.543-1.124.543-1.854 0-1.033-.38-1.856-1.13-2.444-.751-.589-1.785-.89-3.085-.89h-5.342V16.16h1.868v-4.932h3.525c.7 0 1.214.16 1.526.474.312.315.492.864.526 1.63l.051 1.277c.012.697.134 1.215.363 1.542l.005.008h1.921l-.015-.027c-.209-.354-.345-.844-.401-1.456l-.001.002Zm-7.497-8.956h3.371c.769 0 1.367.164 1.778.485.412.32.62.803.62 1.434 0 .654-.202 1.167-.602 1.519-.399.352-.96.534-1.657.534h-3.509l-.001-3.972ZM104.8 16.16h1.868V4.139H104.8V16.16Zm12.468-10.37V4.14h-8.733V16.16h8.733v-1.652h-6.863v-3.701h6.073V9.273h-6.073V5.791h6.863Zm9.953 4.801c-.61-.55-1.624-.975-3.013-1.267l-1.061-.218c-1.008-.212-1.709-.472-2.082-.772-.37-.277-.558-.69-.558-1.231 0-.53.211-.945.626-1.232.415-.287 1.03-.434 1.821-.434 1.018 0 1.767.182 2.224.543.457.36.716.93.772 1.696v.017h1.849v-.019c-.023-1.177-.443-2.116-1.248-2.79-.804-.674-2.021-1.014-3.616-1.014-1.322 0-2.385.298-3.161.889-.776.59-1.171 1.389-1.171 2.379s.325 1.774.965 2.336c.64.562 1.597.97 2.85 1.216l1.044.219c1.032.222 1.755.48 2.15.763.396.284.592.687.592 1.206 0 .642-.242 1.139-.72 1.476-.478.337-1.176.51-2.07.51-1.08 0-1.905-.226-2.453-.667-.549-.44-.833-1.118-.848-2.006v-.024h-1.867v.017c.011 1.38.471 2.445 1.368 3.162.896.716 2.162 1.081 3.769 1.081 1.481 0 2.655-.324 3.494-.963.839-.639 1.266-1.528 1.266-2.64 0-.93-.31-1.682-.922-2.233Zm19.884-7.954h-.934v15.025h.933l.001-15.025Zm-8.55 7.267 4.259-5.765h-2.081l-3.22 4.357-3.221-4.357h-2.077l4.26 5.765-4.623 6.256h2.081l3.582-4.848 3.582 4.848h2.079l-4.621-6.256Zm20.523.687c-.61-.55-1.623-.975-3.013-1.267l-1.061-.218c-1.008-.212-1.709-.472-2.081-.772-.371-.277-.559-.69-.559-1.231 0-.53.211-.945.626-1.232.416-.287 1.03-.434 1.822-.434 1.017 0 1.766.182 2.223.543.456.36.718.93.775 1.696v.017h1.85v-.019c-.023-1.177-.443-2.116-1.248-2.79-.805-.674-2.02-1.014-3.616-1.014-1.322 0-2.385.298-3.161.889-.776.59-1.171 1.389-1.171 2.379s.324 1.774.965 2.336c.64.562 1.597.97 2.85 1.216l1.044.219c1.031.222 1.755.48 2.15.763.396.284.592.687.592 1.206 0 .642-.242 1.139-.72 1.476-.478.337-1.176.51-2.07.51-1.08 0-1.906-.226-2.454-.667-.547-.44-.832-1.118-.847-2.006v-.024h-1.871v.017c.011 1.38.471 2.445 1.367 3.162.897.716 2.164 1.081 3.77 1.081 1.481 0 2.655-.324 3.495-.963.84-.639 1.265-1.528 1.265-2.64 0-.93-.31-1.682-.922-2.233Z"
-        }))), $ || ($ = r.createElement("defs", null, r.createElement("clipPath", {
+        }))), F || (F = r.createElement("defs", null, r.createElement("clipPath", {
           id: "xboxseriesxs_svg__a"
         }, r.createElement("path", {
           fill: "#fff",
           d: "M0 0h160v20H0z"
         }))))),
-        K = {
+        q = {
           challenge: "rockstargames-modules-gtao-career-progress-hubf0fe7ab67089ae7aced936b917b1717b",
           content: "rockstargames-modules-gtao-career-progress-hubc5e12803cde586cef24094e08e97e3ab",
           title: "rockstargames-modules-gtao-career-progress-huba5944b6c1dd5293c276f5a9919eeb866",
-          challengeInfo: "rockstargames-modules-gtao-career-progress-hubcd846f1008374eac9287842bbc247bda"
+          isComplete: "rockstargames-modules-gtao-career-progress-hubaa3783ddbfc7fcc44f5008eb80b7b8f4",
+          progressCounter: "rockstargames-modules-gtao-career-progress-hube078709f464a55b1ab8655a33e2969d9",
+          challengeInfo: "rockstargames-modules-gtao-career-progress-hubcd846f1008374eac9287842bbc247bda",
+          status: "rockstargames-modules-gtao-career-progress-hubc38220fc9af63adec001a57ceaf3524c",
+          check: "rockstargames-modules-gtao-career-progress-hubef811a81a6ea22dd08a296ee0f0d0add",
+          lock: "rockstargames-modules-gtao-career-progress-hubaab1d2b6b3aabace91ce937206a0ed1a",
+          progressCounterContainer: "rockstargames-modules-gtao-career-progress-hubb612c346fa9f072293da44b4646b0415",
+          chevron: "rockstargames-modules-gtao-career-progress-hubfaaa2263321f924bc0788b544999f75c",
+          taskList: "rockstargames-modules-gtao-career-progress-hubf46e96175131fd59c9423e1f07006a27",
+          task: "rockstargames-modules-gtao-career-progress-hubaa93b7e5206feb972c21d898ab8dab0a",
+          taskComplete: "rockstargames-modules-gtao-career-progress-hubf40e7fba91753254713531cd302d185e",
+          open: "rockstargames-modules-gtao-career-progress-hube22f4ba2c52eb984131cf0e3c069ae1d",
+          progressBar: "rockstargames-modules-gtao-career-progress-hubc8cdc26a8e3853b165eb9b67c4c650c3"
         },
-        q = e => {
+        X = {
+          lock: "rockstargames-modules-gtao-career-progress-hubb381ebb83ac0e680c3ef3212f37c6e7e"
+        },
+        Q = e => {
           let {
-            challenge: a
+            alt: a,
+            classes: s = ""
           } = e;
-          const {
-            hint: s
-          } = a;
           return (0, i.jsx)("div", {
-            className: [K.challenge].join(" "),
-            children: (0, i.jsx)("div", {
-              className: K.challengeInfo,
-              children: (0, i.jsx)("div", {
-                className: K.content,
-                children: (0, i.jsx)("h4", {
-                  className: K.title,
-                  children: s
-                })
-              })
+            className: [s, X.lock].join(" "),
+            children: (0, i.jsxs)("svg", {
+              width: "22",
+              height: "27",
+              viewBox: "0 0 22 27",
+              fill: "none",
+              xmlns: "http://www.w3.org/2000/svg",
+              children: [(0, i.jsx)("title", {
+                children: a
+              }), (0, i.jsx)("path", {
+                opacity: "0.9",
+                d: "M20.6592 11.328H18.6515V7.62973C18.6176 3.4098 15.2065 0 11.0017 0C6.79679 0 3.38574 3.41105 3.35313 7.62973V11.328H1.34287C0.620527 11.328 0.0361328 11.9136 0.0361328 12.6347V25.6933C0.0361328 26.4156 0.621781 27 1.34287 27H20.658C21.3803 27 21.9647 26.4144 21.9647 25.6933V12.6347C21.9647 11.9124 21.379 11.328 20.658 11.328H20.6592ZM5.98541 7.62973C6.00924 4.86451 8.24524 2.62977 11.0004 2.62977C13.7556 2.62977 15.9928 4.86451 16.0154 7.62973V11.328H5.98541V7.62973ZM12.5881 20.0199V22.054C12.5881 22.9356 11.8732 23.6504 10.9916 23.6504C10.11 23.6504 9.39521 22.9356 9.39521 22.054V20.0073C8.60515 19.4856 8.08472 18.5902 8.08472 17.5732C8.08472 15.9617 9.3902 14.6562 11.0017 14.6562C12.6131 14.6562 13.9186 15.9617 13.9186 17.5732C13.9186 18.599 13.3894 19.4994 12.5881 20.0199Z",
+                fill: "white",
+                fillOpacity: "0.4"
+              })]
             })
           })
+        },
+        J = e => {
+          let {
+            challenge: a,
+            isLocked: s,
+            isOpen: r,
+            onClick: t,
+            activeTier: o
+          } = e;
+          const {
+            hint: c,
+            playerProgress: d,
+            totalProgress: m,
+            tasks: n
+          } = a;
+          let l = "div";
+          const {
+            track: p
+          } = (0, g.useGtmTrack)(), _ = d >= m, {
+            loggedIn: b
+          } = (0, g.useRockstarUser)(), f = o + 1;
+          return l = n?.length ? u.E.button : u.E.div, (0, i.jsxs)(l, {
+            className: [q.challenge, _ && !s ? q.isComplete : "", r ? q.open : q.closed].join(" "),
+            onClick: () => {
+              t(), p({
+                event: r ? "cta_collapse" : "cta_expand",
+                text: c,
+                element_placement: `Tier ${f} - Subchallenge`
+              })
+            },
+            children: [(0, i.jsxs)("div", {
+              className: q.challengeInfo,
+              children: [b && (0, i.jsx)("div", {
+                className: q.status,
+                children: s ? (0, i.jsx)(Q, {
+                  alt: "Locked",
+                  classes: q.lock
+                }) : (0, i.jsx)(R, {
+                  alt: _ ? "Completed" : "In Progress",
+                  classes: [q.check, _ ? q.isComplete : ""].join(" ")
+                })
+              }), (0, i.jsxs)("div", {
+                className: q.content,
+                children: [(0, i.jsx)("h4", {
+                  className: q.title,
+                  children: c
+                }), (0, i.jsxs)("div", {
+                  className: q.progressCounterContainer,
+                  children: [(0, i.jsx)(N, {
+                    theme: "light",
+                    value: b ? d : void 0,
+                    total: m,
+                    classes: q.progressCounter
+                  }), n?.length && (0, i.jsx)("div", {
+                    className: [q.chevron, q.expandedChevron].join(" ")
+                  })]
+                }), n?.length && (0, i.jsx)(u.E.ul, {
+                  className: q.taskList,
+                  animate: r ? "open" : "closed",
+                  variants: {
+                    open: {
+                      opacity: 1,
+                      height: "auto",
+                      paddingTop: "var(--padding-sm)"
+                    },
+                    closed: {
+                      opacity: 0,
+                      height: 0
+                    }
+                  },
+                  transition: {
+                    duration: .2
+                  },
+                  children: n.map((e => (0, i.jsxs)("li", {
+                    className: q.task,
+                    children: [(0, i.jsx)("div", {
+                      className: q.status,
+                      children: (0, i.jsx)(R, {
+                        alt: e.isComplete ? "Completed" : "In Progress",
+                        classes: [q.check, e.isComplete ? q.isComplete : ""].join(" ")
+                      })
+                    }), (0, i.jsx)("p", {
+                      className: e.isComplete ? q.taskComplete : "",
+                      children: e.hint
+                    })]
+                  }, e.hint)))
+                })]
+              })]
+            }), !_ && !s && b && (0, i.jsx)(A, {
+              percentage: d / m * 100,
+              classes: q.progressBar
+            })]
+          })
         };
-      var X = s(2965),
-        Q = s(3118);
-      const J = e => {
+      var ee = s(2965),
+        ae = s(3118);
+      const se = {
+          badge: "rockstargames-modules-gtao-career-progress-hubc5458a0524d6b7a215ebe2ef6a03f6a9",
+          ready: "rockstargames-modules-gtao-career-progress-hubd2cc9bc0109626d8d405696cb1d9b08e",
+          check: "rockstargames-modules-gtao-career-progress-hubc630e44a20c92566f5fc37ddb37b9f09",
+          locked: "rockstargames-modules-gtao-career-progress-hubfdfd92e0937de9af0ba7c24c1bf624f7",
+          hiddenSpacer: "rockstargames-modules-gtao-career-progress-hubd16ebe5d8ac91ce11e0b7cbd2e91f018"
+        },
+        re = e => {
+          let {
+            variant: a
+          } = e;
+          const s = (0, m.Z)();
+          if (!a) return null;
+          const r = {
+            claimed: s.formatMessage(E.careerProgressHub.cph_reward_claimed),
+            ready: s.formatMessage(E.careerProgressHub.cph_reward_claimable)
+          };
+          return "locked" === a ? (0, i.jsx)("span", {
+            className: se.locked,
+            "aria-label": s.formatMessage(E.careerProgressHub.cph_reward_locked_alt)
+          }) : "hidden" === a ? (0, i.jsx)("span", {
+            className: se.hiddenSpacer,
+            "aria-hidden": "true"
+          }) : (0, i.jsxs)("span", {
+            className: [se.badge, se[a]].join(" "),
+            children: ["claimed" === a && (0, i.jsx)(R, {
+              alt: r.claimed,
+              classes: se.check
+            }), r[a]]
+          })
+        },
+        te = e => {
           let {
             reward: a,
-            ...t
+            tierCompleted: t,
+            tierLocked: o,
+            ...c
           } = e;
-          const [o] = (0, r.useState)(`${(e=>{try{return s(1782)(`./${e}.jpg`)}catch(e){return s(5287)}})(a.imageName)}?im=Resize=960`);
-          return (0, i.jsx)(b.E.div, {
+          const [d] = (0, r.useState)(`${(e=>{try{return s(1782)(`./${e}.jpg`)}catch(e){return s(5287)}})(a.imageName)}?im=Resize=960`), {
+            loggedIn: m
+          } = (0, g.useRockstarUser)();
+          return (0, i.jsx)(u.E.div, {
             layout: !0,
-            ...t,
+            ...c,
             className: "rockstargames-modules-gtao-career-progress-huba20a19e8c4630691e4d79cd1f2fb8a63",
             children: (0, i.jsxs)("div", {
               className: "rockstargames-modules-gtao-career-progress-hubd09755f70fab803f46567d4b3af1b5b7",
               children: [(0, i.jsx)("div", {
                 className: "rockstargames-modules-gtao-career-progress-hubdbe370d1c2a217e3cba7d09cbaa7d12b",
                 children: (0, i.jsx)("img", {
-                  src: o,
+                  src: d,
                   alt: a.label
                 })
-              }), (0, i.jsx)("div", {
+              }), (0, i.jsxs)("div", {
                 className: "rockstargames-modules-gtao-career-progress-hubd20738fb38f98c1862571727e5e19cd2",
-                children: (0, i.jsx)("h4", {
+                children: [(0, i.jsx)("h4", {
                   children: a.label
-                })
+                }), o && m && (0, i.jsx)(re, {
+                  variant: "locked"
+                }), !o && t && m && (0, i.jsx)(re, {
+                  variant: a.isCollected ? "claimed" : "ready"
+                }), !o && !t && m && (0, i.jsx)(re, {
+                  variant: "hidden"
+                })]
               })]
             })
           })
         },
-        ee = {
+        oe = {
           rewards: "rockstargames-modules-gtao-career-progress-hubb1c15408258db6833d086dfeb21d4ca2",
           carousel: "rockstargames-modules-gtao-career-progress-hubb44292207463b5af6d6ee7a4c31b61fa",
           "swiper-scrollbar-disabled": "rockstargames-modules-gtao-career-progress-hubb071b10d31e08ed83572a519bedb19ed",
@@ -928,6 +1083,7 @@
           btnCloseContainer: "rockstargames-modules-gtao-career-progress-hubccd0ba1e4c94e35688d6c3f2290a9ded",
           btnClose: "rockstargames-modules-gtao-career-progress-hubc15cfbe7980962999aae25bfe7a81566",
           isModalClosed: "rockstargames-modules-gtao-career-progress-hubb0b620bfa0230a2cae788aba65cc5736",
+          howToClaimMobile: "rockstargames-modules-gtao-career-progress-hube785594af3aa6bc9c87519f26dd2ec6f",
           desktopRewardsGrow: "rockstargames-modules-gtao-career-progress-hubb9c00b4bb89b213b85fa4ef5f413de03",
           mobileRewardsGrow: "rockstargames-modules-gtao-career-progress-hubac0a89df9b00c55b95f41b6f698bd8bc",
           mobileRewardsShrink: "rockstargames-modules-gtao-career-progress-hube34f4ba9aa22ea53813a02b341b3f4fd",
@@ -935,21 +1091,21 @@
           desktopShrinkChallengeMargins: "rockstargames-modules-gtao-career-progress-hubd382d87a49bc372155f8479f5211f270",
           fadeRewardsIn: "rockstargames-modules-gtao-career-progress-hubf8f125c111c1834c868a70e354423f97"
         },
-        ae = e => {
+        ce = e => {
           let {
             activeTier: a,
             tiers: t,
             setHeight: o,
             setOffset: c,
-            isModalOpen: p,
-            setIsModalOpen: l,
+            isModalOpen: l,
+            setIsModalOpen: p,
             rewardsContainer: _
           } = e;
-          const [u, R] = (0, r.useState)(window.innerWidth >= 1280), [E, S] = (0, r.useState)(1), [h, k] = (0, r.useState)("auto"), {
+          const [b, f] = (0, r.useState)(window.innerWidth >= 1280), [R, S] = (0, r.useState)(1), [h, k] = (0, r.useState)("auto"), {
             track: j
           } = (0, g.useGtmTrack)(), {
-            setBodyIsScrollable: I
-          } = (0, n.useBodyScrollable)(), [P, v] = (0, r.useState)(!1), A = (0, r.useRef)(), x = u ? X.tq : "div", T = u ? X.o5 : "li", O = (0, r.useRef)(null), N = (0, r.useRef)(null), W = t.some((e => e.isCompleted && e?.numClaimable > 0)), C = (0, m.Z)(), w = (0, r.useMemo)((() => {
+            setBodyIsScrollable: P
+          } = (0, n.useBodyScrollable)(), [I, v] = (0, r.useState)(!1), x = (0, r.useRef)(), A = b ? ee.tq : "div", T = b ? ee.o5 : "li", N = (0, r.useRef)(null), O = (0, r.useRef)(null), W = t.some((e => e.isCompleted && e?.numClaimable > 0)), C = (0, m.Z)(), w = (0, r.useMemo)((() => {
             const e = [];
             return t.forEach(((a, s) => {
               a.rewards.forEach(((a, r) => {
@@ -964,77 +1120,77 @@
           }), [t]);
 
           function G() {
-            R(window.innerWidth >= 1280);
-            const e = O?.current?.clientHeight;
-            if (o(u && w.length ? e : "auto"), !p) {
+            f(window.innerWidth >= 1280);
+            const e = N?.current?.clientHeight;
+            if (o(b && w.length ? e : "auto"), !l) {
               const {
                 current: e
-              } = N && N, a = window.getComputedStyle(e), s = Number(a.width.replace("px", "")) - Number(a.paddingLeft.replace("px", "")) - Number(a.paddingRight.replace("px", ""));
+              } = O && O, a = window.getComputedStyle(e), s = Number(a.width.replace("px", "")) - Number(a.paddingLeft.replace("px", "")) - Number(a.paddingRight.replace("px", ""));
               k(s)
             }
           }
 
           function D() {
-            if (p && j({
+            if (l && j({
                 event: "nav_back",
                 event_action: "back",
                 event_category: "nav",
                 event_label: "rewards",
                 text: "rewards",
                 element_placement: "rewards"
-              }), u)
-              if (p) A.current?.swiper.disable(), S(0), setTimeout((() => {
-                A.current?.swiper.enable();
+              }), b)
+              if (l) x.current?.swiper.disable(), S(0), setTimeout((() => {
+                x.current?.swiper.enable();
                 const e = w.findIndex((e => e.id === `reward-${a}-0`));
-                A.current?.swiper.slideTo(e), A.current?.swiper.disable(), v(!1), A.current?.swiper.enable(), A.current?.swiper.slideTo(0)
+                x.current?.swiper.slideTo(e), x.current?.swiper.disable(), v(!1), x.current?.swiper.enable(), x.current?.swiper.slideTo(0)
               }), 100), setTimeout((() => {
-                l(!1), S(1)
+                p(!1), S(1)
               }), 250);
               else {
                 const e = _.current,
                   s = e?.offsetTop;
-                c(s), A.current?.swiper.disable(), v(!0);
+                c(s), x.current?.swiper.disable(), v(!0);
                 let r = w.findIndex((e => e.id === `reward-${a}-0`));
-                1 === t[a].rewards.length && (r -= 1), A.current?.swiper.slideTo(r), setTimeout((() => {
-                  A.current?.swiper.enable(), A.current?.swiper.slideTo(r), l(!0)
+                1 === t[a].rewards.length && (r -= 1), x.current?.swiper.slideTo(r), setTimeout((() => {
+                  x.current?.swiper.enable(), x.current?.swiper.slideTo(r), p(!0)
                 }), 10)
               }
-            else I(p), l(!p), v(!p)
+            else P(l), p(!l), v(!l)
           }
           return (0, r.useEffect)((() => (window.addEventListener("resize", G), G(), () => {
             window.removeEventListener("resize", G)
           })), [t]), (0, r.useEffect)((() => {
-            I(!!u || !p)
-          }), [u]), (0, r.useMemo)((() => (0, i.jsxs)(b.E.div, {
+            P(!!b || !l)
+          }), [b]), (0, r.useMemo)((() => (0, i.jsxs)(u.E.div, {
             layout: "position",
-            className: [ee.rewards, p ? ee.isModalOpen : ee.isModalClosed].join(" "),
-            ref: O,
-            children: [p && (0, i.jsx)("div", {
-              className: ee.btnCloseContainer,
+            className: [oe.rewards, l ? oe.isModalOpen : oe.isModalClosed].join(" "),
+            ref: N,
+            children: [l && (0, i.jsx)("div", {
+              className: oe.btnCloseContainer,
               children: (0, i.jsx)("button", {
                 type: "button",
-                "aria-label": C.formatMessage(f.careerProgressHub.cph_progress_close),
-                className: ee.btnClose,
+                "aria-label": C.formatMessage(E.careerProgressHub.cph_progress_close),
+                className: oe.btnClose,
                 onClick: () => D()
               })
             }), (0, i.jsxs)("div", {
-              className: ee.header,
-              ref: N,
-              children: [p && (0, i.jsx)("button", {
+              className: oe.header,
+              ref: O,
+              children: [l && (0, i.jsx)("button", {
                 type: "button",
-                className: ee.btnBack,
+                className: oe.btnBack,
                 onClick: () => D(),
                 children: (0, i.jsx)("img", {
                   src: s(5481),
-                  alt: C.formatMessage(f.careerProgressHub.cph_progress_close)
+                  alt: C.formatMessage(E.careerProgressHub.cph_progress_close)
                 })
               }), (0, i.jsx)("h3", {
                 children: (0, i.jsx)(d.Z, {
-                  ...f.careerProgressHub.cph_progress_rewards_title
+                  ...E.careerProgressHub.cph_progress_rewards_title
                 })
-              }), !p && (0, i.jsx)("button", {
+              }), !l && (0, i.jsx)("button", {
                 type: "button",
-                className: ee.btnViewAll,
+                className: oe.btnViewAll,
                 onClick: () => {
                   j({
                     event: "view_all",
@@ -1045,18 +1201,18 @@
                   }), D()
                 },
                 children: (0, i.jsx)(d.Z, {
-                  ...f.careerProgressHub.cph_progress_rewards_view_all
+                  ...E.careerProgressHub.cph_progress_rewards_view_all
                 })
               })]
             }), (0, i.jsx)("div", {
-              className: ee.container,
+              className: oe.container,
               style: {
                 "--max-width-static-md": `${h}px`
               },
-              children: (0, i.jsxs)(x, {
-                ref: A,
-                modules: [Q.Qr, Q.W_],
-                ...u && {
+              children: (0, i.jsxs)(A, {
+                ref: x,
+                modules: [ae.Qr, ae.W_],
+                ...b && {
                   breakpoints: {
                     0: {
                       spaceBetween: 16
@@ -1071,7 +1227,7 @@
                       spaceBetween: 22
                     }
                   },
-                  className: ee.carousel,
+                  className: oe.carousel,
                   loop: !1,
                   grabCursor: !0,
                   centeredSlides: !1,
@@ -1080,35 +1236,37 @@
                   speed: 700,
                   navigation: !0
                 },
-                children: [!u && W && (0, i.jsx)("div", {
-                  className: ee.howToClaimMobile,
+                children: [!b && W && (0, i.jsx)("div", {
+                  className: oe.howToClaimMobile,
                   children: (0, i.jsx)(d.Z, {
-                    ...f.careerProgressHub.cph_reward_how_to_claim
+                    ...E.careerProgressHub.cph_reward_how_to_claim
                   })
                 }), w?.map((e => {
                   const s = e.tier === a;
-                  return s || P ? (0, i.jsxs)(T, {
-                    className: s ? void 0 : ee.inactiveTier,
-                    children: [e.showTitle && p && (0, i.jsx)("h3", {
+                  return s || I ? (0, i.jsxs)(T, {
+                    className: s ? void 0 : oe.inactiveTier,
+                    children: [e.showTitle && l && (0, i.jsx)("h3", {
                       children: (0, i.jsx)(d.Z, {
-                        ...f.careerProgressHub.cph_progress_tracker_tier_label,
+                        ...E.careerProgressHub.cph_progress_tracker_tier_label,
                         values: {
                           number: e.tier + 1
                         }
                       })
-                    }), (0, i.jsx)(J, {
+                    }), (0, i.jsx)(te, {
                       reward: e.reward,
                       style: s ? {} : {
-                        opacity: E
-                      }
+                        opacity: R
+                      },
+                      tierLocked: t[e.tier].isLocked,
+                      tierCompleted: t[e.tier].isCompleted
                     })]
                   }, e.id) : null
                 })).filter(Boolean)]
               })
             })]
-          })), [a, w?.length, u, p, h, P, E])
+          })), [a, t, w?.length, b, l, h, I, R])
         },
-        se = {
+        de = {
           progressTracker: "rockstargames-modules-gtao-career-progress-hubab257c9adc2371bf125eb63452e12633",
           progressTrackerHeader: "rockstargames-modules-gtao-career-progress-huba7384834722e192013197e744dc8a813",
           platformAvailability: "rockstargames-modules-gtao-career-progress-hubdba45fe56871e3702251029f1850bb86",
@@ -1116,12 +1274,20 @@
           container: "rockstargames-modules-gtao-career-progress-hubab8b5ab2d40036cdfbb8a7abad99640e",
           tiers: "rockstargames-modules-gtao-career-progress-hubae6b3ef4ed1e29eaf35999a0dd1b4096",
           active: "rockstargames-modules-gtao-career-progress-hubf3bb0bf8761d0b1fe71eb5ffce7b13c1",
+          tier: "rockstargames-modules-gtao-career-progress-huba6cf93b80ac3abc2271df9b0457b823b",
+          check: "rockstargames-modules-gtao-career-progress-hube698b18415ea1f00641566da54f42414",
+          isComplete: "rockstargames-modules-gtao-career-progress-hube265577ee467ad5f32e48812511c4e97",
           challenges: "rockstargames-modules-gtao-career-progress-hubd4ff2b713fd354814b02ee3f7b20c3f0",
           challengesHeader: "rockstargames-modules-gtao-career-progress-hubcf28ec71fe208e657945aa0e79e8d8b1",
           challengesProgress: "rockstargames-modules-gtao-career-progress-hubd18bd57f6954cf71af71d518072d2fb9",
+          progressBar: "rockstargames-modules-gtao-career-progress-huba35918eb9893a6bddbbeb054ecb4889f",
           challengeList: "rockstargames-modules-gtao-career-progress-hubeb38cec2b0f953e333a1bf12e5377d64",
           rewards: "rockstargames-modules-gtao-career-progress-hubfeef086dcf8141f49780375eb25c0d0a",
           isModalOpen: "rockstargames-modules-gtao-career-progress-hubc8e6032d607226cfed94721a980e2093",
+          readyToClaim: "rockstargames-modules-gtao-career-progress-hubc39e7f11f34f93554582cb0bc9932d4c",
+          tooltip: "rockstargames-modules-gtao-career-progress-hube545033b541537d37a6cc2dbbc3d4f81",
+          tooltipInner: "rockstargames-modules-gtao-career-progress-hubc442b4a0c7c5df3b75885c488d3a1b81",
+          tooltipIcon: "rockstargames-modules-gtao-career-progress-hubd0616ef24f7c418d608af8a2e0634a9a",
           fadeItemsIn: "rockstargames-modules-gtao-career-progress-hubf9bb780edb60623d2afd83508c2b4045",
           fadeItemsOut: "rockstargames-modules-gtao-career-progress-huba8f51ab04fd225f90176ea175599588b",
           desktopRewardsGrow: "rockstargames-modules-gtao-career-progress-hubc50c17f1e4cba4307d669cce1c967499",
@@ -1130,161 +1296,213 @@
           desktopRewardsShrink: "rockstargames-modules-gtao-career-progress-hubcccdc3523b42f301b5635de7e8453256",
           desktopShrinkChallengeMargins: "rockstargames-modules-gtao-career-progress-hubd40fe5f00a9bd22a2e4e6975f744f5f2"
         },
-        re = () => {
+        me = () => {
           const {
             windowWidth: e
           } = (0, n.useWindowResize)(), a = e < 1280, {
             state: s
-          } = j(), {
+          } = P(), {
             rewardsKey: t
-          } = s, o = t ? E[t] : null, [c, l] = (0, r.useState)(null), u = c ? (e => {
+          } = s, o = t ? S[t] : null, [c, l] = (0, r.useState)(null), f = c ? (e => {
             const a = [];
+            let s = !1;
             return e.forEach((e => {
               const {
-                challenges: s,
-                rewards: r
-              } = e, t = {
-                challenges: s,
-                rewards: r
+                challenges: r,
+                rewards: t
+              } = e, o = {
+                challenges: r,
+                rewards: t
               };
-              a.push({
+              o.numCompleted = r.filter((e => e.playerProgress >= e.totalProgress)).length, o.isLocked = s, s = o.numCompleted < r.length, o.isCompleted = o.numCompleted >= r.length, o.isCompleted ? o.numClaimable = t.filter((e => !1 === e.isCollected)).length : o.numClaimable = 0, a.push({
                 ...e,
-                ...t
+                ...o
               })
             })), a
-          })(c.tiers) : null, [R, S] = (0, r.useState)(0), [h, k] = (0, r.useState)(!1), {
-            ref: I,
-            inView: P
-          } = (0, _.YD)({
+          })(c.tiers) : null, [h, k] = (0, r.useState)(0), [j, I] = (0, r.useState)(!1), {
+            ref: v,
+            inView: x
+          } = (0, b.YD)({
             threshold: .6
-          }), v = (0, p.useRockstarTokenPing)(), {
-            loggedIn: A
+          }), T = (0, p.useRockstarTokenPing)(), {
+            loggedIn: O
           } = (0, g.useRockstarUser)(), {
-            selectedCharacterTuple: x
+            selectedCharacterTuple: W
           } = (0, g.useRockstarUserState)(), {
-            formatMessage: T
+            formatMessage: C
           } = (0, m.Z)(), {
-            track: O
-          } = (0, g.useGtmTrack)(), [N, W] = (0, r.useState)(!1), [C, w] = (0, r.useState)("auto"), [G, D] = (0, r.useState)("auto"), V = (0, r.useRef)(null), z = (0, r.useRef)();
-          if ((0, r.useEffect)((() => {
-              P && !h && (O({
-                event: "page_section_impression",
-                event_action: "impression",
-                event_category: "page_section",
-                event_label: "progress & rewards",
-                element_placement: "progress & rewards"
-              }), k(!0))
-            }), [P]), (0, r.useEffect)((() => {
-              null !== A && null !== x && o && (async e => {
-                (async () => {
-                  const {
-                    error: a = null,
-                    result: s
-                  } = await (0, n.coreScApiFetch)("games/gtao/career/progress/section", {
-                    pingBearer: v,
-                    useCache: !0,
-                    ...A ? {} : {
-                      requireBearerToken: !1
-                    },
-                    query: e
-                  });
-                  if (a) throw Object.assign(new Error(""), a);
-                  s && l(s)
-                })()
-              })({
-                section: String(o),
-                platform: x?.[0],
-                slot: x?.[1]
-              })
-            }), [A, x, o]), !u?.[R] || !o) return null;
+            track: w
+          } = (0, g.useGtmTrack)(), G = f ? f[h].numCompleted : 0, D = f ? f[h].challenges.length : 0, [V, y] = (0, r.useState)(null), [z, H] = (0, r.useState)(null), [L, M] = (0, r.useState)(null), [U, B] = (0, r.useState)(!1), [$, F] = (0, r.useState)("auto"), [Y, q] = (0, r.useState)("auto"), X = (0, r.useRef)(null), Q = (0, r.useRef)();
+          (0, r.useEffect)((() => {
+            x && !j && (w({
+              event: "page_section_impression",
+              event_action: "impression",
+              event_category: "page_section",
+              event_label: "progress & rewards",
+              element_placement: "progress & rewards"
+            }), I(!0))
+          }), [x]), (0, r.useEffect)((() => {
+            null !== O && null !== W && o && (async e => {
+              (async () => {
+                const {
+                  error: a = null,
+                  result: s
+                } = await (0, n.coreScApiFetch)("games/gtao/career/progress/section", {
+                  pingBearer: T,
+                  useCache: !0,
+                  ...O ? {} : {
+                    requireBearerToken: !1
+                  },
+                  query: e
+                });
+                if (a) throw Object.assign(new Error(""), a);
+                s && l(s)
+              })()
+            })({
+              section: String(o),
+              platform: W?.[0],
+              slot: W?.[1]
+            })
+          }), [O, W, o]);
           const {
-            challenges: y,
-            rewards: H
-          } = u[R];
+            styles: ee,
+            attributes: ae
+          } = (0, _.D)(L, z, {
+            placement: "top-end"
+          });
+          if (!f?.[h] || !o) return null;
+          const {
+            challenges: se,
+            rewards: re,
+            isLocked: te
+          } = f[h], oe = f.some((e => e.isCompleted && e?.numClaimable > 0));
           return (0, i.jsxs)("div", {
-            className: se.progressTracker,
+            className: de.progressTracker,
             style: {
-              "--rewards-top-offset": "auto" === G ? "auto" : `${G}px`
+              "--rewards-top-offset": "auto" === Y ? "auto" : `${Y}px`
             },
-            ref: I,
+            ref: v,
             children: [(0, i.jsxs)("div", {
-              className: se.progressTrackerHeader,
+              className: de.progressTrackerHeader,
               children: [(0, i.jsx)("div", {
                 children: (0, i.jsx)("h2", {
                   children: (0, i.jsx)(d.Z, {
-                    ...f.careerProgressHub.cph_progress_tracker_title
+                    ...E.careerProgressHub.cph_progress_tracker_title
                   })
                 })
-              }), (0, i.jsxs)("div", {
-                className: se.platformAvailability,
+              }), !a && oe ? (0, i.jsxs)("div", {
+                className: de.readyToClaim,
+                children: [(0, i.jsx)(d.Z, {
+                  ...E.careerProgressHub.cph_reward_ready_to_claim
+                }), (0, i.jsx)("button", {
+                  className: de.tooltipIcon,
+                  ref: M,
+                  type: "button",
+                  "aria-label": C(E.careerProgressHub.cph_reward_ready_to_claim)
+                }), (0, i.jsx)("div", {
+                  className: de.tooltip,
+                  style: ee.popper,
+                  ref: H,
+                  ...ae,
+                  children: (0, i.jsx)("div", {
+                    className: de.tooltipInner,
+                    children: (0, i.jsx)(d.Z, {
+                      ...E.careerProgressHub.cph_reward_how_to_claim
+                    })
+                  })
+                })]
+              }) : (0, i.jsxs)("div", {
+                className: de.platformAvailability,
                 children: [(0, i.jsx)("span", {
                   children: (0, i.jsx)(d.Z, {
-                    ...f.careerProgressHub.cph_progress_available_on
+                    ...E.careerProgressHub.cph_progress_available_on
                   })
                 }), (0, i.jsxs)("div", {
-                  className: se.platformIcons,
-                  children: [(0, i.jsx)(B, {
-                    "aria-label": T(f.careerProgressHub.cph_progress_available_on_aria_ps5)
-                  }), (0, i.jsx)(Y, {
-                    "aria-label": T(f.careerProgressHub.cph_progress_available_on_aria_xbox)
+                  className: de.platformIcons,
+                  children: [(0, i.jsx)(Z, {
+                    "aria-label": C(E.careerProgressHub.cph_progress_available_on_aria_ps5)
+                  }), (0, i.jsx)(K, {
+                    "aria-label": C(E.careerProgressHub.cph_progress_available_on_aria_xbox)
                   })]
                 })]
               })]
             }), c && (0, i.jsxs)("div", {
-              className: [se.container, N && se.isModalOpen, !1 === N ? se.isModalClosed : ""].join(" "),
+              className: [de.container, U && de.isModalOpen, !1 === U ? de.isModalClosed : ""].join(" "),
               style: {
                 ...!a && {
-                  height: C
+                  height: $
                 }
               },
-              ref: V,
+              ref: X,
               children: [(0, i.jsx)("div", {
-                className: se.tiers,
+                className: de.tiers,
                 children: (0, i.jsx)("ul", {
-                  children: u && u.map(((e, a) => (0, i.jsx)("li", {
-                    children: (0, i.jsx)("button", {
-                      type: "button",
-                      className: [se.tier, R === a ? se.active : ""].join(" "),
-                      onClick: () => {
-                        ! function(e) {
-                          S(e)
-                        }(a), O({
-                          event: "component_tab_click",
-                          event_action: "tab_click",
-                          event_category: "component",
-                          event_label: `${T(f.careerProgressHub.cph_progress_tracker_tier_label,{number:a+1})}`,
-                          text: `${T(f.careerProgressHub.cph_progress_tracker_tier_label,{number:a+1})}`,
-                          link_url: void 0,
-                          element_placement: "progress tracker"
-                        })
-                      },
-                      children: (0, i.jsx)(d.Z, {
-                        ...f.careerProgressHub.cph_progress_tracker_tier_label,
-                        values: {
-                          number: a + 1
-                        }
+                  children: f && f.map(((e, a) => {
+                    const s = f[a]?.isCompleted;
+                    return (0, i.jsx)("li", {
+                      children: (0, i.jsxs)("button", {
+                        type: "button",
+                        className: [de.tier, h === a ? de.active : "", s ? de.isComplete : ""].join(" "),
+                        onClick: () => {
+                          ! function(e) {
+                            y(null), k(e)
+                          }(a), w({
+                            event: "component_tab_click",
+                            event_action: "tab_click",
+                            event_category: "component",
+                            event_label: `${C(E.careerProgressHub.cph_progress_tracker_tier_label,{number:a+1})}`,
+                            text: `${C(E.careerProgressHub.cph_progress_tracker_tier_label,{number:a+1})}`,
+                            link_url: void 0,
+                            element_placement: "progress tracker"
+                          })
+                        },
+                        children: [(0, i.jsx)(d.Z, {
+                          ...E.careerProgressHub.cph_progress_tracker_tier_label,
+                          values: {
+                            number: a + 1
+                          }
+                        }), s && (0, i.jsx)(R, {
+                          classes: de.check,
+                          alt: C(E.careerProgressHub.cph_tier_complete)
+                        })]
                       })
-                    })
-                  }, e.challenges[0].id)))
+                    }, e.challenges[0].id)
+                  }))
                 })
-              }), (0, i.jsxs)(b.E.div, {
-                className: se.challenges,
-                children: [(0, i.jsx)(b.E.div, {
-                  className: se.challengesHeader,
-                  children: (0, i.jsx)("h3", {
+              }), (0, i.jsxs)(u.E.div, {
+                className: de.challenges,
+                children: [(0, i.jsxs)(u.E.div, {
+                  className: de.challengesHeader,
+                  children: [(0, i.jsx)("h3", {
                     children: (0, i.jsx)(d.Z, {
-                      ...f.careerProgressHub.cph_progress_challenges_title
+                      ...E.careerProgressHub.cph_progress_challenges_title
                     })
-                  })
-                }), (0, i.jsx)(b.E.div, {
-                  className: se.challengeList,
-                  children: y && y.map((e => (0, i.jsx)(q, {
-                    challenge: e
+                  }), (0, i.jsxs)("div", {
+                    className: de.challengesProgress,
+                    children: [(0, i.jsx)(A, {
+                      percentage: O ? G / D * 100 : 0,
+                      classes: de.progressBar
+                    }), (0, i.jsx)(N, {
+                      theme: "light",
+                      value: O ? G : void 0,
+                      total: D
+                    })]
+                  })]
+                }), (0, i.jsx)(u.E.div, {
+                  className: de.challengeList,
+                  children: se && se.map((e => (0, i.jsx)(J, {
+                    activeTier: h,
+                    challenge: e,
+                    isLocked: te || !1,
+                    isOpen: e.id === V,
+                    onClick: () => {
+                      y(e.id === V ? null : e.id)
+                    }
                   }, e.id)))
                 })]
-              }), (0, i.jsx)(b.E.div, {
-                className: se.rewards,
-                "data-open": N,
+              }), (0, i.jsx)(u.E.div, {
+                className: de.rewards,
+                "data-open": U,
                 layout: !0,
                 transition: {
                   ease: "easeInOut",
@@ -1292,27 +1510,27 @@
                   damping: 100,
                   duration: .3
                 },
-                ref: z,
-                children: H && (0, i.jsx)(ae, {
-                  tiers: u,
-                  activeTier: R,
-                  isModalOpen: N,
+                ref: Q,
+                children: re && (0, i.jsx)(ce, {
+                  tiers: f,
+                  activeTier: h,
+                  isModalOpen: U,
                   setIsModalOpen: e => {
-                    W(e)
+                    B(e), y(null)
                   },
-                  setHeight: w,
-                  setOffset: D,
-                  rewardsContainer: z
+                  setHeight: F,
+                  setOffset: q,
+                  rewardsContainer: Q
                 })
               })]
             })]
           })
         };
-      var te = s(4175),
-        oe = s(9542),
-        ce = s(1643);
-      const de = ["1"],
-        me = {
+      var ie = s(4175),
+        ne = s(9542),
+        ge = s(1643);
+      const le = ["1"],
+        pe = {
           dropdownContainer: "rockstargames-modules-gtao-career-progress-hubac0cba78345de240f86c6805a2d6cb8b",
           dropdownButton: "rockstargames-modules-gtao-career-progress-hube6d0d113433cbcf636e7797512e1f3ea",
           dropdownContent: "rockstargames-modules-gtao-career-progress-hube5bf0846190b652f80b077819284c7ea",
@@ -1321,28 +1539,28 @@
           dropdownArrow: "rockstargames-modules-gtao-career-progress-hubec3be424b550630ebaa9cac6677965c9",
           open: "rockstargames-modules-gtao-career-progress-hubf734858df19469b6830aa802cf323096"
         },
-        ie = e => {
+        _e = e => {
           let {
             imageUrl: a,
             onClick: s,
             isOpen: t
           } = e;
           const o = (0, m.Z)(),
-            c = t ? f.careerProgressHub.cph_nav_close : f.careerProgressHub.cph_nav_open,
-            d = (0, r.useContext)(ve);
+            c = t ? E.careerProgressHub.cph_nav_close : E.careerProgressHub.cph_nav_open,
+            d = (0, r.useContext)(Oe);
           return (0, i.jsx)("div", {
-            className: me.dropdownContainer,
+            className: pe.dropdownContainer,
             "data-testid": "menu-dropdown",
             children: (0, i.jsx)("button", {
               type: "button",
-              className: me.dropdownButton,
+              className: pe.dropdownButton,
               onClick: s,
               "aria-label": o.formatMessage(c),
               "data-testid": "menu-dropdown-button",
               children: (0, i.jsxs)("div", {
-                className: me.dropdownContent,
+                className: pe.dropdownContent,
                 children: [(0, i.jsx)("div", {
-                  className: me.dropdownImage,
+                  className: pe.dropdownImage,
                   children: (0, i.jsx)("img", {
                     alt: "",
                     width: "32",
@@ -1350,21 +1568,21 @@
                     src: a
                   })
                 }), (0, i.jsx)("div", {
-                  className: me.dropdownTitle,
+                  className: pe.dropdownTitle,
                   children: d
                 }), (0, i.jsx)("div", {
-                  className: [me.dropdownArrow, t ? me.open : ""].join(" "),
+                  className: [pe.dropdownArrow, t ? pe.open : ""].join(" "),
                   "data-testid": "chevron"
                 })]
               })
             })
           })
         },
-        ne = {
+        be = {
           navPill: "rockstargames-modules-gtao-career-progress-huba38cedc6576c778d3a050461bb5d5d45",
           selected: "rockstargames-modules-gtao-career-progress-hubb6a947fd83d4a7f564fa71c09fb9e519"
         },
-        ge = e => {
+        ue = e => {
           let {
             title: a,
             onClick: s,
@@ -1373,18 +1591,18 @@
           return (0, i.jsx)("button", {
             type: "button",
             onClick: s,
-            className: [ne.navPill, r ? ne.selected : ""].join(" "),
+            className: [be.navPill, r ? be.selected : ""].join(" "),
             children: (0, i.jsx)("div", {
               children: a
             })
           })
         },
-        pe = {
+        fe = {
           navCard: "rockstargames-modules-gtao-career-progress-hubf48d7e19a6fc4228ea08e7a1e944595a",
           navCardImageBox: "rockstargames-modules-gtao-career-progress-huba4b28fe0095b750bdf529f4a40fb9d8b",
           navCardTextBox: "rockstargames-modules-gtao-career-progress-hubc653d7b910fbe53c31fda89b9b68a394"
         },
-        le = e => {
+        Re = e => {
           let {
             title: a,
             url: s,
@@ -1393,23 +1611,23 @@
           } = e;
           const o = `${r}?im=Resize,height=420`,
             [c] = (0, n.usePreloadImg)(o);
-          return (0, i.jsx)(te.NavLink, {
-            className: pe.navCard,
+          return (0, i.jsx)(ie.NavLink, {
+            className: fe.navCard,
             to: s,
             onClick: t,
             children: (0, i.jsx)("div", {
-              className: [pe.navCardImageBox, c ? pe.navCardImageLoaded : ""].join(" "),
+              className: [fe.navCardImageBox, c ? fe.navCardImageLoaded : ""].join(" "),
               style: {
                 backgroundImage: `url("${o}")`
               },
               children: (0, i.jsx)("div", {
-                className: pe.navCardTextBox,
+                className: fe.navCardTextBox,
                 children: a
               })
             })
           })
         },
-        _e = {
+        Ee = {
           navMenu: "rockstargames-modules-gtao-career-progress-hubbe9cb7eab382797bc899a493ffd111cc",
           navMenuMain: "rockstargames-modules-gtao-career-progress-hube2905da1935500625ad93f0fcaf3fb50",
           sectionMenu: "rockstargames-modules-gtao-career-progress-hubd3c146ecbf25e513809e7a6f813e76ee",
@@ -1423,56 +1641,56 @@
           navMenuGrid: "rockstargames-modules-gtao-career-progress-hubbfe706da7304ceaf33e985c6ff0a38cc",
           navFeaturedItems: "rockstargames-modules-gtao-career-progress-hubfffae80c751cd9b81e84498e5c501cd7"
         };
-      var be;
+      var Se;
 
-      function ue() {
-        return ue = Object.assign ? Object.assign.bind() : function(e) {
+      function he() {
+        return he = Object.assign ? Object.assign.bind() : function(e) {
           for (var a = 1; a < arguments.length; a++) {
             var s = arguments[a];
             for (var r in s) Object.prototype.hasOwnProperty.call(s, r) && (e[r] = s[r])
           }
           return e
-        }, ue.apply(this, arguments)
+        }, he.apply(this, arguments)
       }
-      const Re = e => r.createElement("svg", ue({
+      const ke = e => r.createElement("svg", he({
         xmlns: "http://www.w3.org/2000/svg",
         width: 24,
         height: 24,
         fill: "none"
-      }, e), be || (be = r.createElement("path", {
+      }, e), Se || (Se = r.createElement("path", {
         stroke: "#fff",
         strokeLinecap: "round",
         strokeLinejoin: "round",
         strokeWidth: 2,
         d: "m15 18-6-6 6-6"
       })));
-      var fe;
+      var je;
 
-      function Ee() {
-        return Ee = Object.assign ? Object.assign.bind() : function(e) {
+      function Pe() {
+        return Pe = Object.assign ? Object.assign.bind() : function(e) {
           for (var a = 1; a < arguments.length; a++) {
             var s = arguments[a];
             for (var r in s) Object.prototype.hasOwnProperty.call(s, r) && (e[r] = s[r])
           }
           return e
-        }, Ee.apply(this, arguments)
+        }, Pe.apply(this, arguments)
       }
-      const Se = e => r.createElement("svg", Ee({
+      const Ie = e => r.createElement("svg", Pe({
           xmlns: "http://www.w3.org/2000/svg",
           width: 24,
           height: 24,
           fill: "none"
-        }, e), fe || (fe = r.createElement("path", {
+        }, e), je || (je = r.createElement("path", {
           stroke: "#fff",
           strokeLinecap: "round",
           strokeLinejoin: "round",
           strokeWidth: 2,
           d: "m9 18 6-6-6-6"
         }))),
-        he = {
+        ve = {
           navScrollButton: "rockstargames-modules-gtao-career-progress-hubab179586d67697b5a2031b1d39f614a8"
         },
-        ke = e => {
+        xe = e => {
           let {
             direction: a,
             className: s,
@@ -1480,12 +1698,12 @@
           } = e;
           return (0, i.jsxs)("button", {
             type: "button",
-            className: [s, he.navScrollButton].join(" "),
+            className: [s, ve.navScrollButton].join(" "),
             ...r,
-            children: ["left" === a && (0, i.jsx)(Re, {}), "right" === a && (0, i.jsx)(Se, {})]
+            children: ["left" === a && (0, i.jsx)(ke, {}), "right" === a && (0, i.jsx)(Ie, {})]
           })
         },
-        je = {
+        Ae = {
           initial: {
             height: "0dvh"
           },
@@ -1504,7 +1722,7 @@
             }
           }
         },
-        Ie = e => {
+        Te = e => {
           let {
             navItems: a,
             category: s,
@@ -1515,115 +1733,114 @@
           const d = (0, m.Z)(),
             {
               pathname: n
-            } = (0, te.useLocation)(),
-            p = (0, r.useMemo)((() => Math.max(a.findIndex((e => e.name === s)), 0)), [a, n]),
-            [l, _] = (0, r.useState)(p),
-            [u, R] = (0, r.useState)(!1),
-            [E, S] = (0, r.useState)(!1),
+            } = (0, ie.useLocation)(),
+            l = (0, r.useMemo)((() => Math.max(a.findIndex((e => e.name === s)), 0)), [a, n]),
+            [p, _] = (0, r.useState)(l),
+            [b, f] = (0, r.useState)(!1),
+            [R, S] = (0, r.useState)(!1),
             [h, k] = (0, r.useState)(!1),
             j = (0, r.useRef)(null),
             {
-              track: I
+              track: P
             } = (0, g.useGtmTrack)(),
-            P = (0, r.useContext)(ve),
-            v = [...a],
-            A = v[l],
+            I = [...a],
+            v = I[p],
             x = e => {
               e.isEnd ? S(!0) : S(!1), e.isBeginning ? k(!0) : k(!1)
             };
           return (0, r.useEffect)((() => {
-            j.current && ((j.current?.wrapperEl.clientWidth || 0) > (j.current?.el.clientWidth || 0) ? (R(!0), j.current.params.centeredSlides = !0, j.current.params.centeredSlidesBounds = !0) : (R(!1), j.current.params.centeredSlides = !1, j.current.params.centeredSlidesBounds = !1))
-          }), [j.current?.wrapperEl.clientWidth, j.current?.el.clientWidth]), (0, i.jsx)(b.E.div, {
-            className: _e.navMenu,
-            variants: je,
+            j.current && ((j.current?.wrapperEl.clientWidth || 0) > (j.current?.el.clientWidth || 0) ? (f(!0), j.current.params.centeredSlides = !0, j.current.params.centeredSlidesBounds = !0) : (f(!1), j.current.params.centeredSlides = !1, j.current.params.centeredSlidesBounds = !1))
+          }), [j.current?.wrapperEl.clientWidth, j.current?.el.clientWidth]), (0, i.jsx)(u.E.div, {
+            className: Ee.navMenu,
+            variants: Ae,
             initial: "initial",
             animate: o ? "open" : "closed",
             children: (0, i.jsxs)("div", {
-              className: _e.navMenuMain,
+              className: Ee.navMenuMain,
               children: [(0, i.jsxs)("div", {
-                className: _e.sectionMenu,
-                children: [!h && u && (0, i.jsx)("div", {
-                  className: _e.previousSectionNavButton,
-                  children: (0, i.jsx)(ke, {
+                className: Ee.sectionMenu,
+                children: [!h && b && (0, i.jsx)("div", {
+                  className: Ee.previousSectionNavButton,
+                  children: (0, i.jsx)(xe, {
                     direction: "left",
-                    className: _e.previousNavButton,
+                    className: Ee.previousNavButton,
                     onClick: () => j.current?.slidePrev(),
-                    "aria-label": d.formatMessage(f.careerProgressHub.cph_nav_scroll_left)
+                    "aria-label": d.formatMessage(E.careerProgressHub.cph_nav_scroll_left)
                   })
                 }), (0, i.jsx)("div", {
-                  className: _e.sectionItems,
-                  children: (0, i.jsx)(X.tq, {
+                  className: Ee.sectionItems,
+                  children: (0, i.jsx)(ee.tq, {
                     onBeforeInit: e => {
                       j.current = e
                     },
                     onInit: x,
-                    className: _e.sectionItems,
+                    className: Ee.sectionItems,
                     direction: "horizontal",
                     grabCursor: !0,
                     slidesPerView: "auto",
-                    initialSlide: l,
+                    initialSlide: p,
                     onSlideChange: x,
                     onResize: x,
                     onReachEnd: () => S(!0),
                     onReachBeginning: () => k(!0),
-                    children: v.map(((e, a) => {
+                    children: I.map(((e, a) => {
                       let {
                         title: s
                       } = e;
-                      return (0, i.jsx)(X.o5, {
-                        children: (0, i.jsx)(ge, {
+                      return (0, i.jsx)(ee.o5, {
+                        children: (0, i.jsx)(ue, {
                           title: s,
                           onClick: () => ((e, a) => {
-                            j.current?.slideTo(e), _(e), I({
+                            j.current?.slideTo(e), _(e), P({
                               event: "nav_click",
                               event_action: "click",
                               event_category: "nav",
                               event_label: `Secondary Nav > ${a}`,
-                              text: `Secondary Nav > ${P} > ${a}`,
+                              text: `${a}`,
                               link_url: void 0,
-                              element_placement: "Secondary Nav"
+                              element_placement: `Secondary Nav > ${a}`
                             })
                           })(a, s),
-                          ...l === a ? {
+                          ...p === a ? {
                             selected: !0
                           } : {}
                         }, s)
                       }, s)
                     }))
                   })
-                }), !E && u && (0, i.jsx)("div", {
-                  className: _e.nextSectionNavButton,
-                  children: (0, i.jsx)(ke, {
+                }), !R && b && (0, i.jsx)("div", {
+                  className: Ee.nextSectionNavButton,
+                  children: (0, i.jsx)(xe, {
                     direction: "right",
-                    className: _e.nextNavButton,
+                    className: Ee.nextNavButton,
                     onClick: () => j.current?.slideNext(),
-                    "aria-label": d.formatMessage(f.careerProgressHub.cph_nav_scroll_right)
+                    "aria-label": d.formatMessage(E.careerProgressHub.cph_nav_scroll_right)
                   })
                 })]
               }), (0, i.jsx)("div", {
-                className: [_e.navMenuScroll, c ? _e.headerVisible : ""].join(" "),
+                className: [Ee.navMenuScroll, c ? Ee.headerVisible : ""].join(" "),
                 children: (0, i.jsx)("div", {
-                  className: _e.navMenuGrid,
+                  className: Ee.navMenuGrid,
                   "data-testid": "menu-items",
-                  children: A.subNavItems.map((e => {
+                  children: v.subNavItems.map((e => {
                     let {
                       title: a,
                       url: s,
                       imageUrl: r
                     } = e;
-                    return (0, i.jsx)(le, {
+                    return (0, i.jsx)(Re, {
                       title: a,
                       url: s,
                       imageUrl: r,
                       onClick: () => ((e, a) => {
-                        I({
+                        P({
                           event: "nav_click",
                           event_action: "click",
                           event_category: "nav",
-                          event_label: `Secondary Nav > ${P} > ${A.title} > ${e}`,
-                          text: `Secondary Nav > ${P} > ${A.title} > ${e}`,
+                          event_label: `Secondary Nav > ${v.title} > ${e}`,
+                          text: `${e}`,
                           link_url: a,
-                          element_placement: "Secondary Nav"
+                          element_placement: `Secondary Nav > ${v.title} > ${e}`
                         }), t()
                       })(a, s)
                     }, a)
@@ -1633,7 +1850,7 @@
             })
           })
         },
-        Pe = {
+        Ne = {
           navContainer: "rockstargames-modules-gtao-career-progress-huba5c0b2001c6e04949692655b09b951b6",
           navOverlay: "rockstargames-modules-gtao-career-progress-hubc74d6d10fe36dff21b60af40c89f7f20",
           headerVisible: "rockstargames-modules-gtao-career-progress-hubea84e2bcf7090e4fc7199c3526bf6ce9",
@@ -1641,8 +1858,8 @@
           navBar: "rockstargames-modules-gtao-career-progress-hubea536a60f8859ce0c810f152fa847e85",
           navBarVisible: "rockstargames-modules-gtao-career-progress-hubf30383967d8d968e19bd0db559e5c546"
         },
-        ve = (0, r.createContext)(null),
-        Ae = {
+        Oe = (0, r.createContext)(null),
+        We = {
           initial: {
             opacity: 0
           },
@@ -1665,21 +1882,21 @@
             }
           }
         },
-        xe = e => {
+        Ce = e => {
           let {
             title: a
           } = e;
           const {
             pathname: s
-          } = (0, te.useLocation)(), t = (0, te.useParams)(), {
+          } = (0, ie.useLocation)(), t = (0, ie.useParams)(), {
             data: o,
             loading: c
           } = (() => {
-            const e = (0, oe.useGenerateCdnSource)(),
-              a = (0, p.useQuery)(ce.SecondaryNavContent, {
+            const e = (0, ne.useGenerateCdnSource)(),
+              a = (0, p.useQuery)(ge.SecondaryNavContent, {
                 variables: {
                   url: "/gta-online",
-                  branchTags: de
+                  branchTags: le
                 }
               }),
               s = a => {
@@ -1706,21 +1923,21 @@
             setBodyIsScrollable: d
           } = (0, n.useBodyScrollable)(), {
             state: m
-          } = (0, n.useRockstarLocalState)(), [l, _] = (0, r.useState)(!1), [u, R] = (0, r.useState)(!1), [f, E] = (0, r.useState)(!1), {
+          } = (0, n.useRockstarLocalState)(), [l, _] = (0, r.useState)(!1), [b, f] = (0, r.useState)(!1), [R, E] = (0, r.useState)(!1), {
             pageYOffset: S
           } = (0, n.useScroll)(), {
             track: h
-          } = (0, g.useGtmTrack)(), k = (0, r.useContext)(ve), j = !m.navHidden, I = !c && o?.length > 0, P = (0, r.useMemo)((() => t["*"]?.slice(0, t["*"].indexOf("/"))), [o, s]), v = (0, r.useMemo)((() => {
-            if (!I) return null;
-            const e = o.find((e => e.name === P))?.subNavItems?.find((e => e.name.toLowerCase() === t.section)),
+          } = (0, g.useGtmTrack)(), k = (0, r.useContext)(Oe), j = !m.navHidden, P = !c && o?.length > 0, I = (0, r.useMemo)((() => t["*"]?.slice(0, t["*"].indexOf("/"))), [o, s]), v = (0, r.useMemo)((() => {
+            if (!P) return null;
+            const e = o.find((e => e.name === I))?.subNavItems?.find((e => e.name.toLowerCase() === t.section)),
               a = e?.imageUrl;
             return a ? `${a}?im=Resize,height=32,width=32` : null
-          }), [a, I]);
+          }), [a, P]);
           return (0, r.useEffect)((() => {
             const e = e => {
               "Escape" === e.key && _(!1)
             };
-            return l ? (f || E(!0), R(!1), h({
+            return l ? (R || E(!0), f(!1), h({
               event: "nav_open",
               event_action: "open",
               event_category: "nav",
@@ -1728,7 +1945,7 @@
               text: k,
               link_url: void 0,
               element_placement: "Secondary Nav"
-            })) : l || !f || u || h({
+            })) : l || !R || b || h({
               event: "nav_close",
               event_action: "close",
               event_category: "nav",
@@ -1739,31 +1956,31 @@
             }), l ? (d(!1), document.addEventListener("keyup", e)) : d(!0), () => {
               d(!0), document.removeEventListener("keyup", e)
             }
-          }), [l, u]), I ? (0, i.jsxs)(ve.Provider, {
+          }), [l, b]), P ? (0, i.jsxs)(Oe.Provider, {
             value: a,
-            children: [(0, i.jsx)(b.E.div, {
-              className: Pe.navOverlay,
+            children: [(0, i.jsx)(u.E.div, {
+              className: Ne.navOverlay,
               onClick: () => _(!1),
-              variants: Ae,
+              variants: We,
               initial: "initial",
               animate: l ? "open" : "closed"
             }), (0, i.jsx)("div", {
-              className: [Pe.navContainer, j ? Pe.headerVisible : ""].join(" "),
+              className: [Ne.navContainer, j ? Ne.headerVisible : ""].join(" "),
               children: (0, i.jsxs)("nav", {
-                className: Pe.nav,
+                className: Ne.nav,
                 children: [(0, i.jsx)("div", {
-                  className: [Pe.navBar, S > 0 ? Pe.navBarVisible : ""].join(" "),
-                  children: (0, i.jsx)(ie, {
+                  className: [Ne.navBar, S > 0 ? Ne.navBarVisible : ""].join(" "),
+                  children: (0, i.jsx)(_e, {
                     imageUrl: v,
                     isOpen: l,
                     onClick: () => _(!l)
                   })
-                }), (0, i.jsx)(Ie, {
+                }), (0, i.jsx)(Te, {
                   navItems: o,
-                  category: P,
+                  category: I,
                   isHeaderVisible: j,
                   onNavItemClick: () => {
-                    _(!1), R(!0)
+                    _(!1), f(!0)
                   },
                   isOpen: l
                 })]
@@ -1771,17 +1988,39 @@
             })]
           }) : null
         },
-        Te = e => {
+        we = e => {
+          let {
+            brand: a,
+            ctaFields: s,
+            title: r = ""
+          } = e;
+          return (0, i.jsxs)("div", {
+            className: "rockstargames-modules-gtao-career-progress-huba1fb8ef8aa1c8016ecb3a047fa54b1ad",
+            children: [a && (0, i.jsx)("img", {
+              alt: r ? `${r} logo` : "",
+              className: "rockstargames-modules-gtao-career-progress-hubfd08d81b98e294fb92f04c336656f777",
+              src: a
+            }), s?.content && (0, i.jsx)(c.Cta, {
+              variant: "gen9",
+              icon: "play",
+              iconPosition: "left",
+              ...s
+            })]
+          })
+        },
+        Ge = e => {
           let {
             title: a,
             heroImages: s
           } = e;
-          const r = (0, oe.useGetCdnSource)(s?.backgroundMobileImage ?? null),
-            t = (0, oe.useGetCdnSource)(s?.backgroundDesktopImage ?? null),
-            o = (0, oe.useGetCdnSource)(s?.layeredMobileImage ?? null),
-            c = (0, oe.useGetCdnSource)(s?.layeredDesktopImage ?? null),
-            d = (0, oe.useGetCdnSource)(s?.brandImage ?? null);
-          return s ? (0, i.jsxs)("div", {
+          const r = (0, ne.useGetCdnSource)(s?.backgroundMobileImage ?? null),
+            t = (0, ne.useGetCdnSource)(s?.backgroundDesktopImage ?? null),
+            o = (0, ne.useGetCdnSource)(s?.layeredMobileImage ?? null),
+            c = (0, ne.useGetCdnSource)(s?.layeredDesktopImage ?? null),
+            d = (0, ne.useGetCdnSource)(s?.brandImage ?? null);
+          if (!s) return null;
+          const m = s?.ctaFields;
+          return (0, i.jsxs)("div", {
             className: "rockstargames-modules-gtao-career-progress-hubc6a34f440f166b60d325d87d27fd65ef",
             style: {
               "--background-image-desktop": `url(${t??""})`,
@@ -1798,14 +2037,14 @@
               }), (0, i.jsx)("div", {
                 className: "rockstargames-modules-gtao-career-progress-hubd092ea848e1f2006308b052048ed8246"
               })]
-            }), d && (0, i.jsx)("img", {
-              alt: a ? `${a} logo` : "",
-              className: "rockstargames-modules-gtao-career-progress-hubfd08d81b98e294fb92f04c336656f777",
-              src: d
+            }), (0, i.jsx)(we, {
+              brand: d,
+              ctaFields: m,
+              title: a
             })]
-          }) : null
+          })
         },
-        Oe = e => {
+        De = e => {
           let {
             className: a
           } = e;
@@ -1831,7 +2070,7 @@
             })]
           })
         },
-        Ne = {
+        Ve = {
           intro: "rockstargames-modules-gtao-career-progress-hube555a1e31776e222bd9002e89c7dd97e",
           summary: "rockstargames-modules-gtao-career-progress-huba0971e2e6003c4af00e53c25ca412d94",
           gettingStarted: "rockstargames-modules-gtao-career-progress-hubef0ec8c49b346d56ffa5022260f01000",
@@ -1841,7 +2080,7 @@
           guideButton: "rockstargames-modules-gtao-career-progress-hubcd40fb12378e1d77c842e50ab19f933b",
           icon: "rockstargames-modules-gtao-career-progress-hubb2dbb6676031a8cd1113f369434c10a9"
         },
-        We = e => {
+        ye = e => {
           let {
             title: a,
             category: s,
@@ -1850,42 +2089,42 @@
             guideLink: c = ""
           } = e;
           const [d, n] = (0, r.useState)(!1), {
-            track: p
+            track: l
           } = (0, g.useGtmTrack)(), {
-            ref: l,
-            inView: b
-          } = (0, _.YD)({
+            ref: p,
+            inView: _
+          } = (0, b.YD)({
             threshold: .6
           }), u = (0, m.Z)();
           return (0, r.useEffect)((() => {
-            b && !d && (p({
+            _ && !d && (l({
               event: "page_section_impression",
               event_action: "impression",
               event_category: "page_section",
               event_label: "intro",
               element_placement: "intro"
             }), n(!0))
-          }), [b]), (0, i.jsxs)("div", {
-            className: Ne.intro,
-            ref: l,
+          }), [_]), (0, i.jsxs)("div", {
+            className: Ve.intro,
+            ref: p,
             children: [(0, i.jsxs)("div", {
-              className: Ne.summary,
+              className: Ve.summary,
               children: [(0, i.jsx)("h1", {
                 children: s
               }), (0, i.jsx)("h2", {
                 children: a
               }), (0, i.jsx)("p", {
-                className: Ne.summaryText,
+                className: Ve.summaryText,
                 children: t
               })]
             }), (0, i.jsxs)("div", {
-              className: Ne.rightSide,
+              className: Ve.rightSide,
               children: [(0, i.jsxs)("div", {
-                className: Ne.gettingStarted,
+                className: Ve.gettingStarted,
                 children: [(0, i.jsx)("h3", {
-                  children: u.formatMessage(f.careerProgressHub.cph_intro_getting_started)
+                  children: u.formatMessage(E.careerProgressHub.cph_intro_getting_started)
                 }), (0, i.jsx)("ol", {
-                  className: Ne.gettingStartedSteps,
+                  className: Ve.gettingStartedSteps,
                   children: o.map((e => (0, i.jsx)("li", {
                     children: (0, i.jsx)("span", {
                       children: e
@@ -1893,29 +2132,30 @@
                   }, e)))
                 })]
               }), c && (0, i.jsxs)("div", {
-                className: Ne.gettingStartedGuide,
+                className: Ve.gettingStartedGuide,
                 children: [(0, i.jsx)("span", {
-                  children: u.formatMessage(f.careerProgressHub.cph_intro_guide_instruction, {
+                  children: u.formatMessage(E.careerProgressHub.cph_intro_guide_instruction, {
                     title: a
                   })
-                }), (0, i.jsxs)(te.NavLink, {
+                }), (0, i.jsxs)(ie.NavLink, {
                   type: "button",
                   to: c,
-                  className: Ne.guideButton,
+                  className: Ve.guideButton,
                   children: [(0, i.jsx)("span", {
-                    children: u.formatMessage(f.careerProgressHub.cph_intro_guide_learn_more)
-                  }), " ", (0, i.jsx)(Oe, {
-                    className: Ne.icon
+                    children: u.formatMessage(E.careerProgressHub.cph_intro_guide_learn_more)
+                  }), " ", (0, i.jsx)(De, {
+                    className: Ve.icon
                   })]
                 })]
               })]
             })]
           })
         },
-        Ce = {
+        ze = {
           gen8: "rockstargames-modules-gtao-career-progress-hubcb293e23ff93c9a4b565f50c3c63bfc5",
           gen9: "rockstargames-modules-gtao-career-progress-hubfae98cedf44568e468931cc288fbacda",
           loggedOut: "rockstargames-modules-gtao-career-progress-hube78616d73fca3bbeedb1301c28edf31f",
+          notLinked: "rockstargames-modules-gtao-career-progress-huba229bafc8e2f24d945e84015e974bc94",
           unknown: "rockstargames-modules-gtao-career-progress-hubcf2f42c0c4cebbc7890f77059fbb25cc",
           loadingScreen: "rockstargames-modules-gtao-career-progress-hubf5e273312bf03b5d1f3ec60c76680bce",
           highlights: "rockstargames-modules-gtao-career-progress-hube705defcd445c5a6cbab7d893a75a218",
@@ -1928,176 +2168,181 @@
         };
       t.p8.registerPlugin(o.i);
       const {
-        host: we,
-        signup: Ge
-      } = (0, n.getScConfigForOrigin)(), De = e => {
+        host: He,
+        signup: Le
+      } = (0, n.getScConfigForOrigin)(), Me = e => {
         let {
           heroImages: a,
           awardsKey: s,
           title: o,
           category: d,
           summary: p,
-          steps: l,
-          guideLink: _,
-          rewardsKey: b,
-          images: u,
+          steps: _,
+          guideLink: b,
+          rewardsKey: u,
+          images: f,
           subtitle: R,
-          highlights: E
+          highlights: S
         } = e;
         const {
-          windowWidth: S
+          windowWidth: h
         } = (0, n.useWindowResize)(), {
-          selectedCharacterTuple: h,
-          userData: k
+          selectedCharacterTuple: k,
+          userData: j
         } = (0, g.useRockstarUserState)(), {
           loading: I,
-          loggedIn: P
+          loggedIn: v
         } = (0, g.useRockstarUser)(), {
-          setAwardsKey: v,
+          setAwardsKey: x,
           setRewardsKey: A
-        } = j(), [x, T] = (0, r.useState)("unknown"), O = (0, r.useRef)(null), N = (0, r.useRef)(null), {
-          formatMessage: W
+        } = P(), [T, N] = (0, r.useState)("unknown"), O = (0, r.useRef)(null), W = (0, r.useRef)(null), {
+          formatMessage: C
         } = (0, m.Z)(), {
-          track: C
-        } = (0, g.useGtmTrack)(), w = (0, n.useLocale)(), G = (0, n.toScLocaleString)(w), [D, V] = (0, r.useState)(!1), z = `${document.location.origin}/auth/sc-auth-login?returnUrl=${window.location.pathname}`, y = `${Ge}&returnUrl=${window.location.pathname}&lang=${G}`, L = `https://${we}.rockstargames.com/settings/linkedaccounts`;
+          track: w
+        } = (0, g.useGtmTrack)(), G = (0, n.useLocale)(), D = (0, n.toScLocaleString)(G), [V, y] = (0, r.useState)(!1), z = `${document.location.origin}/auth/sc-auth-login?returnUrl=${window.location.pathname}`, H = `${Le}&returnUrl=${window.location.pathname}&lang=${D}`, M = `https://${He}.rockstargames.com/settings/linkedaccounts`;
         (0, r.useEffect)((() => {
-          s && v(s)
+          s && x(s)
         }), [s]), (0, r.useEffect)((() => {
-          b && A(b)
-        }), [b]), (0, r.useEffect)((() => () => {
-          v(null), A(null)
+          u && A(u)
+        }), [u]), (0, r.useEffect)((() => () => {
+          x(null), A(null)
         }), []), (0, r.useEffect)((() => {
-          if (!1 === P && T("loggedOut"), P && Array.isArray(h)) {
-            const e = (0, n.getGen9Consoles)().includes(h[0]),
-              a = (0, n.getGen8Consoles)().includes(h[0]);
-            e ? T("gen9") : a && T("gen8")
-          }
-        }), [P, h]), (0, r.useEffect)((() => {
-          I || D || null === P || "unknown" === x || (C({
+          if (!1 === v && N("loggedOut"), v && Array.isArray(k)) {
+            const e = (0, n.getGen9Consoles)().includes(k[0]),
+              a = (0, n.getGen8Consoles)().includes(k[0]);
+            e ? N("gen9") : a && N("gen8")
+          } else v && !1 === k && N("notLinked")
+        }), [v, k]), (0, r.useEffect)((() => {
+          I || V || null === v || "unknown" === T || (w({
             event: "virtualPageview",
             view_name: `career progress hub: ${o.toLowerCase()}`,
-            page_layout: x
-          }), V(!0))
-        }), [P, x, I]);
-        const M = t.p8.matchMedia();
-        return (0, r.useLayoutEffect)((() => {
-          if (!N.current) return;
-          const e = N.current.getElementsByTagName("img")?.[5];
-          e && M.add({
-            isDesktop: "(min-width: 500px)",
-            isMobile: "(max-width: 501px)",
-            reduceMotion: "(prefers-reduced-motion: reduce)"
-          }, (a => {
-            const {
-              isDesktop: s,
-              reduceMotion: r
-            } = a.conditions;
-            if (r) return;
-            const o = {
-                mobile: {
-                  from: "-100vw",
-                  to: "-275vw"
+            page_layout: T
+          }), y(!0))
+        }), [v, T, I]);
+        const U = t.p8.matchMedia();
+        if ((0, r.useLayoutEffect)((() => {
+            if (!W.current) return;
+            const e = W.current.getElementsByTagName("img")?.[5];
+            e && U.add({
+              isDesktop: "(min-width: 500px)",
+              isMobile: "(max-width: 501px)",
+              reduceMotion: "(prefers-reduced-motion: reduce)"
+            }, (a => {
+              const {
+                isDesktop: s,
+                reduceMotion: r
+              } = a.conditions;
+              if (r) return;
+              const o = {
+                  mobile: {
+                    from: "-100vw",
+                    to: "-275vw"
+                  },
+                  desktop: {
+                    from: "0",
+                    to: -1 * (e.offsetLeft + e.width - window.innerWidth)
+                  }
                 },
-                desktop: {
-                  from: "0",
-                  to: -1 * (e.offsetLeft + e.width - window.innerWidth)
-                }
-              },
-              c = s ? o.desktop : o.mobile,
-              d = {
-                trigger: N.current,
-                scrub: !0
-              };
-            t.p8.fromTo(N.current, {
-              x: c.from,
-              scrollTrigger: d
-            }, {
-              x: c.to,
-              scrollTrigger: d,
-              ease: "none"
-            })
-          }))
-        }), [I, x, N.current]), (0, r.useEffect)((() => {
-          t.p8.matchMediaRefresh()
-        }), [S]), I ? (0, i.jsx)("div", {
-          className: Ce.loadingScreen,
+                c = s ? o.desktop : o.mobile,
+                d = {
+                  trigger: W.current,
+                  scrub: !0
+                };
+              t.p8.fromTo(W.current, {
+                x: c.from,
+                scrollTrigger: d
+              }, {
+                x: c.to,
+                scrollTrigger: d,
+                ease: "none"
+              })
+            }))
+          }), [I, T, W.current]), (0, r.useEffect)((() => {
+            t.p8.matchMediaRefresh()
+          }), [h]), I) return (0, i.jsx)("div", {
+          className: ze.loadingScreen,
           children: (0, i.jsx)(c.LoadingAnimation, {
             type: "SPINNING"
           })
-        }) : (0, i.jsxs)(i.Fragment, {
-          children: [(0, i.jsx)(xe, {
+        });
+        let B = null;
+        return B = (0, i.jsx)(l.Highlights, {
+          highlights: S,
+          subtitle: R
+        }), (0, i.jsxs)(i.Fragment, {
+          children: [(0, i.jsx)(Ce, {
             title: o
           }), (0, i.jsxs)("div", {
-            className: Ce[x],
+            className: ze[T],
             ref: O,
-            children: [(0, i.jsx)(Te, {
+            children: [(0, i.jsx)(Ge, {
               title: o,
               heroImages: a ?? {}
-            }), (0, i.jsx)(We, {
+            }), (0, i.jsx)(ye, {
               title: o,
               category: d,
               summary: p,
-              steps: l,
-              guideLink: _
-            }), (0, i.jsx)(H, {}), null, (0, i.jsx)("div", {
-              className: Ce.highlights,
-              children: null
-            }), !P && (0, i.jsx)(c.CalloutSection, {
-              header: W(f.careerProgressHub.cph_login_prompt_title),
-              subheader: W(f.careerProgressHub.cph_login_prompt_body),
+              steps: _,
+              guideLink: b
+            }), (0, i.jsx)(L, {}), null, (0, i.jsx)("div", {
+              className: ze.highlights,
+              children: B
+            }), !v && (0, i.jsx)(c.CalloutSection, {
+              header: C(E.careerProgressHub.cph_login_prompt_title),
+              subheader: C(E.careerProgressHub.cph_login_prompt_body),
               type: "button",
-              action_text: W(f.careerProgressHub.cph_login_prompt_button),
-              actionFooterHelperText: W(f.careerProgressHub.cph_login_prompt_button_helper),
-              actionFooterLinkText: W(f.careerProgressHub.cph_login_prompt_button_helper_link),
-              actionFooterLink: y,
+              action_text: C(E.careerProgressHub.cph_login_prompt_button),
+              actionFooterHelperText: C(E.careerProgressHub.cph_login_prompt_button_helper),
+              actionFooterLinkText: C(E.careerProgressHub.cph_login_prompt_button_helper_link),
+              actionFooterLink: H,
               actionFooterLinkTrackingData: {
                 event: "cta_signup",
                 event_category: "cta",
                 event_action: "register",
                 event_label: "callout section",
-                text: W(f.careerProgressHub.cph_login_prompt_button_helper_link).toLowerCase(),
-                link_url: y
+                text: C(E.careerProgressHub.cph_login_prompt_button_helper_link).toLowerCase(),
+                link_url: H
               },
               link: z,
-              className: Ce.calloutLoginPrompt,
+              className: ze.calloutLoginPrompt,
               trackingData: {
                 event: "cta_login",
                 event_category: "cta",
                 event_action: "login",
                 event_label: "callout section",
-                text: W(f.careerProgressHub.cph_login_prompt_button_helper_link).toLowerCase(),
+                text: C(E.careerProgressHub.cph_login_prompt_button_helper_link).toLowerCase(),
                 link_url: z,
-                element_placement: "callout section"
+                element_placement: `callout section - ${E.careerProgressHub.cph_login_prompt_title.defaultMessage}`
               }
-            }), P && !1 === h && (0, i.jsx)(c.CalloutSection, {
-              header: W(f.careerProgressHub.cph_loggedin_nochar_title),
-              subheader: W(f.careerProgressHub.cph_loggedin_nochar_body),
+            }), v && !1 === k && (0, i.jsx)(c.CalloutSection, {
+              header: C(E.careerProgressHub.cph_loggedin_nochar_title),
+              subheader: C(E.careerProgressHub.cph_loggedin_nochar_body),
               type: "button",
-              action_text: W(f.careerProgressHub.cph_loggedin_nochar_button),
-              link: L,
-              className: Ce.calloutNoChar,
+              action_text: C(E.careerProgressHub.cph_loggedin_nochar_button),
+              link: M,
+              className: ze.calloutNoChar,
               trackingData: {
                 event: "cta_link_account",
                 event_category: "cta",
                 event_action: "link_account",
                 event_label: "callout section",
-                text: W(f.careerProgressHub.cph_loggedin_nochar_button).toLowerCase(),
-                link_url: L,
-                element_placement: "callout section"
+                text: C(E.careerProgressHub.cph_loggedin_nochar_button).toLowerCase(),
+                link_url: M,
+                element_placement: `callout section - ${E.careerProgressHub.cph_loggedin_nochar_title.defaultMessage}`
               }
             }), (0, i.jsx)("div", {
-              className: k ? Ce.rewardsTrackerWithData : Ce.rewardsTracker,
-              children: (0, i.jsx)(re, {})
+              className: j ? ze.rewardsTrackerWithData : ze.rewardsTracker,
+              children: (0, i.jsx)(me, {})
             }), (0, i.jsx)(c.CalloutSection, {
-              header: W(f.careerProgressHub.cph_callout_feedback_title),
-              subheader: W(f.careerProgressHub.cph_callout_feedback_body),
+              header: C(E.careerProgressHub.cph_callout_feedback_title),
+              subheader: C(E.careerProgressHub.cph_callout_feedback_body),
               type: "button",
-              action_text: W(f.careerProgressHub.cph_callout_feedback_button),
+              action_text: C(E.careerProgressHub.cph_callout_feedback_button),
               link: "/gta-online/feedback",
-              className: Ce.feedback
+              className: ze.feedback
             }), (0, i.jsx)(c.Rating, {
               titleSlug: "GTAOnline",
-              className: Ce.rating
+              className: ze.rating
             })]
           })]
         })
@@ -2361,6 +2606,12 @@
         "./PROGRESS_BUSINESSES_PREVIEW_IMPORTEXPORT_REWARD_T4.jpg": 2407,
         "./PROGRESS_BUSINESSES_PREVIEW_IMPORTEXPORT_REWARD_T4_CASH.jpg": 5876,
         "./PROGRESS_BUSINESSES_PREVIEW_IMPORTEXPORT_REWARD_T4_RP.jpg": 6716,
+        "./PROGRESS_BUSINESSES_PREVIEW_SALVAGE_YARD_REWARD_T1.jpg": 8336,
+        "./PROGRESS_BUSINESSES_PREVIEW_SALVAGE_YARD_REWARD_T2.jpg": 7551,
+        "./PROGRESS_BUSINESSES_PREVIEW_SALVAGE_YARD_REWARD_T3.jpg": 3050,
+        "./PROGRESS_BUSINESSES_PREVIEW_SALVAGE_YARD_REWARD_T4.jpg": 504,
+        "./PROGRESS_BUSINESSES_PREVIEW_SALVAGE_YARD_REWARD_T4_CASH.jpg": 1088,
+        "./PROGRESS_BUSINESSES_PREVIEW_SALVAGE_YARD_REWARD_T4_RP.jpg": 4685,
         "./PROGRESS_BUSINESSES_PREVIEW_SMUGGLERS_REWARD_T1.jpg": 3215,
         "./PROGRESS_BUSINESSES_PREVIEW_SMUGGLERS_REWARD_T2.jpg": 1433,
         "./PROGRESS_BUSINESSES_PREVIEW_SMUGGLERS_REWARD_T3.jpg": 9382,
@@ -2681,6 +2932,30 @@
       e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/d51a05992c53c97adb2669426411b8af.jpg"
     },
     6716: e => {
+      "use strict";
+      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/7eb2ff2bc305d0b4149751002da65e2b.jpg"
+    },
+    8336: e => {
+      "use strict";
+      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/ab17ff9e69584963068de0d98e8fe15a.jpg"
+    },
+    7551: e => {
+      "use strict";
+      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/66bf9fc50889cf4565af70b2bd966736.jpg"
+    },
+    3050: e => {
+      "use strict";
+      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/28009d14aa0c5105aa7f0428fde05dff.jpg"
+    },
+    504: e => {
+      "use strict";
+      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/83821cbe9fbdd65c74fefff8b9e6b3a1.jpg"
+    },
+    1088: e => {
+      "use strict";
+      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/d51a05992c53c97adb2669426411b8af.jpg"
+    },
+    4685: e => {
       "use strict";
       e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/7eb2ff2bc305d0b4149751002da65e2b.jpg"
     },

@@ -3,7 +3,7 @@
     9680: (e, n, a) => {
       "use strict";
       a.r(n), a.d(n, {
-        default: () => L
+        default: () => G
       });
       var i = a(927),
         t = a(8008),
@@ -104,7 +104,37 @@
           return (0, i.useEffect)((() => {
             e(!r)
           }), [r]), (0, i.useEffect)((() => {
-            a.get("info") || u(null)
+            const e = "order" !== a.get("info") && "trailer" !== a.get("info") && !Number.isNaN(parseInt(a.get("info")));
+            if (a.get("info")) {
+              if (e) {
+                const e = (0, c.jsx)(p.Z, {
+                    id: a.get("info")
+                  }),
+                  i = {
+                    left: window.innerWidth / 2,
+                    top: window.innerHeight / 2
+                  };
+                u({
+                  content: e,
+                  rect: i,
+                  contentStyle: {
+                    overflow: "hidden"
+                  },
+                  onClose: () => {
+                    l({}), n({
+                      event_action: "close",
+                      event_category: "modal",
+                      event: "modal_close",
+                      event_label: a.get("info")
+                    })
+                  }
+                }), n({
+                  event: "trackPageview",
+                  card_id: a.get("info"),
+                  card_name: "video"
+                })
+              }
+            } else u(null)
           }), [a]), (0, i.useEffect)((() => {
             if ("order" !== a.get("info") || !o) return;
             const e = o?.tinaModulesInfo?.[0].tina,
@@ -189,8 +219,8 @@
         })
       };
       var V = a(4222),
-        E = a(5370),
-        j = a.n(E);
+        j = a(5370),
+        E = a.n(j);
       const T = {
           guideNavMobile: "rockstargames-sites-gta-gen9dc8c1ccf7688e80181a16b7b473a312b",
           guideNavMobileContent: "rockstargames-sites-gta-gen9e3de050ace77d95d7776b954bee219bd",
@@ -202,84 +232,85 @@
           let {
             currentId: n
           } = e;
-          const a = (0, l.yv)(),
-            [t, s] = (0, i.useState)(!1),
-            [d, r] = (0, i.useState)(null),
-            [u, k] = (0, i.useState)(null),
-            [v] = (0, m.useSearchParams)();
-          return (0, i.useEffect)((() => {
-            j().cloneDeepWith(a, ((e, a, i) => {
-              n === e && r(i?.children ?? null)
-            }))
-          }), [n, a, v.get("section")]), (0, i.useEffect)((() => {
-            k(null), j().cloneDeepWith(d, ((e, n, a) => {
-              "id_hash" === n && v.get("section") === e && k(a)
-            }))
-          }), [d, v.get("section")]), d ? (0, c.jsx)("div", {
+          const {
+            track: a
+          } = (0, s.useGtmTrack)(), t = (0, l.yv)(), [d, r] = (0, i.useState)(!1), [u, k] = (0, i.useState)(null), [v, f] = (0, i.useState)(null), [g] = (0, m.useSearchParams)();
+          if ((0, i.useEffect)((() => {
+              E().cloneDeepWith(t, ((e, a, i) => {
+                n === e && k(i?.children ?? null)
+              }))
+            }), [n, t, g.get("section")]), (0, i.useEffect)((() => {
+              f(null), E().cloneDeepWith(u, ((e, n, a) => {
+                "id_hash" === n && g.get("section") === e && f(a)
+              }))
+            }), [u, g.get("section")]), !u) return null;
+          const p = () => {
+            r(!1), a({
+              event: "nav_click",
+              event_category: "nav",
+              event_action: "click"
+            })
+          };
+          return (0, c.jsx)("div", {
             className: T.guideNavMobile,
             children: (0, c.jsxs)("div", {
               className: T.guideNavMobileContent,
               children: [(0, c.jsx)("div", {
-                className: [T.sections, t ? T.sectionsOpen : ""].join(" "),
-                children: d.map((e => {
+                className: [T.sections, d ? T.sectionsOpen : ""].join(" "),
+                children: u.map((e => {
                   let {
                     id_hash: n,
                     title: a,
                     to: i
                   } = e;
                   return (0, c.jsx)(o.A, {
-                    className: n === u?.id_hash ? T.activeSection : "",
+                    className: n === v?.id_hash ? T.activeSection : "",
                     to: i,
-                    onClick: () => s(!1),
+                    onClick: p,
                     children: a
                   }, i)
                 }))
               }), (0, c.jsx)("button", {
                 type: "button",
-                onClick: () => s(!t),
+                onClick: () => r(!d),
                 children: "Jump To"
               })]
             })
-          }) : null
+          })
         };
       var B = a(7311);
       const M = (0, o.withSimpleErrorBoundary)((() => {
         const {
-          setBrand: e,
-          state: n
-        } = (0, l.MB)(), {
-          activeSection: a
-        } = n, [t, s] = (0, i.useState)(null);
+          setBrand: e
+        } = (0, l.MB)();
         (0, i.useEffect)((() => {
           e("gtao")
         }), []);
         const {
-          guideId: d
-        } = (0, m.useParams)(), r = (0, o.useTinaModuleFetchByIds)({
-          ids: [d],
+          guideId: n
+        } = (0, m.useParams)(), a = (0, o.useTinaModuleFetchByIds)({
+          ids: [n],
           setTitleDataPath: "tinaModulesInfo[0].title_doc"
         })?.[0] ?? {};
-        return (0, i.useEffect)((() => {
-          s(a ?? d)
-        }), [d, a]), (0, l.kt)(t), (0, i.useMemo)((() => {
-          if (!r) return null;
+        return (0, i.useMemo)((() => {
+          if (!a) return null;
           const {
             tina: e,
-            type: n
-          } = r;
-          if (n && "gen9-guide" !== n) throw Error("Invalid type, a guide is needed.");
+            type: i
+          } = a;
+          if (i && "gen9-guide" !== i) throw Error("Invalid type, a guide is needed.");
           return (0, c.jsxs)("div", {
             className: "rockstargames-sites-gta-gen9eaeb117af03214aa0f78fd85d4028bb7",
             children: [(0, c.jsx)(V.Z, {
-              currentId: d
+              currentId: n
             }), e ? (0, c.jsx)(v.TinaParser, {
               components: B.componentsForTinaParserGuide,
               tina: e
             }) : "", (0, c.jsx)(D, {
-              currentId: d
+              currentId: n
             })]
           })
-        }), [JSON.stringify(r)])
+        }), [JSON.stringify(a)])
       }));
       var I = a(6805);
       const $ = (0, o.withSimpleErrorBoundary)((e => {
@@ -311,7 +342,7 @@
             })
           }) : null
         })),
-        O = ["/gta-v", "/gta-online", "/gta-online/guides", "/gta-online/prime-plus-offer", "/gta-plus", "/gta-plus/legal", "/gta-online/license-plates", "/gta-online/heists/lsdw", "/gta-online/heists/cayo-perico-heist", "/gta-online/heists/diamond-casino-heist", "/gta-online/heists/doomsday-heist", "/gta-online/heists/original-heists", "/gta-online/businesses/drug-wars", "/gta-online/businesses/the-contract", "/gta-online/businesses/after-hours", "/gta-online/businesses/smugglers-run", "/gta-online/businesses/gunrunning", "/gta-online/businesses/bikers", "/gta-online/businesses/finance-and-felony", "/gta-online/businesses/import-export", "/gta-online/recreation/los-santos-tuners", "/gta-online/recreation/diamond-casino-resort", "/gta-online/contact-missions/operation-paper-trail", "/gta-online/contact-missions/san-andreas-mercenaries", "/gta-online/contact-missions/superyacht-life", "/gta-online/contact-missions/last-play", "/gta-online/contact-missions/premium-deluxe-repo", "/gta-online/contact-missions/dispatch-services", "/gta-online/contact-missions/lowriders", "/gta-online/contact-missions/dlc-1-2023", "/gta-online/series-modes/arena-war", "/gta-online/series-modes/survivals", "/gta-online/series-modes/racing", "/gta-online/series-modes/adversary-modes", "/gta-online/series-modes/deathmatches", "/gta-online/special-interests/vehicles-enthusiast", "/gta-online/special-interests/weapons-expert"],
+        O = ["/gta-v", "/gta-online", "/gta-online/guides", "/gta-online/prime-plus-offer", "/gta-plus", "/gta-plus/legal", "/gta-online/license-plates", "/gta-online/heists/lsdw", "/gta-online/heists/cayo-perico-heist", "/gta-online/heists/diamond-casino-heist", "/gta-online/heists/doomsday-heist", "/gta-online/heists/original-heists", "/gta-online/businesses/drug-wars", "/gta-online/businesses/the-contract", "/gta-online/businesses/after-hours", "/gta-online/businesses/smugglers-run", "/gta-online/businesses/gunrunning", "/gta-online/businesses/bikers", "/gta-online/businesses/finance-and-felony", "/gta-online/businesses/import-export", "/gta-online/businesses/chop-shop", "/gta-online/recreation/los-santos-tuners", "/gta-online/recreation/diamond-casino-resort", "/gta-online/contact-missions/operation-paper-trail", "/gta-online/contact-missions/san-andreas-mercenaries", "/gta-online/contact-missions/superyacht-life", "/gta-online/contact-missions/last-play", "/gta-online/contact-missions/premium-deluxe-repo", "/gta-online/contact-missions/dispatch-services", "/gta-online/contact-missions/lowriders", "/gta-online/contact-missions/dlc-1-2023", "/gta-online/series-modes/arena-war", "/gta-online/series-modes/survivals", "/gta-online/series-modes/racing", "/gta-online/series-modes/adversary-modes", "/gta-online/series-modes/deathmatches", "/gta-online/special-interests/vehicles-enthusiast", "/gta-online/special-interests/weapons-expert"],
         A = e => {
           let {
             root: n
@@ -401,7 +432,7 @@
           }];
           return (0, m.useRoutes)(a)
         })),
-        U = e => {
+        C = e => {
           let {
             config: n
           } = e;
@@ -418,7 +449,7 @@
             })
           })
         },
-        C = e => {
+        U = e => {
           let {
             config: n,
             setHeaderHidden: a
@@ -432,18 +463,18 @@
             o(null)
           })), []), (0, c.jsxs)("div", {
             className: "rockstargames-sites-gta-gen9deaacbee4aef528355067efdd6b118c2",
-            children: [(0, c.jsx)(N, {}), (0, c.jsx)(u, {}), (0, c.jsx)(U, {
+            children: [(0, c.jsx)(N, {}), (0, c.jsx)(u, {}), (0, c.jsx)(C, {
               config: n
             })]
           })
         },
-        L = e => {
+        G = e => {
           let {
             config: n,
             setHeaderHidden: a
           } = e;
           return (0, c.jsx)(t.ModalProvider, {
-            children: (0, c.jsx)(C, {
+            children: (0, c.jsx)(U, {
               config: n,
               setHeaderHidden: a
             })

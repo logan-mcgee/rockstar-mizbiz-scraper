@@ -3,7 +3,7 @@
   [277], {
     1277: (e, t, a) => {
       a.d(t, {
-        Z: () => ca
+        Z: () => ua
       });
       var r = a(927),
         n = a(3045),
@@ -19,36 +19,36 @@
         f = a(7039),
         g = a(7945),
         b = a.n(g),
-        y = a(8976),
-        h = a(67),
-        v = a.n(h);
-      const x = e => $.find((t => {
+        h = a(8976),
+        y = a(67),
+        v = a.n(y);
+      const x = e => U.find((t => {
           let {
             id: a
           } = t;
           return a === e
         })),
-        w = e => $.find((t => {
+        w = e => U.find((t => {
           let {
             name: a
           } = t;
           return a.toLowerCase() === e.toLowerCase()
         })),
         E = e => e * parseFloat(getComputedStyle(document.documentElement).fontSize),
-        P = () => window.innerWidth < z.lg,
+        P = () => window.innerWidth < $.lg,
         S = () => window.innerHeight > .75 * window.innerWidth,
         _ = () => {
           const e = window.innerWidth;
           switch (!0) {
-            case e >= z.xxl:
+            case e >= $.xxl:
               return 25;
-            case e >= z.xl:
+            case e >= $.xl:
               return 30;
             case e >= 1440:
               return 32.5;
             case e >= 1280:
               return 35;
-            case e >= z.lg:
+            case e >= $.lg:
               return 40;
             default:
               return 100
@@ -57,7 +57,7 @@
         k = () => {
           const e = window.innerWidth;
           switch (!0) {
-            case e >= z.xl:
+            case e >= $.xl:
               return E(4);
             case e >= 1440:
               return E(3);
@@ -68,13 +68,13 @@
         T = () => {
           const e = window.innerWidth;
           switch (!0) {
-            case e >= z.xl:
+            case e >= $.xl:
               return 4;
             case e >= 1280:
               return 4.5;
-            case e >= z.lg:
+            case e >= $.lg:
               return 5;
-            case e >= z.md:
+            case e >= $.md:
             default:
               return 8
           }
@@ -86,7 +86,7 @@
           return a && r === e.plateText
         })) : !!e?.plateText;
 
-      function N(e) {
+      function I(e) {
         const t = {
           x: 0,
           y: 0,
@@ -116,7 +116,7 @@
         return t
       }
 
-      function I(e, t, a, r) {
+      function N(e, t, a, r) {
         let n = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : {
           x: 0,
           y: 0
@@ -134,8 +134,8 @@
           top: m,
           left: p,
           bottom: f
-        } = r.gridDimensions.margins.pixels, g = Math.floor(e / o), b = e % o, y = l * i + d * (i - 1), h = c * o + u * (o - 1), v = s - n.x - 2 * p, x = a - n.y - m - f, w = x * (l / y), E = v * (c / h), P = g * (l + d) / y, S = {
-          x: v * (b * (c + u) / h) + p + n.x,
+        } = r.gridDimensions.margins.pixels, g = Math.floor(e / o), b = e % o, h = l * i + d * (i - 1), y = c * o + u * (o - 1), v = s - n.x - 2 * p, x = a - n.y - m - f, w = x * (l / h), E = v * (c / y), P = g * (l + d) / h, S = {
+          x: v * (b * (c + u) / y) + p + n.x,
           y: x * P + m + n.y
         };
         return {
@@ -154,15 +154,15 @@
         }
       }
       const O = (e, t) => {
-          t === ue.LIST_PLATES && (document.body.style.cursor = "pointer")
+          t === me.LIST_PLATES && (document.body.style.cursor = "pointer")
         },
         A = e => {
           document.body.style.cursor = "auto", v().to(e.scale, {
             x: 1,
             y: 1,
             z: 1,
-            duration: U.plateHover.duration,
-            ease: U.plateHover.ease
+            duration: F.plateHover.duration,
+            ease: F.plateHover.ease
           })
         };
 
@@ -184,20 +184,20 @@
           camera: m,
           controls: p
         } = n, f = T(), g = !S() || P() ? f * s : 1.6 * f * s, b = [];
-        let y = null;
+        let h = null;
         u.traverse((e => {
-          e.name === me.LP && b.push(e), e.userData.index === a && (y = e)
+          e.name === pe.LP && b.push(e), e.userData.index === a && (h = e)
         }));
-        const h = new d.Vector3;
-        y && y.getWorldPosition(h);
+        const y = new d.Vector3;
+        h && h.getWorldPosition(y);
         const v = {
             cameraPosition: {
               start: (new d.Vector3).copy(m.position),
-              end: new d.Vector3(h.x, h.y, h.z + g)
+              end: new d.Vector3(y.x, y.y, y.z + g)
             },
             controlsTarget: {
               start: (new d.Vector3).copy(p.current.target),
-              end: h
+              end: y
             },
             plateOpacity: b.map(((e, t) => ({
               start: e.material.opacity,
@@ -208,10 +208,10 @@
             current: 0
           };
         let w = 0;
-        return t.isResize || (w = P() ? U.sidebar.mobile.drawer.duration : U.clickPlate.duration), r.to(x, {
+        return t.isResize || (w = P() ? F.sidebar.mobile.drawer.duration : F.clickPlate.duration), r.to(x, {
           current: 1,
           duration: w,
-          ease: P() ? U.sidebar.mobile.drawer.ease : U.clickPlate.ease,
+          ease: P() ? F.sidebar.mobile.drawer.ease : F.clickPlate.ease,
           onUpdate: () => {
             const {
               current: e
@@ -228,8 +228,8 @@
           } : void 0
         }, i || 0), x.current = 0, r.to(x, {
           current: 1,
-          duration: P ? U.sidebar.mobile.drawer.duration : U.clickPlate.duration,
-          ease: P ? U.sidebar.mobile.drawer.ease : U.clickPlate.ease,
+          duration: P ? F.sidebar.mobile.drawer.duration : F.clickPlate.duration,
+          ease: P ? F.sidebar.mobile.drawer.ease : F.clickPlate.ease,
           onUpdate: () => {
             const {
               current: e
@@ -279,79 +279,116 @@
           VIEW_PLATE: "viewPlate",
           TOGGLE_3D_BUTTON: "toggle3DButton",
           TOGGLE_VIEW_BUTTON: "toggleViewButton"
-        },
-        $ = [{
-          id: 0,
-          name: "BlueWhite2",
-          displayName: "Blue on White 2",
-          alphaImageUrl: V,
-          albedoImageUrl: a(6050),
-          roughnessImageUrl: a(8642),
-          bumpImageUrl: a(9233),
-          previewUrl: a(8928),
-          image: null,
-          fontColor: "#2C317E",
-          fontSize: M,
-          fontName: j,
-          selected: !1
-        }, {
-          id: 1,
-          name: "YellowBlack",
-          displayName: "Yellow on Black",
-          alphaImageUrl: V,
-          albedoImageUrl: a(4360),
-          roughnessImageUrl: a(1765),
-          bumpImageUrl: a(5987),
-          previewUrl: a(3983),
-          image: null,
-          fontColor: "#D29D17",
-          fontSize: M,
-          fontName: j,
-          selected: !1
-        }, {
-          id: 2,
-          name: "OrangeBlue",
-          displayName: "Orange on Blue",
-          alphaImageUrl: V,
-          albedoImageUrl: a(6879),
-          roughnessImageUrl: a(1765),
-          bumpImageUrl: a(5987),
-          previewUrl: a(1358),
-          image: null,
-          fontColor: "#CD7600",
-          fontSize: M,
-          fontName: j,
-          selected: !1
-        }, {
-          id: 3,
-          name: "BlueWhite1",
-          displayName: "Blue on White 1",
-          alphaImageUrl: V,
-          albedoImageUrl: a(3493),
-          roughnessImageUrl: a(1765),
-          bumpImageUrl: a(5987),
-          previewUrl: a(7934),
-          image: null,
-          fontColor: "#2C317E",
-          fontSize: M,
-          fontName: j,
-          selected: !1
-        }, {
-          id: 4,
-          name: "BlueWhite3",
-          displayName: "Blue on White 3",
-          alphaImageUrl: V,
-          albedoImageUrl: a(754),
-          roughnessImageUrl: a(2423),
-          bumpImageUrl: a(4517),
-          previewUrl: a(2548),
-          image: null,
-          fontColor: "#2C317E",
-          fontSize: M,
-          fontName: j,
-          selected: !1
-        }],
-        z = {
+        };
+      let z;
+      z = [{
+        id: 0,
+        name: "eCola",
+        displayName: "eCola",
+        alphaImageUrl: V,
+        albedoImageUrl: a(568),
+        roughnessImageUrl: a(7376),
+        bumpImageUrl: a(1101),
+        previewUrl: a(6638),
+        image: null,
+        fontColor: "#FFFFFF",
+        fontSize: M,
+        fontName: j,
+        selected: !1,
+        isXmas2023Plate: !0
+      }, {
+        id: 1,
+        name: "sprunk",
+        displayName: "Sprunk",
+        alphaImageUrl: V,
+        albedoImageUrl: a(7188),
+        roughnessImageUrl: a(9305),
+        bumpImageUrl: a(111),
+        previewUrl: a(9615),
+        image: null,
+        fontColor: "#FFFFFF",
+        fontSize: M,
+        fontName: j,
+        selected: !1,
+        isXmas2023Plate: !0
+      }, {
+        id: 2,
+        name: "BlueWhite2",
+        displayName: "Blue on White 2",
+        alphaImageUrl: V,
+        albedoImageUrl: a(6050),
+        roughnessImageUrl: a(8642),
+        bumpImageUrl: a(9233),
+        previewUrl: a(8928),
+        image: null,
+        fontColor: "#2C317E",
+        fontSize: M,
+        fontName: j,
+        selected: !1,
+        isXmas2023Plate: !1
+      }, {
+        id: 3,
+        name: "YellowBlack",
+        displayName: "Yellow on Black",
+        alphaImageUrl: V,
+        albedoImageUrl: a(4360),
+        roughnessImageUrl: a(1765),
+        bumpImageUrl: a(5987),
+        previewUrl: a(3983),
+        image: null,
+        fontColor: "#D29D17",
+        fontSize: M,
+        fontName: j,
+        selected: !1,
+        isXmas2023Plate: !1
+      }, {
+        id: 4,
+        name: "OrangeBlue",
+        displayName: "Orange on Blue",
+        alphaImageUrl: V,
+        albedoImageUrl: a(6879),
+        roughnessImageUrl: a(1765),
+        bumpImageUrl: a(5987),
+        previewUrl: a(1358),
+        image: null,
+        fontColor: "#CD7600",
+        fontSize: M,
+        fontName: j,
+        selected: !1,
+        isXmas2023Plate: !1
+      }, {
+        id: 5,
+        name: "BlueWhite1",
+        displayName: "Blue on White 1",
+        alphaImageUrl: V,
+        albedoImageUrl: a(3493),
+        roughnessImageUrl: a(1765),
+        bumpImageUrl: a(5987),
+        previewUrl: a(7934),
+        image: null,
+        fontColor: "#2C317E",
+        fontSize: M,
+        fontName: j,
+        selected: !1,
+        isXmas2023Plate: !1
+      }, {
+        id: 6,
+        name: "BlueWhite3",
+        displayName: "Blue on White 3",
+        alphaImageUrl: V,
+        albedoImageUrl: a(754),
+        roughnessImageUrl: a(2423),
+        bumpImageUrl: a(4517),
+        previewUrl: a(2548),
+        image: null,
+        fontColor: "#2C317E",
+        fontSize: M,
+        fontName: j,
+        selected: !1,
+        isXmas2023Plate: !1
+      }];
+      const U = z,
+        $ = {
           sm: 430,
           md: 768,
           lg: 1024,
@@ -366,60 +403,60 @@
             value: 0
           }
         },
-        U = {
+        F = {
           plateHover: {
             duration: .25,
-            ease: h.Power1.easeOut
+            ease: y.Power1.easeOut
           },
           clickPlate: {
             duration: .9,
-            ease: h.Power4.easeInOut
+            ease: y.Power4.easeInOut
           },
           deletePlate: {
             duration: .6,
-            ease: h.Power4.easeInOut,
+            ease: y.Power4.easeInOut,
             delay: .005
           },
           sidebar: {
             in: {
               duration: .35,
-              ease: h.Power2.easeIn,
+              ease: y.Power2.easeIn,
               delay: .65
             },
             out: {
               duration: .3,
-              ease: h.Power2.easeIn,
+              ease: y.Power2.easeIn,
               delay: 0
             },
             mobile: {
               drawer: {
                 duration: .9,
-                ease: h.Power4.easeInOut
+                ease: y.Power4.easeInOut
               },
               drawerSnap: {
                 duration: .4,
-                ease: h.Power4.easeOut
+                ease: y.Power4.easeOut
               },
               fadeHeader: {
                 in: {
                   duration: .6,
-                  ease: h.Power2.easeInOut,
+                  ease: y.Power2.easeInOut,
                   delay: .3
                 },
                 out: {
                   duration: .7,
-                  ease: h.Power2.easeInOut
+                  ease: y.Power2.easeInOut
                 }
               },
               footer: {
                 in: {
                   duration: .4,
-                  ease: h.Cubic.easeIn,
+                  ease: y.Cubic.easeIn,
                   delay: .9
                 },
                 out: {
                   duration: .4,
-                  ease: h.Cubic.easeOut
+                  ease: y.Cubic.easeOut
                 }
               }
             }
@@ -427,51 +464,51 @@
           toggleView: {
             camera: {
               duration: .75,
-              ease: h.Cubic.easeInOut
+              ease: y.Cubic.easeInOut
             },
             fadeIn: {
               duration: .5,
-              ease: h.Power2.easeIn
+              ease: y.Power2.easeIn
             },
             fadeOut: {
               duration: .5,
-              ease: h.Power2.easeIn
+              ease: y.Power2.easeIn
             },
             reset: {
               duration: .375,
-              ease: h.Cubic.easeInOut
+              ease: y.Cubic.easeInOut
             }
           },
           transaction: {
             confirmOrder: {
               duration: .9,
-              ease: h.Power3.easeInOut
+              ease: y.Power3.easeInOut
             },
             fade: {
               in: {
                 duration: .4,
-                ease: h.Cubic.easeIn
+                ease: y.Cubic.easeIn
               },
               out: {
                 duration: .4,
-                ease: h.Cubic.easeOut
+                ease: y.Cubic.easeOut
               },
               landingPage: {
                 duration: 1.15,
-                ease: h.Cubic.easeInOut
+                ease: y.Cubic.easeInOut
               }
             }
           },
           plateShimmer: {
             duration: 2,
-            ease: h.Power2.easeOut
+            ease: y.Power2.easeOut
           },
           accessibilePlate: {
             duration: .5,
-            ease: h.Power2.easeIn
+            ease: y.Power2.easeIn
           }
         },
-        F = {
+        G = {
           plateView: {
             maxPolarAngle: Math.PI - .9,
             minPolarAngle: .9,
@@ -485,45 +522,45 @@
             minAzimuthAngle: Math.PI / -4
           }
         },
-        G = -9.72,
-        X = 5,
-        q = -10.68,
-        Z = 10.4,
-        K = 5,
-        J = 4.52,
-        Q = {
+        X = -9.72,
+        q = 5,
+        Z = -10.68,
+        K = 10.4,
+        J = 5,
+        Q = 4.52,
+        ee = {
           x: 0,
           y: 14.4,
           z: 4.9
         },
-        ee = -4.52,
-        te = 10,
-        ae = 6.8,
-        re = {
+        te = -4.52,
+        ae = 10,
+        re = 6.8,
+        ne = {
           x: -14.52
         },
-        ne = -15,
-        se = 7,
-        oe = 4.52,
-        ie = {
+        se = -15,
+        oe = 7,
+        ie = 4.52,
+        le = {
           x: 6,
           y: 5,
           z: 5
         },
-        le = .6,
-        ce = .4,
-        de = .3,
-        ue = {
+        ce = .6,
+        de = .4,
+        ue = .3,
+        me = {
           LIST_PLATES: "list",
           VIEW_PLATE: "view",
           NEW_PLATE: "new",
           CONFIRM_ORDER: "confirm-order"
         },
-        me = {
+        pe = {
           LP: "licensePlate",
           LP_GRID: "licensePlateGrid"
         },
-        pe = {
+        fe = {
           faux: !0,
           index: 0,
           mpPlate: !1,
@@ -533,34 +570,35 @@
           style: w("BlueWhite2"),
           vehicles: []
         },
-        fe = (0, s.makeVar)(""),
-        ge = (0, s.makeVar)([]),
-        be = (0, s.makeVar)(null),
-        ye = (0, s.makeVar)(null),
+        ge = (0, s.makeVar)(""),
+        be = (0, s.makeVar)([]),
         he = (0, s.makeVar)(null),
-        ve = (0, s.makeVar)(0),
-        xe = (0, s.makeVar)(ue.LIST_PLATES),
-        we = (0, s.makeVar)(null),
+        ye = (0, s.makeVar)(null),
+        ve = (0, s.makeVar)(null),
+        xe = (0, s.makeVar)(0),
+        we = (0, s.makeVar)(me.LIST_PLATES),
         Ee = (0, s.makeVar)(null),
         Pe = (0, s.makeVar)(null),
-        Se = (0, s.makeVar)(1),
-        _e = (0, s.makeVar)(null),
-        ke = (0, s.makeVar)(!1),
+        Se = (0, s.makeVar)(null),
+        _e = (0, s.makeVar)(1),
+        ke = (0, s.makeVar)(null),
         Te = (0, s.makeVar)(!1),
-        Re = (0, s.makeVar)(!0),
+        Re = (0, s.makeVar)(!1),
+        Ie = (0, s.makeVar)(!0),
         Ne = (0, s.makeVar)(null),
-        Ie = (0, s.makeVar)(P()),
-        Oe = (0, s.makeVar)(!1),
-        Ae = (0, s.makeVar)(!0),
-        Ce = (0, s.makeVar)(!1),
-        Le = (0, s.makeVar)(0),
-        je = (0, s.makeVar)(ue.LIST_PLATES),
-        Me = (0, s.makeVar)(void 0),
-        Ve = (0, s.makeVar)(""),
-        De = (0, s.makeVar)([]),
+        Oe = (0, s.makeVar)(P()),
+        Ae = (0, s.makeVar)(!1),
+        Ce = (0, s.makeVar)(!0),
+        Le = (0, s.makeVar)(!1),
+        je = (0, s.makeVar)(0),
+        Me = (0, s.makeVar)(me.LIST_PLATES),
+        Ve = (0, s.makeVar)(void 0),
+        De = (0, s.makeVar)(""),
         We = (0, s.makeVar)([]),
-        Ye = (0, s.makeVar)(!1),
-        Be = (0, s.makeVar)(!!P()),
+        Ye = (0, s.makeVar)([]),
+        Be = (0, s.makeVar)(!1),
+        ze = (0, s.makeVar)(!!P()),
+        Ue = (0, s.makeVar)(!1),
         $e = (0, s.makeVar)({
           isValid: !0,
           isMalformed: !1,
@@ -568,58 +606,59 @@
           isReserved: !1,
           statusPlateNumberBasis: ""
         }),
-        ze = (0, s.makeVar)($),
-        He = (0, s.makeVar)({}),
-        Ue = (e, t) => {
+        He = (0, s.makeVar)(U),
+        Fe = (0, s.makeVar)({}),
+        Ge = (e, t) => {
           const a = {
-            ...He(),
+            ...Fe(),
             [e]: t
           };
-          He(a)
+          Fe(a)
         },
-        Fe = (0, s.makeVar)(0),
-        Ge = (0, s.makeVar)(null),
-        Xe = (0, s.makeVar)(null),
+        Xe = (0, s.makeVar)(fe.style?.id),
         qe = (0, s.makeVar)(null),
-        Ze = () => {
-          const e = (0, s.useReactiveVar)(ge),
-            t = (0, s.useReactiveVar)(be),
+        Ze = (0, s.makeVar)(null),
+        Ke = (0, s.makeVar)(null),
+        Je = () => {
+          const e = (0, s.useReactiveVar)(be),
+            t = (0, s.useReactiveVar)(he),
             a = (0, s.useReactiveVar)(ye),
-            n = (0, s.useReactiveVar)(he),
-            i = (0, s.useReactiveVar)(ve),
-            c = (0, s.useReactiveVar)(xe),
-            d = (0, s.useReactiveVar)(we),
-            u = (0, s.useReactiveVar)(Ee),
-            m = (0, s.useReactiveVar)(Pe),
-            p = (0, s.useReactiveVar)(Se),
-            f = (0, s.useReactiveVar)(_e),
-            g = (0, s.useReactiveVar)(ke),
-            b = (0, s.useReactiveVar)(Ie),
-            y = (0, s.useReactiveVar)(Te),
+            n = (0, s.useReactiveVar)(ve),
+            i = (0, s.useReactiveVar)(xe),
+            c = (0, s.useReactiveVar)(we),
+            d = (0, s.useReactiveVar)(Ee),
+            u = (0, s.useReactiveVar)(Pe),
+            m = (0, s.useReactiveVar)(Se),
+            p = (0, s.useReactiveVar)(_e),
+            f = (0, s.useReactiveVar)(ke),
+            g = (0, s.useReactiveVar)(Te),
+            b = (0, s.useReactiveVar)(Oe),
             h = (0, s.useReactiveVar)(Re),
+            y = (0, s.useReactiveVar)(Ie),
             v = (0, s.useReactiveVar)(Ne),
-            x = (0, s.useReactiveVar)(Oe),
-            w = (0, s.useReactiveVar)(Ce),
-            E = (0, s.useReactiveVar)(Ae),
-            P = (0, s.useReactiveVar)(Le),
-            S = (0, s.useReactiveVar)(je),
+            x = (0, s.useReactiveVar)(Ae),
+            w = (0, s.useReactiveVar)(Le),
+            E = (0, s.useReactiveVar)(Ce),
+            P = (0, s.useReactiveVar)(je),
+            S = (0, s.useReactiveVar)(Me),
             _ = (0, l.useLocale)(),
             [k, T] = (0, r.useState)(""),
-            R = (0, s.useReactiveVar)(Me),
-            N = (0, s.useReactiveVar)(Ve),
+            R = (0, s.useReactiveVar)(Ve),
             I = (0, s.useReactiveVar)(De),
-            O = (0, s.useReactiveVar)(We),
+            N = (0, s.useReactiveVar)(We),
+            O = (0, s.useReactiveVar)(Ye),
             A = (0, s.useReactiveVar)($e),
-            C = (0, s.useReactiveVar)(ze),
-            L = (0, s.useReactiveVar)(fe),
-            j = (0, s.useReactiveVar)(He),
+            C = (0, s.useReactiveVar)(He),
+            L = (0, s.useReactiveVar)(ge),
+            j = (0, s.useReactiveVar)(Fe),
             M = (0, o.useScConfig)(),
-            V = (0, s.useReactiveVar)(Fe),
-            D = (0, s.useReactiveVar)(Ge),
-            W = (0, s.useReactiveVar)(Be),
-            Y = (0, s.useReactiveVar)(Ye),
-            B = (0, s.useReactiveVar)(Xe),
-            $ = (0, s.useReactiveVar)(qe);
+            V = (0, s.useReactiveVar)(Xe),
+            D = (0, s.useReactiveVar)(qe),
+            W = (0, s.useReactiveVar)(ze),
+            Y = (0, s.useReactiveVar)(Be),
+            B = (0, s.useReactiveVar)(Ze),
+            z = (0, s.useReactiveVar)(Ke),
+            U = (0, s.useReactiveVar)(Ue);
           return (0, r.useEffect)((() => {
             const e = (0, l.toScLocaleString)(_),
               t = `${document.location.pathname}${document.location.search}`,
@@ -636,24 +675,24 @@
               deletedPlateIndex: d,
               error: u,
               firstPlateMesh: m,
-              isLoading: h,
+              isLoading: y,
               isScrollEnabled: E,
               gridScale: p,
               gridState: f,
               lastScrollY: P,
               pendingOrder: R,
-              plates: I,
+              plates: N,
               plateTextures: O,
               realHeight: L,
               is3D: g,
-              isExpanded: y,
+              isExpanded: h,
               isLoggedIn: v,
               isMobile: b,
               isSceneLoaded: w,
               loginUrl: k,
               isOrderConfirmed: x,
               lastView: S,
-              plateNumber: N,
+              plateNumber: I,
               plateNumberStatus: A,
               plateStyles: C,
               refs: j,
@@ -662,102 +701,104 @@
               shouldForce2D: W,
               shouldRenderScene: Y,
               three: B,
-              vehicles: $
+              vehicles: z,
+              xmas23PlatesAllowed: U
             },
-            setAccessiblePlates: ge,
-            setCanvasDimensions: be,
+            setAccessiblePlates: be,
+            setCanvasDimensions: he,
             setCharacter: ye,
-            setCurrentPlate: he,
-            setCurrentPlateIndex: ve,
-            setCurrentView: xe,
-            setDeletedPlateIndex: we,
-            setError: Ee,
-            setFirstPlateMesh: Pe,
-            setGridState: _e,
-            setIsLoading: Re,
+            setCurrentPlate: ve,
+            setCurrentPlateIndex: xe,
+            setCurrentView: we,
+            setDeletedPlateIndex: Ee,
+            setError: Pe,
+            setFirstPlateMesh: Se,
+            setGridState: ke,
+            setIsLoading: Ie,
             setIsLoggedIn: Ne,
-            setIsOrderConfirmed: Oe,
-            setLastScrollY: Le,
-            setLastView: je,
-            setPendingOrder: Me,
-            setPlates: De,
-            realHeightReactive: fe,
-            setIs3D: ke,
-            setIsExpanded: Te,
-            setIsMobile: Ie,
-            setIsSceneLoaded: Ce,
-            setIsScrollEnabled: Ae,
-            setGridScale: Se,
-            setPlateNumber: Ve,
+            setIsOrderConfirmed: Ae,
+            setLastScrollY: je,
+            setLastView: Me,
+            setPendingOrder: Ve,
+            setPlates: We,
+            realHeightReactive: ge,
+            setIs3D: Te,
+            setIsExpanded: Re,
+            setIsMobile: Oe,
+            setIsSceneLoaded: Le,
+            setIsScrollEnabled: Ce,
+            setGridScale: _e,
+            setPlateNumber: De,
             setPlateNumberStatus: $e,
-            setPlateStyles: ze,
-            setPlateTextures: We,
-            setRefs: Ue,
-            setRefsInternal: He,
-            setSelectedStyle: Fe,
-            setSelectedVehicle: Ge,
-            setShouldForce2D: Be,
-            setShouldRenderScene: Ye,
-            setThree: Xe,
-            setVehicles: qe
+            setPlateStyles: He,
+            setPlateTextures: Ye,
+            setRefs: Ge,
+            setRefsInternal: Fe,
+            setSelectedStyle: Xe,
+            setSelectedVehicle: qe,
+            setShouldForce2D: ze,
+            setShouldRenderScene: Be,
+            setThree: Ze,
+            setVehicles: Ke,
+            setXmas23PlatesAllowed: Ue
           }
         };
-      var Ke = a(3705);
-      const Je = e => {
+      var Qe = a(3705);
+      const et = e => {
         let {
           t
         } = e;
         const {
           setRefs: a,
           state: n
-        } = Ze(), {
+        } = Je(), {
           realHeight: s
         } = n, o = (0, r.useRef)(null);
         return (0, r.useEffect)((() => {
           a(B.FOOTER, o)
-        }), [o.current]), (0, Ke.jsx)("div", {
+        }), [o.current]), (0, Qe.jsx)("div", {
           className: "rockstargames-modules-gtao-license-plateb6e8553eec1a920ae9f7612fc67f679d",
           ref: o,
           style: {
             display: s ? "block" : "none"
           },
-          children: (0, Ke.jsxs)("div", {
+          children: (0, Qe.jsxs)("div", {
             className: "rockstargames-modules-gtao-license-platea42faae94ba9f609acbd4f25fe7040df",
-            children: [(0, Ke.jsxs)("div", {
+            children: [(0, Qe.jsxs)("div", {
               className: "rockstargames-modules-gtao-license-platebaaac365214984fcde58c80e665b93a5",
-              children: [(0, Ke.jsx)(y.LanguageSelector, {}), (0, Ke.jsxs)("div", {
+              children: [(0, Qe.jsx)(h.LanguageSelector, {}), (0, Qe.jsxs)("div", {
                 className: "rockstargames-modules-gtao-license-plateb1ab2aefcb2ea7b94f3b16e8751de23e",
-                children: [(0, Ke.jsx)(y.A, {
+                children: [(0, Qe.jsx)(h.A, {
                   to: "/corpinfo",
                   "data-gtm-category": "Footer",
                   "data-gtm-action": "Link Click",
                   "data-gtm-label": "Corporate Info",
                   children: t("Corporate")
-                }), (0, Ke.jsx)(y.A, {
+                }), (0, Qe.jsx)(h.A, {
                   to: "/privacy",
                   "data-gtm-category": "Footer",
                   "data-gtm-action": "Link Click",
                   "data-gtm-label": "Privacy",
                   children: t("Privacy")
-                }), (0, Ke.jsx)(y.A, {
+                }), (0, Qe.jsx)(h.A, {
                   onClick: () => window.OneTrust?.ToggleInfoDisplay(),
                   "data-gtm-category": "Footer",
                   "data-gtm-action": "Link Click",
                   "data-gtm-label": "Cookie settings",
                   children: t("Cookie Settings")
-                }), (0, Ke.jsx)(y.A, {
+                }), (0, Qe.jsx)(h.A, {
                   to: "/cookies",
                   "data-gtm-category": "Footer",
                   "data-gtm-action": "Link Click",
                   "data-gtm-label": "Cookie policy",
                   children: t("Cookie Policy")
-                }), (0, Ke.jsx)(y.A, {
+                }), (0, Qe.jsx)(h.A, {
                   to: "/legal",
                   "data-gtm-category": "Footer",
                   "data-gtm-action": "Link Click",
                   "data-gtm-label": "Legal",
                   children: t("Legal")
-                }), (0, Ke.jsx)(y.A, {
+                }), (0, Qe.jsx)(h.A, {
                   to: "/ccpa",
                   "data-gtm-category": "Footer",
                   "data-gtm-action": "CCPA Link",
@@ -765,7 +806,7 @@
                   children: t("Do Not Sell My Info")
                 })]
               })]
-            }), (0, Ke.jsx)(y.Rating, {
+            }), (0, Qe.jsx)(h.Rating, {
               className: "rockstargames-modules-gtao-license-platef11dcd708c3e9261a6f3ffa655c18840",
               condensed: !0,
               titleSlug: "GTAOnline"
@@ -773,9 +814,9 @@
           })
         })
       };
-      var Qe = a(2960),
-        et = a(975);
-      const tt = e => {
+      var tt = a(2960),
+        at = a(975);
+      const rt = e => {
         let {
           envMap: t,
           envModel: a,
@@ -793,26 +834,26 @@
           })), o.visible = !1
         }), [a]), (0, r.useEffect)((() => {
           n && n()
-        }), []), (0, Ke.jsx)("primitive", {
+        }), []), (0, Qe.jsx)("primitive", {
           position: s,
           scale: [1, 1, 1],
           rotation: [0, 0, 0],
           object: o
         })
       };
-      var at = a(5297);
-      const rt = "#898989",
-        nt = "#000000",
-        st = ["0.05", "0.15", "0.4"],
-        ot = ["0.0", "0.5", "1.0"],
-        it = ["0.299", "0.587", "0.114"],
-        lt = (() => {
+      var nt = a(5297);
+      const st = "#898989",
+        ot = "#000000",
+        it = ["0.05", "0.15", "0.4"],
+        lt = ["0.0", "0.5", "1.0"],
+        ct = ["0.299", "0.587", "0.114"],
+        dt = (() => {
           const {
             userAgent: e
           } = window.navigator;
           return e.indexOf("AppleWebKit") > -1 && -1 === e.indexOf("Chrome")
         })(),
-        ct = () => {
+        ut = () => {
           const e = document.createElement("canvas").getContext("2d", {
             alpha: !1
           });
@@ -820,14 +861,14 @@
           const {
             innerWidth: a
           } = window;
-          return a <= z.sm ? t = 1 / 4 : a <= z.md && (t = .5), e.canvas.width = 2048 * t, e.canvas.height = 1024 * t, e.textAlign = "center", e.textBaseline = "middle", e
+          return a <= $.sm ? t = 1 / 4 : a <= $.md && (t = .5), e.canvas.width = 2048 * t, e.canvas.height = 1024 * t, e.textAlign = "center", e.textBaseline = "middle", e
         },
-        dt = {
-          bumpMap: ct(),
-          map: ct(),
-          roughnessMap: ct()
+        mt = {
+          bumpMap: ut(),
+          map: ut(),
+          roughnessMap: ut()
         },
-        ut = e => {
+        pt = e => {
           let {
             envMap: t,
             height: a = 1,
@@ -841,18 +882,18 @@
             setCurrentView: c,
             setPlateTextures: u,
             setRefs: m
-          } = Ze(), {
+          } = Je(), {
             currentView: p,
             isSceneLoaded: f,
             pendingOrder: g,
             plateNumber: b,
-            plates: y,
-            isLoggedIn: h,
+            plates: h,
+            isLoggedIn: y,
             isMobile: v,
             selectedStyle: w,
             gridScale: E,
             plateTextures: P
-          } = l, S = 0 === s && "number" == typeof w, [_, k] = (0, r.useState)(x(S ? w : n.style.id)), T = [0, 0, 0], R = [1, 1, 1], [N] = (0, r.useState)(0 === n.index), [I, C] = (0, r.useState)({}), L = (0, r.useRef)(), j = y.filter((e => {
+          } = l, S = 0 === s && "number" == typeof w, [_, k] = (0, r.useState)(x(S ? w : n.style.id)), T = [0, 0, 0], R = [1, 1, 1], [I] = (0, r.useState)(0 === n.index), [N, C] = (0, r.useState)({}), L = (0, r.useRef)(), j = h.filter((e => {
             let {
               faux: t
             } = e;
@@ -870,71 +911,71 @@
               const t = String.fromCharCode(8202).repeat(0),
                 a = e.split("")?.join(t) ?? "",
                 r = ((e, t) => {
-                  delete dt.bumpMap, dt.bumpMap = ct();
-                  const a = dt.bumpMap;
+                  delete mt.bumpMap, mt.bumpMap = ut();
+                  const a = mt.bumpMap;
                   let r = 1;
                   const {
                     innerWidth: n
                   } = window;
-                  n <= z.sm ? r = 1 / 4 : n <= z.md && (r = .5);
+                  n <= $.sm ? r = 1 / 4 : n <= $.md && (r = .5);
                   const s = t.fontSize * r;
                   a.strokeStyle = "white", a.fillStyle = "white", a.clearRect(0, 0, a.canvas.width, a.canvas.height), a.font = `${s}px ${t.fontName}`;
                   const o = 5 * r;
-                  return lt || (a.filter = `blur(${o}px)`), t?.bumpMap?.image && a.drawImage(t.bumpMap.image, 0, 0, a.canvas.width, a.canvas.height), a.strokeText(e, a.canvas.width / 2, a.canvas.height / 1.7), a.fillText(e, a.canvas.width / 2, a.canvas.height / 1.7), lt && at.canvasRGB(a.canvas, 0, 0, a.canvas.width, a.canvas.height, 3 * o), new d.CanvasTexture(a.canvas)
+                  return dt || (a.filter = `blur(${o}px)`), t?.bumpMap?.image && a.drawImage(t.bumpMap.image, 0, 0, a.canvas.width, a.canvas.height), a.strokeText(e, a.canvas.width / 2, a.canvas.height / 1.7), a.fillText(e, a.canvas.width / 2, a.canvas.height / 1.7), dt && nt.canvasRGB(a.canvas, 0, 0, a.canvas.width, a.canvas.height, 3 * o), new d.CanvasTexture(a.canvas)
                 })(a, _),
                 n = ((e, t) => {
-                  delete dt.map, dt.map = ct();
-                  const a = dt.map;
+                  delete mt.map, mt.map = ut();
+                  const a = mt.map;
                   let r = 1;
                   const {
                     innerWidth: n
                   } = window;
-                  n <= z.sm ? r = 1 / 4 : n <= z.md && (r = .5);
+                  n <= $.sm ? r = 1 / 4 : n <= $.md && (r = .5);
                   const s = t.fontSize * r;
                   return a.clearRect(0, 0, a.canvas.width, a.canvas.height), a.fillStyle = "white", a.fillRect(0, 0, a.canvas.width, a.canvas.height), t?.albedoMap?.image && a.drawImage(t.albedoMap.image, 0, 0, a.canvas.width, a.canvas.height), a.font = `${s}px ${t.fontName}`, a.fillStyle = t.fontColor, a.fillText(e, a.canvas.width / 2, a.canvas.height / 1.7), new d.CanvasTexture(a.canvas)
                 })(a, _),
                 s = v ? void 0 : ((e, t) => {
-                  delete dt.roughnessMap, dt.roughnessMap = ct();
-                  const a = dt.roughnessMap;
+                  delete mt.roughnessMap, mt.roughnessMap = ut();
+                  const a = mt.roughnessMap;
                   let r = 1;
                   const {
                     innerWidth: n
                   } = window;
-                  n <= z.sm ? r = 1 / 4 : n <= z.md && (r = .5);
+                  n <= $.sm ? r = 1 / 4 : n <= $.md && (r = .5);
                   const s = t.fontSize * r;
-                  a.strokeStyle = nt, a.fillStyle = nt, a.fillRect(0, 0, a.canvas.width, a.canvas.height), a.font = `${s}px ${t.fontName}`;
-                  for (let r = 1; r < 2; r += 1) t?.roughnessMap?.image && a.drawImage(t.roughnessMap.image, 0, 0, a.canvas.width, a.canvas.height), a.strokeStyle = rt, a.fillStyle = rt, a.strokeText(e, a.canvas.width / 2, a.canvas.height / 1.7), a.fillText(e, a.canvas.width / 2, a.canvas.height / 1.7);
+                  a.strokeStyle = ot, a.fillStyle = ot, a.fillRect(0, 0, a.canvas.width, a.canvas.height), a.font = `${s}px ${t.fontName}`;
+                  for (let r = 1; r < 2; r += 1) t?.roughnessMap?.image && a.drawImage(t.roughnessMap.image, 0, 0, a.canvas.width, a.canvas.height), a.strokeStyle = st, a.fillStyle = st, a.strokeText(e, a.canvas.width / 2, a.canvas.height / 1.7), a.fillText(e, a.canvas.width / 2, a.canvas.height / 1.7);
                   return new d.CanvasTexture(a.canvas)
                 })(a, _);
               return [r, n, s]
             }), [_]),
             W = (0, r.useCallback)((e => {
               var t;
-              N && (e.uniforms.saturation = H.saturation, e.uniforms.fade = H.fade, e.uniforms.shaderIndex = H.shaderIndex, e.fragmentShader = `uniform float saturation;\nuniform float fade;\nuniform int shaderIndex;\n${e.fragmentShader}`, e.fragmentShader = e.fragmentShader.replace("#include <dithering_fragment>", `\n        #include <dithering_fragment>\n\n        vec3 lerpedColor;\n\n        if (shaderIndex == 2) {\n            float opacity = mix(0.01, 1.0, saturation);\n            float desaturationOpacity = gl_FragColor.a * (opacity);\n            vec3 desaturationColor = vec3(\n                ${it[0]},\n                ${it[1]},\n                ${it[2]}\n            );\n            lerpedColor =  mix(\n                vec3(dot(gl_FragColor.rgb, desaturationColor)),\n                gl_FragColor.rgb,\n                saturation\n            );\n            gl_FragColor = vec4(lerpedColor, gl_FragColor.a);\n\n        } else if (shaderIndex == 0) {\n            float gradient;\n                if (vUv.y < 0.5) {\n                    gradient = mix(${(t=h?st:ot)[0]}, ${t[1]}, vUv.y * 2.0);\n                } else {\n                    gradient = mix(${t[1]}, ${t[2]}, ((vUv.y - 0.5) * 2.0));\n                }\n                lerpedColor = mix(gl_FragColor.rgb, gl_FragColor.rgb * saturation, 1.0 - gradient);\n\n                float lerpedAlpha = mix(gl_FragColor.a * 0.8, gl_FragColor.a, saturation);\n\n                gl_FragColor = vec4(lerpedColor, lerpedAlpha);\n\n        } else {\n            lerpedColor = mix(gl_FragColor.rgb, gl_FragColor.rgb * saturation, 1.0 - vUv.y);\n\n            gl_FragColor = vec4(lerpedColor, 1);\n\n        }\n    `))
-            }), [N, h, g]);
+              I && (e.uniforms.saturation = H.saturation, e.uniforms.fade = H.fade, e.uniforms.shaderIndex = H.shaderIndex, e.fragmentShader = `uniform float saturation;\nuniform float fade;\nuniform int shaderIndex;\n${e.fragmentShader}`, e.fragmentShader = e.fragmentShader.replace("#include <dithering_fragment>", `\n        #include <dithering_fragment>\n\n        vec3 lerpedColor;\n\n        if (shaderIndex == 2) {\n            float opacity = mix(0.01, 1.0, saturation);\n            float desaturationOpacity = gl_FragColor.a * (opacity);\n            vec3 desaturationColor = vec3(\n                ${ct[0]},\n                ${ct[1]},\n                ${ct[2]}\n            );\n            lerpedColor =  mix(\n                vec3(dot(gl_FragColor.rgb, desaturationColor)),\n                gl_FragColor.rgb,\n                saturation\n            );\n            gl_FragColor = vec4(lerpedColor, gl_FragColor.a);\n\n        } else if (shaderIndex == 0) {\n            float gradient;\n                if (vUv.y < 0.5) {\n                    gradient = mix(${(t=y?it:lt)[0]}, ${t[1]}, vUv.y * 2.0);\n                } else {\n                    gradient = mix(${t[1]}, ${t[2]}, ((vUv.y - 0.5) * 2.0));\n                }\n                lerpedColor = mix(gl_FragColor.rgb, gl_FragColor.rgb * saturation, 1.0 - gradient);\n\n                float lerpedAlpha = mix(gl_FragColor.a * 0.8, gl_FragColor.a, saturation);\n\n                gl_FragColor = vec4(lerpedColor, lerpedAlpha);\n\n        } else {\n            lerpedColor = mix(gl_FragColor.rgb, gl_FragColor.rgb * saturation, 1.0 - vUv.y);\n\n            gl_FragColor = vec4(lerpedColor, 1);\n\n        }\n    `))
+            }), [I, y, g]);
           return (0, r.useEffect)((() => {
-            N && (n.plateText = b)
-          }), [N ? b : null]), (0, r.useEffect)((() => {
-            if (N && _ && _.id !== w) {
+            I && (n.plateText = b)
+          }), [I ? b : null]), (0, r.useEffect)((() => {
+            if (I && _ && _.id !== w) {
               const e = x(w);
               k(e)
             }
-          }), [N, w]), (0, r.useEffect)((() => {
-            H.shaderIndex.value = h ? g ? 0 : 2 : 0, M.current && (M.current.bumpScale = .015 * E, M.current.needsUpdate = !0)
-          }), [M.current, g, h, E]), (0, r.useEffect)((() => {
-            if (I.map && P[s] !== I.map) {
+          }), [I, w]), (0, r.useEffect)((() => {
+            H.shaderIndex.value = y ? g ? 0 : 2 : 0, M.current && (M.current.bumpScale = .015 * E, M.current.needsUpdate = !0)
+          }), [M.current, g, y, E]), (0, r.useEffect)((() => {
+            if (N.map && P[s] !== N.map) {
               const e = [...P];
-              e[s] = I.map, u(e)
+              e[s] = N.map, u(e)
             }
-          }), [I, P]), (0, r.useEffect)((() => {
-            const [e, t, a] = D(N ? b : n.plateText);
+          }), [N, P]), (0, r.useEffect)((() => {
+            const [e, t, a] = D(I ? b : n.plateText);
             C({
               map: t,
               bumpMap: e,
               roughnessMap: a
             })
-          }), [N ? b : void 0, N ? _ : void 0]), (0, r.useMemo)((() => f && I.map && I.bumpMap ? (0, Ke.jsxs)("mesh", {
-            name: me.LP,
+          }), [I ? b : void 0, I ? _ : void 0]), (0, r.useMemo)((() => f && N.map && N.bumpMap ? (0, Qe.jsxs)("mesh", {
+            name: pe.LP,
             visible: !0,
             userData: {
               index: s
@@ -944,33 +985,33 @@
             scale: R,
             ref: L,
             onPointerOver: v ? void 0 : () => {
-              h && c() === ue.LIST_PLATES && L.current && V(L.current)
+              y && c() === me.LIST_PLATES && L.current && V(L.current)
             },
             onPointerOut: v ? void 0 : () => {
               var e;
-              h && L.current && (e = L.current, !n.index && j || A(e))
+              y && L.current && (e = L.current, !n.index && j || A(e))
             },
-            children: [(0, Ke.jsx)("planeBufferGeometry", {
+            children: [(0, Qe.jsx)("planeBufferGeometry", {
               args: [i, a, i, a]
-            }), (0, Ke.jsx)("meshPhysicalMaterial", {
+            }), (0, Qe.jsx)("meshPhysicalMaterial", {
               onBeforeCompile: 0 === s ? W : void 0,
               alphaMap: n.alphaMap,
-              bumpMap: I.bumpMap,
+              bumpMap: N.bumpMap,
               opacity: 0,
               bumpScale: .015,
               depthTest: !1,
               envMap: t,
-              envMapIntensity: ce,
-              map: I.map,
+              envMapIntensity: de,
+              map: N.map,
               metalness: .4,
               ref: M,
               roughness: .3,
-              roughnessMap: I.roughnessMap,
+              roughnessMap: N.roughnessMap,
               transparent: !0
             })]
-          }) : null), [h, v, I])
+          }) : null), [y, v, N])
         },
-        mt = e => {
+        ft = e => {
           let {
             gridState: t,
             loadedAssets: a
@@ -984,8 +1025,8 @@
             bottomMarginAsRatio: f,
             columnGap: g,
             columns: b,
-            isVertical: y,
-            rowGap: h,
+            isVertical: h,
+            rowGap: y,
             topMarginAsRatio: v
           } = m, {
             state: x,
@@ -993,12 +1034,12 @@
             setGridScale: E,
             setLastScrollY: P,
             setCurrentView: S
-          } = Ze(), {
+          } = Je(), {
             currentView: _,
             gridScale: T,
             plates: R,
-            isLoggedIn: N,
-            isMobile: I,
+            isLoggedIn: I,
+            isMobile: N,
             realHeight: O,
             refs: A,
             currentPlateIndex: C,
@@ -1008,25 +1049,25 @@
             isScrollEnabled: D
           } = x, W = (0, r.useRef)(null), {
             camera: Y,
-            scene: $,
-            gl: z
-          } = (0, n.useThree)(), [H, U] = (0, r.useState)(new d.Vector3(p.x, p.y, p.z)), [F, G] = (0, r.useState)(0), [X, q] = (0, r.useState)(0), {
+            scene: z,
+            gl: U
+          } = (0, n.useThree)(), [$, H] = (0, r.useState)(new d.Vector3(p.x, p.y, p.z)), [F, G] = (0, r.useState)(0), [X, q] = (0, r.useState)(0), {
             track: Z
           } = (0, o.useGtmTrack)(), K = {
-            view_name: "license plate creator - landing page logged " + (N ? "in" : "out")
+            view_name: "license plate creator - landing page logged " + (I ? "in" : "out")
           }, [J, Q] = (0, r.useState)(null);
           (0, r.useEffect)((() => {
-            _ === ue.LIST_PLATES && Z({
+            _ === me.LIST_PLATES && Z({
               ...K,
               event: "virtualPageview",
-              display_type: I ? "mobile" : "desktop",
-              view_name: "license plate creator - landing page logged " + (N ? "in" : "out")
+              display_type: N ? "mobile" : "desktop",
+              view_name: "license plate creator - landing page logged " + (I ? "in" : "out")
             })
           }), [_]);
           const ee = (0, r.useCallback)((() => {
             if (M) {
               const e = l * b + g * (b - 1),
-                a = Math.abs(p.z) * Math.tan((0, et.Id)(Y.fov / 2)) * 2,
+                a = Math.abs(p.z) * Math.tan((0, at.Id)(Y.fov / 2)) * 2,
                 r = t.gridDimensions.margins.meters.top,
                 n = t.gridDimensions.margins.meters.bottom,
                 s = t.gridDimensions.width,
@@ -1034,8 +1075,8 @@
                 i = t.gridDimensions.height,
                 c = i / a;
               q((i - a + r + n).toFixed(4)), E(o), (e => {
-                ue.LIST_PLATES;
-                const t = z.domElement.offsetHeight,
+                me.LIST_PLATES;
+                const t = U.domElement.offsetHeight,
                   a = c * t + v * t + f * t,
                   r = k(),
                   n = A[B.ROOT]?.current;
@@ -1043,20 +1084,20 @@
                   canvasHeight: t,
                   rootHeight: a
                 }), w(`${Math.round(a)}px`);
-                const i = Math.round(l * o / s * (z.domElement.offsetWidth - 2 * r));
+                const i = Math.round(l * o / s * (U.domElement.offsetWidth - 2 * r));
                 G(i)
               })()
             }
-          }), [Y.fov, M, b, _, I, p, R, i, $, v, C, j]);
+          }), [Y.fov, M, b, _, N, p, R, i, z, v, C, j]);
           (0, r.useEffect)((() => {
-            p && U(p), ee()
+            p && H(p), ee()
           }), [p, M]);
           const te = (0, r.useMemo)((() => R?.map((e => {
               if (0 === F) return null;
               const {
                 index: t
-              } = e, a = -1 * s / 2 + .251953125 * s, r = (y ? t % b * (s + g) : Math.floor(t / b) * (s + g)) + s / 2, n = (y ? Math.floor(t / b) * (i + h) * -1 : t % b * (i + h) * -1) + a;
-              return (0, Ke.jsx)(ut, {
+              } = e, a = -1 * s / 2 + .251953125 * s, r = (h ? t % b * (s + g) : Math.floor(t / b) * (s + g)) + s / 2, n = (h ? Math.floor(t / b) * (i + y) * -1 : t % b * (i + y) * -1) + a;
+              return (0, Qe.jsx)(pt, {
                 envMap: u,
                 height: c,
                 position: [r, n, 0],
@@ -1071,7 +1112,7 @@
               e && (e.style.touchAction = "auto"), L() || requestAnimationFrame((() => {
                 t.style.removeProperty("position"), t.style.removeProperty("top"), window.scrollTo(0, V)
               }))
-            }), [I, V, D]),
+            }), [N, V, D]),
             re = (0, r.useCallback)((() => {
               const e = A[B.ROOT].current,
                 t = document.body,
@@ -1079,7 +1120,7 @@
               P(a), e && (e.style.touchAction = "none"), L() || (window.scrollTo(0, a), requestAnimationFrame((() => {
                 t.style.position = "fixed", t.style.top = `-${a}px`
               })))
-            }), [I, A, D, V]);
+            }), [N, A, D, V]);
           (0, r.useEffect)((() => {
             D ? ae() : re()
           }), [D]), (0, r.useEffect)((() => () => {
@@ -1087,37 +1128,37 @@
           }), []);
           const ne = (0, r.useCallback)((function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-            if (S() === ue.LIST_PLATES || e) {
+            if (S() === me.LIST_PLATES || e) {
               const e = A[B.ROOT]?.current;
               if (!e || !J) return;
               const {
                 canvasHeight: t,
                 rootHeight: a
-              } = J, r = I && R.length <= 2 ? 2 : 1;
+              } = J, r = N && R.length <= 2 ? 2 : 1;
               let n = Number(Math.min(window.scrollY / (a - t), r).toFixed(4));
               (Number.isNaN(n) || a === t) && (n = 0);
-              const s = H.y + X * n;
-              W?.current?.position?.set(H.x, Number(s.toFixed(3)), H.z)
+              const s = $.y + X * n;
+              W?.current?.position?.set($.x, Number(s.toFixed(3)), $.z)
             }
-          }), [W.current, H, A, X, R, J, N, I]);
+          }), [W.current, $, A, X, R, J, I, N]);
           return (0, r.useEffect)((() => {
             const e = e => {
               ne(!1), e && (e.stopPropagation(), e.preventDefault())
             };
             return 0 !== window.scrollY && e(null), window.addEventListener("scroll", e), () => window.removeEventListener("scroll", e)
-          }), [W.current, N, H, p, O, A, X, J]), (0, r.useEffect)((() => {
-            if (!W.current || !$) return;
-            const e = $.getObjectByName("Scene");
+          }), [W.current, I, $, p, O, A, X, J]), (0, r.useEffect)((() => {
+            if (!W.current || !z) return;
+            const e = z.getObjectByName("Scene");
             W.current.add(e), e && e.scale.set(6.5, 6.5, 6.5)
-          }), [W.current, $]), (0, r.useMemo)((() => (0, Ke.jsx)("group", {
-            name: me.LP_GRID,
+          }), [W.current, z]), (0, r.useMemo)((() => (0, Qe.jsx)("group", {
+            name: pe.LP_GRID,
             ref: W,
             position: p,
             scale: T,
             children: 0 !== F && te
           })), [T, te, F])
         },
-        pt = e => {
+        gt = e => {
           let {
             name: t,
             color: a,
@@ -1130,8 +1171,8 @@
             ref: c,
             withHelper: d = !1
           } = e;
-          return (0, Ke.jsxs)(Ke.Fragment, {
-            children: [(0, Ke.jsx)("pointLight", {
+          return (0, Qe.jsxs)(Qe.Fragment, {
+            children: [(0, Qe.jsx)("pointLight", {
               name: t,
               color: a,
               intensity: r,
@@ -1144,62 +1185,62 @@
               "shadow-mapSize-width": 2 * l,
               "shadow-radius": 4,
               "shadow-bias": -35e-5
-            }), d && (0, Ke.jsx)("pointLightHelper", {
+            }), d && (0, Qe.jsx)("pointLightHelper", {
               light: c,
               sphereSize: 1
             })]
           })
         },
-        ft = e => {
+        bt = e => {
           let {
             baseIntensity: t,
             mapSize: a
           } = e;
-          return (0, r.useMemo)((() => (0, Ke.jsxs)("group", {
+          return (0, r.useMemo)((() => (0, Qe.jsxs)("group", {
             name: "Lights",
-            children: [(0, Ke.jsx)(pt, {
+            children: [(0, Qe.jsx)(gt, {
               name: "Light1",
               color: 16777215,
               intensity: 0,
               distance: 0,
               decay: 2,
-              position: [G, X, q],
+              position: [X, q, Z],
               rotation: [-Math.PI / 2, 0, 0],
               mapSize: a
-            }), (0, Ke.jsx)(pt, {
+            }), (0, Qe.jsx)(gt, {
               name: "Light2",
               color: 16777215,
               intensity: t,
               distance: 0,
               decay: 2,
-              position: [Z, K, J],
+              position: [K, J, Q],
               rotation: [-Math.PI / 2, 0, 0],
               mapSize: a
-            }), (0, Ke.jsx)(pt, {
+            }), (0, Qe.jsx)(gt, {
               name: "Light3",
               color: 16777215,
               intensity: t,
               distance: 0,
               decay: 2,
-              position: [ee, te, ae],
+              position: [te, ae, re],
               rotation: [-Math.PI / 2, 0, 0],
               mapSize: a
-            }), (0, Ke.jsx)(pt, {
+            }), (0, Qe.jsx)(gt, {
               name: "Light4",
               color: 16777215,
               intensity: 0,
               distance: 50,
               decay: 2,
-              position: [ne, se, oe],
+              position: [se, oe, ie],
               rotation: [-Math.PI / 2, 0, 0],
               mapSize: a
             })]
           })), [t, a])
         };
       (0, n.extend)({
-        OrbitControls: Qe.z
+        OrbitControls: tt.z
       });
-      const gt = {
+      const ht = {
           leftMargin: 200,
           topMargin: 200,
           columns: 3,
@@ -1210,7 +1251,7 @@
           plateHeight: 1,
           plateWidth: 2
         },
-        bt = e => {
+        yt = e => {
           let {
             loadedAssets: t
           } = e;
@@ -1219,7 +1260,7 @@
             setIsSceneLoaded: s,
             setThree: o,
             setGridState: i
-          } = Ze(), {
+          } = Je(), {
             gridState: l,
             isLoggedIn: c,
             is3D: u,
@@ -1227,8 +1268,8 @@
             isSceneLoaded: p,
             plates: f,
             plateStyles: g,
-            three: y,
-            canvasDimensions: h,
+            three: h,
+            canvasDimensions: y,
             shouldRenderScene: v,
             refs: x
           } = a, [w, P, S] = (0, n.useThree)((e => {
@@ -1238,7 +1279,7 @@
               scene: r
             } = e;
             return [t, a, r]
-          })), _ = (0, r.useRef)(), [T, R] = (0, r.useState)(!1), [N, I] = (0, r.useState)(null), O = () => {
+          })), _ = (0, r.useRef)(), [T, R] = (0, r.useState)(!1), [I, N] = (0, r.useState)(null), O = () => {
             if (P.domElement.style.opacity = 1, P.domElement.style.position = "absolute", P.domElement.style.top = 0, P.domElement.style.left = 0, P.domElement.style.right = 0, P.domElement.style.bottom = 0, P.domElement.style.touchAction = "auto", !p) {
               const e = new d.Vector3,
                 t = new d.Vector3;
@@ -1255,8 +1296,8 @@
             s(!0)
           };
           (0, r.useEffect)((() => {
-            f.length && N && A(N.width)
-          }), [N, f]), (0, r.useEffect)((() => (I({
+            f.length && I && A(I.width)
+          }), [I, f]), (0, r.useEffect)((() => (N({
             height: P.domElement.offsetHeight,
             width: P.domElement.offsetWidth
           }), () => {
@@ -1268,7 +1309,7 @@
           }), [t, g]);
           const A = (0, r.useCallback)((e => {
             const t = document.getElementById("list-plates-sidebar");
-            if (!w || !t || !N) return;
+            if (!w || !t || !I) return;
             const a = k(),
               {
                 plateWidth: r,
@@ -1276,38 +1317,38 @@
                 columnGap: s,
                 rowGap: o,
                 depth: l
-              } = gt,
-              c = l * Math.tan((0, et.Id)(17.5)),
+              } = ht,
+              c = l * Math.tan((0, at.Id)(17.5)),
               u = -1 * w.aspect * c,
-              m = window.innerWidth < z.lg ? t.offsetHeight + a : a,
+              m = window.innerWidth < $.lg ? t.offsetHeight + a : a,
               p = a,
               g = P.domElement.offsetWidth,
               b = P.domElement.offsetHeight,
-              y = (() => {
+              h = (() => {
                 const e = window.innerWidth;
                 switch (!0) {
-                  case e >= z.xxl:
+                  case e >= $.xxl:
                     return E(11);
-                  case e >= z.xl:
+                  case e >= $.xl:
                     return E(12);
-                  case e >= z.md:
+                  case e >= $.md:
                     return E(13);
                   default:
                     return E(20)
                 }
               })(),
-              h = p / g,
-              v = u - u * h * 2,
+              y = p / g,
+              v = u - u * y * 2,
               x = m / b,
               S = c - c * x * 2,
-              _ = y / b,
+              _ = h / b,
               T = new d.Vector3(v, S, -l),
               R = f.length > 1 ? (e => {
                 const t = window.innerWidth;
                 switch (!0) {
-                  case t >= z.xxl:
+                  case t >= $.xxl:
                     return 3;
-                  case t >= z.lg && t <= 1280:
+                  case t >= $.lg && t <= 1280:
                     return 1;
                   case e >= 600:
                     return 2;
@@ -1315,11 +1356,11 @@
                     return 1
                 }
               })(e) : 1,
-              I = Math.ceil(f.length / R),
+              N = Math.ceil(f.length / R),
               O = r * R + s * (R - 1),
               A = n * Math.ceil(f.length / R) + o * (Math.ceil(f.length / R) - 1),
-              C = Math.abs(T.z) * Math.tan((0, et.Id)(w.fov / 2)) * 2,
-              L = h * (C * (g / b)),
+              C = Math.abs(T.z) * Math.tan((0, at.Id)(w.fov / 2)) * 2,
+              L = y * (C * (g / b)),
               j = x * C,
               M = _ * C,
               V = Math.abs(2 * T.x),
@@ -1327,12 +1368,12 @@
             i({
               gridPosition: T,
               gridOptions: {
-                ...gt,
+                ...ht,
                 columns: R,
-                rows: I,
+                rows: N,
                 topMarginAsRatio: x,
                 bottomMarginAsRatio: _,
-                leftMarginAsRatio: h
+                leftMarginAsRatio: y
               },
               gridDimensions: {
                 margins: {
@@ -1344,71 +1385,71 @@
                   pixels: {
                     top: m,
                     left: p,
-                    bottom: y
+                    bottom: h
                   }
                 },
                 height: D,
                 width: V
               }
             })
-          }), [f, x?.[B.SIDEBAR]?.current, w, N, c]);
+          }), [f, x?.[B.SIDEBAR]?.current, w, I, c]);
           (0, r.useEffect)((() => {
-            y && _.current && !y?.controlsInit && o({
-              ...y,
+            h && _.current && !h?.controlsInit && o({
+              ...h,
               controls: _,
               controlsInit: !0
             })
-          }), [_.current, y]), (0, r.useEffect)((() => {
-            y?.scene && _?.current && (_.current.enabled = v)
-          }), [v, y]), (0, r.useEffect)((() => {
+          }), [_.current, h]), (0, r.useEffect)((() => {
+            h?.scene && _?.current && (_.current.enabled = v)
+          }), [v, h]), (0, r.useEffect)((() => {
             _?.current && (!m && u || (_.current.enabled = !1))
           }), [m, u]), (0, n.useFrame)((() => {
             v && (_?.current?.update(), P.render(S, w))
           }), 1);
           const C = (0, r.useCallback)(b().debounce((() => {
             const e = x[B.CANVAS_WRAP]?.current;
-            e && I({
+            e && N({
               width: e.offsetWidth,
               height: e.offsetHeight
             })
           }), 100), [w, x]);
-          (0, r.useEffect)((() => (C(), window.addEventListener("resize", C, !0), () => window.removeEventListener("resize", C, !0))), [h]);
-          const L = (0, r.useMemo)((() => t?.environmentMap && t?.environmentModel ? (0, Ke.jsx)(tt, {
+          (0, r.useEffect)((() => (C(), window.addEventListener("resize", C, !0), () => window.removeEventListener("resize", C, !0))), [y]);
+          const L = (0, r.useMemo)((() => t?.environmentMap && t?.environmentModel ? (0, Qe.jsx)(rt, {
               position: [0, -4.05, -11.76],
               envMap: t.environmentMap,
               envModel: t.environmentModel,
               onLoad: O
             }) : null), [t]),
-            j = (0, r.useMemo)((() => (0, Ke.jsx)(ft, {
-              baseIntensity: le,
+            j = (0, r.useMemo)((() => (0, Qe.jsx)(bt, {
+              baseIntensity: ce,
               mapSize: 1024
             })), []),
-            M = (0, r.useMemo)((() => (0, Ke.jsx)(mt, {
+            M = (0, r.useMemo)((() => (0, Qe.jsx)(ft, {
               gridState: l,
               loadedAssets: t
             })), [l, t]),
-            V = (0, r.useMemo)((() => (0, Ke.jsx)("orbitControls", {
+            V = (0, r.useMemo)((() => (0, Qe.jsx)("orbitControls", {
               ref: _,
               screenSpacePanning: !0,
               args: [w, P.domElement],
               enableDamping: !0,
               enableZoom: !1,
               enablePan: !1,
-              maxPolarAngle: F.plateView.maxPolarAngle,
-              minPolarAngle: F.plateView.minPolarAngle,
-              maxAzimuthAngle: F.plateView.maxAzimuthAngle,
-              minAzimuthAngle: F.plateView.minAzimuthAngle,
+              maxPolarAngle: G.plateView.maxPolarAngle,
+              minPolarAngle: G.plateView.minPolarAngle,
+              maxAzimuthAngle: G.plateView.maxAzimuthAngle,
+              minAzimuthAngle: G.plateView.minAzimuthAngle,
               minDistance: -1,
               maxDistance: 100
             })), [w, _, P]);
-          return (0, Ke.jsxs)(Ke.Fragment, {
+          return (0, Qe.jsxs)(Qe.Fragment, {
             children: [j, L, T && l ? M : "", V]
           })
         };
-      var yt = a(6370),
-        ht = a(814),
-        vt = a(3627);
-      const xt = e => {
+      var vt = a(6370),
+        xt = a(814),
+        wt = a(3627);
+      const Et = e => {
           let {
             isVisible: t = !1,
             top: a,
@@ -1423,69 +1464,69 @@
           } = e;
           const {
             state: m
-          } = Ze(), {
+          } = Je(), {
             currentView: p
-          } = m, f = (0, r.useRef)(null), g = (0, r.useState)(D), b = d?.get ? d.get() : 0, y = (0, ht.useSpring)({
+          } = m, f = (0, r.useRef)(null), g = (0, r.useState)(D), b = d?.get ? d.get() : 0, h = (0, xt.useSpring)({
             y: t ? b : u,
             config: {
-              easing: ht.easings.easeInOutQuart,
+              easing: xt.easings.easeInOutQuart,
               duration: 900
             }
-          }), h = (0, r.useRef)(u), x = (0, r.useRef)(0), w = (0, r.useRef)(!1);
+          }), y = (0, r.useRef)(u), x = (0, r.useRef)(0), w = (0, r.useRef)(!1);
           (0, r.useEffect)((() => {
             const e = {
               top: a,
               bottom: n,
-              y: y.y,
-              offset: h,
+              y: h.y,
+              offset: y,
               sidebarRef: f
             };
             f.current.style.touchAction = "none", f.current.style.overflowY = "hidden", t ? i(e) : o(e)
           }), [t]);
-          const E = (0, r.useCallback)((0, vt.useDrag)((e => {
-              if (p !== ue.CONFIRM_ORDER) {
+          const E = (0, r.useCallback)((0, wt.useDrag)((e => {
+              if (p !== me.CONFIRM_ORDER) {
                 if (!w.current)
-                  if (h.current = Math.max(a, Math.min(n, y.y.get() + e.delta[1])), x.current = e.movement[1], e.dragging) y.y.set(h.current);
+                  if (y.current = Math.max(a, Math.min(n, h.y.get() + e.delta[1])), x.current = e.movement[1], e.dragging) h.y.set(y.current);
                   else {
                     const e = {
-                      y: y.y.get()
+                      y: h.y.get()
                     };
-                    if (h.current < a / 2) {
+                    if (y.current < a / 2) {
                       const t = v().to(e, {
                         y: a,
-                        duration: U.sidebar.mobile.drawerSnap.duration,
-                        ease: U.sidebar.mobile.drawerSnap.ease,
+                        duration: F.sidebar.mobile.drawerSnap.duration,
+                        ease: F.sidebar.mobile.drawerSnap.ease,
                         onUpdate: () => {
-                          w.current ? t.kill() : y.y.set(e.y)
+                          w.current ? t.kill() : h.y.set(e.y)
                         }
                       });
                       f.current.style.touchAction = "auto", f.current.style.overflowY = "auto", g.current = W
-                    } else if (h.current > n / 2) {
+                    } else if (y.current > n / 2) {
                       const t = v().to(e, {
                         y: n,
-                        duration: U.sidebar.mobile.drawerSnap.duration,
-                        ease: U.sidebar.mobile.drawerSnap.ease,
+                        duration: F.sidebar.mobile.drawerSnap.duration,
+                        ease: F.sidebar.mobile.drawerSnap.ease,
                         onUpdate: () => {
-                          w.current ? t.kill() : y.y.set(e.y)
+                          w.current ? t.kill() : h.y.set(e.y)
                         }
                       });
                       f.current.style.touchAction = "none", f.current.style.overflowY = "hidden", g.current = Y
                     } else {
                       const t = v().to(e, {
                         y: 0,
-                        ease: U.sidebar.mobile.drawerSnap.ease,
+                        ease: F.sidebar.mobile.drawerSnap.ease,
                         onUpdate: () => {
-                          w.current ? t.kill() : y.y.set(e.y)
+                          w.current ? t.kill() : h.y.set(e.y)
                         }
                       });
                       f.current.style.touchAction = "none", f.current.style.overflowY = "hidden", g.current = D
                     }
-                    h.current = y.y.get()
+                    y.current = h.y.get()
                   } const t = {
                   top: a,
                   bottom: n,
-                  y: y.y,
-                  offset: h,
+                  y: h.y,
+                  offset: y,
                   sidebarRef: f,
                   dragParams: e
                 };
@@ -1498,41 +1539,41 @@
                   drawerStateRef: g
                 });
                 const e = {
-                    y: y.y.get()
+                    y: h.y.get()
                   },
                   t = {};
                 g.current === D ? (t.y = a, f.current.style.touchAction = "auto", f.current.style.overflowY = "auto", g.current = W) : (g.current === W || g.current === Y) && (t.y = 0, f.current.style.touchAction = "none", f.current.style.overflowY = "hidden", g.current = D), v().to(e, {
                   y: t.y,
-                  duration: U.sidebar.mobile.drawerSnap.duration,
-                  ease: U.sidebar.mobile.drawerSnap.ease,
+                  duration: F.sidebar.mobile.drawerSnap.duration,
+                  ease: F.sidebar.mobile.drawerSnap.ease,
                   onUpdate: () => {
-                    y.y.set(e.y)
+                    h.y.set(e.y)
                   },
                   onComplete: () => {
-                    w.current = !1, h.current = y.y.get()
+                    w.current = !1, y.current = h.y.get()
                   }
                 })
               }
             };
-          return (0, r.useMemo)((() => (0, Ke.jsxs)(ht.animated.div, {
+          return (0, r.useMemo)((() => (0, Qe.jsxs)(xt.animated.div, {
             ...E(),
             ref: f,
-            style: y ? {
-              y: y.y
+            style: h ? {
+              y: h.y
             } : void 0,
             className: "rockstargames-modules-gtao-license-platea30996f8fb210e2e4010c217dbf0437e",
-            children: [(0, Ke.jsx)("hr", {
+            children: [(0, Qe.jsx)("hr", {
               className: "rockstargames-modules-gtao-license-plateec1d03a84ec2e328b48748348a2f8bb4",
               onClick: P,
               "aria-hidden": "true"
             }), l]
-          })), [y.y.get(), P, l])
+          })), [h.y.get(), P, l])
         },
-        wt = e => {
+        Pt = e => {
           let {
             onClick: t
           } = e;
-          return (0, Ke.jsx)("button", {
+          return (0, Qe.jsx)("button", {
             type: "button",
             onClick: t,
             className: "rockstargames-modules-gtao-license-platea81788a7f11c282c9a7e4bceac6d4ce1",
@@ -1540,11 +1581,11 @@
             tabIndex: 0
           })
         },
-        Et = () => (0, Ke.jsx)("div", {
+        St = () => (0, Qe.jsx)("div", {
           className: "rockstargames-modules-gtao-license-platec116bf746553bf7c8d6b5e3b6f0b1209",
           "aria-label": "Los Santos Customs"
         }),
-        Pt = e => {
+        _t = e => {
           let {
             button: {
               buttonText: t,
@@ -1554,7 +1595,7 @@
             },
             closeModal: s
           } = e;
-          return (0, Ke.jsxs)("button", {
+          return (0, Qe.jsxs)("button", {
             className: "rockstargames-modules-gtao-license-platee9574ac462682ed4f394fb8076428ae1",
             disabled: r,
             onClick: e => (e => {
@@ -1563,15 +1604,15 @@
             type: "button",
             value: "cancel",
             "aria-label": t,
-            children: [(0, Ke.jsx)("p", {
+            children: [(0, Qe.jsx)("p", {
               className: "rockstargames-modules-gtao-license-platec9e74afa7b083c2db33e84befcc09927",
               children: t
-            }), a && (0, Ke.jsx)("div", {
+            }), a && (0, Qe.jsx)("div", {
               className: "rockstargames-modules-gtao-license-platebf69c5632ee8bf0e79067600546eb003"
             })]
           })
         },
-        St = e => {
+        kt = e => {
           let {
             icon: t = !1,
             title: a = "Cats are the world chase dog then run away yet while happily ignoring when being called meow.",
@@ -1592,14 +1633,14 @@
               state: {
                 isMobile: u
               }
-            } = Ze();
+            } = Je();
           return (0, r.useEffect)((() => {
             i && c.current && (c.current.showModal(), d({
               event: "virtualPageview",
               display_type: u ? "mobile" : "desktop",
               view_name: `license plate creator - modal: ${a.toLowerCase()}`
             }))
-          }), [i]), (0, Ke.jsxs)("dialog", {
+          }), [i]), (0, Qe.jsxs)("dialog", {
             ref: c,
             className: "rockstargames-modules-gtao-license-plateaefb6cdd2d770689d66db28e09c748f7",
             onClick: e => (e => {
@@ -1607,20 +1648,20 @@
               const t = e.currentTarget.getBoundingClientRect();
               (t.left > e.clientX || t.right < e.clientX || t.top > e.clientY || t.bottom < e.clientY) && (e.currentTarget.close(), l()), e.preventDefault(), e.stopPropagation(), e.nativeEvent.stopImmediatePropagation()
             })(e),
-            children: [t && (0, Ke.jsx)("i", {
+            children: [t && (0, Qe.jsx)("i", {
               className: "rockstargames-modules-gtao-license-platefc678c80791b7bec94a2c7743aefb2c4"
-            }), (0, Ke.jsxs)("div", {
+            }), (0, Qe.jsxs)("div", {
               className: "rockstargames-modules-gtao-license-platec82a7d998d77f05fedd84c490e9c6b90",
-              children: [(0, Ke.jsx)("h3", {
+              children: [(0, Qe.jsx)("h3", {
                 children: a
-              }), n && (0, Ke.jsx)("p", {
+              }), n && (0, Qe.jsx)("p", {
                 dangerouslySetInnerHTML: {
                   __html: n
                 }
               })]
-            }), (0, Ke.jsx)("div", {
+            }), (0, Qe.jsx)("div", {
               className: "rockstargames-modules-gtao-license-platee728a2fcfc9abbc5984c9245721af997",
-              children: s.splice(0, 2).map((e => (0, Ke.jsx)(Pt, {
+              children: s.splice(0, 2).map((e => (0, Qe.jsx)(_t, {
                 button: e,
                 onClick: () => e.onClick,
                 closeModal: () => (c.current?.close(), void l())
@@ -1628,23 +1669,23 @@
             })]
           })
         },
-        _t = e => {
+        Tt = e => {
           let {
             vehicleName: t,
             vehicleClass: a
           } = e;
-          return (0, Ke.jsxs)("div", {
+          return (0, Qe.jsxs)("div", {
             className: "rockstargames-modules-gtao-license-platec8ae2c220065654efd13996c8290a0fa",
-            children: [(0, Ke.jsx)("p", {
+            children: [(0, Qe.jsx)("p", {
               className: "rockstargames-modules-gtao-license-platec5250ca53556e76b38b62f7732ec6e52",
               children: t
-            }), (0, Ke.jsx)("p", {
+            }), (0, Qe.jsx)("p", {
               className: "rockstargames-modules-gtao-license-platec71387432404f4698fbf646c43e14c7c",
               children: a
             })]
           })
         },
-        kt = {
+        Rt = {
           viewPlate: "rockstargames-modules-gtao-license-plated72ac3a6911a9036de7702eb5eb7276d",
           expanded: "rockstargames-modules-gtao-license-platec5b4f7b56f7a6436a91e0217a7986b91",
           plateInfo: "rockstargames-modules-gtao-license-plateb672b520eaa15b69fb343b73c1ee951e",
@@ -1659,8 +1700,8 @@
           uiBottom: "rockstargames-modules-gtao-license-plated9b07d407fc6a0cb2835f567ed500b1a",
           noVehicles: "rockstargames-modules-gtao-license-plateeac59b99e77897e051d2d8f8c1f261f8"
         },
-        Tt = "visible",
-        Rt = (0, l.withTranslations)((e => {
+        It = "visible",
+        Nt = (0, l.withTranslations)((e => {
           let {
             t
           } = e;
@@ -1676,10 +1717,10 @@
               setError: p,
               state: f,
               setIsScrollEnabled: g,
-              setDeletedPlateIndex: y
-            } = Ze(),
+              setDeletedPlateIndex: h
+            } = Je(),
             {
-              accessiblePlates: h,
+              accessiblePlates: y,
               currentPlateIndex: x,
               currentPlate: w,
               currentView: E,
@@ -1692,10 +1733,10 @@
               lastScrollY: j,
               plates: M,
               realHeight: V,
-              refs: $,
-              three: z
+              refs: z,
+              three: U
             } = f,
-            [H, G] = (0, r.useState)(E === ue.VIEW_PLATE),
+            [$, H] = (0, r.useState)(E === me.VIEW_PLATE),
             [X, q] = (0, r.useState)([]),
             [Z, K] = (0, r.useState)(!1),
             [J, Q] = (0, r.useState)(!1),
@@ -1705,12 +1746,12 @@
             re = (0, r.useRef)(null),
             ne = (0, r.useRef)(35),
             se = (0, r.useRef)(null),
-            [oe, le] = (0, r.useState)(.4 * window.innerHeight),
+            [oe, ie] = (0, r.useState)(.4 * window.innerHeight),
             [ce, de] = (0, r.useState)(-1 * (.6 * window.innerHeight - 80)),
-            [pe, fe] = (0, r.useState)(0),
+            [ue, fe] = (0, r.useState)(0),
             ge = (0, r.useRef)(oe),
             be = (0, r.useRef)(null),
-            [ye, he] = (0, r.useState)(null),
+            [he, ye] = (0, r.useState)(null),
             ve = (0, r.useRef)(null),
             xe = (0, r.useRef)(null),
             we = (0, r.useRef)(null),
@@ -1722,37 +1763,37 @@
             ke = {
               view_name: "license plate creator - view plate"
             },
-            Te = E === ue.VIEW_PLATE ? 0 : -1;
+            Te = E === me.VIEW_PLATE ? 0 : -1;
           (0, r.useEffect)((() => {
-            E !== ue.VIEW_PLATE && J && Q(!1)
+            E !== me.VIEW_PLATE && J && Q(!1)
           }), [E, J]);
           const Re = (0, r.useRef)(0);
           (0, r.useEffect)((() => {
             Number.isNaN(x) || (Re.current = x)
           }), [x]);
-          const Ne = (0, r.useRef)(null);
+          const Ie = (0, r.useRef)(null);
           (0, r.useEffect)((() => {
-            E && (Ne.current = E), E === ue.VIEW_PLATE && (we.current = !1)
+            E && (Ie.current = E), E === me.VIEW_PLATE && (we.current = !1)
           }), [E]);
-          const Ie = (0, r.useRef)(0);
+          const Ne = (0, r.useRef)(0);
           (0, r.useEffect)((() => {
-            _ && (Ie.current = _)
+            _ && (Ne.current = _)
           }), [_]), (0, r.useEffect)((() => {
-            h?.[0]?.current && E === ue.NEW_PLATE && Se(N(h[0].parentElement))
-          }), [h, E]);
+            y?.[0]?.current && E === me.NEW_PLATE && Se(I(y[0].parentElement))
+          }), [y, E]);
           const Oe = (0, r.useRef)(null);
           (0, r.useEffect)((() => {
             Pe && (Oe.current = Pe)
           }), [Pe]);
           const Ae = (0, r.useCallback)((function(e, t) {
             let a = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
-            if (Ne.current !== ue.VIEW_PLATE) return;
+            if (Ie.current !== me.VIEW_PLATE) return;
             const {
               renderer: r
-            } = z;
+            } = U;
             C({
               plateIndex: Re.current,
-              three: z,
+              three: U,
               timeline: e,
               gridScale: t
             }, {
@@ -1764,56 +1805,56 @@
                   e.style.pointerEvents = "all"
                 })), A && (r.domElement.style.touchAction = "none", L && setTimeout((() => {
                   document.body.style.touchAction = "auto", g(!1)
-                }), 200), be.current = N(r.domElement).y)
+                }), 200), be.current = I(r.domElement).y)
               },
               tweenPosition: 0,
               isResize: a,
               is3D: R
             })
-          }), [z, x, E, k, M, A, R, L]);
+          }), [U, x, E, k, M, A, R, L]);
           (0, r.useEffect)((() => {
-            if (!z?.controls || !H) return;
+            if (!U?.controls || !$) return;
             const {
               controls: e
-            } = z, t = v().timeline({
-              duration: A ? U.sidebar.mobile.drawer.duration : U.clickPlate.duration,
-              ease: A ? U.sidebar.mobile.drawer.ease : U.clickPlate.ease,
+            } = U, t = v().timeline({
+              duration: A ? F.sidebar.mobile.drawer.duration : F.clickPlate.duration,
+              ease: A ? F.sidebar.mobile.drawer.ease : F.clickPlate.ease,
               onStart: () => {
                 e?.current && (e.current.minDistance = 0)
               }
             });
             Ae(t, _, !0)
-          }), [_, z]), (0, r.useEffect)((() => {
+          }), [_, U]), (0, r.useEffect)((() => {
             Ee.current = j
           }), [j]);
           const Ce = (0, r.useCallback)((function(e) {
               let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-              if (!z?.controls || !h?.[x]) return;
+              if (!U?.controls || !y?.[x]) return;
               const {
                 controls: a
-              } = z, r = e || v().timeline({
+              } = U, r = e || v().timeline({
                 defaults: {
                   duration: 0,
-                  ease: A ? U.sidebar.mobile.drawer.ease : U.clickPlate.ease
+                  ease: A ? F.sidebar.mobile.drawer.ease : F.clickPlate.ease
                 },
                 onStart: () => {
                   a.current.minDistance = 0
                 }
-              }), n = T(), s = A && E === ue.CONFIRM_ORDER ? 1.5 : 1, o = !S() || A ? n * _ * s : 1.6 * n * _, l = $[B.ROOT].current, c = document.getElementById("list-plates-sidebar"), d = $[B.CANVAS_WRAP].current, u = h[x].current;
+              }), n = T(), s = A && E === me.CONFIRM_ORDER ? 1.5 : 1, o = !S() || A ? n * _ * s : 1.6 * n * _, l = z[B.ROOT].current, c = document.getElementById("list-plates-sidebar"), d = z[B.CANVAS_WRAP].current, u = y[x].current;
               if (l && c && u && d) {
-                const e = I(x, l, Number(V.replace("px", "")), k, A ? void 0 : {
+                const e = N(x, l, Number(V.replace("px", "")), k, A ? void 0 : {
                     x: c.offsetWidth,
                     y: 0
                   }).rect.center,
                   a = d.getBoundingClientRect(),
-                  n = N(d),
-                  s = N(u.parentElement),
+                  n = I(d),
+                  s = I(u.parentElement),
                   m = {
                     x: a.left + a.width / 2 - Number(n.x),
                     y: a.top + a.height / 2 - Number(n.y)
                   },
                   p = 5 / o,
-                  f = A || i() !== ue.CONFIRM_ORDER ? 0 : -1 * c.offsetWidth,
+                  f = A || i() !== me.CONFIRM_ORDER ? 0 : -1 * c.offsetWidth,
                   g = {
                     x: m.x - e.x + f,
                     y: m.y - e.y - 80 + (t.isResize ? Ee.current : window.scrollY)
@@ -1821,53 +1862,53 @@
                   b = {
                     current: 0
                   },
-                  y = h.map((e => Number(getComputedStyle(e?.current)?.getPropertyValue("opacity"))));
+                  h = y.map((e => Number(getComputedStyle(e?.current)?.getPropertyValue("opacity"))));
                 r.to(b, {
                   current: 1,
-                  ease: A ? U.sidebar.mobile.drawer.ease : U.clickPlate.ease,
+                  ease: A ? F.sidebar.mobile.drawer.ease : F.clickPlate.ease,
                   onComplete: () => {
-                    Se(N(u.parentElement))
+                    Se(I(u.parentElement))
                   },
                   onUpdate: () => {
                     const {
                       current: a
-                    } = b, r = (0, et.t7)(Number(s.x), g.x, a), n = (0, et.t7)(Number(s.y), g.y + (A ? .4 * window.innerHeight / -2 : 0), a), o = (0, et.t7)(Number(s.scale), p, a);
-                    u.parentElement.style.transformOrigin = `${e.x}px ${e.y}px`, u.parentElement.style.transform = `translate(${r}px, ${n}px) scale(${o})`, t.isResize || h.forEach(((e, t) => {
+                    } = b, r = (0, at.t7)(Number(s.x), g.x, a), n = (0, at.t7)(Number(s.y), g.y + (A ? .4 * window.innerHeight / -2 : 0), a), o = (0, at.t7)(Number(s.scale), p, a);
+                    u.parentElement.style.transformOrigin = `${e.x}px ${e.y}px`, u.parentElement.style.transform = `translate(${r}px, ${n}px) scale(${o})`, t.isResize || y.forEach(((e, t) => {
                       if (t !== x && e?.current) {
-                        const r = (0, et.t7)(y[t], 0, Math.min(1, 20 * a));
+                        const r = (0, at.t7)(h[t], 0, Math.min(1, 20 * a));
                         e.current.style.opacity = r.toFixed(2)
                       }
                     }))
                   }
                 }, "<")
               }
-            }), [x, k, A, E, V, z, h, $, oe, j]),
+            }), [x, k, A, E, V, U, y, z, oe, j]),
             Le = (0, r.useCallback)((function() {
               let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : void 0;
-              if (!z?.camera || !ee.current) return;
+              if (!U?.camera || !ee.current) return;
               const {
                 camera: t,
                 controls: a,
                 renderer: r
-              } = z;
+              } = U;
               if (v().to(t.position, {
                   x: Number(ee.current.x),
                   y: Number(ee.current.y),
                   z: Number(ee.current.z),
-                  ease: U.toggleView.camera.ease,
-                  duration: U.toggleView.camera.duration,
+                  ease: F.toggleView.camera.ease,
+                  duration: F.toggleView.camera.duration,
                   onStart: () => {
                     a?.current && (a.current.minDistance = 2, a.current.enableZoom = !1, a.current.enabled = !1)
                   },
                   onComplete: () => {
-                    i(ue.LIST_PLATES), a?.current && (a.current.minDistance = 0, a.current.maxPolarAngle = F.plateView.maxPolarAngle, a.current.minPolarAngle = F.plateView.minPolarAngle, a.current.maxAzimuthAngle = F.plateView.maxAzimuthAngle, a.current.minAzimuthAngle = F.plateView.minAzimuthAngle, a.current.enableZoom = !1), ge.current = 0, e?.onComplete && e.onComplete()
+                    i(me.LIST_PLATES), a?.current && (a.current.minDistance = 0, a.current.maxPolarAngle = G.plateView.maxPolarAngle, a.current.minPolarAngle = G.plateView.minPolarAngle, a.current.maxAzimuthAngle = G.plateView.maxAzimuthAngle, a.current.minAzimuthAngle = G.plateView.minAzimuthAngle, a.current.enableZoom = !1), ge.current = 0, e?.onComplete && e.onComplete()
                   }
                 }), A) {
                 const e = r.domElement;
                 v().to(e.style, {
                   opacity: 1,
-                  duration: U.toggleView.reset.duration,
-                  ease: U.toggleView.reset.ease
+                  duration: F.toggleView.reset.duration,
+                  ease: F.toggleView.reset.ease
                 })
               }
               _e({
@@ -1878,47 +1919,47 @@
                 event_label: "view plate",
                 view_name: "license plate creator - view plate"
               })
-            }), [A, z, ee]);
+            }), [A, U, ee]);
           (0, r.useEffect)((() => {
             m(B.VIEW_PLATE, se)
           }), [se.current]), (0, r.useEffect)((() => {
             q(M?.[x]?.vehicles ?? [])
           }), [x, M]), (0, r.useEffect)((() => {
-            G(E === ue.VIEW_PLATE)
+            H(E === me.VIEW_PLATE)
           }), [E]), (0, r.useEffect)((() => {
-            z?.scene && re?.current && (e => {
+            U?.scene && re?.current && (e => {
               const {
                 scene: t,
                 controls: a
-              } = z, r = [];
+              } = U, r = [];
               t.traverse((e => {
-                e.name === me.LP && r.push(e), e.userData.index === Number(x) && (te.current = e)
+                e.name === pe.LP && r.push(e), e.userData.index === Number(x) && (te.current = e)
               }));
               const n = v().timeline({
                 defaults: {
-                  duration: A ? U.sidebar.mobile.drawer.duration : U.clickPlate.duration,
-                  ease: A ? U.sidebar.mobile.drawer.ease : U.clickPlate.ease
+                  duration: A ? F.sidebar.mobile.drawer.duration : F.clickPlate.duration,
+                  ease: A ? F.sidebar.mobile.drawer.ease : F.clickPlate.ease
                 },
                 onStart: () => {
                   a?.current && (a.current.minDistance = 0)
                 }
               });
               switch (e) {
-                case Tt: {
-                  Ae(n, Ie.current, !1);
-                  const e = $[B.ROOT]?.current,
-                    t = $[B.SIDEBAR]?.current,
-                    a = h[x].current,
-                    r = $?.[B.CANVAS_WRAP]?.current;
+                case It: {
+                  Ae(n, Ne.current, !1);
+                  const e = z[B.ROOT]?.current,
+                    t = z[B.SIDEBAR]?.current,
+                    a = y[x].current,
+                    r = z?.[B.CANVAS_WRAP]?.current;
                   e && t && a && r && Ce(n), xe?.current && n.to([re.current, xe.current, A ? void 0 : ae.current], {
                     autoAlpha: 1,
-                    duration: U.sidebar.in.duration,
-                    ease: U.sidebar.in.ease,
-                    delay: U.sidebar.in.delay,
+                    duration: F.sidebar.in.duration,
+                    ease: F.sidebar.in.ease,
+                    delay: F.sidebar.in.delay,
                     onComplete: () => {
                       xe?.current && (xe.current.style.pointerEvents = "all"), ae?.current && (ae.current.style.pointerEvents = "all")
                     }
-                  }, 0), z?.camera && A && !ne.current && (ne.current = z.camera.fov);
+                  }, 0), U?.camera && A && !ne.current && (ne.current = U.camera.fov);
                   break
                 }
                 default:
@@ -1928,40 +1969,40 @@
                     e.style.pointerEvents = "none"
                   })), v().to(re.current, {
                     autoAlpha: 0,
-                    duration: U.sidebar.out.duration,
-                    ease: U.sidebar.out.ease,
-                    delay: U.sidebar.out.delay
+                    duration: F.sidebar.out.duration,
+                    ease: F.sidebar.out.ease,
+                    delay: F.sidebar.out.delay
                   }), !A && ae.current ? (v().to(ae.current, {
                     autoAlpha: 0,
-                    duration: U.sidebar.out.duration,
-                    ease: U.sidebar.out.ease,
-                    delay: U.sidebar.out.delay
+                    duration: F.sidebar.out.duration,
+                    ease: F.sidebar.out.ease,
+                    delay: F.sidebar.out.delay
                   }), v().to(xe.current, {
                     autoAlpha: 0,
-                    duration: U.sidebar.out.duration,
-                    ease: U.sidebar.out.ease,
-                    delay: U.sidebar.out.delay,
+                    duration: F.sidebar.out.duration,
+                    ease: F.sidebar.out.ease,
+                    delay: F.sidebar.out.delay,
                     onComplete: () => {
                       xe.current.style.pointerEvents = "none"
                     }
                   })) : v().to(xe.current, {
                     autoAlpha: 0,
-                    duration: U.sidebar.out.duration,
-                    ease: U.sidebar.out.ease,
-                    delay: U.sidebar.out.delay,
+                    duration: F.sidebar.out.duration,
+                    ease: F.sidebar.out.ease,
+                    delay: F.sidebar.out.delay,
                     onComplete: () => {
                       xe.current.style.pointerEvents = "none"
                     }
                   }), a?.current && (a.current.minDistance = 0)
               }
-            })(H ? Tt : "hidden")
-          }), [xe.current, z, H]);
+            })($ ? It : "hidden")
+          }), [xe.current, U, $]);
           const je = (0, r.useCallback)((() => {
             if (A && se.current) {
               const e = se.current.offsetHeight + 80,
                 t = e - window.innerHeight,
                 a = .4 * e;
-              fe(a - 48 - t), le(a), de(-1 * (.6 * e - 80))
+              fe(a - 48 - t), ie(a), de(-1 * (.6 * e - 80))
             }
           }), [A, se.current]);
           (0, r.useEffect)((() => {
@@ -1970,42 +2011,42 @@
           const Me = (0, r.useRef)(null),
             Ve = (0, r.useRef)(null);
           (0, r.useEffect)((() => {
-            Me.current = H
-          }), [H]), (0, r.useEffect)((() => {
-            Ve.current = z
-          }), [z]);
+            Me.current = $
+          }), [$]), (0, r.useEffect)((() => {
+            Ve.current = U
+          }), [U]);
           const De = (0, r.useCallback)(b().debounce((() => {
             if (!0 !== Me.current) return;
             const {
               renderer: e
             } = Ve.current;
-            Ne.current === ue.VIEW_PLATE && (P() ? e.domElement.style.transform = `translateY(${.4*window.innerHeight/-2}px)` : e.domElement.style.transform = "translateY(0px)", ae?.current && (ae.current.style.opacity = "1", ae.current.style.visibility = "visible", ae.current.style.pointerEvents = "all"), Ce(null, {
+            Ie.current === me.VIEW_PLATE && (P() ? e.domElement.style.transform = `translateY(${.4*window.innerHeight/-2}px)` : e.domElement.style.transform = "translateY(0px)", ae?.current && (ae.current.style.opacity = "1", ae.current.style.visibility = "visible", ae.current.style.pointerEvents = "all"), Ce(null, {
               isResize: !0
             }), je())
-          }), 100), [A, H, E, z, ce, V, k]);
+          }), 100), [A, $, E, U, ce, V, k]);
           (0, r.useEffect)((() => {
-            _ && (Ie.current = _), i() === ue.VIEW_PLATE ? De() : P() && (je(), he(.4 * window.innerHeight))
+            _ && (Ne.current = _), i() === me.VIEW_PLATE ? De() : P() && (je(), ye(.4 * window.innerHeight))
           }), [_]), (0, r.useEffect)((() => {
-            if (!z?.scene) return;
-            if (!z?.scene || !h?.[0]?.current) return;
+            if (!U?.scene) return;
+            if (!U?.scene || !y?.[0]?.current) return;
             const {
               scene: e
-            } = z, t = [], a = [], r = h[x].current;
+            } = U, t = [], a = [], r = y[x].current;
             if (e.traverse((e => {
-                e.name === me.LP && e.material ? a[e.userData.index] = e.material : t.push(e.material)
-              })), i() === ue.VIEW_PLATE)
+                e.name === pe.LP && e.material ? a[e.userData.index] = e.material : t.push(e.material)
+              })), i() === me.VIEW_PLATE)
               if (R) {
                 const t = a[x];
                 if (v().to(t, {
                     opacity: 1,
-                    delay: A ? U.sidebar.mobile.drawer.duration : U.clickPlate.duration,
-                    duration: A ? U.sidebar.mobile.drawer.duration : U.clickPlate.duration,
-                    ease: A ? U.sidebar.mobile.drawer.ease : U.clickPlate.ease,
+                    delay: A ? F.sidebar.mobile.drawer.duration : F.clickPlate.duration,
+                    duration: A ? F.sidebar.mobile.drawer.duration : F.clickPlate.duration,
+                    ease: A ? F.sidebar.mobile.drawer.ease : F.clickPlate.ease,
                     onStart: () => {
                       c(!0), v().to(r.style, {
                         opacity: 0,
-                        duration: U.accessibilePlate.duration,
-                        ease: U.accessibilePlate.ease,
+                        duration: F.accessibilePlate.duration,
+                        ease: F.accessibilePlate.ease,
                         onUpdate: () => {}
                       })
                     }
@@ -2013,25 +2054,25 @@
                   const t = e.getObjectByName("Light4"),
                     a = new d.Vector3;
                   te?.current && (te.current.getWorldPosition(a), v().to(t.position, {
-                    x: ie.x,
-                    y: a.y + ie.y,
-                    z: ie.z,
-                    delay: A ? U.sidebar.mobile.drawer.duration : U.clickPlate.duration,
-                    duration: U.plateShimmer.duration,
-                    ease: U.plateShimmer.ease
+                    x: le.x,
+                    y: a.y + le.y,
+                    z: le.z,
+                    delay: A ? F.sidebar.mobile.drawer.duration : F.clickPlate.duration,
+                    duration: F.plateShimmer.duration,
+                    ease: F.plateShimmer.ease
                   }));
                   const r = {
                     current: 0
                   };
                   v().to(r, {
                     current: 1,
-                    delay: A ? U.sidebar.mobile.drawer.duration : U.clickPlate.duration,
-                    duration: U.plateShimmer.duration,
-                    ease: U.plateShimmer.ease,
+                    delay: A ? F.sidebar.mobile.drawer.duration : F.clickPlate.duration,
+                    duration: F.plateShimmer.duration,
+                    ease: F.plateShimmer.ease,
                     onUpdate: () => {
                       const {
                         current: e
-                      } = r, a = (0, et.t7)(0, Math.PI, e);
+                      } = r, a = (0, at.t7)(0, Math.PI, e);
                       t.intensity = .3 * Math.sin(a), t.color = new d.Color(a, .9 * a, a)
                     }
                   }), we.current = !0
@@ -2040,13 +2081,13 @@
                 const e = a[x];
                 v().to(r.style, {
                   opacity: 1,
-                  duration: U.accessibilePlate.duration,
-                  ease: U.accessibilePlate.ease,
+                  duration: F.accessibilePlate.duration,
+                  ease: F.accessibilePlate.ease,
                   onStart: () => {
                     v().to(e, {
                       opacity: 0,
-                      duration: U.accessibilePlate.duration,
-                      ease: U.accessibilePlate.ease,
+                      duration: F.accessibilePlate.duration,
+                      ease: F.accessibilePlate.ease,
                       onComplete: () => {
                         c(!1)
                       }
@@ -2054,30 +2095,30 @@
                   }
                 })
               }
-          }), [R, A, z]);
-          const We = (0, Ke.jsxs)(Ke.Fragment, {
-              children: [!A && (0, Ke.jsx)("hr", {
-                className: kt.drawerHandle,
+          }), [R, A, U]);
+          const We = (0, Qe.jsxs)(Qe.Fragment, {
+              children: [!A && (0, Qe.jsx)("hr", {
+                className: Rt.drawerHandle,
                 onClick: () => {
                   u(!O)
                 },
                 "aria-hidden": "true"
-              }), (0, Ke.jsx)("div", {
-                className: kt.plateInfo,
-                children: (0, Ke.jsxs)("section", {
-                  className: kt.vehiclesApplied,
-                  children: [(0, Ke.jsx)("label", {
+              }), (0, Qe.jsx)("div", {
+                className: Rt.plateInfo,
+                children: (0, Qe.jsxs)("section", {
+                  className: Rt.vehiclesApplied,
+                  children: [(0, Qe.jsx)("label", {
                     htmlFor: "vehicles",
-                    className: X.length ? "" : `${kt.noVehicles}`,
+                    className: X.length ? "" : `${Rt.noVehicles}`,
                     children: X.length ? t("lp.view.title.vehicles") : t("lp.view.title.novehicles")
-                  }), (0, Ke.jsx)("div", {
-                    className: kt.vehicles,
+                  }), (0, Qe.jsx)("div", {
+                    className: Rt.vehicles,
                     children: X.map(((e, t) => {
                       let {
                         modelName: a,
                         manufacturerName: r
                       } = e;
-                      return (0, Ke.jsx)(_t, {
+                      return (0, Qe.jsx)(Tt, {
                         vehicleName: a,
                         vehicleClass: r
                       }, t)
@@ -2087,23 +2128,23 @@
               })]
             }),
             Ye = (0, r.useCallback)((e => {
-              if (!z) return;
+              if (!U) return;
               const {
                 drawerStateRef: t
-              } = e, a = h?.[0].current;
+              } = e, a = y?.[0].current;
               if (a) {
-                const e = N(a.parentElement),
+                const e = I(a.parentElement),
                   {
                     renderer: r,
                     camera: n
-                  } = z,
+                  } = U,
                   s = r.domElement,
                   o = {
                     buttonWrapOpacity: ve.current.style.opacity,
-                    buttonWrapTranslateY: N(ve.current).y,
+                    buttonWrapTranslateY: I(ve.current).y,
                     canvasWrapOpacity: s.style.opacity,
                     canvasHeight: s.offsetHeight,
-                    canvasTranslateY: Number(N(s).y),
+                    canvasTranslateY: Number(I(s).y),
                     fov: n.fov,
                     accessiblePlateX: Number(e.x),
                     accessiblePlateY: Number(e.y),
@@ -2120,16 +2161,16 @@
                   accessiblePlateX: i.accessiblePlateX,
                   accessiblePlateY: i.accessiblePlateY,
                   accessiblePlateScale: i.accessiblePlateScale,
-                  duration: U.sidebar.mobile.drawerSnap.duration,
-                  ease: U.sidebar.mobile.drawerSnap.ease,
+                  duration: F.sidebar.mobile.drawerSnap.duration,
+                  ease: F.sidebar.mobile.drawerSnap.ease,
                   onUpdate: () => {
                     s.style.opacity = o.canvasWrapOpacity, ve.current.style.opacity = o.buttonWrapOpacity, ve.current.style.transform = `translate(0px, ${o.buttonWrapTranslateY}px)`, a && (a.parentElement.style.opacity = o.canvasWrapOpacity, a.parentElement.style.transform = `translate(${o.accessiblePlateX}px,\n                            ${o.accessiblePlateY}px) scale(${o.accessiblePlateScale})`), n.fov = o.fov, n.updateProjectionMatrix(), s.style.transform = `translateY(${o.canvasTranslateY}px)`
                   }
                 })
               }
-            }), [z, oe, ce, h]),
+            }), [U, oe, ce, y]),
             Be = (0, r.useCallback)((e => {
-              if (!z) return;
+              if (!U) return;
               const {
                 dragParams: t,
                 offset: a,
@@ -2139,23 +2180,23 @@
               } = e, {
                 camera: o,
                 renderer: i
-              } = z, l = i.domElement, c = h?.[0]?.current, d = -ce + .4 * window.innerHeight - 48;
+              } = U, l = i.domElement, c = y?.[0]?.current, d = -ce + .4 * window.innerHeight - 48;
               if (c)
                 if (t.dragging) {
-                  const e = (0, et.ii)(0, n, r.get()),
-                    i = (0, et.t7)(0, 1, 1 - e);
+                  const e = (0, at.ii)(0, n, r.get()),
+                    i = (0, at.t7)(0, 1, 1 - e);
                   l.style.opacity = i, ve.current.style.opacity = i, ve.current.style.transform = `translateY(${r.get()}px)`;
-                  const d = (0, et.t7)(0, 1, 1 - 3 * e);
+                  const d = (0, at.t7)(0, 1, 1 - 3 * e);
                   if (c.parentElement.style.opacity = d, a.current > 0 && Math.abs(t.delta[1]) > 0 && o && a.current < s) {
-                    const e = (0, et.ii)(0, s, r.get()),
-                      a = (0, et.t7)(ne.current, 40, e);
+                    const e = (0, at.ii)(0, s, r.get()),
+                      a = (0, at.t7)(ne.current, 40, e);
                     o.fov = a;
-                    const n = Number(N(l).y) + t.delta[1] / 2;
+                    const n = Number(I(l).y) + t.delta[1] / 2;
                     if (l.style.transform = `translateY(${n}px)`, c) {
-                      const e = N(c.parentElement),
+                      const e = I(c.parentElement),
                         a = Number(e.x),
                         r = Number(e.scale),
-                        n = Number(N(c.parentElement).y) + t.delta[1] / 2;
+                        n = Number(I(c.parentElement).y) + t.delta[1] / 2;
                       c.parentElement.style.transform = `translate(${a}px,\n                                ${n}px) scale(${r})`
                     }
                     o.updateProjectionMatrix()
@@ -2165,10 +2206,10 @@
                     buttonWrapOpacity: ve.current.style.opacity,
                     canvasWrapOpacity: l.style.opacity,
                     fov: o.fov,
-                    uiButtonsTransformY: N(ve.current).y,
+                    uiButtonsTransformY: I(ve.current).y,
                     canvasHeight: l.offsetHeight,
-                    canvasTranslateY: Number(N(l).y),
-                    accessibilityPlateY: Number(N(c.parentElement).y),
+                    canvasTranslateY: Number(I(l).y),
+                    accessibilityPlateY: Number(I(c.parentElement).y),
                     accessibilityPlateOpacity: c.parentElement.style.opacity
                   };
                   a.current < ce / 2 ? (l.style.pointerEvents = "none", v().to(e, {
@@ -2177,8 +2218,8 @@
                     uiButtonsTransformY: ce,
                     canvasHeight: d,
                     accessibilityPlateOpacity: 0,
-                    duration: U.sidebar.mobile.drawerSnap.duration,
-                    ease: U.sidebar.mobile.drawerSnap.ease,
+                    duration: F.sidebar.mobile.drawerSnap.duration,
+                    ease: F.sidebar.mobile.drawerSnap.ease,
                     onUpdate: () => {
                       l.style.opacity = e.canvasWrapOpacity, ve.current.style.opacity = e.buttonWrapOpacity, ve.current.style.transform = `translate(0px, ${e.uiButtonsTransformY}px)`, c.parentElement.style.opacity = e.accessibilityPlateOpacity
                     }
@@ -2190,8 +2231,8 @@
                     canvasHeight: d,
                     canvasTranslateY: Number(be.current) + s / 2,
                     accessibilityPlateY: Number(Oe.current.y) + s / 2,
-                    duration: U.sidebar.mobile.drawerSnap.duration,
-                    ease: U.sidebar.mobile.drawerSnap.ease,
+                    duration: F.sidebar.mobile.drawerSnap.duration,
+                    ease: F.sidebar.mobile.drawerSnap.ease,
                     onUpdate: () => {
                       l.style.opacity = e.canvasWrapOpacity, ve.current.style.opacity = e.buttonWrapOpacity, ve.current.style.transform = `translate(0px, ${e.uiButtonsTransformY}px)`, o.fov = e.fov, o.updateProjectionMatrix(), l.style.transform = `translateY(${e.canvasTranslateY}px)`, c.parentElement.style.transform = `translate(${Oe.current.x}px,\n                                ${e.accessibilityPlateY}px) scale(${Oe.current.scale})`
                     }
@@ -2204,11 +2245,11 @@
                     canvasTranslateY: .4 * window.innerHeight / -2,
                     accessibilityPlateOpacity: 1,
                     accessibilityPlateY: Number(Oe.current.y),
-                    duration: U.sidebar.mobile.drawerSnap.duration,
-                    ease: U.sidebar.mobile.drawerSnap.ease,
+                    duration: F.sidebar.mobile.drawerSnap.duration,
+                    ease: F.sidebar.mobile.drawerSnap.ease,
                     onUpdate: () => {
                       l.style.opacity = e.canvasWrapOpacity, ve.current.style.opacity = e.buttonWrapOpacity, ve.current.style.transform = `translate(0px, ${e.uiButtonsTransformY}px`, c.parentElement.style.opacity = e.accessibilityPlateOpacity, o.fov = e.fov, o.updateProjectionMatrix(), l.style.transform = `translateY(${e.canvasTranslateY}px)`;
-                      const t = N(c.parentElement),
+                      const t = I(c.parentElement),
                         a = Number(t.x),
                         r = Number(t.scale),
                         n = e.accessibilityPlateY;
@@ -2216,14 +2257,14 @@
                     }
                   }))
                 }
-            }), [z, ve.current, ce, h, oe, Pe]),
-            $e = (0, r.useCallback)((e => {
-              const t = $[B.UI]?.current;
-              if (!t || !z?.scene || !e) return;
+            }), [U, ve.current, ce, y, oe, Pe]),
+            ze = (0, r.useCallback)((e => {
+              const t = z[B.UI]?.current;
+              if (!t || !U?.scene || !e) return;
               const {
                 camera: a,
                 renderer: r
-              } = z, n = r.domElement, {
+              } = U, n = r.domElement, {
                 y: s,
                 sidebarRef: o
               } = e, i = t.offsetHeight, l = {
@@ -2237,8 +2278,8 @@
                 height: i,
                 mobileSidebarHeight: .4 * window.innerHeight,
                 fov: ne.current,
-                duration: U.sidebar.mobile.drawer.duration,
-                ease: U.sidebar.mobile.drawer.ease,
+                duration: F.sidebar.mobile.drawer.duration,
+                ease: F.sidebar.mobile.drawer.ease,
                 onUpdate: () => {
                   o.current.style.transform = `translateY(${l.mobileSidebarHeight}px)`, o.current.style.opacity = l.opacity, ve.current.style.opacity = l.opacity, n.style.height = l.height, s.set(l.mobileSidebarHeight), a && (a.fov = l.fov, a.updateProjectionMatrix())
                 },
@@ -2246,18 +2287,18 @@
                   n.style.pointerEvents = "all"
                 }
               }), o.current.style.pointerEvents = "none"
-            }), [$, z, oe]),
-            ze = (0, r.useCallback)((e => {
-              if (!z?.scene) return;
+            }), [z, U, oe]),
+            Ue = (0, r.useCallback)((e => {
+              if (!U?.scene) return;
               const {
                 sidebarRef: t,
                 offset: a,
                 y: r
               } = e;
-              null === ye && he(r);
+              null === he && ye(r);
               const {
                 renderer: n
-              } = z;
+              } = U;
               t.current.style.pointerEvents = "all";
               const s = {
                 mobileSidebarHeight: .4 * window.innerHeight,
@@ -2268,32 +2309,32 @@
                 opacity: 1,
                 mobileSidebarHeight: 0,
                 canvasY: .4 * window.innerHeight / 2,
-                duration: U.sidebar.mobile.drawer.duration,
-                ease: U.sidebar.mobile.drawer.ease,
+                duration: F.sidebar.mobile.drawer.duration,
+                ease: F.sidebar.mobile.drawer.ease,
                 onUpdate: () => {
                   t.current.style.opacity = s.opacity, t.current.style.transform = `translateY(${s.mobileSidebarHeight}px)`, a.current = s.mobileSidebarHeight, r.set(a.current), ve.current.style.transform = `translateY(${s.mobileSidebarHeight}px)`, xe.current.style.transform = `translateY(${s.mobileSidebarHeight}px)`, n.domElement.style.transform = `translateY(${-1*s.canvasY}px)`
                 }
               })
-            }), [ye, z]),
-            He = (0, r.useMemo)((() => A ? (0, Ke.jsx)(xt, {
-              isVisible: H,
+            }), [he, U]),
+            $e = (0, r.useMemo)((() => A ? (0, Qe.jsx)(Et, {
+              isVisible: $,
               top: ce,
-              bottom: pe,
+              bottom: ue,
               onTap: Ye,
               onDrag: Be,
-              onHide: $e,
-              onShow: ze,
+              onHide: ze,
+              onShow: Ue,
               mobileSidebarHeight: oe,
               children: We
-            }) : (0, Ke.jsx)("div", {
+            }) : (0, Qe.jsx)("div", {
               ref: ae,
-              className: kt.sidebar,
+              className: Rt.sidebar,
               children: We
-            })), [ve.current, xe.current, O, oe, A, H, $, ae.current, X, ce, pe]);
-          return (0, Ke.jsxs)("div", {
-            className: kt.viewPlate,
+            })), [ve.current, xe.current, O, oe, A, $, z, ae.current, X, ce, ue]);
+          return (0, Qe.jsxs)("div", {
+            className: Rt.viewPlate,
             ref: se,
-            children: [(0, Ke.jsx)(St, {
+            children: [(0, Qe.jsx)(kt, {
               title: t("lp.modal.delete.title"),
               secondaryText: t("lp.modal.delete.description").replace("{plateText}", w?.plateText ?? ""),
               buttons: [{
@@ -2319,7 +2360,7 @@
                         }
                       });
                       if (t) throw Object.assign(new Error(""), t);
-                      r && y(x), Le()
+                      r && h(x), Le()
                     } catch (e) {
                       p(["api", e])
                     }
@@ -2348,25 +2389,25 @@
               }],
               showModal: Z,
               onClose: () => K(!1)
-            }), He, (0, Ke.jsxs)("div", {
+            }), $e, (0, Qe.jsxs)("div", {
               ref: re,
-              className: kt.ui,
-              children: [(0, Ke.jsx)(wt, {
+              className: Rt.ui,
+              children: [(0, Qe.jsx)(Pt, {
                 onClick: Le
-              }), (0, Ke.jsx)(ht.animated.div, {
+              }), (0, Qe.jsx)(xt.animated.div, {
                 ref: ve,
-                className: kt.uiBottom,
-                style: ye ? {
-                  y: ye
+                className: Rt.uiBottom,
+                style: he ? {
+                  y: he
                 } : void 0,
-                children: (0, Ke.jsx)(Et, {})
+                children: (0, Qe.jsx)(St, {})
               })]
-            }), (0, Ke.jsxs)("div", {
-              className: kt.deleteBtnContainer,
+            }), (0, Qe.jsxs)("div", {
+              className: Rt.deleteBtnContainer,
               ref: xe,
-              children: [(0, Ke.jsx)("button", {
+              children: [(0, Qe.jsx)("button", {
                 "aria-label": t("lp.modal.delete.title"),
-                className: kt.deleteBtn,
+                className: Rt.deleteBtn,
                 disabled: w?.noDelete || J,
                 onClick: () => {
                   w?.noDelete || J || (_e({
@@ -2380,15 +2421,15 @@
                 },
                 tabIndex: Te,
                 type: "button"
-              }), w?.noDelete && (0, Ke.jsx)("label", {
+              }), w?.noDelete && (0, Qe.jsx)("label", {
                 htmlFor: "nodelete",
-                className: kt.noDeleteClarification,
+                className: Rt.noDeleteClarification,
                 children: t("lp.view.nodelete")
               })]
             })]
           })
         })),
-        Nt = (0, l.withTranslations)((e => {
+        Ot = (0, l.withTranslations)((e => {
           let {
             plateNumberStatus: {
               isProfane: t,
@@ -2406,17 +2447,17 @@
             event_category: "alert",
             event_action: "error",
             text: i
-          }), (0, Ke.jsx)("p", {
+          }), (0, Qe.jsx)("p", {
             className: "rockstargames-modules-gtao-license-plated8dc05f054396924b408e16dea1c411f rockstargames-modules-gtao-license-platef12013d76eb62b07523fe96d62fef0f1 " + (!1 === r ? "rockstargames-modules-gtao-license-plateb5883ece595313dbdebb2bdcc0f19992" : ""),
             children: n(i)
           })
         })),
-        It = {
+        At = {
           lpStyleOption: "rockstargames-modules-gtao-license-platef9c4c46735ea44a8fd03b964aa9cfdd1",
           selected: "rockstargames-modules-gtao-license-platecb72e49e43291fc3fa35d73ebc93a020",
           lpStyleOptionImage: "rockstargames-modules-gtao-license-platea848dacaa90a9ece96907bdfb6e97a30"
         },
-        Ot = e => {
+        Ct = e => {
           let {
             style: t,
             tabIndex: a
@@ -2424,29 +2465,29 @@
           const {
             state: n,
             setSelectedStyle: s
-          } = Ze(), {
+          } = Je(), {
             plates: o,
             selectedStyle: i
           } = n, l = (0, r.useCallback)((() => {
-            $.forEach((e => ({
+            U.forEach((e => ({
               ...e,
               selected: !0
             }))), s(t.id)
           }), [o, t]);
-          return (0, Ke.jsx)("button", {
-            className: [It.lpStyleOption, i === t.id ? It.selected : ""].join(" "),
+          return (0, Qe.jsx)("button", {
+            className: [At.lpStyleOption, i === t.id ? At.selected : ""].join(" "),
             onClick: () => l(),
             type: "button",
             tabIndex: a,
             "aria-label": `${t.displayName} plate style`,
-            children: (0, Ke.jsx)("img", {
-              className: It.lpStyleOptionImage,
+            children: (0, Qe.jsx)("img", {
+              className: At.lpStyleOptionImage,
               src: t.previewUrl,
               alt: t.displayName
             })
           })
         },
-        At = (0, l.withTranslations)((e => {
+        Lt = (0, l.withTranslations)((e => {
           let {
             setIsLoading: t,
             validateFnRef: a,
@@ -2461,28 +2502,29 @@
             setError: p,
             setRefs: f,
             state: g
-          } = Ze(), {
+          } = Je(), {
             currentView: b,
-            plateStyles: y,
-            plateNumber: h,
+            plateStyles: h,
+            plateNumber: y,
             plateNumberStatus: v,
-            isMobile: x
-          } = g, [w, E] = (0, r.useState)(0), {
-            isValid: P
-          } = v, S = (0, r.useMemo)((() => h), [h]), {
-            track: _
-          } = (0, o.useGtmTrack)(), k = {
+            isMobile: x,
+            xmas23PlatesAllowed: w
+          } = g, [E, P] = (0, r.useState)(0), {
+            isValid: S
+          } = v, _ = (0, r.useMemo)((() => y), [y]), {
+            track: k
+          } = (0, o.useGtmTrack)(), T = {
             view_name: "license plate creator - " + (i ? "create plate form" : "try lp editor")
-          }, T = (0, r.useRef)(null), R = (0, r.useRef)(null), N = (0, r.useRef)(null), I = (0, r.useRef)(null), O = (0, r.useRef)(null);
+          }, R = (0, r.useRef)(null), I = (0, r.useRef)(null), N = (0, r.useRef)(null), O = (0, r.useRef)(null), A = (0, r.useRef)(null);
           (0, r.useEffect)((() => {
             f(B.NEW_PLATE_FORM, N)
           }), [N.current]), (0, r.useEffect)((() => {
-            b === ue.NEW_PLATE && document.activeElement === O.current && O.current?.setSelectionRange(w, w)
-          }), [w]);
-          const A = b === ue.NEW_PLATE ? 0 : -1,
-            C = (0, r.useCallback)((() => {
+            b === me.NEW_PLATE && document.activeElement === A.current && A.current?.setSelectionRange(E, E)
+          }), [E]);
+          const C = b === me.NEW_PLATE ? 0 : -1,
+            L = (0, r.useCallback)((() => {
               (async () => {
-                if (i && h) try {
+                if (i && y) try {
                   t(!0);
                   const {
                     error: e,
@@ -2493,7 +2535,7 @@
                       method: "POST"
                     },
                     query: {
-                      plateText: h
+                      plateText: y
                     }
                   });
                   if (t(!1), e) throw Object.assign(new Error(""), e);
@@ -2508,9 +2550,9 @@
                     isMalformed: r,
                     isProfane: n,
                     isReserved: s,
-                    statusPlateNumberBasis: h
-                  }), o && (d(ue.CONFIRM_ORDER), _({
-                    ...k,
+                    statusPlateNumberBasis: y
+                  }), o && (d(me.CONFIRM_ORDER), k({
+                    ...T,
                     event: "virtualPageview",
                     display_type: x ? "mobile" : "desktop",
                     view_name: "license plate creator - confirm order"
@@ -2519,73 +2561,72 @@
                   p(["api", e])
                 }
               })()
-            }), [i, h]);
-          (0, r.useEffect)((() => {
-            a && (a.current = C)
-          }), [C, a]);
-          const L = (0, r.useMemo)((() => y?.map((e => (0, Ke.jsx)(Ot, {
+            }), [i, y]);
+          let j;
+          return (0, r.useEffect)((() => {
+            a && (a.current = L)
+          }), [L, a]), j = (0, r.useMemo)((() => h?.filter((e => !e.isXmas2023Plate || e.isXmas2023Plate && w)).map((e => (0, Qe.jsx)(Ct, {
             style: e,
-            tabIndex: A
-          }, e.id)))), [y, b]);
-          return (0, Ke.jsxs)("form", {
+            tabIndex: C
+          }, e.id)))), [h, b]), (0, Qe.jsxs)("form", {
             ref: N,
             className: "rockstargames-modules-gtao-license-plated0ddb8fd0986a7382551faea1fad24fa",
             onSubmit: e => {
-              e.preventDefault(), O.current?.blur()
+              e.preventDefault(), A.current?.blur()
             },
             onFocusCapture: e => e.preventDefault(),
-            children: [(0, Ke.jsxs)("section", {
-              children: [(0, Ke.jsx)("label", {
+            children: [(0, Qe.jsxs)("section", {
+              children: [(0, Qe.jsx)("label", {
                 htmlFor: "plate-text-input",
-                ref: T,
-                children: n("lp.create.title")
-              }), (0, Ke.jsxs)("div", {
                 ref: R,
+                children: n("lp.create.title")
+              }), (0, Qe.jsxs)("div", {
+                ref: I,
                 className: "rockstargames-modules-gtao-license-plateef9da71cf1e6161bfcff7856d32e9639",
-                children: [(0, Ke.jsx)("i", {
-                  className: "" + (!1 === P ? "rockstargames-modules-gtao-license-platec748df3952867c76489727613f414305" : "")
-                }), (0, Ke.jsx)("input", {
+                children: [(0, Qe.jsx)("i", {
+                  className: "" + (!1 === S ? "rockstargames-modules-gtao-license-platec748df3952867c76489727613f414305" : "")
+                }), (0, Qe.jsx)("input", {
                   id: "plate-text-input",
                   autoComplete: "off",
                   maxLength: 8,
                   onInput: e => {
                     const t = e.target.value.replace(/[^a-zA-Z0-9 ]/g, "").toUpperCase().slice(0, 8);
-                    u(t), E(e.target.selectionStart || 0), v.isValid || m({
+                    u(t), P(e.target.selectionStart || 0), v.isValid || m({
                       isValid: !0,
                       isMalformed: !1,
                       isProfane: !1,
                       isReserved: !1,
-                      statusPlateNumberBasis: h
+                      statusPlateNumberBasis: y
                     })
                   },
                   placeholder: "LOSANTOS",
                   pattern: "[a-zA-Z0-9]{4,10}",
                   type: "text",
                   onKeyDown: e => {
-                    "Enter" === e.code && O.current && O.current.blur()
+                    "Enter" === e.code && A.current && A.current.blur()
                   },
-                  value: S,
-                  ref: O
-                }), (0, Ke.jsx)(Nt, {
+                  value: _,
+                  ref: A
+                }), (0, Qe.jsx)(Ot, {
                   plateNumberStatus: v
                 })]
               })]
-            }), (0, Ke.jsx)("hr", {
+            }), (0, Qe.jsx)("hr", {
               className: "rockstargames-modules-gtao-license-plateadd724ae5e86972d7020c3691280e5f6"
-            }), (0, Ke.jsxs)("section", {
-              children: [(0, Ke.jsx)("label", {
+            }), (0, Qe.jsxs)("section", {
+              children: [(0, Qe.jsx)("label", {
                 htmlFor: "plate-style-selector",
                 children: n("lp.create.bgselector")
-              }), (0, Ke.jsx)("div", {
+              }), (0, Qe.jsx)("div", {
                 id: "plate-style-selector",
-                ref: I,
+                ref: O,
                 className: "rockstargames-modules-gtao-license-platecca6b8628101d08d64c8c82655607660",
-                children: L
+                children: j
               })]
             })]
           })
         })),
-        Ct = e => {
+        jt = e => {
           let {
             buttons: t,
             refName: a = B.SIDEBAR_BUTTONS,
@@ -2595,10 +2636,10 @@
           const o = (0, r.useRef)(null),
             {
               setRefs: i
-            } = Ze();
+            } = Je();
           return (0, r.useEffect)((() => {
             i(a, o)
-          }), [o.current]), (0, Ke.jsx)("div", {
+          }), [o.current]), (0, Qe.jsx)("div", {
             className: "rockstargames-modules-gtao-license-platecf91a67855e8fd02c5c67f9329f2e17a",
             ref: o,
             children: t.slice(0, 2).map((e => {
@@ -2607,7 +2648,7 @@
                 isDisabled: a,
                 onClick: r
               } = e;
-              return (0, Ke.jsx)("button", {
+              return (0, Qe.jsx)("button", {
                 className: [a ? "rockstargames-modules-gtao-license-plateccb81fea118631a858202556b3cd2b00" : "", n ? "rockstargames-modules-gtao-license-platef3983e10eb76b520e409635d0f16a92f" : ""].join(" ").trim(),
                 disabled: a,
                 onClick: r,
@@ -2619,9 +2660,9 @@
             }))
           })
         },
-        Lt = "rockstargames-modules-gtao-license-plateb8ee1e50e3ee7d2a0c64ff5766f1d90d",
-        jt = "rockstargames-modules-gtao-license-platef5a6ad5cfb833ab500b3a27252e51e07",
-        Mt = (0, l.withTranslations)((e => {
+        Mt = "rockstargames-modules-gtao-license-plateb8ee1e50e3ee7d2a0c64ff5766f1d90d",
+        Vt = "rockstargames-modules-gtao-license-platef5a6ad5cfb833ab500b3a27252e51e07",
+        Dt = (0, l.withTranslations)((e => {
           let {
             onToggleView: t = (() => {}),
             is3DToggle: a = !1,
@@ -2630,36 +2671,36 @@
           const [s, i] = (0, r.useState)(!1), [l, c] = (0, r.useState)(!1), {
             state: d,
             setRefs: u
-          } = Ze(), {
+          } = Je(), {
             currentView: m,
             isMobile: p,
             is3D: f,
             shouldForce2D: g
           } = d, {
             track: b
-          } = (0, o.useGtmTrack)(), y = {
+          } = (0, o.useGtmTrack)(), h = {
             view_name: "license plate creator - create plate form"
-          }, h = (0, r.useRef)(null);
+          }, y = (0, r.useRef)(null);
           (0, r.useEffect)((() => {
             c(/([wW]in)/i.test(window.navigator.userAgent))
           }), []), (0, r.useEffect)((() => {
-            a || u(B.TOGGLE_VIEW_BUTTON, h)
-          }), [h.current, a]), (0, r.useEffect)((() => {
-            m === ue.NEW_PLATE && g && i(!1)
+            a || u(B.TOGGLE_VIEW_BUTTON, y)
+          }), [y.current, a]), (0, r.useEffect)((() => {
+            m === me.NEW_PLATE && g && i(!1)
           }), [g, m]), (0, r.useEffect)((() => {
-            a || (m === ue.NEW_PLATE ? s ? (b({
-              ...y,
+            a || (m === me.NEW_PLATE ? s ? (b({
+              ...h,
               event: "virtualPageview",
               display_type: p ? "mobile" : "desktop",
               view_name: "license plate creator - car view"
             }), b({
-              ...y,
+              ...h,
               event: "license_plate_preview_car",
               event_category: "license_plate",
               event_action: "preview_car",
               text: n("lp.create.carview").toLowerCase()
             })) : b({
-              ...y,
+              ...h,
               event: "virtualPageview",
               display_type: p ? "mobile" : "desktop"
             }) : i(!1))
@@ -2675,8 +2716,8 @@
               }
             },
             x = a ? "Switch between 2D and 3D views" : "Switch between viewing the plate on a car and by itself";
-          return (0, Ke.jsxs)("button", {
-            ref: h,
+          return (0, Qe.jsxs)("button", {
+            ref: y,
             type: "button",
             role: "switch",
             "aria-checked": a ? f : s,
@@ -2690,24 +2731,24 @@
             },
             tabIndex: "0",
             "aria-label": x,
-            children: [(0, Ke.jsx)("div", {
-              className: Lt,
-              children: (0, Ke.jsx)("p", {
-                className: l ? jt : "",
+            children: [(0, Qe.jsx)("div", {
+              className: Mt,
+              children: (0, Qe.jsx)("p", {
+                className: l ? Vt : "",
                 children: a ? v.dimensionToggle.twoDimensions : v.carViewToggle.plateView
               })
-            }), (0, Ke.jsx)("div", {
-              className: Lt,
-              children: (0, Ke.jsx)("p", {
-                className: l ? jt : "",
+            }), (0, Qe.jsx)("div", {
+              className: Mt,
+              children: (0, Qe.jsx)("p", {
+                className: l ? Vt : "",
                 children: a ? v.dimensionToggle.threeDimensions : v.carViewToggle.carView
               })
-            }), (0, Ke.jsx)("span", {
+            }), (0, Qe.jsx)("span", {
               className: "rockstargames-modules-gtao-license-platecb346dd2e906d02e1fbafcc66427844f"
             })]
           })
         })),
-        Vt = {
+        Wt = {
           orderConfirmed: "rockstargames-modules-gtao-license-platea3201b46675507cf815f8693188951bf",
           visible: "rockstargames-modules-gtao-license-platecc8040942e2a89ced64bf7bea8068168",
           background: "rockstargames-modules-gtao-license-platef0ea4a99a7042afcbf4b880eb0ace8ad",
@@ -2720,7 +2761,7 @@
           ctaText: "rockstargames-modules-gtao-license-platefa23d894a541a81230840520eba8d532",
           isWindows: "rockstargames-modules-gtao-license-plated4d11f8f71787a97fd7eee638ff06e83"
         },
-        Dt = (0, l.withTranslations)((e => {
+        Yt = (0, l.withTranslations)((e => {
           let {
             isVisible: t,
             vehicleModel: a,
@@ -2734,12 +2775,12 @@
             setIsExpanded: d,
             setRefs: u,
             state: m
-          } = Ze(), {
+          } = Je(), {
             currentView: p,
             isExpanded: f,
             refs: g,
             three: b,
-            isMobile: y,
+            isMobile: h,
             accessiblePlates: x
           } = m, w = (0, r.useRef)(null), E = (0, r.useRef)(null), P = (0, r.useRef)(null), S = (0, r.useRef)(null), k = (0, r.useRef)(null), {
             track: T
@@ -2749,8 +2790,8 @@
           (0, r.useEffect)((() => {
             u(B.ORDER_BG, k)
           }), [k.current]);
-          const N = g[B.CONFIRM_CONTENT]?.current,
-            I = g[B.CONFIRM_SIDEBAR]?.current,
+          const I = g[B.CONFIRM_CONTENT]?.current,
+            N = g[B.CONFIRM_SIDEBAR]?.current,
             O = g[B.CONFIRM_SIDEBAR_BUTTONS_PORTAL]?.current,
             A = g[B.CONFIRM_SIDEBAR_BUTTONS]?.current,
             C = g[B.NEW_PLATE_SIDEBAR]?.current,
@@ -2761,16 +2802,16 @@
             D = P.current,
             W = S.current,
             Y = E.current,
-            $ = g[B.UI]?.current,
-            z = g[B.NEW_PLATE_UI]?.current,
-            F = g[B.SIDEBAR]?.current,
+            z = g[B.UI]?.current,
+            U = g[B.NEW_PLATE_UI]?.current,
+            $ = g[B.SIDEBAR]?.current,
             G = g[B.ACCESSIBLE_PLATE_GRID]?.current,
             X = (0, r.useRef)(null);
           (0, r.useEffect)((() => {
             X.current = x
           }), [x]);
           const q = (0, r.useCallback)((() => {
-            c(ue.LIST_PLATES), T({
+            c(me.LIST_PLATES), T({
               ...R,
               event: "cta_return_page",
               event_category: "cta",
@@ -2788,31 +2829,31 @@
               controls: o,
               originalControlsTarget: l
             } = b;
-            if (!(e && M && N && G)) return;
+            if (!(e && M && I && G)) return;
             const c = _();
-            if (f && p === ue.LIST_PLATES) {
+            if (f && p === me.LIST_PLATES) {
               const t = v().timeline({
                 defaults: {
-                  ease: U.transaction.confirmOrder.ease,
-                  duration: U.transaction.confirmOrder.duration
+                  ease: F.transaction.confirmOrder.ease,
+                  duration: F.transaction.confirmOrder.duration
                 },
                 onComplete: () => {
                   d(!1)
                 }
               });
-              if (v().to([e.domElement, F], {
+              if (v().to([e.domElement, $], {
                   autoAlpha: 1,
-                  ease: U.transaction.fade.landingPage.ease,
-                  duration: U.transaction.fade.landingPage.duration
-                }), y) {
+                  ease: F.transaction.fade.landingPage.ease,
+                  duration: F.transaction.fade.landingPage.duration
+                }), h) {
                 const e = {
                   opacity: 1
                 };
                 t.to(e, {
                   drawerHeight: s,
                   opacity: 0,
-                  duration: U.sidebar.mobile.drawer.duration,
-                  ease: U.sidebar.mobile.drawer.ease,
+                  duration: F.sidebar.mobile.drawer.duration,
+                  ease: F.sidebar.mobile.drawer.ease,
                   onUpdate: () => {
                     const t = s - i.get();
                     M.style.transform = `translateY(${t}px)`, M.style.opacity = e.opacity
@@ -2822,29 +2863,29 @@
                 autoAlpha: 0
               }, 0).to([V, D, W], {
                 autoAlpha: 0
-              }), t.to(N, {
+              }), t.to(I, {
                 x: "100vw",
                 pointerEvents: "none",
                 zIndex: "revert"
               }, 0), t.to(M, {
                 x: "-100vw"
-              }, 0), v().set([C, z], {
+              }, 0), v().set([C, U], {
                 x: 0
-              }), v().set(I, {
+              }), v().set(N, {
                 left: "revert"
               })
             } else if (t) {
               const t = v().timeline({
                 defaults: {
-                  ease: U.transaction.confirmOrder.ease,
-                  duration: U.transaction.confirmOrder.duration
+                  ease: F.transaction.confirmOrder.ease,
+                  duration: F.transaction.confirmOrder.duration
                 },
                 onComplete: () => {
                   d(!0), v().set(L, {
                     x: 0
                   }), b.scene.traverse((e => {
-                    e.name === me.LP && 0 === e.userData.index && e.material && (e.material.opacity = 0)
-                  })), a.position.set(r.x, r.y, r.z), o?.current && (o.current.minDistance = 0, o.current.target.set(l.x, l.y, l.z)), $ && (a.fov = n, a.updateProjectionMatrix(), H.saturation.value = 0)
+                    e.name === pe.LP && 0 === e.userData.index && e.material && (e.material.opacity = 0)
+                  })), a.position.set(r.x, r.y, r.z), o?.current && (o.current.minDistance = 0, o.current.target.set(l.x, l.y, l.z)), z && (a.fov = n, a.updateProjectionMatrix(), H.saturation.value = 0)
                 },
                 onStart: () => {
                   v().set(Y, {
@@ -2863,18 +2904,18 @@
                   })
                 })), t.to(V, {
                   autoAlpha: 1,
-                  ease: h.Power1.easeIn,
+                  ease: y.Power1.easeIn,
                   duration: .3
                 }, "<1").to(Y, {
                   height: "auto",
-                  ease: h.Power2.easeInOut,
+                  ease: y.Power2.easeInOut,
                   duration: .4
                 }, "<1").to([D, W], {
                   autoAlpha: 1,
-                  ease: h.Power1.easeIn,
+                  ease: y.Power1.easeIn,
                   duration: .3,
                   stagger: .1
-                }, "<0.2"), y) {
+                }, "<0.2"), h) {
                 if (i) {
                   v().set(M, {
                     y: s - i.get(),
@@ -2898,7 +2939,7 @@
                     }
                   }, 0)
                 }
-              } else t.to(N, {
+              } else t.to(I, {
                 x: 0,
                 pointerEvents: "all",
                 zIndex: "3"
@@ -2906,53 +2947,53 @@
                 x: 0
               }, 0).to(M, {
                 autoAlpha: 1
-              }, 0).to(I, {
+              }, 0).to(N, {
                 autoAlpha: 0,
-                ease: U.transaction.fade.out.ease,
-                duration: U.transaction.fade.out.duration
+                ease: F.transaction.fade.out.ease,
+                duration: F.transaction.fade.out.duration
               }, 0).set(M, {
                 pointerEvents: "all"
-              }), I && t.to(I, {
+              }), N && t.to(N, {
                 left: 100 - c + "vw"
               }, 0);
               T({
                 ...R,
                 event: "virtualPageview",
-                display_type: y ? "mobile" : "desktop",
+                display_type: h ? "mobile" : "desktop",
                 view_name: "license plate creator - order received"
               })
             }
-          }), [t, k.current, b, p, y ? i : void 0]), (0, Ke.jsx)("div", {
-            className: [Vt.orderConfirmed, f ? Vt.visible : ""].join(" "),
-            children: (0, Ke.jsx)("div", {
+          }), [t, k.current, b, p, h ? i : void 0]), (0, Qe.jsx)("div", {
+            className: [Wt.orderConfirmed, f ? Wt.visible : ""].join(" "),
+            children: (0, Qe.jsx)("div", {
               ref: k,
-              className: Vt.background,
-              children: (0, Ke.jsxs)("div", {
-                className: Vt.content,
-                children: [(0, Ke.jsx)("h1", {
+              className: Wt.background,
+              children: (0, Qe.jsxs)("div", {
+                className: Wt.content,
+                children: [(0, Qe.jsx)("h1", {
                   ref: w,
-                  className: Vt.contentHeading,
+                  className: Wt.contentHeading,
                   children: n("lp.success.title")
-                }), (0, Ke.jsxs)("div", {
+                }), (0, Qe.jsxs)("div", {
                   ref: E,
-                  className: Vt.secondaryWrap,
-                  children: [(0, Ke.jsx)("p", {
+                  className: Wt.secondaryWrap,
+                  children: [(0, Qe.jsx)("p", {
                     ref: P,
-                    className: Vt.plateRedemptionInstructions,
+                    className: Wt.plateRedemptionInstructions,
                     dangerouslySetInnerHTML: {
                       __html: n("lp.success.description").replace("{car_name}", a)
                     }
-                  }), (0, Ke.jsx)("button", {
+                  }), (0, Qe.jsx)("button", {
                     ref: S,
                     type: "button",
-                    className: Vt.backToPlatesButton,
+                    className: Wt.backToPlatesButton,
                     onClick: () => {
                       q()
                     },
                     "aria-label": n("lp.success.cta"),
                     tabIndex: l,
-                    children: (0, Ke.jsx)("span", {
-                      className: Vt.ctaText,
+                    children: (0, Qe.jsx)("span", {
+                      className: Wt.ctaText,
                       children: n("lp.success.cta")
                     })
                   })]
@@ -2961,7 +3002,7 @@
             })
           })
         })),
-        Wt = (0, l.withTranslations)((e => {
+        Bt = (0, l.withTranslations)((e => {
           let {
             t,
             top: a,
@@ -2975,10 +3016,10 @@
             setPendingOrder: m,
             setRefs: p,
             setSelectedVehicle: f
-          } = Ze(), {
+          } = Je(), {
             currentView: g,
             selectedVehicle: b,
-            pendingOrder: h,
+            pendingOrder: y,
             plates: w,
             three: E,
             isMobile: P,
@@ -2986,22 +3027,22 @@
             vehicles: k,
             selectedStyle: T,
             isOrderConfirmed: R,
-            isExpanded: I
+            isExpanded: N
           } = i, {
             selectedCharacterTuple: O
           } = (0, o.useRockstarUserState)(), {
             loggedIn: A
-          } = (0, o.useRockstarUser)(), C = (0, s.useRockstarTokenPing)(), L = g === ue.CONFIRM_ORDER, [j, M] = (0, r.useState)(I), [V, D] = (0, r.useState)(!1), W = (0, r.useRef)(null), Y = (0, r.useRef)(null), {
-            track: $
-          } = (0, o.useGtmTrack)(), z = {
+          } = (0, o.useRockstarUser)(), C = (0, s.useRockstarTokenPing)(), L = g === me.CONFIRM_ORDER, [j, M] = (0, r.useState)(N), [V, D] = (0, r.useState)(!1), W = (0, r.useRef)(null), Y = (0, r.useRef)(null), {
+            track: z
+          } = (0, o.useGtmTrack)(), U = {
             view_name: "license plate creator - confirm order"
-          }, H = g === ue.CONFIRM_ORDER ? 0 : -1;
+          }, $ = g === me.CONFIRM_ORDER ? 0 : -1;
           (0, r.useEffect)((() => {
             p(B.CONFIRM_SIDEBAR, W)
           }), [W.current]), (0, r.useEffect)((() => {
             p(B.CONFIRM_CONTENT, Y)
           }), [Y.current]);
-          const F = S[B.ORDER_BG]?.current,
+          const H = S[B.ORDER_BG]?.current,
             G = S[B.CONFIRM_CONTENT]?.current,
             X = S[B.CONFIRM_SIDEBAR]?.current,
             q = S[B.CONFIRM_SIDEBAR_BUTTONS_PORTAL]?.current,
@@ -3013,15 +3054,15 @@
             te = S[B.NEW_PLATE_UI]?.current;
 
           function ae() {
-            if ($({
-                ...z,
+            if (z({
+                ...U,
                 event: "virtualPageview",
                 display_type: P ? "mobile" : "desktop",
                 view_name: "license plate creator - create plate form"
-              }), !(E?.camera && G && X && Q && F && K)) return;
+              }), !(E?.camera && G && X && Q && H && K)) return;
             const e = {
-                ease: P ? U.sidebar.mobile.drawer.ease : U.transaction.confirmOrder.ease,
-                duration: P ? U.sidebar.mobile.drawer.duration : U.transaction.confirmOrder.duration
+                ease: P ? F.sidebar.mobile.drawer.ease : F.transaction.confirmOrder.ease,
+                duration: P ? F.sidebar.mobile.drawer.duration : F.transaction.confirmOrder.duration
               },
               t = v().timeline({
                 defaults: {
@@ -3037,7 +3078,7 @@
               autoAlpha: 1
             }, "<") : (X && t.to(X, {
               autoAlpha: 0
-            }, 0), g === ue.NEW_PLATE && t.to(J, {
+            }, 0), g === me.NEW_PLATE && t.to(J, {
               autoAlpha: 1
             }, "<"), t.to([J, Q, te], {
               x: 0
@@ -3045,7 +3086,7 @@
               x: "100vw"
             }, "<"))
           }(0, r.useEffect)((() => {
-            g === ue.LIST_PLATES && j && ae()
+            g === me.LIST_PLATES && j && ae()
           }), [g, j]);
           const re = (0, r.useCallback)((() => {
             (async () => {
@@ -3093,7 +3134,7 @@
             })()
           }), [A, O, w?.[0]?.plateText, b, V, T]);
           (0, r.useEffect)((() => {
-            if (g !== ue.CONFIRM_ORDER || R) {
+            if (g !== me.CONFIRM_ORDER || R) {
               if (P && !R) {
                 ee && v().set(ee, {
                   pointerEvents: "all"
@@ -3103,29 +3144,29 @@
                 };
                 v().to(e, {
                   lerp: 1,
-                  duration: U.sidebar.mobile.drawer.duration,
-                  ease: U.sidebar.mobile.drawer.ease,
+                  duration: F.sidebar.mobile.drawer.duration,
+                  ease: F.sidebar.mobile.drawer.ease,
                   onUpdate: () => {
                     Z && (Z.style.opacity = "" + (1 - e.lerp), Z.style.transform = `translateY(${100*e.lerp}%`)
                   }
                 }), X && v().to(X, {
                   autoAlpha: 0,
-                  duration: U.sidebar.mobile.drawer.duration,
-                  ease: U.sidebar.mobile.drawer.ease
+                  duration: F.sidebar.mobile.drawer.duration,
+                  ease: F.sidebar.mobile.drawer.ease
                 }), q && (q.style.pointerEvents = "none", v().to(q.style, {
                   opacity: 0,
-                  duration: U.sidebar.mobile.drawer.duration,
-                  ease: U.sidebar.mobile.drawer.ease
+                  duration: F.sidebar.mobile.drawer.duration,
+                  ease: F.sidebar.mobile.drawer.ease
                 }))
               }
             } else {
-              if (!(E?.camera && G && X && Q && F && K)) return;
+              if (!(E?.camera && G && X && Q && H && K)) return;
               let e = _();
               P || 100 !== e || (e = 0);
               const t = v().timeline({
                   defaults: {
-                    ease: U.transaction.confirmOrder.ease,
-                    duration: U.transaction.confirmOrder.duration
+                    ease: F.transaction.confirmOrder.ease,
+                    duration: F.transaction.confirmOrder.duration
                   },
                   onComplete: () => {
                     M(!0)
@@ -3139,7 +3180,7 @@
                 };
               if (ee && v().set(ee, {
                   pointerEvents: "none"
-                }), P && (a.ease = U.sidebar.mobile.drawer.ease, a.duration = U.sidebar.mobile.drawer.duration, a.delay = U.sidebar.mobile.drawer.duration / 2, r.ease = U.sidebar.mobile.drawer.ease, r.duration = U.sidebar.mobile.drawer.duration, X && t.to(X, a, 0), K)) {
+                }), P && (a.ease = F.sidebar.mobile.drawer.ease, a.duration = F.sidebar.mobile.drawer.duration, a.delay = F.sidebar.mobile.drawer.duration / 2, r.ease = F.sidebar.mobile.drawer.ease, r.duration = F.sidebar.mobile.drawer.duration, X && t.to(X, a, 0), K)) {
                 const e = {
                     current: 0
                   },
@@ -3149,11 +3190,11 @@
                   };
                 t.to(e, {
                   current: 1,
-                  delay: U.sidebar.mobile.drawer.duration / 2,
+                  delay: F.sidebar.mobile.drawer.duration / 2,
                   onUpdate: () => {
                     const {
                       current: t
-                    } = e, r = (0, et.t7)(a.start, a.end, t);
+                    } = e, r = (0, at.t7)(a.start, a.end, t);
                     K.style.opacity = r
                   }
                 }, 0)
@@ -3168,8 +3209,8 @@
                   };
                   v().to(e, {
                     lerp: 1,
-                    duration: U.sidebar.mobile.drawer.duration,
-                    ease: U.sidebar.mobile.drawer.ease,
+                    duration: F.sidebar.mobile.drawer.duration,
+                    ease: F.sidebar.mobile.drawer.ease,
                     onUpdate: () => {
                       Z.style.opacity = e.lerp, Z.style.transform = `translateY(${100*(1-e.lerp)}%`
                     }
@@ -3179,8 +3220,8 @@
                   visibility: "visible"
                 }), v().to(q.style, {
                   opacity: 1,
-                  duration: U.sidebar.mobile.drawer.duration,
-                  ease: U.sidebar.mobile.drawer.ease
+                  duration: F.sidebar.mobile.drawer.duration,
+                  ease: F.sidebar.mobile.drawer.ease
                 })), t.to(ee, {
                   autoAlpha: 0
                 }, "<")
@@ -3192,7 +3233,7 @@
                     x: a,
                     y: r,
                     scale: n
-                  } = N(K), s = {
+                  } = I(K), s = {
                     x: {
                       start: Number(a),
                       end: Number(a) + -e / 100 * window.innerWidth
@@ -3213,7 +3254,7 @@
                     onUpdate: () => {
                       const {
                         current: e
-                      } = o, t = `translate(${(0,et.t7)(s.x.start,s.x.end,e)}px, ${(0,et.t7)(s.y.start,s.y.end,e)}px) scale(${(0,et.t7)(s.scale.start,s.scale.end,e)})`;
+                      } = o, t = `translate(${(0,at.t7)(s.x.start,s.x.end,e)}px, ${(0,at.t7)(s.y.start,s.y.end,e)}px) scale(${(0,at.t7)(s.scale.start,s.scale.end,e)})`;
                       K.style.transform = t
                     }
                   }, "<")
@@ -3224,24 +3265,24 @@
                   autoAlpha: 1
                 }, "<"), t.to(J, {
                   autoAlpha: 0
-                }, "<"), t.set(F, {
+                }, "<"), t.set(H, {
                   x: `${-100+e}vw`
                 }, "<")
               }
             }
             j && !L && R && u(!1)
           }), [E, g, P, Z, R, q, _()]), (0, r.useEffect)((() => {
-            if (g !== ue.CONFIRM_ORDER && k?.length) {
+            if (g !== me.CONFIRM_ORDER && k?.length) {
               let e = k[0];
-              h && (e = k.find((e => {
+              y && (e = k.find((e => {
                 let {
                   manufacturer: t,
                   name: a
                 } = e;
-                return t === h.manufacturerName && a === h.vehicleName
+                return t === y.manufacturerName && a === y.vehicleName
               }))), f(e)
             }
-          }), [k, h]);
+          }), [k, y]);
           const ne = (0, r.useCallback)((e => {
               if (!k?.length) return;
               const t = k.find((t => {
@@ -3250,22 +3291,22 @@
                 } = t;
                 return a === Number(e.target.value)
               })) ?? null;
-              f(t), $({
-                ...z,
+              f(t), z({
+                ...U,
                 event: "license_plate_select_vehicle",
                 event_category: "license_plate",
                 event_action: "select_vehicle",
                 position: e.target.selectedIndex
               })
             }), [k]),
-            se = (0, Ke.jsx)(Ct, {
+            se = (0, Qe.jsx)(jt, {
               refName: B.CONFIRM_SIDEBAR_BUTTONS,
               buttons: [{
                 buttonText: t("lp.confirm.cancel"),
                 isDisabled: V,
                 onClick: () => {
-                  d(ue.NEW_PLATE), ae(), $({
-                    ...z,
+                  d(me.NEW_PLATE), ae(), z({
+                    ...U,
                     event: "cta_cancel",
                     event_category: "cta",
                     event_action: "cancel",
@@ -3273,11 +3314,11 @@
                   })
                 }
               }, {
-                buttonText: V ? (0, Ke.jsx)(y.LoadingAnimation, {}) : t("lp.confirm.next"),
+                buttonText: V ? (0, Qe.jsx)(h.LoadingAnimation, {}) : t("lp.confirm.next"),
                 isDisabled: !A || !b || V,
                 onClick: () => {
-                  re(), $({
-                    ...z,
+                  re(), z({
+                    ...U,
                     event: "license_plate_create_confirm",
                     event_category: "license_plate",
                     event_action: "create",
@@ -3287,37 +3328,37 @@
                 }
               }],
               isLoading: V,
-              tabIndex: H
+              tabIndex: $
             });
           let oe;
-          return P && (oe = q ? (0, yt.createPortal)(se, q) : null), (0, Ke.jsx)("div", {
+          return P && (oe = q ? (0, vt.createPortal)(se, q) : null), (0, Qe.jsx)("div", {
             className: "rockstargames-modules-gtao-license-platea29469cb6841adfdb317c0863c552ee1",
-            "aria-hidden": g !== ue.CONFIRM_ORDER,
+            "aria-hidden": g !== me.CONFIRM_ORDER,
             tabIndex: -1,
-            children: (0, Ke.jsxs)("div", {
+            children: (0, Qe.jsxs)("div", {
               className: "rockstargames-modules-gtao-license-plateab4356b7d6ef5a4a6201db746fc5a985",
               ref: Y,
-              children: [(0, Ke.jsx)("span", {}), (0, Ke.jsxs)("div", {
+              children: [(0, Qe.jsx)("span", {}), (0, Qe.jsxs)("div", {
                 className: "rockstargames-modules-gtao-license-plateccf3da9613752077116fd5ec0338c7a9",
                 ref: W,
-                children: [(0, Ke.jsxs)("form", {
+                children: [(0, Qe.jsxs)("form", {
                   className: "rockstargames-modules-gtao-license-platef11b2e09ddb486e97daf0b4e6d31e0a0",
                   onSubmit: e => e.preventDefault(),
-                  children: [(0, Ke.jsxs)("div", {
+                  children: [(0, Qe.jsxs)("div", {
                     className: "rockstargames-modules-gtao-license-plateac9d03dae4df339b590e83d075364ece",
-                    children: [(0, Ke.jsx)("h2", {
+                    children: [(0, Qe.jsx)("h2", {
                       children: t("lp.confirm.title")
-                    }), (0, Ke.jsxs)("section", {
-                      children: [(0, Ke.jsx)("label", {
+                    }), (0, Qe.jsxs)("section", {
+                      children: [(0, Qe.jsx)("label", {
                         htmlFor: "cars",
                         children: t("lp.confirm.selector")
-                      }), (0, Ke.jsx)("div", {
+                      }), (0, Qe.jsx)("div", {
                         className: "rockstargames-modules-gtao-license-platece60e8e785ccb4092aab63da0a0cf30c",
-                        children: (0, Ke.jsx)("select", {
+                        children: (0, Qe.jsx)("select", {
                           value: b?.id ?? "null",
                           onChange: ne,
                           required: !0,
-                          tabIndex: H,
+                          tabIndex: $,
                           "aria-label": t("lp.confirm.selector"),
                           children: k?.map(((e, t) => {
                             let {
@@ -3325,33 +3366,33 @@
                               manufacturer: r,
                               name: n
                             } = e;
-                            return (0, Ke.jsx)("option", {
+                            return (0, Qe.jsx)("option", {
                               value: a,
                               children: `${r} ${n}`
                             }, t)
                           }))
                         })
-                      }), (0, Ke.jsx)("p", {
+                      }), (0, Qe.jsx)("p", {
                         className: "rockstargames-modules-gtao-license-platedbaabca0190273add141f7d25c2ed3ed",
                         children: t("lp.confirm.helper")
                       })]
                     })]
-                  }), (0, Ke.jsx)("p", {
+                  }), (0, Qe.jsx)("p", {
                     className: "rockstargames-modules-gtao-license-plateb5fcb2ced6788958d5dbbc1284fbbda3",
                     children: t("lp.confirm.info")
                   })]
                 }), P ? oe : se]
-              }), (0, Ke.jsx)(Dt, {
+              }), (0, Qe.jsx)(Yt, {
                 drawerY: n,
                 top: a,
                 isVisible: R,
                 vehicleModel: `${b?.manufacturer} ${b?.name}`,
-                tabIndex: R ? H : -1
+                tabIndex: R ? $ : -1
               })]
             })
           })
         })),
-        Yt = {
+        zt = {
           CTAWrap: "rockstargames-modules-gtao-license-platecafeb080e640b040ecda82ddea315db4",
           loggedOut: "rockstargames-modules-gtao-license-plateeda8b08aa17ebb271744399f20c1a14c",
           newOrder: "rockstargames-modules-gtao-license-plateea9331159694683cf27df89692246f78",
@@ -3370,9 +3411,9 @@
           loggedOutCTA: "rockstargames-modules-gtao-license-platea33805ac05cfcc38a4af2065c5405781",
           ctaIcon: "rockstargames-modules-gtao-license-platea9e9fc421475bea28dbe3e806f715c89"
         },
-        Bt = "hidden",
+        Ut = "hidden",
         $t = "visible",
-        zt = (0, l.withTranslations)((e => {
+        Ht = (0, l.withTranslations)((e => {
           let {
             t
           } = e;
@@ -3385,13 +3426,13 @@
             setIsScrollEnabled: c,
             setIsExpanded: u,
             setRefs: m
-          } = Ze(), {
+          } = Je(), {
             loggedIn: p
           } = (0, o.useRockstarUser)(), {
             accessiblePlates: f,
             currentView: g,
             gridScale: b,
-            gridState: h,
+            gridState: y,
             loginUrl: x,
             is3D: w,
             isMobile: E,
@@ -3404,22 +3445,22 @@
             plateNumberStatus: j,
             refs: M,
             three: V,
-            realHeight: $,
-            shouldForce2D: z
-          } = s, [G, X] = (0, r.useState)(0), [q, te] = (0, r.useState)(!1), [ae, ne] = (0, r.useState)(!1), [se, oe] = (0, r.useState)(.4 * window.innerHeight), [pe, fe] = (0, r.useState)(-1 * (.6 * window.innerHeight - 80)), ge = (0, r.useRef)(se), [be, ye] = (0, r.useState)(null), [he, ve] = (0, r.useState)(!1), [xe, we] = (0, r.useState)(null), Ee = (0, r.useRef)(null), Pe = (0, r.useRef)(null), Se = (0, r.useRef)(null), _e = (0, r.useRef)(null), ke = (0, r.useRef)(null), Te = (0, r.useRef)(!1), Re = (0, r.useRef)(!1), [Ne, Ie] = (0, r.useState)(null), Oe = (0, r.useRef)(Ne), Ae = (0, r.useRef)(null), Ce = (0, r.useRef)(null), Le = (0, r.useRef)(null), je = (0, r.useRef)(null), Me = (0, r.useRef)(null), Ve = (0, r.useRef)(null), De = (0, r.useRef)(null), We = (0, r.useRef)(null), Ye = (0, r.useRef)(null), Be = (0, r.useRef)(null), $e = (0, r.useRef)(null), ze = (0, r.useRef)(null), {
-            track: He
-          } = (0, o.useGtmTrack)(), Ue = {
+            realHeight: z,
+            shouldForce2D: U
+          } = s, [$, X] = (0, r.useState)(0), [q, Z] = (0, r.useState)(!1), [ae, re] = (0, r.useState)(!1), [se, oe] = (0, r.useState)(.4 * window.innerHeight), [ie, fe] = (0, r.useState)(-1 * (.6 * window.innerHeight - 80)), ge = (0, r.useRef)(se), [be, he] = (0, r.useState)(null), [ye, ve] = (0, r.useState)(!1), [xe, we] = (0, r.useState)(null), Ee = (0, r.useRef)(null), Pe = (0, r.useRef)(null), Se = (0, r.useRef)(null), _e = (0, r.useRef)(null), ke = (0, r.useRef)(null), Te = (0, r.useRef)(!1), Re = (0, r.useRef)(!1), [Ie, Ne] = (0, r.useState)(null), Oe = (0, r.useRef)(Ie), Ae = (0, r.useRef)(null), Ce = (0, r.useRef)(null), Le = (0, r.useRef)(null), je = (0, r.useRef)(null), Me = (0, r.useRef)(null), Ve = (0, r.useRef)(null), De = (0, r.useRef)(null), We = (0, r.useRef)(null), Ye = (0, r.useRef)(null), Be = (0, r.useRef)(null), ze = (0, r.useRef)(null), Ue = (0, r.useRef)(null), {
+            track: $e
+          } = (0, o.useGtmTrack)(), He = {
             view_name: "license plate creator - create plate form"
           };
           (0, r.useEffect)((() => {
-            f?.[0]?.current && g === ue.NEW_PLATE && we(N(f[0].parentElement))
+            f?.[0]?.current && g === me.NEW_PLATE && we(I(f[0].parentElement))
           }), [f, g]);
           const Fe = (0, r.useRef)(null);
           (0, r.useEffect)((() => {
             xe && (Fe.current = xe)
           }), [xe]), (0, r.useEffect)((() => {
-            const e = g === ue.NEW_PLATE || !(!P() || g !== ue.CONFIRM_ORDER);
-            q !== e && te(e), e || ve(!1)
+            const e = g === me.NEW_PLATE || !(!P() || g !== me.CONFIRM_ORDER);
+            q !== e && Z(e), e || ve(!1)
           }), [g, P()]);
           const Ge = (0, r.useCallback)((function(e) {
             let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
@@ -3432,17 +3473,17 @@
             } = V, o = a.getObjectByName("Scene");
             if (!o) return;
             const i = T(),
-              l = E && g === ue.CONFIRM_ORDER ? 1.5 : 1,
+              l = E && g === me.CONFIRM_ORDER ? 1.5 : 1,
               u = !S() || E ? i * b * l : 1.6 * i * b,
               m = [];
             a.traverse((e => {
-              0 === e.userData.index && ($e.current = e, o.position.set(e.position.x, e.position.y + -4.58, e.position.z + -13.77)), e.name === me.LP && m.push(e)
+              0 === e.userData.index && (ze.current = e, o.position.set(e.position.x, e.position.y + -4.58, e.position.z + -13.77)), e.name === pe.LP && m.push(e)
             }));
-            const y = E ? U.sidebar.mobile.drawer.duration : U.clickPlate.duration,
-              h = v().timeline({
+            const h = E ? F.sidebar.mobile.drawer.duration : F.clickPlate.duration,
+              y = v().timeline({
                 defaults: {
-                  duration: y,
-                  ease: E ? U.sidebar.mobile.drawer.ease : U.clickPlate.ease
+                  duration: h,
+                  ease: E ? F.sidebar.mobile.drawer.ease : F.clickPlate.ease
                 },
                 onStart: () => {
                   Oe.current || (n.current.minDistance = 0)
@@ -3453,12 +3494,12 @@
                 const e = M[B.CTA_SHADER]?.current;
                 if (!n.current || !e) return;
                 const o = new d.Vector3;
-                $e?.current && $e.current.getWorldPosition(o);
+                ze?.current && ze.current.getWorldPosition(o);
                 const i = M[B.ROOT].current,
-                  y = document.getElementById("list-plates-sidebar"),
+                  h = document.getElementById("list-plates-sidebar"),
                   x = M[B.CANVAS_WRAP].current,
                   P = f?.[0].current;
-                i && (y || E) && P && x && (g === ue.NEW_PLATE || E && g === ue.CONFIRM_ORDER) && qe(h, t);
+                i && (h || E) && P && x && (g === me.NEW_PLATE || E && g === me.CONFIRM_ORDER) && qe(y, t);
                 const S = (new d.Vector3).copy(o);
                 Oe.current && (S.z = o.z - 5 * b);
                 const T = {
@@ -3479,12 +3520,12 @@
                     end: 1
                   },
                   firstPlateOpacity: {
-                    start: O === ue.LIST_PLATES ? .2 : 1,
+                    start: O === me.LIST_PLATES ? .2 : 1,
                     end: 1
                   },
                   cameraFov: {
                     start: r.fov,
-                    end: E && g === ue.CONFIRM_ORDER ? 1.2 * ke.current : ke.current
+                    end: E && g === me.CONFIRM_ORDER ? 1.2 * ke.current : ke.current
                   },
                   ctaShaderOpacity: {
                     start: e.style.opacity,
@@ -3492,16 +3533,16 @@
                   }
                 };
                 if (E && P) {
-                  const e = N(P.parentElement);
+                  const e = I(P.parentElement);
                   T.translateY = {
-                    start: g === ue.NEW_PLATE ? ze?.current?.offsetHeight : 0,
-                    end: g === ue.NEW_PLATE ? 0 : ze?.current?.offsetHeight
-                  }, T.startingDrawerHeight = Ee.current ? Ee.current.get() : 0, T.startingCanvasHeight = Number(N(s.domElement).y), T.canvasWidth = s.domElement.offsetWidth, T.canvasY = {
-                    start: Number(N(s.domElement).y),
+                    start: g === me.NEW_PLATE ? Ue?.current?.offsetHeight : 0,
+                    end: g === me.NEW_PLATE ? 0 : Ue?.current?.offsetHeight
+                  }, T.startingDrawerHeight = Ee.current ? Ee.current.get() : 0, T.startingCanvasHeight = Number(I(s.domElement).y), T.canvasWidth = s.domElement.offsetWidth, T.canvasY = {
+                    start: Number(I(s.domElement).y),
                     end: .4 * window.innerHeight / -2
                   }, T.canvasYConfirmOrder = {
-                    start: Number(N(s.domElement).y),
-                    end: pe / 1.5
+                    start: Number(I(s.domElement).y),
+                    end: ie / 1.5
                   }, T.accessiblePlateGridYConfirmOrder = {
                     start: Number(e.y),
                     end: Number(e.y) + (T.canvasYConfirmOrder.end - T.canvasYConfirmOrder.start)
@@ -3509,14 +3550,14 @@
                     start: Number(e.x),
                     end: Number(e.x)
                   }, T.accessiblePlateGridScaleConfirmOrder = {
-                    start: Number(N(P.parentElement).scale),
-                    end: Number(N(P.parentElement).scale) / l
+                    start: Number(I(P.parentElement).scale),
+                    end: Number(I(P.parentElement).scale) / l
                   }, T.drawerHeight = {
                     start: Ee.current ? Ee.current.get() : 0,
-                    end: g === ue.NEW_PLATE ? 0 : pe / (_ ? 1 : 2)
+                    end: g === me.NEW_PLATE ? 0 : ie / (_ ? 1 : 2)
                   }, T.cameraFov = {
                     start: r.fov,
-                    end: g === ue.CONFIRM_ORDER ? 1.2 * ke.current : ke.current
+                    end: g === me.CONFIRM_ORDER ? 1.2 * ke.current : ke.current
                   }, T.canvasOpacity = {
                     start: s.domElement.style.opacity,
                     end: 1
@@ -3525,37 +3566,37 @@
                 const R = {
                   current: 0
                 };
-                if (g === ue.NEW_PLATE) {
+                if (g === me.NEW_PLATE) {
                   const o = P.querySelector("canvas");
-                  h.to(R, {
+                  y.to(R, {
                     current: 1,
-                    duration: E ? U.sidebar.mobile.drawer.duration : U.clickPlate.duration,
-                    ease: E ? U.sidebar.mobile.drawer.ease : U.clickPlate.ease,
+                    duration: E ? F.sidebar.mobile.drawer.duration : F.clickPlate.duration,
+                    ease: E ? F.sidebar.mobile.drawer.ease : F.clickPlate.ease,
                     onUpdate: () => {
                       const a = t ? 1 : R.current,
                         i = T.cameraPosition.start.clone().lerp(T.cameraPosition.end, a);
                       r.position.set(i.x, i.y, i.z);
                       const l = T.controlsTarget.start.clone().lerp(T.controlsTarget.end, a);
                       n.current.target.x = l.x, n.current.target.y = l.y, n.current.target.z = l.z, m.forEach(((e, t) => {
-                        e.material && (e.material.opacity = (0, et.t7)(T.plateOpacity[t].start, T.plateOpacity[t].end, a))
+                        e.material && (e.material.opacity = (0, at.t7)(T.plateOpacity[t].start, T.plateOpacity[t].end, a))
                       }));
-                      const c = (0, et.t7)(T.firstPlateSaturation.start, T.firstPlateSaturation.end, a);
+                      const c = (0, at.t7)(T.firstPlateSaturation.start, T.firstPlateSaturation.end, a);
                       if (H.saturation.value = c, p && !A && o) {
                         const e = !!A,
-                          t = (0, et.t7)(T.firstPlateOpacity.start, T.firstPlateOpacity.end, a);
+                          t = (0, at.t7)(T.firstPlateOpacity.start, T.firstPlateOpacity.end, a);
                         o.style.filter = `saturate(${c})${!e&&` opacity(${t})`}`
                       }
                       if (e) {
-                        const t = (0, et.t7)(T.ctaShaderOpacity.start, T.ctaShaderOpacity.end, a);
+                        const t = (0, at.t7)(T.ctaShaderOpacity.start, T.ctaShaderOpacity.end, a);
                         e.style.opacity = t
                       }
                       if (T.cameraFov.start !== T.cameraFov.end && r.updateProjectionMatrix(), E) {
-                        if (ze.current) {
-                          const e = (0, et.t7)(T.translateY.start, T.translateY.end, a);
-                          ze.current.style.transform = `translateY(${e}px)`, ze.current.style.opacity = String(a), ze.current.style.pointerEvents = "all"
+                        if (Ue.current) {
+                          const e = (0, at.t7)(T.translateY.start, T.translateY.end, a);
+                          Ue.current.style.transform = `translateY(${e}px)`, Ue.current.style.opacity = String(a), Ue.current.style.pointerEvents = "all"
                         }
-                        Ee.current && Ee.current.set((0, et.t7)(T.drawerHeight.start, T.drawerHeight.end, a));
-                        const e = (0, et.t7)(T.canvasY.start, T.canvasY.end, a);
+                        Ee.current && Ee.current.set((0, at.t7)(T.drawerHeight.start, T.drawerHeight.end, a));
+                        const e = (0, at.t7)(T.canvasY.start, T.canvasY.end, a);
                         s.domElement.style.transform = `translateY(${e}px)`
                       }
                     },
@@ -3563,25 +3604,25 @@
                       E ? document.body.style.touchAction = "none" : c(!1)
                     },
                     onComplete: () => {
-                      g === ue.NEW_PLATE && (i && (i.style.touchAction = "none"), _e.current = new d.Vector3(r.position.x, r.position.y, r.position.z), Ve?.current?.children && Ve.current.querySelectorAll("button").forEach((e => {
+                      g === me.NEW_PLATE && (i && (i.style.touchAction = "none"), _e.current = new d.Vector3(r.position.x, r.position.y, r.position.z), Ve?.current?.children && Ve.current.querySelectorAll("button").forEach((e => {
                         e.style.pointerEvents = "all"
                       })), E && (s.domElement.style.touchAction = "none", k && setTimeout((() => {
                         c(!1), document.body.style.touchAction = "auto"
-                      }), 200), Se.current = N(s.domElement).y), o && o.classList.remove(Yt.newOrder), s.render(a, r))
+                      }), 200), Se.current = I(s.domElement).y), o && o.classList.remove(zt.newOrder), s.render(a, r))
                     }
-                  }, 0), E && h.to(M[B.NEW_PLATE_FORM].current, {
+                  }, 0), E && y.to(M[B.NEW_PLATE_FORM].current, {
                     autoAlpha: 1,
-                    duration: t ? 0 : U.sidebar.mobile.drawer.duration,
-                    ease: U.sidebar.mobile.drawer.ease,
-                    delay: U.sidebar.mobile.drawer.duration / 2,
+                    duration: t ? 0 : F.sidebar.mobile.drawer.duration,
+                    ease: F.sidebar.mobile.drawer.ease,
+                    delay: F.sidebar.mobile.drawer.duration / 2,
                     onStart: () => {
-                      ze.current && (ze.current.style.pointerEvents = "all", ze.current.style.visibility = "visible")
+                      Ue.current && (Ue.current.style.pointerEvents = "all", Ue.current.style.visibility = "visible")
                     }
-                  }, 0), h.to([Ve.current, E ? void 0 : Me.current], {
+                  }, 0), y.to([Ve.current, E ? void 0 : Me.current], {
                     autoAlpha: 1,
-                    duration: t ? 0 : U.sidebar.in.duration,
-                    ease: U.sidebar.in.ease,
-                    delay: U.sidebar.in.delay,
+                    duration: t ? 0 : F.sidebar.in.duration,
+                    ease: F.sidebar.in.ease,
+                    delay: F.sidebar.in.delay,
                     onStart: () => {
                       De.current && (De.current.style.transform = "translateY(0px)")
                     },
@@ -3593,32 +3634,32 @@
                       }))
                     }
                   }, "<")
-                } else g === ue.CONFIRM_ORDER && (!0 === Oe.current && it(), E && (h.to(R, {
+                } else g === me.CONFIRM_ORDER && (!0 === Oe.current && it(), E && (y.to(R, {
                   current: 1,
-                  duration: U.sidebar.mobile.drawer.duration,
-                  ease: U.sidebar.mobile.drawer.ease,
+                  duration: F.sidebar.mobile.drawer.duration,
+                  ease: F.sidebar.mobile.drawer.ease,
                   onUpdate: () => {
                     const {
                       current: e
                     } = R;
-                    if (ze.current) {
-                      Ee.current && Ee.current.set((0, et.t7)(T.drawerHeight.start, T.drawerHeight.end, e));
+                    if (Ue.current) {
+                      Ee.current && Ee.current.set((0, at.t7)(T.drawerHeight.start, T.drawerHeight.end, e));
                       const t = T.cameraPosition.start.clone().lerp(T.cameraPosition.end, e);
-                      r.position.set(t.x, t.y, t.z), s.domElement.style.opacity = (0, et.t7)(T.canvasOpacity.start, T.canvasOpacity.end, e), Ve?.current?.style && (Ve.current.style.opacity = String(1 - e));
-                      const a = (0, et.t7)(T.translateY.start, T.translateY.end, e);
-                      ze.current.style.transform = `translateY(${a}px)`, ze.current.style.pointerEvents = "none";
-                      const n = (0, et.t7)(T.canvasYConfirmOrder.start, T.canvasYConfirmOrder.end, e);
+                      r.position.set(t.x, t.y, t.z), s.domElement.style.opacity = (0, at.t7)(T.canvasOpacity.start, T.canvasOpacity.end, e), Ve?.current?.style && (Ve.current.style.opacity = String(1 - e));
+                      const a = (0, at.t7)(T.translateY.start, T.translateY.end, e);
+                      Ue.current.style.transform = `translateY(${a}px)`, Ue.current.style.pointerEvents = "none";
+                      const n = (0, at.t7)(T.canvasYConfirmOrder.start, T.canvasYConfirmOrder.end, e);
                       s.domElement.style.transform = `translateY(${n}px)`;
-                      const o = (0, et.t7)(T.accessiblePlateGridXConfirmOrder.start, T.accessiblePlateGridXConfirmOrder.end, e),
-                        i = (0, et.t7)(T.accessiblePlateGridYConfirmOrder.start, T.accessiblePlateGridYConfirmOrder.end, e),
-                        l = (0, et.t7)(T.accessiblePlateGridScaleConfirmOrder.start, T.accessiblePlateGridScaleConfirmOrder.end, e);
+                      const o = (0, at.t7)(T.accessiblePlateGridXConfirmOrder.start, T.accessiblePlateGridXConfirmOrder.end, e),
+                        i = (0, at.t7)(T.accessiblePlateGridYConfirmOrder.start, T.accessiblePlateGridYConfirmOrder.end, e),
+                        l = (0, at.t7)(T.accessiblePlateGridScaleConfirmOrder.start, T.accessiblePlateGridScaleConfirmOrder.end, e);
                       P?.parentElement && (P.parentElement.style.transform = `translate(${o}px,\n                                        ${i}px) scale(${l})`)
                     }
                   }
-                }, 0), h.to(M[B.NEW_PLATE_FORM].current, {
+                }, 0), y.to(M[B.NEW_PLATE_FORM].current, {
                   autoAlpha: 0,
-                  duration: U.sidebar.mobile.drawer.duration,
-                  ease: U.sidebar.mobile.drawer.ease
+                  duration: F.sidebar.mobile.drawer.duration,
+                  ease: F.sidebar.mobile.drawer.ease
                 }, 0)));
                 break
               }
@@ -3627,47 +3668,47 @@
                     e.style.pointerEvents = "none"
                   })), v().to(Ve.current, {
                     autoAlpha: 0,
-                    duration: U.sidebar.out.duration,
-                    ease: U.sidebar.out.ease,
-                    delay: U.sidebar.out.delay
-                  }), E && ze?.current) {
+                    duration: F.sidebar.out.duration,
+                    ease: F.sidebar.out.ease,
+                    delay: F.sidebar.out.delay
+                  }), E && Ue?.current) {
                   const e = {
                     transform: 0,
-                    translateY: N(ze.current).y,
+                    translateY: I(Ue.current).y,
                     drawerHeight: Ee.current ? Ee.current.get() : 0,
                     fov: r.fov
                   };
                   v().to(e, {
-                    translateY: ze?.current?.offsetHeight,
-                    duration: U.sidebar.mobile.drawer.duration,
+                    translateY: Ue?.current?.offsetHeight,
+                    duration: F.sidebar.mobile.drawer.duration,
                     drawerHeight: .4 * window.innerHeight,
                     fov: ke.current,
-                    ease: U.sidebar.mobile.drawer.ease,
+                    ease: F.sidebar.mobile.drawer.ease,
                     onUpdate: () => {
-                      ze.current && (Ee.current && Ee.current.set(e.drawerHeight), ze.current.style.transform = `translateY(${e.translateY}px)`, ze.current.style.pointerEvents = "none", r.fov = e.fov, r.updateProjectionMatrix())
+                      Ue.current && (Ee.current && Ee.current.set(e.drawerHeight), Ue.current.style.transform = `translateY(${e.translateY}px)`, Ue.current.style.pointerEvents = "none", r.fov = e.fov, r.updateProjectionMatrix())
                     }
                   })
                 }
-                if (g === ue.CONFIRM_ORDER ? _ || 1 == !Oe.current && v().to(r.position, {
+                if (g === me.CONFIRM_ORDER ? _ || 1 == !Oe.current && v().to(r.position, {
                     x: Number(_e.current.x),
                     y: Number(_e.current.y),
                     z: 0,
-                    ease: U.transaction.confirmOrder.ease,
-                    duration: U.transaction.confirmOrder.duration
+                    ease: F.transaction.confirmOrder.ease,
+                    duration: F.transaction.confirmOrder.duration
                   }) : v().to(Me.current, {
                     autoAlpha: 0,
-                    duration: U.sidebar.out.duration,
-                    ease: U.sidebar.out.ease,
-                    delay: U.sidebar.out.delay
-                  }), g === ue.LIST_PLATES) {
+                    duration: F.sidebar.out.duration,
+                    ease: F.sidebar.out.ease,
+                    delay: F.sidebar.out.delay
+                  }), g === me.LIST_PLATES) {
                   const e = M[B.ROOT].current;
                   e && (e.style.touchAction = "auto")
                 }
-                n?.current && (n.current.minDistance = 0), Oe.current = !1, Ie(!1)
+                n?.current && (n.current.minDistance = 0), Oe.current = !1, Ne(!1)
             }
-          }), [g, V, M, E, A, b, h, R, O, $, be, pe, Ee.current, Oe.current, w]);
+          }), [g, V, M, E, A, b, y, R, O, z, be, ie, Ee.current, Oe.current, w]);
           (0, r.useEffect)((() => {
-            M?.[B.SIDEBAR_BUTTONS]?.current && (ze.current = M[B.SIDEBAR_BUTTONS].current)
+            M?.[B.SIDEBAR_BUTTONS]?.current && (Ue.current = M[B.SIDEBAR_BUTTONS].current)
           }), [M]), (0, r.useEffect)((() => {
             m(B.NEW_PLATE, Ye)
           }), [Ye.current]), (0, r.useEffect)((() => {
@@ -3691,68 +3732,68 @@
               } = V, r = e || v().timeline({
                 defaults: {
                   duration: 0,
-                  ease: E ? U.sidebar.mobile.drawer.ease : U.clickPlate.ease
+                  ease: E ? F.sidebar.mobile.drawer.ease : F.clickPlate.ease
                 },
                 onStart: () => {
                   a.current.minDistance = 0
                 }
-              }), n = T(), s = E && g === ue.CONFIRM_ORDER ? 1.5 : 1, o = !S() || E ? n * b * s : 1.6 * n * b, l = M[B.ROOT].current, c = document.getElementById("list-plates-sidebar"), d = M[B.CANVAS_WRAP].current, u = f[0].current;
+              }), n = T(), s = E && g === me.CONFIRM_ORDER ? 1.5 : 1, o = !S() || E ? n * b * s : 1.6 * n * b, l = M[B.ROOT].current, c = document.getElementById("list-plates-sidebar"), d = M[B.CANVAS_WRAP].current, u = f[0].current;
               if (l && (E || c) && u && d) {
-                const e = I(0, l, Number($.replace("px", "")), h, E ? void 0 : {
+                const e = N(0, l, Number(z.replace("px", "")), y, E ? void 0 : {
                     x: c.offsetWidth,
                     y: 0
                   }).rect.center,
                   a = d.getBoundingClientRect(),
-                  n = N(d),
-                  s = N(u.parentElement),
+                  n = I(d),
+                  s = I(u.parentElement),
                   m = {
                     x: a.left + a.width / 2 - Number(n.x),
                     y: a.top + a.height / 2 - Number(n.y)
                   },
                   p = 5 / o,
-                  g = E || i() !== ue.CONFIRM_ORDER ? 0 : -1 * c.offsetWidth,
+                  g = E || i() !== me.CONFIRM_ORDER ? 0 : -1 * c.offsetWidth,
                   b = {
                     x: m.x - e.x + g,
-                    y: m.y - e.y - 80 + (O === ue.CONFIRM_ORDER || t ? R : window.scrollY)
+                    y: m.y - e.y - 80 + (O === me.CONFIRM_ORDER || t ? R : window.scrollY)
                   },
-                  y = {
+                  h = {
                     current: 0
                   },
                   v = f.map((e => Number(getComputedStyle(e?.current).getPropertyValue("opacity")))),
-                  x = O === ue.CONFIRM_ORDER ? U.transaction.confirmOrder.ease : U.clickPlate.ease,
-                  w = O === ue.CONFIRM_ORDER ? U.transaction.confirmOrder.duration : U.clickPlate.duration,
+                  x = O === me.CONFIRM_ORDER ? F.transaction.confirmOrder.ease : F.clickPlate.ease,
+                  w = O === me.CONFIRM_ORDER ? F.transaction.confirmOrder.duration : F.clickPlate.duration,
                   P = .4 * window.innerHeight,
-                  S = E ? U.sidebar.mobile.drawer.duration : w,
+                  S = E ? F.sidebar.mobile.drawer.duration : w,
                   _ = t ? 0 : S;
-                r.to(y, {
+                r.to(h, {
                   current: 1,
-                  ease: E ? U.sidebar.mobile.drawer.ease : x,
+                  ease: E ? F.sidebar.mobile.drawer.ease : x,
                   duration: _,
                   onComplete: () => {
-                    we(N(u.parentElement)), ve(!0)
+                    we(I(u.parentElement)), ve(!0)
                   },
                   onUpdate: () => {
                     const {
                       current: a
-                    } = y, r = (0, et.t7)(Number(s.x), b.x, a), n = (0, et.t7)(Number(s.y), b.y + (E ? P / -2 : 0), a), o = (0, et.t7)(Number(s.scale), p, a);
+                    } = h, r = (0, at.t7)(Number(s.x), b.x, a), n = (0, at.t7)(Number(s.y), b.y + (E ? P / -2 : 0), a), o = (0, at.t7)(Number(s.scale), p, a);
                     u.parentElement.style.transformOrigin = `${e.x}px ${e.y}px`, u.parentElement.style.transform = `translate(${r}px, ${n}px) scale(${o})`, t || f.forEach(((e, t) => {
                       if (0 !== t && e?.current) {
-                        const r = (0, et.t7)(v[t], 0, Math.min(1, 20 * a));
+                        const r = (0, at.t7)(v[t], 0, Math.min(1, 20 * a));
                         e.current.style.opacity = r
                       }
                     }))
                   }
                 }, "<")
               }
-            }), [h, $, E, g, se, V, f, M, O, Le?.current, R]),
-            Je = (0, r.useCallback)((() => {
+            }), [y, z, E, g, se, V, f, M, O, Le?.current, R]),
+            Ze = (0, r.useCallback)((() => {
               if (!V?.controls) return;
               const {
                 controls: e,
                 scene: t
               } = V, a = v().timeline({
-                duration: E ? U.sidebar.mobile.drawer.duration : U.clickPlate.duration,
-                ease: E ? U.sidebar.mobile.drawer.ease : U.clickPlate.ease,
+                duration: E ? F.sidebar.mobile.drawer.duration : F.clickPlate.duration,
+                ease: E ? F.sidebar.mobile.drawer.ease : F.clickPlate.ease,
                 onStart: () => {
                   e?.current && !Oe.current && (e.current.minDistance = 0)
                 }
@@ -3762,31 +3803,31 @@
                 0 === e.userData.index && (r = e)
               })), r && v().to(r.material, {
                 duration: 0,
-                ease: E ? U.sidebar.mobile.drawer.ease : U.clickPlate.ease,
+                ease: E ? F.sidebar.mobile.drawer.ease : F.clickPlate.ease,
                 opacity: w ? 1 : 0
               });
               const {
                 renderer: n
               } = Xe.current;
-              q ? (g === ue.NEW_PLATE && (P() ? n.domElement.style.transform = `translateY(${.4*window.innerHeight/-2}px)` : n.domElement.style.transform = "translateY(0px)", Me?.current && (Me.current.style.opacity = "1", Me.current.style.visibility = "visible", Me.current.style.pointerEvents = "all")), g === ue.CONFIRM_ORDER && P() && (n.domElement.style.transform = `translateY(${pe/1.5}px)`)) : g !== ue.CONFIRM_ORDER || P() || (n.domElement.style.transform = "translateY(0px)"), i() !== ue.NEW_PLATE && i() !== ue.CONFIRM_ORDER || qe(null, !0), P() && tt(), Oe.current && ot({
+              q ? (g === me.NEW_PLATE && (P() ? n.domElement.style.transform = `translateY(${.4*window.innerHeight/-2}px)` : n.domElement.style.transform = "translateY(0px)", Me?.current && (Me.current.style.opacity = "1", Me.current.style.visibility = "visible", Me.current.style.pointerEvents = "all")), g === me.CONFIRM_ORDER && P() && (n.domElement.style.transform = `translateY(${ie/1.5}px)`)) : g !== me.CONFIRM_ORDER || P() || (n.domElement.style.transform = "translateY(0px)"), i() !== me.NEW_PLATE && i() !== me.CONFIRM_ORDER || qe(null, !0), P() && et(), Oe.current && ot({
                 isResize: !0,
                 onComplete: null,
                 delay: 0
               })
             }), [P(), q, w, g, V, Me.current, b, R]),
-            Qe = (0, r.useCallback)((function() {
+            Ke = (0, r.useCallback)((function() {
               let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
                 t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-              if (!$e?.current || !_e.current || !V?.camera) return;
-              He({
-                ...Ue,
+              if (!ze?.current || !_e.current || !V?.camera) return;
+              $e({
+                ...He,
                 event: "modal_close",
                 event_category: "modal",
                 event_action: "close",
                 event_label: "new plate",
                 view_name: "license plate creator - new plate form"
-              }), He({
-                ...Ue,
+              }), $e({
+                ...He,
                 event: "cta_return_page",
                 event_category: "cta",
                 event_action: "return_page",
@@ -3800,14 +3841,14 @@
                 renderer: s
               } = V, o = r.getObjectByName("Scene"), i = r.getObjectByName("Light1"), l = r.getObjectByName("Light2"), c = r.getObjectByName("Light3"), d = s.domElement, u = v().timeline({
                 defaults: {
-                  ease: U.toggleView.camera.ease,
-                  duration: t ? 0 : U.toggleView.camera.duration
+                  ease: F.toggleView.camera.ease,
+                  duration: t ? 0 : F.toggleView.camera.duration
                 },
                 onStart: () => {
                   n?.current && (n.current.minDistance = 2, n.current.enableZoom = !1, n.current.enabled = !1)
                 },
                 onComplete: () => {
-                  n?.current && (n.current.minDistance = 0, n.current.maxPolarAngle = F.plateView.maxPolarAngle, n.current.minPolarAngle = F.plateView.minPolarAngle, n.current.maxAzimuthAngle = F.plateView.maxAzimuthAngle, n.current.minAzimuthAngle = F.plateView.minAzimuthAngle, n.current.enableZoom = !1), ge.current = 0, e.onComplete && e.onComplete()
+                  n?.current && (n.current.minDistance = 0, n.current.maxPolarAngle = G.plateView.maxPolarAngle, n.current.minPolarAngle = G.plateView.minPolarAngle, n.current.maxAzimuthAngle = G.plateView.maxAzimuthAngle, n.current.minAzimuthAngle = G.plateView.minAzimuthAngle, n.current.enableZoom = !1), ge.current = 0, e.onComplete && e.onComplete()
                 }
               });
               u.to(a.position, {
@@ -3816,54 +3857,54 @@
                 z: Number(_e.current.z)
               }, 0).to(d.style, {
                 opacity: 1
-              }, "<").to($e.current.rotation, {
+              }, "<").to(ze.current.rotation, {
                 x: 0
               }, "<").to(i, {
                 intensity: 0
               }, "<").to([l, c], {
-                intensity: le
+                intensity: ce
               }, "<").to(l.position, {
-                x: Z,
-                y: K,
-                z: J
+                x: K,
+                y: J,
+                z: Q
               }, "<").to(c.position, {
-                x: ee
-              }, "<").set($e.current, {
+                x: te
+              }, "<").set(ze.current, {
                 receiveShadow: !1
-              }, .4).set($e.current.material, {
+              }, .4).set(ze.current.material, {
                 depthTest: !1
-              }, "<"), $e?.current?.material && u.to($e.current.material, {
-                envMapIntensity: ce
+              }, "<"), ze?.current?.material && u.to(ze.current.material, {
+                envMapIntensity: de
               }, "<"), o.traverse((e => {
                 e.material && v().to(e.material, {
                   opacity: 0,
-                  duration: t ? 0 : U.toggleView.fadeOut.duration,
-                  ease: U.toggleView.fadeOut.ease
+                  duration: t ? 0 : F.toggleView.fadeOut.duration,
+                  ease: F.toggleView.fadeOut.ease
                 })
               }))
-            }), [$e.current, _e.current, V]);
+            }), [ze.current, _e.current, V]);
           (0, r.useEffect)((() => {
             V?.scene && !ke.current && (ke.current = V.camera.fov)
           }), [ke.current, V]), (0, r.useEffect)((() => {
-            V?.scene && ze.current && Ge(q ? $t : Bt)
-          }), [V, q, g === ue.CONFIRM_ORDER, O]), (0, r.useEffect)((() => {
-            V?.scene && ze.current && Ge(q ? $t : Bt, !0)
+            V?.scene && Ue.current && Ge(q ? $t : Ut)
+          }), [V, q, g === me.CONFIRM_ORDER, O]), (0, r.useEffect)((() => {
+            V?.scene && Ue.current && Ge(q ? $t : Ut, !0)
           }), [E]);
-          const tt = (0, r.useCallback)((() => {
-            if (ze?.current && E && Ye.current) {
+          const et = (0, r.useCallback)((() => {
+            if (Ue?.current && E && Ye.current) {
               const e = Ye.current.offsetHeight + 80,
                 t = e - window.innerHeight,
                 a = .4 * e;
-              X(a - 48 - ze.current.offsetHeight - t), oe(a), fe(-1 * (.6 * e - 80)), ze.current.style.transform = `translateY${ze.current.offsetHeight}px`
+              X(a - 48 - Ue.current.offsetHeight - t), oe(a), fe(-1 * (.6 * e - 80)), Ue.current.style.transform = `translateY${Ue.current.offsetHeight}px`
             }
-          }), [ze.current, E, Ye.current]);
+          }), [Ue.current, E, Ye.current]);
           (0, r.useEffect)((() => {
-            tt()
-          }), [ze.current, E, Ye.current]), (0, r.useEffect)((() => {
-            Ce.current || (Ce.current = g), Le.current || (Le.current = Ce.current), g && (Le.current = Ce.current, l(Ce.current), Ce.current = g), g === ue.LIST_PLATES && Oe.current && Qe({}, !0), g === ue.NEW_PLATE && (je.current = !1)
+            et()
+          }), [Ue.current, E, Ye.current]), (0, r.useEffect)((() => {
+            Ce.current || (Ce.current = g), Le.current || (Le.current = Ce.current), g && (Le.current = Ce.current, l(Ce.current), Ce.current = g), g === me.LIST_PLATES && Oe.current && Ke({}, !0), g === me.NEW_PLATE && (je.current = !1)
           }), [g]), (0, r.useEffect)((() => {
-            const e = E ? U.sidebar.mobile.drawer.duration : U.clickPlate.duration,
-              t = he ? 0 : e;
+            const e = E ? F.sidebar.mobile.drawer.duration : F.clickPlate.duration,
+              t = ye ? 0 : e;
             if (!V?.scene) return;
             if (!V?.scene || !f?.[0]?.current) return;
             const {
@@ -3872,20 +3913,20 @@
               camera: s
             } = V, o = [], l = [], c = f[0].current;
             if (r.traverse((e => {
-                e.name === me.LP && e.material ? l[e.userData.index] = e.material : o.push(e.material)
-              })), i() === ue.NEW_PLATE)
+                e.name === pe.LP && e.material ? l[e.userData.index] = e.material : o.push(e.material)
+              })), i() === me.NEW_PLATE)
               if (w) {
                 const e = l[0];
                 if (v().to(e, {
                     opacity: 1,
                     delay: t,
-                    duration: E ? U.sidebar.mobile.drawer.duration : U.clickPlate.duration,
-                    ease: E ? U.sidebar.mobile.drawer.ease : U.clickPlate.ease,
+                    duration: E ? F.sidebar.mobile.drawer.duration : F.clickPlate.duration,
+                    ease: E ? F.sidebar.mobile.drawer.ease : F.clickPlate.ease,
                     onStart: () => {
                       a(!0), v().to(c.style, {
                         opacity: 0,
-                        duration: U.accessibilePlate.duration,
-                        ease: U.accessibilePlate.ease,
+                        duration: F.accessibilePlate.duration,
+                        ease: F.accessibilePlate.ease,
                         onComplete: () => {
                           Re.current = !1
                         }
@@ -3894,13 +3935,13 @@
                   }), !je.current) {
                   const e = r.getObjectByName("Light4"),
                     a = new d.Vector3;
-                  $e?.current && ($e.current.getWorldPosition(a), v().to(e.position, {
-                    x: ie.x,
-                    y: a.y + ie.y,
-                    z: ie.z,
+                  ze?.current && (ze.current.getWorldPosition(a), v().to(e.position, {
+                    x: le.x,
+                    y: a.y + le.y,
+                    z: le.z,
                     delay: t,
-                    duration: U.plateShimmer.duration,
-                    ease: U.plateShimmer.ease
+                    duration: F.plateShimmer.duration,
+                    ease: F.plateShimmer.ease
                   }));
                   const n = {
                     current: 0
@@ -3908,12 +3949,12 @@
                   v().to(n, {
                     current: 1,
                     delay: t,
-                    duration: U.plateShimmer.duration,
-                    ease: U.plateShimmer.ease,
+                    duration: F.plateShimmer.duration,
+                    ease: F.plateShimmer.ease,
                     onUpdate: () => {
                       const {
                         current: t
-                      } = n, a = (0, et.t7)(0, Math.PI, t);
+                      } = n, a = (0, at.t7)(0, Math.PI, t);
                       e.intensity = .3 * Math.sin(a), e.color = new d.Color(a, .9 * a, a)
                     }
                   }), je.current = !0
@@ -3922,13 +3963,13 @@
                 const e = l[0];
                 v().to(c.style, {
                   opacity: 1,
-                  duration: U.accessibilePlate.duration,
-                  ease: U.accessibilePlate.ease,
+                  duration: F.accessibilePlate.duration,
+                  ease: F.accessibilePlate.ease,
                   onStart: () => {
                     v().to(e, {
                       opacity: 0,
-                      duration: U.accessibilePlate.duration,
-                      ease: U.accessibilePlate.ease,
+                      duration: F.accessibilePlate.duration,
+                      ease: F.accessibilePlate.ease,
                       onComplete: () => {
                         a(!1), Re.current = !1, n.render(r, s)
                       }
@@ -3937,7 +3978,7 @@
                 })
               }
           }), [w, E, V, f]), (0, r.useEffect)((() => {
-            if (i() === ue.NEW_PLATE && he && V?.camera) {
+            if (i() === me.NEW_PLATE && ye && V?.camera) {
               const {
                 camera: e
               } = V, t = w ? 0 : .5;
@@ -3949,13 +3990,13 @@
               })
             }
           }), [w, V]);
-          const at = (0, r.useRef)(0);
+          const tt = (0, r.useRef)(0);
           (0, r.useEffect)((() => {
-            b && (at.current = b), i() === ue.NEW_PLATE || i() === ue.CONFIRM_ORDER ? Je() : P() && (tt(), ye(window.innerHeight), ze.current && (ze.current.style.transform = `translateY(${ze.current.offsetHeight}px`))
+            b && (tt.current = b), i() === me.NEW_PLATE || i() === me.CONFIRM_ORDER ? Ze() : P() && (et(), he(window.innerHeight), Ue.current && (Ue.current.style.transform = `translateY(${Ue.current.offsetHeight}px`))
           }), [b]);
           const rt = (0, r.useCallback)((function(e, t) {
               let a = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
-              if (Ce.current !== ue.NEW_PLATE && Ce.current !== ue.CONFIRM_ORDER) return;
+              if (Ce.current !== me.NEW_PLATE && Ce.current !== me.CONFIRM_ORDER) return;
               const {
                 renderer: r
               } = V;
@@ -3983,11 +4024,11 @@
                 const {
                   renderer: e,
                   camera: r
-                } = V, n = e.domElement, s = N(a.parentElement), o = {
+                } = V, n = e.domElement, s = I(a.parentElement), o = {
                   buttonWrapOpacity: De.current.style.opacity,
                   canvasWrapOpacity: n.style.opacity,
                   fov: r.fov,
-                  canvasTranslateY: Number(N(n).y),
+                  canvasTranslateY: Number(I(n).y),
                   accessiblePlateX: Number(s.x),
                   accessiblePlateY: Number(s.y),
                   accessiblePlateScale: Number(s.scale)
@@ -4004,8 +4045,8 @@
                   accessiblePlateY: i.accessiblePlateY,
                   accessiblePlateScale: i.accessiblePlateScale,
                   canvasTranslateY: i.canvasTranslateY,
-                  duration: U.sidebar.mobile.drawerSnap.duration,
-                  ease: U.sidebar.mobile.drawerSnap.ease,
+                  duration: F.sidebar.mobile.drawerSnap.duration,
+                  ease: F.sidebar.mobile.drawerSnap.ease,
                   onUpdate: () => {
                     n.style.opacity = o.canvasWrapOpacity, De.current.style.opacity = o.buttonWrapOpacity, a && (a.parentElement.style.opacity = o.canvasWrapOpacity, a.parentElement.style.transform = `translate(${o.accessiblePlateX}px,\n                            ${o.accessiblePlateY}px) scale(${o.accessiblePlateScale})`), r.fov = o.fov, r.updateProjectionMatrix(), n.style.transform = `translateY(${o.canvasTranslateY}px)`
                   }
@@ -4013,7 +4054,7 @@
               }
             }), [V, se, f, Se.current]),
             st = (0, r.useCallback)((e => {
-              if (!V?.scene || !ze.current) return;
+              if (!V?.scene || !Ue.current) return;
               const {
                 dragParams: t,
                 offset: a,
@@ -4026,34 +4067,34 @@
               } = V, l = i.domElement, c = f?.[0]?.current;
               if (c)
                 if (t.dragging) {
-                  const e = (0, et.ii)(0, n, r.get()),
-                    i = (0, et.t7)(0, 1, 1 - e);
+                  const e = (0, at.ii)(0, n, r.get()),
+                    i = (0, at.t7)(0, 1, 1 - e);
                   l.style.opacity = i;
-                  const d = (0, et.t7)(0, 1, 1 - 3 * e);
+                  const d = (0, at.t7)(0, 1, 1 - 3 * e);
                   if (c.parentElement.style.opacity = d, De.current.style.opacity = i, Ve.current.querySelectorAll("button").forEach((e => {
                       e.style.pointerEvents = r.get() >= 0 ? "all" : "none"
                     })), De.current.style.transform = `translateY(${r.get()}px)`, a.current > 0 && Math.abs(t.delta[1]) > 0 && o && a.current < s) {
-                    const e = (0, et.ii)(0, s, r.get()),
+                    const e = (0, at.ii)(0, s, r.get()),
                       a = Oe.current ? 60 : 40,
-                      n = (0, et.t7)(ke.current, a, e);
+                      n = (0, at.t7)(ke.current, a, e);
                     o.fov = n, o.updateProjectionMatrix();
-                    const i = Number(N(l).y) + t.delta[1] / 2;
+                    const i = Number(I(l).y) + t.delta[1] / 2;
                     if (l.style.transform = `translateY(${i}px)`, c) {
-                      const e = N(c.parentElement),
+                      const e = I(c.parentElement),
                         a = Number(e.x),
                         r = Number(e.scale),
-                        n = Number(N(c.parentElement).y) + t.delta[1] / 2;
+                        n = Number(I(c.parentElement).y) + t.delta[1] / 2;
                       c.parentElement.style.transform = `translate(${a}px,\n                                ${n}px) scale(${r})`
                     }
                   }
                 } else {
-                  const e = Number(N(l).y),
+                  const e = Number(I(l).y),
                     t = {
                       buttonWrapOpacity: De.current.style.opacity,
                       canvasWrapOpacity: l.style.opacity,
                       fov: o.fov,
                       canvasTranslateY: e,
-                      accessibilityPlateY: Number(N(c.parentElement).y),
+                      accessibilityPlateY: Number(I(c.parentElement).y),
                       accessibilityPlateOpacity: c.parentElement.style.opacity
                     };
                   a.current < n / 2 ? (Ve.current.querySelectorAll("button").forEach((e => {
@@ -4063,8 +4104,8 @@
                     canvasWrapOpacity: 0,
                     accessibilityPlateOpacity: 0,
                     fov: Oe.current ? 60 : 40,
-                    duration: U.sidebar.mobile.drawerSnap.duration,
-                    ease: U.sidebar.mobile.drawerSnap.ease,
+                    duration: F.sidebar.mobile.drawerSnap.duration,
+                    ease: F.sidebar.mobile.drawerSnap.ease,
                     onUpdate: () => {
                       l.style.opacity = t.canvasWrapOpacity, c.parentElement.style.opacity = t.accessibilityPlateOpacity, De.current.style.opacity = t.buttonWrapOpacity
                     }
@@ -4076,8 +4117,8 @@
                     accessibilityPlateY: Number(Fe.current.y) + s / 2,
                     canvasTranslateY: Number(Se.current) + s / 2,
                     fov: Oe.current ? 60 : 40,
-                    duration: U.sidebar.mobile.drawerSnap.duration,
-                    ease: U.sidebar.mobile.drawerSnap.ease,
+                    duration: F.sidebar.mobile.drawerSnap.duration,
+                    ease: F.sidebar.mobile.drawerSnap.ease,
                     onUpdate: () => {
                       l.style.opacity = t.canvasWrapOpacity, De.current.style.opacity = t.buttonWrapOpacity, o.fov = t.fov, o.updateProjectionMatrix(), l.style.transform = `translateY(${t.canvasTranslateY}px)`, c.parentElement.style.transform = `translate(${Fe.current.x}px,\n                                ${t.accessibilityPlateY}px) scale(${Fe.current.scale})`
                     }
@@ -4090,12 +4131,12 @@
                     accessibilityPlateY: Number(Fe.current.y),
                     fov: ke.current,
                     canvasTranslateY: .4 * window.innerHeight / -2,
-                    duration: U.sidebar.mobile.drawerSnap.duration,
-                    ease: U.sidebar.mobile.drawerSnap.ease,
+                    duration: F.sidebar.mobile.drawerSnap.duration,
+                    ease: F.sidebar.mobile.drawerSnap.ease,
                     onUpdate: () => {
                       if (l.style.opacity = t.canvasWrapOpacity, De.current.style.opacity = t.buttonWrapOpacity, c.parentElement.style.opacity = t.accessibilityPlateOpacity, o.fov = t.fov, o.updateProjectionMatrix(), a.current > 0) {
                         l.style.transform = `translateY(${t.canvasTranslateY}px)`;
-                        const e = N(c.parentElement),
+                        const e = I(c.parentElement),
                           a = Number(e.x),
                           r = Number(e.scale),
                           n = t.accessibilityPlateY;
@@ -4104,7 +4145,7 @@
                     }
                   }))
                 }
-            }), [V, ze.current, se, f, Se.current, xe]),
+            }), [V, Ue.current, se, f, Se.current, xe]),
             ot = (0, r.useCallback)((function() {
               let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {
                 isResize: !1,
@@ -4124,15 +4165,15 @@
               o.traverse((e => {
                 e.material && (e.material.transparent = !0, e.material.mesh = e, "Banshee_Interior_LightMap" === e.material.name && (e.renderOrder = 99999), m.push(e.material))
               })), r.traverse((e => {
-                e.name === me.LP && 0 === e.userData.index && (u = e)
+                e.name === pe.LP && 0 === e.userData.index && (u = e)
               }));
               const p = new d.Vector3;
-              $e.current.getWorldPosition(p);
+              ze.current.getWorldPosition(p);
               const f = {
                 camPositionY: n.position.y,
                 camPositionZ: n.position.z,
                 controlsTargetZ: s.current.target.z,
-                plateRotationX: $e.current.rotation.x,
+                plateRotationX: ze.current.rotation.x,
                 light1Intensity: i.intensity,
                 light2Intensity: l.intensity,
                 light2PositionX: l.position.x,
@@ -4140,30 +4181,30 @@
                 light2PositionZ: l.position.z,
                 light3Intensity: c.intensity,
                 light3PositionX: c.position.x,
-                envMapIntensity: $e?.current?.material?.envMapIntensity
+                envMapIntensity: ze?.current?.material?.envMapIntensity
               };
               v().to(f, {
                 camPositionY: n.position.y + 2.5 * b,
                 camPositionZ: n.position.z + (E ? 24 * b : 12 * b),
                 controlsTargetZ: s.current.target.z - 5 * b,
                 plateRotationX: -.16,
-                light1Intensity: le,
+                light1Intensity: ce,
                 light2Intensity: .2,
-                light2PositionX: Q.x,
-                light2PositionY: Q.y,
-                light2PositionZ: Q.z,
-                light3Intensity: le,
-                light3PositionX: re.x,
+                light2PositionX: ee.x,
+                light2PositionY: ee.y,
+                light2PositionZ: ee.z,
+                light3Intensity: ce,
+                light3PositionX: ne.x,
                 delay: a,
-                envMapIntensity: de,
-                duration: t ? 0 : U.toggleView.camera.duration,
-                ease: U.toggleView.camera.ease,
+                envMapIntensity: ue,
+                duration: t ? 0 : F.toggleView.camera.duration,
+                ease: F.toggleView.camera.ease,
                 onStart: () => {
                   const e = E ? 52 * b : 26 * b;
-                  s.current.enableZoom = !0, s.current.maxPolarAngle = F.carView.maxPolarAngle, s.current.minPolarAngle = F.carView.minPolarAngle, s.current.maxAzimuthAngle = F.carView.maxAzimuthAngle, s.current.minAzimuthAngle = F.carView.minAzimuthAngle, s.current.maxDistance = e, o.visible = !0, M[B.TOGGLE_VIEW_BUTTON].current.style.pointerEvents = "none"
+                  s.current.enableZoom = !0, s.current.maxPolarAngle = G.carView.maxPolarAngle, s.current.minPolarAngle = G.carView.minPolarAngle, s.current.maxAzimuthAngle = G.carView.maxAzimuthAngle, s.current.minAzimuthAngle = G.carView.minAzimuthAngle, s.current.maxDistance = e, o.visible = !0, M[B.TOGGLE_VIEW_BUTTON].current.style.pointerEvents = "none"
                 },
                 onUpdate: () => {
-                  n.position.set(n.position.x, f.camPositionY, f.camPositionZ), s.current.target.z = f.controlsTargetZ, $e.current.rotation.x = f.plateRotationX, $e.current?.material && ($e.current.material.envMapIntensity = f.envMapIntensity), i.intensity = f.light1Intensity, l.intensity = f.light2Intensity, l.position.set(f.light2PositionX, f.light2PositionY, f.light2PositionZ), c.intensity = f.light3Intensity, c.position.x = f.light3PositionX
+                  n.position.set(n.position.x, f.camPositionY, f.camPositionZ), s.current.target.z = f.controlsTargetZ, ze.current.rotation.x = f.plateRotationX, ze.current?.material && (ze.current.material.envMapIntensity = f.envMapIntensity), i.intensity = f.light1Intensity, l.intensity = f.light2Intensity, l.position.set(f.light2PositionX, f.light2PositionY, f.light2PositionZ), c.intensity = f.light3Intensity, c.position.x = f.light3PositionX
                 },
                 onComplete: () => {
                   Te.current = !1, s.current.minDistance = E ? 20 * b : 10 * b, M[B.TOGGLE_VIEW_BUTTON].current.style.pointerEvents = "all"
@@ -4174,8 +4215,8 @@
               };
               v().to(g, {
                 opacity: 1,
-                duration: t ? 0 : U.toggleView.fadeOut.duration,
-                ease: U.toggleView.fadeOut.ease,
+                duration: t ? 0 : F.toggleView.fadeOut.duration,
+                ease: F.toggleView.fadeOut.ease,
                 delay: a,
                 onUpdate: () => {
                   m.forEach((e => {
@@ -4189,13 +4230,13 @@
                   u.material && (u.receiveShadow = !0, u.material.depthTest = !1, u.renderOrder = 99998)
                 }
               })
-            }), [V, Oe.current, $e, $e?.current, b, E, z, w]),
+            }), [V, Oe.current, ze, ze?.current, b, E, U, w]),
             it = (0, r.useCallback)((function() {
               let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {
                 delay: 0,
                 onComplete: null
               };
-              if (!V?.scene || !V?.controls?.current || !$e || !$e?.current || Te.current) return;
+              if (!V?.scene || !V?.controls?.current || !ze || !ze?.current || Te.current) return;
               const {
                 scene: t,
                 camera: a,
@@ -4207,8 +4248,8 @@
                     e.material && (e.material.transparent = !0, e.material.mesh = e, "Banshee_Interior_LightMap" === e.material.name && (e.renderOrder = 99999), t.push(e.material))
                   })), Oe.current) {
                   const n = new d.Vector3;
-                  if ($e.current.getWorldPosition(n), setTimeout((() => {
-                      $e.current.receiveShadow = !1, $e.current.material.depthTest = !1
+                  if (ze.current.getWorldPosition(n), setTimeout((() => {
+                      ze.current.receiveShadow = !1, ze.current.material.depthTest = !1
                     }), 400), !Te.current) {
                     const s = {
                       camPositionX: a.position.x,
@@ -4217,7 +4258,7 @@
                       controlsTargetX: r.current.target.x,
                       controlsTargetY: r.current.target.y,
                       controlsTargetZ: r.current.target.z,
-                      plateRotationX: $e.current.rotation.x,
+                      plateRotationX: ze.current.rotation.x,
                       light1Intensity: i.intensity,
                       light2Intensity: l.intensity,
                       light2PositionX: l.position.x,
@@ -4225,7 +4266,7 @@
                       light2PositionZ: l.position.z,
                       light3Intensity: c.intensity,
                       light3PositionX: c.position.x,
-                      envMapIntensity: $e?.current?.material?.envMapIntensity
+                      envMapIntensity: ze?.current?.material?.envMapIntensity
                     };
                     v().to(s, {
                       camPositionX: n.x,
@@ -4236,28 +4277,28 @@
                       controlsTargetZ: n.z,
                       plateRotationX: 0,
                       light1Intensity: 0,
-                      light2Intensity: le,
-                      light2PositionX: Z,
-                      light2PositionY: K,
-                      light2PositionZ: J,
-                      light3Intensity: le,
-                      light3PositionX: ee,
-                      envMapIntensity: ce,
-                      duration: U.toggleView.camera.duration,
-                      ease: U.toggleView.camera.ease,
+                      light2Intensity: ce,
+                      light2PositionX: K,
+                      light2PositionY: J,
+                      light2PositionZ: Q,
+                      light3Intensity: ce,
+                      light3PositionX: te,
+                      envMapIntensity: de,
+                      duration: F.toggleView.camera.duration,
+                      ease: F.toggleView.camera.ease,
                       onStart: () => {
                         r.current.minDistance = 2, r.current.enableZoom = !1, M[B.TOGGLE_VIEW_BUTTON].current.style.pointerEvents = "none";
                         const e = v().timeline({
-                          duration: E ? U.sidebar.mobile.drawer.duration : U.clickPlate.duration,
-                          ease: E ? U.sidebar.mobile.drawer.ease : U.clickPlate.ease
+                          duration: E ? F.sidebar.mobile.drawer.duration : F.clickPlate.duration,
+                          ease: E ? F.sidebar.mobile.drawer.ease : F.clickPlate.ease
                         });
                         rt(e, b)
                       },
                       onUpdate: () => {
-                        $e.current.rotation.x = s.plateRotationX, $e.current?.material && ($e.current.material.envMapIntensity = s.envMapIntensity), i.intensity = s.light1Intensity, l.intensity = s.light2Intensity, l.position.set(s.light2PositionX, s.light2PositionY, s.light2PositionZ), c.intensity = s.light3Intensity, c.position.x = s.light3PositionX
+                        ze.current.rotation.x = s.plateRotationX, ze.current?.material && (ze.current.material.envMapIntensity = s.envMapIntensity), i.intensity = s.light1Intensity, l.intensity = s.light2Intensity, l.position.set(s.light2PositionX, s.light2PositionY, s.light2PositionZ), c.intensity = s.light3Intensity, c.position.x = s.light3PositionX
                       },
                       onComplete: () => {
-                        Te.current = !1, o.visible = !1, r.current.maxPolarAngle = F.plateView.maxPolarAngle, r.current.minPolarAngle = F.plateView.minPolarAngle, r.current.maxAzimuthAngle = F.plateView.maxAzimuthAngle, r.current.minAzimuthAngle = F.plateView.minAzimuthAngle, M[B.TOGGLE_VIEW_BUTTON].current.style.pointerEvents = "all", e.onComplete && e.onComplete()
+                        Te.current = !1, o.visible = !1, r.current.maxPolarAngle = G.plateView.maxPolarAngle, r.current.minPolarAngle = G.plateView.minPolarAngle, r.current.maxAzimuthAngle = G.plateView.maxAzimuthAngle, r.current.minAzimuthAngle = G.plateView.minAzimuthAngle, M[B.TOGGLE_VIEW_BUTTON].current.style.pointerEvents = "all", e.onComplete && e.onComplete()
                       }
                     });
                     const d = {
@@ -4265,8 +4306,8 @@
                     };
                     v().to(d, {
                       opacity: 0,
-                      duration: U.toggleView.fadeOut.duration,
-                      ease: U.toggleView.fadeOut.ease,
+                      duration: F.toggleView.fadeOut.duration,
+                      ease: F.toggleView.fadeOut.ease,
                       onUpdate: () => {
                         t.forEach((e => {
                           e.opacity = d.opacity
@@ -4274,16 +4315,16 @@
                       }
                     })
                   }
-                } else Te.current || (z && n(!1), ot({
+                } else Te.current || (U && n(!1), ot({
                   isResize: !1,
                   onComplete: null,
                   delay: s
                 }));
                 Oe.current = !Oe.current
               }
-            }), [V, Oe.current, $e, $e?.current, b, z, w]),
+            }), [V, Oe.current, ze, ze?.current, b, U, w]),
             lt = (0, r.useCallback)((e => {
-              if (!V?.scene || !ze?.current || !De.current) return;
+              if (!V?.scene || !Ue?.current || !De.current) return;
               const t = M[B.UI]?.current;
               if (t) {
                 const {
@@ -4304,18 +4345,18 @@
                   height: i,
                   mobileSidebarHeight: .4 * window.innerHeight,
                   fov: ke.current,
-                  submitOrderTranslateY: ze.current.offsetHeight,
-                  duration: U.sidebar.mobile.drawer.duration,
-                  ease: U.sidebar.mobile.drawer.ease,
+                  submitOrderTranslateY: Ue.current.offsetHeight,
+                  duration: F.sidebar.mobile.drawer.duration,
+                  ease: F.sidebar.mobile.drawer.ease,
                   onUpdate: () => {
-                    o.current.style.transform = `translateY(${l.mobileSidebarHeight}px)`, o.current.style.opacity = l.opacity, ze.current.style.transform = `translateY(${l.submitOrderTranslateY}px)`, De.current.style.opacity = l.opacity, n.style.height = l.height, s.set(l.mobileSidebarHeight), a && (a.fov = l.fov, a.updateProjectionMatrix())
+                    o.current.style.transform = `translateY(${l.mobileSidebarHeight}px)`, o.current.style.opacity = l.opacity, Ue.current.style.transform = `translateY(${l.submitOrderTranslateY}px)`, De.current.style.opacity = l.opacity, n.style.height = l.height, s.set(l.mobileSidebarHeight), a && (a.fov = l.fov, a.updateProjectionMatrix())
                   },
                   onComplete: () => {
                     n.style.pointerEvents = "all"
                   }
                 }), o.current.style.pointerEvents = "none"
               }
-            }), [M, Me?.current, ze?.current, V, se]),
+            }), [M, Me?.current, Ue?.current, V, se]),
             ct = e => {
               if (!V?.scene) return;
               const {
@@ -4324,11 +4365,11 @@
                 y: r
               } = e, {
                 sidebar: n
-              } = U, {
+              } = F, {
                 duration: s,
                 ease: o
               } = n.mobile.drawer;
-              ye(r), Ee.current = r, t.current.style.pointerEvents = "all";
+              he(r), Ee.current = r, t.current.style.pointerEvents = "all";
               const i = {
                 mobileSidebarHeight: .4 * window.innerHeight,
                 opacity: t.current.style.opacity
@@ -4346,14 +4387,14 @@
               const {
                 isValid: e,
                 statusPlateNumberBasis: a
-              } = j, r = ae ? (0, Ke.jsx)(y.LoadingAnimation, {}) : t("lp.create.next");
-              return (0, Ke.jsx)(Ct, {
+              } = j, r = ae ? (0, Qe.jsx)(h.LoadingAnimation, {}) : t("lp.create.next");
+              return (0, Qe.jsx)(jt, {
                 buttons: [{
                   buttonText: p ? r : t("lp.create.signin"),
                   isDisabled: !!p && (ae || !L || !e && L === a),
                   onClick: async () => {
-                    Ae?.current?.(), p || (He({
-                      ...Ue,
+                    Ae?.current?.(), p || ($e({
+                      ...He,
                       event: "cta_login",
                       event_category: "cta",
                       event_action: "login",
@@ -4364,78 +4405,78 @@
                   }
                 }],
                 isLoading: ae,
-                isVisible: [ue.NEW_PLATE, ue.CONFIRM_ORDER].includes(g),
-                tabIndex: g === ue.NEW_PLATE ? 0 : -1
+                isVisible: [me.NEW_PLATE, me.CONFIRM_ORDER].includes(g),
+                tabIndex: g === me.NEW_PLATE ? 0 : -1
               })
             }), [L, g, p, q, j, Ae.current, ae]),
             ut = (0, r.useCallback)((() => {
               u(!_)
             }), [_]),
-            mt = (0, r.useMemo)((() => E ? (0, Ke.jsxs)(xt, {
-              bottom: G,
+            mt = (0, r.useMemo)((() => E ? (0, Qe.jsxs)(Et, {
+              bottom: $,
               isVisible: q,
               onDrag: st,
               onHide: lt,
               onShow: ct,
               onTap: nt,
-              top: pe,
+              top: ie,
               drawerY: be,
               mobileSidebarHeight: se,
-              children: [(0, Ke.jsx)(At, {
+              children: [(0, Qe.jsx)(Lt, {
                 validateFnRef: Ae,
-                setIsLoading: ne
-              }), (0, Ke.jsx)(Wt, {
-                top: pe,
+                setIsLoading: re
+              }), (0, Qe.jsx)(Bt, {
+                top: ie,
                 drawerY: be
               })]
-            }) : (0, Ke.jsxs)("div", {
+            }) : (0, Qe.jsxs)("div", {
               ref: Me,
               className: "rockstargames-modules-gtao-license-plateb1a08a76cb74203a9c8e97f759697f47",
-              children: [(0, Ke.jsx)("hr", {
+              children: [(0, Qe.jsx)("hr", {
                 className: "rockstargames-modules-gtao-license-platefb62db34cd26ac9882218fa9e8c572d0",
                 onClick: () => {
                   ut()
                 },
                 "aria-hidden": "true"
-              }), (0, Ke.jsx)(At, {
+              }), (0, Qe.jsx)(Lt, {
                 validateFnRef: Ae,
-                setIsLoading: ne
+                setIsLoading: re
               }), dt]
-            })), [L, G, _, E, q, Ee.current, Me.current, pe, be, ae, se]);
-          return (0, Ke.jsxs)("div", {
+            })), [L, $, _, E, q, Ee.current, Me.current, ie, be, ae, se]);
+          return (0, Qe.jsxs)("div", {
             ref: Ye,
             className: "rockstargames-modules-gtao-license-platee14286ef5f5dc6a8ca6bf6ce3ffb02be",
-            children: [mt, (0, Ke.jsxs)("div", {
+            children: [mt, (0, Qe.jsxs)("div", {
               ref: Ve,
               className: "rockstargames-modules-gtao-license-plateb2352c29df7ddb34a50813fe7bc95c6e",
-              children: [(0, Ke.jsx)(wt, {
+              children: [(0, Qe.jsx)(Pt, {
                 onClick: () => {
-                  Te.current || Qe({
+                  Te.current || Ke({
                     onComplete: () => {
-                      ve(!1), i(ue.LIST_PLATES)
+                      ve(!1), i(me.LIST_PLATES)
                     }
                   })
                 }
-              }), (0, Ke.jsxs)(ht.animated.div, {
+              }), (0, Qe.jsxs)(xt.animated.div, {
                 ref: De,
                 className: "rockstargames-modules-gtao-license-plateb7250523e6ae363c8f2aee0651a92b46",
                 style: be ? {
                   y: be
                 } : void 0,
-                children: [(0, Ke.jsx)(Mt, {
+                children: [(0, Qe.jsx)(Dt, {
                   is3DToggle: !0,
                   onToggleView: () => {
-                    Re.current || Te.current || (Oe.current && !z ? it({
+                    Re.current || Te.current || (Oe.current && !U ? it({
                       onComplete: () => {
-                        n(!z), Ie(!1)
+                        n(!U), Ne(!1)
                       }
-                    }) : n(!z), Re.current = !0)
+                    }) : n(!U), Re.current = !0)
                   }
-                }), (0, Ke.jsx)(Mt, {
+                }), (0, Qe.jsx)(Dt, {
                   is3DToggle: !1,
                   onToggleView: e => {
                     if (!Te.current && !Re.current) {
-                      const t = E ? U.sidebar.mobile.drawer.duration : U.clickPlate.duration,
+                      const t = E ? F.sidebar.mobile.drawer.duration : F.clickPlate.duration,
                         a = w ? 0 : t;
                       "function" == typeof e?.onStart && e.onStart(), it({
                         delay: a
@@ -4444,20 +4485,20 @@
                   }
                 })]
               })]
-            }), (0, Ke.jsxs)("div", {
+            }), (0, Qe.jsxs)("div", {
               ref: Be,
               className: "rockstargames-modules-gtao-license-platee615f2b03c1f76d06a2862cb3aab1afd",
-              children: [E && dt, E && (0, Ke.jsx)("div", {
+              children: [E && dt, E && (0, Qe.jsx)("div", {
                 className: "rockstargames-modules-gtao-license-platea37b793effdd9688699a77ea3bd02976",
                 ref: We
               })]
             })]
           })
         })),
-        Ht = "rockstargames-modules-gtao-license-plateba2215c87866e0b4c5739e49512b96ef",
-        Ut = "rockstargames-modules-gtao-license-plateb05e3890eab129885f9a617d22a4bdda",
-        Ft = "rockstargames-modules-gtao-license-platefd6b39e70965987eb91338b9ab71ef06",
-        Gt = (0, l.withTranslations)((e => {
+        Ft = "rockstargames-modules-gtao-license-plateba2215c87866e0b4c5739e49512b96ef",
+        Gt = "rockstargames-modules-gtao-license-plateb05e3890eab129885f9a617d22a4bdda",
+        Xt = "rockstargames-modules-gtao-license-platefd6b39e70965987eb91338b9ab71ef06",
+        qt = (0, l.withTranslations)((e => {
           let {
             t
           } = e;
@@ -4466,7 +4507,7 @@
           } = (0, o.useRockstarUser)(), {
             setRefs: n,
             state: s
-          } = Ze(), {
+          } = Je(), {
             plates: i,
             isMobile: l
           } = s, c = (0, r.useRef)(null), d = (0, r.useRef)(null), u = (0, r.useRef)(null);
@@ -4476,48 +4517,48 @@
             n(B.PLATE_COUNT, u)
           }), [u.current, l]), (0, r.useEffect)((() => {
             n(B.SIDEBAR_BUTTONS_LOADING_ANIMATION, d)
-          }), [d.current]), (0, Ke.jsxs)("div", {
+          }), [d.current]), (0, Qe.jsxs)("div", {
             id: "list-plates-sidebar",
             ref: c,
             className: "rockstargames-modules-gtao-license-platef5e31de74db53bedd63dace5d7038d67",
-            children: [(0, Ke.jsx)("div", {
+            children: [(0, Qe.jsx)("div", {
               className: "rockstargames-modules-gtao-license-platedf5d7bc0760f699d1c8e26596267b7c0",
-              children: (0, Ke.jsx)(Et, {})
-            }), (0, Ke.jsxs)("div", {
+              children: (0, Qe.jsx)(St, {})
+            }), (0, Qe.jsxs)("div", {
               className: "rockstargames-modules-gtao-license-platec3b30bed11d2e7b8ce600fbbd7629875",
-              children: [(0, Ke.jsxs)("div", {
+              children: [(0, Qe.jsxs)("div", {
                 className: "rockstargames-modules-gtao-license-platec4382993beb9898b4d04eff6d21944bb",
-                children: [(0, Ke.jsx)("h1", {
+                children: [(0, Qe.jsx)("h1", {
                   className: "rockstargames-modules-gtao-license-platee753118af7cef32ddccb849c5845a1d9",
                   children: t("lp.landing.title")
-                }), (0, Ke.jsx)("p", {
+                }), (0, Qe.jsx)("p", {
                   className: "rockstargames-modules-gtao-license-plateb7f49651a3bab5cb72869a16d60c64ee",
                   children: t("lp.landing.description")
-                }), (0, Ke.jsx)("div", {
+                }), (0, Qe.jsx)("div", {
                   className: "rockstargames-modules-gtao-license-plateb120b933ab5873984ca4626fc8b326c4",
-                  children: (0, Ke.jsxs)("div", {
-                    children: [" ", t("lp.landing.helper.intro"), (0, Ke.jsx)("a", {
+                  children: (0, Qe.jsxs)("div", {
+                    children: [" ", t("lp.landing.helper.intro"), (0, Qe.jsx)("a", {
                       target: "_blank",
                       href: "https://support.rockstargames.com/articles/15666547278355",
                       children: t("lp.landing.helper.link")
                     })]
                   })
                 })]
-              }), a && (0, Ke.jsxs)("div", {
+              }), a && (0, Qe.jsxs)("div", {
                 className: "rockstargames-modules-gtao-license-platee0dd0de0d13ab389fbd3ac25184c0557",
-                children: [(0, Ke.jsx)("h5", {
+                children: [(0, Qe.jsx)("h5", {
                   children: t("lp.landing.plates")
-                }), (0, Ke.jsxs)("span", {
+                }), (0, Qe.jsxs)("span", {
                   className: "rockstargames-modules-gtao-license-platea85e818dc3383486634bd7d437612039",
-                  children: [(0, Ke.jsxs)("span", {
+                  children: [(0, Qe.jsxs)("span", {
                     className: "rockstargames-modules-gtao-license-platec3fb0b6e4481dc788c19f32e1d57155a",
-                    children: [(0, Ke.jsx)("span", {
+                    children: [(0, Qe.jsx)("span", {
                       ref: d,
                       className: "rockstargames-modules-gtao-license-platee671a67ec4f57b3d0b0d69daf8181d6b",
-                      children: (0, Ke.jsx)(y.LoadingAnimation, {
+                      children: (0, Qe.jsx)(h.LoadingAnimation, {
                         type: "THREE_DOTS"
                       })
-                    }), (0, Ke.jsx)("span", {
+                    }), (0, Qe.jsx)("span", {
                       ref: u,
                       className: "rockstargames-modules-gtao-license-plateb57f68949c7a8c6412a10113788f02d1",
                       children: i?.filter((e => {
@@ -4527,9 +4568,9 @@
                         return !t
                       }))?.length ?? 0
                     })]
-                  }), (0, Ke.jsx)("span", {
+                  }), (0, Qe.jsx)("span", {
                     className: "rockstargames-modules-gtao-license-plated92b79d7b5b7acd43b97aea1fa09f53d"
-                  }), (0, Ke.jsx)("span", {
+                  }), (0, Qe.jsx)("span", {
                     className: "rockstargames-modules-gtao-license-platedd3a0c1fa96710ebf11322ea3d496dc7",
                     children: "owned plates out of a maximum of"
                   }), 30]
@@ -4538,13 +4579,13 @@
             })]
           })
         })),
-        Xt = "rockstargames-modules-gtao-license-plateef5ba014e1e3a01aa5c8e25fa6540276",
+        Zt = "rockstargames-modules-gtao-license-plateef5ba014e1e3a01aa5c8e25fa6540276",
         {
-          lerp: qt
+          lerp: Kt
         } = d.MathUtils,
-        Zt = "visible";
-      let Kt, Jt = !1;
-      const Qt = () => {
+        Jt = "visible";
+      let Qt, ea = !1;
+      const ta = () => {
           const {
             state: e,
             setShouldRenderScene: t,
@@ -4552,7 +4593,7 @@
             setAccessiblePlates: n,
             setDeletedPlateIndex: s,
             setPlates: i
-          } = Ze(), {
+          } = Je(), {
             accessiblePlates: l,
             pendingOrder: c,
             currentPlateIndex: u,
@@ -4561,19 +4602,19 @@
             three: f,
             isMobile: g,
             isLoading: b,
-            refs: y,
-            gridScale: h,
+            refs: h,
+            gridScale: y,
             deletedPlateIndex: x,
             plates: w
           } = e, {
             loggedIn: E
           } = (0, o.useRockstarUser)(), {
             selectedCharacterTuple: P
-          } = (0, o.useRockstarUserState)(), S = (0, r.useRef)(null), [_, k] = (0, r.useState)(m === ue.LIST_PLATES), T = y?.[B.MOBILE_SIDEBAR_PORTAL_TARGET]?.current;
+          } = (0, o.useRockstarUserState)(), S = (0, r.useRef)(null), [_, k] = (0, r.useState)(m === me.LIST_PLATES), T = h?.[B.MOBILE_SIDEBAR_PORTAL_TARGET]?.current;
           (0, r.useEffect)((() => {
-            Kt && (Kt.pause(), Kt = null), Jt = !1
+            Qt && (Qt.pause(), Qt = null), ea = !1
           }), [P]), (0, r.useEffect)((() => {
-            k(m === ue.LIST_PLATES)
+            k(m === me.LIST_PLATES)
           }), [m]);
           const R = (0, r.useCallback)((e => {
             if (!f) return;
@@ -4582,20 +4623,20 @@
               controls: o,
               originalCameraPosition: m,
               originalControlsTarget: p,
-              renderer: h,
+              renderer: y,
               scene: P
             } = f, {
               clickPlate: _,
               sidebar: k,
               deletePlate: R
-            } = U, I = y[B.FOOTER].current, O = y[B.SIDEBAR].current, A = y[B.LOADING_SCREEN].current, C = y[B.SIDEBAR_BUTTONS_LOADING_ANIMATION].current, L = y[B.PLATE_COUNT].current, j = l?.[u]?.current || null, M = l?.[0]?.current || null, V = y[B.CTA_SHADER]?.current || null, D = [];
+            } = F, N = h[B.FOOTER].current, O = h[B.SIDEBAR].current, A = h[B.LOADING_SCREEN].current, C = h[B.SIDEBAR_BUTTONS_LOADING_ANIMATION].current, L = h[B.PLATE_COUNT].current, j = l?.[u]?.current || null, M = l?.[0]?.current || null, V = h[B.CTA_SHADER]?.current || null, D = [];
             switch (P.traverse((e => {
-                e.name === me.LP && D.push(e)
-              })), Kt = v().timeline({
+                e.name === pe.LP && D.push(e)
+              })), Qt = v().timeline({
                 duration: g ? k.mobile.drawer.duration : _.duration,
                 ease: g ? k.mobile.drawer.ease : _.ease
               }), e) {
-              case Zt: {
+              case Jt: {
                 if (!o.current || l.filter((e => null === e.current)).length > 0 || !M || !V) return;
                 const e = {
                     current: 0
@@ -4626,12 +4667,12 @@
                       end: .2
                     },
                     canvasTranslateY: {
-                      start: Number(N(h.domElement).y),
+                      start: Number(I(y.domElement).y),
                       end: 0
                     },
-                    canvasWidth: h.domElement.offsetWidth,
+                    canvasWidth: y.domElement.offsetWidth,
                     drawerHeight: {
-                      start: Number(N(S.current).y),
+                      start: Number(I(S.current).y),
                       end: 0
                     },
                     ctaShaderOpacity: {
@@ -4641,9 +4682,9 @@
                   };
                 j?.parentElement && (u.currentAccessibilityPlateTransform = {
                   start: {
-                    x: Number(N(j.parentElement).x),
-                    y: Number(N(j.parentElement).y),
-                    scale: Number(N(j.parentElement).scale)
+                    x: Number(I(j.parentElement).x),
+                    y: Number(I(j.parentElement).y),
+                    scale: Number(I(j.parentElement).scale)
                   },
                   end: {
                     x: 0,
@@ -4652,21 +4693,21 @@
                   }
                 });
                 const f = M.querySelector("canvas");
-                if (Kt.to(e, {
+                if (Qt.to(e, {
                     current: 1,
                     duration: g ? k.mobile.drawer.duration : _.duration,
                     ease: g ? k.mobile.drawer.ease : _.ease,
                     onComplete: () => {
-                      g && (h.domElement.style.touchAction = "auto"), t(!1);
+                      g && (y.domElement.style.touchAction = "auto"), t(!1);
                       const e = P.getObjectByName("Light4");
                       v().to(e.position, {
-                        x: ne - 20,
-                        y: se,
-                        z: oe
+                        x: se - 20,
+                        y: oe,
+                        z: ie
                       })
                     },
                     onStart: () => {
-                      e.current = 0, O && (O.style.pointerEvents = "all"), h.render(P, r), a(!0)
+                      e.current = 0, O && (O.style.pointerEvents = "all"), y.render(P, r), a(!0)
                     },
                     onUpdate: () => {
                       const {
@@ -4674,43 +4715,43 @@
                       } = e, a = u.cameraPosition.start.clone().lerp(u.cameraPosition.end, t);
                       r.position.set(a.x, a.y, a.z);
                       const n = u.controlsTarget.start.clone().lerp(u.controlsTarget.end, t);
-                      if (o.current.target.x = n.x, o.current.target.y = n.y, o.current.target.z = n.z, j && j.parentElement?.classList?.contains(Ht)) {
-                        const e = qt(u.currentAccessibilityPlateTransform.start.x, u.currentAccessibilityPlateTransform.end.x, t),
-                          a = qt(u.currentAccessibilityPlateTransform.start.y, u.currentAccessibilityPlateTransform.end.y, t),
-                          r = qt(u.currentAccessibilityPlateTransform.start.scale, u.currentAccessibilityPlateTransform.end.scale, t);
+                      if (o.current.target.x = n.x, o.current.target.y = n.y, o.current.target.z = n.z, j && j.parentElement?.classList?.contains(Ft)) {
+                        const e = Kt(u.currentAccessibilityPlateTransform.start.x, u.currentAccessibilityPlateTransform.end.x, t),
+                          a = Kt(u.currentAccessibilityPlateTransform.start.y, u.currentAccessibilityPlateTransform.end.y, t),
+                          r = Kt(u.currentAccessibilityPlateTransform.start.scale, u.currentAccessibilityPlateTransform.end.scale, t);
                         j.parentElement.style.transform = `translate(${e}px,\n                            ${a}px) scale(${r})`
                       }
-                      const s = qt(u.firstPlateSaturation.start, u.firstPlateSaturation.end, t);
+                      const s = Kt(u.firstPlateSaturation.start, u.firstPlateSaturation.end, t);
                       if (H.saturation.value = s, E && !c && f) {
-                        const e = qt(u.firstPlateOpacity.start, u.firstPlateOpacity.end, t),
+                        const e = Kt(u.firstPlateOpacity.start, u.firstPlateOpacity.end, t),
                           a = !!c;
                         f.style.filter = `saturate(${s})${!a&&` opacity(${e})`}`
                       }
                       if (V) {
-                        const e = qt(u.ctaShaderOpacity.start, u.ctaShaderOpacity.end, t);
+                        const e = Kt(u.ctaShaderOpacity.start, u.ctaShaderOpacity.end, t);
                         V.style.opacity = e
                       }
                       if (g) {
-                        const e = qt(u.canvasTranslateY.start, u.canvasTranslateY.end, t);
-                        if (h.domElement.style.transform = `translateY(${e}px)`, S.current) {
-                          const e = qt(u.drawerHeight.start, u.drawerHeight.end, t);
+                        const e = Kt(u.canvasTranslateY.start, u.canvasTranslateY.end, t);
+                        if (y.domElement.style.transform = `translateY(${e}px)`, S.current) {
+                          const e = Kt(u.drawerHeight.start, u.drawerHeight.end, t);
                           S.current.style.transform = `translateY(${e}px)`
                         }
                       }
                     }
-                  }, 0), (l.length === w.length && l?.[0]?.current || E && !b && l[0].current && l?.filter((e => e?.current)).length === w.length && 0 !== w.length && 0 !== l.length) && !Jt) {
+                  }, 0), (l.length === w.length && l?.[0]?.current || E && !b && l[0].current && l?.filter((e => e?.current)).length === w.length && 0 !== w.length && 0 !== l.length) && !ea) {
                   const e = {
                     current: 0
                   };
-                  Jt = !0, Kt.to(e, {
+                  ea = !0, Qt.to(e, {
                     current: 1,
-                    duration: g ? U.sidebar.mobile.drawer.duration : U.clickPlate.duration,
-                    ease: g ? U.sidebar.mobile.drawer.ease : U.clickPlate.ease,
+                    duration: g ? F.sidebar.mobile.drawer.duration : F.clickPlate.duration,
+                    ease: g ? F.sidebar.mobile.drawer.ease : F.clickPlate.ease,
                     onStart: () => {
-                      Jt = !0
+                      ea = !0
                     },
                     onComplete: () => {
-                      Jt = !1
+                      ea = !1
                     },
                     onUpdate: () => {
                       const {
@@ -4718,11 +4759,11 @@
                       } = e;
                       l.forEach(((e, a) => {
                         if (e.current && u.accessiblePlateOpacity[a]) {
-                          const r = qt(u.accessiblePlateOpacity[a].start, u.accessiblePlateOpacity[a].end, 2.5 * (t - .6));
+                          const r = Kt(u.accessiblePlateOpacity[a].start, u.accessiblePlateOpacity[a].end, 2.5 * (t - .6));
                           e.current.style.opacity = r
                         }
                         if (D[a] && D[a].material) {
-                          const e = qt(u.plateOpacity[a].start, u.plateOpacity[a].end, t);
+                          const e = Kt(u.plateOpacity[a].start, u.plateOpacity[a].end, t);
                           D[a].material.opacity = e
                         }
                       }))
@@ -4737,12 +4778,12 @@
                       a = {
                         current: 0
                       };
-                    Kt.to(a, {
+                    Qt.to(a, {
                       current: 1,
-                      duration: g ? U.sidebar.mobile.drawer.duration : U.clickPlate.duration,
-                      ease: g ? U.sidebar.mobile.drawer.ease : U.clickPlate.ease,
+                      duration: g ? F.sidebar.mobile.drawer.duration : F.clickPlate.duration,
+                      ease: g ? F.sidebar.mobile.drawer.ease : F.clickPlate.ease,
                       onUpdate: () => {
-                        const t = qt(e.start, e.end, a.current);
+                        const t = Kt(e.start, e.end, a.current);
                         l[0].current.parentElement.style.opacity = t
                       }
                     }, "<")
@@ -4765,14 +4806,14 @@
                           end: 0
                         }
                       };
-                    Kt.to(a, {
+                    Qt.to(a, {
                       current: 1,
                       duration: R.duration,
                       ease: R.ease,
                       onUpdate: () => {
                         const {
                           current: n
-                        } = a, s = qt(r.plateOpacity.start, r.plateOpacity.end, n), o = qt(r.accessiblePlateOpacity.start, r.accessiblePlateOpacity.end, n);
+                        } = a, s = Kt(r.plateOpacity.start, r.plateOpacity.end, n), o = Kt(r.accessiblePlateOpacity.start, r.accessiblePlateOpacity.end, n);
                         e?.material && (e.material.opacity = s), t.style.opacity = o
                       }
                     }, ">");
@@ -4792,7 +4833,7 @@
                         x: c[Math.max(t - 1, 0)].x - c[t].x,
                         y: c[Math.max(t - 1, 0)].y - c[t].y
                       })));
-                    Kt.to(o.slice(1), {
+                    Qt.to(o.slice(1), {
                       x: e => d[e].x,
                       y: e => d[e].y,
                       z: e => d[e].z,
@@ -4809,7 +4850,7 @@
                         y: 0
                       })));
                     p.forEach(((e, t) => {
-                      Kt.to(e, {
+                      Qt.to(e, {
                         x: u[t].x,
                         y: u[t].y,
                         duration: R.duration,
@@ -4833,18 +4874,18 @@
                     }))
                   }
                 }
-                Kt.to(I, {
+                Qt.to(N, {
                   autoAlpha: 1,
                   duration: g ? k.mobile.footer.in.duration : k.in.duration,
                   ease: g ? k.mobile.footer.in.ease : k.in.ease,
                   delay: g ? k.mobile.footer.in.delay : k.in.delay
-                }, 0), Kt.to(O, {
+                }, 0), Qt.to(O, {
                   autoAlpha: 1,
                   duration: g ? k.mobile.fadeHeader.in.duration : k.in.duration,
                   ease: g ? k.mobile.fadeHeader.in.ease : k.in.ease,
                   delay: g ? k.mobile.fadeHeader.in.delay : k.in.delay,
                   onStart: () => {
-                    A && (b ? (A.classList.add(Xt), C && C.classList.add(Ut), L && L.classList.remove(Ft)) : (A.classList.remove(Xt), C && C.classList.remove(Ut), L && L.classList.add(Ft)))
+                    A && (b ? (A.classList.add(Zt), C && C.classList.add(Gt), L && L.classList.remove(Xt)) : (A.classList.remove(Zt), C && C.classList.remove(Gt), L && L.classList.add(Xt)))
                   }
                 }, 0), g && (T && v().set(T.style, {
                   visibility: "visible"
@@ -4852,7 +4893,7 @@
                 break
               }
               default:
-                if (v().to(I, {
+                if (v().to(N, {
                     autoAlpha: 0,
                     duration: g ? k.mobile.footer.out.duration : k.out.duration,
                     ease: g ? k.mobile.footer.out.ease : k.out.ease
@@ -4860,7 +4901,7 @@
                     visibility: "hidden"
                   }), O && (O.style.pointerEvents = "none"), g) {
                   const e = {
-                    current: N(O).y
+                    current: I(O).y
                   };
                   v().to(O, {
                     opacity: 0,
@@ -4881,16 +4922,16 @@
                   delay: k.out.delay
                 })
             }
-          }), [l, u, x, p, f, b, c, E, g, y, h, Jt]);
+          }), [l, u, x, p, f, b, c, E, g, h, y, ea]);
           return (0, r.useEffect)((() => {
-            y && y?.[B.FOOTER]?.current && y?.[B.SIDEBAR]?.current && y?.[B.UI]?.current && y?.[B.LOADING_SCREEN]?.current && S.current && f?.scene && f?.controls && R(_ ? Zt : "hidden")
-          }), [y, _, S.current, p, f, g, b, y?.[B.FOOTER]?.current, y?.[B.SIDEBAR]?.current]), (0, Ke.jsx)("div", {
+            h && h?.[B.FOOTER]?.current && h?.[B.SIDEBAR]?.current && h?.[B.UI]?.current && h?.[B.LOADING_SCREEN]?.current && S.current && f?.scene && f?.controls && R(_ ? Jt : "hidden")
+          }), [h, _, S.current, p, f, g, b, h?.[B.FOOTER]?.current, h?.[B.SIDEBAR]?.current]), (0, Qe.jsx)("div", {
             ref: S,
             className: "rockstargames-modules-gtao-license-plateaa4cb56d97a9d885e644c0af2b3e81ce",
-            children: (0, Ke.jsx)(Gt, {})
+            children: (0, Qe.jsx)(qt, {})
           })
         },
-        ea = e => {
+        aa = e => {
           let {
             isMobile: t
           } = e;
@@ -4899,7 +4940,7 @@
           } = (0, o.useRockstarUser)(), {
             setRefs: n,
             state: s
-          } = Ze(), {
+          } = Je(), {
             plates: i,
             refs: l
           } = s, c = (0, r.useRef)(null), d = l[B.MOBILE_SIDEBAR_PORTAL_TARGET]?.current;
@@ -4907,13 +4948,13 @@
               n(B.UI, c)
             }), [c.current]), !i) return null;
           let u;
-          return t && (u = d ? (0, yt.createPortal)((0, Ke.jsx)(Qt, {}), d) : null), (0, Ke.jsxs)("div", {
+          return t && (u = d ? (0, vt.createPortal)((0, Qe.jsx)(ta, {}), d) : null), (0, Qe.jsxs)("div", {
             ref: c,
             className: "rockstargames-modules-gtao-license-plated1beae8d7c28603a3bdf0a34ca457352",
-            children: [a && !t && (0, Ke.jsx)(Wt, {}), t ? u : (0, Ke.jsx)(Qt, {}), a && (0, Ke.jsx)(Rt, {}), (0, Ke.jsx)(zt, {})]
+            children: [a && !t && (0, Qe.jsx)(Bt, {}), t ? u : (0, Qe.jsx)(ta, {}), a && (0, Qe.jsx)(Nt, {}), (0, Qe.jsx)(Ht, {})]
           })
         },
-        ta = e => {
+        ra = e => {
           let {
             t
           } = e;
@@ -4926,7 +4967,7 @@
                 error: n,
                 isMobile: s
               }
-            } = Ze(),
+            } = Je(),
             [i, l] = (0, r.useState)(null),
             [c, d] = (0, r.useState)(null),
             u = {
@@ -4968,44 +5009,44 @@
               event: "trackPageview",
               display_type: s ? "mobile" : "desktop"
             })
-          }), []), i ? (0, Ke.jsxs)("div", {
+          }), []), i ? (0, Qe.jsxs)("div", {
             className: "rockstargames-modules-gtao-license-platee268c88b0ad13ec9b70662c1cd3ed9a6",
-            children: [(0, Ke.jsxs)("div", {
+            children: [(0, Qe.jsxs)("div", {
               className: "rockstargames-modules-gtao-license-platea62175a9470bdefca29061355225053b",
-              children: [(0, Ke.jsxs)("div", {
+              children: [(0, Qe.jsxs)("div", {
                 className: "rockstargames-modules-gtao-license-plateff9acc08c36ee5477bfa008495fe1016",
-                children: [(0, Ke.jsx)("i", {}), (0, Ke.jsx)("h4", {
+                children: [(0, Qe.jsx)("i", {}), (0, Qe.jsx)("h4", {
                   children: u[i] || t("lp.error.unexpected.description")
-                }), c?.code && (0, Ke.jsxs)("div", {
+                }), c?.code && (0, Qe.jsxs)("div", {
                   className: "rockstargames-modules-gtao-license-platecbb8e56d4071adb16682a06f7d167c4b",
-                  children: [(0, Ke.jsx)("p", {
+                  children: [(0, Qe.jsx)("p", {
                     children: `Code: ${c.code}`
-                  }), c?.logId && (0, Ke.jsx)("p", {
+                  }), c?.logId && (0, Qe.jsx)("p", {
                     children: `LogID: ${c?.logId}`
                   })]
                 })]
-              }), (0, Ke.jsx)(m.NavLink, {
+              }), (0, Qe.jsx)(m.NavLink, {
                 to: "character" !== i ? "/gta-online" : "https://socialclub.rockstargames.com/settings/linkedaccounts",
-                children: (0, Ke.jsx)("button", {
+                children: (0, Qe.jsx)("button", {
                   className: "rockstargames-modules-gtao-license-platebee018ef543141528e263e23cd43ae1e",
                   type: "button",
                   tabIndex: 0,
-                  children: (0, Ke.jsx)("span", {
+                  children: (0, Qe.jsx)("span", {
                     className: "rockstargames-modules-gtao-license-platee346703179f552bd647459ea2eee8aca",
                     children: p[i]
                   })
                 })
               })]
-            }), (0, Ke.jsx)("div", {
+            }), (0, Qe.jsx)("div", {
               className: "rockstargames-modules-gtao-license-plateba7922fbecef8aac8fbfb43466d714df"
             })]
           }) : null
         },
-        aa = () => {
+        na = () => {
           const {
             state: e,
             setRefs: t
-          } = Ze(), {
+          } = Je(), {
             refs: a,
             isMobile: n
           } = e, s = (0, r.useRef)(null);
@@ -5027,17 +5068,17 @@
                 s = n + (r - n) / 2 - t / 2;
               o.current && (o.current.style.top = `${s}px`)
             } else o.current && (o.current.style.top = "unset")
-          }), [n, a]), (0, Ke.jsx)("div", {
+          }), [n, a]), (0, Qe.jsx)("div", {
             ref: s,
             className: "rockstargames-modules-gtao-license-plateccf53583787aff7c3f2ac6b8d97c03b4",
-            children: (0, Ke.jsx)("div", {
+            children: (0, Qe.jsx)("div", {
               ref: o,
               className: "rockstargames-modules-gtao-license-platea88fc625cf8ed28c9173313577588fed",
-              children: (0, Ke.jsx)(y.LoadingAnimation, {})
+              children: (0, Qe.jsx)(h.LoadingAnimation, {})
             })
           })
         },
-        ra = {
+        sa = {
           orderInProgressCTA: "rockstargames-modules-gtao-license-platebc40a92b57940decf0e3d650470c2e6e",
           expanded: "rockstargames-modules-gtao-license-plateacb72edc8e0c3c68b01530b66cf9fda8",
           backToPlatesButton: "rockstargames-modules-gtao-license-platecc6b5e28d88c74bcb3605232bd6316f8",
@@ -5049,7 +5090,7 @@
           ctaText: "rockstargames-modules-gtao-license-plateb786d4a5375d49d301a7eabc0907a5e5",
           isWindows: "rockstargames-modules-gtao-license-platebeaf68a19e2cc214f99eda5678bb1174"
         },
-        na = e => {
+        oa = e => {
           let {
             vehicleName: t,
             onClickEdit: a,
@@ -5063,17 +5104,17 @@
             setPendingOrder: f,
             setPlateNumber: g,
             setSelectedStyle: b,
-            setError: y,
-            state: h
-          } = Ze(), {
+            setError: h,
+            state: y
+          } = Je(), {
             character: v,
             plates: x,
             currentView: E
-          } = h, {
+          } = y, {
             track: P
           } = (0, o.useGtmTrack)(), S = {
             view_name: "license plate creator - landing page logged in"
-          }, _ = E === ue.LIST_PLATES ? 0 : -1, k = (0, r.useCallback)((() => {
+          }, _ = E === me.LIST_PLATES ? 0 : -1, k = (0, r.useCallback)((() => {
             (async () => {
               if (!u || !v) return;
               const [e] = v, {
@@ -5087,9 +5128,9 @@
                   platform: e
                 }
               });
-              if (t) return void y(["api", t]);
-              const a = [pe, ...x.slice(1, x.length)];
-              p(a), f(null), g(""), b(w(pe.style.name).id), P({
+              if (t) return void h(["api", t]);
+              const a = [fe, ...x.slice(1, x.length)];
+              p(a), f(null), g(""), b(w(fe.style.name).id), P({
                 ...S,
                 event: "cta_cancel",
                 event_category: "cta",
@@ -5099,40 +5140,40 @@
               })
             })()
           }), [u, v, x]);
-          return (0, Ke.jsxs)("div", {
-            className: [ra.orderInProgressCTA, n ? "" : ra.hidden].join(" "),
-            children: [(0, Ke.jsx)("h1", {
-              className: ra.contentHeading,
+          return (0, Qe.jsxs)("div", {
+            className: [sa.orderInProgressCTA, n ? "" : sa.hidden].join(" "),
+            children: [(0, Qe.jsx)("h1", {
+              className: sa.contentHeading,
               children: i("lp.inprogress.title")
-            }), (0, Ke.jsx)("p", {
-              className: ra.orderInstructions,
+            }), (0, Qe.jsx)("p", {
+              className: sa.orderInstructions,
               dangerouslySetInnerHTML: {
-                __html: i("lp.inprogress.description").replace("<span>{car_name}</span>", `<span className=${ra.vehicleName}>${t}</span>`)
+                __html: i("lp.inprogress.description").replace("<span>{car_name}</span>", `<span className=${sa.vehicleName}>${t}</span>`)
               }
-            }), (0, Ke.jsxs)("div", {
-              className: ra.buttonWrap,
-              children: [(0, Ke.jsx)("button", {
+            }), (0, Qe.jsxs)("div", {
+              className: sa.buttonWrap,
+              children: [(0, Qe.jsx)("button", {
                 type: "button",
                 onClick: a,
                 "aria-label": i("lp.inprogress.edit"),
                 tabIndex: _,
-                children: (0, Ke.jsx)("span", {
-                  className: ra.ctaText,
+                children: (0, Qe.jsx)("span", {
+                  className: sa.ctaText,
                   children: i("lp.inprogress.edit")
                 })
-              }), (0, Ke.jsx)("button", {
+              }), (0, Qe.jsx)("button", {
                 type: "button",
                 onClick: e => {
                   d(!0), e.preventDefault(), e.stopPropagation(), e.nativeEvent.stopImmediatePropagation()
                 },
                 "aria-label": i("lp.inprogress.cancel"),
                 tabIndex: _,
-                children: (0, Ke.jsx)("span", {
-                  className: ra.ctaText,
+                children: (0, Qe.jsx)("span", {
+                  className: sa.ctaText,
                   children: i("lp.inprogress.cancel")
                 })
               })]
-            }), (0, Ke.jsx)(St, {
+            }), (0, Qe.jsx)(kt, {
               title: i("lp.modal.order-cancel.title"),
               secondaryText: i("lp.modal.order-cancel.description").replace("{plateText}", x?.[0]?.plateText ?? "this plate"),
               buttons: [{
@@ -5157,7 +5198,7 @@
             })]
           })
         },
-        sa = e => {
+        ia = e => {
           let {
             plateData: t,
             plateWidthInPixels: a,
@@ -5169,18 +5210,18 @@
             onClickPlate: l,
             t: c
           } = e;
-          return (0, Ke.jsx)("div", {
-            className: Yt.firstPlateLoggedOut,
+          return (0, Qe.jsx)("div", {
+            className: zt.firstPlateLoggedOut,
             style: {
               background: "none",
               border: "none",
-              opacity: r === ue.LIST_PLATES ? 1 : 0,
+              opacity: r === me.LIST_PLATES ? 1 : 0,
               width: `${a}px`,
               height: a / 2 + "px"
             },
-            children: (0, Ke.jsxs)("div", {
-              className: [Yt.loggedOutCTA, r !== ue.LIST_PLATES ? Yt.hidden : ""].join(" "),
-              children: [(0, Ke.jsx)("button", {
+            children: (0, Qe.jsxs)("div", {
+              className: [zt.loggedOutCTA, r !== me.LIST_PLATES ? zt.hidden : ""].join(" "),
+              children: [(0, Qe.jsx)("button", {
                 type: "button",
                 onClick: () => {
                   n && (o({
@@ -5192,13 +5233,13 @@
                     link_url: n
                   }), window.location.href = n)
                 },
-                className: [Yt.signIn, r !== ue.LIST_PLATES ? Yt.hidden : ""].join(" "),
+                className: [zt.signIn, r !== me.LIST_PLATES ? zt.hidden : ""].join(" "),
                 tabIndex: s,
-                children: (0, Ke.jsx)("span", {
-                  className: Yt.ctaText,
+                children: (0, Qe.jsx)("span", {
+                  className: zt.ctaText,
                   children: c("lp.landing.signup")
                 })
-              }), (0, Ke.jsx)("button", {
+              }), (0, Qe.jsx)("button", {
                 type: "button",
                 onClick: () => {
                   o({
@@ -5209,17 +5250,17 @@
                     text: c("lp.landing.tryit").toLowerCase()
                   }), l(t.index)
                 },
-                className: [Yt.tryWithoutSigningIn, Yt.firstLoad, r !== ue.LIST_PLATES ? Yt.hidden : ""].join(" "),
+                className: [zt.tryWithoutSigningIn, zt.firstLoad, r !== me.LIST_PLATES ? zt.hidden : ""].join(" "),
                 tabIndex: s,
-                children: (0, Ke.jsx)("span", {
-                  className: Yt.ctaText,
+                children: (0, Qe.jsx)("span", {
+                  className: zt.ctaText,
                   children: c("lp.landing.tryit")
                 })
               })]
             })
           })
         },
-        oa = e => {
+        la = e => {
           let {
             t
           } = e;
@@ -5231,7 +5272,7 @@
             setCurrentPlate: i,
             setCurrentPlateIndex: l,
             setRefs: c
-          } = Ze(), {
+          } = Je(), {
             currentView: d,
             accessiblePlates: u,
             gridState: m,
@@ -5239,8 +5280,8 @@
             loginUrl: f,
             pendingOrder: g,
             three: b,
-            plates: y,
-            refs: h,
+            plates: h,
+            refs: y,
             isMobile: v,
             realHeight: x,
             plateTextures: w
@@ -5248,20 +5289,20 @@
           (0, r.useEffect)((() => {
             P(/([wW]in)/i.test(window.navigator.userAgent))
           }), []), (0, r.useEffect)((() => {
-            y?.length && T(y[0])
-          }), [y]);
-          const [S, _] = (0, r.useState)(null), [k, T] = (0, r.useState)(null), N = h[B.FIRST_PLATE_MESH], C = h[B.ROOT], L = (0, r.useRef)(null), j = (0, r.useRef)(null);
+            h?.length && T(h[0])
+          }), [h]);
+          const [S, _] = (0, r.useState)(null), [k, T] = (0, r.useState)(null), I = y[B.FIRST_PLATE_MESH], C = y[B.ROOT], L = (0, r.useRef)(null), j = (0, r.useRef)(null);
           (0, r.useEffect)((() => {
-            const e = h[B.SIDEBAR];
+            const e = y[B.SIDEBAR];
             if (!(e?.current && C?.current && m?.gridOptions && k)) return;
             const t = e.current,
               a = {
                 x: v ? 0 : t.offsetWidth,
                 y: 0
               },
-              r = I(k.index, C.current, Number(x.replace("px", "")), m, a);
+              r = N(k.index, C.current, Number(x.replace("px", "")), m, a);
             _(r)
-          }), [h]);
+          }), [y]);
           const {
             track: M
           } = (0, o.useGtmTrack)(), V = {
@@ -5272,10 +5313,10 @@
           }), [L.current]), (0, r.useEffect)((() => {
             c(B.CTA_SHADER, j)
           }), [j.current]);
-          const W = d === ue.LIST_PLATES ? 0 : -1,
+          const W = d === me.LIST_PLATES ? 0 : -1,
             Y = (0, r.useCallback)((e => {
-              if (s() === ue.LIST_PLATES) {
-                const t = 0 === e ? ue.NEW_PLATE : ue.VIEW_PLATE;
+              if (s() === me.LIST_PLATES) {
+                const t = 0 === e ? me.NEW_PLATE : me.VIEW_PLATE;
                 e && (M({
                   ...V,
                   event: "license_plate_open",
@@ -5288,13 +5329,13 @@
                   event: "virtualPageview",
                   display_type: v ? "mobile" : "desktop",
                   view_name: "license plate creator - view plate"
-                })), i(y[e]), l(e), s(t)
+                })), i(h[e]), l(e), s(t)
               }
-            }), [y]),
-            $ = (0, r.useCallback)((e => {
+            }), [h]),
+            z = (0, r.useCallback)((e => {
               O(0, d)
             }), [d]),
-            z = (0, r.useMemo)((() => S ? (0, Ke.jsx)(sa, {
+            U = (0, r.useMemo)((() => S ? (0, Qe.jsx)(ia, {
               plateData: k,
               plateWidthInPixels: S.width,
               currentView: d,
@@ -5305,7 +5346,7 @@
               onClickPlate: Y,
               t
             }) : null), [d, f, S]),
-            H = (0, r.useMemo)((() => void 0 !== y ? R(g, y) ? (0, Ke.jsx)(na, {
+            $ = (0, r.useMemo)((() => void 0 !== h ? R(g, h) ? (0, Qe.jsx)(oa, {
               t,
               vehicleName: `${g.manufacturerName} ${g.vehicleName}`,
               onClickEdit: () => {
@@ -5318,19 +5359,19 @@
                   text: t("lp.inprogress.edit").toLowerCase()
                 }), Y(k.index)
               },
-              isVisible: d === ue.LIST_PLATES
-            }) : y.filter((e => {
+              isVisible: d === me.LIST_PLATES
+            }) : h.filter((e => {
               let {
                 faux: t
               } = e;
               return !t
-            })).length >= 30 ? (0, Ke.jsxs)("div", {
-              className: [Yt.maxPlatesReached, d !== ue.LIST_PLATES ? Yt.hidden : ""].join(" "),
-              children: [(0, Ke.jsx)("i", {}), t("lp.notify.max-plates")]
-            }) : 0 === y.length ? null : (0, Ke.jsxs)("div", {
+            })).length >= 30 ? (0, Qe.jsxs)("div", {
+              className: [zt.maxPlatesReached, d !== me.LIST_PLATES ? zt.hidden : ""].join(" "),
+              children: [(0, Qe.jsx)("i", {}), t("lp.notify.max-plates")]
+            }) : 0 === h.length ? null : (0, Qe.jsxs)("div", {
               type: "button",
               style: {
-                pointerEvents: d === ue.LIST_PLATES ? "all" : "none"
+                pointerEvents: d === me.LIST_PLATES ? "all" : "none"
               },
               onKeyPress: e => {
                 "Space" !== e.code && "Enter" !== e.code || (M({
@@ -5353,25 +5394,25 @@
                 }), Y(k.index)
               },
               onPointerOver: v ? void 0 : () => {
-                N?.current && $(N?.current)
+                I?.current && z(I?.current)
               },
               onPointerOut: v ? void 0 : () => {
                 var e;
-                N?.current && (e = N?.current, A(e))
+                I?.current && (e = I?.current, A(e))
               },
-              className: [Yt.createNewPlate, d !== ue.LIST_PLATES ? Yt.hidden : ""].join(" "),
+              className: [zt.createNewPlate, d !== me.LIST_PLATES ? zt.hidden : ""].join(" "),
               ref: D,
               tabIndex: W,
-              children: [(0, Ke.jsx)("span", {
-                className: `${Yt.ctaText} ${E?Yt.isWindows:""}`,
+              children: [(0, Qe.jsx)("span", {
+                className: `${zt.ctaText} ${E?zt.isWindows:""}`,
                 children: t("lp.landing.newcta")
-              }), (0, Ke.jsx)("div", {
-                className: Yt.ctaIcon,
+              }), (0, Qe.jsx)("div", {
+                className: zt.ctaIcon,
                 role: "presentation",
                 "aria-label": "Plus Icon"
               })]
             }) : null), [S, d]),
-            U = (0, r.useMemo)((() => void 0 !== g && S ? (0, Ke.jsx)("div", {
+            H = (0, r.useMemo)((() => void 0 !== g && S ? (0, Qe.jsx)("div", {
               onKeyPress: e => {
                 "Space" !== e.code && "Enter" !== e.code || (M({
                   ...V,
@@ -5394,11 +5435,11 @@
               },
               type: "button",
               tabIndex: W,
-              className: Yt.firstPlateLoggedIn,
+              className: zt.firstPlateLoggedIn,
               style: {
                 width: `${S.width}px`,
                 height: S.width / 2 + "px",
-                pointerEvents: d === ue.LIST_PLATES ? "all" : "none",
+                pointerEvents: d === me.LIST_PLATES ? "all" : "none",
                 fontSize: S.width / 2 * .075 + "px",
                 display: "flex",
                 justifyContent: "center",
@@ -5407,14 +5448,14 @@
                 border: "none",
                 boxShadow: "none"
               },
-              children: H
-            }) : null), [d, g, S, h, k, H, v]);
+              children: $
+            }) : null), [d, g, S, y, k, $, v]);
           return (0, r.useEffect)((() => {
             if (w?.[0]) {
               const e = w[0].image;
               if (e && L.current) {
                 const t = L.current.querySelector("canvas");
-                t && L.current.removeChild(t), e.style.width = "100%", e.style.height = "100%", e.style.position = "absolute", e.style.top = "0px", e.style.left = "0px", e.style.pointerEvents = "none", e.style.opacity = 1, e.style.transition = "transform 0.25s ease-out", a && !g && d === ue.LIST_PLATES && e.classList.add(Yt.newOrder), L.current.append(e)
+                t && L.current.removeChild(t), e.style.width = "100%", e.style.height = "100%", e.style.position = "absolute", e.style.top = "0px", e.style.left = "0px", e.style.pointerEvents = "none", e.style.opacity = 1, e.style.transition = "transform 0.25s ease-out", a && !g && d === me.LIST_PLATES && e.classList.add(zt.newOrder), L.current.append(e)
               }
             }
           }), [w, L.current, g, a, d]), (0, r.useEffect)((() => {
@@ -5426,8 +5467,8 @@
             }
           }), [p, b, w]), (0, r.useMemo)((() => {
             if (!S || !k || !m?.gridOptions) return null;
-            const e = R(g, y) ? Yt.pendingOrderShader : "",
-              t = a ? e : Yt.loggedOutShader,
+            const e = R(g, h) ? zt.pendingOrderShader : "",
+              t = a ? e : zt.loggedOutShader,
               {
                 width: r,
                 height: n
@@ -5438,9 +5479,9 @@
                 right: i,
                 bottom: l
               } = S.rect;
-            return (0, Ke.jsxs)("div", {
+            return (0, Qe.jsxs)("div", {
               ref: L,
-              className: [Yt.CTAWrap, a ? "" : Yt.loggedOut].join(" "),
+              className: [zt.CTAWrap, a ? "" : zt.loggedOut].join(" "),
               style: {
                 top: s,
                 left: o,
@@ -5449,14 +5490,14 @@
                 width: r,
                 height: n
               },
-              children: [(0, Ke.jsx)("div", {
+              children: [(0, Qe.jsx)("div", {
                 ref: j,
                 className: t
-              }), a ? U : z]
+              }), a ? H : U]
             })
-          }), [H])
+          }), [$])
         },
-        ia = e => {
+        ca = e => {
           let {
             plate: t,
             index: a,
@@ -5476,11 +5517,11 @@
               isLoading: f,
               plateTextures: g,
               plates: b,
-              deletedPlateIndex: y,
-              isMobile: h,
+              deletedPlateIndex: h,
+              isMobile: y,
               shouldRenderScene: v
             }
-          } = Ze(), {
+          } = Je(), {
             track: x
           } = (0, o.useGtmTrack)(), w = {
             view_name: "license plate creator - landing page logged " + (c ? "in" : "out")
@@ -5492,7 +5533,7 @@
               const e = E.current.querySelector("canvas");
               e && E.current.removeChild(e), l.style.width = "100%", l.style.height = "100%", l.style.position = "absolute", l.style.opacity = 1, l.style.top = "0px", l.style.left = "0px", l.style.pointerEvents = "none", l.style.transition = "transform 0.25s ease-out", l.classList.add("rockstargames-modules-gtao-license-platefdedf6af97ba01b09fe912dfd53b3b15"), E.current.append(l)
             }
-          }), [g, l, E.current]), (0, r.useMemo)((() => (0, Ke.jsx)("button", {
+          }), [g, l, E.current]), (0, r.useMemo)((() => (0, Qe.jsx)("button", {
             "aria-label": `${t?.style?.displayName||""} license plate ${t.plateText?`with the number ${t.plateText}`:""}`.trim(),
             className: "rockstargames-modules-gtao-license-platec7d0ee6491ccdc554552ffea411a56b1",
             ref: E,
@@ -5504,7 +5545,7 @@
               top: s.top - 1 + "px",
               left: `${s.left}px`,
               transformOrigin: "center",
-              pointerEvents: p !== ue.LIST_PLATES || "number" == typeof y || v ? "none" : "all"
+              pointerEvents: p !== me.LIST_PLATES || "number" == typeof h || v ? "none" : "all"
             },
             tabIndex: i,
             type: "button",
@@ -5519,13 +5560,13 @@
               }), x({
                 ...w,
                 event: "virtualPageview",
-                display_type: h ? "mobile" : "desktop",
+                display_type: y ? "mobile" : "desktop",
                 view_name: "license plate creator - view plate"
-              }), u(t), m(a + 1), d(ue.VIEW_PLATE)
+              }), u(t), m(a + 1), d(me.VIEW_PLATE)
             }
           })), [t, l, s, v, p])
         },
-        la = e => {
+        da = e => {
           let {
             t
           } = e;
@@ -5541,12 +5582,12 @@
               isMobile: u,
               plateTextures: m
             }
-          } = Ze(), {
+          } = Je(), {
             loggedIn: p
-          } = (0, o.useRockstarUser)(), [f, g] = (0, r.useState)([]), b = (0, r.useRef)(null), y = (0, r.useRef)([]);
+          } = (0, o.useRockstarUser)(), [f, g] = (0, r.useState)([]), b = (0, r.useRef)(null), h = (0, r.useRef)([]);
           return (0, r.useEffect)((() => {
-            y.current && l.length > 0 && y.current.length === l.length && a(y.current)
-          }), [y.current?.length, l]), (0, r.useEffect)((() => {
+            h.current && l.length > 0 && h.current.length === l.length && a(h.current)
+          }), [h.current?.length, l]), (0, r.useEffect)((() => {
             n(B.ACCESSIBLE_PLATE_GRID, b)
           }), [b.current]), (0, r.useEffect)((() => {
             const e = d[B.ROOT]?.current,
@@ -5554,7 +5595,7 @@
               a = [];
             e && t && i && (l.forEach(((r, n) => {
               if (n) {
-                const r = I(n, e, Number(c.replace("px", "")), i, u ? void 0 : {
+                const r = N(n, e, Number(c.replace("px", "")), i, u ? void 0 : {
                     x: t.offsetWidth,
                     y: 0
                   }),
@@ -5574,31 +5615,31 @@
                 })
               }
             })), g([...a]))
-          }), [m, d && d?.[B.SIDEBAR]?.current]), (0, r.useMemo)((() => p && !f.length ? null : (y.current.forEach((e => {
+          }), [m, d && d?.[B.SIDEBAR]?.current]), (0, r.useMemo)((() => p && !f.length ? null : (h.current.forEach((e => {
             e.current && (e.current.style.transform = "none")
-          })), (0, Ke.jsxs)("div", {
+          })), (0, Qe.jsxs)("div", {
             ref: b,
-            className: Ht,
-            children: [(0, Ke.jsx)(oa, {
+            className: Ft,
+            children: [(0, Qe.jsx)(la, {
               t
-            }), l.filter(((e, t) => t)).map(((e, t) => (0, Ke.jsx)(ia, {
-              accessiblePlateRefs: y,
+            }), l.filter(((e, t) => t)).map(((e, t) => (0, Qe.jsx)(ca, {
+              accessiblePlateRefs: h,
               plate: e,
               index: t,
               details: f[t],
-              tabIndex: s === ue.LIST_PLATES ? 0 : -1,
+              tabIndex: s === me.LIST_PLATES ? 0 : -1,
               texture: m[t + 1]?.image
             }, e.plateText + e.vehicles.toString())))]
           }))), [f])
         },
-        ca = (0, l.withTranslations)((e => {
+        ua = (0, l.withTranslations)((e => {
           let {
             t
           } = e;
           const {
             setCanvasDimensions: g,
-            setCharacter: y,
-            setCurrentView: h,
+            setCharacter: h,
+            setCurrentView: y,
             setDeletedPlateIndex: v,
             setError: x,
             setIs3D: E,
@@ -5606,32 +5647,33 @@
             setIsLoggedIn: _,
             setIsMobile: k,
             setPendingOrder: T,
-            setPlateNumber: N,
-            setPlates: I,
+            setPlateNumber: I,
+            setPlates: N,
             setRefs: O,
             setSelectedStyle: A,
             setVehicles: C,
-            state: L
-          } = Ze(), {
-            error: j,
-            plates: M,
-            pendingOrder: V,
-            isMobile: D,
-            three: W,
-            currentView: Y,
-            shouldForce2D: z,
+            setXmas23PlatesAllowed: L,
+            state: j
+          } = Je(), {
+            error: M,
+            plates: V,
+            pendingOrder: D,
+            isMobile: W,
+            three: Y,
+            currentView: z,
+            shouldForce2D: $,
             isLoading: H
-          } = L, {
-            setCustomFooter: U
+          } = j, {
+            setCustomFooter: F
           } = (0, c.useRockstarLocalState)(), {
-            loggedIn: F
+            loggedIn: G
           } = (0, o.useRockstarUser)();
           (0, r.useEffect)((() => {
-            _(F)
-          }), [F]);
+            _(G)
+          }), [G]);
           const {
-            selectedCharacterTuple: G
-          } = (0, o.useRockstarUserState)(), X = (0, s.useRockstarTokenPing)(), q = (0, r.useRef)(null), Z = (0, r.useRef)(null), K = (0, r.useRef)(null), [J, Q] = (0, r.useState)(null), [ee] = (0, m.useSearchParams)(), [te, ae] = (0, r.useState)(!1);
+            selectedCharacterTuple: X
+          } = (0, o.useRockstarUserState)(), q = (0, s.useRockstarTokenPing)(), Z = (0, r.useRef)(null), K = (0, r.useRef)(null), J = (0, r.useRef)(null), [Q, ee] = (0, r.useState)(null), [te] = (0, m.useSearchParams)(), [ae, re] = (0, r.useState)(!1);
           (0, r.useEffect)((() => {
             try {
               if (!l.supportedBrowsers.test(navigator.userAgent)) throw new Error("browser");
@@ -5644,14 +5686,14 @@
             } catch (e) {
               x([e?.message])
             } finally {
-              ae(!0)
+              re(!0)
             }
           }), []);
-          const re = (0, r.useCallback)(b().debounce((() => {
-            if (W?.renderer) {
+          const ne = (0, r.useCallback)(b().debounce((() => {
+            if (Y?.renderer) {
               const {
                 renderer: e
-              } = W, {
+              } = Y, {
                 clientWidth: t,
                 clientHeight: a
               } = e.domElement;
@@ -5661,39 +5703,40 @@
               })
             }
             k(P())
-          }), 100), [W]);
-          (0, r.useEffect)((() => (re(), window.addEventListener("resize", re, !0), () => window.removeEventListener("resize", re, !0))), [W]), (0, r.useEffect)((() => ((0, c.setFreezeUserShouldSeeMore)(!0), U(!0), () => {
-            (0, c.setFreezeUserShouldSeeMore)(!1), U(!1), h(ue.LIST_PLATES)
+          }), 100), [Y]);
+          (0, r.useEffect)((() => (ne(), window.addEventListener("resize", ne, !0), () => window.removeEventListener("resize", ne, !0))), [Y]), (0, r.useEffect)((() => ((0, c.setFreezeUserShouldSeeMore)(!0), F(!0), () => {
+            (0, c.setFreezeUserShouldSeeMore)(!1), F(!1), y(me.LIST_PLATES)
           })), []), (0, r.useEffect)((() => {
-            O(B.CANVAS_WRAP, q)
-          }), [q.current]), (0, r.useEffect)((() => {
-            O(B.ROOT, Z)
+            O(B.CANVAS_WRAP, Z)
           }), [Z.current]), (0, r.useEffect)((() => {
-            O(B.MOBILE_SIDEBAR_PORTAL_TARGET, K)
+            O(B.ROOT, K)
           }), [K.current]), (0, r.useEffect)((() => {
-            if (!te || "webgl" === j || "browser" === j) return;
-            x(null), y(G), h(ue.LIST_PLATES), T(null), v(null);
-            const e = (F ? [] : [pe]).map(((e, t) => ({
+            O(B.MOBILE_SIDEBAR_PORTAL_TARGET, J)
+          }), [J.current]), (0, r.useEffect)((() => {
+            if (!ae || "webgl" === M || "browser" === M) return;
+            x(null), h(X), y(me.LIST_PLATES), A(fe.style?.id), T(null), v(null);
+            const e = (G ? [] : [fe]).map(((e, t) => ({
               ...e,
               index: t
             })));
-            null !== F && (I(e), !1 === F && S(!1)), C([]), (async () => {
+            null !== G && (N(e), !1 === G && S(!1)), C([]), (async () => {
               try {
-                F && S(!0);
+                G && S(!0);
                 const e = x();
-                if (!F || null === G || e) return;
-                if (!1 === G) return void x(["character"]);
-                const [t, a] = G, {
+                if (!G || null === X || e) return;
+                if (!1 === X) return void x(["character"]);
+                const [t, a] = X, {
                   error: r = null,
                   result: n
                 } = await (0, l.coreScApiFetch)("games/gtao/licensePlates/owned", {
-                  pingBearer: X,
+                  pingBearer: q,
                   query: {
                     character: a,
                     platform: t
                   }
                 });
                 if (r) throw Object.assign(new Error(""), r);
+                L(n?.xmas23PlatesAllowed);
                 const s = n?.plates?.map((e => {
                     const t = w(e?.vehicles?.[0]?.plateStyle ?? "YellowBlack") ?? w("YellowBlack");
                     return {
@@ -5705,7 +5748,7 @@
                     error: o = null,
                     result: i
                   } = await (0, l.coreScApiFetch)("games/gtao/licensePlates/availableVehicles", {
-                    pingBearer: X,
+                    pingBearer: q,
                     query: {
                       character: a,
                       platform: t
@@ -5724,30 +5767,33 @@
                   error: d,
                   result: u
                 } = await (0, l.coreScApiFetch)("games/gtao/licensePlates/order", {
-                  pingBearer: X,
+                  pingBearer: q,
                   query: {
                     platform: t
                   },
                   useCache: !1
                 });
                 if (d) throw Object.assign(new Error(""), d);
-                const m = R(u, M);
-                let p = [pe, ...s];
+                const m = R(u, V);
+                let p = [fe, ...s];
                 p = p.map(((e, t) => ({
                   ...e,
                   index: t
-                }))), m ? (T(u), A(pe.style.id)) : T(null), N(pe.plateText), S(!1), I(p)
+                }))), m ? (T(u), A(fe.style.id)) : T(null), I(fe.plateText), S(!1), N(p)
               } catch (e) {
                 x(["api", e]), S(!1)
               }
             })()
-          }), [String(G), F, te]), (0, r.useEffect)((() => {
-            R(V, M) && (A(w(V.plateStyle).id), N(V.plateText))
-          }), [V, M]), (0, r.useEffect)((() => {
-            if (J || !$ || j || !te) return;
-            const e = ee.get("envUrl") || a(3924),
+          }), [String(X), G, ae]), (0, r.useEffect)((() => {
+            if (R(D, V)) {
+              const e = w(D.plateStyle);
+              "number" == typeof e?.id && A(e.id), I(D.plateText)
+            }
+          }), [D, V]), (0, r.useEffect)((() => {
+            if (Q || !U || M || !ae) return;
+            const e = te.get("envUrl") || a(3924),
               t = new d.LoadingManager((() => {
-                Q({
+                ee({
                   environmentMap: c,
                   environmentModel: l,
                   plateTextures: m
@@ -5764,7 +5810,7 @@
               l = e
             }), void 0, (e => console.log("err", e)));
             const c = i.load([a(8220), a(8130), a(5377), a(6491), a(1984), a(3445)]),
-              m = $.map((e => {
+              m = U.map((e => {
                 const {
                   fontColor: t,
                   fontSize: a
@@ -5778,11 +5824,11 @@
                   fontSize: a
                 }
               }))
-          }), [J, $, j, te]), (0, r.useEffect)((() => {
-            const e = Y !== ue.LIST_PLATES && !z;
+          }), [Q, U, M, ae]), (0, r.useEffect)((() => {
+            const e = z !== me.LIST_PLATES && !$;
             E(e)
-          }), [Y, z]);
-          const ne = (0, r.useMemo)((() => (0, Ke.jsx)(n.Canvas, {
+          }), [z, $]);
+          const se = (0, r.useMemo)((() => (0, Qe.jsx)(n.Canvas, {
             shadows: !P(),
             linear: !0,
             flat: !0,
@@ -5797,39 +5843,39 @@
               } = e;
               t.setClearColor(0, 0)
             },
-            children: (0, Ke.jsx)(i.GtmProvider, {
-              children: (0, Ke.jsx)(bt, {
-                loadedAssets: J
+            children: (0, Qe.jsx)(i.GtmProvider, {
+              children: (0, Qe.jsx)(yt, {
+                loadedAssets: Q
               })
             })
-          })), [J, F]);
-          return te && null !== F ? j ? (0, Ke.jsx)(ta, {
+          })), [Q, G]);
+          return ae && null !== G ? M ? (0, Qe.jsx)(ra, {
             t
-          }) : (0, Ke.jsxs)("div", {
-            ref: Z,
+          }) : (0, Qe.jsxs)("div", {
+            ref: K,
             className: "rockstargames-modules-gtao-license-platee77939e1820c318536a581396891c6d8",
-            children: [D && (0, Ke.jsx)("div", {
+            children: [W && (0, Qe.jsx)("div", {
               className: "rockstargames-modules-gtao-license-platecb41956b83afc8b368f030e3ac9efd58",
-              ref: K,
-              children: (0, Ke.jsx)(aa, {
+              ref: J,
+              children: (0, Qe.jsx)(na, {
                 isLoading: H
               })
-            }), (0, Ke.jsxs)("div", {
+            }), (0, Qe.jsxs)("div", {
               className: "rockstargames-modules-gtao-license-plated84d9facb1ce367777aeb61cfb594eb8",
-              children: [(0, Ke.jsx)(ea, {
-                isMobile: D
-              }), (0, Ke.jsxs)("div", {
+              children: [(0, Qe.jsx)(aa, {
+                isMobile: W
+              }), (0, Qe.jsxs)("div", {
                 className: "rockstargames-modules-gtao-license-platebca268dc1d11ae6823b1bc5b48b364ca",
-                ref: q,
-                children: [ne, !D && (0, Ke.jsx)(aa, {
+                ref: Z,
+                children: [se, !W && (0, Qe.jsx)(na, {
                   isLoading: H
                 })]
               })]
-            }), (0, Ke.jsx)("span", {
+            }), (0, Qe.jsx)("span", {
               className: "rockstargames-modules-gtao-license-platea9a516aab758a9651e41554f2e2a0890"
-            }), (0, Ke.jsx)(la, {
+            }), (0, Qe.jsx)(da, {
               t
-            }), (0, Ke.jsx)(Je, {
+            }), (0, Qe.jsx)(et, {
               t
             })]
           }) : null
@@ -5886,11 +5932,35 @@
     2423: e => {
       e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/318db7582cb10a2b660aafa45a49ec13.jpg"
     },
+    568: e => {
+      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/582604393d5f75a3b9b1943b1fdb856f.jpg"
+    },
+    1101: e => {
+      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/3f698f122632ac925fa54df7fd371035.jpg"
+    },
+    6638: e => {
+      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/9ff7cef42d4c37cc4a158aadd7bf9e70.png"
+    },
+    7376: e => {
+      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/306a9606a4773a61342b14618e5e4165.jpg"
+    },
     6879: e => {
       e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/e41a5143c3d0ae5a16573064ee1e309a.jpg"
     },
     1358: e => {
       e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/ca6a8bfc39e4bff84d6f31176074b342.png"
+    },
+    7188: e => {
+      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/ed129e5ac2d871dddf75daba04816bc0.jpg"
+    },
+    111: e => {
+      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/4235e82a6662cc6c700deee2b5aa28b2.jpg"
+    },
+    9615: e => {
+      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/fcdc388bebc3a656c2584e90c1f4a6bf.png"
+    },
+    9305: e => {
+      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/f5f90e389f2e4dbec1782e382c2e0efd.jpg"
     },
     4360: e => {
       e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/58af63f198dffe524132d43c57561d1c.jpg"

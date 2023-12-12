@@ -617,7 +617,15 @@
           } = e;
           return {
             label: "CoverCard",
-            fields: [(0, a.translatedField)({
+            fields: [{
+              label: "Logo Image",
+              name: "logoImage",
+              component: "image",
+              description: "Optionally add a logo image above the card title.",
+              uploadDir: o.uploadDir,
+              parse: o.parse,
+              previewSrc: o.previewSrc
+            }, (0, a.translatedField)({
               name: "title",
               label: "Title",
               description: "This is the headline of the card.",

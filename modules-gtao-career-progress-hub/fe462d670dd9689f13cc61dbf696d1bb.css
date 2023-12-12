@@ -243,6 +243,10 @@
   color: var(--award-platinum)
 }
 
+.rockstargames-modules-gtao-career-progress-hubcf064d357c5807bbf02c498b0ccea29d span.rockstargames-modules-gtao-career-progress-hube7c1b78aacf918fd702e16d3db42b27f {
+  color: var(--white-65)
+}
+
 .rockstargames-modules-gtao-career-progress-hubc10ebc2c1fba20aba1307818ff452ecd {
   background: #2b2b2b;
   border: none;
@@ -1000,10 +1004,18 @@ h6.rockstargames-modules-gtao-career-progress-hubad48e58a2dc3106dc694151f02e2597
 }
 
 .rockstargames-modules-gtao-career-progress-hubf0fe7ab67089ae7aced936b917b1717b {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background: var(--white-15);
+  border: none;
   border-radius: var(--border-radius-sm);
+  display: block;
   margin-bottom: var(--margin-xs);
-  overflow: hidden
+  overflow: hidden;
+  padding: 0;
+  text-align: left;
+  width: 100%
 }
 
 .rockstargames-modules-gtao-career-progress-hubf0fe7ab67089ae7aced936b917b1717b .rockstargames-modules-gtao-career-progress-hubc5e12803cde586cef24094e08e97e3ab .rockstargames-modules-gtao-career-progress-huba5944b6c1dd5293c276f5a9919eeb866 {
@@ -1013,12 +1025,236 @@ h6.rockstargames-modules-gtao-career-progress-hubad48e58a2dc3106dc694151f02e2597
   font-weight: var(--font-weight-regular);
   letter-spacing: var(--letter-spacing-body);
   line-height: var(--line-height-lg);
-  margin: 0
+  margin: 0;
+  text-align: left
+}
+
+.rockstargames-modules-gtao-career-progress-hubf0fe7ab67089ae7aced936b917b1717b.rockstargames-modules-gtao-career-progress-hubaa3783ddbfc7fcc44f5008eb80b7b8f4 {
+  background: var(--black-200);
+  border: 1px solid var(--border-color)
+}
+
+@media (min-width:1024px) {
+  .rockstargames-modules-gtao-career-progress-hubf0fe7ab67089ae7aced936b917b1717b.rockstargames-modules-gtao-career-progress-hubaa3783ddbfc7fcc44f5008eb80b7b8f4 {
+    background: var(--black-100)
+  }
+}
+
+.rockstargames-modules-gtao-career-progress-hubf0fe7ab67089ae7aced936b917b1717b.rockstargames-modules-gtao-career-progress-hubaa3783ddbfc7fcc44f5008eb80b7b8f4 .rockstargames-modules-gtao-career-progress-hube078709f464a55b1ab8655a33e2969d9 {
+  opacity: .65
 }
 
 .rockstargames-modules-gtao-career-progress-hubcd846f1008374eac9287842bbc247bda {
   display: flex;
   padding: var(--padding-sm)
+}
+
+.rockstargames-modules-gtao-career-progress-hubc38220fc9af63adec001a57ceaf3524c {
+  align-items: flex-start;
+  margin-right: var(--padding-sm);
+  padding-top: var(--padding-xs)
+}
+
+.rockstargames-modules-gtao-career-progress-hubf0fe7ab67089ae7aced936b917b1717b .rockstargames-modules-gtao-career-progress-hubef811a81a6ea22dd08a296ee0f0d0add {
+  background: transparent;
+  border: 1.5px solid var(--white-100);
+  border-radius: 2px;
+  display: flex;
+  height: 14px;
+  width: 14px
+}
+
+@media (min-width:1024px) {
+  .rockstargames-modules-gtao-career-progress-hubf0fe7ab67089ae7aced936b917b1717b .rockstargames-modules-gtao-career-progress-hubef811a81a6ea22dd08a296ee0f0d0add {
+    height: 24px;
+    width: 24px
+  }
+}
+
+.rockstargames-modules-gtao-career-progress-hubf0fe7ab67089ae7aced936b917b1717b .rockstargames-modules-gtao-career-progress-hubef811a81a6ea22dd08a296ee0f0d0add svg {
+  display: none
+}
+
+.rockstargames-modules-gtao-career-progress-hubf0fe7ab67089ae7aced936b917b1717b .rockstargames-modules-gtao-career-progress-hubef811a81a6ea22dd08a296ee0f0d0add.rockstargames-modules-gtao-career-progress-hubaa3783ddbfc7fcc44f5008eb80b7b8f4 {
+  background: var(--white-100)
+}
+
+.rockstargames-modules-gtao-career-progress-hubf0fe7ab67089ae7aced936b917b1717b .rockstargames-modules-gtao-career-progress-hubef811a81a6ea22dd08a296ee0f0d0add.rockstargames-modules-gtao-career-progress-hubaa3783ddbfc7fcc44f5008eb80b7b8f4 svg {
+  stroke: var(--black-100);
+  display: block;
+  height: 10px;
+  transform: scale(1.4);
+  width: 10px
+}
+
+.rockstargames-modules-gtao-career-progress-hubf0fe7ab67089ae7aced936b917b1717b .rockstargames-modules-gtao-career-progress-hubaab1d2b6b3aabace91ce937206a0ed1a {
+  height: 32px;
+  width: 16px
+}
+
+@media (min-width:1024px) {
+  .rockstargames-modules-gtao-career-progress-hubf0fe7ab67089ae7aced936b917b1717b .rockstargames-modules-gtao-career-progress-hubaab1d2b6b3aabace91ce937206a0ed1a {
+    height: 24px;
+    width: 24px
+  }
+}
+
+.rockstargames-modules-gtao-career-progress-hubb612c346fa9f072293da44b4646b0415 {
+  display: flex
+}
+
+.rockstargames-modules-gtao-career-progress-hubfaaa2263321f924bc0788b544999f75c {
+  background: var(--black-65, rgba(0, 0, 0, .65));
+  background: none;
+  border: none;
+  border-radius: 50%;
+  color: inherit;
+  cursor: pointer;
+  cursor: auto;
+  display: inline-block;
+  height: 2rem;
+  height: 1.35rem;
+  padding: 0;
+  position: relative;
+  transition: background .3s ease-in-out;
+  transition: transform .2s ease-in-out;
+  width: 2rem;
+  width: 1.35rem
+}
+
+.rockstargames-modules-gtao-career-progress-hubfaaa2263321f924bc0788b544999f75c:after {
+  background: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/dd73beaf06cda8c7936703f23f90bd6f.svg) no-repeat 50%/1rem;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: .3s ease-in-out;
+  width: 100%
+}
+
+@media (pointer:coarse) {
+
+  .rockstargames-modules-gtao-career-progress-hubfaaa2263321f924bc0788b544999f75c:active,
+  .rockstargames-modules-gtao-career-progress-hubfaaa2263321f924bc0788b544999f75c:focus {
+    background: var(--white-100, #fff)
+  }
+
+  .rockstargames-modules-gtao-career-progress-hubfaaa2263321f924bc0788b544999f75c:active:after,
+  .rockstargames-modules-gtao-career-progress-hubfaaa2263321f924bc0788b544999f75c:focus:after {
+    filter: invert(1)
+  }
+}
+
+@media not ((pointer:coarse)) {
+
+  .rockstargames-modules-gtao-career-progress-hubfaaa2263321f924bc0788b544999f75c:focus,
+  .rockstargames-modules-gtao-career-progress-hubfaaa2263321f924bc0788b544999f75c:hover {
+    background: var(--white-100, #fff)
+  }
+
+  .rockstargames-modules-gtao-career-progress-hubfaaa2263321f924bc0788b544999f75c:focus:after,
+  .rockstargames-modules-gtao-career-progress-hubfaaa2263321f924bc0788b544999f75c:hover:after {
+    filter: invert(1)
+  }
+}
+
+.rockstargames-modules-gtao-career-progress-hubfaaa2263321f924bc0788b544999f75c:hover {
+  background: none;
+  color: inherit
+}
+
+.rockstargames-modules-gtao-career-progress-hubfaaa2263321f924bc0788b544999f75c:hover:after {
+  filter: none
+}
+
+.rockstargames-modules-gtao-career-progress-hubf46e96175131fd59c9423e1f07006a27 {
+  height: 0;
+  list-style: none;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden
+}
+
+.rockstargames-modules-gtao-career-progress-hubf46e96175131fd59c9423e1f07006a27 .rockstargames-modules-gtao-career-progress-hubaa93b7e5206feb972c21d898ab8dab0a {
+  display: flex;
+  margin: 0 0 var(--margin-xs);
+  padding: 0;
+  position: relative
+}
+
+.rockstargames-modules-gtao-career-progress-hubf46e96175131fd59c9423e1f07006a27 .rockstargames-modules-gtao-career-progress-hubaa93b7e5206feb972c21d898ab8dab0a .rockstargames-modules-gtao-career-progress-hubc38220fc9af63adec001a57ceaf3524c {
+  margin-right: var(--margin-xs);
+  padding-top: var(--padding-xxs)
+}
+
+.rockstargames-modules-gtao-career-progress-hubf46e96175131fd59c9423e1f07006a27 .rockstargames-modules-gtao-career-progress-hubaa93b7e5206feb972c21d898ab8dab0a .rockstargames-modules-gtao-career-progress-hubf40e7fba91753254713531cd302d185e {
+  color: var(--white-40)
+}
+
+.rockstargames-modules-gtao-career-progress-hubf46e96175131fd59c9423e1f07006a27 .rockstargames-modules-gtao-career-progress-hubaa93b7e5206feb972c21d898ab8dab0a .rockstargames-modules-gtao-career-progress-hubef811a81a6ea22dd08a296ee0f0d0add {
+  height: 12px;
+  width: 12px
+}
+
+@media (min-width:1024px) {
+  .rockstargames-modules-gtao-career-progress-hubf46e96175131fd59c9423e1f07006a27 .rockstargames-modules-gtao-career-progress-hubaa93b7e5206feb972c21d898ab8dab0a .rockstargames-modules-gtao-career-progress-hubef811a81a6ea22dd08a296ee0f0d0add {
+    height: 16px;
+    width: 16px
+  }
+}
+
+.rockstargames-modules-gtao-career-progress-hubf46e96175131fd59c9423e1f07006a27 .rockstargames-modules-gtao-career-progress-hubaa93b7e5206feb972c21d898ab8dab0a p {
+  color: var(--color-body);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-2);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--letter-spacing-body);
+  line-height: var(--line-height-lg)
+}
+
+.rockstargames-modules-gtao-career-progress-hubf46e96175131fd59c9423e1f07006a27 .rockstargames-modules-gtao-career-progress-hubaa93b7e5206feb972c21d898ab8dab0a:before {
+  height: 1px;
+  right: 100%;
+  top: calc(50%);
+  width: var(--spacing-sm)
+}
+
+.rockstargames-modules-gtao-career-progress-hubf46e96175131fd59c9423e1f07006a27 .rockstargames-modules-gtao-career-progress-hubaa93b7e5206feb972c21d898ab8dab0a:after,
+.rockstargames-modules-gtao-career-progress-hubf46e96175131fd59c9423e1f07006a27 .rockstargames-modules-gtao-career-progress-hubaa93b7e5206feb972c21d898ab8dab0a:before {
+  background: var(--white-40);
+  content: "";
+  display: block;
+  position: absolute
+}
+
+.rockstargames-modules-gtao-career-progress-hubf46e96175131fd59c9423e1f07006a27 .rockstargames-modules-gtao-career-progress-hubaa93b7e5206feb972c21d898ab8dab0a:after {
+  height: calc(100% + var(--spacing-xs));
+  right: calc(100% + var(--spacing-sm));
+  top: calc(-50% - var(--spacing-xs) + 1px);
+  width: 1px
+}
+
+.rockstargames-modules-gtao-career-progress-hubf46e96175131fd59c9423e1f07006a27 .rockstargames-modules-gtao-career-progress-hubaa93b7e5206feb972c21d898ab8dab0a:first-child:after {
+  height: calc(100%);
+  top: calc(-50% + 1px)
+}
+
+.rockstargames-modules-gtao-career-progress-hube22f4ba2c52eb984131cf0e3c069ae1d .rockstargames-modules-gtao-career-progress-hubfaaa2263321f924bc0788b544999f75c {
+  transform: rotate(180deg)
+}
+
+.rockstargames-modules-gtao-career-progress-hubc8cdc26a8e3853b165eb9b67c4c650c3 {
+  height: 10px
+}
+
+.rockstargames-modules-gtao-career-progress-hubb381ebb83ac0e680c3ef3212f37c6e7e {
+  align-items: center;
+  display: inline-flex;
+  height: 11px;
+  justify-content: center;
+  width: 11px
 }
 
 .rockstargames-modules-gtao-career-progress-huba20a19e8c4630691e4d79cd1f2fb8a63 {
@@ -1091,6 +1327,129 @@ h6.rockstargames-modules-gtao-career-progress-hubad48e58a2dc3106dc694151f02e2597
 
   .rockstargames-modules-gtao-career-progress-hubd20738fb38f98c1862571727e5e19cd2 h4 {
     margin: 0
+  }
+}
+
+.rockstargames-modules-gtao-career-progress-hubc5458a0524d6b7a215ebe2ef6a03f6a9 {
+  align-items: center;
+  background: var(--white-100);
+  border-radius: var(--border-radius-xs);
+  color: var(--black-200);
+  display: inline-flex;
+  font-family: var(--font-family-h);
+  font-size: var(--font-size-2);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--letter-spacing-h);
+  line-height: var(--line-height-sm);
+  line-height: 1.3;
+  margin: 0;
+  padding: var(--padding-xxs) var(--padding-xs);
+  text-transform: uppercase;
+  width: -moz-fit-content;
+  width: fit-content
+}
+
+.rockstargames-modules-gtao-career-progress-hubd2cc9bc0109626d8d405696cb1d9b08e {
+  background: var(--rockstar-gold);
+  overflow: hidden;
+  position: relative
+}
+
+.rockstargames-modules-gtao-career-progress-hubc630e44a20c92566f5fc37ddb37b9f09 {
+  background: unset;
+  border: unset;
+  margin-right: var(--margin-xxs);
+  padding: 0
+}
+
+.rockstargames-modules-gtao-career-progress-hubc630e44a20c92566f5fc37ddb37b9f09 svg {
+  stroke: var(--black-200);
+  transform: scale(2)
+}
+
+.rockstargames-modules-gtao-career-progress-hubfdfd92e0937de9af0ba7c24c1bf624f7 {
+  background: var(--black-65, rgba(0, 0, 0, .65));
+  background: linear-gradient(0deg, hsla(0, 0%, 100%, .4), hsla(0, 0%, 100%, .4)), #000;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  cursor: auto;
+  height: 2rem;
+  height: 20px;
+  padding: 0;
+  position: relative;
+  transition: background .3s ease-in-out;
+  width: 2rem;
+  width: 20px
+}
+
+.rockstargames-modules-gtao-career-progress-hubfdfd92e0937de9af0ba7c24c1bf624f7:after {
+  background: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/8f6906ef95740215b29db4a2fc549a24.svg) no-repeat 50%/1rem;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: .3s ease-in-out;
+  width: 100%
+}
+
+@media (pointer:coarse) {
+
+  .rockstargames-modules-gtao-career-progress-hubfdfd92e0937de9af0ba7c24c1bf624f7:active,
+  .rockstargames-modules-gtao-career-progress-hubfdfd92e0937de9af0ba7c24c1bf624f7:focus {
+    background: var(--white-100, #fff)
+  }
+
+  .rockstargames-modules-gtao-career-progress-hubfdfd92e0937de9af0ba7c24c1bf624f7:active:after,
+  .rockstargames-modules-gtao-career-progress-hubfdfd92e0937de9af0ba7c24c1bf624f7:focus:after {
+    filter: invert(1)
+  }
+}
+
+@media not ((pointer:coarse)) {
+
+  .rockstargames-modules-gtao-career-progress-hubfdfd92e0937de9af0ba7c24c1bf624f7:focus,
+  .rockstargames-modules-gtao-career-progress-hubfdfd92e0937de9af0ba7c24c1bf624f7:hover {
+    background: var(--white-100, #fff)
+  }
+
+  .rockstargames-modules-gtao-career-progress-hubfdfd92e0937de9af0ba7c24c1bf624f7:focus:after,
+  .rockstargames-modules-gtao-career-progress-hubfdfd92e0937de9af0ba7c24c1bf624f7:hover:after {
+    filter: invert(1)
+  }
+}
+
+@media (min-width:768px) {
+  .rockstargames-modules-gtao-career-progress-hubfdfd92e0937de9af0ba7c24c1bf624f7 {
+    height: 24px;
+    width: 24px
+  }
+}
+
+.rockstargames-modules-gtao-career-progress-hubfdfd92e0937de9af0ba7c24c1bf624f7:after {
+  background-size: 40%
+}
+
+.rockstargames-modules-gtao-career-progress-hubfdfd92e0937de9af0ba7c24c1bf624f7:hover {
+  background: linear-gradient(0deg, hsla(0, 0%, 100%, .4), hsla(0, 0%, 100%, .4)), #000
+}
+
+.rockstargames-modules-gtao-career-progress-hubfdfd92e0937de9af0ba7c24c1bf624f7:hover:after {
+  filter: none
+}
+
+.rockstargames-modules-gtao-career-progress-hubd16ebe5d8ac91ce11e0b7cbd2e91f018 {
+  height: 20px;
+  visibility: hidden;
+  width: 20px
+}
+
+@media (min-width:768px) {
+  .rockstargames-modules-gtao-career-progress-hubd16ebe5d8ac91ce11e0b7cbd2e91f018 {
+    height: 24px;
+    width: 24px
   }
 }
 
@@ -2091,6 +2450,20 @@ h6.rockstargames-modules-gtao-career-progress-hubad48e58a2dc3106dc694151f02e2597
   }
 }
 
+.rockstargames-modules-gtao-career-progress-hube785594af3aa6bc9c87519f26dd2ec6f {
+  background: rgba(252, 175, 23, .2);
+  border: 1px solid var(--rockstar-gold);
+  border-radius: var(--border-radius-sm);
+  color: var(--color-body);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-3);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--letter-spacing-body);
+  line-height: var(--line-height-lg);
+  margin-bottom: var(--grid-gap-sm);
+  padding: var(--padding-xs) var(--padding-sm)
+}
+
 @keyframes rockstargames-modules-gtao-career-progress-hubf8f125c111c1834c868a70e354423f97 {
   0% {
     display: block;
@@ -2462,6 +2835,40 @@ h6.rockstargames-modules-gtao-career-progress-hubad48e58a2dc3106dc694151f02e2597
   }
 }
 
+.rockstargames-modules-gtao-career-progress-huba6cf93b80ac3abc2271df9b0457b823b .rockstargames-modules-gtao-career-progress-hube698b18415ea1f00641566da54f42414 {
+  background: transparent;
+  border: none;
+  height: 14px;
+  margin: 0;
+  margin: 0 0 0 var(--margin-sm);
+  width: 14px
+}
+
+.rockstargames-modules-gtao-career-progress-huba6cf93b80ac3abc2271df9b0457b823b .rockstargames-modules-gtao-career-progress-hube698b18415ea1f00641566da54f42414 svg {
+  stroke: var(--white-100);
+  height: 10px;
+  transform: scale(1.8);
+  width: 10px
+}
+
+.rockstargames-modules-gtao-career-progress-huba6cf93b80ac3abc2271df9b0457b823b.rockstargames-modules-gtao-career-progress-hube265577ee467ad5f32e48812511c4e97 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-left: var(--padding-sm);
+  padding-right: var(--padding-sm)
+}
+
+@media (min-width:1280px) {
+  .rockstargames-modules-gtao-career-progress-huba6cf93b80ac3abc2271df9b0457b823b.rockstargames-modules-gtao-career-progress-hube265577ee467ad5f32e48812511c4e97 {
+    justify-content: space-between
+  }
+}
+
+.rockstargames-modules-gtao-career-progress-huba6cf93b80ac3abc2271df9b0457b823b.rockstargames-modules-gtao-career-progress-hube265577ee467ad5f32e48812511c4e97.rockstargames-modules-gtao-career-progress-hubf3bb0bf8761d0b1fe71eb5ffce7b13c1 svg {
+  stroke: var(--black-100)
+}
+
 .rockstargames-modules-gtao-career-progress-hubd4ff2b713fd354814b02ee3f7b20c3f0 {
   display: grid;
   flex: 1;
@@ -2508,6 +2915,11 @@ h6.rockstargames-modules-gtao-career-progress-hubad48e58a2dc3106dc694151f02e2597
   display: flex;
   flex: 1;
   justify-content: flex-end
+}
+
+.rockstargames-modules-gtao-career-progress-hubd4ff2b713fd354814b02ee3f7b20c3f0 .rockstargames-modules-gtao-career-progress-huba35918eb9893a6bddbbeb054ecb4889f {
+  margin-right: var(--margin-sm);
+  max-width: 200px
 }
 
 .rockstargames-modules-gtao-career-progress-hubd4ff2b713fd354814b02ee3f7b20c3f0 .rockstargames-modules-gtao-career-progress-hubeb38cec2b0f953e333a1bf12e5377d64 {
@@ -2612,6 +3024,110 @@ h6.rockstargames-modules-gtao-career-progress-hubad48e58a2dc3106dc694151f02e2597
     overflow-y: unset;
     position: absolute
   }
+}
+
+.rockstargames-modules-gtao-career-progress-hubc39e7f11f34f93554582cb0bc9932d4c {
+  align-items: center;
+  background: rgba(252, 175, 23, .2);
+  border: 1px solid var(--rockstar-gold);
+  border-radius: var(--border-radius-sm);
+  display: flex;
+  margin: var(--grid-gap-xs) 0;
+  padding: var(--padding-xs) var(--padding-sm)
+}
+
+.rockstargames-modules-gtao-career-progress-hube545033b541537d37a6cc2dbbc3d4f81 {
+  color: var(--color-body);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-3);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--letter-spacing-body);
+  line-height: var(--line-height-lg);
+  opacity: 0;
+  padding: var(--grid-gap-xs) 0;
+  transition: opacity .2s ease-in;
+  visibility: hidden;
+  width: 450px;
+  z-index: 999
+}
+
+.rockstargames-modules-gtao-career-progress-hube545033b541537d37a6cc2dbbc3d4f81 .rockstargames-modules-gtao-career-progress-hubc442b4a0c7c5df3b75885c488d3a1b81 {
+  background: linear-gradient(0deg, hsla(0, 0%, 100%, .15), hsla(0, 0%, 100%, .15)), #000;
+  border-color: var(--border-color);
+  border-radius: var(--border-radius-sm);
+  box-shadow: 8px -8px 24px rgba(0, 0, 0, .4);
+  color: var(--text-light);
+  padding: var(--margin-sm)
+}
+
+.rockstargames-modules-gtao-career-progress-hubd0616ef24f7c418d608af8a2e0634a9a {
+  background: var(--black-65, rgba(0, 0, 0, .65));
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  height: 2rem;
+  height: 1rem;
+  margin-left: var(--margin-sm);
+  padding: 0;
+  position: relative;
+  transition: background .3s ease-in-out;
+  width: 2rem;
+  width: 1rem
+}
+
+.rockstargames-modules-gtao-career-progress-hubd0616ef24f7c418d608af8a2e0634a9a:after {
+  background: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/2caec053548b06f15000ff7e02c9a14d.svg) no-repeat 50%/1rem;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: .3s ease-in-out;
+  width: 100%
+}
+
+@media (pointer:coarse) {
+
+  .rockstargames-modules-gtao-career-progress-hubd0616ef24f7c418d608af8a2e0634a9a:active,
+  .rockstargames-modules-gtao-career-progress-hubd0616ef24f7c418d608af8a2e0634a9a:focus {
+    background: var(--white-100, #fff)
+  }
+
+  .rockstargames-modules-gtao-career-progress-hubd0616ef24f7c418d608af8a2e0634a9a:active:after,
+  .rockstargames-modules-gtao-career-progress-hubd0616ef24f7c418d608af8a2e0634a9a:focus:after {
+    filter: invert(1)
+  }
+}
+
+@media not ((pointer:coarse)) {
+
+  .rockstargames-modules-gtao-career-progress-hubd0616ef24f7c418d608af8a2e0634a9a:focus,
+  .rockstargames-modules-gtao-career-progress-hubd0616ef24f7c418d608af8a2e0634a9a:hover {
+    background: var(--white-100, #fff)
+  }
+
+  .rockstargames-modules-gtao-career-progress-hubd0616ef24f7c418d608af8a2e0634a9a:focus:after,
+  .rockstargames-modules-gtao-career-progress-hubd0616ef24f7c418d608af8a2e0634a9a:hover:after {
+    filter: invert(1)
+  }
+}
+
+.rockstargames-modules-gtao-career-progress-hubd0616ef24f7c418d608af8a2e0634a9a:focus,
+.rockstargames-modules-gtao-career-progress-hubd0616ef24f7c418d608af8a2e0634a9a:hover {
+  background: none
+}
+
+.rockstargames-modules-gtao-career-progress-hubd0616ef24f7c418d608af8a2e0634a9a:focus:after,
+.rockstargames-modules-gtao-career-progress-hubd0616ef24f7c418d608af8a2e0634a9a:hover:after {
+  filter: none
+}
+
+.rockstargames-modules-gtao-career-progress-hubd0616ef24f7c418d608af8a2e0634a9a:focus+.rockstargames-modules-gtao-career-progress-hube545033b541537d37a6cc2dbbc3d4f81,
+.rockstargames-modules-gtao-career-progress-hubd0616ef24f7c418d608af8a2e0634a9a:hover+.rockstargames-modules-gtao-career-progress-hube545033b541537d37a6cc2dbbc3d4f81 {
+  opacity: 1;
+  visibility: visible
 }
 
 .rockstargames-modules-gtao-career-progress-hubac0cba78345de240f86c6805a2d6cb8b {
@@ -3084,6 +3600,12 @@ body[data-show-more-content] .rockstargames-modules-gtao-career-progress-hubea84
   width: 100vw
 }
 
+@media (min-width:0px) and (max-width:767px) {
+  .rockstargames-modules-gtao-career-progress-hubc6a34f440f166b60d325d87d27fd65ef {
+    margin-bottom: calc(var(--padding-lg) + 3rem) !important
+  }
+}
+
 @media (min-width:768px) {
   .rockstargames-modules-gtao-career-progress-hubc6a34f440f166b60d325d87d27fd65ef {
     align-items: center;
@@ -3155,25 +3677,58 @@ body[data-show-more-content] .rockstargames-modules-gtao-career-progress-hubea84
   }
 }
 
-.rockstargames-modules-gtao-career-progress-hubfd08d81b98e294fb92f04c336656f777 {
-  height: 40vw;
+.rockstargames-modules-gtao-career-progress-huba1fb8ef8aa1c8016ecb3a047fa54b1ad {
+  grid-gap: var(--grid-gap-md);
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 0 auto 3rem;
-  max-width: 80vw;
-  object-fit: contain;
-  object-position: bottom;
   position: absolute;
-  width: auto;
+  width: 18vw;
   z-index: 3
 }
 
+@media (min-width:0px) {
+  .rockstargames-modules-gtao-career-progress-huba1fb8ef8aa1c8016ecb3a047fa54b1ad {
+    grid-gap: var(--grid-gap-xl);
+    align-items: center;
+    bottom: -7rem;
+    padding: 0 var(--padding-sides);
+    width: 100%
+  }
+}
+
 @media (min-width:768px) {
-  .rockstargames-modules-gtao-career-progress-hubfd08d81b98e294fb92f04c336656f777 {
-    height: auto;
+  .rockstargames-modules-gtao-career-progress-huba1fb8ef8aa1c8016ecb3a047fa54b1ad {
+    grid-gap: var(--grid-gap-xs);
+    bottom: unset;
     margin: 0 0 0 var(--padding-sides);
+    padding: unset;
+    width: 20vw
+  }
+}
+
+@media (min-width:1024px) {
+  .rockstargames-modules-gtao-career-progress-huba1fb8ef8aa1c8016ecb3a047fa54b1ad {
+    grid-gap: var(--grid-gap-sm)
+  }
+}
+
+.rockstargames-modules-gtao-career-progress-huba1fb8ef8aa1c8016ecb3a047fa54b1ad .rockstargames-modules-gtao-career-progress-hubfd08d81b98e294fb92f04c336656f777 {
+  height: 40vw;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: bottom;
+  width: auto
+}
+
+@media (min-width:768px) {
+  .rockstargames-modules-gtao-career-progress-huba1fb8ef8aa1c8016ecb3a047fa54b1ad .rockstargames-modules-gtao-career-progress-hubfd08d81b98e294fb92f04c336656f777 {
+    height: auto;
     object-position: unset;
     padding: 0;
-    position: unset;
-    width: 20vw
+    position: unset
   }
 }
 
@@ -3339,6 +3894,7 @@ body[data-show-more-content] .rockstargames-modules-gtao-career-progress-hubea84
 .rockstargames-modules-gtao-career-progress-hubcb293e23ff93c9a4b565f50c3c63bfc5,
 .rockstargames-modules-gtao-career-progress-hubfae98cedf44568e468931cc288fbacda,
 .rockstargames-modules-gtao-career-progress-hube78616d73fca3bbeedb1301c28edf31f,
+.rockstargames-modules-gtao-career-progress-huba229bafc8e2f24d945e84015e974bc94,
 .rockstargames-modules-gtao-career-progress-hubcf2f42c0c4cebbc7890f77059fbb25cc {
   --pack-page-section-padding: 1.5rem;
   --pack-page-section-border-radius: var(--border-radius-md);
@@ -3352,6 +3908,7 @@ body[data-show-more-content] .rockstargames-modules-gtao-career-progress-hubea84
   .rockstargames-modules-gtao-career-progress-hubcb293e23ff93c9a4b565f50c3c63bfc5,
   .rockstargames-modules-gtao-career-progress-hubfae98cedf44568e468931cc288fbacda,
   .rockstargames-modules-gtao-career-progress-hube78616d73fca3bbeedb1301c28edf31f,
+  .rockstargames-modules-gtao-career-progress-huba229bafc8e2f24d945e84015e974bc94,
   .rockstargames-modules-gtao-career-progress-hubcf2f42c0c4cebbc7890f77059fbb25cc {
     --pack-page-section-padding: 2rem;
     --pack-page-section-border-radius: var(--border-radius-lg)
@@ -3363,6 +3920,7 @@ body[data-show-more-content] .rockstargames-modules-gtao-career-progress-hubea84
   .rockstargames-modules-gtao-career-progress-hubcb293e23ff93c9a4b565f50c3c63bfc5,
   .rockstargames-modules-gtao-career-progress-hubfae98cedf44568e468931cc288fbacda,
   .rockstargames-modules-gtao-career-progress-hube78616d73fca3bbeedb1301c28edf31f,
+  .rockstargames-modules-gtao-career-progress-huba229bafc8e2f24d945e84015e974bc94,
   .rockstargames-modules-gtao-career-progress-hubcf2f42c0c4cebbc7890f77059fbb25cc {
     --pack-page-section-padding: 3rem
   }
@@ -3371,6 +3929,7 @@ body[data-show-more-content] .rockstargames-modules-gtao-career-progress-hubea84
 .rockstargames-modules-gtao-career-progress-hubcb293e23ff93c9a4b565f50c3c63bfc5>*,
 .rockstargames-modules-gtao-career-progress-hubfae98cedf44568e468931cc288fbacda>*,
 .rockstargames-modules-gtao-career-progress-hube78616d73fca3bbeedb1301c28edf31f>*,
+.rockstargames-modules-gtao-career-progress-huba229bafc8e2f24d945e84015e974bc94>*,
 .rockstargames-modules-gtao-career-progress-hubcf2f42c0c4cebbc7890f77059fbb25cc>* {
   margin-bottom: var(--padding-lg)
 }
@@ -3396,13 +3955,15 @@ body[data-show-more-content] .rockstargames-modules-gtao-career-progress-hubea84
 }
 
 .rockstargames-modules-gtao-career-progress-hube78616d73fca3bbeedb1301c28edf31f,
+.rockstargames-modules-gtao-career-progress-huba229bafc8e2f24d945e84015e974bc94,
 .rockstargames-modules-gtao-career-progress-hubcf2f42c0c4cebbc7890f77059fbb25cc {
-  grid-template-areas: "hero hero hero" ". intro ." "imageGallery imageGallery imageGallery" "ctaLinkACharacter ctaLinkACharacter ctaLinkACharacter" ". callout ." "login login login" ". highlights ." "rewardsTracker rewardsTracker rewardsTracker" ". awards ." "feedback feedback feedback" "rating rating rating"
+  grid-template-areas: "hero hero hero" ". intro ." "imageGallery imageGallery imageGallery" "ctaLinkACharacter ctaLinkACharacter ctaLinkACharacter" ". callout ." "login login login" "rewardsTrackerWithData rewardsTrackerWithData rewardsTrackerWithData" ". highlights ." "rewardsTracker rewardsTracker rewardsTracker" ". awards ." "feedback feedback feedback" "rating rating rating"
 }
 
 @media (min-width:1024px) {
 
   .rockstargames-modules-gtao-career-progress-hube78616d73fca3bbeedb1301c28edf31f,
+  .rockstargames-modules-gtao-career-progress-huba229bafc8e2f24d945e84015e974bc94,
   .rockstargames-modules-gtao-career-progress-hubcf2f42c0c4cebbc7890f77059fbb25cc {
     grid-template-areas: "hero hero hero" ". intro ." "imageGallery imageGallery imageGallery" "ctaLinkACharacter ctaLinkACharacter ctaLinkACharacter" "login login login" ". rewardsTrackerWithData ." ". highlights ." ". rewardsTracker ." ". awards ." "feedback feedback feedback" "rating rating rating"
   }

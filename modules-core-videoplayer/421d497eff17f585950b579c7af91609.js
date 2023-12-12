@@ -52,6 +52,9 @@
               children: [(0, l.jsx)("h5", {
                 children: (0, l.jsx)(t.A, {
                   to: `/videos?type=game&gameId=${u?.game?.sku_id??u.game.id}`,
+                  style: {
+                    pointerEvents: u?.youtubeOnly ? "none" : "auto"
+                  },
                   children: u.game.title
                 })
               }), (0, l.jsx)("time", {

@@ -1762,7 +1762,8 @@
   position: var(--cta-position, static);
   right: var(--cta-right, 0);
   text-transform: var(--cta-text-transform, uppercase);
-  top: var(--cta-top, 0)
+  top: var(--cta-top, 0);
+  z-index: var(--cta-z-index)
 }
 
 @media (min-width:2560px) {
@@ -1914,6 +1915,106 @@
   height: 1rem;
   max-width: 100%;
   object-fit: contain
+}
+
+.rockstargames-componentsbe39fbdcbb3b9229e6fd8207fb9b716d[data-variant=gen9] {
+  --cta-font-family: var(--font-family-h);
+  --cta-font-weight: 400;
+  align-items: center;
+  background: var(--black-65, hsla(0, 0%, 7%, .65));
+  border: 1px solid var(--white-100, #fff);
+  border-radius: var(--border-radius-sm, 4px);
+  color: var(--white-100);
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  gap: var(--grid-gap-xs, .5rem);
+  height: var(--button-height-3, 3rem);
+  justify-content: center;
+  padding: 0 var(--padding-sm);
+  transition: all .3s ease-in-out;
+  width: 100%
+}
+
+.rockstargames-componentsbe39fbdcbb3b9229e6fd8207fb9b716d[data-variant=gen9][data-brand=reddeadredemption] {
+  --font-family-h: RDRUltra
+}
+
+.rockstargames-componentsbe39fbdcbb3b9229e6fd8207fb9b716d[data-variant=gen9][data-brand=reddeadredemption] :lang(pl_pl) {
+  --font-family-h: RDRUltra, NeueHelveticaPaneuropean
+}
+
+.rockstargames-componentsbe39fbdcbb3b9229e6fd8207fb9b716d[data-variant=gen9] img {
+  height: 1.25rem;
+  width: auto
+}
+
+.rockstargames-componentsbe39fbdcbb3b9229e6fd8207fb9b716d[data-variant=gen9] .rockstargames-componentsf2e903547022a38346813d8c4ac606cd {
+  display: flex;
+  flex-shrink: 0;
+  font-family: var(--font-family-h);
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--letter-spacing-h);
+  line-height: var(--line-height-sm);
+  text-transform: uppercase
+}
+
+.rockstargames-componentsbe39fbdcbb3b9229e6fd8207fb9b716d[data-variant=gen9].rockstargames-componentsb7efd254942acd5c21c297f91d5ab818 {
+  background-color: var(--white-100);
+  color: var(--black-100)
+}
+
+.rockstargames-componentsbe39fbdcbb3b9229e6fd8207fb9b716d[data-variant=gen9]:hover {
+  background-color: var(--btn-active-color);
+  border-color: var(--btn-active-color)
+}
+
+.rockstargames-componentsbe39fbdcbb3b9229e6fd8207fb9b716d[data-variant=gen9]:hover.rockstargames-componentsb7efd254942acd5c21c297f91d5ab818 {
+  color: var(--white-100)
+}
+
+@media (min-width:1280px) {
+  .rockstargames-componentsbe39fbdcbb3b9229e6fd8207fb9b716d[data-variant=gen9] {
+    padding: 0 var(--padding-md)
+  }
+}
+
+@media (min-width:768px) and (max-width:1539px) {
+  .rockstargames-componentsbe39fbdcbb3b9229e6fd8207fb9b716d[data-variant=gen9] {
+    height: 2.5rem
+  }
+
+  .rockstargames-componentsbe39fbdcbb3b9229e6fd8207fb9b716d[data-variant=gen9] img {
+    height: 1rem
+  }
+
+  .rockstargames-componentsbe39fbdcbb3b9229e6fd8207fb9b716d[data-variant=gen9] .rockstargames-componentsf2e903547022a38346813d8c4ac606cd {
+    font-family: var(--font-family-h);
+    font-size: var(--font-size-4);
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-regular);
+    letter-spacing: var(--letter-spacing-h);
+    line-height: var(--line-height-sm);
+    text-transform: uppercase
+  }
+}
+
+.rockstargames-componentsbe39fbdcbb3b9229e6fd8207fb9b716d[data-variant=gen9] .rockstargames-componentsc1544cd82744081706f4f5def406d828 {
+  transition: all .3s ease-out
+}
+
+.rockstargames-componentsbe39fbdcbb3b9229e6fd8207fb9b716d[data-variant=gen9]:hover {
+  --btn-active-color: var(--white-100);
+  color: var(--black-100)
+}
+
+.rockstargames-componentsbe39fbdcbb3b9229e6fd8207fb9b716d[data-variant=gen9]:hover .rockstargames-componentsa1fadf1cdd8ec7e3c0ad4315b8c7f66e span {
+  color: var(--black-100)
+}
+
+.rockstargames-componentsbe39fbdcbb3b9229e6fd8207fb9b716d[data-variant=gen9]:hover .rockstargames-componentsc1544cd82744081706f4f5def406d828 {
+  filter: invert(1)
 }
 
 .rockstargames-componentsbe39fbdcbb3b9229e6fd8207fb9b716d .rockstargames-componentsa1fadf1cdd8ec7e3c0ad4315b8c7f66e {

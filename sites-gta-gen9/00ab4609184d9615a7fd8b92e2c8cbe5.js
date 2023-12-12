@@ -799,7 +799,7 @@
     4222: (e, a, t) => {
       "use strict";
       t.d(a, {
-        Z: () => h
+        Z: () => k
       });
       var s = t(927),
         n = t(6237),
@@ -807,8 +807,9 @@
         i = t.n(r),
         c = t(3153),
         o = t(8976),
-        d = t(215);
-      const l = {
+        d = t(6711),
+        l = t(215);
+      const g = {
         guideNav: "rockstargames-sites-gta-gen9dc6a651dc3aebb3a3e112e4d94b5483f",
         headerHidden: "rockstargames-sites-gta-gen9f42dd22b2d449a6474bc3a92e5ba9e2d",
         guideList: "rockstargames-sites-gta-gen9f94b06d8279968e7a036e6aaad56140a",
@@ -817,12 +818,12 @@
         guide: "rockstargames-sites-gta-gen9c06ceafe8b3ec4d8918797e0928400d1",
         sections: "rockstargames-sites-gta-gen9dcbefa30334c656a38e45495ab02a0b2"
       };
-      var g = t(3705);
-      const m = {
+      var m = t(3705);
+      const u = {
           ease: "easeInOut",
           duration: .3
         },
-        u = {
+        f = {
           closed: {
             opacity: 0,
             height: "0px"
@@ -832,38 +833,47 @@
             height: "auto"
           }
         },
-        f = e => {
+        b = e => {
           let {
             to: a,
             title: t,
             id_hash: n,
             query: r
           } = e;
-          const [i, c] = (0, s.useState)(n === r), {
-            state: m
-          } = (0, d.MB)(), {
-            activeSection: u
-          } = m;
-          return (0, s.useEffect)((() => c(r !== u ? u === n : r === n)), [u]), (0, g.jsx)(o.A, {
+          const {
+            track: i
+          } = (0, d.useGtmTrack)(), [c, u] = (0, s.useState)(n === r), {
+            state: f
+          } = (0, l.MB)(), {
+            activeSection: b
+          } = f;
+          return (0, s.useEffect)((() => u(r !== b ? b === n : r === n)), [b]), (0, m.jsx)(o.A, {
             to: a,
-            className: i ? l.activeSection : "",
+            className: c ? g.activeSection : "",
+            onClick: () => {
+              i({
+                event: "nav_click",
+                event_category: "nav",
+                event_action: "click"
+              })
+            },
             children: t
           }, a)
         },
-        b = e => {
+        v = e => {
           let {
             sections: a
           } = e;
           const [t] = (0, n.useSearchParams)();
-          return (0, g.jsx)("div", {
-            className: l.sections,
+          return (0, m.jsx)("div", {
+            className: g.sections,
             children: a?.map((e => {
               let {
                 id_hash: a,
                 title: s,
                 to: n
               } = e;
-              return (0, g.jsx)(f, {
+              return (0, m.jsx)(b, {
                 id_hash: a,
                 query: t,
                 title: s,
@@ -872,14 +882,14 @@
             }))
           })
         },
-        v = e => {
+        h = e => {
           let {
             currentId: a,
             group: t
           } = e;
-          const [n, r] = (0, s.useState)(null), [f, v] = (0, s.useState)(null), {
+          const [n, r] = (0, s.useState)(null), [d, b] = (0, s.useState)(null), {
             state: h
-          } = (0, d.MB)(), {
+          } = (0, l.MB)(), {
             activeSection: k
           } = h;
           return (0, s.useEffect)((() => {
@@ -889,17 +899,17 @@
               } = e;
               return t === a
             }));
-            v(e), r(-1 !== e)
-          }), [a, k, t]), (0, g.jsxs)("div", {
-            className: l.guideList,
-            children: [(0, g.jsx)("button", {
+            b(e), r(-1 !== e)
+          }), [a, k, t]), (0, m.jsxs)("div", {
+            className: g.guideList,
+            children: [(0, m.jsx)("button", {
               type: "button",
               onClick: () => r(!n),
               children: t.title
-            }), (0, g.jsx)(c.E.nav, {
+            }), (0, m.jsx)(c.E.nav, {
               animate: n ? "open" : "closed",
-              variants: u,
-              transition: m,
+              variants: f,
+              transition: u,
               children: t?.children?.map(((e, t) => {
                 let {
                   children: s,
@@ -907,13 +917,13 @@
                   title: r,
                   to: i
                 } = e;
-                return (0, g.jsxs)("div", {
-                  className: l.guide,
-                  children: [(0, g.jsx)(o.A, {
-                    className: [l.guideLink, a === n ? l.guideLinkCurrent : ""].join(" "),
+                return (0, m.jsxs)("div", {
+                  className: g.guide,
+                  children: [(0, m.jsx)(o.A, {
+                    className: [g.guideLink, a === n ? g.guideLinkCurrent : ""].join(" "),
                     to: i,
                     children: r
-                  }), t === f && s?.length ? (0, g.jsx)(b, {
+                  }), t === d && s?.length ? (0, m.jsx)(v, {
                     sections: s
                   }) : ""]
                 }, r)
@@ -921,23 +931,23 @@
             })]
           })
         },
-        h = e => {
+        k = e => {
           let {
             currentId: a
           } = e;
-          const t = (0, d.yv)(),
+          const t = (0, l.yv)(),
             {
               state: {
                 headerHeight: s,
                 headerHidden: n
               }
-            } = (0, d.MB)();
-          return (0, g.jsx)("div", {
-            className: [l.guideNav, n ? l.headerHidden : ""].join(" "),
+            } = (0, l.MB)();
+          return (0, m.jsx)("div", {
+            className: [g.guideNav, n ? g.headerHidden : ""].join(" "),
             style: {
               "--header-height": `${s}px`
             },
-            children: t?.map((e => (0, g.jsx)(v, {
+            children: t?.map((e => (0, m.jsx)(h, {
               currentId: a,
               group: e
             }, e.id_hash)))
@@ -1745,8 +1755,7 @@
       t.d(a, {
         MB: () => r,
         aQ: () => i.a,
-        KO: () => u,
-        kt: () => f,
+        KO: () => m,
         yv: () => o,
         YM: () => l
       });
@@ -1831,42 +1840,28 @@
         }]);
         return e
       };
-      var g = t(6711),
-        m = t(2961);
-      const u = function(e) {
-          let a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : " > ";
-          const [t, n] = (0, d.useState)(null), {
-            data: r
-          } = (0, s.useQuery)(m.TinaModulesTree, {
-            variables: {
-              id: e
-            },
-            skip: !e
-          });
-          return (0, d.useEffect)((() => {
-            const e = r?.tinaModulesTree?.[0]?.tree ?? null;
-            e && n(e.map((e => {
-              let {
-                title: a
-              } = e;
-              return a
-            })).join(a))
-          }), [r, a, e]), t
-        },
-        f = function(e) {
-          let a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : " > ";
-          const {
-            track: t
-          } = (0, g.useGtmTrack)(), s = u(e, a);
-          return (0, d.useEffect)((() => {
-            s && t({
-              event: "nav_click",
-              event_category: "nav",
-              event_action: "click",
-              event_label: s
-            })
-          }), [s])
-        }
+      t(6711);
+      var g = t(2961);
+      const m = function(e) {
+        let a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : " > ";
+        const [t, n] = (0, d.useState)(null), {
+          data: r
+        } = (0, s.useQuery)(g.TinaModulesTree, {
+          variables: {
+            id: e
+          },
+          skip: !e
+        });
+        return (0, d.useEffect)((() => {
+          const e = r?.tinaModulesTree?.[0]?.tree ?? null;
+          e && n(e.map((e => {
+            let {
+              title: a
+            } = e;
+            return a
+          })).join(a))
+        }), [r, a, e]), t
+      }
     },
     7330: (e, a, t) => {
       "use strict";

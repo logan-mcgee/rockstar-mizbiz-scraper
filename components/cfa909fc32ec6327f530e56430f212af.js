@@ -1,4 +1,4 @@
-/*! For license information please see 772217f2d0f90d57acb570da5b644b8c.js.LICENSE.txt */
+/*! For license information please see cfa909fc32ec6327f530e56430f212af.js.LICENSE.txt */
 (self.webpackChunk_rockstargames_components = self.webpackChunk_rockstargames_components || []).push([
   [580], {
     3032: (e, l, a) => {
@@ -846,6 +846,9 @@
               }, {
                 value: "platform",
                 label: "Platform"
+              }, {
+                value: "gen9",
+                label: "Next Generation"
               }]
             }, (0, t.translatedField)({
               name: "platformItem",

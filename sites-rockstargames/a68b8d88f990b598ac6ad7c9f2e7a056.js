@@ -50,8 +50,8 @@
         N = i(1968),
         S = i(1458),
         x = i(9089),
-        j = i(2596),
-        y = i(9894);
+        y = i(2596),
+        j = i(9894);
       const w = e => {
         let {
           locales: a,
@@ -65,7 +65,7 @@
           s = (0, d.useMemo)((() => function(e, a) {
             return e?.[a] ?? {}
           }(a, t[1])), [i, a]);
-        return (0, o.jsx)(y.Z, {
+        return (0, o.jsx)(j.Z, {
           messages: s,
           locale: t[0],
           defaultLocale: "en",
@@ -78,9 +78,9 @@
         T = i.n(_),
         A = i(4501),
         E = i(398);
-      const D = "rockstargames-sites-rockstargamesf75798e3984014f9cd35c5956e94fbb3",
-        L = "rockstargames-sites-rockstargamesaa6bc8070e5e81ea0594636575db8fd6";
-      var I = i(176);
+      const I = "rockstargames-sites-rockstargamesf75798e3984014f9cd35c5956e94fbb3",
+        D = "rockstargames-sites-rockstargamesaa6bc8070e5e81ea0594636575db8fd6";
+      var L = i(176);
       const $ = e => {
           let {
             games: a,
@@ -90,7 +90,7 @@
             className: "rockstargames-sites-rockstargamesbec4f690ea94ae150d36b6be04b7011d",
             "data-testid": "featuredGames",
             children: [(0, o.jsx)("h3", {
-              className: D,
+              className: I,
               children: (0, o.jsx)(g.A, {
                 to: "newswire",
                 "aria-label": i("Featured Games"),
@@ -98,7 +98,7 @@
                 children: i("Featured Games")
               })
             }), (0, o.jsx)("div", {
-              className: L,
+              className: D,
               children: a.map((e => (0, o.jsx)(g.GameCard.Link, {
                 game: e
               }, e.id)))
@@ -124,7 +124,7 @@
             className: "rockstargames-sites-rockstargamesbc6c5d345fb1cccca402fd4a97a8bef8",
             "data-testid": "newswire",
             children: [(0, o.jsx)("h3", {
-              className: D,
+              className: I,
               children: (0, o.jsx)(g.A, {
                 to: "newswire",
                 "aria-label": i("Newswire"),
@@ -132,7 +132,7 @@
                 children: i("Newswire")
               })
             }), (0, o.jsx)(g.NewswireBlocks, {
-              className: L,
+              className: D,
               posts: a,
               noSpecialOrder: !0
             }), (0, o.jsx)(g.Button, {
@@ -154,7 +154,7 @@
           } = e;
           const {
             data: i
-          } = (0, p.useQuery)(I.Home, {
+          } = (0, p.useQuery)(L.Home, {
             autoSetLoading: !0
           });
           if (!i) return null;
@@ -202,8 +202,8 @@
             })
           })
         }));
-      var q = i(4524),
-        O = i.n(q);
+      var O = i(4524),
+        q = i.n(O);
       const B = (0, h.withTranslations)((e => {
           let {
             t: a
@@ -218,7 +218,7 @@
             title: a("Newswire")
           }], ""), () => {
             t(!0), n()
-          })), []), (0, o.jsx)(O(), {
+          })), []), (0, o.jsx)(q(), {
             idHash: String(i.articleId)
           })
         })),
@@ -238,8 +238,12 @@
           variables: s,
           skip: !Object.entries(s).length,
           autoSetLoading: !0
-        });
-        if ((0, d.useEffect)((() => (i([{
+        }), {
+          search: c
+        } = (0, E.useLocation)();
+        if ((0, d.useEffect)((() => {
+            window.scrollTo(0, 0)
+          }), [c]), (0, d.useEffect)((() => (i([{
             href: "/videos",
             title: a("Videos")
           }]), () => {
@@ -248,7 +252,7 @@
             r({
               ...s,
               type: t.get("type"),
-              gameId: parseInt(t.get("gameId") ?? 0),
+              gameId: Number(t.get("gameId") ?? 0),
               index: null === t.get("type")
             })
           }), [t.get("type"), t.get("gameId")]), (0, d.useEffect)((() => (n(!1), () => n(!0))), []), !l) return null;
@@ -260,31 +264,35 @@
           })
         });
         const {
-          games: c,
-          gtao: m,
-          gtaosessions: u,
-          latest: k,
-          rdo: v
+          games: m,
+          gtao: u,
+          gtaVI: k,
+          gtaosessions: v,
+          latest: f,
+          rdo: b
         } = l;
         return (0, o.jsx)("div", {
           className: R,
           children: s.type ? "" : (0, o.jsxs)(o.Fragment, {
             children: [(0, o.jsx)(g.VideoCarousel, {
-              videos: k.results,
+              videos: f.results,
               t: a
             }), (0, o.jsxs)("div", {
               className: "rockstargames-sites-rockstargamesb9a5297e3e78f65221054aa1f6d77597",
               children: [(0, o.jsx)(g.VideoList, {
-                vids: v.results,
+                vids: k.results,
+                title: a("Videos from %s").replace("%s", "Grand Theft Auto VI")
+              }), (0, o.jsx)(g.VideoList, {
+                vids: b.results,
                 title: a("Videos from %s").replace("%s", "Red Dead Online")
               }), (0, o.jsx)(g.VideoList, {
-                vids: m.results,
+                vids: u.results,
                 title: a("Videos from %s").replace("%s", "GTA Online")
               }), (0, o.jsx)(g.VideoList, {
-                vids: u.results,
+                vids: v.results,
                 title: a("GTA Online Sessions Episodes")
               }), (0, o.jsx)(g.VideoList, {
-                games: c,
+                games: m,
                 title: a("By Game")
               })]
             })]
@@ -702,7 +710,7 @@
           let {
             t: a
           } = e;
-          const i = (0, j.Z)(),
+          const i = (0, y.Z)(),
             {
               state: {
                 search: n
@@ -927,11 +935,11 @@
           titleKey: "Corporate Information",
           noCountrySelector: !0
         }),
-        je = () => (0, o.jsx)(Ne, {
+        ye = () => (0, o.jsx)(Ne, {
           jsonType: "eula",
           titleKey: "eula-title"
         }),
-        ye = () => (0, o.jsx)(Ne, {
+        je = () => (0, o.jsx)(Ne, {
           jsonType: "legal",
           titleKey: "Terms of Service"
         }),
@@ -1028,14 +1036,14 @@
           warriorsCredit: "rockstargames-sites-rockstargamesc73dbe223b5a37cc86f32feeb506ca61"
         };
       var Ee = i(2239),
-        De = i.n(Ee);
-      const Le = (0, h.withTranslations)((e => {
+        Ie = i.n(Ee);
+      const De = (0, h.withTranslations)((e => {
         let {
           t: a
         } = e;
         const {
           data: i
-        } = (0, p.useQuery)(De(), {
+        } = (0, p.useQuery)(Ie(), {
           autoSetLoading: !0
         });
         if (!i) return null;
@@ -1073,8 +1081,8 @@
           })]
         })
       }));
-      var Ie = i(9885),
-        $e = i.n(Ie);
+      var Le = i(9885),
+        $e = i.n(Le);
       const Ce = e => {
           let {
             detail: a
@@ -1158,8 +1166,8 @@
           })
         }));
       var Pe = i(8213),
-        qe = i.n(Pe);
-      const Oe = () => {
+        Oe = i.n(Pe);
+      const qe = () => {
           const e = (0, h.useQueryParams)(),
             a = Number(e.get("gameId")),
             i = Number(e.get("songId")),
@@ -1167,7 +1175,7 @@
           let t = !1;
           const {
             data: s
-          } = (0, p.useQuery)(qe(), {
+          } = (0, p.useQuery)(Oe(), {
             variables: {
               gameId: a
             },
@@ -1454,7 +1462,7 @@
             element: (0, o.jsx)(xe, {})
           }, {
             path: "/eula",
-            element: (0, o.jsx)(je, {})
+            element: (0, o.jsx)(ye, {})
           }, {
             path: "/games",
             element: (0, o.jsx)(Z, {})
@@ -1463,7 +1471,7 @@
             element: (0, o.jsx)(le, {})
           }, {
             path: "/legal",
-            element: (0, o.jsx)(ye, {})
+            element: (0, o.jsx)(je, {})
           }, {
             path: "/gta-v/thankyou",
             element: (0, o.jsx)(A.Credits, {
@@ -1524,10 +1532,10 @@
             element: Ke("gta-tv")
           }, {
             path: "/manuals",
-            element: (0, o.jsx)(Le, {})
+            element: (0, o.jsx)(De, {})
           }, {
             path: "/manuals/music",
-            element: (0, o.jsx)(Oe, {})
+            element: (0, o.jsx)(qe, {})
           }, {
             path: "/newswire",
             element: (0, o.jsx)(P, {})
@@ -4388,6 +4396,104 @@
               kind: "Field",
               alias: {
                 kind: "Name",
+                value: "gtaVI"
+              },
+              name: {
+                kind: "Name",
+                value: "videos"
+              },
+              arguments: [{
+                kind: "Argument",
+                name: {
+                  kind: "Name",
+                  value: "locale"
+                },
+                value: {
+                  kind: "Variable",
+                  name: {
+                    kind: "Name",
+                    value: "locale"
+                  }
+                }
+              }, {
+                kind: "Argument",
+                name: {
+                  kind: "Name",
+                  value: "gameId"
+                },
+                value: {
+                  kind: "IntValue",
+                  value: "666"
+                }
+              }],
+              directives: [{
+                kind: "Directive",
+                name: {
+                  kind: "Name",
+                  value: "include"
+                },
+                arguments: [{
+                  kind: "Argument",
+                  name: {
+                    kind: "Name",
+                    value: "if"
+                  },
+                  value: {
+                    kind: "Variable",
+                    name: {
+                      kind: "Name",
+                      value: "index"
+                    }
+                  }
+                }]
+              }],
+              selectionSet: {
+                kind: "SelectionSet",
+                selections: [{
+                  kind: "Field",
+                  name: {
+                    kind: "Name",
+                    value: "results"
+                  },
+                  arguments: [],
+                  directives: [],
+                  selectionSet: {
+                    kind: "SelectionSet",
+                    selections: [{
+                      kind: "FragmentSpread",
+                      name: {
+                        kind: "Name",
+                        value: "videoFields"
+                      },
+                      directives: []
+                    }, {
+                      kind: "Field",
+                      name: {
+                        kind: "Name",
+                        value: "youtubeOnly"
+                      },
+                      arguments: [],
+                      directives: []
+                    }, {
+                      kind: "Field",
+                      alias: {
+                        kind: "Name",
+                        value: "youtubeId"
+                      },
+                      name: {
+                        kind: "Name",
+                        value: "youtube_id"
+                      },
+                      arguments: [],
+                      directives: []
+                    }]
+                  }
+                }]
+              }
+            }, {
+              kind: "Field",
+              alias: {
+                kind: "Name",
                 value: "rdo"
               },
               name: {
@@ -4863,11 +4969,11 @@
         }],
         loc: {
           start: 0,
-          end: 1239
+          end: 1429
         }
       };
       n.loc.source = {
-        body: '#import "@rockstargames/graph-client/operations/fragments/video-fields.graphql"\n\nquery VideosList($gameId: Int, $locale: String!, $index: Boolean!) {\n    meta: metaUrl(locale: $locale, domain: "www", url: "/videos") {\n        title\n    }\n    latest: videos(locale: $locale, limit: 3, finder: "trailers")\n        @include(if: $index) {\n        results {\n            ...videoFields\n        }\n    }\n    rdo: videos(locale: $locale, tagId: 736) @include(if: $index) {\n        results {\n            ...videoFields\n        }\n    }\n    gtao: videos(locale: $locale, tagId: 702) @include(if: $index) {\n        results {\n            ...videoFields\n        }\n    }\n    gtaosessions: videos(\n        locale: $locale\n        finder: "grandTheftAutoOnlineSesssionsEpisodesVideos"\n    ) @include(if: $index) {\n        results {\n            ...videoFields\n        }\n    }\n    games(locale: $locale, finder: "hasVideos") @include(if: $index) {\n        results {\n            id\n            title_slug\n            fob_640\n        }\n    }\n    gameVideos: videos(locale: $locale, gameId: $gameId) @skip(if: $index) {\n        results {\n            ...videoFields\n        }\n    }\n    game(locale: $locale, id: $gameId) @skip(if: $index) {\n        title\n    }\n}\n',
+        body: '#import "@rockstargames/graph-client/operations/fragments/video-fields.graphql"\n\nquery VideosList($gameId: Int, $locale: String!, $index: Boolean!) {\n    meta: metaUrl(locale: $locale, domain: "www", url: "/videos") {\n        title\n    }\n    latest: videos(locale: $locale, limit: 3, finder: "trailers")\n        @include(if: $index) {\n        results {\n            ...videoFields\n        }\n    }\n    gtaVI: videos(locale: $locale, gameId: 666) @include(if: $index) {\n        results {\n            ...videoFields\n            youtubeOnly\n            youtubeId: youtube_id\n        }\n    }\n    rdo: videos(locale: $locale, tagId: 736) @include(if: $index) {\n        results {\n            ...videoFields\n        }\n    }\n    gtao: videos(locale: $locale, tagId: 702) @include(if: $index) {\n        results {\n            ...videoFields\n        }\n    }\n    gtaosessions: videos(\n        locale: $locale\n        finder: "grandTheftAutoOnlineSesssionsEpisodesVideos"\n    ) @include(if: $index) {\n        results {\n            ...videoFields\n        }\n    }\n    games(locale: $locale, finder: "hasVideos") @include(if: $index) {\n        results {\n            id\n            title_slug\n            fob_640\n        }\n    }\n    gameVideos: videos(locale: $locale, gameId: $gameId) @skip(if: $index) {\n        results {\n            ...videoFields\n        }\n    }\n    game(locale: $locale, id: $gameId) @skip(if: $index) {\n        title\n    }\n}\n',
         name: "GraphQL request",
         locationOffset: {
           line: 1,

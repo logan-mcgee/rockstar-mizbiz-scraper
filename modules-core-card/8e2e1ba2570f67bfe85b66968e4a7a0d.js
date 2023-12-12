@@ -29,8 +29,8 @@
           cardType: u = "release",
           title: p,
           subheader: k,
-          subtitle: f,
-          storeInfo: b = {},
+          subtitle: b,
+          storeInfo: f = {},
           expandedType: v,
           to: g,
           image: y,
@@ -39,11 +39,11 @@
           position: N
         } = e;
         const C = (0, d.useTinaPayload)(),
-          T = x?.payload?.meta?.cdn ?? C?.meta?.prod ?? !1,
-          S = {
+          S = x?.payload?.meta?.cdn ?? C?.meta?.prod ?? !1,
+          T = {
             image: {
               ...y,
-              prod: T
+              prod: S
             }
           },
           j = [y];
@@ -53,9 +53,9 @@
           context: "clr-card",
           size: r,
           expandedType: v,
-          images: S,
+          images: T,
           deckProps: h,
-          prod: T,
+          prod: S,
           position: N,
           modalProps: {
             className: o.clrCardModal,
@@ -67,7 +67,7 @@
           },
           expandedCardContents: (0, l.jsx)(c.Z, {
             images: j,
-            prod: T
+            prod: S
           }),
           children: (0, l.jsx)(s.Z, {
             expandedType: v,
@@ -79,12 +79,12 @@
               cardType: u,
               title: p,
               subheader: k,
-              subtitle: f,
-              image: S,
+              subtitle: b,
+              image: T,
               expandedType: v,
-              price: b?.price,
-              slashedPrice: b?.slashedPrice,
-              badge: b?.badge
+              price: f?.price,
+              slashedPrice: f?.slashedPrice,
+              badge: f?.badge
             })
           })
         })
@@ -134,14 +134,14 @@
             slashedPrice: u,
             badge: p = null,
             expandedType: k,
-            videoUrl: f
+            videoUrl: b
           } = e;
           return (0, i.jsx)("div", {
             className: [r.clrCollapsedCard, a].join(" "),
             role: "button",
             tabIndex: 0,
             children: (0, i.jsx)(t, {
-              videoUrl: f,
+              videoUrl: b,
               expandedType: k,
               children: (0, i.jsxs)("div", {
                 className: r.cardContainer,
@@ -198,10 +198,10 @@
       n.r(a), n.d(a, {
         Card: () => d.Z,
         CardGrid: () => v,
-        CardWithImageGallery: () => M.Z,
-        CoverCard: () => j,
-        Deck: () => P.Z,
-        TextCard: () => D.Z
+        CardWithImageGallery: () => j.Z,
+        CoverCard: () => T,
+        Deck: () => D.Z,
+        TextCard: () => M.Z
       });
       var d = n(1810),
         r = n(927),
@@ -215,9 +215,9 @@
         u = n(5231),
         p = n(4859),
         k = n(8845);
-      var f = n(3705);
+      var b = n(3705);
 
-      function b(e, a) {
+      function f(e, a) {
         const n = {
           ...e
         };
@@ -228,7 +228,7 @@
               ...e,
               prod: a
             }
-          } else t().isObject(e) && !t().isArray(e) ? b(e, a) : t().isArray(e) && (n[d] = e.map((e => t().isObject(e) ? b(e, a) : e)))
+          } else t().isObject(e) && !t().isArray(e) ? f(e, a) : t().isArray(e) && (n[d] = e.map((e => t().isObject(e) ? f(e, a) : e)))
         })), n || []
       }
       const v = e => {
@@ -275,14 +275,14 @@
               t().set(r, "payload.meta.id", n);
               const s = r?.payload,
                 c = s?.meta?.cdn ?? !1 ?? v?.meta?.prod ?? !1,
-                o = b(s?.content?.[0], c),
+                o = f(s?.content?.[0], c),
                 m = s?.meta?.title,
                 u = o?._memoq?.subheader,
                 p = o?.image,
                 k = s?.content?.[0].expandedType,
                 g = s?.content?.[0].cardType,
                 y = o?.content ?? [];
-              "release" === g && e.push((0, f.jsx)(l.TinaParser, {
+              "release" === g && e.push((0, b.jsx)(l.TinaParser, {
                 components: i,
                 tina: r,
                 componentProps: {
@@ -298,7 +298,7 @@
             }
             return e
           }), []) : null), [c, a]);
-        return (0, f.jsx)(s.Grid, {
+        return (0, b.jsx)(s.Grid, {
           className: n,
           children: g
         })
@@ -316,17 +316,17 @@
           logo: "rockstargames-modules-core-carda5a09a383b5be586ab9cd8db4065d28b"
         },
         {
-          variants: T
+          variants: S
         } = s.framer.Animations,
-        S = n(5976),
-        j = e => {
+        T = e => {
           let {
             id: a,
-            title: n,
-            content: d,
-            size: i = "md",
-            expandedType: t = "short",
-            textOverlayProps: s = {
+            logoImage: n = null,
+            title: d,
+            content: i,
+            size: t = "md",
+            expandedType: s = "short",
+            textOverlayProps: c = {
               hasTextOverlay: !1,
               tag: "",
               collapsedHasTag: !1,
@@ -334,61 +334,62 @@
               description: "",
               collapsedHasDescription: !1
             },
-            images: c = [],
-            deckProps: o = {},
-            to: m = null,
-            tina: u = {},
-            cardIds: p,
-            theme: k
+            images: o = [],
+            deckProps: m = {},
+            to: u = null,
+            tina: p = {},
+            cardIds: k,
+            theme: f
           } = e;
-          const b = (0, l.useTinaPayload)(),
-            v = u?.payload?.meta?.cdn ?? b?.meta?.prod ?? !1,
-            [j, M] = (0, r.useState)(o?.size ?? i);
-          let D = null;
-          return b.content && (D = b?.content[0]?._memoq ? b?.content[0]?._memoq?.body : null), (0, r.useEffect)((() => {
-            M(o?.size ?? i)
-          }), [o?.size, i]), (0, f.jsx)(x.Z, {
+          const v = (0, l.useTinaPayload)(),
+            T = p?.payload?.meta?.cdn ?? v?.meta?.prod ?? !1,
+            [j, M] = (0, r.useState)(m?.size ?? t),
+            D = (0, l.useGetCdnSource)(n ?? null);
+          let P = null;
+          return v.content && (P = v?.content[0]?._memoq ? v?.content[0]?._memoq?.body : null), (0, r.useEffect)((() => {
+            M(m?.size ?? t)
+          }), [m?.size, t]), (0, b.jsx)(x.Z, {
             id: a,
-            title: n,
+            title: d,
             size: j,
-            expandedType: t,
-            images: c,
-            deckProps: o,
-            prod: v,
+            expandedType: s,
+            images: o,
+            deckProps: m,
+            prod: T,
             payload: {
-              content: d,
+              content: i,
               meta: {}
             },
-            variants: T.plainCard,
-            textOverlayProps: s,
+            variants: S.plainCard,
+            textOverlayProps: c,
             modalProps: {
               className: C.customModal,
               contentClassName: C.customModalContent
             },
-            expandedCardContents: (0, f.jsx)(h.Z, {
-              images: c,
-              prod: v,
+            expandedCardContents: (0, b.jsx)(h.Z, {
+              images: o,
+              prod: T,
               expandedView: !0
             }),
-            theme: k,
-            cardIds: p,
+            theme: f,
+            cardIds: k,
             isCoverCard: !0,
-            children: (0, f.jsx)(N.Z, {
-              expandedType: t,
-              to: m,
-              children: (0, f.jsxs)("div", {
+            children: (0, b.jsx)(N.Z, {
+              expandedType: s,
+              to: u,
+              children: (0, b.jsxs)("div", {
                 className: C.content,
-                children: [(0, f.jsx)("img", {
+                children: [n && (0, b.jsx)("img", {
                   className: C.logo,
                   alt: "logo",
-                  src: S
-                }), (0, f.jsx)("h2", {
-                  children: n
-                }), null !== D && (0, f.jsx)("p", {
-                  children: D
-                }), (0, f.jsx)("button", {
+                  src: D
+                }), (0, b.jsx)("h2", {
+                  children: d
+                }), null !== P && (0, b.jsx)("p", {
+                  children: P
+                }), (0, b.jsx)("button", {
                   type: "button",
-                  children: (0, f.jsx)(g.Z, {
+                  children: (0, b.jsx)(g.Z, {
                     ...y.card.card_learn_more
                   })
                 })]
@@ -396,9 +397,9 @@
             })
           })
         };
-      var M = n(7067),
-        D = n(5054),
-        P = n(5786)
+      var j = n(7067),
+        M = n(5054),
+        D = n(5786)
     },
     8845: e => {
       var a = {
@@ -705,10 +706,6 @@
           d && n.definitions.push(d)
         })), n
       }(a, "TinaModulesList")
-    },
-    5976: e => {
-      "use strict";
-      e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/caf4e90648c6f711afff28b18f022b20.svg"
     }
   }
 ]);

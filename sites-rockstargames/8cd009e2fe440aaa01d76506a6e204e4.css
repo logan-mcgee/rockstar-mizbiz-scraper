@@ -526,7 +526,7 @@ section.rockstargames-sites-rockstargamesb6a41ef752e979cced54d95e69679ae9 {
 
 @media screen and (min-width:1024px) {
   .rockstargames-sites-rockstargamesfb53bedab2c55d1a3c602f6d22cbf878 {
-    --font-family-h: HelveticaNowDisplay;
+    --font-family-h: HelveticaNowDisplayBold;
     grid-gap: var(--grid-gap-md);
     margin-top: 0
   }
