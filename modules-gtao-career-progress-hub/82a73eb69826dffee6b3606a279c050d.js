@@ -1048,7 +1048,8 @@
                 className: "rockstargames-modules-gtao-career-progress-hubdbe370d1c2a217e3cba7d09cbaa7d12b",
                 children: (0, i.jsx)("img", {
                   src: d,
-                  alt: a.label
+                  alt: a.label,
+                  "data-id": a.id
                 })
               }), (0, i.jsxs)("div", {
                 className: "rockstargames-modules-gtao-career-progress-hubd20738fb38f98c1862571727e5e19cd2",
@@ -1996,6 +1997,7 @@
           } = e;
           return (0, i.jsxs)("div", {
             className: "rockstargames-modules-gtao-career-progress-huba1fb8ef8aa1c8016ecb3a047fa54b1ad",
+            "data-has-cta": !!s?.content,
             children: [a && (0, i.jsx)("img", {
               alt: r ? `${r} logo` : "",
               className: "rockstargames-modules-gtao-career-progress-hubfd08d81b98e294fb92f04c336656f777",

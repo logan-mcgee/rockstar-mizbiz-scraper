@@ -1,5 +1,5 @@
 (self.webpackChunk_rockstargames_sites_gta_gen9 = self.webpackChunk_rockstargames_sites_gta_gen9 || []).push([
-  [741], {
+  [680, 770], {
     9680: (e, n, a) => {
       "use strict";
       a.r(n), a.d(n, {
@@ -79,8 +79,8 @@
         })
       }));
       var m = a(6237),
-        k = a(4859),
-        v = a(9542),
+        v = a(4859),
+        k = a(9542),
         f = a(7963),
         g = a(1410),
         p = a(2352),
@@ -96,7 +96,7 @@
             track: n
           } = (0, s.useGtmTrack)(), [a, l] = (0, m.useSearchParams)(), {
             data: o
-          } = (0, k.useQuery)(b.BuyNowQ, {
+          } = (0, v.useQuery)(b.BuyNowQ, {
             variables: {
               ids: ["6a84"]
             }
@@ -104,11 +104,12 @@
           return (0, i.useEffect)((() => {
             e(!r)
           }), [r]), (0, i.useEffect)((() => {
-            const e = "order" !== a.get("info") && "trailer" !== a.get("info") && !Number.isNaN(parseInt(a.get("info")));
-            if (a.get("info")) {
+            const e = "order" !== a.get("info") && "trailer" !== a.get("info") && (i = a.get("videoId"), /^\d+$/.test(i));
+            var i;
+            if (a.get("info") || a.get("videoId")) {
               if (e) {
                 const e = (0, c.jsx)(p.Z, {
-                    id: a.get("info")
+                    id: a.get("videoId")
                   }),
                   i = {
                     left: window.innerWidth / 2,
@@ -125,12 +126,12 @@
                       event_action: "close",
                       event_category: "modal",
                       event: "modal_close",
-                      event_label: a.get("info")
+                      event_label: a.get("videoId")
                     })
                   }
                 }), n({
                   event: "trackPageview",
-                  card_id: a.get("info"),
+                  card_id: a.get("videoId"),
                   card_name: "video"
                 })
               }
@@ -138,7 +139,7 @@
           }), [a]), (0, i.useEffect)((() => {
             if ("order" !== a.get("info") || !o) return;
             const e = o?.tinaModulesInfo?.[0].tina,
-              i = (0, c.jsx)(v.TinaParser, {
+              i = (0, c.jsx)(k.TinaParser, {
                 components: {
                   gen9: h
                 },
@@ -234,10 +235,10 @@
           } = e;
           const {
             track: a
-          } = (0, s.useGtmTrack)(), t = (0, l.yv)(), [d, r] = (0, i.useState)(!1), [u, k] = (0, i.useState)(null), [v, f] = (0, i.useState)(null), [g] = (0, m.useSearchParams)();
+          } = (0, s.useGtmTrack)(), t = (0, l.yv)(), [d, r] = (0, i.useState)(!1), [u, v] = (0, i.useState)(null), [k, f] = (0, i.useState)(null), [g] = (0, m.useSearchParams)();
           if ((0, i.useEffect)((() => {
               E().cloneDeepWith(t, ((e, a, i) => {
-                n === e && k(i?.children ?? null)
+                n === e && v(i?.children ?? null)
               }))
             }), [n, t, g.get("section")]), (0, i.useEffect)((() => {
               f(null), E().cloneDeepWith(u, ((e, n, a) => {
@@ -264,7 +265,7 @@
                     to: i
                   } = e;
                   return (0, c.jsx)(o.A, {
-                    className: n === v?.id_hash ? T.activeSection : "",
+                    className: n === k?.id_hash ? T.activeSection : "",
                     to: i,
                     onClick: p,
                     children: a
@@ -279,7 +280,7 @@
           })
         };
       var B = a(7311);
-      const M = (0, o.withSimpleErrorBoundary)((() => {
+      const I = (0, o.withSimpleErrorBoundary)((() => {
         const {
           setBrand: e
         } = (0, l.MB)();
@@ -303,7 +304,7 @@
             className: "rockstargames-sites-gta-gen9eaeb117af03214aa0f78fd85d4028bb7",
             children: [(0, c.jsx)(V.Z, {
               currentId: n
-            }), e ? (0, c.jsx)(v.TinaParser, {
+            }), e ? (0, c.jsx)(k.TinaParser, {
               components: B.componentsForTinaParserGuide,
               tina: e
             }) : "", (0, c.jsx)(D, {
@@ -312,7 +313,7 @@
           })
         }), [JSON.stringify(a)])
       }));
-      var I = a(6805);
+      var M = a(6805);
       const $ = (0, o.withSimpleErrorBoundary)((e => {
           let {
             componentsForTinaParser: n,
@@ -321,7 +322,7 @@
           } = e;
           const {
             data: s
-          } = (0, k.useQuery)(I.MetaUrlInfo, {
+          } = (0, v.useQuery)(M.MetaUrlInfo, {
             variables: {
               url: t
             },
@@ -336,7 +337,7 @@
           }), [s]), d ? (0, c.jsx)("div", {
             "data-root": a,
             className: "rockstargames-sites-gta-gen9f7e42e7491093e80b413a2892ed61ffe",
-            children: (0, c.jsx)(v.TinaParser, {
+            children: (0, c.jsx)(k.TinaParser, {
               components: n,
               tina: d
             })
@@ -378,7 +379,7 @@
             })
           }, {
             path: "/guides/:guideId",
-            element: (0, c.jsx)(M, {})
+            element: (0, c.jsx)(I, {})
           }, {
             path: "/heists/:section",
             element: (0, c.jsx)(A, {
@@ -480,13 +481,6 @@
             })
           })
         }
-    },
-    7741: (e, n, a) => {
-      "use strict";
-      a.r(n), a.d(n, {
-        default: () => i
-      });
-      const i = a(9680).default
     },
     7856: e => {
       var n = {

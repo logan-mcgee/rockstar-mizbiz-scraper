@@ -1310,61 +1310,62 @@
             content: n,
             variant: r = null,
             icon: o,
-            iconPosition: c = "none",
-            iconStyle: l,
-            badge: m,
-            badgeStyle: p,
-            platformItem: g,
-            gtm: f = {},
-            disabled: u,
-            className: b
+            iconPosition: l = "none",
+            iconStyle: m,
+            badge: p,
+            badgeStyle: g,
+            platformItem: f,
+            gtm: u = {},
+            disabled: b,
+            className: k
           } = e;
           const {
-            track: k
-          } = (0, M.useGtmTrack)(), v = (0, D.useDataLayer)(), h = n ?? a, x = `Redirect to ${t}`, y = (0, i.useCallback)((() => {
-            if (!u) {
-              const e = window.location.hostname;
-              let a;
-              try {
-                a = new URL(t)?.hostname
-              } catch (t) {
-                a = e
-              }
-              k({
-                event: "cta_other",
-                ...v,
-                ...f,
-                link_url: t ?? void 0,
-                text: h ?? void 0
-              }), e === a ? window.location.href = t : window.open(t, "_blank")
+            track: v
+          } = (0, M.useGtmTrack)(), h = (0, D.useDataLayer)(), x = n ?? a, y = `Redirect to ${t}`, _ = (0, i.useMemo)((() => {
+            const e = window.location.hostname;
+            let a;
+            try {
+              a = new URL(t)?.hostname
+            } catch (t) {
+              a = e
             }
-          }), [f, t, v]), _ = () => o ? (0, d.jsx)("span", {
-            className: [te.icon, `icon-${c}`].join(" "),
-            style: l,
+            return e === a
+          }), [t]), N = (0, i.useCallback)((() => {
+            b || v({
+              event: "cta_other",
+              ...h,
+              ...u,
+              link_url: t ?? void 0,
+              text: x ?? void 0
+            })
+          }), [u, t, h]), j = () => o ? (0, d.jsx)("span", {
+            className: [te.icon, `icon-${l}`].join(" "),
+            style: m,
             children: (0, d.jsx)("img", {
               className: te.btnIcon,
               src: ae(o),
               alt: `${o} icon`
             })
           }) : null;
-          return (0, d.jsx)("button", {
-            className: [te.cta, "platform" === r && g ? te[g] : "", u ? te.disabled : "", b].join(" "),
+          return (0, d.jsx)(c.NavLink, {
+            to: t,
+            target: _ ? "_self" : "_blank",
+            className: [te.cta, "platform" === r && f ? te[f] : "", b ? te.disabled : "", k].join(" "),
             style: s,
             "data-variant": r,
-            type: "button",
-            onClick: y,
-            disabled: u,
-            "aria-label": x,
-            children: "platform" === r && g ? (0, d.jsx)(se, {
-              platform: g
+            onClick: N,
+            disabled: b,
+            "aria-label": y,
+            children: "platform" === r && f ? (0, d.jsx)(se, {
+              platform: f
             }) : (0, d.jsxs)("div", {
               className: te.btnContent,
-              children: ["left" === c && _(), (0, d.jsx)("span", {
-                children: h
-              }), "right" === c && _(), m ? (0, d.jsx)("span", {
+              children: ["left" === l && j(), (0, d.jsx)("span", {
+                children: x
+              }), "right" === l && j(), p ? (0, d.jsx)("span", {
                 className: te.badge,
-                style: p,
-                children: m
+                style: g,
+                children: p
               }) : null]
             })
           })
