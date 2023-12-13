@@ -3701,7 +3701,9 @@ body[data-show-more-content] .rockstargames-modules-gtao-career-progress-hubea84
     padding: 0 var(--padding-sides);
     width: 100%
   }
+}
 
+@media (min-width:0px) and (max-width:767px) {
   .rockstargames-modules-gtao-career-progress-huba1fb8ef8aa1c8016ecb3a047fa54b1ad[data-has-cta=false] {
     bottom: 0
   }
