@@ -1,89 +1,30 @@
 "use strict";
 (self.webpackChunk_rockstargames_graph_client = self.webpackChunk_rockstargames_graph_client || []).push([
-  [741, 52, 739], {
-    7741: (e, t, n) => {
-      n.r(t);
-      var r = n(6737),
-        o = n(441),
-        a = n(3121),
-        i = n(5851),
-        s = n(3705);
-      const l = () => {
-          const e = r.Ps`query P($limit:Int){posts(locale:"en_us", limit:$limit){results{id title}}}`,
-            {
-              data: t
-            } = (0, a.aM)(e, {
-              variables: {
-                limit: 15
-              }
-            });
-          return t ? (0, s.jsxs)("div", {
-            "data-testid": "test",
-            children: [(0, s.jsx)("h1", {
-              children: "Posts back from query:"
-            }), t.posts.results?.map((e => (0, s.jsx)("div", {
-              children: e.title
-            }, e.id)))]
-          }) : (0, s.jsx)("div", {
-            "data-testid": "loading",
-            children: "Loading..."
-          })
-        },
-        c = e => {
-          let {
-            env: t
-          } = e;
-          return (0, s.jsxs)(i.X, {
-            typePolicies: {},
-            graphOptions: {
-              env: t,
-              useGETForQueries: !0
-            },
-            children: [(0, s.jsx)(l, {}), (0, s.jsx)(l, {}), (0, s.jsx)(l, {})]
-          })
-        },
-        u = document.createElement("div");
-      document.body.appendChild(u), (0, o.s)(u).render((0, s.jsx)(c, {
-        env: "dev"
-      }))
-    },
-    9762: (e, t, n) => {
-      n.d(t, {
-        Z: () => o
-      });
-      var r = n(9551);
-      const o = e => {
-        const t = "__makevars__";
-        return window?.[t] || (window[t] = {}), window?.[t]?.[e] || (window[t][e] = {}), ((e, t) => (n, o) => {
-          const a = window?.[e]?.[t]?.[n] ?? (0, r.QS)(o);
-          return window[e][t][n] = a, a
-        })(t, e)
-      }
-    },
-    7714: (e, t, n) => {
+  [334, 739], {
+    6967: (e, t, n) => {
       n.r(t), n.d(t, {
         RockstarGraphProvider: () => g.X,
-        gql: () => r.Ps,
-        makeVar: () => o.QS,
-        makeVarNamespace: () => x.Z,
-        uriForGraphEnv: () => j,
+        gql: () => o.Ps,
+        makeVar: () => r.QS,
+        makeVarNamespace: () => x,
+        uriForGraphEnv: () => C,
         useApolloClient: () => g.x,
-        useBase: () => w.useBase,
-        useCdn: () => w.useCdn,
+        useBase: () => k.useBase,
+        useCdn: () => k.useCdn,
         useMutateState: () => p,
         useMutation: () => i.Db,
         useQuery: () => i.aM,
         useReactiveVar: () => a.l,
-        useRockstarToken: () => k.XW,
-        useRockstarTokenPing: () => k.cC,
-        useRockstarTokenReactive: () => k.yx,
+        useRockstarToken: () => w.XW,
+        useRockstarTokenPing: () => w.cC,
+        useRockstarTokenReactive: () => w.yx,
         useState: () => u,
         withHavingPingedBearer: () => v,
-        withReactiveState: () => f,
-        withRockstarGraph: () => m
+        withReactiveState: () => E,
+        withRockstarGraph: () => f
       });
-      var r = n(6737),
-        o = n(9551),
+      var o = n(6737),
+        r = n(9551),
         a = n(2997),
         i = n(3121),
         s = n(927),
@@ -98,7 +39,7 @@
             state: n
           } = e;
           (0, a.l)(n);
-          const r = (0, s.useCallback)((e => {
+          const o = (0, s.useCallback)((e => {
             const t = {
               ...n(),
               ...e
@@ -108,43 +49,49 @@
           return (0, l.jsx)(c.Provider, {
             value: n(),
             children: (0, l.jsx)(d.Provider, {
-              value: r,
+              value: o,
               children: t
             })
           })
         };
       var g = n(5851),
-        k = n(405),
-        w = n(8739);
+        w = n(405),
+        k = n(8739);
       const v = function(e) {
-        return function(t) {
-          const [n, r] = (0, s.useState)(!1), o = (0, k.cC)();
-          return (0, s.useEffect)((() => {
-            (async () => {
-              await o(), r(!0)
-            })()
-          }), []), n ? (0, l.jsx)(e, {
-            ...t
-          }) : null
-        }
-      };
-      var x = n(9762);
-      const P = (0, x.Z)("graph-with-rs-graph"),
-        m = (e, t) => {
+          return function(t) {
+            const [n, o] = (0, s.useState)(!1), r = (0, w.cC)();
+            return (0, s.useEffect)((() => {
+              (async () => {
+                await r(), o(!0)
+              })()
+            }), []), n ? (0, l.jsx)(e, {
+              ...t
+            }) : null
+          }
+        },
+        x = e => {
+          const t = "__makevars__";
+          return window?.[t] || (window[t] = {}), window?.[t]?.[e] || (window[t][e] = {}), ((e, t) => (n, o) => {
+            const a = window?.[e]?.[t]?.[n] ?? (0, r.QS)(o);
+            return window[e][t][n] = a, a
+          })(t, e)
+        },
+        P = x("graph-with-rs-graph"),
+        f = (e, t) => {
           let {
             env: n = "prod",
-            typePolicies: r,
-            token: o = P("token", null),
+            typePolicies: o,
+            token: r = P("token", null),
             tokenPingExpires: a = P("tokenPingExpires", null),
-            tokenPing: i = null
+            tokenPing: i = P("token", null)
           } = t;
           return function(t) {
             return (0, l.jsx)(g.X, {
-              typePolicies: r,
+              typePolicies: o,
               graphOptions: {
                 env: n,
                 useGETForQueries: !0,
-                token: o,
+                token: r,
                 tokenPing: i,
                 tokenPingExpires: a
               },
@@ -154,21 +101,21 @@
             })
           }
         },
-        E = (0, x.Z)("graph-hoc"),
-        f = (e, t) => {
+        m = x("graph-hoc"),
+        E = (e, t) => {
           let {
             state: n
           } = t;
           return function(t) {
             return (0, l.jsx)(h, {
-              state: n ?? E("state", null),
+              state: n ?? m("state", null),
               children: (0, l.jsx)(e, {
                 ...t
               })
             })
           }
         },
-        j = e => {
+        C = e => {
           let t = "";
           switch (e) {
             case "prod":
@@ -186,11 +133,11 @@
     3121: (e, t, n) => {
       n.d(t, {
         UJ: () => P,
-        Db: () => E,
-        aM: () => m
+        Db: () => m,
+        aM: () => f
       });
-      var r = n(927),
-        o = n(5672),
+      var o = n(927),
+        r = n(5672),
         a = n(2213),
         i = n(895),
         s = n(2997),
@@ -200,7 +147,7 @@
         d = n(8739);
       const p = (e, t) => {
         const n = (0, s.l)(d.locale),
-          o = {
+          r = {
             autoSetError: !0,
             autoSetLoading: !1,
             setTitleDataPath: "meta.title",
@@ -215,25 +162,25 @@
             loading: i,
             error: c,
             ...p
-          } = (0, l.a)(e, o);
-        return (0, r.useEffect)((() => {
-          if (a && o.setTitleDataPath) {
-            const e = u().get(a, o.setTitleDataPath) ?? null;
+          } = (0, l.a)(e, r);
+        return (0, o.useEffect)((() => {
+          if (a && r.setTitleDataPath) {
+            const e = u().get(a, r.setTitleDataPath) ?? null;
             e && window.postMessage({
               type: "graph.titleUpdate",
               title: e
             })
           }
-        }), [a]), (0, r.useEffect)((() => (o.autoSetLoading && window.postMessage({
+        }), [a]), (0, o.useEffect)((() => (r.autoSetLoading && window.postMessage({
           type: "graph.loadingUpdate",
           loading: i
         }), () => {
-          o.autoSetLoading && window.postMessage({
+          r.autoSetLoading && window.postMessage({
             type: "graph.loadingUpdate",
             loading: !1
           })
-        })), [i]), (0, r.useEffect)((() => {
-          if (o.autoSetError && c) throw new Error(String(c))
+        })), [i]), (0, o.useEffect)((() => {
+          if (r.autoSetError && c) throw new Error(String(c))
         }), [c]), {
           loading: i,
           error: c,
@@ -242,23 +189,23 @@
         }
       };
       var h = n(3705);
-      const g = (0, r.createContext)((() => ({
+      const g = (0, o.createContext)((() => ({
           data: null
         }))),
-        k = new Promise((e => {
+        w = new Promise((e => {
           e()
         })),
-        w = {
-          cache: window?.["apollo-cache"] ?? (window["apollo-cache"] = new o.h)
+        k = {
+          cache: window?.["apollo-cache"] ?? (window["apollo-cache"] = new r.h)
         },
-        v = [() => k, {
+        v = [() => w, {
           data: null,
           loading: !1,
           called: !1,
           reset: () => null,
-          client: window?.["apollo-client"] ?? (window["apollo-client"] = new a.f(w))
+          client: window?.["apollo-client"] ?? (window["apollo-client"] = new a.f(k))
         }],
-        x = (0, r.createContext)((() => v)),
+        x = (0, o.createContext)((() => v)),
         P = window?.["apollo-graph-provider"] ?? (window["apollo-graph-provider"] = e => {
           let {
             children: t
@@ -271,16 +218,16 @@
             })
           })
         }),
-        m = window?.["apollo-use-query"] ?? (window["apollo-use-query"] = (e, t) => (0, r.useContext)(g)(e, t)),
-        E = window?.["apollo-use-mutation"] ?? (window["apollo-use-mutation"] = e => (0, r.useContext)(x)(e))
+        f = window?.["apollo-use-query"] ?? (window["apollo-use-query"] = (e, t) => (0, o.useContext)(g)(e, t)),
+        m = window?.["apollo-use-mutation"] ?? (window["apollo-use-mutation"] = e => (0, o.useContext)(x)(e))
     },
     5851: (e, t, n) => {
       n.d(t, {
         X: () => P,
         x: () => x
       });
-      var r = n(927),
-        o = n(5672),
+      var o = n(927),
+        r = n(5672),
         a = n(2213),
         i = n(588),
         s = n(3121),
@@ -291,33 +238,33 @@
         p = n.n(d);
       var h = n(3843),
         g = n(7056);
-      const k = (0, h.Nq)({
+      const w = (0, h.Nq)({
         sha256: g.JQ
       });
-      var w = n(7714),
+      var k = n(6967),
         v = n(3705);
       const x = e => {
           let {
             graphOptions: t,
             typePolicies: n = {}
           } = e;
-          const i = t?.env ? (0, w.uriForGraphEnv)(t?.env) : t?.uri,
-            [s] = (0, r.useState)(new o.h({
+          const i = t?.env ? (0, k.uriForGraphEnv)(t?.env) : t?.uri,
+            [s] = (0, o.useState)(new r.h({
               typePolicies: n
             })),
-            l = k.concat((e => {
+            l = w.concat((e => {
               let {
                 token: t
               } = e;
               return (0, c.v)(((e, n) => {
                 let {
-                  headers: r
+                  headers: o
                 } = n;
-                const o = t?.() ?? null;
-                return o ? {
+                const r = t?.() ?? null;
+                return r ? {
                   headers: {
-                    ...r,
-                    authorization: `Bearer ${o}`
+                    ...o,
+                    authorization: `Bearer ${r}`
                   }
                 } : null
               }))
@@ -339,18 +286,18 @@
           let {
             children: t,
             graphOptions: n,
-            typePolicies: r
+            typePolicies: o
           } = e;
-          const o = x({
+          const r = x({
             graphOptions: n,
-            typePolicies: r
+            typePolicies: o
           });
           return (0, v.jsx)(l.Fv, {
             token: n?.token,
             tokenPing: n?.tokenPing,
             tokenPingExpires: n?.tokenPingExpires,
             children: (0, v.jsx)(i.e, {
-              client: o,
+              client: r,
               children: (0, v.jsx)(s.UJ, {
                 children: t
               })
@@ -360,71 +307,73 @@
     },
     405: (e, t, n) => {
       n.d(t, {
-        Fv: () => c,
-        XW: () => d,
-        cC: () => p,
-        yx: () => u
+        Fv: () => u,
+        XW: () => p,
+        cC: () => h,
+        yx: () => d
       });
-      var r = n(927),
-        o = n(2997),
-        a = n(9762);
+      var o = n(927),
+        r = n(9551),
+        a = n(2997);
       var i = n(3705);
-      const s = (0, a.Z)("graph-token-provider"),
-        l = (0, r.createContext)({
-          token: s("token", null),
-          tokenPing: "",
-          tokenPingExpires: s("tokenPingExpires", null)
-        }),
-        c = e => {
+      const s = "graph-token-context",
+        l = {
+          token: (0, r.QS)(null),
+          tokenPing: (0, r.QS)("tokenPing"),
+          tokenPingExpires: (0, r.QS)(100)
+        },
+        c = window?.[s] ?? (window[s] = (0, o.createContext)(l)),
+        u = e => {
           let {
             children: t,
             token: n,
-            tokenPing: r,
-            tokenPingExpires: o
+            tokenPing: o,
+            tokenPingExpires: r
           } = e;
-          return (0, i.jsx)(l.Provider, {
+          return (0, i.jsx)(c.Provider, {
             value: {
               token: n,
-              tokenPing: r,
-              tokenPingExpires: o
+              tokenPing: o,
+              tokenPingExpires: r
             },
             children: t
           })
         },
-        u = () => {
+        d = () => {
           const {
             token: e,
             tokenPing: t,
             tokenPingExpires: n
-          } = (0, r.useContext)(l);
+          } = (0, o.useContext)(c);
           return [e, t, n]
         },
-        d = () => {
-          const [e] = u();
-          return (0, o.l)(e)
-        },
         p = () => {
-          const [e, t, n] = u();
+          const [e] = d();
+          return (0, a.l)(e)
+        },
+        h = () => {
+          const [e, t, n] = d();
           return () => (async e => {
             let {
               url: t,
               token: n,
-              tokenPingExpires: r
+              tokenPingExpires: o
             } = e;
+            const r = t?.();
             try {
-              const e = r?.() ?? 0,
-                o = n?.() ?? null,
+              const e = o?.() ?? 0,
+                t = n?.() ?? null,
                 a = (e => {
                   const t = Date.now() / 1e3;
                   return Math.ceil(e - t)
                 })(e) > 0;
-              if (!1 === o) return {
-                bearerToken: o
+              if (!1 === t) return {
+                bearerToken: t
               };
-              if (a && o) return {
-                bearerToken: o
+              if (a && t) return {
+                bearerToken: t
               };
-              const i = await fetch(t, {
+              const i = await fetch(r, {
                   credentials: "include",
                   method: "POST",
                   headers: {
@@ -435,7 +384,7 @@
                 {
                   tokenExpiresTime: l = null
                 } = s;
-              return null !== l && r?.(l), n(s.bearerToken ?? null), s
+              return null !== l && o?.(l), n(s.bearerToken ?? null), s
             } catch (e) {
               return n(!1), !1
             }
@@ -455,22 +404,22 @@
         useCdn: () => c,
         useLocale: () => i
       });
-      var r = n(9551),
-        o = n(2997);
-      const a = (0, r.QS)(document.documentElement.lang),
-        i = () => (0, o.l)(a),
+      var o = n(9551),
+        r = n(2997);
+      const a = (0, o.QS)(document.documentElement.lang),
+        i = () => (0, r.l)(a),
         s = window?.env,
-        l = (0, r.QS)({
+        l = (0, o.QS)({
           media: s?.cdn?.media,
           videos: s?.cdn?.videos
         }),
-        c = () => (0, o.l)(l),
+        c = () => (0, r.l)(l),
         u = document.currentScript,
         d = u?.src ? new URL(u.src).origin : "";
       let p = document.getElementsByTagName("base")[0]?.getAttribute("href") ?? `${d}/`;
       p.endsWith("/") || (p = `${p}/`);
-      const h = (0, r.QS)(p),
-        g = () => (0, o.l)(h)
+      const h = (0, o.QS)(p),
+        g = () => (0, r.l)(h)
     }
   }
 ]);

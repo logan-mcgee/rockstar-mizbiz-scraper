@@ -544,11 +544,12 @@
           } = (0, n.useBodyScrollable)(), {
             track: O
           } = (0, g.useGtmTrack)(), [W, C] = (0, r.useState)(12), [w, G] = (0, r.useState)(4), D = (0, r.useRef)(null), V = (0, r.useRef)(null), [L, M] = (0, r.useState)(!1), {
-            inView: U
+            ref: U,
+            inView: B
           } = (0, b.YD)({
             threshold: .6
-          }), [B, Z] = (0, r.useState)(null), [$, F] = (0, r.useState)(null), [Y, K] = (0, r.useState)(0), {
-            formatMessage: q
+          }), [Z, $] = (0, r.useState)(null), [F, Y] = (0, r.useState)(null), [K, q] = (0, r.useState)(0), {
+            formatMessage: X
           } = (0, m.Z)();
           (0, r.useEffect)((() => {
             H.forEach((e => {
@@ -557,16 +558,16 @@
           }), [a]), (0, r.useEffect)((() => {
             k && !e ? T(!0) : k && e && j(!1)
           }), [e]), (0, r.useEffect)((() => {
-            U && !L && (O({
+            B && !L && (O({
               event: "page_section_impression",
               event_action: "impression",
               event_category: "page_section",
               event_label: "awards",
               element_placement: "awards"
             }), M(!0))
-          }), [U]);
-          const X = (0, r.useCallback)((() => {
-            const a = D.current;
+          }), [B]);
+          const Q = (0, r.useCallback)((() => {
+            const a = D?.current;
             e && T(k), a && (k || O({
               event: "view_all",
               event_action: "view_all",
@@ -627,18 +628,19 @@
             })()
           }), [o, R, S]);
           const {
-            styles: Q,
-            attributes: J,
-            update: ee
-          } = (0, _.D)(B, $, {
+            styles: J,
+            attributes: ee,
+            update: ae
+          } = (0, _.D)(Z, F, {
             placement: "bottom-end"
           });
           if (!o || !c.length) return null;
-          const ae = e ? "div" : "ul",
-            se = e ? u.E.div : "div";
+          const se = e ? "div" : "ul",
+            re = e ? u.E.div : "div";
           return (0, i.jsx)("div", {
             className: z.awardsOuter,
-            children: (0, i.jsxs)(se, {
+            ref: U,
+            children: (0, i.jsxs)(re, {
               "data-open": k && e,
               transition: {
                 ease: "easeInOut",
@@ -658,7 +660,7 @@
                     className: z.awardCategoryName,
                     children: [k && e && (0, i.jsx)(u.E.button, {
                       type: "button",
-                      onClick: () => X(),
+                      onClick: () => Q(),
                       layout: !0,
                       variants: {
                         open: {
@@ -696,18 +698,18 @@
                     className: z.rpInfo,
                     children: [(0, i.jsx)("button", {
                       className: z.tooltipIcon,
-                      ref: Z,
+                      ref: $,
                       type: "button",
-                      ...ee && {
-                        onMouseOver: ee,
-                        onFocus: ee
+                      ...ae && {
+                        onMouseOver: ae,
+                        onFocus: ae
                       },
-                      "aria-label": q(E.careerProgressHub.cph_reward_ready_to_claim)
+                      "aria-label": X(E.careerProgressHub.cph_reward_ready_to_claim)
                     }), (0, i.jsx)("div", {
                       className: z.tooltip,
-                      style: Q.popper,
-                      ref: F,
-                      ...J,
+                      style: J.popper,
+                      ref: Y,
+                      ...ee,
                       children: (0, i.jsxs)("div", {
                         className: z.tooltipInner,
                         children: [(0, i.jsx)(d.Z, {
@@ -771,9 +773,9 @@
                     classes: z.awardCount
                   })
                 })]
-              }), (0, i.jsxs)(se, {
+              }), (0, i.jsxs)(re, {
                 className: z.categoryWrapper,
-                children: [(0, i.jsx)(ae, {
+                children: [(0, i.jsx)(se, {
                   className: z.awardCategory,
                   ref: V,
                   children: c.map(((a, s) => (0, i.jsx)(y, {
@@ -781,17 +783,17 @@
                     award: a,
                     isExpanded: e && k,
                     isMobile: e,
-                    toggleModal: e && X,
+                    toggleModal: e && Q,
                     hoverFn: A,
-                    setHoveredAwardId: K,
-                    isShowTooltip: s === Y,
+                    setHoveredAwardId: q,
+                    isShowTooltip: s === K,
                     classes: [z.award, s >= W + w ? z.fadeIn : "", s >= W && s < W + w ? z.peek : ""].join(" ")
                   }, a.imageName)))
                 }), c.length > W && (0, i.jsx)("div", {
                   className: k ? z.showLess : z.showMore,
                   children: (0, i.jsx)("button", {
                     type: "button",
-                    onClick: () => X(),
+                    onClick: () => Q(),
                     children: k ? (0, i.jsx)(d.Z, {
                       ...E.careerProgressHub.cph_progress_rewards_view_less
                     }) : (0, i.jsx)(d.Z, {
@@ -2006,6 +2008,7 @@
               variant: "gen9",
               icon: "play",
               iconPosition: "left",
+              className: "rockstargames-modules-gtao-career-progress-hubfd23c280a7a55e8fd71e3761a50e4035",
               ...s
             })]
           })

@@ -1,5 +1,5 @@
 (self.webpackChunk_rockstargames_sites_gta_gen9 = self.webpackChunk_rockstargames_sites_gta_gen9 || []).push([
-  [680, 770], {
+  [741], {
     9680: (e, n, a) => {
       "use strict";
       a.r(n), a.d(n, {
@@ -83,7 +83,7 @@
         k = a(9542),
         f = a(7963),
         g = a(1410),
-        p = a(2352),
+        p = a(9956),
         b = a(9967);
       const h = {
           BuyNow: f.Z,
@@ -481,6 +481,13 @@
             })
           })
         }
+    },
+    7741: (e, n, a) => {
+      "use strict";
+      a.r(n), a.d(n, {
+        default: () => i
+      });
+      const i = a(9680).default
     },
     7856: e => {
       var n = {

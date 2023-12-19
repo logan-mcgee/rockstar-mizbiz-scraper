@@ -630,7 +630,33 @@
               label: "Title",
               description: "This is the headline of the card.",
               component: "text"
-            }), (0, a.translatedField)({
+            }), {
+              name: "titleSizeClass",
+              label: "Title Size",
+              component: "select",
+              options: [{
+                label: "-- Select Title Size --",
+                value: ""
+              }, {
+                label: "Header 1",
+                value: "header-1"
+              }, {
+                label: "Header 2",
+                value: "header-2"
+              }, {
+                label: "Header 3",
+                value: "header-3"
+              }, {
+                label: "Header 4",
+                value: "header-4"
+              }, {
+                label: "Header 5",
+                value: "header-5"
+              }, {
+                label: "Header 6",
+                value: "header-6"
+              }]
+            }, (0, a.translatedField)({
               name: "body",
               label: "Body",
               description: "This is the main body of text that appears on the card.",

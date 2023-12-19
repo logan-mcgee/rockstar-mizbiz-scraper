@@ -1173,19 +1173,20 @@
         })
       }
     },
-    2352: (e, a, t) => {
+    9956: (e, a, t) => {
       "use strict";
       t.d(a, {
         Z: () => i
       });
       var s = t(4224),
-        n = t.n(s),
-        r = t(3705);
+        n = t.n(s);
+      var r = t(3705);
       const i = e => {
         let {
           id: a
         } = e;
         return (0, r.jsx)("div", {
+          className: "rockstargames-sites-gta-gen9f6130392c70daec4b6c7b3fb89ad8369",
           children: (0, r.jsx)(n(), {
             autoplay: !0,
             context: "embed",
@@ -1748,7 +1749,7 @@
           children: "Section"
         });
       var Q = t(1410),
-        Y = t(2352)
+        Y = t(9956)
     },
     215: (e, a, t) => {
       "use strict";

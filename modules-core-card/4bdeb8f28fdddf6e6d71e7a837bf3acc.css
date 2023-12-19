@@ -259,6 +259,60 @@
   margin: var(--spacing-md) 0 var(--spacing-xs)
 }
 
+[data-size] .rockstargames-modules-core-cardd4e4fb6769eee0c3082457bfd1d2ab47 h2.header-1 {
+  color: var(--color-h);
+  font-family: var(--font-family-h);
+  font-size: var(--font-size-8);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-h);
+  line-height: var(--line-height-md)
+}
+
+[data-size] .rockstargames-modules-core-cardd4e4fb6769eee0c3082457bfd1d2ab47 h2.header-2 {
+  color: var(--color-h);
+  font-family: var(--font-family-h);
+  font-size: var(--font-size-7);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-h);
+  line-height: var(--line-height-md)
+}
+
+[data-size] .rockstargames-modules-core-cardd4e4fb6769eee0c3082457bfd1d2ab47 h2.header-3 {
+  color: var(--color-h);
+  font-family: var(--font-family-h);
+  font-size: var(--font-size-6);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--letter-spacing-h);
+  line-height: var(--line-height-md)
+}
+
+[data-size] .rockstargames-modules-core-cardd4e4fb6769eee0c3082457bfd1d2ab47 h2.header-4 {
+  color: var(--color-h);
+  font-family: var(--font-family-h);
+  font-size: var(--font-size-5);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--letter-spacing-h);
+  line-height: var(--line-height-md)
+}
+
+[data-size] .rockstargames-modules-core-cardd4e4fb6769eee0c3082457bfd1d2ab47 h2.header-5 {
+  color: var(--color-h);
+  font-family: var(--font-family-h);
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--letter-spacing-h);
+  line-height: var(--line-height-md)
+}
+
+[data-size] .rockstargames-modules-core-cardd4e4fb6769eee0c3082457bfd1d2ab47 h2.header-6 {
+  color: var(--color-h);
+  font-family: var(--font-family-h);
+  font-size: var(--font-size-3);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--letter-spacing-h);
+  line-height: var(--line-height-md)
+}
+
 [data-size] .rockstargames-modules-core-cardd4e4fb6769eee0c3082457bfd1d2ab47 p {
   color: var(--color-body);
   font-family: var(--font-family-body);

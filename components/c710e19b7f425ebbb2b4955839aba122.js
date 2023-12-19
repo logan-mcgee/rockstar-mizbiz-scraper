@@ -173,7 +173,7 @@
         ExpandingPlatformButton: () => Fe,
         FadeInContent: () => Pe,
         GameCard: () => s,
-        GameSiteHeader: () => Ue,
+        GameSiteHeader: () => Re,
         Gen9Button: () => C,
         Gen9CoreCarousel: () => Qe,
         Grid: () => Te,
@@ -192,7 +192,7 @@
         NewswireTag: () => Ea,
         OrderedList: () => Pa.Z,
         Paging: () => Ha,
-        ParallaxCacheBuster: () => Ua,
+        ParallaxCacheBuster: () => Ra,
         ParallaxInnerLayer: () => Za,
         ParallaxOuterLayer: () => Qa,
         ParallaxWrapper: () => qa,
@@ -224,7 +224,7 @@
         Wasted: () => At,
         framer: () => o,
         useTinaModuleFetchByIds: () => It,
-        withSearchbarErrorBoundary: () => Rt,
+        withSearchbarErrorBoundary: () => Ut,
         withSimpleErrorBoundary: () => Ze
       });
       var s = {};
@@ -868,6 +868,7 @@
               slidesPerView: "auto",
               speed: 700,
               breakpoints: b,
+              onUpdate: () => f(0),
               onActiveIndexChange: e => f(e?.realIndex ?? 0),
               centeredSlidesBounds: p,
               children: [(0, d.jsx)("div", {
@@ -981,7 +982,7 @@
             })]
           })
         },
-        R = {
+        U = {
           calloutContainer: "rockstargames-componentsa3703abcf05faaa015cfdffc3e0f5759",
           calloutSection: "rockstargames-componentsd62b6eb13c6827ec93eb4311c011870c",
           calloutHeaders: "rockstargames-componentsc3fc37dd453796f1dee1d4b8fef1960f",
@@ -999,7 +1000,7 @@
           actionBlock: "rockstargames-componentsa2346234d571677ab32a01f2860659f5",
           actionFooter: "rockstargames-componentse6fe627360d9b3181f452e338302a107"
         },
-        U = e => {
+        R = e => {
           let {
             foreign_id: a,
             foreign_type: t
@@ -1040,16 +1041,16 @@
               c(e?.data?.userGetVote?.vote ?? null)
             })()
           }), [a, t]), (0, d.jsxs)("div", {
-            className: R.calloutVoteForm,
+            className: U.calloutVoteForm,
             children: [(0, d.jsx)("button", {
               "aria-label": "upvote",
-              className: [R.upvote, R.voteButton, o ? R.active : ""].join(" "),
+              className: [U.upvote, U.voteButton, o ? U.active : ""].join(" "),
               name: "upvote",
               onClick: () => l(!0),
               type: "button"
             }), (0, d.jsx)("button", {
               "aria-label": "downvote",
-              className: [R.downvote, R.voteButton, !1 === o ? R.active : ""].join(" "),
+              className: [U.downvote, U.voteButton, !1 === o ? U.active : ""].join(" "),
               name: "downvote",
               onClick: () => l(!1),
               type: "button"
@@ -1070,13 +1071,13 @@
             target: "_blank",
             rel: "noopener noreferrer",
             children: (0, d.jsxs)("button", {
-              className: R.calloutLink,
+              className: U.calloutLink,
               type: "button",
               onClick: s ? () => n({
                 ...s
               }) : () => {},
               children: [a, (0, d.jsx)(H, {
-                className: R.calloutLinkIcon
+                className: U.calloutLinkIcon
               })]
             })
           })
@@ -1092,7 +1093,7 @@
             track: r
           } = (0, M.useGtmTrack)();
           return (0, d.jsxs)("div", {
-            className: R.actionFooter,
+            className: U.actionFooter,
             children: [a, t && " ", t && (0, d.jsx)("a", {
               href: s ?? "",
               onClick: () => r({
@@ -1144,7 +1145,7 @@
               if (!k) {
                 S = (0, d.jsx)(N, {
                   to: h,
-                  className: R.calloutButton,
+                  className: U.calloutButton,
                   onClick: f ? () => v({
                     ...f
                   }) : () => {},
@@ -1152,7 +1153,7 @@
                 });
                 break
               }
-              S = (0, d.jsx)(U, {
+              S = (0, d.jsx)(R, {
                 foreign_id: o,
                 foreign_type: c
               });
@@ -1160,7 +1161,7 @@
             case "button":
               n && r && (S = (0, d.jsx)(N, {
                 to: r,
-                className: R.calloutButton,
+                className: U.calloutButton,
                 onClick: f ? () => v({
                   ...f
                 }) : () => {},
@@ -1178,21 +1179,21 @@
               S = null
           }
           return (0, d.jsx)("div", {
-            className: `${R.calloutContainer} ${l||""}`,
+            className: `${U.calloutContainer} ${l||""}`,
             ref: x,
             children: (0, d.jsxs)("div", {
-              className: R.calloutSection,
+              className: U.calloutSection,
               children: [(0, d.jsxs)("div", {
-                className: [R.calloutHeaders, S ? R.calloutHeaderMargins : ""].join(" "),
+                className: [U.calloutHeaders, S ? U.calloutHeaderMargins : ""].join(" "),
                 children: [a && (0, d.jsx)("h1", {
-                  className: R.calloutHeader,
+                  className: U.calloutHeader,
                   children: b(a)
                 }), t && (0, d.jsx)("h2", {
-                  className: R.calloutSubheader,
+                  className: U.calloutSubheader,
                   children: b(t)
                 })]
               }), (0, d.jsxs)("div", {
-                className: R.actionBlock,
+                className: U.actionBlock,
                 children: [S, m && (0, d.jsx)(q, {
                   helperText: m,
                   linkText: p,
@@ -2012,7 +2013,7 @@
             })
           })
         },
-        Re = {
+        Ue = {
           gameSiteHeader: "rockstargames-componentsf27c38ae3aaaa656366568be7a7680ff",
           activeNavItem: "rockstargames-componentsf3ad0db7601d2e52de4a89b2a46fb74f",
           navHidden: "rockstargames-componentsce1c0d4ba324740f8cb3d7794e67b9cf",
@@ -2021,7 +2022,7 @@
           headerLogo: "rockstargames-componentsf7a6ef451ea21d9af97db1d190b2e955",
           bg: "rockstargames-componentsdbcbd0c4304ae2e3ee6126812fb4ee94"
         },
-        Ue = e => {
+        Re = e => {
           let {
             buttonText: a = null,
             gameOverrideStyles: t,
@@ -2043,9 +2044,9 @@
             return document.addEventListener("click", e), () => document.removeEventListener("click", e)
           }), []), (0, d.jsxs)("header", {
             "data-game": r,
-            className: [Re.gameSiteHeader, o ? Re.headerNavOpen : "", m ? Re.navHidden : "", t.gameSiteHeader, o ? t.headerNavOpen : ""].join(" "),
+            className: [Ue.gameSiteHeader, o ? Ue.headerNavOpen : "", m ? Ue.navHidden : "", t.gameSiteHeader, o ? t.headerNavOpen : ""].join(" "),
             children: [(0, d.jsx)("button", {
-              className: [Re.headerLogo, t.headerLogo].join(" "),
+              className: [Ue.headerLogo, t.headerLogo].join(" "),
               onClick: e => {
                 c(!o), e.nativeEvent.stopImmediatePropagation()
               },
@@ -2055,10 +2056,10 @@
                 __html: a
               }
             }), (0, d.jsx)("div", {
-              className: Re.bg
+              className: Ue.bg
             }), (0, d.jsx)("nav", {
               children: (0, d.jsx)("div", {
-                className: Re.navContent,
+                className: Ue.navContent,
                 children: s
               })
             }), n]
@@ -3286,14 +3287,14 @@
             }) : ""]
           })
         };
-      var Ra = t(6147);
-      const Ua = e => {
+      var Ua = t(6147);
+      const Ra = e => {
           let {
             children: a
           } = e;
           const {
             parallaxController: t
-          } = (0, Ra.bc)();
+          } = (0, Ua.bc)();
           return (0, i.useLayoutEffect)((() => {
             if (!t) return;
             const e = setInterval((() => {
@@ -3315,9 +3316,9 @@
             style: s = {},
             children: n
           } = e;
-          return (0, d.jsx)(Ra.Xu, {
+          return (0, d.jsx)(Ua.Xu, {
             scrollAxis: a,
-            children: (0, d.jsx)(Ua, {
+            children: (0, d.jsx)(Ra, {
               children: (0, d.jsx)("div", {
                 className: (0, j.classList)(Wa.parallaxWrapper, Wa[t]),
                 style: s,
@@ -3351,7 +3352,7 @@
             style: void 0,
             image: n(e?.image ?? null)
           })));
-          return (0, d.jsx)(Ra.UG, {
+          return (0, d.jsx)(Ua.UG, {
             className: (0, j.classList)("rockstargames-componentsd97831cde902af87ada6d20331a1b381", t),
             layers: r,
             style: s
@@ -3367,12 +3368,12 @@
             style: r = {},
             children: o
           } = e;
-          return "horizontal" === s ? (0, d.jsx)(Ra.VS, {
+          return "horizontal" === s ? (0, d.jsx)(Ua.VS, {
             x: [a, t],
             className: (0, j.classList)(Ya, n),
             styleOuter: r,
             children: o
-          }) : (0, d.jsx)(Ra.VS, {
+          }) : (0, d.jsx)(Ua.VS, {
             y: [a, t],
             className: (0, j.classList)(Ya, n),
             styleOuter: r,
@@ -4435,7 +4436,7 @@
           }) : this.props.children
         }
       }
-      const Rt = function(e) {
+      const Ut = function(e) {
         let a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
         return function(t) {
           return (0, d.jsx)(Ht, {
@@ -4446,14 +4447,14 @@
           })
         }
       };
-      var Ut = t(1085),
+      var Rt = t(1085),
         Wt = t(9683),
         qt = t(423);
       const Zt = (0, i.forwardRef)(((e, a) => {
           const {
             children: t,
             tag: s = "div"
-          } = e, n = Ut.m[s];
+          } = e, n = Rt.m[s];
           return (0, d.jsx)(Wt.X, {
             features: qt.H,
             children: (0, d.jsx)(n, {

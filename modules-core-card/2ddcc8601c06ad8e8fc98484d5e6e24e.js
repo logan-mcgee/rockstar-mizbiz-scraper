@@ -323,10 +323,11 @@
             id: a,
             logoImage: n = null,
             title: d,
-            content: i,
-            size: t = "md",
-            expandedType: s = "short",
-            textOverlayProps: c = {
+            titleSizeClass: i = null,
+            content: t,
+            size: s = "md",
+            expandedType: c = "short",
+            textOverlayProps: o = {
               hasTextOverlay: !1,
               tag: "",
               collapsedHasTag: !1,
@@ -334,59 +335,60 @@
               description: "",
               collapsedHasDescription: !1
             },
-            images: o = [],
-            deckProps: m = {},
-            to: u = null,
-            tina: p = {},
-            cardIds: k,
-            theme: f
+            images: m = [],
+            deckProps: u = {},
+            to: p = null,
+            tina: k = {},
+            cardIds: f,
+            theme: v
           } = e;
-          const v = (0, l.useTinaPayload)(),
-            T = p?.payload?.meta?.cdn ?? v?.meta?.prod ?? !1,
-            [j, M] = (0, r.useState)(m?.size ?? t),
-            D = (0, l.useGetCdnSource)(n ?? null);
-          let P = null;
-          return v.content && (P = v?.content[0]?._memoq ? v?.content[0]?._memoq?.body : null), (0, r.useEffect)((() => {
-            M(m?.size ?? t)
-          }), [m?.size, t]), (0, b.jsx)(x.Z, {
+          const T = (0, l.useTinaPayload)(),
+            j = k?.payload?.meta?.cdn ?? T?.meta?.prod ?? !1,
+            [M, D] = (0, r.useState)(u?.size ?? s),
+            P = (0, l.useGetCdnSource)(n ?? null);
+          let I = null;
+          return T.content && (I = T?.content[0]?._memoq ? T?.content[0]?._memoq?.body : null), (0, r.useEffect)((() => {
+            D(u?.size ?? s)
+          }), [u?.size, s]), (0, b.jsx)(x.Z, {
             id: a,
             title: d,
-            size: j,
-            expandedType: s,
-            images: o,
-            deckProps: m,
-            prod: T,
+            size: M,
+            expandedType: c,
+            images: m,
+            deckProps: u,
+            prod: j,
             payload: {
-              content: i,
+              content: t,
               meta: {}
             },
             variants: S.plainCard,
-            textOverlayProps: c,
+            textOverlayProps: o,
             modalProps: {
               className: C.customModal,
               contentClassName: C.customModalContent
             },
             expandedCardContents: (0, b.jsx)(h.Z, {
-              images: o,
-              prod: T,
+              images: m,
+              prod: j,
               expandedView: !0
             }),
-            theme: f,
-            cardIds: k,
+            theme: v,
+            cardIds: f,
             isCoverCard: !0,
             children: (0, b.jsx)(N.Z, {
-              expandedType: s,
-              to: u,
+              expandedType: c,
+              to: p,
               children: (0, b.jsxs)("div", {
                 className: C.content,
                 children: [n && (0, b.jsx)("img", {
                   className: C.logo,
                   alt: "logo",
-                  src: D
+                  src: P
                 }), (0, b.jsx)("h2", {
+                  className: i,
                   children: d
-                }), null !== P && (0, b.jsx)("p", {
-                  children: P
+                }), null !== I && (0, b.jsx)("p", {
+                  children: I
                 }), (0, b.jsx)("button", {
                   type: "button",
                   children: (0, b.jsx)(g.Z, {

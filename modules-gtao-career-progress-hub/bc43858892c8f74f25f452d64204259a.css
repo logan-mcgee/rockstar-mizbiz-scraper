@@ -3711,7 +3711,7 @@ body[data-show-more-content] .rockstargames-modules-gtao-career-progress-hubea84
 
 @media (min-width:768px) {
   .rockstargames-modules-gtao-career-progress-huba1fb8ef8aa1c8016ecb3a047fa54b1ad {
-    grid-gap: var(--grid-gap-xs);
+    grid-gap: var(--grid-gap-md);
     bottom: unset;
     margin: 0 0 0 var(--padding-sides);
     padding: unset;
@@ -3719,7 +3719,7 @@ body[data-show-more-content] .rockstargames-modules-gtao-career-progress-hubea84
   }
 }
 
-@media (min-width:1024px) {
+@media (min-width:768px) and (max-width:1440px) {
   .rockstargames-modules-gtao-career-progress-huba1fb8ef8aa1c8016ecb3a047fa54b1ad {
     grid-gap: var(--grid-gap-sm)
   }
@@ -3739,6 +3739,16 @@ body[data-show-more-content] .rockstargames-modules-gtao-career-progress-hubea84
     object-position: unset;
     padding: 0;
     position: unset
+  }
+}
+
+.rockstargames-modules-gtao-career-progress-huba1fb8ef8aa1c8016ecb3a047fa54b1ad .rockstargames-modules-gtao-career-progress-hubfd23c280a7a55e8fd71e3761a50e4035 {
+  max-width: 350px
+}
+
+@media (min-width:768px) {
+  .rockstargames-modules-gtao-career-progress-huba1fb8ef8aa1c8016ecb3a047fa54b1ad .rockstargames-modules-gtao-career-progress-hubfd23c280a7a55e8fd71e3761a50e4035 {
+    width: 18vw
   }
 }
 
@@ -3945,12 +3955,12 @@ body[data-show-more-content] .rockstargames-modules-gtao-career-progress-hubea84
 }
 
 .rockstargames-modules-gtao-career-progress-hubfae98cedf44568e468931cc288fbacda {
-  grid-template-areas: "hero hero hero" ". intro ." "imageGallery imageGallery imageGallery" "ctaLinkACharacter ctaLinkACharacter ctaLinkACharacter" "rewardsTrackerWithData rewardsTrackerWithData rewardsTrackerWithData" ". highlights ." "rewardsTracker rewardsTracker rewardsTracker" ". awards ." "feedback feedback feedback" "rating rating rating"
+  grid-template-areas: "hero hero hero" ". intro ." "imageGallery imageGallery imageGallery" ". highlights ." "ctaLinkACharacter ctaLinkACharacter ctaLinkACharacter" "rewardsTrackerWithData rewardsTrackerWithData rewardsTrackerWithData" "rewardsTracker rewardsTracker rewardsTracker" ". awards ." "feedback feedback feedback" "rating rating rating"
 }
 
 @media (min-width:1024px) {
   .rockstargames-modules-gtao-career-progress-hubfae98cedf44568e468931cc288fbacda {
-    grid-template-areas: "hero hero hero" ". intro ." "imageGallery imageGallery imageGallery" "ctaLinkACharacter ctaLinkACharacter ctaLinkACharacter" ". rewardsTrackerWithData ." ". highlights ." ". rewardsTracker ." ". awards ." "feedback feedback feedback" "rating rating rating"
+    grid-template-areas: "hero hero hero" ". intro ." "imageGallery imageGallery imageGallery" ". highlights ." "ctaLinkACharacter ctaLinkACharacter ctaLinkACharacter" ". rewardsTrackerWithData ." ". rewardsTracker ." ". awards ." "feedback feedback feedback" "rating rating rating"
   }
 }
 
@@ -3967,7 +3977,7 @@ body[data-show-more-content] .rockstargames-modules-gtao-career-progress-hubea84
 .rockstargames-modules-gtao-career-progress-hube78616d73fca3bbeedb1301c28edf31f,
 .rockstargames-modules-gtao-career-progress-huba229bafc8e2f24d945e84015e974bc94,
 .rockstargames-modules-gtao-career-progress-hubcf2f42c0c4cebbc7890f77059fbb25cc {
-  grid-template-areas: "hero hero hero" ". intro ." "imageGallery imageGallery imageGallery" "ctaLinkACharacter ctaLinkACharacter ctaLinkACharacter" ". callout ." "login login login" "rewardsTrackerWithData rewardsTrackerWithData rewardsTrackerWithData" ". highlights ." "rewardsTracker rewardsTracker rewardsTracker" ". awards ." "feedback feedback feedback" "rating rating rating"
+  grid-template-areas: "hero hero hero" ". intro ." "imageGallery imageGallery imageGallery" ". highlights ." "ctaLinkACharacter ctaLinkACharacter ctaLinkACharacter" ". callout ." "login login login" "rewardsTrackerWithData rewardsTrackerWithData rewardsTrackerWithData" "rewardsTracker rewardsTracker rewardsTracker" ". awards ." "feedback feedback feedback" "rating rating rating"
 }
 
 @media (min-width:1024px) {
@@ -3975,7 +3985,7 @@ body[data-show-more-content] .rockstargames-modules-gtao-career-progress-hubea84
   .rockstargames-modules-gtao-career-progress-hube78616d73fca3bbeedb1301c28edf31f,
   .rockstargames-modules-gtao-career-progress-huba229bafc8e2f24d945e84015e974bc94,
   .rockstargames-modules-gtao-career-progress-hubcf2f42c0c4cebbc7890f77059fbb25cc {
-    grid-template-areas: "hero hero hero" ". intro ." "imageGallery imageGallery imageGallery" "ctaLinkACharacter ctaLinkACharacter ctaLinkACharacter" "login login login" ". rewardsTrackerWithData ." ". highlights ." ". rewardsTracker ." ". awards ." "feedback feedback feedback" "rating rating rating"
+    grid-template-areas: "hero hero hero" ". intro ." "imageGallery imageGallery imageGallery" ". highlights ." "ctaLinkACharacter ctaLinkACharacter ctaLinkACharacter" "login login login" ". rewardsTrackerWithData ." ". rewardsTracker ." ". awards ." "feedback feedback feedback" "rating rating rating"
   }
 }
 

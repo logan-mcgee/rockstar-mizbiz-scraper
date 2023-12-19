@@ -1697,7 +1697,7 @@
         la = (0, p.withRockstarGraph)(da, {
           env: ia,
           token: aa("token", null),
-          tokenPing: ra,
+          tokenPing: aa("tokenPing", ra),
           tokenPingExpires: aa("tokenPingExpires", null),
           typePolicies: {
             ...b()
