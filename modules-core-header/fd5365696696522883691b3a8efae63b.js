@@ -24,7 +24,7 @@
           o = (0, t.dd)(d.Z, {
             env: c,
             token: (0, t.QS)(null),
-            tokenPing: l,
+            tokenPing: (0, t.QS)(l),
             tokenPingExpires: (0, t.QS)(null),
             typePolicies: {}
           });

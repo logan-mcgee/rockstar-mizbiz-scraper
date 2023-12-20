@@ -1,12 +1,12 @@
-/*! For license information please see 1495e3351912c3b039b8b59f63397d6e.js.LICENSE.txt */
+/*! For license information please see 2722d1cbfef03d435f312cb531f5febc.js.LICENSE.txt */
 (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [877], {
     1787: (e, a, t) => {
       "use strict";
       t.d(a, {
         QS: () => s.QS,
-        BS: () => N,
-        M9: () => U,
+        BS: () => q,
+        M9: () => H,
         ZA: () => g.ZA,
         qs: () => T,
         Db: () => w,
@@ -16,7 +16,7 @@
         cC: () => P,
         yx: () => E,
         eJ: () => M,
-        dd: () => $
+        dd: () => U
       });
       var s = t(9551),
         n = t(2997),
@@ -108,19 +108,13 @@
         S = (0, r.createContext)({}),
         T = () => (0, r.useContext)(S);
       var C = t(588);
-      const N = e => {
-          const a = "__makevars__";
-          return window?.[a] || (window[a] = {}), window?.[a]?.[e] || (window[a][e] = {}), ((e, a) => (t, n) => {
-            const r = window?.[e]?.[a]?.[t] ?? (0, s.QS)(n);
-            return window[e][a][t] = r, r
-          })(a, e)
+      const N = "graph-token-context",
+        j = {
+          token: (0, s.QS)(null),
+          tokenPing: (0, s.QS)("tokenPing"),
+          tokenPingExpires: (0, s.QS)(100)
         },
-        j = N("graph-token-provider"),
-        z = (0, r.createContext)({
-          token: j("token", null),
-          tokenPing: "",
-          tokenPingExpires: j("tokenPingExpires", null)
-        }),
+        z = window?.[N] ?? (window[N] = (0, r.createContext)(j)),
         A = e => {
           let {
             children: a,
@@ -157,20 +151,21 @@
               token: t,
               tokenPingExpires: s
             } = e;
+            const n = a?.();
             try {
               const e = s?.() ?? 0,
-                n = t?.() ?? null,
+                a = t?.() ?? null,
                 r = (e => {
                   const a = Date.now() / 1e3;
                   return Math.ceil(e - a)
                 })(e) > 0;
-              if (!1 === n) return {
-                bearerToken: n
+              if (!1 === a) return {
+                bearerToken: a
               };
-              if (r && n) return {
-                bearerToken: n
+              if (r && a) return {
+                bearerToken: a
               };
-              const i = await fetch(a, {
+              const i = await fetch(n, {
                   credentials: "include",
                   method: "POST",
                   headers: {
@@ -211,7 +206,7 @@
               graphOptions: a,
               typePolicies: t = {}
             } = e;
-            const s = a?.env ? U(a?.env) : a?.uri,
+            const s = a?.env ? H(a?.env) : a?.uri,
               [n] = (0, r.useState)(new i.h({
                 typePolicies: t
               })),
@@ -260,14 +255,21 @@
             })
           })
         },
-        q = N("graph-with-rs-graph"),
-        $ = (e, a) => {
+        q = e => {
+          const a = "__makevars__";
+          return window?.[a] || (window[a] = {}), window?.[a]?.[e] || (window[a][e] = {}), ((e, a) => (t, n) => {
+            const r = window?.[e]?.[a]?.[t] ?? (0, s.QS)(n);
+            return window[e][a][t] = r, r
+          })(a, e)
+        },
+        $ = q("graph-with-rs-graph"),
+        U = (e, a) => {
           let {
             env: t = "prod",
             typePolicies: s,
-            token: n = q("token", null),
-            tokenPingExpires: r = q("tokenPingExpires", null),
-            tokenPing: i = null
+            token: n = $("token", null),
+            tokenPingExpires: r = $("tokenPingExpires", null),
+            tokenPing: i = $("token", null)
           } = a;
           return function(a) {
             return (0, u.jsx)(F, {
@@ -285,7 +287,7 @@
             })
           }
         },
-        U = (N("graph-hoc"), e => {
+        H = (q("graph-hoc"), e => {
           let a = "";
           switch (e) {
             case "prod":
@@ -4469,11 +4471,11 @@
           }
         },
         uc = {
-          banner_collapsed: [/^\/careers/, /^\/newswire(\/?)$/, /^\/videos\/[0-9]+/],
+          banner_collapsed: [/.*/],
           full_exclusion: [/^\/contact/, /agegate/, /privacy/, /legal/, /ccpa/, /corpinfo/, /cookies/, /^\/gta-online\/license-plates/, /.*\?info=.*/]
         },
         vc = {
-          banner_collapsed: [/\/rockstar-games-launcher/, /^\/notifications/, /^\/careers$/, /^\/support$/, /^\/member\//],
+          banner_collapsed: [/.*/],
           full_exclusion: [/^\/activate/, /^\/settings/, /agegate/, /^\/Error.htm/, /^\/(photo|video|job)\/(rdr2|gtav)\/.*/, /^\/games\/maxpayne3/]
         };
       let pc, hc = null,

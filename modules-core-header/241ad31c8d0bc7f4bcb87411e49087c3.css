@@ -12353,9 +12353,9 @@ screen and (max-height:840px) and (max-width:767px) {
 .rockstargames-modules-core-headeraebdc1434e6a1921dee96f175cd36466 {
   background-color: var(--red);
   border-radius: 100%;
-  display: inline;
+  display: inline-block;
   height: calc(var(--base-rem-size) * .35);
-  margin: var(--margin-xxs);
+  margin: 2px var(--margin-xxs);
   order: 2;
   width: calc(var(--base-rem-size) * .35)
 }
