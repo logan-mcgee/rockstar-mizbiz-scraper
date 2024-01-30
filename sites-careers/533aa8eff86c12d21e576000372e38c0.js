@@ -15,7 +15,7 @@
         o = s(6331),
         d = s(1968),
         h = s(1458),
-        l = s(6987),
+        l = s(7818),
         v = s(3705);
       (0, o.init)();
       const k = window?.env?.graphEnv ?? "dev",

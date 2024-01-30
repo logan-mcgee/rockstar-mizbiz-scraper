@@ -1,4 +1,4 @@
-/*! For license information please see 6ab643d6ef0f507a7faeaadf36a207dd.js.LICENSE.txt */
+/*! For license information please see 0917500f986150077bfddd59d5f3f685.js.LICENSE.txt */
 (self.webpackChunk_rockstargames_sites_gta = self.webpackChunk_rockstargames_sites_gta || []).push([
   [964], {
     8269: (e, t, r) => {
@@ -2091,7 +2091,10 @@
             } = (0, n.useRockstarWebLSSettings)(), {
               pathname: r,
               search: a
-            } = (0, l.useLocation)(), s = (0, d.useRef)((0, c.Z)().currentSite?.site === c.z.socialClub ? p.pb : p.x3), o = () => ((e, t, r) => !e.full_exclusion.find((e => e.test(t + r))))(s.current, r, a), i = t => t && !(window?.env?.responseStatusCode && 200 !== window?.env?.responseStatusCode) && !((e, t, r) => e.banner_collapsed.some((e => "string" == typeof e ? t === e : e.test(t + r))))(s.current, r, a) && (e?.[p._Z] ?? !0), [u, f] = (0, d.useState)(o()), [g, h] = (0, d.useState)(i(u)), [m, v] = (0, d.useState)(g || !u);
+            } = (0, l.useLocation)(), s = (0, d.useRef)((0, c.Z)().currentSite?.site === c.z.socialClub ? p.pb : p.x3), o = () => {
+              const e = ((e, t, r) => !e.full_exclusion.find((e => e.test(t + r))))(s.current, r, a);
+              return window.self === window.top && e
+            }, i = t => t && !(window?.env?.responseStatusCode && 200 !== window?.env?.responseStatusCode) && !((e, t, r) => e.banner_collapsed.some((e => "string" == typeof e ? t === e : e.test(t + r))))(s.current, r, a) && (e?.[p._Z] ?? !0), [u, f] = (0, d.useState)(o()), [g, h] = (0, d.useState)(i(u)), [m, v] = (0, d.useState)(g || !u);
             return (0, d.useEffect)((() => {
               const e = o(),
                 t = i(e);

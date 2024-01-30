@@ -7,7 +7,7 @@
       });
       var n = t(4859),
         s = t(8976),
-        i = t(7583),
+        i = t(2159),
         r = t(927),
         o = t(9929);
       const d = {
@@ -1185,7 +1185,7 @@
                 children: [(0, m.jsx)($, {
                   color: "gray",
                   text: n.title,
-                  to: "videos/12161"
+                  to: "/newswire/article/51974aa3aao1ka/red-dead-online-standalone-now-available"
                 }), (0, m.jsx)($, {
                   color: "gray",
                   text: a("More Details"),
@@ -1298,7 +1298,8 @@
             }), (0, m.jsx)("div", {
               className: ve.grid,
               children: i.results.slice(1, 99).map((e => (0, m.jsx)(s.VideoCard.Link, {
-                video: e
+                video: e,
+                toExplicit: `../videos/${e.id}`
               }, e.id)))
             })]
           })]
@@ -1327,7 +1328,7 @@
           return (0, m.jsxs)("div", {
             className: "rockstargames-sites-red-dead-onlineecbb924536299c40cf471f22dd159f25",
             children: [(0, m.jsx)(l.PlayerWithInfo, {
-              video: o
+              videoId: o.id
             }), (0, m.jsxs)("section", {
               className: "rockstargames-sites-red-dead-onlinea2c3249e53bfe480e927477aa91f584e",
               children: [(0, m.jsx)("h2", {
@@ -1335,7 +1336,8 @@
               }), (0, m.jsx)("div", {
                 className: "rockstargames-sites-red-dead-onlinef0744ba1a22dd50d63ed163d4eb8f14d",
                 children: d.results.map((e => (0, m.jsx)(s.VideoCard.Link, {
-                  video: e
+                  video: e,
+                  toExplicit: `../videos/${e.id}`
                 }, e.id)))
               })]
             })]

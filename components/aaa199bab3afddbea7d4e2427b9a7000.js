@@ -4367,16 +4367,17 @@
             gameTitleNecessary: a = !0,
             openInNewWindow: t = !1,
             video: s,
-            size: n
+            size: n,
+            toExplicit: r
           } = e;
-          const r = `/videos/${s.id}`,
-            o = {
+          const o = r ?? `/videos/${s.id}`,
+            i = {
               className: Pt.videoPreview,
               "data-gtm-category": "Videos",
               "data-gtm-action": "Video Click-through",
-              "data-gtm-label": r
+              "data-gtm-label": o
             },
-            i = (0, d.jsxs)("div", {
+            c = (0, d.jsxs)("div", {
               className: Pt.card,
               children: [(0, d.jsx)(Gt, {
                 video: s,
@@ -4397,14 +4398,14 @@
               })]
             });
           return t ? (0, d.jsx)("a", {
-            href: r,
+            href: o,
             target: "_blank",
-            ...o,
-            children: i
+            ...i,
+            children: c
           }) : (0, d.jsx)(l, {
-            to: r,
-            ...o,
-            children: i
+            to: o,
+            ...i,
+            children: c
           })
         };
       class Ht extends i.Component {

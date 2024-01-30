@@ -1611,16 +1611,17 @@
           base: "",
           navOpen: !1
         }), document.location.pathname),
-        Xe = {
+        Xe = window.self !== window.top,
+        ea = {
           search: "",
           navOpen: !1,
           navHidden: !1,
           gameSiteNavOpen: !1,
           normalLogo: !0,
           loading: !1,
-          headerHidden: ([].find((e => Je.includes(e))) ?? []).length > 0,
+          headerHidden: ([].find((e => Je.includes(e))) ?? []).length > 0 || Xe,
           customFooter: (["gta-online/license-plates"].find((e => Je.includes(e))) ?? []).length > 0,
-          standalone: (["/screenshot-viewer", "/VI", "/videoplayer"].find((e => Je.includes(e))) ?? []).length > 0,
+          standalone: (["/screenshot-viewer", "/videoplayer", "/gifs"].find((e => Je.includes(e))) ?? []).length > 0,
           error: {
             message: window?.errorFromServer?.message ?? null,
             code: window?.errorFromServer?.code ?? null
@@ -1630,16 +1631,16 @@
             filter: ""
           }
         },
-        ea = (0, p.makeVar)(Xe),
-        aa = (0, p.makeVarNamespace)("rockstar-root"),
-        ia = window?.env?.graphEnv ?? "prod";
+        aa = (0, p.makeVar)(ea),
+        ia = (0, p.makeVarNamespace)("rockstar-root"),
+        na = window?.env?.graphEnv ?? "prod";
       k();
-      const na = (() => {
+      const ta = (() => {
           const e = window;
           if (e[u]?.history || k(), e[u]?.history) return e[u].history;
           throw new Error("Browser History has not been initialised")
         })(),
-        ta = () => {
+        sa = () => {
           const {
             state: {
               standalone: e,
@@ -1657,13 +1658,13 @@
             })
           })
         },
-        sa = () => (0, o.jsx)(v.ModalProvider, {
-          children: (0, o.jsx)(ta, {})
+        ra = () => (0, o.jsx)(v.ModalProvider, {
+          children: (0, o.jsx)(sa, {})
         }),
         {
-          pingBearer: ra
+          pingBearer: da
         } = (0, h.getScConfigForOrigin)(),
-        da = (0, p.withReactiveState)((() => {
+        la = (0, p.withReactiveState)((() => {
           const e = (0, p.useBase)(),
             {
               setLoading: a,
@@ -1684,34 +1685,34 @@
                 children: [!t && !n && (0, o.jsx)(T(), {
                   baseName: e
                 }), (0, o.jsx)(c, {
-                  history: na,
+                  history: ta,
                   basename: e,
-                  children: (0, o.jsx)(sa, {})
+                  children: (0, o.jsx)(ra, {})
                 })]
               })
             })
           })
         }), {
-          state: ea
+          state: aa
         }),
-        la = (0, p.withRockstarGraph)(da, {
-          env: ia,
-          token: aa("token", null),
-          tokenPing: aa("tokenPing", ra),
-          tokenPingExpires: aa("tokenPingExpires", null),
+        oa = (0, p.withRockstarGraph)(la, {
+          env: na,
+          token: ia("token", null),
+          tokenPing: ia("tokenPing", da),
+          tokenPingExpires: ia("tokenPingExpires", null),
           typePolicies: {
             ...b()
           }
         }),
-        oa = window?.env?.oneTrustId ?? null,
-        ca = window?.env?.gtmId ?? null;
+        ca = window?.env?.oneTrustId ?? null,
+        ma = window?.env?.gtmId ?? null;
       (0, n.init)({
-        id: ca
+        id: ma
       }), s()({
-        id: oa,
+        id: ca,
         init: () => {
           const e = document.createElement("div");
-          document.body.appendChild(e), (0, r.s)(e).render((0, o.jsx)(la, {}))
+          document.body.appendChild(e), (0, r.s)(e).render((0, o.jsx)(oa, {}))
         }
       })
     },

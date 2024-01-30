@@ -1365,10 +1365,6 @@
     --content-padding: 0;
     padding: var(--padding-md) 0
   }
-
-  .rockstargames-modules-core-cardab2ff002fe79682e12519c4608068662[data-type=long] .rockstargames-modules-core-cardb89031a2a4f7d385a3a1d17e583f4dc4>* {
-    padding: 0 var(--padding-md)
-  }
 }
 
 .rockstargames-modules-core-cardab2ff002fe79682e12519c4608068662[data-type=long] .sectionIntro h3,
@@ -1504,6 +1500,14 @@
 @media (max-width:414px) {
   .rockstargames-modules-core-cardfbc985f4e3df2ee4a37d472282b9cd95 h1 {
     font-size: var(--font-size-7)
+  }
+}
+
+@media (max-width:1023px) {
+  .rockstargames-modules-core-cardfbc985f4e3df2ee4a37d472282b9cd95 {
+    --padding-dynamic: var(--padding-sides);
+    --padding-dynamic-tb: initial;
+    padding: var(--padding-t, var(--padding-dynamic-tb, 0)) var(--padding-dynamic, 0) var(--padding-b, var(--padding-dynamic-tb, 0)) var(--padding-dynamic, 0)
   }
 }
 

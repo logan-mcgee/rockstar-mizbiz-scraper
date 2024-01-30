@@ -548,7 +548,7 @@
             inView: B
           } = (0, b.YD)({
             threshold: .6
-          }), [Z, $] = (0, r.useState)(null), [F, Y] = (0, r.useState)(null), [K, q] = (0, r.useState)(0), {
+          }), [Z, $] = (0, r.useState)(null), [F, Y] = (0, r.useState)(null), [K, q] = (0, r.useState)(null), {
             formatMessage: X
           } = (0, m.Z)();
           (0, r.useEffect)((() => {

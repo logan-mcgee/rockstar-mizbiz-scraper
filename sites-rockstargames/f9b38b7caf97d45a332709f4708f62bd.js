@@ -349,15 +349,15 @@
             }), (0, s.jsxs)("div", {
               className: N.social,
               children: [(0, s.jsx)(c.A, {
-                to: "https://twitch.tv/rockstargames",
+                to: "https://twitter.com/rockstargames",
                 onClick: m,
                 target: "_blank",
-                className: N.twitch,
+                className: N.twitter,
                 "data-gtm-category": "Footer",
                 "data-gtm-action": "Social Click",
-                "data-gtm-label": "Twitch",
-                title: "Twitch",
-                "data-testid": "twitchLink"
+                "data-gtm-label": "Twitter",
+                title: "Twitter",
+                "data-testid": "twitterLink"
               }), (0, s.jsx)(c.A, {
                 to: "https://instagram.com/rockstargames",
                 onClick: m,
@@ -368,16 +368,6 @@
                 "data-gtm-label": "Instagram",
                 title: "Instagram",
                 "data-testid": "instagramLink"
-              }), (0, s.jsx)(c.A, {
-                to: "https://twitter.com/rockstargames",
-                onClick: m,
-                target: "_blank",
-                className: N.twitter,
-                "data-gtm-category": "Footer",
-                "data-gtm-action": "Social Click",
-                "data-gtm-label": "Twitter",
-                title: "Twitter",
-                "data-testid": "twitterLink"
               }), (0, s.jsx)(c.A, {
                 to: "https://www.youtube.com/rockstargames",
                 onClick: m,
@@ -398,6 +388,16 @@
                 "data-gtm-label": "Facebook",
                 title: "Facebook",
                 "data-testid": "facebookLink"
+              }), (0, s.jsx)(c.A, {
+                to: "https://twitch.tv/rockstargames",
+                onClick: m,
+                target: "_blank",
+                className: N.twitch,
+                "data-gtm-category": "Footer",
+                "data-gtm-action": "Social Click",
+                "data-gtm-label": "Twitch",
+                title: "Twitch",
+                "data-testid": "twitchLink"
               })]
             }), (0, s.jsxs)("section", {
               className: N.showsOver,

@@ -5,7 +5,7 @@
       r.r(e), r.d(e, {
         default: () => a
       });
-      const a = r(6987).Z
+      const a = r(7818).Z
     }
   }
 ]);
