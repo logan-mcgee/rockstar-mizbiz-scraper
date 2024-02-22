@@ -1,23 +1,39 @@
-System.register([], (function(e, r) {
+! function() {
+  try {
+    var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
+      r = (new Error).stack;
+    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "65e49369-c9d6-4a08-8c31-76d4f62836ae", e._sentryDebugIdIdentifier = "sentry-dbid-65e49369-c9d6-4a08-8c31-76d4f62836ae")
+  } catch (e) {}
+}();
+var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
+_global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
+  release: "5e225a56a96343405c858680af91190e5116b19e",
+  packageName: "@rockstargames/polyfills",
+  dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
+};
+var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
+_global.SENTRY_RELEASE = {
+  id: "5e225a56a96343405c858680af91190e5116b19e"
+}, System.register([], (function(e, r) {
   return {
     execute: function() {
       e((() => {
         var e, t, o, n, a = {
-            6100: (e, r, t) => {
-              (0, t(487).s)(1)
+            3032: (e, r, t) => {
+              (0, t(8752).G)(1)
             },
-            487: (e, r, t) => {
-              const o = t(6175).R;
-              r.s = function(e) {
+            8752: (e, r, t) => {
+              const o = t(2184).Q;
+              r.G = function(e) {
                 if (e || (e = 1), !t.y.meta || !t.y.meta.url) throw console.error("__system_context__", t.y), Error("systemjs-webpack-interop was provided an unknown SystemJS context. Expected context.meta.url, but none was provided");
                 t.p = o(t.y.meta.url, e)
               }
             },
-            9473: (e, r, t) => {
-              t(6100)
+            9296: (e, r, t) => {
+              t(3032)
             },
-            6175: (e, r, t) => {
-              r.R = function(e, r) {
+            2184: (e, r, t) => {
+              r.Q = function(e, r) {
                 var t = document.createElement("a");
                 t.href = e;
                 for (var o = "/" === t.pathname[0] ? t.pathname : "/" + t.pathname, n = 0, a = o.length; n !== r && a >= 0;) "/" === o[--a] && n++;
@@ -27,10 +43,10 @@ System.register([], (function(e, r) {
               };
               Number.isInteger
             },
-            5895: (e, r, t) => {
+            2220: (e, r, t) => {
               "use strict";
               var o = {
-                  "./browser": () => Promise.all([t.e(419), t.e(118)]).then((() => () => t(118)))
+                  "./browser": () => Promise.all([t.e(624), t.e(152)]).then((() => () => t(7152)))
                 },
                 n = (e, r) => (t.R = r, r = t.o(o, e) ? o[e]() : Promise.resolve().then((() => {
                   throw new Error('Module "' + e + '" does not exist in container.')
@@ -70,8 +86,8 @@ System.register([], (function(e, r) {
             get: r[t]
           })
         }, s.f = {}, s.e = e => Promise.all(Object.keys(s.f).reduce(((r, t) => (s.f[t](e, r), r)), [])), s.u = e => "js/" + {
-          118: "58263bfdc65a60ed83102587ce359c3f",
-          419: "7cb17838b80ecb420e90a89592a90152"
+          152: "f62c3dbea92d477d8aabda3d5f336d9c",
+          624: "4f5e9ddf620831111d48cb46324f3f16"
         } [e] + ".js", s.miniCssF = e => {}, s.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
@@ -84,24 +100,24 @@ System.register([], (function(e, r) {
           else {
             var i, l;
             if (void 0 !== n)
-              for (var c = document.getElementsByTagName("script"), u = 0; u < c.length; u++) {
-                var p = c[u];
-                if (p.getAttribute("src") == r || p.getAttribute("data-webpack") == t + n) {
-                  i = p;
+              for (var d = document.getElementsByTagName("script"), f = 0; f < d.length; f++) {
+                var u = d[f];
+                if (u.getAttribute("src") == r || u.getAttribute("data-webpack") == t + n) {
+                  i = u;
                   break
                 }
               }
             i || (l = !0, (i = document.createElement("script")).charset = "utf-8", i.timeout = 120, s.nc && i.setAttribute("nonce", s.nc), i.setAttribute("data-webpack", t + n), i.src = r), e[r] = [o];
-            var f = (t, o) => {
-                i.onerror = i.onload = null, clearTimeout(d);
+            var c = (t, o) => {
+                i.onerror = i.onload = null, clearTimeout(p);
                 var n = e[r];
                 if (delete e[r], i.parentNode && i.parentNode.removeChild(i), n && n.forEach((e => e(o))), t) return t(o)
               },
-              d = setTimeout(f.bind(null, void 0, {
+              p = setTimeout(c.bind(null, void 0, {
                 type: "timeout",
                 target: i
               }), 12e4);
-            i.onerror = f.bind(null, i.onerror), i.onload = f.bind(null, i.onload), l && document.head.appendChild(i)
+            i.onerror = c.bind(null, i.onerror), i.onload = c.bind(null, i.onload), l && document.head.appendChild(i)
           }
         }, s.r = e => {
           "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
@@ -123,17 +139,17 @@ System.register([], (function(e, r) {
                 },
                 i = (e, t, n, i, s, l) => {
                   try {
-                    var c = e(t, n);
-                    if (!c || !c.then) return s(c, i, l);
-                    var u = c.then((e => s(e, i)), a);
-                    if (!l) return u;
-                    r.push(o.p = u)
+                    var d = e(t, n);
+                    if (!d || !d.then) return s(d, i, l);
+                    var f = d.then((e => s(e, i)), a);
+                    if (!l) return f;
+                    r.push(o.p = f)
                   } catch (e) {
                     a(e)
                   }
                 },
-                l = (e, r, n) => i(r.get, o[1], t, 0, c, n),
-                c = r => {
+                l = (e, r, n) => i(r.get, o[1], t, 0, d, n),
+                d = r => {
                   o.p = 1, s.m[e] = e => {
                     e.exports = r()
                   }
@@ -168,7 +184,7 @@ System.register([], (function(e, r) {
           e = e.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/"), s.p = e
         })(), (() => {
           var e = {
-            732: 0
+            856: 0
           };
           s.f.j = (r, t) => {
             var o = s.o(e, r) ? e[r] : void 0;
@@ -192,17 +208,18 @@ System.register([], (function(e, r) {
               var o, n, a = t[0],
                 i = t[1],
                 l = t[2],
-                c = 0;
+                d = 0;
               if (a.some((r => 0 !== e[r]))) {
                 for (o in i) s.o(i, o) && (s.m[o] = i[o]);
                 l && l(s)
               }
-              for (r && r(t); c < a.length; c++) n = a[c], s.o(e, n) && e[n] && e[n][0](), e[n] = 0
+              for (r && r(t); d < a.length; d++) n = a[d], s.o(e, n) && e[n] && e[n][0](), e[n] = 0
             },
             t = self.webpackChunk_rockstargames_polyfills = self.webpackChunk_rockstargames_polyfills || [];
           t.forEach(r.bind(null, 0)), t.push = r.bind(null, t.push.bind(t))
-        })(), s(9473), s(5895)
+        })(), s(9296), s(2220)
       })())
     }
   }
 }));
+//# sourceMappingURL=remote-entry.js.map

@@ -1,0 +1,86 @@
+.rockstargames-tinaae14828e2aa41ee80b3457afa9f6453f {
+  margin-bottom: var(--tina-padding-big, 20px);
+  position: relative
+}
+
+.rockstargames-tinaae14828e2aa41ee80b3457afa9f6453f,
+.rockstargames-tinaae14828e2aa41ee80b3457afa9f6453f * {
+  box-sizing: border-box;
+  font-family: Inter, sans-serif
+}
+
+.rockstargames-tinaae14828e2aa41ee80b3457afa9f6453f .rockstargames-tinab458dbf7c8d564ed9f34f2e2d2c2567a {
+  all: unset;
+  color: var(--tina-color-grey-8, #433e52);
+  display: block;
+  font-family: Inter, sans-serif;
+  font-size: var(--tina-font-size-1, 13px);
+  font-weight: 600;
+  -webkit-letter-spacing: .01em;
+  -moz-letter-spacing: .01em;
+  -ms-letter-spacing: .01em;
+  letter-spacing: .01em;
+  line-height: 1.35;
+  margin-bottom: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%
+}
+
+.rockstargames-tinaae14828e2aa41ee80b3457afa9f6453f .rockstargames-tinac5285dc90816c68f4c9e005800470530 {
+  all: unset;
+  color: var(--tina-color-grey-6, #716c7f);
+  display: block;
+  font-family: Inter, sans-serif;
+  font-size: var(--tina-font-size-0, 12px);
+  font-style: italic;
+  font-weight: lighter;
+  margin: 0;
+  padding-top: 4px;
+  white-space: normal
+}
+
+.rockstargames-tinaae14828e2aa41ee80b3457afa9f6453f input {
+  box-shadow: 0 0 0 2px transparent
+}
+
+.rockstargames-tinaae14828e2aa41ee80b3457afa9f6453f input,
+.rockstargames-tinaae14828e2aa41ee80b3457afa9f6453f select {
+  background: var(--tina-color-grey-0, #fff);
+  background-color: var(--tina-color-grey-0, #fff);
+  border: 1px solid var(--tina-color-grey-2, #edecf3);
+  border-radius: var(--tina-radius-small, 5px);
+  font-size: var(--tina-font-size-2, 15px);
+  line-height: 1.35;
+  margin: 0;
+  outline: none;
+  padding: var(--tina-padding-small, 12px);
+  position: relative;
+  transition: all 85ms ease-out;
+  width: 100%
+}
+
+.rockstargames-tinaae14828e2aa41ee80b3457afa9f6453f select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-position: right .7em top 50%;
+  background-repeat: no-repeat;
+  background-size: .65em auto;
+  display: block;
+  font-family: inherit;
+  max-width: 100%
+}
+
+.rockstargames-tinaae14828e2aa41ee80b3457afa9f6453f .rockstargames-tinac7cf3b60abbb991411736d103b7c1024,
+.rockstargames-tinaae14828e2aa41ee80b3457afa9f6453f .rockstargames-tinab2904101dd9055c8750c9a626024f412 {
+  color: var(--tina-color-error, #ec4815)
+}
+
+[class^=BlockMenuList-] button,
+button[class^=CreateButton-] {
+  color: #000
+}
+
+/*# sourceMappingURL=1514f6d072638cd2c86d8a41f3eb9252.css.map*/

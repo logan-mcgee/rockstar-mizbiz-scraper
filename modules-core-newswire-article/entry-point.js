@@ -1,21 +1,39 @@
-System.register(["@rockstargames/components", "@rockstargames/graph-client", "@rockstargames/modules-core-card", "@rockstargames/modules-core-carousel", "@rockstargames/modules-core-gif-viewer", "@rockstargames/modules-core-group-of-items", "@rockstargames/modules-core-videoplayer", "@rockstargames/modules-sc-ugc-spotlight", "@rockstargames/tina", "@rockstargames/utils"], (function(e, t) {
+/*! For license information please see remote-entry.js.LICENSE.txt */ ! function() {
+  try {
+    var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
+      t = (new Error).stack;
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "b51ad508-03b6-479d-92a6-8adce93b33db", e._sentryDebugIdIdentifier = "sentry-dbid-b51ad508-03b6-479d-92a6-8adce93b33db")
+  } catch (e) {}
+}();
+var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
+_global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
+  release: "5e225a56a96343405c858680af91190e5116b19e",
+  packageName: "@rockstargames/modules-core-newswire-article",
+  dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
+};
+var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
+_global.SENTRY_RELEASE = {
+  id: "5e225a56a96343405c858680af91190e5116b19e"
+}, System.register(["@rockstargames/components", "@rockstargames/graph-client", "@rockstargames/modules-core-card", "@rockstargames/modules-core-carousel", "@rockstargames/modules-core-gif-viewer", "@rockstargames/modules-core-group-of-items", "@rockstargames/modules-core-videoplayer", "@rockstargames/modules-sc-ugc-spotlight", "@rockstargames/tina", "@rockstargames/utils"], (function(e, t) {
   var r = {},
+    n = {},
     o = {},
     a = {},
-    n = {},
+    u = {},
     i = {},
     s = {},
     c = {},
-    u = {},
-    l = {},
-    d = {};
+    f = {},
+    l = {};
   return Object.defineProperty(r, "__esModule", {
+    value: !0
+  }), Object.defineProperty(n, "__esModule", {
     value: !0
   }), Object.defineProperty(o, "__esModule", {
     value: !0
   }), Object.defineProperty(a, "__esModule", {
     value: !0
-  }), Object.defineProperty(n, "__esModule", {
+  }), Object.defineProperty(u, "__esModule", {
     value: !0
   }), Object.defineProperty(i, "__esModule", {
     value: !0
@@ -23,16 +41,18 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
     value: !0
   }), Object.defineProperty(c, "__esModule", {
     value: !0
-  }), Object.defineProperty(u, "__esModule", {
+  }), Object.defineProperty(f, "__esModule", {
     value: !0
   }), Object.defineProperty(l, "__esModule", {
-    value: !0
-  }), Object.defineProperty(d, "__esModule", {
     value: !0
   }), {
     setters: [function(e) {
       Object.keys(e).forEach((function(t) {
         r[t] = e[t]
+      }))
+    }, function(e) {
+      Object.keys(e).forEach((function(t) {
+        n[t] = e[t]
       }))
     }, function(e) {
       Object.keys(e).forEach((function(t) {
@@ -44,7 +64,7 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
       }))
     }, function(e) {
       Object.keys(e).forEach((function(t) {
-        n[t] = e[t]
+        u[t] = e[t]
       }))
     }, function(e) {
       Object.keys(e).forEach((function(t) {
@@ -60,114 +80,410 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
       }))
     }, function(e) {
       Object.keys(e).forEach((function(t) {
-        u[t] = e[t]
+        f[t] = e[t]
       }))
     }, function(e) {
       Object.keys(e).forEach((function(t) {
         l[t] = e[t]
       }))
-    }, function(e) {
-      Object.keys(e).forEach((function(t) {
-        d[t] = e[t]
-      }))
     }],
     execute: function() {
       e((() => {
-        var e, f, p, h, m = {
-            6100: (e, t, r) => {
-              (0, r(487).s)(1)
+        var e, d, p, h, y = {
+            3032: (e, t, r) => {
+              (0, r(8752).G)(1)
             },
-            487: (e, t, r) => {
-              const o = r(6175).R;
-              t.s = function(e) {
+            8752: (e, t, r) => {
+              const n = r(2184).Q;
+              t.G = function(e) {
                 if (e || (e = 1), !r.y.meta || !r.y.meta.url) throw console.error("__system_context__", r.y), Error("systemjs-webpack-interop was provided an unknown SystemJS context. Expected context.meta.url, but none was provided");
-                r.p = o(r.y.meta.url, e)
+                r.p = n(r.y.meta.url, e)
               }
             },
-            9473: (e, t, r) => {
-              r(6100)
+            9296: (e, t, r) => {
+              r(3032)
             },
-            6175: (e, t, r) => {
-              t.R = function(e, t) {
+            2184: (e, t, r) => {
+              t.Q = function(e, t) {
                 var r = document.createElement("a");
                 r.href = e;
-                for (var o = "/" === r.pathname[0] ? r.pathname : "/" + r.pathname, a = 0, n = o.length; a !== t && n >= 0;) "/" === o[--n] && a++;
-                if (a !== t) throw Error("systemjs-webpack-interop: rootDirectoryLevel (" + t + ") is greater than the number of directories (" + a + ") in the URL path " + e);
-                var i = o.slice(0, n + 1);
-                return r.protocol + "//" + r.host + i
+                for (var n = "/" === r.pathname[0] ? r.pathname : "/" + r.pathname, o = 0, a = n.length; o !== t && a >= 0;) "/" === n[--a] && o++;
+                if (o !== t) throw Error("systemjs-webpack-interop: rootDirectoryLevel (" + t + ") is greater than the number of directories (" + o + ") in the URL path " + e);
+                var u = n.slice(0, a + 1);
+                return r.protocol + "//" + r.host + u
               };
               Number.isInteger
             },
-            6801: (e, t, r) => {
+            2224: (e, t) => {
               "use strict";
-              var o = {
-                  "./NewswireArticle": () => Promise.all([r.e(615), r.e(394), r.e(976), r.e(985), r.e(715), r.e(510), r.e(297), r.e(705)]).then((() => () => r(705))),
-                  "./NewswireTitle": () => Promise.all([r.e(976), r.e(985), r.e(211)]).then((() => () => r(4211))),
-                  "./components": () => Promise.all([r.e(615), r.e(976), r.e(985), r.e(715)]).then((() => () => r(4715))),
-                  "./index": () => Promise.all([r.e(615), r.e(976), r.e(985), r.e(715), r.e(510), r.e(344)]).then((() => () => r(2344))),
-                  "./tinaBlockTemplates": () => Promise.all([r.e(976), r.e(429)]).then((() => () => r(8429))),
-                  "./types": () => Promise.all([r.e(615), r.e(394), r.e(976), r.e(985), r.e(715), r.e(510), r.e(297), r.e(383)]).then((() => () => r(3383)))
+              var r = Symbol.for("react.element"),
+                n = Symbol.for("react.portal"),
+                o = Symbol.for("react.fragment"),
+                a = Symbol.for("react.strict_mode"),
+                u = Symbol.for("react.profiler"),
+                i = Symbol.for("react.provider"),
+                s = Symbol.for("react.context"),
+                c = Symbol.for("react.forward_ref"),
+                f = Symbol.for("react.suspense"),
+                l = Symbol.for("react.memo"),
+                d = Symbol.for("react.lazy"),
+                p = Symbol.iterator,
+                h = {
+                  isMounted: function() {
+                    return !1
+                  },
+                  enqueueForceUpdate: function() {},
+                  enqueueReplaceState: function() {},
+                  enqueueSetState: function() {}
                 },
-                a = (e, t) => (r.R = t, t = r.o(o, e) ? o[e]() : Promise.resolve().then((() => {
+                y = Object.assign,
+                b = {};
+
+              function m(e, t, r) {
+                this.props = e, this.context = t, this.refs = b, this.updater = r || h
+              }
+
+              function v() {}
+
+              function g(e, t, r) {
+                this.props = e, this.context = t, this.refs = b, this.updater = r || h
+              }
+              m.prototype.isReactComponent = {}, m.prototype.setState = function(e, t) {
+                if ("object" != typeof e && "function" != typeof e && null != e) throw Error("setState(...): takes an object of state variables to update or a function which returns an object of state variables.");
+                this.updater.enqueueSetState(this, e, t, "setState")
+              }, m.prototype.forceUpdate = function(e) {
+                this.updater.enqueueForceUpdate(this, e, "forceUpdate")
+              }, v.prototype = m.prototype;
+              var _ = g.prototype = new v;
+              _.constructor = g, y(_, m.prototype), _.isPureReactComponent = !0;
+              var w = Array.isArray,
+                k = Object.prototype.hasOwnProperty,
+                E = {
+                  current: null
+                },
+                S = {
+                  key: !0,
+                  ref: !0,
+                  __self: !0,
+                  __source: !0
+                };
+
+              function x(e, t, n) {
+                var o, a = {},
+                  u = null,
+                  i = null;
+                if (null != t)
+                  for (o in void 0 !== t.ref && (i = t.ref), void 0 !== t.key && (u = "" + t.key), t) k.call(t, o) && !S.hasOwnProperty(o) && (a[o] = t[o]);
+                var s = arguments.length - 2;
+                if (1 === s) a.children = n;
+                else if (1 < s) {
+                  for (var c = Array(s), f = 0; f < s; f++) c[f] = arguments[f + 2];
+                  a.children = c
+                }
+                if (e && e.defaultProps)
+                  for (o in s = e.defaultProps) void 0 === a[o] && (a[o] = s[o]);
+                return {
+                  $$typeof: r,
+                  type: e,
+                  key: u,
+                  ref: i,
+                  props: a,
+                  _owner: E.current
+                }
+              }
+
+              function j(e) {
+                return "object" == typeof e && null !== e && e.$$typeof === r
+              }
+              var O = /\/+/g;
+
+              function P(e, t) {
+                return "object" == typeof e && null !== e && null != e.key ? function(e) {
+                  var t = {
+                    "=": "=0",
+                    ":": "=2"
+                  };
+                  return "$" + e.replace(/[=:]/g, (function(e) {
+                    return t[e]
+                  }))
+                }("" + e.key) : t.toString(36)
+              }
+
+              function C(e, t, o, a, u) {
+                var i = typeof e;
+                "undefined" !== i && "boolean" !== i || (e = null);
+                var s = !1;
+                if (null === e) s = !0;
+                else switch (i) {
+                  case "string":
+                  case "number":
+                    s = !0;
+                    break;
+                  case "object":
+                    switch (e.$$typeof) {
+                      case r:
+                      case n:
+                        s = !0
+                    }
+                }
+                if (s) return u = u(s = e), e = "" === a ? "." + P(s, 0) : a, w(u) ? (o = "", null != e && (o = e.replace(O, "$&/") + "/"), C(u, t, o, "", (function(e) {
+                  return e
+                }))) : null != u && (j(u) && (u = function(e, t) {
+                  return {
+                    $$typeof: r,
+                    type: e.type,
+                    key: t,
+                    ref: e.ref,
+                    props: e.props,
+                    _owner: e._owner
+                  }
+                }(u, o + (!u.key || s && s.key === u.key ? "" : ("" + u.key).replace(O, "$&/") + "/") + e)), t.push(u)), 1;
+                if (s = 0, a = "" === a ? "." : a + ":", w(e))
+                  for (var c = 0; c < e.length; c++) {
+                    var f = a + P(i = e[c], c);
+                    s += C(i, t, o, f, u)
+                  } else if (f = function(e) {
+                      return null === e || "object" != typeof e ? null : "function" == typeof(e = p && e[p] || e["@@iterator"]) ? e : null
+                    }(e), "function" == typeof f)
+                    for (e = f.call(e), c = 0; !(i = e.next()).done;) s += C(i = i.value, t, o, f = a + P(i, c++), u);
+                  else if ("object" === i) throw t = String(e), Error("Objects are not valid as a React child (found: " + ("[object Object]" === t ? "object with keys {" + Object.keys(e).join(", ") + "}" : t) + "). If you meant to render a collection of children, use an array instead.");
+                return s
+              }
+
+              function R(e, t, r) {
+                if (null == e) return e;
+                var n = [],
+                  o = 0;
+                return C(e, n, "", "", (function(e) {
+                  return t.call(r, e, o++)
+                })), n
+              }
+
+              function $(e) {
+                if (-1 === e._status) {
+                  var t = e._result;
+                  (t = t()).then((function(t) {
+                    0 !== e._status && -1 !== e._status || (e._status = 1, e._result = t)
+                  }), (function(t) {
+                    0 !== e._status && -1 !== e._status || (e._status = 2, e._result = t)
+                  })), -1 === e._status && (e._status = 0, e._result = t)
+                }
+                if (1 === e._status) return e._result.default;
+                throw e._result
+              }
+              var M = {
+                  current: null
+                },
+                T = {
+                  transition: null
+                },
+                I = {
+                  ReactCurrentDispatcher: M,
+                  ReactCurrentBatchConfig: T,
+                  ReactCurrentOwner: E
+                };
+              t.Children = {
+                map: R,
+                forEach: function(e, t, r) {
+                  R(e, (function() {
+                    t.apply(this, arguments)
+                  }), r)
+                },
+                count: function(e) {
+                  var t = 0;
+                  return R(e, (function() {
+                    t++
+                  })), t
+                },
+                toArray: function(e) {
+                  return R(e, (function(e) {
+                    return e
+                  })) || []
+                },
+                only: function(e) {
+                  if (!j(e)) throw Error("React.Children.only expected to receive a single React element child.");
+                  return e
+                }
+              }, t.Component = m, t.Fragment = o, t.Profiler = u, t.PureComponent = g, t.StrictMode = a, t.Suspense = f, t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = I, t.cloneElement = function(e, t, n) {
+                if (null == e) throw Error("React.cloneElement(...): The argument must be a React element, but you passed " + e + ".");
+                var o = y({}, e.props),
+                  a = e.key,
+                  u = e.ref,
+                  i = e._owner;
+                if (null != t) {
+                  if (void 0 !== t.ref && (u = t.ref, i = E.current), void 0 !== t.key && (a = "" + t.key), e.type && e.type.defaultProps) var s = e.type.defaultProps;
+                  for (c in t) k.call(t, c) && !S.hasOwnProperty(c) && (o[c] = void 0 === t[c] && void 0 !== s ? s[c] : t[c])
+                }
+                var c = arguments.length - 2;
+                if (1 === c) o.children = n;
+                else if (1 < c) {
+                  s = Array(c);
+                  for (var f = 0; f < c; f++) s[f] = arguments[f + 2];
+                  o.children = s
+                }
+                return {
+                  $$typeof: r,
+                  type: e.type,
+                  key: a,
+                  ref: u,
+                  props: o,
+                  _owner: i
+                }
+              }, t.createContext = function(e) {
+                return (e = {
+                  $$typeof: s,
+                  _currentValue: e,
+                  _currentValue2: e,
+                  _threadCount: 0,
+                  Provider: null,
+                  Consumer: null,
+                  _defaultValue: null,
+                  _globalName: null
+                }).Provider = {
+                  $$typeof: i,
+                  _context: e
+                }, e.Consumer = e
+              }, t.createElement = x, t.createFactory = function(e) {
+                var t = x.bind(null, e);
+                return t.type = e, t
+              }, t.createRef = function() {
+                return {
+                  current: null
+                }
+              }, t.forwardRef = function(e) {
+                return {
+                  $$typeof: c,
+                  render: e
+                }
+              }, t.isValidElement = j, t.lazy = function(e) {
+                return {
+                  $$typeof: d,
+                  _payload: {
+                    _status: -1,
+                    _result: e
+                  },
+                  _init: $
+                }
+              }, t.memo = function(e, t) {
+                return {
+                  $$typeof: l,
+                  type: e,
+                  compare: void 0 === t ? null : t
+                }
+              }, t.startTransition = function(e) {
+                var t = T.transition;
+                T.transition = {};
+                try {
+                  e()
+                } finally {
+                  T.transition = t
+                }
+              }, t.unstable_act = function() {
+                throw Error("act(...) is not supported in production builds of React.")
+              }, t.useCallback = function(e, t) {
+                return M.current.useCallback(e, t)
+              }, t.useContext = function(e) {
+                return M.current.useContext(e)
+              }, t.useDebugValue = function() {}, t.useDeferredValue = function(e) {
+                return M.current.useDeferredValue(e)
+              }, t.useEffect = function(e, t) {
+                return M.current.useEffect(e, t)
+              }, t.useId = function() {
+                return M.current.useId()
+              }, t.useImperativeHandle = function(e, t, r) {
+                return M.current.useImperativeHandle(e, t, r)
+              }, t.useInsertionEffect = function(e, t) {
+                return M.current.useInsertionEffect(e, t)
+              }, t.useLayoutEffect = function(e, t) {
+                return M.current.useLayoutEffect(e, t)
+              }, t.useMemo = function(e, t) {
+                return M.current.useMemo(e, t)
+              }, t.useReducer = function(e, t, r) {
+                return M.current.useReducer(e, t, r)
+              }, t.useRef = function(e) {
+                return M.current.useRef(e)
+              }, t.useState = function(e) {
+                return M.current.useState(e)
+              }, t.useSyncExternalStore = function(e, t, r) {
+                return M.current.useSyncExternalStore(e, t, r)
+              }, t.useTransition = function() {
+                return M.current.useTransition()
+              }, t.version = "18.2.0"
+            },
+            8188: (e, t, r) => {
+              "use strict";
+              e.exports = r(2224)
+            },
+            5468: (e, t, r) => {
+              "use strict";
+              var n = {
+                  "./NewswireArticle": () => Promise.all([r.e(200), r.e(668), r.e(816), r.e(208), r.e(556), r.e(850), r.e(844)]).then((() => () => r(6844))),
+                  "./NewswireTitle": () => Promise.all([r.e(200), r.e(668), r.e(816), r.e(650)]).then((() => () => r(9650))),
+                  "./components": () => Promise.all([r.e(200), r.e(668), r.e(816), r.e(208)]).then((() => () => r(9208))),
+                  "./index": () => Promise.all([r.e(200), r.e(668), r.e(816), r.e(208), r.e(556), r.e(896)]).then((() => () => r(4896))),
+                  "./tinaBlockTemplates": () => Promise.all([r.e(668), r.e(396)]).then((() => () => r(396))),
+                  "./types": () => Promise.all([r.e(200), r.e(668), r.e(816), r.e(208), r.e(556), r.e(850), r.e(620)]).then((() => () => r(8620)))
+                },
+                o = (e, t) => (r.R = t, t = r.o(n, e) ? n[e]() : Promise.resolve().then((() => {
                   throw new Error('Module "' + e + '" does not exist in container.')
                 })), r.R = void 0, t),
-                n = (e, t) => {
+                a = (e, t) => {
                   if (r.S) {
-                    var o = "default",
-                      a = r.S[o];
-                    if (a && a !== e) throw new Error("Container initialization failed as it has already been initialized with a different share scope");
-                    return r.S[o] = e, r.I(o, t)
+                    var n = "default",
+                      o = r.S[n];
+                    if (o && o !== e) throw new Error("Container initialization failed as it has already been initialized with a different share scope");
+                    return r.S[n] = e, r.I(n, t)
                   }
                 };
               r.d(t, {
-                get: () => a,
-                init: () => n
+                get: () => o,
+                init: () => a
               })
             },
-            5286: e => {
+            8856: e => {
               "use strict";
               e.exports = r
             },
-            5081: e => {
-              "use strict";
-              e.exports = o
-            },
-            4110: e => {
-              "use strict";
-              e.exports = a
-            },
-            9838: e => {
+            3864: e => {
               "use strict";
               e.exports = n
             },
-            3642: e => {
+            7672: e => {
               "use strict";
-              e.exports = i
+              e.exports = o
             },
-            299: e => {
+            3096: e => {
               "use strict";
-              e.exports = s
+              e.exports = a
             },
-            7124: e => {
-              "use strict";
-              e.exports = c
-            },
-            871: e => {
+            5576: e => {
               "use strict";
               e.exports = u
             },
-            7559: e => {
+            72: e => {
+              "use strict";
+              e.exports = i
+            },
+            4472: e => {
+              "use strict";
+              e.exports = s
+            },
+            2354: e => {
+              "use strict";
+              e.exports = c
+            },
+            8428: e => {
+              "use strict";
+              e.exports = f
+            },
+            9344: e => {
               "use strict";
               e.exports = l
-            },
-            2369: e => {
-              "use strict";
-              e.exports = d
             }
           },
           b = {};
 
-        function v(e) {
+        function m(e) {
           var t = b[e];
           if (void 0 !== t) return t.exports;
           var r = b[e] = {
@@ -175,316 +491,329 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
             loaded: !1,
             exports: {}
           };
-          return m[e].call(r.exports, r, r.exports, v), r.loaded = !0, r.exports
+          return y[e].call(r.exports, r, r.exports, m), r.loaded = !0, r.exports
         }
-        return v.m = m, v.c = b, v.y = t, v.n = e => {
+        return m.m = y, m.c = b, m.y = t, m.n = e => {
           var t = e && e.__esModule ? () => e.default : () => e;
-          return v.d(t, {
+          return m.d(t, {
             a: t
           }), t
-        }, v.d = (e, t) => {
-          for (var r in t) v.o(t, r) && !v.o(e, r) && Object.defineProperty(e, r, {
+        }, m.d = (e, t) => {
+          for (var r in t) m.o(t, r) && !m.o(e, r) && Object.defineProperty(e, r, {
             enumerable: !0,
             get: t[r]
           })
-        }, v.f = {}, v.e = e => Promise.all(Object.keys(v.f).reduce(((t, r) => (v.f[r](e, t), t)), [])), v.u = e => "js/" + {
-          211: "76774ac8a5a10d976c3defa27ad4707c",
-          297: "d4bbcdb7e1c86737429686fafce0d76e",
-          344: "b8f17aa3180a152f50d50867ab43f7aa",
-          377: "8a71b2f10082d8ba832a85384bcd9013",
-          383: "bb20562b518938d047ad475f25e357ff",
-          394: "95e9a146a54695f186ab41d4b199db49",
-          429: "5e953fb219c94e0a5189f944be8cc13c",
-          510: "11e1d25762636f3b3b53bcf3a4701e75",
-          615: "89ff51d5bf22d111f2df9ec0de37e46a",
-          705: "192bc1cc202112e0e586229cb625f7bf",
-          715: "1468a05de26b5f829a7c09604d13e545",
-          976: "a52889672cc3ae2703699984b50e09e6",
-          985: "b028b6ac635d9e2c50cc8b255b00d235"
-        } [e] + ".js", v.miniCssF = e => "css/" + {
-          211: "066c965abe29c9e80cb31009b180c446",
-          297: "e4f7b83ac014aa46a95da11d4e2cde8d",
-          715: "c09be69681d5b3d67a911233c74425c8"
-        } [e] + ".css", v.g = function() {
+        }, m.f = {}, m.e = e => Promise.all(Object.keys(m.f).reduce(((t, r) => (m.f[r](e, t), t)), [])), m.u = e => "js/" + {
+          200: "e3b81e2af68561569a63050df639ebf4",
+          208: "b3ebc60cea9fb67b90201033ba5d31f7",
+          272: "947005e752cd8af16d1536b611343f5b",
+          336: "29f17a826c71ff9f5e0b139316fff5a8",
+          396: "e9df464282302128bc7a3ce2630802e3",
+          448: "dc59872f20aa717d58dae9d9aecc8ea4",
+          556: "1e3c8d3117cc76fb780db8e27ac30372",
+          620: "1fe1ff8fd8824cddff14d433506da22f",
+          648: "65955bb99dd83f6898c435788e509cc0",
+          650: "118f4d15dadf402b9944938c379928fc",
+          668: "4af1d3749e076c0cd0614f618d761f79",
+          816: "5b6467f1c20d6ccbf9cef623d13826b7",
+          844: "d422bf2122c668abd7171672f6803a78",
+          850: "abe1738d2cb195433785813cb48d4250",
+          896: "d174345edc856e92944a3a608548d414"
+        } [e] + ".js", m.miniCssF = e => "css/" + {
+          208: "05ad0dccd1b9f00ee756fc223f20e6a7",
+          650: "38cfc95a9203c101bd489ff5c88bc10d",
+          850: "658b870c484eaafbd9d930c5d9deff50"
+        } [e] + ".css", m.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
             return this || new Function("return this")()
           } catch (e) {
             if ("object" == typeof window) return window
           }
-        }(), v.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t), e = {}, f = "@rockstargames/modules-core-newswire-article:", v.l = (t, r, o, a) => {
+        }(), m.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t), e = {}, d = "@rockstargames/modules-core-newswire-article:", m.l = (t, r, n, o) => {
           if (e[t]) e[t].push(r);
           else {
-            var n, i;
-            if (void 0 !== o)
-              for (var s = document.getElementsByTagName("script"), c = 0; c < s.length; c++) {
-                var u = s[c];
-                if (u.getAttribute("src") == t || u.getAttribute("data-webpack") == f + o) {
-                  n = u;
+            var a, u;
+            if (void 0 !== n)
+              for (var i = document.getElementsByTagName("script"), s = 0; s < i.length; s++) {
+                var c = i[s];
+                if (c.getAttribute("src") == t || c.getAttribute("data-webpack") == d + n) {
+                  a = c;
                   break
                 }
               }
-            n || (i = !0, (n = document.createElement("script")).charset = "utf-8", n.timeout = 120, v.nc && n.setAttribute("nonce", v.nc), n.setAttribute("data-webpack", f + o), n.src = t), e[t] = [r];
-            var l = (r, o) => {
-                n.onerror = n.onload = null, clearTimeout(d);
-                var a = e[t];
-                if (delete e[t], n.parentNode && n.parentNode.removeChild(n), a && a.forEach((e => e(o))), r) return r(o)
+            a || (u = !0, (a = document.createElement("script")).charset = "utf-8", a.timeout = 120, m.nc && a.setAttribute("nonce", m.nc), a.setAttribute("data-webpack", d + n), a.src = t), e[t] = [r];
+            var f = (r, n) => {
+                a.onerror = a.onload = null, clearTimeout(l);
+                var o = e[t];
+                if (delete e[t], a.parentNode && a.parentNode.removeChild(a), o && o.forEach((e => e(n))), r) return r(n)
               },
-              d = setTimeout(l.bind(null, void 0, {
+              l = setTimeout(f.bind(null, void 0, {
                 type: "timeout",
-                target: n
+                target: a
               }), 12e4);
-            n.onerror = l.bind(null, n.onerror), n.onload = l.bind(null, n.onload), i && document.head.appendChild(n)
+            a.onerror = f.bind(null, a.onerror), a.onload = f.bind(null, a.onload), u && document.head.appendChild(a)
           }
-        }, v.r = e => {
+        }, m.r = e => {
           "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
             value: "Module"
           }), Object.defineProperty(e, "__esModule", {
             value: !0
           })
-        }, v.nmd = e => (e.paths = [], e.children || (e.children = []), e), p = {
-          429: [334, 559, 1719, 2324, 3204, 3616, 6307, 6904],
-          510: [3750, 5551],
-          705: [1968, 6077],
-          715: [420, 3657, 4224, 4859, 6947, 8356],
-          976: [8976],
-          985: [9542, 9929]
+        }, m.nmd = e => (e.paths = [], e.children || (e.children = []), e), p = {
+          208: [3052, 3061, 4644, 7047, 8460, 9812],
+          396: [1736, 4344, 5356, 5652, 7256, 7368, 9468, 9572],
+          556: [4316, 8508],
+          668: [1668],
+          816: [1740, 5792],
+          844: [3784, 7715]
         }, h = {
-          334: ["default", "./tina", 3642],
-          420: ["default", "./index", 299],
-          559: ["default", "./helpers/uploads", 7559],
-          1719: ["default", "./tina", 7124],
-          1968: ["default", "./providers", 2369],
-          2324: ["default", "./helpers", 7559],
-          3204: ["default", "./tinaBlockTemplates", 7124],
-          3616: ["default", "./properties", 7559],
-          3657: ["default", "./hooks", 2369],
-          3750: ["default", "./index", 9838],
-          4224: ["default", "./index", 7124],
-          4859: ["default", "./index", 5081],
-          5551: ["default", "./index", 871],
-          6077: ["default", "./operations/fragments/newswire-post.graphql", 5081],
-          6307: ["default", "./tinaBlockTemplates", 5286],
-          6904: ["default", "./tinaBlockTemplates", 3642],
-          6947: ["default", "./components", 4110],
-          8356: ["default", "./index", 3642],
-          8976: ["default", "./index", 5286],
-          9542: ["default", "./index", 7559],
-          9929: ["default", "./index", 2369]
-        }, v.f.remotes = (e, t) => {
-          v.o(p, e) && p[e].forEach((e => {
-            var r = v.R;
+          1668: ["default", "./index", 8856],
+          1736: ["default", "./tinaBlockTemplates", 5576],
+          1740: ["default", "./index", 8428],
+          3052: ["default", "./index", 3864],
+          3061: ["default", "./hooks", 9344],
+          3784: ["default", "./operations/fragments/newswire-post.graphql", 3864],
+          4316: ["default", "./index", 3096],
+          4344: ["default", "./tina", 4472],
+          4644: ["default", "./index", 4472],
+          5356: ["default", "./helpers", 8428],
+          5652: ["default", "./helpers/uploads", 8428],
+          5792: ["default", "./index", 9344],
+          7047: ["default", "./components", 7672],
+          7256: ["default", "./tina", 5576],
+          7368: ["default", "./tinaBlockTemplates", 8856],
+          7715: ["default", "./providers", 9344],
+          8460: ["default", "./index", 5576],
+          8508: ["default", "./index", 2354],
+          9468: ["default", "./properties", 8428],
+          9572: ["default", "./tinaBlockTemplates", 4472],
+          9812: ["default", "./index", 72]
+        }, m.f.remotes = (e, t) => {
+          m.o(p, e) && p[e].forEach((e => {
+            var r = m.R;
             r || (r = []);
-            var o = h[e];
-            if (!(r.indexOf(o) >= 0)) {
-              if (r.push(o), o.p) return t.push(o.p);
-              var a = t => {
-                  t || (t = new Error("Container missing")), "string" == typeof t.message && (t.message += '\nwhile loading "' + o[1] + '" from ' + o[2]), v.m[e] = () => {
+            var n = h[e];
+            if (!(r.indexOf(n) >= 0)) {
+              if (r.push(n), n.p) return t.push(n.p);
+              var o = t => {
+                  t || (t = new Error("Container missing")), "string" == typeof t.message && (t.message += '\nwhile loading "' + n[1] + '" from ' + n[2]), m.m[e] = () => {
                     throw t
-                  }, o.p = 0
+                  }, n.p = 0
                 },
-                n = (e, r, n, i, s, c) => {
+                a = (e, r, a, u, i, s) => {
                   try {
-                    var u = e(r, n);
-                    if (!u || !u.then) return s(u, i, c);
-                    var l = u.then((e => s(e, i)), a);
-                    if (!c) return l;
-                    t.push(o.p = l)
+                    var c = e(r, a);
+                    if (!c || !c.then) return i(c, u, s);
+                    var f = c.then((e => i(e, u)), o);
+                    if (!s) return f;
+                    t.push(n.p = f)
                   } catch (e) {
-                    a(e)
+                    o(e)
                   }
                 },
-                i = (e, t, a) => n(t.get, o[1], r, 0, s, a),
-                s = t => {
-                  o.p = 1, v.m[e] = e => {
+                u = (e, t, o) => a(t.get, n[1], r, 0, i, o),
+                i = t => {
+                  n.p = 1, m.m[e] = e => {
                     e.exports = t()
                   }
                 };
-              n(v, o[2], 0, 0, ((e, t, r) => e ? n(v.I, o[0], 0, e, i, r) : a()), 1)
+              a(m, n[2], 0, 0, ((e, t, r) => e ? a(m.I, n[0], 0, e, u, r) : o()), 1)
             }
           }))
         }, (() => {
-          v.S = {};
+          m.S = {};
           var e = {},
             t = {};
-          v.I = (r, o) => {
-            o || (o = []);
-            var a = t[r];
-            if (a || (a = t[r] = {}), !(o.indexOf(a) >= 0)) {
-              if (o.push(a), e[r]) return e[r];
-              v.o(v.S, r) || (v.S[r] = {});
-              var n = v.S[r],
-                i = "@rockstargames/modules-core-newswire-article",
+          m.I = (r, n) => {
+            n || (n = []);
+            var o = t[r];
+            if (o || (o = t[r] = {}), !(n.indexOf(o) >= 0)) {
+              if (n.push(o), e[r]) return e[r];
+              m.o(m.S, r) || (m.S[r] = {});
+              var a = m.S[r],
+                u = "@rockstargames/modules-core-newswire-article",
+                i = (e, t, r, n) => {
+                  var o = a[e] = a[e] || {},
+                    i = o[t];
+                  (!i || !i.loaded && (!n != !i.eager ? n : u > i.from)) && (o[t] = {
+                    get: r,
+                    from: u,
+                    eager: !!n
+                  })
+                },
                 s = e => {
                   var t = e => {
                     return t = "Initialization of sharing external failed: " + e, void("undefined" != typeof console && console.warn && console.warn(t));
                     var t
                   };
                   try {
-                    var a = v(e);
-                    if (!a) return;
-                    var n = e => e && e.init && e.init(v.S[r], o);
-                    if (a.then) return c.push(a.then(n, t));
-                    var i = n(a);
-                    if (i && i.then) return c.push(i.catch(t))
+                    var o = m(e);
+                    if (!o) return;
+                    var a = e => e && e.init && e.init(m.S[r], n);
+                    if (o.then) return c.push(o.then(a, t));
+                    var u = a(o);
+                    if (u && u.then) return c.push(u.catch(t))
                   } catch (e) {
                     t(e)
                   }
                 },
                 c = [];
-              return "default" === r && (((e, t, r, o) => {
-                var a = n[e] = n[e] || {},
-                  s = a[t];
-                (!s || !s.loaded && (1 != !s.eager ? o : i > s.from)) && (a[t] = {
-                  get: () => v.e(377).then((() => () => v(5377))),
-                  from: i,
-                  eager: !1
-                })
-              })("react", "18.2.0"), s(5286), s(7559), s(2369), s(5081), s(4110), s(3642), s(299), s(7124), s(9838), s(871)), c.length ? e[r] = Promise.all(c).then((() => e[r] = 1)) : e[r] = 1
+              return "default" === r && (i("dompurify", "2.4.7", (() => m.e(448).then((() => () => m(7448))))), i("lodash", "4.17.21", (() => m.e(648).then((() => () => m(5648))))), i("react-jsx-parser", "1.29.0", (() => Promise.all([m.e(336), m.e(200)]).then((() => () => m(1336))))), i("react", "18.2.0", (() => () => m(8188)), 1), i("text-balancer", "1.0.5", (() => m.e(272).then((() => () => m(1272))))), s(8856), s(8428), s(9344), s(3864), s(7672), s(5576), s(72), s(4472), s(3096), s(2354)), c.length ? e[r] = Promise.all(c).then((() => e[r] = 1)) : e[r] = 1
             }
           }
         })(), (() => {
           var e;
-          v.g.importScripts && (e = v.g.location + "");
-          var t = v.g.document;
+          m.g.importScripts && (e = m.g.location + "");
+          var t = m.g.document;
           if (!e && t && (t.currentScript && (e = t.currentScript.src), !e)) {
             var r = t.getElementsByTagName("script");
             if (r.length)
-              for (var o = r.length - 1; o > -1 && !e;) e = r[o--].src
+              for (var n = r.length - 1; n > -1 && !e;) e = r[n--].src
           }
           if (!e) throw new Error("Automatic publicPath is not supported in this browser");
-          e = e.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/"), v.p = e
+          e = e.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/"), m.p = e
         })(), (() => {
           var e = e => {
               var t = e => e.split(".").map((e => +e == e ? +e : e)),
                 r = /^([^-+]+)?(?:-([^+]+))?(?:\+(.+))?$/.exec(e),
-                o = r[1] ? t(r[1]) : [];
-              return r[2] && (o.length++, o.push.apply(o, t(r[2]))), r[3] && (o.push([]), o.push.apply(o, t(r[3]))), o
+                n = r[1] ? t(r[1]) : [];
+              return r[2] && (n.length++, n.push.apply(n, t(r[2]))), r[3] && (n.push([]), n.push.apply(n, t(r[3]))), n
             },
-            t = (r, o) => {
+            t = (r, n) => {
               if (0 in r) {
-                o = e(o);
-                var a = r[0],
-                  n = a < 0;
-                n && (a = -a - 1);
-                for (var i = 0, s = 1, c = !0;; s++, i++) {
-                  var u, l, d = s < r.length ? (typeof r[s])[0] : "";
-                  if (i >= o.length || "o" == (l = (typeof(u = o[i]))[0])) return !c || ("u" == d ? s > a && !n : "" == d != n);
-                  if ("u" == l) {
-                    if (!c || "u" != d) return !1
-                  } else if (c)
-                    if (d == l)
-                      if (s <= a) {
-                        if (u != r[s]) return !1
+                n = e(n);
+                var o = r[0],
+                  a = o < 0;
+                a && (o = -o - 1);
+                for (var u = 0, i = 1, s = !0;; i++, u++) {
+                  var c, f, l = i < r.length ? (typeof r[i])[0] : "";
+                  if (u >= n.length || "o" == (f = (typeof(c = n[u]))[0])) return !s || ("u" == l ? i > o && !a : "" == l != a);
+                  if ("u" == f) {
+                    if (!s || "u" != l) return !1
+                  } else if (s)
+                    if (l == f)
+                      if (i <= o) {
+                        if (c != r[i]) return !1
                       } else {
-                        if (n ? u > r[s] : u < r[s]) return !1;
-                        u != r[s] && (c = !1)
+                        if (a ? c > r[i] : c < r[i]) return !1;
+                        c != r[i] && (s = !1)
                       }
-                  else if ("s" != d && "n" != d) {
-                    if (n || s <= a) return !1;
-                    c = !1, s--
+                  else if ("s" != l && "n" != l) {
+                    if (a || i <= o) return !1;
+                    s = !1, i--
                   } else {
-                    if (s <= a || l < d != n) return !1;
-                    c = !1
-                  } else "s" != d && "n" != d && (c = !1, s--)
+                    if (i <= o || f < l != a) return !1;
+                    s = !1
+                  } else "s" != l && "n" != l && (s = !1, i--)
                 }
               }
-              var f = [],
-                p = f.pop.bind(f);
-              for (i = 1; i < r.length; i++) {
-                var h = r[i];
-                f.push(1 == h ? p() | p() : 2 == h ? p() & p() : h ? t(h, o) : !p())
+              var d = [],
+                p = d.pop.bind(d);
+              for (u = 1; u < r.length; u++) {
+                var h = r[u];
+                d.push(1 == h ? p() | p() : 2 == h ? p() & p() : h ? t(h, n) : !p())
               }
               return !!p()
             },
-            r = (r, o, a) => {
-              var n = r[o];
-              return (o = Object.keys(n).reduce(((r, o) => !t(a, o) || r && !((t, r) => {
+            r = (r, n, o) => {
+              var a = r[n];
+              return (n = Object.keys(a).reduce(((r, n) => !t(o, n) || r && !((t, r) => {
                 t = e(t), r = e(r);
-                for (var o = 0;;) {
-                  if (o >= t.length) return o < r.length && "u" != (typeof r[o])[0];
-                  var a = t[o],
-                    n = (typeof a)[0];
-                  if (o >= r.length) return "u" == n;
-                  var i = r[o],
-                    s = (typeof i)[0];
-                  if (n != s) return "o" == n && "n" == s || "s" == s || "u" == n;
-                  if ("o" != n && "u" != n && a != i) return a < i;
-                  o++
+                for (var n = 0;;) {
+                  if (n >= t.length) return n < r.length && "u" != (typeof r[n])[0];
+                  var o = t[n],
+                    a = (typeof o)[0];
+                  if (n >= r.length) return "u" == a;
+                  var u = r[n],
+                    i = (typeof u)[0];
+                  if (a != i) return "o" == a && "n" == i || "s" == i || "u" == a;
+                  if ("o" != a && "u" != a && o != u) return o < u;
+                  n++
                 }
-              })(r, o) ? r : o), 0)) && n[o]
+              })(r, n) ? r : n), 0)) && a[n]
             },
-            o = (e => function(t, r, o, a) {
-              var n = v.I(t);
-              return n && n.then ? n.then(e.bind(e, t, v.S[t], r, o, a)) : e(t, v.S[t], r, o, a)
-            })(((e, t, o, a, n) => {
-              var i = t && v.o(t, o) && r(t, o, a);
-              return i ? (e => (e.loaded = 1, e.get()))(i) : n()
+            n = (e => function(t, r, n, o) {
+              var a = m.I(t);
+              return a && a.then ? a.then(e.bind(e, t, m.S[t], r, n, o)) : e(t, m.S[t], r, n, o)
+            })(((e, t, n, o, a) => {
+              var u = t && m.o(t, n) && r(t, n, o);
+              return u ? (e => (e.loaded = 1, e.get()))(u) : a()
             })),
-            a = {},
-            n = {
-              927: () => o("default", "react", [1, 18, 2, 0], (() => v.e(377).then((() => () => v(5377)))))
+            o = {},
+            a = {
+              8200: () => n("default", "react", [1, 18, 2, 0], (() => () => m(8188))),
+              2064: () => n("default", "text-balancer", [1, 1, 0, 5], (() => m.e(272).then((() => () => m(1272))))),
+              3660: () => n("default", "lodash", [1, 4, 17, 21], (() => m.e(648).then((() => () => m(5648))))),
+              9416: () => n("default", "dompurify", [1, 2, 4, 1], (() => m.e(448).then((() => () => m(7448))))),
+              6280: () => n("default", "react-jsx-parser", [1, 1, 29, 0], (() => m.e(336).then((() => () => m(1336)))))
             },
-            i = {
-              985: [927]
-            };
-          v.f.consumes = (e, t) => {
-            v.o(i, e) && i[e].forEach((e => {
-              if (v.o(a, e)) return t.push(a[e]);
-              var r = t => {
-                  a[e] = 0, v.m[e] = r => {
-                    delete v.c[e], r.exports = t()
-                  }
-                },
-                o = t => {
-                  delete a[e], v.m[e] = r => {
-                    throw delete v.c[e], t
+            u = {
+              200: [8200],
+              208: [2064, 3660, 9416],
+              850: [6280]
+            },
+            i = {};
+          m.f.consumes = (e, t) => {
+            m.o(u, e) && u[e].forEach((e => {
+              if (m.o(o, e)) return t.push(o[e]);
+              if (!i[e]) {
+                var r = t => {
+                  o[e] = 0, m.m[e] = r => {
+                    delete m.c[e], r.exports = t()
                   }
                 };
-              try {
-                var i = n[e]();
-                i.then ? t.push(a[e] = i.then(r).catch(o)) : r(i)
-              } catch (e) {
-                o(e)
+                i[e] = !0;
+                var n = t => {
+                  delete o[e], m.m[e] = r => {
+                    throw delete m.c[e], t
+                  }
+                };
+                try {
+                  var u = a[e]();
+                  u.then ? t.push(o[e] = u.then(r).catch(n)) : r(u)
+                } catch (e) {
+                  n(e)
+                }
               }
             }))
           }
         })(), (() => {
           if ("undefined" != typeof document) {
             var e = {
-              947: 0
+              92: 0
             };
-            v.f.miniCss = (t, r) => {
+            m.f.miniCss = (t, r) => {
               e[t] ? r.push(e[t]) : 0 !== e[t] && {
-                211: 1,
-                297: 1,
-                715: 1
+                208: 1,
+                650: 1,
+                850: 1
               } [t] && r.push(e[t] = (e => new Promise(((t, r) => {
-                var o = v.miniCssF(e),
-                  a = v.p + o;
+                var n = m.miniCssF(e),
+                  o = m.p + n;
                 if (((e, t) => {
-                    for (var r = document.getElementsByTagName("link"), o = 0; o < r.length; o++) {
-                      var a = (i = r[o]).getAttribute("data-href") || i.getAttribute("href");
-                      if ("stylesheet" === i.rel && (a === e || a === t)) return i
+                    for (var r = document.getElementsByTagName("link"), n = 0; n < r.length; n++) {
+                      var o = (u = r[n]).getAttribute("data-href") || u.getAttribute("href");
+                      if ("stylesheet" === u.rel && (o === e || o === t)) return u
                     }
-                    var n = document.getElementsByTagName("style");
-                    for (o = 0; o < n.length; o++) {
-                      var i;
-                      if ((a = (i = n[o]).getAttribute("data-href")) === e || a === t) return i
+                    var a = document.getElementsByTagName("style");
+                    for (n = 0; n < a.length; n++) {
+                      var u;
+                      if ((o = (u = a[n]).getAttribute("data-href")) === e || o === t) return u
                     }
-                  })(o, a)) return t();
-                ((e, t, r, o, a) => {
-                  var n = document.createElement("link");
-                  n.rel = "stylesheet", n.type = "text/css", n.onerror = n.onload = r => {
-                    if (n.onerror = n.onload = null, "load" === r.type) o();
+                  })(n, o)) return t();
+                ((e, t, r, n, o) => {
+                  var a = document.createElement("link");
+                  a.rel = "stylesheet", a.type = "text/css", a.onerror = a.onload = r => {
+                    if (a.onerror = a.onload = null, "load" === r.type) n();
                     else {
-                      var i = r && ("load" === r.type ? "missing" : r.type),
-                        s = r && r.target && r.target.href || t,
-                        c = new Error("Loading CSS chunk " + e + " failed.\n(" + s + ")");
-                      c.code = "CSS_CHUNK_LOAD_FAILED", c.type = i, c.request = s, n.parentNode && n.parentNode.removeChild(n), a(c)
+                      var u = r && ("load" === r.type ? "missing" : r.type),
+                        i = r && r.target && r.target.href || t,
+                        s = new Error("Loading CSS chunk " + e + " failed.\n(" + i + ")");
+                      s.code = "CSS_CHUNK_LOAD_FAILED", s.type = u, s.request = i, a.parentNode && a.parentNode.removeChild(a), o(s)
                     }
-                  }, n.href = t, document.head.appendChild(n)
-                })(e, a, 0, t, r)
+                  }, a.href = t, document.head.appendChild(a)
+                })(e, o, 0, t, r)
               })))(t).then((() => {
                 e[t] = 0
               }), (r => {
@@ -494,42 +823,43 @@ System.register(["@rockstargames/components", "@rockstargames/graph-client", "@r
           }
         })(), (() => {
           var e = {
-            947: 0
+            92: 0
           };
-          v.f.j = (t, r) => {
-            var o = v.o(e, t) ? e[t] : void 0;
-            if (0 !== o)
-              if (o) r.push(o[2]);
-              else if (/^(297|510|976|985)$/.test(t)) e[t] = 0;
+          m.f.j = (t, r) => {
+            var n = m.o(e, t) ? e[t] : void 0;
+            if (0 !== n)
+              if (n) r.push(n[2]);
+              else if (/^(200|556|668|816|850)$/.test(t)) e[t] = 0;
             else {
-              var a = new Promise(((r, a) => o = e[t] = [r, a]));
-              r.push(o[2] = a);
-              var n = v.p + v.u(t),
-                i = new Error;
-              v.l(n, (r => {
-                if (v.o(e, t) && (0 !== (o = e[t]) && (e[t] = void 0), o)) {
-                  var a = r && ("load" === r.type ? "missing" : r.type),
-                    n = r && r.target && r.target.src;
-                  i.message = "Loading chunk " + t + " failed.\n(" + a + ": " + n + ")", i.name = "ChunkLoadError", i.type = a, i.request = n, o[1](i)
+              var o = new Promise(((r, o) => n = e[t] = [r, o]));
+              r.push(n[2] = o);
+              var a = m.p + m.u(t),
+                u = new Error;
+              m.l(a, (r => {
+                if (m.o(e, t) && (0 !== (n = e[t]) && (e[t] = void 0), n)) {
+                  var o = r && ("load" === r.type ? "missing" : r.type),
+                    a = r && r.target && r.target.src;
+                  u.message = "Loading chunk " + t + " failed.\n(" + o + ": " + a + ")", u.name = "ChunkLoadError", u.type = o, u.request = a, n[1](u)
                 }
               }), "chunk-" + t, t)
             }
           };
           var t = (t, r) => {
-              var o, a, n = r[0],
-                i = r[1],
-                s = r[2],
-                c = 0;
-              if (n.some((t => 0 !== e[t]))) {
-                for (o in i) v.o(i, o) && (v.m[o] = i[o]);
-                s && s(v)
+              var n, o, a = r[0],
+                u = r[1],
+                i = r[2],
+                s = 0;
+              if (a.some((t => 0 !== e[t]))) {
+                for (n in u) m.o(u, n) && (m.m[n] = u[n]);
+                i && i(m)
               }
-              for (t && t(r); c < n.length; c++) a = n[c], v.o(e, a) && e[a] && e[a][0](), e[a] = 0
+              for (t && t(r); s < a.length; s++) o = a[s], m.o(e, o) && e[o] && e[o][0](), e[o] = 0
             },
             r = self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || [];
           r.forEach(t.bind(null, 0)), r.push = t.bind(null, r.push.bind(r))
-        })(), v(9473), v(6801)
+        })(), m(9296), m(5468)
       })())
     }
   }
 }));
+//# sourceMappingURL=remote-entry.js.map

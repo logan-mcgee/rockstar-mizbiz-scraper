@@ -1,0 +1,228 @@
+! function() {
+  try {
+    var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
+      t = (new Error).stack;
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "f758d475-7e58-4148-ad25-842c8f35a5c3", e._sentryDebugIdIdentifier = "sentry-dbid-f758d475-7e58-4148-ad25-842c8f35a5c3")
+  } catch (e) {}
+}();
+var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
+_global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
+  release: "5e225a56a96343405c858680af91190e5116b19e",
+  packageName: "@rockstargames/modules-core-sc-user",
+  dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
+};
+var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
+_global.SENTRY_RELEASE = {
+  id: "5e225a56a96343405c858680af91190e5116b19e"
+}, (self.webpackChunk_rockstargames_modules_core_sc_user = self.webpackChunk_rockstargames_modules_core_sc_user || []).push([
+  [988, 16], {
+    988: (e, t, n) => {
+      n.r(t), n.d(t, {
+        InView: () => u,
+        defaultFallbackInView: () => c,
+        observe: () => h,
+        useInView: () => f
+      });
+      var i = n(200),
+        r = Object.defineProperty,
+        o = (e, t, n) => (((e, t, n) => {
+          t in e ? r(e, t, {
+            enumerable: !0,
+            configurable: !0,
+            writable: !0,
+            value: n
+          }) : e[t] = n
+        })(e, "symbol" != typeof t ? t + "" : t, n), n),
+        s = new Map,
+        a = new WeakMap,
+        l = 0,
+        d = void 0;
+
+      function c(e) {
+        d = e
+      }
+
+      function h(e, t, n = {}, i = d) {
+        if (void 0 === window.IntersectionObserver && void 0 !== i) {
+          const r = e.getBoundingClientRect();
+          return t(i, {
+            isIntersecting: i,
+            target: e,
+            intersectionRatio: "number" == typeof n.threshold ? n.threshold : 0,
+            time: 0,
+            boundingClientRect: r,
+            intersectionRect: r,
+            rootBounds: r
+          }), () => {}
+        }
+        const {
+          id: r,
+          observer: o,
+          elements: c
+        } = function(e) {
+          const t = function(e) {
+            return Object.keys(e).sort().filter((t => void 0 !== e[t])).map((t => {
+              return `${t}_${"root"===t?(n=e.root,n?(a.has(n)||(l+=1,a.set(n,l.toString())),a.get(n)):"0"):e[t]}`;
+              var n
+            })).toString()
+          }(e);
+          let n = s.get(t);
+          if (!n) {
+            const i = new Map;
+            let r;
+            const o = new IntersectionObserver((t => {
+              t.forEach((t => {
+                var n;
+                const o = t.isIntersecting && r.some((e => t.intersectionRatio >= e));
+                e.trackVisibility && void 0 === t.isVisible && (t.isVisible = o), null == (n = i.get(t.target)) || n.forEach((e => {
+                  e(o, t)
+                }))
+              }))
+            }), e);
+            r = o.thresholds || (Array.isArray(e.threshold) ? e.threshold : [e.threshold || 0]), n = {
+              id: t,
+              observer: o,
+              elements: i
+            }, s.set(t, n)
+          }
+          return n
+        }(n), h = c.get(e) || [];
+        return c.has(e) || c.set(e, h), h.push(t), o.observe(e),
+          function() {
+            h.splice(h.indexOf(t), 1), 0 === h.length && (c.delete(e), o.unobserve(e)), 0 === c.size && (o.disconnect(), s.delete(r))
+          }
+      }
+      var u = class extends i.Component {
+        constructor(e) {
+          super(e), o(this, "node", null), o(this, "_unobserveCb", null), o(this, "handleNode", (e => {
+            this.node && (this.unobserve(), e || this.props.triggerOnce || this.props.skip || this.setState({
+              inView: !!this.props.initialInView,
+              entry: void 0
+            })), this.node = e || null, this.observeNode()
+          })), o(this, "handleChange", ((e, t) => {
+            e && this.props.triggerOnce && this.unobserve(),
+              function(e) {
+                return "function" != typeof e.children
+              }(this.props) || this.setState({
+                inView: e,
+                entry: t
+              }), this.props.onChange && this.props.onChange(e, t)
+          })), this.state = {
+            inView: !!e.initialInView,
+            entry: void 0
+          }
+        }
+        componentDidMount() {
+          this.unobserve(), this.observeNode()
+        }
+        componentDidUpdate(e) {
+          e.rootMargin === this.props.rootMargin && e.root === this.props.root && e.threshold === this.props.threshold && e.skip === this.props.skip && e.trackVisibility === this.props.trackVisibility && e.delay === this.props.delay || (this.unobserve(), this.observeNode())
+        }
+        componentWillUnmount() {
+          this.unobserve()
+        }
+        observeNode() {
+          if (!this.node || this.props.skip) return;
+          const {
+            threshold: e,
+            root: t,
+            rootMargin: n,
+            trackVisibility: i,
+            delay: r,
+            fallbackInView: o
+          } = this.props;
+          this._unobserveCb = h(this.node, this.handleChange, {
+            threshold: e,
+            root: t,
+            rootMargin: n,
+            trackVisibility: i,
+            delay: r
+          }, o)
+        }
+        unobserve() {
+          this._unobserveCb && (this._unobserveCb(), this._unobserveCb = null)
+        }
+        render() {
+          const {
+            children: e
+          } = this.props;
+          if ("function" == typeof e) {
+            const {
+              inView: t,
+              entry: n
+            } = this.state;
+            return e({
+              inView: t,
+              entry: n,
+              ref: this.handleNode
+            })
+          }
+          const {
+            as: t,
+            triggerOnce: n,
+            threshold: r,
+            root: o,
+            rootMargin: s,
+            onChange: a,
+            skip: l,
+            trackVisibility: d,
+            delay: c,
+            initialInView: h,
+            fallbackInView: u,
+            ...f
+          } = this.props;
+          return i.createElement(t || "div", {
+            ref: this.handleNode,
+            ...f
+          }, e)
+        }
+      };
+
+      function f({
+        threshold: e,
+        delay: t,
+        trackVisibility: n,
+        rootMargin: r,
+        root: o,
+        triggerOnce: s,
+        skip: a,
+        initialInView: l,
+        fallbackInView: d,
+        onChange: c
+      } = {}) {
+        var u;
+        const [f, p] = i.useState(null), b = i.useRef(), [g, y] = i.useState({
+          inView: !!l,
+          entry: void 0
+        });
+        b.current = c, i.useEffect((() => {
+          if (a || !f) return;
+          let i;
+          return i = h(f, ((e, t) => {
+            y({
+              inView: e,
+              entry: t
+            }), b.current && b.current(e, t), t.isIntersecting && s && i && (i(), i = void 0)
+          }), {
+            root: o,
+            rootMargin: r,
+            threshold: e,
+            trackVisibility: n,
+            delay: t
+          }, d), () => {
+            i && i()
+          }
+        }), [Array.isArray(e) ? e.toString() : e, f, o, r, s, a, n, d, t]);
+        const v = null == (u = g.entry) ? void 0 : u.target,
+          w = i.useRef();
+        f || !v || s || a || w.current === v || (w.current = v, y({
+          inView: !!l,
+          entry: void 0
+        }));
+        const k = [p, g.inView, g.entry];
+        return k.ref = k[0], k.inView = k[1], k.entry = k[2], k
+      }
+    }
+  }
+]);
+//# sourceMappingURL=668d1514643c4a1e41d11dc3f515dee3.js.map
