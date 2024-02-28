@@ -7,13 +7,13 @@
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "5e225a56a96343405c858680af91190e5116b19e",
+  release: "d409e297a36831321bd01cc6fefa95672d98d375",
   packageName: "@rockstargames/modules-core-header",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "5e225a56a96343405c858680af91190e5116b19e"
+  id: "d409e297a36831321bd01cc6fefa95672d98d375"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [800], {
     6540: e => {
@@ -27,7 +27,7 @@ _global.SENTRY_RELEASE = {
         throw new Error("clearTimeout has not been defined")
       }
 
-      function i(e) {
+      function c(e) {
         if (t === setTimeout) return setTimeout(e, 0);
         if ((t === o || !t) && setTimeout) return t = setTimeout, setTimeout(e, 0);
         try {
@@ -51,23 +51,23 @@ _global.SENTRY_RELEASE = {
           n = a
         }
       }();
-      var c, u = [],
+      var i, u = [],
         l = !1,
         f = -1;
 
       function s() {
-        l && c && (l = !1, c.length ? u = c.concat(u) : f = -1, u.length && p())
+        l && i && (l = !1, i.length ? u = i.concat(u) : f = -1, u.length && p())
       }
 
       function p() {
         if (!l) {
-          var e = i(s);
+          var e = c(s);
           l = !0;
           for (var t = u.length; t;) {
-            for (c = u, u = []; ++f < t;) c && c[f].run();
+            for (i = u, u = []; ++f < t;) i && i[f].run();
             f = -1, t = u.length
           }
-          c = null, l = !1,
+          i = null, l = !1,
             function(e) {
               if (n === clearTimeout) return clearTimeout(e);
               if ((n === a || !n) && clearTimeout) return n = clearTimeout, clearTimeout(e);
@@ -93,7 +93,7 @@ _global.SENTRY_RELEASE = {
         var t = new Array(arguments.length - 1);
         if (arguments.length > 1)
           for (var n = 1; n < arguments.length; n++) t[n - 1] = arguments[n];
-        u.push(new d(e, t)), 1 !== u.length || l || i(p)
+        u.push(new d(e, t)), 1 !== u.length || l || c(p)
       }, d.prototype.run = function() {
         this.fun.apply(null, this.array)
       }, r.title = "browser", r.browser = !0, r.env = {}, r.argv = [], r.version = "", r.versions = {}, r.on = y, r.addListener = y, r.once = y, r.off = y, r.removeListener = y, r.removeAllListeners = y, r.emit = y, r.prependListener = y, r.prependOnceListener = y, r.listeners = function(e) {
@@ -115,8 +115,8 @@ _global.SENTRY_RELEASE = {
         KE: () => u,
         Mt: () => l,
         ct: () => o,
-        kH: () => c,
-        sX: () => i
+        kH: () => i,
+        sX: () => c
       });
       var r = function(e, t) {
         return r = Object.setPrototypeOf || {
@@ -145,7 +145,7 @@ _global.SENTRY_RELEASE = {
         }, a.apply(this, arguments)
       };
 
-      function i(e, t) {
+      function c(e, t) {
         var n = {};
         for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && t.indexOf(r) < 0 && (n[r] = e[r]);
         if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -155,9 +155,9 @@ _global.SENTRY_RELEASE = {
         return n
       }
 
-      function c(e, t, n, r) {
+      function i(e, t, n, r) {
         return new(n || (n = Promise))((function(o, a) {
-          function i(e) {
+          function c(e) {
             try {
               u(r.next(e))
             } catch (e) {
@@ -165,7 +165,7 @@ _global.SENTRY_RELEASE = {
             }
           }
 
-          function c(e) {
+          function i(e) {
             try {
               u(r.throw(e))
             } catch (e) {
@@ -177,14 +177,14 @@ _global.SENTRY_RELEASE = {
             var t;
             e.done ? o(e.value) : (t = e.value, t instanceof n ? t : new n((function(e) {
               e(t)
-            }))).then(i, c)
+            }))).then(c, i)
           }
           u((r = r.apply(e, t || [])).next())
         }))
       }
 
       function u(e, t) {
-        var n, r, o, a, i = {
+        var n, r, o, a, c = {
           label: 0,
           sent: function() {
             if (1 & o[0]) throw o[1];
@@ -194,67 +194,67 @@ _global.SENTRY_RELEASE = {
           ops: []
         };
         return a = {
-          next: c(0),
-          throw: c(1),
-          return: c(2)
+          next: i(0),
+          throw: i(1),
+          return: i(2)
         }, "function" == typeof Symbol && (a[Symbol.iterator] = function() {
           return this
         }), a;
 
-        function c(c) {
+        function i(i) {
           return function(u) {
-            return function(c) {
+            return function(i) {
               if (n) throw new TypeError("Generator is already executing.");
-              for (; a && (a = 0, c[0] && (i = 0)), i;) try {
-                if (n = 1, r && (o = 2 & c[0] ? r.return : c[0] ? r.throw || ((o = r.return) && o.call(r), 0) : r.next) && !(o = o.call(r, c[1])).done) return o;
-                switch (r = 0, o && (c = [2 & c[0], o.value]), c[0]) {
+              for (; a && (a = 0, i[0] && (c = 0)), c;) try {
+                if (n = 1, r && (o = 2 & i[0] ? r.return : i[0] ? r.throw || ((o = r.return) && o.call(r), 0) : r.next) && !(o = o.call(r, i[1])).done) return o;
+                switch (r = 0, o && (i = [2 & i[0], o.value]), i[0]) {
                   case 0:
                   case 1:
-                    o = c;
+                    o = i;
                     break;
                   case 4:
-                    return i.label++, {
-                      value: c[1],
+                    return c.label++, {
+                      value: i[1],
                       done: !1
                     };
                   case 5:
-                    i.label++, r = c[1], c = [0];
+                    c.label++, r = i[1], i = [0];
                     continue;
                   case 7:
-                    c = i.ops.pop(), i.trys.pop();
+                    i = c.ops.pop(), c.trys.pop();
                     continue;
                   default:
-                    if (!((o = (o = i.trys).length > 0 && o[o.length - 1]) || 6 !== c[0] && 2 !== c[0])) {
-                      i = 0;
+                    if (!((o = (o = c.trys).length > 0 && o[o.length - 1]) || 6 !== i[0] && 2 !== i[0])) {
+                      c = 0;
                       continue
                     }
-                    if (3 === c[0] && (!o || c[1] > o[0] && c[1] < o[3])) {
-                      i.label = c[1];
+                    if (3 === i[0] && (!o || i[1] > o[0] && i[1] < o[3])) {
+                      c.label = i[1];
                       break
                     }
-                    if (6 === c[0] && i.label < o[1]) {
-                      i.label = o[1], o = c;
+                    if (6 === i[0] && c.label < o[1]) {
+                      c.label = o[1], o = i;
                       break
                     }
-                    if (o && i.label < o[2]) {
-                      i.label = o[2], i.ops.push(c);
+                    if (o && c.label < o[2]) {
+                      c.label = o[2], c.ops.push(i);
                       break
                     }
-                    o[2] && i.ops.pop(), i.trys.pop();
+                    o[2] && c.ops.pop(), c.trys.pop();
                     continue
                 }
-                c = t.call(e, i)
+                i = t.call(e, c)
               } catch (e) {
-                c = [6, e], r = 0
+                i = [6, e], r = 0
               } finally {
                 n = o = 0
               }
-              if (5 & c[0]) throw c[1];
+              if (5 & i[0]) throw i[1];
               return {
-                value: c[0] ? c[1] : void 0,
+                value: i[0] ? i[1] : void 0,
                 done: !0
               }
-            }([c, u])
+            }([i, u])
           }
         }
       }
@@ -268,4 +268,4 @@ _global.SENTRY_RELEASE = {
     }
   }
 ]);
-//# sourceMappingURL=5aeb5e280df4ff1aa674f049990ec3e9.js.map
+//# sourceMappingURL=3e26ac412b08bb4ab09ef50961cdce18.js.map

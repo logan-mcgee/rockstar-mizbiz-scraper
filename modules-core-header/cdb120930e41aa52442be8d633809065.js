@@ -1,38 +1,38 @@
 ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "c4525b60-a228-43c5-9490-7bd5c3ff638e", e._sentryDebugIdIdentifier = "sentry-dbid-c4525b60-a228-43c5-9490-7bd5c3ff638e")
+      d = (new Error).stack;
+    d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "1725dd33-8a7f-4c85-81b3-79057ffbb460", e._sentryDebugIdIdentifier = "sentry-dbid-1725dd33-8a7f-4c85-81b3-79057ffbb460")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "5e225a56a96343405c858680af91190e5116b19e",
+  release: "d409e297a36831321bd01cc6fefa95672d98d375",
   packageName: "@rockstargames/modules-core-header",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "5e225a56a96343405c858680af91190e5116b19e"
+  id: "d409e297a36831321bd01cc6fefa95672d98d375"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [492], {
-    1492: (e, a, n) => {
-      n.r(a), n.d(a, {
-        default: () => f
+    1492: (e, d, a) => {
+      a.r(d), a.d(d, {
+        default: () => s
       });
-      var d = n(4812),
-        o = n(8388),
-        l = n(3040),
-        t = n(3480);
+      var n = a(4812),
+        o = a(8388),
+        l = a(1200),
+        t = a(3480);
       const {
-        graphEnv: r,
-        pingBearer: s
-      } = (0, o.S_)(), f = () => {
-        const e = (0, d.EB)(l.c, {
-          env: r,
-          token: (0, d.UT)(null),
-          tokenPing: (0, d.UT)(s),
-          tokenPingExpires: (0, d.UT)(null),
+        graphEnv: f,
+        pingBearer: r
+      } = (0, o.S_)(), s = () => {
+        const e = (0, n.EB)(l.c, {
+          env: f,
+          token: (0, n.UT)(null),
+          tokenPing: (0, n.UT)(r),
+          tokenPingExpires: (0, n.UT)(null),
           typePolicies: {}
         });
         return (0, t.jsx)(e, {})
@@ -40,4 +40,4 @@ _global.SENTRY_RELEASE = {
     }
   }
 ]);
-//# sourceMappingURL=bf774703f08c20ffb2183ea67d83111d.js.map
+//# sourceMappingURL=cdb120930e41aa52442be8d633809065.js.map

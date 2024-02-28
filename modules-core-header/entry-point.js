@@ -2,18 +2,18 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "8e17d60b-6b3f-4765-aa87-939cd4532a61", e._sentryDebugIdIdentifier = "sentry-dbid-8e17d60b-6b3f-4765-aa87-939cd4532a61")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "ad4e704c-0763-428f-ac3f-9c084c298594", e._sentryDebugIdIdentifier = "sentry-dbid-ad4e704c-0763-428f-ac3f-9c084c298594")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "5e225a56a96343405c858680af91190e5116b19e",
+  release: "d409e297a36831321bd01cc6fefa95672d98d375",
   packageName: "@rockstargames/modules-core-header",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "5e225a56a96343405c858680af91190e5116b19e"
+  id: "d409e297a36831321bd01cc6fefa95672d98d375"
 }, System.register([], (function(e, t) {
   return {
     execute: function() {
@@ -18011,9 +18011,9 @@ _global.SENTRY_RELEASE = {
             4444: (e, t, n) => {
               "use strict";
               var r = {
-                  "./bootstrap": () => Promise.all([n.e(800), n.e(923), n.e(798), n.e(356), n.e(904), n.e(80), n.e(728)]).then((() => () => n(2728))),
-                  "./core": () => Promise.all([n.e(800), n.e(923), n.e(798), n.e(356), n.e(904), n.e(492)]).then((() => () => n(1492))),
-                  "./index": () => Promise.all([n.e(800), n.e(923), n.e(798), n.e(356), n.e(904), n.e(856)]).then((() => () => n(5856)))
+                  "./bootstrap": () => Promise.all([n.e(800), n.e(923), n.e(798), n.e(356), n.e(180), n.e(80), n.e(728)]).then((() => () => n(2728))),
+                  "./core": () => Promise.all([n.e(800), n.e(923), n.e(798), n.e(356), n.e(180), n.e(492)]).then((() => () => n(1492))),
+                  "./index": () => Promise.all([n.e(800), n.e(923), n.e(798), n.e(356), n.e(180), n.e(856)]).then((() => () => n(5856)))
                 },
                 a = (e, t) => (n.R = t, t = n.o(r, e) ? r[e]() : Promise.resolve().then((() => {
                   throw new Error('Module "' + e + '" does not exist in container.')
@@ -18068,27 +18068,27 @@ _global.SENTRY_RELEASE = {
             get: t[n]
           })
         }, i.f = {}, i.e = e => Promise.all(Object.keys(i.f).reduce(((t, n) => (i.f[n](e, t), t)), [])), i.u = e => "js/" + {
-          72: "9798268069f775c81d3e5fe1cb557385",
+          72: "d89ccb4a00dedc127cb53e3691c8355d",
           80: "fe06d617a0a64aa3659c684ca441b2ea",
-          280: "cbe29f9769776dbb1800bbdbb37eef79",
+          180: "4331caa7d3aefa907ba5a39fddb8a358",
+          280: "81f7473201d79bcb1184ad8c89f8e079",
           320: "e9ff026a0fa0149766f3806ac5b5a86f",
-          356: "def6ab6c4f1d809036aa625e2e1216f5",
-          436: "3da772c51604180c1af06e3f66fec6e7",
-          492: "bf774703f08c20ffb2183ea67d83111d",
-          532: "d97e5c9ee8b9e12c233d6b50fd2f392e",
-          648: "297a69fc0a66274c0df3666296ce80b1",
-          660: "e5cc91723340c135765a77c9c746ecb0",
-          676: "6a89eb8f5402c38f546f0791c286c621",
-          692: "ec08ffad5df1a42dba4e3127c6e931a3",
-          728: "8fda237e7205bb59499c29953c4875fb",
-          798: "3307ca00940c8eaedeb55cfa280c9789",
-          800: "5aeb5e280df4ff1aa674f049990ec3e9",
-          856: "02b81c4f5b84227d187121db565389dc",
-          904: "76cf52ce556e2166edf08ae2f8ad14b4",
-          907: "ee1f98fcf0e5c310b2e49d939b2b492e",
-          912: "8b2ce792fc80cc0105ff51d39a777cbe",
-          923: "bc5a5db3c53906dfbc3823a4c848a21e"
-        } [e] + ".js", i.miniCssF = e => "css/65d57203a3571638f1751f3606534810.css", i.g = function() {
+          356: "7ee475f9b124062b219149eb3ab75ca5",
+          436: "478484ecf455a5552f12f276fe79f84b",
+          492: "cdb120930e41aa52442be8d633809065",
+          532: "361b7ae5a4a4fb8b1b04132cf095127a",
+          648: "adfa83e35f8c4e79c56b2723c1cfcbc4",
+          660: "35c3641d48007276eb6507f7a00868cc",
+          676: "45ada4a14a085a42299ad800ee9f6fbc",
+          692: "26555cda766a64ddc3008446e481554f",
+          728: "da6d76526a673104dc4e65a7514016b0",
+          798: "ac7887def94f53d045fc326e551cee2f",
+          800: "3e26ac412b08bb4ab09ef50961cdce18",
+          856: "1b3eb73eb604f2dfc9f9d1af4ece0773",
+          907: "6f6fd86331b653d70ae741c71aad3695",
+          912: "e981020bef40912443384440ce8b1c4c",
+          923: "0131b6005b2e9973a4bed36aebcdb909"
+        } [e] + ".js", i.miniCssF = e => "css/34c2b9b11db8e074ae968d9c1cd5f7bc.css", i.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
             return this || new Function("return this")()
@@ -18253,10 +18253,10 @@ _global.SENTRY_RELEASE = {
           }));
           var o = {
               80: [9080],
+              180: [244, 528, 1512, 2004, 4768, 8268],
               320: [8940],
               356: [3557, 3660],
-              676: [8892],
-              904: [244, 528, 1512, 2004, 4768, 8268]
+              676: [8892]
             },
             u = {};
           i.f.consumes = (e, t) => {
@@ -18290,7 +18290,7 @@ _global.SENTRY_RELEASE = {
             };
             i.f.miniCss = (t, n) => {
               e[t] ? n.push(e[t]) : 0 !== e[t] && {
-                904: 1
+                180: 1
               } [t] && n.push(e[t] = (e => new Promise(((t, n) => {
                 var r = i.miniCssF(e),
                   a = i.p + r;

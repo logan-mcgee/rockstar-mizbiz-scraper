@@ -2,20 +2,20 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       o = (new Error).stack;
-    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "64c042f1-763b-46c1-aae9-2035212824ff", e._sentryDebugIdIdentifier = "sentry-dbid-64c042f1-763b-46c1-aae9-2035212824ff")
+    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "c5638833-4e1f-493c-94be-580eceeb9931", e._sentryDebugIdIdentifier = "sentry-dbid-c5638833-4e1f-493c-94be-580eceeb9931")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "5e225a56a96343405c858680af91190e5116b19e",
+  release: "d409e297a36831321bd01cc6fefa95672d98d375",
   packageName: "@rockstargames/modules-core-header",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "5e225a56a96343405c858680af91190e5116b19e"
+  id: "d409e297a36831321bd01cc6fefa95672d98d375"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
-  [280, 660], {
+  [660, 280], {
     2280: (e, o, s) => {
       "use strict";
       s.r(o), s.d(o, {
@@ -43,9 +43,9 @@ _global.SENTRY_RELEASE = {
         u = s(3916),
         b = s(9423),
         m = s(4932),
-        f = {};
-      for (const e in m)["default", "FormattedMessage", "IntlProvider", "createDevLocaleHook", "createIntl", "defineMessages", "englishLocale", "getLocale", "localeCookieHandler", "locales", "splitLocale", "useIntl", "withIntl"].indexOf(e) < 0 && (f[e] = () => m[e]);
-      s.d(o, f)
+        p = {};
+      for (const e in m)["default", "FormattedMessage", "IntlProvider", "createDevLocaleHook", "createIntl", "defineMessages", "englishLocale", "getLocale", "localeCookieHandler", "locales", "splitLocale", "useIntl", "withIntl"].indexOf(e) < 0 && (p[e] = () => m[e]);
+      s.d(o, p)
     },
     3583: (e, o, s) => {
       "use strict";
@@ -258,4 +258,4 @@ _global.SENTRY_RELEASE = {
     }
   }
 ]);
-//# sourceMappingURL=cbe29f9769776dbb1800bbdbb37eef79.js.map
+//# sourceMappingURL=35c3641d48007276eb6507f7a00868cc.js.map

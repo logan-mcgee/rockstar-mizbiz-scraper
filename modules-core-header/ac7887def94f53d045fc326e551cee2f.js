@@ -1,19 +1,19 @@
-/*! For license information please see 3307ca00940c8eaedeb55cfa280c9789.js.LICENSE.txt */ ! function() {
+/*! For license information please see ac7887def94f53d045fc326e551cee2f.js.LICENSE.txt */ ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "29ecd66e-3211-4666-90d5-7ac63884d997", e._sentryDebugIdIdentifier = "sentry-dbid-29ecd66e-3211-4666-90d5-7ac63884d997")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "b796a7e8-af0c-4ad4-91c9-80d01961210d", e._sentryDebugIdIdentifier = "sentry-dbid-b796a7e8-af0c-4ad4-91c9-80d01961210d")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "5e225a56a96343405c858680af91190e5116b19e",
+  release: "d409e297a36831321bd01cc6fefa95672d98d375",
   packageName: "@rockstargames/modules-core-header",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "5e225a56a96343405c858680af91190e5116b19e"
+  id: "d409e297a36831321bd01cc6fefa95672d98d375"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [798], {
     5780: (e, t, r) => {
@@ -14199,7 +14199,7 @@ _global.SENTRY_RELEASE = {
       var i = r(9712).document;
       e.exports = i && i.documentElement
     },
-    1200: (e, t, r) => {
+    8820: (e, t, r) => {
       e.exports = !r(180) && !r(1380)((function() {
         return 7 != Object.defineProperty(r(7508)("div"), "a", {
           get: function() {
@@ -14394,7 +14394,7 @@ _global.SENTRY_RELEASE = {
     },
     7428: (e, t, r) => {
       var i = r(7544),
-        n = r(1200),
+        n = r(8820),
         a = r(5812),
         s = Object.defineProperty;
       t.f = r(180) ? Object.defineProperty : function(e, t, r) {
@@ -14421,7 +14421,7 @@ _global.SENTRY_RELEASE = {
         a = r(8412),
         s = r(5812),
         o = r(2304),
-        l = r(1200),
+        l = r(8820),
         h = Object.getOwnPropertyDescriptor;
       t.f = r(180) ? h : function(e, t) {
         if (e = a(e), t = s(t, !0), l) try {
@@ -17692,4 +17692,4 @@ _global.SENTRY_RELEASE = {
     }
   }
 ]);
-//# sourceMappingURL=3307ca00940c8eaedeb55cfa280c9789.js.map
+//# sourceMappingURL=ac7887def94f53d045fc326e551cee2f.js.map
