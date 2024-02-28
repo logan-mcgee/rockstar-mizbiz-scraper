@@ -1,4 +1,4 @@
-/*! For license information please see 322a80a40cdc7b76d9358f12737e03d6.js.LICENSE.txt */ ! function() {
+/*! For license information please see fd4526aa590e39c21163d86dc1ca5b7f.js.LICENSE.txt */ ! function() {
   try {
     var t = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       e = (new Error).stack;
@@ -7,13 +7,13 @@
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "5e225a56a96343405c858680af91190e5116b19e",
+  release: "d409e297a36831321bd01cc6fefa95672d98d375",
   packageName: "@rockstargames/components",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "5e225a56a96343405c858680af91190e5116b19e"
+  id: "d409e297a36831321bd01cc6fefa95672d98d375"
 }, (self.webpackChunk_rockstargames_components = self.webpackChunk_rockstargames_components || []).push([
   [384], {
     6384: (t, e, n) => {
@@ -974,4 +974,4 @@ _global.SENTRY_RELEASE = {
     }
   }
 ]);
-//# sourceMappingURL=322a80a40cdc7b76d9358f12737e03d6.js.map
+//# sourceMappingURL=fd4526aa590e39c21163d86dc1ca5b7f.js.map

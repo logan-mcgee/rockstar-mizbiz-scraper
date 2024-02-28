@@ -7,13 +7,13 @@
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "5e225a56a96343405c858680af91190e5116b19e",
+  release: "d409e297a36831321bd01cc6fefa95672d98d375",
   packageName: "@rockstargames/components",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "5e225a56a96343405c858680af91190e5116b19e"
+  id: "d409e297a36831321bd01cc6fefa95672d98d375"
 }, (self.webpackChunk_rockstargames_components = self.webpackChunk_rockstargames_components || []).push([
   [456], {
     1456: function(a, l, e) {
@@ -75,4 +75,4 @@ _global.SENTRY_RELEASE = {
     }
   }
 ]);
-//# sourceMappingURL=bd28f551e04bcc19df46af55b222f180.js.map
+//# sourceMappingURL=3178e91a5e293c315d8b6e1368592719.js.map

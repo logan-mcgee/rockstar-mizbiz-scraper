@@ -7,13 +7,13 @@
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "5e225a56a96343405c858680af91190e5116b19e",
+  release: "d409e297a36831321bd01cc6fefa95672d98d375",
   packageName: "@rockstargames/components",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "5e225a56a96343405c858680af91190e5116b19e"
+  id: "d409e297a36831321bd01cc6fefa95672d98d375"
 }, (self.webpackChunk_rockstargames_components = self.webpackChunk_rockstargames_components || []).push([
   [324], {
     6116: (e, t) => {
@@ -36,22 +36,22 @@ _global.SENTRY_RELEASE = {
           var f = t.height / 100;
           s = o.value * f, c = i.value * f
         }
-        var p = "%" === a.unit && "%" === l.unit,
-          d = l.value,
+        var d = "%" === a.unit && "%" === l.unit,
+          p = l.value,
           y = a.value;
-        if (p) {
+        if (d) {
           var h = t.width / 100;
-          d = l.value * h, y = a.value * h
+          p = l.value * h, y = a.value * h
         }
         var b = Math.abs(s) + Math.abs(c);
         this.totalDistY = n.height + t.height + b;
         var v = n.height + t.height + (c > s ? -1 * b : b),
-          O = Math.abs(d) + Math.abs(y);
+          O = Math.abs(p) + Math.abs(y);
         this.totalDistX = n.width + t.width + O;
-        var m = n.width + t.width + (y > d ? -1 * O : O),
+        var m = n.width + t.width + (y > p ? -1 * O : O),
           g = t.originTotalDistY / v,
           w = t.originTotalDistX / m;
-        this.top = t.top, this.bottom = t.bottom, s < 0 && (this.top = this.top + s * g), c > 0 && (this.bottom = this.bottom + c * g), this.left = t.left, this.right = t.right, d < 0 && (this.left = this.left + d * w), y > 0 && (this.right = this.right + y * w)
+        this.top = t.top, this.bottom = t.bottom, s < 0 && (this.top = this.top + s * g), c > 0 && (this.bottom = this.bottom + c * g), this.left = t.left, this.right = t.right, p < 0 && (this.left = this.left + p * w), y > 0 && (this.right = this.right + y * w)
       }
     },
     3840: (e, t, r) => {
@@ -103,13 +103,13 @@ _global.SENTRY_RELEASE = {
         }) : e[t] = r, e
       }
 
-      function p(e, t) {
+      function d(e, t) {
         for (var r = 0; r < t.length; r++) {
           var n = t[r];
           n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(e, n.key, n)
         }
       }
-      var d = function() {
+      var p = function() {
         function e(t) {
           ! function(e, t) {
             if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
@@ -136,9 +136,9 @@ _global.SENTRY_RELEASE = {
           value: function(e, t) {
             return this.isInView = (0, o.isElementInView)(this.bounds.top, this.bounds.bottom, e.height, t.y), this.isInView ? (this.percent = (0, o.percentMoved)(this.rect.top, this.rect.originTotalDistY, e.height, t.y), (0, o.setParallaxStyles)(this.elInner, this.offsets, this.percent), this) : this
           }
-        }]) && p(t.prototype, r), e
+        }]) && d(t.prototype, r), e
       }();
-      t.Element = d
+      t.Element = p
     },
     9808: (e, t, r) => {
       "use strict";
@@ -173,7 +173,7 @@ _global.SENTRY_RELEASE = {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {};
           t % 2 ? c(Object(r), !0).forEach((function(t) {
-            p(e, t, r[t])
+            d(e, t, r[t])
           })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : c(Object(r)).forEach((function(t) {
             Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
           }))
@@ -181,7 +181,7 @@ _global.SENTRY_RELEASE = {
         return e
       }
 
-      function p(e, t, r) {
+      function d(e, t, r) {
         return t in e ? Object.defineProperty(e, t, {
           value: r,
           enumerable: !0,
@@ -190,15 +190,15 @@ _global.SENTRY_RELEASE = {
         }) : e[t] = r, e
       }
 
-      function d(e) {
+      function p(e) {
         var t = e.scrollAxis,
           r = void 0 === t ? u.VERTICAL : t,
           c = e.scrollContainer,
-          p = [],
-          d = !!c,
+          d = [],
+          p = !!c,
           y = c || window,
-          h = d ? y.scrollLeft : window.pageXOffset,
-          b = d ? y.scrollTop : window.pageYOffset,
+          h = p ? y.scrollLeft : window.pageXOffset,
+          b = p ? y.scrollTop : window.pageYOffset,
           v = new a.Scroll(h, b),
           O = new i.View({
             width: 0,
@@ -221,9 +221,9 @@ _global.SENTRY_RELEASE = {
         }
 
         function j() {
-          var e = d ? y.scrollLeft : window.pageXOffset,
-            t = d ? y.scrollTop : window.pageYOffset;
-          v.setScroll(e, t), !m && p.length > 0 && (m = !0, window.requestAnimationFrame(x))
+          var e = p ? y.scrollLeft : window.pageXOffset,
+            t = p ? y.scrollTop : window.pageYOffset;
+          v.setScroll(e, t), !m && d.length > 0 && (m = !0, window.requestAnimationFrame(x))
         }
 
         function _() {
@@ -234,7 +234,7 @@ _global.SENTRY_RELEASE = {
 
         function x() {
           var e = (arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}).updateCache;
-          p && p.forEach((function(t) {
+          d && d.forEach((function(t) {
             E(t), e && t.setCachedAttributes(O, v)
           })), m = !1
         }
@@ -244,7 +244,7 @@ _global.SENTRY_RELEASE = {
         }
 
         function M() {
-          if (d) {
+          if (p) {
             var e = y.offsetWidth,
               t = y.offsetHeight;
             return O.setSize(e, t)
@@ -255,14 +255,14 @@ _global.SENTRY_RELEASE = {
           return O.setSize(n, o)
         }
         w(y), M(), this.getElements = function() {
-          return p
+          return d
         }, this.createElement = function(e) {
           var t, n = new l.Element(f(f({}, e), {}, {
             scrollAxis: r
           }));
-          return n.setCachedAttributes(O, v), p = p ? [].concat(function(e) {
+          return n.setCachedAttributes(O, v), d = d ? [].concat(function(e) {
             if (Array.isArray(e)) return s(e)
-          }(t = p) || function(e) {
+          }(t = d) || function(e) {
             if ("undefined" != typeof Symbol && null != e[Symbol.iterator] || null != e["@@iterator"]) return Array.from(e)
           }(t) || function(e, t) {
             if (e) {
@@ -274,23 +274,23 @@ _global.SENTRY_RELEASE = {
             throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
           }(), [n]) : [n], E(n), n
         }, this.removeElementById = function(e) {
-          p && (p = p.filter((function(t) {
+          d && (d = d.filter((function(t) {
             return t.id !== e
           })))
         }, this.updateElementPropsById = function(e, t) {
-          p && (p = p.map((function(r) {
+          d && (d = d.map((function(r) {
             return r.id === e ? r.updateProps(t) : r
           }))), this.update()
         }, this.resetElementStyles = function(e) {
           (0, o.resetStyles)(e)
         }, this.update = function() {
-          var e = d ? y.scrollLeft : window.pageXOffset,
-            t = d ? y.scrollTop : window.pageYOffset;
+          var e = p ? y.scrollLeft : window.pageXOffset,
+            t = p ? y.scrollTop : window.pageYOffset;
           v.setScroll(e, t), M(), x({
             updateCache: !0
           })
         }, this.updateScrollContainer = function(e) {
-          P(y), y = e, d = !!e, O = new i.View({
+          P(y), y = e, p = !!e, O = new i.View({
             width: 0,
             height: 0,
             scrollContainer: e
@@ -298,16 +298,16 @@ _global.SENTRY_RELEASE = {
             updateCache: !0
           })
         }, this.destroy = function() {
-          P(y), p && p.forEach((function(e) {
+          P(y), d && d.forEach((function(e) {
             return (0, o.resetStyles)(e)
-          })), p = void 0
+          })), d = void 0
         }
       }
-      d.init = function(e) {
+      p.init = function(e) {
         if ("undefined" == typeof window) throw new Error("Looks like ParallaxController.init() was called on the server. This method must be called on the client.");
-        return new d(e)
+        return new p(e)
       };
-      var y = d;
+      var y = p;
       t.default = y
     },
     9919: (e, t) => {
@@ -450,15 +450,15 @@ _global.SENTRY_RELEASE = {
         }, f(e, t)
       }
 
-      function p(e) {
+      function d(e) {
         if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
         return e
       }
 
-      function d(e) {
-        return d = Object.setPrototypeOf ? Object.getPrototypeOf : function(e) {
+      function p(e) {
+        return p = Object.setPrototypeOf ? Object.getPrototypeOf : function(e) {
           return e.__proto__ || Object.getPrototypeOf(e)
-        }, d(e)
+        }, p(e)
       }
 
       function y(e, t, r) {
@@ -490,13 +490,13 @@ _global.SENTRY_RELEASE = {
             return !1
           }
         }(), function() {
-          var e, t = d(i);
+          var e, t = p(i);
           if (l) {
-            var r = d(this).constructor;
+            var r = p(this).constructor;
             e = Reflect.construct(t, arguments, r)
           } else e = t.apply(this, arguments);
           return function(e, t) {
-            return !t || "object" !== n(t) && "function" != typeof t ? p(e) : t
+            return !t || "object" !== n(t) && "function" != typeof t ? d(e) : t
           }(this, e)
         });
 
@@ -506,9 +506,9 @@ _global.SENTRY_RELEASE = {
             if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
           }(this, s);
           for (var t = arguments.length, r = new Array(t), n = 0; n < t; n++) r[n] = arguments[n];
-          return y(p(e = u.call.apply(u, [this].concat(r))), "mapRefOuter", (function(t) {
+          return y(d(e = u.call.apply(u, [this].concat(r))), "mapRefOuter", (function(t) {
             e._outer = t
-          })), y(p(e), "mapRefInner", (function(t) {
+          })), y(d(e), "mapRefInner", (function(t) {
             e._inner = t
           })), e
         }
@@ -655,14 +655,14 @@ _global.SENTRY_RELEASE = {
           width: "100%",
           height: "50vh"
         },
-        p = {
+        d = {
           position: "absolute",
           top: 0,
           right: 0,
           bottom: 0,
           left: 0
         },
-        d = function(e) {
+        p = function(e) {
           var t = e.children,
             r = e.className,
             o = e.layers,
@@ -677,8 +677,8 @@ _global.SENTRY_RELEASE = {
               a = e.expanded,
               c = void 0 === a || a,
               f = e.image,
-              d = e.props,
-              y = void 0 === d ? {} : d,
+              p = e.props,
+              y = void 0 === p ? {} : p,
               h = y.style || {},
               b = y.className || "";
             delete y.style, delete y.className;
@@ -695,18 +695,18 @@ _global.SENTRY_RELEASE = {
             return n.default.createElement(i.default, {
               key: "layer-".concat(t),
               y: [-1 * r * 100 + "%", 100 * r + "%"],
-              styleInner: p,
-              styleOuter: p,
+              styleInner: d,
+              styleOuter: d,
               disabled: u
             }, n.default.createElement("div", l({
               className: v,
-              style: s(s(s(s({}, m), p), O), h)
+              style: s(s(s(s({}, m), d), O), h)
             }, y), o))
           })), t)
         };
-      d.defaultProps = {
+      p.defaultProps = {
         disabled: !1
-      }, d.propTypes = {
+      }, p.propTypes = {
         children: o.default.node,
         className: o.default.string,
         disabled: o.default.bool.isRequired,
@@ -719,7 +719,7 @@ _global.SENTRY_RELEASE = {
         })),
         style: o.default.object
       };
-      var y = d;
+      var y = p;
       t.default = y
     },
     9436: (e, t, r) => {
@@ -770,17 +770,17 @@ _global.SENTRY_RELEASE = {
         }, e
       }
 
-      function p(e, t) {
+      function d(e, t) {
         for (var r = 0; r < t.length; r++) {
           var n = t[r];
           n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(e, n.key, n)
         }
       }
 
-      function d(e, t) {
-        return d = Object.setPrototypeOf || function(e, t) {
+      function p(e, t) {
+        return p = Object.setPrototypeOf || function(e, t) {
           return e.__proto__ = t, e
-        }, d(e, t)
+        }, p(e, t)
       }
 
       function y(e) {
@@ -806,7 +806,7 @@ _global.SENTRY_RELEASE = {
               writable: !0,
               configurable: !0
             }
-          }), t && d(e, t)
+          }), t && p(e, t)
         }(c, e);
         var t, r, i, u, s = (i = c, u = function() {
           if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
@@ -858,7 +858,7 @@ _global.SENTRY_RELEASE = {
               value: this.controller
             }, e)
           }
-        }]) && p(t.prototype, r), c
+        }]) && d(t.prototype, r), c
       }(o.Component);
       t.default = b, h(b, "defaultProps", {
         scrollAxis: u.VERTICAL
@@ -954,10 +954,10 @@ _global.SENTRY_RELEASE = {
         }, f(e, t)
       }
 
-      function p(e) {
-        return p = Object.setPrototypeOf ? Object.getPrototypeOf : function(e) {
+      function d(e) {
+        return d = Object.setPrototypeOf ? Object.getPrototypeOf : function(e) {
           return e.__proto__ || Object.getPrototypeOf(e)
-        }, p(e)
+        }, d(e)
       }
       t.default = function(e) {
         var t, r, l, u = function(t) {
@@ -971,7 +971,7 @@ _global.SENTRY_RELEASE = {
               }
             }), t && f(e, t)
           }(y, t);
-          var r, i, l, u, d = (l = y, u = function() {
+          var r, i, l, u, p = (l = y, u = function() {
             if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
             if (Reflect.construct.sham) return !1;
             if ("function" == typeof Proxy) return !0;
@@ -981,9 +981,9 @@ _global.SENTRY_RELEASE = {
               return !1
             }
           }(), function() {
-            var e, t = p(l);
+            var e, t = d(l);
             if (u) {
-              var r = p(this).constructor;
+              var r = d(this).constructor;
               e = Reflect.construct(t, arguments, r)
             } else e = t.apply(this, arguments);
             return function(e, t) {
@@ -997,7 +997,7 @@ _global.SENTRY_RELEASE = {
           function y() {
             return function(e, t) {
               if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
-            }(this, y), d.apply(this, arguments)
+            }(this, y), p.apply(this, arguments)
           }
           return r = y, (i = [{
             key: "render",
@@ -1373,4 +1373,4 @@ _global.SENTRY_RELEASE = {
     }
   }
 ]);
-//# sourceMappingURL=6be39d382a56bd2ca096151e53d985fa.js.map
+//# sourceMappingURL=111600c989ae8f8a76b2c481b10d4f06.js.map

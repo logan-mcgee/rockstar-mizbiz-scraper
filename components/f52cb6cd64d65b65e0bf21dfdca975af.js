@@ -7,13 +7,13 @@
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "5e225a56a96343405c858680af91190e5116b19e",
+  release: "d409e297a36831321bd01cc6fefa95672d98d375",
   packageName: "@rockstargames/components",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "5e225a56a96343405c858680af91190e5116b19e"
+  id: "d409e297a36831321bd01cc6fefa95672d98d375"
 }, (self.webpackChunk_rockstargames_components = self.webpackChunk_rockstargames_components || []).push([
   [912], {
     4152: (e, t, n) => {
@@ -35,14 +35,14 @@ _global.SENTRY_RELEASE = {
         })(e, "symbol" != typeof t ? t + "" : t, n), n),
         s = new Map,
         a = new WeakMap,
-        l = 0,
-        d = void 0;
+        d = 0,
+        l = void 0;
 
       function h(e) {
-        d = e
+        l = e
       }
 
-      function c(e, t, n = {}, i = d) {
+      function c(e, t, n = {}, i = l) {
         if (void 0 === window.IntersectionObserver && void 0 !== i) {
           const r = e.getBoundingClientRect();
           return t(i, {
@@ -62,7 +62,7 @@ _global.SENTRY_RELEASE = {
         } = function(e) {
           let t = function(e) {
               return Object.keys(e).sort().filter((t => void 0 !== e[t])).map((t => {
-                return `${t}_${"root"===t?(n=e.root,n?(a.has(n)||(l+=1,a.set(n,l.toString())),a.get(n)):"0"):e[t]}`;
+                return `${t}_${"root"===t?(n=e.root,n?(a.has(n)||(d+=1,a.set(n,d.toString())),a.get(n)):"0"):e[t]}`;
                 var n
               })).toString()
             }(e),
@@ -162,8 +162,8 @@ _global.SENTRY_RELEASE = {
             root: o,
             rootMargin: s,
             onChange: a,
-            skip: l,
-            trackVisibility: d,
+            skip: d,
+            trackVisibility: l,
             delay: h,
             initialInView: c,
             fallbackInView: u,
@@ -184,13 +184,13 @@ _global.SENTRY_RELEASE = {
         root: o,
         triggerOnce: s,
         skip: a,
-        initialInView: l,
-        fallbackInView: d,
+        initialInView: d,
+        fallbackInView: l,
         onChange: h
       } = {}) {
         var u;
         const [b, f] = i.useState(null), p = i.useRef(), [g, y] = i.useState({
-          inView: !!l,
+          inView: !!d,
           entry: void 0
         });
         p.current = h, i.useEffect((() => {
@@ -207,14 +207,14 @@ _global.SENTRY_RELEASE = {
             threshold: e,
             trackVisibility: n,
             delay: t
-          }, d), () => {
+          }, l), () => {
             i && i()
           }
-        }), [Array.isArray(e) ? e.toString() : e, b, o, r, s, a, n, d, t]);
+        }), [Array.isArray(e) ? e.toString() : e, b, o, r, s, a, n, l, t]);
         const w = null == (u = g.entry) ? void 0 : u.target,
           v = i.useRef();
         b || !w || s || a || v.current === w || (v.current = w, y({
-          inView: !!l,
+          inView: !!d,
           entry: void 0
         }));
         const k = [f, g.inView, g.entry];
@@ -223,4 +223,4 @@ _global.SENTRY_RELEASE = {
     }
   }
 ]);
-//# sourceMappingURL=d6b6f155914fb0f6ca1dc07772dbd49e.js.map
+//# sourceMappingURL=f52cb6cd64d65b65e0bf21dfdca975af.js.map

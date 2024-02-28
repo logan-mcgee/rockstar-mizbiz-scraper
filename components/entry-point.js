@@ -2,18 +2,18 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "2d20aa67-386c-4be8-b703-b20f8cb2a5f2", e._sentryDebugIdIdentifier = "sentry-dbid-2d20aa67-386c-4be8-b703-b20f8cb2a5f2")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "cdd55382-810b-4b6c-a4cb-5b8137073d10", e._sentryDebugIdIdentifier = "sentry-dbid-cdd55382-810b-4b6c-a4cb-5b8137073d10")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "5e225a56a96343405c858680af91190e5116b19e",
+  release: "d409e297a36831321bd01cc6fefa95672d98d375",
   packageName: "@rockstargames/components",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "5e225a56a96343405c858680af91190e5116b19e"
+  id: "d409e297a36831321bd01cc6fefa95672d98d375"
 }, System.register(["@rockstargames/components", "@rockstargames/graph-client", "@rockstargames/modules-core-sc-user", "@rockstargames/tina", "@rockstargames/utils"], (function(e, t) {
   var n = {},
     r = {},
@@ -10358,7 +10358,7 @@ _global.SENTRY_RELEASE = {
             5536: (e, t, n) => {
               "use strict";
               var r = {
-                  "./index": () => Promise.all([n.e(536), n.e(740), n.e(980), n.e(752), n.e(708)]).then((() => () => n(3168))),
+                  "./index": () => Promise.all([n.e(536), n.e(740), n.e(980), n.e(752), n.e(92)]).then((() => () => n(3442))),
                   "./providers": () => Promise.all([n.e(740), n.e(752), n.e(360)]).then((() => () => n(1360))),
                   "./tinaBlockTemplates": () => Promise.all([n.e(740), n.e(980), n.e(356)]).then((() => () => n(4356)))
                 },
@@ -10424,31 +10424,31 @@ _global.SENTRY_RELEASE = {
         }, f.f = {}, f.e = e => Promise.all(Object.keys(f.f).reduce(((t, n) => (f.f[n](e, t), t)), [])), f.u = e => "js/" + {
           61: "0c47d2d6b199d3533d0b7ea861c72c2b",
           80: "af08c036a95b9555a7f249bea9583abf",
-          192: "3d17e45f871bb25f6ef78ae5e4768a1b",
-          280: "fc5a2607245510fec6e17696f5d195ab",
-          324: "6be39d382a56bd2ca096151e53d985fa",
-          336: "dd0c6c394153b75c6504dbf4f4866b61",
-          356: "6061bfb00068237fbde14e8d55b53b31",
-          360: "fba146b70733b2ed4e3deb50edfb0af9",
-          384: "322a80a40cdc7b76d9358f12737e03d6",
-          436: "2a7bac9cc9feb1908209a8721ae15137",
-          448: "bbd2e3f4a3247515195a03339021dfbe",
-          456: "bd28f551e04bcc19df46af55b222f180",
-          536: "b2e57d8285c4e2ba9bebaf490e8c022a",
-          648: "9358a5b727b204f3dd83ec8320da0e75",
-          660: "c8f5be58283be883c6582c880e9abb11",
-          708: "a4dc92bbc4eaeb95503a8b79c62896bc",
+          92: "b57c893b1e842f7d8d70e8dbfa5e3d32",
+          192: "d0d6d99e5dfe4db901872161faf892cc",
+          280: "0bfe4822b874efb64c9290e5bd747029",
+          324: "111600c989ae8f8a76b2c481b10d4f06",
+          336: "0024ed973040f11ab2eb58449c093825",
+          356: "04bb971a08a4382dbfc41970bbe13458",
+          360: "c3393c9b4d6b009e89c2e839641034f5",
+          384: "fd4526aa590e39c21163d86dc1ca5b7f",
+          436: "f46f163383f0f6723e72180952a060ee",
+          448: "f2365769e61b7679a323c5ef5514c177",
+          456: "3178e91a5e293c315d8b6e1368592719",
+          536: "167e96aa15b58733a73e1f7fdcb2b5a0",
+          648: "de64a0490a3585316c1bf121048ae078",
+          660: "c47ac17efa05a7d472704c973f0bcd1c",
           740: "6d658c8ade28e2ee4a4b7077760094a8",
           752: "5bf42d865c717e4eef2aa0131e6fe720",
-          824: "d49b52f1d4dd9f70e7fa19f35343ec69",
-          896: "7ba94bd2d36bb1b28c8d0e6c3df9ea4b",
-          907: "2c473814514eebd8d2e6c71e6a6ead7c",
-          912: "d6b6f155914fb0f6ca1dc07772dbd49e",
-          952: "cedb12a69e5a797c6a7bcd45ca6e8341",
+          824: "02d4d4f65dd639db692f939145236646",
+          896: "f68b5ee8a410c3f5c5cf0bc410f9e820",
+          907: "23c8b71e0297a864d2c47223e5724338",
+          912: "f52cb6cd64d65b65e0bf21dfdca975af",
+          952: "ddba53fc2b04d2eb1f7b4d2fec589223",
           980: "cfab18be58f32e4f71f990c7a747d347"
         } [e] + ".js", f.miniCssF = e => "css/" + {
+          92: "0d166bcb2aa68513ba894ae3da981259",
           360: "72bf6ff036f45ad92f6a2c5dc690668c",
-          708: "f21f2c0c2455e8fd96b2dac75c300bfb",
           980: "45bf6abca20955160cfc23276e3aadbd"
         } [e] + ".css", f.g = function() {
           if ("object" == typeof globalThis) return globalThis;
@@ -10489,8 +10489,8 @@ _global.SENTRY_RELEASE = {
           })
         }, f.nmd = e => (e.paths = [], e.children || (e.children = []), e), u = {
           61: [3061],
+          92: [1532, 1668, 3784, 5356, 8540],
           356: [2104, 5988, 9468],
-          708: [1532, 1668, 3784, 5356, 8540],
           740: [1740],
           752: [2836],
           980: [3052, 5652, 5792]
@@ -10689,7 +10689,7 @@ _global.SENTRY_RELEASE = {
           }));
           var l = {
               80: [9080],
-              708: [1272, 1512, 1860, 2032, 3660, 6400, 6428, 6776, 7860, 7924, 8e3],
+              92: [1272, 1512, 1860, 2032, 3660, 6400, 6428, 6776, 7860, 7924, 8e3],
               752: [244, 3557],
               980: [9416]
             },
@@ -10725,8 +10725,8 @@ _global.SENTRY_RELEASE = {
             };
             f.f.miniCss = (t, n) => {
               e[t] ? n.push(e[t]) : 0 !== e[t] && {
+                92: 1,
                 360: 1,
-                708: 1,
                 980: 1
               } [t] && n.push(e[t] = (e => new Promise(((t, n) => {
                 var r = f.miniCssF(e),

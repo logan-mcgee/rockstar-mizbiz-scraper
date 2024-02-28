@@ -2,20 +2,20 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "21885c0e-22f4-468f-86e3-bf749835634d", e._sentryDebugIdIdentifier = "sentry-dbid-21885c0e-22f4-468f-86e3-bf749835634d")
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "124f3bc5-167a-47cb-9cce-38d096877207", e._sentryDebugIdIdentifier = "sentry-dbid-124f3bc5-167a-47cb-9cce-38d096877207")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "5e225a56a96343405c858680af91190e5116b19e",
+  release: "d409e297a36831321bd01cc6fefa95672d98d375",
   packageName: "@rockstargames/components",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "5e225a56a96343405c858680af91190e5116b19e"
+  id: "d409e297a36831321bd01cc6fefa95672d98d375"
 }, (self.webpackChunk_rockstargames_components = self.webpackChunk_rockstargames_components || []).push([
-  [708], {
+  [92], {
     7020: (e, a, t) => {
       "use strict";
       t.d(a, {
@@ -24,9 +24,9 @@ _global.SENTRY_RELEASE = {
       var s = t(8200),
         n = t(9416),
         c = t.n(n),
-        r = t(1740),
-        i = t(5792);
-      const o = {
+        i = t(1740),
+        o = t(5792);
+      const r = {
         pillBtn: "rockstargames-componentsd810fb92dfd42bc44ba286ea7f4ca3b7",
         selected: "rockstargames-componentsbaf6f0b8c58ebca5fce849d220999883",
         grid: "rockstargames-componentsdebe9dcb1f7173c7819134eb6306602e",
@@ -68,14 +68,14 @@ _global.SENTRY_RELEASE = {
         return (0, s.useEffect)((() => {
           _(a)
         }), [a]), t || a ? p && k ? (0, l.jsx)("div", {
-          className: o.grid,
+          className: r.grid,
           style: {
             "--ordered-list-grid-column": p,
             "--ordered-list-grid-column-mobile": u ?? p
           },
           children: (0, l.jsx)("ol", {
-            style: (0, i.safeStyles)(c),
-            className: (0, r.classList)(o.itemList, o.noImg, o[n], o[f]),
+            style: (0, o.safeStyles)(c),
+            className: (0, i.classList)(r.itemList, r.noImg, r[n], r[f]),
             children: k.map((e => (0, l.jsx)("li", {
               dangerouslySetInnerHTML: {
                 __html: d(e.content)
@@ -83,8 +83,8 @@ _global.SENTRY_RELEASE = {
             }, e.content)))
           })
         }) : (0, l.jsx)("ol", {
-          style: (0, i.safeStyles)(c),
-          className: (0, r.classList)(o.itemList, o.custom, g ? o.noImg : "", n ? o[n] : "", f ? o[f] : "", m ?? ""),
+          style: (0, o.safeStyles)(c),
+          className: (0, i.classList)(r.itemList, r.custom, g ? r.noImg : "", n ? r[n] : "", f ? r[f] : "", m ?? ""),
           children: a.map((e => (0, l.jsx)("li", {
             dangerouslySetInnerHTML: {
               __html: d(e?.content ?? e)
@@ -101,9 +101,9 @@ _global.SENTRY_RELEASE = {
       var s = t(8200),
         n = t(9416),
         c = t.n(n),
-        r = t(1740),
-        i = t(5792);
-      const o = {
+        i = t(1740),
+        o = t(5792);
+      const r = {
         grid: "rockstargames-componentsed478db3df0bb24d8430e5f2c3db50e7",
         itemList: "rockstargames-componentsae1d16253b1fc6703f5efac102a44af0",
         gtaplus: "rockstargames-componentse738d52851f09866f9377fd4f69f4b96",
@@ -143,14 +143,14 @@ _global.SENTRY_RELEASE = {
         return (0, s.useEffect)((() => {
           _(a)
         }), [a]), t || a ? p && k ? (0, l.jsx)("div", {
-          className: o.grid,
+          className: r.grid,
           style: {
             "--unordered-list-grid-column": p,
             "--unordered-list-grid-column-mobile": u ?? p
           },
           children: (0, l.jsx)("ul", {
-            style: (0, i.safeStyles)(c),
-            className: (0, r.classList)(o.itemList, o.noImg, o[n], o[f]),
+            style: (0, o.safeStyles)(c),
+            className: (0, i.classList)(r.itemList, r.noImg, r[n], r[f]),
             children: k.map((e => (0, l.jsx)("li", {
               dangerouslySetInnerHTML: {
                 __html: d(e.content)
@@ -158,8 +158,8 @@ _global.SENTRY_RELEASE = {
             }, e.content)))
           })
         }) : (0, l.jsx)("ul", {
-          style: (0, i.safeStyles)(c),
-          className: (0, r.classList)(o.itemList, o.custom, g ? o.noImg : "", n ? o[n] : "", f ? o[f] : "", m ?? ""),
+          style: (0, o.safeStyles)(c),
+          className: (0, i.classList)(r.itemList, r.custom, g ? r.noImg : "", n ? r[n] : "", f ? r[f] : "", m ?? ""),
           children: b.map((e => (0, l.jsx)("li", {
             dangerouslySetInnerHTML: {
               __html: d(e?.content ?? e)
@@ -168,7 +168,7 @@ _global.SENTRY_RELEASE = {
         }) : null
       }
     },
-    3168: (e, a, t) => {
+    3442: (e, a, t) => {
       "use strict";
       t.r(a), t.d(a, {
         A: () => m,
@@ -182,7 +182,7 @@ _global.SENTRY_RELEASE = {
         ConditionalBlock: () => O,
         CookieAB: () => ae,
         CountryInputField: () => ee,
-        Cta: () => re,
+        Cta: () => ie,
         DescriptionArea: () => be,
         DiscountsBadge: () => Ne,
         DotLoader: () => Se,
@@ -196,7 +196,7 @@ _global.SENTRY_RELEASE = {
         Gen9CoreCarousel: () => Ze,
         Grid: () => Te,
         HTMLElement: () => la,
-        Hero: () => ra,
+        Hero: () => ia,
         HookStore: () => D,
         ImageWithBadge: () => ha,
         LanguageSelector: () => ua,
@@ -213,39 +213,39 @@ _global.SENTRY_RELEASE = {
         PackListMenu: () => et,
         Paging: () => st,
         ParallaxCacheBuster: () => ct,
-        ParallaxInnerLayer: () => ot,
+        ParallaxInnerLayer: () => rt,
         ParallaxOuterLayer: () => dt,
-        ParallaxWrapper: () => it,
+        ParallaxWrapper: () => ot,
         ProfileSwitcher: () => n,
-        PromoModule: () => Kt,
-        Rating: () => Jt,
-        ResponsiveFlexBox: () => as,
-        ResponsiveFlexItem: () => ss,
-        ResponsiveGridBox: () => cs,
-        ResponsiveGridItem: () => is,
-        ResponsiveImg: () => ls,
-        ResponsiveSection: () => ms,
-        RockstarLogo: () => fs,
-        ScrollToTop: () => gs,
-        ScrollTracker: () => ps,
-        SearchBox: () => us,
+        PromoModule: () => Yt,
+        Rating: () => es,
+        ResponsiveFlexBox: () => ts,
+        ResponsiveFlexItem: () => ns,
+        ResponsiveGridBox: () => is,
+        ResponsiveGridItem: () => rs,
+        ResponsiveImg: () => ds,
+        ResponsiveSection: () => fs,
+        RockstarLogo: () => gs,
+        ScrollToTop: () => ps,
+        ScrollTracker: () => us,
+        SearchBox: () => ks,
         Separator: () => ue,
-        Skeleton: () => _s,
+        Skeleton: () => bs,
         SrcsetImage: () => ya,
         TextFit: () => he,
-        ThumbsGallery: () => Ss,
-        TinaModuleFetchNRender: () => Is,
-        TinaWrapper: () => Ts,
-        TrackList: () => xs,
+        ThumbsGallery: () => ws,
+        TinaModuleFetchNRender: () => Ts,
+        TinaWrapper: () => Ms,
+        TrackList: () => ys,
         UnorderedList: () => ge.c,
-        UserVote: () => Es,
+        UserVote: () => Bs,
         VideoCard: () => c,
-        VideoCarousel: () => Ps,
-        VideoList: () => Vs,
-        Wasted: () => $s,
-        framer: () => i,
-        useTinaModuleFetchByIds: () => Cs,
-        withSearchbarErrorBoundary: () => Rs,
+        VideoCarousel: () => zs,
+        VideoList: () => $s,
+        Wasted: () => As,
+        framer: () => o,
+        useTinaModuleFetchByIds: () => Is,
+        withSearchbarErrorBoundary: () => Us,
         withSimpleErrorBoundary: () => Ye
       });
       var s = {};
@@ -256,28 +256,28 @@ _global.SENTRY_RELEASE = {
       var n = {};
       t.r(n), t.d(n, {
         CharacterCard: () => ut,
-        Menu: () => Gt,
-        MenuButton: () => qt
+        Menu: () => Ht,
+        MenuButton: () => Xt
       });
       var c = {};
       t.r(c), t.d(c, {
-        Art: () => Ds,
-        Link: () => Fs
-      });
-      var r = {};
-      t.r(r), t.d(r, {
-        getVariant: () => en,
-        transitions: () => Zs,
-        variants: () => Js
+        Art: () => Fs,
+        Link: () => Os
       });
       var i = {};
       t.r(i), t.d(i, {
-        Animations: () => r,
-        LiteMotion: () => Us,
-        withFadeIn: () => qs,
-        withFadeUp: () => Qs
+        getVariant: () => an,
+        transitions: () => Js,
+        variants: () => en
       });
-      var o = t(8200),
+      var o = {};
+      t.r(o), t.d(o, {
+        Animations: () => i,
+        LiteMotion: () => Gs,
+        withFadeIn: () => Xs,
+        withFadeUp: () => Zs
+      });
+      var r = t(8200),
         l = t(3557),
         d = t(3480);
       const m = e => {
@@ -287,9 +287,9 @@ _global.SENTRY_RELEASE = {
           alt: s = "",
           autoBlank: n = !1,
           onClick: c = (() => {}),
-          ...r
+          ...i
         } = e;
-        const i = !/^(https?|mailto):/i.test(t);
+        const o = !/^(https?|mailto):/i.test(t);
         if (/^#/.test(t)) {
           const e = e => {
             e.preventDefault(), document?.querySelector(`[id='${t.replace("#","")}']`)?.scrollIntoView({
@@ -301,25 +301,25 @@ _global.SENTRY_RELEASE = {
             title: s,
             href: t,
             onClick: e,
-            ...r,
+            ...i,
             children: a
           })
         }
-        if (i) return (0, d.jsx)(l.NavLink, {
+        if (o) return (0, d.jsx)(l.NavLink, {
           title: s,
           to: t,
           onClick: e => c(e),
-          ...r,
+          ...i,
           children: a
         });
-        const o = Object.keys(r).filter((e => !["activeClassName", "key", "end"].includes(e))).reduce(((e, a) => ({
+        const r = Object.keys(i).filter((e => !["activeClassName", "key", "end"].includes(e))).reduce(((e, a) => ({
             ...e,
-            [a]: r[a]
+            [a]: i[a]
           })), {}),
-          m = r?.target ?? (n ? "_blank" : "_self");
-        return "function" == typeof o?.className && delete o.className, (0, d.jsx)("a", {
+          m = i?.target ?? (n ? "_blank" : "_self");
+        return "function" == typeof r?.className && delete r.className, (0, d.jsx)("a", {
           href: t,
-          ...o,
+          ...r,
           title: s,
           onClick: e => c(e),
           target: m,
@@ -378,30 +378,30 @@ _global.SENTRY_RELEASE = {
             audioRef: s,
             setPlaying: n,
             tracksOpen: c,
-            setTracksOpen: r,
-            trackData: i,
+            setTracksOpen: i,
+            trackData: o,
             setTrackId: l,
             trackBounds: m,
             setAutoNext: f
           } = e;
-          const p = (0, o.useRef)(null),
-            u = (0, o.useRef)(null),
-            _ = (0, o.useRef)(null),
-            [b, v] = (0, o.useState)(null),
-            [h, x] = (0, o.useState)(!1),
+          const p = (0, r.useRef)(null),
+            u = (0, r.useRef)(null),
+            _ = (0, r.useRef)(null),
+            [b, v] = (0, r.useState)(null),
+            [h, x] = (0, r.useState)(!1),
             y = e => {
               const a = new Date(1e3 * e),
                 t = a.getUTCMinutes(),
                 s = a.getSeconds();
               return `${t.toString().padStart(2,"0")}:${s.toString().padStart(2,"0")}`
             };
-          return (0, o.useEffect)((() => {
+          return (0, r.useEffect)((() => {
             if (!u.current || !_.current) return;
             const e = () => {
               _.current && u.current && v(_.current.clientWidth > u.current.clientWidth)
             };
             return window.addEventListener("resize", e), e(), () => window.removeEventListener("resize", e)
-          }), [_, u, a]), (0, o.useEffect)((() => {
+          }), [_, u, a]), (0, r.useEffect)((() => {
             if (!p.current || !a?.duration) return;
             let e = null;
             const t = new(g())(p.current),
@@ -417,20 +417,20 @@ _global.SENTRY_RELEASE = {
               c = () => {
                 e ? s.pause() : s.play()
               },
-              r = () => {
+              i = () => {
                 e = s.paused, s.pause()
               };
-            return t.on("panstart", r), t.on("panleft", n), t.on("panright", n), t.on("panend", c), t.on("tap", n), () => {
-              t.off("panstart", r), t.off("panleft", n), t.off("panright", n), t.off("panend", c), t.off("tap", n)
+            return t.on("panstart", i), t.on("panleft", n), t.on("panright", n), t.on("panend", c), t.on("tap", n), () => {
+              t.off("panstart", i), t.off("panleft", n), t.off("panright", n), t.off("panend", c), t.off("tap", n)
             }
-          }), [p.current, a.duration]), (0, o.useEffect)((() => {
+          }), [p.current, a.duration]), (0, r.useEffect)((() => {
             const e = Number(s?.currentTime);
             (t || !isNaN(e) && 0 !== e) && x(!0)
           }), [t, s?.currentTime]), (0, d.jsxs)("div", {
             className: k.controls,
             style: {
-              "--track-color": i.color,
-              "--track-mix-blend-mode": i.mix_blend_mode,
+              "--track-color": o.color,
+              "--track-mix-blend-mode": o.mix_blend_mode,
               "--current-pct": a.current / a.duration
             },
             children: [(0, d.jsx)("div", {
@@ -441,7 +441,7 @@ _global.SENTRY_RELEASE = {
               children: (0, d.jsx)("span", {
                 className: [k.controlsTrackTitle, b ? k.controlsTrackAnimating : ""].join(" "),
                 ref: _,
-                children: i.title
+                children: o.title
               })
             }), (0, d.jsxs)("div", {
               className: k.controlsButtons,
@@ -467,7 +467,7 @@ _global.SENTRY_RELEASE = {
               children: (0, d.jsx)("div", {
                 className: k.iconBurger,
                 onClick: () => {
-                  r(!c)
+                  i(!c)
                 }
               })
             }), (0, d.jsxs)("div", {
@@ -490,8 +490,8 @@ _global.SENTRY_RELEASE = {
             setTrackId: s,
             tracksOpen: n,
             setTracksOpen: c,
-            setPlaying: r,
-            setAutoNext: i
+            setPlaying: i,
+            setAutoNext: o
           } = e;
           return (0, d.jsxs)("div", {
             className: k.tracks,
@@ -510,7 +510,7 @@ _global.SENTRY_RELEASE = {
                 },
                 className: t === e.id ? k.trackActive : "",
                 onClick: () => {
-                  s(e.id), r(!0), i(!0)
+                  s(e.id), i(!0), o(!0)
                 },
                 children: [(0, d.jsx)("span", {
                   className: k.trackIndex,
@@ -537,20 +537,20 @@ _global.SENTRY_RELEASE = {
             variables: {
               id: a
             }
-          }), [n, c] = (0, o.useState)(), [r, i] = (0, o.useState)(), [l, m] = (0, o.useState)(), [f, g] = (0, o.useState)(!1), [h, x] = (0, o.useState)(!1), [y, N] = (0, o.useState)(new HTMLAudioElement), [j, S] = (0, o.useState)({
+          }), [n, c] = (0, r.useState)(), [i, o] = (0, r.useState)(), [l, m] = (0, r.useState)(), [f, g] = (0, r.useState)(!1), [h, x] = (0, r.useState)(!1), [y, N] = (0, r.useState)(new HTMLAudioElement), [j, S] = (0, r.useState)({
             current: 0,
             duration: 0
-          }), [w, C] = (0, o.useState)(!0);
-          return (0, o.useEffect)((() => {
+          }), [w, C] = (0, r.useState)(!0);
+          return (0, r.useEffect)((() => {
             const e = "audio",
               a = a => {
-                a?.data?.rockstarAudioPlayerPlayTrackId && (i(a.data.rockstarAudioPlayerPlayTrackId), C(!1), x(!0)), h && a?.data?.attentionBlurredElsewhere && a?.data?.from !== e && x(!1)
+                a?.data?.rockstarAudioPlayerPlayTrackId && (o(a.data.rockstarAudioPlayerPlayTrackId), C(!1), x(!0)), h && a?.data?.attentionBlurredElsewhere && a?.data?.from !== e && x(!1)
               };
             return h && window.postMessage({
               attentionBlurredElsewhere: !0,
               from: e
             }), window.addEventListener("message", a, !1), () => window.removeEventListener("message", a, !1)
-          }), [h]), (0, o.useEffect)((() => {
+          }), [h]), (0, r.useEffect)((() => {
             if (!y) return;
             const e = () => {
                 isNaN(y.duration) || S({
@@ -559,26 +559,26 @@ _global.SENTRY_RELEASE = {
                 })
               },
               a = () => {
-                w && n && i(n[1])
+                w && n && o(n[1])
               };
             return y.addEventListener("loadedmetadata", e), y.addEventListener("timeupdate", e), y.addEventListener("ended", a), () => {
               y.removeEventListener("loadedmetadata", e), y.removeEventListener("timeupdate", e), y.removeEventListener("ended", a)
             }
-          }), [y, n, w]), (0, o.useEffect)((() => {
+          }), [y, n, w]), (0, r.useEffect)((() => {
             h && window.postMessage({
               attentionBlurredElsewhere: !0,
               from: "audio"
             })
-          }), [h]), (0, o.useEffect)((() => {
+          }), [h]), (0, r.useEffect)((() => {
             y && (h ? y.play() : y.pause(), g(!1))
-          }), [h, y, l?.id]), (0, o.useEffect)((() => {
-            if (!r) return;
+          }), [h, y, l?.id]), (0, r.useEffect)((() => {
+            if (!i) return;
             const {
               tracks: e
-            } = s.audioAlbum, a = s.audioAlbum.tracks.findIndex((e => e.id === r));
+            } = s.audioAlbum, a = s.audioAlbum.tracks.findIndex((e => e.id === i));
             c([e[a - 1]?.id ?? e[e.length - 1].id, e[a + 1]?.id ?? e[0].id]), m(e[a])
-          }), [r]), (0, o.useEffect)((() => {
-            s && i(s.audioAlbum.tracks[0].id)
+          }), [i]), (0, r.useEffect)((() => {
+            s && o(s.audioAlbum.tracks[0].id)
           }), [s]), l ? (0, d.jsxs)("div", {
             className: [k.player, k[t], f ? k.tracksOpen : ""].join(" "),
             children: [(0, d.jsx)("audio", {
@@ -588,8 +588,8 @@ _global.SENTRY_RELEASE = {
               src: l.mp3_src
             }), (0, d.jsx)(v, {
               tracks: s.audioAlbum.tracks,
-              setTrackId: i,
-              trackId: r,
+              setTrackId: o,
+              trackId: i,
               tracksOpen: f,
               setTracksOpen: g,
               setPlaying: x,
@@ -597,7 +597,7 @@ _global.SENTRY_RELEASE = {
             }), (0, d.jsx)(_, {
               src: l.cover_src
             }), (0, d.jsx)(b, {
-              setTrackId: i,
+              setTrackId: o,
               trackBounds: n,
               tracksOpen: f,
               setTracksOpen: g,
@@ -649,19 +649,19 @@ _global.SENTRY_RELEASE = {
             context: s = "",
             to: n,
             onClick: c,
-            ...r
+            ...i
           } = e;
-          const i = [N.button, N[s], a].join(" ");
+          const o = [N.button, N[s], a].join(" ");
           return n ? (0, d.jsx)(m, {
-            ...r,
+            ...i,
             to: n,
-            className: i,
+            className: o,
             onClick: c ? () => c() : () => {},
             children: t
           }) : (0, d.jsx)("button", {
-            ...r,
+            ...i,
             type: "button",
-            className: i,
+            className: o,
             onClick: c ? () => c() : () => {},
             children: t
           })
@@ -723,9 +723,9 @@ _global.SENTRY_RELEASE = {
             consoleBtn: s,
             icon: n = "",
             img: c,
-            labelColor: r = "#000",
-            onClick: i,
-            secondText: o,
+            labelColor: i = "#000",
+            onClick: o,
+            secondText: r,
             size: l,
             text: m,
             to: f,
@@ -733,9 +733,9 @@ _global.SENTRY_RELEASE = {
           } = e;
           const p = [w.plusButton, w[g] ?? "", w[l] ?? "", w[s] ?? "", t].join(" "),
             u = {
-              "--hvr-color": a ?? r,
-              "--hvr-bg-color": r ?? a,
-              "--hvr-border-color": a ?? r
+              "--hvr-color": a ?? i,
+              "--hvr-bg-color": i ?? a,
+              "--hvr-border-color": a ?? i
             },
             k = (0, d.jsxs)(d.Fragment, {
               children: [c ? (0, d.jsx)("img", {
@@ -744,8 +744,8 @@ _global.SENTRY_RELEASE = {
               }) : "", (0, d.jsxs)("div", {
                 className: w.btnText,
                 icon: n,
-                children: [m, o ? (0, d.jsx)("span", {
-                  children: o
+                children: [m, r ? (0, d.jsx)("span", {
+                  children: r
                 }) : ""]
               })]
             });
@@ -753,8 +753,8 @@ _global.SENTRY_RELEASE = {
             if (f.startsWith("http")) {
               const e = f.startsWith(document.location.origin) ? "_self" : "_blank";
               return (0, d.jsx)("span", {
-                onClick: i ? () => i() : () => {},
-                onKeyDown: i,
+                onClick: o ? () => o() : () => {},
+                onKeyDown: o,
                 className: p,
                 role: "button",
                 tabIndex: 0,
@@ -767,7 +767,7 @@ _global.SENTRY_RELEASE = {
             }
             return (0, d.jsx)(I, {
               className: p,
-              onClick: i ? () => i() : () => {},
+              onClick: o ? () => o() : () => {},
               style: u,
               to: f,
               children: k
@@ -775,7 +775,7 @@ _global.SENTRY_RELEASE = {
           }
           return (0, d.jsx)(C, {
             className: p,
-            onClick: i ? () => i() : () => {},
+            onClick: o ? () => o() : () => {},
             style: u,
             children: k
           })
@@ -865,13 +865,13 @@ _global.SENTRY_RELEASE = {
             style: s = {},
             noInfiniteScroll: n = !1,
             className: c = "",
-            renderTemplate: r = "standard",
-            text: i,
+            renderTemplate: i = "standard",
+            text: o,
             customSpaceBetween: l = null,
             centerSlides: m = !0,
             centeredSlidesBounds: f = !1
           } = e;
-          const [g, p] = (0, o.useState)(0), u = (0, o.useMemo)((() => a && Array.isArray(a) ? a.map((() => (0, E.v4)())) : null), [a]);
+          const [g, p] = (0, r.useState)(0), u = (0, r.useMemo)((() => a && Array.isArray(a) ? a.map((() => (0, E.v4)())) : null), [a]);
           if (!(t && 0 !== t?.length || a)) return null;
           const k = {
             0: {
@@ -888,7 +888,7 @@ _global.SENTRY_RELEASE = {
             }
           };
           return (0, d.jsxs)("div", {
-            className: (0, S.classList)(B.deprecatedCarousel, B[r], B[`infinite_${!n}`], a ? B.renderedWithChildren : "", c),
+            className: (0, S.classList)(B.deprecatedCarousel, B[i], B[`infinite_${!n}`], a ? B.renderedWithChildren : "", c),
             style: s,
             children: [(0, d.jsxs)(L.wx, {
               loop: !n,
@@ -917,8 +917,8 @@ _global.SENTRY_RELEASE = {
                 current: g,
                 total: a ? a.length : t.length
               })]
-            }), (i?.title || i?.description) && (0, d.jsx)(be, {
-              item: i
+            }), (o?.title || o?.description) && (0, d.jsx)(be, {
+              item: o
             })]
           })
         };
@@ -930,29 +930,29 @@ _global.SENTRY_RELEASE = {
             condition: a = null,
             children: t
           } = e;
-          const [s, n] = (0, o.useState)(!1), c = (e => {
-            const [a] = (0, l.useSearchParams)(), [t, s] = (0, o.useState)(null), n = (0, A.useRockstarUser)(), {
+          const [s, n] = (0, r.useState)(!1), c = (e => {
+            const [a] = (0, l.useSearchParams)(), [t, s] = (0, r.useState)(null), n = (0, A.useRockstarUser)(), {
               loggedIn: c
             } = n, {
-              currentCharId: r
-            } = (0, A.useRockstarUserState)(), i = function(e) {
+              currentCharId: i
+            } = (0, A.useRockstarUserState)(), o = function(e) {
               let a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0,
                 t = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "gtao";
-              return (0, o.useMemo)((() => {
+              return (0, r.useMemo)((() => {
                 const s = e?.data?.characters?.[t];
                 return "1" === (s?.[a]?.stats?.overview?.hasGtaPlus?.value ?? "0")
               }), [e, t, a])
-            }(n, r);
-            return (0, o.useEffect)((() => {
+            }(n, i);
+            return (0, r.useEffect)((() => {
               s(null);
               const n = "true" === a.get("conditionPreview");
               if (!(!e?.length > 0)) return D.applyFilters("preview_conditions", e), e.forEach((e => {
                 const {
-                  value: r
+                  value: i
                 } = e;
-                if (n) return "true" === a.get(r) ? (s(!0), !0) : (s(!1), !1);
+                if (n) return "true" === a.get(i) ? (s(!0), !0) : (s(!1), !1);
                 if (!1 === t) return !1;
-                switch (r) {
+                switch (i) {
                   case "user:is:loggedIn":
                     s(!0 === c);
                     break;
@@ -960,27 +960,27 @@ _global.SENTRY_RELEASE = {
                     s(!1 === c);
                     break;
                   case "user:is:gtaPlus":
-                    s(!0 === i);
+                    s(!0 === o);
                     break;
                   case "user:not:gtaPlus":
-                    s(!1 === i);
+                    s(!1 === o);
                     break;
                   default:
                     s(!1)
                 }
                 return null
               })), () => {}
-            }), [a, e, i, n, c]), t
+            }), [a, e, o, n, c]), t
           })(a);
-          return (0, o.useEffect)((() => {
+          return (0, r.useEffect)((() => {
             n(c)
-          }), [c]), (0, o.useMemo)((() => s ? t : null), [s])
+          }), [c]), (0, r.useMemo)((() => s ? t : null), [s])
         },
         O = (0, $.withTranslations)((e => {
           let {
             children: a
           } = e;
-          return o.Children.map(o.Children.toArray(a), (e => (0, d.jsx)(F, {
+          return r.Children.map(r.Children.toArray(a), (e => (0, d.jsx)(F, {
             ...e?.props
           })))
         }));
@@ -1043,11 +1043,11 @@ _global.SENTRY_RELEASE = {
             refetch: n
           } = (0, p.useQuery)(U.UserGetVote, {
             skip: !0
-          }), [c] = (0, p.useMutation)(U.UserCastVote), [r, i] = (0, o.useState)(null), l = (0, o.useCallback)((e => {
+          }), [c] = (0, p.useMutation)(U.UserCastVote), [i, o] = (0, r.useState)(null), l = (0, r.useCallback)((e => {
             (async () => {
-              if (e === r && null !== r) i(null);
+              if (e === i && null !== i) o(null);
               else {
-                i(e), s({
+                o(e), s({
                   event_action: e ? "like" : "dislike",
                   event_category: "cta",
                   event: "cta_" + (e ? "like" : "dislike"),
@@ -1063,26 +1063,26 @@ _global.SENTRY_RELEASE = {
                 })
               }
             })()
-          }), [a, t, r]);
-          return (0, o.useEffect)((() => {
+          }), [a, t, i]);
+          return (0, r.useEffect)((() => {
             a && t && (async () => {
               const e = await n({
                 foreignId: a,
                 foreignType: t
               });
-              i(e?.data?.userGetVote?.vote ?? null)
+              o(e?.data?.userGetVote?.vote ?? null)
             })()
           }), [a, t]), (0, d.jsxs)("div", {
             className: H.calloutVoteForm,
             children: [(0, d.jsx)("button", {
               "aria-label": "upvote",
-              className: [H.upvote, H.voteButton, r ? H.active : ""].join(" "),
+              className: [H.upvote, H.voteButton, i ? H.active : ""].join(" "),
               name: "upvote",
               onClick: () => l(!0),
               type: "button"
             }), (0, d.jsx)("button", {
               "aria-label": "downvote",
-              className: [H.downvote, H.voteButton, !1 === r ? H.active : ""].join(" "),
+              className: [H.downvote, H.voteButton, !1 === i ? H.active : ""].join(" "),
               name: "downvote",
               onClick: () => l(!1),
               type: "button"
@@ -1142,8 +1142,8 @@ _global.SENTRY_RELEASE = {
             type: s,
             action_text: n,
             link: c,
-            foreign_id: r = document.location.pathname,
-            foreign_type: i = "url",
+            foreign_id: i = document.location.pathname,
+            foreign_type: o = "url",
             className: l = "",
             actionFooterHelperText: m,
             actionFooterLinkText: f,
@@ -1162,9 +1162,9 @@ _global.SENTRY_RELEASE = {
             inView: y
           } = (0, R.useInView)({
             threshold: .6
-          }), [N, S] = (0, o.useState)(!1);
+          }), [N, S] = (0, r.useState)(!1);
           let w;
-          if ((0, o.useEffect)((() => {
+          if ((0, r.useEffect)((() => {
               y && !N && (v({
                 event: "page_section_impression",
                 event_action: "impression",
@@ -1187,8 +1187,8 @@ _global.SENTRY_RELEASE = {
                 break
               }
               w = (0, d.jsx)(W, {
-                foreign_id: r,
-                foreign_type: i
+                foreign_id: i,
+                foreign_type: o
               });
               break;
             case "button":
@@ -1248,16 +1248,16 @@ _global.SENTRY_RELEASE = {
             label: s,
             miscProps: n
           } = e;
-          const [c, r] = (0, o.useState)(""), i = (0, o.useMemo)((() => J()().getData()), []);
+          const [c, i] = (0, r.useState)(""), o = (0, r.useMemo)((() => J()().getData()), []);
           return (0, d.jsx)(Q(), {
             unstyled: !0,
             value: c,
             isMulti: a,
             allowSelectAll: t,
-            options: i,
+            options: o,
             placeholder: s,
             onChange: e => {
-              return a = e?.target?.value, void r(a);
+              return a = e?.target?.value, void i(a);
               var a
             },
             classNamePrefix: "country-select",
@@ -1277,10 +1277,10 @@ _global.SENTRY_RELEASE = {
                 s = a.find((e => e.startsWith(t)));
               return s?.substring(t.length, s.length)
             })(a),
-            r = new URLSearchParams(window.location.search).get(a);
-          return r && ((e, a) => {
+            i = new URLSearchParams(window.location.search).get(a);
+          return i && ((e, a) => {
             e && a && (document.cookie = `${e}=${a}; domain=${(()=>{const e=window.location.hostname.split(".");return e.slice(e.length-2).join(".")})()}; path=/;`)
-          })(a, r), c === t || r === t ? s : n
+          })(a, i), c === t || i === t ? s : n
         },
         te = {
           ps: "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/1506c5bba61fa270f73c874e3d60a94f.svg",
@@ -1339,15 +1339,15 @@ _global.SENTRY_RELEASE = {
             children: s
           })
         },
-        re = e => {
+        ie = e => {
           let {
             children: a,
             href: t,
             style: s,
             content: n,
             variant: c = null,
-            icon: r,
-            iconPosition: i = "none",
+            icon: i,
+            iconPosition: o = "none",
             iconStyle: m,
             badge: f,
             badgeStyle: g,
@@ -1358,7 +1358,7 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: b
-          } = (0, A.useGtmTrack)(), v = (0, $.useDataLayer)(), h = n ?? a, x = `Redirect to ${t}`, y = (0, o.useMemo)((() => {
+          } = (0, A.useGtmTrack)(), v = (0, $.useDataLayer)(), h = n ?? a, x = `Redirect to ${t}`, y = (0, r.useMemo)((() => {
             const e = window.location.hostname;
             let a;
             try {
@@ -1367,7 +1367,7 @@ _global.SENTRY_RELEASE = {
               a = e
             }
             return e === a
-          }), [t]), N = (0, o.useCallback)((() => {
+          }), [t]), N = (0, r.useCallback)((() => {
             k || b({
               event: "cta_other",
               ...v,
@@ -1375,13 +1375,13 @@ _global.SENTRY_RELEASE = {
               link_url: t ?? void 0,
               text: h ?? void 0
             })
-          }), [u, t, v]), j = () => r ? (0, d.jsx)("span", {
-            className: [ne.icon, `icon-${i}`].join(" "),
+          }), [u, t, v]), j = () => i ? (0, d.jsx)("span", {
+            className: [ne.icon, `icon-${o}`].join(" "),
             style: m,
             children: (0, d.jsx)("img", {
               className: ne.btnIcon,
-              src: se(r),
-              alt: `${r} icon`
+              src: se(i),
+              alt: `${i} icon`
             })
           }) : null;
           return (0, d.jsx)(l.NavLink, {
@@ -1397,9 +1397,9 @@ _global.SENTRY_RELEASE = {
               platform: p
             }) : (0, d.jsxs)("div", {
               className: ne.btnContent,
-              children: ["left" === i && j(), (0, d.jsx)("span", {
+              children: ["left" === o && j(), (0, d.jsx)("span", {
                 children: h
-              }), "right" === i && j(), f ? (0, d.jsx)("span", {
+              }), "right" === o && j(), f ? (0, d.jsx)("span", {
                 className: ne.badge,
                 style: g,
                 children: f
@@ -1407,8 +1407,8 @@ _global.SENTRY_RELEASE = {
             })
           })
         };
-      var ie = t(5652);
-      const oe = "rockstargames-componentsf6ed43b225fde028df4ad1be1f6cf9b2",
+      var oe = t(5652);
+      const re = "rockstargames-componentsf6ed43b225fde028df4ad1be1f6cf9b2",
         le = "rockstargames-componentscadcad87be7ddfa9f93a8d7e56c70c27",
         de = "rockstargames-componentsb4a61261f9b92ee9f88bc262c25b8db5",
         me = e => {
@@ -1418,15 +1418,15 @@ _global.SENTRY_RELEASE = {
             src: n,
             style: c
           } = e;
-          const [r, i] = (0, $.usePreloadImg)(n);
-          let o = n;
-          !1 === r && (s === de && (o = t(5148)), o = t(1340));
+          const [i, o] = (0, $.usePreloadImg)(n);
+          let r = n;
+          !1 === i && (s === de && (r = t(5148)), r = t(1340));
           const l = {
-            "--aspect-ratio": i.width / i.height,
+            "--aspect-ratio": o.width / o.height,
             ...c
           };
           return (0, d.jsx)("img", {
-            src: o,
+            src: r,
             className: s ?? "",
             alt: a,
             style: l
@@ -1439,31 +1439,31 @@ _global.SENTRY_RELEASE = {
             image: n = {},
             imageStyle: c = {}
           } = e, {
-            alt: r,
-            src: i
-          } = (0, ie.useImageParser)(n);
-          return i.desktop || i.mobile || (r = "placeholder", i = {
+            alt: i,
+            src: o
+          } = (0, oe.useImageParser)(n);
+          return o.desktop || o.mobile || (i = "placeholder", o = {
             mobile: t(5148),
             desktop: t(1340)
           }), (0, d.jsx)("div", {
-            className: n.frame ? `${n.frame} ${oe}` : oe,
+            className: n.frame ? `${n.frame} ${re}` : re,
             style: s,
-            children: i?.desktop && i?.mobile ? (0, d.jsxs)(d.Fragment, {
+            children: o?.desktop && o?.mobile ? (0, d.jsxs)(d.Fragment, {
               children: [(0, d.jsx)(me, {
                 style: {
                   ...c,
                   ...n?.style
                 },
-                src: i.desktop,
-                alt: r,
+                src: o.desktop,
+                alt: i,
                 className: a ? `${a} ${le}` : le
               }), (0, d.jsx)(me, {
                 style: {
                   ...c,
                   ...n?.style
                 },
-                src: i.mobile,
-                alt: r,
+                src: o.mobile,
+                alt: i,
                 className: a ? `${a} ${de}` : de
               })]
             }) : (0, d.jsx)(me, {
@@ -1471,8 +1471,8 @@ _global.SENTRY_RELEASE = {
                 ...c,
                 ...n?.style
               },
-              src: i?.desktop ?? i?.mobile,
-              alt: r,
+              src: o?.desktop ?? o?.mobile,
+              alt: i,
               className: a
             })
           })
@@ -1557,7 +1557,7 @@ _global.SENTRY_RELEASE = {
             children: a,
             ...t
           } = e;
-          const [s, n] = (0, o.useState)(!1);
+          const [s, n] = (0, r.useState)(!1);
           return (0, d.jsx)(ve.Textfit, {
             ...t,
             onReady: () => {
@@ -1590,10 +1590,10 @@ _global.SENTRY_RELEASE = {
             role: n,
             splitter: c
           } = e;
-          const r = [];
-          c ? a.split(c).map(((e, a) => r.push(e))) : r.push(a);
-          let i = 100;
-          return 2 == r.length && r[1].length < 4 && "off" !== r[1].toLowerCase() && 45, (0, d.jsxs)(ye, {
+          const i = [];
+          c ? a.split(c).map(((e, a) => i.push(e))) : i.push(a);
+          let o = 100;
+          return 2 == i.length && i[1].length < 4 && "off" !== i[1].toLowerCase() && 45, (0, d.jsxs)(ye, {
             splitter: c,
             role: n,
             wrapper: e => (0, d.jsx)("div", {
@@ -1612,14 +1612,14 @@ _global.SENTRY_RELEASE = {
               min: 8,
               max: 1e3,
               mode: c || n ? "single" : "multi",
-              children: r[0]
+              children: i[0]
             }), (0, d.jsx)(d.Fragment, {
-              children: r.shift() && c && r.length >= 1 && (0, d.jsx)(he, {
+              children: i.shift() && c && i.length >= 1 && (0, d.jsx)(he, {
                 min: 8,
                 max: 1e3,
                 mode: "single",
                 forceSingleModeWidth: !0,
-                children: r.join(" ")
+                children: i.join(" ")
               })
             })]
           }, "badge-wrapper")
@@ -1656,7 +1656,7 @@ _global.SENTRY_RELEASE = {
             className: t,
             title: s
           } = e;
-          const [n, c] = (0, o.useState)(!1);
+          const [n, c] = (0, r.useState)(!1);
           return (0, d.jsxs)("div", {
             className: [we.dropdownWrapper, n ? we.open : "", void 0 !== t ? t : ""].join(" "),
             children: [(0, d.jsx)("button", {
@@ -1678,12 +1678,12 @@ _global.SENTRY_RELEASE = {
             game: s,
             image: n = {},
             style: c = {},
-            template: r = null,
-            theme: i = null,
-            reversedOnMobile: o = !1,
+            template: i = null,
+            theme: o = null,
+            reversedOnMobile: r = !1,
             className: l = ""
           } = e;
-          const m = (0, ie.useImageParser)(n),
+          const m = (0, oe.useImageParser)(n),
             f = {
               ...c
             };
@@ -1693,12 +1693,12 @@ _global.SENTRY_RELEASE = {
             f.background = `url(${m?.src?.desktop}) ${e} ${a}`
           }
           return (0, d.jsx)("div", {
-            className: (0, Ie.classList)("rockstargames-componentsc66ba86806f14d412203f27b13204c61", o ? "rockstargames-componentsda2f0f78b942fbdc0b92617629d4d499" : "", l),
-            "data-game": "community" === r ? null : s,
+            className: (0, Ie.classList)("rockstargames-componentsc66ba86806f14d412203f27b13204c61", r ? "rockstargames-componentsda2f0f78b942fbdc0b92617629d4d499" : "", l),
+            "data-game": "community" === i ? null : s,
             style: (0, $.safeStyles)(f),
             "data-context": t,
-            "data-template": r,
-            "data-theme": i,
+            "data-template": i,
+            "data-theme": o,
             children: a
           })
         },
@@ -1857,10 +1857,10 @@ _global.SENTRY_RELEASE = {
             link: s = "",
             platform: n = "",
             target: c = null,
-            onClick: r
+            onClick: i
           } = e;
-          const i = c ?? (s.startsWith(document.location.origin) ? "_self" : "_blank"),
-            o = [Ae.platformButton, Ae[n]].join(" "),
+          const o = c ?? (s.startsWith(document.location.origin) ? "_self" : "_blank"),
+            r = [Ae.platformButton, Ae[n]].join(" "),
             m = n ? t(7108)(`./${n}.svg`) : null,
             f = (0, d.jsxs)(d.Fragment, {
               children: [m ? (0, d.jsx)("img", {
@@ -1872,19 +1872,19 @@ _global.SENTRY_RELEASE = {
               })]
             });
           return s.startsWith("http") ? (0, d.jsx)("span", {
-            onClick: r,
-            onKeyDown: r,
+            onClick: i,
+            onKeyDown: i,
             role: "link",
             tabIndex: 0,
             children: (0, d.jsx)("a", {
               href: s,
-              className: o,
-              target: i,
+              className: r,
+              target: o,
               children: f
             })
           }) : (0, d.jsx)(l.NavLink, {
-            className: o,
-            onClick: r,
+            className: r,
+            onClick: i,
             to: s,
             children: f
           })
@@ -1895,10 +1895,10 @@ _global.SENTRY_RELEASE = {
             children: s,
             platformsAndLinks: n = [],
             trackingType: c = "buy",
-            trackingParent: r,
-            target: i = null
+            trackingParent: i,
+            target: o = null
           } = e;
-          const [l, m] = (0, o.useState)(!1), {
+          const [l, m] = (0, r.useState)(!1), {
             track: f
           } = (0, A.useGtmTrack)();
           return (0, d.jsxs)("div", {
@@ -1914,18 +1914,18 @@ _global.SENTRY_RELEASE = {
                   event_action: "select_platform",
                   event_category: "cta",
                   event: "select_platform",
-                  event_label: r,
+                  event_label: i,
                   text: a?.toLowerCase() ?? "subscribe"
                 } : "link_account" === c ? {
                   event: "cta_link_account",
                   event_category: "cta",
                   event_action: "link_account",
-                  event_label: r
+                  event_label: i
                 } : {
                   event_action: "buy",
                   event_category: "cta",
                   event: "cta_buy",
-                  event_label: r,
+                  event_label: i,
                   text: a?.toLowerCase() ?? "subscribe"
                 })
               },
@@ -1970,7 +1970,7 @@ _global.SENTRY_RELEASE = {
                         link_url: a
                       })
                     })(e),
-                    target: i
+                    target: o
                   }, `${e.key}-${e.href}-${e.platform}`))) : ""
                 })]
               })]
@@ -1990,8 +1990,8 @@ _global.SENTRY_RELEASE = {
             children: a,
             style: t
           } = e;
-          const s = (0, o.useRef)(null);
-          return (0, o.useEffect)((() => {
+          const s = (0, r.useRef)(null);
+          return (0, r.useEffect)((() => {
             new IntersectionObserver((e => {
               e.forEach((e => {
                 e.isIntersecting && e.target.classList.add([Oe.visible])
@@ -2033,16 +2033,16 @@ _global.SENTRY_RELEASE = {
             site_in_rockstar: n = !1,
             title_slug: c
           } = a;
-          let r = c;
-          "V" === c && (r = "gta-v"), "GTAOnline" === c && (r = "gta-online"), "undeadnightmare" === c && (r = "reddeadredemption");
-          const i = t ?? `${n?"":"/games"}/${r}`;
+          let i = c;
+          "V" === c && (i = "gta-v"), "GTAOnline" === c && (i = "gta-online"), "undeadnightmare" === c && (i = "reddeadredemption");
+          const o = t ?? `${n?"":"/games"}/${i}`;
           return (0, d.jsx)(m, {
             "aria-label": a,
             "data-gtm-category": "Games",
             "data-gtm-action": "Game Click-through",
             "data-gtm-label": c,
             "data-testid": `${c}-gamecard`,
-            to: i,
+            to: o,
             target: "_self",
             className: "rockstargames-componentsead163175b3ecbafda6260fc8bfd88b2",
             children: (0, d.jsx)(Ge, {
@@ -2068,25 +2068,25 @@ _global.SENTRY_RELEASE = {
             cta: n = "",
             game: c
           } = e;
-          const [r, i] = (0, o.useState)(!1), l = (0, p.useMutateState)(), {
+          const [i, o] = (0, r.useState)(!1), l = (0, p.useMutateState)(), {
             navHidden: m
           } = (0, p.useState)();
-          return (0, o.useEffect)((() => {
+          return (0, r.useEffect)((() => {
             l({
-              gameSiteNavOpen: r
+              gameSiteNavOpen: i
             })
-          }), [r]), (0, o.useEffect)((() => {
+          }), [i]), (0, r.useEffect)((() => {
             const e = () => {
-              i(!1)
+              o(!1)
             };
             return document.addEventListener("click", e), () => document.removeEventListener("click", e)
           }), []), (0, d.jsxs)("header", {
             "data-game": c,
-            className: [We.gameSiteHeader, r ? We.headerNavOpen : "", m ? We.navHidden : "", t.gameSiteHeader, r ? t.headerNavOpen : ""].join(" "),
+            className: [We.gameSiteHeader, i ? We.headerNavOpen : "", m ? We.navHidden : "", t.gameSiteHeader, i ? t.headerNavOpen : ""].join(" "),
             children: [(0, d.jsx)("button", {
               className: [We.headerLogo, t.headerLogo].join(" "),
               onClick: e => {
-                i(!r), e.nativeEvent.stopImmediatePropagation()
+                o(!i), e.nativeEvent.stopImmediatePropagation()
               },
               type: "button",
               "aria-label": "Open Game Site Nav",
@@ -2104,7 +2104,7 @@ _global.SENTRY_RELEASE = {
           })
         };
       var Xe = t(1403);
-      class Ke extends o.Component {
+      class Ke extends r.Component {
         constructor(e) {
           super(e), this.state = {
             header: e.header ?? null
@@ -2174,8 +2174,8 @@ _global.SENTRY_RELEASE = {
             size: s,
             title: n,
             customSlidesPerView: c = null,
-            customSpaceBetween: r = null,
-            slideClass: i,
+            customSpaceBetween: i = null,
+            slideClass: o,
             style: l,
             className: m,
             cardSizeBreakpoints: f = {},
@@ -2184,13 +2184,13 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: u
-          } = (0, A.useGtmTrack)(), k = (0, o.useRef)(null), _ = (0, o.useRef)(null), b = (0, o.useRef)(null), [v, h] = (0, o.useState)(null), [x, y] = (0, o.useState)(!1), [N, j] = (0, o.useState)(null), [w, C] = (0, o.useState)({}), [I, T] = (0, o.useState)(), {
+          } = (0, A.useGtmTrack)(), k = (0, r.useRef)(null), _ = (0, r.useRef)(null), b = (0, r.useRef)(null), [v, h] = (0, r.useState)(null), [x, y] = (0, r.useState)(!1), [N, j] = (0, r.useState)(null), [w, C] = (0, r.useState)({}), [I, T] = (0, r.useState)(), {
             ref: M,
             inView: E
           } = (0, R.useInView)({
             threshold: .6
-          }), [B, P] = (0, o.useState)(!1), [z, V] = (0, o.useState)(null), [$, D] = (0, o.useState)(!1);
-          (0, o.useEffect)((() => {
+          }), [B, P] = (0, r.useState)(!1), [z, V] = (0, r.useState)(null), [$, D] = (0, r.useState)(!1);
+          (0, r.useEffect)((() => {
             const e = () => {
               D(window.innerWidth < 1024)
             };
@@ -2200,19 +2200,19 @@ _global.SENTRY_RELEASE = {
           }), []);
           const F = {
             0: {
-              spaceBetween: r ?? 16
+              spaceBetween: i ?? 16
             },
             1024: {
-              spaceBetween: r ?? 18
+              spaceBetween: i ?? 18
             },
             1920: {
-              spaceBetween: r ?? 20
+              spaceBetween: i ?? 20
             },
             2560: {
-              spaceBetween: r ?? 22
+              spaceBetween: i ?? 22
             }
           };
-          (0, o.useEffect)((() => {
+          (0, r.useEffect)((() => {
             if (!k.current) return;
             const e = () => {
               if (k.current) {
@@ -2224,7 +2224,7 @@ _global.SENTRY_RELEASE = {
             return window.addEventListener("resize", e), e(), () => {
               window.removeEventListener("resize", e)
             }
-          }), [k, c]), (0, o.useEffect)((() => {
+          }), [k, c]), (0, r.useEffect)((() => {
             if (!t) return;
             let e = !1;
             t.forEach((a => {
@@ -2234,12 +2234,12 @@ _global.SENTRY_RELEASE = {
               children: e
             }, Symbol(a).toString())));
             h(a)
-          }), [t, $]), (0, o.useEffect)((() => {
+          }), [t, $]), (0, r.useEffect)((() => {
             T({
               nextEl: b.current,
               prevEl: _.current
             })
-          }), [b, _]), (0, o.useEffect)((() => {
+          }), [b, _]), (0, r.useEffect)((() => {
             E && !x && t && (u({
               event: "page_section_impression",
               event_action: "impression",
@@ -2307,7 +2307,7 @@ _global.SENTRY_RELEASE = {
               navigation: I,
               modules: [Xe._2],
               breakpoints: F,
-              slideClass: (0, S.classList)("swiper-slide", i),
+              slideClass: (0, S.classList)("swiper-slide", o),
               onSlideNextTransitionEnd: () => {
                 u({
                   event_action: "next",
@@ -2407,8 +2407,8 @@ _global.SENTRY_RELEASE = {
             title: a = "Membership Rewards",
             shards: t
           } = e;
-          const [s, n] = (0, o.useState)(null);
-          return (0, o.useEffect)((() => {
+          const [s, n] = (0, r.useState)(null);
+          return (0, r.useEffect)((() => {
             t && n(t.reduce(((e, a) => {
               if (!a?.shardImg) return e;
               const {
@@ -2442,9 +2442,9 @@ _global.SENTRY_RELEASE = {
             expandingButtonLabel: n = "Subscribe",
             title: c
           } = e;
-          const [r, i] = (0, o.useState)([]), [l, m] = (0, o.useState)([]);
-          return (0, o.useEffect)((() => {
-            i(t.reduce(((e, a) => a.isInExpandingButton ? (e.push({
+          const [i, o] = (0, r.useState)([]), [l, m] = (0, r.useState)([]);
+          return (0, r.useEffect)((() => {
+            o(t.reduce(((e, a) => a.isInExpandingButton ? (e.push({
               href: a.href,
               platform: a.platform,
               buttonText: a.buttonText
@@ -2453,11 +2453,11 @@ _global.SENTRY_RELEASE = {
               title: a.buttonText,
               to: a.href
             }), e)), []))
-          }), t), t.length ? r.length ? (0, d.jsx)(Ee.motion.div, {
+          }), t), t.length ? i.length ? (0, d.jsx)(Ee.motion.div, {
             variants: a ? aa : void 0,
             children: (0, d.jsxs)(Fe, {
               buttonText: n,
-              platformsAndLinks: r,
+              platformsAndLinks: i,
               children: [(0, d.jsxs)(Ee.motion.div, {
                 className: Je.descriptions,
                 variants: a ? aa : void 0,
@@ -2519,8 +2519,8 @@ _global.SENTRY_RELEASE = {
             ctas: s = [],
             description: n = "",
             expandingButtonLabel: c = "Subscribe",
-            title: r = "",
-            legalText: i
+            title: i = "",
+            legalText: o
           } = e;
           return (0, d.jsxs)(Ee.motion.div, {
             className: Je.content,
@@ -2537,28 +2537,28 @@ _global.SENTRY_RELEASE = {
               ctas: s,
               description: n,
               expandingButtonLabel: c,
-              title: r
-            }), i && (0, d.jsx)(Ee.motion.div, {
+              title: i
+            }), o && (0, d.jsx)(Ee.motion.div, {
               className: Je.legalText,
               variants: a ? aa : void 0,
               children: (0, d.jsx)("p", {
                 dangerouslySetInnerHTML: {
-                  __html: i
+                  __html: o
                 }
               })
             })]
           })
         },
-        ra = e => {
+        ia = e => {
           let {
             animated: a = !1,
             backgroundImage: t,
             brands: s = [],
             className: n,
             ctas: c = [],
-            description: r = "",
-            expandingButtonLabel: i = "Subscribe",
-            layeredImage: o,
+            description: i = "",
+            expandingButtonLabel: o = "Subscribe",
+            layeredImage: r,
             layeredImageSettings: l,
             legalText: m,
             shardsSection: f = {},
@@ -2583,10 +2583,10 @@ _global.SENTRY_RELEASE = {
                 if (t.has(s)) {
                   const e = t.get(s);
                   Object.entries(n).forEach((n => {
-                    const [c, r] = n;
+                    const [c, i] = n;
                     if (t.has(s) && t.has(c)) {
                       const s = `${t.get(c)}${e}`;
-                      a[s] = "imageWidth" !== c ? r ? `${r}px` : "0px" : r ? `${r}vw` : "100vw"
+                      a[s] = "imageWidth" !== c ? i ? `${i}px` : "0px" : i ? `${i}vw` : "100vw"
                     }
                   }))
                 }
@@ -2594,8 +2594,8 @@ _global.SENTRY_RELEASE = {
             })(l),
             k = (0, S.useGetCdnSource)(t?.mobile?.full_src ?? null),
             _ = (0, S.useGetCdnSource)(t?.desktop?.full_src ?? k),
-            b = (0, S.useGetCdnSource)(o?.mobile?.full_src ?? null),
-            v = (0, S.useGetCdnSource)(o?.desktop?.full_src ?? b);
+            b = (0, S.useGetCdnSource)(r?.mobile?.full_src ?? null),
+            v = (0, S.useGetCdnSource)(r?.desktop?.full_src ?? b);
           return (0, d.jsxs)(Ee.motion.div, {
             className: (0, S.classList)(Je.hero, n),
             style: {
@@ -2623,8 +2623,8 @@ _global.SENTRY_RELEASE = {
             }), (0, d.jsx)(ca, {
               animated: a,
               ctas: c,
-              description: r,
-              expandingButtonLabel: i,
+              description: i,
+              expandingButtonLabel: o,
               title: p,
               brands: s,
               legalText: m
@@ -2633,8 +2633,8 @@ _global.SENTRY_RELEASE = {
             })]
           })
         };
-      var ia = t(3660),
-        oa = t.n(ia);
+      var oa = t(3660),
+        ra = t.n(oa);
       const la = e => {
         let {
           children: a,
@@ -2646,7 +2646,7 @@ _global.SENTRY_RELEASE = {
           className: (0, S.classList)(s, t?.className, "rockstargames-componentsf938ddf11a5375276f8e733f5f4e5953"),
           style: (0, $.safeStyles)(n ?? t?.style ?? {}),
           dangerouslySetInnerHTML: {
-            __html: oa().unescape(a)
+            __html: ra().unescape(a)
           }
         })
       };
@@ -2679,25 +2679,25 @@ _global.SENTRY_RELEASE = {
           } = e;
           const n = (0, l.useLocation)(),
             c = (0, da.useIntl)(),
-            [r, i] = (0, da.getLocale)(),
-            [f, g] = (0, o.useState)(!1),
-            p = (0, o.useMemo)((() => (0, ma.c)()), []),
-            u = (0, o.useCallback)((e => {
+            [i, o] = (0, da.getLocale)(),
+            [f, g] = (0, r.useState)(!1),
+            p = (0, r.useMemo)((() => (0, ma.c)()), []),
+            u = (0, r.useCallback)((e => {
               let a = n.pathname;
               const t = a.split("/");
               return da.locales.map((e => e.subdomaincom)).includes(t[0]) && (a = t.slice(1).join("/")), p.currentSite?.site === ma.U.www ? "en" === e ? `${window.location.origin}${a}${n.search}` : `${window.location.origin}/${e}${a}${n.search}` : `${window.location.origin}${a}${n.search}`
             }), [n]),
-            k = (0, o.useRef)(null),
-            [_, b] = (0, o.useState)(0),
+            k = (0, r.useRef)(null),
+            [_, b] = (0, r.useState)(0),
             v = matchMedia("(hover: none) and (pointer: coarse)").matches,
             h = e => {
-              if (s && s(!1), r.subdomaincom === e || "none" === e) return void(s && s(!1));
+              if (s && s(!1), i.subdomaincom === e || "none" === e) return void(s && s(!1));
               const a = da.locales.find((a => a.subdomaincom === e));
-              a && (i(a.iso), window.location.href = u(e))
+              a && (o(a.iso), window.location.href = u(e))
             };
-          return (0, o.useEffect)((() => {
+          return (0, r.useEffect)((() => {
             void 0 !== t && !1 === t && !0 === f && g(!1)
-          }), [t]), (0, o.useEffect)((() => {
+          }), [t]), (0, r.useEffect)((() => {
             k.current && b(k.current.scrollHeight)
           }), [k]), (0, d.jsxs)("div", {
             className: [pa.languageSelector, f ? pa.open : ""].join(" "),
@@ -2831,9 +2831,9 @@ _global.SENTRY_RELEASE = {
                 paddingClass: s,
                 imageSizeClass: n,
                 objectFitClass: c,
-                positionClassX: r,
-                positionClassY: i,
-                zIndex: o,
+                positionClassX: i,
+                positionClassY: o,
+                zIndex: r,
                 className: l,
                 style: m,
                 alt: f,
@@ -2842,12 +2842,12 @@ _global.SENTRY_RELEASE = {
               return (0, d.jsx)(fe, {
                 image: t,
                 style: {
-                  zIndex: o ?? ++a
+                  zIndex: r ?? ++a
                 },
                 imageStyle: m,
-                className: (0, S.classList)(l, g, ka.imageLayer, ka[s], ka[n], ka[c], ka[r], ka[i]),
+                className: (0, S.classList)(l, g, ka.imageLayer, ka[s], ka[n], ka[c], ka[i], ka[o]),
                 alt: f
-              }, o ?? ++a)
+              }, r ?? ++a)
             })), e?.borderImage && (0, d.jsx)(_a, {
               style: e?.borderImage,
               className: e?.borderImage?.displayClass
@@ -2871,9 +2871,9 @@ _global.SENTRY_RELEASE = {
             discountTxt: s,
             splitter: n,
             image: c,
-            style: r,
-            className: i = "",
-            attributes: o = {},
+            style: i,
+            className: o = "",
+            attributes: r = {},
             role: l,
             hero: m = !1
           } = e;
@@ -2881,15 +2881,15 @@ _global.SENTRY_RELEASE = {
             hero: m,
             children: (0, d.jsx)("figure", {
               children: (0, d.jsxs)("div", {
-                className: (0, S.classList)("rockstargames-componentsab10d5a913595e2fbbe0612d75f320b8", m ? "rockstargames-componentsb8558839bcd23d06fc3453876f54199b" : "", o?.hiddenMobile ? "hiddenMobile" : "", o?.hiddenLarge ? "hiddenLarge" : "", o?.className, i),
+                className: (0, S.classList)("rockstargames-componentsab10d5a913595e2fbbe0612d75f320b8", m ? "rockstargames-componentsb8558839bcd23d06fc3453876f54199b" : "", r?.hiddenMobile ? "hiddenMobile" : "", r?.hiddenLarge ? "hiddenLarge" : "", r?.className, o),
                 style: (0, $.safeStyles)({
-                  ...r,
-                  ...o?.style
+                  ...i,
+                  ...r?.style
                 }),
-                ...o,
+                ...r,
                 children: [(0, d.jsx)(fe, {
                   image: c,
-                  className: i
+                  className: o
                 }), (c?.badge || c?.discountTxt || a || s) && (0, d.jsx)(Ne, {
                   badge: c?.discountTxt ?? c?.badge ?? a ?? s,
                   badgeType: t,
@@ -2919,10 +2919,10 @@ _global.SENTRY_RELEASE = {
             alt: s,
             style: n,
             lazy: c = !1,
-            decoding: r = "auto",
-            sizes: i = [320, 480, 768, 1024, 1440, 1920, 2560]
+            decoding: i = "auto",
+            sizes: o = [320, 480, 768, 1024, 1440, 1920, 2560]
           } = e;
-          const [l, m] = (0, o.useState)(!1);
+          const [l, m] = (0, r.useState)(!1);
           return (0, d.jsxs)("div", {
             className: xa.multiSourceContainer,
             children: [!l && (0, d.jsx)("img", {
@@ -2934,7 +2934,7 @@ _global.SENTRY_RELEASE = {
             }), (0, d.jsx)("img", {
               className: [xa.multiSourceImage, t].join(" "),
               src: `${a}?im=Resize=1920`,
-              srcSet: (f = a, i.map((e => `${f}?im=Resize=${e} ${e}w`)).join(", ")),
+              srcSet: (f = a, o.map((e => `${f}?im=Resize=${e} ${e}w`)).join(", ")),
               sizes: "(max-width: 400px) 200px, (max-width: 1920px) 100vw, 1920px",
               alt: s ?? "Multi-Source Image",
               style: n,
@@ -2942,7 +2942,7 @@ _global.SENTRY_RELEASE = {
                 m(!0)
               },
               loading: c ? "lazy" : "eager",
-              decoding: r
+              decoding: i
             })]
           });
           var f
@@ -2984,15 +2984,15 @@ _global.SENTRY_RELEASE = {
             noSpecialOrder: s = !1,
             style: n = {}
           } = e;
-          const [c] = (0, l.useSearchParams)(), r = t.preview_images_parsed.newswire_block, i = {
-            default: 0 !== a || s ? r.square || r.d16x9 || r._fallback : r.d16x9 || r.square || r._fallback,
-            mobile: r.square || r._fallback
-          }, [o, f] = (0, $.usePreloadImg)(i.default), [g, p] = (0, $.usePreloadImg)(i.mobile), u = {
+          const [c] = (0, l.useSearchParams)(), i = t.preview_images_parsed.newswire_block, o = {
+            default: 0 !== a || s ? i.square || i.d16x9 || i._fallback : i.d16x9 || i.square || i._fallback,
+            mobile: i.square || i._fallback
+          }, [r, f] = (0, $.usePreloadImg)(o.default), [g, p] = (0, $.usePreloadImg)(o.mobile), u = {
             default: {
-              backgroundImage: `url(${i.default})`
+              backgroundImage: `url(${o.default})`
             },
             mobile: {
-              backgroundImage: `url(${i.mobile})`
+              backgroundImage: `url(${o.mobile})`
             }
           };
           return (0, d.jsx)(m, {
@@ -3000,7 +3000,7 @@ _global.SENTRY_RELEASE = {
             "data-gtm-action": "Article Block Click",
             "data-gtm-label": `${t.title}`,
             to: t.url,
-            className: [Sa.newswireBlock, s ? Sa.newswireBlockNoSpecialOrder : "", null !== o ? Sa.startAnimation : ""].join(" "),
+            className: [Sa.newswireBlock, s ? Sa.newswireBlockNoSpecialOrder : "", null !== r ? Sa.startAnimation : ""].join(" "),
             children: (0, d.jsxs)(d.Fragment, {
               children: [0 !== a || c.get("tag_id") ? (0, d.jsx)("div", {
                 className: Sa.preview,
@@ -3043,26 +3043,26 @@ _global.SENTRY_RELEASE = {
             t: n
           } = e;
           const [c] = (0, l.useSearchParams)(), {
-            tagId: r = null
-          } = (0, l.useParams)(), [i, m] = (0, o.useState)(r ?? t ?? c.get("tag_id")), [f, g] = (0, o.useState)(1), [u, k] = (0, o.useState)([]), [_, b] = (0, o.useState)(null), {
+            tagId: i = null
+          } = (0, l.useParams)(), [o, m] = (0, r.useState)(i ?? t ?? c.get("tag_id")), [f, g] = (0, r.useState)(1), [u, k] = (0, r.useState)([]), [_, b] = (0, r.useState)(null), {
             data: v
           } = (0, p.useQuery)(Ia(), {
             variables: {
-              tagId: Number(i),
+              tagId: Number(o),
               page: f,
               metaUrl: s
             },
             autoSetLoading: !0
           });
-          return (0, o.useEffect)((() => {
-            g(1), k([]), m(r ?? t ?? c.get("tag_id"))
-          }), [c.get("tag_id")]), (0, o.useEffect)((() => {
+          return (0, r.useEffect)((() => {
+            g(1), k([]), m(i ?? t ?? c.get("tag_id"))
+          }), [c.get("tag_id")]), (0, r.useEffect)((() => {
             v && v.posts && v.posts.paging && b(v.posts.paging), v && v.posts && v.posts.results && k(u.concat(v.posts.results))
           }), [v]), u.length ? (0, d.jsxs)(d.Fragment, {
             children: [(0, d.jsx)(Ba, {
               posts: u,
               relativeTo: a,
-              noSpecialOrder: null !== i
+              noSpecialOrder: null !== o
             }), null !== _ && _.nextPage ? (0, d.jsx)(j, {
               onClick: () => g(f + 1),
               disabled: !1,
@@ -3107,7 +3107,7 @@ _global.SENTRY_RELEASE = {
             gtmTrack: s,
             relativeTo: n
           } = e;
-          return (0, o.useEffect)((() => {
+          return (0, r.useEffect)((() => {
             if (!t.length) return;
             const e = {
               event: "trackEvent",
@@ -3175,13 +3175,13 @@ _global.SENTRY_RELEASE = {
             imageUrl: s,
             className: n,
             tiers: c,
-            onClick: r,
-            badgeContent: i = "Complete",
+            onClick: i,
+            badgeContent: o = "Complete",
             imageSize: m = 420,
             imageLoaded: f
           } = e;
-          const [g, p] = (0, o.useState)(!1), [u, k] = (0, o.useState)(f);
-          (0, o.useEffect)((() => {
+          const [g, p] = (0, r.useState)(!1), [u, k] = (0, r.useState)(f);
+          (0, r.useEffect)((() => {
             if (c) {
               const e = c.some((e => !e.isComplete));
               p(!e)
@@ -3191,7 +3191,7 @@ _global.SENTRY_RELEASE = {
           return (0, $.usePreloadImg)(_, (() => k(!0))), (0, d.jsx)(l.NavLink, {
             className: [Aa.packCard, n].join(" "),
             to: t,
-            onClick: r,
+            onClick: i,
             children: (0, d.jsxs)("div", {
               className: [Aa.packCardImageBox, u ? Aa.packCardImageLoaded : ""].join(" "),
               style: {
@@ -3203,7 +3203,7 @@ _global.SENTRY_RELEASE = {
                   className: Aa.icon
                 }), (0, d.jsx)("div", {
                   className: Aa.label,
-                  children: i
+                  children: o
                 })]
               }), (0, d.jsxs)("div", {
                 className: Aa.packCardTextBox,
@@ -3231,16 +3231,16 @@ _global.SENTRY_RELEASE = {
             packListClassName: s = Fa.packList,
             packGridClassName: n = Fa.packGrid,
             selectPackCard: c,
-            sortFunction: r = za
+            sortFunction: i = za
           } = e;
-          const i = [...t].sort(r);
+          const o = [...t].sort(i);
           return (0, d.jsx)("div", {
             className: [s, a ? Fa.headerVisible : ""].join(" "),
             "data-testid": "pack-list",
             children: (0, d.jsx)("div", {
               className: n,
               "data-testid": "pack-grid",
-              children: i.map((e => {
+              children: o.map((e => {
                 let {
                   title: a,
                   url: t,
@@ -3290,12 +3290,12 @@ _global.SENTRY_RELEASE = {
           return e
         }, Ha.apply(this, arguments)
       }
-      const Wa = e => o.createElement("svg", Ha({
+      const Wa = e => r.createElement("svg", Ha({
         xmlns: "http://www.w3.org/2000/svg",
         width: 24,
         height: 24,
         fill: "none"
-      }, e), Ga || (Ga = o.createElement("path", {
+      }, e), Ga || (Ga = r.createElement("path", {
         stroke: "#fff",
         strokeLinecap: "round",
         strokeLinejoin: "round",
@@ -3313,12 +3313,12 @@ _global.SENTRY_RELEASE = {
           return e
         }, Xa.apply(this, arguments)
       }
-      const Ka = e => o.createElement("svg", Xa({
+      const Ka = e => r.createElement("svg", Xa({
           xmlns: "http://www.w3.org/2000/svg",
           width: 24,
           height: 24,
           fill: "none"
-        }, e), qa || (qa = o.createElement("path", {
+        }, e), qa || (qa = r.createElement("path", {
           stroke: "#fff",
           strokeLinecap: "round",
           strokeLinejoin: "round",
@@ -3373,8 +3373,8 @@ _global.SENTRY_RELEASE = {
             onNavItemClick: s,
             isOpen: n,
             isHeaderVisible: c,
-            menuClass: r = Ja.navMenu,
-            menuContainerClass: i = Ja.navMenuMain,
+            menuClass: i = Ja.navMenu,
+            menuContainerClass: o = Ja.navMenuMain,
             menuSectionClass: m = Ja.sectionMenu,
             menuPrevBtnClass: f = Ja.previousNavButton,
             menuNextBtnClass: g = Ja.nextNavButton
@@ -3386,16 +3386,16 @@ _global.SENTRY_RELEASE = {
             {
               pathname: k
             } = (0, l.useLocation)(),
-            _ = (0, o.useMemo)((() => Math.max(a.findIndex((e => e.name === t)), 0)), [a, k]),
-            [b, v] = (0, o.useState)(_),
-            [h, x] = (0, o.useState)(!1),
-            [y, N] = (0, o.useState)(!1),
-            [j, S] = (0, o.useState)(!1),
-            w = (0, o.useRef)(null),
-            C = (0, o.useCallback)(((e, a) => {
+            _ = (0, r.useMemo)((() => Math.max(a.findIndex((e => e.name === t)), 0)), [a, k]),
+            [b, v] = (0, r.useState)(_),
+            [h, x] = (0, r.useState)(!1),
+            [y, N] = (0, r.useState)(!1),
+            [j, S] = (0, r.useState)(!1),
+            w = (0, r.useRef)(null),
+            C = (0, r.useCallback)(((e, a) => {
               w.current && w.current.slideTo(e), v(e), T(`Secondary Nav > ${a}`)
             }), [u]),
-            I = (0, o.useCallback)(((e, t) => {
+            I = (0, r.useCallback)(((e, t) => {
               T(`Secondary Nav > ${a[b].title} > ${e}`, t), s()
             }), [a, s, b, u]),
             T = (e, a) => {
@@ -3409,13 +3409,13 @@ _global.SENTRY_RELEASE = {
                 element_placement: e
               })
             },
-            M = (0, o.useCallback)((e => {
+            M = (0, r.useCallback)((e => {
               N(e.isEnd), S(e.isBeginning)
             }), []);
-          return (0, o.useEffect)((() => {
+          return (0, r.useEffect)((() => {
             w.current && ((w.current.wrapperEl.clientWidth || 0) > (w.current.el.clientWidth || 0) ? (x(!0), w.current.params.centeredSlides = !0, w.current.params.centeredSlidesBounds = !0) : (x(!1), w.current.params.centeredSlides = !1, w.current.params.centeredSlidesBounds = !1))
           }), [w.current?.wrapperEl.clientWidth, w.current?.el.clientWidth]), (0, d.jsx)(Ee.motion.div, {
-            className: r,
+            className: i,
             initial: {
               height: 0
             },
@@ -3423,7 +3423,7 @@ _global.SENTRY_RELEASE = {
               height: n ? "100dvh" : 0
             },
             children: (0, d.jsxs)("div", {
-              className: i,
+              className: o,
               children: [(0, d.jsxs)("div", {
                 className: m,
                 children: [!j && h && (0, d.jsx)("div", {
@@ -3541,7 +3541,7 @@ _global.SENTRY_RELEASE = {
           const {
             parallaxController: t
           } = (0, nt.useController)();
-          return (0, o.useLayoutEffect)((() => {
+          return (0, r.useLayoutEffect)((() => {
             if (!t) return;
             const e = setInterval((() => {
               t.update()
@@ -3549,13 +3549,13 @@ _global.SENTRY_RELEASE = {
             return () => clearInterval(e)
           }), [t]), a
         },
-        rt = {
+        it = {
           parallaxWrapper: "rockstargames-componentsac6a811a2c026eb9d37c82e804870efc",
           large: "rockstargames-componentsa8acf06a80d716956d8490e4d8c223f7",
           medium: "rockstargames-componentsbd7e3cede84d0e9316f0577f23921911",
           small: "rockstargames-componentsd56e2c3a2b2a210394852ba9e95b4cce"
         },
-        it = e => {
+        ot = e => {
           let {
             scrollAxis: a = "vertical",
             size: t = "",
@@ -3566,10 +3566,10 @@ _global.SENTRY_RELEASE = {
             scrollAxis: a,
             children: (0, d.jsx)(ct, {
               children: (0, d.jsx)("div", {
-                className: (0, S.classList)(rt.parallaxWrapper, rt[t]),
+                className: (0, S.classList)(it.parallaxWrapper, it[t]),
                 style: s,
                 "data-context": "parallax-wrapper",
-                children: n ? n.map(((e, t) => (0, o.cloneElement)(e, {
+                children: n ? n.map(((e, t) => (0, r.cloneElement)(e, {
                   scrollAxis: a,
                   style: {
                     ...e?.props?.style,
@@ -3580,7 +3580,7 @@ _global.SENTRY_RELEASE = {
             })
           })
         },
-        ot = e => {
+        rt = e => {
           let {
             layers: a = [],
             displayClass: t = "",
@@ -3612,18 +3612,18 @@ _global.SENTRY_RELEASE = {
             scrollAxis: s = "vertical",
             displayClass: n = "",
             style: c = {},
-            children: r
+            children: i
           } = e;
           return "horizontal" === s ? (0, d.jsx)(nt.Parallax, {
             x: [a, t],
             className: (0, S.classList)(lt, n),
             styleOuter: c,
-            children: r
+            children: i
           }) : (0, d.jsx)(nt.Parallax, {
             y: [a, t],
             className: (0, S.classList)(lt, n),
             styleOuter: c,
-            children: r
+            children: i
           })
         },
         mt = (e, a) => {
@@ -3796,9 +3796,6 @@ _global.SENTRY_RELEASE = {
         pt = {
           pillBtn: "rockstargames-componentsc0fa3153030df94ab4c9851ecbe487fd",
           selected: "rockstargames-componentsa1cfd163b5c9dfad8f6285e37b43cceb",
-          scNavWrapper: "rockstargames-componentsf04cd89cc078037da622cc686abef1d5",
-          rpLevel: "rockstargames-componentsb7f9e9d89d05738747bce229fe8496c5",
-          rpIcon: "rockstargames-componentsdd4cf5eae645a64f88072bf0a7613fed",
           scCharacterCard: "rockstargames-componentsf8cc5e30fb84b71315c12a45f4eec502",
           scAvatar: "rockstargames-componentse1ac10d8cc56a4278449f4e8e24ae091",
           scCharNames: "rockstargames-componentsc0364d91464a6e325410a5972a4687a6",
@@ -3815,10 +3812,10 @@ _global.SENTRY_RELEASE = {
             {
               platform: n,
               platformUsername: c,
-              mugshotUrl: r,
-              stats: i
+              mugshotUrl: i,
+              stats: o
             } = a,
-            [l, m] = (0, o.useState)(r),
+            [l, m] = (0, r.useState)(i),
             f = mt(n, "large");
           return (0, d.jsxs)("div", {
             className: pt.scCharacterCard,
@@ -3849,7 +3846,7 @@ _global.SENTRY_RELEASE = {
                     className: pt.scRpLevel,
                     children: [(0, d.jsx)("img", {
                       className: pt.scRpIcon,
-                      src: ft(i.overview.rank.value),
+                      src: ft(o.overview.rank.value),
                       alt: s.formatMessage(gt.profile_selector_rp_icon)
                     }), (0, d.jsx)("span", {
                       children: a.stats.overview.rank.value
@@ -3877,11 +3874,11 @@ _global.SENTRY_RELEASE = {
             t = (0, p.useReactiveVar)(xt),
             s = (0, p.useReactiveVar)(Nt),
             n = (0, p.useReactiveVar)(St);
-          return (0, o.useEffect)((() => {
+          return (0, r.useEffect)((() => {
             n || (e && bt(!1), s && (jt(!1), ht(-1)))
-          }), [n]), (0, o.useEffect)((() => {
+          }), [n]), (0, r.useEffect)((() => {
             !e && n && (s || jt(!0))
-          }), [e, n]), (0, o.useMemo)((() => ({
+          }), [e, n]), (0, r.useMemo)((() => ({
             languageSelectorOpened: e,
             setLanguageSelectorOpened: bt,
             activeSubNavId: a,
@@ -3982,88 +3979,97 @@ _global.SENTRY_RELEASE = {
             dataTestId: "doNotSellMyInformationLink"
           }]
         }),
-        Bt = e => {
+        Bt = {
+          pillBtn: "rockstargames-componentsc3b6f2981b06087c23badfeac4f54c90",
+          selected: "rockstargames-componentsdc25adef8e588acc0d78df656b87d1cc",
+          scSubLink: "rockstargames-componentse927e96203c4220eb4d249461d089542",
+          scLink: "rockstargames-componentsf3bc75f4a8d113fbccd20bcb22defbd0"
+        },
+        Pt = e => {
           let {
             text: a,
             target: t,
             href: s,
             location: n,
             ga: c,
-            dataTestId: r,
-            isSubLink: i,
-            hasNotifications: o = !1,
+            dataTestId: i,
+            isSubLink: o,
+            hasNotifications: r = !1,
             onClickCallback: m = (() => {}),
-            tabIndex: f
+            tabIndex: f,
+            reloadDocument: g = !1
           } = e;
           const {
-            track: g
-          } = (0, A.useGtmTrack)(), p = (0, ma.c)();
-          let u = s;
-          n && (u = n.domain === p.currentSite?.site ? n.path : `https://${p.sites[n.domain]}.rockstargames.com${n.path}`);
-          const k = {
+            track: p
+          } = (0, A.useGtmTrack)(), u = (0, ma.c)();
+          let k = s;
+          n && (k = n.domain === u.currentSite?.site ? n.path : `https://${u.sites[n.domain]}.rockstargames.com${n.path}`);
+          const _ = {
             ...c,
-            link_url: u
+            link_url: k
           };
           return (0, d.jsxs)(l.Link, {
-            className: i ? "rockstargames-componentsb09825ca3a74afcd1e1ebf847c3e2b08" : "rockstargames-componentsa881dc499df8f3ffd723a933f4c4cf7c",
-            "data-testid": r || "menuLink",
+            className: o ? Bt.scSubLink : Bt.scLink,
+            "data-testid": i || "menuLink",
             title: a,
-            to: u,
+            to: k,
             target: t,
             rel: "noreferrer",
+            reloadDocument: g,
             tabIndex: f,
             onClick: e => {
-              g(k), m(e)
+              p(_), m(e)
             },
-            children: [a, o && (0, d.jsx)("span", {
-              className: "rockstargames-componentsce6a2ead47e90d0fd3b8573eca57eb1c"
+            children: [a, r && (0, d.jsx)("span", {
+              className: Bt.scLinkNotification
             })]
           })
         },
-        Pt = e => {
+        zt = e => {
           let {
             id: a,
             text: t,
             target: s,
             href: n,
             location: c,
-            ga: r,
-            hasNotifications: i = !1,
+            ga: i,
+            hasNotifications: o = !1,
             dataTestId: l,
             children: m = [],
             activeSubNavId: f,
             setActiveSubNavId: g,
             setSubNavExtraHeight: p,
-            onClickCallback: u = (() => {})
+            reloadDocument: u = !1,
+            onClickCallback: k = (() => {})
           } = e;
           const {
-            windowWidth: k,
-            windowHeight: _
+            windowWidth: _,
+            windowHeight: b
           } = (0, $.useWindowResize)(), {
-            track: b
+            track: v
           } = (0, A.useGtmTrack)(), {
-            navOpen: v
-          } = (0, A.useRockstarUserState)(), h = (0, o.useRef)(null), [x, y] = (0, o.useState)(0), [N, j] = (0, o.useState)(0), [S, w] = (0, o.useState)(!0);
-          return (0, o.useEffect)((() => {
-            f !== a && !1 === S && w(!0), f === a && w(!1)
-          }), [f]), (0, o.useEffect)((() => {
-            if (!h.current) return;
-            y(h?.current?.scrollHeight);
-            const e = window.getComputedStyle(h.current);
+            navOpen: h
+          } = (0, A.useRockstarUserState)(), x = (0, r.useRef)(null), [y, N] = (0, r.useState)(0), [j, S] = (0, r.useState)(0), [w, C] = (0, r.useState)(!0);
+          return (0, r.useEffect)((() => {
+            f !== a && !1 === w && C(!0), f === a && C(!1)
+          }), [f]), (0, r.useEffect)((() => {
+            if (!x.current) return;
+            N(x?.current?.scrollHeight);
+            const e = window.getComputedStyle(x.current);
             if (e) {
               let a = 16 * parseInt(e.getPropertyValue("--scSubNav-opened-margin"), 10);
-              Number.isNaN(a) && (a = 0), j(a)
+              Number.isNaN(a) && (a = 0), S(a)
             }
-          }), [h, k, _]), m.length > 0 ? (0, d.jsxs)(d.Fragment, {
+          }), [x, _, b]), m.length > 0 ? (0, d.jsxs)(d.Fragment, {
             children: [(0, d.jsxs)("button", {
               className: "rockstargames-componentse8c2778a7077d79660118825518f4a6b",
               type: "button",
               "data-testid": l || "menuButton",
               title: t,
-              tabIndex: v ? 0 : -1,
-              "data-children-hidden": S,
+              tabIndex: h ? 0 : -1,
+              "data-children-hidden": w,
               onClick: e => {
-                e.stopPropagation(), b(r), f === a ? (g(-1), p(0)) : (g(a), p(x + N + N))
+                e.stopPropagation(), v(i), f === a ? (g(-1), p(0)) : (g(a), p(y + j + j))
               },
               children: [(0, d.jsx)("span", {
                 className: "rockstargames-componentse3eab869e1022334fd614fabcaa75b22",
@@ -4073,32 +4079,33 @@ _global.SENTRY_RELEASE = {
               })]
             }, t), (0, d.jsx)("nav", {
               className: "rockstargames-componentsbf5af636537478795feeda339a97eab1",
-              ref: h,
-              "aria-hidden": S,
+              ref: x,
+              "aria-hidden": w,
               style: {
-                height: S ? 0 : `${x}px`
+                height: w ? 0 : `${y}px`
               },
-              children: m.map((e => (0, d.jsx)(Bt, {
+              children: m.map((e => (0, d.jsx)(Pt, {
                 ...e,
                 isSubLink: !0,
                 key: e.text,
-                tabIndex: S || !v ? -1 : 0
+                tabIndex: w || !h ? -1 : 0
               })))
             })]
-          }) : (0, d.jsx)(Bt, {
+          }) : (0, d.jsx)(Pt, {
             text: t,
             target: s,
             href: n,
             location: c,
-            ga: r,
-            hasNotifications: i,
+            ga: i,
+            hasNotifications: o,
             dataTestId: l,
             isSubLink: !1,
-            onClickCallback: u,
-            tabIndex: v ? 0 : -1
+            onClickCallback: k,
+            tabIndex: h ? 0 : -1,
+            reloadDocument: u
           })
         },
-        zt = e => {
+        Vt = e => {
           let {
             sc: a
           } = e;
@@ -4107,15 +4114,15 @@ _global.SENTRY_RELEASE = {
             windowHeight: s
           } = (0, $.useWindowResize)(), n = (0, da.useIntl)(), {
             languageSelectorOpened: c,
-            setLanguageSelectorOpened: r,
-            activeSubNavId: i,
+            setLanguageSelectorOpened: i,
+            activeSubNavId: o,
             setActiveSubNavId: m,
             subNavExtraHeight: f,
             setSubNavExtraHeight: g
           } = Ct(), {
             setSelectedCharacterTuple: p,
             navOpen: u
-          } = (0, A.useRockstarUserState)(), k = (0, $.useLocale)(), _ = (0, $.toScLocaleString)(k), [b, v] = (0, o.useState)(""), h = (0, l.useLocation)(), x = `${a.login}?returnUrl=${b}&lang=${_}`, y = `${a.signup}&returnUrl=${b}&lang=${_}`, N = (0, o.useMemo)((() => (0, ma.c)()), []), j = (0, o.useMemo)((() => {
+          } = (0, A.useRockstarUserState)(), k = (0, $.useLocale)(), _ = (0, $.toScLocaleString)(k), [b, v] = (0, r.useState)(""), h = (0, l.useLocation)(), x = `${a.login}?returnUrl=${b}&lang=${_}`, y = `${a.signup}&returnUrl=${b}&lang=${_}`, N = (0, r.useMemo)((() => (0, ma.c)()), []), j = (0, r.useMemo)((() => {
             const e = ((e, a, t, s, n) => [{
               text: e.formatMessage(gt.sc_link_sign_in),
               href: a,
@@ -4136,7 +4143,7 @@ _global.SENTRY_RELEASE = {
               dataTestId: "signUpLink"
             }, Et(e, 0, n)])(n, x, y, 0, window?.OneTrust);
             return e
-          }), [n, x, y, N]), [S, w] = (0, o.useState)(0), C = (0, o.createRef)(), I = () => {
+          }), [n, x, y, N]), [S, w] = (0, r.useState)(0), C = (0, r.createRef)(), I = () => {
             if (C.current) {
               const {
                 current: e
@@ -4147,12 +4154,12 @@ _global.SENTRY_RELEASE = {
               } else w(a)
             }
           };
-          return (0, o.useEffect)((() => {
+          return (0, r.useEffect)((() => {
             const e = encodeURIComponent(`${document.location.pathname}${document.location.search}`);
             v(e)
-          }), [h]), (0, o.useEffect)((() => {
+          }), [h]), (0, r.useEffect)((() => {
             p(!1)
-          }), []), (0, o.useEffect)((() => {
+          }), []), (0, r.useEffect)((() => {
             I(), Tt()((() => {
               setTimeout(I, 0)
             }), 300)
@@ -4166,9 +4173,9 @@ _global.SENTRY_RELEASE = {
                 style: {
                   "--scNavWrap-max-height": `${f+S}px`
                 },
-                children: j.map((e => (0, o.createElement)(Pt, {
+                children: j.map((e => (0, r.createElement)(zt, {
                   ...e,
-                  activeSubNavId: i,
+                  activeSubNavId: o,
                   setActiveSubNavId: m,
                   setSubNavExtraHeight: g,
                   key: e.text
@@ -4183,14 +4190,14 @@ _global.SENTRY_RELEASE = {
                 theme: "sc-menu",
                 languageSelectorOpened: c,
                 setLanguageSelectorOpened: e => {
-                  m(-1), r(e)
+                  m(-1), i(e)
                 },
                 defaultMessage: "Select a Language"
               })
             })]
           })
         },
-        Vt = e => {
+        $t = e => {
           let {
             characterData: a,
             setMobileCardWidth: s,
@@ -4198,31 +4205,31 @@ _global.SENTRY_RELEASE = {
           } = e;
           const c = (0, da.useIntl)(),
             {
-              currentCharId: r,
-              setCurrentCharId: i
+              currentCharId: i,
+              setCurrentCharId: o
             } = (0, A.useRockstarUserState)(),
             {
               track: l
             } = (0, A.useGtmTrack)(),
-            m = (0, o.createRef)(),
+            m = (0, r.createRef)(),
             {
               platform: f,
               platformUsername: g,
               mugshotUrl: p,
               stats: u
             } = a,
-            [k, _] = (0, o.useState)(p),
-            [b] = (0, o.useState)(a.index),
+            [k, _] = (0, r.useState)(p),
+            [b] = (0, r.useState)(a.index),
             v = mt(f, "large"),
-            h = r === a.index;
-          return (0, o.useEffect)((() => {
+            h = i === a.index;
+          return (0, r.useEffect)((() => {
             m.current && s && s(m?.current?.offsetWidth)
           }), [m]), (0, d.jsxs)("button", {
             className: "rockstargames-componentsf899d1127ad0b649f2a2efbd2cd3f8d9",
             type: "button",
             "aria-hidden": h,
             onClick: e => {
-              e.stopPropagation(), i(b);
+              e.stopPropagation(), o(b);
               let a = "";
               "pc" === f ? a = "PC" : "ps4" === f ? a = "PS4" : "ps5" === f ? a = "PS5" : "xboxone" === f ? a = "Xbox One" : "xboxsx" === f && (a = "Xbox Series X|S"), l({
                 event: "character_selector_select",
@@ -4272,12 +4279,9 @@ _global.SENTRY_RELEASE = {
             })]
           })
         },
-        $t = {
+        At = {
           pillBtn: "rockstargames-componentsf4f3b381f39d0b6ec48e8ef4d546df05",
           selected: "rockstargames-componentscfa2d5d46d4124e62e74921d8f4cc36a",
-          scNavWrapper: "rockstargames-componentsaf262ebafdc1004a43914761582263df",
-          rpLevel: "rockstargames-componentscac9b36dc6439774d0e2b4636c7cccd6",
-          rpIcon: "rockstargames-componentsf50ca3080a7462e6ff6a0566732d44ba",
           scProfileDetails: "rockstargames-componentsd9b660c0c3b1b3c031bb956c1c93f682",
           scAvatar: "rockstargames-componentsf170e6a7c0d839bca006a35cf4b3a464",
           scAvatarPlatform: "rockstargames-componentsf221f9759e65c6eecac934e98af2840a",
@@ -4295,7 +4299,7 @@ _global.SENTRY_RELEASE = {
           scCash: "rockstargames-componentsc4268a4bbb546c897303f2132a0896d1",
           scBank: "rockstargames-componentsd22a4dca793190405699fa404e327afe"
         },
-        At = e => {
+        Dt = e => {
           let {
             character: a,
             platformTag: s
@@ -4304,40 +4308,40 @@ _global.SENTRY_RELEASE = {
             data: n
           } = (0, A.useRockstarUser)(), {
             track: c
-          } = (0, A.useGtmTrack)(), r = (0, da.useIntl)(), [i, l] = (0, o.useState)([]), [m, f] = (0, o.useState)(null), [g, p] = (0, o.useState)(null), [u, k] = (0, o.useState)(!1), [_, b] = (0, o.useState)(-1), [v, h] = (0, o.useState)([]), [x, y] = (0, o.useState)(0), N = t(6829), [j, S] = (0, o.useState)("0"), [w, C] = (0, o.useState)("0"), I = e => parseInt(e, 10).toLocaleString("en-US", {
+          } = (0, A.useGtmTrack)(), i = (0, da.useIntl)(), [o, l] = (0, r.useState)([]), [m, f] = (0, r.useState)(null), [g, p] = (0, r.useState)(null), [u, k] = (0, r.useState)(!1), [_, b] = (0, r.useState)(-1), [v, h] = (0, r.useState)([]), [x, y] = (0, r.useState)(0), N = t(6829), [j, S] = (0, r.useState)("0"), [w, C] = (0, r.useState)("0"), I = e => parseInt(e, 10).toLocaleString("en-US", {
             minimumFractionDigits: 0
           }), T = () => {
             L((0, d.jsx)("img", {
               src: N,
-              alt: r.formatMessage(gt.profile_selector_mugshot, {
+              alt: i.formatMessage(gt.profile_selector_mugshot, {
                 userName: n.nickname
               })
             }))
-          }, [M, L] = (0, o.useState)((0, d.jsx)("img", {
-            className: $t.scAvatarImg,
+          }, [M, L] = (0, r.useState)((0, d.jsx)("img", {
+            className: At.scAvatarImg,
             src: a.mugshotUrl,
-            alt: r.formatMessage(gt.profile_selector_mugshot, {
+            alt: i.formatMessage(gt.profile_selector_mugshot, {
               userName: n.nickname
             }),
             onError: T
           }));
-          (0, o.useEffect)((() => {
+          (0, r.useEffect)((() => {
             l(n.crews ?? [])
-          }), [n]), (0, o.useEffect)((() => {
+          }), [n]), (0, r.useEffect)((() => {
             L((0, d.jsx)("img", {
               src: a.mugshotUrl,
               alt: n.nickname,
               onError: T
             })), S(I(a.stats.overview.bank.value)), C(I(a.stats.overview.cash.value)), y(a.stats.overview.rank.value)
-          }), [a, n]), (0, o.useEffect)((() => {
-            i && i.forEach((e => {
+          }), [a, n]), (0, r.useEffect)((() => {
+            o && o.forEach((e => {
               !0 === e.isPrimary && (f(e.crewTag), p(e.crewColour), b(e.rankOrder), k(!1), !0 === Object.prototype.hasOwnProperty.call(e, "crewType") && "rockstar" === e.crewType && k(!0))
             }))
-          }), [i]), (0, o.useEffect)((() => {
+          }), [o]), (0, r.useEffect)((() => {
             const e = [];
             if (!u && _ > -1)
               for (let a = 5; a > _; a -= 1) e.push((0, d.jsx)("div", {
-                className: $t.scCrewRankBarItem,
+                className: At.scCrewRankBarItem,
                 style: {
                   backgroundColor: null !== g ? g : ""
                 }
@@ -4354,15 +4358,15 @@ _global.SENTRY_RELEASE = {
             })
           };
           return (0, d.jsxs)("div", {
-            className: $t.scProfileDetails,
+            className: At.scProfileDetails,
             onClick: E,
             onKeyUp: E,
             role: "button",
             tabIndex: -1,
             children: [(0, d.jsxs)("div", {
-              className: $t.scAvatar,
+              className: At.scAvatar,
               children: [M, (0, d.jsx)("div", {
-                className: $t.scAvatarPlatform,
+                className: At.scAvatarPlatform,
                 "data-platform": a.platform,
                 children: (0, d.jsx)("img", {
                   src: s.src,
@@ -4370,41 +4374,41 @@ _global.SENTRY_RELEASE = {
                 })
               })]
             }), (0, d.jsxs)("div", {
-              className: $t.scProfileStats,
+              className: At.scProfileStats,
               children: [(0, d.jsx)("div", {
-                className: $t.scNames,
+                className: At.scNames,
                 children: (0, d.jsxs)("div", {
-                  className: $t.scTagsNames,
+                  className: At.scTagsNames,
                   children: [(0, d.jsx)("span", {
-                    className: $t.scUserName,
+                    className: At.scUserName,
                     children: a.platformUsername
                   }), m && (0, d.jsxs)("span", {
-                    className: $t.scCrewName,
+                    className: At.scCrewName,
                     "data-arrow-tag": u,
                     children: [m, !u && (0, d.jsx)("div", {
-                      className: $t.scCrewRankBar,
+                      className: At.scCrewRankBar,
                       children: v
                     })]
                   })]
                 })
               }), (0, d.jsxs)("div", {
-                className: $t.scProgress,
+                className: At.scProgress,
                 children: [(0, d.jsxs)("div", {
-                  className: $t.scRpLevel,
+                  className: At.scRpLevel,
                   children: [(0, d.jsx)("img", {
-                    className: $t.scRpIcon,
+                    className: At.scRpIcon,
                     src: ft(x),
-                    alt: r.formatMessage(gt.profile_selector_rp_icon)
+                    alt: i.formatMessage(gt.profile_selector_rp_icon)
                   }), (0, d.jsx)("span", {
                     children: a.stats.overview.rank.value
                   })]
                 }), (0, d.jsxs)("div", {
-                  className: $t.scMoney,
+                  className: At.scMoney,
                   children: [(0, d.jsxs)("span", {
-                    className: $t.scCash,
+                    className: At.scCash,
                     children: ["$", w]
                   }), (0, d.jsxs)("span", {
-                    className: $t.scBank,
+                    className: At.scBank,
                     children: ["$", j]
                   })]
                 })]
@@ -4412,47 +4416,47 @@ _global.SENTRY_RELEASE = {
             })]
           })
         },
-        Dt = (e, a) => {
-          const [t, s] = (0, o.useState)(0);
-          return (0, o.useEffect)((() => {
+        Ft = (e, a) => {
+          const [t, s] = (0, r.useState)(0);
+          return (0, r.useEffect)((() => {
             if (e.current) {
               const {
                 current: t
               } = e, n = t.getBoundingClientRect(), {
                 width: c
               } = n;
-              let r = c;
+              let i = c;
               if (!0 === a) {
                 const e = window.getComputedStyle(t);
-                r += parseInt(e.marginLeft, 10) + parseInt(e.marginRight, 10)
+                i += parseInt(e.marginLeft, 10) + parseInt(e.marginRight, 10)
               }
-              s(r)
+              s(i)
             }
           }), [e]), t
         },
-        Ft = e => {
+        Ot = e => {
           let {
             dragThreshold: a = 80,
             interactionDelay: t = 1e3,
             mobileGutterWidth: s = 17,
             slideChangeCallback: n = null,
             slideClickCallback: c = null,
-            children: r = [],
-            disablePager: i = !1,
+            children: i = [],
+            disablePager: o = !1,
             disableSwiper: l = !1
           } = e;
-          const m = (0, o.createRef)(),
-            f = Dt(m, !1),
-            [g, p] = (0, o.useState)(!1),
-            [u, k] = (0, o.useState)(0),
-            [_, b] = (0, o.useState)(0),
-            [v, h] = (0, o.useState)([s]),
-            [x, y] = (0, o.useState)(v[0]),
-            [N, j] = (0, o.useState)(252),
-            [S, w] = (0, o.useState)(0),
-            [C, I] = (0, o.useState)([]),
-            [T, M] = (0, o.useState)([]),
-            [L, E] = (0, o.useState)(!1),
+          const m = (0, r.createRef)(),
+            f = Ft(m, !1),
+            [g, p] = (0, r.useState)(!1),
+            [u, k] = (0, r.useState)(0),
+            [_, b] = (0, r.useState)(0),
+            [v, h] = (0, r.useState)([s]),
+            [x, y] = (0, r.useState)(v[0]),
+            [N, j] = (0, r.useState)(252),
+            [S, w] = (0, r.useState)(0),
+            [C, I] = (0, r.useState)([]),
+            [T, M] = (0, r.useState)([]),
+            [L, E] = (0, r.useState)(!1),
             B = e => {
               if (!0 === g || !0 === l) return;
               const a = void 0 !== e.changedTouches ? e.touches[0].screenX : e.screenX;
@@ -4478,30 +4482,30 @@ _global.SENTRY_RELEASE = {
             z = () => {
               !0 !== g && !0 !== l && (p(!0), !0 !== g && (y(v[u]), b(0)))
             };
-          return (0, o.useEffect)((() => {
+          return (0, r.useEffect)((() => {
             const e = [];
-            r.forEach((() => {
-              e.push((0, o.createRef)())
+            i.forEach((() => {
+              e.push((0, r.createRef)())
             })), I(e)
-          }), [r]), (0, o.useEffect)((() => {
+          }), [i]), (0, r.useEffect)((() => {
             if (C.length < 1) return;
             j(C[0]?.current?.clientWidth || 0);
             const e = C[0]?.current.firstChild,
               a = Number(window.getComputedStyle(e).marginRight.replace("px", "")),
               t = Number(window.getComputedStyle(e).marginLeft.replace("px", ""));
             w(t + a)
-          }), [C]), (0, o.useEffect)((() => {
+          }), [C]), (0, r.useEffect)((() => {
             !1 !== g && setTimeout((() => {
               p(!1)
             }), t)
-          }), [g, t]), (0, o.useEffect)((() => {
-            h(r.map(((e, a) => (e => {
+          }), [g, t]), (0, r.useEffect)((() => {
+            h(i.map(((e, a) => (e => {
               let a = 0;
-              const t = r.length;
+              const t = i.length;
               return 1 === t ? .5 * f - .5 * N - 2 * s + S : (0 === e && (a = s - e * N), e === t - 1 && t > 1 && (a = t * N * -1 + (f - (s - S))), e > 0 && e < t - 1 && (a = e * N * -1 + (.5 * f - .5 * N + .5 * S)), a)
-            })(a)))), 1 === r.length ? E(!0) : E(!1)
-          }), [m.current, r, f]), (0, o.useEffect)((() => {
-            const e = (a = u, r.map(((e, t) => {
+            })(a)))), 1 === i.length ? E(!0) : E(!1)
+          }), [m.current, i, f]), (0, r.useEffect)((() => {
+            const e = (a = u, i.map(((e, t) => {
               const s = {
                 active: !1
               };
@@ -4509,9 +4513,9 @@ _global.SENTRY_RELEASE = {
             })));
             var a;
             M(e)
-          }), [r, u]), (0, o.useEffect)((() => {
-            !0 !== i && !0 !== l || y(v[0])
-          }), [l, i, v]), (0, d.jsxs)(d.Fragment, {
+          }), [i, u]), (0, r.useEffect)((() => {
+            !0 !== o && !0 !== l || y(v[0])
+          }), [l, o, v]), (0, d.jsxs)(d.Fragment, {
             children: [(0, d.jsx)("div", {
               className: "rockstargames-componentse17c8db80d7db403a300cbaa9c9ea87a",
               ref: m,
@@ -4534,13 +4538,13 @@ _global.SENTRY_RELEASE = {
                 style: {
                   transform: L ? null : `translateX(${x}px)`
                 },
-                children: r.map(((e, a) => (0, d.jsx)("div", {
+                children: i.map(((e, a) => (0, d.jsx)("div", {
                   className: "rockstargames-componentsd34474f7c86ffd91070243d726a8f136",
                   ref: C[a],
                   children: e
                 }, `csItem-${e?.props?.characterData?.mugshotUrl}`)))
               })
-            }), T.length > 1 && !1 === i && (0, d.jsx)("div", {
+            }), T.length > 1 && !1 === o && (0, d.jsx)("div", {
               className: "rockstargames-componentsdd5ee726efc577b883d7c4926d0ecab8",
               children: T.map((e => (0, d.jsx)("div", {
                 className: "rockstargames-componentsf2481ad40d1468212637d32271adef69",
@@ -4549,12 +4553,9 @@ _global.SENTRY_RELEASE = {
             })]
           })
         },
-        Ot = {
+        Rt = {
           pillBtn: "rockstargames-componentsc2232c50132404e0fd5107a423013072",
           selected: "rockstargames-componentsa7a1d25742ecfd267527d0b0573469b2",
-          scNavWrapper: "rockstargames-componentsaf9c52948704e51243d7b17a17a7333c",
-          rpLevel: "rockstargames-componentse320f697e7c0f1e6f8991fa062ae827e",
-          rpIcon: "rockstargames-componentsf0939eac9ccb111179fe17058e787437",
           scProfile: "rockstargames-componentsfac3996df4764256449725b7c80f2aad",
           scCharacterSelector: "rockstargames-componentsaeeea9a01d7a1125972dcfe910b1552c",
           scCharacterSelectBtn: "rockstargames-componentsf8503f1ef140958443a62d299932a728",
@@ -4565,15 +4566,15 @@ _global.SENTRY_RELEASE = {
           scNavHeader: "rockstargames-componentsb638e33516a1827be2d1e2799ebf9085",
           scNavWrap: "rockstargames-componentsc8077a99219d111ec5f8ed60ee0cce04"
         },
-        Rt = (0, $.withTranslations)((e => {
+        Ut = (0, $.withTranslations)((e => {
           let {
             sc: a,
             charListHidden: t,
             hideCharacterList: s,
             refCharacterListDesktop: n,
             menuPadding: c,
-            longCharList: r,
-            setLongCharList: i,
+            longCharList: i,
+            setLongCharList: o,
             isMobileMode: m,
             setIsMobileMode: f
           } = e;
@@ -4589,7 +4590,7 @@ _global.SENTRY_RELEASE = {
             setSubNavExtraHeight: y,
             scNavOpened: N,
             setScNavOpened: j
-          } = Ct(), [S, w] = (0, o.useState)(""), C = (0, l.useLocation)(), {
+          } = Ct(), [S, w] = (0, r.useState)(""), C = (0, l.useLocation)(), {
             lsSettings: I
           } = (0, $.useRockstarWebLSSettings)(), {
             track: T
@@ -4605,152 +4606,150 @@ _global.SENTRY_RELEASE = {
             setHasNotifications: F,
             setSelectedCharacterTuple: O,
             setUserData: R
-          } = (0, A.useRockstarUserState)(), [U, G] = (0, o.useState)(null), [H, W] = (0, o.useState)(null), [q, X] = (0, o.useState)(!1), [K, Y] = (0, o.useState)(!1), [Q, Z] = (0, o.useState)(0), J = (0, o.createRef)(), ee = Dt(J, !1), ae = (0, o.createRef)(), [te, se] = (0, o.useState)(0), [ne, ce] = (0, o.useState)([]), [re, ie] = (0, o.useState)(244), oe = (0, o.useMemo)((() => (0, ma.c)()), []), le = (0, o.useMemo)((() => {
-            const e = ((e, a, t, s, n, c, r) => [{
-              text: e.formatMessage(gt.sc_link_activity_feed),
+          } = (0, A.useRockstarUserState)(), [U, G] = (0, r.useState)(null), [H, W] = (0, r.useState)(null), [q, X] = (0, r.useState)(!1), [K, Y] = (0, r.useState)(!1), [Q, Z] = (0, r.useState)(0), J = (0, r.createRef)(), ee = Ft(J, !1), ae = (0, r.createRef)(), [te, se] = (0, r.useState)(0), [ne, ce] = (0, r.useState)([]), [ie, oe] = (0, r.useState)(244), re = (0, r.useMemo)((() => (0, ma.c)()), []), le = (0, r.useMemo)((() => ((e, a, t, s, n, c, i) => [{
+            text: e.formatMessage(gt.sc_link_activity_feed),
+            location: {
+              domain: ma.U.socialClub,
+              path: "/"
+            },
+            target: "_self",
+            ga: {
+              ...Lt,
+              text: gt.sc_link_activity_feed.defaultMessage
+            },
+            dataTestId: "activityFeedLink"
+          }, {
+            text: e.formatMessage(gt.sc_link_account),
+            target: "_self",
+            dataTestId: "accountButton",
+            children: [{
+              text: e.formatMessage(gt.sc_link_view_my_profile),
+              href: t.profile_link,
+              target: "_self",
+              ga: {
+                ...Lt,
+                text: gt.sc_link_view_my_profile.defaultMessage
+              },
+              dataTestId: "viewMyProfileLink"
+            }, {
+              text: e.formatMessage(gt.sc_link_messages),
               location: {
                 domain: ma.U.socialClub,
-                path: "/"
+                path: "/message"
               },
               target: "_self",
               ga: {
                 ...Lt,
-                text: gt.sc_link_activity_feed.defaultMessage
+                text: gt.sc_link_messages.defaultMessage
               },
-              dataTestId: "activityFeedLink"
+              dataTestId: "messagesLink"
             }, {
-              text: e.formatMessage(gt.sc_link_account),
+              text: e.formatMessage(gt.sc_link_game_activation),
+              location: {
+                domain: ma.U.socialClub,
+                path: "/activate"
+              },
               target: "_self",
-              dataTestId: "accountButton",
-              children: [{
-                text: e.formatMessage(gt.sc_link_view_my_profile),
-                href: t.profile_link,
-                target: "_self",
-                ga: {
-                  ...Lt,
-                  text: gt.sc_link_view_my_profile.defaultMessage
-                },
-                dataTestId: "viewMyProfileLink"
-              }, {
-                text: e.formatMessage(gt.sc_link_messages),
-                location: {
-                  domain: ma.U.socialClub,
-                  path: "/message"
-                },
-                target: "_self",
-                ga: {
-                  ...Lt,
-                  text: gt.sc_link_messages.defaultMessage
-                },
-                dataTestId: "messagesLink"
-              }, {
-                text: e.formatMessage(gt.sc_link_game_activation),
-                location: {
-                  domain: ma.U.socialClub,
-                  path: "/activate"
-                },
-                target: "_self",
-                ga: {
-                  ...Lt,
-                  text: gt.sc_link_game_activation.defaultMessage
-                },
-                dataTestId: "gameActivationLink"
-              }]
-            }, {
-              text: e.formatMessage(gt.sc_link_notifications),
+              ga: {
+                ...Lt,
+                text: gt.sc_link_game_activation.defaultMessage
+              },
+              dataTestId: "gameActivationLink"
+            }]
+          }, {
+            text: e.formatMessage(gt.sc_link_notifications),
+            location: {
+              domain: ma.U.socialClub,
+              path: "/notifications"
+            },
+            target: "_self",
+            hasNotifications: s,
+            ga: {
+              ...Lt,
+              text: gt.sc_link_notifications.defaultMessage,
               location: {
                 domain: ma.U.socialClub,
                 path: "/notifications"
-              },
-              target: "_self",
-              hasNotifications: s,
-              ga: {
-                ...Lt,
-                text: gt.sc_link_notifications.defaultMessage,
-                location: {
-                  domain: ma.U.socialClub,
-                  path: "/notifications"
-                }
-              },
-              dataTestId: "notificationsLink"
-            }, {
-              text: e.formatMessage(gt.sc_link_crews),
+              }
+            },
+            dataTestId: "notificationsLink"
+          }, {
+            text: e.formatMessage(gt.sc_link_crews),
+            location: {
+              domain: ma.U.socialClub,
+              path: "/crews"
+            },
+            target: "_self",
+            ga: {
+              ...Lt,
+              text: gt.sc_link_crews.defaultMessage
+            },
+            dataTestId: "crewsLink"
+          }, {
+            text: e.formatMessage(gt.sc_link_friends),
+            target: "_self",
+            dataTestId: "friendsButton",
+            children: [{
+              text: e.formatMessage(gt.sc_link_my_friends),
               location: {
                 domain: ma.U.socialClub,
-                path: "/crews"
+                path: `/member/${t.nickname}/friends`
               },
               target: "_self",
               ga: {
                 ...Lt,
-                text: gt.sc_link_crews.defaultMessage
+                text: gt.sc_link_my_friends.defaultMessage
               },
-              dataTestId: "crewsLink"
+              dataTestId: "myFriendsLink"
             }, {
-              text: e.formatMessage(gt.sc_link_friends),
-              target: "_self",
-              dataTestId: "friendsButton",
-              children: [{
-                text: e.formatMessage(gt.sc_link_my_friends),
-                location: {
-                  domain: ma.U.socialClub,
-                  path: `/member/${t.nickname}/friends`
-                },
-                target: "_self",
-                ga: {
-                  ...Lt,
-                  text: gt.sc_link_my_friends.defaultMessage
-                },
-                dataTestId: "myFriendsLink"
-              }, {
-                text: e.formatMessage(gt.sc_link_import_friends),
-                location: {
-                  domain: ma.U.socialClub,
-                  path: "/friends/import"
-                },
-                target: "_self",
-                ga: {
-                  ...Lt,
-                  text: gt.sc_link_import_friends.defaultMessage
-                },
-                dataTestId: "importFriendsLink"
-              }, {
-                text: e.formatMessage(gt.sc_link_find_friends),
-                location: {
-                  domain: ma.U.socialClub,
-                  path: "/members"
-                },
-                target: "_self",
-                ga: {
-                  ...Lt,
-                  text: gt.sc_link_import_friends.defaultMessage
-                },
-                dataTestId: "findFriendsLink"
-              }]
-            }, {
-              text: e.formatMessage(gt.sc_link_settings),
+              text: e.formatMessage(gt.sc_link_import_friends),
               location: {
                 domain: ma.U.socialClub,
-                path: "/settings"
+                path: "/friends/import"
               },
               target: "_self",
               ga: {
                 ...Lt,
-                text: gt.sc_link_settings.defaultMessage
+                text: gt.sc_link_import_friends.defaultMessage
               },
-              dataTestId: "settingsLink"
-            }, Et(e, 0, c), {
-              text: e.formatMessage(gt.sc_link_log_out),
-              href: `${a.logout}?returnUrl=${n}`,
+              dataTestId: "importFriendsLink"
+            }, {
+              text: e.formatMessage(gt.sc_link_find_friends),
+              location: {
+                domain: ma.U.socialClub,
+                path: "/members"
+              },
               target: "_self",
               ga: {
                 ...Lt,
-                text: gt.sc_link_log_out.defaultMessage
+                text: gt.sc_link_import_friends.defaultMessage
               },
-              dataTestId: "logoutButton"
-            }])(k, a, L, z, S, oe, window);
-            return e
-          }), [k, a, L, z, S, oe]), de = () => {
-            Y(c + re * Q < ee)
+              dataTestId: "findFriendsLink"
+            }]
+          }, {
+            text: e.formatMessage(gt.sc_link_settings),
+            location: {
+              domain: ma.U.socialClub,
+              path: "/settings"
+            },
+            target: "_self",
+            ga: {
+              ...Lt,
+              text: gt.sc_link_settings.defaultMessage
+            },
+            dataTestId: "settingsLink"
+          }, Et(e, 0, c), {
+            text: e.formatMessage(gt.sc_link_log_out),
+            href: `${a.logout}?returnUrl=${n}`,
+            target: "_self",
+            reloadDocument: !0,
+            ga: {
+              ...Lt,
+              text: gt.sc_link_log_out.defaultMessage
+            },
+            dataTestId: "logoutButton"
+          }])(k, a, L, z, S, re, window)), [k, a, L, z, S, re]), de = () => {
+            Y(c + ie * Q < ee)
           }, me = () => {
             if (ae.current) {
               const {
@@ -4762,20 +4761,20 @@ _global.SENTRY_RELEASE = {
               } else se(a)
             }
           };
-          return (0, o.useEffect)((() => {
+          return (0, r.useEffect)((() => {
             let e = encodeURIComponent(`${document.location.pathname}${document.location.search}`);
-            oe.currentSite?.site === ma.U.socialClub && (e = encodeURIComponent("/")), w(e)
-          }), [C]), (0, o.useEffect)((() => {
+            re.currentSite?.site === ma.U.socialClub && (e = encodeURIComponent("/")), w(e)
+          }), [C]), (0, r.useEffect)((() => {
             ce(L.characters[B] ?? [])
-          }), [L, B]), (0, o.useEffect)((() => {
+          }), [L, B]), (0, r.useEffect)((() => {
             L && R(L)
-          }), [L]), (0, o.useEffect)((() => {
+          }), [L]), (0, r.useEffect)((() => {
             const e = L?.characters.gtao;
             if (null !== E && !e.length) return void O(!1);
             if (null == P || !e.length) return;
             const a = e?.[P] ?? e?.[0] ?? null;
             O(!!a?.platform && [a.platform, a.characterSlot])
-          }), [P, L, E]), (0, o.useEffect)((() => {
+          }), [P, L, E]), (0, r.useEffect)((() => {
             (async () => {
               if (!L?.id) return;
               const e = await (0, $.coreScApiFetch)("friends/getInvites", {
@@ -4792,39 +4791,39 @@ _global.SENTRY_RELEASE = {
                 F(t > 0 || a.total > 0)
               }
             })()
-          }), [L]), (0, o.useEffect)((() => {
+          }), [L]), (0, r.useEffect)((() => {
             de()
-          }), [re]), (0, o.useEffect)((() => {
+          }), [ie]), (0, r.useEffect)((() => {
             s(!0), f(g < 768), f(g < 768 || u < 649)
-          }), [g, u]), (0, o.useEffect)((() => {
+          }), [g, u]), (0, r.useEffect)((() => {
             let e = ne.length - 1;
             e < 0 && (e = 0), Z(e);
             const a = ne.length > 0 ? ne[P] ?? ne[0] : null;
             if (!a) return;
             const t = null !== a ? mt(a.platform, "large") : null;
-            W(t), G(a), ne.length > 1 ? X(!0) : X(!1), i(ne.length - 1 > 3)
-          }), [P, ne]), (0, o.useEffect)((() => {
+            W(t), G(a), ne.length > 1 ? X(!0) : X(!1), o(ne.length - 1 > 3)
+          }), [P, ne]), (0, r.useEffect)((() => {
             de()
-          }), [Q, m, g, ne]), (0, o.useEffect)((() => {
+          }), [Q, m, g, ne]), (0, r.useEffect)((() => {
             me(), Tt()((() => {
               setTimeout(me, 0)
             }), 300)
-          }), [g, u]), (0, o.useEffect)((() => {
+          }), [g, u]), (0, r.useEffect)((() => {
             const e = I?.currentCharId ?? 0;
             e !== P && D(Math.max(0, Math.min(e, ne.length - 1)))
           }), [ne, I]), (0, d.jsxs)(d.Fragment, {
             children: [null !== U && "gtao" === B && (0, d.jsxs)("div", {
-              className: Ot.scProfile,
+              className: Rt.scProfile,
               tabIndex: -1,
               "aria-label": k.formatMessage(gt.profile_selector_profile_card),
-              children: [(0, d.jsx)(At, {
-                s: Ot,
+              children: [(0, d.jsx)(Dt, {
+                s: Rt,
                 character: U,
                 platformTag: H
               }), !0 === q && (0, d.jsxs)("div", {
-                className: Ot.scCharacterSelector,
+                className: Rt.scCharacterSelector,
                 children: [(0, d.jsx)("button", {
-                  className: Ot.scCharacterSelectBtn,
+                  className: Rt.scCharacterSelectBtn,
                   type: "button",
                   onClick: e => {
                     e.stopPropagation();
@@ -4842,22 +4841,22 @@ _global.SENTRY_RELEASE = {
                     })
                   })
                 }), !1 === m && (0, d.jsx)("div", {
-                  className: Ot.scCharacterList,
-                  "data-long-list": r,
+                  className: Rt.scCharacterList,
+                  "data-long-list": i,
                   "aria-hidden": t,
                   ref: n,
-                  children: ne.map((e => (0, d.jsx)(Vt, {
+                  children: ne.map((e => (0, d.jsx)($t, {
                     tabIndex: t ? -1 : 0,
                     characterData: e,
-                    setMobileCardWidth: ie
+                    setMobileCardWidth: oe
                   }, e.mugshotUrl)))
                 }), !0 === m && (0, d.jsx)("div", {
-                  className: Ot.scCharacterList,
+                  className: Rt.scCharacterList,
                   "data-single-item": 2 === ne.length,
                   "data-swiper-disabled": K,
                   "aria-hidden": t,
                   ref: J,
-                  children: (0, d.jsx)(Ft, {
+                  children: (0, d.jsx)(Ot, {
                     interactionDelay: 350,
                     mobileGutterWidth: 17,
                     dragThreshold: 40,
@@ -4871,9 +4870,9 @@ _global.SENTRY_RELEASE = {
                     },
                     disablePager: K,
                     disableSwiper: K,
-                    children: ne.filter(((e, a) => a !== P)).map((e => (0, o.createElement)(Vt, {
+                    children: ne.filter(((e, a) => a !== P)).map((e => (0, r.createElement)($t, {
                       characterData: e,
-                      setMobileCardWidth: ie,
+                      setMobileCardWidth: oe,
                       key: e.mugshotUrl,
                       tabIndex: t ? -1 : 0
                     })))
@@ -4881,10 +4880,10 @@ _global.SENTRY_RELEASE = {
                 })]
               })]
             }), (0, d.jsxs)("nav", {
-              className: Ot.scNav,
+              className: Rt.scNav,
               "aria-hidden": !V,
               children: [(0, d.jsx)("button", {
-                className: Ot.scNavHeader,
+                className: Rt.scNavHeader,
                 type: "button",
                 "data-opened": N,
                 "data-nav-opened": V,
@@ -4897,14 +4896,14 @@ _global.SENTRY_RELEASE = {
                   children: L.nickname
                 })
               }), (0, d.jsx)("div", {
-                className: Ot.scNavWrap,
+                className: Rt.scNavWrap,
                 "data-opened": N,
                 "data-logged-in": "true",
                 ref: ae,
                 style: {
                   "--scNavWrap-max-height": `${te+x}px`
                 },
-                children: le.map(((e, a) => (0, o.createElement)(Pt, {
+                children: le.map(((e, a) => (0, r.createElement)(zt, {
                   ...e,
                   id: a,
                   activeSubNavId: v,
@@ -4914,7 +4913,7 @@ _global.SENTRY_RELEASE = {
                 })))
               })]
             }), (0, d.jsx)("div", {
-              className: Ot.scLanguageSelector,
+              className: Rt.scLanguageSelector,
               style: {
                 visibility: V ? null : "hidden"
               },
@@ -4926,10 +4925,7 @@ _global.SENTRY_RELEASE = {
             })]
           })
         })),
-        Ut = {
-          scNavWrapper: "rockstargames-componentsf50589e434dcf91d986095476585174d",
-          rpLevel: "rockstargames-componentsd03ba94fe41731bbf26784a880074abe",
-          rpIcon: "rockstargames-componentsbf52f317332c1b1a21106ebf9b9a1b4d",
+        Gt = {
           scMenu: "rockstargames-componentsc34c7305b9f2989cf93b80ac3aafbc3e",
           pillBtn: "rockstargames-componentse7f130c3045467b94e9ebd673e278be8",
           selected: "rockstargames-componentsa3b848b41da0c4d7ede094309ec02867",
@@ -4938,18 +4934,18 @@ _global.SENTRY_RELEASE = {
           dragHandleBtn: "rockstargames-componentse406513904d41e71c3d428c652ccceb6",
           scOverlay: "rockstargames-componentsf9d5a3200b2148ecf28831933abe10a0"
         },
-        Gt = (0, da.withIntl)((() => {
+        Ht = (0, da.withIntl)((() => {
           const {
             windowHeight: e
           } = (0, $.useWindowResize)(), a = (0, da.useIntl)(), {
             languageSelectorOpened: s,
             setLanguageSelectorOpened: n,
             setActiveSubNavId: c,
-            scNavOpened: r,
-            setScNavOpened: i,
+            scNavOpened: i,
+            setScNavOpened: o,
             charListHidden: l,
             setCharListHidden: m
-          } = Ct(), [f, g] = (0, o.useState)(!1), {
+          } = Ct(), [f, g] = (0, r.useState)(!1), {
             setBodyIsScrollable: u
           } = (0, $.useBodyScrollable)(), {
             navHidden: k = !1
@@ -4962,13 +4958,13 @@ _global.SENTRY_RELEASE = {
             userData: x
           } = (0, A.useRockstarUserState)(), {
             track: y
-          } = (0, A.useGtmTrack)(), [N, j] = (0, o.useState)(!1), S = (0, p.useReactiveVar)(A.scConfig), w = (0, o.useRef)(), [C, I] = (0, o.useState)(0), T = (0, o.createRef)(), [M, L] = (0, o.useState)(!1), [E, B] = (0, o.useState)(0), [P, z] = (0, o.useState)(!1), {
+          } = (0, A.useGtmTrack)(), [N, j] = (0, r.useState)(!1), S = (0, p.useReactiveVar)(A.scConfig), w = (0, r.useRef)(), [C, I] = (0, r.useState)(0), T = (0, r.createRef)(), [M, L] = (0, r.useState)(!1), [E, B] = (0, r.useState)(0), [P, z] = (0, r.useState)(!1), {
             mutateLSSettings: V,
             lsSettings: D
-          } = (0, $.useRockstarWebLSSettings)(), F = (0, o.useCallback)((e => {
+          } = (0, $.useRockstarWebLSSettings)(), F = (0, r.useCallback)((e => {
             m(e), w.current && !0 === e && (w.current.scrollTop = 0)
           }), [w]);
-          return (0, o.useEffect)((() => {
+          return (0, r.useEffect)((() => {
             null !== b && D.currentCharId !== b && V({
               key: "currentCharId",
               value: b
@@ -4978,9 +4974,9 @@ _global.SENTRY_RELEASE = {
             }) : _ && x && y({
               event: "account_synced"
             })
-          }), [b, _]), (0, o.useEffect)((() => {
+          }), [b, _]), (0, r.useEffect)((() => {
             w.current && (!1 === l && !1 === N && (w.current.style.height = `${w.current.scrollHeight}px`), !0 === l && (w.current.style.height = null))
-          }), [l, w, N]), (0, o.useEffect)((() => {
+          }), [l, w, N]), (0, r.useEffect)((() => {
             const e = () => {
                 h(!1), F(!0)
               },
@@ -4990,37 +4986,37 @@ _global.SENTRY_RELEASE = {
             return document.addEventListener("click", e), document.addEventListener("keyup", a), () => {
               document.removeEventListener("click", e), document.removeEventListener("keyup", a)
             }
-          }), []), (0, o.useEffect)((() => {
+          }), []), (0, r.useEffect)((() => {
             h(!1), F(!0)
-          }), [k]), (0, o.useEffect)((() => {
+          }), [k]), (0, r.useEffect)((() => {
             if (T.current) {
               const {
                 current: e
               } = T, a = window.getComputedStyle(e);
               I(parseInt(a.paddingRight, 10) + parseInt(a.paddingLeft, 10))
             }
-          }), [T]), (0, o.useEffect)((() => {
+          }), [T]), (0, r.useEffect)((() => {
             u(!M || !v)
-          }), [v, M]), (0, o.useEffect)((() => {
+          }), [v, M]), (0, r.useEffect)((() => {
             z(window.navigator.userAgent.includes("Mac"))
-          }), []), (0, o.useEffect)((() => {
+          }), []), (0, r.useEffect)((() => {
             T.current && g(T?.current?.scrollHeight >= e)
-          }), [T, e]), (0, o.useEffect)((() => {
+          }), [T, e]), (0, r.useEffect)((() => {
             v || (c(-1), n(!1))
-          }), [v]), (0, o.useEffect)((() => {
-            s && (l || F(!0), r && (i(!1), c(-1)))
-          }), [s]), (0, o.useEffect)((() => {
-            r && (s && n(!1), l || F(!0))
-          }), [r]), null === _ ? null : (0, d.jsxs)(d.Fragment, {
+          }), [v]), (0, r.useEffect)((() => {
+            s && (l || F(!0), i && (o(!1), c(-1)))
+          }), [s]), (0, r.useEffect)((() => {
+            i && (s && n(!1), l || F(!0))
+          }), [i]), null === _ ? null : (0, d.jsxs)(d.Fragment, {
             children: [(0, d.jsxs)("div", {
-              className: [Ut.scMenu, v ? Ut.navOpen : ""].join(" "),
+              className: [Gt.scMenu, v ? Gt.navOpen : ""].join(" "),
               "data-logged-in": _,
               "data-mac-browser": P,
               "data-scroll-mode": f,
               ref: T,
               "aria-hidden": !v,
               children: [(0, d.jsx)("button", {
-                className: Ut.dragHandleBtn,
+                className: Gt.dragHandleBtn,
                 type: "button",
                 onTouchStart: e => {
                   const a = void 0 !== e.changedTouches ? e.touches[0].screenX : e.screenX;
@@ -5032,11 +5028,11 @@ _global.SENTRY_RELEASE = {
                   Math.abs(E - a) > 1 && (B(0), h(!1))
                 },
                 children: (0, d.jsx)("img", {
-                  className: Ut.dragHandle,
+                  className: Gt.dragHandle,
                   src: t(9796),
                   alt: a.formatMessage(gt.sc_menu_drag_handle)
                 })
-              }), _ ? (0, d.jsx)(Rt, {
+              }), _ ? (0, d.jsx)(Ut, {
                 sc: S,
                 charListHidden: l,
                 hideCharacterList: F,
@@ -5046,19 +5042,19 @@ _global.SENTRY_RELEASE = {
                 setLongCharList: j,
                 isMobileMode: M,
                 setIsMobileMode: L
-              }) : (0, d.jsx)(zt, {
+              }) : (0, d.jsx)(Vt, {
                 sc: S,
                 navOpen: v
               })]
             }), (0, d.jsx)("div", {
-              className: [Ut.scOverlay, v ? Ut.navOpen : ""].join(" "),
+              className: [Gt.scOverlay, v ? Gt.navOpen : ""].join(" "),
               "data-logged-in": _
             })]
           })
         }), fa),
-        Ht = t(6829),
-        Wt = t(9024),
-        qt = (0, da.withIntl)((e => {
+        Wt = t(6829),
+        qt = t(9024),
+        Xt = (0, da.withIntl)((e => {
           let {
             setOtherHeaderDropdowns: a
           } = e;
@@ -5069,33 +5065,33 @@ _global.SENTRY_RELEASE = {
             {
               charactersNeeded: n,
               currentCharId: c,
-              navOpen: r,
-              setNavOpen: i
+              navOpen: i,
+              setNavOpen: o
             } = (0, A.useRockstarUserState)(),
             {
               track: l
             } = (0, A.useGtmTrack)(),
-            [m, f] = (0, o.useState)(null),
-            [g, p] = (0, o.useState)(!1),
-            [u, k] = (0, o.useState)(null),
-            [_, b] = (0, o.useState)(!1),
-            [v, h] = (0, o.useState)([]);
-          (0, o.useEffect)((() => {
+            [m, f] = (0, r.useState)(null),
+            [g, p] = (0, r.useState)(!1),
+            [u, k] = (0, r.useState)(null),
+            [_, b] = (0, r.useState)(!1),
+            [v, h] = (0, r.useState)([]);
+          (0, r.useEffect)((() => {
             h(s.characters[n] ?? [])
           }), [s, n]);
-          const x = (0, o.useCallback)((e => {
-            e.stopPropagation(), i(!r), l({
+          const x = (0, r.useCallback)((e => {
+            e.stopPropagation(), o(!i), l({
               event: "account_menu_click",
               element_placement: "Account Menu",
-              text: r ? "close" : "open"
+              text: i ? "close" : "open"
             })
-          }), [r]);
-          return (0, o.useEffect)((() => {
+          }), [i]);
+          return (0, r.useEffect)((() => {
             const e = s?.id ?? !1,
-              a = e ? (v?.[c]?.mugshotUrl ?? s?.avatar) || Ht : Wt,
+              a = e ? (v?.[c]?.mugshotUrl ?? s?.avatar) || Wt : qt,
               t = mt(v?.[c]?.platform, "small") ?? null;
             k(t), f(a), p(e), b(!!v?.[c]?.mugshotUrl)
-          }), [s, v, c, Ht, Wt]), (0, d.jsxs)("button", {
+          }), [s, v, c, Wt, qt]), (0, d.jsxs)("button", {
             className: "rockstargames-componentse9d1eed6731789273c2981d6b18080b6",
             "data-img-set": _,
             "aria-label": t.formatMessage(gt.sc_menu_toggle),
@@ -5106,7 +5102,7 @@ _global.SENTRY_RELEASE = {
               className: "rockstargames-componentsaa210c100e4e46d1750eb7ffe779251c",
               src: m || "",
               onError: () => {
-                f(Ht)
+                f(Wt)
               },
               alt: s?.nickname || ""
             }), g && null !== u && (0, d.jsx)("img", {
@@ -5120,7 +5116,7 @@ _global.SENTRY_RELEASE = {
             })]
           })
         }), fa),
-        Xt = {
+        Kt = {
           pillBtn: "rockstargames-componentsec4687881babff6fb8140e3057c84adf",
           selected: "rockstargames-componentsbb35d8635d729fb7a48a0271ee0beac1",
           promoModule: "rockstargames-componentsa96cf75058f24406ae69280956e81864",
@@ -5131,19 +5127,19 @@ _global.SENTRY_RELEASE = {
           right: "rockstargames-componentscb9a693453841566594ff1e66bf1a0a2",
           promoModuleTextContent: "rockstargames-componentsb3c7d9385f30c83c8b1efd8f5fb0ba3f"
         },
-        Kt = e => {
+        Yt = e => {
           let {
             backgroundColor: a,
             brands: t = [],
             description: s = "",
             ctaLabel: n = "Click here",
             ctaLink: c = "https://rockstargames.com",
-            gradient: r = !0,
-            image: i,
+            gradient: i = !0,
+            image: o,
             imageOrientation: l = "right",
             title: m = ""
           } = e;
-          const [f, g] = (0, o.useState)(!1), {
+          const [f, g] = (0, r.useState)(!1), {
             ref: p,
             inView: u
           } = (0, R.useInView)({
@@ -5152,10 +5148,10 @@ _global.SENTRY_RELEASE = {
             track: k
           } = (0, A.useGtmTrack)(), _ = {
             "--promo-background": a ?? "var(--black-200)",
-            "--promo-image": `url(${(0,S.useGetCdnSource)(i)})` ?? 0,
+            "--promo-image": `url(${(0,S.useGetCdnSource)(o)})` ?? 0,
             "--promo-order": "left" === l ? "row" : "row-reverse"
           };
-          return (0, o.useEffect)((() => {
+          return (0, r.useEffect)((() => {
             u && !f && (k({
               event: "page_section_impression",
               event_action: "impression",
@@ -5164,7 +5160,7 @@ _global.SENTRY_RELEASE = {
               element_placement: "promo module"
             }), g(!0))
           }), [u]), (0, d.jsxs)(Ee.motion.div, {
-            className: Xt.promoModule,
+            className: Kt.promoModule,
             style: _,
             initial: {
               opacity: 0
@@ -5182,14 +5178,14 @@ _global.SENTRY_RELEASE = {
             },
             ref: p,
             children: [(0, d.jsx)("div", {
-              className: [Xt.promoModuleImage, r ? Xt.gradient : "", "left" === l ? Xt.left : Xt.right].join(" ")
+              className: [Kt.promoModuleImage, i ? Kt.gradient : "", "left" === l ? Kt.left : Kt.right].join(" ")
             }), (0, d.jsxs)("div", {
-              className: Xt.promoModuleContentContainer,
+              className: Kt.promoModuleContentContainer,
               children: [(0, d.jsx)(y, {
                 brands: t,
-                className: Xt.promoModuleBrands
+                className: Kt.promoModuleBrands
               }), (0, d.jsxs)("div", {
-                className: Xt.promoModuleTextContent,
+                className: Kt.promoModuleTextContent,
                 children: [m && (0, d.jsx)("h3", {
                   children: m
                 }), s && (0, d.jsx)("p", {
@@ -5213,35 +5209,35 @@ _global.SENTRY_RELEASE = {
             })]
           })
         };
-      var Yt = t(1532);
-      const Qt = {
+      var Qt = t(1532);
+      const Zt = {
           rating: "rockstargames-componentsc004868ea6a6081b6841ea37941dc6dc",
           withDescriptors: "rockstargames-componentsc4c1846c85cbccacafd56ae4b957c2c2",
           withOutDescriptors: "rockstargames-componentse3265d7edca1582513d0fdc449236c9b",
           text: "rockstargames-componentseee91c3283b0b0f696b1792bb7176175"
         },
-        Zt = (0, da.defineMessages)({
+        Jt = (0, da.defineMessages)({
           components_ratings_link_alt: {
             id: "components_ratings_link_alt",
             defaultMessage: "Rating: {rating}. Click here learn more about rating systems"
           }
         });
       (0, $.importAll)(t(7876));
-      const Jt = Ye((0, da.withIntl)((e => {
+      const es = Ye((0, da.withIntl)((e => {
           let {
             descriptors: a = null,
             footer: s = null,
             href: n,
             img: c = null,
-            titleSlug: r = null,
-            style: i = {},
+            titleSlug: i = null,
+            style: o = {},
             className: l
           } = e;
-          const [f, g] = (0, o.useState)(!1), {
+          const [f, g] = (0, r.useState)(!1), {
             inView: u
           } = (0, R.useInView)({
             threshold: .6
-          }), [k, _] = (0, o.useState)({
+          }), [k, _] = (0, r.useState)({
             img_rating: c,
             rating_descriptors: a,
             rating_footer: s,
@@ -5250,15 +5246,15 @@ _global.SENTRY_RELEASE = {
             track: b
           } = (0, A.useGtmTrack)(), v = (0, da.useIntl)(), {
             data: h
-          } = (0, p.useQuery)(Yt.GameData, {
+          } = (0, p.useQuery)(Qt.GameData, {
             variables: {
-              titleSlug: r
+              titleSlug: i
             },
-            skip: !r
+            skip: !i
           });
-          if ((0, o.useEffect)((() => {
+          if ((0, r.useEffect)((() => {
               h && _(h?.game)
-            }), [h]), (0, o.useEffect)((() => {
+            }), [h]), (0, r.useEffect)((() => {
               u && !f && k.img_rating && (b({
                 event: "page_section_impression",
                 event_action: "impression",
@@ -5269,21 +5265,21 @@ _global.SENTRY_RELEASE = {
             }), [u]), !k.img_rating) return null;
           const x = !!k.rating_descriptors;
           return (0, d.jsxs)("div", {
-            className: [Qt.rating, x ? Qt.withDescriptors : Qt.withOutDescriptors, l || ""].join(" "),
-            style: (0, $.safeStyles)(i),
+            className: [Zt.rating, x ? Zt.withDescriptors : Zt.withOutDescriptors, l || ""].join(" "),
+            style: (0, $.safeStyles)(o),
             children: [(0, d.jsx)(m, {
               to: k.url_rating,
               target: "_blank",
               children: (0, d.jsx)("img", {
-                alt: v.formatMessage(Zt.components_ratings_link_alt, {
+                alt: v.formatMessage(Jt.components_ratings_link_alt, {
                   rating: (y = k.img_rating, y.replace(/_/g, " ").split(".")[0].toUpperCase())
                 }),
                 src: t(120)(`./${k.img_rating}`)
               })
             }), x && (0, d.jsxs)("div", {
-              className: Qt.text,
+              className: Zt.text,
               children: [(0, d.jsx)("p", {
-                className: Qt.descriptors,
+                className: Zt.descriptors,
                 dangerouslySetInnerHTML: {
                   __html: k?.rating_descriptors?.split(/<br\s?\/?>/).join(", ") || ""
                 }
@@ -5296,43 +5292,43 @@ _global.SENTRY_RELEASE = {
           });
           var y
         }), fa)),
-        es = {
+        as = {
           responsiveFlexBox: "rockstargames-componentse4a3b9b6071fe50e64de8f4c9c6841d3",
           responsiveFlexItem: "rockstargames-componentsaa899ffe0d4ed9474eb2058b5884ee51",
           responsiveImage: "rockstargames-componentsaaa1a0871637276a49c581a317952643"
         },
-        as = e => {
+        ts = e => {
           let {
             children: a,
             className: t,
             style: s
           } = e;
           return (0, d.jsx)("div", {
-            className: [es.responsiveFlexBox, void 0 !== t ? t : ""].join(" "),
+            className: [as.responsiveFlexBox, void 0 !== t ? t : ""].join(" "),
             style: s,
             children: a
           })
         },
-        ts = {
+        ss = {
           responsiveFlexItem: "rockstargames-componentse8d9468ec8cdbdcf6b00a4daedcfbab5"
         },
-        ss = e => {
+        ns = e => {
           let {
             children: a,
             className: t,
             style: s
           } = e;
           return (0, d.jsx)("div", {
-            className: [ts.responsiveFlexItem, void 0 !== t ? t : ""].join(" "),
+            className: [ss.responsiveFlexItem, void 0 !== t ? t : ""].join(" "),
             style: s,
             children: a
           })
         },
-        ns = {
+        cs = {
           responsiveGridBox: "rockstargames-componentse91d4d1de6e479c331b2bc50227fae96",
           responsiveGridItem: "rockstargames-componentsb7b98f304a0507fadedd1e3449fba010"
         },
-        cs = e => {
+        is = e => {
           let {
             children: a,
             cols: t,
@@ -5340,35 +5336,35 @@ _global.SENTRY_RELEASE = {
             rows: n,
             style: c
           } = e;
-          const r = c ? {
+          const i = c ? {
             ...c
           } : {};
-          return void 0 !== t && (r.gridTemplateColumns = `repeat(${t}, 1fr)`), void 0 !== n && (r.gridTemplateRows = `repeat(${n}, 1fr)`), (0, d.jsx)("div", {
-            className: [ns.responsiveGridBox, void 0 !== s ? s : ""].join(" "),
-            style: r,
+          return void 0 !== t && (i.gridTemplateColumns = `repeat(${t}, 1fr)`), void 0 !== n && (i.gridTemplateRows = `repeat(${n}, 1fr)`), (0, d.jsx)("div", {
+            className: [cs.responsiveGridBox, void 0 !== s ? s : ""].join(" "),
+            style: i,
             children: a
           })
         },
-        rs = {
+        os = {
           responsiveGridBox: "rockstargames-componentsd2a57229e98f203a0df1d5e4dc5168e7",
           responsiveGridItem: "rockstargames-componentsa550b6abbcce0c5385bb1bbf3aaaaf89"
         },
-        is = e => {
+        rs = e => {
           let {
             children: a,
             className: t,
             style: s
           } = e;
           return (0, d.jsx)("div", {
-            className: [rs.responsiveGridItem, void 0 !== t ? t : ""].join(" "),
+            className: [os.responsiveGridItem, void 0 !== t ? t : ""].join(" "),
             style: s,
             children: a
           })
         },
-        os = {
+        ls = {
           responsiveImage: "rockstargames-componentscf17dc54f4db5d6644c56b416b15b33f"
         },
-        ls = e => {
+        ds = e => {
           let {
             src: a,
             className: t = "",
@@ -5376,22 +5372,22 @@ _global.SENTRY_RELEASE = {
             ariaLabel: n,
             style: c = {}
           } = e;
-          const [r, i] = (0, $.usePreloadImg)(a);
-          return r ? (c.backgroundImage = `url(${a})`, (0, d.jsx)("div", {
+          const [i, o] = (0, $.usePreloadImg)(a);
+          return i ? (c.backgroundImage = `url(${a})`, (0, d.jsx)("div", {
             role: "img",
             "aria-label": n ?? "R* Games",
-            className: [os.responsiveImage, s ? os.animateBox : "", t].join(" "),
+            className: [ls.responsiveImage, s ? ls.animateBox : "", t].join(" "),
             style: {
               ...c,
-              "--aspect-ratio": i.width / i.height
+              "--aspect-ratio": o.width / o.height
             }
           })) : null
         },
-        ds = {
+        ms = {
           responsiveSection: "rockstargames-componentsc5c99169fa31c5009611af9233db5968",
           maxWidth: "rockstargames-componentsd4363484ab65e013f4e7583a00c7a5f4"
         },
-        ms = e => {
+        fs = e => {
           let {
             children: a,
             className: t,
@@ -5399,71 +5395,71 @@ _global.SENTRY_RELEASE = {
             maxWidth: n
           } = e;
           return (0, d.jsx)("section", {
-            className: [ds.responsiveSection, void 0 !== t ? t : ""].join(" "),
+            className: [ms.responsiveSection, void 0 !== t ? t : ""].join(" "),
             style: s,
             children: n ? (0, d.jsx)("div", {
-              className: ds.maxWidth,
+              className: ms.maxWidth,
               children: a
             }) : a
           })
         },
-        fs = () => (0, d.jsx)(m, {
+        gs = () => (0, d.jsx)(m, {
           className: "rockstargames-componentscc006d4ff1bfa49216622ebc92289fb0",
           alt: "Rockstar Games Home",
           to: "/"
         }),
-        gs = () => {
+        ps = () => {
           const {
             pathname: e
           } = (0, l.useLocation)();
-          return (0, o.useEffect)((() => {
+          return (0, r.useEffect)((() => {
             window.scrollTo(0, 0)
           }), [e]), null
         },
-        ps = (0, o.forwardRef)(((e, a) => {
+        us = (0, r.forwardRef)(((e, a) => {
           const {
             threshold: t,
             callback: s,
             children: n,
             requireUser: c
           } = e, {
-            track: r
-          } = (0, A.useGtmTrack)(c), [i, l] = (0, o.useState)(a?.current);
-          return (0, o.useEffect)((() => {
+            track: i
+          } = (0, A.useGtmTrack)(c), [o, l] = (0, r.useState)(a?.current);
+          return (0, r.useEffect)((() => {
             a?.current && l(a.current)
           }), [a]), ((e, a, t) => {
-            const [s, n] = (0, o.useState)({
+            const [s, n] = (0, r.useState)({
               scrollDepths: e,
               scrollY: 0
             }), {
               scrollDepths: c,
-              scrollY: r
+              scrollY: i
             } = s;
-            (0, o.useEffect)((() => {
+            (0, r.useEffect)((() => {
               "undefined" != typeof window && 0 !== window.pageYOffset && n((e => ({
                 ...e,
                 scrollY: window.pageYOffset
               })))
-            }), []), (0, o.useEffect)((() => {
+            }), []), (0, r.useEffect)((() => {
               n({
                 scrollDepths: e,
                 scrollY: 0
               })
             }), [window.location.pathname]);
-            const i = (0, o.useCallback)((() => {
+            const o = (0, r.useCallback)((() => {
               const e = document.documentElement,
-                r = document.body,
-                o = t?.scrollTop || e.scrollTop || r.scrollTop,
-                l = t?.scrollHeight || e.scrollHeight || r.scrollHeight,
+                i = document.body,
+                r = t?.scrollTop || e.scrollTop || i.scrollTop,
+                l = t?.scrollHeight || e.scrollHeight || i.scrollHeight,
                 {
                   clientHeight: d
                 } = e,
-                m = o / (l - d) * 100;
+                m = r / (l - d) * 100;
               if (c) {
                 const e = Math.min(...c, l);
                 if (m >= e) {
                   const s = c.filter((a => a !== e));
-                  0 === s.length && (t ?? window).removeEventListener("scroll", i), a && a({
+                  0 === s.length && (t ?? window).removeEventListener("scroll", o), a && a({
                     scrollY: e,
                     scrollPercent: m,
                     remainingDepths: s
@@ -5477,28 +5473,28 @@ _global.SENTRY_RELEASE = {
                 scrollY: m
               })
             }), [c, t, a]);
-            (0, o.useEffect)((() => {
+            (0, r.useEffect)((() => {
               if ("undefined" == typeof window) return;
               const e = t ?? window;
-              return e.addEventListener("scroll", i), () => e.removeEventListener("scroll", i)
-            }), [i])
+              return e.addEventListener("scroll", o), () => e.removeEventListener("scroll", o)
+            }), [o])
           })(t, (e => {
             let {
               scrollY: a
             } = e;
-            r({
+            i({
               event: "page_scroll",
               event_category: "page_scroll",
               event_action: a,
               scroll_depth: a
             }), "function" == typeof s && s(a)
-          }), i), n
+          }), o), n
         })),
-        us = (0, $.withTranslations)((e => {
+        ks = (0, $.withTranslations)((e => {
           let {
             t: a
           } = e;
-          const [t] = (0, o.useState)(""), s = (0, l.useNavigate)(), n = (0, p.useMutateState)();
+          const [t] = (0, r.useState)(""), s = (0, l.useNavigate)(), n = (0, p.useMutateState)();
           return (0, d.jsxs)("form", {
             action: "#",
             className: "rockstargames-componentsb3a5dd3d369564e67254698a18833f98",
@@ -5521,44 +5517,44 @@ _global.SENTRY_RELEASE = {
             })]
           })
         })),
-        ks = {
+        _s = {
           skeleton: "rockstargames-componentsa76d39bab84e8f469972e22834204389",
           pulse: "rockstargames-componentse8aa563c46cfd0a74ea4dcfc1bb8a9e4",
           gen9Hero: "rockstargames-componentsd63bf424caff53fef09b8e4c2e20a3c3"
         },
-        _s = e => {
+        bs = e => {
           let {
             skeleton: a
           } = e;
           return a ? (0, d.jsx)("div", {
-            className: [ks.skeleton, ks[a]].join(" ")
+            className: [_s.skeleton, _s[a]].join(" ")
           }) : null
         },
-        bs = (0, da.defineMessages)({
+        vs = (0, da.defineMessages)({
           components_track_list_title: {
             id: "components_track_list_title",
             defaultMessage: "Tracklist"
           }
         }),
-        vs = {
+        hs = {
           bodySmall: "rockstargames-componentsb9aa3afbdb37ff0aea705849df408c42"
         },
-        hs = e => {
+        xs = e => {
           let {
             track: a,
             artist: t
           } = e;
           return (0, d.jsxs)("div", {
-            className: vs.track,
+            className: hs.track,
             children: [(0, d.jsx)("p", {
               children: a
             }), (0, d.jsx)("p", {
-              className: vs.bodySmall,
+              className: hs.bodySmall,
               children: t
             })]
           })
         },
-        xs = (0, da.withIntl)((e => {
+        ys = (0, da.withIntl)((e => {
           let {
             children: a
           } = e;
@@ -5567,22 +5563,22 @@ _global.SENTRY_RELEASE = {
             children: [(0, d.jsx)("h4", {
               className: "rockstargames-componentsa37f37abb5276c67d47bca88073adb3f",
               children: (0, d.jsx)(da.FormattedMessage, {
-                ...bs.components_track_list_title
+                ...vs.components_track_list_title
               })
             }), (0, d.jsx)("div", {
               className: "rockstargames-componentsc0e76cb19681f62e125f0b004c296f0a",
               children: (0, d.jsx)("div", {
                 className: "rockstargames-componentsb2a58aa8f0fbec82f1c7e834739aabad",
-                children: o.Children.map(o.Children.toArray(a), (e => (0, d.jsx)(hs, {
+                children: r.Children.map(r.Children.toArray(a), (e => (0, d.jsx)(xs, {
                   ...e?.props
                 })))
               })
             })]
           })
         }), fa),
-        ys = "rockstargames-componentsce552800b27ae8165e7d3dc5a189fe11",
-        Ns = "rockstargames-componentsf1715da046f9be2e226bc9f6342294c0",
-        js = {
+        Ns = "rockstargames-componentsce552800b27ae8165e7d3dc5a189fe11",
+        js = "rockstargames-componentsf1715da046f9be2e226bc9f6342294c0",
+        Ss = {
           0: {
             spaceBetween: 8
           },
@@ -5599,19 +5595,19 @@ _global.SENTRY_RELEASE = {
             spaceBetween: 22
           }
         },
-        Ss = e => {
+        ws = e => {
           let {
             title: a = "thumbnail gallery",
             thumbsPerView: t = 3,
             loop: s = !1,
             navigation: n = !1,
             slideChildren: c = [],
-            variants: r = {
+            variants: i = {
               parent: void 0,
               main: void 0,
               thumbs: void 0
             },
-            transition: i = {
+            transition: o = {
               parent: void 0,
               main: void 0,
               thumbs: void 0
@@ -5619,11 +5615,11 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: l
-          } = (0, A.useGtmTrack)(), [m, f] = (0, o.useState)([Xe.O4, Xe.Hj, Xe.eM]), [g, p] = (0, o.useState)(null), [u, k] = (0, o.useState)(null);
-          return (0, o.useEffect)((() => {
+          } = (0, A.useGtmTrack)(), [m, f] = (0, r.useState)([Xe.O4, Xe.Hj, Xe.eM]), [g, p] = (0, r.useState)(null), [u, k] = (0, r.useState)(null);
+          return (0, r.useEffect)((() => {
             const e = [Xe.O4, Xe.Hj, Xe.eM];
             n && e.push(Xe._2), f(e)
-          }), [n]), (0, o.useEffect)((() => {
+          }), [n]), (0, r.useEffect)((() => {
             if (!c) return;
             const e = c.map(((e, a) => (0, d.jsx)(L.Ky, {
               children: e
@@ -5631,14 +5627,14 @@ _global.SENTRY_RELEASE = {
             k(e)
           }), [c]), u ? (0, d.jsxs)(Ee.motion.div, {
             className: "rockstargames-componentsabb6bd9f780af17f6dcf79964e885edb",
-            variants: r.parent,
-            transition: i.parent,
+            variants: i.parent,
+            transition: o.parent,
             initial: "initial",
             animate: "animate",
             children: [(0, d.jsx)(Ee.motion.div, {
-              className: ys,
-              variants: r.main,
-              transition: i.main,
+              className: Ns,
+              variants: i.main,
+              transition: o.main,
               initial: "initial",
               animate: "animate",
               children: (0, d.jsx)(L.wx, {
@@ -5651,8 +5647,8 @@ _global.SENTRY_RELEASE = {
                   swiper: g
                 },
                 modules: m,
-                breakpoints: js,
-                className: ys,
+                breakpoints: Ss,
+                className: Ns,
                 onSlideNextTransitionEnd: () => {
                   l({
                     event_action: "next",
@@ -5680,28 +5676,28 @@ _global.SENTRY_RELEASE = {
                 children: u
               })
             }), (0, d.jsx)(Ee.motion.div, {
-              className: Ns,
-              variants: r.thumbs,
-              transition: i.thumbs,
+              className: js,
+              variants: i.thumbs,
+              transition: o.thumbs,
               initial: "initial",
               animate: "animate",
               children: (0, d.jsx)(L.wx, {
                 threshold: 50,
                 onSwiper: p,
                 loop: s,
-                breakpoints: js,
+                breakpoints: Ss,
                 slidesPerView: t,
                 freeMode: !0,
                 watchSlidesProgress: !0,
                 modules: m,
-                className: Ns,
+                className: js,
                 children: u
               })
             })]
           }) : null
         };
-      var ws = t(3260);
-      const Cs = e => {
+      var Cs = t(3260);
+      const Is = e => {
           let {
             id: a = null,
             ids: t = null,
@@ -5710,8 +5706,8 @@ _global.SENTRY_RELEASE = {
           } = e;
           const c = t ?? [a],
             {
-              data: r
-            } = (0, p.useQuery)(ws.TinaModulesInfo, {
+              data: i
+            } = (0, p.useQuery)(Cs.TinaModulesInfo, {
               variables: {
                 ids: c,
                 sync: n
@@ -5719,24 +5715,24 @@ _global.SENTRY_RELEASE = {
               setTitleDataPath: s,
               skip: !c.length
             });
-          return r?.tinaModulesInfo ?? null
+          return i?.tinaModulesInfo ?? null
         },
-        Is = Ye((e => {
+        Ts = Ye((e => {
           let {
             components: a = {},
             id: t = null,
             ids: s = null,
             skeleton: n
           } = e;
-          const c = Cs({
+          const c = Is({
             id: t,
             ids: s
           });
-          if (!c) return (0, d.jsx)(_s, {
+          if (!c) return (0, d.jsx)(bs, {
             skeleton: n
           });
-          const r = c?.[0]?.tina;
-          return r ? (0, d.jsx)(d.Fragment, {
+          const i = c?.[0]?.tina;
+          return i ? (0, d.jsx)(d.Fragment, {
             children: c.map(((e, t) => {
               let {
                 tina: s
@@ -5751,14 +5747,14 @@ _global.SENTRY_RELEASE = {
             }))
           }) : null
         })),
-        Ts = e => {
+        Ms = e => {
           let {
             children: a,
             style: t,
             theme: s
           } = e;
-          const [n, c] = (0, o.useState)(s);
-          return (0, o.useEffect)((() => {
+          const [n, c] = (0, r.useState)(s);
+          return (0, r.useEffect)((() => {
             s && c(s)
           }), [s]), (0, d.jsx)("div", {
             className: "rockstargames-componentsf1a049e5eed244f3a602a9842424d1c3",
@@ -5767,8 +5763,8 @@ _global.SENTRY_RELEASE = {
             children: a
           })
         };
-      var Ms = t(9636);
-      const Ls = {
+      var Ls = t(9636);
+      const Es = {
           pillBtn: "rockstargames-componentsea67ce83d428f999f9d2bb8569909713",
           selected: "rockstargames-componentsbbdd3273d3d42b0b6f88fad71cd9ae1c",
           userVote: "rockstargames-componentsed30a827a4ee0c0fe965dbb8c52b61f6",
@@ -5780,7 +5776,7 @@ _global.SENTRY_RELEASE = {
           upVote: "rockstargames-componentsbf4e6863e21e200ba89eaf06cf1f70de",
           voteButtonActive: "rockstargames-componentsf470bab88d3ac74c73e2dc6aaa71e62f"
         },
-        Es = e => {
+        Bs = e => {
           let {
             description: a,
             foreign_id: t = document.location.pathname,
@@ -5790,12 +5786,12 @@ _global.SENTRY_RELEASE = {
           const {
             track: c
           } = (0, A.useGtmTrack)(), {
-            loggedIn: r
+            loggedIn: i
           } = (0, A.useRockstarUser)(), {
-            refetch: i
-          } = (0, p.useQuery)(Ms.UserGetVote, {
+            refetch: o
+          } = (0, p.useQuery)(Ls.UserGetVote, {
             skip: !0
-          }), [l] = (0, p.useMutation)(Ms.UserCastVote), [m, f] = (0, o.useState)(null), g = (0, o.useCallback)((async e => {
+          }), [l] = (0, p.useMutation)(Ls.UserCastVote), [m, f] = (0, r.useState)(null), g = (0, r.useCallback)((async e => {
             c({
               event_action: m ? "like" : "dislike",
               event_category: "cta",
@@ -5812,35 +5808,35 @@ _global.SENTRY_RELEASE = {
               });
             f(n?.data?.userCastVote?.vote ?? null)
           }), [t, s]);
-          return (0, o.useEffect)((() => {
+          return (0, r.useEffect)((() => {
             (async () => {
-              if (!r || !t || !s) return;
-              const e = await i({
+              if (!i || !t || !s) return;
+              const e = await o({
                 foreign_id: t,
                 foreign_type: s
               });
               f(e?.data?.userGetVote?.vote ?? null)
             })()
-          }), [t, s, r]), (0, d.jsx)("div", {
-            className: Ls.userVote,
+          }), [t, s, i]), (0, d.jsx)("div", {
+            className: Es.userVote,
             children: (0, d.jsxs)("div", {
-              className: Ls.voteContent,
+              className: Es.voteContent,
               children: [(0, d.jsxs)("div", {
-                className: Ls.info,
+                className: Es.info,
                 children: [(0, d.jsx)("h3", {
                   children: n
                 }), (0, d.jsx)("p", {
                   children: a
                 })]
               }), (0, d.jsxs)("div", {
-                className: [Ls.voteButtons, r ? "" : Ls.loggedOutButtons].join(" "),
+                className: [Es.voteButtons, i ? "" : Es.loggedOutButtons].join(" "),
                 children: [(0, d.jsx)("button", {
                   onClick: () => g(!0),
-                  className: [Ls.upVote, m ? Ls.voteButtonActive : ""].join(" "),
+                  className: [Es.upVote, m ? Es.voteButtonActive : ""].join(" "),
                   type: "button",
                   "aria-label": "Vote up"
                 }), (0, d.jsx)("button", {
-                  className: [Ls.downVote, !1 === m ? Ls.voteButtonActive : ""].join(" "),
+                  className: [Es.downVote, !1 === m ? Es.voteButtonActive : ""].join(" "),
                   onClick: () => g(!1),
                   type: "button",
                   "aria-label": "Vote down"
@@ -5849,7 +5845,7 @@ _global.SENTRY_RELEASE = {
             })
           })
         },
-        Bs = {
+        Ps = {
           carousel: "rockstargames-componentsf022bf9e72dc1703e9e349d33b94f1af",
           text: "rockstargames-componentsd13ac10ef642d12233ef4c9b26a9805c",
           info: "rockstargames-componentsc3600a5b5e3fb1e3a927caa4d6cfeac2",
@@ -5864,7 +5860,7 @@ _global.SENTRY_RELEASE = {
           dragging: "rockstargames-componentsbb5ecb6b4e8e81e432a59eac0a5f4985",
           dots: "rockstargames-componentsdcabe0c33f6868691c42df0d3684d20d"
         },
-        Ps = (0, $.withLocale)((e => {
+        zs = (0, $.withLocale)((e => {
           let {
             locale: a,
             t,
@@ -5872,8 +5868,8 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             setBodyIsScrollable: n
-          } = (0, $.useBodyScrollable)(), [c, r] = (0, o.useState)(0), [i, l] = (0, o.useState)(0), f = (0, o.useRef)(null), p = (0, o.useRef)(null);
-          return (0, o.useEffect)((() => {
+          } = (0, $.useBodyScrollable)(), [c, i] = (0, r.useState)(0), [o, l] = (0, r.useState)(0), f = (0, r.useRef)(null), p = (0, r.useRef)(null);
+          return (0, r.useEffect)((() => {
             if (!f.current || p.current) return;
             const e = new(g())(f.current);
             e.get("press").set({
@@ -5883,50 +5879,50 @@ _global.SENTRY_RELEASE = {
             });
             const a = () => "ontouchstart" in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0,
               t = () => {
-                r(c - 1 < 0 ? 0 : c - 1), l(0)
+                i(c - 1 < 0 ? 0 : c - 1), l(0)
               },
-              i = () => {
+              o = () => {
                 const e = c + 1 >= s.length - 1 ? s.length - 1 : c + 1;
-                r(e), l(0)
+                i(e), l(0)
               },
-              o = e => {
-                l(e.isFinal ? 0 : e.deltaX), "panleft" !== e.additionalEvent && "panright" !== e.additionalEvent || !p.current?.classList.contains(Bs.dragging) || a() && n(!1)
+              r = e => {
+                l(e.isFinal ? 0 : e.deltaX), "panleft" !== e.additionalEvent && "panright" !== e.additionalEvent || !p.current?.classList.contains(Ps.dragging) || a() && n(!1)
               },
               d = () => {
                 a() && n(!0), l(0)
               },
               m = e => {
-                "press" === e.type && f.current?.classList.add(`${Bs.disableClick}`), "tap" === e.type && (f.current?.classList.remove(`${Bs.disableClick}`), document.elementFromPoint(e.center.x, e.center.y).click())
+                "press" === e.type && f.current?.classList.add(`${Ps.disableClick}`), "tap" === e.type && (f.current?.classList.remove(`${Ps.disableClick}`), document.elementFromPoint(e.center.x, e.center.y).click())
               },
               u = () => {
-                a() && n(!0), f.current && f.current.classList.remove(`${Bs.disableClick}`)
+                a() && n(!0), f.current && f.current.classList.remove(`${Ps.disableClick}`)
               },
               k = () => {
                 a() && n(!0)
               };
-            return p.current.addEventListener("transitionend", k), e.on("swiperight", t), e.on("swipeleft", i), e.on("pan", o), e.on("panend", d), e.on("press tap", m), e.on("pressup", u), () => {
-              e.off("swiperight", t), e.off("swipeleft", i), e.off("pan", o), e.off("panend", d), e.off("press tap", m), e.off("pressup", u), p.current && p.current.removeEventListener("transitionend", k), l(0)
+            return p.current.addEventListener("transitionend", k), e.on("swiperight", t), e.on("swipeleft", o), e.on("pan", r), e.on("panend", d), e.on("press tap", m), e.on("pressup", u), () => {
+              e.off("swiperight", t), e.off("swipeleft", o), e.off("pan", r), e.off("panend", d), e.off("press tap", m), e.off("pressup", u), p.current && p.current.removeEventListener("transitionend", k), l(0)
             }
           }), [f.current, c]), (0, d.jsxs)("section", {
-            className: Bs.carousel,
+            className: Ps.carousel,
             children: [(0, d.jsx)("div", {
-              className: Bs.track,
+              className: Ps.track,
               ref: f,
               children: (0, d.jsx)("div", {
-                className: `${Bs.items} ${0!==i?Bs.dragging:""}`,
+                className: `${Ps.items} ${0!==o?Ps.dragging:""}`,
                 ref: p,
                 style: {
-                  transform: `translateX(calc(-${100*c}% + ${i}px))`
+                  transform: `translateX(calc(-${100*c}% + ${o}px))`
                 },
                 children: s.map(((e, a) => (0, d.jsx)(m, {
                   "data-gtm-category": "Carousel",
                   "data-gtm-action": "Click-through screencap",
                   "data-gtm-label": `/videos/${e.id}`,
                   to: `/videos/${e.id}`,
-                  className: c === a ? Bs.active : "",
+                  className: c === a ? Ps.active : "",
                   role: "link",
                   title: e.title,
-                  children: (0, d.jsx)(Ds, {
+                  children: (0, d.jsx)(Fs, {
                     video: e,
                     size: 1280
                   })
@@ -5934,7 +5930,7 @@ _global.SENTRY_RELEASE = {
               })
             }), (0, d.jsxs)("footer", {
               children: [(0, d.jsx)("div", {
-                className: Bs.text,
+                className: Ps.text,
                 children: s.map(((e, s) => (0, d.jsx)(m, {
                   "data-gtm-category": "Carousel",
                   "data-gtm-action": "Click-through footer",
@@ -5943,38 +5939,38 @@ _global.SENTRY_RELEASE = {
                   role: "link",
                   title: e.title,
                   children: (0, d.jsxs)("div", {
-                    className: [Bs.info, s === c ? Bs.active : ""].join(" "),
+                    className: [Ps.info, s === c ? Ps.active : ""].join(" "),
                     children: [(0, d.jsxs)("div", {
-                      className: Bs.title,
+                      className: Ps.title,
                       children: [(0, d.jsx)("div", {
-                        className: Bs.gameTitle,
+                        className: Ps.gameTitle,
                         children: `${e.game.title}${"fr_fr"===a?" ":""}`
                       }), (0, d.jsx)("h2", {
-                        className: Bs.videoTitle,
+                        className: Ps.videoTitle,
                         children: `${e.title}`
                       })]
                     }), (0, d.jsx)(j, {
-                      className: Bs.cta,
+                      className: Ps.cta,
                       children: t("Watch Now")
                     })]
                   })
                 }, e.id)))
               }), (0, d.jsx)("div", {
-                className: Bs.dots,
+                className: Ps.dots,
                 children: s.map(((e, a) => (0, d.jsx)("button", {
                   "aria-label": `Slide ${a}`,
                   "data-gtm-category": "Marquee",
                   "data-gtm-action": "Dot click",
                   "data-gtm-label": `Dot clicked to ${a}`,
-                  onClick: () => r(a),
-                  className: c === a ? Bs.active : "",
+                  onClick: () => i(a),
+                  className: c === a ? Ps.active : "",
                   type: "button"
                 }, e.id)))
               })]
             })]
           })
         })),
-        zs = {
+        Vs = {
           videoList: "rockstargames-componentse49dd5596165ea04152c8356209a1cca",
           sectionHeader: "rockstargames-componentsb3dfec0109576abb1fd036096e6b117a",
           arrowNav: "rockstargames-componentsd608a61eb851b602c357831dc1922f8d",
@@ -5987,7 +5983,7 @@ _global.SENTRY_RELEASE = {
           next: "rockstargames-componentsc1fd555dd7b904ebe9f23e233c63b0b8",
           disabled: "rockstargames-componentsc9b97437b4e75cef0bb78c0c136c81e9"
         },
-        Vs = (0, $.withTranslations)((e => {
+        $s = (0, $.withTranslations)((e => {
           let {
             vids: a,
             games: t,
@@ -5995,17 +5991,17 @@ _global.SENTRY_RELEASE = {
             gameTitleNecessary: n
           } = e;
           const c = void 0 !== t ? "games" : "videos",
-            r = "videos" === c ? a : t.results,
-            i = (0, o.useRef)(null),
-            [l, m] = (0, o.useState)(0),
-            [f, p] = (0, o.useState)(0),
+            i = "videos" === c ? a : t.results,
+            o = (0, r.useRef)(null),
+            [l, m] = (0, r.useState)(0),
+            [f, p] = (0, r.useState)(0),
             u = e => {
-              const a = Math.ceil(r.length / l);
+              const a = Math.ceil(i.length / l);
               e < 0 ? e = 0 : e >= a - 1 && (e = a - 1), p(e)
             },
-            [k, _] = (0, o.useState)(0);
+            [k, _] = (0, r.useState)(0);
           let b;
-          return (0, o.useEffect)((() => {
+          return (0, r.useEffect)((() => {
             const e = () => {
               const e = e => window.matchMedia(`(max-width: ${e})`).matches,
                 a = e("768px") ? 1 : e("990px") || e("1440px") ? 2 : e("1920px") ? 3 : 4;
@@ -6014,9 +6010,9 @@ _global.SENTRY_RELEASE = {
             return window.addEventListener("resize", e), e(), () => {
               window.removeEventListener("resize", e)
             }
-          }), [l]), (0, o.useEffect)((() => {
-            if (i.current) {
-              const e = new(g())(i.current),
+          }), [l]), (0, r.useEffect)((() => {
+            if (o.current) {
+              const e = new(g())(o.current),
                 a = () => {
                   u(f - 1), _(0)
                 },
@@ -6033,38 +6029,38 @@ _global.SENTRY_RELEASE = {
                 e.off("swiperight", a), e.off("swipeleft", t), e.off("pan", s), e.off("panend", n), _(0)
               }
             }
-          }), [i.current, f]), b = "games" === c ? (0, d.jsx)(d.Fragment, {
+          }), [o.current, f]), b = "games" === c ? (0, d.jsx)(d.Fragment, {
             children: t.results.map((e => (0, d.jsx)(He, {
               game: e,
               dontOverrideTo: !0,
               to: `/videos?type=game&gameId=${e.id}`
             }, e.id)))
           }) : (0, d.jsx)(d.Fragment, {
-            children: a.map((e => (0, d.jsx)(Fs, {
+            children: a.map((e => (0, d.jsx)(Os, {
               video: e,
               gameTitleNecessary: n
             }, e.id)))
           }), (0, d.jsxs)("section", {
-            className: zs.videoList,
+            className: Vs.videoList,
             children: [(0, d.jsxs)("h3", {
-              className: zs.sectionHeader,
+              className: Vs.sectionHeader,
               children: [s, (0, d.jsxs)("div", {
-                className: zs.arrowNav,
+                className: Vs.arrowNav,
                 children: [(0, d.jsx)("div", {
-                  className: [zs.arrow, zs.previous, 0 === f ? zs.disabled : ""].join(" "),
+                  className: [Vs.arrow, Vs.previous, 0 === f ? Vs.disabled : ""].join(" "),
                   onClick: () => u(f - 1)
                 }), (0, d.jsx)("div", {
-                  className: [zs.arrow, zs.next, f === Math.ceil(r.length / l) - 1 ? zs.disabled : ""].join(" "),
+                  className: [Vs.arrow, Vs.next, f === Math.ceil(i.length / l) - 1 ? Vs.disabled : ""].join(" "),
                   onClick: () => u(f + 1)
                 })]
               })]
             }), (0, d.jsx)("div", {
-              className: zs.items,
+              className: Vs.items,
               children: (0, d.jsx)("div", {
-                className: zs.trackWrapper,
+                className: Vs.trackWrapper,
                 children: (0, d.jsx)("div", {
-                  className: [zs.track, 0 !== k ? zs.dragging : ""].join(" "),
-                  ref: i,
+                  className: [Vs.track, 0 !== k ? Vs.dragging : ""].join(" "),
+                  ref: o,
                   style: {
                     transform: `translateX(calc(-${100*f}% + ${k}px - (var(--standard-grid-gap) * ${f}))`,
                     gridAutoColumns: `calc(100 / ${l} * 1% - calc(var(--standard-grid-gap) * (${l-1}/${l}))`
@@ -6075,7 +6071,7 @@ _global.SENTRY_RELEASE = {
             })]
           })
         })),
-        $s = (0, $.withTranslations)((e => {
+        As = (0, $.withTranslations)((e => {
           let {
             error: a,
             t,
@@ -6087,22 +6083,22 @@ _global.SENTRY_RELEASE = {
           let n = a?.message ?? t("error-404-new");
           n = t("error-404-new");
           const c = a?.code ?? 398,
-            r = (0, o.useRef)(null);
-          return (0, o.useEffect)((() => {
-            r && r?.current && r.current.focus()
-          }), [r]), (0, d.jsxs)("div", {
+            i = (0, r.useRef)(null);
+          return (0, r.useEffect)((() => {
+            i && i?.current && i.current.focus()
+          }), [i]), (0, d.jsxs)("div", {
             className: "rockstargames-componentsc7fe032eaf0127cb44b3aec94a930688",
             children: [(0, d.jsx)("h3", {
               tabIndex: -1,
-              ref: r,
+              ref: i,
               children: `${n} (${c})`
             }), (0, d.jsx)(m, {
               to: "/",
               children: t("Home")
-            }), "clr" !== s && (0, d.jsx)(us, {})]
+            }), "clr" !== s && (0, d.jsx)(ks, {})]
           })
         })),
-        As = {
+        Ds = {
           videoPreview: "rockstargames-componentsfe7a3e548d37991de12016a69af8e6c0",
           card: "rockstargames-componentsdaabbfc1eda1710ae7d1346162b9392e",
           info: "rockstargames-componentsa7ab9b6f9cb9bbc84106a35eb5bec944",
@@ -6111,7 +6107,7 @@ _global.SENTRY_RELEASE = {
           screencapLoaded: "rockstargames-componentsed8b59749d6b49b669bfdd77a2d05da6",
           gameTitle: "rockstargames-componentse0e54e027a19ac5f0b1e839fd68b8795"
         },
-        Ds = e => {
+        Fs = e => {
           let {
             video: a,
             size: t = 640
@@ -6119,13 +6115,13 @@ _global.SENTRY_RELEASE = {
           const s = `${a.screencap}?im=Resize=${t}`,
             [n] = (0, $.usePreloadImg)(s);
           return (0, d.jsx)("div", {
-            className: [As.screencap, n ? As.screencapLoaded : ""].join(" "),
+            className: [Ds.screencap, n ? Ds.screencapLoaded : ""].join(" "),
             style: {
               background: `url(${s}) center/cover`
             }
           })
         },
-        Fs = e => {
+        Os = e => {
           let {
             gameTitleNecessary: a = !0,
             openInNewWindow: t = !1,
@@ -6133,27 +6129,27 @@ _global.SENTRY_RELEASE = {
             size: n,
             toExplicit: c
           } = e;
-          const r = c ?? `/videos/${s.id}`,
-            i = {
-              className: As.videoPreview,
+          const i = c ?? `/videos/${s.id}`,
+            o = {
+              className: Ds.videoPreview,
               "data-gtm-category": "Videos",
               "data-gtm-action": "Video Click-through",
-              "data-gtm-label": r
+              "data-gtm-label": i
             },
-            o = (0, d.jsxs)("div", {
-              className: As.card,
-              children: [(0, d.jsx)(Ds, {
+            r = (0, d.jsxs)("div", {
+              className: Ds.card,
+              children: [(0, d.jsx)(Fs, {
                 video: s,
                 size: n
               }), (0, d.jsxs)("div", {
-                className: As.info,
+                className: Ds.info,
                 children: [a ? (0, d.jsx)("div", {
-                  className: As.gameTitle,
+                  className: Ds.gameTitle,
                   dangerouslySetInnerHTML: {
                     __html: s.game.title
                   }
                 }) : "", (0, d.jsx)("h5", {
-                  className: As.title,
+                  className: Ds.title,
                   dangerouslySetInnerHTML: {
                     __html: s.title
                   }
@@ -6161,17 +6157,17 @@ _global.SENTRY_RELEASE = {
               })]
             });
           return t ? (0, d.jsx)("a", {
-            href: r,
+            href: i,
             target: "_blank",
-            ...i,
-            children: o
+            ...o,
+            children: r
           }) : (0, d.jsx)(m, {
-            to: r,
-            ...i,
-            children: o
+            to: i,
+            ...o,
+            children: r
           })
         };
-      class Os extends o.Component {
+      class Rs extends r.Component {
         constructor(e) {
           super(e), this.state = {
             error: {
@@ -6195,15 +6191,15 @@ _global.SENTRY_RELEASE = {
           }
         }
         render() {
-          return null !== this.state.error.code ? (0, d.jsx)($s, {
+          return null !== this.state.error.code ? (0, d.jsx)(As, {
             error: this.state.error
           }) : this.props.children
         }
       }
-      const Rs = function(e) {
+      const Us = function(e) {
           let a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
           return function(t) {
-            return (0, d.jsx)(Os, {
+            return (0, d.jsx)(Rs, {
               header: a,
               children: (0, d.jsx)(e, {
                 ...t
@@ -6211,7 +6207,7 @@ _global.SENTRY_RELEASE = {
             })
           }
         },
-        Us = (0, o.forwardRef)(((e, a) => {
+        Gs = (0, r.forwardRef)(((e, a) => {
           const {
             children: t,
             tag: s = "div"
@@ -6225,7 +6221,7 @@ _global.SENTRY_RELEASE = {
             })
           })
         })),
-        Gs = {
+        Hs = {
           visible: {
             opacity: 1
           },
@@ -6233,32 +6229,32 @@ _global.SENTRY_RELEASE = {
             opacity: 0
           }
         },
-        Hs = {
+        Ws = {
           ease: "easeIn",
           duration: .4
         },
-        Ws = e => {
+        qs = e => {
           let {
             children: a
           } = e;
           return (0, d.jsx)(Ee.motion.div, Object.assign({
             className: "rockstargames-componentsf530747be99449caf15a0155061aee75",
-            variants: Gs,
+            variants: Hs,
             initial: "hidden",
             whileInView: "visible",
             viewport: {
               margin: "-20%",
               once: !0
             },
-            transition: Hs
+            transition: Ws
           }, {
             children: a
           }))
         },
-        qs = e => a => (0, d.jsx)(Ws, {
+        Xs = e => a => (0, d.jsx)(qs, {
           children: (0, d.jsx)(e, Object.assign({}, a))
         }),
-        Xs = {
+        Ks = {
           visible: {
             opacity: 1,
             y: 0
@@ -6268,33 +6264,33 @@ _global.SENTRY_RELEASE = {
             y: 40
           }
         },
-        Ks = {
+        Ys = {
           ease: "easeIn",
           duration: .75
         },
-        Ys = e => {
+        Qs = e => {
           let {
             children: a
           } = e;
           return (0, d.jsx)(Ee.motion.div, {
             className: "rockstargames-componentse88740b4d3c20ab9f8656e87b324d143",
-            variants: Xs,
+            variants: Ks,
             initial: "hidden",
             whileInView: "visible",
             viewport: {
               margin: "-20%",
               once: !0
             },
-            transition: Ks,
+            transition: Ys,
             children: a
           })
         },
-        Qs = e => a => (0, d.jsx)(Ys, {
+        Zs = e => a => (0, d.jsx)(Qs, {
           children: (0, d.jsx)(e, {
             ...a
           })
         }),
-        Zs = {
+        Js = {
           cardOpen: {
             ease: [.77, 0, .175, 1],
             duration: .5
@@ -6312,7 +6308,7 @@ _global.SENTRY_RELEASE = {
             duration: .05
           }
         },
-        Js = {
+        en = {
           plainCard: {
             expanded: {
               initial: {
@@ -6468,31 +6464,31 @@ _global.SENTRY_RELEASE = {
             }
           }
         },
-        en = function() {
+        an = function() {
           let e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "collapsed";
-          return Js[arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "imageMask"][e]
+          return en[arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "imageMask"][e]
         };
-      var an = t(1860),
-        tn = t.n(an);
-      const sn = JSON.parse('{"assets":[],"layers":[{"ddd":0,"ind":0,"ty":4,"nm":"Shape Layer 1","ks":{"o":{"k":100},"r":{"k":0},"p":{"k":[300,300,0]},"a":{"k":[0,0,0]},"s":{"k":[244,244,100]}},"ao":0,"shapes":[{"d":1,"ty":"el","s":{"k":[100,100]},"p":{"k":[0,0]},"nm":"Ellipse Path 1","mn":"ADBE Vector Shape - Ellipse"},{"ty":"tm","s":{"k":[{"i":{"x":[0.439],"y":[1.016]},"o":{"x":[0.561],"y":[0.015]},"n":["0p439_1p016_0p561_0p015"],"t":5,"s":[100],"e":[0]},{"t":33.0000013441176}],"ix":1},"e":{"k":[{"i":{"x":[0.439],"y":[1.017]},"o":{"x":[0.561],"y":[0.016]},"n":["0p439_1p017_0p561_0p016"],"t":0,"s":[100],"e":[0]},{"t":30.0000012219251}],"ix":2},"o":{"k":0,"ix":3},"m":1,"ix":2,"nm":"Trim Paths 1","mn":"ADBE Vector Filter - Trim"},{"ty":"st","fillEnabled":true,"c":{"k":[1,1,1,1]},"o":{"k":100},"w":{"k":16},"lc":2,"lj":1,"ml":4,"nm":"Stroke 1","mn":"ADBE Vector Graphic - Stroke"}],"ip":0,"op":900.000036657751,"st":0,"bm":0,"sr":1}],"v":"4.5.3","ddd":0,"ip":1.00000004073083,"op":33.0000013441175,"fr":29.9700012207031,"w":600,"h":600}'),
-        nn = JSON.parse('{"v":"5.7.3","fr":60,"ip":0,"op":64,"w":300,"h":300,"nm":"Dot_Loading","ddd":0,"assets":[],"layers":[{"ddd":0,"ind":1,"ty":4,"nm":"center","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":1,"k":[{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":10,"s":[144,144,0],"to":[0,-3.333,0],"ti":[0,0,0]},{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":22,"s":[144,124,0],"to":[0,0,0],"ti":[0,-3.333,0]},{"t":34,"s":[144,144,0]}],"ix":2},"a":{"a":0,"k":[12.5,6,0],"ix":1},"s":{"a":0,"k":[764.558,764.558,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,-0.828],[0.828,0],[0,0.828],[-0.828,0]],"o":[[0,0.828],[-0.828,0],[0,-0.828],[0.828,0]],"v":[[1.5,0],[0,1.5],[-1.5,0],[0,-1.5]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fond 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[17.667,5.833],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Groupe 1","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":76,"st":-62,"bm":0},{"ddd":0,"ind":2,"ty":4,"nm":"right","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":1,"k":[{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":5,"s":[144,144,0],"to":[0,-3.333,0],"ti":[0,0,0]},{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":17,"s":[144,124,0],"to":[0,0,0],"ti":[0,-3.333,0]},{"t":29,"s":[144,144,0]}],"ix":2},"a":{"a":0,"k":[12.5,6,0],"ix":1},"s":{"a":0,"k":[764.558,764.558,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,-0.828],[0.828,0],[0,0.828],[-0.828,0]],"o":[[0,0.828],[-0.828,0],[0,-0.828],[0.828,0]],"v":[[1.5,0],[0,1.5],[-1.5,0],[0,-1.5]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fond 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[12.333,5.833],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Groupe 2","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":76,"st":-62,"bm":0},{"ddd":0,"ind":3,"ty":4,"nm":"left","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":1,"k":[{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":0,"s":[144,144,0],"to":[0,-3.333,0],"ti":[0,0,0]},{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":12,"s":[144,124,0],"to":[0,0,0],"ti":[0,-3.333,0]},{"t":24,"s":[144,144,0]}],"ix":2},"a":{"a":0,"k":[12.5,6,0],"ix":1},"s":{"a":0,"k":[764.558,764.558,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,-0.828],[0.828,0],[0,0.828],[-0.828,0]],"o":[[0,0.828],[-0.828,0],[0,-0.828],[0.828,0]],"v":[[1.5,0],[0,1.5],[-1.5,0],[0,-1.5]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fond 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[7,5.833],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Groupe 3","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":76,"st":-62,"bm":0}],"markers":[]}'),
-        cn = {
+      var tn = t(1860),
+        sn = t.n(tn);
+      const nn = JSON.parse('{"assets":[],"layers":[{"ddd":0,"ind":0,"ty":4,"nm":"Shape Layer 1","ks":{"o":{"k":100},"r":{"k":0},"p":{"k":[300,300,0]},"a":{"k":[0,0,0]},"s":{"k":[244,244,100]}},"ao":0,"shapes":[{"d":1,"ty":"el","s":{"k":[100,100]},"p":{"k":[0,0]},"nm":"Ellipse Path 1","mn":"ADBE Vector Shape - Ellipse"},{"ty":"tm","s":{"k":[{"i":{"x":[0.439],"y":[1.016]},"o":{"x":[0.561],"y":[0.015]},"n":["0p439_1p016_0p561_0p015"],"t":5,"s":[100],"e":[0]},{"t":33.0000013441176}],"ix":1},"e":{"k":[{"i":{"x":[0.439],"y":[1.017]},"o":{"x":[0.561],"y":[0.016]},"n":["0p439_1p017_0p561_0p016"],"t":0,"s":[100],"e":[0]},{"t":30.0000012219251}],"ix":2},"o":{"k":0,"ix":3},"m":1,"ix":2,"nm":"Trim Paths 1","mn":"ADBE Vector Filter - Trim"},{"ty":"st","fillEnabled":true,"c":{"k":[1,1,1,1]},"o":{"k":100},"w":{"k":16},"lc":2,"lj":1,"ml":4,"nm":"Stroke 1","mn":"ADBE Vector Graphic - Stroke"}],"ip":0,"op":900.000036657751,"st":0,"bm":0,"sr":1}],"v":"4.5.3","ddd":0,"ip":1.00000004073083,"op":33.0000013441175,"fr":29.9700012207031,"w":600,"h":600}'),
+        cn = JSON.parse('{"v":"5.7.3","fr":60,"ip":0,"op":64,"w":300,"h":300,"nm":"Dot_Loading","ddd":0,"assets":[],"layers":[{"ddd":0,"ind":1,"ty":4,"nm":"center","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":1,"k":[{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":10,"s":[144,144,0],"to":[0,-3.333,0],"ti":[0,0,0]},{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":22,"s":[144,124,0],"to":[0,0,0],"ti":[0,-3.333,0]},{"t":34,"s":[144,144,0]}],"ix":2},"a":{"a":0,"k":[12.5,6,0],"ix":1},"s":{"a":0,"k":[764.558,764.558,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,-0.828],[0.828,0],[0,0.828],[-0.828,0]],"o":[[0,0.828],[-0.828,0],[0,-0.828],[0.828,0]],"v":[[1.5,0],[0,1.5],[-1.5,0],[0,-1.5]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fond 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[17.667,5.833],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Groupe 1","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":76,"st":-62,"bm":0},{"ddd":0,"ind":2,"ty":4,"nm":"right","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":1,"k":[{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":5,"s":[144,144,0],"to":[0,-3.333,0],"ti":[0,0,0]},{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":17,"s":[144,124,0],"to":[0,0,0],"ti":[0,-3.333,0]},{"t":29,"s":[144,144,0]}],"ix":2},"a":{"a":0,"k":[12.5,6,0],"ix":1},"s":{"a":0,"k":[764.558,764.558,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,-0.828],[0.828,0],[0,0.828],[-0.828,0]],"o":[[0,0.828],[-0.828,0],[0,-0.828],[0.828,0]],"v":[[1.5,0],[0,1.5],[-1.5,0],[0,-1.5]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fond 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[12.333,5.833],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Groupe 2","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":76,"st":-62,"bm":0},{"ddd":0,"ind":3,"ty":4,"nm":"left","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":1,"k":[{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":0,"s":[144,144,0],"to":[0,-3.333,0],"ti":[0,0,0]},{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":12,"s":[144,124,0],"to":[0,0,0],"ti":[0,-3.333,0]},{"t":24,"s":[144,144,0]}],"ix":2},"a":{"a":0,"k":[12.5,6,0],"ix":1},"s":{"a":0,"k":[764.558,764.558,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,-0.828],[0.828,0],[0,0.828],[-0.828,0]],"o":[[0,0.828],[-0.828,0],[0,-0.828],[0.828,0]],"v":[[1.5,0],[0,1.5],[-1.5,0],[0,-1.5]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fond 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[7,5.833],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Groupe 3","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":76,"st":-62,"bm":0}],"markers":[]}'),
+        on = {
           SPINNING: "spinning",
           THREE_DOTS: "threeDots"
         },
         rn = e => {
           let a, {
-            type: t = cn.SPINNING
+            type: t = on.SPINNING
           } = e;
           switch (t) {
-            case cn.THREE_DOTS:
-              a = nn;
+            case on.THREE_DOTS:
+              a = cn;
               break;
-            case cn.SPINNING:
+            case on.SPINNING:
             default:
-              a = sn
+              a = nn
           }
-          return (0, d.jsx)(tn(), {
+          return (0, d.jsx)(sn(), {
             options: {
               loop: !0,
               autoplay: !0,
@@ -6784,19 +6780,19 @@ _global.SENTRY_RELEASE = {
         };
         e.hasOwnProperty("loc") && (t.loc = e.loc);
         var c = s[a] || new Set,
-          r = new Set,
-          i = new Set;
+          i = new Set,
+          o = new Set;
         for (c.forEach((function(e) {
-            i.add(e)
-          })); i.size > 0;) {
-          var o = i;
-          i = new Set, o.forEach((function(e) {
-            r.has(e) || (r.add(e), (s[e] || new Set).forEach((function(e) {
-              i.add(e)
+            o.add(e)
+          })); o.size > 0;) {
+          var r = o;
+          o = new Set, r.forEach((function(e) {
+            i.has(e) || (i.add(e), (s[e] || new Set).forEach((function(e) {
+              o.add(e)
             })))
           }))
         }
-        return r.forEach((function(a) {
+        return i.forEach((function(a) {
           var s = n(e, a);
           s && t.definitions.push(s)
         })), t
@@ -7081,19 +7077,19 @@ _global.SENTRY_RELEASE = {
         };
         e.hasOwnProperty("loc") && (t.loc = e.loc);
         var c = s[a] || new Set,
-          r = new Set,
-          i = new Set;
+          i = new Set,
+          o = new Set;
         for (c.forEach((function(e) {
-            i.add(e)
-          })); i.size > 0;) {
-          var o = i;
-          i = new Set, o.forEach((function(e) {
-            r.has(e) || (r.add(e), (s[e] || new Set).forEach((function(e) {
-              i.add(e)
+            o.add(e)
+          })); o.size > 0;) {
+          var r = o;
+          o = new Set, r.forEach((function(e) {
+            i.has(e) || (i.add(e), (s[e] || new Set).forEach((function(e) {
+              o.add(e)
             })))
           }))
         }
-        return r.forEach((function(a) {
+        return i.forEach((function(a) {
           var s = n(e, a);
           s && t.definitions.push(s)
         })), t
@@ -7661,19 +7657,19 @@ _global.SENTRY_RELEASE = {
         };
         e.hasOwnProperty("loc") && (t.loc = e.loc);
         var c = s[a] || new Set,
-          r = new Set,
-          i = new Set;
+          i = new Set,
+          o = new Set;
         for (c.forEach((function(e) {
-            i.add(e)
-          })); i.size > 0;) {
-          var o = i;
-          i = new Set, o.forEach((function(e) {
-            r.has(e) || (r.add(e), (s[e] || new Set).forEach((function(e) {
-              i.add(e)
+            o.add(e)
+          })); o.size > 0;) {
+          var r = o;
+          o = new Set, r.forEach((function(e) {
+            i.has(e) || (i.add(e), (s[e] || new Set).forEach((function(e) {
+              o.add(e)
             })))
           }))
         }
-        return r.forEach((function(a) {
+        return i.forEach((function(a) {
           var s = n(e, a);
           s && t.definitions.push(s)
         })), t
@@ -7964,19 +7960,19 @@ _global.SENTRY_RELEASE = {
         };
         e.hasOwnProperty("loc") && (t.loc = e.loc);
         var c = s[a] || new Set,
-          r = new Set,
-          i = new Set;
+          i = new Set,
+          o = new Set;
         for (c.forEach((function(e) {
-            i.add(e)
-          })); i.size > 0;) {
-          var o = i;
-          i = new Set, o.forEach((function(e) {
-            r.has(e) || (r.add(e), (s[e] || new Set).forEach((function(e) {
-              i.add(e)
+            o.add(e)
+          })); o.size > 0;) {
+          var r = o;
+          o = new Set, r.forEach((function(e) {
+            i.has(e) || (i.add(e), (s[e] || new Set).forEach((function(e) {
+              o.add(e)
             })))
           }))
         }
-        return r.forEach((function(a) {
+        return i.forEach((function(a) {
           var s = n(e, a);
           s && t.definitions.push(s)
         })), t
@@ -8276,24 +8272,24 @@ _global.SENTRY_RELEASE = {
         }))
       }
 
-      function r(e, a) {
+      function i(e, a) {
         if ("FragmentSpread" === e.kind) a.add(e.name.value);
         else if ("VariableDefinition" === e.kind) {
           var t = e.type;
           "NamedType" === t.kind && a.add(t.name.value)
         }
         e.selectionSet && e.selectionSet.selections.forEach((function(e) {
-          r(e, a)
+          i(e, a)
         })), e.variableDefinitions && e.variableDefinitions.forEach((function(e) {
-          r(e, a)
+          i(e, a)
         })), e.definitions && e.definitions.forEach((function(e) {
-          r(e, a)
+          i(e, a)
         }))
       }
       s.definitions = s.definitions.concat(c(t(3784).definitions)), s.definitions = s.definitions.concat(c(t(8540).definitions));
-      var i = {};
+      var o = {};
 
-      function o(e, a) {
+      function r(e, a) {
         for (var t = 0; t < e.definitions.length; t++) {
           var s = e.definitions[t];
           if (s.name && s.name.value == a) return s
@@ -8302,29 +8298,29 @@ _global.SENTRY_RELEASE = {
       s.definitions.forEach((function(e) {
         if (e.name) {
           var a = new Set;
-          r(e, a), i[e.name.value] = a
+          i(e, a), o[e.name.value] = a
         }
       })), e.exports = s, e.exports.NewswireList = function(e, a) {
         var t = {
           kind: e.kind,
-          definitions: [o(e, a)]
+          definitions: [r(e, a)]
         };
         e.hasOwnProperty("loc") && (t.loc = e.loc);
-        var s = i[a] || new Set,
+        var s = o[a] || new Set,
           n = new Set,
           c = new Set;
         for (s.forEach((function(e) {
             c.add(e)
           })); c.size > 0;) {
-          var r = c;
-          c = new Set, r.forEach((function(e) {
-            n.has(e) || (n.add(e), (i[e] || new Set).forEach((function(e) {
+          var i = c;
+          c = new Set, i.forEach((function(e) {
+            n.has(e) || (n.add(e), (o[e] || new Set).forEach((function(e) {
               c.add(e)
             })))
           }))
         }
         return n.forEach((function(a) {
-          var s = o(e, a);
+          var s = r(e, a);
           s && t.definitions.push(s)
         })), t
       }(s, "NewswireList")
@@ -8957,4 +8953,4 @@ _global.SENTRY_RELEASE = {
     }
   }
 ]);
-//# sourceMappingURL=a4dc92bbc4eaeb95503a8b79c62896bc.js.map
+//# sourceMappingURL=b57c893b1e842f7d8d70e8dbfa5e3d32.js.map
