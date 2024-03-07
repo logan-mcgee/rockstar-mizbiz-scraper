@@ -7,13 +7,13 @@
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "b356924da36d0f3d7db4edbb6216f9bbe11be0f1",
+  release: "9e0f348dc2ade82ef557806d58f5a6f2792dae49",
   packageName: "@rockstargames/modules-core-header",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "b356924da36d0f3d7db4edbb6216f9bbe11be0f1"
+  id: "9e0f348dc2ade82ef557806d58f5a6f2792dae49"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [676], {
     20676: (e, t, r) => {
@@ -72,8 +72,8 @@ _global.SENTRY_RELEASE = {
         d = r(39080),
         p = r(18892),
         y = r(26952),
-        b = r.n(y),
-        m = [],
+        m = r.n(y),
+        b = [],
         g = function(e, t, r) {
           void 0 === r && (r = {});
           var o = n.useRef(null),
@@ -81,7 +81,7 @@ _global.SENTRY_RELEASE = {
               onFirstUpdate: r.onFirstUpdate,
               placement: r.placement || "bottom",
               strategy: r.strategy || "absolute",
-              modifiers: r.modifiers || m
+              modifiers: r.modifiers || b
             },
             u = n.useState({
               styles: {
@@ -130,7 +130,7 @@ _global.SENTRY_RELEASE = {
                   enabled: !1
                 }])
               };
-              return b()(o.current, e) ? o.current || e : (o.current = e, e)
+              return m()(o.current, e) ? o.current || e : (o.current = e, e)
             }), [a.onFirstUpdate, a.placement, a.strategy, a.modifiers, s]),
             g = n.useRef();
           return l((function() {
@@ -168,10 +168,10 @@ _global.SENTRY_RELEASE = {
           d = e.onFirstUpdate,
           p = e.innerRef,
           y = e.children,
-          b = n.useContext(o),
-          m = n.useState(null),
-          _ = m[0],
-          E = m[1],
+          m = n.useContext(o),
+          b = n.useState(null),
+          _ = b[0],
+          E = b[1],
           S = n.useState(null),
           k = S[0],
           M = S[1];
@@ -192,7 +192,7 @@ _global.SENTRY_RELEASE = {
               }])
             }
           }), [r, u, d, c, k]),
-          P = g(l || b, _, O),
+          P = g(l || m, _, O),
           R = P.state,
           U = P.styles,
           x = P.forceUpdate,
@@ -300,4 +300,4 @@ _global.SENTRY_RELEASE = {
     }
   }
 ]);
-//# sourceMappingURL=219af40d14ad518d0891233c966d3351.js.map
+//# sourceMappingURL=1f369e13b2a52d5f39aa57a3936d3129.js.map

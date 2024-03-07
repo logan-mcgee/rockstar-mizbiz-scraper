@@ -1,19 +1,19 @@
-/*! For license information please see 267ee9daaefe895dbc298bfdb178d02d.js.LICENSE.txt */ ! function() {
+/*! For license information please see d2c16c24b9fd01317d25d38be7a81299.js.LICENSE.txt */ ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "36b651d8-331a-4c93-b53f-abbae53c598e", e._sentryDebugIdIdentifier = "sentry-dbid-36b651d8-331a-4c93-b53f-abbae53c598e")
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "b4862167-08d8-4f18-9179-bab52eacc6ea", e._sentryDebugIdIdentifier = "sentry-dbid-b4862167-08d8-4f18-9179-bab52eacc6ea")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "b356924da36d0f3d7db4edbb6216f9bbe11be0f1",
+  release: "9e0f348dc2ade82ef557806d58f5a6f2792dae49",
   packageName: "@rockstargames/modules-core-header",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "b356924da36d0f3d7db4edbb6216f9bbe11be0f1"
+  id: "9e0f348dc2ade82ef557806d58f5a6f2792dae49"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [656], {
     73648: (e, a, t) => {
@@ -2470,29 +2470,32 @@ _global.SENTRY_RELEASE = {
           })
         },
         ys = () => {
-          const e = (0, i.useIntl)(),
-            {
-              track: a
-            } = H(),
-            {
-              doesPageDisplayBanner: t,
-              setDoesPageDisplayBanner: n
-            } = _s(),
-            [s, r] = (0, o.useState)(!0);
+          const e = (0, i.useIntl)();
+          let a = "/gta-online#drafter";
+          const [{
+            iso: t
+          }] = (0, i.getLocale)(), {
+            track: n
+          } = H();
+          a = `/gta-online?utm_source=banner&utm_medium=o_web&utm_campaign=00:cluckinbellfarmraid-gift-20240307&utm_content=${t}#drafter`;
+          const {
+            doesPageDisplayBanner: s,
+            setDoesPageDisplayBanner: r
+          } = _s(), [l, _] = (0, o.useState)(!0);
           return (0, o.useEffect)((() => {
             const e = ps(ts);
-            r("0" !== e), n(s)
-          }), [s]), (0, O.jsx)("div", {
+            _("0" !== e), r(l)
+          }), [l]), (0, O.jsx)("div", {
             className: "rockstargames-modules-core-headerf4577aee7a7d8076cf015c7c41ece124",
-            "data-display-banner": t,
+            "data-display-banner": s,
             children: (0, O.jsx)("div", {
               className: "rockstargames-modules-core-headerdd989a32390115312a927d25c8275997",
               children: (0, O.jsx)("p", {
                 children: (0, O.jsxs)("a", {
-                  href: "/gta-online#drafter",
+                  href: a,
                   className: "rockstargames-modules-core-headerdeb7911bb615e98d9c9c23c9a989dec7",
                   onClick: () => {
-                    a({
+                    n({
                       element_placement: "WOC",
                       event: "site_banner_click",
                       text: is.banner_rockstargames_gift_cta.defaultMessage
@@ -15591,4 +15594,4 @@ _global.SENTRY_RELEASE = {
     }
   }
 ]);
-//# sourceMappingURL=267ee9daaefe895dbc298bfdb178d02d.js.map
+//# sourceMappingURL=d2c16c24b9fd01317d25d38be7a81299.js.map

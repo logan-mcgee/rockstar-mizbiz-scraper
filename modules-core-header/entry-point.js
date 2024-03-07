@@ -2,18 +2,18 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "30f93f7d-e291-4aff-aafd-d777a83a46ba", e._sentryDebugIdIdentifier = "sentry-dbid-30f93f7d-e291-4aff-aafd-d777a83a46ba")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "70869532-2fb4-4852-9fd6-df44509d8077", e._sentryDebugIdIdentifier = "sentry-dbid-70869532-2fb4-4852-9fd6-df44509d8077")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "b356924da36d0f3d7db4edbb6216f9bbe11be0f1",
+  release: "9e0f348dc2ade82ef557806d58f5a6f2792dae49",
   packageName: "@rockstargames/modules-core-header",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "b356924da36d0f3d7db4edbb6216f9bbe11be0f1"
+  id: "9e0f348dc2ade82ef557806d58f5a6f2792dae49"
 }, System.register([], (function(e, t) {
   return {
     execute: function() {
@@ -18068,30 +18068,30 @@ _global.SENTRY_RELEASE = {
             get: t[n]
           })
         }, i.f = {}, i.e = e => Promise.all(Object.keys(i.f).reduce(((t, n) => (i.f[n](e, t), t)), [])), i.u = e => "js/" + {
-          20: "ce0290008e9a3263b166cb089ffe8cca",
-          72: "3af0748487a43dbcad8291eacdd75e0f",
+          20: "95a0c5baca4843df11e8880e585231cc",
+          72: "642c7fed9f8fb2799beeb06a35320be6",
           80: "fe06d617a0a64aa3659c684ca441b2ea",
-          136: "3fea12a13177bac4603c318ef232f2b6",
-          272: "6eea633cf306a4d99b300bb1b29cf7d1",
-          280: "853fe228eba9c48e3c3669f57a5e7988",
+          136: "e2da08cb7ed80864d64d2c46c4218159",
+          272: "faba90ede06b60675e852de3ee609289",
+          280: "dc5f05e7d78677d0ce23ff1e88b79ce8",
           320: "e9ff026a0fa0149766f3806ac5b5a86f",
-          356: "b9aca072b56d76903949e3ce263b4671",
-          436: "dd2ca048be43cc5378a31bf92f57d720",
-          492: "eb67698e955718106b70267bd8bc1c0b",
-          532: "8f7a52a39c925ff6471ddaaacd8a9ca9",
-          648: "9d4d98db1c98c35b970d12b7e397a67e",
-          656: "267ee9daaefe895dbc298bfdb178d02d",
-          660: "b32eb9b218780d1da37b18a57e1e7464",
-          676: "219af40d14ad518d0891233c966d3351",
-          692: "e829f6b6f68b96fb293265315437e59a",
-          728: "a2b2ee3edf2a39472eec5fd8e44a9098",
-          756: "152e31ea75c548ba826e16a6e675d55f",
-          800: "8cd52e64632d758c1dee16bdd2a6dc91",
-          856: "5a62268c013dc62eb572884d61a46769",
-          892: "ac4250d4d73e3dbbc6ed8652627aa9dd",
-          907: "3cf99f70b25da3f83536a41030a5df70",
-          912: "835c99ee776706186fd6f4dba90b510c",
-          923: "82ee19f1677576303f8006f8907d92c3"
+          356: "8b9388b0d1e4137fd83b239e0ad76ba7",
+          436: "4786c471724c6d2845338469e8a75f44",
+          492: "7a932089a57cdf697cf28b26ef5c718e",
+          532: "6b6b99fe878c049c5d043560e10935cd",
+          648: "632b46a214377d009ca02b88865bdb54",
+          656: "d2c16c24b9fd01317d25d38be7a81299",
+          660: "1112aafdee6565381f3db4438130f4ca",
+          676: "1f369e13b2a52d5f39aa57a3936d3129",
+          692: "d1a85e96d2746c2131bd57684d97c086",
+          728: "64f76bb6ca5f24117a87d9c514eb70ca",
+          756: "3387075310b736ffdc410464ff0935e9",
+          800: "955468bf96648d8fd7648243b1b1d219",
+          856: "d7137db20f8262aa00faa0d3057978a5",
+          892: "5ad650b136b1db4f831c735d71f3cdf5",
+          907: "151ff885af671cdc6405180e22cd454e",
+          912: "8eee5e0d8272628a53a5bdf785fff184",
+          923: "571ce1eb98a3971426f7b3bc572a80d4"
         } [e] + ".js", i.miniCssF = e => "css/033abf37aa979e8528a3e956e8c33d76.css", i.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {

@@ -2,20 +2,20 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       o = (new Error).stack;
-    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "6eaf77c3-2a5e-4644-a4e5-441c298052c9", e._sentryDebugIdIdentifier = "sentry-dbid-6eaf77c3-2a5e-4644-a4e5-441c298052c9")
+    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "5fb3d628-d260-4872-ace1-a9cc2eb9931c", e._sentryDebugIdIdentifier = "sentry-dbid-5fb3d628-d260-4872-ace1-a9cc2eb9931c")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "b356924da36d0f3d7db4edbb6216f9bbe11be0f1",
+  release: "9e0f348dc2ade82ef557806d58f5a6f2792dae49",
   packageName: "@rockstargames/modules-core-header",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "b356924da36d0f3d7db4edbb6216f9bbe11be0f1"
+  id: "9e0f348dc2ade82ef557806d58f5a6f2792dae49"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
-  [280, 660], {
+  [660, 280], {
     94660: (e, o, s) => {
       "use strict";
       s.r(o), s.d(o, {
@@ -25,8 +25,8 @@ _global.SENTRY_RELEASE = {
         createIntl: () => n.y,
         defineMessages: () => a.Os,
         englishLocale: () => u.u,
-        getLocale: () => d.c,
-        localeCookieHandler: () => c.c,
+        getLocale: () => c.c,
+        localeCookieHandler: () => d.c,
         locales: () => u.c,
         splitLocale: () => b.c,
         useIntl: () => l.c,
@@ -38,8 +38,8 @@ _global.SENTRY_RELEASE = {
         l = s(85844),
         i = s(73583),
         r = s(31292),
-        d = s(15448),
-        c = s(98612),
+        c = s(15448),
+        d = s(98612),
         u = s(23916),
         b = s(69423),
         m = s(24932),
@@ -51,7 +51,7 @@ _global.SENTRY_RELEASE = {
       "use strict";
       s.d(o, {
         C_: () => r,
-        eO: () => d
+        eO: () => c
       });
       var t = s(88200),
         n = s(23483),
@@ -65,18 +65,18 @@ _global.SENTRY_RELEASE = {
           children: a
         } = e;
         const r = (0, t.useMemo)((() => (0, l.c)(s)), [s]),
-          d = (0, t.useMemo)((() => function(e, o) {
+          c = (0, t.useMemo)((() => function(e, o) {
             return e?.[o] ?? {}
           }(o, r[1])), [s, o]);
         return (0, i.jsx)(n.c, {
-          messages: d,
+          messages: c,
           locale: r[0],
           defaultLocale: "en",
           children: a
         }, r[0])
       };
 
-      function d(e, o) {
+      function c(e, o) {
         return s => {
           const [{
             iso: t
@@ -128,9 +128,9 @@ _global.SENTRY_RELEASE = {
         })(e), l = (e => {
           const o = e.search.substring(1).split("&").find((e => e.startsWith("lang")));
           return o?.split("=")[1]
-        })(e), i = a.u, [r, d] = (0, n.c)(`rockstarweb_lang.${o.cookieIdentifier}`, s ?? void 0);
-        let c = i;
-        return c = o.currentSite?.site === t.U.www ? a.c.find((e => e.subdomaincom === l)) || a.c.find((e => e.subdomaincom === s)) || i : a.c.find((e => e.iso === r)) || i, [c, d]
+        })(e), i = a.u, [r, c] = (0, n.c)(`rockstarweb_lang.${o.cookieIdentifier}`, s ?? void 0);
+        let d = i;
+        return d = o.currentSite?.site === t.U.www ? a.c.find((e => e.subdomaincom === l)) || a.c.find((e => e.subdomaincom === s)) || i : a.c.find((e => e.iso === r)) || i, [d, c]
       }
     },
     98612: (e, o, s) => {
@@ -258,4 +258,4 @@ _global.SENTRY_RELEASE = {
     }
   }
 ]);
-//# sourceMappingURL=853fe228eba9c48e3c3669f57a5e7988.js.map
+//# sourceMappingURL=1112aafdee6565381f3db4438130f4ca.js.map

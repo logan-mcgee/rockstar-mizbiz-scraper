@@ -7,34 +7,34 @@
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "b356924da36d0f3d7db4edbb6216f9bbe11be0f1",
+  release: "9e0f348dc2ade82ef557806d58f5a6f2792dae49",
   packageName: "@rockstargames/modules-core-header",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "b356924da36d0f3d7db4edbb6216f9bbe11be0f1"
+  id: "9e0f348dc2ade82ef557806d58f5a6f2792dae49"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [912], {
-    2912: (e, a, d) => {
-      d.r(a), d.d(a, {
+    2912: (e, a, o) => {
+      o.r(a), o.d(a, {
         default: () => l
       });
-      var o = d(88200),
-        n = d(78940),
-        t = d(63480);
+      var d = o(88200),
+        n = o(78940),
+        t = o(63480);
       const l = e => {
         let {
           basename: a,
-          children: d,
+          children: o,
           history: l
         } = e;
-        const [s, r] = (0, o.useState)({
+        const [s, f] = (0, d.useState)({
           action: l.action,
           location: l.location
         });
-        return (0, o.useLayoutEffect)((() => l.listen(((e, a) => {
-          r({
+        return (0, d.useLayoutEffect)((() => l.listen(((e, a) => {
+          f({
             location: e,
             action: a
           })
@@ -43,10 +43,10 @@ _global.SENTRY_RELEASE = {
           location: s.location,
           navigationType: s.action,
           navigator: l,
-          children: d
+          children: o
         })
       }
     }
   }
 ]);
-//# sourceMappingURL=835c99ee776706186fd6f4dba90b510c.js.map
+//# sourceMappingURL=8eee5e0d8272628a53a5bdf785fff184.js.map

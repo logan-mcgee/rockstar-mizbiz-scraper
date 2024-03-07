@@ -7,13 +7,13 @@
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "b356924da36d0f3d7db4edbb6216f9bbe11be0f1",
+  release: "9e0f348dc2ade82ef557806d58f5a6f2792dae49",
   packageName: "@rockstargames/modules-core-header",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "b356924da36d0f3d7db4edbb6216f9bbe11be0f1"
+  id: "9e0f348dc2ade82ef557806d58f5a6f2792dae49"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [136, 756], {
     94136: (e, n, t) => {
@@ -68,8 +68,8 @@ _global.SENTRY_RELEASE = {
             currentTarget: e.currentTarget
           }
         })),
-        b = (0, p.W)(),
         y = (0, p.W)(),
+        b = (0, p.W)(),
         h = (0, p.Y)({
           async: !0
         }),
@@ -81,7 +81,7 @@ _global.SENTRY_RELEASE = {
             l = o.useRef(),
             v = o.useRef(!1),
             p = o.useRef(null),
-            y = e.children,
+            b = e.children,
             w = e.disabled,
             E = e.noFocusGuards,
             O = e.persistentFocus,
@@ -127,7 +127,7 @@ _global.SENTRY_RELEASE = {
             H = o.useCallback((function(e) {
               v.current && m.useMedium(e)
             }), []),
-            Y = b.useMedium,
+            Y = y.useMedium,
             V = o.useCallback((function(e) {
               l.current !== e && (l.current = e, f(e))
             }), []),
@@ -165,7 +165,7 @@ _global.SENTRY_RELEASE = {
             className: I,
             onBlur: Y,
             onFocus: H
-          }), y), z && o.createElement("div", {
+          }), b), z && o.createElement("div", {
             "data-focus-guard": !0,
             tabIndex: w ? -1 : 0,
             style: s
@@ -428,13 +428,13 @@ _global.SENTRY_RELEASE = {
               return D(n)
             }));
           if (p[0] || (p = v)[0]) {
-            var m, b, y, h = K([s], l).map((function(e) {
+            var m, y, b, h = K([s], l).map((function(e) {
                 return e.node
               })),
-              g = (m = h, b = p, y = new Map, b.forEach((function(e) {
-                return y.set(e.node, e)
+              g = (m = h, y = p, b = new Map, y.forEach((function(e) {
+                return b.set(e.node, e)
               })), m.map((function(e) {
-                return y.get(e)
+                return b.get(e)
               })).filter(L)),
               w = g.map((function(e) {
                 return e.node
@@ -451,15 +451,15 @@ _global.SENTRY_RELEASE = {
                     v = d - s,
                     p = n.indexOf(u),
                     m = n.indexOf(i),
-                    b = (c = n, f = new Set, c.forEach((function(e) {
+                    y = (c = n, f = new Set, c.forEach((function(e) {
                       return f.add($(e, c))
                     })), c.filter((function(e) {
                       return f.has(e)
                     }))),
-                    y = (void 0 !== t ? b.indexOf(t) : -1) - (r ? b.indexOf(r) : d),
+                    b = (void 0 !== t ? y.indexOf(t) : -1) - (r ? y.indexOf(r) : d),
                     h = ne(e, 0),
                     g = ne(e, o - 1);
-                  return -1 === d || -1 === l ? te : !v && l >= 0 ? l : d <= p && a && Math.abs(v) > 1 ? g : d >= m && a && Math.abs(v) > 1 ? h : v && Math.abs(y) > 1 ? l : d <= p ? g : d > m ? h : v ? Math.abs(v) > 1 ? l : (o + l + v) % o : void 0
+                  return -1 === d || -1 === l ? te : !v && l >= 0 ? l : d <= p && a && Math.abs(v) > 1 ? g : d >= m && a && Math.abs(v) > 1 ? h : v && Math.abs(b) > 1 ? l : d <= p ? g : d > m ? h : v ? Math.abs(v) > 1 ? l : (o + l + v) % o : void 0
                 }
               }(w, h, c, n);
             if (E === te) {
@@ -511,11 +511,11 @@ _global.SENTRY_RELEASE = {
         ve = null,
         pe = null,
         me = !1,
-        be = function() {
+        ye = function() {
           return !0
         };
 
-      function ye(e, n, t, r) {
+      function be(e, n, t, r) {
         var o = null,
           u = e;
         do {
@@ -545,23 +545,23 @@ _global.SENTRY_RELEASE = {
               v = f.shards,
               p = f.crossFrame,
               m = f.focusOptions,
-              b = d || pe && pe.portaledElement,
-              y = document && document.activeElement;
-            if (b) {
-              var h = [b].concat(v.map(he).filter(Boolean));
-              if (y && ! function(e) {
-                  return (le.whiteList || be)(e)
-                }(y) || (s || (p ? Boolean(me) : "meanwhile" === me) || !(document && document.activeElement === document.body || function(e) {
+              y = d || pe && pe.portaledElement,
+              b = document && document.activeElement;
+            if (y) {
+              var h = [y].concat(v.map(he).filter(Boolean));
+              if (b && ! function(e) {
+                  return (le.whiteList || ye)(e)
+                }(b) || (s || (p ? Boolean(me) : "meanwhile" === me) || !(document && document.activeElement === document.body || function(e) {
                   void 0 === e && (e = document);
                   var n = z(e);
                   return !!n && x(e.querySelectorAll("[".concat(c, "]"))).some((function(e) {
                     return X(e, n)
                   }))
-                }()) || !ve && l) && (b && !(Z(h) || y && function(e, n) {
+                }()) || !ve && l) && (y && !(Z(h) || b && function(e, n) {
                   return n.some((function(n) {
                     return ge(e, n, n)
                   }))
-                }(y, h) || (i = y, pe && pe.portaledElement === i)) && (document && !ve && y && !l ? (y.blur && y.blur(), document.body.focus()) : (a = fe(h, ve, {
+                }(b, h) || (i = b, pe && pe.portaledElement === i)) && (document && !ve && b && !l ? (b.blur && b.blur(), document.body.focus()) : (a = fe(h, ve, {
                   focusOptions: m
                 }), pe = {})), me = !1, ve = document && document.activeElement), document) {
                 var g = document && document.activeElement,
@@ -588,7 +588,7 @@ _global.SENTRY_RELEASE = {
                   return n && t.dataset.focusAutoGuard
                 })).forEach((function(e) {
                   return e.node.removeAttribute("tabIndex")
-                })), ye(E, w.length, 1, w), ye(E, -1, -1, w))
+                })), be(E, w.length, 1, w), be(E, -1, -1, w))
               }
             }
           }
@@ -612,7 +612,7 @@ _global.SENTRY_RELEASE = {
           observerNode: t,
           portaledElement: n
         })
-      })), b.assignMedium(Oe), y.assignMedium((function(e) {
+      })), y.assignMedium(Oe), b.assignMedium((function(e) {
         return e({
           moveFocusInside: fe,
           focusInside: Z
@@ -712,7 +712,7 @@ _global.SENTRY_RELEASE = {
       var Pe = function(e) {
         o.useEffect((function() {
           var n = !0;
-          return y.useMedium((function(t) {
+          return b.useMedium((function(t) {
               var r = e && e.current;
               n && r && (t.focusInside(r) || t.moveFocusInside(r, null))
             })),
@@ -1036,4 +1036,4 @@ _global.SENTRY_RELEASE = {
     }
   }
 ]);
-//# sourceMappingURL=3fea12a13177bac4603c318ef232f2b6.js.map
+//# sourceMappingURL=e2da08cb7ed80864d64d2c46c4218159.js.map

@@ -7,13 +7,13 @@
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "b356924da36d0f3d7db4edbb6216f9bbe11be0f1",
+  release: "9e0f348dc2ade82ef557806d58f5a6f2792dae49",
   packageName: "@rockstargames/modules-core-header",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "b356924da36d0f3d7db4edbb6216f9bbe11be0f1"
+  id: "9e0f348dc2ade82ef557806d58f5a6f2792dae49"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [272], {
     22272: (e, n, t) => {
@@ -43,8 +43,8 @@ _global.SENTRY_RELEASE = {
             m = e.enabled,
             p = e.shards,
             g = e.sideCar,
-            b = e.noIsolation,
-            w = e.inert,
+            w = e.noIsolation,
+            b = e.inert,
             y = e.allowPinchZoom,
             E = e.as,
             C = void 0 === E ? "div" : E,
@@ -57,8 +57,8 @@ _global.SENTRY_RELEASE = {
             sideCar: u,
             removeScrollBar: v,
             shards: p,
-            noIsolation: b,
-            inert: w,
+            noIsolation: w,
+            inert: b,
             setCallbacks: d,
             allowPinchZoom: !!y,
             lockRef: t,
@@ -140,7 +140,7 @@ _global.SENTRY_RELEASE = {
             l = e.gap;
           return void 0 === t && (t = "margin"), "\n  .".concat("with-scroll-bars-hidden", " {\n   overflow: hidden ").concat(r, ";\n   padding-right: ").concat(l, "px ").concat(r, ";\n  }\n  body {\n    overflow: hidden ").concat(r, ";\n    overscroll-behavior: contain;\n    ").concat([n && "position: relative ".concat(r, ";"), "margin" === t && "\n    padding-left: ".concat(o, "px;\n    padding-top: ").concat(i, "px;\n    padding-right: ").concat(u, "px;\n    margin-left:0;\n    margin-top:0;\n    margin-right: ").concat(l, "px ").concat(r, ";\n    "), "padding" === t && "padding-right: ".concat(l, "px ").concat(r, ";")].filter(Boolean).join(""), "\n  }\n  \n  .").concat(a, " {\n    right: ").concat(l, "px ").concat(r, ";\n  }\n  \n  .").concat(c, " {\n    margin-right: ").concat(l, "px ").concat(r, ";\n  }\n  \n  .").concat(a, " .").concat(a, " {\n    right: 0 ").concat(r, ";\n  }\n  \n  .").concat(c, " .").concat(c, " {\n    margin-right: 0 ").concat(r, ";\n  }\n  \n  body {\n    ").concat("--removed-body-scroll-bar-size", ": ").concat(l, "px;\n  }\n")
         },
-        b = function(e) {
+        w = function(e) {
           var n = e.noRelative,
             t = e.noImportant,
             r = e.gapMode,
@@ -169,18 +169,18 @@ _global.SENTRY_RELEASE = {
             styles: g(c, !n, a, t ? "" : "!important")
           })
         },
-        w = !1;
+        b = !1;
       if ("undefined" != typeof window) try {
         var y = Object.defineProperty({}, "passive", {
           get: function() {
-            return w = !0, !0
+            return b = !0, !0
           }
         });
         window.addEventListener("test", y, y), window.removeEventListener("test", y, y)
       } catch (e) {
-        w = !1
+        b = !1
       }
-      var E = !!w && {
+      var E = !!b && {
           passive: !1
         },
         C = function(e, n) {
@@ -346,7 +346,7 @@ _global.SENTRY_RELEASE = {
           g = e.inert;
         return o.createElement(o.Fragment, null, g ? o.createElement(i, {
           styles: N(c)
-        }) : null, p ? o.createElement(b, {
+        }) : null, p ? o.createElement(w, {
           gapMode: e.gapMode
         }) : null)
       })), s);
@@ -474,4 +474,4 @@ _global.SENTRY_RELEASE = {
     }
   }
 ]);
-//# sourceMappingURL=6eea633cf306a4d99b300bb1b29cf7d1.js.map
+//# sourceMappingURL=faba90ede06b60675e852de3ee609289.js.map
