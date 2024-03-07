@@ -7,13 +7,13 @@
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "5e225a56a96343405c858680af91190e5116b19e",
+  release: "63eddca94fa9726ada78d0c14030f13fd7020af7",
   packageName: "@rockstargames/modules-core-screenshot-viewer",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "5e225a56a96343405c858680af91190e5116b19e"
+  id: "63eddca94fa9726ada78d0c14030f13fd7020af7"
 }, System.register([], (function(e, t) {
   return {
     execute: function() {
@@ -3949,7 +3949,7 @@ _global.SENTRY_RELEASE = {
             enumerable: !0,
             get: t[r]
           })
-        }, s.f = {}, s.e = e => Promise.all(Object.keys(s.f).reduce(((t, r) => (s.f[r](e, t), t)), [])), s.u = e => "js/737d5e6a3284f09e309f3a45da042654.js", s.miniCssF = e => "css/8ddeaa662a389c67ab26ff2d3e176f9a.css", s.g = function() {
+        }, s.f = {}, s.e = e => Promise.all(Object.keys(s.f).reduce(((t, r) => (s.f[r](e, t), t)), [])), s.u = e => "js/a7c568e21803e57f84dc91d2aa4d1d62.js", s.miniCssF = e => "css/8ddeaa662a389c67ab26ff2d3e176f9a.css", s.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
             return this || new Function("return this")()

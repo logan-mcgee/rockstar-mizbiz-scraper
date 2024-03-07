@@ -2,18 +2,18 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "c3050202-a3b3-4779-9dd1-8678f72805aa", e._sentryDebugIdIdentifier = "sentry-dbid-c3050202-a3b3-4779-9dd1-8678f72805aa")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "9a7f092c-803d-4710-aca5-49fdb05f052c", e._sentryDebugIdIdentifier = "sentry-dbid-9a7f092c-803d-4710-aca5-49fdb05f052c")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "5e225a56a96343405c858680af91190e5116b19e",
+  release: "63eddca94fa9726ada78d0c14030f13fd7020af7",
   packageName: "@rockstargames/sites-rockstar-tv",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "5e225a56a96343405c858680af91190e5116b19e"
+  id: "63eddca94fa9726ada78d0c14030f13fd7020af7"
 }, System.register(["@rockstargames/components", "@rockstargames/graph-client", "@rockstargames/modules-core-videoplayer", "@rockstargames/utils"], (function(e, t) {
   var r = {},
     n = {},
@@ -3999,7 +3999,7 @@ _global.SENTRY_RELEASE = {
             enumerable: !0,
             get: t[r]
           })
-        }, d.f = {}, d.e = e => Promise.all(Object.keys(d.f).reduce(((t, r) => (d.f[r](e, t), t)), [])), d.u = e => "js/5c9681c350d3eef238dc218ac8fac8ca.js", d.miniCssF = e => "css/ff86fabe995789bfa97d587455badf7b.css", d.g = function() {
+        }, d.f = {}, d.e = e => Promise.all(Object.keys(d.f).reduce(((t, r) => (d.f[r](e, t), t)), [])), d.u = e => "js/279ec685a06a90811c40fe8dcae09b29.js", d.miniCssF = e => "css/ff86fabe995789bfa97d587455badf7b.css", d.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
             return this || new Function("return this")()

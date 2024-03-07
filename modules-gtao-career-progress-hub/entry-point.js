@@ -2,18 +2,18 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "e0ff1a80-a32f-461a-ae75-c05d625ae0c1", e._sentryDebugIdIdentifier = "sentry-dbid-e0ff1a80-a32f-461a-ae75-c05d625ae0c1")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "8d6f8439-87a0-4b33-89e1-10747f7d2c57", e._sentryDebugIdIdentifier = "sentry-dbid-8d6f8439-87a0-4b33-89e1-10747f7d2c57")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "5e225a56a96343405c858680af91190e5116b19e",
+  release: "63eddca94fa9726ada78d0c14030f13fd7020af7",
   packageName: "@rockstargames/modules-gtao-career-progress-hub",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "5e225a56a96343405c858680af91190e5116b19e"
+  id: "63eddca94fa9726ada78d0c14030f13fd7020af7"
 }, System.register(["@rockstargames/components", "@rockstargames/graph-client", "@rockstargames/modules-core-highlights", "@rockstargames/modules-core-sc-user", "@rockstargames/tina", "@rockstargames/utils"], (function(e, t) {
   var n = {},
     r = {},
@@ -10366,8 +10366,8 @@ _global.SENTRY_RELEASE = {
               "use strict";
               var r = {
                   "./bootstrap": () => n.e(472).then((() => () => n(1472))),
-                  "./index": () => Promise.all([n.e(56), n.e(440), n.e(856)]).then((() => () => n(5856))),
-                  "./tina": () => Promise.all([n.e(56), n.e(440), n.e(896)]).then((() => () => n(9896)))
+                  "./index": () => Promise.all([n.e(256), n.e(230), n.e(856)]).then((() => () => n(5856))),
+                  "./tina": () => Promise.all([n.e(256), n.e(230), n.e(896)]).then((() => () => n(9896)))
                 },
                 a = (e, t) => (n.R = t, t = n.o(r, e) ? r[e]() : Promise.resolve().then((() => {
                   throw new Error('Module "' + e + '" does not exist in container.')
@@ -10431,21 +10431,21 @@ _global.SENTRY_RELEASE = {
             get: t[n]
           })
         }, p.f = {}, p.e = e => Promise.all(Object.keys(p.f).reduce(((t, n) => (p.f[n](e, t), t)), [])), p.u = e => "js/" + {
-          56: "05d6ae26b9f5f51d4dac3f586f1d9f20",
           61: "6142d9487d60932e2a7050baaab6d72f",
-          216: "ec09d13dd76c2d952b0662d74da3f38d",
-          280: "ad27f85b46f15e2cd536413d326b0fb2",
-          436: "32ec2f8f85be93b51975a989f834a599",
-          440: "bea22ba0309569f3a48c0314f107172b",
-          472: "4ac2365dacb05d32d8e31943d2bda7d2",
-          544: "4d31d3624335129aa20cfd0d21d6abcf",
-          660: "070d9a26a02e594355acc250f8d34412",
-          676: "b29aca33e22819653276cb446e7aed87",
-          692: "3660298dfa857cc59b41c4530f5a50b9",
-          856: "45bbeb9d92a66518dafbd3fa538e96c9",
-          896: "8c0b94cff6cf45d9b7e42be1802650b8",
-          907: "cdd4c47bd012fed5690a2ad43bdce6b0"
-        } [e] + ".js", p.miniCssF = e => "css/ecce02f66594c57df70154e664f874ef.css", p.g = function() {
+          72: "e8092ae739d58b4c9a9072b18f98b2f5",
+          230: "41e04d3cc203300ad14d368470d3d416",
+          256: "dba5ca52d4e50beaf0ab59cfd3903925",
+          280: "749bb7129126b23b46c2217d00319ade",
+          436: "fdf759b682a6508c1d8eb978d983c130",
+          472: "697555d37639b6e8c89129a4b187a6f1",
+          544: "fd24453e429ea9bd70354b7a2efafaa5",
+          660: "c69fd29f8470ead87e21a14cc2913f1b",
+          676: "8d8c5d56e6543b4f5fb60867c921904c",
+          692: "9b61ca6fcffe213ab0c8cb0c7d33d8f5",
+          856: "8d025b66374394784be363ab8622acf7",
+          896: "28b920ad355dd8781606da519976fb3b",
+          907: "e26b5f0f86ad87bcd8bce050846f2a2c"
+        } [e] + ".js", p.miniCssF = e => "css/fd7739e83fecb0d7b9c225844ff78de4.css", p.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
             return this || new Function("return this")()
@@ -10484,7 +10484,7 @@ _global.SENTRY_RELEASE = {
           })
         }, s = {
           61: [3061],
-          440: [1668, 1740, 2836, 3052, 5792, 6752],
+          230: [1668, 1740, 2836, 3052, 5792, 6752],
           896: [5652, 9468]
         }, c = {
           1668: ["default", "./index", 8856],
@@ -10566,7 +10566,7 @@ _global.SENTRY_RELEASE = {
                   }
                 },
                 s = [];
-              return "default" === n && (i("@popperjs/core", "2.11.8", (() => p.e(692).then((() => () => p(8692))))), i("@rockstargames/locale-tools", "1.0.0", (() => Promise.all([p.e(907), p.e(61), p.e(660)]).then((() => () => p(4660))))), i("framer-motion", "7.10.3", (() => p.e(436).then((() => () => p(6436))))), i("gsap", "3.12.2", (() => p.e(216).then((() => () => p(216))))), i("react-dom", "18.2.0", (() => () => p(7332)), 1), i("react-intersection-observer", "8.34.0", (() => p.e(544).then((() => () => p(8544))))), i("react-popper", "2.3.0", (() => p.e(676).then((() => () => p(676))))), i("react-router-dom", "6.17.0", (() => () => p(788)), 1), i("react", "18.2.0", (() => () => p(8188)), 1), u(8856), u(3864), u(6806), u(1128), u(8428), u(9344)), s.length ? e[n] = Promise.all(s).then((() => e[n] = 1)) : e[n] = 1
+              return "default" === n && (i("@popperjs/core", "2.11.8", (() => p.e(692).then((() => () => p(8692))))), i("@rockstargames/locale-tools", "1.0.0", (() => Promise.all([p.e(907), p.e(61), p.e(660)]).then((() => () => p(4660))))), i("framer-motion", "7.10.3", (() => p.e(436).then((() => () => p(6436))))), i("gsap", "0.0.0", (() => p.e(72).then((() => () => p(4072))))), i("react-dom", "18.2.0", (() => () => p(7332)), 1), i("react-intersection-observer", "8.34.0", (() => p.e(544).then((() => () => p(8544))))), i("react-popper", "2.3.0", (() => p.e(676).then((() => () => p(676))))), i("react-router-dom", "6.17.0", (() => () => p(788)), 1), i("react", "18.2.0", (() => () => p(8188)), 1), u(8856), u(3864), u(6806), u(1128), u(8428), u(9344)), s.length ? e[n] = Promise.all(s).then((() => e[n] = 1)) : e[n] = 1
             }
           }
         })(), (() => {
@@ -10650,11 +10650,11 @@ _global.SENTRY_RELEASE = {
             a = {},
             o = {
               244: () => r("default", "framer-motion", [1, 7, 5, 1], (() => p.e(436).then((() => () => p(6436))))),
-              1512: () => r("default", "@rockstargames/locale-tools", [1, "workspace:x"], (() => Promise.all([p.e(907), p.e(61), p.e(280)]).then((() => () => p(4660))))),
+              696: () => r("default", "@rockstargames/locale-tools", [1, "workspace:*"], (() => Promise.all([p.e(907), p.e(61), p.e(280)]).then((() => () => p(4660))))),
               2004: () => r("default", "react-popper", [1, 2, 3, 0], (() => p.e(676).then((() => () => p(676))))),
               3557: () => r("default", "react-router-dom", [1, 6, 11, 2], (() => () => p(788))),
               5608: () => r("default", "react-intersection-observer", [1, 8, 33, 1], (() => p.e(544).then((() => () => p(8544))))),
-              9788: () => r("default", "gsap", [1, 3, 11, 5], (() => p.e(216).then((() => () => p(216))))),
+              6372: () => r("default", "gsap", [1, "workspace:*"], (() => p.e(72).then((() => () => p(4072))))),
               4304: () => r("default", "@popperjs/core", [1, 2, 11, 7], (() => p.e(692).then((() => () => p(8692))))),
               9080: () => r("default", "react-dom", [1, 18, 2, 0], (() => () => p(7332))),
               8200: () => r("default", "react", [1, 18, 2, 0], (() => () => p(8188)))
@@ -10668,7 +10668,7 @@ _global.SENTRY_RELEASE = {
             }
           }));
           var l = {
-              440: [244, 1512, 2004, 3557, 5608, 9788],
+              230: [244, 696, 2004, 3557, 5608, 6372],
               676: [4304, 9080]
             },
             i = {};
@@ -10703,7 +10703,7 @@ _global.SENTRY_RELEASE = {
             };
             p.f.miniCss = (t, n) => {
               e[t] ? n.push(e[t]) : 0 !== e[t] && {
-                440: 1
+                230: 1
               } [t] && n.push(e[t] = (e => new Promise(((t, n) => {
                 var r = p.miniCssF(e),
                   a = p.p + r;

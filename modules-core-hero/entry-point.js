@@ -2,18 +2,18 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "ad625e51-2b25-42bc-b795-0c6463ff48d5", e._sentryDebugIdIdentifier = "sentry-dbid-ad625e51-2b25-42bc-b795-0c6463ff48d5")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "45bdb2ad-9e2a-4008-8c20-103c9cc950b8", e._sentryDebugIdIdentifier = "sentry-dbid-45bdb2ad-9e2a-4008-8c20-103c9cc950b8")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "5e225a56a96343405c858680af91190e5116b19e",
+  release: "63eddca94fa9726ada78d0c14030f13fd7020af7",
   packageName: "@rockstargames/modules-core-hero",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "5e225a56a96343405c858680af91190e5116b19e"
+  id: "63eddca94fa9726ada78d0c14030f13fd7020af7"
 }, System.register(["@rockstargames/components", "@rockstargames/modules-core-sc-user", "@rockstargames/tina", "@rockstargames/utils"], (function(e, t) {
   var r = {},
     n = {},
@@ -97,23 +97,23 @@ _global.SENTRY_RELEASE = {
                 h = Object.assign,
                 m = {};
 
-              function b(e, t, r) {
+              function v(e, t, r) {
                 this.props = e, this.context = t, this.refs = m, this.updater = r || y
               }
 
-              function v() {}
+              function b() {}
 
               function g(e, t, r) {
                 this.props = e, this.context = t, this.refs = m, this.updater = r || y
               }
-              b.prototype.isReactComponent = {}, b.prototype.setState = function(e, t) {
+              v.prototype.isReactComponent = {}, v.prototype.setState = function(e, t) {
                 if ("object" != typeof e && "function" != typeof e && null != e) throw Error("setState(...): takes an object of state variables to update or a function which returns an object of state variables.");
                 this.updater.enqueueSetState(this, e, t, "setState")
-              }, b.prototype.forceUpdate = function(e) {
+              }, v.prototype.forceUpdate = function(e) {
                 this.updater.enqueueForceUpdate(this, e, "forceUpdate")
-              }, v.prototype = b.prototype;
-              var _ = g.prototype = new v;
-              _.constructor = g, h(_, b.prototype), _.isPureReactComponent = !0;
+              }, b.prototype = v.prototype;
+              var _ = g.prototype = new b;
+              _.constructor = g, h(_, v.prototype), _.isPureReactComponent = !0;
               var w = Array.isArray,
                 S = Object.prototype.hasOwnProperty,
                 k = {
@@ -262,7 +262,7 @@ _global.SENTRY_RELEASE = {
                   if (!j(e)) throw Error("React.Children.only expected to receive a single React element child.");
                   return e
                 }
-              }, t.Component = b, t.Fragment = o, t.Profiler = u, t.PureComponent = g, t.StrictMode = a, t.Suspense = f, t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = A, t.cloneElement = function(e, t, n) {
+              }, t.Component = v, t.Fragment = o, t.Profiler = u, t.PureComponent = g, t.StrictMode = a, t.Suspense = f, t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = A, t.cloneElement = function(e, t, n) {
                 if (null == e) throw Error("React.cloneElement(...): The argument must be a React element, but you passed " + e + ".");
                 var o = h({}, e.props),
                   a = e.key,
@@ -427,11 +427,11 @@ _global.SENTRY_RELEASE = {
             get: t[r]
           })
         }, l.f = {}, l.e = e => Promise.all(Object.keys(l.f).reduce(((t, r) => (l.f[r](e, t), t)), [])), l.u = e => "js/" + {
-          4: "540dcfd4b87196594c8e985be5ebdc7a",
+          4: "00a2e96c149df0c9b7e5f03d14556b01",
           200: "64c43e2bd4d9f48d9e5ccf624ee25306",
-          380: "675a4980e3fff0d3e2dac362ca9d8329",
-          712: "f265f9736f6701c2fe90e8351983d227"
-        } [e] + ".js", l.miniCssF = e => "css/d52409a72fda2cc21973e666083da765.css", l.g = function() {
+          380: "a6478ab9175cf5b29271c886cb030c44",
+          712: "156f80b0264fee2c874598e68ae1b1bc"
+        } [e] + ".js", l.miniCssF = e => "css/65245e55e1d76e445871a87dde121813.css", l.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
             return this || new Function("return this")()

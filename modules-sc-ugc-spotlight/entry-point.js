@@ -2,18 +2,18 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "dd46eec9-e8e4-4019-9356-991dd90bcdb6", e._sentryDebugIdIdentifier = "sentry-dbid-dd46eec9-e8e4-4019-9356-991dd90bcdb6")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "5962d5b3-bd7c-4b55-ab5c-bc6e4dd6f6dc", e._sentryDebugIdIdentifier = "sentry-dbid-5962d5b3-bd7c-4b55-ab5c-bc6e4dd6f6dc")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "5e225a56a96343405c858680af91190e5116b19e",
+  release: "63eddca94fa9726ada78d0c14030f13fd7020af7",
   packageName: "@rockstargames/modules-sc-ugc-spotlight",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "5e225a56a96343405c858680af91190e5116b19e"
+  id: "63eddca94fa9726ada78d0c14030f13fd7020af7"
 }, System.register(["@rockstargames/components", "@rockstargames/graph-client", "@rockstargames/modules-core-sc-user", "@rockstargames/polyfills", "@rockstargames/tina", "@rockstargames/utils"], (function(e, t) {
   var n = {},
     r = {},
@@ -10431,11 +10431,11 @@ _global.SENTRY_RELEASE = {
             get: t[n]
           })
         }, p.f = {}, p.e = e => Promise.all(Object.keys(p.f).reduce(((t, n) => (p.f[n](e, t), t)), [])), p.u = e => "js/" + {
-          324: "ab6cef636b071c6a46aa7d993146bcc8",
-          420: "994d21205882eb006d539a5a8c6d0e81",
-          436: "fac5cd2d840e91b03a8ec61776d0f8b9",
-          896: "5d9d5fa36ebe2519eb2b475e7788a047"
-        } [e] + ".js", p.miniCssF = e => "css/1250f6ceda8bbdac927c93886bb825a2.css", p.g = function() {
+          324: "267cd39bf3b930af12894af4aa3a54ed",
+          420: "95bb86c58d1781011b9a4bf9f30147d6",
+          436: "e52ac2bbd9be0f4e55ce71ce6c4235c8",
+          896: "0cfdb5a046219ccfc38ee7a970f16691"
+        } [e] + ".js", p.miniCssF = e => "css/06d6ae97261ad3c77e2835e458204282.css", p.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
             return this || new Function("return this")()

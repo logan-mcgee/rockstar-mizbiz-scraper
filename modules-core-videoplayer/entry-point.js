@@ -2,18 +2,18 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "7087519f-5fa4-4bb4-a90c-9a4ad3d7d4eb", e._sentryDebugIdIdentifier = "sentry-dbid-7087519f-5fa4-4bb4-a90c-9a4ad3d7d4eb")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "2c0761f2-1e61-42fd-92a0-a2c6784f5d3e", e._sentryDebugIdIdentifier = "sentry-dbid-2c0761f2-1e61-42fd-92a0-a2c6784f5d3e")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "5e225a56a96343405c858680af91190e5116b19e",
+  release: "63eddca94fa9726ada78d0c14030f13fd7020af7",
   packageName: "@rockstargames/modules-core-videoplayer",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "5e225a56a96343405c858680af91190e5116b19e"
+  id: "63eddca94fa9726ada78d0c14030f13fd7020af7"
 }, System.register(["@rockstargames/components", "@rockstargames/graph-client", "@rockstargames/intl", "@rockstargames/modules-core-agegate", "@rockstargames/modules-core-sc-user", "@rockstargames/polyfills", "@rockstargames/tina", "@rockstargames/utils"], (function(e, t) {
   var n = {},
     r = {},
@@ -10458,22 +10458,22 @@ _global.SENTRY_RELEASE = {
         }, m.f = {}, m.e = e => Promise.all(Object.keys(m.f).reduce(((t, n) => (m.f[n](e, t), t)), [])), m.u = e => "js/" + {
           42: "886ef261e601095b9ee6a96ffdaf7d44",
           61: "4badf4f19163415b16d3eec26bdf7b75",
-          148: "44932c492fc5fe4bafc67bbc8cd6e7cd",
-          192: "3d3785238f1a0eb9998faf6bca9ef00a",
-          216: "e9748e03070a96a93e284e2227f0fc96",
-          280: "747d9d3b41558ea5ff7dc122ce6cc04f",
-          384: "f67223025c15ecdb2977aca603bfb6eb",
-          432: "304dd1a63e9c452556ada28fe21a6e1f",
-          472: "2a1fbecadfef3425fa0e127ccbf395a8",
-          648: "fecc0feb5c4b3a182ccbf51aac6b6ebd",
-          660: "f6560069993b598d341bb241e9f18848",
+          148: "50bde2c9251f7b8883f688b5bb4f8f0c",
+          192: "438594c32ca32de6a69aaedc6ba09b59",
+          216: "3d2a72499fddfdb2b6b0334ded86cb91",
+          280: "96995db55c05a8f8f8ec4b8b7c428ee8",
+          384: "009a9c9baf012e7244f99c14933fb6b1",
+          432: "68be9e6d8f61e784ce58668eb30a26ba",
+          472: "c3f7b2e3a005b82facf7c6791922795b",
+          648: "0d63c08c8c2d0aeb10fc724cdd169672",
+          660: "152ba5633722a449fa9251f99e802bb8",
           896: "93b143b8353f70fb56309e0dd82f2bbb",
-          907: "3501e46a4f2dd3c82fc368ff277fa22d",
-          912: "151e2cb329c943ed02d157a9f5296787"
+          907: "840df2767bfcafdd7e1351239ad6d517",
+          912: "2d12bc3eaebc6e612a2ac64326fc4488"
         } [e] + ".js", m.miniCssF = e => "css/" + {
           148: "a126229ede95b503bfddbd53efcedae3",
-          216: "0e5bf38d821b71f57bb565fb90250b98",
-          432: "4d6a547e2621bcc4f8fc37982db7f767"
+          216: "ee924a616e7c08eaf866b869edced6c3",
+          432: "62034eb29621b1ccaf0c43836e9b5782"
         } [e] + ".css", m.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
@@ -10685,7 +10685,7 @@ _global.SENTRY_RELEASE = {
             })),
             a = {},
             o = {
-              1512: () => r("default", "@rockstargames/locale-tools", [1, "workspace:x"], (() => Promise.all([m.e(907), m.e(61), m.e(280)]).then((() => () => m(4660))))),
+              696: () => r("default", "@rockstargames/locale-tools", [1, "workspace:*"], (() => Promise.all([m.e(907), m.e(61), m.e(280)]).then((() => () => m(4660))))),
               3557: () => r("default", "react-router-dom", [1, 6, 11, 2], (() => () => m(788))),
               7860: () => r("default", "hammerjs", [1, 2, 0, 8], (() => m.e(384).then((() => () => m(6384))))),
               8e3: () => r("default", "uuid", [1, 9, 0, 0], (() => m.e(192).then((() => () => m(6192))))),
@@ -10704,7 +10704,7 @@ _global.SENTRY_RELEASE = {
           var l = {
               42: [3660],
               148: [9080],
-              216: [1512, 3557, 7860, 8e3]
+              216: [696, 3557, 7860, 8e3]
             },
             i = {};
           m.f.consumes = (e, t) => {

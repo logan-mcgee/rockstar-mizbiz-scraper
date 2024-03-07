@@ -2,18 +2,18 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "74a6064b-9d86-46f1-aa35-93d6733e9507", e._sentryDebugIdIdentifier = "sentry-dbid-74a6064b-9d86-46f1-aa35-93d6733e9507")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "f9a931eb-1957-45bb-9d8e-c2bfec4f5c41", e._sentryDebugIdIdentifier = "sentry-dbid-f9a931eb-1957-45bb-9d8e-c2bfec4f5c41")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "5e225a56a96343405c858680af91190e5116b19e",
+  release: "63eddca94fa9726ada78d0c14030f13fd7020af7",
   packageName: "@rockstargames/modules-core-carousel",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "5e225a56a96343405c858680af91190e5116b19e"
+  id: "63eddca94fa9726ada78d0c14030f13fd7020af7"
 }, System.register(["@rockstargames/components", "@rockstargames/tina"], (function(e, t) {
   var r = {},
     n = {};
@@ -68,8 +68,8 @@ _global.SENTRY_RELEASE = {
                 i = Symbol.for("react.provider"),
                 s = Symbol.for("react.context"),
                 c = Symbol.for("react.forward_ref"),
-                l = Symbol.for("react.suspense"),
-                f = Symbol.for("react.memo"),
+                f = Symbol.for("react.suspense"),
+                l = Symbol.for("react.memo"),
                 d = Symbol.for("react.lazy"),
                 p = Symbol.iterator,
                 y = {
@@ -121,7 +121,7 @@ _global.SENTRY_RELEASE = {
                 var s = arguments.length - 2;
                 if (1 === s) a.children = n;
                 else if (1 < s) {
-                  for (var c = Array(s), l = 0; l < s; l++) c[l] = arguments[l + 2];
+                  for (var c = Array(s), f = 0; f < s; f++) c[f] = arguments[f + 2];
                   a.children = c
                 }
                 if (e && e.defaultProps)
@@ -184,12 +184,12 @@ _global.SENTRY_RELEASE = {
                 }(u, o + (!u.key || s && s.key === u.key ? "" : ("" + u.key).replace(j, "$&/") + "/") + e)), t.push(u)), 1;
                 if (s = 0, a = "" === a ? "." : a + ":", w(e))
                   for (var c = 0; c < e.length; c++) {
-                    var l = a + R(i = e[c], c);
-                    s += O(i, t, o, l, u)
-                  } else if (l = function(e) {
+                    var f = a + R(i = e[c], c);
+                    s += O(i, t, o, f, u)
+                  } else if (f = function(e) {
                       return null === e || "object" != typeof e ? null : "function" == typeof(e = p && e[p] || e["@@iterator"]) ? e : null
-                    }(e), "function" == typeof l)
-                    for (e = l.call(e), c = 0; !(i = e.next()).done;) s += O(i = i.value, t, o, l = a + R(i, c++), u);
+                    }(e), "function" == typeof f)
+                    for (e = f.call(e), c = 0; !(i = e.next()).done;) s += O(i = i.value, t, o, f = a + R(i, c++), u);
                   else if ("object" === i) throw t = String(e), Error("Objects are not valid as a React child (found: " + ("[object Object]" === t ? "object with keys {" + Object.keys(e).join(", ") + "}" : t) + "). If you meant to render a collection of children, use an array instead.");
                 return s
               }
@@ -248,7 +248,7 @@ _global.SENTRY_RELEASE = {
                   if (!C(e)) throw Error("React.Children.only expected to receive a single React element child.");
                   return e
                 }
-              }, t.Component = v, t.Fragment = o, t.Profiler = u, t.PureComponent = g, t.StrictMode = a, t.Suspense = l, t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = A, t.cloneElement = function(e, t, n) {
+              }, t.Component = v, t.Fragment = o, t.Profiler = u, t.PureComponent = g, t.StrictMode = a, t.Suspense = f, t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = A, t.cloneElement = function(e, t, n) {
                 if (null == e) throw Error("React.cloneElement(...): The argument must be a React element, but you passed " + e + ".");
                 var o = h({}, e.props),
                   a = e.key,
@@ -262,7 +262,7 @@ _global.SENTRY_RELEASE = {
                 if (1 === c) o.children = n;
                 else if (1 < c) {
                   s = Array(c);
-                  for (var l = 0; l < c; l++) s[l] = arguments[l + 2];
+                  for (var f = 0; f < c; f++) s[f] = arguments[f + 2];
                   o.children = s
                 }
                 return {
@@ -310,7 +310,7 @@ _global.SENTRY_RELEASE = {
                 }
               }, t.memo = function(e, t) {
                 return {
-                  $$typeof: f,
+                  $$typeof: l,
                   type: e,
                   compare: void 0 === t ? null : t
                 }
@@ -405,9 +405,9 @@ _global.SENTRY_RELEASE = {
             get: t[r]
           })
         }, c.f = {}, c.e = e => Promise.all(Object.keys(c.f).reduce(((t, r) => (c.f[r](e, t), t)), [])), c.u = e => "js/" + {
-          256: "ac4ef95d1086de893455ded365b81fba",
-          368: "576346d4e68229a17693c7bda23c3d4d",
-          868: "7790b49e481474fbd1244760f997bc1c"
+          256: "41fd906ef9ed48a0d6bba7935f7be510",
+          368: "453a045511991dcab48284d1cf209fd8",
+          868: "47b51cb8d2107deb0d326b3552d3c3e3"
         } [e] + ".js", c.miniCssF = e => "css/ac1e9227f63817d283887e19c5e783ae.css", c.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
@@ -420,10 +420,10 @@ _global.SENTRY_RELEASE = {
           else {
             var u, i;
             if (void 0 !== n)
-              for (var s = document.getElementsByTagName("script"), l = 0; l < s.length; l++) {
-                var f = s[l];
-                if (f.getAttribute("src") == t || f.getAttribute("data-webpack") == o + n) {
-                  u = f;
+              for (var s = document.getElementsByTagName("script"), f = 0; f < s.length; f++) {
+                var l = s[f];
+                if (l.getAttribute("src") == t || l.getAttribute("data-webpack") == o + n) {
+                  u = l;
                   break
                 }
               }
@@ -469,9 +469,9 @@ _global.SENTRY_RELEASE = {
                   try {
                     var c = e(r, a);
                     if (!c || !c.then) return i(c, u, s);
-                    var l = c.then((e => i(e, u)), o);
-                    if (!s) return l;
-                    t.push(n.p = l)
+                    var f = c.then((e => i(e, u)), o);
+                    if (!s) return f;
+                    t.push(n.p = f)
                   } catch (e) {
                     o(e)
                   }
@@ -550,25 +550,25 @@ _global.SENTRY_RELEASE = {
                   a = o < 0;
                 a && (o = -o - 1);
                 for (var u = 0, i = 1, s = !0;; i++, u++) {
-                  var c, l, f = i < r.length ? (typeof r[i])[0] : "";
-                  if (u >= n.length || "o" == (l = (typeof(c = n[u]))[0])) return !s || ("u" == f ? i > o && !a : "" == f != a);
-                  if ("u" == l) {
-                    if (!s || "u" != f) return !1
+                  var c, f, l = i < r.length ? (typeof r[i])[0] : "";
+                  if (u >= n.length || "o" == (f = (typeof(c = n[u]))[0])) return !s || ("u" == l ? i > o && !a : "" == l != a);
+                  if ("u" == f) {
+                    if (!s || "u" != l) return !1
                   } else if (s)
-                    if (f == l)
+                    if (l == f)
                       if (i <= o) {
                         if (c != r[i]) return !1
                       } else {
                         if (a ? c > r[i] : c < r[i]) return !1;
                         c != r[i] && (s = !1)
                       }
-                  else if ("s" != f && "n" != f) {
+                  else if ("s" != l && "n" != l) {
                     if (a || i <= o) return !1;
                     s = !1, i--
                   } else {
-                    if (i <= o || l < f != a) return !1;
+                    if (i <= o || f < l != a) return !1;
                     s = !1
-                  } else "s" != f && "n" != f && (s = !1, i--)
+                  } else "s" != l && "n" != l && (s = !1, i--)
                 }
               }
               var d = [],

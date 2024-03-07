@@ -2,18 +2,18 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "8172e743-8093-41e0-8175-903afdd4ddc8", e._sentryDebugIdIdentifier = "sentry-dbid-8172e743-8093-41e0-8175-903afdd4ddc8")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "af52907c-dd2b-4ce8-9483-f851e6706ac4", e._sentryDebugIdIdentifier = "sentry-dbid-af52907c-dd2b-4ce8-9483-f851e6706ac4")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "5e225a56a96343405c858680af91190e5116b19e",
+  release: "63eddca94fa9726ada78d0c14030f13fd7020af7",
   packageName: "@rockstargames/sites-gta-trilogy",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "5e225a56a96343405c858680af91190e5116b19e"
+  id: "63eddca94fa9726ada78d0c14030f13fd7020af7"
 }, System.register(["@rockstargames/components", "@rockstargames/modules-core-videoplayer", "@rockstargames/tina", "@rockstargames/utils"], (function(e, t) {
   var r = {},
     n = {},
@@ -4000,11 +4000,11 @@ _global.SENTRY_RELEASE = {
             get: t[r]
           })
         }, d.f = {}, d.e = e => Promise.all(Object.keys(d.f).reduce(((t, r) => (d.f[r](e, t), t)), [])), d.u = e => "js/" + {
-          96: "b6899a544b9706495d5c9a11a4e4a069",
-          280: "adee182e80b95dd7e71b0d38a3f353a8",
-          560: "a72e68fd1529d54358358038d7829654",
-          713: "0836fc786d9605a28c1168fba9303f39"
-        } [e] + ".js", d.miniCssF = e => "css/285627bed894eec53fe66dba14a43f55.css", d.g = function() {
+          96: "20f2e151faea5ac4b686c27d4ac6fcd1",
+          280: "2e7fb311b8c2771dfde8a65eb24267e8",
+          560: "739f4cce5d83b8829516c814295b5f58",
+          713: "5ca39b05242749eee82e8778f3d0ed4a"
+        } [e] + ".js", d.miniCssF = e => "css/0ba90b8e2a1d23f3191f1f43a69417cc.css", d.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
             return this || new Function("return this")()

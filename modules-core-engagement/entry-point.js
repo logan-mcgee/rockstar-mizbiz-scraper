@@ -2,18 +2,18 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "c63bc3bb-f00a-40ce-9474-03d22a7aeb3a", e._sentryDebugIdIdentifier = "sentry-dbid-c63bc3bb-f00a-40ce-9474-03d22a7aeb3a")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "53f33461-f516-497a-9122-62fe31e69151", e._sentryDebugIdIdentifier = "sentry-dbid-53f33461-f516-497a-9122-62fe31e69151")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "5e225a56a96343405c858680af91190e5116b19e",
+  release: "55a9ca587741545089a7fe4bb45bb58fb164842b",
   packageName: "@rockstargames/modules-core-engagement",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "5e225a56a96343405c858680af91190e5116b19e"
+  id: "55a9ca587741545089a7fe4bb45bb58fb164842b"
 }, System.register(["@rockstargames/components", "@rockstargames/graph-client", "@rockstargames/intl", "@rockstargames/modules-core-sc-user", "@rockstargames/tina", "@rockstargames/utils"], (function(e, t) {
   var r = {},
     n = {},
@@ -4024,15 +4024,15 @@ _global.SENTRY_RELEASE = {
           })
         }, h.f = {}, h.e = e => Promise.all(Object.keys(h.f).reduce(((t, r) => (h.f[r](e, t), t)), [])), h.u = e => "js/" + {
           61: "3f5387e589c51f70ddf4e8d5ab3a78d7",
-          228: "10f3d0fba38399d072707bae73efd75d",
-          256: "fb401dacbb706843466585cd256d911e",
-          280: "134288a20d6713596c111c08421d1294",
-          312: "0070fabf0be6d74d64ea6c222785caed",
-          660: "562419a878cbe185cd70342b4fe01736",
-          792: "d38fc64dd088051ce1c5a5452fce2f3b",
-          907: "7f2159dcbf60fb4f87e9b4feabadfdbe",
-          912: "c51952d3df29ec587c10925c615dc6da"
-        } [e] + ".js", h.miniCssF = e => "css/94a2e68d085d2ff2696f4bc2aa413259.css", h.g = function() {
+          228: "c0f44f679ac579618701c2686a70f1e4",
+          256: "32e95187916f6a55bccaff52b3907ea4",
+          280: "6c8d7443754d26c3895ed5a5b95f612a",
+          312: "9e7228c043ab6e6dbbd203cfc7b4af3e",
+          660: "abf9d5b4f5bc40e72c40508149cc7d05",
+          792: "6d9b2fa1e9460a0c48bfe7d094fb1f04",
+          907: "996857ba1466a8ddd55adf0d38368689",
+          912: "28701cc44cd1701be7a4867cbb751f9a"
+        } [e] + ".js", h.miniCssF = e => "css/ee94f55d02fbffc1c0b655014a4b44f9.css", h.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
             return this || new Function("return this")()
@@ -4072,9 +4072,10 @@ _global.SENTRY_RELEASE = {
         }, u = {
           61: [3061],
           228: [9468],
-          312: [1668, 2836, 3052, 5120, 5792]
+          312: [1668, 1740, 2836, 3052, 5120, 5792]
         }, c = {
           1668: ["default", "./index", 8856],
+          1740: ["default", "./index", 8428],
           2836: ["default", "./index", 1128],
           3052: ["default", "./index", 3864],
           3061: ["default", "./hooks", 9344],
@@ -4151,7 +4152,7 @@ _global.SENTRY_RELEASE = {
                   }
                 },
                 u = [];
-              return "default" === r && (s("@rockstargames/locale-tools", "1.0.0", (() => Promise.all([h.e(907), h.e(61), h.e(660)]).then((() => () => h(4660))))), s("framer-motion", "7.10.3", (() => h.e(792).then((() => () => h(2792))))), s("react-intersection-observer", "9.5.2", (() => h.e(912).then((() => () => h(6532))))), s("react-router-dom", "6.17.0", (() => () => h(5784)), 1), s("react", "18.2.0", (() => () => h(8188)), 1), l(8856), l(3864), l(800), l(1128), l(9344), l(8428)), u.length ? e[r] = Promise.all(u).then((() => e[r] = 1)) : e[r] = 1
+              return "default" === r && (s("@rockstargames/locale-tools", "1.0.0", (() => Promise.all([h.e(907), h.e(61), h.e(660)]).then((() => () => h(4660))))), s("framer-motion", "7.10.3", (() => h.e(792).then((() => () => h(2792))))), s("react-intersection-observer", "9.5.2", (() => h.e(912).then((() => () => h(6532))))), s("react-router-dom", "6.17.0", (() => () => h(5784)), 1), s("react", "18.2.0", (() => () => h(8188)), 1), l(8856), l(3864), l(800), l(1128), l(8428), l(9344)), u.length ? e[r] = Promise.all(u).then((() => e[r] = 1)) : e[r] = 1
             }
           }
         })(), (() => {
@@ -4234,7 +4235,7 @@ _global.SENTRY_RELEASE = {
             })),
             o = {},
             a = {
-              1512: () => n("default", "@rockstargames/locale-tools", [1, "workspace:x"], (() => Promise.all([h.e(907), h.e(61), h.e(280)]).then((() => () => h(4660))))),
+              696: () => n("default", "@rockstargames/locale-tools", [1, "workspace:*"], (() => Promise.all([h.e(907), h.e(61), h.e(280)]).then((() => () => h(4660))))),
               2032: () => n("default", "react-intersection-observer", [1, 9, 4, 3], (() => h.e(912).then((() => () => h(6532))))),
               4936: () => n("default", "react-router-dom", [1, 6, 11, 2], (() => () => h(5784))),
               7272: () => n("default", "framer-motion", [1, 7, 5, 1], (() => h.e(792).then((() => () => h(2792))))),
@@ -4249,7 +4250,7 @@ _global.SENTRY_RELEASE = {
             }
           }));
           var i = {
-              312: [1512, 2032, 4936, 7272]
+              312: [696, 2032, 4936, 7272]
             },
             s = {};
           h.f.consumes = (e, t) => {

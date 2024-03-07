@@ -2,19 +2,19 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "b51ad508-03b6-479d-92a6-8adce93b33db", e._sentryDebugIdIdentifier = "sentry-dbid-b51ad508-03b6-479d-92a6-8adce93b33db")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "da370b7b-9e90-4c30-a4ea-4e10dec5b700", e._sentryDebugIdIdentifier = "sentry-dbid-da370b7b-9e90-4c30-a4ea-4e10dec5b700")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "5e225a56a96343405c858680af91190e5116b19e",
+  release: "55a9ca587741545089a7fe4bb45bb58fb164842b",
   packageName: "@rockstargames/modules-core-newswire-article",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "5e225a56a96343405c858680af91190e5116b19e"
-}, System.register(["@rockstargames/components", "@rockstargames/graph-client", "@rockstargames/modules-core-card", "@rockstargames/modules-core-carousel", "@rockstargames/modules-core-gif-viewer", "@rockstargames/modules-core-group-of-items", "@rockstargames/modules-core-videoplayer", "@rockstargames/modules-sc-ugc-spotlight", "@rockstargames/tina", "@rockstargames/utils"], (function(e, t) {
+  id: "55a9ca587741545089a7fe4bb45bb58fb164842b"
+}, System.register(["@rockstargames/components", "@rockstargames/graph-client", "@rockstargames/modules-core-card", "@rockstargames/modules-core-carousel", "@rockstargames/modules-core-engagement", "@rockstargames/modules-core-gif-viewer", "@rockstargames/modules-core-group-of-items", "@rockstargames/modules-core-videoplayer", "@rockstargames/modules-sc-ugc-spotlight", "@rockstargames/tina", "@rockstargames/utils"], (function(e, t) {
   var r = {},
     n = {},
     o = {},
@@ -24,7 +24,8 @@ _global.SENTRY_RELEASE = {
     s = {},
     c = {},
     f = {},
-    l = {};
+    l = {},
+    d = {};
   return Object.defineProperty(r, "__esModule", {
     value: !0
   }), Object.defineProperty(n, "__esModule", {
@@ -44,6 +45,8 @@ _global.SENTRY_RELEASE = {
   }), Object.defineProperty(f, "__esModule", {
     value: !0
   }), Object.defineProperty(l, "__esModule", {
+    value: !0
+  }), Object.defineProperty(d, "__esModule", {
     value: !0
   }), {
     setters: [function(e) {
@@ -86,10 +89,14 @@ _global.SENTRY_RELEASE = {
       Object.keys(e).forEach((function(t) {
         l[t] = e[t]
       }))
+    }, function(e) {
+      Object.keys(e).forEach((function(t) {
+        d[t] = e[t]
+      }))
     }],
     execute: function() {
       e((() => {
-        var e, d, p, h, y = {
+        var e, p, h, y, b = {
             3032: (e, t, r) => {
               (0, r(8752).G)(1)
             },
@@ -456,93 +463,97 @@ _global.SENTRY_RELEASE = {
               "use strict";
               e.exports = a
             },
-            5576: e => {
+            8542: e => {
               "use strict";
               e.exports = u
             },
-            72: e => {
+            5576: e => {
               "use strict";
               e.exports = i
             },
-            4472: e => {
+            72: e => {
               "use strict";
               e.exports = s
             },
-            2354: e => {
+            4472: e => {
               "use strict";
               e.exports = c
             },
-            8428: e => {
+            2354: e => {
               "use strict";
               e.exports = f
             },
-            9344: e => {
+            8428: e => {
               "use strict";
               e.exports = l
+            },
+            9344: e => {
+              "use strict";
+              e.exports = d
             }
           },
-          b = {};
+          m = {};
 
-        function m(e) {
-          var t = b[e];
+        function v(e) {
+          var t = m[e];
           if (void 0 !== t) return t.exports;
-          var r = b[e] = {
+          var r = m[e] = {
             id: e,
             loaded: !1,
             exports: {}
           };
-          return y[e].call(r.exports, r, r.exports, m), r.loaded = !0, r.exports
+          return b[e].call(r.exports, r, r.exports, v), r.loaded = !0, r.exports
         }
-        return m.m = y, m.c = b, m.y = t, m.n = e => {
+        return v.m = b, v.c = m, v.y = t, v.n = e => {
           var t = e && e.__esModule ? () => e.default : () => e;
-          return m.d(t, {
+          return v.d(t, {
             a: t
           }), t
-        }, m.d = (e, t) => {
-          for (var r in t) m.o(t, r) && !m.o(e, r) && Object.defineProperty(e, r, {
+        }, v.d = (e, t) => {
+          for (var r in t) v.o(t, r) && !v.o(e, r) && Object.defineProperty(e, r, {
             enumerable: !0,
             get: t[r]
           })
-        }, m.f = {}, m.e = e => Promise.all(Object.keys(m.f).reduce(((t, r) => (m.f[r](e, t), t)), [])), m.u = e => "js/" + {
+        }, v.f = {}, v.e = e => Promise.all(Object.keys(v.f).reduce(((t, r) => (v.f[r](e, t), t)), [])), v.u = e => "js/" + {
           200: "e3b81e2af68561569a63050df639ebf4",
-          208: "b3ebc60cea9fb67b90201033ba5d31f7",
-          272: "947005e752cd8af16d1536b611343f5b",
-          336: "29f17a826c71ff9f5e0b139316fff5a8",
-          396: "e9df464282302128bc7a3ce2630802e3",
-          448: "dc59872f20aa717d58dae9d9aecc8ea4",
+          208: "973426507aa88417c75f3cdb25a2df75",
+          272: "f87446d9d33eb55ac78f63b1e548cb79",
+          336: "4fc0272cd6d738757774d240dafaf39c",
+          396: "65ed496566eb2dc022ab19e108bfff43",
+          448: "6fa733cc558a079bf78c3c4a9b08c713",
           556: "1e3c8d3117cc76fb780db8e27ac30372",
-          620: "1fe1ff8fd8824cddff14d433506da22f",
-          648: "65955bb99dd83f6898c435788e509cc0",
-          650: "118f4d15dadf402b9944938c379928fc",
+          620: "72d6bf6bffac8b6de5921f2c072ba610",
+          648: "8fef568576c0bad44025e0e7577bd613",
+          650: "757a91b88cf858f3361ed5088521919e",
           668: "4af1d3749e076c0cd0614f618d761f79",
           816: "5b6467f1c20d6ccbf9cef623d13826b7",
-          844: "d422bf2122c668abd7171672f6803a78",
+          844: "53cdd3b8ed338ab3b299f9c35cb9875c",
           850: "abe1738d2cb195433785813cb48d4250",
-          896: "d174345edc856e92944a3a608548d414"
-        } [e] + ".js", m.miniCssF = e => "css/" + {
-          208: "05ad0dccd1b9f00ee756fc223f20e6a7",
+          896: "2712d846c0caa60e7dc1a3bdbf63e574"
+        } [e] + ".js", v.miniCssF = e => "css/" + {
+          208: "e39026cde64295f4bb1e51bac55c71e3",
           650: "38cfc95a9203c101bd489ff5c88bc10d",
-          850: "658b870c484eaafbd9d930c5d9deff50"
-        } [e] + ".css", m.g = function() {
+          850: "39ff1dafce4f00ed5e4e8d89a4e075ae"
+        } [e] + ".css", v.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
             return this || new Function("return this")()
           } catch (e) {
             if ("object" == typeof window) return window
           }
-        }(), m.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t), e = {}, d = "@rockstargames/modules-core-newswire-article:", m.l = (t, r, n, o) => {
+        }(), v.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t), e = {}, p = "@rockstargames/modules-core-newswire-article:", v.l = (t, r, n, o) => {
           if (e[t]) e[t].push(r);
           else {
             var a, u;
             if (void 0 !== n)
               for (var i = document.getElementsByTagName("script"), s = 0; s < i.length; s++) {
                 var c = i[s];
-                if (c.getAttribute("src") == t || c.getAttribute("data-webpack") == d + n) {
+                if (c.getAttribute("src") == t || c.getAttribute("data-webpack") == p + n) {
                   a = c;
                   break
                 }
               }
-            a || (u = !0, (a = document.createElement("script")).charset = "utf-8", a.timeout = 120, m.nc && a.setAttribute("nonce", m.nc), a.setAttribute("data-webpack", d + n), a.src = t), e[t] = [r];
+            a || (u = !0, (a = document.createElement("script")).charset = "utf-8", a.timeout = 120, v.nc && a.setAttribute("nonce", v.nc), a.setAttribute("data-webpack", p + n), a.src = t), e[t] = [r];
             var f = (r, n) => {
                 a.onerror = a.onload = null, clearTimeout(l);
                 var o = e[t];
@@ -554,23 +565,24 @@ _global.SENTRY_RELEASE = {
               }), 12e4);
             a.onerror = f.bind(null, a.onerror), a.onload = f.bind(null, a.onload), u && document.head.appendChild(a)
           }
-        }, m.r = e => {
+        }, v.r = e => {
           "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
             value: "Module"
           }), Object.defineProperty(e, "__esModule", {
             value: !0
           })
-        }, m.nmd = e => (e.paths = [], e.children || (e.children = []), e), p = {
-          208: [3052, 3061, 4644, 7047, 8460, 9812],
+        }, v.nmd = e => (e.paths = [], e.children || (e.children = []), e), h = {
+          208: [2112, 3052, 3061, 4644, 7047, 8460, 9812],
           396: [1736, 4344, 5356, 5652, 7256, 7368, 9468, 9572],
           556: [4316, 8508],
           668: [1668],
           816: [1740, 5792],
           844: [3784, 7715]
-        }, h = {
+        }, y = {
           1668: ["default", "./index", 8856],
           1736: ["default", "./tinaBlockTemplates", 5576],
           1740: ["default", "./index", 8428],
+          2112: ["default", "./index", 8542],
           3052: ["default", "./index", 3864],
           3061: ["default", "./hooks", 9344],
           3784: ["default", "./operations/fragments/newswire-post.graphql", 3864],
@@ -589,15 +601,15 @@ _global.SENTRY_RELEASE = {
           9468: ["default", "./properties", 8428],
           9572: ["default", "./tinaBlockTemplates", 4472],
           9812: ["default", "./index", 72]
-        }, m.f.remotes = (e, t) => {
-          m.o(p, e) && p[e].forEach((e => {
-            var r = m.R;
+        }, v.f.remotes = (e, t) => {
+          v.o(h, e) && h[e].forEach((e => {
+            var r = v.R;
             r || (r = []);
-            var n = h[e];
+            var n = y[e];
             if (!(r.indexOf(n) >= 0)) {
               if (r.push(n), n.p) return t.push(n.p);
               var o = t => {
-                  t || (t = new Error("Container missing")), "string" == typeof t.message && (t.message += '\nwhile loading "' + n[1] + '" from ' + n[2]), m.m[e] = () => {
+                  t || (t = new Error("Container missing")), "string" == typeof t.message && (t.message += '\nwhile loading "' + n[1] + '" from ' + n[2]), v.m[e] = () => {
                     throw t
                   }, n.p = 0
                 },
@@ -614,24 +626,24 @@ _global.SENTRY_RELEASE = {
                 },
                 u = (e, t, o) => a(t.get, n[1], r, 0, i, o),
                 i = t => {
-                  n.p = 1, m.m[e] = e => {
+                  n.p = 1, v.m[e] = e => {
                     e.exports = t()
                   }
                 };
-              a(m, n[2], 0, 0, ((e, t, r) => e ? a(m.I, n[0], 0, e, u, r) : o()), 1)
+              a(v, n[2], 0, 0, ((e, t, r) => e ? a(v.I, n[0], 0, e, u, r) : o()), 1)
             }
           }))
         }, (() => {
-          m.S = {};
+          v.S = {};
           var e = {},
             t = {};
-          m.I = (r, n) => {
+          v.I = (r, n) => {
             n || (n = []);
             var o = t[r];
             if (o || (o = t[r] = {}), !(n.indexOf(o) >= 0)) {
               if (n.push(o), e[r]) return e[r];
-              m.o(m.S, r) || (m.S[r] = {});
-              var a = m.S[r],
+              v.o(v.S, r) || (v.S[r] = {});
+              var a = v.S[r],
                 u = "@rockstargames/modules-core-newswire-article",
                 i = (e, t, r, n) => {
                   var o = a[e] = a[e] || {},
@@ -648,9 +660,9 @@ _global.SENTRY_RELEASE = {
                     var t
                   };
                   try {
-                    var o = m(e);
+                    var o = v(e);
                     if (!o) return;
-                    var a = e => e && e.init && e.init(m.S[r], n);
+                    var a = e => e && e.init && e.init(v.S[r], n);
                     if (o.then) return c.push(o.then(a, t));
                     var u = a(o);
                     if (u && u.then) return c.push(u.catch(t))
@@ -659,20 +671,20 @@ _global.SENTRY_RELEASE = {
                   }
                 },
                 c = [];
-              return "default" === r && (i("dompurify", "2.4.7", (() => m.e(448).then((() => () => m(7448))))), i("lodash", "4.17.21", (() => m.e(648).then((() => () => m(5648))))), i("react-jsx-parser", "1.29.0", (() => Promise.all([m.e(336), m.e(200)]).then((() => () => m(1336))))), i("react", "18.2.0", (() => () => m(8188)), 1), i("text-balancer", "1.0.5", (() => m.e(272).then((() => () => m(1272))))), s(8856), s(8428), s(9344), s(3864), s(7672), s(5576), s(72), s(4472), s(3096), s(2354)), c.length ? e[r] = Promise.all(c).then((() => e[r] = 1)) : e[r] = 1
+              return "default" === r && (i("dompurify", "2.4.7", (() => v.e(448).then((() => () => v(7448))))), i("lodash", "4.17.21", (() => v.e(648).then((() => () => v(5648))))), i("react-jsx-parser", "1.29.0", (() => Promise.all([v.e(336), v.e(200)]).then((() => () => v(1336))))), i("react", "18.2.0", (() => () => v(8188)), 1), i("text-balancer", "1.0.5", (() => v.e(272).then((() => () => v(1272))))), s(8856), s(8428), s(9344), s(3864), s(7672), s(8542), s(5576), s(72), s(4472), s(3096), s(2354)), c.length ? e[r] = Promise.all(c).then((() => e[r] = 1)) : e[r] = 1
             }
           }
         })(), (() => {
           var e;
-          m.g.importScripts && (e = m.g.location + "");
-          var t = m.g.document;
+          v.g.importScripts && (e = v.g.location + "");
+          var t = v.g.document;
           if (!e && t && (t.currentScript && (e = t.currentScript.src), !e)) {
             var r = t.getElementsByTagName("script");
             if (r.length)
               for (var n = r.length - 1; n > -1 && !e;) e = r[n--].src
           }
           if (!e) throw new Error("Automatic publicPath is not supported in this browser");
-          e = e.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/"), m.p = e
+          e = e.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/"), v.p = e
         })(), (() => {
           var e = e => {
               var t = e => e.split(".").map((e => +e == e ? +e : e)),
@@ -734,19 +746,19 @@ _global.SENTRY_RELEASE = {
               })(r, n) ? r : n), 0)) && a[n]
             },
             n = (e => function(t, r, n, o) {
-              var a = m.I(t);
-              return a && a.then ? a.then(e.bind(e, t, m.S[t], r, n, o)) : e(t, m.S[t], r, n, o)
+              var a = v.I(t);
+              return a && a.then ? a.then(e.bind(e, t, v.S[t], r, n, o)) : e(t, v.S[t], r, n, o)
             })(((e, t, n, o, a) => {
-              var u = t && m.o(t, n) && r(t, n, o);
+              var u = t && v.o(t, n) && r(t, n, o);
               return u ? (e => (e.loaded = 1, e.get()))(u) : a()
             })),
             o = {},
             a = {
-              8200: () => n("default", "react", [1, 18, 2, 0], (() => () => m(8188))),
-              2064: () => n("default", "text-balancer", [1, 1, 0, 5], (() => m.e(272).then((() => () => m(1272))))),
-              3660: () => n("default", "lodash", [1, 4, 17, 21], (() => m.e(648).then((() => () => m(5648))))),
-              9416: () => n("default", "dompurify", [1, 2, 4, 1], (() => m.e(448).then((() => () => m(7448))))),
-              6280: () => n("default", "react-jsx-parser", [1, 1, 29, 0], (() => m.e(336).then((() => () => m(1336)))))
+              8200: () => n("default", "react", [1, 18, 2, 0], (() => () => v(8188))),
+              2064: () => n("default", "text-balancer", [1, 1, 0, 5], (() => v.e(272).then((() => () => v(1272))))),
+              3660: () => n("default", "lodash", [1, 4, 17, 21], (() => v.e(648).then((() => () => v(5648))))),
+              9416: () => n("default", "dompurify", [1, 2, 4, 1], (() => v.e(448).then((() => () => v(7448))))),
+              6280: () => n("default", "react-jsx-parser", [1, 1, 29, 0], (() => v.e(336).then((() => () => v(1336)))))
             },
             u = {
               200: [8200],
@@ -754,19 +766,19 @@ _global.SENTRY_RELEASE = {
               850: [6280]
             },
             i = {};
-          m.f.consumes = (e, t) => {
-            m.o(u, e) && u[e].forEach((e => {
-              if (m.o(o, e)) return t.push(o[e]);
+          v.f.consumes = (e, t) => {
+            v.o(u, e) && u[e].forEach((e => {
+              if (v.o(o, e)) return t.push(o[e]);
               if (!i[e]) {
                 var r = t => {
-                  o[e] = 0, m.m[e] = r => {
-                    delete m.c[e], r.exports = t()
+                  o[e] = 0, v.m[e] = r => {
+                    delete v.c[e], r.exports = t()
                   }
                 };
                 i[e] = !0;
                 var n = t => {
-                  delete o[e], m.m[e] = r => {
-                    throw delete m.c[e], t
+                  delete o[e], v.m[e] = r => {
+                    throw delete v.c[e], t
                   }
                 };
                 try {
@@ -783,14 +795,14 @@ _global.SENTRY_RELEASE = {
             var e = {
               92: 0
             };
-            m.f.miniCss = (t, r) => {
+            v.f.miniCss = (t, r) => {
               e[t] ? r.push(e[t]) : 0 !== e[t] && {
                 208: 1,
                 650: 1,
                 850: 1
               } [t] && r.push(e[t] = (e => new Promise(((t, r) => {
-                var n = m.miniCssF(e),
-                  o = m.p + n;
+                var n = v.miniCssF(e),
+                  o = v.p + n;
                 if (((e, t) => {
                     for (var r = document.getElementsByTagName("link"), n = 0; n < r.length; n++) {
                       var o = (u = r[n]).getAttribute("data-href") || u.getAttribute("href");
@@ -825,18 +837,18 @@ _global.SENTRY_RELEASE = {
           var e = {
             92: 0
           };
-          m.f.j = (t, r) => {
-            var n = m.o(e, t) ? e[t] : void 0;
+          v.f.j = (t, r) => {
+            var n = v.o(e, t) ? e[t] : void 0;
             if (0 !== n)
               if (n) r.push(n[2]);
               else if (/^(200|556|668|816|850)$/.test(t)) e[t] = 0;
             else {
               var o = new Promise(((r, o) => n = e[t] = [r, o]));
               r.push(n[2] = o);
-              var a = m.p + m.u(t),
+              var a = v.p + v.u(t),
                 u = new Error;
-              m.l(a, (r => {
-                if (m.o(e, t) && (0 !== (n = e[t]) && (e[t] = void 0), n)) {
+              v.l(a, (r => {
+                if (v.o(e, t) && (0 !== (n = e[t]) && (e[t] = void 0), n)) {
                   var o = r && ("load" === r.type ? "missing" : r.type),
                     a = r && r.target && r.target.src;
                   u.message = "Loading chunk " + t + " failed.\n(" + o + ": " + a + ")", u.name = "ChunkLoadError", u.type = o, u.request = a, n[1](u)
@@ -850,14 +862,14 @@ _global.SENTRY_RELEASE = {
                 i = r[2],
                 s = 0;
               if (a.some((t => 0 !== e[t]))) {
-                for (n in u) m.o(u, n) && (m.m[n] = u[n]);
-                i && i(m)
+                for (n in u) v.o(u, n) && (v.m[n] = u[n]);
+                i && i(v)
               }
-              for (t && t(r); s < a.length; s++) o = a[s], m.o(e, o) && e[o] && e[o][0](), e[o] = 0
+              for (t && t(r); s < a.length; s++) o = a[s], v.o(e, o) && e[o] && e[o][0](), e[o] = 0
             },
             r = self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || [];
           r.forEach(t.bind(null, 0)), r.push = t.bind(null, r.push.bind(r))
-        })(), m(9296), m(5468)
+        })(), v(9296), v(5468)
       })())
     }
   }

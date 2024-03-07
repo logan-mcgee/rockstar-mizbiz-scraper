@@ -2,18 +2,18 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "bcf87997-f049-4d6f-8c40-c230f90967b3", e._sentryDebugIdIdentifier = "sentry-dbid-bcf87997-f049-4d6f-8c40-c230f90967b3")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "1dee2730-e0c5-4cb3-9346-a4f94807afb1", e._sentryDebugIdIdentifier = "sentry-dbid-1dee2730-e0c5-4cb3-9346-a4f94807afb1")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "5e225a56a96343405c858680af91190e5116b19e",
+  release: "63eddca94fa9726ada78d0c14030f13fd7020af7",
   packageName: "@rockstargames/sites-legacy",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "5e225a56a96343405c858680af91190e5116b19e"
+  id: "63eddca94fa9726ada78d0c14030f13fd7020af7"
 }, System.register(["@rockstargames/components", "@rockstargames/graph-client", "@rockstargames/intl", "@rockstargames/modules-core-hero", "@rockstargames/modules-core-highlights", "@rockstargames/modules-core-sc-user", "@rockstargames/modules-core-videoplayer", "@rockstargames/polyfills", "@rockstargames/tina", "@rockstargames/utils"], (function(e, t) {
   var n = {},
     r = {},
@@ -10477,22 +10477,22 @@ _global.SENTRY_RELEASE = {
           })
         }, g.f = {}, g.e = e => Promise.all(Object.keys(g.f).reduce(((t, n) => (g.f[n](e, t), t)), [])), g.u = e => "js/" + {
           16: "9dedc5587d0e309ccc480e4ade18422a",
-          44: "31f57a2aad6f230d46f11cf52bec5397",
+          44: "f982d11794e6b819709280d0e4e6a303",
           61: "976253e4590827333659b85f0efb1b36",
-          164: "e2eff30083cd0300745ada2c0ddf389c",
-          280: "7929c67499026a8c7c32a6c139be360f",
-          304: "96e3cc989f11d3a812739436fbf159ad",
-          456: "f9ea52253b88c5069f0e918a0118e519",
-          660: "0db1c29d8ce217074e570cd4a5515b6b",
-          692: "22fa1e6acaeb9a6bd094e0ef206b6d06",
+          164: "01b1056e38926dbac5009dacba126525",
+          280: "4c3cf16c90e88253b0388934fd85fd37",
+          304: "555917f0dec3288eb90ab6d78d40754c",
+          456: "42637e409cdac7b4c9b1de0ca541ad58",
+          660: "3f68f5addd79bb0a38fea7b48a0a4482",
+          692: "035b4dba3a1343bac73d085ed2059e53",
           836: "4105dac0edbb069423c0f2c63aa65282",
-          856: "5b4bd3b22816ebfd34d89858ecac6c23",
-          907: "842a9291682db026867e95231d218ac5",
-          912: "9175b9791f01aa65c5bc03eba25ed6d3"
+          856: "edf00237f875ba1fbcee68b942b05098",
+          907: "fd97b9156be0a9ed8ce91c907b03e01d",
+          912: "fe49f87f240e1435765d63e023e4f0b8"
         } [e] + ".js", g.miniCssF = e => "css/" + {
           304: "916e74d8d50f64d8f556da06d20283dd",
-          456: "74248c7144af6d84dcf4136fc40c1d58",
-          692: "362177d1ea2f7ed4542c5cb87cc29c03"
+          456: "3816e0a262f2263b3163afa8c53b5cd2",
+          692: "0a1cf14d7cdbd3ed0544d3fa1ae1adfa"
         } [e] + ".css", g.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
@@ -10711,7 +10711,7 @@ _global.SENTRY_RELEASE = {
             })),
             a = {},
             o = {
-              1512: () => r("default", "@rockstargames/locale-tools", [1, "workspace:x"], (() => Promise.all([g.e(907), g.e(61), g.e(280)]).then((() => () => g(4660))))),
+              696: () => r("default", "@rockstargames/locale-tools", [1, "workspace:*"], (() => Promise.all([g.e(907), g.e(61), g.e(280)]).then((() => () => g(4660))))),
               3232: () => r("default", "react-intersection-observer", [1, 9, 5, 2], (() => g.e(912).then((() => () => g(6532))))),
               3252: () => r("default", "framer-motion", [1, 10, 12, 18], (() => g.e(164).then((() => () => g(5164))))),
               5320: () => r("default", "react-router-dom", [1, 6, 11, 2], (() => () => g(8312))),
@@ -10727,7 +10727,7 @@ _global.SENTRY_RELEASE = {
             }
           }));
           var l = {
-              456: [1512, 3232, 3252, 5320, 9080]
+              456: [696, 3232, 3252, 5320, 9080]
             },
             i = {};
           g.f.consumes = (e, t) => {

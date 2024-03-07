@@ -2,18 +2,18 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "7a6e6b81-ae1a-472c-92b6-8e3e41e71b1a", e._sentryDebugIdIdentifier = "sentry-dbid-7a6e6b81-ae1a-472c-92b6-8e3e41e71b1a")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "79eb5b4a-9bbe-44c3-b6df-c0b7d9a1bfcf", e._sentryDebugIdIdentifier = "sentry-dbid-79eb5b4a-9bbe-44c3-b6df-c0b7d9a1bfcf")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "5e225a56a96343405c858680af91190e5116b19e",
+  release: "43971e0f99ea7c6c89ef0007f1e57d35945eb542",
   packageName: "@rockstargames/sites-red-dead-online",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "5e225a56a96343405c858680af91190e5116b19e"
+  id: "43971e0f99ea7c6c89ef0007f1e57d35945eb542"
 }, System.register(["@rockstargames/components", "@rockstargames/graph-client", "@rockstargames/modules-core-feedback", "@rockstargames/modules-core-newswire-article", "@rockstargames/modules-core-videoplayer", "@rockstargames/utils"], (function(e, t) {
   var r = {},
     n = {},
@@ -62,7 +62,7 @@ _global.SENTRY_RELEASE = {
     execute: function() {
       e((() => {
         var e, l, u, c, d = {
-            6340: (e, t, r) => {
+            5784: (e, t, r) => {
               "use strict";
               r.r(t), r.d(t, {
                 AbortedDeferredError: () => K,
@@ -80,7 +80,7 @@ _global.SENTRY_RELEASE = {
                 Router: () => Nt,
                 RouterProvider: () => pr,
                 Routes: () => It,
-                ScrollRestoration: () => _r,
+                ScrollRestoration: () => kr,
                 UNSAFE_DataRouterContext: () => We,
                 UNSAFE_DataRouterStateContext: () => He,
                 UNSAFE_LocationContext: () => Ve,
@@ -111,7 +111,7 @@ _global.SENTRY_RELEASE = {
                 unstable_useBlocker: () => jt,
                 unstable_usePrompt: () => Wr,
                 unstable_useViewTransitionState: () => Hr,
-                useActionData: () => kt,
+                useActionData: () => _t,
                 useAsyncError: () => Lt,
                 useAsyncValue: () => Dt,
                 useBeforeUnload: () => zr,
@@ -134,7 +134,7 @@ _global.SENTRY_RELEASE = {
                 useResolvedPath: () => st,
                 useRevalidator: () => St,
                 useRouteError: () => Ct,
-                useRouteLoaderData: () => _t,
+                useRouteLoaderData: () => kt,
                 useRoutes: () => lt,
                 useSearchParams: () => jr,
                 useSubmit: () => Ar
@@ -514,8 +514,8 @@ _global.SENTRY_RELEASE = {
                 return s.push(...i.map((e => "" === e ? a : [a, e].join("/")))), o && s.push(...i), s.map((t => e.startsWith("/") && "" === t ? "/" : t))
               }
               const x = /^:\w+$/,
-                _ = 3,
-                k = 2,
+                k = 3,
+                _ = 2,
                 C = 1,
                 D = 10,
                 L = -2,
@@ -524,7 +524,7 @@ _global.SENTRY_RELEASE = {
               function j(e, t) {
                 let r = e.split("/"),
                   n = r.length;
-                return r.some(P) && (n += L), t && (n += k), r.filter((e => !P(e))).reduce(((e, t) => e + (x.test(t) ? _ : "" === t ? C : D)), n)
+                return r.some(P) && (n += L), t && (n += _), r.filter((e => !P(e))).reduce(((e, t) => e + (x.test(t) ? k : "" === t ? C : D)), n)
               }
 
               function T(e, t) {
@@ -858,25 +858,25 @@ _global.SENTRY_RELEASE = {
                   S = null,
                   R = null,
                   x = null != e.hydrationData,
-                  _ = w(u, e.history.location, f),
-                  k = null;
-                if (null == _) {
+                  k = w(u, e.history.location, f),
+                  _ = null;
+                if (null == k) {
                   let t = Ce(404, {
                       pathname: e.history.location.pathname
                     }),
                     {
                       matches: r,
                       route: n
-                    } = ke(u);
-                  _ = r, k = {
+                    } = _e(u);
+                  k = r, _ = {
                     [n.id]: t
                   }
                 }
-                let C, D, L = !(_.some((e => e.route.lazy)) || _.some((e => e.route.loader)) && null == e.hydrationData),
+                let C, D, L = !(k.some((e => e.route.lazy)) || k.some((e => e.route.loader)) && null == e.hydrationData),
                   P = {
                     historyAction: e.history.action,
                     location: e.history.location,
-                    matches: _,
+                    matches: k,
                     initialized: L,
                     navigation: ie,
                     restoreScrollPosition: null == e.hydrationData && null,
@@ -884,7 +884,7 @@ _global.SENTRY_RELEASE = {
                     revalidation: "idle",
                     loaderData: e.hydrationData && e.hydrationData.loaderData || {},
                     actionData: e.hydrationData && e.hydrationData.actionData || null,
-                    errors: e.hydrationData && e.hydrationData.errors || k,
+                    errors: e.hydrationData && e.hydrationData.errors || _,
                     fetchers: new Map,
                     blockers: new Map
                   },
@@ -968,7 +968,7 @@ _global.SENTRY_RELEASE = {
                       {
                         matches: t,
                         route: n
-                      } = ke(c);
+                      } = _e(c);
                     return Ue(), void G(r, {
                       matches: t,
                       loaderData: {},
@@ -984,7 +984,7 @@ _global.SENTRY_RELEASE = {
                   D = new AbortController;
                   let v, b, E = we(e.history, r, D.signal, o && o.submission);
                   if (o && o.pendingError) b = {
-                    [_e(h).route.id]: o.pendingError
+                    [ke(h).route.id]: o.pendingError
                   };
                   else if (o && o.submission && Ae(o.submission.formMethod)) {
                     let e = await async function(e, t, r, o, a) {
@@ -1027,7 +1027,7 @@ _global.SENTRY_RELEASE = {
                         }
                       }
                       if (je(s)) {
-                        let e = _e(o, c.route.id);
+                        let e = ke(o, c.route.id);
                         return !0 !== (a && a.replace) && (j = n.Push), {
                           pendingActionData: {},
                           pendingActionError: {
@@ -1054,7 +1054,7 @@ _global.SENTRY_RELEASE = {
                   let {
                     shortCircuited: S,
                     loaderData: x,
-                    errors: _
+                    errors: k
                   } = await async function(t, r, n, o, i, l, c, d, h) {
                     let p = o || Be(r, i),
                       m = i || l || Ie(p),
@@ -1119,19 +1119,19 @@ _global.SENTRY_RELEASE = {
                     }
                     let {
                       loaderData: x,
-                      errors: _
+                      errors: k
                     } = Re(P, n, y, E, h, g, S, V);
                     V.forEach(((e, t) => {
                       e.subscribe((r => {
                         (r || e.done) && V.delete(t)
                       }))
                     }));
-                    let k = ye(),
+                    let _ = ye(),
                       C = ge(W);
                     return a({
                       loaderData: x,
-                      errors: _
-                    }, k || C || g.length > 0 ? {
+                      errors: k
+                    }, _ || C || g.length > 0 ? {
                       fetchers: new Map(P.fetchers)
                     } : {})
                   }(E, r, h, d, o && o.submission, o && o.fetcherSubmission, o && o.replace, v, b);
@@ -1141,7 +1141,7 @@ _global.SENTRY_RELEASE = {
                     actionData: v
                   } : {}, {
                     loaderData: x,
-                    errors: _
+                    errors: k
                   })))
                 }
 
@@ -1214,7 +1214,7 @@ _global.SENTRY_RELEASE = {
                 }
 
                 function ne(e, t, r) {
-                  let n = _e(P.matches, t);
+                  let n = ke(P.matches, t);
                   oe(e), X({
                     errors: {
                       [n.route.id]: r
@@ -1513,9 +1513,9 @@ _global.SENTRY_RELEASE = {
                       c(R, "Didn't find any matches after fetcher action");
                       let x = ++z;
                       H.set(t, x);
-                      let _ = Fe(h, g.data);
-                      P.fetchers.set(t, _);
-                      let [k, C] = me(e.history, P, R, h, b, I, B, F, K, q, S, f, {
+                      let k = Fe(h, g.data);
+                      P.fetchers.set(t, k);
+                      let [_, C] = me(e.history, P, R, h, b, I, B, F, K, q, S, f, {
                         [o.route.id]: g.data
                       }, void 0);
                       C.filter((e => e.key !== t)).forEach((e => {
@@ -1532,13 +1532,13 @@ _global.SENTRY_RELEASE = {
                         results: T,
                         loaderResults: A,
                         fetcherResults: M
-                      } = await te(P.matches, R, k, C, E);
+                      } = await te(P.matches, R, _, C, E);
                       if (m.signal.aborted) return;
                       m.signal.removeEventListener("abort", L), H.delete(t), $.delete(t), C.forEach((e => $.delete(e.key)));
                       let O = De(T);
                       if (O) {
-                        if (O.idx >= k.length) {
-                          let e = C[O.idx - k.length].key;
+                        if (O.idx >= _.length) {
+                          let e = C[O.idx - _.length].key;
                           q.add(e)
                         }
                         return ee(P, O.result)
@@ -1546,7 +1546,7 @@ _global.SENTRY_RELEASE = {
                       let {
                         loaderData: U,
                         errors: N
-                      } = Re(P, P.matches, k, A, void 0, C, M, V);
+                      } = Re(P, P.matches, _, A, void 0, C, M, V);
                       if (P.fetchers.has(t)) {
                         let e = $e(g.data);
                         P.fetchers.set(t, e)
@@ -1588,7 +1588,7 @@ _global.SENTRY_RELEASE = {
                         return q.add(t), void await ee(P, v)
                       }
                       if (je(v)) {
-                        let e = _e(P.matches, r);
+                        let e = ke(P.matches, r);
                         return P.fetchers.delete(t), void X({
                           fetchers: new Map(P.fetchers),
                           errors: {
@@ -1977,7 +1977,7 @@ _global.SENTRY_RELEASE = {
                   return r.forEach(((r, d) => {
                     let f = t[d].route.id;
                     if (c(!Te(r), "Cannot handle redirect results in processLoaderData"), je(r)) {
-                      let t = _e(e, f),
+                      let t = ke(e, f),
                         o = r.error;
                       n && (o = Object.values(n)[0], n = void 0), s = s || {}, null == s[t.route.id] && (s[t.route.id] = o), i[f] = void 0, l || (l = !0, a = Z(r.error) ? r.error.status : 500), r.headers && (u[f] = r.headers)
                     } else Pe(r) ? (o.set(f, r.deferredData), i[f] = r.deferredData.data) : i[f] = r.data, null == r.statusCode || 200 === r.statusCode || l || (a = r.statusCode), r.headers && (u[f] = r.headers)
@@ -1998,7 +1998,7 @@ _global.SENTRY_RELEASE = {
                   let l = s[t];
                   if (!o || !o.signal.aborted)
                     if (je(l)) {
-                      let t = _e(e.matches, null == n ? void 0 : n.route.id);
+                      let t = ke(e.matches, null == n ? void 0 : n.route.id);
                       d && d[t.route.id] || (d = a({}, d, {
                         [t.route.id]: l.error
                       })), e.fetchers.delete(r)
@@ -2024,11 +2024,11 @@ _global.SENTRY_RELEASE = {
                 return o
               }
 
-              function _e(e, t) {
+              function ke(e, t) {
                 return (t ? e.slice(0, e.findIndex((e => e.route.id === t)) + 1) : [...e]).reverse().find((e => !0 === e.route.hasErrorBoundary)) || e[0]
               }
 
-              function ke(e) {
+              function _e(e) {
                 let t = 1 === e.length ? e[0] : e.find((e => e.index || !e.path || "/" === e.path)) || {
                   id: "__shim-error-route__"
                 };
@@ -2567,11 +2567,11 @@ _global.SENTRY_RELEASE = {
                 console.error("You cannot `useLoaderData` in an errorElement (routeId: " + t + ")")
               }
 
-              function _t(e) {
+              function kt(e) {
                 return gt(vt.UseRouteLoaderData).loaderData[e]
               }
 
-              function kt() {
+              function _t() {
                 let e = gt(vt.UseActionData);
                 return o.useContext(Je) || c(!1), Object.values((null == e ? void 0 : e.actionData) || {})[0]
               }
@@ -3292,12 +3292,12 @@ _global.SENTRY_RELEASE = {
                     },
                     x = E ? r : void 0;
                   w = "function" == typeof a ? a(R) : [a, E ? "active" : null, S ? "pending" : null, v ? "transitioning" : null].filter(Boolean).join(" ");
-                  let _ = "function" == typeof s ? s(R) : s;
+                  let k = "function" == typeof s ? s(R) : s;
                   return o.createElement(Er, Jt({}, d, {
                     "aria-current": x,
                     className: w,
                     ref: t,
-                    style: _,
+                    style: k,
                     to: l,
                     unstable_viewTransition: u
                   }), "function" == typeof c ? c(R) : c)
@@ -3345,7 +3345,7 @@ _global.SENTRY_RELEASE = {
                   }, h))
                 }));
 
-              function _r(e) {
+              function kr(e) {
                 let {
                   getKey: t,
                   storageKey: r
@@ -3355,7 +3355,7 @@ _global.SENTRY_RELEASE = {
                   storageKey: r
                 }), null
               }
-              var kr, Cr;
+              var _r, Cr;
 
               function Dr(e) {
                 let t = o.useContext(We);
@@ -3424,7 +3424,7 @@ _global.SENTRY_RELEASE = {
               function Ar() {
                 let {
                   router: e
-                } = Dr(kr.UseSubmit), {
+                } = Dr(_r.UseSubmit), {
                   basename: t
                 } = o.useContext(Ke), r = wt();
                 return o.useCallback((function(n, o) {
@@ -3453,7 +3453,7 @@ _global.SENTRY_RELEASE = {
               function Mr(e, t) {
                 let {
                   router: r
-                } = Dr(kr.UseSubmitFetcher), {
+                } = Dr(_r.UseSubmitFetcher), {
                   basename: n
                 } = o.useContext(Ke);
                 return o.useCallback((function(o, a) {
@@ -3492,7 +3492,7 @@ _global.SENTRY_RELEASE = {
                 return e && "." !== e || !i.route.index || (s.search = s.search ? s.search.replace(/^\?/, "?index&") : "?index"), "/" !== n && (s.pathname = "/" === s.pathname ? n : $([n, s.pathname])), p(s)
               }(function(e) {
                 e.UseScrollRestoration = "useScrollRestoration", e.UseSubmit = "useSubmit", e.UseSubmitFetcher = "useSubmitFetcher", e.UseFetcher = "useFetcher", e.useViewTransitionState = "useViewTransitionState"
-              })(kr || (kr = {})),
+              })(_r || (_r = {})),
               function(e) {
                 e.UseFetchers = "useFetchers", e.UseScrollRestoration = "useScrollRestoration"
               }(Cr || (Cr = {}));
@@ -3502,7 +3502,7 @@ _global.SENTRY_RELEASE = {
                 var e;
                 let {
                   router: t
-                } = Dr(kr.UseFetcher), r = o.useContext(Je);
+                } = Dr(_r.UseFetcher), r = o.useContext(Je);
                 r || c(!1);
                 let n = null == (e = r.matches[r.matches.length - 1]) ? void 0 : e.route.id;
                 null == n && c(!1);
@@ -3538,7 +3538,7 @@ _global.SENTRY_RELEASE = {
                   storageKey: r
                 } = void 0 === e ? {} : e, {
                   router: n
-                } = Dr(kr.UseScrollRestoration), {
+                } = Dr(_r.UseScrollRestoration), {
                   restoreScrollPosition: a,
                   preventScrollReset: i
                 } = Lr(Cr.UseScrollRestoration), {
@@ -3622,7 +3622,7 @@ _global.SENTRY_RELEASE = {
                 null == r && c(!1);
                 let {
                   basename: n
-                } = Dr(kr.useViewTransitionState), a = st(e, {
+                } = Dr(_r.useViewTransitionState), a = st(e, {
                   relative: t.relative
                 });
                 if (!r.isTransitioning) return !1;
@@ -3709,7 +3709,7 @@ _global.SENTRY_RELEASE = {
                   __source: !0
                 };
 
-              function _(e, t, n) {
+              function k(e, t, n) {
                 var o, a = {},
                   i = null,
                   s = null;
@@ -3733,7 +3733,7 @@ _global.SENTRY_RELEASE = {
                 }
               }
 
-              function k(e) {
+              function _(e) {
                 return "object" == typeof e && null !== e && e.$$typeof === r
               }
               var C = /\/+/g;
@@ -3769,7 +3769,7 @@ _global.SENTRY_RELEASE = {
                 }
                 if (l) return i = i(l = e), e = "" === a ? "." + D(l, 0) : a, E(i) ? (o = "", null != e && (o = e.replace(C, "$&/") + "/"), L(i, t, o, "", (function(e) {
                   return e
-                }))) : null != i && (k(i) && (i = function(e, t) {
+                }))) : null != i && (_(i) && (i = function(e, t) {
                   return {
                     $$typeof: r,
                     type: e.type,
@@ -3842,7 +3842,7 @@ _global.SENTRY_RELEASE = {
                   })) || []
                 },
                 only: function(e) {
-                  if (!k(e)) throw Error("React.Children.only expected to receive a single React element child.");
+                  if (!_(e)) throw Error("React.Children.only expected to receive a single React element child.");
                   return e
                 }
               }, t.Component = y, t.Fragment = o, t.Profiler = i, t.PureComponent = b, t.StrictMode = a, t.Suspense = c, t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = M, t.cloneElement = function(e, t, n) {
@@ -3884,8 +3884,8 @@ _global.SENTRY_RELEASE = {
                   $$typeof: s,
                   _context: e
                 }, e.Consumer = e
-              }, t.createElement = _, t.createFactory = function(e) {
-                var t = _.bind(null, e);
+              }, t.createElement = k, t.createFactory = function(e) {
+                var t = k.bind(null, e);
                 return t.type = e, t
               }, t.createRef = function() {
                 return {
@@ -3896,7 +3896,7 @@ _global.SENTRY_RELEASE = {
                   $$typeof: u,
                   render: e
                 }
-              }, t.isValidElement = k, t.lazy = function(e) {
+              }, t.isValidElement = _, t.lazy = function(e) {
                 return {
                   $$typeof: f,
                   _payload: {
@@ -3958,7 +3958,7 @@ _global.SENTRY_RELEASE = {
             7736: (e, t, r) => {
               "use strict";
               var n = {
-                  "./index": () => r.e(220).then((() => () => r(6220)))
+                  "./index": () => r.e(760).then((() => () => r(4760)))
                 },
                 o = (e, t) => (r.R = t, t = r.o(n, e) ? n[e]() : Promise.resolve().then((() => {
                   throw new Error('Module "' + e + '" does not exist in container.')
@@ -4022,9 +4022,13 @@ _global.SENTRY_RELEASE = {
             get: t[r]
           })
         }, h.f = {}, h.e = e => Promise.all(Object.keys(h.f).reduce(((t, r) => (h.f[r](e, t), t)), [])), h.u = e => "js/" + {
-          220: "d00a6223b864cfb34b0f48f1c0d6969f",
-          384: "fdc9575a669023456526ba2adfa07630"
-        } [e] + ".js", h.miniCssF = e => "css/d9328396d9e10663b354fe2ee30f7cdc.css", h.g = function() {
+          61: "a8fd763b6e67c1fcdaa02a1a167ac77e",
+          280: "3d75b147ae2904175e798b26785f805d",
+          384: "ca4aa3d958bd4578314ff613ef4dc6d6",
+          660: "9d140d52ad467deebbc6accf00bca08e",
+          760: "a7f9088245b9238d7c203777da5def87",
+          907: "f04096bed1c9e3a530c6f869f5eb00de"
+        } [e] + ".js", h.miniCssF = e => "css/0831e522a013bfe76ab5ceafd711c368.css", h.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
             return this || new Function("return this")()
@@ -4062,12 +4066,14 @@ _global.SENTRY_RELEASE = {
             value: !0
           })
         }, u = {
-          220: [1336, 1532, 1668, 3052, 4644, 5792, 7308, 9572]
+          61: [3061],
+          760: [1336, 1532, 1668, 3052, 4644, 5792, 7308, 9572]
         }, c = {
           1336: ["default", "./NewswireArticle", 5358],
           1532: ["default", "./operations/queries", 3864],
           1668: ["default", "./index", 8856],
           3052: ["default", "./index", 3864],
+          3061: ["default", "./hooks", 9344],
           4644: ["default", "./index", 4472],
           5792: ["default", "./index", 9344],
           7308: ["default", "./operations/fragments/video-fields.graphql", 3864],
@@ -4142,7 +4148,7 @@ _global.SENTRY_RELEASE = {
                   }
                 },
                 u = [];
-              return "default" === r && (s("hammerjs", "2.0.8", (() => h.e(384).then((() => () => h(6384))))), s("react-router-dom", "6.17.0", (() => () => h(6340)), 1), s("react", "18.2.0", (() => () => h(8188)), 1), l(8856), l(3864), l(7296), l(5358), l(4472), l(9344)), u.length ? e[r] = Promise.all(u).then((() => e[r] = 1)) : e[r] = 1
+              return "default" === r && (s("@rockstargames/locale-tools", "1.0.0", (() => Promise.all([h.e(907), h.e(61), h.e(660)]).then((() => () => h(4660))))), s("hammerjs", "2.0.8", (() => h.e(384).then((() => () => h(6384))))), s("react-router-dom", "6.17.0", (() => () => h(5784)), 1), s("react", "18.2.0", (() => () => h(8188)), 1), l(8856), l(3864), l(7296), l(5358), l(4472), l(9344)), u.length ? e[r] = Promise.all(u).then((() => e[r] = 1)) : e[r] = 1
             }
           }
         })(), (() => {
@@ -4225,7 +4231,8 @@ _global.SENTRY_RELEASE = {
             })),
             o = {},
             a = {
-              6036: () => n("default", "react-router-dom", [1, 6, 11, 2], (() => () => h(6340))),
+              696: () => n("default", "@rockstargames/locale-tools", [1, "workspace:*"], (() => Promise.all([h.e(907), h.e(61), h.e(280)]).then((() => () => h(4660))))),
+              4936: () => n("default", "react-router-dom", [1, 6, 11, 2], (() => () => h(5784))),
               7860: () => n("default", "hammerjs", [1, 2, 0, 8], (() => h.e(384).then((() => () => h(6384))))),
               8200: () => n("default", "react", [1, 18, 2, 0], (() => () => h(8188)))
             };
@@ -4238,7 +4245,7 @@ _global.SENTRY_RELEASE = {
             }
           }));
           var i = {
-              220: [6036, 7860]
+              760: [696, 4936, 7860]
             },
             s = {};
           h.f.consumes = (e, t) => {
@@ -4272,7 +4279,7 @@ _global.SENTRY_RELEASE = {
             };
             h.f.miniCss = (t, r) => {
               e[t] ? r.push(e[t]) : 0 !== e[t] && {
-                220: 1
+                760: 1
               } [t] && r.push(e[t] = (e => new Promise(((t, r) => {
                 var n = h.miniCssF(e),
                   o = h.p + n;
@@ -4314,19 +4321,19 @@ _global.SENTRY_RELEASE = {
             var n = h.o(e, t) ? e[t] : void 0;
             if (0 !== n)
               if (n) r.push(n[2]);
-              else {
-                var o = new Promise(((r, o) => n = e[t] = [r, o]));
-                r.push(n[2] = o);
-                var a = h.p + h.u(t),
-                  i = new Error;
-                h.l(a, (r => {
-                  if (h.o(e, t) && (0 !== (n = e[t]) && (e[t] = void 0), n)) {
-                    var o = r && ("load" === r.type ? "missing" : r.type),
-                      a = r && r.target && r.target.src;
-                    i.message = "Loading chunk " + t + " failed.\n(" + o + ": " + a + ")", i.name = "ChunkLoadError", i.type = o, i.request = a, n[1](i)
-                  }
-                }), "chunk-" + t, t)
-              }
+              else if (61 != t) {
+              var o = new Promise(((r, o) => n = e[t] = [r, o]));
+              r.push(n[2] = o);
+              var a = h.p + h.u(t),
+                i = new Error;
+              h.l(a, (r => {
+                if (h.o(e, t) && (0 !== (n = e[t]) && (e[t] = void 0), n)) {
+                  var o = r && ("load" === r.type ? "missing" : r.type),
+                    a = r && r.target && r.target.src;
+                  i.message = "Loading chunk " + t + " failed.\n(" + o + ": " + a + ")", i.name = "ChunkLoadError", i.type = o, i.request = a, n[1](i)
+                }
+              }), "chunk-" + t, t)
+            } else e[t] = 0
           };
           var t = (t, r) => {
               var n, o, a = r[0],

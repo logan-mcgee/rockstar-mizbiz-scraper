@@ -2,18 +2,18 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "f5e0cc45-63b8-4fd1-bd7b-8b593be54bd9", e._sentryDebugIdIdentifier = "sentry-dbid-f5e0cc45-63b8-4fd1-bd7b-8b593be54bd9")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "b9992bd7-3881-47cf-9d4d-d9e76e80b79f", e._sentryDebugIdIdentifier = "sentry-dbid-b9992bd7-3881-47cf-9d4d-d9e76e80b79f")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "5e225a56a96343405c858680af91190e5116b19e",
+  release: "37b3ba5563fc850bb4023bb85696f8442ccaf1f5",
   packageName: "@rockstargames/modules-core-card",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "5e225a56a96343405c858680af91190e5116b19e"
+  id: "37b3ba5563fc850bb4023bb85696f8442ccaf1f5"
 }, System.register(["@rockstargames/components", "@rockstargames/graph-client", "@rockstargames/intl", "@rockstargames/modules-core-group-of-items", "@rockstargames/modules-core-sc-user", "@rockstargames/tina", "@rockstargames/utils"], (function(e, t) {
   var n = {},
     r = {},
@@ -69,7 +69,7 @@ _global.SENTRY_RELEASE = {
     execute: function() {
       e((() => {
         var e, s, c, d, f = {
-            4840: (e, t, n) => {
+            4976: (e, t, n) => {
               "use strict";
               var r = n(8200),
                 a = n(132);
@@ -6223,7 +6223,7 @@ _global.SENTRY_RELEASE = {
                 return ec(e, t, n, !1, r)
               }, t.version = "18.2.0-next-9e3b772b8-20220608"
             },
-            7172: (e, t, n) => {
+            7332: (e, t, n) => {
               "use strict";
               ! function e() {
                 if ("undefined" != typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" == typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE) try {
@@ -6231,9 +6231,9 @@ _global.SENTRY_RELEASE = {
                 } catch (e) {
                   console.error(e)
                 }
-              }(), e.exports = n(4840)
+              }(), e.exports = n(4976)
             },
-            6596: (e, t, n) => {
+            788: (e, t, n) => {
               "use strict";
               n.r(t), n.d(t, {
                 AbortedDeferredError: () => Q,
@@ -10373,8 +10373,8 @@ _global.SENTRY_RELEASE = {
               "use strict";
               var r = {
                   "./bootstrap": () => n.e(420).then((() => () => n(7420))),
-                  "./components": () => Promise.all([n.e(652), n.e(112), n.e(224), n.e(700)]).then((() => () => n(9040))),
-                  "./modules": () => Promise.all([n.e(652), n.e(112), n.e(224), n.e(788)]).then((() => () => n(6648))),
+                  "./components": () => Promise.all([n.e(652), n.e(112), n.e(792), n.e(700)]).then((() => () => n(9040))),
+                  "./modules": () => Promise.all([n.e(652), n.e(112), n.e(792), n.e(788)]).then((() => () => n(6648))),
                   "./tina": () => Promise.all([n.e(652), n.e(96)]).then((() => () => n(4096)))
                 },
                 a = (e, t) => (n.R = t, t = n.o(r, e) ? r[e]() : Promise.resolve().then((() => {
@@ -10446,23 +10446,23 @@ _global.SENTRY_RELEASE = {
           })
         }, h.f = {}, h.e = e => Promise.all(Object.keys(h.f).reduce(((t, n) => (h.f[n](e, t), t)), [])), h.u = e => "js/" + {
           61: "5a4cfa1aa0a874e0562a223a9878bc43",
-          96: "71a16a723c338c826d485b3b59110175",
-          112: "3d68595aa03dfdc020be01f3dbd28853",
-          224: "f861b4ef2d8486eb088e1a107b96228a",
-          280: "13b7cb738d6262057f6736c81b05d515",
-          420: "c4e87f52b586a05c4d642593551ec970",
-          648: "fa9a3217c9ea2013cc2ae82c39f6d976",
+          96: "46a1e5b2044598df8322eaab70c31925",
+          112: "b895fd4112b3423417f9a9e02067b2d3",
+          280: "93099ee67fea4f1327945b42bb761bf8",
+          420: "afaff1428301c829632797bac73a046c",
+          648: "392f672ed1b8693c81a2603ff3bcdf58",
           652: "d3b99253ba85aeb9965d12f48dd816ff",
-          660: "0a4d04bb5e98e7621da9c91e725cc4fe",
-          700: "463b435527a870b5ac480e749d9a4525",
-          788: "d2671aecb91750a5d0d836170dd9a647",
-          907: "391313140ec58a19247b600a17dd36bb",
-          952: "5afac78d9037883677052a1f47b553f4"
+          660: "872ab46665dac1153489a94ebf2b66cb",
+          700: "440412064041800d5ba663cb402fca81",
+          788: "edacc30f05a268b21dc52c7dff778012",
+          792: "f749f37724e0334499ad9af714d43201",
+          907: "522e3f5990dca872021aae5509ebf608",
+          952: "0e6d947578b119df96656535ff56be84"
         } [e] + ".js", h.miniCssF = e => "css/" + {
-          112: "629cdfdf7fd33c999a9e10d681984d79",
-          224: "4d96101480964f461c7120757ae1de67",
-          700: "07a65d496259ba11848bd8a0ecb05a23",
-          952: "f6d056436c975ca85ea784b62b2bc5b5"
+          112: "07c10970124837938532363c04a1186a",
+          700: "49bbdf6f5aff39fe74e0a49c7c5692d9",
+          792: "1ebeff4ff04f60c95fe7c544e8548a8d",
+          952: "73617f29f3218ef2bfd5a77cc018119f"
         } [e] + ".css", h.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
@@ -10504,8 +10504,8 @@ _global.SENTRY_RELEASE = {
           61: [3061],
           96: [7368, 9468],
           112: [1668, 1740, 2836, 3052, 5792, 9016, 9812],
-          224: [5120],
-          652: [5652]
+          652: [5652],
+          792: [5120]
         }, d = {
           1668: ["default", "./index", 8856],
           1740: ["default", "./index", 8428],
@@ -10589,7 +10589,7 @@ _global.SENTRY_RELEASE = {
                   }
                 },
                 s = [];
-              return "default" === n && (i("@rockstargames/locale-tools", "1.0.0", (() => Promise.all([h.e(907), h.e(61), h.e(660)]).then((() => () => h(4660))))), i("lodash", "4.17.21", (() => h.e(648).then((() => () => h(5648))))), i("react-dom", "18.2.0", (() => () => h(7172)), 1), i("react-router-dom", "6.17.0", (() => () => h(6596)), 1), i("react", "18.2.0", (() => () => h(8188)), 1), u(8428), u(8856), u(3864), u(72), u(1128), u(9344), u(800)), s.length ? e[n] = Promise.all(s).then((() => e[n] = 1)) : e[n] = 1
+              return "default" === n && (i("@rockstargames/locale-tools", "1.0.0", (() => Promise.all([h.e(907), h.e(61), h.e(660)]).then((() => () => h(4660))))), i("lodash", "4.17.21", (() => h.e(648).then((() => () => h(5648))))), i("react-dom", "18.2.0", (() => () => h(7332)), 1), i("react-router-dom", "6.17.0", (() => () => h(788)), 1), i("react", "18.2.0", (() => () => h(8188)), 1), u(8428), u(8856), u(3864), u(72), u(1128), u(9344), u(800)), s.length ? e[n] = Promise.all(s).then((() => e[n] = 1)) : e[n] = 1
             }
           }
         })(), (() => {
@@ -10672,10 +10672,10 @@ _global.SENTRY_RELEASE = {
             })),
             a = {},
             o = {
+              3557: () => r("default", "react-router-dom", [1, 6, 11, 2], (() => () => h(788))),
               3660: () => r("default", "lodash", [1, 4, 17, 21], (() => h.e(648).then((() => () => h(5648))))),
-              8952: () => r("default", "react-router-dom", [1, 6, 11, 2], (() => () => h(6596))),
-              1512: () => r("default", "@rockstargames/locale-tools", [1, "workspace:x"], (() => Promise.all([h.e(907), h.e(61), h.e(280)]).then((() => () => h(4660))))),
-              6524: () => r("default", "react-dom", [1, 18, 2, 0], (() => () => h(7172))),
+              696: () => r("default", "@rockstargames/locale-tools", [1, "workspace:*"], (() => Promise.all([h.e(907), h.e(61), h.e(280)]).then((() => () => h(4660))))),
+              9080: () => r("default", "react-dom", [1, 18, 2, 0], (() => () => h(7332))),
               8200: () => r("default", "react", [1, 18, 2, 0], (() => () => h(8188)))
             };
           [8200].forEach((e => {
@@ -10687,9 +10687,9 @@ _global.SENTRY_RELEASE = {
             }
           }));
           var l = {
-              112: [3660, 8952],
-              224: [1512],
-              952: [6524]
+              112: [3557, 3660],
+              792: [696],
+              952: [9080]
             },
             i = {};
           h.f.consumes = (e, t) => {
@@ -10724,8 +10724,8 @@ _global.SENTRY_RELEASE = {
             h.f.miniCss = (t, n) => {
               e[t] ? n.push(e[t]) : 0 !== e[t] && {
                 112: 1,
-                224: 1,
                 700: 1,
+                792: 1,
                 952: 1
               } [t] && n.push(e[t] = (e => new Promise(((t, n) => {
                 var r = h.miniCssF(e),
@@ -10768,7 +10768,7 @@ _global.SENTRY_RELEASE = {
             var r = h.o(e, t) ? e[t] : void 0;
             if (0 !== r)
               if (r) n.push(r[2]);
-              else if (/^(224|61|652)$/.test(t)) e[t] = 0;
+              else if (/^(61|652|792)$/.test(t)) e[t] = 0;
             else {
               var a = new Promise(((n, a) => r = e[t] = [n, a]));
               n.push(r[2] = a);

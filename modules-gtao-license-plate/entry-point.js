@@ -2,18 +2,18 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "352703b6-e303-45fa-933b-e4752def8ecd", e._sentryDebugIdIdentifier = "sentry-dbid-352703b6-e303-45fa-933b-e4752def8ecd")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "06629323-e950-4a25-972b-b5562ce0a6bb", e._sentryDebugIdIdentifier = "sentry-dbid-06629323-e950-4a25-972b-b5562ce0a6bb")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "5e225a56a96343405c858680af91190e5116b19e",
+  release: "63eddca94fa9726ada78d0c14030f13fd7020af7",
   packageName: "@rockstargames/modules-gtao-license-plate",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "5e225a56a96343405c858680af91190e5116b19e"
+  id: "63eddca94fa9726ada78d0c14030f13fd7020af7"
 }, System.register(["@rockstargames/components", "@rockstargames/graph-client", "@rockstargames/modules-core-sc-user", "@rockstargames/polyfills", "@rockstargames/utils"], (function(e, t) {
   var n = {},
     r = {},
@@ -10421,23 +10421,23 @@ _global.SENTRY_RELEASE = {
             get: t[n]
           })
         }, f.f = {}, f.e = e => Promise.all(Object.keys(f.f).reduce(((t, n) => (f.f[n](e, t), t)), [])), f.u = e => "js/" + {
-          0: "1c5a75f580ba5d0da61620b49260ca73",
-          72: "89491c6830709bb0523a8a58549899ec",
-          208: "8ae702af363ea013e00334e87b5e60e2",
-          216: "b6b8c93d8890cb9476dc75332b193b3f",
+          0: "e038a22eafcdf35433cfee9aaa8dc99b",
+          72: "97d16276aa3c467f7917da7cc4615b2a",
+          208: "c2d3a5cd501c0c5e00c2bc140fad83c3",
           224: "e1cf52e2a56e4c7151f64316fd17a5ed",
-          372: "934b2ecef86cdd3970ef6e62ee1bedf9",
-          420: "9f78d851faca9aace8e2e6c2e339f9b7",
-          584: "677c9ae79017e6e2b3497d869121124e",
-          648: "d7609e7bfc3cc81f1b563e7f47885498",
-          736: "fdadcc683a29ef959a2d4474c7bf0a85",
+          372: "cce5339e657613ad5a1971be51902181",
+          420: "13e0ff17dc51c7128ed01651f19d50b0",
+          584: "0021856160ebe9411cef46353459a1e6",
+          648: "e2f37ccbeea48bcfe9d8784d43c2b7b4",
+          691: "8a9d21033e97d199ca1892813fa78796",
+          736: "173e5b9a3a409af58ccc0a6becc0c193",
           768: "fdff714697545238bbecdfb0b87d5136",
-          812: "4c10fc3f912ea96a6d635cbed3f33a5f",
-          856: "250d89bb15b1d6358e00f1c71f5fb5c3",
-          944: "56f43e66f521582cb89f45c67f7f0cc8"
+          812: "52e76ca20a36bba734f5de318ae19ab0",
+          856: "4a6bea48fd65bd7f68beeb985d844724",
+          944: "c4ace317edc8c2701ba9753a4c9e2397"
         } [e] + ".js", f.miniCssF = e => "css/" + {
-          812: "a6bcd4017019f6b17bbfe546c1ceed51",
-          944: "7fcf53aab98ee70a6791ac1721e331d8"
+          812: "171b6f6caaa2236d069e5af4e8b8a6a7",
+          944: "ef93f66a1e639fd1146c94624dd801a8"
         } [e] + ".css", f.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
@@ -10557,7 +10557,7 @@ _global.SENTRY_RELEASE = {
                   }
                 },
                 s = [];
-              return "default" === n && (i("@react-spring/web", "9.7.3", (() => Promise.all([f.e(584), f.e(768)]).then((() => () => f(8584))))), i("@react-three/fiber", "7.0.29", (() => Promise.all([f.e(736), f.e(224)]).then((() => () => f(1736))))), i("@use-gesture/react", "10.3.0", (() => f.e(72).then((() => () => f(1072))))), i("gsap", "3.12.2", (() => f.e(216).then((() => () => f(216))))), i("lodash", "4.17.21", (() => f.e(648).then((() => () => f(5648))))), i("react-dom", "18.2.0", (() => () => f(7412)), 1), i("react-router-dom", "6.17.0", (() => () => f(9860)), 1), i("react", "18.2.0", (() => () => f(8188)), 1), i("stackblur-canvas", "2.6.0", (() => f.e(372).then((() => () => f(9372))))), i("three", "0.141.0", (() => f.e(208).then((() => () => f(208))))), u(8856), u(3864), u(1128), u(9344), u(7752)), s.length ? e[n] = Promise.all(s).then((() => e[n] = 1)) : e[n] = 1
+              return "default" === n && (i("@react-spring/web", "9.7.3", (() => Promise.all([f.e(584), f.e(768)]).then((() => () => f(8584))))), i("@react-three/fiber", "7.0.29", (() => Promise.all([f.e(736), f.e(224)]).then((() => () => f(1736))))), i("@use-gesture/react", "10.3.0", (() => f.e(72).then((() => () => f(1072))))), i("gsap", "0.0.0", (() => f.e(691).then((() => () => f(4072))))), i("lodash", "4.17.21", (() => f.e(648).then((() => () => f(5648))))), i("react-dom", "18.2.0", (() => () => f(7412)), 1), i("react-router-dom", "6.17.0", (() => () => f(9860)), 1), i("react", "18.2.0", (() => () => f(8188)), 1), i("stackblur-canvas", "2.6.0", (() => f.e(372).then((() => () => f(9372))))), i("three", "0.141.0", (() => f.e(208).then((() => () => f(208))))), u(8856), u(3864), u(1128), u(9344), u(7752)), s.length ? e[n] = Promise.all(s).then((() => e[n] = 1)) : e[n] = 1
             }
           }
         })(), (() => {
@@ -10642,11 +10642,11 @@ _global.SENTRY_RELEASE = {
             o = {
               8224: () => r("default", "three", [4, 0, 141, 0], (() => f.e(208).then((() => () => f(208))))),
               4768: () => r("default", "react-dom", [1, 18, 2, 0], (() => () => f(7412))),
-              1168: () => r("default", "gsap", [1, 3, 10, 4], (() => f.e(216).then((() => () => f(216))))),
               1328: () => r("default", "@react-three/fiber", [1, 7, 0, 0], (() => f.e(736).then((() => () => f(1736))))),
               1916: () => r("default", "react-router-dom", [1, 6, 11, 2], (() => () => f(9860))),
               3660: () => r("default", "lodash", [1, 4, 17, 21], (() => f.e(648).then((() => () => f(5648))))),
               4372: () => r("default", "@react-spring/web", [1, 9, 6, 1], (() => f.e(584).then((() => () => f(8584))))),
+              6372: () => r("default", "gsap", [1, "workspace:*"], (() => f.e(691).then((() => () => f(4072))))),
               6628: () => r("default", "stackblur-canvas", [1, 2, 5, 0], (() => f.e(372).then((() => () => f(9372))))),
               9641: () => r("default", "@use-gesture/react", [1, 10, 2, 23], (() => f.e(72).then((() => () => f(1072))))),
               8200: () => r("default", "react", [1, 18, 2, 0], (() => () => f(8188)))
@@ -10662,7 +10662,7 @@ _global.SENTRY_RELEASE = {
           var l = {
               224: [8224],
               768: [4768],
-              812: [1168, 1328, 1916, 3660, 4372, 6628, 9641]
+              812: [1328, 1916, 3660, 4372, 6372, 6628, 9641]
             },
             i = {};
           f.f.consumes = (e, t) => {

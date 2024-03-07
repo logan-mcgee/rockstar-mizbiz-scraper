@@ -2,18 +2,18 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       n = (new Error).stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "a09f9ea0-b92b-478d-a095-3e84318106fd", e._sentryDebugIdIdentifier = "sentry-dbid-a09f9ea0-b92b-478d-a095-3e84318106fd")
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "4bd10ca8-5c9a-47bd-a0b9-5765a1dbb130", e._sentryDebugIdIdentifier = "sentry-dbid-4bd10ca8-5c9a-47bd-a0b9-5765a1dbb130")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "5e225a56a96343405c858680af91190e5116b19e",
+  release: "63eddca94fa9726ada78d0c14030f13fd7020af7",
   packageName: "@rockstargames/tina",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "5e225a56a96343405c858680af91190e5116b19e"
+  id: "63eddca94fa9726ada78d0c14030f13fd7020af7"
 }, System.register(["@rockstargames/graph-client", "@rockstargames/tina", "@rockstargames/utils"], (function(e, n) {
   var t = {},
     r = {},
@@ -6778,8 +6778,8 @@ _global.SENTRY_RELEASE = {
                   "./helpers": () => t.e(520).then((() => () => t(9520))),
                   "./helpers/payload": () => Promise.all([t.e(660), t.e(812)]).then((() => () => t(3812))),
                   "./helpers/uploads": () => Promise.all([t.e(792), t.e(472)]).then((() => () => t(3472))),
-                  "./index": () => Promise.all([t.e(952), t.e(792), t.e(558), t.e(660), t.e(632)]).then((() => () => t(9093))),
-                  "./properties": () => Promise.all([t.e(952), t.e(792), t.e(558), t.e(900)]).then((() => () => t(7558))),
+                  "./index": () => Promise.all([t.e(952), t.e(792), t.e(212), t.e(660), t.e(632)]).then((() => () => t(9093))),
+                  "./properties": () => Promise.all([t.e(952), t.e(792), t.e(212), t.e(900)]).then((() => () => t(9212))),
                   "./tinaBlockTemplates": () => t.e(124).then((() => () => t(1124))),
                   "./ui": () => Promise.all([t.e(952), t.e(688)]).then((() => () => t(5688)))
                 },
@@ -6835,21 +6835,21 @@ _global.SENTRY_RELEASE = {
             get: n[t]
           })
         }, c.f = {}, c.e = e => Promise.all(Object.keys(c.f).reduce(((n, t) => (c.f[t](e, n), n)), [])), c.u = e => "js/" + {
-          124: "a95ca25dd7e23fbab05a47baed04fff5",
-          188: "641f9d0f3aa4fae3ccce6cd0978b2117",
-          192: "f4ae2dcd97c8c6b069a860dad46843c4",
-          396: "46127cb41821b0741ecfbf63b53f6970",
-          472: "9e2507ff764972e0f4757dc7edfd6cb6",
-          520: "96058a2fbe1c8b43b874887997178ce9",
-          558: "3fdba04016b74917956e880f97b2024e",
-          632: "f1b76603b697e2cce1809b831719a1b6",
-          648: "8e78535224d004a282f98714fb6ad5c1",
+          124: "3503dea588a0648a0f009bc52d5696b4",
+          188: "5e4167971b89dae244d85f3ca612b296",
+          192: "736e3bb6eba9d1b29c71bd70a1635ebb",
+          212: "8277de564b45ecfcc1e8eb4be8897c0d",
+          396: "1e76f95bbe9a2e3faf05e5258ac06067",
+          472: "e680e3c1700a5e5fdd030ef46c0281d4",
+          520: "0790f5de5d0c8b22f82622bb5f1afba0",
+          632: "288099f0c11f5cd5785ada6d29bce4d4",
+          648: "48b1568d1e62a2543505a5e55eef83be",
           660: "367195fc468808c041e16808bb0455f9",
-          688: "64e007b835900476c3a5e25c2d9d5e8a",
+          688: "4e9f3c893ee4afe6e198a6f8e74d020b",
           768: "9a4b29dcbb526da9efed1bf8655a4e0c",
-          780: "93b0f0ff63e9e1325f7afa867057589e",
+          780: "1f1c0673384bdb873cec7f7a5b87e168",
           792: "57e7ba9aa934888bf2a5dec01e6fb3c3",
-          812: "bc9ee26fb85038be11f944e4040bd3d7",
+          812: "cd8f8eaf472396728f0be92c5a4ba798",
           900: "c11f1905dbe34686b4ebb570fda3f44f",
           952: "bdfc642c2babeb96a9bf3fc8d02d63db"
         } [e] + ".js", c.miniCssF = e => "css/" + {
@@ -6895,7 +6895,7 @@ _global.SENTRY_RELEASE = {
           })
         }, c.nmd = e => (e.paths = [], e.children || (e.children = []), e), o = {
           124: [9468],
-          558: [3052],
+          212: [3052],
           792: [5792]
         }, u = {
           3052: ["default", "./index", 3864],
@@ -7071,7 +7071,7 @@ _global.SENTRY_RELEASE = {
             }
           }));
           var o = {
-              558: [8e3],
+              212: [8e3],
               632: [7020],
               660: [3660],
               688: [2656],

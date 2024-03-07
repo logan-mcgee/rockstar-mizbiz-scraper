@@ -2,18 +2,18 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "ce0b132b-5334-434b-9507-b7e7411f45dc", e._sentryDebugIdIdentifier = "sentry-dbid-ce0b132b-5334-434b-9507-b7e7411f45dc")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "84a9b451-c520-4e01-8d55-6dd15741f10b", e._sentryDebugIdIdentifier = "sentry-dbid-84a9b451-c520-4e01-8d55-6dd15741f10b")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "5e225a56a96343405c858680af91190e5116b19e",
+  release: "63eddca94fa9726ada78d0c14030f13fd7020af7",
   packageName: "@rockstargames/sites-red-dead-redemption-2",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "5e225a56a96343405c858680af91190e5116b19e"
+  id: "63eddca94fa9726ada78d0c14030f13fd7020af7"
 }, System.register(["@rockstargames/components", "@rockstargames/graph-client", "@rockstargames/modules-core-agegate", "@rockstargames/modules-core-videoplayer", "@rockstargames/utils"], (function(e, t) {
   var r = {},
     n = {},
@@ -4013,9 +4013,9 @@ _global.SENTRY_RELEASE = {
             get: t[r]
           })
         }, f.f = {}, f.e = e => Promise.all(Object.keys(f.f).reduce(((t, r) => (f.f[r](e, t), t)), [])), f.u = e => "js/" + {
-          52: "0fa538857fc6a23678cea0bd4c7daf49",
-          648: "0e673cb5f49fb28594cc8a6123dfd539",
-          832: "25158f5a91fcaa070da95bd189e053bf"
+          52: "191aefef8ff8fd4988516c01ab68d489",
+          648: "2e6efcabd9889d4de8df68e7ab62aa49",
+          832: "54d58c897c9c74546db0e007cda11b77"
         } [e] + ".js", f.miniCssF = e => "css/f591ef29a01f17332a4e20f415b692b1.css", f.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
