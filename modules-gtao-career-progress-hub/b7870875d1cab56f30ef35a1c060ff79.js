@@ -1,4 +1,4 @@
-/*! For license information please see e8092ae739d58b4c9a9072b18f98b2f5.js.LICENSE.txt */ ! function() {
+/*! For license information please see b7870875d1cab56f30ef35a1c060ff79.js.LICENSE.txt */ ! function() {
   try {
     var t = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       e = (new Error).stack;
@@ -7,13 +7,13 @@
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "63eddca94fa9726ada78d0c14030f13fd7020af7",
+  release: "0fac9d39cdee1a8eccecb716cfcdd18497dbe214",
   packageName: "@rockstargames/modules-gtao-career-progress-hub",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "63eddca94fa9726ada78d0c14030f13fd7020af7"
+  id: "0fac9d39cdee1a8eccecb716cfcdd18497dbe214"
 }, (self.webpackChunk_rockstargames_modules_gtao_career_progress_hub = self.webpackChunk_rockstargames_modules_gtao_career_progress_hub || []).push([
   [72], {
     4072: (t, e, i) => {
@@ -2047,4 +2047,4 @@ _global.SENTRY_RELEASE = {
     }
   }
 ]);
-//# sourceMappingURL=e8092ae739d58b4c9a9072b18f98b2f5.js.map
+//# sourceMappingURL=b7870875d1cab56f30ef35a1c060ff79.js.map

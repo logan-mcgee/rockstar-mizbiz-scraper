@@ -1,19 +1,19 @@
-/*! For license information please see 41e04d3cc203300ad14d368470d3d416.js.LICENSE.txt */ ! function() {
+/*! For license information please see d82f538f2562b0907bcefc8228d93ae5.js.LICENSE.txt */ ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "603978a9-5711-4215-aab6-4a2eaf8b2dd8", e._sentryDebugIdIdentifier = "sentry-dbid-603978a9-5711-4215-aab6-4a2eaf8b2dd8")
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "27da29af-4ef1-4e6e-9ee8-ba50355a6824", e._sentryDebugIdIdentifier = "sentry-dbid-27da29af-4ef1-4e6e-9ee8-ba50355a6824")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "63eddca94fa9726ada78d0c14030f13fd7020af7",
+  release: "0fac9d39cdee1a8eccecb716cfcdd18497dbe214",
   packageName: "@rockstargames/modules-gtao-career-progress-hub",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "63eddca94fa9726ada78d0c14030f13fd7020af7"
+  id: "0fac9d39cdee1a8eccecb716cfcdd18497dbe214"
 }, (self.webpackChunk_rockstargames_modules_gtao_career_progress_hub = self.webpackChunk_rockstargames_modules_gtao_career_progress_hub || []).push([
   [230], {
     1230: (e, a, r) => {
@@ -2855,7 +2855,7 @@ _global.SENTRY_RELEASE = {
           })
         };
       var Rt = r(3557),
-        Et = r(1740),
+        Et = r(9359),
         St = r(7044);
       const kt = ["1"],
         vt = {
@@ -3685,12 +3685,12 @@ _global.SENTRY_RELEASE = {
         "./PROGRESS_BUSINESSES_PREVIEW_SMUGGLERS_REWARD_T4.jpg": 7276,
         "./PROGRESS_BUSINESSES_PREVIEW_SMUGGLERS_REWARD_T4_CASH.jpg": 8896,
         "./PROGRESS_BUSINESSES_PREVIEW_SMUGGLERS_REWARD_T4_RP.jpg": 5748,
-        "./PROGRESS_CONTACT_PREVIEW_CHICKEN_FACTORY_REWARD_T1.jpg": 9956,
-        "./PROGRESS_CONTACT_PREVIEW_CHICKEN_FACTORY_REWARD_T2.jpg": 9512,
-        "./PROGRESS_CONTACT_PREVIEW_CHICKEN_FACTORY_REWARD_T3.jpg": 9372,
-        "./PROGRESS_CONTACT_PREVIEW_CHICKEN_FACTORY_REWARD_T4.jpg": 3624,
-        "./PROGRESS_CONTACT_PREVIEW_CHICKEN_FACTORY_REWARD_T4_CASH.jpg": 3184,
-        "./PROGRESS_CONTACT_PREVIEW_CHICKEN_FACTORY_REWARD_T4_RP.jpg": 3384,
+        "./PROGRESS_CONTACT_PREVIEW_CHICKEN_REWARD_T1.jpg": 1740,
+        "./PROGRESS_CONTACT_PREVIEW_CHICKEN_REWARD_T2.jpg": 5068,
+        "./PROGRESS_CONTACT_PREVIEW_CHICKEN_REWARD_T3.jpg": 4548,
+        "./PROGRESS_CONTACT_PREVIEW_CHICKEN_REWARD_T4.jpg": 464,
+        "./PROGRESS_CONTACT_PREVIEW_CHICKEN_REWARD_T4_CASH.jpg": 5860,
+        "./PROGRESS_CONTACT_PREVIEW_CHICKEN_REWARD_T4_RP.jpg": 6004,
         "./PROGRESS_CONTACT_PREVIEW_GERALDS_REWARD_T1.jpg": 7599,
         "./PROGRESS_CONTACT_PREVIEW_GERALDS_REWARD_T2.jpg": 9808,
         "./PROGRESS_CONTACT_PREVIEW_GERALDS_REWARD_T3.jpg": 4399,
@@ -3795,7 +3795,7 @@ _global.SENTRY_RELEASE = {
         "./PROGRESS_SERIES_PREVIEW_DEATHMATCHES_REWARD_T4_CASH.jpg": 9120,
         "./PROGRESS_SERIES_PREVIEW_DEATHMATCHES_REWARD_T4_RP.jpg": 3944,
         "./PROGRESS_SERIES_PREVIEW_RACING_REWARD_T1.jpg": 9180,
-        "./PROGRESS_SERIES_PREVIEW_RACING_REWARD_T2.jpg": 6004,
+        "./PROGRESS_SERIES_PREVIEW_RACING_REWARD_T2.jpg": 3624,
         "./PROGRESS_SERIES_PREVIEW_RACING_REWARD_T3.jpg": 5208,
         "./PROGRESS_SERIES_PREVIEW_RACING_REWARD_T4.jpg": 2063,
         "./PROGRESS_SERIES_PREVIEW_RACING_REWARD_T4_CASH.jpg": 8676,
@@ -4056,27 +4056,27 @@ _global.SENTRY_RELEASE = {
       "use strict";
       e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/7eb2ff2bc305d0b4149751002da65e2b.jpg"
     },
-    9956: e => {
+    1740: e => {
       "use strict";
       e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/753435f901b1fc6a0e9a22a1998390b6.jpg"
     },
-    9512: e => {
+    5068: e => {
       "use strict";
       e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/d588977ea29e4de8310c999d6c538830.jpg"
     },
-    9372: e => {
+    4548: e => {
       "use strict";
       e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/0dfe28ebbe27256c508aba3625f1d05f.jpg"
     },
-    3624: e => {
+    464: e => {
       "use strict";
       e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/363f2f912a6275812334148aadd6570e.jpg"
     },
-    3184: e => {
+    5860: e => {
       "use strict";
       e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/d51a05992c53c97adb2669426411b8af.jpg"
     },
-    3384: e => {
+    6004: e => {
       "use strict";
       e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/7eb2ff2bc305d0b4149751002da65e2b.jpg"
     },
@@ -4496,7 +4496,7 @@ _global.SENTRY_RELEASE = {
       "use strict";
       e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/92fbe71bb5f4b82b5c670de1ad251bea.jpg"
     },
-    6004: e => {
+    3624: e => {
       "use strict";
       e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5fc7772067f8595434121b7270b0219b.jpg"
     },
@@ -4594,4 +4594,4 @@ _global.SENTRY_RELEASE = {
     }
   }
 ]);
-//# sourceMappingURL=41e04d3cc203300ad14d368470d3d416.js.map
+//# sourceMappingURL=d82f538f2562b0907bcefc8228d93ae5.js.map

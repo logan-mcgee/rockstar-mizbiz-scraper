@@ -1,4 +1,4 @@
-/*! For license information please see c69fd29f8470ead87e21a14cc2913f1b.js.LICENSE.txt */ ! function() {
+/*! For license information please see 13eb1b5c64c299b0b3e8e7744b2d0a72.js.LICENSE.txt */ ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       o = (new Error).stack;
@@ -7,13 +7,13 @@
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "63eddca94fa9726ada78d0c14030f13fd7020af7",
+  release: "0fac9d39cdee1a8eccecb716cfcdd18497dbe214",
   packageName: "@rockstargames/modules-gtao-career-progress-hub",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "63eddca94fa9726ada78d0c14030f13fd7020af7"
+  id: "0fac9d39cdee1a8eccecb716cfcdd18497dbe214"
 }, (self.webpackChunk_rockstargames_modules_gtao_career_progress_hub = self.webpackChunk_rockstargames_modules_gtao_career_progress_hub || []).push([
   [660, 280], {
     1996: (e, o, s) => {
@@ -64,7 +64,7 @@ _global.SENTRY_RELEASE = {
         getLocale: () => c.c,
         localeCookieHandler: () => d.c,
         locales: () => u.c,
-        splitLocale: () => f.c,
+        splitLocale: () => b.c,
         useIntl: () => r.c,
         withIntl: () => i.eO
       });
@@ -77,11 +77,11 @@ _global.SENTRY_RELEASE = {
         c = s(4560),
         d = s(8612),
         u = s(3916),
-        f = s(9423),
-        b = s(4932),
-        p = {};
-      for (const e in b)["default", "FormattedMessage", "IntlProvider", "createDevLocaleHook", "createIntl", "defineMessages", "englishLocale", "getLocale", "localeCookieHandler", "locales", "splitLocale", "useIntl", "withIntl"].indexOf(e) < 0 && (p[e] = () => b[e]);
-      s.d(o, p)
+        b = s(9423),
+        p = s(4932),
+        f = {};
+      for (const e in p)["default", "FormattedMessage", "IntlProvider", "createDevLocaleHook", "createIntl", "defineMessages", "englishLocale", "getLocale", "localeCookieHandler", "locales", "splitLocale", "useIntl", "withIntl"].indexOf(e) < 0 && (f[e] = () => p[e]);
+      s.d(o, f)
     },
     3583: (e, o, s) => {
       "use strict";
@@ -318,4 +318,4 @@ _global.SENTRY_RELEASE = {
     }
   }
 ]);
-//# sourceMappingURL=c69fd29f8470ead87e21a14cc2913f1b.js.map
+//# sourceMappingURL=13eb1b5c64c299b0b3e8e7744b2d0a72.js.map

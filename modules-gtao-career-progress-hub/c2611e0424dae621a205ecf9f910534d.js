@@ -7,21 +7,21 @@
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "63eddca94fa9726ada78d0c14030f13fd7020af7",
+  release: "0fac9d39cdee1a8eccecb716cfcdd18497dbe214",
   packageName: "@rockstargames/modules-gtao-career-progress-hub",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "63eddca94fa9726ada78d0c14030f13fd7020af7"
+  id: "0fac9d39cdee1a8eccecb716cfcdd18497dbe214"
 }, (self.webpackChunk_rockstargames_modules_gtao_career_progress_hub = self.webpackChunk_rockstargames_modules_gtao_career_progress_hub || []).push([
   [544], {
     8544: (e, t, n) => {
       n.r(t), n.d(t, {
         InView: () => h,
         default: () => h,
-        defaultFallbackInView: () => u,
-        observe: () => c,
+        defaultFallbackInView: () => c,
+        observe: () => u,
         useInView: () => b
       });
       var r = n(8200);
@@ -46,11 +46,11 @@ _global.SENTRY_RELEASE = {
         d = 0,
         l = void 0;
 
-      function u(e) {
+      function c(e) {
         l = e
       }
 
-      function c(e, t, n, r) {
+      function u(e, t, n, r) {
         if (void 0 === n && (n = {}), void 0 === r && (r = l), void 0 === window.IntersectionObserver && void 0 !== r) {
           var i = e.getBoundingClientRect();
           return t(r, {
@@ -94,13 +94,13 @@ _global.SENTRY_RELEASE = {
             }
             return n
           }(n),
-          u = o.id,
-          c = o.observer,
+          c = o.id,
+          u = o.observer,
           f = o.elements,
           p = f.get(e) || [];
-        return f.has(e) || f.set(e, p), p.push(t), c.observe(e),
+        return f.has(e) || f.set(e, p), p.push(t), u.observe(e),
           function() {
-            p.splice(p.indexOf(t), 1), 0 === p.length && (f.delete(e), c.unobserve(e)), 0 === f.size && (c.disconnect(), s.delete(u))
+            p.splice(p.indexOf(t), 1), 0 === p.length && (f.delete(e), u.unobserve(e)), 0 === f.size && (u.disconnect(), s.delete(c))
           }
       }
       var f = ["children", "as", "triggerOnce", "threshold", "root", "rootMargin", "onChange", "skip", "trackVisibility", "delay", "initialInView", "fallbackInView"];
@@ -143,7 +143,7 @@ _global.SENTRY_RELEASE = {
               i = e.trackVisibility,
               o = e.delay,
               s = e.fallbackInView;
-            this._unobserveCb = c(this.node, this.handleChange, {
+            this._unobserveCb = u(this.node, this.handleChange, {
               threshold: t,
               root: n,
               rootMargin: r,
@@ -189,16 +189,16 @@ _global.SENTRY_RELEASE = {
           a = t.root,
           d = t.triggerOnce,
           l = t.skip,
-          u = t.initialInView,
+          c = t.initialInView,
           f = t.fallbackInView,
           p = r.useRef(),
           h = r.useState({
-            inView: !!u
+            inView: !!c
           }),
           b = h[0],
           g = h[1],
           y = r.useCallback((function(e) {
-            void 0 !== p.current && (p.current(), p.current = void 0), l || e && (p.current = c(e, (function(e, t) {
+            void 0 !== p.current && (p.current(), p.current = void 0), l || e && (p.current = u(e, (function(e, t) {
               g({
                 inView: e,
                 entry: t
@@ -213,7 +213,7 @@ _global.SENTRY_RELEASE = {
           }), [Array.isArray(n) ? n.toString() : n, a, s, d, l, o, f, i]);
         (0, r.useEffect)((function() {
           p.current || !b.entry || d || l || g({
-            inView: !!u
+            inView: !!c
           })
         }));
         var v = [y, b.inView, b.entry];
@@ -227,4 +227,4 @@ _global.SENTRY_RELEASE = {
     }
   }
 ]);
-//# sourceMappingURL=fd24453e429ea9bd70354b7a2efafaa5.js.map
+//# sourceMappingURL=c2611e0424dae621a205ecf9f910534d.js.map

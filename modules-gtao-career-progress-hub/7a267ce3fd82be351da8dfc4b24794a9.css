@@ -3810,7 +3810,11 @@ h6.rockstargames-modules-gtao-career-progress-hubad48e58a2dc3106dc694151f02e2597
 }
 
 .rockstargames-modules-gtao-career-progress-hubea84e2bcf7090e4fc7199c3526bf6ce9 {
-  top: calc(var(--game-header-height) - 1px)
+  top: calc(var(--game-header-height) + var(--promo-banner-height))
+}
+
+body[data-show-more-content] .rockstargames-modules-gtao-career-progress-hubea84e2bcf7090e4fc7199c3526bf6ce9 {
+  top: 0
 }
 
 .rockstargames-modules-gtao-career-progress-huba1cad8d2506106f3ae1c28bf03d3dada {
@@ -4452,4 +4456,4 @@ h6.rockstargames-modules-gtao-career-progress-hubad48e58a2dc3106dc694151f02e2597
   }
 }
 
-/*# sourceMappingURL=fd7739e83fecb0d7b9c225844ff78de4.css.map*/
+/*# sourceMappingURL=7a267ce3fd82be351da8dfc4b24794a9.css.map*/

@@ -2,18 +2,18 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "8d6f8439-87a0-4b33-89e1-10747f7d2c57", e._sentryDebugIdIdentifier = "sentry-dbid-8d6f8439-87a0-4b33-89e1-10747f7d2c57")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "ad53312f-94fc-4a14-9bfc-d82b7ebfee29", e._sentryDebugIdIdentifier = "sentry-dbid-ad53312f-94fc-4a14-9bfc-d82b7ebfee29")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "63eddca94fa9726ada78d0c14030f13fd7020af7",
+  release: "0fac9d39cdee1a8eccecb716cfcdd18497dbe214",
   packageName: "@rockstargames/modules-gtao-career-progress-hub",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "63eddca94fa9726ada78d0c14030f13fd7020af7"
+  id: "0fac9d39cdee1a8eccecb716cfcdd18497dbe214"
 }, System.register(["@rockstargames/components", "@rockstargames/graph-client", "@rockstargames/modules-core-highlights", "@rockstargames/modules-core-sc-user", "@rockstargames/tina", "@rockstargames/utils"], (function(e, t) {
   var n = {},
     r = {},
@@ -10432,20 +10432,20 @@ _global.SENTRY_RELEASE = {
           })
         }, p.f = {}, p.e = e => Promise.all(Object.keys(p.f).reduce(((t, n) => (p.f[n](e, t), t)), [])), p.u = e => "js/" + {
           61: "6142d9487d60932e2a7050baaab6d72f",
-          72: "e8092ae739d58b4c9a9072b18f98b2f5",
-          230: "41e04d3cc203300ad14d368470d3d416",
-          256: "dba5ca52d4e50beaf0ab59cfd3903925",
-          280: "749bb7129126b23b46c2217d00319ade",
-          436: "fdf759b682a6508c1d8eb978d983c130",
-          472: "697555d37639b6e8c89129a4b187a6f1",
-          544: "fd24453e429ea9bd70354b7a2efafaa5",
-          660: "c69fd29f8470ead87e21a14cc2913f1b",
-          676: "8d8c5d56e6543b4f5fb60867c921904c",
-          692: "9b61ca6fcffe213ab0c8cb0c7d33d8f5",
-          856: "8d025b66374394784be363ab8622acf7",
-          896: "28b920ad355dd8781606da519976fb3b",
-          907: "e26b5f0f86ad87bcd8bce050846f2a2c"
-        } [e] + ".js", p.miniCssF = e => "css/fd7739e83fecb0d7b9c225844ff78de4.css", p.g = function() {
+          72: "b7870875d1cab56f30ef35a1c060ff79",
+          230: "d82f538f2562b0907bcefc8228d93ae5",
+          256: "ac33048d665115cc2d38315b96e9d15e",
+          280: "777d7430ae5cd9ce5ab0a997e1c0c578",
+          436: "1d7a011b3b272230652e9340786f3c6d",
+          472: "b9df85633ac752df5bb3e2908e05ca11",
+          544: "c2611e0424dae621a205ecf9f910534d",
+          660: "13eb1b5c64c299b0b3e8e7744b2d0a72",
+          676: "066435d5a4159aae182260893b4aebaf",
+          692: "266a0d2b7aef0f2898dee9cacc71ae65",
+          856: "e302b2c7140283d0d74482ba75268253",
+          896: "fc6d8c8168b1905b75f91651b72e4f3a",
+          907: "65209dfe7a5f452b1acba1748bab1317"
+        } [e] + ".js", p.miniCssF = e => "css/7a267ce3fd82be351da8dfc4b24794a9.css", p.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
             return this || new Function("return this")()
@@ -10484,17 +10484,17 @@ _global.SENTRY_RELEASE = {
           })
         }, s = {
           61: [3061],
-          230: [1668, 1740, 2836, 3052, 5792, 6752],
+          230: [1668, 2836, 3052, 5792, 6752, 9359],
           896: [5652, 9468]
         }, c = {
           1668: ["default", "./index", 8856],
-          1740: ["default", "./index", 8428],
           2836: ["default", "./index", 1128],
           3052: ["default", "./index", 3864],
           3061: ["default", "./hooks", 9344],
           5652: ["default", "./helpers/uploads", 8428],
           5792: ["default", "./index", 9344],
           6752: ["default", "./index", 6806],
+          9359: ["default", "./index", 8428],
           9468: ["default", "./properties", 8428]
         }, p.f.remotes = (e, t) => {
           p.o(s, e) && s[e].forEach((e => {

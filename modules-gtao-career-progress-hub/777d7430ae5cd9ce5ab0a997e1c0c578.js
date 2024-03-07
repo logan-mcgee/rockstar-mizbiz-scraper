@@ -7,13 +7,13 @@
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "63eddca94fa9726ada78d0c14030f13fd7020af7",
+  release: "0fac9d39cdee1a8eccecb716cfcdd18497dbe214",
   packageName: "@rockstargames/modules-gtao-career-progress-hub",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "63eddca94fa9726ada78d0c14030f13fd7020af7"
+  id: "0fac9d39cdee1a8eccecb716cfcdd18497dbe214"
 }, (self.webpackChunk_rockstargames_modules_gtao_career_progress_hub = self.webpackChunk_rockstargames_modules_gtao_career_progress_hub || []).push([
   [280], {
     4660: (e, o, s) => {
@@ -25,8 +25,8 @@ _global.SENTRY_RELEASE = {
         createIntl: () => n.y,
         defineMessages: () => a.Os,
         englishLocale: () => u.u,
-        getLocale: () => d.c,
-        localeCookieHandler: () => c.c,
+        getLocale: () => c.c,
+        localeCookieHandler: () => d.c,
         locales: () => u.c,
         splitLocale: () => b.c,
         useIntl: () => i.c,
@@ -38,8 +38,8 @@ _global.SENTRY_RELEASE = {
         i = s(5844),
         l = s(3583),
         r = s(1292),
-        d = s(4560),
-        c = s(8612),
+        c = s(4560),
+        d = s(8612),
         u = s(3916),
         b = s(9423),
         m = s(4932),
@@ -51,7 +51,7 @@ _global.SENTRY_RELEASE = {
       "use strict";
       s.d(o, {
         C_: () => r,
-        eO: () => d
+        eO: () => c
       });
       var t = s(8200),
         n = s(3483),
@@ -65,18 +65,18 @@ _global.SENTRY_RELEASE = {
           children: a
         } = e;
         const r = (0, t.useMemo)((() => (0, i.c)(s)), [s]),
-          d = (0, t.useMemo)((() => function(e, o) {
+          c = (0, t.useMemo)((() => function(e, o) {
             return e?.[o] ?? {}
           }(o, r[1])), [s, o]);
         return (0, l.jsx)(n.c, {
-          messages: d,
+          messages: c,
           locale: r[0],
           defaultLocale: "en",
           children: a
         }, r[0])
       };
 
-      function d(e, o) {
+      function c(e, o) {
         return s => {
           const [{
             iso: t
@@ -152,9 +152,9 @@ _global.SENTRY_RELEASE = {
         })(e), i = (e => {
           const o = e.search.substring(1).split("&").find((e => e.startsWith("lang")));
           return o?.split("=")[1]
-        })(e), l = a.u, [r, d] = (0, n.c)(`rockstarweb_lang.${o.cookieIdentifier}`, s ?? void 0);
-        let c = l;
-        return c = "www" === o.currentSite?.site ? a.c.find((e => e.subdomaincom === i)) || a.c.find((e => e.subdomaincom === s)) || l : a.c.find((e => e.iso === r)) || l, [c, d]
+        })(e), l = a.u, [r, c] = (0, n.c)(`rockstarweb_lang.${o.cookieIdentifier}`, s ?? void 0);
+        let d = l;
+        return d = "www" === o.currentSite?.site ? a.c.find((e => e.subdomaincom === i)) || a.c.find((e => e.subdomaincom === s)) || l : a.c.find((e => e.iso === r)) || l, [d, c]
       }
     },
     8612: (e, o, s) => {
@@ -282,4 +282,4 @@ _global.SENTRY_RELEASE = {
     }
   }
 ]);
-//# sourceMappingURL=749bb7129126b23b46c2217d00319ade.js.map
+//# sourceMappingURL=777d7430ae5cd9ce5ab0a997e1c0c578.js.map
