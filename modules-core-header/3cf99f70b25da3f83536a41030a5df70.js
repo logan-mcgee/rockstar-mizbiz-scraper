@@ -1,22 +1,22 @@
-/*! For license information please see 6f6fd86331b653d70ae741c71aad3695.js.LICENSE.txt */ ! function() {
+/*! For license information please see 3cf99f70b25da3f83536a41030a5df70.js.LICENSE.txt */ ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "ceb738ea-c60f-4834-a7db-9e2b179cc9cf", e._sentryDebugIdIdentifier = "sentry-dbid-ceb738ea-c60f-4834-a7db-9e2b179cc9cf")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "85ef7dea-2fcc-4044-877d-f8e05dcf38f9", e._sentryDebugIdIdentifier = "sentry-dbid-85ef7dea-2fcc-4044-877d-f8e05dcf38f9")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "d409e297a36831321bd01cc6fefa95672d98d375",
+  release: "b356924da36d0f3d7db4edbb6216f9bbe11be0f1",
   packageName: "@rockstargames/modules-core-header",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "d409e297a36831321bd01cc6fefa95672d98d375"
+  id: "b356924da36d0f3d7db4edbb6216f9bbe11be0f1"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [907], {
-    9696: (e, t, r) => {
+    59696: (e, t, r) => {
       r.d(t, {
         AQ: () => s,
         Ub: () => h,
@@ -25,7 +25,7 @@ _global.SENTRY_RELEASE = {
         q2: () => u,
         yk: () => l
       });
-      var n, i = r(7672);
+      var n, i = r(87672);
       ! function(e) {
         e.FORMAT_ERROR = "FORMAT_ERROR", e.UNSUPPORTED_FORMATTER = "UNSUPPORTED_FORMATTER", e.INVALID_CONFIG = "INVALID_CONFIG", e.MISSING_DATA = "MISSING_DATA", e.MISSING_TRANSLATION = "MISSING_TRANSLATION"
       }(n || (n = {}));
@@ -80,7 +80,7 @@ _global.SENTRY_RELEASE = {
           return (0, i.ct)(t, e), t
         }(o)
     },
-    4904: (e, t, r) => {
+    14904: (e, t, r) => {
       r.d(t, {
         AH: () => c,
         OY: () => s,
@@ -88,10 +88,10 @@ _global.SENTRY_RELEASE = {
         Se: () => u,
         _u: () => f
       });
-      var n = r(7672),
-        i = r(1448),
-        o = r(8416),
-        a = r(9696);
+      var n = r(87672),
+        i = r(11448),
+        o = r(28416),
+        a = r(59696);
 
       function s(e, t, r) {
         return void 0 === r && (r = {}), t.reduce((function(t, n) {
@@ -216,13 +216,13 @@ _global.SENTRY_RELEASE = {
         n(new a.oR("No ".concat(t, " format named: ").concat(r)))
       }
     },
-    6656: (e, t, r) => {
+    26656: (e, t, r) => {
       r.d(t, {
         Os: () => c
       });
-      var n, i, o = r(7672),
-        a = r(8200),
-        s = r(5844);
+      var n, i, o = r(87672),
+        a = r(88200),
+        s = r(85844);
       ! function(e) {
         e.formatDate = "FormattedDate", e.formatTime = "FormattedTime", e.formatNumber = "FormattedNumber", e.formatList = "FormattedList", e.formatDisplayName = "FormattedDisplayName"
       }(n || (n = {})),
@@ -268,15 +268,15 @@ _global.SENTRY_RELEASE = {
       }
       l.displayName = "FormattedNumberParts", l.displayName = "FormattedNumberParts", h("formatDate"), h("formatTime"), h("formatNumber"), h("formatList"), h("formatDisplayName"), u("formatDate"), u("formatTime")
     },
-    7047: (e, t, r) => {
+    59428: (e, t, r) => {
       r.d(t, {
         y: () => k
       });
-      var n = r(7672),
-        i = r(8536),
-        o = r(1448),
-        a = r(9696),
-        s = r(6152);
+      var n = r(87672),
+        i = r(68536),
+        o = r(11448),
+        a = r(59696),
+        s = r(76152);
 
       function l(e, t) {
         return Object.keys(e).reduce((function(r, i) {
@@ -343,7 +343,7 @@ _global.SENTRY_RELEASE = {
           }
           return "string" == typeof _ ? _ : "string" == typeof v ? v : T
         },
-        f = r(4904),
+        f = r(14904),
         m = ["style", "currency", "unit", "unitDisplay", "useGrouping", "minimumIntegerDigits", "minimumFractionDigits", "maximumFractionDigits", "minimumSignificantDigits", "maximumSignificantDigits", "compactDisplay", "currencyDisplay", "currencySign", "notation", "signDisplay", "unit", "unitDisplay", "numberingSystem", "trailingZeroDisplay", "roundingPriority", "roundingIncrement", "roundingMode"];
 
       function p(e, t, r) {
@@ -375,7 +375,7 @@ _global.SENTRY_RELEASE = {
         }
         return []
       }
-      var E = r(6232),
+      var E = r(18612),
         y = ["numeric", "style"];
 
       function b(e, t, r, n, i) {
@@ -554,9 +554,9 @@ _global.SENTRY_RELEASE = {
           o(new a.q2("Error formatting display name.", i, e))
         }
       }
-      var w = r(8200),
-        D = r(4248),
-        F = r(1860);
+      var w = r(88200),
+        D = r(54248),
+        F = r(81860);
 
       function U(e) {
         return e ? Object.keys(e).reduce((function(t, r) {
@@ -621,25 +621,25 @@ _global.SENTRY_RELEASE = {
           })
         }
     },
-    2312: (e, t, r) => {
+    82312: (e, t, r) => {
       r.d(t, {
         C_: () => o,
         es: () => a
       });
-      var n = r(8200);
-      r(6264);
+      var n = r(88200);
+      r(96264);
       var i = "undefined" == typeof window || window.__REACT_INTL_BYPASS_GLOBAL_CONTEXT__ ? n.createContext(null) : window.__REACT_INTL_CONTEXT__ || (window.__REACT_INTL_CONTEXT__ = n.createContext(null)),
         o = (i.Consumer, i.Provider),
         a = i
     },
-    8640: (e, t, r) => {
+    78640: (e, t, r) => {
       r.d(t, {
         c: () => h
       });
-      var n = r(7672),
-        i = r(8200),
-        o = r(5844),
-        a = r(4248);
+      var n = r(87672),
+        i = r(88200),
+        o = r(85844),
+        a = r(54248);
 
       function s(e, t) {
         var r = e.values,
@@ -675,16 +675,16 @@ _global.SENTRY_RELEASE = {
       u.displayName = "MemoizedFormattedMessage";
       const h = u
     },
-    3483: (e, t, r) => {
+    23483: (e, t, r) => {
       r.d(t, {
         c: () => h
       });
-      var n = r(7672),
-        i = r(4904),
-        o = r(8200),
-        a = r(4248),
-        s = r(2312),
-        l = r(7047);
+      var n = r(87672),
+        i = r(14904),
+        o = r(88200),
+        a = r(54248),
+        s = r(82312),
+        l = r(59428);
 
       function u(e) {
         return {
@@ -726,30 +726,30 @@ _global.SENTRY_RELEASE = {
         }, t.displayName = "IntlProvider", t.defaultProps = a.SI, t
       }(o.PureComponent)
     },
-    5844: (e, t, r) => {
+    85844: (e, t, r) => {
       r.d(t, {
         c: () => a
       });
-      var n = r(8200),
-        i = r(2312),
-        o = r(4248);
+      var n = r(88200),
+        i = r(82312),
+        o = r(54248);
 
       function a() {
         var e = n.useContext(i.es);
         return (0, o.QB)(e), e
       }
     },
-    4248: (e, t, r) => {
+    54248: (e, t, r) => {
       r.d(t, {
         G: () => h,
         QB: () => s,
         Qp: () => u,
         SI: () => l
       });
-      var n = r(7672),
-        i = r(8200),
-        o = r(8536),
-        a = r(4904);
+      var n = r(87672),
+        i = r(88200),
+        o = r(68536),
+        a = r(14904);
 
       function s(e) {
         (0, o.ON)(e, "[React Intl] Could not find required `intl` object. <IntlProvider> needs to exist in the component ancestry.")
@@ -778,7 +778,7 @@ _global.SENTRY_RELEASE = {
         return !0
       }
     },
-    8536: (e, t, r) => {
+    68536: (e, t, r) => {
       function n(e, t, r) {
         if (void 0 === r && (r = Error), !e) throw new r(t)
       }
@@ -786,7 +786,7 @@ _global.SENTRY_RELEASE = {
         ON: () => n
       })
     },
-    8416: (e, t, r) => {
+    28416: (e, t, r) => {
       function n(e, t) {
         var r = t && t.cache ? t.cache : h,
           n = t && t.serializer ? t.serializer : l;
@@ -846,7 +846,7 @@ _global.SENTRY_RELEASE = {
           }
         }
     },
-    6152: (e, t, r) => {
+    76152: (e, t, r) => {
       r.d(t, {
         _M: () => i,
         kd: () => l,
@@ -862,7 +862,7 @@ _global.SENTRY_RELEASE = {
         ue: () => c,
         K0: () => oe
       });
-      var n, i, o, a = r(7672);
+      var n, i, o, a = r(87672);
 
       function s(e) {
         return e.type === i.literal
@@ -2053,8 +2053,8 @@ _global.SENTRY_RELEASE = {
         return (null == t ? void 0 : t.captureLocation) || ie(r.val), r.val
       }
     },
-    6264: (e, t, r) => {
-      var n = r(9120),
+    96264: (e, t, r) => {
+      var n = r(89120),
         i = {
           childContextTypes: !0,
           contextType: !0,
@@ -2124,14 +2124,14 @@ _global.SENTRY_RELEASE = {
         return t
       }
     },
-    1448: (e, t, r) => {
+    11448: (e, t, r) => {
       r.d(t, {
         W: () => l
       });
-      var n = r(7672),
-        i = r(6152),
-        o = r(8416),
-        a = r(1860);
+      var n = r(87672),
+        i = r(76152),
+        o = r(28416),
+        a = r(81860);
 
       function s(e) {
         return {
@@ -2284,7 +2284,7 @@ _global.SENTRY_RELEASE = {
         }, e
       }()
     },
-    6232: (e, t, r) => {
+    18612: (e, t, r) => {
       r.d(t, {
         MZ: () => l,
         c3: () => s,
@@ -2292,7 +2292,7 @@ _global.SENTRY_RELEASE = {
         uA: () => a,
         uI: () => n
       });
-      var n, i = r(7672);
+      var n, i = r(87672);
       ! function(e) {
         e.MISSING_VALUE = "MISSING_VALUE", e.INVALID_VALUE = "INVALID_VALUE", e.MISSING_INTL_API = "MISSING_INTL_API"
       }(n || (n = {}));
@@ -2324,14 +2324,14 @@ _global.SENTRY_RELEASE = {
           return (0, i.ct)(t, e), t
         }(o)
     },
-    1860: (e, t, r) => {
+    81860: (e, t, r) => {
       r.d(t, {
         eY: () => n,
         qW: () => s,
         sT: () => a
       });
-      var n, i = r(6152),
-        o = r(6232);
+      var n, i = r(76152),
+        o = r(18612);
 
       function a(e) {
         return "function" == typeof e
@@ -2417,7 +2417,7 @@ _global.SENTRY_RELEASE = {
         e[e.literal = 0] = "literal", e[e.object = 1] = "object"
       }(n || (n = {}))
     },
-    4308: (e, t) => {
+    24308: (e, t) => {
       var r = "function" == typeof Symbol && Symbol.for,
         n = r ? Symbol.for("react.element") : 60103,
         i = r ? Symbol.for("react.portal") : 60106,
@@ -2500,9 +2500,9 @@ _global.SENTRY_RELEASE = {
         return "string" == typeof e || "function" == typeof e || e === o || e === c || e === s || e === a || e === m || e === p || "object" == typeof e && null !== e && (e.$$typeof === g || e.$$typeof === d || e.$$typeof === l || e.$$typeof === u || e.$$typeof === f || e.$$typeof === y || e.$$typeof === b || e.$$typeof === v || e.$$typeof === E)
       }, t.typeOf = T
     },
-    9120: (e, t, r) => {
-      e.exports = r(4308)
+    89120: (e, t, r) => {
+      e.exports = r(24308)
     }
   }
 ]);
-//# sourceMappingURL=6f6fd86331b653d70ae741c71aad3695.js.map
+//# sourceMappingURL=3cf99f70b25da3f83536a41030a5df70.js.map

@@ -2,21 +2,21 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "4621c3eb-3b8a-4856-9d08-ce61fe87c158", e._sentryDebugIdIdentifier = "sentry-dbid-4621c3eb-3b8a-4856-9d08-ce61fe87c158")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "b07a3935-f3fd-4787-b3c7-e1117894263f", e._sentryDebugIdIdentifier = "sentry-dbid-b07a3935-f3fd-4787-b3c7-e1117894263f")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "d409e297a36831321bd01cc6fefa95672d98d375",
+  release: "b356924da36d0f3d7db4edbb6216f9bbe11be0f1",
   packageName: "@rockstargames/modules-core-header",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "d409e297a36831321bd01cc6fefa95672d98d375"
+  id: "b356924da36d0f3d7db4edbb6216f9bbe11be0f1"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [800], {
-    6540: e => {
+    86540: e => {
       var t, n, r = e.exports = {};
 
       function o() {
@@ -27,7 +27,7 @@ _global.SENTRY_RELEASE = {
         throw new Error("clearTimeout has not been defined")
       }
 
-      function c(e) {
+      function i(e) {
         if (t === setTimeout) return setTimeout(e, 0);
         if ((t === o || !t) && setTimeout) return t = setTimeout, setTimeout(e, 0);
         try {
@@ -51,23 +51,23 @@ _global.SENTRY_RELEASE = {
           n = a
         }
       }();
-      var i, u = [],
+      var u, c = [],
         l = !1,
         f = -1;
 
       function s() {
-        l && i && (l = !1, i.length ? u = i.concat(u) : f = -1, u.length && p())
+        l && u && (l = !1, u.length ? c = u.concat(c) : f = -1, c.length && d())
       }
 
-      function p() {
+      function d() {
         if (!l) {
-          var e = c(s);
+          var e = i(s);
           l = !0;
-          for (var t = u.length; t;) {
-            for (i = u, u = []; ++f < t;) i && i[f].run();
-            f = -1, t = u.length
+          for (var t = c.length; t;) {
+            for (u = c, c = []; ++f < t;) u && u[f].run();
+            f = -1, t = c.length
           }
-          i = null, l = !1,
+          u = null, l = !1,
             function(e) {
               if (n === clearTimeout) return clearTimeout(e);
               if ((n === a || !n) && clearTimeout) return n = clearTimeout, clearTimeout(e);
@@ -84,7 +84,7 @@ _global.SENTRY_RELEASE = {
         }
       }
 
-      function d(e, t) {
+      function p(e, t) {
         this.fun = e, this.array = t
       }
 
@@ -93,8 +93,8 @@ _global.SENTRY_RELEASE = {
         var t = new Array(arguments.length - 1);
         if (arguments.length > 1)
           for (var n = 1; n < arguments.length; n++) t[n - 1] = arguments[n];
-        u.push(new d(e, t)), 1 !== u.length || l || c(p)
-      }, d.prototype.run = function() {
+        c.push(new p(e, t)), 1 !== c.length || l || i(d)
+      }, p.prototype.run = function() {
         this.fun.apply(null, this.array)
       }, r.title = "browser", r.browser = !0, r.env = {}, r.argv = [], r.version = "", r.versions = {}, r.on = y, r.addListener = y, r.once = y, r.off = y, r.removeListener = y, r.removeAllListeners = y, r.emit = y, r.prependListener = y, r.prependOnceListener = y, r.listeners = function(e) {
         return []
@@ -108,15 +108,15 @@ _global.SENTRY_RELEASE = {
         return 0
       }
     },
-    7672: (e, t, n) => {
+    87672: (e, t, n) => {
       "use strict";
       n.d(t, {
         C3: () => a,
-        KE: () => u,
+        KE: () => c,
         Mt: () => l,
         ct: () => o,
-        kH: () => i,
-        sX: () => c
+        kH: () => u,
+        sX: () => i
       });
       var r = function(e, t) {
         return r = Object.setPrototypeOf || {
@@ -145,7 +145,7 @@ _global.SENTRY_RELEASE = {
         }, a.apply(this, arguments)
       };
 
-      function c(e, t) {
+      function i(e, t) {
         var n = {};
         for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && t.indexOf(r) < 0 && (n[r] = e[r]);
         if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -155,36 +155,36 @@ _global.SENTRY_RELEASE = {
         return n
       }
 
-      function i(e, t, n, r) {
+      function u(e, t, n, r) {
         return new(n || (n = Promise))((function(o, a) {
-          function c(e) {
-            try {
-              u(r.next(e))
-            } catch (e) {
-              a(e)
-            }
-          }
-
           function i(e) {
             try {
-              u(r.throw(e))
+              c(r.next(e))
             } catch (e) {
               a(e)
             }
           }
 
           function u(e) {
+            try {
+              c(r.throw(e))
+            } catch (e) {
+              a(e)
+            }
+          }
+
+          function c(e) {
             var t;
             e.done ? o(e.value) : (t = e.value, t instanceof n ? t : new n((function(e) {
               e(t)
-            }))).then(c, i)
+            }))).then(i, u)
           }
-          u((r = r.apply(e, t || [])).next())
+          c((r = r.apply(e, t || [])).next())
         }))
       }
 
-      function u(e, t) {
-        var n, r, o, a, c = {
+      function c(e, t) {
+        var n, r, o, a, i = {
           label: 0,
           sent: function() {
             if (1 & o[0]) throw o[1];
@@ -194,67 +194,67 @@ _global.SENTRY_RELEASE = {
           ops: []
         };
         return a = {
-          next: i(0),
-          throw: i(1),
-          return: i(2)
+          next: u(0),
+          throw: u(1),
+          return: u(2)
         }, "function" == typeof Symbol && (a[Symbol.iterator] = function() {
           return this
         }), a;
 
-        function i(i) {
-          return function(u) {
-            return function(i) {
+        function u(u) {
+          return function(c) {
+            return function(u) {
               if (n) throw new TypeError("Generator is already executing.");
-              for (; a && (a = 0, i[0] && (c = 0)), c;) try {
-                if (n = 1, r && (o = 2 & i[0] ? r.return : i[0] ? r.throw || ((o = r.return) && o.call(r), 0) : r.next) && !(o = o.call(r, i[1])).done) return o;
-                switch (r = 0, o && (i = [2 & i[0], o.value]), i[0]) {
+              for (; a && (a = 0, u[0] && (i = 0)), i;) try {
+                if (n = 1, r && (o = 2 & u[0] ? r.return : u[0] ? r.throw || ((o = r.return) && o.call(r), 0) : r.next) && !(o = o.call(r, u[1])).done) return o;
+                switch (r = 0, o && (u = [2 & u[0], o.value]), u[0]) {
                   case 0:
                   case 1:
-                    o = i;
+                    o = u;
                     break;
                   case 4:
-                    return c.label++, {
-                      value: i[1],
+                    return i.label++, {
+                      value: u[1],
                       done: !1
                     };
                   case 5:
-                    c.label++, r = i[1], i = [0];
+                    i.label++, r = u[1], u = [0];
                     continue;
                   case 7:
-                    i = c.ops.pop(), c.trys.pop();
+                    u = i.ops.pop(), i.trys.pop();
                     continue;
                   default:
-                    if (!((o = (o = c.trys).length > 0 && o[o.length - 1]) || 6 !== i[0] && 2 !== i[0])) {
-                      c = 0;
+                    if (!((o = (o = i.trys).length > 0 && o[o.length - 1]) || 6 !== u[0] && 2 !== u[0])) {
+                      i = 0;
                       continue
                     }
-                    if (3 === i[0] && (!o || i[1] > o[0] && i[1] < o[3])) {
-                      c.label = i[1];
+                    if (3 === u[0] && (!o || u[1] > o[0] && u[1] < o[3])) {
+                      i.label = u[1];
                       break
                     }
-                    if (6 === i[0] && c.label < o[1]) {
-                      c.label = o[1], o = i;
+                    if (6 === u[0] && i.label < o[1]) {
+                      i.label = o[1], o = u;
                       break
                     }
-                    if (o && c.label < o[2]) {
-                      c.label = o[2], c.ops.push(i);
+                    if (o && i.label < o[2]) {
+                      i.label = o[2], i.ops.push(u);
                       break
                     }
-                    o[2] && c.ops.pop(), c.trys.pop();
+                    o[2] && i.ops.pop(), i.trys.pop();
                     continue
                 }
-                i = t.call(e, c)
+                u = t.call(e, i)
               } catch (e) {
-                i = [6, e], r = 0
+                u = [6, e], r = 0
               } finally {
                 n = o = 0
               }
-              if (5 & i[0]) throw i[1];
+              if (5 & u[0]) throw u[1];
               return {
-                value: i[0] ? i[1] : void 0,
+                value: u[0] ? u[1] : void 0,
                 done: !0
               }
-            }([i, u])
+            }([u, c])
           }
         }
       }
@@ -268,4 +268,4 @@ _global.SENTRY_RELEASE = {
     }
   }
 ]);
-//# sourceMappingURL=3e26ac412b08bb4ab09ef50961cdce18.js.map
+//# sourceMappingURL=8cd52e64632d758c1dee16bdd2a6dc91.js.map

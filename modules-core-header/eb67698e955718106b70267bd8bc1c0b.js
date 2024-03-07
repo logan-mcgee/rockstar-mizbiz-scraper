@@ -2,28 +2,28 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       d = (new Error).stack;
-    d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "1725dd33-8a7f-4c85-81b3-79057ffbb460", e._sentryDebugIdIdentifier = "sentry-dbid-1725dd33-8a7f-4c85-81b3-79057ffbb460")
+    d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "0ccad73b-ad35-479f-a835-58f8cef1d076", e._sentryDebugIdIdentifier = "sentry-dbid-0ccad73b-ad35-479f-a835-58f8cef1d076")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "d409e297a36831321bd01cc6fefa95672d98d375",
+  release: "b356924da36d0f3d7db4edbb6216f9bbe11be0f1",
   packageName: "@rockstargames/modules-core-header",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "d409e297a36831321bd01cc6fefa95672d98d375"
+  id: "b356924da36d0f3d7db4edbb6216f9bbe11be0f1"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [492], {
-    1492: (e, d, a) => {
+    71492: (e, d, a) => {
       a.r(d), a.d(d, {
         default: () => s
       });
-      var n = a(4812),
-        o = a(8388),
-        l = a(1200),
-        t = a(3480);
+      var n = a(14812),
+        o = a(10768),
+        l = a(73648),
+        t = a(63480);
       const {
         graphEnv: f,
         pingBearer: r
@@ -40,4 +40,4 @@ _global.SENTRY_RELEASE = {
     }
   }
 ]);
-//# sourceMappingURL=cdb120930e41aa52442be8d633809065.js.map
+//# sourceMappingURL=eb67698e955718106b70267bd8bc1c0b.js.map

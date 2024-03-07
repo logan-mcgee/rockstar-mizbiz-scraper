@@ -1,22 +1,22 @@
-/*! For license information please see adfa83e35f8c4e79c56b2723c1cfcbc4.js.LICENSE.txt */ ! function() {
+/*! For license information please see 9d4d98db1c98c35b970d12b7e397a67e.js.LICENSE.txt */ ! function() {
   try {
     var n = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[t] = "fa938362-ad25-4136-81d7-0df7a3f05ce8", n._sentryDebugIdIdentifier = "sentry-dbid-fa938362-ad25-4136-81d7-0df7a3f05ce8")
+    t && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[t] = "44b3e051-897c-43e3-a03d-6546578b2821", n._sentryDebugIdIdentifier = "sentry-dbid-44b3e051-897c-43e3-a03d-6546578b2821")
   } catch (n) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "d409e297a36831321bd01cc6fefa95672d98d375",
+  release: "b356924da36d0f3d7db4edbb6216f9bbe11be0f1",
   packageName: "@rockstargames/modules-core-header",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "d409e297a36831321bd01cc6fefa95672d98d375"
+  id: "b356924da36d0f3d7db4edbb6216f9bbe11be0f1"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [648], {
-    5648: function(n, t, r) {
+    25648: function(n, t, r) {
       var e;
       n = r.nmd(n),
         function() {
@@ -3703,4 +3703,4 @@ _global.SENTRY_RELEASE = {
     }
   }
 ]);
-//# sourceMappingURL=adfa83e35f8c4e79c56b2723c1cfcbc4.js.map
+//# sourceMappingURL=9d4d98db1c98c35b970d12b7e397a67e.js.map

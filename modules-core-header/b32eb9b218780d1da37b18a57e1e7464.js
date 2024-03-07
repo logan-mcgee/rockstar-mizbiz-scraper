@@ -2,86 +2,86 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       o = (new Error).stack;
-    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "64c042f1-763b-46c1-aae9-2035212824ff", e._sentryDebugIdIdentifier = "sentry-dbid-64c042f1-763b-46c1-aae9-2035212824ff")
+    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "5fb3d628-d260-4872-ace1-a9cc2eb9931c", e._sentryDebugIdIdentifier = "sentry-dbid-5fb3d628-d260-4872-ace1-a9cc2eb9931c")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "d409e297a36831321bd01cc6fefa95672d98d375",
+  release: "b356924da36d0f3d7db4edbb6216f9bbe11be0f1",
   packageName: "@rockstargames/modules-core-header",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "d409e297a36831321bd01cc6fefa95672d98d375"
+  id: "b356924da36d0f3d7db4edbb6216f9bbe11be0f1"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
-  [280, 660], {
-    2280: (e, o, s) => {
+  [660, 280], {
+    94660: (e, o, s) => {
       "use strict";
       s.r(o), s.d(o, {
         FormattedMessage: () => t.c,
         IntlProvider: () => i.C_,
-        createDevLocaleHook: () => r.c,
+        createDevLocaleHook: () => d.c,
         createIntl: () => n.y,
         defineMessages: () => a.Os,
         englishLocale: () => u.u,
-        getLocale: () => c.c,
-        localeCookieHandler: () => d.c,
+        getLocale: () => r.c,
+        localeCookieHandler: () => c.c,
         locales: () => u.c,
         splitLocale: () => b.c,
         useIntl: () => l.c,
         withIntl: () => i.eO
       });
-      var t = s(8640),
-        n = s(7047),
-        a = s(6656),
-        l = s(5844),
-        i = s(3583),
-        r = s(1292),
-        c = s(5448),
-        d = s(8612),
-        u = s(3916),
-        b = s(9423),
-        m = s(4932),
+      var t = s(78640),
+        n = s(59428),
+        a = s(26656),
+        l = s(85844),
+        i = s(73583),
+        d = s(31292),
+        r = s(15448),
+        c = s(98612),
+        u = s(23916),
+        b = s(69423),
+        m = s(24932),
         f = {};
       for (const e in m)["default", "FormattedMessage", "IntlProvider", "createDevLocaleHook", "createIntl", "defineMessages", "englishLocale", "getLocale", "localeCookieHandler", "locales", "splitLocale", "useIntl", "withIntl"].indexOf(e) < 0 && (f[e] = () => m[e]);
       s.d(o, f)
     },
-    3583: (e, o, s) => {
+    73583: (e, o, s) => {
       "use strict";
       s.d(o, {
-        C_: () => r,
-        eO: () => c
+        C_: () => d,
+        eO: () => r
       });
-      var t = s(8200),
-        n = s(3483),
-        a = s(5448),
-        l = s(9423),
-        i = s(3480);
-      const r = e => {
+      var t = s(88200),
+        n = s(23483),
+        a = s(15448),
+        l = s(69423),
+        i = s(63480);
+      const d = e => {
         let {
           locales: o,
           lang: s,
           children: a
         } = e;
-        const r = (0, t.useMemo)((() => (0, l.c)(s)), [s]),
-          c = (0, t.useMemo)((() => function(e, o) {
+        const d = (0, t.useMemo)((() => (0, l.c)(s)), [s]),
+          r = (0, t.useMemo)((() => function(e, o) {
             return e?.[o] ?? {}
-          }(o, r[1])), [s, o]);
+          }(o, d[1])), [s, o]);
         return (0, i.jsx)(n.c, {
-          messages: c,
-          locale: r[0],
+          messages: r,
+          locale: d[0],
           defaultLocale: "en",
           children: a
-        }, r[0])
+        }, d[0])
       };
 
-      function c(e, o) {
+      function r(e, o) {
         return s => {
           const [{
             iso: t
           }] = (0, a.c)();
-          return (0, i.jsx)(r, {
+          return (0, i.jsx)(d, {
             locales: o,
             lang: t,
             children: (0, i.jsx)(e, {
@@ -91,15 +91,15 @@ _global.SENTRY_RELEASE = {
         }
       }
     },
-    4932: () => {},
-    1292: (e, o, s) => {
+    24932: () => {},
+    31292: (e, o, s) => {
       "use strict";
       s.d(o, {
         c: () => l
       });
       var t = s(6464),
-        n = s(8200),
-        a = s(9423);
+        n = s(88200),
+        a = s(69423);
       const l = e => {
         if (!e.us || 0 === Object.keys(e?.us).length) throw new Error("createDevLocaleHook requires at least a 'us' key with definitions");
         return () => {
@@ -109,14 +109,14 @@ _global.SENTRY_RELEASE = {
         }
       }
     },
-    5448: (e, o, s) => {
+    15448: (e, o, s) => {
       "use strict";
       s.d(o, {
         c: () => l
       });
-      var t = s(7019),
-        n = s(8612),
-        a = s(3916);
+      var t = s(37019),
+        n = s(98612),
+        a = s(23916);
       const l = () => {
         const {
           location: e
@@ -128,12 +128,12 @@ _global.SENTRY_RELEASE = {
         })(e), l = (e => {
           const o = e.search.substring(1).split("&").find((e => e.startsWith("lang")));
           return o?.split("=")[1]
-        })(e), i = a.u, [r, c] = (0, n.c)(`rockstarweb_lang.${o.cookieIdentifier}`, s ?? void 0);
-        let d = i;
-        return d = o.currentSite?.site === t.U.www ? a.c.find((e => e.subdomaincom === l)) || a.c.find((e => e.subdomaincom === s)) || i : a.c.find((e => e.iso === r)) || i, [d, c]
+        })(e), i = a.u, [d, r] = (0, n.c)(`rockstarweb_lang.${o.cookieIdentifier}`, s ?? void 0);
+        let c = i;
+        return c = o.currentSite?.site === t.U.www ? a.c.find((e => e.subdomaincom === l)) || a.c.find((e => e.subdomaincom === s)) || i : a.c.find((e => e.iso === d)) || i, [c, r]
       }
     },
-    8612: (e, o, s) => {
+    98612: (e, o, s) => {
       "use strict";
       s.d(o, {
         c: () => a
@@ -151,13 +151,13 @@ _global.SENTRY_RELEASE = {
             a = `${e}=`,
             l = n.find((e => e.startsWith(a))),
             i = l?.substring(a.length, l.length);
-          return i && !s || t(e, o), [i, (r = e, e => {
-            t(r, e)
+          return i && !s || t(e, o), [i, (d = e, e => {
+            t(d, e)
           })];
-          var r
+          var d
         }
     },
-    3916: (e, o, s) => {
+    23916: (e, o, s) => {
       "use strict";
       s.d(o, {
         c: () => n,
@@ -245,7 +245,7 @@ _global.SENTRY_RELEASE = {
         n = t,
         a = t[1]
     },
-    9423: (e, o, s) => {
+    69423: (e, o, s) => {
       "use strict";
 
       function t(e) {
@@ -258,4 +258,4 @@ _global.SENTRY_RELEASE = {
     }
   }
 ]);
-//# sourceMappingURL=81f7473201d79bcb1184ad8c89f8e079.js.map
+//# sourceMappingURL=b32eb9b218780d1da37b18a57e1e7464.js.map

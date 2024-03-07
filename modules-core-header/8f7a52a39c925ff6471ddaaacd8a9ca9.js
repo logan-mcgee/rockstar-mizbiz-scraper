@@ -1,81 +1,81 @@
-/*! For license information please see e981020bef40912443384440ce8b1c4c.js.LICENSE.txt */ ! function() {
+/*! For license information please see 8f7a52a39c925ff6471ddaaacd8a9ca9.js.LICENSE.txt */ ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       o = (new Error).stack;
-    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "160b9266-b788-4ebd-a7e0-97a7775b5d6f", e._sentryDebugIdIdentifier = "sentry-dbid-160b9266-b788-4ebd-a7e0-97a7775b5d6f")
+    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "761f225f-9e27-40a9-8e35-3f61087268f8", e._sentryDebugIdIdentifier = "sentry-dbid-761f225f-9e27-40a9-8e35-3f61087268f8")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "d409e297a36831321bd01cc6fefa95672d98d375",
+  release: "b356924da36d0f3d7db4edbb6216f9bbe11be0f1",
   packageName: "@rockstargames/modules-core-header",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "d409e297a36831321bd01cc6fefa95672d98d375"
+  id: "b356924da36d0f3d7db4edbb6216f9bbe11be0f1"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
-  [912, 532], {
-    1996: (e, o, a) => {
-      var t = a(8200),
+  [532, 912], {
+    61996: (e, o, a) => {
+      var t = a(88200),
         n = Symbol.for("react.element"),
         r = Symbol.for("react.fragment"),
         d = Object.prototype.hasOwnProperty,
-        l = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        s = {
+        f = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        l = {
           key: !0,
           ref: !0,
           __self: !0,
           __source: !0
         };
 
-      function f(e, o, a) {
+      function s(e, o, a) {
         var t, r = {},
-          f = null,
+          s = null,
           i = null;
-        for (t in void 0 !== a && (f = "" + a), void 0 !== o.key && (f = "" + o.key), void 0 !== o.ref && (i = o.ref), o) d.call(o, t) && !s.hasOwnProperty(t) && (r[t] = o[t]);
+        for (t in void 0 !== a && (s = "" + a), void 0 !== o.key && (s = "" + o.key), void 0 !== o.ref && (i = o.ref), o) d.call(o, t) && !l.hasOwnProperty(t) && (r[t] = o[t]);
         if (e && e.defaultProps)
           for (t in o = e.defaultProps) void 0 === r[t] && (r[t] = o[t]);
         return {
           $$typeof: n,
           type: e,
-          key: f,
+          key: s,
           ref: i,
           props: r,
-          _owner: l.current
+          _owner: f.current
         }
       }
-      o.Fragment = r, o.jsx = f, o.jsxs = f
+      o.Fragment = r, o.jsx = s, o.jsxs = s
     },
-    3480: (e, o, a) => {
-      e.exports = a(1996)
+    63480: (e, o, a) => {
+      e.exports = a(61996)
     },
     2912: (e, o, a) => {
       a.r(o), a.d(o, {
         default: () => d
       });
-      var t = a(8200),
-        n = a(8940),
-        r = a(3480);
+      var t = a(88200),
+        n = a(78940),
+        r = a(63480);
       const d = e => {
         let {
           basename: o,
           children: a,
           history: d
         } = e;
-        const [l, s] = (0, t.useState)({
+        const [f, l] = (0, t.useState)({
           action: d.action,
           location: d.location
         });
         return (0, t.useLayoutEffect)((() => d.listen(((e, o) => {
-          s({
+          l({
             location: e,
             action: o
           })
         }))), [d]), (0, r.jsx)(n.Router, {
           basename: o,
-          location: l.location,
-          navigationType: l.action,
+          location: f.location,
+          navigationType: f.action,
           navigator: d,
           children: a
         })
@@ -83,4 +83,4 @@ _global.SENTRY_RELEASE = {
     }
   }
 ]);
-//# sourceMappingURL=e981020bef40912443384440ce8b1c4c.js.map
+//# sourceMappingURL=8f7a52a39c925ff6471ddaaacd8a9ca9.js.map

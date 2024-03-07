@@ -2,25 +2,26 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "db49ca59-e8ae-4d91-be4f-a5ddf41bc8c2", e._sentryDebugIdIdentifier = "sentry-dbid-db49ca59-e8ae-4d91-be4f-a5ddf41bc8c2")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "af2427fa-c33d-4ea9-92d7-c40184172a01", e._sentryDebugIdIdentifier = "sentry-dbid-af2427fa-c33d-4ea9-92d7-c40184172a01")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "d409e297a36831321bd01cc6fefa95672d98d375",
+  release: "b356924da36d0f3d7db4edbb6216f9bbe11be0f1",
   packageName: "@rockstargames/modules-core-header",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "d409e297a36831321bd01cc6fefa95672d98d375"
+  id: "b356924da36d0f3d7db4edbb6216f9bbe11be0f1"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [356], {
-    4812: (e, t, n) => {
+    14812: (e, t, n) => {
       n.d(t, {
         UT: () => o.UT,
         C2: () => N,
         mg: () => W,
+        wH: () => p.wH,
         aU: () => T,
         cQ: () => E,
         UL: () => y,
@@ -31,17 +32,17 @@ _global.SENTRY_RELEASE = {
         oT: () => x,
         EB: () => X
       });
-      var o = n(3328),
-        r = n(4608),
-        a = n(8200),
-        s = n(6296),
-        i = n(8120),
-        c = n(5876),
-        l = n(4412),
-        d = n(3660),
+      var o = n(83328),
+        r = n(34608),
+        a = n(88200),
+        s = n(16296),
+        i = n(28120),
+        l = n(35876),
+        c = n(94412),
+        d = n(73660),
         u = n.n(d),
-        p = n(4424);
-      const g = (e, t) => {
+        p = n(34424);
+      const w = (e, t) => {
         const n = (0, r.g)(p.EH),
           o = {
             autoSetError: !0,
@@ -56,9 +57,9 @@ _global.SENTRY_RELEASE = {
           {
             data: s,
             loading: i,
-            error: c,
+            error: l,
             ...d
-          } = (0, l.U)(e, o);
+          } = (0, c.U)(e, o);
         return (0, a.useEffect)((() => {
           if (s && o.setTitleDataPath) {
             const e = u().get(s, o.setTitleDataPath) ?? null;
@@ -76,15 +77,15 @@ _global.SENTRY_RELEASE = {
             loading: !1
           })
         })), [i]), (0, a.useEffect)((() => {
-          if (o.autoSetError && c) throw new Error(String(c))
-        }), [c]), {
+          if (o.autoSetError && l) throw new Error(String(l))
+        }), [l]), {
           loading: i,
-          error: c,
+          error: l,
           data: s,
           ...d
         }
       };
-      var w = n(3480);
+      var g = n(63480);
       const h = (0, a.createContext)((() => ({
           data: null
         }))),
@@ -106,10 +107,10 @@ _global.SENTRY_RELEASE = {
           let {
             children: t
           } = e;
-          return (0, w.jsx)(b.Provider, {
-            value: c.c,
-            children: (0, w.jsx)(h.Provider, {
-              value: g,
+          return (0, g.jsx)(b.Provider, {
+            value: l.c,
+            children: (0, g.jsx)(h.Provider, {
+              value: w,
               children: t
             })
           })
@@ -120,22 +121,22 @@ _global.SENTRY_RELEASE = {
         x = () => (0, a.useContext)(_),
         P = (0, a.createContext)({}),
         T = () => (0, a.useContext)(P);
-      var C = n(5060);
-      const $ = "graph-token-context",
-        S = {
+      var C = n(75060);
+      const H = "graph-token-context",
+        $ = {
           token: (0, o.UT)(null),
           tokenPing: (0, o.UT)("tokenPing"),
           tokenPingExpires: (0, o.UT)(100)
         },
-        U = window?.[$] ?? (window[$] = (0, a.createContext)(S)),
-        H = e => {
+        S = window?.[H] ?? (window[H] = (0, a.createContext)($)),
+        U = e => {
           let {
             children: t,
             token: n,
             tokenPing: o,
             tokenPingExpires: r
           } = e;
-          return (0, w.jsx)(U.Provider, {
+          return (0, g.jsx)(S.Provider, {
             value: {
               token: n,
               tokenPing: o,
@@ -149,7 +150,7 @@ _global.SENTRY_RELEASE = {
             token: e,
             tokenPing: t,
             tokenPingExpires: n
-          } = (0, a.useContext)(U);
+          } = (0, a.useContext)(S);
           return [e, t, n]
         },
         M = () => {
@@ -187,9 +188,9 @@ _global.SENTRY_RELEASE = {
                 }),
                 i = await s.json(),
                 {
-                  tokenExpiresTime: c = null
+                  tokenExpiresTime: l = null
                 } = i;
-              return null !== c && o?.(c), n(i.bearerToken ?? null), i
+              return null !== l && o?.(l), n(i.bearerToken ?? null), i
             } catch (e) {
               return n(!1), !1
             }
@@ -199,12 +200,12 @@ _global.SENTRY_RELEASE = {
             tokenPingExpires: n
           })
         };
-      var L = n(9740);
-      var B = n(9810),
-        D = n(6020),
+      var L = n(59740);
+      var B = n(99810),
+        D = n(96020),
         O = n.n(D);
-      var A = n(2676),
-        R = n(7664);
+      var A = n(72676),
+        R = n(17664);
       const q = (0, A.Ad)({
           sha256: R.MB
         }),
@@ -223,7 +224,7 @@ _global.SENTRY_RELEASE = {
               [r] = (0, a.useState)(new s.Y({
                 typePolicies: n
               })),
-              c = q.concat((e => {
+              l = q.concat((e => {
                 let {
                   token: t
                 } = e;
@@ -250,19 +251,19 @@ _global.SENTRY_RELEASE = {
               })));
             return new i.u({
               cache: r,
-              link: c
+              link: l
             })
           })({
             graphOptions: n,
             typePolicies: o
           });
-          return (0, w.jsx)(H, {
+          return (0, g.jsx)(U, {
             token: n?.token,
             tokenPing: n?.tokenPing,
             tokenPingExpires: n?.tokenPingExpires,
-            children: (0, w.jsx)(C.g, {
+            children: (0, g.jsx)(C.g, {
               client: r,
-              children: (0, w.jsx)(v, {
+              children: (0, g.jsx)(v, {
                 children: t
               })
             })
@@ -285,7 +286,7 @@ _global.SENTRY_RELEASE = {
             tokenPing: s = Q("token", null)
           } = t;
           return function(t) {
-            return (0, w.jsx)(z, {
+            return (0, g.jsx)(z, {
               typePolicies: o,
               graphOptions: {
                 env: n,
@@ -294,7 +295,7 @@ _global.SENTRY_RELEASE = {
                 tokenPing: s,
                 tokenPingExpires: a
               },
-              children: (0, w.jsx)(e, {
+              children: (0, g.jsx)(e, {
                 ...t
               })
             })
@@ -315,46 +316,51 @@ _global.SENTRY_RELEASE = {
           return `https://${t}.rockstargames.com?origin=${document.location.origin}`
         })
     },
-    4424: (e, t, n) => {
+    34424: (e, t, n) => {
       n.d(t, {
-        EH: () => r
+        EH: () => r,
+        wH: () => u
       });
-      var o = n(3328);
+      var o = n(83328);
       const r = (0, o.UT)(document.documentElement.lang),
-        a = window?.env,
-        s = ((0, o.UT)({
-          media: a?.cdn?.media,
-          videos: a?.cdn?.videos
-        }), document.currentScript),
-        i = s?.src ? new URL(s.src).origin : "";
-      let c = document.getElementsByTagName("base")[0]?.getAttribute("href") ?? `${i}/`;
-      c.endsWith("/") || (c = `${c}/`), (0, o.UT)(c)
-    },
-    1340: (e, t, n) => {
-      n.d(t, {
-        c: () => g
+        a = window?.env;
+      (0, o.UT)({
+        media: a?.cdn?.media,
+        videos: a?.cdn?.videos
       });
-      var o = n(7664),
+      var s = n(34608);
+      const i = document.currentScript,
+        l = i?.src ? new URL(i.src).origin : "";
+      let c = document.getElementsByTagName("base")[0]?.getAttribute("href") ?? `${l}/`;
+      c.endsWith("/") || (c = `${c}/`);
+      const d = (0, o.UT)(c),
+        u = () => (0, s.g)(d)
+    },
+    81340: (e, t, n) => {
+      n.d(t, {
+        c: () => w
+      });
+      var o = n(17664),
         r = n(3652),
         a = n.n(r),
-        s = n(3660),
+        s = n(73660),
         i = n.n(s),
-        c = n(9452),
-        l = n(6716);
+        l = n(29452),
+        c = n(16716);
       const {
         apiHost: d
-      } = (0, c.c)(), u = (0, l._)(document.documentElement.lang), p = {}, g = async function(e) {
+      } = (0, l.c)(), u = (0, c._)(document.documentElement.lang), p = {}, w = async function(e) {
         let {
           fetchOptions: t = {},
           finalFetchOptions: n = {},
           query: r = null,
           pingBearer: s,
-          requireBearerToken: c = !0,
-          useCache: l = !0
+          requireBearerToken: l = !0,
+          useCache: c = !0
         } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
         const {
-          bearerToken: g = null
-        } = await (s?.()) ?? {}, w = {
+          bearerToken: w = null
+        } = await (s?.()) ?? {}, g = {
           "X-Requested-With": "XMLHttpRequest",
           "X-AMC": !0,
           "Content-Type": "application/json",
@@ -363,10 +369,10 @@ _global.SENTRY_RELEASE = {
           }
         };
         let h = `${d}/${e}`;
-        if (null === r || i().isEmpty(r) || (h += `?${new URLSearchParams(r)}`), !g && c) return null;
-        g && (w.Authorization = `Bearer ${g}`);
+        if (null === r || i().isEmpty(r) || (h += `?${new URLSearchParams(r)}`), !w && l) return null;
+        w && (g.Authorization = `Bearer ${w}`);
         const k = {
-            headers: w
+            headers: g
           },
           f = a().all([k, t, n]),
           m = JSON.stringify({
@@ -374,7 +380,7 @@ _global.SENTRY_RELEASE = {
             url: h
           }),
           b = await (0, o.MB)(m);
-        if (l) {
+        if (c) {
           if (p[b]?.response) return p[b].response;
           if (p[b]?.loading) return {
             error: null,
@@ -386,13 +392,13 @@ _global.SENTRY_RELEASE = {
         }
         const v = await fetch(h, f),
           y = await v.json();
-        return l && (p[b] = {
+        return c && (p[b] = {
           response: y,
           loading: !1
         }), y
       }
     },
-    9452: (e, t, n) => {
+    29452: (e, t, n) => {
       n.d(t, {
         c: () => i
       });
@@ -405,14 +411,14 @@ _global.SENTRY_RELEASE = {
             clientId: a,
             graphEnv: s,
             scHost: i,
-            hostname: c,
-            cdnBase: l,
+            hostname: l,
+            cdnBase: c,
             key: d,
             marketingAuthTLD: u
           } = e;
           const p = o?.apiHost ?? t,
-            g = o?.authHost ?? n,
-            w = o?.cdnBase ?? l,
+            w = o?.authHost ?? n,
+            g = o?.cdnBase ?? c,
             h = o?.clientId ?? a,
             k = r?.marketingAuthTLD ?? u,
             f = o?.scHost ?? i;
@@ -420,14 +426,14 @@ _global.SENTRY_RELEASE = {
             apiHost: `https://${p}.rockstargames.com`,
             graphEnv: o?.graphEnv ?? s,
             host: f,
-            hostname: c,
-            cdnBase: w,
+            hostname: l,
+            cdnBase: g,
             key: d,
             clientId: h,
-            authHost: g,
-            login: `https://${g}.rockstargames.com/connect/authorize/${h}`,
-            silentCheck: `https://${g}.rockstargames.com/connect/cors/check/${h}`,
-            signup: `https://${g}.rockstargames.com/create/?cid=${h}`,
+            authHost: w,
+            login: `https://${w}.rockstargames.com/connect/authorize/${h}`,
+            silentCheck: `https://${w}.rockstargames.com/connect/cors/check/${h}`,
+            signup: `https://${w}.rockstargames.com/create/?cid=${h}`,
             gateway: `https://${k}.rockstargames.com/auth/gateway.json`,
             logout: `https://${k}.rockstargames.com/auth/sc-auth-logout`,
             pingBearer: `https://${k}.rockstargames.com/auth/ping-bearer.json`
@@ -473,7 +479,7 @@ _global.SENTRY_RELEASE = {
           })) || s[0]
         }
     },
-    6716: (e, t, n) => {
+    16716: (e, t, n) => {
       n.d(t, {
         _: () => o
       });
@@ -486,12 +492,12 @@ _global.SENTRY_RELEASE = {
       n.d(t, {
         y_: () => a,
         kJ: () => i,
-        kj: () => l
+        kj: () => c
       });
-      var o = n(4812),
-        r = n(4424);
+      var o = n(14812),
+        r = n(34424);
       const a = () => (0, o.gh)(r.EH);
-      var s = n(8200);
+      var s = n(88200);
       const i = e => {
         const [t, n] = (0, s.useState)(null), [o, r] = (0, s.useState)(null), [a, i] = (0, s.useState)({});
         return (0, s.useLayoutEffect)((() => {
@@ -509,20 +515,20 @@ _global.SENTRY_RELEASE = {
           }
         }), [e]), [t, a]
       };
-      n(3557), n(1340);
-      const c = "__RS_CUSTOM_EVENTS__";
-      window[c] || (window[c] = {});
-      const l = () => {
+      n(13557), n(81340);
+      const l = "__RS_CUSTOM_EVENTS__";
+      window[l] || (window[l] = {});
+      const c = () => {
         const e = (e, t) => {
           if (!e) throw Error("Event name must be provided to work with custom events");
           const n = (e => `rsCustomEvent:${e}`)(e),
             o = new CustomEvent(n, {
               detail: t
             });
-          window[c][n] || (window[c][n] = {
+          window[l][n] || (window[l][n] = {
             eventQueue: [],
             subscribers: []
-          }), window[c][n].eventQueue.push(o), window[c][n].subscribers.forEach((e => {
+          }), window[l][n].eventQueue.push(o), window[l][n].subscribers.forEach((e => {
             e(o.detail)
           }))
         };
@@ -530,21 +536,21 @@ _global.SENTRY_RELEASE = {
           dispatch: e
         })), [])
       };
-      n(7208), n(4832)
+      n(87208), n(94832)
     },
-    7208: (e, t, n) => {
-      var o = n(8200);
-      n(3480);
+    87208: (e, t, n) => {
+      var o = n(88200);
+      n(63480);
       const r = (0, o.createContext)(),
         {
           Consumer: a
         } = r
     },
-    4832: (e, t, n) => {
-      var o = n(4812);
-      n(8200), n(3480), (0, o.UT)(!1)
+    94832: (e, t, n) => {
+      var o = n(14812);
+      n(88200), n(63480), (0, o.UT)(!1)
     },
-    7019: (e, t, n) => {
+    37019: (e, t, n) => {
       n.d(t, {
         U: () => o,
         c: () => a
@@ -584,4 +590,4 @@ _global.SENTRY_RELEASE = {
     }
   }
 ]);
-//# sourceMappingURL=7ee475f9b124062b219149eb3ab75ca5.js.map
+//# sourceMappingURL=b9aca072b56d76903949e3ce263b4671.js.map

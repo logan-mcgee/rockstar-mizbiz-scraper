@@ -2,21 +2,21 @@
   try {
     var t = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       e = (new Error).stack;
-    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "238bf7c0-9a01-4a96-acc6-af7a80a53df4", t._sentryDebugIdIdentifier = "sentry-dbid-238bf7c0-9a01-4a96-acc6-af7a80a53df4")
+    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "dc87c069-523f-4e30-9100-6c945215e6d1", t._sentryDebugIdIdentifier = "sentry-dbid-dc87c069-523f-4e30-9100-6c945215e6d1")
   } catch (t) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "d409e297a36831321bd01cc6fefa95672d98d375",
+  release: "b356924da36d0f3d7db4edbb6216f9bbe11be0f1",
   packageName: "@rockstargames/modules-core-header",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "d409e297a36831321bd01cc6fefa95672d98d375"
+  id: "b356924da36d0f3d7db4edbb6216f9bbe11be0f1"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [436], {
-    6436: (t, e, n) => {
+    46436: (t, e, n) => {
       n.r(e), n.d(e, {
         AnimatePresence: () => Hs,
         AnimateSharedLayout: () => Ks,
@@ -105,7 +105,7 @@ _global.SENTRY_RELEASE = {
         wrap: () => fl,
         wrapHandler: () => Zt
       });
-      var o = n(8200);
+      var o = n(88200);
       const i = (0, o.createContext)({
           transformPagePoint: t => t,
           isStatic: !1,
@@ -864,7 +864,7 @@ _global.SENTRY_RELEASE = {
       }
       const pe = (t, e) => n => e(t(n)),
         fe = (...t) => t.reduce(pe);
-      var me = n(6540);
+      var me = n(86540);
       const ge = (void 0 === me || me.env, "production"),
         ve = new Set;
 
@@ -5044,7 +5044,7 @@ _global.SENTRY_RELEASE = {
           e.set(t)
         }))), [t]), e
       }
-      var xa = n(7672);
+      var xa = n(87672);
 
       function wa(t, e) {
         var n;
@@ -5702,4 +5702,4 @@ _global.SENTRY_RELEASE = {
     }
   }
 ]);
-//# sourceMappingURL=478484ecf455a5552f12f276fe79f84b.js.map
+//# sourceMappingURL=dd2ca048be43cc5378a31bf92f57d720.js.map
