@@ -7,13 +7,13 @@
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "63eddca94fa9726ada78d0c14030f13fd7020af7",
+  release: "7434858002db60462282401ab192924e3d1a0a27",
   packageName: "@rockstargames/modules-core-carousel",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "63eddca94fa9726ada78d0c14030f13fd7020af7"
+  id: "7434858002db60462282401ab192924e3d1a0a27"
 }, System.register(["@rockstargames/components", "@rockstargames/tina"], (function(e, t) {
   var r = {},
     n = {};
@@ -405,9 +405,9 @@ _global.SENTRY_RELEASE = {
             get: t[r]
           })
         }, c.f = {}, c.e = e => Promise.all(Object.keys(c.f).reduce(((t, r) => (c.f[r](e, t), t)), [])), c.u = e => "js/" + {
-          256: "41fd906ef9ed48a0d6bba7935f7be510",
-          368: "453a045511991dcab48284d1cf209fd8",
-          868: "47b51cb8d2107deb0d326b3552d3c3e3"
+          256: "d2d89d8d407b1696a3d5151166118661",
+          368: "818b587dcf89c260ce5083625c0be4e8",
+          868: "8097d10f104fadcea6a0db83bc11f318"
         } [e] + ".js", c.miniCssF = e => "css/ac1e9227f63817d283887e19c5e783ae.css", c.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {

@@ -7,13 +7,13 @@
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "4f9ddcadd6441a318358d91584450ac4e81dfd99",
+  release: "7434858002db60462282401ab192924e3d1a0a27",
   packageName: "@rockstargames/modules-core-newswire-article",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "4f9ddcadd6441a318358d91584450ac4e81dfd99"
+  id: "7434858002db60462282401ab192924e3d1a0a27"
 }, System.register(["@rockstargames/components", "@rockstargames/graph-client", "@rockstargames/modules-core-card", "@rockstargames/modules-core-carousel", "@rockstargames/modules-core-engagement", "@rockstargames/modules-core-gif-viewer", "@rockstargames/modules-core-group-of-items", "@rockstargames/modules-core-videoplayer", "@rockstargames/modules-sc-ugc-spotlight", "@rockstargames/tina", "@rockstargames/utils"], (function(e, t) {
   var r = {},
     n = {},
@@ -516,20 +516,20 @@ _global.SENTRY_RELEASE = {
           })
         }, v.f = {}, v.e = e => Promise.all(Object.keys(v.f).reduce(((t, r) => (v.f[r](e, t), t)), [])), v.u = e => "js/" + {
           200: "e3b81e2af68561569a63050df639ebf4",
-          208: "e42f1970394455875931510c67d7d1e7",
-          272: "e459b5ef0d45727441418ff07466ff9f",
-          336: "7ccae863c1e714fef972856e0d923d70",
-          396: "f01209ec5155d3c44651814ac545c60a",
-          448: "e4bf38e67d032e18ef927d965f1b1cd4",
+          208: "3cdf907d62e656fd8cc3ecfecef19849",
+          272: "8b843c03464fda950845a05160bcd5aa",
+          336: "1c7fcadadc9f06feabf28c0808095db4",
+          396: "7714e4c8c89992b153b1dd99226bf3ae",
+          448: "9b3f5e69326cd51412dfe77a0308fcea",
           556: "1e3c8d3117cc76fb780db8e27ac30372",
-          620: "c36707aae352195b935af31842a26e66",
-          648: "e4c61874a4262fc29158790cb2453896",
-          650: "eb72e75908971364122405f88734dafb",
+          620: "91e03848814baa40a5b248ef02d19def",
+          648: "cba3f3d1cf8b8adf939e2e5f73fa7f77",
+          650: "1e16900c5711388814fde5135f7b5561",
           668: "4af1d3749e076c0cd0614f618d761f79",
           816: "5b6467f1c20d6ccbf9cef623d13826b7",
-          844: "0a1912bbd5840b9f147fd28abbb71869",
+          844: "dbb8b6b81bc894b4f5b8cfed842dac4a",
           850: "abe1738d2cb195433785813cb48d4250",
-          896: "a4852678da4c83d5ebdb268ef8da5f22"
+          896: "364fad9c3163bca689af115647716745"
         } [e] + ".js", v.miniCssF = e => "css/" + {
           208: "e39026cde64295f4bb1e51bac55c71e3",
           650: "38cfc95a9203c101bd489ff5c88bc10d",

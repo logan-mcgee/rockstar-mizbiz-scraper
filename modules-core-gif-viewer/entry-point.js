@@ -7,13 +7,13 @@
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "63eddca94fa9726ada78d0c14030f13fd7020af7",
+  release: "7434858002db60462282401ab192924e3d1a0a27",
   packageName: "@rockstargames/modules-core-gif-viewer",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "63eddca94fa9726ada78d0c14030f13fd7020af7"
+  id: "7434858002db60462282401ab192924e3d1a0a27"
 }, System.register(["@rockstargames/components", "@rockstargames/graph-client", "@rockstargames/tina"], (function(e, t) {
   var r = {},
     n = {},
@@ -3993,9 +3993,9 @@ _global.SENTRY_RELEASE = {
           })
         }, c.f = {}, c.e = e => Promise.all(Object.keys(c.f).reduce(((t, r) => (c.f[r](e, t), t)), [])), c.u = e => "js/" + {
           52: "195850e36dc859a1f5d6c5969c811ef9",
-          856: "dee0e2c5c23fc0777e1108ec99840c05",
-          912: "3d22102f58e7c46a9032f6d868a59753",
-          920: "1dbd9814e98cc7526757a67005d0bdf6"
+          856: "f14a377f0a4aca790e8266d80191f26b",
+          912: "4617de090be84e0ce3abf23f86dd0c2b",
+          920: "7d2ecfdcf2ae8aceeb87f8da896cc172"
         } [e] + ".js", c.miniCssF = e => "css/" + {
           856: "fe210ed3f04fe64376cb80e4b64a13b3",
           920: "5754518f8676a553fd5fd46915d3a889"

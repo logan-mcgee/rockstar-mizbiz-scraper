@@ -7,13 +7,13 @@
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "0fac9d39cdee1a8eccecb716cfcdd18497dbe214",
+  release: "7434858002db60462282401ab192924e3d1a0a27",
   packageName: "@rockstargames/modules-gtao-career-progress-hub",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "0fac9d39cdee1a8eccecb716cfcdd18497dbe214"
+  id: "7434858002db60462282401ab192924e3d1a0a27"
 }, System.register(["@rockstargames/components", "@rockstargames/graph-client", "@rockstargames/modules-core-highlights", "@rockstargames/modules-core-sc-user", "@rockstargames/tina", "@rockstargames/utils"], (function(e, t) {
   var n = {},
     r = {},
@@ -10432,19 +10432,19 @@ _global.SENTRY_RELEASE = {
           })
         }, p.f = {}, p.e = e => Promise.all(Object.keys(p.f).reduce(((t, n) => (p.f[n](e, t), t)), [])), p.u = e => "js/" + {
           61: "6142d9487d60932e2a7050baaab6d72f",
-          72: "b7870875d1cab56f30ef35a1c060ff79",
-          230: "d82f538f2562b0907bcefc8228d93ae5",
-          256: "ac33048d665115cc2d38315b96e9d15e",
-          280: "777d7430ae5cd9ce5ab0a997e1c0c578",
-          436: "1d7a011b3b272230652e9340786f3c6d",
-          472: "b9df85633ac752df5bb3e2908e05ca11",
-          544: "c2611e0424dae621a205ecf9f910534d",
-          660: "13eb1b5c64c299b0b3e8e7744b2d0a72",
-          676: "066435d5a4159aae182260893b4aebaf",
-          692: "266a0d2b7aef0f2898dee9cacc71ae65",
-          856: "e302b2c7140283d0d74482ba75268253",
-          896: "fc6d8c8168b1905b75f91651b72e4f3a",
-          907: "65209dfe7a5f452b1acba1748bab1317"
+          72: "a8be5c5e5e12f86c0f1d228199337c21",
+          230: "f5af8e0f2601f047fceab5616f0872c4",
+          256: "90d1151e05fc3d8ce5f85fd05d95723a",
+          280: "0d2a4bee2c59ff99c41dd13a8cbd1afb",
+          436: "68e72ba54f6f49c09d71e4ef57697adf",
+          472: "5c93ff0c3103b10b8499e86e631a437d",
+          544: "5ca1a5a84b65b9a68ca6e71b68004dd1",
+          660: "ce55b5fad19add93373effdbaf976380",
+          676: "f3d1d46d5415c3678e40de01ba1065d4",
+          692: "74e3d3a509daa5a9117e1bba5dd00542",
+          856: "5a6cfca9a4195ae3d77aabcee8b34d3f",
+          896: "2a0714484fec3bbb9073b1ee319a716b",
+          907: "92d5cde663d2dddcea77ae770ea11fd7"
         } [e] + ".js", p.miniCssF = e => "css/7a267ce3fd82be351da8dfc4b24794a9.css", p.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {

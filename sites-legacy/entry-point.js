@@ -7,13 +7,13 @@
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "63eddca94fa9726ada78d0c14030f13fd7020af7",
+  release: "7434858002db60462282401ab192924e3d1a0a27",
   packageName: "@rockstargames/sites-legacy",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "63eddca94fa9726ada78d0c14030f13fd7020af7"
+  id: "7434858002db60462282401ab192924e3d1a0a27"
 }, System.register(["@rockstargames/components", "@rockstargames/graph-client", "@rockstargames/intl", "@rockstargames/modules-core-hero", "@rockstargames/modules-core-highlights", "@rockstargames/modules-core-sc-user", "@rockstargames/modules-core-videoplayer", "@rockstargames/polyfills", "@rockstargames/tina", "@rockstargames/utils"], (function(e, t) {
   var n = {},
     r = {},
@@ -10477,18 +10477,18 @@ _global.SENTRY_RELEASE = {
           })
         }, g.f = {}, g.e = e => Promise.all(Object.keys(g.f).reduce(((t, n) => (g.f[n](e, t), t)), [])), g.u = e => "js/" + {
           16: "9dedc5587d0e309ccc480e4ade18422a",
-          44: "f982d11794e6b819709280d0e4e6a303",
+          44: "83c74e5f3174555f49d789ad3140efb2",
           61: "976253e4590827333659b85f0efb1b36",
-          164: "01b1056e38926dbac5009dacba126525",
-          280: "4c3cf16c90e88253b0388934fd85fd37",
-          304: "555917f0dec3288eb90ab6d78d40754c",
-          456: "42637e409cdac7b4c9b1de0ca541ad58",
-          660: "3f68f5addd79bb0a38fea7b48a0a4482",
-          692: "035b4dba3a1343bac73d085ed2059e53",
+          164: "f1de4d71cdfe413b6cb16d480a736d48",
+          280: "dafb44650a444e5cc9986c0823494985",
+          304: "1f2f0fc725e485806a7df4b0162ad9f6",
+          456: "301094be427bfdaba787839645104dc7",
+          660: "eeec141bd8f28f3bb3562867cd594f89",
+          692: "47a6a1754f585b2ade37553b1a4d7668",
           836: "4105dac0edbb069423c0f2c63aa65282",
-          856: "edf00237f875ba1fbcee68b942b05098",
-          907: "fd97b9156be0a9ed8ce91c907b03e01d",
-          912: "fe49f87f240e1435765d63e023e4f0b8"
+          856: "59ce9b4f368a05113c3baec4008adafb",
+          907: "e2bb19ec4d4824d4a199d7dc9e522ea0",
+          912: "9815352a0954881dd839ea8c123ca65b"
         } [e] + ".js", g.miniCssF = e => "css/" + {
           304: "916e74d8d50f64d8f556da06d20283dd",
           456: "3816e0a262f2263b3163afa8c53b5cd2",

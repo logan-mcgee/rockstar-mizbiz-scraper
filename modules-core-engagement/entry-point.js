@@ -7,13 +7,13 @@
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "4f9ddcadd6441a318358d91584450ac4e81dfd99",
+  release: "7434858002db60462282401ab192924e3d1a0a27",
   packageName: "@rockstargames/modules-core-engagement",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "4f9ddcadd6441a318358d91584450ac4e81dfd99"
+  id: "7434858002db60462282401ab192924e3d1a0a27"
 }, System.register(["@rockstargames/components", "@rockstargames/graph-client", "@rockstargames/intl", "@rockstargames/modules-core-sc-user", "@rockstargames/tina", "@rockstargames/utils"], (function(e, t) {
   var r = {},
     n = {},
@@ -4024,14 +4024,14 @@ _global.SENTRY_RELEASE = {
           })
         }, h.f = {}, h.e = e => Promise.all(Object.keys(h.f).reduce(((t, r) => (h.f[r](e, t), t)), [])), h.u = e => "js/" + {
           61: "3f5387e589c51f70ddf4e8d5ab3a78d7",
-          228: "b7af7608f8977398d2dbdd421619cf3d",
-          256: "f6f54f7853687349ea3f15a395d7b1de",
-          280: "e022d4201577f376b8db44178dbf8a3e",
-          312: "6955d0efc3847f84a6e0ccf70af50545",
-          660: "1d8756056677457eab30124b122cd952",
-          792: "2d314992c210ca0b5d2dc7173f59b072",
-          907: "d606e29eb6d7addd48f6a147e6b723ba",
-          912: "2bc59f8865a5b0c53617be852d8b4973"
+          228: "b2a4db0b35bb9542e00f150dad1709b4",
+          256: "2c30fab200d0b273b6692c291ee3f242",
+          280: "0dffcf09ef771972d780097144f5698c",
+          312: "fd26bba985b5af829741cb7c0863e4a5",
+          660: "494101c142f20d7faf06c0faa50e460a",
+          792: "8eb23d29046058474061d0a4e478f744",
+          907: "223cec7292ab2e766e0226b149418b6c",
+          912: "99976e21dc9afc2e2cd2aae1b8133bbd"
         } [e] + ".js", h.miniCssF = e => "css/10785c82e2700b941efb6111c6c8d45c.css", h.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {

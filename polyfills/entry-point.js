@@ -7,13 +7,13 @@
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "63eddca94fa9726ada78d0c14030f13fd7020af7",
+  release: "7434858002db60462282401ab192924e3d1a0a27",
   packageName: "@rockstargames/polyfills",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "63eddca94fa9726ada78d0c14030f13fd7020af7"
+  id: "7434858002db60462282401ab192924e3d1a0a27"
 }, System.register([], (function(e, r) {
   return {
     execute: function() {
@@ -86,8 +86,8 @@ _global.SENTRY_RELEASE = {
             get: r[t]
           })
         }, s.f = {}, s.e = e => Promise.all(Object.keys(s.f).reduce(((r, t) => (s.f[t](e, r), r)), [])), s.u = e => "js/" + {
-          152: "388cbeb5e25473bd1e0e2574f6014d57",
-          624: "28bcf0dd6709fe743c3c5add1d9668ca"
+          152: "1d558f08c1ca23ca1bd57f49104e69a5",
+          624: "3de8d1e6c120fe1e3aae522f9e608e76"
         } [e] + ".js", s.miniCssF = e => {}, s.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
@@ -98,16 +98,16 @@ _global.SENTRY_RELEASE = {
         }(), s.o = (e, r) => Object.prototype.hasOwnProperty.call(e, r), e = {}, t = "@rockstargames/polyfills:", s.l = (r, o, n, a) => {
           if (e[r]) e[r].push(o);
           else {
-            var i, d;
+            var i, l;
             if (void 0 !== n)
-              for (var l = document.getElementsByTagName("script"), f = 0; f < l.length; f++) {
-                var u = l[f];
+              for (var d = document.getElementsByTagName("script"), f = 0; f < d.length; f++) {
+                var u = d[f];
                 if (u.getAttribute("src") == r || u.getAttribute("data-webpack") == t + n) {
                   i = u;
                   break
                 }
               }
-            i || (d = !0, (i = document.createElement("script")).charset = "utf-8", i.timeout = 120, s.nc && i.setAttribute("nonce", s.nc), i.setAttribute("data-webpack", t + n), i.src = r), e[r] = [o];
+            i || (l = !0, (i = document.createElement("script")).charset = "utf-8", i.timeout = 120, s.nc && i.setAttribute("nonce", s.nc), i.setAttribute("data-webpack", t + n), i.src = r), e[r] = [o];
             var c = (t, o) => {
                 i.onerror = i.onload = null, clearTimeout(p);
                 var n = e[r];
@@ -117,7 +117,7 @@ _global.SENTRY_RELEASE = {
                 type: "timeout",
                 target: i
               }), 12e4);
-            i.onerror = c.bind(null, i.onerror), i.onload = c.bind(null, i.onload), d && document.head.appendChild(i)
+            i.onerror = c.bind(null, i.onerror), i.onload = c.bind(null, i.onload), l && document.head.appendChild(i)
           }
         }, s.r = e => {
           "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
@@ -137,24 +137,24 @@ _global.SENTRY_RELEASE = {
                     throw r
                   }, o.p = 0
                 },
-                i = (e, t, n, i, s, d) => {
+                i = (e, t, n, i, s, l) => {
                   try {
-                    var l = e(t, n);
-                    if (!l || !l.then) return s(l, i, d);
-                    var f = l.then((e => s(e, i)), a);
-                    if (!d) return f;
+                    var d = e(t, n);
+                    if (!d || !d.then) return s(d, i, l);
+                    var f = d.then((e => s(e, i)), a);
+                    if (!l) return f;
                     r.push(o.p = f)
                   } catch (e) {
                     a(e)
                   }
                 },
-                d = (e, r, n) => i(r.get, o[1], t, 0, l, n),
-                l = r => {
+                l = (e, r, n) => i(r.get, o[1], t, 0, d, n),
+                d = r => {
                   o.p = 1, s.m[e] = e => {
                     e.exports = r()
                   }
                 };
-              i(s, o[2], 0, 0, ((e, r, t) => e ? i(s.I, o[0], 0, e, d, t) : a()), 1)
+              i(s, o[2], 0, 0, ((e, r, t) => e ? i(s.I, o[0], 0, e, l, t) : a()), 1)
             }
           }))
         }, (() => {
@@ -207,13 +207,13 @@ _global.SENTRY_RELEASE = {
           var r = (r, t) => {
               var o, n, a = t[0],
                 i = t[1],
-                d = t[2],
-                l = 0;
+                l = t[2],
+                d = 0;
               if (a.some((r => 0 !== e[r]))) {
                 for (o in i) s.o(i, o) && (s.m[o] = i[o]);
-                d && d(s)
+                l && l(s)
               }
-              for (r && r(t); l < a.length; l++) n = a[l], s.o(e, n) && e[n] && e[n][0](), e[n] = 0
+              for (r && r(t); d < a.length; d++) n = a[d], s.o(e, n) && e[n] && e[n][0](), e[n] = 0
             },
             t = self.webpackChunk_rockstargames_polyfills = self.webpackChunk_rockstargames_polyfills || [];
           t.forEach(r.bind(null, 0)), t.push = r.bind(null, t.push.bind(t))

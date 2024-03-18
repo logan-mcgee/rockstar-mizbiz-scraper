@@ -7,13 +7,13 @@
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "63eddca94fa9726ada78d0c14030f13fd7020af7",
+  release: "7434858002db60462282401ab192924e3d1a0a27",
   packageName: "@rockstargames/sites-red-dead-redemption-2",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "63eddca94fa9726ada78d0c14030f13fd7020af7"
+  id: "7434858002db60462282401ab192924e3d1a0a27"
 }, System.register(["@rockstargames/components", "@rockstargames/graph-client", "@rockstargames/modules-core-agegate", "@rockstargames/modules-core-videoplayer", "@rockstargames/utils"], (function(e, t) {
   var r = {},
     n = {},
@@ -4013,9 +4013,9 @@ _global.SENTRY_RELEASE = {
             get: t[r]
           })
         }, f.f = {}, f.e = e => Promise.all(Object.keys(f.f).reduce(((t, r) => (f.f[r](e, t), t)), [])), f.u = e => "js/" + {
-          52: "191aefef8ff8fd4988516c01ab68d489",
-          648: "2e6efcabd9889d4de8df68e7ab62aa49",
-          832: "54d58c897c9c74546db0e007cda11b77"
+          52: "9e767a8070d915c21d242fde4c4d17eb",
+          648: "a591da23972153f5dcbfdabe243e16c2",
+          832: "dfabeee6b68b9d4376bc55a3c147d7ed"
         } [e] + ".js", f.miniCssF = e => "css/f591ef29a01f17332a4e20f415b692b1.css", f.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {

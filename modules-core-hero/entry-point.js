@@ -7,13 +7,13 @@
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "63eddca94fa9726ada78d0c14030f13fd7020af7",
+  release: "7434858002db60462282401ab192924e3d1a0a27",
   packageName: "@rockstargames/modules-core-hero",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "63eddca94fa9726ada78d0c14030f13fd7020af7"
+  id: "7434858002db60462282401ab192924e3d1a0a27"
 }, System.register(["@rockstargames/components", "@rockstargames/modules-core-sc-user", "@rockstargames/tina", "@rockstargames/utils"], (function(e, t) {
   var r = {},
     n = {},
@@ -97,23 +97,23 @@ _global.SENTRY_RELEASE = {
                 h = Object.assign,
                 m = {};
 
-              function v(e, t, r) {
+              function b(e, t, r) {
                 this.props = e, this.context = t, this.refs = m, this.updater = r || y
               }
 
-              function b() {}
+              function v() {}
 
               function g(e, t, r) {
                 this.props = e, this.context = t, this.refs = m, this.updater = r || y
               }
-              v.prototype.isReactComponent = {}, v.prototype.setState = function(e, t) {
+              b.prototype.isReactComponent = {}, b.prototype.setState = function(e, t) {
                 if ("object" != typeof e && "function" != typeof e && null != e) throw Error("setState(...): takes an object of state variables to update or a function which returns an object of state variables.");
                 this.updater.enqueueSetState(this, e, t, "setState")
-              }, v.prototype.forceUpdate = function(e) {
+              }, b.prototype.forceUpdate = function(e) {
                 this.updater.enqueueForceUpdate(this, e, "forceUpdate")
-              }, b.prototype = v.prototype;
-              var _ = g.prototype = new b;
-              _.constructor = g, h(_, v.prototype), _.isPureReactComponent = !0;
+              }, v.prototype = b.prototype;
+              var _ = g.prototype = new v;
+              _.constructor = g, h(_, b.prototype), _.isPureReactComponent = !0;
               var w = Array.isArray,
                 S = Object.prototype.hasOwnProperty,
                 k = {
@@ -262,7 +262,7 @@ _global.SENTRY_RELEASE = {
                   if (!j(e)) throw Error("React.Children.only expected to receive a single React element child.");
                   return e
                 }
-              }, t.Component = v, t.Fragment = o, t.Profiler = u, t.PureComponent = g, t.StrictMode = a, t.Suspense = f, t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = A, t.cloneElement = function(e, t, n) {
+              }, t.Component = b, t.Fragment = o, t.Profiler = u, t.PureComponent = g, t.StrictMode = a, t.Suspense = f, t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = A, t.cloneElement = function(e, t, n) {
                 if (null == e) throw Error("React.cloneElement(...): The argument must be a React element, but you passed " + e + ".");
                 var o = h({}, e.props),
                   a = e.key,
@@ -427,10 +427,10 @@ _global.SENTRY_RELEASE = {
             get: t[r]
           })
         }, l.f = {}, l.e = e => Promise.all(Object.keys(l.f).reduce(((t, r) => (l.f[r](e, t), t)), [])), l.u = e => "js/" + {
-          4: "00a2e96c149df0c9b7e5f03d14556b01",
+          4: "76f3d4e9e9b168a0115e91b733ba200c",
           200: "64c43e2bd4d9f48d9e5ccf624ee25306",
-          380: "a6478ab9175cf5b29271c886cb030c44",
-          712: "156f80b0264fee2c874598e68ae1b1bc"
+          380: "8d56bbd85756b1b6383b94e059e30249",
+          712: "3adb15d17d983147f55d414c782eadaf"
         } [e] + ".js", l.miniCssF = e => "css/65245e55e1d76e445871a87dde121813.css", l.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {

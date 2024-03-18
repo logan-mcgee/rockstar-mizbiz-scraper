@@ -7,13 +7,13 @@
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "63eddca94fa9726ada78d0c14030f13fd7020af7",
+  release: "7434858002db60462282401ab192924e3d1a0a27",
   packageName: "@rockstargames/modules-core-sc-user",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "63eddca94fa9726ada78d0c14030f13fd7020af7"
+  id: "7434858002db60462282401ab192924e3d1a0a27"
 }, System.register(["@rockstargames/graph-client", "@rockstargames/utils"], (function(e, t) {
   var r = {},
     n = {};
@@ -413,16 +413,16 @@ _global.SENTRY_RELEASE = {
             get: t[r]
           })
         }, c.f = {}, c.e = e => Promise.all(Object.keys(c.f).reduce(((t, r) => (c.f[r](e, t), t)), [])), c.u = e => "js/" + {
-          16: "875870b62b636a974cca1de4c2b4e421",
+          16: "d301869ad6563250e676d161b326a754",
           200: "d82f7c63473c658549bf4b2b4d96588a",
-          352: "98e0e290e5ca1c5d9f64440a3ab472fd",
+          352: "33f257c967ccbabd4c52d2e1224260cb",
           396: "f76af718330ad43e00bf195b2ff91300",
-          416: "1e1c5ab876a77ed1d5d0ab4b642e8d4a",
-          560: "7b803cb6675a58af0d0feec10f71b3ba",
-          596: "5b303fc056537915f89940832187a680",
+          416: "cc20cba0523b33a851b595fdfd89eacb",
+          560: "e5884399cad2d96f7cf4066cf9e5698d",
+          596: "6c1457a77d598b22774e90eb8e0b6bfe",
           792: "ca9af4a151f76a0731b69b6b4c0bd1dc",
-          848: "fc3ef7d2287680d0523e0e5739d37661",
-          988: "ccf5bd6202ac357fb5da5df32a3d81b1"
+          848: "e039cda31c56f24966f84077b1ccca75",
+          988: "26141ffe42ccf979be6a2dd8f0630f7d"
         } [e] + ".js", c.miniCssF = e => {}, c.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {

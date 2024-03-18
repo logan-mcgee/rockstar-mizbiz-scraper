@@ -7,13 +7,13 @@
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "63eddca94fa9726ada78d0c14030f13fd7020af7",
+  release: "7434858002db60462282401ab192924e3d1a0a27",
   packageName: "@rockstargames/sites-rockstargames",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "63eddca94fa9726ada78d0c14030f13fd7020af7"
+  id: "7434858002db60462282401ab192924e3d1a0a27"
 }, System.register(["@rockstargames/components", "@rockstargames/graph-client", "@rockstargames/intl", "@rockstargames/modules-core-card", "@rockstargames/modules-core-gif-viewer", "@rockstargames/modules-core-header", "@rockstargames/modules-core-newswire-article", "@rockstargames/modules-core-sc-user", "@rockstargames/modules-core-screenshot-viewer", "@rockstargames/modules-core-videoplayer", "@rockstargames/polyfills", "@rockstargames/sites-careers", "@rockstargames/sites-gta", "@rockstargames/sites-gta-gen9", "@rockstargames/sites-gta-trilogy", "@rockstargames/sites-gta-tv", "@rockstargames/sites-legacy", "@rockstargames/sites-red-dead-online", "@rockstargames/sites-red-dead-redemption-2", "@rockstargames/sites-rockstar-tv", "@rockstargames/sites-rockstargames-downloads", "@rockstargames/utils"], (function(e, t) {
   var n = {},
     r = {},
@@ -12381,27 +12381,27 @@ _global.SENTRY_RELEASE = {
           61: "cc40abc6155f8371466cec04f83794c6",
           140: "690bb21b04b5a907d2b270e3feb622c1",
           190: "85fd5ad2038f0c57756d0e57310c7548",
-          280: "a2a0a6fbb678440750c9ad548348fad6",
+          280: "cbc2b8398704f654e6738c3fc5fbaf48",
           320: "e0df7180fd8c07489b3ef86e32b7959c",
-          380: "acb3e32a65d195594c721aaf58e3e096",
+          380: "5b4eb70996d4c7b5d76c8318b6ad550e",
           396: "f169e3f53fd9db766772ea288d05cdae",
-          448: "bc43a966080af03ff894e755ce8b94e4",
-          472: "e1cddd6e32187457fddc8eb3f308d4ef",
+          448: "1c153949d09d54b5101c9fff56ba9fd1",
+          472: "aae9326ca65b5b052f85d9b638b9bf1a",
           484: "32561f4ec01649ab808e4ca884639725",
-          532: "90c0891ce82f0169226848cf167a5756",
-          542: "2f4275f8f034024f4dc8e165bc70034c",
-          600: "c793f0dd87460c4666c528f14d2f6bc1",
-          612: "bafb4b1affc106991c318917aa2c2a3a",
+          532: "b6f7823a19d212c6f88166530233633e",
+          542: "1b49b5b5b9eb06ac6f1697cb276ae328",
+          600: "4a3562bc0b6bcaf89d51f5725536bdd8",
+          612: "b413a56b732d485acbfbe0da6f3485bf",
           620: "7e0c635d85830ea1cc251abdb28a08bf",
-          660: "b810ecfbcb769d2e53cf2a351a077cb3",
+          660: "7e3a9a50af571811a316993115e82d26",
           690: "f0b9f746802e44698a80040befe15db1",
-          700: "8cac43036a3d36017aa87f726f370de0",
+          700: "b70a7f62c20c4d2f3217f8ec9c8d63d8",
           708: "84e861ff48c75478c629c27ba5573800",
           735: "776d39a6096f45568c3a03057c310d67",
           832: "e299cc8078a863f475346662dc273708",
           868: "8b5ca408150f4c9d2fe21a9539bc15df",
-          907: "27a61f2a8abedc1b02dd43aabd7cd2df",
-          912: "61d307690a8507e0d81e3dcd40b1a0d1",
+          907: "0632513f228cbfa416460729d1cd12b3",
+          912: "1833a8aa8b4f95477b2637b737c28770",
           952: "ea2a4efe67b95892dac502e4106dd3fc",
           956: "d0659ee92c43aa2f5926090b7ad5c4dd"
         } [e] + ".js", T.miniCssF = e => "css/" + {

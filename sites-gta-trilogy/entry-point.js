@@ -7,13 +7,13 @@
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "63eddca94fa9726ada78d0c14030f13fd7020af7",
+  release: "7434858002db60462282401ab192924e3d1a0a27",
   packageName: "@rockstargames/sites-gta-trilogy",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "63eddca94fa9726ada78d0c14030f13fd7020af7"
+  id: "7434858002db60462282401ab192924e3d1a0a27"
 }, System.register(["@rockstargames/components", "@rockstargames/modules-core-videoplayer", "@rockstargames/tina", "@rockstargames/utils"], (function(e, t) {
   var r = {},
     n = {},
@@ -4000,10 +4000,10 @@ _global.SENTRY_RELEASE = {
             get: t[r]
           })
         }, d.f = {}, d.e = e => Promise.all(Object.keys(d.f).reduce(((t, r) => (d.f[r](e, t), t)), [])), d.u = e => "js/" + {
-          96: "20f2e151faea5ac4b686c27d4ac6fcd1",
-          280: "2e7fb311b8c2771dfde8a65eb24267e8",
-          560: "739f4cce5d83b8829516c814295b5f58",
-          713: "5ca39b05242749eee82e8778f3d0ed4a"
+          96: "ea8c2d3971e4d57009d5be007ed01bb5",
+          280: "b7523dc03805a0b6c810854e3a59fe2f",
+          560: "dc95d2b4118cd9eb6682fc91d56108ef",
+          713: "6903f4a141825dd4b99d9c1d888dd260"
         } [e] + ".js", d.miniCssF = e => "css/0ba90b8e2a1d23f3191f1f43a69417cc.css", d.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {

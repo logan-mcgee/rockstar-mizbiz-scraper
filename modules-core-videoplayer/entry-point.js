@@ -7,13 +7,13 @@
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "63eddca94fa9726ada78d0c14030f13fd7020af7",
+  release: "7434858002db60462282401ab192924e3d1a0a27",
   packageName: "@rockstargames/modules-core-videoplayer",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "63eddca94fa9726ada78d0c14030f13fd7020af7"
+  id: "7434858002db60462282401ab192924e3d1a0a27"
 }, System.register(["@rockstargames/components", "@rockstargames/graph-client", "@rockstargames/intl", "@rockstargames/modules-core-agegate", "@rockstargames/modules-core-sc-user", "@rockstargames/polyfills", "@rockstargames/tina", "@rockstargames/utils"], (function(e, t) {
   var n = {},
     r = {},
@@ -10458,18 +10458,18 @@ _global.SENTRY_RELEASE = {
         }, m.f = {}, m.e = e => Promise.all(Object.keys(m.f).reduce(((t, n) => (m.f[n](e, t), t)), [])), m.u = e => "js/" + {
           42: "886ef261e601095b9ee6a96ffdaf7d44",
           61: "4badf4f19163415b16d3eec26bdf7b75",
-          148: "50bde2c9251f7b8883f688b5bb4f8f0c",
-          192: "438594c32ca32de6a69aaedc6ba09b59",
-          216: "3d2a72499fddfdb2b6b0334ded86cb91",
-          280: "96995db55c05a8f8f8ec4b8b7c428ee8",
-          384: "009a9c9baf012e7244f99c14933fb6b1",
-          432: "68be9e6d8f61e784ce58668eb30a26ba",
-          472: "c3f7b2e3a005b82facf7c6791922795b",
-          648: "0d63c08c8c2d0aeb10fc724cdd169672",
-          660: "152ba5633722a449fa9251f99e802bb8",
+          148: "2ae49c911f58ded914e583e4996825b9",
+          192: "003f0735f22380c4452325b2f12729e4",
+          216: "cbba123089aadf77aeaa3043acce0229",
+          280: "f51607dc29703a94158d3329c65f8d9e",
+          384: "2bdc279556ced463e01cd43d51f47176",
+          432: "49785ce93f35f246b107fe7742bd9590",
+          472: "21a9aa290e0e7c3836323c9327b4d980",
+          648: "876094dc61b768d1872981f84801bd3f",
+          660: "3e5cde08c1fc9b691005b660a3b60b74",
           896: "93b143b8353f70fb56309e0dd82f2bbb",
-          907: "840df2767bfcafdd7e1351239ad6d517",
-          912: "2d12bc3eaebc6e612a2ac64326fc4488"
+          907: "14ae53f2b0a9f686d3e7fbf3b142c555",
+          912: "89add074f49da920a2ab8c92ef3f6c98"
         } [e] + ".js", m.miniCssF = e => "css/" + {
           148: "a126229ede95b503bfddbd53efcedae3",
           216: "ee924a616e7c08eaf866b869edced6c3",

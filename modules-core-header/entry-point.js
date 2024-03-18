@@ -2,18 +2,18 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "70869532-2fb4-4852-9fd6-df44509d8077", e._sentryDebugIdIdentifier = "sentry-dbid-70869532-2fb4-4852-9fd6-df44509d8077")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "24e2a74d-05c8-4754-a15c-f13cc0347267", e._sentryDebugIdIdentifier = "sentry-dbid-24e2a74d-05c8-4754-a15c-f13cc0347267")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "9e0f348dc2ade82ef557806d58f5a6f2792dae49",
+  release: "7434858002db60462282401ab192924e3d1a0a27",
   packageName: "@rockstargames/modules-core-header",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "9e0f348dc2ade82ef557806d58f5a6f2792dae49"
+  id: "7434858002db60462282401ab192924e3d1a0a27"
 }, System.register([], (function(e, t) {
   return {
     execute: function() {
@@ -18068,31 +18068,31 @@ _global.SENTRY_RELEASE = {
             get: t[n]
           })
         }, i.f = {}, i.e = e => Promise.all(Object.keys(i.f).reduce(((t, n) => (i.f[n](e, t), t)), [])), i.u = e => "js/" + {
-          20: "95a0c5baca4843df11e8880e585231cc",
-          72: "642c7fed9f8fb2799beeb06a35320be6",
+          20: "3022943792451e5b6c08fb63b452c1dd",
+          72: "35d53064391c957f46c1330148b8a413",
           80: "fe06d617a0a64aa3659c684ca441b2ea",
-          136: "e2da08cb7ed80864d64d2c46c4218159",
-          272: "faba90ede06b60675e852de3ee609289",
-          280: "dc5f05e7d78677d0ce23ff1e88b79ce8",
+          136: "76c1287ac05c5317e3cbc91770bdb59a",
+          272: "21ebe03ebd28a21147ea2591b83f707e",
+          280: "44528336512caf7c21cbf0ee118f7e2c",
           320: "e9ff026a0fa0149766f3806ac5b5a86f",
-          356: "8b9388b0d1e4137fd83b239e0ad76ba7",
-          436: "4786c471724c6d2845338469e8a75f44",
-          492: "7a932089a57cdf697cf28b26ef5c718e",
-          532: "6b6b99fe878c049c5d043560e10935cd",
-          648: "632b46a214377d009ca02b88865bdb54",
-          656: "d2c16c24b9fd01317d25d38be7a81299",
-          660: "1112aafdee6565381f3db4438130f4ca",
-          676: "1f369e13b2a52d5f39aa57a3936d3129",
-          692: "d1a85e96d2746c2131bd57684d97c086",
-          728: "64f76bb6ca5f24117a87d9c514eb70ca",
-          756: "3387075310b736ffdc410464ff0935e9",
-          800: "955468bf96648d8fd7648243b1b1d219",
-          856: "d7137db20f8262aa00faa0d3057978a5",
-          892: "5ad650b136b1db4f831c735d71f3cdf5",
-          907: "151ff885af671cdc6405180e22cd454e",
-          912: "8eee5e0d8272628a53a5bdf785fff184",
-          923: "571ce1eb98a3971426f7b3bc572a80d4"
-        } [e] + ".js", i.miniCssF = e => "css/033abf37aa979e8528a3e956e8c33d76.css", i.g = function() {
+          356: "85e22f1f8b63a20b5b5b75f5887b1717",
+          436: "9c053067e59ca4baafcdc3cc06699cd8",
+          492: "b2697137de9d509c3d76f5e8b30f1f15",
+          532: "12126f3a4dab7fc07acd7d8cb94ab5c2",
+          648: "6d2ff3915f95c634cdd735d4300d5db1",
+          656: "213406944368c4f9511a767282a430bf",
+          660: "a44ea26b7c7d6672d7007d1e5899c6d5",
+          676: "f5f083cb36f6afd73243b8f33e1493a0",
+          692: "f8710a48e93b3c955893a8fb74b9f5d8",
+          728: "c6d46aa9f4b330c5b7b6b2741c7c9463",
+          756: "ee76730becc7734b45d113eba3742c2b",
+          800: "316d87d3158b7ae8221f2de44f9b2626",
+          856: "68b8490b736ff844a9f9431f1bc556be",
+          892: "39567fad04a427fba4bf32f6af8fe815",
+          907: "5ba64594daff881eb1b3cb270f79f290",
+          912: "db98f0d8b093a6e962f4ad4ace3906bf",
+          923: "734359b705d48fc140e26bb8a72e85c0"
+        } [e] + ".js", i.miniCssF = e => "css/5767e9a77b7f443edba3f65ff5817997.css", i.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
             return this || new Function("return this")()

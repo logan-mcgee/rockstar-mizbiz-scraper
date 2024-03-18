@@ -2,18 +2,18 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "79eb5b4a-9bbe-44c3-b6df-c0b7d9a1bfcf", e._sentryDebugIdIdentifier = "sentry-dbid-79eb5b4a-9bbe-44c3-b6df-c0b7d9a1bfcf")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "e634f204-e82d-4449-8798-57d502acdcce", e._sentryDebugIdIdentifier = "sentry-dbid-e634f204-e82d-4449-8798-57d502acdcce")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "43971e0f99ea7c6c89ef0007f1e57d35945eb542",
+  release: "7434858002db60462282401ab192924e3d1a0a27",
   packageName: "@rockstargames/sites-red-dead-online",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "43971e0f99ea7c6c89ef0007f1e57d35945eb542"
+  id: "7434858002db60462282401ab192924e3d1a0a27"
 }, System.register(["@rockstargames/components", "@rockstargames/graph-client", "@rockstargames/modules-core-feedback", "@rockstargames/modules-core-newswire-article", "@rockstargames/modules-core-videoplayer", "@rockstargames/utils"], (function(e, t) {
   var r = {},
     n = {},
@@ -4023,11 +4023,11 @@ _global.SENTRY_RELEASE = {
           })
         }, h.f = {}, h.e = e => Promise.all(Object.keys(h.f).reduce(((t, r) => (h.f[r](e, t), t)), [])), h.u = e => "js/" + {
           61: "a8fd763b6e67c1fcdaa02a1a167ac77e",
-          280: "3d75b147ae2904175e798b26785f805d",
-          384: "ca4aa3d958bd4578314ff613ef4dc6d6",
-          660: "9d140d52ad467deebbc6accf00bca08e",
-          760: "a7f9088245b9238d7c203777da5def87",
-          907: "f04096bed1c9e3a530c6f869f5eb00de"
+          280: "35eb24a532a6e35b074d152ad60d85ab",
+          384: "bf5b37f216059268a3255aba274c2270",
+          660: "10487b7d9b7890a33f5a228aebd3b8e6",
+          760: "7a952e7f2b1940b05a7473b65e90dea4",
+          907: "a5a1d65a16007caab16d117b480ae579"
         } [e] + ".js", h.miniCssF = e => "css/0831e522a013bfe76ab5ceafd711c368.css", h.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
