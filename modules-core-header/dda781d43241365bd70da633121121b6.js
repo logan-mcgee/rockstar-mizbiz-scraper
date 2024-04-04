@@ -7,41 +7,41 @@
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "692b6956abd6177da3ac6da14c81527e5159ed6d",
+  release: "90b9af281bd1b5c2955354a97f6fab1985234888",
   packageName: "@rockstargames/modules-core-header",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "692b6956abd6177da3ac6da14c81527e5159ed6d"
+  id: "90b9af281bd1b5c2955354a97f6fab1985234888"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [276], {
     85276: (e, a, o) => {
       o.r(a), o.d(a, {
         default: () => l
       });
-      var d = o(51664),
-        n = o(98584),
-        t = o(95240);
+      var n = o(51664),
+        t = o(98584),
+        d = o(95240);
       const l = e => {
         let {
           basename: a,
           children: o,
           history: l
         } = e;
-        const [s, r] = (0, d.useState)({
+        const [f, s] = (0, n.useState)({
           action: l.action,
           location: l.location
         });
-        return (0, d.useLayoutEffect)((() => l.listen(((e, a) => {
-          r({
+        return (0, n.useLayoutEffect)((() => l.listen(((e, a) => {
+          s({
             location: e,
             action: a
           })
-        }))), [l]), (0, t.jsx)(n.Router, {
+        }))), [l]), (0, d.jsx)(t.Router, {
           basename: a,
-          location: s.location,
-          navigationType: s.action,
+          location: f.location,
+          navigationType: f.action,
           navigator: l,
           children: o
         })
@@ -49,4 +49,4 @@ _global.SENTRY_RELEASE = {
     }
   }
 ]);
-//# sourceMappingURL=3f5b284c7cc1aa8ac02eec5fca233e3a.js.map
+//# sourceMappingURL=dda781d43241365bd70da633121121b6.js.map

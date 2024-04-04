@@ -7,13 +7,13 @@
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "692b6956abd6177da3ac6da14c81527e5159ed6d",
+  release: "90b9af281bd1b5c2955354a97f6fab1985234888",
   packageName: "@rockstargames/modules-core-header",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "692b6956abd6177da3ac6da14c81527e5159ed6d"
+  id: "90b9af281bd1b5c2955354a97f6fab1985234888"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [940], {
     19940: (n, e, t) => {
@@ -104,9 +104,9 @@ _global.SENTRY_RELEASE = {
           v = p.forceRefresh,
           g = void 0 !== v && v,
           y = p.getUserConfirmation,
-          m = void 0 === y ? u : y,
-          b = p.keyLength,
-          k = void 0 === b ? 6 : b,
+          b = void 0 === y ? u : y,
+          m = p.keyLength,
+          k = void 0 === m ? 6 : m,
           _ = n.basename ? function(n) {
             return "/" === n.charAt(n.length - 1) ? n.slice(0, -1) : n
           }("/" === (t = n.basename).charAt(0) ? t : "/" + t) : "";
@@ -177,7 +177,7 @@ _global.SENTRY_RELEASE = {
         var S = !1;
 
         function C(n) {
-          S ? (S = !1, P()) : L.confirmTransitionTo(n, "POP", m, (function(e) {
+          S ? (S = !1, P()) : L.confirmTransitionTo(n, "POP", b, (function(e) {
             e ? P({
               action: "POP",
               location: n
@@ -220,7 +220,7 @@ _global.SENTRY_RELEASE = {
             push: function(n, e) {
               var t = "PUSH",
                 a = s(n, e, E(), B.location);
-              L.confirmTransitionTo(a, t, m, (function(n) {
+              L.confirmTransitionTo(a, t, b, (function(n) {
                 if (n) {
                   var e = U(a),
                     i = a.key,
@@ -245,7 +245,7 @@ _global.SENTRY_RELEASE = {
             replace: function(n, e) {
               var t = "REPLACE",
                 a = s(n, e, E(), B.location);
-              L.confirmTransitionTo(a, t, m, (function(n) {
+              L.confirmTransitionTo(a, t, b, (function(n) {
                 if (n) {
                   var e = U(a),
                     i = a.key,
@@ -293,4 +293,4 @@ _global.SENTRY_RELEASE = {
     }
   }
 ]);
-//# sourceMappingURL=cc990be0c0ac3d160e86cc56130c0944.js.map
+//# sourceMappingURL=d30298770056705ea6fd94363314c51d.js.map

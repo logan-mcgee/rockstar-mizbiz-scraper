@@ -1,22 +1,22 @@
-/*! For license information please see 1a963c4539debe810e4d65c0d28053e2.js.LICENSE.txt */ ! function() {
+/*! For license information please see fff039a2c9468a2ec4cc4acdbefe790c.js.LICENSE.txt */ ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       n = (new Error).stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "7fb6e77f-bd7e-4413-9303-651c127a41b3", e._sentryDebugIdIdentifier = "sentry-dbid-7fb6e77f-bd7e-4413-9303-651c127a41b3")
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "9c8df685-2d16-45bd-99e0-6b667ce0fee3", e._sentryDebugIdIdentifier = "sentry-dbid-9c8df685-2d16-45bd-99e0-6b667ce0fee3")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "692b6956abd6177da3ac6da14c81527e5159ed6d",
+  release: "90b9af281bd1b5c2955354a97f6fab1985234888",
   packageName: "@rockstargames/modules-core-header",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "692b6956abd6177da3ac6da14c81527e5159ed6d"
+  id: "90b9af281bd1b5c2955354a97f6fab1985234888"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
-  [848], {
-    31824: (e, n, t) => {
+  [716], {
+    75668: (e, n, t) => {
       var r = t(51664),
         l = t(95496);
 
@@ -6169,14 +6169,14 @@ _global.SENTRY_RELEASE = {
         return ec(e, n, t, !1, r)
       }, n.version = "18.2.0-next-9e3b772b8-20220608"
     },
-    30848: (e, n, t) => {
+    63716: (e, n, t) => {
       ! function e() {
         if ("undefined" != typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" == typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE) try {
           __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE(e)
         } catch (e) {
           console.error(e)
         }
-      }(), e.exports = t(31824)
+      }(), e.exports = t(75668)
     },
     96068: (e, n) => {
       function t(e, n) {
@@ -6420,4 +6420,4 @@ _global.SENTRY_RELEASE = {
     }
   }
 ]);
-//# sourceMappingURL=1a963c4539debe810e4d65c0d28053e2.js.map
+//# sourceMappingURL=fff039a2c9468a2ec4cc4acdbefe790c.js.map

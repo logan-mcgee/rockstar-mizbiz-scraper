@@ -7,13 +7,13 @@
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "692b6956abd6177da3ac6da14c81527e5159ed6d",
+  release: "90b9af281bd1b5c2955354a97f6fab1985234888",
   packageName: "@rockstargames/modules-core-header",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "692b6956abd6177da3ac6da14c81527e5159ed6d"
+  id: "90b9af281bd1b5c2955354a97f6fab1985234888"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [924, 304], {
     8304: (e, o, s) => {
@@ -25,8 +25,8 @@ _global.SENTRY_RELEASE = {
         createIntl: () => n.y,
         defineMessages: () => a.Os,
         englishLocale: () => u.u,
-        getLocale: () => d.c,
-        localeCookieHandler: () => c.c,
+        getLocale: () => c.c,
+        localeCookieHandler: () => d.c,
         locales: () => u.c,
         splitLocale: () => b.c,
         useIntl: () => l.c,
@@ -38,8 +38,8 @@ _global.SENTRY_RELEASE = {
         l = s(95688),
         i = s(11676),
         r = s(32748),
-        d = s(48787),
-        c = s(36320),
+        c = s(48787),
+        d = s(36320),
         u = s(41285),
         b = s(68068),
         m = s(71388),
@@ -51,7 +51,7 @@ _global.SENTRY_RELEASE = {
       "use strict";
       s.d(o, {
         C_: () => r,
-        eO: () => d
+        eO: () => c
       });
       var t = s(51664),
         n = s(83852),
@@ -65,18 +65,18 @@ _global.SENTRY_RELEASE = {
           children: a
         } = e;
         const r = (0, t.useMemo)((() => (0, l.c)(s)), [s]),
-          d = (0, t.useMemo)((() => function(e, o) {
+          c = (0, t.useMemo)((() => function(e, o) {
             return e?.[o] ?? {}
           }(o, r[1])), [s, o]);
         return (0, i.jsx)(n.c, {
-          messages: d,
+          messages: c,
           locale: r[0],
           defaultLocale: "en",
           children: a
         }, r[0])
       };
 
-      function d(e, o) {
+      function c(e, o) {
         return s => {
           const [{
             iso: t
@@ -128,9 +128,9 @@ _global.SENTRY_RELEASE = {
         })(e), l = (e => {
           const o = e.search.substring(1).split("&").find((e => e.startsWith("lang")));
           return o?.split("=")[1]
-        })(e), i = a.u, [r, d] = (0, n.c)(`rockstarweb_lang.${o.cookieIdentifier}`, s ?? void 0);
-        let c = i;
-        return c = o.currentSite?.site === t.U.www ? a.c.find((e => e.subdomaincom === l)) || a.c.find((e => e.subdomaincom === s)) || i : a.c.find((e => e.iso === r)) || i, [c, d]
+        })(e), i = a.u, [r, c] = (0, n.c)(`rockstarweb_lang.${o.cookieIdentifier}`, s ?? void 0);
+        let d = i;
+        return d = o.currentSite?.site === t.U.www ? a.c.find((e => e.subdomaincom === l)) || a.c.find((e => e.subdomaincom === s)) || i : a.c.find((e => e.iso === r)) || i, [d, c]
       }
     },
     36320: (e, o, s) => {
@@ -258,4 +258,4 @@ _global.SENTRY_RELEASE = {
     }
   }
 ]);
-//# sourceMappingURL=cb424ed2f57eafb2fc5df781a6a84697.js.map
+//# sourceMappingURL=eed0c69eb64f9a0fe095741cef45ea69.js.map

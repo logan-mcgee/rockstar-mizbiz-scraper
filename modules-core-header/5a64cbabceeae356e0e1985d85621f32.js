@@ -7,13 +7,13 @@
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "692b6956abd6177da3ac6da14c81527e5159ed6d",
+  release: "90b9af281bd1b5c2955354a97f6fab1985234888",
   packageName: "@rockstargames/modules-core-header",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "692b6956abd6177da3ac6da14c81527e5159ed6d"
+  id: "90b9af281bd1b5c2955354a97f6fab1985234888"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [336], {
     53592: (e, t, n) => {
@@ -77,8 +77,8 @@ _global.SENTRY_RELEASE = {
         a = n(51664),
         s = n(4914),
         i = n(49996),
-        c = n(48516),
-        l = n(33544),
+        l = n(48516),
+        c = n(33544),
         d = n(73660),
         u = n.n(d),
         p = n(55806);
@@ -97,9 +97,9 @@ _global.SENTRY_RELEASE = {
           {
             data: s,
             loading: i,
-            error: c,
+            error: l,
             ...d
-          } = (0, l.U)(e, o);
+          } = (0, c.U)(e, o);
         return (0, a.useEffect)((() => {
           if (s && o.setTitleDataPath) {
             const e = u().get(s, o.setTitleDataPath) ?? null;
@@ -117,10 +117,10 @@ _global.SENTRY_RELEASE = {
             loading: !1
           })
         })), [i]), (0, a.useEffect)((() => {
-          if (o.autoSetError && c) throw new Error(String(c))
-        }), [c]), {
+          if (o.autoSetError && l) throw new Error(String(l))
+        }), [l]), {
           loading: i,
-          error: c,
+          error: l,
           data: s,
           ...d
         }
@@ -148,7 +148,7 @@ _global.SENTRY_RELEASE = {
             children: t
           } = e;
           return (0, g.jsx)(b.Provider, {
-            value: c.c,
+            value: l.c,
             children: (0, g.jsx)(h.Provider, {
               value: w,
               children: t
@@ -228,9 +228,9 @@ _global.SENTRY_RELEASE = {
                 }),
                 i = await s.json(),
                 {
-                  tokenExpiresTime: c = null
+                  tokenExpiresTime: l = null
                 } = i;
-              return null !== c && o?.(c), n(i.bearerToken ?? null), i
+              return null !== l && o?.(l), n(i.bearerToken ?? null), i
             } catch (e) {
               return n(!1), !1
             }
@@ -264,7 +264,7 @@ _global.SENTRY_RELEASE = {
               [r] = (0, a.useState)(new s.Y({
                 typePolicies: n
               })),
-              c = q.concat((e => {
+              l = q.concat((e => {
                 let {
                   token: t
                 } = e;
@@ -291,7 +291,7 @@ _global.SENTRY_RELEASE = {
               })));
             return new i.u({
               cache: r,
-              link: c
+              link: l
             })
           })({
             graphOptions: n,
@@ -368,8 +368,8 @@ _global.SENTRY_RELEASE = {
           videos: a?.cdn?.videos
         }), document.currentScript),
         i = s?.src ? new URL(s.src).origin : "";
-      let c = document.getElementsByTagName("base")[0]?.getAttribute("href") ?? `${i}/`;
-      c.endsWith("/") || (c = `${c}/`), (0, o.UT)(c)
+      let l = document.getElementsByTagName("base")[0]?.getAttribute("href") ?? `${i}/`;
+      l.endsWith("/") || (l = `${l}/`), (0, o.UT)(l)
     },
     28152: (e, t, n) => {
       n.d(t, {
@@ -380,18 +380,18 @@ _global.SENTRY_RELEASE = {
         a = n.n(r),
         s = n(73660),
         i = n.n(s),
-        c = n(42991),
-        l = n(76772);
+        l = n(42991),
+        c = n(76772);
       const {
         apiHost: d
-      } = (0, c.c)(), u = (0, l._)(document.documentElement.lang), p = {}, w = async function(e) {
+      } = (0, l.c)(), u = (0, c._)(document.documentElement.lang), p = {}, w = async function(e) {
         let {
           fetchOptions: t = {},
           finalFetchOptions: n = {},
           query: r = null,
           pingBearer: s,
-          requireBearerToken: c = !0,
-          useCache: l = !0
+          requireBearerToken: l = !0,
+          useCache: c = !0
         } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
         try {
           const {
@@ -405,7 +405,7 @@ _global.SENTRY_RELEASE = {
             }
           };
           let h = `${d}/${e}`;
-          if (null === r || i().isEmpty(r) || (h += `?${new URLSearchParams(r)}`), !w && c) return null;
+          if (null === r || i().isEmpty(r) || (h += `?${new URLSearchParams(r)}`), !w && l) return null;
           w && (g.Authorization = `Bearer ${w}`);
           const k = {
               headers: g
@@ -416,7 +416,7 @@ _global.SENTRY_RELEASE = {
               url: h
             }),
             b = await (0, o.MB)(m);
-          if (l) {
+          if (c) {
             if (p[b]?.response) return p[b].response;
             if (p[b]?.loading) return {
               error: null,
@@ -428,7 +428,7 @@ _global.SENTRY_RELEASE = {
           }
           const v = await fetch(h, f),
             y = await v.json();
-          return l && (p[b] = {
+          return c && (p[b] = {
             response: y,
             loading: !1
           }), y
@@ -450,14 +450,14 @@ _global.SENTRY_RELEASE = {
             clientId: a,
             graphEnv: s,
             scHost: i,
-            hostname: c,
-            cdnBase: l,
+            hostname: l,
+            cdnBase: c,
             key: d,
             marketingAuthTLD: u
           } = e;
           const p = o?.apiHost ?? t,
             w = o?.authHost ?? n,
-            g = o?.cdnBase ?? l,
+            g = o?.cdnBase ?? c,
             h = o?.clientId ?? a,
             k = r?.marketingAuthTLD ?? u,
             f = o?.scHost ?? i;
@@ -465,7 +465,7 @@ _global.SENTRY_RELEASE = {
             apiHost: `https://${p}.rockstargames.com`,
             graphEnv: o?.graphEnv ?? s,
             host: f,
-            hostname: c,
+            hostname: l,
             cdnBase: g,
             key: d,
             clientId: h,
@@ -531,7 +531,7 @@ _global.SENTRY_RELEASE = {
       n.d(t, {
         y_: () => a,
         kJ: () => i,
-        kj: () => l
+        kj: () => c
       });
       var o = n(61076),
         r = n(55806);
@@ -555,19 +555,19 @@ _global.SENTRY_RELEASE = {
         }), [e]), [t, a]
       };
       n(57013), n(28152);
-      const c = "__RS_CUSTOM_EVENTS__";
-      window[c] || (window[c] = {});
-      const l = () => {
+      const l = "__RS_CUSTOM_EVENTS__";
+      window[l] || (window[l] = {});
+      const c = () => {
         const e = (e, t) => {
           if (!e) throw Error("Event name must be provided to work with custom events");
           const n = (e => `rsCustomEvent:${e}`)(e),
             o = new CustomEvent(n, {
               detail: t
             });
-          window[c][n] || (window[c][n] = {
+          window[l][n] || (window[l][n] = {
             eventQueue: [],
             subscribers: []
-          }), window[c][n].eventQueue.push(o), window[c][n].subscribers.forEach((e => {
+          }), window[l][n].eventQueue.push(o), window[l][n].subscribers.forEach((e => {
             e(o.detail)
           }))
         };
@@ -591,4 +591,4 @@ _global.SENTRY_RELEASE = {
     }
   }
 ]);
-//# sourceMappingURL=d239757822ab5bc4b1eb9d0ed0cf2a73.js.map
+//# sourceMappingURL=5a64cbabceeae356e0e1985d85621f32.js.map
