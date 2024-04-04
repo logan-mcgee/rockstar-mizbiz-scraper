@@ -68,7 +68,7 @@ _global.SENTRY_RELEASE = {
     }],
     execute: function() {
       e((() => {
-        var e, l, f, c, u = {
+        var e, f, l, c, u = {
             54364: (e, t, r) => {
               (0, r(47284).G)(1)
             },
@@ -167,21 +167,21 @@ _global.SENTRY_RELEASE = {
           })
         }, h.f = {}, h.e = e => Promise.all(Object.keys(h.f).reduce(((t, r) => (h.f[r](e, t), t)), [])), h.u = e => "js/" + {
           61: "a8fd763b6e67c1fcdaa02a1a167ac77e",
-          88: "11d2164ab9d9adc5193f9dab1f576259",
-          100: "32ac45b966a2adf58150965a3f6619a2",
-          240: "32407ae01afc829c6f5287872a362c4f",
-          288: "5ed55006cb81f5a8d072e4fde33ad225",
-          304: "63f89ab301c037a9813f27db483ac904",
-          408: "922f93370a19004738b6b82392cc1f00",
-          472: "086617acd871018c2df707928182b698",
-          480: "8d519c95425e61a0ace4f57a2f891398",
-          548: "b62ebf7d1d1f1765b209896c5cd10b81",
+          88: "19c615fc8d0504fb04d0573554d32f1a",
+          100: "85eff3aad274225fafb0a852897454e9",
+          240: "69fd575c6ac3ffeacc10e7525dca8b51",
+          288: "2da391c2a0388472f2e2fe5af398a961",
+          304: "17739e2778d0e0c6682600124b68d096",
+          408: "78b06a2f9c6dca2e538f48bdc2e06653",
+          472: "f4ea8eddab331a53611553033e93f2be",
+          480: "3f8299a7dae792737b26ba5c88ccfe85",
+          548: "0fc5b67d4243bf8977defac080f25f83",
           664: "8f7679e65c8d4a010368fbe0f94285d7",
-          772: "58e916b4dc10f7b9c3bd01fc9a7ec1b5",
-          832: "39659f88282f801d2a4f57236d83c39a",
-          924: "565aea8162d2215d6c2d406c75fc71d6",
+          772: "430f485f6c5d9be67fd22a0eabd0b699",
+          832: "fd3f042c2c629620232c9b9b38ab2dc6",
+          924: "fc8ef2a8d0e9dff32d9f0d461c3c211a",
           928: "90a82516e09b106d4043b31988f8d941",
-          968: "0f30a04459c0c932dfb9d197a3e9f601"
+          968: "b198b96d04bf6d040a9dd2fac779b57c"
         } [e] + ".js", h.miniCssF = e => "css/" + {
           480: "528068743757cd665a7438fa11dfa9fb",
           548: "e890f580c2c1479b4878396987f40c23"
@@ -192,19 +192,19 @@ _global.SENTRY_RELEASE = {
           } catch (e) {
             if ("object" == typeof window) return window
           }
-        }(), h.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t), e = {}, l = "@rockstargames/sites-red-dead-online:", h.l = (t, r, a, n) => {
+        }(), h.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t), e = {}, f = "@rockstargames/sites-red-dead-online:", h.l = (t, r, a, n) => {
           if (e[t]) e[t].push(r);
           else {
             var o, s;
             if (void 0 !== a)
               for (var i = document.getElementsByTagName("script"), d = 0; d < i.length; d++) {
-                var f = i[d];
-                if (f.getAttribute("src") == t || f.getAttribute("data-webpack") == l + a) {
-                  o = f;
+                var l = i[d];
+                if (l.getAttribute("src") == t || l.getAttribute("data-webpack") == f + a) {
+                  o = l;
                   break
                 }
               }
-            o || (s = !0, (o = document.createElement("script")).charset = "utf-8", o.timeout = 120, h.nc && o.setAttribute("nonce", h.nc), o.setAttribute("data-webpack", l + a), o.src = t), e[t] = [r];
+            o || (s = !0, (o = document.createElement("script")).charset = "utf-8", o.timeout = 120, h.nc && o.setAttribute("nonce", h.nc), o.setAttribute("data-webpack", f + a), o.src = t), e[t] = [r];
             var c = (r, a) => {
                 o.onerror = o.onload = null, clearTimeout(u);
                 var n = e[t];
@@ -222,7 +222,7 @@ _global.SENTRY_RELEASE = {
           }), Object.defineProperty(e, "__esModule", {
             value: !0
           })
-        }, h.nmd = e => (e.paths = [], e.children || (e.children = []), e), f = {
+        }, h.nmd = e => (e.paths = [], e.children || (e.children = []), e), l = {
           61: [3061],
           480: [1740, 28540, 42836, 45652, 73784, 95356],
           548: [29572, 67308, 84644, 91336],
@@ -243,7 +243,7 @@ _global.SENTRY_RELEASE = {
           91336: ["default", "./NewswireArticle", 25358],
           95356: ["default", "./helpers", 88428]
         }, h.f.remotes = (e, t) => {
-          h.o(f, e) && f[e].forEach((e => {
+          h.o(l, e) && l[e].forEach((e => {
             var r = h.R;
             r || (r = []);
             var a = c[e];
@@ -256,11 +256,11 @@ _global.SENTRY_RELEASE = {
                 },
                 o = (e, r, o, s, i, d) => {
                   try {
-                    var l = e(r, o);
-                    if (!l || !l.then) return i(l, s, d);
-                    var f = l.then((e => i(e, s)), n);
-                    if (!d) return f;
-                    t.push(a.p = f)
+                    var f = e(r, o);
+                    if (!f || !f.then) return i(f, s, d);
+                    var l = f.then((e => i(e, s)), n);
+                    if (!d) return l;
+                    t.push(a.p = l)
                   } catch (e) {
                     n(e)
                   }
@@ -304,15 +304,15 @@ _global.SENTRY_RELEASE = {
                     var n = h(e);
                     if (!n) return;
                     var o = e => e && e.init && e.init(h.S[r], a);
-                    if (n.then) return l.push(n.then(o, t));
+                    if (n.then) return f.push(n.then(o, t));
                     var s = o(n);
-                    if (s && s.then) return l.push(s.catch(t))
+                    if (s && s.then) return f.push(s.catch(t))
                   } catch (e) {
                     t(e)
                   }
                 },
-                l = [];
-              return "default" === r && (i("@rockstargames/components", "1.14.0", (() => Promise.all([h.e(968), h.e(664), h.e(480), h.e(928), h.e(240)]).then((() => () => h(58568))))), i("@rockstargames/locale-tools", "1.0.0", (() => Promise.all([h.e(408), h.e(664), h.e(61), h.e(924)]).then((() => () => h(8304))))), i("hammerjs", "2.0.8", (() => h.e(772).then((() => () => h(65772))))), i("react-focus-lock", "2.9.6", (() => Promise.all([h.e(472), h.e(664)]).then((() => () => h(21472))))), i("react-router-dom", "6.17.0", (() => Promise.all([h.e(88), h.e(832), h.e(664)]).then((() => () => h(84832))))), i("react-router-dom", "6.17.0", (() => Promise.all([h.e(88), h.e(288), h.e(664)]).then((() => () => h(40288))))), i("react", "18.2.0", (() => h.e(100).then((() => () => h(77100))))), d(33864), d(9344), d(57296), d(25358), d(14472), d(81128), d(88428)), l.length ? e[r] = Promise.all(l).then((() => e[r] = 1)) : e[r] = 1
+                f = [];
+              return "default" === r && (i("@rockstargames/components", "1.14.0", (() => Promise.all([h.e(968), h.e(664), h.e(480), h.e(928), h.e(240)]).then((() => () => h(58568))))), i("@rockstargames/locale-tools", "1.0.0", (() => Promise.all([h.e(408), h.e(664), h.e(61), h.e(924)]).then((() => () => h(8304))))), i("hammerjs", "2.0.8", (() => h.e(772).then((() => () => h(65772))))), i("react-focus-lock", "2.9.6", (() => Promise.all([h.e(472), h.e(664)]).then((() => () => h(21472))))), i("react-router-dom", "6.17.0", (() => Promise.all([h.e(88), h.e(832), h.e(664)]).then((() => () => h(84832))))), i("react-router-dom", "6.17.0", (() => Promise.all([h.e(88), h.e(288), h.e(664)]).then((() => () => h(40288))))), i("react", "18.2.0", (() => h.e(100).then((() => () => h(77100))))), d(33864), d(9344), d(57296), d(25358), d(14472), d(81128), d(88428)), f.length ? e[r] = Promise.all(f).then((() => e[r] = 1)) : e[r] = 1
             }
           }
         })(), (() => {
@@ -340,23 +340,23 @@ _global.SENTRY_RELEASE = {
                   o = n < 0;
                 o && (n = -n - 1);
                 for (var s = 0, i = 1, d = !0;; i++, s++) {
-                  var l, f, c = i < r.length ? (typeof r[i])[0] : "";
-                  if (s >= a.length || "o" == (f = (typeof(l = a[s]))[0])) return !d || ("u" == c ? i > n && !o : "" == c != o);
-                  if ("u" == f) {
+                  var f, l, c = i < r.length ? (typeof r[i])[0] : "";
+                  if (s >= a.length || "o" == (l = (typeof(f = a[s]))[0])) return !d || ("u" == c ? i > n && !o : "" == c != o);
+                  if ("u" == l) {
                     if (!d || "u" != c) return !1
                   } else if (d)
-                    if (c == f)
+                    if (c == l)
                       if (i <= n) {
-                        if (l != r[i]) return !1
+                        if (f != r[i]) return !1
                       } else {
-                        if (o ? l > r[i] : l < r[i]) return !1;
-                        l != r[i] && (d = !1)
+                        if (o ? f > r[i] : f < r[i]) return !1;
+                        f != r[i] && (d = !1)
                       }
                   else if ("s" != c && "n" != c) {
                     if (o || i <= n) return !1;
                     d = !1, i--
                   } else {
-                    if (i <= n || f < c != o) return !1;
+                    if (i <= n || l < c != o) return !1;
                     d = !1
                   } else "s" != c && "n" != c && (d = !1, i--)
                 }

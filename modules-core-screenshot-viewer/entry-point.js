@@ -81,9 +81,9 @@ _global.SENTRY_RELEASE = {
             get: r[t]
           })
         }, s.f = {}, s.e = e => Promise.all(Object.keys(s.f).reduce(((r, t) => (s.f[t](e, r), r)), [])), s.u = e => "js/" + {
-          100: "f3c2255dac0f032cc19fa0ac44f64111",
-          520: "d8d63e5d3ba2424ebfdd616aca0762bc",
-          624: "d2325d5601f859bbf284bc0a0c111633",
+          100: "a12a26b4afef48a7c25e7162255a8035",
+          520: "0619eba7470fcda1ed43d1cc96ad8f04",
+          624: "a9cca01d44df090fcadbe43482d7db9b",
           664: "63b09c4b04eae212e5ab4fcf2bec0f4d"
         } [e] + ".js", s.miniCssF = e => "css/8ddeaa662a389c67ab26ff2d3e176f9a.css", s.g = function() {
           if ("object" == typeof globalThis) return globalThis;
