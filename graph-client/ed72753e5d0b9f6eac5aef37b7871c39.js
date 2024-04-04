@@ -7,13 +7,13 @@
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "90b9af281bd1b5c2955354a97f6fab1985234888",
+  release: "sentry-release-id",
   packageName: "@rockstargames/graph-client",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "90b9af281bd1b5c2955354a97f6fab1985234888"
+  id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_graph_client = self.webpackChunk_rockstargames_graph_client || []).push([
   [560], {
     2560: (e, t, a) => {
@@ -39,4 +39,3 @@ _global.SENTRY_RELEASE = {
     }
   }
 ]);
-//# sourceMappingURL=ed72753e5d0b9f6eac5aef37b7871c39.js.map
