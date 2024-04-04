@@ -7,13 +7,13 @@
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "692b6956abd6177da3ac6da14c81527e5159ed6d",
+  release: "90b9af281bd1b5c2955354a97f6fab1985234888",
   packageName: "@rockstargames/sites-red-dead-online",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "692b6956abd6177da3ac6da14c81527e5159ed6d"
+  id: "90b9af281bd1b5c2955354a97f6fab1985234888"
 }, System.register(["@rockstargames/graph-client", "@rockstargames/modules-core-feedback", "@rockstargames/modules-core-newswire-article", "@rockstargames/modules-core-sc-user", "@rockstargames/modules-core-videoplayer", "@rockstargames/tina", "@rockstargames/utils"], (function(e, t) {
   var r = {},
     a = {},
@@ -68,7 +68,7 @@ _global.SENTRY_RELEASE = {
     }],
     execute: function() {
       e((() => {
-        var e, l, c, f, u = {
+        var e, l, f, c, u = {
             54364: (e, t, r) => {
               (0, r(47284).G)(1)
             },
@@ -167,21 +167,21 @@ _global.SENTRY_RELEASE = {
           })
         }, h.f = {}, h.e = e => Promise.all(Object.keys(h.f).reduce(((t, r) => (h.f[r](e, t), t)), [])), h.u = e => "js/" + {
           61: "a8fd763b6e67c1fcdaa02a1a167ac77e",
-          88: "8c58dce3c0966fa41cf73fe3841b1337",
-          100: "a237c1cbb4b03af718aa5772285971a5",
-          240: "d018072479ac709c6738d5af0cd74407",
-          288: "9eea175c6ce41e65989ed0291f3bdf15",
-          304: "4422a46f14df9ed51bf465efe4904afb",
-          408: "7948f50cea9544362e5c3a0f2bfe9685",
-          472: "37eb10e33f3cc8c6e50cb26ebe36a5e3",
-          480: "8a8f100663774811839304e8efa79875",
-          548: "0f0e9cc5f2af8104a6a8f7db19dbb9fc",
+          88: "11d2164ab9d9adc5193f9dab1f576259",
+          100: "32ac45b966a2adf58150965a3f6619a2",
+          240: "32407ae01afc829c6f5287872a362c4f",
+          288: "5ed55006cb81f5a8d072e4fde33ad225",
+          304: "63f89ab301c037a9813f27db483ac904",
+          408: "922f93370a19004738b6b82392cc1f00",
+          472: "086617acd871018c2df707928182b698",
+          480: "8d519c95425e61a0ace4f57a2f891398",
+          548: "b62ebf7d1d1f1765b209896c5cd10b81",
           664: "8f7679e65c8d4a010368fbe0f94285d7",
-          772: "0aba712ca1ab27395dc27de1638f58ad",
-          832: "1a9c33a1f688b7f5cf26db67ffd7ccd3",
-          924: "c6068f0f8e3e28d869083fca5984d733",
+          772: "58e916b4dc10f7b9c3bd01fc9a7ec1b5",
+          832: "39659f88282f801d2a4f57236d83c39a",
+          924: "565aea8162d2215d6c2d406c75fc71d6",
           928: "90a82516e09b106d4043b31988f8d941",
-          968: "30e7e70c01a4c60caa6323f9a35334a4"
+          968: "0f30a04459c0c932dfb9d197a3e9f601"
         } [e] + ".js", h.miniCssF = e => "css/" + {
           480: "528068743757cd665a7438fa11dfa9fb",
           548: "e890f580c2c1479b4878396987f40c23"
@@ -198,23 +198,23 @@ _global.SENTRY_RELEASE = {
             var o, s;
             if (void 0 !== a)
               for (var i = document.getElementsByTagName("script"), d = 0; d < i.length; d++) {
-                var c = i[d];
-                if (c.getAttribute("src") == t || c.getAttribute("data-webpack") == l + a) {
-                  o = c;
+                var f = i[d];
+                if (f.getAttribute("src") == t || f.getAttribute("data-webpack") == l + a) {
+                  o = f;
                   break
                 }
               }
             o || (s = !0, (o = document.createElement("script")).charset = "utf-8", o.timeout = 120, h.nc && o.setAttribute("nonce", h.nc), o.setAttribute("data-webpack", l + a), o.src = t), e[t] = [r];
-            var f = (r, a) => {
+            var c = (r, a) => {
                 o.onerror = o.onload = null, clearTimeout(u);
                 var n = e[t];
                 if (delete e[t], o.parentNode && o.parentNode.removeChild(o), n && n.forEach((e => e(a))), r) return r(a)
               },
-              u = setTimeout(f.bind(null, void 0, {
+              u = setTimeout(c.bind(null, void 0, {
                 type: "timeout",
                 target: o
               }), 12e4);
-            o.onerror = f.bind(null, o.onerror), o.onload = f.bind(null, o.onload), s && document.head.appendChild(o)
+            o.onerror = c.bind(null, o.onerror), o.onload = c.bind(null, o.onload), s && document.head.appendChild(o)
           }
         }, h.r = e => {
           "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
@@ -222,12 +222,12 @@ _global.SENTRY_RELEASE = {
           }), Object.defineProperty(e, "__esModule", {
             value: !0
           })
-        }, h.nmd = e => (e.paths = [], e.children || (e.children = []), e), c = {
+        }, h.nmd = e => (e.paths = [], e.children || (e.children = []), e), f = {
           61: [3061],
           480: [1740, 28540, 42836, 45652, 73784, 95356],
           548: [29572, 67308, 84644, 91336],
           928: [1532, 33052, 45792]
-        }, f = {
+        }, c = {
           1532: ["default", "./operations/queries", 33864],
           1740: ["default", "./index", 88428],
           3061: ["default", "./hooks", 9344],
@@ -243,10 +243,10 @@ _global.SENTRY_RELEASE = {
           91336: ["default", "./NewswireArticle", 25358],
           95356: ["default", "./helpers", 88428]
         }, h.f.remotes = (e, t) => {
-          h.o(c, e) && c[e].forEach((e => {
+          h.o(f, e) && f[e].forEach((e => {
             var r = h.R;
             r || (r = []);
-            var a = f[e];
+            var a = c[e];
             if (!(r.indexOf(a) >= 0)) {
               if (r.push(a), a.p) return t.push(a.p);
               var n = t => {
@@ -258,9 +258,9 @@ _global.SENTRY_RELEASE = {
                   try {
                     var l = e(r, o);
                     if (!l || !l.then) return i(l, s, d);
-                    var c = l.then((e => i(e, s)), n);
-                    if (!d) return c;
-                    t.push(a.p = c)
+                    var f = l.then((e => i(e, s)), n);
+                    if (!d) return f;
+                    t.push(a.p = f)
                   } catch (e) {
                     n(e)
                   }
@@ -340,25 +340,25 @@ _global.SENTRY_RELEASE = {
                   o = n < 0;
                 o && (n = -n - 1);
                 for (var s = 0, i = 1, d = !0;; i++, s++) {
-                  var l, c, f = i < r.length ? (typeof r[i])[0] : "";
-                  if (s >= a.length || "o" == (c = (typeof(l = a[s]))[0])) return !d || ("u" == f ? i > n && !o : "" == f != o);
-                  if ("u" == c) {
-                    if (!d || "u" != f) return !1
+                  var l, f, c = i < r.length ? (typeof r[i])[0] : "";
+                  if (s >= a.length || "o" == (f = (typeof(l = a[s]))[0])) return !d || ("u" == c ? i > n && !o : "" == c != o);
+                  if ("u" == f) {
+                    if (!d || "u" != c) return !1
                   } else if (d)
-                    if (f == c)
+                    if (c == f)
                       if (i <= n) {
                         if (l != r[i]) return !1
                       } else {
                         if (o ? l > r[i] : l < r[i]) return !1;
                         l != r[i] && (d = !1)
                       }
-                  else if ("s" != f && "n" != f) {
+                  else if ("s" != c && "n" != c) {
                     if (o || i <= n) return !1;
                     d = !1, i--
                   } else {
-                    if (i <= n || c < f != o) return !1;
+                    if (i <= n || f < c != o) return !1;
                     d = !1
-                  } else "s" != f && "n" != f && (d = !1, i--)
+                  } else "s" != c && "n" != c && (d = !1, i--)
                 }
               }
               var u = [],

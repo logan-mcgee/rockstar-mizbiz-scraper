@@ -7,13 +7,13 @@
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "692b6956abd6177da3ac6da14c81527e5159ed6d",
+  release: "90b9af281bd1b5c2955354a97f6fab1985234888",
   packageName: "@rockstargames/modules-core-newswire-article",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "692b6956abd6177da3ac6da14c81527e5159ed6d"
+  id: "90b9af281bd1b5c2955354a97f6fab1985234888"
 }, System.register(["@rockstargames/graph-client", "@rockstargames/modules-core-card", "@rockstargames/modules-core-carousel", "@rockstargames/modules-core-engagement", "@rockstargames/modules-core-gif-viewer", "@rockstargames/modules-core-group-of-items", "@rockstargames/modules-core-sc-user", "@rockstargames/modules-core-videoplayer", "@rockstargames/modules-sc-ugc-spotlight", "@rockstargames/tina", "@rockstargames/utils"], (function(e, t) {
   var r = {},
     a = {},
@@ -216,29 +216,29 @@ _global.SENTRY_RELEASE = {
           })
         }, y.f = {}, y.e = e => Promise.all(Object.keys(y.f).reduce(((t, r) => (y.f[r](e, t), t)), [])), y.u = e => "js/" + {
           16: "36ff3763713ec97535dd84a3d09c7b29",
-          52: "4a603d041188e91473db0f866d1b1881",
-          68: "e782d8e142d6ca9865f51e2a442d213f",
-          100: "ffeefe12d41e31e21fc2c2ebc62faa50",
-          184: "28da943b7788862f1adccc5c8a88a41b",
-          216: "2e17ace7f1ffca515ceec1ff5003b517",
-          240: "ef21c0bfcd206b101e4fb8b6a1c75f38",
-          312: "97c4c18161908ef5a0f417f2a1f46c27",
+          52: "6d82e21a0dd97f33b3cb86af6784b2b0",
+          68: "5f812ed1f849b176f7a1d9aadccd32a9",
+          100: "d052c17fb853da4f3a5e8bba0134e203",
+          184: "cd9257c682f0fccdc54346cfaf1f5e35",
+          216: "cf3206694ae86203b513d8fb9218185a",
+          240: "a150c95311bc69f542f465d63decb4e8",
+          312: "b2ff3ed90d45573402cba859bf515b6d",
           368: "4cc6880ce8c0affd206d3dc8caed0937",
-          396: "23f003ea6934aceb5762936f6df45fba",
-          404: "097288d2a71c9eab1f1caf999faf7dee",
+          396: "b747f8175622cc12d93b47c4751b073e",
+          404: "f46aea7868e62feaa5d9705d26601a9a",
           436: "33be23bdd6e635f45c62157b0a1e064f",
           556: "1e3c8d3117cc76fb780db8e27ac30372",
-          560: "64ddd3b524332667d35ad8e5bacb0c85",
-          660: "31ea01e2819d27551b5d58d2a3ac7a72",
+          560: "e41ed565068c37df46af7593e6f84156",
+          660: "901bd172e7b2683c656bd03040a750ab",
           664: "4a6c87897c87f6d0707052f2e5a9b65e",
-          680: "c460a0b042cdf9feb3dc2db6336684cd",
-          716: "fb492f8d63f7ff7cb3e246477c72ce87",
-          718: "08d6fa0dc36ac4471a36163a162f05dd",
+          680: "d31240825a98f38735d4da10570f577c",
+          716: "5566a9b3a461f2200bdc76f7e5739588",
+          718: "becf19c09b072c2090d25ccd093e1b55",
           736: "2d274c50a536db863674cc4e8ed88362",
           784: "e0a94b9136c499a93e48ed7d15a22558",
           812: "d2876cf67293d9e6c22988e4e4ec59df",
-          856: "37900619f3812a01396071ef44409901",
-          928: "3f2d0f0db3f4ded950b23e7477d275d7"
+          856: "4c4980618eaeedc4c8f670f359ecb9e4",
+          928: "53d124f1e462935f6103080968e1e785"
         } [e] + ".js", y.miniCssF = e => "css/" + {
           16: "39ff1dafce4f00ed5e4e8d89a4e075ae",
           52: "b7f681dcfa8846ed4637f053ed64ae73",

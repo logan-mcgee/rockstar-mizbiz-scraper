@@ -7,13 +7,13 @@
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "692b6956abd6177da3ac6da14c81527e5159ed6d",
+  release: "90b9af281bd1b5c2955354a97f6fab1985234888",
   packageName: "@rockstargames/sites-red-dead-redemption-2",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "692b6956abd6177da3ac6da14c81527e5159ed6d"
+  id: "90b9af281bd1b5c2955354a97f6fab1985234888"
 }, System.register(["@rockstargames/graph-client", "@rockstargames/modules-core-agegate", "@rockstargames/modules-core-sc-user", "@rockstargames/modules-core-videoplayer", "@rockstargames/tina", "@rockstargames/utils"], (function(e, t) {
   var r = {},
     a = {},
@@ -155,18 +155,18 @@ _global.SENTRY_RELEASE = {
             get: t[r]
           })
         }, p.f = {}, p.e = e => Promise.all(Object.keys(p.f).reduce(((t, r) => (p.f[r](e, t), t)), [])), p.u = e => "js/" + {
-          100: "4a3e94f528a282f0a7fb92f1c5a15901",
+          100: "18536dfa301d613b0c86364a781a67ae",
           152: "748e37f68803c4a30250826ee0b2a3af",
-          168: "6e4449148bc68b163ca4d1f571d424e5",
-          376: "175a3e9e91f59021fe3286825980d56b",
-          584: "55ba28f3cc8d760b34612b41aa9aeacd",
-          612: "1c949e75d63b5af9dfbccae977631a25",
+          168: "64d2f5688838ebabf1b5911899dfc223",
+          376: "1950d9c89f843d81a26e96d63dbeb333",
+          584: "d5289fb3e65aec6275ffbabf1111e5bb",
+          612: "539456273c5d5cc89bce3bfe7e4a7104",
           664: "6b71c9f09c4ebbc9b2c7e075ed522379",
-          668: "3b000581ba2a9b0a26a2ddd0cf8f732b",
-          784: "f7b292d883f003d710a1e41777357674",
-          818: "dde477f311c043ea56b77ac8e724aa7d",
-          860: "96a9aa6f7c019bbe6cb010b9a950e9d1",
-          872: "0a1b4ad7075562b515983ef87bc9897e"
+          668: "11f872457d1fa8f84f320c56320e08bf",
+          784: "db9b7744606cc0bb400e19894c35d610",
+          818: "5e02eb5d33bb2c42f2a85e91388201ae",
+          860: "a3b17a0b64d2e3069adf54de36a31440",
+          872: "483974f1f746c0159d3bdbbbdd8cd72c"
         } [e] + ".js", p.miniCssF = e => "css/" + {
           376: "f591ef29a01f17332a4e20f415b692b1",
           860: "4cf782710abe6ef6e04688268db73db0"

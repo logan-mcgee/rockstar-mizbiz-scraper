@@ -7,13 +7,13 @@
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "692b6956abd6177da3ac6da14c81527e5159ed6d",
+  release: "90b9af281bd1b5c2955354a97f6fab1985234888",
   packageName: "@rockstargames/modules-core-carousel",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "692b6956abd6177da3ac6da14c81527e5159ed6d"
+  id: "90b9af281bd1b5c2955354a97f6fab1985234888"
 }, System.register(["@rockstargames/graph-client", "@rockstargames/modules-core-sc-user", "@rockstargames/tina", "@rockstargames/utils"], (function(e, r) {
   var t = {},
     a = {},
@@ -113,7 +113,7 @@ _global.SENTRY_RELEASE = {
           },
           u = {};
 
-        function c(e) {
+        function f(e) {
           var r = u[e];
           if (void 0 !== r) return r.exports;
           var t = u[e] = {
@@ -121,43 +121,43 @@ _global.SENTRY_RELEASE = {
             loaded: !1,
             exports: {}
           };
-          return l[e].call(t.exports, t, t.exports, c), t.loaded = !0, t.exports
+          return l[e].call(t.exports, t, t.exports, f), t.loaded = !0, t.exports
         }
-        return c.m = l, c.c = u, c.y = r, c.amdO = {}, c.n = e => {
+        return f.m = l, f.c = u, f.y = r, f.amdO = {}, f.n = e => {
           var r = e && e.__esModule ? () => e.default : () => e;
-          return c.d(r, {
+          return f.d(r, {
             a: r
           }), r
-        }, c.d = (e, r) => {
-          for (var t in r) c.o(r, t) && !c.o(e, t) && Object.defineProperty(e, t, {
+        }, f.d = (e, r) => {
+          for (var t in r) f.o(r, t) && !f.o(e, t) && Object.defineProperty(e, t, {
             enumerable: !0,
             get: r[t]
           })
-        }, c.f = {}, c.e = e => Promise.all(Object.keys(c.f).reduce(((r, t) => (c.f[t](e, r), r)), [])), c.u = e => "js/" + {
-          100: "9a0792dcd473bd09c9d8d5f14afa1c35",
-          144: "a5fb7b87a123af7f15549340a8b57c39",
-          272: "a7a7ddccd494435f9ba95ce27762a9a3",
-          488: "84443ed7224ea33a184b44e5ad8ad3fb",
-          512: "ca11708a88c8c1d5009d1d6a95625fa8",
-          560: "73e1c7b319ee7d192fd186b496d17f0a",
+        }, f.f = {}, f.e = e => Promise.all(Object.keys(f.f).reduce(((r, t) => (f.f[t](e, r), r)), [])), f.u = e => "js/" + {
+          100: "91e3c20fdf37b976ad8d375b3a779040",
+          144: "b2b2e92e762e97fac577418b543ddbe9",
+          272: "564073a86ada8b441680e3b6263cf96e",
+          488: "b2b52be2dbaa705e24fdfc873dbb7f5c",
+          512: "b1dd8a049259acd0a59e0f12e1e281f5",
+          560: "49f52c52b151d1b34aead23269388a70",
           664: "05bad5c6ba7d3735c70375b482203935",
-          718: "b8934871f66f934896b6194ddc25ad66",
+          718: "bd3e34366dccd8d64947eb9ee32dc4ce",
           740: "b0bac244071eb128310df11c58a48d25",
-          848: "b232ec80cd6dc3d7f1afef7f60fe07db",
+          848: "2055a6104f77bfaf56d35dc410ef9fd8",
           860: "ee0076234d76a50d69ff4d475594bb6c",
           988: "8e382dfbda32579d2054ab5d4320b37e"
-        } [e] + ".js", c.miniCssF = e => "css/" + {
+        } [e] + ".js", f.miniCssF = e => "css/" + {
           272: "ac1e9227f63817d283887e19c5e783ae",
           488: "64ec344fded786187ad18adbe4189f67",
           988: "4dbf5330681b3abe68ce06d4cd0a4470"
-        } [e] + ".css", c.g = function() {
+        } [e] + ".css", f.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
             return this || new Function("return this")()
           } catch (e) {
             if ("object" == typeof window) return window
           }
-        }(), c.o = (e, r) => Object.prototype.hasOwnProperty.call(e, r), e = {}, i = "@rockstargames/modules-core-carousel:", c.l = (r, t, a, n) => {
+        }(), f.o = (e, r) => Object.prototype.hasOwnProperty.call(e, r), e = {}, i = "@rockstargames/modules-core-carousel:", f.l = (r, t, a, n) => {
           if (e[r]) e[r].push(t);
           else {
             var o, s;
@@ -169,25 +169,25 @@ _global.SENTRY_RELEASE = {
                   break
                 }
               }
-            o || (s = !0, (o = document.createElement("script")).charset = "utf-8", o.timeout = 120, c.nc && o.setAttribute("nonce", c.nc), o.setAttribute("data-webpack", i + a), o.src = r), e[r] = [t];
-            var f = (t, a) => {
+            o || (s = !0, (o = document.createElement("script")).charset = "utf-8", o.timeout = 120, f.nc && o.setAttribute("nonce", f.nc), o.setAttribute("data-webpack", i + a), o.src = r), e[r] = [t];
+            var c = (t, a) => {
                 o.onerror = o.onload = null, clearTimeout(p);
                 var n = e[r];
                 if (delete e[r], o.parentNode && o.parentNode.removeChild(o), n && n.forEach((e => e(a))), t) return t(a)
               },
-              p = setTimeout(f.bind(null, void 0, {
+              p = setTimeout(c.bind(null, void 0, {
                 type: "timeout",
                 target: o
               }), 12e4);
-            o.onerror = f.bind(null, o.onerror), o.onload = f.bind(null, o.onload), s && document.head.appendChild(o)
+            o.onerror = c.bind(null, o.onerror), o.onload = c.bind(null, o.onload), s && document.head.appendChild(o)
           }
-        }, c.r = e => {
+        }, f.r = e => {
           "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
             value: "Module"
           }), Object.defineProperty(e, "__esModule", {
             value: !0
           })
-        }, c.nmd = e => (e.paths = [], e.children || (e.children = []), e), s = {
+        }, f.nmd = e => (e.paths = [], e.children || (e.children = []), e), s = {
           144: [2104, 5988, 9468],
           488: [1532, 2836, 3061, 3784, 5356, 8540],
           740: [1740],
@@ -206,15 +206,15 @@ _global.SENTRY_RELEASE = {
           5988: ["default", "./functions", 9344],
           8540: ["default", "./operations/fragments/paging.graphql", 3864],
           9468: ["default", "./properties", 8428]
-        }, c.f.remotes = (e, r) => {
-          c.o(s, e) && s[e].forEach((e => {
-            var t = c.R;
+        }, f.f.remotes = (e, r) => {
+          f.o(s, e) && s[e].forEach((e => {
+            var t = f.R;
             t || (t = []);
             var a = d[e];
             if (!(t.indexOf(a) >= 0)) {
               if (t.push(a), a.p) return r.push(a.p);
               var n = r => {
-                  r || (r = new Error("Container missing")), "string" == typeof r.message && (r.message += '\nwhile loading "' + a[1] + '" from ' + a[2]), c.m[e] = () => {
+                  r || (r = new Error("Container missing")), "string" == typeof r.message && (r.message += '\nwhile loading "' + a[1] + '" from ' + a[2]), f.m[e] = () => {
                     throw r
                   }, a.p = 0
                 },
@@ -231,24 +231,24 @@ _global.SENTRY_RELEASE = {
                 },
                 i = (e, r, n) => o(r.get, a[1], t, 0, s, n),
                 s = r => {
-                  a.p = 1, c.m[e] = e => {
+                  a.p = 1, f.m[e] = e => {
                     e.exports = r()
                   }
                 };
-              o(c, a[2], 0, 0, ((e, r, t) => e ? o(c.I, a[0], 0, e, i, t) : n()), 1)
+              o(f, a[2], 0, 0, ((e, r, t) => e ? o(f.I, a[0], 0, e, i, t) : n()), 1)
             }
           }))
         }, (() => {
-          c.S = {};
+          f.S = {};
           var e = {},
             r = {};
-          c.I = (t, a) => {
+          f.I = (t, a) => {
             a || (a = []);
             var n = r[t];
             if (n || (n = r[t] = {}), !(a.indexOf(n) >= 0)) {
               if (a.push(n), e[t]) return e[t];
-              c.o(c.S, t) || (c.S[t] = {});
-              var o = c.S[t],
+              f.o(f.S, t) || (f.S[t] = {});
+              var o = f.S[t],
                 i = "@rockstargames/modules-core-carousel",
                 s = (e, r, t, a) => {
                   var n = o[e] = o[e] || {},
@@ -265,9 +265,9 @@ _global.SENTRY_RELEASE = {
                     var r
                   };
                   try {
-                    var n = c(e);
+                    var n = f(e);
                     if (!n) return;
-                    var o = e => e && e.init && e.init(c.S[t], a);
+                    var o = e => e && e.init && e.init(f.S[t], a);
                     if (n.then) return l.push(n.then(o, r));
                     var i = o(n);
                     if (i && i.then) return l.push(i.catch(r))
@@ -276,20 +276,20 @@ _global.SENTRY_RELEASE = {
                   }
                 },
                 l = [];
-              return "default" === t && (s("@rockstargames/components", "1.14.0", (() => Promise.all([c.e(560), c.e(512), c.e(848), c.e(664), c.e(988), c.e(740), c.e(488), c.e(860)]).then((() => () => c(5120))))), s("react-router-dom", "6.17.0", (() => Promise.all([c.e(718), c.e(664)]).then((() => () => c(5718))))), s("react", "18.2.0", (() => c.e(100).then((() => () => c(7100))))), d(8428), d(3864), d(9344), d(1128)), l.length ? e[t] = Promise.all(l).then((() => e[t] = 1)) : e[t] = 1
+              return "default" === t && (s("@rockstargames/components", "1.14.0", (() => Promise.all([f.e(560), f.e(512), f.e(848), f.e(664), f.e(988), f.e(740), f.e(488), f.e(860)]).then((() => () => f(5120))))), s("react-router-dom", "6.17.0", (() => Promise.all([f.e(718), f.e(664)]).then((() => () => f(5718))))), s("react", "18.2.0", (() => f.e(100).then((() => () => f(7100))))), d(8428), d(3864), d(9344), d(1128)), l.length ? e[t] = Promise.all(l).then((() => e[t] = 1)) : e[t] = 1
             }
           }
         })(), (() => {
           var e;
-          c.g.importScripts && (e = c.g.location + "");
-          var r = c.g.document;
+          f.g.importScripts && (e = f.g.location + "");
+          var r = f.g.document;
           if (!e && r && (r.currentScript && (e = r.currentScript.src), !e)) {
             var t = r.getElementsByTagName("script");
             if (t.length)
               for (var a = t.length - 1; a > -1 && !e;) e = t[a--].src
           }
           if (!e) throw new Error("Automatic publicPath is not supported in this browser");
-          e = e.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/"), c.p = e
+          e = e.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/"), f.p = e
         })(), (() => {
           var e = e => {
               var r = e => e.split(".").map((e => +e == e ? +e : e)),
@@ -304,32 +304,32 @@ _global.SENTRY_RELEASE = {
                   o = n < 0;
                 o && (n = -n - 1);
                 for (var i = 0, s = 1, d = !0;; s++, i++) {
-                  var l, u, c = s < t.length ? (typeof t[s])[0] : "";
-                  if (i >= a.length || "o" == (u = (typeof(l = a[i]))[0])) return !d || ("u" == c ? s > n && !o : "" == c != o);
+                  var l, u, f = s < t.length ? (typeof t[s])[0] : "";
+                  if (i >= a.length || "o" == (u = (typeof(l = a[i]))[0])) return !d || ("u" == f ? s > n && !o : "" == f != o);
                   if ("u" == u) {
-                    if (!d || "u" != c) return !1
+                    if (!d || "u" != f) return !1
                   } else if (d)
-                    if (c == u)
+                    if (f == u)
                       if (s <= n) {
                         if (l != t[s]) return !1
                       } else {
                         if (o ? l > t[s] : l < t[s]) return !1;
                         l != t[s] && (d = !1)
                       }
-                  else if ("s" != c && "n" != c) {
+                  else if ("s" != f && "n" != f) {
                     if (o || s <= n) return !1;
                     d = !1, s--
                   } else {
-                    if (s <= n || u < c != o) return !1;
+                    if (s <= n || u < f != o) return !1;
                     d = !1
-                  } else "s" != c && "n" != c && (d = !1, s--)
+                  } else "s" != f && "n" != f && (d = !1, s--)
                 }
               }
-              var f = [],
-                p = f.pop.bind(f);
+              var c = [],
+                p = c.pop.bind(c);
               for (i = 1; i < t.length; i++) {
                 var h = t[i];
-                f.push(1 == h ? p() | p() : 2 == h ? p() & p() : h ? r(h, a) : !p())
+                c.push(1 == h ? p() | p() : 2 == h ? p() & p() : h ? r(h, a) : !p())
               }
               return !!p()
             },
@@ -351,17 +351,17 @@ _global.SENTRY_RELEASE = {
               })(t, a) ? t : a), 0)) && o[a]
             },
             a = (e => function(r, t, a, n) {
-              var o = c.I(r);
-              return o && o.then ? o.then(e.bind(e, r, c.S[r], t, a, n)) : e(r, c.S[r], t, a, n)
+              var o = f.I(r);
+              return o && o.then ? o.then(e.bind(e, r, f.S[r], t, a, n)) : e(r, f.S[r], t, a, n)
             })(((e, r, a, n, o) => {
-              var i = r && c.o(r, a) && t(r, a, n);
+              var i = r && f.o(r, a) && t(r, a, n);
               return i ? (e => (e.loaded = 1, e.get()))(i) : o()
             })),
             n = {},
             o = {
-              1664: () => a("default", "react", [1, 18, 2, 0], (() => c.e(100).then((() => () => c(7100))))),
-              9860: () => a("default", "@rockstargames/components", [1, "workspace:*"], (() => Promise.all([c.e(560), c.e(512), c.e(988), c.e(488)]).then((() => () => c(5120))))),
-              7013: () => a("default", "react-router-dom", [1, 6, 11, 2], (() => c.e(718).then((() => () => c(5718)))))
+              1664: () => a("default", "react", [1, 18, 2, 0], (() => f.e(100).then((() => () => f(7100))))),
+              9860: () => a("default", "@rockstargames/components", [1, "workspace:*"], (() => Promise.all([f.e(560), f.e(512), f.e(988), f.e(488)]).then((() => () => f(5120))))),
+              7013: () => a("default", "react-router-dom", [1, 6, 11, 2], (() => f.e(718).then((() => () => f(5718)))))
             },
             i = {
               488: [7013],
@@ -369,19 +369,19 @@ _global.SENTRY_RELEASE = {
               860: [9860]
             },
             s = {};
-          c.f.consumes = (e, r) => {
-            c.o(i, e) && i[e].forEach((e => {
-              if (c.o(n, e)) return r.push(n[e]);
+          f.f.consumes = (e, r) => {
+            f.o(i, e) && i[e].forEach((e => {
+              if (f.o(n, e)) return r.push(n[e]);
               if (!s[e]) {
                 var t = r => {
-                  n[e] = 0, c.m[e] = t => {
-                    delete c.c[e], t.exports = r()
+                  n[e] = 0, f.m[e] = t => {
+                    delete f.c[e], t.exports = r()
                   }
                 };
                 s[e] = !0;
                 var a = r => {
-                  delete n[e], c.m[e] = t => {
-                    throw delete c.c[e], r
+                  delete n[e], f.m[e] = t => {
+                    throw delete f.c[e], r
                   }
                 };
                 try {
@@ -398,14 +398,14 @@ _global.SENTRY_RELEASE = {
             var e = {
               208: 0
             };
-            c.f.miniCss = (r, t) => {
+            f.f.miniCss = (r, t) => {
               e[r] ? t.push(e[r]) : 0 !== e[r] && {
                 272: 1,
                 488: 1,
                 988: 1
               } [r] && t.push(e[r] = (e => new Promise(((r, t) => {
-                var a = c.miniCssF(e),
-                  n = c.p + a;
+                var a = f.miniCssF(e),
+                  n = f.p + a;
                 if (((e, r) => {
                     for (var t = document.getElementsByTagName("link"), a = 0; a < t.length; a++) {
                       var n = (i = t[a]).getAttribute("data-href") || i.getAttribute("href");
@@ -440,18 +440,18 @@ _global.SENTRY_RELEASE = {
           var e = {
             208: 0
           };
-          c.f.j = (r, t) => {
-            var a = c.o(e, r) ? e[r] : void 0;
+          f.f.j = (r, t) => {
+            var a = f.o(e, r) ? e[r] : void 0;
             if (0 !== a)
               if (a) t.push(a[2]);
               else if (/^(664|740|860|988)$/.test(r)) e[r] = 0;
             else {
               var n = new Promise(((t, n) => a = e[r] = [t, n]));
               t.push(a[2] = n);
-              var o = c.p + c.u(r),
+              var o = f.p + f.u(r),
                 i = new Error;
-              c.l(o, (t => {
-                if (c.o(e, r) && (0 !== (a = e[r]) && (e[r] = void 0), a)) {
+              f.l(o, (t => {
+                if (f.o(e, r) && (0 !== (a = e[r]) && (e[r] = void 0), a)) {
                   var n = t && ("load" === t.type ? "missing" : t.type),
                     o = t && t.target && t.target.src;
                   i.message = "Loading chunk " + r + " failed.\n(" + n + ": " + o + ")", i.name = "ChunkLoadError", i.type = n, i.request = o, a[1](i)
@@ -465,14 +465,14 @@ _global.SENTRY_RELEASE = {
                 s = t[2],
                 d = 0;
               if (o.some((r => 0 !== e[r]))) {
-                for (a in i) c.o(i, a) && (c.m[a] = i[a]);
-                s && s(c)
+                for (a in i) f.o(i, a) && (f.m[a] = i[a]);
+                s && s(f)
               }
-              for (r && r(t); d < o.length; d++) n = o[d], c.o(e, n) && e[n] && e[n][0](), e[n] = 0
+              for (r && r(t); d < o.length; d++) n = o[d], f.o(e, n) && e[n] && e[n][0](), e[n] = 0
             },
             t = self.webpackChunk_rockstargames_modules_core_carousel = self.webpackChunk_rockstargames_modules_core_carousel || [];
           t.forEach(r.bind(null, 0)), t.push = r.bind(null, t.push.bind(t))
-        })(), c(3824), c(7828)
+        })(), f(3824), f(7828)
       })())
     }
   }

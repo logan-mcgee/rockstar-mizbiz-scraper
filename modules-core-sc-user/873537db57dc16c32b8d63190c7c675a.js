@@ -1,0 +1,51 @@
+! function() {
+  try {
+    var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
+      a = (new Error).stack;
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "6a4b282a-6aa2-47a1-8706-71f25bdc2743", e._sentryDebugIdIdentifier = "sentry-dbid-6a4b282a-6aa2-47a1-8706-71f25bdc2743")
+  } catch (e) {}
+}();
+var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
+_global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
+  release: "90b9af281bd1b5c2955354a97f6fab1985234888",
+  packageName: "@rockstargames/modules-core-sc-user",
+  dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
+};
+var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
+_global.SENTRY_RELEASE = {
+  id: "90b9af281bd1b5c2955354a97f6fab1985234888"
+}, (self.webpackChunk_rockstargames_modules_core_sc_user = self.webpackChunk_rockstargames_modules_core_sc_user || []).push([
+  [964], {
+    964: (e, a, d) => {
+      d.r(a), d.d(a, {
+        default: () => o
+      });
+      var s = d(792);
+      const o = {
+        RockstarGames_Users_Model_Entity_User_o: {
+          fields: {
+            logged_in: {
+              read(e, a) {
+                let {
+                  readField: d
+                } = a;
+                return Number.isInteger(d("id"))
+              }
+            },
+            agegate_pass: {
+              read(e, a) {
+                let {
+                  readField: d
+                } = a;
+                const o = void 0 !== d("isAMinor") && !d("isAMinor"),
+                  n = (0, s.lsSettingsReactive)()?.agegatePass;
+                return o ?? n
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+]);
+//# sourceMappingURL=873537db57dc16c32b8d63190c7c675a.js.map

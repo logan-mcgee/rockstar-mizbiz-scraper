@@ -7,20 +7,20 @@
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "692b6956abd6177da3ac6da14c81527e5159ed6d",
+  release: "90b9af281bd1b5c2955354a97f6fab1985234888",
   packageName: "@rockstargames/modules-core-videoplayer",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "692b6956abd6177da3ac6da14c81527e5159ed6d"
+  id: "90b9af281bd1b5c2955354a97f6fab1985234888"
 }, System.register(["@rockstargames/graph-client", "@rockstargames/intl", "@rockstargames/modules-core-agegate", "@rockstargames/modules-core-sc-user", "@rockstargames/tina", "@rockstargames/utils"], (function(e, t) {
   var r = {},
     a = {},
     o = {},
     n = {},
     d = {},
-    s = {};
+    f = {};
   return Object.defineProperty(r, "__esModule", {
     value: !0
   }), Object.defineProperty(a, "__esModule", {
@@ -31,7 +31,7 @@ _global.SENTRY_RELEASE = {
     value: !0
   }), Object.defineProperty(d, "__esModule", {
     value: !0
-  }), Object.defineProperty(s, "__esModule", {
+  }), Object.defineProperty(f, "__esModule", {
     value: !0
   }), {
     setters: [function(e) {
@@ -56,12 +56,12 @@ _global.SENTRY_RELEASE = {
       }))
     }, function(e) {
       Object.keys(e).forEach((function(t) {
-        s[t] = e[t]
+        f[t] = e[t]
       }))
     }],
     execute: function() {
       e((() => {
-        var e, f, i, c, l = {
+        var e, s, i, c, l = {
             54364: (e, t, r) => {
               (0, r(47284).G)(1)
             },
@@ -132,7 +132,7 @@ _global.SENTRY_RELEASE = {
             },
             9344: e => {
               "use strict";
-              e.exports = s
+              e.exports = f
             }
           },
           u = {};
@@ -159,34 +159,34 @@ _global.SENTRY_RELEASE = {
           })
         }, p.f = {}, p.e = e => Promise.all(Object.keys(p.f).reduce(((t, r) => (p.f[r](e, t), t)), [])), p.u = e => "js/" + {
           61: "4badf4f19163415b16d3eec26bdf7b75",
-          68: "5d7ecd7719f3ac9d0d70bdc3d52941ef",
-          84: "e079ec96e35148223615134d1fd0c523",
-          92: "9e0f6674e3d0f7fbdc8556ade3a475c0",
-          100: "0048e0875a048b19a5453faaa5fb7a81",
-          132: "79fe2cf88915b1d415f41152c4abdf37",
-          236: "ccfbf96e9181321d13c52d5811c0d93e",
-          240: "879985486230fa80d33b7e812cb5ea10",
-          304: "1f75f89bb06f249e1a4f5ef6d38187bb",
-          324: "f1c8d10d5f2cb0b7b791c4d4f76363d6",
+          68: "06397831c0476fe8ddd87bbfb355025c",
+          84: "24b13c14f7f83f8107f34df44bd8cb87",
+          92: "40e020d903192008ffcf860ea23f3d83",
+          100: "6d158065222fe163f24b09b1129e8698",
+          132: "a84440d766e50a384ae812c136b74c73",
+          236: "e8abeb55636d5ba145c3b11de3a494e8",
+          240: "f473edfda7660ea03a6a81d1a774d757",
+          304: "da8df0954aba2880256731e9c960aa8f",
+          324: "d6623933428ebe18de00e9ccadc05923",
           364: "298e6a2b6ff50fdbc938bdcd30aea3e1",
           372: "f91bde5c6e398c71b513dcded7df63de",
-          378: "8da46e6667e39cf13f854e4d670f81a8",
-          408: "d41ce2901131ac90f3b31a3fff4fb6a7",
-          512: "d69c86661b765d1cb316b3316b62f79f",
+          378: "eab7ab0d395062f759d002e878e9e6d7",
+          408: "d26bc3f82aa32675be7a5706c9adec2c",
+          512: "7443ca7d47c8ffa06472179bdc055d35",
           532: "4a1323184690a9e97bd030edb45df771",
-          544: "b734ebecc56872640b9496d9d750093a",
-          560: "ba8c54da0cec219b95f8da4189c398b1",
+          544: "75e9455762ca5ab6b9eb8addc59b01d4",
+          560: "82e8a6ba6239ba7a8f5cc828cfc36f51",
           660: "ef1299e0420fc4c03c1334731567fa4b",
           664: "ac868ef8a85fd8d71926d723b8773d61",
-          716: "29f8c4b93dd8bc127cef27b0edfb9e59",
-          718: "cafe3ec7475d9121fcb29c7f88ca7017",
-          724: "dd001067496ca3b1cf8680bf32d91cd9",
-          772: "2684141872d6d5c768ab896cae3cb6a3",
-          784: "6d2ec2a1c1f7d974d450c698cfea2fe4",
-          792: "b095272e9db1a6ef6576aa75638315e2",
-          800: "c2b671f11ebd119330c8baa06b7043fb",
+          716: "046343a9d92536e424aed8875c3dd6ee",
+          718: "947fd53d72a6d8a56aeef58fc10b1f31",
+          724: "4c160ffbc50a7cbd8434bd2ea87b6cc1",
+          772: "03848dd66e5591041e5eedbacc1bef06",
+          784: "f871c9dee9b4aa0846ae29e49923f0dc",
+          792: "ecd5ae4616d940248f50cc6a280936fd",
+          800: "f471a3234cff09426642e6c26b4bb175",
           804: "c16dc7e47fa9edf16cd0804b8cb529a0",
-          924: "407fe5ef61860bdbb1c8ac43e0034569"
+          924: "8349e46993e25155e70f1d880901b3fa"
         } [e] + ".js", p.miniCssF = e => "css/" + {
           84: "d7ca61fd6a2aad8173bb0f6e692cae25",
           324: "a126229ede95b503bfddbd53efcedae3",
@@ -199,19 +199,19 @@ _global.SENTRY_RELEASE = {
           } catch (e) {
             if ("object" == typeof window) return window
           }
-        }(), p.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t), e = {}, f = "@rockstargames/modules-core-videoplayer:", p.l = (t, r, a, o) => {
+        }(), p.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t), e = {}, s = "@rockstargames/modules-core-videoplayer:", p.l = (t, r, a, o) => {
           if (e[t]) e[t].push(r);
           else {
             var n, d;
             if (void 0 !== a)
-              for (var s = document.getElementsByTagName("script"), i = 0; i < s.length; i++) {
-                var c = s[i];
-                if (c.getAttribute("src") == t || c.getAttribute("data-webpack") == f + a) {
+              for (var f = document.getElementsByTagName("script"), i = 0; i < f.length; i++) {
+                var c = f[i];
+                if (c.getAttribute("src") == t || c.getAttribute("data-webpack") == s + a) {
                   n = c;
                   break
                 }
               }
-            n || (d = !0, (n = document.createElement("script")).charset = "utf-8", n.timeout = 120, p.nc && n.setAttribute("nonce", p.nc), n.setAttribute("data-webpack", f + a), n.src = t), e[t] = [r];
+            n || (d = !0, (n = document.createElement("script")).charset = "utf-8", n.timeout = 120, p.nc && n.setAttribute("nonce", p.nc), n.setAttribute("data-webpack", s + a), n.src = t), e[t] = [r];
             var l = (r, a) => {
                 n.onerror = n.onload = null, clearTimeout(u);
                 var o = e[t];
@@ -268,19 +268,19 @@ _global.SENTRY_RELEASE = {
                     throw t
                   }, a.p = 0
                 },
-                n = (e, r, n, d, s, f) => {
+                n = (e, r, n, d, f, s) => {
                   try {
                     var i = e(r, n);
-                    if (!i || !i.then) return s(i, d, f);
-                    var c = i.then((e => s(e, d)), o);
-                    if (!f) return c;
+                    if (!i || !i.then) return f(i, d, s);
+                    var c = i.then((e => f(e, d)), o);
+                    if (!s) return c;
                     t.push(a.p = c)
                   } catch (e) {
                     o(e)
                   }
                 },
-                d = (e, t, o) => n(t.get, a[1], r, 0, s, o),
-                s = t => {
+                d = (e, t, o) => n(t.get, a[1], r, 0, f, o),
+                f = t => {
                   a.p = 1, p.m[e] = e => {
                     e.exports = t()
                   }
@@ -300,16 +300,16 @@ _global.SENTRY_RELEASE = {
               p.o(p.S, r) || (p.S[r] = {});
               var n = p.S[r],
                 d = "@rockstargames/modules-core-videoplayer",
-                s = (e, t, r, a) => {
+                f = (e, t, r, a) => {
                   var o = n[e] = n[e] || {},
-                    s = o[t];
-                  (!s || !s.loaded && (!a != !s.eager ? a : d > s.from)) && (o[t] = {
+                    f = o[t];
+                  (!f || !f.loaded && (!a != !f.eager ? a : d > f.from)) && (o[t] = {
                     get: r,
                     from: d,
                     eager: !!a
                   })
                 },
-                f = e => {
+                s = e => {
                   var t = e => {
                     return t = "Initialization of sharing external failed: " + e, void("undefined" != typeof console && console.warn && console.warn(t));
                     var t
@@ -326,7 +326,7 @@ _global.SENTRY_RELEASE = {
                   }
                 },
                 i = [];
-              return "default" === r && (s("@rockstargames/components", "1.14.0", (() => Promise.all([p.e(92), p.e(544), p.e(664), p.e(372), p.e(804), p.e(660), p.e(364), p.e(532), p.e(84), p.e(240)]).then((() => () => p(43080))))), s("@rockstargames/locale-tools", "1.0.0", (() => Promise.all([p.e(92), p.e(408), p.e(664), p.e(61), p.e(924)]).then((() => () => p(8304))))), s("dompurify", "2.4.7", (() => p.e(560).then((() => () => p(8560))))), s("hammerjs", "2.0.8", (() => p.e(772).then((() => () => p(65772))))), s("lodash", "4.17.21", (() => p.e(784).then((() => () => p(79784))))), s("react-dom", "18.2.0", (() => Promise.all([p.e(716), p.e(664)]).then((() => () => p(63716))))), s("react-intersection-observer", "9.5.2", (() => Promise.all([p.e(664), p.e(512)]).then((() => () => p(41512))))), s("react-router-dom", "6.17.0", (() => Promise.all([p.e(718), p.e(664)]).then((() => () => p(45718))))), s("react", "18.2.0", (() => p.e(100).then((() => () => p(77100))))), s("uuid", "9.0.1", (() => p.e(378).then((() => () => p(11378))))), f(81128), f(9344), f(33864), f(50800), f(25430), f(88428)), i.length ? e[r] = Promise.all(i).then((() => e[r] = 1)) : e[r] = 1
+              return "default" === r && (f("@rockstargames/components", "1.14.0", (() => Promise.all([p.e(92), p.e(544), p.e(664), p.e(372), p.e(804), p.e(660), p.e(364), p.e(532), p.e(84), p.e(240)]).then((() => () => p(43080))))), f("@rockstargames/locale-tools", "1.0.0", (() => Promise.all([p.e(92), p.e(408), p.e(664), p.e(61), p.e(924)]).then((() => () => p(8304))))), f("dompurify", "2.4.7", (() => p.e(560).then((() => () => p(8560))))), f("hammerjs", "2.0.8", (() => p.e(772).then((() => () => p(65772))))), f("lodash", "4.17.21", (() => p.e(784).then((() => () => p(79784))))), f("react-dom", "18.2.0", (() => Promise.all([p.e(716), p.e(664)]).then((() => () => p(63716))))), f("react-intersection-observer", "9.5.2", (() => Promise.all([p.e(664), p.e(512)]).then((() => () => p(41512))))), f("react-router-dom", "6.17.0", (() => Promise.all([p.e(718), p.e(664)]).then((() => () => p(45718))))), f("react", "18.2.0", (() => p.e(100).then((() => () => p(77100))))), f("uuid", "9.0.1", (() => p.e(378).then((() => () => p(11378))))), s(81128), s(9344), s(33864), s(50800), s(25430), s(88428)), i.length ? e[r] = Promise.all(i).then((() => e[r] = 1)) : e[r] = 1
             }
           }
         })(), (() => {
@@ -353,26 +353,26 @@ _global.SENTRY_RELEASE = {
                 var o = r[0],
                   n = o < 0;
                 n && (o = -o - 1);
-                for (var d = 0, s = 1, f = !0;; s++, d++) {
-                  var i, c, l = s < r.length ? (typeof r[s])[0] : "";
-                  if (d >= a.length || "o" == (c = (typeof(i = a[d]))[0])) return !f || ("u" == l ? s > o && !n : "" == l != n);
+                for (var d = 0, f = 1, s = !0;; f++, d++) {
+                  var i, c, l = f < r.length ? (typeof r[f])[0] : "";
+                  if (d >= a.length || "o" == (c = (typeof(i = a[d]))[0])) return !s || ("u" == l ? f > o && !n : "" == l != n);
                   if ("u" == c) {
-                    if (!f || "u" != l) return !1
-                  } else if (f)
+                    if (!s || "u" != l) return !1
+                  } else if (s)
                     if (l == c)
-                      if (s <= o) {
-                        if (i != r[s]) return !1
+                      if (f <= o) {
+                        if (i != r[f]) return !1
                       } else {
-                        if (n ? i > r[s] : i < r[s]) return !1;
-                        i != r[s] && (f = !1)
+                        if (n ? i > r[f] : i < r[f]) return !1;
+                        i != r[f] && (s = !1)
                       }
                   else if ("s" != l && "n" != l) {
-                    if (n || s <= o) return !1;
-                    f = !1, s--
+                    if (n || f <= o) return !1;
+                    s = !1, f--
                   } else {
-                    if (s <= o || c < l != n) return !1;
-                    f = !1
-                  } else "s" != l && "n" != l && (f = !1, s--)
+                    if (f <= o || c < l != n) return !1;
+                    s = !1
+                  } else "s" != l && "n" != l && (s = !1, f--)
                 }
               }
               var u = [],
@@ -393,8 +393,8 @@ _global.SENTRY_RELEASE = {
                     n = (typeof o)[0];
                   if (a >= r.length) return "u" == n;
                   var d = r[a],
-                    s = (typeof d)[0];
-                  if (n != s) return "o" == n && "n" == s || "s" == s || "u" == n;
+                    f = (typeof d)[0];
+                  if (n != f) return "o" == n && "n" == f || "s" == f || "u" == n;
                   if ("o" != n && "u" != n && o != d) return o < d;
                   a++
                 }
@@ -428,17 +428,17 @@ _global.SENTRY_RELEASE = {
               664: [51664],
               804: [9860]
             },
-            s = {};
+            f = {};
           p.f.consumes = (e, t) => {
             p.o(d, e) && d[e].forEach((e => {
               if (p.o(o, e)) return t.push(o[e]);
-              if (!s[e]) {
+              if (!f[e]) {
                 var r = t => {
                   o[e] = 0, p.m[e] = r => {
                     delete p.c[e], r.exports = t()
                   }
                 };
-                s[e] = !0;
+                f[e] = !0;
                 var a = t => {
                   delete o[e], p.m[e] = r => {
                     throw delete p.c[e], t
@@ -484,9 +484,9 @@ _global.SENTRY_RELEASE = {
                     if (n.onerror = n.onload = null, "load" === r.type) a();
                     else {
                       var d = r && ("load" === r.type ? "missing" : r.type),
-                        s = r && r.target && r.target.href || t,
-                        f = new Error("Loading CSS chunk " + e + " failed.\n(" + s + ")");
-                      f.code = "CSS_CHUNK_LOAD_FAILED", f.type = d, f.request = s, n.parentNode && n.parentNode.removeChild(n), o(f)
+                        f = r && r.target && r.target.href || t,
+                        s = new Error("Loading CSS chunk " + e + " failed.\n(" + f + ")");
+                      s.code = "CSS_CHUNK_LOAD_FAILED", s.type = d, s.request = f, n.parentNode && n.parentNode.removeChild(n), o(s)
                     }
                   }, n.href = t, document.head.appendChild(n)
                 })(e, o, 0, t, r)
@@ -523,13 +523,13 @@ _global.SENTRY_RELEASE = {
           var t = (t, r) => {
               var a, o, n = r[0],
                 d = r[1],
-                s = r[2],
-                f = 0;
+                f = r[2],
+                s = 0;
               if (n.some((t => 0 !== e[t]))) {
                 for (a in d) p.o(d, a) && (p.m[a] = d[a]);
-                s && s(p)
+                f && f(p)
               }
-              for (t && t(r); f < n.length; f++) o = n[f], p.o(e, o) && e[o] && e[o][0](), e[o] = 0
+              for (t && t(r); s < n.length; s++) o = n[s], p.o(e, o) && e[o] && e[o][0](), e[o] = 0
             },
             r = self.webpackChunk_rockstargames_modules_core_videoplayer = self.webpackChunk_rockstargames_modules_core_videoplayer || [];
           r.forEach(t.bind(null, 0)), r.push = t.bind(null, r.push.bind(r))

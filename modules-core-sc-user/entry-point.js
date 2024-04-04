@@ -7,13 +7,13 @@
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "692b6956abd6177da3ac6da14c81527e5159ed6d",
+  release: "90b9af281bd1b5c2955354a97f6fab1985234888",
   packageName: "@rockstargames/modules-core-sc-user",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "692b6956abd6177da3ac6da14c81527e5159ed6d"
+  id: "90b9af281bd1b5c2955354a97f6fab1985234888"
 }, System.register(["@rockstargames/graph-client", "@rockstargames/utils"], (function(e, r) {
   var t = {},
     n = {};
@@ -90,52 +90,52 @@ _global.SENTRY_RELEASE = {
               e.exports = n
             }
           },
-          u = {};
+          f = {};
 
-        function d(e) {
-          var r = u[e];
+        function u(e) {
+          var r = f[e];
           if (void 0 !== r) return r.exports;
-          var t = u[e] = {
+          var t = f[e] = {
             exports: {}
           };
-          return s[e](t, t.exports, d), t.exports
+          return s[e](t, t.exports, u), t.exports
         }
-        return d.m = s, d.c = u, d.y = r, d.n = e => {
+        return u.m = s, u.c = f, u.y = r, u.n = e => {
           var r = e && e.__esModule ? () => e.default : () => e;
-          return d.d(r, {
+          return u.d(r, {
             a: r
           }), r
-        }, d.d = (e, r) => {
-          for (var t in r) d.o(r, t) && !d.o(e, t) && Object.defineProperty(e, t, {
+        }, u.d = (e, r) => {
+          for (var t in r) u.o(r, t) && !u.o(e, t) && Object.defineProperty(e, t, {
             enumerable: !0,
             get: r[t]
           })
-        }, d.f = {}, d.e = e => Promise.all(Object.keys(d.f).reduce(((r, t) => (d.f[t](e, r), r)), [])), d.u = e => "js/" + {
-          80: "d7cd750542bdde8215c199d8094ea07d",
-          100: "4a5610a77eb74a8b77b45e240bfe3cda",
+        }, u.f = {}, u.e = e => Promise.all(Object.keys(u.f).reduce(((r, t) => (u.f[t](e, r), r)), [])), u.u = e => "js/" + {
+          80: "015190a7b5058f8563322722442e9673",
+          100: "53d51c053c70db91f95590e99502dccb",
           792: "ca9af4a151f76a0731b69b6b4c0bd1dc",
-          964: "7ef3af220c2ce86a92935a3622bf0685",
-          996: "f4f92fdba77cf2faecd35c3b412c46b2"
-        } [e] + ".js", d.miniCssF = e => {}, d.g = function() {
+          964: "873537db57dc16c32b8d63190c7c675a",
+          996: "22ec3d8bbc8fd3d50e3fa97fb3071d7e"
+        } [e] + ".js", u.miniCssF = e => {}, u.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
             return this || new Function("return this")()
           } catch (e) {
             if ("object" == typeof window) return window
           }
-        }(), d.o = (e, r) => Object.prototype.hasOwnProperty.call(e, r), e = {}, a = "@rockstargames/modules-core-sc-user:", d.l = (r, t, n, o) => {
+        }(), u.o = (e, r) => Object.prototype.hasOwnProperty.call(e, r), e = {}, a = "@rockstargames/modules-core-sc-user:", u.l = (r, t, n, o) => {
           if (e[r]) e[r].push(t);
           else {
             var i, s;
             if (void 0 !== n)
-              for (var u = document.getElementsByTagName("script"), f = 0; f < u.length; f++) {
-                var l = u[f];
-                if (l.getAttribute("src") == r || l.getAttribute("data-webpack") == a + n) {
-                  i = l;
+              for (var f = document.getElementsByTagName("script"), l = 0; l < f.length; l++) {
+                var d = f[l];
+                if (d.getAttribute("src") == r || d.getAttribute("data-webpack") == a + n) {
+                  i = d;
                   break
                 }
               }
-            i || (s = !0, (i = document.createElement("script")).charset = "utf-8", i.timeout = 120, d.nc && i.setAttribute("nonce", d.nc), i.setAttribute("data-webpack", a + n), i.src = r), e[r] = [t];
+            i || (s = !0, (i = document.createElement("script")).charset = "utf-8", i.timeout = 120, u.nc && i.setAttribute("nonce", u.nc), i.setAttribute("data-webpack", a + n), i.src = r), e[r] = [t];
             var c = (t, n) => {
                 i.onerror = i.onload = null, clearTimeout(p);
                 var a = e[r];
@@ -147,7 +147,7 @@ _global.SENTRY_RELEASE = {
               }), 12e4);
             i.onerror = c.bind(null, i.onerror), i.onload = c.bind(null, i.onload), s && document.head.appendChild(i)
           }
-        }, d.r = e => {
+        }, u.r = e => {
           "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
             value: "Module"
           }), Object.defineProperty(e, "__esModule", {
@@ -160,49 +160,49 @@ _global.SENTRY_RELEASE = {
           52: ["default", "./index", 864],
           92: ["default", "./gtm", 344],
           792: ["default", "./index", 344]
-        }, d.f.remotes = (e, r) => {
-          d.o(o, e) && o[e].forEach((e => {
-            var t = d.R;
+        }, u.f.remotes = (e, r) => {
+          u.o(o, e) && o[e].forEach((e => {
+            var t = u.R;
             t || (t = []);
             var n = i[e];
             if (!(t.indexOf(n) >= 0)) {
               if (t.push(n), n.p) return r.push(n.p);
               var a = r => {
-                  r || (r = new Error("Container missing")), "string" == typeof r.message && (r.message += '\nwhile loading "' + n[1] + '" from ' + n[2]), d.m[e] = () => {
+                  r || (r = new Error("Container missing")), "string" == typeof r.message && (r.message += '\nwhile loading "' + n[1] + '" from ' + n[2]), u.m[e] = () => {
                     throw r
                   }, n.p = 0
                 },
-                o = (e, t, o, i, s, u) => {
+                o = (e, t, o, i, s, f) => {
                   try {
-                    var d = e(t, o);
-                    if (!d || !d.then) return s(d, i, u);
-                    var f = d.then((e => s(e, i)), a);
-                    if (!u) return f;
-                    r.push(n.p = f)
+                    var u = e(t, o);
+                    if (!u || !u.then) return s(u, i, f);
+                    var l = u.then((e => s(e, i)), a);
+                    if (!f) return l;
+                    r.push(n.p = l)
                   } catch (e) {
                     a(e)
                   }
                 },
-                s = (e, r, a) => o(r.get, n[1], t, 0, u, a),
-                u = r => {
-                  n.p = 1, d.m[e] = e => {
+                s = (e, r, a) => o(r.get, n[1], t, 0, f, a),
+                f = r => {
+                  n.p = 1, u.m[e] = e => {
                     e.exports = r()
                   }
                 };
-              o(d, n[2], 0, 0, ((e, r, t) => e ? o(d.I, n[0], 0, e, s, t) : a()), 1)
+              o(u, n[2], 0, 0, ((e, r, t) => e ? o(u.I, n[0], 0, e, s, t) : a()), 1)
             }
           }))
         }, (() => {
-          d.S = {};
+          u.S = {};
           var e = {},
             r = {};
-          d.I = (t, n) => {
+          u.I = (t, n) => {
             n || (n = []);
             var a = r[t];
             if (a || (a = r[t] = {}), !(n.indexOf(a) >= 0)) {
               if (n.push(a), e[t]) return e[t];
-              d.o(d.S, t) || (d.S[t] = {});
-              var o = d.S[t],
+              u.o(u.S, t) || (u.S[t] = {});
+              var o = u.S[t],
                 i = "@rockstargames/modules-core-sc-user",
                 s = (e, r, t, n) => {
                   var a = o[e] = o[e] || {},
@@ -213,37 +213,37 @@ _global.SENTRY_RELEASE = {
                     eager: !!n
                   })
                 },
-                u = e => {
+                f = e => {
                   var r = e => {
                     return r = "Initialization of sharing external failed: " + e, void("undefined" != typeof console && console.warn && console.warn(r));
                     var r
                   };
                   try {
-                    var a = d(e);
+                    var a = u(e);
                     if (!a) return;
-                    var o = e => e && e.init && e.init(d.S[t], n);
-                    if (a.then) return f.push(a.then(o, r));
+                    var o = e => e && e.init && e.init(u.S[t], n);
+                    if (a.then) return l.push(a.then(o, r));
                     var i = o(a);
-                    if (i && i.then) return f.push(i.catch(r))
+                    if (i && i.then) return l.push(i.catch(r))
                   } catch (e) {
                     r(e)
                   }
                 },
-                f = [];
-              return "default" === t && (s("@rockstar/fingerprint-js", "1.0.0", (() => d.e(996).then((() => () => d(996))))), s("react", "18.2.0", (() => d.e(100).then((() => () => d(100))))), u(344), u(864)), f.length ? e[t] = Promise.all(f).then((() => e[t] = 1)) : e[t] = 1
+                l = [];
+              return "default" === t && (s("@rockstar/fingerprint-js", "1.0.0", (() => u.e(996).then((() => () => u(996))))), s("react", "18.2.0", (() => u.e(100).then((() => () => u(100))))), f(344), f(864)), l.length ? e[t] = Promise.all(l).then((() => e[t] = 1)) : e[t] = 1
             }
           }
         })(), (() => {
           var e;
-          d.g.importScripts && (e = d.g.location + "");
-          var r = d.g.document;
+          u.g.importScripts && (e = u.g.location + "");
+          var r = u.g.document;
           if (!e && r && (r.currentScript && (e = r.currentScript.src), !e)) {
             var t = r.getElementsByTagName("script");
             if (t.length)
               for (var n = t.length - 1; n > -1 && !e;) e = t[n--].src
           }
           if (!e) throw new Error("Automatic publicPath is not supported in this browser");
-          e = e.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/"), d.p = e
+          e = e.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/"), u.p = e
         })(), (() => {
           var e = e => {
               var r = e => e.split(".").map((e => +e == e ? +e : e)),
@@ -257,26 +257,26 @@ _global.SENTRY_RELEASE = {
                 var a = t[0],
                   o = a < 0;
                 o && (a = -a - 1);
-                for (var i = 0, s = 1, u = !0;; s++, i++) {
-                  var d, f, l = s < t.length ? (typeof t[s])[0] : "";
-                  if (i >= n.length || "o" == (f = (typeof(d = n[i]))[0])) return !u || ("u" == l ? s > a && !o : "" == l != o);
-                  if ("u" == f) {
-                    if (!u || "u" != l) return !1
-                  } else if (u)
-                    if (l == f)
+                for (var i = 0, s = 1, f = !0;; s++, i++) {
+                  var u, l, d = s < t.length ? (typeof t[s])[0] : "";
+                  if (i >= n.length || "o" == (l = (typeof(u = n[i]))[0])) return !f || ("u" == d ? s > a && !o : "" == d != o);
+                  if ("u" == l) {
+                    if (!f || "u" != d) return !1
+                  } else if (f)
+                    if (d == l)
                       if (s <= a) {
-                        if (d != t[s]) return !1
+                        if (u != t[s]) return !1
                       } else {
-                        if (o ? d > t[s] : d < t[s]) return !1;
-                        d != t[s] && (u = !1)
+                        if (o ? u > t[s] : u < t[s]) return !1;
+                        u != t[s] && (f = !1)
                       }
-                  else if ("s" != l && "n" != l) {
+                  else if ("s" != d && "n" != d) {
                     if (o || s <= a) return !1;
-                    u = !1, s--
+                    f = !1, s--
                   } else {
-                    if (s <= a || f < l != o) return !1;
-                    u = !1
-                  } else "s" != l && "n" != l && (u = !1, s--)
+                    if (s <= a || l < d != o) return !1;
+                    f = !1
+                  } else "s" != d && "n" != d && (f = !1, s--)
                 }
               }
               var c = [],
@@ -305,34 +305,34 @@ _global.SENTRY_RELEASE = {
               })(t, n) ? t : n), 0)) && o[n]
             },
             n = (e => function(r, t, n, a) {
-              var o = d.I(r);
-              return o && o.then ? o.then(e.bind(e, r, d.S[r], t, n, a)) : e(r, d.S[r], t, n, a)
+              var o = u.I(r);
+              return o && o.then ? o.then(e.bind(e, r, u.S[r], t, n, a)) : e(r, u.S[r], t, n, a)
             })(((e, r, n, a, o) => {
-              var i = r && d.o(r, n) && t(r, n, a);
+              var i = r && u.o(r, n) && t(r, n, a);
               return i ? (e => (e.loaded = 1, e.get()))(i) : o()
             })),
             a = {},
             o = {
-              468: () => n("default", "@rockstar/fingerprint-js", [1, 1, 0, 0], (() => d.e(996).then((() => () => d(996))))),
-              664: () => n("default", "react", [1, 18, 2, 0], (() => d.e(100).then((() => () => d(100)))))
+              468: () => n("default", "@rockstar/fingerprint-js", [1, 1, 0, 0], (() => u.e(996).then((() => () => u(996))))),
+              664: () => n("default", "react", [1, 18, 2, 0], (() => u.e(100).then((() => () => u(100)))))
             },
             i = {
               80: [468, 664]
             },
             s = {};
-          d.f.consumes = (e, r) => {
-            d.o(i, e) && i[e].forEach((e => {
-              if (d.o(a, e)) return r.push(a[e]);
+          u.f.consumes = (e, r) => {
+            u.o(i, e) && i[e].forEach((e => {
+              if (u.o(a, e)) return r.push(a[e]);
               if (!s[e]) {
                 var t = r => {
-                  a[e] = 0, d.m[e] = t => {
-                    delete d.c[e], t.exports = r()
+                  a[e] = 0, u.m[e] = t => {
+                    delete u.c[e], t.exports = r()
                   }
                 };
                 s[e] = !0;
                 var n = r => {
-                  delete a[e], d.m[e] = t => {
-                    throw delete d.c[e], r
+                  delete a[e], u.m[e] = t => {
+                    throw delete u.c[e], r
                   }
                 };
                 try {
@@ -348,17 +348,17 @@ _global.SENTRY_RELEASE = {
           var e = {
             126: 0
           };
-          d.f.j = (r, t) => {
-            var n = d.o(e, r) ? e[r] : void 0;
+          u.f.j = (r, t) => {
+            var n = u.o(e, r) ? e[r] : void 0;
             if (0 !== n)
               if (n) t.push(n[2]);
               else if (792 != r) {
               var a = new Promise(((t, a) => n = e[r] = [t, a]));
               t.push(n[2] = a);
-              var o = d.p + d.u(r),
+              var o = u.p + u.u(r),
                 i = new Error;
-              d.l(o, (t => {
-                if (d.o(e, r) && (0 !== (n = e[r]) && (e[r] = void 0), n)) {
+              u.l(o, (t => {
+                if (u.o(e, r) && (0 !== (n = e[r]) && (e[r] = void 0), n)) {
                   var a = t && ("load" === t.type ? "missing" : t.type),
                     o = t && t.target && t.target.src;
                   i.message = "Loading chunk " + r + " failed.\n(" + a + ": " + o + ")", i.name = "ChunkLoadError", i.type = a, i.request = o, n[1](i)
@@ -370,16 +370,16 @@ _global.SENTRY_RELEASE = {
               var n, a, o = t[0],
                 i = t[1],
                 s = t[2],
-                u = 0;
+                f = 0;
               if (o.some((r => 0 !== e[r]))) {
-                for (n in i) d.o(i, n) && (d.m[n] = i[n]);
-                s && s(d)
+                for (n in i) u.o(i, n) && (u.m[n] = i[n]);
+                s && s(u)
               }
-              for (r && r(t); u < o.length; u++) a = o[u], d.o(e, a) && e[a] && e[a][0](), e[a] = 0
+              for (r && r(t); f < o.length; f++) a = o[f], u.o(e, a) && e[a] && e[a][0](), e[a] = 0
             },
             t = self.webpackChunk_rockstargames_modules_core_sc_user = self.webpackChunk_rockstargames_modules_core_sc_user || [];
           t.forEach(r.bind(null, 0)), t.push = r.bind(null, t.push.bind(t))
-        })(), d(824), d(416)
+        })(), u(824), u(416)
       })())
     }
   }

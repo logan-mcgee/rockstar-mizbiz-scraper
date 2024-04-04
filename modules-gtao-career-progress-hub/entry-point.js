@@ -7,13 +7,13 @@
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "692b6956abd6177da3ac6da14c81527e5159ed6d",
+  release: "90b9af281bd1b5c2955354a97f6fab1985234888",
   packageName: "@rockstargames/modules-gtao-career-progress-hub",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "692b6956abd6177da3ac6da14c81527e5159ed6d"
+  id: "90b9af281bd1b5c2955354a97f6fab1985234888"
 }, System.register(["@rockstargames/graph-client", "@rockstargames/modules-core-highlights", "@rockstargames/modules-core-sc-user", "@rockstargames/tina", "@rockstargames/utils"], (function(e, r) {
   var t = {},
     a = {},
@@ -54,7 +54,7 @@ _global.SENTRY_RELEASE = {
     }],
     execute: function() {
       e((() => {
-        var e, d, i, c, l = {
+        var e, d, i, c, f = {
             54364: (e, r, t) => {
               (0, t(47284).G)(1)
             },
@@ -123,19 +123,19 @@ _global.SENTRY_RELEASE = {
               e.exports = s
             }
           },
-          f = {};
+          l = {};
 
         function u(e) {
-          var r = f[e];
+          var r = l[e];
           if (void 0 !== r) return r.exports;
-          var t = f[e] = {
+          var t = l[e] = {
             id: e,
             loaded: !1,
             exports: {}
           };
-          return l[e].call(t.exports, t, t.exports, u), t.loaded = !0, t.exports
+          return f[e].call(t.exports, t, t.exports, u), t.loaded = !0, t.exports
         }
-        return u.m = l, u.c = f, u.y = r, u.amdO = {}, u.n = e => {
+        return u.m = f, u.c = l, u.y = r, u.amdO = {}, u.n = e => {
           var r = e && e.__esModule ? () => e.default : () => e;
           return u.d(r, {
             a: r
@@ -148,33 +148,33 @@ _global.SENTRY_RELEASE = {
         }, u.f = {}, u.e = e => Promise.all(Object.keys(u.f).reduce(((r, t) => (u.f[t](e, r), r)), [])), u.u = e => "js/" + {
           61: "6142d9487d60932e2a7050baaab6d72f",
           100: "d7cda052973105ceadfb636c8f0b1a39",
-          132: "a644717c0badf6c9bc7cdeba03986d57",
-          140: "29eb6b9c4dd9509af420ec7a073321c3",
-          168: "c739347658ebb7a724293260cf8beaf6",
-          236: "6088239a53b67a0bde9d9e865cbbc479",
+          132: "71664d589996ff88627d3948a5488d6d",
+          140: "1726d7846a49f5a38d5c5149ab39ac5b",
+          168: "56d1403694a9ed9a463f4c8c9b629722",
+          236: "895ff0e9503a4b3bd926722453dad047",
           304: "7748cfb789eb62fc59932d4f7a05712b",
-          316: "f414c16486fd00ea80ec9162372ef412",
-          336: "da81f793351f64382af80c8e125a9b2b",
+          316: "fffc05782564a9a5c72ae56abf4164b7",
+          336: "237a8cf4d82a706506e68fe2394fb27b",
           364: "6ef3f599ba968a100b3359aa457f5263",
-          408: "d2dc98bb0c49d3a74ec9b784504c7df5",
-          472: "cafceae8b16deb729d895894a93bdf61",
-          480: "89be4f44663bbfc79caa832ae5c60011",
-          492: "8d46925cdc6ef1dc918914784e8ffbb9",
-          512: "c184121caa3ba8e6bb947883a0862089",
-          542: "9de691ca31cbb2bd13e2be66a26c8441",
-          648: "4364719357e64b6fa9c3b5e96ebe0222",
+          408: "36a5e8f71c92b16b76a6048773035bf8",
+          472: "8c2f4d9d3d07aa81985439084c7a97cf",
+          480: "fb0a722b6dea8adaec3c59f6d2234969",
+          492: "11c17f245b04c249675a817db5d0bb5f",
+          512: "60a87cfdc8b598423a7488617e125b1f",
+          542: "8eaf00da910c12a56ba96a625560ffda",
+          648: "20535936bed572510303a71d700ee48e",
           652: "ca8b86063d2af707a05f2a42e0ceb63c",
           664: "c72e7718229ecb09e825d6d742364747",
-          716: "a60af85e0b31649e12daca2236f4f181",
-          718: "1444d8af097464943a254c078e317e0a",
-          720: "16a6287c67baad00ffade90fef0a4afa",
-          724: "6a464abdb196f36c539be8a474d1ba1e",
-          748: "b94ca778f14be225f86cdf5ce9b07f13",
-          760: "380b20a44ee6171ce98aa5bdd8292fc9",
-          788: "0dec6f4af028b3ababded03afb6d0564",
-          848: "2e4e98a4f2b2c8442178726ec649b66d",
-          880: "94201690582683b4a2cab6c62f92b7cf",
-          924: "65c1a5268d28ada1c5fd4f4619ad1d77"
+          716: "ac24cdf3505bb448aa6849813da64bcc",
+          718: "c81acf415717b114c06b7e17e34dda9a",
+          720: "e1fb0545c12d5799653e70f486393f72",
+          724: "189286ce7f1bfa1b93e732650a968305",
+          748: "5e1efa082a8b8a4aaa04771b5466fb94",
+          760: "2c329fade54adde8a20326bd6986625f",
+          788: "0ba1f152e9fb5c605b8f4e90497e65f8",
+          848: "ce4fbe71f065c4ef6986d566f35ca037",
+          880: "a77973e1bb996348b941762b6d9cfa81",
+          924: "74657cf9b46623f7d3bd664638cc2a09"
         } [e] + ".js", u.miniCssF = e => "css/" + {
           316: "60a616079a2e33486a0d774b1efa00cc",
           480: "2dc2096dd3e4bea5b2d15f1d1d91c3c5"
@@ -191,23 +191,23 @@ _global.SENTRY_RELEASE = {
             var n, s;
             if (void 0 !== a)
               for (var i = document.getElementsByTagName("script"), c = 0; c < i.length; c++) {
-                var l = i[c];
-                if (l.getAttribute("src") == r || l.getAttribute("data-webpack") == d + a) {
-                  n = l;
+                var f = i[c];
+                if (f.getAttribute("src") == r || f.getAttribute("data-webpack") == d + a) {
+                  n = f;
                   break
                 }
               }
             n || (s = !0, (n = document.createElement("script")).charset = "utf-8", n.timeout = 120, u.nc && n.setAttribute("nonce", u.nc), n.setAttribute("data-webpack", d + a), n.src = r), e[r] = [t];
-            var f = (t, a) => {
+            var l = (t, a) => {
                 n.onerror = n.onload = null, clearTimeout(p);
                 var o = e[r];
                 if (delete e[r], n.parentNode && n.parentNode.removeChild(n), o && o.forEach((e => e(a))), t) return t(a)
               },
-              p = setTimeout(f.bind(null, void 0, {
+              p = setTimeout(l.bind(null, void 0, {
                 type: "timeout",
                 target: n
               }), 12e4);
-            n.onerror = f.bind(null, n.onerror), n.onload = f.bind(null, n.onload), s && document.head.appendChild(n)
+            n.onerror = l.bind(null, n.onerror), n.onload = l.bind(null, n.onload), s && document.head.appendChild(n)
           }
         }, u.r = e => {
           "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
@@ -251,9 +251,9 @@ _global.SENTRY_RELEASE = {
                   try {
                     var c = e(t, n);
                     if (!c || !c.then) return d(c, s, i);
-                    var l = c.then((e => d(e, s)), o);
-                    if (!i) return l;
-                    r.push(a.p = l)
+                    var f = c.then((e => d(e, s)), o);
+                    if (!i) return f;
+                    r.push(a.p = f)
                   } catch (e) {
                     o(e)
                   }
@@ -333,25 +333,25 @@ _global.SENTRY_RELEASE = {
                   n = o < 0;
                 n && (o = -o - 1);
                 for (var s = 0, d = 1, i = !0;; d++, s++) {
-                  var c, l, f = d < t.length ? (typeof t[d])[0] : "";
-                  if (s >= a.length || "o" == (l = (typeof(c = a[s]))[0])) return !i || ("u" == f ? d > o && !n : "" == f != n);
-                  if ("u" == l) {
-                    if (!i || "u" != f) return !1
+                  var c, f, l = d < t.length ? (typeof t[d])[0] : "";
+                  if (s >= a.length || "o" == (f = (typeof(c = a[s]))[0])) return !i || ("u" == l ? d > o && !n : "" == l != n);
+                  if ("u" == f) {
+                    if (!i || "u" != l) return !1
                   } else if (i)
-                    if (f == l)
+                    if (l == f)
                       if (d <= o) {
                         if (c != t[d]) return !1
                       } else {
                         if (n ? c > t[d] : c < t[d]) return !1;
                         c != t[d] && (i = !1)
                       }
-                  else if ("s" != f && "n" != f) {
+                  else if ("s" != l && "n" != l) {
                     if (n || d <= o) return !1;
                     i = !1, d--
                   } else {
-                    if (d <= o || l < f != n) return !1;
+                    if (d <= o || f < l != n) return !1;
                     i = !1
-                  } else "s" != f && "n" != f && (i = !1, d--)
+                  } else "s" != l && "n" != l && (i = !1, d--)
                 }
               }
               var u = [],

@@ -2,18 +2,18 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "d65c52a4-2d31-45b8-a076-e0929848c3ca", e._sentryDebugIdIdentifier = "sentry-dbid-d65c52a4-2d31-45b8-a076-e0929848c3ca")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "5a085000-4b90-4f03-a3bc-31d35e4f880b", e._sentryDebugIdIdentifier = "sentry-dbid-5a085000-4b90-4f03-a3bc-31d35e4f880b")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
-  release: "692b6956abd6177da3ac6da14c81527e5159ed6d",
+  release: "90b9af281bd1b5c2955354a97f6fab1985234888",
   packageName: "@rockstargames/sites-rockstargames",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
-  id: "692b6956abd6177da3ac6da14c81527e5159ed6d"
+  id: "90b9af281bd1b5c2955354a97f6fab1985234888"
 }, System.register(["@rockstargames/graph-client", "@rockstargames/intl", "@rockstargames/modules-core-card", "@rockstargames/modules-core-gif-viewer", "@rockstargames/modules-core-header", "@rockstargames/modules-core-newswire-article", "@rockstargames/modules-core-sc-user", "@rockstargames/modules-core-screenshot-viewer", "@rockstargames/modules-core-videoplayer", "@rockstargames/sites-careers", "@rockstargames/sites-gta", "@rockstargames/sites-gta-gen9", "@rockstargames/sites-gta-trilogy", "@rockstargames/sites-gta-tv", "@rockstargames/sites-legacy", "@rockstargames/sites-red-dead-online", "@rockstargames/sites-red-dead-redemption-2", "@rockstargames/sites-rockstar-tv", "@rockstargames/tina", "@rockstargames/utils"], (function(e, t) {
   var r = {},
     a = {},
@@ -21,8 +21,8 @@ _global.SENTRY_RELEASE = {
     n = {},
     s = {},
     c = {},
-    d = {},
     f = {},
+    d = {},
     i = {},
     u = {},
     l = {},
@@ -47,9 +47,9 @@ _global.SENTRY_RELEASE = {
     value: !0
   }), Object.defineProperty(c, "__esModule", {
     value: !0
-  }), Object.defineProperty(d, "__esModule", {
-    value: !0
   }), Object.defineProperty(f, "__esModule", {
+    value: !0
+  }), Object.defineProperty(d, "__esModule", {
     value: !0
   }), Object.defineProperty(i, "__esModule", {
     value: !0
@@ -102,11 +102,11 @@ _global.SENTRY_RELEASE = {
       }))
     }, function(e) {
       Object.keys(e).forEach((function(t) {
-        d[t] = e[t]
+        f[t] = e[t]
       }))
     }, function(e) {
       Object.keys(e).forEach((function(t) {
-        f[t] = e[t]
+        d[t] = e[t]
       }))
     }, function(e) {
       Object.keys(e).forEach((function(t) {
@@ -232,11 +232,11 @@ _global.SENTRY_RELEASE = {
             },
             81128: e => {
               "use strict";
-              e.exports = d
+              e.exports = f
             },
             56672: e => {
               "use strict";
-              e.exports = f
+              e.exports = d
             },
             14472: e => {
               "use strict";
@@ -325,52 +325,52 @@ _global.SENTRY_RELEASE = {
         }, S.f = {}, S.e = e => Promise.all(Object.keys(S.f).reduce(((t, r) => (S.f[r](e, t), t)), [])), S.u = e => "js/" + {
           16: "8901e6d10c174508741b133df8afa275",
           61: "cc40abc6155f8371466cec04f83794c6",
-          64: "b8e65136be3131393179978d8c78d362",
-          72: "db37172bae9511e34db37750129f59b6",
-          88: "28ec0e9e0d68339ef764fb1fb3d4f992",
-          100: "51c43b7b5d43c386047b01040ba2585b",
-          104: "3c441abc171dbecf555563f98a3ce62a",
+          64: "321281feea6ebdace10b75e540bfb9d3",
+          72: "3b629233a96fb57623394115a194cf2b",
+          88: "be7137d7719009b62b3ac09e19055698",
+          100: "6c6be826dddc27a5ae699438cbcd46e5",
+          104: "788388fc7f054af853e7fbe8d4f661b4",
           140: "690bb21b04b5a907d2b270e3feb622c1",
-          144: "faaba36af41fb0a02aafb9511c8d3bd7",
-          168: "1a114d2aff907790ec5c6d319f4e3630",
+          144: "7c88ae316aea88c83cd16c6ceb1ed608",
+          168: "a98819e78d8f9f7df893ff0cded7af0c",
           190: "85fd5ad2038f0c57756d0e57310c7548",
-          226: "b15cd8654e0893956ecac552d432826d",
+          226: "5474adf45a05ce2c7c605b01a576211c",
           228: "6e116db03e9d5293bc6a0bab083b02bf",
-          236: "e612d35912432993193179e893be9c74",
-          240: "3018831f5812a7ad6dfffdd69bbbf363",
+          236: "348bdc9047377ff10ead37ba9c64d012",
+          240: "28669360088ddf3b67b2ebf60c1e9dd7",
           256: "2a098475817dc85d7074cc07e013a1c5",
-          276: "9ed425803b7b9b006f9074092e581291",
-          280: "3a264dccbc0789f93b621eb2d4db94aa",
-          304: "5264deaa9da14a0311d0f05ba13ba0c6",
+          276: "0ec22fbc80230faa2e085679426bdea4",
+          280: "8a0da4e87961f7ecfcf579ad2bae9be0",
+          304: "b2e58dd2e4dfca6eafb558f318dbb5e4",
           396: "f169e3f53fd9db766772ea288d05cdae",
-          400: "0d58779b38ef357fd625008f16da7778",
-          408: "2563e7c4f9ce4ad8acc478ce20918462",
-          452: "58e39bbbbf9ba763cb63736beb3e68fe",
-          480: "05ae6def4e66fd067205e8a43f8edfb0",
+          400: "829c1273dc8ff9e7940d1e9ab3a7e660",
+          408: "23bc09fcae96830911411d15af33ee5e",
+          452: "887cf0c067f77a203379bf59b707ad4a",
+          480: "bdf80c76ccabb5653311e7517369285c",
           484: "32561f4ec01649ab808e4ca884639725",
-          524: "51de940155e0afdcb7dab4ca97e7e915",
-          560: "8d222d2b5ede6fa15e6ef14f242470ff",
+          524: "4b5691b157f20fe67648cca5d32a0df0",
+          560: "cfba8e8aff72ec365d8f6be1087fd25e",
           572: "1029ae86ba41c5b9451d90971174a6ba",
           584: "e28c611f27ac21cad258044dac1ae9ba",
-          598: "377dd322aaa1836158a6cff1a19277f8",
+          598: "0f368eb0e59890fdb58ba0d27b0f641a",
           620: "7e0c635d85830ea1cc251abdb28a08bf",
-          648: "f784a9ea40bb88e73731c85c6f6b7399",
+          648: "2c6c1455666803665d1227929878a26f",
           664: "3e4537f287ec9227bc06bb670e286551",
-          672: "11d28974dcd980ba87fc63010eaaeed8",
+          672: "b5fa5afe779c9cf72832e1546797c9ee",
           690: "f0b9f746802e44698a80040befe15db1",
-          696: "550dba9e49f08ae752b5f4c4f7566347",
+          696: "453f90294a34ba8266e04ab99b143e8a",
           708: "84e861ff48c75478c629c27ba5573800",
-          716: "59967e8be910589c32895fb6f08dab90",
+          716: "19cb3ab172dd3edc66618124ab7ec8b3",
           735: "776d39a6096f45568c3a03057c310d67",
-          764: "a2920af864ed8a3bcaab030470562869",
-          792: "961c78b81805b16f6f3fb503e10b88bc",
+          764: "98ef119b843833c30df10b84636ecf44",
+          792: "574b063631d8b5b76443af16dec72a6b",
           832: "e299cc8078a863f475346662dc273708",
-          860: "5d2c9beb41e1eec7dc844dcc197fa563",
+          860: "9603c41d246e49db391d7fb1975c4de0",
           868: "8b5ca408150f4c9d2fe21a9539bc15df",
-          895: "f06f1a8a2eb0ad7393f223600031f1bb",
+          895: "041cc2e53f537653983dfeaaa5b1f470",
           952: "ea2a4efe67b95892dac502e4106dd3fc"
         } [e] + ".js", S.miniCssF = e => "css/" + {
-          226: "ab05a2d181f9a40087a88e141a03fc38",
+          226: "38c97fd28278c251a3912ef23989021a",
           280: "63e8209a3ba7f21685a3016053342b52",
           400: "3842bc2be60b96e32d864a417fe42534",
           480: "47bf684458c1b2bf56e62f0c741595b9"
@@ -387,23 +387,23 @@ _global.SENTRY_RELEASE = {
             var o, n;
             if (void 0 !== r)
               for (var s = document.getElementsByTagName("script"), c = 0; c < s.length; c++) {
-                var d = s[c];
-                if (d.getAttribute("src") == e || d.getAttribute("data-webpack") == O + r) {
-                  o = d;
+                var f = s[c];
+                if (f.getAttribute("src") == e || f.getAttribute("data-webpack") == O + r) {
+                  o = f;
                   break
                 }
               }
             o || (n = !0, (o = document.createElement("script")).charset = "utf-8", o.timeout = 120, S.nc && o.setAttribute("nonce", S.nc), o.setAttribute("data-webpack", O + r), o.src = e), j[e] = [t];
-            var f = (t, r) => {
+            var d = (t, r) => {
                 o.onerror = o.onload = null, clearTimeout(i);
                 var a = j[e];
                 if (delete j[e], o.parentNode && o.parentNode.removeChild(o), a && a.forEach((e => e(r))), t) return t(r)
               },
-              i = setTimeout(f.bind(null, void 0, {
+              i = setTimeout(d.bind(null, void 0, {
                 type: "timeout",
                 target: o
               }), 12e4);
-            o.onerror = f.bind(null, o.onerror), o.onload = f.bind(null, o.onload), n && document.head.appendChild(o)
+            o.onerror = d.bind(null, o.onerror), o.onload = d.bind(null, o.onload), n && document.head.appendChild(o)
           }
         }, S.r = e => {
           "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
@@ -474,12 +474,12 @@ _global.SENTRY_RELEASE = {
                     throw t
                   }, a.p = 0
                 },
-                n = (e, r, n, s, c, d) => {
+                n = (e, r, n, s, c, f) => {
                   try {
-                    var f = e(r, n);
-                    if (!f || !f.then) return c(f, s, d);
-                    var i = f.then((e => c(e, s)), o);
-                    if (!d) return i;
+                    var d = e(r, n);
+                    if (!d || !d.then) return c(d, s, f);
+                    var i = d.then((e => c(e, s)), o);
+                    if (!f) return i;
                     t.push(a.p = i)
                   } catch (e) {
                     o(e)
@@ -515,7 +515,7 @@ _global.SENTRY_RELEASE = {
                     eager: !!a
                   })
                 },
-                d = e => {
+                f = e => {
                   var t = e => {
                     return t = "Initialization of sharing external failed: " + e, void("undefined" != typeof console && console.warn && console.warn(t));
                     var t
@@ -524,15 +524,15 @@ _global.SENTRY_RELEASE = {
                     var o = S(e);
                     if (!o) return;
                     var n = e => e && e.init && e.init(S.S[r], a);
-                    if (o.then) return f.push(o.then(n, t));
+                    if (o.then) return d.push(o.then(n, t));
                     var s = n(o);
-                    if (s && s.then) return f.push(s.catch(t))
+                    if (s && s.then) return d.push(s.catch(t))
                   } catch (e) {
                     t(e)
                   }
                 },
-                f = [];
-              return "default" === r && (c("@rockstargames/components", "1.14.0", (() => Promise.all([S.e(72), S.e(598), S.e(664), S.e(256), S.e(952), S.e(480), S.e(860)]).then((() => () => S(58568))))), c("@rockstargames/locale-tools", "1.0.0", (() => Promise.all([S.e(408), S.e(664), S.e(61), S.e(64)]).then((() => () => S(8304))))), c("@rockstargames/router", "1.0.0", (() => Promise.all([S.e(664), S.e(584), S.e(895)]).then((() => () => S(85276))))), c("dompurify", "2.4.7", (() => S.e(560).then((() => () => S(8560))))), c("framer-motion", "7.10.3", (() => Promise.all([S.e(648), S.e(664), S.e(672)]).then((() => () => S(57648))))), c("history", "4.10.1", (() => S.e(764).then((() => () => S(49144))))), c("react-dom", "18.2.0", (() => Promise.all([S.e(716), S.e(664)]).then((() => () => S(63716))))), c("react-jsx-parser", "1.29.0", (() => Promise.all([S.e(696), S.e(664)]).then((() => () => S(94696))))), c("react-router-dom", "6.17.0", (() => Promise.all([S.e(168), S.e(452), S.e(664), S.e(16)]).then((() => () => S(84832))))), c("react-router-dom", "6.17.0", (() => Promise.all([S.e(168), S.e(104), S.e(664), S.e(228)]).then((() => () => S(82104))))), c("react-router", "6.17.0", (() => Promise.all([S.e(168), S.e(88), S.e(664)]).then((() => () => S(79088))))), c("react-router", "6.17.0", (() => Promise.all([S.e(168), S.e(524), S.e(664)]).then((() => () => S(34524))))), c("react", "18.2.0", (() => S.e(100).then((() => () => S(77100))))), d(9344), d(33864), d(81128), d(88428), d(50800), d(97672), d(63314), d(25358), d(14472), d(26880), d(5576), d(3304), d(56672), d(46924), d(44718), d(62996), d(48854), d(80510), d(36620), d(93660)), f.length ? e[r] = Promise.all(f).then((() => e[r] = 1)) : e[r] = 1
+                d = [];
+              return "default" === r && (c("@rockstargames/components", "1.14.0", (() => Promise.all([S.e(72), S.e(598), S.e(664), S.e(256), S.e(952), S.e(480), S.e(860)]).then((() => () => S(58568))))), c("@rockstargames/locale-tools", "1.0.0", (() => Promise.all([S.e(408), S.e(664), S.e(61), S.e(64)]).then((() => () => S(8304))))), c("@rockstargames/router", "1.0.0", (() => Promise.all([S.e(664), S.e(584), S.e(895)]).then((() => () => S(85276))))), c("dompurify", "2.4.7", (() => S.e(560).then((() => () => S(8560))))), c("framer-motion", "7.10.3", (() => Promise.all([S.e(648), S.e(664), S.e(672)]).then((() => () => S(57648))))), c("history", "4.10.1", (() => S.e(764).then((() => () => S(49144))))), c("react-dom", "18.2.0", (() => Promise.all([S.e(716), S.e(664)]).then((() => () => S(63716))))), c("react-jsx-parser", "1.29.0", (() => Promise.all([S.e(696), S.e(664)]).then((() => () => S(94696))))), c("react-router-dom", "6.17.0", (() => Promise.all([S.e(168), S.e(452), S.e(664), S.e(16)]).then((() => () => S(84832))))), c("react-router-dom", "6.17.0", (() => Promise.all([S.e(168), S.e(104), S.e(664), S.e(228)]).then((() => () => S(82104))))), c("react-router", "6.17.0", (() => Promise.all([S.e(168), S.e(88), S.e(664)]).then((() => () => S(79088))))), c("react-router", "6.17.0", (() => Promise.all([S.e(168), S.e(524), S.e(664)]).then((() => () => S(34524))))), c("react", "18.2.0", (() => S.e(100).then((() => () => S(77100))))), f(9344), f(33864), f(81128), f(88428), f(50800), f(97672), f(63314), f(25358), f(14472), f(26880), f(5576), f(3304), f(56672), f(46924), f(44718), f(62996), f(48854), f(80510), f(36620), f(93660)), d.length ? e[r] = Promise.all(d).then((() => e[r] = 1)) : e[r] = 1
             }
           }
         })(), (() => {
@@ -559,26 +559,26 @@ _global.SENTRY_RELEASE = {
                 var o = r[0],
                   n = o < 0;
                 n && (o = -o - 1);
-                for (var s = 0, c = 1, d = !0;; c++, s++) {
-                  var f, i, u = c < r.length ? (typeof r[c])[0] : "";
-                  if (s >= a.length || "o" == (i = (typeof(f = a[s]))[0])) return !d || ("u" == u ? c > o && !n : "" == u != n);
+                for (var s = 0, c = 1, f = !0;; c++, s++) {
+                  var d, i, u = c < r.length ? (typeof r[c])[0] : "";
+                  if (s >= a.length || "o" == (i = (typeof(d = a[s]))[0])) return !f || ("u" == u ? c > o && !n : "" == u != n);
                   if ("u" == i) {
-                    if (!d || "u" != u) return !1
-                  } else if (d)
+                    if (!f || "u" != u) return !1
+                  } else if (f)
                     if (u == i)
                       if (c <= o) {
-                        if (f != r[c]) return !1
+                        if (d != r[c]) return !1
                       } else {
-                        if (n ? f > r[c] : f < r[c]) return !1;
-                        f != r[c] && (d = !1)
+                        if (n ? d > r[c] : d < r[c]) return !1;
+                        d != r[c] && (f = !1)
                       }
                   else if ("s" != u && "n" != u) {
                     if (n || c <= o) return !1;
-                    d = !1, c--
+                    f = !1, c--
                   } else {
                     if (c <= o || i < u != n) return !1;
-                    d = !1
-                  } else "s" != u && "n" != u && (d = !1, c--)
+                    f = !1
+                  } else "s" != u && "n" != u && (f = !1, c--)
                 }
               }
               var l = [],
@@ -695,8 +695,8 @@ _global.SENTRY_RELEASE = {
                     else {
                       var s = r && ("load" === r.type ? "missing" : r.type),
                         c = r && r.target && r.target.href || t,
-                        d = new Error("Loading CSS chunk " + e + " failed.\n(" + c + ")");
-                      d.code = "CSS_CHUNK_LOAD_FAILED", d.type = s, d.request = c, n.parentNode && n.parentNode.removeChild(n), o(d)
+                        f = new Error("Loading CSS chunk " + e + " failed.\n(" + c + ")");
+                      f.code = "CSS_CHUNK_LOAD_FAILED", f.type = s, f.request = c, n.parentNode && n.parentNode.removeChild(n), o(f)
                     }
                   }, n.href = t, document.head.appendChild(n)
                 })(e, o, 0, t, r)
@@ -734,12 +734,12 @@ _global.SENTRY_RELEASE = {
               var a, o, n = r[0],
                 s = r[1],
                 c = r[2],
-                d = 0;
+                f = 0;
               if (n.some((t => 0 !== e[t]))) {
                 for (a in s) S.o(s, a) && (S.m[a] = s[a]);
                 c && c(S)
               }
-              for (t && t(r); d < n.length; d++) o = n[d], S.o(e, o) && e[o] && e[o][0](), e[o] = 0
+              for (t && t(r); f < n.length; f++) o = n[f], S.o(e, o) && e[o] && e[o][0](), e[o] = 0
             },
             r = self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || [];
           r.forEach(t.bind(null, 0)), r.push = t.bind(null, r.push.bind(r))

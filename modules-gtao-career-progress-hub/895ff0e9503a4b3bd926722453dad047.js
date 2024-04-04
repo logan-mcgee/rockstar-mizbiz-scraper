@@ -1,0 +1,21 @@
+! function() {
+  try {
+    var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
+      a = (new Error).stack;
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "cca0a752-fb2c-4d22-a643-06a8019b462d", e._sentryDebugIdIdentifier = "sentry-dbid-cca0a752-fb2c-4d22-a643-06a8019b462d")
+  } catch (e) {}
+}();
+var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
+_global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
+  release: "90b9af281bd1b5c2955354a97f6fab1985234888",
+  packageName: "@rockstargames/modules-gtao-career-progress-hub",
+  dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
+};
+var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
+_global.SENTRY_RELEASE = {
+  id: "90b9af281bd1b5c2955354a97f6fab1985234888"
+}, (self.webpackChunk_rockstargames_modules_gtao_career_progress_hub = self.webpackChunk_rockstargames_modules_gtao_career_progress_hub || []).push([
+  [236], {
+    46236: () => {}
+  }
+]);
