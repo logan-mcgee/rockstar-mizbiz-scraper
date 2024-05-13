@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "302114e1-51d3-48f6-84e7-807ba8342e91", e._sentryDebugIdIdentifier = "sentry-dbid-302114e1-51d3-48f6-84e7-807ba8342e91")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "5af7c8a9-1471-47de-9ca1-5d5aef3ff551", e._sentryDebugIdIdentifier = "sentry-dbid-5af7c8a9-1471-47de-9ca1-5d5aef3ff551")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -172,59 +172,59 @@ _global.SENTRY_RELEASE = {
           })
         }, p.f = {}, p.e = e => Promise.all(Object.keys(p.f).reduce(((t, r) => (p.f[r](e, t), t)), [])), p.u = e => "js/" + {
           16: "36ff3763713ec97535dd84a3d09c7b29",
-          22: "eca0a03a343e6bcad3c18a03402bab2a",
+          22: "5f97da0c1f0c2b418eb03ae41bde7e63",
           24: "3ac257557abb769901cc0fd338da982d",
           36: "23be2566e151ce81aada35fe402ebe61",
+          44: "f8fa50ac3cdc99ea7144ebc241f3890a",
           52: "94c9b86c364b9098d5d59f16d88ba1e5",
           64: "c7ef6106b6febc6e9cc69af067958f18",
-          68: "66d71899582df2717a41cca2605f4c75",
-          88: "2855092a9d03972ec1a4111ee207d5be",
-          100: "d70381bc9f85460e47277e9bea84f5ce",
+          68: "e9a97a9f375a143a8f0c7ea5472b1a2b",
+          88: "b158fceddb221c855fac3c2e3a06f468",
+          100: "6135eeeb667f3bfcfb4392d810e4d01b",
           120: "8960bc562114130b9c86ccfc1d0bac84",
-          152: "725412eb65011400b97ddee7a98a1254",
-          179: "963b276e5d4dabffcb9cc36ea9fa02f5",
-          184: "bf9d1e7d48f6d289e30b0fd48475814f",
-          196: "31df985c61350b5a6698ecac64f43eae",
-          216: "26a6f5eddb7239220470a370e413a494",
+          152: "9d781ce39371a8971dedf137c3e950c0",
+          179: "ad2353f9bf8dabb91400b3c09e1e5082",
+          184: "3d3ba1d25a2b354ed4de81aacd25ca47",
+          196: "e934d8010cb74d09d889944f1f223552",
+          216: "ecd71a490a69c0ec161a76ca7ee640b6",
           232: "7ee280502293deb66685708d33c16cde",
-          240: "9d369a5b2ed327c3dc2d2d3dc9e63331",
-          256: "05cee49a660ebe23f1bba9843844d306",
-          288: "58c4678bf485f6a521e332d3d7bc925a",
-          312: "408e159cc2f61b69ce9e93eb530b6adf",
-          404: "a804d292b26b5bf7c8232295d9f2406e",
+          240: "ab020beebac4a2f008a7ff294f3afd3d",
+          288: "c075fd4b02b4eeb8e3265f379e7d5cbe",
+          312: "8a398c3aed35d3b63b4df0e64ef0c3d5",
+          404: "c88bf483abfe4c3473d29fc648a12be3",
           536: "f041fe032a5e85cb1ec973c16c525b76",
-          560: "bf3c0ade545a09bf26c838fabac5c097",
-          576: "29f987d0a34559230b6020b06286cd6f",
-          600: "31896ec0352e89af481ef667a93f3f52",
-          608: "2c201f2e92ee3220765e1913191b371c",
+          560: "7bac00650b4bef202699f6143698b50e",
+          576: "eded627c5c6f64ab7bcf2bbc419ea3d6",
+          600: "108fa85c2302c8511b29a5097cacee33",
+          608: "c2e6d66dcd1648d7de18ab31c4469373",
           628: "73e8956cd55af8f79ed7e7679da8b1f9",
           644: "2dddfb9c099e5e86fda9b5ca75a5ad63",
           656: "aa17d16347c149ca017819180bca9f59",
-          660: "3597185cec350f25d5a95dd97984f667",
+          660: "7cf7d74b02585ebba81d73aa4ec3b696",
           664: "4a6c87897c87f6d0707052f2e5a9b65e",
-          680: "87e2aee5840dda2d741c8926a294745f",
-          716: "bc5f90ba70c4234d874a4f07e2901891",
-          771: "b647b4b1ba88817230ab2042ef10d789",
-          784: "3746cfe05a6aef14b2ae5ebf5d4770ca",
+          680: "e75ef77f72e21bdd35f5886d13a5e2f3",
+          716: "0f4343e7353a8800851c01b5a2180b0d",
+          771: "3ae457af8bd4fcc66912f58c450e8536",
+          784: "f83141e7e39b23aab8e6102e5552dcf0",
           792: "c187ecd1a3c56e63a835f4a5f0d08ea9",
-          832: "5c68b1969faed053b925dbd4392b5a94",
-          856: "daf242e230d6e836e974f421c29a459e",
+          832: "e3005e58b4093aed5e0edbc28ef658a8",
+          856: "25a4e7926345ba9f57ad73a0da228274",
           883: "69030ab72ac449554747136d5c3bbf2d",
-          884: "f06a9da9c568171047e3e9342176e92a",
-          960: "9356dd25a3b45e8adf43b4e6a90772d5",
+          884: "11717b439a2070988780a9def670091c",
+          960: "81e51968bd585f2d31238ca7483d24bf",
           968: "8d8e67c2d38eb663d135c05dec7bfbcd",
-          980: "471db53779c4da2c527a7e64b69d12d6"
+          980: "c11116b571feb3155aa7fb271054e3a3"
         } [e] + ".js", p.miniCssF = e => "css/" + {
           16: "39ff1dafce4f00ed5e4e8d89a4e075ae",
+          44: "54d86b1912ea78b7235340cf2a4185cd",
           152: "2d1c0b9b67883648652d608f8448f059",
-          232: "07c38517b50c34ab4be48126243c3f39",
-          256: "7ce59b77f31842ec805c2641fa4570f0",
+          232: "2b9bc0d46ef65f8055c2d531b8175e73",
           312: "38cfc95a9203c101bd489ff5c88bc10d",
-          576: "07c38517b50c34ab4be48126243c3f39",
+          576: "2b9bc0d46ef65f8055c2d531b8175e73",
           656: "7804a8964f391fe5e1b3d2ce77453b1e",
           771: "2d1c0b9b67883648652d608f8448f059",
           883: "8b37b03006bedc02b349b4e790ec7aff",
-          884: "137195c2ffbf69cc64fdd3fef8fbd017"
+          884: "8fc15dbf7c6005ae707df0089996986b"
         } [e] + ".css", p.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
@@ -265,10 +265,10 @@ _global.SENTRY_RELEASE = {
         }, p.nmd = e => (e.paths = [], e.children || (e.children = []), e), i = {
           24: [73784],
           36: [1740],
+          44: [1532, 28540],
           52: [33052],
           64: [45652],
           120: [55120],
-          256: [1532, 28540],
           536: [42836, 3061],
           644: [84644],
           660: [7256, 19572, 32104, 41736, 65988, 84344, 89468],
@@ -368,7 +368,7 @@ _global.SENTRY_RELEASE = {
                   }
                 },
                 f = [];
-              return "default" === r && (c("@rockstargames/components", "1.14.0", (() => Promise.all([p.e(608), p.e(560), p.e(784), p.e(664), p.e(36), p.e(792), p.e(52), p.e(64), p.e(536), p.e(968), p.e(883), p.e(24), p.e(256), p.e(240)]).then((() => () => p(40204))))), c("@rockstargames/modules-core-carousel", "1.2.4", (() => Promise.all([p.e(560), p.e(664), p.e(36), p.e(656), p.e(600)]).then((() => () => p(76980))))), c("@rockstargames/modules-core-engagement", "0.0.2", (() => Promise.all([p.e(608), p.e(560), p.e(960), p.e(664), p.e(36), p.e(792), p.e(52), p.e(536), p.e(120), p.e(232), p.e(196)]).then((() => () => p(11e3))))), c("@rockstargames/modules-core-group-of-items", "1.2.0", (() => Promise.all([p.e(664), p.e(36), p.e(644), p.e(152)]).then((() => () => p(86152))))), c("@rockstargames/modules-sc-ugc-spotlight", "1.1.3", (() => p.e(404).then((() => () => p(11784))))), c("dompurify", "2.4.7", (() => p.e(179).then((() => () => p(8560))))), c("lodash", "4.17.21", (() => p.e(22).then((() => () => p(79784))))), c("react-dom", "18.2.0", (() => Promise.all([p.e(716), p.e(664)]).then((() => () => p(63716))))), c("react-jsx-parser", "1.29.0", (() => Promise.all([p.e(856), p.e(664)]).then((() => () => p(36856))))), c("react-router-dom", "6.17.0", (() => Promise.all([p.e(88), p.e(832), p.e(664)]).then((() => () => p(84832))))), c("react-router-dom", "6.17.0", (() => Promise.all([p.e(88), p.e(288), p.e(664)]).then((() => () => p(40288))))), c("react", "18.2.0", (() => p.e(100).then((() => () => p(99480))))), c("text-balancer", "1.0.5", (() => p.e(184).then((() => () => p(86184))))), s(88428), s(9344), s(33864), s(81128), s(14472), s(50800), s(5576)), f.length ? e[r] = Promise.all(f).then((() => e[r] = 1)) : e[r] = 1
+              return "default" === r && (c("@rockstargames/components", "1.14.0", (() => Promise.all([p.e(608), p.e(560), p.e(784), p.e(664), p.e(36), p.e(792), p.e(52), p.e(64), p.e(536), p.e(968), p.e(883), p.e(24), p.e(44), p.e(240)]).then((() => () => p(16484))))), c("@rockstargames/modules-core-carousel", "1.2.4", (() => Promise.all([p.e(560), p.e(664), p.e(36), p.e(656), p.e(600)]).then((() => () => p(76980))))), c("@rockstargames/modules-core-engagement", "0.0.2", (() => Promise.all([p.e(608), p.e(560), p.e(960), p.e(664), p.e(36), p.e(792), p.e(52), p.e(536), p.e(120), p.e(232), p.e(196)]).then((() => () => p(11e3))))), c("@rockstargames/modules-core-group-of-items", "1.2.0", (() => Promise.all([p.e(664), p.e(36), p.e(644), p.e(152)]).then((() => () => p(86152))))), c("@rockstargames/modules-sc-ugc-spotlight", "1.1.3", (() => p.e(404).then((() => () => p(11784))))), c("dompurify", "2.4.7", (() => p.e(179).then((() => () => p(8560))))), c("lodash", "4.17.21", (() => p.e(22).then((() => () => p(79784))))), c("react-dom", "18.2.0", (() => Promise.all([p.e(716), p.e(664)]).then((() => () => p(63716))))), c("react-jsx-parser", "1.29.0", (() => Promise.all([p.e(856), p.e(664)]).then((() => () => p(36856))))), c("react-router-dom", "6.17.0", (() => Promise.all([p.e(88), p.e(832), p.e(664)]).then((() => () => p(84832))))), c("react-router-dom", "6.17.0", (() => Promise.all([p.e(88), p.e(288), p.e(664)]).then((() => () => p(40288))))), c("react", "18.2.0", (() => p.e(100).then((() => () => p(99480))))), c("text-balancer", "1.0.5", (() => p.e(184).then((() => () => p(86184))))), s(88428), s(9344), s(33864), s(81128), s(14472), s(50800), s(5576)), f.length ? e[r] = Promise.all(f).then((() => e[r] = 1)) : e[r] = 1
             }
           }
         })(), (() => {
@@ -452,7 +452,7 @@ _global.SENTRY_RELEASE = {
             o = {},
             n = {
               51664: () => a("default", "react", [1, 18, 2, 0], (() => p.e(100).then((() => () => p(99480))))),
-              9860: () => a("default", "@rockstargames/components", [1, "workspace:*"], (() => Promise.all([p.e(608), p.e(560), p.e(784), p.e(792), p.e(52), p.e(64), p.e(536), p.e(968), p.e(883), p.e(24), p.e(256)]).then((() => () => p(40204))))),
+              9860: () => a("default", "@rockstargames/components", [1, "workspace:*"], (() => Promise.all([p.e(608), p.e(560), p.e(784), p.e(792), p.e(52), p.e(64), p.e(536), p.e(968), p.e(883), p.e(24), p.e(44)]).then((() => () => p(16484))))),
               89416: () => a("default", "dompurify", [1, 2, 4, 1], (() => p.e(179).then((() => () => p(8560))))),
               57013: () => a("default", "react-router-dom", [1, 6, 11, 2], (() => Promise.all([p.e(88), p.e(832)]).then((() => () => p(84832))))),
               73660: () => a("default", "lodash", [1, 4, 17, 21], (() => p.e(22).then((() => () => p(79784))))),
@@ -468,9 +468,9 @@ _global.SENTRY_RELEASE = {
             d = {
               16: [46280],
               36: [9860],
+              44: [77364],
               64: [89416],
               232: [69844],
-              256: [77364],
               576: [69844],
               628: [46040, 53964],
               664: [51664],
@@ -510,9 +510,9 @@ _global.SENTRY_RELEASE = {
             p.f.miniCss = (t, r) => {
               e[t] ? r.push(e[t]) : 0 !== e[t] && {
                 16: 1,
+                44: 1,
                 152: 1,
                 232: 1,
-                256: 1,
                 312: 1,
                 576: 1,
                 656: 1,
