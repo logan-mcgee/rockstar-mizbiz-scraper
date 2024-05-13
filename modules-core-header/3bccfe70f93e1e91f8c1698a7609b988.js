@@ -1,8 +1,8 @@
 ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "77742a2c-fd37-4570-8753-efa33b340abb", e._sentryDebugIdIdentifier = "sentry-dbid-77742a2c-fd37-4570-8753-efa33b340abb")
+      d = (new Error).stack;
+    d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "8afc9728-e90d-4733-a1c8-8e2a15415a67", e._sentryDebugIdIdentifier = "sentry-dbid-8afc9728-e90d-4733-a1c8-8e2a15415a67")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -16,34 +16,34 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [412], {
-    64508: (e, a, n) => {
-      var d = n(77364);
-      a.C = d.createRoot, d.hydrateRoot
+    64508: (e, d, n) => {
+      var a = n(77364);
+      d.C = a.createRoot, a.hydrateRoot
     },
-    66412: (e, a, n) => {
-      n.r(a);
-      var d = n(61076),
-        o = n(71612),
+    66412: (e, d, n) => {
+      n.r(d);
+      var a = n(61076),
+        o = n(25144),
         t = n(64508),
         r = n(12652),
         l = n(95240);
       const {
-        graphEnv: s,
-        pingBearer: b
+        graphEnv: f,
+        pingBearer: s
       } = (0, o.S_)();
 
       function c() {
         const e = document.createElement("div");
         e.id = "global-nav-root", document.body.prepend(e);
-        const a = (0, t.C)(e),
-          n = (0, d.EB)(r.c, {
-            env: s,
-            token: (0, d.UT)(null),
-            tokenPing: (0, d.UT)(b),
-            tokenPingExpires: (0, d.UT)(null),
+        const d = (0, t.C)(e),
+          n = (0, a.EB)(r.c, {
+            env: f,
+            token: (0, a.UT)(null),
+            tokenPing: (0, a.UT)(s),
+            tokenPingExpires: (0, a.UT)(null),
             typePolicies: {}
           });
-        a.render((0, l.jsx)(n, {}))
+        d.render((0, l.jsx)(n, {}))
       }
       "loading" === document.readyState ? document.addEventListener("DOMContentLoaded", c) : c()
     }

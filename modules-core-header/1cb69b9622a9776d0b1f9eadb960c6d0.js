@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "18a960fa-5af2-424d-881d-db5cf0be010d", e._sentryDebugIdIdentifier = "sentry-dbid-18a960fa-5af2-424d-881d-db5cf0be010d")
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "a41ced38-b20b-4a05-ae92-172f65ed3cd3", e._sentryDebugIdIdentifier = "sentry-dbid-a41ced38-b20b-4a05-ae92-172f65ed3cd3")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -15,119 +15,122 @@ var _global = "undefined" != typeof window ? window : "undefined" != typeof glob
 _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
-  [888], {
-    7484: (e, a, t) => {
+  [812], {
+    90688: (e, a, t) => {
       "use strict";
       t.r(a), t.d(a, {
         A: () => p,
         AudioPlayer: () => S,
         Badge: () => w,
         Brands: () => j,
-        Button: () => I,
-        ButtonGroup: () => Z,
-        CalloutSection: () => _e,
-        Carousel: () => re,
-        ConditionalBlock: () => de,
-        CookieAB: () => ye,
-        CountryInputField: () => xe,
-        Cta: () => Ce,
-        DescriptionArea: () => Ue,
+        Button: () => T,
+        ButtonGroup: () => ae,
+        CalloutSection: () => he,
+        Carousel: () => ie,
+        ConditionalBlock: () => me,
+        CookieAB: () => Se,
+        CountryInputField: () => Ne,
+        Cta: () => Ie,
+        DescriptionArea: () => Re,
         DiscountsBadge: () => qe,
-        DotLoader: () => Xe,
+        DotLoader: () => Ke,
         Dropdown: () => Ze,
         Embed: () => ta,
         ExpandingPlatformButton: () => ma,
         FadeInContent: () => fa,
         GameCard: () => s,
         GameSiteHeader: () => ha,
-        Gen9Button: () => Y,
+        Gen9Button: () => ee,
         Gen9CoreCarousel: () => Sa,
         Grid: () => ea,
         HTMLElement: () => Va,
         Hero: () => La,
-        HookStore: () => ie,
-        ImageWithBadge: () => Ua,
+        HookStore: () => ce,
+        ImageWithBadge: () => Ra,
+        InViewTracker: () => Ja,
         LanguageSelector: () => $a,
         LayeredImage: () => Oa,
-        LoadingAnimation: () => $r,
+        LoadingAnimation: () => Rr,
         MultiSourceImage: () => Le,
-        NewswireBlocks: () => at,
-        NewswireCard: () => Ja,
-        NewswireList: () => Qa,
-        NewswireRelated: () => Za,
-        NewswireTag: () => Wa,
-        OrderedList: () => rt,
-        PackList: () => pt,
-        PackListMenu: () => It,
-        Paging: () => Et,
-        ParallaxCacheBuster: () => Vt,
-        ParallaxInnerLayer: () => Bt,
-        ParallaxOuterLayer: () => zt,
-        ParallaxWrapper: () => Pt,
+        NewswireBlocks: () => nt,
+        NewswireCard: () => Ya,
+        NewswireList: () => at,
+        NewswireRelated: () => st,
+        NewswireTag: () => Xa,
+        OrderedList: () => ct,
+        PackList: () => ht,
+        PackListMenu: () => Vt,
+        Paging: () => Bt,
+        ParallaxCacheBuster: () => zt,
+        ParallaxInnerLayer: () => At,
+        ParallaxOuterLayer: () => Ut,
+        ParallaxWrapper: () => Ot,
         ProfileSwitcher: () => r,
-        PromoModule: () => Ss,
-        Rating: () => Is,
-        ResponsiveFlexBox: () => Ms,
-        ResponsiveFlexItem: () => Ls,
-        ResponsiveGridBox: () => Ds,
-        ResponsiveGridItem: () => Bs,
-        ResponsiveImg: () => zs,
-        ResponsiveSection: () => Os,
-        RockstarLogo: () => As,
-        ScrollToTop: () => Us,
-        ScrollTracker: () => Hs,
-        SearchBox: () => Gs,
+        PromoModule: () => Ts,
+        Rating: () => Ls,
+        ResponsiveFlexBox: () => Ps,
+        ResponsiveFlexItem: () => Bs,
+        ResponsiveGridBox: () => zs,
+        ResponsiveGridItem: () => Os,
+        ResponsiveImg: () => Rs,
+        ResponsiveSection: () => Gs,
+        RockstarLogo: () => Hs,
+        ScrollToTop: () => Ws,
+        ScrollTracker: () => Js,
+        SearchBox: () => Ks,
         Separator: () => Fe,
-        Skeleton: () => qs,
-        SrcsetImage: () => Ha,
-        TextFit: () => He,
-        ThumbsGallery: () => ar,
-        TinaModuleFetchNRender: () => rr,
-        TinaWrapper: () => nr,
-        TrackList: () => Qs,
+        Skeleton: () => Qs,
+        SrcsetImage: () => Ga,
+        TextFit: () => Ge,
+        ThumbsGallery: () => nr,
+        TinaModuleFetchNRender: () => cr,
+        TinaWrapper: () => dr,
+        TrackList: () => ar,
         UnorderedList: () => $e,
-        UserVote: () => cr,
+        UserVote: () => ur,
         VideoCard: () => n,
-        VideoCarousel: () => lr,
-        VideoList: () => fr,
-        Wasted: () => gr,
+        VideoCarousel: () => gr,
+        VideoList: () => kr,
+        VisuallyHidden: () => br,
+        Wasted: () => hr,
         framer: () => o,
-        useTinaModuleFetchByIds: () => sr,
-        withSearchbarErrorBoundary: () => hr,
+        useTinaModuleFetchByIds: () => or,
+        withInViewTracker: () => Wa,
+        withSearchbarErrorBoundary: () => Sr,
         withSimpleErrorBoundary: () => ya
       });
       var s = {};
       t.r(s), t.d(s, {
         Art: () => pa,
-        Link: () => _a
+        Link: () => ka
       });
       var r = {};
       t.r(r), t.d(r, {
-        CharacterCard: () => Rt,
-        Menu: () => hs,
-        MenuButton: () => ys
+        CharacterCard: () => Jt,
+        Menu: () => Ns,
+        MenuButton: () => js
       });
       var n = {};
       t.r(n), t.d(n, {
-        Art: () => kr,
-        Link: () => _r
+        Art: () => xr,
+        Link: () => yr
       });
       var i = {};
       t.r(i), t.d(i, {
-        getVariant: () => Lr,
-        transitions: () => Mr,
-        variants: () => Er
+        getVariant: () => $r,
+        transitions: () => Dr,
+        variants: () => Br
       });
       var o = {};
       t.r(o), t.d(o, {
         Animations: () => i,
-        LiteMotion: () => xr,
-        withFadeIn: () => wr,
-        withFadeUp: () => Tr
+        LiteMotion: () => jr,
+        withFadeIn: () => Mr,
+        withFadeUp: () => Pr
       });
       var c = t(51664),
         d = t(41272);
-      const l = JSON.parse('{"us":{"aria_label_open_new_window":"(Opens in a new window)","pl_card_badge_content_complete":"Complete","plm_nav_scroll_left":"Scroll Left","plm_nav_scroll_right":"Scroll Right","language_selector_default":"Select a Language","profile_selector_mugshot":"{userName} mugshot","profile_selector_profile_card":"Profile Card","profile_selector_rp_icon":"RP Category","profile_selector_switch_character":"Switch Character","sc_link_account":"Account","sc_link_activity_feed":"Activity Feed","sc_link_cookies_policy":"Cookies Policy","sc_link_cookies_settings":"Cookies Settings","sc_link_crews":"Crews","sc_link_do_not_sell_my_information":"Do Not Sell My Information","sc_link_find_friends":"Find Friends","sc_link_friends":"Friends","sc_link_game_activation":"Game Activation","sc_link_help":"Help","sc_link_import_friends":"Import Friends","sc_link_join_social_club":"Sign Up","sc_link_legal":"Legal","sc_link_log_out":"Log Out","sc_link_messages":"Messages","sc_link_my_friends":"My Friends","sc_link_notifications":"Notifications","sc_link_privacy_policy":"Privacy Policy","sc_link_settings":"Settings","sc_link_sign_in":"Sign In","sc_link_support":"Support","sc_link_view_my_profile":"View My Profile","sc_menu_drag_handle":"Drag Menu Handle","sc_menu_toggle":"Toggle Social Club Menu","rp_icon":"RP Category","components_track_list_title":"Tracklist","disabled_label":"Disabled","next_button_label":"Next video page","previous_button_label":"Previous video page"},"de":{"aria_label_open_new_window":"(Öffnet ein neues Fenster)","pl_card_badge_content_complete":"Abgeschlossen","plm_nav_scroll_left":"Links scrollen","plm_nav_scroll_right":"Rechts scrollen","language_selector_default":"Eine Sprache auswählen","profile_selector_mugshot":"Verbrecherfoto von {userName}","profile_selector_profile_card":"Profildaten","profile_selector_rp_icon":"RP-Kategorie","profile_selector_switch_character":"Charakter wechseln","sc_link_account":"Konto","sc_link_activity_feed":"Aktivitäten-Feed","sc_link_cookies_policy":"Cookie-Richtlinie","sc_link_cookies_settings":"Cookie-Einstellungen","sc_link_crews":"Crews","sc_link_do_not_sell_my_information":"Meine Informationen nicht verkaufen","sc_link_find_friends":"Freunde finden","sc_link_friends":"Freunde","sc_link_game_activation":"Spielaktivierung","sc_link_help":"Hilfe","sc_link_import_friends":"Freunde importieren","sc_link_join_social_club":"Registrieren","sc_link_legal":"Rechtliches","sc_link_log_out":"Abmelden","sc_link_messages":"Nachrichten","sc_link_my_friends":"Meine Freunde","sc_link_notifications":"Benachrichtigungen","sc_link_privacy_policy":"Datenschutzrichtlinien","sc_link_settings":"Einstellungen","sc_link_sign_in":"Anmelden","sc_link_support":"Support","sc_link_view_my_profile":"Mein Profil ansehen","sc_menu_drag_handle":"Menü öffnen bzw. schließen","sc_menu_toggle":"Social-Club-Menü öffnen bzw. schließen","rp_icon":"RP-Kategorie","components_track_list_title":"Trackliste","disabled_label":"Deaktiviert","next_button_label":"Nächste Videoseite","previous_button_label":"Vorherige Videoseite"},"es":{"aria_label_open_new_window":"(Se abre en una ventana nueva)","pl_card_badge_content_complete":"Completado","plm_nav_scroll_left":"Desplazar hacia la izquierda","plm_nav_scroll_right":"Desplazar hacia la derecha","language_selector_default":"Selecciona un idioma","profile_selector_mugshot":"Foto de {userName}","profile_selector_profile_card":"Tarjeta de perfil","profile_selector_rp_icon":"Categoría de RP","profile_selector_switch_character":"Cambiar personaje","sc_link_account":"Cuenta","sc_link_activity_feed":"Actividades","sc_link_cookies_policy":"Política de cookies","sc_link_cookies_settings":"Ajustes de cookies","sc_link_crews":"Crews","sc_link_do_not_sell_my_information":"No quiero que vendáis mis datos","sc_link_find_friends":"Buscar amigos","sc_link_friends":"Amigos","sc_link_game_activation":"Activación del juego","sc_link_help":"Ayuda","sc_link_import_friends":"Importar amigos","sc_link_join_social_club":"Registrarse","sc_link_legal":"Aviso legal","sc_link_log_out":"Cerrar sesión","sc_link_messages":"Mensajes","sc_link_my_friends":"Mis amigos","sc_link_notifications":"Notificaciones","sc_link_privacy_policy":"Política de privacidad","sc_link_settings":"Ajustes","sc_link_sign_in":"Iniciar sesión","sc_link_support":"Asistencia técnica","sc_link_view_my_profile":"Ver mi perfil","sc_menu_drag_handle":"Arrastrar el controlador del menú","sc_menu_toggle":"Cambiar el menú del Social Club","rp_icon":"Categoría de RP","components_track_list_title":"Lista de pistas","disabled_label":"Desactivado","next_button_label":"Página de vídeo siguiente","previous_button_label":"Página de vídeo anterior"},"mx":{"aria_label_open_new_window":"(Se abre en una ventana nueva)","pl_card_badge_content_complete":"Completado","plm_nav_scroll_left":"Desplazarse hacia la izquierda","plm_nav_scroll_right":"Desplazarse hacia la derecha","language_selector_default":"Seleccionar un idioma","profile_selector_mugshot":"Foto de {userName}","profile_selector_profile_card":"Tarjeta del perfil","profile_selector_rp_icon":"Categoría de RP","profile_selector_switch_character":"Cambiar personaje","sc_link_account":"Cuenta","sc_link_activity_feed":"Muro de actividades","sc_link_cookies_policy":"Política de cookies","sc_link_cookies_settings":"Configuración de cookies","sc_link_crews":"Crews","sc_link_do_not_sell_my_information":"No quiero que vendan mis datos","sc_link_find_friends":"Encontrar amigos","sc_link_friends":"Amigos","sc_link_game_activation":"Activación de juegos","sc_link_help":"Ayuda","sc_link_import_friends":"Importar amigos","sc_link_join_social_club":"Registro","sc_link_legal":"Legal","sc_link_log_out":"Cerrar sesión","sc_link_messages":"Mensajes","sc_link_my_friends":"Mis amigos","sc_link_notifications":"Notificaciones","sc_link_privacy_policy":"Política de privacidad","sc_link_settings":"Configuración","sc_link_sign_in":"Iniciar sesión","sc_link_support":"Soporte","sc_link_view_my_profile":"Ver mi perfil","sc_menu_drag_handle":"Mover el handle del menú","sc_menu_toggle":"Cambiar menú del Social Club","rp_icon":"Categoría de RP","components_track_list_title":"Lista de canciones","disabled_label":"Desactivado","next_button_label":"Página de video siguiente","previous_button_label":"Página de video anterior"},"fr":{"aria_label_open_new_window":"(S’ouvre dans une nouvelle fenêtre)","pl_card_badge_content_complete":"Terminé","plm_nav_scroll_left":"Faire défiler vers la gauche","plm_nav_scroll_right":"Faire défiler vers la droite","language_selector_default":"Sélectionner une langue","profile_selector_mugshot":"Photo d\'identité : {userName}","profile_selector_profile_card":"Carte du profil","profile_selector_rp_icon":"Catégorie de RP","profile_selector_switch_character":"Changer de personnage","sc_link_account":"Compte","sc_link_activity_feed":"Fil d\'activités","sc_link_cookies_policy":"Politique en matière de cookies","sc_link_cookies_settings":"Paramètres des cookies","sc_link_crews":"Crews","sc_link_do_not_sell_my_information":"Ne pas vendre mes informations","sc_link_find_friends":"Trouver des amis","sc_link_friends":"Amis","sc_link_game_activation":"Activation de jeux","sc_link_help":"Aide","sc_link_import_friends":"Importer des amis","sc_link_join_social_club":"S’inscrire","sc_link_legal":"Mentions légales","sc_link_log_out":"Se déconnecter","sc_link_messages":"Messages","sc_link_my_friends":"Mes amis","sc_link_notifications":"Notifications","sc_link_privacy_policy":"Charte de confidentialité","sc_link_settings":"Paramètres","sc_link_sign_in":"Se connecter","sc_link_support":"Assistance","sc_link_view_my_profile":"Voir mon profil","sc_menu_drag_handle":"Drag Menu Handle","sc_menu_toggle":"Afficher le menu du Social Club","rp_icon":"Catégorie : RP","components_track_list_title":"Liste des morceaux","disabled_label":"Désactivé","next_button_label":"Page vidéo suivante","previous_button_label":"Page vidéo précédente"},"it":{"aria_label_open_new_window":"(Apri in una nuova finestra)","pl_card_badge_content_complete":"Completamento","plm_nav_scroll_left":"Scorri a sinistra","plm_nav_scroll_right":"Scorri a destra","language_selector_default":"Seleziona una lingua","profile_selector_mugshot":"Foto segnaletica di {userName}","profile_selector_profile_card":"Scheda del profilo","profile_selector_rp_icon":"Categoria RP","profile_selector_switch_character":"Cambia personaggio","sc_link_account":"Account","sc_link_activity_feed":"Feed attività","sc_link_cookies_policy":"Politica sui cookie","sc_link_cookies_settings":"Impostazioni dei cookie","sc_link_crews":"Crew","sc_link_do_not_sell_my_information":"Non vendere le mie informazioni","sc_link_find_friends":"Trova amici","sc_link_friends":"Amici","sc_link_game_activation":"Attivazione gioco","sc_link_help":"Assistenza","sc_link_import_friends":"Importa amici","sc_link_join_social_club":"Registrati","sc_link_legal":"Note legali","sc_link_log_out":"Esci","sc_link_messages":"Messaggi","sc_link_my_friends":"I miei amici","sc_link_notifications":"Notifiche","sc_link_privacy_policy":"Politica sulla privacy","sc_link_settings":"Impostazioni","sc_link_sign_in":"Accedi","sc_link_support":"Supporto","sc_link_view_my_profile":"Visualizza il mio profilo","sc_menu_drag_handle":"Drag Menu Handle","sc_menu_toggle":"Apri/chiudi il menu del Social Club","rp_icon":"Categoria RP","components_track_list_title":"Tracklist","disabled_label":"Disabilitato","next_button_label":"Pagina di video successiva","previous_button_label":"Pagina di video precedente"},"jp":{"aria_label_open_new_window":"(新しいウィンドウで開きます)","pl_card_badge_content_complete":"完了","plm_nav_scroll_left":"左にスクロール","plm_nav_scroll_right":"右にスクロール","language_selector_default":"言語を選択","profile_selector_mugshot":"{ユーザーネーム}顔写真","profile_selector_profile_card":"プロフィールカード","profile_selector_rp_icon":"RPカテゴリー","profile_selector_switch_character":"キャラクター変更","sc_link_account":"アカウント","sc_link_activity_feed":"アクティビティフィード","sc_link_cookies_policy":"クッキーポリシー","sc_link_cookies_settings":"クッキー設定","sc_link_crews":"クルー","sc_link_do_not_sell_my_information":"個人情報を売らないでください","sc_link_find_friends":"フレンドを検索","sc_link_friends":"フレンド","sc_link_game_activation":"ゲームアクティベーション","sc_link_help":"ヘルプ","sc_link_import_friends":"フレンドをインポート","sc_link_join_social_club":"サインアップ","sc_link_legal":"利用規約","sc_link_log_out":"ログアウト","sc_link_messages":"メッセージ","sc_link_my_friends":"フレンド","sc_link_notifications":"通知","sc_link_privacy_policy":"プライバシーポリシー","sc_link_settings":"設定","sc_link_sign_in":"サインイン","sc_link_support":"サポート","sc_link_view_my_profile":"プロフィールを表示","sc_menu_drag_handle":"Drag Menu Handle","sc_menu_toggle":"Social Clubメニューを切り替え","rp_icon":"RPカテゴリー","components_track_list_title":"トラックリスト","disabled_label":"無効","next_button_label":"次のビデオページ","previous_button_label":"前のビデオページ"},"kr":{"aria_label_open_new_window":"(새 창에서 열기)","pl_card_badge_content_complete":"완료","plm_nav_scroll_left":"왼쪽 스크롤","plm_nav_scroll_right":"오른쪽 스크롤","language_selector_default":"언어 선택","profile_selector_mugshot":"{userName} 머그샷","profile_selector_profile_card":"프로필 카드","profile_selector_rp_icon":"RP 카테고리","profile_selector_switch_character":"캐릭터 교체","sc_link_account":"계정","sc_link_activity_feed":"활동 피드","sc_link_cookies_policy":"쿠키 정책","sc_link_cookies_settings":"쿠키 설정","sc_link_crews":"조직","sc_link_do_not_sell_my_information":"내 정보 판매 안 함","sc_link_find_friends":"친구 찾기","sc_link_friends":"친구","sc_link_game_activation":"게임 활성화","sc_link_help":"도움말","sc_link_import_friends":"친구 불러오기","sc_link_join_social_club":"가입","sc_link_legal":"법률 관련","sc_link_log_out":"로그아웃","sc_link_messages":"메시지","sc_link_my_friends":"내 친구","sc_link_notifications":"알림","sc_link_privacy_policy":"개인 정보 보호 정책","sc_link_settings":"설정","sc_link_sign_in":"로그인","sc_link_support":"지원","sc_link_view_my_profile":"내 프로필 보기","sc_menu_drag_handle":"드래그 메뉴 핸들","sc_menu_toggle":"Social Club 메뉴 켜기/끄기","rp_icon":"RP 카테고리","components_track_list_title":"트랙리스트","disabled_label":"비활성화됨","next_button_label":"다음 비디오 페이지","previous_button_label":"이전 비디오 페이지"},"pl":{"aria_label_open_new_window":"(Otwórz w nowym oknie)","pl_card_badge_content_complete":"Ukończono","plm_nav_scroll_left":"Przesuń w lewo","plm_nav_scroll_right":"Przesuń w prawo","language_selector_default":"Wybierz język","profile_selector_mugshot":"Zdjęcie – {userName}","profile_selector_profile_card":"Karta profilu","profile_selector_rp_icon":"Poziom RP","profile_selector_switch_character":"Zmień postać","sc_link_account":"Konto","sc_link_activity_feed":"Zajęcia","sc_link_cookies_policy":"Polityka plików cookie","sc_link_cookies_settings":"Ustawienia plików cookie","sc_link_crews":"Ekipy","sc_link_do_not_sell_my_information":"Zabraniam sprzedaży moich danych","sc_link_find_friends":"Szukaj znajomych","sc_link_friends":"Znajomi","sc_link_game_activation":"Aktywacja gry","sc_link_help":"Pomoc","sc_link_import_friends":"Importuj znajomych","sc_link_join_social_club":"Zarejestruj się","sc_link_legal":"Informacje prawne","sc_link_log_out":"Wyloguj się","sc_link_messages":"Wiadomości","sc_link_my_friends":"Moi znajomi","sc_link_notifications":"Powiadomienia","sc_link_privacy_policy":"Polityka prywatności","sc_link_settings":"Ustawienia","sc_link_sign_in":"Zaloguj się","sc_link_support":"Wsparcie","sc_link_view_my_profile":"Przeglądaj profil","sc_menu_drag_handle":"Przeciągnij uchwyt menu","sc_menu_toggle":"Włącz lub wyłącz menu Social Club","rp_icon":"Poziom RP","components_track_list_title":"Lista utworów","disabled_label":"Wyłączone","next_button_label":"Następna strona z filmami","previous_button_label":"Poprzednia strona z filmami"},"br":{"aria_label_open_new_window":"(Abre em uma nova janela)","pl_card_badge_content_complete":"Concluiu","plm_nav_scroll_left":"Rolar para a esquerda","plm_nav_scroll_right":"Rolar para a direita","language_selector_default":"Selecione um idioma","profile_selector_mugshot":"Foto de {userName}","profile_selector_profile_card":"Cartão de perfil","profile_selector_rp_icon":"Categoria de RP","profile_selector_switch_character":"Alternar personagem","sc_link_account":"Conta","sc_link_activity_feed":"Feed de atividade","sc_link_cookies_policy":"Política de cookies","sc_link_cookies_settings":"Configurações de cookies","sc_link_crews":"Comandos","sc_link_do_not_sell_my_information":"Não vendam a minha informação","sc_link_find_friends":"Encontrar amigos","sc_link_friends":"Amigos","sc_link_game_activation":"Ativação de jogos","sc_link_help":"Ajuda","sc_link_import_friends":"Importar amigos","sc_link_join_social_club":"Inscrever-se","sc_link_legal":"Aviso legal","sc_link_log_out":"Sair","sc_link_messages":"Mensagens","sc_link_my_friends":"Meus amigos","sc_link_notifications":"Notificações","sc_link_privacy_policy":"Política de Privacidade","sc_link_settings":"Configurações","sc_link_sign_in":"Iniciar sessão","sc_link_support":"Suporte","sc_link_view_my_profile":"Visualizar meu perfil","sc_menu_drag_handle":"Arrastar título do menu","sc_menu_toggle":"Alternar menu do Social Club","rp_icon":"Categoria de RP","components_track_list_title":"Lista de faixas","disabled_label":"Desabilitado","next_button_label":"Próxima página de vídeos","previous_button_label":"Página anterior de vídeos"},"ru":{"aria_label_open_new_window":"(ссылка откроется в новом окне)","pl_card_badge_content_complete":"Завершено","plm_nav_scroll_left":"Пролистать влево","plm_nav_scroll_right":"Пролистать вправо","language_selector_default":"Выбрать язык","profile_selector_mugshot":"Фотография игрока {userName}","profile_selector_profile_card":"Карта профиля","profile_selector_rp_icon":"Категория опыта","profile_selector_switch_character":"Сменить персонажа","sc_link_account":"Учетная запись","sc_link_activity_feed":"Лента событий","sc_link_cookies_policy":"Политика использования файлов Cookie","sc_link_cookies_settings":"Настройки файлов Cookie","sc_link_crews":"Банды","sc_link_do_not_sell_my_information":"Я запрещаю продавать свою личную информацию","sc_link_find_friends":"Поиск друзей","sc_link_friends":"Друзья","sc_link_game_activation":"Активация игры","sc_link_help":"Помощь","sc_link_import_friends":"Импорт друзей","sc_link_join_social_club":"Регистрация","sc_link_legal":"Юридическая информация","sc_link_log_out":"Выход","sc_link_messages":"Сообщения","sc_link_my_friends":"Мои друзья","sc_link_notifications":"Уведомления","sc_link_privacy_policy":"Политика конфиденциальности","sc_link_settings":"Настройки","sc_link_sign_in":"Войти","sc_link_support":"Поддержка","sc_link_view_my_profile":"Моя учетная запись","sc_menu_drag_handle":"Перенести маркер меню","sc_menu_toggle":"Переключить меню Social Club","rp_icon":"Категория опыта","components_track_list_title":"Список песен","disabled_label":"Отключено","next_button_label":"Следующая страница с видео","previous_button_label":"Предыдущая страница с видео"},"hans":{"aria_label_open_new_window":"（在新窗口中打开）","pl_card_badge_content_complete":"完成","plm_nav_scroll_left":"向左滚动","plm_nav_scroll_right":"向右滚动","language_selector_default":"选择一种语言","profile_selector_mugshot":"{userName} 面部照片","profile_selector_profile_card":"档案卡","profile_selector_rp_icon":"声望值类别","profile_selector_switch_character":"切换角色","sc_link_account":"账户","sc_link_activity_feed":"活动动态","sc_link_cookies_policy":"Cookie 政策","sc_link_cookies_settings":"Cookie 设置","sc_link_crews":"帮会","sc_link_do_not_sell_my_information":"请勿出售我的信息","sc_link_find_friends":"查找好友","sc_link_friends":"好友","sc_link_game_activation":"游戏激活","sc_link_help":"帮助","sc_link_import_friends":"导入好友","sc_link_join_social_club":"注册","sc_link_legal":"法律声明","sc_link_log_out":"登出","sc_link_messages":"信息","sc_link_my_friends":"我的好友","sc_link_notifications":"通知","sc_link_privacy_policy":"隐私政策","sc_link_settings":"设置","sc_link_sign_in":"登录","sc_link_support":"支持","sc_link_view_my_profile":"查看我的档案","sc_menu_drag_handle":"拖动菜单处理","sc_menu_toggle":"切换 Social Club 菜单","rp_icon":"声望值类别","components_track_list_title":"曲目列表","disabled_label":"已禁用","next_button_label":"下一页视频","previous_button_label":"上一页视频"},"tw":{"aria_label_open_new_window":"（在新視窗開啟）","pl_card_badge_content_complete":"完成","plm_nav_scroll_left":"向左捲動","plm_nav_scroll_right":"向右捲動","language_selector_default":"選擇語言","profile_selector_mugshot":"{userName} 罪犯檔案照","profile_selector_profile_card":"資料卡","profile_selector_rp_icon":"聲望值類別","profile_selector_switch_character":"切換角色","sc_link_account":"帳戶","sc_link_activity_feed":"動態活動","sc_link_cookies_policy":"Cookie 政策","sc_link_cookies_settings":"Cookie 設定","sc_link_crews":"幫會","sc_link_do_not_sell_my_information":"不要販售我的個人資料","sc_link_find_friends":"尋找好友","sc_link_friends":"好友","sc_link_game_activation":"遊戲啟用","sc_link_help":"幫助","sc_link_import_friends":"匯入好友","sc_link_join_social_club":"註冊","sc_link_legal":"法律聲明","sc_link_log_out":"登出","sc_link_messages":"訊息","sc_link_my_friends":"我的好友","sc_link_notifications":"通知","sc_link_privacy_policy":"隱私權政策","sc_link_settings":"設定","sc_link_sign_in":"登入","sc_link_support":"支援","sc_link_view_my_profile":"查看我的設定檔","sc_menu_drag_handle":"拖曳選單控點","sc_menu_toggle":"開關 Social Club 選單","rp_icon":"聲望值類別","components_track_list_title":"曲目清單","disabled_label":"停用","next_button_label":"下一個影片頁面","previous_button_label":"上一個影片頁面"}}'),
+      const l = JSON.parse('{"us":{"aria_label_open_new_window":"(Opens in a new window)","pl_card_badge_content_complete":"Complete","plm_nav_scroll_left":"Scroll Left","plm_nav_scroll_right":"Scroll Right","language_selector_default":"Select a Language","profile_selector_mugshot":"{userName} mugshot","profile_selector_profile_card":"Profile Card","profile_selector_rp_icon":"RP Category","profile_selector_switch_character":"Switch Character","sc_link_account":"Account","sc_link_activity_feed":"Activity Feed","sc_link_cookies_policy":"Cookies Policy","sc_link_cookies_settings":"Cookies Settings","sc_link_crews":"Crews","sc_link_do_not_sell_my_information":"Do Not Sell My Information","sc_link_find_friends":"Find Friends","sc_link_friends":"Friends","sc_link_game_activation":"Game Activation","sc_link_help":"Help","sc_link_import_friends":"Import Friends","sc_link_join_social_club":"Sign Up","sc_link_legal":"Legal","sc_link_log_out":"Log Out","sc_link_messages":"Messages","sc_link_my_friends":"My Friends","sc_link_notifications":"Notifications","sc_link_privacy_policy":"Privacy Policy","sc_link_settings":"Settings","sc_link_sign_in":"Sign In","sc_link_support":"Support","sc_link_view_my_profile":"View My Profile","sc_menu_drag_handle":"Drag Menu Handle","sc_menu_toggle":"Toggle Social Club Menu","rp_icon":"RP Category","components_track_list_title":"Tracklist","next_button_label":"Next video page","previous_button_label":"Previous video page"},"de":{"aria_label_open_new_window":"(Öffnet ein neues Fenster)","pl_card_badge_content_complete":"Abgeschlossen","plm_nav_scroll_left":"Links scrollen","plm_nav_scroll_right":"Rechts scrollen","language_selector_default":"Eine Sprache auswählen","profile_selector_mugshot":"Verbrecherfoto von {userName}","profile_selector_profile_card":"Profildaten","profile_selector_rp_icon":"RP-Kategorie","profile_selector_switch_character":"Charakter wechseln","sc_link_account":"Konto","sc_link_activity_feed":"Aktivitäten-Feed","sc_link_cookies_policy":"Cookie-Richtlinie","sc_link_cookies_settings":"Cookie-Einstellungen","sc_link_crews":"Crews","sc_link_do_not_sell_my_information":"Meine Informationen nicht verkaufen","sc_link_find_friends":"Freunde finden","sc_link_friends":"Freunde","sc_link_game_activation":"Spielaktivierung","sc_link_help":"Hilfe","sc_link_import_friends":"Freunde importieren","sc_link_join_social_club":"Registrieren","sc_link_legal":"Rechtliches","sc_link_log_out":"Abmelden","sc_link_messages":"Nachrichten","sc_link_my_friends":"Meine Freunde","sc_link_notifications":"Benachrichtigungen","sc_link_privacy_policy":"Datenschutzrichtlinien","sc_link_settings":"Einstellungen","sc_link_sign_in":"Anmelden","sc_link_support":"Support","sc_link_view_my_profile":"Mein Profil ansehen","sc_menu_drag_handle":"Menü öffnen bzw. schließen","sc_menu_toggle":"Social-Club-Menü öffnen bzw. schließen","rp_icon":"RP-Kategorie","components_track_list_title":"Trackliste","next_button_label":"Nächste Videoseite","previous_button_label":"Vorherige Videoseite"},"es":{"aria_label_open_new_window":"(Se abre en una ventana nueva)","pl_card_badge_content_complete":"Completado","plm_nav_scroll_left":"Desplazar hacia la izquierda","plm_nav_scroll_right":"Desplazar hacia la derecha","language_selector_default":"Selecciona un idioma","profile_selector_mugshot":"Foto de {userName}","profile_selector_profile_card":"Tarjeta de perfil","profile_selector_rp_icon":"Categoría de RP","profile_selector_switch_character":"Cambiar personaje","sc_link_account":"Cuenta","sc_link_activity_feed":"Actividades","sc_link_cookies_policy":"Política de cookies","sc_link_cookies_settings":"Ajustes de cookies","sc_link_crews":"Crews","sc_link_do_not_sell_my_information":"No quiero que vendáis mis datos","sc_link_find_friends":"Buscar amigos","sc_link_friends":"Amigos","sc_link_game_activation":"Activación del juego","sc_link_help":"Ayuda","sc_link_import_friends":"Importar amigos","sc_link_join_social_club":"Registrarse","sc_link_legal":"Aviso legal","sc_link_log_out":"Cerrar sesión","sc_link_messages":"Mensajes","sc_link_my_friends":"Mis amigos","sc_link_notifications":"Notificaciones","sc_link_privacy_policy":"Política de privacidad","sc_link_settings":"Ajustes","sc_link_sign_in":"Iniciar sesión","sc_link_support":"Asistencia técnica","sc_link_view_my_profile":"Ver mi perfil","sc_menu_drag_handle":"Arrastrar el controlador del menú","sc_menu_toggle":"Cambiar el menú del Social Club","rp_icon":"Categoría de RP","components_track_list_title":"Lista de pistas","next_button_label":"Página de vídeo siguiente","previous_button_label":"Página de vídeo anterior"},"mx":{"aria_label_open_new_window":"(Se abre en una ventana nueva)","pl_card_badge_content_complete":"Completado","plm_nav_scroll_left":"Desplazarse hacia la izquierda","plm_nav_scroll_right":"Desplazarse hacia la derecha","language_selector_default":"Seleccionar un idioma","profile_selector_mugshot":"Foto de {userName}","profile_selector_profile_card":"Tarjeta del perfil","profile_selector_rp_icon":"Categoría de RP","profile_selector_switch_character":"Cambiar personaje","sc_link_account":"Cuenta","sc_link_activity_feed":"Muro de actividades","sc_link_cookies_policy":"Política de cookies","sc_link_cookies_settings":"Configuración de cookies","sc_link_crews":"Crews","sc_link_do_not_sell_my_information":"No quiero que vendan mis datos","sc_link_find_friends":"Encontrar amigos","sc_link_friends":"Amigos","sc_link_game_activation":"Activación de juegos","sc_link_help":"Ayuda","sc_link_import_friends":"Importar amigos","sc_link_join_social_club":"Registro","sc_link_legal":"Legal","sc_link_log_out":"Cerrar sesión","sc_link_messages":"Mensajes","sc_link_my_friends":"Mis amigos","sc_link_notifications":"Notificaciones","sc_link_privacy_policy":"Política de privacidad","sc_link_settings":"Configuración","sc_link_sign_in":"Iniciar sesión","sc_link_support":"Soporte","sc_link_view_my_profile":"Ver mi perfil","sc_menu_drag_handle":"Mover el handle del menú","sc_menu_toggle":"Cambiar menú del Social Club","rp_icon":"Categoría de RP","components_track_list_title":"Lista de canciones","next_button_label":"Página de video siguiente","previous_button_label":"Página de video anterior"},"fr":{"aria_label_open_new_window":"(S’ouvre dans une nouvelle fenêtre)","pl_card_badge_content_complete":"Terminé","plm_nav_scroll_left":"Faire défiler vers la gauche","plm_nav_scroll_right":"Faire défiler vers la droite","language_selector_default":"Sélectionner une langue","profile_selector_mugshot":"Photo d\'identité : {userName}","profile_selector_profile_card":"Carte du profil","profile_selector_rp_icon":"Catégorie de RP","profile_selector_switch_character":"Changer de personnage","sc_link_account":"Compte","sc_link_activity_feed":"Fil d\'activités","sc_link_cookies_policy":"Politique en matière de cookies","sc_link_cookies_settings":"Paramètres des cookies","sc_link_crews":"Crews","sc_link_do_not_sell_my_information":"Ne pas vendre mes informations","sc_link_find_friends":"Trouver des amis","sc_link_friends":"Amis","sc_link_game_activation":"Activation de jeux","sc_link_help":"Aide","sc_link_import_friends":"Importer des amis","sc_link_join_social_club":"S’inscrire","sc_link_legal":"Mentions légales","sc_link_log_out":"Se déconnecter","sc_link_messages":"Messages","sc_link_my_friends":"Mes amis","sc_link_notifications":"Notifications","sc_link_privacy_policy":"Charte de confidentialité","sc_link_settings":"Paramètres","sc_link_sign_in":"Se connecter","sc_link_support":"Assistance","sc_link_view_my_profile":"Voir mon profil","sc_menu_drag_handle":"Drag Menu Handle","sc_menu_toggle":"Afficher le menu du Social Club","rp_icon":"Catégorie : RP","components_track_list_title":"Liste des morceaux","next_button_label":"Page vidéo suivante","previous_button_label":"Page vidéo précédente"},"it":{"aria_label_open_new_window":"(Apri in una nuova finestra)","pl_card_badge_content_complete":"Completamento","plm_nav_scroll_left":"Scorri a sinistra","plm_nav_scroll_right":"Scorri a destra","language_selector_default":"Seleziona una lingua","profile_selector_mugshot":"Foto segnaletica di {userName}","profile_selector_profile_card":"Scheda del profilo","profile_selector_rp_icon":"Categoria RP","profile_selector_switch_character":"Cambia personaggio","sc_link_account":"Account","sc_link_activity_feed":"Feed attività","sc_link_cookies_policy":"Politica sui cookie","sc_link_cookies_settings":"Impostazioni dei cookie","sc_link_crews":"Crew","sc_link_do_not_sell_my_information":"Non vendere le mie informazioni","sc_link_find_friends":"Trova amici","sc_link_friends":"Amici","sc_link_game_activation":"Attivazione gioco","sc_link_help":"Assistenza","sc_link_import_friends":"Importa amici","sc_link_join_social_club":"Registrati","sc_link_legal":"Note legali","sc_link_log_out":"Esci","sc_link_messages":"Messaggi","sc_link_my_friends":"I miei amici","sc_link_notifications":"Notifiche","sc_link_privacy_policy":"Politica sulla privacy","sc_link_settings":"Impostazioni","sc_link_sign_in":"Accedi","sc_link_support":"Supporto","sc_link_view_my_profile":"Visualizza il mio profilo","sc_menu_drag_handle":"Drag Menu Handle","sc_menu_toggle":"Apri/chiudi il menu del Social Club","rp_icon":"Categoria RP","components_track_list_title":"Tracklist","next_button_label":"Pagina di video successiva","previous_button_label":"Pagina di video precedente"},"jp":{"aria_label_open_new_window":"(新しいウィンドウで開きます)","pl_card_badge_content_complete":"完了","plm_nav_scroll_left":"左にスクロール","plm_nav_scroll_right":"右にスクロール","language_selector_default":"言語を選択","profile_selector_mugshot":"{ユーザーネーム}顔写真","profile_selector_profile_card":"プロフィールカード","profile_selector_rp_icon":"RPカテゴリー","profile_selector_switch_character":"キャラクター変更","sc_link_account":"アカウント","sc_link_activity_feed":"アクティビティフィード","sc_link_cookies_policy":"クッキーポリシー","sc_link_cookies_settings":"クッキー設定","sc_link_crews":"クルー","sc_link_do_not_sell_my_information":"個人情報を売らないでください","sc_link_find_friends":"フレンドを検索","sc_link_friends":"フレンド","sc_link_game_activation":"ゲームアクティベーション","sc_link_help":"ヘルプ","sc_link_import_friends":"フレンドをインポート","sc_link_join_social_club":"サインアップ","sc_link_legal":"利用規約","sc_link_log_out":"ログアウト","sc_link_messages":"メッセージ","sc_link_my_friends":"フレンド","sc_link_notifications":"通知","sc_link_privacy_policy":"プライバシーポリシー","sc_link_settings":"設定","sc_link_sign_in":"サインイン","sc_link_support":"サポート","sc_link_view_my_profile":"プロフィールを表示","sc_menu_drag_handle":"Drag Menu Handle","sc_menu_toggle":"Social Clubメニューを切り替え","rp_icon":"RPカテゴリー","components_track_list_title":"トラックリスト","next_button_label":"次のビデオページ","previous_button_label":"前のビデオページ"},"kr":{"aria_label_open_new_window":"(새 창에서 열기)","pl_card_badge_content_complete":"완료","plm_nav_scroll_left":"왼쪽 스크롤","plm_nav_scroll_right":"오른쪽 스크롤","language_selector_default":"언어 선택","profile_selector_mugshot":"{userName} 머그샷","profile_selector_profile_card":"프로필 카드","profile_selector_rp_icon":"RP 카테고리","profile_selector_switch_character":"캐릭터 교체","sc_link_account":"계정","sc_link_activity_feed":"활동 피드","sc_link_cookies_policy":"쿠키 정책","sc_link_cookies_settings":"쿠키 설정","sc_link_crews":"조직","sc_link_do_not_sell_my_information":"내 정보 판매 안 함","sc_link_find_friends":"친구 찾기","sc_link_friends":"친구","sc_link_game_activation":"게임 활성화","sc_link_help":"도움말","sc_link_import_friends":"친구 불러오기","sc_link_join_social_club":"가입","sc_link_legal":"법률 관련","sc_link_log_out":"로그아웃","sc_link_messages":"메시지","sc_link_my_friends":"내 친구","sc_link_notifications":"알림","sc_link_privacy_policy":"개인 정보 보호 정책","sc_link_settings":"설정","sc_link_sign_in":"로그인","sc_link_support":"지원","sc_link_view_my_profile":"내 프로필 보기","sc_menu_drag_handle":"드래그 메뉴 핸들","sc_menu_toggle":"Social Club 메뉴 켜기/끄기","rp_icon":"RP 카테고리","components_track_list_title":"트랙리스트","next_button_label":"다음 비디오 페이지","previous_button_label":"이전 비디오 페이지"},"pl":{"aria_label_open_new_window":"(Otwórz w nowym oknie)","pl_card_badge_content_complete":"Ukończono","plm_nav_scroll_left":"Przesuń w lewo","plm_nav_scroll_right":"Przesuń w prawo","language_selector_default":"Wybierz język","profile_selector_mugshot":"Zdjęcie – {userName}","profile_selector_profile_card":"Karta profilu","profile_selector_rp_icon":"Poziom RP","profile_selector_switch_character":"Zmień postać","sc_link_account":"Konto","sc_link_activity_feed":"Zajęcia","sc_link_cookies_policy":"Polityka plików cookie","sc_link_cookies_settings":"Ustawienia plików cookie","sc_link_crews":"Ekipy","sc_link_do_not_sell_my_information":"Zabraniam sprzedaży moich danych","sc_link_find_friends":"Szukaj znajomych","sc_link_friends":"Znajomi","sc_link_game_activation":"Aktywacja gry","sc_link_help":"Pomoc","sc_link_import_friends":"Importuj znajomych","sc_link_join_social_club":"Zarejestruj się","sc_link_legal":"Informacje prawne","sc_link_log_out":"Wyloguj się","sc_link_messages":"Wiadomości","sc_link_my_friends":"Moi znajomi","sc_link_notifications":"Powiadomienia","sc_link_privacy_policy":"Polityka prywatności","sc_link_settings":"Ustawienia","sc_link_sign_in":"Zaloguj się","sc_link_support":"Wsparcie","sc_link_view_my_profile":"Przeglądaj profil","sc_menu_drag_handle":"Przeciągnij uchwyt menu","sc_menu_toggle":"Włącz lub wyłącz menu Social Club","rp_icon":"Poziom RP","components_track_list_title":"Lista utworów","next_button_label":"Następna strona z filmami","previous_button_label":"Poprzednia strona z filmami"},"br":{"aria_label_open_new_window":"(Abre em uma nova janela)","pl_card_badge_content_complete":"Concluiu","plm_nav_scroll_left":"Rolar para a esquerda","plm_nav_scroll_right":"Rolar para a direita","language_selector_default":"Selecione um idioma","profile_selector_mugshot":"Foto de {userName}","profile_selector_profile_card":"Cartão de perfil","profile_selector_rp_icon":"Categoria de RP","profile_selector_switch_character":"Alternar personagem","sc_link_account":"Conta","sc_link_activity_feed":"Feed de atividade","sc_link_cookies_policy":"Política de cookies","sc_link_cookies_settings":"Configurações de cookies","sc_link_crews":"Comandos","sc_link_do_not_sell_my_information":"Não vendam a minha informação","sc_link_find_friends":"Encontrar amigos","sc_link_friends":"Amigos","sc_link_game_activation":"Ativação de jogos","sc_link_help":"Ajuda","sc_link_import_friends":"Importar amigos","sc_link_join_social_club":"Inscrever-se","sc_link_legal":"Aviso legal","sc_link_log_out":"Sair","sc_link_messages":"Mensagens","sc_link_my_friends":"Meus amigos","sc_link_notifications":"Notificações","sc_link_privacy_policy":"Política de Privacidade","sc_link_settings":"Configurações","sc_link_sign_in":"Iniciar sessão","sc_link_support":"Suporte","sc_link_view_my_profile":"Visualizar meu perfil","sc_menu_drag_handle":"Arrastar título do menu","sc_menu_toggle":"Alternar menu do Social Club","rp_icon":"Categoria de RP","components_track_list_title":"Lista de faixas","next_button_label":"Próxima página de vídeos","previous_button_label":"Página anterior de vídeos"},"ru":{"aria_label_open_new_window":"(ссылка откроется в новом окне)","pl_card_badge_content_complete":"Завершено","plm_nav_scroll_left":"Пролистать влево","plm_nav_scroll_right":"Пролистать вправо","language_selector_default":"Выбрать язык","profile_selector_mugshot":"Фотография игрока {userName}","profile_selector_profile_card":"Карта профиля","profile_selector_rp_icon":"Категория опыта","profile_selector_switch_character":"Сменить персонажа","sc_link_account":"Учетная запись","sc_link_activity_feed":"Лента событий","sc_link_cookies_policy":"Политика использования файлов Cookie","sc_link_cookies_settings":"Настройки файлов Cookie","sc_link_crews":"Банды","sc_link_do_not_sell_my_information":"Я запрещаю продавать свою личную информацию","sc_link_find_friends":"Поиск друзей","sc_link_friends":"Друзья","sc_link_game_activation":"Активация игры","sc_link_help":"Помощь","sc_link_import_friends":"Импорт друзей","sc_link_join_social_club":"Регистрация","sc_link_legal":"Юридическая информация","sc_link_log_out":"Выход","sc_link_messages":"Сообщения","sc_link_my_friends":"Мои друзья","sc_link_notifications":"Уведомления","sc_link_privacy_policy":"Политика конфиденциальности","sc_link_settings":"Настройки","sc_link_sign_in":"Войти","sc_link_support":"Поддержка","sc_link_view_my_profile":"Моя учетная запись","sc_menu_drag_handle":"Перенести маркер меню","sc_menu_toggle":"Переключить меню Social Club","rp_icon":"Категория опыта","components_track_list_title":"Список песен","next_button_label":"Следующая страница с видео","previous_button_label":"Предыдущая страница с видео"},"hans":{"aria_label_open_new_window":"（在新窗口中打开）","pl_card_badge_content_complete":"完成","plm_nav_scroll_left":"向左滚动","plm_nav_scroll_right":"向右滚动","language_selector_default":"选择一种语言","profile_selector_mugshot":"{userName} 面部照片","profile_selector_profile_card":"档案卡","profile_selector_rp_icon":"声望值类别","profile_selector_switch_character":"切换角色","sc_link_account":"账户","sc_link_activity_feed":"活动动态","sc_link_cookies_policy":"Cookie 政策","sc_link_cookies_settings":"Cookie 设置","sc_link_crews":"帮会","sc_link_do_not_sell_my_information":"请勿出售我的信息","sc_link_find_friends":"查找好友","sc_link_friends":"好友","sc_link_game_activation":"游戏激活","sc_link_help":"帮助","sc_link_import_friends":"导入好友","sc_link_join_social_club":"注册","sc_link_legal":"法律声明","sc_link_log_out":"登出","sc_link_messages":"信息","sc_link_my_friends":"我的好友","sc_link_notifications":"通知","sc_link_privacy_policy":"隐私政策","sc_link_settings":"设置","sc_link_sign_in":"登录","sc_link_support":"支持","sc_link_view_my_profile":"查看我的档案","sc_menu_drag_handle":"拖动菜单处理","sc_menu_toggle":"切换 Social Club 菜单","rp_icon":"声望值类别","components_track_list_title":"曲目列表","next_button_label":"下一页视频","previous_button_label":"上一页视频"},"tw":{"aria_label_open_new_window":"（在新視窗開啟）","pl_card_badge_content_complete":"完成","plm_nav_scroll_left":"向左捲動","plm_nav_scroll_right":"向右捲動","language_selector_default":"選擇語言","profile_selector_mugshot":"{userName} 罪犯檔案照","profile_selector_profile_card":"資料卡","profile_selector_rp_icon":"聲望值類別","profile_selector_switch_character":"切換角色","sc_link_account":"帳戶","sc_link_activity_feed":"動態活動","sc_link_cookies_policy":"Cookie 政策","sc_link_cookies_settings":"Cookie 設定","sc_link_crews":"幫會","sc_link_do_not_sell_my_information":"不要販售我的個人資料","sc_link_find_friends":"尋找好友","sc_link_friends":"好友","sc_link_game_activation":"遊戲啟用","sc_link_help":"幫助","sc_link_import_friends":"匯入好友","sc_link_join_social_club":"註冊","sc_link_legal":"法律聲明","sc_link_log_out":"登出","sc_link_messages":"訊息","sc_link_my_friends":"我的好友","sc_link_notifications":"通知","sc_link_privacy_policy":"隱私權政策","sc_link_settings":"設定","sc_link_sign_in":"登入","sc_link_support":"支援","sc_link_view_my_profile":"查看我的設定檔","sc_menu_drag_handle":"拖曳選單控點","sc_menu_toggle":"開關 Social Club 選單","rp_icon":"聲望值類別","components_track_list_title":"曲目清單","next_button_label":"下一個影片頁面","previous_button_label":"上一個影片頁面"}}'),
         m = (0, d.defineMessages)({
           aria_label_open_new_window: {
             id: "aria_label_open_new_window",
@@ -144,16 +147,20 @@ _global.SENTRY_RELEASE = {
           alt: s = "",
           autoBlank: r = !1,
           onClick: n = (() => {}),
-          ...i
+          focused: i = !1,
+          ...o
         } = e;
-        const o = (0, d.useIntl)(),
-          c = !/^(https?|mailto):/i.test(t),
-          l = /^#/.test(t),
-          p = i?.target ?? (r ? "_blank" : "_self");
+        const l = (0, c.useRef)(null),
+          p = (0, d.useIntl)(),
+          _ = !/^(https?|mailto):/i.test(t),
+          k = /^#/.test(t),
+          b = o?.target ?? (r ? "_blank" : "_self");
         let {
-          ...k
-        } = i, _ = "";
-        if ("aria-label" in k && k["aria-label"] && (_ = "_blank" === p ? `${k["aria-label"]} ${o.formatMessage(m.aria_label_open_new_window)}` : k["aria-label"]), l) {
+          ...h
+        } = o, v = "";
+        if ("aria-label" in h && h["aria-label"] && (v = "_blank" === b ? `${h["aria-label"]} ${p.formatMessage(m.aria_label_open_new_window)}` : h["aria-label"]), (0, c.useEffect)((() => {
+            i && l?.current && l.current.focus()
+          }), [l?.current, i]), k) {
           const e = e => {
             e.preventDefault(), document?.querySelector(`[id='${t.replace("#","")}']`)?.scrollIntoView({
               behavior: "smooth",
@@ -164,44 +171,47 @@ _global.SENTRY_RELEASE = {
             title: s,
             href: t,
             onClick: e,
-            ...k,
-            "aria-label": _,
-            children: [a, "_blank" === p && !_ && (0, g.jsx)("span", {
+            ...h,
+            "aria-label": v,
+            ref: l,
+            children: [a, "_blank" === b && !v && (0, g.jsx)("span", {
               className: f,
-              children: o.formatMessage(m.aria_label_open_new_window)
+              children: p.formatMessage(m.aria_label_open_new_window)
             })]
           })
         }
-        if (c) return (0, g.jsxs)(u.NavLink, {
+        if (_) return (0, g.jsxs)(u.NavLink, {
           title: s,
           to: t,
           onClick: e => n(e),
-          ...k,
-          "aria-label": _,
-          children: [a, "_blank" === p && !_ && (0, g.jsx)("span", {
+          ...h,
+          "aria-label": v,
+          ref: l,
+          children: [a, "_blank" === b && !v && (0, g.jsx)("span", {
             className: f,
-            children: o.formatMessage(m.aria_label_open_new_window)
+            children: p.formatMessage(m.aria_label_open_new_window)
           })]
         });
-        const b = Object.keys(k).filter((e => !["activeClassName", "key", "end"].includes(e))).reduce(((e, a) => ({
+        const x = Object.keys(h).filter((e => !["activeClassName", "key", "end"].includes(e))).reduce(((e, a) => ({
           ...e,
-          [a]: i[a]
+          [a]: o[a]
         })), {});
-        return "function" == typeof b?.className && delete b.className, (0, g.jsxs)("a", {
+        return "function" == typeof x?.className && delete x.className, (0, g.jsxs)("a", {
           href: t,
           title: s,
           onClick: e => n(e),
-          target: p,
-          ...b,
-          "aria-label": _,
-          children: [a, "_blank" === p && !_ && (0, g.jsx)("span", {
+          target: b,
+          ...x,
+          "aria-label": v,
+          ref: l,
+          children: [a, "_blank" === b && !v && (0, g.jsx)("span", {
             className: f,
-            children: o.formatMessage(m.aria_label_open_new_window)
+            children: p.formatMessage(m.aria_label_open_new_window)
           })]
         })
       }), l);
-      var k = t(65772),
-        _ = t.n(k),
+      var _ = t(65772),
+        k = t.n(_),
         b = t(61076),
         h = t(90048);
       const v = {
@@ -261,7 +271,7 @@ _global.SENTRY_RELEASE = {
           const u = (0, c.useRef)(null),
             f = (0, c.useRef)(null),
             p = (0, c.useRef)(null),
-            [k, b] = (0, c.useState)(null),
+            [_, b] = (0, c.useState)(null),
             [h, x] = (0, c.useState)(!1),
             y = e => {
               const a = new Date(1e3 * e),
@@ -278,7 +288,7 @@ _global.SENTRY_RELEASE = {
           }), [p, f, a]), (0, c.useEffect)((() => {
             if (!u.current || !a?.duration) return;
             let e = null;
-            const t = new(_())(u.current),
+            const t = new(k())(u.current),
               r = e => {
                 if (u.current) {
                   const t = u.current.clientWidth;
@@ -313,7 +323,7 @@ _global.SENTRY_RELEASE = {
               className: v.controlsTrack,
               ref: f,
               children: (0, g.jsx)("span", {
-                className: [v.controlsTrackTitle, k ? v.controlsTrackAnimating : ""].join(" "),
+                className: [v.controlsTrackTitle, _ ? v.controlsTrackAnimating : ""].join(" "),
                 ref: p,
                 children: o.title
               })
@@ -411,7 +421,7 @@ _global.SENTRY_RELEASE = {
             variables: {
               id: a
             }
-          }), [r, n] = (0, c.useState)(), [i, o] = (0, c.useState)(), [d, l] = (0, c.useState)(), [m, u] = (0, c.useState)(!1), [f, p] = (0, c.useState)(!1), [k, _] = (0, c.useState)(new HTMLAudioElement), [S, w] = (0, c.useState)({
+          }), [r, n] = (0, c.useState)(), [i, o] = (0, c.useState)(), [d, l] = (0, c.useState)(), [m, u] = (0, c.useState)(!1), [f, p] = (0, c.useState)(!1), [_, k] = (0, c.useState)(new HTMLAudioElement), [S, w] = (0, c.useState)({
             current: 0,
             duration: 0
           }), [j, C] = (0, c.useState)(!0);
@@ -425,27 +435,27 @@ _global.SENTRY_RELEASE = {
               from: e
             }), window.addEventListener("message", a, !1), () => window.removeEventListener("message", a, !1)
           }), [f]), (0, c.useEffect)((() => {
-            if (!k) return;
+            if (!_) return;
             const e = () => {
-                isNaN(k.duration) || w({
-                  duration: k?.duration ?? 0,
-                  current: k?.currentTime ?? 0
+                isNaN(_.duration) || w({
+                  duration: _?.duration ?? 0,
+                  current: _?.currentTime ?? 0
                 })
               },
               a = () => {
                 j && r && o(r[1])
               };
-            return k.addEventListener("loadedmetadata", e), k.addEventListener("timeupdate", e), k.addEventListener("ended", a), () => {
-              k.removeEventListener("loadedmetadata", e), k.removeEventListener("timeupdate", e), k.removeEventListener("ended", a)
+            return _.addEventListener("loadedmetadata", e), _.addEventListener("timeupdate", e), _.addEventListener("ended", a), () => {
+              _.removeEventListener("loadedmetadata", e), _.removeEventListener("timeupdate", e), _.removeEventListener("ended", a)
             }
-          }), [k, r, j]), (0, c.useEffect)((() => {
+          }), [_, r, j]), (0, c.useEffect)((() => {
             f && window.postMessage({
               attentionBlurredElsewhere: !0,
               from: "audio"
             })
           }), [f]), (0, c.useEffect)((() => {
-            k && (f ? k.play() : k.pause(), u(!1))
-          }), [f, k, d?.id]), (0, c.useEffect)((() => {
+            _ && (f ? _.play() : _.pause(), u(!1))
+          }), [f, _, d?.id]), (0, c.useEffect)((() => {
             if (!i) return;
             const {
               tracks: e
@@ -457,7 +467,7 @@ _global.SENTRY_RELEASE = {
             className: [v.player, v[t], m ? v.tracksOpen : ""].join(" "),
             children: [(0, g.jsx)("audio", {
               ref: e => {
-                _(e)
+                k(e)
               },
               src: d.mp3_src
             }), (0, g.jsx)(N, {
@@ -479,7 +489,7 @@ _global.SENTRY_RELEASE = {
               setPlaying: p,
               timing: S,
               trackData: d,
-              audioRef: k,
+              audioRef: _,
               setAutoNext: C
             })]
           }) : null
@@ -516,7 +526,7 @@ _global.SENTRY_RELEASE = {
           button: "rockstargames-modules-core-headere056494c33cff1fe89431f279fdb6b9a",
           secondary: "rockstargames-modules-core-headerd340cf27f380a4347994e59544432eb3"
         },
-        I = e => {
+        T = e => {
           let {
             className: a = "",
             children: t,
@@ -540,11 +550,11 @@ _global.SENTRY_RELEASE = {
             children: t
           })
         },
-        T = function() {
+        I = function() {
           for (var e = arguments.length, a = new Array(e), t = 0; t < e; t++) a[t] = arguments[t];
           return [...a].filter(Boolean).join(" ")
         };
-      var M = t(71612);
+      var M = t(25144);
       const E = (0, c.createContext)(),
         {
           Provider: L
@@ -559,8 +569,8 @@ _global.SENTRY_RELEASE = {
             children: a
           })
         },
-        D = () => (0, c.useContext)(E),
-        P = e => {
+        P = () => (0, c.useContext)(E),
+        D = e => {
           if (!e) return null;
           const {
             hostname: a,
@@ -580,7 +590,7 @@ _global.SENTRY_RELEASE = {
           const o = (0, M.y_)(),
             {
               meta: d = {}
-            } = D() ?? {},
+            } = P() ?? {},
             [l, m] = (0, c.useState)(i ?? d?.cdn ?? d?.prod ?? !0);
           (0, c.useEffect)((() => {
             m(i ?? d?.cdn ?? d?.prod ?? !0)
@@ -589,9 +599,9 @@ _global.SENTRY_RELEASE = {
             const a = null !== n,
               t = e?.previewSrc ?? e ?? null;
             if (null === t || "string" != typeof t) return null;
-            if (t.startsWith("http")) return P(t);
+            if (t.startsWith("http")) return D(t);
             const s = `${a?(0,M.kh)(l):""}${t}`;
-            return P(s)
+            return D(s)
           }), [l, n]);
           return {
             alt: a,
@@ -605,10 +615,10 @@ _global.SENTRY_RELEASE = {
         $ = e => {
           const {
             meta: a = {}
-          } = D() ?? {}, [t, s] = (0, c.useState)(a?.cdn ?? a?.prod ?? !1);
+          } = P() ?? {}, [t, s] = (0, c.useState)(a?.cdn ?? a?.prod ?? !1);
           return (0, c.useEffect)((() => {
             s(a?.cdn ?? a?.prod ?? !1)
-          }), [a]), null === e ? null : e?.startsWith("http") ? P(e) : P(`${(0,M.kh)(t)}${e}`)
+          }), [a]), null === e ? null : e?.startsWith("http") ? D(e) : D(`${(0,M.kh)(t)}${e}`)
         };
       var z = t(73660),
         F = t.n(z);
@@ -616,7 +626,7 @@ _global.SENTRY_RELEASE = {
         {
           Provider: A
         } = O,
-        U = e => {
+        R = e => {
           let {
             children: a,
             components: t
@@ -626,12 +636,24 @@ _global.SENTRY_RELEASE = {
             children: a
           })
         };
-      var R = t(51328),
-        H = t.n(R);
-      t(76288), t(34512);
-      const G = "content";
-      var W = t(12231);
-      const q = e => {
+      var U = t(51328),
+        G = t.n(U);
+      const H = function() {
+        let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "";
+        return {
+          label: `${e} Line`,
+          name: `${e}_line`,
+          component: () => (0, g.jsx)("hr", {})
+        }
+      };
+      H("Background Image Gradient"),
+        function() {
+          (arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "Label").toLowerCase().split(" ").join("_")
+        }("Background Image Gradient"), H("Background Image Gradient"), t(76288), t(34512);
+      const W = "content";
+      var q = t(12231),
+        J = t(9860);
+      const K = e => {
           let {
             components: a,
             payload: t,
@@ -647,23 +669,30 @@ _global.SENTRY_RELEASE = {
             } = e;
             const r = e => {
               let n = "";
-              if (n = Array.isArray(e?.[G]) ? e[G].map((e => r(e))) : e?.[G] ?? "", !e?._template) return n;
-              let i, o = e._template;
-              "0" === o && (console.warn(`The _template "${o}" wasn't found in the available components. The _template "${o}" was replaced with "gen9.Hero".`, {
+              if (n = Array.isArray(e?.[W]) ? e[W].map((e => r(e))) : e?.[W] ?? "", !e?._template) return n;
+              let i = e._template;
+              "0" === i && (console.warn(`The _template "${i}" wasn't found in the available components. The _template "${i}" was replaced with "gen9.Hero".`, {
                 availableComponents: Object.keys(a),
                 payload: e
-              }), o = "gen9.Hero"), i = F().get(a, o) ?? null;
-              const d = [...e?.translations ?? []].reverse(),
-                l = `componentProps_${(0,W.c)()}`;
-              return (0, c.createElement)(i, {
+              }), i = "gen9.Hero");
+              const o = F().get(a, i) ?? null;
+              if (!o) return null;
+              let d;
+              d = (0, J.withInViewTracker)(o, {
+                impressionTracking: e?.impressionTracking,
+                gtm: e?.gtm
+              });
+              const l = [...e?.translations ?? []].reverse(),
+                m = `componentProps_${(0,q.c)()}`;
+              return (0, c.createElement)(d, {
                 ...t?.meta,
                 ...e,
                 ...s,
-                t: e => d.find((a => a?._key === e))?.value ?? e,
-                key: l
+                t: e => l.find((a => a?._key === e))?.value ?? e,
+                key: m
               }, n)
             };
-            return t?.[G]?.length ? r(t) : null
+            return t?.[W]?.length ? r(t) : null
           })({
             components: a,
             payload: t,
@@ -671,13 +700,13 @@ _global.SENTRY_RELEASE = {
           }))), [JSON.stringify(t), JSON.stringify(a)]);
           return r
         },
-        J = e => {
+        X = e => {
           let {
             tina: a,
             components: t = {},
             componentProps: s = {}
           } = e;
-          const r = D(),
+          const r = P(),
             [n, i] = (0, c.useState)(null),
             [o, d] = (0, c.useState)(null);
           (0, c.useEffect)((() => {
@@ -747,7 +776,7 @@ _global.SENTRY_RELEASE = {
                   if (!a || !F().has(a, "key") || a.translated) return;
                   const r = t[a.key] ?? null;
                   if (!r) return;
-                  const n = H()(r);
+                  const n = G()(r);
                   Object.keys(n).map((e => {
                     F().set(a, e, n[e])
                   })), F().set(a, "translated", !0), Object.freeze(a)
@@ -774,9 +803,9 @@ _global.SENTRY_RELEASE = {
               };
             return (0, g.jsx)(V, {
               payload: i,
-              children: (0, g.jsx)(U, {
+              children: (0, g.jsx)(R, {
                 components: l,
-                children: (0, g.jsx)(q, {
+                children: (0, g.jsx)(K, {
                   payload: e,
                   components: l,
                   componentProps: {
@@ -788,7 +817,7 @@ _global.SENTRY_RELEASE = {
             })
           }), [r, n, JSON.stringify(m), JSON.stringify(u)])
         },
-        X = {
+        Q = {
           pillBtn: "rockstargames-modules-core-headerb59962d0e68ccd73b5ee2e571528d469",
           selected: "rockstargames-modules-core-headerf5c57dad202e0d6ff855d5a4aca2c804",
           plusButton: "rockstargames-modules-core-headercffaf489342637258d28f9b3b718836a",
@@ -806,7 +835,7 @@ _global.SENTRY_RELEASE = {
           ps5: "rockstargames-modules-core-headere25638751cf3e7267db23c6a401fcc36",
           pc: "rockstargames-modules-core-headere03d92653f19a7ae3c4b3d5137bc9909"
         },
-        K = e => {
+        Y = e => {
           let {
             children: a,
             className: t,
@@ -821,7 +850,7 @@ _global.SENTRY_RELEASE = {
             children: a
           })
         },
-        Q = e => {
+        Z = e => {
           let {
             children: a,
             className: t,
@@ -837,7 +866,7 @@ _global.SENTRY_RELEASE = {
             children: a
           })
         },
-        Y = e => {
+        ee = e => {
           let {
             btnColor: a = "#fff",
             className: t = "",
@@ -852,18 +881,18 @@ _global.SENTRY_RELEASE = {
             to: m,
             type: u = ""
           } = e;
-          const f = [X.plusButton, X[u] ?? "", X[d] ?? "", X[s] ?? "", t].join(" "),
+          const f = [Q.plusButton, Q[u] ?? "", Q[d] ?? "", Q[s] ?? "", t].join(" "),
             p = {
               "--hvr-color": a ?? i,
               "--hvr-bg-color": i ?? a,
               "--hvr-border-color": a ?? i
             },
-            k = (0, g.jsxs)(g.Fragment, {
+            _ = (0, g.jsxs)(g.Fragment, {
               children: [n ? (0, g.jsx)("img", {
                 src: n,
                 alt: ""
               }) : "", (0, g.jsxs)("div", {
-                className: X.btnText,
+                className: Q.btnText,
                 icon: r,
                 children: [l, c ? (0, g.jsx)("span", {
                   children: c
@@ -882,39 +911,39 @@ _global.SENTRY_RELEASE = {
                 children: (0, g.jsx)("a", {
                   href: m,
                   target: e,
-                  children: k
+                  children: _
                 })
               })
             }
-            return (0, g.jsx)(Q, {
+            return (0, g.jsx)(Z, {
               className: f,
               onClick: o ? () => o() : () => {},
               style: p,
               to: m,
-              children: k
+              children: _
             })
           }
-          return (0, g.jsx)(K, {
+          return (0, g.jsx)(Y, {
             className: f,
             onClick: o ? () => o() : () => {},
             style: p,
-            children: k
+            children: _
           })
         },
-        Z = e => {
+        ae = e => {
           let {
             buttons: a = [],
             className: t
           } = e;
           return a.length ? (0, g.jsx)("div", {
-            className: T("rockstargames-modules-core-headerb411a36e7fd12ab75861fe560b31b206", t),
+            className: I("rockstargames-modules-core-headerb411a36e7fd12ab75861fe560b31b206", t),
             children: a.map(((e, a) => {
               let {
                 icon: t,
                 title: s,
                 to: r
               } = e;
-              return s ? (0, g.jsx)(Y, {
+              return s ? (0, g.jsx)(ee, {
                 icon: t,
                 text: s,
                 to: r
@@ -922,8 +951,8 @@ _global.SENTRY_RELEASE = {
             }))
           }) : null
         };
-      var ee = t(48111);
-      const ae = {
+      var te = t(48111);
+      const se = {
           deprecatedCarousel: "rockstargames-modules-core-headereb5df7b3d51dffc4d993ca7abce4e944",
           "swiper-scrollbar-disabled": "rockstargames-modules-core-headereb2dda6769a7c20a31e7996ff62e41f8",
           "swiper-horizontal": "rockstargames-modules-core-headerb11093de3cb4f18ea2d59b8d4d1db44c",
@@ -942,12 +971,12 @@ _global.SENTRY_RELEASE = {
           active: "rockstargames-modules-core-headeraa5e195e0c7c6336929553314d52a896",
           "swiper-preloader-spin": "rockstargames-modules-core-headerc05cc0faa8239c85cdc7d53c7e120e8e"
         },
-        te = e => {
+        re = e => {
           let {
             item: a
           } = e;
           return (0, g.jsxs)("div", {
-            children: [(0, g.jsx)(Ua, {
+            children: [(0, g.jsx)(Ra, {
               image: a?.image,
               badge: a?.badge ?? a?.image?.badge,
               badgeType: "badge3",
@@ -956,13 +985,13 @@ _global.SENTRY_RELEASE = {
               type: a?.type,
               ariaLabel: a?.image?.ariaLabel ?? a.description,
               style: a?.style,
-              className: T(ae.img, a?.className)
-            }), (a?.title || a?.description) && (0, g.jsx)(Ue, {
+              className: I(se.img, a?.className)
+            }), (a?.title || a?.description) && (0, g.jsx)(Re, {
               item: a
             })]
           })
         },
-        se = e => {
+        ne = e => {
           let {
             current: a,
             total: t
@@ -978,7 +1007,7 @@ _global.SENTRY_RELEASE = {
             })
           })
         },
-        re = e => {
+        ie = e => {
           let {
             children: a,
             items: t = [],
@@ -991,9 +1020,9 @@ _global.SENTRY_RELEASE = {
             centerSlides: l = !0,
             centeredSlidesBounds: m = !1
           } = e;
-          const [u, f] = (0, c.useState)(0), p = (0, c.useMemo)((() => a && Array.isArray(a) ? a.map((() => (0, W.c)())) : null), [a]);
+          const [u, f] = (0, c.useState)(0), p = (0, c.useMemo)((() => a && Array.isArray(a) ? a.map((() => (0, q.c)())) : null), [a]);
           if (!(t && 0 !== t?.length || a)) return null;
-          const k = {
+          const _ = {
             0: {
               spaceBetween: d ?? 16
             },
@@ -1008,54 +1037,54 @@ _global.SENTRY_RELEASE = {
             }
           };
           return (0, g.jsxs)("div", {
-            className: T(ae.deprecatedCarousel, ae[i], ae[`infinite_${!r}`], a ? ae.renderedWithChildren : "", n),
+            className: I(se.deprecatedCarousel, se[i], se[`infinite_${!r}`], a ? se.renderedWithChildren : "", n),
             style: s,
-            children: [(0, g.jsxs)(ee.wx, {
+            children: [(0, g.jsxs)(te.wx, {
               loop: !r,
               grabCursor: !0,
               centeredSlides: l,
               centerInsufficientSlides: l,
               slidesPerView: "auto",
               speed: 700,
-              breakpoints: k,
+              breakpoints: _,
               onUpdate: () => f(0),
               onActiveIndexChange: e => f(e?.realIndex ?? 0),
               centeredSlidesBounds: m,
               children: [(0, g.jsx)("div", {
-                className: ae.trackWrapper,
+                className: se.trackWrapper,
                 children: (0, g.jsxs)("div", {
-                  className: ae.track,
-                  children: [t?.map((e => (0, g.jsx)(ee.Ky, {
-                    children: (0, g.jsx)(te, {
+                  className: se.track,
+                  children: [t?.map((e => (0, g.jsx)(te.Ky, {
+                    children: (0, g.jsx)(re, {
                       item: e
                     })
-                  }, e.key))), a && a?.map(((e, a) => e && (0, g.jsx)(ee.Ky, {
+                  }, e.key))), a && a.map(((e, a) => e && (0, g.jsx)(te.Ky, {
                     children: e
                   }, p && p[a])))]
                 })
-              }), (0, g.jsx)(se, {
+              }), (0, g.jsx)(ne, {
                 current: u,
                 total: a ? a.length : t.length
               })]
-            }), (o?.title || o?.description) && (0, g.jsx)(Ue, {
+            }), (o?.title || o?.description) && (0, g.jsx)(Re, {
               item: o
             })]
           })
         };
-      var ne = t(54420);
-      const ie = (0, t(62748).U1)(),
-        oe = e => e.some((e => !e)),
-        ce = e => {
+      var oe = t(54420);
+      const ce = (0, t(62748).U1)(),
+        de = e => e.some((e => !e)),
+        le = e => {
           let {
             condition: a = null,
             children: t
           } = e;
           const [s, r] = (0, c.useState)(!1), n = (e => {
-            const [a] = (0, u.useSearchParams)(), [t, s] = (0, c.useState)(null), r = (0, ne.yi)(), {
+            const [a] = (0, u.useSearchParams)(), [t, s] = (0, c.useState)(null), r = (0, oe.yi)(), {
               loggedIn: n
             } = r, {
               currentCharId: i
-            } = (0, ne.of)(), o = function(e) {
+            } = (0, oe.of)(), o = function(e) {
               let a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0,
                 t = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "gtao";
               return (0, c.useMemo)((() => {
@@ -1066,14 +1095,14 @@ _global.SENTRY_RELEASE = {
             return (0, c.useEffect)((() => {
               const t = "true" === a.get("conditionPreview");
               if (!e?.length > 0) return;
-              ie.applyFilters("preview_conditions", e);
+              ce.applyFilters("preview_conditions", e);
               const r = [];
               return e.forEach((e => {
                 const {
                   value: s
                 } = e;
                 if (t) return "true" === a.get(s) ? (r.push(!0), !0) : (r.push(!1), !1);
-                if (oe(r)) return !1;
+                if (de(r)) return !1;
                 switch (s) {
                   case "user:is:loggedIn":
                     r.push(!0 === n);
@@ -1091,24 +1120,24 @@ _global.SENTRY_RELEASE = {
                     r.push(!1)
                 }
                 return null
-              })), s(!oe(r)), () => {}
+              })), s(!de(r)), () => {}
             }), [a, e, o, r, n]), t
           })(a);
           return (0, c.useEffect)((() => {
             r(n)
           }), [n]), (0, c.useMemo)((() => s ? t : null), [s])
         },
-        de = (0, M.Ux)((e => {
+        me = (0, M.Ux)((e => {
           let {
             children: a
           } = e;
-          return c.Children.map(c.Children.toArray(a), (e => (0, g.jsx)(ce, {
+          return c.Children.map(c.Children.toArray(a), (e => (0, g.jsx)(le, {
             ...e?.props
           })))
         }));
-      var le = t(41512),
-        me = t(58652);
-      const ue = e => {
+      var ue = t(41512),
+        fe = t(58652);
+      const ge = e => {
           let {
             className: a
           } = e;
@@ -1134,7 +1163,7 @@ _global.SENTRY_RELEASE = {
             })]
           })
         },
-        fe = {
+        pe = {
           pillBtn: "rockstargames-modules-core-headere3158363419b66e5afa2264e4928890c",
           selected: "rockstargames-modules-core-headera9649249223f164eff11174ffc72616b",
           calloutContainer: "rockstargames-modules-core-headere6bd244761fdf3ebe3888539d9942921",
@@ -1154,18 +1183,18 @@ _global.SENTRY_RELEASE = {
           actionBlock: "rockstargames-modules-core-headercc491ddd715196ecd6ef54017ff05ec0",
           actionFooter: "rockstargames-modules-core-headerdb26fed58ce50f4affc114670885721a"
         },
-        ge = e => {
+        _e = e => {
           let {
             foreign_id: a,
             foreign_type: t
           } = e;
           const {
             track: s
-          } = (0, ne.ye)(), {
+          } = (0, oe.ye)(), {
             refetch: r
-          } = (0, b.UL)(me.UserGetVote, {
+          } = (0, b.UL)(fe.UserGetVote, {
             skip: !0
-          }), [n] = (0, b.cQ)(me.UserCastVote), [i, o] = (0, c.useState)(null), d = (0, c.useCallback)((e => {
+          }), [n] = (0, b.cQ)(fe.UserCastVote), [i, o] = (0, c.useState)(null), d = (0, c.useCallback)((e => {
             (async () => {
               if (e === i && null !== i) o(null);
               else {
@@ -1195,23 +1224,23 @@ _global.SENTRY_RELEASE = {
               o(e?.data?.userGetVote?.vote ?? null)
             })()
           }), [a, t]), (0, g.jsxs)("div", {
-            className: fe.calloutVoteForm,
+            className: pe.calloutVoteForm,
             children: [(0, g.jsx)("button", {
               "aria-label": "upvote",
-              className: [fe.upvote, fe.voteButton, i ? fe.active : ""].join(" "),
+              className: [pe.upvote, pe.voteButton, i ? pe.active : ""].join(" "),
               name: "upvote",
               onClick: () => d(!0),
               type: "button"
             }), (0, g.jsx)("button", {
               "aria-label": "downvote",
-              className: [fe.downvote, fe.voteButton, !1 === i ? fe.active : ""].join(" "),
+              className: [pe.downvote, pe.voteButton, !1 === i ? pe.active : ""].join(" "),
               name: "downvote",
               onClick: () => d(!1),
               type: "button"
             })]
           })
         },
-        pe = e => {
+        ke = e => {
           let {
             action_text: a,
             link: t,
@@ -1219,24 +1248,24 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: r
-          } = (0, ne.ye)();
+          } = (0, oe.ye)();
           return (0, g.jsx)("a", {
             href: t,
             target: "_blank",
             rel: "noopener noreferrer",
             children: (0, g.jsxs)("button", {
-              className: fe.calloutLink,
+              className: pe.calloutLink,
               type: "button",
               onClick: s ? () => r({
                 ...s
               }) : () => {},
-              children: [a, (0, g.jsx)(ue, {
-                className: fe.calloutLinkIcon
+              children: [a, (0, g.jsx)(ge, {
+                className: pe.calloutLinkIcon
               })]
             })
           })
         },
-        ke = e => {
+        be = e => {
           let {
             helperText: a,
             linkText: t,
@@ -1245,9 +1274,9 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: n
-          } = (0, ne.ye)();
+          } = (0, oe.ye)();
           return (0, g.jsxs)("div", {
-            className: fe.actionFooter,
+            className: pe.actionFooter,
             children: [a, t && " ", t && (0, g.jsx)("a", {
               href: s ?? "",
               onClick: () => n({
@@ -1257,7 +1286,7 @@ _global.SENTRY_RELEASE = {
             })]
           })
         },
-        _e = (0, M.Ux)((e => {
+        he = (0, M.Ux)((e => {
           let {
             header: a,
             subheader: t,
@@ -1272,17 +1301,17 @@ _global.SENTRY_RELEASE = {
             actionFooterLink: u,
             trackingData: f = {},
             actionFooterLinkTrackingData: p = {},
-            t: k,
-            ..._
+            t: _,
+            ...k
           } = e;
           const {
             loggedIn: b
-          } = (0, ne.yi)(), {
+          } = (0, oe.yi)(), {
             track: h
-          } = (0, ne.ye)(), v = `${document.location.origin}/auth/sc-auth-login?returnUrl=${window.location.pathname}`, {
+          } = (0, oe.ye)(), v = `${document.location.origin}/auth/sc-auth-login?returnUrl=${window.location.pathname}`, {
             ref: x,
             inView: y
-          } = (0, le.cD)({
+          } = (0, ue.cD)({
             threshold: .6
           }), [N, S] = (0, c.useState)(!1);
           let w;
@@ -1292,15 +1321,15 @@ _global.SENTRY_RELEASE = {
                 event_action: "impression",
                 event_category: "page_section",
                 event_label: "callout section",
-                element_placement: `callout section - ${_?.sectionName??_?._memoq?.header}`
+                element_placement: `callout section - ${k?.sectionName??k?._memoq?.header}`
               }), S(!0))
             }), [y]), !a && !t) return null;
           switch (s) {
             case "vote":
               if (!b) {
-                w = (0, g.jsx)(I, {
+                w = (0, g.jsx)(T, {
                   to: v,
-                  className: fe.calloutButton,
+                  className: pe.calloutButton,
                   onClick: f ? () => h({
                     ...f
                   }) : () => {},
@@ -1308,15 +1337,15 @@ _global.SENTRY_RELEASE = {
                 });
                 break
               }
-              w = (0, g.jsx)(ge, {
+              w = (0, g.jsx)(_e, {
                 foreign_id: i,
                 foreign_type: o
               });
               break;
             case "button":
-              r && n && (w = (0, g.jsx)(I, {
+              r && n && (w = (0, g.jsx)(T, {
                 to: n,
-                className: fe.calloutButton,
+                className: pe.calloutButton,
                 onClick: f ? () => h({
                   ...f
                 }) : () => {},
@@ -1324,7 +1353,7 @@ _global.SENTRY_RELEASE = {
               }));
               break;
             case "link":
-              r && n && (w = (0, g.jsx)(pe, {
+              r && n && (w = (0, g.jsx)(ke, {
                 action_text: r,
                 link: n,
                 trackingData: f
@@ -1334,22 +1363,22 @@ _global.SENTRY_RELEASE = {
               w = null
           }
           return (0, g.jsx)("div", {
-            className: `${fe.calloutContainer} ${d||""}`,
+            className: `${pe.calloutContainer} ${d||""}`,
             ref: x,
             children: (0, g.jsxs)("div", {
-              className: fe.calloutSection,
+              className: pe.calloutSection,
               children: [(0, g.jsxs)("div", {
-                className: [fe.calloutHeaders, w ? fe.calloutHeaderMargins : ""].join(" "),
+                className: [pe.calloutHeaders, w ? pe.calloutHeaderMargins : ""].join(" "),
                 children: [a && (0, g.jsx)("h2", {
-                  className: fe.calloutHeader,
-                  children: k(a)
+                  className: pe.calloutHeader,
+                  children: _(a)
                 }), t && (0, g.jsx)("h3", {
-                  className: fe.calloutSubheader,
-                  children: k(t)
+                  className: pe.calloutSubheader,
+                  children: _(t)
                 })]
               }), (0, g.jsxs)("div", {
-                className: fe.actionBlock,
-                children: [w, l && (0, g.jsx)(ke, {
+                className: pe.actionBlock,
+                children: [w, l && (0, g.jsx)(be, {
                   helperText: l,
                   linkText: m,
                   link: u,
@@ -1359,18 +1388,18 @@ _global.SENTRY_RELEASE = {
             })
           })
         }));
-      var be = t(69736),
-        he = t(44236),
-        ve = t.n(he);
-      const xe = e => {
+      var ve = t(69736),
+        xe = t(44236),
+        ye = t.n(xe);
+      const Ne = e => {
           let {
             isMulti: a,
             allowSelectAll: t,
             label: s,
             miscProps: r
           } = e;
-          const [n, i] = (0, c.useState)(""), o = (0, c.useMemo)((() => ve()().getData()), []);
-          return (0, g.jsx)(be.cp, {
+          const [n, i] = (0, c.useState)(""), o = (0, c.useMemo)((() => ye()().getData()), []);
+          return (0, g.jsx)(ve.cp, {
             unstyled: !0,
             value: n,
             isMulti: a,
@@ -1385,7 +1414,7 @@ _global.SENTRY_RELEASE = {
             ...r
           })
         },
-        ye = e => {
+        Se = e => {
           let {
             cookieName: a,
             cookieValue: t,
@@ -1403,7 +1432,7 @@ _global.SENTRY_RELEASE = {
             e && a && (document.cookie = `${e}=${a}; domain=${(()=>{const e=window.location.hostname.split(".");return e.slice(e.length-2).join(".")})()}; path=/;`)
           })(a, i), n === t || i === t ? s : r
         },
-        Ne = {
+        we = {
           ps: "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/1506c5bba61fa270f73c874e3d60a94f.svg",
           ps3: "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/d118a14a73ce72b4687d9eb69724f4d2.svg",
           ps4: "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/3f9f55567df4006813f8bf50ad383ea0.svg",
@@ -1420,8 +1449,8 @@ _global.SENTRY_RELEASE = {
           questionMark: "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/e6833fa9baf4a5382bdd84b0b7d2c03f.svg",
           default: ""
         },
-        Se = e => Ne[e] || null,
-        we = {
+        je = e => we[e] || null,
+        Ce = {
           cta: "rockstargames-modules-core-headerbc76de01fdd1260e254c482984d2a924",
           xbox: "rockstargames-modules-core-headerf591c5444c08121b0514f0c675da1479",
           xboxone: "rockstargames-modules-core-headere5124beff89c5b4093a4029a9fee3367",
@@ -1445,22 +1474,22 @@ _global.SENTRY_RELEASE = {
           pillBtn: "rockstargames-modules-core-headerbf9c11ff862c409ecb412254932a66d0",
           selected: "rockstargames-modules-core-headere07887131c72b6346c408895888f4fa7"
         },
-        je = e => {
+        Te = e => {
           let {
             platform: a = ""
           } = e;
-          const t = a ? Se(a) : null,
+          const t = a ? je(a) : null,
             s = t ? (0, g.jsx)("img", {
-              className: we.platformIcon,
+              className: Ce.platformIcon,
               src: t,
               alt: "Platform Icon"
             }) : null;
           return (0, g.jsx)("span", {
-            className: [we.btnContent, we.platformButton].join(" "),
+            className: [Ce.btnContent, Ce.platformButton].join(" "),
             children: s
           })
         },
-        Ce = e => {
+        Ie = e => {
           let {
             children: a,
             href: t,
@@ -1474,12 +1503,12 @@ _global.SENTRY_RELEASE = {
             badgeStyle: m,
             platformItem: f,
             gtm: p = {},
-            disabled: k,
-            className: _
+            disabled: _,
+            className: k
           } = e;
           const {
             track: b
-          } = (0, ne.ye)(), h = (0, M.sL)(), v = r ?? a, x = `Redirect to ${t}`, y = (0, c.useMemo)((() => {
+          } = (0, oe.ye)(), h = (0, M.sL)(), v = r ?? a, x = `Redirect to ${t}`, y = (0, c.useMemo)((() => {
             const e = window.location.hostname;
             let a;
             try {
@@ -1489,7 +1518,7 @@ _global.SENTRY_RELEASE = {
             }
             return e === a
           }), [t]), N = (0, c.useCallback)((() => {
-            k || b({
+            _ || b({
               event: "cta_other",
               ...h,
               ...p,
@@ -1497,40 +1526,38 @@ _global.SENTRY_RELEASE = {
               text: v ?? void 0
             })
           }), [p, t, h]), S = () => i ? (0, g.jsx)("span", {
-            className: [we.icon, `icon-${o}`].join(" "),
+            className: [Ce.icon, `icon-${o}`].join(" "),
             style: d,
             children: (0, g.jsx)("img", {
-              className: we.btnIcon,
-              src: Se(i) || "",
+              className: Ce.btnIcon,
+              src: je(i) || "",
               alt: `${i} icon`
             })
           }) : null;
           return (0, g.jsx)(u.NavLink, {
             to: t,
             target: y ? "_self" : "_blank",
-            className: [we.cta, "platform" === n && f ? we[f] : "", k ? we.disabled : "", _].join(" "),
+            className: [Ce.cta, "platform" === n && f ? Ce[f] : "", _ ? Ce.disabled : "", k].join(" "),
             style: s,
             "data-variant": n,
             onClick: N,
-            disabled: k,
+            disabled: _,
             "aria-label": x,
-            children: "platform" === n && f ? (0, g.jsx)(je, {
+            children: "platform" === n && f ? (0, g.jsx)(Te, {
               platform: f
             }) : (0, g.jsxs)("div", {
-              className: we.btnContent,
+              className: Ce.btnContent,
               children: ["left" === o && S(), (0, g.jsx)("span", {
                 children: v
               }), "right" === o && S(), l ? (0, g.jsx)("span", {
-                className: we.badge,
+                className: Ce.badge,
                 style: m,
                 children: l
               }) : null]
             })
           })
         },
-        Ie = "rockstargames-modules-core-headereb64520e04e486931cd65dc5b3fa61e8",
-        Te = "rockstargames-modules-core-headercc9a6fdcc84b758d60987ea9a5ddfd81",
-        Me = "rockstargames-modules-core-headeree609f31f3685766122c2c6fc0ef0710",
+        Me = "rockstargames-modules-core-headereb64520e04e486931cd65dc5b3fa61e8",
         Ee = e => {
           let {
             alt: a,
@@ -1540,7 +1567,7 @@ _global.SENTRY_RELEASE = {
           } = e;
           const [i, o] = (0, M.kJ)(r);
           let c = r;
-          !1 === i && (s === Me && (c = t(61820)), c = t(43976));
+          !1 === i && ("rockstargames-modules-core-headeree609f31f3685766122c2c6fc0ef0710" === s && (c = t(61820)), c = t(43976));
           const {
             width: d,
             height: l
@@ -1565,44 +1592,29 @@ _global.SENTRY_RELEASE = {
             alt: i,
             src: o
           } = B(r);
+          const {
+            isMobile: c
+          } = (0, M.bk)();
           return o.desktop || o.mobile || (i = "placeholder", o = {
             mobile: t(61820),
             desktop: t(43976)
           }), (0, g.jsx)("div", {
-            className: r.frame ? `${r.frame} ${Ie}` : Ie,
+            className: r.frame ? `${r.frame} ${Me}` : Me,
             style: s,
-            children: o?.desktop && o?.mobile ? (0, g.jsxs)(g.Fragment, {
-              children: [(0, g.jsx)(Ee, {
-                style: {
-                  ...n,
-                  ...r?.style
-                },
-                src: o.desktop,
-                alt: i,
-                className: a ? `${a} ${Te}` : Te
-              }), (0, g.jsx)(Ee, {
-                style: {
-                  ...n,
-                  ...r?.style
-                },
-                src: o.mobile,
-                alt: i,
-                className: a ? `${a} ${Me}` : Me
-              })]
-            }) : (0, g.jsx)(Ee, {
+            children: (0, g.jsx)(Ee, {
               style: {
                 ...n,
                 ...r?.style
               },
-              src: o?.desktop ?? o?.mobile,
+              src: c ? o.mobile || o.desktop : o?.desktop || o?.mobile,
               alt: i,
               className: a
             })
           })
         };
       var Ve = t(8560),
-        De = t.n(Ve);
-      const Pe = {
+        Pe = t.n(Ve);
+      const De = {
           grid: "rockstargames-modules-core-headerac295ed5b9cb441ed17843b34e83ea17",
           itemList: "rockstargames-modules-core-headercaf5589ddeca00ed09213e547674b1f3",
           gtaplus: "rockstargames-modules-core-headerb291112adcf994a0f6acadd86f73b78a",
@@ -1625,7 +1637,7 @@ _global.SENTRY_RELEASE = {
         },
         {
           sanitize: Be
-        } = De(),
+        } = Pe(),
         $e = e => {
           let {
             list: a,
@@ -1642,14 +1654,14 @@ _global.SENTRY_RELEASE = {
           return (0, c.useEffect)((() => {
             u(a)
           }), [a]), t || a ? d && m ? (0, g.jsx)("div", {
-            className: Pe.grid,
+            className: De.grid,
             style: {
               "--unordered-list-grid-column": d,
               "--unordered-list-grid-column-mobile": l ?? d
             },
             children: (0, g.jsx)("ul", {
               style: (0, M.G6)(r),
-              className: T(Pe.itemList, Pe.noImg, Pe[s], Pe[i]),
+              className: I(De.itemList, De.noImg, De[s], De[i]),
               children: m.map((e => (0, g.jsx)("li", {
                 dangerouslySetInnerHTML: {
                   __html: Be(e.content)
@@ -1658,7 +1670,7 @@ _global.SENTRY_RELEASE = {
             })
           }) : (0, g.jsx)("ul", {
             style: (0, M.G6)(r),
-            className: T(Pe.itemList, Pe.custom, o ? Pe.noImg : "", s ? Pe[s] : "", i ? Pe[i] : "", n ?? ""),
+            className: I(De.itemList, De.custom, o ? De.noImg : "", s ? De[s] : "", i ? De[i] : "", n ?? ""),
             children: f.map((e => (0, g.jsx)("li", {
               dangerouslySetInnerHTML: {
                 __html: Be(e?.content ?? e)
@@ -1695,13 +1707,13 @@ _global.SENTRY_RELEASE = {
             children: t
           }) : t
         },
-        Ue = e => {
+        Re = e => {
           let {
             item: a,
             className: t = ""
           } = e;
           return (0, g.jsxs)("div", {
-            className: T("rockstargames-modules-core-headeref9e6981551ac5ce250ebff8b18d7a29", t),
+            className: I("rockstargames-modules-core-headeref9e6981551ac5ce250ebff8b18d7a29", t),
             children: [a.title && (0, g.jsx)(Ae, {
               to: a?.href ?? a?.to,
               children: (0, g.jsx)("h3", {
@@ -1739,14 +1751,14 @@ _global.SENTRY_RELEASE = {
             })]
           })
         };
-      var Re = t(58936);
-      const He = e => {
+      var Ue = t(58936);
+      const Ge = e => {
           let {
             children: a,
             ...t
           } = e;
           const [s, r] = (0, c.useState)(!1);
-          return (0, g.jsx)(Re.cR, {
+          return (0, g.jsx)(Ue.cR, {
             ...t,
             onReady: () => {
               document.fonts.ready.then((() => {
@@ -1756,7 +1768,7 @@ _global.SENTRY_RELEASE = {
             children: a
           })
         },
-        Ge = {
+        He = {
           badge: "rockstargames-modules-core-headere279e2cebfa338f34b03fd732416e836",
           badgeSizeUpdate: "rockstargames-modules-core-headerd7362a3e27ccaad9d2aadd2f31691340",
           badge2: "rockstargames-modules-core-headerd697f4a5f7c876d5e540a96da1e0ca3a",
@@ -1785,7 +1797,7 @@ _global.SENTRY_RELEASE = {
             splitter: n,
             role: r,
             wrapper: e => (0, g.jsx)("div", {
-              className: `${Ge.badge} ${s?Ge[s]:""} `,
+              className: `${He.badge} ${s?He[s]:""} `,
               children: e
             }),
             children: [(0, g.jsx)(g.Fragment, {
@@ -1795,14 +1807,14 @@ _global.SENTRY_RELEASE = {
                   desktop: t(6572)(`./${r}.png`)
                 }
               })
-            }), (0, g.jsx)(He, {
-              className: `${n||r?"":Ge.badge} ${s?Ge[s]:""}`,
+            }), (0, g.jsx)(Ge, {
+              className: `${n||r?"":He.badge} ${s?He[s]:""}`,
               min: 8,
               max: 1e3,
               mode: n || r ? "single" : "multi",
               children: i[0]
             }), (0, g.jsx)(g.Fragment, {
-              children: i.shift() && n && i.length >= 1 && (0, g.jsx)(He, {
+              children: i.shift() && n && i.length >= 1 && (0, g.jsx)(Ge, {
                 min: 8,
                 max: 1e3,
                 mode: "single",
@@ -1813,7 +1825,7 @@ _global.SENTRY_RELEASE = {
           }, "badge-wrapper")
         },
         Je = "rockstargames-modules-core-headerc63cfb461217f059c8c25eec09602b30",
-        Xe = e => {
+        Ke = e => {
           let {
             color: a
           } = e;
@@ -1831,8 +1843,8 @@ _global.SENTRY_RELEASE = {
             })]
           })
         };
-      var Ke = t(36960),
-        Qe = t.n(Ke);
+      var Xe = t(36960),
+        Qe = t.n(Xe);
       const Ye = {
           dropdownWrapper: "rockstargames-modules-core-headerb951912c02de0e5e881fedd391d04810",
           items: "rockstargames-modules-core-headerb0a8f220641417f889d4fd6039fe6bac",
@@ -1881,13 +1893,20 @@ _global.SENTRY_RELEASE = {
               ...n
             };
           if (m?.src?.desktop) {
-            const e = "var(--grid-background-repeat, no-repeat)",
-              a = "var(--grid-background-position, center)/var(--grid-background-size, cover)";
-            u.background = `url(${m?.src?.desktop}) ${e} ${a}`
+            const e = (r?.style && r?.style["--background-image-size"]) ?? "var(--grid-background-size, cover)",
+              a = (r?.style && r?.style["--background-image-repeat"]) ?? "var(--grid-background-repeat, no-repeat)",
+              t = `var(--grid-background-position, center)/${e??"cover"}`;
+            if (u.background = `url(${m?.src?.desktop}) ${a} ${t}`, r?.style && r?.style["--linear-gradient"]) u.background = `linear-gradient(${r?.style["--linear-gradient"]}), url(${m?.src?.desktop}) ${a} ${t}`;
+            else if (r?.style && r?.style["--gradient-height"]) {
+              const e = r?.style["--gradient-height"] || "3",
+                s = r?.style["--gradient-start-color"] || "var(--background-color, transparent)",
+                n = r?.style["--gradient-end-color"] || "var(--background-color, transparent)";
+              u.background = `linear-gradient(180deg, ${s}, transparent ${e}%, transparent ${100-e}%, ${n}), url(${m?.src?.desktop}) ${a} ${t}`
+            }
           }
           return (0, g.jsx)("div", {
             id: l,
-            className: T("rockstargames-modules-core-headerf42b4606ed4a5b16b7647ad7b7eb229d", c ? "rockstargames-modules-core-headerb00444166ce6346d7ca364a75a335ecc" : "", d),
+            className: I("rockstargames-modules-core-headerf42b4606ed4a5b16b7647ad7b7eb229d", c ? "rockstargames-modules-core-headerb00444166ce6346d7ca364a75a335ecc" : "", d),
             "data-game": "community" === i ? null : s,
             style: (0, M.G6)(u),
             "data-context": t,
@@ -2008,21 +2027,21 @@ _global.SENTRY_RELEASE = {
             pointerEvents: "none",
             "--btn-hover-bg-color": "var(--black-15)",
             "--btn-hover-bg-color-noBlur": "var(--black-100)",
-            "--btn-hover-font-color": "none",
+            "--btn-hover-font-color": "var(--white-100)",
             "--btn-hover-border-color": "var(--white-15)"
           },
           closed: {
             "--cta-border-color": "var(--white-100)",
-            "--cta-background-color": "inherit",
-            "--cta-background-color-noBlur": "inherit",
+            "--cta-background-color": "var(--black-15)",
+            "--cta-background-color-noBlur": "var(--black-15)",
             padding: "var(--padding-sm) var(--padding-md)",
             gridGap: 0,
             transition: ra,
             transitionEnd: {
-              "--btn-hover-bg-color": "inherit",
-              "--btn-hover-bg-color-noBlur": "inherit",
-              "--btn-hover-font-color": "inherit",
-              "--btn-hover-border-color": "inherit"
+              "--btn-hover-bg-color": "var(--white-100)",
+              "--btn-hover-bg-color-noBlur": "var(--white-100)",
+              "--btn-hover-font-color": "var(--black-100)",
+              "--btn-hover-border-color": "var(--white-100)"
             }
           }
         },
@@ -2066,21 +2085,18 @@ _global.SENTRY_RELEASE = {
                 children: a
               })]
             });
-          return s.startsWith("http") ? (0, g.jsx)("span", {
+          return s.startsWith("http") ? (0, g.jsx)("a", {
+            href: s,
+            className: c,
+            target: o,
             onClick: i,
-            onKeyDown: i,
-            role: "link",
-            tabIndex: 0,
-            children: (0, g.jsx)("a", {
-              href: s,
-              className: c,
-              target: o,
-              children: l
-            })
+            "aria-label": a,
+            children: l
           }) : (0, g.jsx)(u.NavLink, {
             className: c,
             onClick: i,
             to: s,
+            "aria-label": a,
             children: l
           })
         },
@@ -2097,99 +2113,89 @@ _global.SENTRY_RELEASE = {
           } = e;
           const [m, u] = (0, c.useState)(!1), {
             track: f
-          } = (0, ne.ye)(), p = () => {
-            u(!m), m || f("select_platform" === i ? {
-              event: "select_platform",
-              event_action: "select_platform",
-              event_category: "cta",
-              event_label: o,
-              text: a?.toLowerCase() ?? "subscribe"
-            } : "link_account" === i ? {
-              element_placement: o,
-              event: "cta_link_account",
-              event_action: "link_account",
-              event_category: "cta",
-              event_label: o,
-              o_id: l,
-              text: a?.toLowerCase()
-            } : {
-              event: "cta_buy",
-              event_action: "buy",
-              event_category: "cta",
-              event_label: o,
-              text: a?.toLowerCase() ?? "subscribe"
-            })
-          };
+          } = (0, oe.ye)();
           return (0, g.jsxs)("div", {
-            className: T(da.container, s),
+            className: I(da.container, s),
             children: [(0, g.jsx)(sa.motion.div, {
               className: da.content,
               animate: m ? "open" : "close",
               variants: ia,
+              "aria-hidden": !!m,
               children: r
             }), (0, g.jsxs)(sa.motion.div, {
-              onClick: p,
               className: da.unexpandedButton,
               animate: m ? "open" : "closed",
               variants: ca,
               initial: !1,
-              tabIndex: 0,
-              onKeyDown: e => {
-                (e => {
-                  let {
-                    code: a
-                  } = e;
-                  "Enter" === a && p()
-                })(e)
-              },
-              children: [(0, g.jsx)(sa.motion.div, {
+              children: [(0, g.jsx)(sa.motion.button, {
                 className: da.buttonText,
-                "data-expanded": m,
+                "aria-expanded": m,
+                onClick: () => {
+                  u(!m), m || f("select_platform" === i ? {
+                    event: "select_platform",
+                    event_action: "select_platform",
+                    event_category: "cta",
+                    event_label: o,
+                    text: a?.toLowerCase() ?? "subscribe"
+                  } : "link_account" === i ? {
+                    element_placement: o,
+                    event: "cta_link_account",
+                    event_action: "link_account",
+                    event_category: "cta",
+                    event_label: o,
+                    o_id: l,
+                    text: a?.toLowerCase()
+                  } : {
+                    event: "cta_buy",
+                    event_action: "buy",
+                    event_category: "cta",
+                    event_label: o,
+                    text: a?.toLowerCase() ?? "subscribe"
+                  })
+                },
                 children: "string" == typeof a ? a : "Subscribe"
-              }), (0, g.jsxs)(sa.motion.div, {
-                className: da.expandedArea,
-                animate: m ? "open" : "closed",
-                variants: oa,
-                initial: !1,
-                children: [(0, g.jsx)("img", {
-                  className: da.closeButton,
-                  onClick: () => u(!1),
-                  onKeyDown: e => {
-                    (e => {
-                      let {
-                        code: a
-                      } = e;
-                      "Enter" === a && u(!1)
-                    })(e)
-                  },
-                  src: t(72428),
-                  alt: "Close",
-                  role: "button",
-                  tabIndex: 0
-                }), (0, g.jsx)("div", {
-                  className: da.platformButtons,
-                  children: n.length ? n.map((e => (0, g.jsx)(la, {
-                    buttonText: e.buttonText ?? "",
-                    link: e.href,
-                    platform: e.platform,
-                    onClick: () => (e => {
-                      let {
-                        href: a,
-                        platform: t
-                      } = e;
-                      f({
-                        element_placement: o,
-                        event: "cta_store_link",
-                        event_action: "store_link",
-                        event_category: "cta",
-                        event_label: "expanding platform button",
-                        link_url: a,
-                        text: t
-                      })
-                    })(e),
-                    target: d
-                  }, `${e.key}-${e.href}-${e.platform}`))) : ""
-                })]
+              }), (0, g.jsx)(Qe(), {
+                disabled: !m,
+                returnFocus: !0,
+                children: (0, g.jsxs)(sa.motion.div, {
+                  className: da.expandedArea,
+                  animate: m ? "open" : "closed",
+                  variants: oa,
+                  initial: !1,
+                  "aria-hidden": !m,
+                  children: [(0, g.jsx)("button", {
+                    className: da.closeButton,
+                    onClick: () => u(!1),
+                    "aria-label": "Close",
+                    children: (0, g.jsx)("img", {
+                      src: t(72428),
+                      alt: "Close"
+                    })
+                  }), (0, g.jsx)("div", {
+                    className: da.platformButtons,
+                    children: n.length ? n.map((e => (0, g.jsx)(la, {
+                      buttonText: e.buttonText ?? (0, M.KS)(e.platform)?.friendlyName ?? "",
+                      link: e.href,
+                      platform: e.platform,
+                      onClick: () => (e => {
+                        let {
+                          href: a,
+                          platform: t
+                        } = e;
+                        f({
+                          element_placement: o,
+                          event: "cta_store_link",
+                          event_action: "store_link",
+                          event_category: "cta",
+                          event_label: "expanding platform button",
+                          link_url: a,
+                          text: t
+                        })
+                      })(e),
+                      target: d
+                    }, `${e.key}-${e.href}-${e.platform}`))) : ""
+                  })]
+                })
               })]
             })]
           })
@@ -2245,11 +2251,11 @@ _global.SENTRY_RELEASE = {
             }
           })
         },
-        ka = {
+        _a = {
           fobLink: "rockstargames-modules-core-headerfded54fb94f7325c5a0b57590585b175",
           wide: "rockstargames-modules-core-headera9b41f96042bda8a8c77b7b7b10f84d5"
         },
-        _a = e => {
+        ka = e => {
           let {
             game: a,
             to: t
@@ -2270,7 +2276,7 @@ _global.SENTRY_RELEASE = {
             "data-testid": `${n}-gamecard`,
             to: o,
             target: "_self",
-            className: [ka.fobLink, c ? ka.wide : ""].join(" "),
+            className: [_a.fobLink, c ? _a.wide : ""].join(" "),
             children: (0, g.jsx)(pa, {
               fob640: s,
               title: a.title,
@@ -2372,26 +2378,24 @@ _global.SENTRY_RELEASE = {
             prevRef: a,
             nextRef: t,
             onNextClicked: s,
-            onPrevClicked: r
+            onPrevClicked: r,
+            onNextKeyDown: n
           } = e;
           return (0, g.jsxs)("div", {
             className: "rockstargames-modules-core-headerd98f432655f19a842390597c4434db06",
-            children: [(0, g.jsx)("div", {
+            children: [(0, g.jsx)("button", {
               className: "rockstargames-modules-core-headerc06ca360ce11f2cef7baf8c5fba05a42",
               ref: a,
               onClick: r,
               "aria-label": "Previous",
-              role: "button",
-              tabIndex: 0,
-              onKeyUp: () => {}
-            }), (0, g.jsx)("div", {
+              role: "button"
+            }), (0, g.jsx)("button", {
               className: "rockstargames-modules-core-headera4f98606cdef508fbd2e69c5564a92d8",
               ref: t,
               onClick: s,
+              onKeyDown: n,
               "aria-label": "Next",
-              role: "button",
-              tabIndex: 0,
-              onKeyUp: () => {}
+              role: "button"
             })]
           })
         },
@@ -2406,21 +2410,21 @@ _global.SENTRY_RELEASE = {
             slideClass: o,
             style: d,
             className: l,
-            cardSizeBreakpoints: m = {},
+            cardSizeBreakpoints: m,
             customAspectRatio: u,
             titleBadge: f
           } = e;
           const {
             track: p
-          } = (0, ne.ye)(), k = (0, c.useRef)(null), _ = (0, c.useRef)(null), b = (0, c.useRef)(null), [h, v] = (0, c.useState)(null), [x, y] = (0, c.useState)(!1), [N, S] = (0, c.useState)(null), [w, j] = (0, c.useState)({}), [C, I] = (0, c.useState)(), {
+          } = (0, oe.ye)(), _ = (0, c.useRef)(null), k = (0, c.useRef)(null), b = (0, c.useRef)(null), [h, v] = (0, c.useState)(null), [x, y] = (0, c.useState)(!1), [N, S] = (0, c.useState)(null), [w, j] = (0, c.useState)(), [C, T] = (0, c.useState)(), {
             ref: M,
             inView: E
-          } = (0, le.cD)({
+          } = (0, ue.cD)({
             threshold: .6
-          }), [L, V] = (0, c.useState)(!1), [D, P] = (0, c.useState)(null), [B, $] = (0, c.useState)(!1);
+          }), [L, V] = (0, c.useState)(!1), [P, D] = (0, c.useState)(null), [B, $] = (0, c.useState)(!1);
           let F = !1;
           F = !0;
-          const [O, A] = (0, c.useState)(0), [U, R] = (0, c.useState)(0);
+          const [O, A] = (0, c.useState)(0), [R, U] = (0, c.useState)(0);
           (0, c.useEffect)((() => {
             const e = () => {
               $(window.innerWidth < 1024)
@@ -2436,7 +2440,7 @@ _global.SENTRY_RELEASE = {
               window.removeEventListener("resize", e)
             }
           }), [w]);
-          const H = {
+          const G = {
             0: {
               spaceBetween: i ?? 16
             },
@@ -2451,35 +2455,35 @@ _global.SENTRY_RELEASE = {
             }
           };
           (0, c.useEffect)((() => {
-            if (!k.current) return;
+            if (!_.current) return;
             const e = () => {
-              if (k.current) {
-                const e = n || Number(window.getComputedStyle(k.current).getPropertyValue("--slides-per-view")),
-                  a = n ? 1 : Number(window.getComputedStyle(k.current).getPropertyValue("--slides-per-view-multiplier"));
+              if (_.current) {
+                const e = n || Number(window.getComputedStyle(_.current).getPropertyValue("--slides-per-view")),
+                  a = n ? 1 : Number(window.getComputedStyle(_.current).getPropertyValue("--slides-per-view-multiplier"));
                 S(e * a)
               }
             };
             return window.addEventListener("resize", e), e(), () => {
               window.removeEventListener("resize", e)
             }
-          }), [k, n]), (0, c.useEffect)((() => {
+          }), [_, n]), (0, c.useEffect)((() => {
             if (!t) return;
             let e = !1;
             t.forEach((a => {
-              "cover-card" === a?.props?.tina?.payload?.meta?.type && (e = !0, P(a))
+              "cover-card" === a?.props?.tina?.payload?.meta?.type && (e = !0, D(a))
             })), V(e);
-            const a = t.map(((e, a) => "cover-card" === e?.props?.tina?.payload?.meta?.type && B ? null : (0, g.jsx)(ee.Ky, {
+            const a = t.map(((e, a) => "cover-card" === e?.props?.tina?.payload?.meta?.type && B ? null : (0, g.jsx)(te.Ky, {
               className: "rockstargames-modules-core-headerf58e79e329504e170dc9cb4595ea011b",
               onFocus: () => q(a),
               children: e
             }, Symbol(a).toString())));
             v(a)
           }), [t, B]), (0, c.useEffect)((() => {
-            I({
+            T({
               nextEl: b.current,
-              prevEl: _.current
+              prevEl: k.current
             })
-          }), [b, _]), (0, c.useEffect)((() => {
+          }), [b, k]), (0, c.useEffect)((() => {
             E && !x && t && (p({
               event: "page_section_impression",
               event_action: "impression",
@@ -2488,23 +2492,23 @@ _global.SENTRY_RELEASE = {
               element_placement: `deck - ${r}`.toLowerCase()
             }), y(!0))
           }), [E, t]);
-          let G = "custom" === s ? {
+          let H = "custom" === s ? {
             "--custom-aspect-ratio": u,
             ...d
           } : {
             ...d
           };
           const W = 0 !== O ? `${O}px` : "100%";
-          G = {
-            ...G,
+          H = {
+            ...H,
             "--carousel-cards-height": W,
-            "--carousel-nav-opacity": U
+            "--carousel-nav-opacity": R
           };
           const q = e => {
-            w.slideTo(e)
+            w?.slideTo(e)
           };
           return (0, g.jsxs)("div", {
-            className: T("rockstargames-modules-core-headerd0c3d91603036c852633939015a6cb48", l),
+            className: I("rockstargames-modules-core-headerd0c3d91603036c852633939015a6cb48", l),
             "data-size": s,
             "data-sm": m?.sm ? m?.sm : s,
             "data-md": m?.md ? m?.md : s,
@@ -2513,14 +2517,14 @@ _global.SENTRY_RELEASE = {
             "data-xxl": m?.xxl ? m?.xxl : s,
             "data-has-covercard": L,
             "data-new-carousel-nav": !0,
-            ref: k,
-            style: G,
+            ref: _,
+            style: H,
             children: [(0, g.jsx)("div", {
               className: "rockstargames-modules-core-headerddeb75a59ed783554b94e8298897a1fa",
               ref: M
             }), L && B && (0, g.jsx)("div", {
               className: "rockstargames-modules-core-headerd5f00d41fdd2c864a0eb9e069cf08db0",
-              children: D
+              children: P
             }), (0, g.jsx)("div", {
               className: "rockstargames-modules-core-headercdc60dbde3f8db6f466aba8a3e19fa96",
               children: (0, g.jsxs)("div", {
@@ -2536,10 +2540,16 @@ _global.SENTRY_RELEASE = {
                       children: f
                     })]
                   }), (0, g.jsx)(Na, {
-                    prevRef: _,
+                    prevRef: k,
                     nextRef: b,
                     onNextClicked: () => {},
-                    onPrevClicked: () => {}
+                    onPrevClicked: () => {},
+                    onNextKeyDown: e => {
+                      if ("Tab" === e.key && !e.shiftKey) {
+                        const a = w?.slides[w?.activeIndex].querySelector('a, button, [role="button"]');
+                        a && (e.preventDefault(), a.focus())
+                      }
+                    }
                   })]
                 }), a && (0, g.jsx)("div", {
                   className: "rockstargames-modules-core-headera1007d13e3a321bb18b5fc667025d545",
@@ -2548,7 +2558,7 @@ _global.SENTRY_RELEASE = {
                   }
                 })]
               })
-            }), N ? (0, g.jsx)(ee.wx, {
+            }), N ? (0, g.jsx)(te.wx, {
               slidesPerView: N,
               onInit: e => {
                 j(e);
@@ -2556,14 +2566,14 @@ _global.SENTRY_RELEASE = {
                   const {
                     height: t
                   } = e;
-                  t > 0 && (A(t), R(1), clearInterval(a))
+                  t > 0 && (A(t), U(1), clearInterval(a))
                 }), 500)
               },
               grabCursor: !0,
               navigation: C,
               modules: [va._2],
-              breakpoints: H,
-              slideClass: T("swiper-slide", o),
+              breakpoints: G,
+              slideClass: I("swiper-slide", o),
               onSlideNextTransitionEnd: () => {
                 p({
                   event_action: "next",
@@ -2639,7 +2649,7 @@ _global.SENTRY_RELEASE = {
             overflow: "hidden"
           }
         },
-        Ia = e => {
+        Ta = e => {
           let {
             title: a = "",
             mobileImg: t,
@@ -2658,7 +2668,7 @@ _global.SENTRY_RELEASE = {
             })
           })
         },
-        Ta = e => {
+        Ia = e => {
           let {
             title: a = "Membership Rewards",
             shards: t
@@ -2674,7 +2684,7 @@ _global.SENTRY_RELEASE = {
                 mobile: r,
                 desktop: n
               } = s;
-              return e.push((0, g.jsx)(Ia, {
+              return e.push((0, g.jsx)(Ta, {
                 title: t,
                 mobileImg: r?.full_src,
                 desktopImg: n?.full_src
@@ -2728,7 +2738,7 @@ _global.SENTRY_RELEASE = {
                 })]
               }), !!d && !!d.length && (0, g.jsx)(sa.motion.div, {
                 variants: Ca,
-                children: (0, g.jsx)(Z, {
+                children: (0, g.jsx)(ae, {
                   buttons: d,
                   className: wa.buttonGroup
                 })
@@ -2749,7 +2759,7 @@ _global.SENTRY_RELEASE = {
               })]
             }), !!d && !!d.length && (0, g.jsx)(sa.motion.div, {
               variants: Ca,
-              children: (0, g.jsx)(Z, {
+              children: (0, g.jsx)(ae, {
                 buttons: d,
                 className: wa.buttonGroup
               })
@@ -2848,15 +2858,15 @@ _global.SENTRY_RELEASE = {
                 }
               })), a
             })(d),
-            k = $(t?.mobile?.full_src ?? null),
-            _ = $(t?.desktop?.full_src ?? k),
+            _ = $(t?.mobile?.full_src ?? null),
+            k = $(t?.desktop?.full_src ?? _),
             b = $(c?.mobile?.full_src ?? null),
             h = $(c?.desktop?.full_src ?? b);
           return (0, g.jsxs)(sa.motion.div, {
-            className: T(wa.hero, r),
+            className: I(wa.hero, r),
             style: {
-              "--background-image-desktop": `url(${_})`,
-              "--background-image-mobile": `url(${k})`,
+              "--background-image-desktop": `url(${k})`,
+              "--background-image-mobile": `url(${_})`,
               "--layered-image-desktop": `url(${h})`,
               "--layered-image-mobile": `url(${b})`
             },
@@ -2867,7 +2877,7 @@ _global.SENTRY_RELEASE = {
             theme: u,
             children: [(0, g.jsxs)("div", {
               className: wa.images,
-              children: [_ && k ? (0, g.jsx)("div", {
+              children: [k && _ ? (0, g.jsx)("div", {
                 className: wa.background,
                 style: t?.style ?? {}
               }) : "", b && h ? (0, g.jsx)("div", {
@@ -2884,7 +2894,7 @@ _global.SENTRY_RELEASE = {
               title: f,
               brands: s,
               legalText: l
-            }), m?.shards && (0, g.jsx)(Ta, {
+            }), m?.shards && (0, g.jsx)(Ia, {
               ...m
             })]
           })
@@ -2897,15 +2907,15 @@ _global.SENTRY_RELEASE = {
             style: r = {}
           } = e;
           return (0, g.jsx)("span", {
-            className: T(s, t?.className, "rockstargames-modules-core-headera7f106a8036d74ed9282a741476c6b5a"),
+            className: I(s, t?.className, "rockstargames-modules-core-headera7f106a8036d74ed9282a741476c6b5a"),
             style: (0, M.G6)(r ?? t?.style ?? {}),
             dangerouslySetInnerHTML: {
               __html: F().unescape(a)
             }
           })
         };
-      var Da = t(53592);
-      const Pa = (0, d.defineMessages)({
+      var Pa = t(53592);
+      const Da = (0, d.defineMessages)({
           language_selector_default: {
             id: "language_selector_default",
             defaultMessage: "Select a Language"
@@ -2933,25 +2943,25 @@ _global.SENTRY_RELEASE = {
             n = (0, d.useIntl)(),
             [i, o] = (0, d.getLocale)(),
             [l, m] = (0, c.useState)(!1),
-            f = (0, c.useMemo)((() => (0, Da.c)()), []),
-            k = (0, c.useCallback)((e => {
+            f = (0, c.useMemo)((() => (0, Pa.c)()), []),
+            _ = (0, c.useCallback)((e => {
               let a = r.pathname;
               const t = a.split("/");
-              return d.locales.map((e => e.subdomaincom)).includes(t[0]) && (a = t.slice(1).join("/")), f.currentSite?.site === Da.U.www ? "en" === e ? `${window.location.origin}${a}${r.search}` : `${window.location.origin}/${e}${a}${r.search}` : `${window.location.origin}${a}${r.search}`
+              return d.locales.map((e => e.subdomaincom)).includes(t[0]) && (a = t.slice(1).join("/")), f.currentSite?.site === Pa.U.www ? "en" === e ? `${window.location.origin}${a}${r.search}` : `${window.location.origin}/${e}${a}${r.search}` : `${window.location.origin}${a}${r.search}`
             }), [r]),
-            _ = (0, c.useRef)(null),
+            k = (0, c.useRef)(null),
             [b, h] = (0, c.useState)(0),
             v = matchMedia("(hover: none) and (pointer: coarse)").matches,
             x = e => {
               if (s && s(!1), i.subdomaincom === e || "none" === e) return void(s && s(!1));
               const a = d.locales.find((a => a.subdomaincom === e));
-              a && (o(a.iso), window.location.href = k(e))
+              a && (o(a.iso), window.location.href = _(e))
             };
           return (0, c.useEffect)((() => {
             void 0 !== t && !1 === t && !0 === l && m(!1)
           }), [t]), (0, c.useEffect)((() => {
-            _.current && h(_.current.scrollHeight)
-          }), [_]), (0, g.jsxs)("div", {
+            k.current && h(k.current.scrollHeight)
+          }), [k]), (0, g.jsxs)("div", {
             className: [Ba.languageSelector, l ? Ba.open : ""].join(" "),
             "data-theme": a,
             children: [v && "sc-menu" === a && (0, g.jsx)("div", {
@@ -2962,12 +2972,12 @@ _global.SENTRY_RELEASE = {
                 onChange: e => {
                   x(e.currentTarget.value)
                 },
-                "aria-label": n.formatMessage(Pa.language_selector_default),
+                "aria-label": n.formatMessage(Da.language_selector_default),
                 children: [(0, g.jsx)("option", {
                   className: Ba.selectBoxOption,
                   value: "none",
                   children: (0, g.jsx)(d.FormattedMessage, {
-                    ...Pa.language_selector_default
+                    ...Da.language_selector_default
                   })
                 }), d.locales.map((e => {
                   let {
@@ -2987,15 +2997,15 @@ _global.SENTRY_RELEASE = {
                   e.stopPropagation(), s && s(!l), m(!l)
                 },
                 type: "button",
-                "aria-label": n.formatMessage(Pa.language_selector_default),
+                "aria-label": n.formatMessage(Da.language_selector_default),
                 children: [(0, g.jsx)("i", {}), (0, g.jsx)("span", {
                   children: (0, g.jsx)(d.FormattedMessage, {
-                    ...Pa.language_selector_default
+                    ...Da.language_selector_default
                   })
                 })]
               }), (0, g.jsx)("div", {
                 className: Ba.linkWrapper,
-                ref: _,
+                ref: k,
                 style: {
                   "--ls-linkWrapper-opened-height": `${b}px`
                 },
@@ -3007,7 +3017,7 @@ _global.SENTRY_RELEASE = {
                       label: t
                     } = e;
                     return (0, g.jsx)(p, {
-                      to: k(a),
+                      to: _(a),
                       onClick: () => {
                         x(a)
                       },
@@ -3066,14 +3076,14 @@ _global.SENTRY_RELEASE = {
             r = a["--border-image-source"],
             n = $(r || null);
           return r && (s["--border-image-source"] = `url(${n})`), (0, g.jsx)("div", {
-            className: T(za.border, t),
+            className: I(za.border, t),
             style: {
               ...s
             }
           })
         },
         Oa = e => e?.images ? (0, g.jsx)("div", {
-          className: T(za.layeredImage, za[e?.variantClass], za[e?.wrapperSizeClass]),
+          className: I(za.layeredImage, za[e?.variantClass], za[e?.wrapperSizeClass]),
           style: {
             ...e?.style ?? {}
           },
@@ -3099,7 +3109,7 @@ _global.SENTRY_RELEASE = {
                   zIndex: c ?? a + 1
                 },
                 imageStyle: l,
-                className: T(d, u, za.imageLayer, za[s], za[r], za[n], za[i], za[o]),
+                className: I(d, u, za.imageLayer, za[s], za[r], za[n], za[i], za[o]),
                 alt: m
               }, c ?? a + 1)
             })), e?.borderImage && (0, g.jsx)(Fa, {
@@ -3118,7 +3128,7 @@ _global.SENTRY_RELEASE = {
             children: t
           }) : t
         },
-        Ua = e => {
+        Ra = e => {
           let {
             badge: a = null,
             badgeType: t,
@@ -3135,7 +3145,7 @@ _global.SENTRY_RELEASE = {
             hero: l,
             children: (0, g.jsx)("figure", {
               children: (0, g.jsxs)("div", {
-                className: T("rockstargames-modules-core-headercab262c98c7f5bb3e982d9b075b3c2a8", l ? "rockstargames-modules-core-headercefd6d8859aeec1057caed28caa160c3" : "", c?.hiddenMobile ? "hiddenMobile" : "", c?.hiddenLarge ? "hiddenLarge" : "", c?.className, o),
+                className: I("rockstargames-modules-core-headercab262c98c7f5bb3e982d9b075b3c2a8", l ? "rockstargames-modules-core-headercefd6d8859aeec1057caed28caa160c3" : "", c?.hiddenMobile ? "hiddenMobile" : "", c?.hiddenLarge ? "hiddenLarge" : "", c?.className, o),
                 style: (0, M.G6)({
                   ...i,
                   ...c?.style
@@ -3158,7 +3168,7 @@ _global.SENTRY_RELEASE = {
             })
           })
         },
-        Ra = {
+        Ua = {
           pillBtn: "rockstargames-modules-core-headereea0db67b0aabf28288b288845324afe",
           selected: "rockstargames-modules-core-headerd1d25362fd730ca979d5ad79de088f89",
           multiSourceContainer: "rockstargames-modules-core-headerdc538bbfc2f407ed9fe840097ccac819",
@@ -3166,7 +3176,7 @@ _global.SENTRY_RELEASE = {
           animatePlaceholder: "rockstargames-modules-core-headerfbd73f5f70c2ce64aa9c9bd398f1a3b5",
           "loader-keyframes": "rockstargames-modules-core-headerf6040b2ae96a9b0dcdb2d283c9caff59"
         },
-        Ha = e => {
+        Ga = e => {
           let {
             imageUrl: a,
             className: t,
@@ -3178,15 +3188,15 @@ _global.SENTRY_RELEASE = {
           } = e;
           const [d, l] = (0, c.useState)(!1);
           return (0, g.jsxs)("div", {
-            className: Ra.multiSourceContainer,
+            className: Ua.multiSourceContainer,
             children: [!d && (0, g.jsx)("img", {
-              className: [t, Ra.animatePlaceholder].join(" "),
+              className: [t, Ua.animatePlaceholder].join(" "),
               src: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiB2aWV3Qm94PSIwIDAgMTkyMCAxMDgwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cmVjdCB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiBmaWxsPSIjMzMzMzMzIi8+Cjwvc3ZnPgo=",
               sizes: "(max-width: 1024px) 100vw, 1024px",
               alt: "Loading...",
               style: r
             }), (0, g.jsx)("img", {
-              className: [Ra.multiSourceImage, t].join(" "),
+              className: [Ua.multiSourceImage, t].join(" "),
               src: `${a}?im=Resize=1920`,
               srcSet: (m = a, o.map((e => `${m}?im=Resize=${e} ${e}w`)).join(", ")),
               sizes: "(max-width: 400px) 200px, (max-width: 1920px) 100vw, 1920px",
@@ -3201,10 +3211,62 @@ _global.SENTRY_RELEASE = {
           });
           var m
         },
-        Ga = {
+        Ha = e => {
+          let {
+            impressionTracking: a,
+            gtm: t = {},
+            children: s
+          } = e;
+          return a?.shouldTrack ? (0, g.jsx)(Ja, {
+            threshold: a?.threshold,
+            gtm: t,
+            children: s
+          }) : s
+        },
+        Wa = (e, a) => t => ((e, a, t) => (0, g.jsx)(Ha, {
+          impressionTracking: t?.impressionTracking,
+          gtm: t?.gtm,
+          children: (0, g.jsx)(e, {
+            ...a
+          })
+        }))(e, t, a),
+        qa = {
+          event: "page_section_impression",
+          event_action: "impression",
+          event_category: "page_section",
+          event_label: null,
+          element_placement: null
+        },
+        Ja = e => {
+          let {
+            threshold: a = .6,
+            children: t,
+            gtm: s = {}
+          } = e;
+          const {
+            track: r
+          } = (0, oe.ye)(), {
+            ref: n,
+            inView: i
+          } = (0, ue.cD)({
+            threshold: a,
+            trackVisibility: !0,
+            delay: 100
+          }), [o, d] = (0, c.useState)(!1);
+          return (0, c.useEffect)((() => {
+            i && !o && (r({
+              ...qa,
+              ...s
+            }), d(!0))
+          }), [i, n]), (0, g.jsx)("section", {
+            ref: n,
+            children: t
+          })
+        },
+        Ka = {
           tag: "rockstargames-modules-core-headered77774d2704bc0ebc0ac156542ae053"
         },
-        Wa = e => {
+        Xa = e => {
           let {
             className: a,
             href: t,
@@ -3213,7 +3275,7 @@ _global.SENTRY_RELEASE = {
           } = e;
           const n = (0, g.jsxs)("div", {
             style: r,
-            className: [Ga.tag, a].join(" "),
+            className: [Ka.tag, a].join(" "),
             children: [(0, g.jsx)("i", {}), s]
           });
           return void 0 !== t ? (0, g.jsx)(p, {
@@ -3221,7 +3283,7 @@ _global.SENTRY_RELEASE = {
             children: n
           }) : n
         },
-        qa = {
+        Qa = {
           newswireBlock: "rockstargames-modules-core-headera793f470884d207243d6c3caac8ad811",
           info: "rockstargames-modules-core-headerd50f6d2bc5f983c05311292acb4c78a5",
           title: "rockstargames-modules-core-headercc389449dc1495fc9c323fc2c547857d",
@@ -3231,22 +3293,23 @@ _global.SENTRY_RELEASE = {
           top: "rockstargames-modules-core-headerfa1a6f4c7d94b94f5af2dc1ac9af79f1",
           startAnimation: "rockstargames-modules-core-headere380e8c67066df6f33fc018341ea96e5"
         },
-        Ja = e => {
+        Ya = e => {
           let {
             index: a,
             post: t,
             noSpecialOrder: s = !1,
-            style: r = {}
+            focused: r,
+            style: n = {}
           } = e;
-          const [n] = (0, u.useSearchParams)(), i = t.preview_images_parsed.newswire_block, o = {
-            default: 0 !== a || s ? i.square || i.d16x9 || i._fallback : i.d16x9 || i.square || i._fallback,
-            mobile: i.square || i._fallback
-          }, [c, d] = (0, M.kJ)(o.default), [l, m] = (0, M.kJ)(o.mobile), f = {
+          const [i] = (0, u.useSearchParams)(), o = t.preview_images_parsed.newswire_block, c = {
+            default: 0 !== a || s ? o.square || o.d16x9 || o._fallback : o.d16x9 || o.square || o._fallback,
+            mobile: o.square || o._fallback
+          }, [d, l] = (0, M.kJ)(c.default), [m, f] = (0, M.kJ)(c.mobile), _ = {
             default: {
-              backgroundImage: `url(${o.default})`
+              backgroundImage: `url(${c.default})`
             },
             mobile: {
-              backgroundImage: `url(${o.mobile})`
+              backgroundImage: `url(${c.mobile})`
             }
           };
           return (0, g.jsx)(p, {
@@ -3254,31 +3317,32 @@ _global.SENTRY_RELEASE = {
             "data-gtm-action": "Article Block Click",
             "data-gtm-label": `${t.title}`,
             to: t.url,
-            className: [qa.newswireBlock, s ? qa.newswireBlockNoSpecialOrder : "", null !== c ? qa.startAnimation : ""].join(" "),
+            className: [Qa.newswireBlock, s ? Qa.newswireBlockNoSpecialOrder : "", null !== d ? Qa.startAnimation : ""].join(" "),
+            focused: r,
             children: (0, g.jsxs)(g.Fragment, {
-              children: [0 !== a || n.get("tag_id") ? (0, g.jsx)("div", {
-                className: qa.preview,
-                style: f.default
+              children: [0 !== a || i.get("tag_id") ? (0, g.jsx)("div", {
+                className: Qa.preview,
+                style: _.default
               }) : (0, g.jsxs)(g.Fragment, {
                 children: [(0, g.jsx)("div", {
-                  className: qa.previewMobile,
-                  style: f.mobile
+                  className: Qa.previewMobile,
+                  style: _.mobile
                 }), (0, g.jsx)("div", {
-                  className: qa.preview,
-                  style: f.default
+                  className: Qa.preview,
+                  style: _.default
                 })]
               }), (0, g.jsxs)("div", {
-                className: qa.info,
+                className: Qa.info,
                 children: [(0, g.jsxs)("div", {
-                  className: qa.top,
-                  children: [t.primary_tags.length ? (0, g.jsx)(Wa, {
+                  className: Qa.top,
+                  children: [t.primary_tags.length ? (0, g.jsx)(Xa, {
                     title: t.primary_tags[t.primary_tags.length > 1 && 722 === t.primary_tags[0].id ? 1 : 0].name
                   }) : "", (0, g.jsx)("time", {
                     dateTime: t.created,
                     children: t.created_formatted
                   })]
                 }), (0, g.jsx)("h5", {
-                  className: qa.title,
+                  className: Qa.title,
                   dangerouslySetInnerHTML: {
                     __html: t.title
                   }
@@ -3287,9 +3351,9 @@ _global.SENTRY_RELEASE = {
             })
           })
         };
-      var Xa = t(55492),
-        Ka = t.n(Xa);
-      const Qa = (0, M.Ux)((e => {
+      var Za = t(55492),
+        et = t.n(Za);
+      const at = (0, M.Ux)((e => {
           let {
             relativeTo: a = "",
             tagId: t = null,
@@ -3298,9 +3362,9 @@ _global.SENTRY_RELEASE = {
           } = e;
           const [n] = (0, u.useSearchParams)(), {
             tagId: i = null
-          } = (0, u.useParams)(), [o, d] = (0, c.useState)(i ?? t ?? n.get("tag_id")), [l, m] = (0, c.useState)(1), [f, p] = (0, c.useState)([]), [k, _] = (0, c.useState)(null), {
+          } = (0, u.useParams)(), [o, d] = (0, c.useState)(i ?? t ?? n.get("tag_id")), [l, m] = (0, c.useState)(1), [f, p] = (0, c.useState)([]), [_, k] = (0, c.useState)(null), {
             data: h
-          } = (0, b.UL)(Ka(), {
+          } = (0, b.UL)(et(), {
             variables: {
               tagId: Number(o),
               page: l,
@@ -3311,13 +3375,13 @@ _global.SENTRY_RELEASE = {
           return (0, c.useEffect)((() => {
             m(1), p([]), d(i ?? t ?? n.get("tag_id"))
           }), [n.get("tag_id")]), (0, c.useEffect)((() => {
-            h && h.posts && h.posts.paging && _(h.posts.paging), h && h.posts && h.posts.results && p(f.concat(h.posts.results))
+            h && h.posts && h.posts.paging && k(h.posts.paging), h && h.posts && h.posts.results && p(f.concat(h.posts.results))
           }), [h]), f.length ? (0, g.jsxs)(g.Fragment, {
-            children: [(0, g.jsx)(at, {
+            children: [(0, g.jsx)(nt, {
               posts: f,
               relativeTo: a,
               noSpecialOrder: null !== o
-            }), null !== k && k.nextPage ? (0, g.jsx)(I, {
+            }), null !== _ && _.nextPage ? (0, g.jsx)(T, {
               onClick: () => m(l + 1),
               disabled: !1,
               context: "secondary",
@@ -3325,42 +3389,43 @@ _global.SENTRY_RELEASE = {
             }) : ""]
           }) : null
         })),
-        Ya = {
+        tt = {
           pillBtn: "rockstargames-modules-core-headerafd0af959edb4a463c41ad4e9cc5dadc",
           selected: "rockstargames-modules-core-headerbcd59aa4a9e88d86a2cbe8d4972f8f51",
           related: "rockstargames-modules-core-headera748ad776070dab831edc1f67f66af08",
           posts: "rockstargames-modules-core-headerc0aa38678decd13ca38886b4547efedd",
           just1post: "rockstargames-modules-core-headerb1a31ddf7fd4458ee860d354a6a0ac92"
         },
-        Za = (0, M.Ux)((e => {
+        st = (0, M.Ux)((e => {
           let {
             posts: a,
             t
           } = e;
           return (0, g.jsxs)("section", {
-            className: Ya.related,
+            className: tt.related,
             children: [(0, g.jsx)("h2", {
               children: t("Related Stories")
             }), (0, g.jsx)("div", {
-              className: [Ya.posts, 1 === a.length ? Ya.just1post : ""].join(" "),
-              children: a.map((e => (0, g.jsx)(Ja, {
+              className: [tt.posts, 1 === a.length ? tt.just1post : ""].join(" "),
+              children: a.map((e => (0, g.jsx)(Ya, {
                 noSpecialOrder: !0,
                 post: e
               }, e.id)))
             })]
           })
         })),
-        et = {
+        rt = {
           newswireBlocks: "rockstargames-modules-core-headerc2c8eedd25de7e186655f98b2a8d8960",
           noSpecialOrder: "rockstargames-modules-core-headerc0d0db9dfc71c9f4f959b9c017b1ae4b"
         },
-        at = (0, M.S6)((e => {
+        nt = (0, M.S6)((e => {
           let {
             noSpecialOrder: a = !1,
             posts: t,
             gtmTrack: s,
             relativeTo: r
           } = e;
+          const [n, i] = (0, c.useState)(null);
           return (0, c.useEffect)((() => {
             if (!t.length) return;
             const e = {
@@ -3378,17 +3443,18 @@ _global.SENTRY_RELEASE = {
                 position: t + 1,
                 list: "Home"
               })
-            })), s(e)
+            })), s(e), i(t.length)
           }), [t.length]), (0, g.jsx)("div", {
-            className: [et.newswireBlocks, a ? et.noSpecialOrder : "", et.contextHome].join(" "),
-            children: t.map(((e, t) => (0, g.jsx)(Ja, {
+            className: [rt.newswireBlocks, a ? rt.noSpecialOrder : "", rt.contextHome].join(" "),
+            children: t.map(((e, t) => (0, g.jsx)(Ya, {
               index: t,
               noSpecialOrder: a,
-              post: e
+              post: e,
+              focused: t === n
             }, e.id)))
           })
         })),
-        tt = {
+        it = {
           pillBtn: "rockstargames-modules-core-headerf87ac9a7d56545847cf4d8ca471b03e6",
           selected: "rockstargames-modules-core-headera8ea61e57fd58bfcb99aef7e6d687045",
           grid: "rockstargames-modules-core-headera57241f29873f89f89ab8b27994e71c3",
@@ -3412,9 +3478,9 @@ _global.SENTRY_RELEASE = {
           skull: "rockstargames-modules-core-headerba4bd16bff2fbc40616457007b4a7442"
         },
         {
-          sanitize: st
-        } = De(),
-        rt = e => {
+          sanitize: ot
+        } = Pe(),
+        ct = e => {
           let {
             list: a,
             string: t,
@@ -3430,62 +3496,62 @@ _global.SENTRY_RELEASE = {
           return (0, c.useEffect)((() => {
             u(a)
           }), [a]), t || a ? d && m ? (0, g.jsx)("div", {
-            className: tt.grid,
+            className: it.grid,
             style: {
               "--ordered-list-grid-column": d,
               "--ordered-list-grid-column-mobile": l ?? d
             },
             children: (0, g.jsx)("ol", {
               style: (0, M.G6)(r),
-              className: T(tt.itemList, tt.noImg, tt[s], tt[i]),
+              className: I(it.itemList, it.noImg, it[s], it[i]),
               children: m.map((e => (0, g.jsx)("li", {
                 dangerouslySetInnerHTML: {
-                  __html: st(e.content)
+                  __html: ot(e.content)
                 }
               }, e.content)))
             })
           }) : (0, g.jsx)("ol", {
             style: (0, M.G6)(r),
-            className: T(tt.itemList, tt.custom, o ? tt.noImg : "", s ? tt[s] : "", i ? tt[i] : "", n ?? ""),
+            className: I(it.itemList, it.custom, o ? it.noImg : "", s ? it[s] : "", i ? it[i] : "", n ?? ""),
             children: a.map((e => (0, g.jsx)("li", {
               dangerouslySetInnerHTML: {
-                __html: st(e?.content ?? e)
+                __html: ot(e?.content ?? e)
               }
             }, e?.content)))
           }) : null
         };
-      var nt = t(67356),
-        it = t(84296);
-      const ot = (e, a) => {
+      var dt = t(67356),
+        lt = t(84296);
+      const mt = (e, a) => {
           const t = e.tiers && e.tiers.every((e => e.isComplete)),
             s = a.tiers && a.tiers.every((e => e.isComplete));
           return t && !s ? 1 : !t && s ? -1 : 0
         },
-        ct = (0, d.defineMessages)({
+        ut = (0, d.defineMessages)({
           pl_card_badge_content_complete: {
             id: "pl_card_badge_content_complete",
             defaultMessage: "Complete"
           }
         }),
-        dt = {
+        ft = {
           pillBtn: "rockstargames-modules-core-headere6891f053f06919f1ef0dc72cafe9ae7",
           selected: "rockstargames-modules-core-headere5cce3088e494e8ddb9b0cf5528697a3",
           packCardTierIndicator: "rockstargames-modules-core-headereee874b61946e2a65886d622445e1c38",
           tierIndicator: "rockstargames-modules-core-headerbf9ed66cb83cf9a38bfc6fbb8e105fb7",
           active: "rockstargames-modules-core-headercfa711252c08391d3a0f1ecd8728a61a"
         },
-        lt = e => {
+        gt = e => {
           let {
             tiers: a
           } = e;
           return (0, g.jsx)("div", {
-            className: dt.packCardTierIndicator,
+            className: ft.packCardTierIndicator,
             children: a?.map(((e, a) => (0, g.jsx)("div", {
-              className: [dt.tierIndicator, e.isComplete ? dt.active : ""].join(" ")
+              className: [ft.tierIndicator, e.isComplete ? ft.active : ""].join(" ")
             }, a)))
           })
         },
-        mt = {
+        pt = {
           pillBtn: "rockstargames-modules-core-headere2e4b892ddcbdb2e09d3c3599a7e6c56",
           selected: "rockstargames-modules-core-headerff5c3c023fc12b68c6bf92b560c479b1",
           packCard: "rockstargames-modules-core-headerd6ef486c5f60d41c5662b092336c1f52",
@@ -3496,7 +3562,7 @@ _global.SENTRY_RELEASE = {
           icon: "rockstargames-modules-core-headercbc69eda17393995ac9d41a8b4b531e8",
           label: "rockstargames-modules-core-headerd4649f3812d37e7407503d49dcaaba04"
         },
-        ut = [{
+        _t = [{
           isComplete: !1
         }, {
           isComplete: !1
@@ -3505,7 +3571,7 @@ _global.SENTRY_RELEASE = {
         }, {
           isComplete: !1
         }],
-        ft = e => {
+        kt = e => {
           let {
             title: a,
             url: t,
@@ -3520,9 +3586,9 @@ _global.SENTRY_RELEASE = {
             isMobile: m
           } = (0, M.bk)(), {
             loggedIn: f
-          } = (0, ne.yi)(), {
+          } = (0, oe.yi)(), {
             selectedCharacterTuple: p
-          } = (0, ne.of)(), [k, _] = (0, c.useState)(!1), [b, h] = (0, c.useState)(l), [v, x] = (0, c.useState)(!1), y = (0, d.useIntl)(), N = !!n?.length;
+          } = (0, oe.of)(), [_, k] = (0, c.useState)(!1), [b, h] = (0, c.useState)(l), [v, x] = (0, c.useState)(!1), y = (0, d.useIntl)(), N = !!n?.length;
           (0, c.useEffect)((() => {
             if (Array.isArray(p)) {
               const e = p?.[0];
@@ -3531,39 +3597,39 @@ _global.SENTRY_RELEASE = {
           }), [String(p)]), (0, c.useEffect)((() => {
             if (n && n.length > 0) {
               const e = n.some((e => !e.isComplete));
-              _(!e)
-            }
+              k(!e)
+            } else k(!1)
           }), [n]);
           const S = `${m?s?.mobile:s?.desktop}?im=Resize,height=${o}`;
           return (0, M.kJ)(S, (() => h(!0))), (0, g.jsx)(u.NavLink, {
-            className: [mt.packCard, r, k ? mt.packCompleted : ""].join(" "),
+            className: [pt.packCard, r, _ ? pt.packCompleted : ""].join(" "),
             to: t,
             onClick: i,
             children: (0, g.jsxs)("div", {
-              className: [mt.packCardImageBox, b ? mt.packCardImageLoaded : ""].join(" "),
+              className: [pt.packCardImageBox, b ? pt.packCardImageLoaded : ""].join(" "),
               style: {
-                backgroundImage: `url("${S}")`
+                "--background-image": `url(${S})`
               },
-              children: [k && (0, g.jsxs)("div", {
-                className: mt.badge,
+              children: [_ && (0, g.jsxs)("div", {
+                className: pt.badge,
                 children: [(0, g.jsx)("div", {
-                  className: mt.icon
+                  className: pt.icon
                 }), (0, g.jsx)("div", {
-                  className: mt.label,
-                  children: y.formatMessage(ct.pl_card_badge_content_complete)
+                  className: pt.label,
+                  children: y.formatMessage(ut.pl_card_badge_content_complete)
                 })]
               }), (0, g.jsxs)("div", {
-                className: mt.packCardTextBox,
+                className: pt.packCardTextBox,
                 children: [(0, g.jsx)("h4", {
                   children: a
-                }), f && !k && v && (0, g.jsx)(lt, {
-                  tiers: N ? n : ut
+                }), f && !_ && v && (0, g.jsx)(gt, {
+                  tiers: N ? n : _t
                 })]
               })]
             })
           })
         },
-        gt = {
+        bt = {
           pillBtn: "rockstargames-modules-core-headerc0607ec9e0a3925181496fc555721e0a",
           selected: "rockstargames-modules-core-headerff76988869bea7d18917be00339b2434",
           packList: "rockstargames-modules-core-headerffeeb1f272f99c5cb4711e4956c65f7f",
@@ -3571,142 +3637,79 @@ _global.SENTRY_RELEASE = {
           packCard: "rockstargames-modules-core-headera53b37fe7ab10b353eceea86123258a1",
           packGrid: "rockstargames-modules-core-headerb85775dc95fb3881171ee42e49076cbf"
         };
-      nt.gsap.registerPlugin(it.Q);
-      const pt = e => {
-        let {
-          isHeaderVisible: a,
-          packListItems: t,
-          packCardClassName: s = gt.packCard,
-          packListClassName: r = gt.packList,
-          packGridClassName: n = gt.packGrid,
-          selectPackCard: i,
-          sortFunction: o = ot
-        } = e;
-        const {
-          track: d
-        } = (0, ne.ye)(), l = (0, c.useRef)(null), m = [...t].sort(o), [u, f] = (0, c.useState)(), [p, k] = (0, c.useState)(!1);
-        return (0, c.useEffect)((() => {
-          if (!0 === p) return;
-          clearTimeout(u);
-          const e = setTimeout((() => {
-            k(!0)
-          }), 1e3);
-          f(e)
-        }), []), (0, it.Q)((() => {
-          if (!1 !== p && l?.current) {
-            const e = l.current.children;
-            nt.gsap.to(e, {
-              opacity: 1,
-              y: 0,
-              duration: .5,
-              stagger: .05,
-              ease: nt.Power2.easeInOut
-            })
-          }
-        }), {
-          dependencies: [p, t],
-          scope: l,
-          revertOnUpdate: !0
-        }), (0, g.jsx)("div", {
-          className: [r, a ? gt.headerVisible : ""].join(" "),
-          "data-testid": "pack-list",
-          children: (0, g.jsx)("div", {
-            ref: l,
-            className: n,
-            "data-testid": "pack-grid",
-            children: m.map(((e, a) => {
-              let {
-                id: t,
-                name: r,
-                title: n,
-                url: o,
-                images: c,
-                tiers: d
-              } = e;
-              return (0, g.jsx)(ft, {
-                title: n,
-                url: o,
-                className: s,
-                images: c,
-                tiers: d,
-                onClick: () => ((e, a, t, s, r) => {
-                  i(e, a, t, s, r)
-                })(r, n, o, t, a)
-              }, n)
-            }))
-          })
-        })
-      };
-      var kt;
-
-      function _t() {
-        return _t = Object.assign ? Object.assign.bind() : function(e) {
-          for (var a = 1; a < arguments.length; a++) {
-            var t = arguments[a];
-            for (var s in t) Object.prototype.hasOwnProperty.call(t, s) && (e[s] = t[s])
-          }
-          return e
-        }, _t.apply(this, arguments)
-      }
-      const bt = e => c.createElement("svg", _t({
-        xmlns: "http://www.w3.org/2000/svg",
-        width: 24,
-        height: 24,
-        fill: "none"
-      }, e), kt || (kt = c.createElement("path", {
-        stroke: "#fff",
-        strokeLinecap: "round",
-        strokeLinejoin: "round",
-        strokeWidth: 2,
-        d: "m15 18-6-6 6-6"
-      })));
-      var ht;
-
-      function vt() {
-        return vt = Object.assign ? Object.assign.bind() : function(e) {
-          for (var a = 1; a < arguments.length; a++) {
-            var t = arguments[a];
-            for (var s in t) Object.prototype.hasOwnProperty.call(t, s) && (e[s] = t[s])
-          }
-          return e
-        }, vt.apply(this, arguments)
-      }
-      const xt = e => c.createElement("svg", vt({
-          xmlns: "http://www.w3.org/2000/svg",
-          width: 24,
-          height: 24,
-          fill: "none"
-        }, e), ht || (ht = c.createElement("path", {
-          stroke: "#fff",
-          strokeLinecap: "round",
-          strokeLinejoin: "round",
-          strokeWidth: 2,
-          d: "m9 18 6-6-6-6"
-        }))),
-        yt = {
-          pillBtn: "rockstargames-modules-core-headerf5c8cbcdc2408c602e1d5c5ef98091a1",
-          selected: "rockstargames-modules-core-headerf05732bff172f32532936ffdf636a215",
-          navScrollButton: "rockstargames-modules-core-headeref8ca38f98b731ff5dfe07937b1bbe34"
-        },
-        Nt = e => {
+      dt.gsap.registerPlugin(lt.Q);
+      const ht = e => {
           let {
-            direction: a,
-            className: t,
-            ...s
+            isHeaderVisible: a,
+            packListItems: t,
+            packCardClassName: s = bt.packCard,
+            packListClassName: r = bt.packList,
+            packGridClassName: n = bt.packGrid,
+            selectPackCard: i,
+            sortFunction: o = mt
           } = e;
-          return (0, g.jsxs)("button", {
-            type: "button",
-            className: [t, yt.navScrollButton].join(" "),
-            ...s,
-            children: ["left" === a && (0, g.jsx)(bt, {}), "right" === a && (0, g.jsx)(xt, {})]
+          const d = (0, c.useRef)(null),
+            l = [...t].sort(o),
+            [m, u] = (0, c.useState)(),
+            [f, p] = (0, c.useState)(!1);
+          return (0, c.useEffect)((() => {
+            if (!0 === f) return;
+            clearTimeout(m);
+            const e = setTimeout((() => {
+              p(!0)
+            }), 1e3);
+            u(e)
+          }), []), (0, lt.Q)((() => {
+            if (!1 !== f && d?.current) {
+              const e = d.current.children;
+              dt.gsap.to(e, {
+                opacity: 1,
+                y: 0,
+                duration: .5,
+                stagger: .05,
+                ease: dt.Power2.easeInOut
+              })
+            }
+          }), {
+            dependencies: [f, t],
+            scope: d,
+            revertOnUpdate: !0
+          }), (0, g.jsx)("div", {
+            className: [r, a ? bt.headerVisible : ""].join(" "),
+            "data-testid": "pack-list",
+            children: (0, g.jsx)("div", {
+              ref: d,
+              className: n,
+              "data-testid": "pack-grid",
+              children: l.map(((e, a) => {
+                let {
+                  id: t,
+                  name: r,
+                  title: n,
+                  url: o,
+                  images: c,
+                  tiers: d
+                } = e;
+                return (0, g.jsx)(kt, {
+                  title: n,
+                  url: o,
+                  className: s,
+                  images: c,
+                  tiers: d,
+                  onClick: () => ((e, a, t, s, r) => {
+                    i(e, a, t, s, r)
+                  })(r, n, o, t, a)
+                }, n)
+              }))
+            })
           })
         },
-        St = {
+        vt = {
           pillBtn: "rockstargames-modules-core-headerdb4bf6cb61b2370932e4811235d51afa",
           selected: "rockstargames-modules-core-headerb691088f1c9719532c68ca7b97487e5b",
           chipButton: "rockstargames-modules-core-headerbfe6fefc1068ed81c8b38519a854285f"
         },
-        wt = e => {
+        xt = e => {
           let {
             title: a,
             onClick: t,
@@ -3717,155 +3720,314 @@ _global.SENTRY_RELEASE = {
             onClick: t,
             tabIndex: 0,
             "aria-label": a,
-            className: [St.chipButton, s ? St.selected : ""].join(" "),
+            className: [vt.chipButton, s ? vt.selected : ""].join(" "),
             children: (0, g.jsx)("div", {
               children: a
             })
           })
-        },
-        jt = (0, d.defineMessages)({
-          plm_nav_scroll_left: {
-            id: "plm_nav_scroll_left",
-            defaultMessage: "Scroll Left"
-          },
-          plm_nav_scroll_right: {
-            id: "plm_nav_scroll_right",
-            defaultMessage: "Scroll Right"
+        };
+      var yt;
+
+      function Nt() {
+        return Nt = Object.assign ? Object.assign.bind() : function(e) {
+          for (var a = 1; a < arguments.length; a++) {
+            var t = arguments[a];
+            for (var s in t) Object.prototype.hasOwnProperty.call(t, s) && (e[s] = t[s])
           }
-        }),
-        Ct = {
-          pillBtn: "rockstargames-modules-core-headera06d15859ff923574165bb46a5f3d0c9",
-          selected: "rockstargames-modules-core-headercce410d6b0f750e4332a82432812a32f",
-          navMenu: "rockstargames-modules-core-headerc5752917b36e8045f6765318dcfad3da",
-          navMenuMain: "rockstargames-modules-core-headerc507169b0a2e6c92ea16615a7740d669",
-          sectionMenu: "rockstargames-modules-core-headera874d8cdf964d1c68df9cf8fdd085844",
-          sectionItems: "rockstargames-modules-core-headera3f32f28bb1f1c6a4695c53680da9ed0",
-          nextSectionNavButton: "rockstargames-modules-core-headere26ad999829c4c68eadd9af67ba89033",
-          previousSectionNavButton: "rockstargames-modules-core-headerec50957bce6305ff1dc54a0f7d6a997b",
-          previousNavButton: "rockstargames-modules-core-headerf9530895bd80a161771d5ca70d967f65",
-          nextNavButton: "rockstargames-modules-core-headerfdd74c0f93dcc9be87ca508ab0fe469a",
-          navFeaturedItems: "rockstargames-modules-core-headerc6f0521d960314244895945154ba6c4a",
-          packListWrapper: "rockstargames-modules-core-headerf884d2636a68bc9c86f295b8229c435e"
+          return e
+        }, Nt.apply(this, arguments)
+      }
+      const St = e => c.createElement("svg", Nt({
+        xmlns: "http://www.w3.org/2000/svg",
+        width: 24,
+        height: 24,
+        fill: "none"
+      }, e), yt || (yt = c.createElement("path", {
+        stroke: "#fff",
+        strokeLinecap: "round",
+        strokeLinejoin: "round",
+        strokeWidth: 2,
+        d: "m15 18-6-6 6-6"
+      })));
+      var wt;
+
+      function jt() {
+        return jt = Object.assign ? Object.assign.bind() : function(e) {
+          for (var a = 1; a < arguments.length; a++) {
+            var t = arguments[a];
+            for (var s in t) Object.prototype.hasOwnProperty.call(t, s) && (e[s] = t[s])
+          }
+          return e
+        }, jt.apply(this, arguments)
+      }
+      const Ct = e => c.createElement("svg", jt({
+          xmlns: "http://www.w3.org/2000/svg",
+          width: 24,
+          height: 24,
+          fill: "none"
+        }, e), wt || (wt = c.createElement("path", {
+          stroke: "#fff",
+          strokeLinecap: "round",
+          strokeLinejoin: "round",
+          strokeWidth: 2,
+          d: "m9 18 6-6-6-6"
+        }))),
+        Tt = {
+          pillBtn: "rockstargames-modules-core-headerf5c8cbcdc2408c602e1d5c5ef98091a1",
+          selected: "rockstargames-modules-core-headerf05732bff172f32532936ffdf636a215",
+          navScrollButton: "rockstargames-modules-core-headeref8ca38f98b731ff5dfe07937b1bbe34"
         },
         It = e => {
           let {
+            direction: a,
+            className: t,
+            ...s
+          } = e;
+          return (0, g.jsxs)("button", {
+            type: "button",
+            className: [t, Tt.navScrollButton].join(" "),
+            ...s,
+            children: ["left" === a && (0, g.jsx)(St, {}), "right" === a && (0, g.jsx)(Ct, {})]
+          })
+        },
+        Mt = (0, d.defineMessages)({
+          pln_career_progress_unavailable: {
+            id: "pln_career_progress_unavailable",
+            defaultMessage: "Sorry, career progress pack cards are currently unavailable."
+          },
+          pln_career_progress_all_chip_title: {
+            id: "pln_career_progress_all_chip_title",
+            defaultMessage: "All"
+          },
+          pln_career_progress_header_signin_label: {
+            id: "pln_career_progress_header_signin_label",
+            defaultMessage: "Sign In"
+          },
+          pln_career_progress_header_signup_label: {
+            id: "pln_career_progress_header_signup_label",
+            defaultMessage: "Create An Account"
+          },
+          pln_career_progress_header_signup_account: {
+            id: "pln_career_progress_header_signup_account",
+            defaultMessage: "Don't have an account?"
+          },
+          pln_career_progress_link_console_account: {
+            id: "pln_career_progress_link_console_account",
+            defaultMessage: "Link A Game Account"
+          },
+          pln_career_progress_link_console_account_title: {
+            id: "pln_career_progress_link_console_account_title",
+            defaultMessage: "Link a GTA Online Character"
+          },
+          pln_career_progress_link_console_account_description: {
+            id: "pln_career_progress_link_console_account_description",
+            defaultMessage: "We couldn't find a GTA Online character linked to your Rockstar Games account. Link one or switch to a different Rockstar Games account."
+          },
+          pln_career_progress_header_tooltip_aria_label: {
+            id: "pln_career_progress_header_tooltip_aria_label",
+            defaultMessage: "Tiers Info tooltip"
+          },
+          pln_career_progress_header_title: {
+            id: "pln_career_progress_header_title",
+            defaultMessage: "Career Progress"
+          },
+          pln_career_progress_header_body: {
+            id: "pln_career_progress_header_body",
+            defaultMessage: "Learn more about a huge range of Grand Theft Auto Online updates, and discover special challenges and rewards only available on PS5 and Xbox Series X|S."
+          },
+          pln_career_progress_header_body_gen9: {
+            id: "pln_career_progress_header_body_gen9",
+            defaultMessage: "See all the challenges you've completed in your GTA Online Career. You can also discover new ones and earn valuable rewards as you rise through the criminal ranks."
+          },
+          pln_career_progress_percentage_chart_title: {
+            id: "pln_career_progress_percentage_chart_title",
+            defaultMessage: "Complete"
+          },
+          pln_scroll_left: {
+            id: "pln_scroll_left",
+            defaultMessage: "Scroll Left"
+          },
+          pln_scroll_right: {
+            id: "pln_scroll_right",
+            defaultMessage: "Scroll Right"
+          }
+        }),
+        Et = {
+          pillBtn: "rockstargames-modules-core-headerc07e609b8b71ab690ceb8c0ce0a10e3b",
+          selected: "rockstargames-modules-core-headerb7277764b073fb1731f97500d63602dd",
+          chipsContainer: "rockstargames-modules-core-headerb12cbbc254604b2d0a9e23a794cc306b",
+          chips: "rockstargames-modules-core-headerfde4c31ca848c29a1064a0fee3686f93",
+          nextChipNavButton: "rockstargames-modules-core-headere753e2314e48a7d59ead26e77cac50aa",
+          previousChipNavButton: "rockstargames-modules-core-headerce3553d0304e228596f67c2308240648",
+          nextNavIcon: "rockstargames-modules-core-headeref938f00847374bd89f70d0e5b1f97a8",
+          previousNavIcon: "rockstargames-modules-core-headerf750c5a49886ae190c14e52aa026a417"
+        },
+        Lt = e => {
+          let {
             navItems: a,
             category: t,
-            onNavItemClick: s,
-            isOpen: r,
-            isHeaderVisible: n,
-            menuClass: i = Ct.navMenu,
-            menuContainerClass: o = Ct.navMenuMain,
-            menuSectionClass: l = Ct.sectionMenu,
-            menuPrevBtnClass: m = Ct.previousNavButton,
-            menuNextBtnClass: f = Ct.nextNavButton
+            setCategory: s,
+            chipsContainerClass: r = Et.chipsContainer,
+            previousChipButtonClass: n = "",
+            nextChipBtnClass: i = ""
           } = e;
-          const p = (0, d.useIntl)(),
+          const o = (0, d.useIntl)(),
             {
-              track: k
-            } = (0, ne.ye)(),
+              track: l
+            } = (0, oe.ye)(),
             {
-              pathname: _
+              pathname: m
             } = (0, u.useLocation)(),
-            b = (0, c.useMemo)((() => Math.max(a.findIndex((e => e.name === t)), 0)), [a, _]),
-            [h, v] = (0, c.useState)(b),
+            f = (0, c.useMemo)((() => Math.max(a.findIndex((e => e.name === t)), 0)), [a, m]),
+            [p, _] = (0, c.useState)(f),
+            [k, b] = (0, c.useState)(!1),
+            [h, v] = (0, c.useState)(!1),
             [x, y] = (0, c.useState)(!1),
-            [N, S] = (0, c.useState)(!1),
-            [w, j] = (0, c.useState)(!1),
-            C = (0, c.useRef)(null),
-            I = (0, c.useCallback)(((e, a) => {
-              C.current && C.current.slideTo(e), v(e), M(`Secondary Nav > ${a}`)
-            }), [k]),
-            T = (0, c.useCallback)(((e, t) => {
-              M(`Secondary Nav > ${a[h].title} > ${e}`, t), s()
-            }), [a, s, h, k]),
-            M = (e, a) => {
-              k({
-                event: "nav_click",
+            N = (0, c.useRef)(null),
+            S = (0, c.useRef)(null),
+            w = (0, c.useRef)(null),
+            j = (0, c.useCallback)(((e, a) => {
+              w.current && w.current.slideTo(e), _(e), C(`Career Progress Nav > ${a}`)
+            }), [l]),
+            C = (e, a) => {
+              l({
+                event: "component_tab_click",
                 event_action: "click",
-                event_category: "nav",
+                event_category: "tab",
                 event_label: e,
                 text: e.split(">").pop()?.trim() || "",
                 link_url: a,
                 element_placement: e
               })
-            },
-            E = (0, c.useCallback)((e => {
-              S(e.isEnd), j(e.isBeginning)
-            }), []);
+            };
+          (0, c.useEffect)((() => {
+            s(p)
+          }), [p]);
+          const T = e => {
+            e.isEnd ? v(!0) : v(!1), e.isBeginning ? y(!0) : y(!1)
+          };
           return (0, c.useEffect)((() => {
-            C.current && ((C.current.wrapperEl.clientWidth || 0) > (C.current.el.clientWidth || 0) ? (y(!0), C.current.params.centeredSlides = !0, C.current.params.centeredSlidesBounds = !0) : (y(!1), C.current.params.centeredSlides = !1, C.current.params.centeredSlidesBounds = !1))
-          }), [C.current?.wrapperEl.clientWidth, C.current?.el.clientWidth]), (0, g.jsx)(sa.motion.div, {
-            className: i,
+            w.current && ((w.current.wrapperEl.clientWidth || 0) > (w.current.el.clientWidth || 0) ? (b(!0), w.current.params.centeredSlides = !0, w.current.params.centeredSlidesBounds = !0) : (b(!1), w.current.params.centeredSlides = !1, w.current.params.centeredSlidesBounds = !1))
+          }), [w.current?.wrapperEl.clientWidth, w.current?.el.clientWidth]), (0, g.jsxs)("div", {
+            className: r,
+            children: [!x && k && (0, g.jsx)("div", {
+              ref: S,
+              className: I(Et.previousChipNavButton, n),
+              children: (0, g.jsx)(It, {
+                direction: "left",
+                className: Et.previousNavIcon,
+                onClick: () => {
+                  w.current && (w.current?.slidePrev(), w.current.isBeginning ? y(!0) : y(!1), l({
+                    event: "carousel_previous",
+                    event_action: "click",
+                    event_category: "carousel",
+                    element_placement: "career progress page"
+                  }))
+                },
+                "aria-label": o.formatMessage(Mt.pln_scroll_left)
+              })
+            }), (0, g.jsx)("div", {
+              className: Et.chips,
+              children: (0, g.jsx)(te.wx, {
+                onBeforeInit: e => w.current = e,
+                onInit: T,
+                className: Et.chips,
+                direction: "horizontal",
+                grabCursor: !0,
+                slidesPerView: "auto",
+                initialSlide: p,
+                onSlideChange: T,
+                onResize: T,
+                children: a.map(((e, a) => {
+                  let {
+                    title: t
+                  } = e;
+                  return (0, g.jsx)(te.Ky, {
+                    children: (0, g.jsx)(xt, {
+                      title: t,
+                      onClick: () => j(a, t),
+                      selected: p === a
+                    })
+                  }, t)
+                }))
+              })
+            }), !h && k && (0, g.jsx)("div", {
+              ref: N,
+              className: I(Et.nextChipNavButton, i),
+              children: (0, g.jsx)(It, {
+                direction: "right",
+                className: Et.nextNavIcon,
+                onClick: () => {
+                  w.current && (w.current?.slideNext(), w.current.isEnd ? v(!0) : v(!1), l({
+                    event: "carousel_next",
+                    event_action: "click",
+                    event_category: "carousel",
+                    element_placement: "career progress page"
+                  }))
+                },
+                "aria-label": o.formatMessage(Mt.pln_scroll_right)
+              })
+            })]
+          })
+        },
+        Vt = e => {
+          let {
+            navItems: a,
+            onNavItemClick: t,
+            isOpen: s,
+            isHeaderVisible: r
+          } = e;
+          const {
+            track: n
+          } = (0, oe.ye)(), [i, o] = (0, c.useState)(0), d = (0, c.useCallback)(((e, s) => {
+            l(`Secondary Nav > ${a[i].title} > ${e}`, s), t()
+          }), [a, t, i, n]), l = (e, a) => {
+            n({
+              event: "nav_click",
+              event_action: "click",
+              event_category: "nav",
+              event_label: e,
+              text: e.split(">").pop()?.trim() || "",
+              link_url: a,
+              element_placement: e
+            })
+          };
+          return (0, g.jsx)(sa.motion.div, {
+            className: "rockstargames-modules-core-headeraa2ce15f29ac99fe06895664698bb6cc",
             initial: {
               height: 0
             },
             animate: {
-              height: r ? "100dvh" : 0
+              height: s ? "100dvh" : 0
             },
             transition: {
               ease: "easeInOut",
               duration: .4
             },
             children: (0, g.jsxs)("div", {
-              className: o,
-              children: [(0, g.jsxs)("div", {
-                className: l,
-                children: [!w && x && (0, g.jsx)("div", {
-                  className: Ct.previousSectionNavButton,
-                  children: (0, g.jsx)(Nt, {
-                    direction: "left",
-                    className: m,
-                    onClick: () => C.current?.slidePrev(),
-                    "aria-label": p.formatMessage(jt.plm_nav_scroll_left)
-                  })
-                }), (0, g.jsx)("div", {
-                  className: Ct.sectionItems,
-                  children: (0, g.jsx)(ee.wx, {
-                    onBeforeInit: e => C.current = e,
-                    onInit: E,
-                    className: Ct.sectionItems,
-                    direction: "horizontal",
-                    grabCursor: !0,
-                    slidesPerView: "auto",
-                    initialSlide: h,
-                    onSlideChange: E,
-                    onResize: E,
-                    children: a.map(((e, a) => {
-                      let {
-                        title: t
-                      } = e;
-                      return (0, g.jsx)(ee.Ky, {
-                        children: (0, g.jsx)(wt, {
-                          title: t,
-                          onClick: () => I(a, t),
-                          selected: h === a
-                        })
-                      }, t)
-                    }))
-                  })
-                }), !N && x && (0, g.jsx)("div", {
-                  className: Ct.nextSectionNavButton,
-                  children: (0, g.jsx)(Nt, {
-                    direction: "right",
-                    className: f,
-                    onClick: () => C.current?.slideNext(),
-                    "aria-label": p.formatMessage(jt.plm_nav_scroll_right)
-                  })
-                })]
+              className: "rockstargames-modules-core-headerf2f85d11f6ee99282db61467ebdbd00f",
+              children: [(0, g.jsx)("div", {
+                className: "rockstargames-modules-core-headerc5288c05172905ec86e3fb56c010d6d3",
+                children: (0, g.jsx)(Lt, {
+                  navItems: a,
+                  category: a[i]?.name,
+                  setCategory: o,
+                  nextChipBtnClass: "rockstargames-modules-core-headerc8a45e31d035c8e867358deea365ceac",
+                  prevChipBtnClass: "rockstargames-modules-core-headere9684050ab2f4aa408ae565c740cf50c"
+                })
               }), (0, g.jsx)("div", {
-                className: Ct.packListWrapper,
-                children: (0, g.jsx)(pt, {
-                  isHeaderVisible: n,
-                  packListItems: a[h]?.subNavItems || [],
-                  selectPackCard: T
+                className: "rockstargames-modules-core-headerf1adea94eb32de966a0e622247370f4e",
+                children: (0, g.jsx)(ht, {
+                  isHeaderVisible: r,
+                  packListItems: a[i]?.subNavItems ?? [],
+                  selectPackCard: d
                 })
               })]
             })
           })
         },
-        Tt = "rockstargames-modules-core-headerc54c374409e11d1429ce99457cbf7441",
-        Mt = e => {
+        Pt = "rockstargames-modules-core-headerc54c374409e11d1429ce99457cbf7441",
+        Dt = e => {
           let {
             children: a,
             data: t,
@@ -3882,7 +4044,7 @@ _global.SENTRY_RELEASE = {
             children: a
           })
         },
-        Et = e => {
+        Bt = e => {
           let {
             data: a,
             onPageUpdate: t,
@@ -3893,16 +4055,16 @@ _global.SENTRY_RELEASE = {
           return (0, g.jsxs)("div", {
             className: `rockstargames-modules-core-headera626faab2a5a03e3466dda5c79960575 ${s??""}`,
             children: [a.pageCount > 8 ? (0, g.jsxs)(g.Fragment, {
-              children: [(0, g.jsx)(Mt, {
+              children: [(0, g.jsx)(Dt, {
                 data: a,
                 onPageUpdate: t,
                 page: 1,
                 children: "1"
               }), 2 !== r[0] ? (0, g.jsx)("div", {
-                className: Tt,
+                className: Pt,
                 children: "..."
               }) : ""]
-            }) : "", r.map((e => (0, g.jsx)(Mt, {
+            }) : "", r.map((e => (0, g.jsx)(Dt, {
               data: a,
               onPageUpdate: t,
               page: e,
@@ -3910,9 +4072,9 @@ _global.SENTRY_RELEASE = {
               children: e
             }, e))), a.pageCount > 8 ? (0, g.jsxs)(g.Fragment, {
               children: [r.slice(-1)[0] + 1 < a.pageCount ? (0, g.jsx)("div", {
-                className: Tt,
+                className: Pt,
                 children: "..."
-              }) : "", (0, g.jsx)(Mt, {
+              }) : "", (0, g.jsx)(Dt, {
                 data: a,
                 onPageUpdate: t,
                 page: a.pageCount,
@@ -3921,14 +4083,14 @@ _global.SENTRY_RELEASE = {
             }) : ""]
           })
         };
-      var Lt = t(77616);
-      const Vt = e => {
+      var $t = t(77616);
+      const zt = e => {
           let {
             children: a
           } = e;
           const {
             parallaxController: t
-          } = (0, Lt.oZ)();
+          } = (0, $t.oZ)();
           return (0, c.useLayoutEffect)((() => {
             if (!t) return;
             const e = setInterval((() => {
@@ -3937,24 +4099,24 @@ _global.SENTRY_RELEASE = {
             return () => clearInterval(e)
           }), [t]), a
         },
-        Dt = {
+        Ft = {
           parallaxWrapper: "rockstargames-modules-core-headerdb1ab316d17367d31cf94cdde25e463a",
           large: "rockstargames-modules-core-headerd520d28c6e4e797aea99f61c89ad2bd8",
           medium: "rockstargames-modules-core-headerf008365ee42d37e24e606107346b1c83",
           small: "rockstargames-modules-core-headercb5937d1a102ac4a66c4e373e6253946"
         },
-        Pt = e => {
+        Ot = e => {
           let {
             scrollAxis: a = "vertical",
             size: t = "",
             style: s = {},
             children: r
           } = e;
-          return (0, g.jsx)(Lt.qK, {
+          return (0, g.jsx)($t.qK, {
             scrollAxis: a,
-            children: (0, g.jsx)(Vt, {
+            children: (0, g.jsx)(zt, {
               children: (0, g.jsx)("div", {
-                className: T(Dt.parallaxWrapper, Dt[t]),
+                className: I(Ft.parallaxWrapper, Ft[t]),
                 style: s,
                 "data-context": "parallax-wrapper",
                 children: r ? r.map(((e, t) => (0, c.cloneElement)(e, {
@@ -3968,7 +4130,7 @@ _global.SENTRY_RELEASE = {
             })
           })
         },
-        Bt = e => {
+        At = e => {
           let {
             layers: a = [],
             displayClass: t = "",
@@ -3977,8 +4139,8 @@ _global.SENTRY_RELEASE = {
           const r = (() => {
             const {
               meta: e = {}
-            } = D() ?? {}, a = (0, c.useMemo)((() => e?.cdn ?? e?.prod ?? !1), [e]);
-            return (0, c.useCallback)((e => e ? e?.startsWith("http") ? P(e) : P(`${(0,M.kh)(a)}${e}`) : null), [a])
+            } = P() ?? {}, a = (0, c.useMemo)((() => e?.cdn ?? e?.prod ?? !1), [e]);
+            return (0, c.useCallback)((e => e ? e?.startsWith("http") ? D(e) : D(`${(0,M.kh)(a)}${e}`) : null), [a])
           })();
           if (!a || !a[0]?.image) return null;
           const n = a.map((e => ({
@@ -3991,14 +4153,14 @@ _global.SENTRY_RELEASE = {
             style: void 0,
             image: r(e?.image ?? null)
           })));
-          return (0, g.jsx)(Lt.Sr, {
-            className: T("rockstargames-modules-core-headerb8c85703a3c76902e49a61a6afcb81bc", t),
+          return (0, g.jsx)($t.Sr, {
+            className: I("rockstargames-modules-core-headerb8c85703a3c76902e49a61a6afcb81bc", t),
             layers: n,
             style: s
           })
         },
-        $t = "rockstargames-modules-core-headerc4aa8e5d29b433c400796d0c493a9a4d",
-        zt = e => {
+        Rt = "rockstargames-modules-core-headerc4aa8e5d29b433c400796d0c493a9a4d",
+        Ut = e => {
           let {
             minOffset: a = 0,
             maxOffset: t = 0,
@@ -4007,19 +4169,19 @@ _global.SENTRY_RELEASE = {
             style: n = {},
             children: i
           } = e;
-          return "horizontal" === s ? (0, g.jsx)(Lt.mw, {
+          return "horizontal" === s ? (0, g.jsx)($t.mw, {
             x: [a, t],
-            className: T($t, r),
+            className: I(Rt, r),
             styleOuter: n,
             children: i
-          }) : (0, g.jsx)(Lt.mw, {
+          }) : (0, g.jsx)($t.mw, {
             y: [a, t],
-            className: T($t, r),
+            className: I(Rt, r),
             styleOuter: n,
             children: i
           })
         },
-        Ft = (e, a) => {
+        Gt = (e, a) => {
           switch (e) {
             case "pc":
               return "small" === a ? {
@@ -4067,8 +4229,8 @@ _global.SENTRY_RELEASE = {
               }
           }
         },
-        Ot = e => t(e < 100 ? 84184 : e > 99 && e < 500 ? 69450 : e > 499 && e < 750 ? 31216 : 85724),
-        At = (0, d.defineMessages)({
+        Ht = e => t(e < 100 ? 84184 : e > 99 && e < 500 ? 69450 : e > 499 && e < 750 ? 31216 : 85724),
+        Wt = (0, d.defineMessages)({
           sc_link_activity_feed: {
             id: "sc_link_activity_feed",
             defaultMessage: "Activity Feed"
@@ -4186,7 +4348,7 @@ _global.SENTRY_RELEASE = {
             defaultMessage: "Select a Language"
           }
         }),
-        Ut = {
+        qt = {
           pillBtn: "rockstargames-modules-core-headere4a42eaa9bfb682035e61ac2e2a34515",
           selected: "rockstargames-modules-core-headereb889d8958be54a67b790d7529530986",
           scCharacterCard: "rockstargames-modules-core-headerdf279e92086c0d3c96905b3a91b369ed",
@@ -4197,7 +4359,7 @@ _global.SENTRY_RELEASE = {
           scRpLevel: "rockstargames-modules-core-headerb1f87c58a800ad546200fbf17e029f35",
           scRpIcon: "rockstargames-modules-core-headerf1e0bcba6214698c490b8201bbd850b7"
         },
-        Rt = (0, d.withIntl)((e => {
+        Jt = (0, d.withIntl)((e => {
           let {
             characterData: a
           } = e;
@@ -4209,15 +4371,15 @@ _global.SENTRY_RELEASE = {
               stats: o
             } = a,
             [l, m] = (0, c.useState)(i),
-            u = Ft(r, "large");
+            u = Gt(r, "large");
           return (0, g.jsxs)("div", {
-            className: Ut.scCharacterCard,
+            className: qt.scCharacterCard,
             children: [(0, g.jsx)("div", {
-              className: Ut.scAvatar,
+              className: qt.scAvatar,
               "data-size": "small",
               children: (0, g.jsx)("img", {
                 src: l,
-                alt: s.formatMessage(At.profile_selector_mugshot, {
+                alt: s.formatMessage(Wt.profile_selector_mugshot, {
                   userName: n
                 }),
                 onError: () => {
@@ -4225,24 +4387,24 @@ _global.SENTRY_RELEASE = {
                 }
               })
             }), (0, g.jsx)("div", {
-              className: Ut.scCharacterStats,
+              className: qt.scCharacterStats,
               children: (0, g.jsxs)("div", {
-                className: Ut.scCharNames,
+                className: qt.scCharNames,
                 children: [(0, g.jsx)("img", {
                   src: u.src,
                   alt: u.alt
                 }), (0, g.jsx)("div", {
-                  className: Ut.scUserName,
+                  className: qt.scUserName,
                   "data-size": "small",
                   children: n
                 }), (0, g.jsx)("div", {
-                  className: Ut.scRp,
+                  className: qt.scRp,
                   children: (0, g.jsxs)("div", {
-                    className: Ut.scRpLevel,
+                    className: qt.scRpLevel,
                     children: [(0, g.jsx)("img", {
-                      className: Ut.scRpIcon,
-                      src: Ot(o.overview.rank.value),
-                      alt: s.formatMessage(At.profile_selector_rp_icon)
+                      className: qt.scRpIcon,
+                      src: Ht(o.overview.rank.value),
+                      alt: s.formatMessage(Wt.profile_selector_rp_icon)
                     }), (0, g.jsx)("span", {
                       children: a.stats.overview.rank.value
                     })]
@@ -4252,135 +4414,134 @@ _global.SENTRY_RELEASE = {
             })]
           })
         }), l),
-        Ht = (0, b.C2)("@rockstargames/components/profile-switcher"),
-        Gt = Ht("languageSelectorOpenedReactive", !1),
-        Wt = e => Gt(e),
-        qt = Ht("activeSubNavIdReactive", -1),
-        Jt = e => qt(e),
-        Xt = Ht("subNavExtraHeightReactive", -1),
-        Kt = e => Xt(e),
-        Qt = Ht("scNavOpenedReactive", !0),
-        Yt = e => Qt(e),
-        Zt = Ht("charListHiddenReactive", !0),
-        es = e => Zt(e),
-        as = () => {
-          const e = (0, b.gh)(Gt),
-            a = (0, b.gh)(qt),
-            t = (0, b.gh)(Xt),
-            s = (0, b.gh)(Qt),
-            r = (0, b.gh)(Zt);
+        Kt = (0, b.C2)("@rockstargames/components/profile-switcher"),
+        Xt = Kt("languageSelectorOpenedReactive", !1),
+        Qt = e => Xt(e),
+        Yt = Kt("activeSubNavIdReactive", -1),
+        Zt = e => Yt(e),
+        es = Kt("subNavExtraHeightReactive", -1),
+        as = e => es(e),
+        ts = Kt("scNavOpenedReactive", !0),
+        ss = e => ts(e),
+        rs = Kt("charListHiddenReactive", !0),
+        ns = e => rs(e),
+        is = () => {
+          const e = (0, b.gh)(Xt),
+            a = (0, b.gh)(Yt),
+            t = (0, b.gh)(es),
+            s = (0, b.gh)(ts),
+            r = (0, b.gh)(rs);
           return (0, c.useEffect)((() => {
-            r || (e && Wt(!1), s && (Yt(!1), Jt(-1)))
+            r || (e && Qt(!1), s && (ss(!1), Zt(-1)))
           }), [r]), (0, c.useEffect)((() => {
-            !e && r && (s || Yt(!0))
+            !e && r && (s || ss(!0))
           }), [e, r]), (0, c.useMemo)((() => ({
             languageSelectorOpened: e,
-            setLanguageSelectorOpened: Wt,
+            setLanguageSelectorOpened: Qt,
             activeSubNavId: a,
-            setActiveSubNavId: Jt,
+            setActiveSubNavId: Zt,
             subNavExtraHeight: t,
-            setSubNavExtraHeight: Kt,
+            setSubNavExtraHeight: as,
             scNavOpened: s,
-            setScNavOpened: Yt,
+            setScNavOpened: ss,
             charListHidden: r,
-            setCharListHidden: es
+            setCharListHidden: ns
           })), [e, a, t, s, r])
         };
-      var ts = t(69760),
-        ss = t.n(ts),
-        rs = t(9860);
-      const ns = {
+      var os = t(69760),
+        cs = t.n(os);
+      const ds = {
           event: "account_menu_click",
           element_placement: "Account Menu"
         },
-        is = e => ({
-          text: e.formatMessage(At.sc_link_help),
+        ls = e => ({
+          text: e.formatMessage(Wt.sc_link_help),
           target: "_self",
           ga: {
-            ...ns,
-            text: At.sc_link_help.defaultMessage
+            ...ds,
+            text: Wt.sc_link_help.defaultMessage
           },
           dataTestId: "helpButton",
           children: [{
-            text: e.formatMessage(At.sc_link_support),
+            text: e.formatMessage(Wt.sc_link_support),
             location: {
-              domain: Da.U.support,
+              domain: Pa.U.support,
               path: "/"
             },
             target: "_self",
             ga: {
-              ...ns,
-              text: At.sc_link_support.defaultMessage
+              ...ds,
+              text: Wt.sc_link_support.defaultMessage
             },
             dataTestId: "supportLink"
           }, {
-            text: e.formatMessage(At.sc_link_legal),
+            text: e.formatMessage(Wt.sc_link_legal),
             location: {
-              domain: Da.U.www,
+              domain: Pa.U.www,
               path: "/legal"
             },
             target: "_self",
             ga: {
-              ...ns,
-              text: At.sc_link_legal.defaultMessage
+              ...ds,
+              text: Wt.sc_link_legal.defaultMessage
             },
             dataTestId: "legalLink"
           }, {
-            text: e.formatMessage(At.sc_link_privacy_policy),
+            text: e.formatMessage(Wt.sc_link_privacy_policy),
             location: {
-              domain: Da.U.www,
+              domain: Pa.U.www,
               path: "/privacy"
             },
             target: "_self",
             ga: {
-              ...ns,
-              text: At.sc_link_privacy_policy.defaultMessage
+              ...ds,
+              text: Wt.sc_link_privacy_policy.defaultMessage
             },
             dataTestId: "privacyPolicyLink"
           }, {
-            text: e.formatMessage(At.sc_link_cookies_policy),
+            text: e.formatMessage(Wt.sc_link_cookies_policy),
             location: {
-              domain: Da.U.www,
+              domain: Pa.U.www,
               path: "/cookies"
             },
             target: "_self",
             ga: {
-              ...ns,
-              text: At.sc_link_cookies_policy.defaultMessage
+              ...ds,
+              text: Wt.sc_link_cookies_policy.defaultMessage
             },
             dataTestId: "cookiesPolicyLink"
           }, {
-            text: e.formatMessage(At.sc_link_cookies_settings),
+            text: e.formatMessage(Wt.sc_link_cookies_settings),
             onClickCallback: e => {
               e.preventDefault(), window.OneTrust?.ToggleInfoDisplay()
             },
             target: "_self",
             ga: {
-              ...ns,
-              text: At.sc_link_cookies_settings.defaultMessage
+              ...ds,
+              text: Wt.sc_link_cookies_settings.defaultMessage
             },
             dataTestId: "cookiesSettingsLink"
           }, {
-            text: e.formatMessage(At.sc_link_do_not_sell_my_information),
+            text: e.formatMessage(Wt.sc_link_do_not_sell_my_information),
             location: {
-              domain: Da.U.www,
+              domain: Pa.U.www,
               path: "/ccpa"
             },
             target: "_self",
             ga: {
-              ...ns,
-              text: At.sc_link_do_not_sell_my_information.defaultMessage
+              ...ds,
+              text: Wt.sc_link_do_not_sell_my_information.defaultMessage
             },
             dataTestId: "doNotSellMyInformationLink"
           }]
         }),
-        os = {
+        ms = {
           pillBtn: "rockstargames-modules-core-headereb30ffefc0c8fef449ca5348a2702622",
           selected: "rockstargames-modules-core-headercd058a755e77eeb55cf666fa43fadf75",
           scSubLink: "rockstargames-modules-core-headerfdaa918acc06706cbe191dedd40974af",
           scLink: "rockstargames-modules-core-headercbc80932118c48d8ec14448d8913d068"
         },
-        cs = e => {
+        us = e => {
           let {
             text: a,
             target: t,
@@ -4396,31 +4557,31 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: f
-          } = (0, ne.ye)(), p = (0, Da.c)();
-          let k = s;
-          r && (k = r.domain === p.currentSite?.site ? r.path : `https://${p.sites[r.domain]}.rockstargames.com${r.path}`);
-          const _ = {
+          } = (0, oe.ye)(), p = (0, Pa.c)();
+          let _ = s;
+          r && (_ = r.domain === p.currentSite?.site ? r.path : `https://${p.sites[r.domain]}.rockstargames.com${r.path}`);
+          const k = {
             ...n,
-            link_url: k
+            link_url: _
           };
           return (0, g.jsxs)(u.Link, {
-            className: o ? os.scSubLink : os.scLink,
+            className: o ? ms.scSubLink : ms.scLink,
             "data-testid": i || "menuLink",
             title: a,
-            to: k,
+            to: _,
             target: t,
             rel: "noreferrer",
             reloadDocument: m,
             tabIndex: l,
             onClick: e => {
-              f(_), d(e)
+              f(k), d(e)
             },
             children: [a, c && (0, g.jsx)("span", {
-              className: os.scLinkNotification
+              className: ms.scLinkNotification
             })]
           })
         },
-        ds = e => {
+        fs = e => {
           let {
             id: a,
             text: t,
@@ -4435,16 +4596,16 @@ _global.SENTRY_RELEASE = {
             setActiveSubNavId: u,
             setSubNavExtraHeight: f,
             reloadDocument: p = !1,
-            onClickCallback: k = (() => {})
+            onClickCallback: _ = (() => {})
           } = e;
           const {
-            windowWidth: _,
+            windowWidth: k,
             windowHeight: b
           } = (0, M.bk)(), {
             track: h
-          } = (0, ne.ye)(), {
+          } = (0, oe.ye)(), {
             navOpen: v
-          } = (0, ne.of)(), x = (0, c.useRef)(null), [y, N] = (0, c.useState)(0), [S, w] = (0, c.useState)(0), [j, C] = (0, c.useState)(!0);
+          } = (0, oe.of)(), x = (0, c.useRef)(null), [y, N] = (0, c.useState)(0), [S, w] = (0, c.useState)(0), [j, C] = (0, c.useState)(!0);
           return (0, c.useEffect)((() => {
             m !== a && !1 === j && C(!0), m === a && C(!1)
           }), [m]), (0, c.useEffect)((() => {
@@ -4455,7 +4616,7 @@ _global.SENTRY_RELEASE = {
               let a = 16 * parseInt(e.getPropertyValue("--scSubNav-opened-margin"), 10);
               Number.isNaN(a) && (a = 0), w(a)
             }
-          }), [x, _, b]), l.length > 0 ? (0, g.jsxs)(g.Fragment, {
+          }), [x, k, b]), l.length > 0 ? (0, g.jsxs)(g.Fragment, {
             children: [(0, g.jsxs)("button", {
               className: "rockstargames-modules-core-headeraf10b4154b04475edc11366934576ecd",
               type: "button",
@@ -4479,14 +4640,14 @@ _global.SENTRY_RELEASE = {
               style: {
                 height: j ? 0 : `${y}px`
               },
-              children: l.map((e => (0, c.createElement)(cs, {
+              children: l.map((e => (0, c.createElement)(us, {
                 ...e,
                 isSubLink: !0,
                 key: e.text,
                 tabIndex: j || !v ? -1 : 0
               })))
             })]
-          }) : (0, g.jsx)(cs, {
+          }) : (0, g.jsx)(us, {
             text: t,
             target: s,
             href: r,
@@ -4495,12 +4656,12 @@ _global.SENTRY_RELEASE = {
             hasNotifications: o,
             dataTestId: d,
             isSubLink: !1,
-            onClickCallback: k,
+            onClickCallback: _,
             tabIndex: v ? 0 : -1,
             reloadDocument: p
           })
         },
-        ls = e => {
+        gs = e => {
           let {
             sc: a
           } = e;
@@ -4514,35 +4675,35 @@ _global.SENTRY_RELEASE = {
             setActiveSubNavId: l,
             subNavExtraHeight: m,
             setSubNavExtraHeight: f
-          } = as(), {
+          } = is(), {
             setSelectedCharacterTuple: p,
-            navOpen: k
-          } = (0, ne.of)(), _ = (0, M.y_)(), b = (0, M._g)(_), [h, v] = (0, c.useState)(""), x = (0, u.useLocation)(), y = `${a.login}?returnUrl=${h}&lang=${b}`, N = `${a.signup}&returnUrl=${h}&lang=${b}`, S = (0, c.useMemo)((() => (0, Da.c)()), []), w = (0, c.useMemo)((() => {
+            navOpen: _
+          } = (0, oe.of)(), k = (0, M.y_)(), b = (0, M._g)(k), [h, v] = (0, c.useState)(""), x = (0, u.useLocation)(), y = `${a.login}?returnUrl=${h}&lang=${b}`, N = `${a.signup}&returnUrl=${h}&lang=${b}`, S = (0, c.useMemo)((() => (0, Pa.c)()), []), w = (0, c.useMemo)((() => {
             const e = ((e, a, t) => [{
-              text: e.formatMessage(At.sc_link_sign_in),
+              text: e.formatMessage(Wt.sc_link_sign_in),
               href: a,
               ga: {
                 event: "cta_login",
-                text: At.sc_link_sign_in.defaultMessage,
+                text: Wt.sc_link_sign_in.defaultMessage,
                 element_placement: "Account Menu"
               },
               dataTestId: "loginLink"
             }, {
-              text: e.formatMessage(At.sc_link_join_social_club),
+              text: e.formatMessage(Wt.sc_link_join_social_club),
               href: t,
               ga: {
                 event: "cta_signup",
-                text: At.sc_link_join_social_club.defaultMessage,
+                text: Wt.sc_link_join_social_club.defaultMessage,
                 element_placement: "Account Menu"
               },
               dataTestId: "signUpLink"
-            }, is(e)])(r, y, N);
+            }, ls(e)])(r, y, N);
             return e
-          }), [r, y, N, S]), [j, C] = (0, c.useState)(0), I = (0, c.createRef)(), T = () => {
-            if (I.current) {
+          }), [r, y, N, S]), [j, C] = (0, c.useState)(0), T = (0, c.createRef)(), I = () => {
+            if (T.current) {
               const {
                 current: e
-              } = I, a = e?.scrollHeight, t = window.getComputedStyle(e);
+              } = T, a = e?.scrollHeight, t = window.getComputedStyle(e);
               if (t) {
                 let e = 16 * parseInt(t.getPropertyValue("--scSubNav-opened-margin"), 10) * 2;
                 Number.isNaN(e) && (e = 0), C(a + e)
@@ -4555,8 +4716,8 @@ _global.SENTRY_RELEASE = {
           }), [x]), (0, c.useEffect)((() => {
             p(!1)
           }), []), (0, c.useEffect)((() => {
-            T(), ss()((() => {
-              setTimeout(T, 0)
+            I(), cs()((() => {
+              setTimeout(I, 0)
             }), 300)
           }), [t, s]), (0, g.jsxs)(g.Fragment, {
             children: [(0, g.jsx)("nav", {
@@ -4564,11 +4725,11 @@ _global.SENTRY_RELEASE = {
               children: (0, g.jsx)("div", {
                 className: "rockstargames-modules-core-headerc5bc9bec611f9f0514176014ce835e1e",
                 "data-logged-in": "false",
-                ref: I,
+                ref: T,
                 style: {
                   "--scNavWrap-max-height": `${m+j}px`
                 },
-                children: w.map((e => (0, c.createElement)(ds, {
+                children: w.map((e => (0, c.createElement)(fs, {
                   ...e,
                   activeSubNavId: o,
                   setActiveSubNavId: l,
@@ -4579,9 +4740,9 @@ _global.SENTRY_RELEASE = {
             }), (0, g.jsx)("div", {
               className: "rockstargames-modules-core-headera6c12c94e8656e88958552d645fe51fe",
               style: {
-                visibility: k ? null : "hidden"
+                visibility: _ ? null : "hidden"
               },
-              children: (0, g.jsx)(rs.LanguageSelector, {
+              children: (0, g.jsx)(J.LanguageSelector, {
                 theme: "sc-menu",
                 languageSelectorOpened: n,
                 setLanguageSelectorOpened: e => {
@@ -4592,7 +4753,7 @@ _global.SENTRY_RELEASE = {
             })]
           })
         },
-        ms = e => {
+        ps = e => {
           let {
             characterData: a,
             setMobileCardWidth: s,
@@ -4602,20 +4763,20 @@ _global.SENTRY_RELEASE = {
             {
               currentCharId: i,
               setCurrentCharId: o
-            } = (0, ne.of)(),
+            } = (0, oe.of)(),
             {
               track: l
-            } = (0, ne.ye)(),
+            } = (0, oe.ye)(),
             m = (0, c.createRef)(),
             {
               platform: u,
               platformUsername: f,
               mugshotUrl: p,
-              stats: k
+              stats: _
             } = a,
-            [_, b] = (0, c.useState)(p),
+            [k, b] = (0, c.useState)(p),
             [h] = (0, c.useState)(a.index),
-            v = Ft(u, "large"),
+            v = Gt(u, "large"),
             x = i === a.index;
           return (0, c.useEffect)((() => {
             m.current && s && s(m?.current?.offsetWidth)
@@ -4640,8 +4801,8 @@ _global.SENTRY_RELEASE = {
               className: "rockstargames-modules-core-headerbbdf69fe97471593355fc51ec9a6d13a",
               "data-size": "small",
               children: (0, g.jsx)("img", {
-                src: _,
-                alt: n.formatMessage(At.profile_selector_mugshot, {
+                src: k,
+                alt: n.formatMessage(Wt.profile_selector_mugshot, {
                   userName: f
                 }),
                 onError: () => {
@@ -4666,8 +4827,8 @@ _global.SENTRY_RELEASE = {
                   className: "rockstargames-modules-core-headera6776312350028898320ba59145a39be",
                   children: [(0, g.jsx)("img", {
                     className: "rockstargames-modules-core-headerb266652910ad34c0e8e097b212a958f0",
-                    src: Ot(k.overview.rank.value),
-                    alt: n.formatMessage(At.profile_selector_rp_icon)
+                    src: Ht(_.overview.rank.value),
+                    alt: n.formatMessage(Wt.profile_selector_rp_icon)
                   }), (0, g.jsx)("span", {
                     children: a.stats.overview.rank.value
                   })]
@@ -4676,7 +4837,7 @@ _global.SENTRY_RELEASE = {
             })]
           })
         },
-        us = {
+        _s = {
           pillBtn: "rockstargames-modules-core-headerd9464c4b4d92881abe5578988bd68af7",
           selected: "rockstargames-modules-core-headerbc0a950bffee0ee9e28213912da51427",
           scProfileDetails: "rockstargames-modules-core-headerb954455f6ff25f2350e1a0960ba97d3e",
@@ -4696,28 +4857,28 @@ _global.SENTRY_RELEASE = {
           scCash: "rockstargames-modules-core-headerb3e35cdc6557f7c3886700245af352dd",
           scBank: "rockstargames-modules-core-headerec696aafed90a7a4c69dc53da0a5bb36"
         },
-        fs = e => {
+        ks = e => {
           let {
             character: a,
             platformTag: s
           } = e;
           const {
             data: r
-          } = (0, ne.yi)(), {
+          } = (0, oe.yi)(), {
             track: n
-          } = (0, ne.ye)(), i = (0, d.useIntl)(), [o, l] = (0, c.useState)([]), [m, u] = (0, c.useState)(null), [f, p] = (0, c.useState)(null), [k, _] = (0, c.useState)(!1), [b, h] = (0, c.useState)(-1), [v, x] = (0, c.useState)([]), [y, N] = (0, c.useState)(0), S = t(71084), [w, j] = (0, c.useState)("0"), [C, I] = (0, c.useState)("0"), T = e => parseInt(e, 10).toLocaleString("en-US", {
+          } = (0, oe.ye)(), i = (0, d.useIntl)(), [o, l] = (0, c.useState)([]), [m, u] = (0, c.useState)(null), [f, p] = (0, c.useState)(null), [_, k] = (0, c.useState)(!1), [b, h] = (0, c.useState)(-1), [v, x] = (0, c.useState)([]), [y, N] = (0, c.useState)(0), S = t(71084), [w, j] = (0, c.useState)("0"), [C, T] = (0, c.useState)("0"), I = e => parseInt(e, 10).toLocaleString("en-US", {
             minimumFractionDigits: 0
           }), M = () => {
             L((0, g.jsx)("img", {
               src: S,
-              alt: i.formatMessage(At.profile_selector_mugshot, {
+              alt: i.formatMessage(Wt.profile_selector_mugshot, {
                 userName: r.nickname
               })
             }))
           }, [E, L] = (0, c.useState)((0, g.jsx)("img", {
-            className: us.scAvatarImg,
+            className: _s.scAvatarImg,
             src: a.mugshotUrl,
-            alt: i.formatMessage(At.profile_selector_mugshot, {
+            alt: i.formatMessage(Wt.profile_selector_mugshot, {
               userName: r.nickname
             }),
             onError: M
@@ -4729,22 +4890,22 @@ _global.SENTRY_RELEASE = {
               src: a.mugshotUrl,
               alt: r.nickname,
               onError: M
-            })), j(T(a.stats.overview.bank.value)), I(T(a.stats.overview.cash.value)), N(parseInt(a.stats.overview.rank.value))
+            })), j(I(a.stats.overview.bank.value)), T(I(a.stats.overview.cash.value)), N(parseInt(a.stats.overview.rank.value))
           }), [a, r]), (0, c.useEffect)((() => {
             o && o.forEach((e => {
-              !0 === e.isPrimary && (u(e.crewTag), p(e.crewColour), h(e.rankOrder), _(!1), !0 === Object.prototype.hasOwnProperty.call(e, "crewType") && "rockstar" === e.crewType && _(!0))
+              !0 === e.isPrimary && (u(e.crewTag), p(e.crewColour), h(e.rankOrder), k(!1), !0 === Object.prototype.hasOwnProperty.call(e, "crewType") && "rockstar" === e.crewType && k(!0))
             }))
           }), [o]), (0, c.useEffect)((() => {
             const e = [];
-            if (!k && b > -1)
+            if (!_ && b > -1)
               for (let a = 5; a > b; a -= 1) e.push((0, g.jsx)("div", {
-                className: us.scCrewRankBarItem,
+                className: _s.scCrewRankBarItem,
                 style: {
                   backgroundColor: null !== f ? f : ""
                 }
               }, `crewrankbar-${a}`));
             x(e)
-          }), [b, k, f]);
+          }), [b, _, f]);
           const V = e => {
             e.stopPropagation(), n({
               event: "character_selector_profile_click",
@@ -4755,15 +4916,15 @@ _global.SENTRY_RELEASE = {
             })
           };
           return (0, g.jsxs)("div", {
-            className: us.scProfileDetails,
+            className: _s.scProfileDetails,
             onClick: V,
             onKeyUp: V,
             role: "button",
             tabIndex: -1,
             children: [(0, g.jsxs)("div", {
-              className: us.scAvatar,
+              className: _s.scAvatar,
               children: [E, (0, g.jsx)("div", {
-                className: us.scAvatarPlatform,
+                className: _s.scAvatarPlatform,
                 "data-platform": a.platform,
                 children: (0, g.jsx)("img", {
                   src: s.src,
@@ -4771,41 +4932,41 @@ _global.SENTRY_RELEASE = {
                 })
               })]
             }), (0, g.jsxs)("div", {
-              className: us.scProfileStats,
+              className: _s.scProfileStats,
               children: [(0, g.jsx)("div", {
-                className: us.scNames,
+                className: _s.scNames,
                 children: (0, g.jsxs)("div", {
-                  className: us.scTagsNames,
+                  className: _s.scTagsNames,
                   children: [(0, g.jsx)("span", {
-                    className: us.scUserName,
+                    className: _s.scUserName,
                     children: a.platformUsername
                   }), m && (0, g.jsxs)("span", {
-                    className: us.scCrewName,
-                    "data-arrow-tag": k,
-                    children: [m, !k && (0, g.jsx)("div", {
-                      className: us.scCrewRankBar,
+                    className: _s.scCrewName,
+                    "data-arrow-tag": _,
+                    children: [m, !_ && (0, g.jsx)("div", {
+                      className: _s.scCrewRankBar,
                       children: v
                     })]
                   })]
                 })
               }), (0, g.jsxs)("div", {
-                className: us.scProgress,
+                className: _s.scProgress,
                 children: [(0, g.jsxs)("div", {
-                  className: us.scRpLevel,
+                  className: _s.scRpLevel,
                   children: [(0, g.jsx)("img", {
-                    className: us.scRpIcon,
-                    src: Ot(y),
-                    alt: i.formatMessage(At.profile_selector_rp_icon)
+                    className: _s.scRpIcon,
+                    src: Ht(y),
+                    alt: i.formatMessage(Wt.profile_selector_rp_icon)
                   }), (0, g.jsx)("span", {
                     children: a.stats.overview.rank.value
                   })]
                 }), (0, g.jsxs)("div", {
-                  className: us.scMoney,
+                  className: _s.scMoney,
                   children: [(0, g.jsxs)("span", {
-                    className: us.scCash,
+                    className: _s.scCash,
                     children: ["$", C]
                   }), (0, g.jsxs)("span", {
-                    className: us.scBank,
+                    className: _s.scBank,
                     children: ["$", w]
                   })]
                 })]
@@ -4813,7 +4974,7 @@ _global.SENTRY_RELEASE = {
             })]
           })
         },
-        gs = (e, a) => {
+        bs = (e, a) => {
           const [t, s] = (0, c.useState)(0);
           return (0, c.useEffect)((() => {
             if (e.current) {
@@ -4831,7 +4992,7 @@ _global.SENTRY_RELEASE = {
             }
           }), [e]), t
         },
-        ps = e => {
+        hs = e => {
           let {
             dragThreshold: a = 80,
             interactionDelay: t = 1e3,
@@ -4843,47 +5004,47 @@ _global.SENTRY_RELEASE = {
             disableSwiper: d = !1
           } = e;
           const l = (0, c.createRef)(),
-            m = gs(l, !1),
+            m = bs(l, !1),
             [u, f] = (0, c.useState)(!1),
-            [p, k] = (0, c.useState)(0),
-            [_, b] = (0, c.useState)(0),
+            [p, _] = (0, c.useState)(0),
+            [k, b] = (0, c.useState)(0),
             [h, v] = (0, c.useState)([s]),
             [x, y] = (0, c.useState)(h[0]),
             [N, S] = (0, c.useState)(252),
             [w, j] = (0, c.useState)(0),
-            [C, I] = (0, c.useState)([]),
-            [T, M] = (0, c.useState)([]),
+            [C, T] = (0, c.useState)([]),
+            [I, M] = (0, c.useState)([]),
             [E, L] = (0, c.useState)(!1),
             V = e => {
               if (!0 === u || !0 === d) return;
               const a = void 0 !== e.changedTouches ? e.touches[0].screenX : e.screenX;
               b(a)
             },
-            D = e => {
-              if (!0 === u || 0 === _ || !0 === d) return;
+            P = e => {
+              if (!0 === u || 0 === k || !0 === d) return;
               const t = void 0 !== e.changedTouches ? e.changedTouches[0].screenX : e.screenX,
-                s = t > _ ? 1 : -1,
-                n = Math.abs(_ - t);
+                s = t > k ? 1 : -1,
+                n = Math.abs(k - t);
               n > a ? (s > 0 ? (() => {
                 if (!0 === u) return;
                 f(!0);
                 const e = p - 1 < 0 ? 0 : p - 1;
-                k(e), y(h[e]), r && r(e)
+                _(e), y(h[e]), r && r(e)
               })() : (() => {
                 if (!0 === u) return;
                 f(!0);
                 let e = p + 1 >= h.length ? h.length - 1 : p + 1;
-                e < 0 && (e = 0), k(e), y(h[e]), r && r(e)
+                e < 0 && (e = 0), _(e), y(h[e]), r && r(e)
               })(), b(0)) : y(h[p] + n * s)
             },
-            P = () => {
+            D = () => {
               !0 !== u && !0 !== d && (f(!0), !0 !== u && (y(h[p]), b(0)))
             };
           return (0, c.useEffect)((() => {
             const e = [];
             i.forEach((() => {
               e.push((0, c.createRef)())
-            })), I(e)
+            })), T(e)
           }), [i]), (0, c.useEffect)((() => {
             if (C.length < 1) return;
             S(C[0]?.current?.clientWidth || 0);
@@ -4917,11 +5078,11 @@ _global.SENTRY_RELEASE = {
               className: "rockstargames-modules-core-headerab70c3f9c67ecd69d19216a5f4de5049",
               ref: l,
               onTouchStart: V,
-              onTouchMove: D,
-              onTouchEnd: P,
+              onTouchMove: P,
+              onTouchEnd: D,
               onMouseDown: V,
-              onMouseMove: D,
-              onMouseUp: P,
+              onMouseMove: P,
+              onMouseUp: D,
               onClick: () => {
                 null !== n && n(p)
               },
@@ -4941,16 +5102,16 @@ _global.SENTRY_RELEASE = {
                   children: e
                 }, `csItem-${e?.props?.characterData?.mugshotUrl}`)))
               })
-            }), T.length > 1 && !1 === o && (0, g.jsx)("div", {
+            }), I.length > 1 && !1 === o && (0, g.jsx)("div", {
               className: "rockstargames-modules-core-headerda8cfef07bf44e9a44839e2723ec61bb",
-              children: T.map((e => (0, g.jsx)("div", {
+              children: I.map((e => (0, g.jsx)("div", {
                 className: "rockstargames-modules-core-headerfe87ea0922034610a1f6cb3a4edbe195",
                 "data-active": e.active
               }, e.mugshotUrl)))
             })]
           })
         },
-        ks = {
+        vs = {
           pillBtn: "rockstargames-modules-core-headeraa374e2f7806799cb073de8a9b2a2e7d",
           selected: "rockstargames-modules-core-headerd402a10393179390abdaf3684a02f1ba",
           scProfile: "rockstargames-modules-core-headerdde9053261079ebfb5d95975239fe87d",
@@ -4963,7 +5124,7 @@ _global.SENTRY_RELEASE = {
           scNavHeader: "rockstargames-modules-core-headerbb74821846f47bbe5fc0896364efd520",
           scNavWrap: "rockstargames-modules-core-headera7f1e2d78519eaf099bd43c6ad07abc9"
         },
-        _s = (0, M.Ux)((e => {
+        xs = (0, M.Ux)((e => {
           let {
             sc: a,
             charListHidden: t,
@@ -4978,8 +5139,8 @@ _global.SENTRY_RELEASE = {
           const {
             windowWidth: f,
             windowHeight: p
-          } = (0, M.bk)(), k = (0, d.useIntl)(), {
-            languageSelectorOpened: _,
+          } = (0, M.bk)(), _ = (0, d.useIntl)(), {
+            languageSelectorOpened: k,
             setLanguageSelectorOpened: h,
             activeSubNavId: v,
             setActiveSubNavId: x,
@@ -4987,191 +5148,191 @@ _global.SENTRY_RELEASE = {
             setSubNavExtraHeight: N,
             scNavOpened: S,
             setScNavOpened: w
-          } = as(), [j, C] = (0, c.useState)(""), I = (0, u.useLocation)(), {
-            lsSettings: T
+          } = is(), [j, C] = (0, c.useState)(""), T = (0, u.useLocation)(), {
+            lsSettings: I
           } = (0, M.ym)(), {
             track: E
-          } = (0, ne.ye)(), L = (0, b.aI)(), {
+          } = (0, oe.ye)(), L = (0, b.aI)(), {
             data: V,
-            loggedIn: D
-          } = (0, ne.yi)(), {
-            charactersNeeded: P,
+            loggedIn: P
+          } = (0, oe.yi)(), {
+            charactersNeeded: D,
             currentCharId: B,
             hasNotifications: $,
             navOpen: z,
             setCurrentCharId: F,
             setHasNotifications: O,
             setSelectedCharacterTuple: A,
-            setUserData: U
-          } = (0, ne.of)(), [R, H] = (0, c.useState)(null), [G, W] = (0, c.useState)(null), [q, J] = (0, c.useState)(!1), [X, K] = (0, c.useState)(!1), [Q, Y] = (0, c.useState)(0), Z = (0, c.createRef)(), ee = gs(Z, !1), ae = (0, c.createRef)(), [te, se] = (0, c.useState)(0), [re, ie] = (0, c.useState)([]), [oe, ce] = (0, c.useState)(244), de = (0, c.useRef)(null), le = (0, c.useMemo)((() => (0, Da.c)()), []), me = (0, c.useMemo)((() => ((e, a, t, s, r) => [{
-            text: e.formatMessage(At.sc_link_activity_feed),
+            setUserData: R
+          } = (0, oe.of)(), [U, G] = (0, c.useState)(null), [H, W] = (0, c.useState)(null), [q, K] = (0, c.useState)(!1), [X, Q] = (0, c.useState)(!1), [Y, Z] = (0, c.useState)(0), ee = (0, c.createRef)(), ae = bs(ee, !1), te = (0, c.createRef)(), [se, re] = (0, c.useState)(0), [ne, ie] = (0, c.useState)([]), [ce, de] = (0, c.useState)(244), le = (0, c.useRef)(null), me = (0, c.useMemo)((() => (0, Pa.c)()), []), ue = (0, c.useMemo)((() => ((e, a, t, s, r) => [{
+            text: e.formatMessage(Wt.sc_link_activity_feed),
             location: {
-              domain: Da.U.socialClub,
+              domain: Pa.U.socialClub,
               path: "/"
             },
             target: "_self",
             ga: {
-              ...ns,
-              text: At.sc_link_activity_feed.defaultMessage
+              ...ds,
+              text: Wt.sc_link_activity_feed.defaultMessage
             },
             dataTestId: "activityFeedLink"
           }, {
-            text: e.formatMessage(At.sc_link_account),
+            text: e.formatMessage(Wt.sc_link_account),
             target: "_self",
             dataTestId: "accountButton",
             children: [{
-              text: e.formatMessage(At.sc_link_settings),
+              text: e.formatMessage(Wt.sc_link_settings),
               location: {
-                domain: Da.U.socialClub,
+                domain: Pa.U.socialClub,
                 path: "/settings"
               },
               target: "_self",
               ga: {
-                ...ns,
-                text: At.sc_link_settings.defaultMessage
+                ...ds,
+                text: Wt.sc_link_settings.defaultMessage
               },
               dataTestId: "settingsLink"
             }, {
-              text: e.formatMessage(At.sc_link_view_my_profile),
+              text: e.formatMessage(Wt.sc_link_view_my_profile),
               href: t.profile_link,
               target: "_self",
               ga: {
-                ...ns,
-                text: At.sc_link_view_my_profile.defaultMessage
+                ...ds,
+                text: Wt.sc_link_view_my_profile.defaultMessage
               },
               dataTestId: "viewMyProfileLink"
             }, {
-              text: e.formatMessage(At.sc_link_messages),
+              text: e.formatMessage(Wt.sc_link_messages),
               location: {
-                domain: Da.U.socialClub,
+                domain: Pa.U.socialClub,
                 path: "/message"
               },
               target: "_self",
               ga: {
-                ...ns,
-                text: At.sc_link_messages.defaultMessage
+                ...ds,
+                text: Wt.sc_link_messages.defaultMessage
               },
               dataTestId: "messagesLink"
             }, {
-              text: e.formatMessage(At.sc_link_game_activation),
+              text: e.formatMessage(Wt.sc_link_game_activation),
               location: {
-                domain: Da.U.socialClub,
+                domain: Pa.U.socialClub,
                 path: "/activate"
               },
               target: "_self",
               ga: {
-                ...ns,
-                text: At.sc_link_game_activation.defaultMessage
+                ...ds,
+                text: Wt.sc_link_game_activation.defaultMessage
               },
               dataTestId: "gameActivationLink"
             }]
           }, {
-            text: e.formatMessage(At.sc_link_notifications),
+            text: e.formatMessage(Wt.sc_link_notifications),
             location: {
-              domain: Da.U.socialClub,
+              domain: Pa.U.socialClub,
               path: "/notifications"
             },
             target: "_self",
             hasNotifications: s,
             ga: {
-              ...ns,
-              text: At.sc_link_notifications.defaultMessage,
+              ...ds,
+              text: Wt.sc_link_notifications.defaultMessage,
               location: {
-                domain: Da.U.socialClub,
+                domain: Pa.U.socialClub,
                 path: "/notifications"
               }
             },
             dataTestId: "notificationsLink"
           }, {
-            text: e.formatMessage(At.sc_link_crews),
+            text: e.formatMessage(Wt.sc_link_crews),
             location: {
-              domain: Da.U.socialClub,
+              domain: Pa.U.socialClub,
               path: `/member/${t.nickname}/crews`
             },
             target: "_self",
             ga: {
-              ...ns,
-              text: At.sc_link_crews.defaultMessage
+              ...ds,
+              text: Wt.sc_link_crews.defaultMessage
             },
             dataTestId: "crewsLink"
           }, {
-            text: e.formatMessage(At.sc_link_friends),
+            text: e.formatMessage(Wt.sc_link_friends),
             target: "_self",
             dataTestId: "friendsButton",
             children: [{
-              text: e.formatMessage(At.sc_link_my_friends),
+              text: e.formatMessage(Wt.sc_link_my_friends),
               location: {
-                domain: Da.U.socialClub,
+                domain: Pa.U.socialClub,
                 path: `/member/${t.nickname}/friends`
               },
               target: "_self",
               ga: {
-                ...ns,
-                text: At.sc_link_my_friends.defaultMessage
+                ...ds,
+                text: Wt.sc_link_my_friends.defaultMessage
               },
               dataTestId: "myFriendsLink"
             }, {
-              text: e.formatMessage(At.sc_link_import_friends),
+              text: e.formatMessage(Wt.sc_link_import_friends),
               location: {
-                domain: Da.U.socialClub,
+                domain: Pa.U.socialClub,
                 path: "/friends/import"
               },
               target: "_self",
               ga: {
-                ...ns,
-                text: At.sc_link_import_friends.defaultMessage
+                ...ds,
+                text: Wt.sc_link_import_friends.defaultMessage
               },
               dataTestId: "importFriendsLink"
             }, {
-              text: e.formatMessage(At.sc_link_find_friends),
+              text: e.formatMessage(Wt.sc_link_find_friends),
               location: {
-                domain: Da.U.socialClub,
+                domain: Pa.U.socialClub,
                 path: "/members"
               },
               target: "_self",
               ga: {
-                ...ns,
-                text: At.sc_link_import_friends.defaultMessage
+                ...ds,
+                text: Wt.sc_link_import_friends.defaultMessage
               },
               dataTestId: "findFriendsLink"
             }]
-          }, is(e), {
-            text: e.formatMessage(At.sc_link_log_out),
+          }, ls(e), {
+            text: e.formatMessage(Wt.sc_link_log_out),
             href: `${a.logout}?returnUrl=${r}`,
             target: "_self",
             reloadDocument: !0,
             ga: {
-              ...ns,
-              text: At.sc_link_log_out.defaultMessage
+              ...ds,
+              text: Wt.sc_link_log_out.defaultMessage
             },
             dataTestId: "logoutButton"
-          }])(k, a, V, $, j, window)), [k, a, V, $, j, le]), ue = () => {
-            K(n + oe * Q < ee)
-          }, fe = () => {
-            if (ae.current) {
+          }])(_, a, V, $, j, window)), [_, a, V, $, j, me]), fe = () => {
+            Q(n + ce * Y < ae)
+          }, ge = () => {
+            if (te.current) {
               const {
                 current: e
-              } = ae, a = e?.scrollHeight, t = window.getComputedStyle(e);
+              } = te, a = e?.scrollHeight, t = window.getComputedStyle(e);
               if (t) {
                 let e = 16 * parseInt(t.getPropertyValue("--scSubNav-opened-margin"), 10) * 2;
-                Number.isNaN(e) && (e = 0), se(a + e)
-              } else se(a)
+                Number.isNaN(e) && (e = 0), re(a + e)
+              } else re(a)
             }
           };
           return (0, c.useEffect)((() => {
             let e = encodeURIComponent(`${document.location.pathname}${document.location.search}`);
-            le.currentSite?.site === Da.U.socialClub && (e = encodeURIComponent("/")), C(e)
-          }), [I]), (0, c.useEffect)((() => {
-            ie(V.characters[P] ?? [])
-          }), [V, P]), (0, c.useEffect)((() => {
-            V && U(V)
+            me.currentSite?.site === Pa.U.socialClub && (e = encodeURIComponent("/")), C(e)
+          }), [T]), (0, c.useEffect)((() => {
+            ie(V.characters[D] ?? [])
+          }), [V, D]), (0, c.useEffect)((() => {
+            V && R(V)
           }), [V]), (0, c.useEffect)((() => {
             const e = V?.characters.gtao;
-            if (null !== D && !e.length) return void A(!1);
+            if (null !== P && !e.length) return void A(!1);
             if (null == B || !e.length) return;
             const a = e?.[B] ?? e?.[0] ?? null;
             A(!!a?.platform && [a.platform, a.characterSlot])
-          }), [B, V, D]), (0, c.useEffect)((() => {
+          }), [B, V, P]), (0, c.useEffect)((() => {
             (async () => {
               if (!V?.id) return;
               const {
@@ -5182,39 +5343,39 @@ _global.SENTRY_RELEASE = {
               O(e > 0)
             })()
           }), [V]), (0, c.useEffect)((() => {
-            ue()
-          }), [oe]), (0, c.useEffect)((() => {
+            fe()
+          }), [ce]), (0, c.useEffect)((() => {
             s(!0), m(f < 768), m(f < 768 || p < 649)
           }), [f, p]), (0, c.useEffect)((() => {
-            let e = re.length - 1;
-            e < 0 && (e = 0), Y(e);
-            const a = re.length > 0 ? re[B] ?? re[0] : null;
+            let e = ne.length - 1;
+            e < 0 && (e = 0), Z(e);
+            const a = ne.length > 0 ? ne[B] ?? ne[0] : null;
             if (!a) return;
-            const t = null !== a ? Ft(a.platform, "large") : null;
-            W(t), H(a), re.length > 1 ? J(!0) : J(!1), o(re.length - 1 > 3)
-          }), [B, re]), (0, c.useEffect)((() => {
-            ue()
-          }), [Q, l, f, re]), (0, c.useEffect)((() => {
-            fe(), ss()((() => {
-              setTimeout(fe, 0)
+            const t = null !== a ? Gt(a.platform, "large") : null;
+            W(t), G(a), ne.length > 1 ? K(!0) : K(!1), o(ne.length - 1 > 3)
+          }), [B, ne]), (0, c.useEffect)((() => {
+            fe()
+          }), [Y, l, f, ne]), (0, c.useEffect)((() => {
+            ge(), cs()((() => {
+              setTimeout(ge, 0)
             }), 300)
           }), [f, p]), (0, c.useEffect)((() => {
-            const e = T?.currentCharId ?? 0;
-            e !== B && F(Math.max(0, Math.min(e, re.length - 1)))
-          }), [re, T]), (0, g.jsxs)(g.Fragment, {
-            children: [null !== R && "gtao" === P && (0, g.jsxs)("div", {
-              className: ks.scProfile,
-              ref: de,
+            const e = I?.currentCharId ?? 0;
+            e !== B && F(Math.max(0, Math.min(e, ne.length - 1)))
+          }), [ne, I]), (0, g.jsxs)(g.Fragment, {
+            children: [null !== U && "gtao" === D && (0, g.jsxs)("div", {
+              className: vs.scProfile,
+              ref: le,
               tabIndex: -1,
-              "aria-label": k.formatMessage(At.profile_selector_profile_card),
-              children: [(0, g.jsx)(fs, {
-                s: ks,
-                character: R,
-                platformTag: G
+              "aria-label": _.formatMessage(Wt.profile_selector_profile_card),
+              children: [(0, g.jsx)(ks, {
+                s: vs,
+                character: U,
+                platformTag: H
               }), !0 === q && (0, g.jsxs)("div", {
-                className: ks.scCharacterSelector,
+                className: vs.scCharacterSelector,
                 children: [(0, g.jsx)("button", {
-                  className: ks.scCharacterSelectBtn,
+                  className: vs.scCharacterSelectBtn,
                   "aria-hidden": !z,
                   type: "button",
                   onClick: e => {
@@ -5229,26 +5390,26 @@ _global.SENTRY_RELEASE = {
                   "data-list-closed": t,
                   children: (0, g.jsx)("span", {
                     children: (0, g.jsx)(d.FormattedMessage, {
-                      ...At.profile_selector_switch_character
+                      ...Wt.profile_selector_switch_character
                     })
                   })
                 }), !1 === l && (0, g.jsx)("div", {
-                  className: ks.scCharacterList,
+                  className: vs.scCharacterList,
                   "data-long-list": i,
                   "aria-hidden": t,
                   ref: r,
-                  children: re.map((e => (0, g.jsx)(ms, {
+                  children: ne.map((e => (0, g.jsx)(ps, {
                     tabIndex: t ? -1 : 0,
                     characterData: e,
-                    setMobileCardWidth: ce
+                    setMobileCardWidth: de
                   }, e.mugshotUrl)))
                 }), !0 === l && (0, g.jsx)("div", {
-                  className: ks.scCharacterList,
-                  "data-single-item": 2 === re.length,
+                  className: vs.scCharacterList,
+                  "data-single-item": 2 === ne.length,
                   "data-swiper-disabled": X,
                   "aria-hidden": t,
-                  ref: Z,
-                  children: (0, g.jsx)(ps, {
+                  ref: ee,
+                  children: (0, g.jsx)(hs, {
                     interactionDelay: 350,
                     mobileGutterWidth: 17,
                     dragThreshold: 40,
@@ -5262,9 +5423,9 @@ _global.SENTRY_RELEASE = {
                     },
                     disablePager: X,
                     disableSwiper: X,
-                    children: re.filter(((e, a) => a !== B)).map((e => (0, c.createElement)(ms, {
+                    children: ne.filter(((e, a) => a !== B)).map((e => (0, c.createElement)(ps, {
                       characterData: e,
-                      setMobileCardWidth: ce,
+                      setMobileCardWidth: de,
                       key: e.mugshotUrl,
                       tabIndex: t ? -1 : 0
                     })))
@@ -5272,10 +5433,10 @@ _global.SENTRY_RELEASE = {
                 })]
               })]
             }), (0, g.jsxs)("nav", {
-              className: ks.scNav,
+              className: vs.scNav,
               "aria-hidden": !z,
               children: [(0, g.jsx)("button", {
-                className: ks.scNavHeader,
+                className: vs.scNavHeader,
                 type: "button",
                 "data-opened": S,
                 "data-nav-opened": z,
@@ -5288,14 +5449,14 @@ _global.SENTRY_RELEASE = {
                   children: V.nickname
                 })
               }), (0, g.jsx)("div", {
-                className: ks.scNavWrap,
+                className: vs.scNavWrap,
                 "data-opened": S,
                 "data-logged-in": "true",
-                ref: ae,
+                ref: te,
                 style: {
-                  "--scNavWrap-max-height": `${te+y}px`
+                  "--scNavWrap-max-height": `${se+y}px`
                 },
-                children: me.map(((e, a) => (0, c.createElement)(ds, {
+                children: ue.map(((e, a) => (0, c.createElement)(fs, {
                   ...e,
                   id: a,
                   activeSubNavId: v,
@@ -5305,19 +5466,19 @@ _global.SENTRY_RELEASE = {
                 })))
               })]
             }), (0, g.jsx)("div", {
-              className: ks.scLanguageSelector,
+              className: vs.scLanguageSelector,
               style: {
                 visibility: z ? null : "hidden"
               },
-              children: (0, g.jsx)(rs.LanguageSelector, {
+              children: (0, g.jsx)(J.LanguageSelector, {
                 theme: "sc-menu",
-                languageSelectorOpened: _,
+                languageSelectorOpened: k,
                 setLanguageSelectorOpened: h
               })
             })]
           })
         })),
-        bs = {
+        ys = {
           scMenu: "rockstargames-modules-core-headerebc4c779cfe9d0b7cfd678424e57370c",
           pillBtn: "rockstargames-modules-core-headerf333ffbc5b9f9d571b81be0a7235190d",
           selected: "rockstargames-modules-core-headere3bdabe09c3d1b98b61f3d0484209912",
@@ -5326,7 +5487,7 @@ _global.SENTRY_RELEASE = {
           dragHandleBtn: "rockstargames-modules-core-headerd362ba3eeee50f90600a413c05761431",
           scOverlay: "rockstargames-modules-core-headerd8e443f5d0d9171449f5f1042f80aa17"
         },
-        hs = (0, d.withIntl)((() => {
+        Ns = (0, d.withIntl)((() => {
           const {
             windowHeight: e
           } = (0, M.bk)(), a = (0, d.useIntl)(), {
@@ -5337,20 +5498,20 @@ _global.SENTRY_RELEASE = {
             setScNavOpened: o,
             charListHidden: l,
             setCharListHidden: m
-          } = as(), [u, f] = (0, c.useState)(!1), {
+          } = is(), [u, f] = (0, c.useState)(!1), {
             setBodyIsScrollable: p
           } = (0, M.Qz)(), {
-            navHidden: k = !1
+            navHidden: _ = !1
           } = (0, b.oT)(), {
-            loggedIn: _
-          } = (0, ne.yi)(), {
+            loggedIn: k
+          } = (0, oe.yi)(), {
             currentCharId: h,
             navOpen: v,
             setNavOpen: x,
             userData: y
-          } = (0, ne.of)(), {
+          } = (0, oe.of)(), {
             track: N
-          } = (0, ne.ye)(), [S, w] = (0, c.useState)(!1), j = (0, b.gh)(ne.O0), C = (0, c.useRef)(), [I, T] = (0, c.useState)(0), E = (0, c.createRef)(), [L, V] = (0, c.useState)(!1), [D, P] = (0, c.useState)(0), [B, $] = (0, c.useState)(!1), {
+          } = (0, oe.ye)(), [S, w] = (0, c.useState)(!1), j = (0, b.gh)(oe.O0), C = (0, c.useRef)(), [T, I] = (0, c.useState)(0), E = (0, c.createRef)(), [L, V] = (0, c.useState)(!1), [P, D] = (0, c.useState)(0), [B, $] = (0, c.useState)(!1), {
             mutateLSSettings: z,
             lsSettings: F
           } = (0, M.ym)(), O = (0, c.useCallback)((e => {
@@ -5360,13 +5521,13 @@ _global.SENTRY_RELEASE = {
             null !== h && F.currentCharId !== h && z({
               key: "currentCharId",
               value: h
-            }), !1 === _ ? z({
+            }), !1 === k ? z({
               key: "currentCharId",
               value: null
-            }) : _ && !y && N({
+            }) : k && !y && N({
               event: "account_synced"
             })
-          }), [h, _]), (0, c.useEffect)((() => {
+          }), [h, k]), (0, c.useEffect)((() => {
             C.current && (!1 === l && !1 === S && (C.current.style.height = `${C.current.scrollHeight}px`), !0 === l && (C.current.style.height = null))
           }), [l, C, S]), (0, c.useEffect)((() => {
             const e = () => {
@@ -5380,12 +5541,12 @@ _global.SENTRY_RELEASE = {
             }
           }), []), (0, c.useEffect)((() => {
             x(!1), O(!0)
-          }), [k]), (0, c.useEffect)((() => {
+          }), [_]), (0, c.useEffect)((() => {
             if (E.current) {
               const {
                 current: e
               } = E, a = window.getComputedStyle(e);
-              T(parseInt(a.paddingRight, 10) + parseInt(a.paddingLeft, 10))
+              I(parseInt(a.paddingRight, 10) + parseInt(a.paddingLeft, 10))
             }
           }), [E]), (0, c.useEffect)((() => {
             p(!L || !v)
@@ -5399,73 +5560,73 @@ _global.SENTRY_RELEASE = {
             s && (l || O(!0), i && (o(!1), n(-1)))
           }), [s]), (0, c.useEffect)((() => {
             i && (s && r(!1), l || O(!0))
-          }), [i]), null === _ ? null : (0, g.jsxs)(g.Fragment, {
+          }), [i]), null === k ? null : (0, g.jsxs)(g.Fragment, {
             children: [(0, g.jsxs)("div", {
-              className: [bs.scMenu, v ? bs.navOpen : ""].join(" "),
-              "data-logged-in": _,
+              className: [ys.scMenu, v ? ys.navOpen : ""].join(" "),
+              "data-logged-in": k,
               "data-mac-browser": B,
               "data-scroll-mode": u,
               ref: E,
               "aria-hidden": !v,
               children: [(0, g.jsx)("button", {
-                className: bs.dragHandleBtn,
+                className: ys.dragHandleBtn,
                 type: "button",
                 onTouchStart: e => {
                   const a = void 0 !== e.changedTouches ? e.touches[0].screenX : e.screenX;
-                  P(a)
+                  D(a)
                 },
                 onTouchMove: e => {
-                  if (0 === D) return;
+                  if (0 === P) return;
                   const a = void 0 !== e.changedTouches ? e.changedTouches[0].screenX : e.screenX;
-                  Math.abs(D - a) > 1 && (P(0), x(!1))
+                  Math.abs(P - a) > 1 && (D(0), x(!1))
                 },
                 children: (0, g.jsx)("img", {
-                  className: bs.dragHandle,
+                  className: ys.dragHandle,
                   src: t(82708),
-                  alt: a.formatMessage(At.sc_menu_drag_handle)
+                  alt: a.formatMessage(Wt.sc_menu_drag_handle)
                 })
-              }), _ ? (0, g.jsx)(_s, {
+              }), k ? (0, g.jsx)(xs, {
                 sc: j,
                 charListHidden: l,
                 hideCharacterList: O,
                 refCharacterListDesktop: C,
-                menuPadding: I,
+                menuPadding: T,
                 longCharList: S,
                 setLongCharList: w,
                 isMobileMode: L,
                 setIsMobileMode: V
-              }) : (0, g.jsx)(ls, {
+              }) : (0, g.jsx)(gs, {
                 sc: j,
                 navOpen: v
               })]
             }), (0, g.jsx)("div", {
-              className: [bs.scOverlay, v ? bs.navOpen : ""].join(" "),
-              "data-logged-in": _
+              className: [ys.scOverlay, v ? ys.navOpen : ""].join(" "),
+              "data-logged-in": k
             })]
           })
         }), l),
-        vs = t(71084),
-        xs = t(29314),
-        ys = (0, d.withIntl)((e => {
+        Ss = t(71084),
+        ws = t(29314),
+        js = (0, d.withIntl)((e => {
           let {
             setOtherHeaderDropdowns: a
           } = e;
           const t = (0, d.useIntl)(),
             {
               data: s
-            } = (0, ne.yi)(),
+            } = (0, oe.yi)(),
             {
               charactersNeeded: r,
               currentCharId: n,
               navOpen: i,
               setNavOpen: o
-            } = (0, ne.of)(),
+            } = (0, oe.of)(),
             {
               track: l
-            } = (0, ne.ye)(),
+            } = (0, oe.ye)(),
             [m, u] = (0, c.useState)(null),
             [f, p] = (0, c.useState)(!1),
-            [k, _] = (0, c.useState)(null),
+            [_, k] = (0, c.useState)(null),
             [b, h] = (0, c.useState)(!1),
             [v, x] = (0, c.useState)([]);
           (0, c.useEffect)((() => {
@@ -5480,13 +5641,13 @@ _global.SENTRY_RELEASE = {
           }), [i]);
           return (0, c.useEffect)((() => {
             const e = s?.id ?? !1,
-              a = e ? (v?.[n]?.mugshotUrl ?? s?.avatar) || vs : xs,
-              t = Ft(v?.[n]?.platform, "small") ?? null;
-            _(t), u(a), p(e), h(!!v?.[n]?.mugshotUrl)
-          }), [s, v, n, vs, xs]), (0, g.jsxs)("button", {
+              a = e ? (v?.[n]?.mugshotUrl ?? s?.avatar) || Ss : ws,
+              t = Gt(v?.[n]?.platform, "small") ?? null;
+            k(t), u(a), p(e), h(!!v?.[n]?.mugshotUrl)
+          }), [s, v, n, Ss, ws]), (0, g.jsxs)("button", {
             className: "rockstargames-modules-core-headerdc519cef2feb621e4715bd3fcdf09791",
             "data-img-set": b,
-            "aria-label": t.formatMessage(At.sc_menu_toggle),
+            "aria-label": t.formatMessage(Wt.sc_menu_toggle),
             type: "button",
             onClick: e => y(e),
             "data-testid": "avaterMenuButton",
@@ -5494,13 +5655,13 @@ _global.SENTRY_RELEASE = {
               className: "rockstargames-modules-core-headerce75eaa6d65692d36b60d31f3f660ff0",
               src: m || "",
               onError: () => {
-                u(vs)
+                u(Ss)
               },
               alt: s?.nickname || ""
-            }), f && null !== k && (0, g.jsx)("img", {
+            }), f && null !== _ && (0, g.jsx)("img", {
               className: "rockstargames-modules-core-headeraaf21e74a659089f743bb160bdf95046",
-              src: k.src,
-              alt: k.alt
+              src: _.src,
+              alt: _.alt
             }), f && (0, g.jsx)("div", {
               "data-ui-name": "avatar",
               className: "rockstargames-modules-core-headercf6b9e7404c64067bdfef9b79e9eb287",
@@ -5508,7 +5669,7 @@ _global.SENTRY_RELEASE = {
             })]
           })
         }), l),
-        Ns = {
+        Cs = {
           pillBtn: "rockstargames-modules-core-headerb03cc125f63972f13ae84119af852edc",
           selected: "rockstargames-modules-core-headerfbcf46d7ef0b32e64b374eee6e3cda3e",
           promoModule: "rockstargames-modules-core-headera586d11bf592ca821d65db7660518322",
@@ -5519,7 +5680,7 @@ _global.SENTRY_RELEASE = {
           right: "rockstargames-modules-core-headerc84d09e0c4466d20792d5a9016a00236",
           promoModuleTextContent: "rockstargames-modules-core-headerbf34746d222495ab8e30cede8de42d71"
         },
-        Ss = e => {
+        Ts = e => {
           let {
             backgroundColor: a,
             brands: t = [],
@@ -5534,17 +5695,17 @@ _global.SENTRY_RELEASE = {
           const [m, u] = (0, c.useState)(!1), {
             ref: f,
             inView: p
-          } = (0, le.cD)({
+          } = (0, ue.cD)({
             threshold: .6
           }), {
-            track: k
-          } = (0, ne.ye)(), _ = {
+            track: _
+          } = (0, oe.ye)(), k = {
             "--promo-background": a ?? "var(--black-200)",
             "--promo-image": `url(${$(o)})` ?? 0,
             "--promo-order": "left" === d ? "row" : "row-reverse"
           };
           return (0, c.useEffect)((() => {
-            p && !m && (k({
+            p && !m && (_({
               event: "page_section_impression",
               event_action: "impression",
               event_category: "page_section",
@@ -5553,8 +5714,8 @@ _global.SENTRY_RELEASE = {
             }), u(!0))
           }), [p]), (0, g.jsx)(g.Fragment, {
             children: (0, g.jsxs)(sa.motion.div, {
-              className: Ns.promoModule,
-              style: _,
+              className: Cs.promoModule,
+              style: k,
               initial: {
                 opacity: 0
               },
@@ -5571,24 +5732,24 @@ _global.SENTRY_RELEASE = {
               },
               ref: f,
               children: [(0, g.jsx)("div", {
-                className: [Ns.promoModuleImage, i ? Ns.gradient : "", "left" === d ? Ns.left : Ns.right].join(" ")
+                className: [Cs.promoModuleImage, i ? Cs.gradient : "", "left" === d ? Cs.left : Cs.right].join(" ")
               }), (0, g.jsxs)("div", {
-                className: Ns.promoModuleContentContainer,
+                className: Cs.promoModuleContentContainer,
                 children: [(0, g.jsx)(j, {
                   brands: t,
-                  className: Ns.promoModuleBrands
+                  className: Cs.promoModuleBrands
                 }), (0, g.jsxs)("div", {
-                  className: Ns.promoModuleTextContent,
+                  className: Cs.promoModuleTextContent,
                   children: [l && (0, g.jsx)("h3", {
                     children: l
                   }), s && (0, g.jsx)("p", {
                     children: s
                   })]
-                }), r && (0, g.jsx)(Y, {
+                }), r && (0, g.jsx)(ee, {
                   to: n,
                   text: r,
                   onClick: () => {
-                    k({
+                    _({
                       event: "cta_other",
                       event_category: "cta",
                       event_action: "other",
@@ -5603,22 +5764,22 @@ _global.SENTRY_RELEASE = {
             })
           })
         };
-      var ws = t(35784);
+      var Is = t(35784);
       t(40168), t(66316);
-      const js = {
+      const Ms = {
           rating: "rockstargames-modules-core-headera1271bbed316bf567eb67e78d2143808",
           withDescriptors: "rockstargames-modules-core-headercba248edc2520d3f1ad195a8495dc1f8",
           withOutDescriptors: "rockstargames-modules-core-headerff919f7a60b854473b61075a671deb6a",
           text: "rockstargames-modules-core-headerd47cd2b7c7415cb44cddef00b1c9b35f"
         },
-        Cs = (0, d.defineMessages)({
+        Es = (0, d.defineMessages)({
           components_ratings_link_alt: {
             id: "components_ratings_link_alt",
             defaultMessage: "Rating: {rating}. Click here learn more about rating systems"
           }
         });
       (0, M.UN)(t(52884));
-      const Is = ya((0, d.withIntl)((e => {
+      const Ls = ya((0, d.withIntl)((e => {
           let {
             descriptors: a = null,
             footer: s = null,
@@ -5630,100 +5791,100 @@ _global.SENTRY_RELEASE = {
           } = e;
           const [m, u] = (0, c.useState)(!1), {
             inView: f
-          } = (0, le.cD)({
+          } = (0, ue.cD)({
             threshold: .6
-          }), [k, _] = (0, c.useState)({
+          }), [_, k] = (0, c.useState)({
             img_rating: n,
             rating_descriptors: a,
             rating_footer: s,
             url_rating: r
           }), {
             track: h
-          } = (0, ne.ye)(), v = (0, d.useIntl)(), {
+          } = (0, oe.ye)(), v = (0, d.useIntl)(), {
             data: x
-          } = (0, b.UL)(ws.GameData, {
+          } = (0, b.UL)(Is.GameData, {
             variables: {
               titleSlug: i
             },
             skip: !i
           });
           if ((0, c.useEffect)((() => {
-              x && _(x?.game)
+              x && k(x?.game)
             }), [x]), (0, c.useEffect)((() => {
-              f && !m && k.img_rating && (h({
+              f && !m && _.img_rating && (h({
                 event: "page_section_impression",
                 event_action: "impression",
                 event_category: "page_section",
                 event_label: "rating",
                 element_placement: "rating"
               }), u(!0))
-            }), [f]), !k.img_rating) return null;
-          const y = !!k.rating_descriptors;
+            }), [f]), !_.img_rating) return null;
+          const y = !!_.rating_descriptors;
           return (0, g.jsxs)("div", {
-            className: [js.rating, y ? js.withDescriptors : js.withOutDescriptors, l || ""].join(" "),
+            className: [Ms.rating, y ? Ms.withDescriptors : Ms.withOutDescriptors, l || ""].join(" "),
             style: (0, M.G6)(o),
             children: [(0, g.jsx)(p, {
-              to: k.url_rating,
+              to: _.url_rating,
               target: "_blank",
               children: (0, g.jsx)("img", {
-                alt: v.formatMessage(Cs.components_ratings_link_alt, {
-                  rating: (N = k.img_rating, N.replace(/_/g, " ").split(".")[0].toUpperCase())
+                alt: v.formatMessage(Es.components_ratings_link_alt, {
+                  rating: (N = _.img_rating, N.replace(/_/g, " ").split(".")[0].toUpperCase())
                 }),
-                src: t(7e4)(`./${k.img_rating}`)
+                src: t(7e4)(`./${_.img_rating}`)
               })
             }), y && (0, g.jsxs)("div", {
-              className: js.text,
+              className: Ms.text,
               children: [(0, g.jsx)("p", {
-                className: js.descriptors,
+                className: Ms.descriptors,
                 dangerouslySetInnerHTML: {
-                  __html: k?.rating_descriptors?.split(/<br\s?\/?>/).join(", ") || ""
+                  __html: _?.rating_descriptors?.split(/<br\s?\/?>/).join(", ") || ""
                 }
-              }), k.rating_footer && (0, g.jsx)("hr", {}), k.rating_footer && (0, g.jsx)("p", {
+              }), _.rating_footer && (0, g.jsx)("hr", {}), _.rating_footer && (0, g.jsx)("p", {
                 dangerouslySetInnerHTML: {
-                  __html: k.rating_footer.replace(/ \//g, ", ")
+                  __html: _.rating_footer.replace(/ \//g, ", ")
                 }
               })]
             })]
           });
           var N
         }), l)),
-        Ts = {
+        Vs = {
           responsiveFlexBox: "rockstargames-modules-core-headercef355ba53827b9ec44655c80b247b2e",
           responsiveFlexItem: "rockstargames-modules-core-headera8f5d10f689c3d40c8378e3ae8a07517",
           responsiveImage: "rockstargames-modules-core-headerbee8268780b292e5bc0da0b497e2c28f"
         },
-        Ms = e => {
+        Ps = e => {
           let {
             children: a,
             className: t,
             style: s
           } = e;
           return (0, g.jsx)("div", {
-            className: [Ts.responsiveFlexBox, void 0 !== t ? t : ""].join(" "),
+            className: [Vs.responsiveFlexBox, void 0 !== t ? t : ""].join(" "),
             style: s,
             children: a
           })
         },
-        Es = {
+        Ds = {
           responsiveFlexItem: "rockstargames-modules-core-headerae579f6183cf73c897e68c8aae5c9d9d"
         },
-        Ls = e => {
+        Bs = e => {
           let {
             children: a,
             className: t,
             style: s
           } = e;
           return (0, g.jsx)("div", {
-            className: [Es.responsiveFlexItem, void 0 !== t ? t : ""].join(" "),
+            className: [Ds.responsiveFlexItem, void 0 !== t ? t : ""].join(" "),
             style: s,
             children: a
           })
         },
-        Vs = {
+        $s = {
           responsiveGridBox: "rockstargames-modules-core-headera28c0b7a44e1a2d5fb257161ce36a24f",
           responsiveGridItem: "rockstargames-modules-core-headerbeddf36313a28976090b5a8b04d2594a"
         },
-        Ds = e => {
+        zs = e => {
           let {
             children: a,
             cols: t,
@@ -5735,31 +5896,31 @@ _global.SENTRY_RELEASE = {
             ...n
           } : {};
           return void 0 !== t && (i.gridTemplateColumns = `repeat(${t}, 1fr)`), void 0 !== r && (i.gridTemplateRows = `repeat(${r}, 1fr)`), (0, g.jsx)("div", {
-            className: [Vs.responsiveGridBox, void 0 !== s ? s : ""].join(" "),
+            className: [$s.responsiveGridBox, void 0 !== s ? s : ""].join(" "),
             style: i,
             children: a
           })
         },
-        Ps = {
+        Fs = {
           responsiveGridBox: "rockstargames-modules-core-headera39e7c7140ada0ab28537c8c901e816f",
           responsiveGridItem: "rockstargames-modules-core-headerbe7a0966e2f0457c1172ac9da99020c6"
         },
-        Bs = e => {
+        Os = e => {
           let {
             children: a,
             className: t,
             style: s
           } = e;
           return (0, g.jsx)("div", {
-            className: [Ps.responsiveGridItem, void 0 !== t ? t : ""].join(" "),
+            className: [Fs.responsiveGridItem, void 0 !== t ? t : ""].join(" "),
             style: s,
             children: a
           })
         },
-        $s = {
+        As = {
           responsiveImage: "rockstargames-modules-core-headere31b43dce2e720669fb90bf539d22197"
         },
-        zs = e => {
+        Rs = e => {
           let {
             src: a,
             className: t = "",
@@ -5771,18 +5932,18 @@ _global.SENTRY_RELEASE = {
           return i ? (n.backgroundImage = `url(${a})`, (0, g.jsx)("div", {
             role: "img",
             "aria-label": r ?? "R* Games",
-            className: [$s.responsiveImage, s ? $s.animateBox : "", t].join(" "),
+            className: [As.responsiveImage, s ? As.animateBox : "", t].join(" "),
             style: {
               ...n,
               "--aspect-ratio": o.width / o.height
             }
           })) : null
         },
-        Fs = {
+        Us = {
           responsiveSection: "rockstargames-modules-core-headerfb7094e43a166c19080ccfe92ed7420d",
           maxWidth: "rockstargames-modules-core-headerbdc35dbaa55c59ddd2831fd3ac05c5a7"
         },
-        Os = e => {
+        Gs = e => {
           let {
             children: a,
             className: t,
@@ -5790,20 +5951,20 @@ _global.SENTRY_RELEASE = {
             maxWidth: r
           } = e;
           return (0, g.jsx)("section", {
-            className: [Fs.responsiveSection, void 0 !== t ? t : ""].join(" "),
+            className: [Us.responsiveSection, void 0 !== t ? t : ""].join(" "),
             style: s,
             children: r ? (0, g.jsx)("div", {
-              className: Fs.maxWidth,
+              className: Us.maxWidth,
               children: a
             }) : a
           })
         },
-        As = () => (0, g.jsx)(p, {
+        Hs = () => (0, g.jsx)(p, {
           className: "rockstargames-modules-core-headerba0c20f78999975dfb8d9cff0de44b34",
           alt: "Rockstar Games Home",
           to: "/"
         }),
-        Us = () => {
+        Ws = () => {
           const {
             pathname: e
           } = (0, u.useLocation)();
@@ -5811,7 +5972,7 @@ _global.SENTRY_RELEASE = {
             window.scrollTo(0, 0)
           }), [e]), null
         },
-        Rs = (0, c.forwardRef)(((e, a) => {
+        qs = (0, c.forwardRef)(((e, a) => {
           const {
             threshold: t,
             callback: s,
@@ -5819,7 +5980,7 @@ _global.SENTRY_RELEASE = {
             requireUser: n
           } = e, {
             track: i
-          } = (0, ne.ye)(n), [o, d] = (0, c.useState)(a?.current);
+          } = (0, oe.ye)(n), [o, d] = (0, c.useState)(a?.current);
           return (0, c.useEffect)((() => {
             a?.current && d(a.current)
           }), [a]), ((e, a, t) => {
@@ -5885,9 +6046,9 @@ _global.SENTRY_RELEASE = {
             }), "function" == typeof s && s(a)
           }), o), r
         }));
-      Rs.displayName = "ScrollTracker";
-      const Hs = Rs,
-        Gs = (0, M.Ux)((e => {
+      qs.displayName = "ScrollTracker";
+      const Js = qs,
+        Ks = (0, M.Ux)((e => {
           let {
             t: a
           } = e;
@@ -5914,44 +6075,44 @@ _global.SENTRY_RELEASE = {
             })]
           })
         })),
-        Ws = {
+        Xs = {
           skeleton: "rockstargames-modules-core-headerf963a1ae95f7f5ac2c5192c3f357b6dc",
           pulse: "rockstargames-modules-core-headere00ed88d692bbfc1a301dcfc61a077a9",
           gen9Hero: "rockstargames-modules-core-headerdb0b80177710d337d93bddb97b8a7dea"
         },
-        qs = e => {
+        Qs = e => {
           let {
             skeleton: a
           } = e;
           return a ? (0, g.jsx)("div", {
-            className: [Ws.skeleton, Ws[a]].join(" ")
+            className: [Xs.skeleton, Xs[a]].join(" ")
           }) : null
         },
-        Js = (0, d.defineMessages)({
+        Ys = (0, d.defineMessages)({
           components_track_list_title: {
             id: "components_track_list_title",
             defaultMessage: "Tracklist"
           }
         }),
-        Xs = {
+        Zs = {
           bodySmall: "rockstargames-modules-core-headerc048aacaedc7fb642f38c7f163c193e3"
         },
-        Ks = e => {
+        er = e => {
           let {
             track: a,
             artist: t
           } = e;
           return (0, g.jsxs)("div", {
-            className: Xs.track,
+            className: Zs.track,
             children: [(0, g.jsx)("p", {
               children: a
             }), (0, g.jsx)("p", {
-              className: Xs.bodySmall,
+              className: Zs.bodySmall,
               children: t
             })]
           })
         },
-        Qs = (0, d.withIntl)((e => {
+        ar = (0, d.withIntl)((e => {
           let {
             children: a
           } = e;
@@ -5960,22 +6121,22 @@ _global.SENTRY_RELEASE = {
             children: [(0, g.jsx)("h4", {
               className: "rockstargames-modules-core-headercd3895fbae93ba04f1401487f6e6eddf",
               children: (0, g.jsx)(d.FormattedMessage, {
-                ...Js.components_track_list_title
+                ...Ys.components_track_list_title
               })
             }), (0, g.jsx)("div", {
               className: "rockstargames-modules-core-headeref0cde8b15ded961605237d0e8328a9b",
               children: (0, g.jsx)("div", {
                 className: "rockstargames-modules-core-headerbdd54186db17d27b3daebc4b9d58e09a",
-                children: c.Children.map(c.Children.toArray(a), (e => (0, g.jsx)(Ks, {
+                children: c.Children.map(c.Children.toArray(a), (e => (0, g.jsx)(er, {
                   ...e?.props
                 })))
               })
             })]
           })
         }), l),
-        Ys = "rockstargames-modules-core-headereca98eb0b5b84a0c9a2e6d952545a2d5",
-        Zs = "rockstargames-modules-core-headerd3d0b4ecd3bddba96c73f49fcca34ed8",
-        er = {
+        tr = "rockstargames-modules-core-headereca98eb0b5b84a0c9a2e6d952545a2d5",
+        sr = "rockstargames-modules-core-headerd3d0b4ecd3bddba96c73f49fcca34ed8",
+        rr = {
           0: {
             spaceBetween: 8
           },
@@ -5992,7 +6153,7 @@ _global.SENTRY_RELEASE = {
             spaceBetween: 22
           }
         },
-        ar = e => {
+        nr = e => {
           let {
             title: a = "thumbnail gallery",
             thumbsPerView: t = 3,
@@ -6012,16 +6173,16 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: d
-          } = (0, ne.ye)(), [l, m] = (0, c.useState)([va.O4, va.Hj, va.eM]), [u, f] = (0, c.useState)(null), [p, k] = (0, c.useState)(null);
+          } = (0, oe.ye)(), [l, m] = (0, c.useState)([va.O4, va.Hj, va.eM]), [u, f] = (0, c.useState)(null), [p, _] = (0, c.useState)(null);
           return (0, c.useEffect)((() => {
             const e = [va.O4, va.Hj, va.eM];
             r && e.push(va._2), m(e)
           }), [r]), (0, c.useEffect)((() => {
             if (!n) return;
-            const e = n.map(((e, a) => (0, g.jsx)(ee.Ky, {
+            const e = n.map(((e, a) => (0, g.jsx)(te.Ky, {
               children: e
             }, Symbol(a).toString())));
-            k(e)
+            _(e)
           }), [n]), p ? (0, g.jsxs)(sa.motion.div, {
             className: "rockstargames-modules-core-headerd4f245838b94234f21463a08a8112910",
             variants: i.parent,
@@ -6029,12 +6190,12 @@ _global.SENTRY_RELEASE = {
             initial: "initial",
             animate: "animate",
             children: [(0, g.jsx)(sa.motion.div, {
-              className: Ys,
+              className: tr,
               variants: i.main,
               transition: o.main,
               initial: "initial",
               animate: "animate",
-              children: (0, g.jsx)(ee.wx, {
+              children: (0, g.jsx)(te.wx, {
                 loop: s,
                 navigation: r,
                 pagination: {
@@ -6044,8 +6205,8 @@ _global.SENTRY_RELEASE = {
                   swiper: u
                 },
                 modules: l,
-                breakpoints: er,
-                className: Ys,
+                breakpoints: rr,
+                className: tr,
                 onSlideNextTransitionEnd: () => {
                   d({
                     event_action: "next",
@@ -6073,28 +6234,28 @@ _global.SENTRY_RELEASE = {
                 children: p
               })
             }), (0, g.jsx)(sa.motion.div, {
-              className: Zs,
+              className: sr,
               variants: i.thumbs,
               transition: o.thumbs,
               initial: "initial",
               animate: "animate",
-              children: (0, g.jsx)(ee.wx, {
+              children: (0, g.jsx)(te.wx, {
                 threshold: 50,
                 onSwiper: f,
                 loop: s,
-                breakpoints: er,
+                breakpoints: rr,
                 slidesPerView: t,
                 freeMode: !0,
                 watchSlidesProgress: !0,
                 modules: l,
-                className: Zs,
+                className: sr,
                 children: p
               })
             })]
           }) : null
         };
-      var tr = t(504);
-      const sr = e => {
+      var ir = t(504);
+      const or = e => {
           let {
             id: a = null,
             ids: t = null,
@@ -6104,7 +6265,7 @@ _global.SENTRY_RELEASE = {
           const n = t ?? [a],
             {
               data: i
-            } = (0, b.UL)(tr.TinaModulesInfo, {
+            } = (0, b.UL)(ir.TinaModulesInfo, {
               variables: {
                 ids: n,
                 sync: r
@@ -6114,18 +6275,18 @@ _global.SENTRY_RELEASE = {
             });
           return i?.tinaModulesInfo ?? null
         },
-        rr = ya((e => {
+        cr = ya((e => {
           let {
             components: a = {},
             id: t = null,
             ids: s = null,
             skeleton: r
           } = e;
-          const n = sr({
+          const n = or({
             id: t,
             ids: s
           });
-          if (!n) return (0, g.jsx)(qs, {
+          if (!n) return (0, g.jsx)(Qs, {
             skeleton: r
           });
           const i = n?.[0]?.tina;
@@ -6134,7 +6295,7 @@ _global.SENTRY_RELEASE = {
               let {
                 tina: s
               } = e;
-              return (0, g.jsx)(J, {
+              return (0, g.jsx)(X, {
                 components: a,
                 tina: s,
                 componentProps: {
@@ -6144,7 +6305,7 @@ _global.SENTRY_RELEASE = {
             }))
           }) : null
         })),
-        nr = e => {
+        dr = e => {
           let {
             children: a,
             style: t,
@@ -6160,8 +6321,8 @@ _global.SENTRY_RELEASE = {
             children: a
           })
         };
-      var ir = t(19168);
-      const or = {
+      var lr = t(19168);
+      const mr = {
           pillBtn: "rockstargames-modules-core-headerae56f3a5bf16f1160a0cbc040c7611fa",
           selected: "rockstargames-modules-core-headerd7e34a082f54f22035320df51e8b4ed9",
           userVote: "rockstargames-modules-core-headerfd538df1ac730062880ff9ca1292dcc4",
@@ -6173,7 +6334,7 @@ _global.SENTRY_RELEASE = {
           upVote: "rockstargames-modules-core-headerea25ed07e937e2efdce0b99d076fbbe1",
           voteButtonActive: "rockstargames-modules-core-headerc31731d09d8118c6a82fe6edb193dc50"
         },
-        cr = e => {
+        ur = e => {
           let {
             description: a,
             foreign_id: t = document.location.pathname,
@@ -6182,13 +6343,13 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: n
-          } = (0, ne.ye)(), {
+          } = (0, oe.ye)(), {
             loggedIn: i
-          } = (0, ne.yi)(), {
+          } = (0, oe.yi)(), {
             refetch: o
-          } = (0, b.UL)(ir.UserGetVote, {
+          } = (0, b.UL)(lr.UserGetVote, {
             skip: !0
-          }), [d] = (0, b.cQ)(ir.UserCastVote), [l, m] = (0, c.useState)(null), u = (0, c.useCallback)((async e => {
+          }), [d] = (0, b.cQ)(lr.UserCastVote), [l, m] = (0, c.useState)(null), u = (0, c.useCallback)((async e => {
             n({
               event_action: l ? "like" : "dislike",
               event_category: "cta",
@@ -6215,25 +6376,25 @@ _global.SENTRY_RELEASE = {
               m(e?.data?.userGetVote?.vote ?? null)
             })()
           }), [t, s, i]), (0, g.jsx)("div", {
-            className: or.userVote,
+            className: mr.userVote,
             children: (0, g.jsxs)("div", {
-              className: or.voteContent,
+              className: mr.voteContent,
               children: [(0, g.jsxs)("div", {
-                className: or.info,
+                className: mr.info,
                 children: [(0, g.jsx)("h3", {
                   children: r
                 }), (0, g.jsx)("p", {
                   children: a
                 })]
               }), (0, g.jsxs)("div", {
-                className: [or.voteButtons, i ? "" : or.loggedOutButtons].join(" "),
+                className: [mr.voteButtons, i ? "" : mr.loggedOutButtons].join(" "),
                 children: [(0, g.jsx)("button", {
                   onClick: () => u(!0),
-                  className: [or.upVote, l ? or.voteButtonActive : ""].join(" "),
+                  className: [mr.upVote, l ? mr.voteButtonActive : ""].join(" "),
                   type: "button",
                   "aria-label": "Vote up"
                 }), (0, g.jsx)("button", {
-                  className: [or.downVote, !1 === l ? or.voteButtonActive : ""].join(" "),
+                  className: [mr.downVote, !1 === l ? mr.voteButtonActive : ""].join(" "),
                   onClick: () => u(!1),
                   type: "button",
                   "aria-label": "Vote down"
@@ -6242,7 +6403,7 @@ _global.SENTRY_RELEASE = {
             })
           })
         },
-        dr = {
+        fr = {
           carousel: "rockstargames-modules-core-headerd8e71d378f6d4a968e8ac7d621e5f32a",
           text: "rockstargames-modules-core-headera3f73d86b98d36a296bf8f621f1c340f",
           info: "rockstargames-modules-core-headerf46d7fc75c302b1d3f4db01d8572bea8",
@@ -6257,7 +6418,7 @@ _global.SENTRY_RELEASE = {
           dragging: "rockstargames-modules-core-headera7313e3ff4e99b5313f8698890d0dd8c",
           dots: "rockstargames-modules-core-headere1d7433489996eb9fa890d452ebcb042"
         },
-        lr = (0, M.au)((e => {
+        gr = (0, M.au)((e => {
           let {
             locale: a,
             t,
@@ -6268,7 +6429,7 @@ _global.SENTRY_RELEASE = {
           } = (0, M.Qz)(), [n, i] = (0, c.useState)(0), [o, d] = (0, c.useState)(0), l = (0, c.useRef)(null), m = (0, c.useRef)(null);
           return (0, c.useEffect)((() => {
             if (!l.current || m.current) return;
-            const e = new(_())(l.current);
+            const e = new(k())(l.current);
             e.get("press").set({
               time: 0
             }), e.get("tap").set({
@@ -6283,16 +6444,16 @@ _global.SENTRY_RELEASE = {
                 i(e), d(0)
               },
               c = e => {
-                d(e.isFinal ? 0 : e.deltaX), "panleft" !== e.additionalEvent && "panright" !== e.additionalEvent || !m.current?.classList.contains(dr.dragging) || a() && r(!1)
+                d(e.isFinal ? 0 : e.deltaX), "panleft" !== e.additionalEvent && "panright" !== e.additionalEvent || !m.current?.classList.contains(fr.dragging) || a() && r(!1)
               },
               u = () => {
                 a() && r(!0), d(0)
               },
               f = e => {
-                "press" === e.type && l.current?.classList.add(`${dr.disableClick}`), "tap" === e.type && (l.current?.classList.remove(`${dr.disableClick}`), document.elementFromPoint(e.center.x, e.center.y).click())
+                "press" === e.type && l.current?.classList.add(`${fr.disableClick}`), "tap" === e.type && (l.current?.classList.remove(`${fr.disableClick}`), document.elementFromPoint(e.center.x, e.center.y).click())
               },
               g = () => {
-                a() && r(!0), l.current && l.current.classList.remove(`${dr.disableClick}`)
+                a() && r(!0), l.current && l.current.classList.remove(`${fr.disableClick}`)
               },
               p = () => {
                 a() && r(!0)
@@ -6301,12 +6462,12 @@ _global.SENTRY_RELEASE = {
               e.off("swiperight", t), e.off("swipeleft", o), e.off("pan", c), e.off("panend", u), e.off("press tap", f), e.off("pressup", g), m.current && m.current.removeEventListener("transitionend", p), d(0)
             }
           }), [l.current, n]), (0, g.jsxs)("section", {
-            className: dr.carousel,
+            className: fr.carousel,
             children: [(0, g.jsx)("div", {
-              className: dr.track,
+              className: fr.track,
               ref: l,
               children: (0, g.jsx)("div", {
-                className: `${dr.items} ${0!==o?dr.dragging:""}`,
+                className: `${fr.items} ${0!==o?fr.dragging:""}`,
                 ref: m,
                 style: {
                   transform: `translateX(calc(-${100*n}% + ${o}px))`
@@ -6316,11 +6477,11 @@ _global.SENTRY_RELEASE = {
                   "data-gtm-action": "Click-through screencap",
                   "data-gtm-label": `/videos/${e.id}`,
                   to: `/videos/${e.id}`,
-                  className: n === a ? dr.active : "",
+                  className: n === a ? fr.active : "",
                   role: "link",
                   title: e.title,
                   tabIndex: n === a ? 0 : -1,
-                  children: (0, g.jsx)(kr, {
+                  children: (0, g.jsx)(xr, {
                     video: e,
                     size: 1280
                   })
@@ -6328,7 +6489,7 @@ _global.SENTRY_RELEASE = {
               })
             }), (0, g.jsxs)("footer", {
               children: [(0, g.jsx)("div", {
-                className: dr.text,
+                className: fr.text,
                 children: s.map(((e, s) => (0, g.jsx)(p, {
                   "data-gtm-category": "Carousel",
                   "data-gtm-action": "Click-through footer",
@@ -6338,38 +6499,38 @@ _global.SENTRY_RELEASE = {
                   title: e.title,
                   tabIndex: n === s ? 0 : -1,
                   children: (0, g.jsxs)("div", {
-                    className: [dr.info, s === n ? dr.active : ""].join(" "),
+                    className: [fr.info, s === n ? fr.active : ""].join(" "),
                     children: [(0, g.jsxs)("div", {
-                      className: dr.title,
+                      className: fr.title,
                       children: [(0, g.jsx)("div", {
-                        className: dr.gameTitle,
+                        className: fr.gameTitle,
                         children: `${e.game.title}${"fr_fr"===a?" ":""}`
                       }), (0, g.jsx)("h2", {
-                        className: dr.videoTitle,
+                        className: fr.videoTitle,
                         children: `${e.title}`
                       })]
-                    }), (0, g.jsx)(I, {
-                      className: dr.cta,
+                    }), (0, g.jsx)(T, {
+                      className: fr.cta,
                       children: t("Watch Now")
                     })]
                   })
                 }, e.id)))
               }), (0, g.jsx)("div", {
-                className: dr.dots,
+                className: fr.dots,
                 children: s.map(((e, a) => (0, g.jsx)("button", {
                   "aria-label": `Slide ${a+1}`,
                   "data-gtm-category": "Marquee",
                   "data-gtm-action": "Dot click",
                   "data-gtm-label": `Dot clicked to ${a}`,
                   onClick: () => i(a),
-                  className: n === a ? dr.active : "",
+                  className: n === a ? fr.active : "",
                   type: "button"
                 }, e.id)))
               })]
             })]
           })
         })),
-        mr = (0, d.defineMessages)({
+        pr = (0, d.defineMessages)({
           next_button_label: {
             id: "next_button_label",
             defaultMessage: "Next video page"
@@ -6377,26 +6538,22 @@ _global.SENTRY_RELEASE = {
           previous_button_label: {
             id: "previous_button_label",
             defaultMessage: "Previous video page"
-          },
-          disabled_label: {
-            id: "disabled_label",
-            defaultMessage: "Disabled"
           }
         }),
-        ur = {
+        _r = {
           videoList: "rockstargames-modules-core-headera77794780421c410f7ea55ed11ae6340",
           sectionHeader: "rockstargames-modules-core-headered556e2220733d99eae5df36ba41f9c7",
           arrowNav: "rockstargames-modules-core-headerffeb6a2e829d49f94fea4ee7f5a0d2c8",
           items: "rockstargames-modules-core-headerffe2263cdad39631ef304714ba89465d",
           trackWrapper: "rockstargames-modules-core-headercbdef484a85e8f352a06609b394d4da7",
+          partial: "rockstargames-modules-core-headerb33af3fff1e38a693bdc09f20d8e6f81",
           track: "rockstargames-modules-core-headerf3f263effe27f3c21f2ab822b9ee5dcf",
-          dragging: "rockstargames-modules-core-headerc20488bcdf3f23bdf0c6c5b283ae08f4",
           arrow: "rockstargames-modules-core-headerc8012415449630a832011f490b9d2b72",
           previous: "rockstargames-modules-core-headerf30d899a31937a4cf395643951224469",
           next: "rockstargames-modules-core-headerd9d5a85633fc0f0b7f98219d735e6e05",
           disabled: "rockstargames-modules-core-headerc806076a1e3e23c77528ee12e32771a3"
         },
-        fr = (0, d.withIntl)((e => {
+        kr = (0, d.withIntl)((e => {
           let {
             vids: a,
             games: t,
@@ -6404,86 +6561,115 @@ _global.SENTRY_RELEASE = {
             gameTitleNecessary: r
           } = e;
           const n = (0, d.useIntl)(),
-            i = void 0 !== t ? "games" : "videos",
-            o = "videos" === i ? a : t.results,
-            l = (0, c.useRef)(null),
-            [m, u] = (0, c.useState)(0),
-            [f, p] = (0, c.useState)(0),
-            k = e => {
-              const a = Math.ceil(o.length / m);
-              let t = e;
-              t < 0 ? t = 0 : t >= a - 1 && (t = a - 1), p(t)
-            },
-            [b, h] = (0, c.useState)(0);
-          let v;
-          return (0, c.useEffect)((() => {
+            {
+              track: i
+            } = (0, oe.ye)(),
+            o = void 0 !== t ? "games" : "videos",
+            [l, m] = (0, c.useState)(),
+            [u, f] = (0, c.useState)(),
+            [p, _] = (0, c.useState)(0),
+            k = (0, c.useRef)(null),
+            b = (0, c.useRef)(null);
+          (0, c.useEffect)((() => {
+            f({
+              nextEl: b.current,
+              prevEl: k.current
+            })
+          }), [b, k]), (0, c.useEffect)((() => {
             const e = () => {
               const e = e => window.matchMedia(`(max-width: ${e})`).matches;
               let a = 4;
-              e("768px") ? a = 1 : e("990px") || e("1440px") ? a = 2 : e("1920px") && (a = 3), u(a)
+              e("768px") ? a = 1 : e("990px") || e("1440px") ? a = 2.2 : e("1920px") && (a = 3.2), _(a)
             };
             return window.addEventListener("resize", e), e(), () => {
               window.removeEventListener("resize", e)
             }
-          }), [m]), (0, c.useEffect)((() => {
-            if (l.current) {
-              const e = new(_())(l.current),
-                a = () => {
-                  k(f - 1), h(0)
-                },
-                t = () => {
-                  k(f + 1), h(0)
-                },
-                s = e => {
-                  h(e.isFinal ? 0 : e.deltaX)
-                },
-                r = () => {
-                  h(0)
-                };
-              return e.on("swiperight", a), e.on("swipeleft", t), e.on("pan", s), e.on("panend", r), () => {
-                e.off("swiperight", a), e.off("swipeleft", t), e.off("pan", s), e.off("panend", r), h(0)
-              }
-            }
-            return {}
-          }), [l.current, f]), v = "games" === i ? (0, g.jsx)(g.Fragment, {
-            children: t.results.map((e => 666 !== e.id && (0, g.jsx)(_a, {
-              game: e,
-              dontOverrideTo: !0,
-              to: `/videos?type=game&gameId=${e.id}`
+          }), [p]);
+          const h = e => {
+            l?.slideTo(e)
+          };
+          let v;
+          return v = "games" === o ? (0, g.jsx)(g.Fragment, {
+            children: t.results.map(((e, a) => 666 !== e.id && (0, g.jsx)(te.Ky, {
+              className: _r.slide,
+              onFocus: () => h(a),
+              children: (0, g.jsx)(ka, {
+                game: e,
+                dontOverrideTo: !0,
+                to: `/videos?type=game&gameId=${e.id}`
+              })
             }, e.id)))
           }) : (0, g.jsx)(g.Fragment, {
-            children: a.map((e => (0, g.jsx)(_r, {
-              video: e,
-              gameTitleNecessary: r
+            children: a.map(((e, a) => (0, g.jsx)(te.Ky, {
+              className: _r.slide,
+              onFocus: () => h(a),
+              children: (0, g.jsx)(yr, {
+                video: e,
+                gameTitleNecessary: r
+              })
             }, e.id)))
           }), (0, g.jsxs)("section", {
-            className: ur.videoList,
+            className: _r.videoList,
             children: [(0, g.jsxs)("h3", {
-              className: ur.sectionHeader,
+              className: _r.sectionHeader,
               children: [s, (0, g.jsxs)("div", {
-                className: ur.arrowNav,
+                className: _r.arrowNav,
                 children: [(0, g.jsx)("button", {
-                  className: [ur.arrow, ur.previous, 0 === f ? ur.disabled : ""].join(" "),
-                  onClick: () => k(f - 1),
+                  className: [_r.arrow, _r.previous].join(" "),
                   type: "button",
-                  "aria-label": `${0===f?n.formatMessage(mr.disabled_label)+", ":""}${n.formatMessage(mr.previous_button_label)}`
+                  ref: k,
+                  "aria-label": n.formatMessage(pr.previous_button_label)
                 }), (0, g.jsx)("button", {
-                  className: [ur.arrow, ur.next, f === Math.ceil(o.length / m) - 1 ? ur.disabled : ""].join(" "),
-                  onClick: () => k(f + 1),
+                  className: [_r.arrow, _r.next].join(" "),
                   type: "button",
-                  "aria-label": `${f===Math.ceil(o.length/m)-1?n.formatMessage(mr.disabled_label)+", ":""}${n.formatMessage(mr.next_button_label)}`
+                  ref: b,
+                  "aria-label": n.formatMessage(pr.next_button_label),
+                  onKeyDown: e => {
+                    if ("Tab" === e.key && !e.shiftKey) {
+                      const a = l?.slides[l?.activeIndex].querySelector('a, button, [role="button"]');
+                      a && (e.preventDefault(), a.focus())
+                    }
+                  }
                 })]
               })]
             }), (0, g.jsx)("div", {
-              className: ur.items,
+              className: [_r.items, p % 1 != 0 ? _r.partial : ""].join(" "),
               children: (0, g.jsx)("div", {
-                className: ur.trackWrapper,
-                children: (0, g.jsx)("div", {
-                  className: [ur.track, 0 !== b ? ur.dragging : ""].join(" "),
-                  ref: l,
-                  style: {
-                    transform: `translateX(calc(-${100*f}% + ${b}px - (var(--standard-grid-gap) * ${f}))`,
-                    gridAutoColumns: `calc(100 / ${m} * 1% - calc(var(--standard-grid-gap) * (${m-1}/${m}))`
+                className: _r.trackWrapper,
+                children: p && (0, g.jsx)(te.wx, {
+                  className: _r.track,
+                  slidesPerView: p,
+                  spaceBetween: 24,
+                  onInit: e => {
+                    m(e)
+                  },
+                  grabCursor: !0,
+                  navigation: u,
+                  modules: [va._2],
+                  slideClass: I("swiper-slide"),
+                  onSlideNextTransitionEnd: () => {
+                    i({
+                      event_action: "next",
+                      event_category: "carousel",
+                      event: "carousel_next",
+                      event_label: s?.toLowerCase() ?? ""
+                    })
+                  },
+                  onSlidePrevTransitionEnd: () => {
+                    i({
+                      event_action: "previous",
+                      event_category: "carousel",
+                      event: "carousel_previous",
+                      event_label: s?.toLowerCase() ?? ""
+                    })
+                  },
+                  onSlideChangeTransitionEnd: () => {
+                    i({
+                      event_action: "swipe",
+                      event_category: "carousel",
+                      event: "carousel_swipe",
+                      event_label: s?.toLowerCase() ?? ""
+                    })
                   },
                   children: v
                 })
@@ -6491,7 +6677,18 @@ _global.SENTRY_RELEASE = {
             })]
           })
         }), l),
-        gr = (0, M.Ux)((e => {
+        br = e => {
+          let {
+            children: a,
+            ...t
+          } = e;
+          return (0, g.jsx)("span", {
+            ...t,
+            className: "rockstargames-modules-core-headerf7f61ab4bc6dd2a49f80662ead7d8a51",
+            children: a
+          })
+        },
+        hr = (0, M.Ux)((e => {
           let {
             error: a,
             t,
@@ -6515,10 +6712,10 @@ _global.SENTRY_RELEASE = {
             }), (0, g.jsx)(p, {
               to: "/",
               children: t("Home")
-            }), "clr" !== s && (0, g.jsx)(Gs, {})]
+            }), "clr" !== s && (0, g.jsx)(Ks, {})]
           })
         })),
-        pr = {
+        vr = {
           videoPreview: "rockstargames-modules-core-headerc6739cc628fda235abe2bafeb30ad7cf",
           card: "rockstargames-modules-core-headerec6e68ffa1188155be202dfef3f92829",
           info: "rockstargames-modules-core-headerab8da127fbcdb98f874bc3f1377669a2",
@@ -6527,7 +6724,7 @@ _global.SENTRY_RELEASE = {
           screencapLoaded: "rockstargames-modules-core-headerf68c57f5459778024e5a98918ae61ab2",
           gameTitle: "rockstargames-modules-core-headerdebff452a4923aded7de826c081bab5d"
         },
-        kr = e => {
+        xr = e => {
           let {
             video: a,
             size: t = 640
@@ -6535,13 +6732,13 @@ _global.SENTRY_RELEASE = {
           const s = `${a.screencap}?im=Resize=${t}`,
             [r] = (0, M.kJ)(s);
           return (0, g.jsx)("div", {
-            className: [pr.screencap, r ? pr.screencapLoaded : ""].join(" "),
+            className: [vr.screencap, r ? vr.screencapLoaded : ""].join(" "),
             style: {
               background: `url(${s}) center/cover`
             }
           })
         },
-        _r = e => {
+        yr = e => {
           let {
             gameTitleNecessary: a = !0,
             openInNewWindow: t = !1,
@@ -6551,25 +6748,25 @@ _global.SENTRY_RELEASE = {
           } = e;
           const i = n ?? `/videos/${s.id}`,
             o = {
-              className: pr.videoPreview,
+              className: vr.videoPreview,
               "data-gtm-category": "Videos",
               "data-gtm-action": "Video Click-through",
               "data-gtm-label": i
             },
             c = (0, g.jsxs)("div", {
-              className: pr.card,
-              children: [(0, g.jsx)(kr, {
+              className: vr.card,
+              children: [(0, g.jsx)(xr, {
                 video: s,
                 size: r
               }), (0, g.jsxs)("div", {
-                className: pr.info,
+                className: vr.info,
                 children: [a ? (0, g.jsx)("div", {
-                  className: pr.gameTitle,
+                  className: vr.gameTitle,
                   dangerouslySetInnerHTML: {
                     __html: s.game.title
                   }
                 }) : "", (0, g.jsx)("h5", {
-                  className: pr.title,
+                  className: vr.title,
                   dangerouslySetInnerHTML: {
                     __html: s.title
                   }
@@ -6587,7 +6784,7 @@ _global.SENTRY_RELEASE = {
             children: c
           })
         };
-      class br extends c.Component {
+      class Nr extends c.Component {
         constructor(e) {
           super(e), this.state = {
             error: {
@@ -6611,15 +6808,15 @@ _global.SENTRY_RELEASE = {
           }
         }
         render() {
-          return null !== this.state.error.code ? (0, g.jsx)(gr, {
+          return null !== this.state.error.code ? (0, g.jsx)(hr, {
             error: this.state.error
           }) : this.props.children
         }
       }
-      const hr = function(e) {
+      const Sr = function(e) {
           let a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
           return function(t) {
-            return (0, g.jsx)(br, {
+            return (0, g.jsx)(Nr, {
               header: a,
               children: (0, g.jsx)(e, {
                 ...t
@@ -6627,7 +6824,7 @@ _global.SENTRY_RELEASE = {
             })
           }
         },
-        vr = (0, c.forwardRef)(((e, a) => {
+        wr = (0, c.forwardRef)(((e, a) => {
           const {
             children: t,
             tag: s = "div"
@@ -6641,9 +6838,9 @@ _global.SENTRY_RELEASE = {
             })
           })
         }));
-      vr.displayName = "LiteMotion";
-      const xr = vr,
-        yr = {
+      wr.displayName = "LiteMotion";
+      const jr = wr,
+        Cr = {
           visible: {
             opacity: 1
           },
@@ -6651,32 +6848,32 @@ _global.SENTRY_RELEASE = {
             opacity: 0
           }
         },
-        Nr = {
+        Tr = {
           ease: "easeIn",
           duration: .4
         },
-        Sr = e => {
+        Ir = e => {
           let {
             children: a
           } = e;
           return (0, g.jsx)(sa.motion.div, Object.assign({
             className: "rockstargames-modules-core-headerf0ee4e641f1ac92151be887c9ebb8392",
-            variants: yr,
+            variants: Cr,
             initial: "hidden",
             whileInView: "visible",
             viewport: {
               margin: "-20%",
               once: !0
             },
-            transition: Nr
+            transition: Tr
           }, {
             children: a
           }))
         },
-        wr = e => a => (0, g.jsx)(Sr, {
+        Mr = e => a => (0, g.jsx)(Ir, {
           children: (0, g.jsx)(e, Object.assign({}, a))
         }),
-        jr = {
+        Er = {
           visible: {
             opacity: 1,
             y: 0
@@ -6686,33 +6883,33 @@ _global.SENTRY_RELEASE = {
             y: 40
           }
         },
-        Cr = {
+        Lr = {
           ease: "easeIn",
           duration: .75
         },
-        Ir = e => {
+        Vr = e => {
           let {
             children: a
           } = e;
           return (0, g.jsx)(sa.motion.div, {
             className: "rockstargames-modules-core-headera479a10c5475b17a0564b60fecf98c8b",
-            variants: jr,
+            variants: Er,
             initial: "hidden",
             whileInView: "visible",
             viewport: {
               margin: "-20%",
               once: !0
             },
-            transition: Cr,
+            transition: Lr,
             children: a
           })
         },
-        Tr = e => a => (0, g.jsx)(Ir, {
+        Pr = e => a => (0, g.jsx)(Vr, {
           children: (0, g.jsx)(e, {
             ...a
           })
         }),
-        Mr = {
+        Dr = {
           cardOpen: {
             ease: [.77, 0, .175, 1],
             duration: .5
@@ -6730,7 +6927,7 @@ _global.SENTRY_RELEASE = {
             duration: .05
           }
         },
-        Er = {
+        Br = {
           plainCard: {
             expanded: {
               initial: {
@@ -6886,38 +7083,39 @@ _global.SENTRY_RELEASE = {
             }
           }
         },
-        Lr = function() {
+        $r = function() {
           let e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "collapsed";
-          return Er[arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "imageMask"][e]
+          return Br[arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "imageMask"][e]
         };
-      var Vr = t(45164);
-      const Dr = JSON.parse('{"assets":[],"layers":[{"ddd":0,"ind":0,"ty":4,"nm":"Shape Layer 1","ks":{"o":{"k":100},"r":{"k":0},"p":{"k":[300,300,0]},"a":{"k":[0,0,0]},"s":{"k":[244,244,100]}},"ao":0,"shapes":[{"d":1,"ty":"el","s":{"k":[100,100]},"p":{"k":[0,0]},"nm":"Ellipse Path 1","mn":"ADBE Vector Shape - Ellipse"},{"ty":"tm","s":{"k":[{"i":{"x":[0.439],"y":[1.016]},"o":{"x":[0.561],"y":[0.015]},"n":["0p439_1p016_0p561_0p015"],"t":5,"s":[100],"e":[0]},{"t":33.0000013441176}],"ix":1},"e":{"k":[{"i":{"x":[0.439],"y":[1.017]},"o":{"x":[0.561],"y":[0.016]},"n":["0p439_1p017_0p561_0p016"],"t":0,"s":[100],"e":[0]},{"t":30.0000012219251}],"ix":2},"o":{"k":0,"ix":3},"m":1,"ix":2,"nm":"Trim Paths 1","mn":"ADBE Vector Filter - Trim"},{"ty":"st","fillEnabled":true,"c":{"k":[1,1,1,1]},"o":{"k":100},"w":{"k":16},"lc":2,"lj":1,"ml":4,"nm":"Stroke 1","mn":"ADBE Vector Graphic - Stroke"}],"ip":0,"op":900.000036657751,"st":0,"bm":0,"sr":1}],"v":"4.5.3","ddd":0,"ip":1.00000004073083,"op":33.0000013441175,"fr":29.9700012207031,"w":600,"h":600}'),
-        Pr = JSON.parse('{"v":"5.7.3","fr":60,"ip":0,"op":64,"w":300,"h":300,"nm":"Dot_Loading","ddd":0,"assets":[],"layers":[{"ddd":0,"ind":1,"ty":4,"nm":"center","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":1,"k":[{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":10,"s":[144,144,0],"to":[0,-3.333,0],"ti":[0,0,0]},{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":22,"s":[144,124,0],"to":[0,0,0],"ti":[0,-3.333,0]},{"t":34,"s":[144,144,0]}],"ix":2},"a":{"a":0,"k":[12.5,6,0],"ix":1},"s":{"a":0,"k":[764.558,764.558,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,-0.828],[0.828,0],[0,0.828],[-0.828,0]],"o":[[0,0.828],[-0.828,0],[0,-0.828],[0.828,0]],"v":[[1.5,0],[0,1.5],[-1.5,0],[0,-1.5]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fond 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[17.667,5.833],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Groupe 1","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":76,"st":-62,"bm":0},{"ddd":0,"ind":2,"ty":4,"nm":"right","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":1,"k":[{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":5,"s":[144,144,0],"to":[0,-3.333,0],"ti":[0,0,0]},{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":17,"s":[144,124,0],"to":[0,0,0],"ti":[0,-3.333,0]},{"t":29,"s":[144,144,0]}],"ix":2},"a":{"a":0,"k":[12.5,6,0],"ix":1},"s":{"a":0,"k":[764.558,764.558,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,-0.828],[0.828,0],[0,0.828],[-0.828,0]],"o":[[0,0.828],[-0.828,0],[0,-0.828],[0.828,0]],"v":[[1.5,0],[0,1.5],[-1.5,0],[0,-1.5]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fond 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[12.333,5.833],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Groupe 2","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":76,"st":-62,"bm":0},{"ddd":0,"ind":3,"ty":4,"nm":"left","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":1,"k":[{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":0,"s":[144,144,0],"to":[0,-3.333,0],"ti":[0,0,0]},{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":12,"s":[144,124,0],"to":[0,0,0],"ti":[0,-3.333,0]},{"t":24,"s":[144,144,0]}],"ix":2},"a":{"a":0,"k":[12.5,6,0],"ix":1},"s":{"a":0,"k":[764.558,764.558,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,-0.828],[0.828,0],[0,0.828],[-0.828,0]],"o":[[0,0.828],[-0.828,0],[0,-0.828],[0.828,0]],"v":[[1.5,0],[0,1.5],[-1.5,0],[0,-1.5]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fond 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[7,5.833],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Groupe 3","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":76,"st":-62,"bm":0}],"markers":[]}'),
-        Br = {
+      var zr = t(45164);
+      const Fr = JSON.parse('{"assets":[],"layers":[{"ddd":0,"ind":0,"ty":4,"nm":"Shape Layer 1","ks":{"o":{"k":100},"r":{"k":0},"p":{"k":[300,300,0]},"a":{"k":[0,0,0]},"s":{"k":[244,244,100]}},"ao":0,"shapes":[{"d":1,"ty":"el","s":{"k":[100,100]},"p":{"k":[0,0]},"nm":"Ellipse Path 1","mn":"ADBE Vector Shape - Ellipse"},{"ty":"tm","s":{"k":[{"i":{"x":[0.439],"y":[1.016]},"o":{"x":[0.561],"y":[0.015]},"n":["0p439_1p016_0p561_0p015"],"t":5,"s":[100],"e":[0]},{"t":33.0000013441176}],"ix":1},"e":{"k":[{"i":{"x":[0.439],"y":[1.017]},"o":{"x":[0.561],"y":[0.016]},"n":["0p439_1p017_0p561_0p016"],"t":0,"s":[100],"e":[0]},{"t":30.0000012219251}],"ix":2},"o":{"k":0,"ix":3},"m":1,"ix":2,"nm":"Trim Paths 1","mn":"ADBE Vector Filter - Trim"},{"ty":"st","fillEnabled":true,"c":{"k":[1,1,1,1]},"o":{"k":100},"w":{"k":16},"lc":2,"lj":1,"ml":4,"nm":"Stroke 1","mn":"ADBE Vector Graphic - Stroke"}],"ip":0,"op":900.000036657751,"st":0,"bm":0,"sr":1}],"v":"4.5.3","ddd":0,"ip":1.00000004073083,"op":33.0000013441175,"fr":29.9700012207031,"w":600,"h":600}'),
+        Or = JSON.parse('{"v":"5.7.3","fr":60,"ip":0,"op":64,"w":300,"h":300,"nm":"Dot_Loading","ddd":0,"assets":[],"layers":[{"ddd":0,"ind":1,"ty":4,"nm":"center","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":1,"k":[{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":10,"s":[144,144,0],"to":[0,-3.333,0],"ti":[0,0,0]},{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":22,"s":[144,124,0],"to":[0,0,0],"ti":[0,-3.333,0]},{"t":34,"s":[144,144,0]}],"ix":2},"a":{"a":0,"k":[12.5,6,0],"ix":1},"s":{"a":0,"k":[764.558,764.558,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,-0.828],[0.828,0],[0,0.828],[-0.828,0]],"o":[[0,0.828],[-0.828,0],[0,-0.828],[0.828,0]],"v":[[1.5,0],[0,1.5],[-1.5,0],[0,-1.5]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fond 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[17.667,5.833],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Groupe 1","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":76,"st":-62,"bm":0},{"ddd":0,"ind":2,"ty":4,"nm":"right","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":1,"k":[{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":5,"s":[144,144,0],"to":[0,-3.333,0],"ti":[0,0,0]},{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":17,"s":[144,124,0],"to":[0,0,0],"ti":[0,-3.333,0]},{"t":29,"s":[144,144,0]}],"ix":2},"a":{"a":0,"k":[12.5,6,0],"ix":1},"s":{"a":0,"k":[764.558,764.558,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,-0.828],[0.828,0],[0,0.828],[-0.828,0]],"o":[[0,0.828],[-0.828,0],[0,-0.828],[0.828,0]],"v":[[1.5,0],[0,1.5],[-1.5,0],[0,-1.5]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fond 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[12.333,5.833],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Groupe 2","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":76,"st":-62,"bm":0},{"ddd":0,"ind":3,"ty":4,"nm":"left","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":1,"k":[{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":0,"s":[144,144,0],"to":[0,-3.333,0],"ti":[0,0,0]},{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":12,"s":[144,124,0],"to":[0,0,0],"ti":[0,-3.333,0]},{"t":24,"s":[144,144,0]}],"ix":2},"a":{"a":0,"k":[12.5,6,0],"ix":1},"s":{"a":0,"k":[764.558,764.558,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,-0.828],[0.828,0],[0,0.828],[-0.828,0]],"o":[[0,0.828],[-0.828,0],[0,-0.828],[0.828,0]],"v":[[1.5,0],[0,1.5],[-1.5,0],[0,-1.5]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fond 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[7,5.833],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Groupe 3","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":76,"st":-62,"bm":0}],"markers":[]}'),
+        Ar = {
           SPINNING: "spinning",
           THREE_DOTS: "threeDots"
         },
-        $r = e => {
+        Rr = e => {
           let a, {
-            type: t = Br.SPINNING
+            type: t = Ar.SPINNING
           } = e;
           switch (t) {
-            case Br.THREE_DOTS:
-              a = Pr;
+            case Ar.THREE_DOTS:
+              a = Or;
               break;
-            case Br.SPINNING:
+            case Ar.SPINNING:
             default:
-              a = Dr
+              a = Fr
           }
-          return (0, g.jsx)(Vr.c, {
-            options: {
-              loop: !0,
-              autoplay: !0,
-              animationData: a,
-              rendererSettings: {
-                preserveAspectRatio: "xMidYMid slice"
-              }
-            },
+          const s = {
+            loop: !0,
+            autoplay: !0,
+            animationData: a,
+            rendererSettings: {
+              preserveAspectRatio: "xMidYMid slice"
+            }
+          };
+          return (0, g.jsx)(zr.c, {
+            options: s,
             height: 50,
             width: 50
           })

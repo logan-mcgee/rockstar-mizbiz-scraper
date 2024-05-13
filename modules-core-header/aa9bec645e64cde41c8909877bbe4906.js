@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       n = (new Error).stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "0e9adfee-3011-42f0-9414-5d37bdc073a3", e._sentryDebugIdIdentifier = "sentry-dbid-0e9adfee-3011-42f0-9414-5d37bdc073a3")
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "5434e91d-438d-4a8f-a99d-96e44325be0d", e._sentryDebugIdIdentifier = "sentry-dbid-5434e91d-438d-4a8f-a99d-96e44325be0d")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -22,17 +22,17 @@ _global.SENTRY_RELEASE = {
         c: () => r
       });
       var a = t(61076);
-      const i = (0, t(71612).S_)(),
+      const i = (0, t(25144).S_)(),
         r = (0, a.UT)(i)
     },
     15080: (e, n, t) => {
       "use strict";
       t.d(n, {
         R: () => p,
-        c: () => w
+        c: () => y
       });
       var a = t(61076),
-        i = t(71612);
+        i = t(25144);
       const r = (0, a.C2)("@rockstargames/modules-core-sc-user"),
         o = r("navOpenReactive", !1),
         s = e => o(e),
@@ -48,8 +48,8 @@ _global.SENTRY_RELEASE = {
         k = r("charactersNeededReactive", null),
         h = e => k(e),
         b = r("userDataReactive", null),
-        y = e => b(e),
-        w = () => {
+        w = e => b(e),
+        y = () => {
           const e = (0, a.gh)(k),
             n = (0, a.gh)(m),
             t = (0, a.gh)(o),
@@ -68,7 +68,7 @@ _global.SENTRY_RELEASE = {
             setHasNotifications: u,
             setNavOpen: s,
             setSelectedCharacterTuple: v,
-            setUserData: y,
+            setUserData: w,
             setJumpScMenuFocus: d
           }
         }
@@ -95,7 +95,7 @@ _global.SENTRY_RELEASE = {
       });
       var a = t(51664),
         i = t(61076),
-        r = t(71612),
+        r = t(25144),
         o = t(30116),
         s = t(15080);
       var c = t(14996),
@@ -127,13 +127,13 @@ _global.SENTRY_RELEASE = {
             }
           }),
           [k, h] = (0, a.useState)(null),
-          [b, y] = (0, a.useState)(!1),
-          [w, x] = (0, a.useState)(!1);
+          [b, w] = (0, a.useState)(!1),
+          [y, x] = (0, a.useState)(!1);
         return (0, a.useEffect)((() => {
           (async () => {
             const a = null === e ? null : !!e;
             if (a && !b) {
-              u(!0), y(!0);
+              u(!0), w(!0);
               const e = await p(),
                 a = e?.data?.user?.id,
                 i = await (async e => {
@@ -218,7 +218,7 @@ _global.SENTRY_RELEASE = {
                 };
               u(!1), t(c), h(!0), (0, s.R)(a)
             }
-            if (!1 === a && !w) {
+            if (!1 === a && !y) {
               try {
                 await (async e => {
                   let {
@@ -252,9 +252,9 @@ _global.SENTRY_RELEASE = {
                 })
               } catch (e) {}
               x(!0)
-            }!1 === a && w && (y(!0), h(!1), u(!1)), null === e && v()
+            }!1 === a && y && (w(!0), h(!1), u(!1)), null === e && v()
           })()
-        }), [e, b, w]), {
+        }), [e, b, y]), {
           data: n,
           loading: c,
           loggedIn: k
@@ -288,9 +288,9 @@ _global.SENTRY_RELEASE = {
         },
         b = () => (0, a.useContext)(k);
       t(15908);
-      var y = t(99928);
+      var w = t(99928);
       t(57013);
-      var w = t(54420);
+      var y = t(54420);
       const x = (0, a.createContext)(void 0),
         S = e => {
           let {
@@ -302,9 +302,9 @@ _global.SENTRY_RELEASE = {
               const [n, t] = (0, a.useState)([]), [i, r] = (0, a.useState)([]), [o, s] = (0, a.useState)(null), {
                 data: c,
                 loggedIn: d
-              } = (0, w.yi)(), {
+              } = (0, y.yi)(), {
                 currentCharId: l
-              } = (0, w.of)(), u = function(e) {
+              } = (0, y.of)(), u = function(e) {
                 let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0,
                   t = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "gtao";
                 return (0, a.useMemo)((() => {
@@ -316,7 +316,7 @@ _global.SENTRY_RELEASE = {
                 e.forEach((e => {
                   if (-1 === n.indexOf(e)) {
                     const n = a ?? {};
-                    (0, y.c)({
+                    (0, w.c)({
                       ...e,
                       ...n
                     }), i.push(e)
@@ -357,7 +357,7 @@ _global.SENTRY_RELEASE = {
                       ...e
                     }), r(n)
                   }
-                  return (0, y.c)({
+                  return (0, w.c)({
                     ...e,
                     ...o
                   })
@@ -396,24 +396,25 @@ _global.SENTRY_RELEASE = {
           })
         }
     },
-    71612: (e, n, t) => {
+    25144: (e, n, t) => {
       "use strict";
       t.d(n, {
-        a7: () => R,
-        s9: () => x.c,
-        kh: () => p,
-        I$: () => k,
-        S_: () => S.c,
-        UN: () => g,
-        U$: () => D,
-        G6: () => N,
-        _g: () => _._,
-        Qz: () => w,
-        sL: () => $,
-        y_: () => h.y_,
-        kJ: () => h.kJ,
-        ym: () => T,
-        bk: () => L,
+        a7: () => $,
+        s9: () => E.c,
+        KS: () => k,
+        kh: () => w,
+        I$: () => y,
+        S_: () => C.c,
+        UN: () => h,
+        U$: () => O,
+        G6: () => I,
+        _g: () => D._,
+        Qz: () => N,
+        sL: () => q,
+        y_: () => x.y_,
+        kJ: () => x.kJ,
+        ym: () => F,
+        bk: () => B,
         S6: () => r,
         au: () => c,
         Ux: () => f
@@ -440,84 +441,108 @@ _global.SENTRY_RELEASE = {
         u = t.n(l),
         m = t(95532);
       const f = function(e) {
-          let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "default";
-          return t => ((e, n, t) => {
-            const a = function() {
-              let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "default";
-              const {
-                data: n
-              } = (0, o.UL)(m.Translations, {
-                variables: {
-                  config: e
-                }
-              });
-              return n ? e => n?.translations.find((n => n.key === e))?.value ?? e : null
-            }(t);
-            return a ? (0, i.jsx)(e, {
-              ...n,
-              t: a
-            }) : null
-          })(e, t, n)
-        },
-        g = e => e.keys().forEach(e),
-        v = [{
+        let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "default";
+        return t => ((e, n, t) => {
+          const a = function() {
+            let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "default";
+            const {
+              data: n
+            } = (0, o.UL)(m.Translations, {
+              variables: {
+                config: e
+              }
+            });
+            return n ? e => n?.translations.find((n => n.key === e))?.value ?? e : null
+          }(t);
+          return a ? (0, i.jsx)(e, {
+            ...n,
+            t: a
+          }) : null
+        })(e, t, n)
+      };
+      class g {
+        constructor(e, n, t) {
+          let a = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : null;
+          this.name = e, this.friendlyName = n, this.id = t, this.alias = a
+        }
+      }
+      const v = Object.freeze({
+          pc: new g("pc", "PC", 8),
+          ps3: new g("ps3", "PlayStation 3", 2),
+          ps4: new g("ps4", "PlayStation 4", 11),
+          ps5: new g("ps5", "PlayStation 5", 20),
+          xbox360: new g("xbox360", "Xbox 360", 1),
+          xboxone: new g("xboxone", "Xbox One", 12),
+          xboxsx: new g("xboxsx", "Xbox Series X|S", 21, "xboxseriesxs"),
+          switch: new g("switch", "Nintendo Switch™", 18)
+        }),
+        p = Object.freeze(Object.values(v));
+
+      function k(e) {
+        if (!e) return;
+        if (e instanceof g) return e;
+        const n = e.toString().toLowerCase();
+        return p.find((e => n === e.name || n === e.id.toString() || n === e.friendlyName.toLowerCase() || n === e.alias?.toLowerCase()))
+      }
+      const h = e => e.keys().forEach(e),
+        b = [{
           key: "dev",
           path: "https://media-dev-rockstargames-com.akamaized.net"
         }, {
           key: "prod",
           path: "https://media-rockstargames-com.akamaized.net"
         }],
-        p = function() {
+        w = function() {
           let e = !(arguments.length > 0 && void 0 !== arguments[0]) || arguments[0];
-          return v.filter((n => n.key === (e ? "prod" : "dev")))[0]?.path ?? null
+          return b.filter((n => n.key === (e ? "prod" : "dev")))[0]?.path ?? null
         },
-        k = () => ["xboxsx", "ps5"];
-      var h = t(55576);
-      const b = (0, o.UT)(!0),
-        y = "data-disallow-body-scroll",
-        w = () => {
-          const e = (0, o.gh)(b);
+        y = () => [v.xboxsx.name, v.ps5.name];
+      var x = t(55576);
+      const S = (0, o.UT)(!0),
+        _ = "data-disallow-body-scroll",
+        N = () => {
+          const e = (0, o.gh)(S);
           return (0, d.useEffect)((() => {
-            e ? document.documentElement.removeAttribute(y) : document.documentElement.setAttribute(y, "")
+            e ? document.documentElement.removeAttribute(_) : document.documentElement.setAttribute(_, "")
           }), [e]), {
             bodyIsScrollable: e,
-            setBodyIsScrollable: b
+            setBodyIsScrollable: S
           }
         };
-      var x = t(28152),
-        S = t(42991),
-        _ = t(76772);
-      const N = e => {
+      var E = t(28152),
+        C = t(42991),
+        D = t(76772);
+      const I = e => {
           const n = u().clone(e);
           return n?.["margin-top"] && (n.marginTop = n["margin-top"]), n?.["margin-bottom"] && (n.marginBottom = n["margin-bottom"]), n?.["margin-left"] && (n.marginLeft = n["margin-left"]), n?.["margin-right"] && (n.marginRight = n["margin-right"]), n?.["object-fit"] && (n.objectFit = n["object-fit"]), delete n?.["margin-top"], delete n?.["margin-bottom"], delete n?.["margin-right"], delete n?.["margin-left"], delete n?.["object-fit"], n
         },
-        E = "rockstar-games-web";
-      let C;
+        T = "rockstar-games-web";
+      let j;
       try {
-        const e = window.localStorage.getItem(E);
-        C = null !== e ? JSON.parse(e) : {}
+        const e = window.localStorage.getItem(T);
+        j = null !== e ? JSON.parse(e) : {}
       } catch (e) {
-        C = {}
+        j = {}
       }
-      const D = (0, o.UT)(C),
-        I = e => {
+      const O = (0, o.UT)(j),
+        U = e => {
           let {
             key: n,
             value: t
           } = e;
           if (null == n) throw Error("You have to specify a key and a value.");
           const a = {
-            ...D() ?? {}
+            ...O() ?? {}
           };
-          return a[n] = t, null === t && delete a[n], window.localStorage.setItem(E, JSON.stringify(a)), D(a), a
+          return a[n] = t, null === t && delete a[n], window.localStorage.setItem(T, JSON.stringify(a)), O(a), a
         },
-        T = () => ({
-          lsSettings: (0, o.gh)(D),
-          settingsReactive: D,
-          mutateLSSettings: I
+        F = () => ({
+          lsSettings: (0, o.gh)(O),
+          settingsReactive: O,
+          mutateLSSettings: U
         });
       t(33820);
-      const U = {
+      const M = {
           xxs: {
             min: 0,
             max: 479
@@ -547,15 +572,15 @@ _global.SENTRY_RELEASE = {
             max: 99999
           }
         },
-        F = () => {
+        L = () => {
           const e = window.innerWidth,
             n = window.innerHeight,
-            t = U;
-          return Object.keys(U).map((n => {
+            t = M;
+          return Object.keys(M).map((n => {
             const {
               min: a,
               max: i
-            } = U[n], r = e >= a && e <= i, o = e >= a;
+            } = M[n], r = e >= a && e <= i, o = e >= a;
             t[n] = {
               activeExact: r,
               activeMin: o,
@@ -563,39 +588,39 @@ _global.SENTRY_RELEASE = {
               max: i
             }
           })), {
-            isMobile: e <= U.sm.min,
-            isTablet: e <= U.md.max,
+            isMobile: e < M.sm.min,
+            isTablet: e < M.md.max,
             breakpoints: t,
             windowWidth: e,
             windowHeight: n
           }
         },
-        j = (0, d.createContext)(F()),
+        P = (0, d.createContext)(L()),
         {
-          Consumer: M
-        } = j,
-        O = (0, o.UT)(F()),
-        R = e => {
+          Consumer: R
+        } = P,
+        z = (0, o.UT)(L()),
+        $ = e => {
           let {
             children: n
           } = e;
-          const t = (0, o.gh)(O);
+          const t = (0, o.gh)(z);
           return (0, d.useEffect)((() => {
             const e = () => {
-              O(F())
+              z(L())
             };
             return window.addEventListener("resize", e), () => {
               window.removeEventListener("resize", e)
             }
-          }), []), (0, i.jsx)(j.Provider, {
+          }), []), (0, i.jsx)(P.Provider, {
             value: t,
             children: n
           })
         },
-        L = () => (0, d.useContext)(j);
+        B = () => (0, d.useContext)(P);
       t(2148);
-      const P = (0, d.createContext)({}),
-        $ = () => (0, d.useContext)(P)
+      const A = (0, d.createContext)({}),
+        q = () => (0, d.useContext)(A)
     },
     30116: e => {
       var n = {

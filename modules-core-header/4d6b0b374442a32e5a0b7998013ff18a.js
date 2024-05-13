@@ -23,11 +23,11 @@ _global.SENTRY_RELEASE = {
         throw new Error("setTimeout has not been defined")
       }
 
-      function a() {
+      function c() {
         throw new Error("clearTimeout has not been defined")
       }
 
-      function c(e) {
+      function a(e) {
         if (t === setTimeout) return setTimeout(e, 0);
         if ((t === o || !t) && setTimeout) return t = setTimeout, setTimeout(e, 0);
         try {
@@ -46,9 +46,9 @@ _global.SENTRY_RELEASE = {
           t = o
         }
         try {
-          n = "function" == typeof clearTimeout ? clearTimeout : a
+          n = "function" == typeof clearTimeout ? clearTimeout : c
         } catch (e) {
-          n = a
+          n = c
         }
       }();
       var i, u = [],
@@ -61,7 +61,7 @@ _global.SENTRY_RELEASE = {
 
       function p() {
         if (!l) {
-          var e = c(s);
+          var e = a(s);
           l = !0;
           for (var t = u.length; t;) {
             for (i = u, u = []; ++f < t;) i && i[f].run();
@@ -70,7 +70,7 @@ _global.SENTRY_RELEASE = {
           i = null, l = !1,
             function(e) {
               if (n === clearTimeout) return clearTimeout(e);
-              if ((n === a || !n) && clearTimeout) return n = clearTimeout, clearTimeout(e);
+              if ((n === c || !n) && clearTimeout) return n = clearTimeout, clearTimeout(e);
               try {
                 return n(e)
               } catch (t) {
@@ -93,7 +93,7 @@ _global.SENTRY_RELEASE = {
         var t = new Array(arguments.length - 1);
         if (arguments.length > 1)
           for (var n = 1; n < arguments.length; n++) t[n - 1] = arguments[n];
-        u.push(new d(e, t)), 1 !== u.length || l || c(p)
+        u.push(new d(e, t)), 1 !== u.length || l || a(p)
       }, d.prototype.run = function() {
         this.fun.apply(null, this.array)
       }, r.title = "browser", r.browser = !0, r.env = {}, r.argv = [], r.version = "", r.versions = {}, r.on = y, r.addListener = y, r.once = y, r.off = y, r.removeListener = y, r.removeAllListeners = y, r.emit = y, r.prependListener = y, r.prependOnceListener = y, r.listeners = function(e) {
@@ -111,12 +111,12 @@ _global.SENTRY_RELEASE = {
     87672: (e, t, n) => {
       "use strict";
       n.d(t, {
-        C3: () => a,
+        C3: () => c,
         KE: () => u,
         Mt: () => l,
         ct: () => o,
         kH: () => i,
-        sX: () => c
+        sX: () => a
       });
       var r = function(e, t) {
         return r = Object.setPrototypeOf || {
@@ -137,15 +137,15 @@ _global.SENTRY_RELEASE = {
         }
         r(e, t), e.prototype = null === t ? Object.create(t) : (n.prototype = t.prototype, new n)
       }
-      var a = function() {
-        return a = Object.assign || function(e) {
+      var c = function() {
+        return c = Object.assign || function(e) {
           for (var t, n = 1, r = arguments.length; n < r; n++)
             for (var o in t = arguments[n]) Object.prototype.hasOwnProperty.call(t, o) && (e[o] = t[o]);
           return e
-        }, a.apply(this, arguments)
+        }, c.apply(this, arguments)
       };
 
-      function c(e, t) {
+      function a(e, t) {
         var n = {};
         for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && t.indexOf(r) < 0 && (n[r] = e[r]);
         if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -156,12 +156,12 @@ _global.SENTRY_RELEASE = {
       }
 
       function i(e, t, n, r) {
-        return new(n || (n = Promise))((function(o, a) {
-          function c(e) {
+        return new(n || (n = Promise))((function(o, c) {
+          function a(e) {
             try {
               u(r.next(e))
             } catch (e) {
-              a(e)
+              c(e)
             }
           }
 
@@ -169,7 +169,7 @@ _global.SENTRY_RELEASE = {
             try {
               u(r.throw(e))
             } catch (e) {
-              a(e)
+              c(e)
             }
           }
 
@@ -177,14 +177,14 @@ _global.SENTRY_RELEASE = {
             var t;
             e.done ? o(e.value) : (t = e.value, t instanceof n ? t : new n((function(e) {
               e(t)
-            }))).then(c, i)
+            }))).then(a, i)
           }
           u((r = r.apply(e, t || [])).next())
         }))
       }
 
       function u(e, t) {
-        var n, r, o, a, c = {
+        var n, r, o, c, a = {
           label: 0,
           sent: function() {
             if (1 & o[0]) throw o[1];
@@ -193,19 +193,19 @@ _global.SENTRY_RELEASE = {
           trys: [],
           ops: []
         };
-        return a = {
+        return c = {
           next: i(0),
           throw: i(1),
           return: i(2)
-        }, "function" == typeof Symbol && (a[Symbol.iterator] = function() {
+        }, "function" == typeof Symbol && (c[Symbol.iterator] = function() {
           return this
-        }), a;
+        }), c;
 
         function i(i) {
           return function(u) {
             return function(i) {
               if (n) throw new TypeError("Generator is already executing.");
-              for (; a && (a = 0, i[0] && (c = 0)), c;) try {
+              for (; c && (c = 0, i[0] && (a = 0)), a;) try {
                 if (n = 1, r && (o = 2 & i[0] ? r.return : i[0] ? r.throw || ((o = r.return) && o.call(r), 0) : r.next) && !(o = o.call(r, i[1])).done) return o;
                 switch (r = 0, o && (i = [2 & i[0], o.value]), i[0]) {
                   case 0:
@@ -213,37 +213,37 @@ _global.SENTRY_RELEASE = {
                     o = i;
                     break;
                   case 4:
-                    return c.label++, {
+                    return a.label++, {
                       value: i[1],
                       done: !1
                     };
                   case 5:
-                    c.label++, r = i[1], i = [0];
+                    a.label++, r = i[1], i = [0];
                     continue;
                   case 7:
-                    i = c.ops.pop(), c.trys.pop();
+                    i = a.ops.pop(), a.trys.pop();
                     continue;
                   default:
-                    if (!((o = (o = c.trys).length > 0 && o[o.length - 1]) || 6 !== i[0] && 2 !== i[0])) {
-                      c = 0;
+                    if (!((o = (o = a.trys).length > 0 && o[o.length - 1]) || 6 !== i[0] && 2 !== i[0])) {
+                      a = 0;
                       continue
                     }
                     if (3 === i[0] && (!o || i[1] > o[0] && i[1] < o[3])) {
-                      c.label = i[1];
+                      a.label = i[1];
                       break
                     }
-                    if (6 === i[0] && c.label < o[1]) {
-                      c.label = o[1], o = i;
+                    if (6 === i[0] && a.label < o[1]) {
+                      a.label = o[1], o = i;
                       break
                     }
-                    if (o && c.label < o[2]) {
-                      c.label = o[2], c.ops.push(i);
+                    if (o && a.label < o[2]) {
+                      a.label = o[2], a.ops.push(i);
                       break
                     }
-                    o[2] && c.ops.pop(), c.trys.pop();
+                    o[2] && a.ops.pop(), a.trys.pop();
                     continue
                 }
-                i = t.call(e, c)
+                i = t.call(e, a)
               } catch (e) {
                 i = [6, e], r = 0
               } finally {
@@ -261,7 +261,7 @@ _global.SENTRY_RELEASE = {
 
       function l(e, t, n) {
         if (n || 2 === arguments.length)
-          for (var r, o = 0, a = t.length; o < a; o++) !r && o in t || (r || (r = Array.prototype.slice.call(t, 0, o)), r[o] = t[o]);
+          for (var r, o = 0, c = t.length; o < c; o++) !r && o in t || (r || (r = Array.prototype.slice.call(t, 0, o)), r[o] = t[o]);
         return e.concat(r || Array.prototype.slice.call(t))
       }
       Object.create, Object.create, "function" == typeof SuppressedError && SuppressedError
