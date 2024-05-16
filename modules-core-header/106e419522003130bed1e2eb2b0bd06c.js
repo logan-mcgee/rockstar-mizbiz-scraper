@@ -1,8 +1,8 @@
 ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      n = (new Error).stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "8211c38f-8178-4362-a818-6fec88024083", e._sentryDebugIdIdentifier = "sentry-dbid-8211c38f-8178-4362-a818-6fec88024083")
+      a = (new Error).stack;
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "080a66e5-b3c9-4fb1-85c0-d235cff37640", e._sentryDebugIdIdentifier = "sentry-dbid-080a66e5-b3c9-4fb1-85c0-d235cff37640")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -15,27 +15,36 @@ var _global = "undefined" != typeof window ? window : "undefined" != typeof glob
 _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
-  [37], {
-    87037: (e, n, d) => {
-      d.r(n), d.d(n, {
-        default: () => s
+  [276], {
+    85276: (e, a, o) => {
+      o.r(a), o.d(a, {
+        default: () => f
       });
-      var a = d(61076),
-        o = d(25144),
-        f = d(12652),
-        l = d(95240);
-      const {
-        graphEnv: t,
-        pingBearer: r
-      } = (0, o.S_)(), s = () => {
-        const e = (0, a.EB)(f.c, {
-          env: t,
-          token: (0, a.UT)(null),
-          tokenPing: (0, a.UT)(r),
-          tokenPingExpires: (0, a.UT)(null),
-          typePolicies: {}
+      var d = o(51664),
+        n = o(98584),
+        t = o(95240);
+      const f = e => {
+        let {
+          basename: a,
+          children: o,
+          history: f
+        } = e;
+        const [l, s] = (0, d.useState)({
+          action: f.action,
+          location: f.location
         });
-        return (0, l.jsx)(e, {})
+        return (0, d.useLayoutEffect)((() => f.listen(((e, a) => {
+          s({
+            location: e,
+            action: a
+          })
+        }))), [f]), (0, t.jsx)(n.Router, {
+          basename: a,
+          location: l.location,
+          navigationType: l.action,
+          navigator: f,
+          children: o
+        })
       }
     }
   }

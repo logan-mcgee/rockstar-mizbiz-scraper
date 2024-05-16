@@ -2,7 +2,7 @@
   try {
     var a = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       e = (new Error).stack;
-    e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "c959e19d-ddad-4f4b-b30d-2c409402722d", a._sentryDebugIdIdentifier = "sentry-dbid-c959e19d-ddad-4f4b-b30d-2c409402722d")
+    e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "fd7d066c-45e0-45b6-95b6-39b426a4b192", a._sentryDebugIdIdentifier = "sentry-dbid-fd7d066c-45e0-45b6-95b6-39b426a4b192")
   } catch (a) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -2997,7 +2997,7 @@ _global.SENTRY_RELEASE = {
               intlMessage: h.nav_gtav_jobs,
               location: {
                 domain: m.U.socialClub,
-                path: "/jobs/?dateRange=any&filter=community&sort=date&title=gtav"
+                path: "/jobs/?dateRangeCreated=any&filter=community&sort=date&title=gtav"
               },
               text: h.nav_gtav_jobs.defaultMessage,
               type: "nav-internal"
@@ -3087,7 +3087,7 @@ _global.SENTRY_RELEASE = {
                 isLegacy: !0,
                 location: {
                   domain: m.U.socialClub,
-                  path: "/jobs"
+                  path: "/jobs/?dateRangeCreated=last7&sort=likes&title=gtav"
                 },
                 text: h.nav_gtav_jobs_browse_all.defaultMessage,
                 type: "nav-internal"
@@ -3096,7 +3096,7 @@ _global.SENTRY_RELEASE = {
                 intlMessage: h.nav_gtav_community_series,
                 location: {
                   domain: m.U.socialClub,
-                  path: "/jobs/?dateRange=any&filter=community&sort=date&title=gtav"
+                  path: "/jobs/?dateRangeCreated=any&filter=community&sort=date&title=gtav"
                 },
                 text: h.nav_gtav_community_series.defaultMessage,
                 type: "nav-internal"
@@ -3106,7 +3106,7 @@ _global.SENTRY_RELEASE = {
                 isLegacy: !0,
                 location: {
                   domain: m.U.socialClub,
-                  path: "/jobs/?dateRange=any&filter=me&sort=likes&title=gtav"
+                  path: "/jobs/?dateRangeCreated=any&filter=me&sort=likes&title=gtav"
                 },
                 text: h.nav_gtav_my_jobs.defaultMessage,
                 type: "nav-internal"
@@ -3331,7 +3331,7 @@ _global.SENTRY_RELEASE = {
               dataTestId: "gtaoJobsLink",
               location: {
                 domain: m.U.socialClub,
-                path: "/jobs/?dateRange=any&filter=community&sort=date&title=gtav"
+                path: "/jobs/?dateRangeCreated=any&filter=community&sort=date&title=gtav"
               },
               text: h.nav_gtao_jobs.defaultMessage,
               type: "nav-internal"
@@ -3424,14 +3424,14 @@ _global.SENTRY_RELEASE = {
                 dataTestId: "gtaoViewAllJobsButton",
                 location: {
                   domain: m.U.socialClub,
-                  path: "/jobs"
+                  path: "/jobs/?dateRangeCreated=last7&sort=likes&title=gtav"
                 }
               }, {
                 intlMessage: h.nav_gtao_community_series,
                 text: h.nav_gtao_community_series.defaultMessage,
                 location: {
                   domain: m.U.socialClub,
-                  path: "/jobs/?dateRange=any&filter=community&sort=date&title=gtav"
+                  path: "/jobs/?dateRangeCreated=any&filter=community&sort=date&title=gtav"
                 },
                 type: "nav-internal",
                 dataTestId: "gtaoCommunitySeriesLink"
@@ -3444,7 +3444,7 @@ _global.SENTRY_RELEASE = {
                 requiresAuth: !0,
                 location: {
                   domain: m.U.socialClub,
-                  path: "/jobs/?dateRange=any&filter=me&sort=likes&title=gtav"
+                  path: "/jobs/?dateRangeCreated=any&filter=me&sort=likes&title=gtav"
                 }
               }, {
                 intlMessage: h.nav_gtao_jobs_playlists,
@@ -3599,7 +3599,7 @@ _global.SENTRY_RELEASE = {
               dataTestId: "gtaoJobsLink",
               location: {
                 domain: m.U.socialClub,
-                path: "/jobs/?dateRange=any&filter=community&sort=date&title=gtav"
+                path: "/jobs/?dateRangeCreated=any&filter=community&sort=date&title=gtav"
               },
               text: h.nav_gtao_jobs.defaultMessage,
               type: "nav-internal"
@@ -3692,14 +3692,14 @@ _global.SENTRY_RELEASE = {
                 dataTestId: "gtaoViewAllJobsButton",
                 location: {
                   domain: m.U.socialClub,
-                  path: "/jobs"
+                  path: "/jobs/?dateRangeCreated=last7&sort=likes&title=gtav"
                 }
               }, {
                 intlMessage: h.nav_gtao_community_series,
                 text: h.nav_gtao_community_series.defaultMessage,
                 location: {
                   domain: m.U.socialClub,
-                  path: "/jobs/?dateRange=any&filter=community&sort=date&title=gtav"
+                  path: "/jobs/?dateRangeCreated=any&filter=community&sort=date&title=gtav"
                 },
                 type: "nav-internal",
                 dataTestId: "gtaoCommunitySeriesLink"
@@ -3711,7 +3711,7 @@ _global.SENTRY_RELEASE = {
                 dataTestId: "gtaoMyJobsButton",
                 location: {
                   domain: m.U.socialClub,
-                  path: " /jobs/?filter=me&sort=likes&title=gtav"
+                  path: "/jobs/?dateRangeCreated=any&filter=me&sort=likes&title=gtav"
                 }
               }, {
                 intlMessage: h.nav_gtao_jobs_playlists,

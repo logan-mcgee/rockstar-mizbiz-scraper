@@ -1,8 +1,8 @@
 ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      o = (new Error).stack;
-    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "78d4041f-8a35-4a0f-b453-99b3bb813929", e._sentryDebugIdIdentifier = "sentry-dbid-78d4041f-8a35-4a0f-b453-99b3bb813929")
+      a = (new Error).stack;
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "78d4041f-8a35-4a0f-b453-99b3bb813929", e._sentryDebugIdIdentifier = "sentry-dbid-78d4041f-8a35-4a0f-b453-99b3bb813929")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -16,8 +16,8 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [895, 276], {
-    99576: (e, o, a) => {
-      var t = a(51664),
+    99576: (e, a, o) => {
+      var t = o(51664),
         n = Symbol.for("react.element"),
         r = Symbol.for("react.fragment"),
         d = Object.prototype.hasOwnProperty,
@@ -29,13 +29,13 @@ _global.SENTRY_RELEASE = {
           __source: !0
         };
 
-      function s(e, o, a) {
+      function s(e, a, o) {
         var t, r = {},
           s = null,
           i = null;
-        for (t in void 0 !== a && (s = "" + a), void 0 !== o.key && (s = "" + o.key), void 0 !== o.ref && (i = o.ref), o) d.call(o, t) && !l.hasOwnProperty(t) && (r[t] = o[t]);
+        for (t in void 0 !== o && (s = "" + o), void 0 !== a.key && (s = "" + a.key), void 0 !== a.ref && (i = a.ref), a) d.call(a, t) && !l.hasOwnProperty(t) && (r[t] = a[t]);
         if (e && e.defaultProps)
-          for (t in o = e.defaultProps) void 0 === r[t] && (r[t] = o[t]);
+          for (t in a = e.defaultProps) void 0 === r[t] && (r[t] = a[t]);
         return {
           $$typeof: n,
           type: e,
@@ -45,39 +45,39 @@ _global.SENTRY_RELEASE = {
           _owner: f.current
         }
       }
-      o.Fragment = r, o.jsx = s, o.jsxs = s
+      a.Fragment = r, a.jsx = s, a.jsxs = s
     },
-    95240: (e, o, a) => {
-      e.exports = a(99576)
+    95240: (e, a, o) => {
+      e.exports = o(99576)
     },
-    85276: (e, o, a) => {
-      a.r(o), a.d(o, {
+    85276: (e, a, o) => {
+      o.r(a), o.d(a, {
         default: () => d
       });
-      var t = a(51664),
-        n = a(98584),
-        r = a(95240);
+      var t = o(51664),
+        n = o(98584),
+        r = o(95240);
       const d = e => {
         let {
-          basename: o,
-          children: a,
+          basename: a,
+          children: o,
           history: d
         } = e;
         const [f, l] = (0, t.useState)({
           action: d.action,
           location: d.location
         });
-        return (0, t.useLayoutEffect)((() => d.listen(((e, o) => {
+        return (0, t.useLayoutEffect)((() => d.listen(((e, a) => {
           l({
             location: e,
-            action: o
+            action: a
           })
         }))), [d]), (0, r.jsx)(n.Router, {
-          basename: o,
+          basename: a,
           location: f.location,
           navigationType: f.action,
           navigator: d,
-          children: a
+          children: o
         })
       }
     }
