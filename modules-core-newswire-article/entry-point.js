@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "5af7c8a9-1471-47de-9ca1-5d5aef3ff551", e._sentryDebugIdIdentifier = "sentry-dbid-5af7c8a9-1471-47de-9ca1-5d5aef3ff551")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "45f8c389-09a0-44c4-be05-85caa1f8ec38", e._sentryDebugIdIdentifier = "sentry-dbid-45f8c389-09a0-44c4-be05-85caa1f8ec38")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -96,7 +96,7 @@ _global.SENTRY_RELEASE = {
             35468: (e, t, r) => {
               "use strict";
               var a = {
-                  "./NewswireArticle": () => Promise.all([r.e(608), r.e(664), r.e(36), r.e(792), r.e(52), r.e(64), r.e(536), r.e(968), r.e(644), r.e(120), r.e(884), r.e(628), r.e(24), r.e(16), r.e(680)]).then((() => () => r(90680))),
+                  "./NewswireArticle": () => Promise.all([r.e(608), r.e(664), r.e(36), r.e(792), r.e(52), r.e(64), r.e(536), r.e(968), r.e(644), r.e(120), r.e(884), r.e(628), r.e(404), r.e(16), r.e(680)]).then((() => () => r(90680))),
                   "./NewswireTitle": () => Promise.all([r.e(664), r.e(36), r.e(792), r.e(312)]).then((() => () => r(91312))),
                   "./components": () => Promise.all([r.e(608), r.e(664), r.e(36), r.e(792), r.e(52), r.e(64), r.e(536), r.e(968), r.e(644), r.e(120), r.e(884)]).then((() => () => r(22052))),
                   "./index": () => Promise.all([r.e(608), r.e(664), r.e(36), r.e(792), r.e(52), r.e(64), r.e(536), r.e(968), r.e(644), r.e(120), r.e(884), r.e(628), r.e(68)]).then((() => () => r(26068))),
@@ -172,59 +172,59 @@ _global.SENTRY_RELEASE = {
           })
         }, p.f = {}, p.e = e => Promise.all(Object.keys(p.f).reduce(((t, r) => (p.f[r](e, t), t)), [])), p.u = e => "js/" + {
           16: "36ff3763713ec97535dd84a3d09c7b29",
-          22: "5f97da0c1f0c2b418eb03ae41bde7e63",
-          24: "3ac257557abb769901cc0fd338da982d",
+          22: "3c2cb9d5452093ddbb67d23c18a461e5",
           36: "23be2566e151ce81aada35fe402ebe61",
-          44: "f8fa50ac3cdc99ea7144ebc241f3890a",
+          44: "40c7f0d665ce7f9c7ef3dfaed4cfef13",
           52: "94c9b86c364b9098d5d59f16d88ba1e5",
           64: "c7ef6106b6febc6e9cc69af067958f18",
-          68: "e9a97a9f375a143a8f0c7ea5472b1a2b",
-          88: "b158fceddb221c855fac3c2e3a06f468",
-          100: "6135eeeb667f3bfcfb4392d810e4d01b",
+          68: "aaaaa36cba94c6a8e6861e9180d02fa5",
+          88: "500d9c891d78395a31a5e4391a72c0ef",
+          100: "3b03f876aa977d29fcc87acbfbbd7839",
           120: "8960bc562114130b9c86ccfc1d0bac84",
-          152: "9d781ce39371a8971dedf137c3e950c0",
-          179: "ad2353f9bf8dabb91400b3c09e1e5082",
-          184: "3d3ba1d25a2b354ed4de81aacd25ca47",
-          196: "e934d8010cb74d09d889944f1f223552",
-          216: "ecd71a490a69c0ec161a76ca7ee640b6",
+          152: "0e90fa400d2e0a6c7ae023e6bce7da90",
+          179: "ef751bacb219b9676c6986a5783d9a8a",
+          184: "899c42e5ad03b4558c5f5df4226e1827",
+          196: "3ccd4422e36864b86ecb71462d7e6adb",
+          216: "3e56b7a26d07d66e36ff44c0e5af9a09",
           232: "7ee280502293deb66685708d33c16cde",
-          240: "ab020beebac4a2f008a7ff294f3afd3d",
-          288: "c075fd4b02b4eeb8e3265f379e7d5cbe",
-          312: "8a398c3aed35d3b63b4df0e64ef0c3d5",
-          404: "c88bf483abfe4c3473d29fc648a12be3",
+          240: "66a46b4f238ab597e83137e3a32c394f",
+          288: "f560949e205184262f06b69ea814104c",
+          312: "e53a70c87724cacf5a335f26bbff5398",
+          404: "00b5ca21ae6868deff0dc7752e855775",
           536: "f041fe032a5e85cb1ec973c16c525b76",
-          560: "7bac00650b4bef202699f6143698b50e",
-          576: "eded627c5c6f64ab7bcf2bbc419ea3d6",
-          600: "108fa85c2302c8511b29a5097cacee33",
-          608: "c2e6d66dcd1648d7de18ab31c4469373",
+          560: "66eb88d0ade391eea4791268b98aaf45",
+          576: "e0fc3f9a774b8a9f03a8e7d37746c103",
+          600: "d8d4929ced718d445f0ae257fc39d65f",
+          608: "2979934c75acdaa68ee70f1a8d4f9dbe",
           628: "73e8956cd55af8f79ed7e7679da8b1f9",
           644: "2dddfb9c099e5e86fda9b5ca75a5ad63",
           656: "aa17d16347c149ca017819180bca9f59",
-          660: "7cf7d74b02585ebba81d73aa4ec3b696",
+          660: "978557cde12037f3b059e18c7e4258cc",
           664: "4a6c87897c87f6d0707052f2e5a9b65e",
-          680: "e75ef77f72e21bdd35f5886d13a5e2f3",
-          716: "0f4343e7353a8800851c01b5a2180b0d",
-          771: "3ae457af8bd4fcc66912f58c450e8536",
-          784: "f83141e7e39b23aab8e6102e5552dcf0",
+          680: "37ce33fdfa87274628d1a2c93adcf84a",
+          716: "96e49c7a53396c13acecdc250d957f54",
+          771: "56776d50dc63af496353603628107d17",
+          776: "31874feacdcacb1d4a732200d8879455",
+          784: "817ce04786e02d253080e08e5c11e1ea",
           792: "c187ecd1a3c56e63a835f4a5f0d08ea9",
-          832: "e3005e58b4093aed5e0edbc28ef658a8",
-          856: "25a4e7926345ba9f57ad73a0da228274",
+          832: "482a7ac55e82e4c90700acfbe5fea899",
+          856: "dd79119ef5a5e1130cbd95af2678e066",
           883: "69030ab72ac449554747136d5c3bbf2d",
-          884: "11717b439a2070988780a9def670091c",
-          960: "81e51968bd585f2d31238ca7483d24bf",
+          884: "b8a7f8c62ce963372694ff5f02d66c86",
+          960: "49a4db1a1e8630ab3e6bace30b7b08f0",
           968: "8d8e67c2d38eb663d135c05dec7bfbcd",
-          980: "c11116b571feb3155aa7fb271054e3a3"
+          980: "96d313488cffb570b6908efbdbcb7dbf"
         } [e] + ".js", p.miniCssF = e => "css/" + {
           16: "39ff1dafce4f00ed5e4e8d89a4e075ae",
-          44: "54d86b1912ea78b7235340cf2a4185cd",
+          44: "416293c66adbc4ee9a8630643e624d15",
           152: "2d1c0b9b67883648652d608f8448f059",
-          232: "2b9bc0d46ef65f8055c2d531b8175e73",
+          232: "0c21766f8df54569c7f33acd179a5d9c",
           312: "38cfc95a9203c101bd489ff5c88bc10d",
-          576: "2b9bc0d46ef65f8055c2d531b8175e73",
+          576: "0c21766f8df54569c7f33acd179a5d9c",
           656: "7804a8964f391fe5e1b3d2ce77453b1e",
           771: "2d1c0b9b67883648652d608f8448f059",
           883: "8b37b03006bedc02b349b4e790ec7aff",
-          884: "8fc15dbf7c6005ae707df0089996986b"
+          884: "9db18043a5650d1ca8f52d3df6bd45d4"
         } [e] + ".css", p.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
@@ -263,12 +263,12 @@ _global.SENTRY_RELEASE = {
             value: !0
           })
         }, p.nmd = e => (e.paths = [], e.children || (e.children = []), e), i = {
-          24: [73784],
           36: [1740],
           44: [1532, 28540],
           52: [33052],
           64: [45652],
           120: [55120],
+          404: [73784],
           536: [42836, 3061],
           644: [84644],
           660: [7256, 19572, 32104, 41736, 65988, 84344, 89468],
@@ -368,7 +368,7 @@ _global.SENTRY_RELEASE = {
                   }
                 },
                 f = [];
-              return "default" === r && (c("@rockstargames/components", "1.14.0", (() => Promise.all([p.e(608), p.e(560), p.e(784), p.e(664), p.e(36), p.e(792), p.e(52), p.e(64), p.e(536), p.e(968), p.e(883), p.e(24), p.e(44), p.e(240)]).then((() => () => p(16484))))), c("@rockstargames/modules-core-carousel", "1.2.4", (() => Promise.all([p.e(560), p.e(664), p.e(36), p.e(656), p.e(600)]).then((() => () => p(76980))))), c("@rockstargames/modules-core-engagement", "0.0.2", (() => Promise.all([p.e(608), p.e(560), p.e(960), p.e(664), p.e(36), p.e(792), p.e(52), p.e(536), p.e(120), p.e(232), p.e(196)]).then((() => () => p(11e3))))), c("@rockstargames/modules-core-group-of-items", "1.2.0", (() => Promise.all([p.e(664), p.e(36), p.e(644), p.e(152)]).then((() => () => p(86152))))), c("@rockstargames/modules-sc-ugc-spotlight", "1.1.3", (() => p.e(404).then((() => () => p(11784))))), c("dompurify", "2.4.7", (() => p.e(179).then((() => () => p(8560))))), c("lodash", "4.17.21", (() => p.e(22).then((() => () => p(79784))))), c("react-dom", "18.2.0", (() => Promise.all([p.e(716), p.e(664)]).then((() => () => p(63716))))), c("react-jsx-parser", "1.29.0", (() => Promise.all([p.e(856), p.e(664)]).then((() => () => p(36856))))), c("react-router-dom", "6.17.0", (() => Promise.all([p.e(88), p.e(832), p.e(664)]).then((() => () => p(84832))))), c("react-router-dom", "6.17.0", (() => Promise.all([p.e(88), p.e(288), p.e(664)]).then((() => () => p(40288))))), c("react", "18.2.0", (() => p.e(100).then((() => () => p(99480))))), c("text-balancer", "1.0.5", (() => p.e(184).then((() => () => p(86184))))), s(88428), s(9344), s(33864), s(81128), s(14472), s(50800), s(5576)), f.length ? e[r] = Promise.all(f).then((() => e[r] = 1)) : e[r] = 1
+              return "default" === r && (c("@rockstargames/components", "1.14.0", (() => Promise.all([p.e(608), p.e(560), p.e(776), p.e(664), p.e(36), p.e(792), p.e(52), p.e(64), p.e(536), p.e(968), p.e(883), p.e(404), p.e(44), p.e(240)]).then((() => () => p(16484))))), c("@rockstargames/modules-core-carousel", "1.2.4", (() => Promise.all([p.e(560), p.e(664), p.e(36), p.e(656), p.e(600)]).then((() => () => p(76980))))), c("@rockstargames/modules-core-engagement", "0.0.2", (() => Promise.all([p.e(608), p.e(560), p.e(960), p.e(664), p.e(36), p.e(792), p.e(52), p.e(536), p.e(120), p.e(232), p.e(196)]).then((() => () => p(11e3))))), c("@rockstargames/modules-core-group-of-items", "1.2.0", (() => Promise.all([p.e(664), p.e(36), p.e(644), p.e(152)]).then((() => () => p(86152))))), c("@rockstargames/modules-sc-ugc-spotlight", "1.1.3", (() => p.e(784).then((() => () => p(11784))))), c("dompurify", "2.4.7", (() => p.e(179).then((() => () => p(8560))))), c("lodash", "4.17.21", (() => p.e(22).then((() => () => p(79784))))), c("react-dom", "18.2.0", (() => Promise.all([p.e(716), p.e(664)]).then((() => () => p(63716))))), c("react-jsx-parser", "1.29.0", (() => Promise.all([p.e(856), p.e(664)]).then((() => () => p(36856))))), c("react-router-dom", "6.17.0", (() => Promise.all([p.e(88), p.e(832), p.e(664)]).then((() => () => p(84832))))), c("react-router-dom", "6.17.0", (() => Promise.all([p.e(88), p.e(288), p.e(664)]).then((() => () => p(40288))))), c("react", "18.2.0", (() => p.e(100).then((() => () => p(99480))))), c("text-balancer", "1.0.5", (() => p.e(184).then((() => () => p(86184))))), s(88428), s(9344), s(33864), s(81128), s(14472), s(50800), s(5576)), f.length ? e[r] = Promise.all(f).then((() => e[r] = 1)) : e[r] = 1
             }
           }
         })(), (() => {
@@ -452,7 +452,7 @@ _global.SENTRY_RELEASE = {
             o = {},
             n = {
               51664: () => a("default", "react", [1, 18, 2, 0], (() => p.e(100).then((() => () => p(99480))))),
-              9860: () => a("default", "@rockstargames/components", [1, "workspace:*"], (() => Promise.all([p.e(608), p.e(560), p.e(784), p.e(792), p.e(52), p.e(64), p.e(536), p.e(968), p.e(883), p.e(24), p.e(44)]).then((() => () => p(16484))))),
+              9860: () => a("default", "@rockstargames/components", [1, "workspace:*"], (() => Promise.all([p.e(608), p.e(560), p.e(776), p.e(792), p.e(52), p.e(64), p.e(536), p.e(968), p.e(883), p.e(404), p.e(44)]).then((() => () => p(16484))))),
               89416: () => a("default", "dompurify", [1, 2, 4, 1], (() => p.e(179).then((() => () => p(8560))))),
               57013: () => a("default", "react-router-dom", [1, 6, 11, 2], (() => Promise.all([p.e(88), p.e(832)]).then((() => () => p(84832))))),
               73660: () => a("default", "lodash", [1, 4, 17, 21], (() => p.e(22).then((() => () => p(79784))))),
@@ -460,7 +460,7 @@ _global.SENTRY_RELEASE = {
               23397: () => a("default", "@rockstargames/modules-core-engagement", [1, "workspace:*"], (() => Promise.all([p.e(560), p.e(960), p.e(576)]).then((() => () => p(11e3))))),
               45364: () => a("default", "@rockstargames/modules-core-group-of-items", [1, "workspace:*"], (() => p.e(771).then((() => () => p(86152))))),
               46040: () => a("default", "@rockstargames/modules-core-carousel", [1, "workspace:*"], (() => Promise.all([p.e(560), p.e(656), p.e(980)]).then((() => () => p(76980))))),
-              53964: () => a("default", "@rockstargames/modules-sc-ugc-spotlight", [1, "workspace:*"], (() => p.e(404).then((() => () => p(11784))))),
+              53964: () => a("default", "@rockstargames/modules-sc-ugc-spotlight", [1, "workspace:*"], (() => p.e(784).then((() => () => p(11784))))),
               46280: () => a("default", "react-jsx-parser", [1, 1, 29, 0], (() => p.e(856).then((() => () => p(36856))))),
               77364: () => a("default", "react-dom", [1, 18, 2, 0], (() => p.e(716).then((() => () => p(63716))))),
               69844: () => a("default", "react-router-dom", [1, 6, 11, 2], (() => Promise.all([p.e(88), p.e(288)]).then((() => () => p(40288)))))
@@ -560,7 +560,7 @@ _global.SENTRY_RELEASE = {
             var a = p.o(e, t) ? e[t] : void 0;
             if (0 !== a)
               if (a) r.push(a[2]);
-              else if (/^(6((|4|6)4|28|56)|(1|3|53)6|(23|5|79)2|120|24|883|968)$/.test(t)) e[t] = 0;
+              else if (/^(6((|4|6)4|28|56)|(1|3|53)6|(23|5|79)2|120|404|883|968)$/.test(t)) e[t] = 0;
             else {
               var o = new Promise(((r, o) => a = e[t] = [r, o]));
               r.push(a[2] = o);
@@ -588,7 +588,7 @@ _global.SENTRY_RELEASE = {
             },
             r = self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || [];
           r.forEach(t.bind(null, 0)), r.push = t.bind(null, r.push.bind(r))
-        })(), p(93824), p(35468)
+        })(), p.nc = void 0, p(93824), p(35468)
       })())
     }
   }
