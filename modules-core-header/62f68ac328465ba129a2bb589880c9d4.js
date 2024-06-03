@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "f9440a4a-608b-4e0d-9db4-2236691d4610", e._sentryDebugIdIdentifier = "sentry-dbid-f9440a4a-608b-4e0d-9db4-2236691d4610")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "30d7e1e0-33e0-4a0d-93f4-d2fa097e0432", e._sentryDebugIdIdentifier = "sentry-dbid-30d7e1e0-33e0-4a0d-93f4-d2fa097e0432")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -15,7 +15,7 @@ var _global = "undefined" != typeof window ? window : "undefined" != typeof glob
 _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
-  [668], {
+  [288], {
     69668: (e, t, n) => {
       n.r(t), n.d(t, {
         AbortedDeferredError: () => o.ay,

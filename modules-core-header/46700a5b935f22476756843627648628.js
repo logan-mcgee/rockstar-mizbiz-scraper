@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "0e249e9f-ebe7-40a6-9eb4-a9f805519701", e._sentryDebugIdIdentifier = "sentry-dbid-0e249e9f-ebe7-40a6-9eb4-a9f805519701")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "05679b44-7e09-40a3-9de7-0e3ce42cac56", e._sentryDebugIdIdentifier = "sentry-dbid-05679b44-7e09-40a3-9de7-0e3ce42cac56")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -15,11 +15,11 @@ var _global = "undefined" != typeof window ? window : "undefined" != typeof glob
 _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
-  [336], {
+  [608], {
     53592: (e, t, n) => {
       n.d(t, {
         U: () => o,
-        c: () => a
+        c: () => s
       });
       const o = {
           www: "www",
@@ -37,7 +37,7 @@ _global.SENTRY_RELEASE = {
           },
           cookieIdentifier: "prod"
         }],
-        a = () => {
+        s = () => {
           let e;
           const {
             location: t
@@ -47,12 +47,12 @@ _global.SENTRY_RELEASE = {
               site: o,
               subDomain: r
             }, !0)
-          })) >= 0)), a = r[o >= 0 ? o : 0];
+          })) >= 0)), s = r[o >= 0 ? o : 0];
           return e || (e = {
             site: "www",
             subDomain: "local"
           }), {
-            ...a,
+            ...s,
             currentSite: e
           }
         }
@@ -63,8 +63,8 @@ _global.SENTRY_RELEASE = {
         C2: () => N,
         mg: () => W,
         aU: () => T,
-        cQ: () => E,
-        UL: () => y,
+        cQ: () => y,
+        UL: () => E,
         gh: () => r.g,
         Wy: () => M,
         aI: () => I,
@@ -74,13 +74,13 @@ _global.SENTRY_RELEASE = {
       });
       var o = n(46516),
         r = n(75896),
-        a = n(51664),
-        s = n(4914),
+        s = n(51664),
+        a = n(4914),
         i = n(49996),
-        l = n(48516),
-        c = n(33544),
-        d = n(73660),
-        u = n.n(d),
+        c = n(48516),
+        l = n(33544),
+        u = n(73660),
+        d = n.n(u),
         p = n(55806);
       const w = (e, t) => {
         const n = (0, r.g)(p.EH),
@@ -95,20 +95,20 @@ _global.SENTRY_RELEASE = {
             }
           },
           {
-            data: s,
+            data: a,
             loading: i,
-            error: l,
-            ...d
-          } = (0, c.U)(e, o);
-        return (0, a.useEffect)((() => {
-          if (s && o.setTitleDataPath) {
-            const e = u().get(s, o.setTitleDataPath) ?? null;
+            error: c,
+            ...u
+          } = (0, l.U)(e, o);
+        return (0, s.useEffect)((() => {
+          if (a && o.setTitleDataPath) {
+            const e = d().get(a, o.setTitleDataPath) ?? null;
             e && window.postMessage({
               type: "graph.titleUpdate",
               title: e
             })
           }
-        }), [s]), (0, a.useEffect)((() => (o.autoSetLoading && window.postMessage({
+        }), [a]), (0, s.useEffect)((() => (o.autoSetLoading && window.postMessage({
           type: "graph.loadingUpdate",
           loading: i
         }), () => {
@@ -116,51 +116,51 @@ _global.SENTRY_RELEASE = {
             type: "graph.loadingUpdate",
             loading: !1
           })
-        })), [i]), (0, a.useEffect)((() => {
-          if (o.autoSetError && l) throw new Error(String(l))
-        }), [l]), {
+        })), [i]), (0, s.useEffect)((() => {
+          if (o.autoSetError && c) throw new Error(String(c))
+        }), [c]), {
           loading: i,
-          error: l,
-          data: s,
-          ...d
+          error: c,
+          data: a,
+          ...u
         }
       };
       var g = n(95240);
-      const h = (0, a.createContext)((() => ({
+      const h = (0, s.createContext)((() => ({
           data: null
         }))),
-        f = new Promise((e => {
+        k = new Promise((e => {
           e()
         })),
-        k = {
-          cache: window?.["apollo-cache"] ?? (window["apollo-cache"] = new s.Y)
+        f = {
+          cache: window?.["apollo-cache"] ?? (window["apollo-cache"] = new a.Y)
         },
-        m = [() => f, {
+        m = [() => k, {
           data: null,
           loading: !1,
           called: !1,
           reset: () => null,
-          client: window?.["apollo-client"] ?? (window["apollo-client"] = new i.u(k))
+          client: window?.["apollo-client"] ?? (window["apollo-client"] = new i.u(f))
         }],
-        b = (0, a.createContext)((() => m)),
+        b = (0, s.createContext)((() => m)),
         v = window?.["apollo-graph-provider"] ?? (window["apollo-graph-provider"] = e => {
           let {
             children: t
           } = e;
           return (0, g.jsx)(b.Provider, {
-            value: l.c,
+            value: c.c,
             children: (0, g.jsx)(h.Provider, {
               value: w,
               children: t
             })
           })
         }),
-        y = window?.["apollo-use-query"] ?? (window["apollo-use-query"] = (e, t) => (0, a.useContext)(h)(e, t)),
-        E = window?.["apollo-use-mutation"] ?? (window["apollo-use-mutation"] = e => (0, a.useContext)(b)(e)),
-        x = (0, a.createContext)({}),
-        _ = () => (0, a.useContext)(x),
-        P = (0, a.createContext)({}),
-        T = () => (0, a.useContext)(P);
+        E = window?.["apollo-use-query"] ?? (window["apollo-use-query"] = (e, t) => (0, s.useContext)(h)(e, t)),
+        y = window?.["apollo-use-mutation"] ?? (window["apollo-use-mutation"] = e => (0, s.useContext)(b)(e)),
+        x = (0, s.createContext)({}),
+        _ = () => (0, s.useContext)(x),
+        P = (0, s.createContext)({}),
+        T = () => (0, s.useContext)(P);
       var C = n(78244);
       const $ = "graph-token-context",
         S = {
@@ -168,7 +168,7 @@ _global.SENTRY_RELEASE = {
           tokenPing: (0, o.UT)("tokenPing"),
           tokenPingExpires: (0, o.UT)(100)
         },
-        U = window?.[$] ?? (window[$] = (0, a.createContext)(S)),
+        U = window?.[$] ?? (window[$] = (0, s.createContext)(S)),
         H = e => {
           let {
             children: t,
@@ -190,7 +190,7 @@ _global.SENTRY_RELEASE = {
             token: e,
             tokenPing: t,
             tokenPingExpires: n
-          } = (0, a.useContext)(U);
+          } = (0, s.useContext)(U);
           return [e, t, n]
         },
         M = () => {
@@ -209,28 +209,28 @@ _global.SENTRY_RELEASE = {
             try {
               const e = o?.() ?? 0,
                 t = n?.() ?? null,
-                a = (e => {
+                s = (e => {
                   const t = Date.now() / 1e3;
                   return Math.ceil(e - t)
                 })(e) > 0;
               if (!1 === t) return {
                 bearerToken: t
               };
-              if (a && t) return {
+              if (s && t) return {
                 bearerToken: t
               };
-              const s = await fetch(r, {
+              const a = await fetch(r, {
                   credentials: "include",
                   method: "POST",
                   headers: {
                     "Content-Type": "application/json"
                   }
                 }),
-                i = await s.json(),
+                i = await a.json(),
                 {
-                  tokenExpiresTime: l = null
+                  tokenExpiresTime: c = null
                 } = i;
-              return null !== l && o?.(l), n(i.bearerToken ?? null), i
+              return null !== c && o?.(c), n(i.bearerToken ?? null), i
             } catch (e) {
               return n(!1), !1
             }
@@ -261,10 +261,10 @@ _global.SENTRY_RELEASE = {
               typePolicies: n = {}
             } = e;
             const o = t?.env ? W(t?.env) : t?.uri,
-              [r] = (0, a.useState)(new s.Y({
+              [r] = (0, s.useState)(new a.Y({
                 typePolicies: n
               })),
-              l = q.concat((e => {
+              c = q.concat((e => {
                 let {
                   token: t
                 } = e;
@@ -291,7 +291,7 @@ _global.SENTRY_RELEASE = {
               })));
             return new i.u({
               cache: r,
-              link: l
+              link: c
             })
           })({
             graphOptions: n,
@@ -312,8 +312,8 @@ _global.SENTRY_RELEASE = {
         N = e => {
           const t = "__makevars__";
           return window?.[t] || (window[t] = {}), window?.[t]?.[e] || (window[t][e] = {}), ((e, t) => (n, r) => {
-            const a = window?.[e]?.[t]?.[n] ?? (0, o.UT)(r);
-            return window[e][t][n] = a, a
+            const s = window?.[e]?.[t]?.[n] ?? (0, o.UT)(r);
+            return window[e][t][n] = s, s
           })(t, e)
         },
         Q = N("graph-with-rs-graph"),
@@ -322,8 +322,8 @@ _global.SENTRY_RELEASE = {
             env: n = "prod",
             typePolicies: o,
             token: r = Q("token", null),
-            tokenPingExpires: a = Q("tokenPingExpires", null),
-            tokenPing: s = Q("token", null)
+            tokenPingExpires: s = Q("tokenPingExpires", null),
+            tokenPing: a = Q("token", null)
           } = t;
           return function(t) {
             return (0, g.jsx)(z, {
@@ -332,8 +332,8 @@ _global.SENTRY_RELEASE = {
                 env: n,
                 useGETForQueries: !0,
                 token: r,
-                tokenPing: s,
-                tokenPingExpires: a
+                tokenPing: a,
+                tokenPingExpires: s
               },
               children: (0, g.jsx)(e, {
                 ...t
@@ -363,14 +363,14 @@ _global.SENTRY_RELEASE = {
       });
       var o = n(46516);
       const r = (0, o.UT)(document.documentElement.lang),
-        a = window?.env,
-        s = ((0, o.UT)({
-          media: a?.cdn?.media,
-          videos: a?.cdn?.videos
+        s = window?.env,
+        a = ((0, o.UT)({
+          media: s?.cdn?.media,
+          videos: s?.cdn?.videos
         }), document.currentScript),
-        i = s?.src ? new URL(s.src).origin : "";
-      let l = document.getElementsByTagName("base")[0]?.getAttribute("href") ?? `${i}/`;
-      l.endsWith("/") || (l = `${l}/`), (0, o.UT)(l)
+        i = a?.src ? new URL(a.src).origin : "";
+      let c = document.getElementsByTagName("base")[0]?.getAttribute("href") ?? `${i}/`;
+      c.endsWith("/") || (c = `${c}/`), (0, o.UT)(c)
     },
     28152: (e, t, n) => {
       n.d(t, {
@@ -378,46 +378,46 @@ _global.SENTRY_RELEASE = {
       });
       var o = n(92560),
         r = n(50632),
-        a = n.n(r),
-        s = n(73660),
-        i = n.n(s),
-        l = n(42991),
-        c = n(76772);
+        s = n.n(r),
+        a = n(73660),
+        i = n.n(a),
+        c = n(42991),
+        l = n(76772);
       const {
-        apiHost: d
-      } = (0, l.c)(), u = (0, c._)(document.documentElement.lang), p = {}, w = async function(e) {
+        apiHost: u
+      } = (0, c.c)(), d = (0, l._)(document.documentElement.lang), p = {}, w = async function(e) {
         let {
           fetchOptions: t = {},
           finalFetchOptions: n = {},
           query: r = null,
-          pingBearer: s,
-          requireBearerToken: l = !0,
-          useCache: c = !0
+          pingBearer: a,
+          requireBearerToken: c = !0,
+          useCache: l = !0
         } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
         try {
           const {
             bearerToken: w = null
-          } = await (s?.()) ?? {}, g = {
+          } = await (a?.()) ?? {}, g = {
             "X-Requested-With": "XMLHttpRequest",
             "X-AMC": !0,
             "Content-Type": "application/json",
-            ...u && {
-              "X-lang": u
+            ...d && {
+              "X-lang": d
             }
           };
-          let h = `${d}/${e}`;
-          if (null === r || i().isEmpty(r) || (h += `?${new URLSearchParams(r)}`), !w && l) return null;
+          let h = `${u}/${e}`;
+          if (null === r || i().isEmpty(r) || (h += `?${new URLSearchParams(r)}`), !w && c) return null;
           w && (g.Authorization = `Bearer ${w}`);
-          const f = {
+          const k = {
               headers: g
             },
-            k = a().all([f, t, n]),
+            f = s().all([k, t, n]),
             m = JSON.stringify({
-              ...k,
+              ...f,
               url: h
             }),
             b = await (0, o.MB)(m);
-          if (c) {
+          if (l) {
             if (p[b]?.response) return p[b].response;
             if (p[b]?.loading) return {
               error: null,
@@ -427,12 +427,12 @@ _global.SENTRY_RELEASE = {
               loading: !0
             }
           }
-          const v = await fetch(h, k),
-            y = await v.json();
-          return c && (p[b] = {
-            response: y,
+          const v = await fetch(h, f),
+            E = await v.json();
+          return l && (p[b] = {
+            response: E,
             loading: !1
-          }), y
+          }), E
         } catch (t) {
           console.error(`ScApi fetch error ${e}:`, t)
         }
@@ -444,42 +444,42 @@ _global.SENTRY_RELEASE = {
       });
       const o = window?.env?.sc,
         r = window?.env?.marketing,
-        a = e => {
+        s = e => {
           let {
             apiHost: t,
             authHost: n,
-            clientId: a,
-            graphEnv: s,
+            clientId: s,
+            graphEnv: a,
             scHost: i,
-            hostname: l,
-            cdnBase: c,
-            key: d,
-            marketingAuthTLD: u
+            hostname: c,
+            cdnBase: l,
+            key: u,
+            marketingAuthTLD: d
           } = e;
           const p = o?.apiHost ?? t,
             w = o?.authHost ?? n,
-            g = o?.cdnBase ?? c,
-            h = o?.clientId ?? a,
-            f = r?.marketingAuthTLD ?? u,
-            k = o?.scHost ?? i;
+            g = o?.cdnBase ?? l,
+            h = o?.clientId ?? s,
+            k = r?.marketingAuthTLD ?? d,
+            f = o?.scHost ?? i;
           return {
             apiHost: `https://${p}.rockstargames.com`,
-            graphEnv: o?.graphEnv ?? s,
-            host: k,
-            hostname: l,
+            graphEnv: o?.graphEnv ?? a,
+            host: f,
+            hostname: c,
             cdnBase: g,
-            key: d,
+            key: u,
             clientId: h,
             authHost: w,
             login: `https://${w}.rockstargames.com/connect/authorize/${h}`,
             silentCheck: `https://${w}.rockstargames.com/connect/cors/check/${h}`,
             signup: `https://${w}.rockstargames.com/create/?cid=${h}`,
-            gateway: `https://${f}/auth/gateway.json`,
-            logout: `https://${f}/auth/sc-auth-logout`,
-            pingBearer: `https://${f}/auth/ping-bearer.json`
+            gateway: `https://${k}/auth/gateway.json`,
+            logout: `https://${k}/auth/sc-auth-logout`,
+            pingBearer: `https://${k}/auth/ping-bearer.json`
           }
         },
-        s = [a({
+        a = [s({
           key: "prod",
           clientId: "rsg",
           graphEnv: "prod",
@@ -489,7 +489,7 @@ _global.SENTRY_RELEASE = {
           hostname: /www/,
           cdnBase: "https://s.rsg.sc/sc",
           marketingAuthTLD: "www.rockstargames.com"
-        }), a({
+        }), s({
           key: "sc-prod",
           clientId: "socialclub",
           graphEnv: "prod",
@@ -503,7 +503,7 @@ _global.SENTRY_RELEASE = {
         i = () => {
           const e = window?.env?.scEnv ?? null;
           if (e) {
-            const t = s.find((t => {
+            const t = a.find((t => {
               let {
                 key: n
               } = t;
@@ -511,12 +511,12 @@ _global.SENTRY_RELEASE = {
             })) ?? null;
             if (t) return t
           }
-          return s.find((e => {
+          return a.find((e => {
             let {
               hostname: t
             } = e;
             return new RegExp(t).test(document.location.hostname)
-          })) || s[0]
+          })) || a[0]
         }
     },
     76772: (e, t, n) => {
@@ -528,19 +528,20 @@ _global.SENTRY_RELEASE = {
         return "zh-hans" === t ? "zh-cn" : t
       }
     },
-    55576: (e, t, n) => {
+    94532: (e, t, n) => {
       n.d(t, {
-        y_: () => a,
+        y_: () => s,
         kJ: () => i,
-        kj: () => c
+        i0: () => c,
+        kj: () => u
       });
       var o = n(61076),
         r = n(55806);
-      const a = () => (0, o.gh)(r.EH);
-      var s = n(51664);
+      const s = () => (0, o.gh)(r.EH);
+      var a = n(51664);
       const i = e => {
-        const [t, n] = (0, s.useState)(null), [o, r] = (0, s.useState)(null), [a, i] = (0, s.useState)({});
-        return (0, s.useLayoutEffect)((() => {
+        const [t, n] = (0, a.useState)(null), [o, r] = (0, a.useState)(null), [s, i] = (0, a.useState)({});
+        return (0, a.useLayoutEffect)((() => {
           let t = new Image,
             o = !1;
           return t.addEventListener("load", (() => {
@@ -553,12 +554,19 @@ _global.SENTRY_RELEASE = {
           })), t.src = e, () => {
             o = !0, null !== t && (t.src = "")
           }
-        }), [e]), [t, a]
+        }), [e]), [t, s]
       };
-      n(57013), n(28152);
+      n(57013);
+      const c = e => {
+        const t = (0, a.useRef)();
+        return (0, a.useEffect)((() => {
+          t.current = e
+        }), [e]), t.current
+      };
+      n(28152);
       const l = "__RS_CUSTOM_EVENTS__";
       window[l] || (window[l] = {});
-      const c = () => {
+      const u = () => {
         const e = (e, t) => {
           if (!e) throw Error("Event name must be provided to work with custom events");
           const n = (e => `rsCustomEvent:${e}`)(e),
@@ -572,7 +580,7 @@ _global.SENTRY_RELEASE = {
             e(o.detail)
           }))
         };
-        return (0, s.useMemo)((() => ({
+        return (0, a.useMemo)((() => ({
           dispatch: e
         })), [])
       };
@@ -583,7 +591,7 @@ _global.SENTRY_RELEASE = {
       n(95240);
       const r = (0, o.createContext)(),
         {
-          Consumer: a
+          Consumer: s
         } = r
     },
     2148: (e, t, n) => {

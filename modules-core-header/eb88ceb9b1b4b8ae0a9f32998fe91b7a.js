@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "de00908b-9952-4f31-98df-56bc8b6d534a", e._sentryDebugIdIdentifier = "sentry-dbid-de00908b-9952-4f31-98df-56bc8b6d534a")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "59c70a30-79a4-493b-a888-96567c970b3a", e._sentryDebugIdIdentifier = "sentry-dbid-59c70a30-79a4-493b-a888-96567c970b3a")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -15,7 +15,7 @@ var _global = "undefined" != typeof window ? window : "undefined" != typeof glob
 _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
-  [955], {
+  [668], {
     34512: (e, t, r) => {
       "use strict";
       var i, n = r(51664),
@@ -147,10 +147,10 @@ _global.SENTRY_RELEASE = {
           width: "auto",
           height: "auto"
         },
-        g = function(e, t, r) {
+        v = function(e, t, r) {
           return Math.max(Math.min(e, r), t)
         },
-        v = function(e, t) {
+        g = function(e, t) {
           return Math.round(e / t) * t
         },
         y = function(e, t) {
@@ -364,14 +364,14 @@ _global.SENTRY_RELEASE = {
           if (a) {
             var d = (u - p) * this.ratio + f,
               m = (c - p) * this.ratio + f,
-              v = (l - f) / this.ratio + p,
+              g = (l - f) / this.ratio + p,
               y = (h - f) / this.ratio + p,
               b = Math.max(l, d),
               S = Math.min(h, m),
-              x = Math.max(u, v),
+              x = Math.max(u, g),
               E = Math.min(c, y);
-            e = g(e, b, S), t = g(t, x, E)
-          } else e = g(e, l, h), t = g(t, u, c);
+            e = v(e, b, S), t = v(t, x, E)
+          } else e = v(e, l, h), t = v(t, u, c);
           return {
             newWidth: e,
             newHeight: t
@@ -452,7 +452,7 @@ _global.SENTRY_RELEASE = {
               f = u.width,
               d = u.height,
               m = this.getParentSize(),
-              g = function(e, t, r, i, n, a, s) {
+              v = function(e, t, r, i, n, a, s) {
                 return i = E(i, e.width, t, r), n = E(n, e.height, t, r), a = E(a, e.width, t, r), s = E(s, e.height, t, r), {
                   maxWidth: void 0 === i ? void 0 : Number(i),
                   maxHeight: void 0 === n ? void 0 : Number(n),
@@ -460,7 +460,7 @@ _global.SENTRY_RELEASE = {
                   minHeight: void 0 === s ? void 0 : Number(s)
                 }
               }(m, this.window.innerWidth, this.window.innerHeight, i, n, s, o);
-            i = g.maxWidth, n = g.maxHeight, s = g.minWidth, o = g.minHeight;
+            i = v.maxWidth, n = v.maxHeight, s = v.minWidth, o = v.minHeight;
             var y = this.calculateNewSizeFromDirection(l, h),
               x = y.newHeight,
               P = y.newWidth,
@@ -474,8 +474,8 @@ _global.SENTRY_RELEASE = {
               height: o
             });
             if (P = w.newWidth, x = w.newHeight, this.props.grid) {
-              var M = v(P, this.props.grid[0]),
-                T = v(x, this.props.grid[1]),
+              var M = g(P, this.props.grid[0]),
+                T = g(x, this.props.grid[1]),
                 _ = this.props.snapGap || 0;
               P = 0 === _ || Math.abs(M - P) <= _ ? M : P, x = 0 === _ || Math.abs(T - x) <= _ ? T : x
             }
@@ -792,13 +792,13 @@ _global.SENTRY_RELEASE = {
           var m = t.width / 100;
           f = o.value * m, d = s.value * m
         }
-        var g = Math.abs(h) + Math.abs(u);
-        this.totalDistY = i.height + t.height + g;
-        var v = i.height + t.height + (u > h ? -1 * g : g),
+        var v = Math.abs(h) + Math.abs(u);
+        this.totalDistY = i.height + t.height + v;
+        var g = i.height + t.height + (u > h ? -1 * v : v),
           y = Math.abs(f) + Math.abs(d);
         this.totalDistX = i.width + t.width + y;
         var b = i.width + t.width + (d > f ? -1 * y : y),
-          S = t.originTotalDistY / v,
+          S = t.originTotalDistY / g,
           x = t.originTotalDistX / b;
         this.top = t.top, this.bottom = t.bottom, h < 0 && (this.top = this.top + h * S), u > 0 && (this.bottom = this.bottom + u * S), this.left = t.left, this.right = t.right, f < 0 && (this.left = this.left + f * x), d > 0 && (this.right = this.right + d * x)
       }
@@ -947,8 +947,8 @@ _global.SENTRY_RELEASE = {
           f = !!u,
           d = u || window,
           m = f ? d.scrollLeft : window.pageXOffset,
-          g = f ? d.scrollTop : window.pageYOffset,
-          v = new s.Scroll(m, g),
+          v = f ? d.scrollTop : window.pageYOffset,
+          g = new s.Scroll(m, v),
           y = new a.View({
             width: 0,
             height: 0,
@@ -972,7 +972,7 @@ _global.SENTRY_RELEASE = {
         function P() {
           var e = f ? d.scrollLeft : window.pageXOffset,
             t = f ? d.scrollTop : window.pageYOffset;
-          v.setScroll(e, t), !b && p.length > 0 && (b = !0, window.requestAnimationFrame(w))
+          g.setScroll(e, t), !b && p.length > 0 && (b = !0, window.requestAnimationFrame(w))
         }
 
         function C() {
@@ -984,12 +984,12 @@ _global.SENTRY_RELEASE = {
         function w() {
           var e = (arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}).updateCache;
           p && p.forEach((function(t) {
-            M(t), e && t.setCachedAttributes(y, v)
+            M(t), e && t.setCachedAttributes(y, g)
           })), b = !1
         }
 
         function M(e) {
-          e.props.disabled || e.updatePosition(y, v)
+          e.props.disabled || e.updatePosition(y, g)
         }
 
         function T() {
@@ -1009,7 +1009,7 @@ _global.SENTRY_RELEASE = {
           var t, i = new o.Element(c(c({}, e), {}, {
             scrollAxis: r
           }));
-          return i.setCachedAttributes(y, v), p = p ? [].concat(function(e) {
+          return i.setCachedAttributes(y, g), p = p ? [].concat(function(e) {
             if (Array.isArray(e)) return h(e)
           }(t = p) || function(e) {
             if ("undefined" != typeof Symbol && null != e[Symbol.iterator] || null != e["@@iterator"]) return Array.from(e)
@@ -1035,7 +1035,7 @@ _global.SENTRY_RELEASE = {
         }, this.update = function() {
           var e = f ? d.scrollLeft : window.pageXOffset,
             t = f ? d.scrollTop : window.pageYOffset;
-          v.setScroll(e, t), T(), w({
+          g.setScroll(e, t), T(), w({
             updateCache: !0
           })
         }, this.updateScrollContainer = function(e) {
@@ -1339,8 +1339,8 @@ _global.SENTRY_RELEASE = {
         x: a.default.arrayOf(a.default.oneOfType([a.default.string, a.default.number])),
         y: a.default.arrayOf(a.default.oneOfType([a.default.string, a.default.number]))
       });
-      var g = (0, o.default)(m);
-      t.default = g
+      var v = (0, o.default)(m);
+      t.default = v
     },
     13708: (e, t, r) => {
       "use strict";
@@ -1429,9 +1429,9 @@ _global.SENTRY_RELEASE = {
               f = e.props,
               d = void 0 === f ? {} : f,
               m = d.style || {},
-              g = d.className || "";
+              v = d.className || "";
             delete d.style, delete d.className;
-            var v = "parallax-banner-layer-".concat(t).concat(g ? " ".concat(g) : ""),
+            var g = "parallax-banner-layer-".concat(t).concat(v ? " ".concat(v) : ""),
               y = u ? {
                 top: 100 * Math.abs(r) * -1 + "%",
                 bottom: 100 * Math.abs(r) * -1 + "%"
@@ -1448,7 +1448,7 @@ _global.SENTRY_RELEASE = {
               styleOuter: p,
               disabled: l
             }, i.default.createElement("div", o({
-              className: v,
+              className: g,
               style: h(h(h(h({}, b), p), y), m)
             }, d), n))
           })), t)
@@ -1546,7 +1546,7 @@ _global.SENTRY_RELEASE = {
           writable: !0
         }) : e[t] = r, e
       }
-      var g = function(e) {
+      var v = function(e) {
         ! function(e, t) {
           if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function");
           e.prototype = Object.create(t && t.prototype, {
@@ -1609,9 +1609,9 @@ _global.SENTRY_RELEASE = {
           }
         }]) && p(t.prototype, r), u
       }(n.Component);
-      t.default = g, m(g, "defaultProps", {
+      t.default = v, m(v, "defaultProps", {
         scrollAxis: l.VERTICAL
-      }), m(g, "propTypes", {
+      }), m(v, "propTypes", {
         children: a.default.node.isRequired,
         scrollAxis: a.default.oneOf([l.VERTICAL, l.HORIZONTAL]),
         scrollContainer: h.default
@@ -2055,10 +2055,10 @@ _global.SENTRY_RELEASE = {
         return "undefined" == typeof window || !e[t] || e[t] instanceof window.Element ? null : new Error('Prop name "'.concat(t, '" in <').concat(r, "> must be an HTML DOM element."))
       }
     },
-    69736: (e, t, r) => {
+    30300: (e, t, r) => {
       "use strict";
       r.d(t, {
-        cp: () => ni
+        cp: () => li
       });
       var i = r(62504);
 
@@ -2151,12 +2151,12 @@ _global.SENTRY_RELEASE = {
           i.enumerable = i.enumerable || !1, i.configurable = !0, "value" in i && (i.writable = !0), Object.defineProperty(e, (0, d.c)(i.key), i)
         }
       }
-      var g = r(74848);
+      var v = r(74848);
 
-      function v(e) {
-        return v = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {
+      function g(e) {
+        return g = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {
           return e.__proto__ || Object.getPrototypeOf(e)
-        }, v(e)
+        }, g(e)
       }
       var y = r(28792);
 
@@ -2172,9 +2172,9 @@ _global.SENTRY_RELEASE = {
           }
         }();
         return function() {
-          var r, i = v(e);
+          var r, i = g(e);
           if (t) {
-            var n = v(this).constructor;
+            var n = g(this).constructor;
             r = Reflect.construct(i, arguments, n)
           } else r = i.apply(this, arguments);
           return function(e, t) {
@@ -2431,10 +2431,10 @@ _global.SENTRY_RELEASE = {
       }
 
       function ce(e, t, r, i, n, a, s, o, l) {
-        for (var h = 0, u = 0, c = s, p = 0, f = 0, d = 0, m = 1, g = 1, v = 1, y = 0, b = "", S = n, x = a, E = i, C = b; g;) switch (d = y, y = G()) {
+        for (var h = 0, u = 0, c = s, p = 0, f = 0, d = 0, m = 1, v = 1, g = 1, y = 0, b = "", S = n, x = a, E = i, C = b; v;) switch (d = y, y = G()) {
           case 40:
             if (108 != d && 58 == _(C, c - 1)) {
-              -1 != T(C += M(X(y), "&", "&\f"), "&\f") && (v = -1);
+              -1 != T(C += M(X(y), "&", "&\f"), "&\f") && (g = -1);
               break
             }
           case 34:
@@ -2462,16 +2462,16 @@ _global.SENTRY_RELEASE = {
             }
             break;
           case 123 * m:
-            o[h++] = k(C) * v;
+            o[h++] = k(C) * g;
           case 125 * m:
           case 59:
           case 0:
             switch (y) {
               case 0:
               case 125:
-                g = 0;
+                v = 0;
               case 59 + u:
-                -1 == v && (C = M(C, /\f/g, "")), f > 0 && k(C) - c && I(f > 32 ? de(C + ";", i, r, c - 1) : de(M(C, " ", "") + ";", i, r, c - 2), l);
+                -1 == g && (C = M(C, /\f/g, "")), f > 0 && k(C) - c && I(f > 32 ? de(C + ";", i, r, c - 1) : de(M(C, " ", "") + ";", i, r, c - 2), l);
                 break;
               case 59:
                 C += ";";
@@ -2489,7 +2489,7 @@ _global.SENTRY_RELEASE = {
                       ce(C, E, E, E, [""], x, 0, o, x)
                   }
             }
-            h = u = f = 0, m = v = 1, b = C = "", c = s;
+            h = u = f = 0, m = g = 1, b = C = "", c = s;
             break;
           case 58:
             c = 1 + k(C), f = d;
@@ -2499,10 +2499,10 @@ _global.SENTRY_RELEASE = {
               else if (125 == y && 0 == m++ && 125 == j()) continue;
             switch (C += P(y), y * m) {
               case 38:
-                v = u > 0 ? 1 : (C += "\f", -1);
+                g = u > 0 ? 1 : (C += "\f", -1);
                 break;
               case 44:
-                o[h++] = (k(C) - 1) * v, v = 1;
+                o[h++] = (k(C) - 1) * g, g = 1;
                 break;
               case 64:
                 45 === H() && (C += X(G())), p = H(), u = c = k(b = C += ee(W())), y++;
@@ -2515,8 +2515,8 @@ _global.SENTRY_RELEASE = {
       }
 
       function pe(e, t, r, i, n, a, s, o, l, h, u) {
-        for (var c = n - 1, p = 0 === n ? a : [""], f = D(p), d = 0, m = 0, g = 0; d < i; ++d)
-          for (var v = 0, y = A(e, c + 1, c = E(m = s[d])), b = e; v < f; ++v)(b = w(m > 0 ? p[v] + " " + y : M(y, /&\f/g, p[v]))) && (l[g++] = b);
+        for (var c = n - 1, p = 0 === n ? a : [""], f = D(p), d = 0, m = 0, v = 0; d < i; ++d)
+          for (var g = 0, y = A(e, c + 1, c = E(m = s[d])), b = e; g < f; ++g)(b = w(m > 0 ? p[g] + " " + y : M(y, /&\f/g, p[g]))) && (l[v++] = b);
         return z(e, t, r, 0 === n ? ae : o, l, h, u)
       }
 
@@ -2531,14 +2531,14 @@ _global.SENTRY_RELEASE = {
           for (var i = 0, n = 0; i = n, n = H(), 38 === i && 12 === n && (t[r] = 1), !q(n);) G();
           return U(e, L)
         },
-        ge = new WeakMap,
-        ve = function(e) {
+        ve = new WeakMap,
+        ge = function(e) {
           if ("rule" === e.type && e.parent && !(e.length < 1)) {
             for (var t = e.value, r = e.parent, i = e.column === r.column && e.line === r.line;
               "rule" !== r.type;)
               if (!(r = r.parent)) return;
-            if ((1 !== e.props.length || 58 === t.charCodeAt(0) || ge.get(r)) && !i) {
-              ge.set(e, !0);
+            if ((1 !== e.props.length || 58 === t.charCodeAt(0) || ve.get(r)) && !i) {
+              ve.set(e, !0);
               for (var n = [], a = function(e, t) {
                   return Y(function(e, t) {
                     var r = -1,
@@ -2741,7 +2741,7 @@ _global.SENTRY_RELEASE = {
             }, function(e) {
               e.root || (e = e.return) && c(e)
             })],
-            f = (h = [ve, ye].concat(a, p), u = D(h), function(e, t, r, i) {
+            f = (h = [ge, ye].concat(a, p), u = D(h), function(e, t, r, i) {
               for (var n = "", a = 0; a < u; a++) n += h[a](e, t, r, i) || "";
               return n
             });
@@ -3168,8 +3168,8 @@ _global.SENTRY_RELEASE = {
         var p
       }
       const mt = c.useLayoutEffect;
-      var gt = ["className", "clearValue", "cx", "getStyles", "getClassNames", "getValue", "hasValue", "isMulti", "isRtl", "options", "selectOption", "selectProps", "setValue", "theme"],
-        vt = function() {};
+      var vt = ["className", "clearValue", "cx", "getStyles", "getClassNames", "getValue", "hasValue", "isMulti", "isRtl", "options", "selectOption", "selectProps", "setValue", "theme"],
+        gt = function() {};
 
       function yt(e, t) {
         return t ? "-" === t[0] ? e + t : e + "__" + t : e
@@ -3191,7 +3191,7 @@ _global.SENTRY_RELEASE = {
           var t
         },
         xt = function(e) {
-          return e.className, e.clearValue, e.cx, e.getStyles, e.getClassNames, e.getValue, e.hasValue, e.isMulti, e.isRtl, e.options, e.selectOption, e.selectProps, e.setValue, e.theme, a({}, u(e, gt))
+          return e.className, e.clearValue, e.cx, e.getStyles, e.getClassNames, e.getValue, e.hasValue, e.isMulti, e.isRtl, e.options, e.selectOption, e.selectProps, e.setValue, e.theme, a({}, u(e, vt))
         },
         Et = function(e, t, r) {
           var i = e.cx,
@@ -3218,7 +3218,7 @@ _global.SENTRY_RELEASE = {
 
       function Mt(e, t) {
         var r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 200,
-          i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : vt,
+          i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : gt,
           n = Ct(e),
           a = t - n,
           s = 0;
@@ -3249,7 +3249,7 @@ _global.SENTRY_RELEASE = {
           }
         },
         Dt = "undefined" != typeof window ? window : {};
-      Dt.addEventListener && Dt.removeEventListener && (Dt.addEventListener("p", vt, kt), Dt.removeEventListener("p", vt, !1));
+      Dt.addEventListener && Dt.removeEventListener && (Dt.addEventListener("p", gt, kt), Dt.removeEventListener("p", gt, !1));
       var It = At;
 
       function Ft(e) {
@@ -3278,9 +3278,9 @@ _global.SENTRY_RELEASE = {
             f = l((0, c.useState)(i), 2),
             d = f[0],
             m = f[1],
-            g = l((0, c.useState)(null), 2),
-            v = g[0],
-            y = g[1],
+            v = l((0, c.useState)(null), 2),
+            g = v[0],
+            y = v[1],
             b = h.spacing.controlHeight;
           return mt((function() {
             var e = p.current;
@@ -3313,16 +3313,16 @@ _global.SENTRY_RELEASE = {
                     f = p.bottom,
                     d = p.height,
                     m = p.top,
-                    g = r.offsetParent.getBoundingClientRect().top,
-                    v = s || Pt(u = l) ? window.innerHeight : u.clientHeight,
+                    v = r.offsetParent.getBoundingClientRect().top,
+                    g = s || Pt(u = l) ? window.innerHeight : u.clientHeight,
                     y = Ct(l),
                     b = parseInt(getComputedStyle(r).marginBottom, 10),
                     S = parseInt(getComputedStyle(r).marginTop, 10),
-                    x = g - S,
-                    E = v - m,
+                    x = v - S,
+                    E = g - m,
                     P = x + y,
                     C = c - y - m,
-                    w = f - v + y + b,
+                    w = f - g + y + b,
                     M = y + m - S,
                     T = 160;
                   switch (n) {
@@ -3390,7 +3390,7 @@ _global.SENTRY_RELEASE = {
           }), [i, n, s, o, r, u, b]), t({
             ref: p,
             placerProps: a(a({}, e), {}, {
-              placement: v || Nt(n),
+              placement: g || Nt(n),
               maxHeight: d
             })
           })
@@ -3686,14 +3686,14 @@ _global.SENTRY_RELEASE = {
               p = l((0, c.useState)(Nt(s)), 2),
               d = p[0],
               m = p[1],
-              g = (0, c.useMemo)((function() {
+              v = (0, c.useMemo)((function() {
                 return {
                   setPortalPlacement: m
                 }
               }), []),
-              v = l((0, c.useState)(null), 2),
-              y = v[0],
-              b = v[1],
+              g = l((0, c.useState)(null), 2),
+              y = g[0],
+              b = g[1],
               S = (0, c.useCallback)((function() {
                 if (i) {
                   var e = function(e) {
@@ -3814,7 +3814,7 @@ _global.SENTRY_RELEASE = {
               "menu-portal": !0
             }), n), r);
             return Ue(jt.Provider, {
-              value: g
+              value: v
             }, t ? (0, $e.createPortal)(P, t) : P)
           },
           LoadingMessage: function(e) {
@@ -3965,13 +3965,14 @@ _global.SENTRY_RELEASE = {
           guidance: function(e) {
             var t = e.isSearchable,
               r = e.isMulti,
-              i = e.isDisabled,
-              n = e.tabSelectsValue;
-            switch (e.context) {
+              i = e.tabSelectsValue,
+              n = e.context,
+              a = e.isInitialFocus;
+            switch (n) {
               case "menu":
-                return "Use Up and Down to choose options".concat(i ? "" : ", press Enter to select the currently focused option", ", press Escape to exit the menu").concat(n ? ", press Tab to select the option and exit the menu" : "", ".");
+                return "Use Up and Down to choose options, press Enter to select the currently focused option, press Escape to exit the menu".concat(i ? ", press Tab to select the option and exit the menu" : "", ".");
               case "input":
-                return "".concat(e["aria-label"] || "Select", " is focused ").concat(t ? ",type to refine list" : "", ", press Down to open the menu, ").concat(r ? " press left to focus selected values" : "");
+                return a ? "".concat(e["aria-label"] || "Select", " is focused ").concat(t ? ",type to refine list" : "", ", press Down to open the menu, ").concat(r ? " press left to focus selected values" : "") : "";
               case "value":
                 return "Use left and right to toggle between focused values, press Backspace to remove the currently focused value";
               default:
@@ -4008,14 +4009,15 @@ _global.SENTRY_RELEASE = {
               s = e.selectValue,
               o = e.isDisabled,
               l = e.isSelected,
-              h = function(e, t) {
+              h = e.isAppleDevice,
+              u = function(e, t) {
                 return e && e.length ? "".concat(e.indexOf(t) + 1, " of ").concat(e.length) : ""
               };
-            if ("value" === t && s) return "value ".concat(a, " focused, ").concat(h(s, r), ".");
-            if ("menu" === t) {
-              var u = o ? " disabled" : "",
-                c = "".concat(l ? "selected" : "focused").concat(u);
-              return "option ".concat(a, " ").concat(c, ", ").concat(h(i, r), ".")
+            if ("value" === t && s) return "value ".concat(a, " focused, ").concat(u(s, r), ".");
+            if ("menu" === t && h) {
+              var c = o ? " disabled" : "",
+                p = "".concat(l ? " selected" : "").concat(c);
+              return "".concat(a).concat(p, ", ").concat(u(i, r), ".")
             }
             return ""
           },
@@ -4033,103 +4035,111 @@ _global.SENTRY_RELEASE = {
             o = e.selectValue,
             l = e.selectProps,
             h = e.id,
-            u = l.ariaLiveMessages,
-            p = l.getOptionLabel,
-            f = l.inputValue,
-            d = l.isMulti,
-            m = l.isOptionDisabled,
+            u = e.isAppleDevice,
+            p = l.ariaLiveMessages,
+            f = l.getOptionLabel,
+            d = l.inputValue,
+            m = l.isMulti,
+            v = l.isOptionDisabled,
             g = l.isSearchable,
-            v = l.menuIsOpen,
-            y = l.options,
-            b = l.screenReaderStatus,
-            S = l.tabSelectsValue,
-            x = l["aria-label"],
-            E = l["aria-live"],
-            P = (0, c.useMemo)((function() {
-              return a(a({}, dr), u || {})
-            }), [u]),
-            C = (0, c.useMemo)((function() {
+            y = l.menuIsOpen,
+            b = l.options,
+            S = l.screenReaderStatus,
+            x = l.tabSelectsValue,
+            E = l.isLoading,
+            P = l["aria-label"],
+            C = l["aria-live"],
+            w = (0, c.useMemo)((function() {
+              return a(a({}, dr), p || {})
+            }), [p]),
+            M = (0, c.useMemo)((function() {
               var e, r = "";
-              if (t && P.onChange) {
+              if (t && w.onChange) {
                 var i = t.option,
                   n = t.options,
                   s = t.removedValue,
                   l = t.removedValues,
                   h = t.value,
                   u = s || i || (e = h, Array.isArray(e) ? null : e),
-                  c = u ? p(u) : "",
-                  f = n || l || void 0,
-                  d = f ? f.map(p) : [],
-                  g = a({
-                    isDisabled: u && m(u, o),
+                  c = u ? f(u) : "",
+                  p = n || l || void 0,
+                  d = p ? p.map(f) : [],
+                  m = a({
+                    isDisabled: u && v(u, o),
                     label: c,
                     labels: d
                   }, t);
-                r = P.onChange(g)
+                r = w.onChange(m)
               }
               return r
-            }), [t, P, m, o, p]),
-            w = (0, c.useMemo)((function() {
+            }), [t, w, v, o, f]),
+            T = (0, c.useMemo)((function() {
               var e = "",
                 t = r || i,
                 a = !!(r && o && o.includes(r));
-              if (t && P.onFocus) {
+              if (t && w.onFocus) {
                 var s = {
                   focused: t,
-                  label: p(t),
-                  isDisabled: m(t, o),
+                  label: f(t),
+                  isDisabled: v(t, o),
                   isSelected: a,
                   options: n,
                   context: t === r ? "menu" : "value",
-                  selectValue: o
+                  selectValue: o,
+                  isAppleDevice: u
                 };
-                e = P.onFocus(s)
+                e = w.onFocus(s)
               }
               return e
-            }), [r, i, p, m, P, n, o]),
-            M = (0, c.useMemo)((function() {
+            }), [r, i, f, v, w, n, o, u]),
+            _ = (0, c.useMemo)((function() {
               var e = "";
-              if (v && y.length && P.onFilter) {
-                var t = b({
+              if (y && b.length && !E && w.onFilter) {
+                var t = S({
                   count: n.length
                 });
-                e = P.onFilter({
-                  inputValue: f,
+                e = w.onFilter({
+                  inputValue: d,
                   resultsMessage: t
                 })
               }
               return e
-            }), [n, f, v, P, y, b]),
-            T = (0, c.useMemo)((function() {
+            }), [n, d, y, w, b, S, E]),
+            A = "initial-input-focus" === (null == t ? void 0 : t.action),
+            k = (0, c.useMemo)((function() {
               var e = "";
-              if (P.guidance) {
-                var t = i ? "value" : v ? "menu" : "input";
-                e = P.guidance({
-                  "aria-label": x,
+              if (w.guidance) {
+                var t = i ? "value" : y ? "menu" : "input";
+                e = w.guidance({
+                  "aria-label": P,
                   context: t,
-                  isDisabled: r && m(r, o),
-                  isMulti: d,
+                  isDisabled: r && v(r, o),
+                  isMulti: m,
                   isSearchable: g,
-                  tabSelectsValue: S
+                  tabSelectsValue: x,
+                  isInitialFocus: A
                 })
               }
               return e
-            }), [x, r, i, d, m, g, v, P, o, S]),
-            _ = "".concat(w, " ").concat(M, " ").concat(T),
-            A = Ue(c.Fragment, null, Ue("span", {
+            }), [P, r, i, m, v, g, y, w, o, x, A]),
+            D = Ue(c.Fragment, null, Ue("span", {
               id: "aria-selection"
-            }, C), Ue("span", {
-              id: "aria-context"
-            }, _)),
-            k = "initial-input-focus" === (null == t ? void 0 : t.action);
+            }, M), Ue("span", {
+              id: "aria-focused"
+            }, T), Ue("span", {
+              id: "aria-results"
+            }, _), Ue("span", {
+              id: "aria-guidance"
+            }, k));
           return Ue(c.Fragment, null, Ue(fr, {
             id: h
-          }, k && A), Ue(fr, {
-            "aria-live": E,
+          }, A && D), Ue(fr, {
+            "aria-live": C,
             "aria-atomic": "false",
-            "aria-relevant": "additions text"
-          }, s && !k && A))
-        }, gr = [{
+            "aria-relevant": "additions text",
+            role: "log"
+          }, s && !A && D))
+        }, vr = [{
           base: "A",
           letters: "AⒶＡÀÁÂẦẤẪẨÃĀĂẰẮẴẲȦǠÄǞẢÅǺǍȀȂẠẬẶḀĄȺⱯ"
         }, {
@@ -4381,12 +4391,12 @@ _global.SENTRY_RELEASE = {
         }, {
           base: "z",
           letters: "zⓩｚźẑżžẓẕƶȥɀⱬꝣ"
-        }], vr = new RegExp("[" + gr.map((function(e) {
+        }], gr = new RegExp("[" + vr.map((function(e) {
           return e.letters
-        })).join("") + "]", "g"), yr = {}, br = 0; br < gr.length; br++)
-        for (var Sr = gr[br], xr = 0; xr < Sr.letters.length; xr++) yr[Sr.letters[xr]] = Sr.base;
+        })).join("") + "]", "g"), yr = {}, br = 0; br < vr.length; br++)
+        for (var Sr = vr[br], xr = 0; xr < Sr.letters.length; xr++) yr[Sr.letters[xr]] = Sr.base;
       var Er = function(e) {
-          return e.replace(vr, (function(e) {
+          return e.replace(gr, (function(e) {
             return yr[e]
           }))
         },
@@ -4516,8 +4526,8 @@ _global.SENTRY_RELEASE = {
                     f = h.current,
                     d = t > 0,
                     m = c - p - u,
-                    g = !1;
-                  m > t && s.current && (i && i(e), s.current = !1), d && o.current && (a && a(e), o.current = !1), d && t > m ? (r && !s.current && r(e), f.scrollTop = c, g = !0, s.current = !0) : !d && -t > u && (n && !o.current && n(e), f.scrollTop = 0, g = !0, o.current = !0), g && function(e) {
+                    v = !1;
+                  m > t && s.current && (i && i(e), s.current = !1), d && o.current && (a && a(e), o.current = !1), d && t > m ? (r && !s.current && r(e), f.scrollTop = c, v = !0, s.current = !0) : !d && -t > u && (n && !o.current && n(e), f.scrollTop = 0, v = !0, o.current = !0), v && function(e) {
                     e.cancelable && e.preventDefault(), e.stopPropagation()
                   }(e)
                 }
@@ -4540,7 +4550,7 @@ _global.SENTRY_RELEASE = {
                   e.addEventListener("wheel", p, t), e.addEventListener("touchstart", f, t), e.addEventListener("touchmove", d, t)
                 }
               }), [d, f, p]),
-              g = (0, c.useCallback)((function(e) {
+              v = (0, c.useCallback)((function(e) {
                 e && (e.removeEventListener("wheel", p, !1), e.removeEventListener("touchstart", f, !1), e.removeEventListener("touchmove", d, !1))
               }), [d, f, p]);
             return (0, c.useEffect)((function() {
@@ -4548,10 +4558,10 @@ _global.SENTRY_RELEASE = {
                   var e = h.current;
                   return m(e),
                     function() {
-                      g(e)
+                      v(e)
                     }
                 }
-              }), [t, m, g]),
+              }), [t, m, v]),
               function(e) {
                 h.current = e
               }
@@ -4636,8 +4646,17 @@ _global.SENTRY_RELEASE = {
             value: "",
             onChange: function() {}
           })
-        },
-        Gr = {
+        };
+
+      function Gr(e) {
+        var t;
+        return "undefined" != typeof window && null != window.navigator && e.test((null === (t = window.navigator.userAgentData) || void 0 === t ? void 0 : t.platform) || window.navigator.platform)
+      }
+
+      function Hr() {
+        return Gr(/^Mac/i)
+      }
+      var Wr = {
           clearIndicator: er,
           container: function(e) {
             var t = e.isDisabled;
@@ -4936,7 +4955,7 @@ _global.SENTRY_RELEASE = {
             })
           }
         },
-        Hr = {
+        Ur = {
           borderRadius: 4,
           colors: {
             primary: "#2684FF",
@@ -4963,7 +4982,7 @@ _global.SENTRY_RELEASE = {
             menuGutter: 8
           }
         },
-        Wr = {
+        qr = {
           "aria-live": "polite",
           backspaceRemovesValue: !0,
           blurInputOnSelect: _t(),
@@ -5043,25 +5062,25 @@ _global.SENTRY_RELEASE = {
           unstyled: !1
         };
 
-      function Ur(e, t, r, i) {
+      function $r(e, t, r, i) {
         return {
           type: "option",
           data: t,
-          isDisabled: Zr(e, t, r),
-          isSelected: Jr(e, t, r),
-          label: Xr(e, t),
-          value: Kr(e, t),
+          isDisabled: ti(e, t, r),
+          isSelected: ri(e, t, r),
+          label: Qr(e, t),
+          value: ei(e, t),
           index: i
         }
       }
 
-      function qr(e, t) {
+      function Yr(e, t) {
         return e.options.map((function(r, i) {
           if ("options" in r) {
             var n = r.options.map((function(r, i) {
-              return Ur(e, r, t, i)
+              return $r(e, r, t, i)
             })).filter((function(t) {
-              return Yr(e, t)
+              return Zr(e, t)
             }));
             return n.length > 0 ? {
               type: "group",
@@ -5070,12 +5089,12 @@ _global.SENTRY_RELEASE = {
               index: i
             } : void 0
           }
-          var a = Ur(e, r, t, i);
-          return Yr(e, a) ? a : void 0
+          var a = $r(e, r, t, i);
+          return Zr(e, a) ? a : void 0
         })).filter(Ft)
       }
 
-      function $r(e) {
+      function Xr(e) {
         return e.reduce((function(e, t) {
           return "group" === t.type ? e.push.apply(e, S(t.options.map((function(e) {
             return e.data
@@ -5083,49 +5102,69 @@ _global.SENTRY_RELEASE = {
         }), [])
       }
 
-      function Yr(e, t) {
+      function Kr(e, t) {
+        return e.reduce((function(e, r) {
+          return "group" === r.type ? e.push.apply(e, S(r.options.map((function(e) {
+            return {
+              data: e.data,
+              id: "".concat(t, "-").concat(r.index, "-").concat(e.index)
+            }
+          })))) : e.push({
+            data: r.data,
+            id: "".concat(t, "-").concat(r.index)
+          }), e
+        }), [])
+      }
+
+      function Zr(e, t) {
         var r = e.inputValue,
           i = void 0 === r ? "" : r,
           n = t.data,
           a = t.isSelected,
           s = t.label,
           o = t.value;
-        return (!ei(e) || !a) && Qr(e, {
+        return (!ni(e) || !a) && ii(e, {
           label: s,
           value: o,
           data: n
         }, i)
       }
-      var Xr = function(e, t) {
+      var Jr = function(e, t) {
+          var r;
+          return (null === (r = e.find((function(e) {
+            return e.data === t
+          }))) || void 0 === r ? void 0 : r.id) || null
+        },
+        Qr = function(e, t) {
           return e.getOptionLabel(t)
         },
-        Kr = function(e, t) {
+        ei = function(e, t) {
           return e.getOptionValue(t)
         };
 
-      function Zr(e, t, r) {
+      function ti(e, t, r) {
         return "function" == typeof e.isOptionDisabled && e.isOptionDisabled(t, r)
       }
 
-      function Jr(e, t, r) {
+      function ri(e, t, r) {
         if (r.indexOf(t) > -1) return !0;
         if ("function" == typeof e.isOptionSelected) return e.isOptionSelected(t, r);
-        var i = Kr(e, t);
+        var i = ei(e, t);
         return r.some((function(t) {
-          return Kr(e, t) === i
+          return ei(e, t) === i
         }))
       }
 
-      function Qr(e, t, r) {
+      function ii(e, t, r) {
         return !e.filterOption || e.filterOption(t, r)
       }
-      var ei = function(e) {
+      var ni = function(e) {
           var t = e.hideSelectedOptions,
             r = e.isMulti;
           return void 0 === t ? r : t
         },
-        ti = 1,
-        ri = function(e) {
+        ai = 1,
+        si = function(e) {
           ! function(e, t) {
             if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function");
             e.prototype = Object.create(t && t.prototype, {
@@ -5136,7 +5175,7 @@ _global.SENTRY_RELEASE = {
               }
             }), Object.defineProperty(e, "prototype", {
               writable: !1
-            }), t && (0, g.c)(e, t)
+            }), t && (0, v.c)(e, t)
           }(s, e);
           var t, r, i, n = b(s);
 
@@ -5147,6 +5186,8 @@ _global.SENTRY_RELEASE = {
               }(this, s), (t = n.call(this, e)).state = {
                 ariaSelection: null,
                 focusedOption: null,
+                focusedOptionId: null,
+                focusableOptionsWithIds: [],
                 focusedValue: null,
                 inputIsHidden: !1,
                 isFocused: !1,
@@ -5154,8 +5195,9 @@ _global.SENTRY_RELEASE = {
                 clearFocusValueOnUpdate: !1,
                 prevWasFocused: !1,
                 inputIsHiddenAfterUpdate: void 0,
-                prevProps: void 0
-              }, t.blockOptionHover = !1, t.isComposing = !1, t.commonProps = void 0, t.initialTouchX = 0, t.initialTouchY = 0, t.instancePrefix = "", t.openAfterFocus = !1, t.scrollToFocusedOptionOnUpdate = !1, t.userIsDragging = void 0, t.controlRef = null, t.getControlRef = function(e) {
+                prevProps: void 0,
+                instancePrefix: ""
+              }, t.blockOptionHover = !1, t.isComposing = !1, t.commonProps = void 0, t.initialTouchX = 0, t.initialTouchY = 0, t.openAfterFocus = !1, t.scrollToFocusedOptionOnUpdate = !1, t.userIsDragging = void 0, t.isAppleDevice = Hr() || Gr(/^iPhone/i) || Gr(/^iPad/i) || Hr() && navigator.maxTouchPoints > 1, t.controlRef = null, t.getControlRef = function(e) {
                 t.controlRef = e
               }, t.focusedOptionRef = null, t.getFocusedOptionRef = function(e) {
                 t.focusedOptionRef = e
@@ -5234,18 +5276,22 @@ _global.SENTRY_RELEASE = {
                   action: "pop-value",
                   removedValue: i
                 })
+              }, t.getFocusedOptionId = function(e) {
+                return Jr(t.state.focusableOptionsWithIds, e)
+              }, t.getFocusableOptionsWithIds = function() {
+                return Kr(Yr(t.props, t.state.selectValue), t.getElementId("option"))
               }, t.getValue = function() {
                 return t.state.selectValue
               }, t.cx = function() {
                 for (var e = arguments.length, r = new Array(e), i = 0; i < e; i++) r[i] = arguments[i];
                 return bt.apply(void 0, [t.props.classNamePrefix].concat(r))
               }, t.getOptionLabel = function(e) {
-                return Xr(t.props, e)
+                return Qr(t.props, e)
               }, t.getOptionValue = function(e) {
-                return Kr(t.props, e)
+                return ei(t.props, e)
               }, t.getStyles = function(e, r) {
                 var i = t.props.unstyled,
-                  n = Gr[e](r, i);
+                  n = Wr[e](r, i);
                 n.boxSizing = "border-box";
                 var a = t.props.styles[e];
                 return a ? a(n, r) : n
@@ -5253,16 +5299,16 @@ _global.SENTRY_RELEASE = {
                 var i, n;
                 return null === (i = (n = t.props.classNames)[e]) || void 0 === i ? void 0 : i.call(n, r)
               }, t.getElementId = function(e) {
-                return "".concat(t.instancePrefix, "-").concat(e)
+                return "".concat(t.state.instancePrefix, "-").concat(e)
               }, t.getComponents = function() {
                 return e = t.props, a(a({}, hr), e.components);
                 var e
               }, t.buildCategorizedOptions = function() {
-                return qr(t.props, t.state.selectValue)
+                return Yr(t.props, t.state.selectValue)
               }, t.getCategorizedOptions = function() {
                 return t.props.menuIsOpen ? t.buildCategorizedOptions() : []
               }, t.buildFocusableOptions = function() {
-                return $r(t.buildCategorizedOptions())
+                return Xr(t.buildCategorizedOptions())
               }, t.getFocusableOptions = function() {
                 return t.props.menuIsOpen ? t.buildFocusableOptions() : []
               }, t.ariaOnChange = function(e, r) {
@@ -5343,11 +5389,15 @@ _global.SENTRY_RELEASE = {
                   isFocused: !1
                 }))
               }, t.onOptionHover = function(e) {
-                t.blockOptionHover || t.state.focusedOption === e || t.setState({
-                  focusedOption: e
-                })
+                if (!t.blockOptionHover && t.state.focusedOption !== e) {
+                  var r = t.getFocusableOptions().indexOf(e);
+                  t.setState({
+                    focusedOption: e,
+                    focusedOptionId: r > -1 ? t.getFocusedOptionId(e) : null
+                  })
+                }
               }, t.shouldHideSelectedOptions = function() {
-                return ei(t.props)
+                return ni(t.props)
               }, t.onValueInputFocus = function(e) {
                 e.preventDefault(), e.stopPropagation(), t.focus()
               }, t.onKeyDown = function(e) {
@@ -5365,7 +5415,7 @@ _global.SENTRY_RELEASE = {
                   f = t.state,
                   d = f.focusedOption,
                   m = f.focusedValue,
-                  g = f.selectValue;
+                  v = f.selectValue;
                 if (!(l || "function" == typeof u && (u(e), e.defaultPrevented))) {
                   switch (t.blockOptionHover = !0, e.key) {
                     case "ArrowLeft":
@@ -5387,7 +5437,7 @@ _global.SENTRY_RELEASE = {
                       break;
                     case "Tab":
                       if (t.isComposing) return;
-                      if (e.shiftKey || !h || !c || !d || p && t.isOptionSelected(d, g)) return;
+                      if (e.shiftKey || !h || !c || !d || p && t.isOptionSelected(d, v)) return;
                       t.selectOption(d);
                       break;
                     case "Enter":
@@ -5443,10 +5493,11 @@ _global.SENTRY_RELEASE = {
                   }
                   e.preventDefault()
                 }
-              }, t.instancePrefix = "react-select-" + (t.props.instanceId || ++ti), t.state.selectValue = St(e.value), e.menuIsOpen && t.state.selectValue.length) {
-              var r = t.buildFocusableOptions(),
-                i = r.indexOf(t.state.selectValue[0]);
-              t.state.focusedOption = r[i]
+              }, t.state.instancePrefix = "react-select-" + (t.props.instanceId || ++ai), t.state.selectValue = St(e.value), e.menuIsOpen && t.state.selectValue.length) {
+              var r = t.getFocusableOptionsWithIds(),
+                i = t.buildFocusableOptions(),
+                o = i.indexOf(t.state.selectValue[0]);
+              t.state.focusableOptionsWithIds = r, t.state.focusedOption = i[o], t.state.focusedOptionId = Jr(r, i[o])
             }
             return t
           }
@@ -5517,7 +5568,8 @@ _global.SENTRY_RELEASE = {
               this.scrollToFocusedOptionOnUpdate = !(n && this.menuListRef), this.setState({
                 inputIsHiddenAfterUpdate: !1,
                 focusedValue: null,
-                focusedOption: a[s]
+                focusedOption: a[s],
+                focusedOptionId: this.getFocusedOptionId(a[s])
               }, (function() {
                 return t.onMenuOpen()
               }))
@@ -5563,14 +5615,15 @@ _global.SENTRY_RELEASE = {
                   a = i.indexOf(r);
                 r || (a = -1), "up" === e ? n = a > 0 ? a - 1 : i.length - 1 : "down" === e ? n = (a + 1) % i.length : "pageup" === e ? (n = a - t) < 0 && (n = 0) : "pagedown" === e ? (n = a + t) > i.length - 1 && (n = i.length - 1) : "last" === e && (n = i.length - 1), this.scrollToFocusedOptionOnUpdate = !0, this.setState({
                   focusedOption: i[n],
-                  focusedValue: null
+                  focusedValue: null,
+                  focusedOptionId: this.getFocusedOptionId(i[n])
                 })
               }
             }
           }, {
             key: "getTheme",
             value: function() {
-              return this.props.theme ? "function" == typeof this.props.theme ? this.props.theme(Hr) : a(a({}, Hr), this.props.theme) : Hr
+              return this.props.theme ? "function" == typeof this.props.theme ? this.props.theme(Ur) : a(a({}, Ur), this.props.theme) : Ur
             }
           }, {
             key: "getCommonProps",
@@ -5623,17 +5676,17 @@ _global.SENTRY_RELEASE = {
           }, {
             key: "isOptionDisabled",
             value: function(e, t) {
-              return Zr(this.props, e, t)
+              return ti(this.props, e, t)
             }
           }, {
             key: "isOptionSelected",
             value: function(e, t) {
-              return Jr(this.props, e, t)
+              return ri(this.props, e, t)
             }
           }, {
             key: "filterOption",
             value: function(e, t) {
-              return Qr(this.props, e, t)
+              return ii(this.props, e, t)
             }
           }, {
             key: "formatOptionLabel",
@@ -5690,8 +5743,8 @@ _global.SENTRY_RELEASE = {
                 p = this.state,
                 d = p.inputIsHidden,
                 m = p.ariaSelection,
-                g = this.commonProps,
-                v = i || this.getElementId("input"),
+                v = this.commonProps,
+                g = i || this.getElementId("input"),
                 y = a(a(a({
                   "aria-autocomplete": "list",
                   "aria-expanded": l,
@@ -5701,10 +5754,10 @@ _global.SENTRY_RELEASE = {
                   "aria-label": this.props["aria-label"],
                   "aria-labelledby": this.props["aria-labelledby"],
                   "aria-required": h,
-                  role: "combobox"
+                  role: "combobox",
+                  "aria-activedescendant": this.isAppleDevice ? void 0 : this.state.focusedOptionId || ""
                 }, l && {
-                  "aria-controls": this.getElementId("listbox"),
-                  "aria-owns": this.getElementId("listbox")
+                  "aria-controls": this.getElementId("listbox")
                 }), !r && {
                   "aria-readonly": !0
                 }), this.hasValue() ? "initial-input-focus" === (null == m ? void 0 : m.action) && {
@@ -5712,11 +5765,11 @@ _global.SENTRY_RELEASE = {
                 } : {
                   "aria-describedby": this.getElementId("placeholder")
                 });
-              return r ? c.createElement(u, (0, f.c)({}, g, {
+              return r ? c.createElement(u, (0, f.c)({}, v, {
                 autoCapitalize: "none",
                 autoComplete: "off",
                 autoCorrect: "off",
-                id: v,
+                id: g,
                 innerRef: this.getInputRef,
                 isDisabled: t,
                 isHidden: d,
@@ -5729,10 +5782,10 @@ _global.SENTRY_RELEASE = {
                 type: "text",
                 value: n
               }, y)) : c.createElement(Tr, (0, f.c)({
-                id: v,
+                id: g,
                 innerRef: this.getInputRef,
                 onBlur: this.onInputBlur,
-                onChange: vt,
+                onChange: gt,
                 onFocus: this.onInputFocus,
                 disabled: t,
                 tabIndex: s,
@@ -5758,11 +5811,11 @@ _global.SENTRY_RELEASE = {
                 p = h.isDisabled,
                 d = h.isMulti,
                 m = h.inputValue,
-                g = h.placeholder,
-                v = this.state,
-                y = v.selectValue,
-                b = v.focusedValue,
-                S = v.isFocused;
+                v = h.placeholder,
+                g = this.state,
+                y = g.selectValue,
+                b = g.focusedValue,
+                S = g.isFocused;
               if (!this.hasValue() || !u) return m ? null : c.createElement(o, (0, f.c)({}, l, {
                 key: "placeholder",
                 isDisabled: p,
@@ -5770,7 +5823,7 @@ _global.SENTRY_RELEASE = {
                 innerProps: {
                   id: this.getElementId("placeholder")
                 }
-              }), g);
+              }), v);
               if (d) return y.map((function(t, s) {
                 var o = t === b,
                   h = "".concat(e.getOptionLabel(t), "-").concat(e.getOptionValue(t));
@@ -5893,8 +5946,8 @@ _global.SENTRY_RELEASE = {
                 p = this.state.focusedOption,
                 d = this.props,
                 m = d.captureMenuScroll,
-                g = d.inputValue,
-                v = d.isLoading,
+                v = d.inputValue,
+                g = d.isLoading,
                 y = d.loadingMessage,
                 b = d.minMenuHeight,
                 S = d.maxMenuHeight,
@@ -5919,23 +5972,25 @@ _global.SENTRY_RELEASE = {
                   m = a ? void 0 : function() {
                     return e.onOptionHover(n)
                   },
-                  g = a ? void 0 : function() {
+                  v = a ? void 0 : function() {
                     return e.selectOption(n)
                   },
-                  v = "".concat(e.getElementId("option"), "-").concat(r),
+                  g = "".concat(e.getElementId("option"), "-").concat(r),
                   y = {
-                    id: v,
-                    onClick: g,
+                    id: g,
+                    onClick: v,
                     onMouseMove: m,
                     onMouseOver: m,
-                    tabIndex: -1
+                    tabIndex: -1,
+                    role: "option",
+                    "aria-selected": e.isAppleDevice ? void 0 : s
                   };
                 return c.createElement(h, (0, f.c)({}, u, {
                   innerProps: y,
                   data: n,
                   isDisabled: a,
                   isSelected: s,
-                  key: v,
+                  key: g,
                   label: o,
                   type: i,
                   value: l,
@@ -5966,15 +6021,15 @@ _global.SENTRY_RELEASE = {
                 }
                 if ("option" === t.type) return D(t, "".concat(t.index))
               }));
-              else if (v) {
+              else if (g) {
                 var I = y({
-                  inputValue: g
+                  inputValue: v
                 });
                 if (null === I) return null;
                 k = c.createElement(o, u, I)
               } else {
                 var F = T({
-                  inputValue: g
+                  inputValue: v
                 });
                 if (null === F) return null;
                 k = c.createElement(l, u, F)
@@ -5995,10 +6050,9 @@ _global.SENTRY_RELEASE = {
                     innerRef: r,
                     innerProps: {
                       onMouseDown: e.onMenuMouseDown,
-                      onMouseMove: e.onMenuMouseMove,
-                      id: e.getElementId("listbox")
+                      onMouseMove: e.onMenuMouseMove
                     },
-                    isLoading: v,
+                    isLoading: g,
                     placement: s
                   }), c.createElement(zr, {
                     captureEnabled: m,
@@ -6010,7 +6064,12 @@ _global.SENTRY_RELEASE = {
                       innerRef: function(r) {
                         e.getMenuListRef(r), t(r)
                       },
-                      isLoading: v,
+                      innerProps: {
+                        role: "listbox",
+                        "aria-multiselectable": u.isMulti,
+                        id: e.getElementId("listbox")
+                      },
+                      isLoading: g,
                       maxHeight: o,
                       focusedOption: p
                     }), k)
@@ -6090,7 +6149,8 @@ _global.SENTRY_RELEASE = {
                 focusedValue: n,
                 isFocused: a,
                 selectValue: s,
-                focusableOptions: o
+                focusableOptions: o,
+                isAppleDevice: this.isAppleDevice
               }))
             }
           }, {
@@ -6140,18 +6200,20 @@ _global.SENTRY_RELEASE = {
                 s = t.ariaSelection,
                 o = t.isFocused,
                 l = t.prevWasFocused,
-                h = e.options,
-                u = e.value,
-                c = e.menuIsOpen,
-                p = e.inputValue,
-                f = e.isMulti,
-                d = St(u),
-                m = {};
-              if (r && (u !== r.value || h !== r.options || c !== r.menuIsOpen || p !== r.inputValue)) {
-                var g = c ? function(e, t) {
-                    return $r(qr(e, t))
-                  }(e, d) : [],
-                  v = i ? function(e, t) {
+                h = t.instancePrefix,
+                u = e.options,
+                c = e.value,
+                p = e.menuIsOpen,
+                f = e.inputValue,
+                d = e.isMulti,
+                m = St(c),
+                v = {};
+              if (r && (c !== r.value || u !== r.options || p !== r.menuIsOpen || f !== r.inputValue)) {
+                var g = p ? function(e, t) {
+                    return Xr(Yr(e, t))
+                  }(e, m) : [],
+                  y = p ? Kr(Yr(e, m), "".concat(h, "-option")) : [],
+                  b = i ? function(e, t) {
                     var r = e.focusedValue,
                       i = e.selectValue.indexOf(r);
                     if (i > -1) {
@@ -6159,40 +6221,42 @@ _global.SENTRY_RELEASE = {
                       if (i < t.length) return t[i]
                     }
                     return null
-                  }(t, d) : null,
-                  y = function(e, t) {
+                  }(t, m) : null,
+                  S = function(e, t) {
                     var r = e.focusedOption;
                     return r && t.indexOf(r) > -1 ? r : t[0]
                   }(t, g);
-                m = {
-                  selectValue: d,
-                  focusedOption: y,
-                  focusedValue: v,
+                v = {
+                  selectValue: m,
+                  focusedOption: S,
+                  focusedOptionId: Jr(y, S),
+                  focusableOptionsWithIds: y,
+                  focusedValue: b,
                   clearFocusValueOnUpdate: !1
                 }
               }
-              var b = null != n && e !== r ? {
+              var x = null != n && e !== r ? {
                   inputIsHidden: n,
                   inputIsHiddenAfterUpdate: void 0
                 } : {},
-                S = s,
-                x = o && l;
-              return o && !x && (S = {
-                value: Ot(f, d, d[0] || null),
-                options: d,
+                E = s,
+                P = o && l;
+              return o && !P && (E = {
+                value: Ot(d, m, m[0] || null),
+                options: m,
                 action: "initial-input-focus"
-              }, x = !l), "initial-input-focus" === (null == s ? void 0 : s.action) && (S = null), a(a(a({}, m), b), {}, {
+              }, P = !l), "initial-input-focus" === (null == s ? void 0 : s.action) && (E = null), a(a(a({}, v), x), {}, {
                 prevProps: e,
-                ariaSelection: S,
-                prevWasFocused: x
+                ariaSelection: E,
+                prevWasFocused: P
               })
             }
           }], r && m(t.prototype, r), i && m(t, i), Object.defineProperty(t, "prototype", {
             writable: !1
           }), s
         }(c.Component);
-      ri.defaultProps = Wr;
-      var ii = (0, c.forwardRef)((function(e, t) {
+      si.defaultProps = qr;
+      var oi = (0, c.forwardRef)((function(e, t) {
           var r = function(e) {
             var t = e.defaultInputValue,
               r = void 0 === t ? "" : t,
@@ -6204,8 +6268,8 @@ _global.SENTRY_RELEASE = {
               f = e.menuIsOpen,
               d = e.onChange,
               m = e.onInputChange,
-              g = e.onMenuClose,
-              v = e.onMenuOpen,
+              v = e.onMenuClose,
+              g = e.onMenuOpen,
               y = e.value,
               b = u(e, p),
               S = l((0, c.useState)(void 0 !== h ? h : r), 2),
@@ -6225,11 +6289,11 @@ _global.SENTRY_RELEASE = {
                 "function" == typeof m && (r = m(e, t)), E(void 0 !== r ? r : e)
               }), [m]),
               D = (0, c.useCallback)((function() {
-                "function" == typeof v && v(), w(!0)
-              }), [v]),
-              I = (0, c.useCallback)((function() {
-                "function" == typeof g && g(), w(!1)
+                "function" == typeof g && g(), w(!0)
               }), [g]),
+              I = (0, c.useCallback)((function() {
+                "function" == typeof v && v(), w(!1)
+              }), [v]),
               F = void 0 !== h ? h : x,
               O = void 0 !== f ? f : C,
               R = void 0 !== y ? y : T;
@@ -6243,11 +6307,11 @@ _global.SENTRY_RELEASE = {
               value: R
             })
           }(e);
-          return c.createElement(ri, (0, f.c)({
+          return c.createElement(si, (0, f.c)({
             ref: t
           }, r))
         })),
-        ni = ii
+        li = oi
     },
     16728: (e, t, r) => {
       "use strict";
@@ -6294,7 +6358,7 @@ _global.SENTRY_RELEASE = {
       function m(e, t) {
         return e.scrollHeight - 1 <= t
       }
-      var g = function(e) {
+      var v = function(e) {
         function t(e) {
           ! function(e, t) {
             if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
@@ -6348,24 +6412,24 @@ _global.SENTRY_RELEASE = {
               o = this._parent,
               u = this._child,
               f = (0, p.innerWidth)(o),
-              g = (0, p.innerHeight)(o);
-            if (g <= 0 || isNaN(g)) console.warn("Can not process element without height. Make sure the element is displayed and has a static height.");
+              v = (0, p.innerHeight)(o);
+            if (v <= 0 || isNaN(v)) console.warn("Can not process element without height. Make sure the element is displayed and has a static height.");
             else if (f <= 0 || isNaN(f)) console.warn("Can not process element without width. Make sure the element is displayed and has a static width.");
             else {
-              var v = (0, c.default)();
-              this.pid = v;
+              var g = (0, c.default)();
+              this.pid = g;
               var y = function() {
-                  return v !== e.pid
+                  return g !== e.pid
                 },
                 b = "multi" === n ? function() {
-                  return m(u, g)
+                  return m(u, v)
                 } : function() {
                   return d(u, f)
                 },
                 S = "multi" === n ? function() {
                   return d(u, f)
                 } : function() {
-                  return m(u, g)
+                  return m(u, v)
                 },
                 x = void 0,
                 E = r,
@@ -6391,7 +6455,7 @@ _global.SENTRY_RELEASE = {
                   x = parseInt((E + P) / 2, 10), e.setState({
                     fontSize: x
                   }, (function() {
-                    return v !== e.pid ? t(!0) : (S() ? E = x + 1 : P = x - 1, t())
+                    return g !== e.pid ? t(!0) : (S() ? E = x + 1 : P = x - 1, t())
                   }))
                 }), t))
               }, function(t) {
@@ -6445,7 +6509,7 @@ _global.SENTRY_RELEASE = {
           }
         }]), t
       }(a.default.Component);
-      g.propTypes = {
+      v.propTypes = {
         children: s.default.node,
         text: s.default.string,
         min: s.default.number,
@@ -6454,7 +6518,7 @@ _global.SENTRY_RELEASE = {
         forceSingleModeWidth: s.default.bool,
         throttle: s.default.number,
         onReady: s.default.func
-      }, g.defaultProps = {
+      }, v.defaultProps = {
         min: 1,
         max: 100,
         mode: "multi",
@@ -6462,7 +6526,7 @@ _global.SENTRY_RELEASE = {
         throttle: 50,
         autoResize: !0,
         onReady: function() {}
-      }, t.default = g
+      }, t.default = v
     },
     58936: (e, t, r) => {
       "use strict";
@@ -6717,8 +6781,8 @@ _global.SENTRY_RELEASE = {
         d = f(),
         {
           addAction: m,
-          addFilter: g,
-          removeAction: v,
+          addFilter: v,
+          removeAction: g,
           removeFilter: y,
           hasAction: b,
           hasFilter: S,
@@ -6950,7 +7014,7 @@ _global.SENTRY_RELEASE = {
         }), m || (m = function(e, t) {
           return r(e, i(t))
         });
-        var g, v = _(Array.prototype.forEach),
+        var v, g = _(Array.prototype.forEach),
           y = _(Array.prototype.pop),
           b = _(Array.prototype.push),
           S = _(String.prototype.toLowerCase),
@@ -6960,9 +7024,9 @@ _global.SENTRY_RELEASE = {
           C = _(String.prototype.indexOf),
           w = _(String.prototype.trim),
           M = _(RegExp.prototype.test),
-          T = (g = TypeError, function() {
+          T = (v = TypeError, function() {
             for (var e = arguments.length, t = new Array(e), r = 0; r < e; r++) t[r] = arguments[r];
-            return m(g, t)
+            return m(v, t)
           });
 
         function _(e) {
@@ -7044,7 +7108,7 @@ _global.SENTRY_RELEASE = {
             f = r.NamedNodeMap,
             d = void 0 === f ? r.NamedNodeMap || r.MozNamedAttrMap : f,
             m = r.HTMLFormElement,
-            g = r.DOMParser,
+            v = r.DOMParser,
             _ = r.trustedTypes,
             Q = c.prototype,
             ee = D(Q, "cloneNode"),
@@ -7087,7 +7151,7 @@ _global.SENTRY_RELEASE = {
           } catch (e) {}
           var de = {};
           n.isSupported = "function" == typeof ie && le && void 0 !== le.createHTMLDocument && 9 !== fe;
-          var me, ge, ve = H,
+          var me, ve, ge = H,
             ye = W,
             be = U,
             Se = q,
@@ -7157,16 +7221,16 @@ _global.SENTRY_RELEASE = {
               return e instanceof RegExp || e instanceof Function
             },
             ct = function(t) {
-              lt && lt === t || (t && "object" === e(t) || (t = {}), t = k(t), me = me = -1 === ot.indexOf(t.PARSER_MEDIA_TYPE) ? "text/html" : t.PARSER_MEDIA_TYPE, ge = "application/xhtml+xml" === me ? x : S, we = "ALLOWED_TAGS" in t ? A({}, t.ALLOWED_TAGS, ge) : Me, Te = "ALLOWED_ATTR" in t ? A({}, t.ALLOWED_ATTR, ge) : _e, at = "ALLOWED_NAMESPACES" in t ? A({}, t.ALLOWED_NAMESPACES, x) : st, Je = "ADD_URI_SAFE_ATTR" in t ? A(k(Qe), t.ADD_URI_SAFE_ATTR, ge) : Qe, Ke = "ADD_DATA_URI_TAGS" in t ? A(k(Ze), t.ADD_DATA_URI_TAGS, ge) : Ze, Ye = "FORBID_CONTENTS" in t ? A({}, t.FORBID_CONTENTS, ge) : Xe, ke = "FORBID_TAGS" in t ? A({}, t.FORBID_TAGS, ge) : {}, De = "FORBID_ATTR" in t ? A({}, t.FORBID_ATTR, ge) : {}, $e = "USE_PROFILES" in t && t.USE_PROFILES, Ie = !1 !== t.ALLOW_ARIA_ATTR, Fe = !1 !== t.ALLOW_DATA_ATTR, Oe = t.ALLOW_UNKNOWN_PROTOCOLS || !1, Re = !1 !== t.ALLOW_SELF_CLOSE_IN_ATTR, Le = t.SAFE_FOR_TEMPLATES || !1, Ve = t.WHOLE_DOCUMENT || !1, Ne = t.RETURN_DOM || !1, je = t.RETURN_DOM_FRAGMENT || !1, Ge = t.RETURN_TRUSTED_TYPE || !1, ze = t.FORCE_BODY || !1, He = !1 !== t.SANITIZE_DOM, We = t.SANITIZE_NAMED_PROPS || !1, Ue = !1 !== t.KEEP_CONTENT, qe = t.IN_PLACE || !1, Ce = t.ALLOWED_URI_REGEXP || Ce, it = t.NAMESPACE || rt, Ae = t.CUSTOM_ELEMENT_HANDLING || {}, t.CUSTOM_ELEMENT_HANDLING && ut(t.CUSTOM_ELEMENT_HANDLING.tagNameCheck) && (Ae.tagNameCheck = t.CUSTOM_ELEMENT_HANDLING.tagNameCheck), t.CUSTOM_ELEMENT_HANDLING && ut(t.CUSTOM_ELEMENT_HANDLING.attributeNameCheck) && (Ae.attributeNameCheck = t.CUSTOM_ELEMENT_HANDLING.attributeNameCheck), t.CUSTOM_ELEMENT_HANDLING && "boolean" == typeof t.CUSTOM_ELEMENT_HANDLING.allowCustomizedBuiltInElements && (Ae.allowCustomizedBuiltInElements = t.CUSTOM_ELEMENT_HANDLING.allowCustomizedBuiltInElements), Le && (Fe = !1), je && (Ne = !0), $e && (we = A({}, i(B)), Te = [], !0 === $e.html && (A(we, I), A(Te, z)), !0 === $e.svg && (A(we, F), A(Te, N), A(Te, G)), !0 === $e.svgFilters && (A(we, O), A(Te, N), A(Te, G)), !0 === $e.mathMl && (A(we, L), A(Te, j), A(Te, G))), t.ADD_TAGS && (we === Me && (we = k(we)), A(we, t.ADD_TAGS, ge)), t.ADD_ATTR && (Te === _e && (Te = k(Te)), A(Te, t.ADD_ATTR, ge)), t.ADD_URI_SAFE_ATTR && A(Je, t.ADD_URI_SAFE_ATTR, ge), t.FORBID_CONTENTS && (Ye === Xe && (Ye = k(Ye)), A(Ye, t.FORBID_CONTENTS, ge)), Ue && (we["#text"] = !0), Ve && A(we, ["html", "head", "body"]), we.table && (A(we, ["tbody"]), delete ke.tbody), u && u(t), lt = t)
+              lt && lt === t || (t && "object" === e(t) || (t = {}), t = k(t), me = me = -1 === ot.indexOf(t.PARSER_MEDIA_TYPE) ? "text/html" : t.PARSER_MEDIA_TYPE, ve = "application/xhtml+xml" === me ? x : S, we = "ALLOWED_TAGS" in t ? A({}, t.ALLOWED_TAGS, ve) : Me, Te = "ALLOWED_ATTR" in t ? A({}, t.ALLOWED_ATTR, ve) : _e, at = "ALLOWED_NAMESPACES" in t ? A({}, t.ALLOWED_NAMESPACES, x) : st, Je = "ADD_URI_SAFE_ATTR" in t ? A(k(Qe), t.ADD_URI_SAFE_ATTR, ve) : Qe, Ke = "ADD_DATA_URI_TAGS" in t ? A(k(Ze), t.ADD_DATA_URI_TAGS, ve) : Ze, Ye = "FORBID_CONTENTS" in t ? A({}, t.FORBID_CONTENTS, ve) : Xe, ke = "FORBID_TAGS" in t ? A({}, t.FORBID_TAGS, ve) : {}, De = "FORBID_ATTR" in t ? A({}, t.FORBID_ATTR, ve) : {}, $e = "USE_PROFILES" in t && t.USE_PROFILES, Ie = !1 !== t.ALLOW_ARIA_ATTR, Fe = !1 !== t.ALLOW_DATA_ATTR, Oe = t.ALLOW_UNKNOWN_PROTOCOLS || !1, Re = !1 !== t.ALLOW_SELF_CLOSE_IN_ATTR, Le = t.SAFE_FOR_TEMPLATES || !1, Ve = t.WHOLE_DOCUMENT || !1, Ne = t.RETURN_DOM || !1, je = t.RETURN_DOM_FRAGMENT || !1, Ge = t.RETURN_TRUSTED_TYPE || !1, ze = t.FORCE_BODY || !1, He = !1 !== t.SANITIZE_DOM, We = t.SANITIZE_NAMED_PROPS || !1, Ue = !1 !== t.KEEP_CONTENT, qe = t.IN_PLACE || !1, Ce = t.ALLOWED_URI_REGEXP || Ce, it = t.NAMESPACE || rt, Ae = t.CUSTOM_ELEMENT_HANDLING || {}, t.CUSTOM_ELEMENT_HANDLING && ut(t.CUSTOM_ELEMENT_HANDLING.tagNameCheck) && (Ae.tagNameCheck = t.CUSTOM_ELEMENT_HANDLING.tagNameCheck), t.CUSTOM_ELEMENT_HANDLING && ut(t.CUSTOM_ELEMENT_HANDLING.attributeNameCheck) && (Ae.attributeNameCheck = t.CUSTOM_ELEMENT_HANDLING.attributeNameCheck), t.CUSTOM_ELEMENT_HANDLING && "boolean" == typeof t.CUSTOM_ELEMENT_HANDLING.allowCustomizedBuiltInElements && (Ae.allowCustomizedBuiltInElements = t.CUSTOM_ELEMENT_HANDLING.allowCustomizedBuiltInElements), Le && (Fe = !1), je && (Ne = !0), $e && (we = A({}, i(B)), Te = [], !0 === $e.html && (A(we, I), A(Te, z)), !0 === $e.svg && (A(we, F), A(Te, N), A(Te, G)), !0 === $e.svgFilters && (A(we, O), A(Te, N), A(Te, G)), !0 === $e.mathMl && (A(we, L), A(Te, j), A(Te, G))), t.ADD_TAGS && (we === Me && (we = k(we)), A(we, t.ADD_TAGS, ve)), t.ADD_ATTR && (Te === _e && (Te = k(Te)), A(Te, t.ADD_ATTR, ve)), t.ADD_URI_SAFE_ATTR && A(Je, t.ADD_URI_SAFE_ATTR, ve), t.FORBID_CONTENTS && (Ye === Xe && (Ye = k(Ye)), A(Ye, t.FORBID_CONTENTS, ve)), Ue && (we["#text"] = !0), Ve && A(we, ["html", "head", "body"]), we.table && (A(we, ["tbody"]), delete ke.tbody), u && u(t), lt = t)
             },
             pt = A({}, ["mi", "mo", "mn", "ms", "mtext"]),
             ft = A({}, ["foreignobject", "desc", "title", "annotation-xml"]),
             dt = A({}, ["title", "style", "font", "a", "script"]),
             mt = A({}, F);
           A(mt, O), A(mt, R);
-          var gt = A({}, L);
-          A(gt, V);
-          var vt = function(e) {
+          var vt = A({}, L);
+          A(vt, V);
+          var gt = function(e) {
               b(n.removed, {
                 element: e
               });
@@ -7194,7 +7258,7 @@ _global.SENTRY_RELEASE = {
               }
               if (t.removeAttribute(e), "is" === e && !Te[e])
                 if (Ne || je) try {
-                  vt(t)
+                  gt(t)
                 } catch (e) {} else try {
                   t.setAttribute(e, "")
                 } catch (e) {}
@@ -7209,7 +7273,7 @@ _global.SENTRY_RELEASE = {
               "application/xhtml+xml" === me && it === rt && (e = '<html xmlns="http://www.w3.org/1999/xhtml"><head></head><body>' + e + "</body></html>");
               var n = ae ? ae.createHTML(e) : e;
               if (it === rt) try {
-                t = (new g).parseFromString(n, me)
+                t = (new v).parseFromString(n, me)
               } catch (e) {}
               if (!t || !t.documentElement) {
                 t = le.createDocument(it, "template", null);
@@ -7227,20 +7291,20 @@ _global.SENTRY_RELEASE = {
               return "object" === e(h) ? t instanceof h : t && "object" === e(t) && "number" == typeof t.nodeType && "string" == typeof t.nodeName
             },
             Et = function(e, t, r) {
-              de[e] && v(de[e], (function(e) {
+              de[e] && g(de[e], (function(e) {
                 e.call(n, t, r, lt)
               }))
             },
             Pt = function(e) {
               var t, r;
-              if (Et("beforeSanitizeElements", e, null), (r = e) instanceof m && ("string" != typeof r.nodeName || "string" != typeof r.textContent || "function" != typeof r.removeChild || !(r.attributes instanceof d) || "function" != typeof r.removeAttribute || "function" != typeof r.setAttribute || "string" != typeof r.namespaceURI || "function" != typeof r.insertBefore || "function" != typeof r.hasChildNodes)) return vt(e), !0;
-              if (M(/[\u0080-\uFFFF]/, e.nodeName)) return vt(e), !0;
-              var i = ge(e.nodeName);
+              if (Et("beforeSanitizeElements", e, null), (r = e) instanceof m && ("string" != typeof r.nodeName || "string" != typeof r.textContent || "function" != typeof r.removeChild || !(r.attributes instanceof d) || "function" != typeof r.removeAttribute || "function" != typeof r.setAttribute || "string" != typeof r.namespaceURI || "function" != typeof r.insertBefore || "function" != typeof r.hasChildNodes)) return gt(e), !0;
+              if (M(/[\u0080-\uFFFF]/, e.nodeName)) return gt(e), !0;
+              var i = ve(e.nodeName);
               if (Et("uponSanitizeElement", e, {
                   tagName: i,
                   allowedTags: we
-                }), e.hasChildNodes() && !xt(e.firstElementChild) && (!xt(e.content) || !xt(e.content.firstElementChild)) && M(/<[/\w]/g, e.innerHTML) && M(/<[/\w]/g, e.textContent)) return vt(e), !0;
-              if ("select" === i && M(/<template/i, e.innerHTML)) return vt(e), !0;
+                }), e.hasChildNodes() && !xt(e.firstElementChild) && (!xt(e.content) || !xt(e.content.firstElementChild)) && M(/<[/\w]/g, e.innerHTML) && M(/<[/\w]/g, e.textContent)) return gt(e), !0;
+              if ("select" === i && M(/<template/i, e.innerHTML)) return gt(e), !0;
               if (!we[i] || ke[i]) {
                 if (!ke[i] && wt(i)) {
                   if (Ae.tagNameCheck instanceof RegExp && M(Ae.tagNameCheck, i)) return !1;
@@ -7252,7 +7316,7 @@ _global.SENTRY_RELEASE = {
                   if (s && a)
                     for (var o = s.length - 1; o >= 0; --o) a.insertBefore(ee(s[o], !0), te(e))
                 }
-                return vt(e), !0
+                return gt(e), !0
               }
               return e instanceof c && ! function(e) {
                 var t = ie(e);
@@ -7262,10 +7326,10 @@ _global.SENTRY_RELEASE = {
                 });
                 var r = S(e.tagName),
                   i = S(t.tagName);
-                return !!at[e.namespaceURI] && (e.namespaceURI === tt ? t.namespaceURI === rt ? "svg" === r : t.namespaceURI === et ? "svg" === r && ("annotation-xml" === i || pt[i]) : Boolean(mt[r]) : e.namespaceURI === et ? t.namespaceURI === rt ? "math" === r : t.namespaceURI === tt ? "math" === r && ft[i] : Boolean(gt[r]) : e.namespaceURI === rt ? !(t.namespaceURI === tt && !ft[i]) && !(t.namespaceURI === et && !pt[i]) && !gt[r] && (dt[r] || !mt[r]) : !("application/xhtml+xml" !== me || !at[e.namespaceURI]))
-              }(e) ? (vt(e), !0) : "noscript" !== i && "noembed" !== i && "noframes" !== i || !M(/<\/no(script|embed|frames)/i, e.innerHTML) ? (Le && 3 === e.nodeType && (t = e.textContent, t = P(t, ve, " "), t = P(t, ye, " "), t = P(t, be, " "), e.textContent !== t && (b(n.removed, {
+                return !!at[e.namespaceURI] && (e.namespaceURI === tt ? t.namespaceURI === rt ? "svg" === r : t.namespaceURI === et ? "svg" === r && ("annotation-xml" === i || pt[i]) : Boolean(mt[r]) : e.namespaceURI === et ? t.namespaceURI === rt ? "math" === r : t.namespaceURI === tt ? "math" === r && ft[i] : Boolean(vt[r]) : e.namespaceURI === rt ? !(t.namespaceURI === tt && !ft[i]) && !(t.namespaceURI === et && !pt[i]) && !vt[r] && (dt[r] || !mt[r]) : !("application/xhtml+xml" !== me || !at[e.namespaceURI]))
+              }(e) ? (gt(e), !0) : "noscript" !== i && "noembed" !== i && "noframes" !== i || !M(/<\/no(script|embed|frames)/i, e.innerHTML) ? (Le && 3 === e.nodeType && (t = e.textContent, t = P(t, ge, " "), t = P(t, ye, " "), t = P(t, be, " "), e.textContent !== t && (b(n.removed, {
                 element: e.cloneNode()
-              }), e.textContent = t)), Et("afterSanitizeElements", e, null), !1) : (vt(e), !0)
+              }), e.textContent = t)), Et("afterSanitizeElements", e, null), !1) : (gt(e), !0)
             },
             Ct = function(e, t, r) {
               if (He && ("id" === t || "name" === t) && (r in s || r in ht)) return !1;
@@ -7298,10 +7362,10 @@ _global.SENTRY_RELEASE = {
                   var h = r = o[s],
                     u = h.name,
                     c = h.namespaceURI;
-                  if (i = "value" === u ? r.value : w(r.value), a = ge(u), l.attrName = a, l.attrValue = i, l.keepAttr = !0, l.forceKeepAttr = void 0, Et("uponSanitizeAttribute", t, l), i = l.attrValue, !l.forceKeepAttr && (yt(u, t), l.keepAttr))
+                  if (i = "value" === u ? r.value : w(r.value), a = ve(u), l.attrName = a, l.attrValue = i, l.keepAttr = !0, l.forceKeepAttr = void 0, Et("uponSanitizeAttribute", t, l), i = l.attrValue, !l.forceKeepAttr && (yt(u, t), l.keepAttr))
                     if (Re || !M(/\/>/i, i)) {
-                      Le && (i = P(i, ve, " "), i = P(i, ye, " "), i = P(i, be, " "));
-                      var p = ge(t.nodeName);
+                      Le && (i = P(i, ge, " "), i = P(i, ye, " "), i = P(i, be, " "));
+                      var p = ve(t.nodeName);
                       if (Ct(p, a, i)) {
                         if (!We || "id" !== a && "name" !== a || (yt(u, t), i = "user-content-" + i), ae && "object" === e(_) && "function" == typeof _.getAttributeType)
                           if (c);
@@ -7341,7 +7405,7 @@ _global.SENTRY_RELEASE = {
             }
             if (Be || ct(p), n.removed = [], "string" == typeof t && (qe = !1), qe) {
               if (t.nodeName) {
-                var f = ge(t.nodeName);
+                var f = ve(t.nodeName);
                 if (!we[f] || ke[f]) throw T("root node is forbidden and cannot be sanitized in-place")
               }
             } else if (t instanceof h) 1 === (s = (i = bt("\x3c!----\x3e")).ownerDocument.importNode(t, !0)).nodeType && "BODY" === s.nodeName || "HTML" === s.nodeName ? i = s : i.appendChild(s);
@@ -7349,7 +7413,7 @@ _global.SENTRY_RELEASE = {
               if (!Ne && !Le && !Ve && -1 === t.indexOf("<")) return ae && Ge ? ae.createHTML(t) : t;
               if (!(i = bt(t))) return Ne ? null : Ge ? se : ""
             }
-            i && ze && vt(i.firstChild);
+            i && ze && gt(i.firstChild);
             for (var d = St(qe ? t : i); l = d.nextNode();) 3 === l.nodeType && l === u || Pt(l) || (l.content instanceof o && Tt(l.content), Mt(l), u = l);
             if (u = null, qe) return t;
             if (Ne) {
@@ -7359,15 +7423,15 @@ _global.SENTRY_RELEASE = {
               return (Te.shadowroot || Te.shadowrootmod) && (c = pe.call(a, c, !0)), c
             }
             var m = Ve ? i.outerHTML : i.innerHTML;
-            return Ve && we["!doctype"] && i.ownerDocument && i.ownerDocument.doctype && i.ownerDocument.doctype.name && M(Z, i.ownerDocument.doctype.name) && (m = "<!DOCTYPE " + i.ownerDocument.doctype.name + ">\n" + m), Le && (m = P(m, ve, " "), m = P(m, ye, " "), m = P(m, be, " ")), ae && Ge ? ae.createHTML(m) : m
+            return Ve && we["!doctype"] && i.ownerDocument && i.ownerDocument.doctype && i.ownerDocument.doctype.name && M(Z, i.ownerDocument.doctype.name) && (m = "<!DOCTYPE " + i.ownerDocument.doctype.name + ">\n" + m), Le && (m = P(m, ge, " "), m = P(m, ye, " "), m = P(m, be, " ")), ae && Ge ? ae.createHTML(m) : m
           }, n.setConfig = function(e) {
             ct(e), Be = !0
           }, n.clearConfig = function() {
             lt = null, Be = !1
           }, n.isValidAttribute = function(e, t, r) {
             lt || ct({});
-            var i = ge(e),
-              n = ge(t);
+            var i = ve(e),
+              n = ve(t);
             return Ct(i, n, r)
           }, n.addHook = function(e, t) {
             "function" == typeof t && (de[e] = de[e] || [], b(de[e], t))
@@ -7402,9 +7466,9 @@ _global.SENTRY_RELEASE = {
               f = Object.prototype.toString.call(c),
               d = t(c),
               m = "[object Object]" === f || "[object Array]" === f,
-              g = l ? l + n + s(u) : s(u);
-            if (!p && !d && m && Object.keys(c).length && (!i.maxDepth || h < a)) return e(c, g, h + 1);
-            o[g] = c
+              v = l ? l + n + s(u) : s(u);
+            if (!p && !d && m && Object.keys(c).length && (!i.maxDepth || h < a)) return e(c, v, h + 1);
+            o[v] = c
           }))
         }(e), o
       }
@@ -7461,11 +7525,11 @@ _global.SENTRY_RELEASE = {
           return setTimeout(E(e, r), t)
         }
 
-        function g(e, t, r) {
-          return !!Array.isArray(e) && (v(e, r[t], r), !0)
+        function v(e, t, r) {
+          return !!Array.isArray(e) && (g(e, r[t], r), !0)
         }
 
-        function v(e, t, r) {
+        function g(e, t, r) {
           var i;
           if (e)
             if (e.forEach) e.forEach(t, r);
@@ -7521,13 +7585,13 @@ _global.SENTRY_RELEASE = {
         }
 
         function w(e, t, r) {
-          v(A(t), (function(t) {
+          g(A(t), (function(t) {
             e.addEventListener(t, r, !1)
           }))
         }
 
         function M(e, t, r) {
-          v(A(t), (function(t) {
+          g(A(t), (function(t) {
             e.removeEventListener(t, r, !1)
           }))
         }
@@ -7756,12 +7820,12 @@ _global.SENTRY_RELEASE = {
             5: "kinect"
           },
           me = "pointerdown",
-          ge = "pointermove pointerup pointercancel";
+          ve = "pointermove pointerup pointercancel";
 
-        function ve() {
-          this.evEl = me, this.evWin = ge, te.apply(this, arguments), this.store = this.manager.session.pointerEvents = []
+        function ge() {
+          this.evEl = me, this.evWin = ve, te.apply(this, arguments), this.store = this.manager.session.pointerEvents = []
         }
-        n.MSPointerEvent && !n.PointerEvent && (me = "MSPointerDown", ge = "MSPointerMove MSPointerUp MSPointerCancel"), x(ve, te, {
+        n.MSPointerEvent && !n.PointerEvent && (me = "MSPointerDown", ve = "MSPointerMove MSPointerUp MSPointerCancel"), x(ge, te, {
           handler: function(e) {
             var t = this.store,
               r = !1,
@@ -7926,7 +7990,7 @@ _global.SENTRY_RELEASE = {
           },
           compute: function() {
             var e = [];
-            return v(this.manager.recognizers, (function(t) {
+            return g(this.manager.recognizers, (function(t) {
                 P(t.options.enable, [t]) && (e = e.concat(t.getTouchAction()))
               })),
               function(e) {
@@ -8011,7 +8075,7 @@ _global.SENTRY_RELEASE = {
         }
 
         function et(e, t) {
-          this.options = l({}, Qe.defaults, t || {}), this.options.inputTarget = this.options.inputTarget || e, this.handlers = {}, this.session = {}, this.recognizers = [], this.oldCssProps = {}, this.element = e, this.input = new(this.options.inputClass || (V ? ve : B ? Pe : L ? Me : pe))(this, re), this.touchAction = new ze(this, this.options.touchAction), tt(this, !0), v(this.options.recognizers, (function(e) {
+          this.options = l({}, Qe.defaults, t || {}), this.options.inputTarget = this.options.inputTarget || e, this.handlers = {}, this.session = {}, this.recognizers = [], this.oldCssProps = {}, this.element = e, this.input = new(this.options.inputClass || (V ? ge : B ? Pe : L ? Me : pe))(this, re), this.touchAction = new ze(this, this.options.touchAction), tt(this, !0), g(this.options.recognizers, (function(e) {
             var t = this.add(new e[0](e[1]));
             e[2] && t.recognizeWith(e[2]), e[3] && t.requireFailure(e[3])
           }), this)
@@ -8019,7 +8083,7 @@ _global.SENTRY_RELEASE = {
 
         function tt(e, t) {
           var r, i = e.element;
-          i.style && (v(e.options.cssProps, (function(n, a) {
+          i.style && (g(e.options.cssProps, (function(n, a) {
             r = F(i.style, a), t ? (e.oldCssProps[r] = i.style[r], i.style[r] = n) : i.style[r] = e.oldCssProps[r] || ""
           })), t || (e.oldCssProps = {}))
         }
@@ -8029,20 +8093,20 @@ _global.SENTRY_RELEASE = {
             return l(this.options, e), this.manager && this.manager.touchAction.update(), this
           },
           recognizeWith: function(e) {
-            if (g(e, "recognizeWith", this)) return this;
+            if (v(e, "recognizeWith", this)) return this;
             var t = this.simultaneous;
             return t[(e = Ue(e, this)).id] || (t[e.id] = e, e.recognizeWith(this)), this
           },
           dropRecognizeWith: function(e) {
-            return g(e, "dropRecognizeWith", this) || (e = Ue(e, this), delete this.simultaneous[e.id]), this
+            return v(e, "dropRecognizeWith", this) || (e = Ue(e, this), delete this.simultaneous[e.id]), this
           },
           requireFailure: function(e) {
-            if (g(e, "requireFailure", this)) return this;
+            if (v(e, "requireFailure", this)) return this;
             var t = this.requireFail;
             return -1 === k(t, e = Ue(e, this)) && (t.push(e), e.requireFailure(this)), this
           },
           dropRequireFailure: function(e) {
-            if (g(e, "dropRequireFailure", this)) return this;
+            if (v(e, "dropRequireFailure", this)) return this;
             e = Ue(e, this);
             var t = k(this.requireFail, e);
             return t > -1 && this.requireFail.splice(t, 1), this
@@ -8308,12 +8372,12 @@ _global.SENTRY_RELEASE = {
             return null
           },
           add: function(e) {
-            if (g(e, "add", this)) return this;
+            if (v(e, "add", this)) return this;
             var t = this.get(e.options.event);
             return t && this.remove(t), this.recognizers.push(e), e.manager = this, this.touchAction.update(), e
           },
           remove: function(e) {
-            if (g(e, "remove", this)) return this;
+            if (v(e, "remove", this)) return this;
             if (e = this.get(e)) {
               var t = this.recognizers,
                 r = k(t, e); - 1 !== r && (t.splice(r, 1), this.touchAction.update())
@@ -8323,7 +8387,7 @@ _global.SENTRY_RELEASE = {
           on: function(e, t) {
             if (e !== o && t !== o) {
               var r = this.handlers;
-              return v(A(e), (function(e) {
+              return g(A(e), (function(e) {
                 r[e] = r[e] || [], r[e].push(t)
               })), this
             }
@@ -8331,7 +8395,7 @@ _global.SENTRY_RELEASE = {
           off: function(e, t) {
             if (e !== o) {
               var r = this.handlers;
-              return v(A(e), (function(e) {
+              return g(A(e), (function(e) {
                 t ? r[e] && r[e].splice(k(r[e], t), 1) : delete r[e]
               })), this
             }
@@ -8377,7 +8441,7 @@ _global.SENTRY_RELEASE = {
           TouchAction: ze,
           TouchInput: Pe,
           MouseInput: pe,
-          PointerEventInput: ve,
+          PointerEventInput: ge,
           TouchMouseInput: Me,
           SingleTouchInput: be,
           Recognizer: Ge,
@@ -8390,7 +8454,7 @@ _global.SENTRY_RELEASE = {
           Press: Xe,
           on: w,
           off: M,
-          each: v,
+          each: g,
           merge: S,
           extend: b,
           assign: l,
@@ -8461,12 +8525,12 @@ _global.SENTRY_RELEASE = {
           }
           var s = u(r);
           c && (s = s.concat(c(r)));
-          for (var o = l(t), m = l(r), g = 0; g < s.length; ++g) {
-            var v = s[g];
-            if (!(a[v] || i && i[v] || m && m[v] || o && o[v])) {
-              var y = p(r, v);
+          for (var o = l(t), m = l(r), v = 0; v < s.length; ++v) {
+            var g = s[v];
+            if (!(a[g] || i && i[g] || m && m[g] || o && o[g])) {
+              var y = p(r, g);
               try {
-                h(t, v, y)
+                h(t, g, y)
               } catch (e) {}
             }
           }
@@ -8543,8 +8607,8 @@ _global.SENTRY_RELEASE = {
       e.exports = function(e, t, r) {
         var l, h, u, c, p, f, d = 0,
           m = !1,
-          g = !1,
-          v = !0;
+          v = !1,
+          g = !0;
         if ("function" != typeof e) throw new TypeError("Expected a function");
 
         function y(t) {
@@ -8555,7 +8619,7 @@ _global.SENTRY_RELEASE = {
 
         function b(e) {
           var r = e - f;
-          return void 0 === f || r >= t || r < 0 || g && e - d >= u
+          return void 0 === f || r >= t || r < 0 || v && e - d >= u
         }
 
         function S() {
@@ -8563,12 +8627,12 @@ _global.SENTRY_RELEASE = {
           if (b(e)) return x(e);
           p = setTimeout(S, function(e) {
             var r = t - (e - f);
-            return g ? o(r, u - (e - d)) : r
+            return v ? o(r, u - (e - d)) : r
           }(e))
         }
 
         function x(e) {
-          return p = void 0, v && l ? y(e) : (l = h = void 0, c)
+          return p = void 0, g && l ? y(e) : (l = h = void 0, c)
         }
 
         function E() {
@@ -8578,11 +8642,11 @@ _global.SENTRY_RELEASE = {
             if (void 0 === p) return function(e) {
               return d = e, p = setTimeout(S, t), m ? y(e) : c
             }(f);
-            if (g) return clearTimeout(p), p = setTimeout(S, t), y(f)
+            if (v) return clearTimeout(p), p = setTimeout(S, t), y(f)
           }
           return void 0 === p && (p = setTimeout(S, t)), c
         }
-        return t = a(t) || 0, i(r) && (m = !!r.leading, u = (g = "maxWait" in r) ? s(a(r.maxWait) || 0, t) : u, v = "trailing" in r ? !!r.trailing : v), E.cancel = function() {
+        return t = a(t) || 0, i(r) && (m = !!r.leading, u = (v = "maxWait" in r) ? s(a(r.maxWait) || 0, t) : u, g = "trailing" in r ? !!r.trailing : g), E.cancel = function() {
           void 0 !== p && clearTimeout(p), d = 0, l = f = h = p = void 0
         }, E.flush = function() {
           return void 0 === p ? c : x(n())
@@ -9978,16 +10042,16 @@ _global.SENTRY_RELEASE = {
           var a, s = (a = {}, function(e, r, s, o) {
             var l = (e[0] + "_" + e[1] + "_" + r[0] + "_" + r[1] + "_" + s[0] + "_" + s[1] + "_" + o[0] + "_" + o[1]).replace(/\./g, "p");
             if (!a[l]) {
-              var h, u, c, p, f, d, m, g = getDefaultCurveSegments(),
-                v = 0,
+              var h, u, c, p, f, d, m, v = getDefaultCurveSegments(),
+                g = 0,
                 y = null;
-              2 === e.length && (e[0] !== r[0] || e[1] !== r[1]) && t(e[0], e[1], r[0], r[1], e[0] + s[0], e[1] + s[1]) && t(e[0], e[1], r[0], r[1], r[0] + o[0], r[1] + o[1]) && (g = 2);
-              var b = new i(g);
-              for (c = s.length, h = 0; h < g; h += 1) {
-                for (m = createSizedArray(c), f = h / (g - 1), d = 0, u = 0; u < c; u += 1) p = bmPow(1 - f, 3) * e[u] + 3 * bmPow(1 - f, 2) * f * (e[u] + s[u]) + 3 * (1 - f) * bmPow(f, 2) * (r[u] + o[u]) + bmPow(f, 3) * r[u], m[u] = p, null !== y && (d += bmPow(m[u] - y[u], 2));
-                v += d = bmSqrt(d), b.points[h] = new n(d, m), y = m
+              2 === e.length && (e[0] !== r[0] || e[1] !== r[1]) && t(e[0], e[1], r[0], r[1], e[0] + s[0], e[1] + s[1]) && t(e[0], e[1], r[0], r[1], r[0] + o[0], r[1] + o[1]) && (v = 2);
+              var b = new i(v);
+              for (c = s.length, h = 0; h < v; h += 1) {
+                for (m = createSizedArray(c), f = h / (v - 1), d = 0, u = 0; u < c; u += 1) p = bmPow(1 - f, 3) * e[u] + 3 * bmPow(1 - f, 2) * f * (e[u] + s[u]) + 3 * (1 - f) * bmPow(f, 2) * (r[u] + o[u]) + bmPow(f, 3) * r[u], m[u] = p, null !== y && (d += bmPow(m[u] - y[u], 2));
+                g += d = bmSqrt(d), b.points[h] = new n(d, m), y = m
               }
-              b.segmentLength = v, a[l] = b
+              b.segmentLength = g, a[l] = b
             }
             return a[l]
           });
@@ -10027,8 +10091,8 @@ _global.SENTRY_RELEASE = {
                 f = t.length,
                 d = 1 - c,
                 m = 1 - p,
-                g = d * d * d,
-                v = c * d * d * 3,
+                v = d * d * d,
+                g = c * d * d * 3,
                 y = c * c * d * 3,
                 b = c * c * c,
                 S = d * d * m,
@@ -10043,7 +10107,7 @@ _global.SENTRY_RELEASE = {
                 A = p * m * m + m * p * m + m * m * p,
                 k = p * p * m + m * p * p + p * m * p,
                 D = p * p * p;
-              for (u = 0; u < f; u += 1) l[4 * u] = e.round(1e3 * (g * t[u] + v * i[u] + y * n[u] + b * r[u])) / 1e3, l[4 * u + 1] = e.round(1e3 * (S * t[u] + x * i[u] + E * n[u] + P * r[u])) / 1e3, l[4 * u + 2] = e.round(1e3 * (C * t[u] + w * i[u] + M * n[u] + T * r[u])) / 1e3, l[4 * u + 3] = e.round(1e3 * (_ * t[u] + A * i[u] + k * n[u] + D * r[u])) / 1e3;
+              for (u = 0; u < f; u += 1) l[4 * u] = e.round(1e3 * (v * t[u] + g * i[u] + y * n[u] + b * r[u])) / 1e3, l[4 * u + 1] = e.round(1e3 * (S * t[u] + x * i[u] + E * n[u] + P * r[u])) / 1e3, l[4 * u + 2] = e.round(1e3 * (C * t[u] + w * i[u] + M * n[u] + T * r[u])) / 1e3, l[4 * u + 3] = e.round(1e3 * (_ * t[u] + A * i[u] + k * n[u] + D * r[u])) / 1e3;
               return l
             },
             getPointInSegment: function(t, r, i, n, a, s) {
@@ -10069,7 +10133,7 @@ _global.SENTRY_RELEASE = {
         function interpolateValue(e, t) {
           var r, i = this.offsetTime;
           "multidimensional" === this.propType && (r = createTypedArray("float32", this.pv.length));
-          for (var n, a, s, o, l, h, u, c, p, f = t.lastIndex, d = f, m = this.keyframes.length - 1, g = !0; g;) {
+          for (var n, a, s, o, l, h, u, c, p, f = t.lastIndex, d = f, m = this.keyframes.length - 1, v = !0; v;) {
             if (n = this.keyframes[d], a = this.keyframes[d + 1], d === m - 1 && e >= a.t - i) {
               n.h && (n = a), f = 0;
               break
@@ -10078,10 +10142,10 @@ _global.SENTRY_RELEASE = {
               f = d;
               break
             }
-            d < m - 1 ? d += 1 : (f = 0, g = !1)
+            d < m - 1 ? d += 1 : (f = 0, v = !1)
           }
           s = this.keyframesMetadata[d] || {};
-          var v, y = a.t - i,
+          var g, y = a.t - i,
             b = n.t - i;
           if (n.to) {
             s.bezierData || (s.bezierData = bez.buildBezierData(n.s, a.s || n.e, n.to, n.ti));
@@ -10093,7 +10157,7 @@ _global.SENTRY_RELEASE = {
               s.__fnct ? p = s.__fnct : (p = BezierFactory.getBezierEasing(n.o.x, n.o.y, n.i.x, n.i.y, n.n).get, s.__fnct = p), h = p((e - b) / (y - b));
               var E, P = S.segmentLength * h,
                 C = t.lastFrame < e && t._lastKeyframeIndex === d ? t._lastAddedLength : 0;
-              for (c = t.lastFrame < e && t._lastKeyframeIndex === d ? t._lastPoint : 0, g = !0, u = S.points.length; g;) {
+              for (c = t.lastFrame < e && t._lastKeyframeIndex === d ? t._lastPoint : 0, v = !0, u = S.points.length; v;) {
                 if (C += S.points[c].partialLength, 0 === P || 0 === h || c === S.points.length - 1) {
                   for (l = S.points[c].point.length, o = 0; o < l; o += 1) r[o] = S.points[c].point[o];
                   break
@@ -10102,15 +10166,15 @@ _global.SENTRY_RELEASE = {
                   for (E = (P - C) / S.points[c + 1].partialLength, l = S.points[c].point.length, o = 0; o < l; o += 1) r[o] = S.points[c].point[o] + (S.points[c + 1].point[o] - S.points[c].point[o]) * E;
                   break
                 }
-                c < u - 1 ? c += 1 : g = !1
+                c < u - 1 ? c += 1 : v = !1
               }
               t._lastPoint = c, t._lastAddedLength = C - S.points[c].partialLength, t._lastKeyframeIndex = d
             }
           } else {
             var w, M, T, _, A;
-            if (m = n.s.length, v = a.s || n.e, this.sh && 1 !== n.h) e >= y ? (r[0] = v[0], r[1] = v[1], r[2] = v[2]) : e <= b ? (r[0] = n.s[0], r[1] = n.s[1], r[2] = n.s[2]) : quaternionToEuler(r, slerp(createQuaternion(n.s), createQuaternion(v), (e - b) / (y - b)));
+            if (m = n.s.length, g = a.s || n.e, this.sh && 1 !== n.h) e >= y ? (r[0] = g[0], r[1] = g[1], r[2] = g[2]) : e <= b ? (r[0] = n.s[0], r[1] = n.s[1], r[2] = n.s[2]) : quaternionToEuler(r, slerp(createQuaternion(n.s), createQuaternion(g), (e - b) / (y - b)));
             else
-              for (d = 0; d < m; d += 1) 1 !== n.h && (e >= y ? h = 1 : e < b ? h = 0 : (n.o.x.constructor === Array ? (s.__fnct || (s.__fnct = []), s.__fnct[d] ? p = s.__fnct[d] : (w = void 0 === n.o.x[d] ? n.o.x[0] : n.o.x[d], M = void 0 === n.o.y[d] ? n.o.y[0] : n.o.y[d], T = void 0 === n.i.x[d] ? n.i.x[0] : n.i.x[d], _ = void 0 === n.i.y[d] ? n.i.y[0] : n.i.y[d], p = BezierFactory.getBezierEasing(w, M, T, _).get, s.__fnct[d] = p)) : s.__fnct ? p = s.__fnct : (w = n.o.x, M = n.o.y, T = n.i.x, _ = n.i.y, p = BezierFactory.getBezierEasing(w, M, T, _).get, n.keyframeMetadata = p), h = p((e - b) / (y - b)))), v = a.s || n.e, A = 1 === n.h ? n.s[d] : n.s[d] + (v[d] - n.s[d]) * h, "multidimensional" === this.propType ? r[d] = A : r = A
+              for (d = 0; d < m; d += 1) 1 !== n.h && (e >= y ? h = 1 : e < b ? h = 0 : (n.o.x.constructor === Array ? (s.__fnct || (s.__fnct = []), s.__fnct[d] ? p = s.__fnct[d] : (w = void 0 === n.o.x[d] ? n.o.x[0] : n.o.x[d], M = void 0 === n.o.y[d] ? n.o.y[0] : n.o.y[d], T = void 0 === n.i.x[d] ? n.i.x[0] : n.i.x[d], _ = void 0 === n.i.y[d] ? n.i.y[0] : n.i.y[d], p = BezierFactory.getBezierEasing(w, M, T, _).get, s.__fnct[d] = p)) : s.__fnct ? p = s.__fnct : (w = n.o.x, M = n.o.y, T = n.i.x, _ = n.i.y, p = BezierFactory.getBezierEasing(w, M, T, _).get, n.keyframeMetadata = p), h = p((e - b) / (y - b)))), g = a.s || n.e, A = 1 === n.h ? n.s[d] : n.s[d] + (g[d] - n.s[d]) * h, "multidimensional" === this.propType ? r[d] = A : r = A
           }
           return t.lastIndex = f, r
         }
@@ -10124,8 +10188,8 @@ _global.SENTRY_RELEASE = {
             f = t[0],
             d = t[1],
             m = t[2],
-            g = t[3];
-          return (n = h * f + u * d + c * m + p * g) < 0 && (n = -n, f = -f, d = -d, m = -m, g = -g), 1 - n > 1e-6 ? (i = Math.acos(n), a = Math.sin(i), s = Math.sin((1 - r) * i) / a, o = Math.sin(r * i) / a) : (s = 1 - r, o = r), l[0] = s * h + o * f, l[1] = s * u + o * d, l[2] = s * c + o * m, l[3] = s * p + o * g, l
+            v = t[3];
+          return (n = h * f + u * d + c * m + p * v) < 0 && (n = -n, f = -f, d = -d, m = -m, v = -v), 1 - n > 1e-6 ? (i = Math.acos(n), a = Math.sin(i), s = Math.sin((1 - r) * i) / a, o = Math.sin(r * i) / a) : (s = 1 - r, o = r), l[0] = s * h + o * f, l[1] = s * u + o * d, l[2] = s * c + o * m, l[3] = s * p + o * v, l
         }
 
         function quaternionToEuler(e, t) {
@@ -10344,13 +10408,13 @@ _global.SENTRY_RELEASE = {
               if (e < f[0].t - this.offsetTime) i = f[0].s[0], a = !0, p = 0;
               else if (e >= f[f.length - 1].t - this.offsetTime) i = f[f.length - 1].s ? f[f.length - 1].s[0] : f[f.length - 2].e[0], a = !0;
               else {
-                for (var d, m, g, v = p, y = f.length - 1, b = !0; b && (d = f[v], !((m = f[v + 1]).t - this.offsetTime > e));) v < y - 1 ? v += 1 : b = !1;
-                if (g = this.keyframesMetadata[v] || {}, p = v, !(a = 1 === d.h)) {
+                for (var d, m, v, g = p, y = f.length - 1, b = !0; b && (d = f[g], !((m = f[g + 1]).t - this.offsetTime > e));) g < y - 1 ? g += 1 : b = !1;
+                if (v = this.keyframesMetadata[g] || {}, p = g, !(a = 1 === d.h)) {
                   if (e >= m.t - this.offsetTime) u = 1;
                   else if (e < d.t - this.offsetTime) u = 0;
                   else {
                     var S;
-                    g.__fnct ? S = g.__fnct : (S = BezierFactory.getBezierEasing(d.o.x, d.o.y, d.i.x, d.i.y).get, g.__fnct = S), u = S((e - (d.t - this.offsetTime)) / (m.t - this.offsetTime - (d.t - this.offsetTime)))
+                    v.__fnct ? S = v.__fnct : (S = BezierFactory.getBezierEasing(d.o.x, d.o.y, d.i.x, d.i.y).get, v.__fnct = S), u = S((e - (d.t - this.offsetTime)) / (m.t - this.offsetTime - (d.t - this.offsetTime)))
                   }
                   n = m.s ? m.s[0] : d.e[0]
                 }
@@ -10462,10 +10526,10 @@ _global.SENTRY_RELEASE = {
                     for (this.v._length = 0, e = 0; e < n; e += 1) {
                       r = s ? h : u, i = s ? c : p;
                       var m = (t = s ? o : l) * Math.cos(f),
-                        g = t * Math.sin(f),
-                        v = 0 === m && 0 === g ? 0 : g / Math.sqrt(m * m + g * g),
-                        y = 0 === m && 0 === g ? 0 : -m / Math.sqrt(m * m + g * g);
-                      m += +this.p.v[0], g += +this.p.v[1], this.v.setTripleAt(m, g, m - v * i * r * d, g - y * i * r * d, m + v * i * r * d, g + y * i * r * d, e, !0), s = !s, f += a * d
+                        v = t * Math.sin(f),
+                        g = 0 === m && 0 === v ? 0 : v / Math.sqrt(m * m + v * v),
+                        y = 0 === m && 0 === v ? 0 : -m / Math.sqrt(m * m + v * v);
+                      m += +this.p.v[0], v += +this.p.v[1], this.v.setTripleAt(m, v, m - g * i * r * d, v - y * i * r * d, m + g * i * r * d, v + y * i * r * d, e, !0), s = !s, f += a * d
                     }
                   },
                   convertPolygonToPath: function() {
@@ -10585,33 +10649,33 @@ _global.SENTRY_RELEASE = {
             }
 
             function m(e, t, r, i, n, a, s, o, l, h, u, c, p, f, d, m) {
-              var g = this.props;
-              if (1 === e && 0 === t && 0 === r && 0 === i && 0 === n && 1 === a && 0 === s && 0 === o && 0 === l && 0 === h && 1 === u && 0 === c) return g[12] = g[12] * e + g[15] * p, g[13] = g[13] * a + g[15] * f, g[14] = g[14] * u + g[15] * d, g[15] *= m, this._identityCalculated = !1, this;
-              var v = g[0],
-                y = g[1],
-                b = g[2],
-                S = g[3],
-                x = g[4],
-                E = g[5],
-                P = g[6],
-                C = g[7],
-                w = g[8],
-                M = g[9],
-                T = g[10],
-                _ = g[11],
-                A = g[12],
-                k = g[13],
-                D = g[14],
-                I = g[15];
-              return g[0] = v * e + y * n + b * l + S * p, g[1] = v * t + y * a + b * h + S * f, g[2] = v * r + y * s + b * u + S * d, g[3] = v * i + y * o + b * c + S * m, g[4] = x * e + E * n + P * l + C * p, g[5] = x * t + E * a + P * h + C * f, g[6] = x * r + E * s + P * u + C * d, g[7] = x * i + E * o + P * c + C * m, g[8] = w * e + M * n + T * l + _ * p, g[9] = w * t + M * a + T * h + _ * f, g[10] = w * r + M * s + T * u + _ * d, g[11] = w * i + M * o + T * c + _ * m, g[12] = A * e + k * n + D * l + I * p, g[13] = A * t + k * a + D * h + I * f, g[14] = A * r + k * s + D * u + I * d, g[15] = A * i + k * o + D * c + I * m, this._identityCalculated = !1, this
+              var v = this.props;
+              if (1 === e && 0 === t && 0 === r && 0 === i && 0 === n && 1 === a && 0 === s && 0 === o && 0 === l && 0 === h && 1 === u && 0 === c) return v[12] = v[12] * e + v[15] * p, v[13] = v[13] * a + v[15] * f, v[14] = v[14] * u + v[15] * d, v[15] *= m, this._identityCalculated = !1, this;
+              var g = v[0],
+                y = v[1],
+                b = v[2],
+                S = v[3],
+                x = v[4],
+                E = v[5],
+                P = v[6],
+                C = v[7],
+                w = v[8],
+                M = v[9],
+                T = v[10],
+                _ = v[11],
+                A = v[12],
+                k = v[13],
+                D = v[14],
+                I = v[15];
+              return v[0] = g * e + y * n + b * l + S * p, v[1] = g * t + y * a + b * h + S * f, v[2] = g * r + y * s + b * u + S * d, v[3] = g * i + y * o + b * c + S * m, v[4] = x * e + E * n + P * l + C * p, v[5] = x * t + E * a + P * h + C * f, v[6] = x * r + E * s + P * u + C * d, v[7] = x * i + E * o + P * c + C * m, v[8] = w * e + M * n + T * l + _ * p, v[9] = w * t + M * a + T * h + _ * f, v[10] = w * r + M * s + T * u + _ * d, v[11] = w * i + M * o + T * c + _ * m, v[12] = A * e + k * n + D * l + I * p, v[13] = A * t + k * a + D * h + I * f, v[14] = A * r + k * s + D * u + I * d, v[15] = A * i + k * o + D * c + I * m, this._identityCalculated = !1, this
             }
 
-            function g(e) {
+            function v(e) {
               var t = e.props;
               return this.transform(t[0], t[1], t[2], t[3], t[4], t[5], t[6], t[7], t[8], t[9], t[10], t[11], t[12], t[13], t[14], t[15])
             }
 
-            function v() {
+            function g() {
               return this._identityCalculated || (this._identity = !(1 !== this.props[0] || 0 !== this.props[1] || 0 !== this.props[2] || 0 !== this.props[3] || 0 !== this.props[4] || 1 !== this.props[5] || 0 !== this.props[6] || 0 !== this.props[7] || 0 !== this.props[8] || 0 !== this.props[9] || 1 !== this.props[10] || 0 !== this.props[11] || 0 !== this.props[12] || 0 !== this.props[13] || 0 !== this.props[14] || 1 !== this.props[15]), this._identityCalculated = !0), this._identity
             }
 
@@ -10716,7 +10780,7 @@ _global.SENTRY_RELEASE = {
               return "matrix(" + I(e[0]) + "," + I(e[1]) + "," + I(e[4]) + "," + I(e[5]) + "," + I(e[12]) + "," + I(e[13]) + ")"
             }
             return function() {
-              this.reset = n, this.rotate = a, this.rotateX = s, this.rotateY = o, this.rotateZ = l, this.skew = u, this.skewFromAxis = c, this.shear = h, this.scale = p, this.setTransform = f, this.translate = d, this.transform = m, this.multiply = g, this.applyToPoint = x, this.applyToX = E, this.applyToY = P, this.applyToZ = C, this.applyToPointArray = A, this.applyToTriplePoints = _, this.applyToPointStringified = k, this.toCSS = D, this.to2dCSS = F, this.clone = b, this.cloneFromProps = S, this.equals = y, this.inversePoints = T, this.inversePoint = M, this.getInverseMatrix = w, this._t = this.transform, this.isIdentity = v, this._identity = !0, this._identityCalculated = !1, this.props = createTypedArray("float32", 16), this.reset()
+              this.reset = n, this.rotate = a, this.rotateX = s, this.rotateY = o, this.rotateZ = l, this.skew = u, this.skewFromAxis = c, this.shear = h, this.scale = p, this.setTransform = f, this.translate = d, this.transform = m, this.multiply = v, this.applyToPoint = x, this.applyToX = E, this.applyToY = P, this.applyToZ = C, this.applyToPointArray = A, this.applyToTriplePoints = _, this.applyToPointStringified = k, this.toCSS = D, this.to2dCSS = F, this.clone = b, this.cloneFromProps = S, this.equals = y, this.inversePoints = T, this.inversePoint = M, this.getInverseMatrix = w, this._t = this.transform, this.isIdentity = g, this._identity = !0, this._identityCalculated = !1, this.props = createTypedArray("float32", 16), this.reset()
             }
           }();
 
@@ -10890,7 +10954,7 @@ _global.SENTRY_RELEASE = {
             if (this._mdf)
               for (n = 0; n < p; n += 1) this.shapes[n].pathsData.length = 0, this.shapes[n].shape._mdf = !0
           } else {
-            var d, m, g = [];
+            var d, m, v = [];
             for (n = 0; n < p; n += 1)
               if ((d = this.shapes[n]).shape._mdf || this._mdf || e || 2 === this.m) {
                 if (l = (i = d.shape.paths)._length, c = 0, !d.shape._mdf && d.pathsData.length) c = d.totalShapeLength;
@@ -10900,34 +10964,34 @@ _global.SENTRY_RELEASE = {
                 }
                 f += c, d.shape._mdf = !0
               } else d.shape.paths = d.localShapeCollection;
-            var v, y = t,
+            var g, y = t,
               b = r,
               S = 0;
             for (n = p - 1; n >= 0; n -= 1)
               if ((d = this.shapes[n]).shape._mdf) {
-                for ((m = d.localShapeCollection).releaseShapes(), 2 === this.m && p > 1 ? (v = this.calculateShapeEdges(t, r, d.totalShapeLength, S, f), S += d.totalShapeLength) : v = [
+                for ((m = d.localShapeCollection).releaseShapes(), 2 === this.m && p > 1 ? (g = this.calculateShapeEdges(t, r, d.totalShapeLength, S, f), S += d.totalShapeLength) : g = [
                     [y, b]
-                  ], l = v.length, o = 0; o < l; o += 1) {
-                  y = v[o][0], b = v[o][1], g.length = 0, b <= 1 ? g.push({
+                  ], l = g.length, o = 0; o < l; o += 1) {
+                  y = g[o][0], b = g[o][1], v.length = 0, b <= 1 ? v.push({
                     s: d.totalShapeLength * y,
                     e: d.totalShapeLength * b
-                  }) : y >= 1 ? g.push({
+                  }) : y >= 1 ? v.push({
                     s: d.totalShapeLength * (y - 1),
                     e: d.totalShapeLength * (b - 1)
-                  }) : (g.push({
+                  }) : (v.push({
                     s: d.totalShapeLength * y,
                     e: d.totalShapeLength
-                  }), g.push({
+                  }), v.push({
                     s: 0,
                     e: d.totalShapeLength * (b - 1)
                   }));
-                  var x = this.addShapes(d, g[0]);
-                  if (g[0].s !== g[0].e) {
-                    if (g.length > 1)
+                  var x = this.addShapes(d, v[0]);
+                  if (v[0].s !== v[0].e) {
+                    if (v.length > 1)
                       if (d.shape.paths.shapes[d.shape.paths._length - 1].c) {
                         var E = x.pop();
-                        this.addPaths(x, m), x = this.addShapes(d, g[1], E)
-                      } else this.addPaths(x, m), x = this.addShapes(d, g[1]);
+                        this.addPaths(x, m), x = this.addShapes(d, v[1], E)
+                      } else this.addPaths(x, m), x = this.addShapes(d, v[1]);
                     this.addPaths(x, m)
                   }
                 }
@@ -10947,7 +11011,7 @@ _global.SENTRY_RELEASE = {
             f = e.shape.paths._length,
             d = 0,
             m = [],
-            g = !0;
+            v = !0;
           for (r ? (o = r._length, u = r._length) : (r = shapePool.newElement(), o = 0, u = 0), m.push(r), i = 0; i < f; i += 1) {
             for (l = c[i].lengths, r.c = p[i].c, a = p[i].c ? l.length : l.length + 1, n = 1; n < a; n += 1)
               if (d + (s = l[n - 1]).addedLength < t.s) d += s.addedLength, r.c = !1;
@@ -10956,16 +11020,16 @@ _global.SENTRY_RELEASE = {
                   r.c = !1;
                   break
                 }
-                t.s <= d && t.e >= d + s.addedLength ? (this.addSegment(p[i].v[n - 1], p[i].o[n - 1], p[i].i[n], p[i].v[n], r, o, g), g = !1) : (h = bez.getNewSegment(p[i].v[n - 1], p[i].v[n], p[i].o[n - 1], p[i].i[n], (t.s - d) / s.addedLength, (t.e - d) / s.addedLength, l[n - 1]), this.addSegmentFromArray(h, r, o, g), g = !1, r.c = !1), d += s.addedLength, o += 1
+                t.s <= d && t.e >= d + s.addedLength ? (this.addSegment(p[i].v[n - 1], p[i].o[n - 1], p[i].i[n], p[i].v[n], r, o, v), v = !1) : (h = bez.getNewSegment(p[i].v[n - 1], p[i].v[n], p[i].o[n - 1], p[i].i[n], (t.s - d) / s.addedLength, (t.e - d) / s.addedLength, l[n - 1]), this.addSegmentFromArray(h, r, o, v), v = !1, r.c = !1), d += s.addedLength, o += 1
               } if (p[i].c && l.length) {
               if (s = l[n - 1], d <= t.e) {
-                var v = l[n - 1].addedLength;
-                t.s <= d && t.e >= d + v ? (this.addSegment(p[i].v[n - 1], p[i].o[n - 1], p[i].i[0], p[i].v[0], r, o, g), g = !1) : (h = bez.getNewSegment(p[i].v[n - 1], p[i].v[0], p[i].o[n - 1], p[i].i[0], (t.s - d) / v, (t.e - d) / v, l[n - 1]), this.addSegmentFromArray(h, r, o, g), g = !1, r.c = !1)
+                var g = l[n - 1].addedLength;
+                t.s <= d && t.e >= d + g ? (this.addSegment(p[i].v[n - 1], p[i].o[n - 1], p[i].i[0], p[i].v[0], r, o, v), v = !1) : (h = bez.getNewSegment(p[i].v[n - 1], p[i].v[0], p[i].o[n - 1], p[i].i[0], (t.s - d) / g, (t.e - d) / g, l[n - 1]), this.addSegmentFromArray(h, r, o, v), v = !1, r.c = !1)
               } else r.c = !1;
               d += s.addedLength, o += 1
             }
             if (r._length && (r.setXYAt(r.v[u][0], r.v[u][1], "i", u), r.setXYAt(r.v[r._length - 1][0], r.v[r._length - 1][1], "o", r._length - 1)), d > t.e) break;
-            i < f - 1 && (r = shapePool.newElement(), g = !0, m.push(r), o = 0)
+            i < f - 1 && (r = shapePool.newElement(), v = !0, m.push(r), o = 0)
           }
           return m
         }, extendPrototype([ShapeModifier], PuckerAndBloatModifier), PuckerAndBloatModifier.prototype.initModifierProperties = function(e, t) {
@@ -11403,8 +11467,8 @@ _global.SENTRY_RELEASE = {
               f = p % 1,
               d = p > 0 ? Math.floor(p) : Math.ceil(p),
               m = this.pMatrix.props,
-              g = this.rMatrix.props,
-              v = this.sMatrix.props;
+              v = this.rMatrix.props,
+              g = this.sMatrix.props;
             this.pMatrix.reset(), this.rMatrix.reset(), this.sMatrix.reset(), this.tMatrix.reset(), this.matrix.reset();
             var y, b, S = 0;
             if (p > 0) {
@@ -11416,7 +11480,7 @@ _global.SENTRY_RELEASE = {
             }
             for (i = 1 === this.data.m ? 0 : this._currentCopies - 1, n = 1 === this.data.m ? 1 : -1, a = this._currentCopies; a;) {
               if (b = (r = (t = this.elemsData[i].it)[t.length - 1].transform.mProps.v.props).length, t[t.length - 1].transform.mProps._mdf = !0, t[t.length - 1].transform.op._mdf = !0, t[t.length - 1].transform.op.v = 1 === this._currentCopies ? this.so.v : this.so.v + (this.eo.v - this.so.v) * (i / (this._currentCopies - 1)), 0 !== S) {
-                for ((0 !== i && 1 === n || i !== this._currentCopies - 1 && -1 === n) && this.applyTransforms(this.pMatrix, this.rMatrix, this.sMatrix, this.tr, 1, !1), this.matrix.transform(g[0], g[1], g[2], g[3], g[4], g[5], g[6], g[7], g[8], g[9], g[10], g[11], g[12], g[13], g[14], g[15]), this.matrix.transform(v[0], v[1], v[2], v[3], v[4], v[5], v[6], v[7], v[8], v[9], v[10], v[11], v[12], v[13], v[14], v[15]), this.matrix.transform(m[0], m[1], m[2], m[3], m[4], m[5], m[6], m[7], m[8], m[9], m[10], m[11], m[12], m[13], m[14], m[15]), y = 0; y < b; y += 1) r[y] = this.matrix.props[y];
+                for ((0 !== i && 1 === n || i !== this._currentCopies - 1 && -1 === n) && this.applyTransforms(this.pMatrix, this.rMatrix, this.sMatrix, this.tr, 1, !1), this.matrix.transform(v[0], v[1], v[2], v[3], v[4], v[5], v[6], v[7], v[8], v[9], v[10], v[11], v[12], v[13], v[14], v[15]), this.matrix.transform(g[0], g[1], g[2], g[3], g[4], g[5], g[6], g[7], g[8], g[9], g[10], g[11], g[12], g[13], g[14], g[15]), this.matrix.transform(m[0], m[1], m[2], m[3], m[4], m[5], m[6], m[7], m[8], m[9], m[10], m[11], m[12], m[13], m[14], m[15]), y = 0; y < b; y += 1) r[y] = this.matrix.props[y];
                 this.matrix.reset()
               } else
                 for (this.matrix.reset(), y = 0; y < b; y += 1) r[y] = this.matrix.props[y];
@@ -11430,9 +11494,9 @@ _global.SENTRY_RELEASE = {
         }, RoundCornersModifier.prototype.processPath = function(e, t) {
           var r, i = shapePool.newElement();
           i.c = e.c;
-          var n, a, s, o, l, h, u, c, p, f, d, m, g = e._length,
-            v = 0;
-          for (r = 0; r < g; r += 1) n = e.v[r], s = e.o[r], a = e.i[r], n[0] === s[0] && n[1] === s[1] && n[0] === a[0] && n[1] === a[1] ? 0 !== r && r !== g - 1 || e.c ? (o = 0 === r ? e.v[g - 1] : e.v[r - 1], h = (l = Math.sqrt(Math.pow(n[0] - o[0], 2) + Math.pow(n[1] - o[1], 2))) ? Math.min(l / 2, t) / l : 0, u = d = n[0] + (o[0] - n[0]) * h, c = m = n[1] - (n[1] - o[1]) * h, p = u - (u - n[0]) * roundCorner, f = c - (c - n[1]) * roundCorner, i.setTripleAt(u, c, p, f, d, m, v), v += 1, o = r === g - 1 ? e.v[0] : e.v[r + 1], h = (l = Math.sqrt(Math.pow(n[0] - o[0], 2) + Math.pow(n[1] - o[1], 2))) ? Math.min(l / 2, t) / l : 0, u = p = n[0] + (o[0] - n[0]) * h, c = f = n[1] + (o[1] - n[1]) * h, d = u - (u - n[0]) * roundCorner, m = c - (c - n[1]) * roundCorner, i.setTripleAt(u, c, p, f, d, m, v), v += 1) : (i.setTripleAt(n[0], n[1], s[0], s[1], a[0], a[1], v), v += 1) : (i.setTripleAt(e.v[r][0], e.v[r][1], e.o[r][0], e.o[r][1], e.i[r][0], e.i[r][1], v), v += 1);
+          var n, a, s, o, l, h, u, c, p, f, d, m, v = e._length,
+            g = 0;
+          for (r = 0; r < v; r += 1) n = e.v[r], s = e.o[r], a = e.i[r], n[0] === s[0] && n[1] === s[1] && n[0] === a[0] && n[1] === a[1] ? 0 !== r && r !== v - 1 || e.c ? (o = 0 === r ? e.v[v - 1] : e.v[r - 1], h = (l = Math.sqrt(Math.pow(n[0] - o[0], 2) + Math.pow(n[1] - o[1], 2))) ? Math.min(l / 2, t) / l : 0, u = d = n[0] + (o[0] - n[0]) * h, c = m = n[1] - (n[1] - o[1]) * h, p = u - (u - n[0]) * roundCorner, f = c - (c - n[1]) * roundCorner, i.setTripleAt(u, c, p, f, d, m, g), g += 1, o = r === v - 1 ? e.v[0] : e.v[r + 1], h = (l = Math.sqrt(Math.pow(n[0] - o[0], 2) + Math.pow(n[1] - o[1], 2))) ? Math.min(l / 2, t) / l : 0, u = p = n[0] + (o[0] - n[0]) * h, c = f = n[1] + (o[1] - n[1]) * h, d = u - (u - n[0]) * roundCorner, m = c - (c - n[1]) * roundCorner, i.setTripleAt(u, c, p, f, d, m, g), g += 1) : (i.setTripleAt(n[0], n[1], s[0], s[1], a[0], a[1], g), g += 1) : (i.setTripleAt(e.v[r][0], e.v[r][1], e.o[r][0], e.o[r][1], e.i[r][0], e.i[r][1], g), g += 1);
           return i
         }, RoundCornersModifier.prototype.processShapes = function(e) {
           var t, r, i, n, a, s, o = this.shapes.length,
@@ -12084,11 +12148,11 @@ _global.SENTRY_RELEASE = {
           var o, l, h, u, c, p, f = this.masksProperties,
             d = 0,
             m = [],
-            g = createElementID(),
-            v = "clipPath",
+            v = createElementID(),
+            g = "clipPath",
             y = "clip-path";
           for (i = 0; i < s; i += 1)
-            if (("a" !== f[i].mode && "n" !== f[i].mode || f[i].inv || 100 !== f[i].o.k || f[i].o.x) && (v = "mask", y = "mask"), "s" !== f[i].mode && "i" !== f[i].mode || 0 !== d ? h = null : ((h = createNS("rect")).setAttribute("fill", "#ffffff"), h.setAttribute("width", this.element.comp.data.w || 0), h.setAttribute("height", this.element.comp.data.h || 0), m.push(h)), n = createNS("path"), "n" === f[i].mode) this.viewData[i] = {
+            if (("a" !== f[i].mode && "n" !== f[i].mode || f[i].inv || 100 !== f[i].o.k || f[i].o.x) && (g = "mask", y = "mask"), "s" !== f[i].mode && "i" !== f[i].mode || 0 !== d ? h = null : ((h = createNS("rect")).setAttribute("fill", "#ffffff"), h.setAttribute("width", this.element.comp.data.w || 0), h.setAttribute("height", this.element.comp.data.h || 0), m.push(h)), n = createNS("path"), "n" === f[i].mode) this.viewData[i] = {
               op: PropertyFactory.getProp(this.element, f[i].o, 0, .01, this.element),
               prop: ShapePropertyFactory.getShapeProp(this.element, f[i], 3),
               elem: n,
@@ -12096,7 +12160,7 @@ _global.SENTRY_RELEASE = {
             }, a.appendChild(n);
             else {
               var b;
-              if (d += 1, n.setAttribute("fill", "s" === f[i].mode ? "#000000" : "#ffffff"), n.setAttribute("clip-rule", "nonzero"), 0 !== f[i].x.k ? (v = "mask", y = "mask", p = PropertyFactory.getProp(this.element, f[i].x, 0, null, this.element), b = createElementID(), (u = createNS("filter")).setAttribute("id", b), (c = createNS("feMorphology")).setAttribute("operator", "erode"), c.setAttribute("in", "SourceGraphic"), c.setAttribute("radius", "0"), u.appendChild(c), a.appendChild(u), n.setAttribute("stroke", "s" === f[i].mode ? "#000000" : "#ffffff")) : (c = null, p = null), this.storedData[i] = {
+              if (d += 1, n.setAttribute("fill", "s" === f[i].mode ? "#000000" : "#ffffff"), n.setAttribute("clip-rule", "nonzero"), 0 !== f[i].x.k ? (g = "mask", y = "mask", p = PropertyFactory.getProp(this.element, f[i].x, 0, null, this.element), b = createElementID(), (u = createNS("filter")).setAttribute("id", b), (c = createNS("feMorphology")).setAttribute("operator", "erode"), c.setAttribute("in", "SourceGraphic"), c.setAttribute("radius", "0"), u.appendChild(c), a.appendChild(u), n.setAttribute("stroke", "s" === f[i].mode ? "#000000" : "#ffffff")) : (c = null, p = null), this.storedData[i] = {
                   elem: n,
                   x: p,
                   expan: c,
@@ -12109,7 +12173,7 @@ _global.SENTRY_RELEASE = {
                 var S = createNS("g");
                 for (o = 0; o < l; o += 1) S.appendChild(m[o]);
                 var x = createNS("mask");
-                x.setAttribute("mask-type", "alpha"), x.setAttribute("id", g + "_" + d), x.appendChild(n), a.appendChild(x), S.setAttribute("mask", "url(" + getLocationHref() + "#" + g + "_" + d + ")"), m.length = 0, m.push(S)
+                x.setAttribute("mask-type", "alpha"), x.setAttribute("id", v + "_" + d), x.appendChild(n), a.appendChild(x), S.setAttribute("mask", "url(" + getLocationHref() + "#" + v + "_" + d + ")"), m.length = 0, m.push(S)
               } else m.push(n);
               f[i].inv && !this.solidPath && (this.solidPath = this.createLayerSolidPath()), this.viewData[i] = {
                 elem: n,
@@ -12118,8 +12182,8 @@ _global.SENTRY_RELEASE = {
                 prop: ShapePropertyFactory.getShapeProp(this.element, f[i], 3),
                 invRect: h
               }, this.viewData[i].prop.k || this.drawPath(f[i], this.viewData[i].prop.v, this.viewData[i])
-            } for (this.maskElement = createNS(v), s = m.length, i = 0; i < s; i += 1) this.maskElement.appendChild(m[i]);
-          d > 0 && (this.maskElement.setAttribute("id", g), this.element.maskedElement.setAttribute(y, "url(" + getLocationHref() + "#" + g + ")"), a.appendChild(this.maskElement)), this.viewData.length && this.element.addRenderableComponent(this)
+            } for (this.maskElement = createNS(g), s = m.length, i = 0; i < s; i += 1) this.maskElement.appendChild(m[i]);
+          d > 0 && (this.maskElement.setAttribute("id", v), this.element.maskedElement.setAttribute(y, "url(" + getLocationHref() + "#" + v + ")"), a.appendChild(this.maskElement)), this.viewData.length && this.element.addRenderableComponent(this)
         }
         TransformElement.prototype = {
           initTransform: function() {
@@ -12577,12 +12641,12 @@ _global.SENTRY_RELEASE = {
 
             function n(r, i, n) {
               var a, s, o, l, h, u, c, p, f, d, m = i.styles.length,
-                g = i.lvl;
+                v = i.lvl;
               for (u = 0; u < m; u += 1) {
-                if (l = i.sh._mdf || n, i.styles[u].lvl < g) {
-                  for (p = t.reset(), f = g - i.styles[u].lvl, d = i.transformers.length - 1; !l && f > 0;) l = i.transformers[d].mProps._mdf || l, f -= 1, d -= 1;
+                if (l = i.sh._mdf || n, i.styles[u].lvl < v) {
+                  for (p = t.reset(), f = v - i.styles[u].lvl, d = i.transformers.length - 1; !l && f > 0;) l = i.transformers[d].mProps._mdf || l, f -= 1, d -= 1;
                   if (l)
-                    for (f = g - i.styles[u].lvl, d = i.transformers.length - 1; f > 0;) p.multiply(i.transformers[d].mProps.v), f -= 1, d -= 1
+                    for (f = v - i.styles[u].lvl, d = i.transformers.length - 1; f > 0;) p.multiply(i.transformers[d].mProps.v), f -= 1, d -= 1
                 } else p = e;
                 if (s = (c = i.sh.paths)._length, l) {
                   for (o = "", a = 0; a < s; a += 1)(h = c.shapes[a]) && h._length && (o += buildShapeString(h, h._length, h.c, p));
@@ -12621,18 +12685,18 @@ _global.SENTRY_RELEASE = {
                 for (a = i.length, n = 0; n < a; n += 1)(s = i[n]).setAttribute("offset", m[4 * n] + "%"), s.setAttribute("stop-color", "rgb(" + m[4 * n + 1] + "," + m[4 * n + 2] + "," + m[4 * n + 3] + ")")
               }
               if (h && (t.g._omdf || r)) {
-                var g = t.g.o;
-                for (a = (i = t.g._collapsable ? t.cst : t.ost).length, n = 0; n < a; n += 1) s = i[n], t.g._collapsable || s.setAttribute("offset", g[2 * n] + "%"), s.setAttribute("stop-opacity", g[2 * n + 1])
+                var v = t.g.o;
+                for (a = (i = t.g._collapsable ? t.cst : t.ost).length, n = 0; n < a; n += 1) s = i[n], t.g._collapsable || s.setAttribute("offset", v[2 * n] + "%"), s.setAttribute("stop-opacity", v[2 * n + 1])
               }
               if (1 === e.t)(t.e._mdf || r) && (l.setAttribute("x2", c[0]), l.setAttribute("y2", c[1]), h && !t.g._collapsable && (t.of.setAttribute("x2", c[0]), t.of.setAttribute("y2", c[1])));
               else if ((t.s._mdf || t.e._mdf || r) && (o = Math.sqrt(Math.pow(u[0] - c[0], 2) + Math.pow(u[1] - c[1], 2)), l.setAttribute("r", o), h && !t.g._collapsable && t.of.setAttribute("r", o)), t.e._mdf || t.h._mdf || t.a._mdf || r) {
                 o || (o = Math.sqrt(Math.pow(u[0] - c[0], 2) + Math.pow(u[1] - c[1], 2)));
-                var v = Math.atan2(c[1] - u[1], c[0] - u[0]),
+                var g = Math.atan2(c[1] - u[1], c[0] - u[0]),
                   y = t.h.v;
                 y >= 1 ? y = .99 : y <= -1 && (y = -.99);
                 var b = o * y,
-                  S = Math.cos(v + t.a.v) * b + u[0],
-                  x = Math.sin(v + t.a.v) * b + u[1];
+                  S = Math.cos(g + t.a.v) * b + u[0],
+                  x = Math.sin(g + t.a.v) * b + u[1];
                 l.setAttribute("fx", S), l.setAttribute("fy", x), h && !t.g._collapsable && (t.of.setAttribute("fx", S), t.of.setAttribute("fy", x))
               }
             }
@@ -12771,7 +12835,7 @@ _global.SENTRY_RELEASE = {
           var o, l, h, u, c, p, f = [].concat(a),
             d = e.length - 1,
             m = [],
-            g = [];
+            v = [];
           for (o = d; o >= 0; o -= 1) {
             if ((p = this.searchProcessedElement(e[o])) ? t[o] = r[p - 1] : e[o]._render = s, "fl" === e[o].ty || "st" === e[o].ty || "gf" === e[o].ty || "gs" === e[o].ty || "no" === e[o].ty) p ? t[o].style.closed = !1 : t[o] = this.createStyleElement(e[o], n), e[o]._render && t[o].style.pElem.parentNode !== i && i.appendChild(t[o].style.pElem), m.push(t[o].style);
             else if ("gr" === e[o].ty) {
@@ -12779,11 +12843,11 @@ _global.SENTRY_RELEASE = {
                 for (h = t[o].it.length, l = 0; l < h; l += 1) t[o].prevViewData[l] = t[o].it[l];
               else t[o] = this.createGroupElement(e[o]);
               this.searchShapes(e[o].it, t[o].it, t[o].prevViewData, t[o].gr, n + 1, f, s), e[o]._render && t[o].gr.parentNode !== i && i.appendChild(t[o].gr)
-            } else "tr" === e[o].ty ? (p || (t[o] = this.createTransformElement(e[o], i)), u = t[o].transform, f.push(u)) : "sh" === e[o].ty || "rc" === e[o].ty || "el" === e[o].ty || "sr" === e[o].ty ? (p || (t[o] = this.createShapeElement(e[o], f, n)), this.setElementStyles(t[o])) : "tm" === e[o].ty || "rd" === e[o].ty || "ms" === e[o].ty || "pb" === e[o].ty || "zz" === e[o].ty || "op" === e[o].ty ? (p ? (c = t[o]).closed = !1 : ((c = ShapeModifiers.getModifier(e[o].ty)).init(this, e[o]), t[o] = c, this.shapeModifiers.push(c)), g.push(c)) : "rp" === e[o].ty && (p ? (c = t[o]).closed = !0 : (c = ShapeModifiers.getModifier(e[o].ty), t[o] = c, c.init(this, e, o, t), this.shapeModifiers.push(c), s = !1), g.push(c));
+            } else "tr" === e[o].ty ? (p || (t[o] = this.createTransformElement(e[o], i)), u = t[o].transform, f.push(u)) : "sh" === e[o].ty || "rc" === e[o].ty || "el" === e[o].ty || "sr" === e[o].ty ? (p || (t[o] = this.createShapeElement(e[o], f, n)), this.setElementStyles(t[o])) : "tm" === e[o].ty || "rd" === e[o].ty || "ms" === e[o].ty || "pb" === e[o].ty || "zz" === e[o].ty || "op" === e[o].ty ? (p ? (c = t[o]).closed = !1 : ((c = ShapeModifiers.getModifier(e[o].ty)).init(this, e[o]), t[o] = c, this.shapeModifiers.push(c)), v.push(c)) : "rp" === e[o].ty && (p ? (c = t[o]).closed = !0 : (c = ShapeModifiers.getModifier(e[o].ty), t[o] = c, c.init(this, e, o, t), this.shapeModifiers.push(c), s = !1), v.push(c));
             this.addProcessedElement(e[o], o + 1)
           }
           for (d = m.length, o = 0; o < d; o += 1) m[o].closed = !0;
-          for (d = g.length, o = 0; o < d; o += 1) g[o].closed = !0
+          for (d = v.length, o = 0; o < d; o += 1) v[o].closed = !0
         }, SVGShapeElement.prototype.renderInnerContent = function() {
           var e;
           this.renderModifiers();
@@ -12841,8 +12905,8 @@ _global.SENTRY_RELEASE = {
             f = 0,
             d = 0,
             m = 0,
-            g = [],
-            v = 0,
+            v = [],
+            g = 0,
             y = 0,
             b = l.getFontByName(e.f),
             S = 0,
@@ -12851,15 +12915,15 @@ _global.SENTRY_RELEASE = {
           var E, P = e.tr / 1e3 * e.finalSize;
           if (e.sz)
             for (var C, w, M = !0, T = e.sz[0], _ = e.sz[1]; M;) {
-              C = 0, v = 0, r = (w = this.buildFinalText(e.t)).length, P = e.tr / 1e3 * e.finalSize;
+              C = 0, g = 0, r = (w = this.buildFinalText(e.t)).length, P = e.tr / 1e3 * e.finalSize;
               var A = -1;
-              for (t = 0; t < r; t += 1) E = w[t].charCodeAt(0), i = !1, " " === w[t] ? A = t : 13 !== E && 3 !== E || (v = 0, i = !0, C += e.finalLineHeight || 1.2 * e.finalSize), l.chars ? (o = l.getCharData(w[t], b.fStyle, b.fFamily), S = i ? 0 : o.w * e.finalSize / 100) : S = l.measureText(w[t], e.f, e.finalSize), v + S > T && " " !== w[t] ? (-1 === A ? r += 1 : t = A, C += e.finalLineHeight || 1.2 * e.finalSize, w.splice(t, A === t ? 1 : 0, "\r"), A = -1, v = 0) : (v += S, v += P);
+              for (t = 0; t < r; t += 1) E = w[t].charCodeAt(0), i = !1, " " === w[t] ? A = t : 13 !== E && 3 !== E || (g = 0, i = !0, C += e.finalLineHeight || 1.2 * e.finalSize), l.chars ? (o = l.getCharData(w[t], b.fStyle, b.fFamily), S = i ? 0 : o.w * e.finalSize / 100) : S = l.measureText(w[t], e.f, e.finalSize), g + S > T && " " !== w[t] ? (-1 === A ? r += 1 : t = A, C += e.finalLineHeight || 1.2 * e.finalSize, w.splice(t, A === t ? 1 : 0, "\r"), A = -1, g = 0) : (g += S, g += P);
               C += b.ascent * e.finalSize / 100, this.canResize && e.finalSize > this.minimumFontSize && _ < C ? (e.finalSize -= 1, e.finalLineHeight = e.finalSize * e.lh / e.s) : (e.finalText = w, r = e.finalText.length, M = !1)
             }
-          v = -P, S = 0;
+          g = -P, S = 0;
           var k, D = 0;
           for (t = 0; t < r; t += 1)
-            if (i = !1, 13 === (E = (k = e.finalText[t]).charCodeAt(0)) || 3 === E ? (D = 0, g.push(v), y = v > y ? v : y, v = -2 * P, n = "", i = !0, m += 1) : n = k, l.chars ? (o = l.getCharData(k, b.fStyle, l.getFontByName(e.f).fFamily), S = i ? 0 : o.w * e.finalSize / 100) : S = l.measureText(n, e.f, e.finalSize), " " === k ? D += S + P : (v += S + P + D, D = 0), u.push({
+            if (i = !1, 13 === (E = (k = e.finalText[t]).charCodeAt(0)) || 3 === E ? (D = 0, v.push(g), y = g > y ? g : y, g = -2 * P, n = "", i = !0, m += 1) : n = k, l.chars ? (o = l.getCharData(k, b.fStyle, l.getFontByName(e.f).fFamily), S = i ? 0 : o.w * e.finalSize / 100) : S = l.measureText(n, e.f, e.finalSize), " " === k ? D += S + P : (g += S + P + D, D = 0), u.push({
                 l: S,
                 an: S,
                 add: f,
@@ -12879,7 +12943,7 @@ _global.SENTRY_RELEASE = {
               f = 0, c += 1
             }
           } else u[c].ind = c, u[c].extra = 0, c += 1;
-          if (e.l = u, y = v > y ? v : y, g.push(v), e.sz) e.boxWidth = e.sz[0], e.justifyOffset = 0;
+          if (e.l = u, y = g > y ? g : y, v.push(g), e.sz) e.boxWidth = e.sz[0], e.justifyOffset = 0;
           else switch (e.boxWidth = y, e.j) {
             case 1:
               e.justifyOffset = -e.boxWidth;
@@ -12890,7 +12954,7 @@ _global.SENTRY_RELEASE = {
             default:
               e.justifyOffset = 0
           }
-          e.lineWidths = g;
+          e.lineWidths = v;
           var I, F, O, R, L = h.a;
           s = L.length;
           var V = [];
@@ -12961,10 +13025,10 @@ _global.SENTRY_RELEASE = {
                 h = l(h)
               } else 6 === p ? (c === u ? h = 0 : (i = t(e(0, i + .5 - u), c - u), h = (1 + Math.cos(Math.PI + 2 * Math.PI * i / (c - u))) / 2), h = l(h)) : (i >= r(u) && (h = e(0, t(i - u < 0 ? t(c, 1) - (u - i) : c - i, 1))), h = l(h));
               if (100 !== this.sm.v) {
-                var g = .01 * this.sm.v;
-                0 === g && (g = 1e-8);
-                var v = .5 - .5 * g;
-                h < v ? h = 0 : (h = (h - v) / g) > 1 && (h = 1)
+                var v = .01 * this.sm.v;
+                0 === v && (v = 1e-8);
+                var g = .5 - .5 * v;
+                h < g ? h = 0 : (h = (h - g) / v) > 1 && (h = 1)
               }
               return h * this.a.v
             },
@@ -13035,7 +13099,7 @@ _global.SENTRY_RELEASE = {
         }, TextAnimatorProperty.prototype.getMeasures = function(e, t) {
           if (this.lettersChangedFlag = t, this._mdf || this._isFirstFrame || t || this._hasMaskedPath && this._pathData.m._mdf) {
             this._isFirstFrame = !1;
-            var r, i, n, a, s, o, l, h, u, c, p, f, d, m, g, v, y, b, S, x = this._moreOptions.alignment.v,
+            var r, i, n, a, s, o, l, h, u, c, p, f, d, m, v, g, y, b, S, x = this._moreOptions.alignment.v,
               E = this._animatorsData,
               P = this._textData,
               C = this.mHelper,
@@ -13048,12 +13112,12 @@ _global.SENTRY_RELEASE = {
                 for (this._pathData.r.v && (A = A.reverse()), s = {
                     tLength: 0,
                     segments: []
-                  }, a = A._length - 1, v = 0, n = 0; n < a; n += 1) _ = bez.buildBezierData(A.v[n], A.v[n + 1], [A.o[n][0] - A.v[n][0], A.o[n][1] - A.v[n][1]], [A.i[n + 1][0] - A.v[n + 1][0], A.i[n + 1][1] - A.v[n + 1][1]]), s.tLength += _.segmentLength, s.segments.push(_), v += _.segmentLength;
-                n = a, S.v.c && (_ = bez.buildBezierData(A.v[n], A.v[0], [A.o[n][0] - A.v[n][0], A.o[n][1] - A.v[n][1]], [A.i[0][0] - A.v[0][0], A.i[0][1] - A.v[0][1]]), s.tLength += _.segmentLength, s.segments.push(_), v += _.segmentLength), this._pathData.pi = s
+                  }, a = A._length - 1, g = 0, n = 0; n < a; n += 1) _ = bez.buildBezierData(A.v[n], A.v[n + 1], [A.o[n][0] - A.v[n][0], A.o[n][1] - A.v[n][1]], [A.i[n + 1][0] - A.v[n + 1][0], A.i[n + 1][1] - A.v[n + 1][1]]), s.tLength += _.segmentLength, s.segments.push(_), g += _.segmentLength;
+                n = a, S.v.c && (_ = bez.buildBezierData(A.v[n], A.v[0], [A.o[n][0] - A.v[n][0], A.o[n][1] - A.v[n][1]], [A.i[0][0] - A.v[0][0], A.i[0][1] - A.v[0][1]]), s.tLength += _.segmentLength, s.segments.push(_), g += _.segmentLength), this._pathData.pi = s
               }
               if (s = this._pathData.pi, o = this._pathData.f.v, p = 0, c = 1, h = 0, u = !0, m = s.segments, o < 0 && S.v.c)
                 for (s.tLength < Math.abs(o) && (o = -Math.abs(o) % s.tLength), c = (d = m[p = m.length - 1].points).length - 1; o < 0;) o += d[c].partialLength, (c -= 1) < 0 && (c = (d = m[p -= 1].points).length - 1);
-              f = (d = m[p].points)[c - 1], g = (l = d[c]).partialLength
+              f = (d = m[p].points)[c - 1], v = (l = d[c]).partialLength
             }
             a = T.length, r = 0, i = 0;
             var k, D, I, F, O, R = 1.2 * e.finalSize * .714,
@@ -13082,23 +13146,23 @@ _global.SENTRY_RELEASE = {
                 } for (re && (re += ie); ae < n;) T[ae].animatorJustifyOffset = re, ae += 1
             }
             for (n = 0; n < a; n += 1) {
-              if (C.reset(), N = 1, T[n].n) r = 0, i += e.yOffset, i += L ? 1 : 0, o = K, L = !1, this._hasMaskedPath && (c = J, f = (d = m[p = Z].points)[c - 1], g = (l = d[c]).partialLength, h = 0), ee = "", $ = "", U = "", Y = "", te = this.defaultPropsArray;
+              if (C.reset(), N = 1, T[n].n) r = 0, i += e.yOffset, i += L ? 1 : 0, o = K, L = !1, this._hasMaskedPath && (c = J, f = (d = m[p = Z].points)[c - 1], v = (l = d[c]).partialLength, h = 0), ee = "", $ = "", U = "", Y = "", te = this.defaultPropsArray;
               else {
                 if (this._hasMaskedPath) {
                   if (Q !== T[n].line) {
                     switch (e.j) {
                       case 1:
-                        o += v - e.lineWidths[T[n].line];
+                        o += g - e.lineWidths[T[n].line];
                         break;
                       case 2:
-                        o += (v - e.lineWidths[T[n].line]) / 2
+                        o += (g - e.lineWidths[T[n].line]) / 2
                     }
                     Q = T[n].line
                   }
                   X !== T[n].ind && (T[X] && (o += T[X].extra), o += T[n].an / 2, X = T[n].ind), o += x[0] * T[n].an * .005;
                   var oe = 0;
                   for (D = 0; D < I; D += 1)(k = E[D].a).p.propType && ((O = E[D].s.getMult(T[n].anIndexes[D], P.a[D].s.totalChars)).length ? oe += k.p.v[0] * O[0] : oe += k.p.v[0] * O), k.a.propType && ((O = E[D].s.getMult(T[n].anIndexes[D], P.a[D].s.totalChars)).length ? oe += k.a.v[0] * O[0] : oe += k.a.v[0] * O);
-                  for (u = !0, this._pathData.a.v && (o = .5 * T[0].an + (v - this._pathData.f.v - .5 * T[0].an - .5 * T[T.length - 1].an) * X / (a - 1), o += this._pathData.f.v); u;) h + g >= o + oe || !d ? (y = (o + oe - h) / l.partialLength, B = f.point[0] + (l.point[0] - f.point[0]) * y, z = f.point[1] + (l.point[1] - f.point[1]) * y, C.translate(-x[0] * T[n].an * .005, -x[1] * R * .01), u = !1) : d && (h += l.partialLength, (c += 1) >= d.length && (c = 0, m[p += 1] ? d = m[p].points : S.v.c ? (c = 0, d = m[p = 0].points) : (h -= l.partialLength, d = null)), d && (f = l, g = (l = d[c]).partialLength));
+                  for (u = !0, this._pathData.a.v && (o = .5 * T[0].an + (g - this._pathData.f.v - .5 * T[0].an - .5 * T[T.length - 1].an) * X / (a - 1), o += this._pathData.f.v); u;) h + v >= o + oe || !d ? (y = (o + oe - h) / l.partialLength, B = f.point[0] + (l.point[0] - f.point[0]) * y, z = f.point[1] + (l.point[1] - f.point[1]) * y, C.translate(-x[0] * T[n].an * .005, -x[1] * R * .01), u = !1) : d && (h += l.partialLength, (c += 1) >= d.length && (c = 0, m[p += 1] ? d = m[p].points : S.v.c ? (c = 0, d = m[p = 0].points) : (h -= l.partialLength, d = null)), d && (f = l, v = (l = d[c]).partialLength));
                   V = T[n].an / 2 - T[n].add, C.translate(-V, 0, 0)
                 } else V = T[n].an / 2 - T[n].add, C.translate(-V, 0, 0), C.translate(-x[0] * T[n].an * .005, -x[1] * R * .01, 0);
                 for (D = 0; D < I; D += 1)(k = E[D].a).t.propType && (O = E[D].s.getMult(T[n].anIndexes[D], P.a[D].s.totalChars), 0 === r && 0 === e.j || (this._hasMaskedPath ? O.length ? o += k.t.v * O[0] : o += k.t.v * O : O.length ? r += k.t.v * O[0] : r += k.t.v * O));
@@ -13279,17 +13343,17 @@ _global.SENTRY_RELEASE = {
             f = !0,
             d = .001 * r.tr * r.finalSize;
           if (!u || l || r.sz) {
-            var m, g = this.textSpans.length;
+            var m, v = this.textSpans.length;
             for (e = 0; e < t; e += 1) {
               if (this.textSpans[e] || (this.textSpans[e] = {
                   span: null,
                   childSpan: null,
                   glyph: null
                 }), !l || !u || 0 === e) {
-                if (s = g > e ? this.textSpans[e].span : createNS(l ? "g" : "text"), g <= e) {
+                if (s = v > e ? this.textSpans[e].span : createNS(l ? "g" : "text"), v <= e) {
                   if (s.setAttribute("stroke-linecap", "butt"), s.setAttribute("stroke-linejoin", "round"), s.setAttribute("stroke-miterlimit", "4"), this.textSpans[e].span = s, l) {
-                    var v = createNS("g");
-                    s.appendChild(v), this.textSpans[e].childSpan = v
+                    var g = createNS("g");
+                    s.appendChild(g), this.textSpans[e].childSpan = g
                   }
                   this.textSpans[e].span = s, this.layerElement.appendChild(s)
                 }
@@ -13958,9 +14022,9 @@ _global.SENTRY_RELEASE = {
               i = s.createRadialGradient(f, d, 0, o[0], o[1], h)
             }
             var m = e.g.p,
-              g = t.g.c,
-              v = 1;
-            for (a = 0; a < m; a += 1) t.g._hasOpacity && t.g._collapsable && (v = t.g.o[2 * a + 1]), i.addColorStop(g[4 * a] / 100, "rgba(" + g[4 * a + 1] + "," + g[4 * a + 2] + "," + g[4 * a + 3] + "," + v + ")");
+              v = t.g.c,
+              g = 1;
+            for (a = 0; a < m; a += 1) t.g._hasOpacity && t.g._collapsable && (g = t.g.o[2 * a + 1]), i.addColorStop(v[4 * a] / 100, "rgba(" + v[4 * a + 1] + "," + v[4 * a + 2] + "," + v[4 * a + 3] + "," + g + ")");
             n.grd = i
           }
           n.coOp = t.o.v * r.opacity
@@ -13978,8 +14042,8 @@ _global.SENTRY_RELEASE = {
           var r = !1;
           e.sc && (r = !0, this.values.stroke = this.buildColor(e.sc), this.values.sWidth = e.sw);
           var i, n, a, s, o, l, h, u, c, p, f, d, m = this.globalData.fontManager.getFontByName(e.f),
-            g = e.l,
-            v = this.mHelper;
+            v = e.l,
+            g = this.mHelper;
           this.stroke = r, this.values.fValue = e.finalSize + "px " + this.globalData.fontManager.getFontByName(e.f).fFamily, n = e.finalText.length;
           var y = this.data.singleShape,
             b = .001 * e.tr * e.finalSize,
@@ -13988,13 +14052,13 @@ _global.SENTRY_RELEASE = {
             E = !0,
             P = 0;
           for (i = 0; i < n; i += 1) {
-            s = (a = this.globalData.fontManager.getCharData(e.finalText[i], m.fStyle, this.globalData.fontManager.getFontByName(e.f).fFamily)) && a.data || {}, v.reset(), y && g[i].n && (S = -b, x += e.yOffset, x += E ? 1 : 0, E = !1), c = (h = s.shapes ? s.shapes[0].it : []).length, v.scale(e.finalSize / 100, e.finalSize / 100), y && this.applyTextPropertiesToMatrix(e, v, g[i].line, S, x), f = createSizedArray(c - 1);
+            s = (a = this.globalData.fontManager.getCharData(e.finalText[i], m.fStyle, this.globalData.fontManager.getFontByName(e.f).fFamily)) && a.data || {}, g.reset(), y && v[i].n && (S = -b, x += e.yOffset, x += E ? 1 : 0, E = !1), c = (h = s.shapes ? s.shapes[0].it : []).length, g.scale(e.finalSize / 100, e.finalSize / 100), y && this.applyTextPropertiesToMatrix(e, g, v[i].line, S, x), f = createSizedArray(c - 1);
             var C = 0;
             for (u = 0; u < c; u += 1)
               if ("sh" === h[u].ty) {
-                for (l = h[u].ks.k.i.length, p = h[u].ks.k, d = [], o = 1; o < l; o += 1) 1 === o && d.push(v.applyToX(p.v[0][0], p.v[0][1], 0), v.applyToY(p.v[0][0], p.v[0][1], 0)), d.push(v.applyToX(p.o[o - 1][0], p.o[o - 1][1], 0), v.applyToY(p.o[o - 1][0], p.o[o - 1][1], 0), v.applyToX(p.i[o][0], p.i[o][1], 0), v.applyToY(p.i[o][0], p.i[o][1], 0), v.applyToX(p.v[o][0], p.v[o][1], 0), v.applyToY(p.v[o][0], p.v[o][1], 0));
-                d.push(v.applyToX(p.o[o - 1][0], p.o[o - 1][1], 0), v.applyToY(p.o[o - 1][0], p.o[o - 1][1], 0), v.applyToX(p.i[0][0], p.i[0][1], 0), v.applyToY(p.i[0][0], p.i[0][1], 0), v.applyToX(p.v[0][0], p.v[0][1], 0), v.applyToY(p.v[0][0], p.v[0][1], 0)), f[C] = d, C += 1
-              } y && (S += g[i].l, S += b), this.textSpans[P] ? this.textSpans[P].elem = f : this.textSpans[P] = {
+                for (l = h[u].ks.k.i.length, p = h[u].ks.k, d = [], o = 1; o < l; o += 1) 1 === o && d.push(g.applyToX(p.v[0][0], p.v[0][1], 0), g.applyToY(p.v[0][0], p.v[0][1], 0)), d.push(g.applyToX(p.o[o - 1][0], p.o[o - 1][1], 0), g.applyToY(p.o[o - 1][0], p.o[o - 1][1], 0), g.applyToX(p.i[o][0], p.i[o][1], 0), g.applyToY(p.i[o][0], p.i[o][1], 0), g.applyToX(p.v[o][0], p.v[o][1], 0), g.applyToY(p.v[o][0], p.v[o][1], 0));
+                d.push(g.applyToX(p.o[o - 1][0], p.o[o - 1][1], 0), g.applyToY(p.o[o - 1][0], p.o[o - 1][1], 0), g.applyToX(p.i[0][0], p.i[0][1], 0), g.applyToY(p.i[0][0], p.i[0][1], 0), g.applyToX(p.v[0][0], p.v[0][1], 0), g.applyToY(p.v[0][0], p.v[0][1], 0)), f[C] = d, C += 1
+              } y && (S += v[i].l, S += b), this.textSpans[P] ? this.textSpans[P].elem = f : this.textSpans[P] = {
               elem: f
             }, P += 1
           }
@@ -14331,10 +14395,10 @@ _global.SENTRY_RELEASE = {
             m = 0;
           for (i = 0; i < n; i += 1) {
             if (this.globalData.fontManager.chars ? (this.textPaths[m] ? l = this.textPaths[m] : ((l = createNS("path")).setAttribute("stroke-linecap", lineCapEnum[1]), l.setAttribute("stroke-linejoin", lineJoinEnum[2]), l.setAttribute("stroke-miterlimit", "4")), this.isMasked || (this.textSpans[m] ? u = (h = this.textSpans[m]).children[0] : ((h = createTag("div")).style.lineHeight = 0, (u = createNS("svg")).appendChild(l), styleDiv(h)))) : this.isMasked ? l = this.textPaths[m] ? this.textPaths[m] : createNS("text") : this.textSpans[m] ? (h = this.textSpans[m], l = this.textPaths[m]) : (styleDiv(h = createTag("span")), styleDiv(l = createTag("span")), h.appendChild(l)), this.globalData.fontManager.chars) {
-              var g, v = this.globalData.fontManager.getCharData(e.finalText[i], a.fStyle, this.globalData.fontManager.getFontByName(e.f).fFamily);
-              if (g = v ? v.data : null, f.reset(), g && g.shapes && g.shapes.length && (p = g.shapes[0].it, f.scale(e.finalSize / 100, e.finalSize / 100), d = this.createPathShape(f, p), l.setAttribute("d", d)), this.isMasked) this.innerElem.appendChild(l);
+              var v, g = this.globalData.fontManager.getCharData(e.finalText[i], a.fStyle, this.globalData.fontManager.getFontByName(e.f).fFamily);
+              if (v = g ? g.data : null, f.reset(), v && v.shapes && v.shapes.length && (p = v.shapes[0].it, f.scale(e.finalSize / 100, e.finalSize / 100), d = this.createPathShape(f, p), l.setAttribute("d", d)), this.isMasked) this.innerElem.appendChild(l);
               else {
-                if (this.innerElem.appendChild(h), g && g.shapes) {
+                if (this.innerElem.appendChild(h), v && v.shapes) {
                   document.body.appendChild(u);
                   var y = u.getBBox();
                   u.setAttribute("width", y.width + 2), u.setAttribute("height", y.height + 2), u.setAttribute("viewBox", y.x - 1 + " " + (y.y - 1) + " " + (y.width + 2) + " " + (y.height + 2));
@@ -14615,8 +14679,8 @@ _global.SENTRY_RELEASE = {
           function d(e) {
             return String.fromCharCode.apply(0, e)
           }
-          t["seed" + a] = function(h, m, g) {
-            var v = [],
+          t["seed" + a] = function(h, m, v) {
+            var g = [],
               y = f(p((m = !0 === m ? {
                 entropy: !0
               } : m || {}).entropy ? [h, d(e)] : null === h ? function() {
@@ -14629,8 +14693,8 @@ _global.SENTRY_RELEASE = {
                     s = a && a.plugins;
                   return [+new Date, i, s, i.screen, d(e)]
                 }
-              }() : h, 3), v),
-              b = new u(v),
+              }() : h, 3), g),
+              b = new u(g),
               S = function() {
                 for (var e = b.g(6), t = s, r = 0; e < o;) e = (e + r) * n, t *= n, r = b.g(1);
                 for (; e >= l;) e /= 2, t /= 2, r >>>= 1;
@@ -14640,7 +14704,7 @@ _global.SENTRY_RELEASE = {
               return 0 | b.g(4)
             }, S.quick = function() {
               return b.g(4) / 4294967296
-            }, S.double = S, f(d(b.S), e), (m.pass || g || function(e, r, i, n) {
+            }, S.double = S, f(d(b.S), e), (m.pass || v || function(e, r, i, n) {
               return n && (n.S && c(n, b), e.state = function() {
                 return c(b, {})
               }), i ? (t[a] = e, r) : e
@@ -15873,12 +15937,12 @@ _global.SENTRY_RELEASE = {
               }
               if ("continue" === e) {
                 var m = this.getValueAtTime(u / this.comp.globalData.frameRate, 0),
-                  g = this.getValueAtTime((u - .001) / this.comp.globalData.frameRate, 0);
+                  v = this.getValueAtTime((u - .001) / this.comp.globalData.frameRate, 0);
                 if (this.pv.length) {
-                  for (s = (o = new Array(m.length)).length, a = 0; a < s; a += 1) o[a] = m[a] + (m[a] - g[a]) * ((l - u) / this.comp.globalData.frameRate) / 5e-4;
+                  for (s = (o = new Array(m.length)).length, a = 0; a < s; a += 1) o[a] = m[a] + (m[a] - v[a]) * ((l - u) / this.comp.globalData.frameRate) / 5e-4;
                   return o
                 }
-                return m + (l - u) / .001 * (m - g)
+                return m + (l - u) / .001 * (m - v)
               }
             }
             return this.getValueAtTime(((l - n) % i + n) / this.comp.globalData.frameRate, 0)
@@ -15907,12 +15971,12 @@ _global.SENTRY_RELEASE = {
               }
               if ("continue" === e) {
                 var m = this.getValueAtTime(u / this.comp.globalData.frameRate, 0),
-                  g = this.getValueAtTime((u + .001) / this.comp.globalData.frameRate, 0);
+                  v = this.getValueAtTime((u + .001) / this.comp.globalData.frameRate, 0);
                 if (this.pv.length) {
-                  for (s = (o = new Array(m.length)).length, a = 0; a < s; a += 1) o[a] = m[a] + (m[a] - g[a]) * (u - l) / .001;
+                  for (s = (o = new Array(m.length)).length, a = 0; a < s; a += 1) o[a] = m[a] + (m[a] - v[a]) * (u - l) / .001;
                   return o
                 }
-                return m + (m - g) * (u - l) / .001
+                return m + (m - v) * (u - l) / .001
               }
             }
             return this.getValueAtTime((i - ((u - l) % i + u)) / this.comp.globalData.frameRate, 0)
@@ -16404,8 +16468,8 @@ _global.SENTRY_RELEASE = {
         f = r ? Symbol.for("react.suspense") : 60113,
         d = r ? Symbol.for("react.suspense_list") : 60120,
         m = r ? Symbol.for("react.memo") : 60115,
-        g = r ? Symbol.for("react.lazy") : 60116,
-        v = r ? Symbol.for("react.block") : 60121,
+        v = r ? Symbol.for("react.lazy") : 60116,
+        g = r ? Symbol.for("react.block") : 60121,
         y = r ? Symbol.for("react.fundamental") : 60117,
         b = r ? Symbol.for("react.responder") : 60118,
         S = r ? Symbol.for("react.scope") : 60119;
@@ -16427,7 +16491,7 @@ _global.SENTRY_RELEASE = {
                   switch (e = e && e.$$typeof) {
                     case h:
                     case p:
-                    case g:
+                    case v:
                     case m:
                     case l:
                       return e;
@@ -16444,7 +16508,7 @@ _global.SENTRY_RELEASE = {
       function E(e) {
         return x(e) === c
       }
-      t.AsyncMode = u, t.ConcurrentMode = c, t.ContextConsumer = h, t.ContextProvider = l, t.Element = i, t.ForwardRef = p, t.Fragment = a, t.Lazy = g, t.Memo = m, t.Portal = n, t.Profiler = o, t.StrictMode = s, t.Suspense = f, t.isAsyncMode = function(e) {
+      t.AsyncMode = u, t.ConcurrentMode = c, t.ContextConsumer = h, t.ContextProvider = l, t.Element = i, t.ForwardRef = p, t.Fragment = a, t.Lazy = v, t.Memo = m, t.Portal = n, t.Profiler = o, t.StrictMode = s, t.Suspense = f, t.isAsyncMode = function(e) {
         return E(e) || x(e) === u
       }, t.isConcurrentMode = E, t.isContextConsumer = function(e) {
         return x(e) === h
@@ -16457,7 +16521,7 @@ _global.SENTRY_RELEASE = {
       }, t.isFragment = function(e) {
         return x(e) === a
       }, t.isLazy = function(e) {
-        return x(e) === g
+        return x(e) === v
       }, t.isMemo = function(e) {
         return x(e) === m
       }, t.isPortal = function(e) {
@@ -16469,7 +16533,7 @@ _global.SENTRY_RELEASE = {
       }, t.isSuspense = function(e) {
         return x(e) === f
       }, t.isValidElementType = function(e) {
-        return "string" == typeof e || "function" == typeof e || e === a || e === c || e === o || e === s || e === f || e === d || "object" == typeof e && null !== e && (e.$$typeof === g || e.$$typeof === m || e.$$typeof === l || e.$$typeof === h || e.$$typeof === p || e.$$typeof === y || e.$$typeof === b || e.$$typeof === S || e.$$typeof === v)
+        return "string" == typeof e || "function" == typeof e || e === a || e === c || e === o || e === s || e === f || e === d || "object" == typeof e && null !== e && (e.$$typeof === v || e.$$typeof === m || e.$$typeof === l || e.$$typeof === h || e.$$typeof === p || e.$$typeof === y || e.$$typeof === b || e.$$typeof === S || e.$$typeof === g)
       }, t.typeOf = x
     },
     12400: (e, t, r) => {
@@ -16704,13 +16768,13 @@ _global.SENTRY_RELEASE = {
           var u, c, p, f = e & h.F,
             d = e & h.G,
             m = e & h.S,
-            g = e & h.P,
-            v = e & h.B,
+            v = e & h.P,
+            g = e & h.B,
             y = e & h.W,
             b = d ? n : n[t] || (n[t] = {}),
             S = b[l],
             x = d ? i : m ? i[t] : (i[t] || {})[l];
-          for (u in d && (r = t), r)(c = !f && x && void 0 !== x[u]) && o(b, u) || (p = c ? x[u] : r[u], b[u] = d && "function" != typeof x[u] ? r[u] : v && c ? a(p, i) : y && x[u] == p ? function(e) {
+          for (u in d && (r = t), r)(c = !f && x && void 0 !== x[u]) && o(b, u) || (p = c ? x[u] : r[u], b[u] = d && "function" != typeof x[u] ? r[u] : g && c ? a(p, i) : y && x[u] == p ? function(e) {
             var t = function(t, r, i) {
               if (this instanceof e) {
                 switch (arguments.length) {
@@ -16726,7 +16790,7 @@ _global.SENTRY_RELEASE = {
               return e.apply(this, arguments)
             };
             return t[l] = e[l], t
-          }(p) : g && "function" == typeof p ? a(Function.call, p) : p, g && ((b.virtual || (b.virtual = {}))[u] = p, e & h.R && S && !S[u] && s(S, u, p)))
+          }(p) : v && "function" == typeof p ? a(Function.call, p) : p, v && ((b.virtual || (b.virtual = {}))[u] = p, e & h.R && S && !S[u] && s(S, u, p)))
         };
       h.F = 1, h.G = 2, h.S = 4, h.P = 8, h.B = 16, h.W = 32, h.U = 64, h.R = 128, e.exports = h
     },
@@ -16819,8 +16883,8 @@ _global.SENTRY_RELEASE = {
         m = function() {
           return this
         };
-      e.exports = function(e, t, r, g, v, y, b) {
-        l(r, t, g);
+      e.exports = function(e, t, r, v, g, y, b) {
+        l(r, t, v);
         var S, x, E, P = function(e) {
             if (!p && e in T) return T[e];
             switch (e) {
@@ -16835,16 +16899,16 @@ _global.SENTRY_RELEASE = {
             }
           },
           C = t + " Iterator",
-          w = v == d,
+          w = g == d,
           M = !1,
           T = e.prototype,
-          _ = T[c] || T["@@iterator"] || v && T[v],
-          A = _ || P(v),
-          k = v ? w ? P("entries") : A : void 0,
+          _ = T[c] || T["@@iterator"] || g && T[g],
+          A = _ || P(g),
+          k = g ? w ? P("entries") : A : void 0,
           D = "Array" == t && T.entries || _;
         if (D && (E = u(D.call(new e))) !== Object.prototype && E.next && (h(E, C, !0), i || "function" == typeof E[c] || s(E, c, m)), w && _ && _.name !== d && (M = !0, A = function() {
             return _.call(this)
-          }), i && !b || !p && !M && T[c] || s(T, c, A), o[t] = A, o[C] = m, v)
+          }), i && !b || !p && !M && T[c] || s(T, c, A), o[t] = A, o[C] = m, g)
           if (S = {
               values: w ? A : P(d),
               keys: y ? A : P(f),
@@ -16933,7 +16997,7 @@ _global.SENTRY_RELEASE = {
         })), 7 != h({}, e)[r] || Object.keys(h({}, t)).join("") != i
       })) ? function(e, t) {
         for (var r = o(e), h = arguments.length, u = 1, c = a.f, p = s.f; h > u;)
-          for (var f, d = l(arguments[u++]), m = c ? n(d).concat(c(d)) : n(d), g = m.length, v = 0; g > v;) f = m[v++], i && !p.call(d, f) || (r[f] = d[f]);
+          for (var f, d = l(arguments[u++]), m = c ? n(d).concat(c(d)) : n(d), v = m.length, g = 0; v > g;) f = m[g++], i && !p.call(d, f) || (r[f] = d[f]);
         return r
       } : h
     },
@@ -17298,8 +17362,8 @@ _global.SENTRY_RELEASE = {
         f = r(42516),
         d = r(33728),
         m = r(66152),
-        g = r(9684),
-        v = r(44244),
+        v = r(9684),
+        g = r(44244),
         y = r(83060),
         b = r(93536),
         S = r(47380),
@@ -17357,7 +17421,7 @@ _global.SENTRY_RELEASE = {
         },
         Z = function(e, t) {
           y(e);
-          for (var r, i = g(t = x(t)), n = 0, a = i.length; a > n;) K(e, r = i[n++], t[r]);
+          for (var r, i = v(t = x(t)), n = 0, a = i.length; a > n;) K(e, r = i[n++], t[r]);
           return e
         },
         J = function(e) {
@@ -17437,7 +17501,7 @@ _global.SENTRY_RELEASE = {
       }))), "JSON", {
         stringify: function(e) {
           for (var t, r, i = [e], n = 1; arguments.length > n;) i.push(arguments[n++]);
-          if (r = t = i[1], (b(t) || void 0 !== e) && !X(e)) return v(t) || (t = function(e, t) {
+          if (r = t = i[1], (b(t) || void 0 !== e) && !X(e)) return g(t) || (t = function(e, t) {
             if ("function" == typeof r && (t = r.call(this, e, t)), !X(t)) return t
           }), i[1] = t, R.apply(O, i)
         }
@@ -17611,7 +17675,7 @@ _global.SENTRY_RELEASE = {
         onChange: c
       } = {}) {
         var p;
-        const [f, d] = i.useState(null), m = i.useRef(), [g, v] = i.useState({
+        const [f, d] = i.useState(null), m = i.useRef(), [v, g] = i.useState({
           inView: !!h,
           entry: void 0
         });
@@ -17619,7 +17683,7 @@ _global.SENTRY_RELEASE = {
           if (o || !f) return;
           let i;
           return i = l(f, ((e, t) => {
-            v({
+            g({
               inView: e,
               entry: t
             }), m.current && m.current(e, t), t.isIntersecting && s && i && (i(), i = void 0)
@@ -17633,13 +17697,13 @@ _global.SENTRY_RELEASE = {
             i && i()
           }
         }), [Array.isArray(e) ? e.toString() : e, f, a, n, s, o, r, u, t]);
-        const y = null == (p = g.entry) ? void 0 : p.target,
+        const y = null == (p = v.entry) ? void 0 : p.target,
           b = i.useRef();
-        f || !y || s || o || b.current === y || (b.current = y, v({
+        f || !y || s || o || b.current === y || (b.current = y, g({
           inView: !!h,
           entry: void 0
         }));
-        const S = [d, g.inView, g.entry];
+        const S = [d, v.inView, v.entry];
         return S.ref = S[0], S.inView = S[1], S.entry = S[2], S
       }
       i.Component
@@ -17929,7 +17993,7 @@ _global.SENTRY_RELEASE = {
           })), "custom" !== e.type && s("paginationRender", i[0])
         }
 
-        function g() {
+        function v() {
           t.params.pagination = a(t, t.originalParams.pagination, t.params.pagination, {
             el: "swiper-pagination"
           });
@@ -17943,7 +18007,7 @@ _global.SENTRY_RELEASE = {
           })))
         }
 
-        function v() {
+        function g() {
           const e = t.params.pagination;
           if (c()) return;
           let r = t.pagination.el;
@@ -17961,7 +18025,7 @@ _global.SENTRY_RELEASE = {
             r.classList.remove(e.horizontalClass, e.verticalClass), r.classList.add(t.isHorizontal() ? e.horizontalClass : e.verticalClass)
           }))
         })), i("init", (() => {
-          !1 === t.params.pagination.enabled ? y() : (g(), m(), d())
+          !1 === t.params.pagination.enabled ? y() : (v(), m(), d())
         })), i("activeIndexChange", (() => {
           void 0 === t.snapIndex && d()
         })), i("snapIndexChange", (() => {
@@ -17969,7 +18033,7 @@ _global.SENTRY_RELEASE = {
         })), i("snapGridLengthChange", (() => {
           m(), d()
         })), i("destroy", (() => {
-          v()
+          g()
         })), i("enable disable", (() => {
           let {
             el: e
@@ -17991,7 +18055,7 @@ _global.SENTRY_RELEASE = {
           let {
             el: e
           } = t.pagination;
-          e && (e = (0, n.m)(e), e.forEach((e => e.classList.add(t.params.pagination.paginationDisabledClass)))), v()
+          e && (e = (0, n.m)(e), e.forEach((e => e.classList.add(t.params.pagination.paginationDisabledClass)))), g()
         };
         Object.assign(t.pagination, {
           enable: () => {
@@ -17999,13 +18063,13 @@ _global.SENTRY_RELEASE = {
             let {
               el: e
             } = t.pagination;
-            e && (e = (0, n.m)(e), e.forEach((e => e.classList.remove(t.params.pagination.paginationDisabledClass)))), g(), m(), d()
+            e && (e = (0, n.m)(e), e.forEach((e => e.classList.remove(t.params.pagination.paginationDisabledClass)))), v(), m(), d()
           },
           disable: y,
           render: m,
           update: d,
-          init: g,
-          destroy: v
+          init: v,
+          destroy: g
         })
       }
 

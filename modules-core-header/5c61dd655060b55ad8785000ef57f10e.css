@@ -3336,7 +3336,7 @@ body[data-show-more-content] .rockstargames-modules-core-headerc6c3d0fc75c97585f
   letter-spacing: 0;
   margin: var(--rem-1);
   opacity: 0;
-  padding: var(--rem-1) var(--rem-2);
+  padding: var(--rem-05);
   pointer-events: none;
   position: absolute;
   text-transform: uppercase;
@@ -3356,4 +3356,4 @@ body[data-show-more-content] .rockstargames-modules-core-headerc6c3d0fc75c97585f
   z-index: 9999
 }
 
-/*# sourceMappingURL=941c7337e0e68c301e476b9eb98918e5.css.map*/
+/*# sourceMappingURL=5c61dd655060b55ad8785000ef57f10e.css.map*/

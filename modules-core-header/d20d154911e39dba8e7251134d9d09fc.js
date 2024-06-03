@@ -20,9 +20,9 @@ _global.SENTRY_RELEASE = {
       var t = o(51664),
         n = Symbol.for("react.element"),
         r = Symbol.for("react.fragment"),
-        d = Object.prototype.hasOwnProperty,
-        f = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        l = {
+        l = Object.prototype.hasOwnProperty,
+        d = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        f = {
           key: !0,
           ref: !0,
           __self: !0,
@@ -33,7 +33,7 @@ _global.SENTRY_RELEASE = {
         var t, r = {},
           s = null,
           i = null;
-        for (t in void 0 !== o && (s = "" + o), void 0 !== a.key && (s = "" + a.key), void 0 !== a.ref && (i = a.ref), a) d.call(a, t) && !l.hasOwnProperty(t) && (r[t] = a[t]);
+        for (t in void 0 !== o && (s = "" + o), void 0 !== a.key && (s = "" + a.key), void 0 !== a.ref && (i = a.ref), a) l.call(a, t) && !f.hasOwnProperty(t) && (r[t] = a[t]);
         if (e && e.defaultProps)
           for (t in a = e.defaultProps) void 0 === r[t] && (r[t] = a[t]);
         return {
@@ -42,7 +42,7 @@ _global.SENTRY_RELEASE = {
           key: s,
           ref: i,
           props: r,
-          _owner: f.current
+          _owner: d.current
         }
       }
       a.Fragment = r, a.jsx = s, a.jsxs = s
@@ -52,31 +52,31 @@ _global.SENTRY_RELEASE = {
     },
     85276: (e, a, o) => {
       o.r(a), o.d(a, {
-        default: () => d
+        default: () => l
       });
       var t = o(51664),
         n = o(98584),
         r = o(95240);
-      const d = e => {
+      const l = e => {
         let {
           basename: a,
           children: o,
-          history: d
+          history: l
         } = e;
-        const [f, l] = (0, t.useState)({
-          action: d.action,
-          location: d.location
+        const [d, f] = (0, t.useState)({
+          action: l.action,
+          location: l.location
         });
-        return (0, t.useLayoutEffect)((() => d.listen(((e, a) => {
-          l({
+        return (0, t.useLayoutEffect)((() => l.listen(((e, a) => {
+          f({
             location: e,
             action: a
           })
-        }))), [d]), (0, r.jsx)(n.Router, {
+        }))), [l]), (0, r.jsx)(n.Router, {
           basename: a,
-          location: f.location,
-          navigationType: f.action,
-          navigator: d,
+          location: d.location,
+          navigationType: d.action,
+          navigator: l,
           children: o
         })
       }
