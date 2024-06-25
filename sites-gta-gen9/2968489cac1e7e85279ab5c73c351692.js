@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "49e8e441-2e8e-4a2a-810c-d1638cbac678", e._sentryDebugIdIdentifier = "sentry-dbid-49e8e441-2e8e-4a2a-810c-d1638cbac678")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "52164bc7-285d-46ef-8b82-4f4abb4cb87e", e._sentryDebugIdIdentifier = "sentry-dbid-52164bc7-285d-46ef-8b82-4f4abb4cb87e")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -15,7 +15,41 @@ var _global = "undefined" != typeof window ? window : "undefined" != typeof glob
 _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_gta_gen9 = self.webpackChunk_rockstargames_sites_gta_gen9 || []).push([
-  [2240], {
+  [7478, 5240, 2240], {
+    99576: (e, t, i) => {
+      var a = i(51664),
+        s = Symbol.for("react.element"),
+        n = Symbol.for("react.fragment"),
+        h = Object.prototype.hasOwnProperty,
+        r = a.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        g = {
+          key: !0,
+          ref: !0,
+          __self: !0,
+          __source: !0
+        };
+
+      function l(e, t, i) {
+        var a, n = {},
+          l = null,
+          o = null;
+        for (a in void 0 !== i && (l = "" + i), void 0 !== t.key && (l = "" + t.key), void 0 !== t.ref && (o = t.ref), t) h.call(t, a) && !g.hasOwnProperty(a) && (n[a] = t[a]);
+        if (e && e.defaultProps)
+          for (a in t = e.defaultProps) void 0 === n[a] && (n[a] = t[a]);
+        return {
+          $$typeof: s,
+          type: e,
+          key: l,
+          ref: o,
+          props: n,
+          _owner: r.current
+        }
+      }
+      t.Fragment = n, t.jsx = l, t.jsxs = l
+    },
+    95240: (e, t, i) => {
+      e.exports = i(99576)
+    },
     92240: (e, t, i) => {
       i.r(t), i.d(t, {
         Highlights: () => x,
@@ -25,11 +59,11 @@ _global.SENTRY_RELEASE = {
         s = i(85736),
         n = i(41272),
         h = i(1740),
-        g = i(31403),
-        r = i(48111),
+        r = i(31403),
+        g = i(48111),
         l = i(78480),
-        c = i(42836);
-      const o = (0, n.defineMessages)({
+        o = i(42836);
+      const c = (0, n.defineMessages)({
           cph_highlights_heading: {
             id: "cph_highlights_heading",
             defaultMessage: "Highlights"
@@ -85,9 +119,9 @@ _global.SENTRY_RELEASE = {
             title: i,
             summary: s,
             isActive: h,
-            index: g,
-            highlightsCount: r,
-            ...c
+            index: r,
+            highlightsCount: g,
+            ...o
           } = e;
           const d = (0, n.useIntl)(),
             u = (0, a.useRef)(null),
@@ -104,9 +138,9 @@ _global.SENTRY_RELEASE = {
           }), [x]), (0, p.jsxs)(l.motion.div, {
             id: _.content,
             "aria-hidden": !h,
-            "aria-label": d.formatMessage(o.cph_highlights_group_aria, {
-              index: g + 1,
-              total: r
+            "aria-label": d.formatMessage(c.cph_highlights_group_aria, {
+              index: r + 1,
+              total: g
             }),
             onAnimationStart: () => {
               u.current && h && setTimeout((() => u.current?.scrollTo({
@@ -118,9 +152,9 @@ _global.SENTRY_RELEASE = {
             variants: f,
             animate: h ? "fadeIn" : "fadeOut",
             "data-testid": "textWrapper",
-            ...c,
+            ...o,
             children: [t && (0, p.jsx)("h1", {
-              children: t || d.formatMessage(o.cph_highlights_heading)
+              children: t || d.formatMessage(c.cph_highlights_heading)
             }), i && (0, p.jsx)("h2", {
               className: _.heading,
               children: i
@@ -166,21 +200,21 @@ _global.SENTRY_RELEASE = {
             }),
             {
               track: f
-            } = (0, c.useGtmTrack)(),
+            } = (0, o.useGtmTrack)(),
             [x, v] = (0, a.useState)(!1),
             [k, y] = (0, a.useState)(!1),
             [w, j] = (0, a.useState)(0),
             [S, I] = (0, a.useState)(null),
-            [M, C] = (0, a.useState)([g.O4, g.Hj, g.eM]),
-            [E, N] = (0, a.useState)({}),
-            H = (0, a.useRef)(null),
-            B = (0, a.useRef)(null),
+            [E, C] = (0, a.useState)([r.O4, r.Hj, r.eM]),
+            [M, N] = (0, a.useState)({}),
+            O = (0, a.useRef)(null),
             P = (0, a.useRef)(null),
             R = (0, a.useRef)(null),
-            z = (0, a.useRef)(null),
+            H = (0, a.useRef)(null),
+            B = (0, a.useRef)(null),
             T = (0, h.useGenerateCdnSource)();
           return (0, a.useEffect)((() => {
-            const e = [g.O4, g.Hj, g.eM];
+            const e = [r.O4, r.Hj, r.eM];
             C(e)
           }), [!1]), (0, a.useEffect)((() => {
             u && !x && (f({
@@ -194,7 +228,7 @@ _global.SENTRY_RELEASE = {
             className: m.mainContainer,
             ref: _,
             children: [(0, p.jsxs)("div", {
-              ref: H,
+              ref: O,
               className: m.mainCarousel,
               onMouseEnter: () => {
                 y(!0)
@@ -204,43 +238,43 @@ _global.SENTRY_RELEASE = {
               },
               children: [t.length > 1 && (0, p.jsxs)(p.Fragment, {
                 children: [(0, p.jsx)(l.motion.button, {
-                  ref: R,
+                  ref: H,
                   type: "button",
-                  "aria-label": d.formatMessage(o.cph_highlights_previous),
+                  "aria-label": d.formatMessage(c.cph_highlights_previous),
                   className: [m.controlBtn, m.prevBtn, k ? m.fadeIn : m.fadeOut].join(" "),
                   onClick: () => {
                     f({
                       event: "carousel_previous",
                       element_placement: "Highlights"
-                    }), E && E.slidePrev()
+                    }), M && M.slidePrev()
                   },
                   disabled: w < 1
                 }), (0, p.jsx)(l.motion.button, {
-                  ref: z,
+                  ref: B,
                   type: "button",
-                  "aria-label": d.formatMessage(o.cph_highlights_next),
+                  "aria-label": d.formatMessage(c.cph_highlights_next),
                   className: [m.controlBtn, m.nextBtn, k ? m.fadeIn : m.fadeOut].join(" "),
                   onClick: () => {
                     f({
                       event: "carousel_next",
                       element_placement: "Highlights"
-                    }), E && E.slideNext()
+                    }), M && M.slideNext()
                   },
                   disabled: w === t.length - 1
                 })]
-              }), (0, p.jsx)(r.wx, {
+              }), (0, p.jsx)(g.wx, {
                 onInit: e => N(e),
                 onBeforeInit: e => {
-                  B.current = e
+                  P.current = e
                 },
-                modules: M,
+                modules: E,
                 onSlideChange: e => {
                   const t = e.realIndex;
                   j(t)
                 },
                 navigation: {
-                  prevEl: R.current,
-                  nextEl: z.current
+                  prevEl: H.current,
+                  nextEl: B.current
                 },
                 pagination: {
                   clickable: !0
@@ -263,7 +297,7 @@ _global.SENTRY_RELEASE = {
                     element_placement: "Highlights"
                   })
                 },
-                children: t.map(((e, t) => (0, p.jsx)(r.Ky, {
+                children: t.map(((e, t) => (0, p.jsx)(g.Ky, {
                   children: (0, p.jsx)("img", {
                     alt: e.title,
                     "aria-label": e.title,
@@ -277,19 +311,19 @@ _global.SENTRY_RELEASE = {
               className: m.contentContainer,
               children: [(0, p.jsx)("div", {
                 className: m.carouselContainer,
-                children: (0, p.jsx)(r.wx, {
+                children: (0, p.jsx)(g.wx, {
                   onBeforeInit: e => {
-                    P.current = e
+                    R.current = e
                   },
                   spaceBetween: 8,
                   direction: "horizontal",
                   grabCursor: !0,
                   watchSlidesProgress: !0,
                   onSwiper: I,
-                  modules: M,
+                  modules: E,
                   slidesPerView: "auto",
                   initialSlide: w,
-                  children: t.map(((e, i) => (0, p.jsx)(r.Ky, {
+                  children: t.map(((e, i) => (0, p.jsx)(g.Ky, {
                     children: (0, p.jsx)("button", {
                       type: "button",
                       onClick: () => (e => {
@@ -298,7 +332,7 @@ _global.SENTRY_RELEASE = {
                           element_placement: "Highlights",
                           position: e,
                           card_name: t[e]?.title
-                        }), j(e), B.current?.slideTo(e), P.current?.slideTo(e)
+                        }), j(e), P.current?.slideTo(e), R.current?.slideTo(e)
                       })(i),
                       className: `${i===w?m.active:""}`,
                       "aria-label": e.title,

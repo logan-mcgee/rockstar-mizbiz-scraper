@@ -18,38 +18,38 @@ _global.SENTRY_RELEASE = {
   [4296, 1916], {
     84296: (e, n, t) => {
       t.r(n), t.d(n, {
-        useGSAP: () => i
+        useGSAP: () => c
       });
       var a = t(51664),
         d = t(67356),
         o = t.n(d);
-      let s = "undefined" != typeof window ? a.useLayoutEffect : a.useEffect,
-        f = e => e && !Array.isArray(e) && "object" == typeof e,
+      let f = "undefined" != typeof window ? a.useLayoutEffect : a.useEffect,
+        s = e => e && !Array.isArray(e) && "object" == typeof e,
         r = [],
         l = {},
-        c = o();
-      const i = function(e) {
+        i = o();
+      const c = function(e) {
         let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r,
           t = l;
-        f(e) ? (t = e, e = null, n = "dependencies" in t ? t.dependencies : r) : f(n) && (t = n, n = "dependencies" in t ? t.dependencies : r);
+        s(e) ? (t = e, e = null, n = "dependencies" in t ? t.dependencies : r) : s(n) && (t = n, n = "dependencies" in t ? t.dependencies : r);
         let {
           scope: d,
           revertOnUpdate: o
-        } = t, [i, b] = (0, a.useState)(!1);
+        } = t, [c, u] = (0, a.useState)(!1);
         e && "function" != typeof e && console.warn("First parameter must be a function or config object");
-        const u = c.context((() => {}), d),
-          g = () => u.revert(),
+        const g = i.context((() => {}), d),
+          b = () => g.revert(),
           y = n && n.length && !o;
-        return s((() => {
-          if (e && u.add(e, d), !y || !i) return g
-        }), n), y && s((() => (b(!0), g)), r), {
-          context: u,
-          contextSafe: e => u.add(null, e)
+        return f((() => {
+          if (e && g.add(e, d), !y || !c) return b
+        }), n), y && f((() => (u(!0), b)), r), {
+          context: g,
+          contextSafe: e => g.add(null, e)
         }
       };
-      i.register = e => {
-        c = e
-      }, i.headless = !0
+      c.register = e => {
+        i = e
+      }, c.headless = !0
     }
   }
 ]);

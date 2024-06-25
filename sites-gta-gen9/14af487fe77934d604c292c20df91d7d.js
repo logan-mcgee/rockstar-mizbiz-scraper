@@ -24,8 +24,8 @@ _global.SENTRY_RELEASE = {
         n = t(48111),
         s = t(57013),
         o = t(41272),
-        c = t(1740),
-        l = t(42836);
+        l = t(1740),
+        c = t(42836);
       const i = {
         pillBtn: "rockstargames-sites-gta-gen9db4bf6cb61b2370932e4811235d51afa",
         selected: "rockstargames-sites-gta-gen9b691088f1c9719532c68ca7b97487e5b",
@@ -136,7 +136,7 @@ _global.SENTRY_RELEASE = {
           const f = (0, o.useIntl)(),
             {
               track: b
-            } = (0, l.useGtmTrack)(),
+            } = (0, c.useGtmTrack)(),
             {
               pathname: h
             } = (0, s.useLocation)(),
@@ -174,7 +174,7 @@ _global.SENTRY_RELEASE = {
             className: u,
             children: [!M && x && (0, d.jsx)("div", {
               ref: B,
-              className: (0, c.classList)(k.previousChipNavButton, _),
+              className: (0, l.classList)(k.previousChipNavButton, _),
               children: (0, d.jsx)(v, {
                 direction: "left",
                 className: k.previousNavIcon,
@@ -215,7 +215,7 @@ _global.SENTRY_RELEASE = {
               })
             }), !S && x && (0, d.jsx)("div", {
               ref: E,
-              className: (0, c.classList)(k.nextChipNavButton, g),
+              className: (0, l.classList)(k.nextChipNavButton, g),
               children: (0, d.jsx)(v, {
                 direction: "right",
                 className: k.nextNavIcon,
@@ -305,8 +305,8 @@ _global.SENTRY_RELEASE = {
         C3: () => s,
         Mt: () => i,
         ct: () => n,
-        gR: () => c,
-        o5: () => l,
+        gR: () => l,
+        o5: () => c,
         sX: () => o
       });
       var a = function(e, r) {
@@ -346,7 +346,7 @@ _global.SENTRY_RELEASE = {
         return t
       }
 
-      function c(e) {
+      function l(e) {
         var r = "function" == typeof Symbol && Symbol.iterator,
           t = r && e[r],
           a = 0;
@@ -362,7 +362,7 @@ _global.SENTRY_RELEASE = {
         throw new TypeError(r ? "Object is not iterable." : "Symbol.iterator is not defined.")
       }
 
-      function l(e, r) {
+      function c(e, r) {
         var t = "function" == typeof Symbol && e[Symbol.iterator];
         if (!t) return e;
         var a, n, s = t.call(e),

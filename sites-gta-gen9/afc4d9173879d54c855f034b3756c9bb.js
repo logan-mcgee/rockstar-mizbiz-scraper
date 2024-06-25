@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "1312bf96-19de-4c09-9c3e-82a4e12ed5f2", e._sentryDebugIdIdentifier = "sentry-dbid-1312bf96-19de-4c09-9c3e-82a4e12ed5f2")
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "43a21c3f-849f-49a0-ac08-65eb620ec623", e._sentryDebugIdIdentifier = "sentry-dbid-43a21c3f-849f-49a0-ac08-65eb620ec623")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -2530,7 +2530,7 @@ _global.SENTRY_RELEASE = {
                             translated: !0
                           }],
                           trackingType: "link_account",
-                          trackingParent: "WOC",
+                          trackingParent: "career progress",
                           target: "_self"
                         })
                       })

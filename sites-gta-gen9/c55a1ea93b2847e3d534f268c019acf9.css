@@ -8604,7 +8604,7 @@ html[data-disallow-body-scroll] .rockstargames-sites-gta-gen9d43b6cdcbcc07082eda
 
 @media (min-width:0px) {
   .rockstargames-sites-gta-gen9a72d947fc700f0c79479290b3dfdfd9e {
-    height: calc(100vh - var(--background-top-offset))
+    height: calc(100% - var(--background-top-offset))
   }
 }
 
@@ -10892,4 +10892,4 @@ html[data-disallow-body-scroll] .rockstargames-sites-gta-gen9d43b6cdcbcc07082eda
   z-index: 0
 }
 
-/*# sourceMappingURL=27055c81b19df89f27c2a45843eb1a38.css.map*/
+/*# sourceMappingURL=c55a1ea93b2847e3d534f268c019acf9.css.map*/

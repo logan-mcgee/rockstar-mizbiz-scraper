@@ -78,7 +78,7 @@ _global.SENTRY_RELEASE = {
         useLocation: () => h,
         useMatch: () => g,
         useMatches: () => j,
-        useNavigate: () => y,
+        useNavigate: () => b,
         useNavigation: () => M,
         useNavigationType: () => v,
         useOutlet: () => R,
@@ -158,11 +158,11 @@ _global.SENTRY_RELEASE = {
         return r.useMemo((() => (0, o.ot)(e, t)), [t, e])
       }
 
-      function b(e) {
+      function y(e) {
         r.useContext(u).static || r.useLayoutEffect(e)
       }
 
-      function y() {
+      function b() {
         let {
           isDataRoute: e
         } = r.useContext(d);
@@ -170,7 +170,7 @@ _global.SENTRY_RELEASE = {
           let {
             router: e
           } = A(P.UseNavigateStable), t = B(N.UseNavigateStable), n = r.useRef(!1);
-          return b((() => {
+          return y((() => {
             n.current = !0
           })), r.useCallback((function(r, o) {
             void 0 === o && (o = {}), n.current && ("number" == typeof r ? e.navigate(r) : e.navigate(r, a({
@@ -192,7 +192,7 @@ _global.SENTRY_RELEASE = {
             } = h(),
             s = JSON.stringify((0, o.em)(a).map((e => e.pathnameBase))),
             c = r.useRef(!1);
-          return b((() => {
+          return y((() => {
             c.current = !0
           })), r.useCallback((function(r, a) {
             if (void 0 === a && (a = {}), !c.current) return;
@@ -247,12 +247,12 @@ _global.SENTRY_RELEASE = {
         s && s.route;
         let v, g = h();
         if (t) {
-          var b;
+          var y;
           let e = "string" == typeof t ? (0, o.O8)(t) : t;
-          "/" === m || (null == (b = e.pathname) ? void 0 : b.startsWith(m)) || (0, o.q4)(!1), v = e
+          "/" === m || (null == (y = e.pathname) ? void 0 : y.startsWith(m)) || (0, o.q4)(!1), v = e
         } else v = g;
-        let y = v.pathname || "/",
-          w = "/" === m ? y : y.slice(m.length) || "/",
+        let b = v.pathname || "/",
+          w = "/" === m ? b : b.slice(m.length) || "/",
           E = (0, o.Cm)(e, {
             pathname: w
           }),
@@ -546,7 +546,7 @@ _global.SENTRY_RELEASE = {
           matches: l
         } = r.useContext(d), {
           pathname: s
-        } = h(), u = y(), c = (0, o._)(t, (0, o.em)(l).map((e => e.pathnameBase)), s, "path" === i), f = JSON.stringify(c);
+        } = h(), u = b(), c = (0, o._)(t, (0, o.em)(l).map((e => e.pathnameBase)), s, "path" === i), f = JSON.stringify(c);
         return r.useEffect((() => u(JSON.parse(f), {
           replace: n,
           state: a,
@@ -584,8 +584,8 @@ _global.SENTRY_RELEASE = {
           search: h = "",
           hash: v = "",
           state: g = null,
-          key: b = "default"
-        } = a, y = r.useMemo((() => {
+          key: y = "default"
+        } = a, b = r.useMemo((() => {
           let e = (0, o.mc)(m, d);
           return null == e ? null : {
             location: {
@@ -593,16 +593,16 @@ _global.SENTRY_RELEASE = {
               search: h,
               hash: v,
               state: g,
-              key: b
+              key: y
             },
             navigationType: i
           }
-        }), [d, m, h, v, g, b, i]);
-        return null == y ? null : r.createElement(u.Provider, {
+        }), [d, m, h, v, g, y, i]);
+        return null == b ? null : r.createElement(u.Provider, {
           value: f
         }, r.createElement(c.Provider, {
           children: n,
-          value: y
+          value: b
         }))
       }
 
@@ -785,17 +785,17 @@ _global.SENTRY_RELEASE = {
         }), []))
       }
       let ge = null;
-      const be = new Set(["application/x-www-form-urlencoded", "multipart/form-data", "text/plain"]);
+      const ye = new Set(["application/x-www-form-urlencoded", "multipart/form-data", "text/plain"]);
 
-      function ye(e) {
-        return null == e || be.has(e) ? e : null
+      function be(e) {
+        return null == e || ye.has(e) ? e : null
       }
 
       function we(e, t) {
         let n, r, a, i, l;
         if (he(s = e) && "form" === s.tagName.toLowerCase()) {
           let l = e.getAttribute("action");
-          r = l ? (0, o.mc)(l, t) : null, n = e.getAttribute("method") || me, a = ye(e.getAttribute("enctype")) || pe, i = new FormData(e)
+          r = l ? (0, o.mc)(l, t) : null, n = e.getAttribute("method") || me, a = be(e.getAttribute("enctype")) || pe, i = new FormData(e)
         } else if (function(e) {
             return he(e) && "button" === e.tagName.toLowerCase()
           }(e) || function(e) {
@@ -804,7 +804,7 @@ _global.SENTRY_RELEASE = {
           let l = e.form;
           if (null == l) throw new Error('Cannot submit a <button> or <input type="submit"> without a <form>');
           let s = e.getAttribute("formaction") || l.getAttribute("action");
-          if (r = s ? (0, o.mc)(s, t) : null, n = e.getAttribute("formmethod") || l.getAttribute("method") || me, a = ye(e.getAttribute("formenctype")) || ye(l.getAttribute("enctype")) || pe, i = new FormData(l, e), ! function() {
+          if (r = s ? (0, o.mc)(s, t) : null, n = e.getAttribute("formmethod") || l.getAttribute("method") || me, a = be(e.getAttribute("formenctype")) || be(l.getAttribute("enctype")) || pe, i = new FormData(l, e), ! function() {
               if (null === ge) try {
                 new FormData(document.createElement("form"), 0), ge = !1
               } catch (e) {
@@ -923,17 +923,17 @@ _global.SENTRY_RELEASE = {
           future: o
         } = e, [a, s] = r.useState(n.state), [u, c] = r.useState(), [d, f] = r.useState({
           isTransitioning: !1
-        }), [m, p] = r.useState(), [h, v] = r.useState(), [g, b] = r.useState(), {
-          v7_startTransition: y
+        }), [m, p] = r.useState(), [h, v] = r.useState(), [g, y] = r.useState(), {
+          v7_startTransition: b
         } = o || {}, w = r.useCallback((e => {
-          y ? function(e) {
+          b ? function(e) {
             ke ? ke(e) : e()
           }(e) : e()
-        }), [y]), E = r.useCallback(((e, t) => {
+        }), [b]), E = r.useCallback(((e, t) => {
           let {
             unstable_viewTransitionOpts: r
           } = t;
-          r && null != n.window && "function" == typeof n.window.document.startViewTransition ? h && m ? (m.resolve(), h.skipTransition(), b({
+          r && null != n.window && "function" == typeof n.window.document.startViewTransition ? h && m ? (m.resolve(), h.skipTransition(), y({
             state: e,
             currentLocation: r.currentLocation,
             nextLocation: r.nextLocation
@@ -965,7 +965,7 @@ _global.SENTRY_RELEASE = {
             isTransitioning: !0,
             currentLocation: g.currentLocation,
             nextLocation: g.nextLocation
-          }), b(void 0))
+          }), y(void 0))
         }), [d.isTransitioning, g]);
         let R = r.useMemo((() => ({
             createHref: n.createHref,
@@ -1115,14 +1115,14 @@ _global.SENTRY_RELEASE = {
             {
               basename: g
             } = r.useContext(u),
-            b = !1;
+            y = !1;
           if ("string" == typeof f && Fe.test(f) && (n = f, Be)) try {
             let e = new URL(window.location.href),
               t = f.startsWith("//") ? new URL(e.protocol + f) : new URL(f),
               n = (0, o.mc)(t.pathname, g);
-            t.origin === e.origin && null != n ? f = n + t.search + t.hash : b = !0
+            t.origin === e.origin && null != n ? f = n + t.search + t.hash : y = !0
           } catch (e) {}
-          let y = m(f, {
+          let b = m(f, {
               relative: i
             }),
             w = Ye(f, {
@@ -1134,8 +1134,8 @@ _global.SENTRY_RELEASE = {
               unstable_viewTransition: h
             });
           return r.createElement("a", de({}, v, {
-            href: n || y,
-            onClick: b || l ? a : function(e) {
+            href: n || b,
+            onClick: y || l ? a : function(e) {
               a && a(e), e.defaultPrevented || w(e)
             },
             ref: t,
@@ -1155,18 +1155,18 @@ _global.SENTRY_RELEASE = {
           } = e, m = fe(e, Re), p = S(c, {
             relative: m.relative
           }), v = h(), g = r.useContext(l), {
-            navigator: b
-          } = r.useContext(u), y = null != g && lt(p) && !0 === d, w = b.encodeLocation ? b.encodeLocation(p).pathname : p.pathname, E = v.pathname, R = g && g.navigation && g.navigation.location ? g.navigation.location.pathname : null;
+            navigator: y
+          } = r.useContext(u), b = null != g && lt(p) && !0 === d, w = y.encodeLocation ? y.encodeLocation(p).pathname : p.pathname, E = v.pathname, R = g && g.navigation && g.navigation.location ? g.navigation.location.pathname : null;
           o || (E = E.toLowerCase(), R = R ? R.toLowerCase() : null, w = w.toLowerCase());
           let C, x = E === w || !i && E.startsWith(w) && "/" === E.charAt(w.length),
             _ = null != R && (R === w || !i && R.startsWith(w) && "/" === R.charAt(w.length)),
             L = {
               isActive: x,
               isPending: _,
-              isTransitioning: y
+              isTransitioning: b
             },
             T = x ? n : void 0;
-          C = "function" == typeof a ? a(L) : [a, x ? "active" : null, _ ? "pending" : null, y ? "transitioning" : null].filter(Boolean).join(" ");
+          C = "function" == typeof a ? a(L) : [a, x ? "active" : null, _ ? "pending" : null, b ? "transitioning" : null].filter(Boolean).join(" ");
           let k = "function" == typeof s ? s(L) : s;
           return r.createElement(Me, de({}, m, {
             "aria-current": T,
@@ -1250,7 +1250,7 @@ _global.SENTRY_RELEASE = {
           preventScrollReset: l,
           relative: s,
           unstable_viewTransition: u
-        } = void 0 === t ? {} : t, c = y(), d = h(), f = S(e, {
+        } = void 0 === t ? {} : t, c = b(), d = h(), f = S(e, {
           relative: s
         });
         return r.useCallback((t => {
@@ -1284,7 +1284,7 @@ _global.SENTRY_RELEASE = {
               }))
             })), n
           }(o.search, n.current ? null : t.current)), [o.search]),
-          i = y(),
+          i = b(),
           l = r.useCallback(((e, t) => {
             const r = ve("function" == typeof e ? e(a) : e);
             n.current = !0, i("?" + r, t)

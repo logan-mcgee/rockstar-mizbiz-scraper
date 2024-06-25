@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "6da15078-8ddd-480b-9f3a-08ba496131e0", e._sentryDebugIdIdentifier = "sentry-dbid-6da15078-8ddd-480b-9f3a-08ba496131e0")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "dc05587d-51ac-46bb-a6a2-41cafb7b1829", e._sentryDebugIdIdentifier = "sentry-dbid-dc05587d-51ac-46bb-a6a2-41cafb7b1829")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -15,7 +15,7 @@ var _global = "undefined" != typeof window ? window : "undefined" != typeof glob
 _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_gta_gen9 = self.webpackChunk_rockstargames_sites_gta_gen9 || []).push([
-  [342, 7960], {
+  [7960, 342], {
     37960: (e, t, n) => {
       n.r(t), n.d(t, {
         InView: () => u,
@@ -35,14 +35,14 @@ _global.SENTRY_RELEASE = {
         })(e, "symbol" != typeof t ? t + "" : t, n), n),
         o = new Map,
         a = new WeakMap,
-        d = 0,
-        l = void 0;
+        l = 0,
+        d = void 0;
 
       function c(e) {
-        l = e
+        d = e
       }
 
-      function h(e, t, n = {}, i = l) {
+      function h(e, t, n = {}, i = d) {
         if (void 0 === window.IntersectionObserver && void 0 !== i) {
           const r = e.getBoundingClientRect();
           return t(i, {
@@ -62,7 +62,7 @@ _global.SENTRY_RELEASE = {
         } = function(e) {
           const t = function(e) {
             return Object.keys(e).sort().filter((t => void 0 !== e[t])).map((t => {
-              return `${t}_${"root"===t?(n=e.root,n?(a.has(n)||(d+=1,a.set(n,d.toString())),a.get(n)):"0"):e[t]}`;
+              return `${t}_${"root"===t?(n=e.root,n?(a.has(n)||(l+=1,a.set(n,l.toString())),a.get(n)):"0"):e[t]}`;
               var n
             })).toString()
           }(e);
@@ -164,8 +164,8 @@ _global.SENTRY_RELEASE = {
             root: s,
             rootMargin: o,
             onChange: a,
-            skip: d,
-            trackVisibility: l,
+            skip: l,
+            trackVisibility: d,
             delay: c,
             initialInView: h,
             fallbackInView: u,
@@ -186,13 +186,13 @@ _global.SENTRY_RELEASE = {
         root: s,
         triggerOnce: o,
         skip: a,
-        initialInView: d,
-        fallbackInView: l,
+        initialInView: l,
+        fallbackInView: d,
         onChange: c
       } = {}) {
         var u;
         const [b, f] = i.useState(null), p = i.useRef(), [g, y] = i.useState({
-          inView: !!d,
+          inView: !!l,
           entry: void 0
         });
         p.current = c, i.useEffect((() => {
@@ -209,14 +209,14 @@ _global.SENTRY_RELEASE = {
             threshold: e,
             trackVisibility: n,
             delay: t
-          }, l), () => {
+          }, d), () => {
             i && i()
           }
-        }), [Array.isArray(e) ? e.toString() : e, b, s, r, o, a, n, l, t]);
+        }), [Array.isArray(e) ? e.toString() : e, b, s, r, o, a, n, d, t]);
         const v = null == (u = g.entry) ? void 0 : u.target,
           w = i.useRef();
         b || !v || o || a || w.current === v || (w.current = v, y({
-          inView: !!d,
+          inView: !!l,
           entry: void 0
         }));
         const k = [f, g.inView, g.entry];
