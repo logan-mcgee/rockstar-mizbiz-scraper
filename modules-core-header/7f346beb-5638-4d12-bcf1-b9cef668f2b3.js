@@ -28,8 +28,8 @@ _global.SENTRY_RELEASE = {
         r = n(12652),
         l = n(95240);
       const {
-        graphEnv: s,
-        pingBearer: f
+        graphEnv: f,
+        pingBearer: s
       } = (0, a.S_)();
 
       function b() {
@@ -37,9 +37,9 @@ _global.SENTRY_RELEASE = {
         e.id = "global-nav-root", document.body.prepend(e);
         const d = (0, t.C)(e),
           n = (0, o.EB)(r.c, {
-            env: s,
+            env: f,
             token: (0, o.UT)(null),
-            tokenPing: (0, o.UT)(f),
+            tokenPing: (0, o.UT)(s),
             tokenPingExpires: (0, o.UT)(null),
             typePolicies: {}
           });

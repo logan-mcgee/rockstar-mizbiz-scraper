@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "bb196f7a-0c93-4700-b793-4c670b953b7d", e._sentryDebugIdIdentifier = "sentry-dbid-bb196f7a-0c93-4700-b793-4c670b953b7d")
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "f72389ac-fc80-4eb0-af6d-642dd8496a61", e._sentryDebugIdIdentifier = "sentry-dbid-f72389ac-fc80-4eb0-af6d-642dd8496a61")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -45,7 +45,7 @@ _global.SENTRY_RELEASE = {
         HTMLElement: () => Ma,
         Hero: () => Ta,
         HookStore: () => oe,
-        ImageWithBadge: () => Fa,
+        ImageWithBadge: () => $a,
         InViewTracker: () => Ha,
         LanguageSelector: () => Ba,
         LayeredImage: () => Va,
@@ -61,7 +61,7 @@ _global.SENTRY_RELEASE = {
         PackListMenu: () => Mt,
         Paging: () => Pt,
         ParallaxCacheBuster: () => zt,
-        ParallaxInnerLayer: () => $t,
+        ParallaxInnerLayer: () => Ft,
         ParallaxOuterLayer: () => Ot,
         ParallaxWrapper: () => Vt,
         ProfileSwitcher: () => s,
@@ -70,7 +70,7 @@ _global.SENTRY_RELEASE = {
         ResponsiveFlexBox: () => Ls,
         ResponsiveFlexItem: () => Bs,
         ResponsiveGridBox: () => Ds,
-        ResponsiveGridItem: () => $s,
+        ResponsiveGridItem: () => Fs,
         ResponsiveImg: () => Os,
         ResponsiveSection: () => Rs,
         RockstarLogo: () => Us,
@@ -86,7 +86,7 @@ _global.SENTRY_RELEASE = {
         TinaModuleFetchNRender: () => or,
         TinaWrapper: () => cr,
         TrackList: () => er,
-        UnorderedList: () => $e,
+        UnorderedList: () => Fe,
         UserVote: () => mr,
         VideoCard: () => r,
         VideoCarousel: () => fr,
@@ -112,9 +112,9 @@ _global.SENTRY_RELEASE = {
       });
       var n = {};
       t.r(n), t.d(n, {
-        getVariant: () => Fr,
+        getVariant: () => $r,
         transitions: () => Vr,
-        variants: () => $r
+        variants: () => Fr
       });
       var i = {};
       t.r(i), t.d(i, {
@@ -616,11 +616,11 @@ _global.SENTRY_RELEASE = {
           }), [a]), null === e ? null : e?.startsWith("http") ? B(e) : B(`${(0,T.kh)(t)}${e}`)
         };
       var V = t(73660),
-        $ = t.n(V);
-      const F = (0, o.createContext)(),
+        F = t.n(V);
+      const $ = (0, o.createContext)(),
         {
           Provider: O
-        } = F,
+        } = $,
         A = e => {
           let {
             children: a,
@@ -654,8 +654,8 @@ _global.SENTRY_RELEASE = {
             payload: t,
             componentProps: s = {}
           } = e;
-          const r = (0, o.useMemo)((() => ($().cloneDeepWith(t, ((e, s) => {
-            "_template" !== s || Number.isInteger(Number(e)) || $().get(a, e) || (console.error(`TinaParser:useComponentRenderer: Component ${e} was found in payload, but not in renderable components.`), console.error("Payload:", t), console.error("Components:", a))
+          const r = (0, o.useMemo)((() => (F().cloneDeepWith(t, ((e, s) => {
+            "_template" !== s || Number.isInteger(Number(e)) || F().get(a, e) || (console.error(`TinaParser:useComponentRenderer: Component ${e} was found in payload, but not in renderable components.`), console.error("Payload:", t), console.error("Components:", a))
           })), (e => {
             let {
               components: a,
@@ -670,7 +670,7 @@ _global.SENTRY_RELEASE = {
                 availableComponents: Object.keys(a),
                 payload: e
               }), i = "gen9.Hero");
-              const c = $().get(a, i) ?? null;
+              const c = F().get(a, i) ?? null;
               if (!c) return null;
               let d;
               d = (0, q.withInViewTracker)(c, {
@@ -709,16 +709,16 @@ _global.SENTRY_RELEASE = {
           }), [a]);
           const [l] = (0, o.useState)({
             ...t,
-            ...(0, o.useContext)(F) ?? {}
+            ...(0, o.useContext)($) ?? {}
           }), m = (e => {
             let {
               payload: a
             } = e;
             const [t, s] = (0, o.useState)(a);
             return (0, o.useEffect)((() => {
-              const e = $().debounce((() => {
+              const e = F().debounce((() => {
                 const e = JSON.parse(JSON.stringify(a));
-                $().cloneDeepWith(e, ((e, a, t) => {
+                F().cloneDeepWith(e, ((e, a, t) => {
                   t?.mediaQueryList && (e => {
                     e?.__original_data || Object.assign(e, {
                       __original_data: {
@@ -753,28 +753,28 @@ _global.SENTRY_RELEASE = {
             return (0, o.useEffect)((() => {
               const e = ((e, a) => {
                   const t = {};
-                  return $().cloneDeepWith(e, ((e, s, r) => {
+                  return F().cloneDeepWith(e, ((e, s, r) => {
                     s === a && e && (t[r.key] = e)
                   })), t
                 })(a, "_memoq"),
-                s = JSON.parse(JSON.stringify($().merge(JSON.parse(JSON.stringify(e)), JSON.parse(JSON.stringify(t?.keys ?? {})))));
+                s = JSON.parse(JSON.stringify(F().merge(JSON.parse(JSON.stringify(e)), JSON.parse(JSON.stringify(t?.keys ?? {})))));
               i(s)
             }), [JSON.stringify(a), t]), (0, o.useEffect)((() => {
               const e = JSON.parse(JSON.stringify(a)),
                 t = JSON.parse(JSON.stringify(n));
-              $().cloneDeepWith(e, ((e, a, s) => {
+              F().cloneDeepWith(e, ((e, a, s) => {
                 (e => {
                   let {
                     item: a,
                     variableKey: s
                   } = e;
-                  if (!a || !$().has(a, "key") || a.translated) return;
+                  if (!a || !F().has(a, "key") || a.translated) return;
                   const r = t[a.key] ?? null;
                   if (!r) return;
                   const n = U()(r);
                   Object.keys(n).map((e => {
-                    $().set(a, e, n[e])
-                  })), $().set(a, "translated", !0), Object.freeze(a)
+                    F().set(a, e, n[e])
+                  })), F().set(a, "translated", !0), Object.freeze(a)
                 })({
                   item: s,
                   variableKey: e
@@ -983,7 +983,7 @@ _global.SENTRY_RELEASE = {
             item: a
           } = e;
           return (0, f.jsxs)("div", {
-            children: [(0, f.jsx)(Fa, {
+            children: [(0, f.jsx)($a, {
               image: a?.image,
               badge: a?.badge ?? a?.image?.badge,
               badgeType: "badge3",
@@ -1652,7 +1652,7 @@ _global.SENTRY_RELEASE = {
         {
           sanitize: Ve
         } = ze(),
-        $e = e => {
+        Fe = e => {
           let {
             list: a,
             string: t,
@@ -1692,7 +1692,7 @@ _global.SENTRY_RELEASE = {
             }, a)))
           }) : null
         },
-        Fe = {
+        $e = {
           hr: "rockstargames-modules-core-headerf5cd418ab2ef6a89df6c95d2caa06ba8",
           redLine: "rockstargames-modules-core-headerf8b44ef9bbd3e7feb22bf79cc009b16e",
           gtao: "rockstargames-modules-core-headerc442f7264db862a7cca6d9a56dacc205"
@@ -1705,7 +1705,7 @@ _global.SENTRY_RELEASE = {
           } = e;
           return (0, f.jsx)("div", {
             style: a,
-            className: [Fe.hr, Fe[s], t].join(" ")
+            className: [$e.hr, $e[s], t].join(" ")
           })
         },
         Ae = "rockstargames-modules-core-headerfa6885b15a718acb24f48949c52e31f1",
@@ -1733,7 +1733,7 @@ _global.SENTRY_RELEASE = {
               children: (0, f.jsx)("h3", {
                 children: a.title
               })
-            }), Array.isArray(a?.description?.content) ? a.description.content?.map(((e, a) => e?.unorderedList ? (0, f.jsx)($e, {
+            }), Array.isArray(a?.description?.content) ? a.description.content?.map(((e, a) => e?.unorderedList ? (0, f.jsx)(Fe, {
               columns: e.unorderedList.columns ?? null,
               style: {
                 "--unordered-list-padding": "var(--grid-gap-static-sm)",
@@ -2428,10 +2428,10 @@ _global.SENTRY_RELEASE = {
             inView: L
           } = (0, me.cD)({
             threshold: .6
-          }), [P, B] = (0, o.useState)(!1), [z, D] = (0, o.useState)(null), [$, F] = (0, o.useState)(!1), [O, A] = (0, o.useState)(0), [R, U] = (0, o.useState)(0);
+          }), [P, B] = (0, o.useState)(!1), [z, D] = (0, o.useState)(null), [F, $] = (0, o.useState)(!1), [O, A] = (0, o.useState)(0), [R, U] = (0, o.useState)(0);
           (0, o.useEffect)((() => {
             const e = () => {
-              F(window.innerWidth < 1024)
+              $(window.innerWidth < 1024)
             };
             return e(), window.addEventListener("resize", e), () => {
               window.removeEventListener("resize", e)
@@ -2476,13 +2476,13 @@ _global.SENTRY_RELEASE = {
             t.forEach((a => {
               "cover-card" === a?.props?.tina?.payload?.meta?.type && (e = !0, D(a))
             })), B(e);
-            const a = t.map(((e, a) => "cover-card" === e?.props?.tina?.payload?.meta?.type && $ ? null : (0, f.jsx)(ae.Ky, {
+            const a = t.map(((e, a) => "cover-card" === e?.props?.tina?.payload?.meta?.type && F ? null : (0, f.jsx)(ae.Ky, {
               className: "rockstargames-modules-core-headerf58e79e329504e170dc9cb4595ea011b",
               onFocus: () => q(a),
               children: e
             }, Symbol(a).toString())));
             x(a)
-          }), [t, $]), (0, o.useEffect)((() => {
+          }), [t, F]), (0, o.useEffect)((() => {
             M({
               nextEl: h.current,
               prevEl: b.current
@@ -2526,7 +2526,7 @@ _global.SENTRY_RELEASE = {
             children: [(0, f.jsx)("div", {
               className: "rockstargames-modules-core-headerddeb75a59ed783554b94e8298897a1fa",
               ref: E
-            }), P && $ && (0, f.jsx)("div", {
+            }), P && F && (0, f.jsx)("div", {
               className: "rockstargames-modules-core-headerd5f00d41fdd2c864a0eb9e069cf08db0",
               children: z
             }), (0, f.jsx)("div", {
@@ -2922,7 +2922,7 @@ _global.SENTRY_RELEASE = {
             className: I(s, t?.className, "rockstargames-modules-core-headera7f106a8036d74ed9282a741476c6b5a"),
             style: (0, T.G6)(r ?? t?.style ?? {}),
             dangerouslySetInnerHTML: {
-              __html: $().unescape(a)
+              __html: F().unescape(a)
             }
           })
         };
@@ -3134,7 +3134,7 @@ _global.SENTRY_RELEASE = {
             })]
           })
         }) : null,
-        $a = e => {
+        Fa = e => {
           let {
             hero: a,
             children: t
@@ -3144,7 +3144,7 @@ _global.SENTRY_RELEASE = {
             children: t
           }) : t
         },
-        Fa = e => {
+        $a = e => {
           let {
             badge: a = null,
             badgeType: t,
@@ -3157,7 +3157,7 @@ _global.SENTRY_RELEASE = {
             role: d,
             hero: l = !1
           } = e;
-          return (0, f.jsx)($a, {
+          return (0, f.jsx)(Fa, {
             hero: l,
             children: (0, f.jsx)("figure", {
               children: (0, f.jsxs)("div", {
@@ -4169,7 +4169,7 @@ _global.SENTRY_RELEASE = {
             })
           })
         },
-        $t = e => {
+        Ft = e => {
           let {
             layers: a = [],
             displayClass: t = "",
@@ -4202,7 +4202,7 @@ _global.SENTRY_RELEASE = {
             style: s
           })
         },
-        Ft = "rockstargames-modules-core-headerc4aa8e5d29b433c400796d0c493a9a4d",
+        $t = "rockstargames-modules-core-headerc4aa8e5d29b433c400796d0c493a9a4d",
         Ot = e => {
           let {
             minOffset: a = 0,
@@ -4214,12 +4214,12 @@ _global.SENTRY_RELEASE = {
           } = e;
           return "horizontal" === s ? (0, f.jsx)(Bt.mw, {
             x: [a, t],
-            className: I(Ft, r),
+            className: I($t, r),
             styleOuter: n,
             children: i
           }) : (0, f.jsx)(Bt.mw, {
             y: [a, t],
-            className: I(Ft, r),
+            className: I($t, r),
             styleOuter: n,
             children: i
           })
@@ -5210,8 +5210,8 @@ _global.SENTRY_RELEASE = {
             charactersNeeded: z,
             currentCharId: D,
             hasNotifications: V,
-            navOpen: $,
-            setCurrentCharId: F,
+            navOpen: F,
+            setCurrentCharId: $,
             setHasNotifications: O,
             setSelectedCharacterTuple: A,
             setUserData: R
@@ -5412,7 +5412,7 @@ _global.SENTRY_RELEASE = {
             }), 300)
           }), [g, _]), (0, o.useEffect)((() => {
             const e = M?.currentCharId ?? 0;
-            e !== D && F(Math.max(0, Math.min(e, ne.length - 1)))
+            e !== D && $(Math.max(0, Math.min(e, ne.length - 1)))
           }), [ne, M]), (0, f.jsxs)(f.Fragment, {
             children: [null !== U && "gtao" === z && (0, f.jsxs)("div", {
               className: ks.scProfile,
@@ -5427,7 +5427,7 @@ _global.SENTRY_RELEASE = {
                 className: ks.scCharacterSelector,
                 children: [(0, f.jsx)("button", {
                   className: ks.scCharacterSelectBtn,
-                  "aria-hidden": !$,
+                  "aria-hidden": !F,
                   type: "button",
                   onClick: e => {
                     e.stopPropagation();
@@ -5485,12 +5485,12 @@ _global.SENTRY_RELEASE = {
               })]
             }), (0, f.jsxs)("nav", {
               className: ks.scNav,
-              "aria-hidden": !$,
+              "aria-hidden": !F,
               children: [(0, f.jsx)("button", {
                 className: ks.scNavHeader,
                 type: "button",
                 "data-opened": w,
-                "data-nav-opened": $,
+                "data-nav-opened": F,
                 tabIndex: w ? -1 : 0,
                 onClick: e => {
                   e.stopPropagation(), w || S(!0)
@@ -5519,7 +5519,7 @@ _global.SENTRY_RELEASE = {
             }), (0, f.jsx)("div", {
               className: ks.scLanguageSelector,
               style: {
-                visibility: $ ? null : "hidden"
+                visibility: F ? null : "hidden"
               },
               children: (0, f.jsx)(q.LanguageSelector, {
                 parent: "header",
@@ -5563,12 +5563,12 @@ _global.SENTRY_RELEASE = {
             track: y
           } = (0, ie.ye)(), [N, w] = (0, o.useState)(!1), S = (0, k.gh)(ie.O0), j = (0, o.useRef)(), [C, I] = (0, o.useState)(0), M = (0, o.createRef)(), [E, L] = (0, o.useState)(!1), [P, B] = (0, o.useState)(0), [z, D] = (0, o.useState)(!1), {
             mutateLSSettings: V,
-            lsSettings: $
-          } = (0, T.ym)(), F = (0, o.useCallback)((e => {
+            lsSettings: F
+          } = (0, T.ym)(), $ = (0, o.useCallback)((e => {
             m(e), j.current && !0 === e && (j.current.scrollTop = 0)
           }), [j]);
           return (0, o.useEffect)((() => {
-            null !== b && $.currentCharId !== b && V({
+            null !== b && F.currentCharId !== b && V({
               key: "currentCharId",
               value: b
             }), !1 === p ? V({
@@ -5581,7 +5581,7 @@ _global.SENTRY_RELEASE = {
             j.current && (!1 === l && !1 === N && (j.current.style.height = `${j.current.scrollHeight}px`), !0 === l && (j.current.style.height = null))
           }), [l, j, N]), (0, o.useEffect)((() => {
             const e = () => {
-                v(!1), F(!0)
+                v(!1), $(!0)
               },
               a = a => {
                 "Escape" === a.code && e()
@@ -5590,7 +5590,7 @@ _global.SENTRY_RELEASE = {
               document.removeEventListener("click", e), document.removeEventListener("keyup", a)
             }
           }), []), (0, o.useEffect)((() => {
-            v(!1), F(!0)
+            v(!1), $(!0)
           }), [_]), (0, o.useEffect)((() => {
             if (M.current) {
               const {
@@ -5605,9 +5605,9 @@ _global.SENTRY_RELEASE = {
           }), [M, e]), (0, o.useEffect)((() => {
             h || (n(-1), r(!1))
           }), [h]), (0, o.useEffect)((() => {
-            s && (l || F(!0), i && (d(!1), n(-1)))
+            s && (l || $(!0), i && (d(!1), n(-1)))
           }), [s]), (0, o.useEffect)((() => {
-            i && (s && r(!1), l || F(!0))
+            i && (s && r(!1), l || $(!0))
           }), [i]), null === p ? null : (0, f.jsxs)(Wt.RemoveScroll, {
             enabled: !!h,
             removeScrollBar: !1,
@@ -5638,7 +5638,7 @@ _global.SENTRY_RELEASE = {
               }), p ? (0, f.jsx)(bs, {
                 sc: S,
                 charListHidden: l,
-                hideCharacterList: F,
+                hideCharacterList: $,
                 refCharacterListDesktop: j,
                 menuPadding: C,
                 longCharList: N,
@@ -5834,8 +5834,8 @@ _global.SENTRY_RELEASE = {
             defaultMessage: "Rating: {rating}. Click here learn more about rating systems"
           }
         });
-      var Is = t(13784);
-      const Ts = "undefined" != typeof GameDataNewGamesDatabaseConnection ? GameDataNewGamesDatabaseConnection : Is.GameData;
+      var Is = t(13316);
+      const Ts = void 0 !== Is.GameData ? Is.GameData : GameDataDefault;
       (0, T.UN)(t(52884));
       const Ms = ha((0, c.withIntl)((e => {
           let {
@@ -5963,7 +5963,7 @@ _global.SENTRY_RELEASE = {
           responsiveGridBox: "rockstargames-modules-core-headera39e7c7140ada0ab28537c8c901e816f",
           responsiveGridItem: "rockstargames-modules-core-headerbe7a0966e2f0457c1172ac9da99020c6"
         },
-        $s = e => {
+        Fs = e => {
           let {
             children: a,
             className: t,
@@ -5975,7 +5975,7 @@ _global.SENTRY_RELEASE = {
             children: a
           })
         },
-        Fs = {
+        $s = {
           responsiveImage: "rockstargames-modules-core-headere31b43dce2e720669fb90bf539d22197"
         },
         Os = e => {
@@ -5990,7 +5990,7 @@ _global.SENTRY_RELEASE = {
           return i ? (n.backgroundImage = `url(${a})`, (0, f.jsx)("div", {
             role: "img",
             "aria-label": r ?? "R* Games",
-            className: [Fs.responsiveImage, s ? Fs.animateBox : "", t].join(" "),
+            className: [$s.responsiveImage, s ? $s.animateBox : "", t].join(" "),
             style: {
               ...n,
               "--aspect-ratio": o.width / o.height
@@ -7078,7 +7078,7 @@ _global.SENTRY_RELEASE = {
             duration: .05
           }
         },
-        $r = {
+        Fr = {
           plainCard: {
             expanded: {
               initial: {
@@ -7234,9 +7234,9 @@ _global.SENTRY_RELEASE = {
             }
           }
         },
-        Fr = function() {
+        $r = function() {
           let e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "collapsed";
-          return $r[arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "imageMask"][e]
+          return Fr[arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "imageMask"][e]
         };
       var Or = t(45164);
       const Ar = JSON.parse('{"assets":[],"layers":[{"ddd":0,"ind":0,"ty":4,"nm":"Shape Layer 1","ks":{"o":{"k":100},"r":{"k":0},"p":{"k":[300,300,0]},"a":{"k":[0,0,0]},"s":{"k":[244,244,100]}},"ao":0,"shapes":[{"d":1,"ty":"el","s":{"k":[100,100]},"p":{"k":[0,0]},"nm":"Ellipse Path 1","mn":"ADBE Vector Shape - Ellipse"},{"ty":"tm","s":{"k":[{"i":{"x":[0.439],"y":[1.016]},"o":{"x":[0.561],"y":[0.015]},"n":["0p439_1p016_0p561_0p015"],"t":5,"s":[100],"e":[0]},{"t":33.0000013441176}],"ix":1},"e":{"k":[{"i":{"x":[0.439],"y":[1.017]},"o":{"x":[0.561],"y":[0.016]},"n":["0p439_1p017_0p561_0p016"],"t":0,"s":[100],"e":[0]},{"t":30.0000012219251}],"ix":2},"o":{"k":0,"ix":3},"m":1,"ix":2,"nm":"Trim Paths 1","mn":"ADBE Vector Filter - Trim"},{"ty":"st","fillEnabled":true,"c":{"k":[1,1,1,1]},"o":{"k":100},"w":{"k":16},"lc":2,"lj":1,"ml":4,"nm":"Stroke 1","mn":"ADBE Vector Graphic - Stroke"}],"ip":0,"op":900.000036657751,"st":0,"bm":0,"sr":1}],"v":"4.5.3","ddd":0,"ip":1.00000004073083,"op":33.0000013441175,"fr":29.9700012207031,"w":600,"h":600}'),
@@ -7832,7 +7832,7 @@ _global.SENTRY_RELEASE = {
         }
       })), e.exports = a, e.exports.UserGetVote = n(a, "UserGetVote"), e.exports.UserCastVote = n(a, "UserCastVote")
     },
-    13784: e => {
+    13316: e => {
       var a = {
         kind: "Document",
         definitions: [{
@@ -8050,7 +8050,7 @@ _global.SENTRY_RELEASE = {
                   kind: "Field",
                   name: {
                     kind: "Name",
-                    value: "img_rating"
+                    value: "ratingDescriptors"
                   },
                   arguments: [],
                   directives: []
@@ -8058,7 +8058,7 @@ _global.SENTRY_RELEASE = {
                   kind: "Field",
                   name: {
                     kind: "Name",
-                    value: "rating_descriptors"
+                    value: "ratingFooter"
                   },
                   arguments: [],
                   directives: []
@@ -8066,7 +8066,7 @@ _global.SENTRY_RELEASE = {
                   kind: "Field",
                   name: {
                     kind: "Name",
-                    value: "rating_footer"
+                    value: "ratingImg"
                   },
                   arguments: [],
                   directives: []
@@ -8074,7 +8074,7 @@ _global.SENTRY_RELEASE = {
                   kind: "Field",
                   name: {
                     kind: "Name",
-                    value: "url_rating"
+                    value: "ratingUrl"
                   },
                   arguments: [],
                   directives: []
@@ -8085,7 +8085,7 @@ _global.SENTRY_RELEASE = {
         }],
         loc: {
           start: 0,
-          end: 398
+          end: 394
         }
       };
 
@@ -8104,7 +8104,7 @@ _global.SENTRY_RELEASE = {
         }))
       }
       a.loc.source = {
-        body: 'query GameData(\n    $titleSlug: String!\n    $locale: String!\n    $withMetaTitle: Boolean = false\n    $metaUrl: String = "/"\n) {\n    meta: metaUrl(locale: $locale, domain: "www", url: $metaUrl)\n        @include(if: $withMetaTitle) {\n        title\n    }\n    game(titleSlug: $titleSlug, locale: $locale) {\n        img_rating\n        rating_descriptors\n        rating_footer\n        url_rating\n    }\n}\n',
+        body: 'query GameData(\n    $titleSlug: String!\n    $locale: String!\n    $withMetaTitle: Boolean = false\n    $metaUrl: String = "/"\n) {\n    meta: metaUrl(locale: $locale, domain: "www", url: $metaUrl)\n        @include(if: $withMetaTitle) {\n        title\n    }\n    game(titleSlug: $titleSlug, locale: $locale) {\n        ratingDescriptors\n        ratingFooter\n        ratingImg\n        ratingUrl\n    }\n}\n',
         name: "GraphQL request",
         locationOffset: {
           line: 1,
