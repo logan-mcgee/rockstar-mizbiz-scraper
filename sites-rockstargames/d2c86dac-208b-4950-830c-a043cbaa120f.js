@@ -19,33 +19,33 @@ _global.SENTRY_RELEASE = {
     99576: (e, a, r) => {
       var o = r(51664),
         t = Symbol.for("react.element"),
-        n = Symbol.for("react.fragment"),
-        s = Object.prototype.hasOwnProperty,
-        d = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        l = {
+        d = Symbol.for("react.fragment"),
+        n = Object.prototype.hasOwnProperty,
+        s = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        f = {
           key: !0,
           ref: !0,
           __self: !0,
           __source: !0
         };
 
-      function f(e, a, r) {
-        var o, n = {},
-          f = null,
-          c = null;
-        for (o in void 0 !== r && (f = "" + r), void 0 !== a.key && (f = "" + a.key), void 0 !== a.ref && (c = a.ref), a) s.call(a, o) && !l.hasOwnProperty(o) && (n[o] = a[o]);
+      function l(e, a, r) {
+        var o, d = {},
+          l = null,
+          _ = null;
+        for (o in void 0 !== r && (l = "" + r), void 0 !== a.key && (l = "" + a.key), void 0 !== a.ref && (_ = a.ref), a) n.call(a, o) && !f.hasOwnProperty(o) && (d[o] = a[o]);
         if (e && e.defaultProps)
-          for (o in a = e.defaultProps) void 0 === n[o] && (n[o] = a[o]);
+          for (o in a = e.defaultProps) void 0 === d[o] && (d[o] = a[o]);
         return {
           $$typeof: t,
           type: e,
-          key: f,
-          ref: c,
-          props: n,
-          _owner: d.current
+          key: l,
+          ref: _,
+          props: d,
+          _owner: s.current
         }
       }
-      a.Fragment = n, a.jsx = f, a.jsxs = f
+      a.Fragment = d, a.jsx = l, a.jsxs = l
     },
     95240: (e, a, r) => {
       e.exports = r(99576)

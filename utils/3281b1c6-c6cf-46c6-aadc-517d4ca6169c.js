@@ -16,19 +16,19 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_utils = self.webpackChunk_rockstargames_utils || []).push([
   [76], {
-    76: (e, t, a) => {
-      a.r(t), a.d(t, {
-        default: () => d
+    76: (e, t, d) => {
+      d.r(t), d.d(t, {
+        default: () => a
       });
-      const d = e => {
+      const a = e => {
         let {
           id: t,
-          init: a
+          init: d
         } = e;
         if (t) {
           const e = document.createElement("script");
-          e.onload = () => a(), e.onerror = () => a(), e.src = "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js", e.setAttribute("data-domain-script", t), e.setAttribute("data-document-language", "true"), document.head.appendChild(e)
-        } else a()
+          e.onload = () => d(), e.onerror = () => d(), e.src = "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js", e.setAttribute("data-domain-script", t), e.setAttribute("data-document-language", "true"), document.head.appendChild(e)
+        } else d()
       }
     }
   }

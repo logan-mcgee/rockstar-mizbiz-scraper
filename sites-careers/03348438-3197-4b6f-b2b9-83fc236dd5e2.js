@@ -2,20 +2,20 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "1c04ff3a-8d9a-4614-9471-b78321691e0e", e._sentryDebugIdIdentifier = "sentry-dbid-1c04ff3a-8d9a-4614-9471-b78321691e0e")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "03348438-3197-4b6f-b2b9-83fc236dd5e2", e._sentryDebugIdIdentifier = "sentry-dbid-03348438-3197-4b6f-b2b9-83fc236dd5e2")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
   release: "sentry-release-id",
-  packageName: "@rockstargames/sites-rockstar-tv",
+  packageName: "@rockstargames/sites-careers",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
-}, (self.webpackChunk_rockstargames_sites_rockstar_tv = self.webpackChunk_rockstargames_sites_rockstar_tv || []).push([
-  [884], {
+}, (self.webpackChunk_rockstargames_sites_careers = self.webpackChunk_rockstargames_sites_careers || []).push([
+  [852], {
     77100: (e, t, a) => {
       "use strict";
       a.d(t, {
@@ -23,7 +23,7 @@ _global.SENTRY_RELEASE = {
         cp: () => nr,
         w$: () => nr
       });
-      let s, r, i, n, o, c, l, d, m, u, g, f = {
+      let s, r, i, n, c, o, l, d, m, u, g, f = {
           autoSleep: 120,
           force3D: "auto",
           nullTargetWarn: 1,
@@ -37,10 +37,10 @@ _global.SENTRY_RELEASE = {
           delay: 0
         },
         _ = 1e8,
-        k = 1e-8,
-        h = 2 * Math.PI,
-        v = h / 4,
-        b = 0,
+        h = 1e-8,
+        k = 2 * Math.PI,
+        b = k / 4,
+        v = 0,
         x = Math.sqrt,
         y = Math.cos,
         w = Math.sin,
@@ -60,13 +60,13 @@ _global.SENTRY_RELEASE = {
         D = /[-+=.]*\d+\.?\d*(?:e-|e\+)?\d*/gi,
         B = /[+-]=-?[.\d]+/,
         V = /[^,'"\[\]\s]+/gi,
-        R = /^[+\-=e\s\d]*\d+[.\d]*([a-z]*|%)\s*$/i,
-        F = {},
+        F = /^[+\-=e\s\d]*\d+[.\d]*([a-z]*|%)\s*$/i,
+        R = {},
         $ = {},
-        G = e => ($ = he(e, F)) && xa,
-        U = (e, t) => console.warn("Invalid property", e, "set to", t, "Missing plugin? gsap.registerPlugin()"),
+        U = e => ($ = ke(e, R)) && xa,
+        G = (e, t) => console.warn("Invalid property", e, "set to", t, "Missing plugin? gsap.registerPlugin()"),
         H = (e, t) => !t && console.warn(e),
-        q = (e, t) => e && (F[e] = t) && $ && ($[e] = t) || F,
+        q = (e, t) => e && (R[e] = t) && $ && ($[e] = t) || R,
         W = () => 0,
         X = {
           suppressEvents: !0,
@@ -98,8 +98,8 @@ _global.SENTRY_RELEASE = {
           return e
         },
         ne = e => e._gsap || ie(Ye(e))[0]._gsap,
-        oe = (e, t, a) => (a = e[t]) && j(a) ? e[t]() : T(a) && e.getAttribute && e.getAttribute(t) || a,
-        ce = (e, t) => (e = e.split(",")).forEach(t) || e,
+        ce = (e, t, a) => (a = e[t]) && j(a) ? e[t]() : T(a) && e.getAttribute && e.getAttribute(t) || a,
+        oe = (e, t) => (e = e.split(",")).forEach(t) || e,
         le = e => Math.round(1e5 * e) / 1e5 || 0,
         de = e => Math.round(1e7 * e) / 1e7 || 0,
         me = (e, t) => {
@@ -126,19 +126,19 @@ _global.SENTRY_RELEASE = {
           return (t || 0 === t) && (e + "").match(V).length < 2 ? t : N(e) ? e.trim() : e
         },
         _e = e => e,
-        ke = (e, t) => {
+        he = (e, t) => {
           for (let a in t) a in e || (e[a] = t[a]);
           return e
         },
-        he = (e, t) => {
+        ke = (e, t) => {
           for (let a in t) e[a] = t[a];
           return e
         },
-        ve = (e, t) => {
-          for (let a in t) "__proto__" !== a && "constructor" !== a && "prototype" !== a && (e[a] = C(t[a]) ? ve(e[a] || (e[a] = {}), t[a]) : t[a]);
+        be = (e, t) => {
+          for (let a in t) "__proto__" !== a && "constructor" !== a && "prototype" !== a && (e[a] = C(t[a]) ? be(e[a] || (e[a] = {}), t[a]) : t[a]);
           return e
         },
-        be = (e, t) => {
+        ve = (e, t) => {
           let a, s = {};
           for (a in e) a in t || (s[a] = e[a]);
           return s
@@ -147,7 +147,7 @@ _global.SENTRY_RELEASE = {
           let t = e.parent || n,
             a = e.keyframes ? (s = z(e.keyframes), (e, t) => {
               for (let a in t) a in e || "duration" === a && s || "ease" === a || (e[a] = t[a])
-            }) : ke;
+            }) : he;
           var s;
           if (M(e.inherit))
             for (; t;) a(e, t.vars.defaults), t = t.parent || t._dp;
@@ -187,22 +187,22 @@ _global.SENTRY_RELEASE = {
           return e && a === e ? a - 1 : a
         },
         Ie = (e, t) => (e - t._start) * t._ts + (t._ts >= 0 ? 0 : t._dirty ? t.totalDuration() : t._tDur),
-        Ee = e => e._end = de(e._start + (e._tDur / Math.abs(e._ts || e._rts || k) || 0)),
+        Ee = e => e._end = de(e._start + (e._tDur / Math.abs(e._ts || e._rts || h) || 0)),
         Le = (e, t) => {
           let a = e._dp;
           return a && a.smoothChildTiming && e._ts && (e._start = de(a._time - (e._ts > 0 ? t / e._ts : ((e._dirty ? e.totalDuration() : e._tDur) - t) / -e._ts)), Ee(e), a._dirty || je(a, e)), e
         },
         ze = (e, t) => {
           let a;
-          if ((t._time || !t._dur && t._initted || t._start < e._time && (t._dur || !t.add)) && (a = Ie(e.rawTime(), t), (!t._dur || He(0, t.totalDuration(), a) - t._tTime > k) && t.render(a, !0)), je(e, t)._dp && e._initted && e._time >= e._dur && e._ts) {
+          if ((t._time || !t._dur && t._initted || t._start < e._time && (t._dur || !t.add)) && (a = Ie(e.rawTime(), t), (!t._dur || He(0, t.totalDuration(), a) - t._tTime > h) && t.render(a, !0)), je(e, t)._dp && e._initted && e._time >= e._dur && e._ts) {
             if (e._dur < e.duration())
               for (a = e; a._dp;) a.rawTime() >= 0 && a.totalTime(a._tTime), a = a._dp;
             e._zTime = -1e-8
           }
         },
         Pe = (e, t, a, s) => (t.parent && Ne(t), t._start = de((S(a) ? a : a || e !== n ? $e(e, a, t) : e._time) + t._delay), t._end = de(t._start + (t.totalDuration() / Math.abs(t.timeScale()) || 0)), ye(e, t, "_first", "_last", e._sort ? "_start" : 0), Be(t) || (e._recent = t), s || ze(e, t), e._ts < 0 && Le(e, e._tTime), e),
-        Oe = (e, t) => (F.ScrollTrigger || U("scrollTrigger", t)) && F.ScrollTrigger.create(t, e),
-        Ae = (e, t, a, s, i) => (Gt(e, t, i), e._initted ? !a && e._pt && !r && (e._dur && !1 !== e.vars.lazy || !e._dur && e.vars.lazy) && m !== yt.frame ? (Z.push(e), e._lazy = [i, s], 1) : void 0 : 1),
+        Oe = (e, t) => (R.ScrollTrigger || G("scrollTrigger", t)) && R.ScrollTrigger.create(t, e),
+        Ae = (e, t, a, s, i) => (Ut(e, t, i), e._initted ? !a && e._pt && !r && (e._dur && !1 !== e.vars.lazy || !e._dur && e.vars.lazy) && m !== yt.frame ? (Z.push(e), e._lazy = [i, s], 1) : void 0 : 1),
         De = e => {
           let {
             parent: t
@@ -221,34 +221,34 @@ _global.SENTRY_RELEASE = {
             n = e._tTime / e._tDur;
           return n && !s && (e._time *= i / e._dur), e._dur = i, e._tDur = r ? r < 0 ? 1e10 : de(i * (r + 1) + e._rDelay * r) : i, n > 0 && !s && Le(e, e._tTime = e._tDur * n), e.parent && Ee(e), a || je(e.parent, e), e
         },
-        Re = e => e instanceof Dt ? je(e) : Ve(e, e._dur),
-        Fe = {
+        Fe = e => e instanceof Dt ? je(e) : Ve(e, e._dur),
+        Re = {
           _start: 0,
           endTime: W,
           totalDuration: W
         },
         $e = (e, t, a) => {
           let s, r, i, n = e.labels,
-            o = e._recent || Fe,
-            c = e.duration() >= _ ? o.endTime(!1) : e._dur;
-          return N(t) && (isNaN(t) || t in n) ? (r = t.charAt(0), i = "%" === t.substr(-1), s = t.indexOf("="), "<" === r || ">" === r ? (s >= 0 && (t = t.replace(/=/, "")), ("<" === r ? o._start : o.endTime(o._repeat >= 0)) + (parseFloat(t.substr(1)) || 0) * (i ? (s < 0 ? o : a).totalDuration() / 100 : 1)) : s < 0 ? (t in n || (n[t] = c), n[t]) : (r = parseFloat(t.charAt(s - 1) + t.substr(s + 1)), i && a && (r = r / 100 * (z(a) ? a[0] : a).totalDuration()), s > 1 ? $e(e, t.substr(0, s - 1), a) + r : c + r)) : null == t ? c : +t
+            c = e._recent || Re,
+            o = e.duration() >= _ ? c.endTime(!1) : e._dur;
+          return N(t) && (isNaN(t) || t in n) ? (r = t.charAt(0), i = "%" === t.substr(-1), s = t.indexOf("="), "<" === r || ">" === r ? (s >= 0 && (t = t.replace(/=/, "")), ("<" === r ? c._start : c.endTime(c._repeat >= 0)) + (parseFloat(t.substr(1)) || 0) * (i ? (s < 0 ? c : a).totalDuration() / 100 : 1)) : s < 0 ? (t in n || (n[t] = o), n[t]) : (r = parseFloat(t.charAt(s - 1) + t.substr(s + 1)), i && a && (r = r / 100 * (z(a) ? a[0] : a).totalDuration()), s > 1 ? $e(e, t.substr(0, s - 1), a) + r : o + r)) : null == t ? o : +t
         },
-        Ge = (e, t, a) => {
+        Ue = (e, t, a) => {
           let s, r, i = S(t[1]),
             n = (i ? 2 : 1) + (e < 2 ? 0 : 1),
-            o = t[n];
-          if (i && (o.duration = t[1]), o.parent = a, e) {
-            for (s = o, r = a; r && !("immediateRender" in s);) s = r.vars.defaults || {}, r = M(r.vars.inherit) && r.parent;
-            o.immediateRender = M(s.immediateRender), e < 2 ? o.runBackwards = 1 : o.startAt = t[n - 1]
+            c = t[n];
+          if (i && (c.duration = t[1]), c.parent = a, e) {
+            for (s = c, r = a; r && !("immediateRender" in s);) s = r.vars.defaults || {}, r = M(r.vars.inherit) && r.parent;
+            c.immediateRender = M(s.immediateRender), e < 2 ? c.runBackwards = 1 : c.startAt = t[n - 1]
           }
-          return new Xt(t[0], o, t[n + 1])
+          return new Xt(t[0], c, t[n + 1])
         },
-        Ue = (e, t) => e || 0 === e ? t(e) : t,
+        Ge = (e, t) => e || 0 === e ? t(e) : t,
         He = (e, t, a) => a < e ? e : a > t ? t : a,
-        qe = (e, t) => N(e) && (t = R.exec(e)) ? t[1] : "",
+        qe = (e, t) => N(e) && (t = F.exec(e)) ? t[1] : "",
         We = [].slice,
-        Xe = (e, t) => e && C(e) && "length" in e && (!t && !e.length || e.length - 1 in e && C(e[0])) && !e.nodeType && e !== o,
-        Ye = (e, t, a) => i && !t && i.selector ? i.selector(e) : !N(e) || a || !c && wt() ? z(e) ? function(e, t) {
+        Xe = (e, t) => e && C(e) && "length" in e && (!t && !e.length || e.length - 1 in e && C(e[0])) && !e.nodeType && e !== c,
+        Ye = (e, t, a) => i && !t && i.selector ? i.selector(e) : !N(e) || a || !o && wt() ? z(e) ? function(e, t) {
           let a = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [];
           return e.forEach((e => N(e) && !t || Xe(e, 1) ? a.push(...Ye(e)) : a.push(e))) || a
         }(e, a) : Xe(e) ? We.call(e, 0) : e ? [e] : [] : We.call((t || l).querySelectorAll(e), 0),
@@ -267,24 +267,24 @@ _global.SENTRY_RELEASE = {
             r = parseFloat(t.base) || 0,
             i = {},
             n = s > 0 && s < 1,
-            o = isNaN(s) || n,
-            c = t.axis,
+            c = isNaN(s) || n,
+            o = t.axis,
             l = s,
             d = s;
           return N(s) ? l = d = {
             center: .5,
             edges: .5,
             end: 1
-          } [s] || 0 : !n && o && (l = s[0], d = s[1]), (e, n, m) => {
-            let u, g, f, p, k, h, v, b, y, w = (m || t).length,
+          } [s] || 0 : !n && c && (l = s[0], d = s[1]), (e, n, m) => {
+            let u, g, f, p, h, k, b, v, y, w = (m || t).length,
               N = i[w];
             if (!N) {
               if (y = "auto" === t.grid ? 0 : (t.grid || [1, _])[1], !y) {
-                for (v = -_; v < (v = m[y++].getBoundingClientRect().left) && y < w;);
+                for (b = -_; b < (b = m[y++].getBoundingClientRect().left) && y < w;);
                 y--
               }
-              for (N = i[w] = [], u = o ? Math.min(y, w) * l - .5 : s % y, g = y === _ ? 0 : o ? w * d / y - .5 : s / y | 0, v = 0, b = _, h = 0; h < w; h++) f = h % y - u, p = g - (h / y | 0), N[h] = k = c ? Math.abs("y" === c ? p : f) : x(f * f + p * p), k > v && (v = k), k < b && (b = k);
-              "random" === s && Qe(N), N.max = v - b, N.min = b, N.v = w = (parseFloat(t.amount) || parseFloat(t.each) * (y > w ? w - 1 : c ? "y" === c ? w / y : y : Math.max(y, w / y)) || 0) * ("edges" === s ? -1 : 1), N.b = w < 0 ? r - w : r, N.u = qe(t.amount || t.each) || 0, a = a && w < 0 ? Ct(a) : a
+              for (N = i[w] = [], u = c ? Math.min(y, w) * l - .5 : s % y, g = y === _ ? 0 : c ? w * d / y - .5 : s / y | 0, b = 0, v = _, k = 0; k < w; k++) f = k % y - u, p = g - (k / y | 0), N[k] = h = o ? Math.abs("y" === o ? p : f) : x(f * f + p * p), h > b && (b = h), h < v && (v = h);
+              "random" === s && Qe(N), N.max = b - v, N.min = v, N.v = w = (parseFloat(t.amount) || parseFloat(t.each) * (y > w ? w - 1 : o ? "y" === o ? w / y : y : Math.max(y, w / y)) || 0) * ("edges" === s ? -1 : 1), N.b = w < 0 ? r - w : r, N.u = qe(t.amount || t.each) || 0, a = a && w < 0 ? Ct(a) : a
             }
             return w = (N[e] - N.min) / N.max || 0, de(N.b + (a ? a(w) : w) * N.v) + N.u
           }
@@ -298,26 +298,26 @@ _global.SENTRY_RELEASE = {
         },
         et = (e, t) => {
           let a, s, r = z(e);
-          return !r && C(e) && (a = r = e.radius || _, e.values ? (e = Ye(e.values), (s = !S(e[0])) && (a *= a)) : e = Je(e.increment)), Ue(t, r ? j(e) ? t => (s = e(t), Math.abs(s - t) <= a ? s : t) : t => {
+          return !r && C(e) && (a = r = e.radius || _, e.values ? (e = Ye(e.values), (s = !S(e[0])) && (a *= a)) : e = Je(e.increment)), Ge(t, r ? j(e) ? t => (s = e(t), Math.abs(s - t) <= a ? s : t) : t => {
             let r, i, n = parseFloat(s ? t.x : t),
-              o = parseFloat(s ? t.y : 0),
-              c = _,
+              c = parseFloat(s ? t.y : 0),
+              o = _,
               l = 0,
               d = e.length;
-            for (; d--;) s ? (r = e[d].x - n, i = e[d].y - o, r = r * r + i * i) : r = Math.abs(e[d] - n), r < c && (c = r, l = d);
-            return l = !a || c <= a ? e[l] : t, s || l === t || S(t) ? l : l + qe(t)
+            for (; d--;) s ? (r = e[d].x - n, i = e[d].y - c, r = r * r + i * i) : r = Math.abs(e[d] - n), r < o && (o = r, l = d);
+            return l = !a || o <= a ? e[l] : t, s || l === t || S(t) ? l : l + qe(t)
           } : Je(e))
         },
-        tt = (e, t, a, s) => Ue(z(e) ? !t : !0 === a ? !!(a = 0) : !s, (() => z(e) ? e[~~(Math.random() * e.length)] : (a = a || 1e-5) && (s = a < 1 ? 10 ** ((a + "").length - 2) : 1) && Math.floor(Math.round((e - a / 2 + Math.random() * (t - e + .99 * a)) / a) * a * s) / s)),
-        at = (e, t, a) => Ue(a, (a => e[~~t(a)])),
+        tt = (e, t, a, s) => Ge(z(e) ? !t : !0 === a ? !!(a = 0) : !s, (() => z(e) ? e[~~(Math.random() * e.length)] : (a = a || 1e-5) && (s = a < 1 ? 10 ** ((a + "").length - 2) : 1) && Math.floor(Math.round((e - a / 2 + Math.random() * (t - e + .99 * a)) / a) * a * s) / s)),
+        at = (e, t, a) => Ge(a, (a => e[~~t(a)])),
         st = function(e, t, a) {
           let s = t - e;
-          return z(e) ? at(e, st(0, e.length), t) : Ue(a, (t => (s + (t - e) % s) % s + e))
+          return z(e) ? at(e, st(0, e.length), t) : Ge(a, (t => (s + (t - e) % s) % s + e))
         },
         rt = (e, t, a) => {
           let s = t - e,
             r = 2 * s;
-          return z(e) ? at(e, rt(0, e.length - 1), t) : Ue(a, (t => e + ((t = (r + (t - e) % r) % r || 0) > s ? r - t : t)))
+          return z(e) ? at(e, rt(0, e.length - 1), t) : Ge(a, (t => e + ((t = (r + (t - e) % r) % r || 0) > s ? r - t : t)))
         },
         it = e => {
           let t, a, s, r, i = 0,
@@ -328,12 +328,12 @@ _global.SENTRY_RELEASE = {
         nt = (e, t, a, s, r) => {
           let i = t - e,
             n = s - a;
-          return Ue(r, (t => a + ((t - e) / i * n || 0)))
+          return Ge(r, (t => a + ((t - e) / i * n || 0)))
         },
-        ot = (e, t, a, s) => {
+        ct = (e, t, a, s) => {
           let r = isNaN(e + t) ? 0 : a => (1 - a) * e + a * t;
           if (!r) {
-            let i, n, o, c, l, d = N(e),
+            let i, n, c, o, l, d = N(e),
               m = {};
             if (!0 === a && (s = 1) && (a = null), d) e = {
               p: e
@@ -341,32 +341,32 @@ _global.SENTRY_RELEASE = {
               p: t
             };
             else if (z(e) && !z(t)) {
-              for (o = [], c = e.length, l = c - 2, n = 1; n < c; n++) o.push(ot(e[n - 1], e[n]));
-              c--, r = e => {
-                e *= c;
+              for (c = [], o = e.length, l = o - 2, n = 1; n < o; n++) c.push(ct(e[n - 1], e[n]));
+              o--, r = e => {
+                e *= o;
                 let t = Math.min(l, ~~e);
-                return o[t](e - t)
+                return c[t](e - t)
               }, a = t
-            } else s || (e = he(z(e) ? [] : {}, e));
-            if (!o) {
-              for (i in t) Ft.call(m, e, i, "get", t[i]);
+            } else s || (e = ke(z(e) ? [] : {}, e));
+            if (!c) {
+              for (i in t) Rt.call(m, e, i, "get", t[i]);
               r = t => sa(t, m) || (d ? e.p : e)
             }
           }
-          return Ue(a, r)
+          return Ge(a, r)
         },
-        ct = (e, t, a) => {
+        ot = (e, t, a) => {
           let s, r, i, n = e.labels,
-            o = _;
-          for (s in n) r = n[s] - t, r < 0 == !!a && r && o > (r = Math.abs(r)) && (i = s, o = r);
+            c = _;
+          for (s in n) r = n[s] - t, r < 0 == !!a && r && c > (r = Math.abs(r)) && (i = s, c = r);
           return i
         },
         lt = (e, t, a) => {
-          let s, r, n, o = e.vars,
-            c = o[t],
+          let s, r, n, c = e.vars,
+            o = c[t],
             l = i,
             d = e._ctx;
-          if (c) return s = o[t + "Params"], r = o.callbackScope || e, a && Z.length && ge(), d && (i = d), n = s ? c.apply(r, s) : c.call(r), i = l, n
+          if (o) return s = c[t + "Params"], r = c.callbackScope || e, a && Z.length && ge(), d && (i = d), n = s ? o.apply(r, s) : o.call(r), i = l, n
         },
         dt = e => (Ne(e), e.scrollTrigger && e.scrollTrigger.kill(!!r), e.progress() < 1 && lt(e, "onInterrupt"), e),
         mt = [],
@@ -380,7 +380,7 @@ _global.SENTRY_RELEASE = {
               r = {
                 init: W,
                 render: sa,
-                add: Ft,
+                add: Rt,
                 kill: ia,
                 modifier: ra,
                 rawVars: 0
@@ -394,9 +394,9 @@ _global.SENTRY_RELEASE = {
               };
             if (wt(), e !== s) {
               if (ee[t]) return;
-              ke(s, ke(be(e, r), i)), he(s.prototype, he(r, be(e, i))), ee[s.prop = t] = s, e.targetTest && (se.push(s), Q[t] = 1), t = ("css" === t ? "CSS" : t.charAt(0).toUpperCase() + t.substr(1)) + "Plugin"
+              he(s, he(ve(e, r), i)), ke(s.prototype, ke(r, ve(e, i))), ee[s.prop = t] = s, e.targetTest && (se.push(s), Q[t] = 1), t = ("css" === t ? "CSS" : t.charAt(0).toUpperCase() + t.substr(1)) + "Plugin"
             }
-            q(t, s), e.register && e.register(xa, s, ca)
+            q(t, s), e.register && e.register(xa, s, oa)
           } else e && mt.push(e)
         },
         gt = 255,
@@ -423,7 +423,7 @@ _global.SENTRY_RELEASE = {
         },
         pt = (e, t, a) => (6 * (e += e < 0 ? 1 : e > 1 ? -1 : 0) < 1 ? t + (a - t) * e * 6 : e < .5 ? a : 3 * e < 2 ? t + (a - t) * (2 / 3 - e) * 6 : t) * gt + .5 | 0,
         _t = (e, t, a) => {
-          let s, r, i, n, o, c, l, d, m, u, g = e ? S(e) ? [e >> 16, e >> 8 & gt, e & gt] : 0 : ft.black;
+          let s, r, i, n, c, o, l, d, m, u, g = e ? S(e) ? [e >> 16, e >> 8 & gt, e & gt] : 0 : ft.black;
           if (!g) {
             if ("," === e.substr(-1) && (e = e.substr(0, e.length - 1)), ft[e]) g = ft[e];
             else if ("#" === e.charAt(0)) {
@@ -432,42 +432,42 @@ _global.SENTRY_RELEASE = {
             } else if ("hsl" === e.substr(0, 3))
               if (g = u = e.match(P), t) {
                 if (~e.indexOf("=")) return g = e.match(O), a && g.length < 4 && (g[3] = 1), g
-              } else n = +g[0] % 360 / 360, o = +g[1] / 100, c = +g[2] / 100, r = c <= .5 ? c * (o + 1) : c + o - c * o, s = 2 * c - r, g.length > 3 && (g[3] *= 1), g[0] = pt(n + 1 / 3, s, r), g[1] = pt(n, s, r), g[2] = pt(n - 1 / 3, s, r);
+              } else n = +g[0] % 360 / 360, c = +g[1] / 100, o = +g[2] / 100, r = o <= .5 ? o * (c + 1) : o + c - o * c, s = 2 * o - r, g.length > 3 && (g[3] *= 1), g[0] = pt(n + 1 / 3, s, r), g[1] = pt(n, s, r), g[2] = pt(n - 1 / 3, s, r);
             else g = e.match(P) || ft.transparent;
             g = g.map(Number)
           }
-          return t && !u && (s = g[0] / gt, r = g[1] / gt, i = g[2] / gt, l = Math.max(s, r, i), d = Math.min(s, r, i), c = (l + d) / 2, l === d ? n = o = 0 : (m = l - d, o = c > .5 ? m / (2 - l - d) : m / (l + d), n = l === s ? (r - i) / m + (r < i ? 6 : 0) : l === r ? (i - s) / m + 2 : (s - r) / m + 4, n *= 60), g[0] = ~~(n + .5), g[1] = ~~(100 * o + .5), g[2] = ~~(100 * c + .5)), a && g.length < 4 && (g[3] = 1), g
+          return t && !u && (s = g[0] / gt, r = g[1] / gt, i = g[2] / gt, l = Math.max(s, r, i), d = Math.min(s, r, i), o = (l + d) / 2, l === d ? n = c = 0 : (m = l - d, c = o > .5 ? m / (2 - l - d) : m / (l + d), n = l === s ? (r - i) / m + (r < i ? 6 : 0) : l === r ? (i - s) / m + 2 : (s - r) / m + 4, n *= 60), g[0] = ~~(n + .5), g[1] = ~~(100 * c + .5), g[2] = ~~(100 * o + .5)), a && g.length < 4 && (g[3] = 1), g
         },
-        kt = e => {
+        ht = e => {
           let t = [],
             a = [],
             s = -1;
-          return e.split(vt).forEach((e => {
+          return e.split(bt).forEach((e => {
             let r = e.match(A) || [];
             t.push(...r), a.push(s += r.length + 1)
           })), t.c = a, t
         },
-        ht = (e, t, a) => {
-          let s, r, i, n, o = "",
-            c = (e + o).match(vt),
+        kt = (e, t, a) => {
+          let s, r, i, n, c = "",
+            o = (e + c).match(bt),
             l = t ? "hsla(" : "rgba(",
             d = 0;
-          if (!c) return e;
-          if (c = c.map((e => (e = _t(e, t, 1)) && l + (t ? e[0] + "," + e[1] + "%," + e[2] + "%," + e[3] : e.join(",")) + ")")), a && (i = kt(e), s = a.c, s.join(o) !== i.c.join(o)))
-            for (r = e.replace(vt, "1").split(A), n = r.length - 1; d < n; d++) o += r[d] + (~s.indexOf(d) ? c.shift() || l + "0,0,0,0)" : (i.length ? i : c.length ? c : a).shift());
+          if (!o) return e;
+          if (o = o.map((e => (e = _t(e, t, 1)) && l + (t ? e[0] + "," + e[1] + "%," + e[2] + "%," + e[3] : e.join(",")) + ")")), a && (i = ht(e), s = a.c, s.join(c) !== i.c.join(c)))
+            for (r = e.replace(bt, "1").split(A), n = r.length - 1; d < n; d++) c += r[d] + (~s.indexOf(d) ? o.shift() || l + "0,0,0,0)" : (i.length ? i : o.length ? o : a).shift());
           if (!r)
-            for (r = e.split(vt), n = r.length - 1; d < n; d++) o += r[d] + c[d];
-          return o + r[n]
+            for (r = e.split(bt), n = r.length - 1; d < n; d++) c += r[d] + o[d];
+          return c + r[n]
         },
-        vt = function() {
+        bt = function() {
           let e, t = "(?:\\b(?:(?:rgb|rgba|hsl|hsla)\\(.+?\\))|\\B#(?:[0-9a-f]{3,4}){1,2}\\b";
           for (e in ft) t += "|" + e + "\\b";
           return new RegExp(t + ")", "gi")
         }(),
-        bt = /hsl[a]?\(/,
+        vt = /hsl[a]?\(/,
         xt = e => {
           let t, a = e.join(" ");
-          if (vt.lastIndex = 0, vt.test(a)) return t = bt.test(a), e[1] = ht(e[1], t), e[0] = ht(e[0], t, kt(e[1])), !0
+          if (bt.lastIndex = 0, bt.test(a)) return t = vt.test(a), e[1] = kt(e[1], t), e[0] = kt(e[0], t, ht(e[1])), !0
         },
         yt = function() {
           let e, t, a, s, r, i, n = Date.now,
@@ -476,43 +476,43 @@ _global.SENTRY_RELEASE = {
             f = n(),
             p = f,
             _ = 1e3 / 240,
-            k = _,
-            h = [],
-            v = a => {
-              let o, c, l, d, g = n() - p,
-                b = !0 === a;
-              if (g > m && (f += g - u), p += g, l = p - f, o = l - k, (o > 0 || b) && (d = ++s.frame, r = l - 1e3 * s.time, s.time = l /= 1e3, k += o + (o >= _ ? 4 : _ - o), c = 1), b || (e = t(v)), c)
-                for (i = 0; i < h.length; i++) h[i](l, r, d, a)
+            h = _,
+            k = [],
+            b = a => {
+              let c, o, l, d, g = n() - p,
+                v = !0 === a;
+              if (g > m && (f += g - u), p += g, l = p - f, c = l - h, (c > 0 || v) && (d = ++s.frame, r = l - 1e3 * s.time, s.time = l /= 1e3, h += c + (c >= _ ? 4 : _ - c), o = 1), v || (e = t(b)), o)
+                for (i = 0; i < k.length; i++) k[i](l, r, d, a)
             };
           return s = {
             time: 0,
             frame: 0,
             tick() {
-              v(!0)
+              b(!0)
             },
             deltaRatio: e => r / (1e3 / (e || 60)),
             wake() {
-              d && (!c && I() && (o = c = window, l = o.document || {}, F.gsap = xa, (o.gsapVersions || (o.gsapVersions = [])).push(xa.version), G($ || o.GreenSockGlobals || !o.gsap && o || {}), a = o.requestAnimationFrame, mt.forEach(ut)), e && s.sleep(), t = a || (e => setTimeout(e, k - 1e3 * s.time + 1 | 0)), g = 1, v(2))
+              d && (!o && I() && (c = o = window, l = c.document || {}, R.gsap = xa, (c.gsapVersions || (c.gsapVersions = [])).push(xa.version), U($ || c.GreenSockGlobals || !c.gsap && c || {}), a = c.requestAnimationFrame, mt.forEach(ut)), e && s.sleep(), t = a || (e => setTimeout(e, h - 1e3 * s.time + 1 | 0)), g = 1, b(2))
             },
             sleep() {
-              (a ? o.cancelAnimationFrame : clearTimeout)(e), g = 0, t = W
+              (a ? c.cancelAnimationFrame : clearTimeout)(e), g = 0, t = W
             },
             lagSmoothing(e, t) {
               m = e || 1 / 0, u = Math.min(t || 33, m)
             },
             fps(e) {
-              _ = 1e3 / (e || 240), k = 1e3 * s.time + _
+              _ = 1e3 / (e || 240), h = 1e3 * s.time + _
             },
             add(e, t, a) {
               let r = t ? (t, a, i, n) => {
                 e(t, a, i, n), s.remove(r)
               } : e;
-              return s.remove(e), h[a ? "unshift" : "push"](r), wt(), r
+              return s.remove(e), k[a ? "unshift" : "push"](r), wt(), r
             },
             remove(e, t) {
-              ~(t = h.indexOf(e)) && h.splice(t, 1) && i >= t && i--
+              ~(t = k.indexOf(e)) && k.splice(t, 1) && i >= t && i--
             },
-            _listeners: h
+            _listeners: k
           }, s
         }(),
         wt = () => !g && yt.wake(),
@@ -523,9 +523,9 @@ _global.SENTRY_RELEASE = {
           let t, a, s, r = {},
             i = e.substr(1, e.length - 3).split(":"),
             n = i[0],
-            o = 1,
-            c = i.length;
-          for (; o < c; o++) a = i[o], t = o !== c - 1 ? a.lastIndexOf(",") : a.length, s = a.substr(0, t), r[n] = isNaN(s) ? s.replace(St, "").trim() : +s, n = a.substr(t + 1).trim();
+            c = 1,
+            o = i.length;
+          for (; c < o; c++) a = i[c], t = c !== o - 1 ? a.lastIndexOf(",") : a.length, s = a.substr(0, t), r[n] = isNaN(s) ? s.replace(St, "").trim() : +s, n = a.substr(t + 1).trim();
           return r
         },
         Ct = e => t => 1 - e(1 - t),
@@ -551,8 +551,8 @@ _global.SENTRY_RELEASE = {
               easeOut: s,
               easeInOut: r
             };
-          return ce(e, (e => {
-            Nt[e] = F[e] = i, Nt[a = e.toLowerCase()] = s;
+          return oe(e, (e => {
+            Nt[e] = R[e] = i, Nt[a = e.toLowerCase()] = s;
             for (let t in i) Nt[a + ("easeIn" === t ? ".in" : "easeOut" === t ? ".out" : ".inOut")] = Nt[e + "." + t] = i[t]
           })), i
         },
@@ -560,10 +560,10 @@ _global.SENTRY_RELEASE = {
         zt = (e, t, a) => {
           let s = t >= 1 ? t : 1,
             r = (a || (e ? .3 : .45)) / (t < 1 ? t : 1),
-            i = r / h * (Math.asin(1 / s) || 0),
+            i = r / k * (Math.asin(1 / s) || 0),
             n = e => 1 === e ? 1 : s * 2 ** (-10 * e) * w((e - i) * r) + 1,
-            o = "out" === e ? n : "in" === e ? e => 1 - n(1 - e) : Lt(n);
-          return r = h / r, o.config = (t, a) => zt(e, t, a), o
+            c = "out" === e ? n : "in" === e ? e => 1 - n(1 - e) : Lt(n);
+          return r = k / r, c.config = (t, a) => zt(e, t, a), c
         },
         Pt = function(e) {
           let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1.70158,
@@ -571,13 +571,13 @@ _global.SENTRY_RELEASE = {
             s = "out" === e ? a : "in" === e ? e => 1 - a(1 - e) : Lt(a);
           return s.config = t => Pt(e, t), s
         };
-      ce("Linear,Quad,Cubic,Quart,Quint,Strong", ((e, t) => {
+      oe("Linear,Quad,Cubic,Quart,Quint,Strong", ((e, t) => {
         let a = t < 5 ? t + 1 : t;
         Et(e + ",Power" + (a - 1), t ? e => e ** a : e => e, (e => 1 - (1 - e) ** a), (e => e < .5 ? (2 * e) ** a / 2 : 1 - (2 * (1 - e)) ** a / 2))
       })), Nt.Linear.easeNone = Nt.none = Nt.Linear.easeIn, Et("Elastic", zt("in"), zt("out"), zt()), ((e, t) => {
         let a = a => a < .36363636363636365 ? e * a * a : a < .7272727272727273 ? e * (a - 1.5 / t) ** 2 + .75 : a < .9090909090909092 ? e * (a -= 2.25 / t) * a + .9375 : e * (a - 2.625 / t) ** 2 + .984375;
         Et("Bounce", (e => 1 - a(1 - e)), a)
-      })(7.5625, 2.75), Et("Expo", (e => e ? 2 ** (10 * (e - 1)) : 0)), Et("Circ", (e => -(x(1 - e * e) - 1))), Et("Sine", (e => 1 === e ? 1 : 1 - y(e * v))), Et("Back", Pt("in"), Pt("out"), Pt()), Nt.SteppedEase = Nt.steps = F.SteppedEase = {
+      })(7.5625, 2.75), Et("Expo", (e => e ? 2 ** (10 * (e - 1)) : 0)), Et("Circ", (e => -(x(1 - e * e) - 1))), Et("Sine", (e => 1 === e ? 1 : 1 - y(e * b))), Et("Back", Pt("in"), Pt("out"), Pt()), Nt.SteppedEase = Nt.steps = R.SteppedEase = {
         config() {
           let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 1,
             t = arguments.length > 1 ? arguments[1] : void 0,
@@ -586,10 +586,10 @@ _global.SENTRY_RELEASE = {
             r = t ? 1 : 0;
           return e => ((s * He(0, .99999999, e) | 0) + r) * a
         }
-      }, p.ease = Nt["quad.out"], ce("onComplete,onUpdate,onStart,onRepeat,onReverseComplete,onInterrupt", (e => re += e + "," + e + "Params,"));
+      }, p.ease = Nt["quad.out"], oe("onComplete,onUpdate,onStart,onRepeat,onReverseComplete,onInterrupt", (e => re += e + "," + e + "Params,"));
       class Ot {
         constructor(e, t) {
-          this.id = b++, e._gsap = this, this.target = e, this.harness = t, this.get = t ? t.get : oe, this.set = t ? t.getSetter : Jt
+          this.id = v++, e._gsap = this, this.target = e, this.harness = t, this.get = t ? t.get : ce, this.set = t ? t.getSetter : Jt
         }
       }
       class At {
@@ -612,7 +612,7 @@ _global.SENTRY_RELEASE = {
             for (Le(this, e), !a._dp || a.parent || ze(a, this); a && a.parent;) a.parent._time !== a._start + (a._ts >= 0 ? a._tTime / a._ts : (a.totalDuration() - a._tTime) / -a._ts) && a.totalTime(a._tTime, !0), a = a.parent;
             !this.parent && this._dp.autoRemoveChildren && (this._ts > 0 && e < this._tDur || this._ts < 0 && e > 0 || !this._tDur && !e) && Pe(this._dp, this, this._start - this._delay)
           }
-          return (this._tTime !== e || !this._dur && !t || this._initted && Math.abs(this._zTime) === k || !e && !this._initted && (this.add || this._ptLookup)) && (this._ts || (this._pTime = e), fe(this, e, t)), this
+          return (this._tTime !== e || !this._dur && !t || this._initted && Math.abs(this._zTime) === h || !e && !this._initted && (this.add || this._ptLookup)) && (this._ts || (this._pTime = e), fe(this, e, t)), this
         }
         time(e, t) {
           return arguments.length ? this.totalTime(Math.min(this.totalDuration(), e + Ce(this)) % (this._dur + this._rDelay) || (e ? this._dur : 0), t) : this._time
@@ -638,7 +638,7 @@ _global.SENTRY_RELEASE = {
           })(this)
         }
         paused(e) {
-          return arguments.length ? (this._ps !== e && (this._ps = e, e ? (this._pTime = this._tTime || Math.max(-this._delay, this.rawTime()), this._ts = this._act = 0) : (wt(), this._ts = this._rts, this.totalTime(this.parent && !this.parent.smoothChildTiming ? this.rawTime() : this._tTime || this._pTime, 1 === this.progress() && Math.abs(this._zTime) !== k && (this._tTime -= k)))), this) : this._ps
+          return arguments.length ? (this._ps !== e && (this._ps = e, e ? (this._pTime = this._tTime || Math.max(-this._delay, this.rawTime()), this._ts = this._act = 0) : (wt(), this._ts = this._rts, this.totalTime(this.parent && !this.parent.smoothChildTiming ? this.rawTime() : this._tTime || this._pTime, 1 === this.progress() && Math.abs(this._zTime) !== h && (this._tTime -= h)))), this) : this._ps
         }
         startTime(e) {
           if (arguments.length) {
@@ -667,12 +667,12 @@ _global.SENTRY_RELEASE = {
           return !this.parent && this._sat ? this._sat.vars.immediateRender ? -1 / 0 : this._sat.globalTime(e) : a
         }
         repeat(e) {
-          return arguments.length ? (this._repeat = e === 1 / 0 ? -2 : e, Re(this)) : -2 === this._repeat ? 1 / 0 : this._repeat
+          return arguments.length ? (this._repeat = e === 1 / 0 ? -2 : e, Fe(this)) : -2 === this._repeat ? 1 / 0 : this._repeat
         }
         repeatDelay(e) {
           if (arguments.length) {
             let t = this._time;
-            return this._rDelay = e, Re(this), t ? this.time(t) : this
+            return this._rDelay = e, Fe(this), t ? this.time(t) : this
           }
           return this._rDelay
         }
@@ -706,7 +706,7 @@ _global.SENTRY_RELEASE = {
         isActive() {
           let e, t = this.parent || this._dp,
             a = this._start;
-          return !(t && !(this._ts && this._initted && t.isActive() && (e = t.rawTime(!0)) >= a && e < this.endTime(!0) - k))
+          return !(t && !(this._ts && this._initted && t.isActive() && (e = t.rawTime(!0)) >= a && e < this.endTime(!0) - h))
         }
         eventCallback(e, t, a) {
           let s = this.vars;
@@ -727,7 +727,7 @@ _global.SENTRY_RELEASE = {
           dt(this)
         }
       }
-      ke(At.prototype, {
+      he(At.prototype, {
         _time: 0,
         _start: 0,
         _end: 0,
@@ -754,13 +754,13 @@ _global.SENTRY_RELEASE = {
           super(e), this.labels = {}, this.smoothChildTiming = !!e.smoothChildTiming, this.autoRemoveChildren = !!e.autoRemoveChildren, this._sort = M(e.sortChildren), n && Pe(e.parent || n, this, t), e.reversed && this.reverse(), e.paused && this.paused(!0), e.scrollTrigger && Oe(this, e.scrollTrigger)
         }
         to(e, t, a) {
-          return Ge(0, arguments, this), this
+          return Ue(0, arguments, this), this
         }
         from(e, t, a) {
-          return Ge(1, arguments, this), this
+          return Ue(1, arguments, this), this
         }
         fromTo(e, t, a, s) {
-          return Ge(2, arguments, this), this
+          return Ue(2, arguments, this), this
         }
         set(e, t, a) {
           return t.duration = 0, t.parent = this, xe(t).repeatDelay || (t.repeat = 0), t.immediateRender = !!t.immediateRender, new Xt(e, t, $e(this, a), 1), this
@@ -774,23 +774,23 @@ _global.SENTRY_RELEASE = {
         staggerFrom(e, t, a, s, r, i, n) {
           return a.runBackwards = 1, xe(a).immediateRender = M(a.immediateRender), this.staggerTo(e, t, a, s, r, i, n)
         }
-        staggerFromTo(e, t, a, s, r, i, n, o) {
-          return s.startAt = a, xe(s).immediateRender = M(s.immediateRender), this.staggerTo(e, t, s, r, i, n, o)
+        staggerFromTo(e, t, a, s, r, i, n, c) {
+          return s.startAt = a, xe(s).immediateRender = M(s.immediateRender), this.staggerTo(e, t, s, r, i, n, c)
         }
         render(e, t, a) {
-          let s, i, o, c, l, d, m, u, g, f, p, _, h = this._time,
-            v = this._dirty ? this.totalDuration() : this._tDur,
-            b = this._dur,
+          let s, i, c, o, l, d, m, u, g, f, p, _, k = this._time,
+            b = this._dirty ? this.totalDuration() : this._tDur,
+            v = this._dur,
             x = e <= 0 ? 0 : de(e),
-            y = this._zTime < 0 != e < 0 && (this._initted || !b);
-          if (this !== n && x > v && e >= 0 && (x = v), x !== this._tTime || a || y) {
-            if (h !== this._time && b && (x += this._time - h, e += this._time - h), s = x, g = this._start, u = this._ts, d = !u, y && (b || (h = this._zTime), (e || !t) && (this._zTime = e)), this._repeat) {
-              if (p = this._yoyo, l = b + this._rDelay, this._repeat < -1 && e < 0) return this.totalTime(100 * l + e, t, a);
-              if (s = de(x % l), x === v ? (c = this._repeat, s = b) : (c = ~~(x / l), c && c === x / l && (s = b, c--), s > b && (s = b)), f = Me(this._tTime, l), !h && this._tTime && f !== c && this._tTime - f * l - this._dur <= 0 && (f = c), p && 1 & c && (s = b - s, _ = 1), c !== f && !this._lock) {
+            y = this._zTime < 0 != e < 0 && (this._initted || !v);
+          if (this !== n && x > b && e >= 0 && (x = b), x !== this._tTime || a || y) {
+            if (k !== this._time && v && (x += this._time - k, e += this._time - k), s = x, g = this._start, u = this._ts, d = !u, y && (v || (k = this._zTime), (e || !t) && (this._zTime = e)), this._repeat) {
+              if (p = this._yoyo, l = v + this._rDelay, this._repeat < -1 && e < 0) return this.totalTime(100 * l + e, t, a);
+              if (s = de(x % l), x === b ? (o = this._repeat, s = v) : (o = ~~(x / l), o && o === x / l && (s = v, o--), s > v && (s = v)), f = Me(this._tTime, l), !k && this._tTime && f !== o && this._tTime - f * l - this._dur <= 0 && (f = o), p && 1 & o && (s = v - s, _ = 1), o !== f && !this._lock) {
                 let e = p && 1 & f,
-                  a = e === (p && 1 & c);
-                if (c < f && (e = !e), h = e ? 0 : x % b ? b : x, this._lock = 1, this.render(h || (_ ? 0 : de(c * l)), t, !b)._lock = 0, this._tTime = x, !t && this.parent && lt(this, "onRepeat"), this.vars.repeatRefresh && !_ && (this.invalidate()._lock = 1), h && h !== this._time || d !== !this._ts || this.vars.onRepeat && !this.parent && !this._act) return this;
-                if (b = this._dur, v = this._tDur, a && (this._lock = 2, h = e ? b : -1e-4, this.render(h, !0), this.vars.repeatRefresh && !_ && this.invalidate()), this._lock = 0, !this._ts && !d) return this;
+                  a = e === (p && 1 & o);
+                if (o < f && (e = !e), k = e ? 0 : x % v ? v : x, this._lock = 1, this.render(k || (_ ? 0 : de(o * l)), t, !v)._lock = 0, this._tTime = x, !t && this.parent && lt(this, "onRepeat"), this.vars.repeatRefresh && !_ && (this.invalidate()._lock = 1), k && k !== this._time || d !== !this._ts || this.vars.onRepeat && !this.parent && !this._act) return this;
+                if (v = this._dur, b = this._tDur, a && (this._lock = 2, k = e ? v : -1e-4, this.render(k, !0), this.vars.repeatRefresh && !_ && this.invalidate()), this._lock = 0, !this._ts && !d) return this;
                 Mt(this, _)
               }
             }
@@ -805,33 +805,33 @@ _global.SENTRY_RELEASE = {
                       if ("isPause" === s.data && s._start < t) return s;
                       s = s._prev
                     }
-              })(this, de(h), de(s)), m && (x -= s - (s = m._start))), this._tTime = x, this._time = s, this._act = !u, this._initted || (this._onUpdate = this.vars.onUpdate, this._initted = 1, this._zTime = e, h = 0), !h && s && !t && !c && (lt(this, "onStart"), this._tTime !== x)) return this;
-            if (s >= h && e >= 0)
+              })(this, de(k), de(s)), m && (x -= s - (s = m._start))), this._tTime = x, this._time = s, this._act = !u, this._initted || (this._onUpdate = this.vars.onUpdate, this._initted = 1, this._zTime = e, k = 0), !k && s && !t && !o && (lt(this, "onStart"), this._tTime !== x)) return this;
+            if (s >= k && e >= 0)
               for (i = this._first; i;) {
-                if (o = i._next, (i._act || s >= i._start) && i._ts && m !== i) {
+                if (c = i._next, (i._act || s >= i._start) && i._ts && m !== i) {
                   if (i.parent !== this) return this.render(e, t, a);
                   if (i.render(i._ts > 0 ? (s - i._start) * i._ts : (i._dirty ? i.totalDuration() : i._tDur) + (s - i._start) * i._ts, t, a), s !== this._time || !this._ts && !d) {
-                    m = 0, o && (x += this._zTime = -1e-8);
+                    m = 0, c && (x += this._zTime = -1e-8);
                     break
                   }
                 }
-                i = o
+                i = c
               } else {
                 i = this._last;
                 let n = e < 0 ? e : s;
                 for (; i;) {
-                  if (o = i._prev, (i._act || n <= i._end) && i._ts && m !== i) {
+                  if (c = i._prev, (i._act || n <= i._end) && i._ts && m !== i) {
                     if (i.parent !== this) return this.render(e, t, a);
                     if (i.render(i._ts > 0 ? (n - i._start) * i._ts : (i._dirty ? i.totalDuration() : i._tDur) + (n - i._start) * i._ts, t, a || r && (i._initted || i._startAt)), s !== this._time || !this._ts && !d) {
-                      m = 0, o && (x += this._zTime = n ? -1e-8 : k);
+                      m = 0, c && (x += this._zTime = n ? -1e-8 : h);
                       break
                     }
                   }
-                  i = o
+                  i = c
                 }
               }
-            if (m && !t && (this.pause(), m.render(s >= h ? 0 : -1e-8)._zTime = s >= h ? 1 : -1, this._ts)) return this._start = g, Ee(this), this.render(e, t, a);
-            this._onUpdate && !t && lt(this, "onUpdate", !0), (x === v && this._tTime >= this.totalDuration() || !x && h) && (g !== this._start && Math.abs(u) === Math.abs(this._ts) || this._lock || ((e || !b) && (x === v && this._ts > 0 || !x && this._ts < 0) && Ne(this, 1), t || e < 0 && !h || !x && !h && v || (lt(this, x === v && e >= 0 ? "onComplete" : "onReverseComplete", !0), this._prom && !(x < v && this.timeScale() > 0) && this._prom())))
+            if (m && !t && (this.pause(), m.render(s >= k ? 0 : -1e-8)._zTime = s >= k ? 1 : -1, this._ts)) return this._start = g, Ee(this), this.render(e, t, a);
+            this._onUpdate && !t && lt(this, "onUpdate", !0), (x === b && this._tTime >= this.totalDuration() || !x && k) && (g !== this._start && Math.abs(u) === Math.abs(this._ts) || this._lock || ((e || !v) && (x === b && this._ts > 0 || !x && this._ts < 0) && Ne(this, 1), t || e < 0 && !k || !x && !k && b || (lt(this, x === b && e >= 0 ? "onComplete" : "onReverseComplete", !0), this._prom && !(x < b && this.timeScale() > 0) && this._prom())))
           }
           return this
         }
@@ -901,28 +901,28 @@ _global.SENTRY_RELEASE = {
             {
               startAt: i,
               onStart: n,
-              onStartParams: o,
-              immediateRender: c
+              onStartParams: c,
+              immediateRender: o
             } = t,
-            l = Xt.to(s, ke({
+            l = Xt.to(s, he({
               ease: t.ease || "none",
               lazy: !1,
               immediateRender: !1,
               time: r,
               overwrite: "auto",
-              duration: t.duration || Math.abs((r - (i && "time" in i ? i.time : s._time)) / s.timeScale()) || k,
+              duration: t.duration || Math.abs((r - (i && "time" in i ? i.time : s._time)) / s.timeScale()) || h,
               onStart: () => {
                 if (s.pause(), !a) {
                   let e = t.duration || Math.abs((r - (i && "time" in i ? i.time : s._time)) / s.timeScale());
                   l._dur !== e && Ve(l, e, 0, 1).render(l._time, !0, !0), a = 1
                 }
-                n && n.apply(l, o || [])
+                n && n.apply(l, c || [])
               }
             }, t));
-          return c ? l.render(0) : l
+          return o ? l.render(0) : l
         }
         tweenFromTo(e, t, a) {
-          return this.tweenTo(t, ke({
+          return this.tweenTo(t, he({
             startAt: {
               time: $e(this, e)
             }
@@ -933,14 +933,14 @@ _global.SENTRY_RELEASE = {
         }
         nextLabel() {
           let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : this._time;
-          return ct(this, $e(this, e))
+          return ot(this, $e(this, e))
         }
         previousLabel() {
           let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : this._time;
-          return ct(this, $e(this, e), 1)
+          return ot(this, $e(this, e), 1)
         }
         currentLabel(e) {
-          return arguments.length ? this.seek(e, !0) : this.previousLabel(this._time + k)
+          return arguments.length ? this.seek(e, !0) : this.previousLabel(this._time + h)
         }
         shiftChildren(e, t) {
           let a, s = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 0,
@@ -965,11 +965,11 @@ _global.SENTRY_RELEASE = {
         totalDuration(e) {
           let t, a, s, r = 0,
             i = this,
-            o = i._last,
-            c = _;
+            c = i._last,
+            o = _;
           if (arguments.length) return i.timeScale((i._repeat < 0 ? i.duration() : i.totalDuration()) / (i.reversed() ? -e : e));
           if (i._dirty) {
-            for (s = i.parent; o;) t = o._prev, o._dirty && o.totalDuration(), a = o._start, a > c && i._sort && o._ts && !i._lock ? (i._lock = 1, Pe(i, o, a - o._delay, 1)._lock = 0) : c = a, a < 0 && o._ts && (r -= a, (!s && !i._dp || s && s.smoothChildTiming) && (i._start += a / i._ts, i._time -= a, i._tTime -= a), i.shiftChildren(-a, !1, -Infinity), c = 0), o._end > r && o._ts && (r = o._end), o = t;
+            for (s = i.parent; c;) t = c._prev, c._dirty && c.totalDuration(), a = c._start, a > o && i._sort && c._ts && !i._lock ? (i._lock = 1, Pe(i, c, a - c._delay, 1)._lock = 0) : o = a, a < 0 && c._ts && (r -= a, (!s && !i._dp || s && s.smoothChildTiming) && (i._start += a / i._ts, i._time -= a, i._tTime -= a), i.shiftChildren(-a, !1, -Infinity), o = 0), c._end > r && c._ts && (r = c._end), c = t;
             Ve(i, i === n && i._time > r ? i._time : r, 1, 1), i._dirty = 0
           }
           return i._tDur
@@ -985,44 +985,44 @@ _global.SENTRY_RELEASE = {
           }
         }
       }
-      ke(Dt.prototype, {
+      he(Dt.prototype, {
         _lock: 0,
         _hasPause: 0,
         _forcing: 0
       });
-      let Bt, Vt, Rt = function(e, t, a, s, r, i, n) {
-          let o, c, l, d, m, u, g, f, p = new ca(this._pt, e, t, 0, 1, aa, null, r),
+      let Bt, Vt, Ft = function(e, t, a, s, r, i, n) {
+          let c, o, l, d, m, u, g, f, p = new oa(this._pt, e, t, 0, 1, aa, null, r),
             _ = 0,
-            k = 0;
-          for (p.b = a, p.e = s, a += "", (g = ~(s += "").indexOf("random(")) && (s = it(s)), i && (f = [a, s], i(f, e, t), a = f[0], s = f[1]), c = a.match(D) || []; o = D.exec(s);) d = o[0], m = s.substring(_, o.index), l ? l = (l + 1) % 5 : "rgba(" === m.substr(-5) && (l = 1), d !== c[k++] && (u = parseFloat(c[k - 1]) || 0, p._pt = {
+            h = 0;
+          for (p.b = a, p.e = s, a += "", (g = ~(s += "").indexOf("random(")) && (s = it(s)), i && (f = [a, s], i(f, e, t), a = f[0], s = f[1]), o = a.match(D) || []; c = D.exec(s);) d = c[0], m = s.substring(_, c.index), l ? l = (l + 1) % 5 : "rgba(" === m.substr(-5) && (l = 1), d !== o[h++] && (u = parseFloat(o[h - 1]) || 0, p._pt = {
             _next: p._pt,
-            p: m || 1 === k ? m : ",",
+            p: m || 1 === h ? m : ",",
             s: u,
             c: "=" === d.charAt(1) ? me(u, d) - u : parseFloat(d) - u,
             m: l && l < 4 ? Math.round : 0
           }, _ = D.lastIndex);
           return p.c = _ < s.length ? s.substring(_, s.length) : "", p.fp = n, (B.test(s) || g) && (p.e = 0), this._pt = p, p
         },
-        Ft = function(e, t, a, s, r, i, n, o, c, l) {
+        Rt = function(e, t, a, s, r, i, n, c, o, l) {
           j(s) && (s = s(r || 0, e, i));
           let d, m = e[t],
-            u = "get" !== a ? a : j(m) ? c ? e[t.indexOf("set") || !j(e["get" + t.substr(3)]) ? t : "get" + t.substr(3)](c) : e[t]() : m,
-            g = j(m) ? c ? Qt : Kt : Yt;
-          if (N(s) && (~s.indexOf("random(") && (s = it(s)), "=" === s.charAt(1) && (d = me(u, s) + (qe(u) || 0), (d || 0 === d) && (s = d))), !l || u !== s || Vt) return isNaN(u * s) || "" === s ? (!m && !(t in e) && U(t, s), Rt.call(this, e, t, u, s, g, o || f.stringFilter, c)) : (d = new ca(this._pt, e, t, +u || 0, s - (u || 0), "boolean" == typeof m ? ta : ea, 0, g), c && (d.fp = c), n && d.modifier(n, this, e), this._pt = d)
+            u = "get" !== a ? a : j(m) ? o ? e[t.indexOf("set") || !j(e["get" + t.substr(3)]) ? t : "get" + t.substr(3)](o) : e[t]() : m,
+            g = j(m) ? o ? Qt : Kt : Yt;
+          if (N(s) && (~s.indexOf("random(") && (s = it(s)), "=" === s.charAt(1) && (d = me(u, s) + (qe(u) || 0), (d || 0 === d) && (s = d))), !l || u !== s || Vt) return isNaN(u * s) || "" === s ? (!m && !(t in e) && G(t, s), Ft.call(this, e, t, u, s, g, c || f.stringFilter, o)) : (d = new oa(this._pt, e, t, +u || 0, s - (u || 0), "boolean" == typeof m ? ta : ea, 0, g), o && (d.fp = o), n && d.modifier(n, this, e), this._pt = d)
         },
         $t = (e, t, a, s, r, i) => {
-          let n, o, c, l;
+          let n, c, o, l;
           if (ee[e] && !1 !== (n = new ee[e]).init(r, n.rawVars ? t[e] : ((e, t, a, s, r) => {
               if (j(e) && (e = Ht(e, r, t, a, s)), !C(e) || e.style && e.nodeType || z(e) || L(e)) return N(e) ? Ht(e, r, t, a, s) : e;
               let i, n = {};
               for (i in e) n[i] = Ht(e[i], r, t, a, s);
               return n
-            })(t[e], s, r, i, a), a, s, i) && (a._pt = o = new ca(a._pt, r, e, 0, 1, n.render, n, 0, n.priority), a !== u))
-            for (c = a._ptLookup[a._targets.indexOf(r)], l = n._props.length; l--;) c[n._props[l]] = o;
+            })(t[e], s, r, i, a), a, s, i) && (a._pt = c = new oa(a._pt, r, e, 0, 1, n.render, n, 0, n.priority), a !== u))
+            for (o = a._ptLookup[a._targets.indexOf(r)], l = n._props.length; l--;) o[n._props[l]] = c;
           return n
         },
-        Gt = (e, t, a) => {
-          let i, o, c, l, d, m, u, g, f, h, v, b, x, y = e.vars,
+        Ut = (e, t, a) => {
+          let i, c, o, l, d, m, u, g, f, k, b, v, x, y = e.vars,
             {
               ease: w,
               startAt: N,
@@ -1041,11 +1041,11 @@ _global.SENTRY_RELEASE = {
             D = e._targets,
             B = e.parent,
             V = B && "nested" === B.data ? B.vars.targets : D,
-            R = "auto" === e._overwrite && !s,
-            F = e.timeline;
-          if (F && (!z || !w) && (w = "none"), e._ease = It(w, p.ease), e._yEase = L ? Ct(It(!0 === L ? w : L, p.ease)) : 0, L && e._yoyo && !e._repeat && (L = e._yEase, e._yEase = e._ease, e._ease = L), e._from = !F && !!y.runBackwards, !F || z && !y.stagger) {
-            if (g = D[0] ? ne(D[0]).harness : 0, b = g && y[g.prop], i = be(y, Q), A && (A._zTime < 0 && A.progress(1), t < 0 && E && j && !P ? A.render(-1, !0) : A.revert(E && O ? Y : X), A._lazy = 0), N) {
-              if (Ne(e._startAt = Xt.set(D, ke({
+            F = "auto" === e._overwrite && !s,
+            R = e.timeline;
+          if (R && (!z || !w) && (w = "none"), e._ease = It(w, p.ease), e._yEase = L ? Ct(It(!0 === L ? w : L, p.ease)) : 0, L && e._yoyo && !e._repeat && (L = e._yEase, e._yEase = e._ease, e._ease = L), e._from = !R && !!y.runBackwards, !R || z && !y.stagger) {
+            if (g = D[0] ? ne(D[0]).harness : 0, v = g && y[g.prop], i = ve(y, Q), A && (A._zTime < 0 && A.progress(1), t < 0 && E && j && !P ? A.render(-1, !0) : A.revert(E && O ? Y : X), A._lazy = 0), N) {
+              if (Ne(e._startAt = Xt.set(D, he({
                   data: "isStart",
                   overwrite: !1,
                   parent: B,
@@ -1059,28 +1059,28 @@ _global.SENTRY_RELEASE = {
                   stagger: 0
                 }, N))), e._startAt._dp = 0, e._startAt._sat = e, t < 0 && (r || !j && !P) && e._startAt.revert(Y), j && O && t <= 0 && a <= 0) return void(t && (e._zTime = t))
             } else if (E && O && !A)
-              if (t && (j = !1), c = ke({
+              if (t && (j = !1), o = he({
                   overwrite: !1,
                   data: "isFromStart",
                   lazy: j && !A && M(S),
                   immediateRender: j,
                   stagger: 0,
                   parent: B
-                }, i), b && (c[g.prop] = b), Ne(e._startAt = Xt.set(D, c)), e._startAt._dp = 0, e._startAt._sat = e, t < 0 && (r ? e._startAt.revert(Y) : e._startAt.render(-1, !0)), e._zTime = t, j) {
+                }, i), v && (o[g.prop] = v), Ne(e._startAt = Xt.set(D, o)), e._startAt._dp = 0, e._startAt._sat = e, t < 0 && (r ? e._startAt.revert(Y) : e._startAt.render(-1, !0)), e._zTime = t, j) {
                 if (!t) return
-              } else Gt(e._startAt, k, k);
-            for (e._pt = e._ptCache = 0, S = O && M(S) || S && !O, o = 0; o < D.length; o++) {
-              if (d = D[o], u = d._gsap || ie(D)[o]._gsap, e._ptLookup[o] = h = {}, J[u.id] && Z.length && ge(), v = V === D ? o : V.indexOf(d), g && !1 !== (f = new g).init(d, b || i, e, v, V) && (e._pt = l = new ca(e._pt, d, f.name, 0, 1, f.render, f, 0, f.priority), f._props.forEach((e => {
-                  h[e] = l
-                })), f.priority && (m = 1)), !g || b)
-                for (c in i) ee[c] && (f = $t(c, i, e, v, d, V)) ? f.priority && (m = 1) : h[c] = l = Ft.call(e, d, c, "get", i[c], v, V, 0, y.stringFilter);
-              e._op && e._op[o] && e.kill(d, e._op[o]), R && e._pt && (Bt = e, n.killTweensOf(d, h, e.globalTime(t)), x = !e.parent, Bt = 0), e._pt && S && (J[u.id] = 1)
+              } else Ut(e._startAt, h, h);
+            for (e._pt = e._ptCache = 0, S = O && M(S) || S && !O, c = 0; c < D.length; c++) {
+              if (d = D[c], u = d._gsap || ie(D)[c]._gsap, e._ptLookup[c] = k = {}, J[u.id] && Z.length && ge(), b = V === D ? c : V.indexOf(d), g && !1 !== (f = new g).init(d, v || i, e, b, V) && (e._pt = l = new oa(e._pt, d, f.name, 0, 1, f.render, f, 0, f.priority), f._props.forEach((e => {
+                  k[e] = l
+                })), f.priority && (m = 1)), !g || v)
+                for (o in i) ee[o] && (f = $t(o, i, e, b, d, V)) ? f.priority && (m = 1) : k[o] = l = Rt.call(e, d, o, "get", i[o], b, V, 0, y.stringFilter);
+              e._op && e._op[c] && e.kill(d, e._op[c]), F && e._pt && (Bt = e, n.killTweensOf(d, k, e.globalTime(t)), x = !e.parent, Bt = 0), e._pt && S && (J[u.id] = 1)
             }
-            m && oa(e), e._onInit && e._onInit(e)
+            m && ca(e), e._onInit && e._onInit(e)
           }
-          e._onUpdate = T, e._initted = (!e._op || e._pt) && !x, z && t <= 0 && F.render(_, !0, !0)
+          e._onUpdate = T, e._initted = (!e._op || e._pt) && !x, z && t <= 0 && R.render(_, !0, !0)
         },
-        Ut = (e, t, a, s) => {
+        Gt = (e, t, a, s) => {
           let r, i, n = t.ease || s || "power1.inOut";
           if (z(t)) i = a[e] || (a[e] = []), t.forEach(((e, a) => i.push({
             t: a / (t.length - 1) * 100,
@@ -1097,45 +1097,45 @@ _global.SENTRY_RELEASE = {
         Ht = (e, t, a, s, r) => j(e) ? e.call(t, a, s, r) : N(e) && ~e.indexOf("random(") ? it(e) : e,
         qt = re + "repeat,repeatDelay,yoyo,repeatRefresh,yoyoEase,autoRevert",
         Wt = {};
-      ce(qt + ",id,stagger,delay,duration,paused,scrollTrigger", (e => Wt[e] = 1));
+      oe(qt + ",id,stagger,delay,duration,paused,scrollTrigger", (e => Wt[e] = 1));
       class Xt extends At {
         constructor(e, t, a, r) {
           "number" == typeof t && (a.duration = t, t = a, a = null), super(r ? t : xe(t));
-          let i, o, c, l, d, m, u, g, {
+          let i, c, o, l, d, m, u, g, {
               duration: p,
               delay: _,
-              immediateRender: k,
-              stagger: h,
-              overwrite: v,
-              keyframes: b,
+              immediateRender: h,
+              stagger: k,
+              overwrite: b,
+              keyframes: v,
               defaults: x,
               scrollTrigger: y,
               yoyoEase: w
             } = this.vars,
             N = t.parent || n,
             j = (z(e) || L(e) ? S(e[0]) : "length" in t) ? [e] : Ye(e);
-          if (this._targets = j.length ? ie(j) : H("GSAP target " + e + " not found. https://greensock.com", !f.nullTargetWarn) || [], this._ptLookup = [], this._overwrite = v, b || h || E(p) || E(_)) {
+          if (this._targets = j.length ? ie(j) : H("GSAP target " + e + " not found. https://greensock.com", !f.nullTargetWarn) || [], this._ptLookup = [], this._overwrite = b, v || k || E(p) || E(_)) {
             if (t = this.vars, i = this.timeline = new Dt({
                 data: "nested",
                 defaults: x || {},
                 targets: N && "nested" === N.data ? N.vars.targets : j
-              }), i.kill(), i.parent = i._dp = this, i._start = 0, h || E(p) || E(_)) {
-              if (l = j.length, u = h && Ze(h), C(h))
-                for (d in h) ~qt.indexOf(d) && (g || (g = {}), g[d] = h[d]);
-              for (o = 0; o < l; o++) c = be(t, Wt), c.stagger = 0, w && (c.yoyoEase = w), g && he(c, g), m = j[o], c.duration = +Ht(p, this, o, m, j), c.delay = (+Ht(_, this, o, m, j) || 0) - this._delay, !h && 1 === l && c.delay && (this._delay = _ = c.delay, this._start += _, c.delay = 0), i.to(m, c, u ? u(o, m, j) : 0), i._ease = Nt.none;
+              }), i.kill(), i.parent = i._dp = this, i._start = 0, k || E(p) || E(_)) {
+              if (l = j.length, u = k && Ze(k), C(k))
+                for (d in k) ~qt.indexOf(d) && (g || (g = {}), g[d] = k[d]);
+              for (c = 0; c < l; c++) o = ve(t, Wt), o.stagger = 0, w && (o.yoyoEase = w), g && ke(o, g), m = j[c], o.duration = +Ht(p, this, c, m, j), o.delay = (+Ht(_, this, c, m, j) || 0) - this._delay, !k && 1 === l && o.delay && (this._delay = _ = o.delay, this._start += _, o.delay = 0), i.to(m, o, u ? u(c, m, j) : 0), i._ease = Nt.none;
               i.duration() ? p = _ = 0 : this.timeline = 0
-            } else if (b) {
-              xe(ke(i.vars.defaults, {
+            } else if (v) {
+              xe(he(i.vars.defaults, {
                 ease: "none"
-              })), i._ease = It(b.ease || t.ease || "none");
+              })), i._ease = It(v.ease || t.ease || "none");
               let e, a, s, r = 0;
-              if (z(b)) b.forEach((e => i.to(j, e, ">"))), i.duration();
+              if (z(v)) v.forEach((e => i.to(j, e, ">"))), i.duration();
               else {
-                for (d in c = {}, b) "ease" === d || "easeEach" === d || Ut(d, b[d], c, b.easeEach);
-                for (d in c)
-                  for (e = c[d].sort(((e, t) => e.t - t.t)), r = 0, o = 0; o < e.length; o++) a = e[o], s = {
+                for (d in o = {}, v) "ease" === d || "easeEach" === d || Gt(d, v[d], o, v.easeEach);
+                for (d in o)
+                  for (e = o[d].sort(((e, t) => e.t - t.t)), r = 0, c = 0; c < e.length; c++) a = e[c], s = {
                     ease: a.e,
-                    duration: (a.t - (o ? e[o - 1].t : 0)) / 100 * p
+                    duration: (a.t - (c ? e[c - 1].t : 0)) / 100 * p
                   }, s[d] = a.v, i.to(j, s, r), r += s.duration;
                 i.duration() < p && i.to({}, {
                   duration: p - i.duration()
@@ -1144,38 +1144,38 @@ _global.SENTRY_RELEASE = {
             }
             p || this.duration(p = i.duration())
           } else this.timeline = 0;
-          !0 !== v || s || (Bt = this, n.killTweensOf(j), Bt = 0), Pe(N, this, a), t.reversed && this.reverse(), t.paused && this.paused(!0), (k || !p && !b && this._start === de(N._time) && M(k) && Te(this) && "nested" !== N.data) && (this._tTime = -1e-8, this.render(Math.max(0, -_) || 0)), y && Oe(this, y)
+          !0 !== b || s || (Bt = this, n.killTweensOf(j), Bt = 0), Pe(N, this, a), t.reversed && this.reverse(), t.paused && this.paused(!0), (h || !p && !v && this._start === de(N._time) && M(h) && Te(this) && "nested" !== N.data) && (this._tTime = -1e-8, this.render(Math.max(0, -_) || 0)), y && Oe(this, y)
         }
         render(e, t, a) {
-          let s, i, n, o, c, l, d, m, u, g = this._time,
+          let s, i, n, c, o, l, d, m, u, g = this._time,
             f = this._tDur,
             p = this._dur,
             _ = e < 0,
-            h = e > f - k && !_ ? f : e < k ? 0 : e;
+            k = e > f - h && !_ ? f : e < h ? 0 : e;
           if (p) {
-            if (h !== this._tTime || !e || a || !this._initted && this._tTime || this._startAt && this._zTime < 0 !== _) {
-              if (s = h, m = this.timeline, this._repeat) {
-                if (o = p + this._rDelay, this._repeat < -1 && _) return this.totalTime(100 * o + e, t, a);
-                if (s = de(h % o), h === f ? (n = this._repeat, s = p) : (n = ~~(h / o), n && n === h / o && (s = p, n--), s > p && (s = p)), l = this._yoyo && 1 & n, l && (u = this._yEase, s = p - s), c = Me(this._tTime, o), s === g && !a && this._initted) return this._tTime = h, this;
-                n !== c && (m && this._yEase && Mt(m, l), !this.vars.repeatRefresh || l || this._lock || (this._lock = a = 1, this.render(de(o * n), !0).invalidate()._lock = 0))
+            if (k !== this._tTime || !e || a || !this._initted && this._tTime || this._startAt && this._zTime < 0 !== _) {
+              if (s = k, m = this.timeline, this._repeat) {
+                if (c = p + this._rDelay, this._repeat < -1 && _) return this.totalTime(100 * c + e, t, a);
+                if (s = de(k % c), k === f ? (n = this._repeat, s = p) : (n = ~~(k / c), n && n === k / c && (s = p, n--), s > p && (s = p)), l = this._yoyo && 1 & n, l && (u = this._yEase, s = p - s), o = Me(this._tTime, c), s === g && !a && this._initted) return this._tTime = k, this;
+                n !== o && (m && this._yEase && Mt(m, l), !this.vars.repeatRefresh || l || this._lock || (this._lock = a = 1, this.render(de(c * n), !0).invalidate()._lock = 0))
               }
               if (!this._initted) {
-                if (Ae(this, _ ? e : s, a, t, h)) return this._tTime = 0, this;
+                if (Ae(this, _ ? e : s, a, t, k)) return this._tTime = 0, this;
                 if (g !== this._time) return this;
                 if (p !== this._dur) return this.render(e, t, a)
               }
-              if (this._tTime = h, this._time = s, !this._act && this._ts && (this._act = 1, this._lazy = 0), this.ratio = d = (u || this._ease)(s / p), this._from && (this.ratio = d = 1 - d), s && !g && !t && !n && (lt(this, "onStart"), this._tTime !== h)) return this;
+              if (this._tTime = k, this._time = s, !this._act && this._ts && (this._act = 1, this._lazy = 0), this.ratio = d = (u || this._ease)(s / p), this._from && (this.ratio = d = 1 - d), s && !g && !t && !n && (lt(this, "onStart"), this._tTime !== k)) return this;
               for (i = this._pt; i;) i.r(d, i.d), i = i._next;
-              m && m.render(e < 0 ? e : !s && l ? -1e-8 : m._dur * m._ease(s / this._dur), t, a) || this._startAt && (this._zTime = e), this._onUpdate && !t && (_ && Se(this, e, 0, a), lt(this, "onUpdate")), this._repeat && n !== c && this.vars.onRepeat && !t && this.parent && lt(this, "onRepeat"), h !== this._tDur && h || this._tTime !== h || (_ && !this._onUpdate && Se(this, e, 0, !0), (e || !p) && (h === this._tDur && this._ts > 0 || !h && this._ts < 0) && Ne(this, 1), t || _ && !g || !(h || g || l) || (lt(this, h === f ? "onComplete" : "onReverseComplete", !0), this._prom && !(h < f && this.timeScale() > 0) && this._prom()))
+              m && m.render(e < 0 ? e : !s && l ? -1e-8 : m._dur * m._ease(s / this._dur), t, a) || this._startAt && (this._zTime = e), this._onUpdate && !t && (_ && Se(this, e, 0, a), lt(this, "onUpdate")), this._repeat && n !== o && this.vars.onRepeat && !t && this.parent && lt(this, "onRepeat"), k !== this._tDur && k || this._tTime !== k || (_ && !this._onUpdate && Se(this, e, 0, !0), (e || !p) && (k === this._tDur && this._ts > 0 || !k && this._ts < 0) && Ne(this, 1), t || _ && !g || !(k || g || l) || (lt(this, k === f ? "onComplete" : "onReverseComplete", !0), this._prom && !(k < f && this.timeScale() > 0) && this._prom()))
             }
           } else((e, t, a, s) => {
-            let i, n, o, c = e.ratio,
+            let i, n, c, o = e.ratio,
               l = t < 0 || !t && (!e._start && De(e) && (e._initted || !Be(e)) || (e._ts < 0 || e._dp._ts < 0) && !Be(e)) ? 0 : 1,
               d = e._rDelay,
               m = 0;
-            if (d && e._repeat && (m = He(0, e._tDur, t), n = Me(m, d), e._yoyo && 1 & n && (l = 1 - l), n !== Me(e._tTime, d) && (c = 1 - l, e.vars.repeatRefresh && e._initted && e.invalidate())), l !== c || r || s || e._zTime === k || !t && e._zTime) {
+            if (d && e._repeat && (m = He(0, e._tDur, t), n = Me(m, d), e._yoyo && 1 & n && (l = 1 - l), n !== Me(e._tTime, d) && (o = 1 - l, e.vars.repeatRefresh && e._initted && e.invalidate())), l !== o || r || s || e._zTime === h || !t && e._zTime) {
               if (!e._initted && Ae(e, t, s, a, m)) return;
-              for (o = e._zTime, e._zTime = t || (a ? k : 0), a || (a = t && !o), e.ratio = l, e._from && (l = 1 - l), e._time = 0, e._tTime = m, i = e._pt; i;) i.r(l, i.d), i = i._next;
+              for (c = e._zTime, e._zTime = t || (a ? h : 0), a || (a = t && !c), e.ratio = l, e._from && (l = 1 - l), e._time = 0, e._tTime = m, i = e._pt; i;) i.r(l, i.d), i = i._next;
               t < 0 && Se(e, t, 0, !0), e._onUpdate && !a && lt(e, "onUpdate"), m && e._repeat && !a && e.parent && lt(e, "onRepeat"), (t >= e._tDur || t < 0) && e.ratio === l && (l && Ne(e, 1), a || r || (lt(e, l ? "onComplete" : "onReverseComplete", !0), e._prom && e._prom()))
             } else e._zTime || (e._zTime = t)
           })(this, e, t, a);
@@ -1190,16 +1190,16 @@ _global.SENTRY_RELEASE = {
         resetTo(e, t, a, s) {
           g || yt.wake(), this._ts || this.play();
           let r, i = Math.min(this._dur, (this._dp._time - this._start) * this._ts);
-          return this._initted || Gt(this, i), r = this._ease(i / this._dur), ((e, t, a, s, r, i, n) => {
-            let o, c, l, d, m = (e._pt && e._ptCache || (e._ptCache = {}))[t];
+          return this._initted || Ut(this, i), r = this._ease(i / this._dur), ((e, t, a, s, r, i, n) => {
+            let c, o, l, d, m = (e._pt && e._ptCache || (e._ptCache = {}))[t];
             if (!m)
               for (m = e._ptCache[t] = [], l = e._ptLookup, d = e._targets.length; d--;) {
-                if (o = l[d][t], o && o.d && o.d._pt)
-                  for (o = o.d._pt; o && o.p !== t && o.fp !== t;) o = o._next;
-                if (!o) return Vt = 1, e.vars[t] = "+=0", Gt(e, n), Vt = 0, 1;
-                m.push(o)
+                if (c = l[d][t], c && c.d && c.d._pt)
+                  for (c = c.d._pt; c && c.p !== t && c.fp !== t;) c = c._next;
+                if (!c) return Vt = 1, e.vars[t] = "+=0", Ut(e, n), Vt = 0, 1;
+                m.push(c)
               }
-            for (d = m.length; d--;) c = m[d], o = c._pt || c, o.s = !s && 0 !== s || r ? o.s + (s || 0) + i * o.c : s, o.c = a - o.s, c.e && (c.e = le(a) + qe(c.e)), c.b && (c.b = o.s + qe(c.b))
+            for (d = m.length; d--;) o = m[d], c = o._pt || o, c.s = !s && 0 !== s || r ? c.s + (s || 0) + i * c.c : s, c.c = a - c.s, o.e && (o.e = le(a) + qe(o.e)), o.b && (o.b = c.s + qe(o.b))
           })(this, e, t, a, s, r, i) ? this.resetTo(e, t, a, s) : (Le(this, 0), this.parent || ye(this._dp, this, "_first", "_last", this._dp._sort ? "_start" : 0), this.render(0))
         }
         kill(e) {
@@ -1209,7 +1209,7 @@ _global.SENTRY_RELEASE = {
             let a = this.timeline.totalDuration();
             return this.timeline.killTweensOf(e, t, Bt && !0 !== Bt.vars.overwrite)._first || dt(this), this.parent && a !== this.timeline.totalDuration() && Ve(this, this._dur * this.timeline._tDur / a, 0, 1), this
           }
-          let a, s, r, i, n, o, c, l = this._targets,
+          let a, s, r, i, n, c, o, l = this._targets,
             d = e ? Ye(e) : l,
             m = this._ptLookup,
             u = this._pt;
@@ -1219,24 +1219,24 @@ _global.SENTRY_RELEASE = {
               for (; s && a-- && e[a] === t[a];);
               return a < 0
             })(l, d)) return "all" === t && (this._pt = 0), dt(this);
-          for ((a = this._op = this._op || [], "all" !== t && (N(t) && (n = {}, ce(t, (e => n[e] = 1)), t = n), t = ((e, t) => {
+          for ((a = this._op = this._op || [], "all" !== t && (N(t) && (n = {}, oe(t, (e => n[e] = 1)), t = n), t = ((e, t) => {
               let a, s, r, i, n = e[0] ? ne(e[0]).harness : 0,
-                o = n && n.aliases;
-              if (!o) return t;
-              for (s in a = he({}, t), o)
+                c = n && n.aliases;
+              if (!c) return t;
+              for (s in a = ke({}, t), c)
                 if (s in a)
-                  for (i = o[s].split(","), r = i.length; r--;) a[i[r]] = a[s];
+                  for (i = c[s].split(","), r = i.length; r--;) a[i[r]] = a[s];
               return a
-            })(l, t)), c = l.length); c--;)
-            if (~d.indexOf(l[c]))
-              for (n in s = m[c], "all" === t ? (a[c] = t, i = s, r = {}) : (r = a[c] = a[c] || {}, i = t), i) o = s && s[n], o && ("kill" in o.d && !0 !== o.d.kill(n) || we(this, o, "_pt"), delete s[n]), "all" !== r && (r[n] = 1);
+            })(l, t)), o = l.length); o--;)
+            if (~d.indexOf(l[o]))
+              for (n in s = m[o], "all" === t ? (a[o] = t, i = s, r = {}) : (r = a[o] = a[o] || {}, i = t), i) c = s && s[n], c && ("kill" in c.d && !0 !== c.d.kill(n) || we(this, c, "_pt"), delete s[n]), "all" !== r && (r[n] = 1);
           return this._initted && !this._pt && u && dt(this), this
         }
         static to(e, t) {
           return new Xt(e, t, arguments[2])
         }
         static from(e, t) {
-          return Ge(1, arguments)
+          return Ue(1, arguments)
         }
         static delayedCall(e, t, a, s) {
           return new Xt(t, 0, {
@@ -1252,7 +1252,7 @@ _global.SENTRY_RELEASE = {
           })
         }
         static fromTo(e, t, a) {
-          return Ge(2, arguments)
+          return Ue(2, arguments)
         }
         static set(e, t) {
           return t.duration = 0, t.repeatDelay || (t.repeat = 0), new Xt(e, t)
@@ -1261,13 +1261,13 @@ _global.SENTRY_RELEASE = {
           return n.killTweensOf(e, t, a)
         }
       }
-      ke(Xt.prototype, {
+      he(Xt.prototype, {
         _targets: [],
         _lazy: 0,
         _startAt: 0,
         _op: 0,
         _onInit: 0
-      }), ce("staggerTo,staggerFrom,staggerFromTo", (e => {
+      }), oe("staggerTo,staggerFrom,staggerFromTo", (e => {
         Xt[e] = function() {
           let t = new Dt,
             a = We.call(arguments, 0);
@@ -1308,7 +1308,7 @@ _global.SENTRY_RELEASE = {
         na = (e, t, a, s) => {
           s.mSet(e, t, s.m.call(s.tween, a, s.mt), s)
         },
-        oa = e => {
+        ca = e => {
           let t, a, s, r, i = e._pt;
           for (; i;) {
             for (t = i._next, a = s; a && a.pr > i.pr;) a = a._next;
@@ -1316,15 +1316,15 @@ _global.SENTRY_RELEASE = {
           }
           e._pt = s
         };
-      class ca {
-        constructor(e, t, a, s, r, i, n, o, c) {
-          this.t = t, this.s = s, this.c = r, this.p = a, this.r = i || ea, this.d = n || this, this.set = o || Yt, this.pr = c || 0, this._next = e, e && (e._prev = this)
+      class oa {
+        constructor(e, t, a, s, r, i, n, c, o) {
+          this.t = t, this.s = s, this.c = r, this.p = a, this.r = i || ea, this.d = n || this, this.set = c || Yt, this.pr = o || 0, this._next = e, e && (e._prev = this)
         }
         modifier(e, t, a) {
           this.mSet = this.mSet || this.set, this.set = na, this.m = e, this.mt = a, this.tween = t
         }
       }
-      ce(re + "parent,duration,ease,delay,overwrite,runBackwards,startAt,yoyo,immediateRender,repeat,repeatDelay,data,paused,reversed,lazy,callbackScope,stringFilter,id,yoyoEase,stagger,inherit,repeatRefresh,keyframes,autoRevert,scrollTrigger", (e => Q[e] = 1)), F.TweenMax = F.TweenLite = Xt, F.TimelineLite = F.TimelineMax = Dt, n = new Dt({
+      oe(re + "parent,duration,ease,delay,overwrite,runBackwards,startAt,yoyo,immediateRender,repeat,repeatDelay,data,paused,reversed,lazy,callbackScope,stringFilter,id,yoyoEase,stagger,inherit,repeatRefresh,keyframes,autoRevert,scrollTrigger", (e => Q[e] = 1)), R.TweenMax = R.TweenLite = Xt, R.TimelineLite = R.TimelineMax = Dt, n = new Dt({
         sortChildren: !1,
         defaults: p,
         autoRemoveChildren: !0,
@@ -1342,8 +1342,8 @@ _global.SENTRY_RELEASE = {
             t = [];
           e - ua > 2 && (fa("matchMediaInit"), la.forEach((e => {
             let a, s, r, i, n = e.queries,
-              c = e.conditions;
-            for (s in n) a = o.matchMedia(n[s]).matches, a && (r = 1), a !== c[s] && (c[s] = a, i = 1);
+              o = e.conditions;
+            for (s in n) a = c.matchMedia(n[s]).matches, a && (r = 1), a !== o[s] && (o[s] = a, i = 1);
             i && (e.revert(), r && t.push(e))
           })), fa("matchMediaRevert"), t.forEach((e => e.onMatch(e))), ua = e, fa("matchMedia"))
         };
@@ -1391,7 +1391,7 @@ _global.SENTRY_RELEASE = {
           this.kill(e || {})
         }
       }
-      class ka {
+      class ha {
         constructor(e) {
           this.contexts = [], this.scope = e
         }
@@ -1399,10 +1399,10 @@ _global.SENTRY_RELEASE = {
           C(e) || (e = {
             matches: e
           });
-          let s, r, n, c = new _a(0, a || this.scope),
-            l = c.conditions = {};
-          for (r in i && !c.selector && (c.selector = i.selector), this.contexts.push(c), t = c.add("onMatch", t), c.queries = e, e) "all" === r ? n = 1 : (s = o.matchMedia(e[r]), s && (la.indexOf(c) < 0 && la.push(c), (l[r] = s.matches) && (n = 1), s.addListener ? s.addListener(pa) : s.addEventListener("change", pa)));
-          return n && t(c), this
+          let s, r, n, o = new _a(0, a || this.scope),
+            l = o.conditions = {};
+          for (r in i && !o.selector && (o.selector = i.selector), this.contexts.push(o), t = o.add("onMatch", t), o.queries = e, e) "all" === r ? n = 1 : (s = c.matchMedia(e[r]), s && (la.indexOf(o) < 0 && la.push(o), (l[r] = s.matches) && (n = 1), s.addListener ? s.addListener(pa) : s.addEventListener("change", pa)));
+          return n && t(o), this
         }
         revert(e) {
           this.kill(e || {})
@@ -1411,7 +1411,7 @@ _global.SENTRY_RELEASE = {
           this.contexts.forEach((t => t.kill(e, !0)))
         }
       }
-      const ha = {
+      const ka = {
         registerPlugin() {
           for (var e = arguments.length, t = new Array(e), a = 0; a < e; a++) t[a] = arguments[a];
           t.forEach((e => ut(e)))
@@ -1444,7 +1444,7 @@ _global.SENTRY_RELEASE = {
           return s ? n : t => n(e, i, a ? t + a : t, r, 1)
         },
         quickTo(e, t, a) {
-          let s = xa.to(e, he({
+          let s = xa.to(e, ke({
               [t]: "+=0.1",
               paused: !0
             }, a || {})),
@@ -1452,8 +1452,8 @@ _global.SENTRY_RELEASE = {
           return r.tween = s, r
         },
         isTweening: e => n.getTweensOf(e, !0).length > 0,
-        defaults: e => (e && e.ease && (e.ease = It(e.ease, p.ease)), ve(p, e || {})),
-        config: e => ve(f, e || {}),
+        defaults: e => (e && e.ease && (e.ease = It(e.ease, p.ease)), be(p, e || {})),
+        config: e => be(f, e || {}),
         registerEffect(e) {
           let {
             name: t,
@@ -1462,7 +1462,7 @@ _global.SENTRY_RELEASE = {
             defaults: r,
             extendTimeline: i
           } = e;
-          (s || "").split(",").forEach((e => e && !ee[e] && !F[e] && H(t + " effect requires " + e + " plugin."))), te[t] = (e, t, s) => a(Ye(e), ke(t || {}, r), s), i && (Dt.prototype[t] = function(e, a, s) {
+          (s || "").split(",").forEach((e => e && !ee[e] && !R[e] && H(t + " effect requires " + e + " plugin."))), te[t] = (e, t, s) => a(Ye(e), he(t || {}, r), s), i && (Dt.prototype[t] = function(e, a, s) {
             return this.add(te[t](e, C(a) ? a : (s = a) && {}, this), s)
           })
         },
@@ -1481,7 +1481,7 @@ _global.SENTRY_RELEASE = {
           return Pe(n, r, 0), r
         },
         context: (e, t) => e ? new _a(e, t) : i,
-        matchMedia: e => new ka(e),
+        matchMedia: e => new ha(e),
         matchMediaRefresh: () => la.forEach((e => {
           let t, a, s = e.conditions;
           for (a in s) s[a] && (s[a] = !1, t = 1);
@@ -1504,7 +1504,7 @@ _global.SENTRY_RELEASE = {
           snap: et,
           normalize: (e, t, a) => nt(e, t, 0, 1, a),
           getUnit: qe,
-          clamp: (e, t, a) => Ue(a, (a => He(e, t, a))),
+          clamp: (e, t, a) => Ge(a, (a => He(e, t, a))),
           splitColor: _t,
           toArray: Ye,
           selector: Ke,
@@ -1514,17 +1514,17 @@ _global.SENTRY_RELEASE = {
             return e => t.reduce(((e, t) => t(e)), e)
           },
           unitize: (e, t) => a => e(parseFloat(a)) + (t || qe(a)),
-          interpolate: ot,
+          interpolate: ct,
           shuffle: Qe
         },
-        install: G,
+        install: U,
         effects: te,
         ticker: yt,
         updateRoot: Dt.updateRoot,
         plugins: ee,
         globalTimeline: n,
         core: {
-          PropTween: ca,
+          PropTween: oa,
           globals: q,
           Tween: Xt,
           Timeline: Dt,
@@ -1536,36 +1536,36 @@ _global.SENTRY_RELEASE = {
           suppressOverwrites: e => s = e
         }
       };
-      ce("to,from,fromTo,delayedCall,set,killTweensOf", (e => ha[e] = Xt[e])), yt.add(Dt.updateRoot), u = ha.to({}, {
+      oe("to,from,fromTo,delayedCall,set,killTweensOf", (e => ka[e] = Xt[e])), yt.add(Dt.updateRoot), u = ka.to({}, {
         duration: 0
       });
-      let va = (e, t) => {
+      let ba = (e, t) => {
           let a = e._pt;
           for (; a && a.p !== t && a.op !== t && a.fp !== t;) a = a._next;
           return a
         },
-        ba = (e, t) => ({
+        va = (e, t) => ({
           name: e,
           rawVars: 1,
           init(e, a, s) {
             s._onInit = e => {
               let s, r;
-              if (N(a) && (s = {}, ce(a, (e => s[e] = 1)), a = s), t) {
+              if (N(a) && (s = {}, oe(a, (e => s[e] = 1)), a = s), t) {
                 for (r in s = {}, a) s[r] = t(a[r]);
                 a = s
               }((e, t) => {
                 let a, s, r, i = e._targets;
                 for (a in t)
-                  for (s = i.length; s--;) r = e._ptLookup[s][a], r && (r = r.d) && (r._pt && (r = va(r, a)), r && r.modifier && r.modifier(t[a], e, i[s], a))
+                  for (s = i.length; s--;) r = e._ptLookup[s][a], r && (r = r.d) && (r._pt && (r = ba(r, a)), r && r.modifier && r.modifier(t[a], e, i[s], a))
               })(e, a)
             }
           }
         });
-      const xa = ha.registerPlugin({
+      const xa = ka.registerPlugin({
         name: "attr",
         init(e, t, a, s, r) {
-          let i, n, o;
-          for (i in this.tween = a, t) o = e.getAttribute(i) || "", n = this.add(e, "setAttribute", (o || 0) + "", t[i], s, r, 0, 0, i), n.op = i, n.b = o, this._props.push(i)
+          let i, n, c;
+          for (i in this.tween = a, t) c = e.getAttribute(i) || "", n = this.add(e, "setAttribute", (c || 0) + "", t[i], s, r, 0, 0, i), n.op = i, n.b = c, this._props.push(i)
         },
         render(e, t) {
           let a = t._pt;
@@ -1577,7 +1577,7 @@ _global.SENTRY_RELEASE = {
           let a = t.length;
           for (; a--;) this.add(e, a, e[a] || 0, t[a], 0, 0, 0, 0, 0, 1)
         }
-      }, ba("roundProps", Je), ba("modifiers"), ba("snap", et)) || ha;
+      }, va("roundProps", Je), va("modifiers"), va("snap", et)) || ka;
       Xt.version = Dt.version = xa.version = "3.12.2", d = 1, I() && wt();
       const {
         Power0: ya,
@@ -1599,7 +1599,7 @@ _global.SENTRY_RELEASE = {
         Expo: Ba,
         Circ: Va
       } = Nt;
-      let Ra, Fa, $a, Ga, Ua, Ha, qa, Wa, Xa, Ya = {},
+      let Fa, Ra, $a, Ua, Ga, Ha, qa, Wa, Xa, Ya = {},
         Ka = 180 / Math.PI,
         Qa = Math.PI / 180,
         Za = Math.atan2,
@@ -1618,8 +1618,8 @@ _global.SENTRY_RELEASE = {
           let a = t.s + t.c * e;
           t.set(t.t, t.p, ~~(a + (a < 0 ? -.5 : .5)) + t.u, t)
         },
-        os = (e, t) => t.set(t.t, t.p, e ? t.e : t.b, t),
-        cs = (e, t) => t.set(t.t, t.p, 1 !== e ? t.b : t.e, t),
+        cs = (e, t) => t.set(t.t, t.p, e ? t.e : t.b, t),
+        os = (e, t) => t.set(t.t, t.p, 1 !== e ? t.b : t.e, t),
         ls = (e, t, a) => e.style[t] = a,
         ds = (e, t, a) => e.style.setProperty(t, a),
         ms = (e, t, a) => e._gsap[t] = a,
@@ -1634,19 +1634,19 @@ _global.SENTRY_RELEASE = {
         },
         ps = "transform",
         _s = ps + "Origin",
-        ks = function(e, t) {
+        hs = function(e, t) {
           let a = this.target,
             s = a.style;
           if (e in Ya && s) {
-            if (this.tfm = this.tfm || {}, "transform" === e) return as.transform.split(",").forEach((e => ks.call(this, e, t)));
+            if (this.tfm = this.tfm || {}, "transform" === e) return as.transform.split(",").forEach((e => hs.call(this, e, t)));
             if (~(e = as[e] || e).indexOf(",") ? e.split(",").forEach((e => this.tfm[e] = Os(a, e))) : this.tfm[e] = a._gsap.x ? a._gsap[e] : Os(a, e), this.props.indexOf(ps) >= 0) return;
             a._gsap.svg && (this.svgo = a.getAttribute("data-svg-origin"), this.props.push(_s, t, "")), e = ps
           }(s || t) && this.props.push(e, t, s[e])
         },
-        hs = e => {
+        ks = e => {
           e.translate && (e.removeProperty("translate"), e.removeProperty("scale"), e.removeProperty("rotate"))
         },
-        vs = function() {
+        bs = function() {
           let e, t, a = this.props,
             s = this.target,
             r = s.style,
@@ -1654,21 +1654,21 @@ _global.SENTRY_RELEASE = {
           for (e = 0; e < a.length; e += 3) a[e + 1] ? s[a[e]] = a[e + 2] : a[e + 2] ? r[a[e]] = a[e + 2] : r.removeProperty("--" === a[e].substr(0, 2) ? a[e] : a[e].replace(Ja, "-$1").toLowerCase());
           if (this.tfm) {
             for (t in this.tfm) i[t] = this.tfm[t];
-            i.svg && (i.renderTransform(), s.setAttribute("data-svg-origin", this.svgo || "")), e = Wa(), e && e.isStart || r[ps] || (hs(r), i.uncache = 1)
+            i.svg && (i.renderTransform(), s.setAttribute("data-svg-origin", this.svgo || "")), e = Wa(), e && e.isStart || r[ps] || (ks(r), i.uncache = 1)
           }
         },
-        bs = (e, t) => {
+        vs = (e, t) => {
           let a = {
             target: e,
             props: [],
-            revert: vs,
-            save: ks
+            revert: bs,
+            save: hs
           };
           return e._gsap || xa.core.getCache(e), t && t.split(",").forEach((e => a.save(e))), a
         },
         xs = (e, t) => {
-          let a = Fa.createElementNS ? Fa.createElementNS((t || "http://www.w3.org/1999/xhtml").replace(/^https/, "http"), e) : Fa.createElement(e);
-          return a.style ? a : Fa.createElement(e)
+          let a = Ra.createElementNS ? Ra.createElementNS((t || "http://www.w3.org/1999/xhtml").replace(/^https/, "http"), e) : Ra.createElement(e);
+          return a.style ? a : Ra.createElement(e)
         },
         ys = (e, t, a) => {
           let s = getComputedStyle(e);
@@ -1676,16 +1676,16 @@ _global.SENTRY_RELEASE = {
         },
         ws = "O,Moz,ms,Ms,Webkit".split(","),
         Ns = (e, t, a) => {
-          let s = (t || Ua).style,
+          let s = (t || Ga).style,
             r = 5;
           if (e in s && !a) return e;
           for (e = e.charAt(0).toUpperCase() + e.substr(1); r-- && !(ws[r] + e in s););
           return r < 0 ? null : (3 === r ? "ms" : r >= 0 ? ws[r] : "") + e
         },
         js = () => {
-          "undefined" != typeof window && window.document && (Ra = window, Fa = Ra.document, $a = Fa.documentElement, Ua = xs("div") || {
+          "undefined" != typeof window && window.document && (Fa = window, Ra = Fa.document, $a = Ra.documentElement, Ga = xs("div") || {
             style: {}
-          }, Ha = xs("div"), ps = Ns(ps), _s = ps + "Origin", Ua.style.cssText = "border-width:0;line-height:0;position:absolute;padding:0", Xa = !!Ns("perspective"), Wa = xa.core.reverting, Ga = 1)
+          }, Ha = xs("div"), ps = Ns(ps), _s = ps + "Origin", Ga.style.cssText = "border-width:0;line-height:0;position:absolute;padding:0", Xa = !!Ns("perspective"), Wa = xa.core.reverting, Ua = 1)
         },
         Ss = function(e) {
           let t, a = xs("svg", this.ownerSVGElement && this.ownerSVGElement.getAttribute("xmlns") || "http://www.w3.org/2000/svg"),
@@ -1724,7 +1724,7 @@ _global.SENTRY_RELEASE = {
           }
         },
         Es = (e, t, a, s, r, i) => {
-          let n = new ca(e._pt, t, a, 0, 1, i ? cs : os);
+          let n = new oa(e._pt, t, a, 0, 1, i ? os : cs);
           return e._pt = n, n.b = s, n.e = r, e._props.push(a), n
         },
         Ls = {
@@ -1737,20 +1737,20 @@ _global.SENTRY_RELEASE = {
           flex: 1
         },
         Ps = (e, t, a, s) => {
-          let r, i, n, o, c = parseFloat(a) || 0,
-            l = (a + "").trim().substr((c + "").length) || "px",
-            d = Ua.style,
+          let r, i, n, c, o = parseFloat(a) || 0,
+            l = (a + "").trim().substr((o + "").length) || "px",
+            d = Ga.style,
             m = es.test(t),
             u = "svg" === e.tagName.toLowerCase(),
             g = (u ? "client" : "offset") + (m ? "Width" : "Height"),
             f = 100,
             p = "px" === s,
             _ = "%" === s;
-          return s === l || !c || Ls[s] || Ls[l] ? c : ("px" !== l && !p && (c = Ps(e, t, a, "px")), o = e.getCTM && Ms(e), !_ && "%" !== l || !Ya[t] && !~t.indexOf("adius") ? (d[m ? "width" : "height"] = f + (p ? l : s), i = ~t.indexOf("adius") || "em" === s && e.appendChild && !u ? e : e.parentNode, o && (i = (e.ownerSVGElement || {}).parentNode), i && i !== Fa && i.appendChild || (i = Fa.body), n = i._gsap, n && _ && n.width && m && n.time === yt.time && !n.uncache ? le(c / n.width * f) : ((_ || "%" === l) && !zs[ys(i, "display")] && (d.position = ys(e, "position")), i === e && (d.position = "static"), i.appendChild(Ua), r = Ua[g], i.removeChild(Ua), d.position = "absolute", m && _ && (n = ne(i), n.time = yt.time, n.width = i[g]), le(p ? r * c / f : r && c ? f / r * c : 0))) : (r = o ? e.getBBox()[m ? "width" : "height"] : e[g], le(_ ? c / r * f : c / 100 * r)))
+          return s === l || !o || Ls[s] || Ls[l] ? o : ("px" !== l && !p && (o = Ps(e, t, a, "px")), c = e.getCTM && Ms(e), !_ && "%" !== l || !Ya[t] && !~t.indexOf("adius") ? (d[m ? "width" : "height"] = f + (p ? l : s), i = ~t.indexOf("adius") || "em" === s && e.appendChild && !u ? e : e.parentNode, c && (i = (e.ownerSVGElement || {}).parentNode), i && i !== Ra && i.appendChild || (i = Ra.body), n = i._gsap, n && _ && n.width && m && n.time === yt.time && !n.uncache ? le(o / n.width * f) : ((_ || "%" === l) && !zs[ys(i, "display")] && (d.position = ys(e, "position")), i === e && (d.position = "static"), i.appendChild(Ga), r = Ga[g], i.removeChild(Ga), d.position = "absolute", m && _ && (n = ne(i), n.time = yt.time, n.width = i[g]), le(p ? r * o / f : r && o ? f / r * o : 0))) : (r = c ? e.getBBox()[m ? "width" : "height"] : e[g], le(_ ? o / r * f : o / 100 * r)))
         },
         Os = (e, t, a, s) => {
           let r;
-          return Ga || js(), t in as && "transform" !== t && ~(t = as[t]).indexOf(",") && (t = t.split(",")[0]), Ya[t] && "transform" !== t ? (r = Ws(e, s), r = "transformOrigin" !== t ? r[t] : r.svg ? r.origin : Xs(ys(e, _s)) + " " + r.zOrigin + "px") : (r = e.style[t], (!r || "auto" === r || s || ~(r + "").indexOf("calc(")) && (r = Rs[t] && Rs[t](e, t, a) || ys(e, t) || oe(e, t) || ("opacity" === t ? 1 : 0))), a && !~(r + "").trim().indexOf(" ") ? Ps(e, t, r, a) + a : r
+          return Ua || js(), t in as && "transform" !== t && ~(t = as[t]).indexOf(",") && (t = t.split(",")[0]), Ya[t] && "transform" !== t ? (r = Ws(e, s), r = "transformOrigin" !== t ? r[t] : r.svg ? r.origin : Xs(ys(e, _s)) + " " + r.zOrigin + "px") : (r = e.style[t], (!r || "auto" === r || s || ~(r + "").indexOf("calc(")) && (r = Fs[t] && Fs[t](e, t, a) || ys(e, t) || ce(e, t) || ("opacity" === t ? 1 : 0))), a && !~(r + "").trim().indexOf(" ") ? Ps(e, t, r, a) + a : r
         },
         As = function(e, t, a, s) {
           if (!a || "none" === a) {
@@ -1758,20 +1758,20 @@ _global.SENTRY_RELEASE = {
               r = s && ys(e, s, 1);
             r && r !== a ? (t = s, a = r) : "borderColor" === t && (a = ys(e, "borderTopColor"))
           }
-          let r, i, n, o, c, l, d, m, u, g, p, _, k = new ca(this._pt, e.style, t, 0, 1, aa),
-            h = 0,
-            v = 0;
-          if (k.b = a, k.e = s, a += "", "auto" == (s += "") && (e.style[t] = s, s = ys(e, t) || s, e.style[t] = a), r = [a, s], xt(r), s = r[1], n = (a = r[0]).match(A) || [], _ = s.match(A) || [], _.length) {
-            for (; i = A.exec(s);) d = i[0], u = s.substring(h, i.index), c ? c = (c + 1) % 5 : "rgba(" !== u.substr(-5) && "hsla(" !== u.substr(-5) || (c = 1), d !== (l = n[v++] || "") && (o = parseFloat(l) || 0, p = l.substr((o + "").length), "=" === d.charAt(1) && (d = me(o, d) + p), m = parseFloat(d), g = d.substr((m + "").length), h = A.lastIndex - g.length, g || (g = g || f.units[t] || p, h === s.length && (s += g, k.e += g)), p !== g && (o = Ps(e, t, l, g) || 0), k._pt = {
-              _next: k._pt,
-              p: u || 1 === v ? u : ",",
-              s: o,
-              c: m - o,
-              m: c && c < 4 || "zIndex" === t ? Math.round : 0
+          let r, i, n, c, o, l, d, m, u, g, p, _, h = new oa(this._pt, e.style, t, 0, 1, aa),
+            k = 0,
+            b = 0;
+          if (h.b = a, h.e = s, a += "", "auto" == (s += "") && (e.style[t] = s, s = ys(e, t) || s, e.style[t] = a), r = [a, s], xt(r), s = r[1], n = (a = r[0]).match(A) || [], _ = s.match(A) || [], _.length) {
+            for (; i = A.exec(s);) d = i[0], u = s.substring(k, i.index), o ? o = (o + 1) % 5 : "rgba(" !== u.substr(-5) && "hsla(" !== u.substr(-5) || (o = 1), d !== (l = n[b++] || "") && (c = parseFloat(l) || 0, p = l.substr((c + "").length), "=" === d.charAt(1) && (d = me(c, d) + p), m = parseFloat(d), g = d.substr((m + "").length), k = A.lastIndex - g.length, g || (g = g || f.units[t] || p, k === s.length && (s += g, h.e += g)), p !== g && (c = Ps(e, t, l, g) || 0), h._pt = {
+              _next: h._pt,
+              p: u || 1 === b ? u : ",",
+              s: c,
+              c: m - c,
+              m: o && o < 4 || "zIndex" === t ? Math.round : 0
             });
-            k.c = h < s.length ? s.substring(h, s.length) : ""
-          } else k.r = "display" === t && "none" === s ? cs : os;
-          return B.test(s) && (k.e = 0), this._pt = k, k
+            h.c = k < s.length ? s.substring(k, s.length) : ""
+          } else h.r = "display" === t && "none" === s ? os : cs;
+          return B.test(s) && (h.e = 0), this._pt = h, h
         },
         Ds = {
           top: "0%",
@@ -1791,62 +1791,62 @@ _global.SENTRY_RELEASE = {
             let e, a, s, r = t.t,
               i = r.style,
               n = t.u,
-              o = r._gsap;
+              c = r._gsap;
             if ("all" === n || !0 === n) i.cssText = "", a = 1;
             else
               for (n = n.split(","), s = n.length; --s > -1;) e = n[s], Ya[e] && (a = 1, e = "transformOrigin" === e ? _s : ps), Is(r, e);
-            a && (Is(r, ps), o && (o.svg && r.removeAttribute("transform"), Ws(r, 1), o.uncache = 1, hs(i)))
+            a && (Is(r, ps), c && (c.svg && r.removeAttribute("transform"), Ws(r, 1), c.uncache = 1, ks(i)))
           }
         },
-        Rs = {
+        Fs = {
           clearProps(e, t, a, s, r) {
             if ("isFromStart" !== r.data) {
-              let i = e._pt = new ca(e._pt, t, a, 0, 0, Vs);
+              let i = e._pt = new oa(e._pt, t, a, 0, 0, Vs);
               return i.u = s, i.pr = -10, i.tween = r, e._props.push(a), 1
             }
           }
         },
-        Fs = [1, 0, 0, 1, 0, 0],
+        Rs = [1, 0, 0, 1, 0, 0],
         $s = {},
-        Gs = e => "matrix(1, 0, 0, 1, 0, 0)" === e || "none" === e || !e,
-        Us = e => {
+        Us = e => "matrix(1, 0, 0, 1, 0, 0)" === e || "none" === e || !e,
+        Gs = e => {
           let t = ys(e, ps);
-          return Gs(t) ? Fs : t.substr(7).match(O).map(le)
+          return Us(t) ? Rs : t.substr(7).match(O).map(le)
         },
         Hs = (e, t) => {
           let a, s, r, i, n = e._gsap || ne(e),
-            o = e.style,
-            c = Us(e);
-          return n.svg && e.getAttribute("transform") ? (r = e.transform.baseVal.consolidate().matrix, c = [r.a, r.b, r.c, r.d, r.e, r.f], "1,0,0,1,0,0" === c.join(",") ? Fs : c) : (c !== Fs || e.offsetParent || e === $a || n.svg || (r = o.display, o.display = "block", a = e.parentNode, a && e.offsetParent || (i = 1, s = e.nextElementSibling, $a.appendChild(e)), c = Us(e), r ? o.display = r : Is(e, "display"), i && (s ? a.insertBefore(e, s) : a ? a.appendChild(e) : $a.removeChild(e))), t && c.length > 6 ? [c[0], c[1], c[4], c[5], c[12], c[13]] : c)
+            c = e.style,
+            o = Gs(e);
+          return n.svg && e.getAttribute("transform") ? (r = e.transform.baseVal.consolidate().matrix, o = [r.a, r.b, r.c, r.d, r.e, r.f], "1,0,0,1,0,0" === o.join(",") ? Rs : o) : (o !== Rs || e.offsetParent || e === $a || n.svg || (r = c.display, c.display = "block", a = e.parentNode, a && e.offsetParent || (i = 1, s = e.nextElementSibling, $a.appendChild(e)), o = Gs(e), r ? c.display = r : Is(e, "display"), i && (s ? a.insertBefore(e, s) : a ? a.appendChild(e) : $a.removeChild(e))), t && o.length > 6 ? [o[0], o[1], o[4], o[5], o[12], o[13]] : o)
         },
         qs = (e, t, a, s, r, i) => {
-          let n, o, c, l, d = e._gsap,
+          let n, c, o, l, d = e._gsap,
             m = r || Hs(e, !0),
             u = d.xOrigin || 0,
             g = d.yOrigin || 0,
             f = d.xOffset || 0,
             p = d.yOffset || 0,
             _ = m[0],
-            k = m[1],
-            h = m[2],
-            v = m[3],
-            b = m[4],
+            h = m[1],
+            k = m[2],
+            b = m[3],
+            v = m[4],
             x = m[5],
             y = t.split(" "),
             w = parseFloat(y[0]) || 0,
             N = parseFloat(y[1]) || 0;
-          a ? m !== Fs && (o = _ * v - k * h) && (c = w * (v / o) + N * (-h / o) + (h * x - v * b) / o, l = w * (-k / o) + N * (_ / o) - (_ * x - k * b) / o, w = c, N = l) : (n = Cs(e), w = n.x + (~y[0].indexOf("%") ? w / 100 * n.width : w), N = n.y + (~(y[1] || y[0]).indexOf("%") ? N / 100 * n.height : N)), s || !1 !== s && d.smooth ? (b = w - u, x = N - g, d.xOffset = f + (b * _ + x * h) - b, d.yOffset = p + (b * k + x * v) - x) : d.xOffset = d.yOffset = 0, d.xOrigin = w, d.yOrigin = N, d.smooth = !!s, d.origin = t, d.originIsAbsolute = !!a, e.style[_s] = "0px 0px", i && (Es(i, d, "xOrigin", u, w), Es(i, d, "yOrigin", g, N), Es(i, d, "xOffset", f, d.xOffset), Es(i, d, "yOffset", p, d.yOffset)), e.setAttribute("data-svg-origin", w + " " + N)
+          a ? m !== Rs && (c = _ * b - h * k) && (o = w * (b / c) + N * (-k / c) + (k * x - b * v) / c, l = w * (-h / c) + N * (_ / c) - (_ * x - h * v) / c, w = o, N = l) : (n = Cs(e), w = n.x + (~y[0].indexOf("%") ? w / 100 * n.width : w), N = n.y + (~(y[1] || y[0]).indexOf("%") ? N / 100 * n.height : N)), s || !1 !== s && d.smooth ? (v = w - u, x = N - g, d.xOffset = f + (v * _ + x * k) - v, d.yOffset = p + (v * h + x * b) - x) : d.xOffset = d.yOffset = 0, d.xOrigin = w, d.yOrigin = N, d.smooth = !!s, d.origin = t, d.originIsAbsolute = !!a, e.style[_s] = "0px 0px", i && (Es(i, d, "xOrigin", u, w), Es(i, d, "yOrigin", g, N), Es(i, d, "xOffset", f, d.xOffset), Es(i, d, "yOffset", p, d.yOffset)), e.setAttribute("data-svg-origin", w + " " + N)
         },
         Ws = (e, t) => {
           let a = e._gsap || new Ot(e);
           if ("x" in a && !t && !a.uncache) return a;
-          let s, r, i, n, o, c, l, d, m, u, g, p, _, k, h, v, b, x, y, w, N, j, S, T, C, M, I, E, L, z, P, O, A = e.style,
+          let s, r, i, n, c, o, l, d, m, u, g, p, _, h, k, b, v, x, y, w, N, j, S, T, C, M, I, E, L, z, P, O, A = e.style,
             D = a.scaleX < 0,
             B = "px",
             V = "deg",
-            R = getComputedStyle(e),
-            F = ys(e, _s) || "0";
-          return s = r = i = c = l = d = m = u = g = 0, n = o = 1, a.svg = !(!e.getCTM || !Ms(e)), R.translate && ("none" === R.translate && "none" === R.scale && "none" === R.rotate || (A[ps] = ("none" !== R.translate ? "translate3d(" + (R.translate + " 0 0").split(" ").slice(0, 3).join(", ") + ") " : "") + ("none" !== R.rotate ? "rotate(" + R.rotate + ") " : "") + ("none" !== R.scale ? "scale(" + R.scale.split(" ").join(",") + ") " : "") + ("none" !== R[ps] ? R[ps] : "")), A.scale = A.rotate = A.translate = "none"), k = Hs(e, a.svg), a.svg && (a.uncache ? (C = e.getBBox(), F = a.xOrigin - C.x + "px " + (a.yOrigin - C.y) + "px", T = "") : T = !t && e.getAttribute("data-svg-origin"), qs(e, T || F, !!T || a.originIsAbsolute, !1 !== a.smooth, k)), p = a.xOrigin || 0, _ = a.yOrigin || 0, k !== Fs && (x = k[0], y = k[1], w = k[2], N = k[3], s = j = k[4], r = S = k[5], 6 === k.length ? (n = Math.sqrt(x * x + y * y), o = Math.sqrt(N * N + w * w), c = x || y ? Za(y, x) * Ka : 0, m = w || N ? Za(w, N) * Ka + c : 0, m && (o *= Math.abs(Math.cos(m * Qa))), a.svg && (s -= p - (p * x + _ * w), r -= _ - (p * y + _ * N))) : (O = k[6], z = k[7], I = k[8], E = k[9], L = k[10], P = k[11], s = k[12], r = k[13], i = k[14], h = Za(O, L), l = h * Ka, h && (v = Math.cos(-h), b = Math.sin(-h), T = j * v + I * b, C = S * v + E * b, M = O * v + L * b, I = j * -b + I * v, E = S * -b + E * v, L = O * -b + L * v, P = z * -b + P * v, j = T, S = C, O = M), h = Za(-w, L), d = h * Ka, h && (v = Math.cos(-h), b = Math.sin(-h), T = x * v - I * b, C = y * v - E * b, M = w * v - L * b, P = N * b + P * v, x = T, y = C, w = M), h = Za(y, x), c = h * Ka, h && (v = Math.cos(h), b = Math.sin(h), T = x * v + y * b, C = j * v + S * b, y = y * v - x * b, S = S * v - j * b, x = T, j = C), l && Math.abs(l) + Math.abs(c) > 359.9 && (l = c = 0, d = 180 - d), n = le(Math.sqrt(x * x + y * y + w * w)), o = le(Math.sqrt(S * S + O * O)), h = Za(j, S), m = Math.abs(h) > 2e-4 ? h * Ka : 0, g = P ? 1 / (P < 0 ? -P : P) : 0), a.svg && (T = e.getAttribute("transform"), a.forceCSS = e.setAttribute("transform", "") || !Gs(ys(e, ps)), T && e.setAttribute("transform", T))), Math.abs(m) > 90 && Math.abs(m) < 270 && (D ? (n *= -1, m += c <= 0 ? 180 : -180, c += c <= 0 ? 180 : -180) : (o *= -1, m += m <= 0 ? 180 : -180)), t = t || a.uncache, a.x = s - ((a.xPercent = s && (!t && a.xPercent || (Math.round(e.offsetWidth / 2) === Math.round(-s) ? -50 : 0))) ? e.offsetWidth * a.xPercent / 100 : 0) + B, a.y = r - ((a.yPercent = r && (!t && a.yPercent || (Math.round(e.offsetHeight / 2) === Math.round(-r) ? -50 : 0))) ? e.offsetHeight * a.yPercent / 100 : 0) + B, a.z = i + B, a.scaleX = le(n), a.scaleY = le(o), a.rotation = le(c) + V, a.rotationX = le(l) + V, a.rotationY = le(d) + V, a.skewX = m + V, a.skewY = u + V, a.transformPerspective = g + B, (a.zOrigin = parseFloat(F.split(" ")[2]) || 0) && (A[_s] = Xs(F)), a.xOffset = a.yOffset = 0, a.force3D = f.force3D, a.renderTransform = a.svg ? tr : Xa ? er : Ks, a.uncache = 0, a
+            F = getComputedStyle(e),
+            R = ys(e, _s) || "0";
+          return s = r = i = o = l = d = m = u = g = 0, n = c = 1, a.svg = !(!e.getCTM || !Ms(e)), F.translate && ("none" === F.translate && "none" === F.scale && "none" === F.rotate || (A[ps] = ("none" !== F.translate ? "translate3d(" + (F.translate + " 0 0").split(" ").slice(0, 3).join(", ") + ") " : "") + ("none" !== F.rotate ? "rotate(" + F.rotate + ") " : "") + ("none" !== F.scale ? "scale(" + F.scale.split(" ").join(",") + ") " : "") + ("none" !== F[ps] ? F[ps] : "")), A.scale = A.rotate = A.translate = "none"), h = Hs(e, a.svg), a.svg && (a.uncache ? (C = e.getBBox(), R = a.xOrigin - C.x + "px " + (a.yOrigin - C.y) + "px", T = "") : T = !t && e.getAttribute("data-svg-origin"), qs(e, T || R, !!T || a.originIsAbsolute, !1 !== a.smooth, h)), p = a.xOrigin || 0, _ = a.yOrigin || 0, h !== Rs && (x = h[0], y = h[1], w = h[2], N = h[3], s = j = h[4], r = S = h[5], 6 === h.length ? (n = Math.sqrt(x * x + y * y), c = Math.sqrt(N * N + w * w), o = x || y ? Za(y, x) * Ka : 0, m = w || N ? Za(w, N) * Ka + o : 0, m && (c *= Math.abs(Math.cos(m * Qa))), a.svg && (s -= p - (p * x + _ * w), r -= _ - (p * y + _ * N))) : (O = h[6], z = h[7], I = h[8], E = h[9], L = h[10], P = h[11], s = h[12], r = h[13], i = h[14], k = Za(O, L), l = k * Ka, k && (b = Math.cos(-k), v = Math.sin(-k), T = j * b + I * v, C = S * b + E * v, M = O * b + L * v, I = j * -v + I * b, E = S * -v + E * b, L = O * -v + L * b, P = z * -v + P * b, j = T, S = C, O = M), k = Za(-w, L), d = k * Ka, k && (b = Math.cos(-k), v = Math.sin(-k), T = x * b - I * v, C = y * b - E * v, M = w * b - L * v, P = N * v + P * b, x = T, y = C, w = M), k = Za(y, x), o = k * Ka, k && (b = Math.cos(k), v = Math.sin(k), T = x * b + y * v, C = j * b + S * v, y = y * b - x * v, S = S * b - j * v, x = T, j = C), l && Math.abs(l) + Math.abs(o) > 359.9 && (l = o = 0, d = 180 - d), n = le(Math.sqrt(x * x + y * y + w * w)), c = le(Math.sqrt(S * S + O * O)), k = Za(j, S), m = Math.abs(k) > 2e-4 ? k * Ka : 0, g = P ? 1 / (P < 0 ? -P : P) : 0), a.svg && (T = e.getAttribute("transform"), a.forceCSS = e.setAttribute("transform", "") || !Us(ys(e, ps)), T && e.setAttribute("transform", T))), Math.abs(m) > 90 && Math.abs(m) < 270 && (D ? (n *= -1, m += o <= 0 ? 180 : -180, o += o <= 0 ? 180 : -180) : (c *= -1, m += m <= 0 ? 180 : -180)), t = t || a.uncache, a.x = s - ((a.xPercent = s && (!t && a.xPercent || (Math.round(e.offsetWidth / 2) === Math.round(-s) ? -50 : 0))) ? e.offsetWidth * a.xPercent / 100 : 0) + B, a.y = r - ((a.yPercent = r && (!t && a.yPercent || (Math.round(e.offsetHeight / 2) === Math.round(-r) ? -50 : 0))) ? e.offsetHeight * a.yPercent / 100 : 0) + B, a.z = i + B, a.scaleX = le(n), a.scaleY = le(c), a.rotation = le(o) + V, a.rotationX = le(l) + V, a.rotationY = le(d) + V, a.skewX = m + V, a.skewY = u + V, a.transformPerspective = g + B, (a.zOrigin = parseFloat(R.split(" ")[2]) || 0) && (A[_s] = Xs(R)), a.xOffset = a.yOffset = 0, a.force3D = f.force3D, a.renderTransform = a.svg ? tr : Xa ? er : Ks, a.uncache = 0, a
         },
         Xs = e => (e = e.split(" "))[0] + " " + e[1],
         Ys = (e, t, a) => {
@@ -1866,8 +1866,8 @@ _global.SENTRY_RELEASE = {
             x: r,
             y: i,
             z: n,
-            rotation: o,
-            rotationY: c,
+            rotation: c,
+            rotationY: o,
             rotationX: l,
             skewX: d,
             skewY: m,
@@ -1876,20 +1876,20 @@ _global.SENTRY_RELEASE = {
             transformPerspective: f,
             force3D: p,
             target: _,
-            zOrigin: k
-          } = t || this, h = "", v = "auto" === p && e && 1 !== e || !0 === p;
-          if (k && (l !== Qs || c !== Qs)) {
-            let e, t = parseFloat(c) * Qa,
+            zOrigin: h
+          } = t || this, k = "", b = "auto" === p && e && 1 !== e || !0 === p;
+          if (h && (l !== Qs || o !== Qs)) {
+            let e, t = parseFloat(o) * Qa,
               a = Math.sin(t),
               s = Math.cos(t);
-            t = parseFloat(l) * Qa, e = Math.cos(t), r = Ys(_, r, a * e * -k), i = Ys(_, i, -Math.sin(t) * -k), n = Ys(_, n, s * e * -k + k)
+            t = parseFloat(l) * Qa, e = Math.cos(t), r = Ys(_, r, a * e * -h), i = Ys(_, i, -Math.sin(t) * -h), n = Ys(_, n, s * e * -h + h)
           }
-          f !== Zs && (h += "perspective(" + f + Js), (a || s) && (h += "translate(" + a + "%, " + s + "%) "), (v || r !== Zs || i !== Zs || n !== Zs) && (h += n !== Zs || v ? "translate3d(" + r + ", " + i + ", " + n + ") " : "translate(" + r + ", " + i + Js), o !== Qs && (h += "rotate(" + o + Js), c !== Qs && (h += "rotateY(" + c + Js), l !== Qs && (h += "rotateX(" + l + Js), d === Qs && m === Qs || (h += "skew(" + d + ", " + m + Js), 1 === u && 1 === g || (h += "scale(" + u + ", " + g + Js), _.style[ps] = h || "translate(0, 0)"
+          f !== Zs && (k += "perspective(" + f + Js), (a || s) && (k += "translate(" + a + "%, " + s + "%) "), (b || r !== Zs || i !== Zs || n !== Zs) && (k += n !== Zs || b ? "translate3d(" + r + ", " + i + ", " + n + ") " : "translate(" + r + ", " + i + Js), c !== Qs && (k += "rotate(" + c + Js), o !== Qs && (k += "rotateY(" + o + Js), l !== Qs && (k += "rotateX(" + l + Js), d === Qs && m === Qs || (k += "skew(" + d + ", " + m + Js), 1 === u && 1 === g || (k += "scale(" + u + ", " + g + Js), _.style[ps] = k || "translate(0, 0)"
         },
         tr = function(e, t) {
           let a, s, r, i, n, {
-              xPercent: o,
-              yPercent: c,
+              xPercent: c,
+              yPercent: o,
               x: l,
               y: d,
               rotation: m,
@@ -1898,43 +1898,43 @@ _global.SENTRY_RELEASE = {
               scaleX: f,
               scaleY: p,
               target: _,
-              xOrigin: k,
-              yOrigin: h,
-              xOffset: v,
-              yOffset: b,
+              xOrigin: h,
+              yOrigin: k,
+              xOffset: b,
+              yOffset: v,
               forceCSS: x
             } = t || this,
             y = parseFloat(l),
             w = parseFloat(d);
-          m = parseFloat(m), u = parseFloat(u), g = parseFloat(g), g && (g = parseFloat(g), u += g, m += g), m || u ? (m *= Qa, u *= Qa, a = Math.cos(m) * f, s = Math.sin(m) * f, r = Math.sin(m - u) * -p, i = Math.cos(m - u) * p, u && (g *= Qa, n = Math.tan(u - g), n = Math.sqrt(1 + n * n), r *= n, i *= n, g && (n = Math.tan(g), n = Math.sqrt(1 + n * n), a *= n, s *= n)), a = le(a), s = le(s), r = le(r), i = le(i)) : (a = f, i = p, s = r = 0), (y && !~(l + "").indexOf("px") || w && !~(d + "").indexOf("px")) && (y = Ps(_, "x", l, "px"), w = Ps(_, "y", d, "px")), (k || h || v || b) && (y = le(y + k - (k * a + h * r) + v), w = le(w + h - (k * s + h * i) + b)), (o || c) && (n = _.getBBox(), y = le(y + o / 100 * n.width), w = le(w + c / 100 * n.height)), n = "matrix(" + a + "," + s + "," + r + "," + i + "," + y + "," + w + ")", _.setAttribute("transform", n), x && (_.style[ps] = n)
+          m = parseFloat(m), u = parseFloat(u), g = parseFloat(g), g && (g = parseFloat(g), u += g, m += g), m || u ? (m *= Qa, u *= Qa, a = Math.cos(m) * f, s = Math.sin(m) * f, r = Math.sin(m - u) * -p, i = Math.cos(m - u) * p, u && (g *= Qa, n = Math.tan(u - g), n = Math.sqrt(1 + n * n), r *= n, i *= n, g && (n = Math.tan(g), n = Math.sqrt(1 + n * n), a *= n, s *= n)), a = le(a), s = le(s), r = le(r), i = le(i)) : (a = f, i = p, s = r = 0), (y && !~(l + "").indexOf("px") || w && !~(d + "").indexOf("px")) && (y = Ps(_, "x", l, "px"), w = Ps(_, "y", d, "px")), (h || k || b || v) && (y = le(y + h - (h * a + k * r) + b), w = le(w + k - (h * s + k * i) + v)), (c || o) && (n = _.getBBox(), y = le(y + c / 100 * n.width), w = le(w + o / 100 * n.height)), n = "matrix(" + a + "," + s + "," + r + "," + i + "," + y + "," + w + ")", _.setAttribute("transform", n), x && (_.style[ps] = n)
         },
         ar = function(e, t, a, s, r) {
-          let i, n, o = 360,
-            c = N(r),
-            l = parseFloat(r) * (c && ~r.indexOf("rad") ? Ka : 1) - s,
+          let i, n, c = 360,
+            o = N(r),
+            l = parseFloat(r) * (o && ~r.indexOf("rad") ? Ka : 1) - s,
             d = s + l + "deg";
-          return c && (i = r.split("_")[1], "short" === i && (l %= o, l !== l % 180 && (l += l < 0 ? o : -360)), "cw" === i && l < 0 ? l = (l + 36e9) % o - ~~(l / o) * o : "ccw" === i && l > 0 && (l = (l - 36e9) % o - ~~(l / o) * o)), e._pt = n = new ca(e._pt, t, a, s, l, rs), n.e = d, n.u = "deg", e._props.push(a), n
+          return o && (i = r.split("_")[1], "short" === i && (l %= c, l !== l % 180 && (l += l < 0 ? c : -360)), "cw" === i && l < 0 ? l = (l + 36e9) % c - ~~(l / c) * c : "ccw" === i && l > 0 && (l = (l - 36e9) % c - ~~(l / c) * c)), e._pt = n = new oa(e._pt, t, a, s, l, rs), n.e = d, n.u = "deg", e._props.push(a), n
         },
         sr = (e, t) => {
           for (let a in t) e[a] = t[a];
           return e
         },
         rr = (e, t, a) => {
-          let s, r, i, n, o, c, l, d, m = sr({}, a._gsap),
+          let s, r, i, n, c, o, l, d, m = sr({}, a._gsap),
             u = a.style;
-          for (r in m.svg ? (i = a.getAttribute("transform"), a.setAttribute("transform", ""), u[ps] = t, s = Ws(a, 1), Is(a, ps), a.setAttribute("transform", i)) : (i = getComputedStyle(a)[ps], u[ps] = t, s = Ws(a, 1), u[ps] = i), Ya) i = m[r], n = s[r], i !== n && "perspective,force3D,transformOrigin,svgOrigin".indexOf(r) < 0 && (l = qe(i), d = qe(n), o = l !== d ? Ps(a, r, i, d) : parseFloat(i), c = parseFloat(n), e._pt = new ca(e._pt, s, r, o, c - o, ss), e._pt.u = d || 0, e._props.push(r));
+          for (r in m.svg ? (i = a.getAttribute("transform"), a.setAttribute("transform", ""), u[ps] = t, s = Ws(a, 1), Is(a, ps), a.setAttribute("transform", i)) : (i = getComputedStyle(a)[ps], u[ps] = t, s = Ws(a, 1), u[ps] = i), Ya) i = m[r], n = s[r], i !== n && "perspective,force3D,transformOrigin,svgOrigin".indexOf(r) < 0 && (l = qe(i), d = qe(n), c = l !== d ? Ps(a, r, i, d) : parseFloat(i), o = parseFloat(n), e._pt = new oa(e._pt, s, r, c, o - c, ss), e._pt.u = d || 0, e._props.push(r));
           sr(s, m)
         };
-      ce("padding,margin,Width,Radius", ((e, t) => {
+      oe("padding,margin,Width,Radius", ((e, t) => {
         let a = "Top",
           s = "Right",
           r = "Bottom",
           i = "Left",
           n = (t < 3 ? [a, s, r, i] : [a + i, a + s, r + s, r + i]).map((a => t < 2 ? e + a : "border" + a + e));
-        Rs[t > 1 ? "border" + e : e] = function(e, t, a, s, r) {
-          let i, o;
-          if (arguments.length < 4) return i = n.map((t => Os(e, t, a))), o = i.join(" "), 5 === o.split(i[0]).length ? i[0] : o;
-          i = (s + "").split(" "), o = {}, n.forEach(((e, t) => o[e] = i[t] = i[t] || i[(t - 1) / 2 | 0])), e.init(t, o, r)
+        Fs[t > 1 ? "border" + e : e] = function(e, t, a, s, r) {
+          let i, c;
+          if (arguments.length < 4) return i = n.map((t => Os(e, t, a))), c = i.join(" "), 5 === c.split(i[0]).length ? i[0] : c;
+          i = (s + "").split(" "), c = {}, n.forEach(((e, t) => c[e] = i[t] = i[t] || i[(t - 1) / 2 | 0])), e.init(t, c, r)
         }
       }));
       const ir = {
@@ -1942,35 +1942,35 @@ _global.SENTRY_RELEASE = {
         register: js,
         targetTest: e => e.style && e.nodeType,
         init(e, t, a, s, r) {
-          let i, n, o, c, l, d, m, u, g, p, _, k, h, v, b, x, y = this._props,
+          let i, n, c, o, l, d, m, u, g, p, _, h, k, b, v, x, y = this._props,
             w = e.style,
             j = a.vars.startAt;
-          for (m in Ga || js(), this.styles = this.styles || bs(e), x = this.styles.props, this.tween = a, t)
+          for (m in Ua || js(), this.styles = this.styles || vs(e), x = this.styles.props, this.tween = a, t)
             if ("autoRound" !== m && (n = t[m], !ee[m] || !$t(m, t, a, s, e, r)))
-              if (l = typeof n, d = Rs[m], "function" === l && (n = n.call(a, s, e, r), l = typeof n), "string" === l && ~n.indexOf("random(") && (n = it(n)), d) d(this, e, m, n, a) && (b = 1);
-              else if ("--" === m.substr(0, 2)) i = (getComputedStyle(e).getPropertyValue(m) + "").trim(), n += "", vt.lastIndex = 0, vt.test(i) || (u = qe(i), g = qe(n)), g ? u !== g && (i = Ps(e, m, i, g) + g) : u && (n += u), this.add(w, "setProperty", i, n, s, r, 0, 0, m), y.push(m), x.push(m, 0, w[m]);
+              if (l = typeof n, d = Fs[m], "function" === l && (n = n.call(a, s, e, r), l = typeof n), "string" === l && ~n.indexOf("random(") && (n = it(n)), d) d(this, e, m, n, a) && (v = 1);
+              else if ("--" === m.substr(0, 2)) i = (getComputedStyle(e).getPropertyValue(m) + "").trim(), n += "", bt.lastIndex = 0, bt.test(i) || (u = qe(i), g = qe(n)), g ? u !== g && (i = Ps(e, m, i, g) + g) : u && (n += u), this.add(w, "setProperty", i, n, s, r, 0, 0, m), y.push(m), x.push(m, 0, w[m]);
           else if ("undefined" !== l) {
-            if (j && m in j ? (i = "function" == typeof j[m] ? j[m].call(a, s, e, r) : j[m], N(i) && ~i.indexOf("random(") && (i = it(i)), qe(i + "") || (i += f.units[m] || qe(Os(e, m)) || ""), "=" === (i + "").charAt(1) && (i = Os(e, m))) : i = Os(e, m), c = parseFloat(i), p = "string" === l && "=" === n.charAt(1) && n.substr(0, 2), p && (n = n.substr(2)), o = parseFloat(n), m in as && ("autoAlpha" === m && (1 === c && "hidden" === Os(e, "visibility") && o && (c = 0), x.push("visibility", 0, w.visibility), Es(this, w, "visibility", c ? "inherit" : "hidden", o ? "inherit" : "hidden", !o)), "scale" !== m && "transform" !== m && (m = as[m], ~m.indexOf(",") && (m = m.split(",")[0]))), _ = m in Ya, _)
-              if (this.styles.save(m), k || (h = e._gsap, h.renderTransform && !t.parseTransform || Ws(e, t.parseTransform), v = !1 !== t.smoothOrigin && h.smooth, k = this._pt = new ca(this._pt, w, ps, 0, 1, h.renderTransform, h, 0, -1), k.dep = 1), "scale" === m) this._pt = new ca(this._pt, h, "scaleY", h.scaleY, (p ? me(h.scaleY, p + o) : o) - h.scaleY || 0, ss), this._pt.u = 0, y.push("scaleY", m), m += "X";
+            if (j && m in j ? (i = "function" == typeof j[m] ? j[m].call(a, s, e, r) : j[m], N(i) && ~i.indexOf("random(") && (i = it(i)), qe(i + "") || (i += f.units[m] || qe(Os(e, m)) || ""), "=" === (i + "").charAt(1) && (i = Os(e, m))) : i = Os(e, m), o = parseFloat(i), p = "string" === l && "=" === n.charAt(1) && n.substr(0, 2), p && (n = n.substr(2)), c = parseFloat(n), m in as && ("autoAlpha" === m && (1 === o && "hidden" === Os(e, "visibility") && c && (o = 0), x.push("visibility", 0, w.visibility), Es(this, w, "visibility", o ? "inherit" : "hidden", c ? "inherit" : "hidden", !c)), "scale" !== m && "transform" !== m && (m = as[m], ~m.indexOf(",") && (m = m.split(",")[0]))), _ = m in Ya, _)
+              if (this.styles.save(m), h || (k = e._gsap, k.renderTransform && !t.parseTransform || Ws(e, t.parseTransform), b = !1 !== t.smoothOrigin && k.smooth, h = this._pt = new oa(this._pt, w, ps, 0, 1, k.renderTransform, k, 0, -1), h.dep = 1), "scale" === m) this._pt = new oa(this._pt, k, "scaleY", k.scaleY, (p ? me(k.scaleY, p + c) : c) - k.scaleY || 0, ss), this._pt.u = 0, y.push("scaleY", m), m += "X";
               else {
                 if ("transformOrigin" === m) {
-                  x.push(_s, 0, w[_s]), n = Bs(n), h.svg ? qs(e, n, 0, v, 0, this) : (g = parseFloat(n.split(" ")[2]) || 0, g !== h.zOrigin && Es(this, h, "zOrigin", h.zOrigin, g), Es(this, w, m, Xs(i), Xs(n)));
+                  x.push(_s, 0, w[_s]), n = Bs(n), k.svg ? qs(e, n, 0, b, 0, this) : (g = parseFloat(n.split(" ")[2]) || 0, g !== k.zOrigin && Es(this, k, "zOrigin", k.zOrigin, g), Es(this, w, m, Xs(i), Xs(n)));
                   continue
                 }
                 if ("svgOrigin" === m) {
-                  qs(e, n, 1, v, 0, this);
+                  qs(e, n, 1, b, 0, this);
                   continue
                 }
                 if (m in $s) {
-                  ar(this, h, m, c, p ? me(c, p + n) : n);
+                  ar(this, k, m, o, p ? me(o, p + n) : n);
                   continue
                 }
                 if ("smoothOrigin" === m) {
-                  Es(this, h, "smooth", h.smooth, n);
+                  Es(this, k, "smooth", k.smooth, n);
                   continue
                 }
                 if ("force3D" === m) {
-                  h[m] = n;
+                  k[m] = n;
                   continue
                 }
                 if ("transform" === m) {
@@ -1979,16 +1979,16 @@ _global.SENTRY_RELEASE = {
                 }
               }
             else m in w || (m = Ns(m) || m);
-            if (_ || (o || 0 === o) && (c || 0 === c) && !ts.test(n) && m in w) u = (i + "").substr((c + "").length), o || (o = 0), g = qe(n) || (m in f.units ? f.units[m] : u), u !== g && (c = Ps(e, m, i, g)), this._pt = new ca(this._pt, _ ? h : w, m, c, (p ? me(c, p + o) : o) - c, _ || "px" !== g && "zIndex" !== m || !1 === t.autoRound ? ss : ns), this._pt.u = g || 0, u !== g && "%" !== g && (this._pt.b = i, this._pt.r = is);
+            if (_ || (c || 0 === c) && (o || 0 === o) && !ts.test(n) && m in w) u = (i + "").substr((o + "").length), c || (c = 0), g = qe(n) || (m in f.units ? f.units[m] : u), u !== g && (o = Ps(e, m, i, g)), this._pt = new oa(this._pt, _ ? k : w, m, o, (p ? me(o, p + c) : c) - o, _ || "px" !== g && "zIndex" !== m || !1 === t.autoRound ? ss : ns), this._pt.u = g || 0, u !== g && "%" !== g && (this._pt.b = i, this._pt.r = is);
             else if (m in w) As.call(this, e, m, i, p ? p + n : n);
             else if (m in e) this.add(e, m, i || e[m], p ? p + n : n, s, r);
             else if ("parseTransform" !== m) {
-              U(m, n);
+              G(m, n);
               continue
             }
             _ || (m in w ? x.push(m, 0, w[m]) : x.push(m, 1, i || e[m])), y.push(m)
           }
-          b && oa(this)
+          v && ca(this)
         },
         render(e, t) {
           if (t.tween._time || !Wa()) {
@@ -2007,446 +2007,255 @@ _global.SENTRY_RELEASE = {
           _getMatrix: Hs
         }
       };
-      xa.utils.checkPrefix = Ns, xa.core.getStyleSaver = bs,
+      xa.utils.checkPrefix = Ns, xa.core.getStyleSaver = vs,
         function(e, t, a, s) {
-          let r = ce(e + "," + t + ",transform,transformOrigin,svgOrigin,force3D,smoothOrigin,transformPerspective", (e => {
+          let r = oe(e + "," + t + ",transform,transformOrigin,svgOrigin,force3D,smoothOrigin,transformPerspective", (e => {
             Ya[e] = 1
           }));
-          ce(t, (e => {
+          oe(t, (e => {
             f.units[e] = "deg", $s[e] = 1
-          })), as[r[13]] = e + "," + t, ce("0:translateX,1:translateY,2:translateZ,8:rotate,8:rotationZ,8:rotateZ,9:rotateX,10:rotateY", (e => {
+          })), as[r[13]] = e + "," + t, oe("0:translateX,1:translateY,2:translateZ,8:rotate,8:rotationZ,8:rotateZ,9:rotateX,10:rotateY", (e => {
             let t = e.split(":");
             as[t[1]] = r[t[0]]
           }))
-        }("x,y,z,scale,scaleX,scaleY,xPercent,yPercent", "rotation,rotationX,rotationY,skewX,skewY"), ce("x,y,z,top,right,bottom,left,width,height,fontSize,padding,margin,perspective", (e => {
+        }("x,y,z,scale,scaleX,scaleY,xPercent,yPercent", "rotation,rotationX,rotationY,skewX,skewY"), oe("x,y,z,top,right,bottom,left,width,height,fontSize,padding,margin,perspective", (e => {
           f.units[e] = "px"
         })), xa.registerPlugin(ir);
       const nr = xa.registerPlugin(ir) || xa;
       nr.core.Tween
     },
-    33544: (e, t, a) => {
+    65596: (e, t, a) => {
       "use strict";
       a.r(t), a.d(t, {
-        A: () => I,
-        AudioPlayer: () => V,
-        Badge: () => R,
-        Brands: () => F,
-        Button: () => G,
-        ButtonGroup: () => Y,
-        CalloutSection: () => pe,
-        Carousel: () => te,
-        ConditionalBlock: () => oe,
-        CookieAB: () => be,
-        CountryInputField: () => ve,
-        Cta: () => Te,
-        DescriptionArea: () => Fe,
-        DiscountsBadge: () => qe,
-        DotLoader: () => Xe,
-        Dropdown: () => Qe,
-        Embed: () => tt,
-        ExpandingPlatformButton: () => dt,
-        FadeInContent: () => ut,
-        GameSiteHeader: () => ft,
-        Gen9Button: () => X,
-        Gen9CoreCarousel: () => xt,
-        Grid: () => Je,
-        HTMLElement: () => It,
-        Hero: () => Mt,
-        HookStore: () => re,
-        ImageWithBadge: () => Bt,
-        InViewTracker: () => Ut,
-        LanguageSelector: () => zt,
-        LayeredImage: () => At,
-        LoadingAnimation: () => Xr,
-        MultiSourceImage: () => Ee,
-        NewswireBlocks: () => ta,
-        NewswireCard: () => Xt,
-        NewswireList: () => Qt,
-        NewswireRelated: () => Jt,
-        NewswireTag: () => qt,
-        OrderedList: () => ra,
-        PackList: () => pa,
-        PackListMenu: () => Ma,
-        Paging: () => La,
-        ParallaxCacheBuster: () => Pa,
-        ParallaxInnerLayer: () => Da,
-        ParallaxOuterLayer: () => Va,
-        ParallaxWrapper: () => Aa,
+        A: () => f,
+        AudioPlayer: () => w,
+        Badge: () => N,
+        Brands: () => j,
+        Button: () => T,
+        ButtonGroup: () => z,
+        CalloutSection: () => J,
+        Carousel: () => V,
+        ConditionalBlock: () => H,
+        CookieAB: () => ie,
+        CountryInputField: () => re,
+        Cta: () => ue,
+        DescriptionArea: () => Se,
+        DiscountsBadge: () => Ee,
+        DotLoader: () => ze,
+        Dropdown: () => De,
+        Embed: () => Re,
+        ExpandingPlatformButton: () => Ke,
+        FadeInContent: () => Ze,
+        GameSiteHeader: () => et,
+        Gen9Button: () => L,
+        Gen9CoreCarousel: () => ct,
+        Grid: () => Ve,
+        HTMLElement: () => _t,
+        Hero: () => pt,
+        HookStore: () => $,
+        ImageWithBadge: () => jt,
+        InViewTracker: () => Et,
+        LanguageSelector: () => vt,
+        LayeredImage: () => wt,
+        LoadingAnimation: () => Or,
+        MultiSourceImage: () => _e,
+        NewswireBlocks: () => $t,
+        NewswireCard: () => Ot,
+        NewswireList: () => Bt,
+        NewswireRelated: () => Ft,
+        NewswireTag: () => zt,
+        OrderedList: () => Ht,
+        PackList: () => aa,
+        PackListMenu: () => _a,
+        Paging: () => ba,
+        ParallaxCacheBuster: () => xa,
+        ParallaxInnerLayer: () => Na,
+        ParallaxOuterLayer: () => Sa,
+        ParallaxWrapper: () => wa,
         ProfileSwitcher: () => s,
-        PromoModule: () => js,
-        Rating: () => Is,
-        ResponsiveFlexBox: () => Ls,
-        ResponsiveFlexItem: () => Ps,
-        ResponsiveGridBox: () => As,
-        ResponsiveGridItem: () => Bs,
-        ResponsiveImg: () => Rs,
-        ResponsiveSection: () => $s,
-        RockstarLogo: () => Gs,
-        ScrollSection: () => Us,
-        ScrollToTop: () => Hs,
-        ScrollTracker: () => Ws,
-        SearchBox: () => Xs,
-        Separator: () => Be,
-        Skeleton: () => Ks,
-        SrcsetImage: () => Rt,
-        TextFit: () => Ge,
-        ThumbsGallery: () => rr,
-        TinaModuleFetchNRender: () => or,
-        TinaWrapper: () => cr,
-        TrackList: () => er,
-        UnorderedList: () => Ae,
-        UserVote: () => mr,
+        PromoModule: () => us,
+        Rating: () => hs,
+        ResponsiveFlexBox: () => bs,
+        ResponsiveFlexItem: () => xs,
+        ResponsiveGridBox: () => ws,
+        ResponsiveGridItem: () => js,
+        ResponsiveImg: () => Ts,
+        ResponsiveSection: () => Ms,
+        RockstarLogo: () => Is,
+        ScrollSection: () => Es,
+        ScrollToTop: () => Ls,
+        ScrollTracker: () => Ps,
+        SearchBox: () => Os,
+        Separator: () => we,
+        Skeleton: () => Ds,
+        SrcsetImage: () => Tt,
+        TextFit: () => Ce,
+        ThumbsGallery: () => Hs,
+        TinaModuleFetchNRender: () => Xs,
+        TinaWrapper: () => Ys,
+        TrackList: () => Rs,
+        UnorderedList: () => xe,
+        UserVote: () => Zs,
         VideoCard: () => r,
-        VideoCarousel: () => gr,
-        VideoList: () => br,
-        VisuallyHidden: () => xr,
-        Wasted: () => yr,
+        VideoCarousel: () => er,
+        VideoList: () => cr,
+        VisuallyHidden: () => or,
+        Wasted: () => lr,
         framer: () => n,
-        useTinaModuleFetchByIds: () => nr,
-        withInViewTracker: () => $t,
-        withSearchbarErrorBoundary: () => Tr,
-        withSimpleErrorBoundary: () => vt
+        useTinaModuleFetchByIds: () => Ws,
+        withInViewTracker: () => Mt,
+        withSearchbarErrorBoundary: () => fr,
+        withSimpleErrorBoundary: () => it
       });
       var s = {};
       a.r(s), a.d(s, {
-        CharacterCard: () => Ua,
-        Menu: () => bs,
-        MenuButton: () => ws
+        CharacterCard: () => Ea,
+        Menu: () => cs,
+        MenuButton: () => ds
       });
       var r = {};
       a.r(r), a.d(r, {
-        Art: () => Nr,
-        Link: () => jr
+        Art: () => mr,
+        Link: () => ur
       });
       var i = {};
       a.r(i), a.d(i, {
-        getVariant: () => Gr,
-        transitions: () => Fr,
-        variants: () => $r
+        getVariant: () => Ir,
+        transitions: () => Cr,
+        variants: () => Mr
       });
       var n = {};
       a.r(n), a.d(n, {
         Animations: () => i,
-        LiteMotion: () => Lr,
-        withFadeIn: () => Ar,
-        withFadeUp: () => Rr
+        LiteMotion: () => br,
+        withFadeIn: () => wr,
+        withFadeUp: () => Tr
       });
-      var o = a(51664),
-        c = a(45052),
-        l = a(3832),
-        d = a(95688),
-        m = a(82936);
-      const u = "www",
-        g = "socialClub",
-        f = [{
-          id: "prod",
-          sites: {
-            www: "www",
-            socialClub: "socialclub",
-            support: "support",
-            store: "store"
-          },
-          cookieIdentifier: "prod"
-        }],
-        p = () => {
-          let e;
-          const {
-            location: t
-          } = window, a = t.hostname.substring(0, t.hostname.indexOf(".rockstargames.com")), s = f.findIndex((t => Object.entries(t.sites).findIndex((t => {
-            let [s, r] = t;
-            return r === a && (e = {
-              site: s,
-              subDomain: r
-            }, !0)
-          })) >= 0)), r = f[s >= 0 ? s : 0];
-          return e || (e = {
-            site: "www",
-            subDomain: "local"
-          }), {
-            ...r,
-            currentSite: e
-          }
-        },
-        _ = (e, t) => {
-          e && t ? document.cookie = `${e}=${t}; domain=${k()}; path=/;` : console.log(`Couldn't set cookie (${e}) to value (${t})`)
-        },
-        k = () => {
-          const e = window.location.hostname.split(".");
-          return e.slice(e.length - 2).join(".")
-        },
-        h = e => {
-          const t = document.cookie.split("; "),
-            a = `${e}=`,
-            s = t.find((e => e.startsWith(a))),
-            r = s?.substring(a.length, s.length);
-          return r
-        },
-        v = [{
-          label: "Deutsch",
-          subdomain: "de",
-          subdomaincom: "de",
-          support: "de",
-          iso: "de-DE"
-        }, {
-          label: "English",
-          subdomain: "en-US",
-          subdomaincom: "en",
-          support: "us",
-          iso: "en-US"
-        }, {
-          label: "Español",
-          subdomain: "es",
-          subdomaincom: "es",
-          support: "es",
-          iso: "es-ES"
-        }, {
-          label: "Español Latinoamérica",
-          subdomain: "es-mx",
-          subdomaincom: "mx",
-          support: "es-mx",
-          iso: "es-MX"
-        }, {
-          label: "Français",
-          subdomain: "fr",
-          subdomaincom: "fr",
-          support: "fr",
-          iso: "fr-FR"
-        }, {
-          label: "Italiano",
-          subdomain: "it",
-          subdomaincom: "it",
-          support: "it",
-          iso: "it-IT"
-        }, {
-          label: "日本語",
-          subdomain: "ja",
-          subdomaincom: "jp",
-          support: "jp",
-          iso: "ja-JP"
-        }, {
-          label: "한국어",
-          subdomain: "ko",
-          subdomaincom: "kr",
-          support: "kr",
-          iso: "ko-KR"
-        }, {
-          label: "Polski",
-          subdomain: "pl",
-          subdomaincom: "pl",
-          support: "pl",
-          iso: "pl-PL"
-        }, {
-          label: "Português do Brasil",
-          subdomain: "pt",
-          subdomaincom: "br",
-          support: "br",
-          iso: "pt-BR"
-        }, {
-          label: "Русский",
-          subdomain: "ru",
-          subdomaincom: "ru",
-          support: "ru",
-          iso: "ru-RU"
-        }, {
-          label: "繁體中文",
-          subdomain: "zh",
-          subdomaincom: "tw",
-          support: "tw",
-          iso: "zh-TW"
-        }, {
-          label: "简体中文",
-          subdomain: "zh-cn",
-          subdomaincom: "zh",
-          support: "zh",
-          iso: "zh-CN"
-        }],
-        b = v,
-        x = v[1],
-        y = () => {
-          const {
-            location: e
-          } = window, t = p(), a = (e => {
-            const t = b.map((e => e.subdomaincom)),
-              a = e.pathname.substring(1).split("/"),
-              s = "detect-locals" === a[0] ? 1 : 0;
-            return -1 !== t.indexOf(a[s]) ? a[s] : null
-          })(e), s = (e => {
-            const t = e.search.substring(1).split("&").find((e => e.startsWith("lang")));
-            return t?.split("=")[1]
-          })(e), r = x;
-          let i = r;
-          const n = `rockstarweb_lang.${t.cookieIdentifier}`,
-            o = h(n);
-          i = t.currentSite?.site === u ? b.find((e => e.subdomaincom === s)) || b.find((e => e.subdomaincom === a)) || r : b.find((e => e.iso === o)) || r;
-          const [c, l] = function(e, t) {
-            let a = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
-            const s = h(e);
-            return s && !a || _(e, t), [s, (r = e, e => {
-              _(r, e)
-            })];
-            var r
-          }(n, i.iso);
-          return [i, l]
-        };
-      var w = a(95240);
-      const N = e => {
-        let {
-          locales: t,
-          lang: a,
-          children: s
-        } = e;
-        const r = (0, o.useMemo)((() => function(e) {
-            let [t, a] = e.split(/[-_]/);
-            return a = a?.toLowerCase(), "cn" === a && (a = "hans"), t && a || (t = "en", a = "us"), [t, a]
-          }(a)), [a]),
-          i = (0, o.useMemo)((() => function(e, t) {
-            return e?.[t] ?? {}
-          }(t, r[1])), [a, t]);
-        return (0, w.jsx)(m.c, {
-          messages: i,
-          locale: r[0],
-          defaultLocale: "en",
-          children: s
-        }, r[0])
-      };
-
-      function j(e, t) {
-        return a => {
-          const [{
-            iso: s
-          }] = y();
-          return (0, w.jsx)(N, {
-            locales: t,
-            lang: s,
-            children: (0, w.jsx)(e, {
-              ...a
-            })
-          })
-        }
-      }
-      a(3061);
-      const S = JSON.parse('{"us":{"aria_label_open_new_window":"(Opens in a new window)","pl_card_badge_content_complete":"Complete","plm_nav_scroll_left":"Scroll Left","plm_nav_scroll_right":"Scroll Right","language_selector_default":"Select a Language","nofications_new":"New notifications","profile_selector_mugshot":"{userName} mugshot","profile_selector_profile_card":"Profile Card","profile_selector_rp_icon":"RP Category","profile_selector_switch_character":"Switch Character","sc_link_account":"Account","sc_link_activity_feed":"Activity Feed","sc_link_cookies_policy":"Cookies Policy","sc_link_cookies_settings":"Cookies Settings","sc_link_crews":"Crews","sc_link_do_not_sell_my_information":"Do Not Sell My Information","sc_link_find_friends":"Find Friends","sc_link_friends":"Friends","sc_link_game_activation":"Game Activation","sc_link_help":"Help","sc_link_import_friends":"Import Friends","sc_link_join_social_club":"Sign Up","sc_link_legal":"Legal","sc_link_log_out":"Log Out","sc_link_messages":"Messages","sc_link_my_friends":"My Friends","sc_link_notifications":"Notifications","sc_link_privacy_policy":"Privacy Policy","sc_link_settings":"Settings","sc_link_sign_in":"Sign In","sc_link_support":"Support","sc_link_view_my_profile":"View My Profile","sc_menu_close":"Close player menu","sc_menu_drag_handle":"Drag Menu Handle","sc_menu_open":"Open player menu","components_ratings_link_alt":"Rating: {rating}. Click here learn more about rating systems","rp_icon":"RP Category","components_track_list_title":"Tracklist","next_button_label":"Next video page","previous_button_label":"Previous video page"},"de":{"aria_label_open_new_window":"(Öffnet ein neues Fenster)","pl_card_badge_content_complete":"Abgeschlossen","plm_nav_scroll_left":"Links scrollen","plm_nav_scroll_right":"Rechts scrollen","language_selector_default":"Eine Sprache auswählen","nofications_new":"Neue Benachrichtigungen","profile_selector_mugshot":"Verbrecherfoto von {userName}","profile_selector_profile_card":"Profildaten","profile_selector_rp_icon":"RP-Kategorie","profile_selector_switch_character":"Charakter wechseln","sc_link_account":"Konto","sc_link_activity_feed":"Aktivitäten-Feed","sc_link_cookies_policy":"Cookie-Richtlinie","sc_link_cookies_settings":"Cookie-Einstellungen","sc_link_crews":"Crews","sc_link_do_not_sell_my_information":"Meine Informationen nicht verkaufen","sc_link_find_friends":"Freunde finden","sc_link_friends":"Freunde","sc_link_game_activation":"Spielaktivierung","sc_link_help":"Hilfe","sc_link_import_friends":"Freunde importieren","sc_link_join_social_club":"Registrieren","sc_link_legal":"Rechtliches","sc_link_log_out":"Abmelden","sc_link_messages":"Nachrichten","sc_link_my_friends":"Meine Freunde","sc_link_notifications":"Benachrichtigungen","sc_link_privacy_policy":"Datenschutzrichtlinien","sc_link_settings":"Einstellungen","sc_link_sign_in":"Anmelden","sc_link_support":"Support","sc_link_view_my_profile":"Mein Profil ansehen","sc_menu_close":"Spielermenü schließen","sc_menu_drag_handle":"Menü öffnen bzw. schließen","sc_menu_open":"Spielermenü öffnen","components_ratings_link_alt":"Altersfreigabe: {rating} Klicke hier, um mehr über Altersfreigaben zu erfahren.","rp_icon":"RP-Kategorie","components_track_list_title":"Trackliste","next_button_label":"Nächste Videoseite","previous_button_label":"Vorherige Videoseite"},"es":{"aria_label_open_new_window":"(Se abre en una ventana nueva)","pl_card_badge_content_complete":"Completado","plm_nav_scroll_left":"Desplazar hacia la izquierda","plm_nav_scroll_right":"Desplazar hacia la derecha","language_selector_default":"Selecciona un idioma","nofications_new":"Nuevas notificaciones","profile_selector_mugshot":"Foto de {userName}","profile_selector_profile_card":"Tarjeta de perfil","profile_selector_rp_icon":"Categoría de RP","profile_selector_switch_character":"Cambiar personaje","sc_link_account":"Cuenta","sc_link_activity_feed":"Actividades","sc_link_cookies_policy":"Política de cookies","sc_link_cookies_settings":"Ajustes de cookies","sc_link_crews":"Crews","sc_link_do_not_sell_my_information":"No quiero que vendáis mis datos","sc_link_find_friends":"Buscar amigos","sc_link_friends":"Amigos","sc_link_game_activation":"Activación del juego","sc_link_help":"Ayuda","sc_link_import_friends":"Importar amigos","sc_link_join_social_club":"Registrarse","sc_link_legal":"Aviso legal","sc_link_log_out":"Cerrar sesión","sc_link_messages":"Mensajes","sc_link_my_friends":"Mis amigos","sc_link_notifications":"Notificaciones","sc_link_privacy_policy":"Política de privacidad","sc_link_settings":"Ajustes","sc_link_sign_in":"Iniciar sesión","sc_link_support":"Asistencia técnica","sc_link_view_my_profile":"Ver mi perfil","sc_menu_close":"Cerrar menú de jugador","sc_menu_drag_handle":"Arrastrar el controlador del menú","sc_menu_open":"Abrir menú de jugador","components_ratings_link_alt":"Clasificación: {rating}. Haz clic aquí para obtener más información sobre los sistemas de clasificación.","rp_icon":"Categoría de RP","components_track_list_title":"Lista de pistas","next_button_label":"Página de vídeo siguiente","previous_button_label":"Página de vídeo anterior"},"mx":{"aria_label_open_new_window":"(Se abre en una ventana nueva)","pl_card_badge_content_complete":"Completado","plm_nav_scroll_left":"Desplazarse hacia la izquierda","plm_nav_scroll_right":"Desplazarse hacia la derecha","language_selector_default":"Seleccionar un idioma","nofications_new":"Nuevas notificaciones","profile_selector_mugshot":"Foto de {userName}","profile_selector_profile_card":"Tarjeta del perfil","profile_selector_rp_icon":"Categoría de RP","profile_selector_switch_character":"Cambiar personaje","sc_link_account":"Cuenta","sc_link_activity_feed":"Muro de actividades","sc_link_cookies_policy":"Política de cookies","sc_link_cookies_settings":"Configuración de cookies","sc_link_crews":"Crews","sc_link_do_not_sell_my_information":"No quiero que vendan mis datos","sc_link_find_friends":"Encontrar amigos","sc_link_friends":"Amigos","sc_link_game_activation":"Activación de juegos","sc_link_help":"Ayuda","sc_link_import_friends":"Importar amigos","sc_link_join_social_club":"Registro","sc_link_legal":"Legal","sc_link_log_out":"Cerrar sesión","sc_link_messages":"Mensajes","sc_link_my_friends":"Mis amigos","sc_link_notifications":"Notificaciones","sc_link_privacy_policy":"Política de privacidad","sc_link_settings":"Configuración","sc_link_sign_in":"Iniciar sesión","sc_link_support":"Soporte","sc_link_view_my_profile":"Ver mi perfil","sc_menu_close":"Cerrar menú del reproductor","sc_menu_drag_handle":"Mover el handle del menú","sc_menu_open":"Abrir menú del reproductor","components_ratings_link_alt":"Clasificación: {rating}. Haz clic aquí para obtener más información sobre el sistema de clasificación.","rp_icon":"Categoría de RP","components_track_list_title":"Lista de canciones","next_button_label":"Página de video siguiente","previous_button_label":"Página de video anterior"},"fr":{"aria_label_open_new_window":"(S’ouvre dans une nouvelle fenêtre)","pl_card_badge_content_complete":"Terminé","plm_nav_scroll_left":"Faire défiler vers la gauche","plm_nav_scroll_right":"Faire défiler vers la droite","language_selector_default":"Sélectionner une langue","nofications_new":"Nouvelles notifications","profile_selector_mugshot":"Photo d\'identité : {userName}","profile_selector_profile_card":"Carte du profil","profile_selector_rp_icon":"Catégorie de RP","profile_selector_switch_character":"Changer de personnage","sc_link_account":"Compte","sc_link_activity_feed":"Fil d\'activités","sc_link_cookies_policy":"Politique en matière de cookies","sc_link_cookies_settings":"Paramètres des cookies","sc_link_crews":"Crews","sc_link_do_not_sell_my_information":"Ne pas vendre mes informations","sc_link_find_friends":"Trouver des amis","sc_link_friends":"Amis","sc_link_game_activation":"Activation de jeux","sc_link_help":"Aide","sc_link_import_friends":"Importer des amis","sc_link_join_social_club":"S’inscrire","sc_link_legal":"Mentions légales","sc_link_log_out":"Se déconnecter","sc_link_messages":"Messages","sc_link_my_friends":"Mes amis","sc_link_notifications":"Notifications","sc_link_privacy_policy":"Charte de confidentialité","sc_link_settings":"Paramètres","sc_link_sign_in":"Se connecter","sc_link_support":"Assistance","sc_link_view_my_profile":"Voir mon profil","sc_menu_close":"Fermer le menu Joueur","sc_menu_drag_handle":"Drag Menu Handle","sc_menu_open":"Ouvrir le menu Joueur","components_ratings_link_alt":"Classification : {rating}. Cliquez ici pour en savoir plus sur les systèmes de classification.","rp_icon":"Catégorie : RP","components_track_list_title":"Liste des morceaux","next_button_label":"Page vidéo suivante","previous_button_label":"Page vidéo précédente"},"it":{"aria_label_open_new_window":"(Apri in una nuova finestra)","pl_card_badge_content_complete":"Completamento","plm_nav_scroll_left":"Scorri a sinistra","plm_nav_scroll_right":"Scorri a destra","language_selector_default":"Seleziona una lingua","nofications_new":"Nuove notifiche","profile_selector_mugshot":"Foto segnaletica di {userName}","profile_selector_profile_card":"Scheda del profilo","profile_selector_rp_icon":"Categoria RP","profile_selector_switch_character":"Cambia personaggio","sc_link_account":"Account","sc_link_activity_feed":"Feed attività","sc_link_cookies_policy":"Politica sui cookie","sc_link_cookies_settings":"Impostazioni dei cookie","sc_link_crews":"Crew","sc_link_do_not_sell_my_information":"Non vendere le mie informazioni","sc_link_find_friends":"Trova amici","sc_link_friends":"Amici","sc_link_game_activation":"Attivazione gioco","sc_link_help":"Assistenza","sc_link_import_friends":"Importa amici","sc_link_join_social_club":"Registrati","sc_link_legal":"Note legali","sc_link_log_out":"Esci","sc_link_messages":"Messaggi","sc_link_my_friends":"I miei amici","sc_link_notifications":"Notifiche","sc_link_privacy_policy":"Politica sulla privacy","sc_link_settings":"Impostazioni","sc_link_sign_in":"Accedi","sc_link_support":"Supporto","sc_link_view_my_profile":"Visualizza il mio profilo","sc_menu_close":"Chiudi Menu giocatore","sc_menu_drag_handle":"Drag Menu Handle","sc_menu_open":"Apri Menu giocatore","components_ratings_link_alt":"Classificazione: {rating}. Clicca qui per scoprire di più sui sistemi di classificazione","rp_icon":"Categoria RP","components_track_list_title":"Tracklist","next_button_label":"Pagina di video successiva","previous_button_label":"Pagina di video precedente"},"jp":{"aria_label_open_new_window":"(新しいウィンドウで開きます)","pl_card_badge_content_complete":"完了","plm_nav_scroll_left":"左にスクロール","plm_nav_scroll_right":"右にスクロール","language_selector_default":"言語を選択","nofications_new":"新しいお知らせ","profile_selector_mugshot":"{userName}顔写真","profile_selector_profile_card":"プロフィールカード","profile_selector_rp_icon":"RPカテゴリー","profile_selector_switch_character":"キャラクター変更","sc_link_account":"アカウント","sc_link_activity_feed":"アクティビティフィード","sc_link_cookies_policy":"クッキーポリシー","sc_link_cookies_settings":"クッキー設定","sc_link_crews":"クルー","sc_link_do_not_sell_my_information":"個人情報を売らないでください","sc_link_find_friends":"フレンドを検索","sc_link_friends":"フレンド","sc_link_game_activation":"ゲームアクティベーション","sc_link_help":"ヘルプ","sc_link_import_friends":"フレンドをインポート","sc_link_join_social_club":"サインアップ","sc_link_legal":"利用規約","sc_link_log_out":"ログアウト","sc_link_messages":"メッセージ","sc_link_my_friends":"フレンド","sc_link_notifications":"通知","sc_link_privacy_policy":"プライバシーポリシー","sc_link_settings":"設定","sc_link_sign_in":"サインイン","sc_link_support":"サポート","sc_link_view_my_profile":"プロフィールを表示","sc_menu_close":"プレイヤーメニューを閉じる","sc_menu_drag_handle":"Drag Menu Handle","sc_menu_open":"プレイヤーメニューを開く","components_ratings_link_alt":"レーティング:{rating}レーティングについての詳細はこちらをクリックしてください","rp_icon":"RPカテゴリー","components_track_list_title":"トラックリスト","next_button_label":"次のビデオページ","previous_button_label":"前のビデオページ"},"kr":{"aria_label_open_new_window":"(새 창에서 열기)","pl_card_badge_content_complete":"완료","plm_nav_scroll_left":"왼쪽 스크롤","plm_nav_scroll_right":"오른쪽 스크롤","language_selector_default":"언어 선택","nofications_new":"새 알림","profile_selector_mugshot":"{userName} 머그샷","profile_selector_profile_card":"프로필 카드","profile_selector_rp_icon":"RP 카테고리","profile_selector_switch_character":"캐릭터 교체","sc_link_account":"계정","sc_link_activity_feed":"활동 피드","sc_link_cookies_policy":"쿠키 정책","sc_link_cookies_settings":"쿠키 설정","sc_link_crews":"조직","sc_link_do_not_sell_my_information":"내 정보 판매 안 함","sc_link_find_friends":"친구 찾기","sc_link_friends":"친구","sc_link_game_activation":"게임 활성화","sc_link_help":"도움말","sc_link_import_friends":"친구 불러오기","sc_link_join_social_club":"가입","sc_link_legal":"법률 관련","sc_link_log_out":"로그아웃","sc_link_messages":"메시지","sc_link_my_friends":"내 친구","sc_link_notifications":"알림","sc_link_privacy_policy":"개인 정보 보호 정책","sc_link_settings":"설정","sc_link_sign_in":"로그인","sc_link_support":"지원","sc_link_view_my_profile":"내 프로필 보기","sc_menu_close":"플레이어 메뉴 닫기","sc_menu_drag_handle":"드래그 메뉴 핸들","sc_menu_open":"플레이어 메뉴 열기","components_ratings_link_alt":"등급 분류: {rating}. 등급 분류 제도에 대해 더 자세히 알아보려면 여기를 클릭하십시오","rp_icon":"RP 카테고리","components_track_list_title":"트랙리스트","next_button_label":"다음 비디오 페이지","previous_button_label":"이전 비디오 페이지"},"pl":{"aria_label_open_new_window":"(Otwórz w nowym oknie)","pl_card_badge_content_complete":"Ukończono","plm_nav_scroll_left":"Przesuń w lewo","plm_nav_scroll_right":"Przesuń w prawo","language_selector_default":"Wybierz język","nofications_new":"Nowe powiadomienia","profile_selector_mugshot":"Zdjęcie – {userName}","profile_selector_profile_card":"Karta profilu","profile_selector_rp_icon":"Poziom RP","profile_selector_switch_character":"Zmień postać","sc_link_account":"Konto","sc_link_activity_feed":"Zajęcia","sc_link_cookies_policy":"Polityka plików cookie","sc_link_cookies_settings":"Ustawienia plików cookie","sc_link_crews":"Ekipy","sc_link_do_not_sell_my_information":"Zabraniam sprzedaży moich danych","sc_link_find_friends":"Szukaj znajomych","sc_link_friends":"Znajomi","sc_link_game_activation":"Aktywacja gry","sc_link_help":"Pomoc","sc_link_import_friends":"Importuj znajomych","sc_link_join_social_club":"Zarejestruj się","sc_link_legal":"Informacje prawne","sc_link_log_out":"Wyloguj się","sc_link_messages":"Wiadomości","sc_link_my_friends":"Moi znajomi","sc_link_notifications":"Powiadomienia","sc_link_privacy_policy":"Polityka prywatności","sc_link_settings":"Ustawienia","sc_link_sign_in":"Zaloguj się","sc_link_support":"Wsparcie","sc_link_view_my_profile":"Przeglądaj profil","sc_menu_close":"Zamknij menu gracza","sc_menu_drag_handle":"Przeciągnij uchwyt menu","sc_menu_open":"Otwórz menu gracza","components_ratings_link_alt":"Klasyfikacja wiekowa: {rating}. Kliknij tutaj, aby dowiedzieć się więcej o systemie klasyfikacji wiekowej","rp_icon":"Poziom RP","components_track_list_title":"Lista utworów","next_button_label":"Następna strona z filmami","previous_button_label":"Poprzednia strona z filmami"},"br":{"aria_label_open_new_window":"(Abre em uma nova janela)","pl_card_badge_content_complete":"Concluiu","plm_nav_scroll_left":"Rolar para a esquerda","plm_nav_scroll_right":"Rolar para a direita","language_selector_default":"Selecione um idioma","nofications_new":"Novas notificações","profile_selector_mugshot":"Foto de {userName}","profile_selector_profile_card":"Cartão de perfil","profile_selector_rp_icon":"Categoria de RP","profile_selector_switch_character":"Alternar personagem","sc_link_account":"Conta","sc_link_activity_feed":"Feed de atividade","sc_link_cookies_policy":"Política de cookies","sc_link_cookies_settings":"Configurações de cookies","sc_link_crews":"Comandos","sc_link_do_not_sell_my_information":"Não vendam a minha informação","sc_link_find_friends":"Encontrar amigos","sc_link_friends":"Amigos","sc_link_game_activation":"Ativação de jogos","sc_link_help":"Ajuda","sc_link_import_friends":"Importar amigos","sc_link_join_social_club":"Inscrever-se","sc_link_legal":"Aviso legal","sc_link_log_out":"Sair","sc_link_messages":"Mensagens","sc_link_my_friends":"Meus amigos","sc_link_notifications":"Notificações","sc_link_privacy_policy":"Política de Privacidade","sc_link_settings":"Configurações","sc_link_sign_in":"Iniciar sessão","sc_link_support":"Suporte","sc_link_view_my_profile":"Visualizar meu perfil","sc_menu_close":"Fechar menu de jogador","sc_menu_drag_handle":"Arrastar título do menu","sc_menu_open":"Abrir menu de jogador","components_ratings_link_alt":"Classificação Indicativa: {rating}. Clique aqui para saber mais sobre sistemas de classificação indicativa.","rp_icon":"Categoria de RP","components_track_list_title":"Lista de faixas","next_button_label":"Próxima página de vídeos","previous_button_label":"Página anterior de vídeos"},"ru":{"aria_label_open_new_window":"(ссылка откроется в новом окне)","pl_card_badge_content_complete":"Завершено","plm_nav_scroll_left":"Пролистать влево","plm_nav_scroll_right":"Пролистать вправо","language_selector_default":"Выбрать язык","nofications_new":"Новые уведомления","profile_selector_mugshot":"Фотография игрока {userName}","profile_selector_profile_card":"Карта профиля","profile_selector_rp_icon":"Категория опыта","profile_selector_switch_character":"Сменить персонажа","sc_link_account":"Учетная запись","sc_link_activity_feed":"Лента событий","sc_link_cookies_policy":"Политика использования файлов Cookie","sc_link_cookies_settings":"Настройки файлов Cookie","sc_link_crews":"Банды","sc_link_do_not_sell_my_information":"Я запрещаю продавать свою личную информацию","sc_link_find_friends":"Поиск друзей","sc_link_friends":"Друзья","sc_link_game_activation":"Активация игры","sc_link_help":"Помощь","sc_link_import_friends":"Импорт друзей","sc_link_join_social_club":"Регистрация","sc_link_legal":"Юридическая информация","sc_link_log_out":"Выход","sc_link_messages":"Сообщения","sc_link_my_friends":"Мои друзья","sc_link_notifications":"Уведомления","sc_link_privacy_policy":"Политика конфиденциальности","sc_link_settings":"Настройки","sc_link_sign_in":"Войти","sc_link_support":"Поддержка","sc_link_view_my_profile":"Моя учетная запись","sc_menu_close":"Закрыть меню игрока","sc_menu_drag_handle":"Перенести маркер меню","sc_menu_open":"Открыть меню игрока","components_ratings_link_alt":"Рейтинг: {rating}. Нажмите, чтобы узнать больше о системе рейтинга","rp_icon":"Категория опыта","components_track_list_title":"Список песен","next_button_label":"Следующая страница с видео","previous_button_label":"Предыдущая страница с видео"},"hans":{"aria_label_open_new_window":"（在新窗口中打开）","pl_card_badge_content_complete":"完成","plm_nav_scroll_left":"向左滚动","plm_nav_scroll_right":"向右滚动","language_selector_default":"选择一种语言","nofications_new":"新通知","profile_selector_mugshot":"{userName} 面部照片","profile_selector_profile_card":"档案卡","profile_selector_rp_icon":"声望值类别","profile_selector_switch_character":"切换角色","sc_link_account":"账户","sc_link_activity_feed":"活动动态","sc_link_cookies_policy":"Cookie 政策","sc_link_cookies_settings":"Cookie 设置","sc_link_crews":"帮会","sc_link_do_not_sell_my_information":"请勿出售我的信息","sc_link_find_friends":"查找好友","sc_link_friends":"好友","sc_link_game_activation":"游戏激活","sc_link_help":"帮助","sc_link_import_friends":"导入好友","sc_link_join_social_club":"注册","sc_link_legal":"法律声明","sc_link_log_out":"登出","sc_link_messages":"信息","sc_link_my_friends":"我的好友","sc_link_notifications":"通知","sc_link_privacy_policy":"隐私政策","sc_link_settings":"设置","sc_link_sign_in":"登录","sc_link_support":"支持","sc_link_view_my_profile":"查看我的档案","sc_menu_close":"关闭玩家菜单","sc_menu_drag_handle":"拖动菜单处理","sc_menu_open":"打开玩家菜单","components_ratings_link_alt":"评级：{rating}。点击此处了解评级系统的更多详情。","rp_icon":"声望值类别","components_track_list_title":"曲目列表","next_button_label":"下一页视频","previous_button_label":"上一页视频"},"tw":{"aria_label_open_new_window":"（在新視窗開啟）","pl_card_badge_content_complete":"完成","plm_nav_scroll_left":"向左捲動","plm_nav_scroll_right":"向右捲動","language_selector_default":"選擇語言","nofications_new":"新通知","profile_selector_mugshot":"{userName} 罪犯檔案照","profile_selector_profile_card":"資料卡","profile_selector_rp_icon":"聲望值類別","profile_selector_switch_character":"切換角色","sc_link_account":"帳戶","sc_link_activity_feed":"動態活動","sc_link_cookies_policy":"Cookie 政策","sc_link_cookies_settings":"Cookie 設定","sc_link_crews":"幫會","sc_link_do_not_sell_my_information":"不要販售我的個人資料","sc_link_find_friends":"尋找好友","sc_link_friends":"好友","sc_link_game_activation":"遊戲啟用","sc_link_help":"幫助","sc_link_import_friends":"匯入好友","sc_link_join_social_club":"註冊","sc_link_legal":"法律聲明","sc_link_log_out":"登出","sc_link_messages":"訊息","sc_link_my_friends":"我的好友","sc_link_notifications":"通知","sc_link_privacy_policy":"隱私權政策","sc_link_settings":"設定","sc_link_sign_in":"登入","sc_link_support":"支援","sc_link_view_my_profile":"查看我的設定檔","sc_menu_close":"關閉玩家選單","sc_menu_drag_handle":"拖曳選單控點","sc_menu_open":"開啟玩家選單","components_ratings_link_alt":"評分：{rating}。點擊此處以更加了解評分系統","rp_icon":"聲望值類別","components_track_list_title":"曲目清單","next_button_label":"下一個影片頁面","previous_button_label":"上一個影片頁面"}}'),
-        T = (0, c.Os)({
+      var c = a(51664),
+        o = a(41272);
+      const l = JSON.parse('{"us":{"aria_label_open_new_window":"(Opens in a new window)","pl_card_badge_content_complete":"Complete","plm_nav_scroll_left":"Scroll Left","plm_nav_scroll_right":"Scroll Right","language_selector_default":"Select a Language","nofications_new":"New notifications","profile_selector_mugshot":"{userName} mugshot","profile_selector_profile_card":"Profile Card","profile_selector_rp_icon":"RP Category","profile_selector_switch_character":"Switch Character","sc_link_account":"Account","sc_link_activity_feed":"Activity Feed","sc_link_cookies_policy":"Cookies Policy","sc_link_cookies_settings":"Cookies Settings","sc_link_crews":"Crews","sc_link_do_not_sell_my_information":"Do Not Sell My Information","sc_link_find_friends":"Find Friends","sc_link_friends":"Friends","sc_link_game_activation":"Game Activation","sc_link_help":"Help","sc_link_import_friends":"Import Friends","sc_link_join_social_club":"Sign Up","sc_link_legal":"Legal","sc_link_log_out":"Log Out","sc_link_messages":"Messages","sc_link_my_friends":"My Friends","sc_link_notifications":"Notifications","sc_link_privacy_policy":"Privacy Policy","sc_link_settings":"Settings","sc_link_sign_in":"Sign In","sc_link_support":"Support","sc_link_view_my_profile":"View My Profile","sc_menu_close":"Close player menu","sc_menu_drag_handle":"Drag Menu Handle","sc_menu_open":"Open player menu","components_ratings_link_alt":"Rating: {rating}. Click here learn more about rating systems","rp_icon":"RP Category","components_track_list_title":"Tracklist","next_button_label":"Next video page","previous_button_label":"Previous video page"},"de":{"aria_label_open_new_window":"(Öffnet ein neues Fenster)","pl_card_badge_content_complete":"Abgeschlossen","plm_nav_scroll_left":"Links scrollen","plm_nav_scroll_right":"Rechts scrollen","language_selector_default":"Eine Sprache auswählen","nofications_new":"Neue Benachrichtigungen","profile_selector_mugshot":"Verbrecherfoto von {userName}","profile_selector_profile_card":"Profildaten","profile_selector_rp_icon":"RP-Kategorie","profile_selector_switch_character":"Charakter wechseln","sc_link_account":"Konto","sc_link_activity_feed":"Aktivitäten-Feed","sc_link_cookies_policy":"Cookie-Richtlinie","sc_link_cookies_settings":"Cookie-Einstellungen","sc_link_crews":"Crews","sc_link_do_not_sell_my_information":"Meine Informationen nicht verkaufen","sc_link_find_friends":"Freunde finden","sc_link_friends":"Freunde","sc_link_game_activation":"Spielaktivierung","sc_link_help":"Hilfe","sc_link_import_friends":"Freunde importieren","sc_link_join_social_club":"Registrieren","sc_link_legal":"Rechtliches","sc_link_log_out":"Abmelden","sc_link_messages":"Nachrichten","sc_link_my_friends":"Meine Freunde","sc_link_notifications":"Benachrichtigungen","sc_link_privacy_policy":"Datenschutzrichtlinien","sc_link_settings":"Einstellungen","sc_link_sign_in":"Anmelden","sc_link_support":"Support","sc_link_view_my_profile":"Mein Profil ansehen","sc_menu_close":"Spielermenü schließen","sc_menu_drag_handle":"Menü öffnen bzw. schließen","sc_menu_open":"Spielermenü öffnen","components_ratings_link_alt":"Altersfreigabe: {rating} Klicke hier, um mehr über Altersfreigaben zu erfahren.","rp_icon":"RP-Kategorie","components_track_list_title":"Trackliste","next_button_label":"Nächste Videoseite","previous_button_label":"Vorherige Videoseite"},"es":{"aria_label_open_new_window":"(Se abre en una ventana nueva)","pl_card_badge_content_complete":"Completado","plm_nav_scroll_left":"Desplazar hacia la izquierda","plm_nav_scroll_right":"Desplazar hacia la derecha","language_selector_default":"Selecciona un idioma","nofications_new":"Nuevas notificaciones","profile_selector_mugshot":"Foto de {userName}","profile_selector_profile_card":"Tarjeta de perfil","profile_selector_rp_icon":"Categoría de RP","profile_selector_switch_character":"Cambiar personaje","sc_link_account":"Cuenta","sc_link_activity_feed":"Actividades","sc_link_cookies_policy":"Política de cookies","sc_link_cookies_settings":"Ajustes de cookies","sc_link_crews":"Crews","sc_link_do_not_sell_my_information":"No quiero que vendáis mis datos","sc_link_find_friends":"Buscar amigos","sc_link_friends":"Amigos","sc_link_game_activation":"Activación del juego","sc_link_help":"Ayuda","sc_link_import_friends":"Importar amigos","sc_link_join_social_club":"Registrarse","sc_link_legal":"Aviso legal","sc_link_log_out":"Cerrar sesión","sc_link_messages":"Mensajes","sc_link_my_friends":"Mis amigos","sc_link_notifications":"Notificaciones","sc_link_privacy_policy":"Política de privacidad","sc_link_settings":"Ajustes","sc_link_sign_in":"Iniciar sesión","sc_link_support":"Asistencia técnica","sc_link_view_my_profile":"Ver mi perfil","sc_menu_close":"Cerrar menú de jugador","sc_menu_drag_handle":"Arrastrar el controlador del menú","sc_menu_open":"Abrir menú de jugador","components_ratings_link_alt":"Clasificación: {rating}. Haz clic aquí para obtener más información sobre los sistemas de clasificación.","rp_icon":"Categoría de RP","components_track_list_title":"Lista de pistas","next_button_label":"Página de vídeo siguiente","previous_button_label":"Página de vídeo anterior"},"mx":{"aria_label_open_new_window":"(Se abre en una ventana nueva)","pl_card_badge_content_complete":"Completado","plm_nav_scroll_left":"Desplazarse hacia la izquierda","plm_nav_scroll_right":"Desplazarse hacia la derecha","language_selector_default":"Seleccionar un idioma","nofications_new":"Nuevas notificaciones","profile_selector_mugshot":"Foto de {userName}","profile_selector_profile_card":"Tarjeta del perfil","profile_selector_rp_icon":"Categoría de RP","profile_selector_switch_character":"Cambiar personaje","sc_link_account":"Cuenta","sc_link_activity_feed":"Muro de actividades","sc_link_cookies_policy":"Política de cookies","sc_link_cookies_settings":"Configuración de cookies","sc_link_crews":"Crews","sc_link_do_not_sell_my_information":"No quiero que vendan mis datos","sc_link_find_friends":"Encontrar amigos","sc_link_friends":"Amigos","sc_link_game_activation":"Activación de juegos","sc_link_help":"Ayuda","sc_link_import_friends":"Importar amigos","sc_link_join_social_club":"Registro","sc_link_legal":"Legal","sc_link_log_out":"Cerrar sesión","sc_link_messages":"Mensajes","sc_link_my_friends":"Mis amigos","sc_link_notifications":"Notificaciones","sc_link_privacy_policy":"Política de privacidad","sc_link_settings":"Configuración","sc_link_sign_in":"Iniciar sesión","sc_link_support":"Soporte","sc_link_view_my_profile":"Ver mi perfil","sc_menu_close":"Cerrar menú del reproductor","sc_menu_drag_handle":"Mover el handle del menú","sc_menu_open":"Abrir menú del reproductor","components_ratings_link_alt":"Clasificación: {rating}. Haz clic aquí para obtener más información sobre el sistema de clasificación.","rp_icon":"Categoría de RP","components_track_list_title":"Lista de canciones","next_button_label":"Página de video siguiente","previous_button_label":"Página de video anterior"},"fr":{"aria_label_open_new_window":"(S’ouvre dans une nouvelle fenêtre)","pl_card_badge_content_complete":"Terminé","plm_nav_scroll_left":"Faire défiler vers la gauche","plm_nav_scroll_right":"Faire défiler vers la droite","language_selector_default":"Sélectionner une langue","nofications_new":"Nouvelles notifications","profile_selector_mugshot":"Photo d\'identité : {userName}","profile_selector_profile_card":"Carte du profil","profile_selector_rp_icon":"Catégorie de RP","profile_selector_switch_character":"Changer de personnage","sc_link_account":"Compte","sc_link_activity_feed":"Fil d\'activités","sc_link_cookies_policy":"Politique en matière de cookies","sc_link_cookies_settings":"Paramètres des cookies","sc_link_crews":"Crews","sc_link_do_not_sell_my_information":"Ne pas vendre mes informations","sc_link_find_friends":"Trouver des amis","sc_link_friends":"Amis","sc_link_game_activation":"Activation de jeux","sc_link_help":"Aide","sc_link_import_friends":"Importer des amis","sc_link_join_social_club":"S’inscrire","sc_link_legal":"Mentions légales","sc_link_log_out":"Se déconnecter","sc_link_messages":"Messages","sc_link_my_friends":"Mes amis","sc_link_notifications":"Notifications","sc_link_privacy_policy":"Charte de confidentialité","sc_link_settings":"Paramètres","sc_link_sign_in":"Se connecter","sc_link_support":"Assistance","sc_link_view_my_profile":"Voir mon profil","sc_menu_close":"Fermer le menu Joueur","sc_menu_drag_handle":"Drag Menu Handle","sc_menu_open":"Ouvrir le menu Joueur","components_ratings_link_alt":"Classification : {rating}. Cliquez ici pour en savoir plus sur les systèmes de classification.","rp_icon":"Catégorie : RP","components_track_list_title":"Liste des morceaux","next_button_label":"Page vidéo suivante","previous_button_label":"Page vidéo précédente"},"it":{"aria_label_open_new_window":"(Apri in una nuova finestra)","pl_card_badge_content_complete":"Completamento","plm_nav_scroll_left":"Scorri a sinistra","plm_nav_scroll_right":"Scorri a destra","language_selector_default":"Seleziona una lingua","nofications_new":"Nuove notifiche","profile_selector_mugshot":"Foto segnaletica di {userName}","profile_selector_profile_card":"Scheda del profilo","profile_selector_rp_icon":"Categoria RP","profile_selector_switch_character":"Cambia personaggio","sc_link_account":"Account","sc_link_activity_feed":"Feed attività","sc_link_cookies_policy":"Politica sui cookie","sc_link_cookies_settings":"Impostazioni dei cookie","sc_link_crews":"Crew","sc_link_do_not_sell_my_information":"Non vendere le mie informazioni","sc_link_find_friends":"Trova amici","sc_link_friends":"Amici","sc_link_game_activation":"Attivazione gioco","sc_link_help":"Assistenza","sc_link_import_friends":"Importa amici","sc_link_join_social_club":"Registrati","sc_link_legal":"Note legali","sc_link_log_out":"Esci","sc_link_messages":"Messaggi","sc_link_my_friends":"I miei amici","sc_link_notifications":"Notifiche","sc_link_privacy_policy":"Politica sulla privacy","sc_link_settings":"Impostazioni","sc_link_sign_in":"Accedi","sc_link_support":"Supporto","sc_link_view_my_profile":"Visualizza il mio profilo","sc_menu_close":"Chiudi Menu giocatore","sc_menu_drag_handle":"Drag Menu Handle","sc_menu_open":"Apri Menu giocatore","components_ratings_link_alt":"Classificazione: {rating}. Clicca qui per scoprire di più sui sistemi di classificazione","rp_icon":"Categoria RP","components_track_list_title":"Tracklist","next_button_label":"Pagina di video successiva","previous_button_label":"Pagina di video precedente"},"jp":{"aria_label_open_new_window":"(新しいウィンドウで開きます)","pl_card_badge_content_complete":"完了","plm_nav_scroll_left":"左にスクロール","plm_nav_scroll_right":"右にスクロール","language_selector_default":"言語を選択","nofications_new":"新しいお知らせ","profile_selector_mugshot":"{userName}顔写真","profile_selector_profile_card":"プロフィールカード","profile_selector_rp_icon":"RPカテゴリー","profile_selector_switch_character":"キャラクター変更","sc_link_account":"アカウント","sc_link_activity_feed":"アクティビティフィード","sc_link_cookies_policy":"クッキーポリシー","sc_link_cookies_settings":"クッキー設定","sc_link_crews":"クルー","sc_link_do_not_sell_my_information":"個人情報を売らないでください","sc_link_find_friends":"フレンドを検索","sc_link_friends":"フレンド","sc_link_game_activation":"ゲームアクティベーション","sc_link_help":"ヘルプ","sc_link_import_friends":"フレンドをインポート","sc_link_join_social_club":"サインアップ","sc_link_legal":"利用規約","sc_link_log_out":"ログアウト","sc_link_messages":"メッセージ","sc_link_my_friends":"フレンド","sc_link_notifications":"通知","sc_link_privacy_policy":"プライバシーポリシー","sc_link_settings":"設定","sc_link_sign_in":"サインイン","sc_link_support":"サポート","sc_link_view_my_profile":"プロフィールを表示","sc_menu_close":"プレイヤーメニューを閉じる","sc_menu_drag_handle":"Drag Menu Handle","sc_menu_open":"プレイヤーメニューを開く","components_ratings_link_alt":"レーティング:{rating}レーティングについての詳細はこちらをクリックしてください","rp_icon":"RPカテゴリー","components_track_list_title":"トラックリスト","next_button_label":"次のビデオページ","previous_button_label":"前のビデオページ"},"kr":{"aria_label_open_new_window":"(새 창에서 열기)","pl_card_badge_content_complete":"완료","plm_nav_scroll_left":"왼쪽 스크롤","plm_nav_scroll_right":"오른쪽 스크롤","language_selector_default":"언어 선택","nofications_new":"새 알림","profile_selector_mugshot":"{userName} 머그샷","profile_selector_profile_card":"프로필 카드","profile_selector_rp_icon":"RP 카테고리","profile_selector_switch_character":"캐릭터 교체","sc_link_account":"계정","sc_link_activity_feed":"활동 피드","sc_link_cookies_policy":"쿠키 정책","sc_link_cookies_settings":"쿠키 설정","sc_link_crews":"조직","sc_link_do_not_sell_my_information":"내 정보 판매 안 함","sc_link_find_friends":"친구 찾기","sc_link_friends":"친구","sc_link_game_activation":"게임 활성화","sc_link_help":"도움말","sc_link_import_friends":"친구 불러오기","sc_link_join_social_club":"가입","sc_link_legal":"법률 관련","sc_link_log_out":"로그아웃","sc_link_messages":"메시지","sc_link_my_friends":"내 친구","sc_link_notifications":"알림","sc_link_privacy_policy":"개인 정보 보호 정책","sc_link_settings":"설정","sc_link_sign_in":"로그인","sc_link_support":"지원","sc_link_view_my_profile":"내 프로필 보기","sc_menu_close":"플레이어 메뉴 닫기","sc_menu_drag_handle":"드래그 메뉴 핸들","sc_menu_open":"플레이어 메뉴 열기","components_ratings_link_alt":"등급 분류: {rating}. 등급 분류 제도에 대해 더 자세히 알아보려면 여기를 클릭하십시오","rp_icon":"RP 카테고리","components_track_list_title":"트랙리스트","next_button_label":"다음 비디오 페이지","previous_button_label":"이전 비디오 페이지"},"pl":{"aria_label_open_new_window":"(Otwórz w nowym oknie)","pl_card_badge_content_complete":"Ukończono","plm_nav_scroll_left":"Przesuń w lewo","plm_nav_scroll_right":"Przesuń w prawo","language_selector_default":"Wybierz język","nofications_new":"Nowe powiadomienia","profile_selector_mugshot":"Zdjęcie – {userName}","profile_selector_profile_card":"Karta profilu","profile_selector_rp_icon":"Poziom RP","profile_selector_switch_character":"Zmień postać","sc_link_account":"Konto","sc_link_activity_feed":"Zajęcia","sc_link_cookies_policy":"Polityka plików cookie","sc_link_cookies_settings":"Ustawienia plików cookie","sc_link_crews":"Ekipy","sc_link_do_not_sell_my_information":"Zabraniam sprzedaży moich danych","sc_link_find_friends":"Szukaj znajomych","sc_link_friends":"Znajomi","sc_link_game_activation":"Aktywacja gry","sc_link_help":"Pomoc","sc_link_import_friends":"Importuj znajomych","sc_link_join_social_club":"Zarejestruj się","sc_link_legal":"Informacje prawne","sc_link_log_out":"Wyloguj się","sc_link_messages":"Wiadomości","sc_link_my_friends":"Moi znajomi","sc_link_notifications":"Powiadomienia","sc_link_privacy_policy":"Polityka prywatności","sc_link_settings":"Ustawienia","sc_link_sign_in":"Zaloguj się","sc_link_support":"Wsparcie","sc_link_view_my_profile":"Przeglądaj profil","sc_menu_close":"Zamknij menu gracza","sc_menu_drag_handle":"Przeciągnij uchwyt menu","sc_menu_open":"Otwórz menu gracza","components_ratings_link_alt":"Klasyfikacja wiekowa: {rating}. Kliknij tutaj, aby dowiedzieć się więcej o systemie klasyfikacji wiekowej","rp_icon":"Poziom RP","components_track_list_title":"Lista utworów","next_button_label":"Następna strona z filmami","previous_button_label":"Poprzednia strona z filmami"},"br":{"aria_label_open_new_window":"(Abre em uma nova janela)","pl_card_badge_content_complete":"Concluiu","plm_nav_scroll_left":"Rolar para a esquerda","plm_nav_scroll_right":"Rolar para a direita","language_selector_default":"Selecione um idioma","nofications_new":"Novas notificações","profile_selector_mugshot":"Foto de {userName}","profile_selector_profile_card":"Cartão de perfil","profile_selector_rp_icon":"Categoria de RP","profile_selector_switch_character":"Alternar personagem","sc_link_account":"Conta","sc_link_activity_feed":"Feed de atividade","sc_link_cookies_policy":"Política de cookies","sc_link_cookies_settings":"Configurações de cookies","sc_link_crews":"Comandos","sc_link_do_not_sell_my_information":"Não vendam a minha informação","sc_link_find_friends":"Encontrar amigos","sc_link_friends":"Amigos","sc_link_game_activation":"Ativação de jogos","sc_link_help":"Ajuda","sc_link_import_friends":"Importar amigos","sc_link_join_social_club":"Inscrever-se","sc_link_legal":"Aviso legal","sc_link_log_out":"Sair","sc_link_messages":"Mensagens","sc_link_my_friends":"Meus amigos","sc_link_notifications":"Notificações","sc_link_privacy_policy":"Política de Privacidade","sc_link_settings":"Configurações","sc_link_sign_in":"Iniciar sessão","sc_link_support":"Suporte","sc_link_view_my_profile":"Visualizar meu perfil","sc_menu_close":"Fechar menu de jogador","sc_menu_drag_handle":"Arrastar título do menu","sc_menu_open":"Abrir menu de jogador","components_ratings_link_alt":"Classificação Indicativa: {rating}. Clique aqui para saber mais sobre sistemas de classificação indicativa.","rp_icon":"Categoria de RP","components_track_list_title":"Lista de faixas","next_button_label":"Próxima página de vídeos","previous_button_label":"Página anterior de vídeos"},"ru":{"aria_label_open_new_window":"(ссылка откроется в новом окне)","pl_card_badge_content_complete":"Завершено","plm_nav_scroll_left":"Пролистать влево","plm_nav_scroll_right":"Пролистать вправо","language_selector_default":"Выбрать язык","nofications_new":"Новые уведомления","profile_selector_mugshot":"Фотография игрока {userName}","profile_selector_profile_card":"Карта профиля","profile_selector_rp_icon":"Категория опыта","profile_selector_switch_character":"Сменить персонажа","sc_link_account":"Учетная запись","sc_link_activity_feed":"Лента событий","sc_link_cookies_policy":"Политика использования файлов Cookie","sc_link_cookies_settings":"Настройки файлов Cookie","sc_link_crews":"Банды","sc_link_do_not_sell_my_information":"Я запрещаю продавать свою личную информацию","sc_link_find_friends":"Поиск друзей","sc_link_friends":"Друзья","sc_link_game_activation":"Активация игры","sc_link_help":"Помощь","sc_link_import_friends":"Импорт друзей","sc_link_join_social_club":"Регистрация","sc_link_legal":"Юридическая информация","sc_link_log_out":"Выход","sc_link_messages":"Сообщения","sc_link_my_friends":"Мои друзья","sc_link_notifications":"Уведомления","sc_link_privacy_policy":"Политика конфиденциальности","sc_link_settings":"Настройки","sc_link_sign_in":"Войти","sc_link_support":"Поддержка","sc_link_view_my_profile":"Моя учетная запись","sc_menu_close":"Закрыть меню игрока","sc_menu_drag_handle":"Перенести маркер меню","sc_menu_open":"Открыть меню игрока","components_ratings_link_alt":"Рейтинг: {rating}. Нажмите, чтобы узнать больше о системе рейтинга","rp_icon":"Категория опыта","components_track_list_title":"Список песен","next_button_label":"Следующая страница с видео","previous_button_label":"Предыдущая страница с видео"},"hans":{"aria_label_open_new_window":"（在新窗口中打开）","pl_card_badge_content_complete":"完成","plm_nav_scroll_left":"向左滚动","plm_nav_scroll_right":"向右滚动","language_selector_default":"选择一种语言","nofications_new":"新通知","profile_selector_mugshot":"{userName} 面部照片","profile_selector_profile_card":"档案卡","profile_selector_rp_icon":"声望值类别","profile_selector_switch_character":"切换角色","sc_link_account":"账户","sc_link_activity_feed":"活动动态","sc_link_cookies_policy":"Cookie 政策","sc_link_cookies_settings":"Cookie 设置","sc_link_crews":"帮会","sc_link_do_not_sell_my_information":"请勿出售我的信息","sc_link_find_friends":"查找好友","sc_link_friends":"好友","sc_link_game_activation":"游戏激活","sc_link_help":"帮助","sc_link_import_friends":"导入好友","sc_link_join_social_club":"注册","sc_link_legal":"法律声明","sc_link_log_out":"登出","sc_link_messages":"信息","sc_link_my_friends":"我的好友","sc_link_notifications":"通知","sc_link_privacy_policy":"隐私政策","sc_link_settings":"设置","sc_link_sign_in":"登录","sc_link_support":"支持","sc_link_view_my_profile":"查看我的档案","sc_menu_close":"关闭玩家菜单","sc_menu_drag_handle":"拖动菜单处理","sc_menu_open":"打开玩家菜单","components_ratings_link_alt":"评级：{rating}。点击此处了解评级系统的更多详情。","rp_icon":"声望值类别","components_track_list_title":"曲目列表","next_button_label":"下一页视频","previous_button_label":"上一页视频"},"tw":{"aria_label_open_new_window":"（在新視窗開啟）","pl_card_badge_content_complete":"完成","plm_nav_scroll_left":"向左捲動","plm_nav_scroll_right":"向右捲動","language_selector_default":"選擇語言","nofications_new":"新通知","profile_selector_mugshot":"{userName} 罪犯檔案照","profile_selector_profile_card":"資料卡","profile_selector_rp_icon":"聲望值類別","profile_selector_switch_character":"切換角色","sc_link_account":"帳戶","sc_link_activity_feed":"動態活動","sc_link_cookies_policy":"Cookie 政策","sc_link_cookies_settings":"Cookie 設定","sc_link_crews":"幫會","sc_link_do_not_sell_my_information":"不要販售我的個人資料","sc_link_find_friends":"尋找好友","sc_link_friends":"好友","sc_link_game_activation":"遊戲啟用","sc_link_help":"幫助","sc_link_import_friends":"匯入好友","sc_link_join_social_club":"註冊","sc_link_legal":"法律聲明","sc_link_log_out":"登出","sc_link_messages":"訊息","sc_link_my_friends":"我的好友","sc_link_notifications":"通知","sc_link_privacy_policy":"隱私權政策","sc_link_settings":"設定","sc_link_sign_in":"登入","sc_link_support":"支援","sc_link_view_my_profile":"查看我的設定檔","sc_menu_close":"關閉玩家選單","sc_menu_drag_handle":"拖曳選單控點","sc_menu_open":"開啟玩家選單","components_ratings_link_alt":"評分：{rating}。點擊此處以更加了解評分系統","rp_icon":"聲望值類別","components_track_list_title":"曲目清單","next_button_label":"下一個影片頁面","previous_button_label":"上一個影片頁面"}}'),
+        d = (0, o.defineMessages)({
           aria_label_open_new_window: {
             id: "aria_label_open_new_window",
             defaultMessage: "(Opens in a new window)"
           }
         });
-      var C = a(57013);
-      const M = "rockstargames-sites-rockstar-tvff481c537a56a6fcdb1be85dfbc8944e",
-        I = j((e => {
-          let {
-            children: t,
-            to: a = "#",
-            alt: s = "",
-            autoBlank: r = !1,
-            onClick: i = (() => {}),
-            focused: n = !1,
-            ...c
-          } = e;
-          const l = (0, o.useRef)(null),
-            m = (0, d.c)(),
-            u = !/^(https?|mailto):/i.test(a),
-            g = /^#/.test(a),
-            f = c?.target ?? (r ? "_blank" : "_self");
-          let {
-            ...p
-          } = c, _ = "";
-          if ("aria-label" in p && p["aria-label"] && (_ = "_blank" === f ? `${p["aria-label"]} ${m.formatMessage(T.aria_label_open_new_window)}` : p["aria-label"]), (0, o.useEffect)((() => {
-              n && l?.current && l.current.focus()
-            }), [l?.current, n]), g) {
-            const e = e => {
-              e.preventDefault(), document?.querySelector(`[id='${a.replace("#","")}']`)?.scrollIntoView({
-                behavior: "smooth",
-                block: "center"
-              }), i && i(e)
-            };
-            return (0, w.jsxs)("a", {
-              title: s,
-              href: a,
-              onClick: e,
-              ...p,
-              "aria-label": _,
-              ref: l,
-              children: [t, "_blank" === f && !_ && (0, w.jsx)("span", {
-                className: M,
-                children: m.formatMessage(T.aria_label_open_new_window)
-              })]
-            })
-          }
-          if (u) return (0, w.jsxs)(C.NavLink, {
+      var m = a(57013);
+      const u = "rockstargames-sites-careersff481c537a56a6fcdb1be85dfbc8944e";
+      var g = a(95240);
+      const f = (0, o.withIntl)((e => {
+        let {
+          children: t,
+          to: a = "#",
+          alt: s = "",
+          autoBlank: r = !1,
+          onClick: i = (() => {}),
+          focused: n = !1,
+          ...l
+        } = e;
+        const f = (0, c.useRef)(null),
+          p = (0, o.useIntl)(),
+          _ = !/^(https?|mailto):/i.test(a),
+          h = /^#/.test(a),
+          k = l?.target ?? (r ? "_blank" : "_self");
+        let {
+          ...b
+        } = l, v = "";
+        if ("aria-label" in b && b["aria-label"] && (v = "_blank" === k ? `${b["aria-label"]} ${p.formatMessage(d.aria_label_open_new_window)}` : b["aria-label"]), (0, c.useEffect)((() => {
+            n && f?.current && f.current.focus()
+          }), [f?.current, n]), h) {
+          const e = e => {
+            e.preventDefault(), document?.querySelector(`[id='${a.replace("#","")}']`)?.scrollIntoView({
+              behavior: "smooth",
+              block: "center"
+            }), i && i(e)
+          };
+          return (0, g.jsxs)("a", {
             title: s,
-            to: a,
-            onClick: i,
-            ...p,
-            "aria-label": _,
-            ref: l,
-            children: [t, "_blank" === f && !_ && (0, w.jsx)("span", {
-              className: M,
-              children: m.formatMessage(T.aria_label_open_new_window)
-            })]
-          });
-          const k = Object.keys(p).filter((e => !["activeClassName", "key", "end"].includes(e))).reduce(((e, t) => ({
-            ...e,
-            [t]: c[t]
-          })), {});
-          return "function" == typeof k?.className && delete k.className, (0, w.jsxs)("a", {
             href: a,
-            title: s,
-            onClick: i,
-            target: f,
-            ...k,
-            "aria-label": _,
-            ref: l,
-            children: [t, "_blank" === f && !_ && (0, w.jsx)("span", {
-              className: M,
-              children: m.formatMessage(T.aria_label_open_new_window)
+            onClick: e,
+            ...b,
+            "aria-label": v,
+            ref: f,
+            children: [t, "_blank" === k && !v && (0, g.jsx)("span", {
+              className: u,
+              children: p.formatMessage(d.aria_label_open_new_window)
             })]
           })
-        }), S);
-      var E = a(65772),
-        L = a.n(E),
-        z = a(33052),
-        P = a(90048);
-      const O = {
-          player: "rockstargames-sites-rockstar-tvbb43df423657efcc0f1f38630a24e5e8",
-          fixedToBottom: "rockstargames-sites-rockstar-tve1f497e3ec34c2fd721b124969e27dd5",
-          tracksOpen: "rockstargames-sites-rockstar-tve8f2736f0ae21a56045104071a7a9fd7",
-          tracks: "rockstargames-sites-rockstar-tvea84096a931648765b1db46f708f70aa",
-          iconBurger: "rockstargames-sites-rockstar-tvb91aad66a2102668715c5ddaaecede2e",
-          trackList: "rockstargames-sites-rockstar-tvc44536ca7b7fa7236e86c65ae309057e",
-          trackActive: "rockstargames-sites-rockstar-tvac7826f934fc777f58017b1a5752419a",
-          trackTitle: "rockstargames-sites-rockstar-tvaafc522e642572d5ff93c7408b941829",
-          trackIndex: "rockstargames-sites-rockstar-tvb880baa4707c71eb543f905816d8e952",
-          controls: "rockstargames-sites-rockstar-tvff92c8eddfc0a0fa7bc7f444973e4f28",
-          controlsCurrentBg: "rockstargames-sites-rockstar-tva81d9465f14d65e8e20800d7b25f77d9",
-          controlsCurrentBgVisible: "rockstargames-sites-rockstar-tvc87bd14d2bbc9248d9c197b77454f345",
-          controlsTrack: "rockstargames-sites-rockstar-tvc23bf574089d1af93750f6af8ebb489f",
-          controlsTrackTitle: "rockstargames-sites-rockstar-tve4b77d29e904f9928cca1de93f5c7745",
-          controlsTrackAnimating: "rockstargames-sites-rockstar-tvba49949a9cd8c22385708f267c625029",
-          scrollText: "rockstargames-sites-rockstar-tvfd9c80e5afaa1ed38ce85f2c3d70eae4",
-          controlsTrackArtist: "rockstargames-sites-rockstar-tvc93c1e5399d9fd5e96ca246fdbfb307b",
-          controlsTrackBurger: "rockstargames-sites-rockstar-tvb4e1a16e3460b40c1aacd92afe219856",
-          controlsButtons: "rockstargames-sites-rockstar-tvd136125994c1d0db1449fce51af559ca",
-          controlsScrub: "rockstargames-sites-rockstar-tvd3d935648408f71928bd49d2f7c5a9ff",
-          controlsPlayPause: "rockstargames-sites-rockstar-tvf5de7526c8cee98bdd7363fd7f2cf8ae",
-          controlsPlayPausePlaying: "rockstargames-sites-rockstar-tvefb6194f0df966e6c8c759937d2fb826",
-          controlsNextTrack: "rockstargames-sites-rockstar-tvf286e0ce01c5401e56dd579b076f1aae",
-          controlsPrevTrack: "rockstargames-sites-rockstar-tva56bb7cb4b0e2de481777d1f09c3f2f2",
-          controlsScrubTrack: "rockstargames-sites-rockstar-tvb8f38f45353fa54fcb6f9e2a3d0d5a85"
+        }
+        if (_) return (0, g.jsxs)(m.NavLink, {
+          title: s,
+          to: a,
+          onClick: i,
+          ...b,
+          "aria-label": v,
+          ref: f,
+          children: [t, "_blank" === k && !v && (0, g.jsx)("span", {
+            className: u,
+            children: p.formatMessage(d.aria_label_open_new_window)
+          })]
+        });
+        const x = Object.keys(b).filter((e => !["activeClassName", "key", "end"].includes(e))).reduce(((e, t) => ({
+          ...e,
+          [t]: l[t]
+        })), {});
+        return "function" == typeof x?.className && delete x.className, (0, g.jsxs)("a", {
+          href: a,
+          title: s,
+          onClick: i,
+          target: k,
+          ...x,
+          "aria-label": v,
+          ref: f,
+          children: [t, "_blank" === k && !v && (0, g.jsx)("span", {
+            className: u,
+            children: p.formatMessage(d.aria_label_open_new_window)
+          })]
+        })
+      }), l);
+      var p = a(65772),
+        _ = a.n(p),
+        h = a(33052),
+        k = a(90048);
+      const b = {
+          player: "rockstargames-sites-careersbb43df423657efcc0f1f38630a24e5e8",
+          fixedToBottom: "rockstargames-sites-careerse1f497e3ec34c2fd721b124969e27dd5",
+          tracksOpen: "rockstargames-sites-careerse8f2736f0ae21a56045104071a7a9fd7",
+          tracks: "rockstargames-sites-careersea84096a931648765b1db46f708f70aa",
+          iconBurger: "rockstargames-sites-careersb91aad66a2102668715c5ddaaecede2e",
+          trackList: "rockstargames-sites-careersc44536ca7b7fa7236e86c65ae309057e",
+          trackActive: "rockstargames-sites-careersac7826f934fc777f58017b1a5752419a",
+          trackTitle: "rockstargames-sites-careersaafc522e642572d5ff93c7408b941829",
+          trackIndex: "rockstargames-sites-careersb880baa4707c71eb543f905816d8e952",
+          controls: "rockstargames-sites-careersff92c8eddfc0a0fa7bc7f444973e4f28",
+          controlsCurrentBg: "rockstargames-sites-careersa81d9465f14d65e8e20800d7b25f77d9",
+          controlsCurrentBgVisible: "rockstargames-sites-careersc87bd14d2bbc9248d9c197b77454f345",
+          controlsTrack: "rockstargames-sites-careersc23bf574089d1af93750f6af8ebb489f",
+          controlsTrackTitle: "rockstargames-sites-careerse4b77d29e904f9928cca1de93f5c7745",
+          controlsTrackAnimating: "rockstargames-sites-careersba49949a9cd8c22385708f267c625029",
+          scrollText: "rockstargames-sites-careersfd9c80e5afaa1ed38ce85f2c3d70eae4",
+          controlsTrackArtist: "rockstargames-sites-careersc93c1e5399d9fd5e96ca246fdbfb307b",
+          controlsTrackBurger: "rockstargames-sites-careersb4e1a16e3460b40c1aacd92afe219856",
+          controlsButtons: "rockstargames-sites-careersd136125994c1d0db1449fce51af559ca",
+          controlsScrub: "rockstargames-sites-careersd3d935648408f71928bd49d2f7c5a9ff",
+          controlsPlayPause: "rockstargames-sites-careersf5de7526c8cee98bdd7363fd7f2cf8ae",
+          controlsPlayPausePlaying: "rockstargames-sites-careersefb6194f0df966e6c8c759937d2fb826",
+          controlsNextTrack: "rockstargames-sites-careersf286e0ce01c5401e56dd579b076f1aae",
+          controlsPrevTrack: "rockstargames-sites-careersa56bb7cb4b0e2de481777d1f09c3f2f2",
+          controlsScrubTrack: "rockstargames-sites-careersb8f38f45353fa54fcb6f9e2a3d0d5a85"
         },
-        A = e => {
+        v = e => {
           let {
             src: t
           } = e;
-          return (0, w.jsx)("div", {
-            className: O.cover,
+          return (0, g.jsx)("div", {
+            className: b.cover,
             style: {
               background: `url(${t}) center/cover`
             }
           })
         },
-        D = e => {
+        x = e => {
           let {
             timing: t = {
               current: 0,
@@ -2457,32 +2266,32 @@ _global.SENTRY_RELEASE = {
             setPlaying: r,
             tracksOpen: i,
             setTracksOpen: n,
-            trackData: c,
+            trackData: o,
             setTrackId: l,
             trackBounds: d,
             setAutoNext: m
           } = e;
-          const u = (0, o.useRef)(null),
-            g = (0, o.useRef)(null),
-            f = (0, o.useRef)(null),
-            [p, _] = (0, o.useState)(null),
-            [k, h] = (0, o.useState)(!1),
-            v = e => {
+          const u = (0, c.useRef)(null),
+            f = (0, c.useRef)(null),
+            p = (0, c.useRef)(null),
+            [h, k] = (0, c.useState)(null),
+            [v, x] = (0, c.useState)(!1),
+            y = e => {
               const t = new Date(1e3 * e),
                 a = t.getUTCMinutes(),
                 s = t.getSeconds();
               return `${a.toString().padStart(2,"0")}:${s.toString().padStart(2,"0")}`
             };
-          return (0, o.useEffect)((() => {
-            if (!g.current || !f.current) return;
+          return (0, c.useEffect)((() => {
+            if (!f.current || !p.current) return;
             const e = () => {
-              f.current && g.current && _(f.current.clientWidth > g.current.clientWidth)
+              p.current && f.current && k(p.current.clientWidth > f.current.clientWidth)
             };
             return window.addEventListener("resize", e), e(), () => window.removeEventListener("resize", e)
-          }), [f, g, t]), (0, o.useEffect)((() => {
+          }), [p, f, t]), (0, c.useEffect)((() => {
             if (!u.current || !t?.duration) return;
             let e = null;
-            const a = new(L())(u.current),
+            const a = new(_())(u.current),
               r = e => {
                 if (u.current) {
                   const a = u.current.clientWidth;
@@ -2501,67 +2310,67 @@ _global.SENTRY_RELEASE = {
             return a.on("panstart", n), a.on("panleft", r), a.on("panright", r), a.on("panend", i), a.on("tap", r), () => {
               a.off("panstart", n), a.off("panleft", r), a.off("panright", r), a.off("panend", i), a.off("tap", r)
             }
-          }), [u.current, t.duration]), (0, o.useEffect)((() => {
+          }), [u.current, t.duration]), (0, c.useEffect)((() => {
             const e = Number(s?.currentTime);
-            (a || !isNaN(e) && 0 !== e) && h(!0)
-          }), [a, s?.currentTime]), (0, w.jsxs)("div", {
-            className: O.controls,
+            (a || !isNaN(e) && 0 !== e) && x(!0)
+          }), [a, s?.currentTime]), (0, g.jsxs)("div", {
+            className: b.controls,
             style: {
-              "--track-color": c.color,
-              "--track-mix-blend-mode": c.mix_blend_mode,
+              "--track-color": o.color,
+              "--track-mix-blend-mode": o.mix_blend_mode,
               "--current-pct": t.current / t.duration
             },
-            children: [(0, w.jsx)("div", {
-              className: [O.controlsCurrentBg, k ? O.controlsCurrentBgVisible : ""].join(" ")
-            }), (0, w.jsx)("div", {
-              className: O.controlsTrack,
-              ref: g,
-              children: (0, w.jsx)("span", {
-                className: [O.controlsTrackTitle, p ? O.controlsTrackAnimating : ""].join(" "),
-                ref: f,
-                children: c.title
+            children: [(0, g.jsx)("div", {
+              className: [b.controlsCurrentBg, v ? b.controlsCurrentBgVisible : ""].join(" ")
+            }), (0, g.jsx)("div", {
+              className: b.controlsTrack,
+              ref: f,
+              children: (0, g.jsx)("span", {
+                className: [b.controlsTrackTitle, h ? b.controlsTrackAnimating : ""].join(" "),
+                ref: p,
+                children: o.title
               })
-            }), (0, w.jsxs)("div", {
-              className: O.controlsButtons,
-              children: [(0, w.jsx)("div", {
-                className: O.controlsPrevTrack,
+            }), (0, g.jsxs)("div", {
+              className: b.controlsButtons,
+              children: [(0, g.jsx)("div", {
+                className: b.controlsPrevTrack,
                 onClick: () => {
                   d && (l(d[0]), m(!0), r(!0))
                 }
-              }), (0, w.jsx)("div", {
-                className: [O.controlsPlayPause, a ? O.controlsPlayPausePlaying : ""].join(" "),
+              }), (0, g.jsx)("div", {
+                className: [b.controlsPlayPause, a ? b.controlsPlayPausePlaying : ""].join(" "),
                 onClick: () => {
                   r(!a)
                 }
-              }), (0, w.jsx)("div", {
-                className: O.controlsNextTrack,
+              }), (0, g.jsx)("div", {
+                className: b.controlsNextTrack,
                 onClick: () => {
                   d && (l(d[1]), m(!0), r(!0))
                 }
               })]
-            }), (0, w.jsx)("div", {
+            }), (0, g.jsx)("div", {
               active: i ? "" : null,
-              className: O.controlsTrackBurger,
-              children: (0, w.jsx)("div", {
-                className: O.iconBurger,
+              className: b.controlsTrackBurger,
+              children: (0, g.jsx)("div", {
+                className: b.iconBurger,
                 onClick: () => {
                   n(!i)
                 }
               })
-            }), (0, w.jsxs)("div", {
-              className: O.controlsScrub,
-              children: [(0, w.jsx)("span", {
-                children: v(t.current)
-              }), (0, w.jsx)("div", {
-                className: O.controlsScrubTrack,
+            }), (0, g.jsxs)("div", {
+              className: b.controlsScrub,
+              children: [(0, g.jsx)("span", {
+                children: y(t.current)
+              }), (0, g.jsx)("div", {
+                className: b.controlsScrubTrack,
                 ref: u
-              }), (0, w.jsx)("span", {
-                children: v(t.duration)
+              }), (0, g.jsx)("span", {
+                children: y(t.duration)
               })]
             })]
           })
         },
-        B = e => {
+        y = e => {
           let {
             tracks: t,
             trackId: a,
@@ -2569,158 +2378,158 @@ _global.SENTRY_RELEASE = {
             tracksOpen: r,
             setTracksOpen: i,
             setPlaying: n,
-            setAutoNext: o
+            setAutoNext: c
           } = e;
-          return (0, w.jsxs)("div", {
-            className: O.tracks,
-            children: [(0, w.jsx)("h4", {
+          return (0, g.jsxs)("div", {
+            className: b.tracks,
+            children: [(0, g.jsx)("h4", {
               children: "Tracks"
-            }), (0, w.jsx)("div", {
-              className: O.trackBurger,
+            }), (0, g.jsx)("div", {
+              className: b.trackBurger,
               onClick: () => {
                 i(!r)
               }
-            }), (0, w.jsx)("div", {
-              className: O.trackList,
-              children: t.map(((e, t) => (0, w.jsxs)("a", {
+            }), (0, g.jsx)("div", {
+              className: b.trackList,
+              children: t.map(((e, t) => (0, g.jsxs)("a", {
                 style: {
                   "--highlight-color": e.color
                 },
-                className: a === e.id ? O.trackActive : "",
+                className: a === e.id ? b.trackActive : "",
                 onClick: () => {
-                  s(e.id), n(!0), o(!0)
+                  s(e.id), n(!0), c(!0)
                 },
-                children: [(0, w.jsx)("span", {
-                  className: O.trackIndex,
+                children: [(0, g.jsx)("span", {
+                  className: b.trackIndex,
                   children: String(t + 1).padStart(2, "0")
-                }), (0, w.jsx)("span", {
-                  className: O.trackTitle,
+                }), (0, g.jsx)("span", {
+                  className: b.trackTitle,
                   children: e.title
-                }), (0, w.jsx)("span", {
-                  className: O.trackTime,
+                }), (0, g.jsx)("span", {
+                  className: b.trackTime,
                   children: e.duration
                 })]
               }, e.id)))
             })]
           })
         },
-        V = e => {
+        w = e => {
           let {
             id: t,
             className: a = ""
           } = e;
           const {
             data: s
-          } = (0, z.useQuery)(P.GetAudioAlbum, {
+          } = (0, h.useQuery)(k.GetAudioAlbum, {
             variables: {
               id: t
             }
-          }), [r, i] = (0, o.useState)(), [n, c] = (0, o.useState)(), [l, d] = (0, o.useState)(), [m, u] = (0, o.useState)(!1), [g, f] = (0, o.useState)(!1), [p, _] = (0, o.useState)(new HTMLAudioElement), [k, h] = (0, o.useState)({
+          }), [r, i] = (0, c.useState)(), [n, o] = (0, c.useState)(), [l, d] = (0, c.useState)(), [m, u] = (0, c.useState)(!1), [f, p] = (0, c.useState)(!1), [_, w] = (0, c.useState)(new HTMLAudioElement), [N, j] = (0, c.useState)({
             current: 0,
             duration: 0
-          }), [v, b] = (0, o.useState)(!0);
-          return (0, o.useEffect)((() => {
+          }), [S, T] = (0, c.useState)(!0);
+          return (0, c.useEffect)((() => {
             const e = "audio",
               t = t => {
-                t?.data?.rockstarAudioPlayerPlayTrackId && (c(t.data.rockstarAudioPlayerPlayTrackId), b(!1), f(!0)), g && t?.data?.attentionBlurredElsewhere && t?.data?.from !== e && f(!1)
+                t?.data?.rockstarAudioPlayerPlayTrackId && (o(t.data.rockstarAudioPlayerPlayTrackId), T(!1), p(!0)), f && t?.data?.attentionBlurredElsewhere && t?.data?.from !== e && p(!1)
               };
-            return g && window.postMessage({
+            return f && window.postMessage({
               attentionBlurredElsewhere: !0,
               from: e
             }), window.addEventListener("message", t, !1), () => window.removeEventListener("message", t, !1)
-          }), [g]), (0, o.useEffect)((() => {
-            if (!p) return;
+          }), [f]), (0, c.useEffect)((() => {
+            if (!_) return;
             const e = () => {
-                isNaN(p.duration) || h({
-                  duration: p?.duration ?? 0,
-                  current: p?.currentTime ?? 0
+                isNaN(_.duration) || j({
+                  duration: _?.duration ?? 0,
+                  current: _?.currentTime ?? 0
                 })
               },
               t = () => {
-                v && r && c(r[1])
+                S && r && o(r[1])
               };
-            return p.addEventListener("loadedmetadata", e), p.addEventListener("timeupdate", e), p.addEventListener("ended", t), () => {
-              p.removeEventListener("loadedmetadata", e), p.removeEventListener("timeupdate", e), p.removeEventListener("ended", t)
+            return _.addEventListener("loadedmetadata", e), _.addEventListener("timeupdate", e), _.addEventListener("ended", t), () => {
+              _.removeEventListener("loadedmetadata", e), _.removeEventListener("timeupdate", e), _.removeEventListener("ended", t)
             }
-          }), [p, r, v]), (0, o.useEffect)((() => {
-            g && window.postMessage({
+          }), [_, r, S]), (0, c.useEffect)((() => {
+            f && window.postMessage({
               attentionBlurredElsewhere: !0,
               from: "audio"
             })
-          }), [g]), (0, o.useEffect)((() => {
-            p && (g ? p.play() : p.pause(), u(!1))
-          }), [g, p, l?.id]), (0, o.useEffect)((() => {
+          }), [f]), (0, c.useEffect)((() => {
+            _ && (f ? _.play() : _.pause(), u(!1))
+          }), [f, _, l?.id]), (0, c.useEffect)((() => {
             if (!n) return;
             const {
               tracks: e
             } = s.audioAlbum, t = s.audioAlbum.tracks.findIndex((e => e.id === n));
             i([e[t - 1]?.id ?? e[e.length - 1].id, e[t + 1]?.id ?? e[0].id]), d(e[t])
-          }), [n]), (0, o.useEffect)((() => {
-            s && c(s.audioAlbum.tracks[0].id)
-          }), [s]), l ? (0, w.jsxs)("div", {
-            className: [O.player, O[a], m ? O.tracksOpen : ""].join(" "),
-            children: [(0, w.jsx)("audio", {
+          }), [n]), (0, c.useEffect)((() => {
+            s && o(s.audioAlbum.tracks[0].id)
+          }), [s]), l ? (0, g.jsxs)("div", {
+            className: [b.player, b[a], m ? b.tracksOpen : ""].join(" "),
+            children: [(0, g.jsx)("audio", {
               ref: e => {
-                _(e)
+                w(e)
               },
               src: l.mp3_src
-            }), (0, w.jsx)(B, {
+            }), (0, g.jsx)(y, {
               tracks: s.audioAlbum.tracks,
-              setTrackId: c,
+              setTrackId: o,
               trackId: n,
               tracksOpen: m,
               setTracksOpen: u,
-              setPlaying: f,
-              setAutoNext: b
-            }), (0, w.jsx)(A, {
+              setPlaying: p,
+              setAutoNext: T
+            }), (0, g.jsx)(v, {
               src: l.cover_src
-            }), (0, w.jsx)(D, {
-              setTrackId: c,
+            }), (0, g.jsx)(x, {
+              setTrackId: o,
               trackBounds: r,
               tracksOpen: m,
               setTracksOpen: u,
-              playing: g,
-              setPlaying: f,
-              timing: k,
+              playing: f,
+              setPlaying: p,
+              timing: N,
               trackData: l,
-              audioRef: p,
-              setAutoNext: b
+              audioRef: _,
+              setAutoNext: T
             })]
           }) : null
         },
-        R = e => {
+        N = e => {
           let {
             text: t,
             style: a
           } = e;
-          return (0, w.jsx)("div", {
-            className: "rockstargames-sites-rockstar-tvb61bd7f274fd6d93c4bf33a9284b6b67",
+          return (0, g.jsx)("div", {
+            className: "rockstargames-sites-careersb61bd7f274fd6d93c4bf33a9284b6b67",
             style: a,
             children: t
           })
         },
-        F = e => {
+        j = e => {
           let {
             brands: t = []
           } = e;
-          return t.length ? (0, w.jsx)("div", {
-            className: "rockstargames-sites-rockstar-tvcde08e212f23b312d5afca7f2ea1105c",
+          return t.length ? (0, g.jsx)("div", {
+            className: "rockstargames-sites-careerscde08e212f23b312d5afca7f2ea1105c",
             children: t.map(((e, t) => {
               let {
                 brand: a
               } = e;
-              return (0, w.jsx)("div", {
-                className: "rockstargames-sites-rockstar-tvc894fe869384587702b5370da072be86",
+              return (0, g.jsx)("div", {
+                className: "rockstargames-sites-careersc894fe869384587702b5370da072be86",
                 "data-brand": a
               }, t)
             }))
           }) : null
         },
-        $ = {
-          button: "rockstargames-sites-rockstar-tve056494c33cff1fe89431f279fdb6b9a",
-          secondary: "rockstargames-sites-rockstar-tvd340cf27f380a4347994e59544432eb3"
+        S = {
+          button: "rockstargames-sites-careerse056494c33cff1fe89431f279fdb6b9a",
+          secondary: "rockstargames-sites-careersd340cf27f380a4347994e59544432eb3"
         },
-        G = e => {
+        T = e => {
           let {
             className: t = "",
             children: a,
@@ -2729,41 +2538,41 @@ _global.SENTRY_RELEASE = {
             onClick: i,
             ...n
           } = e;
-          const o = [$.button, $[s], t].join(" ");
-          return r ? (0, w.jsx)(I, {
+          const c = [S.button, S[s], t].join(" ");
+          return r ? (0, g.jsx)(f, {
             ...n,
             to: r,
-            className: o,
+            className: c,
             onClick: i,
             children: a
-          }) : (0, w.jsx)("button", {
+          }) : (0, g.jsx)("button", {
             ...n,
             type: "button",
-            className: o,
+            className: c,
             onClick: i,
             children: a
           })
         };
-      var U = a(1740);
-      const H = {
-          pillBtn: "rockstargames-sites-rockstar-tvb59962d0e68ccd73b5ee2e571528d469",
-          selected: "rockstargames-sites-rockstar-tvf5c57dad202e0d6ff855d5a4aca2c804",
-          plusButton: "rockstargames-sites-rockstar-tvcffaf489342637258d28f9b3b718836a",
-          small: "rockstargames-sites-rockstar-tvb8abf927f0ba0af0d8ac0e9c77690d34",
-          btnText: "rockstargames-sites-rockstar-tve6e56461bfc2e426c4abc5451cd17284",
-          btnTexticon: "rockstargames-sites-rockstar-tvcef9f9ce913d167a1fe2e7118a407cdd",
-          whiteBtn: "rockstargames-sites-rockstar-tvb257e0629b9f8e101791d7a948ed15be",
-          blackBtn: "rockstargames-sites-rockstar-tvcb03bccaee79394858682d2ce4d08253",
-          transparentBtn: "rockstargames-sites-rockstar-tvd0460159a17533d4d23686d7dca76794",
-          iconBtn: "rockstargames-sites-rockstar-tvac61186c3c22346c9a4ee2cd2820d341",
-          link: "rockstargames-sites-rockstar-tvc5920e56149b82f20f4db2ad9d397495",
-          xboxone: "rockstargames-sites-rockstar-tva7057f2e6d398341f57bc462716d0508",
-          xboxseriesxs: "rockstargames-sites-rockstar-tva693ab5879f34d7dea1737d3172ed4e4",
-          ps4: "rockstargames-sites-rockstar-tva029ff88fc9aef470aaeef8053f90436",
-          ps5: "rockstargames-sites-rockstar-tve25638751cf3e7267db23c6a401fcc36",
-          pc: "rockstargames-sites-rockstar-tve03d92653f19a7ae3c4b3d5137bc9909"
+      var C = a(1740);
+      const M = {
+          pillBtn: "rockstargames-sites-careersb59962d0e68ccd73b5ee2e571528d469",
+          selected: "rockstargames-sites-careersf5c57dad202e0d6ff855d5a4aca2c804",
+          plusButton: "rockstargames-sites-careerscffaf489342637258d28f9b3b718836a",
+          small: "rockstargames-sites-careersb8abf927f0ba0af0d8ac0e9c77690d34",
+          btnText: "rockstargames-sites-careerse6e56461bfc2e426c4abc5451cd17284",
+          btnTexticon: "rockstargames-sites-careerscef9f9ce913d167a1fe2e7118a407cdd",
+          whiteBtn: "rockstargames-sites-careersb257e0629b9f8e101791d7a948ed15be",
+          blackBtn: "rockstargames-sites-careerscb03bccaee79394858682d2ce4d08253",
+          transparentBtn: "rockstargames-sites-careersd0460159a17533d4d23686d7dca76794",
+          iconBtn: "rockstargames-sites-careersac61186c3c22346c9a4ee2cd2820d341",
+          link: "rockstargames-sites-careersc5920e56149b82f20f4db2ad9d397495",
+          xboxone: "rockstargames-sites-careersa7057f2e6d398341f57bc462716d0508",
+          xboxseriesxs: "rockstargames-sites-careersa693ab5879f34d7dea1737d3172ed4e4",
+          ps4: "rockstargames-sites-careersa029ff88fc9aef470aaeef8053f90436",
+          ps5: "rockstargames-sites-careerse25638751cf3e7267db23c6a401fcc36",
+          pc: "rockstargames-sites-careerse03d92653f19a7ae3c4b3d5137bc9909"
         },
-        q = e => {
+        I = e => {
           let {
             children: t,
             className: a,
@@ -2771,7 +2580,7 @@ _global.SENTRY_RELEASE = {
             style: r,
             ariaLabel: i
           } = e;
-          return (0, w.jsx)("button", {
+          return (0, g.jsx)("button", {
             className: a,
             onClick: s,
             style: r,
@@ -2780,7 +2589,7 @@ _global.SENTRY_RELEASE = {
             children: t
           })
         },
-        W = e => {
+        E = e => {
           let {
             children: t,
             className: a,
@@ -2789,7 +2598,7 @@ _global.SENTRY_RELEASE = {
             to: i,
             ariaLabel: n
           } = e;
-          return (0, w.jsx)(C.NavLink, {
+          return (0, g.jsx)(m.NavLink, {
             className: a,
             onClick: s,
             style: r,
@@ -2798,7 +2607,7 @@ _global.SENTRY_RELEASE = {
             children: t
           })
         },
-        X = e => {
+        L = e => {
           let {
             btnColor: t = "#fff",
             className: a = "",
@@ -2806,84 +2615,84 @@ _global.SENTRY_RELEASE = {
             icon: r = "",
             img: i,
             labelColor: n = "#000",
-            onClick: o,
-            secondText: c,
+            onClick: c,
+            secondText: o,
             size: l,
             text: d,
             to: m,
             type: u = "",
-            ariaLabel: g
+            ariaLabel: f
           } = e;
-          const f = [H.plusButton, H[u] ?? "", H[l] ?? "", H[s] ?? "", a].join(" "),
-            p = {
+          const p = [M.plusButton, M[u] ?? "", M[l] ?? "", M[s] ?? "", a].join(" "),
+            _ = {
               "--hvr-color": t ?? n,
               "--hvr-bg-color": n ?? t,
               "--hvr-border-color": t ?? n
             },
-            _ = (0, w.jsxs)(w.Fragment, {
-              children: [i ? (0, w.jsx)("img", {
+            h = (0, g.jsxs)(g.Fragment, {
+              children: [i ? (0, g.jsx)("img", {
                 src: i,
                 alt: ""
-              }) : "", (0, w.jsxs)("div", {
-                className: H.btnText,
+              }) : "", (0, g.jsxs)("div", {
+                className: M.btnText,
                 icon: r,
-                children: [d, c ? (0, w.jsx)("span", {
-                  children: c
+                children: [d, o ? (0, g.jsx)("span", {
+                  children: o
                 }) : ""]
               })]
             });
           if (m) {
             if (m.startsWith("http")) {
               const e = m.startsWith(document.location.origin) ? "_self" : "_blank";
-              return (0, w.jsx)("span", {
-                onClick: o,
-                onKeyDown: o,
-                className: f,
+              return (0, g.jsx)("span", {
+                onClick: c,
+                onKeyDown: c,
+                className: p,
                 role: "button",
-                "aria-label": g,
+                "aria-label": f,
                 tabIndex: 0,
-                children: (0, w.jsx)("a", {
+                children: (0, g.jsx)("a", {
                   href: m,
                   target: e,
-                  children: _
+                  children: h
                 })
               })
             }
-            return (0, w.jsx)(W, {
-              className: f,
-              onClick: o,
+            return (0, g.jsx)(E, {
+              className: p,
+              onClick: c,
               style: {
-                ...p
+                ..._
               },
               to: m,
-              ariaLabel: g,
-              children: _
+              ariaLabel: f,
+              children: h
             })
           }
-          return (0, w.jsx)(q, {
-            className: f,
-            onClick: o,
+          return (0, g.jsx)(I, {
+            className: p,
+            onClick: c,
             style: {
-              ...p
+              ..._
             },
-            ariaLabel: g,
-            children: _
+            ariaLabel: f,
+            children: h
           })
         },
-        Y = e => {
+        z = e => {
           let {
             buttons: t = [],
             className: a
           } = e;
-          return t.length ? (0, w.jsx)("div", {
-            className: (0, U.classList)("rockstargames-sites-rockstar-tvb411a36e7fd12ab75861fe560b31b206", a),
+          return t.length ? (0, g.jsx)("div", {
+            className: (0, C.classList)("rockstargames-sites-careersb411a36e7fd12ab75861fe560b31b206", a),
             children: t.map(((e, t) => {
               let {
                 icon: a,
                 title: s,
                 to: r
               } = e;
-              return s ? (0, w.jsx)(X, {
+              return s ? (0, g.jsx)(L, {
                 icon: a,
                 text: s,
                 to: r
@@ -2891,33 +2700,33 @@ _global.SENTRY_RELEASE = {
             }))
           }) : null
         };
-      var K = a(48111),
-        Q = a(12231);
-      const Z = {
-          deprecatedCarousel: "rockstargames-sites-rockstar-tveb5df7b3d51dffc4d993ca7abce4e944",
-          "swiper-scrollbar-disabled": "rockstargames-sites-rockstar-tveb2dda6769a7c20a31e7996ff62e41f8",
-          "swiper-horizontal": "rockstargames-sites-rockstar-tvb11093de3cb4f18ea2d59b8d4d1db44c",
-          "swiper-vertical": "rockstargames-sites-rockstar-tvfa3209fdf995734a1aeeac2cc72cc1ea",
-          renderedWithChildren: "rockstargames-sites-rockstar-tvc9f15e74b3166cd0db40501fcc70e868",
-          panorama: "rockstargames-sites-rockstar-tvf2a7e77af5dff445e978fd575a567508",
-          img: "rockstargames-sites-rockstar-tvf1d3d54c266a20fa0cbe9c342b0d98da",
-          hideMobile: "rockstargames-sites-rockstar-tve70d5eaa273e4a0a40ee62a308491810",
-          hideLarge: "rockstargames-sites-rockstar-tvbace2af6c822ba7b36b53923629cba0f",
-          imageAreaBg: "rockstargames-sites-rockstar-tvf4bb071e6dad07c75b78ea21269ca662",
-          infinite_false: "rockstargames-sites-rockstar-tvd6c3d175b843462bf23a1a1f3af6b095",
-          track: "rockstargames-sites-rockstar-tvb5ff781c4a96bf031e8e7f5e0c9af395",
-          perico: "rockstargames-sites-rockstar-tvbb97d296d17b7e801c6c0719a79463dd",
-          dotsSlide: "rockstargames-sites-rockstar-tvdd55a6f93254ed13542089c6f36e0048",
-          siblings: "rockstargames-sites-rockstar-tva59cf4385528c371a13be9962b67131b",
-          active: "rockstargames-sites-rockstar-tvaa5e195e0c7c6336929553314d52a896",
-          "swiper-preloader-spin": "rockstargames-sites-rockstar-tvc05cc0faa8239c85cdc7d53c7e120e8e"
+      var P = a(48111),
+        O = a(12231);
+      const A = {
+          deprecatedCarousel: "rockstargames-sites-careerseb5df7b3d51dffc4d993ca7abce4e944",
+          "swiper-scrollbar-disabled": "rockstargames-sites-careerseb2dda6769a7c20a31e7996ff62e41f8",
+          "swiper-horizontal": "rockstargames-sites-careersb11093de3cb4f18ea2d59b8d4d1db44c",
+          "swiper-vertical": "rockstargames-sites-careersfa3209fdf995734a1aeeac2cc72cc1ea",
+          renderedWithChildren: "rockstargames-sites-careersc9f15e74b3166cd0db40501fcc70e868",
+          panorama: "rockstargames-sites-careersf2a7e77af5dff445e978fd575a567508",
+          img: "rockstargames-sites-careersf1d3d54c266a20fa0cbe9c342b0d98da",
+          hideMobile: "rockstargames-sites-careerse70d5eaa273e4a0a40ee62a308491810",
+          hideLarge: "rockstargames-sites-careersbace2af6c822ba7b36b53923629cba0f",
+          imageAreaBg: "rockstargames-sites-careersf4bb071e6dad07c75b78ea21269ca662",
+          infinite_false: "rockstargames-sites-careersd6c3d175b843462bf23a1a1f3af6b095",
+          track: "rockstargames-sites-careersb5ff781c4a96bf031e8e7f5e0c9af395",
+          perico: "rockstargames-sites-careersbb97d296d17b7e801c6c0719a79463dd",
+          dotsSlide: "rockstargames-sites-careersdd55a6f93254ed13542089c6f36e0048",
+          siblings: "rockstargames-sites-careersa59cf4385528c371a13be9962b67131b",
+          active: "rockstargames-sites-careersaa5e195e0c7c6336929553314d52a896",
+          "swiper-preloader-spin": "rockstargames-sites-careersc05cc0faa8239c85cdc7d53c7e120e8e"
         },
-        J = e => {
+        D = e => {
           let {
             item: t
           } = e;
-          return (0, w.jsxs)("div", {
-            children: [(0, w.jsx)(Bt, {
+          return (0, g.jsxs)("div", {
+            children: [(0, g.jsx)(jt, {
               image: t?.image,
               badge: t?.badge ?? t?.image?.badge,
               badgeType: "badge3",
@@ -2926,29 +2735,29 @@ _global.SENTRY_RELEASE = {
               type: t?.type,
               ariaLabel: t?.image?.ariaLabel ?? t.description,
               style: t?.style,
-              className: (0, U.classList)(Z.img, t?.className)
-            }), (t?.title || t?.description) && (0, w.jsx)(Fe, {
+              className: (0, C.classList)(A.img, t?.className)
+            }), (t?.title || t?.description) && (0, g.jsx)(Se, {
               item: t
             })]
           })
         },
-        ee = e => {
+        B = e => {
           let {
             current: t,
             total: a
           } = e;
-          return (0, w.jsx)("div", {
+          return (0, g.jsx)("div", {
             className: "swiper-scrollbar",
             style: {
               "--current-slide": t,
               "--total-slides": a
             },
-            children: (0, w.jsx)("div", {
+            children: (0, g.jsx)("div", {
               className: "swiper-scrollbar-drag"
             })
           })
         },
-        te = e => {
+        V = e => {
           let {
             children: t,
             items: a = [],
@@ -2956,14 +2765,14 @@ _global.SENTRY_RELEASE = {
             noInfiniteScroll: r = !1,
             className: i = "",
             renderTemplate: n = "standard",
-            text: c,
+            text: o,
             customSpaceBetween: l = null,
             centerSlides: d = !0,
             centeredSlidesBounds: m = !1
           } = e;
-          const [u, g] = (0, o.useState)(0), f = (0, o.useMemo)((() => t && Array.isArray(t) ? t.map((() => (0, Q.c)())) : null), [t]);
+          const [u, f] = (0, c.useState)(0), p = (0, c.useMemo)((() => t && Array.isArray(t) ? t.map((() => (0, O.c)())) : null), [t]);
           if (!(a && 0 !== a?.length || t)) return null;
-          const p = {
+          const _ = {
             0: {
               spaceBetween: l ?? 16
             },
@@ -2977,67 +2786,67 @@ _global.SENTRY_RELEASE = {
               spaceBetween: l ?? 22
             }
           };
-          return (0, w.jsxs)("div", {
-            className: (0, U.classList)(Z.deprecatedCarousel, Z[n], Z[`infinite_${!r}`], t ? Z.renderedWithChildren : "", i),
+          return (0, g.jsxs)("div", {
+            className: (0, C.classList)(A.deprecatedCarousel, A[n], A[`infinite_${!r}`], t ? A.renderedWithChildren : "", i),
             style: s,
-            children: [(0, w.jsxs)(K.wx, {
+            children: [(0, g.jsxs)(P.wx, {
               loop: !r,
               grabCursor: !0,
               centeredSlides: d,
               centerInsufficientSlides: d,
               slidesPerView: "auto",
               speed: 700,
-              breakpoints: p,
-              onUpdate: () => g(0),
-              onActiveIndexChange: e => g(e?.realIndex ?? 0),
+              breakpoints: _,
+              onUpdate: () => f(0),
+              onActiveIndexChange: e => f(e?.realIndex ?? 0),
               centeredSlidesBounds: m,
-              children: [(0, w.jsx)("div", {
-                className: Z.trackWrapper,
-                children: (0, w.jsxs)("div", {
-                  className: Z.track,
-                  children: [a?.map((e => (0, w.jsx)(K.Ky, {
-                    children: (0, w.jsx)(J, {
+              children: [(0, g.jsx)("div", {
+                className: A.trackWrapper,
+                children: (0, g.jsxs)("div", {
+                  className: A.track,
+                  children: [a?.map((e => (0, g.jsx)(P.Ky, {
+                    children: (0, g.jsx)(D, {
                       item: e
                     })
-                  }, e.key))), t && t.map(((e, t) => e && (0, w.jsx)(K.Ky, {
+                  }, e.key))), t && t.map(((e, t) => e && (0, g.jsx)(P.Ky, {
                     children: e
-                  }, f && f[t])))]
+                  }, p && p[t])))]
                 })
-              }), (0, w.jsx)(ee, {
+              }), (0, g.jsx)(B, {
                 current: u,
                 total: t ? t.length : a.length
               })]
-            }), (c?.title || c?.description) && (0, w.jsx)(Fe, {
-              item: c
+            }), (o?.title || o?.description) && (0, g.jsx)(Se, {
+              item: o
             })]
           })
         };
-      var ae = a(45792),
-        se = a(42836);
-      const re = (0, a(62748).U1)(),
-        ie = e => e.some((e => !e)),
-        ne = e => {
+      var F = a(45792),
+        R = a(42836);
+      const $ = (0, a(62748).U1)(),
+        U = e => e.some((e => !e)),
+        G = e => {
           let {
             condition: t = null,
             children: a
           } = e;
-          const [s, r] = (0, o.useState)(!1), i = (e => {
-            const [t] = (0, C.useSearchParams)(), [a, s] = (0, o.useState)(null), r = (0, se.useRockstarUser)(), {
+          const [s, r] = (0, c.useState)(!1), i = (e => {
+            const [t] = (0, m.useSearchParams)(), [a, s] = (0, c.useState)(null), r = (0, R.useRockstarUser)(), {
               loggedIn: i
             } = r, {
               currentCharId: n
-            } = (0, se.useRockstarUserState)(), c = (0, se.useIsUserGtaPlus)(r?.data, n);
-            return (0, o.useEffect)((() => {
+            } = (0, R.useRockstarUserState)(), o = (0, R.useIsUserGtaPlus)(r?.data, n);
+            return (0, c.useEffect)((() => {
               const a = "true" === t.get("conditionPreview");
               if (!e?.length > 0) return;
-              re.applyFilters("preview_conditions", e);
+              $.applyFilters("preview_conditions", e);
               const r = [];
               return e.forEach((e => {
                 const {
                   value: s
                 } = e;
                 if (a) return "true" === t.get(s) ? (r.push(!0), !0) : (r.push(!1), !1);
-                if (ie(r)) return !1;
+                if (U(r)) return !1;
                 switch (s) {
                   case "user:is:loggedIn":
                     r.push(!0 === i);
@@ -3046,50 +2855,50 @@ _global.SENTRY_RELEASE = {
                     r.push(!1 === i);
                     break;
                   case "user:is:gtaPlus":
-                    r.push(!0 === c);
+                    r.push(!0 === o);
                     break;
                   case "user:not:gtaPlus":
-                    r.push(!1 === c);
+                    r.push(!1 === o);
                     break;
                   default:
                     r.push(!1)
                 }
                 return null
-              })), s(!ie(r)), () => {}
-            }), [t, e, c, r, i]), a
+              })), s(!U(r)), () => {}
+            }), [t, e, o, r, i]), a
           })(t);
-          return (0, o.useEffect)((() => {
+          return (0, c.useEffect)((() => {
             r(i)
-          }), [i]), (0, o.useMemo)((() => s ? a : null), [s])
+          }), [i]), (0, c.useMemo)((() => s ? a : null), [s])
         },
-        oe = (0, ae.withTranslations)((e => {
+        H = (0, F.withTranslations)((e => {
           let {
             children: t
           } = e;
-          return o.Children.map(o.Children.toArray(t), (e => (0, w.jsx)(ne, {
+          return c.Children.map(c.Children.toArray(t), (e => (0, g.jsx)(G, {
             ...e?.props
           })))
         }));
-      var ce = a(37960),
-        le = a(58652);
-      const de = e => {
+      var q = a(37960),
+        W = a(58652);
+      const X = e => {
           let {
             className: t
           } = e;
-          return (0, w.jsxs)("svg", {
+          return (0, g.jsxs)("svg", {
             className: t,
             width: "16",
             height: "17",
             viewBox: "0 0 16 17",
             fill: "none",
             xmlns: "http://www.w3.org/2000/svg",
-            children: [(0, w.jsx)("path", {
+            children: [(0, g.jsx)("path", {
               d: "M3.33203 8.5H12.6654",
               stroke: "white",
               strokeWidth: "1.33",
               strokeLinecap: "round",
               strokeLinejoin: "round"
-            }), (0, w.jsx)("path", {
+            }), (0, g.jsx)("path", {
               d: "M8 3.83331L12.6667 8.49998L8 13.1666",
               stroke: "white",
               strokeWidth: "1.33",
@@ -3098,42 +2907,42 @@ _global.SENTRY_RELEASE = {
             })]
           })
         },
-        me = {
-          pillBtn: "rockstargames-sites-rockstar-tve3158363419b66e5afa2264e4928890c",
-          selected: "rockstargames-sites-rockstar-tva9649249223f164eff11174ffc72616b",
-          calloutContainer: "rockstargames-sites-rockstar-tve6bd244761fdf3ebe3888539d9942921",
-          calloutSection: "rockstargames-sites-rockstar-tvb1b8c93299158ef7d0f9eb04e14a7a64",
-          calloutHeaders: "rockstargames-sites-rockstar-tvc81810436a5b57307c41f4d7a704b2f7",
-          calloutHeaderMargins: "rockstargames-sites-rockstar-tvb4e1f72dfa9b38f23017e5f8ef48b9cb",
-          calloutHeader: "rockstargames-sites-rockstar-tvb7964754215256201dd703aedca18b6f",
-          calloutSubheader: "rockstargames-sites-rockstar-tvac660fa7995007ed875e03a257e447d7",
-          calloutVoteForm: "rockstargames-sites-rockstar-tvbee0795a36dd5adf822e1e50a7260f3d",
-          voteButton: "rockstargames-sites-rockstar-tvb1baa545566a61b791b696c9ebf560ad",
-          upvote: "rockstargames-sites-rockstar-tvb9c17ddd3e1052acb5097909ae2b07a1",
-          downvote: "rockstargames-sites-rockstar-tvf26b53e66e552183743465cce6a8d3a8",
-          active: "rockstargames-sites-rockstar-tvd38a1764483a36e8a1509aee5b88ec31",
-          calloutButton: "rockstargames-sites-rockstar-tvb7eb76afce3c6e686be44c356837b627",
-          calloutLink: "rockstargames-sites-rockstar-tvaefe6c5a233047c943a864cd56a7de2d",
-          calloutLinkIcon: "rockstargames-sites-rockstar-tva74bf6baa632ad9b5f87efd2043cfed5",
-          actionBlock: "rockstargames-sites-rockstar-tvcc491ddd715196ecd6ef54017ff05ec0",
-          actionFooter: "rockstargames-sites-rockstar-tvdb26fed58ce50f4affc114670885721a"
+        Y = {
+          pillBtn: "rockstargames-sites-careerse3158363419b66e5afa2264e4928890c",
+          selected: "rockstargames-sites-careersa9649249223f164eff11174ffc72616b",
+          calloutContainer: "rockstargames-sites-careerse6bd244761fdf3ebe3888539d9942921",
+          calloutSection: "rockstargames-sites-careersb1b8c93299158ef7d0f9eb04e14a7a64",
+          calloutHeaders: "rockstargames-sites-careersc81810436a5b57307c41f4d7a704b2f7",
+          calloutHeaderMargins: "rockstargames-sites-careersb4e1f72dfa9b38f23017e5f8ef48b9cb",
+          calloutHeader: "rockstargames-sites-careersb7964754215256201dd703aedca18b6f",
+          calloutSubheader: "rockstargames-sites-careersac660fa7995007ed875e03a257e447d7",
+          calloutVoteForm: "rockstargames-sites-careersbee0795a36dd5adf822e1e50a7260f3d",
+          voteButton: "rockstargames-sites-careersb1baa545566a61b791b696c9ebf560ad",
+          upvote: "rockstargames-sites-careersb9c17ddd3e1052acb5097909ae2b07a1",
+          downvote: "rockstargames-sites-careersf26b53e66e552183743465cce6a8d3a8",
+          active: "rockstargames-sites-careersd38a1764483a36e8a1509aee5b88ec31",
+          calloutButton: "rockstargames-sites-careersb7eb76afce3c6e686be44c356837b627",
+          calloutLink: "rockstargames-sites-careersaefe6c5a233047c943a864cd56a7de2d",
+          calloutLinkIcon: "rockstargames-sites-careersa74bf6baa632ad9b5f87efd2043cfed5",
+          actionBlock: "rockstargames-sites-careerscc491ddd715196ecd6ef54017ff05ec0",
+          actionFooter: "rockstargames-sites-careersdb26fed58ce50f4affc114670885721a"
         },
-        ue = e => {
+        K = e => {
           let {
             foreign_id: t,
             foreign_type: a
           } = e;
           const {
             track: s
-          } = (0, se.useGtmTrack)(), {
+          } = (0, R.useGtmTrack)(), {
             refetch: r
-          } = (0, z.useQuery)(le.UserGetVote, {
+          } = (0, h.useQuery)(W.UserGetVote, {
             skip: !0
-          }), [i] = (0, z.useMutation)(le.UserCastVote), [n, c] = (0, o.useState)(null), l = (0, o.useCallback)((e => {
+          }), [i] = (0, h.useMutation)(W.UserCastVote), [n, o] = (0, c.useState)(null), l = (0, c.useCallback)((e => {
             (async () => {
-              if (e === n && null !== n) c(null);
+              if (e === n && null !== n) o(null);
               else {
-                c(e), s({
+                o(e), s({
                   event_action: e ? "like" : "dislike",
                   event_category: "cta",
                   event: "cta_" + (e ? "like" : "dislike"),
@@ -3150,32 +2959,32 @@ _global.SENTRY_RELEASE = {
               }
             })()
           }), [t, a, n]);
-          return (0, o.useEffect)((() => {
+          return (0, c.useEffect)((() => {
             t && a && (async () => {
               const e = await r({
                 foreignId: t,
                 foreignType: a
               });
-              c(e?.data?.userGetVote?.vote ?? null)
+              o(e?.data?.userGetVote?.vote ?? null)
             })()
-          }), [t, a]), (0, w.jsxs)("div", {
-            className: me.calloutVoteForm,
-            children: [(0, w.jsx)("button", {
+          }), [t, a]), (0, g.jsxs)("div", {
+            className: Y.calloutVoteForm,
+            children: [(0, g.jsx)("button", {
               "aria-label": "upvote",
-              className: [me.upvote, me.voteButton, n ? me.active : ""].join(" "),
+              className: [Y.upvote, Y.voteButton, n ? Y.active : ""].join(" "),
               name: "upvote",
               onClick: () => l(!0),
               type: "button"
-            }), (0, w.jsx)("button", {
+            }), (0, g.jsx)("button", {
               "aria-label": "downvote",
-              className: [me.downvote, me.voteButton, !1 === n ? me.active : ""].join(" "),
+              className: [Y.downvote, Y.voteButton, !1 === n ? Y.active : ""].join(" "),
               name: "downvote",
               onClick: () => l(!1),
               type: "button"
             })]
           })
         },
-        ge = e => {
+        Q = e => {
           let {
             action_text: t,
             link: a,
@@ -3183,24 +2992,24 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: r
-          } = (0, se.useGtmTrack)();
-          return (0, w.jsx)("a", {
+          } = (0, R.useGtmTrack)();
+          return (0, g.jsx)("a", {
             href: a,
             target: "_blank",
             rel: "noopener noreferrer",
-            children: (0, w.jsxs)("button", {
-              className: me.calloutLink,
+            children: (0, g.jsxs)("button", {
+              className: Y.calloutLink,
               type: "button",
               onClick: s ? () => r({
                 ...s
               }) : () => {},
-              children: [t, (0, w.jsx)(de, {
-                className: me.calloutLinkIcon
+              children: [t, (0, g.jsx)(X, {
+                className: Y.calloutLinkIcon
               })]
             })
           })
         },
-        fe = e => {
+        Z = e => {
           let {
             helperText: t,
             linkText: a,
@@ -3209,10 +3018,10 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: i
-          } = (0, se.useGtmTrack)();
-          return (0, w.jsxs)("div", {
-            className: me.actionFooter,
-            children: [t, a && " ", a && (0, w.jsx)("a", {
+          } = (0, R.useGtmTrack)();
+          return (0, g.jsxs)("div", {
+            className: Y.actionFooter,
+            children: [t, a && " ", a && (0, g.jsx)("a", {
               href: s ?? "",
               onClick: () => i({
                 ...r
@@ -3221,7 +3030,7 @@ _global.SENTRY_RELEASE = {
             })]
           })
         },
-        pe = (0, ae.withTranslations)((e => {
+        J = (0, F.withTranslations)((e => {
           let {
             header: t,
             subheader: a,
@@ -3229,117 +3038,118 @@ _global.SENTRY_RELEASE = {
             action_text: r,
             link: i,
             foreign_id: n = document.location.pathname,
-            foreign_type: c = "url",
+            foreign_type: o = "url",
             className: l = "",
             actionFooterHelperText: d,
             actionFooterLinkText: m,
             actionFooterLink: u,
-            trackingData: g = {},
-            actionFooterLinkTrackingData: f = {},
-            t: p,
-            ..._
+            trackingData: f = {},
+            actionFooterLinkTrackingData: p = {},
+            t: _,
+            ...h
           } = e;
           const {
             loggedIn: k
-          } = (0, se.useRockstarUser)(), {
-            track: h
-          } = (0, se.useGtmTrack)(), v = `${document.location.origin}/auth/sc-auth-login?returnUrl=${window.location.pathname}`, {
-            ref: b,
-            inView: x
-          } = (0, ce.cD)({
+          } = (0, R.useRockstarUser)(), {
+            track: b
+          } = (0, R.useGtmTrack)(), v = `${document.location.origin}/auth/sc-auth-login?returnUrl=${window.location.pathname}`, {
+            ref: x,
+            inView: y
+          } = (0, q.cD)({
             threshold: .6
-          }), [y, N] = (0, o.useState)(!1);
+          }), [w, N] = (0, c.useState)(!1);
           let j;
-          if ((0, o.useEffect)((() => {
-              x && !y && (h({
+          if ((0, c.useEffect)((() => {
+              y && !w && (b({
                 event: "page_section_impression",
                 event_action: "impression",
                 event_category: "page_section",
                 event_label: "callout section",
-                element_placement: `callout section - ${_?.sectionName??_?._memoq?.header}`
+                element_placement: `callout section - ${h?.sectionName??h?._memoq?.header}`
               }), N(!0))
-            }), [x]), !t && !a) return null;
+            }), [y]), !t && !a) return null;
           switch (s) {
             case "vote":
               if (!k) {
-                j = (0, w.jsx)(G, {
+                j = (0, g.jsx)(T, {
                   to: v,
-                  className: me.calloutButton,
-                  onClick: g ? () => h({
-                    ...g
+                  className: Y.calloutButton,
+                  onClick: f ? () => b({
+                    ...f
                   }) : () => {},
                   children: "Log In"
                 });
                 break
               }
-              j = (0, w.jsx)(ue, {
+              j = (0, g.jsx)(K, {
                 foreign_id: n,
-                foreign_type: c
+                foreign_type: o
               });
               break;
             case "button":
-              r && i && (j = (0, w.jsx)(G, {
+              r && i && (j = (0, g.jsx)(T, {
                 to: i,
-                className: me.calloutButton,
-                onClick: g ? () => h({
-                  ...g
+                className: Y.calloutButton,
+                onClick: f ? () => b({
+                  ...f
                 }) : () => {},
                 children: r
               }));
               break;
             case "link":
-              r && i && (j = (0, w.jsx)(ge, {
+              r && i && (j = (0, g.jsx)(Q, {
                 action_text: r,
                 link: i,
-                trackingData: g
+                trackingData: f
               }));
               break;
             default:
               j = null
           }
-          return (0, w.jsx)("div", {
-            className: `${me.calloutContainer} ${l||""}`,
-            ref: b,
-            children: (0, w.jsxs)("div", {
-              className: me.calloutSection,
-              children: [(0, w.jsxs)("div", {
-                className: [me.calloutHeaders, j ? me.calloutHeaderMargins : ""].join(" "),
-                children: [t && (0, w.jsx)("h2", {
-                  className: me.calloutHeader,
-                  children: p(t)
-                }), a && (0, w.jsx)("h3", {
-                  className: me.calloutSubheader,
-                  children: p(a)
+          return (0, g.jsx)("div", {
+            className: `${Y.calloutContainer} ${l||""}`,
+            ref: x,
+            children: (0, g.jsxs)("div", {
+              className: Y.calloutSection,
+              children: [(0, g.jsxs)("div", {
+                className: [Y.calloutHeaders, j ? Y.calloutHeaderMargins : ""].join(" "),
+                children: [t && (0, g.jsx)("h2", {
+                  className: Y.calloutHeader,
+                  children: _(t)
+                }), a && (0, g.jsx)("h3", {
+                  className: Y.calloutSubheader,
+                  children: _(a)
                 })]
-              }), (0, w.jsxs)("div", {
-                className: me.actionBlock,
-                children: [j, d && (0, w.jsx)(fe, {
+              }), (0, g.jsxs)("div", {
+                className: Y.actionBlock,
+                children: [j, d && (0, g.jsx)(Z, {
                   helperText: d,
                   linkText: m,
                   link: u,
-                  trackingData: f
+                  trackingData: p
                 })]
               })]
             })
           })
         }));
-      var _e = a(30300),
-        ke = a(44236),
-        he = a.n(ke);
-      const ve = e => {
+      var ee = a(4928),
+        te = a.n(ee),
+        ae = a(44236),
+        se = a.n(ae);
+      const re = e => {
           let {
             isMulti: t,
             allowSelectAll: a,
             label: s,
             miscProps: r
           } = e;
-          const [i, n] = (0, o.useState)(""), c = (0, o.useMemo)((() => he()().getData()), []);
-          return (0, w.jsx)(_e.cp, {
+          const [i, n] = (0, c.useState)(""), o = (0, c.useMemo)((() => se()().getData()), []);
+          return (0, g.jsx)(te(), {
             unstyled: !0,
             value: i,
             isMulti: t,
             allowSelectAll: a,
-            options: c,
+            options: o,
             placeholder: s,
             onChange: e => {
               return t = e?.target?.value, void n(t);
@@ -3349,7 +3159,7 @@ _global.SENTRY_RELEASE = {
             ...r
           })
         },
-        be = e => {
+        ie = e => {
           let {
             cookieName: t,
             cookieValue: a,
@@ -3367,7 +3177,7 @@ _global.SENTRY_RELEASE = {
             e && t && (document.cookie = `${e}=${t}; domain=${(()=>{const e=window.location.hostname.split(".");return e.slice(e.length-2).join(".")})()}; path=/;`)
           })(t, n), i === a || n === a ? s : r
         },
-        xe = {
+        ne = {
           ps: "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/1506c5bba61fa270f73c874e3d60a94f.svg",
           ps3: "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/d118a14a73ce72b4687d9eb69724f4d2.svg",
           ps4: "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/3f9f55567df4006813f8bf50ad383ea0.svg",
@@ -3384,54 +3194,54 @@ _global.SENTRY_RELEASE = {
           questionMark: "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/e6833fa9baf4a5382bdd84b0b7d2c03f.svg",
           default: ""
         },
-        ye = e => xe[e] || null,
-        we = {
-          pillBtn: "rockstargames-sites-rockstar-tvbf9c11ff862c409ecb412254932a66d0",
-          selected: "rockstargames-sites-rockstar-tve07887131c72b6346c408895888f4fa7",
-          "clr-button": "rockstargames-sites-rockstar-tveb57c2501d6b6fff19ea12014712acae",
-          lgMax: "rockstargames-sites-rockstar-tve8361180f27f9c36731c815805c69094",
-          smMax: "rockstargames-sites-rockstar-tvc392730b2e06f70a3a1bd646684859e8",
-          cta: "rockstargames-sites-rockstar-tvbc76de01fdd1260e254c482984d2a924",
-          label: "rockstargames-sites-rockstar-tvb81011c72b601075ebe54d7ceaa7d2d8",
-          primary: "rockstargames-sites-rockstar-tvdbcf41d5c23e0eaf5089021f4d41c121",
-          btnContent: "rockstargames-sites-rockstar-tvf5e832587747dc414e10ab8e0bd843a9",
-          btnIcon: "rockstargames-sites-rockstar-tvcb0ad8d8dd93218dc12091b883767967",
-          xbox: "rockstargames-sites-rockstar-tvf591c5444c08121b0514f0c675da1479",
-          xboxone: "rockstargames-sites-rockstar-tve5124beff89c5b4093a4029a9fee3367",
-          xboxseriesxs: "rockstargames-sites-rockstar-tve52c94654eb462a8e65aa7607f5e21b5",
-          ps: "rockstargames-sites-rockstar-tvc53b78d3d062ee8d58f63a0acb1df137",
-          ps4: "rockstargames-sites-rockstar-tvf4a27aba1505f555d7cd8c920645245a",
-          ps5: "rockstargames-sites-rockstar-tvb5826d3700572b9bf36874e34d5c2a22",
-          pc: "rockstargames-sites-rockstar-tvc7ee0cfc54be00a8b152c47997ce76ac",
-          switch: "rockstargames-sites-rockstar-tva9b276d1c119e9cd14df54c4459197b0",
-          googleplay: "rockstargames-sites-rockstar-tva4ccd0de63b104d4aa48c8c3176618f3",
-          platformIcon: "rockstargames-sites-rockstar-tvc4ab0a89b65025cfe63b851116fb3a32",
-          lgMin: "rockstargames-sites-rockstar-tvc4a99972e5e512395e6fca5beaec1904",
-          applestore: "rockstargames-sites-rockstar-tva13111cbe8acbd75f62da1c53de2c3df",
-          icon: "rockstargames-sites-rockstar-tvc7a3f1a29594b307606d15e6827f63f9",
-          "icon-left": "rockstargames-sites-rockstar-tvbd623c6039c3f4122936775ed4214bd4",
-          "icon-right": "rockstargames-sites-rockstar-tvc79040e66c1f48e302291d8cf1335742",
-          disabled: "rockstargames-sites-rockstar-tvd87326174de12b895401f738a23b177a"
+        ce = e => ne[e] || null,
+        oe = {
+          pillBtn: "rockstargames-sites-careersbf9c11ff862c409ecb412254932a66d0",
+          selected: "rockstargames-sites-careerse07887131c72b6346c408895888f4fa7",
+          "clr-button": "rockstargames-sites-careerseb57c2501d6b6fff19ea12014712acae",
+          lgMax: "rockstargames-sites-careerse8361180f27f9c36731c815805c69094",
+          smMax: "rockstargames-sites-careersc392730b2e06f70a3a1bd646684859e8",
+          cta: "rockstargames-sites-careersbc76de01fdd1260e254c482984d2a924",
+          label: "rockstargames-sites-careersb81011c72b601075ebe54d7ceaa7d2d8",
+          primary: "rockstargames-sites-careersdbcf41d5c23e0eaf5089021f4d41c121",
+          btnContent: "rockstargames-sites-careersf5e832587747dc414e10ab8e0bd843a9",
+          btnIcon: "rockstargames-sites-careerscb0ad8d8dd93218dc12091b883767967",
+          xbox: "rockstargames-sites-careersf591c5444c08121b0514f0c675da1479",
+          xboxone: "rockstargames-sites-careerse5124beff89c5b4093a4029a9fee3367",
+          xboxseriesxs: "rockstargames-sites-careerse52c94654eb462a8e65aa7607f5e21b5",
+          ps: "rockstargames-sites-careersc53b78d3d062ee8d58f63a0acb1df137",
+          ps4: "rockstargames-sites-careersf4a27aba1505f555d7cd8c920645245a",
+          ps5: "rockstargames-sites-careersb5826d3700572b9bf36874e34d5c2a22",
+          pc: "rockstargames-sites-careersc7ee0cfc54be00a8b152c47997ce76ac",
+          switch: "rockstargames-sites-careersa9b276d1c119e9cd14df54c4459197b0",
+          googleplay: "rockstargames-sites-careersa4ccd0de63b104d4aa48c8c3176618f3",
+          platformIcon: "rockstargames-sites-careersc4ab0a89b65025cfe63b851116fb3a32",
+          lgMin: "rockstargames-sites-careersc4a99972e5e512395e6fca5beaec1904",
+          applestore: "rockstargames-sites-careersa13111cbe8acbd75f62da1c53de2c3df",
+          icon: "rockstargames-sites-careersc7a3f1a29594b307606d15e6827f63f9",
+          "icon-left": "rockstargames-sites-careersbd623c6039c3f4122936775ed4214bd4",
+          "icon-right": "rockstargames-sites-careersc79040e66c1f48e302291d8cf1335742",
+          disabled: "rockstargames-sites-careersd87326174de12b895401f738a23b177a"
         };
-      var Ne = a(89772),
-        je = a.n(Ne);
-      const Se = e => {
+      var le = a(89772),
+        de = a.n(le);
+      const me = e => {
           let {
             platform: t = "",
             altText: a
           } = e;
-          const s = t ? ye(t) : null,
-            r = s ? (0, w.jsx)("img", {
-              className: we.platformIcon,
+          const s = t ? ce(t) : null,
+            r = s ? (0, g.jsx)("img", {
+              className: oe.platformIcon,
               src: s,
               alt: a
             }) : null;
-          return (0, w.jsx)("span", {
-            className: [we.btnContent, we.platformButton].join(" "),
+          return (0, g.jsx)("span", {
+            className: [oe.btnContent, oe.platformButton].join(" "),
             children: r
           })
         },
-        Te = e => {
+        ue = e => {
           let {
             children: t,
             href: a,
@@ -3439,20 +3249,20 @@ _global.SENTRY_RELEASE = {
             content: r,
             variant: i = null,
             size: n = "medium",
-            icon: c,
+            icon: o,
             iconPosition: l = "none",
             iconStyle: d,
-            badge: m,
-            badgeStyle: u,
-            platformItem: g,
-            gtm: f = {},
-            disabled: p,
-            reloadDocument: _ = !1,
-            className: k
+            badge: u,
+            badgeStyle: f,
+            platformItem: p,
+            gtm: _ = {},
+            disabled: h,
+            reloadDocument: k = !1,
+            className: b
           } = e;
           const {
-            track: h
-          } = (0, se.useGtmTrack)(), v = (0, ae.useDataLayer)(), b = r ?? t, x = (0, ae.findPlatform)(g)?.friendlyName, y = (0, o.useMemo)((() => {
+            track: v
+          } = (0, R.useGtmTrack)(), x = (0, F.useDataLayer)(), y = r ?? t, w = (0, F.findPlatform)(p)?.friendlyName, N = (0, c.useMemo)((() => {
             const e = window.location.hostname;
             let t;
             try {
@@ -3461,76 +3271,76 @@ _global.SENTRY_RELEASE = {
               t = e
             }
             return e === t
-          }), [a]), N = (0, o.useCallback)((() => {
-            p || h({
+          }), [a]), j = (0, c.useCallback)((() => {
+            h || v({
               event: "cta_other",
-              text: b ?? void 0,
-              ...v,
-              ...f,
+              text: y ?? void 0,
+              ...x,
+              ..._,
               link_url: a ?? void 0
             })
-          }), [f, a, v]), j = () => c ? (0, w.jsx)("span", {
-            className: [we.icon, `icon-${l}`].join(" "),
+          }), [_, a, x]), S = () => o ? (0, g.jsx)("span", {
+            className: [oe.icon, `icon-${l}`].join(" "),
             style: d,
-            children: (0, w.jsx)("img", {
-              className: we.btnIcon,
-              src: ye(c) || "",
-              alt: `${c} icon`
+            children: (0, g.jsx)("img", {
+              className: oe.btnIcon,
+              src: ce(o) || "",
+              alt: `${o} icon`
             })
           }) : null;
-          return (0, w.jsx)(C.Link, {
+          return (0, g.jsx)(m.Link, {
             to: a,
-            target: y ? "_self" : "_blank",
-            className: je()(we.cta, "platform" === i && g ? we[g] : "", p ? we.disabled : "", k),
+            target: N ? "_self" : "_blank",
+            className: de()(oe.cta, "platform" === i && p ? oe[p] : "", h ? oe.disabled : "", b),
             style: s,
             "data-variant": i,
             "data-size": n,
-            onClick: N,
-            "aria-label": b,
-            reloadDocument: _,
-            children: "platform" === i && g ? (0, w.jsx)(Se, {
-              platform: g,
-              altText: x || b
-            }) : (0, w.jsxs)("div", {
-              className: we.btnContent,
-              children: ["left" === l && j(), (0, w.jsx)("span", {
-                className: we.label,
-                children: b
-              }), "right" === l && j(), m ? (0, w.jsx)("span", {
-                className: we.badge,
-                style: u,
-                children: m
+            onClick: j,
+            "aria-label": y,
+            reloadDocument: k,
+            children: "platform" === i && p ? (0, g.jsx)(me, {
+              platform: p,
+              altText: w || y
+            }) : (0, g.jsxs)("div", {
+              className: oe.btnContent,
+              children: ["left" === l && S(), (0, g.jsx)("span", {
+                className: oe.label,
+                children: y
+              }), "right" === l && S(), u ? (0, g.jsx)("span", {
+                className: oe.badge,
+                style: f,
+                children: u
               }) : null]
             })
           })
         };
-      var Ce = a(45652);
-      const Me = "rockstargames-sites-rockstar-tveb64520e04e486931cd65dc5b3fa61e8",
-        Ie = e => {
+      var ge = a(45652);
+      const fe = "rockstargames-sites-careerseb64520e04e486931cd65dc5b3fa61e8",
+        pe = e => {
           let {
             alt: t,
             className: s,
             src: r,
             style: i
           } = e;
-          const [n, o] = (0, ae.usePreloadImg)(r);
-          let c = r;
-          !1 === n && ("rockstargames-sites-rockstar-tvee609f31f3685766122c2c6fc0ef0710" === s && (c = a(61820)), c = a(43976));
+          const [n, c] = (0, F.usePreloadImg)(r);
+          let o = r;
+          !1 === n && ("rockstargames-sites-careersee609f31f3685766122c2c6fc0ef0710" === s && (o = a(61820)), o = a(43976));
           const {
             width: l,
             height: d
-          } = o, m = {
+          } = c, m = {
             "--aspect-ratio": Number.isNaN(l / d) ? "" : l / d,
             ...i
           };
-          return (0, w.jsx)("img", {
-            src: c,
+          return (0, g.jsx)("img", {
+            src: o,
             className: s ?? "",
             alt: t,
             style: m
           })
         },
-        Ee = e => {
+        _e = e => {
           let {
             className: t,
             style: s = {},
@@ -3538,57 +3348,57 @@ _global.SENTRY_RELEASE = {
             imageStyle: i = {}
           } = e, {
             alt: n,
-            src: o
-          } = (0, Ce.useImageParser)(r);
+            src: c
+          } = (0, ge.useImageParser)(r);
           const {
-            isMobile: c
-          } = (0, ae.useWindowResize)();
-          return o.desktop || o.mobile || (n = "", o = {
+            isMobile: o
+          } = (0, F.useWindowResize)();
+          return c.desktop || c.mobile || (n = "", c = {
             mobile: a(61820),
             desktop: a(43976)
-          }), (0, w.jsx)("div", {
-            className: r.frame ? `${r.frame} ${Me}` : Me,
+          }), (0, g.jsx)("div", {
+            className: r.frame ? `${r.frame} ${fe}` : fe,
             style: s,
-            children: (0, w.jsx)(Ie, {
+            children: (0, g.jsx)(pe, {
               style: {
                 ...i,
                 ...r?.style
               },
-              src: c ? o.mobile || o.desktop : o?.desktop || o?.mobile,
+              src: o ? c.mobile || c.desktop : c?.desktop || c?.mobile,
               alt: n,
               className: t
             })
           })
         };
-      var Le = a(8560),
-        ze = a.n(Le);
-      const Pe = {
-          pillBtn: "rockstargames-sites-rockstar-tva89792e50dfe5470a67f42b9e143c824",
-          selected: "rockstargames-sites-rockstar-tvbcce8ac50552b225f30d185d876a3e14",
-          grid: "rockstargames-sites-rockstar-tvac295ed5b9cb441ed17843b34e83ea17",
-          itemList: "rockstargames-sites-rockstar-tvcaf5589ddeca00ed09213e547674b1f3",
-          gtaplus: "rockstargames-sites-rockstar-tvb291112adcf994a0f6acadd86f73b78a",
-          rdo: "rockstargames-sites-rockstar-tvd146e8f862baefb60e91be5aa3c17b6e",
-          noImg: "rockstargames-sites-rockstar-tvba9b5ae08642b0213a3f04b3db9a9dac",
-          gtao: "rockstargames-sites-rockstar-tvb6f2bdfd6a1d57b7ce840f7a56cc510b",
-          custom: "rockstargames-sites-rockstar-tvaf89164a043648d1464686ff13363ee4",
-          yellow: "rockstargames-sites-rockstar-tvd244b17b74fc46269e8a106a99ab0f87",
-          hotPink: "rockstargames-sites-rockstar-tvd90b28503318563cfd6059146d1fb6b6",
-          red: "rockstargames-sites-rockstar-tvc3f8a8706901874d906f94c626be3c1e",
-          turquoise: "rockstargames-sites-rockstar-tvfe2ec36e92e2bb4d453fdc4b05966418",
-          purple: "rockstargames-sites-rockstar-tvf5f7baf5b56f5b2ada053a93392bbf7a",
-          teal: "rockstargames-sites-rockstar-tvf4a229f41cd20f181d810c311416e3f2",
-          blue: "rockstargames-sites-rockstar-tvf6f689d687bcd482ea2cd2990fd66878",
-          green: "rockstargames-sites-rockstar-tvab270f1b4d3ad43e7bc51393b7c5c089",
-          darkRed: "rockstargames-sites-rockstar-tvdc24ce78d962f3472b06955bf8855103",
-          darkBlue: "rockstargames-sites-rockstar-tvb354493baac7389b21b511009f287428",
-          goldenrod: "rockstargames-sites-rockstar-tve4a078efee11d24c64e93ccf0744a33f",
-          skull: "rockstargames-sites-rockstar-tvd4581a495de14e6762bb15debe5bb810"
+      var he = a(8560),
+        ke = a.n(he);
+      const be = {
+          pillBtn: "rockstargames-sites-careersa89792e50dfe5470a67f42b9e143c824",
+          selected: "rockstargames-sites-careersbcce8ac50552b225f30d185d876a3e14",
+          grid: "rockstargames-sites-careersac295ed5b9cb441ed17843b34e83ea17",
+          itemList: "rockstargames-sites-careerscaf5589ddeca00ed09213e547674b1f3",
+          gtaplus: "rockstargames-sites-careersb291112adcf994a0f6acadd86f73b78a",
+          rdo: "rockstargames-sites-careersd146e8f862baefb60e91be5aa3c17b6e",
+          noImg: "rockstargames-sites-careersba9b5ae08642b0213a3f04b3db9a9dac",
+          gtao: "rockstargames-sites-careersb6f2bdfd6a1d57b7ce840f7a56cc510b",
+          custom: "rockstargames-sites-careersaf89164a043648d1464686ff13363ee4",
+          yellow: "rockstargames-sites-careersd244b17b74fc46269e8a106a99ab0f87",
+          hotPink: "rockstargames-sites-careersd90b28503318563cfd6059146d1fb6b6",
+          red: "rockstargames-sites-careersc3f8a8706901874d906f94c626be3c1e",
+          turquoise: "rockstargames-sites-careersfe2ec36e92e2bb4d453fdc4b05966418",
+          purple: "rockstargames-sites-careersf5f7baf5b56f5b2ada053a93392bbf7a",
+          teal: "rockstargames-sites-careersf4a229f41cd20f181d810c311416e3f2",
+          blue: "rockstargames-sites-careersf6f689d687bcd482ea2cd2990fd66878",
+          green: "rockstargames-sites-careersab270f1b4d3ad43e7bc51393b7c5c089",
+          darkRed: "rockstargames-sites-careersdc24ce78d962f3472b06955bf8855103",
+          darkBlue: "rockstargames-sites-careersb354493baac7389b21b511009f287428",
+          goldenrod: "rockstargames-sites-careerse4a078efee11d24c64e93ccf0744a33f",
+          skull: "rockstargames-sites-careersd4581a495de14e6762bb15debe5bb810"
         },
         {
-          sanitize: Oe
-        } = ze(),
-        Ae = e => {
+          sanitize: ve
+        } = ke(),
+        xe = e => {
           let {
             list: t,
             string: a,
@@ -3596,80 +3406,80 @@ _global.SENTRY_RELEASE = {
             style: r,
             className: i,
             game: n,
-            noImg: c,
+            noImg: o,
             columns: l,
             mobileColumns: d
           } = e;
-          const [m, u] = (0, o.useState)(null), g = a ? a.split("_#_") : t;
-          return (0, o.useEffect)((() => {
+          const [m, u] = (0, c.useState)(null), f = a ? a.split("_#_") : t;
+          return (0, c.useEffect)((() => {
             u(t)
-          }), [t]), a || t ? l && m ? (0, w.jsx)("div", {
-            className: Pe.grid,
+          }), [t]), a || t ? l && m ? (0, g.jsx)("div", {
+            className: be.grid,
             style: {
               "--unordered-list-grid-column": l,
               "--unordered-list-grid-column-mobile": d ?? l
             },
-            children: (0, w.jsx)("ul", {
-              style: (0, ae.safeStyles)(r),
-              className: (0, U.classList)(Pe.itemList, Pe.noImg, Pe[s], Pe[n]),
-              children: m.map(((e, t) => (0, w.jsx)("li", {
+            children: (0, g.jsx)("ul", {
+              style: (0, F.safeStyles)(r),
+              className: (0, C.classList)(be.itemList, be.noImg, be[s], be[n]),
+              children: m.map(((e, t) => (0, g.jsx)("li", {
                 dangerouslySetInnerHTML: {
-                  __html: Oe(e.content)
+                  __html: ve(e.content)
                 }
               }, t)))
             })
-          }) : (0, w.jsx)("ul", {
-            style: (0, ae.safeStyles)(r),
-            className: (0, U.classList)(Pe.itemList, Pe.custom, c ? Pe.noImg : "", s ? Pe[s] : "", n ? Pe[n] : "", i ?? ""),
-            children: g.map(((e, t) => (0, w.jsx)("li", {
+          }) : (0, g.jsx)("ul", {
+            style: (0, F.safeStyles)(r),
+            className: (0, C.classList)(be.itemList, be.custom, o ? be.noImg : "", s ? be[s] : "", n ? be[n] : "", i ?? ""),
+            children: f.map(((e, t) => (0, g.jsx)("li", {
               dangerouslySetInnerHTML: {
-                __html: Oe(e?.content ?? e)
+                __html: ve(e?.content ?? e)
               }
             }, t)))
           }) : null
         },
-        De = {
-          hr: "rockstargames-sites-rockstar-tvf5cd418ab2ef6a89df6c95d2caa06ba8",
-          redLine: "rockstargames-sites-rockstar-tvf8b44ef9bbd3e7feb22bf79cc009b16e",
-          gtao: "rockstargames-sites-rockstar-tvc442f7264db862a7cca6d9a56dacc205"
+        ye = {
+          hr: "rockstargames-sites-careersf5cd418ab2ef6a89df6c95d2caa06ba8",
+          redLine: "rockstargames-sites-careersf8b44ef9bbd3e7feb22bf79cc009b16e",
+          gtao: "rockstargames-sites-careersc442f7264db862a7cca6d9a56dacc205"
         },
-        Be = e => {
+        we = e => {
           let {
             style: t,
             className: a = "",
             type: s
           } = e;
-          return (0, w.jsx)("div", {
+          return (0, g.jsx)("div", {
             style: t,
-            className: [De.hr, De[s], a].join(" ")
+            className: [ye.hr, ye[s], a].join(" ")
           })
         },
-        Ve = "rockstargames-sites-rockstar-tvfa6885b15a718acb24f48949c52e31f1",
-        Re = e => {
+        Ne = "rockstargames-sites-careersfa6885b15a718acb24f48949c52e31f1",
+        je = e => {
           let {
             to: t,
             children: a
           } = e;
-          return t ? (0, w.jsx)("a", {
+          return t ? (0, g.jsx)("a", {
             href: t,
             target: "_blank",
             rel: "noreferrer",
             children: a
           }) : a
         },
-        Fe = e => {
+        Se = e => {
           let {
             item: t,
             className: a = ""
           } = e;
-          return (0, w.jsxs)("div", {
-            className: (0, U.classList)("rockstargames-sites-rockstar-tvef9e6981551ac5ce250ebff8b18d7a29", a),
-            children: [t.title && (0, w.jsx)(Re, {
+          return (0, g.jsxs)("div", {
+            className: (0, C.classList)("rockstargames-sites-careersef9e6981551ac5ce250ebff8b18d7a29", a),
+            children: [t.title && (0, g.jsx)(je, {
               to: t?.href ?? t?.to,
-              children: (0, w.jsx)("h3", {
+              children: (0, g.jsx)("h3", {
                 children: t.title
               })
-            }), Array.isArray(t?.description?.content) ? t.description.content?.map(((e, t) => e?.unorderedList ? (0, w.jsx)(Ae, {
+            }), Array.isArray(t?.description?.content) ? t.description.content?.map(((e, t) => e?.unorderedList ? (0, g.jsx)(xe, {
               columns: e.unorderedList.columns ?? null,
               style: {
                 "--unordered-list-padding": "var(--grid-gap-static-sm)",
@@ -3677,38 +3487,38 @@ _global.SENTRY_RELEASE = {
               },
               noImg: !0,
               list: e.unorderedList.list
-            }, t) : e?.image ? (0, w.jsx)(Ee, {
+            }, t) : e?.image ? (0, g.jsx)(_e, {
               image: e.image,
               className: e?.className,
               ariaLabel: e.image?.ariaLabel
-            }, t) : e?.separator ? (0, w.jsx)("div", {
+            }, t) : e?.separator ? (0, g.jsx)("div", {
               style: {
                 margin: `${e.separator.spacing} 0`
               },
-              children: (0, w.jsx)(Be, {})
-            }, t) : (0, w.jsx)("p", {
-              children: (0, w.jsx)("span", {
-                className: Ve,
+              children: (0, g.jsx)(we, {})
+            }, t) : (0, g.jsx)("p", {
+              children: (0, g.jsx)("span", {
+                className: Ne,
                 dangerouslySetInnerHTML: {
                   __html: e
                 }
               })
-            }, t))) : (0, w.jsx)("span", {
-              className: Ve,
+            }, t))) : (0, g.jsx)("span", {
+              className: Ne,
               dangerouslySetInnerHTML: {
                 __html: t.description
               }
             })]
           })
         };
-      var $e = a(58936);
-      const Ge = e => {
+      var Te = a(58936);
+      const Ce = e => {
           let {
             children: t,
             ...a
           } = e;
-          const [s, r] = (0, o.useState)(!1);
-          return (0, w.jsx)($e.cR, {
+          const [s, r] = (0, c.useState)(!1);
+          return (0, g.jsx)(Te.cR, {
             ...a,
             onReady: () => {
               document.fonts.ready.then((() => {
@@ -3718,13 +3528,13 @@ _global.SENTRY_RELEASE = {
             children: t
           })
         },
-        Ue = {
-          badge: "rockstargames-sites-rockstar-tve279e2cebfa338f34b03fd732416e836",
-          badgeSizeUpdate: "rockstargames-sites-rockstar-tvd7362a3e27ccaad9d2aadd2f31691340",
-          badge2: "rockstargames-sites-rockstar-tvd697f4a5f7c876d5e540a96da1e0ca3a",
-          badge3: "rockstargames-sites-rockstar-tve1bba3cd4554abbb48a030af24bbada5"
+        Me = {
+          badge: "rockstargames-sites-careerse279e2cebfa338f34b03fd732416e836",
+          badgeSizeUpdate: "rockstargames-sites-careersd7362a3e27ccaad9d2aadd2f31691340",
+          badge2: "rockstargames-sites-careersd697f4a5f7c876d5e540a96da1e0ca3a",
+          badge3: "rockstargames-sites-careerse1bba3cd4554abbb48a030af24bbada5"
         },
-        He = e => {
+        Ie = e => {
           let {
             wrapper: t,
             children: a,
@@ -3733,7 +3543,7 @@ _global.SENTRY_RELEASE = {
           } = e;
           return r || s ? t(a) : a
         },
-        qe = e => {
+        Ee = e => {
           let {
             badge: t,
             badgeType: s,
@@ -3742,29 +3552,29 @@ _global.SENTRY_RELEASE = {
           } = e;
           const n = [];
           i ? t.split(i).map(((e, t) => n.push(e))) : n.push(t);
-          let o = 100;
-          return 2 == n.length && n[1].length < 4 && "off" !== n[1].toLowerCase() && 45, (0, w.jsxs)(He, {
+          let c = 100;
+          return 2 == n.length && n[1].length < 4 && "off" !== n[1].toLowerCase() && 45, (0, g.jsxs)(Ie, {
             splitter: i,
             role: r,
-            wrapper: e => (0, w.jsx)("div", {
-              className: `${Ue.badge} ${s?Ue[s]:""} `,
+            wrapper: e => (0, g.jsx)("div", {
+              className: `${Me.badge} ${s?Me[s]:""} `,
               children: e
             }),
-            children: [(0, w.jsx)(w.Fragment, {
-              children: r && (0, w.jsx)(Ee, {
+            children: [(0, g.jsx)(g.Fragment, {
+              children: r && (0, g.jsx)(_e, {
                 image: {
                   alt: r,
                   desktop: a(6572)(`./${r}.png`)
                 }
               })
-            }), (0, w.jsx)(Ge, {
-              className: `${i||r?"":Ue.badge} ${s?Ue[s]:""}`,
+            }), (0, g.jsx)(Ce, {
+              className: `${i||r?"":Me.badge} ${s?Me[s]:""}`,
               min: 8,
               max: 1e3,
               mode: i || r ? "single" : "multi",
               children: n[0]
-            }), (0, w.jsx)(w.Fragment, {
-              children: n.shift() && i && n.length >= 1 && (0, w.jsx)(Ge, {
+            }), (0, g.jsx)(g.Fragment, {
+              children: n.shift() && i && n.length >= 1 && (0, g.jsx)(Ce, {
                 min: 8,
                 max: 1e3,
                 mode: "single",
@@ -3774,58 +3584,59 @@ _global.SENTRY_RELEASE = {
             })]
           }, "badge-wrapper")
         },
-        We = "rockstargames-sites-rockstar-tvc63cfb461217f059c8c25eec09602b30",
-        Xe = e => {
+        Le = "rockstargames-sites-careersc63cfb461217f059c8c25eec09602b30",
+        ze = e => {
           let {
             color: t
           } = e;
-          return (0, w.jsxs)("div", {
-            className: "rockstargames-sites-rockstar-tva481f47ab7e8af4042a665fab5aea27c",
+          return (0, g.jsxs)("div", {
+            className: "rockstargames-sites-careersa481f47ab7e8af4042a665fab5aea27c",
             style: {
               "--loader-color": t
             },
-            children: [(0, w.jsx)("div", {
-              className: We
-            }), (0, w.jsx)("div", {
-              className: We
-            }), (0, w.jsx)("div", {
-              className: We
+            children: [(0, g.jsx)("div", {
+              className: Le
+            }), (0, g.jsx)("div", {
+              className: Le
+            }), (0, g.jsx)("div", {
+              className: Le
             })]
           })
         };
-      var Ye = a(43924);
-      const Ke = {
-          dropdownWrapper: "rockstargames-sites-rockstar-tvb951912c02de0e5e881fedd391d04810",
-          items: "rockstargames-sites-rockstar-tvb0a8f220641417f889d4fd6039fe6bac",
-          open: "rockstargames-sites-rockstar-tvf5eb88111734e6e70d34ef2b095c44f6",
-          opener: "rockstargames-sites-rockstar-tvecb577af64f747d0d39cf03939ee3c73",
-          secondary: "rockstargames-sites-rockstar-tvb64c3515fcd91f6b84410bd14640da81"
+      var Pe = a(36960),
+        Oe = a.n(Pe);
+      const Ae = {
+          dropdownWrapper: "rockstargames-sites-careersb951912c02de0e5e881fedd391d04810",
+          items: "rockstargames-sites-careersb0a8f220641417f889d4fd6039fe6bac",
+          open: "rockstargames-sites-careersf5eb88111734e6e70d34ef2b095c44f6",
+          opener: "rockstargames-sites-careersecb577af64f747d0d39cf03939ee3c73",
+          secondary: "rockstargames-sites-careersb64c3515fcd91f6b84410bd14640da81"
         },
-        Qe = e => {
+        De = e => {
           let {
             children: t,
             className: a,
             title: s
           } = e;
-          const [r, i] = (0, o.useState)(!1);
-          return (0, w.jsx)(Ye.cp, {
+          const [r, i] = (0, c.useState)(!1);
+          return (0, g.jsx)(Oe(), {
             disabled: !r,
-            children: (0, w.jsxs)("div", {
-              className: [Ke.dropdownWrapper, r ? Ke.open : "", void 0 !== a ? a : ""].join(" "),
-              children: [(0, w.jsx)("button", {
-                className: Ke.opener,
+            children: (0, g.jsxs)("div", {
+              className: [Ae.dropdownWrapper, r ? Ae.open : "", void 0 !== a ? a : ""].join(" "),
+              children: [(0, g.jsx)("button", {
+                className: Ae.opener,
                 onClick: () => i(!r),
                 children: s
-              }), r && (0, w.jsx)("div", {
-                className: Ke.items,
+              }), r && (0, g.jsx)("div", {
+                className: Ae.items,
                 onClick: () => i(!1),
                 children: t
               })]
             })
           })
         };
-      var Ze = a(95356);
-      const Je = e => {
+      var Be = a(95356);
+      const Ve = e => {
           let {
             children: t,
             context: a = null,
@@ -3833,12 +3644,12 @@ _global.SENTRY_RELEASE = {
             image: r = {},
             style: i = {},
             template: n = null,
-            theme: o = null,
-            reversedOnMobile: c = !1,
+            theme: c = null,
+            reversedOnMobile: o = !1,
             className: l = "",
             id: d = null
           } = e;
-          const m = (0, Ce.useImageParser)(r ?? {}),
+          const m = (0, ge.useImageParser)(r ?? {}),
             u = {
               ...i
             };
@@ -3854,56 +3665,56 @@ _global.SENTRY_RELEASE = {
               u.background = `linear-gradient(180deg, ${s}, transparent ${e}%, transparent ${100-e}%, ${i}), url(${m?.src?.desktop}) ${t} ${a}`
             }
           }
-          return (0, w.jsx)("div", {
+          return (0, g.jsx)("div", {
             id: d,
-            className: (0, Ze.classList)("rockstargames-sites-rockstar-tvf42b4606ed4a5b16b7647ad7b7eb229d", c ? "rockstargames-sites-rockstar-tvb00444166ce6346d7ca364a75a335ecc" : "", l),
+            className: (0, Be.classList)("rockstargames-sites-careersf42b4606ed4a5b16b7647ad7b7eb229d", o ? "rockstargames-sites-careersb00444166ce6346d7ca364a75a335ecc" : "", l),
             "data-game": "community" === n ? null : s,
-            style: (0, ae.safeStyles)(u),
+            style: (0, F.safeStyles)(u),
             "data-context": a,
             "data-template": n,
-            "data-theme": o,
+            "data-theme": c,
             children: t
           })
         },
-        et = e => {
+        Fe = e => {
           let {
             caption: t,
             children: a,
             ...s
           } = e;
-          return t ? (0, w.jsxs)("figure", {
+          return t ? (0, g.jsxs)("figure", {
             ...s,
-            children: [a, (0, w.jsx)("figcaption", {
+            children: [a, (0, g.jsx)("figcaption", {
               dangerouslySetInnerHTML: {
                 __html: t
               }
             })]
           }) : a
         },
-        tt = e => {
+        Re = e => {
           let {
             componentTitle: t,
             type: a,
             items: s
           } = e;
-          return s?.length ? (0, w.jsx)("div", {
-            className: "rockstargames-sites-rockstar-tvd393ab6eb68d416b116b6281abdb5e14",
+          return s?.length ? (0, g.jsx)("div", {
+            className: "rockstargames-sites-careersd393ab6eb68d416b116b6281abdb5e14",
             type: a,
-            children: (0, w.jsxs)(Je, {
-              children: [t && (0, w.jsx)("h3", {
+            children: (0, g.jsxs)(Ve, {
+              children: [t && (0, g.jsx)("h3", {
                 children: t
-              }), (0, w.jsx)(Je, {
-                className: "rockstargames-sites-rockstar-tved3ee31cb8e357d795886157f95a742a",
+              }), (0, g.jsx)(Ve, {
+                className: "rockstargames-sites-careersed3ee31cb8e357d795886157f95a742a",
                 children: s.map(((e, t) => {
-                  return e?.embed ? (0, w.jsx)(et, {
+                  return e?.embed ? (0, g.jsx)(Fe, {
                     caption: e?.caption,
-                    children: (0, w.jsx)("div", {
-                      className: "rockstargames-sites-rockstar-tvdcf1c30612026a517f59af64d8703bc4",
+                    children: (0, g.jsx)("div", {
+                      className: "rockstargames-sites-careersdcf1c30612026a517f59af64d8703bc4",
                       dangerouslySetInnerHTML: {
                         __html: (a = e.embed, a.replace(/&gt;/g, ">").replace(/&lt;/g, "<"))
                       }
                     }, `${e?.key??t}_div`)
-                  }, e?.key ?? t) : e?.text ? (0, w.jsx)("p", {
+                  }, e?.key ?? t) : e?.text ? (0, g.jsx)("p", {
                     dangerouslySetInnerHTML: {
                       __html: e.text
                     }
@@ -3914,18 +3725,18 @@ _global.SENTRY_RELEASE = {
             })
           }) : null
         };
-      var at = a(21388);
-      const st = {
+      var $e = a(21388);
+      const Ue = {
           type: "spring",
           stiffness: 650,
           damping: 45
         },
-        rt = {
+        Ge = {
           ease: "easeOut",
           duration: .9,
           delay: .3
         },
-        it = {
+        He = {
           open: {
             opacity: 0,
             transition: {
@@ -3935,16 +3746,16 @@ _global.SENTRY_RELEASE = {
           },
           closed: {
             opacity: 1,
-            transition: rt
+            transition: Ge
           }
         },
-        nt = {
+        qe = {
           open: {
             opacity: 1,
             display: "grid",
             height: "auto",
             transition: {
-              opacity: rt,
+              opacity: Ge,
               height: {
                 type: "spring",
                 stiffness: 425,
@@ -3960,14 +3771,14 @@ _global.SENTRY_RELEASE = {
                 ease: "easeOut",
                 duration: .1
               },
-              height: st
+              height: Ue
             },
             transitionEnd: {
               display: "none"
             }
           }
         },
-        ot = {
+        We = {
           open: {
             "--cta-border-color": "var(--white-15)",
             "--cta-background-color": "rgba(255,255,255,.1)",
@@ -3985,7 +3796,7 @@ _global.SENTRY_RELEASE = {
             "--cta-background-color-noBlur": "var(--black-15)",
             padding: "var(--foundry-global-spacing-dimensions-300) var(--foundry-global-spacing-dimensions-600)",
             gridGap: 0,
-            transition: st,
+            transition: Ue,
             transitionEnd: {
               "--btn-hover-bg-color": "var(--white-100)",
               "--btn-hover-bg-color-noBlur": "var(--white-100)",
@@ -3994,28 +3805,28 @@ _global.SENTRY_RELEASE = {
             }
           }
         },
-        ct = {
-          pillBtn: "rockstargames-sites-rockstar-tvba37d7130b54bd53bd309b0cd04717ff",
-          selected: "rockstargames-sites-rockstar-tvc9c0bba52c010c4e3571f2702eef944b",
-          container: "rockstargames-sites-rockstar-tvbfcd1a0671c127c9135d8c2feac75c34",
-          content: "rockstargames-sites-rockstar-tva1cf623c9dd51dd05772a395d8311dac",
-          expandedButton: "rockstargames-sites-rockstar-tvf692df3414cf4d587df1739702e52732",
-          unexpandedButton: "rockstargames-sites-rockstar-tvba4683b82274b0f8ca98f97fd2b0a1c9",
-          buttonText: "rockstargames-sites-rockstar-tvc2fb2fb5ec39a5c3b3c14ee6c0505b53",
-          expandedArea: "rockstargames-sites-rockstar-tvdd25aa78f935c7d4cafdb1c8bc6d7932",
-          closeButton: "rockstargames-sites-rockstar-tvc559c930e0a5a7caa72b3de9a3362a0a",
-          platformButtons: "rockstargames-sites-rockstar-tvd6bfc47d3110920d77ea2e70dac9c898",
-          platformButton: "rockstargames-sites-rockstar-tvb04a9bd68b598682a5dbe99dd1a2f06d",
-          xbox: "rockstargames-sites-rockstar-tvfe4a687dfc69ef746fcbe4184c7a9574",
-          xboxone: "rockstargames-sites-rockstar-tvb1f46a1ff640d7398e7736e814a5ed8f",
-          xboxseriesxs: "rockstargames-sites-rockstar-tve23b6f1412ea1ecb8a616b4f25d2888d",
-          ps: "rockstargames-sites-rockstar-tve0b107bda3c03c1e82c94195bfbc055b",
-          ps4: "rockstargames-sites-rockstar-tvdcf3078cbde57db42e66e6ba4c269fbe",
-          ps5: "rockstargames-sites-rockstar-tve047116842d7619f0e04a3c9b6dbec13",
-          pc: "rockstargames-sites-rockstar-tvdaa32798c37b9055cd280b838972e63e",
-          switch: "rockstargames-sites-rockstar-tvae7bc564778d8af6cf5f8a0491ef7dc8"
+        Xe = {
+          pillBtn: "rockstargames-sites-careersba37d7130b54bd53bd309b0cd04717ff",
+          selected: "rockstargames-sites-careersc9c0bba52c010c4e3571f2702eef944b",
+          container: "rockstargames-sites-careersbfcd1a0671c127c9135d8c2feac75c34",
+          content: "rockstargames-sites-careersa1cf623c9dd51dd05772a395d8311dac",
+          expandedButton: "rockstargames-sites-careersf692df3414cf4d587df1739702e52732",
+          unexpandedButton: "rockstargames-sites-careersba4683b82274b0f8ca98f97fd2b0a1c9",
+          buttonText: "rockstargames-sites-careersc2fb2fb5ec39a5c3b3c14ee6c0505b53",
+          expandedArea: "rockstargames-sites-careersdd25aa78f935c7d4cafdb1c8bc6d7932",
+          closeButton: "rockstargames-sites-careersc559c930e0a5a7caa72b3de9a3362a0a",
+          platformButtons: "rockstargames-sites-careersd6bfc47d3110920d77ea2e70dac9c898",
+          platformButton: "rockstargames-sites-careersb04a9bd68b598682a5dbe99dd1a2f06d",
+          xbox: "rockstargames-sites-careersfe4a687dfc69ef746fcbe4184c7a9574",
+          xboxone: "rockstargames-sites-careersb1f46a1ff640d7398e7736e814a5ed8f",
+          xboxseriesxs: "rockstargames-sites-careerse23b6f1412ea1ecb8a616b4f25d2888d",
+          ps: "rockstargames-sites-careerse0b107bda3c03c1e82c94195bfbc055b",
+          ps4: "rockstargames-sites-careersdcf3078cbde57db42e66e6ba4c269fbe",
+          ps5: "rockstargames-sites-careerse047116842d7619f0e04a3c9b6dbec13",
+          pc: "rockstargames-sites-careersdaa32798c37b9055cd280b838972e63e",
+          switch: "rockstargames-sites-careersae7bc564778d8af6cf5f8a0491ef7dc8"
         },
-        lt = e => {
+        Ye = e => {
           let {
             buttonText: t = "",
             link: s = "",
@@ -4023,66 +3834,66 @@ _global.SENTRY_RELEASE = {
             target: i = null,
             onClick: n
           } = e;
-          const o = i ?? (s.startsWith(document.location.origin) ? "_self" : "_blank"),
-            c = [ct.platformButton, ct[r]].join(" "),
+          const c = i ?? (s.startsWith(document.location.origin) ? "_self" : "_blank"),
+            o = [Xe.platformButton, Xe[r]].join(" "),
             l = r ? a(13892)(`./${r}.svg`) : null,
-            d = (0, w.jsxs)(w.Fragment, {
-              children: [l ? (0, w.jsx)("img", {
+            d = (0, g.jsxs)(g.Fragment, {
+              children: [l ? (0, g.jsx)("img", {
                 src: l,
                 alt: t
-              }) : "", !l && (0, w.jsx)("div", {
-                className: ct.buttonText,
+              }) : "", !l && (0, g.jsx)("div", {
+                className: Xe.buttonText,
                 children: t
               })]
             });
-          return s.startsWith("http") ? (0, w.jsx)("a", {
+          return s.startsWith("http") ? (0, g.jsx)("a", {
             href: s,
-            className: c,
-            target: o,
+            className: o,
+            target: c,
             onClick: n,
             "aria-label": t,
             children: d
-          }) : (0, w.jsx)(C.NavLink, {
-            className: c,
+          }) : (0, g.jsx)(m.NavLink, {
+            className: o,
             onClick: n,
             to: s,
             "aria-label": t,
             children: d
           })
         },
-        dt = e => {
+        Ke = e => {
           let {
             variant: t,
             buttonText: s = "Subscribe",
             buttonClassName: r,
             className: i,
             children: n,
-            platformsAndLinks: c = [],
+            platformsAndLinks: o = [],
             trackingType: l = "buy",
             trackingParent: d,
             target: m = null,
             trackingOId: u = null
           } = e;
-          const [g, f] = (0, o.useState)(!1), {
-            track: p
-          } = (0, se.useGtmTrack)(), _ = (0, o.useRef)(null), k = (0, o.useRef)(g);
-          (0, o.useEffect)((() => {
-            k.current = g
-          }), [g]), (0, o.useEffect)((() => {
+          const [f, p] = (0, c.useState)(!1), {
+            track: _
+          } = (0, R.useGtmTrack)(), h = (0, c.useRef)(null), k = (0, c.useRef)(f);
+          (0, c.useEffect)((() => {
+            k.current = f
+          }), [f]), (0, c.useEffect)((() => {
             const e = e => {
-              k && !_?.current?.contains(e.target) && f(!1)
+              k && !h?.current?.contains(e.target) && p(!1)
             };
             return document.addEventListener("click", e), () => {
               document.removeEventListener("click", e)
             }
           }), []);
-          const h = e => {
+          const b = e => {
             let {
               href: t,
               platform: a
             } = e;
             return () => {
-              p({
+              _({
                 element_placement: d,
                 event: "cta_store_link",
                 link_url: t,
@@ -4090,30 +3901,30 @@ _global.SENTRY_RELEASE = {
               })
             }
           };
-          return (0, w.jsxs)("div", {
-            className: (0, U.classList)(ct.container, i),
-            children: [(0, w.jsx)(at.q.div, {
-              className: ct.content,
-              animate: g ? "open" : "close",
-              variants: it,
-              "aria-hidden": !!g,
+          return (0, g.jsxs)("div", {
+            className: (0, C.classList)(Xe.container, i),
+            children: [(0, g.jsx)($e.q.div, {
+              className: Xe.content,
+              animate: f ? "open" : "close",
+              variants: He,
+              "aria-hidden": !!f,
               children: n
-            }), (0, w.jsxs)(at.q.div, {
+            }), (0, g.jsxs)($e.q.div, {
               "data-variant": t,
-              className: je()(g ? ct.expandedButton : ct.unexpandedButton),
-              animate: g ? "open" : "closed",
-              variants: ot,
+              className: de()(f ? Xe.expandedButton : Xe.unexpandedButton),
+              animate: f ? "open" : "closed",
+              variants: We,
               initial: !1,
-              ref: _,
-              children: [(0, w.jsx)(at.q.button, {
-                className: je()(ct.buttonText, r),
-                "aria-expanded": g,
-                disabled: g,
-                ...!g && {
+              ref: h,
+              children: [(0, g.jsx)($e.q.button, {
+                className: de()(Xe.buttonText, r),
+                "aria-expanded": f,
+                disabled: f,
+                ...!f && {
                   onClick: () => {
-                    if (f(!g), !g) switch (l) {
+                    if (p(!f), !f) switch (l) {
                       case "select_platform":
-                        p({
+                        _({
                           element_placement: d,
                           event: "select_platform",
                           event_action: "select_platform",
@@ -4123,7 +3934,7 @@ _global.SENTRY_RELEASE = {
                         });
                         break;
                       case "link_account":
-                        p({
+                        _({
                           element_placement: d,
                           event: "cta_link_account",
                           event_action: "link_account",
@@ -4134,7 +3945,7 @@ _global.SENTRY_RELEASE = {
                         });
                         break;
                       case "buy":
-                        p({
+                        _({
                           element_placement: d,
                           event: "cta_buy",
                           event_action: "buy",
@@ -4144,7 +3955,7 @@ _global.SENTRY_RELEASE = {
                         });
                         break;
                       case "store_link":
-                        p({
+                        _({
                           element_placement: d,
                           event: "cta_store_link",
                           event_action: "store_link",
@@ -4154,7 +3965,7 @@ _global.SENTRY_RELEASE = {
                         });
                         break;
                       case "other":
-                        p({
+                        _({
                           element_placement: d,
                           event: "cta_other",
                           event_action: "other",
@@ -4166,33 +3977,33 @@ _global.SENTRY_RELEASE = {
                   }
                 },
                 children: "string" == typeof s ? s : "Subscribe"
-              }), (0, w.jsxs)(at.q.div, {
-                className: ct.expandedArea,
-                animate: g ? "open" : "closed",
-                variants: nt,
+              }), (0, g.jsxs)($e.q.div, {
+                className: Xe.expandedArea,
+                animate: f ? "open" : "closed",
+                variants: qe,
                 initial: !1,
-                "aria-hidden": !g,
-                children: [(0, w.jsx)("button", {
-                  className: ct.closeButton,
+                "aria-hidden": !f,
+                children: [(0, g.jsx)("button", {
+                  className: Xe.closeButton,
                   onClick: () => {
-                    f(!1), p({
+                    p(!1), _({
                       element_placement: d,
                       event: "cta_other",
                       text: "close expanding platform button"
                     })
                   },
                   "aria-label": "Close",
-                  children: (0, w.jsx)("img", {
+                  children: (0, g.jsx)("img", {
                     src: a(72428),
                     alt: "Close"
                   })
-                }), (0, w.jsx)("div", {
-                  className: ct.platformButtons,
-                  children: c.length ? c.map((e => (0, w.jsx)(lt, {
-                    buttonText: e.buttonText ?? (0, ae.findPlatform)(e.platform)?.friendlyName ?? "",
+                }), (0, g.jsx)("div", {
+                  className: Xe.platformButtons,
+                  children: o.length ? o.map((e => (0, g.jsx)(Ye, {
+                    buttonText: e.buttonText ?? (0, F.findPlatform)(e.platform)?.friendlyName ?? "",
                     link: e.href,
                     platform: e.platform,
-                    onClick: h(e),
+                    onClick: b(e),
                     target: m
                   }, `${e.key}-${e.href}-${e.platform}`))) : ""
                 })]
@@ -4200,43 +4011,43 @@ _global.SENTRY_RELEASE = {
             })]
           })
         },
-        mt = {
-          animateBox: "rockstargames-sites-rockstar-tve9374e74c542c1028a2068dfbd1e85a3",
-          fadeArea: "rockstargames-sites-rockstar-tva63de5cdf9849ac45a0f6b4f7617cfa5",
-          visible: "rockstargames-sites-rockstar-tvd7458685114194d602f94e2581de0f08",
-          barGrow: "rockstargames-sites-rockstar-tvb0f4d843b626e3741c9dd38fcb3f56b0",
-          bar: "rockstargames-sites-rockstar-tva4b99f54f3ce3987765143d8a151360a",
-          animateMe: "rockstargames-sites-rockstar-tvf9c3869a2a1e10490bdfbcb3ee89d7da"
+        Qe = {
+          animateBox: "rockstargames-sites-careerse9374e74c542c1028a2068dfbd1e85a3",
+          fadeArea: "rockstargames-sites-careersa63de5cdf9849ac45a0f6b4f7617cfa5",
+          visible: "rockstargames-sites-careersd7458685114194d602f94e2581de0f08",
+          barGrow: "rockstargames-sites-careersb0f4d843b626e3741c9dd38fcb3f56b0",
+          bar: "rockstargames-sites-careersa4b99f54f3ce3987765143d8a151360a",
+          animateMe: "rockstargames-sites-careersf9c3869a2a1e10490bdfbcb3ee89d7da"
         },
-        ut = e => {
+        Ze = e => {
           let {
             children: t,
             style: a
           } = e;
-          const s = (0, o.useRef)(null);
-          return (0, o.useEffect)((() => {
+          const s = (0, c.useRef)(null);
+          return (0, c.useEffect)((() => {
             new IntersectionObserver((e => {
               e.forEach((e => {
-                e.isIntersecting && e.target.classList.add([mt.visible])
+                e.isIntersecting && e.target.classList.add([Qe.visible])
               }))
             })).observe(s?.current)
-          }), []), (0, w.jsx)("div", {
+          }), []), (0, g.jsx)("div", {
             style: a,
-            className: [mt.fadeArea].join(" "),
+            className: [Qe.fadeArea].join(" "),
             ref: s,
             children: t
           })
         },
-        gt = {
-          gameSiteHeader: "rockstargames-sites-rockstar-tvcb7cada84679a7af263e1436675a518a",
-          activeNavItem: "rockstargames-sites-rockstar-tvaa4aa7ed96facb38ed09c72eededb418",
-          navHidden: "rockstargames-sites-rockstar-tvac1cb9d2005f287ed666d334f816f8c5",
-          navContent: "rockstargames-sites-rockstar-tve5abd79468866e31fdad2780b169f687",
-          headerNavOpen: "rockstargames-sites-rockstar-tvb98508d0923c5bb442c15772fbad9764",
-          headerLogo: "rockstargames-sites-rockstar-tve666ff4f0b91dfe78991244ac1a759a5",
-          bg: "rockstargames-sites-rockstar-tvcfc6fd456ca2f3e9db06f780f412660f"
+        Je = {
+          gameSiteHeader: "rockstargames-sites-careerscb7cada84679a7af263e1436675a518a",
+          activeNavItem: "rockstargames-sites-careersaa4aa7ed96facb38ed09c72eededb418",
+          navHidden: "rockstargames-sites-careersac1cb9d2005f287ed666d334f816f8c5",
+          navContent: "rockstargames-sites-careerse5abd79468866e31fdad2780b169f687",
+          headerNavOpen: "rockstargames-sites-careersb98508d0923c5bb442c15772fbad9764",
+          headerLogo: "rockstargames-sites-careerse666ff4f0b91dfe78991244ac1a759a5",
+          bg: "rockstargames-sites-careerscfc6fd456ca2f3e9db06f780f412660f"
         },
-        ft = e => {
+        et = e => {
           let {
             buttonText: t = null,
             gameOverrideStyles: a,
@@ -4244,45 +4055,45 @@ _global.SENTRY_RELEASE = {
             cta: r = "",
             game: i
           } = e;
-          const [n, c] = (0, o.useState)(!1), l = (0, z.useMutateState)(), {
+          const [n, o] = (0, c.useState)(!1), l = (0, h.useMutateState)(), {
             navHidden: d
-          } = (0, z.useState)();
-          return (0, o.useEffect)((() => {
+          } = (0, h.useState)();
+          return (0, c.useEffect)((() => {
             l({
               gameSiteNavOpen: n
             })
-          }), [n]), (0, o.useEffect)((() => {
+          }), [n]), (0, c.useEffect)((() => {
             const e = () => {
-              c(!1)
+              o(!1)
             };
             return document.addEventListener("click", e), () => document.removeEventListener("click", e)
-          }), []), (0, w.jsxs)("header", {
+          }), []), (0, g.jsxs)("header", {
             "data-game": i,
-            className: [gt.gameSiteHeader, n ? gt.headerNavOpen : "", d ? gt.navHidden : "", a.gameSiteHeader, n ? a.headerNavOpen : ""].join(" "),
-            children: [(0, w.jsx)("button", {
-              className: [gt.headerLogo, a.headerLogo].join(" "),
+            className: [Je.gameSiteHeader, n ? Je.headerNavOpen : "", d ? Je.navHidden : "", a.gameSiteHeader, n ? a.headerNavOpen : ""].join(" "),
+            children: [(0, g.jsx)("button", {
+              className: [Je.headerLogo, a.headerLogo].join(" "),
               onClick: e => {
-                c(!n), e.nativeEvent.stopImmediatePropagation()
+                o(!n), e.nativeEvent.stopImmediatePropagation()
               },
               type: "button",
               "aria-label": "Open Game Site Nav",
               dangerouslySetInnerHTML: {
                 __html: t
               }
-            }), (0, w.jsx)("div", {
-              className: gt.bg
-            }), (0, w.jsx)("nav", {
-              children: (0, w.jsx)("div", {
-                className: gt.navContent,
+            }), (0, g.jsx)("div", {
+              className: Je.bg
+            }), (0, g.jsx)("nav", {
+              children: (0, g.jsx)("div", {
+                className: Je.navContent,
                 children: s
               })
             }), r]
           })
         };
-      var pt = a(31403),
-        _t = a(79784),
-        kt = a.n(_t);
-      class ht extends o.Component {
+      var tt = a(31403),
+        at = a(73660),
+        st = a.n(at);
+      class rt extends c.Component {
         constructor(e) {
           super(e), this.state = {
             header: e.header ?? null
@@ -4296,28 +4107,28 @@ _global.SENTRY_RELEASE = {
           }
         }
         render() {
-          return this?.state?.error?.message ? (0, w.jsxs)("div", {
-            className: "rockstargames-sites-rockstar-tvf903c45f8ecc18bd55f702e202f3763a",
-            children: [(0, w.jsx)("h1", {
+          return this?.state?.error?.message ? (0, g.jsxs)("div", {
+            className: "rockstargames-sites-careersf903c45f8ecc18bd55f702e202f3763a",
+            children: [(0, g.jsx)("h1", {
               children: this.state.header ?? "An error occurred."
-            }), (0, w.jsx)("span", {
+            }), (0, g.jsx)("span", {
               children: this.state.error.message
             })]
           }) : this.props.children
         }
       }
-      const vt = function(e) {
+      const it = function(e) {
           let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
           return function(a) {
-            return (0, w.jsx)(ht, {
+            return (0, g.jsx)(rt, {
               header: t,
-              children: (0, w.jsx)(e, {
+              children: (0, g.jsx)(e, {
                 ...a
               })
             })
           }
         },
-        bt = e => {
+        nt = e => {
           let {
             prevRef: t,
             nextRef: a,
@@ -4325,16 +4136,16 @@ _global.SENTRY_RELEASE = {
             onPrevClicked: r,
             onNextKeyDown: i
           } = e;
-          return (0, w.jsxs)("div", {
-            className: "rockstargames-sites-rockstar-tvd98f432655f19a842390597c4434db06",
-            children: [(0, w.jsx)("button", {
-              className: "rockstargames-sites-rockstar-tvc06ca360ce11f2cef7baf8c5fba05a42",
+          return (0, g.jsxs)("div", {
+            className: "rockstargames-sites-careersd98f432655f19a842390597c4434db06",
+            children: [(0, g.jsx)("button", {
+              className: "rockstargames-sites-careersc06ca360ce11f2cef7baf8c5fba05a42",
               ref: t,
               onClick: r,
               "aria-label": "Previous",
               role: "button"
-            }), (0, w.jsx)("button", {
-              className: "rockstargames-sites-rockstar-tva4f98606cdef508fbd2e69c5564a92d8",
+            }), (0, g.jsx)("button", {
+              className: "rockstargames-sites-careersa4f98606cdef508fbd2e69c5564a92d8",
               ref: a,
               onClick: s,
               onKeyDown: i,
@@ -4343,7 +4154,7 @@ _global.SENTRY_RELEASE = {
             })]
           })
         },
-        xt = vt((e => {
+        ct = it((e => {
           let {
             description: t,
             slideChildren: a,
@@ -4351,139 +4162,139 @@ _global.SENTRY_RELEASE = {
             title: r,
             name: i,
             customSlidesPerView: n = null,
-            customSpaceBetween: c = null,
+            customSpaceBetween: o = null,
             slideClass: l,
             style: d,
             className: m,
             cardSizeBreakpoints: u,
-            customAspectRatio: g,
-            titleBadge: f
+            customAspectRatio: f,
+            titleBadge: p
           } = e;
           const {
-            track: p
-          } = (0, se.useGtmTrack)(), _ = (0, o.useRef)(null), k = (0, o.useRef)(null), h = (0, o.useRef)(null), [v, b] = (0, o.useState)(null), [x, y] = (0, o.useState)(!1), [N, j] = (0, o.useState)(null), [S, T] = (0, o.useState)(), [C, M] = (0, o.useState)(), {
-            ref: I,
-            inView: E
-          } = (0, ce.cD)({
+            track: _
+          } = (0, R.useGtmTrack)(), h = (0, c.useRef)(null), k = (0, c.useRef)(null), b = (0, c.useRef)(null), [v, x] = (0, c.useState)(null), [y, w] = (0, c.useState)(!1), [N, j] = (0, c.useState)(null), [S, T] = (0, c.useState)(), [M, I] = (0, c.useState)(), {
+            ref: E,
+            inView: L
+          } = (0, q.cD)({
             threshold: .6
-          }), [L, z] = (0, o.useState)(!1), [P, O] = (0, o.useState)(null), [A, D] = (0, o.useState)(!1), [B, V] = (0, o.useState)(0), [R, F] = (0, o.useState)(0);
-          (0, o.useEffect)((() => {
+          }), [z, O] = (0, c.useState)(!1), [A, D] = (0, c.useState)(null), [B, V] = (0, c.useState)(!1), [F, $] = (0, c.useState)(0), [U, G] = (0, c.useState)(0);
+          (0, c.useEffect)((() => {
             const e = () => {
-              D(window.innerWidth < 1024)
+              V(window.innerWidth < 1024)
             };
             return e(), window.addEventListener("resize", e), () => {
               window.removeEventListener("resize", e)
             }
-          }), []), (0, o.useEffect)((() => {
+          }), []), (0, c.useEffect)((() => {
             const e = () => {
-              S && !(0, _t.isEmpty)(S) && S?.height > 0 && S?.height !== B && V(S?.height)
+              S && !(0, at.isEmpty)(S) && S?.height > 0 && S?.height !== F && $(S?.height)
             };
             return e(), window.addEventListener("resize", e), () => {
               window.removeEventListener("resize", e)
             }
           }), [S]);
-          const $ = {
+          const H = {
             0: {
-              spaceBetween: c ?? 16
+              spaceBetween: o ?? 16
             },
             1024: {
-              spaceBetween: c ?? 18
+              spaceBetween: o ?? 18
             },
             1920: {
-              spaceBetween: c ?? 20
+              spaceBetween: o ?? 20
             },
             2560: {
-              spaceBetween: c ?? 22
+              spaceBetween: o ?? 22
             }
           };
-          (0, o.useEffect)((() => {
-            if (!_.current) return;
+          (0, c.useEffect)((() => {
+            if (!h.current) return;
             const e = () => {
-              if (_.current) {
-                const e = n || Number(window.getComputedStyle(_.current).getPropertyValue("--slides-per-view")),
-                  t = n ? 1 : Number(window.getComputedStyle(_.current).getPropertyValue("--slides-per-view-multiplier"));
+              if (h.current) {
+                const e = n || Number(window.getComputedStyle(h.current).getPropertyValue("--slides-per-view")),
+                  t = n ? 1 : Number(window.getComputedStyle(h.current).getPropertyValue("--slides-per-view-multiplier"));
                 j(e * t)
               }
             };
             return window.addEventListener("resize", e), e(), () => {
               window.removeEventListener("resize", e)
             }
-          }), [_, n]), (0, o.useEffect)((() => {
+          }), [h, n]), (0, c.useEffect)((() => {
             if (!a) return;
             let e = !1;
             a.forEach((t => {
-              "cover-card" === t?.props?.tina?.payload?.meta?.type && (e = !0, O(t))
-            })), z(e);
-            const t = a.map(((e, t) => "cover-card" === e?.props?.tina?.payload?.meta?.type && A ? null : (0, w.jsx)(K.Ky, {
-              className: "rockstargames-sites-rockstar-tvf58e79e329504e170dc9cb4595ea011b",
-              onFocus: () => q(t),
+              "cover-card" === t?.props?.tina?.payload?.meta?.type && (e = !0, D(t))
+            })), O(e);
+            const t = a.map(((e, t) => "cover-card" === e?.props?.tina?.payload?.meta?.type && B ? null : (0, g.jsx)(P.Ky, {
+              className: "rockstargames-sites-careersf58e79e329504e170dc9cb4595ea011b",
+              onFocus: () => Y(t),
               children: e
             }, Symbol(t).toString())));
-            b(t)
-          }), [a, A]), (0, o.useEffect)((() => {
-            M({
-              nextEl: h.current,
+            x(t)
+          }), [a, B]), (0, c.useEffect)((() => {
+            I({
+              nextEl: b.current,
               prevEl: k.current
             })
-          }), [h, k]), (0, o.useEffect)((() => {
-            E && !x && a && (p({
+          }), [b, k]), (0, c.useEffect)((() => {
+            L && !y && a && (_({
               event: "page_section_impression",
               event_action: "impression",
               event_category: "page_section",
               event_label: (i || r).toLowerCase(),
               element_placement: (i || r).toLowerCase()
-            }), y(!0))
-          }), [E, a]);
-          let G = "custom" === s ? {
-            "--custom-aspect-ratio": g,
+            }), w(!0))
+          }), [L, a]);
+          let W = "custom" === s ? {
+            "--custom-aspect-ratio": f,
             ...d
           } : {
             ...d
           };
-          const H = 0 !== B ? `${B}px` : "100%";
-          G = {
-            ...G,
-            "--carousel-cards-height": H,
-            "--carousel-nav-opacity": R
+          const X = 0 !== F ? `${F}px` : "100%";
+          W = {
+            ...W,
+            "--carousel-cards-height": X,
+            "--carousel-nav-opacity": U
           };
-          const q = e => {
+          const Y = e => {
             S?.slideTo(e)
           };
-          return (0, w.jsxs)("div", {
-            className: (0, U.classList)("rockstargames-sites-rockstar-tvd0c3d91603036c852633939015a6cb48", m),
+          return (0, g.jsxs)("div", {
+            className: (0, C.classList)("rockstargames-sites-careersd0c3d91603036c852633939015a6cb48", m),
             "data-size": s,
             "data-sm": u?.sm ? u?.sm : s,
             "data-md": u?.md ? u?.md : s,
             "data-lg": u?.lg ? u?.lg : s,
             "data-xl": u?.xl ? u?.xl : s,
             "data-xxl": u?.xxl ? u?.xxl : s,
-            "data-has-covercard": L,
+            "data-has-covercard": z,
             "data-new-carousel-nav": !0,
-            ref: _,
-            style: G,
-            children: [(0, w.jsx)("div", {
-              className: "rockstargames-sites-rockstar-tvddeb75a59ed783554b94e8298897a1fa",
-              ref: I
-            }), L && A && (0, w.jsx)("div", {
-              className: "rockstargames-sites-rockstar-tvd5f00d41fdd2c864a0eb9e069cf08db0",
-              children: P
-            }), (0, w.jsx)("div", {
-              className: "rockstargames-sites-rockstar-tvcdc60dbde3f8db6f466aba8a3e19fa96",
-              children: (0, w.jsxs)("div", {
-                className: "rockstargames-sites-rockstar-tvfb8e207418c783fc2f53b44c19faedca",
-                children: [(0, w.jsxs)("div", {
-                  className: "rockstargames-sites-rockstar-tvb779ba2045a88302079083935c90f7b3",
-                  children: [!L && r && (0, w.jsxs)("div", {
-                    className: "rockstargames-sites-rockstar-tvedf90c7c5ee1c79049f5a6442f14c949",
-                    children: [(0, w.jsx)("h2", {
+            ref: h,
+            style: W,
+            children: [(0, g.jsx)("div", {
+              className: "rockstargames-sites-careersddeb75a59ed783554b94e8298897a1fa",
+              ref: E
+            }), z && B && (0, g.jsx)("div", {
+              className: "rockstargames-sites-careersd5f00d41fdd2c864a0eb9e069cf08db0",
+              children: A
+            }), (0, g.jsx)("div", {
+              className: "rockstargames-sites-careerscdc60dbde3f8db6f466aba8a3e19fa96",
+              children: (0, g.jsxs)("div", {
+                className: "rockstargames-sites-careersfb8e207418c783fc2f53b44c19faedca",
+                children: [(0, g.jsxs)("div", {
+                  className: "rockstargames-sites-careersb779ba2045a88302079083935c90f7b3",
+                  children: [!z && r && (0, g.jsxs)("div", {
+                    className: "rockstargames-sites-careersedf90c7c5ee1c79049f5a6442f14c949",
+                    children: [(0, g.jsx)("h2", {
                       children: r
-                    }), f && (0, w.jsx)("span", {
-                      className: "rockstargames-sites-rockstar-tvd7a4aaeb70d68fdee39312192efb990b",
-                      children: f
+                    }), p && (0, g.jsx)("span", {
+                      className: "rockstargames-sites-careersd7a4aaeb70d68fdee39312192efb990b",
+                      children: p
                     })]
-                  }), (0, w.jsx)(bt, {
+                  }), (0, g.jsx)(nt, {
                     prevRef: k,
-                    nextRef: h,
+                    nextRef: b,
                     onNextClicked: () => {},
                     onPrevClicked: () => {},
                     onNextKeyDown: e => {
@@ -4493,14 +4304,14 @@ _global.SENTRY_RELEASE = {
                       }
                     }
                   })]
-                }), t && (0, w.jsx)("div", {
-                  className: "rockstargames-sites-rockstar-tva1007d13e3a321bb18b5fc667025d545",
+                }), t && (0, g.jsx)("div", {
+                  className: "rockstargames-sites-careersa1007d13e3a321bb18b5fc667025d545",
                   dangerouslySetInnerHTML: {
                     __html: t
                   }
                 })]
               })
-            }), N ? (0, w.jsx)(K.wx, {
+            }), N ? (0, g.jsx)(P.wx, {
               slidesPerView: N,
               onInit: e => {
                 T(e);
@@ -4508,16 +4319,16 @@ _global.SENTRY_RELEASE = {
                   const {
                     height: a
                   } = e;
-                  a > 0 && (V(a), F(1), clearInterval(t))
+                  a > 0 && ($(a), G(1), clearInterval(t))
                 }), 500)
               },
               grabCursor: !0,
-              navigation: C,
-              modules: [pt._2],
-              breakpoints: $,
-              slideClass: (0, U.classList)("swiper-slide", l),
+              navigation: M,
+              modules: [tt._2],
+              breakpoints: H,
+              slideClass: (0, C.classList)("swiper-slide", l),
               onSlideNextTransitionEnd: () => {
-                p({
+                _({
                   event_action: "next",
                   event_category: "carousel",
                   event: "carousel_next",
@@ -4526,7 +4337,7 @@ _global.SENTRY_RELEASE = {
                 })
               },
               onSlidePrevTransitionEnd: () => {
-                p({
+                _({
                   event_action: "previous",
                   event_category: "carousel",
                   event: "carousel_previous",
@@ -4535,7 +4346,7 @@ _global.SENTRY_RELEASE = {
                 })
               },
               onSlideChangeTransitionEnd: () => {
-                p({
+                _({
                   event_action: "swipe",
                   event_category: "carousel",
                   event: "carousel_swipe",
@@ -4547,25 +4358,25 @@ _global.SENTRY_RELEASE = {
             }) : ""]
           })
         }), null),
-        yt = {
-          pillBtn: "rockstargames-sites-rockstar-tvd008b074498ad02717806cc094b8a780",
-          selected: "rockstargames-sites-rockstar-tvbe9a2e37ec59e339b0d72cd8e5256703",
-          hero: "rockstargames-sites-rockstar-tvd1346f9b98fbaac26948e361bd98b4c6",
-          images: "rockstargames-sites-rockstar-tvc9c078a3102a96b26f1bf1f98306384f",
-          background: "rockstargames-sites-rockstar-tva271224ca2caf56b470059cdb98d9a42",
-          gradient: "rockstargames-sites-rockstar-tvae257e9d159ae9bd7c8685e38ba16f59",
-          layered: "rockstargames-sites-rockstar-tvf663886f051e47ea04f097c85ae6625b",
-          content: "rockstargames-sites-rockstar-tvf9c204f451f3a53bcc307c00eb5f907f",
-          descriptions: "rockstargames-sites-rockstar-tvd1bbf288f3fe6c79e658764847d2890a",
-          buttonGroup: "rockstargames-sites-rockstar-tvfb373367ffd03ba01edaf671175244ab",
-          ctaBlock: "rockstargames-sites-rockstar-tvd4e5e627f7968400413c3b578b1b3143",
-          primaryBtn: "rockstargames-sites-rockstar-tvff921058c7bbf6660b52da746e719577",
-          secondaryBtn: "rockstargames-sites-rockstar-tva0c587b1487e33b081dc394dfd017fab",
-          btnText: "rockstargames-sites-rockstar-tvbe305ab9e2c27b1458d3e7bb6a9f12e0",
-          legalText: "rockstargames-sites-rockstar-tvf625ffdd1b33a1642aa0dec12efe7897",
-          shardsCarousel: "rockstargames-sites-rockstar-tve999b9cecfe233bcee8cab8682fb96bf"
+        ot = {
+          pillBtn: "rockstargames-sites-careersd008b074498ad02717806cc094b8a780",
+          selected: "rockstargames-sites-careersbe9a2e37ec59e339b0d72cd8e5256703",
+          hero: "rockstargames-sites-careersd1346f9b98fbaac26948e361bd98b4c6",
+          images: "rockstargames-sites-careersc9c078a3102a96b26f1bf1f98306384f",
+          background: "rockstargames-sites-careersa271224ca2caf56b470059cdb98d9a42",
+          gradient: "rockstargames-sites-careersae257e9d159ae9bd7c8685e38ba16f59",
+          layered: "rockstargames-sites-careersf663886f051e47ea04f097c85ae6625b",
+          content: "rockstargames-sites-careersf9c204f451f3a53bcc307c00eb5f907f",
+          descriptions: "rockstargames-sites-careersd1bbf288f3fe6c79e658764847d2890a",
+          buttonGroup: "rockstargames-sites-careersfb373367ffd03ba01edaf671175244ab",
+          ctaBlock: "rockstargames-sites-careersd4e5e627f7968400413c3b578b1b3143",
+          primaryBtn: "rockstargames-sites-careersff921058c7bbf6660b52da746e719577",
+          secondaryBtn: "rockstargames-sites-careersa0c587b1487e33b081dc394dfd017fab",
+          btnText: "rockstargames-sites-careersbe305ab9e2c27b1458d3e7bb6a9f12e0",
+          legalText: "rockstargames-sites-careersf625ffdd1b33a1642aa0dec12efe7897",
+          shardsCarousel: "rockstargames-sites-careerse999b9cecfe233bcee8cab8682fb96bf"
         },
-        wt = {
+        lt = {
           visible: {
             opacity: 1,
             transition: {
@@ -4580,7 +4391,7 @@ _global.SENTRY_RELEASE = {
             opacity: 0
           }
         },
-        Nt = {
+        dt = {
           visible: {
             opacity: 1,
             y: 0,
@@ -4598,33 +4409,33 @@ _global.SENTRY_RELEASE = {
             overflow: "hidden"
           }
         },
-        jt = e => {
+        mt = e => {
           let {
             title: t = "",
             mobileImg: a,
             desktopImg: s
           } = e;
-          const r = (0, U.useGetCdnSource)(a ?? null),
-            i = (0, U.useGetCdnSource)(s ?? r);
-          return (0, w.jsx)("div", {
-            className: yt.shard,
+          const r = (0, C.useGetCdnSource)(a ?? null),
+            i = (0, C.useGetCdnSource)(s ?? r);
+          return (0, g.jsx)("div", {
+            className: ot.shard,
             style: {
               "--background-image-mobile": `url(${r})`,
               "--background-image-desktop": `url(${i})`
             },
-            children: (0, w.jsx)("h5", {
+            children: (0, g.jsx)("h5", {
               children: t
             })
           })
         },
-        St = e => {
+        ut = e => {
           let {
             title: t = "Membership Rewards",
             name: a = "Membership Rewards",
             shards: s
           } = e;
-          const [r, i] = (0, o.useState)(null);
-          return (0, o.useEffect)((() => {
+          const [r, i] = (0, c.useState)(null);
+          return (0, c.useEffect)((() => {
             s && i(s.reduce(((e, t) => {
               if (!t?.shardImg) return e;
               const {
@@ -4634,15 +4445,15 @@ _global.SENTRY_RELEASE = {
                 mobile: r,
                 desktop: i
               } = s;
-              return e.push((0, w.jsx)(jt, {
+              return e.push((0, g.jsx)(mt, {
                 title: a,
                 mobileImg: r?.full_src,
                 desktopImg: i?.full_src
               })), e
             }), []))
-          }), [s]), r ? (0, w.jsx)("div", {
-            className: yt.shardsCarousel,
-            children: (0, w.jsx)(xt, {
+          }), [s]), r ? (0, g.jsx)("div", {
+            className: ot.shardsCarousel,
+            children: (0, g.jsx)(ct, {
               title: t,
               name: a,
               slideChildren: r,
@@ -4651,14 +4462,14 @@ _global.SENTRY_RELEASE = {
             })
           }) : null
         },
-        Tt = e => {
+        gt = e => {
           let {
             animated: t = !1,
             ctas: a = [],
             expandingButtonLabel: s = "Subscribe"
           } = e;
-          const [r, i] = (0, o.useState)([]), [n, c] = (0, o.useState)([]);
-          return (0, o.useEffect)((() => {
+          const [r, i] = (0, c.useState)([]), [n, o] = (0, c.useState)([]);
+          return (0, c.useEffect)((() => {
             const {
               expandingButtonsArray: e,
               plainButtonsArray: t
@@ -4674,32 +4485,32 @@ _global.SENTRY_RELEASE = {
               expandingButtonsArray: [],
               plainButtonsArray: []
             });
-            i(e), c(t)
-          }), [a]), r.length ? (0, w.jsx)(at.q.div, {
-            variants: t ? Nt : void 0,
-            children: (0, w.jsx)(dt, {
+            i(e), o(t)
+          }), [a]), r.length ? (0, g.jsx)($e.q.div, {
+            variants: t ? dt : void 0,
+            children: (0, g.jsx)(Ke, {
               variant: "gen9",
               buttonText: s,
               platformsAndLinks: r,
-              children: !!n.length && (0, w.jsx)(at.q.div, {
-                variants: Nt,
-                children: (0, w.jsx)(Y, {
+              children: !!n.length && (0, g.jsx)($e.q.div, {
+                variants: dt,
+                children: (0, g.jsx)(z, {
                   buttons: n,
-                  className: yt.buttonGroup
+                  className: ot.buttonGroup
                 })
               })
             })
-          }) : (0, w.jsx)(w.Fragment, {
-            children: !!n.length && (0, w.jsx)(at.q.div, {
-              variants: Nt,
-              children: (0, w.jsx)(Y, {
+          }) : (0, g.jsx)(g.Fragment, {
+            children: !!n.length && (0, g.jsx)($e.q.div, {
+              variants: dt,
+              children: (0, g.jsx)(z, {
                 buttons: n,
-                className: yt.buttonGroup
+                className: ot.buttonGroup
               })
             })
           })
         },
-        Ct = e => {
+        ft = e => {
           let {
             animated: t = !1,
             brands: a = [],
@@ -4707,37 +4518,37 @@ _global.SENTRY_RELEASE = {
             cta: r = [],
             description: i = "",
             expandingButtonLabel: n = "Subscribe",
-            title: o = "",
-            legalText: c
+            title: c = "",
+            legalText: o
           } = e;
-          return (0, w.jsxs)(at.q.div, {
-            className: yt.content,
+          return (0, g.jsxs)($e.q.div, {
+            className: ot.content,
             initial: "hidden",
             animate: "visible",
-            variants: t ? wt : void 0,
-            children: [(0, w.jsx)(at.q.div, {
-              variants: t ? Nt : void 0,
-              children: (0, w.jsx)(F, {
+            variants: t ? lt : void 0,
+            children: [(0, g.jsx)($e.q.div, {
+              variants: t ? dt : void 0,
+              children: (0, g.jsx)(j, {
                 brands: a
               })
-            }), (o || i) && (0, w.jsxs)(at.q.div, {
-              className: yt.descriptions,
-              variants: t ? Nt : void 0,
-              children: [o && (0, w.jsx)("h2", {
+            }), (c || i) && (0, g.jsxs)($e.q.div, {
+              className: ot.descriptions,
+              variants: t ? dt : void 0,
+              children: [c && (0, g.jsx)("h2", {
                 dangerouslySetInnerHTML: {
-                  __html: o
+                  __html: c
                 }
-              }), i && (0, w.jsx)("p", {
+              }), i && (0, g.jsx)("p", {
                 dangerouslySetInnerHTML: {
                   __html: i
                 }
               })]
-            }), !!r.length && (0, w.jsx)("div", {
-              className: yt.ctaBlock,
-              children: (0, w.jsx)(U.TinaParser, {
+            }), !!r.length && (0, g.jsx)("div", {
+              className: ot.ctaBlock,
+              children: (0, g.jsx)(C.TinaParser, {
                 components: {
-                  Cta: Te,
-                  ExpandingPlatformButton: dt
+                  Cta: ue,
+                  ExpandingPlatformButton: Ke
                 },
                 tina: {
                   payload: {
@@ -4745,25 +4556,25 @@ _global.SENTRY_RELEASE = {
                   }
                 }
               })
-            }), !!s.length && (0, w.jsx)("div", {
-              className: yt.ctaBlock,
-              children: (0, w.jsx)(Tt, {
+            }), !!s.length && (0, g.jsx)("div", {
+              className: ot.ctaBlock,
+              children: (0, g.jsx)(gt, {
                 animated: t,
                 ctas: s,
                 expandingButtonLabel: n
               })
-            }), c && (0, w.jsx)(at.q.div, {
-              className: yt.legalText,
-              variants: t ? Nt : void 0,
-              children: (0, w.jsx)("p", {
+            }), o && (0, g.jsx)($e.q.div, {
+              className: ot.legalText,
+              variants: t ? dt : void 0,
+              children: (0, g.jsx)("p", {
                 dangerouslySetInnerHTML: {
-                  __html: c
+                  __html: o
                 }
               })
             })]
           })
         },
-        Mt = e => {
+        pt = e => {
           let {
             animated: t = !1,
             backgroundImage: a,
@@ -4771,16 +4582,16 @@ _global.SENTRY_RELEASE = {
             className: r,
             ctas: i = [],
             cta: n,
-            description: o = "",
-            expandingButtonLabel: c = "Subscribe",
+            description: c = "",
+            expandingButtonLabel: o = "Subscribe",
             layeredImage: l,
             layeredImageSettings: d,
             legalText: m,
             shardsSection: u = {},
-            theme: g = "gen9",
-            title: f = ""
+            theme: f = "gen9",
+            title: p = ""
           } = e;
-          const p = (e => {
+          const _ = (e => {
               if (!e) return null;
               const t = {},
                 a = new Map([
@@ -4807,82 +4618,83 @@ _global.SENTRY_RELEASE = {
                 }
               })), t
             })(d),
-            _ = (0, U.useGetCdnSource)(a?.mobile?.full_src ?? null),
-            k = (0, U.useGetCdnSource)(a?.desktop?.full_src ?? _),
-            h = (0, U.useGetCdnSource)(l?.mobile?.full_src ?? null),
-            v = (0, U.useGetCdnSource)(l?.desktop?.full_src ?? h);
-          return (0, w.jsxs)(at.q.div, {
-            className: (0, U.classList)(yt.hero, r),
+            h = (0, C.useGetCdnSource)(a?.mobile?.full_src ?? null),
+            k = (0, C.useGetCdnSource)(a?.desktop?.full_src ?? h),
+            b = (0, C.useGetCdnSource)(l?.mobile?.full_src ?? null),
+            v = (0, C.useGetCdnSource)(l?.desktop?.full_src ?? b);
+          return (0, g.jsxs)($e.q.div, {
+            className: (0, C.classList)(ot.hero, r),
             style: {
               "--background-image-desktop": `url(${k})`,
-              "--background-image-mobile": `url(${_})`,
+              "--background-image-mobile": `url(${h})`,
               "--layered-image-desktop": `url(${v})`,
-              "--layered-image-mobile": `url(${h})`
+              "--layered-image-mobile": `url(${b})`
             },
             initial: "hidden",
             animate: "visible",
-            variants: t ? wt : void 0,
+            variants: t ? lt : void 0,
             "data-type": "hero",
-            theme: g,
-            children: [(0, w.jsxs)("div", {
-              className: yt.images,
-              children: [k && _ ? (0, w.jsx)("div", {
-                className: yt.background,
+            theme: f,
+            children: [(0, g.jsxs)("div", {
+              className: ot.images,
+              children: [k && h ? (0, g.jsx)("div", {
+                className: ot.background,
                 style: a?.style ?? {}
-              }) : "", h && v ? (0, w.jsx)("div", {
-                className: yt.layered,
-                style: d ? p : {}
-              }) : "", (0, w.jsx)("div", {
-                className: yt.gradient
+              }) : "", b && v ? (0, g.jsx)("div", {
+                className: ot.layered,
+                style: d ? _ : {}
+              }) : "", (0, g.jsx)("div", {
+                className: ot.gradient
               })]
-            }), (0, w.jsx)(Ct, {
+            }), (0, g.jsx)(ft, {
               animated: t,
               ctas: i,
               cta: n,
-              description: o,
-              expandingButtonLabel: c,
-              title: f,
+              description: c,
+              expandingButtonLabel: o,
+              title: p,
               brands: s,
               legalText: m
-            }), u?.shards && (0, w.jsx)(St, {
+            }), u?.shards && (0, g.jsx)(ut, {
               ...u
             })]
           })
         },
-        It = e => {
+        _t = e => {
           let {
             children: t,
             attributes: a = {},
             className: s = "",
             style: r = {}
           } = e;
-          return (0, w.jsx)("span", {
-            className: (0, U.classList)(s, a?.className, "rockstargames-sites-rockstar-tva7f106a8036d74ed9282a741476c6b5a"),
-            style: (0, ae.safeStyles)(r ?? a?.style ?? {}),
+          return (0, g.jsx)("span", {
+            className: (0, C.classList)(s, a?.className, "rockstargames-sites-careersa7f106a8036d74ed9282a741476c6b5a"),
+            style: (0, F.safeStyles)(r ?? a?.style ?? {}),
             dangerouslySetInnerHTML: {
-              __html: kt().unescape(t)
+              __html: st().unescape(t)
             }
           })
-        },
-        Et = (0, c.Os)({
+        };
+      var ht = a(53592);
+      const kt = (0, o.defineMessages)({
           language_selector_default: {
             id: "language_selector_default",
             defaultMessage: "Select a Language"
           }
         }),
-        Lt = {
-          pillBtn: "rockstargames-sites-rockstar-tvcb792ef8796eaa09f8b5c1ee0230fcd7",
-          selected: "rockstargames-sites-rockstar-tvc951b9f5173e8a37be389854c40995ee",
-          scMenuStyles: "rockstargames-sites-rockstar-tvfa91a55e22ad688cba0bc1210eaf4726",
-          languageSelector: "rockstargames-sites-rockstar-tvb631f2ce92e4a89f8eddebd32e8ed30a",
-          open: "rockstargames-sites-rockstar-tvedc598921a872174190475d0ad016d15",
-          linkWrapper: "rockstargames-sites-rockstar-tvc4b7087d1fcbaad6967e61b84160ff79",
-          links: "rockstargames-sites-rockstar-tvc7d345d5c7e567e0ee75b792d5bdfb88",
-          selectBoxWrapper: "rockstargames-sites-rockstar-tve3e55a10507405de05ae92006ec0d02b",
-          selectBox: "rockstargames-sites-rockstar-tvc646a2bff16ec3003b027857488cd612",
-          selectBoxOption: "rockstargames-sites-rockstar-tvbcccd1077d13d7fe1585655e5c5f8363"
+        bt = {
+          pillBtn: "rockstargames-sites-careerscb792ef8796eaa09f8b5c1ee0230fcd7",
+          selected: "rockstargames-sites-careersc951b9f5173e8a37be389854c40995ee",
+          scMenuStyles: "rockstargames-sites-careersfa91a55e22ad688cba0bc1210eaf4726",
+          languageSelector: "rockstargames-sites-careersb631f2ce92e4a89f8eddebd32e8ed30a",
+          open: "rockstargames-sites-careersedc598921a872174190475d0ad016d15",
+          linkWrapper: "rockstargames-sites-careersc4b7087d1fcbaad6967e61b84160ff79",
+          links: "rockstargames-sites-careersc7d345d5c7e567e0ee75b792d5bdfb88",
+          selectBoxWrapper: "rockstargames-sites-careerse3e55a10507405de05ae92006ec0d02b",
+          selectBox: "rockstargames-sites-careersc646a2bff16ec3003b027857488cd612",
+          selectBoxOption: "rockstargames-sites-careersbcccd1077d13d7fe1585655e5c5f8363"
         },
-        zt = j((e => {
+        vt = (0, o.withIntl)((e => {
           let {
             theme: t,
             languageSelectorOpened: a,
@@ -4891,89 +4703,89 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: i
-          } = (0, se.useGtmTrack)(), n = (0, C.useLocation)(), c = (0, d.c)(), [m, g] = y(), [f, _] = (0, o.useState)(!1), k = (0, o.useMemo)((() => p()), []), h = (0, o.useCallback)((e => {
+          } = (0, R.useGtmTrack)(), n = (0, m.useLocation)(), l = (0, o.useIntl)(), [d, u] = (0, o.getLocale)(), [p, _] = (0, c.useState)(!1), h = (0, c.useMemo)((() => (0, ht.c)()), []), k = (0, c.useCallback)((e => {
             let t = n.pathname;
             const a = t.split("/");
-            return b.map((e => e.subdomaincom)).includes(a[0]) && (t = a.slice(1).join("/")), k.currentSite?.site === u ? "en" === e ? `${window.location.origin}${t}${n.search}` : `${window.location.origin}/${e}${t}${n.search}` : `${window.location.origin}${t}${n.search}`
-          }), [n]), v = (0, o.useRef)(null), [x, N] = (0, o.useState)(0), j = matchMedia("(hover: none) and (pointer: coarse)").matches, S = e => {
-            if (s && s(!1), m.subdomaincom === e || "none" === e) return void(s && s(!1));
-            const t = b.find((t => t.subdomaincom === e));
+            return o.locales.map((e => e.subdomaincom)).includes(a[0]) && (t = a.slice(1).join("/")), h.currentSite?.site === ht.U.www ? "en" === e ? `${window.location.origin}${t}${n.search}` : `${window.location.origin}/${e}${t}${n.search}` : `${window.location.origin}${t}${n.search}`
+          }), [n]), b = (0, c.useRef)(null), [v, x] = (0, c.useState)(0), y = matchMedia("(hover: none) and (pointer: coarse)").matches, w = e => {
+            if (s && s(!1), d.subdomaincom === e || "none" === e) return void(s && s(!1));
+            const t = o.locales.find((t => t.subdomaincom === e));
             if (t) {
-              const a = h(e);
+              const a = k(e);
               i({
                 event: "cta_other",
                 link_url: a,
                 text: e,
                 element_placement: r
-              }), g(t.iso), window.location.href = a
+              }), u(t.iso), window.location.href = a
             }
           };
-          return (0, o.useEffect)((() => {
-            void 0 !== a && !1 === a && !0 === f && _(!1)
-          }), [a]), (0, o.useEffect)((() => {
-            v.current && N(v.current.scrollHeight)
-          }), [v]), (0, w.jsxs)("div", {
-            className: [Lt.languageSelector, f ? Lt.open : ""].join(" "),
+          return (0, c.useEffect)((() => {
+            void 0 !== a && !1 === a && !0 === p && _(!1)
+          }), [a]), (0, c.useEffect)((() => {
+            b.current && x(b.current.scrollHeight)
+          }), [b]), (0, g.jsxs)("div", {
+            className: [bt.languageSelector, p ? bt.open : ""].join(" "),
             "data-theme": t,
-            children: [j && "sc-menu" === t && (0, w.jsx)("div", {
-              className: Lt.selectBoxWrapper,
-              children: (0, w.jsxs)("select", {
-                className: Lt.selectBox,
+            children: [y && "sc-menu" === t && (0, g.jsx)("div", {
+              className: bt.selectBoxWrapper,
+              children: (0, g.jsxs)("select", {
+                className: bt.selectBox,
                 onClick: e => e.stopPropagation(),
                 onChange: e => {
                   const t = e.currentTarget.value;
-                  S(t)
+                  w(t)
                 },
-                "aria-label": c.formatMessage(Et.language_selector_default),
-                children: [(0, w.jsx)("option", {
-                  className: Lt.selectBoxOption,
+                "aria-label": l.formatMessage(kt.language_selector_default),
+                children: [(0, g.jsx)("option", {
+                  className: bt.selectBoxOption,
                   value: "none",
-                  children: (0, w.jsx)(l.c, {
-                    ...Et.language_selector_default
+                  children: (0, g.jsx)(o.FormattedMessage, {
+                    ...kt.language_selector_default
                   })
-                }), b.map((e => {
+                }), o.locales.map((e => {
                   let {
                     label: t,
                     subdomaincom: a
                   } = e;
-                  return (0, w.jsx)("option", {
-                    className: Lt.selectBoxOption,
+                  return (0, g.jsx)("option", {
+                    className: bt.selectBoxOption,
                     value: a,
                     children: t
                   }, `mobile-${a}`)
                 }))]
               })
-            }), (!j || "sc-menu" !== t) && (0, w.jsxs)(w.Fragment, {
-              children: [(0, w.jsxs)("button", {
+            }), (!y || "sc-menu" !== t) && (0, g.jsxs)(g.Fragment, {
+              children: [(0, g.jsxs)("button", {
                 onClick: e => {
-                  e.stopPropagation(), s && s(!f), _(!f)
+                  e.stopPropagation(), s && s(!p), _(!p)
                 },
                 type: "button",
-                "aria-label": c.formatMessage(Et.language_selector_default),
-                children: [(0, w.jsx)("i", {}), (0, w.jsx)("span", {
-                  children: (0, w.jsx)(l.c, {
-                    ...Et.language_selector_default
+                "aria-label": l.formatMessage(kt.language_selector_default),
+                children: [(0, g.jsx)("i", {}), (0, g.jsx)("span", {
+                  children: (0, g.jsx)(o.FormattedMessage, {
+                    ...kt.language_selector_default
                   })
                 })]
-              }), (0, w.jsx)("div", {
-                className: Lt.linkWrapper,
-                ref: v,
+              }), (0, g.jsx)("div", {
+                className: bt.linkWrapper,
+                ref: b,
                 style: {
-                  "--ls-linkWrapper-opened-height": `${x}px`
+                  "--ls-linkWrapper-opened-height": `${v}px`
                 },
-                children: (0, w.jsx)("div", {
-                  className: Lt.links,
-                  children: b.map((e => {
+                children: (0, g.jsx)("div", {
+                  className: bt.links,
+                  children: o.locales.map((e => {
                     let {
                       subdomaincom: t,
                       label: a
                     } = e;
-                    return (0, w.jsx)(I, {
-                      to: h(t),
+                    return (0, g.jsx)(f, {
+                      to: k(t),
                       onClick: (s = t, () => {
-                        S(s)
+                        w(s)
                       }),
-                      tabIndex: f ? 0 : -1,
+                      tabIndex: p ? 0 : -1,
                       children: a
                     }, `desktop-${t}`);
                     var s
@@ -4982,43 +4794,43 @@ _global.SENTRY_RELEASE = {
               })]
             })]
           })
-        }), S),
-        Pt = {
-          layeredImage: "rockstargames-sites-rockstar-tva29c233d553c5905763bb69412c1ece4",
-          layersWrapper: "rockstargames-sites-rockstar-tvaabf78eb3e1fe545556ad0fa5639296e",
-          "hero-lg": "rockstargames-sites-rockstar-tvca666917bdeaed43fd0a7af7dc30a0f7",
-          "hero-md": "rockstargames-sites-rockstar-tvf0a202fcbf13f1e91157e531ae829ea3",
-          "hero-sm": "rockstargames-sites-rockstar-tve03dbf5d16aeab81ca65f4cb7e64446f",
-          contain: "rockstargames-sites-rockstar-tvc4c3c929b11e88540e3f19d5715393ec",
-          cover: "rockstargames-sites-rockstar-tvb283d6381c82abf4dde21c57b8fc5f66",
-          fill: "rockstargames-sites-rockstar-tve9d16b94c1ed476c9346cb6f48f5ad3e",
-          "bg-img": "rockstargames-sites-rockstar-tve45fabf9c4e04bf3ee27e9c84c50c09b",
-          imageLayer: "rockstargames-sites-rockstar-tved8d0ad18a62f087629ff5831fa0ac55",
-          "layer-lg-height": "rockstargames-sites-rockstar-tvfaf1d5c6b2fe2ad27d4bb95ba7388f3d",
-          "layer-md-height": "rockstargames-sites-rockstar-tvb41041f11a5ef98325948acc3dec956c",
-          "layer-sm-height": "rockstargames-sites-rockstar-tvba7d5822aa073c9e01cd682d65c18944",
-          "layer-xl-height": "rockstargames-sites-rockstar-tvec2399a1f7e79e9aacba81b242ad0602",
-          "layer-xs-height": "rockstargames-sites-rockstar-tva6ec38ac99c762fcf0dd99aa2ced8f2b",
-          "layer-xxl-height": "rockstargames-sites-rockstar-tvd7c1314e717273dfbb2acd3d5e06e585",
-          "layer-lg-width": "rockstargames-sites-rockstar-tvca0dd7a55a5db5ee358ce51a166e5431",
-          "layer-md-width": "rockstargames-sites-rockstar-tvbd4c246f4f0eaf7173d104ed1e7c2d06",
-          "layer-sm-width": "rockstargames-sites-rockstar-tvfe3f49cba9cc10e4e076a43a6b36b862",
-          "layer-xl-width": "rockstargames-sites-rockstar-tvbde3d6485ac7bb483dcca1ad4e2bbe67",
-          "layer-xs-width": "rockstargames-sites-rockstar-tvb87efd95b330cacd4a5eaecf83528f4d",
-          "layer-xxl-width": "rockstargames-sites-rockstar-tvac872df7985f9d591c85f97c72d451dc",
-          "bottom-y": "rockstargames-sites-rockstar-tvd63fdb49c964c28c5e8952cd79a393a0",
-          "center-x": "rockstargames-sites-rockstar-tvd248443eb924360a5d1d7211094ea827",
-          "center-y": "rockstargames-sites-rockstar-tva8d87c765a51d98f0e3a9afd149ed0dc",
-          "left-x": "rockstargames-sites-rockstar-tvdcaa6339b43850be2e14967cab730041",
-          "right-x": "rockstargames-sites-rockstar-tvb656d800e3d134bd3a7e273a5f6d7ae6",
-          "top-y": "rockstargames-sites-rockstar-tvadaf230f139f906eb912b58b315406ac",
-          border: "rockstargames-sites-rockstar-tvc73e199a8978fb80895753c9a38fcdff",
-          shards: "rockstargames-sites-rockstar-tve650a715d6f220ad49bb568768154b0e",
-          shards_three: "rockstargames-sites-rockstar-tvb0c8be28788c6b23cea904bdc60d7e07",
-          shards_two: "rockstargames-sites-rockstar-tve41252d3a0aee1d229f6bddc20c38d47",
-          dual: "rockstargames-sites-rockstar-tvdb575e1d021e69ebb4265a29484e2888"
+        }), l),
+        xt = {
+          layeredImage: "rockstargames-sites-careersa29c233d553c5905763bb69412c1ece4",
+          layersWrapper: "rockstargames-sites-careersaabf78eb3e1fe545556ad0fa5639296e",
+          "hero-lg": "rockstargames-sites-careersca666917bdeaed43fd0a7af7dc30a0f7",
+          "hero-md": "rockstargames-sites-careersf0a202fcbf13f1e91157e531ae829ea3",
+          "hero-sm": "rockstargames-sites-careerse03dbf5d16aeab81ca65f4cb7e64446f",
+          contain: "rockstargames-sites-careersc4c3c929b11e88540e3f19d5715393ec",
+          cover: "rockstargames-sites-careersb283d6381c82abf4dde21c57b8fc5f66",
+          fill: "rockstargames-sites-careerse9d16b94c1ed476c9346cb6f48f5ad3e",
+          "bg-img": "rockstargames-sites-careerse45fabf9c4e04bf3ee27e9c84c50c09b",
+          imageLayer: "rockstargames-sites-careersed8d0ad18a62f087629ff5831fa0ac55",
+          "layer-lg-height": "rockstargames-sites-careersfaf1d5c6b2fe2ad27d4bb95ba7388f3d",
+          "layer-md-height": "rockstargames-sites-careersb41041f11a5ef98325948acc3dec956c",
+          "layer-sm-height": "rockstargames-sites-careersba7d5822aa073c9e01cd682d65c18944",
+          "layer-xl-height": "rockstargames-sites-careersec2399a1f7e79e9aacba81b242ad0602",
+          "layer-xs-height": "rockstargames-sites-careersa6ec38ac99c762fcf0dd99aa2ced8f2b",
+          "layer-xxl-height": "rockstargames-sites-careersd7c1314e717273dfbb2acd3d5e06e585",
+          "layer-lg-width": "rockstargames-sites-careersca0dd7a55a5db5ee358ce51a166e5431",
+          "layer-md-width": "rockstargames-sites-careersbd4c246f4f0eaf7173d104ed1e7c2d06",
+          "layer-sm-width": "rockstargames-sites-careersfe3f49cba9cc10e4e076a43a6b36b862",
+          "layer-xl-width": "rockstargames-sites-careersbde3d6485ac7bb483dcca1ad4e2bbe67",
+          "layer-xs-width": "rockstargames-sites-careersb87efd95b330cacd4a5eaecf83528f4d",
+          "layer-xxl-width": "rockstargames-sites-careersac872df7985f9d591c85f97c72d451dc",
+          "bottom-y": "rockstargames-sites-careersd63fdb49c964c28c5e8952cd79a393a0",
+          "center-x": "rockstargames-sites-careersd248443eb924360a5d1d7211094ea827",
+          "center-y": "rockstargames-sites-careersa8d87c765a51d98f0e3a9afd149ed0dc",
+          "left-x": "rockstargames-sites-careersdcaa6339b43850be2e14967cab730041",
+          "right-x": "rockstargames-sites-careersb656d800e3d134bd3a7e273a5f6d7ae6",
+          "top-y": "rockstargames-sites-careersadaf230f139f906eb912b58b315406ac",
+          border: "rockstargames-sites-careersc73e199a8978fb80895753c9a38fcdff",
+          shards: "rockstargames-sites-careerse650a715d6f220ad49bb568768154b0e",
+          shards_three: "rockstargames-sites-careersb0c8be28788c6b23cea904bdc60d7e07",
+          shards_two: "rockstargames-sites-careerse41252d3a0aee1d229f6bddc20c38d47",
+          dual: "rockstargames-sites-careersdb575e1d021e69ebb4265a29484e2888"
         },
-        Ot = e => {
+        yt = e => {
           let {
             style: t,
             className: a
@@ -5027,21 +4839,21 @@ _global.SENTRY_RELEASE = {
               ...t
             },
             r = t["--border-image-source"],
-            i = (0, U.useGetCdnSource)(r || null);
-          return r && (s["--border-image-source"] = `url(${i})`), (0, w.jsx)("div", {
-            className: (0, U.classList)(Pt.border, a),
+            i = (0, C.useGetCdnSource)(r || null);
+          return r && (s["--border-image-source"] = `url(${i})`), (0, g.jsx)("div", {
+            className: (0, C.classList)(xt.border, a),
             style: {
               ...s
             }
           })
         },
-        At = e => e?.images ? (0, w.jsx)("div", {
-          className: (0, U.classList)(Pt.layeredImage, Pt[e?.variantClass], Pt[e?.wrapperSizeClass]),
+        wt = e => e?.images ? (0, g.jsx)("div", {
+          className: (0, C.classList)(xt.layeredImage, xt[e?.variantClass], xt[e?.wrapperSizeClass]),
           style: {
             ...e?.style ?? {}
           },
-          children: (0, w.jsxs)("div", {
-            className: Pt.layersWrapper,
+          children: (0, g.jsxs)("div", {
+            className: xt.layersWrapper,
             children: [e?.images?.map(((e, t) => {
               const {
                 image: a,
@@ -5049,39 +4861,39 @@ _global.SENTRY_RELEASE = {
                 imageSizeClass: r,
                 objectFitClass: i,
                 positionClassX: n,
-                positionClassY: o,
-                zIndex: c,
+                positionClassY: c,
+                zIndex: o,
                 className: l,
                 style: d,
                 alt: m,
                 displayClass: u
               } = e;
-              return (0, w.jsx)(Ee, {
+              return (0, g.jsx)(_e, {
                 image: a,
                 style: {
-                  zIndex: c ?? t + 1
+                  zIndex: o ?? t + 1
                 },
                 imageStyle: d,
-                className: (0, U.classList)(l, u, Pt.imageLayer, Pt[s], Pt[r], Pt[i], Pt[n], Pt[o]),
+                className: (0, C.classList)(l, u, xt.imageLayer, xt[s], xt[r], xt[i], xt[n], xt[c]),
                 alt: m
-              }, c ?? t + 1)
-            })), e?.borderImage && (0, w.jsx)(Ot, {
+              }, o ?? t + 1)
+            })), e?.borderImage && (0, g.jsx)(yt, {
               style: e?.borderImage,
               className: e?.borderImage?.displayClass
             })]
           })
         }) : null,
-        Dt = e => {
+        Nt = e => {
           let {
             hero: t,
             children: a
           } = e;
-          return t ? (0, w.jsx)("div", {
-            className: "rockstargames-sites-rockstar-tvefc561ad30f5dfe75c79d939737650dc",
+          return t ? (0, g.jsx)("div", {
+            className: "rockstargames-sites-careersefc561ad30f5dfe75c79d939737650dc",
             children: a
           }) : a
         },
-        Bt = e => {
+        jt = e => {
           let {
             badge: t = null,
             badgeType: a,
@@ -5089,30 +4901,30 @@ _global.SENTRY_RELEASE = {
             splitter: r,
             image: i,
             style: n,
-            className: o = "",
-            attributes: c = {},
+            className: c = "",
+            attributes: o = {},
             role: l,
             hero: d = !1
           } = e;
-          return (0, w.jsx)(Dt, {
+          return (0, g.jsx)(Nt, {
             hero: d,
-            children: (0, w.jsx)("figure", {
-              children: (0, w.jsxs)("div", {
-                className: (0, U.classList)("rockstargames-sites-rockstar-tvcab262c98c7f5bb3e982d9b075b3c2a8", d ? "rockstargames-sites-rockstar-tvcefd6d8859aeec1057caed28caa160c3" : "", c?.hiddenMobile ? "hiddenMobile" : "", c?.hiddenLarge ? "hiddenLarge" : "", c?.className, o),
-                style: (0, ae.safeStyles)({
+            children: (0, g.jsx)("figure", {
+              children: (0, g.jsxs)("div", {
+                className: (0, C.classList)("rockstargames-sites-careerscab262c98c7f5bb3e982d9b075b3c2a8", d ? "rockstargames-sites-careerscefd6d8859aeec1057caed28caa160c3" : "", o?.hiddenMobile ? "hiddenMobile" : "", o?.hiddenLarge ? "hiddenLarge" : "", o?.className, c),
+                style: (0, F.safeStyles)({
                   ...n,
-                  ...c?.style
+                  ...o?.style
                 }),
-                ...c,
-                children: [(0, w.jsx)(Ee, {
+                ...o,
+                children: [(0, g.jsx)(_e, {
                   image: i,
-                  className: o
-                }), (i?.badge || i?.discountTxt || t || s) && (0, w.jsx)(qe, {
+                  className: c
+                }), (i?.badge || i?.discountTxt || t || s) && (0, g.jsx)(Ee, {
                   badge: i?.discountTxt ?? i?.badge ?? t ?? s,
                   badgeType: a,
                   splitter: i?.splitter ?? r,
                   role: i?.role ?? l
-                }), i?.caption && (0, w.jsx)("figcaption", {
+                }), i?.caption && (0, g.jsx)("figcaption", {
                   dangerouslySetInnerHTML: {
                     __html: i.caption
                   }
@@ -5121,15 +4933,15 @@ _global.SENTRY_RELEASE = {
             })
           })
         },
-        Vt = {
-          pillBtn: "rockstargames-sites-rockstar-tveea0db67b0aabf28288b288845324afe",
-          selected: "rockstargames-sites-rockstar-tvd1d25362fd730ca979d5ad79de088f89",
-          multiSourceContainer: "rockstargames-sites-rockstar-tvdc538bbfc2f407ed9fe840097ccac819",
-          multiSourceImage: "rockstargames-sites-rockstar-tvee782a29692a8eb06db1287a4984c243",
-          animatePlaceholder: "rockstargames-sites-rockstar-tvfbd73f5f70c2ce64aa9c9bd398f1a3b5",
-          "loader-keyframes": "rockstargames-sites-rockstar-tvf6040b2ae96a9b0dcdb2d283c9caff59"
+        St = {
+          pillBtn: "rockstargames-sites-careerseea0db67b0aabf28288b288845324afe",
+          selected: "rockstargames-sites-careersd1d25362fd730ca979d5ad79de088f89",
+          multiSourceContainer: "rockstargames-sites-careersdc538bbfc2f407ed9fe840097ccac819",
+          multiSourceImage: "rockstargames-sites-careersee782a29692a8eb06db1287a4984c243",
+          animatePlaceholder: "rockstargames-sites-careersfbd73f5f70c2ce64aa9c9bd398f1a3b5",
+          "loader-keyframes": "rockstargames-sites-careersf6040b2ae96a9b0dcdb2d283c9caff59"
         },
-        Rt = e => {
+        Tt = e => {
           let {
             imageUrl: t,
             className: a,
@@ -5137,21 +4949,21 @@ _global.SENTRY_RELEASE = {
             style: r,
             lazy: i = !1,
             decoding: n = "auto",
-            sizes: c = [320, 480, 768, 1024, 1440, 1920, 2560]
+            sizes: o = [320, 480, 768, 1024, 1440, 1920, 2560]
           } = e;
-          const [l, d] = (0, o.useState)(!1);
-          return (0, w.jsxs)("div", {
-            className: Vt.multiSourceContainer,
-            children: [!l && (0, w.jsx)("img", {
-              className: [a, Vt.animatePlaceholder].join(" "),
+          const [l, d] = (0, c.useState)(!1);
+          return (0, g.jsxs)("div", {
+            className: St.multiSourceContainer,
+            children: [!l && (0, g.jsx)("img", {
+              className: [a, St.animatePlaceholder].join(" "),
               src: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiB2aWV3Qm94PSIwIDAgMTkyMCAxMDgwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cmVjdCB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiBmaWxsPSIjMzMzMzMzIi8+Cjwvc3ZnPgo=",
               sizes: "(max-width: 1024px) 100vw, 1024px",
               alt: "Loading...",
               style: r
-            }), (0, w.jsx)("img", {
-              className: [Vt.multiSourceImage, a].join(" "),
+            }), (0, g.jsx)("img", {
+              className: [St.multiSourceImage, a].join(" "),
               src: `${t}?im=Resize=1920`,
-              srcSet: (m = t, c.map((e => `${m}?im=Resize=${e} ${e}w`)).join(", ")),
+              srcSet: (m = t, o.map((e => `${m}?im=Resize=${e} ${e}w`)).join(", ")),
               sizes: "(max-width: 400px) 200px, (max-width: 1920px) 100vw, 1920px",
               alt: s ?? "Multi-Source Image",
               style: r,
@@ -5164,33 +4976,33 @@ _global.SENTRY_RELEASE = {
           });
           var m
         },
-        Ft = e => {
+        Ct = e => {
           let {
             impressionTracking: t,
             gtm: a = {},
             children: s
           } = e;
-          return t?.shouldTrack ? (0, w.jsx)(Ut, {
+          return t?.shouldTrack ? (0, g.jsx)(Et, {
             threshold: t?.threshold,
             gtm: a,
             children: s
           }) : s
         },
-        $t = (e, t) => a => ((e, t, a) => (0, w.jsx)(Ft, {
+        Mt = (e, t) => a => ((e, t, a) => (0, g.jsx)(Ct, {
           impressionTracking: a?.impressionTracking,
           gtm: a?.gtm,
-          children: (0, w.jsx)(e, {
+          children: (0, g.jsx)(e, {
             ...t
           })
         }))(e, a, t),
-        Gt = {
+        It = {
           event: "page_section_impression",
           event_action: "impression",
           event_category: "page_section",
           event_label: null,
           element_placement: null
         },
-        Ut = e => {
+        Et = e => {
           let {
             threshold: t = .6,
             children: a,
@@ -5198,55 +5010,55 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: r
-          } = (0, se.useGtmTrack)(), {
+          } = (0, R.useGtmTrack)(), {
             ref: i,
             inView: n
-          } = (0, ce.cD)({
+          } = (0, q.cD)({
             threshold: t,
             trackVisibility: !0,
             delay: 100
-          }), [c, l] = (0, o.useState)(!1);
-          return (0, o.useEffect)((() => {
-            n && !c && (r({
-              ...Gt,
+          }), [o, l] = (0, c.useState)(!1);
+          return (0, c.useEffect)((() => {
+            n && !o && (r({
+              ...It,
               ...s
             }), l(!0))
-          }), [n, i]), (0, w.jsx)("section", {
+          }), [n, i]), (0, g.jsx)("section", {
             ref: i,
             children: a
           })
         },
-        Ht = {
-          tag: "rockstargames-sites-rockstar-tved77774d2704bc0ebc0ac156542ae053"
+        Lt = {
+          tag: "rockstargames-sites-careersed77774d2704bc0ebc0ac156542ae053"
         },
-        qt = e => {
+        zt = e => {
           let {
             className: t,
             href: a,
             title: s,
             style: r
           } = e;
-          const i = (0, w.jsxs)("div", {
+          const i = (0, g.jsxs)("div", {
             style: r,
-            className: [Ht.tag, t].join(" "),
-            children: [(0, w.jsx)("i", {}), s]
+            className: [Lt.tag, t].join(" "),
+            children: [(0, g.jsx)("i", {}), s]
           });
-          return void 0 !== a ? (0, w.jsx)(I, {
+          return void 0 !== a ? (0, g.jsx)(f, {
             to: a,
             children: i
           }) : i
         },
-        Wt = {
-          newswireBlock: "rockstargames-sites-rockstar-tva793f470884d207243d6c3caac8ad811",
-          info: "rockstargames-sites-rockstar-tvd50f6d2bc5f983c05311292acb4c78a5",
-          title: "rockstargames-sites-rockstar-tvcc389449dc1495fc9c323fc2c547857d",
-          newswireBlockNoSpecialOrder: "rockstargames-sites-rockstar-tvffd167124f27c8e26a147f49c88796e5",
-          preview: "rockstargames-sites-rockstar-tvbbfbcf32c8c892ea29f4178949643475",
-          previewMobile: "rockstargames-sites-rockstar-tvf88852766488b21a28c42d230ea529a1",
-          top: "rockstargames-sites-rockstar-tvfa1a6f4c7d94b94f5af2dc1ac9af79f1",
-          startAnimation: "rockstargames-sites-rockstar-tve380e8c67066df6f33fc018341ea96e5"
+        Pt = {
+          newswireBlock: "rockstargames-sites-careersa793f470884d207243d6c3caac8ad811",
+          info: "rockstargames-sites-careersd50f6d2bc5f983c05311292acb4c78a5",
+          title: "rockstargames-sites-careerscc389449dc1495fc9c323fc2c547857d",
+          newswireBlockNoSpecialOrder: "rockstargames-sites-careersffd167124f27c8e26a147f49c88796e5",
+          preview: "rockstargames-sites-careersbbfbcf32c8c892ea29f4178949643475",
+          previewMobile: "rockstargames-sites-careersf88852766488b21a28c42d230ea529a1",
+          top: "rockstargames-sites-careersfa1a6f4c7d94b94f5af2dc1ac9af79f1",
+          startAnimation: "rockstargames-sites-careerse380e8c67066df6f33fc018341ea96e5"
         },
-        Xt = e => {
+        Ot = e => {
           let {
             section: t = "",
             index: a,
@@ -5256,17 +5068,17 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: n
-          } = (0, se.useGtmTrack)(), [c] = (0, C.useSearchParams)(), l = s.preview_images_parsed.newswire_block, d = {
+          } = (0, R.useGtmTrack)(), [o] = (0, m.useSearchParams)(), l = s.preview_images_parsed.newswire_block, d = {
             default: 0 !== a || r ? l.square || l.d16x9 || l._fallback : l.d16x9 || l.square || l._fallback,
             mobile: l.square || l._fallback
-          }, [m, u] = (0, ae.usePreloadImg)(d.default), g = {
+          }, [u, p] = (0, F.usePreloadImg)(d.default), _ = {
             default: {
               backgroundImage: `url(${d.default})`
             },
             mobile: {
               backgroundImage: `url(${d.mobile})`
             }
-          }, f = (0, o.useCallback)((() => {
+          }, h = (0, c.useCallback)((() => {
             n({
               event: "card_click",
               card_id: s.id,
@@ -5276,35 +5088,35 @@ _global.SENTRY_RELEASE = {
               element_placement: t
             })
           }), [s]);
-          return (0, w.jsx)(I, {
+          return (0, g.jsx)(f, {
             to: s.url,
-            className: [Wt.newswireBlock, r ? Wt.newswireBlockNoSpecialOrder : "", null !== m ? Wt.startAnimation : ""].join(" "),
+            className: [Pt.newswireBlock, r ? Pt.newswireBlockNoSpecialOrder : "", null !== u ? Pt.startAnimation : ""].join(" "),
             focused: i,
-            onClick: f,
-            children: (0, w.jsxs)(w.Fragment, {
-              children: [0 !== a || c.get("tag_id") ? (0, w.jsx)("div", {
-                className: Wt.preview,
-                style: g.default
-              }) : (0, w.jsxs)(w.Fragment, {
-                children: [(0, w.jsx)("div", {
-                  className: Wt.previewMobile,
-                  style: g.mobile
-                }), (0, w.jsx)("div", {
-                  className: Wt.preview,
-                  style: g.default
+            onClick: h,
+            children: (0, g.jsxs)(g.Fragment, {
+              children: [0 !== a || o.get("tag_id") ? (0, g.jsx)("div", {
+                className: Pt.preview,
+                style: _.default
+              }) : (0, g.jsxs)(g.Fragment, {
+                children: [(0, g.jsx)("div", {
+                  className: Pt.previewMobile,
+                  style: _.mobile
+                }), (0, g.jsx)("div", {
+                  className: Pt.preview,
+                  style: _.default
                 })]
-              }), (0, w.jsxs)("div", {
-                className: Wt.info,
-                children: [(0, w.jsxs)("div", {
-                  className: Wt.top,
-                  children: [s.primary_tags.length ? (0, w.jsx)(qt, {
+              }), (0, g.jsxs)("div", {
+                className: Pt.info,
+                children: [(0, g.jsxs)("div", {
+                  className: Pt.top,
+                  children: [s.primary_tags.length ? (0, g.jsx)(zt, {
                     title: s.primary_tags[s.primary_tags.length > 1 && 722 === s.primary_tags[0].id ? 1 : 0].name
-                  }) : "", (0, w.jsx)("time", {
+                  }) : "", (0, g.jsx)("time", {
                     dateTime: s.created,
                     children: s.created_formatted
                   })]
-                }), (0, w.jsx)("h5", {
-                  className: Wt.title,
+                }), (0, g.jsx)("h5", {
+                  className: Pt.title,
                   dangerouslySetInnerHTML: {
                     __html: s.title
                   }
@@ -5313,9 +5125,9 @@ _global.SENTRY_RELEASE = {
             })
           })
         };
-      var Yt = a(55492),
-        Kt = a.n(Yt);
-      const Qt = (0, ae.withTranslations)((e => {
+      var At = a(55492),
+        Dt = a.n(At);
+      const Bt = (0, F.withTranslations)((e => {
           let {
             section: t = "",
             relativeTo: a = "",
@@ -5325,31 +5137,31 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: n
-          } = (0, se.useGtmTrack)(), [c] = (0, C.useSearchParams)(), {
+          } = (0, R.useGtmTrack)(), [o] = (0, m.useSearchParams)(), {
             tagId: l = null
-          } = (0, C.useParams)(), [d, m] = (0, o.useState)(l ?? s ?? c.get("tag_id")), [u, g] = (0, o.useState)(1), [f, p] = (0, o.useState)([]), [_, k] = (0, o.useState)(null), {
-            data: h
-          } = (0, z.useQuery)(Kt(), {
+          } = (0, m.useParams)(), [d, u] = (0, c.useState)(l ?? s ?? o.get("tag_id")), [f, p] = (0, c.useState)(1), [_, k] = (0, c.useState)([]), [b, v] = (0, c.useState)(null), {
+            data: x
+          } = (0, h.useQuery)(Dt(), {
             variables: {
               tagId: Number(d),
-              page: u,
+              page: f,
               metaUrl: r
             },
             autoSetLoading: !0
           });
-          return (0, o.useEffect)((() => {
-            g(1), p([]), m(l ?? s ?? c.get("tag_id"))
-          }), [c.get("tag_id")]), (0, o.useEffect)((() => {
-            h && h.posts && h.posts.paging && k(h.posts.paging), h && h.posts && h.posts.results && p(f.concat(h.posts.results))
-          }), [h]), f.length ? (0, w.jsxs)(w.Fragment, {
-            children: [(0, w.jsx)(ta, {
+          return (0, c.useEffect)((() => {
+            p(1), k([]), u(l ?? s ?? o.get("tag_id"))
+          }), [o.get("tag_id")]), (0, c.useEffect)((() => {
+            x && x.posts && x.posts.paging && v(x.posts.paging), x && x.posts && x.posts.results && k(_.concat(x.posts.results))
+          }), [x]), _.length ? (0, g.jsxs)(g.Fragment, {
+            children: [(0, g.jsx)($t, {
               section: t,
-              posts: f,
+              posts: _,
               relativeTo: a,
               noSpecialOrder: null !== d
-            }), null !== _ && _.nextPage ? (0, w.jsx)(G, {
+            }), null !== b && b.nextPage ? (0, g.jsx)(T, {
               onClick: e => {
-                g(u + 1), n({
+                p(f + 1), n({
                   event: "cta_learn",
                   text: "more stories",
                   element_placement: "newswire"
@@ -5361,36 +5173,36 @@ _global.SENTRY_RELEASE = {
             }) : ""]
           }) : null
         })),
-        Zt = {
-          pillBtn: "rockstargames-sites-rockstar-tvafd0af959edb4a463c41ad4e9cc5dadc",
-          selected: "rockstargames-sites-rockstar-tvbcd59aa4a9e88d86a2cbe8d4972f8f51",
-          related: "rockstargames-sites-rockstar-tva748ad776070dab831edc1f67f66af08",
-          posts: "rockstargames-sites-rockstar-tvc0aa38678decd13ca38886b4547efedd",
-          just1post: "rockstargames-sites-rockstar-tvb1a31ddf7fd4458ee860d354a6a0ac92"
+        Vt = {
+          pillBtn: "rockstargames-sites-careersafd0af959edb4a463c41ad4e9cc5dadc",
+          selected: "rockstargames-sites-careersbcd59aa4a9e88d86a2cbe8d4972f8f51",
+          related: "rockstargames-sites-careersa748ad776070dab831edc1f67f66af08",
+          posts: "rockstargames-sites-careersc0aa38678decd13ca38886b4547efedd",
+          just1post: "rockstargames-sites-careersb1a31ddf7fd4458ee860d354a6a0ac92"
         },
-        Jt = (0, ae.withTranslations)((e => {
+        Ft = (0, F.withTranslations)((e => {
           let {
             posts: t,
             t: a
           } = e;
-          return (0, w.jsxs)("section", {
-            className: Zt.related,
-            children: [(0, w.jsx)("h2", {
+          return (0, g.jsxs)("section", {
+            className: Vt.related,
+            children: [(0, g.jsx)("h2", {
               children: a("Related Stories")
-            }), (0, w.jsx)("div", {
-              className: [Zt.posts, 1 === t.length ? Zt.just1post : ""].join(" "),
-              children: t.map((e => (0, w.jsx)(Xt, {
+            }), (0, g.jsx)("div", {
+              className: [Vt.posts, 1 === t.length ? Vt.just1post : ""].join(" "),
+              children: t.map((e => (0, g.jsx)(Ot, {
                 noSpecialOrder: !0,
                 post: e
               }, e.id)))
             })]
           })
         })),
-        ea = {
-          newswireBlocks: "rockstargames-sites-rockstar-tvc2c8eedd25de7e186655f98b2a8d8960",
-          noSpecialOrder: "rockstargames-sites-rockstar-tvc0d0db9dfc71c9f4f959b9c017b1ae4b"
+        Rt = {
+          newswireBlocks: "rockstargames-sites-careersc2c8eedd25de7e186655f98b2a8d8960",
+          noSpecialOrder: "rockstargames-sites-careersc0d0db9dfc71c9f4f959b9c017b1ae4b"
         },
-        ta = (0, ae.withGtmTracking)((e => {
+        $t = (0, F.withGtmTracking)((e => {
           let {
             section: t = "",
             noSpecialOrder: a = !1,
@@ -5398,8 +5210,8 @@ _global.SENTRY_RELEASE = {
             gtmTrack: r,
             relativeTo: i
           } = e;
-          const [n, c] = (0, o.useState)(null);
-          return (0, o.useEffect)((() => {
+          const [n, o] = (0, c.useState)(null);
+          return (0, c.useEffect)((() => {
             if (!s.length) return;
             const e = {
               event: "view_item_list",
@@ -5414,10 +5226,10 @@ _global.SENTRY_RELEASE = {
                 position: s + 1,
                 list: t
               })
-            })), r(e), c(s.length)
-          }), [s.length]), (0, w.jsx)("div", {
-            className: [ea.newswireBlocks, a ? ea.noSpecialOrder : "", ea.contextHome].join(" "),
-            children: s.map(((e, s) => (0, w.jsx)(Xt, {
+            })), r(e), o(s.length)
+          }), [s.length]), (0, g.jsx)("div", {
+            className: [Rt.newswireBlocks, a ? Rt.noSpecialOrder : "", Rt.contextHome].join(" "),
+            children: s.map(((e, s) => (0, g.jsx)(Ot, {
               section: t,
               index: s,
               noSpecialOrder: a,
@@ -5426,33 +5238,33 @@ _global.SENTRY_RELEASE = {
             }, e.id)))
           })
         })),
-        aa = {
-          pillBtn: "rockstargames-sites-rockstar-tvf87ac9a7d56545847cf4d8ca471b03e6",
-          selected: "rockstargames-sites-rockstar-tva8ea61e57fd58bfcb99aef7e6d687045",
-          grid: "rockstargames-sites-rockstar-tva57241f29873f89f89ab8b27994e71c3",
-          itemList: "rockstargames-sites-rockstar-tvdaec3f5ce63d42cb07e3e724737c8361",
-          gtaplus: "rockstargames-sites-rockstar-tvbd78cfb71ed31029ba4279325166bfab",
-          rdo: "rockstargames-sites-rockstar-tva6244398a800ffddab72c14f717b0eab",
-          noImg: "rockstargames-sites-rockstar-tve88f741af7d5e0529ff4fb6bb82af04f",
-          gtao: "rockstargames-sites-rockstar-tvab60d91453348d2e4c090ef3ebb04347",
-          custom: "rockstargames-sites-rockstar-tvc20e7ba6ceaba3afd37095b172797711",
-          yellow: "rockstargames-sites-rockstar-tvb16672deedfe102b065925cbe0fb931c",
-          hotPink: "rockstargames-sites-rockstar-tvd0d01601de7131d9d6d11321b4299e59",
-          red: "rockstargames-sites-rockstar-tvd1b5397aff94d33b57674b04a3456e03",
-          turquoise: "rockstargames-sites-rockstar-tvd6541b973ce158c8f2fb81483015211f",
-          purple: "rockstargames-sites-rockstar-tvf3e34d902681219d4d8490eb164f7727",
-          teal: "rockstargames-sites-rockstar-tva6c3b6b6a2395eb18a1174294f26f4ea",
-          blue: "rockstargames-sites-rockstar-tveade6e843c5afd48d3a8959fb0b88222",
-          green: "rockstargames-sites-rockstar-tva82c313f8f85fc6304ddb703be2fa271",
-          darkRed: "rockstargames-sites-rockstar-tvd394c61fdce2bf8894ffb801ee680c2a",
-          darkBlue: "rockstargames-sites-rockstar-tvf1d73cc00a3ab644aab949183a8298a7",
-          goldenrod: "rockstargames-sites-rockstar-tvcdcb0c5076309a329da2a6e857cc3bdf",
-          skull: "rockstargames-sites-rockstar-tvba4bd16bff2fbc40616457007b4a7442"
+        Ut = {
+          pillBtn: "rockstargames-sites-careersf87ac9a7d56545847cf4d8ca471b03e6",
+          selected: "rockstargames-sites-careersa8ea61e57fd58bfcb99aef7e6d687045",
+          grid: "rockstargames-sites-careersa57241f29873f89f89ab8b27994e71c3",
+          itemList: "rockstargames-sites-careersdaec3f5ce63d42cb07e3e724737c8361",
+          gtaplus: "rockstargames-sites-careersbd78cfb71ed31029ba4279325166bfab",
+          rdo: "rockstargames-sites-careersa6244398a800ffddab72c14f717b0eab",
+          noImg: "rockstargames-sites-careerse88f741af7d5e0529ff4fb6bb82af04f",
+          gtao: "rockstargames-sites-careersab60d91453348d2e4c090ef3ebb04347",
+          custom: "rockstargames-sites-careersc20e7ba6ceaba3afd37095b172797711",
+          yellow: "rockstargames-sites-careersb16672deedfe102b065925cbe0fb931c",
+          hotPink: "rockstargames-sites-careersd0d01601de7131d9d6d11321b4299e59",
+          red: "rockstargames-sites-careersd1b5397aff94d33b57674b04a3456e03",
+          turquoise: "rockstargames-sites-careersd6541b973ce158c8f2fb81483015211f",
+          purple: "rockstargames-sites-careersf3e34d902681219d4d8490eb164f7727",
+          teal: "rockstargames-sites-careersa6c3b6b6a2395eb18a1174294f26f4ea",
+          blue: "rockstargames-sites-careerseade6e843c5afd48d3a8959fb0b88222",
+          green: "rockstargames-sites-careersa82c313f8f85fc6304ddb703be2fa271",
+          darkRed: "rockstargames-sites-careersd394c61fdce2bf8894ffb801ee680c2a",
+          darkBlue: "rockstargames-sites-careersf1d73cc00a3ab644aab949183a8298a7",
+          goldenrod: "rockstargames-sites-careerscdcb0c5076309a329da2a6e857cc3bdf",
+          skull: "rockstargames-sites-careersba4bd16bff2fbc40616457007b4a7442"
         },
         {
-          sanitize: sa
-        } = ze(),
-        ra = e => {
+          sanitize: Gt
+        } = ke(),
+        Ht = e => {
           let {
             list: t,
             string: a,
@@ -5460,81 +5272,81 @@ _global.SENTRY_RELEASE = {
             style: r,
             className: i,
             game: n,
-            noImg: c,
+            noImg: o,
             columns: l,
             mobileColumns: d
           } = e;
-          const [m, u] = (0, o.useState)(null);
-          return (0, o.useEffect)((() => {
+          const [m, u] = (0, c.useState)(null);
+          return (0, c.useEffect)((() => {
             u(t)
-          }), [t]), a || t ? l && m ? (0, w.jsx)("div", {
-            className: aa.grid,
+          }), [t]), a || t ? l && m ? (0, g.jsx)("div", {
+            className: Ut.grid,
             style: {
               "--ordered-list-grid-column": l,
               "--ordered-list-grid-column-mobile": d ?? l
             },
-            children: (0, w.jsx)("ol", {
-              style: (0, ae.safeStyles)(r),
-              className: (0, U.classList)(aa.itemList, aa.noImg, aa[s], aa[n]),
-              children: m.map((e => (0, w.jsx)("li", {
+            children: (0, g.jsx)("ol", {
+              style: (0, F.safeStyles)(r),
+              className: (0, C.classList)(Ut.itemList, Ut.noImg, Ut[s], Ut[n]),
+              children: m.map((e => (0, g.jsx)("li", {
                 dangerouslySetInnerHTML: {
-                  __html: sa(e.content)
+                  __html: Gt(e.content)
                 }
               }, e.content)))
             })
-          }) : (0, w.jsx)("ol", {
-            style: (0, ae.safeStyles)(r),
-            className: (0, U.classList)(aa.itemList, aa.custom, c ? aa.noImg : "", s ? aa[s] : "", n ? aa[n] : "", i ?? ""),
-            children: t.map((e => (0, w.jsx)("li", {
+          }) : (0, g.jsx)("ol", {
+            style: (0, F.safeStyles)(r),
+            className: (0, C.classList)(Ut.itemList, Ut.custom, o ? Ut.noImg : "", s ? Ut[s] : "", n ? Ut[n] : "", i ?? ""),
+            children: t.map((e => (0, g.jsx)("li", {
               dangerouslySetInnerHTML: {
-                __html: sa(e?.content ?? e)
+                __html: Gt(e?.content ?? e)
               }
             }, e?.content)))
           }) : null
         };
-      var ia = a(77100),
-        na = a(84296);
-      const oa = (e, t) => {
+      var qt = a(77100),
+        Wt = a(84296);
+      const Xt = (e, t) => {
           const a = e.tiers && e.tiers.every((e => e.isComplete)),
             s = t.tiers && t.tiers.every((e => e.isComplete));
           return a && !s ? 1 : !a && s ? -1 : 0
         },
-        ca = (0, c.Os)({
+        Yt = (0, o.defineMessages)({
           pl_card_badge_content_complete: {
             id: "pl_card_badge_content_complete",
             defaultMessage: "Complete"
           }
         }),
-        la = {
-          pillBtn: "rockstargames-sites-rockstar-tve6891f053f06919f1ef0dc72cafe9ae7",
-          selected: "rockstargames-sites-rockstar-tve5cce3088e494e8ddb9b0cf5528697a3",
-          packCardTierIndicator: "rockstargames-sites-rockstar-tveee874b61946e2a65886d622445e1c38",
-          tierIndicator: "rockstargames-sites-rockstar-tvbf9ed66cb83cf9a38bfc6fbb8e105fb7",
-          active: "rockstargames-sites-rockstar-tvcfa711252c08391d3a0f1ecd8728a61a"
+        Kt = {
+          pillBtn: "rockstargames-sites-careerse6891f053f06919f1ef0dc72cafe9ae7",
+          selected: "rockstargames-sites-careerse5cce3088e494e8ddb9b0cf5528697a3",
+          packCardTierIndicator: "rockstargames-sites-careerseee874b61946e2a65886d622445e1c38",
+          tierIndicator: "rockstargames-sites-careersbf9ed66cb83cf9a38bfc6fbb8e105fb7",
+          active: "rockstargames-sites-careerscfa711252c08391d3a0f1ecd8728a61a"
         },
-        da = e => {
+        Qt = e => {
           let {
             tiers: t
           } = e;
-          return (0, w.jsx)("div", {
-            className: la.packCardTierIndicator,
-            children: t?.map(((e, t) => (0, w.jsx)("div", {
-              className: [la.tierIndicator, e.isComplete ? la.active : ""].join(" ")
+          return (0, g.jsx)("div", {
+            className: Kt.packCardTierIndicator,
+            children: t?.map(((e, t) => (0, g.jsx)("div", {
+              className: [Kt.tierIndicator, e.isComplete ? Kt.active : ""].join(" ")
             }, t)))
           })
         },
-        ma = {
-          pillBtn: "rockstargames-sites-rockstar-tve2e4b892ddcbdb2e09d3c3599a7e6c56",
-          selected: "rockstargames-sites-rockstar-tvff5c3c023fc12b68c6bf92b560c479b1",
-          packCard: "rockstargames-sites-rockstar-tvd6ef486c5f60d41c5662b092336c1f52",
-          packCardImageBox: "rockstargames-sites-rockstar-tveb4637cb1c81d1def1fd92252f90d675",
-          packCompleted: "rockstargames-sites-rockstar-tvfcd5bbd0d1e3ebd45cf2cb372468e62c",
-          packCardTextBox: "rockstargames-sites-rockstar-tva124ee1b0383d30157e84108cf10b83b",
-          badge: "rockstargames-sites-rockstar-tvd42fb1fd7d553d75675a251df2a255ee",
-          icon: "rockstargames-sites-rockstar-tvcbc69eda17393995ac9d41a8b4b531e8",
-          label: "rockstargames-sites-rockstar-tvd4649f3812d37e7407503d49dcaaba04"
+        Zt = {
+          pillBtn: "rockstargames-sites-careerse2e4b892ddcbdb2e09d3c3599a7e6c56",
+          selected: "rockstargames-sites-careersff5c3c023fc12b68c6bf92b560c479b1",
+          packCard: "rockstargames-sites-careersd6ef486c5f60d41c5662b092336c1f52",
+          packCardImageBox: "rockstargames-sites-careerseb4637cb1c81d1def1fd92252f90d675",
+          packCompleted: "rockstargames-sites-careersfcd5bbd0d1e3ebd45cf2cb372468e62c",
+          packCardTextBox: "rockstargames-sites-careersa124ee1b0383d30157e84108cf10b83b",
+          badge: "rockstargames-sites-careersd42fb1fd7d553d75675a251df2a255ee",
+          icon: "rockstargames-sites-careerscbc69eda17393995ac9d41a8b4b531e8",
+          label: "rockstargames-sites-careersd4649f3812d37e7407503d49dcaaba04"
         },
-        ua = [{
+        Jt = [{
           isComplete: !1
         }, {
           isComplete: !1
@@ -5543,7 +5355,7 @@ _global.SENTRY_RELEASE = {
         }, {
           isComplete: !1
         }],
-        ga = e => {
+        ea = e => {
           let {
             title: t,
             url: a,
@@ -5551,105 +5363,105 @@ _global.SENTRY_RELEASE = {
             className: r,
             tiers: i,
             onClick: n,
-            imageSize: c = 420,
-            imageLoaded: l
+            imageSize: l = 420,
+            imageLoaded: d
           } = e;
           const {
-            isMobile: m
-          } = (0, ae.useWindowResize)(), {
-            loggedIn: u
-          } = (0, se.useRockstarUser)(), {
-            selectedCharacterTuple: g
-          } = (0, se.useRockstarUserState)(), [f, p] = (0, o.useState)(!1), [_, k] = (0, o.useState)(l), [h, v] = (0, o.useState)(!1), b = (0, d.c)(), x = !!i?.length;
-          (0, o.useEffect)((() => {
-            if (Array.isArray(g)) {
-              const e = g?.[0];
-              v((0, ae.getGen9Consoles)().includes(e))
+            isMobile: u
+          } = (0, F.useWindowResize)(), {
+            loggedIn: f
+          } = (0, R.useRockstarUser)(), {
+            selectedCharacterTuple: p
+          } = (0, R.useRockstarUserState)(), [_, h] = (0, c.useState)(!1), [k, b] = (0, c.useState)(d), [v, x] = (0, c.useState)(!1), y = (0, o.useIntl)(), w = !!i?.length;
+          (0, c.useEffect)((() => {
+            if (Array.isArray(p)) {
+              const e = p?.[0];
+              x((0, F.getGen9Consoles)().includes(e))
             }
-          }), [String(g)]), (0, o.useEffect)((() => {
+          }), [String(p)]), (0, c.useEffect)((() => {
             if (i && i.length > 0) {
               const e = i.some((e => !e.isComplete));
-              p(!e)
-            } else p(!1)
+              h(!e)
+            } else h(!1)
           }), [i]);
-          const y = `${m?s?.mobile:s?.desktop}?im=Resize,height=${c}`;
-          return (0, ae.usePreloadImg)(y, (() => k(!0))), (0, w.jsx)(C.NavLink, {
-            className: [ma.packCard, r, f ? ma.packCompleted : ""].join(" "),
+          const N = `${u?s?.mobile:s?.desktop}?im=Resize,height=${l}`;
+          return (0, F.usePreloadImg)(N, (() => b(!0))), (0, g.jsx)(m.NavLink, {
+            className: [Zt.packCard, r, _ ? Zt.packCompleted : ""].join(" "),
             to: a,
             onClick: n,
-            children: (0, w.jsxs)("div", {
-              className: [ma.packCardImageBox, _ ? ma.packCardImageLoaded : ""].join(" "),
+            children: (0, g.jsxs)("div", {
+              className: [Zt.packCardImageBox, k ? Zt.packCardImageLoaded : ""].join(" "),
               style: {
-                "--background-image": `url(${y})`
+                "--background-image": `url(${N})`
               },
-              children: [f && (0, w.jsxs)("div", {
-                className: ma.badge,
-                children: [(0, w.jsx)("div", {
-                  className: ma.icon
-                }), (0, w.jsx)("div", {
-                  className: ma.label,
-                  children: b.formatMessage(ca.pl_card_badge_content_complete)
+              children: [_ && (0, g.jsxs)("div", {
+                className: Zt.badge,
+                children: [(0, g.jsx)("div", {
+                  className: Zt.icon
+                }), (0, g.jsx)("div", {
+                  className: Zt.label,
+                  children: y.formatMessage(Yt.pl_card_badge_content_complete)
                 })]
-              }), (0, w.jsxs)("div", {
-                className: ma.packCardTextBox,
-                children: [(0, w.jsx)("h4", {
+              }), (0, g.jsxs)("div", {
+                className: Zt.packCardTextBox,
+                children: [(0, g.jsx)("h4", {
                   children: t
-                }), u && !f && h && (0, w.jsx)(da, {
-                  tiers: x ? i : ua
+                }), f && !_ && v && (0, g.jsx)(Qt, {
+                  tiers: w ? i : Jt
                 })]
               })]
             })
           })
         },
-        fa = {
-          pillBtn: "rockstargames-sites-rockstar-tvc0607ec9e0a3925181496fc555721e0a",
-          selected: "rockstargames-sites-rockstar-tvff76988869bea7d18917be00339b2434",
-          packList: "rockstargames-sites-rockstar-tvffeeb1f272f99c5cb4711e4956c65f7f",
-          headerVisible: "rockstargames-sites-rockstar-tvf6652e03be6ce55bd8f068900093a707",
-          packCard: "rockstargames-sites-rockstar-tva53b37fe7ab10b353eceea86123258a1",
-          packGrid: "rockstargames-sites-rockstar-tvb85775dc95fb3881171ee42e49076cbf"
+        ta = {
+          pillBtn: "rockstargames-sites-careersc0607ec9e0a3925181496fc555721e0a",
+          selected: "rockstargames-sites-careersff76988869bea7d18917be00339b2434",
+          packList: "rockstargames-sites-careersffeeb1f272f99c5cb4711e4956c65f7f",
+          headerVisible: "rockstargames-sites-careersf6652e03be6ce55bd8f068900093a707",
+          packCard: "rockstargames-sites-careersa53b37fe7ab10b353eceea86123258a1",
+          packGrid: "rockstargames-sites-careersb85775dc95fb3881171ee42e49076cbf"
         };
-      ia.w$.registerPlugin(na.Q);
-      const pa = e => {
+      qt.w$.registerPlugin(Wt.Q);
+      const aa = e => {
           let {
             isHeaderVisible: t,
             packListItems: a,
-            packCardClassName: s = fa.packCard,
-            packListClassName: r = fa.packList,
-            packGridClassName: i = fa.packGrid,
+            packCardClassName: s = ta.packCard,
+            packListClassName: r = ta.packList,
+            packGridClassName: i = ta.packGrid,
             selectPackCard: n,
-            sortFunction: c = oa
+            sortFunction: o = Xt
           } = e;
-          const l = (0, o.useRef)(null),
-            d = [...a].sort(c),
-            [m, u] = (0, o.useState)(),
-            [g, f] = (0, o.useState)(!1);
-          return (0, o.useEffect)((() => {
-            if (!0 === g) return;
+          const l = (0, c.useRef)(null),
+            d = [...a].sort(o),
+            [m, u] = (0, c.useState)(),
+            [f, p] = (0, c.useState)(!1);
+          return (0, c.useEffect)((() => {
+            if (!0 === f) return;
             clearTimeout(m);
             const e = setTimeout((() => {
-              f(!0)
+              p(!0)
             }), 1e3);
             u(e)
-          }), []), (0, na.Q)((() => {
-            if (!1 !== g && l?.current) {
+          }), []), (0, Wt.Q)((() => {
+            if (!1 !== f && l?.current) {
               const e = l.current.children;
-              ia.w$.to(e, {
+              qt.w$.to(e, {
                 opacity: 1,
                 y: 0,
                 duration: .5,
                 stagger: .05,
-                ease: ia.ML.easeInOut
+                ease: qt.ML.easeInOut
               })
             }
           }), {
-            dependencies: [g, a],
+            dependencies: [f, a],
             scope: l,
             revertOnUpdate: !0
-          }), (0, w.jsx)("div", {
-            className: [r, t ? fa.headerVisible : ""].join(" "),
+          }), (0, g.jsx)("div", {
+            className: [r, t ? ta.headerVisible : ""].join(" "),
             "data-testid": "pack-list",
-            children: (0, w.jsx)("div", {
+            children: (0, g.jsx)("div", {
               ref: l,
               className: i,
               "data-testid": "pack-grid",
@@ -5658,111 +5470,111 @@ _global.SENTRY_RELEASE = {
                   id: a,
                   name: r,
                   title: i,
-                  url: o,
-                  images: c,
+                  url: c,
+                  images: o,
                   tiers: l
                 } = e;
-                return (0, w.jsx)(ga, {
+                return (0, g.jsx)(ea, {
                   title: i,
-                  url: o,
+                  url: c,
                   className: s,
-                  images: c,
+                  images: o,
                   tiers: l,
                   onClick: () => ((e, t, a, s, r) => {
                     n(e, t, a, s, r)
-                  })(r, i, o, a, t)
+                  })(r, i, c, a, t)
                 }, i)
               }))
             })
           })
         },
-        _a = {
-          pillBtn: "rockstargames-sites-rockstar-tvdb4bf6cb61b2370932e4811235d51afa",
-          selected: "rockstargames-sites-rockstar-tvb691088f1c9719532c68ca7b97487e5b",
-          chipButton: "rockstargames-sites-rockstar-tvbfe6fefc1068ed81c8b38519a854285f"
+        sa = {
+          pillBtn: "rockstargames-sites-careersdb4bf6cb61b2370932e4811235d51afa",
+          selected: "rockstargames-sites-careersb691088f1c9719532c68ca7b97487e5b",
+          chipButton: "rockstargames-sites-careersbfe6fefc1068ed81c8b38519a854285f"
         },
-        ka = e => {
+        ra = e => {
           let {
             title: t,
             onClick: a,
             selected: s
           } = e;
-          return (0, w.jsx)("button", {
+          return (0, g.jsx)("button", {
             type: "button",
             onClick: a,
             tabIndex: 0,
             "aria-label": t,
-            className: [_a.chipButton, s ? _a.selected : ""].join(" "),
-            children: (0, w.jsx)("div", {
+            className: [sa.chipButton, s ? sa.selected : ""].join(" "),
+            children: (0, g.jsx)("div", {
               children: t
             })
           })
         };
-      var ha;
+      var ia;
 
-      function va() {
-        return va = Object.assign ? Object.assign.bind() : function(e) {
+      function na() {
+        return na = Object.assign ? Object.assign.bind() : function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var a = arguments[t];
             for (var s in a) Object.prototype.hasOwnProperty.call(a, s) && (e[s] = a[s])
           }
           return e
-        }, va.apply(this, arguments)
+        }, na.apply(this, arguments)
       }
-      const ba = e => o.createElement("svg", va({
+      const ca = e => c.createElement("svg", na({
         xmlns: "http://www.w3.org/2000/svg",
         width: 24,
         height: 24,
         fill: "none"
-      }, e), ha || (ha = o.createElement("path", {
+      }, e), ia || (ia = c.createElement("path", {
         stroke: "#fff",
         strokeLinecap: "round",
         strokeLinejoin: "round",
         strokeWidth: 2,
         d: "m15 18-6-6 6-6"
       })));
-      var xa;
+      var oa;
 
-      function ya() {
-        return ya = Object.assign ? Object.assign.bind() : function(e) {
+      function la() {
+        return la = Object.assign ? Object.assign.bind() : function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var a = arguments[t];
             for (var s in a) Object.prototype.hasOwnProperty.call(a, s) && (e[s] = a[s])
           }
           return e
-        }, ya.apply(this, arguments)
+        }, la.apply(this, arguments)
       }
-      const wa = e => o.createElement("svg", ya({
+      const da = e => c.createElement("svg", la({
           xmlns: "http://www.w3.org/2000/svg",
           width: 24,
           height: 24,
           fill: "none"
-        }, e), xa || (xa = o.createElement("path", {
+        }, e), oa || (oa = c.createElement("path", {
           stroke: "#fff",
           strokeLinecap: "round",
           strokeLinejoin: "round",
           strokeWidth: 2,
           d: "m9 18 6-6-6-6"
         }))),
-        Na = {
-          pillBtn: "rockstargames-sites-rockstar-tvf5c8cbcdc2408c602e1d5c5ef98091a1",
-          selected: "rockstargames-sites-rockstar-tvf05732bff172f32532936ffdf636a215",
-          navScrollButton: "rockstargames-sites-rockstar-tvef8ca38f98b731ff5dfe07937b1bbe34"
+        ma = {
+          pillBtn: "rockstargames-sites-careersf5c8cbcdc2408c602e1d5c5ef98091a1",
+          selected: "rockstargames-sites-careersf05732bff172f32532936ffdf636a215",
+          navScrollButton: "rockstargames-sites-careersef8ca38f98b731ff5dfe07937b1bbe34"
         },
-        ja = e => {
+        ua = e => {
           let {
             direction: t,
             className: a,
             ...s
           } = e;
-          return (0, w.jsxs)("button", {
+          return (0, g.jsxs)("button", {
             type: "button",
-            className: [a, Na.navScrollButton].join(" "),
+            className: [a, ma.navScrollButton].join(" "),
             ...s,
-            children: ["left" === t && (0, w.jsx)(ba, {}), "right" === t && (0, w.jsx)(wa, {})]
+            children: ["left" === t && (0, g.jsx)(ca, {}), "right" === t && (0, g.jsx)(da, {})]
           })
         },
-        Sa = (0, c.Os)({
+        ga = (0, o.defineMessages)({
           pln_career_progress_unavailable: {
             id: "pln_career_progress_unavailable",
             defaultMessage: "Sorry, career progress pack cards are currently unavailable."
@@ -5828,45 +5640,45 @@ _global.SENTRY_RELEASE = {
             defaultMessage: "Scroll Right"
           }
         }),
-        Ta = {
-          pillBtn: "rockstargames-sites-rockstar-tvc07e609b8b71ab690ceb8c0ce0a10e3b",
-          selected: "rockstargames-sites-rockstar-tvb7277764b073fb1731f97500d63602dd",
-          chipsContainer: "rockstargames-sites-rockstar-tvb12cbbc254604b2d0a9e23a794cc306b",
-          chips: "rockstargames-sites-rockstar-tvfde4c31ca848c29a1064a0fee3686f93",
-          nextChipNavButton: "rockstargames-sites-rockstar-tve753e2314e48a7d59ead26e77cac50aa",
-          previousChipNavButton: "rockstargames-sites-rockstar-tvce3553d0304e228596f67c2308240648",
-          nextNavIcon: "rockstargames-sites-rockstar-tvef938f00847374bd89f70d0e5b1f97a8",
-          previousNavIcon: "rockstargames-sites-rockstar-tvf750c5a49886ae190c14e52aa026a417"
+        fa = {
+          pillBtn: "rockstargames-sites-careersc07e609b8b71ab690ceb8c0ce0a10e3b",
+          selected: "rockstargames-sites-careersb7277764b073fb1731f97500d63602dd",
+          chipsContainer: "rockstargames-sites-careersb12cbbc254604b2d0a9e23a794cc306b",
+          chips: "rockstargames-sites-careersfde4c31ca848c29a1064a0fee3686f93",
+          nextChipNavButton: "rockstargames-sites-careerse753e2314e48a7d59ead26e77cac50aa",
+          previousChipNavButton: "rockstargames-sites-careersce3553d0304e228596f67c2308240648",
+          nextNavIcon: "rockstargames-sites-careersef938f00847374bd89f70d0e5b1f97a8",
+          previousNavIcon: "rockstargames-sites-careersf750c5a49886ae190c14e52aa026a417"
         },
-        Ca = e => {
+        pa = e => {
           let {
             navItems: t,
             category: a,
             setCategory: s,
-            chipsContainerClass: r = Ta.chipsContainer,
+            chipsContainerClass: r = fa.chipsContainer,
             previousChipButtonClass: i = "",
             nextChipBtnClass: n = ""
           } = e;
-          const c = (0, d.c)(),
+          const l = (0, o.useIntl)(),
             {
-              track: l
-            } = (0, se.useGtmTrack)(),
+              track: d
+            } = (0, R.useGtmTrack)(),
             {
-              pathname: m
-            } = (0, C.useLocation)(),
-            u = (0, o.useMemo)((() => Math.max(t.findIndex((e => e.name === a)), 0)), [t, m]),
-            [g, f] = (0, o.useState)(u),
-            [p, _] = (0, o.useState)(!1),
-            [k, h] = (0, o.useState)(!1),
-            [v, b] = (0, o.useState)(!1),
-            x = (0, o.useRef)(null),
-            y = (0, o.useRef)(null),
-            N = (0, o.useRef)(null),
-            j = (0, o.useCallback)(((e, t) => {
-              N.current && N.current.slideTo(e), f(e), S(`Career Progress Nav > ${t}`)
-            }), [l]),
-            S = (e, t) => {
-              l({
+              pathname: u
+            } = (0, m.useLocation)(),
+            f = (0, c.useMemo)((() => Math.max(t.findIndex((e => e.name === a)), 0)), [t, u]),
+            [p, _] = (0, c.useState)(f),
+            [h, k] = (0, c.useState)(!1),
+            [b, v] = (0, c.useState)(!1),
+            [x, y] = (0, c.useState)(!1),
+            w = (0, c.useRef)(null),
+            N = (0, c.useRef)(null),
+            j = (0, c.useRef)(null),
+            S = (0, c.useCallback)(((e, t) => {
+              j.current && j.current.slideTo(e), _(e), T(`Career Progress Nav > ${t}`)
+            }), [d]),
+            T = (e, t) => {
+              d({
                 event: "component_tab_click",
                 event_action: "click",
                 event_category: "tab",
@@ -5876,77 +5688,77 @@ _global.SENTRY_RELEASE = {
                 element_placement: e
               })
             };
-          (0, o.useEffect)((() => {
-            s(g)
-          }), [g]);
-          const T = e => {
-            e.isEnd ? h(!0) : h(!1), e.isBeginning ? b(!0) : b(!1)
+          (0, c.useEffect)((() => {
+            s(p)
+          }), [p]);
+          const M = e => {
+            e.isEnd ? v(!0) : v(!1), e.isBeginning ? y(!0) : y(!1)
           };
-          return (0, o.useEffect)((() => {
-            N.current && ((N.current.wrapperEl.clientWidth || 0) > (N.current.el.clientWidth || 0) ? (_(!0), N.current.params.centeredSlides = !0, N.current.params.centeredSlidesBounds = !0) : (_(!1), N.current.params.centeredSlides = !1, N.current.params.centeredSlidesBounds = !1))
-          }), [N.current?.wrapperEl.clientWidth, N.current?.el.clientWidth]), (0, w.jsxs)("div", {
+          return (0, c.useEffect)((() => {
+            j.current && ((j.current.wrapperEl.clientWidth || 0) > (j.current.el.clientWidth || 0) ? (k(!0), j.current.params.centeredSlides = !0, j.current.params.centeredSlidesBounds = !0) : (k(!1), j.current.params.centeredSlides = !1, j.current.params.centeredSlidesBounds = !1))
+          }), [j.current?.wrapperEl.clientWidth, j.current?.el.clientWidth]), (0, g.jsxs)("div", {
             className: r,
-            children: [!v && p && (0, w.jsx)("div", {
-              ref: y,
-              className: (0, U.classList)(Ta.previousChipNavButton, i),
-              children: (0, w.jsx)(ja, {
+            children: [!x && h && (0, g.jsx)("div", {
+              ref: N,
+              className: (0, C.classList)(fa.previousChipNavButton, i),
+              children: (0, g.jsx)(ua, {
                 direction: "left",
-                className: Ta.previousNavIcon,
+                className: fa.previousNavIcon,
                 onClick: () => {
-                  N.current && (N.current?.slidePrev(), N.current.isBeginning ? b(!0) : b(!1), l({
+                  j.current && (j.current?.slidePrev(), j.current.isBeginning ? y(!0) : y(!1), d({
                     event: "carousel_previous",
                     event_action: "click",
                     event_category: "carousel",
                     element_placement: "career progress page"
                   }))
                 },
-                "aria-label": c.formatMessage(Sa.pln_scroll_left)
+                "aria-label": l.formatMessage(ga.pln_scroll_left)
               })
-            }), (0, w.jsx)("div", {
-              className: Ta.chips,
-              children: (0, w.jsx)(K.wx, {
-                onBeforeInit: e => N.current = e,
-                onInit: T,
-                className: Ta.chips,
+            }), (0, g.jsx)("div", {
+              className: fa.chips,
+              children: (0, g.jsx)(P.wx, {
+                onBeforeInit: e => j.current = e,
+                onInit: M,
+                className: fa.chips,
                 direction: "horizontal",
                 grabCursor: !0,
                 slidesPerView: "auto",
-                initialSlide: g,
-                onSlideChange: T,
-                onResize: T,
+                initialSlide: p,
+                onSlideChange: M,
+                onResize: M,
                 children: t.map(((e, t) => {
                   let {
                     title: a
                   } = e;
-                  return (0, w.jsx)(K.Ky, {
-                    children: (0, w.jsx)(ka, {
+                  return (0, g.jsx)(P.Ky, {
+                    children: (0, g.jsx)(ra, {
                       title: a,
-                      onClick: () => j(t, a),
-                      selected: g === t
+                      onClick: () => S(t, a),
+                      selected: p === t
                     })
                   }, a)
                 }))
               })
-            }), !k && p && (0, w.jsx)("div", {
-              ref: x,
-              className: (0, U.classList)(Ta.nextChipNavButton, n),
-              children: (0, w.jsx)(ja, {
+            }), !b && h && (0, g.jsx)("div", {
+              ref: w,
+              className: (0, C.classList)(fa.nextChipNavButton, n),
+              children: (0, g.jsx)(ua, {
                 direction: "right",
-                className: Ta.nextNavIcon,
+                className: fa.nextNavIcon,
                 onClick: () => {
-                  N.current && (N.current?.slideNext(), N.current.isEnd ? h(!0) : h(!1), l({
+                  j.current && (j.current?.slideNext(), j.current.isEnd ? v(!0) : v(!1), d({
                     event: "carousel_next",
                     event_action: "click",
                     event_category: "carousel",
                     element_placement: "career progress page"
                   }))
                 },
-                "aria-label": c.formatMessage(Sa.pln_scroll_right)
+                "aria-label": l.formatMessage(ga.pln_scroll_right)
               })
             })]
           })
         },
-        Ma = e => {
+        _a = e => {
           let {
             navItems: t,
             onNavItemClick: a,
@@ -5955,7 +5767,7 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: i
-          } = (0, se.useGtmTrack)(), [n, c] = (0, o.useState)(0), l = (0, o.useCallback)(((e, s) => {
+          } = (0, R.useGtmTrack)(), [n, o] = (0, c.useState)(0), l = (0, c.useCallback)(((e, s) => {
             d(`Secondary Nav > ${t[n].title} > ${e}`, s), a()
           }), [t, a, n, i]), d = (e, t) => {
             i({
@@ -5968,8 +5780,8 @@ _global.SENTRY_RELEASE = {
               element_placement: e
             })
           };
-          return (0, w.jsx)(at.q.div, {
-            className: "rockstargames-sites-rockstar-tvaa2ce15f29ac99fe06895664698bb6cc",
+          return (0, g.jsx)($e.q.div, {
+            className: "rockstargames-sites-careersaa2ce15f29ac99fe06895664698bb6cc",
             initial: {
               height: 0
             },
@@ -5980,20 +5792,20 @@ _global.SENTRY_RELEASE = {
               ease: "easeInOut",
               duration: .4
             },
-            children: (0, w.jsxs)("div", {
-              className: "rockstargames-sites-rockstar-tvf2f85d11f6ee99282db61467ebdbd00f",
-              children: [(0, w.jsx)("div", {
-                className: "rockstargames-sites-rockstar-tvc5288c05172905ec86e3fb56c010d6d3",
-                children: (0, w.jsx)(Ca, {
+            children: (0, g.jsxs)("div", {
+              className: "rockstargames-sites-careersf2f85d11f6ee99282db61467ebdbd00f",
+              children: [(0, g.jsx)("div", {
+                className: "rockstargames-sites-careersc5288c05172905ec86e3fb56c010d6d3",
+                children: (0, g.jsx)(pa, {
                   navItems: t,
                   category: t[n]?.name,
-                  setCategory: c,
-                  nextChipBtnClass: "rockstargames-sites-rockstar-tvc8a45e31d035c8e867358deea365ceac",
-                  prevChipBtnClass: "rockstargames-sites-rockstar-tve9684050ab2f4aa408ae565c740cf50c"
+                  setCategory: o,
+                  nextChipBtnClass: "rockstargames-sites-careersc8a45e31d035c8e867358deea365ceac",
+                  prevChipBtnClass: "rockstargames-sites-careerse9684050ab2f4aa408ae565c740cf50c"
                 })
-              }), (0, w.jsx)("div", {
-                className: "rockstargames-sites-rockstar-tvf1adea94eb32de966a0e622247370f4e",
-                children: (0, w.jsx)(pa, {
+              }), (0, g.jsx)("div", {
+                className: "rockstargames-sites-careersf1adea94eb32de966a0e622247370f4e",
+                children: (0, g.jsx)(aa, {
                   isHeaderVisible: r,
                   packListItems: t[n]?.subNavItems ?? [],
                   selectPackCard: l
@@ -6002,8 +5814,8 @@ _global.SENTRY_RELEASE = {
             })
           })
         },
-        Ia = "rockstargames-sites-rockstar-tvc54c374409e11d1429ce99457cbf7441",
-        Ea = e => {
+        ha = "rockstargames-sites-careersc54c374409e11d1429ce99457cbf7441",
+        ka = e => {
           let {
             children: t,
             data: a,
@@ -6011,16 +5823,16 @@ _global.SENTRY_RELEASE = {
             page: r,
             className: i
           } = e;
-          return (0, w.jsx)("a", {
+          return (0, g.jsx)("a", {
             href: "#",
-            className: r === a.page ? `rockstargames-sites-rockstar-tvc0eebf4f915ff9f5cc362e22d6d7d976 ${i??""}` : "",
+            className: r === a.page ? `rockstargames-sites-careersc0eebf4f915ff9f5cc362e22d6d7d976 ${i??""}` : "",
             onClick: e => {
               e.preventDefault(), s(r)
             },
             children: t
           })
         },
-        La = e => {
+        ba = e => {
           let {
             data: t,
             onPageUpdate: a,
@@ -6028,29 +5840,29 @@ _global.SENTRY_RELEASE = {
           } = e;
           if (1 === t.pageCount) return null;
           const r = Array.from(new Array(Math.min(t.pageCount, 8)), ((e, a) => a + Math.min(Math.max(t.pageCount - 8, 1), Math.max(2, t.page - 4))));
-          return (0, w.jsxs)("div", {
-            className: `rockstargames-sites-rockstar-tva626faab2a5a03e3466dda5c79960575 ${s??""}`,
-            children: [t.pageCount > 8 ? (0, w.jsxs)(w.Fragment, {
-              children: [(0, w.jsx)(Ea, {
+          return (0, g.jsxs)("div", {
+            className: `rockstargames-sites-careersa626faab2a5a03e3466dda5c79960575 ${s??""}`,
+            children: [t.pageCount > 8 ? (0, g.jsxs)(g.Fragment, {
+              children: [(0, g.jsx)(ka, {
                 data: t,
                 onPageUpdate: a,
                 page: 1,
                 children: "1"
-              }), 2 !== r[0] ? (0, w.jsx)("div", {
-                className: Ia,
+              }), 2 !== r[0] ? (0, g.jsx)("div", {
+                className: ha,
                 children: "..."
               }) : ""]
-            }) : "", r.map((e => (0, w.jsx)(Ea, {
+            }) : "", r.map((e => (0, g.jsx)(ka, {
               data: t,
               onPageUpdate: a,
               page: e,
               className: s,
               children: e
-            }, e))), t.pageCount > 8 ? (0, w.jsxs)(w.Fragment, {
-              children: [r.slice(-1)[0] + 1 < t.pageCount ? (0, w.jsx)("div", {
-                className: Ia,
+            }, e))), t.pageCount > 8 ? (0, g.jsxs)(g.Fragment, {
+              children: [r.slice(-1)[0] + 1 < t.pageCount ? (0, g.jsx)("div", {
+                className: ha,
                 children: "..."
-              }) : "", (0, w.jsx)(Ea, {
+              }) : "", (0, g.jsx)(ka, {
                 data: t,
                 onPageUpdate: a,
                 page: t.pageCount,
@@ -6059,15 +5871,15 @@ _global.SENTRY_RELEASE = {
             }) : ""]
           })
         };
-      var za = a(77616);
-      const Pa = e => {
+      var va = a(77616);
+      const xa = e => {
           let {
             children: t
           } = e;
           const {
             parallaxController: a
-          } = (0, za.oZ)();
-          return (0, o.useLayoutEffect)((() => {
+          } = (0, va.oZ)();
+          return (0, c.useLayoutEffect)((() => {
             if (!a) return;
             const e = setInterval((() => {
               a.update()
@@ -6075,44 +5887,44 @@ _global.SENTRY_RELEASE = {
             return () => clearInterval(e)
           }), [a]), t
         },
-        Oa = {
-          parallaxWrapper: "rockstargames-sites-rockstar-tvdb1ab316d17367d31cf94cdde25e463a",
-          large: "rockstargames-sites-rockstar-tvd520d28c6e4e797aea99f61c89ad2bd8",
-          medium: "rockstargames-sites-rockstar-tvf008365ee42d37e24e606107346b1c83",
-          small: "rockstargames-sites-rockstar-tvcb5937d1a102ac4a66c4e373e6253946"
+        ya = {
+          parallaxWrapper: "rockstargames-sites-careersdb1ab316d17367d31cf94cdde25e463a",
+          large: "rockstargames-sites-careersd520d28c6e4e797aea99f61c89ad2bd8",
+          medium: "rockstargames-sites-careersf008365ee42d37e24e606107346b1c83",
+          small: "rockstargames-sites-careerscb5937d1a102ac4a66c4e373e6253946"
         },
-        Aa = e => {
+        wa = e => {
           let {
             scrollAxis: t = "vertical",
             size: a = "",
             style: s = {},
             children: r
           } = e;
-          return (0, w.jsx)(za.qK, {
+          return (0, g.jsx)(va.qK, {
             scrollAxis: t,
-            children: (0, w.jsx)(Pa, {
-              children: (0, w.jsx)("div", {
-                className: (0, U.classList)(Oa.parallaxWrapper, Oa[a]),
+            children: (0, g.jsx)(xa, {
+              children: (0, g.jsx)("div", {
+                className: (0, C.classList)(ya.parallaxWrapper, ya[a]),
                 style: s,
                 "data-context": "parallax-wrapper",
-                children: r ? r.map(((e, a) => (0, o.cloneElement)(e, {
+                children: r ? r.map(((e, a) => (0, c.cloneElement)(e, {
                   scrollAxis: t,
                   style: {
                     ...e?.props?.style,
                     zIndex: a
                   }
-                }))) : (0, w.jsx)("div", {})
+                }))) : (0, g.jsx)("div", {})
               })
             })
           })
         },
-        Da = e => {
+        Na = e => {
           let {
             layers: t = [],
             displayClass: a = "",
             style: s = {}
           } = e;
-          const r = (0, U.useGenerateCdnSource)();
+          const r = (0, C.useGenerateCdnSource)();
           if (!t || !t[0]?.image) return null;
           const i = t.map((e => ({
             ...e,
@@ -6124,14 +5936,14 @@ _global.SENTRY_RELEASE = {
             style: void 0,
             image: r(e?.image ?? null)
           })));
-          return (0, w.jsx)(za.Sr, {
-            className: (0, U.classList)("rockstargames-sites-rockstar-tvb8c85703a3c76902e49a61a6afcb81bc", a),
+          return (0, g.jsx)(va.Sr, {
+            className: (0, C.classList)("rockstargames-sites-careersb8c85703a3c76902e49a61a6afcb81bc", a),
             layers: i,
             style: s
           })
         },
-        Ba = "rockstargames-sites-rockstar-tvc4aa8e5d29b433c400796d0c493a9a4d",
-        Va = e => {
+        ja = "rockstargames-sites-careersc4aa8e5d29b433c400796d0c493a9a4d",
+        Sa = e => {
           let {
             minOffset: t = 0,
             maxOffset: a = 0,
@@ -6140,19 +5952,19 @@ _global.SENTRY_RELEASE = {
             style: i = {},
             children: n
           } = e;
-          return "horizontal" === s ? (0, w.jsx)(za.mw, {
+          return "horizontal" === s ? (0, g.jsx)(va.mw, {
             x: [t, a],
-            className: (0, U.classList)(Ba, r),
+            className: (0, C.classList)(ja, r),
             styleOuter: i,
             children: n
-          }) : (0, w.jsx)(za.mw, {
+          }) : (0, g.jsx)(va.mw, {
             y: [t, a],
-            className: (0, U.classList)(Ba, r),
+            className: (0, C.classList)(ja, r),
             styleOuter: i,
             children: n
           })
         },
-        Ra = (e, t) => {
+        Ta = (e, t) => {
           switch (e) {
             case "pc":
               return "small" === t ? {
@@ -6200,8 +6012,8 @@ _global.SENTRY_RELEASE = {
               }
           }
         },
-        Fa = e => a(e < 100 ? 84184 : e > 99 && e < 500 ? 69450 : e > 499 && e < 750 ? 31216 : 85724),
-        $a = (0, c.Os)({
+        Ca = e => a(e < 100 ? 84184 : e > 99 && e < 500 ? 69450 : e > 499 && e < 750 ? 31216 : 85724),
+        Ma = (0, o.defineMessages)({
           sc_link_activity_feed: {
             id: "sc_link_activity_feed",
             defaultMessage: "Activity Feed"
@@ -6327,64 +6139,64 @@ _global.SENTRY_RELEASE = {
             defaultMessage: "New notifications"
           }
         }),
-        Ga = {
-          pillBtn: "rockstargames-sites-rockstar-tve4a42eaa9bfb682035e61ac2e2a34515",
-          selected: "rockstargames-sites-rockstar-tveb889d8958be54a67b790d7529530986",
-          scCharacterCard: "rockstargames-sites-rockstar-tvdf279e92086c0d3c96905b3a91b369ed",
-          scAvatar: "rockstargames-sites-rockstar-tvc1890feda663c93b0f767890394cbdcf",
-          scCharNames: "rockstargames-sites-rockstar-tve79d7f5515617d849d7d13cd4ff048ce",
-          scCharacterStats: "rockstargames-sites-rockstar-tvc721f3aeef9e5ae6b98adca1253e4709",
-          scUserName: "rockstargames-sites-rockstar-tveabff0cc0139013f5a60fea6f48c56f6",
-          scRpLevel: "rockstargames-sites-rockstar-tvb1f87c58a800ad546200fbf17e029f35",
-          scRpIcon: "rockstargames-sites-rockstar-tvf1e0bcba6214698c490b8201bbd850b7"
+        Ia = {
+          pillBtn: "rockstargames-sites-careerse4a42eaa9bfb682035e61ac2e2a34515",
+          selected: "rockstargames-sites-careerseb889d8958be54a67b790d7529530986",
+          scCharacterCard: "rockstargames-sites-careersdf279e92086c0d3c96905b3a91b369ed",
+          scAvatar: "rockstargames-sites-careersc1890feda663c93b0f767890394cbdcf",
+          scCharNames: "rockstargames-sites-careerse79d7f5515617d849d7d13cd4ff048ce",
+          scCharacterStats: "rockstargames-sites-careersc721f3aeef9e5ae6b98adca1253e4709",
+          scUserName: "rockstargames-sites-careerseabff0cc0139013f5a60fea6f48c56f6",
+          scRpLevel: "rockstargames-sites-careersb1f87c58a800ad546200fbf17e029f35",
+          scRpIcon: "rockstargames-sites-careersf1e0bcba6214698c490b8201bbd850b7"
         },
-        Ua = j((e => {
+        Ea = (0, o.withIntl)((e => {
           let {
             characterData: t
           } = e;
-          const s = (0, d.c)(),
+          const s = (0, o.useIntl)(),
             {
               platform: r,
               platformUsername: i,
               mugshotUrl: n,
-              stats: c
+              stats: l
             } = t,
-            [l, m] = (0, o.useState)(n),
-            u = Ra(r, "large");
-          return (0, w.jsxs)("div", {
-            className: Ga.scCharacterCard,
-            children: [(0, w.jsx)("div", {
-              className: Ga.scAvatar,
+            [d, m] = (0, c.useState)(n),
+            u = Ta(r, "large");
+          return (0, g.jsxs)("div", {
+            className: Ia.scCharacterCard,
+            children: [(0, g.jsx)("div", {
+              className: Ia.scAvatar,
               "data-size": "small",
-              children: (0, w.jsx)("img", {
-                src: l,
-                alt: s.formatMessage($a.profile_selector_mugshot, {
+              children: (0, g.jsx)("img", {
+                src: d,
+                alt: s.formatMessage(Ma.profile_selector_mugshot, {
                   userName: i
                 }),
                 onError: () => {
                   m(a(71084))
                 }
               })
-            }), (0, w.jsx)("div", {
-              className: Ga.scCharacterStats,
-              children: (0, w.jsxs)("div", {
-                className: Ga.scCharNames,
-                children: [(0, w.jsx)("img", {
+            }), (0, g.jsx)("div", {
+              className: Ia.scCharacterStats,
+              children: (0, g.jsxs)("div", {
+                className: Ia.scCharNames,
+                children: [(0, g.jsx)("img", {
                   src: u.src,
                   alt: u.alt
-                }), (0, w.jsx)("div", {
-                  className: Ga.scUserName,
+                }), (0, g.jsx)("div", {
+                  className: Ia.scUserName,
                   "data-size": "small",
                   children: i
-                }), (0, w.jsx)("div", {
-                  className: Ga.scRp,
-                  children: (0, w.jsxs)("div", {
-                    className: Ga.scRpLevel,
-                    children: [(0, w.jsx)("img", {
-                      className: Ga.scRpIcon,
-                      src: Fa(c.overview.rank.value),
-                      alt: s.formatMessage($a.profile_selector_rp_icon)
-                    }), (0, w.jsx)("span", {
+                }), (0, g.jsx)("div", {
+                  className: Ia.scRp,
+                  children: (0, g.jsxs)("div", {
+                    className: Ia.scRpLevel,
+                    children: [(0, g.jsx)("img", {
+                      className: Ia.scRpIcon,
+                      src: Ca(l.overview.rank.value),
+                      alt: s.formatMessage(Ma.profile_selector_rp_icon)
+                    }), (0, g.jsx)("span", {
                       children: t.stats.overview.rank.value
                     })]
                   })
@@ -6392,131 +6204,131 @@ _global.SENTRY_RELEASE = {
               })
             })]
           })
-        }), S);
-      var Ha = a(69724);
-      const qa = (0, z.makeVarNamespace)("@rockstargames/components/profile-switcher"),
-        Wa = qa("languageSelectorOpenedReactive", !1),
-        Xa = e => Wa(e),
-        Ya = qa("activeSubNavIdReactive", -1),
-        Ka = e => Ya(e),
-        Qa = qa("subNavExtraHeightReactive", -1),
-        Za = e => Qa(e),
-        Ja = qa("scNavOpenedReactive", !0),
-        es = e => Ja(e),
-        ts = qa("charListHiddenReactive", !0),
-        as = e => ts(e),
-        ss = () => {
-          const e = (0, z.useReactiveVar)(Wa),
-            t = (0, z.useReactiveVar)(Ya),
-            a = (0, z.useReactiveVar)(Qa),
-            s = (0, z.useReactiveVar)(Ja),
-            r = (0, z.useReactiveVar)(ts);
-          return (0, o.useEffect)((() => {
-            r || (e && Xa(!1), s && (es(!1), Ka(-1)))
-          }), [r]), (0, o.useEffect)((() => {
-            !e && r && (s || es(!0))
-          }), [e, r]), (0, o.useMemo)((() => ({
+        }), l);
+      var La = a(92104);
+      const za = (0, h.makeVarNamespace)("@rockstargames/components/profile-switcher"),
+        Pa = za("languageSelectorOpenedReactive", !1),
+        Oa = e => Pa(e),
+        Aa = za("activeSubNavIdReactive", -1),
+        Da = e => Aa(e),
+        Ba = za("subNavExtraHeightReactive", -1),
+        Va = e => Ba(e),
+        Fa = za("scNavOpenedReactive", !0),
+        Ra = e => Fa(e),
+        $a = za("charListHiddenReactive", !0),
+        Ua = e => $a(e),
+        Ga = () => {
+          const e = (0, h.useReactiveVar)(Pa),
+            t = (0, h.useReactiveVar)(Aa),
+            a = (0, h.useReactiveVar)(Ba),
+            s = (0, h.useReactiveVar)(Fa),
+            r = (0, h.useReactiveVar)($a);
+          return (0, c.useEffect)((() => {
+            r || (e && Oa(!1), s && (Ra(!1), Da(-1)))
+          }), [r]), (0, c.useEffect)((() => {
+            !e && r && (s || Ra(!0))
+          }), [e, r]), (0, c.useMemo)((() => ({
             languageSelectorOpened: e,
-            setLanguageSelectorOpened: Xa,
+            setLanguageSelectorOpened: Oa,
             activeSubNavId: t,
-            setActiveSubNavId: Ka,
+            setActiveSubNavId: Da,
             subNavExtraHeight: a,
-            setSubNavExtraHeight: Za,
+            setSubNavExtraHeight: Va,
             scNavOpened: s,
-            setScNavOpened: es,
+            setScNavOpened: Ra,
             charListHidden: r,
-            setCharListHidden: as
+            setCharListHidden: Ua
           })), [e, t, a, s, r])
         };
-      var rs = a(69760),
-        is = a.n(rs),
-        ns = a(9860);
-      const os = {
+      var Ha = a(69760),
+        qa = a.n(Ha),
+        Wa = a(9860);
+      const Xa = {
           event: "account_menu_click",
           element_placement: "Account Menu"
         },
-        cs = e => ({
-          text: e.formatMessage($a.sc_link_help),
+        Ya = e => ({
+          text: e.formatMessage(Ma.sc_link_help),
           target: "_self",
           ga: {
-            ...os,
-            text: $a.sc_link_help.defaultMessage
+            ...Xa,
+            text: Ma.sc_link_help.defaultMessage
           },
           dataTestId: "helpButton",
           children: [{
-            text: e.formatMessage($a.sc_link_support),
+            text: e.formatMessage(Ma.sc_link_support),
             location: {
-              domain: "support",
+              domain: ht.U.support,
               path: "/"
             },
             target: "_self",
             ga: {
-              ...os,
-              text: $a.sc_link_support.defaultMessage
+              ...Xa,
+              text: Ma.sc_link_support.defaultMessage
             },
             dataTestId: "supportLink"
           }, {
-            text: e.formatMessage($a.sc_link_legal),
+            text: e.formatMessage(Ma.sc_link_legal),
             location: {
-              domain: u,
+              domain: ht.U.www,
               path: "/legal"
             },
             target: "_self",
             ga: {
-              ...os,
-              text: $a.sc_link_legal.defaultMessage
+              ...Xa,
+              text: Ma.sc_link_legal.defaultMessage
             },
             dataTestId: "legalLink"
           }, {
-            text: e.formatMessage($a.sc_link_privacy_policy),
+            text: e.formatMessage(Ma.sc_link_privacy_policy),
             location: {
-              domain: u,
+              domain: ht.U.www,
               path: "/privacy"
             },
             target: "_self",
             ga: {
-              ...os,
-              text: $a.sc_link_privacy_policy.defaultMessage
+              ...Xa,
+              text: Ma.sc_link_privacy_policy.defaultMessage
             },
             dataTestId: "privacyPolicyLink"
           }, {
-            text: e.formatMessage($a.sc_link_cookies_policy),
+            text: e.formatMessage(Ma.sc_link_cookies_policy),
             location: {
-              domain: u,
+              domain: ht.U.www,
               path: "/cookies"
             },
             target: "_self",
             ga: {
-              ...os,
-              text: $a.sc_link_cookies_policy.defaultMessage
+              ...Xa,
+              text: Ma.sc_link_cookies_policy.defaultMessage
             },
             dataTestId: "cookiesPolicyLink"
           }, {
-            text: e.formatMessage($a.sc_link_cookies_settings),
+            text: e.formatMessage(Ma.sc_link_cookies_settings),
             onClickCallback: e => {
               e.preventDefault(), window.OneTrust?.ToggleInfoDisplay()
             },
             target: "_self",
             ga: {
-              ...os,
-              text: $a.sc_link_cookies_settings.defaultMessage
+              ...Xa,
+              text: Ma.sc_link_cookies_settings.defaultMessage
             },
             dataTestId: "cookiesSettingsLink"
           }, {
-            text: e.formatMessage($a.sc_link_do_not_sell_my_information),
+            text: e.formatMessage(Ma.sc_link_do_not_sell_my_information),
             location: {
-              domain: u,
+              domain: ht.U.www,
               path: "/ccpa"
             },
             target: "_self",
             ga: {
-              ...os,
-              text: $a.sc_link_do_not_sell_my_information.defaultMessage
+              ...Xa,
+              text: Ma.sc_link_do_not_sell_my_information.defaultMessage
             },
             dataTestId: "doNotSellMyInformationLink"
           }]
         }),
-        ls = e => {
+        Ka = e => {
           let {
             text: t,
             target: a,
@@ -6524,43 +6336,43 @@ _global.SENTRY_RELEASE = {
             location: r,
             ga: i,
             dataTestId: n,
-            isSubLink: o,
-            hasNotifications: c = !1,
-            onClickCallback: l = (() => {}),
-            tabIndex: m,
-            reloadDocument: u = !1
+            isSubLink: c,
+            hasNotifications: l = !1,
+            onClickCallback: d = (() => {}),
+            tabIndex: u,
+            reloadDocument: f = !1
           } = e;
           const {
-            track: g
-          } = (0, se.useGtmTrack)(), f = p(), _ = (0, d.c)();
+            track: p
+          } = (0, R.useGtmTrack)(), _ = (0, ht.c)(), h = (0, o.useIntl)();
           let k = s;
-          r && (k = r.domain === f.currentSite?.site ? r.path : `https://${f.sites[r.domain]}.rockstargames.com${r.path}`);
-          const h = {
+          r && (k = r.domain === _.currentSite?.site ? r.path : `https://${_.sites[r.domain]}.rockstargames.com${r.path}`);
+          const b = {
             ...i,
             link_url: k
           };
-          return (0, w.jsxs)(C.Link, {
-            className: o ? "rockstargames-sites-rockstar-tvfdaa918acc06706cbe191dedd40974af" : "rockstargames-sites-rockstar-tvcbc80932118c48d8ec14448d8913d068",
+          return (0, g.jsxs)(m.Link, {
+            className: c ? "rockstargames-sites-careersfdaa918acc06706cbe191dedd40974af" : "rockstargames-sites-careerscbc80932118c48d8ec14448d8913d068",
             "data-testid": n || "menuLink",
             title: t,
             to: k,
             target: a,
             rel: "noreferrer",
-            reloadDocument: u,
-            tabIndex: m,
+            reloadDocument: f,
+            tabIndex: u,
             onClick: e => {
-              g(h), l(e)
+              p(b), d(e)
             },
-            children: [t, c && (0, w.jsx)("div", {
-              className: "rockstargames-sites-rockstar-tva2d268c9fb03a7271b47de447d663da9",
-              children: (0, w.jsx)("span", {
-                className: "rockstargames-sites-rockstar-tvcf5a6b05c52c6c4faf3236055d4670c3",
-                children: _.formatMessage($a.nofications_new)
+            children: [t, l && (0, g.jsx)("div", {
+              className: "rockstargames-sites-careersa2d268c9fb03a7271b47de447d663da9",
+              children: (0, g.jsx)("span", {
+                className: "rockstargames-sites-careerscf5a6b05c52c6c4faf3236055d4670c3",
+                children: h.formatMessage(Ma.nofications_new)
               })
             })]
           })
         },
-        ds = e => {
+        Qa = e => {
           let {
             id: t,
             text: a,
@@ -6568,248 +6380,248 @@ _global.SENTRY_RELEASE = {
             href: r,
             location: i,
             ga: n,
-            hasNotifications: c = !1,
+            hasNotifications: o = !1,
             dataTestId: l,
             children: d = [],
             activeSubNavId: m,
             setActiveSubNavId: u,
-            setSubNavExtraHeight: g,
-            reloadDocument: f = !1,
-            onClickCallback: p = (() => {})
+            setSubNavExtraHeight: f,
+            reloadDocument: p = !1,
+            onClickCallback: _ = (() => {})
           } = e;
           const {
-            windowWidth: _,
+            windowWidth: h,
             windowHeight: k
-          } = (0, ae.useWindowResize)(), {
-            track: h
-          } = (0, se.useGtmTrack)(), {
+          } = (0, F.useWindowResize)(), {
+            track: b
+          } = (0, R.useGtmTrack)(), {
             navOpen: v
-          } = (0, se.useRockstarUserState)(), b = (0, o.useRef)(null), [x, y] = (0, o.useState)(0), [N, j] = (0, o.useState)(0), [S, T] = (0, o.useState)(!0);
-          return (0, o.useEffect)((() => {
+          } = (0, R.useRockstarUserState)(), x = (0, c.useRef)(null), [y, w] = (0, c.useState)(0), [N, j] = (0, c.useState)(0), [S, T] = (0, c.useState)(!0);
+          return (0, c.useEffect)((() => {
             m !== t && !1 === S && T(!0), m === t && T(!1)
-          }), [m]), (0, o.useEffect)((() => {
-            if (!b.current) return;
-            y(b?.current?.scrollHeight);
-            const e = window.getComputedStyle(b.current);
+          }), [m]), (0, c.useEffect)((() => {
+            if (!x.current) return;
+            w(x?.current?.scrollHeight);
+            const e = window.getComputedStyle(x.current);
             if (e) {
               let t = 16 * parseInt(e.getPropertyValue("--scSubNav-opened-margin"), 10);
               Number.isNaN(t) && (t = 0), j(t)
             }
-          }), [b, _, k]), d.length > 0 ? (0, w.jsxs)(w.Fragment, {
-            children: [(0, w.jsxs)("button", {
-              className: "rockstargames-sites-rockstar-tvaf10b4154b04475edc11366934576ecd",
+          }), [x, h, k]), d.length > 0 ? (0, g.jsxs)(g.Fragment, {
+            children: [(0, g.jsxs)("button", {
+              className: "rockstargames-sites-careersaf10b4154b04475edc11366934576ecd",
               type: "button",
               "data-testid": l || "menuButton",
               title: a,
               tabIndex: v ? 0 : -1,
               "data-children-hidden": S,
               onClick: e => {
-                e.stopPropagation(), h(n), m === t ? (u(-1), g(0)) : (u(t), g(x + N + N))
+                e.stopPropagation(), b(n), m === t ? (u(-1), f(0)) : (u(t), f(y + N + N))
               },
-              children: [(0, w.jsx)("span", {
-                className: "rockstargames-sites-rockstar-tvfd722aa4f6d05656ee6e37f952bd13d0",
+              children: [(0, g.jsx)("span", {
+                className: "rockstargames-sites-careersfd722aa4f6d05656ee6e37f952bd13d0",
                 children: a
-              }), (0, w.jsx)("span", {
-                className: "rockstargames-sites-rockstar-tvbe674f27adc299eab348b49f71429b71"
+              }), (0, g.jsx)("span", {
+                className: "rockstargames-sites-careersbe674f27adc299eab348b49f71429b71"
               })]
-            }, a), (0, w.jsx)("nav", {
-              className: "rockstargames-sites-rockstar-tvff1911053a3515534dd825554a85909e",
-              ref: b,
+            }, a), (0, g.jsx)("nav", {
+              className: "rockstargames-sites-careersff1911053a3515534dd825554a85909e",
+              ref: x,
               "aria-hidden": S,
               style: {
-                height: S ? 0 : `${x}px`
+                height: S ? 0 : `${y}px`
               },
-              children: d.map((e => (0, o.createElement)(ls, {
+              children: d.map((e => (0, c.createElement)(Ka, {
                 ...e,
                 isSubLink: !0,
                 key: e.text,
                 tabIndex: S || !v ? -1 : 0
               })))
             })]
-          }) : (0, w.jsx)(ls, {
+          }) : (0, g.jsx)(Ka, {
             text: a,
             target: s,
             href: r,
             location: i,
             ga: n,
-            hasNotifications: c,
+            hasNotifications: o,
             dataTestId: l,
             isSubLink: !1,
-            onClickCallback: p,
+            onClickCallback: _,
             tabIndex: v ? 0 : -1,
-            reloadDocument: f
+            reloadDocument: p
           })
         },
-        ms = e => {
+        Za = e => {
           let {
             sc: t
           } = e;
           const {
             windowWidth: a,
             windowHeight: s
-          } = (0, ae.useWindowResize)(), r = (0, d.c)(), {
+          } = (0, F.useWindowResize)(), r = (0, o.useIntl)(), {
             languageSelectorOpened: i,
             setLanguageSelectorOpened: n,
-            activeSubNavId: c,
-            setActiveSubNavId: l,
-            subNavExtraHeight: m,
-            setSubNavExtraHeight: u
-          } = ss(), {
-            setSelectedCharacterTuple: g,
-            navOpen: f
-          } = (0, se.useRockstarUserState)(), _ = (0, ae.useLocale)(), k = (0, ae.toScLocaleString)(_), [h, v] = (0, o.useState)(""), b = (0, C.useLocation)(), x = `${t.login}?returnUrl=${h}&lang=${k}`, y = `${t.signup}&returnUrl=${h}&lang=${k}`, N = (0, o.useMemo)((() => p()), []), j = (0, o.useMemo)((() => {
+            activeSubNavId: l,
+            setActiveSubNavId: d,
+            subNavExtraHeight: u,
+            setSubNavExtraHeight: f
+          } = Ga(), {
+            setSelectedCharacterTuple: p,
+            navOpen: _
+          } = (0, R.useRockstarUserState)(), h = (0, F.useLocale)(), k = (0, F.toScLocaleString)(h), [b, v] = (0, c.useState)(""), x = (0, m.useLocation)(), y = `${t.login}?returnUrl=${b}&lang=${k}`, w = `${t.signup}&returnUrl=${b}&lang=${k}`, N = (0, c.useMemo)((() => (0, ht.c)()), []), j = (0, c.useMemo)((() => {
             const e = ((e, t, a) => [{
-              text: e.formatMessage($a.sc_link_sign_in),
+              text: e.formatMessage(Ma.sc_link_sign_in),
               href: t,
               ga: {
                 event: "cta_login",
-                text: $a.sc_link_sign_in.defaultMessage,
+                text: Ma.sc_link_sign_in.defaultMessage,
                 element_placement: "Account Menu"
               },
               dataTestId: "loginLink"
             }, {
-              text: e.formatMessage($a.sc_link_join_social_club),
+              text: e.formatMessage(Ma.sc_link_join_social_club),
               href: a,
               ga: {
                 event: "cta_signup",
-                text: $a.sc_link_join_social_club.defaultMessage,
+                text: Ma.sc_link_join_social_club.defaultMessage,
                 element_placement: "Account Menu"
               },
               dataTestId: "signUpLink"
-            }, cs(e)])(r, x, y);
+            }, Ya(e)])(r, y, w);
             return e
-          }), [r, x, y, N]), [S, T] = (0, o.useState)(0), M = (0, o.createRef)(), I = () => {
-            if (M.current) {
+          }), [r, y, w, N]), [S, T] = (0, c.useState)(0), C = (0, c.createRef)(), M = () => {
+            if (C.current) {
               const {
                 current: e
-              } = M, t = e?.scrollHeight, a = window.getComputedStyle(e);
+              } = C, t = e?.scrollHeight, a = window.getComputedStyle(e);
               if (a) {
                 let e = 16 * parseInt(a.getPropertyValue("--scSubNav-opened-margin"), 10) * 2;
                 Number.isNaN(e) && (e = 0), T(t + e)
               } else T(t)
             }
           };
-          return (0, o.useEffect)((() => {
+          return (0, c.useEffect)((() => {
             const e = encodeURIComponent(`${document.location.pathname}${document.location.search}`);
             v(e)
-          }), [b]), (0, o.useEffect)((() => {
-            g(!1)
-          }), []), (0, o.useEffect)((() => {
-            I(), is()((() => {
-              setTimeout(I, 0)
+          }), [x]), (0, c.useEffect)((() => {
+            p(!1)
+          }), []), (0, c.useEffect)((() => {
+            M(), qa()((() => {
+              setTimeout(M, 0)
             }), 300)
-          }), [a, s]), (0, w.jsxs)(w.Fragment, {
-            children: [(0, w.jsx)("nav", {
-              className: "rockstargames-sites-rockstar-tvb1552e1f97b08ee4337f78fa4486ffac",
-              children: (0, w.jsx)("div", {
-                className: "rockstargames-sites-rockstar-tvc5bc9bec611f9f0514176014ce835e1e",
+          }), [a, s]), (0, g.jsxs)(g.Fragment, {
+            children: [(0, g.jsx)("nav", {
+              className: "rockstargames-sites-careersb1552e1f97b08ee4337f78fa4486ffac",
+              children: (0, g.jsx)("div", {
+                className: "rockstargames-sites-careersc5bc9bec611f9f0514176014ce835e1e",
                 "data-logged-in": "false",
-                ref: M,
+                ref: C,
                 style: {
-                  "--scNavWrap-max-height": `${m+S}px`
+                  "--scNavWrap-max-height": `${u+S}px`
                 },
-                children: j.map((e => (0, o.createElement)(ds, {
+                children: j.map((e => (0, c.createElement)(Qa, {
                   ...e,
-                  activeSubNavId: c,
-                  setActiveSubNavId: l,
-                  setSubNavExtraHeight: u,
+                  activeSubNavId: l,
+                  setActiveSubNavId: d,
+                  setSubNavExtraHeight: f,
                   key: e.text
                 })))
               })
-            }), (0, w.jsx)("div", {
-              className: "rockstargames-sites-rockstar-tva6c12c94e8656e88958552d645fe51fe",
+            }), (0, g.jsx)("div", {
+              className: "rockstargames-sites-careersa6c12c94e8656e88958552d645fe51fe",
               style: {
-                visibility: f ? null : "hidden"
+                visibility: _ ? null : "hidden"
               },
-              children: (0, w.jsx)(ns.LanguageSelector, {
+              children: (0, g.jsx)(Wa.LanguageSelector, {
                 parent: "header",
                 theme: "sc-menu",
                 languageSelectorOpened: i,
                 setLanguageSelectorOpened: e => {
-                  l(-1), n(e)
+                  d(-1), n(e)
                 },
                 defaultMessage: "Select a Language"
               })
             })]
           })
         },
-        us = e => {
+        Ja = e => {
           let {
             characterData: t,
             setMobileCardWidth: s,
             tabIndex: r
           } = e;
-          const i = (0, d.c)(),
+          const i = (0, o.useIntl)(),
             {
               currentCharId: n,
-              setCurrentCharId: c
-            } = (0, se.useRockstarUserState)(),
+              setCurrentCharId: l
+            } = (0, R.useRockstarUserState)(),
             {
-              track: l
-            } = (0, se.useGtmTrack)(),
-            m = (0, o.createRef)(),
+              track: d
+            } = (0, R.useGtmTrack)(),
+            m = (0, c.createRef)(),
             {
               platform: u,
-              platformUsername: g,
-              mugshotUrl: f,
-              stats: p
+              platformUsername: f,
+              mugshotUrl: p,
+              stats: _
             } = t,
-            [_, k] = (0, o.useState)(f),
-            [h] = (0, o.useState)(t.index),
-            v = Ra(u, "large"),
-            b = n === t.index;
-          return (0, o.useEffect)((() => {
+            [h, k] = (0, c.useState)(p),
+            [b] = (0, c.useState)(t.index),
+            v = Ta(u, "large"),
+            x = n === t.index;
+          return (0, c.useEffect)((() => {
             m.current && s && s(m?.current?.offsetWidth)
-          }), [m]), (0, w.jsxs)("button", {
-            className: "rockstargames-sites-rockstar-tvd76e785563451a50438064ac368aae4b",
+          }), [m]), (0, g.jsxs)("button", {
+            className: "rockstargames-sites-careersd76e785563451a50438064ac368aae4b",
             type: "button",
-            "aria-hidden": b,
+            "aria-hidden": x,
             onClick: e => {
-              e.stopPropagation(), c(h);
+              e.stopPropagation(), l(b);
               let t = "";
-              "pc" === u ? t = "PC" : "ps4" === u ? t = "PS4" : "ps5" === u ? t = "PS5" : "xboxone" === u ? t = "Xbox One" : "xboxsx" === u && (t = "Xbox Series X|S"), l({
+              "pc" === u ? t = "PC" : "ps4" === u ? t = "PS4" : "ps5" === u ? t = "PS5" : "xboxone" === u ? t = "Xbox One" : "xboxsx" === u && (t = "Xbox Series X|S"), d({
                 event: "character_selector_select",
                 event_action: "select",
                 event_category: "character_selector",
                 event_label: t,
-                position: h
+                position: b
               })
             },
             ref: m,
             tabIndex: r,
-            children: [(0, w.jsx)("div", {
-              className: "rockstargames-sites-rockstar-tvbbdf69fe97471593355fc51ec9a6d13a",
+            children: [(0, g.jsx)("div", {
+              className: "rockstargames-sites-careersbbdf69fe97471593355fc51ec9a6d13a",
               "data-size": "small",
-              children: (0, w.jsx)("img", {
-                src: _,
-                alt: i.formatMessage($a.profile_selector_mugshot, {
-                  userName: g
+              children: (0, g.jsx)("img", {
+                src: h,
+                alt: i.formatMessage(Ma.profile_selector_mugshot, {
+                  userName: f
                 }),
                 onError: () => {
                   k(a(71084))
                 }
               })
-            }), (0, w.jsxs)("div", {
-              className: "rockstargames-sites-rockstar-tvc0dc303ef48255c09faa4ad2f4e953e7",
-              children: [(0, w.jsxs)("div", {
-                className: "rockstargames-sites-rockstar-tve9fbbbcea66d86dbd58b8548a5f6bea8",
-                children: [(0, w.jsx)("img", {
+            }), (0, g.jsxs)("div", {
+              className: "rockstargames-sites-careersc0dc303ef48255c09faa4ad2f4e953e7",
+              children: [(0, g.jsxs)("div", {
+                className: "rockstargames-sites-careerse9fbbbcea66d86dbd58b8548a5f6bea8",
+                children: [(0, g.jsx)("img", {
                   src: v.src,
                   alt: v.alt
-                }), (0, w.jsx)("div", {
-                  className: "rockstargames-sites-rockstar-tvb3726d8b480695f64fddc723c6f35205",
+                }), (0, g.jsx)("div", {
+                  className: "rockstargames-sites-careersb3726d8b480695f64fddc723c6f35205",
                   "data-size": "small",
-                  children: g
+                  children: f
                 })]
-              }), (0, w.jsx)("div", {
-                className: "rockstargames-sites-rockstar-tva5e3df42966a50f3dd88bbcb57536617",
-                children: (0, w.jsxs)("div", {
-                  className: "rockstargames-sites-rockstar-tva6776312350028898320ba59145a39be",
-                  children: [(0, w.jsx)("img", {
-                    className: "rockstargames-sites-rockstar-tvb266652910ad34c0e8e097b212a958f0",
-                    src: Fa(p.overview.rank.value),
-                    alt: i.formatMessage($a.profile_selector_rp_icon)
-                  }), (0, w.jsx)("span", {
+              }), (0, g.jsx)("div", {
+                className: "rockstargames-sites-careersa5e3df42966a50f3dd88bbcb57536617",
+                children: (0, g.jsxs)("div", {
+                  className: "rockstargames-sites-careersa6776312350028898320ba59145a39be",
+                  children: [(0, g.jsx)("img", {
+                    className: "rockstargames-sites-careersb266652910ad34c0e8e097b212a958f0",
+                    src: Ca(_.overview.rank.value),
+                    alt: i.formatMessage(Ma.profile_selector_rp_icon)
+                  }), (0, g.jsx)("span", {
                     children: t.stats.overview.rank.value
                   })]
                 })
@@ -6817,75 +6629,75 @@ _global.SENTRY_RELEASE = {
             })]
           })
         },
-        gs = {
-          pillBtn: "rockstargames-sites-rockstar-tvd9464c4b4d92881abe5578988bd68af7",
-          selected: "rockstargames-sites-rockstar-tvbc0a950bffee0ee9e28213912da51427",
-          scProfileDetails: "rockstargames-sites-rockstar-tvb954455f6ff25f2350e1a0960ba97d3e",
-          scAvatar: "rockstargames-sites-rockstar-tvc15a60de0fc8df4960d84ab96caa8a62",
-          scAvatarPlatform: "rockstargames-sites-rockstar-tva8f66dccf33827dc81107cae3196cfbe",
-          scProfileStats: "rockstargames-sites-rockstar-tvc91f8623fa10edbeba8c79c7d6b26a28",
-          scNames: "rockstargames-sites-rockstar-tvda83fc27513bcac6a8a31eadc89b1c2c",
-          scTagsNames: "rockstargames-sites-rockstar-tvd7ce73d22672e2e2f59e9193c2632531",
-          scUserName: "rockstargames-sites-rockstar-tvd5814836ce152affaa22d226819b5b12",
-          scCrewName: "rockstargames-sites-rockstar-tvb7777817be6d756cc2d1585c1377734c",
-          scCrewRankBar: "rockstargames-sites-rockstar-tva581d240520cf347e5ff5f6a62a36a97",
-          scCrewRankBarItem: "rockstargames-sites-rockstar-tvbdb056c03ef06b99d69426c87cec67c5",
-          scProgress: "rockstargames-sites-rockstar-tvdc3020fbe81a916a8da4719ef052c278",
-          scRpLevel: "rockstargames-sites-rockstar-tvb2ea0e0d19182355913368bf7be016b8",
-          scRpIcon: "rockstargames-sites-rockstar-tvf17a712b43b5234c07dc44f674433cf6",
-          scMoney: "rockstargames-sites-rockstar-tvf14849be516f588e1bc9e252a109c76f",
-          scCash: "rockstargames-sites-rockstar-tvb3e35cdc6557f7c3886700245af352dd",
-          scBank: "rockstargames-sites-rockstar-tvec696aafed90a7a4c69dc53da0a5bb36"
+        es = {
+          pillBtn: "rockstargames-sites-careersd9464c4b4d92881abe5578988bd68af7",
+          selected: "rockstargames-sites-careersbc0a950bffee0ee9e28213912da51427",
+          scProfileDetails: "rockstargames-sites-careersb954455f6ff25f2350e1a0960ba97d3e",
+          scAvatar: "rockstargames-sites-careersc15a60de0fc8df4960d84ab96caa8a62",
+          scAvatarPlatform: "rockstargames-sites-careersa8f66dccf33827dc81107cae3196cfbe",
+          scProfileStats: "rockstargames-sites-careersc91f8623fa10edbeba8c79c7d6b26a28",
+          scNames: "rockstargames-sites-careersda83fc27513bcac6a8a31eadc89b1c2c",
+          scTagsNames: "rockstargames-sites-careersd7ce73d22672e2e2f59e9193c2632531",
+          scUserName: "rockstargames-sites-careersd5814836ce152affaa22d226819b5b12",
+          scCrewName: "rockstargames-sites-careersb7777817be6d756cc2d1585c1377734c",
+          scCrewRankBar: "rockstargames-sites-careersa581d240520cf347e5ff5f6a62a36a97",
+          scCrewRankBarItem: "rockstargames-sites-careersbdb056c03ef06b99d69426c87cec67c5",
+          scProgress: "rockstargames-sites-careersdc3020fbe81a916a8da4719ef052c278",
+          scRpLevel: "rockstargames-sites-careersb2ea0e0d19182355913368bf7be016b8",
+          scRpIcon: "rockstargames-sites-careersf17a712b43b5234c07dc44f674433cf6",
+          scMoney: "rockstargames-sites-careersf14849be516f588e1bc9e252a109c76f",
+          scCash: "rockstargames-sites-careersb3e35cdc6557f7c3886700245af352dd",
+          scBank: "rockstargames-sites-careersec696aafed90a7a4c69dc53da0a5bb36"
         },
-        fs = e => {
+        ts = e => {
           let {
             character: t,
             platformTag: s
           } = e;
           const {
             data: r
-          } = (0, se.useRockstarUser)(), {
+          } = (0, R.useRockstarUser)(), {
             track: i
-          } = (0, se.useGtmTrack)(), n = (0, d.c)(), [c, l] = (0, o.useState)([]), [m, u] = (0, o.useState)(null), [g, f] = (0, o.useState)(null), [p, _] = (0, o.useState)(!1), [k, h] = (0, o.useState)(-1), [v, b] = (0, o.useState)([]), [x, y] = (0, o.useState)(0), N = a(71084), [j, S] = (0, o.useState)("0"), [T, C] = (0, o.useState)("0"), M = e => parseInt(e, 10).toLocaleString("en-US", {
+          } = (0, R.useGtmTrack)(), n = (0, o.useIntl)(), [l, d] = (0, c.useState)([]), [m, u] = (0, c.useState)(null), [f, p] = (0, c.useState)(null), [_, h] = (0, c.useState)(!1), [k, b] = (0, c.useState)(-1), [v, x] = (0, c.useState)([]), [y, w] = (0, c.useState)(0), N = a(71084), [j, S] = (0, c.useState)("0"), [T, C] = (0, c.useState)("0"), M = e => parseInt(e, 10).toLocaleString("en-US", {
             minimumFractionDigits: 0
           }), I = () => {
-            L((0, w.jsx)("img", {
+            L((0, g.jsx)("img", {
               src: N,
-              alt: n.formatMessage($a.profile_selector_mugshot, {
+              alt: n.formatMessage(Ma.profile_selector_mugshot, {
                 userName: r.nickname
               })
             }))
-          }, [E, L] = (0, o.useState)((0, w.jsx)("img", {
-            className: gs.scAvatarImg,
+          }, [E, L] = (0, c.useState)((0, g.jsx)("img", {
+            className: es.scAvatarImg,
             src: t.mugshotUrl,
-            alt: n.formatMessage($a.profile_selector_mugshot, {
+            alt: n.formatMessage(Ma.profile_selector_mugshot, {
               userName: r.nickname
             }),
             onError: I
           }));
-          (0, o.useEffect)((() => {
-            l(r.crews ?? [])
-          }), [r]), (0, o.useEffect)((() => {
-            L((0, w.jsx)("img", {
+          (0, c.useEffect)((() => {
+            d(r.crews ?? [])
+          }), [r]), (0, c.useEffect)((() => {
+            L((0, g.jsx)("img", {
               src: t.mugshotUrl,
               alt: r.nickname,
               onError: I
-            })), S(M(t.stats.overview.bank.value)), C(M(t.stats.overview.cash.value)), y(parseInt(t.stats.overview.rank.value))
-          }), [t, r]), (0, o.useEffect)((() => {
-            c && c.forEach((e => {
-              !0 === e.isPrimary && (u(e.crewTag), f(e.crewColour), h(e.rankOrder), _(!1), !0 === Object.prototype.hasOwnProperty.call(e, "crewType") && "rockstar" === e.crewType && _(!0))
+            })), S(M(t.stats.overview.bank.value)), C(M(t.stats.overview.cash.value)), w(parseInt(t.stats.overview.rank.value))
+          }), [t, r]), (0, c.useEffect)((() => {
+            l && l.forEach((e => {
+              !0 === e.isPrimary && (u(e.crewTag), p(e.crewColour), b(e.rankOrder), h(!1), !0 === Object.prototype.hasOwnProperty.call(e, "crewType") && "rockstar" === e.crewType && h(!0))
             }))
-          }), [c]), (0, o.useEffect)((() => {
+          }), [l]), (0, c.useEffect)((() => {
             const e = [];
-            if (!p && k > -1)
-              for (let t = 5; t > k; t -= 1) e.push((0, w.jsx)("div", {
-                className: gs.scCrewRankBarItem,
+            if (!_ && k > -1)
+              for (let t = 5; t > k; t -= 1) e.push((0, g.jsx)("div", {
+                className: es.scCrewRankBarItem,
                 style: {
-                  backgroundColor: null !== g ? g : ""
+                  backgroundColor: null !== f ? f : ""
                 }
               }, `crewrankbar-${t}`));
-            b(e)
-          }), [k, p, g]);
+            x(e)
+          }), [k, _, f]);
           const z = e => {
             e.stopPropagation(), i({
               event: "character_selector_profile_click",
@@ -6895,58 +6707,58 @@ _global.SENTRY_RELEASE = {
               link_url: void 0
             })
           };
-          return (0, w.jsxs)("div", {
-            className: gs.scProfileDetails,
+          return (0, g.jsxs)("div", {
+            className: es.scProfileDetails,
             onClick: z,
             onKeyUp: z,
             role: "button",
             tabIndex: -1,
-            children: [(0, w.jsxs)("div", {
-              className: gs.scAvatar,
-              children: [E, (0, w.jsx)("div", {
-                className: gs.scAvatarPlatform,
+            children: [(0, g.jsxs)("div", {
+              className: es.scAvatar,
+              children: [E, (0, g.jsx)("div", {
+                className: es.scAvatarPlatform,
                 "data-platform": t.platform,
-                children: (0, w.jsx)("img", {
+                children: (0, g.jsx)("img", {
                   src: s.src,
                   alt: s.alt
                 })
               })]
-            }), (0, w.jsxs)("div", {
-              className: gs.scProfileStats,
-              children: [(0, w.jsx)("div", {
-                className: gs.scNames,
-                children: (0, w.jsxs)("div", {
-                  className: gs.scTagsNames,
-                  children: [(0, w.jsx)("span", {
-                    className: gs.scUserName,
+            }), (0, g.jsxs)("div", {
+              className: es.scProfileStats,
+              children: [(0, g.jsx)("div", {
+                className: es.scNames,
+                children: (0, g.jsxs)("div", {
+                  className: es.scTagsNames,
+                  children: [(0, g.jsx)("span", {
+                    className: es.scUserName,
                     children: t.platformUsername
-                  }), m && (0, w.jsxs)("span", {
-                    className: gs.scCrewName,
-                    "data-arrow-tag": p,
-                    children: [m, !p && (0, w.jsx)("div", {
-                      className: gs.scCrewRankBar,
+                  }), m && (0, g.jsxs)("span", {
+                    className: es.scCrewName,
+                    "data-arrow-tag": _,
+                    children: [m, !_ && (0, g.jsx)("div", {
+                      className: es.scCrewRankBar,
                       children: v
                     })]
                   })]
                 })
-              }), (0, w.jsxs)("div", {
-                className: gs.scProgress,
-                children: [(0, w.jsxs)("div", {
-                  className: gs.scRpLevel,
-                  children: [(0, w.jsx)("img", {
-                    className: gs.scRpIcon,
-                    src: Fa(x),
-                    alt: n.formatMessage($a.profile_selector_rp_icon)
-                  }), (0, w.jsx)("span", {
+              }), (0, g.jsxs)("div", {
+                className: es.scProgress,
+                children: [(0, g.jsxs)("div", {
+                  className: es.scRpLevel,
+                  children: [(0, g.jsx)("img", {
+                    className: es.scRpIcon,
+                    src: Ca(y),
+                    alt: n.formatMessage(Ma.profile_selector_rp_icon)
+                  }), (0, g.jsx)("span", {
                     children: t.stats.overview.rank.value
                   })]
-                }), (0, w.jsxs)("div", {
-                  className: gs.scMoney,
-                  children: [(0, w.jsxs)("span", {
-                    className: gs.scCash,
+                }), (0, g.jsxs)("div", {
+                  className: es.scMoney,
+                  children: [(0, g.jsxs)("span", {
+                    className: es.scCash,
                     children: ["$", T]
-                  }), (0, w.jsxs)("span", {
-                    className: gs.scBank,
+                  }), (0, g.jsxs)("span", {
+                    className: es.scBank,
                     children: ["$", j]
                   })]
                 })]
@@ -6954,9 +6766,9 @@ _global.SENTRY_RELEASE = {
             })]
           })
         },
-        ps = (e, t) => {
-          const [a, s] = (0, o.useState)(0);
-          return (0, o.useEffect)((() => {
+        as = (e, t) => {
+          const [a, s] = (0, c.useState)(0);
+          return (0, c.useEffect)((() => {
             if (e.current) {
               const {
                 current: a
@@ -6972,7 +6784,7 @@ _global.SENTRY_RELEASE = {
             }
           }), [e]), a
         },
-        _s = e => {
+        ss = e => {
           let {
             dragThreshold: t = 80,
             interactionDelay: a = 1e3,
@@ -6980,70 +6792,70 @@ _global.SENTRY_RELEASE = {
             slideChangeCallback: r = null,
             slideClickCallback: i = null,
             children: n = [],
-            disablePager: c = !1,
+            disablePager: o = !1,
             disableSwiper: l = !1
           } = e;
-          const d = (0, o.createRef)(),
-            m = ps(d, !1),
-            [u, g] = (0, o.useState)(!1),
-            [f, p] = (0, o.useState)(0),
-            [_, k] = (0, o.useState)(0),
-            [h, v] = (0, o.useState)([s]),
-            [b, x] = (0, o.useState)(h[0]),
-            [y, N] = (0, o.useState)(252),
-            [j, S] = (0, o.useState)(0),
-            [T, C] = (0, o.useState)([]),
-            [M, I] = (0, o.useState)([]),
-            [E, L] = (0, o.useState)(!1),
+          const d = (0, c.createRef)(),
+            m = as(d, !1),
+            [u, f] = (0, c.useState)(!1),
+            [p, _] = (0, c.useState)(0),
+            [h, k] = (0, c.useState)(0),
+            [b, v] = (0, c.useState)([s]),
+            [x, y] = (0, c.useState)(b[0]),
+            [w, N] = (0, c.useState)(252),
+            [j, S] = (0, c.useState)(0),
+            [T, C] = (0, c.useState)([]),
+            [M, I] = (0, c.useState)([]),
+            [E, L] = (0, c.useState)(!1),
             z = e => {
               if (!0 === u || !0 === l) return;
               const t = void 0 !== e.changedTouches ? e.touches[0].screenX : e.screenX;
               k(t)
             },
             P = e => {
-              if (!0 === u || 0 === _ || !0 === l) return;
+              if (!0 === u || 0 === h || !0 === l) return;
               const a = void 0 !== e.changedTouches ? e.changedTouches[0].screenX : e.screenX,
-                s = a > _ ? 1 : -1,
-                i = Math.abs(_ - a);
+                s = a > h ? 1 : -1,
+                i = Math.abs(h - a);
               i > t ? (s > 0 ? (() => {
                 if (!0 === u) return;
-                g(!0);
-                const e = f - 1 < 0 ? 0 : f - 1;
-                p(e), x(h[e]), r && r(e)
+                f(!0);
+                const e = p - 1 < 0 ? 0 : p - 1;
+                _(e), y(b[e]), r && r(e)
               })() : (() => {
                 if (!0 === u) return;
-                g(!0);
-                let e = f + 1 >= h.length ? h.length - 1 : f + 1;
-                e < 0 && (e = 0), p(e), x(h[e]), r && r(e)
-              })(), k(0)) : x(h[f] + i * s)
+                f(!0);
+                let e = p + 1 >= b.length ? b.length - 1 : p + 1;
+                e < 0 && (e = 0), _(e), y(b[e]), r && r(e)
+              })(), k(0)) : y(b[p] + i * s)
             },
             O = () => {
-              !0 !== u && !0 !== l && (g(!0), !0 !== u && (x(h[f]), k(0)))
+              !0 !== u && !0 !== l && (f(!0), !0 !== u && (y(b[p]), k(0)))
             };
-          return (0, o.useEffect)((() => {
+          return (0, c.useEffect)((() => {
             const e = [];
             n.forEach((() => {
-              e.push((0, o.createRef)())
+              e.push((0, c.createRef)())
             })), C(e)
-          }), [n]), (0, o.useEffect)((() => {
+          }), [n]), (0, c.useEffect)((() => {
             if (T.length < 1) return;
             N(T[0]?.current?.clientWidth || 0);
             const e = T[0]?.current.firstChild,
               t = Number(window.getComputedStyle(e).marginRight.replace("px", "")),
               a = Number(window.getComputedStyle(e).marginLeft.replace("px", ""));
             S(a + t)
-          }), [T]), (0, o.useEffect)((() => {
+          }), [T]), (0, c.useEffect)((() => {
             !1 !== u && setTimeout((() => {
-              g(!1)
+              f(!1)
             }), a)
-          }), [u, a]), (0, o.useEffect)((() => {
+          }), [u, a]), (0, c.useEffect)((() => {
             v(n.map(((e, t) => (e => {
               let t = 0;
               const a = n.length;
-              return 1 === a ? .5 * m - .5 * y - 2 * s + j : (0 === e && (t = s - e * y), e === a - 1 && a > 1 && (t = a * y * -1 + (m - (s - j))), e > 0 && e < a - 1 && (t = e * y * -1 + (.5 * m - .5 * y + .5 * j)), t)
+              return 1 === a ? .5 * m - .5 * w - 2 * s + j : (0 === e && (t = s - e * w), e === a - 1 && a > 1 && (t = a * w * -1 + (m - (s - j))), e > 0 && e < a - 1 && (t = e * w * -1 + (.5 * m - .5 * w + .5 * j)), t)
             })(t)))), 1 === n.length ? L(!0) : L(!1)
-          }), [d.current, n, m]), (0, o.useEffect)((() => {
-            const e = (t = f, n.map(((e, a) => {
+          }), [d.current, n, m]), (0, c.useEffect)((() => {
+            const e = (t = p, n.map(((e, a) => {
               const s = {
                 active: !1
               };
@@ -7051,11 +6863,11 @@ _global.SENTRY_RELEASE = {
             })));
             var t;
             I(e)
-          }), [n, f]), (0, o.useEffect)((() => {
-            !0 !== c && !0 !== l || x(h[0])
-          }), [l, c, h]), (0, w.jsxs)(w.Fragment, {
-            children: [(0, w.jsx)("div", {
-              className: "rockstargames-sites-rockstar-tvab70c3f9c67ecd69d19216a5f4de5049",
+          }), [n, p]), (0, c.useEffect)((() => {
+            !0 !== o && !0 !== l || y(b[0])
+          }), [l, o, b]), (0, g.jsxs)(g.Fragment, {
+            children: [(0, g.jsx)("div", {
+              className: "rockstargames-sites-careersab70c3f9c67ecd69d19216a5f4de5049",
               ref: d,
               onTouchStart: z,
               onTouchMove: P,
@@ -7064,47 +6876,47 @@ _global.SENTRY_RELEASE = {
               onMouseMove: P,
               onMouseUp: O,
               onClick: () => {
-                null !== i && i(f)
+                null !== i && i(p)
               },
               onKeyPress: () => null,
               tabIndex: -1,
               role: "presentation",
-              children: (0, w.jsx)("div", {
-                className: "rockstargames-sites-rockstar-tva93be1084a583cafa7f3f97a8ce8a6be",
+              children: (0, g.jsx)("div", {
+                className: "rockstargames-sites-careersa93be1084a583cafa7f3f97a8ce8a6be",
                 "data-interaction-blocked": u,
                 "data-single-item": E,
                 style: {
-                  transform: E ? null : `translateX(${b}px)`
+                  transform: E ? null : `translateX(${x}px)`
                 },
-                children: n.map(((e, t) => (0, w.jsx)("div", {
-                  className: "rockstargames-sites-rockstar-tvc013369a930e076d1729d086fb51903e",
+                children: n.map(((e, t) => (0, g.jsx)("div", {
+                  className: "rockstargames-sites-careersc013369a930e076d1729d086fb51903e",
                   ref: T[t],
                   children: e
                 }, `csItem-${e?.props?.characterData?.mugshotUrl}`)))
               })
-            }), M.length > 1 && !1 === c && (0, w.jsx)("div", {
-              className: "rockstargames-sites-rockstar-tvda8cfef07bf44e9a44839e2723ec61bb",
-              children: M.map((e => (0, w.jsx)("div", {
-                className: "rockstargames-sites-rockstar-tvfe87ea0922034610a1f6cb3a4edbe195",
+            }), M.length > 1 && !1 === o && (0, g.jsx)("div", {
+              className: "rockstargames-sites-careersda8cfef07bf44e9a44839e2723ec61bb",
+              children: M.map((e => (0, g.jsx)("div", {
+                className: "rockstargames-sites-careersfe87ea0922034610a1f6cb3a4edbe195",
                 "data-active": e.active
               }, e.mugshotUrl)))
             })]
           })
         },
-        ks = {
-          pillBtn: "rockstargames-sites-rockstar-tvaa374e2f7806799cb073de8a9b2a2e7d",
-          selected: "rockstargames-sites-rockstar-tvd402a10393179390abdaf3684a02f1ba",
-          scProfile: "rockstargames-sites-rockstar-tvdde9053261079ebfb5d95975239fe87d",
-          scCharacterSelector: "rockstargames-sites-rockstar-tvc47913b4c686bbbc9a0c8ee6ed7666bf",
-          scCharacterSelectBtn: "rockstargames-sites-rockstar-tva4f9dafe071f5c9a825bf57348835309",
-          open: "rockstargames-sites-rockstar-tvb1f5708c9a0e35681c54a58f04661c1c",
-          scCharacterList: "rockstargames-sites-rockstar-tva1d1104b9df769c9237fa1a06633ffe7",
-          scNav: "rockstargames-sites-rockstar-tva326b0feea8d083ed2265571010d79d3",
-          scLanguageSelector: "rockstargames-sites-rockstar-tvd19713d1362bcd54ff539975adbb2ecc",
-          scNavHeader: "rockstargames-sites-rockstar-tvbb74821846f47bbe5fc0896364efd520",
-          scNavWrap: "rockstargames-sites-rockstar-tva7f1e2d78519eaf099bd43c6ad07abc9"
+        rs = {
+          pillBtn: "rockstargames-sites-careersaa374e2f7806799cb073de8a9b2a2e7d",
+          selected: "rockstargames-sites-careersd402a10393179390abdaf3684a02f1ba",
+          scProfile: "rockstargames-sites-careersdde9053261079ebfb5d95975239fe87d",
+          scCharacterSelector: "rockstargames-sites-careersc47913b4c686bbbc9a0c8ee6ed7666bf",
+          scCharacterSelectBtn: "rockstargames-sites-careersa4f9dafe071f5c9a825bf57348835309",
+          open: "rockstargames-sites-careersb1f5708c9a0e35681c54a58f04661c1c",
+          scCharacterList: "rockstargames-sites-careersa1d1104b9df769c9237fa1a06633ffe7",
+          scNav: "rockstargames-sites-careersa326b0feea8d083ed2265571010d79d3",
+          scLanguageSelector: "rockstargames-sites-careersd19713d1362bcd54ff539975adbb2ecc",
+          scNavHeader: "rockstargames-sites-careersbb74821846f47bbe5fc0896364efd520",
+          scNavWrap: "rockstargames-sites-careersa7f1e2d78519eaf099bd43c6ad07abc9"
         },
-        hs = (0, ae.withTranslations)((e => {
+        is = (0, F.withTranslations)((e => {
           let {
             sc: t,
             charListHidden: a,
@@ -7112,405 +6924,405 @@ _global.SENTRY_RELEASE = {
             refCharacterListDesktop: r,
             menuPadding: i,
             longCharList: n,
-            setLongCharList: c,
-            isMobileMode: m,
+            setLongCharList: l,
+            isMobileMode: d,
             setIsMobileMode: u
           } = e;
           const {
             windowWidth: f,
-            windowHeight: _
-          } = (0, ae.useWindowResize)(), k = (0, d.c)(), {
-            languageSelectorOpened: h,
-            setLanguageSelectorOpened: v,
-            activeSubNavId: b,
+            windowHeight: p
+          } = (0, F.useWindowResize)(), _ = (0, o.useIntl)(), {
+            languageSelectorOpened: k,
+            setLanguageSelectorOpened: b,
+            activeSubNavId: v,
             setActiveSubNavId: x,
             subNavExtraHeight: y,
-            setSubNavExtraHeight: N,
-            scNavOpened: j,
-            setScNavOpened: S
-          } = ss(), [T, M] = (0, o.useState)(""), I = (0, C.useLocation)(), {
-            lsSettings: E
-          } = (0, ae.useRockstarWebLSSettings)(), {
-            track: L
-          } = (0, se.useGtmTrack)(), P = (0, z.useRockstarTokenPing)(), {
-            data: O,
-            loggedIn: A
-          } = (0, se.useRockstarUser)(), {
-            charactersNeeded: D,
-            currentCharId: B,
-            hasNotifications: V,
-            navOpen: R,
-            setCurrentCharId: F,
-            setHasNotifications: $,
-            setSelectedCharacterTuple: G,
+            setSubNavExtraHeight: w,
+            scNavOpened: N,
+            setScNavOpened: j
+          } = Ga(), [S, T] = (0, c.useState)(""), C = (0, m.useLocation)(), {
+            lsSettings: M
+          } = (0, F.useRockstarWebLSSettings)(), {
+            track: I
+          } = (0, R.useGtmTrack)(), E = (0, h.useRockstarTokenPing)(), {
+            data: L,
+            loggedIn: z
+          } = (0, R.useRockstarUser)(), {
+            charactersNeeded: P,
+            currentCharId: O,
+            hasNotifications: A,
+            navOpen: D,
+            setCurrentCharId: B,
+            setHasNotifications: V,
+            setSelectedCharacterTuple: $,
             setUserData: U
-          } = (0, se.useRockstarUserState)(), [H, q] = (0, o.useState)(null), [W, X] = (0, o.useState)(null), [Y, K] = (0, o.useState)(!1), [Q, Z] = (0, o.useState)(!1), [J, ee] = (0, o.useState)(0), te = (0, o.createRef)(), re = ps(te, !1), ie = (0, o.createRef)(), [ne, oe] = (0, o.useState)(0), [ce, le] = (0, o.useState)([]), [de, me] = (0, o.useState)(244), ue = (0, o.useRef)(null), ge = (0, o.useMemo)((() => p()), []), fe = (0, o.useMemo)((() => ((e, t, a, s, r) => [{
-            text: e.formatMessage($a.sc_link_activity_feed),
+          } = (0, R.useRockstarUserState)(), [G, H] = (0, c.useState)(null), [q, W] = (0, c.useState)(null), [X, Y] = (0, c.useState)(!1), [K, Q] = (0, c.useState)(!1), [Z, J] = (0, c.useState)(0), ee = (0, c.createRef)(), te = as(ee, !1), ae = (0, c.createRef)(), [se, re] = (0, c.useState)(0), [ie, ne] = (0, c.useState)([]), [ce, oe] = (0, c.useState)(244), le = (0, c.useRef)(null), de = (0, c.useMemo)((() => (0, ht.c)()), []), me = (0, c.useMemo)((() => ((e, t, a, s, r) => [{
+            text: e.formatMessage(Ma.sc_link_activity_feed),
             location: {
-              domain: g,
+              domain: ht.U.socialClub,
               path: "/"
             },
             target: "_self",
             ga: {
-              ...os,
-              text: $a.sc_link_activity_feed.defaultMessage
+              ...Xa,
+              text: Ma.sc_link_activity_feed.defaultMessage
             },
             dataTestId: "activityFeedLink"
           }, {
-            text: e.formatMessage($a.sc_link_account),
+            text: e.formatMessage(Ma.sc_link_account),
             target: "_self",
             dataTestId: "accountButton",
             children: [{
-              text: e.formatMessage($a.sc_link_settings),
+              text: e.formatMessage(Ma.sc_link_settings),
               location: {
-                domain: g,
+                domain: ht.U.socialClub,
                 path: "/settings"
               },
               target: "_self",
               ga: {
-                ...os,
-                text: $a.sc_link_settings.defaultMessage
+                ...Xa,
+                text: Ma.sc_link_settings.defaultMessage
               },
               dataTestId: "settingsLink"
             }, {
-              text: e.formatMessage($a.sc_link_view_my_profile),
+              text: e.formatMessage(Ma.sc_link_view_my_profile),
               href: a.profile_link,
               target: "_self",
               ga: {
-                ...os,
-                text: $a.sc_link_view_my_profile.defaultMessage
+                ...Xa,
+                text: Ma.sc_link_view_my_profile.defaultMessage
               },
               dataTestId: "viewMyProfileLink"
             }, {
-              text: e.formatMessage($a.sc_link_messages),
+              text: e.formatMessage(Ma.sc_link_messages),
               location: {
-                domain: g,
+                domain: ht.U.socialClub,
                 path: "/message"
               },
               target: "_self",
               ga: {
-                ...os,
-                text: $a.sc_link_messages.defaultMessage
+                ...Xa,
+                text: Ma.sc_link_messages.defaultMessage
               },
               dataTestId: "messagesLink"
             }, {
-              text: e.formatMessage($a.sc_link_game_activation),
+              text: e.formatMessage(Ma.sc_link_game_activation),
               location: {
-                domain: g,
+                domain: ht.U.socialClub,
                 path: "/activate"
               },
               target: "_self",
               ga: {
-                ...os,
-                text: $a.sc_link_game_activation.defaultMessage
+                ...Xa,
+                text: Ma.sc_link_game_activation.defaultMessage
               },
               dataTestId: "gameActivationLink"
             }]
           }, {
-            text: e.formatMessage($a.sc_link_notifications),
+            text: e.formatMessage(Ma.sc_link_notifications),
             location: {
-              domain: g,
+              domain: ht.U.socialClub,
               path: "/notifications"
             },
             target: "_self",
             hasNotifications: s,
             ga: {
-              ...os,
-              text: $a.sc_link_notifications.defaultMessage,
+              ...Xa,
+              text: Ma.sc_link_notifications.defaultMessage,
               location: {
-                domain: g,
+                domain: ht.U.socialClub,
                 path: "/notifications"
               }
             },
             dataTestId: "notificationsLink"
           }, {
-            text: e.formatMessage($a.sc_link_crews),
+            text: e.formatMessage(Ma.sc_link_crews),
             location: {
-              domain: g,
+              domain: ht.U.socialClub,
               path: `/member/${a.nickname}/crews`
             },
             target: "_self",
             ga: {
-              ...os,
-              text: $a.sc_link_crews.defaultMessage
+              ...Xa,
+              text: Ma.sc_link_crews.defaultMessage
             },
             dataTestId: "crewsLink"
           }, {
-            text: e.formatMessage($a.sc_link_friends),
+            text: e.formatMessage(Ma.sc_link_friends),
             target: "_self",
             dataTestId: "friendsButton",
             children: [{
-              text: e.formatMessage($a.sc_link_my_friends),
+              text: e.formatMessage(Ma.sc_link_my_friends),
               location: {
-                domain: g,
+                domain: ht.U.socialClub,
                 path: `/member/${a.nickname}/friends`
               },
               target: "_self",
               ga: {
-                ...os,
-                text: $a.sc_link_my_friends.defaultMessage
+                ...Xa,
+                text: Ma.sc_link_my_friends.defaultMessage
               },
               dataTestId: "myFriendsLink"
             }, {
-              text: e.formatMessage($a.sc_link_import_friends),
+              text: e.formatMessage(Ma.sc_link_import_friends),
               location: {
-                domain: g,
+                domain: ht.U.socialClub,
                 path: "/friends/import"
               },
               target: "_self",
               ga: {
-                ...os,
-                text: $a.sc_link_import_friends.defaultMessage
+                ...Xa,
+                text: Ma.sc_link_import_friends.defaultMessage
               },
               dataTestId: "importFriendsLink"
             }, {
-              text: e.formatMessage($a.sc_link_find_friends),
+              text: e.formatMessage(Ma.sc_link_find_friends),
               location: {
-                domain: g,
+                domain: ht.U.socialClub,
                 path: "/members"
               },
               target: "_self",
               ga: {
-                ...os,
-                text: $a.sc_link_import_friends.defaultMessage
+                ...Xa,
+                text: Ma.sc_link_import_friends.defaultMessage
               },
               dataTestId: "findFriendsLink"
             }]
-          }, cs(e), {
-            text: e.formatMessage($a.sc_link_log_out),
+          }, Ya(e), {
+            text: e.formatMessage(Ma.sc_link_log_out),
             href: `${t.logout}?returnUrl=${r}`,
             target: "_self",
             reloadDocument: !0,
             ga: {
-              ...os,
-              text: $a.sc_link_log_out.defaultMessage
+              ...Xa,
+              text: Ma.sc_link_log_out.defaultMessage
             },
             dataTestId: "logoutButton"
-          }])(k, t, O, V, T, window)), [k, t, O, V, T, ge]), pe = () => {
-            Z(i + de * J < re)
-          }, _e = () => {
-            if (ie.current) {
+          }])(_, t, L, A, S, window)), [_, t, L, A, S, de]), ue = () => {
+            Q(i + ce * Z < te)
+          }, ge = () => {
+            if (ae.current) {
               const {
                 current: e
-              } = ie, t = e?.scrollHeight, a = window.getComputedStyle(e);
+              } = ae, t = e?.scrollHeight, a = window.getComputedStyle(e);
               if (a) {
                 let e = 16 * parseInt(a.getPropertyValue("--scSubNav-opened-margin"), 10) * 2;
-                Number.isNaN(e) && (e = 0), oe(t + e)
-              } else oe(t)
+                Number.isNaN(e) && (e = 0), re(t + e)
+              } else re(t)
             }
           };
-          return (0, o.useEffect)((() => {
+          return (0, c.useEffect)((() => {
             let e = encodeURIComponent(`${document.location.pathname}${document.location.search}`);
-            ge.currentSite?.site === g && (e = encodeURIComponent("/")), M(e)
-          }), [I]), (0, o.useEffect)((() => {
-            le(O.characters[D] ?? [])
-          }), [O, D]), (0, o.useEffect)((() => {
-            O && U(O)
-          }), [O]), (0, o.useEffect)((() => {
-            const e = O?.characters.gtao;
-            if (null !== A && !e.length) return void G(!1);
-            if (null == B || !e.length) return;
-            const t = e?.[B] ?? e?.[0] ?? null;
-            G(!!t?.platform && [t.platform, t.characterSlot])
-          }), [B, O, A]), (0, o.useEffect)((() => {
+            de.currentSite?.site === ht.U.socialClub && (e = encodeURIComponent("/")), T(e)
+          }), [C]), (0, c.useEffect)((() => {
+            ne(L.characters[P] ?? [])
+          }), [L, P]), (0, c.useEffect)((() => {
+            L && U(L)
+          }), [L]), (0, c.useEffect)((() => {
+            const e = L?.characters.gtao;
+            if (null !== z && !e.length) return void $(!1);
+            if (null == O || !e.length) return;
+            const t = e?.[O] ?? e?.[0] ?? null;
+            $(!!t?.platform && [t.platform, t.characterSlot])
+          }), [O, L, z]), (0, c.useEffect)((() => {
             (async () => {
-              if (!O?.id) return;
+              if (!L?.id) return;
               const {
                 count: e
-              } = await (0, ae.coreScApiFetch)("notification/count", {
-                pingBearer: P
+              } = await (0, F.coreScApiFetch)("notification/count", {
+                pingBearer: E
               });
-              $(e > 0)
+              V(e > 0)
             })()
-          }), [O]), (0, o.useEffect)((() => {
-            pe()
-          }), [de]), (0, o.useEffect)((() => {
-            s(!0), u(f < 768), u(f < 768 || _ < 649)
-          }), [f, _]), (0, o.useEffect)((() => {
-            let e = ce.length - 1;
-            e < 0 && (e = 0), ee(e);
-            const t = ce.length > 0 ? ce[B] ?? ce[0] : null;
+          }), [L]), (0, c.useEffect)((() => {
+            ue()
+          }), [ce]), (0, c.useEffect)((() => {
+            s(!0), u(f < 768), u(f < 768 || p < 649)
+          }), [f, p]), (0, c.useEffect)((() => {
+            let e = ie.length - 1;
+            e < 0 && (e = 0), J(e);
+            const t = ie.length > 0 ? ie[O] ?? ie[0] : null;
             if (!t) return;
-            const a = null !== t ? Ra(t.platform, "large") : null;
-            X(a), q(t), ce.length > 1 ? K(!0) : K(!1), c(ce.length - 1 > 3)
-          }), [B, ce]), (0, o.useEffect)((() => {
-            pe()
-          }), [J, m, f, ce]), (0, o.useEffect)((() => {
-            _e(), is()((() => {
-              setTimeout(_e, 0)
+            const a = null !== t ? Ta(t.platform, "large") : null;
+            W(a), H(t), ie.length > 1 ? Y(!0) : Y(!1), l(ie.length - 1 > 3)
+          }), [O, ie]), (0, c.useEffect)((() => {
+            ue()
+          }), [Z, d, f, ie]), (0, c.useEffect)((() => {
+            ge(), qa()((() => {
+              setTimeout(ge, 0)
             }), 300)
-          }), [f, _]), (0, o.useEffect)((() => {
-            const e = E?.currentCharId ?? 0;
-            e !== B && F(Math.max(0, Math.min(e, ce.length - 1)))
-          }), [ce, E]), (0, w.jsxs)(w.Fragment, {
-            children: [null !== H && "gtao" === D && (0, w.jsxs)("div", {
-              className: ks.scProfile,
-              ref: ue,
+          }), [f, p]), (0, c.useEffect)((() => {
+            const e = M?.currentCharId ?? 0;
+            e !== O && B(Math.max(0, Math.min(e, ie.length - 1)))
+          }), [ie, M]), (0, g.jsxs)(g.Fragment, {
+            children: [null !== G && "gtao" === P && (0, g.jsxs)("div", {
+              className: rs.scProfile,
+              ref: le,
               tabIndex: -1,
-              "aria-label": k.formatMessage($a.profile_selector_profile_card),
-              children: [(0, w.jsx)(fs, {
-                s: ks,
-                character: H,
-                platformTag: W
-              }), !0 === Y && (0, w.jsxs)("div", {
-                className: ks.scCharacterSelector,
-                children: [(0, w.jsx)("button", {
-                  className: ks.scCharacterSelectBtn,
-                  "aria-hidden": !R,
+              "aria-label": _.formatMessage(Ma.profile_selector_profile_card),
+              children: [(0, g.jsx)(ts, {
+                s: rs,
+                character: G,
+                platformTag: q
+              }), !0 === X && (0, g.jsxs)("div", {
+                className: rs.scCharacterSelector,
+                children: [(0, g.jsx)("button", {
+                  className: rs.scCharacterSelectBtn,
+                  "aria-hidden": !D,
                   type: "button",
                   onClick: e => {
                     e.stopPropagation();
                     const t = !a;
-                    s(t), L({
+                    s(t), I({
                       event: t ? "character_selector_close" : "character_selector_open",
                       event_action: !0 === t ? "close" : "open",
                       event_category: "character_selector"
                     })
                   },
                   "data-list-closed": a,
-                  children: (0, w.jsx)("span", {
-                    children: (0, w.jsx)(l.c, {
-                      ...$a.profile_selector_switch_character
+                  children: (0, g.jsx)("span", {
+                    children: (0, g.jsx)(o.FormattedMessage, {
+                      ...Ma.profile_selector_switch_character
                     })
                   })
-                }), !1 === m && (0, w.jsx)("div", {
-                  className: ks.scCharacterList,
+                }), !1 === d && (0, g.jsx)("div", {
+                  className: rs.scCharacterList,
                   "data-long-list": n,
                   "aria-hidden": a,
                   ref: r,
-                  children: ce.map((e => (0, w.jsx)(us, {
+                  children: ie.map((e => (0, g.jsx)(Ja, {
                     tabIndex: a ? -1 : 0,
                     characterData: e,
-                    setMobileCardWidth: me
+                    setMobileCardWidth: oe
                   }, e.mugshotUrl)))
-                }), !0 === m && (0, w.jsx)("div", {
-                  className: ks.scCharacterList,
-                  "data-single-item": 2 === ce.length,
-                  "data-swiper-disabled": Q,
+                }), !0 === d && (0, g.jsx)("div", {
+                  className: rs.scCharacterList,
+                  "data-single-item": 2 === ie.length,
+                  "data-swiper-disabled": K,
                   "aria-hidden": a,
-                  ref: te,
-                  children: (0, w.jsx)(_s, {
+                  ref: ee,
+                  children: (0, g.jsx)(ss, {
                     interactionDelay: 350,
                     mobileGutterWidth: 17,
                     dragThreshold: 40,
                     slideChangeCallback: () => {
-                      L({
+                      I({
                         event: "carousel_swipe",
                         event_category: "carousel",
                         event_action: "swipe",
                         event_label: "character_selector"
                       })
                     },
-                    disablePager: Q,
-                    disableSwiper: Q,
-                    children: ce.filter(((e, t) => t !== B)).map((e => (0, o.createElement)(us, {
+                    disablePager: K,
+                    disableSwiper: K,
+                    children: ie.filter(((e, t) => t !== O)).map((e => (0, c.createElement)(Ja, {
                       characterData: e,
-                      setMobileCardWidth: me,
+                      setMobileCardWidth: oe,
                       key: e.mugshotUrl,
                       tabIndex: a ? -1 : 0
                     })))
                   })
                 })]
               })]
-            }), (0, w.jsxs)("nav", {
-              className: ks.scNav,
-              "aria-hidden": !R,
-              children: [(0, w.jsx)("button", {
-                className: ks.scNavHeader,
+            }), (0, g.jsxs)("nav", {
+              className: rs.scNav,
+              "aria-hidden": !D,
+              children: [(0, g.jsx)("button", {
+                className: rs.scNavHeader,
                 type: "button",
-                "data-opened": j,
-                "data-nav-opened": R,
-                tabIndex: j ? -1 : 0,
+                "data-opened": N,
+                "data-nav-opened": D,
+                tabIndex: N ? -1 : 0,
                 onClick: e => {
-                  e.stopPropagation(), j || S(!0)
+                  e.stopPropagation(), N || j(!0)
                 },
                 "data-testid": "playerButton",
-                children: (0, w.jsx)("span", {
-                  children: O.nickname
+                children: (0, g.jsx)("span", {
+                  children: L.nickname
                 })
-              }), (0, w.jsx)("div", {
-                className: ks.scNavWrap,
-                "data-opened": j,
+              }), (0, g.jsx)("div", {
+                className: rs.scNavWrap,
+                "data-opened": N,
                 "data-logged-in": "true",
-                ref: ie,
+                ref: ae,
                 style: {
-                  "--scNavWrap-max-height": `${ne+y}px`
+                  "--scNavWrap-max-height": `${se+y}px`
                 },
-                children: fe.map(((e, t) => (0, o.createElement)(ds, {
+                children: me.map(((e, t) => (0, c.createElement)(Qa, {
                   ...e,
                   id: t,
-                  activeSubNavId: b,
+                  activeSubNavId: v,
                   setActiveSubNavId: x,
-                  setSubNavExtraHeight: N,
+                  setSubNavExtraHeight: w,
                   key: e.text
                 })))
               })]
-            }), (0, w.jsx)("div", {
-              className: ks.scLanguageSelector,
+            }), (0, g.jsx)("div", {
+              className: rs.scLanguageSelector,
               style: {
-                visibility: R ? null : "hidden"
+                visibility: D ? null : "hidden"
               },
-              children: (0, w.jsx)(ns.LanguageSelector, {
+              children: (0, g.jsx)(Wa.LanguageSelector, {
                 parent: "header",
                 theme: "sc-menu",
-                languageSelectorOpened: h,
-                setLanguageSelectorOpened: v
+                languageSelectorOpened: k,
+                setLanguageSelectorOpened: b
               })
             })]
           })
         })),
-        vs = {
-          scMenu: "rockstargames-sites-rockstar-tvebc4c779cfe9d0b7cfd678424e57370c",
-          pillBtn: "rockstargames-sites-rockstar-tvf333ffbc5b9f9d571b81be0a7235190d",
-          selected: "rockstargames-sites-rockstar-tve3bdabe09c3d1b98b61f3d0484209912",
-          navOpen: "rockstargames-sites-rockstar-tvff929155ac480a9cfa5540dfd3e70ae9",
-          dragHandle: "rockstargames-sites-rockstar-tvba4968108b922dd8165c6e53557f5f2e",
-          dragHandleBtn: "rockstargames-sites-rockstar-tvd362ba3eeee50f90600a413c05761431",
-          scOverlay: "rockstargames-sites-rockstar-tvd8e443f5d0d9171449f5f1042f80aa17"
+        ns = {
+          scMenu: "rockstargames-sites-careersebc4c779cfe9d0b7cfd678424e57370c",
+          pillBtn: "rockstargames-sites-careersf333ffbc5b9f9d571b81be0a7235190d",
+          selected: "rockstargames-sites-careerse3bdabe09c3d1b98b61f3d0484209912",
+          navOpen: "rockstargames-sites-careersff929155ac480a9cfa5540dfd3e70ae9",
+          dragHandle: "rockstargames-sites-careersba4968108b922dd8165c6e53557f5f2e",
+          dragHandleBtn: "rockstargames-sites-careersd362ba3eeee50f90600a413c05761431",
+          scOverlay: "rockstargames-sites-careersd8e443f5d0d9171449f5f1042f80aa17"
         },
-        bs = j((() => {
+        cs = (0, o.withIntl)((() => {
           const {
             windowHeight: e
-          } = (0, ae.useWindowResize)(), t = (0, d.c)(), {
+          } = (0, F.useWindowResize)(), t = (0, o.useIntl)(), {
             languageSelectorOpened: s,
             setLanguageSelectorOpened: r,
             setActiveSubNavId: i,
             scNavOpened: n,
-            setScNavOpened: c,
-            charListHidden: l,
+            setScNavOpened: l,
+            charListHidden: d,
             setCharListHidden: m
-          } = ss(), [u, g] = (0, o.useState)(!1), {
-            navHidden: f = !1
-          } = (0, z.useState)(), {
-            loggedIn: p
-          } = (0, se.useRockstarUser)(), {
-            currentCharId: _,
-            navOpen: k,
-            setNavOpen: h,
-            userData: v
-          } = (0, se.useRockstarUserState)(), {
-            track: b
-          } = (0, se.useGtmTrack)(), [x, y] = (0, o.useState)(!1), N = (0, z.useReactiveVar)(se.scConfig), j = (0, o.useRef)(), [S, T] = (0, o.useState)(0), C = (0, o.createRef)(), [M, I] = (0, o.useState)(!1), [E, L] = (0, o.useState)(0), [P, O] = (0, o.useState)(!1), {
+          } = Ga(), [u, f] = (0, c.useState)(!1), {
+            navHidden: p = !1
+          } = (0, h.useState)(), {
+            loggedIn: _
+          } = (0, R.useRockstarUser)(), {
+            currentCharId: k,
+            navOpen: b,
+            setNavOpen: v,
+            userData: x
+          } = (0, R.useRockstarUserState)(), {
+            track: y
+          } = (0, R.useGtmTrack)(), [w, N] = (0, c.useState)(!1), j = (0, h.useReactiveVar)(R.scConfig), S = (0, c.useRef)(), [T, C] = (0, c.useState)(0), M = (0, c.createRef)(), [I, E] = (0, c.useState)(!1), [L, z] = (0, c.useState)(0), [P, O] = (0, c.useState)(!1), {
             mutateLSSettings: A,
             lsSettings: D
-          } = (0, ae.useRockstarWebLSSettings)(), B = (0, o.useCallback)((e => {
-            m(e), j.current && !0 === e && (j.current.scrollTop = 0)
-          }), [j]);
-          return (0, o.useEffect)((() => {
-            null !== _ && D.currentCharId !== _ && A({
+          } = (0, F.useRockstarWebLSSettings)(), B = (0, c.useCallback)((e => {
+            m(e), S.current && !0 === e && (S.current.scrollTop = 0)
+          }), [S]);
+          return (0, c.useEffect)((() => {
+            null !== k && D.currentCharId !== k && A({
               key: "currentCharId",
-              value: _
-            }), !1 === p ? A({
+              value: k
+            }), !1 === _ ? A({
               key: "currentCharId",
               value: null
-            }) : p && !v && b({
+            }) : _ && !x && y({
               event: "account_synced"
             })
-          }), [_, p]), (0, o.useEffect)((() => {
-            j.current && (!1 === l && !1 === x && (j.current.style.height = `${j.current.scrollHeight}px`), !0 === l && (j.current.style.height = null))
-          }), [l, j, x]), (0, o.useEffect)((() => {
+          }), [k, _]), (0, c.useEffect)((() => {
+            S.current && (!1 === d && !1 === w && (S.current.style.height = `${S.current.scrollHeight}px`), !0 === d && (S.current.style.height = null))
+          }), [d, S, w]), (0, c.useEffect)((() => {
             const e = () => {
-                h(!1), B(!0)
+                v(!1), B(!0)
               },
               t = t => {
                 "Escape" === t.code && e()
@@ -7518,150 +7330,150 @@ _global.SENTRY_RELEASE = {
             return document.addEventListener("click", e), document.addEventListener("keyup", t), () => {
               document.removeEventListener("click", e), document.removeEventListener("keyup", t)
             }
-          }), []), (0, o.useEffect)((() => {
-            h(!1), B(!0)
-          }), [f]), (0, o.useEffect)((() => {
-            if (C.current) {
+          }), []), (0, c.useEffect)((() => {
+            v(!1), B(!0)
+          }), [p]), (0, c.useEffect)((() => {
+            if (M.current) {
               const {
                 current: e
-              } = C, t = window.getComputedStyle(e);
-              T(parseInt(t.paddingRight, 10) + parseInt(t.paddingLeft, 10))
+              } = M, t = window.getComputedStyle(e);
+              C(parseInt(t.paddingRight, 10) + parseInt(t.paddingLeft, 10))
             }
-          }), [C]), (0, o.useEffect)((() => {
+          }), [M]), (0, c.useEffect)((() => {
             O(window.navigator.userAgent.includes("Mac"))
-          }), []), (0, o.useEffect)((() => {
-            C.current && g(C?.current?.scrollHeight >= e)
-          }), [C, e]), (0, o.useEffect)((() => {
-            k || (i(-1), r(!1))
-          }), [k]), (0, o.useEffect)((() => {
-            s && (l || B(!0), n && (c(!1), i(-1)))
-          }), [s]), (0, o.useEffect)((() => {
-            n && (s && r(!1), l || B(!0))
-          }), [n]), null === p ? null : (0, w.jsxs)(Ha.c, {
-            enabled: !!k,
+          }), []), (0, c.useEffect)((() => {
+            M.current && f(M?.current?.scrollHeight >= e)
+          }), [M, e]), (0, c.useEffect)((() => {
+            b || (i(-1), r(!1))
+          }), [b]), (0, c.useEffect)((() => {
+            s && (d || B(!0), n && (l(!1), i(-1)))
+          }), [s]), (0, c.useEffect)((() => {
+            n && (s && r(!1), d || B(!0))
+          }), [n]), null === _ ? null : (0, g.jsxs)(La.c, {
+            enabled: !!b,
             removeScrollBar: !1,
-            children: [(0, w.jsxs)("div", {
-              className: [vs.scMenu, k ? vs.navOpen : ""].join(" "),
-              "data-logged-in": p,
+            children: [(0, g.jsxs)("div", {
+              className: [ns.scMenu, b ? ns.navOpen : ""].join(" "),
+              "data-logged-in": _,
               "data-mac-browser": P,
               "data-scroll-mode": u,
-              ref: C,
-              "aria-hidden": !k,
-              children: [(0, w.jsx)("button", {
-                className: vs.dragHandleBtn,
+              ref: M,
+              "aria-hidden": !b,
+              children: [(0, g.jsx)("button", {
+                className: ns.dragHandleBtn,
                 type: "button",
                 onTouchStart: e => {
                   const t = void 0 !== e.changedTouches ? e.touches[0].screenX : e.screenX;
-                  L(t)
+                  z(t)
                 },
                 onTouchMove: e => {
-                  if (0 === E) return;
+                  if (0 === L) return;
                   const t = void 0 !== e.changedTouches ? e.changedTouches[0].screenX : e.screenX;
-                  Math.abs(E - t) > 1 && (L(0), h(!1))
+                  Math.abs(L - t) > 1 && (z(0), v(!1))
                 },
-                children: (0, w.jsx)("img", {
-                  className: vs.dragHandle,
+                children: (0, g.jsx)("img", {
+                  className: ns.dragHandle,
                   src: a(82708),
-                  alt: t.formatMessage($a.sc_menu_drag_handle)
+                  alt: t.formatMessage(Ma.sc_menu_drag_handle)
                 })
-              }), p ? (0, w.jsx)(hs, {
-                sc: N,
-                charListHidden: l,
+              }), _ ? (0, g.jsx)(is, {
+                sc: j,
+                charListHidden: d,
                 hideCharacterList: B,
-                refCharacterListDesktop: j,
-                menuPadding: S,
-                longCharList: x,
-                setLongCharList: y,
-                isMobileMode: M,
-                setIsMobileMode: I
-              }) : (0, w.jsx)(ms, {
-                sc: N,
-                navOpen: k
+                refCharacterListDesktop: S,
+                menuPadding: T,
+                longCharList: w,
+                setLongCharList: N,
+                isMobileMode: I,
+                setIsMobileMode: E
+              }) : (0, g.jsx)(Za, {
+                sc: j,
+                navOpen: b
               })]
-            }), (0, w.jsx)("div", {
-              className: [vs.scOverlay, k ? vs.navOpen : ""].join(" "),
-              "data-logged-in": p
+            }), (0, g.jsx)("div", {
+              className: [ns.scOverlay, b ? ns.navOpen : ""].join(" "),
+              "data-logged-in": _
             })]
           })
-        }), S),
-        xs = a(71084),
-        ys = a(29314),
-        ws = j((e => {
+        }), l),
+        os = a(71084),
+        ls = a(29314),
+        ds = (0, o.withIntl)((e => {
           let {
             setOtherHeaderDropdowns: t
           } = e;
-          const a = (0, d.c)(),
+          const a = (0, o.useIntl)(),
             {
               data: s
-            } = (0, se.useRockstarUser)(),
+            } = (0, R.useRockstarUser)(),
             {
               charactersNeeded: r,
               currentCharId: i,
               navOpen: n,
-              setNavOpen: c
-            } = (0, se.useRockstarUserState)(),
+              setNavOpen: l
+            } = (0, R.useRockstarUserState)(),
             {
-              track: l
-            } = (0, se.useGtmTrack)(),
-            [m, u] = (0, o.useState)(null),
-            [g, f] = (0, o.useState)(!1),
-            [p, _] = (0, o.useState)(null),
-            [k, h] = (0, o.useState)(!1),
-            [v, b] = (0, o.useState)([]);
-          (0, o.useEffect)((() => {
-            b(s.characters[r] ?? [])
+              track: d
+            } = (0, R.useGtmTrack)(),
+            [m, u] = (0, c.useState)(null),
+            [f, p] = (0, c.useState)(!1),
+            [_, h] = (0, c.useState)(null),
+            [k, b] = (0, c.useState)(!1),
+            [v, x] = (0, c.useState)([]);
+          (0, c.useEffect)((() => {
+            x(s.characters[r] ?? [])
           }), [s, r]);
-          const x = (0, o.useCallback)((e => {
-            e.stopPropagation(), c(!n), 1 == !n && t(null), l({
+          const y = (0, c.useCallback)((e => {
+            e.stopPropagation(), l(!n), 1 == !n && t(null), d({
               event: "account_menu_click",
               element_placement: "Account Menu",
               text: n ? "close" : "open"
             })
           }), [n]);
-          return (0, o.useEffect)((() => {
+          return (0, c.useEffect)((() => {
             const e = s?.id ?? !1,
-              t = e ? (v?.[i]?.mugshotUrl ?? s?.avatar) || xs : ys,
-              a = Ra(v?.[i]?.platform, "small") ?? null;
-            _(a), u(t), f(e), h(!!v?.[i]?.mugshotUrl)
-          }), [s, v, i, xs, ys]), (0, w.jsxs)("button", {
-            className: "rockstargames-sites-rockstar-tvdc519cef2feb621e4715bd3fcdf09791",
+              t = e ? (v?.[i]?.mugshotUrl ?? s?.avatar) || os : ls,
+              a = Ta(v?.[i]?.platform, "small") ?? null;
+            h(a), u(t), p(e), b(!!v?.[i]?.mugshotUrl)
+          }), [s, v, i, os, ls]), (0, g.jsxs)("button", {
+            className: "rockstargames-sites-careersdc519cef2feb621e4715bd3fcdf09791",
             "data-img-set": k,
-            "aria-label": a.formatMessage(n ? $a.sc_menu_close : $a.sc_menu_open),
+            "aria-label": a.formatMessage(n ? Ma.sc_menu_close : Ma.sc_menu_open),
             "aria-expanded": n,
             type: "button",
-            onClick: x,
+            onClick: y,
             "data-testid": "avaterMenuButton",
-            children: [(0, w.jsx)("img", {
-              className: "rockstargames-sites-rockstar-tvce75eaa6d65692d36b60d31f3f660ff0",
+            children: [(0, g.jsx)("img", {
+              className: "rockstargames-sites-careersce75eaa6d65692d36b60d31f3f660ff0",
               src: m || "",
               onError: () => {
-                u(xs)
+                u(os)
               },
               alt: s?.nickname || ""
-            }), g && null !== p && (0, w.jsx)("img", {
-              className: "rockstargames-sites-rockstar-tvaaf21e74a659089f743bb160bdf95046",
-              src: p.src,
-              alt: p.alt
-            }), g && (0, w.jsx)("div", {
+            }), f && null !== _ && (0, g.jsx)("img", {
+              className: "rockstargames-sites-careersaaf21e74a659089f743bb160bdf95046",
+              src: _.src,
+              alt: _.alt
+            }), f && (0, g.jsx)("div", {
               "data-ui-name": "avatar",
-              className: "rockstargames-sites-rockstar-tvcf6b9e7404c64067bdfef9b79e9eb287",
+              className: "rockstargames-sites-careerscf6b9e7404c64067bdfef9b79e9eb287",
               "data-platform": v?.[i]?.platform ?? null
             })]
           })
-        }), S),
-        Ns = {
-          pillBtn: "rockstargames-sites-rockstar-tvb03cc125f63972f13ae84119af852edc",
-          selected: "rockstargames-sites-rockstar-tvfbcf46d7ef0b32e64b374eee6e3cda3e",
-          promoModule: "rockstargames-sites-rockstar-tva586d11bf592ca821d65db7660518322",
-          promoModuleImage: "rockstargames-sites-rockstar-tvccd749d613ceb73aedb825d77d22cd0b",
-          gradient: "rockstargames-sites-rockstar-tve4f178a3d1e3dfef8b42f73eabd9919e",
-          promoModuleContentContainer: "rockstargames-sites-rockstar-tvd8348a62030f7e2f3c7a53cf67bef0f1",
-          left: "rockstargames-sites-rockstar-tve56a5b7d9a696ea8ca340cc9b67998fc",
-          right: "rockstargames-sites-rockstar-tvc84d09e0c4466d20792d5a9016a00236",
-          promoModuleTextContent: "rockstargames-sites-rockstar-tvbf34746d222495ab8e30cede8de42d71",
-          promoModuleWrapper: "rockstargames-sites-rockstar-tvf6d46a24b050aad98fc3aae387b75586"
+        }), l),
+        ms = {
+          pillBtn: "rockstargames-sites-careersb03cc125f63972f13ae84119af852edc",
+          selected: "rockstargames-sites-careersfbcf46d7ef0b32e64b374eee6e3cda3e",
+          promoModule: "rockstargames-sites-careersa586d11bf592ca821d65db7660518322",
+          promoModuleImage: "rockstargames-sites-careersccd749d613ceb73aedb825d77d22cd0b",
+          gradient: "rockstargames-sites-careerse4f178a3d1e3dfef8b42f73eabd9919e",
+          promoModuleContentContainer: "rockstargames-sites-careersd8348a62030f7e2f3c7a53cf67bef0f1",
+          left: "rockstargames-sites-careerse56a5b7d9a696ea8ca340cc9b67998fc",
+          right: "rockstargames-sites-careersc84d09e0c4466d20792d5a9016a00236",
+          promoModuleTextContent: "rockstargames-sites-careersbf34746d222495ab8e30cede8de42d71",
+          promoModuleWrapper: "rockstargames-sites-careersf6d46a24b050aad98fc3aae387b75586"
         },
-        js = e => {
+        us = e => {
           let {
             backgroundColor: t,
             brands: a = [],
@@ -7669,36 +7481,36 @@ _global.SENTRY_RELEASE = {
             ctaLabel: r,
             ctaLink: i = "https://rockstargames.com",
             gradient: n = !0,
-            image: c,
+            image: o,
             imageOrientation: l = "right",
             title: d = "",
             name: m = ""
           } = e;
-          const [u, g] = (0, o.useState)(!1), {
-            ref: f,
-            inView: p
-          } = (0, ce.cD)({
+          const [u, f] = (0, c.useState)(!1), {
+            ref: p,
+            inView: _
+          } = (0, q.cD)({
             threshold: .6
           }), {
-            track: _
-          } = (0, se.useGtmTrack)(), k = {
+            track: h
+          } = (0, R.useGtmTrack)(), k = {
             "--promo-background": t ?? "var(--black-200)",
-            "--promo-image": `url(${(0,U.useGetCdnSource)(c)??"var(--promo-background)"})`,
+            "--promo-image": `url(${(0,C.useGetCdnSource)(o)??"var(--promo-background)"})`,
             "--promo-order": "left" === l ? "row" : "row-reverse"
           };
-          return (0, o.useEffect)((() => {
-            p && !u && (_({
+          return (0, c.useEffect)((() => {
+            _ && !u && (h({
               event: "page_section_impression",
               event_action: "impression",
               event_category: "page_section",
               event_label: "promo module",
               element_placement: m
-            }), g(!0))
-          }), [p]), (0, w.jsx)(w.Fragment, {
-            children: (0, w.jsx)("div", {
-              className: Ns.promoModuleWrapper,
-              children: (0, w.jsxs)(at.q.div, {
-                className: Ns.promoModule,
+            }), f(!0))
+          }), [_]), (0, g.jsx)(g.Fragment, {
+            children: (0, g.jsx)("div", {
+              className: ms.promoModuleWrapper,
+              children: (0, g.jsxs)($e.q.div, {
+                className: ms.promoModule,
                 style: {
                   ...k
                 },
@@ -7716,26 +7528,26 @@ _global.SENTRY_RELEASE = {
                   ease: "easeIn",
                   duration: .4
                 },
-                ref: f,
-                children: [(0, w.jsx)("div", {
-                  className: [Ns.promoModuleImage, n ? Ns.gradient : "", "left" === l ? Ns.left : Ns.right].join(" ")
-                }), (0, w.jsxs)("div", {
-                  className: Ns.promoModuleContentContainer,
-                  children: [(0, w.jsx)(F, {
+                ref: p,
+                children: [(0, g.jsx)("div", {
+                  className: [ms.promoModuleImage, n ? ms.gradient : "", "left" === l ? ms.left : ms.right].join(" ")
+                }), (0, g.jsxs)("div", {
+                  className: ms.promoModuleContentContainer,
+                  children: [(0, g.jsx)(j, {
                     brands: a,
-                    className: Ns.promoModuleBrands
-                  }), (0, w.jsxs)("div", {
-                    className: Ns.promoModuleTextContent,
-                    children: [d && (0, w.jsx)("h3", {
+                    className: ms.promoModuleBrands
+                  }), (0, g.jsxs)("div", {
+                    className: ms.promoModuleTextContent,
+                    children: [d && (0, g.jsx)("h3", {
                       children: d
-                    }), s && (0, w.jsx)("p", {
+                    }), s && (0, g.jsx)("p", {
                       children: s
                     })]
-                  }), r && (0, w.jsx)(X, {
+                  }), r && (0, g.jsx)(L, {
                     to: i,
                     text: r,
                     onClick: () => {
-                      _({
+                      h({
                         event: "cta_other",
                         event_category: "cta",
                         event_action: "other",
@@ -7751,127 +7563,127 @@ _global.SENTRY_RELEASE = {
             })
           })
         },
-        Ss = {
-          rating: "rockstargames-sites-rockstar-tva1271bbed316bf567eb67e78d2143808",
-          withDescriptors: "rockstargames-sites-rockstar-tvcba248edc2520d3f1ad195a8495dc1f8",
-          withOutDescriptors: "rockstargames-sites-rockstar-tvff919f7a60b854473b61075a671deb6a",
-          text: "rockstargames-sites-rockstar-tvd47cd2b7c7415cb44cddef00b1c9b35f"
+        gs = {
+          rating: "rockstargames-sites-careersa1271bbed316bf567eb67e78d2143808",
+          withDescriptors: "rockstargames-sites-careerscba248edc2520d3f1ad195a8495dc1f8",
+          withOutDescriptors: "rockstargames-sites-careersff919f7a60b854473b61075a671deb6a",
+          text: "rockstargames-sites-careersd47cd2b7c7415cb44cddef00b1c9b35f"
         },
-        Ts = (0, c.Os)({
+        fs = (0, o.defineMessages)({
           components_ratings_link_alt: {
             id: "components_ratings_link_alt",
             defaultMessage: "Rating: {rating}. Click here learn more about rating systems"
           }
         });
-      var Cs = a(13784);
-      const Ms = "undefined" != typeof GameDataNewGamesDatabaseConnection ? GameDataNewGamesDatabaseConnection : Cs.GameData;
-      (0, ae.importAll)(a(52884));
-      const Is = vt(j((e => {
+      var ps = a(13316);
+      const _s = void 0 !== ps.GameData ? ps.GameData : GameDataDefault;
+      (0, F.importAll)(a(52884));
+      const hs = it((0, o.withIntl)((e => {
           let {
             descriptors: t = null,
             footer: s = null,
             href: r,
             img: i = null,
             titleSlug: n = null,
-            style: c = {},
-            className: l
+            style: l = {},
+            className: d
           } = e;
-          const [m, u] = (0, o.useState)(!1), {
-            inView: g
-          } = (0, ce.cD)({
+          const [m, u] = (0, c.useState)(!1), {
+            inView: p
+          } = (0, q.cD)({
             threshold: .6
-          }), [f, p] = (0, o.useState)({
+          }), [_, k] = (0, c.useState)({
             ratingDescriptors: t,
             ratingFooter: s,
             ratingImg: i,
             ratingUrl: r
           }), {
-            track: _
-          } = (0, se.useGtmTrack)(), k = (0, d.c)(), {
-            data: h
-          } = (0, z.useQuery)(Ms, {
+            track: b
+          } = (0, R.useGtmTrack)(), v = (0, o.useIntl)(), {
+            data: x
+          } = (0, h.useQuery)(_s, {
             variables: {
               titleSlug: n
             },
             skip: !n
           });
-          if ((0, o.useEffect)((() => {
-              h && p(h?.game)
-            }), [h]), (0, o.useEffect)((() => {
-              g && !m && f.img_rating && (_({
+          if ((0, c.useEffect)((() => {
+              x && k(x?.game)
+            }), [x]), (0, c.useEffect)((() => {
+              p && !m && _.img_rating && (b({
                 event: "page_section_impression",
                 event_action: "impression",
                 event_category: "page_section",
                 event_label: "rating",
                 element_placement: "rating"
               }), u(!0))
-            }), [g]), !f.ratingImg) return null;
-          const v = !!f.ratingDescriptors;
-          return (0, w.jsxs)("div", {
-            className: [Ss.rating, v ? Ss.withDescriptors : Ss.withOutDescriptors, l || ""].join(" "),
-            style: (0, ae.safeStyles)(c),
-            children: [(0, w.jsx)(I, {
-              to: f.ratingUrl,
+            }), [p]), !_.ratingImg) return null;
+          const y = !!_.ratingDescriptors;
+          return (0, g.jsxs)("div", {
+            className: [gs.rating, y ? gs.withDescriptors : gs.withOutDescriptors, d || ""].join(" "),
+            style: (0, F.safeStyles)(l),
+            children: [(0, g.jsx)(f, {
+              to: _.ratingUrl,
               target: "_blank",
-              children: (0, w.jsx)("img", {
-                alt: k.formatMessage(Ts.components_ratings_link_alt, {
-                  rating: (b = f.ratingImg, b.replace(/_/g, " ").split(".")[0].toUpperCase())
+              children: (0, g.jsx)("img", {
+                alt: v.formatMessage(fs.components_ratings_link_alt, {
+                  rating: (w = _.ratingImg, w.replace(/_/g, " ").split(".")[0].toUpperCase())
                 }),
-                src: a(7e4)(`./${f.ratingImg}`)
+                src: a(7e4)(`./${_.ratingImg}`)
               })
-            }), v && (0, w.jsxs)("div", {
-              className: Ss.text,
-              children: [(0, w.jsx)("p", {
-                className: Ss.descriptors,
+            }), y && (0, g.jsxs)("div", {
+              className: gs.text,
+              children: [(0, g.jsx)("p", {
+                className: gs.descriptors,
                 dangerouslySetInnerHTML: {
-                  __html: f?.ratingDescriptors?.split(/<br\s?\/?>/).join(", ") || ""
+                  __html: _?.ratingDescriptors?.split(/<br\s?\/?>/).join(", ") || ""
                 }
-              }), f.ratingFooter && (0, w.jsx)("hr", {}), f.ratingFooter && (0, w.jsx)("p", {
+              }), _.ratingFooter && (0, g.jsx)("hr", {}), _.ratingFooter && (0, g.jsx)("p", {
                 dangerouslySetInnerHTML: {
-                  __html: f.ratingFooter.replace(/ \//g, ", ")
+                  __html: _.ratingFooter.replace(/ \//g, ", ")
                 }
               })]
             })]
           });
-          var b
-        }), S)),
-        Es = {
-          responsiveFlexBox: "rockstargames-sites-rockstar-tvcef355ba53827b9ec44655c80b247b2e",
-          responsiveFlexItem: "rockstargames-sites-rockstar-tva8f5d10f689c3d40c8378e3ae8a07517",
-          responsiveImage: "rockstargames-sites-rockstar-tvbee8268780b292e5bc0da0b497e2c28f"
+          var w
+        }), l)),
+        ks = {
+          responsiveFlexBox: "rockstargames-sites-careerscef355ba53827b9ec44655c80b247b2e",
+          responsiveFlexItem: "rockstargames-sites-careersa8f5d10f689c3d40c8378e3ae8a07517",
+          responsiveImage: "rockstargames-sites-careersbee8268780b292e5bc0da0b497e2c28f"
         },
-        Ls = e => {
+        bs = e => {
           let {
             children: t,
             className: a,
             style: s
           } = e;
-          return (0, w.jsx)("div", {
-            className: [Es.responsiveFlexBox, void 0 !== a ? a : ""].join(" "),
+          return (0, g.jsx)("div", {
+            className: [ks.responsiveFlexBox, void 0 !== a ? a : ""].join(" "),
             style: s,
             children: t
           })
         },
-        zs = {
-          responsiveFlexItem: "rockstargames-sites-rockstar-tvae579f6183cf73c897e68c8aae5c9d9d"
+        vs = {
+          responsiveFlexItem: "rockstargames-sites-careersae579f6183cf73c897e68c8aae5c9d9d"
         },
-        Ps = e => {
+        xs = e => {
           let {
             children: t,
             className: a,
             style: s
           } = e;
-          return (0, w.jsx)("div", {
-            className: [zs.responsiveFlexItem, void 0 !== a ? a : ""].join(" "),
+          return (0, g.jsx)("div", {
+            className: [vs.responsiveFlexItem, void 0 !== a ? a : ""].join(" "),
             style: s,
             children: t
           })
         },
-        Os = {
-          responsiveGridBox: "rockstargames-sites-rockstar-tva28c0b7a44e1a2d5fb257161ce36a24f",
-          responsiveGridItem: "rockstargames-sites-rockstar-tvbeddf36313a28976090b5a8b04d2594a"
+        ys = {
+          responsiveGridBox: "rockstargames-sites-careersa28c0b7a44e1a2d5fb257161ce36a24f",
+          responsiveGridItem: "rockstargames-sites-careersbeddf36313a28976090b5a8b04d2594a"
         },
-        As = e => {
+        ws = e => {
           let {
             children: t,
             cols: a,
@@ -7882,32 +7694,32 @@ _global.SENTRY_RELEASE = {
           const n = i ? {
             ...i
           } : {};
-          return void 0 !== a && (n.gridTemplateColumns = `repeat(${a}, 1fr)`), void 0 !== r && (n.gridTemplateRows = `repeat(${r}, 1fr)`), (0, w.jsx)("div", {
-            className: [Os.responsiveGridBox, void 0 !== s ? s : ""].join(" "),
+          return void 0 !== a && (n.gridTemplateColumns = `repeat(${a}, 1fr)`), void 0 !== r && (n.gridTemplateRows = `repeat(${r}, 1fr)`), (0, g.jsx)("div", {
+            className: [ys.responsiveGridBox, void 0 !== s ? s : ""].join(" "),
             style: n,
             children: t
           })
         },
-        Ds = {
-          responsiveGridBox: "rockstargames-sites-rockstar-tva39e7c7140ada0ab28537c8c901e816f",
-          responsiveGridItem: "rockstargames-sites-rockstar-tvbe7a0966e2f0457c1172ac9da99020c6"
+        Ns = {
+          responsiveGridBox: "rockstargames-sites-careersa39e7c7140ada0ab28537c8c901e816f",
+          responsiveGridItem: "rockstargames-sites-careersbe7a0966e2f0457c1172ac9da99020c6"
         },
-        Bs = e => {
+        js = e => {
           let {
             children: t,
             className: a,
             style: s
           } = e;
-          return (0, w.jsx)("div", {
-            className: [Ds.responsiveGridItem, void 0 !== a ? a : ""].join(" "),
+          return (0, g.jsx)("div", {
+            className: [Ns.responsiveGridItem, void 0 !== a ? a : ""].join(" "),
             style: s,
             children: t
           })
         },
-        Vs = {
-          responsiveImage: "rockstargames-sites-rockstar-tve31b43dce2e720669fb90bf539d22197"
+        Ss = {
+          responsiveImage: "rockstargames-sites-careerse31b43dce2e720669fb90bf539d22197"
         },
-        Rs = e => {
+        Ts = e => {
           let {
             src: t,
             className: a = "",
@@ -7915,60 +7727,60 @@ _global.SENTRY_RELEASE = {
             ariaLabel: r,
             style: i = {}
           } = e;
-          const [n, o] = (0, ae.usePreloadImg)(t);
-          return n ? (i.backgroundImage = `url(${t})`, (0, w.jsx)("div", {
+          const [n, c] = (0, F.usePreloadImg)(t);
+          return n ? (i.backgroundImage = `url(${t})`, (0, g.jsx)("div", {
             role: "img",
             "aria-label": r ?? "R* Games",
-            className: [Vs.responsiveImage, s ? Vs.animateBox : "", a].join(" "),
+            className: [Ss.responsiveImage, s ? Ss.animateBox : "", a].join(" "),
             style: {
               ...i,
-              "--aspect-ratio": o.width / o.height
+              "--aspect-ratio": c.width / c.height
             }
           })) : null
         },
-        Fs = {
-          responsiveSection: "rockstargames-sites-rockstar-tvfb7094e43a166c19080ccfe92ed7420d",
-          maxWidth: "rockstargames-sites-rockstar-tvbdc35dbaa55c59ddd2831fd3ac05c5a7"
+        Cs = {
+          responsiveSection: "rockstargames-sites-careersfb7094e43a166c19080ccfe92ed7420d",
+          maxWidth: "rockstargames-sites-careersbdc35dbaa55c59ddd2831fd3ac05c5a7"
         },
-        $s = e => {
+        Ms = e => {
           let {
             children: t,
             className: a,
             style: s,
             maxWidth: r
           } = e;
-          return (0, w.jsx)("section", {
-            className: [Fs.responsiveSection, void 0 !== a ? a : ""].join(" "),
+          return (0, g.jsx)("section", {
+            className: [Cs.responsiveSection, void 0 !== a ? a : ""].join(" "),
             style: s,
-            children: r ? (0, w.jsx)("div", {
-              className: Fs.maxWidth,
+            children: r ? (0, g.jsx)("div", {
+              className: Cs.maxWidth,
               children: t
             }) : t
           })
         },
-        Gs = () => (0, w.jsx)(I, {
-          className: "rockstargames-sites-rockstar-tvba0c20f78999975dfb8d9cff0de44b34",
+        Is = () => (0, g.jsx)(f, {
+          className: "rockstargames-sites-careersba0c20f78999975dfb8d9cff0de44b34",
           alt: "Rockstar Games Home",
           to: "/"
         }),
-        Us = e => {
+        Es = e => {
           let {
             thresholds: t,
             onThresholdReached: a,
             children: s
           } = e;
-          const [r, i] = (0, o.useState)([]), [n, c] = (0, o.useState)(new Set);
-          return (0, o.useEffect)((() => {
+          const [r, i] = (0, c.useState)([]), [n, o] = (0, c.useState)(new Set);
+          return (0, c.useEffect)((() => {
             const e = Array.from(new Set(t));
             e.sort(((e, t) => e - t)), i(e)
-          }), [t]), (0, w.jsxs)("div", {
+          }), [t]), (0, g.jsxs)("div", {
             style: {
               position: "relative"
             },
-            children: [r.map((e => (0, w.jsx)(ce.Ws, {
+            children: [r.map((e => (0, g.jsx)(q.Ws, {
               threshold: e,
               onChange: t => ((e, t) => {
-                e && !n.has(t) && c((e => {
+                e && !n.has(t) && o((e => {
                   const s = new Set(e);
                   return r.forEach((e => {
                     e <= t && !s.has(e) && (s.add(e), a(e))
@@ -7980,7 +7792,7 @@ _global.SENTRY_RELEASE = {
                 let {
                   ref: a
                 } = t;
-                return (0, w.jsx)("div", {
+                return (0, g.jsx)("div", {
                   ref: a,
                   style: {
                     height: "1px",
@@ -7992,18 +7804,18 @@ _global.SENTRY_RELEASE = {
             }, e))), s]
           })
         },
-        Hs = () => {
+        Ls = () => {
           const {
             pathname: e
-          } = (0, C.useLocation)();
-          return (0, o.useEffect)((() => {
+          } = (0, m.useLocation)();
+          return (0, c.useEffect)((() => {
             const e = document.scrollingElement || document.documentElement;
             setTimeout((() => {
               e.scrollTop = 0
             }), 0)
           }), [e]), null
         },
-        qs = (0, o.forwardRef)(((e, t) => {
+        zs = (0, c.forwardRef)(((e, t) => {
           const {
             threshold: a,
             callback: s,
@@ -8011,42 +7823,42 @@ _global.SENTRY_RELEASE = {
             requireUser: i
           } = e, {
             track: n
-          } = (0, se.useGtmTrack)(i), [c, l] = (0, o.useState)(t?.current);
-          return (0, o.useEffect)((() => {
+          } = (0, R.useGtmTrack)(i), [o, l] = (0, c.useState)(t?.current);
+          return (0, c.useEffect)((() => {
             t?.current && l(t.current)
           }), [t]), ((e, t, a) => {
-            const [s, r] = (0, o.useState)({
+            const [s, r] = (0, c.useState)({
               scrollDepths: e,
               scrollY: 0
             }), {
               scrollDepths: i,
               scrollY: n
             } = s;
-            (0, o.useEffect)((() => {
+            (0, c.useEffect)((() => {
               "undefined" != typeof window && 0 !== window.pageYOffset && r((e => ({
                 ...e,
                 scrollY: window.pageYOffset
               })))
-            }), []), (0, o.useEffect)((() => {
+            }), []), (0, c.useEffect)((() => {
               r({
                 scrollDepths: e,
                 scrollY: 0
               })
             }), [window.location.pathname]);
-            const c = (0, o.useCallback)((() => {
+            const o = (0, c.useCallback)((() => {
               const e = document.documentElement,
                 n = document.body,
-                o = a?.scrollTop || e.scrollTop || n.scrollTop,
+                c = a?.scrollTop || e.scrollTop || n.scrollTop,
                 l = a?.scrollHeight || e.scrollHeight || n.scrollHeight,
                 {
                   clientHeight: d
                 } = e,
-                m = o / (l - d) * 100;
+                m = c / (l - d) * 100;
               if (i) {
                 const e = Math.min(...i, l);
                 if (m >= e) {
                   const s = i.filter((t => t !== e));
-                  0 === s.length && (a ?? window).removeEventListener("scroll", c), t && t({
+                  0 === s.length && (a ?? window).removeEventListener("scroll", o), t && t({
                     scrollY: e,
                     scrollPercent: m,
                     remainingDepths: s
@@ -8060,11 +7872,11 @@ _global.SENTRY_RELEASE = {
                 scrollY: m
               })
             }), [i, a, t]);
-            (0, o.useEffect)((() => {
+            (0, c.useEffect)((() => {
               if ("undefined" == typeof window) return;
               const e = a ?? window;
-              return e.addEventListener("scroll", c), () => e.removeEventListener("scroll", c)
-            }), [c])
+              return e.addEventListener("scroll", o), () => e.removeEventListener("scroll", o)
+            }), [o])
           })(a, (e => {
             let {
               scrollY: t
@@ -8075,29 +7887,29 @@ _global.SENTRY_RELEASE = {
               event_action: t,
               scroll_depth: t
             }), "function" == typeof s && s(t)
-          }), c), r
+          }), o), r
         }));
-      qs.displayName = "ScrollTracker";
-      const Ws = qs,
-        Xs = (0, ae.withTranslations)((e => {
+      zs.displayName = "ScrollTracker";
+      const Ps = zs,
+        Os = (0, F.withTranslations)((e => {
           let {
             t
           } = e;
-          const [a] = (0, o.useState)(""), s = (0, C.useNavigate)(), r = (0, z.useMutateState)();
-          return (0, w.jsxs)("form", {
+          const [a] = (0, c.useState)(""), s = (0, m.useNavigate)(), r = (0, h.useMutateState)();
+          return (0, g.jsxs)("form", {
             action: "#",
-            className: "rockstargames-sites-rockstar-tvb82052ce07e004075e77261c373bfc50",
+            className: "rockstargames-sites-careersb82052ce07e004075e77261c373bfc50",
             onSubmit: e => {
               e.preventDefault(), r({
                 navOpen: !1
               }), document.activeElement?.blur(), s(`/search?q=${e.target.q.value}`)
             },
             role: "search",
-            children: [(0, w.jsx)("button", {
+            children: [(0, g.jsx)("button", {
               type: "submit",
               role: "button",
               title: "Submit"
-            }), (0, w.jsx)("input", {
+            }), (0, g.jsx)("input", {
               autoComplete: "off",
               defaultValue: a,
               enterKeyHint: "search",
@@ -8106,69 +7918,69 @@ _global.SENTRY_RELEASE = {
             })]
           })
         })),
-        Ys = {
-          skeleton: "rockstargames-sites-rockstar-tvf963a1ae95f7f5ac2c5192c3f357b6dc",
-          pulse: "rockstargames-sites-rockstar-tve00ed88d692bbfc1a301dcfc61a077a9",
-          gen9Hero: "rockstargames-sites-rockstar-tvdb0b80177710d337d93bddb97b8a7dea"
+        As = {
+          skeleton: "rockstargames-sites-careersf963a1ae95f7f5ac2c5192c3f357b6dc",
+          pulse: "rockstargames-sites-careerse00ed88d692bbfc1a301dcfc61a077a9",
+          gen9Hero: "rockstargames-sites-careersdb0b80177710d337d93bddb97b8a7dea"
         },
-        Ks = e => {
+        Ds = e => {
           let {
             skeleton: t
           } = e;
-          return t ? (0, w.jsx)("div", {
-            className: [Ys.skeleton, Ys[t]].join(" ")
+          return t ? (0, g.jsx)("div", {
+            className: [As.skeleton, As[t]].join(" ")
           }) : null
         },
-        Qs = (0, c.Os)({
+        Bs = (0, o.defineMessages)({
           components_track_list_title: {
             id: "components_track_list_title",
             defaultMessage: "Tracklist"
           }
         }),
-        Zs = {
-          bodySmall: "rockstargames-sites-rockstar-tvc048aacaedc7fb642f38c7f163c193e3"
+        Vs = {
+          bodySmall: "rockstargames-sites-careersc048aacaedc7fb642f38c7f163c193e3"
         },
-        Js = e => {
+        Fs = e => {
           let {
             track: t,
             artist: a
           } = e;
-          return (0, w.jsxs)("div", {
-            className: Zs.track,
-            children: [(0, w.jsx)("p", {
+          return (0, g.jsxs)("div", {
+            className: Vs.track,
+            children: [(0, g.jsx)("p", {
               children: t
-            }), (0, w.jsx)("p", {
-              className: Zs.bodySmall,
+            }), (0, g.jsx)("p", {
+              className: Vs.bodySmall,
               children: a
             })]
           })
         },
-        er = j((e => {
+        Rs = (0, o.withIntl)((e => {
           let {
             content: t = []
           } = e;
-          return (0, w.jsxs)("div", {
-            className: "rockstargames-sites-rockstar-tve6c19f2cdd68a4352e248a8324383aa2",
-            children: [(0, w.jsx)("h4", {
-              className: "rockstargames-sites-rockstar-tvcd3895fbae93ba04f1401487f6e6eddf",
-              children: (0, w.jsx)(l.c, {
-                ...Qs.components_track_list_title
+          return (0, g.jsxs)("div", {
+            className: "rockstargames-sites-careerse6c19f2cdd68a4352e248a8324383aa2",
+            children: [(0, g.jsx)("h4", {
+              className: "rockstargames-sites-careerscd3895fbae93ba04f1401487f6e6eddf",
+              children: (0, g.jsx)(o.FormattedMessage, {
+                ...Bs.components_track_list_title
               })
-            }), (0, w.jsx)("div", {
-              className: "rockstargames-sites-rockstar-tvef0cde8b15ded961605237d0e8328a9b",
-              children: (0, w.jsx)("div", {
-                className: "rockstargames-sites-rockstar-tvbdd54186db17d27b3daebc4b9d58e09a",
-                children: t?.map((e => (0, w.jsx)(Js, {
+            }), (0, g.jsx)("div", {
+              className: "rockstargames-sites-careersef0cde8b15ded961605237d0e8328a9b",
+              children: (0, g.jsx)("div", {
+                className: "rockstargames-sites-careersbdd54186db17d27b3daebc4b9d58e09a",
+                children: t?.map((e => (0, g.jsx)(Fs, {
                   track: e.track,
                   artist: e.artist
                 }, e.key)))
               })
             })]
           })
-        }), S),
-        tr = "rockstargames-sites-rockstar-tveca98eb0b5b84a0c9a2e6d952545a2d5",
-        ar = "rockstargames-sites-rockstar-tvd3d0b4ecd3bddba96c73f49fcca34ed8",
-        sr = {
+        }), l),
+        $s = "rockstargames-sites-careerseca98eb0b5b84a0c9a2e6d952545a2d5",
+        Us = "rockstargames-sites-careersd3d0b4ecd3bddba96c73f49fcca34ed8",
+        Gs = {
           0: {
             spaceBetween: 8
           },
@@ -8185,7 +7997,7 @@ _global.SENTRY_RELEASE = {
             spaceBetween: 22
           }
         },
-        rr = e => {
+        Hs = e => {
           let {
             title: t = "thumbnail gallery",
             thumbsPerView: a = 3,
@@ -8197,7 +8009,7 @@ _global.SENTRY_RELEASE = {
               main: void 0,
               thumbs: void 0
             },
-            transition: c = {
+            transition: o = {
               parent: void 0,
               main: void 0,
               thumbs: void 0
@@ -8205,29 +8017,29 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: l
-          } = (0, se.useGtmTrack)(), [d, m] = (0, o.useState)([pt.O4, pt.Hj, pt.eM]), [u, g] = (0, o.useState)(null), [f, p] = (0, o.useState)(null);
-          return (0, o.useEffect)((() => {
-            const e = [pt.O4, pt.Hj, pt.eM];
-            r && e.push(pt._2), m(e)
-          }), [r]), (0, o.useEffect)((() => {
+          } = (0, R.useGtmTrack)(), [d, m] = (0, c.useState)([tt.O4, tt.Hj, tt.eM]), [u, f] = (0, c.useState)(null), [p, _] = (0, c.useState)(null);
+          return (0, c.useEffect)((() => {
+            const e = [tt.O4, tt.Hj, tt.eM];
+            r && e.push(tt._2), m(e)
+          }), [r]), (0, c.useEffect)((() => {
             if (!i) return;
-            const e = i.map(((e, t) => (0, w.jsx)(K.Ky, {
+            const e = i.map(((e, t) => (0, g.jsx)(P.Ky, {
               children: e
             }, Symbol(t).toString())));
-            p(e)
-          }), [i]), f ? (0, w.jsxs)(at.q.div, {
-            className: "rockstargames-sites-rockstar-tvd4f245838b94234f21463a08a8112910",
+            _(e)
+          }), [i]), p ? (0, g.jsxs)($e.q.div, {
+            className: "rockstargames-sites-careersd4f245838b94234f21463a08a8112910",
             variants: n.parent,
-            transition: c.parent,
+            transition: o.parent,
             initial: "initial",
             animate: "animate",
-            children: [(0, w.jsx)(at.q.div, {
-              className: tr,
+            children: [(0, g.jsx)($e.q.div, {
+              className: $s,
               variants: n.main,
-              transition: c.main,
+              transition: o.main,
               initial: "initial",
               animate: "animate",
-              children: (0, w.jsx)(K.wx, {
+              children: (0, g.jsx)(P.wx, {
                 loop: s,
                 navigation: r,
                 pagination: {
@@ -8237,8 +8049,8 @@ _global.SENTRY_RELEASE = {
                   swiper: u
                 },
                 modules: d,
-                breakpoints: sr,
-                className: tr,
+                breakpoints: Gs,
+                className: $s,
                 onSlideNextTransitionEnd: () => {
                   l({
                     event_action: "next",
@@ -8266,31 +8078,31 @@ _global.SENTRY_RELEASE = {
                     element_placement: t?.toLowerCase() ?? ""
                   })
                 },
-                children: f
+                children: p
               })
-            }), (0, w.jsx)(at.q.div, {
-              className: ar,
+            }), (0, g.jsx)($e.q.div, {
+              className: Us,
               variants: n.thumbs,
-              transition: c.thumbs,
+              transition: o.thumbs,
               initial: "initial",
               animate: "animate",
-              children: (0, w.jsx)(K.wx, {
+              children: (0, g.jsx)(P.wx, {
                 threshold: 50,
-                onSwiper: g,
+                onSwiper: f,
                 loop: s,
-                breakpoints: sr,
+                breakpoints: Gs,
                 slidesPerView: a,
                 freeMode: !0,
                 watchSlidesProgress: !0,
                 modules: d,
-                className: ar,
-                children: f
+                className: Us,
+                children: p
               })
             })]
           }) : null
         };
-      var ir = a(504);
-      const nr = e => {
+      var qs = a(504);
+      const Ws = e => {
           let {
             id: t = null,
             ids: a = null,
@@ -8300,7 +8112,7 @@ _global.SENTRY_RELEASE = {
           const i = a ?? [t],
             {
               data: n
-            } = (0, z.useQuery)(ir.TinaModulesInfo, {
+            } = (0, h.useQuery)(qs.TinaModulesInfo, {
               variables: {
                 ids: i,
                 sync: r
@@ -8310,27 +8122,27 @@ _global.SENTRY_RELEASE = {
             });
           return n?.tinaModulesInfo ?? null
         },
-        or = vt((e => {
+        Xs = it((e => {
           let {
             components: t = {},
             id: a = null,
             ids: s = null,
             skeleton: r
           } = e;
-          const i = nr({
+          const i = Ws({
             id: a,
             ids: s
           });
-          if (!i) return (0, w.jsx)(Ks, {
+          if (!i) return (0, g.jsx)(Ds, {
             skeleton: r
           });
           const n = i?.[0]?.tina;
-          return n ? (0, w.jsx)(w.Fragment, {
+          return n ? (0, g.jsx)(g.Fragment, {
             children: i.map(((e, a) => {
               let {
                 tina: s
               } = e;
-              return (0, w.jsx)(U.TinaParser, {
+              return (0, g.jsx)(C.TinaParser, {
                 components: t,
                 tina: s,
                 componentProps: {
@@ -8340,36 +8152,36 @@ _global.SENTRY_RELEASE = {
             }))
           }) : null
         })),
-        cr = e => {
+        Ys = e => {
           let {
             children: t,
             style: a,
             theme: s
           } = e;
-          const [r, i] = (0, o.useState)(s);
-          return (0, o.useEffect)((() => {
+          const [r, i] = (0, c.useState)(s);
+          return (0, c.useEffect)((() => {
             s && i(s)
-          }), [s]), (0, w.jsx)("div", {
-            className: "rockstargames-sites-rockstar-tva3cc68ab0d512c3d8835ee9abb7a51c4",
+          }), [s]), (0, g.jsx)("div", {
+            className: "rockstargames-sites-careersa3cc68ab0d512c3d8835ee9abb7a51c4",
             style: a,
             "data-theme": r,
             children: t
           })
         };
-      var lr = a(19168);
-      const dr = {
-          pillBtn: "rockstargames-sites-rockstar-tvae56f3a5bf16f1160a0cbc040c7611fa",
-          selected: "rockstargames-sites-rockstar-tvd7e34a082f54f22035320df51e8b4ed9",
-          userVote: "rockstargames-sites-rockstar-tvfd538df1ac730062880ff9ca1292dcc4",
-          info: "rockstargames-sites-rockstar-tvdd49c22b2bd842d7e8c11ac45b3a536b",
-          voteContent: "rockstargames-sites-rockstar-tveb3c4c0d7629a1182cd138d3d2e6e081",
-          loggedOutButtons: "rockstargames-sites-rockstar-tvd00b4195df0f175083f6aa2a7d847d72",
-          voteButtons: "rockstargames-sites-rockstar-tvfdd10a481e3da0f8e9511b6a577052e0",
-          downVote: "rockstargames-sites-rockstar-tvabdbb2656b0080d66eb4d39b7e1eb38d",
-          upVote: "rockstargames-sites-rockstar-tvea25ed07e937e2efdce0b99d076fbbe1",
-          voteButtonActive: "rockstargames-sites-rockstar-tvc31731d09d8118c6a82fe6edb193dc50"
+      var Ks = a(19168);
+      const Qs = {
+          pillBtn: "rockstargames-sites-careersae56f3a5bf16f1160a0cbc040c7611fa",
+          selected: "rockstargames-sites-careersd7e34a082f54f22035320df51e8b4ed9",
+          userVote: "rockstargames-sites-careersfd538df1ac730062880ff9ca1292dcc4",
+          info: "rockstargames-sites-careersdd49c22b2bd842d7e8c11ac45b3a536b",
+          voteContent: "rockstargames-sites-careerseb3c4c0d7629a1182cd138d3d2e6e081",
+          loggedOutButtons: "rockstargames-sites-careersd00b4195df0f175083f6aa2a7d847d72",
+          voteButtons: "rockstargames-sites-careersfdd10a481e3da0f8e9511b6a577052e0",
+          downVote: "rockstargames-sites-careersabdbb2656b0080d66eb4d39b7e1eb38d",
+          upVote: "rockstargames-sites-careersea25ed07e937e2efdce0b99d076fbbe1",
+          voteButtonActive: "rockstargames-sites-careersc31731d09d8118c6a82fe6edb193dc50"
         },
-        mr = e => {
+        Zs = e => {
           let {
             description: t,
             foreign_id: a = document.location.pathname,
@@ -8378,13 +8190,13 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: i
-          } = (0, se.useGtmTrack)(), {
+          } = (0, R.useGtmTrack)(), {
             loggedIn: n
-          } = (0, se.useRockstarUser)(), {
-            refetch: c
-          } = (0, z.useQuery)(lr.UserGetVote, {
+          } = (0, R.useRockstarUser)(), {
+            refetch: o
+          } = (0, h.useQuery)(Ks.UserGetVote, {
             skip: !0
-          }), [l] = (0, z.useMutation)(lr.UserCastVote), [d, m] = (0, o.useState)(null), u = (0, o.useCallback)((async e => {
+          }), [l] = (0, h.useMutation)(Ks.UserCastVote), [d, m] = (0, c.useState)(null), u = (0, c.useCallback)((async e => {
             i({
               event_action: d ? "like" : "dislike",
               event_category: "cta",
@@ -8401,35 +8213,35 @@ _global.SENTRY_RELEASE = {
               });
             m(r?.data?.userCastVote?.vote ?? null)
           }), [a, s]);
-          return (0, o.useEffect)((() => {
+          return (0, c.useEffect)((() => {
             (async () => {
               if (!n || !a || !s) return;
-              const e = await c({
+              const e = await o({
                 foreign_id: a,
                 foreign_type: s
               });
               m(e?.data?.userGetVote?.vote ?? null)
             })()
-          }), [a, s, n]), (0, w.jsx)("div", {
-            className: dr.userVote,
-            children: (0, w.jsxs)("div", {
-              className: dr.voteContent,
-              children: [(0, w.jsxs)("div", {
-                className: dr.info,
-                children: [(0, w.jsx)("h3", {
+          }), [a, s, n]), (0, g.jsx)("div", {
+            className: Qs.userVote,
+            children: (0, g.jsxs)("div", {
+              className: Qs.voteContent,
+              children: [(0, g.jsxs)("div", {
+                className: Qs.info,
+                children: [(0, g.jsx)("h3", {
                   children: r
-                }), (0, w.jsx)("p", {
+                }), (0, g.jsx)("p", {
                   children: t
                 })]
-              }), (0, w.jsxs)("div", {
-                className: [dr.voteButtons, n ? "" : dr.loggedOutButtons].join(" "),
-                children: [(0, w.jsx)("button", {
+              }), (0, g.jsxs)("div", {
+                className: [Qs.voteButtons, n ? "" : Qs.loggedOutButtons].join(" "),
+                children: [(0, g.jsx)("button", {
                   onClick: () => u(!0),
-                  className: [dr.upVote, d ? dr.voteButtonActive : ""].join(" "),
+                  className: [Qs.upVote, d ? Qs.voteButtonActive : ""].join(" "),
                   type: "button",
                   "aria-label": "Vote up"
-                }), (0, w.jsx)("button", {
-                  className: [dr.downVote, !1 === d ? dr.voteButtonActive : ""].join(" "),
+                }), (0, g.jsx)("button", {
+                  className: [Qs.downVote, !1 === d ? Qs.voteButtonActive : ""].join(" "),
                   onClick: () => u(!1),
                   type: "button",
                   "aria-label": "Vote down"
@@ -8438,22 +8250,22 @@ _global.SENTRY_RELEASE = {
             })
           })
         },
-        ur = {
-          carousel: "rockstargames-sites-rockstar-tvd8e71d378f6d4a968e8ac7d621e5f32a",
-          text: "rockstargames-sites-rockstar-tva3f73d86b98d36a296bf8f621f1c340f",
-          info: "rockstargames-sites-rockstar-tvf46d7fc75c302b1d3f4db01d8572bea8",
-          active: "rockstargames-sites-rockstar-tvd26d1267cc02f841fee8a874d679aebd",
-          title: "rockstargames-sites-rockstar-tva879dfc151f7cf8da6bf5642b51436bb",
-          gameTitle: "rockstargames-sites-rockstar-tvb42d96124219141b4dbb454131b8c37b",
-          videoTitle: "rockstargames-sites-rockstar-tvc5ff8983fae65d6a3d7c741360bd3606",
-          cta: "rockstargames-sites-rockstar-tve25e320fda75ce4076c9fe68b540a2fa",
-          track: "rockstargames-sites-rockstar-tvdd0d39c46df512d3eff8ba48e469af0a",
-          disableClick: "rockstargames-sites-rockstar-tvb169e1b67f64de28605dd5056a740584",
-          items: "rockstargames-sites-rockstar-tvdddc42d4babcaec339a7c1bd04420e6e",
-          dragging: "rockstargames-sites-rockstar-tva7313e3ff4e99b5313f8698890d0dd8c",
-          dots: "rockstargames-sites-rockstar-tve1d7433489996eb9fa890d452ebcb042"
+        Js = {
+          carousel: "rockstargames-sites-careersd8e71d378f6d4a968e8ac7d621e5f32a",
+          text: "rockstargames-sites-careersa3f73d86b98d36a296bf8f621f1c340f",
+          info: "rockstargames-sites-careersf46d7fc75c302b1d3f4db01d8572bea8",
+          active: "rockstargames-sites-careersd26d1267cc02f841fee8a874d679aebd",
+          title: "rockstargames-sites-careersa879dfc151f7cf8da6bf5642b51436bb",
+          gameTitle: "rockstargames-sites-careersb42d96124219141b4dbb454131b8c37b",
+          videoTitle: "rockstargames-sites-careersc5ff8983fae65d6a3d7c741360bd3606",
+          cta: "rockstargames-sites-careerse25e320fda75ce4076c9fe68b540a2fa",
+          track: "rockstargames-sites-careersdd0d39c46df512d3eff8ba48e469af0a",
+          disableClick: "rockstargames-sites-careersb169e1b67f64de28605dd5056a740584",
+          items: "rockstargames-sites-careersdddc42d4babcaec339a7c1bd04420e6e",
+          dragging: "rockstargames-sites-careersa7313e3ff4e99b5313f8698890d0dd8c",
+          dots: "rockstargames-sites-careerse1d7433489996eb9fa890d452ebcb042"
         },
-        gr = (0, ae.withLocale)((e => {
+        er = (0, F.withLocale)((e => {
           let {
             locale: t,
             t: a,
@@ -8461,12 +8273,12 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: r
-          } = (0, se.useGtmTrack)(), {
+          } = (0, R.useGtmTrack)(), {
             setBodyIsLocked: i
-          } = (0, ae.useBodyScrollable)("VideoCarousel"), [n, c] = (0, o.useState)(0), [l, d] = (0, o.useState)(0), m = (0, o.useRef)(null), u = (0, o.useRef)(null);
-          return (0, o.useEffect)((() => {
+          } = (0, F.useBodyScrollable)("VideoCarousel"), [n, o] = (0, c.useState)(0), [l, d] = (0, c.useState)(0), m = (0, c.useRef)(null), u = (0, c.useRef)(null);
+          return (0, c.useEffect)((() => {
             if (!m.current || !u.current) return;
-            const e = new(L())(m.current);
+            const e = new(_())(m.current);
             e.get("press").set({
               time: 0
             }), e.get("tap").set({
@@ -8474,61 +8286,61 @@ _global.SENTRY_RELEASE = {
             });
             const t = () => "ontouchstart" in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0,
               a = () => {
-                c(n - 1 < 0 ? 0 : n - 1), d(0)
+                o(n - 1 < 0 ? 0 : n - 1), d(0)
               },
               r = () => {
                 const e = n + 1 >= s.length - 1 ? s.length - 1 : n + 1;
-                c(e), d(0)
+                o(e), d(0)
               },
-              o = e => {
-                d(e.isFinal ? 0 : e.deltaX), "panleft" !== e.additionalEvent && "panright" !== e.additionalEvent || !u.current?.classList.contains(ur.dragging) || t() && i(!0)
+              c = e => {
+                d(e.isFinal ? 0 : e.deltaX), "panleft" !== e.additionalEvent && "panright" !== e.additionalEvent || !u.current?.classList.contains(Js.dragging) || t() && i(!0)
               },
               l = () => {
                 t() && i(!1), d(0)
               },
               g = e => {
-                "press" === e.type && m.current?.classList.add(`${ur.disableClick}`), "tap" === e.type && (m.current?.classList.remove(`${ur.disableClick}`), document.elementFromPoint(e.center.x, e.center.y).click())
+                "press" === e.type && m.current?.classList.add(`${Js.disableClick}`), "tap" === e.type && (m.current?.classList.remove(`${Js.disableClick}`), document.elementFromPoint(e.center.x, e.center.y).click())
               },
               f = () => {
-                t() && i(!1), m.current && m.current.classList.remove(`${ur.disableClick}`)
+                t() && i(!1), m.current && m.current.classList.remove(`${Js.disableClick}`)
               },
               p = () => {
                 t() && i(!1)
               };
-            return u.current.addEventListener("transitionend", p), e.on("swiperight", a), e.on("swipeleft", r), e.on("pan", o), e.on("panend", l), e.on("press tap", g), e.on("pressup", f), () => {
-              e.off("swiperight", a), e.off("swipeleft", r), e.off("pan", o), e.off("panend", l), e.off("press tap", g), e.off("pressup", f), u.current && u.current.removeEventListener("transitionend", p), d(0)
+            return u.current.addEventListener("transitionend", p), e.on("swiperight", a), e.on("swipeleft", r), e.on("pan", c), e.on("panend", l), e.on("press tap", g), e.on("pressup", f), () => {
+              e.off("swiperight", a), e.off("swipeleft", r), e.off("pan", c), e.off("panend", l), e.off("press tap", g), e.off("pressup", f), u.current && u.current.removeEventListener("transitionend", p), d(0)
             }
-          }), [m.current, n]), (0, w.jsxs)("section", {
-            className: ur.carousel,
-            children: [(0, w.jsx)("div", {
-              className: ur.track,
+          }), [m.current, n]), (0, g.jsxs)("section", {
+            className: Js.carousel,
+            children: [(0, g.jsx)("div", {
+              className: Js.track,
               ref: m,
-              children: (0, w.jsx)("div", {
-                className: `${ur.items} ${0!==l?ur.dragging:""}`,
+              children: (0, g.jsx)("div", {
+                className: `${Js.items} ${0!==l?Js.dragging:""}`,
                 ref: u,
                 style: {
                   transform: `translateX(calc(-${100*n}% + ${l}px))`
                 },
-                children: s.map(((e, t) => (0, w.jsx)(I, {
+                children: s.map(((e, t) => (0, g.jsx)(f, {
                   "data-gtm-category": "Carousel",
                   "data-gtm-action": "Click-through screencap",
                   "data-gtm-label": `/videos/${e.id}`,
                   to: `/videos/${e.id}`,
-                  className: n === t ? ur.active : "",
+                  className: n === t ? Js.active : "",
                   role: "link",
                   title: e.title,
                   tabIndex: n === t ? 0 : -1,
-                  children: (0, w.jsx)(Nr, {
+                  children: (0, g.jsx)(mr, {
                     video: e,
                     size: 1280
                   })
                 }, e.id)))
               })
-            }), (0, w.jsxs)("footer", {
-              children: [(0, w.jsx)("div", {
-                className: ur.text,
+            }), (0, g.jsxs)("footer", {
+              children: [(0, g.jsx)("div", {
+                className: Js.text,
                 children: s.map(((e, s) => {
-                  return (0, w.jsx)(I, {
+                  return (0, g.jsx)(f, {
                     "data-gtm-category": "Carousel",
                     "data-gtm-action": "Click-through footer",
                     "data-gtm-label": `/videos/${e.id}`,
@@ -8536,19 +8348,19 @@ _global.SENTRY_RELEASE = {
                     role: "link",
                     title: e.title,
                     tabIndex: n === s ? 0 : -1,
-                    children: (0, w.jsxs)("div", {
-                      className: [ur.info, s === n ? ur.active : ""].join(" "),
-                      children: [(0, w.jsxs)("div", {
-                        className: ur.title,
-                        children: [(0, w.jsx)("div", {
-                          className: ur.gameTitle,
+                    children: (0, g.jsxs)("div", {
+                      className: [Js.info, s === n ? Js.active : ""].join(" "),
+                      children: [(0, g.jsxs)("div", {
+                        className: Js.title,
+                        children: [(0, g.jsx)("div", {
+                          className: Js.gameTitle,
                           children: `${e.game.title}${"fr_fr"===t?" ":""}`
-                        }), (0, w.jsx)("h2", {
-                          className: ur.videoTitle,
+                        }), (0, g.jsx)("h2", {
+                          className: Js.videoTitle,
                           children: `${e.title}`
                         })]
-                      }), (0, w.jsx)(G, {
-                        className: ur.cta,
+                      }), (0, g.jsx)(T, {
+                        className: Js.cta,
                         onClick: (i = `/videos/${e.id}`, () => {
                           r({
                             event: "cta_watch_video",
@@ -8563,22 +8375,22 @@ _global.SENTRY_RELEASE = {
                   }, e.id);
                   var i
                 }))
-              }), (0, w.jsx)("div", {
-                className: ur.dots,
-                children: s.map(((e, t) => (0, w.jsx)("button", {
+              }), (0, g.jsx)("div", {
+                className: Js.dots,
+                children: s.map(((e, t) => (0, g.jsx)("button", {
                   "aria-label": `Slide ${t+1}`,
                   "data-gtm-category": "Marquee",
                   "data-gtm-action": "Dot click",
                   "data-gtm-label": `Dot clicked to ${t}`,
-                  onClick: () => c(t),
-                  className: n === t ? ur.active : "",
+                  onClick: () => o(t),
+                  className: n === t ? Js.active : "",
                   type: "button"
                 }, e.id)))
               })]
             })]
           })
         })),
-        fr = (0, c.Os)({
+        tr = (0, o.defineMessages)({
           next_button_label: {
             id: "next_button_label",
             defaultMessage: "Next video page"
@@ -8588,12 +8400,12 @@ _global.SENTRY_RELEASE = {
             defaultMessage: "Previous video page"
           }
         }),
-        pr = {
-          img: "rockstargames-sites-rockstar-tve3f505a2281df28eb1acdf2d586e7fbd",
-          wide: "rockstargames-sites-rockstar-tvc3a6d60e0087f92bbf7062fe2f36e200"
+        ar = {
+          img: "rockstargames-sites-careerse3f505a2281df28eb1acdf2d586e7fbd",
+          wide: "rockstargames-sites-careersc3a6d60e0087f92bbf7062fe2f36e200"
         };
-      (0, ae.importAll)(a(18016));
-      const _r = e => {
+      (0, F.importAll)(a(18016));
+      const sr = e => {
           let {
             isWideCard: t = !1,
             size: s = 640,
@@ -8602,24 +8414,24 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             isMobile: n
-          } = (0, ae.useWindowResize)(), c = (0, o.useMemo)((() => {
+          } = (0, F.useWindowResize)(), o = (0, c.useMemo)((() => {
             let e = "";
             return t && (e = n ? a(72027)(`./${i}/mobile.png`) : a(83408)(`./${i}/desktop.png`)), e || (e = a(14512)(`./${i}.jpg`), e += `?im=Resize=${s}`), e
-          }), [n, i]), [l] = (0, ae.usePreloadImg)(c);
-          return (0, w.jsx)("div", {
+          }), [n, i]), [l] = (0, F.usePreloadImg)(o);
+          return (0, g.jsx)("div", {
             role: "img",
             "aria-label": r,
-            className: [pr.img, l ? pr.startAnimation : "", t ? pr.wide : ""].join(" "),
+            className: [ar.img, l ? ar.startAnimation : "", t ? ar.wide : ""].join(" "),
             style: {
-              backgroundImage: `url(${c})`
+              backgroundImage: `url(${o})`
             }
           })
         },
-        kr = {
-          fobLink: "rockstargames-sites-rockstar-tvfded54fb94f7325c5a0b57590585b175",
-          wide: "rockstargames-sites-rockstar-tva9b41f96042bda8a8c77b7b7b10f84d5"
+        rr = {
+          fobLink: "rockstargames-sites-careersfded54fb94f7325c5a0b57590585b175",
+          wide: "rockstargames-sites-careersa9b41f96042bda8a8c77b7b7b10f84d5"
         },
-        hr = e => {
+        ir = e => {
           let {
             game: t,
             to: a
@@ -8628,128 +8440,128 @@ _global.SENTRY_RELEASE = {
             titleSlug: s,
             urlOfficial: r = ""
           } = t, i = ["VI"].includes(s);
-          return (0, w.jsx)(I, {
+          return (0, g.jsx)(f, {
             "data-gtm-category": "Games",
             "data-gtm-action": "Game Click-through",
             "data-gtm-label": s,
             "data-testid": `${s}-gamecard`,
             to: a ?? r,
             target: "_self",
-            className: [kr.fobLink, i ? kr.wide : ""].join(" "),
-            children: (0, w.jsx)(_r, {
+            className: [rr.fobLink, i ? rr.wide : ""].join(" "),
+            children: (0, g.jsx)(sr, {
               title: t.title,
               titleSlug: s,
               isWideCard: i
             })
           })
         },
-        vr = {
-          videoList: "rockstargames-sites-rockstar-tva77794780421c410f7ea55ed11ae6340",
-          sectionHeader: "rockstargames-sites-rockstar-tved556e2220733d99eae5df36ba41f9c7",
-          arrowNav: "rockstargames-sites-rockstar-tvffeb6a2e829d49f94fea4ee7f5a0d2c8",
-          items: "rockstargames-sites-rockstar-tvffe2263cdad39631ef304714ba89465d",
-          trackWrapper: "rockstargames-sites-rockstar-tvcbdef484a85e8f352a06609b394d4da7",
-          partial: "rockstargames-sites-rockstar-tvb33af3fff1e38a693bdc09f20d8e6f81",
-          track: "rockstargames-sites-rockstar-tvf3f263effe27f3c21f2ab822b9ee5dcf",
-          arrow: "rockstargames-sites-rockstar-tvc8012415449630a832011f490b9d2b72",
-          previous: "rockstargames-sites-rockstar-tvf30d899a31937a4cf395643951224469",
-          next: "rockstargames-sites-rockstar-tvd9d5a85633fc0f0b7f98219d735e6e05",
-          disabled: "rockstargames-sites-rockstar-tvc806076a1e3e23c77528ee12e32771a3"
+        nr = {
+          videoList: "rockstargames-sites-careersa77794780421c410f7ea55ed11ae6340",
+          sectionHeader: "rockstargames-sites-careersed556e2220733d99eae5df36ba41f9c7",
+          arrowNav: "rockstargames-sites-careersffeb6a2e829d49f94fea4ee7f5a0d2c8",
+          items: "rockstargames-sites-careersffe2263cdad39631ef304714ba89465d",
+          trackWrapper: "rockstargames-sites-careerscbdef484a85e8f352a06609b394d4da7",
+          partial: "rockstargames-sites-careersb33af3fff1e38a693bdc09f20d8e6f81",
+          track: "rockstargames-sites-careersf3f263effe27f3c21f2ab822b9ee5dcf",
+          arrow: "rockstargames-sites-careersc8012415449630a832011f490b9d2b72",
+          previous: "rockstargames-sites-careersf30d899a31937a4cf395643951224469",
+          next: "rockstargames-sites-careersd9d5a85633fc0f0b7f98219d735e6e05",
+          disabled: "rockstargames-sites-careersc806076a1e3e23c77528ee12e32771a3"
         },
-        br = j((e => {
+        cr = (0, o.withIntl)((e => {
           let {
             vids: t,
             games: a,
             title: s,
             gameTitleNecessary: r
           } = e;
-          const i = (0, d.c)(),
+          const i = (0, o.useIntl)(),
             {
               track: n
-            } = (0, se.useGtmTrack)(),
-            c = void 0 !== a ? "games" : "videos",
-            [l, m] = (0, o.useState)(),
-            [u, g] = (0, o.useState)(),
-            [f, p] = (0, o.useState)(0),
-            _ = (0, o.useRef)(null),
-            k = (0, o.useRef)(null);
-          (0, o.useEffect)((() => {
-            g({
+            } = (0, R.useGtmTrack)(),
+            l = void 0 !== a ? "games" : "videos",
+            [d, m] = (0, c.useState)(),
+            [u, f] = (0, c.useState)(),
+            [p, _] = (0, c.useState)(0),
+            h = (0, c.useRef)(null),
+            k = (0, c.useRef)(null);
+          (0, c.useEffect)((() => {
+            f({
               nextEl: k.current,
-              prevEl: _.current
+              prevEl: h.current
             })
-          }), [k, _]), (0, o.useEffect)((() => {
+          }), [k, h]), (0, c.useEffect)((() => {
             const e = () => {
               const e = e => window.matchMedia(`(max-width: ${e})`).matches;
               let t = 4;
-              e("768px") ? t = 1 : e("990px") || e("1440px") ? t = 2.2 : e("1920px") && (t = 3.2), p(t)
+              e("768px") ? t = 1 : e("990px") || e("1440px") ? t = 2.2 : e("1920px") && (t = 3.2), _(t)
             };
             return window.addEventListener("resize", e), e(), () => {
               window.removeEventListener("resize", e)
             }
-          }), [f]);
-          const h = e => {
-            l?.slideTo(e)
+          }), [p]);
+          const b = e => {
+            d?.slideTo(e)
           };
           let v;
-          return v = "games" === c ? (0, w.jsx)(w.Fragment, {
-            children: a.results.map(((e, t) => "775700as" !== e.id && (0, w.jsx)(K.Ky, {
-              className: vr.slide,
-              onFocus: () => h(t),
-              children: (0, w.jsx)(hr, {
+          return v = "games" === l ? (0, g.jsx)(g.Fragment, {
+            children: a.results.map(((e, t) => "775700as" !== e.id && (0, g.jsx)(P.Ky, {
+              className: nr.slide,
+              onFocus: () => b(t),
+              children: (0, g.jsx)(ir, {
                 game: e,
                 dontOverrideTo: !0,
                 to: `/videos?type=game&gameId=${e.id}`
               })
             }, e.id)))
-          }) : (0, w.jsx)(w.Fragment, {
-            children: t.map(((e, t) => (0, w.jsx)(K.Ky, {
-              className: vr.slide,
-              onFocus: () => h(t),
-              children: (0, w.jsx)(ns.VideoCard.Link, {
+          }) : (0, g.jsx)(g.Fragment, {
+            children: t.map(((e, t) => (0, g.jsx)(P.Ky, {
+              className: nr.slide,
+              onFocus: () => b(t),
+              children: (0, g.jsx)(Wa.VideoCard.Link, {
                 video: e,
                 gameTitleNecessary: r
               })
             }, e.id)))
-          }), (0, w.jsxs)("section", {
-            className: vr.videoList,
-            children: [(0, w.jsxs)("h3", {
-              className: vr.sectionHeader,
-              children: [s, (0, w.jsxs)("div", {
-                className: vr.arrowNav,
-                children: [(0, w.jsx)("button", {
-                  className: [vr.arrow, vr.previous].join(" "),
+          }), (0, g.jsxs)("section", {
+            className: nr.videoList,
+            children: [(0, g.jsxs)("h3", {
+              className: nr.sectionHeader,
+              children: [s, (0, g.jsxs)("div", {
+                className: nr.arrowNav,
+                children: [(0, g.jsx)("button", {
+                  className: [nr.arrow, nr.previous].join(" "),
                   type: "button",
-                  ref: _,
-                  "aria-label": i.formatMessage(fr.previous_button_label)
-                }), (0, w.jsx)("button", {
-                  className: [vr.arrow, vr.next].join(" "),
+                  ref: h,
+                  "aria-label": i.formatMessage(tr.previous_button_label)
+                }), (0, g.jsx)("button", {
+                  className: [nr.arrow, nr.next].join(" "),
                   type: "button",
                   ref: k,
-                  "aria-label": i.formatMessage(fr.next_button_label),
+                  "aria-label": i.formatMessage(tr.next_button_label),
                   onKeyDown: e => {
                     if ("Tab" === e.key && !e.shiftKey) {
-                      const t = l?.slides[l?.activeIndex].querySelector('a, button, [role="button"]');
+                      const t = d?.slides[d?.activeIndex].querySelector('a, button, [role="button"]');
                       t && (e.preventDefault(), t.focus())
                     }
                   }
                 })]
               })]
-            }), (0, w.jsx)("div", {
-              className: [vr.items, f % 1 != 0 ? vr.partial : ""].join(" "),
-              children: (0, w.jsx)("div", {
-                className: vr.trackWrapper,
-                children: f && (0, w.jsx)(K.wx, {
-                  className: vr.track,
-                  slidesPerView: f,
+            }), (0, g.jsx)("div", {
+              className: [nr.items, p % 1 != 0 ? nr.partial : ""].join(" "),
+              children: (0, g.jsx)("div", {
+                className: nr.trackWrapper,
+                children: p && (0, g.jsx)(P.wx, {
+                  className: nr.track,
+                  slidesPerView: p,
                   spaceBetween: 24,
                   onInit: e => {
                     m(e)
                   },
                   grabCursor: !0,
                   navigation: u,
-                  modules: [pt._2],
-                  slideClass: (0, U.classList)("swiper-slide"),
+                  modules: [tt._2],
+                  slideClass: (0, C.classList)("swiper-slide"),
                   onSlideNextTransitionEnd: () => {
                     n({
                       event_action: "next",
@@ -8782,19 +8594,19 @@ _global.SENTRY_RELEASE = {
               })
             })]
           })
-        }), S),
-        xr = e => {
+        }), l),
+        or = e => {
           let {
             children: t,
             ...a
           } = e;
-          return (0, w.jsx)("span", {
+          return (0, g.jsx)("span", {
             ...a,
-            className: "rockstargames-sites-rockstar-tvf7f61ab4bc6dd2a49f80662ead7d8a51",
+            className: "rockstargames-sites-careersf7f61ab4bc6dd2a49f80662ead7d8a51",
             children: t
           })
         },
-        yr = (0, ae.withTranslations)((e => {
+        lr = (0, F.withTranslations)((e => {
           let {
             error: t,
             t: a,
@@ -8806,45 +8618,45 @@ _global.SENTRY_RELEASE = {
           let r = t?.message ?? a("error-404-new");
           r = a("error-404-new");
           const i = t?.code ?? 398,
-            n = (0, o.useRef)(null);
-          return (0, o.useEffect)((() => {
+            n = (0, c.useRef)(null);
+          return (0, c.useEffect)((() => {
             n && n?.current && n.current.focus()
-          }), [n]), (0, w.jsxs)("div", {
-            className: "rockstargames-sites-rockstar-tvd988ce20c420c26fc5e455279bf94cb9",
-            children: [(0, w.jsx)("h3", {
+          }), [n]), (0, g.jsxs)("div", {
+            className: "rockstargames-sites-careersd988ce20c420c26fc5e455279bf94cb9",
+            children: [(0, g.jsx)("h3", {
               tabIndex: -1,
               ref: n,
               children: `${r} (${i})`
-            }), (0, w.jsx)(I, {
+            }), (0, g.jsx)(f, {
               to: "/",
               children: a("Home")
-            }), "clr" !== s && (0, w.jsx)(Xs, {})]
+            }), "clr" !== s && (0, g.jsx)(Os, {})]
           })
         })),
-        wr = {
-          videoPreview: "rockstargames-sites-rockstar-tvc6739cc628fda235abe2bafeb30ad7cf",
-          card: "rockstargames-sites-rockstar-tvec6e68ffa1188155be202dfef3f92829",
-          info: "rockstargames-sites-rockstar-tvab8da127fbcdb98f874bc3f1377669a2",
-          title: "rockstargames-sites-rockstar-tve84fa4b2b140994c96a13607410d30a3",
-          screencap: "rockstargames-sites-rockstar-tva322c3d2275cedd594a3b17800154066",
-          screencapLoaded: "rockstargames-sites-rockstar-tvf68c57f5459778024e5a98918ae61ab2",
-          gameTitle: "rockstargames-sites-rockstar-tvdebff452a4923aded7de826c081bab5d"
+        dr = {
+          videoPreview: "rockstargames-sites-careersc6739cc628fda235abe2bafeb30ad7cf",
+          card: "rockstargames-sites-careersec6e68ffa1188155be202dfef3f92829",
+          info: "rockstargames-sites-careersab8da127fbcdb98f874bc3f1377669a2",
+          title: "rockstargames-sites-careerse84fa4b2b140994c96a13607410d30a3",
+          screencap: "rockstargames-sites-careersa322c3d2275cedd594a3b17800154066",
+          screencapLoaded: "rockstargames-sites-careersf68c57f5459778024e5a98918ae61ab2",
+          gameTitle: "rockstargames-sites-careersdebff452a4923aded7de826c081bab5d"
         },
-        Nr = e => {
+        mr = e => {
           let {
             video: t,
             size: a = 640
           } = e;
           const s = () => t.screencap.includes("akamai") ? `${t.screencap}?im=Resize=${a}` : t.screencap,
-            [r] = (0, ae.usePreloadImg)(s());
-          return (0, w.jsx)("div", {
-            className: [wr.screencap, r ? wr.screencapLoaded : ""].join(" "),
+            [r] = (0, F.usePreloadImg)(s());
+          return (0, g.jsx)("div", {
+            className: [dr.screencap, r ? dr.screencapLoaded : ""].join(" "),
             style: {
               background: `url(${s()}) center/cover`
             }
           })
         },
-        jr = e => {
+        ur = e => {
           let {
             gameTitleNecessary: t = !0,
             openInNewWindow: a = !1,
@@ -8853,44 +8665,44 @@ _global.SENTRY_RELEASE = {
             toExplicit: i
           } = e;
           const n = i ?? `/videos/${s.id}`,
-            o = {
-              className: wr.videoPreview,
+            c = {
+              className: dr.videoPreview,
               "data-gtm-category": "Videos",
               "data-gtm-action": "Video Click-through",
               "data-gtm-label": n
             },
-            c = (0, w.jsxs)("div", {
-              className: wr.card,
-              children: [(0, w.jsx)(Nr, {
+            o = (0, g.jsxs)("div", {
+              className: dr.card,
+              children: [(0, g.jsx)(mr, {
                 video: s,
                 size: r
-              }), (0, w.jsxs)("div", {
-                className: wr.info,
-                children: [t ? (0, w.jsx)("div", {
-                  className: wr.gameTitle,
+              }), (0, g.jsxs)("div", {
+                className: dr.info,
+                children: [t ? (0, g.jsx)("div", {
+                  className: dr.gameTitle,
                   dangerouslySetInnerHTML: {
                     __html: s.game.title
                   }
-                }) : "", (0, w.jsx)("h5", {
-                  className: wr.title,
+                }) : "", (0, g.jsx)("h5", {
+                  className: dr.title,
                   dangerouslySetInnerHTML: {
                     __html: s.title
                   }
                 })]
               })]
             });
-          return a ? (0, w.jsx)("a", {
+          return a ? (0, g.jsx)("a", {
             href: n,
             target: "_blank",
-            ...o,
-            children: c
-          }) : (0, w.jsx)(I, {
+            ...c,
+            children: o
+          }) : (0, g.jsx)(f, {
             to: n,
-            ...o,
-            children: c
+            ...c,
+            children: o
           })
         };
-      class Sr extends o.Component {
+      class gr extends c.Component {
         constructor(e) {
           super(e), this.state = {
             error: {
@@ -8914,42 +8726,42 @@ _global.SENTRY_RELEASE = {
           }
         }
         render() {
-          return null !== this.state.error.code ? (0, w.jsx)(yr, {
+          return null !== this.state.error.code ? (0, g.jsx)(lr, {
             error: this.state.error
           }) : this.props.children
         }
       }
-      const Tr = function(e) {
+      const fr = function(e) {
         let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
         return function(a) {
-          return (0, w.jsx)(Sr, {
+          return (0, g.jsx)(gr, {
             header: t,
-            children: (0, w.jsx)(e, {
+            children: (0, g.jsx)(e, {
               ...a
             })
           })
         }
       };
-      var Cr = a(1267),
-        Mr = a(20688),
-        Ir = a(48016);
-      const Er = (0, o.forwardRef)(((e, t) => {
+      var pr = a(1267),
+        _r = a(20688),
+        hr = a(48016);
+      const kr = (0, c.forwardRef)(((e, t) => {
         const {
           children: a,
           tag: s = "div"
-        } = e, r = Cr.m[s];
-        return (0, w.jsx)(Mr.O, {
-          features: Ir.i,
-          children: (0, w.jsx)(r, {
+        } = e, r = pr.m[s];
+        return (0, g.jsx)(_r.O, {
+          features: hr.i,
+          children: (0, g.jsx)(r, {
             ref: t,
             ...e,
             children: a
           })
         })
       }));
-      Er.displayName = "LiteMotion";
-      const Lr = Er,
-        zr = {
+      kr.displayName = "LiteMotion";
+      const br = kr,
+        vr = {
           visible: {
             opacity: 1
           },
@@ -8957,32 +8769,32 @@ _global.SENTRY_RELEASE = {
             opacity: 0
           }
         },
-        Pr = {
+        xr = {
           ease: "easeIn",
           duration: .4
         },
-        Or = e => {
+        yr = e => {
           let {
             children: t
           } = e;
-          return (0, w.jsx)(at.q.div, Object.assign({
-            className: "rockstargames-sites-rockstar-tvf0ee4e641f1ac92151be887c9ebb8392",
-            variants: zr,
+          return (0, g.jsx)($e.q.div, Object.assign({
+            className: "rockstargames-sites-careersf0ee4e641f1ac92151be887c9ebb8392",
+            variants: vr,
             initial: "hidden",
             whileInView: "visible",
             viewport: {
               margin: "-20%",
               once: !0
             },
-            transition: Pr
+            transition: xr
           }, {
             children: t
           }))
         },
-        Ar = e => t => (0, w.jsx)(Or, {
-          children: (0, w.jsx)(e, Object.assign({}, t))
+        wr = e => t => (0, g.jsx)(yr, {
+          children: (0, g.jsx)(e, Object.assign({}, t))
         }),
-        Dr = {
+        Nr = {
           visible: {
             opacity: 1,
             y: 0
@@ -8992,33 +8804,33 @@ _global.SENTRY_RELEASE = {
             y: 40
           }
         },
-        Br = {
+        jr = {
           ease: "easeIn",
           duration: .75
         },
-        Vr = e => {
+        Sr = e => {
           let {
             children: t
           } = e;
-          return (0, w.jsx)(at.q.div, {
-            className: "rockstargames-sites-rockstar-tva479a10c5475b17a0564b60fecf98c8b",
-            variants: Dr,
+          return (0, g.jsx)($e.q.div, {
+            className: "rockstargames-sites-careersa479a10c5475b17a0564b60fecf98c8b",
+            variants: Nr,
             initial: "hidden",
             whileInView: "visible",
             viewport: {
               margin: "-20%",
               once: !0
             },
-            transition: Br,
+            transition: jr,
             children: t
           })
         },
-        Rr = e => t => (0, w.jsx)(Vr, {
-          children: (0, w.jsx)(e, {
+        Tr = e => t => (0, g.jsx)(Sr, {
+          children: (0, g.jsx)(e, {
             ...t
           })
         }),
-        Fr = {
+        Cr = {
           cardOpen: {
             ease: [.77, 0, .175, 1],
             duration: .5
@@ -9036,7 +8848,7 @@ _global.SENTRY_RELEASE = {
             duration: .05
           }
         },
-        $r = {
+        Mr = {
           plainCard: {
             expanded: {
               initial: {
@@ -9192,28 +9004,28 @@ _global.SENTRY_RELEASE = {
             }
           }
         },
-        Gr = function() {
+        Ir = function() {
           let e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "collapsed";
-          return $r[arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "imageMask"][e]
+          return Mr[arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "imageMask"][e]
         };
-      var Ur = a(45164);
-      const Hr = JSON.parse('{"assets":[],"layers":[{"ddd":0,"ind":0,"ty":4,"nm":"Shape Layer 1","ks":{"o":{"k":100},"r":{"k":0},"p":{"k":[300,300,0]},"a":{"k":[0,0,0]},"s":{"k":[244,244,100]}},"ao":0,"shapes":[{"d":1,"ty":"el","s":{"k":[100,100]},"p":{"k":[0,0]},"nm":"Ellipse Path 1","mn":"ADBE Vector Shape - Ellipse"},{"ty":"tm","s":{"k":[{"i":{"x":[0.439],"y":[1.016]},"o":{"x":[0.561],"y":[0.015]},"n":["0p439_1p016_0p561_0p015"],"t":5,"s":[100],"e":[0]},{"t":33.0000013441176}],"ix":1},"e":{"k":[{"i":{"x":[0.439],"y":[1.017]},"o":{"x":[0.561],"y":[0.016]},"n":["0p439_1p017_0p561_0p016"],"t":0,"s":[100],"e":[0]},{"t":30.0000012219251}],"ix":2},"o":{"k":0,"ix":3},"m":1,"ix":2,"nm":"Trim Paths 1","mn":"ADBE Vector Filter - Trim"},{"ty":"st","fillEnabled":true,"c":{"k":[1,1,1,1]},"o":{"k":100},"w":{"k":16},"lc":2,"lj":1,"ml":4,"nm":"Stroke 1","mn":"ADBE Vector Graphic - Stroke"}],"ip":0,"op":900.000036657751,"st":0,"bm":0,"sr":1}],"v":"4.5.3","ddd":0,"ip":1.00000004073083,"op":33.0000013441175,"fr":29.9700012207031,"w":600,"h":600}'),
-        qr = JSON.parse('{"v":"5.7.3","fr":60,"ip":0,"op":64,"w":300,"h":300,"nm":"Dot_Loading","ddd":0,"assets":[],"layers":[{"ddd":0,"ind":1,"ty":4,"nm":"center","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":1,"k":[{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":10,"s":[144,144,0],"to":[0,-3.333,0],"ti":[0,0,0]},{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":22,"s":[144,124,0],"to":[0,0,0],"ti":[0,-3.333,0]},{"t":34,"s":[144,144,0]}],"ix":2},"a":{"a":0,"k":[12.5,6,0],"ix":1},"s":{"a":0,"k":[764.558,764.558,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,-0.828],[0.828,0],[0,0.828],[-0.828,0]],"o":[[0,0.828],[-0.828,0],[0,-0.828],[0.828,0]],"v":[[1.5,0],[0,1.5],[-1.5,0],[0,-1.5]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fond 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[17.667,5.833],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Groupe 1","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":76,"st":-62,"bm":0},{"ddd":0,"ind":2,"ty":4,"nm":"right","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":1,"k":[{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":5,"s":[144,144,0],"to":[0,-3.333,0],"ti":[0,0,0]},{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":17,"s":[144,124,0],"to":[0,0,0],"ti":[0,-3.333,0]},{"t":29,"s":[144,144,0]}],"ix":2},"a":{"a":0,"k":[12.5,6,0],"ix":1},"s":{"a":0,"k":[764.558,764.558,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,-0.828],[0.828,0],[0,0.828],[-0.828,0]],"o":[[0,0.828],[-0.828,0],[0,-0.828],[0.828,0]],"v":[[1.5,0],[0,1.5],[-1.5,0],[0,-1.5]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fond 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[12.333,5.833],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Groupe 2","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":76,"st":-62,"bm":0},{"ddd":0,"ind":3,"ty":4,"nm":"left","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":1,"k":[{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":0,"s":[144,144,0],"to":[0,-3.333,0],"ti":[0,0,0]},{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":12,"s":[144,124,0],"to":[0,0,0],"ti":[0,-3.333,0]},{"t":24,"s":[144,144,0]}],"ix":2},"a":{"a":0,"k":[12.5,6,0],"ix":1},"s":{"a":0,"k":[764.558,764.558,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,-0.828],[0.828,0],[0,0.828],[-0.828,0]],"o":[[0,0.828],[-0.828,0],[0,-0.828],[0.828,0]],"v":[[1.5,0],[0,1.5],[-1.5,0],[0,-1.5]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fond 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[7,5.833],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Groupe 3","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":76,"st":-62,"bm":0}],"markers":[]}'),
-        Wr = {
+      var Er = a(45164);
+      const Lr = JSON.parse('{"assets":[],"layers":[{"ddd":0,"ind":0,"ty":4,"nm":"Shape Layer 1","ks":{"o":{"k":100},"r":{"k":0},"p":{"k":[300,300,0]},"a":{"k":[0,0,0]},"s":{"k":[244,244,100]}},"ao":0,"shapes":[{"d":1,"ty":"el","s":{"k":[100,100]},"p":{"k":[0,0]},"nm":"Ellipse Path 1","mn":"ADBE Vector Shape - Ellipse"},{"ty":"tm","s":{"k":[{"i":{"x":[0.439],"y":[1.016]},"o":{"x":[0.561],"y":[0.015]},"n":["0p439_1p016_0p561_0p015"],"t":5,"s":[100],"e":[0]},{"t":33.0000013441176}],"ix":1},"e":{"k":[{"i":{"x":[0.439],"y":[1.017]},"o":{"x":[0.561],"y":[0.016]},"n":["0p439_1p017_0p561_0p016"],"t":0,"s":[100],"e":[0]},{"t":30.0000012219251}],"ix":2},"o":{"k":0,"ix":3},"m":1,"ix":2,"nm":"Trim Paths 1","mn":"ADBE Vector Filter - Trim"},{"ty":"st","fillEnabled":true,"c":{"k":[1,1,1,1]},"o":{"k":100},"w":{"k":16},"lc":2,"lj":1,"ml":4,"nm":"Stroke 1","mn":"ADBE Vector Graphic - Stroke"}],"ip":0,"op":900.000036657751,"st":0,"bm":0,"sr":1}],"v":"4.5.3","ddd":0,"ip":1.00000004073083,"op":33.0000013441175,"fr":29.9700012207031,"w":600,"h":600}'),
+        zr = JSON.parse('{"v":"5.7.3","fr":60,"ip":0,"op":64,"w":300,"h":300,"nm":"Dot_Loading","ddd":0,"assets":[],"layers":[{"ddd":0,"ind":1,"ty":4,"nm":"center","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":1,"k":[{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":10,"s":[144,144,0],"to":[0,-3.333,0],"ti":[0,0,0]},{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":22,"s":[144,124,0],"to":[0,0,0],"ti":[0,-3.333,0]},{"t":34,"s":[144,144,0]}],"ix":2},"a":{"a":0,"k":[12.5,6,0],"ix":1},"s":{"a":0,"k":[764.558,764.558,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,-0.828],[0.828,0],[0,0.828],[-0.828,0]],"o":[[0,0.828],[-0.828,0],[0,-0.828],[0.828,0]],"v":[[1.5,0],[0,1.5],[-1.5,0],[0,-1.5]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fond 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[17.667,5.833],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Groupe 1","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":76,"st":-62,"bm":0},{"ddd":0,"ind":2,"ty":4,"nm":"right","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":1,"k":[{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":5,"s":[144,144,0],"to":[0,-3.333,0],"ti":[0,0,0]},{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":17,"s":[144,124,0],"to":[0,0,0],"ti":[0,-3.333,0]},{"t":29,"s":[144,144,0]}],"ix":2},"a":{"a":0,"k":[12.5,6,0],"ix":1},"s":{"a":0,"k":[764.558,764.558,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,-0.828],[0.828,0],[0,0.828],[-0.828,0]],"o":[[0,0.828],[-0.828,0],[0,-0.828],[0.828,0]],"v":[[1.5,0],[0,1.5],[-1.5,0],[0,-1.5]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fond 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[12.333,5.833],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Groupe 2","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":76,"st":-62,"bm":0},{"ddd":0,"ind":3,"ty":4,"nm":"left","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":1,"k":[{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":0,"s":[144,144,0],"to":[0,-3.333,0],"ti":[0,0,0]},{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":12,"s":[144,124,0],"to":[0,0,0],"ti":[0,-3.333,0]},{"t":24,"s":[144,144,0]}],"ix":2},"a":{"a":0,"k":[12.5,6,0],"ix":1},"s":{"a":0,"k":[764.558,764.558,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,-0.828],[0.828,0],[0,0.828],[-0.828,0]],"o":[[0,0.828],[-0.828,0],[0,-0.828],[0.828,0]],"v":[[1.5,0],[0,1.5],[-1.5,0],[0,-1.5]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fond 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[7,5.833],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Groupe 3","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":76,"st":-62,"bm":0}],"markers":[]}'),
+        Pr = {
           SPINNING: "spinning",
           THREE_DOTS: "threeDots"
         },
-        Xr = e => {
+        Or = e => {
           let t, {
-            type: a = Wr.SPINNING
+            type: a = Pr.SPINNING
           } = e;
           switch (a) {
-            case Wr.THREE_DOTS:
-              t = qr;
+            case Pr.THREE_DOTS:
+              t = zr;
               break;
-            case Wr.SPINNING:
+            case Pr.SPINNING:
             default:
-              t = Hr
+              t = Lr
           }
           const s = {
             loop: !0,
@@ -9223,11 +9035,53 @@ _global.SENTRY_RELEASE = {
               preserveAspectRatio: "xMidYMid slice"
             }
           };
-          return (0, w.jsx)(Ur.c, {
+          return (0, g.jsx)(Er.c, {
             options: s,
             height: 50,
             width: 50
           })
+        }
+    },
+    53592: (e, t, a) => {
+      "use strict";
+      a.d(t, {
+        U: () => s,
+        c: () => i
+      });
+      const s = {
+          www: "www",
+          socialClub: "socialClub",
+          support: "support",
+          store: "store"
+        },
+        r = [{
+          id: "prod",
+          sites: {
+            www: "www",
+            socialClub: "socialclub",
+            support: "support",
+            store: "store"
+          },
+          cookieIdentifier: "prod"
+        }],
+        i = () => {
+          let e;
+          const {
+            location: t
+          } = window, a = t.hostname.substring(0, t.hostname.indexOf(".rockstargames.com")), s = r.findIndex((t => Object.entries(t.sites).findIndex((t => {
+            let [s, r] = t;
+            return r === a && (e = {
+              site: s,
+              subDomain: r
+            }, !0)
+          })) >= 0)), i = r[s >= 0 ? s : 0];
+          return e || (e = {
+            site: "www",
+            subDomain: "local"
+          }), {
+            ...i,
+            currentSite: e
+          }
         }
     },
     90048: e => {
@@ -9470,14 +9324,14 @@ _global.SENTRY_RELEASE = {
         e.hasOwnProperty("loc") && (a.loc = e.loc);
         var i = s[t] || new Set,
           n = new Set,
-          o = new Set;
+          c = new Set;
         for (i.forEach((function(e) {
-            o.add(e)
-          })); o.size > 0;) {
-          var c = o;
-          o = new Set, c.forEach((function(e) {
+            c.add(e)
+          })); c.size > 0;) {
+          var o = c;
+          c = new Set, o.forEach((function(e) {
             n.has(e) || (n.add(e), (s[e] || new Set).forEach((function(e) {
-              o.add(e)
+              c.add(e)
             })))
           }))
         }
@@ -9767,14 +9621,14 @@ _global.SENTRY_RELEASE = {
         e.hasOwnProperty("loc") && (a.loc = e.loc);
         var i = s[t] || new Set,
           n = new Set,
-          o = new Set;
+          c = new Set;
         for (i.forEach((function(e) {
-            o.add(e)
-          })); o.size > 0;) {
-          var c = o;
-          o = new Set, c.forEach((function(e) {
+            c.add(e)
+          })); c.size > 0;) {
+          var o = c;
+          c = new Set, o.forEach((function(e) {
             n.has(e) || (n.add(e), (s[e] || new Set).forEach((function(e) {
-              o.add(e)
+              c.add(e)
             })))
           }))
         }
@@ -9790,7 +9644,7 @@ _global.SENTRY_RELEASE = {
         }
       })), e.exports = t, e.exports.UserGetVote = i(t, "UserGetVote"), e.exports.UserCastVote = i(t, "UserCastVote")
     },
-    13784: e => {
+    13316: e => {
       var t = {
         kind: "Document",
         definitions: [{
@@ -10008,7 +9862,7 @@ _global.SENTRY_RELEASE = {
                   kind: "Field",
                   name: {
                     kind: "Name",
-                    value: "img_rating"
+                    value: "ratingDescriptors"
                   },
                   arguments: [],
                   directives: []
@@ -10016,7 +9870,7 @@ _global.SENTRY_RELEASE = {
                   kind: "Field",
                   name: {
                     kind: "Name",
-                    value: "rating_descriptors"
+                    value: "ratingFooter"
                   },
                   arguments: [],
                   directives: []
@@ -10024,7 +9878,7 @@ _global.SENTRY_RELEASE = {
                   kind: "Field",
                   name: {
                     kind: "Name",
-                    value: "rating_footer"
+                    value: "ratingImg"
                   },
                   arguments: [],
                   directives: []
@@ -10032,7 +9886,7 @@ _global.SENTRY_RELEASE = {
                   kind: "Field",
                   name: {
                     kind: "Name",
-                    value: "url_rating"
+                    value: "ratingUrl"
                   },
                   arguments: [],
                   directives: []
@@ -10043,7 +9897,7 @@ _global.SENTRY_RELEASE = {
         }],
         loc: {
           start: 0,
-          end: 398
+          end: 394
         }
       };
 
@@ -10062,7 +9916,7 @@ _global.SENTRY_RELEASE = {
         }))
       }
       t.loc.source = {
-        body: 'query GameData(\n    $titleSlug: String!\n    $locale: String!\n    $withMetaTitle: Boolean = false\n    $metaUrl: String = "/"\n) {\n    meta: metaUrl(locale: $locale, domain: "www", url: $metaUrl)\n        @include(if: $withMetaTitle) {\n        title\n    }\n    game(titleSlug: $titleSlug, locale: $locale) {\n        img_rating\n        rating_descriptors\n        rating_footer\n        url_rating\n    }\n}\n',
+        body: 'query GameData(\n    $titleSlug: String!\n    $locale: String!\n    $withMetaTitle: Boolean = false\n    $metaUrl: String = "/"\n) {\n    meta: metaUrl(locale: $locale, domain: "www", url: $metaUrl)\n        @include(if: $withMetaTitle) {\n        title\n    }\n    game(titleSlug: $titleSlug, locale: $locale) {\n        ratingDescriptors\n        ratingFooter\n        ratingImg\n        ratingUrl\n    }\n}\n',
         name: "GraphQL request",
         locationOffset: {
           line: 1,
@@ -10090,14 +9944,14 @@ _global.SENTRY_RELEASE = {
         e.hasOwnProperty("loc") && (a.loc = e.loc);
         var i = s[t] || new Set,
           n = new Set,
-          o = new Set;
+          c = new Set;
         for (i.forEach((function(e) {
-            o.add(e)
-          })); o.size > 0;) {
-          var c = o;
-          o = new Set, c.forEach((function(e) {
+            c.add(e)
+          })); c.size > 0;) {
+          var o = c;
+          c = new Set, o.forEach((function(e) {
             n.has(e) || (n.add(e), (s[e] || new Set).forEach((function(e) {
-              o.add(e)
+              c.add(e)
             })))
           }))
         }
@@ -10664,14 +10518,14 @@ _global.SENTRY_RELEASE = {
         e.hasOwnProperty("loc") && (a.loc = e.loc);
         var i = s[t] || new Set,
           n = new Set,
-          o = new Set;
+          c = new Set;
         for (i.forEach((function(e) {
-            o.add(e)
-          })); o.size > 0;) {
-          var c = o;
-          o = new Set, c.forEach((function(e) {
+            c.add(e)
+          })); c.size > 0;) {
+          var o = c;
+          c = new Set, o.forEach((function(e) {
             n.has(e) || (n.add(e), (s[e] || new Set).forEach((function(e) {
-              o.add(e)
+              c.add(e)
             })))
           }))
         }
@@ -10967,14 +10821,14 @@ _global.SENTRY_RELEASE = {
         e.hasOwnProperty("loc") && (a.loc = e.loc);
         var i = s[t] || new Set,
           n = new Set,
-          o = new Set;
+          c = new Set;
         for (i.forEach((function(e) {
-            o.add(e)
-          })); o.size > 0;) {
-          var c = o;
-          o = new Set, c.forEach((function(e) {
+            c.add(e)
+          })); c.size > 0;) {
+          var o = c;
+          c = new Set, o.forEach((function(e) {
             n.has(e) || (n.add(e), (s[e] || new Set).forEach((function(e) {
-              o.add(e)
+              c.add(e)
             })))
           }))
         }
@@ -11293,9 +11147,9 @@ _global.SENTRY_RELEASE = {
         }))
       }
       s.definitions = s.definitions.concat(i(a(73784).definitions)), s.definitions = s.definitions.concat(i(a(28540).definitions));
-      var o = {};
+      var c = {};
 
-      function c(e, t) {
+      function o(e, t) {
         for (var a = 0; a < e.definitions.length; a++) {
           var s = e.definitions[a];
           if (s.name && s.name.value == t) return s
@@ -11304,15 +11158,15 @@ _global.SENTRY_RELEASE = {
       s.definitions.forEach((function(e) {
         if (e.name) {
           var t = new Set;
-          n(e, t), o[e.name.value] = t
+          n(e, t), c[e.name.value] = t
         }
       })), e.exports = s, e.exports.NewswireList = function(e, t) {
         var a = {
           kind: e.kind,
-          definitions: [c(e, t)]
+          definitions: [o(e, t)]
         };
         e.hasOwnProperty("loc") && (a.loc = e.loc);
-        var s = o[t] || new Set,
+        var s = c[t] || new Set,
           r = new Set,
           i = new Set;
         for (s.forEach((function(e) {
@@ -11320,13 +11174,13 @@ _global.SENTRY_RELEASE = {
           })); i.size > 0;) {
           var n = i;
           i = new Set, n.forEach((function(e) {
-            r.has(e) || (r.add(e), (o[e] || new Set).forEach((function(e) {
+            r.has(e) || (r.add(e), (c[e] || new Set).forEach((function(e) {
               i.add(e)
             })))
           }))
         }
         return r.forEach((function(t) {
-          var s = c(e, t);
+          var s = o(e, t);
           s && a.definitions.push(s)
         })), a
       }(s, "NewswireList")

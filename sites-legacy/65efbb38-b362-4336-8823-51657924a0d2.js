@@ -19,7 +19,7 @@ _global.SENTRY_RELEASE = {
     87672: (e, t, r) => {
       r.d(t, {
         C3: () => a,
-        Mt: () => s,
+        Mt: () => f,
         ct: () => n,
         sX: () => l
       });
@@ -60,7 +60,7 @@ _global.SENTRY_RELEASE = {
         return r
       }
 
-      function s(e, t, r) {
+      function f(e, t, r) {
         if (r || 2 === arguments.length)
           for (var o, n = 0, a = t.length; n < a; n++) !o && n in t || (o || (o = Array.prototype.slice.call(t, 0, n)), o[n] = t[n]);
         return e.concat(o || Array.prototype.slice.call(t))

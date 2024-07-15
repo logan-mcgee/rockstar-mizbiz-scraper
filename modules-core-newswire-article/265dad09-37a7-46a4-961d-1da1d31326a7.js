@@ -20,7 +20,7 @@ _global.SENTRY_RELEASE = {
       a.r(s), a.d(s, {
         Jsx0: () => o,
         Jsx1: () => g,
-        Jsx2: () => j
+        Jsx2: () => b
       });
       var r = a(9860);
       var t = a(95240);
@@ -67,8 +67,8 @@ _global.SENTRY_RELEASE = {
         l = a(45792),
         c = a(45364),
         m = a.n(c),
-        x = a(88460),
-        f = a.n(x),
+        f = a(88460),
+        x = a.n(f),
         u = a(22052);
       const g = (0, l.withTranslations)((0, l.withLocale)((e => {
         let {
@@ -114,7 +114,7 @@ _global.SENTRY_RELEASE = {
             GamingRewards: e => (0, t.jsx)(u.GamingRewards, {
               ...e
             }),
-            Gif: e => (0, t.jsx)(f(), {
+            Gif: e => (0, t.jsx)(x(), {
               ...e
             }),
             Grid: e => (0, t.jsx)(r.Grid, {
@@ -176,7 +176,7 @@ _global.SENTRY_RELEASE = {
             })
           },
           c = s.posts_jsx.variables_us_defaulted,
-          [x] = (0, n.useState)((0, t.jsx)(d(), {
+          [f] = (0, n.useState)((0, t.jsx)(d(), {
             renderInWrapper: !1,
             bindings: {
               getArray: (e, s) => e[s],
@@ -184,7 +184,7 @@ _global.SENTRY_RELEASE = {
                 dangerouslySetInnerHTML: {
                   __html: e
                 }
-              }, x),
+              }, f),
               article: s,
               locale: o,
               t: i,
@@ -198,12 +198,12 @@ _global.SENTRY_RELEASE = {
           }));
         return (0, t.jsxs)("div", {
           className: "rockstargames-modules-core-newswire-articlec24348b14cbdcfa0c1461aa99aa4c1f6",
-          children: [x, a]
+          children: [f, a]
         })
       })));
       var w = a(1740),
         p = a(80100);
-      const j = e => {
+      const b = e => {
         let {
           children: s,
           payload: a,

@@ -124,7 +124,7 @@ _global.SENTRY_RELEASE = {
             children: s
           }) : s
         },
-        u = e => {
+        f = e => {
           let {
             item: a
           } = e;
@@ -144,7 +144,7 @@ _global.SENTRY_RELEASE = {
             className: a?.className
           })
         },
-        f = e => {
+        u = e => {
           let {
             items: a,
             style: s = {},
@@ -164,7 +164,7 @@ _global.SENTRY_RELEASE = {
                   className: (0, o.classList)("rockstargames-modules-core-newswire-articlec6ef137c3cc0ba12d735aedb6db0cae3", e.className),
                   style: e?.style ?? {},
                   ...e?.props,
-                  children: [e?.image || e?.videoId ? (0, l.jsx)(u, {
+                  children: [e?.image || e?.videoId ? (0, l.jsx)(f, {
                     item: e
                   }) : "", e.title || e.description ? (0, l.jsx)(r.DescriptionArea, {
                     item: e,
@@ -205,7 +205,7 @@ _global.SENTRY_RELEASE = {
                 children: a
               });
             default:
-              return (0, l.jsx)(f, {
+              return (0, l.jsx)(u, {
                 items: r,
                 style: i,
                 id: n,

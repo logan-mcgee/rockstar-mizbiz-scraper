@@ -18,10 +18,10 @@ _global.SENTRY_RELEASE = {
   [920], {
     1920: (e, a, d) => {
       d.r(a), d.d(a, {
-        base: () => u,
+        base: () => b,
         cdn: () => l,
         locale: () => t,
-        useBase: () => g,
+        useBase: () => u,
         useCdn: () => r,
         useLocale: () => o
       });
@@ -34,12 +34,12 @@ _global.SENTRY_RELEASE = {
           videos: s?.cdn?.videos
         }),
         r = () => (0, n.useReactiveVar)(l),
-        c = document.currentScript,
-        f = c?.src ? new URL(c.src).origin : "";
-      let i = document.getElementsByTagName("base")[0]?.getAttribute("href") ?? `${f}/`;
+        f = document.currentScript,
+        c = f?.src ? new URL(f.src).origin : "";
+      let i = document.getElementsByTagName("base")[0]?.getAttribute("href") ?? `${c}/`;
       i.endsWith("/") || (i = `${i}/`);
-      const u = (0, n.makeVar)(i),
-        g = () => (0, n.useReactiveVar)(u)
+      const b = (0, n.makeVar)(i),
+        u = () => (0, n.useReactiveVar)(b)
     }
   }
 ]);

@@ -23,7 +23,7 @@ _global.SENTRY_RELEASE = {
         ApolloConsumer: () => _i,
         ApolloError: () => N,
         ApolloLink: () => o.A,
-        ApolloProvider: () => bi,
+        ApolloProvider: () => gi,
         Cache: () => ir,
         DocumentType: () => Ei,
         HttpLink: () => ee,
@@ -47,7 +47,7 @@ _global.SENTRY_RELEASE = {
         from: () => un,
         fromError: () => J,
         fromPromise: () => fn,
-        getApolloContext: () => gi,
+        getApolloContext: () => bi,
         gql: () => ii,
         isApolloError: () => S,
         isReference: () => Se.Ez,
@@ -57,7 +57,7 @@ _global.SENTRY_RELEASE = {
         operationName: () => Ni,
         parseAndCheckHttpResponse: () => V,
         parser: () => Di,
-        resetApolloContext: () => gi,
+        resetApolloContext: () => bi,
         resetCaches: () => oi,
         rewriteURIForGET: () => Y,
         selectHttpOptionsAndBody: () => K,
@@ -144,13 +144,13 @@ _global.SENTRY_RELEASE = {
         v = "function" == typeof WeakSet,
         y = "function" == typeof Symbol && "function" == typeof Symbol.for,
         m = y && Symbol.asyncIterator,
-        g = "function" == typeof(0, n.WG)((function() {
+        b = "function" == typeof(0, n.WG)((function() {
           return window.document.createElement
         })),
-        b = (0, n.WG)((function() {
+        g = (0, n.WG)((function() {
           return navigator.userAgent.indexOf("jsdom") >= 0
         })) || !1,
-        _ = g && !b;
+        _ = b && !g;
 
       function O(e) {
         var t = {
@@ -524,17 +524,17 @@ _global.SENTRY_RELEASE = {
             v = e.preserveHeaderCase,
             y = e.useGETForQueries,
             m = e.includeUnusedVariables,
-            g = void 0 !== m && m,
-            b = (0, i.sX)(e, ["uri", "fetch", "print", "includeExtensions", "preserveHeaderCase", "useGETForQueries", "includeUnusedVariables"]);
+            b = void 0 !== m && m,
+            g = (0, i.sX)(e, ["uri", "fetch", "print", "includeExtensions", "preserveHeaderCase", "useGETForQueries", "includeUnusedVariables"]);
           __DEV__ && U(s || X);
           var _ = {
             http: {
               includeExtensions: d,
               preserveHeaderCase: v
             },
-            options: b.fetchOptions,
-            credentials: b.credentials,
-            headers: b.headers
+            options: g.fetchOptions,
+            credentials: g.credentials,
+            headers: g.headers
           };
           return new o.A((function(e) {
             var t = f(e, r),
@@ -546,7 +546,7 @@ _global.SENTRY_RELEASE = {
                 m = d.version;
               v && (c["apollographql-client-name"] = v), m && (c["apollographql-client-version"] = m)
             }
-            var b, O = (0, i.C3)((0, i.C3)({}, c), o.headers),
+            var g, O = (0, i.C3)((0, i.C3)({}, c), o.headers),
               w = {
                 http: o.http,
                 options: o.fetchOptions,
@@ -556,7 +556,7 @@ _global.SENTRY_RELEASE = {
               k = G(e, l, B, _, w),
               S = k.options,
               N = k.body;
-            if (N.variables && !g) {
+            if (N.variables && !b) {
               var D = new Set(Object.keys(N.variables));
               (0, a.kn)(e.query, {
                 Variable: function(e, t, r) {
@@ -570,7 +570,7 @@ _global.SENTRY_RELEASE = {
               var x = H(),
                 T = x.controller,
                 R = x.signal;
-              (b = T) && (S.signal = R)
+              (g = T) && (S.signal = R)
             }
             var I, A = "OperationDefinition" === (I = (0, $.aG)(e.query)).kind && "subscription" === I.operation,
               P = u(["defer"], e.query);
@@ -604,7 +604,7 @@ _global.SENTRY_RELEASE = {
                   return null !== o && /^multipart\/mixed/i.test(o) ? function(e, t) {
                     var r, n, o, s, a;
                     return (0, i.kH)(this, void 0, void 0, (function() {
-                      var c, u, l, h, p, f, d, v, y, m, g, b, _, O, w, k, S, N, D, x, T, R, I;
+                      var c, u, l, h, p, f, d, v, y, m, b, g, _, O, w, k, S, N, D, x, T, R, I;
                       return (0, i.KE)(this, (function(A) {
                         switch (A.label) {
                           case 0:
@@ -613,7 +613,7 @@ _global.SENTRY_RELEASE = {
                           case 1:
                             return v ? [4, d.next()] : [3, 3];
                           case 2:
-                            for (y = A.sent(), m = y.value, g = y.done, b = "string" == typeof m ? m : c.decode(m), _ = f.length - p.length + 1, v = !g, O = (f += b).indexOf(p, _); O > -1;) {
+                            for (y = A.sent(), m = y.value, b = y.done, g = "string" == typeof m ? m : c.decode(m), _ = f.length - p.length + 1, v = !b, O = (f += g).indexOf(p, _); O > -1;) {
                               if (w = void 0, R = [f.slice(0, O), f.slice(O + p.length)], f = R[1], k = (w = R[0]).indexOf("\r\n\r\n"), S = Q(w.slice(0, k)), (N = S["content-type"]) && -1 === N.toLowerCase().indexOf("application/json")) throw new Error("Unsupported patch content type: application/json is required.");
                               if (D = w.slice(k)) try {
                                 x = q(e, D), Object.keys(x).length > 1 || "data" in x || "incremental" in x || "errors" in x || "payload" in x ? F(x) ? (T = {}, "payload" in x && (T = (0, i.C3)({}, x.payload)), "errors" in x && (T = (0, i.C3)((0, i.C3)({}, T), {
@@ -642,7 +642,7 @@ _global.SENTRY_RELEASE = {
                   return j(e, r)
                 })),
                 function() {
-                  b && b.abort()
+                  g && g.abort()
                 }
             }))
           }))
@@ -808,7 +808,7 @@ _global.SENTRY_RELEASE = {
         }
         return !1
       }
-      var me, ge, be = function() {
+      var me, be, ge = function() {
           function e() {
             this.known = new(v ? WeakSet : Set), this.pool = new ve(d), this.passes = new WeakMap, this.keysByJSON = new Map, this.empty = this.admit({})
           }
@@ -872,8 +872,8 @@ _global.SENTRY_RELEASE = {
           if ((0, k.a)(e)) {
             void 0 === me && Oe();
             var t = me.admit(e),
-              r = ge.get(t);
-            return void 0 === r && ge.set(t, r = JSON.stringify(t)), r
+              r = be.get(t);
+            return void 0 === r && be.set(t, r = JSON.stringify(t)), r
           }
           return JSON.stringify(e)
         }), {
@@ -881,7 +881,7 @@ _global.SENTRY_RELEASE = {
         });
 
       function Oe() {
-        me = new be, ge = new(d ? WeakMap : Map)
+        me = new ge, be = new(d ? WeakMap : Map)
       }
 
       function Ee(e, t, r) {
@@ -1052,25 +1052,25 @@ _global.SENTRY_RELEASE = {
               }))
             }))), e
           },
-          g = new Set;
+          b = new Set;
         y.definitions.forEach((function(e) {
           e.kind === Ce.U.OPERATION_DEFINITION ? m(r(e.name && e.name.value)).fragmentSpreads.forEach((function(e) {
-            g.add(e)
-          })) : e.kind !== Ce.U.FRAGMENT_DEFINITION || 0 !== c || o(e.name.value).removed || g.add(e.name.value)
-        })), g.forEach((function(e) {
+            b.add(e)
+          })) : e.kind !== Ce.U.FRAGMENT_DEFINITION || 0 !== c || o(e.name.value).removed || b.add(e.name.value)
+        })), b.forEach((function(e) {
           m(o(e)).fragmentSpreads.forEach((function(e) {
-            g.add(e)
+            b.add(e)
           }))
         }));
-        var b = {
+        var g = {
           enter: function(e) {
-            if (t = e.name.value, !g.has(t) || o(t).removed) return null;
+            if (t = e.name.value, !b.has(t) || o(t).removed) return null;
             var t
           }
         };
         return Te((0, a.kn)(y, {
-          FragmentSpread: b,
-          FragmentDefinition: b,
+          FragmentSpread: g,
+          FragmentDefinition: g,
           OperationDefinition: {
             leave: function(e) {
               if (e.variableDefinitions) {
@@ -1681,7 +1681,7 @@ _global.SENTRY_RELEASE = {
         } = ft;
 
       function yt() {}
-      var mt, gt = function() {
+      var mt, bt = function() {
           function e(e, t) {
             void 0 === e && (e = 1 / 0), void 0 === t && (t = yt), this.max = e, this.dispose = t, this.map = new Map, this.newest = null, this.oldest = null
           }
@@ -1713,7 +1713,7 @@ _global.SENTRY_RELEASE = {
             return !!t && (t === this.newest && (this.newest = t.older), t === this.oldest && (this.oldest = t.newer), t.newer && (t.newer.older = t.older), t.older && (t.older.newer = t.newer), this.map.delete(e), this.dispose(t.value, e), !0)
           }, e
         }(),
-        bt = new ft,
+        gt = new ft,
         _t = Object.prototype.hasOwnProperty,
         Ot = void 0 === (mt = Array.from) ? function(e) {
           var t = [];
@@ -1751,7 +1751,7 @@ _global.SENTRY_RELEASE = {
           if (1 === this.value.length && !Tt(this)) return Dt(this), this.value[0]
         }, e.prototype.recompute = function(e) {
           return Ct(!this.recomputing, "already recomputing"), Dt(this), Tt(this) ? function(e, t) {
-            return Lt(e), bt.withValue(e, xt, [e, t]),
+            return Lt(e), gt.withValue(e, xt, [e, t]),
               function(e, t) {
                 if ("function" == typeof e.subscribe) try {
                   Et(e), e.unsubscribe = e.subscribe.apply(null, t)
@@ -1783,7 +1783,7 @@ _global.SENTRY_RELEASE = {
       }();
 
       function Dt(e) {
-        var t = bt.getValue();
+        var t = gt.getValue();
         if (t) return e.parents.add(t), t.childValues.has(e) || t.childValues.set(e, []), Tt(e) ? Pt(t, e) : Ft(t, e), t
       }
 
@@ -1855,7 +1855,7 @@ _global.SENTRY_RELEASE = {
           r = e && e.subscribe;
 
         function n(e) {
-          var n = bt.getValue();
+          var n = gt.getValue();
           if (n) {
             var i = t.get(e);
             i || t.set(e, i = new Set), n.dependOn(i), "function" == typeof r && (Et(i), i.unsubscribe = r(e))
@@ -1883,7 +1883,7 @@ _global.SENTRY_RELEASE = {
 
       function zt(e, t) {
         void 0 === t && (t = Object.create(null));
-        var r = new gt(t.max || Math.pow(2, 16), (function(e) {
+        var r = new bt(t.max || Math.pow(2, 16), (function(e) {
             return e.dispose()
           })),
           n = t.keyArgs,
@@ -1896,7 +1896,7 @@ _global.SENTRY_RELEASE = {
               return r.delete(o)
             });
             var a = s.recompute(Array.prototype.slice.call(arguments));
-            return r.set(o, s), Ut.add(r), bt.hasValue() || (Ut.forEach((function(e) {
+            return r.set(o, s), Ut.add(r), gt.hasValue() || (Ut.forEach((function(e) {
               return e.clean()
             })), Ut.clear()), a
           };
@@ -2357,8 +2357,8 @@ _global.SENTRY_RELEASE = {
               v = e.fetchPolicy,
               y = void 0 === v ? (null === (t = this.defaultOptions.mutate) || void 0 === t ? void 0 : t.fetchPolicy) || "network-only" : v,
               m = e.errorPolicy,
-              g = void 0 === m ? (null === (r = this.defaultOptions.mutate) || void 0 === r ? void 0 : r.errorPolicy) || "none" : m,
-              b = e.keepRootFields,
+              b = void 0 === m ? (null === (r = this.defaultOptions.mutate) || void 0 === r ? void 0 : r.errorPolicy) || "none" : m,
+              g = e.keepRootFields,
               _ = e.context;
             return (0, i.kH)(this, void 0, void 0, (function() {
               var e, t, r, u, h, v;
@@ -2379,27 +2379,27 @@ _global.SENTRY_RELEASE = {
                       document: o,
                       variables: s,
                       fetchPolicy: y,
-                      errorPolicy: g,
+                      errorPolicy: b,
                       context: _,
                       updateQueries: c,
                       update: f,
-                      keepRootFields: b
+                      keepRootFields: g
                     }), this.broadcastQueries(), v = this, [2, new Promise((function(t, r) {
                       return Ee(v.getObservableFromLink(o, (0, i.C3)((0, i.C3)({}, _), {
                         optimisticResponse: a
                       }), s, !1), (function(t) {
-                        if (we(t) && "none" === g) throw new N({
+                        if (we(t) && "none" === b) throw new N({
                           graphQLErrors: ke(t)
                         });
                         h && (h.loading = !1, h.error = null);
                         var r = (0, i.C3)({}, t);
-                        return "function" == typeof l && (l = l(r)), "ignore" === g && we(r) && delete r.errors, v.markMutationResult({
+                        return "function" == typeof l && (l = l(r)), "ignore" === b && we(r) && delete r.errors, v.markMutationResult({
                           mutationId: e,
                           result: r,
                           document: o,
                           variables: s,
                           fetchPolicy: y,
-                          errorPolicy: g,
+                          errorPolicy: b,
                           context: _,
                           update: f,
                           updateQueries: c,
@@ -2407,7 +2407,7 @@ _global.SENTRY_RELEASE = {
                           refetchQueries: l,
                           removeOptimistic: a ? e : void 0,
                           onQueryUpdated: d,
-                          keepRootFields: b
+                          keepRootFields: g
                         })
                       })).subscribe({
                         next: function(e) {
@@ -2804,8 +2804,8 @@ _global.SENTRY_RELEASE = {
               v = void 0 !== d && d,
               y = t.notifyOnNetworkStatusChange,
               m = void 0 !== y && y,
-              g = t.context,
-              b = void 0 === g ? {} : g,
+              b = t.context,
+              g = void 0 === b ? {} : b,
               _ = Object.assign({}, t, {
                 query: s,
                 variables: a,
@@ -2813,7 +2813,7 @@ _global.SENTRY_RELEASE = {
                 errorPolicy: f,
                 returnPartialData: v,
                 notifyOnNetworkStatusChange: m,
-                context: b
+                context: g
               }),
               O = function(e) {
                 _.variables = e;
@@ -2932,7 +2932,7 @@ _global.SENTRY_RELEASE = {
                 })) : "none" === u && r === Ve.refetch && Array.isArray(t.missing) ? c(void 0) : c(a)
               },
               m = "no-cache" === a ? 0 : r === Ve.refetch && "merge" !== c ? 1 : 2,
-              g = function() {
+              b = function() {
                 return n.getResultsFromLink(e, m, {
                   variables: s,
                   context: p,
@@ -2940,48 +2940,48 @@ _global.SENTRY_RELEASE = {
                   errorPolicy: u
                 })
               },
-              b = f && "number" == typeof d && d !== r && ze(r);
+              g = f && "number" == typeof d && d !== r && ze(r);
             switch (a) {
               default:
               case "cache-first":
                 return (_ = v()).complete ? {
                   fromLink: !1,
                   sources: [y(_, e.markReady())]
-                } : l || b ? {
+                } : l || g ? {
                   fromLink: !0,
-                  sources: [y(_), g()]
+                  sources: [y(_), b()]
                 } : {
                   fromLink: !0,
-                  sources: [g()]
+                  sources: [b()]
                 };
               case "cache-and-network":
                 var _;
-                return (_ = v()).complete || l || b ? {
+                return (_ = v()).complete || l || g ? {
                   fromLink: !0,
-                  sources: [y(_), g()]
+                  sources: [y(_), b()]
                 } : {
                   fromLink: !0,
-                  sources: [g()]
+                  sources: [b()]
                 };
               case "cache-only":
                 return {
                   fromLink: !1, sources: [y(v(), e.markReady())]
                 };
               case "network-only":
-                return b ? {
+                return g ? {
                   fromLink: !0,
-                  sources: [y(v()), g()]
+                  sources: [y(v()), b()]
                 } : {
                   fromLink: !0,
-                  sources: [g()]
+                  sources: [b()]
                 };
               case "no-cache":
-                return b ? {
+                return g ? {
                   fromLink: !0,
-                  sources: [y(e.getDiff()), g()]
+                  sources: [y(e.getDiff()), b()]
                 } : {
                   fromLink: !0,
-                  sources: [g()]
+                  sources: [b()]
                 };
               case "standby":
                 return {
@@ -3023,8 +3023,8 @@ _global.SENTRY_RELEASE = {
               v = void 0 === d || d,
               y = e.defaultOptions,
               m = e.assumeImmutableResults,
-              g = void 0 !== m && m,
-              b = e.resolvers,
+              b = void 0 !== m && m,
+              g = e.resolvers,
               _ = e.typeDefs,
               O = e.fragmentMatcher,
               E = e.name,
@@ -3046,7 +3046,7 @@ _global.SENTRY_RELEASE = {
             this.version = "3.7.17", this.localState = new Yt({
               cache: a,
               client: this,
-              resolvers: b,
+              resolvers: g,
               fragmentMatcher: O
             }), this.queryManager = new rr({
               cache: this.cache,
@@ -3059,7 +3059,7 @@ _global.SENTRY_RELEASE = {
                 version: w
               },
               localState: this.localState,
-              assumeImmutableResults: g,
+              assumeImmutableResults: b,
               onBroadcast: f ? function() {
                 t.devToolsHookCb && t.devToolsHookCb({
                   action: {},
@@ -3318,11 +3318,11 @@ _global.SENTRY_RELEASE = {
         })))
       }
 
-      function gr(e) {
+      function br(e) {
         return (0, k.a)(e) && !(0, Se.Ez)(e) && !(0, D.c)(e)
       }
 
-      function br(e, t) {
+      function gr(e, t) {
         var r = (0, Ne.uC)((0, $._A)(e));
         return {
           fragmentMap: r,
@@ -3609,7 +3609,7 @@ _global.SENTRY_RELEASE = {
           this.knownResults = new(d ? WeakMap : Map), this.config = (0, Ge.g)(e, {
             addTypename: !1 !== e.addTypename,
             canonizeResults: dr(e)
-          }), this.canon = e.canon || new be, this.executeSelectionSet = zt((function(e) {
+          }), this.canon = e.canon || new ge, this.executeSelectionSet = zt((function(e) {
             var r, n = e.context.canonizeResults,
               o = Rr(e);
             o[3] = !n;
@@ -3636,7 +3636,7 @@ _global.SENTRY_RELEASE = {
           })
         }
         return e.prototype.resetCanon = function() {
-          this.canon = new be
+          this.canon = new ge
         }, e.prototype.diffQueryAgainstStore = function(e) {
           var t = e.store,
             r = e.query,
@@ -3661,7 +3661,7 @@ _global.SENTRY_RELEASE = {
                 variables: s,
                 varString: _e(s),
                 canonizeResults: l
-              }, br(r, this.config.fragments))
+              }, gr(r, this.config.fragments))
             });
           if (d.missing && (p = [new cr(Ar(d.missing), d.missing, r, s)], !c)) throw p[0];
           return {
@@ -3709,22 +3709,22 @@ _global.SENTRY_RELEASE = {
                     variables: s.variables,
                     from: i
                   }, s),
-                  g = (0, Se.ue)(e);
-                void 0 === m ? Ae.added(e) || (a = f.merge(a, ((r = {})[g] = "Can't find field '".concat(e.name.value, "' on ").concat((0, Se.Ez)(i) ? i.__ref + " object" : "object " + JSON.stringify(i, null, 2)), r))) : (0, D.c)(m) ? m = d(t.executeSubSelectedArray({
+                  b = (0, Se.ue)(e);
+                void 0 === m ? Ae.added(e) || (a = f.merge(a, ((r = {})[b] = "Can't find field '".concat(e.name.value, "' on ").concat((0, Se.Ez)(i) ? i.__ref + " object" : "object " + JSON.stringify(i, null, 2)), r))) : (0, D.c)(m) ? m = d(t.executeSubSelectedArray({
                   field: e,
                   array: m,
                   enclosingRef: o,
                   context: s
-                }), g) : e.selectionSet ? null != m && (m = d(t.executeSelectionSet({
+                }), b) : e.selectionSet ? null != m && (m = d(t.executeSelectionSet({
                   selectionSet: e.selectionSet,
                   objectOrReference: m,
                   enclosingRef: (0, Se.Ez)(m) ? m : o,
                   context: s
-                }), g)) : s.canonizeResults && (m = t.canon.pass(m)), void 0 !== m && p.push(((y = {})[g] = m, y))
+                }), b)) : s.canonizeResults && (m = t.canon.pass(m)), void 0 !== m && p.push(((y = {})[b] = m, y))
               } else {
-                var b = (0, Ne.gV)(e, s.lookupFragment);
-                if (!b && e.kind === Ce.U.FRAGMENT_SPREAD) throw __DEV__ ? new n.gZ("No fragment named ".concat(e.name.value)) : new n.gZ(5);
-                b && l.fragmentMatches(b, h) && b.selectionSet.selections.forEach(v.add, v)
+                var g = (0, Ne.gV)(e, s.lookupFragment);
+                if (!g && e.kind === Ce.U.FRAGMENT_SPREAD) throw __DEV__ ? new n.gZ("No fragment named ".concat(e.name.value)) : new n.gZ(5);
+                g && l.fragmentMatches(g, h) && g.selectionSet.selections.forEach(v.add, v)
               }
           }));
           var y = {
@@ -4118,9 +4118,9 @@ _global.SENTRY_RELEASE = {
             var o = e.getFieldValue(t, "__typename"),
               s = e.getFieldValue(r, "__typename");
             if (o && s && o !== s) return r;
-            if ((0, Se.Ez)(t) && gr(r)) return e.merge(t.__ref, r), t;
-            if (gr(t) && (0, Se.Ez)(r)) return e.merge(t, r.__ref), r;
-            if (gr(t) && gr(r)) return (0, i.C3)((0, i.C3)({}, t), r)
+            if ((0, Se.Ez)(t) && br(r)) return e.merge(t.__ref, r), t;
+            if (br(t) && (0, Se.Ez)(r)) return e.merge(t, r.__ref), r;
+            if (br(t) && br(r)) return (0, i.C3)((0, i.C3)({}, t), r)
           }
           return r
         }
@@ -4156,7 +4156,7 @@ _global.SENTRY_RELEASE = {
                 },
                 variables: c,
                 varString: _e(c)
-              }, br(o, this.fragments)), {
+              }, gr(o, this.fragments)), {
                 overwrite: !!u,
                 incomingById: new Map,
                 clientOnly: !1,
@@ -4260,12 +4260,12 @@ _global.SENTRY_RELEASE = {
                   v = tn(c, d),
                   y = t.processFieldValue(a, r, r.selectionSet ? Xr(e, !1, !1) : e, v),
                   m = void 0;
-                r.selectionSet && ((0, Se.Ez)(y) || gr(y)) && (m = p("__typename", y));
-                var g = u.getMergeFunction(h, r.name.value, m);
-                g ? v.info = {
+                r.selectionSet && ((0, Se.Ez)(y) || br(y)) && (m = p("__typename", y));
+                var b = u.getMergeFunction(h, r.name.value, m);
+                b ? v.info = {
                   field: r,
                   typename: h,
-                  merge: g
+                  merge: b
                 } : on(c, d), l = e.merge(l, ((i = {})[d] = y, i))
               } else !__DEV__ || e.clientOnly || e.deferred || Ae.added(r) || u.getReadFunction(h, r.name.value) || __DEV__ && n.ON.error("Missing field '".concat((0, Se.ue)(r), "' while writing result ").concat(JSON.stringify(o, null, 2)).substring(0, 1e3))
             }));
@@ -4285,12 +4285,12 @@ _global.SENTRY_RELEASE = {
             }
             if ("string" == typeof r) {
               var m = (0, Se.Yz)(r),
-                g = a.written[r] || (a.written[r] = []);
-              if (g.indexOf(s) >= 0) return m;
-              if (g.push(s), this.reader && this.reader.isFresh(o, m, s, a)) return m;
-              var b = a.incomingById.get(r);
-              return b ? (b.storeObject = a.merge(b.storeObject, l), b.mergeTree = rn(b.mergeTree, c), f.forEach((function(e) {
-                return b.fieldNodeSet.add(e)
+                b = a.written[r] || (a.written[r] = []);
+              if (b.indexOf(s) >= 0) return m;
+              if (b.push(s), this.reader && this.reader.isFresh(o, m, s, a)) return m;
+              var g = a.incomingById.get(r);
+              return g ? (g.storeObject = a.merge(g.storeObject, l), g.mergeTree = rn(g.mergeTree, c), f.forEach((function(e) {
+                return g.fieldNodeSet.add(e)
               }))) : a.incomingById.set(r, {
                 storeObject: l,
                 mergeTree: nn(c) ? void 0 : c,
@@ -4340,7 +4340,7 @@ _global.SENTRY_RELEASE = {
           }, e.prototype.applyMerges = function(e, t, r, o, s) {
             var a, c = this;
             if (e.map.size && !(0, Se.Ez)(r)) {
-              var u, l = (0, D.c)(r) || !(0, Se.Ez)(t) && !gr(t) ? void 0 : t,
+              var u, l = (0, D.c)(r) || !(0, Se.Ez)(t) && !br(t) ? void 0 : t,
                 h = r;
               l && !s && (s = [(0, Se.Ez)(l) ? l.__ref : l]);
               var p = function(e, t) {
@@ -4632,7 +4632,7 @@ _global.SENTRY_RELEASE = {
         }
       }
 
-      function gn(e, t) {
+      function bn(e, t) {
         const r = e.locationOffset.column - 1,
           n = "".padStart(r) + e.body,
           i = t.line - 1,
@@ -4648,12 +4648,12 @@ _global.SENTRY_RELEASE = {
             t = c % 80,
             r = [];
           for (let e = 0; e < h.length; e += 80) r.push(h.slice(e, e + 80));
-          return u + bn([
+          return u + gn([
             [`${s} |`, r[0]], ...r.slice(1, e + 1).map((e => ["|", e])), ["|", "^".padStart(t)],
             ["|", r[e + 1]]
           ])
         }
-        return u + bn([
+        return u + gn([
           [s - 1 + " |", l[i - 1]],
           [`${s} |`, h],
           ["|", "^".padStart(c)],
@@ -4661,7 +4661,7 @@ _global.SENTRY_RELEASE = {
         ])
       }
 
-      function bn(e) {
+      function gn(e) {
         const t = e.filter((([e, t]) => void 0 !== t)),
           r = Math.max(...t.map((([e]) => e.length)));
         return t.map((([e, t]) => e.padStart(r) + (t ? " " + t : ""))).join("\n")
@@ -4728,9 +4728,9 @@ _global.SENTRY_RELEASE = {
         toString() {
           let e = this.message;
           if (this.nodes)
-            for (const r of this.nodes) r.loc && (e += "\n\n" + gn((t = r.loc).source, mn(t.source, t.start)));
+            for (const r of this.nodes) r.loc && (e += "\n\n" + bn((t = r.loc).source, mn(t.source, t.start)));
           else if (this.source && this.locations)
-            for (const t of this.locations) e += "\n\n" + gn(this.source, t);
+            for (const t of this.locations) e += "\n\n" + bn(this.source, t);
           var t;
           return e
         }
@@ -5860,7 +5860,7 @@ _global.SENTRY_RELEASE = {
         yi = r.t(vi, 2),
         mi = y ? Symbol.for("__APOLLO_CONTEXT__") : "__APOLLO_CONTEXT__";
 
-      function gi() {
+      function bi() {
         var e = vi.createContext[mi];
         return e || (Object.defineProperty(vi.createContext, mi, {
           value: e = vi.createContext({}),
@@ -5869,10 +5869,10 @@ _global.SENTRY_RELEASE = {
           configurable: !0
         }), e.displayName = "ApolloContext"), e
       }
-      var bi = function(e) {
+      var gi = function(e) {
           var t = e.client,
             r = e.children,
-            i = gi();
+            i = bi();
           return vi.createElement(i.Consumer, null, (function(e) {
             return void 0 === e && (e = {}), t && e.client !== t && (e = Object.assign({}, e, {
               client: t
@@ -5882,14 +5882,14 @@ _global.SENTRY_RELEASE = {
           }))
         },
         _i = function(e) {
-          var t = gi();
+          var t = bi();
           return vi.createElement(t.Consumer, null, (function(t) {
             return __DEV__ ? (0, n.ON)(t && t.client, 'Could not find "client" in the context of ApolloConsumer. Wrap the root component in an <ApolloProvider>.') : (0, n.ON)(t && t.client, 28), e.children(t.client)
           }))
         };
 
       function Oi(e) {
-        var t = (0, vi.useContext)(gi()),
+        var t = (0, vi.useContext)(bi()),
           r = e || t.client;
         return __DEV__ ? (0, n.ON)(!!r, 'Could not find "client" in the context or passed in as an option. Wrap the root component in an <ApolloProvider>, or pass an ApolloClient instance in via options.') : (0, n.ON)(!!r, 32), r
       }
@@ -6051,7 +6051,7 @@ _global.SENTRY_RELEASE = {
             }))
           }, e.prototype.useQuery = function(e) {
             var t = this;
-            this.renderPromises = (0, vi.useContext)(gi()).renderPromises, this.useOptions(e);
+            this.renderPromises = (0, vi.useContext)(bi()).renderPromises, this.useOptions(e);
             var r = this.useObservableQuery(),
               n = ki((0, vi.useCallback)((function() {
                 if (t.renderPromises) return function() {};

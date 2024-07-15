@@ -20,31 +20,31 @@ _global.SENTRY_RELEASE = {
       a.r(t), a.d(t, {
         mutateLSSettings: () => o,
         settingsReactive: () => l,
-        useRockstarWebLSSettings: () => r
+        useRockstarWebLSSettings: () => f
       });
-      var n = a(52);
-      const d = "rockstar-games-web";
+      var d = a(52);
+      const n = "rockstar-games-web";
       let s;
       try {
-        const e = window.localStorage.getItem(d);
+        const e = window.localStorage.getItem(n);
         s = null !== e ? JSON.parse(e) : {}
       } catch (e) {
         s = {}
       }
-      const l = (0, n.makeVar)(s),
+      const l = (0, d.makeVar)(s),
         o = e => {
           let {
             key: t,
             value: a
           } = e;
           if (null == t) throw Error("You have to specify a key and a value.");
-          const n = {
+          const d = {
             ...l() ?? {}
           };
-          return n[t] = a, null === a && delete n[t], window.localStorage.setItem(d, JSON.stringify(n)), l(n), n
+          return d[t] = a, null === a && delete d[t], window.localStorage.setItem(n, JSON.stringify(d)), l(d), d
         },
-        r = () => ({
-          lsSettings: (0, n.useReactiveVar)(l),
+        f = () => ({
+          lsSettings: (0, d.useReactiveVar)(l),
           settingsReactive: l,
           mutateLSSettings: o
         })

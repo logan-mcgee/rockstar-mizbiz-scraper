@@ -41,8 +41,8 @@ _global.SENTRY_RELEASE = {
         var e, o = n && n.split("/") || [],
           a = t && t.split("/") || [],
           c = n && r(n),
-          s = t && r(t),
-          f = c || s;
+          f = t && r(t),
+          s = c || f;
         if (n && r(n) ? a = o : o.length && (a.pop(), a = a.concat(o)), !a.length) return "/";
         if (a.length) {
           var u = a[a.length - 1];
@@ -52,9 +52,9 @@ _global.SENTRY_RELEASE = {
           var h = a[l];
           "." === h ? i(a, l) : ".." === h ? (i(a, l), d++) : d && (i(a, l), d--)
         }
-        if (!f)
+        if (!s)
           for (; d--; d) a.unshift("..");
-        !f || "" === a[0] || a[0] && r(a[0]) || a.unshift("");
+        !s || "" === a[0] || a[0] && r(a[0]) || a.unshift("");
         var v = a.join("/");
         return e && "/" !== v.substr(-1) && (v += "/"), v
       };
@@ -62,7 +62,7 @@ _global.SENTRY_RELEASE = {
       function c(n) {
         return n.valueOf ? n.valueOf() : Object.prototype.valueOf.call(n)
       }
-      const s = function n(t, e) {
+      const f = function n(t, e) {
         if (t === e) return !0;
         if (null == t || null == e) return !1;
         if (Array.isArray(t)) return Array.isArray(e) && t.length === e.length && t.every((function(t, o) {
@@ -77,12 +77,12 @@ _global.SENTRY_RELEASE = {
         }
         return !1
       };
-      var f = !0,
+      var s = !0,
         u = "Invariant failed";
 
       function d(n, t) {
         if (!n) {
-          if (f) throw new Error(u);
+          if (s) throw new Error(u);
           var e = "function" == typeof t ? t() : t,
             o = e ? "".concat(u, ": ").concat(e) : u;
           throw new Error(o)
@@ -140,7 +140,7 @@ _global.SENTRY_RELEASE = {
       }
 
       function m(n, t) {
-        return n.pathname === t.pathname && n.search === t.search && n.hash === t.hash && n.key === t.key && s(n.state, t.state)
+        return n.pathname === t.pathname && n.search === t.search && n.hash === t.hash && n.key === t.key && f(n.state, t.state)
       }
 
       function b() {
@@ -203,9 +203,9 @@ _global.SENTRY_RELEASE = {
           i = !(-1 === window.navigator.userAgent.indexOf("Trident")),
           a = n,
           c = a.forceRefresh,
-          s = void 0 !== c && c,
-          f = a.getUserConfirmation,
-          u = void 0 === f ? k : f,
+          f = void 0 !== c && c,
+          s = a.getUserConfirmation,
+          u = void 0 === s ? k : s,
           h = a.keyLength,
           g = void 0 === h ? 6 : h,
           m = n.basename ? p(l(n.basename)) : "";
@@ -286,10 +286,10 @@ _global.SENTRY_RELEASE = {
                     if (e.pushState({
                         key: a,
                         state: c
-                      }, null, t), s) window.location.href = t;
+                      }, null, t), f) window.location.href = t;
                     else {
-                      var f = R.indexOf(q.location.key),
-                        u = R.slice(0, f + 1);
+                      var s = R.indexOf(q.location.key),
+                        u = R.slice(0, s + 1);
                       u.push(i.key), R = u, _({
                         action: o,
                         location: i
@@ -311,9 +311,9 @@ _global.SENTRY_RELEASE = {
                     if (e.replaceState({
                         key: a,
                         state: c
-                      }, null, t), s) window.location.replace(t);
+                      }, null, t), f) window.location.replace(t);
                     else {
-                      var f = R.indexOf(q.location.key); - 1 !== f && (R[f] = i.key), _({
+                      var s = R.indexOf(q.location.key); - 1 !== s && (R[s] = i.key), _({
                         action: o,
                         location: i
                       })
@@ -390,14 +390,14 @@ _global.SENTRY_RELEASE = {
           i = void 0 === r ? k : r,
           a = e.hashType,
           c = void 0 === a ? "slash" : a,
-          s = n.basename ? p(l(n.basename)) : "",
-          f = L[c],
-          u = f.encodePath,
-          h = f.decodePath;
+          f = n.basename ? p(l(n.basename)) : "",
+          s = L[c],
+          u = s.encodePath,
+          h = s.decodePath;
 
         function g() {
           var n = h(I());
-          return s && (n = v(n, s)), y(n)
+          return f && (n = v(n, f)), y(n)
         }
         var m = b();
 
@@ -458,7 +458,7 @@ _global.SENTRY_RELEASE = {
             createHref: function(n) {
               var t = document.querySelector("base"),
                 e = "";
-              return t && t.getAttribute("href") && (e = _(window.location.href)), e + "#" + u(s + w(n))
+              return t && t.getAttribute("href") && (e = _(window.location.href)), e + "#" + u(f + w(n))
             },
             push: function(n, t) {
               var e = "PUSH",
@@ -466,7 +466,7 @@ _global.SENTRY_RELEASE = {
               m.confirmTransitionTo(o, e, i, (function(n) {
                 if (n) {
                   var t = w(o),
-                    r = u(s + t);
+                    r = u(f + t);
                   if (I() !== r) {
                     A = t,
                       function(n) {
@@ -488,7 +488,7 @@ _global.SENTRY_RELEASE = {
               m.confirmTransitionTo(o, e, i, (function(n) {
                 if (n) {
                   var t = w(o),
-                    r = u(s + t);
+                    r = u(f + t);
                   I() !== r && (A = t, S(r));
                   var i = R.indexOf(w(F.location)); - 1 !== i && (R[i] = t), O({
                     action: e,
@@ -535,8 +535,8 @@ _global.SENTRY_RELEASE = {
           i = void 0 === r ? ["/"] : r,
           a = t.initialIndex,
           c = void 0 === a ? 0 : a,
-          s = t.keyLength,
-          f = void 0 === s ? 6 : s,
+          f = t.keyLength,
+          s = void 0 === f ? 6 : f,
           u = b();
 
         function d(n) {
@@ -544,7 +544,7 @@ _global.SENTRY_RELEASE = {
         }
 
         function l() {
-          return Math.random().toString(36).substr(2, f)
+          return Math.random().toString(36).substr(2, s)
         }
         var h = M(c, 0, i.length - 1),
           v = i.map((function(n) {

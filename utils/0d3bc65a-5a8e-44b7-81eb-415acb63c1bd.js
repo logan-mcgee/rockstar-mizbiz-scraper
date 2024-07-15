@@ -18,10 +18,10 @@ _global.SENTRY_RELEASE = {
   [32], {
     576: (e, n, i) => {
       "use strict";
-      var a = i(664),
-        t = Symbol.for("react.element"),
+      var t = i(664),
+        a = Symbol.for("react.element"),
         o = (Symbol.for("react.fragment"), Object.prototype.hasOwnProperty),
-        r = a.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        r = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         s = {
           key: !0,
           ref: !0,
@@ -29,18 +29,18 @@ _global.SENTRY_RELEASE = {
           __source: !0
         };
       n.jsx = function(e, n, i) {
-        var a, l = {},
-          d = null,
+        var t, d = {},
+          l = null,
           c = null;
-        for (a in void 0 !== i && (d = "" + i), void 0 !== n.key && (d = "" + n.key), void 0 !== n.ref && (c = n.ref), n) o.call(n, a) && !s.hasOwnProperty(a) && (l[a] = n[a]);
+        for (t in void 0 !== i && (l = "" + i), void 0 !== n.key && (l = "" + n.key), void 0 !== n.ref && (c = n.ref), n) o.call(n, t) && !s.hasOwnProperty(t) && (d[t] = n[t]);
         if (e && e.defaultProps)
-          for (a in n = e.defaultProps) void 0 === l[a] && (l[a] = n[a]);
+          for (t in n = e.defaultProps) void 0 === d[t] && (d[t] = n[t]);
         return {
-          $$typeof: t,
+          $$typeof: a,
           type: e,
-          key: d,
+          key: l,
           ref: c,
-          props: l,
+          props: d,
           _owner: r.current
         }
       }
@@ -52,10 +52,10 @@ _global.SENTRY_RELEASE = {
     300: (e, n, i) => {
       "use strict";
       i.d(n, {
-        c: () => d
+        c: () => l
       });
-      var a = i(204),
-        t = i.n(a);
+      var t = i(204),
+        a = i.n(t);
       const o = [{
           id: "prod",
           sites: {
@@ -70,30 +70,30 @@ _global.SENTRY_RELEASE = {
           let e;
           const {
             location: n
-          } = window, i = n.hostname.substring(0, n.hostname.indexOf(".rockstargames.com")), a = o.findIndex((n => Object.entries(n.sites).findIndex((n => {
-            let [a, t] = n;
-            return t === i && (e = {
-              site: a,
-              subDomain: t
+          } = window, i = n.hostname.substring(0, n.hostname.indexOf(".rockstargames.com")), t = o.findIndex((n => Object.entries(n.sites).findIndex((n => {
+            let [t, a] = n;
+            return a === i && (e = {
+              site: t,
+              subDomain: a
             }, !0)
-          })) >= 0)), t = o[a >= 0 ? a : 0];
+          })) >= 0)), a = o[t >= 0 ? t : 0];
           return e || (e = {
             site: "www",
             subDomain: "local"
           }), {
-            ...t,
+            ...a,
             currentSite: e
           }
         })(),
         s = r?.id,
-        l = /Mobi/i.test(window.navigator.userAgent) ? "mobile" : "desktop",
-        d = e => {
+        d = /Mobi/i.test(window.navigator.userAgent) ? "mobile" : "desktop",
+        l = e => {
           const n = {
             ...e,
             environment: s,
-            display_type: l
+            display_type: d
           };
-          t().dataLayer({
+          a().dataLayer({
             dataLayer: n
           })
         }
@@ -102,34 +102,34 @@ _global.SENTRY_RELEASE = {
       "use strict";
       i.r(n), i.d(n, {
         withGtmTracking: () => o,
-        withLocale: () => l,
+        withLocale: () => d,
         withMediaBasedProps: () => f,
         withTranslations: () => v
       });
-      var a = i(300),
-        t = i(240);
-      const o = e => n => ((e, n) => (0, t.jsx)(e, {
+      var t = i(300),
+        a = i(240);
+      const o = e => n => ((e, n) => (0, a.jsx)(e, {
         ...n,
         gtmTrack: e => {
-          (0, a.c)(e)
+          (0, t.c)(e)
         }
       }))(e, n);
       var r = i(52),
         s = i(680);
-      const l = e => n => ((e, n) => {
+      const d = e => n => ((e, n) => {
         const i = (0, r.useReactiveVar)(s.locale);
-        return (0, t.jsx)(e, {
+        return (0, a.jsx)(e, {
           ...n,
           locale: i
         })
       })(e, n);
-      var d = i(664),
+      var l = i(664),
         c = i(660),
         u = i.n(c);
       const f = function(e) {
         let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 250;
         return i => ((e, n, i) => {
-          const [a, o] = (0, d.useState)(n), r = e => {
+          const [t, o] = (0, l.useState)(n), r = e => {
             let n = e;
             const i = n?.items;
             if (i?.length) {
@@ -139,21 +139,21 @@ _global.SENTRY_RELEASE = {
                 items: e
               }
             }
-            const a = n?.mediaQueryList;
-            return a?.length ? (a.filter((e => window.matchMedia(e.mediaQueryString).matches)).forEach((e => {
+            const t = n?.mediaQueryList;
+            return t?.length ? (t.filter((e => window.matchMedia(e.mediaQueryString).matches)).forEach((e => {
               n = {
                 ...n,
                 ...e
               }
             })), n) : n
           };
-          return (0, d.useEffect)((() => {
+          return (0, l.useEffect)((() => {
             const e = u().debounce((() => {
               o(r(n))
             }), i);
             return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
-          })), (0, t.jsx)(e, {
-            ...a
+          })), (0, a.jsx)(e, {
+            ...t
           })
         })(e, i, n)
       };
@@ -161,7 +161,7 @@ _global.SENTRY_RELEASE = {
       const v = function(e) {
         let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "default";
         return i => ((e, n, i) => {
-          const a = function() {
+          const t = function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "default";
             const {
               data: n
@@ -172,9 +172,9 @@ _global.SENTRY_RELEASE = {
             });
             return n ? e => n?.translations.find((n => n.key === e))?.value ?? e : null
           }(i);
-          return a ? (0, t.jsx)(e, {
+          return t ? (0, a.jsx)(e, {
             ...n,
-            t: a
+            t
           }) : null
         })(e, i, n)
       }
@@ -299,8 +299,8 @@ _global.SENTRY_RELEASE = {
       function i(e, n) {
         if ("FragmentSpread" === e.kind) n.add(e.name.value);
         else if ("VariableDefinition" === e.kind) {
-          var a = e.type;
-          "NamedType" === a.kind && n.add(a.name.value)
+          var t = e.type;
+          "NamedType" === t.kind && n.add(t.name.value)
         }
         e.selectionSet && e.selectionSet.selections.forEach((function(e) {
           i(e, n)
@@ -318,41 +318,41 @@ _global.SENTRY_RELEASE = {
           column: 1
         }
       };
-      var a = {};
+      var t = {};
 
-      function t(e, n) {
+      function a(e, n) {
         for (var i = 0; i < e.definitions.length; i++) {
-          var a = e.definitions[i];
-          if (a.name && a.name.value == n) return a
+          var t = e.definitions[i];
+          if (t.name && t.name.value == n) return t
         }
       }
       n.definitions.forEach((function(e) {
         if (e.name) {
           var n = new Set;
-          i(e, n), a[e.name.value] = n
+          i(e, n), t[e.name.value] = n
         }
       })), e.exports = n, e.exports.Translations = function(e, n) {
         var i = {
           kind: e.kind,
-          definitions: [t(e, n)]
+          definitions: [a(e, n)]
         };
         e.hasOwnProperty("loc") && (i.loc = e.loc);
-        var o = a[n] || new Set,
+        var o = t[n] || new Set,
           r = new Set,
           s = new Set;
         for (o.forEach((function(e) {
             s.add(e)
           })); s.size > 0;) {
-          var l = s;
-          s = new Set, l.forEach((function(e) {
-            r.has(e) || (r.add(e), (a[e] || new Set).forEach((function(e) {
+          var d = s;
+          s = new Set, d.forEach((function(e) {
+            r.has(e) || (r.add(e), (t[e] || new Set).forEach((function(e) {
               s.add(e)
             })))
           }))
         }
         return r.forEach((function(n) {
-          var a = t(e, n);
-          a && i.definitions.push(a)
+          var t = a(e, n);
+          t && i.definitions.push(t)
         })), i
       }(n, "Translations")
     }

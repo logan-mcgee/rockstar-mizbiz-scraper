@@ -134,7 +134,7 @@ _global.SENTRY_RELEASE = {
             children: r
           }) : r
         },
-        m = e => {
+        f = e => {
           let {
             impressionTracking: a,
             gtm: t = {},
@@ -146,7 +146,7 @@ _global.SENTRY_RELEASE = {
             children: s
           })
         },
-        f = e => {
+        m = e => {
           let {
             to: a,
             children: t
@@ -158,7 +158,7 @@ _global.SENTRY_RELEASE = {
             children: t
           }) : t
         },
-        p = e => {
+        b = e => {
           let {
             item: a
           } = e;
@@ -178,7 +178,7 @@ _global.SENTRY_RELEASE = {
             className: a?.className
           })
         },
-        b = e => {
+        p = e => {
           let {
             items: a,
             style: t = {},
@@ -189,16 +189,16 @@ _global.SENTRY_RELEASE = {
             style: t,
             className: (0, o.classList)("rockstargames-sites-gta-gen9fbb6b44c6d90c22144e4fbed29bc540b", r),
             id: i,
-            children: a.map((e => (0, l.jsx)(m, {
+            children: a.map((e => (0, l.jsx)(f, {
               impressionTracking: e?.impressionTracking,
               gtm: e?.gtm,
-              children: (0, l.jsx)(f, {
+              children: (0, l.jsx)(m, {
                 to: e?.to,
                 children: (0, l.jsxs)("div", {
                   className: (0, o.classList)("rockstargames-sites-gta-gen9c6ef137c3cc0ba12d735aedb6db0cae3", e.className),
                   style: e?.style ?? {},
                   ...e?.props,
-                  children: [e?.image || e?.videoId ? (0, l.jsx)(p, {
+                  children: [e?.image || e?.videoId ? (0, l.jsx)(b, {
                     item: e
                   }) : "", e.title || e.description ? (0, l.jsx)(s.DescriptionArea, {
                     item: e,
@@ -239,7 +239,7 @@ _global.SENTRY_RELEASE = {
                 children: a
               });
             default:
-              return (0, l.jsx)(b, {
+              return (0, l.jsx)(p, {
                 items: s,
                 style: i,
                 id: n,

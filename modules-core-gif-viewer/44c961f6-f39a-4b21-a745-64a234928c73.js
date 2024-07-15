@@ -2,28 +2,28 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "7f8654f7-f3b7-415f-97f8-b0b3b34386e8", e._sentryDebugIdIdentifier = "sentry-dbid-7f8654f7-f3b7-415f-97f8-b0b3b34386e8")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "44c961f6-f39a-4b21-a745-64a234928c73", e._sentryDebugIdIdentifier = "sentry-dbid-44c961f6-f39a-4b21-a745-64a234928c73")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
   release: "sentry-release-id",
-  packageName: "@rockstargames/sites-red-dead-redemption-2",
+  packageName: "@rockstargames/modules-core-gif-viewer",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
-}, (self.webpackChunk_rockstargames_sites_red_dead_redemption_2 = self.webpackChunk_rockstargames_sites_red_dead_redemption_2 || []).push([
-  [440], {
-    54720: (e, t, a) => {
+}, (self.webpackChunk_rockstargames_modules_core_gif_viewer = self.webpackChunk_rockstargames_modules_core_gif_viewer || []).push([
+  [884], {
+    77100: (e, t, a) => {
       "use strict";
       a.d(t, {
         ML: () => Na,
         cp: () => nr,
         w$: () => nr
       });
-      let s, r, i, n, o, d, c, l, m, p, u, g = {
+      let s, r, i, n, o, c, l, d, m, u, g, f = {
           autoSleep: 120,
           force3D: "auto",
           nullTargetWarn: 1,
@@ -31,19 +31,19 @@ _global.SENTRY_RELEASE = {
             lineHeight: ""
           }
         },
-        f = {
+        p = {
           duration: .5,
           overwrite: !1,
           delay: 0
         },
         _ = 1e8,
         h = 1e-8,
-        k = 2 * Math.PI,
-        b = k / 4,
-        v = 0,
-        x = Math.sqrt,
-        y = Math.cos,
-        w = Math.sin,
+        v = 2 * Math.PI,
+        k = v / 4,
+        b = 0,
+        w = Math.sqrt,
+        x = Math.cos,
+        y = Math.sin,
         N = e => "string" == typeof e,
         j = e => "function" == typeof e,
         S = e => "number" == typeof e,
@@ -56,14 +56,14 @@ _global.SENTRY_RELEASE = {
         z = Array.isArray,
         P = /(?:-?\.?\d|\.)+/gi,
         O = /[-+=.]*\d+[.e\-+]*\d*[e\-+]*\d*/g,
-        A = /[-+=.]*\d+[.e-]*\d*[a-z%]*/g,
-        D = /[-+=.]*\d+\.?\d*(?:e-|e\+)?\d*/gi,
+        D = /[-+=.]*\d+[.e-]*\d*[a-z%]*/g,
+        A = /[-+=.]*\d+\.?\d*(?:e-|e\+)?\d*/gi,
         B = /[+-]=-?[.\d]+/,
         V = /[^,'"\[\]\s]+/gi,
         R = /^[+\-=e\s\d]*\d+[.\d]*([a-z]*|%)\s*$/i,
         F = {},
         $ = {},
-        U = e => ($ = ke(e, F)) && xa,
+        U = e => ($ = ve(e, F)) && wa,
         G = (e, t) => console.warn("Invalid property", e, "set to", t, "Missing plugin? gsap.registerPlugin()"),
         H = (e, t) => !t && console.warn(e),
         q = (e, t) => e && (F[e] = t) && $ && ($[e] = t) || F,
@@ -99,29 +99,29 @@ _global.SENTRY_RELEASE = {
         },
         ne = e => e._gsap || ie(Ye(e))[0]._gsap,
         oe = (e, t, a) => (a = e[t]) && j(a) ? e[t]() : T(a) && e.getAttribute && e.getAttribute(t) || a,
-        de = (e, t) => (e = e.split(",")).forEach(t) || e,
-        ce = e => Math.round(1e5 * e) / 1e5 || 0,
-        le = e => Math.round(1e7 * e) / 1e7 || 0,
+        ce = (e, t) => (e = e.split(",")).forEach(t) || e,
+        le = e => Math.round(1e5 * e) / 1e5 || 0,
+        de = e => Math.round(1e7 * e) / 1e7 || 0,
         me = (e, t) => {
           let a = t.charAt(0),
             s = parseFloat(t.substr(2));
           return e = parseFloat(e), "+" === a ? e + s : "-" === a ? e - s : "*" === a ? e * s : e / s
         },
-        pe = (e, t) => {
+        ue = (e, t) => {
           let a = t.length,
             s = 0;
           for (; e.indexOf(t[s]) < 0 && ++s < a;);
           return s < a
         },
-        ue = () => {
+        ge = () => {
           let e, t, a = Z.length,
             s = Z.slice(0);
           for (J = {}, Z.length = 0, e = 0; e < a; e++) t = s[e], t && t._lazy && (t.render(t._lazy[0], t._lazy[1], !0)._lazy = 0)
         },
-        ge = (e, t, a, s) => {
-          Z.length && !r && ue(), e.render(t, a, s || r && t < 0 && (e._initted || e._startAt)), Z.length && !r && ue()
+        fe = (e, t, a, s) => {
+          Z.length && !r && ge(), e.render(t, a, s || r && t < 0 && (e._initted || e._startAt)), Z.length && !r && ge()
         },
-        fe = e => {
+        pe = e => {
           let t = parseFloat(e);
           return (t || 0 === t) && (e + "").match(V).length < 2 ? t : N(e) ? e.trim() : e
         },
@@ -130,20 +130,20 @@ _global.SENTRY_RELEASE = {
           for (let a in t) a in e || (e[a] = t[a]);
           return e
         },
-        ke = (e, t) => {
+        ve = (e, t) => {
           for (let a in t) e[a] = t[a];
           return e
         },
-        be = (e, t) => {
-          for (let a in t) "__proto__" !== a && "constructor" !== a && "prototype" !== a && (e[a] = C(t[a]) ? be(e[a] || (e[a] = {}), t[a]) : t[a]);
+        ke = (e, t) => {
+          for (let a in t) "__proto__" !== a && "constructor" !== a && "prototype" !== a && (e[a] = C(t[a]) ? ke(e[a] || (e[a] = {}), t[a]) : t[a]);
           return e
         },
-        ve = (e, t) => {
+        be = (e, t) => {
           let a, s = {};
           for (a in e) a in t || (s[a] = e[a]);
           return s
         },
-        xe = e => {
+        we = e => {
           let t = e.parent || n,
             a = e.keyframes ? (s = z(e.keyframes), (e, t) => {
               for (let a in t) a in e || "duration" === a && s || "ease" === a || (e[a] = t[a])
@@ -153,7 +153,7 @@ _global.SENTRY_RELEASE = {
             for (; t;) a(e, t.vars.defaults), t = t.parent || t._dp;
           return e
         },
-        ye = function(e, t) {
+        xe = function(e, t) {
           let a, s = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "_first",
             r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : "_last",
             i = arguments.length > 4 ? arguments[4] : void 0,
@@ -162,7 +162,7 @@ _global.SENTRY_RELEASE = {
             for (a = t[i]; n && n[i] > a;) n = n._prev;
           return n ? (t._next = n._next, n._next = t) : (t._next = e[s], e[s] = t), t._next ? t._next._prev = t : e[r] = t, t._prev = n, t.parent = t._dp = e, t
         },
-        we = function(e, t) {
+        ye = function(e, t) {
           let a = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "_first",
             s = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : "_last",
             r = t._prev,
@@ -187,10 +187,10 @@ _global.SENTRY_RELEASE = {
           return e && a === e ? a - 1 : a
         },
         Ie = (e, t) => (e - t._start) * t._ts + (t._ts >= 0 ? 0 : t._dirty ? t.totalDuration() : t._tDur),
-        Ee = e => e._end = le(e._start + (e._tDur / Math.abs(e._ts || e._rts || h) || 0)),
+        Ee = e => e._end = de(e._start + (e._tDur / Math.abs(e._ts || e._rts || h) || 0)),
         Le = (e, t) => {
           let a = e._dp;
-          return a && a.smoothChildTiming && e._ts && (e._start = le(a._time - (e._ts > 0 ? t / e._ts : ((e._dirty ? e.totalDuration() : e._tDur) - t) / -e._ts)), Ee(e), a._dirty || je(a, e)), e
+          return a && a.smoothChildTiming && e._ts && (e._start = de(a._time - (e._ts > 0 ? t / e._ts : ((e._dirty ? e.totalDuration() : e._tDur) - t) / -e._ts)), Ee(e), a._dirty || je(a, e)), e
         },
         ze = (e, t) => {
           let a;
@@ -200,14 +200,14 @@ _global.SENTRY_RELEASE = {
             e._zTime = -1e-8
           }
         },
-        Pe = (e, t, a, s) => (t.parent && Ne(t), t._start = le((S(a) ? a : a || e !== n ? $e(e, a, t) : e._time) + t._delay), t._end = le(t._start + (t.totalDuration() / Math.abs(t.timeScale()) || 0)), ye(e, t, "_first", "_last", e._sort ? "_start" : 0), Be(t) || (e._recent = t), s || ze(e, t), e._ts < 0 && Le(e, e._tTime), e),
+        Pe = (e, t, a, s) => (t.parent && Ne(t), t._start = de((S(a) ? a : a || e !== n ? $e(e, a, t) : e._time) + t._delay), t._end = de(t._start + (t.totalDuration() / Math.abs(t.timeScale()) || 0)), xe(e, t, "_first", "_last", e._sort ? "_start" : 0), Be(t) || (e._recent = t), s || ze(e, t), e._ts < 0 && Le(e, e._tTime), e),
         Oe = (e, t) => (F.ScrollTrigger || G("scrollTrigger", t)) && F.ScrollTrigger.create(t, e),
-        Ae = (e, t, a, s, i) => (Ut(e, t, i), e._initted ? !a && e._pt && !r && (e._dur && !1 !== e.vars.lazy || !e._dur && e.vars.lazy) && m !== yt.frame ? (Z.push(e), e._lazy = [i, s], 1) : void 0 : 1),
-        De = e => {
+        De = (e, t, a, s, i) => (Ut(e, t, i), e._initted ? !a && e._pt && !r && (e._dur && !1 !== e.vars.lazy || !e._dur && e.vars.lazy) && m !== xt.frame ? (Z.push(e), e._lazy = [i, s], 1) : void 0 : 1),
+        Ae = e => {
           let {
             parent: t
           } = e;
-          return t && t._ts && t._initted && !t._lock && (t.rawTime() < 0 || De(t))
+          return t && t._ts && t._initted && !t._lock && (t.rawTime() < 0 || Ae(t))
         },
         Be = e => {
           let {
@@ -217,11 +217,11 @@ _global.SENTRY_RELEASE = {
         },
         Ve = (e, t, a, s) => {
           let r = e._repeat,
-            i = le(t) || 0,
+            i = de(t) || 0,
             n = e._tTime / e._tDur;
-          return n && !s && (e._time *= i / e._dur), e._dur = i, e._tDur = r ? r < 0 ? 1e10 : le(i * (r + 1) + e._rDelay * r) : i, n > 0 && !s && Le(e, e._tTime = e._tDur * n), e.parent && Ee(e), a || je(e.parent, e), e
+          return n && !s && (e._time *= i / e._dur), e._dur = i, e._tDur = r ? r < 0 ? 1e10 : de(i * (r + 1) + e._rDelay * r) : i, n > 0 && !s && Le(e, e._tTime = e._tDur * n), e.parent && Ee(e), a || je(e.parent, e), e
         },
-        Re = e => e instanceof Dt ? je(e) : Ve(e, e._dur),
+        Re = e => e instanceof At ? je(e) : Ve(e, e._dur),
         Fe = {
           _start: 0,
           endTime: W,
@@ -230,8 +230,8 @@ _global.SENTRY_RELEASE = {
         $e = (e, t, a) => {
           let s, r, i, n = e.labels,
             o = e._recent || Fe,
-            d = e.duration() >= _ ? o.endTime(!1) : e._dur;
-          return N(t) && (isNaN(t) || t in n) ? (r = t.charAt(0), i = "%" === t.substr(-1), s = t.indexOf("="), "<" === r || ">" === r ? (s >= 0 && (t = t.replace(/=/, "")), ("<" === r ? o._start : o.endTime(o._repeat >= 0)) + (parseFloat(t.substr(1)) || 0) * (i ? (s < 0 ? o : a).totalDuration() / 100 : 1)) : s < 0 ? (t in n || (n[t] = d), n[t]) : (r = parseFloat(t.charAt(s - 1) + t.substr(s + 1)), i && a && (r = r / 100 * (z(a) ? a[0] : a).totalDuration()), s > 1 ? $e(e, t.substr(0, s - 1), a) + r : d + r)) : null == t ? d : +t
+            c = e.duration() >= _ ? o.endTime(!1) : e._dur;
+          return N(t) && (isNaN(t) || t in n) ? (r = t.charAt(0), i = "%" === t.substr(-1), s = t.indexOf("="), "<" === r || ">" === r ? (s >= 0 && (t = t.replace(/=/, "")), ("<" === r ? o._start : o.endTime(o._repeat >= 0)) + (parseFloat(t.substr(1)) || 0) * (i ? (s < 0 ? o : a).totalDuration() / 100 : 1)) : s < 0 ? (t in n || (n[t] = c), n[t]) : (r = parseFloat(t.charAt(s - 1) + t.substr(s + 1)), i && a && (r = r / 100 * (z(a) ? a[0] : a).totalDuration()), s > 1 ? $e(e, t.substr(0, s - 1), a) + r : c + r)) : null == t ? c : +t
         },
         Ue = (e, t, a) => {
           let s, r, i = S(t[1]),
@@ -248,13 +248,13 @@ _global.SENTRY_RELEASE = {
         qe = (e, t) => N(e) && (t = R.exec(e)) ? t[1] : "",
         We = [].slice,
         Xe = (e, t) => e && C(e) && "length" in e && (!t && !e.length || e.length - 1 in e && C(e[0])) && !e.nodeType && e !== o,
-        Ye = (e, t, a) => i && !t && i.selector ? i.selector(e) : !N(e) || a || !d && wt() ? z(e) ? function(e, t) {
+        Ye = (e, t, a) => i && !t && i.selector ? i.selector(e) : !N(e) || a || !c && yt() ? z(e) ? function(e, t) {
           let a = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [];
           return e.forEach((e => N(e) && !t || Xe(e, 1) ? a.push(...Ye(e)) : a.push(e))) || a
-        }(e, a) : Xe(e) ? We.call(e, 0) : e ? [e] : [] : We.call((t || c).querySelectorAll(e), 0),
+        }(e, a) : Xe(e) ? We.call(e, 0) : e ? [e] : [] : We.call((t || l).querySelectorAll(e), 0),
         Ke = e => (e = Ye(e)[0] || H("Invalid scope") || {}, t => {
           let a = e.current || e.nativeElement || e;
-          return Ye(t, a.querySelectorAll ? a : a === e ? H("Invalid scope") || c.createElement("div") : e)
+          return Ye(t, a.querySelectorAll ? a : a === e ? H("Invalid scope") || l.createElement("div") : e)
         }),
         Qe = e => e.sort((() => .5 - Math.random())),
         Ze = e => {
@@ -268,31 +268,31 @@ _global.SENTRY_RELEASE = {
             i = {},
             n = s > 0 && s < 1,
             o = isNaN(s) || n,
-            d = t.axis,
-            c = s,
-            l = s;
-          return N(s) ? c = l = {
+            c = t.axis,
+            l = s,
+            d = s;
+          return N(s) ? l = d = {
             center: .5,
             edges: .5,
             end: 1
-          } [s] || 0 : !n && o && (c = s[0], l = s[1]), (e, n, m) => {
-            let p, u, g, f, h, k, b, v, y, w = (m || t).length,
-              N = i[w];
+          } [s] || 0 : !n && o && (l = s[0], d = s[1]), (e, n, m) => {
+            let u, g, f, p, h, v, k, b, x, y = (m || t).length,
+              N = i[y];
             if (!N) {
-              if (y = "auto" === t.grid ? 0 : (t.grid || [1, _])[1], !y) {
-                for (b = -_; b < (b = m[y++].getBoundingClientRect().left) && y < w;);
-                y--
+              if (x = "auto" === t.grid ? 0 : (t.grid || [1, _])[1], !x) {
+                for (k = -_; k < (k = m[x++].getBoundingClientRect().left) && x < y;);
+                x--
               }
-              for (N = i[w] = [], p = o ? Math.min(y, w) * c - .5 : s % y, u = y === _ ? 0 : o ? w * l / y - .5 : s / y | 0, b = 0, v = _, k = 0; k < w; k++) g = k % y - p, f = u - (k / y | 0), N[k] = h = d ? Math.abs("y" === d ? f : g) : x(g * g + f * f), h > b && (b = h), h < v && (v = h);
-              "random" === s && Qe(N), N.max = b - v, N.min = v, N.v = w = (parseFloat(t.amount) || parseFloat(t.each) * (y > w ? w - 1 : d ? "y" === d ? w / y : y : Math.max(y, w / y)) || 0) * ("edges" === s ? -1 : 1), N.b = w < 0 ? r - w : r, N.u = qe(t.amount || t.each) || 0, a = a && w < 0 ? Ct(a) : a
+              for (N = i[y] = [], u = o ? Math.min(x, y) * l - .5 : s % x, g = x === _ ? 0 : o ? y * d / x - .5 : s / x | 0, k = 0, b = _, v = 0; v < y; v++) f = v % x - u, p = g - (v / x | 0), N[v] = h = c ? Math.abs("y" === c ? p : f) : w(f * f + p * p), h > k && (k = h), h < b && (b = h);
+              "random" === s && Qe(N), N.max = k - b, N.min = b, N.v = y = (parseFloat(t.amount) || parseFloat(t.each) * (x > y ? y - 1 : c ? "y" === c ? y / x : x : Math.max(x, y / x)) || 0) * ("edges" === s ? -1 : 1), N.b = y < 0 ? r - y : r, N.u = qe(t.amount || t.each) || 0, a = a && y < 0 ? Ct(a) : a
             }
-            return w = (N[e] - N.min) / N.max || 0, le(N.b + (a ? a(w) : w) * N.v) + N.u
+            return y = (N[e] - N.min) / N.max || 0, de(N.b + (a ? a(y) : y) * N.v) + N.u
           }
         },
         Je = e => {
           let t = Math.pow(10, ((e + "").split(".")[1] || "").length);
           return a => {
-            let s = le(Math.round(parseFloat(a) / e) * e * t);
+            let s = de(Math.round(parseFloat(a) / e) * e * t);
             return (s - s % 1) / t + (S(a) ? 0 : qe(a))
           }
         },
@@ -301,11 +301,11 @@ _global.SENTRY_RELEASE = {
           return !r && C(e) && (a = r = e.radius || _, e.values ? (e = Ye(e.values), (s = !S(e[0])) && (a *= a)) : e = Je(e.increment)), Ge(t, r ? j(e) ? t => (s = e(t), Math.abs(s - t) <= a ? s : t) : t => {
             let r, i, n = parseFloat(s ? t.x : t),
               o = parseFloat(s ? t.y : 0),
-              d = _,
-              c = 0,
-              l = e.length;
-            for (; l--;) s ? (r = e[l].x - n, i = e[l].y - o, r = r * r + i * i) : r = Math.abs(e[l] - n), r < d && (d = r, c = l);
-            return c = !a || d <= a ? e[c] : t, s || c === t || S(t) ? c : c + qe(t)
+              c = _,
+              l = 0,
+              d = e.length;
+            for (; d--;) s ? (r = e[d].x - n, i = e[d].y - o, r = r * r + i * i) : r = Math.abs(e[d] - n), r < c && (c = r, l = d);
+            return l = !a || c <= a ? e[l] : t, s || l === t || S(t) ? l : l + qe(t)
           } : Je(e))
         },
         tt = (e, t, a, s) => Ge(z(e) ? !t : !0 === a ? !!(a = 0) : !s, (() => z(e) ? e[~~(Math.random() * e.length)] : (a = a || 1e-5) && (s = a < 1 ? 10 ** ((a + "").length - 2) : 1) && Math.floor(Math.round((e - a / 2 + Math.random() * (t - e + .99 * a)) / a) * a * s) / s)),
@@ -333,44 +333,44 @@ _global.SENTRY_RELEASE = {
         ot = (e, t, a, s) => {
           let r = isNaN(e + t) ? 0 : a => (1 - a) * e + a * t;
           if (!r) {
-            let i, n, o, d, c, l = N(e),
+            let i, n, o, c, l, d = N(e),
               m = {};
-            if (!0 === a && (s = 1) && (a = null), l) e = {
+            if (!0 === a && (s = 1) && (a = null), d) e = {
               p: e
             }, t = {
               p: t
             };
             else if (z(e) && !z(t)) {
-              for (o = [], d = e.length, c = d - 2, n = 1; n < d; n++) o.push(ot(e[n - 1], e[n]));
-              d--, r = e => {
-                e *= d;
-                let t = Math.min(c, ~~e);
+              for (o = [], c = e.length, l = c - 2, n = 1; n < c; n++) o.push(ot(e[n - 1], e[n]));
+              c--, r = e => {
+                e *= c;
+                let t = Math.min(l, ~~e);
                 return o[t](e - t)
               }, a = t
-            } else s || (e = ke(z(e) ? [] : {}, e));
+            } else s || (e = ve(z(e) ? [] : {}, e));
             if (!o) {
               for (i in t) Ft.call(m, e, i, "get", t[i]);
-              r = t => sa(t, m) || (l ? e.p : e)
+              r = t => sa(t, m) || (d ? e.p : e)
             }
           }
           return Ge(a, r)
         },
-        dt = (e, t, a) => {
+        ct = (e, t, a) => {
           let s, r, i, n = e.labels,
             o = _;
           for (s in n) r = n[s] - t, r < 0 == !!a && r && o > (r = Math.abs(r)) && (i = s, o = r);
           return i
         },
-        ct = (e, t, a) => {
+        lt = (e, t, a) => {
           let s, r, n, o = e.vars,
-            d = o[t],
-            c = i,
-            l = e._ctx;
-          if (d) return s = o[t + "Params"], r = o.callbackScope || e, a && Z.length && ue(), l && (i = l), n = s ? d.apply(r, s) : d.call(r), i = c, n
+            c = o[t],
+            l = i,
+            d = e._ctx;
+          if (c) return s = o[t + "Params"], r = o.callbackScope || e, a && Z.length && ge(), d && (i = d), n = s ? c.apply(r, s) : c.call(r), i = l, n
         },
-        lt = e => (Ne(e), e.scrollTrigger && e.scrollTrigger.kill(!!r), e.progress() < 1 && ct(e, "onInterrupt"), e),
+        dt = e => (Ne(e), e.scrollTrigger && e.scrollTrigger.kill(!!r), e.progress() < 1 && lt(e, "onInterrupt"), e),
         mt = [],
-        pt = e => {
+        ut = e => {
           if (I() && e) {
             let t = (e = !e.name && e.default || e).name,
               a = j(e),
@@ -392,113 +392,113 @@ _global.SENTRY_RELEASE = {
                 aliases: {},
                 register: 0
               };
-            if (wt(), e !== s) {
+            if (yt(), e !== s) {
               if (ee[t]) return;
-              he(s, he(ve(e, r), i)), ke(s.prototype, ke(r, ve(e, i))), ee[s.prop = t] = s, e.targetTest && (se.push(s), Q[t] = 1), t = ("css" === t ? "CSS" : t.charAt(0).toUpperCase() + t.substr(1)) + "Plugin"
+              he(s, he(be(e, r), i)), ve(s.prototype, ve(r, be(e, i))), ee[s.prop = t] = s, e.targetTest && (se.push(s), Q[t] = 1), t = ("css" === t ? "CSS" : t.charAt(0).toUpperCase() + t.substr(1)) + "Plugin"
             }
-            q(t, s), e.register && e.register(xa, s, da)
+            q(t, s), e.register && e.register(wa, s, ca)
           } else e && mt.push(e)
         },
-        ut = 255,
-        gt = {
-          aqua: [0, ut, ut],
-          lime: [0, ut, 0],
+        gt = 255,
+        ft = {
+          aqua: [0, gt, gt],
+          lime: [0, gt, 0],
           silver: [192, 192, 192],
           black: [0, 0, 0],
           maroon: [128, 0, 0],
           teal: [0, 128, 128],
-          blue: [0, 0, ut],
+          blue: [0, 0, gt],
           navy: [0, 0, 128],
-          white: [ut, ut, ut],
+          white: [gt, gt, gt],
           olive: [128, 128, 0],
-          yellow: [ut, ut, 0],
-          orange: [ut, 165, 0],
+          yellow: [gt, gt, 0],
+          orange: [gt, 165, 0],
           gray: [128, 128, 128],
           purple: [128, 0, 128],
           green: [0, 128, 0],
-          red: [ut, 0, 0],
-          pink: [ut, 192, 203],
-          cyan: [0, ut, ut],
-          transparent: [ut, ut, ut, 0]
+          red: [gt, 0, 0],
+          pink: [gt, 192, 203],
+          cyan: [0, gt, gt],
+          transparent: [gt, gt, gt, 0]
         },
-        ft = (e, t, a) => (6 * (e += e < 0 ? 1 : e > 1 ? -1 : 0) < 1 ? t + (a - t) * e * 6 : e < .5 ? a : 3 * e < 2 ? t + (a - t) * (2 / 3 - e) * 6 : t) * ut + .5 | 0,
+        pt = (e, t, a) => (6 * (e += e < 0 ? 1 : e > 1 ? -1 : 0) < 1 ? t + (a - t) * e * 6 : e < .5 ? a : 3 * e < 2 ? t + (a - t) * (2 / 3 - e) * 6 : t) * gt + .5 | 0,
         _t = (e, t, a) => {
-          let s, r, i, n, o, d, c, l, m, p, u = e ? S(e) ? [e >> 16, e >> 8 & ut, e & ut] : 0 : gt.black;
-          if (!u) {
-            if ("," === e.substr(-1) && (e = e.substr(0, e.length - 1)), gt[e]) u = gt[e];
+          let s, r, i, n, o, c, l, d, m, u, g = e ? S(e) ? [e >> 16, e >> 8 & gt, e & gt] : 0 : ft.black;
+          if (!g) {
+            if ("," === e.substr(-1) && (e = e.substr(0, e.length - 1)), ft[e]) g = ft[e];
             else if ("#" === e.charAt(0)) {
-              if (e.length < 6 && (s = e.charAt(1), r = e.charAt(2), i = e.charAt(3), e = "#" + s + s + r + r + i + i + (5 === e.length ? e.charAt(4) + e.charAt(4) : "")), 9 === e.length) return u = parseInt(e.substr(1, 6), 16), [u >> 16, u >> 8 & ut, u & ut, parseInt(e.substr(7), 16) / 255];
-              u = [(e = parseInt(e.substr(1), 16)) >> 16, e >> 8 & ut, e & ut]
+              if (e.length < 6 && (s = e.charAt(1), r = e.charAt(2), i = e.charAt(3), e = "#" + s + s + r + r + i + i + (5 === e.length ? e.charAt(4) + e.charAt(4) : "")), 9 === e.length) return g = parseInt(e.substr(1, 6), 16), [g >> 16, g >> 8 & gt, g & gt, parseInt(e.substr(7), 16) / 255];
+              g = [(e = parseInt(e.substr(1), 16)) >> 16, e >> 8 & gt, e & gt]
             } else if ("hsl" === e.substr(0, 3))
-              if (u = p = e.match(P), t) {
-                if (~e.indexOf("=")) return u = e.match(O), a && u.length < 4 && (u[3] = 1), u
-              } else n = +u[0] % 360 / 360, o = +u[1] / 100, d = +u[2] / 100, r = d <= .5 ? d * (o + 1) : d + o - d * o, s = 2 * d - r, u.length > 3 && (u[3] *= 1), u[0] = ft(n + 1 / 3, s, r), u[1] = ft(n, s, r), u[2] = ft(n - 1 / 3, s, r);
-            else u = e.match(P) || gt.transparent;
-            u = u.map(Number)
+              if (g = u = e.match(P), t) {
+                if (~e.indexOf("=")) return g = e.match(O), a && g.length < 4 && (g[3] = 1), g
+              } else n = +g[0] % 360 / 360, o = +g[1] / 100, c = +g[2] / 100, r = c <= .5 ? c * (o + 1) : c + o - c * o, s = 2 * c - r, g.length > 3 && (g[3] *= 1), g[0] = pt(n + 1 / 3, s, r), g[1] = pt(n, s, r), g[2] = pt(n - 1 / 3, s, r);
+            else g = e.match(P) || ft.transparent;
+            g = g.map(Number)
           }
-          return t && !p && (s = u[0] / ut, r = u[1] / ut, i = u[2] / ut, c = Math.max(s, r, i), l = Math.min(s, r, i), d = (c + l) / 2, c === l ? n = o = 0 : (m = c - l, o = d > .5 ? m / (2 - c - l) : m / (c + l), n = c === s ? (r - i) / m + (r < i ? 6 : 0) : c === r ? (i - s) / m + 2 : (s - r) / m + 4, n *= 60), u[0] = ~~(n + .5), u[1] = ~~(100 * o + .5), u[2] = ~~(100 * d + .5)), a && u.length < 4 && (u[3] = 1), u
+          return t && !u && (s = g[0] / gt, r = g[1] / gt, i = g[2] / gt, l = Math.max(s, r, i), d = Math.min(s, r, i), c = (l + d) / 2, l === d ? n = o = 0 : (m = l - d, o = c > .5 ? m / (2 - l - d) : m / (l + d), n = l === s ? (r - i) / m + (r < i ? 6 : 0) : l === r ? (i - s) / m + 2 : (s - r) / m + 4, n *= 60), g[0] = ~~(n + .5), g[1] = ~~(100 * o + .5), g[2] = ~~(100 * c + .5)), a && g.length < 4 && (g[3] = 1), g
         },
         ht = e => {
           let t = [],
             a = [],
             s = -1;
-          return e.split(bt).forEach((e => {
-            let r = e.match(A) || [];
+          return e.split(kt).forEach((e => {
+            let r = e.match(D) || [];
             t.push(...r), a.push(s += r.length + 1)
           })), t.c = a, t
         },
-        kt = (e, t, a) => {
+        vt = (e, t, a) => {
           let s, r, i, n, o = "",
-            d = (e + o).match(bt),
-            c = t ? "hsla(" : "rgba(",
-            l = 0;
-          if (!d) return e;
-          if (d = d.map((e => (e = _t(e, t, 1)) && c + (t ? e[0] + "," + e[1] + "%," + e[2] + "%," + e[3] : e.join(",")) + ")")), a && (i = ht(e), s = a.c, s.join(o) !== i.c.join(o)))
-            for (r = e.replace(bt, "1").split(A), n = r.length - 1; l < n; l++) o += r[l] + (~s.indexOf(l) ? d.shift() || c + "0,0,0,0)" : (i.length ? i : d.length ? d : a).shift());
+            c = (e + o).match(kt),
+            l = t ? "hsla(" : "rgba(",
+            d = 0;
+          if (!c) return e;
+          if (c = c.map((e => (e = _t(e, t, 1)) && l + (t ? e[0] + "," + e[1] + "%," + e[2] + "%," + e[3] : e.join(",")) + ")")), a && (i = ht(e), s = a.c, s.join(o) !== i.c.join(o)))
+            for (r = e.replace(kt, "1").split(D), n = r.length - 1; d < n; d++) o += r[d] + (~s.indexOf(d) ? c.shift() || l + "0,0,0,0)" : (i.length ? i : c.length ? c : a).shift());
           if (!r)
-            for (r = e.split(bt), n = r.length - 1; l < n; l++) o += r[l] + d[l];
+            for (r = e.split(kt), n = r.length - 1; d < n; d++) o += r[d] + c[d];
           return o + r[n]
         },
-        bt = function() {
+        kt = function() {
           let e, t = "(?:\\b(?:(?:rgb|rgba|hsl|hsla)\\(.+?\\))|\\B#(?:[0-9a-f]{3,4}){1,2}\\b";
-          for (e in gt) t += "|" + e + "\\b";
+          for (e in ft) t += "|" + e + "\\b";
           return new RegExp(t + ")", "gi")
         }(),
-        vt = /hsl[a]?\(/,
-        xt = e => {
+        bt = /hsl[a]?\(/,
+        wt = e => {
           let t, a = e.join(" ");
-          if (bt.lastIndex = 0, bt.test(a)) return t = vt.test(a), e[1] = kt(e[1], t), e[0] = kt(e[0], t, ht(e[1])), !0
+          if (kt.lastIndex = 0, kt.test(a)) return t = bt.test(a), e[1] = vt(e[1], t), e[0] = vt(e[0], t, ht(e[1])), !0
         },
-        yt = function() {
+        xt = function() {
           let e, t, a, s, r, i, n = Date.now,
             m = 500,
-            p = 33,
-            g = n(),
-            f = g,
+            u = 33,
+            f = n(),
+            p = f,
             _ = 1e3 / 240,
             h = _,
-            k = [],
-            b = a => {
-              let o, d, c, l, u = n() - f,
-                v = !0 === a;
-              if (u > m && (g += u - p), f += u, c = f - g, o = c - h, (o > 0 || v) && (l = ++s.frame, r = c - 1e3 * s.time, s.time = c /= 1e3, h += o + (o >= _ ? 4 : _ - o), d = 1), v || (e = t(b)), d)
-                for (i = 0; i < k.length; i++) k[i](c, r, l, a)
+            v = [],
+            k = a => {
+              let o, c, l, d, g = n() - p,
+                b = !0 === a;
+              if (g > m && (f += g - u), p += g, l = p - f, o = l - h, (o > 0 || b) && (d = ++s.frame, r = l - 1e3 * s.time, s.time = l /= 1e3, h += o + (o >= _ ? 4 : _ - o), c = 1), b || (e = t(k)), c)
+                for (i = 0; i < v.length; i++) v[i](l, r, d, a)
             };
           return s = {
             time: 0,
             frame: 0,
             tick() {
-              b(!0)
+              k(!0)
             },
             deltaRatio: e => r / (1e3 / (e || 60)),
             wake() {
-              l && (!d && I() && (o = d = window, c = o.document || {}, F.gsap = xa, (o.gsapVersions || (o.gsapVersions = [])).push(xa.version), U($ || o.GreenSockGlobals || !o.gsap && o || {}), a = o.requestAnimationFrame, mt.forEach(pt)), e && s.sleep(), t = a || (e => setTimeout(e, h - 1e3 * s.time + 1 | 0)), u = 1, b(2))
+              d && (!c && I() && (o = c = window, l = o.document || {}, F.gsap = wa, (o.gsapVersions || (o.gsapVersions = [])).push(wa.version), U($ || o.GreenSockGlobals || !o.gsap && o || {}), a = o.requestAnimationFrame, mt.forEach(ut)), e && s.sleep(), t = a || (e => setTimeout(e, h - 1e3 * s.time + 1 | 0)), g = 1, k(2))
             },
             sleep() {
-              (a ? o.cancelAnimationFrame : clearTimeout)(e), u = 0, t = W
+              (a ? o.cancelAnimationFrame : clearTimeout)(e), g = 0, t = W
             },
             lagSmoothing(e, t) {
-              m = e || 1 / 0, p = Math.min(t || 33, m)
+              m = e || 1 / 0, u = Math.min(t || 33, m)
             },
             fps(e) {
               _ = 1e3 / (e || 240), h = 1e3 * s.time + _
@@ -507,15 +507,15 @@ _global.SENTRY_RELEASE = {
               let r = t ? (t, a, i, n) => {
                 e(t, a, i, n), s.remove(r)
               } : e;
-              return s.remove(e), k[a ? "unshift" : "push"](r), wt(), r
+              return s.remove(e), v[a ? "unshift" : "push"](r), yt(), r
             },
             remove(e, t) {
-              ~(t = k.indexOf(e)) && k.splice(t, 1) && i >= t && i--
+              ~(t = v.indexOf(e)) && v.splice(t, 1) && i >= t && i--
             },
-            _listeners: k
+            _listeners: v
           }, s
         }(),
-        wt = () => !u && yt.wake(),
+        yt = () => !g && xt.wake(),
         Nt = {},
         jt = /^[\d.\-M][\d.\-,\s]/,
         St = /["']/g,
@@ -524,14 +524,14 @@ _global.SENTRY_RELEASE = {
             i = e.substr(1, e.length - 3).split(":"),
             n = i[0],
             o = 1,
-            d = i.length;
-          for (; o < d; o++) a = i[o], t = o !== d - 1 ? a.lastIndexOf(",") : a.length, s = a.substr(0, t), r[n] = isNaN(s) ? s.replace(St, "").trim() : +s, n = a.substr(t + 1).trim();
+            c = i.length;
+          for (; o < c; o++) a = i[o], t = o !== c - 1 ? a.lastIndexOf(",") : a.length, s = a.substr(0, t), r[n] = isNaN(s) ? s.replace(St, "").trim() : +s, n = a.substr(t + 1).trim();
           return r
         },
         Ct = e => t => 1 - e(1 - t),
         Mt = (e, t) => {
           let a, s = e._first;
-          for (; s;) s instanceof Dt ? Mt(s, t) : !s.vars.yoyoEase || s._yoyo && s._repeat || s._yoyo === t || (s.timeline ? Mt(s.timeline, t) : (a = s._ease, s._ease = s._yEase, s._yEase = a, s._yoyo = t)), s = s._next
+          for (; s;) s instanceof At ? Mt(s, t) : !s.vars.yoyoEase || s._yoyo && s._repeat || s._yoyo === t || (s.timeline ? Mt(s.timeline, t) : (a = s._ease, s._ease = s._yEase, s._yEase = a, s._yoyo = t)), s = s._next
         },
         It = (e, t) => e && (j(e) ? e : Nt[e] || (e => {
           let t = (e + "").split("("),
@@ -541,7 +541,7 @@ _global.SENTRY_RELEASE = {
               a = e.indexOf(")"),
               s = e.indexOf("(", t);
             return e.substring(t, ~s && s < a ? e.indexOf(")", a + 1) : a)
-          })(e).split(",").map(fe)) : Nt._CE && jt.test(e) ? Nt._CE("", e) : a
+          })(e).split(",").map(pe)) : Nt._CE && jt.test(e) ? Nt._CE("", e) : a
         })(e)) || t,
         Et = function(e, t) {
           let a, s = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : e => 1 - t(1 - e),
@@ -551,7 +551,7 @@ _global.SENTRY_RELEASE = {
               easeOut: s,
               easeInOut: r
             };
-          return de(e, (e => {
+          return ce(e, (e => {
             Nt[e] = F[e] = i, Nt[a = e.toLowerCase()] = s;
             for (let t in i) Nt[a + ("easeIn" === t ? ".in" : "easeOut" === t ? ".out" : ".inOut")] = Nt[e + "." + t] = i[t]
           })), i
@@ -560,10 +560,10 @@ _global.SENTRY_RELEASE = {
         zt = (e, t, a) => {
           let s = t >= 1 ? t : 1,
             r = (a || (e ? .3 : .45)) / (t < 1 ? t : 1),
-            i = r / k * (Math.asin(1 / s) || 0),
-            n = e => 1 === e ? 1 : s * 2 ** (-10 * e) * w((e - i) * r) + 1,
+            i = r / v * (Math.asin(1 / s) || 0),
+            n = e => 1 === e ? 1 : s * 2 ** (-10 * e) * y((e - i) * r) + 1,
             o = "out" === e ? n : "in" === e ? e => 1 - n(1 - e) : Lt(n);
-          return r = k / r, o.config = (t, a) => zt(e, t, a), o
+          return r = v / r, o.config = (t, a) => zt(e, t, a), o
         },
         Pt = function(e) {
           let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1.70158,
@@ -571,13 +571,13 @@ _global.SENTRY_RELEASE = {
             s = "out" === e ? a : "in" === e ? e => 1 - a(1 - e) : Lt(a);
           return s.config = t => Pt(e, t), s
         };
-      de("Linear,Quad,Cubic,Quart,Quint,Strong", ((e, t) => {
+      ce("Linear,Quad,Cubic,Quart,Quint,Strong", ((e, t) => {
         let a = t < 5 ? t + 1 : t;
         Et(e + ",Power" + (a - 1), t ? e => e ** a : e => e, (e => 1 - (1 - e) ** a), (e => e < .5 ? (2 * e) ** a / 2 : 1 - (2 * (1 - e)) ** a / 2))
       })), Nt.Linear.easeNone = Nt.none = Nt.Linear.easeIn, Et("Elastic", zt("in"), zt("out"), zt()), ((e, t) => {
         let a = a => a < .36363636363636365 ? e * a * a : a < .7272727272727273 ? e * (a - 1.5 / t) ** 2 + .75 : a < .9090909090909092 ? e * (a -= 2.25 / t) * a + .9375 : e * (a - 2.625 / t) ** 2 + .984375;
         Et("Bounce", (e => 1 - a(1 - e)), a)
-      })(7.5625, 2.75), Et("Expo", (e => e ? 2 ** (10 * (e - 1)) : 0)), Et("Circ", (e => -(x(1 - e * e) - 1))), Et("Sine", (e => 1 === e ? 1 : 1 - y(e * b))), Et("Back", Pt("in"), Pt("out"), Pt()), Nt.SteppedEase = Nt.steps = F.SteppedEase = {
+      })(7.5625, 2.75), Et("Expo", (e => e ? 2 ** (10 * (e - 1)) : 0)), Et("Circ", (e => -(w(1 - e * e) - 1))), Et("Sine", (e => 1 === e ? 1 : 1 - x(e * k))), Et("Back", Pt("in"), Pt("out"), Pt()), Nt.SteppedEase = Nt.steps = F.SteppedEase = {
         config() {
           let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 1,
             t = arguments.length > 1 ? arguments[1] : void 0,
@@ -586,15 +586,15 @@ _global.SENTRY_RELEASE = {
             r = t ? 1 : 0;
           return e => ((s * He(0, .99999999, e) | 0) + r) * a
         }
-      }, f.ease = Nt["quad.out"], de("onComplete,onUpdate,onStart,onRepeat,onReverseComplete,onInterrupt", (e => re += e + "," + e + "Params,"));
+      }, p.ease = Nt["quad.out"], ce("onComplete,onUpdate,onStart,onRepeat,onReverseComplete,onInterrupt", (e => re += e + "," + e + "Params,"));
       class Ot {
         constructor(e, t) {
-          this.id = v++, e._gsap = this, this.target = e, this.harness = t, this.get = t ? t.get : oe, this.set = t ? t.getSetter : Jt
+          this.id = b++, e._gsap = this, this.target = e, this.harness = t, this.get = t ? t.get : oe, this.set = t ? t.getSetter : Jt
         }
       }
-      class At {
+      class Dt {
         constructor(e) {
-          this.vars = e, this._delay = +e.delay || 0, (this._repeat = e.repeat === 1 / 0 ? -2 : e.repeat || 0) && (this._rDelay = e.repeatDelay || 0, this._yoyo = !!e.yoyo || !!e.yoyoEase), this._ts = 1, Ve(this, +e.duration, 1, 1), this.data = e.data, i && (this._ctx = i, i.data.push(this)), u || yt.wake()
+          this.vars = e, this._delay = +e.delay || 0, (this._repeat = e.repeat === 1 / 0 ? -2 : e.repeat || 0) && (this._rDelay = e.repeatDelay || 0, this._yoyo = !!e.yoyo || !!e.yoyoEase), this._ts = 1, Ve(this, +e.duration, 1, 1), this.data = e.data, i && (this._ctx = i, i.data.push(this)), g || xt.wake()
         }
         delay(e) {
           return e || 0 === e ? (this.parent && this.parent.smoothChildTiming && this.startTime(this._start + e - this._delay), this._delay = e, this) : this._delay
@@ -606,13 +606,13 @@ _global.SENTRY_RELEASE = {
           return arguments.length ? (this._dirty = 0, Ve(this, this._repeat < 0 ? e : (e - this._repeat * this._rDelay) / (this._repeat + 1))) : this._tDur
         }
         totalTime(e, t) {
-          if (wt(), !arguments.length) return this._tTime;
+          if (yt(), !arguments.length) return this._tTime;
           let a = this._dp;
           if (a && a.smoothChildTiming && this._ts) {
             for (Le(this, e), !a._dp || a.parent || ze(a, this); a && a.parent;) a.parent._time !== a._start + (a._ts >= 0 ? a._tTime / a._ts : (a.totalDuration() - a._tTime) / -a._ts) && a.totalTime(a._tTime, !0), a = a.parent;
             !this.parent && this._dp.autoRemoveChildren && (this._ts > 0 && e < this._tDur || this._ts < 0 && e > 0 || !this._tDur && !e) && Pe(this._dp, this, this._start - this._delay)
           }
-          return (this._tTime !== e || !this._dur && !t || this._initted && Math.abs(this._zTime) === h || !e && !this._initted && (this.add || this._ptLookup)) && (this._ts || (this._pTime = e), ge(this, e, t)), this
+          return (this._tTime !== e || !this._dur && !t || this._initted && Math.abs(this._zTime) === h || !e && !this._initted && (this.add || this._ptLookup)) && (this._ts || (this._pTime = e), fe(this, e, t)), this
         }
         time(e, t) {
           return arguments.length ? this.totalTime(Math.min(this.totalDuration(), e + Ce(this)) % (this._dur + this._rDelay) || (e ? this._dur : 0), t) : this._time
@@ -638,7 +638,7 @@ _global.SENTRY_RELEASE = {
           })(this)
         }
         paused(e) {
-          return arguments.length ? (this._ps !== e && (this._ps = e, e ? (this._pTime = this._tTime || Math.max(-this._delay, this.rawTime()), this._ts = this._act = 0) : (wt(), this._ts = this._rts, this.totalTime(this.parent && !this.parent.smoothChildTiming ? this.rawTime() : this._tTime || this._pTime, 1 === this.progress() && Math.abs(this._zTime) !== h && (this._tTime -= h)))), this) : this._ps
+          return arguments.length ? (this._ps !== e && (this._ps = e, e ? (this._pTime = this._tTime || Math.max(-this._delay, this.rawTime()), this._ts = this._act = 0) : (yt(), this._ts = this._rts, this.totalTime(this.parent && !this.parent.smoothChildTiming ? this.rawTime() : this._tTime || this._pTime, 1 === this.progress() && Math.abs(this._zTime) !== h && (this._tTime -= h)))), this) : this._ps
         }
         startTime(e) {
           if (arguments.length) {
@@ -724,10 +724,10 @@ _global.SENTRY_RELEASE = {
           }))
         }
         kill() {
-          lt(this)
+          dt(this)
         }
       }
-      he(At.prototype, {
+      he(Dt.prototype, {
         _time: 0,
         _start: 0,
         _end: 0,
@@ -747,7 +747,7 @@ _global.SENTRY_RELEASE = {
         _ps: !1,
         _rts: 1
       });
-      class Dt extends At {
+      class At extends Dt {
         constructor() {
           let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
             t = arguments.length > 1 ? arguments[1] : void 0;
@@ -763,7 +763,7 @@ _global.SENTRY_RELEASE = {
           return Ue(2, arguments, this), this
         }
         set(e, t, a) {
-          return t.duration = 0, t.parent = this, xe(t).repeatDelay || (t.repeat = 0), t.immediateRender = !!t.immediateRender, new Xt(e, t, $e(this, a), 1), this
+          return t.duration = 0, t.parent = this, we(t).repeatDelay || (t.repeat = 0), t.immediateRender = !!t.immediateRender, new Xt(e, t, $e(this, a), 1), this
         }
         call(e, t, a) {
           return Pe(this, Xt.delayedCall(0, e, t), a)
@@ -772,25 +772,25 @@ _global.SENTRY_RELEASE = {
           return a.duration = t, a.stagger = a.stagger || s, a.onComplete = i, a.onCompleteParams = n, a.parent = this, new Xt(e, a, $e(this, r)), this
         }
         staggerFrom(e, t, a, s, r, i, n) {
-          return a.runBackwards = 1, xe(a).immediateRender = M(a.immediateRender), this.staggerTo(e, t, a, s, r, i, n)
+          return a.runBackwards = 1, we(a).immediateRender = M(a.immediateRender), this.staggerTo(e, t, a, s, r, i, n)
         }
         staggerFromTo(e, t, a, s, r, i, n, o) {
-          return s.startAt = a, xe(s).immediateRender = M(s.immediateRender), this.staggerTo(e, t, s, r, i, n, o)
+          return s.startAt = a, we(s).immediateRender = M(s.immediateRender), this.staggerTo(e, t, s, r, i, n, o)
         }
         render(e, t, a) {
-          let s, i, o, d, c, l, m, p, u, g, f, _, k = this._time,
-            b = this._dirty ? this.totalDuration() : this._tDur,
-            v = this._dur,
-            x = e <= 0 ? 0 : le(e),
-            y = this._zTime < 0 != e < 0 && (this._initted || !v);
-          if (this !== n && x > b && e >= 0 && (x = b), x !== this._tTime || a || y) {
-            if (k !== this._time && v && (x += this._time - k, e += this._time - k), s = x, u = this._start, p = this._ts, l = !p, y && (v || (k = this._zTime), (e || !t) && (this._zTime = e)), this._repeat) {
-              if (f = this._yoyo, c = v + this._rDelay, this._repeat < -1 && e < 0) return this.totalTime(100 * c + e, t, a);
-              if (s = le(x % c), x === b ? (d = this._repeat, s = v) : (d = ~~(x / c), d && d === x / c && (s = v, d--), s > v && (s = v)), g = Me(this._tTime, c), !k && this._tTime && g !== d && this._tTime - g * c - this._dur <= 0 && (g = d), f && 1 & d && (s = v - s, _ = 1), d !== g && !this._lock) {
-                let e = f && 1 & g,
-                  a = e === (f && 1 & d);
-                if (d < g && (e = !e), k = e ? 0 : x % v ? v : x, this._lock = 1, this.render(k || (_ ? 0 : le(d * c)), t, !v)._lock = 0, this._tTime = x, !t && this.parent && ct(this, "onRepeat"), this.vars.repeatRefresh && !_ && (this.invalidate()._lock = 1), k && k !== this._time || l !== !this._ts || this.vars.onRepeat && !this.parent && !this._act) return this;
-                if (v = this._dur, b = this._tDur, a && (this._lock = 2, k = e ? v : -1e-4, this.render(k, !0), this.vars.repeatRefresh && !_ && this.invalidate()), this._lock = 0, !this._ts && !l) return this;
+          let s, i, o, c, l, d, m, u, g, f, p, _, v = this._time,
+            k = this._dirty ? this.totalDuration() : this._tDur,
+            b = this._dur,
+            w = e <= 0 ? 0 : de(e),
+            x = this._zTime < 0 != e < 0 && (this._initted || !b);
+          if (this !== n && w > k && e >= 0 && (w = k), w !== this._tTime || a || x) {
+            if (v !== this._time && b && (w += this._time - v, e += this._time - v), s = w, g = this._start, u = this._ts, d = !u, x && (b || (v = this._zTime), (e || !t) && (this._zTime = e)), this._repeat) {
+              if (p = this._yoyo, l = b + this._rDelay, this._repeat < -1 && e < 0) return this.totalTime(100 * l + e, t, a);
+              if (s = de(w % l), w === k ? (c = this._repeat, s = b) : (c = ~~(w / l), c && c === w / l && (s = b, c--), s > b && (s = b)), f = Me(this._tTime, l), !v && this._tTime && f !== c && this._tTime - f * l - this._dur <= 0 && (f = c), p && 1 & c && (s = b - s, _ = 1), c !== f && !this._lock) {
+                let e = p && 1 & f,
+                  a = e === (p && 1 & c);
+                if (c < f && (e = !e), v = e ? 0 : w % b ? b : w, this._lock = 1, this.render(v || (_ ? 0 : de(c * l)), t, !b)._lock = 0, this._tTime = w, !t && this.parent && lt(this, "onRepeat"), this.vars.repeatRefresh && !_ && (this.invalidate()._lock = 1), v && v !== this._time || d !== !this._ts || this.vars.onRepeat && !this.parent && !this._act) return this;
+                if (b = this._dur, k = this._tDur, a && (this._lock = 2, v = e ? b : -1e-4, this.render(v, !0), this.vars.repeatRefresh && !_ && this.invalidate()), this._lock = 0, !this._ts && !d) return this;
                 Mt(this, _)
               }
             }
@@ -805,13 +805,13 @@ _global.SENTRY_RELEASE = {
                       if ("isPause" === s.data && s._start < t) return s;
                       s = s._prev
                     }
-              })(this, le(k), le(s)), m && (x -= s - (s = m._start))), this._tTime = x, this._time = s, this._act = !p, this._initted || (this._onUpdate = this.vars.onUpdate, this._initted = 1, this._zTime = e, k = 0), !k && s && !t && !d && (ct(this, "onStart"), this._tTime !== x)) return this;
-            if (s >= k && e >= 0)
+              })(this, de(v), de(s)), m && (w -= s - (s = m._start))), this._tTime = w, this._time = s, this._act = !u, this._initted || (this._onUpdate = this.vars.onUpdate, this._initted = 1, this._zTime = e, v = 0), !v && s && !t && !c && (lt(this, "onStart"), this._tTime !== w)) return this;
+            if (s >= v && e >= 0)
               for (i = this._first; i;) {
                 if (o = i._next, (i._act || s >= i._start) && i._ts && m !== i) {
                   if (i.parent !== this) return this.render(e, t, a);
-                  if (i.render(i._ts > 0 ? (s - i._start) * i._ts : (i._dirty ? i.totalDuration() : i._tDur) + (s - i._start) * i._ts, t, a), s !== this._time || !this._ts && !l) {
-                    m = 0, o && (x += this._zTime = -1e-8);
+                  if (i.render(i._ts > 0 ? (s - i._start) * i._ts : (i._dirty ? i.totalDuration() : i._tDur) + (s - i._start) * i._ts, t, a), s !== this._time || !this._ts && !d) {
+                    m = 0, o && (w += this._zTime = -1e-8);
                     break
                   }
                 }
@@ -822,21 +822,21 @@ _global.SENTRY_RELEASE = {
                 for (; i;) {
                   if (o = i._prev, (i._act || n <= i._end) && i._ts && m !== i) {
                     if (i.parent !== this) return this.render(e, t, a);
-                    if (i.render(i._ts > 0 ? (n - i._start) * i._ts : (i._dirty ? i.totalDuration() : i._tDur) + (n - i._start) * i._ts, t, a || r && (i._initted || i._startAt)), s !== this._time || !this._ts && !l) {
-                      m = 0, o && (x += this._zTime = n ? -1e-8 : h);
+                    if (i.render(i._ts > 0 ? (n - i._start) * i._ts : (i._dirty ? i.totalDuration() : i._tDur) + (n - i._start) * i._ts, t, a || r && (i._initted || i._startAt)), s !== this._time || !this._ts && !d) {
+                      m = 0, o && (w += this._zTime = n ? -1e-8 : h);
                       break
                     }
                   }
                   i = o
                 }
               }
-            if (m && !t && (this.pause(), m.render(s >= k ? 0 : -1e-8)._zTime = s >= k ? 1 : -1, this._ts)) return this._start = u, Ee(this), this.render(e, t, a);
-            this._onUpdate && !t && ct(this, "onUpdate", !0), (x === b && this._tTime >= this.totalDuration() || !x && k) && (u !== this._start && Math.abs(p) === Math.abs(this._ts) || this._lock || ((e || !v) && (x === b && this._ts > 0 || !x && this._ts < 0) && Ne(this, 1), t || e < 0 && !k || !x && !k && b || (ct(this, x === b && e >= 0 ? "onComplete" : "onReverseComplete", !0), this._prom && !(x < b && this.timeScale() > 0) && this._prom())))
+            if (m && !t && (this.pause(), m.render(s >= v ? 0 : -1e-8)._zTime = s >= v ? 1 : -1, this._ts)) return this._start = g, Ee(this), this.render(e, t, a);
+            this._onUpdate && !t && lt(this, "onUpdate", !0), (w === k && this._tTime >= this.totalDuration() || !w && v) && (g !== this._start && Math.abs(u) === Math.abs(this._ts) || this._lock || ((e || !b) && (w === k && this._ts > 0 || !w && this._ts < 0) && Ne(this, 1), t || e < 0 && !v || !w && !v && k || (lt(this, w === k && e >= 0 ? "onComplete" : "onReverseComplete", !0), this._prom && !(w < k && this.timeScale() > 0) && this._prom())))
           }
           return this
         }
         add(e, t) {
-          if (S(t) || (t = $e(this, t, e)), !(e instanceof At)) {
+          if (S(t) || (t = $e(this, t, e)), !(e instanceof Dt)) {
             if (z(e)) return e.forEach((e => this.add(e, t))), this;
             if (N(e)) return this.addLabel(e, t);
             if (!j(e)) return this;
@@ -861,10 +861,10 @@ _global.SENTRY_RELEASE = {
             if (t[a].vars.id === e) return t[a]
         }
         remove(e) {
-          return N(e) ? this.removeLabel(e) : j(e) ? this.killTweensOf(e) : (we(this, e), e === this._recent && (this._recent = this._last), je(this))
+          return N(e) ? this.removeLabel(e) : j(e) ? this.killTweensOf(e) : (ye(this, e), e === this._recent && (this._recent = this._last), je(this))
         }
         totalTime(e, t) {
-          return arguments.length ? (this._forcing = 1, !this._dp && this._ts && (this._start = le(yt.time - (this._ts > 0 ? e / this._ts : (this.totalDuration() - e) / -this._ts))), super.totalTime(e, t), this._forcing = 0, this) : this._tTime
+          return arguments.length ? (this._forcing = 1, !this._dp && this._ts && (this._start = de(xt.time - (this._ts > 0 ? e / this._ts : (this.totalDuration() - e) / -this._ts))), super.totalTime(e, t), this._forcing = 0, this) : this._tTime
         }
         addLabel(e, t) {
           return this.labels[e] = $e(this, t), this
@@ -891,7 +891,7 @@ _global.SENTRY_RELEASE = {
             r = Ye(e),
             i = this._first,
             n = S(t);
-          for (; i;) i instanceof Xt ? pe(i._targets, r) && (n ? (!Bt || i._initted && i._ts) && i.globalTime(0) <= t && i.globalTime(i.totalDuration()) > t : !t || i.isActive()) && s.push(i) : (a = i.getTweensOf(r, t)).length && s.push(...a), i = i._next;
+          for (; i;) i instanceof Xt ? ue(i._targets, r) && (n ? (!Bt || i._initted && i._ts) && i.globalTime(0) <= t && i.globalTime(i.totalDuration()) > t : !t || i.isActive()) && s.push(i) : (a = i.getTweensOf(r, t)).length && s.push(...a), i = i._next;
           return s
         }
         tweenTo(e, t) {
@@ -902,9 +902,9 @@ _global.SENTRY_RELEASE = {
               startAt: i,
               onStart: n,
               onStartParams: o,
-              immediateRender: d
+              immediateRender: c
             } = t,
-            c = Xt.to(s, he({
+            l = Xt.to(s, he({
               ease: t.ease || "none",
               lazy: !1,
               immediateRender: !1,
@@ -914,12 +914,12 @@ _global.SENTRY_RELEASE = {
               onStart: () => {
                 if (s.pause(), !a) {
                   let e = t.duration || Math.abs((r - (i && "time" in i ? i.time : s._time)) / s.timeScale());
-                  c._dur !== e && Ve(c, e, 0, 1).render(c._time, !0, !0), a = 1
+                  l._dur !== e && Ve(l, e, 0, 1).render(l._time, !0, !0), a = 1
                 }
-                n && n.apply(c, o || [])
+                n && n.apply(l, o || [])
               }
             }, t));
-          return d ? c.render(0) : c
+          return c ? l.render(0) : l
         }
         tweenFromTo(e, t, a) {
           return this.tweenTo(t, he({
@@ -933,11 +933,11 @@ _global.SENTRY_RELEASE = {
         }
         nextLabel() {
           let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : this._time;
-          return dt(this, $e(this, e))
+          return ct(this, $e(this, e))
         }
         previousLabel() {
           let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : this._time;
-          return dt(this, $e(this, e), 1)
+          return ct(this, $e(this, e), 1)
         }
         currentLabel(e) {
           return arguments.length ? this.seek(e, !0) : this.previousLabel(this._time + h)
@@ -966,65 +966,65 @@ _global.SENTRY_RELEASE = {
           let t, a, s, r = 0,
             i = this,
             o = i._last,
-            d = _;
+            c = _;
           if (arguments.length) return i.timeScale((i._repeat < 0 ? i.duration() : i.totalDuration()) / (i.reversed() ? -e : e));
           if (i._dirty) {
-            for (s = i.parent; o;) t = o._prev, o._dirty && o.totalDuration(), a = o._start, a > d && i._sort && o._ts && !i._lock ? (i._lock = 1, Pe(i, o, a - o._delay, 1)._lock = 0) : d = a, a < 0 && o._ts && (r -= a, (!s && !i._dp || s && s.smoothChildTiming) && (i._start += a / i._ts, i._time -= a, i._tTime -= a), i.shiftChildren(-a, !1, -Infinity), d = 0), o._end > r && o._ts && (r = o._end), o = t;
+            for (s = i.parent; o;) t = o._prev, o._dirty && o.totalDuration(), a = o._start, a > c && i._sort && o._ts && !i._lock ? (i._lock = 1, Pe(i, o, a - o._delay, 1)._lock = 0) : c = a, a < 0 && o._ts && (r -= a, (!s && !i._dp || s && s.smoothChildTiming) && (i._start += a / i._ts, i._time -= a, i._tTime -= a), i.shiftChildren(-a, !1, -Infinity), c = 0), o._end > r && o._ts && (r = o._end), o = t;
             Ve(i, i === n && i._time > r ? i._time : r, 1, 1), i._dirty = 0
           }
           return i._tDur
         }
         static updateRoot(e) {
-          if (n._ts && (ge(n, Ie(e, n)), m = yt.frame), yt.frame >= ae) {
-            ae += g.autoSleep || 120;
+          if (n._ts && (fe(n, Ie(e, n)), m = xt.frame), xt.frame >= ae) {
+            ae += f.autoSleep || 120;
             let e = n._first;
-            if ((!e || !e._ts) && g.autoSleep && yt._listeners.length < 2) {
+            if ((!e || !e._ts) && f.autoSleep && xt._listeners.length < 2) {
               for (; e && !e._ts;) e = e._next;
-              e || yt.sleep()
+              e || xt.sleep()
             }
           }
         }
       }
-      he(Dt.prototype, {
+      he(At.prototype, {
         _lock: 0,
         _hasPause: 0,
         _forcing: 0
       });
       let Bt, Vt, Rt = function(e, t, a, s, r, i, n) {
-          let o, d, c, l, m, p, u, g, f = new da(this._pt, e, t, 0, 1, aa, null, r),
+          let o, c, l, d, m, u, g, f, p = new ca(this._pt, e, t, 0, 1, aa, null, r),
             _ = 0,
             h = 0;
-          for (f.b = a, f.e = s, a += "", (u = ~(s += "").indexOf("random(")) && (s = it(s)), i && (g = [a, s], i(g, e, t), a = g[0], s = g[1]), d = a.match(D) || []; o = D.exec(s);) l = o[0], m = s.substring(_, o.index), c ? c = (c + 1) % 5 : "rgba(" === m.substr(-5) && (c = 1), l !== d[h++] && (p = parseFloat(d[h - 1]) || 0, f._pt = {
-            _next: f._pt,
+          for (p.b = a, p.e = s, a += "", (g = ~(s += "").indexOf("random(")) && (s = it(s)), i && (f = [a, s], i(f, e, t), a = f[0], s = f[1]), c = a.match(A) || []; o = A.exec(s);) d = o[0], m = s.substring(_, o.index), l ? l = (l + 1) % 5 : "rgba(" === m.substr(-5) && (l = 1), d !== c[h++] && (u = parseFloat(c[h - 1]) || 0, p._pt = {
+            _next: p._pt,
             p: m || 1 === h ? m : ",",
-            s: p,
-            c: "=" === l.charAt(1) ? me(p, l) - p : parseFloat(l) - p,
-            m: c && c < 4 ? Math.round : 0
-          }, _ = D.lastIndex);
-          return f.c = _ < s.length ? s.substring(_, s.length) : "", f.fp = n, (B.test(s) || u) && (f.e = 0), this._pt = f, f
+            s: u,
+            c: "=" === d.charAt(1) ? me(u, d) - u : parseFloat(d) - u,
+            m: l && l < 4 ? Math.round : 0
+          }, _ = A.lastIndex);
+          return p.c = _ < s.length ? s.substring(_, s.length) : "", p.fp = n, (B.test(s) || g) && (p.e = 0), this._pt = p, p
         },
-        Ft = function(e, t, a, s, r, i, n, o, d, c) {
+        Ft = function(e, t, a, s, r, i, n, o, c, l) {
           j(s) && (s = s(r || 0, e, i));
-          let l, m = e[t],
-            p = "get" !== a ? a : j(m) ? d ? e[t.indexOf("set") || !j(e["get" + t.substr(3)]) ? t : "get" + t.substr(3)](d) : e[t]() : m,
-            u = j(m) ? d ? Qt : Kt : Yt;
-          if (N(s) && (~s.indexOf("random(") && (s = it(s)), "=" === s.charAt(1) && (l = me(p, s) + (qe(p) || 0), (l || 0 === l) && (s = l))), !c || p !== s || Vt) return isNaN(p * s) || "" === s ? (!m && !(t in e) && G(t, s), Rt.call(this, e, t, p, s, u, o || g.stringFilter, d)) : (l = new da(this._pt, e, t, +p || 0, s - (p || 0), "boolean" == typeof m ? ta : ea, 0, u), d && (l.fp = d), n && l.modifier(n, this, e), this._pt = l)
+          let d, m = e[t],
+            u = "get" !== a ? a : j(m) ? c ? e[t.indexOf("set") || !j(e["get" + t.substr(3)]) ? t : "get" + t.substr(3)](c) : e[t]() : m,
+            g = j(m) ? c ? Qt : Kt : Yt;
+          if (N(s) && (~s.indexOf("random(") && (s = it(s)), "=" === s.charAt(1) && (d = me(u, s) + (qe(u) || 0), (d || 0 === d) && (s = d))), !l || u !== s || Vt) return isNaN(u * s) || "" === s ? (!m && !(t in e) && G(t, s), Rt.call(this, e, t, u, s, g, o || f.stringFilter, c)) : (d = new ca(this._pt, e, t, +u || 0, s - (u || 0), "boolean" == typeof m ? ta : ea, 0, g), c && (d.fp = c), n && d.modifier(n, this, e), this._pt = d)
         },
         $t = (e, t, a, s, r, i) => {
-          let n, o, d, c;
+          let n, o, c, l;
           if (ee[e] && !1 !== (n = new ee[e]).init(r, n.rawVars ? t[e] : ((e, t, a, s, r) => {
               if (j(e) && (e = Ht(e, r, t, a, s)), !C(e) || e.style && e.nodeType || z(e) || L(e)) return N(e) ? Ht(e, r, t, a, s) : e;
               let i, n = {};
               for (i in e) n[i] = Ht(e[i], r, t, a, s);
               return n
-            })(t[e], s, r, i, a), a, s, i) && (a._pt = o = new da(a._pt, r, e, 0, 1, n.render, n, 0, n.priority), a !== p))
-            for (d = a._ptLookup[a._targets.indexOf(r)], c = n._props.length; c--;) d[n._props[c]] = o;
+            })(t[e], s, r, i, a), a, s, i) && (a._pt = o = new ca(a._pt, r, e, 0, 1, n.render, n, 0, n.priority), a !== u))
+            for (c = a._ptLookup[a._targets.indexOf(r)], l = n._props.length; l--;) c[n._props[l]] = o;
           return n
         },
         Ut = (e, t, a) => {
-          let i, o, d, c, l, m, p, u, g, k, b, v, x, y = e.vars,
+          let i, o, c, l, d, m, u, g, f, v, k, b, w, x = e.vars,
             {
-              ease: w,
+              ease: y,
               startAt: N,
               immediateRender: j,
               lazy: S,
@@ -1035,22 +1035,22 @@ _global.SENTRY_RELEASE = {
               yoyoEase: L,
               keyframes: z,
               autoRevert: P
-            } = y,
+            } = x,
             O = e._dur,
-            A = e._startAt,
-            D = e._targets,
+            D = e._startAt,
+            A = e._targets,
             B = e.parent,
-            V = B && "nested" === B.data ? B.vars.targets : D,
+            V = B && "nested" === B.data ? B.vars.targets : A,
             R = "auto" === e._overwrite && !s,
             F = e.timeline;
-          if (F && (!z || !w) && (w = "none"), e._ease = It(w, f.ease), e._yEase = L ? Ct(It(!0 === L ? w : L, f.ease)) : 0, L && e._yoyo && !e._repeat && (L = e._yEase, e._yEase = e._ease, e._ease = L), e._from = !F && !!y.runBackwards, !F || z && !y.stagger) {
-            if (u = D[0] ? ne(D[0]).harness : 0, v = u && y[u.prop], i = ve(y, Q), A && (A._zTime < 0 && A.progress(1), t < 0 && E && j && !P ? A.render(-1, !0) : A.revert(E && O ? Y : X), A._lazy = 0), N) {
-              if (Ne(e._startAt = Xt.set(D, he({
+          if (F && (!z || !y) && (y = "none"), e._ease = It(y, p.ease), e._yEase = L ? Ct(It(!0 === L ? y : L, p.ease)) : 0, L && e._yoyo && !e._repeat && (L = e._yEase, e._yEase = e._ease, e._ease = L), e._from = !F && !!x.runBackwards, !F || z && !x.stagger) {
+            if (g = A[0] ? ne(A[0]).harness : 0, b = g && x[g.prop], i = be(x, Q), D && (D._zTime < 0 && D.progress(1), t < 0 && E && j && !P ? D.render(-1, !0) : D.revert(E && O ? Y : X), D._lazy = 0), N) {
+              if (Ne(e._startAt = Xt.set(A, he({
                   data: "isStart",
                   overwrite: !1,
                   parent: B,
                   immediateRender: !0,
-                  lazy: !A && M(S),
+                  lazy: !D && M(S),
                   startAt: null,
                   delay: 0,
                   onUpdate: T,
@@ -1058,27 +1058,27 @@ _global.SENTRY_RELEASE = {
                   callbackScope: I,
                   stagger: 0
                 }, N))), e._startAt._dp = 0, e._startAt._sat = e, t < 0 && (r || !j && !P) && e._startAt.revert(Y), j && O && t <= 0 && a <= 0) return void(t && (e._zTime = t))
-            } else if (E && O && !A)
-              if (t && (j = !1), d = he({
+            } else if (E && O && !D)
+              if (t && (j = !1), c = he({
                   overwrite: !1,
                   data: "isFromStart",
-                  lazy: j && !A && M(S),
+                  lazy: j && !D && M(S),
                   immediateRender: j,
                   stagger: 0,
                   parent: B
-                }, i), v && (d[u.prop] = v), Ne(e._startAt = Xt.set(D, d)), e._startAt._dp = 0, e._startAt._sat = e, t < 0 && (r ? e._startAt.revert(Y) : e._startAt.render(-1, !0)), e._zTime = t, j) {
+                }, i), b && (c[g.prop] = b), Ne(e._startAt = Xt.set(A, c)), e._startAt._dp = 0, e._startAt._sat = e, t < 0 && (r ? e._startAt.revert(Y) : e._startAt.render(-1, !0)), e._zTime = t, j) {
                 if (!t) return
               } else Ut(e._startAt, h, h);
-            for (e._pt = e._ptCache = 0, S = O && M(S) || S && !O, o = 0; o < D.length; o++) {
-              if (l = D[o], p = l._gsap || ie(D)[o]._gsap, e._ptLookup[o] = k = {}, J[p.id] && Z.length && ue(), b = V === D ? o : V.indexOf(l), u && !1 !== (g = new u).init(l, v || i, e, b, V) && (e._pt = c = new da(e._pt, l, g.name, 0, 1, g.render, g, 0, g.priority), g._props.forEach((e => {
-                  k[e] = c
-                })), g.priority && (m = 1)), !u || v)
-                for (d in i) ee[d] && (g = $t(d, i, e, b, l, V)) ? g.priority && (m = 1) : k[d] = c = Ft.call(e, l, d, "get", i[d], b, V, 0, y.stringFilter);
-              e._op && e._op[o] && e.kill(l, e._op[o]), R && e._pt && (Bt = e, n.killTweensOf(l, k, e.globalTime(t)), x = !e.parent, Bt = 0), e._pt && S && (J[p.id] = 1)
+            for (e._pt = e._ptCache = 0, S = O && M(S) || S && !O, o = 0; o < A.length; o++) {
+              if (d = A[o], u = d._gsap || ie(A)[o]._gsap, e._ptLookup[o] = v = {}, J[u.id] && Z.length && ge(), k = V === A ? o : V.indexOf(d), g && !1 !== (f = new g).init(d, b || i, e, k, V) && (e._pt = l = new ca(e._pt, d, f.name, 0, 1, f.render, f, 0, f.priority), f._props.forEach((e => {
+                  v[e] = l
+                })), f.priority && (m = 1)), !g || b)
+                for (c in i) ee[c] && (f = $t(c, i, e, k, d, V)) ? f.priority && (m = 1) : v[c] = l = Ft.call(e, d, c, "get", i[c], k, V, 0, x.stringFilter);
+              e._op && e._op[o] && e.kill(d, e._op[o]), R && e._pt && (Bt = e, n.killTweensOf(d, v, e.globalTime(t)), w = !e.parent, Bt = 0), e._pt && S && (J[u.id] = 1)
             }
             m && oa(e), e._onInit && e._onInit(e)
           }
-          e._onUpdate = T, e._initted = (!e._op || e._pt) && !x, z && t <= 0 && F.render(_, !0, !0)
+          e._onUpdate = T, e._initted = (!e._op || e._pt) && !w, z && t <= 0 && F.render(_, !0, !0)
         },
         Gt = (e, t, a, s) => {
           let r, i, n = t.ease || s || "power1.inOut";
@@ -1097,86 +1097,86 @@ _global.SENTRY_RELEASE = {
         Ht = (e, t, a, s, r) => j(e) ? e.call(t, a, s, r) : N(e) && ~e.indexOf("random(") ? it(e) : e,
         qt = re + "repeat,repeatDelay,yoyo,repeatRefresh,yoyoEase,autoRevert",
         Wt = {};
-      de(qt + ",id,stagger,delay,duration,paused,scrollTrigger", (e => Wt[e] = 1));
-      class Xt extends At {
+      ce(qt + ",id,stagger,delay,duration,paused,scrollTrigger", (e => Wt[e] = 1));
+      class Xt extends Dt {
         constructor(e, t, a, r) {
-          "number" == typeof t && (a.duration = t, t = a, a = null), super(r ? t : xe(t));
-          let i, o, d, c, l, m, p, u, {
-              duration: f,
+          "number" == typeof t && (a.duration = t, t = a, a = null), super(r ? t : we(t));
+          let i, o, c, l, d, m, u, g, {
+              duration: p,
               delay: _,
               immediateRender: h,
-              stagger: k,
-              overwrite: b,
-              keyframes: v,
-              defaults: x,
-              scrollTrigger: y,
-              yoyoEase: w
+              stagger: v,
+              overwrite: k,
+              keyframes: b,
+              defaults: w,
+              scrollTrigger: x,
+              yoyoEase: y
             } = this.vars,
             N = t.parent || n,
             j = (z(e) || L(e) ? S(e[0]) : "length" in t) ? [e] : Ye(e);
-          if (this._targets = j.length ? ie(j) : H("GSAP target " + e + " not found. https://greensock.com", !g.nullTargetWarn) || [], this._ptLookup = [], this._overwrite = b, v || k || E(f) || E(_)) {
-            if (t = this.vars, i = this.timeline = new Dt({
+          if (this._targets = j.length ? ie(j) : H("GSAP target " + e + " not found. https://greensock.com", !f.nullTargetWarn) || [], this._ptLookup = [], this._overwrite = k, b || v || E(p) || E(_)) {
+            if (t = this.vars, i = this.timeline = new At({
                 data: "nested",
-                defaults: x || {},
+                defaults: w || {},
                 targets: N && "nested" === N.data ? N.vars.targets : j
-              }), i.kill(), i.parent = i._dp = this, i._start = 0, k || E(f) || E(_)) {
-              if (c = j.length, p = k && Ze(k), C(k))
-                for (l in k) ~qt.indexOf(l) && (u || (u = {}), u[l] = k[l]);
-              for (o = 0; o < c; o++) d = ve(t, Wt), d.stagger = 0, w && (d.yoyoEase = w), u && ke(d, u), m = j[o], d.duration = +Ht(f, this, o, m, j), d.delay = (+Ht(_, this, o, m, j) || 0) - this._delay, !k && 1 === c && d.delay && (this._delay = _ = d.delay, this._start += _, d.delay = 0), i.to(m, d, p ? p(o, m, j) : 0), i._ease = Nt.none;
-              i.duration() ? f = _ = 0 : this.timeline = 0
-            } else if (v) {
-              xe(he(i.vars.defaults, {
+              }), i.kill(), i.parent = i._dp = this, i._start = 0, v || E(p) || E(_)) {
+              if (l = j.length, u = v && Ze(v), C(v))
+                for (d in v) ~qt.indexOf(d) && (g || (g = {}), g[d] = v[d]);
+              for (o = 0; o < l; o++) c = be(t, Wt), c.stagger = 0, y && (c.yoyoEase = y), g && ve(c, g), m = j[o], c.duration = +Ht(p, this, o, m, j), c.delay = (+Ht(_, this, o, m, j) || 0) - this._delay, !v && 1 === l && c.delay && (this._delay = _ = c.delay, this._start += _, c.delay = 0), i.to(m, c, u ? u(o, m, j) : 0), i._ease = Nt.none;
+              i.duration() ? p = _ = 0 : this.timeline = 0
+            } else if (b) {
+              we(he(i.vars.defaults, {
                 ease: "none"
-              })), i._ease = It(v.ease || t.ease || "none");
+              })), i._ease = It(b.ease || t.ease || "none");
               let e, a, s, r = 0;
-              if (z(v)) v.forEach((e => i.to(j, e, ">"))), i.duration();
+              if (z(b)) b.forEach((e => i.to(j, e, ">"))), i.duration();
               else {
-                for (l in d = {}, v) "ease" === l || "easeEach" === l || Gt(l, v[l], d, v.easeEach);
-                for (l in d)
-                  for (e = d[l].sort(((e, t) => e.t - t.t)), r = 0, o = 0; o < e.length; o++) a = e[o], s = {
+                for (d in c = {}, b) "ease" === d || "easeEach" === d || Gt(d, b[d], c, b.easeEach);
+                for (d in c)
+                  for (e = c[d].sort(((e, t) => e.t - t.t)), r = 0, o = 0; o < e.length; o++) a = e[o], s = {
                     ease: a.e,
-                    duration: (a.t - (o ? e[o - 1].t : 0)) / 100 * f
-                  }, s[l] = a.v, i.to(j, s, r), r += s.duration;
-                i.duration() < f && i.to({}, {
-                  duration: f - i.duration()
+                    duration: (a.t - (o ? e[o - 1].t : 0)) / 100 * p
+                  }, s[d] = a.v, i.to(j, s, r), r += s.duration;
+                i.duration() < p && i.to({}, {
+                  duration: p - i.duration()
                 })
               }
             }
-            f || this.duration(f = i.duration())
+            p || this.duration(p = i.duration())
           } else this.timeline = 0;
-          !0 !== b || s || (Bt = this, n.killTweensOf(j), Bt = 0), Pe(N, this, a), t.reversed && this.reverse(), t.paused && this.paused(!0), (h || !f && !v && this._start === le(N._time) && M(h) && Te(this) && "nested" !== N.data) && (this._tTime = -1e-8, this.render(Math.max(0, -_) || 0)), y && Oe(this, y)
+          !0 !== k || s || (Bt = this, n.killTweensOf(j), Bt = 0), Pe(N, this, a), t.reversed && this.reverse(), t.paused && this.paused(!0), (h || !p && !b && this._start === de(N._time) && M(h) && Te(this) && "nested" !== N.data) && (this._tTime = -1e-8, this.render(Math.max(0, -_) || 0)), x && Oe(this, x)
         }
         render(e, t, a) {
-          let s, i, n, o, d, c, l, m, p, u = this._time,
-            g = this._tDur,
-            f = this._dur,
+          let s, i, n, o, c, l, d, m, u, g = this._time,
+            f = this._tDur,
+            p = this._dur,
             _ = e < 0,
-            k = e > g - h && !_ ? g : e < h ? 0 : e;
-          if (f) {
-            if (k !== this._tTime || !e || a || !this._initted && this._tTime || this._startAt && this._zTime < 0 !== _) {
-              if (s = k, m = this.timeline, this._repeat) {
-                if (o = f + this._rDelay, this._repeat < -1 && _) return this.totalTime(100 * o + e, t, a);
-                if (s = le(k % o), k === g ? (n = this._repeat, s = f) : (n = ~~(k / o), n && n === k / o && (s = f, n--), s > f && (s = f)), c = this._yoyo && 1 & n, c && (p = this._yEase, s = f - s), d = Me(this._tTime, o), s === u && !a && this._initted) return this._tTime = k, this;
-                n !== d && (m && this._yEase && Mt(m, c), !this.vars.repeatRefresh || c || this._lock || (this._lock = a = 1, this.render(le(o * n), !0).invalidate()._lock = 0))
+            v = e > f - h && !_ ? f : e < h ? 0 : e;
+          if (p) {
+            if (v !== this._tTime || !e || a || !this._initted && this._tTime || this._startAt && this._zTime < 0 !== _) {
+              if (s = v, m = this.timeline, this._repeat) {
+                if (o = p + this._rDelay, this._repeat < -1 && _) return this.totalTime(100 * o + e, t, a);
+                if (s = de(v % o), v === f ? (n = this._repeat, s = p) : (n = ~~(v / o), n && n === v / o && (s = p, n--), s > p && (s = p)), l = this._yoyo && 1 & n, l && (u = this._yEase, s = p - s), c = Me(this._tTime, o), s === g && !a && this._initted) return this._tTime = v, this;
+                n !== c && (m && this._yEase && Mt(m, l), !this.vars.repeatRefresh || l || this._lock || (this._lock = a = 1, this.render(de(o * n), !0).invalidate()._lock = 0))
               }
               if (!this._initted) {
-                if (Ae(this, _ ? e : s, a, t, k)) return this._tTime = 0, this;
-                if (u !== this._time) return this;
-                if (f !== this._dur) return this.render(e, t, a)
+                if (De(this, _ ? e : s, a, t, v)) return this._tTime = 0, this;
+                if (g !== this._time) return this;
+                if (p !== this._dur) return this.render(e, t, a)
               }
-              if (this._tTime = k, this._time = s, !this._act && this._ts && (this._act = 1, this._lazy = 0), this.ratio = l = (p || this._ease)(s / f), this._from && (this.ratio = l = 1 - l), s && !u && !t && !n && (ct(this, "onStart"), this._tTime !== k)) return this;
-              for (i = this._pt; i;) i.r(l, i.d), i = i._next;
-              m && m.render(e < 0 ? e : !s && c ? -1e-8 : m._dur * m._ease(s / this._dur), t, a) || this._startAt && (this._zTime = e), this._onUpdate && !t && (_ && Se(this, e, 0, a), ct(this, "onUpdate")), this._repeat && n !== d && this.vars.onRepeat && !t && this.parent && ct(this, "onRepeat"), k !== this._tDur && k || this._tTime !== k || (_ && !this._onUpdate && Se(this, e, 0, !0), (e || !f) && (k === this._tDur && this._ts > 0 || !k && this._ts < 0) && Ne(this, 1), t || _ && !u || !(k || u || c) || (ct(this, k === g ? "onComplete" : "onReverseComplete", !0), this._prom && !(k < g && this.timeScale() > 0) && this._prom()))
+              if (this._tTime = v, this._time = s, !this._act && this._ts && (this._act = 1, this._lazy = 0), this.ratio = d = (u || this._ease)(s / p), this._from && (this.ratio = d = 1 - d), s && !g && !t && !n && (lt(this, "onStart"), this._tTime !== v)) return this;
+              for (i = this._pt; i;) i.r(d, i.d), i = i._next;
+              m && m.render(e < 0 ? e : !s && l ? -1e-8 : m._dur * m._ease(s / this._dur), t, a) || this._startAt && (this._zTime = e), this._onUpdate && !t && (_ && Se(this, e, 0, a), lt(this, "onUpdate")), this._repeat && n !== c && this.vars.onRepeat && !t && this.parent && lt(this, "onRepeat"), v !== this._tDur && v || this._tTime !== v || (_ && !this._onUpdate && Se(this, e, 0, !0), (e || !p) && (v === this._tDur && this._ts > 0 || !v && this._ts < 0) && Ne(this, 1), t || _ && !g || !(v || g || l) || (lt(this, v === f ? "onComplete" : "onReverseComplete", !0), this._prom && !(v < f && this.timeScale() > 0) && this._prom()))
             }
           } else((e, t, a, s) => {
-            let i, n, o, d = e.ratio,
-              c = t < 0 || !t && (!e._start && De(e) && (e._initted || !Be(e)) || (e._ts < 0 || e._dp._ts < 0) && !Be(e)) ? 0 : 1,
-              l = e._rDelay,
+            let i, n, o, c = e.ratio,
+              l = t < 0 || !t && (!e._start && Ae(e) && (e._initted || !Be(e)) || (e._ts < 0 || e._dp._ts < 0) && !Be(e)) ? 0 : 1,
+              d = e._rDelay,
               m = 0;
-            if (l && e._repeat && (m = He(0, e._tDur, t), n = Me(m, l), e._yoyo && 1 & n && (c = 1 - c), n !== Me(e._tTime, l) && (d = 1 - c, e.vars.repeatRefresh && e._initted && e.invalidate())), c !== d || r || s || e._zTime === h || !t && e._zTime) {
-              if (!e._initted && Ae(e, t, s, a, m)) return;
-              for (o = e._zTime, e._zTime = t || (a ? h : 0), a || (a = t && !o), e.ratio = c, e._from && (c = 1 - c), e._time = 0, e._tTime = m, i = e._pt; i;) i.r(c, i.d), i = i._next;
-              t < 0 && Se(e, t, 0, !0), e._onUpdate && !a && ct(e, "onUpdate"), m && e._repeat && !a && e.parent && ct(e, "onRepeat"), (t >= e._tDur || t < 0) && e.ratio === c && (c && Ne(e, 1), a || r || (ct(e, c ? "onComplete" : "onReverseComplete", !0), e._prom && e._prom()))
+            if (d && e._repeat && (m = He(0, e._tDur, t), n = Me(m, d), e._yoyo && 1 & n && (l = 1 - l), n !== Me(e._tTime, d) && (c = 1 - l, e.vars.repeatRefresh && e._initted && e.invalidate())), l !== c || r || s || e._zTime === h || !t && e._zTime) {
+              if (!e._initted && De(e, t, s, a, m)) return;
+              for (o = e._zTime, e._zTime = t || (a ? h : 0), a || (a = t && !o), e.ratio = l, e._from && (l = 1 - l), e._time = 0, e._tTime = m, i = e._pt; i;) i.r(l, i.d), i = i._next;
+              t < 0 && Se(e, t, 0, !0), e._onUpdate && !a && lt(e, "onUpdate"), m && e._repeat && !a && e.parent && lt(e, "onRepeat"), (t >= e._tDur || t < 0) && e.ratio === l && (l && Ne(e, 1), a || r || (lt(e, l ? "onComplete" : "onReverseComplete", !0), e._prom && e._prom()))
             } else e._zTime || (e._zTime = t)
           })(this, e, t, a);
           return this
@@ -1188,49 +1188,49 @@ _global.SENTRY_RELEASE = {
           return (!e || !this.vars.runBackwards) && (this._startAt = 0), this._pt = this._op = this._onUpdate = this._lazy = this.ratio = 0, this._ptLookup = [], this.timeline && this.timeline.invalidate(e), super.invalidate(e)
         }
         resetTo(e, t, a, s) {
-          u || yt.wake(), this._ts || this.play();
+          g || xt.wake(), this._ts || this.play();
           let r, i = Math.min(this._dur, (this._dp._time - this._start) * this._ts);
           return this._initted || Ut(this, i), r = this._ease(i / this._dur), ((e, t, a, s, r, i, n) => {
-            let o, d, c, l, m = (e._pt && e._ptCache || (e._ptCache = {}))[t];
+            let o, c, l, d, m = (e._pt && e._ptCache || (e._ptCache = {}))[t];
             if (!m)
-              for (m = e._ptCache[t] = [], c = e._ptLookup, l = e._targets.length; l--;) {
-                if (o = c[l][t], o && o.d && o.d._pt)
+              for (m = e._ptCache[t] = [], l = e._ptLookup, d = e._targets.length; d--;) {
+                if (o = l[d][t], o && o.d && o.d._pt)
                   for (o = o.d._pt; o && o.p !== t && o.fp !== t;) o = o._next;
                 if (!o) return Vt = 1, e.vars[t] = "+=0", Ut(e, n), Vt = 0, 1;
                 m.push(o)
               }
-            for (l = m.length; l--;) d = m[l], o = d._pt || d, o.s = !s && 0 !== s || r ? o.s + (s || 0) + i * o.c : s, o.c = a - o.s, d.e && (d.e = ce(a) + qe(d.e)), d.b && (d.b = o.s + qe(d.b))
-          })(this, e, t, a, s, r, i) ? this.resetTo(e, t, a, s) : (Le(this, 0), this.parent || ye(this._dp, this, "_first", "_last", this._dp._sort ? "_start" : 0), this.render(0))
+            for (d = m.length; d--;) c = m[d], o = c._pt || c, o.s = !s && 0 !== s || r ? o.s + (s || 0) + i * o.c : s, o.c = a - o.s, c.e && (c.e = le(a) + qe(c.e)), c.b && (c.b = o.s + qe(c.b))
+          })(this, e, t, a, s, r, i) ? this.resetTo(e, t, a, s) : (Le(this, 0), this.parent || xe(this._dp, this, "_first", "_last", this._dp._sort ? "_start" : 0), this.render(0))
         }
         kill(e) {
           let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "all";
-          if (!(e || t && "all" !== t)) return this._lazy = this._pt = 0, this.parent ? lt(this) : this;
+          if (!(e || t && "all" !== t)) return this._lazy = this._pt = 0, this.parent ? dt(this) : this;
           if (this.timeline) {
             let a = this.timeline.totalDuration();
-            return this.timeline.killTweensOf(e, t, Bt && !0 !== Bt.vars.overwrite)._first || lt(this), this.parent && a !== this.timeline.totalDuration() && Ve(this, this._dur * this.timeline._tDur / a, 0, 1), this
+            return this.timeline.killTweensOf(e, t, Bt && !0 !== Bt.vars.overwrite)._first || dt(this), this.parent && a !== this.timeline.totalDuration() && Ve(this, this._dur * this.timeline._tDur / a, 0, 1), this
           }
-          let a, s, r, i, n, o, d, c = this._targets,
-            l = e ? Ye(e) : c,
+          let a, s, r, i, n, o, c, l = this._targets,
+            d = e ? Ye(e) : l,
             m = this._ptLookup,
-            p = this._pt;
+            u = this._pt;
           if ((!t || "all" === t) && ((e, t) => {
               let a = e.length,
                 s = a === t.length;
               for (; s && a-- && e[a] === t[a];);
               return a < 0
-            })(c, l)) return "all" === t && (this._pt = 0), lt(this);
-          for ((a = this._op = this._op || [], "all" !== t && (N(t) && (n = {}, de(t, (e => n[e] = 1)), t = n), t = ((e, t) => {
+            })(l, d)) return "all" === t && (this._pt = 0), dt(this);
+          for ((a = this._op = this._op || [], "all" !== t && (N(t) && (n = {}, ce(t, (e => n[e] = 1)), t = n), t = ((e, t) => {
               let a, s, r, i, n = e[0] ? ne(e[0]).harness : 0,
                 o = n && n.aliases;
               if (!o) return t;
-              for (s in a = ke({}, t), o)
+              for (s in a = ve({}, t), o)
                 if (s in a)
                   for (i = o[s].split(","), r = i.length; r--;) a[i[r]] = a[s];
               return a
-            })(c, t)), d = c.length); d--;)
-            if (~l.indexOf(c[d]))
-              for (n in s = m[d], "all" === t ? (a[d] = t, i = s, r = {}) : (r = a[d] = a[d] || {}, i = t), i) o = s && s[n], o && ("kill" in o.d && !0 !== o.d.kill(n) || we(this, o, "_pt"), delete s[n]), "all" !== r && (r[n] = 1);
-          return this._initted && !this._pt && p && lt(this), this
+            })(l, t)), c = l.length); c--;)
+            if (~d.indexOf(l[c]))
+              for (n in s = m[c], "all" === t ? (a[c] = t, i = s, r = {}) : (r = a[c] = a[c] || {}, i = t), i) o = s && s[n], o && ("kill" in o.d && !0 !== o.d.kill(n) || ye(this, o, "_pt"), delete s[n]), "all" !== r && (r[n] = 1);
+          return this._initted && !this._pt && u && dt(this), this
         }
         static to(e, t) {
           return new Xt(e, t, arguments[2])
@@ -1267,9 +1267,9 @@ _global.SENTRY_RELEASE = {
         _startAt: 0,
         _op: 0,
         _onInit: 0
-      }), de("staggerTo,staggerFrom,staggerFromTo", (e => {
+      }), ce("staggerTo,staggerFrom,staggerFromTo", (e => {
         Xt[e] = function() {
-          let t = new Dt,
+          let t = new At,
             a = We.call(arguments, 0);
           return a.splice("staggerFromTo" === e ? 5 : 4, 0, 0), t[e].apply(t, a)
         }
@@ -1302,7 +1302,7 @@ _global.SENTRY_RELEASE = {
         },
         ia = function(e) {
           let t, a, s = this._pt;
-          for (; s;) a = s._next, s.p === e && !s.op || s.op === e ? we(this, s, "_pt") : s.dep || (t = 1), s = a;
+          for (; s;) a = s._next, s.p === e && !s.op || s.op === e ? ye(this, s, "_pt") : s.dep || (t = 1), s = a;
           return !t
         },
         na = (e, t, a, s) => {
@@ -1316,40 +1316,40 @@ _global.SENTRY_RELEASE = {
           }
           e._pt = s
         };
-      class da {
-        constructor(e, t, a, s, r, i, n, o, d) {
-          this.t = t, this.s = s, this.c = r, this.p = a, this.r = i || ea, this.d = n || this, this.set = o || Yt, this.pr = d || 0, this._next = e, e && (e._prev = this)
+      class ca {
+        constructor(e, t, a, s, r, i, n, o, c) {
+          this.t = t, this.s = s, this.c = r, this.p = a, this.r = i || ea, this.d = n || this, this.set = o || Yt, this.pr = c || 0, this._next = e, e && (e._prev = this)
         }
         modifier(e, t, a) {
           this.mSet = this.mSet || this.set, this.set = na, this.m = e, this.mt = a, this.tween = t
         }
       }
-      de(re + "parent,duration,ease,delay,overwrite,runBackwards,startAt,yoyo,immediateRender,repeat,repeatDelay,data,paused,reversed,lazy,callbackScope,stringFilter,id,yoyoEase,stagger,inherit,repeatRefresh,keyframes,autoRevert,scrollTrigger", (e => Q[e] = 1)), F.TweenMax = F.TweenLite = Xt, F.TimelineLite = F.TimelineMax = Dt, n = new Dt({
+      ce(re + "parent,duration,ease,delay,overwrite,runBackwards,startAt,yoyo,immediateRender,repeat,repeatDelay,data,paused,reversed,lazy,callbackScope,stringFilter,id,yoyoEase,stagger,inherit,repeatRefresh,keyframes,autoRevert,scrollTrigger", (e => Q[e] = 1)), F.TweenMax = F.TweenLite = Xt, F.TimelineLite = F.TimelineMax = At, n = new At({
         sortChildren: !1,
-        defaults: f,
+        defaults: p,
         autoRemoveChildren: !0,
         id: "root",
         smoothChildTiming: !0
-      }), g.stringFilter = xt;
-      let ca = [],
-        la = {},
+      }), f.stringFilter = wt;
+      let la = [],
+        da = {},
         ma = [],
-        pa = 0,
         ua = 0,
-        ga = e => (la[e] || ma).map((e => e())),
-        fa = () => {
+        ga = 0,
+        fa = e => (da[e] || ma).map((e => e())),
+        pa = () => {
           let e = Date.now(),
             t = [];
-          e - pa > 2 && (ga("matchMediaInit"), ca.forEach((e => {
+          e - ua > 2 && (fa("matchMediaInit"), la.forEach((e => {
             let a, s, r, i, n = e.queries,
-              d = e.conditions;
-            for (s in n) a = o.matchMedia(n[s]).matches, a && (r = 1), a !== d[s] && (d[s] = a, i = 1);
+              c = e.conditions;
+            for (s in n) a = o.matchMedia(n[s]).matches, a && (r = 1), a !== c[s] && (c[s] = a, i = 1);
             i && (e.revert(), r && t.push(e))
-          })), ga("matchMediaRevert"), t.forEach((e => e.onMatch(e))), pa = e, ga("matchMedia"))
+          })), fa("matchMediaRevert"), t.forEach((e => e.onMatch(e))), ua = e, fa("matchMedia"))
         };
       class _a {
         constructor(e, t) {
-          this.selector = t && Ke(t), this.data = [], this._r = [], this.isReverted = !1, this.id = ua++, e && this.add(e)
+          this.selector = t && Ke(t), this.data = [], this._r = [], this.isReverted = !1, this.id = ga++, e && this.add(e)
         }
         add(e, t, a) {
           j(e) && (a = t, t = e, e = j);
@@ -1383,8 +1383,8 @@ _global.SENTRY_RELEASE = {
             }))).sort(((e, t) => t.g - e.g || -1 / 0)).forEach((t => t.t.revert(e))), this.data.forEach((t => !(t instanceof Xt) && t.revert && t.revert(e))), this._r.forEach((t => t(e, this))), this.isReverted = !0
           } else this.data.forEach((e => e.kill && e.kill()));
           if (this.clear(), t) {
-            let e = ca.length;
-            for (; e--;) ca[e].id === this.id && ca.splice(e, 1)
+            let e = la.length;
+            for (; e--;) la[e].id === this.id && la.splice(e, 1)
           }
         }
         revert(e) {
@@ -1399,10 +1399,10 @@ _global.SENTRY_RELEASE = {
           C(e) || (e = {
             matches: e
           });
-          let s, r, n, d = new _a(0, a || this.scope),
-            c = d.conditions = {};
-          for (r in i && !d.selector && (d.selector = i.selector), this.contexts.push(d), t = d.add("onMatch", t), d.queries = e, e) "all" === r ? n = 1 : (s = o.matchMedia(e[r]), s && (ca.indexOf(d) < 0 && ca.push(d), (c[r] = s.matches) && (n = 1), s.addListener ? s.addListener(fa) : s.addEventListener("change", fa)));
-          return n && t(d), this
+          let s, r, n, c = new _a(0, a || this.scope),
+            l = c.conditions = {};
+          for (r in i && !c.selector && (c.selector = i.selector), this.contexts.push(c), t = c.add("onMatch", t), c.queries = e, e) "all" === r ? n = 1 : (s = o.matchMedia(e[r]), s && (la.indexOf(c) < 0 && la.push(c), (l[r] = s.matches) && (n = 1), s.addListener ? s.addListener(pa) : s.addEventListener("change", pa)));
+          return n && t(c), this
         }
         revert(e) {
           this.kill(e || {})
@@ -1411,22 +1411,22 @@ _global.SENTRY_RELEASE = {
           this.contexts.forEach((t => t.kill(e, !0)))
         }
       }
-      const ka = {
+      const va = {
         registerPlugin() {
           for (var e = arguments.length, t = new Array(e), a = 0; a < e; a++) t[a] = arguments[a];
-          t.forEach((e => pt(e)))
+          t.forEach((e => ut(e)))
         },
-        timeline: e => new Dt(e),
+        timeline: e => new At(e),
         getTweensOf: (e, t) => n.getTweensOf(e, t),
         getProperty(e, t, a, s) {
           N(e) && (e = Ye(e)[0]);
           let r = ne(e || {}).get,
-            i = a ? _e : fe;
+            i = a ? _e : pe;
           return "native" === a && (a = ""), e ? t ? i((ee[t] && ee[t].get || r)(e, t, a, s)) : (t, a, s) => i((ee[t] && ee[t].get || r)(e, t, a, s)) : e
         },
         quickSetter(e, t, a) {
           if ((e = Ye(e)).length > 1) {
-            let s = e.map((e => xa.quickSetter(e, t, a))),
+            let s = e.map((e => wa.quickSetter(e, t, a))),
               r = s.length;
             return e => {
               let t = r;
@@ -1439,12 +1439,12 @@ _global.SENTRY_RELEASE = {
             i = r.harness && (r.harness.aliases || {})[t] || t,
             n = s ? t => {
               let r = new s;
-              p._pt = 0, r.init(e, a ? t + a : t, p, 0, [e]), r.render(1, r), p._pt && sa(1, p)
+              u._pt = 0, r.init(e, a ? t + a : t, u, 0, [e]), r.render(1, r), u._pt && sa(1, u)
             } : r.set(e, i);
           return s ? n : t => n(e, i, a ? t + a : t, r, 1)
         },
         quickTo(e, t, a) {
-          let s = xa.to(e, ke({
+          let s = wa.to(e, ve({
               [t]: "+=0.1",
               paused: !0
             }, a || {})),
@@ -1452,8 +1452,8 @@ _global.SENTRY_RELEASE = {
           return r.tween = s, r
         },
         isTweening: e => n.getTweensOf(e, !0).length > 0,
-        defaults: e => (e && e.ease && (e.ease = It(e.ease, f.ease)), be(f, e || {})),
-        config: e => be(g, e || {}),
+        defaults: e => (e && e.ease && (e.ease = It(e.ease, p.ease)), ke(p, e || {})),
+        config: e => ke(f, e || {}),
         registerEffect(e) {
           let {
             name: t,
@@ -1462,7 +1462,7 @@ _global.SENTRY_RELEASE = {
             defaults: r,
             extendTimeline: i
           } = e;
-          (s || "").split(",").forEach((e => e && !ee[e] && !F[e] && H(t + " effect requires " + e + " plugin."))), te[t] = (e, t, s) => a(Ye(e), he(t || {}, r), s), i && (Dt.prototype[t] = function(e, a, s) {
+          (s || "").split(",").forEach((e => e && !ee[e] && !F[e] && H(t + " effect requires " + e + " plugin."))), te[t] = (e, t, s) => a(Ye(e), he(t || {}, r), s), i && (At.prototype[t] = function(e, a, s) {
             return this.add(te[t](e, C(a) ? a : (s = a) && {}, this), s)
           })
         },
@@ -1476,23 +1476,23 @@ _global.SENTRY_RELEASE = {
         exportRoot() {
           let e, t, a = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
             s = arguments.length > 1 ? arguments[1] : void 0,
-            r = new Dt(a);
+            r = new At(a);
           for (r.smoothChildTiming = M(a.smoothChildTiming), n.remove(r), r._dp = 0, r._time = r._tTime = n._time, e = n._first; e;) t = e._next, !s && !e._dur && e instanceof Xt && e.vars.onComplete === e._targets[0] || Pe(r, e, e._start - e._delay), e = t;
           return Pe(n, r, 0), r
         },
         context: (e, t) => e ? new _a(e, t) : i,
         matchMedia: e => new ha(e),
-        matchMediaRefresh: () => ca.forEach((e => {
+        matchMediaRefresh: () => la.forEach((e => {
           let t, a, s = e.conditions;
           for (a in s) s[a] && (s[a] = !1, t = 1);
           t && e.revert()
-        })) || fa(),
+        })) || pa(),
         addEventListener(e, t) {
-          let a = la[e] || (la[e] = []);
+          let a = da[e] || (da[e] = []);
           ~a.indexOf(t) || a.push(t)
         },
         removeEventListener(e, t) {
-          let a = la[e],
+          let a = da[e],
             s = a && a.indexOf(t);
           s >= 0 && a.splice(s, 1)
         },
@@ -1519,49 +1519,49 @@ _global.SENTRY_RELEASE = {
         },
         install: U,
         effects: te,
-        ticker: yt,
-        updateRoot: Dt.updateRoot,
+        ticker: xt,
+        updateRoot: At.updateRoot,
         plugins: ee,
         globalTimeline: n,
         core: {
-          PropTween: da,
+          PropTween: ca,
           globals: q,
           Tween: Xt,
-          Timeline: Dt,
-          Animation: At,
+          Timeline: At,
+          Animation: Dt,
           getCache: ne,
-          _removeLinkedListItem: we,
+          _removeLinkedListItem: ye,
           reverting: () => r,
           context: e => (e && i && (i.data.push(e), e._ctx = i), i),
           suppressOverwrites: e => s = e
         }
       };
-      de("to,from,fromTo,delayedCall,set,killTweensOf", (e => ka[e] = Xt[e])), yt.add(Dt.updateRoot), p = ka.to({}, {
+      ce("to,from,fromTo,delayedCall,set,killTweensOf", (e => va[e] = Xt[e])), xt.add(At.updateRoot), u = va.to({}, {
         duration: 0
       });
-      let ba = (e, t) => {
+      let ka = (e, t) => {
           let a = e._pt;
           for (; a && a.p !== t && a.op !== t && a.fp !== t;) a = a._next;
           return a
         },
-        va = (e, t) => ({
+        ba = (e, t) => ({
           name: e,
           rawVars: 1,
           init(e, a, s) {
             s._onInit = e => {
               let s, r;
-              if (N(a) && (s = {}, de(a, (e => s[e] = 1)), a = s), t) {
+              if (N(a) && (s = {}, ce(a, (e => s[e] = 1)), a = s), t) {
                 for (r in s = {}, a) s[r] = t(a[r]);
                 a = s
               }((e, t) => {
                 let a, s, r, i = e._targets;
                 for (a in t)
-                  for (s = i.length; s--;) r = e._ptLookup[s][a], r && (r = r.d) && (r._pt && (r = ba(r, a)), r && r.modifier && r.modifier(t[a], e, i[s], a))
+                  for (s = i.length; s--;) r = e._ptLookup[s][a], r && (r = r.d) && (r._pt && (r = ka(r, a)), r && r.modifier && r.modifier(t[a], e, i[s], a))
               })(e, a)
             }
           }
         });
-      const xa = ka.registerPlugin({
+      const wa = va.registerPlugin({
         name: "attr",
         init(e, t, a, s, r) {
           let i, n, o;
@@ -1577,11 +1577,11 @@ _global.SENTRY_RELEASE = {
           let a = t.length;
           for (; a--;) this.add(e, a, e[a] || 0, t[a], 0, 0, 0, 0, 0, 1)
         }
-      }, va("roundProps", Je), va("modifiers"), va("snap", et)) || ka;
-      Xt.version = Dt.version = xa.version = "3.12.2", l = 1, I() && wt();
+      }, ba("roundProps", Je), ba("modifiers"), ba("snap", et)) || va;
+      Xt.version = At.version = wa.version = "3.12.2", d = 1, I() && yt();
       const {
-        Power0: ya,
-        Power1: wa,
+        Power0: xa,
+        Power1: ya,
         Power2: Na,
         Power3: ja,
         Power4: Sa,
@@ -1594,8 +1594,8 @@ _global.SENTRY_RELEASE = {
         Elastic: za,
         Back: Pa,
         SteppedEase: Oa,
-        Bounce: Aa,
-        Sine: Da,
+        Bounce: Da,
+        Sine: Aa,
         Expo: Ba,
         Circ: Va
       } = Nt;
@@ -1619,34 +1619,34 @@ _global.SENTRY_RELEASE = {
           t.set(t.t, t.p, ~~(a + (a < 0 ? -.5 : .5)) + t.u, t)
         },
         os = (e, t) => t.set(t.t, t.p, e ? t.e : t.b, t),
-        ds = (e, t) => t.set(t.t, t.p, 1 !== e ? t.b : t.e, t),
-        cs = (e, t, a) => e.style[t] = a,
-        ls = (e, t, a) => e.style.setProperty(t, a),
+        cs = (e, t) => t.set(t.t, t.p, 1 !== e ? t.b : t.e, t),
+        ls = (e, t, a) => e.style[t] = a,
+        ds = (e, t, a) => e.style.setProperty(t, a),
         ms = (e, t, a) => e._gsap[t] = a,
-        ps = (e, t, a) => e._gsap.scaleX = e._gsap.scaleY = a,
-        us = (e, t, a, s, r) => {
+        us = (e, t, a) => e._gsap.scaleX = e._gsap.scaleY = a,
+        gs = (e, t, a, s, r) => {
           let i = e._gsap;
           i.scaleX = i.scaleY = a, i.renderTransform(r, i)
         },
-        gs = (e, t, a, s, r) => {
+        fs = (e, t, a, s, r) => {
           let i = e._gsap;
           i[t] = a, i.renderTransform(r, i)
         },
-        fs = "transform",
-        _s = fs + "Origin",
+        ps = "transform",
+        _s = ps + "Origin",
         hs = function(e, t) {
           let a = this.target,
             s = a.style;
           if (e in Ya && s) {
             if (this.tfm = this.tfm || {}, "transform" === e) return as.transform.split(",").forEach((e => hs.call(this, e, t)));
-            if (~(e = as[e] || e).indexOf(",") ? e.split(",").forEach((e => this.tfm[e] = Os(a, e))) : this.tfm[e] = a._gsap.x ? a._gsap[e] : Os(a, e), this.props.indexOf(fs) >= 0) return;
-            a._gsap.svg && (this.svgo = a.getAttribute("data-svg-origin"), this.props.push(_s, t, "")), e = fs
+            if (~(e = as[e] || e).indexOf(",") ? e.split(",").forEach((e => this.tfm[e] = Os(a, e))) : this.tfm[e] = a._gsap.x ? a._gsap[e] : Os(a, e), this.props.indexOf(ps) >= 0) return;
+            a._gsap.svg && (this.svgo = a.getAttribute("data-svg-origin"), this.props.push(_s, t, "")), e = ps
           }(s || t) && this.props.push(e, t, s[e])
         },
-        ks = e => {
+        vs = e => {
           e.translate && (e.removeProperty("translate"), e.removeProperty("scale"), e.removeProperty("rotate"))
         },
-        bs = function() {
+        ks = function() {
           let e, t, a = this.props,
             s = this.target,
             r = s.style,
@@ -1654,41 +1654,41 @@ _global.SENTRY_RELEASE = {
           for (e = 0; e < a.length; e += 3) a[e + 1] ? s[a[e]] = a[e + 2] : a[e + 2] ? r[a[e]] = a[e + 2] : r.removeProperty("--" === a[e].substr(0, 2) ? a[e] : a[e].replace(Ja, "-$1").toLowerCase());
           if (this.tfm) {
             for (t in this.tfm) i[t] = this.tfm[t];
-            i.svg && (i.renderTransform(), s.setAttribute("data-svg-origin", this.svgo || "")), e = Wa(), e && e.isStart || r[fs] || (ks(r), i.uncache = 1)
+            i.svg && (i.renderTransform(), s.setAttribute("data-svg-origin", this.svgo || "")), e = Wa(), e && e.isStart || r[ps] || (vs(r), i.uncache = 1)
           }
         },
-        vs = (e, t) => {
+        bs = (e, t) => {
           let a = {
             target: e,
             props: [],
-            revert: bs,
+            revert: ks,
             save: hs
           };
-          return e._gsap || xa.core.getCache(e), t && t.split(",").forEach((e => a.save(e))), a
+          return e._gsap || wa.core.getCache(e), t && t.split(",").forEach((e => a.save(e))), a
         },
-        xs = (e, t) => {
+        ws = (e, t) => {
           let a = Fa.createElementNS ? Fa.createElementNS((t || "http://www.w3.org/1999/xhtml").replace(/^https/, "http"), e) : Fa.createElement(e);
           return a.style ? a : Fa.createElement(e)
         },
-        ys = (e, t, a) => {
+        xs = (e, t, a) => {
           let s = getComputedStyle(e);
-          return s[t] || s.getPropertyValue(t.replace(Ja, "-$1").toLowerCase()) || s.getPropertyValue(t) || !a && ys(e, Ns(t) || t, 1) || ""
+          return s[t] || s.getPropertyValue(t.replace(Ja, "-$1").toLowerCase()) || s.getPropertyValue(t) || !a && xs(e, Ns(t) || t, 1) || ""
         },
-        ws = "O,Moz,ms,Ms,Webkit".split(","),
+        ys = "O,Moz,ms,Ms,Webkit".split(","),
         Ns = (e, t, a) => {
           let s = (t || Ga).style,
             r = 5;
           if (e in s && !a) return e;
-          for (e = e.charAt(0).toUpperCase() + e.substr(1); r-- && !(ws[r] + e in s););
-          return r < 0 ? null : (3 === r ? "ms" : r >= 0 ? ws[r] : "") + e
+          for (e = e.charAt(0).toUpperCase() + e.substr(1); r-- && !(ys[r] + e in s););
+          return r < 0 ? null : (3 === r ? "ms" : r >= 0 ? ys[r] : "") + e
         },
         js = () => {
-          "undefined" != typeof window && window.document && (Ra = window, Fa = Ra.document, $a = Fa.documentElement, Ga = xs("div") || {
+          "undefined" != typeof window && window.document && (Ra = window, Fa = Ra.document, $a = Fa.documentElement, Ga = ws("div") || {
             style: {}
-          }, Ha = xs("div"), fs = Ns(fs), _s = fs + "Origin", Ga.style.cssText = "border-width:0;line-height:0;position:absolute;padding:0", Xa = !!Ns("perspective"), Wa = xa.core.reverting, Ua = 1)
+          }, Ha = ws("div"), ps = Ns(ps), _s = ps + "Origin", Ga.style.cssText = "border-width:0;line-height:0;position:absolute;padding:0", Xa = !!Ns("perspective"), Wa = wa.core.reverting, Ua = 1)
         },
         Ss = function(e) {
-          let t, a = xs("svg", this.ownerSVGElement && this.ownerSVGElement.getAttribute("xmlns") || "http://www.w3.org/2000/svg"),
+          let t, a = ws("svg", this.ownerSVGElement && this.ownerSVGElement.getAttribute("xmlns") || "http://www.w3.org/2000/svg"),
             s = this.parentNode,
             r = this.nextSibling,
             i = this.style.cssText;
@@ -1720,11 +1720,11 @@ _global.SENTRY_RELEASE = {
         Is = (e, t) => {
           if (t) {
             let a = e.style;
-            t in Ya && t !== _s && (t = fs), a.removeProperty ? ("ms" !== t.substr(0, 2) && "webkit" !== t.substr(0, 6) || (t = "-" + t), a.removeProperty(t.replace(Ja, "-$1").toLowerCase())) : a.removeAttribute(t)
+            t in Ya && t !== _s && (t = ps), a.removeProperty ? ("ms" !== t.substr(0, 2) && "webkit" !== t.substr(0, 6) || (t = "-" + t), a.removeProperty(t.replace(Ja, "-$1").toLowerCase())) : a.removeAttribute(t)
           }
         },
         Es = (e, t, a, s, r, i) => {
-          let n = new da(e._pt, t, a, 0, 1, i ? ds : os);
+          let n = new ca(e._pt, t, a, 0, 1, i ? cs : os);
           return e._pt = n, n.b = s, n.e = r, e._props.push(a), n
         },
         Ls = {
@@ -1737,43 +1737,43 @@ _global.SENTRY_RELEASE = {
           flex: 1
         },
         Ps = (e, t, a, s) => {
-          let r, i, n, o, d = parseFloat(a) || 0,
-            c = (a + "").trim().substr((d + "").length) || "px",
-            l = Ga.style,
+          let r, i, n, o, c = parseFloat(a) || 0,
+            l = (a + "").trim().substr((c + "").length) || "px",
+            d = Ga.style,
             m = es.test(t),
-            p = "svg" === e.tagName.toLowerCase(),
-            u = (p ? "client" : "offset") + (m ? "Width" : "Height"),
-            g = 100,
-            f = "px" === s,
+            u = "svg" === e.tagName.toLowerCase(),
+            g = (u ? "client" : "offset") + (m ? "Width" : "Height"),
+            f = 100,
+            p = "px" === s,
             _ = "%" === s;
-          return s === c || !d || Ls[s] || Ls[c] ? d : ("px" !== c && !f && (d = Ps(e, t, a, "px")), o = e.getCTM && Ms(e), !_ && "%" !== c || !Ya[t] && !~t.indexOf("adius") ? (l[m ? "width" : "height"] = g + (f ? c : s), i = ~t.indexOf("adius") || "em" === s && e.appendChild && !p ? e : e.parentNode, o && (i = (e.ownerSVGElement || {}).parentNode), i && i !== Fa && i.appendChild || (i = Fa.body), n = i._gsap, n && _ && n.width && m && n.time === yt.time && !n.uncache ? ce(d / n.width * g) : ((_ || "%" === c) && !zs[ys(i, "display")] && (l.position = ys(e, "position")), i === e && (l.position = "static"), i.appendChild(Ga), r = Ga[u], i.removeChild(Ga), l.position = "absolute", m && _ && (n = ne(i), n.time = yt.time, n.width = i[u]), ce(f ? r * d / g : r && d ? g / r * d : 0))) : (r = o ? e.getBBox()[m ? "width" : "height"] : e[u], ce(_ ? d / r * g : d / 100 * r)))
+          return s === l || !c || Ls[s] || Ls[l] ? c : ("px" !== l && !p && (c = Ps(e, t, a, "px")), o = e.getCTM && Ms(e), !_ && "%" !== l || !Ya[t] && !~t.indexOf("adius") ? (d[m ? "width" : "height"] = f + (p ? l : s), i = ~t.indexOf("adius") || "em" === s && e.appendChild && !u ? e : e.parentNode, o && (i = (e.ownerSVGElement || {}).parentNode), i && i !== Fa && i.appendChild || (i = Fa.body), n = i._gsap, n && _ && n.width && m && n.time === xt.time && !n.uncache ? le(c / n.width * f) : ((_ || "%" === l) && !zs[xs(i, "display")] && (d.position = xs(e, "position")), i === e && (d.position = "static"), i.appendChild(Ga), r = Ga[g], i.removeChild(Ga), d.position = "absolute", m && _ && (n = ne(i), n.time = xt.time, n.width = i[g]), le(p ? r * c / f : r && c ? f / r * c : 0))) : (r = o ? e.getBBox()[m ? "width" : "height"] : e[g], le(_ ? c / r * f : c / 100 * r)))
         },
         Os = (e, t, a, s) => {
           let r;
-          return Ua || js(), t in as && "transform" !== t && ~(t = as[t]).indexOf(",") && (t = t.split(",")[0]), Ya[t] && "transform" !== t ? (r = Ws(e, s), r = "transformOrigin" !== t ? r[t] : r.svg ? r.origin : Xs(ys(e, _s)) + " " + r.zOrigin + "px") : (r = e.style[t], (!r || "auto" === r || s || ~(r + "").indexOf("calc(")) && (r = Rs[t] && Rs[t](e, t, a) || ys(e, t) || oe(e, t) || ("opacity" === t ? 1 : 0))), a && !~(r + "").trim().indexOf(" ") ? Ps(e, t, r, a) + a : r
+          return Ua || js(), t in as && "transform" !== t && ~(t = as[t]).indexOf(",") && (t = t.split(",")[0]), Ya[t] && "transform" !== t ? (r = Ws(e, s), r = "transformOrigin" !== t ? r[t] : r.svg ? r.origin : Xs(xs(e, _s)) + " " + r.zOrigin + "px") : (r = e.style[t], (!r || "auto" === r || s || ~(r + "").indexOf("calc(")) && (r = Rs[t] && Rs[t](e, t, a) || xs(e, t) || oe(e, t) || ("opacity" === t ? 1 : 0))), a && !~(r + "").trim().indexOf(" ") ? Ps(e, t, r, a) + a : r
         },
-        As = function(e, t, a, s) {
+        Ds = function(e, t, a, s) {
           if (!a || "none" === a) {
             let s = Ns(t, e, 1),
-              r = s && ys(e, s, 1);
-            r && r !== a ? (t = s, a = r) : "borderColor" === t && (a = ys(e, "borderTopColor"))
+              r = s && xs(e, s, 1);
+            r && r !== a ? (t = s, a = r) : "borderColor" === t && (a = xs(e, "borderTopColor"))
           }
-          let r, i, n, o, d, c, l, m, p, u, f, _, h = new da(this._pt, e.style, t, 0, 1, aa),
-            k = 0,
-            b = 0;
-          if (h.b = a, h.e = s, a += "", "auto" == (s += "") && (e.style[t] = s, s = ys(e, t) || s, e.style[t] = a), r = [a, s], xt(r), s = r[1], n = (a = r[0]).match(A) || [], _ = s.match(A) || [], _.length) {
-            for (; i = A.exec(s);) l = i[0], p = s.substring(k, i.index), d ? d = (d + 1) % 5 : "rgba(" !== p.substr(-5) && "hsla(" !== p.substr(-5) || (d = 1), l !== (c = n[b++] || "") && (o = parseFloat(c) || 0, f = c.substr((o + "").length), "=" === l.charAt(1) && (l = me(o, l) + f), m = parseFloat(l), u = l.substr((m + "").length), k = A.lastIndex - u.length, u || (u = u || g.units[t] || f, k === s.length && (s += u, h.e += u)), f !== u && (o = Ps(e, t, c, u) || 0), h._pt = {
+          let r, i, n, o, c, l, d, m, u, g, p, _, h = new ca(this._pt, e.style, t, 0, 1, aa),
+            v = 0,
+            k = 0;
+          if (h.b = a, h.e = s, a += "", "auto" == (s += "") && (e.style[t] = s, s = xs(e, t) || s, e.style[t] = a), r = [a, s], wt(r), s = r[1], n = (a = r[0]).match(D) || [], _ = s.match(D) || [], _.length) {
+            for (; i = D.exec(s);) d = i[0], u = s.substring(v, i.index), c ? c = (c + 1) % 5 : "rgba(" !== u.substr(-5) && "hsla(" !== u.substr(-5) || (c = 1), d !== (l = n[k++] || "") && (o = parseFloat(l) || 0, p = l.substr((o + "").length), "=" === d.charAt(1) && (d = me(o, d) + p), m = parseFloat(d), g = d.substr((m + "").length), v = D.lastIndex - g.length, g || (g = g || f.units[t] || p, v === s.length && (s += g, h.e += g)), p !== g && (o = Ps(e, t, l, g) || 0), h._pt = {
               _next: h._pt,
-              p: p || 1 === b ? p : ",",
+              p: u || 1 === k ? u : ",",
               s: o,
               c: m - o,
-              m: d && d < 4 || "zIndex" === t ? Math.round : 0
+              m: c && c < 4 || "zIndex" === t ? Math.round : 0
             });
-            h.c = k < s.length ? s.substring(k, s.length) : ""
-          } else h.r = "display" === t && "none" === s ? ds : os;
+            h.c = v < s.length ? s.substring(v, s.length) : ""
+          } else h.r = "display" === t && "none" === s ? cs : os;
           return B.test(s) && (h.e = 0), this._pt = h, h
         },
-        Ds = {
+        As = {
           top: "0%",
           bottom: "100%",
           left: "0%",
@@ -1784,7 +1784,7 @@ _global.SENTRY_RELEASE = {
           let t = e.split(" "),
             a = t[0],
             s = t[1] || "50%";
-          return "top" !== a && "bottom" !== a && "left" !== s && "right" !== s || (e = a, a = s, s = e), t[0] = Ds[a] || a, t[1] = Ds[s] || s, t.join(" ")
+          return "top" !== a && "bottom" !== a && "left" !== s && "right" !== s || (e = a, a = s, s = e), t[0] = As[a] || a, t[1] = As[s] || s, t.join(" ")
         },
         Vs = (e, t) => {
           if (t.tween && t.tween._time === t.tween._dur) {
@@ -1794,14 +1794,14 @@ _global.SENTRY_RELEASE = {
               o = r._gsap;
             if ("all" === n || !0 === n) i.cssText = "", a = 1;
             else
-              for (n = n.split(","), s = n.length; --s > -1;) e = n[s], Ya[e] && (a = 1, e = "transformOrigin" === e ? _s : fs), Is(r, e);
-            a && (Is(r, fs), o && (o.svg && r.removeAttribute("transform"), Ws(r, 1), o.uncache = 1, ks(i)))
+              for (n = n.split(","), s = n.length; --s > -1;) e = n[s], Ya[e] && (a = 1, e = "transformOrigin" === e ? _s : ps), Is(r, e);
+            a && (Is(r, ps), o && (o.svg && r.removeAttribute("transform"), Ws(r, 1), o.uncache = 1, vs(i)))
           }
         },
         Rs = {
           clearProps(e, t, a, s, r) {
             if ("isFromStart" !== r.data) {
-              let i = e._pt = new da(e._pt, t, a, 0, 0, Vs);
+              let i = e._pt = new ca(e._pt, t, a, 0, 0, Vs);
               return i.u = s, i.pr = -10, i.tween = r, e._props.push(a), 1
             }
           }
@@ -1810,48 +1810,48 @@ _global.SENTRY_RELEASE = {
         $s = {},
         Us = e => "matrix(1, 0, 0, 1, 0, 0)" === e || "none" === e || !e,
         Gs = e => {
-          let t = ys(e, fs);
-          return Us(t) ? Fs : t.substr(7).match(O).map(ce)
+          let t = xs(e, ps);
+          return Us(t) ? Fs : t.substr(7).match(O).map(le)
         },
         Hs = (e, t) => {
           let a, s, r, i, n = e._gsap || ne(e),
             o = e.style,
-            d = Gs(e);
-          return n.svg && e.getAttribute("transform") ? (r = e.transform.baseVal.consolidate().matrix, d = [r.a, r.b, r.c, r.d, r.e, r.f], "1,0,0,1,0,0" === d.join(",") ? Fs : d) : (d !== Fs || e.offsetParent || e === $a || n.svg || (r = o.display, o.display = "block", a = e.parentNode, a && e.offsetParent || (i = 1, s = e.nextElementSibling, $a.appendChild(e)), d = Gs(e), r ? o.display = r : Is(e, "display"), i && (s ? a.insertBefore(e, s) : a ? a.appendChild(e) : $a.removeChild(e))), t && d.length > 6 ? [d[0], d[1], d[4], d[5], d[12], d[13]] : d)
+            c = Gs(e);
+          return n.svg && e.getAttribute("transform") ? (r = e.transform.baseVal.consolidate().matrix, c = [r.a, r.b, r.c, r.d, r.e, r.f], "1,0,0,1,0,0" === c.join(",") ? Fs : c) : (c !== Fs || e.offsetParent || e === $a || n.svg || (r = o.display, o.display = "block", a = e.parentNode, a && e.offsetParent || (i = 1, s = e.nextElementSibling, $a.appendChild(e)), c = Gs(e), r ? o.display = r : Is(e, "display"), i && (s ? a.insertBefore(e, s) : a ? a.appendChild(e) : $a.removeChild(e))), t && c.length > 6 ? [c[0], c[1], c[4], c[5], c[12], c[13]] : c)
         },
         qs = (e, t, a, s, r, i) => {
-          let n, o, d, c, l = e._gsap,
+          let n, o, c, l, d = e._gsap,
             m = r || Hs(e, !0),
-            p = l.xOrigin || 0,
-            u = l.yOrigin || 0,
-            g = l.xOffset || 0,
-            f = l.yOffset || 0,
+            u = d.xOrigin || 0,
+            g = d.yOrigin || 0,
+            f = d.xOffset || 0,
+            p = d.yOffset || 0,
             _ = m[0],
             h = m[1],
-            k = m[2],
-            b = m[3],
-            v = m[4],
-            x = m[5],
-            y = t.split(" "),
-            w = parseFloat(y[0]) || 0,
-            N = parseFloat(y[1]) || 0;
-          a ? m !== Fs && (o = _ * b - h * k) && (d = w * (b / o) + N * (-k / o) + (k * x - b * v) / o, c = w * (-h / o) + N * (_ / o) - (_ * x - h * v) / o, w = d, N = c) : (n = Cs(e), w = n.x + (~y[0].indexOf("%") ? w / 100 * n.width : w), N = n.y + (~(y[1] || y[0]).indexOf("%") ? N / 100 * n.height : N)), s || !1 !== s && l.smooth ? (v = w - p, x = N - u, l.xOffset = g + (v * _ + x * k) - v, l.yOffset = f + (v * h + x * b) - x) : l.xOffset = l.yOffset = 0, l.xOrigin = w, l.yOrigin = N, l.smooth = !!s, l.origin = t, l.originIsAbsolute = !!a, e.style[_s] = "0px 0px", i && (Es(i, l, "xOrigin", p, w), Es(i, l, "yOrigin", u, N), Es(i, l, "xOffset", g, l.xOffset), Es(i, l, "yOffset", f, l.yOffset)), e.setAttribute("data-svg-origin", w + " " + N)
+            v = m[2],
+            k = m[3],
+            b = m[4],
+            w = m[5],
+            x = t.split(" "),
+            y = parseFloat(x[0]) || 0,
+            N = parseFloat(x[1]) || 0;
+          a ? m !== Fs && (o = _ * k - h * v) && (c = y * (k / o) + N * (-v / o) + (v * w - k * b) / o, l = y * (-h / o) + N * (_ / o) - (_ * w - h * b) / o, y = c, N = l) : (n = Cs(e), y = n.x + (~x[0].indexOf("%") ? y / 100 * n.width : y), N = n.y + (~(x[1] || x[0]).indexOf("%") ? N / 100 * n.height : N)), s || !1 !== s && d.smooth ? (b = y - u, w = N - g, d.xOffset = f + (b * _ + w * v) - b, d.yOffset = p + (b * h + w * k) - w) : d.xOffset = d.yOffset = 0, d.xOrigin = y, d.yOrigin = N, d.smooth = !!s, d.origin = t, d.originIsAbsolute = !!a, e.style[_s] = "0px 0px", i && (Es(i, d, "xOrigin", u, y), Es(i, d, "yOrigin", g, N), Es(i, d, "xOffset", f, d.xOffset), Es(i, d, "yOffset", p, d.yOffset)), e.setAttribute("data-svg-origin", y + " " + N)
         },
         Ws = (e, t) => {
           let a = e._gsap || new Ot(e);
           if ("x" in a && !t && !a.uncache) return a;
-          let s, r, i, n, o, d, c, l, m, p, u, f, _, h, k, b, v, x, y, w, N, j, S, T, C, M, I, E, L, z, P, O, A = e.style,
-            D = a.scaleX < 0,
+          let s, r, i, n, o, c, l, d, m, u, g, p, _, h, v, k, b, w, x, y, N, j, S, T, C, M, I, E, L, z, P, O, D = e.style,
+            A = a.scaleX < 0,
             B = "px",
             V = "deg",
             R = getComputedStyle(e),
-            F = ys(e, _s) || "0";
-          return s = r = i = d = c = l = m = p = u = 0, n = o = 1, a.svg = !(!e.getCTM || !Ms(e)), R.translate && ("none" === R.translate && "none" === R.scale && "none" === R.rotate || (A[fs] = ("none" !== R.translate ? "translate3d(" + (R.translate + " 0 0").split(" ").slice(0, 3).join(", ") + ") " : "") + ("none" !== R.rotate ? "rotate(" + R.rotate + ") " : "") + ("none" !== R.scale ? "scale(" + R.scale.split(" ").join(",") + ") " : "") + ("none" !== R[fs] ? R[fs] : "")), A.scale = A.rotate = A.translate = "none"), h = Hs(e, a.svg), a.svg && (a.uncache ? (C = e.getBBox(), F = a.xOrigin - C.x + "px " + (a.yOrigin - C.y) + "px", T = "") : T = !t && e.getAttribute("data-svg-origin"), qs(e, T || F, !!T || a.originIsAbsolute, !1 !== a.smooth, h)), f = a.xOrigin || 0, _ = a.yOrigin || 0, h !== Fs && (x = h[0], y = h[1], w = h[2], N = h[3], s = j = h[4], r = S = h[5], 6 === h.length ? (n = Math.sqrt(x * x + y * y), o = Math.sqrt(N * N + w * w), d = x || y ? Za(y, x) * Ka : 0, m = w || N ? Za(w, N) * Ka + d : 0, m && (o *= Math.abs(Math.cos(m * Qa))), a.svg && (s -= f - (f * x + _ * w), r -= _ - (f * y + _ * N))) : (O = h[6], z = h[7], I = h[8], E = h[9], L = h[10], P = h[11], s = h[12], r = h[13], i = h[14], k = Za(O, L), c = k * Ka, k && (b = Math.cos(-k), v = Math.sin(-k), T = j * b + I * v, C = S * b + E * v, M = O * b + L * v, I = j * -v + I * b, E = S * -v + E * b, L = O * -v + L * b, P = z * -v + P * b, j = T, S = C, O = M), k = Za(-w, L), l = k * Ka, k && (b = Math.cos(-k), v = Math.sin(-k), T = x * b - I * v, C = y * b - E * v, M = w * b - L * v, P = N * v + P * b, x = T, y = C, w = M), k = Za(y, x), d = k * Ka, k && (b = Math.cos(k), v = Math.sin(k), T = x * b + y * v, C = j * b + S * v, y = y * b - x * v, S = S * b - j * v, x = T, j = C), c && Math.abs(c) + Math.abs(d) > 359.9 && (c = d = 0, l = 180 - l), n = ce(Math.sqrt(x * x + y * y + w * w)), o = ce(Math.sqrt(S * S + O * O)), k = Za(j, S), m = Math.abs(k) > 2e-4 ? k * Ka : 0, u = P ? 1 / (P < 0 ? -P : P) : 0), a.svg && (T = e.getAttribute("transform"), a.forceCSS = e.setAttribute("transform", "") || !Us(ys(e, fs)), T && e.setAttribute("transform", T))), Math.abs(m) > 90 && Math.abs(m) < 270 && (D ? (n *= -1, m += d <= 0 ? 180 : -180, d += d <= 0 ? 180 : -180) : (o *= -1, m += m <= 0 ? 180 : -180)), t = t || a.uncache, a.x = s - ((a.xPercent = s && (!t && a.xPercent || (Math.round(e.offsetWidth / 2) === Math.round(-s) ? -50 : 0))) ? e.offsetWidth * a.xPercent / 100 : 0) + B, a.y = r - ((a.yPercent = r && (!t && a.yPercent || (Math.round(e.offsetHeight / 2) === Math.round(-r) ? -50 : 0))) ? e.offsetHeight * a.yPercent / 100 : 0) + B, a.z = i + B, a.scaleX = ce(n), a.scaleY = ce(o), a.rotation = ce(d) + V, a.rotationX = ce(c) + V, a.rotationY = ce(l) + V, a.skewX = m + V, a.skewY = p + V, a.transformPerspective = u + B, (a.zOrigin = parseFloat(F.split(" ")[2]) || 0) && (A[_s] = Xs(F)), a.xOffset = a.yOffset = 0, a.force3D = g.force3D, a.renderTransform = a.svg ? tr : Xa ? er : Ks, a.uncache = 0, a
+            F = xs(e, _s) || "0";
+          return s = r = i = c = l = d = m = u = g = 0, n = o = 1, a.svg = !(!e.getCTM || !Ms(e)), R.translate && ("none" === R.translate && "none" === R.scale && "none" === R.rotate || (D[ps] = ("none" !== R.translate ? "translate3d(" + (R.translate + " 0 0").split(" ").slice(0, 3).join(", ") + ") " : "") + ("none" !== R.rotate ? "rotate(" + R.rotate + ") " : "") + ("none" !== R.scale ? "scale(" + R.scale.split(" ").join(",") + ") " : "") + ("none" !== R[ps] ? R[ps] : "")), D.scale = D.rotate = D.translate = "none"), h = Hs(e, a.svg), a.svg && (a.uncache ? (C = e.getBBox(), F = a.xOrigin - C.x + "px " + (a.yOrigin - C.y) + "px", T = "") : T = !t && e.getAttribute("data-svg-origin"), qs(e, T || F, !!T || a.originIsAbsolute, !1 !== a.smooth, h)), p = a.xOrigin || 0, _ = a.yOrigin || 0, h !== Fs && (w = h[0], x = h[1], y = h[2], N = h[3], s = j = h[4], r = S = h[5], 6 === h.length ? (n = Math.sqrt(w * w + x * x), o = Math.sqrt(N * N + y * y), c = w || x ? Za(x, w) * Ka : 0, m = y || N ? Za(y, N) * Ka + c : 0, m && (o *= Math.abs(Math.cos(m * Qa))), a.svg && (s -= p - (p * w + _ * y), r -= _ - (p * x + _ * N))) : (O = h[6], z = h[7], I = h[8], E = h[9], L = h[10], P = h[11], s = h[12], r = h[13], i = h[14], v = Za(O, L), l = v * Ka, v && (k = Math.cos(-v), b = Math.sin(-v), T = j * k + I * b, C = S * k + E * b, M = O * k + L * b, I = j * -b + I * k, E = S * -b + E * k, L = O * -b + L * k, P = z * -b + P * k, j = T, S = C, O = M), v = Za(-y, L), d = v * Ka, v && (k = Math.cos(-v), b = Math.sin(-v), T = w * k - I * b, C = x * k - E * b, M = y * k - L * b, P = N * b + P * k, w = T, x = C, y = M), v = Za(x, w), c = v * Ka, v && (k = Math.cos(v), b = Math.sin(v), T = w * k + x * b, C = j * k + S * b, x = x * k - w * b, S = S * k - j * b, w = T, j = C), l && Math.abs(l) + Math.abs(c) > 359.9 && (l = c = 0, d = 180 - d), n = le(Math.sqrt(w * w + x * x + y * y)), o = le(Math.sqrt(S * S + O * O)), v = Za(j, S), m = Math.abs(v) > 2e-4 ? v * Ka : 0, g = P ? 1 / (P < 0 ? -P : P) : 0), a.svg && (T = e.getAttribute("transform"), a.forceCSS = e.setAttribute("transform", "") || !Us(xs(e, ps)), T && e.setAttribute("transform", T))), Math.abs(m) > 90 && Math.abs(m) < 270 && (A ? (n *= -1, m += c <= 0 ? 180 : -180, c += c <= 0 ? 180 : -180) : (o *= -1, m += m <= 0 ? 180 : -180)), t = t || a.uncache, a.x = s - ((a.xPercent = s && (!t && a.xPercent || (Math.round(e.offsetWidth / 2) === Math.round(-s) ? -50 : 0))) ? e.offsetWidth * a.xPercent / 100 : 0) + B, a.y = r - ((a.yPercent = r && (!t && a.yPercent || (Math.round(e.offsetHeight / 2) === Math.round(-r) ? -50 : 0))) ? e.offsetHeight * a.yPercent / 100 : 0) + B, a.z = i + B, a.scaleX = le(n), a.scaleY = le(o), a.rotation = le(c) + V, a.rotationX = le(l) + V, a.rotationY = le(d) + V, a.skewX = m + V, a.skewY = u + V, a.transformPerspective = g + B, (a.zOrigin = parseFloat(F.split(" ")[2]) || 0) && (D[_s] = Xs(F)), a.xOffset = a.yOffset = 0, a.force3D = f.force3D, a.renderTransform = a.svg ? tr : Xa ? er : Ks, a.uncache = 0, a
         },
         Xs = e => (e = e.split(" "))[0] + " " + e[1],
         Ys = (e, t, a) => {
           let s = qe(t);
-          return ce(parseFloat(t) + parseFloat(Ps(e, "x", a + "px", s))) + s
+          return le(parseFloat(t) + parseFloat(Ps(e, "x", a + "px", s))) + s
         },
         Ks = (e, t) => {
           t.z = "0px", t.rotationY = t.rotationX = "0deg", t.force3D = 0, er(e, t)
@@ -1867,65 +1867,65 @@ _global.SENTRY_RELEASE = {
             y: i,
             z: n,
             rotation: o,
-            rotationY: d,
-            rotationX: c,
-            skewX: l,
+            rotationY: c,
+            rotationX: l,
+            skewX: d,
             skewY: m,
-            scaleX: p,
-            scaleY: u,
-            transformPerspective: g,
-            force3D: f,
+            scaleX: u,
+            scaleY: g,
+            transformPerspective: f,
+            force3D: p,
             target: _,
             zOrigin: h
-          } = t || this, k = "", b = "auto" === f && e && 1 !== e || !0 === f;
-          if (h && (c !== Qs || d !== Qs)) {
-            let e, t = parseFloat(d) * Qa,
+          } = t || this, v = "", k = "auto" === p && e && 1 !== e || !0 === p;
+          if (h && (l !== Qs || c !== Qs)) {
+            let e, t = parseFloat(c) * Qa,
               a = Math.sin(t),
               s = Math.cos(t);
-            t = parseFloat(c) * Qa, e = Math.cos(t), r = Ys(_, r, a * e * -h), i = Ys(_, i, -Math.sin(t) * -h), n = Ys(_, n, s * e * -h + h)
+            t = parseFloat(l) * Qa, e = Math.cos(t), r = Ys(_, r, a * e * -h), i = Ys(_, i, -Math.sin(t) * -h), n = Ys(_, n, s * e * -h + h)
           }
-          g !== Zs && (k += "perspective(" + g + Js), (a || s) && (k += "translate(" + a + "%, " + s + "%) "), (b || r !== Zs || i !== Zs || n !== Zs) && (k += n !== Zs || b ? "translate3d(" + r + ", " + i + ", " + n + ") " : "translate(" + r + ", " + i + Js), o !== Qs && (k += "rotate(" + o + Js), d !== Qs && (k += "rotateY(" + d + Js), c !== Qs && (k += "rotateX(" + c + Js), l === Qs && m === Qs || (k += "skew(" + l + ", " + m + Js), 1 === p && 1 === u || (k += "scale(" + p + ", " + u + Js), _.style[fs] = k || "translate(0, 0)"
+          f !== Zs && (v += "perspective(" + f + Js), (a || s) && (v += "translate(" + a + "%, " + s + "%) "), (k || r !== Zs || i !== Zs || n !== Zs) && (v += n !== Zs || k ? "translate3d(" + r + ", " + i + ", " + n + ") " : "translate(" + r + ", " + i + Js), o !== Qs && (v += "rotate(" + o + Js), c !== Qs && (v += "rotateY(" + c + Js), l !== Qs && (v += "rotateX(" + l + Js), d === Qs && m === Qs || (v += "skew(" + d + ", " + m + Js), 1 === u && 1 === g || (v += "scale(" + u + ", " + g + Js), _.style[ps] = v || "translate(0, 0)"
         },
         tr = function(e, t) {
           let a, s, r, i, n, {
               xPercent: o,
-              yPercent: d,
-              x: c,
-              y: l,
+              yPercent: c,
+              x: l,
+              y: d,
               rotation: m,
-              skewX: p,
-              skewY: u,
-              scaleX: g,
-              scaleY: f,
+              skewX: u,
+              skewY: g,
+              scaleX: f,
+              scaleY: p,
               target: _,
               xOrigin: h,
-              yOrigin: k,
-              xOffset: b,
-              yOffset: v,
-              forceCSS: x
+              yOrigin: v,
+              xOffset: k,
+              yOffset: b,
+              forceCSS: w
             } = t || this,
-            y = parseFloat(c),
-            w = parseFloat(l);
-          m = parseFloat(m), p = parseFloat(p), u = parseFloat(u), u && (u = parseFloat(u), p += u, m += u), m || p ? (m *= Qa, p *= Qa, a = Math.cos(m) * g, s = Math.sin(m) * g, r = Math.sin(m - p) * -f, i = Math.cos(m - p) * f, p && (u *= Qa, n = Math.tan(p - u), n = Math.sqrt(1 + n * n), r *= n, i *= n, u && (n = Math.tan(u), n = Math.sqrt(1 + n * n), a *= n, s *= n)), a = ce(a), s = ce(s), r = ce(r), i = ce(i)) : (a = g, i = f, s = r = 0), (y && !~(c + "").indexOf("px") || w && !~(l + "").indexOf("px")) && (y = Ps(_, "x", c, "px"), w = Ps(_, "y", l, "px")), (h || k || b || v) && (y = ce(y + h - (h * a + k * r) + b), w = ce(w + k - (h * s + k * i) + v)), (o || d) && (n = _.getBBox(), y = ce(y + o / 100 * n.width), w = ce(w + d / 100 * n.height)), n = "matrix(" + a + "," + s + "," + r + "," + i + "," + y + "," + w + ")", _.setAttribute("transform", n), x && (_.style[fs] = n)
+            x = parseFloat(l),
+            y = parseFloat(d);
+          m = parseFloat(m), u = parseFloat(u), g = parseFloat(g), g && (g = parseFloat(g), u += g, m += g), m || u ? (m *= Qa, u *= Qa, a = Math.cos(m) * f, s = Math.sin(m) * f, r = Math.sin(m - u) * -p, i = Math.cos(m - u) * p, u && (g *= Qa, n = Math.tan(u - g), n = Math.sqrt(1 + n * n), r *= n, i *= n, g && (n = Math.tan(g), n = Math.sqrt(1 + n * n), a *= n, s *= n)), a = le(a), s = le(s), r = le(r), i = le(i)) : (a = f, i = p, s = r = 0), (x && !~(l + "").indexOf("px") || y && !~(d + "").indexOf("px")) && (x = Ps(_, "x", l, "px"), y = Ps(_, "y", d, "px")), (h || v || k || b) && (x = le(x + h - (h * a + v * r) + k), y = le(y + v - (h * s + v * i) + b)), (o || c) && (n = _.getBBox(), x = le(x + o / 100 * n.width), y = le(y + c / 100 * n.height)), n = "matrix(" + a + "," + s + "," + r + "," + i + "," + x + "," + y + ")", _.setAttribute("transform", n), w && (_.style[ps] = n)
         },
         ar = function(e, t, a, s, r) {
           let i, n, o = 360,
-            d = N(r),
-            c = parseFloat(r) * (d && ~r.indexOf("rad") ? Ka : 1) - s,
-            l = s + c + "deg";
-          return d && (i = r.split("_")[1], "short" === i && (c %= o, c !== c % 180 && (c += c < 0 ? o : -360)), "cw" === i && c < 0 ? c = (c + 36e9) % o - ~~(c / o) * o : "ccw" === i && c > 0 && (c = (c - 36e9) % o - ~~(c / o) * o)), e._pt = n = new da(e._pt, t, a, s, c, rs), n.e = l, n.u = "deg", e._props.push(a), n
+            c = N(r),
+            l = parseFloat(r) * (c && ~r.indexOf("rad") ? Ka : 1) - s,
+            d = s + l + "deg";
+          return c && (i = r.split("_")[1], "short" === i && (l %= o, l !== l % 180 && (l += l < 0 ? o : -360)), "cw" === i && l < 0 ? l = (l + 36e9) % o - ~~(l / o) * o : "ccw" === i && l > 0 && (l = (l - 36e9) % o - ~~(l / o) * o)), e._pt = n = new ca(e._pt, t, a, s, l, rs), n.e = d, n.u = "deg", e._props.push(a), n
         },
         sr = (e, t) => {
           for (let a in t) e[a] = t[a];
           return e
         },
         rr = (e, t, a) => {
-          let s, r, i, n, o, d, c, l, m = sr({}, a._gsap),
-            p = a.style;
-          for (r in m.svg ? (i = a.getAttribute("transform"), a.setAttribute("transform", ""), p[fs] = t, s = Ws(a, 1), Is(a, fs), a.setAttribute("transform", i)) : (i = getComputedStyle(a)[fs], p[fs] = t, s = Ws(a, 1), p[fs] = i), Ya) i = m[r], n = s[r], i !== n && "perspective,force3D,transformOrigin,svgOrigin".indexOf(r) < 0 && (c = qe(i), l = qe(n), o = c !== l ? Ps(a, r, i, l) : parseFloat(i), d = parseFloat(n), e._pt = new da(e._pt, s, r, o, d - o, ss), e._pt.u = l || 0, e._props.push(r));
+          let s, r, i, n, o, c, l, d, m = sr({}, a._gsap),
+            u = a.style;
+          for (r in m.svg ? (i = a.getAttribute("transform"), a.setAttribute("transform", ""), u[ps] = t, s = Ws(a, 1), Is(a, ps), a.setAttribute("transform", i)) : (i = getComputedStyle(a)[ps], u[ps] = t, s = Ws(a, 1), u[ps] = i), Ya) i = m[r], n = s[r], i !== n && "perspective,force3D,transformOrigin,svgOrigin".indexOf(r) < 0 && (l = qe(i), d = qe(n), o = l !== d ? Ps(a, r, i, d) : parseFloat(i), c = parseFloat(n), e._pt = new ca(e._pt, s, r, o, c - o, ss), e._pt.u = d || 0, e._props.push(r));
           sr(s, m)
         };
-      de("padding,margin,Width,Radius", ((e, t) => {
+      ce("padding,margin,Width,Radius", ((e, t) => {
         let a = "Top",
           s = "Right",
           r = "Bottom",
@@ -1942,35 +1942,35 @@ _global.SENTRY_RELEASE = {
         register: js,
         targetTest: e => e.style && e.nodeType,
         init(e, t, a, s, r) {
-          let i, n, o, d, c, l, m, p, u, f, _, h, k, b, v, x, y = this._props,
-            w = e.style,
+          let i, n, o, c, l, d, m, u, g, p, _, h, v, k, b, w, x = this._props,
+            y = e.style,
             j = a.vars.startAt;
-          for (m in Ua || js(), this.styles = this.styles || vs(e), x = this.styles.props, this.tween = a, t)
+          for (m in Ua || js(), this.styles = this.styles || bs(e), w = this.styles.props, this.tween = a, t)
             if ("autoRound" !== m && (n = t[m], !ee[m] || !$t(m, t, a, s, e, r)))
-              if (c = typeof n, l = Rs[m], "function" === c && (n = n.call(a, s, e, r), c = typeof n), "string" === c && ~n.indexOf("random(") && (n = it(n)), l) l(this, e, m, n, a) && (v = 1);
-              else if ("--" === m.substr(0, 2)) i = (getComputedStyle(e).getPropertyValue(m) + "").trim(), n += "", bt.lastIndex = 0, bt.test(i) || (p = qe(i), u = qe(n)), u ? p !== u && (i = Ps(e, m, i, u) + u) : p && (n += p), this.add(w, "setProperty", i, n, s, r, 0, 0, m), y.push(m), x.push(m, 0, w[m]);
-          else if ("undefined" !== c) {
-            if (j && m in j ? (i = "function" == typeof j[m] ? j[m].call(a, s, e, r) : j[m], N(i) && ~i.indexOf("random(") && (i = it(i)), qe(i + "") || (i += g.units[m] || qe(Os(e, m)) || ""), "=" === (i + "").charAt(1) && (i = Os(e, m))) : i = Os(e, m), d = parseFloat(i), f = "string" === c && "=" === n.charAt(1) && n.substr(0, 2), f && (n = n.substr(2)), o = parseFloat(n), m in as && ("autoAlpha" === m && (1 === d && "hidden" === Os(e, "visibility") && o && (d = 0), x.push("visibility", 0, w.visibility), Es(this, w, "visibility", d ? "inherit" : "hidden", o ? "inherit" : "hidden", !o)), "scale" !== m && "transform" !== m && (m = as[m], ~m.indexOf(",") && (m = m.split(",")[0]))), _ = m in Ya, _)
-              if (this.styles.save(m), h || (k = e._gsap, k.renderTransform && !t.parseTransform || Ws(e, t.parseTransform), b = !1 !== t.smoothOrigin && k.smooth, h = this._pt = new da(this._pt, w, fs, 0, 1, k.renderTransform, k, 0, -1), h.dep = 1), "scale" === m) this._pt = new da(this._pt, k, "scaleY", k.scaleY, (f ? me(k.scaleY, f + o) : o) - k.scaleY || 0, ss), this._pt.u = 0, y.push("scaleY", m), m += "X";
+              if (l = typeof n, d = Rs[m], "function" === l && (n = n.call(a, s, e, r), l = typeof n), "string" === l && ~n.indexOf("random(") && (n = it(n)), d) d(this, e, m, n, a) && (b = 1);
+              else if ("--" === m.substr(0, 2)) i = (getComputedStyle(e).getPropertyValue(m) + "").trim(), n += "", kt.lastIndex = 0, kt.test(i) || (u = qe(i), g = qe(n)), g ? u !== g && (i = Ps(e, m, i, g) + g) : u && (n += u), this.add(y, "setProperty", i, n, s, r, 0, 0, m), x.push(m), w.push(m, 0, y[m]);
+          else if ("undefined" !== l) {
+            if (j && m in j ? (i = "function" == typeof j[m] ? j[m].call(a, s, e, r) : j[m], N(i) && ~i.indexOf("random(") && (i = it(i)), qe(i + "") || (i += f.units[m] || qe(Os(e, m)) || ""), "=" === (i + "").charAt(1) && (i = Os(e, m))) : i = Os(e, m), c = parseFloat(i), p = "string" === l && "=" === n.charAt(1) && n.substr(0, 2), p && (n = n.substr(2)), o = parseFloat(n), m in as && ("autoAlpha" === m && (1 === c && "hidden" === Os(e, "visibility") && o && (c = 0), w.push("visibility", 0, y.visibility), Es(this, y, "visibility", c ? "inherit" : "hidden", o ? "inherit" : "hidden", !o)), "scale" !== m && "transform" !== m && (m = as[m], ~m.indexOf(",") && (m = m.split(",")[0]))), _ = m in Ya, _)
+              if (this.styles.save(m), h || (v = e._gsap, v.renderTransform && !t.parseTransform || Ws(e, t.parseTransform), k = !1 !== t.smoothOrigin && v.smooth, h = this._pt = new ca(this._pt, y, ps, 0, 1, v.renderTransform, v, 0, -1), h.dep = 1), "scale" === m) this._pt = new ca(this._pt, v, "scaleY", v.scaleY, (p ? me(v.scaleY, p + o) : o) - v.scaleY || 0, ss), this._pt.u = 0, x.push("scaleY", m), m += "X";
               else {
                 if ("transformOrigin" === m) {
-                  x.push(_s, 0, w[_s]), n = Bs(n), k.svg ? qs(e, n, 0, b, 0, this) : (u = parseFloat(n.split(" ")[2]) || 0, u !== k.zOrigin && Es(this, k, "zOrigin", k.zOrigin, u), Es(this, w, m, Xs(i), Xs(n)));
+                  w.push(_s, 0, y[_s]), n = Bs(n), v.svg ? qs(e, n, 0, k, 0, this) : (g = parseFloat(n.split(" ")[2]) || 0, g !== v.zOrigin && Es(this, v, "zOrigin", v.zOrigin, g), Es(this, y, m, Xs(i), Xs(n)));
                   continue
                 }
                 if ("svgOrigin" === m) {
-                  qs(e, n, 1, b, 0, this);
+                  qs(e, n, 1, k, 0, this);
                   continue
                 }
                 if (m in $s) {
-                  ar(this, k, m, d, f ? me(d, f + n) : n);
+                  ar(this, v, m, c, p ? me(c, p + n) : n);
                   continue
                 }
                 if ("smoothOrigin" === m) {
-                  Es(this, k, "smooth", k.smooth, n);
+                  Es(this, v, "smooth", v.smooth, n);
                   continue
                 }
                 if ("force3D" === m) {
-                  k[m] = n;
+                  v[m] = n;
                   continue
                 }
                 if ("transform" === m) {
@@ -1978,17 +1978,17 @@ _global.SENTRY_RELEASE = {
                   continue
                 }
               }
-            else m in w || (m = Ns(m) || m);
-            if (_ || (o || 0 === o) && (d || 0 === d) && !ts.test(n) && m in w) p = (i + "").substr((d + "").length), o || (o = 0), u = qe(n) || (m in g.units ? g.units[m] : p), p !== u && (d = Ps(e, m, i, u)), this._pt = new da(this._pt, _ ? k : w, m, d, (f ? me(d, f + o) : o) - d, _ || "px" !== u && "zIndex" !== m || !1 === t.autoRound ? ss : ns), this._pt.u = u || 0, p !== u && "%" !== u && (this._pt.b = i, this._pt.r = is);
-            else if (m in w) As.call(this, e, m, i, f ? f + n : n);
-            else if (m in e) this.add(e, m, i || e[m], f ? f + n : n, s, r);
+            else m in y || (m = Ns(m) || m);
+            if (_ || (o || 0 === o) && (c || 0 === c) && !ts.test(n) && m in y) u = (i + "").substr((c + "").length), o || (o = 0), g = qe(n) || (m in f.units ? f.units[m] : u), u !== g && (c = Ps(e, m, i, g)), this._pt = new ca(this._pt, _ ? v : y, m, c, (p ? me(c, p + o) : o) - c, _ || "px" !== g && "zIndex" !== m || !1 === t.autoRound ? ss : ns), this._pt.u = g || 0, u !== g && "%" !== g && (this._pt.b = i, this._pt.r = is);
+            else if (m in y) Ds.call(this, e, m, i, p ? p + n : n);
+            else if (m in e) this.add(e, m, i || e[m], p ? p + n : n, s, r);
             else if ("parseTransform" !== m) {
               G(m, n);
               continue
             }
-            _ || (m in w ? x.push(m, 0, w[m]) : x.push(m, 1, i || e[m])), y.push(m)
+            _ || (m in y ? w.push(m, 0, y[m]) : w.push(m, 1, i || e[m])), x.push(m)
           }
-          v && oa(this)
+          b && oa(this)
         },
         render(e, t) {
           if (t.tween._time || !Wa()) {
@@ -2000,262 +2000,453 @@ _global.SENTRY_RELEASE = {
         aliases: as,
         getSetter(e, t, a) {
           let s = as[t];
-          return s && s.indexOf(",") < 0 && (t = s), t in Ya && t !== _s && (e._gsap.x || Os(e, "x")) ? a && qa === a ? "scale" === t ? ps : ms : (qa = a || {}) && ("scale" === t ? us : gs) : e.style && !T(e.style[t]) ? cs : ~t.indexOf("-") ? ls : Jt(e, t)
+          return s && s.indexOf(",") < 0 && (t = s), t in Ya && t !== _s && (e._gsap.x || Os(e, "x")) ? a && qa === a ? "scale" === t ? us : ms : (qa = a || {}) && ("scale" === t ? gs : fs) : e.style && !T(e.style[t]) ? ls : ~t.indexOf("-") ? ds : Jt(e, t)
         },
         core: {
           _removeProperty: Is,
           _getMatrix: Hs
         }
       };
-      xa.utils.checkPrefix = Ns, xa.core.getStyleSaver = vs,
+      wa.utils.checkPrefix = Ns, wa.core.getStyleSaver = bs,
         function(e, t, a, s) {
-          let r = de(e + "," + t + ",transform,transformOrigin,svgOrigin,force3D,smoothOrigin,transformPerspective", (e => {
+          let r = ce(e + "," + t + ",transform,transformOrigin,svgOrigin,force3D,smoothOrigin,transformPerspective", (e => {
             Ya[e] = 1
           }));
-          de(t, (e => {
-            g.units[e] = "deg", $s[e] = 1
-          })), as[r[13]] = e + "," + t, de("0:translateX,1:translateY,2:translateZ,8:rotate,8:rotationZ,8:rotateZ,9:rotateX,10:rotateY", (e => {
+          ce(t, (e => {
+            f.units[e] = "deg", $s[e] = 1
+          })), as[r[13]] = e + "," + t, ce("0:translateX,1:translateY,2:translateZ,8:rotate,8:rotationZ,8:rotateZ,9:rotateX,10:rotateY", (e => {
             let t = e.split(":");
             as[t[1]] = r[t[0]]
           }))
-        }("x,y,z,scale,scaleX,scaleY,xPercent,yPercent", "rotation,rotationX,rotationY,skewX,skewY"), de("x,y,z,top,right,bottom,left,width,height,fontSize,padding,margin,perspective", (e => {
-          g.units[e] = "px"
-        })), xa.registerPlugin(ir);
-      const nr = xa.registerPlugin(ir) || xa;
+        }("x,y,z,scale,scaleX,scaleY,xPercent,yPercent", "rotation,rotationX,rotationY,skewX,skewY"), ce("x,y,z,top,right,bottom,left,width,height,fontSize,padding,margin,perspective", (e => {
+          f.units[e] = "px"
+        })), wa.registerPlugin(ir);
+      const nr = wa.registerPlugin(ir) || wa;
       nr.core.Tween
     },
-    65596: (e, t, a) => {
+    33544: (e, t, a) => {
       "use strict";
       a.r(t), a.d(t, {
-        A: () => g,
-        AudioPlayer: () => w,
-        Badge: () => N,
-        Brands: () => j,
-        Button: () => T,
-        ButtonGroup: () => z,
-        CalloutSection: () => J,
-        Carousel: () => V,
-        ConditionalBlock: () => H,
-        CookieAB: () => re,
-        CountryInputField: () => se,
-        Cta: () => me,
-        DescriptionArea: () => je,
-        DiscountsBadge: () => Ie,
-        DotLoader: () => Le,
-        Dropdown: () => Oe,
-        Embed: () => Ve,
-        ExpandingPlatformButton: () => Xe,
-        FadeInContent: () => Ke,
-        GameSiteHeader: () => Ze,
-        Gen9Button: () => L,
-        Gen9CoreCarousel: () => it,
-        Grid: () => De,
-        HTMLElement: () => gt,
-        Hero: () => ut,
-        HookStore: () => $,
-        ImageWithBadge: () => wt,
-        InViewTracker: () => Mt,
-        LanguageSelector: () => kt,
-        LayeredImage: () => xt,
-        LoadingAnimation: () => zr,
-        MultiSourceImage: () => fe,
-        NewswireBlocks: () => Rt,
-        NewswireCard: () => zt,
-        NewswireList: () => At,
-        NewswireRelated: () => Bt,
-        NewswireTag: () => Et,
-        OrderedList: () => Ut,
-        PackList: () => ea,
-        PackListMenu: () => ga,
-        Paging: () => ha,
-        ParallaxCacheBuster: () => ba,
-        ParallaxInnerLayer: () => ya,
-        ParallaxOuterLayer: () => Na,
-        ParallaxWrapper: () => xa,
+        A: () => I,
+        AudioPlayer: () => V,
+        Badge: () => R,
+        Brands: () => F,
+        Button: () => U,
+        ButtonGroup: () => Y,
+        CalloutSection: () => pe,
+        Carousel: () => te,
+        ConditionalBlock: () => oe,
+        CookieAB: () => be,
+        CountryInputField: () => ke,
+        Cta: () => Te,
+        DescriptionArea: () => Fe,
+        DiscountsBadge: () => qe,
+        DotLoader: () => Xe,
+        Dropdown: () => Qe,
+        Embed: () => tt,
+        ExpandingPlatformButton: () => dt,
+        FadeInContent: () => ut,
+        GameSiteHeader: () => ft,
+        Gen9Button: () => X,
+        Gen9CoreCarousel: () => wt,
+        Grid: () => Je,
+        HTMLElement: () => It,
+        Hero: () => Mt,
+        HookStore: () => re,
+        ImageWithBadge: () => Bt,
+        InViewTracker: () => Gt,
+        LanguageSelector: () => zt,
+        LayeredImage: () => Dt,
+        LoadingAnimation: () => Xr,
+        MultiSourceImage: () => Ee,
+        NewswireBlocks: () => ta,
+        NewswireCard: () => Xt,
+        NewswireList: () => Qt,
+        NewswireRelated: () => Jt,
+        NewswireTag: () => qt,
+        OrderedList: () => ra,
+        PackList: () => pa,
+        PackListMenu: () => Ma,
+        Paging: () => La,
+        ParallaxCacheBuster: () => Pa,
+        ParallaxInnerLayer: () => Aa,
+        ParallaxOuterLayer: () => Va,
+        ParallaxWrapper: () => Da,
         ProfileSwitcher: () => s,
-        PromoModule: () => ls,
-        Rating: () => fs,
-        ResponsiveFlexBox: () => hs,
-        ResponsiveFlexItem: () => bs,
-        ResponsiveGridBox: () => xs,
-        ResponsiveGridItem: () => ws,
-        ResponsiveImg: () => js,
-        ResponsiveSection: () => Ts,
-        RockstarLogo: () => Cs,
-        ScrollSection: () => Ms,
-        ScrollToTop: () => Is,
-        ScrollTracker: () => Ls,
-        SearchBox: () => zs,
-        Separator: () => ye,
-        Skeleton: () => Os,
-        SrcsetImage: () => jt,
-        TextFit: () => Te,
-        ThumbsGallery: () => Us,
-        TinaModuleFetchNRender: () => qs,
-        TinaWrapper: () => Ws,
-        TrackList: () => Vs,
-        UnorderedList: () => ve,
-        UserVote: () => Ks,
+        PromoModule: () => js,
+        Rating: () => Is,
+        ResponsiveFlexBox: () => Ls,
+        ResponsiveFlexItem: () => Ps,
+        ResponsiveGridBox: () => Ds,
+        ResponsiveGridItem: () => Bs,
+        ResponsiveImg: () => Rs,
+        ResponsiveSection: () => $s,
+        RockstarLogo: () => Us,
+        ScrollSection: () => Gs,
+        ScrollToTop: () => Hs,
+        ScrollTracker: () => Ws,
+        SearchBox: () => Xs,
+        Separator: () => Be,
+        Skeleton: () => Ks,
+        SrcsetImage: () => Rt,
+        TextFit: () => Ue,
+        ThumbsGallery: () => rr,
+        TinaModuleFetchNRender: () => or,
+        TinaWrapper: () => cr,
+        TrackList: () => er,
+        UnorderedList: () => De,
+        UserVote: () => mr,
         VideoCard: () => r,
-        VideoCarousel: () => Zs,
-        VideoList: () => ir,
-        VisuallyHidden: () => nr,
-        Wasted: () => or,
+        VideoCarousel: () => gr,
+        VideoList: () => br,
+        VisuallyHidden: () => wr,
+        Wasted: () => xr,
         framer: () => n,
-        useTinaModuleFetchByIds: () => Hs,
-        withInViewTracker: () => Tt,
-        withSearchbarErrorBoundary: () => pr,
-        withSimpleErrorBoundary: () => st
+        useTinaModuleFetchByIds: () => nr,
+        withInViewTracker: () => $t,
+        withSearchbarErrorBoundary: () => Tr,
+        withSimpleErrorBoundary: () => kt
       });
       var s = {};
       a.r(s), a.d(s, {
-        CharacterCard: () => Ma,
-        Menu: () => is,
-        MenuButton: () => ds
+        CharacterCard: () => Ga,
+        Menu: () => bs,
+        MenuButton: () => ys
       });
       var r = {};
       a.r(r), a.d(r, {
-        Art: () => cr,
-        Link: () => lr
+        Art: () => Nr,
+        Link: () => jr
       });
       var i = {};
       a.r(i), a.d(i, {
-        getVariant: () => Cr,
-        transitions: () => Sr,
-        variants: () => Tr
+        getVariant: () => Ur,
+        transitions: () => Fr,
+        variants: () => $r
       });
       var n = {};
       a.r(n), a.d(n, {
         Animations: () => i,
-        LiteMotion: () => hr,
-        withFadeIn: () => xr,
-        withFadeUp: () => jr
+        LiteMotion: () => Lr,
+        withFadeIn: () => Dr,
+        withFadeUp: () => Rr
       });
       var o = a(51664),
-        d = a(41272);
-      const c = JSON.parse('{"us":{"aria_label_open_new_window":"(Opens in a new window)","pl_card_badge_content_complete":"Complete","plm_nav_scroll_left":"Scroll Left","plm_nav_scroll_right":"Scroll Right","language_selector_default":"Select a Language","nofications_new":"New notifications","profile_selector_mugshot":"{userName} mugshot","profile_selector_profile_card":"Profile Card","profile_selector_rp_icon":"RP Category","profile_selector_switch_character":"Switch Character","sc_link_account":"Account","sc_link_activity_feed":"Activity Feed","sc_link_cookies_policy":"Cookies Policy","sc_link_cookies_settings":"Cookies Settings","sc_link_crews":"Crews","sc_link_do_not_sell_my_information":"Do Not Sell My Information","sc_link_find_friends":"Find Friends","sc_link_friends":"Friends","sc_link_game_activation":"Game Activation","sc_link_help":"Help","sc_link_import_friends":"Import Friends","sc_link_join_social_club":"Sign Up","sc_link_legal":"Legal","sc_link_log_out":"Log Out","sc_link_messages":"Messages","sc_link_my_friends":"My Friends","sc_link_notifications":"Notifications","sc_link_privacy_policy":"Privacy Policy","sc_link_settings":"Settings","sc_link_sign_in":"Sign In","sc_link_support":"Support","sc_link_view_my_profile":"View My Profile","sc_menu_close":"Close player menu","sc_menu_drag_handle":"Drag Menu Handle","sc_menu_open":"Open player menu","components_ratings_link_alt":"Rating: {rating}. Click here learn more about rating systems","rp_icon":"RP Category","components_track_list_title":"Tracklist","next_button_label":"Next video page","previous_button_label":"Previous video page"},"de":{"aria_label_open_new_window":"(Öffnet ein neues Fenster)","pl_card_badge_content_complete":"Abgeschlossen","plm_nav_scroll_left":"Links scrollen","plm_nav_scroll_right":"Rechts scrollen","language_selector_default":"Eine Sprache auswählen","nofications_new":"Neue Benachrichtigungen","profile_selector_mugshot":"Verbrecherfoto von {userName}","profile_selector_profile_card":"Profildaten","profile_selector_rp_icon":"RP-Kategorie","profile_selector_switch_character":"Charakter wechseln","sc_link_account":"Konto","sc_link_activity_feed":"Aktivitäten-Feed","sc_link_cookies_policy":"Cookie-Richtlinie","sc_link_cookies_settings":"Cookie-Einstellungen","sc_link_crews":"Crews","sc_link_do_not_sell_my_information":"Meine Informationen nicht verkaufen","sc_link_find_friends":"Freunde finden","sc_link_friends":"Freunde","sc_link_game_activation":"Spielaktivierung","sc_link_help":"Hilfe","sc_link_import_friends":"Freunde importieren","sc_link_join_social_club":"Registrieren","sc_link_legal":"Rechtliches","sc_link_log_out":"Abmelden","sc_link_messages":"Nachrichten","sc_link_my_friends":"Meine Freunde","sc_link_notifications":"Benachrichtigungen","sc_link_privacy_policy":"Datenschutzrichtlinien","sc_link_settings":"Einstellungen","sc_link_sign_in":"Anmelden","sc_link_support":"Support","sc_link_view_my_profile":"Mein Profil ansehen","sc_menu_close":"Spielermenü schließen","sc_menu_drag_handle":"Menü öffnen bzw. schließen","sc_menu_open":"Spielermenü öffnen","components_ratings_link_alt":"Altersfreigabe: {rating} Klicke hier, um mehr über Altersfreigaben zu erfahren.","rp_icon":"RP-Kategorie","components_track_list_title":"Trackliste","next_button_label":"Nächste Videoseite","previous_button_label":"Vorherige Videoseite"},"es":{"aria_label_open_new_window":"(Se abre en una ventana nueva)","pl_card_badge_content_complete":"Completado","plm_nav_scroll_left":"Desplazar hacia la izquierda","plm_nav_scroll_right":"Desplazar hacia la derecha","language_selector_default":"Selecciona un idioma","nofications_new":"Nuevas notificaciones","profile_selector_mugshot":"Foto de {userName}","profile_selector_profile_card":"Tarjeta de perfil","profile_selector_rp_icon":"Categoría de RP","profile_selector_switch_character":"Cambiar personaje","sc_link_account":"Cuenta","sc_link_activity_feed":"Actividades","sc_link_cookies_policy":"Política de cookies","sc_link_cookies_settings":"Ajustes de cookies","sc_link_crews":"Crews","sc_link_do_not_sell_my_information":"No quiero que vendáis mis datos","sc_link_find_friends":"Buscar amigos","sc_link_friends":"Amigos","sc_link_game_activation":"Activación del juego","sc_link_help":"Ayuda","sc_link_import_friends":"Importar amigos","sc_link_join_social_club":"Registrarse","sc_link_legal":"Aviso legal","sc_link_log_out":"Cerrar sesión","sc_link_messages":"Mensajes","sc_link_my_friends":"Mis amigos","sc_link_notifications":"Notificaciones","sc_link_privacy_policy":"Política de privacidad","sc_link_settings":"Ajustes","sc_link_sign_in":"Iniciar sesión","sc_link_support":"Asistencia técnica","sc_link_view_my_profile":"Ver mi perfil","sc_menu_close":"Cerrar menú de jugador","sc_menu_drag_handle":"Arrastrar el controlador del menú","sc_menu_open":"Abrir menú de jugador","components_ratings_link_alt":"Clasificación: {rating}. Haz clic aquí para obtener más información sobre los sistemas de clasificación.","rp_icon":"Categoría de RP","components_track_list_title":"Lista de pistas","next_button_label":"Página de vídeo siguiente","previous_button_label":"Página de vídeo anterior"},"mx":{"aria_label_open_new_window":"(Se abre en una ventana nueva)","pl_card_badge_content_complete":"Completado","plm_nav_scroll_left":"Desplazarse hacia la izquierda","plm_nav_scroll_right":"Desplazarse hacia la derecha","language_selector_default":"Seleccionar un idioma","nofications_new":"Nuevas notificaciones","profile_selector_mugshot":"Foto de {userName}","profile_selector_profile_card":"Tarjeta del perfil","profile_selector_rp_icon":"Categoría de RP","profile_selector_switch_character":"Cambiar personaje","sc_link_account":"Cuenta","sc_link_activity_feed":"Muro de actividades","sc_link_cookies_policy":"Política de cookies","sc_link_cookies_settings":"Configuración de cookies","sc_link_crews":"Crews","sc_link_do_not_sell_my_information":"No quiero que vendan mis datos","sc_link_find_friends":"Encontrar amigos","sc_link_friends":"Amigos","sc_link_game_activation":"Activación de juegos","sc_link_help":"Ayuda","sc_link_import_friends":"Importar amigos","sc_link_join_social_club":"Registro","sc_link_legal":"Legal","sc_link_log_out":"Cerrar sesión","sc_link_messages":"Mensajes","sc_link_my_friends":"Mis amigos","sc_link_notifications":"Notificaciones","sc_link_privacy_policy":"Política de privacidad","sc_link_settings":"Configuración","sc_link_sign_in":"Iniciar sesión","sc_link_support":"Soporte","sc_link_view_my_profile":"Ver mi perfil","sc_menu_close":"Cerrar menú del reproductor","sc_menu_drag_handle":"Mover el handle del menú","sc_menu_open":"Abrir menú del reproductor","components_ratings_link_alt":"Clasificación: {rating}. Haz clic aquí para obtener más información sobre el sistema de clasificación.","rp_icon":"Categoría de RP","components_track_list_title":"Lista de canciones","next_button_label":"Página de video siguiente","previous_button_label":"Página de video anterior"},"fr":{"aria_label_open_new_window":"(S’ouvre dans une nouvelle fenêtre)","pl_card_badge_content_complete":"Terminé","plm_nav_scroll_left":"Faire défiler vers la gauche","plm_nav_scroll_right":"Faire défiler vers la droite","language_selector_default":"Sélectionner une langue","nofications_new":"Nouvelles notifications","profile_selector_mugshot":"Photo d\'identité : {userName}","profile_selector_profile_card":"Carte du profil","profile_selector_rp_icon":"Catégorie de RP","profile_selector_switch_character":"Changer de personnage","sc_link_account":"Compte","sc_link_activity_feed":"Fil d\'activités","sc_link_cookies_policy":"Politique en matière de cookies","sc_link_cookies_settings":"Paramètres des cookies","sc_link_crews":"Crews","sc_link_do_not_sell_my_information":"Ne pas vendre mes informations","sc_link_find_friends":"Trouver des amis","sc_link_friends":"Amis","sc_link_game_activation":"Activation de jeux","sc_link_help":"Aide","sc_link_import_friends":"Importer des amis","sc_link_join_social_club":"S’inscrire","sc_link_legal":"Mentions légales","sc_link_log_out":"Se déconnecter","sc_link_messages":"Messages","sc_link_my_friends":"Mes amis","sc_link_notifications":"Notifications","sc_link_privacy_policy":"Charte de confidentialité","sc_link_settings":"Paramètres","sc_link_sign_in":"Se connecter","sc_link_support":"Assistance","sc_link_view_my_profile":"Voir mon profil","sc_menu_close":"Fermer le menu Joueur","sc_menu_drag_handle":"Drag Menu Handle","sc_menu_open":"Ouvrir le menu Joueur","components_ratings_link_alt":"Classification : {rating}. Cliquez ici pour en savoir plus sur les systèmes de classification.","rp_icon":"Catégorie : RP","components_track_list_title":"Liste des morceaux","next_button_label":"Page vidéo suivante","previous_button_label":"Page vidéo précédente"},"it":{"aria_label_open_new_window":"(Apri in una nuova finestra)","pl_card_badge_content_complete":"Completamento","plm_nav_scroll_left":"Scorri a sinistra","plm_nav_scroll_right":"Scorri a destra","language_selector_default":"Seleziona una lingua","nofications_new":"Nuove notifiche","profile_selector_mugshot":"Foto segnaletica di {userName}","profile_selector_profile_card":"Scheda del profilo","profile_selector_rp_icon":"Categoria RP","profile_selector_switch_character":"Cambia personaggio","sc_link_account":"Account","sc_link_activity_feed":"Feed attività","sc_link_cookies_policy":"Politica sui cookie","sc_link_cookies_settings":"Impostazioni dei cookie","sc_link_crews":"Crew","sc_link_do_not_sell_my_information":"Non vendere le mie informazioni","sc_link_find_friends":"Trova amici","sc_link_friends":"Amici","sc_link_game_activation":"Attivazione gioco","sc_link_help":"Assistenza","sc_link_import_friends":"Importa amici","sc_link_join_social_club":"Registrati","sc_link_legal":"Note legali","sc_link_log_out":"Esci","sc_link_messages":"Messaggi","sc_link_my_friends":"I miei amici","sc_link_notifications":"Notifiche","sc_link_privacy_policy":"Politica sulla privacy","sc_link_settings":"Impostazioni","sc_link_sign_in":"Accedi","sc_link_support":"Supporto","sc_link_view_my_profile":"Visualizza il mio profilo","sc_menu_close":"Chiudi Menu giocatore","sc_menu_drag_handle":"Drag Menu Handle","sc_menu_open":"Apri Menu giocatore","components_ratings_link_alt":"Classificazione: {rating}. Clicca qui per scoprire di più sui sistemi di classificazione","rp_icon":"Categoria RP","components_track_list_title":"Tracklist","next_button_label":"Pagina di video successiva","previous_button_label":"Pagina di video precedente"},"jp":{"aria_label_open_new_window":"(新しいウィンドウで開きます)","pl_card_badge_content_complete":"完了","plm_nav_scroll_left":"左にスクロール","plm_nav_scroll_right":"右にスクロール","language_selector_default":"言語を選択","nofications_new":"新しいお知らせ","profile_selector_mugshot":"{userName}顔写真","profile_selector_profile_card":"プロフィールカード","profile_selector_rp_icon":"RPカテゴリー","profile_selector_switch_character":"キャラクター変更","sc_link_account":"アカウント","sc_link_activity_feed":"アクティビティフィード","sc_link_cookies_policy":"クッキーポリシー","sc_link_cookies_settings":"クッキー設定","sc_link_crews":"クルー","sc_link_do_not_sell_my_information":"個人情報を売らないでください","sc_link_find_friends":"フレンドを検索","sc_link_friends":"フレンド","sc_link_game_activation":"ゲームアクティベーション","sc_link_help":"ヘルプ","sc_link_import_friends":"フレンドをインポート","sc_link_join_social_club":"サインアップ","sc_link_legal":"利用規約","sc_link_log_out":"ログアウト","sc_link_messages":"メッセージ","sc_link_my_friends":"フレンド","sc_link_notifications":"通知","sc_link_privacy_policy":"プライバシーポリシー","sc_link_settings":"設定","sc_link_sign_in":"サインイン","sc_link_support":"サポート","sc_link_view_my_profile":"プロフィールを表示","sc_menu_close":"プレイヤーメニューを閉じる","sc_menu_drag_handle":"Drag Menu Handle","sc_menu_open":"プレイヤーメニューを開く","components_ratings_link_alt":"レーティング:{rating}レーティングについての詳細はこちらをクリックしてください","rp_icon":"RPカテゴリー","components_track_list_title":"トラックリスト","next_button_label":"次のビデオページ","previous_button_label":"前のビデオページ"},"kr":{"aria_label_open_new_window":"(새 창에서 열기)","pl_card_badge_content_complete":"완료","plm_nav_scroll_left":"왼쪽 스크롤","plm_nav_scroll_right":"오른쪽 스크롤","language_selector_default":"언어 선택","nofications_new":"새 알림","profile_selector_mugshot":"{userName} 머그샷","profile_selector_profile_card":"프로필 카드","profile_selector_rp_icon":"RP 카테고리","profile_selector_switch_character":"캐릭터 교체","sc_link_account":"계정","sc_link_activity_feed":"활동 피드","sc_link_cookies_policy":"쿠키 정책","sc_link_cookies_settings":"쿠키 설정","sc_link_crews":"조직","sc_link_do_not_sell_my_information":"내 정보 판매 안 함","sc_link_find_friends":"친구 찾기","sc_link_friends":"친구","sc_link_game_activation":"게임 활성화","sc_link_help":"도움말","sc_link_import_friends":"친구 불러오기","sc_link_join_social_club":"가입","sc_link_legal":"법률 관련","sc_link_log_out":"로그아웃","sc_link_messages":"메시지","sc_link_my_friends":"내 친구","sc_link_notifications":"알림","sc_link_privacy_policy":"개인 정보 보호 정책","sc_link_settings":"설정","sc_link_sign_in":"로그인","sc_link_support":"지원","sc_link_view_my_profile":"내 프로필 보기","sc_menu_close":"플레이어 메뉴 닫기","sc_menu_drag_handle":"드래그 메뉴 핸들","sc_menu_open":"플레이어 메뉴 열기","components_ratings_link_alt":"등급 분류: {rating}. 등급 분류 제도에 대해 더 자세히 알아보려면 여기를 클릭하십시오","rp_icon":"RP 카테고리","components_track_list_title":"트랙리스트","next_button_label":"다음 비디오 페이지","previous_button_label":"이전 비디오 페이지"},"pl":{"aria_label_open_new_window":"(Otwórz w nowym oknie)","pl_card_badge_content_complete":"Ukończono","plm_nav_scroll_left":"Przesuń w lewo","plm_nav_scroll_right":"Przesuń w prawo","language_selector_default":"Wybierz język","nofications_new":"Nowe powiadomienia","profile_selector_mugshot":"Zdjęcie – {userName}","profile_selector_profile_card":"Karta profilu","profile_selector_rp_icon":"Poziom RP","profile_selector_switch_character":"Zmień postać","sc_link_account":"Konto","sc_link_activity_feed":"Zajęcia","sc_link_cookies_policy":"Polityka plików cookie","sc_link_cookies_settings":"Ustawienia plików cookie","sc_link_crews":"Ekipy","sc_link_do_not_sell_my_information":"Zabraniam sprzedaży moich danych","sc_link_find_friends":"Szukaj znajomych","sc_link_friends":"Znajomi","sc_link_game_activation":"Aktywacja gry","sc_link_help":"Pomoc","sc_link_import_friends":"Importuj znajomych","sc_link_join_social_club":"Zarejestruj się","sc_link_legal":"Informacje prawne","sc_link_log_out":"Wyloguj się","sc_link_messages":"Wiadomości","sc_link_my_friends":"Moi znajomi","sc_link_notifications":"Powiadomienia","sc_link_privacy_policy":"Polityka prywatności","sc_link_settings":"Ustawienia","sc_link_sign_in":"Zaloguj się","sc_link_support":"Wsparcie","sc_link_view_my_profile":"Przeglądaj profil","sc_menu_close":"Zamknij menu gracza","sc_menu_drag_handle":"Przeciągnij uchwyt menu","sc_menu_open":"Otwórz menu gracza","components_ratings_link_alt":"Klasyfikacja wiekowa: {rating}. Kliknij tutaj, aby dowiedzieć się więcej o systemie klasyfikacji wiekowej","rp_icon":"Poziom RP","components_track_list_title":"Lista utworów","next_button_label":"Następna strona z filmami","previous_button_label":"Poprzednia strona z filmami"},"br":{"aria_label_open_new_window":"(Abre em uma nova janela)","pl_card_badge_content_complete":"Concluiu","plm_nav_scroll_left":"Rolar para a esquerda","plm_nav_scroll_right":"Rolar para a direita","language_selector_default":"Selecione um idioma","nofications_new":"Novas notificações","profile_selector_mugshot":"Foto de {userName}","profile_selector_profile_card":"Cartão de perfil","profile_selector_rp_icon":"Categoria de RP","profile_selector_switch_character":"Alternar personagem","sc_link_account":"Conta","sc_link_activity_feed":"Feed de atividade","sc_link_cookies_policy":"Política de cookies","sc_link_cookies_settings":"Configurações de cookies","sc_link_crews":"Comandos","sc_link_do_not_sell_my_information":"Não vendam a minha informação","sc_link_find_friends":"Encontrar amigos","sc_link_friends":"Amigos","sc_link_game_activation":"Ativação de jogos","sc_link_help":"Ajuda","sc_link_import_friends":"Importar amigos","sc_link_join_social_club":"Inscrever-se","sc_link_legal":"Aviso legal","sc_link_log_out":"Sair","sc_link_messages":"Mensagens","sc_link_my_friends":"Meus amigos","sc_link_notifications":"Notificações","sc_link_privacy_policy":"Política de Privacidade","sc_link_settings":"Configurações","sc_link_sign_in":"Iniciar sessão","sc_link_support":"Suporte","sc_link_view_my_profile":"Visualizar meu perfil","sc_menu_close":"Fechar menu de jogador","sc_menu_drag_handle":"Arrastar título do menu","sc_menu_open":"Abrir menu de jogador","components_ratings_link_alt":"Classificação Indicativa: {rating}. Clique aqui para saber mais sobre sistemas de classificação indicativa.","rp_icon":"Categoria de RP","components_track_list_title":"Lista de faixas","next_button_label":"Próxima página de vídeos","previous_button_label":"Página anterior de vídeos"},"ru":{"aria_label_open_new_window":"(ссылка откроется в новом окне)","pl_card_badge_content_complete":"Завершено","plm_nav_scroll_left":"Пролистать влево","plm_nav_scroll_right":"Пролистать вправо","language_selector_default":"Выбрать язык","nofications_new":"Новые уведомления","profile_selector_mugshot":"Фотография игрока {userName}","profile_selector_profile_card":"Карта профиля","profile_selector_rp_icon":"Категория опыта","profile_selector_switch_character":"Сменить персонажа","sc_link_account":"Учетная запись","sc_link_activity_feed":"Лента событий","sc_link_cookies_policy":"Политика использования файлов Cookie","sc_link_cookies_settings":"Настройки файлов Cookie","sc_link_crews":"Банды","sc_link_do_not_sell_my_information":"Я запрещаю продавать свою личную информацию","sc_link_find_friends":"Поиск друзей","sc_link_friends":"Друзья","sc_link_game_activation":"Активация игры","sc_link_help":"Помощь","sc_link_import_friends":"Импорт друзей","sc_link_join_social_club":"Регистрация","sc_link_legal":"Юридическая информация","sc_link_log_out":"Выход","sc_link_messages":"Сообщения","sc_link_my_friends":"Мои друзья","sc_link_notifications":"Уведомления","sc_link_privacy_policy":"Политика конфиденциальности","sc_link_settings":"Настройки","sc_link_sign_in":"Войти","sc_link_support":"Поддержка","sc_link_view_my_profile":"Моя учетная запись","sc_menu_close":"Закрыть меню игрока","sc_menu_drag_handle":"Перенести маркер меню","sc_menu_open":"Открыть меню игрока","components_ratings_link_alt":"Рейтинг: {rating}. Нажмите, чтобы узнать больше о системе рейтинга","rp_icon":"Категория опыта","components_track_list_title":"Список песен","next_button_label":"Следующая страница с видео","previous_button_label":"Предыдущая страница с видео"},"hans":{"aria_label_open_new_window":"（在新窗口中打开）","pl_card_badge_content_complete":"完成","plm_nav_scroll_left":"向左滚动","plm_nav_scroll_right":"向右滚动","language_selector_default":"选择一种语言","nofications_new":"新通知","profile_selector_mugshot":"{userName} 面部照片","profile_selector_profile_card":"档案卡","profile_selector_rp_icon":"声望值类别","profile_selector_switch_character":"切换角色","sc_link_account":"账户","sc_link_activity_feed":"活动动态","sc_link_cookies_policy":"Cookie 政策","sc_link_cookies_settings":"Cookie 设置","sc_link_crews":"帮会","sc_link_do_not_sell_my_information":"请勿出售我的信息","sc_link_find_friends":"查找好友","sc_link_friends":"好友","sc_link_game_activation":"游戏激活","sc_link_help":"帮助","sc_link_import_friends":"导入好友","sc_link_join_social_club":"注册","sc_link_legal":"法律声明","sc_link_log_out":"登出","sc_link_messages":"信息","sc_link_my_friends":"我的好友","sc_link_notifications":"通知","sc_link_privacy_policy":"隐私政策","sc_link_settings":"设置","sc_link_sign_in":"登录","sc_link_support":"支持","sc_link_view_my_profile":"查看我的档案","sc_menu_close":"关闭玩家菜单","sc_menu_drag_handle":"拖动菜单处理","sc_menu_open":"打开玩家菜单","components_ratings_link_alt":"评级：{rating}。点击此处了解评级系统的更多详情。","rp_icon":"声望值类别","components_track_list_title":"曲目列表","next_button_label":"下一页视频","previous_button_label":"上一页视频"},"tw":{"aria_label_open_new_window":"（在新視窗開啟）","pl_card_badge_content_complete":"完成","plm_nav_scroll_left":"向左捲動","plm_nav_scroll_right":"向右捲動","language_selector_default":"選擇語言","nofications_new":"新通知","profile_selector_mugshot":"{userName} 罪犯檔案照","profile_selector_profile_card":"資料卡","profile_selector_rp_icon":"聲望值類別","profile_selector_switch_character":"切換角色","sc_link_account":"帳戶","sc_link_activity_feed":"動態活動","sc_link_cookies_policy":"Cookie 政策","sc_link_cookies_settings":"Cookie 設定","sc_link_crews":"幫會","sc_link_do_not_sell_my_information":"不要販售我的個人資料","sc_link_find_friends":"尋找好友","sc_link_friends":"好友","sc_link_game_activation":"遊戲啟用","sc_link_help":"幫助","sc_link_import_friends":"匯入好友","sc_link_join_social_club":"註冊","sc_link_legal":"法律聲明","sc_link_log_out":"登出","sc_link_messages":"訊息","sc_link_my_friends":"我的好友","sc_link_notifications":"通知","sc_link_privacy_policy":"隱私權政策","sc_link_settings":"設定","sc_link_sign_in":"登入","sc_link_support":"支援","sc_link_view_my_profile":"查看我的設定檔","sc_menu_close":"關閉玩家選單","sc_menu_drag_handle":"拖曳選單控點","sc_menu_open":"開啟玩家選單","components_ratings_link_alt":"評分：{rating}。點擊此處以更加了解評分系統","rp_icon":"聲望值類別","components_track_list_title":"曲目清單","next_button_label":"下一個影片頁面","previous_button_label":"上一個影片頁面"}}'),
-        l = (0, d.defineMessages)({
+        c = a(45052),
+        l = a(3832),
+        d = a(95688),
+        m = a(82936);
+      const u = "www",
+        g = "socialClub",
+        f = [{
+          id: "prod",
+          sites: {
+            www: "www",
+            socialClub: "socialclub",
+            support: "support",
+            store: "store"
+          },
+          cookieIdentifier: "prod"
+        }],
+        p = () => {
+          let e;
+          const {
+            location: t
+          } = window, a = t.hostname.substring(0, t.hostname.indexOf(".rockstargames.com")), s = f.findIndex((t => Object.entries(t.sites).findIndex((t => {
+            let [s, r] = t;
+            return r === a && (e = {
+              site: s,
+              subDomain: r
+            }, !0)
+          })) >= 0)), r = f[s >= 0 ? s : 0];
+          return e || (e = {
+            site: "www",
+            subDomain: "local"
+          }), {
+            ...r,
+            currentSite: e
+          }
+        },
+        _ = (e, t) => {
+          e && t ? document.cookie = `${e}=${t}; domain=${h()}; path=/;` : console.log(`Couldn't set cookie (${e}) to value (${t})`)
+        },
+        h = () => {
+          const e = window.location.hostname.split(".");
+          return e.slice(e.length - 2).join(".")
+        },
+        v = e => {
+          const t = document.cookie.split("; "),
+            a = `${e}=`,
+            s = t.find((e => e.startsWith(a))),
+            r = s?.substring(a.length, s.length);
+          return r
+        },
+        k = [{
+          label: "Deutsch",
+          subdomain: "de",
+          subdomaincom: "de",
+          support: "de",
+          iso: "de-DE"
+        }, {
+          label: "English",
+          subdomain: "en-US",
+          subdomaincom: "en",
+          support: "us",
+          iso: "en-US"
+        }, {
+          label: "Español",
+          subdomain: "es",
+          subdomaincom: "es",
+          support: "es",
+          iso: "es-ES"
+        }, {
+          label: "Español Latinoamérica",
+          subdomain: "es-mx",
+          subdomaincom: "mx",
+          support: "es-mx",
+          iso: "es-MX"
+        }, {
+          label: "Français",
+          subdomain: "fr",
+          subdomaincom: "fr",
+          support: "fr",
+          iso: "fr-FR"
+        }, {
+          label: "Italiano",
+          subdomain: "it",
+          subdomaincom: "it",
+          support: "it",
+          iso: "it-IT"
+        }, {
+          label: "日本語",
+          subdomain: "ja",
+          subdomaincom: "jp",
+          support: "jp",
+          iso: "ja-JP"
+        }, {
+          label: "한국어",
+          subdomain: "ko",
+          subdomaincom: "kr",
+          support: "kr",
+          iso: "ko-KR"
+        }, {
+          label: "Polski",
+          subdomain: "pl",
+          subdomaincom: "pl",
+          support: "pl",
+          iso: "pl-PL"
+        }, {
+          label: "Português do Brasil",
+          subdomain: "pt",
+          subdomaincom: "br",
+          support: "br",
+          iso: "pt-BR"
+        }, {
+          label: "Русский",
+          subdomain: "ru",
+          subdomaincom: "ru",
+          support: "ru",
+          iso: "ru-RU"
+        }, {
+          label: "繁體中文",
+          subdomain: "zh",
+          subdomaincom: "tw",
+          support: "tw",
+          iso: "zh-TW"
+        }, {
+          label: "简体中文",
+          subdomain: "zh-cn",
+          subdomaincom: "zh",
+          support: "zh",
+          iso: "zh-CN"
+        }],
+        b = k,
+        w = k[1],
+        x = () => {
+          const {
+            location: e
+          } = window, t = p(), a = (e => {
+            const t = b.map((e => e.subdomaincom)),
+              a = e.pathname.substring(1).split("/"),
+              s = "detect-locals" === a[0] ? 1 : 0;
+            return -1 !== t.indexOf(a[s]) ? a[s] : null
+          })(e), s = (e => {
+            const t = e.search.substring(1).split("&").find((e => e.startsWith("lang")));
+            return t?.split("=")[1]
+          })(e), r = w;
+          let i = r;
+          const n = `rockstarweb_lang.${t.cookieIdentifier}`,
+            o = v(n);
+          i = t.currentSite?.site === u ? b.find((e => e.subdomaincom === s)) || b.find((e => e.subdomaincom === a)) || r : b.find((e => e.iso === o)) || r;
+          const [c, l] = function(e, t) {
+            let a = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
+            const s = v(e);
+            return s && !a || _(e, t), [s, (r = e, e => {
+              _(r, e)
+            })];
+            var r
+          }(n, i.iso);
+          return [i, l]
+        };
+      var y = a(95240);
+      const N = e => {
+        let {
+          locales: t,
+          lang: a,
+          children: s
+        } = e;
+        const r = (0, o.useMemo)((() => function(e) {
+            let [t, a] = e.split(/[-_]/);
+            return a = a?.toLowerCase(), "cn" === a && (a = "hans"), t && a || (t = "en", a = "us"), [t, a]
+          }(a)), [a]),
+          i = (0, o.useMemo)((() => function(e, t) {
+            return e?.[t] ?? {}
+          }(t, r[1])), [a, t]);
+        return (0, y.jsx)(m.c, {
+          messages: i,
+          locale: r[0],
+          defaultLocale: "en",
+          children: s
+        }, r[0])
+      };
+
+      function j(e, t) {
+        return a => {
+          const [{
+            iso: s
+          }] = x();
+          return (0, y.jsx)(N, {
+            locales: t,
+            lang: s,
+            children: (0, y.jsx)(e, {
+              ...a
+            })
+          })
+        }
+      }
+      a(3061);
+      const S = JSON.parse('{"us":{"aria_label_open_new_window":"(Opens in a new window)","pl_card_badge_content_complete":"Complete","plm_nav_scroll_left":"Scroll Left","plm_nav_scroll_right":"Scroll Right","language_selector_default":"Select a Language","nofications_new":"New notifications","profile_selector_mugshot":"{userName} mugshot","profile_selector_profile_card":"Profile Card","profile_selector_rp_icon":"RP Category","profile_selector_switch_character":"Switch Character","sc_link_account":"Account","sc_link_activity_feed":"Activity Feed","sc_link_cookies_policy":"Cookies Policy","sc_link_cookies_settings":"Cookies Settings","sc_link_crews":"Crews","sc_link_do_not_sell_my_information":"Do Not Sell My Information","sc_link_find_friends":"Find Friends","sc_link_friends":"Friends","sc_link_game_activation":"Game Activation","sc_link_help":"Help","sc_link_import_friends":"Import Friends","sc_link_join_social_club":"Sign Up","sc_link_legal":"Legal","sc_link_log_out":"Log Out","sc_link_messages":"Messages","sc_link_my_friends":"My Friends","sc_link_notifications":"Notifications","sc_link_privacy_policy":"Privacy Policy","sc_link_settings":"Settings","sc_link_sign_in":"Sign In","sc_link_support":"Support","sc_link_view_my_profile":"View My Profile","sc_menu_close":"Close player menu","sc_menu_drag_handle":"Drag Menu Handle","sc_menu_open":"Open player menu","components_ratings_link_alt":"Rating: {rating}. Click here learn more about rating systems","rp_icon":"RP Category","components_track_list_title":"Tracklist","next_button_label":"Next video page","previous_button_label":"Previous video page"},"de":{"aria_label_open_new_window":"(Öffnet ein neues Fenster)","pl_card_badge_content_complete":"Abgeschlossen","plm_nav_scroll_left":"Links scrollen","plm_nav_scroll_right":"Rechts scrollen","language_selector_default":"Eine Sprache auswählen","nofications_new":"Neue Benachrichtigungen","profile_selector_mugshot":"Verbrecherfoto von {userName}","profile_selector_profile_card":"Profildaten","profile_selector_rp_icon":"RP-Kategorie","profile_selector_switch_character":"Charakter wechseln","sc_link_account":"Konto","sc_link_activity_feed":"Aktivitäten-Feed","sc_link_cookies_policy":"Cookie-Richtlinie","sc_link_cookies_settings":"Cookie-Einstellungen","sc_link_crews":"Crews","sc_link_do_not_sell_my_information":"Meine Informationen nicht verkaufen","sc_link_find_friends":"Freunde finden","sc_link_friends":"Freunde","sc_link_game_activation":"Spielaktivierung","sc_link_help":"Hilfe","sc_link_import_friends":"Freunde importieren","sc_link_join_social_club":"Registrieren","sc_link_legal":"Rechtliches","sc_link_log_out":"Abmelden","sc_link_messages":"Nachrichten","sc_link_my_friends":"Meine Freunde","sc_link_notifications":"Benachrichtigungen","sc_link_privacy_policy":"Datenschutzrichtlinien","sc_link_settings":"Einstellungen","sc_link_sign_in":"Anmelden","sc_link_support":"Support","sc_link_view_my_profile":"Mein Profil ansehen","sc_menu_close":"Spielermenü schließen","sc_menu_drag_handle":"Menü öffnen bzw. schließen","sc_menu_open":"Spielermenü öffnen","components_ratings_link_alt":"Altersfreigabe: {rating} Klicke hier, um mehr über Altersfreigaben zu erfahren.","rp_icon":"RP-Kategorie","components_track_list_title":"Trackliste","next_button_label":"Nächste Videoseite","previous_button_label":"Vorherige Videoseite"},"es":{"aria_label_open_new_window":"(Se abre en una ventana nueva)","pl_card_badge_content_complete":"Completado","plm_nav_scroll_left":"Desplazar hacia la izquierda","plm_nav_scroll_right":"Desplazar hacia la derecha","language_selector_default":"Selecciona un idioma","nofications_new":"Nuevas notificaciones","profile_selector_mugshot":"Foto de {userName}","profile_selector_profile_card":"Tarjeta de perfil","profile_selector_rp_icon":"Categoría de RP","profile_selector_switch_character":"Cambiar personaje","sc_link_account":"Cuenta","sc_link_activity_feed":"Actividades","sc_link_cookies_policy":"Política de cookies","sc_link_cookies_settings":"Ajustes de cookies","sc_link_crews":"Crews","sc_link_do_not_sell_my_information":"No quiero que vendáis mis datos","sc_link_find_friends":"Buscar amigos","sc_link_friends":"Amigos","sc_link_game_activation":"Activación del juego","sc_link_help":"Ayuda","sc_link_import_friends":"Importar amigos","sc_link_join_social_club":"Registrarse","sc_link_legal":"Aviso legal","sc_link_log_out":"Cerrar sesión","sc_link_messages":"Mensajes","sc_link_my_friends":"Mis amigos","sc_link_notifications":"Notificaciones","sc_link_privacy_policy":"Política de privacidad","sc_link_settings":"Ajustes","sc_link_sign_in":"Iniciar sesión","sc_link_support":"Asistencia técnica","sc_link_view_my_profile":"Ver mi perfil","sc_menu_close":"Cerrar menú de jugador","sc_menu_drag_handle":"Arrastrar el controlador del menú","sc_menu_open":"Abrir menú de jugador","components_ratings_link_alt":"Clasificación: {rating}. Haz clic aquí para obtener más información sobre los sistemas de clasificación.","rp_icon":"Categoría de RP","components_track_list_title":"Lista de pistas","next_button_label":"Página de vídeo siguiente","previous_button_label":"Página de vídeo anterior"},"mx":{"aria_label_open_new_window":"(Se abre en una ventana nueva)","pl_card_badge_content_complete":"Completado","plm_nav_scroll_left":"Desplazarse hacia la izquierda","plm_nav_scroll_right":"Desplazarse hacia la derecha","language_selector_default":"Seleccionar un idioma","nofications_new":"Nuevas notificaciones","profile_selector_mugshot":"Foto de {userName}","profile_selector_profile_card":"Tarjeta del perfil","profile_selector_rp_icon":"Categoría de RP","profile_selector_switch_character":"Cambiar personaje","sc_link_account":"Cuenta","sc_link_activity_feed":"Muro de actividades","sc_link_cookies_policy":"Política de cookies","sc_link_cookies_settings":"Configuración de cookies","sc_link_crews":"Crews","sc_link_do_not_sell_my_information":"No quiero que vendan mis datos","sc_link_find_friends":"Encontrar amigos","sc_link_friends":"Amigos","sc_link_game_activation":"Activación de juegos","sc_link_help":"Ayuda","sc_link_import_friends":"Importar amigos","sc_link_join_social_club":"Registro","sc_link_legal":"Legal","sc_link_log_out":"Cerrar sesión","sc_link_messages":"Mensajes","sc_link_my_friends":"Mis amigos","sc_link_notifications":"Notificaciones","sc_link_privacy_policy":"Política de privacidad","sc_link_settings":"Configuración","sc_link_sign_in":"Iniciar sesión","sc_link_support":"Soporte","sc_link_view_my_profile":"Ver mi perfil","sc_menu_close":"Cerrar menú del reproductor","sc_menu_drag_handle":"Mover el handle del menú","sc_menu_open":"Abrir menú del reproductor","components_ratings_link_alt":"Clasificación: {rating}. Haz clic aquí para obtener más información sobre el sistema de clasificación.","rp_icon":"Categoría de RP","components_track_list_title":"Lista de canciones","next_button_label":"Página de video siguiente","previous_button_label":"Página de video anterior"},"fr":{"aria_label_open_new_window":"(S’ouvre dans une nouvelle fenêtre)","pl_card_badge_content_complete":"Terminé","plm_nav_scroll_left":"Faire défiler vers la gauche","plm_nav_scroll_right":"Faire défiler vers la droite","language_selector_default":"Sélectionner une langue","nofications_new":"Nouvelles notifications","profile_selector_mugshot":"Photo d\'identité : {userName}","profile_selector_profile_card":"Carte du profil","profile_selector_rp_icon":"Catégorie de RP","profile_selector_switch_character":"Changer de personnage","sc_link_account":"Compte","sc_link_activity_feed":"Fil d\'activités","sc_link_cookies_policy":"Politique en matière de cookies","sc_link_cookies_settings":"Paramètres des cookies","sc_link_crews":"Crews","sc_link_do_not_sell_my_information":"Ne pas vendre mes informations","sc_link_find_friends":"Trouver des amis","sc_link_friends":"Amis","sc_link_game_activation":"Activation de jeux","sc_link_help":"Aide","sc_link_import_friends":"Importer des amis","sc_link_join_social_club":"S’inscrire","sc_link_legal":"Mentions légales","sc_link_log_out":"Se déconnecter","sc_link_messages":"Messages","sc_link_my_friends":"Mes amis","sc_link_notifications":"Notifications","sc_link_privacy_policy":"Charte de confidentialité","sc_link_settings":"Paramètres","sc_link_sign_in":"Se connecter","sc_link_support":"Assistance","sc_link_view_my_profile":"Voir mon profil","sc_menu_close":"Fermer le menu Joueur","sc_menu_drag_handle":"Drag Menu Handle","sc_menu_open":"Ouvrir le menu Joueur","components_ratings_link_alt":"Classification : {rating}. Cliquez ici pour en savoir plus sur les systèmes de classification.","rp_icon":"Catégorie : RP","components_track_list_title":"Liste des morceaux","next_button_label":"Page vidéo suivante","previous_button_label":"Page vidéo précédente"},"it":{"aria_label_open_new_window":"(Apri in una nuova finestra)","pl_card_badge_content_complete":"Completamento","plm_nav_scroll_left":"Scorri a sinistra","plm_nav_scroll_right":"Scorri a destra","language_selector_default":"Seleziona una lingua","nofications_new":"Nuove notifiche","profile_selector_mugshot":"Foto segnaletica di {userName}","profile_selector_profile_card":"Scheda del profilo","profile_selector_rp_icon":"Categoria RP","profile_selector_switch_character":"Cambia personaggio","sc_link_account":"Account","sc_link_activity_feed":"Feed attività","sc_link_cookies_policy":"Politica sui cookie","sc_link_cookies_settings":"Impostazioni dei cookie","sc_link_crews":"Crew","sc_link_do_not_sell_my_information":"Non vendere le mie informazioni","sc_link_find_friends":"Trova amici","sc_link_friends":"Amici","sc_link_game_activation":"Attivazione gioco","sc_link_help":"Assistenza","sc_link_import_friends":"Importa amici","sc_link_join_social_club":"Registrati","sc_link_legal":"Note legali","sc_link_log_out":"Esci","sc_link_messages":"Messaggi","sc_link_my_friends":"I miei amici","sc_link_notifications":"Notifiche","sc_link_privacy_policy":"Politica sulla privacy","sc_link_settings":"Impostazioni","sc_link_sign_in":"Accedi","sc_link_support":"Supporto","sc_link_view_my_profile":"Visualizza il mio profilo","sc_menu_close":"Chiudi Menu giocatore","sc_menu_drag_handle":"Drag Menu Handle","sc_menu_open":"Apri Menu giocatore","components_ratings_link_alt":"Classificazione: {rating}. Clicca qui per scoprire di più sui sistemi di classificazione","rp_icon":"Categoria RP","components_track_list_title":"Tracklist","next_button_label":"Pagina di video successiva","previous_button_label":"Pagina di video precedente"},"jp":{"aria_label_open_new_window":"(新しいウィンドウで開きます)","pl_card_badge_content_complete":"完了","plm_nav_scroll_left":"左にスクロール","plm_nav_scroll_right":"右にスクロール","language_selector_default":"言語を選択","nofications_new":"新しいお知らせ","profile_selector_mugshot":"{userName}顔写真","profile_selector_profile_card":"プロフィールカード","profile_selector_rp_icon":"RPカテゴリー","profile_selector_switch_character":"キャラクター変更","sc_link_account":"アカウント","sc_link_activity_feed":"アクティビティフィード","sc_link_cookies_policy":"クッキーポリシー","sc_link_cookies_settings":"クッキー設定","sc_link_crews":"クルー","sc_link_do_not_sell_my_information":"個人情報を売らないでください","sc_link_find_friends":"フレンドを検索","sc_link_friends":"フレンド","sc_link_game_activation":"ゲームアクティベーション","sc_link_help":"ヘルプ","sc_link_import_friends":"フレンドをインポート","sc_link_join_social_club":"サインアップ","sc_link_legal":"利用規約","sc_link_log_out":"ログアウト","sc_link_messages":"メッセージ","sc_link_my_friends":"フレンド","sc_link_notifications":"通知","sc_link_privacy_policy":"プライバシーポリシー","sc_link_settings":"設定","sc_link_sign_in":"サインイン","sc_link_support":"サポート","sc_link_view_my_profile":"プロフィールを表示","sc_menu_close":"プレイヤーメニューを閉じる","sc_menu_drag_handle":"Drag Menu Handle","sc_menu_open":"プレイヤーメニューを開く","components_ratings_link_alt":"レーティング:{rating}レーティングについての詳細はこちらをクリックしてください","rp_icon":"RPカテゴリー","components_track_list_title":"トラックリスト","next_button_label":"次のビデオページ","previous_button_label":"前のビデオページ"},"kr":{"aria_label_open_new_window":"(새 창에서 열기)","pl_card_badge_content_complete":"완료","plm_nav_scroll_left":"왼쪽 스크롤","plm_nav_scroll_right":"오른쪽 스크롤","language_selector_default":"언어 선택","nofications_new":"새 알림","profile_selector_mugshot":"{userName} 머그샷","profile_selector_profile_card":"프로필 카드","profile_selector_rp_icon":"RP 카테고리","profile_selector_switch_character":"캐릭터 교체","sc_link_account":"계정","sc_link_activity_feed":"활동 피드","sc_link_cookies_policy":"쿠키 정책","sc_link_cookies_settings":"쿠키 설정","sc_link_crews":"조직","sc_link_do_not_sell_my_information":"내 정보 판매 안 함","sc_link_find_friends":"친구 찾기","sc_link_friends":"친구","sc_link_game_activation":"게임 활성화","sc_link_help":"도움말","sc_link_import_friends":"친구 불러오기","sc_link_join_social_club":"가입","sc_link_legal":"법률 관련","sc_link_log_out":"로그아웃","sc_link_messages":"메시지","sc_link_my_friends":"내 친구","sc_link_notifications":"알림","sc_link_privacy_policy":"개인 정보 보호 정책","sc_link_settings":"설정","sc_link_sign_in":"로그인","sc_link_support":"지원","sc_link_view_my_profile":"내 프로필 보기","sc_menu_close":"플레이어 메뉴 닫기","sc_menu_drag_handle":"드래그 메뉴 핸들","sc_menu_open":"플레이어 메뉴 열기","components_ratings_link_alt":"등급 분류: {rating}. 등급 분류 제도에 대해 더 자세히 알아보려면 여기를 클릭하십시오","rp_icon":"RP 카테고리","components_track_list_title":"트랙리스트","next_button_label":"다음 비디오 페이지","previous_button_label":"이전 비디오 페이지"},"pl":{"aria_label_open_new_window":"(Otwórz w nowym oknie)","pl_card_badge_content_complete":"Ukończono","plm_nav_scroll_left":"Przesuń w lewo","plm_nav_scroll_right":"Przesuń w prawo","language_selector_default":"Wybierz język","nofications_new":"Nowe powiadomienia","profile_selector_mugshot":"Zdjęcie – {userName}","profile_selector_profile_card":"Karta profilu","profile_selector_rp_icon":"Poziom RP","profile_selector_switch_character":"Zmień postać","sc_link_account":"Konto","sc_link_activity_feed":"Zajęcia","sc_link_cookies_policy":"Polityka plików cookie","sc_link_cookies_settings":"Ustawienia plików cookie","sc_link_crews":"Ekipy","sc_link_do_not_sell_my_information":"Zabraniam sprzedaży moich danych","sc_link_find_friends":"Szukaj znajomych","sc_link_friends":"Znajomi","sc_link_game_activation":"Aktywacja gry","sc_link_help":"Pomoc","sc_link_import_friends":"Importuj znajomych","sc_link_join_social_club":"Zarejestruj się","sc_link_legal":"Informacje prawne","sc_link_log_out":"Wyloguj się","sc_link_messages":"Wiadomości","sc_link_my_friends":"Moi znajomi","sc_link_notifications":"Powiadomienia","sc_link_privacy_policy":"Polityka prywatności","sc_link_settings":"Ustawienia","sc_link_sign_in":"Zaloguj się","sc_link_support":"Wsparcie","sc_link_view_my_profile":"Przeglądaj profil","sc_menu_close":"Zamknij menu gracza","sc_menu_drag_handle":"Przeciągnij uchwyt menu","sc_menu_open":"Otwórz menu gracza","components_ratings_link_alt":"Klasyfikacja wiekowa: {rating}. Kliknij tutaj, aby dowiedzieć się więcej o systemie klasyfikacji wiekowej","rp_icon":"Poziom RP","components_track_list_title":"Lista utworów","next_button_label":"Następna strona z filmami","previous_button_label":"Poprzednia strona z filmami"},"br":{"aria_label_open_new_window":"(Abre em uma nova janela)","pl_card_badge_content_complete":"Concluiu","plm_nav_scroll_left":"Rolar para a esquerda","plm_nav_scroll_right":"Rolar para a direita","language_selector_default":"Selecione um idioma","nofications_new":"Novas notificações","profile_selector_mugshot":"Foto de {userName}","profile_selector_profile_card":"Cartão de perfil","profile_selector_rp_icon":"Categoria de RP","profile_selector_switch_character":"Alternar personagem","sc_link_account":"Conta","sc_link_activity_feed":"Feed de atividade","sc_link_cookies_policy":"Política de cookies","sc_link_cookies_settings":"Configurações de cookies","sc_link_crews":"Comandos","sc_link_do_not_sell_my_information":"Não vendam a minha informação","sc_link_find_friends":"Encontrar amigos","sc_link_friends":"Amigos","sc_link_game_activation":"Ativação de jogos","sc_link_help":"Ajuda","sc_link_import_friends":"Importar amigos","sc_link_join_social_club":"Inscrever-se","sc_link_legal":"Aviso legal","sc_link_log_out":"Sair","sc_link_messages":"Mensagens","sc_link_my_friends":"Meus amigos","sc_link_notifications":"Notificações","sc_link_privacy_policy":"Política de Privacidade","sc_link_settings":"Configurações","sc_link_sign_in":"Iniciar sessão","sc_link_support":"Suporte","sc_link_view_my_profile":"Visualizar meu perfil","sc_menu_close":"Fechar menu de jogador","sc_menu_drag_handle":"Arrastar título do menu","sc_menu_open":"Abrir menu de jogador","components_ratings_link_alt":"Classificação Indicativa: {rating}. Clique aqui para saber mais sobre sistemas de classificação indicativa.","rp_icon":"Categoria de RP","components_track_list_title":"Lista de faixas","next_button_label":"Próxima página de vídeos","previous_button_label":"Página anterior de vídeos"},"ru":{"aria_label_open_new_window":"(ссылка откроется в новом окне)","pl_card_badge_content_complete":"Завершено","plm_nav_scroll_left":"Пролистать влево","plm_nav_scroll_right":"Пролистать вправо","language_selector_default":"Выбрать язык","nofications_new":"Новые уведомления","profile_selector_mugshot":"Фотография игрока {userName}","profile_selector_profile_card":"Карта профиля","profile_selector_rp_icon":"Категория опыта","profile_selector_switch_character":"Сменить персонажа","sc_link_account":"Учетная запись","sc_link_activity_feed":"Лента событий","sc_link_cookies_policy":"Политика использования файлов Cookie","sc_link_cookies_settings":"Настройки файлов Cookie","sc_link_crews":"Банды","sc_link_do_not_sell_my_information":"Я запрещаю продавать свою личную информацию","sc_link_find_friends":"Поиск друзей","sc_link_friends":"Друзья","sc_link_game_activation":"Активация игры","sc_link_help":"Помощь","sc_link_import_friends":"Импорт друзей","sc_link_join_social_club":"Регистрация","sc_link_legal":"Юридическая информация","sc_link_log_out":"Выход","sc_link_messages":"Сообщения","sc_link_my_friends":"Мои друзья","sc_link_notifications":"Уведомления","sc_link_privacy_policy":"Политика конфиденциальности","sc_link_settings":"Настройки","sc_link_sign_in":"Войти","sc_link_support":"Поддержка","sc_link_view_my_profile":"Моя учетная запись","sc_menu_close":"Закрыть меню игрока","sc_menu_drag_handle":"Перенести маркер меню","sc_menu_open":"Открыть меню игрока","components_ratings_link_alt":"Рейтинг: {rating}. Нажмите, чтобы узнать больше о системе рейтинга","rp_icon":"Категория опыта","components_track_list_title":"Список песен","next_button_label":"Следующая страница с видео","previous_button_label":"Предыдущая страница с видео"},"hans":{"aria_label_open_new_window":"（在新窗口中打开）","pl_card_badge_content_complete":"完成","plm_nav_scroll_left":"向左滚动","plm_nav_scroll_right":"向右滚动","language_selector_default":"选择一种语言","nofications_new":"新通知","profile_selector_mugshot":"{userName} 面部照片","profile_selector_profile_card":"档案卡","profile_selector_rp_icon":"声望值类别","profile_selector_switch_character":"切换角色","sc_link_account":"账户","sc_link_activity_feed":"活动动态","sc_link_cookies_policy":"Cookie 政策","sc_link_cookies_settings":"Cookie 设置","sc_link_crews":"帮会","sc_link_do_not_sell_my_information":"请勿出售我的信息","sc_link_find_friends":"查找好友","sc_link_friends":"好友","sc_link_game_activation":"游戏激活","sc_link_help":"帮助","sc_link_import_friends":"导入好友","sc_link_join_social_club":"注册","sc_link_legal":"法律声明","sc_link_log_out":"登出","sc_link_messages":"信息","sc_link_my_friends":"我的好友","sc_link_notifications":"通知","sc_link_privacy_policy":"隐私政策","sc_link_settings":"设置","sc_link_sign_in":"登录","sc_link_support":"支持","sc_link_view_my_profile":"查看我的档案","sc_menu_close":"关闭玩家菜单","sc_menu_drag_handle":"拖动菜单处理","sc_menu_open":"打开玩家菜单","components_ratings_link_alt":"评级：{rating}。点击此处了解评级系统的更多详情。","rp_icon":"声望值类别","components_track_list_title":"曲目列表","next_button_label":"下一页视频","previous_button_label":"上一页视频"},"tw":{"aria_label_open_new_window":"（在新視窗開啟）","pl_card_badge_content_complete":"完成","plm_nav_scroll_left":"向左捲動","plm_nav_scroll_right":"向右捲動","language_selector_default":"選擇語言","nofications_new":"新通知","profile_selector_mugshot":"{userName} 罪犯檔案照","profile_selector_profile_card":"資料卡","profile_selector_rp_icon":"聲望值類別","profile_selector_switch_character":"切換角色","sc_link_account":"帳戶","sc_link_activity_feed":"動態活動","sc_link_cookies_policy":"Cookie 政策","sc_link_cookies_settings":"Cookie 設定","sc_link_crews":"幫會","sc_link_do_not_sell_my_information":"不要販售我的個人資料","sc_link_find_friends":"尋找好友","sc_link_friends":"好友","sc_link_game_activation":"遊戲啟用","sc_link_help":"幫助","sc_link_import_friends":"匯入好友","sc_link_join_social_club":"註冊","sc_link_legal":"法律聲明","sc_link_log_out":"登出","sc_link_messages":"訊息","sc_link_my_friends":"我的好友","sc_link_notifications":"通知","sc_link_privacy_policy":"隱私權政策","sc_link_settings":"設定","sc_link_sign_in":"登入","sc_link_support":"支援","sc_link_view_my_profile":"查看我的設定檔","sc_menu_close":"關閉玩家選單","sc_menu_drag_handle":"拖曳選單控點","sc_menu_open":"開啟玩家選單","components_ratings_link_alt":"評分：{rating}。點擊此處以更加了解評分系統","rp_icon":"聲望值類別","components_track_list_title":"曲目清單","next_button_label":"下一個影片頁面","previous_button_label":"上一個影片頁面"}}'),
+        T = (0, c.Os)({
           aria_label_open_new_window: {
             id: "aria_label_open_new_window",
             defaultMessage: "(Opens in a new window)"
           }
         });
-      var m = a(57013);
-      const p = "rockstargames-sites-red-dead-redemption-2ff481c537a56a6fcdb1be85dfbc8944e";
-      var u = a(95240);
-      const g = (0, d.withIntl)((e => {
-        let {
-          children: t,
-          to: a = "#",
-          alt: s = "",
-          autoBlank: r = !1,
-          onClick: i = (() => {}),
-          focused: n = !1,
-          ...c
-        } = e;
-        const g = (0, o.useRef)(null),
-          f = (0, d.useIntl)(),
-          _ = !/^(https?|mailto):/i.test(a),
-          h = /^#/.test(a),
-          k = c?.target ?? (r ? "_blank" : "_self");
-        let {
-          ...b
-        } = c, v = "";
-        if ("aria-label" in b && b["aria-label"] && (v = "_blank" === k ? `${b["aria-label"]} ${f.formatMessage(l.aria_label_open_new_window)}` : b["aria-label"]), (0, o.useEffect)((() => {
-            n && g?.current && g.current.focus()
-          }), [g?.current, n]), h) {
-          const e = e => {
-            e.preventDefault(), document?.querySelector(`[id='${a.replace("#","")}']`)?.scrollIntoView({
-              behavior: "smooth",
-              block: "center"
-            }), i && i(e)
-          };
-          return (0, u.jsxs)("a", {
+      var C = a(57013);
+      const M = "rockstargames-modules-core-gif-viewerff481c537a56a6fcdb1be85dfbc8944e",
+        I = j((e => {
+          let {
+            children: t,
+            to: a = "#",
+            alt: s = "",
+            autoBlank: r = !1,
+            onClick: i = (() => {}),
+            focused: n = !1,
+            ...c
+          } = e;
+          const l = (0, o.useRef)(null),
+            m = (0, d.c)(),
+            u = !/^(https?|mailto):/i.test(a),
+            g = /^#/.test(a),
+            f = c?.target ?? (r ? "_blank" : "_self");
+          let {
+            ...p
+          } = c, _ = "";
+          if ("aria-label" in p && p["aria-label"] && (_ = "_blank" === f ? `${p["aria-label"]} ${m.formatMessage(T.aria_label_open_new_window)}` : p["aria-label"]), (0, o.useEffect)((() => {
+              n && l?.current && l.current.focus()
+            }), [l?.current, n]), g) {
+            const e = e => {
+              e.preventDefault(), document?.querySelector(`[id='${a.replace("#","")}']`)?.scrollIntoView({
+                behavior: "smooth",
+                block: "center"
+              }), i && i(e)
+            };
+            return (0, y.jsxs)("a", {
+              title: s,
+              href: a,
+              onClick: e,
+              ...p,
+              "aria-label": _,
+              ref: l,
+              children: [t, "_blank" === f && !_ && (0, y.jsx)("span", {
+                className: M,
+                children: m.formatMessage(T.aria_label_open_new_window)
+              })]
+            })
+          }
+          if (u) return (0, y.jsxs)(C.NavLink, {
             title: s,
+            to: a,
+            onClick: i,
+            ...p,
+            "aria-label": _,
+            ref: l,
+            children: [t, "_blank" === f && !_ && (0, y.jsx)("span", {
+              className: M,
+              children: m.formatMessage(T.aria_label_open_new_window)
+            })]
+          });
+          const h = Object.keys(p).filter((e => !["activeClassName", "key", "end"].includes(e))).reduce(((e, t) => ({
+            ...e,
+            [t]: c[t]
+          })), {});
+          return "function" == typeof h?.className && delete h.className, (0, y.jsxs)("a", {
             href: a,
-            onClick: e,
-            ...b,
-            "aria-label": v,
-            ref: g,
-            children: [t, "_blank" === k && !v && (0, u.jsx)("span", {
-              className: p,
-              children: f.formatMessage(l.aria_label_open_new_window)
+            title: s,
+            onClick: i,
+            target: f,
+            ...h,
+            "aria-label": _,
+            ref: l,
+            children: [t, "_blank" === f && !_ && (0, y.jsx)("span", {
+              className: M,
+              children: m.formatMessage(T.aria_label_open_new_window)
             })]
           })
-        }
-        if (_) return (0, u.jsxs)(m.NavLink, {
-          title: s,
-          to: a,
-          onClick: i,
-          ...b,
-          "aria-label": v,
-          ref: g,
-          children: [t, "_blank" === k && !v && (0, u.jsx)("span", {
-            className: p,
-            children: f.formatMessage(l.aria_label_open_new_window)
-          })]
-        });
-        const x = Object.keys(b).filter((e => !["activeClassName", "key", "end"].includes(e))).reduce(((e, t) => ({
-          ...e,
-          [t]: c[t]
-        })), {});
-        return "function" == typeof x?.className && delete x.className, (0, u.jsxs)("a", {
-          href: a,
-          title: s,
-          onClick: i,
-          target: k,
-          ...x,
-          "aria-label": v,
-          ref: g,
-          children: [t, "_blank" === k && !v && (0, u.jsx)("span", {
-            className: p,
-            children: f.formatMessage(l.aria_label_open_new_window)
-          })]
-        })
-      }), c);
-      var f = a(65772),
-        _ = a.n(f),
-        h = a(33052),
-        k = a(90048);
-      const b = {
-          player: "rockstargames-sites-red-dead-redemption-2bb43df423657efcc0f1f38630a24e5e8",
-          fixedToBottom: "rockstargames-sites-red-dead-redemption-2e1f497e3ec34c2fd721b124969e27dd5",
-          tracksOpen: "rockstargames-sites-red-dead-redemption-2e8f2736f0ae21a56045104071a7a9fd7",
-          tracks: "rockstargames-sites-red-dead-redemption-2ea84096a931648765b1db46f708f70aa",
-          iconBurger: "rockstargames-sites-red-dead-redemption-2b91aad66a2102668715c5ddaaecede2e",
-          trackList: "rockstargames-sites-red-dead-redemption-2c44536ca7b7fa7236e86c65ae309057e",
-          trackActive: "rockstargames-sites-red-dead-redemption-2ac7826f934fc777f58017b1a5752419a",
-          trackTitle: "rockstargames-sites-red-dead-redemption-2aafc522e642572d5ff93c7408b941829",
-          trackIndex: "rockstargames-sites-red-dead-redemption-2b880baa4707c71eb543f905816d8e952",
-          controls: "rockstargames-sites-red-dead-redemption-2ff92c8eddfc0a0fa7bc7f444973e4f28",
-          controlsCurrentBg: "rockstargames-sites-red-dead-redemption-2a81d9465f14d65e8e20800d7b25f77d9",
-          controlsCurrentBgVisible: "rockstargames-sites-red-dead-redemption-2c87bd14d2bbc9248d9c197b77454f345",
-          controlsTrack: "rockstargames-sites-red-dead-redemption-2c23bf574089d1af93750f6af8ebb489f",
-          controlsTrackTitle: "rockstargames-sites-red-dead-redemption-2e4b77d29e904f9928cca1de93f5c7745",
-          controlsTrackAnimating: "rockstargames-sites-red-dead-redemption-2ba49949a9cd8c22385708f267c625029",
-          scrollText: "rockstargames-sites-red-dead-redemption-2fd9c80e5afaa1ed38ce85f2c3d70eae4",
-          controlsTrackArtist: "rockstargames-sites-red-dead-redemption-2c93c1e5399d9fd5e96ca246fdbfb307b",
-          controlsTrackBurger: "rockstargames-sites-red-dead-redemption-2b4e1a16e3460b40c1aacd92afe219856",
-          controlsButtons: "rockstargames-sites-red-dead-redemption-2d136125994c1d0db1449fce51af559ca",
-          controlsScrub: "rockstargames-sites-red-dead-redemption-2d3d935648408f71928bd49d2f7c5a9ff",
-          controlsPlayPause: "rockstargames-sites-red-dead-redemption-2f5de7526c8cee98bdd7363fd7f2cf8ae",
-          controlsPlayPausePlaying: "rockstargames-sites-red-dead-redemption-2efb6194f0df966e6c8c759937d2fb826",
-          controlsNextTrack: "rockstargames-sites-red-dead-redemption-2f286e0ce01c5401e56dd579b076f1aae",
-          controlsPrevTrack: "rockstargames-sites-red-dead-redemption-2a56bb7cb4b0e2de481777d1f09c3f2f2",
-          controlsScrubTrack: "rockstargames-sites-red-dead-redemption-2b8f38f45353fa54fcb6f9e2a3d0d5a85"
+        }), S);
+      var E = a(65772),
+        L = a.n(E),
+        z = a(33052),
+        P = a(90048);
+      const O = {
+          player: "rockstargames-modules-core-gif-viewerbb43df423657efcc0f1f38630a24e5e8",
+          fixedToBottom: "rockstargames-modules-core-gif-viewere1f497e3ec34c2fd721b124969e27dd5",
+          tracksOpen: "rockstargames-modules-core-gif-viewere8f2736f0ae21a56045104071a7a9fd7",
+          tracks: "rockstargames-modules-core-gif-viewerea84096a931648765b1db46f708f70aa",
+          iconBurger: "rockstargames-modules-core-gif-viewerb91aad66a2102668715c5ddaaecede2e",
+          trackList: "rockstargames-modules-core-gif-viewerc44536ca7b7fa7236e86c65ae309057e",
+          trackActive: "rockstargames-modules-core-gif-viewerac7826f934fc777f58017b1a5752419a",
+          trackTitle: "rockstargames-modules-core-gif-vieweraafc522e642572d5ff93c7408b941829",
+          trackIndex: "rockstargames-modules-core-gif-viewerb880baa4707c71eb543f905816d8e952",
+          controls: "rockstargames-modules-core-gif-viewerff92c8eddfc0a0fa7bc7f444973e4f28",
+          controlsCurrentBg: "rockstargames-modules-core-gif-viewera81d9465f14d65e8e20800d7b25f77d9",
+          controlsCurrentBgVisible: "rockstargames-modules-core-gif-viewerc87bd14d2bbc9248d9c197b77454f345",
+          controlsTrack: "rockstargames-modules-core-gif-viewerc23bf574089d1af93750f6af8ebb489f",
+          controlsTrackTitle: "rockstargames-modules-core-gif-viewere4b77d29e904f9928cca1de93f5c7745",
+          controlsTrackAnimating: "rockstargames-modules-core-gif-viewerba49949a9cd8c22385708f267c625029",
+          scrollText: "rockstargames-modules-core-gif-viewerfd9c80e5afaa1ed38ce85f2c3d70eae4",
+          controlsTrackArtist: "rockstargames-modules-core-gif-viewerc93c1e5399d9fd5e96ca246fdbfb307b",
+          controlsTrackBurger: "rockstargames-modules-core-gif-viewerb4e1a16e3460b40c1aacd92afe219856",
+          controlsButtons: "rockstargames-modules-core-gif-viewerd136125994c1d0db1449fce51af559ca",
+          controlsScrub: "rockstargames-modules-core-gif-viewerd3d935648408f71928bd49d2f7c5a9ff",
+          controlsPlayPause: "rockstargames-modules-core-gif-viewerf5de7526c8cee98bdd7363fd7f2cf8ae",
+          controlsPlayPausePlaying: "rockstargames-modules-core-gif-viewerefb6194f0df966e6c8c759937d2fb826",
+          controlsNextTrack: "rockstargames-modules-core-gif-viewerf286e0ce01c5401e56dd579b076f1aae",
+          controlsPrevTrack: "rockstargames-modules-core-gif-viewera56bb7cb4b0e2de481777d1f09c3f2f2",
+          controlsScrubTrack: "rockstargames-modules-core-gif-viewerb8f38f45353fa54fcb6f9e2a3d0d5a85"
         },
-        v = e => {
+        D = e => {
           let {
             src: t
           } = e;
-          return (0, u.jsx)("div", {
-            className: b.cover,
+          return (0, y.jsx)("div", {
+            className: O.cover,
             style: {
               background: `url(${t}) center/cover`
             }
           })
         },
-        x = e => {
+        A = e => {
           let {
             timing: t = {
               current: 0,
@@ -2266,17 +2457,17 @@ _global.SENTRY_RELEASE = {
             setPlaying: r,
             tracksOpen: i,
             setTracksOpen: n,
-            trackData: d,
-            setTrackId: c,
-            trackBounds: l,
+            trackData: c,
+            setTrackId: l,
+            trackBounds: d,
             setAutoNext: m
           } = e;
-          const p = (0, o.useRef)(null),
+          const u = (0, o.useRef)(null),
             g = (0, o.useRef)(null),
             f = (0, o.useRef)(null),
-            [h, k] = (0, o.useState)(null),
-            [v, x] = (0, o.useState)(!1),
-            y = e => {
+            [p, _] = (0, o.useState)(null),
+            [h, v] = (0, o.useState)(!1),
+            k = e => {
               const t = new Date(1e3 * e),
                 a = t.getUTCMinutes(),
                 s = t.getSeconds();
@@ -2285,17 +2476,17 @@ _global.SENTRY_RELEASE = {
           return (0, o.useEffect)((() => {
             if (!g.current || !f.current) return;
             const e = () => {
-              f.current && g.current && k(f.current.clientWidth > g.current.clientWidth)
+              f.current && g.current && _(f.current.clientWidth > g.current.clientWidth)
             };
             return window.addEventListener("resize", e), e(), () => window.removeEventListener("resize", e)
           }), [f, g, t]), (0, o.useEffect)((() => {
-            if (!p.current || !t?.duration) return;
+            if (!u.current || !t?.duration) return;
             let e = null;
-            const a = new(_())(p.current),
+            const a = new(L())(u.current),
               r = e => {
-                if (p.current) {
-                  const a = p.current.clientWidth;
-                  if (!p.current.contains(e.srcEvent.target)) return;
+                if (u.current) {
+                  const a = u.current.clientWidth;
+                  if (!u.current.contains(e.srcEvent.target)) return;
                   const r = Math.max(0, e.srcEvent.offsetX),
                     i = Number(r / a * t.duration);
                   s.currentTime = i
@@ -2310,67 +2501,67 @@ _global.SENTRY_RELEASE = {
             return a.on("panstart", n), a.on("panleft", r), a.on("panright", r), a.on("panend", i), a.on("tap", r), () => {
               a.off("panstart", n), a.off("panleft", r), a.off("panright", r), a.off("panend", i), a.off("tap", r)
             }
-          }), [p.current, t.duration]), (0, o.useEffect)((() => {
+          }), [u.current, t.duration]), (0, o.useEffect)((() => {
             const e = Number(s?.currentTime);
-            (a || !isNaN(e) && 0 !== e) && x(!0)
-          }), [a, s?.currentTime]), (0, u.jsxs)("div", {
-            className: b.controls,
+            (a || !isNaN(e) && 0 !== e) && v(!0)
+          }), [a, s?.currentTime]), (0, y.jsxs)("div", {
+            className: O.controls,
             style: {
-              "--track-color": d.color,
-              "--track-mix-blend-mode": d.mix_blend_mode,
+              "--track-color": c.color,
+              "--track-mix-blend-mode": c.mix_blend_mode,
               "--current-pct": t.current / t.duration
             },
-            children: [(0, u.jsx)("div", {
-              className: [b.controlsCurrentBg, v ? b.controlsCurrentBgVisible : ""].join(" ")
-            }), (0, u.jsx)("div", {
-              className: b.controlsTrack,
+            children: [(0, y.jsx)("div", {
+              className: [O.controlsCurrentBg, h ? O.controlsCurrentBgVisible : ""].join(" ")
+            }), (0, y.jsx)("div", {
+              className: O.controlsTrack,
               ref: g,
-              children: (0, u.jsx)("span", {
-                className: [b.controlsTrackTitle, h ? b.controlsTrackAnimating : ""].join(" "),
+              children: (0, y.jsx)("span", {
+                className: [O.controlsTrackTitle, p ? O.controlsTrackAnimating : ""].join(" "),
                 ref: f,
-                children: d.title
+                children: c.title
               })
-            }), (0, u.jsxs)("div", {
-              className: b.controlsButtons,
-              children: [(0, u.jsx)("div", {
-                className: b.controlsPrevTrack,
+            }), (0, y.jsxs)("div", {
+              className: O.controlsButtons,
+              children: [(0, y.jsx)("div", {
+                className: O.controlsPrevTrack,
                 onClick: () => {
-                  l && (c(l[0]), m(!0), r(!0))
+                  d && (l(d[0]), m(!0), r(!0))
                 }
-              }), (0, u.jsx)("div", {
-                className: [b.controlsPlayPause, a ? b.controlsPlayPausePlaying : ""].join(" "),
+              }), (0, y.jsx)("div", {
+                className: [O.controlsPlayPause, a ? O.controlsPlayPausePlaying : ""].join(" "),
                 onClick: () => {
                   r(!a)
                 }
-              }), (0, u.jsx)("div", {
-                className: b.controlsNextTrack,
+              }), (0, y.jsx)("div", {
+                className: O.controlsNextTrack,
                 onClick: () => {
-                  l && (c(l[1]), m(!0), r(!0))
+                  d && (l(d[1]), m(!0), r(!0))
                 }
               })]
-            }), (0, u.jsx)("div", {
+            }), (0, y.jsx)("div", {
               active: i ? "" : null,
-              className: b.controlsTrackBurger,
-              children: (0, u.jsx)("div", {
-                className: b.iconBurger,
+              className: O.controlsTrackBurger,
+              children: (0, y.jsx)("div", {
+                className: O.iconBurger,
                 onClick: () => {
                   n(!i)
                 }
               })
-            }), (0, u.jsxs)("div", {
-              className: b.controlsScrub,
-              children: [(0, u.jsx)("span", {
-                children: y(t.current)
-              }), (0, u.jsx)("div", {
-                className: b.controlsScrubTrack,
-                ref: p
-              }), (0, u.jsx)("span", {
-                children: y(t.duration)
+            }), (0, y.jsxs)("div", {
+              className: O.controlsScrub,
+              children: [(0, y.jsx)("span", {
+                children: k(t.current)
+              }), (0, y.jsx)("div", {
+                className: O.controlsScrubTrack,
+                ref: u
+              }), (0, y.jsx)("span", {
+                children: k(t.duration)
               })]
             })]
           })
         },
-        y = e => {
+        B = e => {
           let {
             tracks: t,
             trackId: a,
@@ -2380,156 +2571,156 @@ _global.SENTRY_RELEASE = {
             setPlaying: n,
             setAutoNext: o
           } = e;
-          return (0, u.jsxs)("div", {
-            className: b.tracks,
-            children: [(0, u.jsx)("h4", {
+          return (0, y.jsxs)("div", {
+            className: O.tracks,
+            children: [(0, y.jsx)("h4", {
               children: "Tracks"
-            }), (0, u.jsx)("div", {
-              className: b.trackBurger,
+            }), (0, y.jsx)("div", {
+              className: O.trackBurger,
               onClick: () => {
                 i(!r)
               }
-            }), (0, u.jsx)("div", {
-              className: b.trackList,
-              children: t.map(((e, t) => (0, u.jsxs)("a", {
+            }), (0, y.jsx)("div", {
+              className: O.trackList,
+              children: t.map(((e, t) => (0, y.jsxs)("a", {
                 style: {
                   "--highlight-color": e.color
                 },
-                className: a === e.id ? b.trackActive : "",
+                className: a === e.id ? O.trackActive : "",
                 onClick: () => {
                   s(e.id), n(!0), o(!0)
                 },
-                children: [(0, u.jsx)("span", {
-                  className: b.trackIndex,
+                children: [(0, y.jsx)("span", {
+                  className: O.trackIndex,
                   children: String(t + 1).padStart(2, "0")
-                }), (0, u.jsx)("span", {
-                  className: b.trackTitle,
+                }), (0, y.jsx)("span", {
+                  className: O.trackTitle,
                   children: e.title
-                }), (0, u.jsx)("span", {
-                  className: b.trackTime,
+                }), (0, y.jsx)("span", {
+                  className: O.trackTime,
                   children: e.duration
                 })]
               }, e.id)))
             })]
           })
         },
-        w = e => {
+        V = e => {
           let {
             id: t,
             className: a = ""
           } = e;
           const {
             data: s
-          } = (0, h.useQuery)(k.GetAudioAlbum, {
+          } = (0, z.useQuery)(P.GetAudioAlbum, {
             variables: {
               id: t
             }
-          }), [r, i] = (0, o.useState)(), [n, d] = (0, o.useState)(), [c, l] = (0, o.useState)(), [m, p] = (0, o.useState)(!1), [g, f] = (0, o.useState)(!1), [_, w] = (0, o.useState)(new HTMLAudioElement), [N, j] = (0, o.useState)({
+          }), [r, i] = (0, o.useState)(), [n, c] = (0, o.useState)(), [l, d] = (0, o.useState)(), [m, u] = (0, o.useState)(!1), [g, f] = (0, o.useState)(!1), [p, _] = (0, o.useState)(new HTMLAudioElement), [h, v] = (0, o.useState)({
             current: 0,
             duration: 0
-          }), [S, T] = (0, o.useState)(!0);
+          }), [k, b] = (0, o.useState)(!0);
           return (0, o.useEffect)((() => {
             const e = "audio",
               t = t => {
-                t?.data?.rockstarAudioPlayerPlayTrackId && (d(t.data.rockstarAudioPlayerPlayTrackId), T(!1), f(!0)), g && t?.data?.attentionBlurredElsewhere && t?.data?.from !== e && f(!1)
+                t?.data?.rockstarAudioPlayerPlayTrackId && (c(t.data.rockstarAudioPlayerPlayTrackId), b(!1), f(!0)), g && t?.data?.attentionBlurredElsewhere && t?.data?.from !== e && f(!1)
               };
             return g && window.postMessage({
               attentionBlurredElsewhere: !0,
               from: e
             }), window.addEventListener("message", t, !1), () => window.removeEventListener("message", t, !1)
           }), [g]), (0, o.useEffect)((() => {
-            if (!_) return;
+            if (!p) return;
             const e = () => {
-                isNaN(_.duration) || j({
-                  duration: _?.duration ?? 0,
-                  current: _?.currentTime ?? 0
+                isNaN(p.duration) || v({
+                  duration: p?.duration ?? 0,
+                  current: p?.currentTime ?? 0
                 })
               },
               t = () => {
-                S && r && d(r[1])
+                k && r && c(r[1])
               };
-            return _.addEventListener("loadedmetadata", e), _.addEventListener("timeupdate", e), _.addEventListener("ended", t), () => {
-              _.removeEventListener("loadedmetadata", e), _.removeEventListener("timeupdate", e), _.removeEventListener("ended", t)
+            return p.addEventListener("loadedmetadata", e), p.addEventListener("timeupdate", e), p.addEventListener("ended", t), () => {
+              p.removeEventListener("loadedmetadata", e), p.removeEventListener("timeupdate", e), p.removeEventListener("ended", t)
             }
-          }), [_, r, S]), (0, o.useEffect)((() => {
+          }), [p, r, k]), (0, o.useEffect)((() => {
             g && window.postMessage({
               attentionBlurredElsewhere: !0,
               from: "audio"
             })
           }), [g]), (0, o.useEffect)((() => {
-            _ && (g ? _.play() : _.pause(), p(!1))
-          }), [g, _, c?.id]), (0, o.useEffect)((() => {
+            p && (g ? p.play() : p.pause(), u(!1))
+          }), [g, p, l?.id]), (0, o.useEffect)((() => {
             if (!n) return;
             const {
               tracks: e
             } = s.audioAlbum, t = s.audioAlbum.tracks.findIndex((e => e.id === n));
-            i([e[t - 1]?.id ?? e[e.length - 1].id, e[t + 1]?.id ?? e[0].id]), l(e[t])
+            i([e[t - 1]?.id ?? e[e.length - 1].id, e[t + 1]?.id ?? e[0].id]), d(e[t])
           }), [n]), (0, o.useEffect)((() => {
-            s && d(s.audioAlbum.tracks[0].id)
-          }), [s]), c ? (0, u.jsxs)("div", {
-            className: [b.player, b[a], m ? b.tracksOpen : ""].join(" "),
-            children: [(0, u.jsx)("audio", {
+            s && c(s.audioAlbum.tracks[0].id)
+          }), [s]), l ? (0, y.jsxs)("div", {
+            className: [O.player, O[a], m ? O.tracksOpen : ""].join(" "),
+            children: [(0, y.jsx)("audio", {
               ref: e => {
-                w(e)
+                _(e)
               },
-              src: c.mp3_src
-            }), (0, u.jsx)(y, {
+              src: l.mp3_src
+            }), (0, y.jsx)(B, {
               tracks: s.audioAlbum.tracks,
-              setTrackId: d,
+              setTrackId: c,
               trackId: n,
               tracksOpen: m,
-              setTracksOpen: p,
+              setTracksOpen: u,
               setPlaying: f,
-              setAutoNext: T
-            }), (0, u.jsx)(v, {
-              src: c.cover_src
-            }), (0, u.jsx)(x, {
-              setTrackId: d,
+              setAutoNext: b
+            }), (0, y.jsx)(D, {
+              src: l.cover_src
+            }), (0, y.jsx)(A, {
+              setTrackId: c,
               trackBounds: r,
               tracksOpen: m,
-              setTracksOpen: p,
+              setTracksOpen: u,
               playing: g,
               setPlaying: f,
-              timing: N,
-              trackData: c,
-              audioRef: _,
-              setAutoNext: T
+              timing: h,
+              trackData: l,
+              audioRef: p,
+              setAutoNext: b
             })]
           }) : null
         },
-        N = e => {
+        R = e => {
           let {
             text: t,
             style: a
           } = e;
-          return (0, u.jsx)("div", {
-            className: "rockstargames-sites-red-dead-redemption-2b61bd7f274fd6d93c4bf33a9284b6b67",
+          return (0, y.jsx)("div", {
+            className: "rockstargames-modules-core-gif-viewerb61bd7f274fd6d93c4bf33a9284b6b67",
             style: a,
             children: t
           })
         },
-        j = e => {
+        F = e => {
           let {
             brands: t = []
           } = e;
-          return t.length ? (0, u.jsx)("div", {
-            className: "rockstargames-sites-red-dead-redemption-2cde08e212f23b312d5afca7f2ea1105c",
+          return t.length ? (0, y.jsx)("div", {
+            className: "rockstargames-modules-core-gif-viewercde08e212f23b312d5afca7f2ea1105c",
             children: t.map(((e, t) => {
               let {
                 brand: a
               } = e;
-              return (0, u.jsx)("div", {
-                className: "rockstargames-sites-red-dead-redemption-2c894fe869384587702b5370da072be86",
+              return (0, y.jsx)("div", {
+                className: "rockstargames-modules-core-gif-viewerc894fe869384587702b5370da072be86",
                 "data-brand": a
               }, t)
             }))
           }) : null
         },
-        S = {
-          button: "rockstargames-sites-red-dead-redemption-2e056494c33cff1fe89431f279fdb6b9a",
-          secondary: "rockstargames-sites-red-dead-redemption-2d340cf27f380a4347994e59544432eb3"
+        $ = {
+          button: "rockstargames-modules-core-gif-viewere056494c33cff1fe89431f279fdb6b9a",
+          secondary: "rockstargames-modules-core-gif-viewerd340cf27f380a4347994e59544432eb3"
         },
-        T = e => {
+        U = e => {
           let {
             className: t = "",
             children: a,
@@ -2538,14 +2729,14 @@ _global.SENTRY_RELEASE = {
             onClick: i,
             ...n
           } = e;
-          const o = [S.button, S[s], t].join(" ");
-          return r ? (0, u.jsx)(g, {
+          const o = [$.button, $[s], t].join(" ");
+          return r ? (0, y.jsx)(I, {
             ...n,
             to: r,
             className: o,
             onClick: i,
             children: a
-          }) : (0, u.jsx)("button", {
+          }) : (0, y.jsx)("button", {
             ...n,
             type: "button",
             className: o,
@@ -2553,26 +2744,26 @@ _global.SENTRY_RELEASE = {
             children: a
           })
         };
-      var C = a(1740);
-      const M = {
-          pillBtn: "rockstargames-sites-red-dead-redemption-2b59962d0e68ccd73b5ee2e571528d469",
-          selected: "rockstargames-sites-red-dead-redemption-2f5c57dad202e0d6ff855d5a4aca2c804",
-          plusButton: "rockstargames-sites-red-dead-redemption-2cffaf489342637258d28f9b3b718836a",
-          small: "rockstargames-sites-red-dead-redemption-2b8abf927f0ba0af0d8ac0e9c77690d34",
-          btnText: "rockstargames-sites-red-dead-redemption-2e6e56461bfc2e426c4abc5451cd17284",
-          btnTexticon: "rockstargames-sites-red-dead-redemption-2cef9f9ce913d167a1fe2e7118a407cdd",
-          whiteBtn: "rockstargames-sites-red-dead-redemption-2b257e0629b9f8e101791d7a948ed15be",
-          blackBtn: "rockstargames-sites-red-dead-redemption-2cb03bccaee79394858682d2ce4d08253",
-          transparentBtn: "rockstargames-sites-red-dead-redemption-2d0460159a17533d4d23686d7dca76794",
-          iconBtn: "rockstargames-sites-red-dead-redemption-2ac61186c3c22346c9a4ee2cd2820d341",
-          link: "rockstargames-sites-red-dead-redemption-2c5920e56149b82f20f4db2ad9d397495",
-          xboxone: "rockstargames-sites-red-dead-redemption-2a7057f2e6d398341f57bc462716d0508",
-          xboxseriesxs: "rockstargames-sites-red-dead-redemption-2a693ab5879f34d7dea1737d3172ed4e4",
-          ps4: "rockstargames-sites-red-dead-redemption-2a029ff88fc9aef470aaeef8053f90436",
-          ps5: "rockstargames-sites-red-dead-redemption-2e25638751cf3e7267db23c6a401fcc36",
-          pc: "rockstargames-sites-red-dead-redemption-2e03d92653f19a7ae3c4b3d5137bc9909"
+      var G = a(1740);
+      const H = {
+          pillBtn: "rockstargames-modules-core-gif-viewerb59962d0e68ccd73b5ee2e571528d469",
+          selected: "rockstargames-modules-core-gif-viewerf5c57dad202e0d6ff855d5a4aca2c804",
+          plusButton: "rockstargames-modules-core-gif-viewercffaf489342637258d28f9b3b718836a",
+          small: "rockstargames-modules-core-gif-viewerb8abf927f0ba0af0d8ac0e9c77690d34",
+          btnText: "rockstargames-modules-core-gif-viewere6e56461bfc2e426c4abc5451cd17284",
+          btnTexticon: "rockstargames-modules-core-gif-viewercef9f9ce913d167a1fe2e7118a407cdd",
+          whiteBtn: "rockstargames-modules-core-gif-viewerb257e0629b9f8e101791d7a948ed15be",
+          blackBtn: "rockstargames-modules-core-gif-viewercb03bccaee79394858682d2ce4d08253",
+          transparentBtn: "rockstargames-modules-core-gif-viewerd0460159a17533d4d23686d7dca76794",
+          iconBtn: "rockstargames-modules-core-gif-viewerac61186c3c22346c9a4ee2cd2820d341",
+          link: "rockstargames-modules-core-gif-viewerc5920e56149b82f20f4db2ad9d397495",
+          xboxone: "rockstargames-modules-core-gif-viewera7057f2e6d398341f57bc462716d0508",
+          xboxseriesxs: "rockstargames-modules-core-gif-viewera693ab5879f34d7dea1737d3172ed4e4",
+          ps4: "rockstargames-modules-core-gif-viewera029ff88fc9aef470aaeef8053f90436",
+          ps5: "rockstargames-modules-core-gif-viewere25638751cf3e7267db23c6a401fcc36",
+          pc: "rockstargames-modules-core-gif-viewere03d92653f19a7ae3c4b3d5137bc9909"
         },
-        I = e => {
+        q = e => {
           let {
             children: t,
             className: a,
@@ -2580,7 +2771,7 @@ _global.SENTRY_RELEASE = {
             style: r,
             ariaLabel: i
           } = e;
-          return (0, u.jsx)("button", {
+          return (0, y.jsx)("button", {
             className: a,
             onClick: s,
             style: r,
@@ -2589,7 +2780,7 @@ _global.SENTRY_RELEASE = {
             children: t
           })
         },
-        E = e => {
+        W = e => {
           let {
             children: t,
             className: a,
@@ -2598,7 +2789,7 @@ _global.SENTRY_RELEASE = {
             to: i,
             ariaLabel: n
           } = e;
-          return (0, u.jsx)(m.NavLink, {
+          return (0, y.jsx)(C.NavLink, {
             className: a,
             onClick: s,
             style: r,
@@ -2607,7 +2798,7 @@ _global.SENTRY_RELEASE = {
             children: t
           })
         },
-        L = e => {
+        X = e => {
           let {
             btnColor: t = "#fff",
             className: a = "",
@@ -2616,83 +2807,83 @@ _global.SENTRY_RELEASE = {
             img: i,
             labelColor: n = "#000",
             onClick: o,
-            secondText: d,
-            size: c,
-            text: l,
+            secondText: c,
+            size: l,
+            text: d,
             to: m,
-            type: p = "",
+            type: u = "",
             ariaLabel: g
           } = e;
-          const f = [M.plusButton, M[p] ?? "", M[c] ?? "", M[s] ?? "", a].join(" "),
-            _ = {
+          const f = [H.plusButton, H[u] ?? "", H[l] ?? "", H[s] ?? "", a].join(" "),
+            p = {
               "--hvr-color": t ?? n,
               "--hvr-bg-color": n ?? t,
               "--hvr-border-color": t ?? n
             },
-            h = (0, u.jsxs)(u.Fragment, {
-              children: [i ? (0, u.jsx)("img", {
+            _ = (0, y.jsxs)(y.Fragment, {
+              children: [i ? (0, y.jsx)("img", {
                 src: i,
                 alt: ""
-              }) : "", (0, u.jsxs)("div", {
-                className: M.btnText,
+              }) : "", (0, y.jsxs)("div", {
+                className: H.btnText,
                 icon: r,
-                children: [l, d ? (0, u.jsx)("span", {
-                  children: d
+                children: [d, c ? (0, y.jsx)("span", {
+                  children: c
                 }) : ""]
               })]
             });
           if (m) {
             if (m.startsWith("http")) {
               const e = m.startsWith(document.location.origin) ? "_self" : "_blank";
-              return (0, u.jsx)("span", {
+              return (0, y.jsx)("span", {
                 onClick: o,
                 onKeyDown: o,
                 className: f,
                 role: "button",
                 "aria-label": g,
                 tabIndex: 0,
-                children: (0, u.jsx)("a", {
+                children: (0, y.jsx)("a", {
                   href: m,
                   target: e,
-                  children: h
+                  children: _
                 })
               })
             }
-            return (0, u.jsx)(E, {
+            return (0, y.jsx)(W, {
               className: f,
               onClick: o,
               style: {
-                ..._
+                ...p
               },
               to: m,
               ariaLabel: g,
-              children: h
+              children: _
             })
           }
-          return (0, u.jsx)(I, {
+          return (0, y.jsx)(q, {
             className: f,
             onClick: o,
             style: {
-              ..._
+              ...p
             },
             ariaLabel: g,
-            children: h
+            children: _
           })
         },
-        z = e => {
+        Y = e => {
           let {
             buttons: t = [],
             className: a
           } = e;
-          return t.length ? (0, u.jsx)("div", {
-            className: (0, C.classList)("rockstargames-sites-red-dead-redemption-2b411a36e7fd12ab75861fe560b31b206", a),
+          return t.length ? (0, y.jsx)("div", {
+            className: (0, G.classList)("rockstargames-modules-core-gif-viewerb411a36e7fd12ab75861fe560b31b206", a),
             children: t.map(((e, t) => {
               let {
                 icon: a,
                 title: s,
                 to: r
               } = e;
-              return s ? (0, u.jsx)(L, {
+              return s ? (0, y.jsx)(X, {
                 icon: a,
                 text: s,
                 to: r
@@ -2700,33 +2891,33 @@ _global.SENTRY_RELEASE = {
             }))
           }) : null
         };
-      var P = a(48111),
-        O = a(12231);
-      const A = {
-          deprecatedCarousel: "rockstargames-sites-red-dead-redemption-2eb5df7b3d51dffc4d993ca7abce4e944",
-          "swiper-scrollbar-disabled": "rockstargames-sites-red-dead-redemption-2eb2dda6769a7c20a31e7996ff62e41f8",
-          "swiper-horizontal": "rockstargames-sites-red-dead-redemption-2b11093de3cb4f18ea2d59b8d4d1db44c",
-          "swiper-vertical": "rockstargames-sites-red-dead-redemption-2fa3209fdf995734a1aeeac2cc72cc1ea",
-          renderedWithChildren: "rockstargames-sites-red-dead-redemption-2c9f15e74b3166cd0db40501fcc70e868",
-          panorama: "rockstargames-sites-red-dead-redemption-2f2a7e77af5dff445e978fd575a567508",
-          img: "rockstargames-sites-red-dead-redemption-2f1d3d54c266a20fa0cbe9c342b0d98da",
-          hideMobile: "rockstargames-sites-red-dead-redemption-2e70d5eaa273e4a0a40ee62a308491810",
-          hideLarge: "rockstargames-sites-red-dead-redemption-2bace2af6c822ba7b36b53923629cba0f",
-          imageAreaBg: "rockstargames-sites-red-dead-redemption-2f4bb071e6dad07c75b78ea21269ca662",
-          infinite_false: "rockstargames-sites-red-dead-redemption-2d6c3d175b843462bf23a1a1f3af6b095",
-          track: "rockstargames-sites-red-dead-redemption-2b5ff781c4a96bf031e8e7f5e0c9af395",
-          perico: "rockstargames-sites-red-dead-redemption-2bb97d296d17b7e801c6c0719a79463dd",
-          dotsSlide: "rockstargames-sites-red-dead-redemption-2dd55a6f93254ed13542089c6f36e0048",
-          siblings: "rockstargames-sites-red-dead-redemption-2a59cf4385528c371a13be9962b67131b",
-          active: "rockstargames-sites-red-dead-redemption-2aa5e195e0c7c6336929553314d52a896",
-          "swiper-preloader-spin": "rockstargames-sites-red-dead-redemption-2c05cc0faa8239c85cdc7d53c7e120e8e"
+      var K = a(48111),
+        Q = a(12231);
+      const Z = {
+          deprecatedCarousel: "rockstargames-modules-core-gif-viewereb5df7b3d51dffc4d993ca7abce4e944",
+          "swiper-scrollbar-disabled": "rockstargames-modules-core-gif-viewereb2dda6769a7c20a31e7996ff62e41f8",
+          "swiper-horizontal": "rockstargames-modules-core-gif-viewerb11093de3cb4f18ea2d59b8d4d1db44c",
+          "swiper-vertical": "rockstargames-modules-core-gif-viewerfa3209fdf995734a1aeeac2cc72cc1ea",
+          renderedWithChildren: "rockstargames-modules-core-gif-viewerc9f15e74b3166cd0db40501fcc70e868",
+          panorama: "rockstargames-modules-core-gif-viewerf2a7e77af5dff445e978fd575a567508",
+          img: "rockstargames-modules-core-gif-viewerf1d3d54c266a20fa0cbe9c342b0d98da",
+          hideMobile: "rockstargames-modules-core-gif-viewere70d5eaa273e4a0a40ee62a308491810",
+          hideLarge: "rockstargames-modules-core-gif-viewerbace2af6c822ba7b36b53923629cba0f",
+          imageAreaBg: "rockstargames-modules-core-gif-viewerf4bb071e6dad07c75b78ea21269ca662",
+          infinite_false: "rockstargames-modules-core-gif-viewerd6c3d175b843462bf23a1a1f3af6b095",
+          track: "rockstargames-modules-core-gif-viewerb5ff781c4a96bf031e8e7f5e0c9af395",
+          perico: "rockstargames-modules-core-gif-viewerbb97d296d17b7e801c6c0719a79463dd",
+          dotsSlide: "rockstargames-modules-core-gif-viewerdd55a6f93254ed13542089c6f36e0048",
+          siblings: "rockstargames-modules-core-gif-viewera59cf4385528c371a13be9962b67131b",
+          active: "rockstargames-modules-core-gif-vieweraa5e195e0c7c6336929553314d52a896",
+          "swiper-preloader-spin": "rockstargames-modules-core-gif-viewerc05cc0faa8239c85cdc7d53c7e120e8e"
         },
-        D = e => {
+        J = e => {
           let {
             item: t
           } = e;
-          return (0, u.jsxs)("div", {
-            children: [(0, u.jsx)(wt, {
+          return (0, y.jsxs)("div", {
+            children: [(0, y.jsx)(Bt, {
               image: t?.image,
               badge: t?.badge ?? t?.image?.badge,
               badgeType: "badge3",
@@ -2735,29 +2926,29 @@ _global.SENTRY_RELEASE = {
               type: t?.type,
               ariaLabel: t?.image?.ariaLabel ?? t.description,
               style: t?.style,
-              className: (0, C.classList)(A.img, t?.className)
-            }), (t?.title || t?.description) && (0, u.jsx)(je, {
+              className: (0, G.classList)(Z.img, t?.className)
+            }), (t?.title || t?.description) && (0, y.jsx)(Fe, {
               item: t
             })]
           })
         },
-        B = e => {
+        ee = e => {
           let {
             current: t,
             total: a
           } = e;
-          return (0, u.jsx)("div", {
+          return (0, y.jsx)("div", {
             className: "swiper-scrollbar",
             style: {
               "--current-slide": t,
               "--total-slides": a
             },
-            children: (0, u.jsx)("div", {
+            children: (0, y.jsx)("div", {
               className: "swiper-scrollbar-drag"
             })
           })
         },
-        V = e => {
+        te = e => {
           let {
             children: t,
             items: a = [],
@@ -2765,88 +2956,88 @@ _global.SENTRY_RELEASE = {
             noInfiniteScroll: r = !1,
             className: i = "",
             renderTemplate: n = "standard",
-            text: d,
-            customSpaceBetween: c = null,
-            centerSlides: l = !0,
+            text: c,
+            customSpaceBetween: l = null,
+            centerSlides: d = !0,
             centeredSlidesBounds: m = !1
           } = e;
-          const [p, g] = (0, o.useState)(0), f = (0, o.useMemo)((() => t && Array.isArray(t) ? t.map((() => (0, O.c)())) : null), [t]);
+          const [u, g] = (0, o.useState)(0), f = (0, o.useMemo)((() => t && Array.isArray(t) ? t.map((() => (0, Q.c)())) : null), [t]);
           if (!(a && 0 !== a?.length || t)) return null;
-          const _ = {
+          const p = {
             0: {
-              spaceBetween: c ?? 16
+              spaceBetween: l ?? 16
             },
             1024: {
-              spaceBetween: c ?? 18
+              spaceBetween: l ?? 18
             },
             1920: {
-              spaceBetween: c ?? 20
+              spaceBetween: l ?? 20
             },
             2560: {
-              spaceBetween: c ?? 22
+              spaceBetween: l ?? 22
             }
           };
-          return (0, u.jsxs)("div", {
-            className: (0, C.classList)(A.deprecatedCarousel, A[n], A[`infinite_${!r}`], t ? A.renderedWithChildren : "", i),
+          return (0, y.jsxs)("div", {
+            className: (0, G.classList)(Z.deprecatedCarousel, Z[n], Z[`infinite_${!r}`], t ? Z.renderedWithChildren : "", i),
             style: s,
-            children: [(0, u.jsxs)(P.wx, {
+            children: [(0, y.jsxs)(K.wx, {
               loop: !r,
               grabCursor: !0,
-              centeredSlides: l,
-              centerInsufficientSlides: l,
+              centeredSlides: d,
+              centerInsufficientSlides: d,
               slidesPerView: "auto",
               speed: 700,
-              breakpoints: _,
+              breakpoints: p,
               onUpdate: () => g(0),
               onActiveIndexChange: e => g(e?.realIndex ?? 0),
               centeredSlidesBounds: m,
-              children: [(0, u.jsx)("div", {
-                className: A.trackWrapper,
-                children: (0, u.jsxs)("div", {
-                  className: A.track,
-                  children: [a?.map((e => (0, u.jsx)(P.Ky, {
-                    children: (0, u.jsx)(D, {
+              children: [(0, y.jsx)("div", {
+                className: Z.trackWrapper,
+                children: (0, y.jsxs)("div", {
+                  className: Z.track,
+                  children: [a?.map((e => (0, y.jsx)(K.Ky, {
+                    children: (0, y.jsx)(J, {
                       item: e
                     })
-                  }, e.key))), t && t.map(((e, t) => e && (0, u.jsx)(P.Ky, {
+                  }, e.key))), t && t.map(((e, t) => e && (0, y.jsx)(K.Ky, {
                     children: e
                   }, f && f[t])))]
                 })
-              }), (0, u.jsx)(B, {
-                current: p,
+              }), (0, y.jsx)(ee, {
+                current: u,
                 total: t ? t.length : a.length
               })]
-            }), (d?.title || d?.description) && (0, u.jsx)(je, {
-              item: d
+            }), (c?.title || c?.description) && (0, y.jsx)(Fe, {
+              item: c
             })]
           })
         };
-      var R = a(45792),
-        F = a(42836);
-      const $ = (0, a(62748).U1)(),
-        U = e => e.some((e => !e)),
-        G = e => {
+      var ae = a(45792),
+        se = a(42836);
+      const re = (0, a(62748).U1)(),
+        ie = e => e.some((e => !e)),
+        ne = e => {
           let {
             condition: t = null,
             children: a
           } = e;
           const [s, r] = (0, o.useState)(!1), i = (e => {
-            const [t] = (0, m.useSearchParams)(), [a, s] = (0, o.useState)(null), r = (0, F.useRockstarUser)(), {
+            const [t] = (0, C.useSearchParams)(), [a, s] = (0, o.useState)(null), r = (0, se.useRockstarUser)(), {
               loggedIn: i
             } = r, {
               currentCharId: n
-            } = (0, F.useRockstarUserState)(), d = (0, F.useIsUserGtaPlus)(r?.data, n);
+            } = (0, se.useRockstarUserState)(), c = (0, se.useIsUserGtaPlus)(r?.data, n);
             return (0, o.useEffect)((() => {
               const a = "true" === t.get("conditionPreview");
               if (!e?.length > 0) return;
-              $.applyFilters("preview_conditions", e);
+              re.applyFilters("preview_conditions", e);
               const r = [];
               return e.forEach((e => {
                 const {
                   value: s
                 } = e;
                 if (a) return "true" === t.get(s) ? (r.push(!0), !0) : (r.push(!1), !1);
-                if (U(r)) return !1;
+                if (ie(r)) return !1;
                 switch (s) {
                   case "user:is:loggedIn":
                     r.push(!0 === i);
@@ -2855,50 +3046,50 @@ _global.SENTRY_RELEASE = {
                     r.push(!1 === i);
                     break;
                   case "user:is:gtaPlus":
-                    r.push(!0 === d);
+                    r.push(!0 === c);
                     break;
                   case "user:not:gtaPlus":
-                    r.push(!1 === d);
+                    r.push(!1 === c);
                     break;
                   default:
                     r.push(!1)
                 }
                 return null
-              })), s(!U(r)), () => {}
-            }), [t, e, d, r, i]), a
+              })), s(!ie(r)), () => {}
+            }), [t, e, c, r, i]), a
           })(t);
           return (0, o.useEffect)((() => {
             r(i)
           }), [i]), (0, o.useMemo)((() => s ? a : null), [s])
         },
-        H = (0, R.withTranslations)((e => {
+        oe = (0, ae.withTranslations)((e => {
           let {
             children: t
           } = e;
-          return o.Children.map(o.Children.toArray(t), (e => (0, u.jsx)(G, {
+          return o.Children.map(o.Children.toArray(t), (e => (0, y.jsx)(ne, {
             ...e?.props
           })))
         }));
-      var q = a(37960),
-        W = a(58652);
-      const X = e => {
+      var ce = a(37960),
+        le = a(58652);
+      const de = e => {
           let {
             className: t
           } = e;
-          return (0, u.jsxs)("svg", {
+          return (0, y.jsxs)("svg", {
             className: t,
             width: "16",
             height: "17",
             viewBox: "0 0 16 17",
             fill: "none",
             xmlns: "http://www.w3.org/2000/svg",
-            children: [(0, u.jsx)("path", {
+            children: [(0, y.jsx)("path", {
               d: "M3.33203 8.5H12.6654",
               stroke: "white",
               strokeWidth: "1.33",
               strokeLinecap: "round",
               strokeLinejoin: "round"
-            }), (0, u.jsx)("path", {
+            }), (0, y.jsx)("path", {
               d: "M8 3.83331L12.6667 8.49998L8 13.1666",
               stroke: "white",
               strokeWidth: "1.33",
@@ -2907,42 +3098,42 @@ _global.SENTRY_RELEASE = {
             })]
           })
         },
-        Y = {
-          pillBtn: "rockstargames-sites-red-dead-redemption-2e3158363419b66e5afa2264e4928890c",
-          selected: "rockstargames-sites-red-dead-redemption-2a9649249223f164eff11174ffc72616b",
-          calloutContainer: "rockstargames-sites-red-dead-redemption-2e6bd244761fdf3ebe3888539d9942921",
-          calloutSection: "rockstargames-sites-red-dead-redemption-2b1b8c93299158ef7d0f9eb04e14a7a64",
-          calloutHeaders: "rockstargames-sites-red-dead-redemption-2c81810436a5b57307c41f4d7a704b2f7",
-          calloutHeaderMargins: "rockstargames-sites-red-dead-redemption-2b4e1f72dfa9b38f23017e5f8ef48b9cb",
-          calloutHeader: "rockstargames-sites-red-dead-redemption-2b7964754215256201dd703aedca18b6f",
-          calloutSubheader: "rockstargames-sites-red-dead-redemption-2ac660fa7995007ed875e03a257e447d7",
-          calloutVoteForm: "rockstargames-sites-red-dead-redemption-2bee0795a36dd5adf822e1e50a7260f3d",
-          voteButton: "rockstargames-sites-red-dead-redemption-2b1baa545566a61b791b696c9ebf560ad",
-          upvote: "rockstargames-sites-red-dead-redemption-2b9c17ddd3e1052acb5097909ae2b07a1",
-          downvote: "rockstargames-sites-red-dead-redemption-2f26b53e66e552183743465cce6a8d3a8",
-          active: "rockstargames-sites-red-dead-redemption-2d38a1764483a36e8a1509aee5b88ec31",
-          calloutButton: "rockstargames-sites-red-dead-redemption-2b7eb76afce3c6e686be44c356837b627",
-          calloutLink: "rockstargames-sites-red-dead-redemption-2aefe6c5a233047c943a864cd56a7de2d",
-          calloutLinkIcon: "rockstargames-sites-red-dead-redemption-2a74bf6baa632ad9b5f87efd2043cfed5",
-          actionBlock: "rockstargames-sites-red-dead-redemption-2cc491ddd715196ecd6ef54017ff05ec0",
-          actionFooter: "rockstargames-sites-red-dead-redemption-2db26fed58ce50f4affc114670885721a"
+        me = {
+          pillBtn: "rockstargames-modules-core-gif-viewere3158363419b66e5afa2264e4928890c",
+          selected: "rockstargames-modules-core-gif-viewera9649249223f164eff11174ffc72616b",
+          calloutContainer: "rockstargames-modules-core-gif-viewere6bd244761fdf3ebe3888539d9942921",
+          calloutSection: "rockstargames-modules-core-gif-viewerb1b8c93299158ef7d0f9eb04e14a7a64",
+          calloutHeaders: "rockstargames-modules-core-gif-viewerc81810436a5b57307c41f4d7a704b2f7",
+          calloutHeaderMargins: "rockstargames-modules-core-gif-viewerb4e1f72dfa9b38f23017e5f8ef48b9cb",
+          calloutHeader: "rockstargames-modules-core-gif-viewerb7964754215256201dd703aedca18b6f",
+          calloutSubheader: "rockstargames-modules-core-gif-viewerac660fa7995007ed875e03a257e447d7",
+          calloutVoteForm: "rockstargames-modules-core-gif-viewerbee0795a36dd5adf822e1e50a7260f3d",
+          voteButton: "rockstargames-modules-core-gif-viewerb1baa545566a61b791b696c9ebf560ad",
+          upvote: "rockstargames-modules-core-gif-viewerb9c17ddd3e1052acb5097909ae2b07a1",
+          downvote: "rockstargames-modules-core-gif-viewerf26b53e66e552183743465cce6a8d3a8",
+          active: "rockstargames-modules-core-gif-viewerd38a1764483a36e8a1509aee5b88ec31",
+          calloutButton: "rockstargames-modules-core-gif-viewerb7eb76afce3c6e686be44c356837b627",
+          calloutLink: "rockstargames-modules-core-gif-vieweraefe6c5a233047c943a864cd56a7de2d",
+          calloutLinkIcon: "rockstargames-modules-core-gif-viewera74bf6baa632ad9b5f87efd2043cfed5",
+          actionBlock: "rockstargames-modules-core-gif-viewercc491ddd715196ecd6ef54017ff05ec0",
+          actionFooter: "rockstargames-modules-core-gif-viewerdb26fed58ce50f4affc114670885721a"
         },
-        K = e => {
+        ue = e => {
           let {
             foreign_id: t,
             foreign_type: a
           } = e;
           const {
             track: s
-          } = (0, F.useGtmTrack)(), {
+          } = (0, se.useGtmTrack)(), {
             refetch: r
-          } = (0, h.useQuery)(W.UserGetVote, {
+          } = (0, z.useQuery)(le.UserGetVote, {
             skip: !0
-          }), [i] = (0, h.useMutation)(W.UserCastVote), [n, d] = (0, o.useState)(null), c = (0, o.useCallback)((e => {
+          }), [i] = (0, z.useMutation)(le.UserCastVote), [n, c] = (0, o.useState)(null), l = (0, o.useCallback)((e => {
             (async () => {
-              if (e === n && null !== n) d(null);
+              if (e === n && null !== n) c(null);
               else {
-                d(e), s({
+                c(e), s({
                   event_action: e ? "like" : "dislike",
                   event_category: "cta",
                   event: "cta_" + (e ? "like" : "dislike"),
@@ -2965,26 +3156,26 @@ _global.SENTRY_RELEASE = {
                 foreignId: t,
                 foreignType: a
               });
-              d(e?.data?.userGetVote?.vote ?? null)
+              c(e?.data?.userGetVote?.vote ?? null)
             })()
-          }), [t, a]), (0, u.jsxs)("div", {
-            className: Y.calloutVoteForm,
-            children: [(0, u.jsx)("button", {
+          }), [t, a]), (0, y.jsxs)("div", {
+            className: me.calloutVoteForm,
+            children: [(0, y.jsx)("button", {
               "aria-label": "upvote",
-              className: [Y.upvote, Y.voteButton, n ? Y.active : ""].join(" "),
+              className: [me.upvote, me.voteButton, n ? me.active : ""].join(" "),
               name: "upvote",
-              onClick: () => c(!0),
+              onClick: () => l(!0),
               type: "button"
-            }), (0, u.jsx)("button", {
+            }), (0, y.jsx)("button", {
               "aria-label": "downvote",
-              className: [Y.downvote, Y.voteButton, !1 === n ? Y.active : ""].join(" "),
+              className: [me.downvote, me.voteButton, !1 === n ? me.active : ""].join(" "),
               name: "downvote",
-              onClick: () => c(!1),
+              onClick: () => l(!1),
               type: "button"
             })]
           })
         },
-        Q = e => {
+        ge = e => {
           let {
             action_text: t,
             link: a,
@@ -2992,24 +3183,24 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: r
-          } = (0, F.useGtmTrack)();
-          return (0, u.jsx)("a", {
+          } = (0, se.useGtmTrack)();
+          return (0, y.jsx)("a", {
             href: a,
             target: "_blank",
             rel: "noopener noreferrer",
-            children: (0, u.jsxs)("button", {
-              className: Y.calloutLink,
+            children: (0, y.jsxs)("button", {
+              className: me.calloutLink,
               type: "button",
               onClick: s ? () => r({
                 ...s
               }) : () => {},
-              children: [t, (0, u.jsx)(X, {
-                className: Y.calloutLinkIcon
+              children: [t, (0, y.jsx)(de, {
+                className: me.calloutLinkIcon
               })]
             })
           })
         },
-        Z = e => {
+        fe = e => {
           let {
             helperText: t,
             linkText: a,
@@ -3018,10 +3209,10 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: i
-          } = (0, F.useGtmTrack)();
-          return (0, u.jsxs)("div", {
-            className: Y.actionFooter,
-            children: [t, a && " ", a && (0, u.jsx)("a", {
+          } = (0, se.useGtmTrack)();
+          return (0, y.jsxs)("div", {
+            className: me.actionFooter,
+            children: [t, a && " ", a && (0, y.jsx)("a", {
               href: s ?? "",
               onClick: () => i({
                 ...r
@@ -3030,7 +3221,7 @@ _global.SENTRY_RELEASE = {
             })]
           })
         },
-        J = (0, R.withTranslations)((e => {
+        pe = (0, ae.withTranslations)((e => {
           let {
             header: t,
             subheader: a,
@@ -3038,66 +3229,66 @@ _global.SENTRY_RELEASE = {
             action_text: r,
             link: i,
             foreign_id: n = document.location.pathname,
-            foreign_type: d = "url",
-            className: c = "",
-            actionFooterHelperText: l,
+            foreign_type: c = "url",
+            className: l = "",
+            actionFooterHelperText: d,
             actionFooterLinkText: m,
-            actionFooterLink: p,
+            actionFooterLink: u,
             trackingData: g = {},
             actionFooterLinkTrackingData: f = {},
-            t: _,
-            ...h
+            t: p,
+            ..._
           } = e;
           const {
-            loggedIn: k
-          } = (0, F.useRockstarUser)(), {
-            track: b
-          } = (0, F.useGtmTrack)(), v = `${document.location.origin}/auth/sc-auth-login?returnUrl=${window.location.pathname}`, {
-            ref: x,
-            inView: y
-          } = (0, q.cD)({
+            loggedIn: h
+          } = (0, se.useRockstarUser)(), {
+            track: v
+          } = (0, se.useGtmTrack)(), k = `${document.location.origin}/auth/sc-auth-login?returnUrl=${window.location.pathname}`, {
+            ref: b,
+            inView: w
+          } = (0, ce.cD)({
             threshold: .6
-          }), [w, N] = (0, o.useState)(!1);
+          }), [x, N] = (0, o.useState)(!1);
           let j;
           if ((0, o.useEffect)((() => {
-              y && !w && (b({
+              w && !x && (v({
                 event: "page_section_impression",
                 event_action: "impression",
                 event_category: "page_section",
                 event_label: "callout section",
-                element_placement: `callout section - ${h?.sectionName??h?._memoq?.header}`
+                element_placement: `callout section - ${_?.sectionName??_?._memoq?.header}`
               }), N(!0))
-            }), [y]), !t && !a) return null;
+            }), [w]), !t && !a) return null;
           switch (s) {
             case "vote":
-              if (!k) {
-                j = (0, u.jsx)(T, {
-                  to: v,
-                  className: Y.calloutButton,
-                  onClick: g ? () => b({
+              if (!h) {
+                j = (0, y.jsx)(U, {
+                  to: k,
+                  className: me.calloutButton,
+                  onClick: g ? () => v({
                     ...g
                   }) : () => {},
                   children: "Log In"
                 });
                 break
               }
-              j = (0, u.jsx)(K, {
+              j = (0, y.jsx)(ue, {
                 foreign_id: n,
-                foreign_type: d
+                foreign_type: c
               });
               break;
             case "button":
-              r && i && (j = (0, u.jsx)(T, {
+              r && i && (j = (0, y.jsx)(U, {
                 to: i,
-                className: Y.calloutButton,
-                onClick: g ? () => b({
+                className: me.calloutButton,
+                onClick: g ? () => v({
                   ...g
                 }) : () => {},
                 children: r
               }));
               break;
             case "link":
-              r && i && (j = (0, u.jsx)(Q, {
+              r && i && (j = (0, y.jsx)(ge, {
                 action_text: r,
                 link: i,
                 trackingData: g
@@ -3106,49 +3297,49 @@ _global.SENTRY_RELEASE = {
             default:
               j = null
           }
-          return (0, u.jsx)("div", {
-            className: `${Y.calloutContainer} ${c||""}`,
-            ref: x,
-            children: (0, u.jsxs)("div", {
-              className: Y.calloutSection,
-              children: [(0, u.jsxs)("div", {
-                className: [Y.calloutHeaders, j ? Y.calloutHeaderMargins : ""].join(" "),
-                children: [t && (0, u.jsx)("h2", {
-                  className: Y.calloutHeader,
-                  children: _(t)
-                }), a && (0, u.jsx)("h3", {
-                  className: Y.calloutSubheader,
-                  children: _(a)
+          return (0, y.jsx)("div", {
+            className: `${me.calloutContainer} ${l||""}`,
+            ref: b,
+            children: (0, y.jsxs)("div", {
+              className: me.calloutSection,
+              children: [(0, y.jsxs)("div", {
+                className: [me.calloutHeaders, j ? me.calloutHeaderMargins : ""].join(" "),
+                children: [t && (0, y.jsx)("h2", {
+                  className: me.calloutHeader,
+                  children: p(t)
+                }), a && (0, y.jsx)("h3", {
+                  className: me.calloutSubheader,
+                  children: p(a)
                 })]
-              }), (0, u.jsxs)("div", {
-                className: Y.actionBlock,
-                children: [j, l && (0, u.jsx)(Z, {
-                  helperText: l,
+              }), (0, y.jsxs)("div", {
+                className: me.actionBlock,
+                children: [j, d && (0, y.jsx)(fe, {
+                  helperText: d,
                   linkText: m,
-                  link: p,
+                  link: u,
                   trackingData: f
                 })]
               })]
             })
           })
         }));
-      var ee = a(30300),
-        te = a(44236),
-        ae = a.n(te);
-      const se = e => {
+      var _e = a(30300),
+        he = a(44236),
+        ve = a.n(he);
+      const ke = e => {
           let {
             isMulti: t,
             allowSelectAll: a,
             label: s,
             miscProps: r
           } = e;
-          const [i, n] = (0, o.useState)(""), d = (0, o.useMemo)((() => ae()().getData()), []);
-          return (0, u.jsx)(ee.cp, {
+          const [i, n] = (0, o.useState)(""), c = (0, o.useMemo)((() => ve()().getData()), []);
+          return (0, y.jsx)(_e.cp, {
             unstyled: !0,
             value: i,
             isMulti: t,
             allowSelectAll: a,
-            options: d,
+            options: c,
             placeholder: s,
             onChange: e => {
               return t = e?.target?.value, void n(t);
@@ -3158,7 +3349,7 @@ _global.SENTRY_RELEASE = {
             ...r
           })
         },
-        re = e => {
+        be = e => {
           let {
             cookieName: t,
             cookieValue: a,
@@ -3176,7 +3367,7 @@ _global.SENTRY_RELEASE = {
             e && t && (document.cookie = `${e}=${t}; domain=${(()=>{const e=window.location.hostname.split(".");return e.slice(e.length-2).join(".")})()}; path=/;`)
           })(t, n), i === a || n === a ? s : r
         },
-        ie = {
+        we = {
           ps: "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/1506c5bba61fa270f73c874e3d60a94f.svg",
           ps3: "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/d118a14a73ce72b4687d9eb69724f4d2.svg",
           ps4: "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/3f9f55567df4006813f8bf50ad383ea0.svg",
@@ -3193,54 +3384,54 @@ _global.SENTRY_RELEASE = {
           questionMark: "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/e6833fa9baf4a5382bdd84b0b7d2c03f.svg",
           default: ""
         },
-        ne = e => ie[e] || null,
-        oe = {
-          pillBtn: "rockstargames-sites-red-dead-redemption-2bf9c11ff862c409ecb412254932a66d0",
-          selected: "rockstargames-sites-red-dead-redemption-2e07887131c72b6346c408895888f4fa7",
-          "clr-button": "rockstargames-sites-red-dead-redemption-2eb57c2501d6b6fff19ea12014712acae",
-          lgMax: "rockstargames-sites-red-dead-redemption-2e8361180f27f9c36731c815805c69094",
-          smMax: "rockstargames-sites-red-dead-redemption-2c392730b2e06f70a3a1bd646684859e8",
-          cta: "rockstargames-sites-red-dead-redemption-2bc76de01fdd1260e254c482984d2a924",
-          label: "rockstargames-sites-red-dead-redemption-2b81011c72b601075ebe54d7ceaa7d2d8",
-          primary: "rockstargames-sites-red-dead-redemption-2dbcf41d5c23e0eaf5089021f4d41c121",
-          btnContent: "rockstargames-sites-red-dead-redemption-2f5e832587747dc414e10ab8e0bd843a9",
-          btnIcon: "rockstargames-sites-red-dead-redemption-2cb0ad8d8dd93218dc12091b883767967",
-          xbox: "rockstargames-sites-red-dead-redemption-2f591c5444c08121b0514f0c675da1479",
-          xboxone: "rockstargames-sites-red-dead-redemption-2e5124beff89c5b4093a4029a9fee3367",
-          xboxseriesxs: "rockstargames-sites-red-dead-redemption-2e52c94654eb462a8e65aa7607f5e21b5",
-          ps: "rockstargames-sites-red-dead-redemption-2c53b78d3d062ee8d58f63a0acb1df137",
-          ps4: "rockstargames-sites-red-dead-redemption-2f4a27aba1505f555d7cd8c920645245a",
-          ps5: "rockstargames-sites-red-dead-redemption-2b5826d3700572b9bf36874e34d5c2a22",
-          pc: "rockstargames-sites-red-dead-redemption-2c7ee0cfc54be00a8b152c47997ce76ac",
-          switch: "rockstargames-sites-red-dead-redemption-2a9b276d1c119e9cd14df54c4459197b0",
-          googleplay: "rockstargames-sites-red-dead-redemption-2a4ccd0de63b104d4aa48c8c3176618f3",
-          platformIcon: "rockstargames-sites-red-dead-redemption-2c4ab0a89b65025cfe63b851116fb3a32",
-          lgMin: "rockstargames-sites-red-dead-redemption-2c4a99972e5e512395e6fca5beaec1904",
-          applestore: "rockstargames-sites-red-dead-redemption-2a13111cbe8acbd75f62da1c53de2c3df",
-          icon: "rockstargames-sites-red-dead-redemption-2c7a3f1a29594b307606d15e6827f63f9",
-          "icon-left": "rockstargames-sites-red-dead-redemption-2bd623c6039c3f4122936775ed4214bd4",
-          "icon-right": "rockstargames-sites-red-dead-redemption-2c79040e66c1f48e302291d8cf1335742",
-          disabled: "rockstargames-sites-red-dead-redemption-2d87326174de12b895401f738a23b177a"
+        xe = e => we[e] || null,
+        ye = {
+          pillBtn: "rockstargames-modules-core-gif-viewerbf9c11ff862c409ecb412254932a66d0",
+          selected: "rockstargames-modules-core-gif-viewere07887131c72b6346c408895888f4fa7",
+          "clr-button": "rockstargames-modules-core-gif-viewereb57c2501d6b6fff19ea12014712acae",
+          lgMax: "rockstargames-modules-core-gif-viewere8361180f27f9c36731c815805c69094",
+          smMax: "rockstargames-modules-core-gif-viewerc392730b2e06f70a3a1bd646684859e8",
+          cta: "rockstargames-modules-core-gif-viewerbc76de01fdd1260e254c482984d2a924",
+          label: "rockstargames-modules-core-gif-viewerb81011c72b601075ebe54d7ceaa7d2d8",
+          primary: "rockstargames-modules-core-gif-viewerdbcf41d5c23e0eaf5089021f4d41c121",
+          btnContent: "rockstargames-modules-core-gif-viewerf5e832587747dc414e10ab8e0bd843a9",
+          btnIcon: "rockstargames-modules-core-gif-viewercb0ad8d8dd93218dc12091b883767967",
+          xbox: "rockstargames-modules-core-gif-viewerf591c5444c08121b0514f0c675da1479",
+          xboxone: "rockstargames-modules-core-gif-viewere5124beff89c5b4093a4029a9fee3367",
+          xboxseriesxs: "rockstargames-modules-core-gif-viewere52c94654eb462a8e65aa7607f5e21b5",
+          ps: "rockstargames-modules-core-gif-viewerc53b78d3d062ee8d58f63a0acb1df137",
+          ps4: "rockstargames-modules-core-gif-viewerf4a27aba1505f555d7cd8c920645245a",
+          ps5: "rockstargames-modules-core-gif-viewerb5826d3700572b9bf36874e34d5c2a22",
+          pc: "rockstargames-modules-core-gif-viewerc7ee0cfc54be00a8b152c47997ce76ac",
+          switch: "rockstargames-modules-core-gif-viewera9b276d1c119e9cd14df54c4459197b0",
+          googleplay: "rockstargames-modules-core-gif-viewera4ccd0de63b104d4aa48c8c3176618f3",
+          platformIcon: "rockstargames-modules-core-gif-viewerc4ab0a89b65025cfe63b851116fb3a32",
+          lgMin: "rockstargames-modules-core-gif-viewerc4a99972e5e512395e6fca5beaec1904",
+          applestore: "rockstargames-modules-core-gif-viewera13111cbe8acbd75f62da1c53de2c3df",
+          icon: "rockstargames-modules-core-gif-viewerc7a3f1a29594b307606d15e6827f63f9",
+          "icon-left": "rockstargames-modules-core-gif-viewerbd623c6039c3f4122936775ed4214bd4",
+          "icon-right": "rockstargames-modules-core-gif-viewerc79040e66c1f48e302291d8cf1335742",
+          disabled: "rockstargames-modules-core-gif-viewerd87326174de12b895401f738a23b177a"
         };
-      var de = a(89772),
-        ce = a.n(de);
-      const le = e => {
+      var Ne = a(89772),
+        je = a.n(Ne);
+      const Se = e => {
           let {
             platform: t = "",
             altText: a
           } = e;
-          const s = t ? ne(t) : null,
-            r = s ? (0, u.jsx)("img", {
-              className: oe.platformIcon,
+          const s = t ? xe(t) : null,
+            r = s ? (0, y.jsx)("img", {
+              className: ye.platformIcon,
               src: s,
               alt: a
             }) : null;
-          return (0, u.jsx)("span", {
-            className: [oe.btnContent, oe.platformButton].join(" "),
+          return (0, y.jsx)("span", {
+            className: [ye.btnContent, ye.platformButton].join(" "),
             children: r
           })
         },
-        me = e => {
+        Te = e => {
           let {
             children: t,
             href: a,
@@ -3248,20 +3439,20 @@ _global.SENTRY_RELEASE = {
             content: r,
             variant: i = null,
             size: n = "medium",
-            icon: d,
-            iconPosition: c = "none",
-            iconStyle: l,
-            badge: p,
-            badgeStyle: g,
-            platformItem: f,
-            gtm: _ = {},
-            disabled: h,
-            reloadDocument: k = !1,
-            className: b
+            icon: c,
+            iconPosition: l = "none",
+            iconStyle: d,
+            badge: m,
+            badgeStyle: u,
+            platformItem: g,
+            gtm: f = {},
+            disabled: p,
+            reloadDocument: _ = !1,
+            className: h
           } = e;
           const {
             track: v
-          } = (0, F.useGtmTrack)(), x = (0, R.useDataLayer)(), y = r ?? t, w = (0, R.findPlatform)(f)?.friendlyName, N = (0, o.useMemo)((() => {
+          } = (0, se.useGtmTrack)(), k = (0, ae.useDataLayer)(), b = r ?? t, w = (0, ae.findPlatform)(g)?.friendlyName, x = (0, o.useMemo)((() => {
             const e = window.location.hostname;
             let t;
             try {
@@ -3270,76 +3461,76 @@ _global.SENTRY_RELEASE = {
               t = e
             }
             return e === t
-          }), [a]), j = (0, o.useCallback)((() => {
-            h || v({
+          }), [a]), N = (0, o.useCallback)((() => {
+            p || v({
               event: "cta_other",
-              text: y ?? void 0,
-              ...x,
-              ..._,
+              text: b ?? void 0,
+              ...k,
+              ...f,
               link_url: a ?? void 0
             })
-          }), [_, a, x]), S = () => d ? (0, u.jsx)("span", {
-            className: [oe.icon, `icon-${c}`].join(" "),
-            style: l,
-            children: (0, u.jsx)("img", {
-              className: oe.btnIcon,
-              src: ne(d) || "",
-              alt: `${d} icon`
+          }), [f, a, k]), j = () => c ? (0, y.jsx)("span", {
+            className: [ye.icon, `icon-${l}`].join(" "),
+            style: d,
+            children: (0, y.jsx)("img", {
+              className: ye.btnIcon,
+              src: xe(c) || "",
+              alt: `${c} icon`
             })
           }) : null;
-          return (0, u.jsx)(m.Link, {
+          return (0, y.jsx)(C.Link, {
             to: a,
-            target: N ? "_self" : "_blank",
-            className: ce()(oe.cta, "platform" === i && f ? oe[f] : "", h ? oe.disabled : "", b),
+            target: x ? "_self" : "_blank",
+            className: je()(ye.cta, "platform" === i && g ? ye[g] : "", p ? ye.disabled : "", h),
             style: s,
             "data-variant": i,
             "data-size": n,
-            onClick: j,
-            "aria-label": y,
-            reloadDocument: k,
-            children: "platform" === i && f ? (0, u.jsx)(le, {
-              platform: f,
-              altText: w || y
-            }) : (0, u.jsxs)("div", {
-              className: oe.btnContent,
-              children: ["left" === c && S(), (0, u.jsx)("span", {
-                className: oe.label,
-                children: y
-              }), "right" === c && S(), p ? (0, u.jsx)("span", {
-                className: oe.badge,
-                style: g,
-                children: p
+            onClick: N,
+            "aria-label": b,
+            reloadDocument: _,
+            children: "platform" === i && g ? (0, y.jsx)(Se, {
+              platform: g,
+              altText: w || b
+            }) : (0, y.jsxs)("div", {
+              className: ye.btnContent,
+              children: ["left" === l && j(), (0, y.jsx)("span", {
+                className: ye.label,
+                children: b
+              }), "right" === l && j(), m ? (0, y.jsx)("span", {
+                className: ye.badge,
+                style: u,
+                children: m
               }) : null]
             })
           })
         };
-      var pe = a(45652);
-      const ue = "rockstargames-sites-red-dead-redemption-2eb64520e04e486931cd65dc5b3fa61e8",
-        ge = e => {
+      var Ce = a(45652);
+      const Me = "rockstargames-modules-core-gif-viewereb64520e04e486931cd65dc5b3fa61e8",
+        Ie = e => {
           let {
             alt: t,
             className: s,
             src: r,
             style: i
           } = e;
-          const [n, o] = (0, R.usePreloadImg)(r);
-          let d = r;
-          !1 === n && ("rockstargames-sites-red-dead-redemption-2ee609f31f3685766122c2c6fc0ef0710" === s && (d = a(61820)), d = a(43976));
+          const [n, o] = (0, ae.usePreloadImg)(r);
+          let c = r;
+          !1 === n && ("rockstargames-modules-core-gif-vieweree609f31f3685766122c2c6fc0ef0710" === s && (c = a(61820)), c = a(43976));
           const {
-            width: c,
-            height: l
+            width: l,
+            height: d
           } = o, m = {
-            "--aspect-ratio": Number.isNaN(c / l) ? "" : c / l,
+            "--aspect-ratio": Number.isNaN(l / d) ? "" : l / d,
             ...i
           };
-          return (0, u.jsx)("img", {
-            src: d,
+          return (0, y.jsx)("img", {
+            src: c,
             className: s ?? "",
             alt: t,
             style: m
           })
         },
-        fe = e => {
+        Ee = e => {
           let {
             className: t,
             style: s = {},
@@ -3348,56 +3539,56 @@ _global.SENTRY_RELEASE = {
           } = e, {
             alt: n,
             src: o
-          } = (0, pe.useImageParser)(r);
+          } = (0, Ce.useImageParser)(r);
           const {
-            isMobile: d
-          } = (0, R.useWindowResize)();
+            isMobile: c
+          } = (0, ae.useWindowResize)();
           return o.desktop || o.mobile || (n = "", o = {
             mobile: a(61820),
             desktop: a(43976)
-          }), (0, u.jsx)("div", {
-            className: r.frame ? `${r.frame} ${ue}` : ue,
+          }), (0, y.jsx)("div", {
+            className: r.frame ? `${r.frame} ${Me}` : Me,
             style: s,
-            children: (0, u.jsx)(ge, {
+            children: (0, y.jsx)(Ie, {
               style: {
                 ...i,
                 ...r?.style
               },
-              src: d ? o.mobile || o.desktop : o?.desktop || o?.mobile,
+              src: c ? o.mobile || o.desktop : o?.desktop || o?.mobile,
               alt: n,
               className: t
             })
           })
         };
-      var _e = a(8560),
-        he = a.n(_e);
-      const ke = {
-          pillBtn: "rockstargames-sites-red-dead-redemption-2a89792e50dfe5470a67f42b9e143c824",
-          selected: "rockstargames-sites-red-dead-redemption-2bcce8ac50552b225f30d185d876a3e14",
-          grid: "rockstargames-sites-red-dead-redemption-2ac295ed5b9cb441ed17843b34e83ea17",
-          itemList: "rockstargames-sites-red-dead-redemption-2caf5589ddeca00ed09213e547674b1f3",
-          gtaplus: "rockstargames-sites-red-dead-redemption-2b291112adcf994a0f6acadd86f73b78a",
-          rdo: "rockstargames-sites-red-dead-redemption-2d146e8f862baefb60e91be5aa3c17b6e",
-          noImg: "rockstargames-sites-red-dead-redemption-2ba9b5ae08642b0213a3f04b3db9a9dac",
-          gtao: "rockstargames-sites-red-dead-redemption-2b6f2bdfd6a1d57b7ce840f7a56cc510b",
-          custom: "rockstargames-sites-red-dead-redemption-2af89164a043648d1464686ff13363ee4",
-          yellow: "rockstargames-sites-red-dead-redemption-2d244b17b74fc46269e8a106a99ab0f87",
-          hotPink: "rockstargames-sites-red-dead-redemption-2d90b28503318563cfd6059146d1fb6b6",
-          red: "rockstargames-sites-red-dead-redemption-2c3f8a8706901874d906f94c626be3c1e",
-          turquoise: "rockstargames-sites-red-dead-redemption-2fe2ec36e92e2bb4d453fdc4b05966418",
-          purple: "rockstargames-sites-red-dead-redemption-2f5f7baf5b56f5b2ada053a93392bbf7a",
-          teal: "rockstargames-sites-red-dead-redemption-2f4a229f41cd20f181d810c311416e3f2",
-          blue: "rockstargames-sites-red-dead-redemption-2f6f689d687bcd482ea2cd2990fd66878",
-          green: "rockstargames-sites-red-dead-redemption-2ab270f1b4d3ad43e7bc51393b7c5c089",
-          darkRed: "rockstargames-sites-red-dead-redemption-2dc24ce78d962f3472b06955bf8855103",
-          darkBlue: "rockstargames-sites-red-dead-redemption-2b354493baac7389b21b511009f287428",
-          goldenrod: "rockstargames-sites-red-dead-redemption-2e4a078efee11d24c64e93ccf0744a33f",
-          skull: "rockstargames-sites-red-dead-redemption-2d4581a495de14e6762bb15debe5bb810"
+      var Le = a(8560),
+        ze = a.n(Le);
+      const Pe = {
+          pillBtn: "rockstargames-modules-core-gif-viewera89792e50dfe5470a67f42b9e143c824",
+          selected: "rockstargames-modules-core-gif-viewerbcce8ac50552b225f30d185d876a3e14",
+          grid: "rockstargames-modules-core-gif-viewerac295ed5b9cb441ed17843b34e83ea17",
+          itemList: "rockstargames-modules-core-gif-viewercaf5589ddeca00ed09213e547674b1f3",
+          gtaplus: "rockstargames-modules-core-gif-viewerb291112adcf994a0f6acadd86f73b78a",
+          rdo: "rockstargames-modules-core-gif-viewerd146e8f862baefb60e91be5aa3c17b6e",
+          noImg: "rockstargames-modules-core-gif-viewerba9b5ae08642b0213a3f04b3db9a9dac",
+          gtao: "rockstargames-modules-core-gif-viewerb6f2bdfd6a1d57b7ce840f7a56cc510b",
+          custom: "rockstargames-modules-core-gif-vieweraf89164a043648d1464686ff13363ee4",
+          yellow: "rockstargames-modules-core-gif-viewerd244b17b74fc46269e8a106a99ab0f87",
+          hotPink: "rockstargames-modules-core-gif-viewerd90b28503318563cfd6059146d1fb6b6",
+          red: "rockstargames-modules-core-gif-viewerc3f8a8706901874d906f94c626be3c1e",
+          turquoise: "rockstargames-modules-core-gif-viewerfe2ec36e92e2bb4d453fdc4b05966418",
+          purple: "rockstargames-modules-core-gif-viewerf5f7baf5b56f5b2ada053a93392bbf7a",
+          teal: "rockstargames-modules-core-gif-viewerf4a229f41cd20f181d810c311416e3f2",
+          blue: "rockstargames-modules-core-gif-viewerf6f689d687bcd482ea2cd2990fd66878",
+          green: "rockstargames-modules-core-gif-viewerab270f1b4d3ad43e7bc51393b7c5c089",
+          darkRed: "rockstargames-modules-core-gif-viewerdc24ce78d962f3472b06955bf8855103",
+          darkBlue: "rockstargames-modules-core-gif-viewerb354493baac7389b21b511009f287428",
+          goldenrod: "rockstargames-modules-core-gif-viewere4a078efee11d24c64e93ccf0744a33f",
+          skull: "rockstargames-modules-core-gif-viewerd4581a495de14e6762bb15debe5bb810"
         },
         {
-          sanitize: be
-        } = he(),
-        ve = e => {
+          sanitize: Oe
+        } = ze(),
+        De = e => {
           let {
             list: t,
             string: a,
@@ -3405,80 +3596,80 @@ _global.SENTRY_RELEASE = {
             style: r,
             className: i,
             game: n,
-            noImg: d,
-            columns: c,
-            mobileColumns: l
+            noImg: c,
+            columns: l,
+            mobileColumns: d
           } = e;
-          const [m, p] = (0, o.useState)(null), g = a ? a.split("_#_") : t;
+          const [m, u] = (0, o.useState)(null), g = a ? a.split("_#_") : t;
           return (0, o.useEffect)((() => {
-            p(t)
-          }), [t]), a || t ? c && m ? (0, u.jsx)("div", {
-            className: ke.grid,
+            u(t)
+          }), [t]), a || t ? l && m ? (0, y.jsx)("div", {
+            className: Pe.grid,
             style: {
-              "--unordered-list-grid-column": c,
-              "--unordered-list-grid-column-mobile": l ?? c
+              "--unordered-list-grid-column": l,
+              "--unordered-list-grid-column-mobile": d ?? l
             },
-            children: (0, u.jsx)("ul", {
-              style: (0, R.safeStyles)(r),
-              className: (0, C.classList)(ke.itemList, ke.noImg, ke[s], ke[n]),
-              children: m.map(((e, t) => (0, u.jsx)("li", {
+            children: (0, y.jsx)("ul", {
+              style: (0, ae.safeStyles)(r),
+              className: (0, G.classList)(Pe.itemList, Pe.noImg, Pe[s], Pe[n]),
+              children: m.map(((e, t) => (0, y.jsx)("li", {
                 dangerouslySetInnerHTML: {
-                  __html: be(e.content)
+                  __html: Oe(e.content)
                 }
               }, t)))
             })
-          }) : (0, u.jsx)("ul", {
-            style: (0, R.safeStyles)(r),
-            className: (0, C.classList)(ke.itemList, ke.custom, d ? ke.noImg : "", s ? ke[s] : "", n ? ke[n] : "", i ?? ""),
-            children: g.map(((e, t) => (0, u.jsx)("li", {
+          }) : (0, y.jsx)("ul", {
+            style: (0, ae.safeStyles)(r),
+            className: (0, G.classList)(Pe.itemList, Pe.custom, c ? Pe.noImg : "", s ? Pe[s] : "", n ? Pe[n] : "", i ?? ""),
+            children: g.map(((e, t) => (0, y.jsx)("li", {
               dangerouslySetInnerHTML: {
-                __html: be(e?.content ?? e)
+                __html: Oe(e?.content ?? e)
               }
             }, t)))
           }) : null
         },
-        xe = {
-          hr: "rockstargames-sites-red-dead-redemption-2f5cd418ab2ef6a89df6c95d2caa06ba8",
-          redLine: "rockstargames-sites-red-dead-redemption-2f8b44ef9bbd3e7feb22bf79cc009b16e",
-          gtao: "rockstargames-sites-red-dead-redemption-2c442f7264db862a7cca6d9a56dacc205"
+        Ae = {
+          hr: "rockstargames-modules-core-gif-viewerf5cd418ab2ef6a89df6c95d2caa06ba8",
+          redLine: "rockstargames-modules-core-gif-viewerf8b44ef9bbd3e7feb22bf79cc009b16e",
+          gtao: "rockstargames-modules-core-gif-viewerc442f7264db862a7cca6d9a56dacc205"
         },
-        ye = e => {
+        Be = e => {
           let {
             style: t,
             className: a = "",
             type: s
           } = e;
-          return (0, u.jsx)("div", {
+          return (0, y.jsx)("div", {
             style: t,
-            className: [xe.hr, xe[s], a].join(" ")
+            className: [Ae.hr, Ae[s], a].join(" ")
           })
         },
-        we = "rockstargames-sites-red-dead-redemption-2fa6885b15a718acb24f48949c52e31f1",
-        Ne = e => {
+        Ve = "rockstargames-modules-core-gif-viewerfa6885b15a718acb24f48949c52e31f1",
+        Re = e => {
           let {
             to: t,
             children: a
           } = e;
-          return t ? (0, u.jsx)("a", {
+          return t ? (0, y.jsx)("a", {
             href: t,
             target: "_blank",
             rel: "noreferrer",
             children: a
           }) : a
         },
-        je = e => {
+        Fe = e => {
           let {
             item: t,
             className: a = ""
           } = e;
-          return (0, u.jsxs)("div", {
-            className: (0, C.classList)("rockstargames-sites-red-dead-redemption-2ef9e6981551ac5ce250ebff8b18d7a29", a),
-            children: [t.title && (0, u.jsx)(Ne, {
+          return (0, y.jsxs)("div", {
+            className: (0, G.classList)("rockstargames-modules-core-gif-vieweref9e6981551ac5ce250ebff8b18d7a29", a),
+            children: [t.title && (0, y.jsx)(Re, {
               to: t?.href ?? t?.to,
-              children: (0, u.jsx)("h3", {
+              children: (0, y.jsx)("h3", {
                 children: t.title
               })
-            }), Array.isArray(t?.description?.content) ? t.description.content?.map(((e, t) => e?.unorderedList ? (0, u.jsx)(ve, {
+            }), Array.isArray(t?.description?.content) ? t.description.content?.map(((e, t) => e?.unorderedList ? (0, y.jsx)(De, {
               columns: e.unorderedList.columns ?? null,
               style: {
                 "--unordered-list-padding": "var(--grid-gap-static-sm)",
@@ -3486,38 +3677,38 @@ _global.SENTRY_RELEASE = {
               },
               noImg: !0,
               list: e.unorderedList.list
-            }, t) : e?.image ? (0, u.jsx)(fe, {
+            }, t) : e?.image ? (0, y.jsx)(Ee, {
               image: e.image,
               className: e?.className,
               ariaLabel: e.image?.ariaLabel
-            }, t) : e?.separator ? (0, u.jsx)("div", {
+            }, t) : e?.separator ? (0, y.jsx)("div", {
               style: {
                 margin: `${e.separator.spacing} 0`
               },
-              children: (0, u.jsx)(ye, {})
-            }, t) : (0, u.jsx)("p", {
-              children: (0, u.jsx)("span", {
-                className: we,
+              children: (0, y.jsx)(Be, {})
+            }, t) : (0, y.jsx)("p", {
+              children: (0, y.jsx)("span", {
+                className: Ve,
                 dangerouslySetInnerHTML: {
                   __html: e
                 }
               })
-            }, t))) : (0, u.jsx)("span", {
-              className: we,
+            }, t))) : (0, y.jsx)("span", {
+              className: Ve,
               dangerouslySetInnerHTML: {
                 __html: t.description
               }
             })]
           })
         };
-      var Se = a(58936);
-      const Te = e => {
+      var $e = a(58936);
+      const Ue = e => {
           let {
             children: t,
             ...a
           } = e;
           const [s, r] = (0, o.useState)(!1);
-          return (0, u.jsx)(Se.cR, {
+          return (0, y.jsx)($e.cR, {
             ...a,
             onReady: () => {
               document.fonts.ready.then((() => {
@@ -3527,13 +3718,13 @@ _global.SENTRY_RELEASE = {
             children: t
           })
         },
-        Ce = {
-          badge: "rockstargames-sites-red-dead-redemption-2e279e2cebfa338f34b03fd732416e836",
-          badgeSizeUpdate: "rockstargames-sites-red-dead-redemption-2d7362a3e27ccaad9d2aadd2f31691340",
-          badge2: "rockstargames-sites-red-dead-redemption-2d697f4a5f7c876d5e540a96da1e0ca3a",
-          badge3: "rockstargames-sites-red-dead-redemption-2e1bba3cd4554abbb48a030af24bbada5"
+        Ge = {
+          badge: "rockstargames-modules-core-gif-viewere279e2cebfa338f34b03fd732416e836",
+          badgeSizeUpdate: "rockstargames-modules-core-gif-viewerd7362a3e27ccaad9d2aadd2f31691340",
+          badge2: "rockstargames-modules-core-gif-viewerd697f4a5f7c876d5e540a96da1e0ca3a",
+          badge3: "rockstargames-modules-core-gif-viewere1bba3cd4554abbb48a030af24bbada5"
         },
-        Me = e => {
+        He = e => {
           let {
             wrapper: t,
             children: a,
@@ -3542,7 +3733,7 @@ _global.SENTRY_RELEASE = {
           } = e;
           return r || s ? t(a) : a
         },
-        Ie = e => {
+        qe = e => {
           let {
             badge: t,
             badgeType: s,
@@ -3552,28 +3743,28 @@ _global.SENTRY_RELEASE = {
           const n = [];
           i ? t.split(i).map(((e, t) => n.push(e))) : n.push(t);
           let o = 100;
-          return 2 == n.length && n[1].length < 4 && "off" !== n[1].toLowerCase() && 45, (0, u.jsxs)(Me, {
+          return 2 == n.length && n[1].length < 4 && "off" !== n[1].toLowerCase() && 45, (0, y.jsxs)(He, {
             splitter: i,
             role: r,
-            wrapper: e => (0, u.jsx)("div", {
-              className: `${Ce.badge} ${s?Ce[s]:""} `,
+            wrapper: e => (0, y.jsx)("div", {
+              className: `${Ge.badge} ${s?Ge[s]:""} `,
               children: e
             }),
-            children: [(0, u.jsx)(u.Fragment, {
-              children: r && (0, u.jsx)(fe, {
+            children: [(0, y.jsx)(y.Fragment, {
+              children: r && (0, y.jsx)(Ee, {
                 image: {
                   alt: r,
                   desktop: a(6572)(`./${r}.png`)
                 }
               })
-            }), (0, u.jsx)(Te, {
-              className: `${i||r?"":Ce.badge} ${s?Ce[s]:""}`,
+            }), (0, y.jsx)(Ue, {
+              className: `${i||r?"":Ge.badge} ${s?Ge[s]:""}`,
               min: 8,
               max: 1e3,
               mode: i || r ? "single" : "multi",
               children: n[0]
-            }), (0, u.jsx)(u.Fragment, {
-              children: n.shift() && i && n.length >= 1 && (0, u.jsx)(Te, {
+            }), (0, y.jsx)(y.Fragment, {
+              children: n.shift() && i && n.length >= 1 && (0, y.jsx)(Ue, {
                 min: 8,
                 max: 1e3,
                 mode: "single",
@@ -3583,58 +3774,58 @@ _global.SENTRY_RELEASE = {
             })]
           }, "badge-wrapper")
         },
-        Ee = "rockstargames-sites-red-dead-redemption-2c63cfb461217f059c8c25eec09602b30",
-        Le = e => {
+        We = "rockstargames-modules-core-gif-viewerc63cfb461217f059c8c25eec09602b30",
+        Xe = e => {
           let {
             color: t
           } = e;
-          return (0, u.jsxs)("div", {
-            className: "rockstargames-sites-red-dead-redemption-2a481f47ab7e8af4042a665fab5aea27c",
+          return (0, y.jsxs)("div", {
+            className: "rockstargames-modules-core-gif-viewera481f47ab7e8af4042a665fab5aea27c",
             style: {
               "--loader-color": t
             },
-            children: [(0, u.jsx)("div", {
-              className: Ee
-            }), (0, u.jsx)("div", {
-              className: Ee
-            }), (0, u.jsx)("div", {
-              className: Ee
+            children: [(0, y.jsx)("div", {
+              className: We
+            }), (0, y.jsx)("div", {
+              className: We
+            }), (0, y.jsx)("div", {
+              className: We
             })]
           })
         };
-      var ze = a(43924);
-      const Pe = {
-          dropdownWrapper: "rockstargames-sites-red-dead-redemption-2b951912c02de0e5e881fedd391d04810",
-          items: "rockstargames-sites-red-dead-redemption-2b0a8f220641417f889d4fd6039fe6bac",
-          open: "rockstargames-sites-red-dead-redemption-2f5eb88111734e6e70d34ef2b095c44f6",
-          opener: "rockstargames-sites-red-dead-redemption-2ecb577af64f747d0d39cf03939ee3c73",
-          secondary: "rockstargames-sites-red-dead-redemption-2b64c3515fcd91f6b84410bd14640da81"
+      var Ye = a(43924);
+      const Ke = {
+          dropdownWrapper: "rockstargames-modules-core-gif-viewerb951912c02de0e5e881fedd391d04810",
+          items: "rockstargames-modules-core-gif-viewerb0a8f220641417f889d4fd6039fe6bac",
+          open: "rockstargames-modules-core-gif-viewerf5eb88111734e6e70d34ef2b095c44f6",
+          opener: "rockstargames-modules-core-gif-viewerecb577af64f747d0d39cf03939ee3c73",
+          secondary: "rockstargames-modules-core-gif-viewerb64c3515fcd91f6b84410bd14640da81"
         },
-        Oe = e => {
+        Qe = e => {
           let {
             children: t,
             className: a,
             title: s
           } = e;
           const [r, i] = (0, o.useState)(!1);
-          return (0, u.jsx)(ze.cp, {
+          return (0, y.jsx)(Ye.cp, {
             disabled: !r,
-            children: (0, u.jsxs)("div", {
-              className: [Pe.dropdownWrapper, r ? Pe.open : "", void 0 !== a ? a : ""].join(" "),
-              children: [(0, u.jsx)("button", {
-                className: Pe.opener,
+            children: (0, y.jsxs)("div", {
+              className: [Ke.dropdownWrapper, r ? Ke.open : "", void 0 !== a ? a : ""].join(" "),
+              children: [(0, y.jsx)("button", {
+                className: Ke.opener,
                 onClick: () => i(!r),
                 children: s
-              }), r && (0, u.jsx)("div", {
-                className: Pe.items,
+              }), r && (0, y.jsx)("div", {
+                className: Ke.items,
                 onClick: () => i(!1),
                 children: t
               })]
             })
           })
         };
-      var Ae = a(95356);
-      const De = e => {
+      var Ze = a(95356);
+      const Je = e => {
           let {
             children: t,
             context: a = null,
@@ -3643,76 +3834,76 @@ _global.SENTRY_RELEASE = {
             style: i = {},
             template: n = null,
             theme: o = null,
-            reversedOnMobile: d = !1,
-            className: c = "",
-            id: l = null
+            reversedOnMobile: c = !1,
+            className: l = "",
+            id: d = null
           } = e;
-          const m = (0, pe.useImageParser)(r ?? {}),
-            p = {
+          const m = (0, Ce.useImageParser)(r ?? {}),
+            u = {
               ...i
             };
           if (m?.src?.desktop) {
             const e = (r?.style && r?.style["--background-image-size"]) ?? "var(--grid-background-size, cover)",
               t = (r?.style && r?.style["--background-image-repeat"]) ?? "var(--grid-background-repeat, no-repeat)",
               a = `var(--grid-background-position, center)/${e??"cover"}`;
-            if (p.background = `url(${m?.src?.desktop}) ${t} ${a}`, r?.style && r?.style["--linear-gradient"]) p.background = `linear-gradient(${r?.style["--linear-gradient"]}), url(${m?.src?.desktop}) ${t} ${a}`;
+            if (u.background = `url(${m?.src?.desktop}) ${t} ${a}`, r?.style && r?.style["--linear-gradient"]) u.background = `linear-gradient(${r?.style["--linear-gradient"]}), url(${m?.src?.desktop}) ${t} ${a}`;
             else if (r?.style && r?.style["--gradient-height"]) {
               const e = r?.style["--gradient-height"] || "3",
                 s = r?.style["--gradient-start-color"] || "var(--background-color, transparent)",
                 i = r?.style["--gradient-end-color"] || "var(--background-color, transparent)";
-              p.background = `linear-gradient(180deg, ${s}, transparent ${e}%, transparent ${100-e}%, ${i}), url(${m?.src?.desktop}) ${t} ${a}`
+              u.background = `linear-gradient(180deg, ${s}, transparent ${e}%, transparent ${100-e}%, ${i}), url(${m?.src?.desktop}) ${t} ${a}`
             }
           }
-          return (0, u.jsx)("div", {
-            id: l,
-            className: (0, Ae.classList)("rockstargames-sites-red-dead-redemption-2f42b4606ed4a5b16b7647ad7b7eb229d", d ? "rockstargames-sites-red-dead-redemption-2b00444166ce6346d7ca364a75a335ecc" : "", c),
+          return (0, y.jsx)("div", {
+            id: d,
+            className: (0, Ze.classList)("rockstargames-modules-core-gif-viewerf42b4606ed4a5b16b7647ad7b7eb229d", c ? "rockstargames-modules-core-gif-viewerb00444166ce6346d7ca364a75a335ecc" : "", l),
             "data-game": "community" === n ? null : s,
-            style: (0, R.safeStyles)(p),
+            style: (0, ae.safeStyles)(u),
             "data-context": a,
             "data-template": n,
             "data-theme": o,
             children: t
           })
         },
-        Be = e => {
+        et = e => {
           let {
             caption: t,
             children: a,
             ...s
           } = e;
-          return t ? (0, u.jsxs)("figure", {
+          return t ? (0, y.jsxs)("figure", {
             ...s,
-            children: [a, (0, u.jsx)("figcaption", {
+            children: [a, (0, y.jsx)("figcaption", {
               dangerouslySetInnerHTML: {
                 __html: t
               }
             })]
           }) : a
         },
-        Ve = e => {
+        tt = e => {
           let {
             componentTitle: t,
             type: a,
             items: s
           } = e;
-          return s?.length ? (0, u.jsx)("div", {
-            className: "rockstargames-sites-red-dead-redemption-2d393ab6eb68d416b116b6281abdb5e14",
+          return s?.length ? (0, y.jsx)("div", {
+            className: "rockstargames-modules-core-gif-viewerd393ab6eb68d416b116b6281abdb5e14",
             type: a,
-            children: (0, u.jsxs)(De, {
-              children: [t && (0, u.jsx)("h3", {
+            children: (0, y.jsxs)(Je, {
+              children: [t && (0, y.jsx)("h3", {
                 children: t
-              }), (0, u.jsx)(De, {
-                className: "rockstargames-sites-red-dead-redemption-2ed3ee31cb8e357d795886157f95a742a",
+              }), (0, y.jsx)(Je, {
+                className: "rockstargames-modules-core-gif-viewered3ee31cb8e357d795886157f95a742a",
                 children: s.map(((e, t) => {
-                  return e?.embed ? (0, u.jsx)(Be, {
+                  return e?.embed ? (0, y.jsx)(et, {
                     caption: e?.caption,
-                    children: (0, u.jsx)("div", {
-                      className: "rockstargames-sites-red-dead-redemption-2dcf1c30612026a517f59af64d8703bc4",
+                    children: (0, y.jsx)("div", {
+                      className: "rockstargames-modules-core-gif-viewerdcf1c30612026a517f59af64d8703bc4",
                       dangerouslySetInnerHTML: {
                         __html: (a = e.embed, a.replace(/&gt;/g, ">").replace(/&lt;/g, "<"))
                       }
                     }, `${e?.key??t}_div`)
-                  }, e?.key ?? t) : e?.text ? (0, u.jsx)("p", {
+                  }, e?.key ?? t) : e?.text ? (0, y.jsx)("p", {
                     dangerouslySetInnerHTML: {
                       __html: e.text
                     }
@@ -3723,18 +3914,18 @@ _global.SENTRY_RELEASE = {
             })
           }) : null
         };
-      var Re = a(21388);
-      const Fe = {
+      var at = a(21388);
+      const st = {
           type: "spring",
           stiffness: 650,
           damping: 45
         },
-        $e = {
+        rt = {
           ease: "easeOut",
           duration: .9,
           delay: .3
         },
-        Ue = {
+        it = {
           open: {
             opacity: 0,
             transition: {
@@ -3744,16 +3935,16 @@ _global.SENTRY_RELEASE = {
           },
           closed: {
             opacity: 1,
-            transition: $e
+            transition: rt
           }
         },
-        Ge = {
+        nt = {
           open: {
             opacity: 1,
             display: "grid",
             height: "auto",
             transition: {
-              opacity: $e,
+              opacity: rt,
               height: {
                 type: "spring",
                 stiffness: 425,
@@ -3769,14 +3960,14 @@ _global.SENTRY_RELEASE = {
                 ease: "easeOut",
                 duration: .1
               },
-              height: Fe
+              height: st
             },
             transitionEnd: {
               display: "none"
             }
           }
         },
-        He = {
+        ot = {
           open: {
             "--cta-border-color": "var(--white-15)",
             "--cta-background-color": "rgba(255,255,255,.1)",
@@ -3794,7 +3985,7 @@ _global.SENTRY_RELEASE = {
             "--cta-background-color-noBlur": "var(--black-15)",
             padding: "var(--foundry-global-spacing-dimensions-300) var(--foundry-global-spacing-dimensions-600)",
             gridGap: 0,
-            transition: Fe,
+            transition: st,
             transitionEnd: {
               "--btn-hover-bg-color": "var(--white-100)",
               "--btn-hover-bg-color-noBlur": "var(--white-100)",
@@ -3803,28 +3994,28 @@ _global.SENTRY_RELEASE = {
             }
           }
         },
-        qe = {
-          pillBtn: "rockstargames-sites-red-dead-redemption-2ba37d7130b54bd53bd309b0cd04717ff",
-          selected: "rockstargames-sites-red-dead-redemption-2c9c0bba52c010c4e3571f2702eef944b",
-          container: "rockstargames-sites-red-dead-redemption-2bfcd1a0671c127c9135d8c2feac75c34",
-          content: "rockstargames-sites-red-dead-redemption-2a1cf623c9dd51dd05772a395d8311dac",
-          expandedButton: "rockstargames-sites-red-dead-redemption-2f692df3414cf4d587df1739702e52732",
-          unexpandedButton: "rockstargames-sites-red-dead-redemption-2ba4683b82274b0f8ca98f97fd2b0a1c9",
-          buttonText: "rockstargames-sites-red-dead-redemption-2c2fb2fb5ec39a5c3b3c14ee6c0505b53",
-          expandedArea: "rockstargames-sites-red-dead-redemption-2dd25aa78f935c7d4cafdb1c8bc6d7932",
-          closeButton: "rockstargames-sites-red-dead-redemption-2c559c930e0a5a7caa72b3de9a3362a0a",
-          platformButtons: "rockstargames-sites-red-dead-redemption-2d6bfc47d3110920d77ea2e70dac9c898",
-          platformButton: "rockstargames-sites-red-dead-redemption-2b04a9bd68b598682a5dbe99dd1a2f06d",
-          xbox: "rockstargames-sites-red-dead-redemption-2fe4a687dfc69ef746fcbe4184c7a9574",
-          xboxone: "rockstargames-sites-red-dead-redemption-2b1f46a1ff640d7398e7736e814a5ed8f",
-          xboxseriesxs: "rockstargames-sites-red-dead-redemption-2e23b6f1412ea1ecb8a616b4f25d2888d",
-          ps: "rockstargames-sites-red-dead-redemption-2e0b107bda3c03c1e82c94195bfbc055b",
-          ps4: "rockstargames-sites-red-dead-redemption-2dcf3078cbde57db42e66e6ba4c269fbe",
-          ps5: "rockstargames-sites-red-dead-redemption-2e047116842d7619f0e04a3c9b6dbec13",
-          pc: "rockstargames-sites-red-dead-redemption-2daa32798c37b9055cd280b838972e63e",
-          switch: "rockstargames-sites-red-dead-redemption-2ae7bc564778d8af6cf5f8a0491ef7dc8"
+        ct = {
+          pillBtn: "rockstargames-modules-core-gif-viewerba37d7130b54bd53bd309b0cd04717ff",
+          selected: "rockstargames-modules-core-gif-viewerc9c0bba52c010c4e3571f2702eef944b",
+          container: "rockstargames-modules-core-gif-viewerbfcd1a0671c127c9135d8c2feac75c34",
+          content: "rockstargames-modules-core-gif-viewera1cf623c9dd51dd05772a395d8311dac",
+          expandedButton: "rockstargames-modules-core-gif-viewerf692df3414cf4d587df1739702e52732",
+          unexpandedButton: "rockstargames-modules-core-gif-viewerba4683b82274b0f8ca98f97fd2b0a1c9",
+          buttonText: "rockstargames-modules-core-gif-viewerc2fb2fb5ec39a5c3b3c14ee6c0505b53",
+          expandedArea: "rockstargames-modules-core-gif-viewerdd25aa78f935c7d4cafdb1c8bc6d7932",
+          closeButton: "rockstargames-modules-core-gif-viewerc559c930e0a5a7caa72b3de9a3362a0a",
+          platformButtons: "rockstargames-modules-core-gif-viewerd6bfc47d3110920d77ea2e70dac9c898",
+          platformButton: "rockstargames-modules-core-gif-viewerb04a9bd68b598682a5dbe99dd1a2f06d",
+          xbox: "rockstargames-modules-core-gif-viewerfe4a687dfc69ef746fcbe4184c7a9574",
+          xboxone: "rockstargames-modules-core-gif-viewerb1f46a1ff640d7398e7736e814a5ed8f",
+          xboxseriesxs: "rockstargames-modules-core-gif-viewere23b6f1412ea1ecb8a616b4f25d2888d",
+          ps: "rockstargames-modules-core-gif-viewere0b107bda3c03c1e82c94195bfbc055b",
+          ps4: "rockstargames-modules-core-gif-viewerdcf3078cbde57db42e66e6ba4c269fbe",
+          ps5: "rockstargames-modules-core-gif-viewere047116842d7619f0e04a3c9b6dbec13",
+          pc: "rockstargames-modules-core-gif-viewerdaa32798c37b9055cd280b838972e63e",
+          switch: "rockstargames-modules-core-gif-viewerae7bc564778d8af6cf5f8a0491ef7dc8"
         },
-        We = e => {
+        lt = e => {
           let {
             buttonText: t = "",
             link: s = "",
@@ -3833,175 +4024,175 @@ _global.SENTRY_RELEASE = {
             onClick: n
           } = e;
           const o = i ?? (s.startsWith(document.location.origin) ? "_self" : "_blank"),
-            d = [qe.platformButton, qe[r]].join(" "),
-            c = r ? a(13892)(`./${r}.svg`) : null,
-            l = (0, u.jsxs)(u.Fragment, {
-              children: [c ? (0, u.jsx)("img", {
-                src: c,
+            c = [ct.platformButton, ct[r]].join(" "),
+            l = r ? a(13892)(`./${r}.svg`) : null,
+            d = (0, y.jsxs)(y.Fragment, {
+              children: [l ? (0, y.jsx)("img", {
+                src: l,
                 alt: t
-              }) : "", !c && (0, u.jsx)("div", {
-                className: qe.buttonText,
+              }) : "", !l && (0, y.jsx)("div", {
+                className: ct.buttonText,
                 children: t
               })]
             });
-          return s.startsWith("http") ? (0, u.jsx)("a", {
+          return s.startsWith("http") ? (0, y.jsx)("a", {
             href: s,
-            className: d,
+            className: c,
             target: o,
             onClick: n,
             "aria-label": t,
-            children: l
-          }) : (0, u.jsx)(m.NavLink, {
-            className: d,
+            children: d
+          }) : (0, y.jsx)(C.NavLink, {
+            className: c,
             onClick: n,
             to: s,
             "aria-label": t,
-            children: l
+            children: d
           })
         },
-        Xe = e => {
+        dt = e => {
           let {
             variant: t,
             buttonText: s = "Subscribe",
             buttonClassName: r,
             className: i,
             children: n,
-            platformsAndLinks: d = [],
-            trackingType: c = "buy",
-            trackingParent: l,
+            platformsAndLinks: c = [],
+            trackingType: l = "buy",
+            trackingParent: d,
             target: m = null,
-            trackingOId: p = null
+            trackingOId: u = null
           } = e;
           const [g, f] = (0, o.useState)(!1), {
-            track: _
-          } = (0, F.useGtmTrack)(), h = (0, o.useRef)(null), k = (0, o.useRef)(g);
+            track: p
+          } = (0, se.useGtmTrack)(), _ = (0, o.useRef)(null), h = (0, o.useRef)(g);
           (0, o.useEffect)((() => {
-            k.current = g
+            h.current = g
           }), [g]), (0, o.useEffect)((() => {
             const e = e => {
-              k && !h?.current?.contains(e.target) && f(!1)
+              h && !_?.current?.contains(e.target) && f(!1)
             };
             return document.addEventListener("click", e), () => {
               document.removeEventListener("click", e)
             }
           }), []);
-          const b = e => {
+          const v = e => {
             let {
               href: t,
               platform: a
             } = e;
             return () => {
-              _({
-                element_placement: l,
+              p({
+                element_placement: d,
                 event: "cta_store_link",
                 link_url: t,
                 text: a
               })
             }
           };
-          return (0, u.jsxs)("div", {
-            className: (0, C.classList)(qe.container, i),
-            children: [(0, u.jsx)(Re.q.div, {
-              className: qe.content,
+          return (0, y.jsxs)("div", {
+            className: (0, G.classList)(ct.container, i),
+            children: [(0, y.jsx)(at.q.div, {
+              className: ct.content,
               animate: g ? "open" : "close",
-              variants: Ue,
+              variants: it,
               "aria-hidden": !!g,
               children: n
-            }), (0, u.jsxs)(Re.q.div, {
+            }), (0, y.jsxs)(at.q.div, {
               "data-variant": t,
-              className: ce()(g ? qe.expandedButton : qe.unexpandedButton),
+              className: je()(g ? ct.expandedButton : ct.unexpandedButton),
               animate: g ? "open" : "closed",
-              variants: He,
+              variants: ot,
               initial: !1,
-              ref: h,
-              children: [(0, u.jsx)(Re.q.button, {
-                className: ce()(qe.buttonText, r),
+              ref: _,
+              children: [(0, y.jsx)(at.q.button, {
+                className: je()(ct.buttonText, r),
                 "aria-expanded": g,
                 disabled: g,
                 ...!g && {
                   onClick: () => {
-                    if (f(!g), !g) switch (c) {
+                    if (f(!g), !g) switch (l) {
                       case "select_platform":
-                        _({
-                          element_placement: l,
+                        p({
+                          element_placement: d,
                           event: "select_platform",
                           event_action: "select_platform",
                           event_category: "cta",
-                          event_label: l,
+                          event_label: d,
                           text: s?.toLowerCase() ?? "subscribe"
                         });
                         break;
                       case "link_account":
-                        _({
-                          element_placement: l,
+                        p({
+                          element_placement: d,
                           event: "cta_link_account",
                           event_action: "link_account",
                           event_category: "cta",
-                          event_label: l,
-                          o_id: p,
+                          event_label: d,
+                          o_id: u,
                           text: s?.toLowerCase()
                         });
                         break;
                       case "buy":
-                        _({
-                          element_placement: l,
+                        p({
+                          element_placement: d,
                           event: "cta_buy",
                           event_action: "buy",
                           event_category: "cta",
-                          event_label: l,
+                          event_label: d,
                           text: s?.toLowerCase() ?? "subscribe"
                         });
                         break;
                       case "store_link":
-                        _({
-                          element_placement: l,
+                        p({
+                          element_placement: d,
                           event: "cta_store_link",
                           event_action: "store_link",
                           event_category: "cta",
-                          event_label: l,
+                          event_label: d,
                           text: s?.toLowerCase()
                         });
                         break;
                       case "other":
-                        _({
-                          element_placement: l,
+                        p({
+                          element_placement: d,
                           event: "cta_other",
                           event_action: "other",
                           event_category: "cta",
-                          event_label: l,
+                          event_label: d,
                           text: s?.toLowerCase()
                         })
                     }
                   }
                 },
                 children: "string" == typeof s ? s : "Subscribe"
-              }), (0, u.jsxs)(Re.q.div, {
-                className: qe.expandedArea,
+              }), (0, y.jsxs)(at.q.div, {
+                className: ct.expandedArea,
                 animate: g ? "open" : "closed",
-                variants: Ge,
+                variants: nt,
                 initial: !1,
                 "aria-hidden": !g,
-                children: [(0, u.jsx)("button", {
-                  className: qe.closeButton,
+                children: [(0, y.jsx)("button", {
+                  className: ct.closeButton,
                   onClick: () => {
-                    f(!1), _({
-                      element_placement: l,
+                    f(!1), p({
+                      element_placement: d,
                       event: "cta_other",
                       text: "close expanding platform button"
                     })
                   },
                   "aria-label": "Close",
-                  children: (0, u.jsx)("img", {
+                  children: (0, y.jsx)("img", {
                     src: a(72428),
                     alt: "Close"
                   })
-                }), (0, u.jsx)("div", {
-                  className: qe.platformButtons,
-                  children: d.length ? d.map((e => (0, u.jsx)(We, {
-                    buttonText: e.buttonText ?? (0, R.findPlatform)(e.platform)?.friendlyName ?? "",
+                }), (0, y.jsx)("div", {
+                  className: ct.platformButtons,
+                  children: c.length ? c.map((e => (0, y.jsx)(lt, {
+                    buttonText: e.buttonText ?? (0, ae.findPlatform)(e.platform)?.friendlyName ?? "",
                     link: e.href,
                     platform: e.platform,
-                    onClick: b(e),
+                    onClick: v(e),
                     target: m
                   }, `${e.key}-${e.href}-${e.platform}`))) : ""
                 })]
@@ -4009,15 +4200,15 @@ _global.SENTRY_RELEASE = {
             })]
           })
         },
-        Ye = {
-          animateBox: "rockstargames-sites-red-dead-redemption-2e9374e74c542c1028a2068dfbd1e85a3",
-          fadeArea: "rockstargames-sites-red-dead-redemption-2a63de5cdf9849ac45a0f6b4f7617cfa5",
-          visible: "rockstargames-sites-red-dead-redemption-2d7458685114194d602f94e2581de0f08",
-          barGrow: "rockstargames-sites-red-dead-redemption-2b0f4d843b626e3741c9dd38fcb3f56b0",
-          bar: "rockstargames-sites-red-dead-redemption-2a4b99f54f3ce3987765143d8a151360a",
-          animateMe: "rockstargames-sites-red-dead-redemption-2f9c3869a2a1e10490bdfbcb3ee89d7da"
+        mt = {
+          animateBox: "rockstargames-modules-core-gif-viewere9374e74c542c1028a2068dfbd1e85a3",
+          fadeArea: "rockstargames-modules-core-gif-viewera63de5cdf9849ac45a0f6b4f7617cfa5",
+          visible: "rockstargames-modules-core-gif-viewerd7458685114194d602f94e2581de0f08",
+          barGrow: "rockstargames-modules-core-gif-viewerb0f4d843b626e3741c9dd38fcb3f56b0",
+          bar: "rockstargames-modules-core-gif-viewera4b99f54f3ce3987765143d8a151360a",
+          animateMe: "rockstargames-modules-core-gif-viewerf9c3869a2a1e10490bdfbcb3ee89d7da"
         },
-        Ke = e => {
+        ut = e => {
           let {
             children: t,
             style: a
@@ -4026,26 +4217,26 @@ _global.SENTRY_RELEASE = {
           return (0, o.useEffect)((() => {
             new IntersectionObserver((e => {
               e.forEach((e => {
-                e.isIntersecting && e.target.classList.add([Ye.visible])
+                e.isIntersecting && e.target.classList.add([mt.visible])
               }))
             })).observe(s?.current)
-          }), []), (0, u.jsx)("div", {
+          }), []), (0, y.jsx)("div", {
             style: a,
-            className: [Ye.fadeArea].join(" "),
+            className: [mt.fadeArea].join(" "),
             ref: s,
             children: t
           })
         },
-        Qe = {
-          gameSiteHeader: "rockstargames-sites-red-dead-redemption-2cb7cada84679a7af263e1436675a518a",
-          activeNavItem: "rockstargames-sites-red-dead-redemption-2aa4aa7ed96facb38ed09c72eededb418",
-          navHidden: "rockstargames-sites-red-dead-redemption-2ac1cb9d2005f287ed666d334f816f8c5",
-          navContent: "rockstargames-sites-red-dead-redemption-2e5abd79468866e31fdad2780b169f687",
-          headerNavOpen: "rockstargames-sites-red-dead-redemption-2b98508d0923c5bb442c15772fbad9764",
-          headerLogo: "rockstargames-sites-red-dead-redemption-2e666ff4f0b91dfe78991244ac1a759a5",
-          bg: "rockstargames-sites-red-dead-redemption-2cfc6fd456ca2f3e9db06f780f412660f"
+        gt = {
+          gameSiteHeader: "rockstargames-modules-core-gif-viewercb7cada84679a7af263e1436675a518a",
+          activeNavItem: "rockstargames-modules-core-gif-vieweraa4aa7ed96facb38ed09c72eededb418",
+          navHidden: "rockstargames-modules-core-gif-viewerac1cb9d2005f287ed666d334f816f8c5",
+          navContent: "rockstargames-modules-core-gif-viewere5abd79468866e31fdad2780b169f687",
+          headerNavOpen: "rockstargames-modules-core-gif-viewerb98508d0923c5bb442c15772fbad9764",
+          headerLogo: "rockstargames-modules-core-gif-viewere666ff4f0b91dfe78991244ac1a759a5",
+          bg: "rockstargames-modules-core-gif-viewercfc6fd456ca2f3e9db06f780f412660f"
         },
-        Ze = e => {
+        ft = e => {
           let {
             buttonText: t = null,
             gameOverrideStyles: a,
@@ -4053,45 +4244,45 @@ _global.SENTRY_RELEASE = {
             cta: r = "",
             game: i
           } = e;
-          const [n, d] = (0, o.useState)(!1), c = (0, h.useMutateState)(), {
-            navHidden: l
-          } = (0, h.useState)();
+          const [n, c] = (0, o.useState)(!1), l = (0, z.useMutateState)(), {
+            navHidden: d
+          } = (0, z.useState)();
           return (0, o.useEffect)((() => {
-            c({
+            l({
               gameSiteNavOpen: n
             })
           }), [n]), (0, o.useEffect)((() => {
             const e = () => {
-              d(!1)
+              c(!1)
             };
             return document.addEventListener("click", e), () => document.removeEventListener("click", e)
-          }), []), (0, u.jsxs)("header", {
+          }), []), (0, y.jsxs)("header", {
             "data-game": i,
-            className: [Qe.gameSiteHeader, n ? Qe.headerNavOpen : "", l ? Qe.navHidden : "", a.gameSiteHeader, n ? a.headerNavOpen : ""].join(" "),
-            children: [(0, u.jsx)("button", {
-              className: [Qe.headerLogo, a.headerLogo].join(" "),
+            className: [gt.gameSiteHeader, n ? gt.headerNavOpen : "", d ? gt.navHidden : "", a.gameSiteHeader, n ? a.headerNavOpen : ""].join(" "),
+            children: [(0, y.jsx)("button", {
+              className: [gt.headerLogo, a.headerLogo].join(" "),
               onClick: e => {
-                d(!n), e.nativeEvent.stopImmediatePropagation()
+                c(!n), e.nativeEvent.stopImmediatePropagation()
               },
               type: "button",
               "aria-label": "Open Game Site Nav",
               dangerouslySetInnerHTML: {
                 __html: t
               }
-            }), (0, u.jsx)("div", {
-              className: Qe.bg
-            }), (0, u.jsx)("nav", {
-              children: (0, u.jsx)("div", {
-                className: Qe.navContent,
+            }), (0, y.jsx)("div", {
+              className: gt.bg
+            }), (0, y.jsx)("nav", {
+              children: (0, y.jsx)("div", {
+                className: gt.navContent,
                 children: s
               })
             }), r]
           })
         };
-      var Je = a(31403),
-        et = a(73660),
-        tt = a.n(et);
-      class at extends o.Component {
+      var pt = a(31403),
+        _t = a(79784),
+        ht = a.n(_t);
+      class vt extends o.Component {
         constructor(e) {
           super(e), this.state = {
             header: e.header ?? null
@@ -4105,28 +4296,28 @@ _global.SENTRY_RELEASE = {
           }
         }
         render() {
-          return this?.state?.error?.message ? (0, u.jsxs)("div", {
-            className: "rockstargames-sites-red-dead-redemption-2f903c45f8ecc18bd55f702e202f3763a",
-            children: [(0, u.jsx)("h1", {
+          return this?.state?.error?.message ? (0, y.jsxs)("div", {
+            className: "rockstargames-modules-core-gif-viewerf903c45f8ecc18bd55f702e202f3763a",
+            children: [(0, y.jsx)("h1", {
               children: this.state.header ?? "An error occurred."
-            }), (0, u.jsx)("span", {
+            }), (0, y.jsx)("span", {
               children: this.state.error.message
             })]
           }) : this.props.children
         }
       }
-      const st = function(e) {
+      const kt = function(e) {
           let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
           return function(a) {
-            return (0, u.jsx)(at, {
+            return (0, y.jsx)(vt, {
               header: t,
-              children: (0, u.jsx)(e, {
+              children: (0, y.jsx)(e, {
                 ...a
               })
             })
           }
         },
-        rt = e => {
+        bt = e => {
           let {
             prevRef: t,
             nextRef: a,
@@ -4134,16 +4325,16 @@ _global.SENTRY_RELEASE = {
             onPrevClicked: r,
             onNextKeyDown: i
           } = e;
-          return (0, u.jsxs)("div", {
-            className: "rockstargames-sites-red-dead-redemption-2d98f432655f19a842390597c4434db06",
-            children: [(0, u.jsx)("button", {
-              className: "rockstargames-sites-red-dead-redemption-2c06ca360ce11f2cef7baf8c5fba05a42",
+          return (0, y.jsxs)("div", {
+            className: "rockstargames-modules-core-gif-viewerd98f432655f19a842390597c4434db06",
+            children: [(0, y.jsx)("button", {
+              className: "rockstargames-modules-core-gif-viewerc06ca360ce11f2cef7baf8c5fba05a42",
               ref: t,
               onClick: r,
               "aria-label": "Previous",
               role: "button"
-            }), (0, u.jsx)("button", {
-              className: "rockstargames-sites-red-dead-redemption-2a4f98606cdef508fbd2e69c5564a92d8",
+            }), (0, y.jsx)("button", {
+              className: "rockstargames-modules-core-gif-viewera4f98606cdef508fbd2e69c5564a92d8",
               ref: a,
               onClick: s,
               onKeyDown: i,
@@ -4152,7 +4343,7 @@ _global.SENTRY_RELEASE = {
             })]
           })
         },
-        it = st((e => {
+        wt = kt((e => {
           let {
             description: t,
             slideChildren: a,
@@ -4160,139 +4351,139 @@ _global.SENTRY_RELEASE = {
             title: r,
             name: i,
             customSlidesPerView: n = null,
-            customSpaceBetween: d = null,
-            slideClass: c,
-            style: l,
+            customSpaceBetween: c = null,
+            slideClass: l,
+            style: d,
             className: m,
-            cardSizeBreakpoints: p,
+            cardSizeBreakpoints: u,
             customAspectRatio: g,
             titleBadge: f
           } = e;
           const {
-            track: _
-          } = (0, F.useGtmTrack)(), h = (0, o.useRef)(null), k = (0, o.useRef)(null), b = (0, o.useRef)(null), [v, x] = (0, o.useState)(null), [y, w] = (0, o.useState)(!1), [N, j] = (0, o.useState)(null), [S, T] = (0, o.useState)(), [M, I] = (0, o.useState)(), {
-            ref: E,
-            inView: L
-          } = (0, q.cD)({
+            track: p
+          } = (0, se.useGtmTrack)(), _ = (0, o.useRef)(null), h = (0, o.useRef)(null), v = (0, o.useRef)(null), [k, b] = (0, o.useState)(null), [w, x] = (0, o.useState)(!1), [N, j] = (0, o.useState)(null), [S, T] = (0, o.useState)(), [C, M] = (0, o.useState)(), {
+            ref: I,
+            inView: E
+          } = (0, ce.cD)({
             threshold: .6
-          }), [z, O] = (0, o.useState)(!1), [A, D] = (0, o.useState)(null), [B, V] = (0, o.useState)(!1), [R, $] = (0, o.useState)(0), [U, G] = (0, o.useState)(0);
+          }), [L, z] = (0, o.useState)(!1), [P, O] = (0, o.useState)(null), [D, A] = (0, o.useState)(!1), [B, V] = (0, o.useState)(0), [R, F] = (0, o.useState)(0);
           (0, o.useEffect)((() => {
             const e = () => {
-              V(window.innerWidth < 1024)
+              A(window.innerWidth < 1024)
             };
             return e(), window.addEventListener("resize", e), () => {
               window.removeEventListener("resize", e)
             }
           }), []), (0, o.useEffect)((() => {
             const e = () => {
-              S && !(0, et.isEmpty)(S) && S?.height > 0 && S?.height !== R && $(S?.height)
+              S && !(0, _t.isEmpty)(S) && S?.height > 0 && S?.height !== B && V(S?.height)
             };
             return e(), window.addEventListener("resize", e), () => {
               window.removeEventListener("resize", e)
             }
           }), [S]);
-          const H = {
+          const $ = {
             0: {
-              spaceBetween: d ?? 16
+              spaceBetween: c ?? 16
             },
             1024: {
-              spaceBetween: d ?? 18
+              spaceBetween: c ?? 18
             },
             1920: {
-              spaceBetween: d ?? 20
+              spaceBetween: c ?? 20
             },
             2560: {
-              spaceBetween: d ?? 22
+              spaceBetween: c ?? 22
             }
           };
           (0, o.useEffect)((() => {
-            if (!h.current) return;
+            if (!_.current) return;
             const e = () => {
-              if (h.current) {
-                const e = n || Number(window.getComputedStyle(h.current).getPropertyValue("--slides-per-view")),
-                  t = n ? 1 : Number(window.getComputedStyle(h.current).getPropertyValue("--slides-per-view-multiplier"));
+              if (_.current) {
+                const e = n || Number(window.getComputedStyle(_.current).getPropertyValue("--slides-per-view")),
+                  t = n ? 1 : Number(window.getComputedStyle(_.current).getPropertyValue("--slides-per-view-multiplier"));
                 j(e * t)
               }
             };
             return window.addEventListener("resize", e), e(), () => {
               window.removeEventListener("resize", e)
             }
-          }), [h, n]), (0, o.useEffect)((() => {
+          }), [_, n]), (0, o.useEffect)((() => {
             if (!a) return;
             let e = !1;
             a.forEach((t => {
-              "cover-card" === t?.props?.tina?.payload?.meta?.type && (e = !0, D(t))
-            })), O(e);
-            const t = a.map(((e, t) => "cover-card" === e?.props?.tina?.payload?.meta?.type && B ? null : (0, u.jsx)(P.Ky, {
-              className: "rockstargames-sites-red-dead-redemption-2f58e79e329504e170dc9cb4595ea011b",
-              onFocus: () => Y(t),
+              "cover-card" === t?.props?.tina?.payload?.meta?.type && (e = !0, O(t))
+            })), z(e);
+            const t = a.map(((e, t) => "cover-card" === e?.props?.tina?.payload?.meta?.type && D ? null : (0, y.jsx)(K.Ky, {
+              className: "rockstargames-modules-core-gif-viewerf58e79e329504e170dc9cb4595ea011b",
+              onFocus: () => q(t),
               children: e
             }, Symbol(t).toString())));
-            x(t)
-          }), [a, B]), (0, o.useEffect)((() => {
-            I({
-              nextEl: b.current,
-              prevEl: k.current
+            b(t)
+          }), [a, D]), (0, o.useEffect)((() => {
+            M({
+              nextEl: v.current,
+              prevEl: h.current
             })
-          }), [b, k]), (0, o.useEffect)((() => {
-            L && !y && a && (_({
+          }), [v, h]), (0, o.useEffect)((() => {
+            E && !w && a && (p({
               event: "page_section_impression",
               event_action: "impression",
               event_category: "page_section",
               event_label: (i || r).toLowerCase(),
               element_placement: (i || r).toLowerCase()
-            }), w(!0))
-          }), [L, a]);
-          let W = "custom" === s ? {
+            }), x(!0))
+          }), [E, a]);
+          let U = "custom" === s ? {
             "--custom-aspect-ratio": g,
-            ...l
+            ...d
           } : {
-            ...l
+            ...d
           };
-          const X = 0 !== R ? `${R}px` : "100%";
-          W = {
-            ...W,
-            "--carousel-cards-height": X,
-            "--carousel-nav-opacity": U
+          const H = 0 !== B ? `${B}px` : "100%";
+          U = {
+            ...U,
+            "--carousel-cards-height": H,
+            "--carousel-nav-opacity": R
           };
-          const Y = e => {
+          const q = e => {
             S?.slideTo(e)
           };
-          return (0, u.jsxs)("div", {
-            className: (0, C.classList)("rockstargames-sites-red-dead-redemption-2d0c3d91603036c852633939015a6cb48", m),
+          return (0, y.jsxs)("div", {
+            className: (0, G.classList)("rockstargames-modules-core-gif-viewerd0c3d91603036c852633939015a6cb48", m),
             "data-size": s,
-            "data-sm": p?.sm ? p?.sm : s,
-            "data-md": p?.md ? p?.md : s,
-            "data-lg": p?.lg ? p?.lg : s,
-            "data-xl": p?.xl ? p?.xl : s,
-            "data-xxl": p?.xxl ? p?.xxl : s,
-            "data-has-covercard": z,
+            "data-sm": u?.sm ? u?.sm : s,
+            "data-md": u?.md ? u?.md : s,
+            "data-lg": u?.lg ? u?.lg : s,
+            "data-xl": u?.xl ? u?.xl : s,
+            "data-xxl": u?.xxl ? u?.xxl : s,
+            "data-has-covercard": L,
             "data-new-carousel-nav": !0,
-            ref: h,
-            style: W,
-            children: [(0, u.jsx)("div", {
-              className: "rockstargames-sites-red-dead-redemption-2ddeb75a59ed783554b94e8298897a1fa",
-              ref: E
-            }), z && B && (0, u.jsx)("div", {
-              className: "rockstargames-sites-red-dead-redemption-2d5f00d41fdd2c864a0eb9e069cf08db0",
-              children: A
-            }), (0, u.jsx)("div", {
-              className: "rockstargames-sites-red-dead-redemption-2cdc60dbde3f8db6f466aba8a3e19fa96",
-              children: (0, u.jsxs)("div", {
-                className: "rockstargames-sites-red-dead-redemption-2fb8e207418c783fc2f53b44c19faedca",
-                children: [(0, u.jsxs)("div", {
-                  className: "rockstargames-sites-red-dead-redemption-2b779ba2045a88302079083935c90f7b3",
-                  children: [!z && r && (0, u.jsxs)("div", {
-                    className: "rockstargames-sites-red-dead-redemption-2edf90c7c5ee1c79049f5a6442f14c949",
-                    children: [(0, u.jsx)("h2", {
+            ref: _,
+            style: U,
+            children: [(0, y.jsx)("div", {
+              className: "rockstargames-modules-core-gif-viewerddeb75a59ed783554b94e8298897a1fa",
+              ref: I
+            }), L && D && (0, y.jsx)("div", {
+              className: "rockstargames-modules-core-gif-viewerd5f00d41fdd2c864a0eb9e069cf08db0",
+              children: P
+            }), (0, y.jsx)("div", {
+              className: "rockstargames-modules-core-gif-viewercdc60dbde3f8db6f466aba8a3e19fa96",
+              children: (0, y.jsxs)("div", {
+                className: "rockstargames-modules-core-gif-viewerfb8e207418c783fc2f53b44c19faedca",
+                children: [(0, y.jsxs)("div", {
+                  className: "rockstargames-modules-core-gif-viewerb779ba2045a88302079083935c90f7b3",
+                  children: [!L && r && (0, y.jsxs)("div", {
+                    className: "rockstargames-modules-core-gif-vieweredf90c7c5ee1c79049f5a6442f14c949",
+                    children: [(0, y.jsx)("h2", {
                       children: r
-                    }), f && (0, u.jsx)("span", {
-                      className: "rockstargames-sites-red-dead-redemption-2d7a4aaeb70d68fdee39312192efb990b",
+                    }), f && (0, y.jsx)("span", {
+                      className: "rockstargames-modules-core-gif-viewerd7a4aaeb70d68fdee39312192efb990b",
                       children: f
                     })]
-                  }), (0, u.jsx)(rt, {
-                    prevRef: k,
-                    nextRef: b,
+                  }), (0, y.jsx)(bt, {
+                    prevRef: h,
+                    nextRef: v,
                     onNextClicked: () => {},
                     onPrevClicked: () => {},
                     onNextKeyDown: e => {
@@ -4302,14 +4493,14 @@ _global.SENTRY_RELEASE = {
                       }
                     }
                   })]
-                }), t && (0, u.jsx)("div", {
-                  className: "rockstargames-sites-red-dead-redemption-2a1007d13e3a321bb18b5fc667025d545",
+                }), t && (0, y.jsx)("div", {
+                  className: "rockstargames-modules-core-gif-viewera1007d13e3a321bb18b5fc667025d545",
                   dangerouslySetInnerHTML: {
                     __html: t
                   }
                 })]
               })
-            }), N ? (0, u.jsx)(P.wx, {
+            }), N ? (0, y.jsx)(K.wx, {
               slidesPerView: N,
               onInit: e => {
                 T(e);
@@ -4317,16 +4508,16 @@ _global.SENTRY_RELEASE = {
                   const {
                     height: a
                   } = e;
-                  a > 0 && ($(a), G(1), clearInterval(t))
+                  a > 0 && (V(a), F(1), clearInterval(t))
                 }), 500)
               },
               grabCursor: !0,
-              navigation: M,
-              modules: [Je._2],
-              breakpoints: H,
-              slideClass: (0, C.classList)("swiper-slide", c),
+              navigation: C,
+              modules: [pt._2],
+              breakpoints: $,
+              slideClass: (0, G.classList)("swiper-slide", l),
               onSlideNextTransitionEnd: () => {
-                _({
+                p({
                   event_action: "next",
                   event_category: "carousel",
                   event: "carousel_next",
@@ -4335,7 +4526,7 @@ _global.SENTRY_RELEASE = {
                 })
               },
               onSlidePrevTransitionEnd: () => {
-                _({
+                p({
                   event_action: "previous",
                   event_category: "carousel",
                   event: "carousel_previous",
@@ -4344,7 +4535,7 @@ _global.SENTRY_RELEASE = {
                 })
               },
               onSlideChangeTransitionEnd: () => {
-                _({
+                p({
                   event_action: "swipe",
                   event_category: "carousel",
                   event: "carousel_swipe",
@@ -4352,29 +4543,29 @@ _global.SENTRY_RELEASE = {
                   element_placement: r?.toLowerCase() ?? ""
                 })
               },
-              children: v
+              children: k
             }) : ""]
           })
         }), null),
-        nt = {
-          pillBtn: "rockstargames-sites-red-dead-redemption-2d008b074498ad02717806cc094b8a780",
-          selected: "rockstargames-sites-red-dead-redemption-2be9a2e37ec59e339b0d72cd8e5256703",
-          hero: "rockstargames-sites-red-dead-redemption-2d1346f9b98fbaac26948e361bd98b4c6",
-          images: "rockstargames-sites-red-dead-redemption-2c9c078a3102a96b26f1bf1f98306384f",
-          background: "rockstargames-sites-red-dead-redemption-2a271224ca2caf56b470059cdb98d9a42",
-          gradient: "rockstargames-sites-red-dead-redemption-2ae257e9d159ae9bd7c8685e38ba16f59",
-          layered: "rockstargames-sites-red-dead-redemption-2f663886f051e47ea04f097c85ae6625b",
-          content: "rockstargames-sites-red-dead-redemption-2f9c204f451f3a53bcc307c00eb5f907f",
-          descriptions: "rockstargames-sites-red-dead-redemption-2d1bbf288f3fe6c79e658764847d2890a",
-          buttonGroup: "rockstargames-sites-red-dead-redemption-2fb373367ffd03ba01edaf671175244ab",
-          ctaBlock: "rockstargames-sites-red-dead-redemption-2d4e5e627f7968400413c3b578b1b3143",
-          primaryBtn: "rockstargames-sites-red-dead-redemption-2ff921058c7bbf6660b52da746e719577",
-          secondaryBtn: "rockstargames-sites-red-dead-redemption-2a0c587b1487e33b081dc394dfd017fab",
-          btnText: "rockstargames-sites-red-dead-redemption-2be305ab9e2c27b1458d3e7bb6a9f12e0",
-          legalText: "rockstargames-sites-red-dead-redemption-2f625ffdd1b33a1642aa0dec12efe7897",
-          shardsCarousel: "rockstargames-sites-red-dead-redemption-2e999b9cecfe233bcee8cab8682fb96bf"
+        xt = {
+          pillBtn: "rockstargames-modules-core-gif-viewerd008b074498ad02717806cc094b8a780",
+          selected: "rockstargames-modules-core-gif-viewerbe9a2e37ec59e339b0d72cd8e5256703",
+          hero: "rockstargames-modules-core-gif-viewerd1346f9b98fbaac26948e361bd98b4c6",
+          images: "rockstargames-modules-core-gif-viewerc9c078a3102a96b26f1bf1f98306384f",
+          background: "rockstargames-modules-core-gif-viewera271224ca2caf56b470059cdb98d9a42",
+          gradient: "rockstargames-modules-core-gif-viewerae257e9d159ae9bd7c8685e38ba16f59",
+          layered: "rockstargames-modules-core-gif-viewerf663886f051e47ea04f097c85ae6625b",
+          content: "rockstargames-modules-core-gif-viewerf9c204f451f3a53bcc307c00eb5f907f",
+          descriptions: "rockstargames-modules-core-gif-viewerd1bbf288f3fe6c79e658764847d2890a",
+          buttonGroup: "rockstargames-modules-core-gif-viewerfb373367ffd03ba01edaf671175244ab",
+          ctaBlock: "rockstargames-modules-core-gif-viewerd4e5e627f7968400413c3b578b1b3143",
+          primaryBtn: "rockstargames-modules-core-gif-viewerff921058c7bbf6660b52da746e719577",
+          secondaryBtn: "rockstargames-modules-core-gif-viewera0c587b1487e33b081dc394dfd017fab",
+          btnText: "rockstargames-modules-core-gif-viewerbe305ab9e2c27b1458d3e7bb6a9f12e0",
+          legalText: "rockstargames-modules-core-gif-viewerf625ffdd1b33a1642aa0dec12efe7897",
+          shardsCarousel: "rockstargames-modules-core-gif-viewere999b9cecfe233bcee8cab8682fb96bf"
         },
-        ot = {
+        yt = {
           visible: {
             opacity: 1,
             transition: {
@@ -4389,7 +4580,7 @@ _global.SENTRY_RELEASE = {
             opacity: 0
           }
         },
-        dt = {
+        Nt = {
           visible: {
             opacity: 1,
             y: 0,
@@ -4407,26 +4598,26 @@ _global.SENTRY_RELEASE = {
             overflow: "hidden"
           }
         },
-        ct = e => {
+        jt = e => {
           let {
             title: t = "",
             mobileImg: a,
             desktopImg: s
           } = e;
-          const r = (0, C.useGetCdnSource)(a ?? null),
-            i = (0, C.useGetCdnSource)(s ?? r);
-          return (0, u.jsx)("div", {
-            className: nt.shard,
+          const r = (0, G.useGetCdnSource)(a ?? null),
+            i = (0, G.useGetCdnSource)(s ?? r);
+          return (0, y.jsx)("div", {
+            className: xt.shard,
             style: {
               "--background-image-mobile": `url(${r})`,
               "--background-image-desktop": `url(${i})`
             },
-            children: (0, u.jsx)("h5", {
+            children: (0, y.jsx)("h5", {
               children: t
             })
           })
         },
-        lt = e => {
+        St = e => {
           let {
             title: t = "Membership Rewards",
             name: a = "Membership Rewards",
@@ -4443,15 +4634,15 @@ _global.SENTRY_RELEASE = {
                 mobile: r,
                 desktop: i
               } = s;
-              return e.push((0, u.jsx)(ct, {
+              return e.push((0, y.jsx)(jt, {
                 title: a,
                 mobileImg: r?.full_src,
                 desktopImg: i?.full_src
               })), e
             }), []))
-          }), [s]), r ? (0, u.jsx)("div", {
-            className: nt.shardsCarousel,
-            children: (0, u.jsx)(it, {
+          }), [s]), r ? (0, y.jsx)("div", {
+            className: xt.shardsCarousel,
+            children: (0, y.jsx)(wt, {
               title: t,
               name: a,
               slideChildren: r,
@@ -4460,13 +4651,13 @@ _global.SENTRY_RELEASE = {
             })
           }) : null
         },
-        mt = e => {
+        Tt = e => {
           let {
             animated: t = !1,
             ctas: a = [],
             expandingButtonLabel: s = "Subscribe"
           } = e;
-          const [r, i] = (0, o.useState)([]), [n, d] = (0, o.useState)([]);
+          const [r, i] = (0, o.useState)([]), [n, c] = (0, o.useState)([]);
           return (0, o.useEffect)((() => {
             const {
               expandingButtonsArray: e,
@@ -4483,32 +4674,32 @@ _global.SENTRY_RELEASE = {
               expandingButtonsArray: [],
               plainButtonsArray: []
             });
-            i(e), d(t)
-          }), [a]), r.length ? (0, u.jsx)(Re.q.div, {
-            variants: t ? dt : void 0,
-            children: (0, u.jsx)(Xe, {
+            i(e), c(t)
+          }), [a]), r.length ? (0, y.jsx)(at.q.div, {
+            variants: t ? Nt : void 0,
+            children: (0, y.jsx)(dt, {
               variant: "gen9",
               buttonText: s,
               platformsAndLinks: r,
-              children: !!n.length && (0, u.jsx)(Re.q.div, {
-                variants: dt,
-                children: (0, u.jsx)(z, {
+              children: !!n.length && (0, y.jsx)(at.q.div, {
+                variants: Nt,
+                children: (0, y.jsx)(Y, {
                   buttons: n,
-                  className: nt.buttonGroup
+                  className: xt.buttonGroup
                 })
               })
             })
-          }) : (0, u.jsx)(u.Fragment, {
-            children: !!n.length && (0, u.jsx)(Re.q.div, {
-              variants: dt,
-              children: (0, u.jsx)(z, {
+          }) : (0, y.jsx)(y.Fragment, {
+            children: !!n.length && (0, y.jsx)(at.q.div, {
+              variants: Nt,
+              children: (0, y.jsx)(Y, {
                 buttons: n,
-                className: nt.buttonGroup
+                className: xt.buttonGroup
               })
             })
           })
         },
-        pt = e => {
+        Ct = e => {
           let {
             animated: t = !1,
             brands: a = [],
@@ -4517,36 +4708,36 @@ _global.SENTRY_RELEASE = {
             description: i = "",
             expandingButtonLabel: n = "Subscribe",
             title: o = "",
-            legalText: d
+            legalText: c
           } = e;
-          return (0, u.jsxs)(Re.q.div, {
-            className: nt.content,
+          return (0, y.jsxs)(at.q.div, {
+            className: xt.content,
             initial: "hidden",
             animate: "visible",
-            variants: t ? ot : void 0,
-            children: [(0, u.jsx)(Re.q.div, {
-              variants: t ? dt : void 0,
-              children: (0, u.jsx)(j, {
+            variants: t ? yt : void 0,
+            children: [(0, y.jsx)(at.q.div, {
+              variants: t ? Nt : void 0,
+              children: (0, y.jsx)(F, {
                 brands: a
               })
-            }), (o || i) && (0, u.jsxs)(Re.q.div, {
-              className: nt.descriptions,
-              variants: t ? dt : void 0,
-              children: [o && (0, u.jsx)("h2", {
+            }), (o || i) && (0, y.jsxs)(at.q.div, {
+              className: xt.descriptions,
+              variants: t ? Nt : void 0,
+              children: [o && (0, y.jsx)("h2", {
                 dangerouslySetInnerHTML: {
                   __html: o
                 }
-              }), i && (0, u.jsx)("p", {
+              }), i && (0, y.jsx)("p", {
                 dangerouslySetInnerHTML: {
                   __html: i
                 }
               })]
-            }), !!r.length && (0, u.jsx)("div", {
-              className: nt.ctaBlock,
-              children: (0, u.jsx)(C.TinaParser, {
+            }), !!r.length && (0, y.jsx)("div", {
+              className: xt.ctaBlock,
+              children: (0, y.jsx)(G.TinaParser, {
                 components: {
-                  Cta: me,
-                  ExpandingPlatformButton: Xe
+                  Cta: Te,
+                  ExpandingPlatformButton: dt
                 },
                 tina: {
                   payload: {
@@ -4554,25 +4745,25 @@ _global.SENTRY_RELEASE = {
                   }
                 }
               })
-            }), !!s.length && (0, u.jsx)("div", {
-              className: nt.ctaBlock,
-              children: (0, u.jsx)(mt, {
+            }), !!s.length && (0, y.jsx)("div", {
+              className: xt.ctaBlock,
+              children: (0, y.jsx)(Tt, {
                 animated: t,
                 ctas: s,
                 expandingButtonLabel: n
               })
-            }), d && (0, u.jsx)(Re.q.div, {
-              className: nt.legalText,
-              variants: t ? dt : void 0,
-              children: (0, u.jsx)("p", {
+            }), c && (0, y.jsx)(at.q.div, {
+              className: xt.legalText,
+              variants: t ? Nt : void 0,
+              children: (0, y.jsx)("p", {
                 dangerouslySetInnerHTML: {
-                  __html: d
+                  __html: c
                 }
               })
             })]
           })
         },
-        ut = e => {
+        Mt = e => {
           let {
             animated: t = !1,
             backgroundImage: a,
@@ -4581,15 +4772,15 @@ _global.SENTRY_RELEASE = {
             ctas: i = [],
             cta: n,
             description: o = "",
-            expandingButtonLabel: d = "Subscribe",
-            layeredImage: c,
-            layeredImageSettings: l,
+            expandingButtonLabel: c = "Subscribe",
+            layeredImage: l,
+            layeredImageSettings: d,
             legalText: m,
-            shardsSection: p = {},
+            shardsSection: u = {},
             theme: g = "gen9",
             title: f = ""
           } = e;
-          const _ = (e => {
+          const p = (e => {
               if (!e) return null;
               const t = {},
                 a = new Map([
@@ -4615,84 +4806,83 @@ _global.SENTRY_RELEASE = {
                   }))
                 }
               })), t
-            })(l),
-            h = (0, C.useGetCdnSource)(a?.mobile?.full_src ?? null),
-            k = (0, C.useGetCdnSource)(a?.desktop?.full_src ?? h),
-            b = (0, C.useGetCdnSource)(c?.mobile?.full_src ?? null),
-            v = (0, C.useGetCdnSource)(c?.desktop?.full_src ?? b);
-          return (0, u.jsxs)(Re.q.div, {
-            className: (0, C.classList)(nt.hero, r),
+            })(d),
+            _ = (0, G.useGetCdnSource)(a?.mobile?.full_src ?? null),
+            h = (0, G.useGetCdnSource)(a?.desktop?.full_src ?? _),
+            v = (0, G.useGetCdnSource)(l?.mobile?.full_src ?? null),
+            k = (0, G.useGetCdnSource)(l?.desktop?.full_src ?? v);
+          return (0, y.jsxs)(at.q.div, {
+            className: (0, G.classList)(xt.hero, r),
             style: {
-              "--background-image-desktop": `url(${k})`,
-              "--background-image-mobile": `url(${h})`,
-              "--layered-image-desktop": `url(${v})`,
-              "--layered-image-mobile": `url(${b})`
+              "--background-image-desktop": `url(${h})`,
+              "--background-image-mobile": `url(${_})`,
+              "--layered-image-desktop": `url(${k})`,
+              "--layered-image-mobile": `url(${v})`
             },
             initial: "hidden",
             animate: "visible",
-            variants: t ? ot : void 0,
+            variants: t ? yt : void 0,
             "data-type": "hero",
             theme: g,
-            children: [(0, u.jsxs)("div", {
-              className: nt.images,
-              children: [k && h ? (0, u.jsx)("div", {
-                className: nt.background,
+            children: [(0, y.jsxs)("div", {
+              className: xt.images,
+              children: [h && _ ? (0, y.jsx)("div", {
+                className: xt.background,
                 style: a?.style ?? {}
-              }) : "", b && v ? (0, u.jsx)("div", {
-                className: nt.layered,
-                style: l ? _ : {}
-              }) : "", (0, u.jsx)("div", {
-                className: nt.gradient
+              }) : "", v && k ? (0, y.jsx)("div", {
+                className: xt.layered,
+                style: d ? p : {}
+              }) : "", (0, y.jsx)("div", {
+                className: xt.gradient
               })]
-            }), (0, u.jsx)(pt, {
+            }), (0, y.jsx)(Ct, {
               animated: t,
               ctas: i,
               cta: n,
               description: o,
-              expandingButtonLabel: d,
+              expandingButtonLabel: c,
               title: f,
               brands: s,
               legalText: m
-            }), p?.shards && (0, u.jsx)(lt, {
-              ...p
+            }), u?.shards && (0, y.jsx)(St, {
+              ...u
             })]
           })
         },
-        gt = e => {
+        It = e => {
           let {
             children: t,
             attributes: a = {},
             className: s = "",
             style: r = {}
           } = e;
-          return (0, u.jsx)("span", {
-            className: (0, C.classList)(s, a?.className, "rockstargames-sites-red-dead-redemption-2a7f106a8036d74ed9282a741476c6b5a"),
-            style: (0, R.safeStyles)(r ?? a?.style ?? {}),
+          return (0, y.jsx)("span", {
+            className: (0, G.classList)(s, a?.className, "rockstargames-modules-core-gif-viewera7f106a8036d74ed9282a741476c6b5a"),
+            style: (0, ae.safeStyles)(r ?? a?.style ?? {}),
             dangerouslySetInnerHTML: {
-              __html: tt().unescape(t)
+              __html: ht().unescape(t)
             }
           })
-        };
-      var ft = a(53592);
-      const _t = (0, d.defineMessages)({
+        },
+        Et = (0, c.Os)({
           language_selector_default: {
             id: "language_selector_default",
             defaultMessage: "Select a Language"
           }
         }),
-        ht = {
-          pillBtn: "rockstargames-sites-red-dead-redemption-2cb792ef8796eaa09f8b5c1ee0230fcd7",
-          selected: "rockstargames-sites-red-dead-redemption-2c951b9f5173e8a37be389854c40995ee",
-          scMenuStyles: "rockstargames-sites-red-dead-redemption-2fa91a55e22ad688cba0bc1210eaf4726",
-          languageSelector: "rockstargames-sites-red-dead-redemption-2b631f2ce92e4a89f8eddebd32e8ed30a",
-          open: "rockstargames-sites-red-dead-redemption-2edc598921a872174190475d0ad016d15",
-          linkWrapper: "rockstargames-sites-red-dead-redemption-2c4b7087d1fcbaad6967e61b84160ff79",
-          links: "rockstargames-sites-red-dead-redemption-2c7d345d5c7e567e0ee75b792d5bdfb88",
-          selectBoxWrapper: "rockstargames-sites-red-dead-redemption-2e3e55a10507405de05ae92006ec0d02b",
-          selectBox: "rockstargames-sites-red-dead-redemption-2c646a2bff16ec3003b027857488cd612",
-          selectBoxOption: "rockstargames-sites-red-dead-redemption-2bcccd1077d13d7fe1585655e5c5f8363"
+        Lt = {
+          pillBtn: "rockstargames-modules-core-gif-viewercb792ef8796eaa09f8b5c1ee0230fcd7",
+          selected: "rockstargames-modules-core-gif-viewerc951b9f5173e8a37be389854c40995ee",
+          scMenuStyles: "rockstargames-modules-core-gif-viewerfa91a55e22ad688cba0bc1210eaf4726",
+          languageSelector: "rockstargames-modules-core-gif-viewerb631f2ce92e4a89f8eddebd32e8ed30a",
+          open: "rockstargames-modules-core-gif-vieweredc598921a872174190475d0ad016d15",
+          linkWrapper: "rockstargames-modules-core-gif-viewerc4b7087d1fcbaad6967e61b84160ff79",
+          links: "rockstargames-modules-core-gif-viewerc7d345d5c7e567e0ee75b792d5bdfb88",
+          selectBoxWrapper: "rockstargames-modules-core-gif-viewere3e55a10507405de05ae92006ec0d02b",
+          selectBox: "rockstargames-modules-core-gif-viewerc646a2bff16ec3003b027857488cd612",
+          selectBoxOption: "rockstargames-modules-core-gif-viewerbcccd1077d13d7fe1585655e5c5f8363"
         },
-        kt = (0, d.withIntl)((e => {
+        zt = j((e => {
           let {
             theme: t,
             languageSelectorOpened: a,
@@ -4701,87 +4891,87 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: i
-          } = (0, F.useGtmTrack)(), n = (0, m.useLocation)(), c = (0, d.useIntl)(), [l, p] = (0, d.getLocale)(), [f, _] = (0, o.useState)(!1), h = (0, o.useMemo)((() => (0, ft.c)()), []), k = (0, o.useCallback)((e => {
+          } = (0, se.useGtmTrack)(), n = (0, C.useLocation)(), c = (0, d.c)(), [m, g] = x(), [f, _] = (0, o.useState)(!1), h = (0, o.useMemo)((() => p()), []), v = (0, o.useCallback)((e => {
             let t = n.pathname;
             const a = t.split("/");
-            return d.locales.map((e => e.subdomaincom)).includes(a[0]) && (t = a.slice(1).join("/")), h.currentSite?.site === ft.U.www ? "en" === e ? `${window.location.origin}${t}${n.search}` : `${window.location.origin}/${e}${t}${n.search}` : `${window.location.origin}${t}${n.search}`
-          }), [n]), b = (0, o.useRef)(null), [v, x] = (0, o.useState)(0), y = matchMedia("(hover: none) and (pointer: coarse)").matches, w = e => {
-            if (s && s(!1), l.subdomaincom === e || "none" === e) return void(s && s(!1));
-            const t = d.locales.find((t => t.subdomaincom === e));
+            return b.map((e => e.subdomaincom)).includes(a[0]) && (t = a.slice(1).join("/")), h.currentSite?.site === u ? "en" === e ? `${window.location.origin}${t}${n.search}` : `${window.location.origin}/${e}${t}${n.search}` : `${window.location.origin}${t}${n.search}`
+          }), [n]), k = (0, o.useRef)(null), [w, N] = (0, o.useState)(0), j = matchMedia("(hover: none) and (pointer: coarse)").matches, S = e => {
+            if (s && s(!1), m.subdomaincom === e || "none" === e) return void(s && s(!1));
+            const t = b.find((t => t.subdomaincom === e));
             if (t) {
-              const a = k(e);
+              const a = v(e);
               i({
                 event: "cta_other",
                 link_url: a,
                 text: e,
                 element_placement: r
-              }), p(t.iso), window.location.href = a
+              }), g(t.iso), window.location.href = a
             }
           };
           return (0, o.useEffect)((() => {
             void 0 !== a && !1 === a && !0 === f && _(!1)
           }), [a]), (0, o.useEffect)((() => {
-            b.current && x(b.current.scrollHeight)
-          }), [b]), (0, u.jsxs)("div", {
-            className: [ht.languageSelector, f ? ht.open : ""].join(" "),
+            k.current && N(k.current.scrollHeight)
+          }), [k]), (0, y.jsxs)("div", {
+            className: [Lt.languageSelector, f ? Lt.open : ""].join(" "),
             "data-theme": t,
-            children: [y && "sc-menu" === t && (0, u.jsx)("div", {
-              className: ht.selectBoxWrapper,
-              children: (0, u.jsxs)("select", {
-                className: ht.selectBox,
+            children: [j && "sc-menu" === t && (0, y.jsx)("div", {
+              className: Lt.selectBoxWrapper,
+              children: (0, y.jsxs)("select", {
+                className: Lt.selectBox,
                 onClick: e => e.stopPropagation(),
                 onChange: e => {
                   const t = e.currentTarget.value;
-                  w(t)
+                  S(t)
                 },
-                "aria-label": c.formatMessage(_t.language_selector_default),
-                children: [(0, u.jsx)("option", {
-                  className: ht.selectBoxOption,
+                "aria-label": c.formatMessage(Et.language_selector_default),
+                children: [(0, y.jsx)("option", {
+                  className: Lt.selectBoxOption,
                   value: "none",
-                  children: (0, u.jsx)(d.FormattedMessage, {
-                    ..._t.language_selector_default
+                  children: (0, y.jsx)(l.c, {
+                    ...Et.language_selector_default
                   })
-                }), d.locales.map((e => {
+                }), b.map((e => {
                   let {
                     label: t,
                     subdomaincom: a
                   } = e;
-                  return (0, u.jsx)("option", {
-                    className: ht.selectBoxOption,
+                  return (0, y.jsx)("option", {
+                    className: Lt.selectBoxOption,
                     value: a,
                     children: t
                   }, `mobile-${a}`)
                 }))]
               })
-            }), (!y || "sc-menu" !== t) && (0, u.jsxs)(u.Fragment, {
-              children: [(0, u.jsxs)("button", {
+            }), (!j || "sc-menu" !== t) && (0, y.jsxs)(y.Fragment, {
+              children: [(0, y.jsxs)("button", {
                 onClick: e => {
                   e.stopPropagation(), s && s(!f), _(!f)
                 },
                 type: "button",
-                "aria-label": c.formatMessage(_t.language_selector_default),
-                children: [(0, u.jsx)("i", {}), (0, u.jsx)("span", {
-                  children: (0, u.jsx)(d.FormattedMessage, {
-                    ..._t.language_selector_default
+                "aria-label": c.formatMessage(Et.language_selector_default),
+                children: [(0, y.jsx)("i", {}), (0, y.jsx)("span", {
+                  children: (0, y.jsx)(l.c, {
+                    ...Et.language_selector_default
                   })
                 })]
-              }), (0, u.jsx)("div", {
-                className: ht.linkWrapper,
-                ref: b,
+              }), (0, y.jsx)("div", {
+                className: Lt.linkWrapper,
+                ref: k,
                 style: {
-                  "--ls-linkWrapper-opened-height": `${v}px`
+                  "--ls-linkWrapper-opened-height": `${w}px`
                 },
-                children: (0, u.jsx)("div", {
-                  className: ht.links,
-                  children: d.locales.map((e => {
+                children: (0, y.jsx)("div", {
+                  className: Lt.links,
+                  children: b.map((e => {
                     let {
                       subdomaincom: t,
                       label: a
                     } = e;
-                    return (0, u.jsx)(g, {
-                      to: k(t),
+                    return (0, y.jsx)(I, {
+                      to: v(t),
                       onClick: (s = t, () => {
-                        w(s)
+                        S(s)
                       }),
                       tabIndex: f ? 0 : -1,
                       children: a
@@ -4792,43 +4982,43 @@ _global.SENTRY_RELEASE = {
               })]
             })]
           })
-        }), c),
-        bt = {
-          layeredImage: "rockstargames-sites-red-dead-redemption-2a29c233d553c5905763bb69412c1ece4",
-          layersWrapper: "rockstargames-sites-red-dead-redemption-2aabf78eb3e1fe545556ad0fa5639296e",
-          "hero-lg": "rockstargames-sites-red-dead-redemption-2ca666917bdeaed43fd0a7af7dc30a0f7",
-          "hero-md": "rockstargames-sites-red-dead-redemption-2f0a202fcbf13f1e91157e531ae829ea3",
-          "hero-sm": "rockstargames-sites-red-dead-redemption-2e03dbf5d16aeab81ca65f4cb7e64446f",
-          contain: "rockstargames-sites-red-dead-redemption-2c4c3c929b11e88540e3f19d5715393ec",
-          cover: "rockstargames-sites-red-dead-redemption-2b283d6381c82abf4dde21c57b8fc5f66",
-          fill: "rockstargames-sites-red-dead-redemption-2e9d16b94c1ed476c9346cb6f48f5ad3e",
-          "bg-img": "rockstargames-sites-red-dead-redemption-2e45fabf9c4e04bf3ee27e9c84c50c09b",
-          imageLayer: "rockstargames-sites-red-dead-redemption-2ed8d0ad18a62f087629ff5831fa0ac55",
-          "layer-lg-height": "rockstargames-sites-red-dead-redemption-2faf1d5c6b2fe2ad27d4bb95ba7388f3d",
-          "layer-md-height": "rockstargames-sites-red-dead-redemption-2b41041f11a5ef98325948acc3dec956c",
-          "layer-sm-height": "rockstargames-sites-red-dead-redemption-2ba7d5822aa073c9e01cd682d65c18944",
-          "layer-xl-height": "rockstargames-sites-red-dead-redemption-2ec2399a1f7e79e9aacba81b242ad0602",
-          "layer-xs-height": "rockstargames-sites-red-dead-redemption-2a6ec38ac99c762fcf0dd99aa2ced8f2b",
-          "layer-xxl-height": "rockstargames-sites-red-dead-redemption-2d7c1314e717273dfbb2acd3d5e06e585",
-          "layer-lg-width": "rockstargames-sites-red-dead-redemption-2ca0dd7a55a5db5ee358ce51a166e5431",
-          "layer-md-width": "rockstargames-sites-red-dead-redemption-2bd4c246f4f0eaf7173d104ed1e7c2d06",
-          "layer-sm-width": "rockstargames-sites-red-dead-redemption-2fe3f49cba9cc10e4e076a43a6b36b862",
-          "layer-xl-width": "rockstargames-sites-red-dead-redemption-2bde3d6485ac7bb483dcca1ad4e2bbe67",
-          "layer-xs-width": "rockstargames-sites-red-dead-redemption-2b87efd95b330cacd4a5eaecf83528f4d",
-          "layer-xxl-width": "rockstargames-sites-red-dead-redemption-2ac872df7985f9d591c85f97c72d451dc",
-          "bottom-y": "rockstargames-sites-red-dead-redemption-2d63fdb49c964c28c5e8952cd79a393a0",
-          "center-x": "rockstargames-sites-red-dead-redemption-2d248443eb924360a5d1d7211094ea827",
-          "center-y": "rockstargames-sites-red-dead-redemption-2a8d87c765a51d98f0e3a9afd149ed0dc",
-          "left-x": "rockstargames-sites-red-dead-redemption-2dcaa6339b43850be2e14967cab730041",
-          "right-x": "rockstargames-sites-red-dead-redemption-2b656d800e3d134bd3a7e273a5f6d7ae6",
-          "top-y": "rockstargames-sites-red-dead-redemption-2adaf230f139f906eb912b58b315406ac",
-          border: "rockstargames-sites-red-dead-redemption-2c73e199a8978fb80895753c9a38fcdff",
-          shards: "rockstargames-sites-red-dead-redemption-2e650a715d6f220ad49bb568768154b0e",
-          shards_three: "rockstargames-sites-red-dead-redemption-2b0c8be28788c6b23cea904bdc60d7e07",
-          shards_two: "rockstargames-sites-red-dead-redemption-2e41252d3a0aee1d229f6bddc20c38d47",
-          dual: "rockstargames-sites-red-dead-redemption-2db575e1d021e69ebb4265a29484e2888"
+        }), S),
+        Pt = {
+          layeredImage: "rockstargames-modules-core-gif-viewera29c233d553c5905763bb69412c1ece4",
+          layersWrapper: "rockstargames-modules-core-gif-vieweraabf78eb3e1fe545556ad0fa5639296e",
+          "hero-lg": "rockstargames-modules-core-gif-viewerca666917bdeaed43fd0a7af7dc30a0f7",
+          "hero-md": "rockstargames-modules-core-gif-viewerf0a202fcbf13f1e91157e531ae829ea3",
+          "hero-sm": "rockstargames-modules-core-gif-viewere03dbf5d16aeab81ca65f4cb7e64446f",
+          contain: "rockstargames-modules-core-gif-viewerc4c3c929b11e88540e3f19d5715393ec",
+          cover: "rockstargames-modules-core-gif-viewerb283d6381c82abf4dde21c57b8fc5f66",
+          fill: "rockstargames-modules-core-gif-viewere9d16b94c1ed476c9346cb6f48f5ad3e",
+          "bg-img": "rockstargames-modules-core-gif-viewere45fabf9c4e04bf3ee27e9c84c50c09b",
+          imageLayer: "rockstargames-modules-core-gif-viewered8d0ad18a62f087629ff5831fa0ac55",
+          "layer-lg-height": "rockstargames-modules-core-gif-viewerfaf1d5c6b2fe2ad27d4bb95ba7388f3d",
+          "layer-md-height": "rockstargames-modules-core-gif-viewerb41041f11a5ef98325948acc3dec956c",
+          "layer-sm-height": "rockstargames-modules-core-gif-viewerba7d5822aa073c9e01cd682d65c18944",
+          "layer-xl-height": "rockstargames-modules-core-gif-viewerec2399a1f7e79e9aacba81b242ad0602",
+          "layer-xs-height": "rockstargames-modules-core-gif-viewera6ec38ac99c762fcf0dd99aa2ced8f2b",
+          "layer-xxl-height": "rockstargames-modules-core-gif-viewerd7c1314e717273dfbb2acd3d5e06e585",
+          "layer-lg-width": "rockstargames-modules-core-gif-viewerca0dd7a55a5db5ee358ce51a166e5431",
+          "layer-md-width": "rockstargames-modules-core-gif-viewerbd4c246f4f0eaf7173d104ed1e7c2d06",
+          "layer-sm-width": "rockstargames-modules-core-gif-viewerfe3f49cba9cc10e4e076a43a6b36b862",
+          "layer-xl-width": "rockstargames-modules-core-gif-viewerbde3d6485ac7bb483dcca1ad4e2bbe67",
+          "layer-xs-width": "rockstargames-modules-core-gif-viewerb87efd95b330cacd4a5eaecf83528f4d",
+          "layer-xxl-width": "rockstargames-modules-core-gif-viewerac872df7985f9d591c85f97c72d451dc",
+          "bottom-y": "rockstargames-modules-core-gif-viewerd63fdb49c964c28c5e8952cd79a393a0",
+          "center-x": "rockstargames-modules-core-gif-viewerd248443eb924360a5d1d7211094ea827",
+          "center-y": "rockstargames-modules-core-gif-viewera8d87c765a51d98f0e3a9afd149ed0dc",
+          "left-x": "rockstargames-modules-core-gif-viewerdcaa6339b43850be2e14967cab730041",
+          "right-x": "rockstargames-modules-core-gif-viewerb656d800e3d134bd3a7e273a5f6d7ae6",
+          "top-y": "rockstargames-modules-core-gif-vieweradaf230f139f906eb912b58b315406ac",
+          border: "rockstargames-modules-core-gif-viewerc73e199a8978fb80895753c9a38fcdff",
+          shards: "rockstargames-modules-core-gif-viewere650a715d6f220ad49bb568768154b0e",
+          shards_three: "rockstargames-modules-core-gif-viewerb0c8be28788c6b23cea904bdc60d7e07",
+          shards_two: "rockstargames-modules-core-gif-viewere41252d3a0aee1d229f6bddc20c38d47",
+          dual: "rockstargames-modules-core-gif-viewerdb575e1d021e69ebb4265a29484e2888"
         },
-        vt = e => {
+        Ot = e => {
           let {
             style: t,
             className: a
@@ -4837,21 +5027,21 @@ _global.SENTRY_RELEASE = {
               ...t
             },
             r = t["--border-image-source"],
-            i = (0, C.useGetCdnSource)(r || null);
-          return r && (s["--border-image-source"] = `url(${i})`), (0, u.jsx)("div", {
-            className: (0, C.classList)(bt.border, a),
+            i = (0, G.useGetCdnSource)(r || null);
+          return r && (s["--border-image-source"] = `url(${i})`), (0, y.jsx)("div", {
+            className: (0, G.classList)(Pt.border, a),
             style: {
               ...s
             }
           })
         },
-        xt = e => e?.images ? (0, u.jsx)("div", {
-          className: (0, C.classList)(bt.layeredImage, bt[e?.variantClass], bt[e?.wrapperSizeClass]),
+        Dt = e => e?.images ? (0, y.jsx)("div", {
+          className: (0, G.classList)(Pt.layeredImage, Pt[e?.variantClass], Pt[e?.wrapperSizeClass]),
           style: {
             ...e?.style ?? {}
           },
-          children: (0, u.jsxs)("div", {
-            className: bt.layersWrapper,
+          children: (0, y.jsxs)("div", {
+            className: Pt.layersWrapper,
             children: [e?.images?.map(((e, t) => {
               const {
                 image: a,
@@ -4860,38 +5050,38 @@ _global.SENTRY_RELEASE = {
                 objectFitClass: i,
                 positionClassX: n,
                 positionClassY: o,
-                zIndex: d,
-                className: c,
-                style: l,
+                zIndex: c,
+                className: l,
+                style: d,
                 alt: m,
-                displayClass: p
+                displayClass: u
               } = e;
-              return (0, u.jsx)(fe, {
+              return (0, y.jsx)(Ee, {
                 image: a,
                 style: {
-                  zIndex: d ?? t + 1
+                  zIndex: c ?? t + 1
                 },
-                imageStyle: l,
-                className: (0, C.classList)(c, p, bt.imageLayer, bt[s], bt[r], bt[i], bt[n], bt[o]),
+                imageStyle: d,
+                className: (0, G.classList)(l, u, Pt.imageLayer, Pt[s], Pt[r], Pt[i], Pt[n], Pt[o]),
                 alt: m
-              }, d ?? t + 1)
-            })), e?.borderImage && (0, u.jsx)(vt, {
+              }, c ?? t + 1)
+            })), e?.borderImage && (0, y.jsx)(Ot, {
               style: e?.borderImage,
               className: e?.borderImage?.displayClass
             })]
           })
         }) : null,
-        yt = e => {
+        At = e => {
           let {
             hero: t,
             children: a
           } = e;
-          return t ? (0, u.jsx)("div", {
-            className: "rockstargames-sites-red-dead-redemption-2efc561ad30f5dfe75c79d939737650dc",
+          return t ? (0, y.jsx)("div", {
+            className: "rockstargames-modules-core-gif-viewerefc561ad30f5dfe75c79d939737650dc",
             children: a
           }) : a
         },
-        wt = e => {
+        Bt = e => {
           let {
             badge: t = null,
             badgeType: a,
@@ -4900,29 +5090,29 @@ _global.SENTRY_RELEASE = {
             image: i,
             style: n,
             className: o = "",
-            attributes: d = {},
-            role: c,
-            hero: l = !1
+            attributes: c = {},
+            role: l,
+            hero: d = !1
           } = e;
-          return (0, u.jsx)(yt, {
-            hero: l,
-            children: (0, u.jsx)("figure", {
-              children: (0, u.jsxs)("div", {
-                className: (0, C.classList)("rockstargames-sites-red-dead-redemption-2cab262c98c7f5bb3e982d9b075b3c2a8", l ? "rockstargames-sites-red-dead-redemption-2cefd6d8859aeec1057caed28caa160c3" : "", d?.hiddenMobile ? "hiddenMobile" : "", d?.hiddenLarge ? "hiddenLarge" : "", d?.className, o),
-                style: (0, R.safeStyles)({
+          return (0, y.jsx)(At, {
+            hero: d,
+            children: (0, y.jsx)("figure", {
+              children: (0, y.jsxs)("div", {
+                className: (0, G.classList)("rockstargames-modules-core-gif-viewercab262c98c7f5bb3e982d9b075b3c2a8", d ? "rockstargames-modules-core-gif-viewercefd6d8859aeec1057caed28caa160c3" : "", c?.hiddenMobile ? "hiddenMobile" : "", c?.hiddenLarge ? "hiddenLarge" : "", c?.className, o),
+                style: (0, ae.safeStyles)({
                   ...n,
-                  ...d?.style
+                  ...c?.style
                 }),
-                ...d,
-                children: [(0, u.jsx)(fe, {
+                ...c,
+                children: [(0, y.jsx)(Ee, {
                   image: i,
                   className: o
-                }), (i?.badge || i?.discountTxt || t || s) && (0, u.jsx)(Ie, {
+                }), (i?.badge || i?.discountTxt || t || s) && (0, y.jsx)(qe, {
                   badge: i?.discountTxt ?? i?.badge ?? t ?? s,
                   badgeType: a,
                   splitter: i?.splitter ?? r,
-                  role: i?.role ?? c
-                }), i?.caption && (0, u.jsx)("figcaption", {
+                  role: i?.role ?? l
+                }), i?.caption && (0, y.jsx)("figcaption", {
                   dangerouslySetInnerHTML: {
                     __html: i.caption
                   }
@@ -4931,15 +5121,15 @@ _global.SENTRY_RELEASE = {
             })
           })
         },
-        Nt = {
-          pillBtn: "rockstargames-sites-red-dead-redemption-2eea0db67b0aabf28288b288845324afe",
-          selected: "rockstargames-sites-red-dead-redemption-2d1d25362fd730ca979d5ad79de088f89",
-          multiSourceContainer: "rockstargames-sites-red-dead-redemption-2dc538bbfc2f407ed9fe840097ccac819",
-          multiSourceImage: "rockstargames-sites-red-dead-redemption-2ee782a29692a8eb06db1287a4984c243",
-          animatePlaceholder: "rockstargames-sites-red-dead-redemption-2fbd73f5f70c2ce64aa9c9bd398f1a3b5",
-          "loader-keyframes": "rockstargames-sites-red-dead-redemption-2f6040b2ae96a9b0dcdb2d283c9caff59"
+        Vt = {
+          pillBtn: "rockstargames-modules-core-gif-viewereea0db67b0aabf28288b288845324afe",
+          selected: "rockstargames-modules-core-gif-viewerd1d25362fd730ca979d5ad79de088f89",
+          multiSourceContainer: "rockstargames-modules-core-gif-viewerdc538bbfc2f407ed9fe840097ccac819",
+          multiSourceImage: "rockstargames-modules-core-gif-vieweree782a29692a8eb06db1287a4984c243",
+          animatePlaceholder: "rockstargames-modules-core-gif-viewerfbd73f5f70c2ce64aa9c9bd398f1a3b5",
+          "loader-keyframes": "rockstargames-modules-core-gif-viewerf6040b2ae96a9b0dcdb2d283c9caff59"
         },
-        jt = e => {
+        Rt = e => {
           let {
             imageUrl: t,
             className: a,
@@ -4947,26 +5137,26 @@ _global.SENTRY_RELEASE = {
             style: r,
             lazy: i = !1,
             decoding: n = "auto",
-            sizes: d = [320, 480, 768, 1024, 1440, 1920, 2560]
+            sizes: c = [320, 480, 768, 1024, 1440, 1920, 2560]
           } = e;
-          const [c, l] = (0, o.useState)(!1);
-          return (0, u.jsxs)("div", {
-            className: Nt.multiSourceContainer,
-            children: [!c && (0, u.jsx)("img", {
-              className: [a, Nt.animatePlaceholder].join(" "),
+          const [l, d] = (0, o.useState)(!1);
+          return (0, y.jsxs)("div", {
+            className: Vt.multiSourceContainer,
+            children: [!l && (0, y.jsx)("img", {
+              className: [a, Vt.animatePlaceholder].join(" "),
               src: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiB2aWV3Qm94PSIwIDAgMTkyMCAxMDgwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cmVjdCB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiBmaWxsPSIjMzMzMzMzIi8+Cjwvc3ZnPgo=",
               sizes: "(max-width: 1024px) 100vw, 1024px",
               alt: "Loading...",
               style: r
-            }), (0, u.jsx)("img", {
-              className: [Nt.multiSourceImage, a].join(" "),
+            }), (0, y.jsx)("img", {
+              className: [Vt.multiSourceImage, a].join(" "),
               src: `${t}?im=Resize=1920`,
-              srcSet: (m = t, d.map((e => `${m}?im=Resize=${e} ${e}w`)).join(", ")),
+              srcSet: (m = t, c.map((e => `${m}?im=Resize=${e} ${e}w`)).join(", ")),
               sizes: "(max-width: 400px) 200px, (max-width: 1920px) 100vw, 1920px",
               alt: s ?? "Multi-Source Image",
               style: r,
               onLoad: () => {
-                l(!0)
+                d(!0)
               },
               loading: i ? "lazy" : "eager",
               decoding: n
@@ -4974,33 +5164,33 @@ _global.SENTRY_RELEASE = {
           });
           var m
         },
-        St = e => {
+        Ft = e => {
           let {
             impressionTracking: t,
             gtm: a = {},
             children: s
           } = e;
-          return t?.shouldTrack ? (0, u.jsx)(Mt, {
+          return t?.shouldTrack ? (0, y.jsx)(Gt, {
             threshold: t?.threshold,
             gtm: a,
             children: s
           }) : s
         },
-        Tt = (e, t) => a => ((e, t, a) => (0, u.jsx)(St, {
+        $t = (e, t) => a => ((e, t, a) => (0, y.jsx)(Ft, {
           impressionTracking: a?.impressionTracking,
           gtm: a?.gtm,
-          children: (0, u.jsx)(e, {
+          children: (0, y.jsx)(e, {
             ...t
           })
         }))(e, a, t),
-        Ct = {
+        Ut = {
           event: "page_section_impression",
           event_action: "impression",
           event_category: "page_section",
           event_label: null,
           element_placement: null
         },
-        Mt = e => {
+        Gt = e => {
           let {
             threshold: t = .6,
             children: a,
@@ -5008,55 +5198,55 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: r
-          } = (0, F.useGtmTrack)(), {
+          } = (0, se.useGtmTrack)(), {
             ref: i,
             inView: n
-          } = (0, q.cD)({
+          } = (0, ce.cD)({
             threshold: t,
             trackVisibility: !0,
             delay: 100
-          }), [d, c] = (0, o.useState)(!1);
+          }), [c, l] = (0, o.useState)(!1);
           return (0, o.useEffect)((() => {
-            n && !d && (r({
-              ...Ct,
+            n && !c && (r({
+              ...Ut,
               ...s
-            }), c(!0))
-          }), [n, i]), (0, u.jsx)("section", {
+            }), l(!0))
+          }), [n, i]), (0, y.jsx)("section", {
             ref: i,
             children: a
           })
         },
-        It = {
-          tag: "rockstargames-sites-red-dead-redemption-2ed77774d2704bc0ebc0ac156542ae053"
+        Ht = {
+          tag: "rockstargames-modules-core-gif-viewered77774d2704bc0ebc0ac156542ae053"
         },
-        Et = e => {
+        qt = e => {
           let {
             className: t,
             href: a,
             title: s,
             style: r
           } = e;
-          const i = (0, u.jsxs)("div", {
+          const i = (0, y.jsxs)("div", {
             style: r,
-            className: [It.tag, t].join(" "),
-            children: [(0, u.jsx)("i", {}), s]
+            className: [Ht.tag, t].join(" "),
+            children: [(0, y.jsx)("i", {}), s]
           });
-          return void 0 !== a ? (0, u.jsx)(g, {
+          return void 0 !== a ? (0, y.jsx)(I, {
             to: a,
             children: i
           }) : i
         },
-        Lt = {
-          newswireBlock: "rockstargames-sites-red-dead-redemption-2a793f470884d207243d6c3caac8ad811",
-          info: "rockstargames-sites-red-dead-redemption-2d50f6d2bc5f983c05311292acb4c78a5",
-          title: "rockstargames-sites-red-dead-redemption-2cc389449dc1495fc9c323fc2c547857d",
-          newswireBlockNoSpecialOrder: "rockstargames-sites-red-dead-redemption-2ffd167124f27c8e26a147f49c88796e5",
-          preview: "rockstargames-sites-red-dead-redemption-2bbfbcf32c8c892ea29f4178949643475",
-          previewMobile: "rockstargames-sites-red-dead-redemption-2f88852766488b21a28c42d230ea529a1",
-          top: "rockstargames-sites-red-dead-redemption-2fa1a6f4c7d94b94f5af2dc1ac9af79f1",
-          startAnimation: "rockstargames-sites-red-dead-redemption-2e380e8c67066df6f33fc018341ea96e5"
+        Wt = {
+          newswireBlock: "rockstargames-modules-core-gif-viewera793f470884d207243d6c3caac8ad811",
+          info: "rockstargames-modules-core-gif-viewerd50f6d2bc5f983c05311292acb4c78a5",
+          title: "rockstargames-modules-core-gif-viewercc389449dc1495fc9c323fc2c547857d",
+          newswireBlockNoSpecialOrder: "rockstargames-modules-core-gif-viewerffd167124f27c8e26a147f49c88796e5",
+          preview: "rockstargames-modules-core-gif-viewerbbfbcf32c8c892ea29f4178949643475",
+          previewMobile: "rockstargames-modules-core-gif-viewerf88852766488b21a28c42d230ea529a1",
+          top: "rockstargames-modules-core-gif-viewerfa1a6f4c7d94b94f5af2dc1ac9af79f1",
+          startAnimation: "rockstargames-modules-core-gif-viewere380e8c67066df6f33fc018341ea96e5"
         },
-        zt = e => {
+        Xt = e => {
           let {
             section: t = "",
             index: a,
@@ -5066,17 +5256,17 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: n
-          } = (0, F.useGtmTrack)(), [d] = (0, m.useSearchParams)(), c = s.preview_images_parsed.newswire_block, l = {
-            default: 0 !== a || r ? c.square || c.d16x9 || c._fallback : c.d16x9 || c.square || c._fallback,
-            mobile: c.square || c._fallback
-          }, [p, f] = (0, R.usePreloadImg)(l.default), _ = {
+          } = (0, se.useGtmTrack)(), [c] = (0, C.useSearchParams)(), l = s.preview_images_parsed.newswire_block, d = {
+            default: 0 !== a || r ? l.square || l.d16x9 || l._fallback : l.d16x9 || l.square || l._fallback,
+            mobile: l.square || l._fallback
+          }, [m, u] = (0, ae.usePreloadImg)(d.default), g = {
             default: {
-              backgroundImage: `url(${l.default})`
+              backgroundImage: `url(${d.default})`
             },
             mobile: {
-              backgroundImage: `url(${l.mobile})`
+              backgroundImage: `url(${d.mobile})`
             }
-          }, h = (0, o.useCallback)((() => {
+          }, f = (0, o.useCallback)((() => {
             n({
               event: "card_click",
               card_id: s.id,
@@ -5086,35 +5276,35 @@ _global.SENTRY_RELEASE = {
               element_placement: t
             })
           }), [s]);
-          return (0, u.jsx)(g, {
+          return (0, y.jsx)(I, {
             to: s.url,
-            className: [Lt.newswireBlock, r ? Lt.newswireBlockNoSpecialOrder : "", null !== p ? Lt.startAnimation : ""].join(" "),
+            className: [Wt.newswireBlock, r ? Wt.newswireBlockNoSpecialOrder : "", null !== m ? Wt.startAnimation : ""].join(" "),
             focused: i,
-            onClick: h,
-            children: (0, u.jsxs)(u.Fragment, {
-              children: [0 !== a || d.get("tag_id") ? (0, u.jsx)("div", {
-                className: Lt.preview,
-                style: _.default
-              }) : (0, u.jsxs)(u.Fragment, {
-                children: [(0, u.jsx)("div", {
-                  className: Lt.previewMobile,
-                  style: _.mobile
-                }), (0, u.jsx)("div", {
-                  className: Lt.preview,
-                  style: _.default
+            onClick: f,
+            children: (0, y.jsxs)(y.Fragment, {
+              children: [0 !== a || c.get("tag_id") ? (0, y.jsx)("div", {
+                className: Wt.preview,
+                style: g.default
+              }) : (0, y.jsxs)(y.Fragment, {
+                children: [(0, y.jsx)("div", {
+                  className: Wt.previewMobile,
+                  style: g.mobile
+                }), (0, y.jsx)("div", {
+                  className: Wt.preview,
+                  style: g.default
                 })]
-              }), (0, u.jsxs)("div", {
-                className: Lt.info,
-                children: [(0, u.jsxs)("div", {
-                  className: Lt.top,
-                  children: [s.primary_tags.length ? (0, u.jsx)(Et, {
+              }), (0, y.jsxs)("div", {
+                className: Wt.info,
+                children: [(0, y.jsxs)("div", {
+                  className: Wt.top,
+                  children: [s.primary_tags.length ? (0, y.jsx)(qt, {
                     title: s.primary_tags[s.primary_tags.length > 1 && 722 === s.primary_tags[0].id ? 1 : 0].name
-                  }) : "", (0, u.jsx)("time", {
+                  }) : "", (0, y.jsx)("time", {
                     dateTime: s.created,
                     children: s.created_formatted
                   })]
-                }), (0, u.jsx)("h5", {
-                  className: Lt.title,
+                }), (0, y.jsx)("h5", {
+                  className: Wt.title,
                   dangerouslySetInnerHTML: {
                     __html: s.title
                   }
@@ -5123,9 +5313,9 @@ _global.SENTRY_RELEASE = {
             })
           })
         };
-      var Pt = a(55492),
-        Ot = a.n(Pt);
-      const At = (0, R.withTranslations)((e => {
+      var Yt = a(55492),
+        Kt = a.n(Yt);
+      const Qt = (0, ae.withTranslations)((e => {
           let {
             section: t = "",
             relativeTo: a = "",
@@ -5135,31 +5325,31 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: n
-          } = (0, F.useGtmTrack)(), [d] = (0, m.useSearchParams)(), {
-            tagId: c = null
-          } = (0, m.useParams)(), [l, p] = (0, o.useState)(c ?? s ?? d.get("tag_id")), [g, f] = (0, o.useState)(1), [_, k] = (0, o.useState)([]), [b, v] = (0, o.useState)(null), {
-            data: x
-          } = (0, h.useQuery)(Ot(), {
+          } = (0, se.useGtmTrack)(), [c] = (0, C.useSearchParams)(), {
+            tagId: l = null
+          } = (0, C.useParams)(), [d, m] = (0, o.useState)(l ?? s ?? c.get("tag_id")), [u, g] = (0, o.useState)(1), [f, p] = (0, o.useState)([]), [_, h] = (0, o.useState)(null), {
+            data: v
+          } = (0, z.useQuery)(Kt(), {
             variables: {
-              tagId: Number(l),
-              page: g,
+              tagId: Number(d),
+              page: u,
               metaUrl: r
             },
             autoSetLoading: !0
           });
           return (0, o.useEffect)((() => {
-            f(1), k([]), p(c ?? s ?? d.get("tag_id"))
-          }), [d.get("tag_id")]), (0, o.useEffect)((() => {
-            x && x.posts && x.posts.paging && v(x.posts.paging), x && x.posts && x.posts.results && k(_.concat(x.posts.results))
-          }), [x]), _.length ? (0, u.jsxs)(u.Fragment, {
-            children: [(0, u.jsx)(Rt, {
+            g(1), p([]), m(l ?? s ?? c.get("tag_id"))
+          }), [c.get("tag_id")]), (0, o.useEffect)((() => {
+            v && v.posts && v.posts.paging && h(v.posts.paging), v && v.posts && v.posts.results && p(f.concat(v.posts.results))
+          }), [v]), f.length ? (0, y.jsxs)(y.Fragment, {
+            children: [(0, y.jsx)(ta, {
               section: t,
-              posts: _,
+              posts: f,
               relativeTo: a,
-              noSpecialOrder: null !== l
-            }), null !== b && b.nextPage ? (0, u.jsx)(T, {
+              noSpecialOrder: null !== d
+            }), null !== _ && _.nextPage ? (0, y.jsx)(U, {
               onClick: e => {
-                f(g + 1), n({
+                g(u + 1), n({
                   event: "cta_learn",
                   text: "more stories",
                   element_placement: "newswire"
@@ -5171,36 +5361,36 @@ _global.SENTRY_RELEASE = {
             }) : ""]
           }) : null
         })),
-        Dt = {
-          pillBtn: "rockstargames-sites-red-dead-redemption-2afd0af959edb4a463c41ad4e9cc5dadc",
-          selected: "rockstargames-sites-red-dead-redemption-2bcd59aa4a9e88d86a2cbe8d4972f8f51",
-          related: "rockstargames-sites-red-dead-redemption-2a748ad776070dab831edc1f67f66af08",
-          posts: "rockstargames-sites-red-dead-redemption-2c0aa38678decd13ca38886b4547efedd",
-          just1post: "rockstargames-sites-red-dead-redemption-2b1a31ddf7fd4458ee860d354a6a0ac92"
+        Zt = {
+          pillBtn: "rockstargames-modules-core-gif-viewerafd0af959edb4a463c41ad4e9cc5dadc",
+          selected: "rockstargames-modules-core-gif-viewerbcd59aa4a9e88d86a2cbe8d4972f8f51",
+          related: "rockstargames-modules-core-gif-viewera748ad776070dab831edc1f67f66af08",
+          posts: "rockstargames-modules-core-gif-viewerc0aa38678decd13ca38886b4547efedd",
+          just1post: "rockstargames-modules-core-gif-viewerb1a31ddf7fd4458ee860d354a6a0ac92"
         },
-        Bt = (0, R.withTranslations)((e => {
+        Jt = (0, ae.withTranslations)((e => {
           let {
             posts: t,
             t: a
           } = e;
-          return (0, u.jsxs)("section", {
-            className: Dt.related,
-            children: [(0, u.jsx)("h2", {
+          return (0, y.jsxs)("section", {
+            className: Zt.related,
+            children: [(0, y.jsx)("h2", {
               children: a("Related Stories")
-            }), (0, u.jsx)("div", {
-              className: [Dt.posts, 1 === t.length ? Dt.just1post : ""].join(" "),
-              children: t.map((e => (0, u.jsx)(zt, {
+            }), (0, y.jsx)("div", {
+              className: [Zt.posts, 1 === t.length ? Zt.just1post : ""].join(" "),
+              children: t.map((e => (0, y.jsx)(Xt, {
                 noSpecialOrder: !0,
                 post: e
               }, e.id)))
             })]
           })
         })),
-        Vt = {
-          newswireBlocks: "rockstargames-sites-red-dead-redemption-2c2c8eedd25de7e186655f98b2a8d8960",
-          noSpecialOrder: "rockstargames-sites-red-dead-redemption-2c0d0db9dfc71c9f4f959b9c017b1ae4b"
+        ea = {
+          newswireBlocks: "rockstargames-modules-core-gif-viewerc2c8eedd25de7e186655f98b2a8d8960",
+          noSpecialOrder: "rockstargames-modules-core-gif-viewerc0d0db9dfc71c9f4f959b9c017b1ae4b"
         },
-        Rt = (0, R.withGtmTracking)((e => {
+        ta = (0, ae.withGtmTracking)((e => {
           let {
             section: t = "",
             noSpecialOrder: a = !1,
@@ -5208,7 +5398,7 @@ _global.SENTRY_RELEASE = {
             gtmTrack: r,
             relativeTo: i
           } = e;
-          const [n, d] = (0, o.useState)(null);
+          const [n, c] = (0, o.useState)(null);
           return (0, o.useEffect)((() => {
             if (!s.length) return;
             const e = {
@@ -5224,10 +5414,10 @@ _global.SENTRY_RELEASE = {
                 position: s + 1,
                 list: t
               })
-            })), r(e), d(s.length)
-          }), [s.length]), (0, u.jsx)("div", {
-            className: [Vt.newswireBlocks, a ? Vt.noSpecialOrder : "", Vt.contextHome].join(" "),
-            children: s.map(((e, s) => (0, u.jsx)(zt, {
+            })), r(e), c(s.length)
+          }), [s.length]), (0, y.jsx)("div", {
+            className: [ea.newswireBlocks, a ? ea.noSpecialOrder : "", ea.contextHome].join(" "),
+            children: s.map(((e, s) => (0, y.jsx)(Xt, {
               section: t,
               index: s,
               noSpecialOrder: a,
@@ -5236,33 +5426,33 @@ _global.SENTRY_RELEASE = {
             }, e.id)))
           })
         })),
-        Ft = {
-          pillBtn: "rockstargames-sites-red-dead-redemption-2f87ac9a7d56545847cf4d8ca471b03e6",
-          selected: "rockstargames-sites-red-dead-redemption-2a8ea61e57fd58bfcb99aef7e6d687045",
-          grid: "rockstargames-sites-red-dead-redemption-2a57241f29873f89f89ab8b27994e71c3",
-          itemList: "rockstargames-sites-red-dead-redemption-2daec3f5ce63d42cb07e3e724737c8361",
-          gtaplus: "rockstargames-sites-red-dead-redemption-2bd78cfb71ed31029ba4279325166bfab",
-          rdo: "rockstargames-sites-red-dead-redemption-2a6244398a800ffddab72c14f717b0eab",
-          noImg: "rockstargames-sites-red-dead-redemption-2e88f741af7d5e0529ff4fb6bb82af04f",
-          gtao: "rockstargames-sites-red-dead-redemption-2ab60d91453348d2e4c090ef3ebb04347",
-          custom: "rockstargames-sites-red-dead-redemption-2c20e7ba6ceaba3afd37095b172797711",
-          yellow: "rockstargames-sites-red-dead-redemption-2b16672deedfe102b065925cbe0fb931c",
-          hotPink: "rockstargames-sites-red-dead-redemption-2d0d01601de7131d9d6d11321b4299e59",
-          red: "rockstargames-sites-red-dead-redemption-2d1b5397aff94d33b57674b04a3456e03",
-          turquoise: "rockstargames-sites-red-dead-redemption-2d6541b973ce158c8f2fb81483015211f",
-          purple: "rockstargames-sites-red-dead-redemption-2f3e34d902681219d4d8490eb164f7727",
-          teal: "rockstargames-sites-red-dead-redemption-2a6c3b6b6a2395eb18a1174294f26f4ea",
-          blue: "rockstargames-sites-red-dead-redemption-2eade6e843c5afd48d3a8959fb0b88222",
-          green: "rockstargames-sites-red-dead-redemption-2a82c313f8f85fc6304ddb703be2fa271",
-          darkRed: "rockstargames-sites-red-dead-redemption-2d394c61fdce2bf8894ffb801ee680c2a",
-          darkBlue: "rockstargames-sites-red-dead-redemption-2f1d73cc00a3ab644aab949183a8298a7",
-          goldenrod: "rockstargames-sites-red-dead-redemption-2cdcb0c5076309a329da2a6e857cc3bdf",
-          skull: "rockstargames-sites-red-dead-redemption-2ba4bd16bff2fbc40616457007b4a7442"
+        aa = {
+          pillBtn: "rockstargames-modules-core-gif-viewerf87ac9a7d56545847cf4d8ca471b03e6",
+          selected: "rockstargames-modules-core-gif-viewera8ea61e57fd58bfcb99aef7e6d687045",
+          grid: "rockstargames-modules-core-gif-viewera57241f29873f89f89ab8b27994e71c3",
+          itemList: "rockstargames-modules-core-gif-viewerdaec3f5ce63d42cb07e3e724737c8361",
+          gtaplus: "rockstargames-modules-core-gif-viewerbd78cfb71ed31029ba4279325166bfab",
+          rdo: "rockstargames-modules-core-gif-viewera6244398a800ffddab72c14f717b0eab",
+          noImg: "rockstargames-modules-core-gif-viewere88f741af7d5e0529ff4fb6bb82af04f",
+          gtao: "rockstargames-modules-core-gif-viewerab60d91453348d2e4c090ef3ebb04347",
+          custom: "rockstargames-modules-core-gif-viewerc20e7ba6ceaba3afd37095b172797711",
+          yellow: "rockstargames-modules-core-gif-viewerb16672deedfe102b065925cbe0fb931c",
+          hotPink: "rockstargames-modules-core-gif-viewerd0d01601de7131d9d6d11321b4299e59",
+          red: "rockstargames-modules-core-gif-viewerd1b5397aff94d33b57674b04a3456e03",
+          turquoise: "rockstargames-modules-core-gif-viewerd6541b973ce158c8f2fb81483015211f",
+          purple: "rockstargames-modules-core-gif-viewerf3e34d902681219d4d8490eb164f7727",
+          teal: "rockstargames-modules-core-gif-viewera6c3b6b6a2395eb18a1174294f26f4ea",
+          blue: "rockstargames-modules-core-gif-viewereade6e843c5afd48d3a8959fb0b88222",
+          green: "rockstargames-modules-core-gif-viewera82c313f8f85fc6304ddb703be2fa271",
+          darkRed: "rockstargames-modules-core-gif-viewerd394c61fdce2bf8894ffb801ee680c2a",
+          darkBlue: "rockstargames-modules-core-gif-viewerf1d73cc00a3ab644aab949183a8298a7",
+          goldenrod: "rockstargames-modules-core-gif-viewercdcb0c5076309a329da2a6e857cc3bdf",
+          skull: "rockstargames-modules-core-gif-viewerba4bd16bff2fbc40616457007b4a7442"
         },
         {
-          sanitize: $t
-        } = he(),
-        Ut = e => {
+          sanitize: sa
+        } = ze(),
+        ra = e => {
           let {
             list: t,
             string: a,
@@ -5270,81 +5460,81 @@ _global.SENTRY_RELEASE = {
             style: r,
             className: i,
             game: n,
-            noImg: d,
-            columns: c,
-            mobileColumns: l
+            noImg: c,
+            columns: l,
+            mobileColumns: d
           } = e;
-          const [m, p] = (0, o.useState)(null);
+          const [m, u] = (0, o.useState)(null);
           return (0, o.useEffect)((() => {
-            p(t)
-          }), [t]), a || t ? c && m ? (0, u.jsx)("div", {
-            className: Ft.grid,
+            u(t)
+          }), [t]), a || t ? l && m ? (0, y.jsx)("div", {
+            className: aa.grid,
             style: {
-              "--ordered-list-grid-column": c,
-              "--ordered-list-grid-column-mobile": l ?? c
+              "--ordered-list-grid-column": l,
+              "--ordered-list-grid-column-mobile": d ?? l
             },
-            children: (0, u.jsx)("ol", {
-              style: (0, R.safeStyles)(r),
-              className: (0, C.classList)(Ft.itemList, Ft.noImg, Ft[s], Ft[n]),
-              children: m.map((e => (0, u.jsx)("li", {
+            children: (0, y.jsx)("ol", {
+              style: (0, ae.safeStyles)(r),
+              className: (0, G.classList)(aa.itemList, aa.noImg, aa[s], aa[n]),
+              children: m.map((e => (0, y.jsx)("li", {
                 dangerouslySetInnerHTML: {
-                  __html: $t(e.content)
+                  __html: sa(e.content)
                 }
               }, e.content)))
             })
-          }) : (0, u.jsx)("ol", {
-            style: (0, R.safeStyles)(r),
-            className: (0, C.classList)(Ft.itemList, Ft.custom, d ? Ft.noImg : "", s ? Ft[s] : "", n ? Ft[n] : "", i ?? ""),
-            children: t.map((e => (0, u.jsx)("li", {
+          }) : (0, y.jsx)("ol", {
+            style: (0, ae.safeStyles)(r),
+            className: (0, G.classList)(aa.itemList, aa.custom, c ? aa.noImg : "", s ? aa[s] : "", n ? aa[n] : "", i ?? ""),
+            children: t.map((e => (0, y.jsx)("li", {
               dangerouslySetInnerHTML: {
-                __html: $t(e?.content ?? e)
+                __html: sa(e?.content ?? e)
               }
             }, e?.content)))
           }) : null
         };
-      var Gt = a(54720),
-        Ht = a(84296);
-      const qt = (e, t) => {
+      var ia = a(77100),
+        na = a(84296);
+      const oa = (e, t) => {
           const a = e.tiers && e.tiers.every((e => e.isComplete)),
             s = t.tiers && t.tiers.every((e => e.isComplete));
           return a && !s ? 1 : !a && s ? -1 : 0
         },
-        Wt = (0, d.defineMessages)({
+        ca = (0, c.Os)({
           pl_card_badge_content_complete: {
             id: "pl_card_badge_content_complete",
             defaultMessage: "Complete"
           }
         }),
-        Xt = {
-          pillBtn: "rockstargames-sites-red-dead-redemption-2e6891f053f06919f1ef0dc72cafe9ae7",
-          selected: "rockstargames-sites-red-dead-redemption-2e5cce3088e494e8ddb9b0cf5528697a3",
-          packCardTierIndicator: "rockstargames-sites-red-dead-redemption-2eee874b61946e2a65886d622445e1c38",
-          tierIndicator: "rockstargames-sites-red-dead-redemption-2bf9ed66cb83cf9a38bfc6fbb8e105fb7",
-          active: "rockstargames-sites-red-dead-redemption-2cfa711252c08391d3a0f1ecd8728a61a"
+        la = {
+          pillBtn: "rockstargames-modules-core-gif-viewere6891f053f06919f1ef0dc72cafe9ae7",
+          selected: "rockstargames-modules-core-gif-viewere5cce3088e494e8ddb9b0cf5528697a3",
+          packCardTierIndicator: "rockstargames-modules-core-gif-viewereee874b61946e2a65886d622445e1c38",
+          tierIndicator: "rockstargames-modules-core-gif-viewerbf9ed66cb83cf9a38bfc6fbb8e105fb7",
+          active: "rockstargames-modules-core-gif-viewercfa711252c08391d3a0f1ecd8728a61a"
         },
-        Yt = e => {
+        da = e => {
           let {
             tiers: t
           } = e;
-          return (0, u.jsx)("div", {
-            className: Xt.packCardTierIndicator,
-            children: t?.map(((e, t) => (0, u.jsx)("div", {
-              className: [Xt.tierIndicator, e.isComplete ? Xt.active : ""].join(" ")
+          return (0, y.jsx)("div", {
+            className: la.packCardTierIndicator,
+            children: t?.map(((e, t) => (0, y.jsx)("div", {
+              className: [la.tierIndicator, e.isComplete ? la.active : ""].join(" ")
             }, t)))
           })
         },
-        Kt = {
-          pillBtn: "rockstargames-sites-red-dead-redemption-2e2e4b892ddcbdb2e09d3c3599a7e6c56",
-          selected: "rockstargames-sites-red-dead-redemption-2ff5c3c023fc12b68c6bf92b560c479b1",
-          packCard: "rockstargames-sites-red-dead-redemption-2d6ef486c5f60d41c5662b092336c1f52",
-          packCardImageBox: "rockstargames-sites-red-dead-redemption-2eb4637cb1c81d1def1fd92252f90d675",
-          packCompleted: "rockstargames-sites-red-dead-redemption-2fcd5bbd0d1e3ebd45cf2cb372468e62c",
-          packCardTextBox: "rockstargames-sites-red-dead-redemption-2a124ee1b0383d30157e84108cf10b83b",
-          badge: "rockstargames-sites-red-dead-redemption-2d42fb1fd7d553d75675a251df2a255ee",
-          icon: "rockstargames-sites-red-dead-redemption-2cbc69eda17393995ac9d41a8b4b531e8",
-          label: "rockstargames-sites-red-dead-redemption-2d4649f3812d37e7407503d49dcaaba04"
+        ma = {
+          pillBtn: "rockstargames-modules-core-gif-viewere2e4b892ddcbdb2e09d3c3599a7e6c56",
+          selected: "rockstargames-modules-core-gif-viewerff5c3c023fc12b68c6bf92b560c479b1",
+          packCard: "rockstargames-modules-core-gif-viewerd6ef486c5f60d41c5662b092336c1f52",
+          packCardImageBox: "rockstargames-modules-core-gif-viewereb4637cb1c81d1def1fd92252f90d675",
+          packCompleted: "rockstargames-modules-core-gif-viewerfcd5bbd0d1e3ebd45cf2cb372468e62c",
+          packCardTextBox: "rockstargames-modules-core-gif-viewera124ee1b0383d30157e84108cf10b83b",
+          badge: "rockstargames-modules-core-gif-viewerd42fb1fd7d553d75675a251df2a255ee",
+          icon: "rockstargames-modules-core-gif-viewercbc69eda17393995ac9d41a8b4b531e8",
+          label: "rockstargames-modules-core-gif-viewerd4649f3812d37e7407503d49dcaaba04"
         },
-        Qt = [{
+        ua = [{
           isComplete: !1
         }, {
           isComplete: !1
@@ -5353,7 +5543,7 @@ _global.SENTRY_RELEASE = {
         }, {
           isComplete: !1
         }],
-        Zt = e => {
+        ga = e => {
           let {
             title: t,
             url: a,
@@ -5365,74 +5555,74 @@ _global.SENTRY_RELEASE = {
             imageLoaded: l
           } = e;
           const {
-            isMobile: p
-          } = (0, R.useWindowResize)(), {
-            loggedIn: g
-          } = (0, F.useRockstarUser)(), {
-            selectedCharacterTuple: f
-          } = (0, F.useRockstarUserState)(), [_, h] = (0, o.useState)(!1), [k, b] = (0, o.useState)(l), [v, x] = (0, o.useState)(!1), y = (0, d.useIntl)(), w = !!i?.length;
+            isMobile: m
+          } = (0, ae.useWindowResize)(), {
+            loggedIn: u
+          } = (0, se.useRockstarUser)(), {
+            selectedCharacterTuple: g
+          } = (0, se.useRockstarUserState)(), [f, p] = (0, o.useState)(!1), [_, h] = (0, o.useState)(l), [v, k] = (0, o.useState)(!1), b = (0, d.c)(), w = !!i?.length;
           (0, o.useEffect)((() => {
-            if (Array.isArray(f)) {
-              const e = f?.[0];
-              x((0, R.getGen9Consoles)().includes(e))
+            if (Array.isArray(g)) {
+              const e = g?.[0];
+              k((0, ae.getGen9Consoles)().includes(e))
             }
-          }), [String(f)]), (0, o.useEffect)((() => {
+          }), [String(g)]), (0, o.useEffect)((() => {
             if (i && i.length > 0) {
               const e = i.some((e => !e.isComplete));
-              h(!e)
-            } else h(!1)
+              p(!e)
+            } else p(!1)
           }), [i]);
-          const N = `${p?s?.mobile:s?.desktop}?im=Resize,height=${c}`;
-          return (0, R.usePreloadImg)(N, (() => b(!0))), (0, u.jsx)(m.NavLink, {
-            className: [Kt.packCard, r, _ ? Kt.packCompleted : ""].join(" "),
+          const x = `${m?s?.mobile:s?.desktop}?im=Resize,height=${c}`;
+          return (0, ae.usePreloadImg)(x, (() => h(!0))), (0, y.jsx)(C.NavLink, {
+            className: [ma.packCard, r, f ? ma.packCompleted : ""].join(" "),
             to: a,
             onClick: n,
-            children: (0, u.jsxs)("div", {
-              className: [Kt.packCardImageBox, k ? Kt.packCardImageLoaded : ""].join(" "),
+            children: (0, y.jsxs)("div", {
+              className: [ma.packCardImageBox, _ ? ma.packCardImageLoaded : ""].join(" "),
               style: {
-                "--background-image": `url(${N})`
+                "--background-image": `url(${x})`
               },
-              children: [_ && (0, u.jsxs)("div", {
-                className: Kt.badge,
-                children: [(0, u.jsx)("div", {
-                  className: Kt.icon
-                }), (0, u.jsx)("div", {
-                  className: Kt.label,
-                  children: y.formatMessage(Wt.pl_card_badge_content_complete)
+              children: [f && (0, y.jsxs)("div", {
+                className: ma.badge,
+                children: [(0, y.jsx)("div", {
+                  className: ma.icon
+                }), (0, y.jsx)("div", {
+                  className: ma.label,
+                  children: b.formatMessage(ca.pl_card_badge_content_complete)
                 })]
-              }), (0, u.jsxs)("div", {
-                className: Kt.packCardTextBox,
-                children: [(0, u.jsx)("h4", {
+              }), (0, y.jsxs)("div", {
+                className: ma.packCardTextBox,
+                children: [(0, y.jsx)("h4", {
                   children: t
-                }), g && !_ && v && (0, u.jsx)(Yt, {
-                  tiers: w ? i : Qt
+                }), u && !f && v && (0, y.jsx)(da, {
+                  tiers: w ? i : ua
                 })]
               })]
             })
           })
         },
-        Jt = {
-          pillBtn: "rockstargames-sites-red-dead-redemption-2c0607ec9e0a3925181496fc555721e0a",
-          selected: "rockstargames-sites-red-dead-redemption-2ff76988869bea7d18917be00339b2434",
-          packList: "rockstargames-sites-red-dead-redemption-2ffeeb1f272f99c5cb4711e4956c65f7f",
-          headerVisible: "rockstargames-sites-red-dead-redemption-2f6652e03be6ce55bd8f068900093a707",
-          packCard: "rockstargames-sites-red-dead-redemption-2a53b37fe7ab10b353eceea86123258a1",
-          packGrid: "rockstargames-sites-red-dead-redemption-2b85775dc95fb3881171ee42e49076cbf"
+        fa = {
+          pillBtn: "rockstargames-modules-core-gif-viewerc0607ec9e0a3925181496fc555721e0a",
+          selected: "rockstargames-modules-core-gif-viewerff76988869bea7d18917be00339b2434",
+          packList: "rockstargames-modules-core-gif-viewerffeeb1f272f99c5cb4711e4956c65f7f",
+          headerVisible: "rockstargames-modules-core-gif-viewerf6652e03be6ce55bd8f068900093a707",
+          packCard: "rockstargames-modules-core-gif-viewera53b37fe7ab10b353eceea86123258a1",
+          packGrid: "rockstargames-modules-core-gif-viewerb85775dc95fb3881171ee42e49076cbf"
         };
-      Gt.w$.registerPlugin(Ht.Q);
-      const ea = e => {
+      ia.w$.registerPlugin(na.Q);
+      const pa = e => {
           let {
             isHeaderVisible: t,
             packListItems: a,
-            packCardClassName: s = Jt.packCard,
-            packListClassName: r = Jt.packList,
-            packGridClassName: i = Jt.packGrid,
+            packCardClassName: s = fa.packCard,
+            packListClassName: r = fa.packList,
+            packGridClassName: i = fa.packGrid,
             selectPackCard: n,
-            sortFunction: d = qt
+            sortFunction: c = oa
           } = e;
-          const c = (0, o.useRef)(null),
-            l = [...a].sort(d),
-            [m, p] = (0, o.useState)(),
+          const l = (0, o.useRef)(null),
+            d = [...a].sort(c),
+            [m, u] = (0, o.useState)(),
             [g, f] = (0, o.useState)(!1);
           return (0, o.useEffect)((() => {
             if (!0 === g) return;
@@ -5440,44 +5630,44 @@ _global.SENTRY_RELEASE = {
             const e = setTimeout((() => {
               f(!0)
             }), 1e3);
-            p(e)
-          }), []), (0, Ht.Q)((() => {
-            if (!1 !== g && c?.current) {
-              const e = c.current.children;
-              Gt.w$.to(e, {
+            u(e)
+          }), []), (0, na.Q)((() => {
+            if (!1 !== g && l?.current) {
+              const e = l.current.children;
+              ia.w$.to(e, {
                 opacity: 1,
                 y: 0,
                 duration: .5,
                 stagger: .05,
-                ease: Gt.ML.easeInOut
+                ease: ia.ML.easeInOut
               })
             }
           }), {
             dependencies: [g, a],
-            scope: c,
+            scope: l,
             revertOnUpdate: !0
-          }), (0, u.jsx)("div", {
-            className: [r, t ? Jt.headerVisible : ""].join(" "),
+          }), (0, y.jsx)("div", {
+            className: [r, t ? fa.headerVisible : ""].join(" "),
             "data-testid": "pack-list",
-            children: (0, u.jsx)("div", {
-              ref: c,
+            children: (0, y.jsx)("div", {
+              ref: l,
               className: i,
               "data-testid": "pack-grid",
-              children: l.map(((e, t) => {
+              children: d.map(((e, t) => {
                 let {
                   id: a,
                   name: r,
                   title: i,
                   url: o,
-                  images: d,
-                  tiers: c
+                  images: c,
+                  tiers: l
                 } = e;
-                return (0, u.jsx)(Zt, {
+                return (0, y.jsx)(ga, {
                   title: i,
                   url: o,
                   className: s,
-                  images: d,
-                  tiers: c,
+                  images: c,
+                  tiers: l,
                   onClick: () => ((e, t, a, s, r) => {
                     n(e, t, a, s, r)
                   })(r, i, o, a, t)
@@ -5486,93 +5676,93 @@ _global.SENTRY_RELEASE = {
             })
           })
         },
-        ta = {
-          pillBtn: "rockstargames-sites-red-dead-redemption-2db4bf6cb61b2370932e4811235d51afa",
-          selected: "rockstargames-sites-red-dead-redemption-2b691088f1c9719532c68ca7b97487e5b",
-          chipButton: "rockstargames-sites-red-dead-redemption-2bfe6fefc1068ed81c8b38519a854285f"
+        _a = {
+          pillBtn: "rockstargames-modules-core-gif-viewerdb4bf6cb61b2370932e4811235d51afa",
+          selected: "rockstargames-modules-core-gif-viewerb691088f1c9719532c68ca7b97487e5b",
+          chipButton: "rockstargames-modules-core-gif-viewerbfe6fefc1068ed81c8b38519a854285f"
         },
-        aa = e => {
+        ha = e => {
           let {
             title: t,
             onClick: a,
             selected: s
           } = e;
-          return (0, u.jsx)("button", {
+          return (0, y.jsx)("button", {
             type: "button",
             onClick: a,
             tabIndex: 0,
             "aria-label": t,
-            className: [ta.chipButton, s ? ta.selected : ""].join(" "),
-            children: (0, u.jsx)("div", {
+            className: [_a.chipButton, s ? _a.selected : ""].join(" "),
+            children: (0, y.jsx)("div", {
               children: t
             })
           })
         };
-      var sa;
+      var va;
 
-      function ra() {
-        return ra = Object.assign ? Object.assign.bind() : function(e) {
+      function ka() {
+        return ka = Object.assign ? Object.assign.bind() : function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var a = arguments[t];
             for (var s in a) Object.prototype.hasOwnProperty.call(a, s) && (e[s] = a[s])
           }
           return e
-        }, ra.apply(this, arguments)
+        }, ka.apply(this, arguments)
       }
-      const ia = e => o.createElement("svg", ra({
+      const ba = e => o.createElement("svg", ka({
         xmlns: "http://www.w3.org/2000/svg",
         width: 24,
         height: 24,
         fill: "none"
-      }, e), sa || (sa = o.createElement("path", {
+      }, e), va || (va = o.createElement("path", {
         stroke: "#fff",
         strokeLinecap: "round",
         strokeLinejoin: "round",
         strokeWidth: 2,
         d: "m15 18-6-6 6-6"
       })));
-      var na;
+      var wa;
 
-      function oa() {
-        return oa = Object.assign ? Object.assign.bind() : function(e) {
+      function xa() {
+        return xa = Object.assign ? Object.assign.bind() : function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var a = arguments[t];
             for (var s in a) Object.prototype.hasOwnProperty.call(a, s) && (e[s] = a[s])
           }
           return e
-        }, oa.apply(this, arguments)
+        }, xa.apply(this, arguments)
       }
-      const da = e => o.createElement("svg", oa({
+      const ya = e => o.createElement("svg", xa({
           xmlns: "http://www.w3.org/2000/svg",
           width: 24,
           height: 24,
           fill: "none"
-        }, e), na || (na = o.createElement("path", {
+        }, e), wa || (wa = o.createElement("path", {
           stroke: "#fff",
           strokeLinecap: "round",
           strokeLinejoin: "round",
           strokeWidth: 2,
           d: "m9 18 6-6-6-6"
         }))),
-        ca = {
-          pillBtn: "rockstargames-sites-red-dead-redemption-2f5c8cbcdc2408c602e1d5c5ef98091a1",
-          selected: "rockstargames-sites-red-dead-redemption-2f05732bff172f32532936ffdf636a215",
-          navScrollButton: "rockstargames-sites-red-dead-redemption-2ef8ca38f98b731ff5dfe07937b1bbe34"
+        Na = {
+          pillBtn: "rockstargames-modules-core-gif-viewerf5c8cbcdc2408c602e1d5c5ef98091a1",
+          selected: "rockstargames-modules-core-gif-viewerf05732bff172f32532936ffdf636a215",
+          navScrollButton: "rockstargames-modules-core-gif-vieweref8ca38f98b731ff5dfe07937b1bbe34"
         },
-        la = e => {
+        ja = e => {
           let {
             direction: t,
             className: a,
             ...s
           } = e;
-          return (0, u.jsxs)("button", {
+          return (0, y.jsxs)("button", {
             type: "button",
-            className: [a, ca.navScrollButton].join(" "),
+            className: [a, Na.navScrollButton].join(" "),
             ...s,
-            children: ["left" === t && (0, u.jsx)(ia, {}), "right" === t && (0, u.jsx)(da, {})]
+            children: ["left" === t && (0, y.jsx)(ba, {}), "right" === t && (0, y.jsx)(ya, {})]
           })
         },
-        ma = (0, d.defineMessages)({
+        Sa = (0, c.Os)({
           pln_career_progress_unavailable: {
             id: "pln_career_progress_unavailable",
             defaultMessage: "Sorry, career progress pack cards are currently unavailable."
@@ -5638,44 +5828,44 @@ _global.SENTRY_RELEASE = {
             defaultMessage: "Scroll Right"
           }
         }),
-        pa = {
-          pillBtn: "rockstargames-sites-red-dead-redemption-2c07e609b8b71ab690ceb8c0ce0a10e3b",
-          selected: "rockstargames-sites-red-dead-redemption-2b7277764b073fb1731f97500d63602dd",
-          chipsContainer: "rockstargames-sites-red-dead-redemption-2b12cbbc254604b2d0a9e23a794cc306b",
-          chips: "rockstargames-sites-red-dead-redemption-2fde4c31ca848c29a1064a0fee3686f93",
-          nextChipNavButton: "rockstargames-sites-red-dead-redemption-2e753e2314e48a7d59ead26e77cac50aa",
-          previousChipNavButton: "rockstargames-sites-red-dead-redemption-2ce3553d0304e228596f67c2308240648",
-          nextNavIcon: "rockstargames-sites-red-dead-redemption-2ef938f00847374bd89f70d0e5b1f97a8",
-          previousNavIcon: "rockstargames-sites-red-dead-redemption-2f750c5a49886ae190c14e52aa026a417"
+        Ta = {
+          pillBtn: "rockstargames-modules-core-gif-viewerc07e609b8b71ab690ceb8c0ce0a10e3b",
+          selected: "rockstargames-modules-core-gif-viewerb7277764b073fb1731f97500d63602dd",
+          chipsContainer: "rockstargames-modules-core-gif-viewerb12cbbc254604b2d0a9e23a794cc306b",
+          chips: "rockstargames-modules-core-gif-viewerfde4c31ca848c29a1064a0fee3686f93",
+          nextChipNavButton: "rockstargames-modules-core-gif-viewere753e2314e48a7d59ead26e77cac50aa",
+          previousChipNavButton: "rockstargames-modules-core-gif-viewerce3553d0304e228596f67c2308240648",
+          nextNavIcon: "rockstargames-modules-core-gif-vieweref938f00847374bd89f70d0e5b1f97a8",
+          previousNavIcon: "rockstargames-modules-core-gif-viewerf750c5a49886ae190c14e52aa026a417"
         },
-        ua = e => {
+        Ca = e => {
           let {
             navItems: t,
             category: a,
             setCategory: s,
-            chipsContainerClass: r = pa.chipsContainer,
+            chipsContainerClass: r = Ta.chipsContainer,
             previousChipButtonClass: i = "",
             nextChipBtnClass: n = ""
           } = e;
-          const c = (0, d.useIntl)(),
+          const c = (0, d.c)(),
             {
               track: l
-            } = (0, F.useGtmTrack)(),
+            } = (0, se.useGtmTrack)(),
             {
-              pathname: p
-            } = (0, m.useLocation)(),
-            g = (0, o.useMemo)((() => Math.max(t.findIndex((e => e.name === a)), 0)), [t, p]),
-            [f, _] = (0, o.useState)(g),
-            [h, k] = (0, o.useState)(!1),
-            [b, v] = (0, o.useState)(!1),
-            [x, y] = (0, o.useState)(!1),
+              pathname: m
+            } = (0, C.useLocation)(),
+            u = (0, o.useMemo)((() => Math.max(t.findIndex((e => e.name === a)), 0)), [t, m]),
+            [g, f] = (0, o.useState)(u),
+            [p, _] = (0, o.useState)(!1),
+            [h, v] = (0, o.useState)(!1),
+            [k, b] = (0, o.useState)(!1),
             w = (0, o.useRef)(null),
+            x = (0, o.useRef)(null),
             N = (0, o.useRef)(null),
-            j = (0, o.useRef)(null),
-            S = (0, o.useCallback)(((e, t) => {
-              j.current && j.current.slideTo(e), _(e), T(`Career Progress Nav > ${t}`)
+            j = (0, o.useCallback)(((e, t) => {
+              N.current && N.current.slideTo(e), f(e), S(`Career Progress Nav > ${t}`)
             }), [l]),
-            T = (e, t) => {
+            S = (e, t) => {
               l({
                 event: "component_tab_click",
                 event_action: "click",
@@ -5687,76 +5877,76 @@ _global.SENTRY_RELEASE = {
               })
             };
           (0, o.useEffect)((() => {
-            s(f)
-          }), [f]);
-          const M = e => {
-            e.isEnd ? v(!0) : v(!1), e.isBeginning ? y(!0) : y(!1)
+            s(g)
+          }), [g]);
+          const T = e => {
+            e.isEnd ? v(!0) : v(!1), e.isBeginning ? b(!0) : b(!1)
           };
           return (0, o.useEffect)((() => {
-            j.current && ((j.current.wrapperEl.clientWidth || 0) > (j.current.el.clientWidth || 0) ? (k(!0), j.current.params.centeredSlides = !0, j.current.params.centeredSlidesBounds = !0) : (k(!1), j.current.params.centeredSlides = !1, j.current.params.centeredSlidesBounds = !1))
-          }), [j.current?.wrapperEl.clientWidth, j.current?.el.clientWidth]), (0, u.jsxs)("div", {
+            N.current && ((N.current.wrapperEl.clientWidth || 0) > (N.current.el.clientWidth || 0) ? (_(!0), N.current.params.centeredSlides = !0, N.current.params.centeredSlidesBounds = !0) : (_(!1), N.current.params.centeredSlides = !1, N.current.params.centeredSlidesBounds = !1))
+          }), [N.current?.wrapperEl.clientWidth, N.current?.el.clientWidth]), (0, y.jsxs)("div", {
             className: r,
-            children: [!x && h && (0, u.jsx)("div", {
-              ref: N,
-              className: (0, C.classList)(pa.previousChipNavButton, i),
-              children: (0, u.jsx)(la, {
+            children: [!k && p && (0, y.jsx)("div", {
+              ref: x,
+              className: (0, G.classList)(Ta.previousChipNavButton, i),
+              children: (0, y.jsx)(ja, {
                 direction: "left",
-                className: pa.previousNavIcon,
+                className: Ta.previousNavIcon,
                 onClick: () => {
-                  j.current && (j.current?.slidePrev(), j.current.isBeginning ? y(!0) : y(!1), l({
+                  N.current && (N.current?.slidePrev(), N.current.isBeginning ? b(!0) : b(!1), l({
                     event: "carousel_previous",
                     event_action: "click",
                     event_category: "carousel",
                     element_placement: "career progress page"
                   }))
                 },
-                "aria-label": c.formatMessage(ma.pln_scroll_left)
+                "aria-label": c.formatMessage(Sa.pln_scroll_left)
               })
-            }), (0, u.jsx)("div", {
-              className: pa.chips,
-              children: (0, u.jsx)(P.wx, {
-                onBeforeInit: e => j.current = e,
-                onInit: M,
-                className: pa.chips,
+            }), (0, y.jsx)("div", {
+              className: Ta.chips,
+              children: (0, y.jsx)(K.wx, {
+                onBeforeInit: e => N.current = e,
+                onInit: T,
+                className: Ta.chips,
                 direction: "horizontal",
                 grabCursor: !0,
                 slidesPerView: "auto",
-                initialSlide: f,
-                onSlideChange: M,
-                onResize: M,
+                initialSlide: g,
+                onSlideChange: T,
+                onResize: T,
                 children: t.map(((e, t) => {
                   let {
                     title: a
                   } = e;
-                  return (0, u.jsx)(P.Ky, {
-                    children: (0, u.jsx)(aa, {
+                  return (0, y.jsx)(K.Ky, {
+                    children: (0, y.jsx)(ha, {
                       title: a,
-                      onClick: () => S(t, a),
-                      selected: f === t
+                      onClick: () => j(t, a),
+                      selected: g === t
                     })
                   }, a)
                 }))
               })
-            }), !b && h && (0, u.jsx)("div", {
+            }), !h && p && (0, y.jsx)("div", {
               ref: w,
-              className: (0, C.classList)(pa.nextChipNavButton, n),
-              children: (0, u.jsx)(la, {
+              className: (0, G.classList)(Ta.nextChipNavButton, n),
+              children: (0, y.jsx)(ja, {
                 direction: "right",
-                className: pa.nextNavIcon,
+                className: Ta.nextNavIcon,
                 onClick: () => {
-                  j.current && (j.current?.slideNext(), j.current.isEnd ? v(!0) : v(!1), l({
+                  N.current && (N.current?.slideNext(), N.current.isEnd ? v(!0) : v(!1), l({
                     event: "carousel_next",
                     event_action: "click",
                     event_category: "carousel",
                     element_placement: "career progress page"
                   }))
                 },
-                "aria-label": c.formatMessage(ma.pln_scroll_right)
+                "aria-label": c.formatMessage(Sa.pln_scroll_right)
               })
             })]
           })
         },
-        ga = e => {
+        Ma = e => {
           let {
             navItems: t,
             onNavItemClick: a,
@@ -5765,9 +5955,9 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: i
-          } = (0, F.useGtmTrack)(), [n, d] = (0, o.useState)(0), c = (0, o.useCallback)(((e, s) => {
-            l(`Secondary Nav > ${t[n].title} > ${e}`, s), a()
-          }), [t, a, n, i]), l = (e, t) => {
+          } = (0, se.useGtmTrack)(), [n, c] = (0, o.useState)(0), l = (0, o.useCallback)(((e, s) => {
+            d(`Secondary Nav > ${t[n].title} > ${e}`, s), a()
+          }), [t, a, n, i]), d = (e, t) => {
             i({
               event: "nav_click",
               event_action: "click",
@@ -5778,8 +5968,8 @@ _global.SENTRY_RELEASE = {
               element_placement: e
             })
           };
-          return (0, u.jsx)(Re.q.div, {
-            className: "rockstargames-sites-red-dead-redemption-2aa2ce15f29ac99fe06895664698bb6cc",
+          return (0, y.jsx)(at.q.div, {
+            className: "rockstargames-modules-core-gif-vieweraa2ce15f29ac99fe06895664698bb6cc",
             initial: {
               height: 0
             },
@@ -5790,30 +5980,30 @@ _global.SENTRY_RELEASE = {
               ease: "easeInOut",
               duration: .4
             },
-            children: (0, u.jsxs)("div", {
-              className: "rockstargames-sites-red-dead-redemption-2f2f85d11f6ee99282db61467ebdbd00f",
-              children: [(0, u.jsx)("div", {
-                className: "rockstargames-sites-red-dead-redemption-2c5288c05172905ec86e3fb56c010d6d3",
-                children: (0, u.jsx)(ua, {
+            children: (0, y.jsxs)("div", {
+              className: "rockstargames-modules-core-gif-viewerf2f85d11f6ee99282db61467ebdbd00f",
+              children: [(0, y.jsx)("div", {
+                className: "rockstargames-modules-core-gif-viewerc5288c05172905ec86e3fb56c010d6d3",
+                children: (0, y.jsx)(Ca, {
                   navItems: t,
                   category: t[n]?.name,
-                  setCategory: d,
-                  nextChipBtnClass: "rockstargames-sites-red-dead-redemption-2c8a45e31d035c8e867358deea365ceac",
-                  prevChipBtnClass: "rockstargames-sites-red-dead-redemption-2e9684050ab2f4aa408ae565c740cf50c"
+                  setCategory: c,
+                  nextChipBtnClass: "rockstargames-modules-core-gif-viewerc8a45e31d035c8e867358deea365ceac",
+                  prevChipBtnClass: "rockstargames-modules-core-gif-viewere9684050ab2f4aa408ae565c740cf50c"
                 })
-              }), (0, u.jsx)("div", {
-                className: "rockstargames-sites-red-dead-redemption-2f1adea94eb32de966a0e622247370f4e",
-                children: (0, u.jsx)(ea, {
+              }), (0, y.jsx)("div", {
+                className: "rockstargames-modules-core-gif-viewerf1adea94eb32de966a0e622247370f4e",
+                children: (0, y.jsx)(pa, {
                   isHeaderVisible: r,
                   packListItems: t[n]?.subNavItems ?? [],
-                  selectPackCard: c
+                  selectPackCard: l
                 })
               })]
             })
           })
         },
-        fa = "rockstargames-sites-red-dead-redemption-2c54c374409e11d1429ce99457cbf7441",
-        _a = e => {
+        Ia = "rockstargames-modules-core-gif-viewerc54c374409e11d1429ce99457cbf7441",
+        Ea = e => {
           let {
             children: t,
             data: a,
@@ -5821,16 +6011,16 @@ _global.SENTRY_RELEASE = {
             page: r,
             className: i
           } = e;
-          return (0, u.jsx)("a", {
+          return (0, y.jsx)("a", {
             href: "#",
-            className: r === a.page ? `rockstargames-sites-red-dead-redemption-2c0eebf4f915ff9f5cc362e22d6d7d976 ${i??""}` : "",
+            className: r === a.page ? `rockstargames-modules-core-gif-viewerc0eebf4f915ff9f5cc362e22d6d7d976 ${i??""}` : "",
             onClick: e => {
               e.preventDefault(), s(r)
             },
             children: t
           })
         },
-        ha = e => {
+        La = e => {
           let {
             data: t,
             onPageUpdate: a,
@@ -5838,29 +6028,29 @@ _global.SENTRY_RELEASE = {
           } = e;
           if (1 === t.pageCount) return null;
           const r = Array.from(new Array(Math.min(t.pageCount, 8)), ((e, a) => a + Math.min(Math.max(t.pageCount - 8, 1), Math.max(2, t.page - 4))));
-          return (0, u.jsxs)("div", {
-            className: `rockstargames-sites-red-dead-redemption-2a626faab2a5a03e3466dda5c79960575 ${s??""}`,
-            children: [t.pageCount > 8 ? (0, u.jsxs)(u.Fragment, {
-              children: [(0, u.jsx)(_a, {
+          return (0, y.jsxs)("div", {
+            className: `rockstargames-modules-core-gif-viewera626faab2a5a03e3466dda5c79960575 ${s??""}`,
+            children: [t.pageCount > 8 ? (0, y.jsxs)(y.Fragment, {
+              children: [(0, y.jsx)(Ea, {
                 data: t,
                 onPageUpdate: a,
                 page: 1,
                 children: "1"
-              }), 2 !== r[0] ? (0, u.jsx)("div", {
-                className: fa,
+              }), 2 !== r[0] ? (0, y.jsx)("div", {
+                className: Ia,
                 children: "..."
               }) : ""]
-            }) : "", r.map((e => (0, u.jsx)(_a, {
+            }) : "", r.map((e => (0, y.jsx)(Ea, {
               data: t,
               onPageUpdate: a,
               page: e,
               className: s,
               children: e
-            }, e))), t.pageCount > 8 ? (0, u.jsxs)(u.Fragment, {
-              children: [r.slice(-1)[0] + 1 < t.pageCount ? (0, u.jsx)("div", {
-                className: fa,
+            }, e))), t.pageCount > 8 ? (0, y.jsxs)(y.Fragment, {
+              children: [r.slice(-1)[0] + 1 < t.pageCount ? (0, y.jsx)("div", {
+                className: Ia,
                 children: "..."
-              }) : "", (0, u.jsx)(_a, {
+              }) : "", (0, y.jsx)(Ea, {
                 data: t,
                 onPageUpdate: a,
                 page: t.pageCount,
@@ -5869,14 +6059,14 @@ _global.SENTRY_RELEASE = {
             }) : ""]
           })
         };
-      var ka = a(77616);
-      const ba = e => {
+      var za = a(77616);
+      const Pa = e => {
           let {
             children: t
           } = e;
           const {
             parallaxController: a
-          } = (0, ka.oZ)();
+          } = (0, za.oZ)();
           return (0, o.useLayoutEffect)((() => {
             if (!a) return;
             const e = setInterval((() => {
@@ -5885,24 +6075,24 @@ _global.SENTRY_RELEASE = {
             return () => clearInterval(e)
           }), [a]), t
         },
-        va = {
-          parallaxWrapper: "rockstargames-sites-red-dead-redemption-2db1ab316d17367d31cf94cdde25e463a",
-          large: "rockstargames-sites-red-dead-redemption-2d520d28c6e4e797aea99f61c89ad2bd8",
-          medium: "rockstargames-sites-red-dead-redemption-2f008365ee42d37e24e606107346b1c83",
-          small: "rockstargames-sites-red-dead-redemption-2cb5937d1a102ac4a66c4e373e6253946"
+        Oa = {
+          parallaxWrapper: "rockstargames-modules-core-gif-viewerdb1ab316d17367d31cf94cdde25e463a",
+          large: "rockstargames-modules-core-gif-viewerd520d28c6e4e797aea99f61c89ad2bd8",
+          medium: "rockstargames-modules-core-gif-viewerf008365ee42d37e24e606107346b1c83",
+          small: "rockstargames-modules-core-gif-viewercb5937d1a102ac4a66c4e373e6253946"
         },
-        xa = e => {
+        Da = e => {
           let {
             scrollAxis: t = "vertical",
             size: a = "",
             style: s = {},
             children: r
           } = e;
-          return (0, u.jsx)(ka.qK, {
+          return (0, y.jsx)(za.qK, {
             scrollAxis: t,
-            children: (0, u.jsx)(ba, {
-              children: (0, u.jsx)("div", {
-                className: (0, C.classList)(va.parallaxWrapper, va[a]),
+            children: (0, y.jsx)(Pa, {
+              children: (0, y.jsx)("div", {
+                className: (0, G.classList)(Oa.parallaxWrapper, Oa[a]),
                 style: s,
                 "data-context": "parallax-wrapper",
                 children: r ? r.map(((e, a) => (0, o.cloneElement)(e, {
@@ -5911,18 +6101,18 @@ _global.SENTRY_RELEASE = {
                     ...e?.props?.style,
                     zIndex: a
                   }
-                }))) : (0, u.jsx)("div", {})
+                }))) : (0, y.jsx)("div", {})
               })
             })
           })
         },
-        ya = e => {
+        Aa = e => {
           let {
             layers: t = [],
             displayClass: a = "",
             style: s = {}
           } = e;
-          const r = (0, C.useGenerateCdnSource)();
+          const r = (0, G.useGenerateCdnSource)();
           if (!t || !t[0]?.image) return null;
           const i = t.map((e => ({
             ...e,
@@ -5934,14 +6124,14 @@ _global.SENTRY_RELEASE = {
             style: void 0,
             image: r(e?.image ?? null)
           })));
-          return (0, u.jsx)(ka.Sr, {
-            className: (0, C.classList)("rockstargames-sites-red-dead-redemption-2b8c85703a3c76902e49a61a6afcb81bc", a),
+          return (0, y.jsx)(za.Sr, {
+            className: (0, G.classList)("rockstargames-modules-core-gif-viewerb8c85703a3c76902e49a61a6afcb81bc", a),
             layers: i,
             style: s
           })
         },
-        wa = "rockstargames-sites-red-dead-redemption-2c4aa8e5d29b433c400796d0c493a9a4d",
-        Na = e => {
+        Ba = "rockstargames-modules-core-gif-viewerc4aa8e5d29b433c400796d0c493a9a4d",
+        Va = e => {
           let {
             minOffset: t = 0,
             maxOffset: a = 0,
@@ -5950,19 +6140,19 @@ _global.SENTRY_RELEASE = {
             style: i = {},
             children: n
           } = e;
-          return "horizontal" === s ? (0, u.jsx)(ka.mw, {
+          return "horizontal" === s ? (0, y.jsx)(za.mw, {
             x: [t, a],
-            className: (0, C.classList)(wa, r),
+            className: (0, G.classList)(Ba, r),
             styleOuter: i,
             children: n
-          }) : (0, u.jsx)(ka.mw, {
+          }) : (0, y.jsx)(za.mw, {
             y: [t, a],
-            className: (0, C.classList)(wa, r),
+            className: (0, G.classList)(Ba, r),
             styleOuter: i,
             children: n
           })
         },
-        ja = (e, t) => {
+        Ra = (e, t) => {
           switch (e) {
             case "pc":
               return "small" === t ? {
@@ -6010,8 +6200,8 @@ _global.SENTRY_RELEASE = {
               }
           }
         },
-        Sa = e => a(e < 100 ? 84184 : e > 99 && e < 500 ? 69450 : e > 499 && e < 750 ? 31216 : 85724),
-        Ta = (0, d.defineMessages)({
+        Fa = e => a(e < 100 ? 84184 : e > 99 && e < 500 ? 69450 : e > 499 && e < 750 ? 31216 : 85724),
+        $a = (0, c.Os)({
           sc_link_activity_feed: {
             id: "sc_link_activity_feed",
             defaultMessage: "Activity Feed"
@@ -6137,22 +6327,22 @@ _global.SENTRY_RELEASE = {
             defaultMessage: "New notifications"
           }
         }),
-        Ca = {
-          pillBtn: "rockstargames-sites-red-dead-redemption-2e4a42eaa9bfb682035e61ac2e2a34515",
-          selected: "rockstargames-sites-red-dead-redemption-2eb889d8958be54a67b790d7529530986",
-          scCharacterCard: "rockstargames-sites-red-dead-redemption-2df279e92086c0d3c96905b3a91b369ed",
-          scAvatar: "rockstargames-sites-red-dead-redemption-2c1890feda663c93b0f767890394cbdcf",
-          scCharNames: "rockstargames-sites-red-dead-redemption-2e79d7f5515617d849d7d13cd4ff048ce",
-          scCharacterStats: "rockstargames-sites-red-dead-redemption-2c721f3aeef9e5ae6b98adca1253e4709",
-          scUserName: "rockstargames-sites-red-dead-redemption-2eabff0cc0139013f5a60fea6f48c56f6",
-          scRpLevel: "rockstargames-sites-red-dead-redemption-2b1f87c58a800ad546200fbf17e029f35",
-          scRpIcon: "rockstargames-sites-red-dead-redemption-2f1e0bcba6214698c490b8201bbd850b7"
+        Ua = {
+          pillBtn: "rockstargames-modules-core-gif-viewere4a42eaa9bfb682035e61ac2e2a34515",
+          selected: "rockstargames-modules-core-gif-viewereb889d8958be54a67b790d7529530986",
+          scCharacterCard: "rockstargames-modules-core-gif-viewerdf279e92086c0d3c96905b3a91b369ed",
+          scAvatar: "rockstargames-modules-core-gif-viewerc1890feda663c93b0f767890394cbdcf",
+          scCharNames: "rockstargames-modules-core-gif-viewere79d7f5515617d849d7d13cd4ff048ce",
+          scCharacterStats: "rockstargames-modules-core-gif-viewerc721f3aeef9e5ae6b98adca1253e4709",
+          scUserName: "rockstargames-modules-core-gif-viewereabff0cc0139013f5a60fea6f48c56f6",
+          scRpLevel: "rockstargames-modules-core-gif-viewerb1f87c58a800ad546200fbf17e029f35",
+          scRpIcon: "rockstargames-modules-core-gif-viewerf1e0bcba6214698c490b8201bbd850b7"
         },
-        Ma = (0, d.withIntl)((e => {
+        Ga = j((e => {
           let {
             characterData: t
           } = e;
-          const s = (0, d.useIntl)(),
+          const s = (0, d.c)(),
             {
               platform: r,
               platformUsername: i,
@@ -6160,41 +6350,41 @@ _global.SENTRY_RELEASE = {
               stats: c
             } = t,
             [l, m] = (0, o.useState)(n),
-            p = ja(r, "large");
-          return (0, u.jsxs)("div", {
-            className: Ca.scCharacterCard,
-            children: [(0, u.jsx)("div", {
-              className: Ca.scAvatar,
+            u = Ra(r, "large");
+          return (0, y.jsxs)("div", {
+            className: Ua.scCharacterCard,
+            children: [(0, y.jsx)("div", {
+              className: Ua.scAvatar,
               "data-size": "small",
-              children: (0, u.jsx)("img", {
+              children: (0, y.jsx)("img", {
                 src: l,
-                alt: s.formatMessage(Ta.profile_selector_mugshot, {
+                alt: s.formatMessage($a.profile_selector_mugshot, {
                   userName: i
                 }),
                 onError: () => {
                   m(a(71084))
                 }
               })
-            }), (0, u.jsx)("div", {
-              className: Ca.scCharacterStats,
-              children: (0, u.jsxs)("div", {
-                className: Ca.scCharNames,
-                children: [(0, u.jsx)("img", {
-                  src: p.src,
-                  alt: p.alt
-                }), (0, u.jsx)("div", {
-                  className: Ca.scUserName,
+            }), (0, y.jsx)("div", {
+              className: Ua.scCharacterStats,
+              children: (0, y.jsxs)("div", {
+                className: Ua.scCharNames,
+                children: [(0, y.jsx)("img", {
+                  src: u.src,
+                  alt: u.alt
+                }), (0, y.jsx)("div", {
+                  className: Ua.scUserName,
                   "data-size": "small",
                   children: i
-                }), (0, u.jsx)("div", {
-                  className: Ca.scRp,
-                  children: (0, u.jsxs)("div", {
-                    className: Ca.scRpLevel,
-                    children: [(0, u.jsx)("img", {
-                      className: Ca.scRpIcon,
-                      src: Sa(c.overview.rank.value),
-                      alt: s.formatMessage(Ta.profile_selector_rp_icon)
-                    }), (0, u.jsx)("span", {
+                }), (0, y.jsx)("div", {
+                  className: Ua.scRp,
+                  children: (0, y.jsxs)("div", {
+                    className: Ua.scRpLevel,
+                    children: [(0, y.jsx)("img", {
+                      className: Ua.scRpIcon,
+                      src: Fa(c.overview.rank.value),
+                      alt: s.formatMessage($a.profile_selector_rp_icon)
+                    }), (0, y.jsx)("span", {
                       children: t.stats.overview.rank.value
                     })]
                   })
@@ -6202,131 +6392,131 @@ _global.SENTRY_RELEASE = {
               })
             })]
           })
-        }), c);
-      var Ia = a(92104);
-      const Ea = (0, h.makeVarNamespace)("@rockstargames/components/profile-switcher"),
-        La = Ea("languageSelectorOpenedReactive", !1),
-        za = e => La(e),
-        Pa = Ea("activeSubNavIdReactive", -1),
-        Oa = e => Pa(e),
-        Aa = Ea("subNavExtraHeightReactive", -1),
-        Da = e => Aa(e),
-        Ba = Ea("scNavOpenedReactive", !0),
-        Va = e => Ba(e),
-        Ra = Ea("charListHiddenReactive", !0),
-        Fa = e => Ra(e),
-        $a = () => {
-          const e = (0, h.useReactiveVar)(La),
-            t = (0, h.useReactiveVar)(Pa),
-            a = (0, h.useReactiveVar)(Aa),
-            s = (0, h.useReactiveVar)(Ba),
-            r = (0, h.useReactiveVar)(Ra);
+        }), S);
+      var Ha = a(69724);
+      const qa = (0, z.makeVarNamespace)("@rockstargames/components/profile-switcher"),
+        Wa = qa("languageSelectorOpenedReactive", !1),
+        Xa = e => Wa(e),
+        Ya = qa("activeSubNavIdReactive", -1),
+        Ka = e => Ya(e),
+        Qa = qa("subNavExtraHeightReactive", -1),
+        Za = e => Qa(e),
+        Ja = qa("scNavOpenedReactive", !0),
+        es = e => Ja(e),
+        ts = qa("charListHiddenReactive", !0),
+        as = e => ts(e),
+        ss = () => {
+          const e = (0, z.useReactiveVar)(Wa),
+            t = (0, z.useReactiveVar)(Ya),
+            a = (0, z.useReactiveVar)(Qa),
+            s = (0, z.useReactiveVar)(Ja),
+            r = (0, z.useReactiveVar)(ts);
           return (0, o.useEffect)((() => {
-            r || (e && za(!1), s && (Va(!1), Oa(-1)))
+            r || (e && Xa(!1), s && (es(!1), Ka(-1)))
           }), [r]), (0, o.useEffect)((() => {
-            !e && r && (s || Va(!0))
+            !e && r && (s || es(!0))
           }), [e, r]), (0, o.useMemo)((() => ({
             languageSelectorOpened: e,
-            setLanguageSelectorOpened: za,
+            setLanguageSelectorOpened: Xa,
             activeSubNavId: t,
-            setActiveSubNavId: Oa,
+            setActiveSubNavId: Ka,
             subNavExtraHeight: a,
-            setSubNavExtraHeight: Da,
+            setSubNavExtraHeight: Za,
             scNavOpened: s,
-            setScNavOpened: Va,
+            setScNavOpened: es,
             charListHidden: r,
-            setCharListHidden: Fa
+            setCharListHidden: as
           })), [e, t, a, s, r])
         };
-      var Ua = a(69760),
-        Ga = a.n(Ua),
-        Ha = a(9860);
-      const qa = {
+      var rs = a(69760),
+        is = a.n(rs),
+        ns = a(9860);
+      const os = {
           event: "account_menu_click",
           element_placement: "Account Menu"
         },
-        Wa = e => ({
-          text: e.formatMessage(Ta.sc_link_help),
+        cs = e => ({
+          text: e.formatMessage($a.sc_link_help),
           target: "_self",
           ga: {
-            ...qa,
-            text: Ta.sc_link_help.defaultMessage
+            ...os,
+            text: $a.sc_link_help.defaultMessage
           },
           dataTestId: "helpButton",
           children: [{
-            text: e.formatMessage(Ta.sc_link_support),
+            text: e.formatMessage($a.sc_link_support),
             location: {
-              domain: ft.U.support,
+              domain: "support",
               path: "/"
             },
             target: "_self",
             ga: {
-              ...qa,
-              text: Ta.sc_link_support.defaultMessage
+              ...os,
+              text: $a.sc_link_support.defaultMessage
             },
             dataTestId: "supportLink"
           }, {
-            text: e.formatMessage(Ta.sc_link_legal),
+            text: e.formatMessage($a.sc_link_legal),
             location: {
-              domain: ft.U.www,
+              domain: u,
               path: "/legal"
             },
             target: "_self",
             ga: {
-              ...qa,
-              text: Ta.sc_link_legal.defaultMessage
+              ...os,
+              text: $a.sc_link_legal.defaultMessage
             },
             dataTestId: "legalLink"
           }, {
-            text: e.formatMessage(Ta.sc_link_privacy_policy),
+            text: e.formatMessage($a.sc_link_privacy_policy),
             location: {
-              domain: ft.U.www,
+              domain: u,
               path: "/privacy"
             },
             target: "_self",
             ga: {
-              ...qa,
-              text: Ta.sc_link_privacy_policy.defaultMessage
+              ...os,
+              text: $a.sc_link_privacy_policy.defaultMessage
             },
             dataTestId: "privacyPolicyLink"
           }, {
-            text: e.formatMessage(Ta.sc_link_cookies_policy),
+            text: e.formatMessage($a.sc_link_cookies_policy),
             location: {
-              domain: ft.U.www,
+              domain: u,
               path: "/cookies"
             },
             target: "_self",
             ga: {
-              ...qa,
-              text: Ta.sc_link_cookies_policy.defaultMessage
+              ...os,
+              text: $a.sc_link_cookies_policy.defaultMessage
             },
             dataTestId: "cookiesPolicyLink"
           }, {
-            text: e.formatMessage(Ta.sc_link_cookies_settings),
+            text: e.formatMessage($a.sc_link_cookies_settings),
             onClickCallback: e => {
               e.preventDefault(), window.OneTrust?.ToggleInfoDisplay()
             },
             target: "_self",
             ga: {
-              ...qa,
-              text: Ta.sc_link_cookies_settings.defaultMessage
+              ...os,
+              text: $a.sc_link_cookies_settings.defaultMessage
             },
             dataTestId: "cookiesSettingsLink"
           }, {
-            text: e.formatMessage(Ta.sc_link_do_not_sell_my_information),
+            text: e.formatMessage($a.sc_link_do_not_sell_my_information),
             location: {
-              domain: ft.U.www,
+              domain: u,
               path: "/ccpa"
             },
             target: "_self",
             ga: {
-              ...qa,
-              text: Ta.sc_link_do_not_sell_my_information.defaultMessage
+              ...os,
+              text: $a.sc_link_do_not_sell_my_information.defaultMessage
             },
             dataTestId: "doNotSellMyInformationLink"
           }]
         }),
-        Xa = e => {
+        ls = e => {
           let {
             text: t,
             target: a,
@@ -6337,40 +6527,40 @@ _global.SENTRY_RELEASE = {
             isSubLink: o,
             hasNotifications: c = !1,
             onClickCallback: l = (() => {}),
-            tabIndex: p,
-            reloadDocument: g = !1
+            tabIndex: m,
+            reloadDocument: u = !1
           } = e;
           const {
-            track: f
-          } = (0, F.useGtmTrack)(), _ = (0, ft.c)(), h = (0, d.useIntl)();
-          let k = s;
-          r && (k = r.domain === _.currentSite?.site ? r.path : `https://${_.sites[r.domain]}.rockstargames.com${r.path}`);
-          const b = {
+            track: g
+          } = (0, se.useGtmTrack)(), f = p(), _ = (0, d.c)();
+          let h = s;
+          r && (h = r.domain === f.currentSite?.site ? r.path : `https://${f.sites[r.domain]}.rockstargames.com${r.path}`);
+          const v = {
             ...i,
-            link_url: k
+            link_url: h
           };
-          return (0, u.jsxs)(m.Link, {
-            className: o ? "rockstargames-sites-red-dead-redemption-2fdaa918acc06706cbe191dedd40974af" : "rockstargames-sites-red-dead-redemption-2cbc80932118c48d8ec14448d8913d068",
+          return (0, y.jsxs)(C.Link, {
+            className: o ? "rockstargames-modules-core-gif-viewerfdaa918acc06706cbe191dedd40974af" : "rockstargames-modules-core-gif-viewercbc80932118c48d8ec14448d8913d068",
             "data-testid": n || "menuLink",
             title: t,
-            to: k,
+            to: h,
             target: a,
             rel: "noreferrer",
-            reloadDocument: g,
-            tabIndex: p,
+            reloadDocument: u,
+            tabIndex: m,
             onClick: e => {
-              f(b), l(e)
+              g(v), l(e)
             },
-            children: [t, c && (0, u.jsx)("div", {
-              className: "rockstargames-sites-red-dead-redemption-2a2d268c9fb03a7271b47de447d663da9",
-              children: (0, u.jsx)("span", {
-                className: "rockstargames-sites-red-dead-redemption-2cf5a6b05c52c6c4faf3236055d4670c3",
-                children: h.formatMessage(Ta.nofications_new)
+            children: [t, c && (0, y.jsx)("div", {
+              className: "rockstargames-modules-core-gif-viewera2d268c9fb03a7271b47de447d663da9",
+              children: (0, y.jsx)("span", {
+                className: "rockstargames-modules-core-gif-viewercf5a6b05c52c6c4faf3236055d4670c3",
+                children: _.formatMessage($a.nofications_new)
               })
             })]
           })
         },
-        Ya = e => {
+        ds = e => {
           let {
             id: t,
             text: a,
@@ -6378,121 +6568,121 @@ _global.SENTRY_RELEASE = {
             href: r,
             location: i,
             ga: n,
-            hasNotifications: d = !1,
-            dataTestId: c,
-            children: l = [],
+            hasNotifications: c = !1,
+            dataTestId: l,
+            children: d = [],
             activeSubNavId: m,
-            setActiveSubNavId: p,
+            setActiveSubNavId: u,
             setSubNavExtraHeight: g,
             reloadDocument: f = !1,
-            onClickCallback: _ = (() => {})
+            onClickCallback: p = (() => {})
           } = e;
           const {
-            windowWidth: h,
-            windowHeight: k
-          } = (0, R.useWindowResize)(), {
-            track: b
-          } = (0, F.useGtmTrack)(), {
-            navOpen: v
-          } = (0, F.useRockstarUserState)(), x = (0, o.useRef)(null), [y, w] = (0, o.useState)(0), [N, j] = (0, o.useState)(0), [S, T] = (0, o.useState)(!0);
+            windowWidth: _,
+            windowHeight: h
+          } = (0, ae.useWindowResize)(), {
+            track: v
+          } = (0, se.useGtmTrack)(), {
+            navOpen: k
+          } = (0, se.useRockstarUserState)(), b = (0, o.useRef)(null), [w, x] = (0, o.useState)(0), [N, j] = (0, o.useState)(0), [S, T] = (0, o.useState)(!0);
           return (0, o.useEffect)((() => {
             m !== t && !1 === S && T(!0), m === t && T(!1)
           }), [m]), (0, o.useEffect)((() => {
-            if (!x.current) return;
-            w(x?.current?.scrollHeight);
-            const e = window.getComputedStyle(x.current);
+            if (!b.current) return;
+            x(b?.current?.scrollHeight);
+            const e = window.getComputedStyle(b.current);
             if (e) {
               let t = 16 * parseInt(e.getPropertyValue("--scSubNav-opened-margin"), 10);
               Number.isNaN(t) && (t = 0), j(t)
             }
-          }), [x, h, k]), l.length > 0 ? (0, u.jsxs)(u.Fragment, {
-            children: [(0, u.jsxs)("button", {
-              className: "rockstargames-sites-red-dead-redemption-2af10b4154b04475edc11366934576ecd",
+          }), [b, _, h]), d.length > 0 ? (0, y.jsxs)(y.Fragment, {
+            children: [(0, y.jsxs)("button", {
+              className: "rockstargames-modules-core-gif-vieweraf10b4154b04475edc11366934576ecd",
               type: "button",
-              "data-testid": c || "menuButton",
+              "data-testid": l || "menuButton",
               title: a,
-              tabIndex: v ? 0 : -1,
+              tabIndex: k ? 0 : -1,
               "data-children-hidden": S,
               onClick: e => {
-                e.stopPropagation(), b(n), m === t ? (p(-1), g(0)) : (p(t), g(y + N + N))
+                e.stopPropagation(), v(n), m === t ? (u(-1), g(0)) : (u(t), g(w + N + N))
               },
-              children: [(0, u.jsx)("span", {
-                className: "rockstargames-sites-red-dead-redemption-2fd722aa4f6d05656ee6e37f952bd13d0",
+              children: [(0, y.jsx)("span", {
+                className: "rockstargames-modules-core-gif-viewerfd722aa4f6d05656ee6e37f952bd13d0",
                 children: a
-              }), (0, u.jsx)("span", {
-                className: "rockstargames-sites-red-dead-redemption-2be674f27adc299eab348b49f71429b71"
+              }), (0, y.jsx)("span", {
+                className: "rockstargames-modules-core-gif-viewerbe674f27adc299eab348b49f71429b71"
               })]
-            }, a), (0, u.jsx)("nav", {
-              className: "rockstargames-sites-red-dead-redemption-2ff1911053a3515534dd825554a85909e",
-              ref: x,
+            }, a), (0, y.jsx)("nav", {
+              className: "rockstargames-modules-core-gif-viewerff1911053a3515534dd825554a85909e",
+              ref: b,
               "aria-hidden": S,
               style: {
-                height: S ? 0 : `${y}px`
+                height: S ? 0 : `${w}px`
               },
-              children: l.map((e => (0, o.createElement)(Xa, {
+              children: d.map((e => (0, o.createElement)(ls, {
                 ...e,
                 isSubLink: !0,
                 key: e.text,
-                tabIndex: S || !v ? -1 : 0
+                tabIndex: S || !k ? -1 : 0
               })))
             })]
-          }) : (0, u.jsx)(Xa, {
+          }) : (0, y.jsx)(ls, {
             text: a,
             target: s,
             href: r,
             location: i,
             ga: n,
-            hasNotifications: d,
-            dataTestId: c,
+            hasNotifications: c,
+            dataTestId: l,
             isSubLink: !1,
-            onClickCallback: _,
-            tabIndex: v ? 0 : -1,
+            onClickCallback: p,
+            tabIndex: k ? 0 : -1,
             reloadDocument: f
           })
         },
-        Ka = e => {
+        ms = e => {
           let {
             sc: t
           } = e;
           const {
             windowWidth: a,
             windowHeight: s
-          } = (0, R.useWindowResize)(), r = (0, d.useIntl)(), {
+          } = (0, ae.useWindowResize)(), r = (0, d.c)(), {
             languageSelectorOpened: i,
             setLanguageSelectorOpened: n,
             activeSubNavId: c,
             setActiveSubNavId: l,
-            subNavExtraHeight: p,
-            setSubNavExtraHeight: g
-          } = $a(), {
-            setSelectedCharacterTuple: f,
-            navOpen: _
-          } = (0, F.useRockstarUserState)(), h = (0, R.useLocale)(), k = (0, R.toScLocaleString)(h), [b, v] = (0, o.useState)(""), x = (0, m.useLocation)(), y = `${t.login}?returnUrl=${b}&lang=${k}`, w = `${t.signup}&returnUrl=${b}&lang=${k}`, N = (0, o.useMemo)((() => (0, ft.c)()), []), j = (0, o.useMemo)((() => {
+            subNavExtraHeight: m,
+            setSubNavExtraHeight: u
+          } = ss(), {
+            setSelectedCharacterTuple: g,
+            navOpen: f
+          } = (0, se.useRockstarUserState)(), _ = (0, ae.useLocale)(), h = (0, ae.toScLocaleString)(_), [v, k] = (0, o.useState)(""), b = (0, C.useLocation)(), w = `${t.login}?returnUrl=${v}&lang=${h}`, x = `${t.signup}&returnUrl=${v}&lang=${h}`, N = (0, o.useMemo)((() => p()), []), j = (0, o.useMemo)((() => {
             const e = ((e, t, a) => [{
-              text: e.formatMessage(Ta.sc_link_sign_in),
+              text: e.formatMessage($a.sc_link_sign_in),
               href: t,
               ga: {
                 event: "cta_login",
-                text: Ta.sc_link_sign_in.defaultMessage,
+                text: $a.sc_link_sign_in.defaultMessage,
                 element_placement: "Account Menu"
               },
               dataTestId: "loginLink"
             }, {
-              text: e.formatMessage(Ta.sc_link_join_social_club),
+              text: e.formatMessage($a.sc_link_join_social_club),
               href: a,
               ga: {
                 event: "cta_signup",
-                text: Ta.sc_link_join_social_club.defaultMessage,
+                text: $a.sc_link_join_social_club.defaultMessage,
                 element_placement: "Account Menu"
               },
               dataTestId: "signUpLink"
-            }, Wa(e)])(r, y, w);
+            }, cs(e)])(r, w, x);
             return e
-          }), [r, y, w, N]), [S, T] = (0, o.useState)(0), C = (0, o.createRef)(), M = () => {
-            if (C.current) {
+          }), [r, w, x, N]), [S, T] = (0, o.useState)(0), M = (0, o.createRef)(), I = () => {
+            if (M.current) {
               const {
                 current: e
-              } = C, t = e?.scrollHeight, a = window.getComputedStyle(e);
+              } = M, t = e?.scrollHeight, a = window.getComputedStyle(e);
               if (a) {
                 let e = 16 * parseInt(a.getPropertyValue("--scSubNav-opened-margin"), 10) * 2;
                 Number.isNaN(e) && (e = 0), T(t + e)
@@ -6501,37 +6691,37 @@ _global.SENTRY_RELEASE = {
           };
           return (0, o.useEffect)((() => {
             const e = encodeURIComponent(`${document.location.pathname}${document.location.search}`);
-            v(e)
-          }), [x]), (0, o.useEffect)((() => {
-            f(!1)
+            k(e)
+          }), [b]), (0, o.useEffect)((() => {
+            g(!1)
           }), []), (0, o.useEffect)((() => {
-            M(), Ga()((() => {
-              setTimeout(M, 0)
+            I(), is()((() => {
+              setTimeout(I, 0)
             }), 300)
-          }), [a, s]), (0, u.jsxs)(u.Fragment, {
-            children: [(0, u.jsx)("nav", {
-              className: "rockstargames-sites-red-dead-redemption-2b1552e1f97b08ee4337f78fa4486ffac",
-              children: (0, u.jsx)("div", {
-                className: "rockstargames-sites-red-dead-redemption-2c5bc9bec611f9f0514176014ce835e1e",
+          }), [a, s]), (0, y.jsxs)(y.Fragment, {
+            children: [(0, y.jsx)("nav", {
+              className: "rockstargames-modules-core-gif-viewerb1552e1f97b08ee4337f78fa4486ffac",
+              children: (0, y.jsx)("div", {
+                className: "rockstargames-modules-core-gif-viewerc5bc9bec611f9f0514176014ce835e1e",
                 "data-logged-in": "false",
-                ref: C,
+                ref: M,
                 style: {
-                  "--scNavWrap-max-height": `${p+S}px`
+                  "--scNavWrap-max-height": `${m+S}px`
                 },
-                children: j.map((e => (0, o.createElement)(Ya, {
+                children: j.map((e => (0, o.createElement)(ds, {
                   ...e,
                   activeSubNavId: c,
                   setActiveSubNavId: l,
-                  setSubNavExtraHeight: g,
+                  setSubNavExtraHeight: u,
                   key: e.text
                 })))
               })
-            }), (0, u.jsx)("div", {
-              className: "rockstargames-sites-red-dead-redemption-2a6c12c94e8656e88958552d645fe51fe",
+            }), (0, y.jsx)("div", {
+              className: "rockstargames-modules-core-gif-viewera6c12c94e8656e88958552d645fe51fe",
               style: {
-                visibility: _ ? null : "hidden"
+                visibility: f ? null : "hidden"
               },
-              children: (0, u.jsx)(Ha.LanguageSelector, {
+              children: (0, y.jsx)(ns.LanguageSelector, {
                 parent: "header",
                 theme: "sc-menu",
                 languageSelectorOpened: i,
@@ -6543,83 +6733,83 @@ _global.SENTRY_RELEASE = {
             })]
           })
         },
-        Qa = e => {
+        us = e => {
           let {
             characterData: t,
             setMobileCardWidth: s,
             tabIndex: r
           } = e;
-          const i = (0, d.useIntl)(),
+          const i = (0, d.c)(),
             {
               currentCharId: n,
               setCurrentCharId: c
-            } = (0, F.useRockstarUserState)(),
+            } = (0, se.useRockstarUserState)(),
             {
               track: l
-            } = (0, F.useGtmTrack)(),
+            } = (0, se.useGtmTrack)(),
             m = (0, o.createRef)(),
             {
-              platform: p,
+              platform: u,
               platformUsername: g,
               mugshotUrl: f,
-              stats: _
+              stats: p
             } = t,
-            [h, k] = (0, o.useState)(f),
-            [b] = (0, o.useState)(t.index),
-            v = ja(p, "large"),
-            x = n === t.index;
+            [_, h] = (0, o.useState)(f),
+            [v] = (0, o.useState)(t.index),
+            k = Ra(u, "large"),
+            b = n === t.index;
           return (0, o.useEffect)((() => {
             m.current && s && s(m?.current?.offsetWidth)
-          }), [m]), (0, u.jsxs)("button", {
-            className: "rockstargames-sites-red-dead-redemption-2d76e785563451a50438064ac368aae4b",
+          }), [m]), (0, y.jsxs)("button", {
+            className: "rockstargames-modules-core-gif-viewerd76e785563451a50438064ac368aae4b",
             type: "button",
-            "aria-hidden": x,
+            "aria-hidden": b,
             onClick: e => {
-              e.stopPropagation(), c(b);
+              e.stopPropagation(), c(v);
               let t = "";
-              "pc" === p ? t = "PC" : "ps4" === p ? t = "PS4" : "ps5" === p ? t = "PS5" : "xboxone" === p ? t = "Xbox One" : "xboxsx" === p && (t = "Xbox Series X|S"), l({
+              "pc" === u ? t = "PC" : "ps4" === u ? t = "PS4" : "ps5" === u ? t = "PS5" : "xboxone" === u ? t = "Xbox One" : "xboxsx" === u && (t = "Xbox Series X|S"), l({
                 event: "character_selector_select",
                 event_action: "select",
                 event_category: "character_selector",
                 event_label: t,
-                position: b
+                position: v
               })
             },
             ref: m,
             tabIndex: r,
-            children: [(0, u.jsx)("div", {
-              className: "rockstargames-sites-red-dead-redemption-2bbdf69fe97471593355fc51ec9a6d13a",
+            children: [(0, y.jsx)("div", {
+              className: "rockstargames-modules-core-gif-viewerbbdf69fe97471593355fc51ec9a6d13a",
               "data-size": "small",
-              children: (0, u.jsx)("img", {
-                src: h,
-                alt: i.formatMessage(Ta.profile_selector_mugshot, {
+              children: (0, y.jsx)("img", {
+                src: _,
+                alt: i.formatMessage($a.profile_selector_mugshot, {
                   userName: g
                 }),
                 onError: () => {
-                  k(a(71084))
+                  h(a(71084))
                 }
               })
-            }), (0, u.jsxs)("div", {
-              className: "rockstargames-sites-red-dead-redemption-2c0dc303ef48255c09faa4ad2f4e953e7",
-              children: [(0, u.jsxs)("div", {
-                className: "rockstargames-sites-red-dead-redemption-2e9fbbbcea66d86dbd58b8548a5f6bea8",
-                children: [(0, u.jsx)("img", {
-                  src: v.src,
-                  alt: v.alt
-                }), (0, u.jsx)("div", {
-                  className: "rockstargames-sites-red-dead-redemption-2b3726d8b480695f64fddc723c6f35205",
+            }), (0, y.jsxs)("div", {
+              className: "rockstargames-modules-core-gif-viewerc0dc303ef48255c09faa4ad2f4e953e7",
+              children: [(0, y.jsxs)("div", {
+                className: "rockstargames-modules-core-gif-viewere9fbbbcea66d86dbd58b8548a5f6bea8",
+                children: [(0, y.jsx)("img", {
+                  src: k.src,
+                  alt: k.alt
+                }), (0, y.jsx)("div", {
+                  className: "rockstargames-modules-core-gif-viewerb3726d8b480695f64fddc723c6f35205",
                   "data-size": "small",
                   children: g
                 })]
-              }), (0, u.jsx)("div", {
-                className: "rockstargames-sites-red-dead-redemption-2a5e3df42966a50f3dd88bbcb57536617",
-                children: (0, u.jsxs)("div", {
-                  className: "rockstargames-sites-red-dead-redemption-2a6776312350028898320ba59145a39be",
-                  children: [(0, u.jsx)("img", {
-                    className: "rockstargames-sites-red-dead-redemption-2b266652910ad34c0e8e097b212a958f0",
-                    src: Sa(_.overview.rank.value),
-                    alt: i.formatMessage(Ta.profile_selector_rp_icon)
-                  }), (0, u.jsx)("span", {
+              }), (0, y.jsx)("div", {
+                className: "rockstargames-modules-core-gif-viewera5e3df42966a50f3dd88bbcb57536617",
+                children: (0, y.jsxs)("div", {
+                  className: "rockstargames-modules-core-gif-viewera6776312350028898320ba59145a39be",
+                  children: [(0, y.jsx)("img", {
+                    className: "rockstargames-modules-core-gif-viewerb266652910ad34c0e8e097b212a958f0",
+                    src: Fa(p.overview.rank.value),
+                    alt: i.formatMessage($a.profile_selector_rp_icon)
+                  }), (0, y.jsx)("span", {
                     children: t.stats.overview.rank.value
                   })]
                 })
@@ -6627,48 +6817,48 @@ _global.SENTRY_RELEASE = {
             })]
           })
         },
-        Za = {
-          pillBtn: "rockstargames-sites-red-dead-redemption-2d9464c4b4d92881abe5578988bd68af7",
-          selected: "rockstargames-sites-red-dead-redemption-2bc0a950bffee0ee9e28213912da51427",
-          scProfileDetails: "rockstargames-sites-red-dead-redemption-2b954455f6ff25f2350e1a0960ba97d3e",
-          scAvatar: "rockstargames-sites-red-dead-redemption-2c15a60de0fc8df4960d84ab96caa8a62",
-          scAvatarPlatform: "rockstargames-sites-red-dead-redemption-2a8f66dccf33827dc81107cae3196cfbe",
-          scProfileStats: "rockstargames-sites-red-dead-redemption-2c91f8623fa10edbeba8c79c7d6b26a28",
-          scNames: "rockstargames-sites-red-dead-redemption-2da83fc27513bcac6a8a31eadc89b1c2c",
-          scTagsNames: "rockstargames-sites-red-dead-redemption-2d7ce73d22672e2e2f59e9193c2632531",
-          scUserName: "rockstargames-sites-red-dead-redemption-2d5814836ce152affaa22d226819b5b12",
-          scCrewName: "rockstargames-sites-red-dead-redemption-2b7777817be6d756cc2d1585c1377734c",
-          scCrewRankBar: "rockstargames-sites-red-dead-redemption-2a581d240520cf347e5ff5f6a62a36a97",
-          scCrewRankBarItem: "rockstargames-sites-red-dead-redemption-2bdb056c03ef06b99d69426c87cec67c5",
-          scProgress: "rockstargames-sites-red-dead-redemption-2dc3020fbe81a916a8da4719ef052c278",
-          scRpLevel: "rockstargames-sites-red-dead-redemption-2b2ea0e0d19182355913368bf7be016b8",
-          scRpIcon: "rockstargames-sites-red-dead-redemption-2f17a712b43b5234c07dc44f674433cf6",
-          scMoney: "rockstargames-sites-red-dead-redemption-2f14849be516f588e1bc9e252a109c76f",
-          scCash: "rockstargames-sites-red-dead-redemption-2b3e35cdc6557f7c3886700245af352dd",
-          scBank: "rockstargames-sites-red-dead-redemption-2ec696aafed90a7a4c69dc53da0a5bb36"
+        gs = {
+          pillBtn: "rockstargames-modules-core-gif-viewerd9464c4b4d92881abe5578988bd68af7",
+          selected: "rockstargames-modules-core-gif-viewerbc0a950bffee0ee9e28213912da51427",
+          scProfileDetails: "rockstargames-modules-core-gif-viewerb954455f6ff25f2350e1a0960ba97d3e",
+          scAvatar: "rockstargames-modules-core-gif-viewerc15a60de0fc8df4960d84ab96caa8a62",
+          scAvatarPlatform: "rockstargames-modules-core-gif-viewera8f66dccf33827dc81107cae3196cfbe",
+          scProfileStats: "rockstargames-modules-core-gif-viewerc91f8623fa10edbeba8c79c7d6b26a28",
+          scNames: "rockstargames-modules-core-gif-viewerda83fc27513bcac6a8a31eadc89b1c2c",
+          scTagsNames: "rockstargames-modules-core-gif-viewerd7ce73d22672e2e2f59e9193c2632531",
+          scUserName: "rockstargames-modules-core-gif-viewerd5814836ce152affaa22d226819b5b12",
+          scCrewName: "rockstargames-modules-core-gif-viewerb7777817be6d756cc2d1585c1377734c",
+          scCrewRankBar: "rockstargames-modules-core-gif-viewera581d240520cf347e5ff5f6a62a36a97",
+          scCrewRankBarItem: "rockstargames-modules-core-gif-viewerbdb056c03ef06b99d69426c87cec67c5",
+          scProgress: "rockstargames-modules-core-gif-viewerdc3020fbe81a916a8da4719ef052c278",
+          scRpLevel: "rockstargames-modules-core-gif-viewerb2ea0e0d19182355913368bf7be016b8",
+          scRpIcon: "rockstargames-modules-core-gif-viewerf17a712b43b5234c07dc44f674433cf6",
+          scMoney: "rockstargames-modules-core-gif-viewerf14849be516f588e1bc9e252a109c76f",
+          scCash: "rockstargames-modules-core-gif-viewerb3e35cdc6557f7c3886700245af352dd",
+          scBank: "rockstargames-modules-core-gif-viewerec696aafed90a7a4c69dc53da0a5bb36"
         },
-        Ja = e => {
+        fs = e => {
           let {
             character: t,
             platformTag: s
           } = e;
           const {
             data: r
-          } = (0, F.useRockstarUser)(), {
+          } = (0, se.useRockstarUser)(), {
             track: i
-          } = (0, F.useGtmTrack)(), n = (0, d.useIntl)(), [c, l] = (0, o.useState)([]), [m, p] = (0, o.useState)(null), [g, f] = (0, o.useState)(null), [_, h] = (0, o.useState)(!1), [k, b] = (0, o.useState)(-1), [v, x] = (0, o.useState)([]), [y, w] = (0, o.useState)(0), N = a(71084), [j, S] = (0, o.useState)("0"), [T, C] = (0, o.useState)("0"), M = e => parseInt(e, 10).toLocaleString("en-US", {
+          } = (0, se.useGtmTrack)(), n = (0, d.c)(), [c, l] = (0, o.useState)([]), [m, u] = (0, o.useState)(null), [g, f] = (0, o.useState)(null), [p, _] = (0, o.useState)(!1), [h, v] = (0, o.useState)(-1), [k, b] = (0, o.useState)([]), [w, x] = (0, o.useState)(0), N = a(71084), [j, S] = (0, o.useState)("0"), [T, C] = (0, o.useState)("0"), M = e => parseInt(e, 10).toLocaleString("en-US", {
             minimumFractionDigits: 0
           }), I = () => {
-            L((0, u.jsx)("img", {
+            L((0, y.jsx)("img", {
               src: N,
-              alt: n.formatMessage(Ta.profile_selector_mugshot, {
+              alt: n.formatMessage($a.profile_selector_mugshot, {
                 userName: r.nickname
               })
             }))
-          }, [E, L] = (0, o.useState)((0, u.jsx)("img", {
-            className: Za.scAvatarImg,
+          }, [E, L] = (0, o.useState)((0, y.jsx)("img", {
+            className: gs.scAvatarImg,
             src: t.mugshotUrl,
-            alt: n.formatMessage(Ta.profile_selector_mugshot, {
+            alt: n.formatMessage($a.profile_selector_mugshot, {
               userName: r.nickname
             }),
             onError: I
@@ -6676,26 +6866,26 @@ _global.SENTRY_RELEASE = {
           (0, o.useEffect)((() => {
             l(r.crews ?? [])
           }), [r]), (0, o.useEffect)((() => {
-            L((0, u.jsx)("img", {
+            L((0, y.jsx)("img", {
               src: t.mugshotUrl,
               alt: r.nickname,
               onError: I
-            })), S(M(t.stats.overview.bank.value)), C(M(t.stats.overview.cash.value)), w(parseInt(t.stats.overview.rank.value))
+            })), S(M(t.stats.overview.bank.value)), C(M(t.stats.overview.cash.value)), x(parseInt(t.stats.overview.rank.value))
           }), [t, r]), (0, o.useEffect)((() => {
             c && c.forEach((e => {
-              !0 === e.isPrimary && (p(e.crewTag), f(e.crewColour), b(e.rankOrder), h(!1), !0 === Object.prototype.hasOwnProperty.call(e, "crewType") && "rockstar" === e.crewType && h(!0))
+              !0 === e.isPrimary && (u(e.crewTag), f(e.crewColour), v(e.rankOrder), _(!1), !0 === Object.prototype.hasOwnProperty.call(e, "crewType") && "rockstar" === e.crewType && _(!0))
             }))
           }), [c]), (0, o.useEffect)((() => {
             const e = [];
-            if (!_ && k > -1)
-              for (let t = 5; t > k; t -= 1) e.push((0, u.jsx)("div", {
-                className: Za.scCrewRankBarItem,
+            if (!p && h > -1)
+              for (let t = 5; t > h; t -= 1) e.push((0, y.jsx)("div", {
+                className: gs.scCrewRankBarItem,
                 style: {
                   backgroundColor: null !== g ? g : ""
                 }
               }, `crewrankbar-${t}`));
-            x(e)
-          }), [k, _, g]);
+            b(e)
+          }), [h, p, g]);
           const z = e => {
             e.stopPropagation(), i({
               event: "character_selector_profile_click",
@@ -6705,58 +6895,58 @@ _global.SENTRY_RELEASE = {
               link_url: void 0
             })
           };
-          return (0, u.jsxs)("div", {
-            className: Za.scProfileDetails,
+          return (0, y.jsxs)("div", {
+            className: gs.scProfileDetails,
             onClick: z,
             onKeyUp: z,
             role: "button",
             tabIndex: -1,
-            children: [(0, u.jsxs)("div", {
-              className: Za.scAvatar,
-              children: [E, (0, u.jsx)("div", {
-                className: Za.scAvatarPlatform,
+            children: [(0, y.jsxs)("div", {
+              className: gs.scAvatar,
+              children: [E, (0, y.jsx)("div", {
+                className: gs.scAvatarPlatform,
                 "data-platform": t.platform,
-                children: (0, u.jsx)("img", {
+                children: (0, y.jsx)("img", {
                   src: s.src,
                   alt: s.alt
                 })
               })]
-            }), (0, u.jsxs)("div", {
-              className: Za.scProfileStats,
-              children: [(0, u.jsx)("div", {
-                className: Za.scNames,
-                children: (0, u.jsxs)("div", {
-                  className: Za.scTagsNames,
-                  children: [(0, u.jsx)("span", {
-                    className: Za.scUserName,
+            }), (0, y.jsxs)("div", {
+              className: gs.scProfileStats,
+              children: [(0, y.jsx)("div", {
+                className: gs.scNames,
+                children: (0, y.jsxs)("div", {
+                  className: gs.scTagsNames,
+                  children: [(0, y.jsx)("span", {
+                    className: gs.scUserName,
                     children: t.platformUsername
-                  }), m && (0, u.jsxs)("span", {
-                    className: Za.scCrewName,
-                    "data-arrow-tag": _,
-                    children: [m, !_ && (0, u.jsx)("div", {
-                      className: Za.scCrewRankBar,
-                      children: v
+                  }), m && (0, y.jsxs)("span", {
+                    className: gs.scCrewName,
+                    "data-arrow-tag": p,
+                    children: [m, !p && (0, y.jsx)("div", {
+                      className: gs.scCrewRankBar,
+                      children: k
                     })]
                   })]
                 })
-              }), (0, u.jsxs)("div", {
-                className: Za.scProgress,
-                children: [(0, u.jsxs)("div", {
-                  className: Za.scRpLevel,
-                  children: [(0, u.jsx)("img", {
-                    className: Za.scRpIcon,
-                    src: Sa(y),
-                    alt: n.formatMessage(Ta.profile_selector_rp_icon)
-                  }), (0, u.jsx)("span", {
+              }), (0, y.jsxs)("div", {
+                className: gs.scProgress,
+                children: [(0, y.jsxs)("div", {
+                  className: gs.scRpLevel,
+                  children: [(0, y.jsx)("img", {
+                    className: gs.scRpIcon,
+                    src: Fa(w),
+                    alt: n.formatMessage($a.profile_selector_rp_icon)
+                  }), (0, y.jsx)("span", {
                     children: t.stats.overview.rank.value
                   })]
-                }), (0, u.jsxs)("div", {
-                  className: Za.scMoney,
-                  children: [(0, u.jsxs)("span", {
-                    className: Za.scCash,
+                }), (0, y.jsxs)("div", {
+                  className: gs.scMoney,
+                  children: [(0, y.jsxs)("span", {
+                    className: gs.scCash,
                     children: ["$", T]
-                  }), (0, u.jsxs)("span", {
-                    className: Za.scBank,
+                  }), (0, y.jsxs)("span", {
+                    className: gs.scBank,
                     children: ["$", j]
                   })]
                 })]
@@ -6764,7 +6954,7 @@ _global.SENTRY_RELEASE = {
             })]
           })
         },
-        es = (e, t) => {
+        ps = (e, t) => {
           const [a, s] = (0, o.useState)(0);
           return (0, o.useEffect)((() => {
             if (e.current) {
@@ -6782,7 +6972,7 @@ _global.SENTRY_RELEASE = {
             }
           }), [e]), a
         },
-        ts = e => {
+        _s = e => {
           let {
             dragThreshold: t = 80,
             interactionDelay: a = 1e3,
@@ -6790,45 +6980,45 @@ _global.SENTRY_RELEASE = {
             slideChangeCallback: r = null,
             slideClickCallback: i = null,
             children: n = [],
-            disablePager: d = !1,
-            disableSwiper: c = !1
+            disablePager: c = !1,
+            disableSwiper: l = !1
           } = e;
-          const l = (0, o.createRef)(),
-            m = es(l, !1),
-            [p, g] = (0, o.useState)(!1),
-            [f, _] = (0, o.useState)(0),
-            [h, k] = (0, o.useState)(0),
-            [b, v] = (0, o.useState)([s]),
-            [x, y] = (0, o.useState)(b[0]),
-            [w, N] = (0, o.useState)(252),
+          const d = (0, o.createRef)(),
+            m = ps(d, !1),
+            [u, g] = (0, o.useState)(!1),
+            [f, p] = (0, o.useState)(0),
+            [_, h] = (0, o.useState)(0),
+            [v, k] = (0, o.useState)([s]),
+            [b, w] = (0, o.useState)(v[0]),
+            [x, N] = (0, o.useState)(252),
             [j, S] = (0, o.useState)(0),
             [T, C] = (0, o.useState)([]),
             [M, I] = (0, o.useState)([]),
             [E, L] = (0, o.useState)(!1),
             z = e => {
-              if (!0 === p || !0 === c) return;
+              if (!0 === u || !0 === l) return;
               const t = void 0 !== e.changedTouches ? e.touches[0].screenX : e.screenX;
-              k(t)
+              h(t)
             },
             P = e => {
-              if (!0 === p || 0 === h || !0 === c) return;
+              if (!0 === u || 0 === _ || !0 === l) return;
               const a = void 0 !== e.changedTouches ? e.changedTouches[0].screenX : e.screenX,
-                s = a > h ? 1 : -1,
-                i = Math.abs(h - a);
+                s = a > _ ? 1 : -1,
+                i = Math.abs(_ - a);
               i > t ? (s > 0 ? (() => {
-                if (!0 === p) return;
+                if (!0 === u) return;
                 g(!0);
                 const e = f - 1 < 0 ? 0 : f - 1;
-                _(e), y(b[e]), r && r(e)
+                p(e), w(v[e]), r && r(e)
               })() : (() => {
-                if (!0 === p) return;
+                if (!0 === u) return;
                 g(!0);
-                let e = f + 1 >= b.length ? b.length - 1 : f + 1;
-                e < 0 && (e = 0), _(e), y(b[e]), r && r(e)
-              })(), k(0)) : y(b[f] + i * s)
+                let e = f + 1 >= v.length ? v.length - 1 : f + 1;
+                e < 0 && (e = 0), p(e), w(v[e]), r && r(e)
+              })(), h(0)) : w(v[f] + i * s)
             },
             O = () => {
-              !0 !== p && !0 !== c && (g(!0), !0 !== p && (y(b[f]), k(0)))
+              !0 !== u && !0 !== l && (g(!0), !0 !== u && (w(v[f]), h(0)))
             };
           return (0, o.useEffect)((() => {
             const e = [];
@@ -6843,16 +7033,16 @@ _global.SENTRY_RELEASE = {
               a = Number(window.getComputedStyle(e).marginLeft.replace("px", ""));
             S(a + t)
           }), [T]), (0, o.useEffect)((() => {
-            !1 !== p && setTimeout((() => {
+            !1 !== u && setTimeout((() => {
               g(!1)
             }), a)
-          }), [p, a]), (0, o.useEffect)((() => {
-            v(n.map(((e, t) => (e => {
+          }), [u, a]), (0, o.useEffect)((() => {
+            k(n.map(((e, t) => (e => {
               let t = 0;
               const a = n.length;
-              return 1 === a ? .5 * m - .5 * w - 2 * s + j : (0 === e && (t = s - e * w), e === a - 1 && a > 1 && (t = a * w * -1 + (m - (s - j))), e > 0 && e < a - 1 && (t = e * w * -1 + (.5 * m - .5 * w + .5 * j)), t)
+              return 1 === a ? .5 * m - .5 * x - 2 * s + j : (0 === e && (t = s - e * x), e === a - 1 && a > 1 && (t = a * x * -1 + (m - (s - j))), e > 0 && e < a - 1 && (t = e * x * -1 + (.5 * m - .5 * x + .5 * j)), t)
             })(t)))), 1 === n.length ? L(!0) : L(!1)
-          }), [l.current, n, m]), (0, o.useEffect)((() => {
+          }), [d.current, n, m]), (0, o.useEffect)((() => {
             const e = (t = f, n.map(((e, a) => {
               const s = {
                 active: !1
@@ -6862,11 +7052,11 @@ _global.SENTRY_RELEASE = {
             var t;
             I(e)
           }), [n, f]), (0, o.useEffect)((() => {
-            !0 !== d && !0 !== c || y(b[0])
-          }), [c, d, b]), (0, u.jsxs)(u.Fragment, {
-            children: [(0, u.jsx)("div", {
-              className: "rockstargames-sites-red-dead-redemption-2ab70c3f9c67ecd69d19216a5f4de5049",
-              ref: l,
+            !0 !== c && !0 !== l || w(v[0])
+          }), [l, c, v]), (0, y.jsxs)(y.Fragment, {
+            children: [(0, y.jsx)("div", {
+              className: "rockstargames-modules-core-gif-viewerab70c3f9c67ecd69d19216a5f4de5049",
+              ref: d,
               onTouchStart: z,
               onTouchMove: P,
               onTouchEnd: O,
@@ -6879,42 +7069,42 @@ _global.SENTRY_RELEASE = {
               onKeyPress: () => null,
               tabIndex: -1,
               role: "presentation",
-              children: (0, u.jsx)("div", {
-                className: "rockstargames-sites-red-dead-redemption-2a93be1084a583cafa7f3f97a8ce8a6be",
-                "data-interaction-blocked": p,
+              children: (0, y.jsx)("div", {
+                className: "rockstargames-modules-core-gif-viewera93be1084a583cafa7f3f97a8ce8a6be",
+                "data-interaction-blocked": u,
                 "data-single-item": E,
                 style: {
-                  transform: E ? null : `translateX(${x}px)`
+                  transform: E ? null : `translateX(${b}px)`
                 },
-                children: n.map(((e, t) => (0, u.jsx)("div", {
-                  className: "rockstargames-sites-red-dead-redemption-2c013369a930e076d1729d086fb51903e",
+                children: n.map(((e, t) => (0, y.jsx)("div", {
+                  className: "rockstargames-modules-core-gif-viewerc013369a930e076d1729d086fb51903e",
                   ref: T[t],
                   children: e
                 }, `csItem-${e?.props?.characterData?.mugshotUrl}`)))
               })
-            }), M.length > 1 && !1 === d && (0, u.jsx)("div", {
-              className: "rockstargames-sites-red-dead-redemption-2da8cfef07bf44e9a44839e2723ec61bb",
-              children: M.map((e => (0, u.jsx)("div", {
-                className: "rockstargames-sites-red-dead-redemption-2fe87ea0922034610a1f6cb3a4edbe195",
+            }), M.length > 1 && !1 === c && (0, y.jsx)("div", {
+              className: "rockstargames-modules-core-gif-viewerda8cfef07bf44e9a44839e2723ec61bb",
+              children: M.map((e => (0, y.jsx)("div", {
+                className: "rockstargames-modules-core-gif-viewerfe87ea0922034610a1f6cb3a4edbe195",
                 "data-active": e.active
               }, e.mugshotUrl)))
             })]
           })
         },
-        as = {
-          pillBtn: "rockstargames-sites-red-dead-redemption-2aa374e2f7806799cb073de8a9b2a2e7d",
-          selected: "rockstargames-sites-red-dead-redemption-2d402a10393179390abdaf3684a02f1ba",
-          scProfile: "rockstargames-sites-red-dead-redemption-2dde9053261079ebfb5d95975239fe87d",
-          scCharacterSelector: "rockstargames-sites-red-dead-redemption-2c47913b4c686bbbc9a0c8ee6ed7666bf",
-          scCharacterSelectBtn: "rockstargames-sites-red-dead-redemption-2a4f9dafe071f5c9a825bf57348835309",
-          open: "rockstargames-sites-red-dead-redemption-2b1f5708c9a0e35681c54a58f04661c1c",
-          scCharacterList: "rockstargames-sites-red-dead-redemption-2a1d1104b9df769c9237fa1a06633ffe7",
-          scNav: "rockstargames-sites-red-dead-redemption-2a326b0feea8d083ed2265571010d79d3",
-          scLanguageSelector: "rockstargames-sites-red-dead-redemption-2d19713d1362bcd54ff539975adbb2ecc",
-          scNavHeader: "rockstargames-sites-red-dead-redemption-2bb74821846f47bbe5fc0896364efd520",
-          scNavWrap: "rockstargames-sites-red-dead-redemption-2a7f1e2d78519eaf099bd43c6ad07abc9"
+        hs = {
+          pillBtn: "rockstargames-modules-core-gif-vieweraa374e2f7806799cb073de8a9b2a2e7d",
+          selected: "rockstargames-modules-core-gif-viewerd402a10393179390abdaf3684a02f1ba",
+          scProfile: "rockstargames-modules-core-gif-viewerdde9053261079ebfb5d95975239fe87d",
+          scCharacterSelector: "rockstargames-modules-core-gif-viewerc47913b4c686bbbc9a0c8ee6ed7666bf",
+          scCharacterSelectBtn: "rockstargames-modules-core-gif-viewera4f9dafe071f5c9a825bf57348835309",
+          open: "rockstargames-modules-core-gif-viewerb1f5708c9a0e35681c54a58f04661c1c",
+          scCharacterList: "rockstargames-modules-core-gif-viewera1d1104b9df769c9237fa1a06633ffe7",
+          scNav: "rockstargames-modules-core-gif-viewera326b0feea8d083ed2265571010d79d3",
+          scLanguageSelector: "rockstargames-modules-core-gif-viewerd19713d1362bcd54ff539975adbb2ecc",
+          scNavHeader: "rockstargames-modules-core-gif-viewerbb74821846f47bbe5fc0896364efd520",
+          scNavWrap: "rockstargames-modules-core-gif-viewera7f1e2d78519eaf099bd43c6ad07abc9"
         },
-        ss = (0, R.withTranslations)((e => {
+        vs = (0, ae.withTranslations)((e => {
           let {
             sc: t,
             charListHidden: a,
@@ -6923,365 +7113,365 @@ _global.SENTRY_RELEASE = {
             menuPadding: i,
             longCharList: n,
             setLongCharList: c,
-            isMobileMode: l,
-            setIsMobileMode: p
+            isMobileMode: m,
+            setIsMobileMode: u
           } = e;
           const {
-            windowWidth: g,
-            windowHeight: f
-          } = (0, R.useWindowResize)(), _ = (0, d.useIntl)(), {
-            languageSelectorOpened: k,
-            setLanguageSelectorOpened: b,
-            activeSubNavId: v,
-            setActiveSubNavId: x,
-            subNavExtraHeight: y,
-            setSubNavExtraHeight: w,
-            scNavOpened: N,
-            setScNavOpened: j
-          } = $a(), [S, T] = (0, o.useState)(""), C = (0, m.useLocation)(), {
-            lsSettings: M
-          } = (0, R.useRockstarWebLSSettings)(), {
-            track: I
-          } = (0, F.useGtmTrack)(), E = (0, h.useRockstarTokenPing)(), {
-            data: L,
-            loggedIn: z
-          } = (0, F.useRockstarUser)(), {
-            charactersNeeded: P,
-            currentCharId: O,
-            hasNotifications: A,
-            navOpen: D,
-            setCurrentCharId: B,
-            setHasNotifications: V,
-            setSelectedCharacterTuple: $,
-            setUserData: U
-          } = (0, F.useRockstarUserState)(), [G, H] = (0, o.useState)(null), [q, W] = (0, o.useState)(null), [X, Y] = (0, o.useState)(!1), [K, Q] = (0, o.useState)(!1), [Z, J] = (0, o.useState)(0), ee = (0, o.createRef)(), te = es(ee, !1), ae = (0, o.createRef)(), [se, re] = (0, o.useState)(0), [ie, ne] = (0, o.useState)([]), [oe, de] = (0, o.useState)(244), ce = (0, o.useRef)(null), le = (0, o.useMemo)((() => (0, ft.c)()), []), me = (0, o.useMemo)((() => ((e, t, a, s, r) => [{
-            text: e.formatMessage(Ta.sc_link_activity_feed),
+            windowWidth: f,
+            windowHeight: _
+          } = (0, ae.useWindowResize)(), h = (0, d.c)(), {
+            languageSelectorOpened: v,
+            setLanguageSelectorOpened: k,
+            activeSubNavId: b,
+            setActiveSubNavId: w,
+            subNavExtraHeight: x,
+            setSubNavExtraHeight: N,
+            scNavOpened: j,
+            setScNavOpened: S
+          } = ss(), [T, M] = (0, o.useState)(""), I = (0, C.useLocation)(), {
+            lsSettings: E
+          } = (0, ae.useRockstarWebLSSettings)(), {
+            track: L
+          } = (0, se.useGtmTrack)(), P = (0, z.useRockstarTokenPing)(), {
+            data: O,
+            loggedIn: D
+          } = (0, se.useRockstarUser)(), {
+            charactersNeeded: A,
+            currentCharId: B,
+            hasNotifications: V,
+            navOpen: R,
+            setCurrentCharId: F,
+            setHasNotifications: $,
+            setSelectedCharacterTuple: U,
+            setUserData: G
+          } = (0, se.useRockstarUserState)(), [H, q] = (0, o.useState)(null), [W, X] = (0, o.useState)(null), [Y, K] = (0, o.useState)(!1), [Q, Z] = (0, o.useState)(!1), [J, ee] = (0, o.useState)(0), te = (0, o.createRef)(), re = ps(te, !1), ie = (0, o.createRef)(), [ne, oe] = (0, o.useState)(0), [ce, le] = (0, o.useState)([]), [de, me] = (0, o.useState)(244), ue = (0, o.useRef)(null), ge = (0, o.useMemo)((() => p()), []), fe = (0, o.useMemo)((() => ((e, t, a, s, r) => [{
+            text: e.formatMessage($a.sc_link_activity_feed),
             location: {
-              domain: ft.U.socialClub,
+              domain: g,
               path: "/"
             },
             target: "_self",
             ga: {
-              ...qa,
-              text: Ta.sc_link_activity_feed.defaultMessage
+              ...os,
+              text: $a.sc_link_activity_feed.defaultMessage
             },
             dataTestId: "activityFeedLink"
           }, {
-            text: e.formatMessage(Ta.sc_link_account),
+            text: e.formatMessage($a.sc_link_account),
             target: "_self",
             dataTestId: "accountButton",
             children: [{
-              text: e.formatMessage(Ta.sc_link_settings),
+              text: e.formatMessage($a.sc_link_settings),
               location: {
-                domain: ft.U.socialClub,
+                domain: g,
                 path: "/settings"
               },
               target: "_self",
               ga: {
-                ...qa,
-                text: Ta.sc_link_settings.defaultMessage
+                ...os,
+                text: $a.sc_link_settings.defaultMessage
               },
               dataTestId: "settingsLink"
             }, {
-              text: e.formatMessage(Ta.sc_link_view_my_profile),
+              text: e.formatMessage($a.sc_link_view_my_profile),
               href: a.profile_link,
               target: "_self",
               ga: {
-                ...qa,
-                text: Ta.sc_link_view_my_profile.defaultMessage
+                ...os,
+                text: $a.sc_link_view_my_profile.defaultMessage
               },
               dataTestId: "viewMyProfileLink"
             }, {
-              text: e.formatMessage(Ta.sc_link_messages),
+              text: e.formatMessage($a.sc_link_messages),
               location: {
-                domain: ft.U.socialClub,
+                domain: g,
                 path: "/message"
               },
               target: "_self",
               ga: {
-                ...qa,
-                text: Ta.sc_link_messages.defaultMessage
+                ...os,
+                text: $a.sc_link_messages.defaultMessage
               },
               dataTestId: "messagesLink"
             }, {
-              text: e.formatMessage(Ta.sc_link_game_activation),
+              text: e.formatMessage($a.sc_link_game_activation),
               location: {
-                domain: ft.U.socialClub,
+                domain: g,
                 path: "/activate"
               },
               target: "_self",
               ga: {
-                ...qa,
-                text: Ta.sc_link_game_activation.defaultMessage
+                ...os,
+                text: $a.sc_link_game_activation.defaultMessage
               },
               dataTestId: "gameActivationLink"
             }]
           }, {
-            text: e.formatMessage(Ta.sc_link_notifications),
+            text: e.formatMessage($a.sc_link_notifications),
             location: {
-              domain: ft.U.socialClub,
+              domain: g,
               path: "/notifications"
             },
             target: "_self",
             hasNotifications: s,
             ga: {
-              ...qa,
-              text: Ta.sc_link_notifications.defaultMessage,
+              ...os,
+              text: $a.sc_link_notifications.defaultMessage,
               location: {
-                domain: ft.U.socialClub,
+                domain: g,
                 path: "/notifications"
               }
             },
             dataTestId: "notificationsLink"
           }, {
-            text: e.formatMessage(Ta.sc_link_crews),
+            text: e.formatMessage($a.sc_link_crews),
             location: {
-              domain: ft.U.socialClub,
+              domain: g,
               path: `/member/${a.nickname}/crews`
             },
             target: "_self",
             ga: {
-              ...qa,
-              text: Ta.sc_link_crews.defaultMessage
+              ...os,
+              text: $a.sc_link_crews.defaultMessage
             },
             dataTestId: "crewsLink"
           }, {
-            text: e.formatMessage(Ta.sc_link_friends),
+            text: e.formatMessage($a.sc_link_friends),
             target: "_self",
             dataTestId: "friendsButton",
             children: [{
-              text: e.formatMessage(Ta.sc_link_my_friends),
+              text: e.formatMessage($a.sc_link_my_friends),
               location: {
-                domain: ft.U.socialClub,
+                domain: g,
                 path: `/member/${a.nickname}/friends`
               },
               target: "_self",
               ga: {
-                ...qa,
-                text: Ta.sc_link_my_friends.defaultMessage
+                ...os,
+                text: $a.sc_link_my_friends.defaultMessage
               },
               dataTestId: "myFriendsLink"
             }, {
-              text: e.formatMessage(Ta.sc_link_import_friends),
+              text: e.formatMessage($a.sc_link_import_friends),
               location: {
-                domain: ft.U.socialClub,
+                domain: g,
                 path: "/friends/import"
               },
               target: "_self",
               ga: {
-                ...qa,
-                text: Ta.sc_link_import_friends.defaultMessage
+                ...os,
+                text: $a.sc_link_import_friends.defaultMessage
               },
               dataTestId: "importFriendsLink"
             }, {
-              text: e.formatMessage(Ta.sc_link_find_friends),
+              text: e.formatMessage($a.sc_link_find_friends),
               location: {
-                domain: ft.U.socialClub,
+                domain: g,
                 path: "/members"
               },
               target: "_self",
               ga: {
-                ...qa,
-                text: Ta.sc_link_import_friends.defaultMessage
+                ...os,
+                text: $a.sc_link_import_friends.defaultMessage
               },
               dataTestId: "findFriendsLink"
             }]
-          }, Wa(e), {
-            text: e.formatMessage(Ta.sc_link_log_out),
+          }, cs(e), {
+            text: e.formatMessage($a.sc_link_log_out),
             href: `${t.logout}?returnUrl=${r}`,
             target: "_self",
             reloadDocument: !0,
             ga: {
-              ...qa,
-              text: Ta.sc_link_log_out.defaultMessage
+              ...os,
+              text: $a.sc_link_log_out.defaultMessage
             },
             dataTestId: "logoutButton"
-          }])(_, t, L, A, S, window)), [_, t, L, A, S, le]), pe = () => {
-            Q(i + oe * Z < te)
-          }, ue = () => {
-            if (ae.current) {
+          }])(h, t, O, V, T, window)), [h, t, O, V, T, ge]), pe = () => {
+            Z(i + de * J < re)
+          }, _e = () => {
+            if (ie.current) {
               const {
                 current: e
-              } = ae, t = e?.scrollHeight, a = window.getComputedStyle(e);
+              } = ie, t = e?.scrollHeight, a = window.getComputedStyle(e);
               if (a) {
                 let e = 16 * parseInt(a.getPropertyValue("--scSubNav-opened-margin"), 10) * 2;
-                Number.isNaN(e) && (e = 0), re(t + e)
-              } else re(t)
+                Number.isNaN(e) && (e = 0), oe(t + e)
+              } else oe(t)
             }
           };
           return (0, o.useEffect)((() => {
             let e = encodeURIComponent(`${document.location.pathname}${document.location.search}`);
-            le.currentSite?.site === ft.U.socialClub && (e = encodeURIComponent("/")), T(e)
-          }), [C]), (0, o.useEffect)((() => {
-            ne(L.characters[P] ?? [])
-          }), [L, P]), (0, o.useEffect)((() => {
-            L && U(L)
-          }), [L]), (0, o.useEffect)((() => {
-            const e = L?.characters.gtao;
-            if (null !== z && !e.length) return void $(!1);
-            if (null == O || !e.length) return;
-            const t = e?.[O] ?? e?.[0] ?? null;
-            $(!!t?.platform && [t.platform, t.characterSlot])
-          }), [O, L, z]), (0, o.useEffect)((() => {
+            ge.currentSite?.site === g && (e = encodeURIComponent("/")), M(e)
+          }), [I]), (0, o.useEffect)((() => {
+            le(O.characters[A] ?? [])
+          }), [O, A]), (0, o.useEffect)((() => {
+            O && G(O)
+          }), [O]), (0, o.useEffect)((() => {
+            const e = O?.characters.gtao;
+            if (null !== D && !e.length) return void U(!1);
+            if (null == B || !e.length) return;
+            const t = e?.[B] ?? e?.[0] ?? null;
+            U(!!t?.platform && [t.platform, t.characterSlot])
+          }), [B, O, D]), (0, o.useEffect)((() => {
             (async () => {
-              if (!L?.id) return;
+              if (!O?.id) return;
               const {
                 count: e
-              } = await (0, R.coreScApiFetch)("notification/count", {
-                pingBearer: E
+              } = await (0, ae.coreScApiFetch)("notification/count", {
+                pingBearer: P
               });
-              V(e > 0)
+              $(e > 0)
             })()
-          }), [L]), (0, o.useEffect)((() => {
+          }), [O]), (0, o.useEffect)((() => {
             pe()
-          }), [oe]), (0, o.useEffect)((() => {
-            s(!0), p(g < 768), p(g < 768 || f < 649)
-          }), [g, f]), (0, o.useEffect)((() => {
-            let e = ie.length - 1;
-            e < 0 && (e = 0), J(e);
-            const t = ie.length > 0 ? ie[O] ?? ie[0] : null;
+          }), [de]), (0, o.useEffect)((() => {
+            s(!0), u(f < 768), u(f < 768 || _ < 649)
+          }), [f, _]), (0, o.useEffect)((() => {
+            let e = ce.length - 1;
+            e < 0 && (e = 0), ee(e);
+            const t = ce.length > 0 ? ce[B] ?? ce[0] : null;
             if (!t) return;
-            const a = null !== t ? ja(t.platform, "large") : null;
-            W(a), H(t), ie.length > 1 ? Y(!0) : Y(!1), c(ie.length - 1 > 3)
-          }), [O, ie]), (0, o.useEffect)((() => {
+            const a = null !== t ? Ra(t.platform, "large") : null;
+            X(a), q(t), ce.length > 1 ? K(!0) : K(!1), c(ce.length - 1 > 3)
+          }), [B, ce]), (0, o.useEffect)((() => {
             pe()
-          }), [Z, l, g, ie]), (0, o.useEffect)((() => {
-            ue(), Ga()((() => {
-              setTimeout(ue, 0)
+          }), [J, m, f, ce]), (0, o.useEffect)((() => {
+            _e(), is()((() => {
+              setTimeout(_e, 0)
             }), 300)
-          }), [g, f]), (0, o.useEffect)((() => {
-            const e = M?.currentCharId ?? 0;
-            e !== O && B(Math.max(0, Math.min(e, ie.length - 1)))
-          }), [ie, M]), (0, u.jsxs)(u.Fragment, {
-            children: [null !== G && "gtao" === P && (0, u.jsxs)("div", {
-              className: as.scProfile,
-              ref: ce,
+          }), [f, _]), (0, o.useEffect)((() => {
+            const e = E?.currentCharId ?? 0;
+            e !== B && F(Math.max(0, Math.min(e, ce.length - 1)))
+          }), [ce, E]), (0, y.jsxs)(y.Fragment, {
+            children: [null !== H && "gtao" === A && (0, y.jsxs)("div", {
+              className: hs.scProfile,
+              ref: ue,
               tabIndex: -1,
-              "aria-label": _.formatMessage(Ta.profile_selector_profile_card),
-              children: [(0, u.jsx)(Ja, {
-                s: as,
-                character: G,
-                platformTag: q
-              }), !0 === X && (0, u.jsxs)("div", {
-                className: as.scCharacterSelector,
-                children: [(0, u.jsx)("button", {
-                  className: as.scCharacterSelectBtn,
-                  "aria-hidden": !D,
+              "aria-label": h.formatMessage($a.profile_selector_profile_card),
+              children: [(0, y.jsx)(fs, {
+                s: hs,
+                character: H,
+                platformTag: W
+              }), !0 === Y && (0, y.jsxs)("div", {
+                className: hs.scCharacterSelector,
+                children: [(0, y.jsx)("button", {
+                  className: hs.scCharacterSelectBtn,
+                  "aria-hidden": !R,
                   type: "button",
                   onClick: e => {
                     e.stopPropagation();
                     const t = !a;
-                    s(t), I({
+                    s(t), L({
                       event: t ? "character_selector_close" : "character_selector_open",
                       event_action: !0 === t ? "close" : "open",
                       event_category: "character_selector"
                     })
                   },
                   "data-list-closed": a,
-                  children: (0, u.jsx)("span", {
-                    children: (0, u.jsx)(d.FormattedMessage, {
-                      ...Ta.profile_selector_switch_character
+                  children: (0, y.jsx)("span", {
+                    children: (0, y.jsx)(l.c, {
+                      ...$a.profile_selector_switch_character
                     })
                   })
-                }), !1 === l && (0, u.jsx)("div", {
-                  className: as.scCharacterList,
+                }), !1 === m && (0, y.jsx)("div", {
+                  className: hs.scCharacterList,
                   "data-long-list": n,
                   "aria-hidden": a,
                   ref: r,
-                  children: ie.map((e => (0, u.jsx)(Qa, {
+                  children: ce.map((e => (0, y.jsx)(us, {
                     tabIndex: a ? -1 : 0,
                     characterData: e,
-                    setMobileCardWidth: de
+                    setMobileCardWidth: me
                   }, e.mugshotUrl)))
-                }), !0 === l && (0, u.jsx)("div", {
-                  className: as.scCharacterList,
-                  "data-single-item": 2 === ie.length,
-                  "data-swiper-disabled": K,
+                }), !0 === m && (0, y.jsx)("div", {
+                  className: hs.scCharacterList,
+                  "data-single-item": 2 === ce.length,
+                  "data-swiper-disabled": Q,
                   "aria-hidden": a,
-                  ref: ee,
-                  children: (0, u.jsx)(ts, {
+                  ref: te,
+                  children: (0, y.jsx)(_s, {
                     interactionDelay: 350,
                     mobileGutterWidth: 17,
                     dragThreshold: 40,
                     slideChangeCallback: () => {
-                      I({
+                      L({
                         event: "carousel_swipe",
                         event_category: "carousel",
                         event_action: "swipe",
                         event_label: "character_selector"
                       })
                     },
-                    disablePager: K,
-                    disableSwiper: K,
-                    children: ie.filter(((e, t) => t !== O)).map((e => (0, o.createElement)(Qa, {
+                    disablePager: Q,
+                    disableSwiper: Q,
+                    children: ce.filter(((e, t) => t !== B)).map((e => (0, o.createElement)(us, {
                       characterData: e,
-                      setMobileCardWidth: de,
+                      setMobileCardWidth: me,
                       key: e.mugshotUrl,
                       tabIndex: a ? -1 : 0
                     })))
                   })
                 })]
               })]
-            }), (0, u.jsxs)("nav", {
-              className: as.scNav,
-              "aria-hidden": !D,
-              children: [(0, u.jsx)("button", {
-                className: as.scNavHeader,
+            }), (0, y.jsxs)("nav", {
+              className: hs.scNav,
+              "aria-hidden": !R,
+              children: [(0, y.jsx)("button", {
+                className: hs.scNavHeader,
                 type: "button",
-                "data-opened": N,
-                "data-nav-opened": D,
-                tabIndex: N ? -1 : 0,
+                "data-opened": j,
+                "data-nav-opened": R,
+                tabIndex: j ? -1 : 0,
                 onClick: e => {
-                  e.stopPropagation(), N || j(!0)
+                  e.stopPropagation(), j || S(!0)
                 },
                 "data-testid": "playerButton",
-                children: (0, u.jsx)("span", {
-                  children: L.nickname
+                children: (0, y.jsx)("span", {
+                  children: O.nickname
                 })
-              }), (0, u.jsx)("div", {
-                className: as.scNavWrap,
-                "data-opened": N,
+              }), (0, y.jsx)("div", {
+                className: hs.scNavWrap,
+                "data-opened": j,
                 "data-logged-in": "true",
-                ref: ae,
+                ref: ie,
                 style: {
-                  "--scNavWrap-max-height": `${se+y}px`
+                  "--scNavWrap-max-height": `${ne+x}px`
                 },
-                children: me.map(((e, t) => (0, o.createElement)(Ya, {
+                children: fe.map(((e, t) => (0, o.createElement)(ds, {
                   ...e,
                   id: t,
-                  activeSubNavId: v,
-                  setActiveSubNavId: x,
-                  setSubNavExtraHeight: w,
+                  activeSubNavId: b,
+                  setActiveSubNavId: w,
+                  setSubNavExtraHeight: N,
                   key: e.text
                 })))
               })]
-            }), (0, u.jsx)("div", {
-              className: as.scLanguageSelector,
+            }), (0, y.jsx)("div", {
+              className: hs.scLanguageSelector,
               style: {
-                visibility: D ? null : "hidden"
+                visibility: R ? null : "hidden"
               },
-              children: (0, u.jsx)(Ha.LanguageSelector, {
+              children: (0, y.jsx)(ns.LanguageSelector, {
                 parent: "header",
                 theme: "sc-menu",
-                languageSelectorOpened: k,
-                setLanguageSelectorOpened: b
+                languageSelectorOpened: v,
+                setLanguageSelectorOpened: k
               })
             })]
           })
         })),
-        rs = {
-          scMenu: "rockstargames-sites-red-dead-redemption-2ebc4c779cfe9d0b7cfd678424e57370c",
-          pillBtn: "rockstargames-sites-red-dead-redemption-2f333ffbc5b9f9d571b81be0a7235190d",
-          selected: "rockstargames-sites-red-dead-redemption-2e3bdabe09c3d1b98b61f3d0484209912",
-          navOpen: "rockstargames-sites-red-dead-redemption-2ff929155ac480a9cfa5540dfd3e70ae9",
-          dragHandle: "rockstargames-sites-red-dead-redemption-2ba4968108b922dd8165c6e53557f5f2e",
-          dragHandleBtn: "rockstargames-sites-red-dead-redemption-2d362ba3eeee50f90600a413c05761431",
-          scOverlay: "rockstargames-sites-red-dead-redemption-2d8e443f5d0d9171449f5f1042f80aa17"
+        ks = {
+          scMenu: "rockstargames-modules-core-gif-viewerebc4c779cfe9d0b7cfd678424e57370c",
+          pillBtn: "rockstargames-modules-core-gif-viewerf333ffbc5b9f9d571b81be0a7235190d",
+          selected: "rockstargames-modules-core-gif-viewere3bdabe09c3d1b98b61f3d0484209912",
+          navOpen: "rockstargames-modules-core-gif-viewerff929155ac480a9cfa5540dfd3e70ae9",
+          dragHandle: "rockstargames-modules-core-gif-viewerba4968108b922dd8165c6e53557f5f2e",
+          dragHandleBtn: "rockstargames-modules-core-gif-viewerd362ba3eeee50f90600a413c05761431",
+          scOverlay: "rockstargames-modules-core-gif-viewerd8e443f5d0d9171449f5f1042f80aa17"
         },
-        is = (0, d.withIntl)((() => {
+        bs = j((() => {
           const {
             windowHeight: e
-          } = (0, R.useWindowResize)(), t = (0, d.useIntl)(), {
+          } = (0, ae.useWindowResize)(), t = (0, d.c)(), {
             languageSelectorOpened: s,
             setLanguageSelectorOpened: r,
             setActiveSubNavId: i,
@@ -7289,36 +7479,36 @@ _global.SENTRY_RELEASE = {
             setScNavOpened: c,
             charListHidden: l,
             setCharListHidden: m
-          } = $a(), [p, g] = (0, o.useState)(!1), {
+          } = ss(), [u, g] = (0, o.useState)(!1), {
             navHidden: f = !1
-          } = (0, h.useState)(), {
-            loggedIn: _
-          } = (0, F.useRockstarUser)(), {
-            currentCharId: k,
-            navOpen: b,
+          } = (0, z.useState)(), {
+            loggedIn: p
+          } = (0, se.useRockstarUser)(), {
+            currentCharId: _,
+            navOpen: h,
             setNavOpen: v,
-            userData: x
-          } = (0, F.useRockstarUserState)(), {
-            track: y
-          } = (0, F.useGtmTrack)(), [w, N] = (0, o.useState)(!1), j = (0, h.useReactiveVar)(F.scConfig), S = (0, o.useRef)(), [T, C] = (0, o.useState)(0), M = (0, o.createRef)(), [I, E] = (0, o.useState)(!1), [L, z] = (0, o.useState)(0), [P, O] = (0, o.useState)(!1), {
-            mutateLSSettings: A,
-            lsSettings: D
-          } = (0, R.useRockstarWebLSSettings)(), B = (0, o.useCallback)((e => {
-            m(e), S.current && !0 === e && (S.current.scrollTop = 0)
-          }), [S]);
+            userData: k
+          } = (0, se.useRockstarUserState)(), {
+            track: b
+          } = (0, se.useGtmTrack)(), [w, x] = (0, o.useState)(!1), N = (0, z.useReactiveVar)(se.scConfig), j = (0, o.useRef)(), [S, T] = (0, o.useState)(0), C = (0, o.createRef)(), [M, I] = (0, o.useState)(!1), [E, L] = (0, o.useState)(0), [P, O] = (0, o.useState)(!1), {
+            mutateLSSettings: D,
+            lsSettings: A
+          } = (0, ae.useRockstarWebLSSettings)(), B = (0, o.useCallback)((e => {
+            m(e), j.current && !0 === e && (j.current.scrollTop = 0)
+          }), [j]);
           return (0, o.useEffect)((() => {
-            null !== k && D.currentCharId !== k && A({
+            null !== _ && A.currentCharId !== _ && D({
               key: "currentCharId",
-              value: k
-            }), !1 === _ ? A({
+              value: _
+            }), !1 === p ? D({
               key: "currentCharId",
               value: null
-            }) : _ && !x && y({
+            }) : p && !k && b({
               event: "account_synced"
             })
-          }), [k, _]), (0, o.useEffect)((() => {
-            S.current && (!1 === l && !1 === w && (S.current.style.height = `${S.current.scrollHeight}px`), !0 === l && (S.current.style.height = null))
-          }), [l, S, w]), (0, o.useEffect)((() => {
+          }), [_, p]), (0, o.useEffect)((() => {
+            j.current && (!1 === l && !1 === w && (j.current.style.height = `${j.current.scrollHeight}px`), !0 === l && (j.current.style.height = null))
+          }), [l, j, w]), (0, o.useEffect)((() => {
             const e = () => {
                 v(!1), B(!0)
               },
@@ -7331,97 +7521,97 @@ _global.SENTRY_RELEASE = {
           }), []), (0, o.useEffect)((() => {
             v(!1), B(!0)
           }), [f]), (0, o.useEffect)((() => {
-            if (M.current) {
+            if (C.current) {
               const {
                 current: e
-              } = M, t = window.getComputedStyle(e);
-              C(parseInt(t.paddingRight, 10) + parseInt(t.paddingLeft, 10))
+              } = C, t = window.getComputedStyle(e);
+              T(parseInt(t.paddingRight, 10) + parseInt(t.paddingLeft, 10))
             }
-          }), [M]), (0, o.useEffect)((() => {
+          }), [C]), (0, o.useEffect)((() => {
             O(window.navigator.userAgent.includes("Mac"))
           }), []), (0, o.useEffect)((() => {
-            M.current && g(M?.current?.scrollHeight >= e)
-          }), [M, e]), (0, o.useEffect)((() => {
-            b || (i(-1), r(!1))
-          }), [b]), (0, o.useEffect)((() => {
+            C.current && g(C?.current?.scrollHeight >= e)
+          }), [C, e]), (0, o.useEffect)((() => {
+            h || (i(-1), r(!1))
+          }), [h]), (0, o.useEffect)((() => {
             s && (l || B(!0), n && (c(!1), i(-1)))
           }), [s]), (0, o.useEffect)((() => {
             n && (s && r(!1), l || B(!0))
-          }), [n]), null === _ ? null : (0, u.jsxs)(Ia.c, {
-            enabled: !!b,
+          }), [n]), null === p ? null : (0, y.jsxs)(Ha.c, {
+            enabled: !!h,
             removeScrollBar: !1,
-            children: [(0, u.jsxs)("div", {
-              className: [rs.scMenu, b ? rs.navOpen : ""].join(" "),
-              "data-logged-in": _,
+            children: [(0, y.jsxs)("div", {
+              className: [ks.scMenu, h ? ks.navOpen : ""].join(" "),
+              "data-logged-in": p,
               "data-mac-browser": P,
-              "data-scroll-mode": p,
-              ref: M,
-              "aria-hidden": !b,
-              children: [(0, u.jsx)("button", {
-                className: rs.dragHandleBtn,
+              "data-scroll-mode": u,
+              ref: C,
+              "aria-hidden": !h,
+              children: [(0, y.jsx)("button", {
+                className: ks.dragHandleBtn,
                 type: "button",
                 onTouchStart: e => {
                   const t = void 0 !== e.changedTouches ? e.touches[0].screenX : e.screenX;
-                  z(t)
+                  L(t)
                 },
                 onTouchMove: e => {
-                  if (0 === L) return;
+                  if (0 === E) return;
                   const t = void 0 !== e.changedTouches ? e.changedTouches[0].screenX : e.screenX;
-                  Math.abs(L - t) > 1 && (z(0), v(!1))
+                  Math.abs(E - t) > 1 && (L(0), v(!1))
                 },
-                children: (0, u.jsx)("img", {
-                  className: rs.dragHandle,
+                children: (0, y.jsx)("img", {
+                  className: ks.dragHandle,
                   src: a(82708),
-                  alt: t.formatMessage(Ta.sc_menu_drag_handle)
+                  alt: t.formatMessage($a.sc_menu_drag_handle)
                 })
-              }), _ ? (0, u.jsx)(ss, {
-                sc: j,
+              }), p ? (0, y.jsx)(vs, {
+                sc: N,
                 charListHidden: l,
                 hideCharacterList: B,
-                refCharacterListDesktop: S,
-                menuPadding: T,
+                refCharacterListDesktop: j,
+                menuPadding: S,
                 longCharList: w,
-                setLongCharList: N,
-                isMobileMode: I,
-                setIsMobileMode: E
-              }) : (0, u.jsx)(Ka, {
-                sc: j,
-                navOpen: b
+                setLongCharList: x,
+                isMobileMode: M,
+                setIsMobileMode: I
+              }) : (0, y.jsx)(ms, {
+                sc: N,
+                navOpen: h
               })]
-            }), (0, u.jsx)("div", {
-              className: [rs.scOverlay, b ? rs.navOpen : ""].join(" "),
-              "data-logged-in": _
+            }), (0, y.jsx)("div", {
+              className: [ks.scOverlay, h ? ks.navOpen : ""].join(" "),
+              "data-logged-in": p
             })]
           })
-        }), c),
-        ns = a(71084),
-        os = a(29314),
-        ds = (0, d.withIntl)((e => {
+        }), S),
+        ws = a(71084),
+        xs = a(29314),
+        ys = j((e => {
           let {
             setOtherHeaderDropdowns: t
           } = e;
-          const a = (0, d.useIntl)(),
+          const a = (0, d.c)(),
             {
               data: s
-            } = (0, F.useRockstarUser)(),
+            } = (0, se.useRockstarUser)(),
             {
               charactersNeeded: r,
               currentCharId: i,
               navOpen: n,
               setNavOpen: c
-            } = (0, F.useRockstarUserState)(),
+            } = (0, se.useRockstarUserState)(),
             {
               track: l
-            } = (0, F.useGtmTrack)(),
-            [m, p] = (0, o.useState)(null),
+            } = (0, se.useGtmTrack)(),
+            [m, u] = (0, o.useState)(null),
             [g, f] = (0, o.useState)(!1),
-            [_, h] = (0, o.useState)(null),
-            [k, b] = (0, o.useState)(!1),
-            [v, x] = (0, o.useState)([]);
+            [p, _] = (0, o.useState)(null),
+            [h, v] = (0, o.useState)(!1),
+            [k, b] = (0, o.useState)([]);
           (0, o.useEffect)((() => {
-            x(s.characters[r] ?? [])
+            b(s.characters[r] ?? [])
           }), [s, r]);
-          const y = (0, o.useCallback)((e => {
+          const w = (0, o.useCallback)((e => {
             e.stopPropagation(), c(!n), 1 == !n && t(null), l({
               event: "account_menu_click",
               element_placement: "Account Menu",
@@ -7430,48 +7620,48 @@ _global.SENTRY_RELEASE = {
           }), [n]);
           return (0, o.useEffect)((() => {
             const e = s?.id ?? !1,
-              t = e ? (v?.[i]?.mugshotUrl ?? s?.avatar) || ns : os,
-              a = ja(v?.[i]?.platform, "small") ?? null;
-            h(a), p(t), f(e), b(!!v?.[i]?.mugshotUrl)
-          }), [s, v, i, ns, os]), (0, u.jsxs)("button", {
-            className: "rockstargames-sites-red-dead-redemption-2dc519cef2feb621e4715bd3fcdf09791",
-            "data-img-set": k,
-            "aria-label": a.formatMessage(n ? Ta.sc_menu_close : Ta.sc_menu_open),
+              t = e ? (k?.[i]?.mugshotUrl ?? s?.avatar) || ws : xs,
+              a = Ra(k?.[i]?.platform, "small") ?? null;
+            _(a), u(t), f(e), v(!!k?.[i]?.mugshotUrl)
+          }), [s, k, i, ws, xs]), (0, y.jsxs)("button", {
+            className: "rockstargames-modules-core-gif-viewerdc519cef2feb621e4715bd3fcdf09791",
+            "data-img-set": h,
+            "aria-label": a.formatMessage(n ? $a.sc_menu_close : $a.sc_menu_open),
             "aria-expanded": n,
             type: "button",
-            onClick: y,
+            onClick: w,
             "data-testid": "avaterMenuButton",
-            children: [(0, u.jsx)("img", {
-              className: "rockstargames-sites-red-dead-redemption-2ce75eaa6d65692d36b60d31f3f660ff0",
+            children: [(0, y.jsx)("img", {
+              className: "rockstargames-modules-core-gif-viewerce75eaa6d65692d36b60d31f3f660ff0",
               src: m || "",
               onError: () => {
-                p(ns)
+                u(ws)
               },
               alt: s?.nickname || ""
-            }), g && null !== _ && (0, u.jsx)("img", {
-              className: "rockstargames-sites-red-dead-redemption-2aaf21e74a659089f743bb160bdf95046",
-              src: _.src,
-              alt: _.alt
-            }), g && (0, u.jsx)("div", {
+            }), g && null !== p && (0, y.jsx)("img", {
+              className: "rockstargames-modules-core-gif-vieweraaf21e74a659089f743bb160bdf95046",
+              src: p.src,
+              alt: p.alt
+            }), g && (0, y.jsx)("div", {
               "data-ui-name": "avatar",
-              className: "rockstargames-sites-red-dead-redemption-2cf6b9e7404c64067bdfef9b79e9eb287",
-              "data-platform": v?.[i]?.platform ?? null
+              className: "rockstargames-modules-core-gif-viewercf6b9e7404c64067bdfef9b79e9eb287",
+              "data-platform": k?.[i]?.platform ?? null
             })]
           })
-        }), c),
-        cs = {
-          pillBtn: "rockstargames-sites-red-dead-redemption-2b03cc125f63972f13ae84119af852edc",
-          selected: "rockstargames-sites-red-dead-redemption-2fbcf46d7ef0b32e64b374eee6e3cda3e",
-          promoModule: "rockstargames-sites-red-dead-redemption-2a586d11bf592ca821d65db7660518322",
-          promoModuleImage: "rockstargames-sites-red-dead-redemption-2ccd749d613ceb73aedb825d77d22cd0b",
-          gradient: "rockstargames-sites-red-dead-redemption-2e4f178a3d1e3dfef8b42f73eabd9919e",
-          promoModuleContentContainer: "rockstargames-sites-red-dead-redemption-2d8348a62030f7e2f3c7a53cf67bef0f1",
-          left: "rockstargames-sites-red-dead-redemption-2e56a5b7d9a696ea8ca340cc9b67998fc",
-          right: "rockstargames-sites-red-dead-redemption-2c84d09e0c4466d20792d5a9016a00236",
-          promoModuleTextContent: "rockstargames-sites-red-dead-redemption-2bf34746d222495ab8e30cede8de42d71",
-          promoModuleWrapper: "rockstargames-sites-red-dead-redemption-2f6d46a24b050aad98fc3aae387b75586"
+        }), S),
+        Ns = {
+          pillBtn: "rockstargames-modules-core-gif-viewerb03cc125f63972f13ae84119af852edc",
+          selected: "rockstargames-modules-core-gif-viewerfbcf46d7ef0b32e64b374eee6e3cda3e",
+          promoModule: "rockstargames-modules-core-gif-viewera586d11bf592ca821d65db7660518322",
+          promoModuleImage: "rockstargames-modules-core-gif-viewerccd749d613ceb73aedb825d77d22cd0b",
+          gradient: "rockstargames-modules-core-gif-viewere4f178a3d1e3dfef8b42f73eabd9919e",
+          promoModuleContentContainer: "rockstargames-modules-core-gif-viewerd8348a62030f7e2f3c7a53cf67bef0f1",
+          left: "rockstargames-modules-core-gif-viewere56a5b7d9a696ea8ca340cc9b67998fc",
+          right: "rockstargames-modules-core-gif-viewerc84d09e0c4466d20792d5a9016a00236",
+          promoModuleTextContent: "rockstargames-modules-core-gif-viewerbf34746d222495ab8e30cede8de42d71",
+          promoModuleWrapper: "rockstargames-modules-core-gif-viewerf6d46a24b050aad98fc3aae387b75586"
         },
-        ls = e => {
+        js = e => {
           let {
             backgroundColor: t,
             brands: a = [],
@@ -7479,38 +7669,38 @@ _global.SENTRY_RELEASE = {
             ctaLabel: r,
             ctaLink: i = "https://rockstargames.com",
             gradient: n = !0,
-            image: d,
-            imageOrientation: c = "right",
-            title: l = "",
+            image: c,
+            imageOrientation: l = "right",
+            title: d = "",
             name: m = ""
           } = e;
-          const [p, g] = (0, o.useState)(!1), {
+          const [u, g] = (0, o.useState)(!1), {
             ref: f,
-            inView: _
-          } = (0, q.cD)({
+            inView: p
+          } = (0, ce.cD)({
             threshold: .6
           }), {
-            track: h
-          } = (0, F.useGtmTrack)(), k = {
+            track: _
+          } = (0, se.useGtmTrack)(), h = {
             "--promo-background": t ?? "var(--black-200)",
-            "--promo-image": `url(${(0,C.useGetCdnSource)(d)??"var(--promo-background)"})`,
-            "--promo-order": "left" === c ? "row" : "row-reverse"
+            "--promo-image": `url(${(0,G.useGetCdnSource)(c)??"var(--promo-background)"})`,
+            "--promo-order": "left" === l ? "row" : "row-reverse"
           };
           return (0, o.useEffect)((() => {
-            _ && !p && (h({
+            p && !u && (_({
               event: "page_section_impression",
               event_action: "impression",
               event_category: "page_section",
               event_label: "promo module",
               element_placement: m
             }), g(!0))
-          }), [_]), (0, u.jsx)(u.Fragment, {
-            children: (0, u.jsx)("div", {
-              className: cs.promoModuleWrapper,
-              children: (0, u.jsxs)(Re.q.div, {
-                className: cs.promoModule,
+          }), [p]), (0, y.jsx)(y.Fragment, {
+            children: (0, y.jsx)("div", {
+              className: Ns.promoModuleWrapper,
+              children: (0, y.jsxs)(at.q.div, {
+                className: Ns.promoModule,
                 style: {
-                  ...k
+                  ...h
                 },
                 initial: {
                   opacity: 0
@@ -7527,25 +7717,25 @@ _global.SENTRY_RELEASE = {
                   duration: .4
                 },
                 ref: f,
-                children: [(0, u.jsx)("div", {
-                  className: [cs.promoModuleImage, n ? cs.gradient : "", "left" === c ? cs.left : cs.right].join(" ")
-                }), (0, u.jsxs)("div", {
-                  className: cs.promoModuleContentContainer,
-                  children: [(0, u.jsx)(j, {
+                children: [(0, y.jsx)("div", {
+                  className: [Ns.promoModuleImage, n ? Ns.gradient : "", "left" === l ? Ns.left : Ns.right].join(" ")
+                }), (0, y.jsxs)("div", {
+                  className: Ns.promoModuleContentContainer,
+                  children: [(0, y.jsx)(F, {
                     brands: a,
-                    className: cs.promoModuleBrands
-                  }), (0, u.jsxs)("div", {
-                    className: cs.promoModuleTextContent,
-                    children: [l && (0, u.jsx)("h3", {
-                      children: l
-                    }), s && (0, u.jsx)("p", {
+                    className: Ns.promoModuleBrands
+                  }), (0, y.jsxs)("div", {
+                    className: Ns.promoModuleTextContent,
+                    children: [d && (0, y.jsx)("h3", {
+                      children: d
+                    }), s && (0, y.jsx)("p", {
                       children: s
                     })]
-                  }), r && (0, u.jsx)(L, {
+                  }), r && (0, y.jsx)(X, {
                     to: i,
                     text: r,
                     onClick: () => {
-                      h({
+                      _({
                         event: "cta_other",
                         event_category: "cta",
                         event_action: "other",
@@ -7561,22 +7751,22 @@ _global.SENTRY_RELEASE = {
             })
           })
         },
-        ms = {
-          rating: "rockstargames-sites-red-dead-redemption-2a1271bbed316bf567eb67e78d2143808",
-          withDescriptors: "rockstargames-sites-red-dead-redemption-2cba248edc2520d3f1ad195a8495dc1f8",
-          withOutDescriptors: "rockstargames-sites-red-dead-redemption-2ff919f7a60b854473b61075a671deb6a",
-          text: "rockstargames-sites-red-dead-redemption-2d47cd2b7c7415cb44cddef00b1c9b35f"
+        Ss = {
+          rating: "rockstargames-modules-core-gif-viewera1271bbed316bf567eb67e78d2143808",
+          withDescriptors: "rockstargames-modules-core-gif-viewercba248edc2520d3f1ad195a8495dc1f8",
+          withOutDescriptors: "rockstargames-modules-core-gif-viewerff919f7a60b854473b61075a671deb6a",
+          text: "rockstargames-modules-core-gif-viewerd47cd2b7c7415cb44cddef00b1c9b35f"
         },
-        ps = (0, d.defineMessages)({
+        Ts = (0, c.Os)({
           components_ratings_link_alt: {
             id: "components_ratings_link_alt",
             defaultMessage: "Rating: {rating}. Click here learn more about rating systems"
           }
         });
-      var us = a(13784);
-      const gs = "undefined" != typeof GameDataNewGamesDatabaseConnection ? GameDataNewGamesDatabaseConnection : us.GameData;
-      (0, R.importAll)(a(52884));
-      const fs = st((0, d.withIntl)((e => {
+      var Cs = a(13316);
+      const Ms = void 0 !== Cs.GameData ? Cs.GameData : GameDataDefault;
+      (0, ae.importAll)(a(52884));
+      const Is = kt(j((e => {
           let {
             descriptors: t = null,
             footer: s = null,
@@ -7586,102 +7776,102 @@ _global.SENTRY_RELEASE = {
             style: c = {},
             className: l
           } = e;
-          const [m, p] = (0, o.useState)(!1), {
-            inView: f
-          } = (0, q.cD)({
+          const [m, u] = (0, o.useState)(!1), {
+            inView: g
+          } = (0, ce.cD)({
             threshold: .6
-          }), [_, k] = (0, o.useState)({
+          }), [f, p] = (0, o.useState)({
             ratingDescriptors: t,
             ratingFooter: s,
             ratingImg: i,
             ratingUrl: r
           }), {
-            track: b
-          } = (0, F.useGtmTrack)(), v = (0, d.useIntl)(), {
-            data: x
-          } = (0, h.useQuery)(gs, {
+            track: _
+          } = (0, se.useGtmTrack)(), h = (0, d.c)(), {
+            data: v
+          } = (0, z.useQuery)(Ms, {
             variables: {
               titleSlug: n
             },
             skip: !n
           });
           if ((0, o.useEffect)((() => {
-              x && k(x?.game)
-            }), [x]), (0, o.useEffect)((() => {
-              f && !m && _.img_rating && (b({
+              v && p(v?.game)
+            }), [v]), (0, o.useEffect)((() => {
+              g && !m && f.img_rating && (_({
                 event: "page_section_impression",
                 event_action: "impression",
                 event_category: "page_section",
                 event_label: "rating",
                 element_placement: "rating"
-              }), p(!0))
-            }), [f]), !_.ratingImg) return null;
-          const y = !!_.ratingDescriptors;
-          return (0, u.jsxs)("div", {
-            className: [ms.rating, y ? ms.withDescriptors : ms.withOutDescriptors, l || ""].join(" "),
-            style: (0, R.safeStyles)(c),
-            children: [(0, u.jsx)(g, {
-              to: _.ratingUrl,
+              }), u(!0))
+            }), [g]), !f.ratingImg) return null;
+          const k = !!f.ratingDescriptors;
+          return (0, y.jsxs)("div", {
+            className: [Ss.rating, k ? Ss.withDescriptors : Ss.withOutDescriptors, l || ""].join(" "),
+            style: (0, ae.safeStyles)(c),
+            children: [(0, y.jsx)(I, {
+              to: f.ratingUrl,
               target: "_blank",
-              children: (0, u.jsx)("img", {
-                alt: v.formatMessage(ps.components_ratings_link_alt, {
-                  rating: (w = _.ratingImg, w.replace(/_/g, " ").split(".")[0].toUpperCase())
+              children: (0, y.jsx)("img", {
+                alt: h.formatMessage(Ts.components_ratings_link_alt, {
+                  rating: (b = f.ratingImg, b.replace(/_/g, " ").split(".")[0].toUpperCase())
                 }),
-                src: a(7e4)(`./${_.ratingImg}`)
+                src: a(7e4)(`./${f.ratingImg}`)
               })
-            }), y && (0, u.jsxs)("div", {
-              className: ms.text,
-              children: [(0, u.jsx)("p", {
-                className: ms.descriptors,
+            }), k && (0, y.jsxs)("div", {
+              className: Ss.text,
+              children: [(0, y.jsx)("p", {
+                className: Ss.descriptors,
                 dangerouslySetInnerHTML: {
-                  __html: _?.ratingDescriptors?.split(/<br\s?\/?>/).join(", ") || ""
+                  __html: f?.ratingDescriptors?.split(/<br\s?\/?>/).join(", ") || ""
                 }
-              }), _.ratingFooter && (0, u.jsx)("hr", {}), _.ratingFooter && (0, u.jsx)("p", {
+              }), f.ratingFooter && (0, y.jsx)("hr", {}), f.ratingFooter && (0, y.jsx)("p", {
                 dangerouslySetInnerHTML: {
-                  __html: _.ratingFooter.replace(/ \//g, ", ")
+                  __html: f.ratingFooter.replace(/ \//g, ", ")
                 }
               })]
             })]
           });
-          var w
-        }), c)),
-        _s = {
-          responsiveFlexBox: "rockstargames-sites-red-dead-redemption-2cef355ba53827b9ec44655c80b247b2e",
-          responsiveFlexItem: "rockstargames-sites-red-dead-redemption-2a8f5d10f689c3d40c8378e3ae8a07517",
-          responsiveImage: "rockstargames-sites-red-dead-redemption-2bee8268780b292e5bc0da0b497e2c28f"
+          var b
+        }), S)),
+        Es = {
+          responsiveFlexBox: "rockstargames-modules-core-gif-viewercef355ba53827b9ec44655c80b247b2e",
+          responsiveFlexItem: "rockstargames-modules-core-gif-viewera8f5d10f689c3d40c8378e3ae8a07517",
+          responsiveImage: "rockstargames-modules-core-gif-viewerbee8268780b292e5bc0da0b497e2c28f"
         },
-        hs = e => {
+        Ls = e => {
           let {
             children: t,
             className: a,
             style: s
           } = e;
-          return (0, u.jsx)("div", {
-            className: [_s.responsiveFlexBox, void 0 !== a ? a : ""].join(" "),
+          return (0, y.jsx)("div", {
+            className: [Es.responsiveFlexBox, void 0 !== a ? a : ""].join(" "),
             style: s,
             children: t
           })
         },
-        ks = {
-          responsiveFlexItem: "rockstargames-sites-red-dead-redemption-2ae579f6183cf73c897e68c8aae5c9d9d"
+        zs = {
+          responsiveFlexItem: "rockstargames-modules-core-gif-viewerae579f6183cf73c897e68c8aae5c9d9d"
         },
-        bs = e => {
+        Ps = e => {
           let {
             children: t,
             className: a,
             style: s
           } = e;
-          return (0, u.jsx)("div", {
-            className: [ks.responsiveFlexItem, void 0 !== a ? a : ""].join(" "),
+          return (0, y.jsx)("div", {
+            className: [zs.responsiveFlexItem, void 0 !== a ? a : ""].join(" "),
             style: s,
             children: t
           })
         },
-        vs = {
-          responsiveGridBox: "rockstargames-sites-red-dead-redemption-2a28c0b7a44e1a2d5fb257161ce36a24f",
-          responsiveGridItem: "rockstargames-sites-red-dead-redemption-2beddf36313a28976090b5a8b04d2594a"
+        Os = {
+          responsiveGridBox: "rockstargames-modules-core-gif-viewera28c0b7a44e1a2d5fb257161ce36a24f",
+          responsiveGridItem: "rockstargames-modules-core-gif-viewerbeddf36313a28976090b5a8b04d2594a"
         },
-        xs = e => {
+        Ds = e => {
           let {
             children: t,
             cols: a,
@@ -7692,32 +7882,32 @@ _global.SENTRY_RELEASE = {
           const n = i ? {
             ...i
           } : {};
-          return void 0 !== a && (n.gridTemplateColumns = `repeat(${a}, 1fr)`), void 0 !== r && (n.gridTemplateRows = `repeat(${r}, 1fr)`), (0, u.jsx)("div", {
-            className: [vs.responsiveGridBox, void 0 !== s ? s : ""].join(" "),
+          return void 0 !== a && (n.gridTemplateColumns = `repeat(${a}, 1fr)`), void 0 !== r && (n.gridTemplateRows = `repeat(${r}, 1fr)`), (0, y.jsx)("div", {
+            className: [Os.responsiveGridBox, void 0 !== s ? s : ""].join(" "),
             style: n,
             children: t
           })
         },
-        ys = {
-          responsiveGridBox: "rockstargames-sites-red-dead-redemption-2a39e7c7140ada0ab28537c8c901e816f",
-          responsiveGridItem: "rockstargames-sites-red-dead-redemption-2be7a0966e2f0457c1172ac9da99020c6"
+        As = {
+          responsiveGridBox: "rockstargames-modules-core-gif-viewera39e7c7140ada0ab28537c8c901e816f",
+          responsiveGridItem: "rockstargames-modules-core-gif-viewerbe7a0966e2f0457c1172ac9da99020c6"
         },
-        ws = e => {
+        Bs = e => {
           let {
             children: t,
             className: a,
             style: s
           } = e;
-          return (0, u.jsx)("div", {
-            className: [ys.responsiveGridItem, void 0 !== a ? a : ""].join(" "),
+          return (0, y.jsx)("div", {
+            className: [As.responsiveGridItem, void 0 !== a ? a : ""].join(" "),
             style: s,
             children: t
           })
         },
-        Ns = {
-          responsiveImage: "rockstargames-sites-red-dead-redemption-2e31b43dce2e720669fb90bf539d22197"
+        Vs = {
+          responsiveImage: "rockstargames-modules-core-gif-viewere31b43dce2e720669fb90bf539d22197"
         },
-        js = e => {
+        Rs = e => {
           let {
             src: t,
             className: a = "",
@@ -7725,60 +7915,60 @@ _global.SENTRY_RELEASE = {
             ariaLabel: r,
             style: i = {}
           } = e;
-          const [n, o] = (0, R.usePreloadImg)(t);
-          return n ? (i.backgroundImage = `url(${t})`, (0, u.jsx)("div", {
+          const [n, o] = (0, ae.usePreloadImg)(t);
+          return n ? (i.backgroundImage = `url(${t})`, (0, y.jsx)("div", {
             role: "img",
             "aria-label": r ?? "R* Games",
-            className: [Ns.responsiveImage, s ? Ns.animateBox : "", a].join(" "),
+            className: [Vs.responsiveImage, s ? Vs.animateBox : "", a].join(" "),
             style: {
               ...i,
               "--aspect-ratio": o.width / o.height
             }
           })) : null
         },
-        Ss = {
-          responsiveSection: "rockstargames-sites-red-dead-redemption-2fb7094e43a166c19080ccfe92ed7420d",
-          maxWidth: "rockstargames-sites-red-dead-redemption-2bdc35dbaa55c59ddd2831fd3ac05c5a7"
+        Fs = {
+          responsiveSection: "rockstargames-modules-core-gif-viewerfb7094e43a166c19080ccfe92ed7420d",
+          maxWidth: "rockstargames-modules-core-gif-viewerbdc35dbaa55c59ddd2831fd3ac05c5a7"
         },
-        Ts = e => {
+        $s = e => {
           let {
             children: t,
             className: a,
             style: s,
             maxWidth: r
           } = e;
-          return (0, u.jsx)("section", {
-            className: [Ss.responsiveSection, void 0 !== a ? a : ""].join(" "),
+          return (0, y.jsx)("section", {
+            className: [Fs.responsiveSection, void 0 !== a ? a : ""].join(" "),
             style: s,
-            children: r ? (0, u.jsx)("div", {
-              className: Ss.maxWidth,
+            children: r ? (0, y.jsx)("div", {
+              className: Fs.maxWidth,
               children: t
             }) : t
           })
         },
-        Cs = () => (0, u.jsx)(g, {
-          className: "rockstargames-sites-red-dead-redemption-2ba0c20f78999975dfb8d9cff0de44b34",
+        Us = () => (0, y.jsx)(I, {
+          className: "rockstargames-modules-core-gif-viewerba0c20f78999975dfb8d9cff0de44b34",
           alt: "Rockstar Games Home",
           to: "/"
         }),
-        Ms = e => {
+        Gs = e => {
           let {
             thresholds: t,
             onThresholdReached: a,
             children: s
           } = e;
-          const [r, i] = (0, o.useState)([]), [n, d] = (0, o.useState)(new Set);
+          const [r, i] = (0, o.useState)([]), [n, c] = (0, o.useState)(new Set);
           return (0, o.useEffect)((() => {
             const e = Array.from(new Set(t));
             e.sort(((e, t) => e - t)), i(e)
-          }), [t]), (0, u.jsxs)("div", {
+          }), [t]), (0, y.jsxs)("div", {
             style: {
               position: "relative"
             },
-            children: [r.map((e => (0, u.jsx)(q.Ws, {
+            children: [r.map((e => (0, y.jsx)(ce.Ws, {
               threshold: e,
               onChange: t => ((e, t) => {
-                e && !n.has(t) && d((e => {
+                e && !n.has(t) && c((e => {
                   const s = new Set(e);
                   return r.forEach((e => {
                     e <= t && !s.has(e) && (s.add(e), a(e))
@@ -7790,7 +7980,7 @@ _global.SENTRY_RELEASE = {
                 let {
                   ref: a
                 } = t;
-                return (0, u.jsx)("div", {
+                return (0, y.jsx)("div", {
                   ref: a,
                   style: {
                     height: "1px",
@@ -7802,10 +7992,10 @@ _global.SENTRY_RELEASE = {
             }, e))), s]
           })
         },
-        Is = () => {
+        Hs = () => {
           const {
             pathname: e
-          } = (0, m.useLocation)();
+          } = (0, C.useLocation)();
           return (0, o.useEffect)((() => {
             const e = document.scrollingElement || document.documentElement;
             setTimeout((() => {
@@ -7813,7 +8003,7 @@ _global.SENTRY_RELEASE = {
             }), 0)
           }), [e]), null
         },
-        Es = (0, o.forwardRef)(((e, t) => {
+        qs = (0, o.forwardRef)(((e, t) => {
           const {
             threshold: a,
             callback: s,
@@ -7821,9 +8011,9 @@ _global.SENTRY_RELEASE = {
             requireUser: i
           } = e, {
             track: n
-          } = (0, F.useGtmTrack)(i), [d, c] = (0, o.useState)(t?.current);
+          } = (0, se.useGtmTrack)(i), [c, l] = (0, o.useState)(t?.current);
           return (0, o.useEffect)((() => {
-            t?.current && c(t.current)
+            t?.current && l(t.current)
           }), [t]), ((e, t, a) => {
             const [s, r] = (0, o.useState)({
               scrollDepths: e,
@@ -7843,20 +8033,20 @@ _global.SENTRY_RELEASE = {
                 scrollY: 0
               })
             }), [window.location.pathname]);
-            const d = (0, o.useCallback)((() => {
+            const c = (0, o.useCallback)((() => {
               const e = document.documentElement,
                 n = document.body,
                 o = a?.scrollTop || e.scrollTop || n.scrollTop,
-                c = a?.scrollHeight || e.scrollHeight || n.scrollHeight,
+                l = a?.scrollHeight || e.scrollHeight || n.scrollHeight,
                 {
-                  clientHeight: l
+                  clientHeight: d
                 } = e,
-                m = o / (c - l) * 100;
+                m = o / (l - d) * 100;
               if (i) {
-                const e = Math.min(...i, c);
+                const e = Math.min(...i, l);
                 if (m >= e) {
                   const s = i.filter((t => t !== e));
-                  0 === s.length && (a ?? window).removeEventListener("scroll", d), t && t({
+                  0 === s.length && (a ?? window).removeEventListener("scroll", c), t && t({
                     scrollY: e,
                     scrollPercent: m,
                     remainingDepths: s
@@ -7873,8 +8063,8 @@ _global.SENTRY_RELEASE = {
             (0, o.useEffect)((() => {
               if ("undefined" == typeof window) return;
               const e = a ?? window;
-              return e.addEventListener("scroll", d), () => e.removeEventListener("scroll", d)
-            }), [d])
+              return e.addEventListener("scroll", c), () => e.removeEventListener("scroll", c)
+            }), [c])
           })(a, (e => {
             let {
               scrollY: t
@@ -7885,29 +8075,29 @@ _global.SENTRY_RELEASE = {
               event_action: t,
               scroll_depth: t
             }), "function" == typeof s && s(t)
-          }), d), r
+          }), c), r
         }));
-      Es.displayName = "ScrollTracker";
-      const Ls = Es,
-        zs = (0, R.withTranslations)((e => {
+      qs.displayName = "ScrollTracker";
+      const Ws = qs,
+        Xs = (0, ae.withTranslations)((e => {
           let {
             t
           } = e;
-          const [a] = (0, o.useState)(""), s = (0, m.useNavigate)(), r = (0, h.useMutateState)();
-          return (0, u.jsxs)("form", {
+          const [a] = (0, o.useState)(""), s = (0, C.useNavigate)(), r = (0, z.useMutateState)();
+          return (0, y.jsxs)("form", {
             action: "#",
-            className: "rockstargames-sites-red-dead-redemption-2b82052ce07e004075e77261c373bfc50",
+            className: "rockstargames-modules-core-gif-viewerb82052ce07e004075e77261c373bfc50",
             onSubmit: e => {
               e.preventDefault(), r({
                 navOpen: !1
               }), document.activeElement?.blur(), s(`/search?q=${e.target.q.value}`)
             },
             role: "search",
-            children: [(0, u.jsx)("button", {
+            children: [(0, y.jsx)("button", {
               type: "submit",
               role: "button",
               title: "Submit"
-            }), (0, u.jsx)("input", {
+            }), (0, y.jsx)("input", {
               autoComplete: "off",
               defaultValue: a,
               enterKeyHint: "search",
@@ -7916,69 +8106,69 @@ _global.SENTRY_RELEASE = {
             })]
           })
         })),
-        Ps = {
-          skeleton: "rockstargames-sites-red-dead-redemption-2f963a1ae95f7f5ac2c5192c3f357b6dc",
-          pulse: "rockstargames-sites-red-dead-redemption-2e00ed88d692bbfc1a301dcfc61a077a9",
-          gen9Hero: "rockstargames-sites-red-dead-redemption-2db0b80177710d337d93bddb97b8a7dea"
+        Ys = {
+          skeleton: "rockstargames-modules-core-gif-viewerf963a1ae95f7f5ac2c5192c3f357b6dc",
+          pulse: "rockstargames-modules-core-gif-viewere00ed88d692bbfc1a301dcfc61a077a9",
+          gen9Hero: "rockstargames-modules-core-gif-viewerdb0b80177710d337d93bddb97b8a7dea"
         },
-        Os = e => {
+        Ks = e => {
           let {
             skeleton: t
           } = e;
-          return t ? (0, u.jsx)("div", {
-            className: [Ps.skeleton, Ps[t]].join(" ")
+          return t ? (0, y.jsx)("div", {
+            className: [Ys.skeleton, Ys[t]].join(" ")
           }) : null
         },
-        As = (0, d.defineMessages)({
+        Qs = (0, c.Os)({
           components_track_list_title: {
             id: "components_track_list_title",
             defaultMessage: "Tracklist"
           }
         }),
-        Ds = {
-          bodySmall: "rockstargames-sites-red-dead-redemption-2c048aacaedc7fb642f38c7f163c193e3"
+        Zs = {
+          bodySmall: "rockstargames-modules-core-gif-viewerc048aacaedc7fb642f38c7f163c193e3"
         },
-        Bs = e => {
+        Js = e => {
           let {
             track: t,
             artist: a
           } = e;
-          return (0, u.jsxs)("div", {
-            className: Ds.track,
-            children: [(0, u.jsx)("p", {
+          return (0, y.jsxs)("div", {
+            className: Zs.track,
+            children: [(0, y.jsx)("p", {
               children: t
-            }), (0, u.jsx)("p", {
-              className: Ds.bodySmall,
+            }), (0, y.jsx)("p", {
+              className: Zs.bodySmall,
               children: a
             })]
           })
         },
-        Vs = (0, d.withIntl)((e => {
+        er = j((e => {
           let {
             content: t = []
           } = e;
-          return (0, u.jsxs)("div", {
-            className: "rockstargames-sites-red-dead-redemption-2e6c19f2cdd68a4352e248a8324383aa2",
-            children: [(0, u.jsx)("h4", {
-              className: "rockstargames-sites-red-dead-redemption-2cd3895fbae93ba04f1401487f6e6eddf",
-              children: (0, u.jsx)(d.FormattedMessage, {
-                ...As.components_track_list_title
+          return (0, y.jsxs)("div", {
+            className: "rockstargames-modules-core-gif-viewere6c19f2cdd68a4352e248a8324383aa2",
+            children: [(0, y.jsx)("h4", {
+              className: "rockstargames-modules-core-gif-viewercd3895fbae93ba04f1401487f6e6eddf",
+              children: (0, y.jsx)(l.c, {
+                ...Qs.components_track_list_title
               })
-            }), (0, u.jsx)("div", {
-              className: "rockstargames-sites-red-dead-redemption-2ef0cde8b15ded961605237d0e8328a9b",
-              children: (0, u.jsx)("div", {
-                className: "rockstargames-sites-red-dead-redemption-2bdd54186db17d27b3daebc4b9d58e09a",
-                children: t?.map((e => (0, u.jsx)(Bs, {
+            }), (0, y.jsx)("div", {
+              className: "rockstargames-modules-core-gif-vieweref0cde8b15ded961605237d0e8328a9b",
+              children: (0, y.jsx)("div", {
+                className: "rockstargames-modules-core-gif-viewerbdd54186db17d27b3daebc4b9d58e09a",
+                children: t?.map((e => (0, y.jsx)(Js, {
                   track: e.track,
                   artist: e.artist
                 }, e.key)))
               })
             })]
           })
-        }), c),
-        Rs = "rockstargames-sites-red-dead-redemption-2eca98eb0b5b84a0c9a2e6d952545a2d5",
-        Fs = "rockstargames-sites-red-dead-redemption-2d3d0b4ecd3bddba96c73f49fcca34ed8",
-        $s = {
+        }), S),
+        tr = "rockstargames-modules-core-gif-viewereca98eb0b5b84a0c9a2e6d952545a2d5",
+        ar = "rockstargames-modules-core-gif-viewerd3d0b4ecd3bddba96c73f49fcca34ed8",
+        sr = {
           0: {
             spaceBetween: 8
           },
@@ -7995,7 +8185,7 @@ _global.SENTRY_RELEASE = {
             spaceBetween: 22
           }
         },
-        Us = e => {
+        rr = e => {
           let {
             title: t = "thumbnail gallery",
             thumbsPerView: a = 3,
@@ -8007,50 +8197,50 @@ _global.SENTRY_RELEASE = {
               main: void 0,
               thumbs: void 0
             },
-            transition: d = {
+            transition: c = {
               parent: void 0,
               main: void 0,
               thumbs: void 0
             }
           } = e;
           const {
-            track: c
-          } = (0, F.useGtmTrack)(), [l, m] = (0, o.useState)([Je.O4, Je.Hj, Je.eM]), [p, g] = (0, o.useState)(null), [f, _] = (0, o.useState)(null);
+            track: l
+          } = (0, se.useGtmTrack)(), [d, m] = (0, o.useState)([pt.O4, pt.Hj, pt.eM]), [u, g] = (0, o.useState)(null), [f, p] = (0, o.useState)(null);
           return (0, o.useEffect)((() => {
-            const e = [Je.O4, Je.Hj, Je.eM];
-            r && e.push(Je._2), m(e)
+            const e = [pt.O4, pt.Hj, pt.eM];
+            r && e.push(pt._2), m(e)
           }), [r]), (0, o.useEffect)((() => {
             if (!i) return;
-            const e = i.map(((e, t) => (0, u.jsx)(P.Ky, {
+            const e = i.map(((e, t) => (0, y.jsx)(K.Ky, {
               children: e
             }, Symbol(t).toString())));
-            _(e)
-          }), [i]), f ? (0, u.jsxs)(Re.q.div, {
-            className: "rockstargames-sites-red-dead-redemption-2d4f245838b94234f21463a08a8112910",
+            p(e)
+          }), [i]), f ? (0, y.jsxs)(at.q.div, {
+            className: "rockstargames-modules-core-gif-viewerd4f245838b94234f21463a08a8112910",
             variants: n.parent,
-            transition: d.parent,
+            transition: c.parent,
             initial: "initial",
             animate: "animate",
-            children: [(0, u.jsx)(Re.q.div, {
-              className: Rs,
+            children: [(0, y.jsx)(at.q.div, {
+              className: tr,
               variants: n.main,
-              transition: d.main,
+              transition: c.main,
               initial: "initial",
               animate: "animate",
-              children: (0, u.jsx)(P.wx, {
+              children: (0, y.jsx)(K.wx, {
                 loop: s,
                 navigation: r,
                 pagination: {
                   clickable: !0
                 },
                 thumbs: {
-                  swiper: p
+                  swiper: u
                 },
-                modules: l,
-                breakpoints: $s,
-                className: Rs,
+                modules: d,
+                breakpoints: sr,
+                className: tr,
                 onSlideNextTransitionEnd: () => {
-                  c({
+                  l({
                     event_action: "next",
                     event_category: "carousel",
                     event: "carousel_next",
@@ -8059,7 +8249,7 @@ _global.SENTRY_RELEASE = {
                   })
                 },
                 onSlidePrevTransitionEnd: () => {
-                  c({
+                  l({
                     event_action: "previous",
                     event_category: "carousel",
                     event: "carousel_previous",
@@ -8068,7 +8258,7 @@ _global.SENTRY_RELEASE = {
                   })
                 },
                 onSlideChangeTransitionEnd: () => {
-                  c({
+                  l({
                     event_action: "swipe",
                     event_category: "carousel",
                     event: "carousel_swipe",
@@ -8078,29 +8268,29 @@ _global.SENTRY_RELEASE = {
                 },
                 children: f
               })
-            }), (0, u.jsx)(Re.q.div, {
-              className: Fs,
+            }), (0, y.jsx)(at.q.div, {
+              className: ar,
               variants: n.thumbs,
-              transition: d.thumbs,
+              transition: c.thumbs,
               initial: "initial",
               animate: "animate",
-              children: (0, u.jsx)(P.wx, {
+              children: (0, y.jsx)(K.wx, {
                 threshold: 50,
                 onSwiper: g,
                 loop: s,
-                breakpoints: $s,
+                breakpoints: sr,
                 slidesPerView: a,
                 freeMode: !0,
                 watchSlidesProgress: !0,
-                modules: l,
-                className: Fs,
+                modules: d,
+                className: ar,
                 children: f
               })
             })]
           }) : null
         };
-      var Gs = a(78124);
-      const Hs = e => {
+      var ir = a(504);
+      const nr = e => {
           let {
             id: t = null,
             ids: a = null,
@@ -8110,7 +8300,7 @@ _global.SENTRY_RELEASE = {
           const i = a ?? [t],
             {
               data: n
-            } = (0, h.useQuery)(Gs.TinaModulesInfo, {
+            } = (0, z.useQuery)(ir.TinaModulesInfo, {
               variables: {
                 ids: i,
                 sync: r
@@ -8120,27 +8310,27 @@ _global.SENTRY_RELEASE = {
             });
           return n?.tinaModulesInfo ?? null
         },
-        qs = st((e => {
+        or = kt((e => {
           let {
             components: t = {},
             id: a = null,
             ids: s = null,
             skeleton: r
           } = e;
-          const i = Hs({
+          const i = nr({
             id: a,
             ids: s
           });
-          if (!i) return (0, u.jsx)(Os, {
+          if (!i) return (0, y.jsx)(Ks, {
             skeleton: r
           });
           const n = i?.[0]?.tina;
-          return n ? (0, u.jsx)(u.Fragment, {
+          return n ? (0, y.jsx)(y.Fragment, {
             children: i.map(((e, a) => {
               let {
                 tina: s
               } = e;
-              return (0, u.jsx)(C.TinaParser, {
+              return (0, y.jsx)(G.TinaParser, {
                 components: t,
                 tina: s,
                 componentProps: {
@@ -8150,7 +8340,7 @@ _global.SENTRY_RELEASE = {
             }))
           }) : null
         })),
-        Ws = e => {
+        cr = e => {
           let {
             children: t,
             style: a,
@@ -8159,27 +8349,27 @@ _global.SENTRY_RELEASE = {
           const [r, i] = (0, o.useState)(s);
           return (0, o.useEffect)((() => {
             s && i(s)
-          }), [s]), (0, u.jsx)("div", {
-            className: "rockstargames-sites-red-dead-redemption-2a3cc68ab0d512c3d8835ee9abb7a51c4",
+          }), [s]), (0, y.jsx)("div", {
+            className: "rockstargames-modules-core-gif-viewera3cc68ab0d512c3d8835ee9abb7a51c4",
             style: a,
             "data-theme": r,
             children: t
           })
         };
-      var Xs = a(19168);
-      const Ys = {
-          pillBtn: "rockstargames-sites-red-dead-redemption-2ae56f3a5bf16f1160a0cbc040c7611fa",
-          selected: "rockstargames-sites-red-dead-redemption-2d7e34a082f54f22035320df51e8b4ed9",
-          userVote: "rockstargames-sites-red-dead-redemption-2fd538df1ac730062880ff9ca1292dcc4",
-          info: "rockstargames-sites-red-dead-redemption-2dd49c22b2bd842d7e8c11ac45b3a536b",
-          voteContent: "rockstargames-sites-red-dead-redemption-2eb3c4c0d7629a1182cd138d3d2e6e081",
-          loggedOutButtons: "rockstargames-sites-red-dead-redemption-2d00b4195df0f175083f6aa2a7d847d72",
-          voteButtons: "rockstargames-sites-red-dead-redemption-2fdd10a481e3da0f8e9511b6a577052e0",
-          downVote: "rockstargames-sites-red-dead-redemption-2abdbb2656b0080d66eb4d39b7e1eb38d",
-          upVote: "rockstargames-sites-red-dead-redemption-2ea25ed07e937e2efdce0b99d076fbbe1",
-          voteButtonActive: "rockstargames-sites-red-dead-redemption-2c31731d09d8118c6a82fe6edb193dc50"
+      var lr = a(19168);
+      const dr = {
+          pillBtn: "rockstargames-modules-core-gif-viewerae56f3a5bf16f1160a0cbc040c7611fa",
+          selected: "rockstargames-modules-core-gif-viewerd7e34a082f54f22035320df51e8b4ed9",
+          userVote: "rockstargames-modules-core-gif-viewerfd538df1ac730062880ff9ca1292dcc4",
+          info: "rockstargames-modules-core-gif-viewerdd49c22b2bd842d7e8c11ac45b3a536b",
+          voteContent: "rockstargames-modules-core-gif-viewereb3c4c0d7629a1182cd138d3d2e6e081",
+          loggedOutButtons: "rockstargames-modules-core-gif-viewerd00b4195df0f175083f6aa2a7d847d72",
+          voteButtons: "rockstargames-modules-core-gif-viewerfdd10a481e3da0f8e9511b6a577052e0",
+          downVote: "rockstargames-modules-core-gif-viewerabdbb2656b0080d66eb4d39b7e1eb38d",
+          upVote: "rockstargames-modules-core-gif-viewerea25ed07e937e2efdce0b99d076fbbe1",
+          voteButtonActive: "rockstargames-modules-core-gif-viewerc31731d09d8118c6a82fe6edb193dc50"
         },
-        Ks = e => {
+        mr = e => {
           let {
             description: t,
             foreign_id: a = document.location.pathname,
@@ -8188,15 +8378,15 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: i
-          } = (0, F.useGtmTrack)(), {
+          } = (0, se.useGtmTrack)(), {
             loggedIn: n
-          } = (0, F.useRockstarUser)(), {
-            refetch: d
-          } = (0, h.useQuery)(Xs.UserGetVote, {
+          } = (0, se.useRockstarUser)(), {
+            refetch: c
+          } = (0, z.useQuery)(lr.UserGetVote, {
             skip: !0
-          }), [c] = (0, h.useMutation)(Xs.UserCastVote), [l, m] = (0, o.useState)(null), p = (0, o.useCallback)((async e => {
+          }), [l] = (0, z.useMutation)(lr.UserCastVote), [d, m] = (0, o.useState)(null), u = (0, o.useCallback)((async e => {
             i({
-              event_action: l ? "like" : "dislike",
+              event_action: d ? "like" : "dislike",
               event_category: "cta",
               event: "cta_" + (e ? "like" : "dislike"),
               event_label: a
@@ -8206,7 +8396,7 @@ _global.SENTRY_RELEASE = {
                 foreign_type: s,
                 vote: e
               },
-              r = await c({
+              r = await l({
                 variables: t
               });
             m(r?.data?.userCastVote?.vote ?? null)
@@ -8214,33 +8404,33 @@ _global.SENTRY_RELEASE = {
           return (0, o.useEffect)((() => {
             (async () => {
               if (!n || !a || !s) return;
-              const e = await d({
+              const e = await c({
                 foreign_id: a,
                 foreign_type: s
               });
               m(e?.data?.userGetVote?.vote ?? null)
             })()
-          }), [a, s, n]), (0, u.jsx)("div", {
-            className: Ys.userVote,
-            children: (0, u.jsxs)("div", {
-              className: Ys.voteContent,
-              children: [(0, u.jsxs)("div", {
-                className: Ys.info,
-                children: [(0, u.jsx)("h3", {
+          }), [a, s, n]), (0, y.jsx)("div", {
+            className: dr.userVote,
+            children: (0, y.jsxs)("div", {
+              className: dr.voteContent,
+              children: [(0, y.jsxs)("div", {
+                className: dr.info,
+                children: [(0, y.jsx)("h3", {
                   children: r
-                }), (0, u.jsx)("p", {
+                }), (0, y.jsx)("p", {
                   children: t
                 })]
-              }), (0, u.jsxs)("div", {
-                className: [Ys.voteButtons, n ? "" : Ys.loggedOutButtons].join(" "),
-                children: [(0, u.jsx)("button", {
-                  onClick: () => p(!0),
-                  className: [Ys.upVote, l ? Ys.voteButtonActive : ""].join(" "),
+              }), (0, y.jsxs)("div", {
+                className: [dr.voteButtons, n ? "" : dr.loggedOutButtons].join(" "),
+                children: [(0, y.jsx)("button", {
+                  onClick: () => u(!0),
+                  className: [dr.upVote, d ? dr.voteButtonActive : ""].join(" "),
                   type: "button",
                   "aria-label": "Vote up"
-                }), (0, u.jsx)("button", {
-                  className: [Ys.downVote, !1 === l ? Ys.voteButtonActive : ""].join(" "),
-                  onClick: () => p(!1),
+                }), (0, y.jsx)("button", {
+                  className: [dr.downVote, !1 === d ? dr.voteButtonActive : ""].join(" "),
+                  onClick: () => u(!1),
                   type: "button",
                   "aria-label": "Vote down"
                 })]
@@ -8248,22 +8438,22 @@ _global.SENTRY_RELEASE = {
             })
           })
         },
-        Qs = {
-          carousel: "rockstargames-sites-red-dead-redemption-2d8e71d378f6d4a968e8ac7d621e5f32a",
-          text: "rockstargames-sites-red-dead-redemption-2a3f73d86b98d36a296bf8f621f1c340f",
-          info: "rockstargames-sites-red-dead-redemption-2f46d7fc75c302b1d3f4db01d8572bea8",
-          active: "rockstargames-sites-red-dead-redemption-2d26d1267cc02f841fee8a874d679aebd",
-          title: "rockstargames-sites-red-dead-redemption-2a879dfc151f7cf8da6bf5642b51436bb",
-          gameTitle: "rockstargames-sites-red-dead-redemption-2b42d96124219141b4dbb454131b8c37b",
-          videoTitle: "rockstargames-sites-red-dead-redemption-2c5ff8983fae65d6a3d7c741360bd3606",
-          cta: "rockstargames-sites-red-dead-redemption-2e25e320fda75ce4076c9fe68b540a2fa",
-          track: "rockstargames-sites-red-dead-redemption-2dd0d39c46df512d3eff8ba48e469af0a",
-          disableClick: "rockstargames-sites-red-dead-redemption-2b169e1b67f64de28605dd5056a740584",
-          items: "rockstargames-sites-red-dead-redemption-2dddc42d4babcaec339a7c1bd04420e6e",
-          dragging: "rockstargames-sites-red-dead-redemption-2a7313e3ff4e99b5313f8698890d0dd8c",
-          dots: "rockstargames-sites-red-dead-redemption-2e1d7433489996eb9fa890d452ebcb042"
+        ur = {
+          carousel: "rockstargames-modules-core-gif-viewerd8e71d378f6d4a968e8ac7d621e5f32a",
+          text: "rockstargames-modules-core-gif-viewera3f73d86b98d36a296bf8f621f1c340f",
+          info: "rockstargames-modules-core-gif-viewerf46d7fc75c302b1d3f4db01d8572bea8",
+          active: "rockstargames-modules-core-gif-viewerd26d1267cc02f841fee8a874d679aebd",
+          title: "rockstargames-modules-core-gif-viewera879dfc151f7cf8da6bf5642b51436bb",
+          gameTitle: "rockstargames-modules-core-gif-viewerb42d96124219141b4dbb454131b8c37b",
+          videoTitle: "rockstargames-modules-core-gif-viewerc5ff8983fae65d6a3d7c741360bd3606",
+          cta: "rockstargames-modules-core-gif-viewere25e320fda75ce4076c9fe68b540a2fa",
+          track: "rockstargames-modules-core-gif-viewerdd0d39c46df512d3eff8ba48e469af0a",
+          disableClick: "rockstargames-modules-core-gif-viewerb169e1b67f64de28605dd5056a740584",
+          items: "rockstargames-modules-core-gif-viewerdddc42d4babcaec339a7c1bd04420e6e",
+          dragging: "rockstargames-modules-core-gif-viewera7313e3ff4e99b5313f8698890d0dd8c",
+          dots: "rockstargames-modules-core-gif-viewere1d7433489996eb9fa890d452ebcb042"
         },
-        Zs = (0, R.withLocale)((e => {
+        gr = (0, ae.withLocale)((e => {
           let {
             locale: t,
             t: a,
@@ -8271,12 +8461,12 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: r
-          } = (0, F.useGtmTrack)(), {
+          } = (0, se.useGtmTrack)(), {
             setBodyIsLocked: i
-          } = (0, R.useBodyScrollable)("VideoCarousel"), [n, d] = (0, o.useState)(0), [c, l] = (0, o.useState)(0), m = (0, o.useRef)(null), p = (0, o.useRef)(null);
+          } = (0, ae.useBodyScrollable)("VideoCarousel"), [n, c] = (0, o.useState)(0), [l, d] = (0, o.useState)(0), m = (0, o.useRef)(null), u = (0, o.useRef)(null);
           return (0, o.useEffect)((() => {
-            if (!m.current || !p.current) return;
-            const e = new(_())(m.current);
+            if (!m.current || !u.current) return;
+            const e = new(L())(m.current);
             e.get("press").set({
               time: 0
             }), e.get("tap").set({
@@ -8284,61 +8474,61 @@ _global.SENTRY_RELEASE = {
             });
             const t = () => "ontouchstart" in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0,
               a = () => {
-                d(n - 1 < 0 ? 0 : n - 1), l(0)
+                c(n - 1 < 0 ? 0 : n - 1), d(0)
               },
               r = () => {
                 const e = n + 1 >= s.length - 1 ? s.length - 1 : n + 1;
-                d(e), l(0)
+                c(e), d(0)
               },
               o = e => {
-                l(e.isFinal ? 0 : e.deltaX), "panleft" !== e.additionalEvent && "panright" !== e.additionalEvent || !p.current?.classList.contains(Qs.dragging) || t() && i(!0)
+                d(e.isFinal ? 0 : e.deltaX), "panleft" !== e.additionalEvent && "panright" !== e.additionalEvent || !u.current?.classList.contains(ur.dragging) || t() && i(!0)
               },
-              c = () => {
-                t() && i(!1), l(0)
+              l = () => {
+                t() && i(!1), d(0)
               },
-              u = e => {
-                "press" === e.type && m.current?.classList.add(`${Qs.disableClick}`), "tap" === e.type && (m.current?.classList.remove(`${Qs.disableClick}`), document.elementFromPoint(e.center.x, e.center.y).click())
-              },
-              g = () => {
-                t() && i(!1), m.current && m.current.classList.remove(`${Qs.disableClick}`)
+              g = e => {
+                "press" === e.type && m.current?.classList.add(`${ur.disableClick}`), "tap" === e.type && (m.current?.classList.remove(`${ur.disableClick}`), document.elementFromPoint(e.center.x, e.center.y).click())
               },
               f = () => {
+                t() && i(!1), m.current && m.current.classList.remove(`${ur.disableClick}`)
+              },
+              p = () => {
                 t() && i(!1)
               };
-            return p.current.addEventListener("transitionend", f), e.on("swiperight", a), e.on("swipeleft", r), e.on("pan", o), e.on("panend", c), e.on("press tap", u), e.on("pressup", g), () => {
-              e.off("swiperight", a), e.off("swipeleft", r), e.off("pan", o), e.off("panend", c), e.off("press tap", u), e.off("pressup", g), p.current && p.current.removeEventListener("transitionend", f), l(0)
+            return u.current.addEventListener("transitionend", p), e.on("swiperight", a), e.on("swipeleft", r), e.on("pan", o), e.on("panend", l), e.on("press tap", g), e.on("pressup", f), () => {
+              e.off("swiperight", a), e.off("swipeleft", r), e.off("pan", o), e.off("panend", l), e.off("press tap", g), e.off("pressup", f), u.current && u.current.removeEventListener("transitionend", p), d(0)
             }
-          }), [m.current, n]), (0, u.jsxs)("section", {
-            className: Qs.carousel,
-            children: [(0, u.jsx)("div", {
-              className: Qs.track,
+          }), [m.current, n]), (0, y.jsxs)("section", {
+            className: ur.carousel,
+            children: [(0, y.jsx)("div", {
+              className: ur.track,
               ref: m,
-              children: (0, u.jsx)("div", {
-                className: `${Qs.items} ${0!==c?Qs.dragging:""}`,
-                ref: p,
+              children: (0, y.jsx)("div", {
+                className: `${ur.items} ${0!==l?ur.dragging:""}`,
+                ref: u,
                 style: {
-                  transform: `translateX(calc(-${100*n}% + ${c}px))`
+                  transform: `translateX(calc(-${100*n}% + ${l}px))`
                 },
-                children: s.map(((e, t) => (0, u.jsx)(g, {
+                children: s.map(((e, t) => (0, y.jsx)(I, {
                   "data-gtm-category": "Carousel",
                   "data-gtm-action": "Click-through screencap",
                   "data-gtm-label": `/videos/${e.id}`,
                   to: `/videos/${e.id}`,
-                  className: n === t ? Qs.active : "",
+                  className: n === t ? ur.active : "",
                   role: "link",
                   title: e.title,
                   tabIndex: n === t ? 0 : -1,
-                  children: (0, u.jsx)(cr, {
+                  children: (0, y.jsx)(Nr, {
                     video: e,
                     size: 1280
                   })
                 }, e.id)))
               })
-            }), (0, u.jsxs)("footer", {
-              children: [(0, u.jsx)("div", {
-                className: Qs.text,
+            }), (0, y.jsxs)("footer", {
+              children: [(0, y.jsx)("div", {
+                className: ur.text,
                 children: s.map(((e, s) => {
-                  return (0, u.jsx)(g, {
+                  return (0, y.jsx)(I, {
                     "data-gtm-category": "Carousel",
                     "data-gtm-action": "Click-through footer",
                     "data-gtm-label": `/videos/${e.id}`,
@@ -8346,19 +8536,19 @@ _global.SENTRY_RELEASE = {
                     role: "link",
                     title: e.title,
                     tabIndex: n === s ? 0 : -1,
-                    children: (0, u.jsxs)("div", {
-                      className: [Qs.info, s === n ? Qs.active : ""].join(" "),
-                      children: [(0, u.jsxs)("div", {
-                        className: Qs.title,
-                        children: [(0, u.jsx)("div", {
-                          className: Qs.gameTitle,
+                    children: (0, y.jsxs)("div", {
+                      className: [ur.info, s === n ? ur.active : ""].join(" "),
+                      children: [(0, y.jsxs)("div", {
+                        className: ur.title,
+                        children: [(0, y.jsx)("div", {
+                          className: ur.gameTitle,
                           children: `${e.game.title}${"fr_fr"===t?" ":""}`
-                        }), (0, u.jsx)("h2", {
-                          className: Qs.videoTitle,
+                        }), (0, y.jsx)("h2", {
+                          className: ur.videoTitle,
                           children: `${e.title}`
                         })]
-                      }), (0, u.jsx)(T, {
-                        className: Qs.cta,
+                      }), (0, y.jsx)(U, {
+                        className: ur.cta,
                         onClick: (i = `/videos/${e.id}`, () => {
                           r({
                             event: "cta_watch_video",
@@ -8373,22 +8563,22 @@ _global.SENTRY_RELEASE = {
                   }, e.id);
                   var i
                 }))
-              }), (0, u.jsx)("div", {
-                className: Qs.dots,
-                children: s.map(((e, t) => (0, u.jsx)("button", {
+              }), (0, y.jsx)("div", {
+                className: ur.dots,
+                children: s.map(((e, t) => (0, y.jsx)("button", {
                   "aria-label": `Slide ${t+1}`,
                   "data-gtm-category": "Marquee",
                   "data-gtm-action": "Dot click",
                   "data-gtm-label": `Dot clicked to ${t}`,
-                  onClick: () => d(t),
-                  className: n === t ? Qs.active : "",
+                  onClick: () => c(t),
+                  className: n === t ? ur.active : "",
                   type: "button"
                 }, e.id)))
               })]
             })]
           })
         })),
-        Js = (0, d.defineMessages)({
+        fr = (0, c.Os)({
           next_button_label: {
             id: "next_button_label",
             defaultMessage: "Next video page"
@@ -8398,12 +8588,12 @@ _global.SENTRY_RELEASE = {
             defaultMessage: "Previous video page"
           }
         }),
-        er = {
-          img: "rockstargames-sites-red-dead-redemption-2e3f505a2281df28eb1acdf2d586e7fbd",
-          wide: "rockstargames-sites-red-dead-redemption-2c3a6d60e0087f92bbf7062fe2f36e200"
+        pr = {
+          img: "rockstargames-modules-core-gif-viewere3f505a2281df28eb1acdf2d586e7fbd",
+          wide: "rockstargames-modules-core-gif-viewerc3a6d60e0087f92bbf7062fe2f36e200"
         };
-      (0, R.importAll)(a(18016));
-      const tr = e => {
+      (0, ae.importAll)(a(18016));
+      const _r = e => {
           let {
             isWideCard: t = !1,
             size: s = 640,
@@ -8412,24 +8602,24 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             isMobile: n
-          } = (0, R.useWindowResize)(), d = (0, o.useMemo)((() => {
+          } = (0, ae.useWindowResize)(), c = (0, o.useMemo)((() => {
             let e = "";
             return t && (e = n ? a(72027)(`./${i}/mobile.png`) : a(83408)(`./${i}/desktop.png`)), e || (e = a(14512)(`./${i}.jpg`), e += `?im=Resize=${s}`), e
-          }), [n, i]), [c] = (0, R.usePreloadImg)(d);
-          return (0, u.jsx)("div", {
+          }), [n, i]), [l] = (0, ae.usePreloadImg)(c);
+          return (0, y.jsx)("div", {
             role: "img",
             "aria-label": r,
-            className: [er.img, c ? er.startAnimation : "", t ? er.wide : ""].join(" "),
+            className: [pr.img, l ? pr.startAnimation : "", t ? pr.wide : ""].join(" "),
             style: {
-              backgroundImage: `url(${d})`
+              backgroundImage: `url(${c})`
             }
           })
         },
-        ar = {
-          fobLink: "rockstargames-sites-red-dead-redemption-2fded54fb94f7325c5a0b57590585b175",
-          wide: "rockstargames-sites-red-dead-redemption-2a9b41f96042bda8a8c77b7b7b10f84d5"
+        hr = {
+          fobLink: "rockstargames-modules-core-gif-viewerfded54fb94f7325c5a0b57590585b175",
+          wide: "rockstargames-modules-core-gif-viewera9b41f96042bda8a8c77b7b7b10f84d5"
         },
-        sr = e => {
+        vr = e => {
           let {
             game: t,
             to: a
@@ -8438,105 +8628,105 @@ _global.SENTRY_RELEASE = {
             titleSlug: s,
             urlOfficial: r = ""
           } = t, i = ["VI"].includes(s);
-          return (0, u.jsx)(g, {
+          return (0, y.jsx)(I, {
             "data-gtm-category": "Games",
             "data-gtm-action": "Game Click-through",
             "data-gtm-label": s,
             "data-testid": `${s}-gamecard`,
             to: a ?? r,
             target: "_self",
-            className: [ar.fobLink, i ? ar.wide : ""].join(" "),
-            children: (0, u.jsx)(tr, {
+            className: [hr.fobLink, i ? hr.wide : ""].join(" "),
+            children: (0, y.jsx)(_r, {
               title: t.title,
               titleSlug: s,
               isWideCard: i
             })
           })
         },
-        rr = {
-          videoList: "rockstargames-sites-red-dead-redemption-2a77794780421c410f7ea55ed11ae6340",
-          sectionHeader: "rockstargames-sites-red-dead-redemption-2ed556e2220733d99eae5df36ba41f9c7",
-          arrowNav: "rockstargames-sites-red-dead-redemption-2ffeb6a2e829d49f94fea4ee7f5a0d2c8",
-          items: "rockstargames-sites-red-dead-redemption-2ffe2263cdad39631ef304714ba89465d",
-          trackWrapper: "rockstargames-sites-red-dead-redemption-2cbdef484a85e8f352a06609b394d4da7",
-          partial: "rockstargames-sites-red-dead-redemption-2b33af3fff1e38a693bdc09f20d8e6f81",
-          track: "rockstargames-sites-red-dead-redemption-2f3f263effe27f3c21f2ab822b9ee5dcf",
-          arrow: "rockstargames-sites-red-dead-redemption-2c8012415449630a832011f490b9d2b72",
-          previous: "rockstargames-sites-red-dead-redemption-2f30d899a31937a4cf395643951224469",
-          next: "rockstargames-sites-red-dead-redemption-2d9d5a85633fc0f0b7f98219d735e6e05",
-          disabled: "rockstargames-sites-red-dead-redemption-2c806076a1e3e23c77528ee12e32771a3"
+        kr = {
+          videoList: "rockstargames-modules-core-gif-viewera77794780421c410f7ea55ed11ae6340",
+          sectionHeader: "rockstargames-modules-core-gif-viewered556e2220733d99eae5df36ba41f9c7",
+          arrowNav: "rockstargames-modules-core-gif-viewerffeb6a2e829d49f94fea4ee7f5a0d2c8",
+          items: "rockstargames-modules-core-gif-viewerffe2263cdad39631ef304714ba89465d",
+          trackWrapper: "rockstargames-modules-core-gif-viewercbdef484a85e8f352a06609b394d4da7",
+          partial: "rockstargames-modules-core-gif-viewerb33af3fff1e38a693bdc09f20d8e6f81",
+          track: "rockstargames-modules-core-gif-viewerf3f263effe27f3c21f2ab822b9ee5dcf",
+          arrow: "rockstargames-modules-core-gif-viewerc8012415449630a832011f490b9d2b72",
+          previous: "rockstargames-modules-core-gif-viewerf30d899a31937a4cf395643951224469",
+          next: "rockstargames-modules-core-gif-viewerd9d5a85633fc0f0b7f98219d735e6e05",
+          disabled: "rockstargames-modules-core-gif-viewerc806076a1e3e23c77528ee12e32771a3"
         },
-        ir = (0, d.withIntl)((e => {
+        br = j((e => {
           let {
             vids: t,
             games: a,
             title: s,
             gameTitleNecessary: r
           } = e;
-          const i = (0, d.useIntl)(),
+          const i = (0, d.c)(),
             {
               track: n
-            } = (0, F.useGtmTrack)(),
+            } = (0, se.useGtmTrack)(),
             c = void 0 !== a ? "games" : "videos",
             [l, m] = (0, o.useState)(),
-            [p, g] = (0, o.useState)(),
-            [f, _] = (0, o.useState)(0),
-            h = (0, o.useRef)(null),
-            k = (0, o.useRef)(null);
+            [u, g] = (0, o.useState)(),
+            [f, p] = (0, o.useState)(0),
+            _ = (0, o.useRef)(null),
+            h = (0, o.useRef)(null);
           (0, o.useEffect)((() => {
             g({
-              nextEl: k.current,
-              prevEl: h.current
+              nextEl: h.current,
+              prevEl: _.current
             })
-          }), [k, h]), (0, o.useEffect)((() => {
+          }), [h, _]), (0, o.useEffect)((() => {
             const e = () => {
               const e = e => window.matchMedia(`(max-width: ${e})`).matches;
               let t = 4;
-              e("768px") ? t = 1 : e("990px") || e("1440px") ? t = 2.2 : e("1920px") && (t = 3.2), _(t)
+              e("768px") ? t = 1 : e("990px") || e("1440px") ? t = 2.2 : e("1920px") && (t = 3.2), p(t)
             };
             return window.addEventListener("resize", e), e(), () => {
               window.removeEventListener("resize", e)
             }
           }), [f]);
-          const b = e => {
+          const v = e => {
             l?.slideTo(e)
           };
-          let v;
-          return v = "games" === c ? (0, u.jsx)(u.Fragment, {
-            children: a.results.map(((e, t) => "775700as" !== e.id && (0, u.jsx)(P.Ky, {
-              className: rr.slide,
-              onFocus: () => b(t),
-              children: (0, u.jsx)(sr, {
+          let k;
+          return k = "games" === c ? (0, y.jsx)(y.Fragment, {
+            children: a.results.map(((e, t) => "775700as" !== e.id && (0, y.jsx)(K.Ky, {
+              className: kr.slide,
+              onFocus: () => v(t),
+              children: (0, y.jsx)(vr, {
                 game: e,
                 dontOverrideTo: !0,
                 to: `/videos?type=game&gameId=${e.id}`
               })
             }, e.id)))
-          }) : (0, u.jsx)(u.Fragment, {
-            children: t.map(((e, t) => (0, u.jsx)(P.Ky, {
-              className: rr.slide,
-              onFocus: () => b(t),
-              children: (0, u.jsx)(Ha.VideoCard.Link, {
+          }) : (0, y.jsx)(y.Fragment, {
+            children: t.map(((e, t) => (0, y.jsx)(K.Ky, {
+              className: kr.slide,
+              onFocus: () => v(t),
+              children: (0, y.jsx)(ns.VideoCard.Link, {
                 video: e,
                 gameTitleNecessary: r
               })
             }, e.id)))
-          }), (0, u.jsxs)("section", {
-            className: rr.videoList,
-            children: [(0, u.jsxs)("h3", {
-              className: rr.sectionHeader,
-              children: [s, (0, u.jsxs)("div", {
-                className: rr.arrowNav,
-                children: [(0, u.jsx)("button", {
-                  className: [rr.arrow, rr.previous].join(" "),
+          }), (0, y.jsxs)("section", {
+            className: kr.videoList,
+            children: [(0, y.jsxs)("h3", {
+              className: kr.sectionHeader,
+              children: [s, (0, y.jsxs)("div", {
+                className: kr.arrowNav,
+                children: [(0, y.jsx)("button", {
+                  className: [kr.arrow, kr.previous].join(" "),
+                  type: "button",
+                  ref: _,
+                  "aria-label": i.formatMessage(fr.previous_button_label)
+                }), (0, y.jsx)("button", {
+                  className: [kr.arrow, kr.next].join(" "),
                   type: "button",
                   ref: h,
-                  "aria-label": i.formatMessage(Js.previous_button_label)
-                }), (0, u.jsx)("button", {
-                  className: [rr.arrow, rr.next].join(" "),
-                  type: "button",
-                  ref: k,
-                  "aria-label": i.formatMessage(Js.next_button_label),
+                  "aria-label": i.formatMessage(fr.next_button_label),
                   onKeyDown: e => {
                     if ("Tab" === e.key && !e.shiftKey) {
                       const t = l?.slides[l?.activeIndex].querySelector('a, button, [role="button"]');
@@ -8545,21 +8735,21 @@ _global.SENTRY_RELEASE = {
                   }
                 })]
               })]
-            }), (0, u.jsx)("div", {
-              className: [rr.items, f % 1 != 0 ? rr.partial : ""].join(" "),
-              children: (0, u.jsx)("div", {
-                className: rr.trackWrapper,
-                children: f && (0, u.jsx)(P.wx, {
-                  className: rr.track,
+            }), (0, y.jsx)("div", {
+              className: [kr.items, f % 1 != 0 ? kr.partial : ""].join(" "),
+              children: (0, y.jsx)("div", {
+                className: kr.trackWrapper,
+                children: f && (0, y.jsx)(K.wx, {
+                  className: kr.track,
                   slidesPerView: f,
                   spaceBetween: 24,
                   onInit: e => {
                     m(e)
                   },
                   grabCursor: !0,
-                  navigation: p,
-                  modules: [Je._2],
-                  slideClass: (0, C.classList)("swiper-slide"),
+                  navigation: u,
+                  modules: [pt._2],
+                  slideClass: (0, G.classList)("swiper-slide"),
                   onSlideNextTransitionEnd: () => {
                     n({
                       event_action: "next",
@@ -8587,24 +8777,24 @@ _global.SENTRY_RELEASE = {
                       element_placement: s?.toLowerCase() ?? ""
                     })
                   },
-                  children: v
+                  children: k
                 })
               })
             })]
           })
-        }), c),
-        nr = e => {
+        }), S),
+        wr = e => {
           let {
             children: t,
             ...a
           } = e;
-          return (0, u.jsx)("span", {
+          return (0, y.jsx)("span", {
             ...a,
-            className: "rockstargames-sites-red-dead-redemption-2f7f61ab4bc6dd2a49f80662ead7d8a51",
+            className: "rockstargames-modules-core-gif-viewerf7f61ab4bc6dd2a49f80662ead7d8a51",
             children: t
           })
         },
-        or = (0, R.withTranslations)((e => {
+        xr = (0, ae.withTranslations)((e => {
           let {
             error: t,
             t: a,
@@ -8619,42 +8809,42 @@ _global.SENTRY_RELEASE = {
             n = (0, o.useRef)(null);
           return (0, o.useEffect)((() => {
             n && n?.current && n.current.focus()
-          }), [n]), (0, u.jsxs)("div", {
-            className: "rockstargames-sites-red-dead-redemption-2d988ce20c420c26fc5e455279bf94cb9",
-            children: [(0, u.jsx)("h3", {
+          }), [n]), (0, y.jsxs)("div", {
+            className: "rockstargames-modules-core-gif-viewerd988ce20c420c26fc5e455279bf94cb9",
+            children: [(0, y.jsx)("h3", {
               tabIndex: -1,
               ref: n,
               children: `${r} (${i})`
-            }), (0, u.jsx)(g, {
+            }), (0, y.jsx)(I, {
               to: "/",
               children: a("Home")
-            }), "clr" !== s && (0, u.jsx)(zs, {})]
+            }), "clr" !== s && (0, y.jsx)(Xs, {})]
           })
         })),
-        dr = {
-          videoPreview: "rockstargames-sites-red-dead-redemption-2c6739cc628fda235abe2bafeb30ad7cf",
-          card: "rockstargames-sites-red-dead-redemption-2ec6e68ffa1188155be202dfef3f92829",
-          info: "rockstargames-sites-red-dead-redemption-2ab8da127fbcdb98f874bc3f1377669a2",
-          title: "rockstargames-sites-red-dead-redemption-2e84fa4b2b140994c96a13607410d30a3",
-          screencap: "rockstargames-sites-red-dead-redemption-2a322c3d2275cedd594a3b17800154066",
-          screencapLoaded: "rockstargames-sites-red-dead-redemption-2f68c57f5459778024e5a98918ae61ab2",
-          gameTitle: "rockstargames-sites-red-dead-redemption-2debff452a4923aded7de826c081bab5d"
+        yr = {
+          videoPreview: "rockstargames-modules-core-gif-viewerc6739cc628fda235abe2bafeb30ad7cf",
+          card: "rockstargames-modules-core-gif-viewerec6e68ffa1188155be202dfef3f92829",
+          info: "rockstargames-modules-core-gif-viewerab8da127fbcdb98f874bc3f1377669a2",
+          title: "rockstargames-modules-core-gif-viewere84fa4b2b140994c96a13607410d30a3",
+          screencap: "rockstargames-modules-core-gif-viewera322c3d2275cedd594a3b17800154066",
+          screencapLoaded: "rockstargames-modules-core-gif-viewerf68c57f5459778024e5a98918ae61ab2",
+          gameTitle: "rockstargames-modules-core-gif-viewerdebff452a4923aded7de826c081bab5d"
         },
-        cr = e => {
+        Nr = e => {
           let {
             video: t,
             size: a = 640
           } = e;
           const s = () => t.screencap.includes("akamai") ? `${t.screencap}?im=Resize=${a}` : t.screencap,
-            [r] = (0, R.usePreloadImg)(s());
-          return (0, u.jsx)("div", {
-            className: [dr.screencap, r ? dr.screencapLoaded : ""].join(" "),
+            [r] = (0, ae.usePreloadImg)(s());
+          return (0, y.jsx)("div", {
+            className: [yr.screencap, r ? yr.screencapLoaded : ""].join(" "),
             style: {
               background: `url(${s()}) center/cover`
             }
           })
         },
-        lr = e => {
+        jr = e => {
           let {
             gameTitleNecessary: t = !0,
             openInNewWindow: a = !1,
@@ -8664,43 +8854,43 @@ _global.SENTRY_RELEASE = {
           } = e;
           const n = i ?? `/videos/${s.id}`,
             o = {
-              className: dr.videoPreview,
+              className: yr.videoPreview,
               "data-gtm-category": "Videos",
               "data-gtm-action": "Video Click-through",
               "data-gtm-label": n
             },
-            d = (0, u.jsxs)("div", {
-              className: dr.card,
-              children: [(0, u.jsx)(cr, {
+            c = (0, y.jsxs)("div", {
+              className: yr.card,
+              children: [(0, y.jsx)(Nr, {
                 video: s,
                 size: r
-              }), (0, u.jsxs)("div", {
-                className: dr.info,
-                children: [t ? (0, u.jsx)("div", {
-                  className: dr.gameTitle,
+              }), (0, y.jsxs)("div", {
+                className: yr.info,
+                children: [t ? (0, y.jsx)("div", {
+                  className: yr.gameTitle,
                   dangerouslySetInnerHTML: {
                     __html: s.game.title
                   }
-                }) : "", (0, u.jsx)("h5", {
-                  className: dr.title,
+                }) : "", (0, y.jsx)("h5", {
+                  className: yr.title,
                   dangerouslySetInnerHTML: {
                     __html: s.title
                   }
                 })]
               })]
             });
-          return a ? (0, u.jsx)("a", {
+          return a ? (0, y.jsx)("a", {
             href: n,
             target: "_blank",
             ...o,
-            children: d
-          }) : (0, u.jsx)(g, {
+            children: c
+          }) : (0, y.jsx)(I, {
             to: n,
             ...o,
-            children: d
+            children: c
           })
         };
-      class mr extends o.Component {
+      class Sr extends o.Component {
         constructor(e) {
           super(e), this.state = {
             error: {
@@ -8724,42 +8914,42 @@ _global.SENTRY_RELEASE = {
           }
         }
         render() {
-          return null !== this.state.error.code ? (0, u.jsx)(or, {
+          return null !== this.state.error.code ? (0, y.jsx)(xr, {
             error: this.state.error
           }) : this.props.children
         }
       }
-      const pr = function(e) {
+      const Tr = function(e) {
         let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
         return function(a) {
-          return (0, u.jsx)(mr, {
+          return (0, y.jsx)(Sr, {
             header: t,
-            children: (0, u.jsx)(e, {
+            children: (0, y.jsx)(e, {
               ...a
             })
           })
         }
       };
-      var ur = a(1267),
-        gr = a(20688),
-        fr = a(48016);
-      const _r = (0, o.forwardRef)(((e, t) => {
+      var Cr = a(1267),
+        Mr = a(20688),
+        Ir = a(48016);
+      const Er = (0, o.forwardRef)(((e, t) => {
         const {
           children: a,
           tag: s = "div"
-        } = e, r = ur.m[s];
-        return (0, u.jsx)(gr.O, {
-          features: fr.i,
-          children: (0, u.jsx)(r, {
+        } = e, r = Cr.m[s];
+        return (0, y.jsx)(Mr.O, {
+          features: Ir.i,
+          children: (0, y.jsx)(r, {
             ref: t,
             ...e,
             children: a
           })
         })
       }));
-      _r.displayName = "LiteMotion";
-      const hr = _r,
-        kr = {
+      Er.displayName = "LiteMotion";
+      const Lr = Er,
+        zr = {
           visible: {
             opacity: 1
           },
@@ -8767,32 +8957,32 @@ _global.SENTRY_RELEASE = {
             opacity: 0
           }
         },
-        br = {
+        Pr = {
           ease: "easeIn",
           duration: .4
         },
-        vr = e => {
+        Or = e => {
           let {
             children: t
           } = e;
-          return (0, u.jsx)(Re.q.div, Object.assign({
-            className: "rockstargames-sites-red-dead-redemption-2f0ee4e641f1ac92151be887c9ebb8392",
-            variants: kr,
+          return (0, y.jsx)(at.q.div, Object.assign({
+            className: "rockstargames-modules-core-gif-viewerf0ee4e641f1ac92151be887c9ebb8392",
+            variants: zr,
             initial: "hidden",
             whileInView: "visible",
             viewport: {
               margin: "-20%",
               once: !0
             },
-            transition: br
+            transition: Pr
           }, {
             children: t
           }))
         },
-        xr = e => t => (0, u.jsx)(vr, {
-          children: (0, u.jsx)(e, Object.assign({}, t))
+        Dr = e => t => (0, y.jsx)(Or, {
+          children: (0, y.jsx)(e, Object.assign({}, t))
         }),
-        yr = {
+        Ar = {
           visible: {
             opacity: 1,
             y: 0
@@ -8802,33 +8992,33 @@ _global.SENTRY_RELEASE = {
             y: 40
           }
         },
-        wr = {
+        Br = {
           ease: "easeIn",
           duration: .75
         },
-        Nr = e => {
+        Vr = e => {
           let {
             children: t
           } = e;
-          return (0, u.jsx)(Re.q.div, {
-            className: "rockstargames-sites-red-dead-redemption-2a479a10c5475b17a0564b60fecf98c8b",
-            variants: yr,
+          return (0, y.jsx)(at.q.div, {
+            className: "rockstargames-modules-core-gif-viewera479a10c5475b17a0564b60fecf98c8b",
+            variants: Ar,
             initial: "hidden",
             whileInView: "visible",
             viewport: {
               margin: "-20%",
               once: !0
             },
-            transition: wr,
+            transition: Br,
             children: t
           })
         },
-        jr = e => t => (0, u.jsx)(Nr, {
-          children: (0, u.jsx)(e, {
+        Rr = e => t => (0, y.jsx)(Vr, {
+          children: (0, y.jsx)(e, {
             ...t
           })
         }),
-        Sr = {
+        Fr = {
           cardOpen: {
             ease: [.77, 0, .175, 1],
             duration: .5
@@ -8846,7 +9036,7 @@ _global.SENTRY_RELEASE = {
             duration: .05
           }
         },
-        Tr = {
+        $r = {
           plainCard: {
             expanded: {
               initial: {
@@ -9002,28 +9192,28 @@ _global.SENTRY_RELEASE = {
             }
           }
         },
-        Cr = function() {
+        Ur = function() {
           let e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "collapsed";
-          return Tr[arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "imageMask"][e]
+          return $r[arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "imageMask"][e]
         };
-      var Mr = a(45164);
-      const Ir = JSON.parse('{"assets":[],"layers":[{"ddd":0,"ind":0,"ty":4,"nm":"Shape Layer 1","ks":{"o":{"k":100},"r":{"k":0},"p":{"k":[300,300,0]},"a":{"k":[0,0,0]},"s":{"k":[244,244,100]}},"ao":0,"shapes":[{"d":1,"ty":"el","s":{"k":[100,100]},"p":{"k":[0,0]},"nm":"Ellipse Path 1","mn":"ADBE Vector Shape - Ellipse"},{"ty":"tm","s":{"k":[{"i":{"x":[0.439],"y":[1.016]},"o":{"x":[0.561],"y":[0.015]},"n":["0p439_1p016_0p561_0p015"],"t":5,"s":[100],"e":[0]},{"t":33.0000013441176}],"ix":1},"e":{"k":[{"i":{"x":[0.439],"y":[1.017]},"o":{"x":[0.561],"y":[0.016]},"n":["0p439_1p017_0p561_0p016"],"t":0,"s":[100],"e":[0]},{"t":30.0000012219251}],"ix":2},"o":{"k":0,"ix":3},"m":1,"ix":2,"nm":"Trim Paths 1","mn":"ADBE Vector Filter - Trim"},{"ty":"st","fillEnabled":true,"c":{"k":[1,1,1,1]},"o":{"k":100},"w":{"k":16},"lc":2,"lj":1,"ml":4,"nm":"Stroke 1","mn":"ADBE Vector Graphic - Stroke"}],"ip":0,"op":900.000036657751,"st":0,"bm":0,"sr":1}],"v":"4.5.3","ddd":0,"ip":1.00000004073083,"op":33.0000013441175,"fr":29.9700012207031,"w":600,"h":600}'),
-        Er = JSON.parse('{"v":"5.7.3","fr":60,"ip":0,"op":64,"w":300,"h":300,"nm":"Dot_Loading","ddd":0,"assets":[],"layers":[{"ddd":0,"ind":1,"ty":4,"nm":"center","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":1,"k":[{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":10,"s":[144,144,0],"to":[0,-3.333,0],"ti":[0,0,0]},{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":22,"s":[144,124,0],"to":[0,0,0],"ti":[0,-3.333,0]},{"t":34,"s":[144,144,0]}],"ix":2},"a":{"a":0,"k":[12.5,6,0],"ix":1},"s":{"a":0,"k":[764.558,764.558,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,-0.828],[0.828,0],[0,0.828],[-0.828,0]],"o":[[0,0.828],[-0.828,0],[0,-0.828],[0.828,0]],"v":[[1.5,0],[0,1.5],[-1.5,0],[0,-1.5]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fond 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[17.667,5.833],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Groupe 1","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":76,"st":-62,"bm":0},{"ddd":0,"ind":2,"ty":4,"nm":"right","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":1,"k":[{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":5,"s":[144,144,0],"to":[0,-3.333,0],"ti":[0,0,0]},{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":17,"s":[144,124,0],"to":[0,0,0],"ti":[0,-3.333,0]},{"t":29,"s":[144,144,0]}],"ix":2},"a":{"a":0,"k":[12.5,6,0],"ix":1},"s":{"a":0,"k":[764.558,764.558,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,-0.828],[0.828,0],[0,0.828],[-0.828,0]],"o":[[0,0.828],[-0.828,0],[0,-0.828],[0.828,0]],"v":[[1.5,0],[0,1.5],[-1.5,0],[0,-1.5]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fond 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[12.333,5.833],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Groupe 2","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":76,"st":-62,"bm":0},{"ddd":0,"ind":3,"ty":4,"nm":"left","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":1,"k":[{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":0,"s":[144,144,0],"to":[0,-3.333,0],"ti":[0,0,0]},{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":12,"s":[144,124,0],"to":[0,0,0],"ti":[0,-3.333,0]},{"t":24,"s":[144,144,0]}],"ix":2},"a":{"a":0,"k":[12.5,6,0],"ix":1},"s":{"a":0,"k":[764.558,764.558,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,-0.828],[0.828,0],[0,0.828],[-0.828,0]],"o":[[0,0.828],[-0.828,0],[0,-0.828],[0.828,0]],"v":[[1.5,0],[0,1.5],[-1.5,0],[0,-1.5]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fond 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[7,5.833],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Groupe 3","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":76,"st":-62,"bm":0}],"markers":[]}'),
-        Lr = {
+      var Gr = a(45164);
+      const Hr = JSON.parse('{"assets":[],"layers":[{"ddd":0,"ind":0,"ty":4,"nm":"Shape Layer 1","ks":{"o":{"k":100},"r":{"k":0},"p":{"k":[300,300,0]},"a":{"k":[0,0,0]},"s":{"k":[244,244,100]}},"ao":0,"shapes":[{"d":1,"ty":"el","s":{"k":[100,100]},"p":{"k":[0,0]},"nm":"Ellipse Path 1","mn":"ADBE Vector Shape - Ellipse"},{"ty":"tm","s":{"k":[{"i":{"x":[0.439],"y":[1.016]},"o":{"x":[0.561],"y":[0.015]},"n":["0p439_1p016_0p561_0p015"],"t":5,"s":[100],"e":[0]},{"t":33.0000013441176}],"ix":1},"e":{"k":[{"i":{"x":[0.439],"y":[1.017]},"o":{"x":[0.561],"y":[0.016]},"n":["0p439_1p017_0p561_0p016"],"t":0,"s":[100],"e":[0]},{"t":30.0000012219251}],"ix":2},"o":{"k":0,"ix":3},"m":1,"ix":2,"nm":"Trim Paths 1","mn":"ADBE Vector Filter - Trim"},{"ty":"st","fillEnabled":true,"c":{"k":[1,1,1,1]},"o":{"k":100},"w":{"k":16},"lc":2,"lj":1,"ml":4,"nm":"Stroke 1","mn":"ADBE Vector Graphic - Stroke"}],"ip":0,"op":900.000036657751,"st":0,"bm":0,"sr":1}],"v":"4.5.3","ddd":0,"ip":1.00000004073083,"op":33.0000013441175,"fr":29.9700012207031,"w":600,"h":600}'),
+        qr = JSON.parse('{"v":"5.7.3","fr":60,"ip":0,"op":64,"w":300,"h":300,"nm":"Dot_Loading","ddd":0,"assets":[],"layers":[{"ddd":0,"ind":1,"ty":4,"nm":"center","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":1,"k":[{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":10,"s":[144,144,0],"to":[0,-3.333,0],"ti":[0,0,0]},{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":22,"s":[144,124,0],"to":[0,0,0],"ti":[0,-3.333,0]},{"t":34,"s":[144,144,0]}],"ix":2},"a":{"a":0,"k":[12.5,6,0],"ix":1},"s":{"a":0,"k":[764.558,764.558,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,-0.828],[0.828,0],[0,0.828],[-0.828,0]],"o":[[0,0.828],[-0.828,0],[0,-0.828],[0.828,0]],"v":[[1.5,0],[0,1.5],[-1.5,0],[0,-1.5]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fond 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[17.667,5.833],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Groupe 1","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":76,"st":-62,"bm":0},{"ddd":0,"ind":2,"ty":4,"nm":"right","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":1,"k":[{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":5,"s":[144,144,0],"to":[0,-3.333,0],"ti":[0,0,0]},{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":17,"s":[144,124,0],"to":[0,0,0],"ti":[0,-3.333,0]},{"t":29,"s":[144,144,0]}],"ix":2},"a":{"a":0,"k":[12.5,6,0],"ix":1},"s":{"a":0,"k":[764.558,764.558,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,-0.828],[0.828,0],[0,0.828],[-0.828,0]],"o":[[0,0.828],[-0.828,0],[0,-0.828],[0.828,0]],"v":[[1.5,0],[0,1.5],[-1.5,0],[0,-1.5]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fond 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[12.333,5.833],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Groupe 2","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":76,"st":-62,"bm":0},{"ddd":0,"ind":3,"ty":4,"nm":"left","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":0,"k":0,"ix":10},"p":{"a":1,"k":[{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":0,"s":[144,144,0],"to":[0,-3.333,0],"ti":[0,0,0]},{"i":{"x":0.4,"y":1},"o":{"x":0.6,"y":0},"t":12,"s":[144,124,0],"to":[0,0,0],"ti":[0,-3.333,0]},{"t":24,"s":[144,144,0]}],"ix":2},"a":{"a":0,"k":[12.5,6,0],"ix":1},"s":{"a":0,"k":[764.558,764.558,100],"ix":6}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,-0.828],[0.828,0],[0,0.828],[-0.828,0]],"o":[[0,0.828],[-0.828,0],[0,-0.828],[0.828,0]],"v":[[1.5,0],[0,1.5],[-1.5,0],[0,-1.5]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fond 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[7,5.833],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Groupe 3","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":76,"st":-62,"bm":0}],"markers":[]}'),
+        Wr = {
           SPINNING: "spinning",
           THREE_DOTS: "threeDots"
         },
-        zr = e => {
+        Xr = e => {
           let t, {
-            type: a = Lr.SPINNING
+            type: a = Wr.SPINNING
           } = e;
           switch (a) {
-            case Lr.THREE_DOTS:
-              t = Er;
+            case Wr.THREE_DOTS:
+              t = qr;
               break;
-            case Lr.SPINNING:
+            case Wr.SPINNING:
             default:
-              t = Ir
+              t = Hr
           }
           const s = {
             loop: !0,
@@ -9033,53 +9223,11 @@ _global.SENTRY_RELEASE = {
               preserveAspectRatio: "xMidYMid slice"
             }
           };
-          return (0, u.jsx)(Mr.c, {
+          return (0, y.jsx)(Gr.c, {
             options: s,
             height: 50,
             width: 50
           })
-        }
-    },
-    53592: (e, t, a) => {
-      "use strict";
-      a.d(t, {
-        U: () => s,
-        c: () => i
-      });
-      const s = {
-          www: "www",
-          socialClub: "socialClub",
-          support: "support",
-          store: "store"
-        },
-        r = [{
-          id: "prod",
-          sites: {
-            www: "www",
-            socialClub: "socialclub",
-            support: "support",
-            store: "store"
-          },
-          cookieIdentifier: "prod"
-        }],
-        i = () => {
-          let e;
-          const {
-            location: t
-          } = window, a = t.hostname.substring(0, t.hostname.indexOf(".rockstargames.com")), s = r.findIndex((t => Object.entries(t.sites).findIndex((t => {
-            let [s, r] = t;
-            return r === a && (e = {
-              site: s,
-              subDomain: r
-            }, !0)
-          })) >= 0)), i = r[s >= 0 ? s : 0];
-          return e || (e = {
-            site: "www",
-            subDomain: "local"
-          }), {
-            ...i,
-            currentSite: e
-          }
         }
     },
     90048: e => {
@@ -9326,8 +9474,8 @@ _global.SENTRY_RELEASE = {
         for (i.forEach((function(e) {
             o.add(e)
           })); o.size > 0;) {
-          var d = o;
-          o = new Set, d.forEach((function(e) {
+          var c = o;
+          o = new Set, c.forEach((function(e) {
             n.has(e) || (n.add(e), (s[e] || new Set).forEach((function(e) {
               o.add(e)
             })))
@@ -9623,8 +9771,8 @@ _global.SENTRY_RELEASE = {
         for (i.forEach((function(e) {
             o.add(e)
           })); o.size > 0;) {
-          var d = o;
-          o = new Set, d.forEach((function(e) {
+          var c = o;
+          o = new Set, c.forEach((function(e) {
             n.has(e) || (n.add(e), (s[e] || new Set).forEach((function(e) {
               o.add(e)
             })))
@@ -9642,7 +9790,7 @@ _global.SENTRY_RELEASE = {
         }
       })), e.exports = t, e.exports.UserGetVote = i(t, "UserGetVote"), e.exports.UserCastVote = i(t, "UserCastVote")
     },
-    13784: e => {
+    13316: e => {
       var t = {
         kind: "Document",
         definitions: [{
@@ -9860,7 +10008,7 @@ _global.SENTRY_RELEASE = {
                   kind: "Field",
                   name: {
                     kind: "Name",
-                    value: "img_rating"
+                    value: "ratingDescriptors"
                   },
                   arguments: [],
                   directives: []
@@ -9868,7 +10016,7 @@ _global.SENTRY_RELEASE = {
                   kind: "Field",
                   name: {
                     kind: "Name",
-                    value: "rating_descriptors"
+                    value: "ratingFooter"
                   },
                   arguments: [],
                   directives: []
@@ -9876,7 +10024,7 @@ _global.SENTRY_RELEASE = {
                   kind: "Field",
                   name: {
                     kind: "Name",
-                    value: "rating_footer"
+                    value: "ratingImg"
                   },
                   arguments: [],
                   directives: []
@@ -9884,7 +10032,7 @@ _global.SENTRY_RELEASE = {
                   kind: "Field",
                   name: {
                     kind: "Name",
-                    value: "url_rating"
+                    value: "ratingUrl"
                   },
                   arguments: [],
                   directives: []
@@ -9895,7 +10043,7 @@ _global.SENTRY_RELEASE = {
         }],
         loc: {
           start: 0,
-          end: 398
+          end: 394
         }
       };
 
@@ -9914,7 +10062,7 @@ _global.SENTRY_RELEASE = {
         }))
       }
       t.loc.source = {
-        body: 'query GameData(\n    $titleSlug: String!\n    $locale: String!\n    $withMetaTitle: Boolean = false\n    $metaUrl: String = "/"\n) {\n    meta: metaUrl(locale: $locale, domain: "www", url: $metaUrl)\n        @include(if: $withMetaTitle) {\n        title\n    }\n    game(titleSlug: $titleSlug, locale: $locale) {\n        img_rating\n        rating_descriptors\n        rating_footer\n        url_rating\n    }\n}\n',
+        body: 'query GameData(\n    $titleSlug: String!\n    $locale: String!\n    $withMetaTitle: Boolean = false\n    $metaUrl: String = "/"\n) {\n    meta: metaUrl(locale: $locale, domain: "www", url: $metaUrl)\n        @include(if: $withMetaTitle) {\n        title\n    }\n    game(titleSlug: $titleSlug, locale: $locale) {\n        ratingDescriptors\n        ratingFooter\n        ratingImg\n        ratingUrl\n    }\n}\n',
         name: "GraphQL request",
         locationOffset: {
           line: 1,
@@ -9946,8 +10094,8 @@ _global.SENTRY_RELEASE = {
         for (i.forEach((function(e) {
             o.add(e)
           })); o.size > 0;) {
-          var d = o;
-          o = new Set, d.forEach((function(e) {
+          var c = o;
+          o = new Set, c.forEach((function(e) {
             n.has(e) || (n.add(e), (s[e] || new Set).forEach((function(e) {
               o.add(e)
             })))
@@ -9959,7 +10107,7 @@ _global.SENTRY_RELEASE = {
         })), a
       }(t, "GameData")
     },
-    78124: e => {
+    504: e => {
       var t = {
         kind: "Document",
         definitions: [{
@@ -10520,8 +10668,8 @@ _global.SENTRY_RELEASE = {
         for (i.forEach((function(e) {
             o.add(e)
           })); o.size > 0;) {
-          var d = o;
-          o = new Set, d.forEach((function(e) {
+          var c = o;
+          o = new Set, c.forEach((function(e) {
             n.has(e) || (n.add(e), (s[e] || new Set).forEach((function(e) {
               o.add(e)
             })))
@@ -10823,8 +10971,8 @@ _global.SENTRY_RELEASE = {
         for (i.forEach((function(e) {
             o.add(e)
           })); o.size > 0;) {
-          var d = o;
-          o = new Set, d.forEach((function(e) {
+          var c = o;
+          o = new Set, c.forEach((function(e) {
             n.has(e) || (n.add(e), (s[e] || new Set).forEach((function(e) {
               o.add(e)
             })))
@@ -11147,7 +11295,7 @@ _global.SENTRY_RELEASE = {
       s.definitions = s.definitions.concat(i(a(73784).definitions)), s.definitions = s.definitions.concat(i(a(28540).definitions));
       var o = {};
 
-      function d(e, t) {
+      function c(e, t) {
         for (var a = 0; a < e.definitions.length; a++) {
           var s = e.definitions[a];
           if (s.name && s.name.value == t) return s
@@ -11161,7 +11309,7 @@ _global.SENTRY_RELEASE = {
       })), e.exports = s, e.exports.NewswireList = function(e, t) {
         var a = {
           kind: e.kind,
-          definitions: [d(e, t)]
+          definitions: [c(e, t)]
         };
         e.hasOwnProperty("loc") && (a.loc = e.loc);
         var s = o[t] || new Set,
@@ -11178,7 +11326,7 @@ _global.SENTRY_RELEASE = {
           }))
         }
         return r.forEach((function(t) {
-          var s = d(e, t);
+          var s = c(e, t);
           s && a.definitions.push(s)
         })), a
       }(s, "NewswireList")
@@ -11228,7 +11376,7 @@ _global.SENTRY_RELEASE = {
         "./djctq_14.svg": 72804,
         "./djctq_16.svg": 99900,
         "./djctq_18.svg": 72192,
-        "./djctq_er.svg": 49352,
+        "./djctq_er.svg": 71732,
         "./djctq_l.svg": 44428,
         "./esrb_ao.svg": 42144,
         "./esrb_e.svg": 49492,
@@ -11314,7 +11462,7 @@ _global.SENTRY_RELEASE = {
         "./djctq_14.svg": 72804,
         "./djctq_16.svg": 99900,
         "./djctq_18.svg": 72192,
-        "./djctq_er.svg": 49352,
+        "./djctq_er.svg": 71732,
         "./djctq_l.svg": 44428,
         "./esrb_ao.svg": 42144,
         "./esrb_e.svg": 49492,
@@ -11764,7 +11912,7 @@ _global.SENTRY_RELEASE = {
       "use strict";
       e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/608f591c35aff9d47091dd7fe9a8fb13.svg"
     },
-    49352: e => {
+    71732: e => {
       "use strict";
       e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/198ced82807c854e92e84e23f7434c91.svg"
     },

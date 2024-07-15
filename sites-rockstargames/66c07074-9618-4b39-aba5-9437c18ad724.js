@@ -21,31 +21,31 @@ _global.SENTRY_RELEASE = {
         n = Symbol.for("react.element"),
         r = Symbol.for("react.fragment"),
         s = Object.prototype.hasOwnProperty,
-        l = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        d = {
+        d = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        l = {
           key: !0,
           ref: !0,
           __self: !0,
           __source: !0
         };
 
-      function i(e, a, t) {
+      function f(e, a, t) {
         var o, r = {},
-          i = null,
-          f = null;
-        for (o in void 0 !== t && (i = "" + t), void 0 !== a.key && (i = "" + a.key), void 0 !== a.ref && (f = a.ref), a) s.call(a, o) && !d.hasOwnProperty(o) && (r[o] = a[o]);
+          f = null,
+          i = null;
+        for (o in void 0 !== t && (f = "" + t), void 0 !== a.key && (f = "" + a.key), void 0 !== a.ref && (i = a.ref), a) s.call(a, o) && !l.hasOwnProperty(o) && (r[o] = a[o]);
         if (e && e.defaultProps)
           for (o in a = e.defaultProps) void 0 === r[o] && (r[o] = a[o]);
         return {
           $$typeof: n,
           type: e,
-          key: i,
-          ref: f,
+          key: f,
+          ref: i,
           props: r,
-          _owner: l.current
+          _owner: d.current
         }
       }
-      a.Fragment = r, a.jsx = i, a.jsxs = i
+      a.Fragment = r, a.jsx = f, a.jsxs = f
     },
     95240: (e, a, t) => {
       e.exports = t(99576)
@@ -63,19 +63,19 @@ _global.SENTRY_RELEASE = {
           children: t,
           history: s
         } = e;
-        const [l, d] = (0, o.useState)({
+        const [d, l] = (0, o.useState)({
           action: s.action,
           location: s.location
         });
         return (0, o.useLayoutEffect)((() => s.listen(((e, a) => {
-          d({
+          l({
             location: e,
             action: a
           })
         }))), [s]), (0, r.jsx)(n.Router, {
           basename: a,
-          location: l.location,
-          navigationType: l.action,
+          location: d.location,
+          navigationType: d.action,
           navigator: s,
           children: t
         })

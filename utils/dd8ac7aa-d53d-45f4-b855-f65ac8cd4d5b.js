@@ -18,10 +18,10 @@ _global.SENTRY_RELEASE = {
   [543], {
     576: (e, t, r) => {
       var n = r(664),
-        a = Symbol.for("react.element"),
-        o = (Symbol.for("react.fragment"), Object.prototype.hasOwnProperty),
-        s = n.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        d = {
+        o = Symbol.for("react.element"),
+        a = (Symbol.for("react.fragment"), Object.prototype.hasOwnProperty),
+        d = n.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        s = {
           key: !0,
           ref: !0,
           __self: !0,
@@ -31,16 +31,16 @@ _global.SENTRY_RELEASE = {
         var n, i = {},
           l = null,
           u = null;
-        for (n in void 0 !== r && (l = "" + r), void 0 !== t.key && (l = "" + t.key), void 0 !== t.ref && (u = t.ref), t) o.call(t, n) && !d.hasOwnProperty(n) && (i[n] = t[n]);
+        for (n in void 0 !== r && (l = "" + r), void 0 !== t.key && (l = "" + t.key), void 0 !== t.ref && (u = t.ref), t) a.call(t, n) && !s.hasOwnProperty(n) && (i[n] = t[n]);
         if (e && e.defaultProps)
           for (n in t = e.defaultProps) void 0 === i[n] && (i[n] = t[n]);
         return {
-          $$typeof: a,
+          $$typeof: o,
           type: e,
           key: l,
           ref: u,
           props: i,
-          _owner: s.current
+          _owner: d.current
         }
       }
     },
@@ -50,57 +50,57 @@ _global.SENTRY_RELEASE = {
     543: (e, t, r) => {
       r.r(t), r.d(t, {
         DataLayerProvider: () => u,
-        ResizeProvider: () => a.a7,
-        ScrollProvider: () => o.Iq,
+        ResizeProvider: () => o.a7,
+        ScrollProvider: () => a.Iq,
         newswirePost: () => n,
         useDataLayer: () => l
       });
       var n = r(640),
-        a = r(628),
-        o = r(172),
-        s = r(664),
-        d = r(240);
-      const i = (0, s.createContext)({}),
-        l = () => (0, s.useContext)(i),
+        o = r(628),
+        a = r(172),
+        d = r(664),
+        s = r(240);
+      const i = (0, d.createContext)({}),
+        l = () => (0, d.useContext)(i),
         u = e => {
           let {
             children: t,
             ...r
           } = e;
           const n = l() ?? {},
-            a = (0, s.useMemo)((() => ({
+            o = (0, d.useMemo)((() => ({
               ...n,
               ...r
             })), [n, r]);
-          return (0, d.jsx)(i.Provider, {
-            value: a,
+          return (0, s.jsx)(i.Provider, {
+            value: o,
             children: t
           })
         }
     },
     640: (e, t, r) => {
       r.r(t), r.d(t, {
-        Consumer: () => s,
-        Provider: () => d,
+        Consumer: () => d,
+        Provider: () => s,
         useNewswirePost: () => i
       });
       var n = r(664),
-        a = r(240);
-      const o = (0, n.createContext)(),
+        o = r(240);
+      const a = (0, n.createContext)(),
         {
-          Consumer: s
-        } = o,
-        d = e => {
+          Consumer: d
+        } = a,
+        s = e => {
           let {
             article: t,
             children: r
           } = e;
-          return (0, a.jsx)(o.Provider, {
+          return (0, o.jsx)(a.Provider, {
             value: t,
             children: r
           })
         },
-        i = () => (0, n.useContext)(o)
+        i = () => (0, n.useContext)(a)
     },
     628: (e, t, r) => {
       r.d(t, {
@@ -108,9 +108,9 @@ _global.SENTRY_RELEASE = {
         bk: () => f
       });
       var n = r(664),
-        a = r(52),
-        o = r(240);
-      const s = {
+        o = r(52),
+        a = r(240);
+      const d = {
           xxs: {
             min: 0,
             max: 479
@@ -140,47 +140,47 @@ _global.SENTRY_RELEASE = {
             max: 99999
           }
         },
-        d = () => {
+        s = () => {
           const e = window.innerWidth,
             t = window.innerHeight,
-            r = s;
-          return Object.keys(s).map((t => {
+            r = d;
+          return Object.keys(d).map((t => {
             const {
               min: n,
-              max: a
-            } = s[t], o = e >= n && e <= a, d = e >= n;
+              max: o
+            } = d[t], a = e >= n && e <= o, s = e >= n;
             r[t] = {
-              activeExact: o,
-              activeMin: d,
+              activeExact: a,
+              activeMin: s,
               min: n,
-              max: a
+              max: o
             }
           })), {
-            isMobile: e < s.sm.min,
-            isTablet: e < s.md.max,
+            isMobile: e < d.sm.min,
+            isTablet: e < d.md.max,
             breakpoints: r,
             windowWidth: e,
             windowHeight: t
           }
         },
-        i = (0, n.createContext)(d()),
+        i = (0, n.createContext)(s()),
         {
           Consumer: l
         } = i,
-        u = (0, a.makeVar)(d()),
+        u = (0, o.makeVar)(s()),
         c = e => {
           let {
             children: t
           } = e;
-          const r = (0, a.useReactiveVar)(u);
+          const r = (0, o.useReactiveVar)(u);
           return (0, n.useEffect)((() => {
             const e = () => {
-              u(d())
+              u(s())
             };
             return window.addEventListener("resize", e), () => {
               window.removeEventListener("resize", e)
             }
-          }), []), (0, o.jsx)(i.Provider, {
+          }), []), (0, a.jsx)(i.Provider, {
             value: r,
             children: t
           })
@@ -189,29 +189,29 @@ _global.SENTRY_RELEASE = {
     },
     172: (e, t, r) => {
       r.d(t, {
-        C0: () => d,
+        C0: () => s,
         Iq: () => u,
         QZ: () => l
       });
       var n = r(52),
-        a = r(664),
-        o = r(240);
-      const s = (0, n.makeVar)(!1),
-        d = e => s(e),
-        i = (0, a.createContext)(null),
-        l = () => (0, a.useContext)(i),
+        o = r(664),
+        a = r(240);
+      const d = (0, n.makeVar)(!1),
+        s = e => d(e),
+        i = (0, o.createContext)(null),
+        l = () => (0, o.useContext)(i),
         u = e => {
           let {
             children: t
           } = e;
-          const [r, l] = (0, a.useState)(window.pageYOffset), [u, c] = (0, a.useState)(null), [f, m] = (0, a.useState)(!1), w = (0, n.useReactiveVar)(s);
+          const [r, l] = (0, o.useState)(window.pageYOffset), [u, c] = (0, o.useState)(null), [f, m] = (0, o.useState)(!1), w = (0, n.useReactiveVar)(d);
           let v;
           const b = () => {
             m(!0), clearTimeout(v), v = setTimeout((() => {
               m(!1)
             }), 2e3)
           };
-          return (0, a.useEffect)((() => {
+          return (0, o.useEffect)((() => {
             let e;
             const t = () => {
               if (w) return void c(!1);
@@ -221,12 +221,12 @@ _global.SENTRY_RELEASE = {
             return window.addEventListener("scroll", t), () => {
               window.removeEventListener("scroll", t)
             }
-          }), [f, w]), (0, a.useMemo)((() => (0, o.jsx)(i.Provider, {
+          }), [f, w]), (0, o.useMemo)((() => (0, a.jsx)(i.Provider, {
             value: {
               freezeUserShouldSeeMore: w,
               pageYOffset: r,
               pauseUserShouldSeeMore: b,
-              setFreezeUserShouldSeeMore: d,
+              setFreezeUserShouldSeeMore: s,
               userShouldSeeMore: u
             },
             children: t

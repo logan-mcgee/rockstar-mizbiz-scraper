@@ -18,8 +18,8 @@ _global.SENTRY_RELEASE = {
   [400], {
     576: (e, t, n) => {
       var o = n(664),
-        a = Symbol.for("react.element"),
-        r = (Symbol.for("react.fragment"), Object.prototype.hasOwnProperty),
+        r = Symbol.for("react.element"),
+        a = (Symbol.for("react.fragment"), Object.prototype.hasOwnProperty),
         s = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         l = {
           key: !0,
@@ -31,11 +31,11 @@ _global.SENTRY_RELEASE = {
         var o, d = {},
           c = null,
           i = null;
-        for (o in void 0 !== n && (c = "" + n), void 0 !== t.key && (c = "" + t.key), void 0 !== t.ref && (i = t.ref), t) r.call(t, o) && !l.hasOwnProperty(o) && (d[o] = t[o]);
+        for (o in void 0 !== n && (c = "" + n), void 0 !== t.key && (c = "" + t.key), void 0 !== t.ref && (i = t.ref), t) a.call(t, o) && !l.hasOwnProperty(o) && (d[o] = t[o]);
         if (e && e.defaultProps)
           for (o in t = e.defaultProps) void 0 === d[o] && (d[o] = t[o]);
         return {
-          $$typeof: a,
+          $$typeof: r,
           type: e,
           key: c,
           ref: i,
@@ -63,12 +63,12 @@ _global.SENTRY_RELEASE = {
         isGen9Platform: () => v,
         nestFlattenedObject: () => m,
         prettyPrint: () => w,
-        scrollToElement: () => r,
+        scrollToElement: () => a,
         stripHTML: () => g
       });
       var o = n(660),
-        a = n.n(o);
-      const r = e => {
+        r = n.n(o);
+      const a = e => {
           let {
             element: t
           } = e;
@@ -83,7 +83,7 @@ _global.SENTRY_RELEASE = {
           } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
           const t = new URLSearchParams(document.location.search),
             n = document.getElementById(t.get(e));
-          n && r({
+          n && a({
             element: n
           })
         };
@@ -137,8 +137,8 @@ _global.SENTRY_RELEASE = {
           let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "";
           const n = {};
           return Object.keys(e).forEach((o => {
-            const a = t ? `${t}.${o}` : o;
-            "object" == typeof e[o] && null !== e[o] ? Object.assign(n, b(e[o], a)) : n[a] = e[o]
+            const r = t ? `${t}.${o}` : o;
+            "object" == typeof e[o] && null !== e[o] ? Object.assign(n, b(e[o], r)) : n[r] = e[o]
           })), n
         },
         m = e => {
@@ -146,15 +146,15 @@ _global.SENTRY_RELEASE = {
           return Object.keys(e).forEach((n => {
             if (n.indexOf(".") > -1) {
               const o = e[n],
-                r = n.split(".").reverse().reduce(((e, t, n) => 1 === n ? {
+                a = n.split(".").reverse().reduce(((e, t, n) => 1 === n ? {
                   [t]: {
                     [e]: o
                   }
                 } : {
                   [t]: e
                 }));
-              a().merge(t, r)
-            } else a().merge(t, {
+              r().merge(t, a)
+            } else r().merge(t, {
               [n]: e[n]
             })
           })), t

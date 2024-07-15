@@ -71,15 +71,15 @@ _global.SENTRY_RELEASE = {
           style: i = {},
           t: c,
           className: f = "",
-          variant: u = null
-        } = e, _ = {};
-        void 0 !== i.toggleInvertSeparator && (_ = {
+          variant: b = null
+        } = e, u = {};
+        void 0 !== i.toggleInvertSeparator && (u = {
           "--breadcrumb-separator-filter-invert": i.toggleInvertSeparator ? "invert(0)" : "invert(1)"
         });
-        const g = (0, n.useNewswirePost)(),
-          w = {},
-          b = w?.meta?.title ?? g?.title,
-          m = w?.meta?.subtitle ?? g?.subtitle,
+        const _ = (0, n.useNewswirePost)(),
+          g = {},
+          w = g?.meta?.title ?? _?.title,
+          m = g?.meta?.subtitle ?? _?.subtitle,
           p = m ? (0, d.jsx)("h3", {
             "data-context": "newswire-subtitle",
             children: m
@@ -93,18 +93,18 @@ _global.SENTRY_RELEASE = {
           } = (0, s.useImageParser)(l),
           x = (0, d.jsxs)(d.Fragment, {
             children: [(0, d.jsx)("time", {
-              dateTime: g.created,
-              children: g.created_formatted
+              dateTime: _.created,
+              children: _.created_formatted
             }), r ? (0, d.jsx)(a.DescriptionArea, {
               item: r
             }) : "", t]
           });
-        g?.primary_tags?.length && y.push({
-          text: g.primary_tags[0].name,
-          to: `/newswire?tag_id=${g.primary_tags[0].id}`
-        }), g?.secondary_tags?.length && y.push({
-          text: g.secondary_tags[0].name,
-          to: `/newswire?tag_id=${g.secondary_tags[0].id}`
+        _?.primary_tags?.length && y.push({
+          text: _.primary_tags[0].name,
+          to: `/newswire?tag_id=${_.primary_tags[0].id}`
+        }), _?.secondary_tags?.length && y.push({
+          text: _.secondary_tags[0].name,
+          to: `/newswire?tag_id=${_.secondary_tags[0].id}`
         });
         const v = (0, d.jsx)("div", {
           className: o.breadcrumbs,
@@ -117,13 +117,13 @@ _global.SENTRY_RELEASE = {
           className: [f, o.title].join(" "),
           style: {
             ...i,
-            ..._
+            ...u
           },
-          children: "separated" === u ? (0, d.jsxs)(d.Fragment, {
+          children: "separated" === b ? (0, d.jsxs)(d.Fragment, {
             children: [(0, d.jsxs)("header", {
               "data-context": "title",
               children: [v, (0, d.jsx)("h1", {
-                children: b
+                children: w
               })]
             }), (0, d.jsxs)("footer", {
               "data-context": "title",
@@ -133,7 +133,7 @@ _global.SENTRY_RELEASE = {
             children: [v, (0, d.jsxs)("div", {
               className: o.main,
               children: [(0, d.jsx)("h1", {
-                children: b
+                children: w
               }), p]
             }), x]
           })

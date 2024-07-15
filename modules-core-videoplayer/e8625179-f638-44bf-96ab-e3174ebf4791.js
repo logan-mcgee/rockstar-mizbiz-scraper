@@ -33,15 +33,15 @@ _global.SENTRY_RELEASE = {
       function i(e, a, t) {
         var r, n = {},
           i = null,
-          u = null;
-        for (r in void 0 !== t && (i = "" + t), void 0 !== a.key && (i = "" + a.key), void 0 !== a.ref && (u = a.ref), a) l.call(a, r) && !d.hasOwnProperty(r) && (n[r] = a[r]);
+          f = null;
+        for (r in void 0 !== t && (i = "" + t), void 0 !== a.key && (i = "" + a.key), void 0 !== a.ref && (f = a.ref), a) l.call(a, r) && !d.hasOwnProperty(r) && (n[r] = a[r]);
         if (e && e.defaultProps)
           for (r in a = e.defaultProps) void 0 === n[r] && (n[r] = a[r]);
         return {
           $$typeof: s,
           type: e,
           key: i,
-          ref: u,
+          ref: f,
           props: n,
           _owner: o.current
         }
@@ -56,7 +56,7 @@ _global.SENTRY_RELEASE = {
       "use strict";
       t.r(a), t.d(a, {
         fbar: () => c,
-        useAgegated: () => f
+        useAgegated: () => u
       });
       var r = t(42836),
         s = t(45792),
@@ -69,7 +69,7 @@ _global.SENTRY_RELEASE = {
         bg: "rockstargames-modules-core-videoplayerdb2f50238f9208ec72ef210e47b60e3b"
       };
       var i = t(95240);
-      const u = (0, s.withTranslations)((e => {
+      const f = (0, s.withTranslations)((e => {
           let {
             agegateValue: a,
             options: t = {},
@@ -77,7 +77,7 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             mutateLSSettings: l
-          } = (0, s.useRockstarWebLSSettings)(), [u, f] = (0, n.useState)(null), c = (0, n.createRef)(), g = (0, n.createRef)(), b = (0, n.createRef)(), {
+          } = (0, s.useRockstarWebLSSettings)(), [f, u] = (0, n.useState)(null), c = (0, n.createRef)(), g = (0, n.createRef)(), b = (0, n.createRef)(), {
             style: p
           } = t;
           return !1 === a ? (0, i.jsxs)("div", {
@@ -94,7 +94,7 @@ _global.SENTRY_RELEASE = {
               style: t?.bgImg ? {
                 backgroundImage: `url(${t.bgImg})`
               } : {}
-            }), !1 === u ? (0, i.jsx)("h5", {
+            }), !1 === f ? (0, i.jsx)("h5", {
               className: d.error,
               children: r("Please enter a valid age")
             }) : "", (0, i.jsxs)("form", {
@@ -102,7 +102,7 @@ _global.SENTRY_RELEASE = {
                 e.preventDefault();
                 const a = `${b.current.value}-${c.current.value.padStart(2,0)}-${g.current.value.padStart(2,0)}`,
                   t = o()(a, "YYYY-MM-DD", !0).isValid();
-                if (f(t), t) {
+                if (u(t), t) {
                   const e = o()().diff(a, "years");
                   l({
                     key: "agegatePass",
@@ -148,7 +148,7 @@ _global.SENTRY_RELEASE = {
             }), t?.footer]
           }) : null
         })),
-        f = () => {
+        u = () => {
           const {
             lsSettings: e
           } = (0, s.useRockstarWebLSSettings)(), {
@@ -159,7 +159,7 @@ _global.SENTRY_RELEASE = {
             let s = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
             const n = e?.agegatePass ?? null,
               l = a?.agegate_pass ?? n ?? null;
-            return !l && t ? null : l ? r : (0, i.jsx)(u, {
+            return !l && t ? null : l ? r : (0, i.jsx)(f, {
               agegateValue: l,
               options: s
             })

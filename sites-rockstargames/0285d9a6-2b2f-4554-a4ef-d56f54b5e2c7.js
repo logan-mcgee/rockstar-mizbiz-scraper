@@ -40,7 +40,7 @@ _global.SENTRY_RELEASE = {
           arguments: !0,
           arity: !0
         },
-        c = {
+        f = {
           $$typeof: !0,
           compare: !0,
           defaultProps: !0,
@@ -48,18 +48,18 @@ _global.SENTRY_RELEASE = {
           propTypes: !0,
           type: !0
         },
-        f = {};
+        c = {};
 
       function s(e) {
-        return o.isMemo(e) ? c : f[e.$$typeof] || n
+        return o.isMemo(e) ? f : c[e.$$typeof] || n
       }
-      f[o.ForwardRef] = {
+      c[o.ForwardRef] = {
         $$typeof: !0,
         render: !0,
         defaultProps: !0,
         displayName: !0,
         propTypes: !0
-      }, f[o.Memo] = c;
+      }, c[o.Memo] = f;
       var l = Object.defineProperty,
         p = Object.getOwnPropertyNames,
         i = Object.getOwnPropertySymbols,
@@ -72,11 +72,11 @@ _global.SENTRY_RELEASE = {
             var n = u(r);
             n && n !== d && e(t, n, o)
           }
-          var c = p(r);
-          i && (c = c.concat(i(r)));
-          for (var f = s(t), b = s(r), m = 0; m < c.length; ++m) {
-            var g = c[m];
-            if (!(a[g] || o && o[g] || b && b[g] || f && f[g])) {
+          var f = p(r);
+          i && (f = f.concat(i(r)));
+          for (var c = s(t), b = s(r), m = 0; m < f.length; ++m) {
+            var g = f[m];
+            if (!(a[g] || o && o[g] || b && b[g] || c && c[g])) {
               var w = y(r, g);
               try {
                 l(t, g, w)
@@ -92,8 +92,8 @@ _global.SENTRY_RELEASE = {
         o = r ? Symbol.for("react.element") : 60103,
         n = r ? Symbol.for("react.portal") : 60106,
         a = r ? Symbol.for("react.fragment") : 60107,
-        c = r ? Symbol.for("react.strict_mode") : 60108,
-        f = r ? Symbol.for("react.profiler") : 60114,
+        f = r ? Symbol.for("react.strict_mode") : 60108,
+        c = r ? Symbol.for("react.profiler") : 60114,
         s = r ? Symbol.for("react.provider") : 60109,
         l = r ? Symbol.for("react.context") : 60110,
         p = r ? Symbol.for("react.async_mode") : 60111,
@@ -117,8 +117,8 @@ _global.SENTRY_RELEASE = {
                 case p:
                 case i:
                 case a:
-                case f:
                 case c:
+                case f:
                 case u:
                   return e;
                 default:
@@ -142,7 +142,7 @@ _global.SENTRY_RELEASE = {
       function $(e) {
         return O(e) === i
       }
-      t.AsyncMode = p, t.ConcurrentMode = i, t.ContextConsumer = l, t.ContextProvider = s, t.Element = o, t.ForwardRef = y, t.Fragment = a, t.Lazy = m, t.Memo = b, t.Portal = n, t.Profiler = f, t.StrictMode = c, t.Suspense = u, t.isAsyncMode = function(e) {
+      t.AsyncMode = p, t.ConcurrentMode = i, t.ContextConsumer = l, t.ContextProvider = s, t.Element = o, t.ForwardRef = y, t.Fragment = a, t.Lazy = m, t.Memo = b, t.Portal = n, t.Profiler = c, t.StrictMode = f, t.Suspense = u, t.isAsyncMode = function(e) {
         return $(e) || O(e) === p
       }, t.isConcurrentMode = $, t.isContextConsumer = function(e) {
         return O(e) === l
@@ -161,13 +161,13 @@ _global.SENTRY_RELEASE = {
       }, t.isPortal = function(e) {
         return O(e) === n
       }, t.isProfiler = function(e) {
-        return O(e) === f
-      }, t.isStrictMode = function(e) {
         return O(e) === c
+      }, t.isStrictMode = function(e) {
+        return O(e) === f
       }, t.isSuspense = function(e) {
         return O(e) === u
       }, t.isValidElementType = function(e) {
-        return "string" == typeof e || "function" == typeof e || e === a || e === i || e === f || e === c || e === u || e === d || "object" == typeof e && null !== e && (e.$$typeof === m || e.$$typeof === b || e.$$typeof === s || e.$$typeof === l || e.$$typeof === y || e.$$typeof === w || e.$$typeof === S || e.$$typeof === _ || e.$$typeof === g)
+        return "string" == typeof e || "function" == typeof e || e === a || e === i || e === c || e === f || e === u || e === d || "object" == typeof e && null !== e && (e.$$typeof === m || e.$$typeof === b || e.$$typeof === s || e.$$typeof === l || e.$$typeof === y || e.$$typeof === w || e.$$typeof === S || e.$$typeof === _ || e.$$typeof === g)
       }, t.typeOf = O
     },
     12400: (e, t, r) => {
@@ -176,9 +176,9 @@ _global.SENTRY_RELEASE = {
     87672: (e, t, r) => {
       r.d(t, {
         C3: () => a,
-        Mt: () => f,
+        Mt: () => c,
         ct: () => n,
-        sX: () => c
+        sX: () => f
       });
       var o = function(e, t) {
         return o = Object.setPrototypeOf || {
@@ -207,7 +207,7 @@ _global.SENTRY_RELEASE = {
         }, a.apply(this, arguments)
       };
 
-      function c(e, t) {
+      function f(e, t) {
         var r = {};
         for (var o in e) Object.prototype.hasOwnProperty.call(e, o) && t.indexOf(o) < 0 && (r[o] = e[o]);
         if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -217,7 +217,7 @@ _global.SENTRY_RELEASE = {
         return r
       }
 
-      function f(e, t, r) {
+      function c(e, t, r) {
         if (r || 2 === arguments.length)
           for (var o, n = 0, a = t.length; n < a; n++) !o && n in t || (o || (o = Array.prototype.slice.call(t, 0, n)), o[n] = t[n]);
         return e.concat(o || Array.prototype.slice.call(t))

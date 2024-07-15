@@ -139,8 +139,8 @@ _global.SENTRY_RELEASE = {
         for (d.forEach((function(e) {
             r.add(e)
           })); r.size > 0;) {
-          var s = r;
-          r = new Set, s.forEach((function(e) {
+          var f = r;
+          r = new Set, f.forEach((function(e) {
             o.has(e) || (o.add(e), (i[e] || new Set).forEach((function(e) {
               r.add(e)
             })))

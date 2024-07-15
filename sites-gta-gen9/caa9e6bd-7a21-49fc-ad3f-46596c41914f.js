@@ -22,10 +22,10 @@ _global.SENTRY_RELEASE = {
         AccordionContent: () => fe,
         AccordionHeader: () => se,
         AccordionItem: () => ie,
-        AccordionTrigger: () => ue,
+        AccordionTrigger: () => de,
         Content: () => ye,
-        Header: () => be,
-        Item: () => ge,
+        Header: () => ge,
+        Item: () => be,
         Root: () => me,
         Trigger: () => ve,
         createAccordionScope: () => Y
@@ -105,7 +105,7 @@ _global.SENTRY_RELEASE = {
       function s(...e) {
         return (0, o.useCallback)(i(...e), e)
       }
-      const d = (0, o.forwardRef)(((e, n) => {
+      const u = (0, o.forwardRef)(((e, n) => {
         const {
           children: t,
           ...a
@@ -113,16 +113,16 @@ _global.SENTRY_RELEASE = {
         if (l) {
           const e = l.props.children,
             t = c.map((n => n === l ? o.Children.count(e) > 1 ? o.Children.only(null) : (0, o.isValidElement)(e) ? e.props.children : null : n));
-          return (0, o.createElement)(u, (0, r.c)({}, a, {
+          return (0, o.createElement)(d, (0, r.c)({}, a, {
             ref: n
           }), (0, o.isValidElement)(e) ? (0, o.cloneElement)(e, void 0, t) : null)
         }
-        return (0, o.createElement)(u, (0, r.c)({}, a, {
+        return (0, o.createElement)(d, (0, r.c)({}, a, {
           ref: n
         }), t)
       }));
-      d.displayName = "Slot";
-      const u = (0, o.forwardRef)(((e, n) => {
+      u.displayName = "Slot";
+      const d = (0, o.forwardRef)(((e, n) => {
         const {
           children: t,
           ...r
@@ -132,7 +132,7 @@ _global.SENTRY_RELEASE = {
           ref: n ? i(n, t.ref) : t.ref
         }) : o.Children.count(t) > 1 ? o.Children.only(null) : null
       }));
-      u.displayName = "SlotClone";
+      d.displayName = "SlotClone";
       const f = ({
         children: e
       }) => (0, o.createElement)(o.Fragment, null, e);
@@ -161,7 +161,7 @@ _global.SENTRY_RELEASE = {
         }
       }
 
-      function g(e, n, {
+      function b(e, n, {
         checkForDefaultPrevented: t = !0
       } = {}) {
         return function(r) {
@@ -169,7 +169,7 @@ _global.SENTRY_RELEASE = {
         }
       }
 
-      function b(e) {
+      function g(e) {
         const n = (0, o.useRef)(e);
         return (0, o.useEffect)((() => {
           n.current = e
@@ -191,14 +191,14 @@ _global.SENTRY_RELEASE = {
           const t = (0, o.useState)(e),
             [r] = t,
             a = (0, o.useRef)(r),
-            c = b(n);
+            c = g(n);
           return (0, o.useEffect)((() => {
             a.current !== r && (c(r), a.current = r)
           }), [r, a, c]), t
         }({
           defaultProp: n,
           onChange: t
-        }), c = void 0 !== e, l = c ? e : r, i = b(t);
+        }), c = void 0 !== e, l = c ? e : r, i = g(t);
         return [l, (0, o.useCallback)((n => {
           if (c) {
             const t = "function" == typeof n ? n(e) : n;
@@ -212,7 +212,7 @@ _global.SENTRY_RELEASE = {
             const {
               asChild: a,
               ...c
-            } = e, l = a ? d : n;
+            } = e, l = a ? u : n;
             return (0, o.useEffect)((() => {
               window[Symbol.for("radix-ui")] = !0
             }), []), (0, o.createElement)(l, (0, r.c)({}, c, {
@@ -311,7 +311,7 @@ _global.SENTRY_RELEASE = {
             disabled: l,
             onOpenChange: i,
             ...s
-          } = e, [d = !1, u] = v({
+          } = e, [u = !1, d] = v({
             prop: a,
             defaultProp: c,
             onChange: i
@@ -320,10 +320,10 @@ _global.SENTRY_RELEASE = {
             scope: t,
             disabled: l,
             contentId: N(),
-            open: d,
-            onOpenToggle: (0, o.useCallback)((() => u((e => !e))), [u])
+            open: u,
+            onOpenToggle: (0, o.useCallback)((() => d((e => !e))), [d])
           }, (0, o.createElement)(E.div, (0, r.c)({
-            "data-state": U(d),
+            "data-state": U(u),
             "data-disabled": l ? "" : void 0
           }, s, {
             ref: n
@@ -343,7 +343,7 @@ _global.SENTRY_RELEASE = {
             disabled: c.disabled
           }, a, {
             ref: n,
-            onClick: g(e.onClick, c.onOpenToggle)
+            onClick: b(e.onClick, c.onOpenToggle)
           }))
         })),
         x = "CollapsibleContent",
@@ -367,7 +367,7 @@ _global.SENTRY_RELEASE = {
             present: a,
             children: c,
             ...l
-          } = e, i = S(x, t), [d, u] = (0, o.useState)(a), f = (0, o.useRef)(null), p = s(n, f), m = (0, o.useRef)(0), g = m.current, b = (0, o.useRef)(0), v = b.current, y = i.open || d, w = (0, o.useRef)(y), _ = (0, o.useRef)();
+          } = e, i = S(x, t), [u, d] = (0, o.useState)(a), f = (0, o.useRef)(null), p = s(n, f), m = (0, o.useRef)(0), b = m.current, g = (0, o.useRef)(0), v = g.current, y = i.open || u, w = (0, o.useRef)(y), _ = (0, o.useRef)();
           return (0, o.useEffect)((() => {
             const e = requestAnimationFrame((() => w.current = !1));
             return () => cancelAnimationFrame(e)
@@ -379,7 +379,7 @@ _global.SENTRY_RELEASE = {
                 animationName: e.style.animationName
               }, e.style.transitionDuration = "0s", e.style.animationName = "none";
               const n = e.getBoundingClientRect();
-              m.current = n.height, b.current = n.width, w.current || (e.style.transitionDuration = _.current.transitionDuration, e.style.animationName = _.current.animationName), u(a)
+              m.current = n.height, g.current = n.width, w.current || (e.style.transitionDuration = _.current.transitionDuration, e.style.animationName = _.current.animationName), d(a)
             }
           }), [i.open, a]), (0, o.createElement)(E.div, (0, r.c)({
             "data-state": U(i.open),
@@ -389,7 +389,7 @@ _global.SENTRY_RELEASE = {
           }, l, {
             ref: p,
             style: {
-              "--radix-collapsible-content-height": g ? `${g}px` : void 0,
+              "--radix-collapsible-content-height": b ? `${b}px` : void 0,
               "--radix-collapsible-content-width": v ? `${v}px` : void 0,
               ...e.style
             }
@@ -415,7 +415,7 @@ _global.SENTRY_RELEASE = {
               itemMap: new Map
             }),
             i = e + "CollectionSlot",
-            u = e + "CollectionItemSlot",
+            d = e + "CollectionItemSlot",
             f = "data-radix-collection-item";
           return [{
             Provider: e => {
@@ -434,7 +434,7 @@ _global.SENTRY_RELEASE = {
                 scope: t,
                 children: r
               } = e, a = s(n, l(i, t).collectionRef);
-              return o.createElement(d, {
+              return o.createElement(u, {
                 ref: a
               }, r)
             })),
@@ -443,13 +443,13 @@ _global.SENTRY_RELEASE = {
                 scope: t,
                 children: r,
                 ...a
-              } = e, c = o.useRef(null), i = s(n, c), p = l(u, t);
+              } = e, c = o.useRef(null), i = s(n, c), p = l(d, t);
               return o.useEffect((() => (p.itemMap.set(c, {
                 ref: c,
                 ...a
               }), () => {
                 p.itemMap.delete(c)
-              }))), o.createElement(d, {
+              }))), o.createElement(u, {
                 [f]: "",
                 ref: i
               }, r)
@@ -494,7 +494,7 @@ _global.SENTRY_RELEASE = {
           onValueChange: c = (() => {}),
           collapsible: l = !1,
           ...i
-        } = e, [s, d] = v({
+        } = e, [s, u] = v({
           prop: t,
           defaultProp: a,
           onChange: c
@@ -502,8 +502,8 @@ _global.SENTRY_RELEASE = {
         return o.createElement(J, {
           scope: e.__scopeAccordion,
           value: s ? [s] : [],
-          onItemOpen: d,
-          onItemClose: o.useCallback((() => l && d("")), [l, d])
+          onItemOpen: u,
+          onItemClose: o.useCallback((() => l && u("")), [l, u])
         }, o.createElement(W, {
           scope: e.__scopeAccordion,
           collapsible: l
@@ -520,12 +520,12 @@ _global.SENTRY_RELEASE = {
           prop: t,
           defaultProp: a,
           onChange: c
-        }), d = o.useCallback((e => s(((n = []) => [...n, e]))), [s]), u = o.useCallback((e => s(((n = []) => n.filter((n => n !== e))))), [s]);
+        }), u = o.useCallback((e => s(((n = []) => [...n, e]))), [s]), d = o.useCallback((e => s(((n = []) => n.filter((n => n !== e))))), [s]);
         return o.createElement(J, {
           scope: e.__scopeAccordion,
           value: i,
-          onItemOpen: d,
-          onItemClose: u
+          onItemOpen: u,
+          onItemClose: d
         }, o.createElement(W, {
           scope: e.__scopeAccordion,
           collapsible: !0
@@ -539,14 +539,14 @@ _global.SENTRY_RELEASE = {
           dir: c,
           orientation: l = "vertical",
           ...i
-        } = e, d = s(o.useRef(null), n), u = q(t), f = "ltr" === function(e) {
+        } = e, u = s(o.useRef(null), n), d = q(t), f = "ltr" === function(e) {
           const n = (0, o.useContext)(H);
           return e || n || "ltr"
-        }(c), p = g(e.onKeyDown, (e => {
+        }(c), p = b(e.onKeyDown, (e => {
           var n;
           if (!B.includes(e.key)) return;
           const t = e.target,
-            r = u().filter((e => {
+            r = d().filter((e => {
               var n;
               return !(null !== (n = e.ref.current) && void 0 !== n && n.disabled)
             })),
@@ -559,7 +559,7 @@ _global.SENTRY_RELEASE = {
             s = () => {
               c = o + 1, c > i && (c = 0)
             },
-            d = () => {
+            u = () => {
               c = o - 1, c < 0 && (c = i)
             };
           switch (e.key) {
@@ -570,16 +570,16 @@ _global.SENTRY_RELEASE = {
               c = i;
               break;
             case "ArrowRight":
-              "horizontal" === l && (f ? s() : d());
+              "horizontal" === l && (f ? s() : u());
               break;
             case "ArrowDown":
               "vertical" === l && s();
               break;
             case "ArrowLeft":
-              "horizontal" === l && (f ? d() : s());
+              "horizontal" === l && (f ? u() : s());
               break;
             case "ArrowUp":
-              "vertical" === l && d()
+              "vertical" === l && u()
           }
           null === (n = r[c % a].ref.current) || void 0 === n || n.focus()
         }));
@@ -592,7 +592,7 @@ _global.SENTRY_RELEASE = {
           scope: t
         }, o.createElement(E.div, (0, r.c)({}, i, {
           "data-orientation": l,
-          ref: d,
+          ref: u,
           onKeyDown: a ? void 0 : p
         }))))
       })), ae = "AccordionItem", [ce, le] = K(ae), ie = o.forwardRef(((e, n) => {
@@ -600,19 +600,19 @@ _global.SENTRY_RELEASE = {
           __scopeAccordion: t,
           value: a,
           ...c
-        } = e, l = re(ae, t), i = Q(ae, t), s = Z(t), d = N(), u = a && i.value.includes(a) || !1, f = l.disabled || e.disabled;
+        } = e, l = re(ae, t), i = Q(ae, t), s = Z(t), u = N(), d = a && i.value.includes(a) || !1, f = l.disabled || e.disabled;
         return o.createElement(ce, {
           scope: t,
-          open: u,
+          open: d,
           disabled: f,
-          triggerId: d
+          triggerId: u
         }, o.createElement(V, (0, r.c)({
           "data-orientation": l.orientation,
-          "data-state": pe(u)
+          "data-state": pe(d)
         }, s, c, {
           ref: n,
           disabled: f,
-          open: u,
+          open: d,
           onOpenChange: e => {
             e ? i.onItemOpen(a) : i.onItemClose(a)
           }
@@ -629,11 +629,11 @@ _global.SENTRY_RELEASE = {
         }, a, {
           ref: n
         }))
-      })), de = "AccordionTrigger", ue = o.forwardRef(((e, n) => {
+      })), ue = "AccordionTrigger", de = o.forwardRef(((e, n) => {
         const {
           __scopeAccordion: t,
           ...a
-        } = e, c = re(F, t), l = le(de, t), i = X(de, t), s = Z(t);
+        } = e, c = re(F, t), l = le(ue, t), i = X(ue, t), s = Z(t);
         return o.createElement(j.ItemSlot, {
           scope: t
         }, o.createElement(L, (0, r.c)({
@@ -666,9 +666,9 @@ _global.SENTRY_RELEASE = {
         return e ? "open" : "closed"
       }
       const me = G,
-        ge = ie,
-        be = se,
-        ve = ue,
+        be = ie,
+        ge = se,
+        ve = de,
         ye = fe
     }
   }

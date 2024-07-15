@@ -18,9 +18,9 @@ _global.SENTRY_RELEASE = {
   [5400], {
     65400: (e, a, d) => {
       d.r(a), d.d(a, {
-        default: () => s
+        default: () => f
       });
-      const s = {}
+      const f = {}
     }
   }
 ]);

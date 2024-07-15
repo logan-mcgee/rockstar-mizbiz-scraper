@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "27bb0314-ccd5-4e38-acdd-a6a005b7c338", e._sentryDebugIdIdentifier = "sentry-dbid-27bb0314-ccd5-4e38-acdd-a6a005b7c338")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "66bd844d-d89c-48b4-9a47-343479902431", e._sentryDebugIdIdentifier = "sentry-dbid-66bd844d-d89c-48b4-9a47-343479902431")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -60,13 +60,13 @@ _global.SENTRY_RELEASE = {
         D = /[-+=.]*\d+\.?\d*(?:e-|e\+)?\d*/gi,
         B = /[+-]=-?[.\d]+/,
         V = /[^,'"\[\]\s]+/gi,
-        R = /^[+\-=e\s\d]*\d+[.\d]*([a-z]*|%)\s*$/i,
-        F = {},
+        F = /^[+\-=e\s\d]*\d+[.\d]*([a-z]*|%)\s*$/i,
+        R = {},
         $ = {},
-        U = e => ($ = ke(e, F)) && ya,
+        U = e => ($ = ke(e, R)) && ya,
         G = (e, t) => console.warn("Invalid property", e, "set to", t, "Missing plugin? gsap.registerPlugin()"),
         H = (e, t) => !t && console.warn(e),
-        W = (e, t) => e && (F[e] = t) && $ && ($[e] = t) || F,
+        W = (e, t) => e && (R[e] = t) && $ && ($[e] = t) || R,
         q = () => 0,
         X = {
           suppressEvents: !0,
@@ -201,7 +201,7 @@ _global.SENTRY_RELEASE = {
           }
         },
         Pe = (e, t, a, s) => (t.parent && Ne(t), t._start = de((S(a) ? a : a || e !== n ? $e(e, a, t) : e._time) + t._delay), t._end = de(t._start + (t.totalDuration() / Math.abs(t.timeScale()) || 0)), xe(e, t, "_first", "_last", e._sort ? "_start" : 0), Be(t) || (e._recent = t), s || ze(e, t), e._ts < 0 && Le(e, e._tTime), e),
-        Oe = (e, t) => (F.ScrollTrigger || G("scrollTrigger", t)) && F.ScrollTrigger.create(t, e),
+        Oe = (e, t) => (R.ScrollTrigger || G("scrollTrigger", t)) && R.ScrollTrigger.create(t, e),
         Ae = (e, t, a, s, r) => (Ut(e, t, r), e._initted ? !a && e._pt && !i && (e._dur && !1 !== e.vars.lazy || !e._dur && e.vars.lazy) && m !== xt.frame ? (Z.push(e), e._lazy = [r, s], 1) : void 0 : 1),
         De = e => {
           let {
@@ -221,15 +221,15 @@ _global.SENTRY_RELEASE = {
             n = e._tTime / e._tDur;
           return n && !s && (e._time *= r / e._dur), e._dur = r, e._tDur = i ? i < 0 ? 1e10 : de(r * (i + 1) + e._rDelay * i) : r, n > 0 && !s && Le(e, e._tTime = e._tDur * n), e.parent && Ee(e), a || je(e.parent, e), e
         },
-        Re = e => e instanceof Dt ? je(e) : Ve(e, e._dur),
-        Fe = {
+        Fe = e => e instanceof Dt ? je(e) : Ve(e, e._dur),
+        Re = {
           _start: 0,
           endTime: q,
           totalDuration: q
         },
         $e = (e, t, a) => {
           let s, i, r, n = e.labels,
-            c = e._recent || Fe,
+            c = e._recent || Re,
             o = e.duration() >= _ ? c.endTime(!1) : e._dur;
           return N(t) && (isNaN(t) || t in n) ? (i = t.charAt(0), r = "%" === t.substr(-1), s = t.indexOf("="), "<" === i || ">" === i ? (s >= 0 && (t = t.replace(/=/, "")), ("<" === i ? c._start : c.endTime(c._repeat >= 0)) + (parseFloat(t.substr(1)) || 0) * (r ? (s < 0 ? c : a).totalDuration() / 100 : 1)) : s < 0 ? (t in n || (n[t] = o), n[t]) : (i = parseFloat(t.charAt(s - 1) + t.substr(s + 1)), r && a && (i = i / 100 * (z(a) ? a[0] : a).totalDuration()), s > 1 ? $e(e, t.substr(0, s - 1), a) + i : o + i)) : null == t ? o : +t
         },
@@ -245,7 +245,7 @@ _global.SENTRY_RELEASE = {
         },
         Ge = (e, t) => e || 0 === e ? t(e) : t,
         He = (e, t, a) => a < e ? e : a > t ? t : a,
-        We = (e, t) => N(e) && (t = R.exec(e)) ? t[1] : "",
+        We = (e, t) => N(e) && (t = F.exec(e)) ? t[1] : "",
         qe = [].slice,
         Xe = (e, t) => e && C(e) && "length" in e && (!t && !e.length || e.length - 1 in e && C(e[0])) && !e.nodeType && e !== c,
         Ye = (e, t, a) => r && !t && r.selector ? r.selector(e) : !N(e) || a || !o && wt() ? z(e) ? function(e, t) {
@@ -349,7 +349,7 @@ _global.SENTRY_RELEASE = {
               }, a = t
             } else s || (e = ke(z(e) ? [] : {}, e));
             if (!c) {
-              for (r in t) Ft.call(m, e, r, "get", t[r]);
+              for (r in t) Rt.call(m, e, r, "get", t[r]);
               i = t => sa(t, m) || (d ? e.p : e)
             }
           }
@@ -380,7 +380,7 @@ _global.SENTRY_RELEASE = {
               i = {
                 init: q,
                 render: sa,
-                add: Ft,
+                add: Rt,
                 kill: ra,
                 modifier: ia,
                 rawVars: 0
@@ -492,7 +492,7 @@ _global.SENTRY_RELEASE = {
             },
             deltaRatio: e => i / (1e3 / (e || 60)),
             wake() {
-              d && (!o && I() && (c = o = window, l = c.document || {}, F.gsap = ya, (c.gsapVersions || (c.gsapVersions = [])).push(ya.version), U($ || c.GreenSockGlobals || !c.gsap && c || {}), a = c.requestAnimationFrame, mt.forEach(gt)), e && s.sleep(), t = a || (e => setTimeout(e, h - 1e3 * s.time + 1 | 0)), u = 1, b(2))
+              d && (!o && I() && (c = o = window, l = c.document || {}, R.gsap = ya, (c.gsapVersions || (c.gsapVersions = [])).push(ya.version), U($ || c.GreenSockGlobals || !c.gsap && c || {}), a = c.requestAnimationFrame, mt.forEach(gt)), e && s.sleep(), t = a || (e => setTimeout(e, h - 1e3 * s.time + 1 | 0)), u = 1, b(2))
             },
             sleep() {
               (a ? c.cancelAnimationFrame : clearTimeout)(e), u = 0, t = q
@@ -552,7 +552,7 @@ _global.SENTRY_RELEASE = {
               easeInOut: i
             };
           return oe(e, (e => {
-            Nt[e] = F[e] = r, Nt[a = e.toLowerCase()] = s;
+            Nt[e] = R[e] = r, Nt[a = e.toLowerCase()] = s;
             for (let t in r) Nt[a + ("easeIn" === t ? ".in" : "easeOut" === t ? ".out" : ".inOut")] = Nt[e + "." + t] = r[t]
           })), r
         },
@@ -577,7 +577,7 @@ _global.SENTRY_RELEASE = {
       })), Nt.Linear.easeNone = Nt.none = Nt.Linear.easeIn, Et("Elastic", zt("in"), zt("out"), zt()), ((e, t) => {
         let a = a => a < .36363636363636365 ? e * a * a : a < .7272727272727273 ? e * (a - 1.5 / t) ** 2 + .75 : a < .9090909090909092 ? e * (a -= 2.25 / t) * a + .9375 : e * (a - 2.625 / t) ** 2 + .984375;
         Et("Bounce", (e => 1 - a(1 - e)), a)
-      })(7.5625, 2.75), Et("Expo", (e => e ? 2 ** (10 * (e - 1)) : 0)), Et("Circ", (e => -(y(1 - e * e) - 1))), Et("Sine", (e => 1 === e ? 1 : 1 - x(e * b))), Et("Back", Pt("in"), Pt("out"), Pt()), Nt.SteppedEase = Nt.steps = F.SteppedEase = {
+      })(7.5625, 2.75), Et("Expo", (e => e ? 2 ** (10 * (e - 1)) : 0)), Et("Circ", (e => -(y(1 - e * e) - 1))), Et("Sine", (e => 1 === e ? 1 : 1 - x(e * b))), Et("Back", Pt("in"), Pt("out"), Pt()), Nt.SteppedEase = Nt.steps = R.SteppedEase = {
         config() {
           let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 1,
             t = arguments.length > 1 ? arguments[1] : void 0,
@@ -667,12 +667,12 @@ _global.SENTRY_RELEASE = {
           return !this.parent && this._sat ? this._sat.vars.immediateRender ? -1 / 0 : this._sat.globalTime(e) : a
         }
         repeat(e) {
-          return arguments.length ? (this._repeat = e === 1 / 0 ? -2 : e, Re(this)) : -2 === this._repeat ? 1 / 0 : this._repeat
+          return arguments.length ? (this._repeat = e === 1 / 0 ? -2 : e, Fe(this)) : -2 === this._repeat ? 1 / 0 : this._repeat
         }
         repeatDelay(e) {
           if (arguments.length) {
             let t = this._time;
-            return this._rDelay = e, Re(this), t ? this.time(t) : this
+            return this._rDelay = e, Fe(this), t ? this.time(t) : this
           }
           return this._rDelay
         }
@@ -990,7 +990,7 @@ _global.SENTRY_RELEASE = {
         _hasPause: 0,
         _forcing: 0
       });
-      let Bt, Vt, Rt = function(e, t, a, s, i, r, n) {
+      let Bt, Vt, Ft = function(e, t, a, s, i, r, n) {
           let c, o, l, d, m, g, u, f, p = new oa(this._pt, e, t, 0, 1, aa, null, i),
             _ = 0,
             h = 0;
@@ -1003,12 +1003,12 @@ _global.SENTRY_RELEASE = {
           }, _ = D.lastIndex);
           return p.c = _ < s.length ? s.substring(_, s.length) : "", p.fp = n, (B.test(s) || u) && (p.e = 0), this._pt = p, p
         },
-        Ft = function(e, t, a, s, i, r, n, c, o, l) {
+        Rt = function(e, t, a, s, i, r, n, c, o, l) {
           j(s) && (s = s(i || 0, e, r));
           let d, m = e[t],
             g = "get" !== a ? a : j(m) ? o ? e[t.indexOf("set") || !j(e["get" + t.substr(3)]) ? t : "get" + t.substr(3)](o) : e[t]() : m,
             u = j(m) ? o ? Qt : Kt : Yt;
-          if (N(s) && (~s.indexOf("random(") && (s = rt(s)), "=" === s.charAt(1) && (d = me(g, s) + (We(g) || 0), (d || 0 === d) && (s = d))), !l || g !== s || Vt) return isNaN(g * s) || "" === s ? (!m && !(t in e) && G(t, s), Rt.call(this, e, t, g, s, u, c || f.stringFilter, o)) : (d = new oa(this._pt, e, t, +g || 0, s - (g || 0), "boolean" == typeof m ? ta : ea, 0, u), o && (d.fp = o), n && d.modifier(n, this, e), this._pt = d)
+          if (N(s) && (~s.indexOf("random(") && (s = rt(s)), "=" === s.charAt(1) && (d = me(g, s) + (We(g) || 0), (d || 0 === d) && (s = d))), !l || g !== s || Vt) return isNaN(g * s) || "" === s ? (!m && !(t in e) && G(t, s), Ft.call(this, e, t, g, s, u, c || f.stringFilter, o)) : (d = new oa(this._pt, e, t, +g || 0, s - (g || 0), "boolean" == typeof m ? ta : ea, 0, u), o && (d.fp = o), n && d.modifier(n, this, e), this._pt = d)
         },
         $t = (e, t, a, s, i, r) => {
           let n, c, o, l;
@@ -1041,9 +1041,9 @@ _global.SENTRY_RELEASE = {
             D = e._targets,
             B = e.parent,
             V = B && "nested" === B.data ? B.vars.targets : D,
-            R = "auto" === e._overwrite && !s,
-            F = e.timeline;
-          if (F && (!z || !w) && (w = "none"), e._ease = It(w, p.ease), e._yEase = L ? Ct(It(!0 === L ? w : L, p.ease)) : 0, L && e._yoyo && !e._repeat && (L = e._yEase, e._yEase = e._ease, e._ease = L), e._from = !F && !!x.runBackwards, !F || z && !x.stagger) {
+            F = "auto" === e._overwrite && !s,
+            R = e.timeline;
+          if (R && (!z || !w) && (w = "none"), e._ease = It(w, p.ease), e._yEase = L ? Ct(It(!0 === L ? w : L, p.ease)) : 0, L && e._yoyo && !e._repeat && (L = e._yEase, e._yEase = e._ease, e._ease = L), e._from = !R && !!x.runBackwards, !R || z && !x.stagger) {
             if (u = D[0] ? ne(D[0]).harness : 0, v = u && x[u.prop], r = ve(x, Q), A && (A._zTime < 0 && A.progress(1), t < 0 && E && j && !P ? A.render(-1, !0) : A.revert(E && O ? Y : X), A._lazy = 0), N) {
               if (Ne(e._startAt = Xt.set(D, he({
                   data: "isStart",
@@ -1073,12 +1073,12 @@ _global.SENTRY_RELEASE = {
               if (d = D[c], g = d._gsap || re(D)[c]._gsap, e._ptLookup[c] = k = {}, J[g.id] && Z.length && ue(), b = V === D ? c : V.indexOf(d), u && !1 !== (f = new u).init(d, v || r, e, b, V) && (e._pt = l = new oa(e._pt, d, f.name, 0, 1, f.render, f, 0, f.priority), f._props.forEach((e => {
                   k[e] = l
                 })), f.priority && (m = 1)), !u || v)
-                for (o in r) ee[o] && (f = $t(o, r, e, b, d, V)) ? f.priority && (m = 1) : k[o] = l = Ft.call(e, d, o, "get", r[o], b, V, 0, x.stringFilter);
-              e._op && e._op[c] && e.kill(d, e._op[c]), R && e._pt && (Bt = e, n.killTweensOf(d, k, e.globalTime(t)), y = !e.parent, Bt = 0), e._pt && S && (J[g.id] = 1)
+                for (o in r) ee[o] && (f = $t(o, r, e, b, d, V)) ? f.priority && (m = 1) : k[o] = l = Rt.call(e, d, o, "get", r[o], b, V, 0, x.stringFilter);
+              e._op && e._op[c] && e.kill(d, e._op[c]), F && e._pt && (Bt = e, n.killTweensOf(d, k, e.globalTime(t)), y = !e.parent, Bt = 0), e._pt && S && (J[g.id] = 1)
             }
             m && ca(e), e._onInit && e._onInit(e)
           }
-          e._onUpdate = T, e._initted = (!e._op || e._pt) && !y, z && t <= 0 && F.render(_, !0, !0)
+          e._onUpdate = T, e._initted = (!e._op || e._pt) && !y, z && t <= 0 && R.render(_, !0, !0)
         },
         Gt = (e, t, a, s) => {
           let i, r, n = t.ease || s || "power1.inOut";
@@ -1324,7 +1324,7 @@ _global.SENTRY_RELEASE = {
           this.mSet = this.mSet || this.set, this.set = na, this.m = e, this.mt = a, this.tween = t
         }
       }
-      oe(ie + "parent,duration,ease,delay,overwrite,runBackwards,startAt,yoyo,immediateRender,repeat,repeatDelay,data,paused,reversed,lazy,callbackScope,stringFilter,id,yoyoEase,stagger,inherit,repeatRefresh,keyframes,autoRevert,scrollTrigger", (e => Q[e] = 1)), F.TweenMax = F.TweenLite = Xt, F.TimelineLite = F.TimelineMax = Dt, n = new Dt({
+      oe(ie + "parent,duration,ease,delay,overwrite,runBackwards,startAt,yoyo,immediateRender,repeat,repeatDelay,data,paused,reversed,lazy,callbackScope,stringFilter,id,yoyoEase,stagger,inherit,repeatRefresh,keyframes,autoRevert,scrollTrigger", (e => Q[e] = 1)), R.TweenMax = R.TweenLite = Xt, R.TimelineLite = R.TimelineMax = Dt, n = new Dt({
         sortChildren: !1,
         defaults: p,
         autoRemoveChildren: !0,
@@ -1462,7 +1462,7 @@ _global.SENTRY_RELEASE = {
             defaults: i,
             extendTimeline: r
           } = e;
-          (s || "").split(",").forEach((e => e && !ee[e] && !F[e] && H(t + " effect requires " + e + " plugin."))), te[t] = (e, t, s) => a(Ye(e), he(t || {}, i), s), r && (Dt.prototype[t] = function(e, a, s) {
+          (s || "").split(",").forEach((e => e && !ee[e] && !R[e] && H(t + " effect requires " + e + " plugin."))), te[t] = (e, t, s) => a(Ye(e), he(t || {}, i), s), r && (Dt.prototype[t] = function(e, a, s) {
             return this.add(te[t](e, C(a) ? a : (s = a) && {}, this), s)
           })
         },
@@ -1599,7 +1599,7 @@ _global.SENTRY_RELEASE = {
         Expo: Ba,
         Circ: Va
       } = Nt;
-      let Ra, Fa, $a, Ua, Ga, Ha, Wa, qa, Xa, Ya = {},
+      let Fa, Ra, $a, Ua, Ga, Ha, Wa, qa, Xa, Ya = {},
         Ka = 180 / Math.PI,
         Qa = Math.PI / 180,
         Za = Math.atan2,
@@ -1667,8 +1667,8 @@ _global.SENTRY_RELEASE = {
           return e._gsap || ya.core.getCache(e), t && t.split(",").forEach((e => a.save(e))), a
         },
         ys = (e, t) => {
-          let a = Fa.createElementNS ? Fa.createElementNS((t || "http://www.w3.org/1999/xhtml").replace(/^https/, "http"), e) : Fa.createElement(e);
-          return a.style ? a : Fa.createElement(e)
+          let a = Ra.createElementNS ? Ra.createElementNS((t || "http://www.w3.org/1999/xhtml").replace(/^https/, "http"), e) : Ra.createElement(e);
+          return a.style ? a : Ra.createElement(e)
         },
         xs = (e, t, a) => {
           let s = getComputedStyle(e);
@@ -1683,7 +1683,7 @@ _global.SENTRY_RELEASE = {
           return i < 0 ? null : (3 === i ? "ms" : i >= 0 ? ws[i] : "") + e
         },
         js = () => {
-          "undefined" != typeof window && window.document && (Ra = window, Fa = Ra.document, $a = Fa.documentElement, Ga = ys("div") || {
+          "undefined" != typeof window && window.document && (Fa = window, Ra = Fa.document, $a = Ra.documentElement, Ga = ys("div") || {
             style: {}
           }, Ha = ys("div"), ps = Ns(ps), _s = ps + "Origin", Ga.style.cssText = "border-width:0;line-height:0;position:absolute;padding:0", Xa = !!Ns("perspective"), qa = ya.core.reverting, Ua = 1)
         },
@@ -1746,11 +1746,11 @@ _global.SENTRY_RELEASE = {
             f = 100,
             p = "px" === s,
             _ = "%" === s;
-          return s === l || !o || Ls[s] || Ls[l] ? o : ("px" !== l && !p && (o = Ps(e, t, a, "px")), c = e.getCTM && Ms(e), !_ && "%" !== l || !Ya[t] && !~t.indexOf("adius") ? (d[m ? "width" : "height"] = f + (p ? l : s), r = ~t.indexOf("adius") || "em" === s && e.appendChild && !g ? e : e.parentNode, c && (r = (e.ownerSVGElement || {}).parentNode), r && r !== Fa && r.appendChild || (r = Fa.body), n = r._gsap, n && _ && n.width && m && n.time === xt.time && !n.uncache ? le(o / n.width * f) : ((_ || "%" === l) && !zs[xs(r, "display")] && (d.position = xs(e, "position")), r === e && (d.position = "static"), r.appendChild(Ga), i = Ga[u], r.removeChild(Ga), d.position = "absolute", m && _ && (n = ne(r), n.time = xt.time, n.width = r[u]), le(p ? i * o / f : i && o ? f / i * o : 0))) : (i = c ? e.getBBox()[m ? "width" : "height"] : e[u], le(_ ? o / i * f : o / 100 * i)))
+          return s === l || !o || Ls[s] || Ls[l] ? o : ("px" !== l && !p && (o = Ps(e, t, a, "px")), c = e.getCTM && Ms(e), !_ && "%" !== l || !Ya[t] && !~t.indexOf("adius") ? (d[m ? "width" : "height"] = f + (p ? l : s), r = ~t.indexOf("adius") || "em" === s && e.appendChild && !g ? e : e.parentNode, c && (r = (e.ownerSVGElement || {}).parentNode), r && r !== Ra && r.appendChild || (r = Ra.body), n = r._gsap, n && _ && n.width && m && n.time === xt.time && !n.uncache ? le(o / n.width * f) : ((_ || "%" === l) && !zs[xs(r, "display")] && (d.position = xs(e, "position")), r === e && (d.position = "static"), r.appendChild(Ga), i = Ga[u], r.removeChild(Ga), d.position = "absolute", m && _ && (n = ne(r), n.time = xt.time, n.width = r[u]), le(p ? i * o / f : i && o ? f / i * o : 0))) : (i = c ? e.getBBox()[m ? "width" : "height"] : e[u], le(_ ? o / i * f : o / 100 * i)))
         },
         Os = (e, t, a, s) => {
           let i;
-          return Ua || js(), t in as && "transform" !== t && ~(t = as[t]).indexOf(",") && (t = t.split(",")[0]), Ya[t] && "transform" !== t ? (i = qs(e, s), i = "transformOrigin" !== t ? i[t] : i.svg ? i.origin : Xs(xs(e, _s)) + " " + i.zOrigin + "px") : (i = e.style[t], (!i || "auto" === i || s || ~(i + "").indexOf("calc(")) && (i = Rs[t] && Rs[t](e, t, a) || xs(e, t) || ce(e, t) || ("opacity" === t ? 1 : 0))), a && !~(i + "").trim().indexOf(" ") ? Ps(e, t, i, a) + a : i
+          return Ua || js(), t in as && "transform" !== t && ~(t = as[t]).indexOf(",") && (t = t.split(",")[0]), Ya[t] && "transform" !== t ? (i = qs(e, s), i = "transformOrigin" !== t ? i[t] : i.svg ? i.origin : Xs(xs(e, _s)) + " " + i.zOrigin + "px") : (i = e.style[t], (!i || "auto" === i || s || ~(i + "").indexOf("calc(")) && (i = Fs[t] && Fs[t](e, t, a) || xs(e, t) || ce(e, t) || ("opacity" === t ? 1 : 0))), a && !~(i + "").trim().indexOf(" ") ? Ps(e, t, i, a) + a : i
         },
         As = function(e, t, a, s) {
           if (!a || "none" === a) {
@@ -1798,7 +1798,7 @@ _global.SENTRY_RELEASE = {
             a && (Is(i, ps), c && (c.svg && i.removeAttribute("transform"), qs(i, 1), c.uncache = 1, ks(r)))
           }
         },
-        Rs = {
+        Fs = {
           clearProps(e, t, a, s, i) {
             if ("isFromStart" !== i.data) {
               let r = e._pt = new oa(e._pt, t, a, 0, 0, Vs);
@@ -1806,18 +1806,18 @@ _global.SENTRY_RELEASE = {
             }
           }
         },
-        Fs = [1, 0, 0, 1, 0, 0],
+        Rs = [1, 0, 0, 1, 0, 0],
         $s = {},
         Us = e => "matrix(1, 0, 0, 1, 0, 0)" === e || "none" === e || !e,
         Gs = e => {
           let t = xs(e, ps);
-          return Us(t) ? Fs : t.substr(7).match(O).map(le)
+          return Us(t) ? Rs : t.substr(7).match(O).map(le)
         },
         Hs = (e, t) => {
           let a, s, i, r, n = e._gsap || ne(e),
             c = e.style,
             o = Gs(e);
-          return n.svg && e.getAttribute("transform") ? (i = e.transform.baseVal.consolidate().matrix, o = [i.a, i.b, i.c, i.d, i.e, i.f], "1,0,0,1,0,0" === o.join(",") ? Fs : o) : (o !== Fs || e.offsetParent || e === $a || n.svg || (i = c.display, c.display = "block", a = e.parentNode, a && e.offsetParent || (r = 1, s = e.nextElementSibling, $a.appendChild(e)), o = Gs(e), i ? c.display = i : Is(e, "display"), r && (s ? a.insertBefore(e, s) : a ? a.appendChild(e) : $a.removeChild(e))), t && o.length > 6 ? [o[0], o[1], o[4], o[5], o[12], o[13]] : o)
+          return n.svg && e.getAttribute("transform") ? (i = e.transform.baseVal.consolidate().matrix, o = [i.a, i.b, i.c, i.d, i.e, i.f], "1,0,0,1,0,0" === o.join(",") ? Rs : o) : (o !== Rs || e.offsetParent || e === $a || n.svg || (i = c.display, c.display = "block", a = e.parentNode, a && e.offsetParent || (r = 1, s = e.nextElementSibling, $a.appendChild(e)), o = Gs(e), i ? c.display = i : Is(e, "display"), r && (s ? a.insertBefore(e, s) : a ? a.appendChild(e) : $a.removeChild(e))), t && o.length > 6 ? [o[0], o[1], o[4], o[5], o[12], o[13]] : o)
         },
         Ws = (e, t, a, s, i, r) => {
           let n, c, o, l, d = e._gsap,
@@ -1835,7 +1835,7 @@ _global.SENTRY_RELEASE = {
             x = t.split(" "),
             w = parseFloat(x[0]) || 0,
             N = parseFloat(x[1]) || 0;
-          a ? m !== Fs && (c = _ * b - h * k) && (o = w * (b / c) + N * (-k / c) + (k * y - b * v) / c, l = w * (-h / c) + N * (_ / c) - (_ * y - h * v) / c, w = o, N = l) : (n = Cs(e), w = n.x + (~x[0].indexOf("%") ? w / 100 * n.width : w), N = n.y + (~(x[1] || x[0]).indexOf("%") ? N / 100 * n.height : N)), s || !1 !== s && d.smooth ? (v = w - g, y = N - u, d.xOffset = f + (v * _ + y * k) - v, d.yOffset = p + (v * h + y * b) - y) : d.xOffset = d.yOffset = 0, d.xOrigin = w, d.yOrigin = N, d.smooth = !!s, d.origin = t, d.originIsAbsolute = !!a, e.style[_s] = "0px 0px", r && (Es(r, d, "xOrigin", g, w), Es(r, d, "yOrigin", u, N), Es(r, d, "xOffset", f, d.xOffset), Es(r, d, "yOffset", p, d.yOffset)), e.setAttribute("data-svg-origin", w + " " + N)
+          a ? m !== Rs && (c = _ * b - h * k) && (o = w * (b / c) + N * (-k / c) + (k * y - b * v) / c, l = w * (-h / c) + N * (_ / c) - (_ * y - h * v) / c, w = o, N = l) : (n = Cs(e), w = n.x + (~x[0].indexOf("%") ? w / 100 * n.width : w), N = n.y + (~(x[1] || x[0]).indexOf("%") ? N / 100 * n.height : N)), s || !1 !== s && d.smooth ? (v = w - g, y = N - u, d.xOffset = f + (v * _ + y * k) - v, d.yOffset = p + (v * h + y * b) - y) : d.xOffset = d.yOffset = 0, d.xOrigin = w, d.yOrigin = N, d.smooth = !!s, d.origin = t, d.originIsAbsolute = !!a, e.style[_s] = "0px 0px", r && (Es(r, d, "xOrigin", g, w), Es(r, d, "yOrigin", u, N), Es(r, d, "xOffset", f, d.xOffset), Es(r, d, "yOffset", p, d.yOffset)), e.setAttribute("data-svg-origin", w + " " + N)
         },
         qs = (e, t) => {
           let a = e._gsap || new Ot(e);
@@ -1844,9 +1844,9 @@ _global.SENTRY_RELEASE = {
             D = a.scaleX < 0,
             B = "px",
             V = "deg",
-            R = getComputedStyle(e),
-            F = xs(e, _s) || "0";
-          return s = i = r = o = l = d = m = g = u = 0, n = c = 1, a.svg = !(!e.getCTM || !Ms(e)), R.translate && ("none" === R.translate && "none" === R.scale && "none" === R.rotate || (A[ps] = ("none" !== R.translate ? "translate3d(" + (R.translate + " 0 0").split(" ").slice(0, 3).join(", ") + ") " : "") + ("none" !== R.rotate ? "rotate(" + R.rotate + ") " : "") + ("none" !== R.scale ? "scale(" + R.scale.split(" ").join(",") + ") " : "") + ("none" !== R[ps] ? R[ps] : "")), A.scale = A.rotate = A.translate = "none"), h = Hs(e, a.svg), a.svg && (a.uncache ? (C = e.getBBox(), F = a.xOrigin - C.x + "px " + (a.yOrigin - C.y) + "px", T = "") : T = !t && e.getAttribute("data-svg-origin"), Ws(e, T || F, !!T || a.originIsAbsolute, !1 !== a.smooth, h)), p = a.xOrigin || 0, _ = a.yOrigin || 0, h !== Fs && (y = h[0], x = h[1], w = h[2], N = h[3], s = j = h[4], i = S = h[5], 6 === h.length ? (n = Math.sqrt(y * y + x * x), c = Math.sqrt(N * N + w * w), o = y || x ? Za(x, y) * Ka : 0, m = w || N ? Za(w, N) * Ka + o : 0, m && (c *= Math.abs(Math.cos(m * Qa))), a.svg && (s -= p - (p * y + _ * w), i -= _ - (p * x + _ * N))) : (O = h[6], z = h[7], I = h[8], E = h[9], L = h[10], P = h[11], s = h[12], i = h[13], r = h[14], k = Za(O, L), l = k * Ka, k && (b = Math.cos(-k), v = Math.sin(-k), T = j * b + I * v, C = S * b + E * v, M = O * b + L * v, I = j * -v + I * b, E = S * -v + E * b, L = O * -v + L * b, P = z * -v + P * b, j = T, S = C, O = M), k = Za(-w, L), d = k * Ka, k && (b = Math.cos(-k), v = Math.sin(-k), T = y * b - I * v, C = x * b - E * v, M = w * b - L * v, P = N * v + P * b, y = T, x = C, w = M), k = Za(x, y), o = k * Ka, k && (b = Math.cos(k), v = Math.sin(k), T = y * b + x * v, C = j * b + S * v, x = x * b - y * v, S = S * b - j * v, y = T, j = C), l && Math.abs(l) + Math.abs(o) > 359.9 && (l = o = 0, d = 180 - d), n = le(Math.sqrt(y * y + x * x + w * w)), c = le(Math.sqrt(S * S + O * O)), k = Za(j, S), m = Math.abs(k) > 2e-4 ? k * Ka : 0, u = P ? 1 / (P < 0 ? -P : P) : 0), a.svg && (T = e.getAttribute("transform"), a.forceCSS = e.setAttribute("transform", "") || !Us(xs(e, ps)), T && e.setAttribute("transform", T))), Math.abs(m) > 90 && Math.abs(m) < 270 && (D ? (n *= -1, m += o <= 0 ? 180 : -180, o += o <= 0 ? 180 : -180) : (c *= -1, m += m <= 0 ? 180 : -180)), t = t || a.uncache, a.x = s - ((a.xPercent = s && (!t && a.xPercent || (Math.round(e.offsetWidth / 2) === Math.round(-s) ? -50 : 0))) ? e.offsetWidth * a.xPercent / 100 : 0) + B, a.y = i - ((a.yPercent = i && (!t && a.yPercent || (Math.round(e.offsetHeight / 2) === Math.round(-i) ? -50 : 0))) ? e.offsetHeight * a.yPercent / 100 : 0) + B, a.z = r + B, a.scaleX = le(n), a.scaleY = le(c), a.rotation = le(o) + V, a.rotationX = le(l) + V, a.rotationY = le(d) + V, a.skewX = m + V, a.skewY = g + V, a.transformPerspective = u + B, (a.zOrigin = parseFloat(F.split(" ")[2]) || 0) && (A[_s] = Xs(F)), a.xOffset = a.yOffset = 0, a.force3D = f.force3D, a.renderTransform = a.svg ? ti : Xa ? ei : Ks, a.uncache = 0, a
+            F = getComputedStyle(e),
+            R = xs(e, _s) || "0";
+          return s = i = r = o = l = d = m = g = u = 0, n = c = 1, a.svg = !(!e.getCTM || !Ms(e)), F.translate && ("none" === F.translate && "none" === F.scale && "none" === F.rotate || (A[ps] = ("none" !== F.translate ? "translate3d(" + (F.translate + " 0 0").split(" ").slice(0, 3).join(", ") + ") " : "") + ("none" !== F.rotate ? "rotate(" + F.rotate + ") " : "") + ("none" !== F.scale ? "scale(" + F.scale.split(" ").join(",") + ") " : "") + ("none" !== F[ps] ? F[ps] : "")), A.scale = A.rotate = A.translate = "none"), h = Hs(e, a.svg), a.svg && (a.uncache ? (C = e.getBBox(), R = a.xOrigin - C.x + "px " + (a.yOrigin - C.y) + "px", T = "") : T = !t && e.getAttribute("data-svg-origin"), Ws(e, T || R, !!T || a.originIsAbsolute, !1 !== a.smooth, h)), p = a.xOrigin || 0, _ = a.yOrigin || 0, h !== Rs && (y = h[0], x = h[1], w = h[2], N = h[3], s = j = h[4], i = S = h[5], 6 === h.length ? (n = Math.sqrt(y * y + x * x), c = Math.sqrt(N * N + w * w), o = y || x ? Za(x, y) * Ka : 0, m = w || N ? Za(w, N) * Ka + o : 0, m && (c *= Math.abs(Math.cos(m * Qa))), a.svg && (s -= p - (p * y + _ * w), i -= _ - (p * x + _ * N))) : (O = h[6], z = h[7], I = h[8], E = h[9], L = h[10], P = h[11], s = h[12], i = h[13], r = h[14], k = Za(O, L), l = k * Ka, k && (b = Math.cos(-k), v = Math.sin(-k), T = j * b + I * v, C = S * b + E * v, M = O * b + L * v, I = j * -v + I * b, E = S * -v + E * b, L = O * -v + L * b, P = z * -v + P * b, j = T, S = C, O = M), k = Za(-w, L), d = k * Ka, k && (b = Math.cos(-k), v = Math.sin(-k), T = y * b - I * v, C = x * b - E * v, M = w * b - L * v, P = N * v + P * b, y = T, x = C, w = M), k = Za(x, y), o = k * Ka, k && (b = Math.cos(k), v = Math.sin(k), T = y * b + x * v, C = j * b + S * v, x = x * b - y * v, S = S * b - j * v, y = T, j = C), l && Math.abs(l) + Math.abs(o) > 359.9 && (l = o = 0, d = 180 - d), n = le(Math.sqrt(y * y + x * x + w * w)), c = le(Math.sqrt(S * S + O * O)), k = Za(j, S), m = Math.abs(k) > 2e-4 ? k * Ka : 0, u = P ? 1 / (P < 0 ? -P : P) : 0), a.svg && (T = e.getAttribute("transform"), a.forceCSS = e.setAttribute("transform", "") || !Us(xs(e, ps)), T && e.setAttribute("transform", T))), Math.abs(m) > 90 && Math.abs(m) < 270 && (D ? (n *= -1, m += o <= 0 ? 180 : -180, o += o <= 0 ? 180 : -180) : (c *= -1, m += m <= 0 ? 180 : -180)), t = t || a.uncache, a.x = s - ((a.xPercent = s && (!t && a.xPercent || (Math.round(e.offsetWidth / 2) === Math.round(-s) ? -50 : 0))) ? e.offsetWidth * a.xPercent / 100 : 0) + B, a.y = i - ((a.yPercent = i && (!t && a.yPercent || (Math.round(e.offsetHeight / 2) === Math.round(-i) ? -50 : 0))) ? e.offsetHeight * a.yPercent / 100 : 0) + B, a.z = r + B, a.scaleX = le(n), a.scaleY = le(c), a.rotation = le(o) + V, a.rotationX = le(l) + V, a.rotationY = le(d) + V, a.skewX = m + V, a.skewY = g + V, a.transformPerspective = u + B, (a.zOrigin = parseFloat(R.split(" ")[2]) || 0) && (A[_s] = Xs(R)), a.xOffset = a.yOffset = 0, a.force3D = f.force3D, a.renderTransform = a.svg ? ti : Xa ? ei : Ks, a.uncache = 0, a
         },
         Xs = e => (e = e.split(" "))[0] + " " + e[1],
         Ys = (e, t, a) => {
@@ -1931,7 +1931,7 @@ _global.SENTRY_RELEASE = {
           i = "Bottom",
           r = "Left",
           n = (t < 3 ? [a, s, i, r] : [a + r, a + s, i + s, i + r]).map((a => t < 2 ? e + a : "border" + a + e));
-        Rs[t > 1 ? "border" + e : e] = function(e, t, a, s, i) {
+        Fs[t > 1 ? "border" + e : e] = function(e, t, a, s, i) {
           let r, c;
           if (arguments.length < 4) return r = n.map((t => Os(e, t, a))), c = r.join(" "), 5 === c.split(r[0]).length ? r[0] : c;
           r = (s + "").split(" "), c = {}, n.forEach(((e, t) => c[e] = r[t] = r[t] || r[(t - 1) / 2 | 0])), e.init(t, c, i)
@@ -1947,7 +1947,7 @@ _global.SENTRY_RELEASE = {
             j = a.vars.startAt;
           for (m in Ua || js(), this.styles = this.styles || vs(e), y = this.styles.props, this.tween = a, t)
             if ("autoRound" !== m && (n = t[m], !ee[m] || !$t(m, t, a, s, e, i)))
-              if (l = typeof n, d = Rs[m], "function" === l && (n = n.call(a, s, e, i), l = typeof n), "string" === l && ~n.indexOf("random(") && (n = rt(n)), d) d(this, e, m, n, a) && (v = 1);
+              if (l = typeof n, d = Fs[m], "function" === l && (n = n.call(a, s, e, i), l = typeof n), "string" === l && ~n.indexOf("random(") && (n = rt(n)), d) d(this, e, m, n, a) && (v = 1);
               else if ("--" === m.substr(0, 2)) r = (getComputedStyle(e).getPropertyValue(m) + "").trim(), n += "", bt.lastIndex = 0, bt.test(r) || (g = We(r), u = We(n)), u ? g !== u && (r = Ps(e, m, r, u) + u) : g && (n += g), this.add(w, "setProperty", r, n, s, i, 0, 0, m), x.push(m), y.push(m, 0, w[m]);
           else if ("undefined" !== l) {
             if (j && m in j ? (r = "function" == typeof j[m] ? j[m].call(a, s, e, i) : j[m], N(r) && ~r.indexOf("random(") && (r = rt(r)), We(r + "") || (r += f.units[m] || We(Os(e, m)) || ""), "=" === (r + "").charAt(1) && (r = Os(e, m))) : r = Os(e, m), o = parseFloat(r), p = "string" === l && "=" === n.charAt(1) && n.substr(0, 2), p && (n = n.substr(2)), c = parseFloat(n), m in as && ("autoAlpha" === m && (1 === o && "hidden" === Os(e, "visibility") && c && (o = 0), y.push("visibility", 0, w.visibility), Es(this, w, "visibility", o ? "inherit" : "hidden", c ? "inherit" : "hidden", !c)), "scale" !== m && "transform" !== m && (m = as[m], ~m.indexOf(",") && (m = m.split(",")[0]))), _ = m in Ya, _)
@@ -2213,12 +2213,12 @@ _global.SENTRY_RELEASE = {
         LayeredImage: () => yt,
         LoadingAnimation: () => Ci,
         MultiSourceImage: () => be,
-        NewswireBlocks: () => Rt,
+        NewswireBlocks: () => Ft,
         NewswireCard: () => zt,
         NewswireList: () => At,
         NewswireRelated: () => Bt,
         NewswireTag: () => Et,
-        OrderedList: () => Ft.c,
+        OrderedList: () => Rt.c,
         PackList: () => Zt,
         PackListMenu: () => ga,
         Paging: () => pa,
@@ -2244,7 +2244,7 @@ _global.SENTRY_RELEASE = {
         Skeleton: () => zs,
         SrcsetImage: () => jt,
         TextFit: () => Te,
-        ThumbsGallery: () => Fs,
+        ThumbsGallery: () => Rs,
         TinaModuleFetchNRender: () => Gs,
         TinaWrapper: () => Hs,
         TrackList: () => Ds,
@@ -2975,8 +2975,8 @@ _global.SENTRY_RELEASE = {
             })]
           })
         };
-      var R = a(45792),
-        F = a(42836);
+      var F = a(45792),
+        R = a(42836);
       const $ = (0, a(62748).U1)(),
         U = e => e.some((e => !e)),
         G = e => {
@@ -2985,11 +2985,11 @@ _global.SENTRY_RELEASE = {
             children: a
           } = e;
           const [s, i] = (0, c.useState)(!1), r = (e => {
-            const [t] = (0, m.useSearchParams)(), [a, s] = (0, c.useState)(null), i = (0, F.useRockstarUser)(), {
+            const [t] = (0, m.useSearchParams)(), [a, s] = (0, c.useState)(null), i = (0, R.useRockstarUser)(), {
               loggedIn: r
             } = i, {
               currentCharId: n
-            } = (0, F.useRockstarUserState)(), o = (0, F.useIsUserGtaPlus)(i?.data, n);
+            } = (0, R.useRockstarUserState)(), o = (0, R.useIsUserGtaPlus)(i?.data, n);
             return (0, c.useEffect)((() => {
               const a = "true" === t.get("conditionPreview");
               if (!e?.length > 0) return;
@@ -3025,7 +3025,7 @@ _global.SENTRY_RELEASE = {
             i(r)
           }), [r]), (0, c.useMemo)((() => s ? a : null), [s])
         },
-        H = (0, R.withTranslations)((e => {
+        H = (0, F.withTranslations)((e => {
           let {
             children: t
           } = e;
@@ -3088,7 +3088,7 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: s
-          } = (0, F.useGtmTrack)(), {
+          } = (0, R.useGtmTrack)(), {
             refetch: i
           } = (0, h.useQuery)(q.UserGetVote, {
             skip: !0
@@ -3146,7 +3146,7 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: i
-          } = (0, F.useGtmTrack)();
+          } = (0, R.useGtmTrack)();
           return (0, u.jsx)("a", {
             href: a,
             target: "_blank",
@@ -3172,7 +3172,7 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: r
-          } = (0, F.useGtmTrack)();
+          } = (0, R.useGtmTrack)();
           return (0, u.jsxs)("div", {
             className: Y.actionFooter,
             children: [t, a && " ", a && (0, u.jsx)("a", {
@@ -3184,7 +3184,7 @@ _global.SENTRY_RELEASE = {
             })]
           })
         },
-        J = (0, R.withTranslations)((e => {
+        J = (0, F.withTranslations)((e => {
           let {
             header: t,
             subheader: a,
@@ -3204,9 +3204,9 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             loggedIn: k
-          } = (0, F.useRockstarUser)(), {
+          } = (0, R.useRockstarUser)(), {
             track: b
-          } = (0, F.useGtmTrack)(), v = `${document.location.origin}/auth/sc-auth-login?returnUrl=${window.location.pathname}`, {
+          } = (0, R.useGtmTrack)(), v = `${document.location.origin}/auth/sc-auth-login?returnUrl=${window.location.pathname}`, {
             ref: y,
             inView: x
           } = (0, W.useInView)({
@@ -3419,7 +3419,7 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: v
-          } = (0, F.useGtmTrack)(), y = (0, R.useDataLayer)(), x = i ?? t, w = (0, R.findPlatform)(p)?.friendlyName, N = (0, c.useMemo)((() => {
+          } = (0, R.useGtmTrack)(), y = (0, F.useDataLayer)(), x = i ?? t, w = (0, F.findPlatform)(p)?.friendlyName, N = (0, c.useMemo)((() => {
             const e = window.location.hostname;
             let t;
             try {
@@ -3480,7 +3480,7 @@ _global.SENTRY_RELEASE = {
             src: i,
             style: r
           } = e;
-          const [n, c] = (0, R.usePreloadImg)(i);
+          const [n, c] = (0, F.usePreloadImg)(i);
           let o = i;
           !1 === n && ("rockstargames-sites-legacyee609f31f3685766122c2c6fc0ef0710" === s && (o = a(61820)), o = a(43976));
           const {
@@ -3509,7 +3509,7 @@ _global.SENTRY_RELEASE = {
           } = (0, _e.useImageParser)(i);
           const {
             isMobile: o
-          } = (0, R.useWindowResize)();
+          } = (0, F.useWindowResize)();
           return c.desktop || c.mobile || (n = "", c = {
             mobile: a(61820),
             desktop: a(43976)
@@ -3758,7 +3758,7 @@ _global.SENTRY_RELEASE = {
             id: d,
             className: (0, Ae.classList)("rockstargames-sites-legacyf42b4606ed4a5b16b7647ad7b7eb229d", o ? "rockstargames-sites-legacyb00444166ce6346d7ca364a75a335ecc" : "", l),
             "data-game": "community" === n ? null : s,
-            style: (0, R.safeStyles)(g),
+            style: (0, F.safeStyles)(g),
             "data-context": a,
             "data-template": n,
             "data-theme": c,
@@ -3814,8 +3814,8 @@ _global.SENTRY_RELEASE = {
             })
           }) : null
         };
-      var Re = a(22560);
-      const Fe = {
+      var Fe = a(22560);
+      const Re = {
           type: "spring",
           stiffness: 650,
           damping: 45
@@ -3860,7 +3860,7 @@ _global.SENTRY_RELEASE = {
                 ease: "easeOut",
                 duration: .1
               },
-              height: Fe
+              height: Re
             },
             transitionEnd: {
               display: "none"
@@ -3885,7 +3885,7 @@ _global.SENTRY_RELEASE = {
             "--cta-background-color-noBlur": "var(--black-15)",
             padding: "var(--foundry-global-spacing-dimensions-300) var(--foundry-global-spacing-dimensions-600)",
             gridGap: 0,
-            transition: Fe,
+            transition: Re,
             transitionEnd: {
               "--btn-hover-bg-color": "var(--white-100)",
               "--btn-hover-bg-color-noBlur": "var(--white-100)",
@@ -3965,7 +3965,7 @@ _global.SENTRY_RELEASE = {
           } = e;
           const [f, p] = (0, c.useState)(!1), {
             track: _
-          } = (0, F.useGtmTrack)(), h = (0, c.useRef)(null), k = (0, c.useRef)(f);
+          } = (0, R.useGtmTrack)(), h = (0, c.useRef)(null), k = (0, c.useRef)(f);
           (0, c.useEffect)((() => {
             k.current = f
           }), [f]), (0, c.useEffect)((() => {
@@ -3992,20 +3992,20 @@ _global.SENTRY_RELEASE = {
           };
           return (0, u.jsxs)("div", {
             className: (0, C.classList)(We.container, r),
-            children: [(0, u.jsx)(Re.motion.div, {
+            children: [(0, u.jsx)(Fe.motion.div, {
               className: We.content,
               animate: f ? "open" : "close",
               variants: Ue,
               "aria-hidden": !!f,
               children: n
-            }), (0, u.jsxs)(Re.motion.div, {
+            }), (0, u.jsxs)(Fe.motion.div, {
               "data-variant": t,
               className: ue()(f ? We.expandedButton : We.unexpandedButton),
               animate: f ? "open" : "closed",
               variants: He,
               initial: !1,
               ref: h,
-              children: [(0, u.jsx)(Re.motion.button, {
+              children: [(0, u.jsx)(Fe.motion.button, {
                 className: ue()(We.buttonText, i),
                 "aria-expanded": f,
                 disabled: f,
@@ -4066,7 +4066,7 @@ _global.SENTRY_RELEASE = {
                   }
                 },
                 children: "string" == typeof s ? s : "Subscribe"
-              }), (0, u.jsxs)(Re.motion.div, {
+              }), (0, u.jsxs)(Fe.motion.div, {
                 className: We.expandedArea,
                 animate: f ? "open" : "closed",
                 variants: Ge,
@@ -4089,7 +4089,7 @@ _global.SENTRY_RELEASE = {
                 }), (0, u.jsx)("div", {
                   className: We.platformButtons,
                   children: o.length ? o.map((e => (0, u.jsx)(qe, {
-                    buttonText: e.buttonText ?? (0, R.findPlatform)(e.platform)?.friendlyName ?? "",
+                    buttonText: e.buttonText ?? (0, F.findPlatform)(e.platform)?.friendlyName ?? "",
                     link: e.href,
                     platform: e.platform,
                     onClick: b(e),
@@ -4261,12 +4261,12 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: _
-          } = (0, F.useGtmTrack)(), h = (0, c.useRef)(null), k = (0, c.useRef)(null), b = (0, c.useRef)(null), [v, y] = (0, c.useState)(null), [x, w] = (0, c.useState)(!1), [N, j] = (0, c.useState)(null), [S, T] = (0, c.useState)(), [M, I] = (0, c.useState)(), {
+          } = (0, R.useGtmTrack)(), h = (0, c.useRef)(null), k = (0, c.useRef)(null), b = (0, c.useRef)(null), [v, y] = (0, c.useState)(null), [x, w] = (0, c.useState)(!1), [N, j] = (0, c.useState)(null), [S, T] = (0, c.useState)(), [M, I] = (0, c.useState)(), {
             ref: E,
             inView: L
           } = (0, W.useInView)({
             threshold: .6
-          }), [z, O] = (0, c.useState)(!1), [A, D] = (0, c.useState)(null), [B, V] = (0, c.useState)(!1), [R, $] = (0, c.useState)(0), [U, G] = (0, c.useState)(0);
+          }), [z, O] = (0, c.useState)(!1), [A, D] = (0, c.useState)(null), [B, V] = (0, c.useState)(!1), [F, $] = (0, c.useState)(0), [U, G] = (0, c.useState)(0);
           (0, c.useEffect)((() => {
             const e = () => {
               V(window.innerWidth < 1024)
@@ -4276,7 +4276,7 @@ _global.SENTRY_RELEASE = {
             }
           }), []), (0, c.useEffect)((() => {
             const e = () => {
-              S && !(0, et.isEmpty)(S) && S?.height > 0 && S?.height !== R && $(S?.height)
+              S && !(0, et.isEmpty)(S) && S?.height > 0 && S?.height !== F && $(S?.height)
             };
             return e(), window.addEventListener("resize", e), () => {
               window.removeEventListener("resize", e)
@@ -4340,7 +4340,7 @@ _global.SENTRY_RELEASE = {
           } : {
             ...d
           };
-          const X = 0 !== R ? `${R}px` : "100%";
+          const X = 0 !== F ? `${F}px` : "100%";
           q = {
             ...q,
             "--carousel-cards-height": X,
@@ -4575,13 +4575,13 @@ _global.SENTRY_RELEASE = {
               plainButtonsArray: []
             });
             r(e), o(t)
-          }), [a]), i.length ? (0, u.jsx)(Re.motion.div, {
+          }), [a]), i.length ? (0, u.jsx)(Fe.motion.div, {
             variants: t ? ot : void 0,
             children: (0, u.jsx)(Xe, {
               variant: "gen9",
               buttonText: s,
               platformsAndLinks: i,
-              children: !!n.length && (0, u.jsx)(Re.motion.div, {
+              children: !!n.length && (0, u.jsx)(Fe.motion.div, {
                 variants: ot,
                 children: (0, u.jsx)(z, {
                   buttons: n,
@@ -4590,7 +4590,7 @@ _global.SENTRY_RELEASE = {
               })
             })
           }) : (0, u.jsx)(u.Fragment, {
-            children: !!n.length && (0, u.jsx)(Re.motion.div, {
+            children: !!n.length && (0, u.jsx)(Fe.motion.div, {
               variants: ot,
               children: (0, u.jsx)(z, {
                 buttons: n,
@@ -4610,17 +4610,17 @@ _global.SENTRY_RELEASE = {
             title: c = "",
             legalText: o
           } = e;
-          return (0, u.jsxs)(Re.motion.div, {
+          return (0, u.jsxs)(Fe.motion.div, {
             className: nt.content,
             initial: "hidden",
             animate: "visible",
             variants: t ? ct : void 0,
-            children: [(0, u.jsx)(Re.motion.div, {
+            children: [(0, u.jsx)(Fe.motion.div, {
               variants: t ? ot : void 0,
               children: (0, u.jsx)(j, {
                 brands: a
               })
-            }), (c || r) && (0, u.jsxs)(Re.motion.div, {
+            }), (c || r) && (0, u.jsxs)(Fe.motion.div, {
               className: nt.descriptions,
               variants: t ? ot : void 0,
               children: [c && (0, u.jsx)("h2", {
@@ -4652,7 +4652,7 @@ _global.SENTRY_RELEASE = {
                 ctas: s,
                 expandingButtonLabel: n
               })
-            }), o && (0, u.jsx)(Re.motion.div, {
+            }), o && (0, u.jsx)(Fe.motion.div, {
               className: nt.legalText,
               variants: t ? ot : void 0,
               children: (0, u.jsx)("p", {
@@ -4711,7 +4711,7 @@ _global.SENTRY_RELEASE = {
             k = (0, C.useGetCdnSource)(a?.desktop?.full_src ?? h),
             b = (0, C.useGetCdnSource)(l?.mobile?.full_src ?? null),
             v = (0, C.useGetCdnSource)(l?.desktop?.full_src ?? b);
-          return (0, u.jsxs)(Re.motion.div, {
+          return (0, u.jsxs)(Fe.motion.div, {
             className: (0, C.classList)(nt.hero, i),
             style: {
               "--background-image-desktop": `url(${k})`,
@@ -4758,7 +4758,7 @@ _global.SENTRY_RELEASE = {
           } = e;
           return (0, u.jsx)("span", {
             className: (0, C.classList)(s, a?.className, "rockstargames-sites-legacya7f106a8036d74ed9282a741476c6b5a"),
-            style: (0, R.safeStyles)(i ?? a?.style ?? {}),
+            style: (0, F.safeStyles)(i ?? a?.style ?? {}),
             dangerouslySetInnerHTML: {
               __html: tt().unescape(t)
             }
@@ -4792,7 +4792,7 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: r
-          } = (0, F.useGtmTrack)(), n = (0, m.useLocation)(), l = (0, o.useIntl)(), [d, g] = (0, o.getLocale)(), [p, _] = (0, c.useState)(!1), h = (0, c.useMemo)((() => (0, pt.c)()), []), k = (0, c.useCallback)((e => {
+          } = (0, R.useGtmTrack)(), n = (0, m.useLocation)(), l = (0, o.useIntl)(), [d, g] = (0, o.getLocale)(), [p, _] = (0, c.useState)(!1), h = (0, c.useMemo)((() => (0, pt.c)()), []), k = (0, c.useCallback)((e => {
             let t = n.pathname;
             const a = t.split("/");
             return o.locales.map((e => e.subdomaincom)).includes(a[0]) && (t = a.slice(1).join("/")), h.currentSite?.site === pt.U.www ? "en" === e ? `${window.location.origin}${t}${n.search}` : `${window.location.origin}/${e}${t}${n.search}` : `${window.location.origin}${t}${n.search}`
@@ -5000,7 +5000,7 @@ _global.SENTRY_RELEASE = {
             children: (0, u.jsx)("figure", {
               children: (0, u.jsxs)("div", {
                 className: (0, C.classList)("rockstargames-sites-legacycab262c98c7f5bb3e982d9b075b3c2a8", d ? "rockstargames-sites-legacycefd6d8859aeec1057caed28caa160c3" : "", o?.hiddenMobile ? "hiddenMobile" : "", o?.hiddenLarge ? "hiddenLarge" : "", o?.className, c),
-                style: (0, R.safeStyles)({
+                style: (0, F.safeStyles)({
                   ...n,
                   ...o?.style
                 }),
@@ -5099,7 +5099,7 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: i
-          } = (0, F.useGtmTrack)(), {
+          } = (0, R.useGtmTrack)(), {
             ref: r,
             inView: n
           } = (0, W.useInView)({
@@ -5157,10 +5157,10 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: n
-          } = (0, F.useGtmTrack)(), [o] = (0, m.useSearchParams)(), l = s.preview_images_parsed.newswire_block, d = {
+          } = (0, R.useGtmTrack)(), [o] = (0, m.useSearchParams)(), l = s.preview_images_parsed.newswire_block, d = {
             default: 0 !== a || i ? l.square || l.d16x9 || l._fallback : l.d16x9 || l.square || l._fallback,
             mobile: l.square || l._fallback
-          }, [g, p] = (0, R.usePreloadImg)(d.default), _ = {
+          }, [g, p] = (0, F.usePreloadImg)(d.default), _ = {
             default: {
               backgroundImage: `url(${d.default})`
             },
@@ -5216,7 +5216,7 @@ _global.SENTRY_RELEASE = {
         };
       var Pt = a(55492),
         Ot = a.n(Pt);
-      const At = (0, R.withTranslations)((e => {
+      const At = (0, F.withTranslations)((e => {
           let {
             section: t = "",
             relativeTo: a = "",
@@ -5226,7 +5226,7 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: n
-          } = (0, F.useGtmTrack)(), [o] = (0, m.useSearchParams)(), {
+          } = (0, R.useGtmTrack)(), [o] = (0, m.useSearchParams)(), {
             tagId: l = null
           } = (0, m.useParams)(), [d, g] = (0, c.useState)(l ?? s ?? o.get("tag_id")), [f, p] = (0, c.useState)(1), [_, k] = (0, c.useState)([]), [b, v] = (0, c.useState)(null), {
             data: y
@@ -5243,7 +5243,7 @@ _global.SENTRY_RELEASE = {
           }), [o.get("tag_id")]), (0, c.useEffect)((() => {
             y && y.posts && y.posts.paging && v(y.posts.paging), y && y.posts && y.posts.results && k(_.concat(y.posts.results))
           }), [y]), _.length ? (0, u.jsxs)(u.Fragment, {
-            children: [(0, u.jsx)(Rt, {
+            children: [(0, u.jsx)(Ft, {
               section: t,
               posts: _,
               relativeTo: a,
@@ -5269,7 +5269,7 @@ _global.SENTRY_RELEASE = {
           posts: "rockstargames-sites-legacyc0aa38678decd13ca38886b4547efedd",
           just1post: "rockstargames-sites-legacyb1a31ddf7fd4458ee860d354a6a0ac92"
         },
-        Bt = (0, R.withTranslations)((e => {
+        Bt = (0, F.withTranslations)((e => {
           let {
             posts: t,
             t: a
@@ -5291,7 +5291,7 @@ _global.SENTRY_RELEASE = {
           newswireBlocks: "rockstargames-sites-legacyc2c8eedd25de7e186655f98b2a8d8960",
           noSpecialOrder: "rockstargames-sites-legacyc0d0db9dfc71c9f4f959b9c017b1ae4b"
         },
-        Rt = (0, R.withGtmTracking)((e => {
+        Ft = (0, F.withGtmTracking)((e => {
           let {
             section: t = "",
             noSpecialOrder: a = !1,
@@ -5327,7 +5327,7 @@ _global.SENTRY_RELEASE = {
             }, e.id)))
           })
         }));
-      var Ft = a(52256),
+      var Rt = a(52256),
         $t = a(77100),
         Ut = a(84296);
       const Gt = (e, t) => {
@@ -5392,15 +5392,15 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             isMobile: g
-          } = (0, R.useWindowResize)(), {
+          } = (0, F.useWindowResize)(), {
             loggedIn: f
-          } = (0, F.useRockstarUser)(), {
+          } = (0, R.useRockstarUser)(), {
             selectedCharacterTuple: p
-          } = (0, F.useRockstarUserState)(), [_, h] = (0, c.useState)(!1), [k, b] = (0, c.useState)(d), [v, y] = (0, c.useState)(!1), x = (0, o.useIntl)(), w = !!r?.length;
+          } = (0, R.useRockstarUserState)(), [_, h] = (0, c.useState)(!1), [k, b] = (0, c.useState)(d), [v, y] = (0, c.useState)(!1), x = (0, o.useIntl)(), w = !!r?.length;
           (0, c.useEffect)((() => {
             if (Array.isArray(p)) {
               const e = p?.[0];
-              y((0, R.getGen9Consoles)().includes(e))
+              y((0, F.getGen9Consoles)().includes(e))
             }
           }), [String(p)]), (0, c.useEffect)((() => {
             if (r && r.length > 0) {
@@ -5409,7 +5409,7 @@ _global.SENTRY_RELEASE = {
             } else h(!1)
           }), [r]);
           const N = `${g?s?.mobile:s?.desktop}?im=Resize,height=${l}`;
-          return (0, R.usePreloadImg)(N, (() => b(!0))), (0, u.jsx)(m.NavLink, {
+          return (0, F.usePreloadImg)(N, (() => b(!0))), (0, u.jsx)(m.NavLink, {
             className: [Xt.packCard, i, _ ? Xt.packCompleted : ""].join(" "),
             to: a,
             onClick: n,
@@ -5686,7 +5686,7 @@ _global.SENTRY_RELEASE = {
           const l = (0, o.useIntl)(),
             {
               track: d
-            } = (0, F.useGtmTrack)(),
+            } = (0, R.useGtmTrack)(),
             {
               pathname: g
             } = (0, m.useLocation)(),
@@ -5791,7 +5791,7 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: r
-          } = (0, F.useGtmTrack)(), [n, o] = (0, c.useState)(0), l = (0, c.useCallback)(((e, s) => {
+          } = (0, R.useGtmTrack)(), [n, o] = (0, c.useState)(0), l = (0, c.useCallback)(((e, s) => {
             d(`Secondary Nav > ${t[n].title} > ${e}`, s), a()
           }), [t, a, n, r]), d = (e, t) => {
             r({
@@ -5804,7 +5804,7 @@ _global.SENTRY_RELEASE = {
               element_placement: e
             })
           };
-          return (0, u.jsx)(Re.motion.div, {
+          return (0, u.jsx)(Fe.motion.div, {
             className: "rockstargames-sites-legacyaa2ce15f29ac99fe06895664698bb6cc",
             initial: {
               height: 0
@@ -6241,7 +6241,7 @@ _global.SENTRY_RELEASE = {
         Da = e => Aa(e),
         Ba = Ma("charListHiddenReactive", !0),
         Va = e => Ba(e),
-        Ra = () => {
+        Fa = () => {
           const e = (0, h.useReactiveVar)(Ia),
             t = (0, h.useReactiveVar)(La),
             a = (0, h.useReactiveVar)(Pa),
@@ -6264,8 +6264,8 @@ _global.SENTRY_RELEASE = {
             setCharListHidden: Va
           })), [e, t, a, s, i])
         };
-      var Fa = a(69760),
-        $a = a.n(Fa),
+      var Ra = a(69760),
+        $a = a.n(Ra),
         Ua = a(9860);
       const Ga = {
           event: "account_menu_click",
@@ -6368,7 +6368,7 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: p
-          } = (0, F.useGtmTrack)(), _ = (0, pt.c)(), h = (0, o.useIntl)();
+          } = (0, R.useGtmTrack)(), _ = (0, pt.c)(), h = (0, o.useIntl)();
           let k = s;
           i && (k = i.domain === _.currentSite?.site ? i.path : `https://${_.sites[i.domain]}.rockstargames.com${i.path}`);
           const b = {
@@ -6416,11 +6416,11 @@ _global.SENTRY_RELEASE = {
           const {
             windowWidth: h,
             windowHeight: k
-          } = (0, R.useWindowResize)(), {
+          } = (0, F.useWindowResize)(), {
             track: b
-          } = (0, F.useGtmTrack)(), {
+          } = (0, R.useGtmTrack)(), {
             navOpen: v
-          } = (0, F.useRockstarUserState)(), y = (0, c.useRef)(null), [x, w] = (0, c.useState)(0), [N, j] = (0, c.useState)(0), [S, T] = (0, c.useState)(!0);
+          } = (0, R.useRockstarUserState)(), y = (0, c.useRef)(null), [x, w] = (0, c.useState)(0), [N, j] = (0, c.useState)(0), [S, T] = (0, c.useState)(!0);
           return (0, c.useEffect)((() => {
             m !== t && !1 === S && T(!0), m === t && T(!1)
           }), [m]), (0, c.useEffect)((() => {
@@ -6483,17 +6483,17 @@ _global.SENTRY_RELEASE = {
           const {
             windowWidth: a,
             windowHeight: s
-          } = (0, R.useWindowResize)(), i = (0, o.useIntl)(), {
+          } = (0, F.useWindowResize)(), i = (0, o.useIntl)(), {
             languageSelectorOpened: r,
             setLanguageSelectorOpened: n,
             activeSubNavId: l,
             setActiveSubNavId: d,
             subNavExtraHeight: g,
             setSubNavExtraHeight: f
-          } = Ra(), {
+          } = Fa(), {
             setSelectedCharacterTuple: p,
             navOpen: _
-          } = (0, F.useRockstarUserState)(), h = (0, R.useLocale)(), k = (0, R.toScLocaleString)(h), [b, v] = (0, c.useState)(""), y = (0, m.useLocation)(), x = `${t.login}?returnUrl=${b}&lang=${k}`, w = `${t.signup}&returnUrl=${b}&lang=${k}`, N = (0, c.useMemo)((() => (0, pt.c)()), []), j = (0, c.useMemo)((() => {
+          } = (0, R.useRockstarUserState)(), h = (0, F.useLocale)(), k = (0, F.toScLocaleString)(h), [b, v] = (0, c.useState)(""), y = (0, m.useLocation)(), x = `${t.login}?returnUrl=${b}&lang=${k}`, w = `${t.signup}&returnUrl=${b}&lang=${k}`, N = (0, c.useMemo)((() => (0, pt.c)()), []), j = (0, c.useMemo)((() => {
             const e = ((e, t, a) => [{
               text: e.formatMessage(ja.sc_link_sign_in),
               href: t,
@@ -6579,10 +6579,10 @@ _global.SENTRY_RELEASE = {
             {
               currentCharId: n,
               setCurrentCharId: l
-            } = (0, F.useRockstarUserState)(),
+            } = (0, R.useRockstarUserState)(),
             {
               track: d
-            } = (0, F.useGtmTrack)(),
+            } = (0, R.useGtmTrack)(),
             m = (0, c.createRef)(),
             {
               platform: g,
@@ -6680,9 +6680,9 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             data: i
-          } = (0, F.useRockstarUser)(), {
+          } = (0, R.useRockstarUser)(), {
             track: r
-          } = (0, F.useGtmTrack)(), n = (0, o.useIntl)(), [l, d] = (0, c.useState)([]), [m, g] = (0, c.useState)(null), [f, p] = (0, c.useState)(null), [_, h] = (0, c.useState)(!1), [k, b] = (0, c.useState)(-1), [v, y] = (0, c.useState)([]), [x, w] = (0, c.useState)(0), N = a(71084), [j, S] = (0, c.useState)("0"), [T, C] = (0, c.useState)("0"), M = e => parseInt(e, 10).toLocaleString("en-US", {
+          } = (0, R.useGtmTrack)(), n = (0, o.useIntl)(), [l, d] = (0, c.useState)([]), [m, g] = (0, c.useState)(null), [f, p] = (0, c.useState)(null), [_, h] = (0, c.useState)(!1), [k, b] = (0, c.useState)(-1), [v, y] = (0, c.useState)([]), [x, w] = (0, c.useState)(0), N = a(71084), [j, S] = (0, c.useState)("0"), [T, C] = (0, c.useState)("0"), M = e => parseInt(e, 10).toLocaleString("en-US", {
             minimumFractionDigits: 0
           }), I = () => {
             L((0, u.jsx)("img", {
@@ -6940,7 +6940,7 @@ _global.SENTRY_RELEASE = {
           scNavHeader: "rockstargames-sites-legacybb74821846f47bbe5fc0896364efd520",
           scNavWrap: "rockstargames-sites-legacya7f1e2d78519eaf099bd43c6ad07abc9"
         },
-        ts = (0, R.withTranslations)((e => {
+        ts = (0, F.withTranslations)((e => {
           let {
             sc: t,
             charListHidden: a,
@@ -6955,7 +6955,7 @@ _global.SENTRY_RELEASE = {
           const {
             windowWidth: f,
             windowHeight: p
-          } = (0, R.useWindowResize)(), _ = (0, o.useIntl)(), {
+          } = (0, F.useWindowResize)(), _ = (0, o.useIntl)(), {
             languageSelectorOpened: k,
             setLanguageSelectorOpened: b,
             activeSubNavId: v,
@@ -6964,14 +6964,14 @@ _global.SENTRY_RELEASE = {
             setSubNavExtraHeight: w,
             scNavOpened: N,
             setScNavOpened: j
-          } = Ra(), [S, T] = (0, c.useState)(""), C = (0, m.useLocation)(), {
+          } = Fa(), [S, T] = (0, c.useState)(""), C = (0, m.useLocation)(), {
             lsSettings: M
-          } = (0, R.useRockstarWebLSSettings)(), {
+          } = (0, F.useRockstarWebLSSettings)(), {
             track: I
-          } = (0, F.useGtmTrack)(), E = (0, h.useRockstarTokenPing)(), {
+          } = (0, R.useGtmTrack)(), E = (0, h.useRockstarTokenPing)(), {
             data: L,
             loggedIn: z
-          } = (0, F.useRockstarUser)(), {
+          } = (0, R.useRockstarUser)(), {
             charactersNeeded: P,
             currentCharId: O,
             hasNotifications: A,
@@ -6980,7 +6980,7 @@ _global.SENTRY_RELEASE = {
             setHasNotifications: V,
             setSelectedCharacterTuple: $,
             setUserData: U
-          } = (0, F.useRockstarUserState)(), [G, H] = (0, c.useState)(null), [W, q] = (0, c.useState)(null), [X, Y] = (0, c.useState)(!1), [K, Q] = (0, c.useState)(!1), [Z, J] = (0, c.useState)(0), ee = (0, c.createRef)(), te = Za(ee, !1), ae = (0, c.createRef)(), [se, ie] = (0, c.useState)(0), [re, ne] = (0, c.useState)([]), [ce, oe] = (0, c.useState)(244), le = (0, c.useRef)(null), de = (0, c.useMemo)((() => (0, pt.c)()), []), me = (0, c.useMemo)((() => ((e, t, a, s, i) => [{
+          } = (0, R.useRockstarUserState)(), [G, H] = (0, c.useState)(null), [W, q] = (0, c.useState)(null), [X, Y] = (0, c.useState)(!1), [K, Q] = (0, c.useState)(!1), [Z, J] = (0, c.useState)(0), ee = (0, c.createRef)(), te = Za(ee, !1), ae = (0, c.createRef)(), [se, ie] = (0, c.useState)(0), [re, ne] = (0, c.useState)([]), [ce, oe] = (0, c.useState)(244), le = (0, c.useRef)(null), de = (0, c.useMemo)((() => (0, pt.c)()), []), me = (0, c.useMemo)((() => ((e, t, a, s, i) => [{
             text: e.formatMessage(ja.sc_link_activity_feed),
             location: {
               domain: pt.U.socialClub,
@@ -7153,7 +7153,7 @@ _global.SENTRY_RELEASE = {
               if (!L?.id) return;
               const {
                 count: e
-              } = await (0, R.coreScApiFetch)("notification/count", {
+              } = await (0, F.coreScApiFetch)("notification/count", {
                 pingBearer: E
               });
               V(e > 0)
@@ -7307,7 +7307,7 @@ _global.SENTRY_RELEASE = {
         ss = (0, o.withIntl)((() => {
           const {
             windowHeight: e
-          } = (0, R.useWindowResize)(), t = (0, o.useIntl)(), {
+          } = (0, F.useWindowResize)(), t = (0, o.useIntl)(), {
             languageSelectorOpened: s,
             setLanguageSelectorOpened: i,
             setActiveSubNavId: r,
@@ -7315,21 +7315,21 @@ _global.SENTRY_RELEASE = {
             setScNavOpened: l,
             charListHidden: d,
             setCharListHidden: m
-          } = Ra(), [g, f] = (0, c.useState)(!1), {
+          } = Fa(), [g, f] = (0, c.useState)(!1), {
             navHidden: p = !1
           } = (0, h.useState)(), {
             loggedIn: _
-          } = (0, F.useRockstarUser)(), {
+          } = (0, R.useRockstarUser)(), {
             currentCharId: k,
             navOpen: b,
             setNavOpen: v,
             userData: y
-          } = (0, F.useRockstarUserState)(), {
+          } = (0, R.useRockstarUserState)(), {
             track: x
-          } = (0, F.useGtmTrack)(), [w, N] = (0, c.useState)(!1), j = (0, h.useReactiveVar)(F.scConfig), S = (0, c.useRef)(), [T, C] = (0, c.useState)(0), M = (0, c.createRef)(), [I, E] = (0, c.useState)(!1), [L, z] = (0, c.useState)(0), [P, O] = (0, c.useState)(!1), {
+          } = (0, R.useGtmTrack)(), [w, N] = (0, c.useState)(!1), j = (0, h.useReactiveVar)(R.scConfig), S = (0, c.useRef)(), [T, C] = (0, c.useState)(0), M = (0, c.createRef)(), [I, E] = (0, c.useState)(!1), [L, z] = (0, c.useState)(0), [P, O] = (0, c.useState)(!1), {
             mutateLSSettings: A,
             lsSettings: D
-          } = (0, R.useRockstarWebLSSettings)(), B = (0, c.useCallback)((e => {
+          } = (0, F.useRockstarWebLSSettings)(), B = (0, c.useCallback)((e => {
             m(e), S.current && !0 === e && (S.current.scrollTop = 0)
           }), [S]);
           return (0, c.useEffect)((() => {
@@ -7429,16 +7429,16 @@ _global.SENTRY_RELEASE = {
           const a = (0, o.useIntl)(),
             {
               data: s
-            } = (0, F.useRockstarUser)(),
+            } = (0, R.useRockstarUser)(),
             {
               charactersNeeded: i,
               currentCharId: r,
               navOpen: n,
               setNavOpen: l
-            } = (0, F.useRockstarUserState)(),
+            } = (0, R.useRockstarUserState)(),
             {
               track: d
-            } = (0, F.useGtmTrack)(),
+            } = (0, R.useGtmTrack)(),
             [m, g] = (0, c.useState)(null),
             [f, p] = (0, c.useState)(!1),
             [_, h] = (0, c.useState)(null),
@@ -7517,7 +7517,7 @@ _global.SENTRY_RELEASE = {
             threshold: .6
           }), {
             track: h
-          } = (0, F.useGtmTrack)(), k = {
+          } = (0, R.useGtmTrack)(), k = {
             "--promo-background": t ?? "var(--black-200)",
             "--promo-image": `url(${(0,C.useGetCdnSource)(o)??"var(--promo-background)"})`,
             "--promo-order": "left" === l ? "row" : "row-reverse"
@@ -7533,7 +7533,7 @@ _global.SENTRY_RELEASE = {
           }), [_]), (0, u.jsx)(u.Fragment, {
             children: (0, u.jsx)("div", {
               className: cs.promoModuleWrapper,
-              children: (0, u.jsxs)(Re.motion.div, {
+              children: (0, u.jsxs)(Fe.motion.div, {
                 className: cs.promoModule,
                 style: {
                   ...k
@@ -7599,9 +7599,9 @@ _global.SENTRY_RELEASE = {
             defaultMessage: "Rating: {rating}. Click here learn more about rating systems"
           }
         });
-      var ms = a(13784);
-      const gs = "undefined" != typeof GameDataNewGamesDatabaseConnection ? GameDataNewGamesDatabaseConnection : ms.GameData;
-      (0, R.importAll)(a(52884));
+      var ms = a(13316);
+      const gs = void 0 !== ms.GameData ? ms.GameData : GameDataDefault;
+      (0, F.importAll)(a(52884));
       const us = st((0, o.withIntl)((e => {
           let {
             descriptors: t = null,
@@ -7623,7 +7623,7 @@ _global.SENTRY_RELEASE = {
             ratingUrl: i
           }), {
             track: b
-          } = (0, F.useGtmTrack)(), v = (0, o.useIntl)(), {
+          } = (0, R.useGtmTrack)(), v = (0, o.useIntl)(), {
             data: y
           } = (0, h.useQuery)(gs, {
             variables: {
@@ -7645,7 +7645,7 @@ _global.SENTRY_RELEASE = {
           const x = !!_.ratingDescriptors;
           return (0, u.jsxs)("div", {
             className: [ls.rating, x ? ls.withDescriptors : ls.withOutDescriptors, d || ""].join(" "),
-            style: (0, R.safeStyles)(l),
+            style: (0, F.safeStyles)(l),
             children: [(0, u.jsx)(f, {
               to: _.ratingUrl,
               target: "_blank",
@@ -7751,7 +7751,7 @@ _global.SENTRY_RELEASE = {
             ariaLabel: i,
             style: r = {}
           } = e;
-          const [n, c] = (0, R.usePreloadImg)(t);
+          const [n, c] = (0, F.usePreloadImg)(t);
           return n ? (r.backgroundImage = `url(${t})`, (0, u.jsx)("div", {
             role: "img",
             "aria-label": i ?? "R* Games",
@@ -7847,7 +7847,7 @@ _global.SENTRY_RELEASE = {
             requireUser: r
           } = e, {
             track: n
-          } = (0, F.useGtmTrack)(r), [o, l] = (0, c.useState)(t?.current);
+          } = (0, R.useGtmTrack)(r), [o, l] = (0, c.useState)(t?.current);
           return (0, c.useEffect)((() => {
             t?.current && l(t.current)
           }), [t]), ((e, t, a) => {
@@ -7915,7 +7915,7 @@ _global.SENTRY_RELEASE = {
         }));
       Ms.displayName = "ScrollTracker";
       const Is = Ms,
-        Es = (0, R.withTranslations)((e => {
+        Es = (0, F.withTranslations)((e => {
           let {
             t
           } = e;
@@ -8004,7 +8004,7 @@ _global.SENTRY_RELEASE = {
         }), l),
         Bs = "rockstargames-sites-legacyeca98eb0b5b84a0c9a2e6d952545a2d5",
         Vs = "rockstargames-sites-legacyd3d0b4ecd3bddba96c73f49fcca34ed8",
-        Rs = {
+        Fs = {
           0: {
             spaceBetween: 8
           },
@@ -8021,7 +8021,7 @@ _global.SENTRY_RELEASE = {
             spaceBetween: 22
           }
         },
-        Fs = e => {
+        Rs = e => {
           let {
             title: t = "thumbnail gallery",
             thumbsPerView: a = 3,
@@ -8041,7 +8041,7 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: l
-          } = (0, F.useGtmTrack)(), [d, m] = (0, c.useState)([Je.O4, Je.Hj, Je.eM]), [g, f] = (0, c.useState)(null), [p, _] = (0, c.useState)(null);
+          } = (0, R.useGtmTrack)(), [d, m] = (0, c.useState)([Je.O4, Je.Hj, Je.eM]), [g, f] = (0, c.useState)(null), [p, _] = (0, c.useState)(null);
           return (0, c.useEffect)((() => {
             const e = [Je.O4, Je.Hj, Je.eM];
             i && e.push(Je._2), m(e)
@@ -8051,13 +8051,13 @@ _global.SENTRY_RELEASE = {
               children: e
             }, Symbol(t).toString())));
             _(e)
-          }), [r]), p ? (0, u.jsxs)(Re.motion.div, {
+          }), [r]), p ? (0, u.jsxs)(Fe.motion.div, {
             className: "rockstargames-sites-legacyd4f245838b94234f21463a08a8112910",
             variants: n.parent,
             transition: o.parent,
             initial: "initial",
             animate: "animate",
-            children: [(0, u.jsx)(Re.motion.div, {
+            children: [(0, u.jsx)(Fe.motion.div, {
               className: Bs,
               variants: n.main,
               transition: o.main,
@@ -8073,7 +8073,7 @@ _global.SENTRY_RELEASE = {
                   swiper: g
                 },
                 modules: d,
-                breakpoints: Rs,
+                breakpoints: Fs,
                 className: Bs,
                 onSlideNextTransitionEnd: () => {
                   l({
@@ -8104,7 +8104,7 @@ _global.SENTRY_RELEASE = {
                 },
                 children: p
               })
-            }), (0, u.jsx)(Re.motion.div, {
+            }), (0, u.jsx)(Fe.motion.div, {
               className: Vs,
               variants: n.thumbs,
               transition: o.thumbs,
@@ -8114,7 +8114,7 @@ _global.SENTRY_RELEASE = {
                 threshold: 50,
                 onSwiper: f,
                 loop: s,
-                breakpoints: Rs,
+                breakpoints: Fs,
                 slidesPerView: a,
                 freeMode: !0,
                 watchSlidesProgress: !0,
@@ -8214,9 +8214,9 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: r
-          } = (0, F.useGtmTrack)(), {
+          } = (0, R.useGtmTrack)(), {
             loggedIn: n
-          } = (0, F.useRockstarUser)(), {
+          } = (0, R.useRockstarUser)(), {
             refetch: o
           } = (0, h.useQuery)(Ws.UserGetVote, {
             skip: !0
@@ -8289,7 +8289,7 @@ _global.SENTRY_RELEASE = {
           dragging: "rockstargames-sites-legacya7313e3ff4e99b5313f8698890d0dd8c",
           dots: "rockstargames-sites-legacye1d7433489996eb9fa890d452ebcb042"
         },
-        Ks = (0, R.withLocale)((e => {
+        Ks = (0, F.withLocale)((e => {
           let {
             locale: t,
             t: a,
@@ -8297,9 +8297,9 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: i
-          } = (0, F.useGtmTrack)(), {
+          } = (0, R.useGtmTrack)(), {
             setBodyIsLocked: r
-          } = (0, R.useBodyScrollable)("VideoCarousel"), [n, o] = (0, c.useState)(0), [l, d] = (0, c.useState)(0), m = (0, c.useRef)(null), g = (0, c.useRef)(null);
+          } = (0, F.useBodyScrollable)("VideoCarousel"), [n, o] = (0, c.useState)(0), [l, d] = (0, c.useState)(0), m = (0, c.useRef)(null), g = (0, c.useRef)(null);
           return (0, c.useEffect)((() => {
             if (!m.current || !g.current) return;
             const e = new(_())(m.current);
@@ -8428,7 +8428,7 @@ _global.SENTRY_RELEASE = {
           img: "rockstargames-sites-legacye3f505a2281df28eb1acdf2d586e7fbd",
           wide: "rockstargames-sites-legacyc3a6d60e0087f92bbf7062fe2f36e200"
         };
-      (0, R.importAll)(a(18016));
+      (0, F.importAll)(a(18016));
       const Js = e => {
           let {
             isWideCard: t = !1,
@@ -8438,10 +8438,10 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             isMobile: n
-          } = (0, R.useWindowResize)(), o = (0, c.useMemo)((() => {
+          } = (0, F.useWindowResize)(), o = (0, c.useMemo)((() => {
             let e = "";
             return t && (e = n ? a(72027)(`./${r}/mobile.png`) : a(83408)(`./${r}/desktop.png`)), e || (e = a(14512)(`./${r}.jpg`), e += `?im=Resize=${s}`), e
-          }), [n, r]), [l] = (0, R.usePreloadImg)(o);
+          }), [n, r]), [l] = (0, F.usePreloadImg)(o);
           return (0, u.jsx)("div", {
             role: "img",
             "aria-label": i,
@@ -8502,7 +8502,7 @@ _global.SENTRY_RELEASE = {
           const r = (0, o.useIntl)(),
             {
               track: n
-            } = (0, F.useGtmTrack)(),
+            } = (0, R.useGtmTrack)(),
             l = void 0 !== a ? "games" : "videos",
             [d, m] = (0, c.useState)(),
             [g, f] = (0, c.useState)(),
@@ -8630,7 +8630,7 @@ _global.SENTRY_RELEASE = {
             children: t
           })
         },
-        ri = (0, R.withTranslations)((e => {
+        ri = (0, F.withTranslations)((e => {
           let {
             error: t,
             t: a,
@@ -8672,7 +8672,7 @@ _global.SENTRY_RELEASE = {
             size: a = 640
           } = e;
           const s = () => t.screencap.includes("akamai") ? `${t.screencap}?im=Resize=${a}` : t.screencap,
-            [i] = (0, R.usePreloadImg)(s());
+            [i] = (0, F.usePreloadImg)(s());
           return (0, u.jsx)("div", {
             className: [ni.screencap, i ? ni.screencapLoaded : ""].join(" "),
             style: {
@@ -8770,9 +8770,9 @@ _global.SENTRY_RELEASE = {
           const {
             children: a,
             tag: s = "div"
-          } = e, i = Re.m[s];
-          return (0, u.jsx)(Re.LazyMotion, {
-            features: Re.domAnimation,
+          } = e, i = Fe.m[s];
+          return (0, u.jsx)(Fe.LazyMotion, {
+            features: Fe.domAnimation,
             children: (0, u.jsx)(i, {
               ref: t,
               ...e,
@@ -8798,7 +8798,7 @@ _global.SENTRY_RELEASE = {
           let {
             children: t
           } = e;
-          return (0, u.jsx)(Re.motion.div, Object.assign({
+          return (0, u.jsx)(Fe.motion.div, Object.assign({
             className: "rockstargames-sites-legacyf0ee4e641f1ac92151be887c9ebb8392",
             variants: ui,
             initial: "hidden",
@@ -8833,7 +8833,7 @@ _global.SENTRY_RELEASE = {
           let {
             children: t
           } = e;
-          return (0, u.jsx)(Re.motion.div, {
+          return (0, u.jsx)(Fe.motion.div, {
             className: "rockstargames-sites-legacya479a10c5475b17a0564b60fecf98c8b",
             variants: hi,
             initial: "hidden",
@@ -9665,7 +9665,7 @@ _global.SENTRY_RELEASE = {
         }
       })), e.exports = t, e.exports.UserGetVote = r(t, "UserGetVote"), e.exports.UserCastVote = r(t, "UserCastVote")
     },
-    13784: e => {
+    13316: e => {
       var t = {
         kind: "Document",
         definitions: [{
@@ -9883,7 +9883,7 @@ _global.SENTRY_RELEASE = {
                   kind: "Field",
                   name: {
                     kind: "Name",
-                    value: "img_rating"
+                    value: "ratingDescriptors"
                   },
                   arguments: [],
                   directives: []
@@ -9891,7 +9891,7 @@ _global.SENTRY_RELEASE = {
                   kind: "Field",
                   name: {
                     kind: "Name",
-                    value: "rating_descriptors"
+                    value: "ratingFooter"
                   },
                   arguments: [],
                   directives: []
@@ -9899,7 +9899,7 @@ _global.SENTRY_RELEASE = {
                   kind: "Field",
                   name: {
                     kind: "Name",
-                    value: "rating_footer"
+                    value: "ratingImg"
                   },
                   arguments: [],
                   directives: []
@@ -9907,7 +9907,7 @@ _global.SENTRY_RELEASE = {
                   kind: "Field",
                   name: {
                     kind: "Name",
-                    value: "url_rating"
+                    value: "ratingUrl"
                   },
                   arguments: [],
                   directives: []
@@ -9918,7 +9918,7 @@ _global.SENTRY_RELEASE = {
         }],
         loc: {
           start: 0,
-          end: 398
+          end: 394
         }
       };
 
@@ -9937,7 +9937,7 @@ _global.SENTRY_RELEASE = {
         }))
       }
       t.loc.source = {
-        body: 'query GameData(\n    $titleSlug: String!\n    $locale: String!\n    $withMetaTitle: Boolean = false\n    $metaUrl: String = "/"\n) {\n    meta: metaUrl(locale: $locale, domain: "www", url: $metaUrl)\n        @include(if: $withMetaTitle) {\n        title\n    }\n    game(titleSlug: $titleSlug, locale: $locale) {\n        img_rating\n        rating_descriptors\n        rating_footer\n        url_rating\n    }\n}\n',
+        body: 'query GameData(\n    $titleSlug: String!\n    $locale: String!\n    $withMetaTitle: Boolean = false\n    $metaUrl: String = "/"\n) {\n    meta: metaUrl(locale: $locale, domain: "www", url: $metaUrl)\n        @include(if: $withMetaTitle) {\n        title\n    }\n    game(titleSlug: $titleSlug, locale: $locale) {\n        ratingDescriptors\n        ratingFooter\n        ratingImg\n        ratingUrl\n    }\n}\n',
         name: "GraphQL request",
         locationOffset: {
           line: 1,

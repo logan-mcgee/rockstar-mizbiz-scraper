@@ -56,10 +56,10 @@ _global.SENTRY_RELEASE = {
         l = -1;
 
       function f() {
-        u && i && (u = !1, i.length ? s = i.concat(s) : l = -1, s.length && p())
+        u && i && (u = !1, i.length ? s = i.concat(s) : l = -1, s.length && d())
       }
 
-      function p() {
+      function d() {
         if (!u) {
           var e = c(f);
           u = !0;
@@ -84,7 +84,7 @@ _global.SENTRY_RELEASE = {
         }
       }
 
-      function d(e, t) {
+      function p(e, t) {
         this.fun = e, this.array = t
       }
 
@@ -93,8 +93,8 @@ _global.SENTRY_RELEASE = {
         var t = new Array(arguments.length - 1);
         if (arguments.length > 1)
           for (var r = 1; r < arguments.length; r++) t[r - 1] = arguments[r];
-        s.push(new d(e, t)), 1 !== s.length || u || c(p)
-      }, d.prototype.run = function() {
+        s.push(new p(e, t)), 1 !== s.length || u || c(d)
+      }, p.prototype.run = function() {
         this.fun.apply(null, this.array)
       }, n.title = "browser", n.browser = !0, n.env = {}, n.argv = [], n.version = "", n.versions = {}, n.on = y, n.addListener = y, n.once = y, n.off = y, n.removeListener = y, n.removeAllListeners = y, n.emit = y, n.prependListener = y, n.prependOnceListener = y, n.listeners = function(e) {
         return []

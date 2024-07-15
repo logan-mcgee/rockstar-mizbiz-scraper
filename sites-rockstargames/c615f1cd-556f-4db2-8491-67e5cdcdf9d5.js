@@ -85,7 +85,7 @@ _global.SENTRY_RELEASE = {
           creditSection: "rockstargames-sites-rockstargamese262f76846296cfec08d0d76a4c8801b",
           creditSectionInner: "rockstargames-sites-rockstargamesbe8350e3adcd5f871a61505541dd920f"
         },
-        g = e => {
+        f = e => {
           let {
             t: a,
             title: t
@@ -113,7 +113,7 @@ _global.SENTRY_RELEASE = {
             })
           })
         },
-        f = e => {
+        g = e => {
           let {
             children: a
           } = e;
@@ -128,7 +128,7 @@ _global.SENTRY_RELEASE = {
           } = e;
           return a ? (0, o.jsxs)("div", {
             className: m.creditContent,
-            children: [(0, o.jsx)(f, {
+            children: [(0, o.jsx)(g, {
               children: (0, o.jsx)("h1", {
                 children: "Credits"
               })
@@ -153,7 +153,7 @@ _global.SENTRY_RELEASE = {
           const t = a[0]?.static_json;
           return (0, o.jsxs)("div", {
             className: m.originalPeople,
-            children: [(0, o.jsx)(f, {
+            children: [(0, o.jsx)(g, {
               children: (0, o.jsx)("h2", {
                 children: "Original Game Credits"
               })
@@ -218,7 +218,7 @@ _global.SENTRY_RELEASE = {
           return (0, o.jsxs)("div", {
             className: m.allCredits,
             "data-title": t,
-            children: [(0, o.jsx)(g, {
+            children: [(0, o.jsx)(f, {
               title: t,
               t: a
             }), (0, o.jsx)(k, {

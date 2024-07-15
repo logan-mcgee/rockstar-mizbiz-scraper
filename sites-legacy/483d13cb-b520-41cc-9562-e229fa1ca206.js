@@ -17,12 +17,12 @@ _global.SENTRY_RELEASE = {
 }, (self.webpackChunk_rockstargames_sites_legacy = self.webpackChunk_rockstargames_sites_legacy || []).push([
   [204], {
     99576: (e, a, o) => {
-      var t = o(51664),
-        d = Symbol.for("react.element"),
+      var d = o(51664),
+        t = Symbol.for("react.element"),
         r = Symbol.for("react.fragment"),
         s = Object.prototype.hasOwnProperty,
-        n = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        f = {
+        f = d.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        n = {
           key: !0,
           ref: !0,
           __self: !0,
@@ -30,19 +30,19 @@ _global.SENTRY_RELEASE = {
         };
 
       function c(e, a, o) {
-        var t, r = {},
+        var d, r = {},
           c = null,
           m = null;
-        for (t in void 0 !== o && (c = "" + o), void 0 !== a.key && (c = "" + a.key), void 0 !== a.ref && (m = a.ref), a) s.call(a, t) && !f.hasOwnProperty(t) && (r[t] = a[t]);
+        for (d in void 0 !== o && (c = "" + o), void 0 !== a.key && (c = "" + a.key), void 0 !== a.ref && (m = a.ref), a) s.call(a, d) && !n.hasOwnProperty(d) && (r[d] = a[d]);
         if (e && e.defaultProps)
-          for (t in a = e.defaultProps) void 0 === r[t] && (r[t] = a[t]);
+          for (d in a = e.defaultProps) void 0 === r[d] && (r[d] = a[d]);
         return {
-          $$typeof: d,
+          $$typeof: t,
           type: e,
           key: c,
           ref: m,
           props: r,
-          _owner: n.current
+          _owner: f.current
         }
       }
       a.Fragment = r, a.jsx = c, a.jsxs = c

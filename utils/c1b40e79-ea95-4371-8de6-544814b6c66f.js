@@ -30,7 +30,7 @@ _global.SENTRY_RELEASE = {
         t = "function" == typeof Symbol && Symbol.for ? Symbol.for("react.element") : 60103;
 
       function n(e, r) {
-        return !1 !== r.clone && r.isMergeableObject(e) ? u((t = e, Array.isArray(t) ? [] : {}), e, r) : e;
+        return !1 !== r.clone && r.isMergeableObject(e) ? f((t = e, Array.isArray(t) ? [] : {}), e, r) : e;
         var t
       }
 
@@ -56,10 +56,10 @@ _global.SENTRY_RELEASE = {
         }
       }
 
-      function u(e, t, f) {
-        (f = f || {}).arrayMerge = f.arrayMerge || a, f.isMergeableObject = f.isMergeableObject || r, f.cloneUnlessOtherwiseSpecified = n;
+      function f(e, t, u) {
+        (u = u || {}).arrayMerge = u.arrayMerge || a, u.isMergeableObject = u.isMergeableObject || r, u.cloneUnlessOtherwiseSpecified = n;
         var l = Array.isArray(t);
-        return l === Array.isArray(e) ? l ? f.arrayMerge(e, t, f) : function(e, r, t) {
+        return l === Array.isArray(e) ? l ? u.arrayMerge(e, t, u) : function(e, r, t) {
           var a = {};
           return t.isMergeableObject(e) && o(e).forEach((function(r) {
             a[r] = n(e[r], t)
@@ -67,21 +67,21 @@ _global.SENTRY_RELEASE = {
             (function(e, r) {
               return c(e, r) && !(Object.hasOwnProperty.call(e, r) && Object.propertyIsEnumerable.call(e, r))
             })(e, o) || (c(e, o) && t.isMergeableObject(r[o]) ? a[o] = function(e, r) {
-              if (!r.customMerge) return u;
+              if (!r.customMerge) return f;
               var t = r.customMerge(e);
-              return "function" == typeof t ? t : u
+              return "function" == typeof t ? t : f
             }(o, t)(e[o], r[o], t) : a[o] = n(r[o], t))
           })), a
-        }(e, t, f) : n(t, f)
+        }(e, t, u) : n(t, u)
       }
-      u.all = function(e, r) {
+      f.all = function(e, r) {
         if (!Array.isArray(e)) throw new Error("first argument should be an array");
         return e.reduce((function(e, t) {
-          return u(e, t, r)
+          return f(e, t, r)
         }), {})
       };
-      var f = u;
-      e.exports = f
+      var u = f;
+      e.exports = u
     }
   }
 ]);

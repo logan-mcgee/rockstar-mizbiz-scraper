@@ -20,8 +20,8 @@ _global.SENTRY_RELEASE = {
       var n = a(664),
         o = Symbol.for("react.element"),
         r = (Symbol.for("react.fragment"), Object.prototype.hasOwnProperty),
-        s = n.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        d = {
+        d = n.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        s = {
           key: !0,
           ref: !0,
           __self: !0,
@@ -31,7 +31,7 @@ _global.SENTRY_RELEASE = {
         var n, i = {},
           l = null,
           f = null;
-        for (n in void 0 !== a && (l = "" + a), void 0 !== t.key && (l = "" + t.key), void 0 !== t.ref && (f = t.ref), t) r.call(t, n) && !d.hasOwnProperty(n) && (i[n] = t[n]);
+        for (n in void 0 !== a && (l = "" + a), void 0 !== t.key && (l = "" + t.key), void 0 !== t.ref && (f = t.ref), t) r.call(t, n) && !s.hasOwnProperty(n) && (i[n] = t[n]);
         if (e && e.defaultProps)
           for (n in t = e.defaultProps) void 0 === i[n] && (i[n] = t[n]);
         return {
@@ -40,7 +40,7 @@ _global.SENTRY_RELEASE = {
           key: l,
           ref: f,
           props: i,
-          _owner: s.current
+          _owner: d.current
         }
       }
     },
@@ -57,14 +57,14 @@ _global.SENTRY_RELEASE = {
       var n = a(204),
         o = a.n(n),
         r = a(300),
-        s = a(664),
-        d = a(13),
+        d = a(664),
+        s = a(13),
         i = a(240);
       const l = e => t => ((e, t) => {
           const {
             pathname: a
-          } = (0, d.useLocation)();
-          return (0, s.useEffect)((() => {
+          } = (0, s.useLocation)();
+          return (0, d.useEffect)((() => {
             (0, r.c)({
               event: "trackPageview"
             })
@@ -99,7 +99,7 @@ _global.SENTRY_RELEASE = {
           },
           cookieIdentifier: "prod"
         }],
-        s = (() => {
+        d = (() => {
           let e;
           const {
             location: t
@@ -118,12 +118,12 @@ _global.SENTRY_RELEASE = {
             currentSite: e
           }
         })(),
-        d = s?.id,
+        s = d?.id,
         i = /Mobi/i.test(window.navigator.userAgent) ? "mobile" : "desktop",
         l = e => {
           const t = {
             ...e,
-            environment: d,
+            environment: s,
             display_type: i
           };
           o().dataLayer({

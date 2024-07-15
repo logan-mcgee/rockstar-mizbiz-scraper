@@ -112,8 +112,8 @@ _global.SENTRY_RELEASE = {
       var y = n(70508),
         m = n(87020),
         g = n.n(m),
-        _ = n(91496),
-        b = n(27400);
+        b = n(91496),
+        _ = n(27400);
       const S = e => {
         let {
           payload: t,
@@ -121,7 +121,7 @@ _global.SENTRY_RELEASE = {
         } = e;
         const [a, r] = (0, s.useState)(t), [o, i] = (0, s.useState)(n);
         return (0, s.useEffect)((() => {
-          const e = (0, _.pick)(t, b.TINA_MEMOQ_PREFIX),
+          const e = (0, b.pick)(t, _.TINA_MEMOQ_PREFIX),
             a = JSON.parse(JSON.stringify(l().merge(JSON.parse(JSON.stringify(e)), JSON.parse(JSON.stringify(n?.keys ?? {})))));
           i(a)
         }), [JSON.stringify(t), n]), (0, s.useEffect)((() => {
@@ -165,7 +165,7 @@ _global.SENTRY_RELEASE = {
             } = e;
             const r = e => {
               let o = "";
-              if (o = Array.isArray(e?.[b.TINA_PARSER_KEY]) ? e[b.TINA_PARSER_KEY].map((e => r(e))) : e?.[b.TINA_PARSER_KEY] ?? "", !e?._template) return o;
+              if (o = Array.isArray(e?.[_.TINA_PARSER_KEY]) ? e[_.TINA_PARSER_KEY].map((e => r(e))) : e?.[_.TINA_PARSER_KEY] ?? "", !e?._template) return o;
               let i = e._template;
               "0" === i && (console.warn(`The _template "${i}" wasn't found in the available components. The _template "${i}" was replaced with "gen9.Hero".`, {
                 availableComponents: Object.keys(t),
@@ -188,7 +188,7 @@ _global.SENTRY_RELEASE = {
                 key: p
               }, o)
             };
-            return n?.[b.TINA_PARSER_KEY]?.length ? r(n) : null
+            return n?.[_.TINA_PARSER_KEY]?.length ? r(n) : null
           })({
             components: t,
             payload: n,
@@ -245,13 +245,13 @@ _global.SENTRY_RELEASE = {
             }), [t]), n
           })({
             payload: o
-          }), _ = S({
+          }), b = S({
             payload: o,
             variables: c
           });
           return (0, s.useMemo)((() => {
             if (!o) return null;
-            const e = _,
+            const e = b,
               n = o?.meta?.prod ?? o?.meta?.cdn ?? r?.meta?.prod ?? r?.meta?.cdn ?? !1,
               s = {
                 ...o,
@@ -274,7 +274,7 @@ _global.SENTRY_RELEASE = {
                 })
               })
             })
-          }), [r, o, JSON.stringify(g), JSON.stringify(_)])
+          }), [r, o, JSON.stringify(g), JSON.stringify(b)])
         }
     }
   }

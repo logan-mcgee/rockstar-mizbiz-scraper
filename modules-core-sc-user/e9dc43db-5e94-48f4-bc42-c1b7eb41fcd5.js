@@ -1,8 +1,8 @@
 ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "e9dc43db-5e94-48f4-bc42-c1b7eb41fcd5", e._sentryDebugIdIdentifier = "sentry-dbid-e9dc43db-5e94-48f4-bc42-c1b7eb41fcd5")
+      t = (new Error).stack;
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "e9dc43db-5e94-48f4-bc42-c1b7eb41fcd5", e._sentryDebugIdIdentifier = "sentry-dbid-e9dc43db-5e94-48f4-bc42-c1b7eb41fcd5")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -16,9 +16,9 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_sc_user = self.webpackChunk_rockstargames_modules_core_sc_user || []).push([
   [240], {
-    576: (e, a, t) => {
+    576: (e, t, a) => {
       "use strict";
-      var r = t(664),
+      var r = a(664),
         n = Symbol.for("react.element"),
         s = (Symbol.for("react.fragment"), Object.prototype.hasOwnProperty),
         i = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
@@ -28,13 +28,13 @@ _global.SENTRY_RELEASE = {
           __self: !0,
           __source: !0
         };
-      a.jsx = function(e, a, t) {
+      t.jsx = function(e, t, a) {
         var r, c = {},
           d = null,
           u = null;
-        for (r in void 0 !== t && (d = "" + t), void 0 !== a.key && (d = "" + a.key), void 0 !== a.ref && (u = a.ref), a) s.call(a, r) && !o.hasOwnProperty(r) && (c[r] = a[r]);
+        for (r in void 0 !== a && (d = "" + a), void 0 !== t.key && (d = "" + t.key), void 0 !== t.ref && (u = t.ref), t) s.call(t, r) && !o.hasOwnProperty(r) && (c[r] = t[r]);
         if (e && e.defaultProps)
-          for (r in a = e.defaultProps) void 0 === c[r] && (c[r] = a[r]);
+          for (r in t = e.defaultProps) void 0 === c[r] && (c[r] = t[r]);
         return {
           $$typeof: n,
           type: e,
@@ -45,42 +45,42 @@ _global.SENTRY_RELEASE = {
         }
       }
     },
-    860: (e, a, t) => {
+    860: (e, t, a) => {
       "use strict";
-      e.exports = t(576)
+      e.exports = a(576)
     },
-    424: (e, a, t) => {
+    424: (e, t, a) => {
       "use strict";
-      t.d(a, {
+      a.d(t, {
         c: () => s
       });
-      var r = t(52);
-      const n = (0, t(792).getScConfigForOrigin)(),
+      var r = a(52);
+      const n = (0, a(792).getScConfigForOrigin)(),
         s = (0, r.makeVar)(n)
     },
-    608: (e, a, t) => {
+    608: (e, t, a) => {
       "use strict";
-      t.d(a, {
+      a.d(t, {
         Y: () => n
       });
-      var r = t(664);
+      var r = a(664);
       const n = function(e) {
-        let a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0,
-          t = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "gtao";
+        let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0,
+          a = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "gtao";
         return (0, r.useMemo)((() => {
-          const r = e?.characters?.[t];
-          return "1" === (r?.[a]?.stats?.overview?.hasGtaPlus?.value ?? "0")
-        }), [e, t, a])
+          const r = e?.characters?.[a];
+          return "1" === (r?.[t]?.stats?.overview?.hasGtaPlus?.value ?? "0")
+        }), [e, a, t])
       }
     },
-    988: (e, a, t) => {
+    988: (e, t, a) => {
       "use strict";
-      t.d(a, {
+      a.d(t, {
         R: () => g,
         c: () => w
       });
-      var r = t(52),
-        n = t(792);
+      var r = a(52),
+        n = a(792);
       const s = (0, r.makeVarNamespace)("@rockstargames/modules-core-sc-user"),
         i = s("navOpenReactive", !1),
         o = e => i(e),
@@ -95,20 +95,20 @@ _global.SENTRY_RELEASE = {
         g = s("rockstarIdReactive", null),
         k = s("charactersNeededReactive", null),
         h = e => k(e),
-        _ = s("userDataReactive", null),
-        b = e => _(e),
+        b = s("userDataReactive", null),
+        _ = e => b(e),
         w = () => {
           const e = (0, r.useReactiveVar)(k),
-            a = (0, r.useReactiveVar)(f),
-            t = (0, r.useReactiveVar)(i),
+            t = (0, r.useReactiveVar)(f),
+            a = (0, r.useReactiveVar)(i),
             n = (0, r.useReactiveVar)(u),
             s = (0, r.useReactiveVar)(p);
           return {
             charactersNeeded: e,
-            currentCharId: a,
+            currentCharId: t,
             hasNotifications: n,
-            navOpen: t,
-            userData: (0, r.useReactiveVar)(_),
+            navOpen: a,
+            userData: (0, r.useReactiveVar)(b),
             selectedCharacterTuple: s,
             jumpScMenuFocus: (0, r.useReactiveVar)(c),
             setCharactersNeeded: h,
@@ -116,14 +116,14 @@ _global.SENTRY_RELEASE = {
             setHasNotifications: l,
             setNavOpen: o,
             setSelectedCharacterTuple: v,
-            setUserData: b,
+            setUserData: _,
             setJumpScMenuFocus: d
           }
         }
     },
-    848: (e, a, t) => {
+    848: (e, t, a) => {
       "use strict";
-      t.r(a), t.d(a, {
+      a.r(t), a.d(t, {
         scConfig: () => o.c,
         useGtmTrack: () => r.useGtmTrack,
         useIsUserGtaPlus: () => n.Y,
@@ -132,35 +132,35 @@ _global.SENTRY_RELEASE = {
         useRpCategory: () => d,
         useScConfig: () => c
       });
-      var r = t(228),
-        n = t(608),
-        s = t(988),
-        i = t(52),
-        o = t(424);
+      var r = a(228),
+        n = a(608),
+        s = a(988),
+        i = a(52),
+        o = a(424);
       const c = () => (0, i.useReactiveVar)(o.c),
-        d = e => t(e < 100 ? 876 : e > 99 && e < 500 ? 320 : e > 499 && e < 750 ? 640 : 936)
+        d = e => a(e < 100 ? 876 : e > 99 && e < 500 ? 320 : e > 499 && e < 750 ? 640 : 936)
     },
-    228: (e, a, t) => {
+    228: (e, t, a) => {
       "use strict";
-      t.r(a), t.d(a, {
+      a.r(t), a.d(t, {
         GtmProvider: () => R,
         RockstarUserProvider: () => h,
         useGtmTrack: () => E,
-        useRockstarUser: () => _
+        useRockstarUser: () => b
       });
-      var r = t(664),
-        n = t(52),
-        s = t(792),
-        i = t(740),
-        o = t(988);
-      var c = t(468),
-        d = t.n(c),
-        u = t(424);
+      var r = a(664),
+        n = a(52),
+        s = a(792),
+        i = a(740),
+        o = a(988);
+      var c = a(468),
+        d = a.n(c),
+        u = a(424);
       const {
         graphEnv: l
       } = (0, s.getScConfigForOrigin)(), f = (0, n.uriForGraphEnv)(l), m = () => {
         const e = (0, n.useRockstarToken)(),
-          [a, t] = (0, r.useState)({
+          [t, a] = (0, r.useState)({
             id: null,
             avatar: "",
             profile_link: "",
@@ -182,26 +182,26 @@ _global.SENTRY_RELEASE = {
             }
           }),
           [k, h] = (0, r.useState)(null),
-          [_, b] = (0, r.useState)(!1),
+          [b, _] = (0, r.useState)(!1),
           [w, y] = (0, r.useState)(!1);
         return (0, r.useEffect)((() => {
           (async () => {
             const r = null === e ? null : !!e;
-            if (r && !_) {
-              l(!0), b(!0);
+            if (r && !b) {
+              l(!0), _(!0);
               const e = await g(),
                 r = e?.data?.user?.id,
                 n = await (async e => {
                   let {
-                    pingBearer: a,
-                    rockstarId: t
+                    pingBearer: t,
+                    rockstarId: a
                   } = e;
                   const {
                     crews: r
                   } = await (0, s.coreScApiFetch)("crew/forMember", {
-                    pingBearer: a,
+                    pingBearer: t,
                     query: {
-                      userId: t
+                      userId: a
                     }
                   });
                   return r
@@ -211,52 +211,52 @@ _global.SENTRY_RELEASE = {
                 }),
                 i = await (async e => {
                   let {
-                    pingBearer: a,
-                    nickname: t,
+                    pingBearer: t,
+                    nickname: a,
                     rockstarId: r
                   } = e;
                   const n = [],
                     i = await (0, s.coreScApiFetch)("profile/playedplatforms?game=gtav", {
-                      pingBearer: a
+                      pingBearer: t
                     });
-                  if (await (i?.platforms?.reduce((async (e, t) => {
-                      if (await e, ["ps3", "xbox", "xbox360"].includes(t)) return;
-                      const r = await (0, s.coreScApiFetch)(`games/gtao/characters?platform=${t}`, {
-                        pingBearer: a
+                  if (await (i?.platforms?.reduce((async (e, a) => {
+                      if (await e, ["ps3", "xbox", "xbox360"].includes(a)) return;
+                      const r = await (0, s.coreScApiFetch)(`games/gtao/characters?platform=${a}`, {
+                        pingBearer: t
                       });
                       r?.status && r?.result?.map((e => {
                         const {
-                          stats: a
+                          stats: t
                         } = e, {
                           overview: r
-                        } = a, {
+                        } = t, {
                           rank: s
                         } = r;
                         if ("0" === s.value) return;
-                        const i = ["ps4", "ps5"].includes(t) ? e?.mugshotUrl.replace("cloud.rockstargames.com/", "ros.rockstargames.com/cloud/11/cloudservices/") : e?.mugshotUrl;
+                        const i = ["ps4", "ps5"].includes(a) ? e?.mugshotUrl.replace("cloud.rockstargames.com/", "ros.rockstargames.com/cloud/11/cloudservices/") : e?.mugshotUrl;
                         return n.push({
                           ...e,
                           mugshotUrl: i,
-                          platform: t
+                          platform: a
                         }), e
                       }))
                     }), Promise.resolve())), !n.length) return n;
                   const {
                     status: o,
                     accounts: c
-                  } = await (0, s.coreScApiFetch)(`profile/getprofile?nickname=${t}&maxFriends=0`, {
-                    pingBearer: a
+                  } = await (0, s.coreScApiFetch)(`profile/getprofile?nickname=${a}&maxFriends=0`, {
+                    pingBearer: t
                   });
                   return o && c.length ? (c.forEach((e => {
                     const {
-                      rockstarAccount: a,
+                      rockstarAccount: t,
                       linkedAccounts: s
                     } = e;
-                    if (a?.rockstarId !== r) return;
-                    const i = t;
+                    if (t?.rockstarId !== r) return;
+                    const i = a;
                     let o = "",
                       c = "";
-                    s?.map((e => ("xbl" === e?.onlineService ? o = e.userName : "np" === e?.onlineService && (c = e.userName), e))), n.sort(((e, a) => Number(a.activeCharacter) - Number(e.activeCharacter))), n.map(((e, a) => (e.platformUsername = i, e.index = a, ["ps4", "ps5"].includes(e.platform) && (e.platformUsername = c || i), ["xboxone", "xboxsx"].includes(e.platform) && (e.platformUsername = o || i), e)))
+                    s?.map((e => ("xbl" === e?.onlineService ? o = e.userName : "np" === e?.onlineService && (c = e.userName), e))), n.sort(((e, t) => Number(t.activeCharacter) - Number(e.activeCharacter))), n.map(((e, t) => (e.platformUsername = i, e.index = t, ["ps4", "ps5"].includes(e.platform) && (e.platformUsername = c || i), ["xboxone", "xboxsx"].includes(e.platform) && (e.platformUsername = o || i), e)))
                   })), n) : n
                 })({
                   pingBearer: v,
@@ -264,21 +264,21 @@ _global.SENTRY_RELEASE = {
                   rockstarId: r
                 }),
                 c = {
-                  ...a,
+                  ...t,
                   ...e?.data?.user,
                   crews: n,
                   characters: {
                     gtao: i
                   }
                 };
-              l(!1), t(c), h(!0), (0, o.R)(r)
+              l(!1), a(c), h(!0), (0, o.R)(r)
             }
             if (!1 === r && !w) {
               try {
                 await (async e => {
                   let {
-                    token: a,
-                    tokenPingExpires: t
+                    token: t,
+                    tokenPingExpires: a
                   } = e;
                   const r = {
                       method: "POST",
@@ -290,7 +290,7 @@ _global.SENTRY_RELEASE = {
                       }
                     },
                     n = await fetch((0, u.c)().silentCheck, r);
-                  if (200 !== n.status) return void a(!1);
+                  if (200 !== n.status) return void t(!1);
                   const s = await n.json(),
                     i = `${(0,u.c)().gateway}?code=${s}`,
                     o = await fetch(i, {
@@ -300,22 +300,22 @@ _global.SENTRY_RELEASE = {
                       bearerToken: c,
                       tokenExpiresTime: l
                     } = await o.json();
-                  return a(c), t(l), c
+                  return t(c), a(l), c
                 })({
                   token: m,
                   tokenPingExpires: p
                 })
               } catch (e) {}
               y(!0)
-            }!1 === r && w && (b(!0), h(!1), l(!1)), null === e && v()
+            }!1 === r && w && (_(!0), h(!1), l(!1)), null === e && v()
           })()
-        }), [e, _, w]), {
-          data: a,
+        }), [e, b, w]), {
+          data: t,
           loading: c,
           loggedIn: k
         }
       };
-      var p = t(860);
+      var p = a(860);
       const v = {
           data: null,
           characters: {
@@ -329,31 +329,31 @@ _global.SENTRY_RELEASE = {
         k = window?.[g] ?? (window[g] = (0, r.createContext)(v)),
         h = e => {
           let {
-            children: a
+            children: t
           } = e;
-          const t = m(),
+          const a = m(),
             n = (0, r.useMemo)((() => ({
-              ...t,
+              ...a,
               hasProvider: !0
-            })), [t]);
+            })), [a]);
           return (0, p.jsx)(k.Provider, {
             value: n,
-            children: a
+            children: t
           })
         },
-        _ = () => (0, r.useContext)(k);
-      var b = t(92),
-        w = t(848),
-        y = t(608);
+        b = () => (0, r.useContext)(k);
+      var _ = a(92),
+        w = a(848),
+        y = a(608);
       const S = (0, r.createContext)(void 0),
         R = e => {
           let {
-            checkUser: a,
-            children: t
+            checkUser: t,
+            children: a
           } = e;
           const n = function() {
               let e = !(arguments.length > 0 && void 0 !== arguments[0]) || arguments[0];
-              const [a, t] = (0, r.useState)([]), [n, s] = (0, r.useState)([]), [i, o] = (0, r.useState)(null), {
+              const [t, a] = (0, r.useState)([]), [n, s] = (0, r.useState)([]), [i, o] = (0, r.useState)(null), {
                 data: c,
                 loggedIn: d
               } = (0, w.useRockstarUser)(), {
@@ -361,14 +361,14 @@ _global.SENTRY_RELEASE = {
               } = (0, w.useRockstarUserState)(), l = (0, y.Y)(c, u), f = (e, r) => {
                 const n = [];
                 e.forEach((e => {
-                  if (-1 === a.indexOf(e)) {
-                    const a = r ?? {};
-                    (0, b.track)({
+                  if (-1 === t.indexOf(e)) {
+                    const t = r ?? {};
+                    (0, _.track)({
                       ...e,
-                      ...a
+                      ...t
                     }), n.push(e)
                   }
-                })), t([...a, ...n])
+                })), a([...t, ...n])
               };
               (0, r.useEffect)((() => {
                 if (c && null !== d) {
@@ -376,45 +376,45 @@ _global.SENTRY_RELEASE = {
                   n.length && e && f(n, e), o(e)
                 } else e || n.length && f(n)
               }), [c, d, n]), (0, r.useEffect)((() => {
-                const e = n.filter((e => -1 === a.indexOf(e)));
+                const e = n.filter((e => -1 === t.indexOf(e)));
                 s(e)
-              }), [a]);
+              }), [t]);
               const m = e => {
-                const a = [],
-                  t = [],
+                const t = [],
+                  a = [],
                   r = [];
                 return Object.keys(e.characters).forEach((n => {
-                  e.characters[n].length && (t.push(n), e.characters[n].forEach((e => {
-                    "gtao" === n && (r.includes(e.platform) || r.push(e.platform)), a.includes(e.platform) || a.push(e.platform)
+                  e.characters[n].length && (a.push(n), e.characters[n].forEach((e => {
+                    "gtao" === n && (r.includes(e.platform) || r.push(e.platform)), t.includes(e.platform) || t.push(e.platform)
                   })))
                 })), {
                   member_id: e.id ?? void 0,
                   login_state: d ?? !1,
                   gta_plus_active: d ? Boolean(l) : void 0,
-                  platforms_played: a.length ? a.join("|").toUpperCase() : void 0,
-                  games_played: t.length ? t.join("|").toUpperCase() : void 0,
+                  platforms_played: t.length ? t.join("|").toUpperCase() : void 0,
+                  games_played: a.length ? a.join("|").toUpperCase() : void 0,
                   gtao_platforms_played: r.length ? r.join("|").toUpperCase() : void 0
                 }
               };
               return {
                 track: e => {
                   if (null === d || !c || !i) {
-                    const a = [...n];
-                    return a.push({
+                    const t = [...n];
+                    return t.push({
                       ...e
-                    }), s(a)
+                    }), s(t)
                   }
-                  return (0, b.track)({
+                  return (0, _.track)({
                     ...e,
                     ...i
                   })
                 }
               }
-            }(a),
-            s = (0, r.useMemo)((() => n), [n, a]);
+            }(t),
+            s = (0, r.useMemo)((() => n), [n, t]);
           return (0, p.jsx)(S.Provider, {
             value: s,
-            children: t
+            children: a
           })
         },
         x = {
@@ -423,7 +423,7 @@ _global.SENTRY_RELEASE = {
         E = () => (0, r.useContext)(S) ?? x
     },
     740: e => {
-      var a = {
+      var t = {
         kind: "Document",
         definitions: [{
           kind: "OperationDefinition",
@@ -547,21 +547,21 @@ _global.SENTRY_RELEASE = {
         }
       };
 
-      function t(e, a) {
-        if ("FragmentSpread" === e.kind) a.add(e.name.value);
+      function a(e, t) {
+        if ("FragmentSpread" === e.kind) t.add(e.name.value);
         else if ("VariableDefinition" === e.kind) {
           var r = e.type;
-          "NamedType" === r.kind && a.add(r.name.value)
+          "NamedType" === r.kind && t.add(r.name.value)
         }
         e.selectionSet && e.selectionSet.selections.forEach((function(e) {
-          t(e, a)
+          a(e, t)
         })), e.variableDefinitions && e.variableDefinitions.forEach((function(e) {
-          t(e, a)
+          a(e, t)
         })), e.definitions && e.definitions.forEach((function(e) {
-          t(e, a)
+          a(e, t)
         }))
       }
-      a.loc.source = {
+      t.loc.source = {
         body: "query userData {\n    user: userData {\n        id\n        avatar\n        nickname\n        profile_link\n        isAMinor\n        bearer_token_expired\n        agegate_pass @client\n        logged_in @client\n        subscribed\n    }\n}\n",
         name: "GraphQL request",
         locationOffset: {
@@ -571,24 +571,24 @@ _global.SENTRY_RELEASE = {
       };
       var r = {};
 
-      function n(e, a) {
-        for (var t = 0; t < e.definitions.length; t++) {
-          var r = e.definitions[t];
-          if (r.name && r.name.value == a) return r
+      function n(e, t) {
+        for (var a = 0; a < e.definitions.length; a++) {
+          var r = e.definitions[a];
+          if (r.name && r.name.value == t) return r
         }
       }
-      a.definitions.forEach((function(e) {
+      t.definitions.forEach((function(e) {
         if (e.name) {
-          var a = new Set;
-          t(e, a), r[e.name.value] = a
+          var t = new Set;
+          a(e, t), r[e.name.value] = t
         }
-      })), e.exports = a, e.exports.userData = function(e, a) {
-        var t = {
+      })), e.exports = t, e.exports.userData = function(e, t) {
+        var a = {
           kind: e.kind,
-          definitions: [n(e, a)]
+          definitions: [n(e, t)]
         };
-        e.hasOwnProperty("loc") && (t.loc = e.loc);
-        var s = r[a] || new Set,
+        e.hasOwnProperty("loc") && (a.loc = e.loc);
+        var s = r[t] || new Set,
           i = new Set,
           o = new Set;
         for (s.forEach((function(e) {
@@ -601,11 +601,11 @@ _global.SENTRY_RELEASE = {
             })))
           }))
         }
-        return i.forEach((function(a) {
-          var r = n(e, a);
-          r && t.definitions.push(r)
-        })), t
-      }(a, "userData")
+        return i.forEach((function(t) {
+          var r = n(e, t);
+          r && a.definitions.push(r)
+        })), a
+      }(t, "userData")
     },
     876: e => {
       "use strict";

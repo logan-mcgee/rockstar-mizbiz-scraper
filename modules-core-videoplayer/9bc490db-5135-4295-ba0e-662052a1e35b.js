@@ -21,7 +21,7 @@ _global.SENTRY_RELEASE = {
       t.r(n), t.d(n, {
         NIL: () => S,
         parse: () => h,
-        stringify: () => u,
+        stringify: () => d,
         v1: () => g,
         v3: () => k,
         v4: () => E,
@@ -46,28 +46,28 @@ _global.SENTRY_RELEASE = {
         let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
         return l[e[n + 0]] + l[e[n + 1]] + l[e[n + 2]] + l[e[n + 3]] + "-" + l[e[n + 4]] + l[e[n + 5]] + "-" + l[e[n + 6]] + l[e[n + 7]] + "-" + l[e[n + 8]] + l[e[n + 9]] + "-" + l[e[n + 10]] + l[e[n + 11]] + l[e[n + 12]] + l[e[n + 13]] + l[e[n + 14]] + l[e[n + 15]]
       }
-      const u = function(e) {
+      const d = function(e) {
         const n = i(e, arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0);
         if (!c(n)) throw TypeError("Stringified UUID is invalid");
         return n
       };
-      let f, d, p = 0,
+      let f, u, p = 0,
         y = 0;
       const g = function(e, n, t) {
           let r = n && t || 0;
           const o = n || new Array(16);
           let s = (e = e || {}).node || f,
-            c = void 0 !== e.clockseq ? e.clockseq : d;
+            c = void 0 !== e.clockseq ? e.clockseq : u;
           if (null == s || null == c) {
             const n = e.random || (e.rng || a)();
-            null == s && (s = f = [1 | n[0], n[1], n[2], n[3], n[4], n[5]]), null == c && (c = d = 16383 & (n[6] << 8 | n[7]))
+            null == s && (s = f = [1 | n[0], n[1], n[2], n[3], n[4], n[5]]), null == c && (c = u = 16383 & (n[6] << 8 | n[7]))
           }
           let l = void 0 !== e.msecs ? e.msecs : Date.now(),
-            u = void 0 !== e.nsecs ? e.nsecs : y + 1;
-          const g = l - p + (u - y) / 1e4;
-          if (g < 0 && void 0 === e.clockseq && (c = c + 1 & 16383), (g < 0 || l > p) && void 0 === e.nsecs && (u = 0), u >= 1e4) throw new Error("uuid.v1(): Can't create more than 10M uuids/sec");
-          p = l, y = u, d = c, l += 122192928e5;
-          const h = (1e4 * (268435455 & l) + u) % 4294967296;
+            d = void 0 !== e.nsecs ? e.nsecs : y + 1;
+          const g = l - p + (d - y) / 1e4;
+          if (g < 0 && void 0 === e.clockseq && (c = c + 1 & 16383), (g < 0 || l > p) && void 0 === e.nsecs && (d = 0), d >= 1e4) throw new Error("uuid.v1(): Can't create more than 10M uuids/sec");
+          p = l, y = d, u = c, l += 122192928e5;
+          const h = (1e4 * (268435455 & l) + d) % 4294967296;
           o[r++] = h >>> 24 & 255, o[r++] = h >>> 16 & 255, o[r++] = h >>> 8 & 255, o[r++] = 255 & h;
           const b = l / 4294967296 * 1e4 & 268435455;
           o[r++] = b >>> 8 & 255, o[r++] = 255 & b, o[r++] = b >>> 24 & 15 | 16, o[r++] = b >>> 16 & 255, o[r++] = c >>> 8 | 128, o[r++] = 255 & c;

@@ -17,11 +17,11 @@ _global.SENTRY_RELEASE = {
 }, (self.webpackChunk_rockstargames_sites_red_dead_online = self.webpackChunk_rockstargames_sites_red_dead_online || []).push([
   [544, 240, 163], {
     99576: (e, a, s) => {
-      var t = s(51664),
-        d = Symbol.for("react.element"),
+      var d = s(51664),
+        t = Symbol.for("react.element"),
         c = Symbol.for("react.fragment"),
         r = Object.prototype.hasOwnProperty,
-        n = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        n = d.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         o = {
           key: !0,
           ref: !0,
@@ -30,14 +30,14 @@ _global.SENTRY_RELEASE = {
         };
 
       function i(e, a, s) {
-        var t, c = {},
+        var d, c = {},
           i = null,
           f = null;
-        for (t in void 0 !== s && (i = "" + s), void 0 !== a.key && (i = "" + a.key), void 0 !== a.ref && (f = a.ref), a) r.call(a, t) && !o.hasOwnProperty(t) && (c[t] = a[t]);
+        for (d in void 0 !== s && (i = "" + s), void 0 !== a.key && (i = "" + a.key), void 0 !== a.ref && (f = a.ref), a) r.call(a, d) && !o.hasOwnProperty(d) && (c[d] = a[d]);
         if (e && e.defaultProps)
-          for (t in a = e.defaultProps) void 0 === c[t] && (c[t] = a[t]);
+          for (d in a = e.defaultProps) void 0 === c[d] && (c[d] = a[d]);
         return {
-          $$typeof: d,
+          $$typeof: t,
           type: e,
           key: i,
           ref: f,
@@ -54,8 +54,8 @@ _global.SENTRY_RELEASE = {
       s.r(a), s.d(a, {
         default: () => p
       });
-      var t = s(51664),
-        d = s(8828),
+      var d = s(51664),
+        t = s(8828),
         c = s(42836),
         r = s(33052),
         n = s(45792);
@@ -114,18 +114,18 @@ _global.SENTRY_RELEASE = {
           let {
             mutation: a,
             query: s,
-            type: d,
+            type: t,
             t: c
           } = e;
           const f = (0, n.useQueryParams)(),
-            [b, p] = (0, t.useState)({}),
+            [b, p] = (0, d.useState)({}),
             {
               data: m
             } = (0, r.useQuery)(s, {
               variables: b,
               skip: !Object.entries(b).length
             });
-          return (0, t.useEffect)((() => {
+          return (0, d.useEffect)((() => {
             p({
               step: f.get("step")
             })
@@ -141,7 +141,7 @@ _global.SENTRY_RELEASE = {
             }), m && (0, i.jsx)(l, {
               mutation: a,
               tree: m.tree,
-              type: d,
+              type: t,
               t: c
             })]
           })
@@ -150,15 +150,15 @@ _global.SENTRY_RELEASE = {
           let {
             mutation: a,
             tree: s,
-            type: t,
+            type: d,
             t: c
           } = e;
-          const r = s.path.map((e => 1 === s.path.length && "_root" === e.feedback_type.name ? null : (0, i.jsx)(d.NavLink, {
+          const r = s.path.map((e => 1 === s.path.length && "_root" === e.feedback_type.name ? null : (0, i.jsx)(t.NavLink, {
               to: `?step=${e.id_hash}`,
               className: o[`stepIcon${e.feedback_type.name}`],
               children: e.feedback_type.title
             }, e.id_hash))),
-            n = s.next.map((e => "_root" === e.feedback_type.name ? null : (0, i.jsxs)(d.NavLink, {
+            n = s.next.map((e => "_root" === e.feedback_type.name ? null : (0, i.jsxs)(t.NavLink, {
               target: e?.feedback_type?.href ? "_blank" : "_self",
               className: o[`stepIcon${e.feedback_type.name}`],
               to: e?.feedback_type?.href ? e.feedback_type.href : `?step=${e.id_hash}`,
@@ -170,7 +170,7 @@ _global.SENTRY_RELEASE = {
               }) : ""]
             }, e.id_hash)));
           return (0, i.jsxs)("div", {
-            className: [o.steps, o[t]].join(" "),
+            className: [o.steps, o[d]].join(" "),
             children: [(0, i.jsx)("div", {
               className: o.stepsPrevious,
               children: r
@@ -188,18 +188,18 @@ _global.SENTRY_RELEASE = {
           let {
             feedbackStep: a,
             mutation: s,
-            t: d
+            t
           } = e;
           const {
             loggedIn: n
-          } = (0, c.useRockstarUser)(), f = (0, t.useRef)(), [l, {
+          } = (0, c.useRockstarUser)(), f = (0, d.useRef)(), [l, {
             data: b,
             error: p
           }] = (0, r.useMutation)(s);
           return n ? b?.submittal?.id ? (0, i.jsx)("div", {
             className: o.success,
             dangerouslySetInnerHTML: {
-              __html: d("feedback.enter_success")
+              __html: t("feedback.enter_success")
             }
           }) : (0, i.jsxs)("form", {
             onSubmit: e => (e => {
@@ -217,26 +217,26 @@ _global.SENTRY_RELEASE = {
               ref: f,
               maxLength: 500,
               rows: 6,
-              placeholder: d("feedback.placeholder")
+              placeholder: t("feedback.placeholder")
             }), p ? (0, i.jsx)("div", {
               className: o.error,
               children: String(p)
             }) : "", (0, i.jsx)("button", {
               type: "submit",
-              children: d("SUBMIT")
+              children: t("SUBMIT")
             })]
-          }) : d("online-feedback-signin-0").replace("%s", d("signin-0"))
+          }) : t("online-feedback-signin-0").replace("%s", t("signin-0"))
         },
         p = e => {
           let {
             mutation: a,
             query: s,
-            type: t
+            type: d
           } = e;
-          return (0, n.withTranslations)(f, "rdo" === t ? "rdr2" : t)({
+          return (0, n.withTranslations)(f, "rdo" === d ? "rdr2" : d)({
             mutation: a,
             query: s,
-            type: t
+            type: d
           })
         }
     }

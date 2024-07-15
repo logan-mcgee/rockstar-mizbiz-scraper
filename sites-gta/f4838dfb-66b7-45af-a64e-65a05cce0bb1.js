@@ -22,59 +22,59 @@ _global.SENTRY_RELEASE = {
       });
       var r = t(82795);
 
-      function a(n) {
+      function o(n) {
         return "/" === n.charAt(0)
       }
 
-      function o(n, e) {
-        for (var t = e, r = t + 1, a = n.length; r < a; t += 1, r += 1) n[t] = n[r];
+      function a(n, e) {
+        for (var t = e, r = t + 1, o = n.length; r < o; t += 1, r += 1) n[t] = n[r];
         n.pop()
       }
       const i = function(n, e) {
         void 0 === e && (e = "");
         var t, r = n && n.split("/") || [],
           i = e && e.split("/") || [],
-          f = n && a(n),
-          c = e && a(e),
+          f = n && o(n),
+          c = e && o(e),
           s = f || c;
-        if (n && a(n) ? i = r : r.length && (i.pop(), i = i.concat(r)), !i.length) return "/";
+        if (n && o(n) ? i = r : r.length && (i.pop(), i = i.concat(r)), !i.length) return "/";
         if (i.length) {
           var d = i[i.length - 1];
           t = "." === d || ".." === d || "" === d
         } else t = !1;
         for (var u = 0, l = i.length; l >= 0; l--) {
           var h = i[l];
-          "." === h ? o(i, l) : ".." === h ? (o(i, l), u++) : u && (o(i, l), u--)
+          "." === h ? a(i, l) : ".." === h ? (a(i, l), u++) : u && (a(i, l), u--)
         }
         if (!s)
           for (; u--; u) i.unshift("..");
-        !s || "" === i[0] || i[0] && a(i[0]) || i.unshift("");
+        !s || "" === i[0] || i[0] && o(i[0]) || i.unshift("");
         var p = i.join("/");
         return t && "/" !== p.substr(-1) && (p += "/"), p
       };
       var f = !0,
         c = "Invariant failed";
 
-      function s(n, e, t, a) {
-        var o;
-        "string" == typeof n ? (o = function(n) {
+      function s(n, e, t, o) {
+        var a;
+        "string" == typeof n ? (a = function(n) {
           var e = n || "/",
             t = "",
             r = "",
-            a = e.indexOf("#"); - 1 !== a && (r = e.substr(a), e = e.substr(0, a));
-          var o = e.indexOf("?");
-          return -1 !== o && (t = e.substr(o), e = e.substr(0, o)), {
+            o = e.indexOf("#"); - 1 !== o && (r = e.substr(o), e = e.substr(0, o));
+          var a = e.indexOf("?");
+          return -1 !== a && (t = e.substr(a), e = e.substr(0, a)), {
             pathname: e,
             search: "?" === t ? "" : t,
             hash: "#" === r ? "" : r
           }
-        }(n), o.state = e) : (void 0 === (o = (0, r.c)({}, n)).pathname && (o.pathname = ""), o.search ? "?" !== o.search.charAt(0) && (o.search = "?" + o.search) : o.search = "", o.hash ? "#" !== o.hash.charAt(0) && (o.hash = "#" + o.hash) : o.hash = "", void 0 !== e && void 0 === o.state && (o.state = e));
+        }(n), a.state = e) : (void 0 === (a = (0, r.c)({}, n)).pathname && (a.pathname = ""), a.search ? "?" !== a.search.charAt(0) && (a.search = "?" + a.search) : a.search = "", a.hash ? "#" !== a.hash.charAt(0) && (a.hash = "#" + a.hash) : a.hash = "", void 0 !== e && void 0 === a.state && (a.state = e));
         try {
-          o.pathname = decodeURI(o.pathname)
+          a.pathname = decodeURI(a.pathname)
         } catch (n) {
-          throw n instanceof URIError ? new URIError('Pathname "' + o.pathname + '" could not be decoded. This is likely caused by an invalid percent-encoding.') : n
+          throw n instanceof URIError ? new URIError('Pathname "' + a.pathname + '" could not be decoded. This is likely caused by an invalid percent-encoding.') : n
         }
-        return t && (o.key = t), a ? o.pathname ? "/" !== o.pathname.charAt(0) && (o.pathname = i(o.pathname, a.pathname)) : o.pathname = a.pathname : o.pathname || (o.pathname = "/"), o
+        return t && (a.key = t), o ? a.pathname ? "/" !== a.pathname.charAt(0) && (a.pathname = i(a.pathname, o.pathname)) : a.pathname = o.pathname : a.pathname || (a.pathname = "/"), a
       }
       var d = !("undefined" == typeof window || !window.document || !window.document.createElement);
 
@@ -97,8 +97,8 @@ _global.SENTRY_RELEASE = {
           if (f) throw new Error(c);
           throw new Error(c)
         }();
-        var e, t, a = window.history,
-          o = (-1 === (e = window.navigator.userAgent).indexOf("Android 2.") && -1 === e.indexOf("Android 4.0") || -1 === e.indexOf("Mobile Safari") || -1 !== e.indexOf("Chrome") || -1 !== e.indexOf("Windows Phone")) && window.history && "pushState" in window.history,
+        var e, t, o = window.history,
+          a = (-1 === (e = window.navigator.userAgent).indexOf("Android 2.") && -1 === e.indexOf("Android 4.0") || -1 === e.indexOf("Mobile Safari") || -1 !== e.indexOf("Chrome") || -1 !== e.indexOf("Windows Phone")) && window.history && "pushState" in window.history,
           i = !(-1 === window.navigator.userAgent.indexOf("Trident")),
           v = n,
           w = v.forceRefresh,
@@ -115,13 +115,13 @@ _global.SENTRY_RELEASE = {
           var e = n || {},
             t = e.key,
             r = e.state,
-            a = window.location,
-            o = a.pathname + a.search + a.hash;
-          return k && (o = function(n, e) {
+            o = window.location,
+            a = o.pathname + o.search + o.hash;
+          return k && (a = function(n, e) {
             return function(n, e) {
               return 0 === n.toLowerCase().indexOf(e.toLowerCase()) && -1 !== "/?#".indexOf(n.charAt(e.length))
             }(n, e) ? n.substr(e.length) : n
-          }(o, k)), s(o, r, t)
+          }(a, k)), s(a, r, t)
         }
 
         function E() {
@@ -136,8 +136,8 @@ _global.SENTRY_RELEASE = {
           },
           confirmTransitionTo: function(n, e, t, r) {
             if (null != x) {
-              var a = "function" == typeof x ? x(n, e) : x;
-              "string" == typeof a ? "function" == typeof t ? t(a, r) : r(!0) : r(!1 !== a)
+              var o = "function" == typeof x ? x(n, e) : x;
+              "string" == typeof o ? "function" == typeof t ? t(o, r) : r(!0) : r(!1 !== o)
             } else r(!0)
           },
           appendListener: function(n) {
@@ -162,7 +162,7 @@ _global.SENTRY_RELEASE = {
         });
 
         function L(n) {
-          (0, r.c)(B, n), B.length = a.length, P.notifyListeners(B.location, B.action)
+          (0, r.c)(B, n), B.length = o.length, P.notifyListeners(B.location, B.action)
         }
 
         function S(n) {
@@ -185,8 +185,8 @@ _global.SENTRY_RELEASE = {
               var e = B.location,
                 t = M.indexOf(e.key); - 1 === t && (t = 0);
               var r = M.indexOf(n.key); - 1 === r && (r = 0);
-              var a = t - r;
-              a && (I = !0, j(a))
+              var o = t - r;
+              o && (I = !0, j(o))
             }(n)
           }))
         }
@@ -198,13 +198,13 @@ _global.SENTRY_RELEASE = {
             var e = n.pathname,
               t = n.search,
               r = n.hash,
-              a = e || "/";
-            return t && "?" !== t && (a += "?" === t.charAt(0) ? t : "?" + t), r && "#" !== r && (a += "#" === r.charAt(0) ? r : "#" + r), a
+              o = e || "/";
+            return t && "?" !== t && (o += "?" === t.charAt(0) ? t : "?" + t), r && "#" !== r && (o += "#" === r.charAt(0) ? r : "#" + r), o
           }(n)
         }
 
         function j(n) {
-          a.go(n)
+          o.go(n)
         }
         var D = 0;
 
@@ -213,7 +213,7 @@ _global.SENTRY_RELEASE = {
         }
         var F = !1,
           B = {
-            length: a.length,
+            length: o.length,
             action: "POP",
             location: C,
             createHref: U,
@@ -225,8 +225,8 @@ _global.SENTRY_RELEASE = {
                   var e = U(r),
                     i = r.key,
                     f = r.state;
-                  if (o)
-                    if (a.pushState({
+                  if (a)
+                    if (o.pushState({
                         key: i,
                         state: f
                       }, null, e), y) window.location.href = e;
@@ -250,8 +250,8 @@ _global.SENTRY_RELEASE = {
                   var e = U(r),
                     i = r.key,
                     f = r.state;
-                  if (o)
-                    if (a.replaceState({
+                  if (a)
+                    if (o.replaceState({
                         key: i,
                         state: f
                       }, null, e), y) window.location.replace(e);
@@ -293,8 +293,8 @@ _global.SENTRY_RELEASE = {
     },
     99576: (n, e, t) => {
       var r = t(51664),
-        a = Symbol.for("react.element"),
-        o = Symbol.for("react.fragment"),
+        o = Symbol.for("react.element"),
+        a = Symbol.for("react.fragment"),
         i = Object.prototype.hasOwnProperty,
         f = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         c = {
@@ -305,22 +305,22 @@ _global.SENTRY_RELEASE = {
         };
 
       function s(n, e, t) {
-        var r, o = {},
+        var r, a = {},
           s = null,
           d = null;
-        for (r in void 0 !== t && (s = "" + t), void 0 !== e.key && (s = "" + e.key), void 0 !== e.ref && (d = e.ref), e) i.call(e, r) && !c.hasOwnProperty(r) && (o[r] = e[r]);
+        for (r in void 0 !== t && (s = "" + t), void 0 !== e.key && (s = "" + e.key), void 0 !== e.ref && (d = e.ref), e) i.call(e, r) && !c.hasOwnProperty(r) && (a[r] = e[r]);
         if (n && n.defaultProps)
-          for (r in e = n.defaultProps) void 0 === o[r] && (o[r] = e[r]);
+          for (r in e = n.defaultProps) void 0 === a[r] && (a[r] = e[r]);
         return {
-          $$typeof: a,
+          $$typeof: o,
           type: n,
           key: s,
           ref: d,
-          props: o,
+          props: a,
           _owner: f.current
         }
       }
-      e.Fragment = o, e.jsx = s, e.jsxs = s
+      e.Fragment = a, e.jsx = s, e.jsxs = s
     },
     95240: (n, e, t) => {
       n.exports = t(99576)

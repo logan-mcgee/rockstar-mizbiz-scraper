@@ -26,15 +26,15 @@ _global.SENTRY_RELEASE = {
         l = d(85092),
         i = d(77715),
         f = d(42708),
-        c = d(82078),
-        b = d(95240);
+        b = d(82078),
+        c = d(95240);
       (0, l.init)();
       const g = window?.env?.graphEnv ?? "dev",
-        u = (0, o.withReactiveState)((() => (0, b.jsx)(i.ScrollProvider, {
-          children: (0, b.jsx)(s.BrowserRouter, {
+        u = (0, o.withReactiveState)((() => (0, c.jsx)(i.ScrollProvider, {
+          children: (0, c.jsx)(s.BrowserRouter, {
             basename: "/",
-            children: (0, b.jsx)(f.RockstarUserProvider, {
-              children: (0, b.jsx)(c.c, {})
+            children: (0, c.jsx)(f.RockstarUserProvider, {
+              children: (0, c.jsx)(b.c, {})
             })
           })
         })), {
@@ -46,7 +46,7 @@ _global.SENTRY_RELEASE = {
             ...r()
           }
         });
-      (0, n.C)(document.getElementById("main")).render((0, b.jsx)(w, {}))
+      (0, n.C)(document.getElementById("main")).render((0, c.jsx)(w, {}))
     }
   }
 ]);

@@ -16,40 +16,40 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_videoplayer = self.webpackChunk_rockstargames_modules_core_videoplayer || []).push([
   [296, 916], {
-    84296: (e, n, a) => {
-      a.r(n), a.d(n, {
-        useGSAP: () => c
+    84296: (e, n, d) => {
+      d.r(n), d.d(n, {
+        useGSAP: () => i
       });
-      var t = a(51664),
-        d = a(67356),
-        o = a.n(d);
+      var t = d(51664),
+        o = d(67356),
+        a = d.n(o);
       let r = "undefined" != typeof window ? t.useLayoutEffect : t.useEffect,
         s = e => e && !Array.isArray(e) && "object" == typeof e,
         l = [],
         f = {},
-        i = o();
-      const c = function(e) {
+        c = a();
+      const i = function(e) {
         let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : l,
-          a = f;
-        s(e) ? (a = e, e = null, n = "dependencies" in a ? a.dependencies : l) : s(n) && (a = n, n = "dependencies" in a ? a.dependencies : l);
+          d = f;
+        s(e) ? (d = e, e = null, n = "dependencies" in d ? d.dependencies : l) : s(n) && (d = n, n = "dependencies" in d ? d.dependencies : l);
         let {
-          scope: d,
-          revertOnUpdate: o
-        } = a, [c, u] = (0, t.useState)(!1);
+          scope: o,
+          revertOnUpdate: a
+        } = d, [i, u] = (0, t.useState)(!1);
         e && "function" != typeof e && console.warn("First parameter must be a function or config object");
-        const b = i.context((() => {}), d),
+        const b = c.context((() => {}), o),
           y = () => b.revert(),
-          p = n && n.length && !o;
+          p = n && n.length && !a;
         return r((() => {
-          if (e && b.add(e, d), !p || !c) return y
+          if (e && b.add(e, o), !p || !i) return y
         }), n), p && r((() => (u(!0), y)), l), {
           context: b,
           contextSafe: e => b.add(null, e)
         }
       };
-      c.register = e => {
-        i = e
-      }, c.headless = !0
+      i.register = e => {
+        c = e
+      }, i.headless = !0
     }
   }
 ]);

@@ -1,8 +1,8 @@
 ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "4675ac9c-4a38-4abe-849e-d64a4883e510", e._sentryDebugIdIdentifier = "sentry-dbid-4675ac9c-4a38-4abe-849e-d64a4883e510")
+      r = (new Error).stack;
+    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "4675ac9c-4a38-4abe-849e-d64a4883e510", e._sentryDebugIdIdentifier = "sentry-dbid-4675ac9c-4a38-4abe-849e-d64a4883e510")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -16,8 +16,8 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
   [152, 240, 771], {
-    99576: (e, a, r) => {
-      var s = r(51664),
+    99576: (e, r, a) => {
+      var s = a(51664),
         t = Symbol.for("react.element"),
         l = Symbol.for("react.fragment"),
         i = Object.prototype.hasOwnProperty,
@@ -29,13 +29,13 @@ _global.SENTRY_RELEASE = {
           __source: !0
         };
 
-      function c(e, a, r) {
+      function c(e, r, a) {
         var s, l = {},
           c = null,
           o = null;
-        for (s in void 0 !== r && (c = "" + r), void 0 !== a.key && (c = "" + a.key), void 0 !== a.ref && (o = a.ref), a) i.call(a, s) && !n.hasOwnProperty(s) && (l[s] = a[s]);
+        for (s in void 0 !== a && (c = "" + a), void 0 !== r.key && (c = "" + r.key), void 0 !== r.ref && (o = r.ref), r) i.call(r, s) && !n.hasOwnProperty(s) && (l[s] = r[s]);
         if (e && e.defaultProps)
-          for (s in a = e.defaultProps) void 0 === l[s] && (l[s] = a[s]);
+          for (s in r = e.defaultProps) void 0 === l[s] && (l[s] = r[s]);
         return {
           $$typeof: t,
           type: e,
@@ -45,47 +45,47 @@ _global.SENTRY_RELEASE = {
           _owner: d.current
         }
       }
-      a.Fragment = l, a.jsx = c, a.jsxs = c
+      r.Fragment = l, r.jsx = c, r.jsxs = c
     },
-    95240: (e, a, r) => {
-      e.exports = r(99576)
+    95240: (e, r, a) => {
+      e.exports = a(99576)
     },
-    86152: (e, a, r) => {
-      r.r(a), r.d(a, {
-        default: () => b
+    86152: (e, r, a) => {
+      a.r(r), a.d(r, {
+        default: () => p
       });
-      var s = r(9860);
+      var s = a(9860);
       const t = {
         padding: "rockstargames-modules-core-newswire-articlee1811c65983d2df02484c7bd49620f6d",
         carouselWrapper: "rockstargames-modules-core-newswire-articledaf8d6c749fa379c43a098df8a842f62",
         carouselTitle: "rockstargames-modules-core-newswire-articleffab2486abb58ef9090c19d6d5bdd44c"
       };
-      var l = r(95240);
+      var l = a(95240);
       const i = e => {
           let {
-            to: a,
-            children: r
+            to: r,
+            children: a
           } = e;
-          return a ? (0, l.jsx)("a", {
-            href: a,
+          return r ? (0, l.jsx)("a", {
+            href: r,
             target: "_blank",
-            children: r
-          }) : r
+            children: a
+          }) : a
         },
         d = e => {
           let {
-            items: a,
-            text: r = {},
+            items: r,
+            text: a = {},
             style: d,
             className: n = "",
             id: c = null
           } = e;
-          return a?.length ? (0, l.jsxs)("div", {
+          return r?.length ? (0, l.jsxs)("div", {
             id: c,
             children: [(0, l.jsx)(s.Carousel, {
               style: d,
               className: [n, t.carouselWrapper].join(" "),
-              children: a.map((e => (0, l.jsxs)("div", {
+              children: r.map((e => (0, l.jsxs)("div", {
                 id: e?.id ?? null,
                 children: [(0, l.jsx)(s.ImageWithBadge, {
                   image: e?.image,
@@ -110,86 +110,86 @@ _global.SENTRY_RELEASE = {
                   }
                 })]
               }, e?.key ?? e?.title)))
-            }), r?.title || r?.description ? (0, l.jsx)("div", {
+            }), a?.title || a?.description ? (0, l.jsx)("div", {
               className: t.padding,
-              style: r?.style ?? {},
+              style: a?.style ?? {},
               children: (0, l.jsx)(s.DescriptionArea, {
-                item: r
+                item: a
               })
             }) : ""]
           }) : null
         };
-      var n = r(84644),
-        c = r.n(n),
-        o = r(1740);
+      var n = a(84644),
+        c = a.n(n),
+        o = a(1740);
       const m = e => {
           let {
-            impressionTracking: a,
-            gtm: r = {},
+            impressionTracking: r,
+            gtm: a = {},
             children: t
           } = e;
-          return a?.shouldTrack ? (0, l.jsx)(s.InViewTracker, {
-            threshold: a?.threshold,
-            gtm: r,
+          return r?.shouldTrack ? (0, l.jsx)(s.InViewTracker, {
+            threshold: r?.threshold,
+            gtm: a,
             children: t
           }) : t
         },
         g = e => {
           let {
-            impressionTracking: a,
-            gtm: r = {},
+            impressionTracking: r,
+            gtm: a = {},
             children: s
           } = e, t = !1;
           return t = !0, (0, l.jsx)(m, {
-            impressionTracking: a,
-            gtm: r,
+            impressionTracking: r,
+            gtm: a,
             children: s
           })
         },
         f = e => {
           let {
-            to: a,
-            children: r
+            to: r,
+            children: a
           } = e;
-          return a ? (0, l.jsx)("a", {
-            href: a,
+          return r ? (0, l.jsx)("a", {
+            href: r,
             target: "_blank",
             rel: "noreferrer",
-            children: r
-          }) : r
+            children: a
+          }) : a
         },
         u = e => {
           let {
-            item: a
+            item: r
           } = e;
-          return a?.videoId ? (0, l.jsx)(c(), {
+          return r?.videoId ? (0, l.jsx)(c(), {
             context: "site",
             autoplay: !1,
-            id: a.videoId
+            id: r.videoId
           }) : (0, l.jsx)(s.ImageWithBadge, {
-            image: a?.image,
-            badge: a?.badge ?? a?.image?.badge,
+            image: r?.image,
+            badge: r?.badge ?? r?.image?.badge,
             badgeType: "badge3",
-            role: a?.role ?? a?.image?.role,
-            splitter: a?.splitter ?? a?.image?.splitter,
-            type: a?.type,
-            ariaLabel: a?.image?.ariaLabel,
-            style: a?.style,
-            className: a?.className
+            role: r?.role ?? r?.image?.role,
+            splitter: r?.splitter ?? r?.image?.splitter,
+            type: r?.type,
+            ariaLabel: r?.image?.ariaLabel,
+            style: r?.style,
+            className: r?.className
           })
         },
-        p = e => {
+        b = e => {
           let {
-            items: a,
-            style: r = {},
+            items: r,
+            style: a = {},
             className: t = "",
             id: i = null
           } = e;
           return (0, l.jsx)("div", {
-            style: r,
+            style: a,
             className: (0, o.classList)("rockstargames-modules-core-newswire-articlefbb6b44c6d90c22144e4fbed29bc540b", t),
             id: i,
-            children: a.map((e => (0, l.jsx)(g, {
+            children: r.map((e => (0, l.jsx)(g, {
               impressionTracking: e?.impressionTracking,
               gtm: e?.gtm,
               children: (0, l.jsx)(f, {
@@ -209,10 +209,10 @@ _global.SENTRY_RELEASE = {
             }, e.key)))
           })
         },
-        b = e => {
+        p = e => {
           let {
-            children: a,
-            text: r,
+            children: r,
+            text: a,
             items: s = [],
             renderTemplate: t,
             style: i,
@@ -223,28 +223,28 @@ _global.SENTRY_RELEASE = {
           switch (t) {
             case "carousel":
               return (0, l.jsx)(d, {
-                text: r,
+                text: a,
                 items: s,
                 style: i,
                 id: n,
-                children: a
+                children: r
               });
             case "carousel-panorama":
               return (0, l.jsx)(d, {
-                text: r,
+                text: a,
                 items: s,
                 style: i,
                 className: "panorama",
                 id: n,
-                children: a
+                children: r
               });
             default:
-              return (0, l.jsx)(p, {
+              return (0, l.jsx)(b, {
                 items: s,
                 style: i,
                 id: n,
                 ...c,
-                children: a
+                children: r
               })
           }
         }

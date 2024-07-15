@@ -471,11 +471,11 @@ _global.SENTRY_RELEASE = {
         CY: () => s,
         Ez: () => a,
         IL: () => y,
-        UD: () => b,
+        UD: () => g,
         Yz: () => u,
         k7: () => p,
         kv: () => c,
-        sh: () => g,
+        sh: () => b,
         ue: () => m
       });
       var r = t(3464),
@@ -607,7 +607,7 @@ _global.SENTRY_RELEASE = {
 
       function h(e, n, t) {
         for (var r, i = 0, u = n.selections; i < u.length; i++)
-          if (g(s = u[i])) {
+          if (b(s = u[i])) {
             if ("__typename" === s.name.value) return e[m(s)]
           } else r ? r.push(s) : r = [s];
         if ("string" == typeof e.__typename) return e.__typename;
@@ -619,11 +619,11 @@ _global.SENTRY_RELEASE = {
           }
       }
 
-      function g(e) {
+      function b(e) {
         return "Field" === e.kind
       }
 
-      function b(e) {
+      function g(e) {
         return "InlineFragment" === e.kind
       }
     },
@@ -752,11 +752,11 @@ _global.SENTRY_RELEASE = {
         }
       }
 
-      function g(e) {
+      function b(e) {
         e._observer = void 0, e._queue = void 0, e._state = "closed"
       }
 
-      function b(e, n, t) {
+      function g(e, n, t) {
         e._state = "running";
         var r = e._observer;
         try {
@@ -766,11 +766,11 @@ _global.SENTRY_RELEASE = {
               i && i.call(r, t);
               break;
             case "error":
-              if (g(e), !i) throw t;
+              if (b(e), !i) throw t;
               i.call(r, t);
               break;
             case "complete":
-              g(e), i && i.call(r)
+              b(e), i && i.call(r)
           }
         } catch (e) {
           y(e)
@@ -788,10 +788,10 @@ _global.SENTRY_RELEASE = {
               var n = e._queue;
               if (n) {
                 e._queue = void 0, e._state = "ready";
-                for (var t = 0; t < n.length && (b(e, n[t].type, n[t].value), "closed" !== e._state); ++t);
+                for (var t = 0; t < n.length && (g(e, n[t].type, n[t].value), "closed" !== e._state); ++t);
               }
             }(e)
-          }))) : void b(e, n, t);
+          }))) : void g(e, n, t);
           e._queue.push({
             type: n,
             value: t
@@ -810,7 +810,7 @@ _global.SENTRY_RELEASE = {
             "initializing" === this._state && (this._state = "ready")
           }
           return e.prototype.unsubscribe = function() {
-            "closed" !== this._state && (g(this), h(this))
+            "closed" !== this._state && (b(this), h(this))
           }, o(e, [{
             key: "closed",
             get: function() {
@@ -1710,14 +1710,14 @@ _global.SENTRY_RELEASE = {
           y = -1,
           m = [],
           h = e;
-        const g = [],
-          b = [];
+        const b = [],
+          g = [];
         do {
           y++;
           const e = y === v.length,
             u = e && 0 !== m.length;
           if (e) {
-            if (f = 0 === b.length ? void 0 : g[g.length - 1], h = p, p = b.pop(), u)
+            if (f = 0 === g.length ? void 0 : b[b.length - 1], h = p, p = g.pop(), u)
               if (d) {
                 h = h.slice();
                 let e = 0;
@@ -1731,35 +1731,35 @@ _global.SENTRY_RELEASE = {
               } y = l.index, v = l.keys, m = l.edits, d = l.inArray, l = l.prev
           } else if (p) {
             if (f = d ? y : v[y], h = p[f], null == h) continue;
-            g.push(f)
+            b.push(f)
           }
           let s;
           if (!Array.isArray(h)) {
             var _, E;
             (0, o.yW)(h) || (0, r.a)(!1, `Invalid AST Node: ${(0,i.g)(h)}.`);
             const t = e ? null === (_ = c.get(h.kind)) || void 0 === _ ? void 0 : _.leave : null === (E = c.get(h.kind)) || void 0 === E ? void 0 : E.enter;
-            if (s = null == t ? void 0 : t.call(n, h, f, p, g, b), s === a) break;
+            if (s = null == t ? void 0 : t.call(n, h, f, p, b, g), s === a) break;
             if (!1 === s) {
               if (!e) {
-                g.pop();
+                b.pop();
                 continue
               }
             } else if (void 0 !== s && (m.push([f, s]), !e)) {
               if (!(0, o.yW)(s)) {
-                g.pop();
+                b.pop();
                 continue
               }
               h = s
             }
           }
           var T;
-          void 0 === s && u && m.push([f, h]), e ? g.pop() : (l = {
+          void 0 === s && u && m.push([f, h]), e ? b.pop() : (l = {
             inArray: d,
             index: y,
             keys: v,
             edits: m,
             prev: l
-          }, d = Array.isArray(h), v = d ? h : null !== (T = t[h.kind]) && void 0 !== T ? T : [], y = -1, m = [], p && b.push(p), p = h)
+          }, d = Array.isArray(h), v = d ? h : null !== (T = t[h.kind]) && void 0 !== T ? T : [], y = -1, m = [], p && g.push(p), p = h)
         } while (void 0 !== l);
         return 0 !== m.length ? m[m.length - 1][1] : e
       }

@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "3cb08233-cbc7-433b-a520-3ee8c881c42c", e._sentryDebugIdIdentifier = "sentry-dbid-3cb08233-cbc7-433b-a520-3ee8c881c42c")
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "dd6847b9-2391-47f7-8d18-36810b96ac88", e._sentryDebugIdIdentifier = "sentry-dbid-dd6847b9-2391-47f7-8d18-36810b96ac88")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -453,8 +453,8 @@ _global.SENTRY_RELEASE = {
           hoverIcon: "rockstargames-modules-core-videoplayerb0f4db960fa6480307f34233d839f9f1",
           icon: "rockstargames-modules-core-videoplayerd32462e15310c4990db530786d03a227"
         };
-      var H = l(37925);
-      const T = {
+      var T = l(37925);
+      const H = {
           pillBtn: "rockstargames-modules-core-videoplayerffd4628d5ed7b2a0b54e12b05cce06c0",
           selected: "rockstargames-modules-core-videoplayeraa7d1bae78b933753eb091e1a77bbdfe",
           controlItemOptionButton: "rockstargames-modules-core-videoplayerbebccd159df76702c939ed0e1a4de533",
@@ -473,7 +473,7 @@ _global.SENTRY_RELEASE = {
           const [n, s] = (0, t.useState)(null), [d, c] = (0, t.useState)(null), [u, _] = (0, t.useState)(!1), {
             styles: p,
             attributes: v
-          } = (0, H.usePopper)(n, d, {
+          } = (0, T.usePopper)(n, d, {
             modifiers: [{
               name: "flip",
               options: {
@@ -490,14 +490,14 @@ _global.SENTRY_RELEASE = {
           });
           return (0, y.jsxs)("div", {
             children: [l && !r && u && (0, y.jsx)("span", {
-              className: T.tooltip,
+              className: H.tooltip,
               ref: c,
               style: p.popper,
               ...v,
               children: l
             }), (0, y.jsx)("button", {
               ...i,
-              className: [T.button, o].join(" "),
+              className: [H.button, o].join(" "),
               onPointerEnter: e => {
                 "mouse" === e.pointerType && _(!0)
               },
@@ -1940,7 +1940,7 @@ _global.SENTRY_RELEASE = {
             defaultMessage: "Back"
           }
         }),
-        He = {
+        Te = {
           pillBtn: "rockstargames-modules-core-videoplayerbceb13b2ef3797b4e3efc0f79b29f89c",
           selected: "rockstargames-modules-core-videoplayerf309e313c9a95ad3b5052ceab3456687",
           controlItemOptionButton: "rockstargames-modules-core-videoplayerd753d469d6d7448b4ceea512aa7dcf8e",
@@ -1972,7 +1972,7 @@ _global.SENTRY_RELEASE = {
           timestamp: "rockstargames-modules-core-videoplayerc8ee036b7e0c49079bbab355a111cd2e"
         };
       v().registerPlugin(oe.useGSAP);
-      const Te = e => {
+      const He = e => {
           let {
             collapsed: a = !1,
             onClick: l
@@ -2002,11 +2002,11 @@ _global.SENTRY_RELEASE = {
             },
             hideTooltip: i.isShareMenuOpen,
             children: (0, y.jsxs)("span", {
-              className: He.label,
+              className: Te.label,
               children: [(0, y.jsx)(Le, {
-                className: He.icon
+                className: Te.icon
               }), a && (0, y.jsx)("span", {
-                className: He.labelText,
+                className: Te.labelText,
                 children: t(Ie.videoplayer_share_menu_header)
               })]
             })
@@ -2051,7 +2051,7 @@ _global.SENTRY_RELEASE = {
             template: "http://www.reddit.com/submit?url={url}&title={title}&r=gaming"
           }], w = [{
             icon: (0, y.jsx)(Re, {
-              className: He.embedIcon
+              className: Te.embedIcon
             }),
             name: "embed",
             template: h.embed,
@@ -2061,12 +2061,12 @@ _global.SENTRY_RELEASE = {
             return e.includes("?") && (a = "&"), `${e}${o?`${a}start=${x()}`:""}`
           }, N = (0, y.jsxs)(y.Fragment, {
             children: [u(Ie.videoplayer_share_copy), (0, y.jsx)(Ae, {
-              className: He.copyLinkIcon,
+              className: Te.copyLinkIcon,
               fill: "black"
             })]
           }), M = (0, y.jsxs)(y.Fragment, {
             children: [u(Ie.videoplayer_share_time_copied), (0, y.jsx)(Ve, {
-              className: He.copyLinkIcon,
+              className: Te.copyLinkIcon,
               stroke: "black"
             })]
           }), L = c((e => {
@@ -2084,12 +2084,12 @@ _global.SENTRY_RELEASE = {
           }));
           return b?.isShareMenuOpen ? (0, y.jsxs)(y.Fragment, {
             children: [(0, y.jsx)("header", {
-              className: He.header,
+              className: Te.header,
               children: (0, y.jsxs)("div", {
-                className: He.menuLabel,
+                className: Te.menuLabel,
                 children: [a ? (0, y.jsx)("div", {
                   role: "button",
-                  className: He.backButton,
+                  className: Te.backButton,
                   "aria-label": u(Ie.videoplayer_share_menu_header),
                   onClick: () => {
                     l?.()
@@ -2102,9 +2102,9 @@ _global.SENTRY_RELEASE = {
                 }) : (0, y.jsx)(Le, {}), u(Ie.videoplayer_share_menu_header)]
               })
             }), (0, y.jsxs)("section", {
-              className: He.content,
+              className: Te.content,
               children: [(0, y.jsxs)("div", {
-                className: He.socialIcons,
+                className: Te.socialIcons,
                 children: [k.map((e => {
                   let {
                     name: a,
@@ -2115,7 +2115,7 @@ _global.SENTRY_RELEASE = {
                     "aria-label": u(Ie.videoplayer_share_link_button_label, {
                       name: a
                     }),
-                    className: (0, E.classList)(He.buttonLink, He[a]),
+                    className: (0, E.classList)(Te.buttonLink, Te[a]),
                     href: t.replace("{title}", encodeURI(g)).replace("{url}", encodeURI(C)),
                     target: "_blank",
                     onClick: () => {
@@ -2143,7 +2143,7 @@ _global.SENTRY_RELEASE = {
                       actionText: t
                     } = e;
                     return (0, y.jsxs)("button", {
-                      className: (0, E.classList)(He.buttonLink, He[a]),
+                      className: (0, E.classList)(Te.buttonLink, Te[a]),
                       name: a,
                       onClick: async () => {
                         await navigator.clipboard.writeText(h.embed), L(a)
@@ -2151,14 +2151,14 @@ _global.SENTRY_RELEASE = {
                       type: "button",
                       tabIndex: 0,
                       children: [t && (0, y.jsx)("span", {
-                        className: (0, E.classList)(He.buttonActionIndicator, a),
+                        className: (0, E.classList)(Te.buttonActionIndicator, a),
                         children: t
                       }), l]
                     }, a)
                   }))
                 })]
               }), (0, y.jsxs)("div", {
-                className: He.copyLink,
+                className: Te.copyLink,
                 children: [(0, y.jsx)("input", {
                   value: j(h.url),
                   readOnly: !0
@@ -2173,7 +2173,7 @@ _global.SENTRY_RELEASE = {
                   children: i ? M : N
                 })]
               }), (0, y.jsxs)("div", {
-                className: He.shareLink,
+                className: Te.shareLink,
                 tabIndex: 0,
                 role: "checkbox",
                 "aria-checked": o,
@@ -2182,9 +2182,9 @@ _global.SENTRY_RELEASE = {
                   " " !== e.key && "Enter" !== e.key || r(!o)
                 },
                 children: [(0, y.jsx)("div", {
-                  className: (0, E.classList)(He.checkbox, o ? He.selected : ""),
+                  className: (0, E.classList)(Te.checkbox, o ? Te.selected : ""),
                   children: o && (0, y.jsx)(Ve, {
-                    className: He.checkmark,
+                    className: Te.checkmark,
                     stroke: "black"
                   })
                 }), (0, y.jsxs)("label", {
@@ -2192,7 +2192,7 @@ _global.SENTRY_RELEASE = {
                   children: [(0, y.jsx)(d.FormattedMessage, {
                     ...Ie.videoplayer_share_time_copy
                   }), (0, y.jsx)("span", {
-                    className: [He.timestamp, o ? He.selected : ""].join(" ").trim(),
+                    className: [Te.timestamp, o ? Te.selected : ""].join(" ").trim(),
                     children: (() => {
                       const e = x(),
                         a = e % 60;
@@ -2543,7 +2543,7 @@ _global.SENTRY_RELEASE = {
                     }, "captions_content")
                   }],
                   ["share", {
-                    button: (0, y.jsx)(Te, {
+                    button: (0, y.jsx)(He, {
                       collapsed: s.some((e => "share" === e)),
                       onClick: () => E("isShareMenuOpen")
                     }, "share_button"),
@@ -3096,8 +3096,8 @@ _global.SENTRY_RELEASE = {
           } = g, {
             loading: V,
             video: A
-          } = R, I = (0, n.useAgegated)(), H = (0, o.useNavigate)(), {
-            formatMessage: T
+          } = R, I = (0, n.useAgegated)(), T = (0, o.useNavigate)(), {
+            formatMessage: H
           } = (0, d.useIntl)(), {
             currentSite: O
           } = (0, r.c)();
@@ -3141,7 +3141,7 @@ _global.SENTRY_RELEASE = {
                 srclang: "",
                 src: ""
               }), [...o]
-            }(a, T(_.videoplayer.videoplayer_captions_menu_off_label))), C("accentColor", (0, m.kZ)(A?.game?.title_slug ?? ""))
+            }(a, H(_.videoplayer.videoplayer_captions_menu_off_label))), C("accentColor", (0, m.kZ)(A?.game?.title_slug ?? ""))
           }), [u, A]), (0, t.useEffect)((() => {
             if (!A) return;
             let e, a, l = h.split("_")[1] ?? "";
@@ -3169,7 +3169,7 @@ _global.SENTRY_RELEASE = {
             C("shareData", n)
           }), [N, M, A]), (0, t.useEffect)((() => {
             C("videoChangeCallback", v || (e => {
-              H(`../videos/${e}`)
+              T(`../videos/${e}`)
             }))
           }), [v]), (0, t.useEffect)((() => {
             const e = w.get("start") ?? 0;
@@ -3635,8 +3635,8 @@ _global.SENTRY_RELEASE = {
           }) : null
         },
         m = () => (0, r.useContext)(p);
-      var b = l(12836);
-      const y = "undefined" != typeof VideoDataWithGames2Connection ? VideoDataWithGames2Connection : b.VideoData,
+      var b = l(59076);
+      const y = void 0 !== b.VideoData ? b.VideoData : VideoDataDefault,
         h = e => {
           let {
             id: a,
@@ -3671,7 +3671,7 @@ _global.SENTRY_RELEASE = {
           return o.has(a) ? o.get(a) : o.has(l) ? o.get(l) : e
         }
     },
-    12836: e => {
+    59076: e => {
       var a = {
         kind: "Document",
         definitions: [{
@@ -3679,7 +3679,7 @@ _global.SENTRY_RELEASE = {
           operation: "query",
           name: {
             kind: "Name",
-            value: "Video"
+            value: "VideoData"
           },
           variableDefinitions: [{
             kind: "VariableDefinition",
@@ -3696,7 +3696,7 @@ _global.SENTRY_RELEASE = {
                 kind: "NamedType",
                 name: {
                   kind: "Name",
-                  value: "Int"
+                  value: "String"
                 }
               }
             },
@@ -3834,34 +3834,6 @@ _global.SENTRY_RELEASE = {
                   kind: "Field",
                   name: {
                     kind: "Name",
-                    value: "art_layers"
-                  },
-                  arguments: [],
-                  directives: [],
-                  selectionSet: {
-                    kind: "SelectionSet",
-                    selections: [{
-                      kind: "Field",
-                      name: {
-                        kind: "Name",
-                        value: "src"
-                      },
-                      arguments: [],
-                      directives: []
-                    }, {
-                      kind: "Field",
-                      name: {
-                        kind: "Name",
-                        value: "animation"
-                      },
-                      arguments: [],
-                      directives: []
-                    }]
-                  }
-                }, {
-                  kind: "Field",
-                  name: {
-                    kind: "Name",
                     value: "game"
                   },
                   arguments: [],
@@ -3888,7 +3860,7 @@ _global.SENTRY_RELEASE = {
                       kind: "Field",
                       name: {
                         kind: "Name",
-                        value: "title_slug"
+                        value: "titleSlug"
                       },
                       arguments: [],
                       directives: []
@@ -3896,21 +3868,9 @@ _global.SENTRY_RELEASE = {
                   }
                 }, {
                   kind: "Field",
-                  alias: {
+                  name: {
                     kind: "Name",
                     value: "createdFormatted"
-                  },
-                  name: {
-                    kind: "Name",
-                    value: "created_formatted"
-                  },
-                  arguments: [],
-                  directives: []
-                }, {
-                  kind: "Field",
-                  name: {
-                    kind: "Name",
-                    value: "created"
                   },
                   arguments: [],
                   directives: []
@@ -3934,19 +3894,15 @@ _global.SENTRY_RELEASE = {
                   kind: "Field",
                   name: {
                     kind: "Name",
-                    value: "group_type"
+                    value: "groupType"
                   },
                   arguments: [],
                   directives: []
                 }, {
                   kind: "Field",
-                  alias: {
-                    kind: "Name",
-                    value: "youtubeId"
-                  },
                   name: {
                     kind: "Name",
-                    value: "youtube_id"
+                    value: "youtubeId"
                   },
                   arguments: [],
                   directives: []
@@ -3960,13 +3916,45 @@ _global.SENTRY_RELEASE = {
                   directives: []
                 }, {
                   kind: "Field",
-                  alias: {
-                    kind: "Name",
-                    value: "files"
-                  },
                   name: {
                     kind: "Name",
-                    value: "files_processed"
+                    value: "tracks"
+                  },
+                  arguments: [],
+                  directives: [],
+                  selectionSet: {
+                    kind: "SelectionSet",
+                    selections: [{
+                      kind: "Field",
+                      name: {
+                        kind: "Name",
+                        value: "subtitles"
+                      },
+                      arguments: [],
+                      directives: []
+                    }, {
+                      kind: "Field",
+                      name: {
+                        kind: "Name",
+                        value: "captions"
+                      },
+                      arguments: [],
+                      directives: []
+                    }, {
+                      kind: "Field",
+                      name: {
+                        kind: "Name",
+                        value: "lang"
+                      },
+                      arguments: [],
+                      directives: []
+                    }]
+                  }
+                }, {
+                  kind: "Field",
+                  name: {
+                    kind: "Name",
+                    value: "files"
                   },
                   arguments: [],
                   directives: [],
@@ -3977,14 +3965,6 @@ _global.SENTRY_RELEASE = {
                       name: {
                         kind: "Name",
                         value: "resolution"
-                      },
-                      arguments: [],
-                      directives: []
-                    }, {
-                      kind: "Field",
-                      name: {
-                        kind: "Name",
-                        value: "sprite"
                       },
                       arguments: [],
                       directives: []
@@ -4094,52 +4074,12 @@ _global.SENTRY_RELEASE = {
                       directives: []
                     }, {
                       kind: "Field",
-                      alias: {
+                      name: {
                         kind: "Name",
                         value: "createdFormatted"
                       },
-                      name: {
-                        kind: "Name",
-                        value: "created_formatted"
-                      },
                       arguments: [],
                       directives: []
-                    }, {
-                      kind: "Field",
-                      name: {
-                        kind: "Name",
-                        value: "created"
-                      },
-                      arguments: [],
-                      directives: []
-                    }, {
-                      kind: "Field",
-                      name: {
-                        kind: "Name",
-                        value: "art_layers"
-                      },
-                      arguments: [],
-                      directives: [],
-                      selectionSet: {
-                        kind: "SelectionSet",
-                        selections: [{
-                          kind: "Field",
-                          name: {
-                            kind: "Name",
-                            value: "src"
-                          },
-                          arguments: [],
-                          directives: []
-                        }, {
-                          kind: "Field",
-                          name: {
-                            kind: "Name",
-                            value: "animation"
-                          },
-                          arguments: [],
-                          directives: []
-                        }]
-                      }
                     }, {
                       kind: "Field",
                       name: {
@@ -4170,7 +4110,7 @@ _global.SENTRY_RELEASE = {
                           kind: "Field",
                           name: {
                             kind: "Name",
-                            value: "title_slug"
+                            value: "titleSlug"
                           },
                           arguments: [],
                           directives: []
@@ -4257,7 +4197,7 @@ _global.SENTRY_RELEASE = {
         }],
         loc: {
           start: 0,
-          end: 1183
+          end: 998
         }
       };
 
@@ -4276,7 +4216,7 @@ _global.SENTRY_RELEASE = {
         }))
       }
       a.loc.source = {
-        body: 'query Video(\n    $id: Int!\n    $locale: String!\n    $withTranslations: Boolean! = false\n    $cache: Boolean = true\n) {\n    video(id: $id, locale: $locale) {\n        id\n        title\n        screencap\n        art_layers {\n            src\n            animation\n        }\n        game {\n            id\n            title\n            title_slug\n        }\n        createdFormatted: created_formatted\n        created\n        description\n        agegated\n        group_type\n        youtubeId: youtube_id\n        youtubeOnly\n        files: files_processed {\n            resolution\n            sprite\n            src\n            default\n        }\n    }\n    related: videos(relatedToId: $id, locale: $locale, limit: 50) {\n        results {\n            id\n            title\n            screencap\n            createdFormatted: created_formatted\n            created\n            art_layers {\n                src\n                animation\n            }\n            game {\n                id\n                title\n                title_slug\n            }\n        }\n    }\n    translations(locale: $locale, config: "default")\n        @include(if: $withTranslations) {\n        key\n        value\n    }\n}\n',
+        body: 'query VideoData(\n    $id: String!\n    $locale: String!\n    $withTranslations: Boolean! = false\n    $cache: Boolean = true\n) {\n    video(id: $id, locale: $locale) {\n        id\n        title\n        screencap\n        game {\n            id\n            title\n            titleSlug\n        }\n        createdFormatted\n        description\n        agegated\n        groupType\n        youtubeId\n        youtubeOnly\n        tracks {\n            subtitles\n            captions\n            lang\n        }\n        files {\n            resolution\n            src\n            default\n        }\n    }\n    related: videos(relatedToId: $id, locale: $locale, limit: 50) {\n        results {\n            id\n            title\n            screencap\n            createdFormatted\n            game {\n                id\n                title\n                titleSlug\n            }\n        }\n    }\n    translations(locale: $locale, config: "default")\n        @include(if: $withTranslations) {\n        key\n        value\n    }\n}\n',
         name: "GraphQL request",
         locationOffset: {
           line: 1,
@@ -4296,7 +4236,7 @@ _global.SENTRY_RELEASE = {
           var a = new Set;
           l(e, a), t[e.name.value] = a
         }
-      })), e.exports = a, e.exports.Video = function(e, a) {
+      })), e.exports = a, e.exports.VideoData = function(e, a) {
         var l = {
           kind: e.kind,
           definitions: [o(e, a)]
@@ -4319,7 +4259,7 @@ _global.SENTRY_RELEASE = {
           var t = o(e, a);
           t && l.definitions.push(t)
         })), l
-      }(a, "Video")
+      }(a, "VideoData")
     },
     70664: e => {
       "use strict";

@@ -52,7 +52,7 @@ _global.SENTRY_RELEASE = {
     },
     76980: (e, a, r) => {
       r.r(a), r.d(a, {
-        default: () => b
+        default: () => g
       });
       var t = r(51664),
         s = r(48111),
@@ -144,14 +144,14 @@ _global.SENTRY_RELEASE = {
             })]
           })
         },
-        g = e => {
+        b = e => {
           let {
             loop: a = !0,
             grabCursor: r = !0,
             centeredSlides: n = !0,
             slides: i = null
           } = e;
-          const [g, b] = (0, t.useState)(null);
+          const [b, g] = (0, t.useState)(null);
           return i ? (0, c.jsx)("div", {
             className: d.panoramaCarouselWrapper,
             children: (0, c.jsxs)(s.wx, {
@@ -165,7 +165,7 @@ _global.SENTRY_RELEASE = {
               pagination: !1,
               speed: 700,
               onActiveIndexChange: e => (e => {
-                b(i[e])
+                g(i[e])
               })(e?.realIndex ?? 0),
               breakpoints: {
                 768: {
@@ -181,15 +181,15 @@ _global.SENTRY_RELEASE = {
               children: [(0, c.jsxs)("div", {
                 className: (0, l.classList)(d.slotContainer, d.top),
                 children: [(0, c.jsx)(u, {
-                  item: g?.topLeftSlot,
+                  item: b?.topLeftSlot,
                   vertical: "top",
                   horizontal: "left"
                 }), (0, c.jsx)(u, {
-                  item: g?.topCenterSlot,
+                  item: b?.topCenterSlot,
                   vertical: "top",
                   horizontal: "center"
                 }), (0, c.jsx)(u, {
-                  item: g?.topRightSlot,
+                  item: b?.topRightSlot,
                   vertical: "top",
                   horizontal: "right"
                 })]
@@ -206,28 +206,28 @@ _global.SENTRY_RELEASE = {
               }, e?.key))), (0, c.jsxs)("div", {
                 className: (0, l.classList)(d.slotContainer, d.bottom),
                 children: [(0, c.jsx)(u, {
-                  item: g?.bottomLeftSlot,
+                  item: b?.bottomLeftSlot,
                   vertical: "bottom",
                   horizontal: "left"
                 }), (0, c.jsx)(u, {
-                  item: g?.bottomRightSlot,
+                  item: b?.bottomRightSlot,
                   vertical: "bottom",
                   horizontal: "right"
                 })]
               }), (0, c.jsx)(f, {
-                currentSlide: g
+                currentSlide: b
               })]
             })
           }) : null
         },
-        b = e => {
+        g = e => {
           let {
             type: a = null,
             className: r,
             style: t,
             panoramaCarousel: s
           } = e;
-          return a ? (o = g, l = s, (0, c.jsx)(o, {
+          return a ? (o = b, l = s, (0, c.jsx)(o, {
             className: r,
             style: t,
             ...l

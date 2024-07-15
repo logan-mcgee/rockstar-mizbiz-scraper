@@ -16,30 +16,30 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_videoplayer = self.webpackChunk_rockstargames_modules_core_videoplayer || []).push([
   [448], {
-    33448: (e, a, o) => {
-      o.r(a), o(31389), o(42664), o(34904), o(46368), o(58256), o(64932), o(87440), o(53128), o(18932), o(19520), o(24264), o(69224), o(58432), o(13144), o(77571), o(84084), o(86096), o(54012), o(38592);
-      var d = o(85092),
-        n = o(64508),
-        t = o(57013),
-        l = o(45792),
-        r = o(33052),
-        s = o(41272),
-        i = o(42708),
-        c = o(70664),
-        u = o(5512),
-        f = o(95240);
+    33448: (e, a, d) => {
+      d.r(a), d(31389), d(42664), d(34904), d(46368), d(58256), d(64932), d(87440), d(53128), d(18932), d(19520), d(24264), d(69224), d(58432), d(13144), d(77571), d(84084), d(86096), d(54012), d(38592);
+      var o = d(85092),
+        n = d(64508),
+        t = d(57013),
+        l = d(45792),
+        r = d(33052),
+        s = d(41272),
+        i = d(42708),
+        c = d(70664),
+        f = d(5512),
+        u = d(95240);
       const g = window?.env?.graphEnv ?? "prod",
         b = () => {
           const [e, a] = (0, t.useSearchParams)(), [{
-            iso: o
-          }] = (0, s.getLocale)(), d = "true" === e.get("autoplay"), n = e.get("id"), r = e.get("resolution") ?? null, g = e.get("locale") ?? "en_us", b = Number(e.get("start") ?? 0);
-          return (0, f.jsx)(l.ResizeProvider, {
-            children: (0, f.jsx)(i.GtmProvider, {
-              children: (0, f.jsx)(s.IntlProvider, {
+            iso: d
+          }] = (0, s.getLocale)(), o = "true" === e.get("autoplay"), n = e.get("id"), r = e.get("resolution") ?? null, g = e.get("locale") ?? "en_us", b = Number(e.get("start") ?? 0);
+          return (0, u.jsx)(l.ResizeProvider, {
+            children: (0, u.jsx)(i.GtmProvider, {
+              children: (0, u.jsx)(s.IntlProvider, {
                 locales: c,
-                lang: o,
-                children: (0, f.jsx)(u.c, {
-                  autoplay: d,
+                lang: d,
+                children: (0, u.jsx)(f.c, {
+                  autoplay: o,
                   context: "embed",
                   locale: g,
                   id: n,
@@ -48,7 +48,7 @@ _global.SENTRY_RELEASE = {
                   wrapper: !1,
                   videoChangeCallback: e => {
                     a({
-                      autoplay: d,
+                      autoplay: o,
                       id: e,
                       resolution: r
                     })
@@ -58,17 +58,17 @@ _global.SENTRY_RELEASE = {
             })
           })
         },
-        p = (0, r.withRockstarGraph)((() => (0, f.jsx)(t.BrowserRouter, {
-          children: (0, f.jsx)(b, {})
+        p = (0, r.withRockstarGraph)((() => (0, u.jsx)(t.BrowserRouter, {
+          children: (0, u.jsx)(b, {})
         })), {
           env: g
         }),
         y = window?.env?.gtmId ?? null;
-      (0, d.init)({
+      (0, o.init)({
         id: y
       });
       const w = document.createElement("main");
-      document.body.appendChild(w), (0, n.C)(w).render((0, f.jsx)(p, {}))
+      document.body.appendChild(w), (0, n.C)(w).render((0, u.jsx)(p, {}))
     }
   }
 ]);

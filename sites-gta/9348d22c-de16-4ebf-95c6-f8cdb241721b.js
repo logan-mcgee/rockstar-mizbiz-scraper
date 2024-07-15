@@ -32,8 +32,8 @@ _global.SENTRY_RELEASE = {
       var _ = a(42836),
         g = a(67356),
         u = a(6960),
-        b = a(67840),
-        f = a(73344),
+        f = a(67840),
+        b = a(73344),
         k = a(51664),
         h = a(36960),
         p = a.n(h),
@@ -66,7 +66,7 @@ _global.SENTRY_RELEASE = {
       var j = a(19e3),
         E = a(24588);
       const T = "rockstargames-sites-gtaa799fab6998f229f5b8c00d05b335595";
-      g.gsap.registerPlugin(f.W, u.m, b.M);
+      g.gsap.registerPlugin(b.W, u.m, f.M);
       const L = () => {
           const {
             loading: e,
@@ -84,8 +84,8 @@ _global.SENTRY_RELEASE = {
           } = (0, c.c)(), m = (0, s.useBase)();
           let u;
           u = "promo_banner2";
-          const b = (0, k.useRef)(),
-            f = (0, k.useRef)(null),
+          const f = (0, k.useRef)(),
+            b = (0, k.useRef)(null),
             h = (0, k.useRef)(null),
             L = (0, k.useRef)(null),
             S = (0, k.useRef)(null),
@@ -108,10 +108,10 @@ _global.SENTRY_RELEASE = {
           }), []), (0, k.useEffect)((() => {
             A?.bannerTimeline && (M ? V ? A.bannerTimeline.progress(1) : A.bannerTimeline.play() : M || V || A.bannerTimeline.reverse())
           }), [M, A?.bannerTimeline]), (0, k.useLayoutEffect)((() => {
-            b?.current?.invalidate()
+            f?.current?.invalidate()
           }), [a, o]), (0, k.useLayoutEffect)((() => {
             const e = g.gsap.context((() => {
-              A?.bannerTimeline?.progress(0).kill(), D && (b.current = g.gsap.timeline({
+              A?.bannerTimeline?.progress(0).kill(), D && (f.current = g.gsap.timeline({
                 paused: !0,
                 defaults: {
                   duration: y.Sg.takeover,
@@ -146,7 +146,7 @@ _global.SENTRY_RELEASE = {
                 autoAlpha: 0
               }, {
                 autoAlpha: 1
-              }, "<"), C("bannerTimeline", b?.current))
+              }, "<"), C("bannerTimeline", f?.current))
             }));
             return () => e.revert()
           }), [D]), D ? (0, v.jsx)(p(), {
@@ -194,7 +194,7 @@ _global.SENTRY_RELEASE = {
                         }), l?.site === c.U.socialClub ? window.location.href = `https://${d.www}.rockstargames.com/VI` : window.location.href = `${m}VI`
                       }
                     }), (0, v.jsx)(j.c, {
-                      closeRef: f,
+                      closeRef: b,
                       onClick: () => {
                         B(!1), r({
                           key: y.sn,
@@ -204,7 +204,7 @@ _global.SENTRY_RELEASE = {
                           duration: y.Sg.playVideo.cta,
                           ease: y.EB.playVideo.cta
                         }), A.bannerTimeline.reverse(), A.bannerTimeline.eventCallback("onReverseComplete", (() => {
-                          b.current && A.playVideoTimeline && A.playVideoTimeline.progress(0).pause(), H()
+                          f.current && A.playVideoTimeline && A.playVideoTimeline.progress(0).pause(), H()
                         })), n({
                           event: "takeover_close",
                           element_placement: u

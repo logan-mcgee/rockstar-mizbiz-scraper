@@ -1,8 +1,8 @@
 ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "b3e4de3d-7d2b-4002-903d-1c9bdc69d756", e._sentryDebugIdIdentifier = "sentry-dbid-b3e4de3d-7d2b-4002-903d-1c9bdc69d756")
+      t = (new Error).stack;
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "b3e4de3d-7d2b-4002-903d-1c9bdc69d756", e._sentryDebugIdIdentifier = "sentry-dbid-b3e4de3d-7d2b-4002-903d-1c9bdc69d756")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -16,9 +16,9 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_red_dead_redemption_2 = self.webpackChunk_rockstargames_sites_red_dead_redemption_2 || []).push([
   [452, 240, 832], {
-    99576: (e, a, t) => {
+    99576: (e, t, a) => {
       "use strict";
-      var s = t(51664),
+      var s = a(51664),
         r = Symbol.for("react.element"),
         d = Symbol.for("react.fragment"),
         n = Object.prototype.hasOwnProperty,
@@ -30,13 +30,13 @@ _global.SENTRY_RELEASE = {
           __source: !0
         };
 
-      function i(e, a, t) {
+      function i(e, t, a) {
         var s, d = {},
           i = null,
           c = null;
-        for (s in void 0 !== t && (i = "" + t), void 0 !== a.key && (i = "" + a.key), void 0 !== a.ref && (c = a.ref), a) n.call(a, s) && !o.hasOwnProperty(s) && (d[s] = a[s]);
+        for (s in void 0 !== a && (i = "" + a), void 0 !== t.key && (i = "" + t.key), void 0 !== t.ref && (c = t.ref), t) n.call(t, s) && !o.hasOwnProperty(s) && (d[s] = t[s]);
         if (e && e.defaultProps)
-          for (s in a = e.defaultProps) void 0 === d[s] && (d[s] = a[s]);
+          for (s in t = e.defaultProps) void 0 === d[s] && (d[s] = t[s]);
         return {
           $$typeof: r,
           type: e,
@@ -46,53 +46,53 @@ _global.SENTRY_RELEASE = {
           _owner: l.current
         }
       }
-      a.Fragment = d, a.jsx = i, a.jsxs = i
+      t.Fragment = d, t.jsx = i, t.jsxs = i
     },
-    95240: (e, a, t) => {
+    95240: (e, t, a) => {
       "use strict";
-      e.exports = t(99576)
+      e.exports = a(99576)
     },
-    24: (e, a, t) => {
+    24: (e, t, a) => {
       "use strict";
-      t.r(a), t.d(a, {
+      a.r(t), a.d(t, {
         fbar: () => f,
         useAgegated: () => u
       });
-      var s = t(42836),
-        r = t(45792),
-        d = t(51664),
-        n = t(5516),
-        l = t.n(n);
+      var s = a(42836),
+        r = a(45792),
+        d = a(51664),
+        n = a(5516),
+        l = a.n(n);
       const o = {
         agegate: "rockstargames-sites-red-dead-redemption-2b564767f67a0f63737d816dcca714d49",
         inputs: "rockstargames-sites-red-dead-redemption-2f33bd58bdfa63206fe9444fde46261d1",
         bg: "rockstargames-sites-red-dead-redemption-2db2f50238f9208ec72ef210e47b60e3b"
       };
-      var i = t(95240);
+      var i = a(95240);
       const c = (0, r.withTranslations)((e => {
           let {
-            agegateValue: a,
-            options: t = {},
+            agegateValue: t,
+            options: a = {},
             t: s
           } = e;
           const {
             mutateLSSettings: n
           } = (0, r.useRockstarWebLSSettings)(), [c, u] = (0, d.useState)(null), f = (0, d.createRef)(), g = (0, d.createRef)(), b = (0, d.createRef)(), {
             style: p
-          } = t;
-          return !1 === a ? (0, i.jsxs)("div", {
+          } = a;
+          return !1 === t ? (0, i.jsxs)("div", {
             className: o.agegate,
             style: p,
-            children: [t?.header, (0, i.jsx)("h2", {
+            children: [a?.header, (0, i.jsx)("h2", {
               children: s("agegate_fail")
             })]
-          }) : null === a ? (0, i.jsxs)("div", {
+          }) : null === t ? (0, i.jsxs)("div", {
             className: o.agegate,
             style: p,
-            children: [t?.header, (0, i.jsx)("div", {
+            children: [a?.header, (0, i.jsx)("div", {
               className: o.bg,
-              style: t?.bgImg ? {
-                backgroundImage: `url(${t.bgImg})`
+              style: a?.bgImg ? {
+                backgroundImage: `url(${a.bgImg})`
               } : {}
             }), !1 === c ? (0, i.jsx)("h5", {
               className: o.error,
@@ -100,10 +100,10 @@ _global.SENTRY_RELEASE = {
             }) : "", (0, i.jsxs)("form", {
               onSubmit: async e => {
                 e.preventDefault();
-                const a = `${b.current.value}-${f.current.value.padStart(2,0)}-${g.current.value.padStart(2,0)}`,
-                  t = l()(a, "YYYY-MM-DD", !0).isValid();
-                if (u(t), t) {
-                  const e = l()().diff(a, "years");
+                const t = `${b.current.value}-${f.current.value.padStart(2,0)}-${g.current.value.padStart(2,0)}`,
+                  a = l()(t, "YYYY-MM-DD", !0).isValid();
+                if (u(a), a) {
+                  const e = l()().diff(t, "years");
                   n({
                     key: "agegatePass",
                     value: e >= 17
@@ -145,21 +145,21 @@ _global.SENTRY_RELEASE = {
                   children: s("SUBMIT")
                 })]
               })]
-            }), t?.footer]
+            }), a?.footer]
           }) : null
         })),
         u = () => {
           const {
             lsSettings: e
           } = (0, r.useRockstarWebLSSettings)(), {
-            data: a,
-            loading: t
+            data: t,
+            loading: a
           } = (0, s.useRockstarUser)();
           return function(s) {
             let r = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
             const d = e?.agegatePass ?? null,
-              n = a?.agegate_pass ?? d ?? null;
-            return !n && t ? null : n ? s : (0, i.jsx)(c, {
+              n = t?.agegate_pass ?? d ?? null;
+            return !n && a ? null : n ? s : (0, i.jsx)(c, {
               agegateValue: n,
               options: r
             })
@@ -168,11 +168,11 @@ _global.SENTRY_RELEASE = {
         f = 12
     },
     37740: e => {
-      function a(e) {
-        var a = new Error("Cannot find module '" + e + "'");
-        throw a.code = "MODULE_NOT_FOUND", a
+      function t(e) {
+        var t = new Error("Cannot find module '" + e + "'");
+        throw t.code = "MODULE_NOT_FOUND", t
       }
-      a.keys = () => [], a.resolve = a, a.id = 37740, e.exports = a
+      t.keys = () => [], t.resolve = t, t.id = 37740, e.exports = t
     }
   }
 ]);

@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "aa2ce2e3-cd78-4f00-96dd-254fe63e4ba4", e._sentryDebugIdIdentifier = "sentry-dbid-aa2ce2e3-cd78-4f00-96dd-254fe63e4ba4")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "9e327e0e-4894-48f8-a6a3-2cb3b3c5d8a7", e._sentryDebugIdIdentifier = "sentry-dbid-9e327e0e-4894-48f8-a6a3-2cb3b3c5d8a7")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -194,10 +194,12 @@ _global.SENTRY_RELEASE = {
         });
         var u
       }));
-      var w = a(9860),
-        v = a(41272),
-        _ = a(66572);
-      const k = {
+      h.displayName = "InfoSection";
+      const w = h;
+      var v = a(9860),
+        _ = a(41272),
+        k = a(66572);
+      const x = {
           pillBtn: "rockstargames-sites-gtaf13b9179a06214eff961cc6b79e9221c",
           selected: "rockstargames-sites-gtac6d9bc8d82f9ddcc6494b70d979b4a60",
           infoSectionFooter: "rockstargames-sites-gtaa6534d16de3de0cad30f0cc18bef18ce",
@@ -206,15 +208,15 @@ _global.SENTRY_RELEASE = {
           rating: "rockstargames-sites-gtaff1b0cadd8996e1e7c9529fe7ada9ec0",
           withoutBorder: "rockstargames-sites-gtaa747edf520af07704d6be4f93c40e226"
         },
-        x = {
+        y = {
           rating_img: "pegi_rp.png",
           rating_link: "https://pegi.info/"
         },
-        y = {
+        j = {
           rating_img: "esrb_rp.svg",
           rating_link: "https://www.esrb.org/"
         },
-        j = (0, v.createDevLocaleHook)({
+        T = (0, _.createDevLocaleHook)({
           br: {
             rating_img: "vaci_rp.png",
             rating_link: "https://www.gov.br/mj/pt-br/assuntos/seus-direitos/classificacao-1"
@@ -223,22 +225,22 @@ _global.SENTRY_RELEASE = {
             rating_img: "usk_rp.svg",
             rating_link: "http://www.usk.de"
           },
-          es: x,
-          fr: x,
-          hans: y,
-          it: x,
+          es: y,
+          fr: y,
+          hans: j,
+          it: y,
           jp: {
             rating_img: "cero_rp.png",
             rating_link: "https://www.cero.gr.jp/"
           },
-          kr: y,
-          mx: y,
-          pl: x,
-          ru: y,
-          tw: y,
-          us: y
+          kr: j,
+          mx: j,
+          pl: y,
+          ru: j,
+          tw: j,
+          us: j
         }),
-        T = (0, s.forwardRef)(((e, t) => {
+        R = (0, s.forwardRef)(((e, t) => {
           let {
             className: s = "",
             titleSlug: r = "",
@@ -250,17 +252,17 @@ _global.SENTRY_RELEASE = {
               url: "xbox.svg"
             }]
           } = e;
-          const o = (0, v.useIntl)(),
-            i = j(),
+          const o = (0, _.useIntl)(),
+            i = T(),
             c = "esrb_rp.svg" === i.rating_img ? "<p>May contain content inappropriate for children.</p>" : void 0,
             l = "esrb_rp.svg" === i.rating_img ? '<p>Visit <a href="https://esrb.org" target="_blank">esrb.org</a> for rating information.</p>' : void 0;
           return (0, g.jsxs)("div", {
-            className: [k.infoSectionFooter, s || ""].join(" "),
+            className: [x.infoSectionFooter, s || ""].join(" "),
             ref: t,
             children: [(0, g.jsx)("div", {
-              className: k.rating,
-              children: (0, g.jsx)(w.Rating, {
-                className: [k.mobileRating, k.rating, k.withoutBorder].join(" "),
+              className: x.rating,
+              children: (0, g.jsx)(v.Rating, {
+                className: [x.mobileRating, x.rating, x.withoutBorder].join(" "),
                 titleSlug: r || null,
                 img: i.rating_img,
                 descriptors: c,
@@ -268,7 +270,7 @@ _global.SENTRY_RELEASE = {
                 footer: l
               })
             }), n.length && (0, g.jsx)("div", {
-              className: [k.platforms, k.hideOnMobile].join(" "),
+              className: [x.platforms, x.hideOnMobile].join(" "),
               children: n.map((e => {
                 let {
                   name: t,
@@ -279,21 +281,21 @@ _global.SENTRY_RELEASE = {
                   alt: t
                 }, s)
               }))
-            }), (0, g.jsx)(w.A, {
+            }), (0, g.jsx)(v.A, {
               to: "/",
-              "aria-label": o.formatMessage(_.c.home_text),
+              "aria-label": o.formatMessage(k.c.home_text),
               children: (0, g.jsx)("img", {
-                className: [k.logo, k.hideOnMobile].join(" "),
+                className: [x.logo, x.hideOnMobile].join(" "),
                 src: a(70160),
-                alt: o.formatMessage(_.c.rockstar_games_logo_alt_text)
+                alt: o.formatMessage(k.c.rockstar_games_logo_alt_text)
               })
             })]
           })
         }));
-      T.displayName = "InfoSectionFooter";
-      const R = T;
-      var N = a(25428);
-      const W = {
+      R.displayName = "InfoSectionFooter";
+      const N = R;
+      var W = a(25428);
+      const S = {
         pillBtn: "rockstargames-sites-gtac338d0e08e9400269820b3c4a45b5525",
         selected: "rockstargames-sites-gtaced4661d63665e45336e2e2187753209",
         destinationPage: "rockstargames-sites-gtabc6ca598d5a617f9d5de3b64fe313f03",
@@ -306,7 +308,7 @@ _global.SENTRY_RELEASE = {
         videoDialogContent: "rockstargames-sites-gtae4a0e6055c593cb409ff99ac4d435967"
       };
       r.gsap.registerPlugin(n.W, o.m, i.M);
-      const S = () => {
+      const I = () => {
           const {
             timelines: e,
             setIsStandalone: t,
@@ -314,12 +316,12 @@ _global.SENTRY_RELEASE = {
             createYouTubePlayer: i,
             dialogPlayerRef: p,
             isModalOpen: b,
-            setIsModalOpen: w,
+            setIsModalOpen: h,
             setIsVideoPlayerActive: v,
             resetVideo: _
           } = (0, m.m_)(), {
             setStandalone: k
-          } = (0, l.useRockstarLocalState)(), x = (0, s.useRef)(), y = (0, s.useRef)(null), j = (0, s.useRef)(null), T = (0, s.useRef)(null), S = (0, s.useRef)(null), C = (0, s.useRef)(null), I = (0, s.useRef)(null), E = (0, s.useRef)(null), M = (0, s.useRef)(a), P = (0, s.useRef)(null), {
+          } = (0, l.useRockstarLocalState)(), x = (0, s.useRef)(), y = (0, s.useRef)(null), j = (0, s.useRef)(null), T = (0, s.useRef)(null), R = (0, s.useRef)(null), I = (0, s.useRef)(null), C = (0, s.useRef)(null), E = (0, s.useRef)(null), M = (0, s.useRef)(a), P = (0, s.useRef)(null), {
             loading: O,
             translation: $
           } = (0, m.A1)(), {
@@ -342,33 +344,33 @@ _global.SENTRY_RELEASE = {
             window.document.body.style.overflowY = "unset", window.document.removeEventListener("focusout", D), k(!1)
           })), []), (0, s.useEffect)((() => {
             M.current = a, x.current && x.current.paused(a)
-          }), [a]), (0, s.useEffect)((() => (C.current && (x.current = o.m.create({
-            content: C.current,
+          }), [a]), (0, s.useEffect)((() => (I.current && (x.current = o.m.create({
+            content: I.current,
             smooth: .5,
             normalizeScroll: !0
           }), x.current.paused(!0)), () => {
             x.current?.kill()
-          })), [C.current]), (0, s.useLayoutEffect)((() => {
+          })), [I.current]), (0, s.useLayoutEffect)((() => {
             const t = r.gsap.matchMedia();
             e?.introTimeline && t.add({
               isVerticalLayout: "(max-width: 1279px)",
               isHorizontalLayout: "(min-width: 1280px)"
             }, (t => (e.introTimeline.eventCallback("onComplete", (() => {
               x.current && x.current.paused(!1);
-              const {
-                isVerticalLayout: e,
-                isHorizontalLayout: a
-              } = t.conditions, s = j?.current?.heroUIRef?.current, o = j?.current?.heroImagesRefs?.current?.heroImagesRef?.current, i = n.W.isTouch ? .75 : 100, c = n.W.isTouch ? r.Expo.easeInOut : "none";
+              const e = j?.current?.heroUIRef?.current,
+                t = j?.current?.heroImagesRefs?.current?.heroImagesRef?.current,
+                a = n.W.isTouch ? .75 : 100,
+                s = n.W.isTouch ? r.Expo.easeInOut : "none";
               E.current && E.current.progress(0).kill(), E.current = r.gsap.timeline({
                 paused: !0,
                 defaults: {
-                  duration: i,
+                  duration: a,
                   force3D: !0
                 },
                 scrollTrigger: {
                   trigger: y.current,
                   toggleActions: "play none none reverse",
-                  toggleClass: `${W.active}`,
+                  toggleClass: `${S.active}`,
                   pin: !0,
                   start: n.W.isTouch ? "top +=-1" : "top top",
                   end: n.W.isTouch ? "+=50" : "+=300",
@@ -383,12 +385,12 @@ _global.SENTRY_RELEASE = {
                     ease: r.Power3.easeIn
                   },
                   onLeaveBack: () => {
-                    r.gsap.set(I?.current, {
+                    r.gsap.set(C?.current, {
                       display: "none"
                     })
                   },
                   onToggle: e => {
-                    x.current && (r.gsap.set(I?.current, {
+                    x.current && (r.gsap.set(C?.current, {
                       display: e.isActive ? "none" : "block"
                     }), -1 !== e.direction && (M.current || (x.current.paused(!0), setTimeout((() => {
                       M.current || x?.current?.paused(!1)
@@ -396,23 +398,23 @@ _global.SENTRY_RELEASE = {
                   }
                 },
                 onComplete: () => {
-                  1 === n.W.isTouch && r.gsap.set(I?.current, {
+                  1 === n.W.isTouch && r.gsap.set(C?.current, {
                     display: "block"
                   })
                 },
                 onReverseComplete: () => {
-                  1 === n.W.isTouch && r.gsap.set(I?.current, {
+                  1 === n.W.isTouch && r.gsap.set(C?.current, {
                     display: "none"
                   })
                 }
               }).set(y.current, {
-                height: () => S?.current?.clientHeight,
-                maxHeight: () => S?.current?.clientHeight
-              }).fromTo(s, {
+                height: () => R?.current?.clientHeight,
+                maxHeight: () => R?.current?.clientHeight
+              }).fromTo(e, {
                 opacity: 1
               }, {
                 opacity: 0,
-                duration: n.W.isTouch ? .4 * i : .2 * i,
+                duration: n.W.isTouch ? .4 * a : .2 * a,
                 ease: n.W.isTouch ? r.Sine.easeInOut : "sine.easeInOut",
                 immediateRender: !1
               }).fromTo(j?.current?.heroRef?.current, {
@@ -431,15 +433,15 @@ _global.SENTRY_RELEASE = {
                   const e = T?.current?.children[0]?.getBoundingClientRect();
                   return `${e?.x??0}px ${e?.y??0}px`
                 },
-                ease: n.W.isTouch ? c : "power2.easeInOut"
-              }, "<").to(o, {
+                ease: n.W.isTouch ? s : "power2.easeInOut"
+              }, "<").to(t, {
                 "--hero-image-width": n.W.isTouch ? "110%" : "105%",
                 "--hero-image-height": n.W.isTouch ? "110%" : "105%",
                 "--hero-image-offset-bottom": n.W.isTouch ? "110%" : "105%",
-                ease: n.W.isTouch ? c : "none"
-              }, "<").to(o, {
+                ease: n.W.isTouch ? s : "none"
+              }, "<").to(t, {
                 opacity: 0,
-                duration: .2 * i,
+                duration: .2 * a,
                 ease: "power2.easeInOut"
               }, "<85%").fromTo(T.current, {
                 opacity: 0,
@@ -447,11 +449,11 @@ _global.SENTRY_RELEASE = {
               }, {
                 opacity: 1,
                 pointerEvents: "auto",
-                duration: .2 * i,
+                duration: .2 * a,
                 ease: n.W.isTouch ? r.Power1.easeInOut : "power1.easeInOut"
               }, "<20%")
             }), []), () => {})))
-          }), [a, e?.introTimeline, y?.current, j?.current?.heroRef?.current, j?.current?.heroUIRef?.current, j?.current?.heroImagesRef?.current, T?.current, I?.current]), (0, s.useEffect)((() => {
+          }), [a, e?.introTimeline, y?.current, j?.current?.heroRef?.current, j?.current?.heroUIRef?.current, j?.current?.heroImagesRef?.current, T?.current, C?.current]), (0, s.useEffect)((() => {
             b && p.current && i({
               target: p,
               id: "dialog"
@@ -459,45 +461,45 @@ _global.SENTRY_RELEASE = {
           }), [p, b]), (0, g.jsxs)(g.Fragment, {
             children: [(0, g.jsx)(f, {
               showModal: b,
-              onClose: () => (w(!1), v(!1), _(), void L({
+              onClose: () => (h(!1), v(!1), _(), void L({
                 event: "takeover_close",
                 element_placement: "info_section"
               })),
               dialogRef: P,
               children: b && (0, g.jsx)("div", {
-                className: W.videoDialog,
+                className: S.videoDialog,
                 children: (0, g.jsx)("div", {
-                  className: W.videoDialogContent,
+                  className: S.videoDialogContent,
                   ref: p
                 })
               })
             }), (0, g.jsxs)("div", {
-              className: W.destinationPage,
-              ref: C,
+              className: S.destinationPage,
+              ref: I,
               children: [(0, g.jsxs)("div", {
-                className: W.destinationContainer,
+                className: S.destinationContainer,
                 ref: y,
                 children: [(0, g.jsx)(u.c, {
                   ref: j,
-                  className: W.hero,
+                  className: S.hero,
                   standalone: !0
                 }), (0, g.jsx)("div", {
-                  ref: S,
-                  className: W.infoSectionContainer,
-                  children: (0, g.jsx)(h, {
+                  ref: R,
+                  className: S.infoSectionContainer,
+                  children: (0, g.jsx)(w, {
                     blurb: O ? "" : $("d2.destDescription"),
                     buttonText: O ? "" : $("d2.playbackCTA"),
                     header: O ? "" : $("d2.destHeadline"),
-                    className: W.infoSection,
+                    className: S.infoSection,
                     ref: T
                   })
                 })]
-              }), (0, g.jsx)(N.c, {
+              }), (0, g.jsx)(W.c, {
                 showCloseButton: !0
               }), (0, g.jsxs)("div", {
-                ref: I,
-                className: W.footerContainer,
-                children: [(0, g.jsx)(R, {
+                ref: C,
+                className: S.footerContainer,
+                children: [(0, g.jsx)(N, {
                   platforms: [{
                     name: "PlayStation 5",
                     url: "playstation.svg"
@@ -512,7 +514,7 @@ _global.SENTRY_RELEASE = {
         },
         C = () => (0, g.jsx)(m._s, {
           children: (0, g.jsx)("span", {
-            children: (0, g.jsx)(S, {})
+            children: (0, g.jsx)(I, {})
           })
         })
     }

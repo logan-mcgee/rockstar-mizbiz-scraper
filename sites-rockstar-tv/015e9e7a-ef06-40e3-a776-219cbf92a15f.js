@@ -16,13 +16,13 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstar_tv = self.webpackChunk_rockstargames_sites_rockstar_tv || []).push([
   [312, 240], {
-    99576: (e, n, a) => {
+    99576: (e, n, i) => {
       "use strict";
-      var i = a(51664),
+      var a = i(51664),
         t = Symbol.for("react.element"),
         d = Symbol.for("react.fragment"),
         r = Object.prototype.hasOwnProperty,
-        s = i.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        s = a.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         l = {
           key: !0,
           ref: !0,
@@ -30,13 +30,13 @@ _global.SENTRY_RELEASE = {
           __source: !0
         };
 
-      function o(e, n, a) {
-        var i, d = {},
+      function o(e, n, i) {
+        var a, d = {},
           o = null,
           c = null;
-        for (i in void 0 !== a && (o = "" + a), void 0 !== n.key && (o = "" + n.key), void 0 !== n.ref && (c = n.ref), n) r.call(n, i) && !l.hasOwnProperty(i) && (d[i] = n[i]);
+        for (a in void 0 !== i && (o = "" + i), void 0 !== n.key && (o = "" + n.key), void 0 !== n.ref && (c = n.ref), n) r.call(n, a) && !l.hasOwnProperty(a) && (d[a] = n[a]);
         if (e && e.defaultProps)
-          for (i in n = e.defaultProps) void 0 === d[i] && (d[i] = n[i]);
+          for (a in n = e.defaultProps) void 0 === d[a] && (d[a] = n[a]);
         return {
           $$typeof: t,
           type: e,
@@ -48,26 +48,26 @@ _global.SENTRY_RELEASE = {
       }
       n.Fragment = d, n.jsx = o, n.jsxs = o
     },
-    95240: (e, n, a) => {
+    95240: (e, n, i) => {
       "use strict";
-      e.exports = a(99576)
+      e.exports = i(99576)
     },
-    68312: (e, n, a) => {
+    68312: (e, n, i) => {
       "use strict";
-      a.r(n), a.d(n, {
+      i.r(n), i.d(n, {
         default: () => y
       });
-      var i = a(9860);
+      var a = i(9860);
       const t = {
         content: "rockstargames-sites-rockstar-tvce661df9d9541ff15c96e75ad5dc0eba",
         tvLogo: "rockstargames-sites-rockstar-tvc86bed427f2c003a04fcb8f197654d47"
       };
-      var d = a(95240);
+      var d = i(95240);
       const r = () => (0, d.jsx)("header", {
         className: t.tvHeader,
         children: (0, d.jsxs)("div", {
           className: t.content,
-          children: [(0, d.jsx)(i.A, {
+          children: [(0, d.jsx)(a.A, {
             className: t.tvLogo,
             to: "./"
           }), (0, d.jsxs)("h1", {
@@ -79,8 +79,8 @@ _global.SENTRY_RELEASE = {
           })]
         })
       });
-      var s = a(98584),
-        l = a(33052);
+      var s = i(98584),
+        l = i(33052);
       const o = {
           list: "rockstargames-sites-rockstar-tvd1c3671d748a7bfaa6fe1d5896fbd28a",
           item: "rockstargames-sites-rockstar-tvd305555ee8eebb479324499004e759d1",
@@ -89,14 +89,14 @@ _global.SENTRY_RELEASE = {
         c = e => {
           let {
             current: n,
-            relativeTo: a = "./",
+            relativeTo: i = "./",
             videos: t
           } = e;
           return (0, d.jsx)("div", {
             className: o.list,
-            children: t.map((e => (0, d.jsxs)(i.A, {
+            children: t.map((e => (0, d.jsxs)(a.A, {
               className: [o.item, n === e.id ? o.active : ""].join(" "),
-              to: `${a}play?id=${e.id}`,
+              to: `${i}play?id=${e.id}`,
               children: [(0, d.jsx)("div", {
                 style: {
                   background: `url(${e.screencap}) no-repeat center/contain`,
@@ -110,8 +110,8 @@ _global.SENTRY_RELEASE = {
             }, e.id)))
           })
         };
-      var u = a(50060);
-      const m = () => {
+      var u = i(50060);
+      const f = () => {
         const {
           data: e
         } = (0, l.useQuery)(u.HomeData);
@@ -126,30 +126,30 @@ _global.SENTRY_RELEASE = {
           })
         })
       };
-      var f = a(51664),
-        v = a(45792),
-        k = a(84644),
-        g = a.n(k),
-        p = a(5164);
-      const b = p.VideoData ?? VideoData1,
+      var m = i(51664),
+        v = i(45792),
+        k = i(84644),
+        g = i.n(k),
+        b = i(5164);
+      const p = b.VideoData ?? VideoData1,
         N = () => {
           const e = (0, v.useQueryParams)(),
-            [n, a] = (0, f.useState)(null),
+            [n, i] = (0, m.useState)(null),
             {
-              data: i,
+              data: a,
               loading: t
-            } = (0, l.useQuery)(b, {
+            } = (0, l.useQuery)(p, {
               variables: {
                 id: n
               }
             });
-          if ((0, f.useEffect)((() => {
-              a(e.get("id"))
+          if ((0, m.useEffect)((() => {
+              i(e.get("id"))
             }), [e.get("id")]), t) return null;
           const {
             video: r,
             videos: s
-          } = i;
+          } = a;
           return (0, d.jsxs)("div", {
             className: "rockstargames-sites-rockstar-tvfa6015ba4b01119a15f6a483b23de950",
             children: [(0, d.jsx)(g(), {
@@ -169,7 +169,7 @@ _global.SENTRY_RELEASE = {
         h = () => {
           const e = [{
             path: "/",
-            element: (0, d.jsx)(m, {}),
+            element: (0, d.jsx)(f, {}),
             exact: !0
           }, {
             path: "/play",
@@ -190,8 +190,8 @@ _global.SENTRY_RELEASE = {
           })
         })
     },
-    50060: (e, n, a) => {
-      var i = {
+    50060: (e, n, i) => {
+      var a = {
         kind: "Document",
         definitions: [{
           kind: "OperationDefinition",
@@ -344,7 +344,7 @@ _global.SENTRY_RELEASE = {
           end: 330
         }
       };
-      i.loc.source = {
+      a.loc.source = {
         body: '#import "@rockstargames/graph-client/operations/fragments/video2-fields.graphql"\n\nquery HomeData($locale: String!, $cache: Boolean = true) {\n    videos(locale: $locale, tagId: 1000) {\n        results {\n            id\n            title\n            screencap\n            game {\n                title\n            }\n        }\n    }\n}\n',
         name: "GraphQL request",
         locationOffset: {
@@ -357,8 +357,8 @@ _global.SENTRY_RELEASE = {
       function d(e, n) {
         if ("FragmentSpread" === e.kind) n.add(e.name.value);
         else if ("VariableDefinition" === e.kind) {
-          var a = e.type;
-          "NamedType" === a.kind && n.add(a.name.value)
+          var i = e.type;
+          "NamedType" === i.kind && n.add(i.name.value)
         }
         e.selectionSet && e.selectionSet.selections.forEach((function(e) {
           d(e, n)
@@ -368,7 +368,7 @@ _global.SENTRY_RELEASE = {
           d(e, n)
         }))
       }
-      i.definitions = i.definitions.concat(a(53264).definitions.filter((function(e) {
+      a.definitions = a.definitions.concat(i(53264).definitions.filter((function(e) {
         if ("FragmentDefinition" !== e.kind) return !0;
         var n = e.name.value;
         return !t[n] && (t[n] = !0, !0)
@@ -376,26 +376,26 @@ _global.SENTRY_RELEASE = {
       var r = {};
 
       function s(e, n) {
-        for (var a = 0; a < e.definitions.length; a++) {
-          var i = e.definitions[a];
-          if (i.name && i.name.value == n) return i
+        for (var i = 0; i < e.definitions.length; i++) {
+          var a = e.definitions[i];
+          if (a.name && a.name.value == n) return a
         }
       }
-      i.definitions.forEach((function(e) {
+      a.definitions.forEach((function(e) {
         if (e.name) {
           var n = new Set;
           d(e, n), r[e.name.value] = n
         }
-      })), e.exports = i, e.exports.HomeData = function(e, n) {
-        var a = {
+      })), e.exports = a, e.exports.HomeData = function(e, n) {
+        var i = {
           kind: e.kind,
           definitions: [s(e, n)]
         };
-        e.hasOwnProperty("loc") && (a.loc = e.loc);
-        var i = r[n] || new Set,
+        e.hasOwnProperty("loc") && (i.loc = e.loc);
+        var a = r[n] || new Set,
           t = new Set,
           d = new Set;
-        for (i.forEach((function(e) {
+        for (a.forEach((function(e) {
             d.add(e)
           })); d.size > 0;) {
           var l = d;
@@ -406,13 +406,13 @@ _global.SENTRY_RELEASE = {
           }))
         }
         return t.forEach((function(n) {
-          var i = s(e, n);
-          i && a.definitions.push(i)
-        })), a
-      }(i, "HomeData")
+          var a = s(e, n);
+          a && i.definitions.push(a)
+        })), i
+      }(a, "HomeData")
     },
-    5164: (e, n, a) => {
-      var i = {
+    5164: (e, n, i) => {
+      var a = {
         kind: "Document",
         definitions: [{
           kind: "OperationDefinition",
@@ -651,7 +651,7 @@ _global.SENTRY_RELEASE = {
           end: 446
         }
       };
-      i.loc.source = {
+      a.loc.source = {
         body: '#import "@rockstargames/graph-client/operations/fragments/video2-fields.graphql"\n\nquery VideoData($locale: String!, $id: String!, $cache: Boolean = true) {\n    video(locale: $locale, id: $id) {\n        title\n        game {\n            title\n        }\n    }\n    videos(locale: $locale, tagId: 1000) {\n        results {\n            id\n            title\n            screencap\n            game {\n                title\n            }\n        }\n    }\n}\n',
         name: "GraphQL request",
         locationOffset: {
@@ -664,8 +664,8 @@ _global.SENTRY_RELEASE = {
       function d(e, n) {
         if ("FragmentSpread" === e.kind) n.add(e.name.value);
         else if ("VariableDefinition" === e.kind) {
-          var a = e.type;
-          "NamedType" === a.kind && n.add(a.name.value)
+          var i = e.type;
+          "NamedType" === i.kind && n.add(i.name.value)
         }
         e.selectionSet && e.selectionSet.selections.forEach((function(e) {
           d(e, n)
@@ -675,7 +675,7 @@ _global.SENTRY_RELEASE = {
           d(e, n)
         }))
       }
-      i.definitions = i.definitions.concat(a(53264).definitions.filter((function(e) {
+      a.definitions = a.definitions.concat(i(53264).definitions.filter((function(e) {
         if ("FragmentDefinition" !== e.kind) return !0;
         var n = e.name.value;
         return !t[n] && (t[n] = !0, !0)
@@ -683,26 +683,26 @@ _global.SENTRY_RELEASE = {
       var r = {};
 
       function s(e, n) {
-        for (var a = 0; a < e.definitions.length; a++) {
-          var i = e.definitions[a];
-          if (i.name && i.name.value == n) return i
+        for (var i = 0; i < e.definitions.length; i++) {
+          var a = e.definitions[i];
+          if (a.name && a.name.value == n) return a
         }
       }
-      i.definitions.forEach((function(e) {
+      a.definitions.forEach((function(e) {
         if (e.name) {
           var n = new Set;
           d(e, n), r[e.name.value] = n
         }
-      })), e.exports = i, e.exports.VideoData = function(e, n) {
-        var a = {
+      })), e.exports = a, e.exports.VideoData = function(e, n) {
+        var i = {
           kind: e.kind,
           definitions: [s(e, n)]
         };
-        e.hasOwnProperty("loc") && (a.loc = e.loc);
-        var i = r[n] || new Set,
+        e.hasOwnProperty("loc") && (i.loc = e.loc);
+        var a = r[n] || new Set,
           t = new Set,
           d = new Set;
-        for (i.forEach((function(e) {
+        for (a.forEach((function(e) {
             d.add(e)
           })); d.size > 0;) {
           var l = d;
@@ -713,10 +713,10 @@ _global.SENTRY_RELEASE = {
           }))
         }
         return t.forEach((function(n) {
-          var i = s(e, n);
-          i && a.definitions.push(i)
-        })), a
-      }(i, "VideoData")
+          var a = s(e, n);
+          a && i.definitions.push(a)
+        })), i
+      }(a, "VideoData")
     }
   }
 ]);
