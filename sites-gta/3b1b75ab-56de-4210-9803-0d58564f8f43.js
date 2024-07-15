@@ -19,8 +19,8 @@ _global.SENTRY_RELEASE = {
     99576: (e, t, o) => {
       var r = o(51664),
         s = Symbol.for("react.element"),
-        n = Symbol.for("react.fragment"),
-        a = Object.prototype.hasOwnProperty,
+        a = Symbol.for("react.fragment"),
+        n = Object.prototype.hasOwnProperty,
         d = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         l = {
           key: !0,
@@ -30,22 +30,22 @@ _global.SENTRY_RELEASE = {
         };
 
       function f(e, t, o) {
-        var r, n = {},
+        var r, a = {},
           f = null,
           i = null;
-        for (r in void 0 !== o && (f = "" + o), void 0 !== t.key && (f = "" + t.key), void 0 !== t.ref && (i = t.ref), t) a.call(t, r) && !l.hasOwnProperty(r) && (n[r] = t[r]);
+        for (r in void 0 !== o && (f = "" + o), void 0 !== t.key && (f = "" + t.key), void 0 !== t.ref && (i = t.ref), t) n.call(t, r) && !l.hasOwnProperty(r) && (a[r] = t[r]);
         if (e && e.defaultProps)
-          for (r in t = e.defaultProps) void 0 === n[r] && (n[r] = t[r]);
+          for (r in t = e.defaultProps) void 0 === a[r] && (a[r] = t[r]);
         return {
           $$typeof: s,
           type: e,
           key: f,
           ref: i,
-          props: n,
+          props: a,
           _owner: d.current
         }
       }
-      t.Fragment = n, t.jsx = f, t.jsxs = f
+      t.Fragment = a, t.jsx = f, t.jsxs = f
     },
     95240: (e, t, o) => {
       e.exports = o(99576)
@@ -53,7 +53,7 @@ _global.SENTRY_RELEASE = {
     53592: (e, t, o) => {
       o.d(t, {
         U: () => r,
-        c: () => n
+        c: () => a
       });
       const r = {
           www: "www",
@@ -71,7 +71,7 @@ _global.SENTRY_RELEASE = {
           },
           cookieIdentifier: "prod"
         }],
-        n = () => {
+        a = () => {
           let e;
           const {
             location: t
@@ -81,12 +81,12 @@ _global.SENTRY_RELEASE = {
               site: r,
               subDomain: s
             }, !0)
-          })) >= 0)), n = s[r >= 0 ? r : 0];
+          })) >= 0)), a = s[r >= 0 ? r : 0];
           return e || (e = {
             site: "www",
             subDomain: "local"
           }), {
-            ...n,
+            ...a,
             currentSite: e
           }
         }

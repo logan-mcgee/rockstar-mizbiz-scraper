@@ -38,16 +38,16 @@ _global.SENTRY_RELEASE = {
         n = Object.prototype,
         a = n.hasOwnProperty,
         s = n.toString,
-        f = o ? o.toStringTag : void 0;
+        l = o ? o.toStringTag : void 0;
       e.exports = function(e) {
-        var t = a.call(e, f),
-          r = e[f];
+        var t = a.call(e, l),
+          r = e[l];
         try {
-          e[f] = void 0;
+          e[l] = void 0;
           var o = !0
         } catch (e) {}
         var n = s.call(e);
-        return o && (t ? e[f] = r : delete e[f]), n
+        return o && (t ? e[l] = r : delete e[l]), n
       }
     },
     49176: e => {
@@ -86,31 +86,31 @@ _global.SENTRY_RELEASE = {
         n = Symbol.for("react.element"),
         a = Symbol.for("react.fragment"),
         s = Object.prototype.hasOwnProperty,
-        f = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        c = {
+        l = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        f = {
           key: !0,
           ref: !0,
           __self: !0,
           __source: !0
         };
 
-      function l(e, t, r) {
+      function c(e, t, r) {
         var o, a = {},
-          l = null,
+          c = null,
           i = null;
-        for (o in void 0 !== r && (l = "" + r), void 0 !== t.key && (l = "" + t.key), void 0 !== t.ref && (i = t.ref), t) s.call(t, o) && !c.hasOwnProperty(o) && (a[o] = t[o]);
+        for (o in void 0 !== r && (c = "" + r), void 0 !== t.key && (c = "" + t.key), void 0 !== t.ref && (i = t.ref), t) s.call(t, o) && !f.hasOwnProperty(o) && (a[o] = t[o]);
         if (e && e.defaultProps)
           for (o in t = e.defaultProps) void 0 === a[o] && (a[o] = t[o]);
         return {
           $$typeof: n,
           type: e,
-          key: l,
+          key: c,
           ref: i,
           props: a,
-          _owner: f.current
+          _owner: l.current
         }
       }
-      t.Fragment = a, t.jsx = l, t.jsxs = l
+      t.Fragment = a, t.jsx = c, t.jsxs = c
     },
     95240: (e, t, r) => {
       "use strict";

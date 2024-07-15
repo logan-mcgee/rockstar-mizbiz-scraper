@@ -30,15 +30,15 @@ _global.SENTRY_RELEASE = {
       t.jsx = function(e, t, a) {
         var n, i = {},
           l = null,
-          c = null;
-        for (n in void 0 !== a && (l = "" + a), void 0 !== t.key && (l = "" + t.key), void 0 !== t.ref && (c = t.ref), t) r.call(t, n) && !d.hasOwnProperty(n) && (i[n] = t[n]);
+          f = null;
+        for (n in void 0 !== a && (l = "" + a), void 0 !== t.key && (l = "" + t.key), void 0 !== t.ref && (f = t.ref), t) r.call(t, n) && !d.hasOwnProperty(n) && (i[n] = t[n]);
         if (e && e.defaultProps)
           for (n in t = e.defaultProps) void 0 === i[n] && (i[n] = t[n]);
         return {
           $$typeof: o,
           type: e,
           key: l,
-          ref: c,
+          ref: f,
           props: i,
           _owner: s.current
         }
@@ -50,7 +50,7 @@ _global.SENTRY_RELEASE = {
     442: (e, t, a) => {
       a.r(t), a.d(t, {
         TagManager: () => o(),
-        init: () => c,
+        init: () => f,
         track: () => r.c,
         withAutoRouteTracking: () => l
       });
@@ -72,7 +72,7 @@ _global.SENTRY_RELEASE = {
             ...t
           })
         })(e, t),
-        c = e => {
+        f = e => {
           let {
             id: t
           } = e;

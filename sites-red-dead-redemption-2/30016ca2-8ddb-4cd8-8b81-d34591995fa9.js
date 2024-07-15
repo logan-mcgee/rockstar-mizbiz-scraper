@@ -19,7 +19,7 @@ _global.SENTRY_RELEASE = {
     24: (e, a, t) => {
       "use strict";
       t.r(a), t.d(a, {
-        fbar: () => f,
+        fbar: () => g,
         useAgegated: () => u
       });
       var s = t(42836),
@@ -41,7 +41,7 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             mutateLSSettings: r
-          } = (0, d.useRockstarWebLSSettings)(), [c, u] = (0, n.useState)(null), f = (0, n.createRef)(), g = (0, n.createRef)(), b = (0, n.createRef)(), {
+          } = (0, d.useRockstarWebLSSettings)(), [c, u] = (0, n.useState)(null), g = (0, n.createRef)(), f = (0, n.createRef)(), b = (0, n.createRef)(), {
             style: p
           } = t;
           return !1 === a ? (0, i.jsxs)("div", {
@@ -64,7 +64,7 @@ _global.SENTRY_RELEASE = {
             }) : "", (0, i.jsxs)("form", {
               onSubmit: async e => {
                 e.preventDefault();
-                const a = `${b.current.value}-${f.current.value.padStart(2,0)}-${g.current.value.padStart(2,0)}`,
+                const a = `${b.current.value}-${g.current.value.padStart(2,0)}-${f.current.value.padStart(2,0)}`,
                   t = l()(a, "YYYY-MM-DD", !0).isValid();
                 if (u(t), t) {
                   const e = l()().diff(a, "years");
@@ -82,7 +82,7 @@ _global.SENTRY_RELEASE = {
                   htmlFor: "monthInput",
                   children: [s("Month"), (0, i.jsx)("input", {
                     id: "monthInput",
-                    ref: f,
+                    ref: g,
                     placeholder: s("MM"),
                     maxLength: 2
                   })]
@@ -90,7 +90,7 @@ _global.SENTRY_RELEASE = {
                   htmlFor: "dayInput",
                   children: [s("Day"), (0, i.jsx)("input", {
                     id: "dayInput",
-                    ref: g,
+                    ref: f,
                     placeholder: s("DD"),
                     maxLength: 2
                   })]
@@ -129,7 +129,7 @@ _global.SENTRY_RELEASE = {
             })
           }
         },
-        f = 12
+        g = 12
     },
     37740: e => {
       function a(e) {

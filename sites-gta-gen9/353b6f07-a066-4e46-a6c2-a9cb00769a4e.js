@@ -112,7 +112,7 @@ _global.SENTRY_RELEASE = {
             children: t
           })
         },
-        f = e => {
+        b = e => {
           let {
             to: a,
             children: s
@@ -124,7 +124,7 @@ _global.SENTRY_RELEASE = {
             children: s
           }) : s
         },
-        b = e => {
+        f = e => {
           let {
             item: a
           } = e;
@@ -158,13 +158,13 @@ _global.SENTRY_RELEASE = {
             children: a.map((e => (0, l.jsx)(m, {
               impressionTracking: e?.impressionTracking,
               gtm: e?.gtm,
-              children: (0, l.jsx)(f, {
+              children: (0, l.jsx)(b, {
                 to: e?.to,
                 children: (0, l.jsxs)("div", {
                   className: (0, o.classList)("rockstargames-sites-gta-gen9c6ef137c3cc0ba12d735aedb6db0cae3", e.className),
                   style: e?.style ?? {},
                   ...e?.props,
-                  children: [e?.image || e?.videoId ? (0, l.jsx)(b, {
+                  children: [e?.image || e?.videoId ? (0, l.jsx)(f, {
                     item: e
                   }) : "", e.title || e.description ? (0, l.jsx)(t.DescriptionArea, {
                     item: e,

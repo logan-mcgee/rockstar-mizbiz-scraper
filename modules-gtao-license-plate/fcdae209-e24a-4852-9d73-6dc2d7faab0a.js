@@ -25,7 +25,7 @@ _global.SENTRY_RELEASE = {
         }, n(e)
       }
       a.r(t), a.d(t, {
-        BlurStack: () => c,
+        BlurStack: () => u,
         canvasRGB: () => g,
         canvasRGBA: () => l,
         image: () => f,
@@ -67,7 +67,7 @@ _global.SENTRY_RELEASE = {
       }
 
       function i(e, t, a, n, f, d) {
-        for (var l, i = e.data, g = 2 * d + 1, s = n - 1, u = f - 1, b = d + 1, y = b * (b + 1) / 2, v = new c, p = v, x = 1; x < g; x++) p = p.next = new c, x === b && (l = p);
+        for (var l, i = e.data, g = 2 * d + 1, s = n - 1, c = f - 1, b = d + 1, y = b * (b + 1) / 2, v = new u, p = v, x = 1; x < g; x++) p = p.next = new u, x === b && (l = p);
         p.next = v;
         for (var w = null, m = null, h = 0, _ = 0, E = r[d], I = o[d], k = 0; k < f; k++) {
           p = v;
@@ -107,8 +107,8 @@ _global.SENTRY_RELEASE = {
             ie = i[_ + 3],
             ge = b * fe,
             se = b * de,
-            ce = b * le,
-            ue = b * ie,
+            ue = b * le,
+            ce = b * ie,
             be = y * fe,
             ye = y * de,
             ve = y * le,
@@ -118,12 +118,12 @@ _global.SENTRY_RELEASE = {
           for (var we = n, me = 0, he = 0, _e = 0, Ee = 0, Ie = 1; Ie <= d; Ie++) {
             _ = we + oe << 2;
             var ke = b - Ie;
-            be += (p.r = fe = i[_]) * ke, ye += (p.g = de = i[_ + 1]) * ke, ve += (p.b = le = i[_ + 2]) * ke, pe += (p.a = ie = i[_ + 3]) * ke, Ee += fe, me += de, he += le, _e += ie, p = p.next, Ie < u && (we += n)
+            be += (p.r = fe = i[_]) * ke, ye += (p.g = de = i[_ + 1]) * ke, ve += (p.b = le = i[_ + 2]) * ke, pe += (p.a = ie = i[_ + 3]) * ke, Ee += fe, me += de, he += le, _e += ie, p = p.next, Ie < c && (we += n)
           }
           _ = oe, w = v, m = l;
           for (var Ce = 0; Ce < f; Ce++) {
             var Be = _ << 2;
-            i[Be + 3] = ie = pe * E >> I, ie > 0 ? (ie = 255 / ie, i[Be] = (be * E >> I) * ie, i[Be + 1] = (ye * E >> I) * ie, i[Be + 2] = (ve * E >> I) * ie) : i[Be] = i[Be + 1] = i[Be + 2] = 0, be -= ge, ye -= se, ve -= ce, pe -= ue, ge -= w.r, se -= w.g, ce -= w.b, ue -= w.a, Be = oe + ((Be = Ce + b) < u ? Be : u) * n << 2, be += Ee += w.r = i[Be], ye += me += w.g = i[Be + 1], ve += he += w.b = i[Be + 2], pe += _e += w.a = i[Be + 3], w = w.next, ge += fe = m.r, se += de = m.g, ce += le = m.b, ue += ie = m.a, Ee -= fe, me -= de, he -= le, _e -= ie, m = m.next, _ += n
+            i[Be + 3] = ie = pe * E >> I, ie > 0 ? (ie = 255 / ie, i[Be] = (be * E >> I) * ie, i[Be + 1] = (ye * E >> I) * ie, i[Be + 2] = (ve * E >> I) * ie) : i[Be] = i[Be + 1] = i[Be + 2] = 0, be -= ge, ye -= se, ve -= ue, pe -= ce, ge -= w.r, se -= w.g, ue -= w.b, ce -= w.a, Be = oe + ((Be = Ce + b) < c ? Be : c) * n << 2, be += Ee += w.r = i[Be], ye += me += w.g = i[Be + 1], ve += he += w.b = i[Be + 2], pe += _e += w.a = i[Be + 3], w = w.next, ge += fe = m.r, se += de = m.g, ue += le = m.b, ce += ie = m.a, Ee -= fe, me -= de, he -= le, _e -= ie, m = m.next, _ += n
           }
         }
         return e
@@ -138,7 +138,7 @@ _global.SENTRY_RELEASE = {
       }
 
       function s(e, t, a, n, f, d) {
-        for (var l, i = e.data, g = 2 * d + 1, s = n - 1, u = f - 1, b = d + 1, y = b * (b + 1) / 2, v = new c, p = v, x = 1; x < g; x++) p = p.next = new c, x === b && (l = p);
+        for (var l, i = e.data, g = 2 * d + 1, s = n - 1, c = f - 1, b = d + 1, y = b * (b + 1) / 2, v = new u, p = v, x = 1; x < g; x++) p = p.next = new u, x === b && (l = p);
         p.next = v;
         for (var w, m, h = null, _ = null, E = r[d], I = o[d], k = 0, C = 0, B = 0; B < f; B++) {
           var D = i[C],
@@ -169,13 +169,13 @@ _global.SENTRY_RELEASE = {
             Z = y * O;
           p = v;
           for (var $ = 0; $ < b; $++) p.r = J, p.g = K, p.b = O, p = p.next;
-          for (var ee = 0, te = 0, ae = 0, ne = 1, re = n; ne <= d; ne++) C = re + F << 2, V += (p.r = J = i[C]) * (m = b - ne), X += (p.g = K = i[C + 1]) * m, Z += (p.b = O = i[C + 2]) * m, ee += J, te += K, ae += O, p = p.next, ne < u && (re += n);
+          for (var ee = 0, te = 0, ae = 0, ne = 1, re = n; ne <= d; ne++) C = re + F << 2, V += (p.r = J = i[C]) * (m = b - ne), X += (p.g = K = i[C + 1]) * m, Z += (p.b = O = i[C + 2]) * m, ee += J, te += K, ae += O, p = p.next, ne < c && (re += n);
           C = F, h = v, _ = l;
-          for (var oe = 0; oe < f; oe++) i[w = C << 2] = V * E >> I, i[w + 1] = X * E >> I, i[w + 2] = Z * E >> I, V -= P, X -= Q, Z -= U, P -= h.r, Q -= h.g, U -= h.b, w = F + ((w = oe + b) < u ? w : u) * n << 2, V += ee += h.r = i[w], X += te += h.g = i[w + 1], Z += ae += h.b = i[w + 2], h = h.next, P += J = _.r, Q += K = _.g, U += O = _.b, ee -= J, te -= K, ae -= O, _ = _.next, C += n
+          for (var oe = 0; oe < f; oe++) i[w = C << 2] = V * E >> I, i[w + 1] = X * E >> I, i[w + 2] = Z * E >> I, V -= P, X -= Q, Z -= U, P -= h.r, Q -= h.g, U -= h.b, w = F + ((w = oe + b) < c ? w : c) * n << 2, V += ee += h.r = i[w], X += te += h.g = i[w + 1], Z += ae += h.b = i[w + 2], h = h.next, P += J = _.r, Q += K = _.g, U += O = _.b, ee -= J, te -= K, ae -= O, _ = _.next, C += n
         }
         return e
       }
-      var c = function e() {
+      var u = function e() {
         ! function(e, t) {
           if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
         }(this, e), this.r = 0, this.g = 0, this.b = 0, this.a = 0, this.next = null

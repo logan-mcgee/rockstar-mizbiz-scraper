@@ -16,35 +16,35 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_gta_gen9 = self.webpackChunk_rockstargames_sites_gta_gen9 || []).push([
   [4296, 1916], {
-    84296: (e, n, t) => {
-      t.r(n), t.d(n, {
+    84296: (e, n, a) => {
+      a.r(n), a.d(n, {
         useGSAP: () => c
       });
-      var a = t(51664),
-        d = t(67356),
-        o = t.n(d);
-      let f = "undefined" != typeof window ? a.useLayoutEffect : a.useEffect,
-        s = e => e && !Array.isArray(e) && "object" == typeof e,
+      var t = a(51664),
+        d = a(67356),
+        o = a.n(d);
+      let s = "undefined" != typeof window ? t.useLayoutEffect : t.useEffect,
+        f = e => e && !Array.isArray(e) && "object" == typeof e,
         r = [],
         l = {},
         i = o();
       const c = function(e) {
         let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r,
-          t = l;
-        s(e) ? (t = e, e = null, n = "dependencies" in t ? t.dependencies : r) : s(n) && (t = n, n = "dependencies" in t ? t.dependencies : r);
+          a = l;
+        f(e) ? (a = e, e = null, n = "dependencies" in a ? a.dependencies : r) : f(n) && (a = n, n = "dependencies" in a ? a.dependencies : r);
         let {
           scope: d,
           revertOnUpdate: o
-        } = t, [c, u] = (0, a.useState)(!1);
+        } = a, [c, u] = (0, t.useState)(!1);
         e && "function" != typeof e && console.warn("First parameter must be a function or config object");
-        const g = i.context((() => {}), d),
-          b = () => g.revert(),
+        const b = i.context((() => {}), d),
+          g = () => b.revert(),
           y = n && n.length && !o;
-        return f((() => {
-          if (e && g.add(e, d), !y || !c) return b
-        }), n), y && f((() => (u(!0), b)), r), {
-          context: g,
-          contextSafe: e => g.add(null, e)
+        return s((() => {
+          if (e && b.add(e, d), !y || !c) return g
+        }), n), y && s((() => (u(!0), g)), r), {
+          context: b,
+          contextSafe: e => b.add(null, e)
         }
       };
       c.register = e => {

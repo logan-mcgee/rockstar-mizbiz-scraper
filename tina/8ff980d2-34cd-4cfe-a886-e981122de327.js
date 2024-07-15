@@ -46,11 +46,11 @@ _global.SENTRY_RELEASE = {
               ...n
             };
           if (d > 0) {
-            const f = a(e, d - 1, n, t);
+            const l = a(e, d - 1, n, t);
             o = {
               ...o,
               ...t(e, {
-                templates: f
+                templates: l
               })
             }
           }

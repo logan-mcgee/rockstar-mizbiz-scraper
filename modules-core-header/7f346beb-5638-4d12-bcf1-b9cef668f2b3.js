@@ -28,24 +28,24 @@ _global.SENTRY_RELEASE = {
         r = n(12652),
         l = n(95240);
       const {
-        graphEnv: f,
-        pingBearer: s
+        graphEnv: s,
+        pingBearer: f
       } = (0, a.S_)();
 
-      function c() {
+      function b() {
         const e = document.createElement("div");
         e.id = "global-nav-root", document.body.prepend(e);
         const d = (0, t.C)(e),
           n = (0, o.EB)(r.c, {
-            env: f,
+            env: s,
             token: (0, o.UT)(null),
-            tokenPing: (0, o.UT)(s),
+            tokenPing: (0, o.UT)(f),
             tokenPingExpires: (0, o.UT)(null),
             typePolicies: {}
           });
         d.render((0, l.jsx)(n, {}))
       }
-      "loading" === document.readyState ? document.addEventListener("DOMContentLoaded", c) : c()
+      "loading" === document.readyState ? document.addEventListener("DOMContentLoaded", b) : b()
     }
   }
 ]);

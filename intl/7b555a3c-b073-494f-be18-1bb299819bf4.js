@@ -309,18 +309,18 @@ _global.SENTRY_RELEASE = {
             d = e.fallbackOnEmptyString,
             y = e.onError,
             g = e.timeZone,
-            E = e.defaultRichTextElements;
+            b = e.defaultRichTextElements;
           void 0 === r && (r = {
             id: ""
           });
-          var b = r.id,
+          var E = r.id,
             v = r.defaultMessage;
-          (0, o.ON)(!!b, "[@formatjs/intl] An `id` must be provided to format a message. You can either:\n1. Configure your build toolchain with [babel-plugin-formatjs](https://formatjs.io/docs/tooling/babel-plugin)\nor [@formatjs/ts-transformer](https://formatjs.io/docs/tooling/ts-transformer) OR\n2. Configure your `eslint` config to include [eslint-plugin-formatjs](https://formatjs.io/docs/tooling/linter#enforce-id)\nto autofix this issue");
-          var T = String(b),
+          (0, o.ON)(!!E, "[@formatjs/intl] An `id` must be provided to format a message. You can either:\n1. Configure your build toolchain with [babel-plugin-formatjs](https://formatjs.io/docs/tooling/babel-plugin)\nor [@formatjs/ts-transformer](https://formatjs.io/docs/tooling/ts-transformer) OR\n2. Configure your `eslint` config to include [eslint-plugin-formatjs](https://formatjs.io/docs/tooling/linter#enforce-id)\nto autofix this issue");
+          var T = String(E),
             _ = f && Object.prototype.hasOwnProperty.call(f, T) && f[T];
           if (Array.isArray(_) && 1 === _.length && _[0].type === s._M.literal) return _[0].value;
-          if (!i && _ && "string" == typeof _ && !E) return _.replace(/'\{(.*?)\}'/gi, "{$1}");
-          if (i = (0, n.C3)((0, n.C3)({}, E), i || {}), h = c(h, g), m = c(m, g), !_) {
+          if (!i && _ && "string" == typeof _ && !b) return _.replace(/'\{(.*?)\}'/gi, "{$1}");
+          if (i = (0, n.C3)((0, n.C3)({}, b), i || {}), h = c(h, g), m = c(m, g), !_) {
             if (!1 === d && "" === _) return _;
             if ((!v || l && l.toLowerCase() !== p.toLowerCase()) && y(new a.Wq(r, l)), v) try {
               return t.getMessageFormat(v, p, m, u).format(i)
@@ -376,9 +376,9 @@ _global.SENTRY_RELEASE = {
         return []
       }
       var g = r(332),
-        E = ["numeric", "style"];
+        b = ["numeric", "style"];
 
-      function b(e, t, r, n, o) {
+      function E(e, t, r, n, o) {
         void 0 === o && (o = {}), n || (n = "second"), Intl.RelativeTimeFormat || e.onError(new g.cn('Intl.RelativeTimeFormat is not available in this environment.\nTry polyfilling it using "@formatjs/intl-relativetimeformat"\n', g.uI.MISSING_INTL_API));
         try {
           return function(e, t, r) {
@@ -388,7 +388,7 @@ _global.SENTRY_RELEASE = {
             void 0 === r && (r = {});
             var a = r.format,
               s = !!a && (0, f._u)(o, "relative", a, i) || {};
-            return t(n, (0, f.OY)(r, E, s))
+            return t(n, (0, f.OY)(r, b, s))
           }(e, t, o).format(r, n)
         } catch (t) {
           e.onError(new a.q2("Error formatting relative time.", e.locale, t))
@@ -588,7 +588,7 @@ _global.SENTRY_RELEASE = {
                   formatters: r,
                   formatNumber: d.bind(null, o, r.getNumberFormat),
                   formatNumberToParts: y.bind(null, o, r.getNumberFormat),
-                  formatRelativeTime: b.bind(null, o, r.getRelativeTimeFormat),
+                  formatRelativeTime: E.bind(null, o, r.getRelativeTimeFormat),
                   formatDate: _.bind(null, o, r.getDateTimeFormat),
                   formatDateToParts: H.bind(null, o, r.getDateTimeFormat),
                   formatTime: S.bind(null, o, r.getDateTimeFormat),
@@ -915,12 +915,12 @@ _global.SENTRY_RELEASE = {
       function(e) {
         e[e.number = 0] = "number", e[e.dateTime = 1] = "dateTime"
       }(i || (i = {}));
-      var E = /[ \xA0\u1680\u2000-\u200A\u202F\u205F\u3000]/,
-        b = /(?:[Eec]{1,6}|G{1,5}|[Qq]{1,5}|(?:[yYur]+|U{1,5})|[ML]{1,5}|d{1,2}|D{1,3}|F{1}|[abB]{1,5}|[hkHK]{1,2}|w{1,2}|W{1}|m{1,2}|s{1,2}|[zZOvVxX]{1,4})(?=([^']*'[^']*')*[^']*$)/g;
+      var b = /[ \xA0\u1680\u2000-\u200A\u202F\u205F\u3000]/,
+        E = /(?:[Eec]{1,6}|G{1,5}|[Qq]{1,5}|(?:[yYur]+|U{1,5})|[ML]{1,5}|d{1,2}|D{1,3}|F{1}|[abB]{1,5}|[hkHK]{1,2}|w{1,2}|W{1}|m{1,2}|s{1,2}|[zZOvVxX]{1,4})(?=([^']*'[^']*')*[^']*$)/g;
 
       function v(e) {
         var t = {};
-        return e.replace(b, (function(e) {
+        return e.replace(E, (function(e) {
           var r = e.length;
           switch (e[0]) {
             case "G":
@@ -1489,8 +1489,8 @@ _global.SENTRY_RELEASE = {
         var r, n = e.language;
         return "root" !== n && (r = e.maximize().region), (R[r || ""] || R[n || ""] || R["".concat(n, "-001")] || R["001"])[0]
       }
-      var M = new RegExp("^".concat(E.source, "*")),
-        w = new RegExp("".concat(E.source, "*$"));
+      var M = new RegExp("^".concat(b.source, "*")),
+        w = new RegExp("".concat(b.source, "*$"));
 
       function D(e, t) {
         return {
@@ -1823,18 +1823,18 @@ _global.SENTRY_RELEASE = {
             case "plural":
             case "selectordinal":
             case "select":
-              var E = this.clonePosition();
-              if (this.bumpSpace(), !this.bumpIf(",")) return this.error(n.EXPECT_SELECT_ARGUMENT_OPTIONS, D(E, (0, a.C3)({}, E)));
+              var b = this.clonePosition();
+              if (this.bumpSpace(), !this.bumpIf(",")) return this.error(n.EXPECT_SELECT_ARGUMENT_OPTIONS, D(b, (0, a.C3)({}, b)));
               this.bumpSpace();
-              var b = this.parseIdentifierIfPossible(),
+              var E = this.parseIdentifierIfPossible(),
                 T = 0;
-              if ("select" !== c && "offset" === b.value) {
+              if ("select" !== c && "offset" === E.value) {
                 if (!this.bumpIf(":")) return this.error(n.EXPECT_PLURAL_ARGUMENT_OFFSET_VALUE, D(this.clonePosition(), this.clonePosition()));
                 var _;
                 if (this.bumpSpace(), (_ = this.tryParseDecimalInteger(n.EXPECT_PLURAL_ARGUMENT_OFFSET_VALUE, n.INVALID_PLURAL_ARGUMENT_OFFSET_VALUE)).err) return _;
-                this.bumpSpace(), b = this.parseIdentifierIfPossible(), T = _.val
+                this.bumpSpace(), E = this.parseIdentifierIfPossible(), T = _.val
               }
-              var S, A = this.tryParsePluralOrSelectOptions(e, c, t, b);
+              var S, A = this.tryParsePluralOrSelectOptions(e, c, t, E);
               if (A.err) return A;
               if ((S = this.tryParseArgumentClose(s)).err) return S;
               var H = D(s, this.clonePosition());
@@ -2114,9 +2114,9 @@ _global.SENTRY_RELEASE = {
           for (var s = u(t), d = u(r), y = 0; y < a.length; ++y) {
             var g = a[y];
             if (!(i[g] || n && n[g] || d && d[g] || s && s[g])) {
-              var E = f(r, g);
+              var b = f(r, g);
               try {
-                l(t, g, E)
+                l(t, g, b)
               } catch (e) {}
             }
           }
@@ -2361,26 +2361,26 @@ _global.SENTRY_RELEASE = {
               value: g
             });
             else if ((0, o.Ml)(d)) {
-              var E = "string" == typeof d.style ? u.date[d.style] : (0, o.iO)(d.style) ? d.style.parsedOptions : void 0;
+              var b = "string" == typeof d.style ? u.date[d.style] : (0, o.iO)(d.style) ? d.style.parsedOptions : void 0;
               f.push({
                 type: n.literal,
-                value: r.getDateTimeFormat(t, E).format(g)
+                value: r.getDateTimeFormat(t, b).format(g)
               })
-            } else if ((0, o.ue)(d)) E = "string" == typeof d.style ? u.time[d.style] : (0, o.iO)(d.style) ? d.style.parsedOptions : u.time.medium, f.push({
+            } else if ((0, o.ue)(d)) b = "string" == typeof d.style ? u.time[d.style] : (0, o.iO)(d.style) ? d.style.parsedOptions : u.time.medium, f.push({
               type: n.literal,
-              value: r.getDateTimeFormat(t, E).format(g)
+              value: r.getDateTimeFormat(t, b).format(g)
             });
-            else if ((0, o.Mp)(d))(E = "string" == typeof d.style ? u.number[d.style] : (0, o.fX)(d.style) ? d.style.parsedOptions : void 0) && E.scale && (g *= E.scale || 1), f.push({
+            else if ((0, o.Mp)(d))(b = "string" == typeof d.style ? u.number[d.style] : (0, o.fX)(d.style) ? d.style.parsedOptions : void 0) && b.scale && (g *= b.scale || 1), f.push({
               type: n.literal,
-              value: r.getNumberFormat(t, E).format(g)
+              value: r.getNumberFormat(t, b).format(g)
             });
             else {
               if ((0, o.AX)(d)) {
-                var b = d.children,
+                var E = d.children,
                   v = d.value,
                   T = l[v];
                 if (!a(T)) throw new i.c3(v, "function", h);
-                var _ = T(s(b, t, r, u, l, c).map((function(e) {
+                var _ = T(s(E, t, r, u, l, c).map((function(e) {
                   return e.value
                 })));
                 Array.isArray(_) || (_ = [_]), f.push.apply(f, _.map((function(e) {
@@ -2434,8 +2434,8 @@ _global.SENTRY_RELEASE = {
         d = r ? Symbol.for("react.memo") : 60115,
         y = r ? Symbol.for("react.lazy") : 60116,
         g = r ? Symbol.for("react.block") : 60121,
-        E = r ? Symbol.for("react.fundamental") : 60117,
-        b = r ? Symbol.for("react.responder") : 60118,
+        b = r ? Symbol.for("react.fundamental") : 60117,
+        E = r ? Symbol.for("react.responder") : 60118,
         v = r ? Symbol.for("react.scope") : 60119;
 
       function T(e) {
@@ -2497,7 +2497,7 @@ _global.SENTRY_RELEASE = {
       }, t.isSuspense = function(e) {
         return T(e) === p
       }, t.isValidElementType = function(e) {
-        return "string" == typeof e || "function" == typeof e || e === i || e === h || e === s || e === a || e === p || e === m || "object" == typeof e && null !== e && (e.$$typeof === y || e.$$typeof === d || e.$$typeof === u || e.$$typeof === l || e.$$typeof === f || e.$$typeof === E || e.$$typeof === b || e.$$typeof === v || e.$$typeof === g)
+        return "string" == typeof e || "function" == typeof e || e === i || e === h || e === s || e === a || e === p || e === m || "object" == typeof e && null !== e && (e.$$typeof === y || e.$$typeof === d || e.$$typeof === u || e.$$typeof === l || e.$$typeof === f || e.$$typeof === b || e.$$typeof === E || e.$$typeof === v || e.$$typeof === g)
       }, t.typeOf = T
     },
     400: (e, t, r) => {
@@ -2559,9 +2559,9 @@ _global.SENTRY_RELEASE = {
         this.props = e, this.context = t, this.refs = y, this.updater = r || m
       }
 
-      function E() {}
+      function b() {}
 
-      function b(e, t, r) {
+      function E(e, t, r) {
         this.props = e, this.context = t, this.refs = y, this.updater = r || m
       }
       g.prototype.isReactComponent = {}, g.prototype.setState = function(e, t) {
@@ -2569,9 +2569,9 @@ _global.SENTRY_RELEASE = {
         this.updater.enqueueSetState(this, e, t, "setState")
       }, g.prototype.forceUpdate = function(e) {
         this.updater.enqueueForceUpdate(this, e, "forceUpdate")
-      }, E.prototype = g.prototype;
-      var v = b.prototype = new E;
-      v.constructor = b, d(v, g.prototype), v.isPureReactComponent = !0;
+      }, b.prototype = g.prototype;
+      var v = E.prototype = new b;
+      v.constructor = E, d(v, g.prototype), v.isPureReactComponent = !0;
       var T = Array.isArray,
         _ = Object.prototype.hasOwnProperty,
         S = {
@@ -2720,7 +2720,7 @@ _global.SENTRY_RELEASE = {
           if (!C(e)) throw Error("React.Children.only expected to receive a single React element child.");
           return e
         }
-      }, t.Component = g, t.Fragment = o, t.Profiler = a, t.PureComponent = b, t.StrictMode = i, t.Suspense = c, t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = M, t.cloneElement = function(e, t, n) {
+      }, t.Component = g, t.Fragment = o, t.Profiler = a, t.PureComponent = E, t.StrictMode = i, t.Suspense = c, t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = M, t.cloneElement = function(e, t, n) {
         if (null == e) throw Error("React.cloneElement(...): The argument must be a React element, but you passed " + e + ".");
         var o = d({}, e.props),
           i = e.key,

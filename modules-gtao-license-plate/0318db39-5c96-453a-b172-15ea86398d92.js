@@ -38,7 +38,7 @@ _global.SENTRY_RELEASE = {
         inferTo: () => Tt,
         interpolate: () => is,
         to: () => rs,
-        update: () => os,
+        update: () => as,
         useChain: () => Dt,
         useInView: () => Hn,
         useIsomorphicLayoutEffect: () => it,
@@ -68,19 +68,19 @@ _global.SENTRY_RELEASE = {
         to: () => R,
         willAdvance: () => T
       });
-      var o = k(),
-        a = e => v(e, o),
+      var a = k(),
+        o = e => v(e, a),
         u = k();
-      a.write = e => v(e, u);
+      o.write = e => v(e, u);
       var c = k();
-      a.onStart = e => v(e, c);
+      o.onStart = e => v(e, c);
       var l = k();
-      a.onFrame = e => v(e, l);
+      o.onFrame = e => v(e, l);
       var d = k();
-      a.onFinish = e => v(e, d);
+      o.onFinish = e => v(e, d);
       var h = [];
-      a.setTimeout = (e, t) => {
-        const n = a.now() + t,
+      o.setTimeout = (e, t) => {
+        const n = o.now() + t,
           s = () => {
             const e = h.findIndex((e => e.cancel == s));
             ~e && h.splice(e, 1), g -= ~e ? 1 : 0
@@ -93,11 +93,11 @@ _global.SENTRY_RELEASE = {
         return h.splice(p(n), 0, r), g += 1, w(), r
       };
       var p = e => ~(~h.findIndex((t => t.time > e)) || ~h.length);
-      a.cancel = e => {
-        c.delete(e), l.delete(e), d.delete(e), o.delete(e), u.delete(e)
-      }, a.sync = e => {
-        y = !0, a.batchedUpdates(e), y = !1
-      }, a.throttle = e => {
+      o.cancel = e => {
+        c.delete(e), l.delete(e), d.delete(e), a.delete(e), u.delete(e)
+      }, o.sync = e => {
+        y = !0, o.batchedUpdates(e), y = !1
+      }, o.throttle = e => {
         let t;
 
         function n() {
@@ -109,15 +109,15 @@ _global.SENTRY_RELEASE = {
         }
 
         function s(...e) {
-          t = e, a.onStart(n)
+          t = e, o.onStart(n)
         }
         return s.handler = e, s.cancel = () => {
           c.delete(n), t = null
         }, s
       };
       var f = "undefined" != typeof window ? window.requestAnimationFrame : () => {};
-      a.use = e => f = e, a.now = "undefined" != typeof performance ? () => performance.now() : Date.now, a.batchedUpdates = e => e(), a.catch = console.error, a.frameLoop = "always", a.advance = () => {
-        "demand" !== a.frameLoop ? console.warn("Cannot call the manual advancement of rafz whilst frameLoop is not set as demand") : _()
+      o.use = e => f = e, o.now = "undefined" != typeof performance ? () => performance.now() : Date.now, o.batchedUpdates = e => e(), o.catch = console.error, o.frameLoop = "always", o.advance = () => {
+        "demand" !== o.frameLoop ? console.warn("Cannot call the manual advancement of rafz whilst frameLoop is not set as demand") : _()
       };
       var m = -1,
         g = 0,
@@ -128,18 +128,18 @@ _global.SENTRY_RELEASE = {
       }
 
       function w() {
-        m < 0 && (m = 0, "demand" !== a.frameLoop && f(b))
+        m < 0 && (m = 0, "demand" !== o.frameLoop && f(b))
       }
 
       function b() {
-        ~m && (f(b), a.batchedUpdates(_))
+        ~m && (f(b), o.batchedUpdates(_))
       }
 
       function _() {
         const e = m;
-        m = a.now();
+        m = o.now();
         const t = p(m);
-        t && (x(h.splice(0, t), (e => e.handler())), g -= t), g ? (c.flush(), o.flush(e ? Math.min(64, m - e) : 16.667), l.flush(), u.flush(), d.flush()) : m = -1
+        t && (x(h.splice(0, t), (e => e.handler())), g -= t), g ? (c.flush(), a.flush(e ? Math.min(64, m - e) : 16.667), l.flush(), u.flush(), d.flush()) : m = -1
       }
 
       function k() {
@@ -161,7 +161,7 @@ _global.SENTRY_RELEASE = {
           try {
             t(e)
           } catch (e) {
-            a.catch(e)
+            o.catch(e)
           }
         }))
       }
@@ -207,7 +207,7 @@ _global.SENTRY_RELEASE = {
         z = !1,
         T = M,
         $ = e => {
-          e.to && (R = e.to), e.now && (a.now = e.now), void 0 !== e.colors && (q = e.colors), null != e.skipAnimation && (z = e.skipAnimation), e.createStringInterpolator && (C = e.createStringInterpolator), e.requestAnimationFrame && a.use(e.requestAnimationFrame), e.batchedUpdates && (a.batchedUpdates = e.batchedUpdates), e.willAdvance && (T = e.willAdvance), e.frameLoop && (a.frameLoop = e.frameLoop)
+          e.to && (R = e.to), e.now && (o.now = e.now), void 0 !== e.colors && (q = e.colors), null != e.skipAnimation && (z = e.skipAnimation), e.createStringInterpolator && (C = e.createStringInterpolator), e.requestAnimationFrame && o.use(e.requestAnimationFrame), e.batchedUpdates && (o.batchedUpdates = e.batchedUpdates), e.willAdvance && (T = e.willAdvance), e.frameLoop && (o.frameLoop = e.frameLoop)
         },
         F = new Set,
         L = [],
@@ -218,11 +218,11 @@ _global.SENTRY_RELEASE = {
             return !F.size && !L.length
           },
           start(e) {
-            N > e.priority ? (F.add(e), a.onStart(U)) : (B(e), a(G))
+            N > e.priority ? (F.add(e), o.onStart(U)) : (B(e), o(G))
           },
           advance: G,
           sort(e) {
-            if (N) a.onFrame((() => D.sort(e)));
+            if (N) o.onFrame((() => D.sort(e)));
             else {
               const t = L.indexOf(e);
               ~t && (L.splice(t, 1), W(e))
@@ -234,7 +234,7 @@ _global.SENTRY_RELEASE = {
         };
 
       function U() {
-        F.forEach(B), F.clear(), a(G)
+        F.forEach(B), F.clear(), o(G)
       }
 
       function B(e) {
@@ -275,16 +275,16 @@ _global.SENTRY_RELEASE = {
         return n < 0 && (n += 1), n > 1 && (n -= 1), n < 1 / 6 ? e + 6 * (t - e) * n : n < .5 ? t : n < 2 / 3 ? e + (t - e) * (2 / 3 - n) * 6 : e
       }
 
-      function oe(e, t, n) {
+      function ae(e, t, n) {
         const s = n < .5 ? n * (1 + t) : n + t - n * t,
           r = 2 * n - s,
           i = ie(r, s, e + 1 / 3),
-          o = ie(r, s, e),
-          a = ie(r, s, e - 1 / 3);
-        return Math.round(255 * i) << 24 | Math.round(255 * o) << 16 | Math.round(255 * a) << 8
+          a = ie(r, s, e),
+          o = ie(r, s, e - 1 / 3);
+        return Math.round(255 * i) << 24 | Math.round(255 * a) << 16 | Math.round(255 * o) << 8
       }
 
-      function ae(e) {
+      function oe(e) {
         const t = parseInt(e, 10);
         return t < 0 ? 0 : t > 255 ? 255 : t
       }
@@ -306,7 +306,7 @@ _global.SENTRY_RELEASE = {
       function de(e) {
         let t = function(e) {
           let t;
-          return "number" == typeof e ? e >>> 0 === e && e >= 0 && e <= 4294967295 ? e : null : (t = se.exec(e)) ? parseInt(t[1] + "ff", 16) >>> 0 : q && void 0 !== q[e] ? q[e] : (t = Z.exec(e)) ? (ae(t[1]) << 24 | ae(t[2]) << 16 | ae(t[3]) << 8 | 255) >>> 0 : (t = J.exec(e)) ? (ae(t[1]) << 24 | ae(t[2]) << 16 | ae(t[3]) << 8 | ce(t[4])) >>> 0 : (t = te.exec(e)) ? parseInt(t[1] + t[1] + t[2] + t[2] + t[3] + t[3] + "ff", 16) >>> 0 : (t = re.exec(e)) ? parseInt(t[1], 16) >>> 0 : (t = ne.exec(e)) ? parseInt(t[1] + t[1] + t[2] + t[2] + t[3] + t[3] + t[4] + t[4], 16) >>> 0 : (t = K.exec(e)) ? (255 | oe(ue(t[1]), le(t[2]), le(t[3]))) >>> 0 : (t = ee.exec(e)) ? (oe(ue(t[1]), le(t[2]), le(t[3])) | ce(t[4])) >>> 0 : null
+          return "number" == typeof e ? e >>> 0 === e && e >= 0 && e <= 4294967295 ? e : null : (t = se.exec(e)) ? parseInt(t[1] + "ff", 16) >>> 0 : q && void 0 !== q[e] ? q[e] : (t = Z.exec(e)) ? (oe(t[1]) << 24 | oe(t[2]) << 16 | oe(t[3]) << 8 | 255) >>> 0 : (t = J.exec(e)) ? (oe(t[1]) << 24 | oe(t[2]) << 16 | oe(t[3]) << 8 | ce(t[4])) >>> 0 : (t = te.exec(e)) ? parseInt(t[1] + t[1] + t[2] + t[2] + t[3] + t[3] + "ff", 16) >>> 0 : (t = re.exec(e)) ? parseInt(t[1], 16) >>> 0 : (t = ne.exec(e)) ? parseInt(t[1] + t[1] + t[2] + t[2] + t[3] + t[3] + t[4] + t[4], 16) >>> 0 : (t = K.exec(e)) ? (255 | ae(ue(t[1]), le(t[2]), le(t[3]))) >>> 0 : (t = ee.exec(e)) ? (ae(ue(t[1]), le(t[2]), le(t[3])) | ce(t[4])) >>> 0 : null
         }(e);
         return null === t ? e : (t = t || 0, `rgba(${(4278190080&t)>>>24}, ${(16711680&t)>>>16}, ${(65280&t)>>>8}, ${(255&t)/255})`)
       }
@@ -321,26 +321,26 @@ _global.SENTRY_RELEASE = {
           const s = e,
             r = s.output,
             i = s.range || [0, 1],
-            o = s.extrapolateLeft || s.extrapolate || "extend",
-            a = s.extrapolateRight || s.extrapolate || "extend",
+            a = s.extrapolateLeft || s.extrapolate || "extend",
+            o = s.extrapolateRight || s.extrapolate || "extend",
             u = s.easing || (e => e);
           return e => {
             const t = function(e, t) {
               for (var n = 1; n < t.length - 1 && !(t[n] >= e); ++n);
               return n - 1
             }(e, i);
-            return function(e, t, n, s, r, i, o, a, u) {
+            return function(e, t, n, s, r, i, a, o, u) {
               let c = u ? u(e) : e;
               if (c < t) {
-                if ("identity" === o) return c;
-                "clamp" === o && (c = t)
+                if ("identity" === a) return c;
+                "clamp" === a && (c = t)
               }
               if (c > n) {
-                if ("identity" === a) return c;
-                "clamp" === a && (c = n)
+                if ("identity" === o) return c;
+                "clamp" === o && (c = n)
               }
               return s === r ? s : t === n ? e <= t ? s : r : (t === -1 / 0 ? c = -c : n === 1 / 0 ? c -= t : c = (c - t) / (n - t), c = i(c), s === -1 / 0 ? c = -c : r === 1 / 0 ? c += s : c = c * (r - s) + s, c)
-            }(e, i[t], i[t + 1], r[t], r[t + 1], u, o, a, s.map)
+            }(e, i[t], i[t + 1], r[t], r[t + 1], u, a, o, s.map)
           }
         },
         pe = 1.70158,
@@ -561,16 +561,16 @@ _global.SENTRY_RELEASE = {
         st = new WeakMap,
         rt = e => e === document.documentElement ? window : e,
         it = j() ? s.useEffect : s.useLayoutEffect,
-        ot = () => {
+        at = () => {
           const e = (0, s.useRef)(!1);
           return it((() => (e.current = !0, () => {
             e.current = !1
           })), []), e
         };
 
-      function at() {
+      function ot() {
         const e = (0, s.useState)()[1],
-          t = ot();
+          t = at();
         return () => {
           t.current && e(Math.random())
         }
@@ -728,9 +728,9 @@ _global.SENTRY_RELEASE = {
       var Mt = (e, t) => {
           const n = !P.fun(e) || e.prototype && e.prototype.isReactComponent;
           return (0, s.forwardRef)(((r, i) => {
-            const o = (0, s.useRef)(null),
+            const a = (0, s.useRef)(null),
               u = n && (0, s.useCallback)((e => {
-                o.current = function(e, t) {
+                a.current = function(e, t) {
                   return e && (P.fun(e) ? e(t) : e.current = t), t
                 }(i, e)
               }), [i]),
@@ -741,15 +741,15 @@ _global.SENTRY_RELEASE = {
                   style: t.createAnimatedStyle(e.style)
                 }), e = new bt(e), wt.dependencies = null, [e, n]
               }(r, t),
-              d = at(),
+              d = ot(),
               h = () => {
-                const e = o.current;
+                const e = a.current;
                 n && !e || !1 === (!!e && t.applyAnimatedValues(e, c.getValue(!0))) && d()
               },
               p = new Pt(h, l),
               f = (0, s.useRef)();
             it((() => (f.current = p, S(l, (e => Ae(e, p))), () => {
-              f.current && (S(f.current.deps, (e => Ee(e, f.current))), a.cancel(f.current.update))
+              f.current && (S(f.current.deps, (e => Ee(e, f.current))), o.cancel(f.current.update))
             }))), (0, s.useEffect)(h, []), ut((() => () => {
               const e = f.current;
               S(e.deps, (t => Ee(t, e)))
@@ -766,7 +766,7 @@ _global.SENTRY_RELEASE = {
             this.update = e, this.deps = t
           }
           eventObserved(e) {
-            "change" == e.type && a.write(this.update)
+            "change" == e.type && o.write(this.update)
           }
         },
         It = Symbol.for("AnimatedComponent"),
@@ -876,11 +876,11 @@ _global.SENTRY_RELEASE = {
             S(e, ((e, r) => {
               const i = e.current;
               if (i.length) {
-                let o = n * t[r];
-                isNaN(o) ? o = s : s = o, S(i, (e => {
+                let a = n * t[r];
+                isNaN(a) ? a = s : s = a, S(i, (e => {
                   S(e.queue, (e => {
                     const t = e.delay;
-                    e.delay = e => o + Et(t || 0, e)
+                    e.delay = e => a + Et(t || 0, e)
                   }))
                 })), e.start()
               }
@@ -957,7 +957,7 @@ _global.SENTRY_RELEASE = {
         props: n,
         defaultProps: s,
         state: r,
-        actions: o
+        actions: a
       }) {
         return new Promise(((u, c) => {
           let l, d, h = Ot(n.cancel ?? s?.cancel, t);
@@ -965,21 +965,21 @@ _global.SENTRY_RELEASE = {
           else {
             P.und(n.pause) || (r.paused = Ot(n.pause, t));
             let e = s?.pause;
-            !0 !== e && (e = r.paused || Ot(e, t)), l = Et(n.delay || 0, t), e ? (r.resumeQueue.add(f), o.pause()) : (o.resume(), f())
+            !0 !== e && (e = r.paused || Ot(e, t)), l = Et(n.delay || 0, t), e ? (r.resumeQueue.add(f), a.pause()) : (a.resume(), f())
           }
 
           function p() {
-            r.resumeQueue.add(f), r.timeouts.delete(d), d.cancel(), l = d.time - a.now()
+            r.resumeQueue.add(f), r.timeouts.delete(d), d.cancel(), l = d.time - o.now()
           }
 
           function f() {
-            l > 0 && !i.skipAnimation ? (r.delayed = !0, d = a.setTimeout(m, l), r.pauseQueue.add(p), r.timeouts.add(d)) : m()
+            l > 0 && !i.skipAnimation ? (r.delayed = !0, d = o.setTimeout(m, l), r.pauseQueue.add(p), r.timeouts.add(d)) : m()
           }
 
           function m() {
             r.delayed && (r.delayed = !1), r.pauseQueue.delete(p), r.timeouts.delete(d), e <= (r.cancelId || 0) && (h = !0);
             try {
-              o.start({
+              a.start({
                 ...n,
                 callId: e,
                 cancel: h
@@ -1011,13 +1011,13 @@ _global.SENTRY_RELEASE = {
       function tn(e, t, n, s) {
         const {
           callId: r,
-          parentId: o,
+          parentId: a,
           onRest: u
         } = t, {
           asyncTo: c,
           promise: l
         } = n;
-        return o || e !== c || t.reset ? n.promise = (async () => {
+        return a || e !== c || t.reset ? n.promise = (async () => {
           n.asyncId = r, n.asyncTo = e;
           const d = jt(t, ((e, t) => "onRest" === t ? void 0 : e));
           let h, p;
@@ -1027,11 +1027,11 @@ _global.SENTRY_RELEASE = {
               if (t) throw e.result = t, p(e), e
             },
             g = (e, t) => {
-              const o = new sn,
-                a = new rn;
+              const a = new sn,
+                o = new rn;
               return (async () => {
-                if (i.skipAnimation) throw nn(n), a.result = Kt(s, !1), p(a), a;
-                m(o);
+                if (i.skipAnimation) throw nn(n), o.result = Kt(s, !1), p(o), o;
+                m(a);
                 const u = P.obj(e) ? {
                   ...e
                 } : {
@@ -1042,7 +1042,7 @@ _global.SENTRY_RELEASE = {
                   P.und(u[t]) && (u[t] = e)
                 }));
                 const c = await s.start(u);
-                return m(o), n.paused && await new Promise((e => {
+                return m(a), n.paused && await new Promise((e => {
                   n.resumeQueue.add(e)
                 })), c
               })()
@@ -1061,9 +1061,9 @@ _global.SENTRY_RELEASE = {
               y = e.result
             }
           } finally {
-            r == n.asyncId && (n.asyncId = o, n.asyncTo = o ? c : void 0, n.promise = o ? l : void 0)
+            r == n.asyncId && (n.asyncId = a, n.asyncTo = a ? c : void 0, n.promise = a ? l : void 0)
           }
-          return P.fun(u) && a.batchedUpdates((() => {
+          return P.fun(u) && o.batchedUpdates((() => {
             u(y, s, s.item)
           })), y
         })() : l
@@ -1082,11 +1082,11 @@ _global.SENTRY_RELEASE = {
             super("SkipAnimationSignal")
           }
         },
-        on = e => e instanceof un,
-        an = 1,
+        an = e => e instanceof un,
+        on = 1,
         un = class extends Ie {
           constructor() {
-            super(...arguments), this.id = an++, this._priority = 0
+            super(...arguments), this.id = on++, this._priority = 0
           }
           get priority() {
             return this._priority
@@ -1186,52 +1186,52 @@ _global.SENTRY_RELEASE = {
             } = s;
             const {
               config: i
-            } = s, o = mt(s.to);
-            !o && ke(s.to) && (r = E(xe(s.to))), s.values.forEach(((a, u) => {
-              if (a.done) return;
-              const c = a.constructor == vt ? 1 : o ? o[u].lastPosition : r[u];
+            } = s, a = mt(s.to);
+            !a && ke(s.to) && (r = E(xe(s.to))), s.values.forEach(((o, u) => {
+              if (o.done) return;
+              const c = o.constructor == vt ? 1 : a ? a[u].lastPosition : r[u];
               let l = s.immediate,
                 d = c;
               if (!l) {
-                if (d = a.lastPosition, i.tension <= 0) return void(a.done = !0);
-                let t = a.elapsedTime += e;
+                if (d = o.lastPosition, i.tension <= 0) return void(o.done = !0);
+                let t = o.elapsedTime += e;
                 const n = s.fromValues[u],
-                  r = null != a.v0 ? a.v0 : a.v0 = P.arr(i.velocity) ? i.velocity[u] : i.velocity;
-                let o;
+                  r = null != o.v0 ? o.v0 : o.v0 = P.arr(i.velocity) ? i.velocity[u] : i.velocity;
+                let a;
                 const h = i.precision || (n == c ? .005 : Math.min(1, .001 * Math.abs(c - n)));
                 if (P.und(i.duration))
                   if (i.decay) {
                     const e = !0 === i.decay ? .998 : i.decay,
                       s = Math.exp(-(1 - e) * t);
-                    d = n + r / (1 - e) * (1 - s), l = Math.abs(a.lastPosition - d) <= h, o = r * s
+                    d = n + r / (1 - e) * (1 - s), l = Math.abs(o.lastPosition - d) <= h, a = r * s
                   } else {
-                    o = null == a.lastVelocity ? r : a.lastVelocity;
+                    a = null == o.lastVelocity ? r : o.lastVelocity;
                     const t = i.restVelocity || h / 10,
                       s = i.clamp ? 0 : i.bounce,
                       u = !P.und(s),
-                      p = n == c ? a.v0 > 0 : n < c;
+                      p = n == c ? o.v0 > 0 : n < c;
                     let f, m = !1;
                     const g = 1,
                       y = Math.ceil(e / g);
-                    for (let e = 0; e < y && (f = Math.abs(o) > t, f || (l = Math.abs(c - d) <= h, !l)); ++e) u && (m = d == c || d > c == p, m && (o = -o * s, d = c)), o += (1e-6 * -i.tension * (d - c) + .001 * -i.friction * o) / i.mass * g, d += o * g
+                    for (let e = 0; e < y && (f = Math.abs(a) > t, f || (l = Math.abs(c - d) <= h, !l)); ++e) u && (m = d == c || d > c == p, m && (a = -a * s, d = c)), a += (1e-6 * -i.tension * (d - c) + .001 * -i.friction * a) / i.mass * g, d += a * g
                   }
                 else {
                   let s = 1;
-                  i.duration > 0 && (this._memoizedDuration !== i.duration && (this._memoizedDuration = i.duration, a.durationProgress > 0 && (a.elapsedTime = i.duration * a.durationProgress, t = a.elapsedTime += e)), s = (i.progress || 0) + t / this._memoizedDuration, s = s > 1 ? 1 : s < 0 ? 0 : s, a.durationProgress = s), d = n + i.easing(s) * (c - n), o = (d - a.lastPosition) / e, l = 1 == s
+                  i.duration > 0 && (this._memoizedDuration !== i.duration && (this._memoizedDuration = i.duration, o.durationProgress > 0 && (o.elapsedTime = i.duration * o.durationProgress, t = o.elapsedTime += e)), s = (i.progress || 0) + t / this._memoizedDuration, s = s > 1 ? 1 : s < 0 ? 0 : s, o.durationProgress = s), d = n + i.easing(s) * (c - n), a = (d - o.lastPosition) / e, l = 1 == s
                 }
-                a.lastVelocity = o, Number.isNaN(d) && (console.warn("Got NaN while animating:", this), l = !0)
+                o.lastVelocity = a, Number.isNaN(d) && (console.warn("Got NaN while animating:", this), l = !0)
               }
-              o && !o[u].done && (l = !1), l ? a.done = !0 : t = !1, a.setValue(d, i.round) && (n = !0)
+              a && !a[u].done && (l = !1), l ? o.done = !0 : t = !1, o.setValue(d, i.round) && (n = !0)
             }));
-            const a = pt(this),
-              u = a.getValue();
+            const o = pt(this),
+              u = o.getValue();
             if (t) {
               const e = xe(s.to);
-              u === e && !n || i.decay ? n && i.decay && this._onChange(u) : (a.setValue(e), this._onChange(e)), this._stop()
+              u === e && !n || i.decay ? n && i.decay && this._onChange(u) : (o.setValue(e), this._onChange(e)), this._stop()
             } else n && this._onChange(u)
           }
           set(e) {
-            return a.batchedUpdates((() => {
+            return o.batchedUpdates((() => {
               this._stop(), this._focus(e), this._set(e)
             })), this
           }
@@ -1251,7 +1251,7 @@ _global.SENTRY_RELEASE = {
                 to: e,
                 config: t
               } = this.animation;
-              a.batchedUpdates((() => {
+              o.batchedUpdates((() => {
                 this._onStart(), t.decay || this._set(e, !1), this._stop()
               }))
             }
@@ -1271,7 +1271,7 @@ _global.SENTRY_RELEASE = {
             const {
               to: t
             } = this.animation;
-            return this._focus(this.get()), nn(this._state, e && this._lastCallId), a.batchedUpdates((() => this._stop(t, e))), this
+            return this._focus(this.get()), nn(this._state, e && this._lastCallId), o.batchedUpdates((() => this._stop(t, e))), this
           }
           reset() {
             this._update({
@@ -1337,7 +1337,7 @@ _global.SENTRY_RELEASE = {
             }
             const {
               key: i,
-              defaultProps: o,
+              defaultProps: a,
               animation: u
             } = this, {
               to: c,
@@ -1376,14 +1376,14 @@ _global.SENTRY_RELEASE = {
                 mass: i
               } = e;
               P.und(s) || (s < .01 && (s = .01), r < 0 && (r = 0), e.tension = Math.pow(2 * Math.PI / s, 2) * i, e.friction = 4 * Math.PI * r * i / s)
-            }(g, Et(t.config, i), t.config !== o.config ? Et(o.config, i) : void 0);
+            }(g, Et(t.config, i), t.config !== a.config ? Et(a.config, i) : void 0);
             let w = pt(this);
             if (!w || P.und(d)) return n(Kt(this, !0));
             const b = P.und(t.reset) ? r && !t.default : !P.und(h) && Ot(t.reset, i),
               _ = b ? h : this.get(),
               k = $t(d),
               x = P.num(k) || P.arr(k) || Ge(k),
-              M = !m && (!x || Ot(o.immediate || t.immediate, i));
+              M = !m && (!x || Ot(a.immediate || t.immediate, i));
             if (f) {
               const e = xt(d);
               if (e !== w.constructor) {
@@ -1404,8 +1404,8 @@ _global.SENTRY_RELEASE = {
               } = u;
               S(_n, (e => kn(this, t, e)));
               const s = Kt(this, gn(this, c));
-              V(this._pendingCalls, s), this._pendingCalls.add(n), u.changed && a.batchedUpdates((() => {
-                u.changed = !b, e?.(s, this), b ? Et(o.onRest, s) : u.onStart?.(s, this)
+              V(this._pendingCalls, s), this._pendingCalls.add(n), u.changed && o.batchedUpdates((() => {
+                u.changed = !b, e?.(s, this), b ? Et(a.onRest, s) : u.onStart?.(s, this)
               }))
             }
             b && this._set(_), m ? n(tn(t.to, t, this._state, this)) : O ? this._start() : dn(this) && !f ? this._pendingCalls.add(n) : n(Jt(_))
@@ -1419,7 +1419,7 @@ _global.SENTRY_RELEASE = {
             const {
               to: t
             } = this.animation;
-            ke(t) && (Ae(t, this), on(t) && (e = t.priority + 1)), this.priority = e
+            ke(t) && (Ae(t, this), an(t) && (e = t.priority + 1)), this.priority = e
           }
           _detach() {
             const {
@@ -1433,7 +1433,7 @@ _global.SENTRY_RELEASE = {
               const e = pt(this);
               if (!e || !I(n, e.getValue())) {
                 const s = xt(n);
-                e && e.constructor == s ? e.setValue(n) : ft(this, s.create(n)), e && a.batchedUpdates((() => {
+                e && e.constructor == s ? e.setValue(n) : ft(this, s.create(n)), e && o.batchedUpdates((() => {
                   this._onChange(n, t)
                 }))
               }
@@ -1480,15 +1480,15 @@ _global.SENTRY_RELEASE = {
         if (s) {
           const r = !0 !== s && Tt(s),
             i = (r || e).reverse,
-            o = !r || r.reset;
+            a = !r || r.reset;
           return vn({
             ...e,
             loop: t,
             default: !1,
             pause: void 0,
             to: !i || Lt(n) ? n : void 0,
-            from: o ? e.from : void 0,
-            reset: o,
+            from: a ? e.from : void 0,
+            reset: a,
             ...r
           })
         }
@@ -1605,11 +1605,11 @@ _global.SENTRY_RELEASE = {
               t.value = this.get(), e(t, this, this._item)
             })));
             const i = !s && this._started,
-              o = r || i && n.size ? this.get() : null;
+              a = r || i && n.size ? this.get() : null;
             r && t.size && O(t, (([e, t]) => {
-              t.value = o, e(t, this, this._item)
+              t.value = a, e(t, this, this._item)
             })), i && (this._started = !1, O(n, (([e, t]) => {
-              t.value = o, e(t, this, this._item)
+              t.value = a, e(t, this, this._item)
             })))
           }
           eventObserved(e) {
@@ -1618,7 +1618,7 @@ _global.SENTRY_RELEASE = {
               if ("idle" != e.type) return;
               this._active.delete(e.parent)
             }
-            a.onFrame(this._onFrame)
+            o.onFrame(this._onFrame)
           }
         };
 
@@ -1630,11 +1630,11 @@ _global.SENTRY_RELEASE = {
           keys: s,
           to: r,
           from: i,
-          loop: o,
+          loop: a,
           onRest: u,
           onResolve: c
         } = t, l = P.obj(t.default) && t.default;
-        o && (t.loop = !1), !1 === r && (t.to = null), !1 === i && (t.from = null);
+        a && (t.loop = !1), !1 === r && (t.to = null), !1 === i && (t.from = null);
         const d = P.arr(r) || P.fun(r) ? r : void 0;
         d ? (t.to = void 0, t.onRest = void 0, l && (l.onRest = void 0)) : S(Mn, (n => {
           const s = t[n];
@@ -1671,11 +1671,11 @@ _global.SENTRY_RELEASE = {
           h.resumeQueue.add(e)
         }));
         const m = Zt(e, await Promise.all(p));
-        if (o && m.finished && (!n || !m.noop)) {
-          const n = yn(t, o, r);
+        if (a && m.finished && (!n || !m.noop)) {
+          const n = yn(t, a, r);
           if (n) return Vn(e, [n]), An(e, n, !0)
         }
-        return c && a.batchedUpdates((() => c(m, e, e.item))), m
+        return c && o.batchedUpdates((() => c(m, e, e.item))), m
       }
 
       function En(e, t) {
@@ -1724,26 +1724,26 @@ _global.SENTRY_RELEASE = {
               inputs: t,
               result: e()
             }))), r = (0, s.useRef)(), i = r.current;
-            let o = i;
-            return o ? Boolean(t && o.inputs && function(e, t) {
+            let a = i;
+            return a ? Boolean(t && a.inputs && function(e, t) {
               if (e.length !== t.length) return !1;
               for (let n = 0; n < e.length; n++)
                 if (e[n] !== t[n]) return !1;
               return !0
-            }(t, o.inputs)) || (o = {
+            }(t, a.inputs)) || (a = {
               inputs: t,
               result: e()
-            }) : o = n, (0, s.useEffect)((() => {
-              r.current = o, i == n && (n.inputs = n.result = void 0)
-            }), [o]), o.result
+            }) : a = n, (0, s.useEffect)((() => {
+              r.current = a, i == n && (n.inputs = n.result = void 0)
+            }), [a]), a.result
           }((() => ({
             pause: r,
             immediate: i
           })), [r, i]);
           const {
-            Provider: o
+            Provider: a
           } = Tn;
-          return s.createElement(o, {
+          return s.createElement(a, {
             value: t
           }, e)
         },
@@ -1800,17 +1800,17 @@ _global.SENTRY_RELEASE = {
         const r = P.fun(t) && t;
         r && !n && (n = []);
         const i = (0, s.useMemo)((() => r || 3 == arguments.length ? $n() : void 0), []),
-          o = (0, s.useRef)(0),
-          a = at(),
+          a = (0, s.useRef)(0),
+          o = ot(),
           u = (0, s.useMemo)((() => ({
             ctrls: [],
             queue: [],
             flush(e, t) {
               const n = En(e, t);
-              return o.current > 0 && !u.queue.length && !Object.keys(n).some((t => !e.springs[t])) ? Sn(e, t) : new Promise((s => {
+              return a.current > 0 && !u.queue.length && !Object.keys(n).some((t => !e.springs[t])) ? Sn(e, t) : new Promise((s => {
                 On(e, n), u.queue.push((() => {
                   s(Sn(e, t))
-                })), a()
+                })), o()
               }))
             }
           })), []),
@@ -1836,7 +1836,7 @@ _global.SENTRY_RELEASE = {
           m = lt(f),
           g = f !== m && Ft(f);
         it((() => {
-          o.current++, u.ctrls = c.current;
+          a.current++, u.ctrls = c.current;
           const {
             queue: e
           } = u;
@@ -1879,13 +1879,13 @@ _global.SENTRY_RELEASE = {
         const s = P.fun(t) && t;
         s && !n && (n = []);
         let r, i = !0;
-        const o = Fn(e, ((e, n) => {
-          const o = s ? s(e, n) : t;
-          return r = o.ref, i = i && o.reverse, o
+        const a = Fn(e, ((e, n) => {
+          const a = s ? s(e, n) : t;
+          return r = a.ref, i = i && a.reverse, a
         }), n || [{}]);
         if (it((() => {
-            S(o[1].current, ((e, t) => {
-              const n = o[1].current[t + (i ? 1 : -1)];
+            S(a[1].current, ((e, t) => {
+              const n = a[1].current[t + (i ? 1 : -1)];
               Nt(e, r), e.ref ? n && e.update({
                 to: n.springs
               }) : n ? e.start({
@@ -1893,24 +1893,24 @@ _global.SENTRY_RELEASE = {
               }) : e.start()
             }))
           }), n), s || 3 == arguments.length) {
-          const e = r ?? o[1];
+          const e = r ?? a[1];
           return e._getProps = (t, n, s) => {
             const r = P.fun(t) ? t(s, n) : t;
             if (r) {
               const t = e.current[s + (r.reverse ? 1 : -1)];
               return t && (r.to = t.springs), r
             }
-          }, o
+          }, a
         }
-        return o[0]
+        return a[0]
       }
 
       function Bn(e, t, n) {
         const r = P.fun(t) && t,
           {
             reset: i,
-            sort: o,
-            trail: a = 0,
+            sort: a,
+            trail: o = 0,
             expires: u = !0,
             exitBeforeEnter: c = !1,
             onDestroyed: l,
@@ -1975,9 +1975,9 @@ _global.SENTRY_RELEASE = {
             }) : n && m.splice(++e, 0, r)
           }))
         }
-        P.fun(o) && m.sort(((e, t) => o(e.item, t.item)));
-        let _ = -a;
-        const k = at(),
+        P.fun(a) && m.sort(((e, t) => a(e.item, t.item)));
+        let _ = -o;
+        const k = ot(),
           x = jt(t),
           M = new Map,
           I = (0, s.useRef)(new Map),
@@ -1985,21 +1985,21 @@ _global.SENTRY_RELEASE = {
         S(m, ((e, n) => {
           const s = e.key,
             i = e.phase,
-            o = r ? r() : t;
+            a = r ? r() : t;
           let l, p;
-          const f = Et(o.delay || 0, s);
-          if ("mount" == i) l = o.enter, p = "enter";
+          const f = Et(a.delay || 0, s);
+          if ("mount" == i) l = a.enter, p = "enter";
           else {
             const e = v.indexOf(s) < 0;
             if ("leave" != i)
-              if (e) l = o.leave, p = "leave";
+              if (e) l = a.leave, p = "leave";
               else {
-                if (!(l = o.update)) return;
+                if (!(l = a.update)) return;
                 p = "update"
               }
             else {
               if (e) return;
-              l = o.enter, p = "enter"
+              l = a.enter, p = "enter"
             }
           }
           if (l = Et(l, e.item, n), l = P.obj(l) ? Tt(l) : {
@@ -2008,12 +2008,12 @@ _global.SENTRY_RELEASE = {
             const t = h || x.config;
             l.config = Et(t, e.item, n, p)
           }
-          _ += a;
+          _ += o;
           const m = {
             ...x,
             delay: f + _,
             ref: d,
-            immediate: o.immediate,
+            immediate: a.immediate,
             reset: !1,
             ...l
           };
@@ -2125,8 +2125,8 @@ _global.SENTRY_RELEASE = {
                 })
               }
               const r = tt.get(t);
-              return a(r), () => {
-                a.cancel(r);
+              return o(r), () => {
+                o.cancel(r);
                 const e = st.get(t);
                 if (!e) return;
                 if (e.delete(s), e.size) return;
@@ -2184,11 +2184,11 @@ _global.SENTRY_RELEASE = {
         };
 
       function Hn(e, t) {
-        const [n, r] = (0, s.useState)(!1), i = (0, s.useRef)(), o = P.fun(e) && e, a = o ? o() : {}, {
+        const [n, r] = (0, s.useState)(!1), i = (0, s.useRef)(), a = P.fun(e) && e, o = a ? a() : {}, {
           to: u = {},
           from: c = {},
           ...l
-        } = a, d = o ? t : e, [h, p] = Ln((() => ({
+        } = o, d = a ? t : e, [h, p] = Ln((() => ({
           from: c,
           ...l
         })), []);
@@ -2197,8 +2197,8 @@ _global.SENTRY_RELEASE = {
             {
               root: t,
               once: s,
-              amount: o = "any",
-              ...a
+              amount: a = "any",
+              ...o
             } = d ?? {};
           if (!e || s && n || "undefined" == typeof IntersectionObserver) return;
           const l = new WeakMap,
@@ -2215,11 +2215,11 @@ _global.SENTRY_RELEASE = {
               }))
             }), {
               root: t && t.current || void 0,
-              threshold: "number" == typeof o || Array.isArray(o) ? o : Xn[o],
-              ...a
+              threshold: "number" == typeof a || Array.isArray(a) ? a : Xn[a],
+              ...o
             });
           return h.observe(e), () => h.unobserve(e)
-        }), [d]), o ? [i, h] : [i, n]
+        }), [d]), a ? [i, h] : [i, n]
       }
 
       function Zn({
@@ -2266,12 +2266,12 @@ _global.SENTRY_RELEASE = {
         _start() {
           this.idle && !ns(this._active) && (this.idle = !1, S(mt(this), (e => {
             e.done = !1
-          })), i.skipAnimation ? (a.batchedUpdates((() => this.advance())), ss(this)) : D.start(this))
+          })), i.skipAnimation ? (o.batchedUpdates((() => this.advance())), ss(this)) : D.start(this))
         }
         _attach() {
           let e = 1;
           S(E(this.source), (t => {
-            ke(t) && Ae(t, this), on(t) && (t.idle || this._active.add(t), e = Math.max(e, t.priority + 1))
+            ke(t) && Ae(t, this), an(t) && (t.idle || this._active.add(t), e = Math.max(e, t.priority + 1))
           })), this.priority = e, this._start()
         }
         _detach() {
@@ -2280,7 +2280,7 @@ _global.SENTRY_RELEASE = {
           })), this._active.clear(), ss(this)
         }
         eventObserved(e) {
-          "change" == e.type ? e.idle ? this.advance() : (this._active.add(e.parent), this._start()) : "idle" == e.type ? this._active.delete(e.parent) : "priority" == e.type && (this.priority = E(this.source).reduce(((e, t) => Math.max(e, (on(t) ? t.priority : 0) + 1)), 0))
+          "change" == e.type ? e.idle ? this.advance() : (this._active.add(e.parent), this._start()) : "idle" == e.type ? this._active.delete(e.parent) : "priority" == e.type && (this.priority = E(this.source).reduce(((e, t) => Math.max(e, (an(t) ? t.priority : 0) + 1)), 0))
         }
       };
 
@@ -2306,8 +2306,8 @@ _global.SENTRY_RELEASE = {
         createStringInterpolator: Le,
         to: (e, t) => new es(e, t)
       });
-      var os = D.advance,
-        as = n(77364),
+      var as = D.advance,
+        os = n(77364),
         us = /^--/;
 
       function cs(e, t) {
@@ -2395,8 +2395,8 @@ _global.SENTRY_RELEASE = {
               t = !0;
             return S(this.inputs, ((n, s) => {
               const r = xe(n[0]),
-                [i, o] = this.transforms[s](P.arr(r) ? r : n.map(xe));
-              e += " " + i, t = t && o
+                [i, a] = this.transforms[s](P.arr(r) ? r : n.map(xe));
+              e += " " + i, t = t && a
             })), t ? "none" : e
           }
           observerAdded(e) {
@@ -2410,7 +2410,7 @@ _global.SENTRY_RELEASE = {
           }
         };
       i.assign({
-        batchedUpdates: as.unstable_batchedUpdates,
+        batchedUpdates: os.unstable_batchedUpdates,
         createStringInterpolator: Le,
         colors: {
           transparent: 0,
@@ -2592,8 +2592,8 @@ _global.SENTRY_RELEASE = {
                 style: s,
                 children: r,
                 scrollTop: i,
-                scrollLeft: o,
-                viewBox: a,
+                scrollLeft: a,
+                viewBox: o,
                 ...u
               } = t,
               c = Object.values(u),
@@ -2605,7 +2605,7 @@ _global.SENTRY_RELEASE = {
                 us.test(t) ? e.style.setProperty(t, n) : e.style[t] = n
               } l.forEach(((t, n) => {
               e.setAttribute(t, c[n])
-            })), void 0 !== i && (e.scrollTop = i), void 0 !== o && (e.scrollLeft = o), void 0 !== a && e.setAttribute("viewBox", a)
+            })), void 0 !== i && (e.scrollTop = i), void 0 !== a && (e.scrollLeft = a), void 0 !== o && e.setAttribute("viewBox", o)
           },
           createAnimatedStyle: e => new vs(e),
           getComponentProps: ({

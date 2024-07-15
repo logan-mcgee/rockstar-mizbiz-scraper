@@ -16,40 +16,40 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_videoplayer = self.webpackChunk_rockstargames_modules_core_videoplayer || []).push([
   [296, 916], {
-    84296: (e, n, d) => {
-      d.r(n), d.d(n, {
-        useGSAP: () => i
+    84296: (e, n, a) => {
+      a.r(n), a.d(n, {
+        useGSAP: () => c
       });
-      var t = d(51664),
-        o = d(67356),
-        a = d.n(o);
+      var t = a(51664),
+        d = a(67356),
+        o = a.n(d);
       let r = "undefined" != typeof window ? t.useLayoutEffect : t.useEffect,
         s = e => e && !Array.isArray(e) && "object" == typeof e,
         l = [],
         f = {},
-        c = a();
-      const i = function(e) {
+        i = o();
+      const c = function(e) {
         let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : l,
-          d = f;
-        s(e) ? (d = e, e = null, n = "dependencies" in d ? d.dependencies : l) : s(n) && (d = n, n = "dependencies" in d ? d.dependencies : l);
+          a = f;
+        s(e) ? (a = e, e = null, n = "dependencies" in a ? a.dependencies : l) : s(n) && (a = n, n = "dependencies" in a ? a.dependencies : l);
         let {
-          scope: o,
-          revertOnUpdate: a
-        } = d, [i, b] = (0, t.useState)(!1);
+          scope: d,
+          revertOnUpdate: o
+        } = a, [c, u] = (0, t.useState)(!1);
         e && "function" != typeof e && console.warn("First parameter must be a function or config object");
-        const u = c.context((() => {}), o),
-          y = () => u.revert(),
-          p = n && n.length && !a;
+        const b = i.context((() => {}), d),
+          y = () => b.revert(),
+          p = n && n.length && !o;
         return r((() => {
-          if (e && u.add(e, o), !p || !i) return y
-        }), n), p && r((() => (b(!0), y)), l), {
-          context: u,
-          contextSafe: e => u.add(null, e)
+          if (e && b.add(e, d), !p || !c) return y
+        }), n), p && r((() => (u(!0), y)), l), {
+          context: b,
+          contextSafe: e => b.add(null, e)
         }
       };
-      i.register = e => {
-        c = e
-      }, i.headless = !0
+      c.register = e => {
+        i = e
+      }, c.headless = !0
     }
   }
 ]);

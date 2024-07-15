@@ -22,37 +22,37 @@ _global.SENTRY_RELEASE = {
         n = Symbol.for("react.fragment"),
         o = Object.prototype.hasOwnProperty,
         d = a.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        c = {
+        l = {
           key: !0,
           ref: !0,
           __self: !0,
           __source: !0
         };
 
-      function l(e, t, r) {
+      function i(e, t, r) {
         var a, n = {},
-          l = null,
-          i = null;
-        for (a in void 0 !== r && (l = "" + r), void 0 !== t.key && (l = "" + t.key), void 0 !== t.ref && (i = t.ref), t) o.call(t, a) && !c.hasOwnProperty(a) && (n[a] = t[a]);
+          i = null,
+          c = null;
+        for (a in void 0 !== r && (i = "" + r), void 0 !== t.key && (i = "" + t.key), void 0 !== t.ref && (c = t.ref), t) o.call(t, a) && !l.hasOwnProperty(a) && (n[a] = t[a]);
         if (e && e.defaultProps)
           for (a in t = e.defaultProps) void 0 === n[a] && (n[a] = t[a]);
         return {
           $$typeof: s,
           type: e,
-          key: l,
-          ref: i,
+          key: i,
+          ref: c,
           props: n,
           _owner: d.current
         }
       }
-      t.Fragment = n, t.jsx = l, t.jsxs = l
+      t.Fragment = n, t.jsx = i, t.jsxs = i
     },
     95240: (e, t, r) => {
       e.exports = r(99576)
     },
     91312: (e, t, r) => {
       r.r(t), r.d(t, {
-        default: () => c
+        default: () => l
       });
       var a = r(9860),
         s = r(1740),
@@ -63,48 +63,48 @@ _global.SENTRY_RELEASE = {
         breadcrumbs: "rockstargames-modules-core-newswire-articled1965b8d8252ea2aaac5bde77b3bcef0"
       };
       var d = r(95240);
-      const c = (0, n.withTranslations)((e => {
+      const l = (0, n.withTranslations)((e => {
         let {
           children: t,
           intro: r,
-          image: c = {},
-          style: l = {},
-          t: i,
+          image: l = {},
+          style: i = {},
+          t: c,
           className: f = "",
           variant: u = null
         } = e, _ = {};
-        void 0 !== l.toggleInvertSeparator && (_ = {
-          "--breadcrumb-separator-filter-invert": l.toggleInvertSeparator ? "invert(0)" : "invert(1)"
+        void 0 !== i.toggleInvertSeparator && (_ = {
+          "--breadcrumb-separator-filter-invert": i.toggleInvertSeparator ? "invert(0)" : "invert(1)"
         });
-        const b = (0, n.useNewswirePost)(),
-          g = {},
-          w = g?.meta?.title ?? b?.title,
-          m = g?.meta?.subtitle ?? b?.subtitle,
+        const g = (0, n.useNewswirePost)(),
+          w = {},
+          b = w?.meta?.title ?? g?.title,
+          m = w?.meta?.subtitle ?? g?.subtitle,
           p = m ? (0, d.jsx)("h3", {
             "data-context": "newswire-subtitle",
             children: m
           }) : "",
           y = [{
-            text: i("Newswire"),
+            text: c("Newswire"),
             to: "/newswire"
           }],
           {
             src: h
-          } = (0, s.useImageParser)(c),
+          } = (0, s.useImageParser)(l),
           x = (0, d.jsxs)(d.Fragment, {
             children: [(0, d.jsx)("time", {
-              dateTime: b.created,
-              children: b.created_formatted
+              dateTime: g.created,
+              children: g.created_formatted
             }), r ? (0, d.jsx)(a.DescriptionArea, {
               item: r
             }) : "", t]
           });
-        b?.primary_tags?.length && y.push({
-          text: b.primary_tags[0].name,
-          to: `/newswire?tag_id=${b.primary_tags[0].id}`
-        }), b?.secondary_tags?.length && y.push({
-          text: b.secondary_tags[0].name,
-          to: `/newswire?tag_id=${b.secondary_tags[0].id}`
+        g?.primary_tags?.length && y.push({
+          text: g.primary_tags[0].name,
+          to: `/newswire?tag_id=${g.primary_tags[0].id}`
+        }), g?.secondary_tags?.length && y.push({
+          text: g.secondary_tags[0].name,
+          to: `/newswire?tag_id=${g.secondary_tags[0].id}`
         });
         const v = (0, d.jsx)("div", {
           className: o.breadcrumbs,
@@ -113,17 +113,17 @@ _global.SENTRY_RELEASE = {
             children: e.text
           }, e.to)))
         });
-        return h?.desktop && (l.background = `url(${h.desktop}) center/cover no-repeat`), (0, d.jsx)("div", {
+        return h?.desktop && (i.background = `url(${h.desktop}) center/cover no-repeat`), (0, d.jsx)("div", {
           className: [f, o.title].join(" "),
           style: {
-            ...l,
+            ...i,
             ..._
           },
           children: "separated" === u ? (0, d.jsxs)(d.Fragment, {
             children: [(0, d.jsxs)("header", {
               "data-context": "title",
               children: [v, (0, d.jsx)("h1", {
-                children: w
+                children: b
               })]
             }), (0, d.jsxs)("footer", {
               "data-context": "title",
@@ -133,7 +133,7 @@ _global.SENTRY_RELEASE = {
             children: [v, (0, d.jsxs)("div", {
               className: o.main,
               children: [(0, d.jsx)("h1", {
-                children: w
+                children: b
               }), p]
             }), x]
           })

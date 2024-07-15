@@ -19,14 +19,14 @@ _global.SENTRY_RELEASE = {
     24: (e, a, t) => {
       "use strict";
       t.r(a), t.d(a, {
-        fbar: () => f,
+        fbar: () => g,
         useAgegated: () => u
       });
       var s = t(42836),
         l = t(45792),
         r = t(51664),
-        d = t(5516),
-        n = t.n(d);
+        n = t(5516),
+        d = t.n(n);
       const o = {
         agegate: "rockstargames-modules-core-videoplayerb564767f67a0f63737d816dcca714d49",
         inputs: "rockstargames-modules-core-videoplayerf33bd58bdfa63206fe9444fde46261d1",
@@ -40,8 +40,8 @@ _global.SENTRY_RELEASE = {
             t: s
           } = e;
           const {
-            mutateLSSettings: d
-          } = (0, l.useRockstarWebLSSettings)(), [i, u] = (0, r.useState)(null), f = (0, r.createRef)(), g = (0, r.createRef)(), b = (0, r.createRef)(), {
+            mutateLSSettings: n
+          } = (0, l.useRockstarWebLSSettings)(), [i, u] = (0, r.useState)(null), g = (0, r.createRef)(), f = (0, r.createRef)(), b = (0, r.createRef)(), {
             style: p
           } = t;
           return !1 === a ? (0, c.jsxs)("div", {
@@ -64,11 +64,11 @@ _global.SENTRY_RELEASE = {
             }) : "", (0, c.jsxs)("form", {
               onSubmit: async e => {
                 e.preventDefault();
-                const a = `${b.current.value}-${f.current.value.padStart(2,0)}-${g.current.value.padStart(2,0)}`,
-                  t = n()(a, "YYYY-MM-DD", !0).isValid();
+                const a = `${b.current.value}-${g.current.value.padStart(2,0)}-${f.current.value.padStart(2,0)}`,
+                  t = d()(a, "YYYY-MM-DD", !0).isValid();
                 if (u(t), t) {
-                  const e = n()().diff(a, "years");
-                  d({
+                  const e = d()().diff(a, "years");
+                  n({
                     key: "agegatePass",
                     value: e >= 17
                   })
@@ -82,7 +82,7 @@ _global.SENTRY_RELEASE = {
                   htmlFor: "monthInput",
                   children: [s("Month"), (0, c.jsx)("input", {
                     id: "monthInput",
-                    ref: f,
+                    ref: g,
                     placeholder: s("MM"),
                     maxLength: 2
                   })]
@@ -90,7 +90,7 @@ _global.SENTRY_RELEASE = {
                   htmlFor: "dayInput",
                   children: [s("Day"), (0, c.jsx)("input", {
                     id: "dayInput",
-                    ref: g,
+                    ref: f,
                     placeholder: s("DD"),
                     maxLength: 2
                   })]
@@ -122,14 +122,14 @@ _global.SENTRY_RELEASE = {
           return function(s) {
             let l = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
             const r = e?.agegatePass ?? null,
-              d = a?.agegate_pass ?? r ?? null;
-            return !d && t ? null : d ? s : (0, c.jsx)(i, {
-              agegateValue: d,
+              n = a?.agegate_pass ?? r ?? null;
+            return !n && t ? null : n ? s : (0, c.jsx)(i, {
+              agegateValue: n,
               options: l
             })
           }
         },
-        f = 12
+        g = 12
     },
     37740: e => {
       function a(e) {

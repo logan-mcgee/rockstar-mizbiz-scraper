@@ -23,15 +23,15 @@ _global.SENTRY_RELEASE = {
         useRockstarWebLSSettings: () => r
       });
       var n = a(52);
-      const s = "rockstar-games-web";
-      let d;
+      const d = "rockstar-games-web";
+      let s;
       try {
-        const e = window.localStorage.getItem(s);
-        d = null !== e ? JSON.parse(e) : {}
+        const e = window.localStorage.getItem(d);
+        s = null !== e ? JSON.parse(e) : {}
       } catch (e) {
-        d = {}
+        s = {}
       }
-      const l = (0, n.makeVar)(d),
+      const l = (0, n.makeVar)(s),
         o = e => {
           let {
             key: t,
@@ -41,7 +41,7 @@ _global.SENTRY_RELEASE = {
           const n = {
             ...l() ?? {}
           };
-          return n[t] = a, null === a && delete n[t], window.localStorage.setItem(s, JSON.stringify(n)), l(n), n
+          return n[t] = a, null === a && delete n[t], window.localStorage.setItem(d, JSON.stringify(n)), l(n), n
         },
         r = () => ({
           lsSettings: (0, n.useReactiveVar)(l),

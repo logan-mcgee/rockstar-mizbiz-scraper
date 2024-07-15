@@ -21,8 +21,8 @@ _global.SENTRY_RELEASE = {
         default: () => p
       });
       var d = s(51664),
-        c = s(8828),
-        t = s(42836),
+        t = s(8828),
+        c = s(42836),
         n = s(33052),
         r = s(45792);
       const o = {
@@ -80,8 +80,8 @@ _global.SENTRY_RELEASE = {
           let {
             mutation: a,
             query: s,
-            type: c,
-            t
+            type: t,
+            t: c
           } = e;
           const f = (0, r.useQueryParams)(),
             [l, p] = (0, d.useState)({}),
@@ -98,17 +98,17 @@ _global.SENTRY_RELEASE = {
           }), [f.get("step")]), (0, i.jsxs)("div", {
             className: o.feedback,
             children: [(0, i.jsx)("h1", {
-              children: t("online-feedback-h1")
+              children: c("online-feedback-h1")
             }), (0, i.jsx)("div", {
               className: o.desc,
               dangerouslySetInnerHTML: {
-                __html: t("online-feedback-desc")
+                __html: c("online-feedback-desc")
               }
             }), m && (0, i.jsx)(b, {
               mutation: a,
               tree: m.tree,
-              type: c,
-              t
+              type: t,
+              t: c
             })]
           })
         },
@@ -117,14 +117,14 @@ _global.SENTRY_RELEASE = {
             mutation: a,
             tree: s,
             type: d,
-            t
+            t: c
           } = e;
-          const n = s.path.map((e => 1 === s.path.length && "_root" === e.feedback_type.name ? null : (0, i.jsx)(c.NavLink, {
+          const n = s.path.map((e => 1 === s.path.length && "_root" === e.feedback_type.name ? null : (0, i.jsx)(t.NavLink, {
               to: `?step=${e.id_hash}`,
               className: o[`stepIcon${e.feedback_type.name}`],
               children: e.feedback_type.title
             }, e.id_hash))),
-            r = s.next.map((e => "_root" === e.feedback_type.name ? null : (0, i.jsxs)(c.NavLink, {
+            r = s.next.map((e => "_root" === e.feedback_type.name ? null : (0, i.jsxs)(t.NavLink, {
               target: e?.feedback_type?.href ? "_blank" : "_self",
               className: o[`stepIcon${e.feedback_type.name}`],
               to: e?.feedback_type?.href ? e.feedback_type.href : `?step=${e.id_hash}`,
@@ -146,7 +146,7 @@ _global.SENTRY_RELEASE = {
             }), r.length ? "" : (0, i.jsx)(l, {
               feedbackStep: s.path[s.path.length - 1].id,
               mutation: a,
-              t
+              t: c
             })]
           })
         },
@@ -154,18 +154,18 @@ _global.SENTRY_RELEASE = {
           let {
             feedbackStep: a,
             mutation: s,
-            t: c
+            t
           } = e;
           const {
             loggedIn: r
-          } = (0, t.useRockstarUser)(), f = (0, d.useRef)(), [b, {
+          } = (0, c.useRockstarUser)(), f = (0, d.useRef)(), [b, {
             data: l,
             error: p
           }] = (0, n.useMutation)(s);
           return r ? l?.submittal?.id ? (0, i.jsx)("div", {
             className: o.success,
             dangerouslySetInnerHTML: {
-              __html: c("feedback.enter_success")
+              __html: t("feedback.enter_success")
             }
           }) : (0, i.jsxs)("form", {
             onSubmit: e => (e => {
@@ -183,15 +183,15 @@ _global.SENTRY_RELEASE = {
               ref: f,
               maxLength: 500,
               rows: 6,
-              placeholder: c("feedback.placeholder")
+              placeholder: t("feedback.placeholder")
             }), p ? (0, i.jsx)("div", {
               className: o.error,
               children: String(p)
             }) : "", (0, i.jsx)("button", {
               type: "submit",
-              children: c("SUBMIT")
+              children: t("SUBMIT")
             })]
-          }) : c("online-feedback-signin-0").replace("%s", c("signin-0"))
+          }) : t("online-feedback-signin-0").replace("%s", t("signin-0"))
         },
         p = e => {
           let {

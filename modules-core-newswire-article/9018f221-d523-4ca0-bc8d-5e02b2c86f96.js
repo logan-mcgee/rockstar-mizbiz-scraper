@@ -43,14 +43,14 @@ _global.SENTRY_RELEASE = {
             items: a,
             text: s = {},
             style: d,
-            className: c = "",
-            id: n = null
+            className: n = "",
+            id: c = null
           } = e;
           return a?.length ? (0, l.jsxs)("div", {
-            id: n,
+            id: c,
             children: [(0, l.jsx)(r.Carousel, {
               style: d,
-              className: [c, t.carouselWrapper].join(" "),
+              className: [n, t.carouselWrapper].join(" "),
               children: a.map((e => (0, l.jsxs)("div", {
                 id: e?.id ?? null,
                 children: [(0, l.jsx)(r.ImageWithBadge, {
@@ -85,8 +85,8 @@ _global.SENTRY_RELEASE = {
             }) : ""]
           }) : null
         };
-      var c = s(84644),
-        n = s.n(c),
+      var n = s(84644),
+        c = s.n(n),
         o = s(1740);
       const m = e => {
           let {
@@ -124,11 +124,11 @@ _global.SENTRY_RELEASE = {
             children: s
           }) : s
         },
-        f = e => {
+        u = e => {
           let {
             item: a
           } = e;
-          return a?.videoId ? (0, l.jsx)(n(), {
+          return a?.videoId ? (0, l.jsx)(c(), {
             context: "site",
             autoplay: !1,
             id: a.videoId
@@ -144,7 +144,7 @@ _global.SENTRY_RELEASE = {
             className: a?.className
           })
         },
-        u = e => {
+        f = e => {
           let {
             items: a,
             style: s = {},
@@ -164,7 +164,7 @@ _global.SENTRY_RELEASE = {
                   className: (0, o.classList)("rockstargames-modules-core-newswire-articlec6ef137c3cc0ba12d735aedb6db0cae3", e.className),
                   style: e?.style ?? {},
                   ...e?.props,
-                  children: [e?.image || e?.videoId ? (0, l.jsx)(f, {
+                  children: [e?.image || e?.videoId ? (0, l.jsx)(u, {
                     item: e
                   }) : "", e.title || e.description ? (0, l.jsx)(r.DescriptionArea, {
                     item: e,
@@ -182,8 +182,8 @@ _global.SENTRY_RELEASE = {
             items: r = [],
             renderTemplate: t,
             style: i,
-            id: c = null,
-            ...n
+            id: n = null,
+            ...c
           } = e;
           if (!r.length) return null;
           switch (t) {
@@ -192,7 +192,7 @@ _global.SENTRY_RELEASE = {
                 text: s,
                 items: r,
                 style: i,
-                id: c,
+                id: n,
                 children: a
               });
             case "carousel-panorama":
@@ -201,15 +201,15 @@ _global.SENTRY_RELEASE = {
                 items: r,
                 style: i,
                 className: "panorama",
-                id: c,
+                id: n,
                 children: a
               });
             default:
-              return (0, l.jsx)(u, {
+              return (0, l.jsx)(f, {
                 items: r,
                 style: i,
-                id: c,
-                ...n,
+                id: n,
+                ...c,
                 children: a
               })
           }

@@ -104,9 +104,9 @@ _global.SENTRY_RELEASE = {
           v = p.forceRefresh,
           g = void 0 !== v && v,
           y = p.getUserConfirmation,
-          b = void 0 === y ? u : y,
-          m = p.keyLength,
-          k = void 0 === m ? 6 : m,
+          m = void 0 === y ? u : y,
+          b = p.keyLength,
+          k = void 0 === b ? 6 : b,
           _ = n.basename ? function(n) {
             return "/" === n.charAt(n.length - 1) ? n.slice(0, -1) : n
           }("/" === (t = n.basename).charAt(0) ? t : "/" + t) : "";
@@ -177,7 +177,7 @@ _global.SENTRY_RELEASE = {
         var S = !1;
 
         function C(n) {
-          S ? (S = !1, P()) : L.confirmTransitionTo(n, "POP", b, (function(e) {
+          S ? (S = !1, P()) : L.confirmTransitionTo(n, "POP", m, (function(e) {
             e ? P({
               action: "POP",
               location: n
@@ -220,7 +220,7 @@ _global.SENTRY_RELEASE = {
             push: function(n, e) {
               var t = "PUSH",
                 a = s(n, e, E(), B.location);
-              L.confirmTransitionTo(a, t, b, (function(n) {
+              L.confirmTransitionTo(a, t, m, (function(n) {
                 if (n) {
                   var e = U(a),
                     i = a.key,
@@ -245,7 +245,7 @@ _global.SENTRY_RELEASE = {
             replace: function(n, e) {
               var t = "REPLACE",
                 a = s(n, e, E(), B.location);
-              L.confirmTransitionTo(a, t, b, (function(n) {
+              L.confirmTransitionTo(a, t, m, (function(n) {
                 if (n) {
                   var e = U(a),
                     i = a.key,

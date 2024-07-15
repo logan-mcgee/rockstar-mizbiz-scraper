@@ -30,8 +30,8 @@ _global.SENTRY_RELEASE = {
         d = a(33052),
         g = a(42836),
         m = a(9860),
-        f = a(41272),
-        u = a(55120),
+        u = a(41272),
+        f = a(55120),
         b = a(1740);
       const h = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/cb04fb2acd10f43aa501729b4d7d26a8.jpg",
         x = {
@@ -148,7 +148,7 @@ _global.SENTRY_RELEASE = {
           A = (0, d.useRockstarTokenPing)(),
           F = `https://${_}.rockstargames.com/settings/linkedaccounts`,
           U = (0, l.toScLocaleString)(O),
-          G = (0, f.useIntl)(),
+          G = (0, u.useIntl)(),
           {
             track: D
           } = (0, g.useGtmTrack)(),
@@ -171,8 +171,8 @@ _global.SENTRY_RELEASE = {
           [ce, ie] = (0, n.useState)(),
           [oe, le] = (0, n.useState)("hidden"),
           [de, ge] = (0, n.useState)("hidden"),
-          [me, fe] = (0, n.useState)("hidden"),
-          [ue, be] = (0, n.useState)("hidden"),
+          [me, ue] = (0, n.useState)("hidden"),
+          [fe, be] = (0, n.useState)("hidden"),
           [he, xe] = (0, n.useState)(!1),
           [ke, _e] = (0, n.useState)("disabled"),
           pe = (0, d.useRockstarToken)(),
@@ -198,7 +198,7 @@ _global.SENTRY_RELEASE = {
             K.current && Ce(K?.current?.scrollHeight), Q.current && Ne(Q?.current?.scrollHeight), Y.current && Ee(Y?.current?.scrollHeight), J.current && Me(J?.current?.scrollHeight)
           },
           Ze = (e, t) => {
-            e === w && (Se(w), t && we(ye), ge("onScreen"), le("hidden"), be("hidden"), fe("hidden")), e === y && (Se(y), t && we(Te), ge("offScreen"), le("visible"), setTimeout((() => {
+            e === w && (Se(w), t && we(ye), ge("onScreen"), le("hidden"), be("hidden"), ue("hidden")), e === y && (Se(y), t && we(Te), ge("offScreen"), le("visible"), setTimeout((() => {
               ge("hidden")
             }), 300), setTimeout((() => {
               le("onScreen")
@@ -206,10 +206,10 @@ _global.SENTRY_RELEASE = {
               ge("hidden")
             }), 300), setTimeout((() => {
               be("onScreen")
-            }), 100)), e === C && (Se(C), t && we(Be), ge("offScreen"), fe("visible"), setTimeout((() => {
+            }), 100)), e === C && (Se(C), t && we(Be), ge("offScreen"), ue("visible"), setTimeout((() => {
               ge("hidden")
             }), 300), setTimeout((() => {
-              fe("onScreen")
+              ue("onScreen")
             }), 100))
           },
           et = e => `https://${v}.rockstargames.com/tpa/${e}/link/?cid=${S}&lang=${U}&returnUrl=${encodeURIComponent(Qe)}&accessToken=${pe}`;
@@ -275,7 +275,7 @@ _global.SENTRY_RELEASE = {
             text: "No Qualifying Character Found"
           })
         }), [me]), (0, n.useEffect)((() => {
-          "onScreen" === ue && D({
+          "onScreen" === fe && D({
             element_placement: "event_label",
             event: "alert_error",
             event_action: "error",
@@ -284,7 +284,7 @@ _global.SENTRY_RELEASE = {
             o_id: t,
             text: "Something went wrong on our end. Please try again in a few minutes."
           })
-        }), [ue]), (0, n.useEffect)((() => {
+        }), [fe]), (0, n.useEffect)((() => {
           Z?.current && He(Z.current.scrollWidth >= Z.current.offsetWidth)
         }), [Z]), (0, n.useEffect)((() => {
           Ue({
@@ -468,13 +468,13 @@ _global.SENTRY_RELEASE = {
                                     event_category: "cta",
                                     event_label: "WOC cta",
                                     link_url: F,
-                                    text: u.engagement.engagement_link_account.defaultMessage
+                                    text: f.engagement.engagement_link_account.defaultMessage
                                   })
                                 },
                                 children: (0, k.jsx)("div", {
                                   className: x.btnText,
-                                  children: (0, k.jsx)(f.FormattedMessage, {
-                                    ...u.engagement.engagement_link_account
+                                  children: (0, k.jsx)(u.FormattedMessage, {
+                                    ...f.engagement.engagement_link_account
                                   })
                                 })
                               })
@@ -520,7 +520,7 @@ _global.SENTRY_RELEASE = {
                         }), (0, k.jsx)("h3", {
                           children: $.unlinkedScreen.headline
                         }), (0, k.jsx)(m.ExpandingPlatformButton, {
-                          buttonText: G.formatMessage(u.engagement.engagement_link_console_account),
+                          buttonText: G.formatMessage(f.engagement.engagement_link_console_account),
                           platformsAndLinks: [{
                             href: et("np"),
                             key: "ps",
@@ -556,7 +556,7 @@ _global.SENTRY_RELEASE = {
                       })
                     })]
                   }), (0, k.jsxs)("div", {
-                    className: [x.contentContainer, x[ue], x.errorSlide, x.textContent].join(" "),
+                    className: [x.contentContainer, x[fe], x.errorSlide, x.textContent].join(" "),
                     ref: Y,
                     children: [(0, k.jsxs)("div", {
                       className: x.textContent,

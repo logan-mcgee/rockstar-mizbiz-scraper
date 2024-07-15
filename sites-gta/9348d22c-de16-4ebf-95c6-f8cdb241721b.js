@@ -31,8 +31,8 @@ _global.SENTRY_RELEASE = {
       const m = JSON.parse('{"us":{"home_text":"Home","rockstar_games_logo_alt_text":"Rockstar Games Logo"},"de":{"home_text":"Startseite","rockstar_games_logo_alt_text":"Rockstar-Games-Logo"},"es":{"home_text":"Inicio","rockstar_games_logo_alt_text":"Logo de Rockstar Games"},"mx":{"home_text":"Inicio","rockstar_games_logo_alt_text":"Logo de Rockstar Games"},"fr":{"home_text":"Accueil","rockstar_games_logo_alt_text":"Logo Rockstar Games"},"it":{"home_text":"Home","rockstar_games_logo_alt_text":"Logo di Rockstar Games"},"jp":{"home_text":"ホーム","rockstar_games_logo_alt_text":"ロックスター・ゲームスロゴ"},"kr":{"home_text":"홈","rockstar_games_logo_alt_text":"Rockstar Games 로고"},"pl":{"home_text":"Strona główna","rockstar_games_logo_alt_text":"Logo Rockstar Games"},"br":{"home_text":"Início","rockstar_games_logo_alt_text":"Logotipo da Rockstar Games"},"ru":{"home_text":"Главная страница","rockstar_games_logo_alt_text":"Логотип Rockstar Games"},"hans":{"home_text":"主页","rockstar_games_logo_alt_text":"Rockstar Games 标志"},"tw":{"home_text":"首頁","rockstar_games_logo_alt_text":"Rockstar Games 標誌"}}');
       var _ = a(42836),
         g = a(67356),
-        b = a(6960),
-        u = a(67840),
+        u = a(6960),
+        b = a(67840),
         f = a(73344),
         k = a(51664),
         h = a(36960),
@@ -66,7 +66,7 @@ _global.SENTRY_RELEASE = {
       var j = a(19e3),
         E = a(24588);
       const T = "rockstargames-sites-gtaa799fab6998f229f5b8c00d05b335595";
-      g.gsap.registerPlugin(f.W, b.m, u.M);
+      g.gsap.registerPlugin(f.W, u.m, b.M);
       const L = () => {
           const {
             loading: e,
@@ -82,9 +82,9 @@ _global.SENTRY_RELEASE = {
             currentSite: l,
             sites: d
           } = (0, c.c)(), m = (0, s.useBase)();
-          let b;
-          b = "promo_banner2";
-          const u = (0, k.useRef)(),
+          let u;
+          u = "promo_banner2";
+          const b = (0, k.useRef)(),
             f = (0, k.useRef)(null),
             h = (0, k.useRef)(null),
             L = (0, k.useRef)(null),
@@ -108,10 +108,10 @@ _global.SENTRY_RELEASE = {
           }), []), (0, k.useEffect)((() => {
             A?.bannerTimeline && (M ? V ? A.bannerTimeline.progress(1) : A.bannerTimeline.play() : M || V || A.bannerTimeline.reverse())
           }), [M, A?.bannerTimeline]), (0, k.useLayoutEffect)((() => {
-            u?.current?.invalidate()
+            b?.current?.invalidate()
           }), [a, o]), (0, k.useLayoutEffect)((() => {
             const e = g.gsap.context((() => {
-              A?.bannerTimeline?.progress(0).kill(), D && (u.current = g.gsap.timeline({
+              A?.bannerTimeline?.progress(0).kill(), D && (b.current = g.gsap.timeline({
                 paused: !0,
                 defaults: {
                   duration: y.Sg.takeover,
@@ -121,7 +121,7 @@ _global.SENTRY_RELEASE = {
                 onStart: () => {
                   n({
                     event: "takeover_impression",
-                    element_placement: b
+                    element_placement: u
                   })
                 }
               }).fromTo(S.current, {
@@ -146,7 +146,7 @@ _global.SENTRY_RELEASE = {
                 autoAlpha: 0
               }, {
                 autoAlpha: 1
-              }, "<"), C("bannerTimeline", u?.current))
+              }, "<"), C("bannerTimeline", b?.current))
             }));
             return () => e.revert()
           }), [D]), D ? (0, v.jsx)(p(), {
@@ -165,7 +165,7 @@ _global.SENTRY_RELEASE = {
                     onClick: () => {
                       B(!0), n({
                         event: "site_banner_click",
-                        element_placement: b
+                        element_placement: u
                       })
                     },
                     children: [(0, v.jsx)("p", {
@@ -204,10 +204,10 @@ _global.SENTRY_RELEASE = {
                           duration: y.Sg.playVideo.cta,
                           ease: y.EB.playVideo.cta
                         }), A.bannerTimeline.reverse(), A.bannerTimeline.eventCallback("onReverseComplete", (() => {
-                          u.current && A.playVideoTimeline && A.playVideoTimeline.progress(0).pause(), H()
+                          b.current && A.playVideoTimeline && A.playVideoTimeline.progress(0).pause(), H()
                         })), n({
                           event: "takeover_close",
-                          element_placement: b
+                          element_placement: u
                         })
                       }
                     })]

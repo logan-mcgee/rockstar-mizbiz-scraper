@@ -79,8 +79,8 @@ _global.SENTRY_RELEASE = {
         a = n(51664),
         r = n(4914),
         s = n(49996),
-        c = n(48516),
-        l = n(33544),
+        l = n(48516),
+        c = n(33544),
         d = n(73660),
         u = n.n(d),
         g = n(55806);
@@ -99,9 +99,9 @@ _global.SENTRY_RELEASE = {
           {
             data: r,
             loading: s,
-            error: c,
+            error: l,
             ...d
-          } = (0, l.U)(e, o);
+          } = (0, c.U)(e, o);
         return (0, a.useEffect)((() => {
           if (r && o.setTitleDataPath) {
             const e = u().get(r, o.setTitleDataPath) ?? null;
@@ -119,10 +119,10 @@ _global.SENTRY_RELEASE = {
             loading: !1
           })
         })), [s]), (0, a.useEffect)((() => {
-          if (o.autoSetError && c) throw new Error(String(c))
-        }), [c]), {
+          if (o.autoSetError && l) throw new Error(String(l))
+        }), [l]), {
           loading: s,
-          error: c,
+          error: l,
           data: r,
           ...d
         }
@@ -150,7 +150,7 @@ _global.SENTRY_RELEASE = {
             children: t
           } = e;
           return (0, p.jsx)(v.Provider, {
-            value: c.c,
+            value: l.c,
             children: (0, p.jsx)(w.Provider, {
               value: m,
               children: t
@@ -230,9 +230,9 @@ _global.SENTRY_RELEASE = {
                 }),
                 s = await r.json(),
                 {
-                  tokenExpiresTime: c = null
+                  tokenExpiresTime: l = null
                 } = s;
-              return null !== c && o?.(c), n(s.bearerToken ?? null), s
+              return null !== l && o?.(l), n(s.bearerToken ?? null), s
             } catch (e) {
               return n(!1), !1
             }
@@ -266,7 +266,7 @@ _global.SENTRY_RELEASE = {
               [i] = (0, a.useState)(new r.Y({
                 typePolicies: n
               })),
-              c = z.concat((e => {
+              l = z.concat((e => {
                 let {
                   token: t
                 } = e;
@@ -293,7 +293,7 @@ _global.SENTRY_RELEASE = {
               })));
             return new s.u({
               cache: i,
-              link: c
+              link: l
             })
           })({
             graphOptions: n,
@@ -372,8 +372,8 @@ _global.SENTRY_RELEASE = {
           videos: a?.cdn?.videos
         }), document.currentScript),
         s = r?.src ? new URL(r.src).origin : "";
-      let c = document.getElementsByTagName("base")[0]?.getAttribute("href") ?? `${s}/`;
-      c.endsWith("/") || (c = `${c}/`), (0, o.UT)(c)
+      let l = document.getElementsByTagName("base")[0]?.getAttribute("href") ?? `${s}/`;
+      l.endsWith("/") || (l = `${l}/`), (0, o.UT)(l)
     },
     28152: (e, t, n) => {
       "use strict";
@@ -385,18 +385,18 @@ _global.SENTRY_RELEASE = {
         a = n.n(i),
         r = n(73660),
         s = n.n(r),
-        c = n(42991),
-        l = n(76772);
+        l = n(42991),
+        c = n(76772);
       const {
         apiHost: d
-      } = (0, c.c)(), u = (0, l._)(document.documentElement.lang), g = {}, m = async function(e) {
+      } = (0, l.c)(), u = (0, c._)(document.documentElement.lang), g = {}, m = async function(e) {
         let {
           fetchOptions: t = {},
           finalFetchOptions: n = {},
           query: i = null,
           pingBearer: r,
-          requireBearerToken: c = !0,
-          useCache: l = !0
+          requireBearerToken: l = !0,
+          useCache: c = !0
         } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
         try {
           const {
@@ -410,7 +410,7 @@ _global.SENTRY_RELEASE = {
             }
           };
           let w = `${d}/${e}`;
-          if (null === i || s().isEmpty(i) || (w += `?${new URLSearchParams(i)}`), !m && c) return null;
+          if (null === i || s().isEmpty(i) || (w += `?${new URLSearchParams(i)}`), !m && l) return null;
           m && (p.Authorization = `Bearer ${m}`);
           const h = {
               headers: p
@@ -421,7 +421,7 @@ _global.SENTRY_RELEASE = {
               url: w
             }),
             v = await (0, o.MB)(k);
-          if (l) {
+          if (c) {
             if (g[v]?.response) return g[v].response;
             if (g[v]?.loading) return {
               error: null,
@@ -433,7 +433,7 @@ _global.SENTRY_RELEASE = {
           }
           const b = await fetch(w, f),
             y = await b.json();
-          return l && (g[v] = {
+          return c && (g[v] = {
             response: y,
             loading: !1
           }), y
@@ -456,14 +456,14 @@ _global.SENTRY_RELEASE = {
             clientId: a,
             graphEnv: r,
             scHost: s,
-            hostname: c,
-            cdnBase: l,
+            hostname: l,
+            cdnBase: c,
             key: d,
             marketingAuthTLD: u
           } = e;
           const g = o?.apiHost ?? t,
             m = o?.authHost ?? n,
-            p = o?.cdnBase ?? l,
+            p = o?.cdnBase ?? c,
             w = o?.clientId ?? a,
             h = i?.marketingAuthTLD ?? u,
             f = o?.scHost ?? s;
@@ -471,7 +471,7 @@ _global.SENTRY_RELEASE = {
             apiHost: `https://${g}.rockstargames.com`,
             graphEnv: o?.graphEnv ?? r,
             host: f,
-            hostname: c,
+            hostname: l,
             cdnBase: p,
             key: d,
             clientId: w,
@@ -537,14 +537,14 @@ _global.SENTRY_RELEASE = {
     99928: (e, t, n) => {
       "use strict";
       n.d(t, {
-        c: () => c
+        c: () => l
       });
       var o = n(15908),
         i = n.n(o);
       const a = (0, n(53592).c)(),
         r = a?.id,
         s = /Mobi/i.test(window.navigator.userAgent) ? "mobile" : "desktop",
-        c = e => {
+        l = e => {
           const t = {
             ...e,
             environment: r,
@@ -560,7 +560,7 @@ _global.SENTRY_RELEASE = {
       n.d(t, {
         y_: () => a,
         kJ: () => s,
-        i0: () => c,
+        i0: () => l,
         kj: () => d
       });
       var o = n(61076),
@@ -585,15 +585,15 @@ _global.SENTRY_RELEASE = {
         }), [e]), [t, a]
       };
       n(57013);
-      const c = e => {
+      const l = e => {
         const t = (0, r.useRef)();
         return (0, r.useEffect)((() => {
           t.current = e
         }), [e]), t.current
       };
       n(28152), n(25144);
-      const l = "__RS_CUSTOM_EVENTS__";
-      window[l] || (window[l] = {});
+      const c = "__RS_CUSTOM_EVENTS__";
+      window[c] || (window[c] = {});
       const d = () => {
         const e = (e, t) => {
           if (!e) throw Error("Event name must be provided to work with custom events");
@@ -601,10 +601,10 @@ _global.SENTRY_RELEASE = {
             o = new CustomEvent(n, {
               detail: t
             });
-          window[l][n] || (window[l][n] = {
+          window[c][n] || (window[c][n] = {
             eventQueue: [],
             subscribers: []
-          }), window[l][n].eventQueue.push(o), window[l][n].subscribers.forEach((e => {
+          }), window[c][n].eventQueue.push(o), window[c][n].subscribers.forEach((e => {
             e(o.detail)
           }))
         };
@@ -635,7 +635,7 @@ _global.SENTRY_RELEASE = {
         ym: () => D,
         bk: () => z,
         S6: () => a,
-        au: () => c,
+        au: () => l,
         Ux: () => m
       });
       var o = n(99928),
@@ -648,14 +648,14 @@ _global.SENTRY_RELEASE = {
       }))(e, t);
       var r = n(61076),
         s = n(55806);
-      const c = e => t => ((e, t) => {
+      const l = e => t => ((e, t) => {
         const n = (0, r.gh)(s.EH);
         return (0, i.jsx)(e, {
           ...t,
           locale: n
         })
       })(e, t);
-      var l = n(51664),
+      var c = n(51664),
         d = n(73660),
         u = n.n(d),
         g = n(95532);
@@ -724,7 +724,7 @@ _global.SENTRY_RELEASE = {
         T = e => {
           const t = (0, r.gh)(E),
             n = Object.values(t).some((e => !!e));
-          return (0, l.useEffect)((() => {
+          return (0, c.useEffect)((() => {
             n ? document.documentElement.setAttribute(S, "true") : document.documentElement.removeAttribute(S)
           }), [n]), {
             bodyShouldLock: n,
@@ -820,7 +820,7 @@ _global.SENTRY_RELEASE = {
             windowHeight: t
           }
         },
-        I = (0, l.createContext)(O()),
+        I = (0, c.createContext)(O()),
         {
           Consumer: M
         } = I,
@@ -830,7 +830,7 @@ _global.SENTRY_RELEASE = {
             children: t
           } = e;
           const n = (0, r.gh)(B);
-          return (0, l.useEffect)((() => {
+          return (0, c.useEffect)((() => {
             const e = () => {
               B(O())
             };
@@ -842,10 +842,10 @@ _global.SENTRY_RELEASE = {
             children: t
           })
         },
-        z = () => (0, l.useContext)(I);
+        z = () => (0, c.useContext)(I);
       n(2148);
-      const R = (0, l.createContext)({}),
-        q = () => (0, l.useContext)(R)
+      const R = (0, c.createContext)({}),
+        q = () => (0, c.useContext)(R)
     },
     33820: (e, t, n) => {
       "use strict";
@@ -1025,8 +1025,8 @@ _global.SENTRY_RELEASE = {
         for (a.forEach((function(e) {
             s.add(e)
           })); s.size > 0;) {
-          var c = s;
-          s = new Set, c.forEach((function(e) {
+          var l = s;
+          s = new Set, l.forEach((function(e) {
             r.has(e) || (r.add(e), (o[e] || new Set).forEach((function(e) {
               s.add(e)
             })))

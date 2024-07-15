@@ -18,8 +18,8 @@ _global.SENTRY_RELEASE = {
   [543], {
     576: (e, t, r) => {
       var n = r(664),
-        o = Symbol.for("react.element"),
-        a = (Symbol.for("react.fragment"), Object.prototype.hasOwnProperty),
+        a = Symbol.for("react.element"),
+        o = (Symbol.for("react.fragment"), Object.prototype.hasOwnProperty),
         s = n.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         d = {
           key: !0,
@@ -30,15 +30,15 @@ _global.SENTRY_RELEASE = {
       t.jsx = function(e, t, r) {
         var n, i = {},
           l = null,
-          c = null;
-        for (n in void 0 !== r && (l = "" + r), void 0 !== t.key && (l = "" + t.key), void 0 !== t.ref && (c = t.ref), t) a.call(t, n) && !d.hasOwnProperty(n) && (i[n] = t[n]);
+          u = null;
+        for (n in void 0 !== r && (l = "" + r), void 0 !== t.key && (l = "" + t.key), void 0 !== t.ref && (u = t.ref), t) o.call(t, n) && !d.hasOwnProperty(n) && (i[n] = t[n]);
         if (e && e.defaultProps)
           for (n in t = e.defaultProps) void 0 === i[n] && (i[n] = t[n]);
         return {
-          $$typeof: o,
+          $$typeof: a,
           type: e,
           key: l,
-          ref: c,
+          ref: u,
           props: i,
           _owner: s.current
         }
@@ -49,31 +49,31 @@ _global.SENTRY_RELEASE = {
     },
     543: (e, t, r) => {
       r.r(t), r.d(t, {
-        DataLayerProvider: () => c,
-        ResizeProvider: () => o.a7,
-        ScrollProvider: () => a.Iq,
+        DataLayerProvider: () => u,
+        ResizeProvider: () => a.a7,
+        ScrollProvider: () => o.Iq,
         newswirePost: () => n,
         useDataLayer: () => l
       });
       var n = r(640),
-        o = r(628),
-        a = r(172),
+        a = r(628),
+        o = r(172),
         s = r(664),
         d = r(240);
       const i = (0, s.createContext)({}),
         l = () => (0, s.useContext)(i),
-        c = e => {
+        u = e => {
           let {
             children: t,
             ...r
           } = e;
           const n = l() ?? {},
-            o = (0, s.useMemo)((() => ({
+            a = (0, s.useMemo)((() => ({
               ...n,
               ...r
             })), [n, r]);
           return (0, d.jsx)(i.Provider, {
-            value: o,
+            value: a,
             children: t
           })
         }
@@ -85,31 +85,31 @@ _global.SENTRY_RELEASE = {
         useNewswirePost: () => i
       });
       var n = r(664),
-        o = r(240);
-      const a = (0, n.createContext)(),
+        a = r(240);
+      const o = (0, n.createContext)(),
         {
           Consumer: s
-        } = a,
+        } = o,
         d = e => {
           let {
             article: t,
             children: r
           } = e;
-          return (0, o.jsx)(a.Provider, {
+          return (0, a.jsx)(o.Provider, {
             value: t,
             children: r
           })
         },
-        i = () => (0, n.useContext)(a)
+        i = () => (0, n.useContext)(o)
     },
     628: (e, t, r) => {
       r.d(t, {
-        a7: () => u,
+        a7: () => c,
         bk: () => f
       });
       var n = r(664),
-        o = r(52),
-        a = r(240);
+        a = r(52),
+        o = r(240);
       const s = {
           xxs: {
             min: 0,
@@ -147,13 +147,13 @@ _global.SENTRY_RELEASE = {
           return Object.keys(s).map((t => {
             const {
               min: n,
-              max: o
-            } = s[t], a = e >= n && e <= o, d = e >= n;
+              max: a
+            } = s[t], o = e >= n && e <= a, d = e >= n;
             r[t] = {
-              activeExact: a,
+              activeExact: o,
               activeMin: d,
               min: n,
-              max: o
+              max: a
             }
           })), {
             isMobile: e < s.sm.min,
@@ -167,20 +167,20 @@ _global.SENTRY_RELEASE = {
         {
           Consumer: l
         } = i,
-        c = (0, o.makeVar)(d()),
-        u = e => {
+        u = (0, a.makeVar)(d()),
+        c = e => {
           let {
             children: t
           } = e;
-          const r = (0, o.useReactiveVar)(c);
+          const r = (0, a.useReactiveVar)(u);
           return (0, n.useEffect)((() => {
             const e = () => {
-              c(d())
+              u(d())
             };
             return window.addEventListener("resize", e), () => {
               window.removeEventListener("resize", e)
             }
-          }), []), (0, a.jsx)(i.Provider, {
+          }), []), (0, o.jsx)(i.Provider, {
             value: r,
             children: t
           })
@@ -190,47 +190,47 @@ _global.SENTRY_RELEASE = {
     172: (e, t, r) => {
       r.d(t, {
         C0: () => d,
-        Iq: () => c,
+        Iq: () => u,
         QZ: () => l
       });
       var n = r(52),
-        o = r(664),
-        a = r(240);
+        a = r(664),
+        o = r(240);
       const s = (0, n.makeVar)(!1),
         d = e => s(e),
-        i = (0, o.createContext)(null),
-        l = () => (0, o.useContext)(i),
-        c = e => {
+        i = (0, a.createContext)(null),
+        l = () => (0, a.useContext)(i),
+        u = e => {
           let {
             children: t
           } = e;
-          const [r, l] = (0, o.useState)(window.pageYOffset), [c, u] = (0, o.useState)(null), [f, m] = (0, o.useState)(!1), w = (0, n.useReactiveVar)(s);
+          const [r, l] = (0, a.useState)(window.pageYOffset), [u, c] = (0, a.useState)(null), [f, m] = (0, a.useState)(!1), w = (0, n.useReactiveVar)(s);
           let v;
-          const _ = () => {
+          const b = () => {
             m(!0), clearTimeout(v), v = setTimeout((() => {
               m(!1)
             }), 2e3)
           };
-          return (0, o.useEffect)((() => {
+          return (0, a.useEffect)((() => {
             let e;
             const t = () => {
-              if (w) return void u(!1);
+              if (w) return void c(!1);
               const t = Math.max(0, window.pageYOffset);
-              l(t), f || u(t > 60 && t > e), e = t
+              l(t), f || c(t > 60 && t > e), e = t
             };
             return window.addEventListener("scroll", t), () => {
               window.removeEventListener("scroll", t)
             }
-          }), [f, w]), (0, o.useMemo)((() => (0, a.jsx)(i.Provider, {
+          }), [f, w]), (0, a.useMemo)((() => (0, o.jsx)(i.Provider, {
             value: {
               freezeUserShouldSeeMore: w,
               pageYOffset: r,
-              pauseUserShouldSeeMore: _,
+              pauseUserShouldSeeMore: b,
               setFreezeUserShouldSeeMore: d,
-              userShouldSeeMore: c
+              userShouldSeeMore: u
             },
             children: t
-          })), [w, r, _, c])
+          })), [w, r, b, u])
         }
     }
   }

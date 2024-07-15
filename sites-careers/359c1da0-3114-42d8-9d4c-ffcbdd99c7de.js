@@ -69,19 +69,19 @@ _global.SENTRY_RELEASE = {
             m = u.id,
             h = void 0 === m ? "" : m,
             g = u.appendTo,
-            b = h || "google-recaptcha-v3";
+            v = h || "google-recaptcha-v3";
           if (function(e) {
               return !!document.querySelector("#" + e)
-            }(b)) o();
+            }(v)) o();
           else {
-            var v = function(e) {
+            var b = function(e) {
                 return "https://www." + (e.useRecaptchaNet ? "recaptcha.net" : "google.com") + "/recaptcha/" + (e.useEnterprise ? "enterprise.js" : "api.js")
               }({
                 useEnterprise: c,
                 useRecaptchaNet: a
               }),
               w = document.createElement("script");
-            w.id = b, w.src = v + "?render=" + t + ("explicit" === t ? "&onload=" + r : "") + (n ? "&hl=" + n : ""), l && (w.nonce = l), w.defer = !!d, w.async = !!y, w.onload = o, ("body" === g ? document.body : document.getElementsByTagName("head")[0]).appendChild(w)
+            w.id = v, w.src = b + "?render=" + t + ("explicit" === t ? "&onload=" + r : "") + (n ? "&hl=" + n : ""), l && (w.nonce = l), w.defer = !!d, w.async = !!y, w.onload = o, ("body" === g ? document.body : document.getElementsByTagName("head")[0]).appendChild(w)
           }
         },
         l = function(e) {
@@ -105,9 +105,9 @@ _global.SENTRY_RELEASE = {
           m = e.language,
           h = e.container,
           g = e.children,
-          b = (0, o.useState)(null),
-          v = b[0],
-          w = b[1],
+          v = (0, o.useState)(null),
+          b = v[0],
+          w = v[1],
           C = (0, o.useRef)(t),
           S = JSON.stringify(y),
           E = JSON.stringify(null == h ? void 0 : h.parameters);
@@ -149,17 +149,17 @@ _global.SENTRY_RELEASE = {
           l("<GoogleReCaptchaProvider /> recaptcha key not provided")
         }), [c, p, S, E, m, t, null == h ? void 0 : h.element]);
         var P = (0, o.useCallback)((function(e) {
-            if (!v || !v.execute) throw new Error("<GoogleReCaptchaProvider /> Google Recaptcha has not been loaded");
-            return v.execute(C.current, {
+            if (!b || !b.execute) throw new Error("<GoogleReCaptchaProvider /> Google Recaptcha has not been loaded");
+            return b.execute(C.current, {
               action: e
             })
-          }), [v, C]),
+          }), [b, C]),
           R = (0, o.useMemo)((function() {
             return {
-              executeRecaptcha: v ? P : void 0,
+              executeRecaptcha: b ? P : void 0,
               container: null == h ? void 0 : h.element
             }
-          }), [P, v, null == h ? void 0 : h.element]);
+          }), [P, b, null == h ? void 0 : h.element]);
         return a().createElement(f.Provider, {
           value: R
         }, g)
@@ -300,8 +300,8 @@ _global.SENTRY_RELEASE = {
         }, t.exports), t.exports
       }
       var g = "function" == typeof Symbol && Symbol.for,
-        b = g ? Symbol.for("react.element") : 60103,
-        v = g ? Symbol.for("react.portal") : 60106,
+        v = g ? Symbol.for("react.element") : 60103,
+        b = g ? Symbol.for("react.portal") : 60106,
         w = g ? Symbol.for("react.fragment") : 60107,
         C = g ? Symbol.for("react.strict_mode") : 60108,
         S = g ? Symbol.for("react.profiler") : 60114,
@@ -323,7 +323,7 @@ _global.SENTRY_RELEASE = {
         if ("object" == typeof e && null !== e) {
           var t = e.$$typeof;
           switch (t) {
-            case b:
+            case v:
               switch (e = e.type) {
                 case R:
                 case x:
@@ -344,7 +344,7 @@ _global.SENTRY_RELEASE = {
                       return t
                   }
               }
-            case v:
+            case b:
               return t
           }
         }
@@ -358,12 +358,12 @@ _global.SENTRY_RELEASE = {
           ConcurrentMode: x,
           ContextConsumer: P,
           ContextProvider: E,
-          Element: b,
+          Element: v,
           ForwardRef: T,
           Fragment: w,
           Lazy: M,
           Memo: k,
-          Portal: v,
+          Portal: b,
           Profiler: S,
           StrictMode: C,
           Suspense: _,
@@ -378,7 +378,7 @@ _global.SENTRY_RELEASE = {
             return j(e) === E
           },
           isElement: function(e) {
-            return "object" == typeof e && null !== e && e.$$typeof === b
+            return "object" == typeof e && null !== e && e.$$typeof === v
           },
           isForwardRef: function(e) {
             return j(e) === T
@@ -393,7 +393,7 @@ _global.SENTRY_RELEASE = {
             return j(e) === k
           },
           isPortal: function(e) {
-            return j(e) === v
+            return j(e) === b
           },
           isProfiler: function(e) {
             return j(e) === S

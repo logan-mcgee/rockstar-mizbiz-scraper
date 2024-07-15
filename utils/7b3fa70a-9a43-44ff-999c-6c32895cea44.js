@@ -18,8 +18,8 @@ _global.SENTRY_RELEASE = {
   [560], {
     560: (e, a, t) => {
       t.r(a), t.d(a, {
-        sha1: () => o,
-        sha256: () => d,
+        sha1: () => d,
+        sha256: () => o,
         sha384: () => s,
         sha512: () => l
       });
@@ -35,7 +35,7 @@ _global.SENTRY_RELEASE = {
           for (let e = 0; e < a.byteLength; e += 4) t += a.getUint32(e).toString(16).padStart(8, "0");
           return t
         })(n) : n
-      }, o = n("SHA-1"), d = n("SHA-256"), s = n("SHA-384"), l = n("SHA-512")
+      }, d = n("SHA-1"), o = n("SHA-256"), s = n("SHA-384"), l = n("SHA-512")
     }
   }
 ]);

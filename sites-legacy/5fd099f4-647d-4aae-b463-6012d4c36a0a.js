@@ -35,23 +35,23 @@ _global.SENTRY_RELEASE = {
           amount: c = "any"
         } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
         if ("undefined" == typeof IntersectionObserver) return () => {};
-        const l = (0, o.a)(e),
-          a = new WeakMap,
+        const a = (0, o.a)(e),
+          l = new WeakMap,
           f = new IntersectionObserver((e => {
             e.forEach((e => {
-              const n = a.get(e.target);
+              const n = l.get(e.target);
               if (e.isIntersecting !== Boolean(n))
                 if (e.isIntersecting) {
                   const n = t(e);
-                  (0, r.m)(n) ? a.set(e.target, n): f.unobserve(e.target)
-                } else n && (n(e), a.delete(e.target))
+                  (0, r.m)(n) ? l.set(e.target, n): f.unobserve(e.target)
+                } else n && (n(e), l.delete(e.target))
             }))
           }), {
             root: n,
             rootMargin: s,
             threshold: "number" == typeof c ? c : i[c]
           });
-        return l.forEach((e => f.observe(e))), () => f.disconnect()
+        return a.forEach((e => f.observe(e))), () => f.disconnect()
       }
     },
     2536: (e, t, n) => {
@@ -97,10 +97,10 @@ _global.SENTRY_RELEASE = {
         }))
       }
 
-      function l(e) {
+      function a(e) {
         e.forEach(c)
       }
-      const a = new Set;
+      const l = new Set;
       let f;
       var u = n(68344);
       const d = (e, t, n) => t - e == 0 ? 1 : (n - e) / (t - e),
@@ -146,11 +146,11 @@ _global.SENTRY_RELEASE = {
             position: s
           } = p[t],
           c = r.current,
-          l = n.time;
+          a = n.time;
         r.current = e["scroll" + s], r.scrollLength = e["scroll" + i] - e["client" + i], r.offset.length = 0, r.offset[0] = 0, r.offset[1] = r.scrollLength, r.progress = d(0, r.scrollLength, r.current);
-        const a = o - l;
+        const l = o - a;
         var f, u;
-        r.velocity = a > g ? 0 : (f = r.current - c, (u = a) ? f * (1e3 / u) : 0)
+        r.velocity = l > g ? 0 : (f = r.current - c, (u = l) ? f * (1e3 / u) : 0)
       }
       const y = e => e,
         v = (e, t, n) => -n * e + n * t + e;
@@ -244,13 +244,13 @@ _global.SENTRY_RELEASE = {
             for (n.x += t, n.y += e; o && "svg" !== o.tagName;) o = o.parentNode
           }
           return n
-        }(r, e) : O, l = r === e ? {
+        }(r, e) : O, a = r === e ? {
           width: e.scrollWidth,
           height: e.scrollHeight
         } : {
           width: r.clientWidth,
           height: r.clientHeight
-        }, a = {
+        }, l = {
           width: e.clientWidth,
           height: e.clientHeight
         };
@@ -258,7 +258,7 @@ _global.SENTRY_RELEASE = {
         let f = !t[i].interpolate;
         const u = o.length;
         for (let e = 0; e < u; e++) {
-          const n = A(o[e], a[s], l[s], c[i]);
+          const n = A(o[e], l[s], a[s], c[i]);
           f || n === t[i].interpolatorOffsets[e] || (f = !0), t[i].offset[e] = n
         }
         f && (t[i].interpolate = function(e) {
@@ -337,7 +337,7 @@ _global.SENTRY_RELEASE = {
           const t = D(n);
           window.addEventListener("resize", e, {
             passive: !0
-          }), n !== document.documentElement && B.set(n, (w = n, b = e, (0, u.m)(w) ? (v = w, a.add(v), f || (f = () => {
+          }), n !== document.documentElement && B.set(n, (w = n, b = e, (0, u.m)(w) ? (v = w, l.add(v), f || (f = () => {
             const e = {
                 width: window.innerWidth,
                 height: window.innerHeight
@@ -347,11 +347,11 @@ _global.SENTRY_RELEASE = {
                 size: e,
                 contentSize: e
               };
-            a.forEach((e => e(t)))
+            l.forEach((e => e(t)))
           }, window.addEventListener("resize", f)), () => {
-            a.delete(v), !a.size && f && (f = void 0)
+            l.delete(v), !l.size && f && (f = void 0)
           }) : function(e, t) {
-            s || "undefined" != typeof ResizeObserver && (s = new ResizeObserver(l));
+            s || "undefined" != typeof ResizeObserver && (s = new ResizeObserver(a));
             const n = (0, r.a)(e);
             return n.forEach((e => {
               let n = i.get(e);
@@ -442,23 +442,23 @@ _global.SENTRY_RELEASE = {
           n = i
         }
       }();
-      var c, l = [],
-        a = !1,
+      var c, a = [],
+        l = !1,
         f = -1;
 
       function u() {
-        a && c && (a = !1, c.length ? l = c.concat(l) : f = -1, l.length && d())
+        l && c && (l = !1, c.length ? a = c.concat(a) : f = -1, a.length && d())
       }
 
       function d() {
-        if (!a) {
+        if (!l) {
           var e = s(u);
-          a = !0;
-          for (var t = l.length; t;) {
-            for (c = l, l = []; ++f < t;) c && c[f].run();
-            f = -1, t = l.length
+          l = !0;
+          for (var t = a.length; t;) {
+            for (c = a, a = []; ++f < t;) c && c[f].run();
+            f = -1, t = a.length
           }
-          c = null, a = !1,
+          c = null, l = !1,
             function(e) {
               if (n === clearTimeout) return clearTimeout(e);
               if ((n === i || !n) && clearTimeout) return n = clearTimeout, clearTimeout(e);
@@ -484,7 +484,7 @@ _global.SENTRY_RELEASE = {
         var t = new Array(arguments.length - 1);
         if (arguments.length > 1)
           for (var n = 1; n < arguments.length; n++) t[n - 1] = arguments[n];
-        l.push(new g(e, t)), 1 !== l.length || a || s(d)
+        a.push(new g(e, t)), 1 !== a.length || l || s(d)
       }, g.prototype.run = function() {
         this.fun.apply(null, this.array)
       }, o.title = "browser", o.browser = !0, o.env = {}, o.argv = [], o.version = "", o.versions = {}, o.on = h, o.addListener = h, o.once = h, o.off = h, o.removeListener = h, o.removeAllListeners = h, o.emit = h, o.prependListener = h, o.prependOnceListener = h, o.listeners = function(e) {

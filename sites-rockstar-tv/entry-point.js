@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "7d2e035e-20d5-4d8f-ab60-38217e5613cf", e._sentryDebugIdIdentifier = "sentry-dbid-7d2e035e-20d5-4d8f-ab60-38217e5613cf")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "05cbe4f6-1ae1-45c0-a0c1-1bfdb7e5ccea", e._sentryDebugIdIdentifier = "sentry-dbid-05cbe4f6-1ae1-45c0-a0c1-1bfdb7e5ccea")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -144,20 +144,19 @@ _global.SENTRY_RELEASE = {
             get: t[r]
           })
         }, u.f = {}, u.e = e => Promise.all(Object.keys(u.f).reduce(((t, r) => (u.f[r](e, t), t)), [])), u.u = e => "js/" + {
-          100: "1ecddb560af701286dd16666a3a82776",
-          168: "43011c921594ff1deccfbd674625b4fe",
-          240: "8ec540b6092fe702d6eaa11c497354b1",
+          100: "ad6c57e96c6f3acaa0dfd63bb5bc272c",
+          168: "5646a44e2bb3a08f741fddeea9a1ac13",
+          240: "2db1b2ea3b4a13dccdabfa2cbb50a391",
           248: "d6ef25015575678e46932a024222c5cd",
-          312: "9b0a11420a67c465ef6096a4155c4f25",
+          312: "d43aad365aa4d63371df3de32b085a74",
           664: "666f7a6c994ce11172babcabbf40d929",
-          668: "980d0176f335af58d9ed66a8d0f84c88",
-          716: "89e39e808c934d25e0f88d2065655d5b",
-          818: "06fc62aa4a689d7e2b6d1e8c6ca43b74",
-          884: "d2dea468dbd39843e307f99eee4958fb"
+          668: "b91af59802975877d481f7a086ac0c86",
+          818: "77365ca726e6a63095fb315d5e76e903",
+          820: "fd313a1dd40fbe7e26b3f220eb8852df",
+          884: "b878974bb0b7f9515ae6a51fac867774"
         } [e] + ".js", u.miniCssF = e => "css/" + {
           312: "ff86fabe995789bfa97d587455badf7b",
-          716: "99df8002ac4dfabc31414fcbef9c06c7",
-          884: "83387beebdeae1fdc0dbe17b79a69f32"
+          884: "251da5863a8448462648e3eea476585e"
         } [e] + ".css", u.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
@@ -198,9 +197,8 @@ _global.SENTRY_RELEASE = {
         }, u.nmd = e => (e.paths = [], e.children || (e.children = []), e), d = {
           248: [33052, 45792],
           312: [53264, 84644],
-          884: [1532, 1740, 3061, 28540, 42836, 45652, 73784, 95356]
+          884: [1740, 3061, 28540, 42836, 45652, 73784, 95356]
         }, l = {
-          1532: ["default", "./operations/queries", 33864],
           1740: ["default", "./index", 88428],
           3061: ["default", "./hooks", 9344],
           28540: ["default", "./operations/fragments/paging.graphql", 33864],
@@ -282,7 +280,7 @@ _global.SENTRY_RELEASE = {
                   }
                 },
                 l = [];
-              return "default" === r && (i("@rockstargames/components", "1.14.0", (() => Promise.all([u.e(716), u.e(664), u.e(884), u.e(248), u.e(240)]).then((() => () => u(33544))))), i("react-router-dom", "6.17.0", (() => Promise.all([u.e(168), u.e(668), u.e(664)]).then((() => () => u(69668))))), i("react-router-dom", "6.17.0", (() => Promise.all([u.e(168), u.e(818), u.e(664)]).then((() => () => u(64818))))), i("react", "18.2.0", (() => u.e(100).then((() => () => u(99480))))), d(33864), d(9344), d(14472), d(81128), d(88428)), l.length ? e[r] = Promise.all(l).then((() => e[r] = 1)) : e[r] = 1
+              return "default" === r && (i("@rockstargames/components", "1.14.0", (() => Promise.all([u.e(820), u.e(664), u.e(884), u.e(248), u.e(240)]).then((() => () => u(33544))))), i("react-router-dom", "6.17.0", (() => Promise.all([u.e(168), u.e(668), u.e(664)]).then((() => () => u(69668))))), i("react-router-dom", "6.17.0", (() => Promise.all([u.e(168), u.e(818), u.e(664)]).then((() => () => u(64818))))), i("react", "18.2.0", (() => u.e(100).then((() => () => u(99480))))), d(33864), d(9344), d(14472), d(81128), d(88428)), l.length ? e[r] = Promise.all(l).then((() => e[r] = 1)) : e[r] = 1
             }
           }
         })(), (() => {
@@ -366,7 +364,7 @@ _global.SENTRY_RELEASE = {
             n = {},
             o = {
               51664: () => a("default", "react", [1, 18, 2, 0], (() => u.e(100).then((() => () => u(99480))))),
-              9860: () => a("default", "@rockstargames/components", [1, "workspace:*"], (() => Promise.all([u.e(716), u.e(884)]).then((() => () => u(33544))))),
+              9860: () => a("default", "@rockstargames/components", [1, "workspace:*"], (() => Promise.all([u.e(820), u.e(884)]).then((() => () => u(33544))))),
               98584: () => a("default", "react-router-dom", [1, 6, 11, 2], (() => Promise.all([u.e(168), u.e(818)]).then((() => () => u(64818))))),
               57013: () => a("default", "react-router-dom", [1, 6, 11, 2], (() => Promise.all([u.e(168), u.e(668)]).then((() => () => u(69668)))))
             },
@@ -409,7 +407,6 @@ _global.SENTRY_RELEASE = {
             u.f.miniCss = (t, r) => {
               e[t] ? r.push(e[t]) : 0 !== e[t] && {
                 312: 1,
-                716: 1,
                 884: 1
               } [t] && r.push(e[t] = (e => new Promise(((t, r) => {
                 var a = u.miniCssF(e),

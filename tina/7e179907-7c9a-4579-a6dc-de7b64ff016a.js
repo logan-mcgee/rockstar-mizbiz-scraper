@@ -93,27 +93,27 @@ _global.SENTRY_RELEASE = {
         s = n(51664),
         i = n(73660),
         l = n.n(i);
-      var c = n(95240);
-      const d = (0, s.createContext)(),
+      var d = n(95240);
+      const c = (0, s.createContext)(),
         {
           Provider: u
-        } = d,
+        } = c,
         p = e => {
           let {
             children: t,
             components: n
           } = e;
-          return (0, c.jsx)(u, {
+          return (0, d.jsx)(u, {
             value: n,
             children: t
           })
         },
-        f = () => (0, s.useContext)(d);
+        f = () => (0, s.useContext)(c);
       var y = n(70508),
         m = n(87020),
         g = n.n(m),
-        b = n(91496),
-        _ = n(27400);
+        _ = n(91496),
+        b = n(27400);
       const S = e => {
         let {
           payload: t,
@@ -121,7 +121,7 @@ _global.SENTRY_RELEASE = {
         } = e;
         const [a, r] = (0, s.useState)(t), [o, i] = (0, s.useState)(n);
         return (0, s.useEffect)((() => {
-          const e = (0, b.pick)(t, _.TINA_MEMOQ_PREFIX),
+          const e = (0, _.pick)(t, b.TINA_MEMOQ_PREFIX),
             a = JSON.parse(JSON.stringify(l().merge(JSON.parse(JSON.stringify(e)), JSON.parse(JSON.stringify(n?.keys ?? {})))));
           i(a)
         }), [JSON.stringify(t), n]), (0, s.useEffect)((() => {
@@ -165,22 +165,22 @@ _global.SENTRY_RELEASE = {
             } = e;
             const r = e => {
               let o = "";
-              if (o = Array.isArray(e?.[_.TINA_PARSER_KEY]) ? e[_.TINA_PARSER_KEY].map((e => r(e))) : e?.[_.TINA_PARSER_KEY] ?? "", !e?._template) return o;
+              if (o = Array.isArray(e?.[b.TINA_PARSER_KEY]) ? e[b.TINA_PARSER_KEY].map((e => r(e))) : e?.[b.TINA_PARSER_KEY] ?? "", !e?._template) return o;
               let i = e._template;
               "0" === i && (console.warn(`The _template "${i}" wasn't found in the available components. The _template "${i}" was replaced with "gen9.Hero".`, {
                 availableComponents: Object.keys(t),
                 payload: e
               }), i = "gen9.Hero");
-              const c = l().get(t, i) ?? null;
-              if (!c) return null;
-              let d;
-              d = (0, w.withInViewTracker)(c, {
+              const d = l().get(t, i) ?? null;
+              if (!d) return null;
+              let c;
+              c = (0, w.withInViewTracker)(d, {
                 impressionTracking: e?.impressionTracking,
                 gtm: e?.gtm
               });
               const u = [...e?.translations ?? []].reverse(),
                 p = `componentProps_${(0,v.v4)()}`;
-              return (0, s.createElement)(d, {
+              return (0, s.createElement)(c, {
                 ...n?.meta,
                 ...e,
                 ...a,
@@ -188,7 +188,7 @@ _global.SENTRY_RELEASE = {
                 key: p
               }, o)
             };
-            return n?.[_.TINA_PARSER_KEY]?.length ? r(n) : null
+            return n?.[b.TINA_PARSER_KEY]?.length ? r(n) : null
           })({
             components: t,
             payload: n,
@@ -204,7 +204,7 @@ _global.SENTRY_RELEASE = {
           } = e;
           const r = (0, y.Q)(),
             [o, i] = (0, s.useState)(null),
-            [d, u] = (0, s.useState)(null);
+            [c, u] = (0, s.useState)(null);
           (0, s.useEffect)((() => {
             t?.payload && i(t.payload), t?.variables && u(t.variables)
           }), [t]);
@@ -245,13 +245,13 @@ _global.SENTRY_RELEASE = {
             }), [t]), n
           })({
             payload: o
-          }), b = S({
+          }), _ = S({
             payload: o,
-            variables: d
+            variables: c
           });
           return (0, s.useMemo)((() => {
             if (!o) return null;
-            const e = b,
+            const e = _,
               n = o?.meta?.prod ?? o?.meta?.cdn ?? r?.meta?.prod ?? r?.meta?.cdn ?? !1,
               s = {
                 ...o,
@@ -260,11 +260,11 @@ _global.SENTRY_RELEASE = {
                   prod: n
                 }
               };
-            return (0, c.jsx)(y.m, {
+            return (0, d.jsx)(y.m, {
               payload: s,
-              children: (0, c.jsx)(p, {
+              children: (0, d.jsx)(p, {
                 components: m,
-                children: (0, c.jsx)(h, {
+                children: (0, d.jsx)(h, {
                   payload: e,
                   components: m,
                   componentProps: {
@@ -274,7 +274,7 @@ _global.SENTRY_RELEASE = {
                 })
               })
             })
-          }), [r, o, JSON.stringify(g), JSON.stringify(b)])
+          }), [r, o, JSON.stringify(g), JSON.stringify(_)])
         }
     }
   }

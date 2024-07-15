@@ -18,8 +18,8 @@ _global.SENTRY_RELEASE = {
   [400], {
     576: (e, t, n) => {
       var o = n(664),
-        r = Symbol.for("react.element"),
-        a = (Symbol.for("react.fragment"), Object.prototype.hasOwnProperty),
+        a = Symbol.for("react.element"),
+        r = (Symbol.for("react.fragment"), Object.prototype.hasOwnProperty),
         s = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         l = {
           key: !0,
@@ -28,18 +28,18 @@ _global.SENTRY_RELEASE = {
           __source: !0
         };
       t.jsx = function(e, t, n) {
-        var o, c = {},
-          d = null,
+        var o, d = {},
+          c = null,
           i = null;
-        for (o in void 0 !== n && (d = "" + n), void 0 !== t.key && (d = "" + t.key), void 0 !== t.ref && (i = t.ref), t) a.call(t, o) && !l.hasOwnProperty(o) && (c[o] = t[o]);
+        for (o in void 0 !== n && (c = "" + n), void 0 !== t.key && (c = "" + t.key), void 0 !== t.ref && (i = t.ref), t) r.call(t, o) && !l.hasOwnProperty(o) && (d[o] = t[o]);
         if (e && e.defaultProps)
-          for (o in t = e.defaultProps) void 0 === c[o] && (c[o] = t[o]);
+          for (o in t = e.defaultProps) void 0 === d[o] && (d[o] = t[o]);
         return {
-          $$typeof: r,
+          $$typeof: a,
           type: e,
-          key: d,
+          key: c,
           ref: i,
-          props: c,
+          props: d,
           _owner: s.current
         }
       }
@@ -51,7 +51,7 @@ _global.SENTRY_RELEASE = {
       n.r(t), n.d(t, {
         ArraySort: () => u,
         Platform: () => l,
-        Platforms: () => c,
+        Platforms: () => d,
         detectIfWeShouldAnchorSomewhere: () => s,
         downloadFile: () => x,
         findPlatform: () => i,
@@ -63,12 +63,12 @@ _global.SENTRY_RELEASE = {
         isGen9Platform: () => v,
         nestFlattenedObject: () => m,
         prettyPrint: () => w,
-        scrollToElement: () => a,
+        scrollToElement: () => r,
         stripHTML: () => g
       });
       var o = n(660),
-        r = n.n(o);
-      const a = e => {
+        a = n.n(o);
+      const r = e => {
           let {
             element: t
           } = e;
@@ -83,7 +83,7 @@ _global.SENTRY_RELEASE = {
           } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
           const t = new URLSearchParams(document.location.search),
             n = document.getElementById(t.get(e));
-          n && a({
+          n && r({
             element: n
           })
         };
@@ -93,7 +93,7 @@ _global.SENTRY_RELEASE = {
           this.name = e, this.friendlyName = t, this.id = n, this.alias = o
         }
       }
-      const c = Object.freeze({
+      const d = Object.freeze({
           pc: new l("pc", "PC", 8),
           ps: new l("ps", "PlayStation", 3),
           ps3: new l("ps3", "PlayStation 3", 2),
@@ -105,13 +105,13 @@ _global.SENTRY_RELEASE = {
           xboxsx: new l("xboxsx", "Xbox Series X|S", 21, "xboxseriesxs"),
           switch: new l("switch", "Nintendo Switch™", 18)
         }),
-        d = Object.freeze(Object.values(c));
+        c = Object.freeze(Object.values(d));
 
       function i(e) {
         if (!e) return;
         if (e instanceof l) return e;
         const t = e.toString().toLowerCase();
-        return d.find((e => t === e.name || t === e.id.toString() || t === e.friendlyName.toLowerCase() || t === e.alias?.toLowerCase()))
+        return c.find((e => t === e.name || t === e.id.toString() || t === e.friendlyName.toLowerCase() || t === e.alias?.toLowerCase()))
       }
       var f = n(240);
       const p = e => e.keys().forEach(e),
@@ -137,8 +137,8 @@ _global.SENTRY_RELEASE = {
           let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "";
           const n = {};
           return Object.keys(e).forEach((o => {
-            const r = t ? `${t}.${o}` : o;
-            "object" == typeof e[o] && null !== e[o] ? Object.assign(n, b(e[o], r)) : n[r] = e[o]
+            const a = t ? `${t}.${o}` : o;
+            "object" == typeof e[o] && null !== e[o] ? Object.assign(n, b(e[o], a)) : n[a] = e[o]
           })), n
         },
         m = e => {
@@ -146,15 +146,15 @@ _global.SENTRY_RELEASE = {
           return Object.keys(e).forEach((n => {
             if (n.indexOf(".") > -1) {
               const o = e[n],
-                a = n.split(".").reverse().reduce(((e, t, n) => 1 === n ? {
+                r = n.split(".").reverse().reduce(((e, t, n) => 1 === n ? {
                   [t]: {
                     [e]: o
                   }
                 } : {
                   [t]: e
                 }));
-              r().merge(t, a)
-            } else r().merge(t, {
+              a().merge(t, r)
+            } else a().merge(t, {
               [n]: e[n]
             })
           })), t
@@ -198,8 +198,8 @@ _global.SENTRY_RELEASE = {
             console.log(e)
           }))
         },
-        _ = () => [c.xbox360.name, c.xboxone.name, c.ps3.name, c.ps4.name, c.pc.name],
-        k = () => [c.xboxsx.name, c.ps5.name],
+        _ = () => [d.xbox360.name, d.xboxone.name, d.ps3.name, d.ps4.name, d.pc.name],
+        k = () => [d.xboxsx.name, d.ps5.name],
         v = e => k().includes(e)
     }
   }

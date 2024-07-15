@@ -99,8 +99,8 @@ _global.SENTRY_RELEASE = {
             children: s("trilogy.pre-order-now")
           })
         })),
-        b = "rockstargames-sites-gta-trilogya0b342d557fa7f9e2c7aa7701c8150e7",
-        h = (0, n.withTranslations)((e => {
+        h = "rockstargames-sites-gta-trilogya0b342d557fa7f9e2c7aa7701c8150e7",
+        b = (0, n.withTranslations)((e => {
           let {
             logoVariant: s = "full",
             className: a = "",
@@ -125,23 +125,23 @@ _global.SENTRY_RELEASE = {
               }), (0, i.jsx)(f, {}), (0, i.jsxs)("div", {
                 className: "rockstargames-sites-gta-trilogyd17090820a2431a292835621e09a5d59",
                 children: [(0, i.jsx)("img", {
-                  className: b,
+                  className: h,
                   src: t(9652),
                   alt: "PS5|PS4"
                 }), (0, i.jsx)("img", {
-                  className: b,
+                  className: h,
                   src: t(9336),
                   alt: "XBOX SERIES X|S"
                 }), (0, i.jsx)("img", {
-                  className: b,
+                  className: h,
                   src: t(4400),
                   alt: "XBOX ONE"
                 }), (0, i.jsx)("img", {
-                  className: b,
+                  className: h,
                   src: t(5224),
                   alt: "Nintendo Switch"
                 }), (0, i.jsx)("img", {
-                  className: b,
+                  className: h,
                   src: t(3111),
                   alt: "PC"
                 })]
@@ -155,7 +155,7 @@ _global.SENTRY_RELEASE = {
           children: [(0, i.jsx)("div", {
             className: "rockstargames-sites-gta-trilogyf78809f3a6f868ddbb69bf0dc94f8608",
             children: (0, i.jsx)(o, {})
-          }), (0, i.jsx)(h, {
+          }), (0, i.jsx)(b, {
             className: "rockstargames-sites-gta-trilogyc0e6ab6e0547bff20fa5beb941851297",
             logoVariant: "full"
           })]
@@ -409,15 +409,15 @@ _global.SENTRY_RELEASE = {
             FadeFOBTriggers: d,
             FadeFOBTriggersText: n,
             FadeFOBTriggersGirl: g
-          } = c, [l, f] = (0, w.useState)(null), [b, h] = (0, w.useState)(null), [p, x] = (0, w.useState)(null), [u, j] = (0, w.useState)(null);
+          } = c, [l, f] = (0, w.useState)(null), [h, b] = (0, w.useState)(null), [p, x] = (0, w.useState)(null), [u, j] = (0, w.useState)(null);
           (0, w.useEffect)((() => {
             const e = () => {
               let e, s, t, a;
-              window.innerWidth < 768 ? (e = .3, s = 1.1 * e, t = .05, a = .1) : window.innerWidth >= 768 && window.innerWidth < 1024 ? (e = .22, s = .8 * e, t = .05, a = .2) : window.innerWidth >= 1024 && window.innerWidth < 1920 || window.innerWidth >= 1920 && window.innerWidth < 2560 ? (e = .15, s = .6 * e, t = .05, a = .2) : window.innerWidth >= 2560 && (e = .11, s = .6 * e, t = .1, a = .2), f(e), h(s), x(t), j(a)
+              window.innerWidth < 768 ? (e = .3, s = 1.1 * e, t = .05, a = .1) : window.innerWidth >= 768 && window.innerWidth < 1024 ? (e = .22, s = .8 * e, t = .05, a = .2) : window.innerWidth >= 1024 && window.innerWidth < 1920 || window.innerWidth >= 1920 && window.innerWidth < 2560 ? (e = .15, s = .6 * e, t = .05, a = .2) : window.innerWidth >= 2560 && (e = .11, s = .6 * e, t = .1, a = .2), f(e), b(s), x(t), j(a)
             };
             return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
           }), []);
-          const k = (0, L.useTransform)(o, d, [window.innerWidth * l, window.innerWidth * b]),
+          const k = (0, L.useTransform)(o, d, [window.innerWidth * l, window.innerWidth * h]),
             y = (0, L.useTransform)(o, d, [window.innerHeight * p, window.innerHeight * u]),
             _ = (0, L.useTransform)(o, g, [1, 0]),
             v = (0, L.useTransform)(o, n, [0, 1]);
@@ -467,11 +467,11 @@ _global.SENTRY_RELEASE = {
           } = a, {
             vh: l,
             finalColumnWidth: f,
-            gameDescriptionWidth: b,
-            gameDescriptionHeight: h,
+            gameDescriptionWidth: h,
+            gameDescriptionHeight: b,
             imageGridGap: p,
             transitionDistance: x
-          } = r, u = (0, L.useTransform)(c, m, [f, f, f, b]), j = (0, L.useTransform)(c, g, [0, 0, 0, (l - h) / 2, (l - h) / 2, (l - h) / 2]), k = (0, L.useTransform)(c, g, [0, 0, 0, b + p, b + p, b - x]), y = (0, L.useTransform)(c, [o, o + 1, o + d, o + n], [l, l, l, h]);
+          } = r, u = (0, L.useTransform)(c, m, [f, f, f, h]), j = (0, L.useTransform)(c, g, [0, 0, 0, (l - b) / 2, (l - b) / 2, (l - b) / 2]), k = (0, L.useTransform)(c, g, [0, 0, 0, h + p, h + p, h - x]), y = (0, L.useTransform)(c, [o, o + 1, o + d, o + n], [l, l, l, b]);
           return (0, i.jsx)($, {
             gameSlug: s,
             style: {
@@ -503,11 +503,11 @@ _global.SENTRY_RELEASE = {
             vh: g,
             initialMiddleWidth: l,
             finalColumnWidth: f,
-            gameDescriptionWidth: b,
-            gameDescriptionHeight: h,
+            gameDescriptionWidth: h,
+            gameDescriptionHeight: b,
             imageGridGap: p,
             transitionDistance: x
-          } = a, u = (0, L.useTransform)(r, n, [l, f, f, b]), j = (0, L.useTransform)(r, m, [0, 0, 0, (g - h) / 2, (g - h) / 2, (g - h) / 2]), k = (0, L.useTransform)(r, m, [0, 0, 0, b + p, b + p, b - x]), y = (0, L.useTransform)(r, [c, c + 1, c + o, c + d], [g, g, g, h]);
+          } = a, u = (0, L.useTransform)(r, n, [l, f, f, h]), j = (0, L.useTransform)(r, m, [0, 0, 0, (g - b) / 2, (g - b) / 2, (g - b) / 2]), k = (0, L.useTransform)(r, m, [0, 0, 0, h + p, h + p, h - x]), y = (0, L.useTransform)(r, [c, c + 1, c + o, c + d], [g, g, g, b]);
           return (0, i.jsxs)($, {
             gameSlug: "VC",
             style: {
@@ -735,7 +735,7 @@ _global.SENTRY_RELEASE = {
                 children: (0, i.jsx)("img", {
                   src: t(4600)
                 })
-              }), (0, i.jsx)(h, {
+              }), (0, i.jsx)(b, {
                 className: "rockstargames-sites-gta-trilogye3d53937910b56e85b616c18d3fefae2",
                 logoVariant: "horizontal"
               })]
