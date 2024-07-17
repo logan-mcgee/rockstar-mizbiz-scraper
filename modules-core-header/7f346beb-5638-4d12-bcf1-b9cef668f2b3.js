@@ -1,8 +1,8 @@
 ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      d = (new Error).stack;
-    d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "7f346beb-5638-4d12-bcf1-b9cef668f2b3", e._sentryDebugIdIdentifier = "sentry-dbid-7f346beb-5638-4d12-bcf1-b9cef668f2b3")
+      n = (new Error).stack;
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "7f346beb-5638-4d12-bcf1-b9cef668f2b3", e._sentryDebugIdIdentifier = "sentry-dbid-7f346beb-5638-4d12-bcf1-b9cef668f2b3")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -16,36 +16,36 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [412], {
-    64508: (e, d, n) => {
-      var o = n(77364);
-      d.C = o.createRoot, o.hydrateRoot
+    64508: (e, n, a) => {
+      var d = a(77364);
+      n.C = d.createRoot, d.hydrateRoot
     },
-    66412: (e, d, n) => {
-      n.r(d);
-      var o = n(61076),
-        a = n(25144),
-        t = n(64508),
-        r = n(12652),
-        l = n(95240);
+    66412: (e, n, a) => {
+      a.r(n);
+      var d = a(61076),
+        o = a(25144),
+        t = a(64508),
+        r = a(12652),
+        l = a(95240);
       const {
         graphEnv: f,
         pingBearer: s
-      } = (0, a.S_)();
+      } = (0, o.S_)();
 
-      function b() {
+      function c() {
         const e = document.createElement("div");
         e.id = "global-nav-root", document.body.prepend(e);
-        const d = (0, t.C)(e),
-          n = (0, o.EB)(r.c, {
+        const n = (0, t.C)(e),
+          a = (0, d.EB)(r.c, {
             env: f,
-            token: (0, o.UT)(null),
-            tokenPing: (0, o.UT)(s),
-            tokenPingExpires: (0, o.UT)(null),
+            token: (0, d.UT)(null),
+            tokenPing: (0, d.UT)(s),
+            tokenPingExpires: (0, d.UT)(null),
             typePolicies: {}
           });
-        d.render((0, l.jsx)(n, {}))
+        n.render((0, l.jsx)(a, {}))
       }
-      "loading" === document.readyState ? document.addEventListener("DOMContentLoaded", b) : b()
+      "loading" === document.readyState ? document.addEventListener("DOMContentLoaded", c) : c()
     }
   }
 ]);

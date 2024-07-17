@@ -2,7 +2,7 @@
   try {
     var a = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       e = (new Error).stack;
-    e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "4448f372-d2c1-4c08-a84a-1bdbc47bb6ce", a._sentryDebugIdIdentifier = "sentry-dbid-4448f372-d2c1-4c08-a84a-1bdbc47bb6ce")
+    e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "971bbb2c-876a-4f1c-a5ed-d50ee7ac3526", a._sentryDebugIdIdentifier = "sentry-dbid-971bbb2c-876a-4f1c-a5ed-d50ee7ac3526")
   } catch (a) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -7179,7 +7179,8 @@ _global.SENTRY_RELEASE = {
                   onUpdate: a => {
                     v(a)
                   },
-                  start: "140px"
+                  start: "140px",
+                  end: 999999999
                 }
               })
             }));

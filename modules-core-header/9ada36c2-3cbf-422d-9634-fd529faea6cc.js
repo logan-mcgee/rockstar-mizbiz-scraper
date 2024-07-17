@@ -22,7 +22,7 @@ _global.SENTRY_RELEASE = {
         Manager: () => u,
         Popper: () => _,
         Reference: () => k,
-        usePopper: () => g
+        usePopper: () => b
       });
       var n = r(51664),
         o = n.createContext(),
@@ -73,15 +73,15 @@ _global.SENTRY_RELEASE = {
         p = r(18892),
         y = r(33928),
         m = r.n(y),
-        b = [],
-        g = function(e, t, r) {
+        g = [],
+        b = function(e, t, r) {
           void 0 === r && (r = {});
           var o = n.useRef(null),
             a = {
               onFirstUpdate: r.onFirstUpdate,
               placement: r.placement || "bottom",
               strategy: r.strategy || "absolute",
-              modifiers: r.modifiers || b
+              modifiers: r.modifiers || g
             },
             u = n.useState({
               styles: {
@@ -132,23 +132,23 @@ _global.SENTRY_RELEASE = {
               };
               return m()(o.current, e) ? o.current || e : (o.current = e, e)
             }), [a.onFirstUpdate, a.placement, a.strategy, a.modifiers, s]),
-            g = n.useRef();
+            b = n.useRef();
           return l((function() {
-            g.current && g.current.setOptions(y)
+            b.current && b.current.setOptions(y)
           }), [y]), l((function() {
             if (null != e && null != t) {
               var n = (r.createPopper || p.createPopper)(e, t, y);
-              return g.current = n,
+              return b.current = n,
                 function() {
-                  n.destroy(), g.current = null
+                  n.destroy(), b.current = null
                 }
             }
           }), [e, t, r.createPopper]), {
-            state: g.current ? g.current.state : null,
+            state: b.current ? b.current.state : null,
             styles: f.styles,
             attributes: f.attributes,
-            update: g.current ? g.current.update : null,
-            forceUpdate: g.current ? g.current.forceUpdate : null
+            update: b.current ? b.current.update : null,
+            forceUpdate: b.current ? b.current.forceUpdate : null
           }
         },
         v = function() {},
@@ -169,9 +169,9 @@ _global.SENTRY_RELEASE = {
           p = e.innerRef,
           y = e.children,
           m = n.useContext(o),
-          b = n.useState(null),
-          _ = b[0],
-          E = b[1],
+          g = n.useState(null),
+          _ = g[0],
+          E = g[1],
           S = n.useState(null),
           k = S[0],
           M = S[1];
@@ -192,7 +192,7 @@ _global.SENTRY_RELEASE = {
               }])
             }
           }), [r, u, d, c, k]),
-          P = g(l || m, _, O),
+          P = b(l || m, _, O),
           R = P.state,
           U = P.styles,
           x = P.forceUpdate,

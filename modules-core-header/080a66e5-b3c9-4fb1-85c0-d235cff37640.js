@@ -20,25 +20,25 @@ _global.SENTRY_RELEASE = {
       o.r(a), o.d(a, {
         default: () => l
       });
-      var d = o(51664),
-        n = o(98584),
-        t = o(95240);
+      var n = o(51664),
+        t = o(98584),
+        d = o(95240);
       const l = e => {
         let {
           basename: a,
           children: o,
           history: l
         } = e;
-        const [f, s] = (0, d.useState)({
+        const [f, s] = (0, n.useState)({
           action: l.action,
           location: l.location
         });
-        return (0, d.useLayoutEffect)((() => l.listen(((e, a) => {
+        return (0, n.useLayoutEffect)((() => l.listen(((e, a) => {
           s({
             location: e,
             action: a
           })
-        }))), [l]), (0, t.jsx)(n.Router, {
+        }))), [l]), (0, d.jsx)(t.Router, {
           basename: a,
           location: f.location,
           navigationType: f.action,

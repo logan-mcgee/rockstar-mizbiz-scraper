@@ -20,7 +20,7 @@ _global.SENTRY_RELEASE = {
       "use strict";
       n.d(t, {
         U: () => o,
-        c: () => a
+        c: () => i
       });
       const o = {
           www: "www",
@@ -28,7 +28,7 @@ _global.SENTRY_RELEASE = {
           support: "support",
           store: "store"
         },
-        i = [{
+        a = [{
           id: "prod",
           sites: {
             www: "www",
@@ -38,22 +38,22 @@ _global.SENTRY_RELEASE = {
           },
           cookieIdentifier: "prod"
         }],
-        a = () => {
+        i = () => {
           let e;
           const {
             location: t
-          } = window, n = t.hostname.substring(0, t.hostname.indexOf(".rockstargames.com")), o = i.findIndex((t => Object.entries(t.sites).findIndex((t => {
-            let [o, i] = t;
-            return i === n && (e = {
+          } = window, n = t.hostname.substring(0, t.hostname.indexOf(".rockstargames.com")), o = a.findIndex((t => Object.entries(t.sites).findIndex((t => {
+            let [o, a] = t;
+            return a === n && (e = {
               site: o,
-              subDomain: i
+              subDomain: a
             }, !0)
-          })) >= 0)), a = i[o >= 0 ? o : 0];
+          })) >= 0)), i = a[o >= 0 ? o : 0];
           return e || (e = {
             site: "www",
             subDomain: "local"
           }), {
-            ...a,
+            ...i,
             currentSite: e
           }
         }
@@ -67,7 +67,7 @@ _global.SENTRY_RELEASE = {
         aU: () => P,
         cQ: () => x,
         UL: () => y,
-        gh: () => i.g,
+        gh: () => a.g,
         Wy: () => U,
         aI: () => D,
         vb: () => $,
@@ -75,8 +75,8 @@ _global.SENTRY_RELEASE = {
         EB: () => V
       });
       var o = n(46516),
-        i = n(75896),
-        a = n(51664),
+        a = n(75896),
+        i = n(51664),
         r = n(4914),
         s = n(49996),
         l = n(48516),
@@ -85,7 +85,7 @@ _global.SENTRY_RELEASE = {
         u = n.n(d),
         g = n(55806);
       const m = (e, t) => {
-        const n = (0, i.g)(g.EH),
+        const n = (0, a.g)(g.EH),
           o = {
             autoSetError: !0,
             autoSetLoading: !1,
@@ -102,7 +102,7 @@ _global.SENTRY_RELEASE = {
             error: l,
             ...d
           } = (0, c.U)(e, o);
-        return (0, a.useEffect)((() => {
+        return (0, i.useEffect)((() => {
           if (r && o.setTitleDataPath) {
             const e = u().get(r, o.setTitleDataPath) ?? null;
             e && window.postMessage({
@@ -110,7 +110,7 @@ _global.SENTRY_RELEASE = {
               title: e
             })
           }
-        }), [r]), (0, a.useEffect)((() => (o.autoSetLoading && window.postMessage({
+        }), [r]), (0, i.useEffect)((() => (o.autoSetLoading && window.postMessage({
           type: "graph.loadingUpdate",
           loading: s
         }), () => {
@@ -118,7 +118,7 @@ _global.SENTRY_RELEASE = {
             type: "graph.loadingUpdate",
             loading: !1
           })
-        })), [s]), (0, a.useEffect)((() => {
+        })), [s]), (0, i.useEffect)((() => {
           if (o.autoSetError && l) throw new Error(String(l))
         }), [l]), {
           loading: s,
@@ -128,7 +128,7 @@ _global.SENTRY_RELEASE = {
         }
       };
       var p = n(95240);
-      const w = (0, a.createContext)((() => ({
+      const w = (0, i.createContext)((() => ({
           data: null
         }))),
         h = new Promise((e => {
@@ -144,7 +144,7 @@ _global.SENTRY_RELEASE = {
           reset: () => null,
           client: window?.["apollo-client"] ?? (window["apollo-client"] = new s.u(f))
         }],
-        v = (0, a.createContext)((() => k)),
+        v = (0, i.createContext)((() => k)),
         b = window?.["apollo-graph-provider"] ?? (window["apollo-graph-provider"] = e => {
           let {
             children: t
@@ -157,12 +157,12 @@ _global.SENTRY_RELEASE = {
             })
           })
         }),
-        y = window?.["apollo-use-query"] ?? (window["apollo-use-query"] = (e, t) => (0, a.useContext)(w)(e, t)),
-        x = window?.["apollo-use-mutation"] ?? (window["apollo-use-mutation"] = e => (0, a.useContext)(v)(e)),
-        E = (0, a.createContext)({}),
-        S = () => (0, a.useContext)(E),
-        T = (0, a.createContext)({}),
-        P = () => (0, a.useContext)(T);
+        y = window?.["apollo-use-query"] ?? (window["apollo-use-query"] = (e, t) => (0, i.useContext)(w)(e, t)),
+        x = window?.["apollo-use-mutation"] ?? (window["apollo-use-mutation"] = e => (0, i.useContext)(v)(e)),
+        E = (0, i.createContext)({}),
+        S = () => (0, i.useContext)(E),
+        T = (0, i.createContext)({}),
+        P = () => (0, i.useContext)(T);
       var _ = n(78244);
       const C = "graph-token-context",
         N = {
@@ -170,19 +170,19 @@ _global.SENTRY_RELEASE = {
           tokenPing: (0, o.UT)("tokenPing"),
           tokenPingExpires: (0, o.UT)(100)
         },
-        j = window?.[C] ?? (window[C] = (0, a.createContext)(N)),
+        j = window?.[C] ?? (window[C] = (0, i.createContext)(N)),
         L = e => {
           let {
             children: t,
             token: n,
             tokenPing: o,
-            tokenPingExpires: i
+            tokenPingExpires: a
           } = e;
           return (0, p.jsx)(j.Provider, {
             value: {
               token: n,
               tokenPing: o,
-              tokenPingExpires: i
+              tokenPingExpires: a
             },
             children: t
           })
@@ -192,12 +192,12 @@ _global.SENTRY_RELEASE = {
             token: e,
             tokenPing: t,
             tokenPingExpires: n
-          } = (0, a.useContext)(j);
+          } = (0, i.useContext)(j);
           return [e, t, n]
         },
         U = () => {
           const [e] = $();
-          return (0, i.g)(e)
+          return (0, a.g)(e)
         },
         D = () => {
           const [e, t, n] = $();
@@ -207,21 +207,21 @@ _global.SENTRY_RELEASE = {
               token: n,
               tokenPingExpires: o
             } = e;
-            const i = t?.();
+            const a = t?.();
             try {
               const e = o?.() ?? 0,
                 t = n?.() ?? null,
-                a = (e => {
+                i = (e => {
                   const t = Date.now() / 1e3;
                   return Math.ceil(e - t)
                 })(e) > 0;
               if (!1 === t) return {
                 bearerToken: t
               };
-              if (a && t) return {
+              if (i && t) return {
                 bearerToken: t
               };
-              const r = await fetch(i, {
+              const r = await fetch(a, {
                   credentials: "include",
                   method: "POST",
                   headers: {
@@ -257,13 +257,13 @@ _global.SENTRY_RELEASE = {
             graphOptions: n,
             typePolicies: o
           } = e;
-          const i = (e => {
+          const a = (e => {
             let {
               graphOptions: t,
               typePolicies: n = {}
             } = e;
             const o = t?.env ? F(t?.env) : t?.uri,
-              [i] = (0, a.useState)(new r.Y({
+              [a] = (0, i.useState)(new r.Y({
                 typePolicies: n
               })),
               l = z.concat((e => {
@@ -274,11 +274,11 @@ _global.SENTRY_RELEASE = {
                   let {
                     headers: o
                   } = n;
-                  const i = t?.() ?? null;
-                  return i ? {
+                  const a = t?.() ?? null;
+                  return a ? {
                     headers: {
                       ...o,
-                      authorization: `Bearer ${i}`
+                      authorization: `Bearer ${a}`
                     }
                   } : null
                 }))
@@ -292,7 +292,7 @@ _global.SENTRY_RELEASE = {
                 uri: o
               })));
             return new s.u({
-              cache: i,
+              cache: a,
               link: l
             })
           })({
@@ -304,7 +304,7 @@ _global.SENTRY_RELEASE = {
             tokenPing: n?.tokenPing,
             tokenPingExpires: n?.tokenPingExpires,
             children: (0, p.jsx)(_.g, {
-              client: i,
+              client: a,
               children: (0, p.jsx)(b, {
                 children: t
               })
@@ -313,9 +313,9 @@ _global.SENTRY_RELEASE = {
         },
         q = e => {
           const t = "__makevars__";
-          return window?.[t] || (window[t] = {}), window?.[t]?.[e] || (window[t][e] = {}), ((e, t) => (n, i) => {
-            const a = window?.[e]?.[t]?.[n] ?? (0, o.UT)(i);
-            return window[e][t][n] = a, a
+          return window?.[t] || (window[t] = {}), window?.[t]?.[e] || (window[t][e] = {}), ((e, t) => (n, a) => {
+            const i = window?.[e]?.[t]?.[n] ?? (0, o.UT)(a);
+            return window[e][t][n] = i, i
           })(t, e)
         },
         X = q("graph-with-rs-graph"),
@@ -323,8 +323,8 @@ _global.SENTRY_RELEASE = {
           let {
             env: n = "prod",
             typePolicies: o,
-            token: i = X("token", null),
-            tokenPingExpires: a = X("tokenPingExpires", null),
+            token: a = X("token", null),
+            tokenPingExpires: i = X("tokenPingExpires", null),
             tokenPing: r = X("token", null)
           } = t;
           return function(t) {
@@ -333,9 +333,9 @@ _global.SENTRY_RELEASE = {
               graphOptions: {
                 env: n,
                 useGETForQueries: !0,
-                token: i,
+                token: a,
                 tokenPing: r,
-                tokenPingExpires: a
+                tokenPingExpires: i
               },
               children: (0, p.jsx)(e, {
                 ...t
@@ -362,14 +362,14 @@ _global.SENTRY_RELEASE = {
     55806: (e, t, n) => {
       "use strict";
       n.d(t, {
-        EH: () => i
+        EH: () => a
       });
       var o = n(46516);
-      const i = (0, o.UT)(document.documentElement.lang),
-        a = window?.env,
+      const a = (0, o.UT)(document.documentElement.lang),
+        i = window?.env,
         r = ((0, o.UT)({
-          media: a?.cdn?.media,
-          videos: a?.cdn?.videos
+          media: i?.cdn?.media,
+          videos: i?.cdn?.videos
         }), document.currentScript),
         s = r?.src ? new URL(r.src).origin : "";
       let l = document.getElementsByTagName("base")[0]?.getAttribute("href") ?? `${s}/`;
@@ -381,8 +381,8 @@ _global.SENTRY_RELEASE = {
         c: () => m
       });
       var o = n(92560),
-        i = n(50632),
-        a = n.n(i),
+        a = n(50632),
+        i = n.n(a),
         r = n(73660),
         s = n.n(r),
         l = n(42991),
@@ -393,7 +393,7 @@ _global.SENTRY_RELEASE = {
         let {
           fetchOptions: t = {},
           finalFetchOptions: n = {},
-          query: i = null,
+          query: a = null,
           pingBearer: r,
           requireBearerToken: l = !0,
           useCache: c = !0
@@ -410,12 +410,12 @@ _global.SENTRY_RELEASE = {
             }
           };
           let w = `${d}/${e}`;
-          if (null === i || s().isEmpty(i) || (w += `?${new URLSearchParams(i)}`), !m && l) return null;
+          if (null === a || s().isEmpty(a) || (w += `?${new URLSearchParams(a)}`), !m && l) return null;
           m && (p.Authorization = `Bearer ${m}`);
           const h = {
               headers: p
             },
-            f = a().all([h, t, n]),
+            f = i().all([h, t, n]),
             k = JSON.stringify({
               ...f,
               url: w
@@ -448,12 +448,12 @@ _global.SENTRY_RELEASE = {
         c: () => s
       });
       const o = window?.env?.sc,
-        i = window?.env?.marketing,
-        a = e => {
+        a = window?.env?.marketing,
+        i = e => {
           let {
             apiHost: t,
             authHost: n,
-            clientId: a,
+            clientId: i,
             graphEnv: r,
             scHost: s,
             hostname: l,
@@ -464,8 +464,8 @@ _global.SENTRY_RELEASE = {
           const g = o?.apiHost ?? t,
             m = o?.authHost ?? n,
             p = o?.cdnBase ?? c,
-            w = o?.clientId ?? a,
-            h = i?.marketingAuthTLD ?? u,
+            w = o?.clientId ?? i,
+            h = a?.marketingAuthTLD ?? u,
             f = o?.scHost ?? s;
           return {
             apiHost: `https://${g}.rockstargames.com`,
@@ -484,7 +484,7 @@ _global.SENTRY_RELEASE = {
             pingBearer: `https://${h}/auth/ping-bearer.json`
           }
         },
-        r = [a({
+        r = [i({
           key: "prod",
           clientId: "rsg",
           graphEnv: "prod",
@@ -494,7 +494,7 @@ _global.SENTRY_RELEASE = {
           hostname: /www/,
           cdnBase: "https://s.rsg.sc/sc",
           marketingAuthTLD: "www.rockstargames.com"
-        }), a({
+        }), i({
           key: "sc-prod",
           clientId: "socialclub",
           graphEnv: "prod",
@@ -540,9 +540,9 @@ _global.SENTRY_RELEASE = {
         c: () => l
       });
       var o = n(15908),
-        i = n.n(o);
-      const a = (0, n(53592).c)(),
-        r = a?.id,
+        a = n.n(o);
+      const i = (0, n(53592).c)(),
+        r = i?.id,
         s = /Mobi/i.test(window.navigator.userAgent) ? "mobile" : "desktop",
         l = e => {
           const t = {
@@ -550,7 +550,7 @@ _global.SENTRY_RELEASE = {
             environment: r,
             display_type: s
           };
-          i().dataLayer({
+          a().dataLayer({
             dataLayer: t
           })
         }
@@ -558,17 +558,17 @@ _global.SENTRY_RELEASE = {
     72908: (e, t, n) => {
       "use strict";
       n.d(t, {
-        y_: () => a,
+        y_: () => i,
         kJ: () => s,
         i0: () => l,
         kj: () => d
       });
       var o = n(61076),
-        i = n(55806);
-      const a = () => (0, o.gh)(i.EH);
+        a = n(55806);
+      const i = () => (0, o.gh)(a.EH);
       var r = n(51664);
       const s = e => {
-        const [t, n] = (0, r.useState)(null), [o, i] = (0, r.useState)(null), [a, s] = (0, r.useState)({});
+        const [t, n] = (0, r.useState)(null), [o, a] = (0, r.useState)(null), [i, s] = (0, r.useState)({});
         return (0, r.useLayoutEffect)((() => {
           let t = new Image,
             o = !1;
@@ -578,11 +578,11 @@ _global.SENTRY_RELEASE = {
               height: t.height
             }), t = null, o || n(!0)
           })), t.addEventListener("error", (() => {
-            t = null, o || (n(!1), i(!0))
+            t = null, o || (n(!1), a(!0))
           })), t.src = e, () => {
             o = !0, null !== t && (t.src = "")
           }
-        }), [e]), [t, a]
+        }), [e]), [t, i]
       };
       n(57013);
       const l = e => {
@@ -634,13 +634,13 @@ _global.SENTRY_RELEASE = {
         i0: () => x.i0,
         ym: () => D,
         bk: () => z,
-        S6: () => a,
+        S6: () => i,
         au: () => l,
         Ux: () => m
       });
       var o = n(99928),
-        i = n(95240);
-      const a = e => t => ((e, t) => (0, i.jsx)(e, {
+        a = n(95240);
+      const i = e => t => ((e, t) => (0, a.jsx)(e, {
         ...t,
         gtmTrack: e => {
           (0, o.c)(e)
@@ -650,7 +650,7 @@ _global.SENTRY_RELEASE = {
         s = n(55806);
       const l = e => t => ((e, t) => {
         const n = (0, r.gh)(s.EH);
-        return (0, i.jsx)(e, {
+        return (0, a.jsx)(e, {
           ...t,
           locale: n
         })
@@ -673,7 +673,7 @@ _global.SENTRY_RELEASE = {
             });
             return t ? e => t?.translations.find((t => t.key === e))?.value ?? e : null
           }(n);
-          return o ? (0, i.jsx)(e, {
+          return o ? (0, a.jsx)(e, {
             ...t,
             t: o
           }) : null
@@ -804,13 +804,13 @@ _global.SENTRY_RELEASE = {
           return Object.keys(H).map((t => {
             const {
               min: o,
-              max: i
-            } = H[t], a = e >= o && e <= i, r = e >= o;
+              max: a
+            } = H[t], i = e >= o && e <= a, r = e >= o;
             n[t] = {
-              activeExact: a,
+              activeExact: i,
               activeMin: r,
               min: o,
-              max: i
+              max: a
             }
           })), {
             isMobile: e < H.sm.min,
@@ -837,7 +837,7 @@ _global.SENTRY_RELEASE = {
             return window.addEventListener("resize", e), () => {
               window.removeEventListener("resize", e)
             }
-          }), []), (0, i.jsx)(I.Provider, {
+          }), []), (0, a.jsx)(I.Provider, {
             value: n,
             children: t
           })
@@ -851,10 +851,10 @@ _global.SENTRY_RELEASE = {
       "use strict";
       var o = n(51664);
       n(95240);
-      const i = (0, o.createContext)(),
+      const a = (0, o.createContext)(),
         {
-          Consumer: a
-        } = i
+          Consumer: i
+        } = a
     },
     2148: (e, t, n) => {
       "use strict";
@@ -1002,7 +1002,7 @@ _global.SENTRY_RELEASE = {
       };
       var o = {};
 
-      function i(e, t) {
+      function a(e, t) {
         for (var n = 0; n < e.definitions.length; n++) {
           var o = e.definitions[n];
           if (o.name && o.name.value == t) return o
@@ -1016,13 +1016,13 @@ _global.SENTRY_RELEASE = {
       })), e.exports = t, e.exports.Translations = function(e, t) {
         var n = {
           kind: e.kind,
-          definitions: [i(e, t)]
+          definitions: [a(e, t)]
         };
         e.hasOwnProperty("loc") && (n.loc = e.loc);
-        var a = o[t] || new Set,
+        var i = o[t] || new Set,
           r = new Set,
           s = new Set;
-        for (a.forEach((function(e) {
+        for (i.forEach((function(e) {
             s.add(e)
           })); s.size > 0;) {
           var l = s;
@@ -1033,7 +1033,7 @@ _global.SENTRY_RELEASE = {
           }))
         }
         return r.forEach((function(t) {
-          var o = i(e, t);
+          var o = a(e, t);
           o && n.definitions.push(o)
         })), n
       }(t, "Translations")
