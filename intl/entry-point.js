@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       r = (new Error).stack;
-    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "4698e9d9-cd09-497f-b1ee-5ea715edb6e0", e._sentryDebugIdIdentifier = "sentry-dbid-4698e9d9-cd09-497f-b1ee-5ea715edb6e0")
+    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "f2062917-2142-4594-9b90-96de2b8e5e2e", e._sentryDebugIdIdentifier = "sentry-dbid-f2062917-2142-4594-9b90-96de2b8e5e2e")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -27,21 +27,21 @@ _global.SENTRY_RELEASE = {
     execute: function() {
       e((() => {
         var e, n, o, a, i = {
-            364: (e, r, t) => {
-              (0, t(284).G)(1)
+            539: (e, r, t) => {
+              (0, t(403).w)(1)
             },
-            284: (e, r, t) => {
-              const n = t(984).Q;
-              r.G = function(e) {
+            403: (e, r, t) => {
+              const n = t(659).y;
+              r.w = function(e) {
                 if (e || (e = 1), !t.y.meta || !t.y.meta.url) throw console.error("__system_context__", t.y), Error("systemjs-webpack-interop was provided an unknown SystemJS context. Expected context.meta.url, but none was provided");
                 t.p = n(t.y.meta.url, e)
               }
             },
-            824: (e, r, t) => {
-              t(364)
+            160: (e, r, t) => {
+              t(539)
             },
-            984: (e, r, t) => {
-              r.Q = function(e, r) {
+            659: (e, r, t) => {
+              r.y = function(e, r) {
                 var t = document.createElement("a");
                 t.href = e;
                 for (var n = "/" === t.pathname[0] ? t.pathname : "/" + t.pathname, o = 0, a = n.length; o !== r && a >= 0;) "/" === n[--a] && o++;
@@ -51,11 +51,11 @@ _global.SENTRY_RELEASE = {
               };
               Number.isInteger
             },
-            612: (e, r, t) => {
+            243: (e, r, t) => {
               "use strict";
               var n = {
-                  "./index": () => t.e(664).then((() => () => t(664))),
-                  "./messages": () => t.e(160).then((() => () => t(160)))
+                  "./index": () => t.e(785).then((() => () => t(785))),
+                  "./messages": () => t.e(135).then((() => () => t(135)))
                 },
                 o = (e, r) => (t.R = r, r = t.o(n, e) ? n[e]() : Promise.resolve().then((() => {
                   throw new Error('Module "' + e + '" does not exist in container.')
@@ -73,7 +73,7 @@ _global.SENTRY_RELEASE = {
                 init: () => a
               })
             },
-            344: e => {
+            969: e => {
               "use strict";
               e.exports = t
             }
@@ -99,10 +99,10 @@ _global.SENTRY_RELEASE = {
             get: r[t]
           })
         }, l.f = {}, l.e = e => Promise.all(Object.keys(l.f).reduce(((r, t) => (l.f[t](e, r), r)), [])), l.u = e => "js/" + {
-          11: "8896a2c306da518feaf2bceb348c6206",
-          160: "484e5f44a68106aba58e0115faf22489",
-          304: "2b9646265facacfd33eb8f0b84c07d0e",
-          664: "69aabc0f10bd05590b814019ff979ed2"
+          135: "d6fd2d1633847459f994d3fd63b3d498",
+          143: "365702b9023a438cf12afb5c1fbe55b0",
+          667: "441c17cf3648078d547567585964dc0c",
+          785: "700cbad4c8e0baeea044976ee734a554"
         } [e] + ".js", l.miniCssF = e => {}, l.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
@@ -141,9 +141,9 @@ _global.SENTRY_RELEASE = {
             value: !0
           })
         }, o = {
-          304: [61]
+          143: [396]
         }, a = {
-          61: ["default", "./hooks", 344]
+          396: ["default", "./hooks", 969]
         }, l.f.remotes = (e, r) => {
           l.o(o, e) && o[e].forEach((e => {
             var t = l.R;
@@ -193,7 +193,7 @@ _global.SENTRY_RELEASE = {
                 var o = a[e] = a[e] || {},
                   s = o[r];
                 (!s || !s.loaded && (1 != !s.eager ? n : i > s.from)) && (o[r] = {
-                  get: () => Promise.all([l.e(11), l.e(304)]).then((() => () => l(304))),
+                  get: () => Promise.all([l.e(667), l.e(143)]).then((() => () => l(143))),
                   from: i,
                   eager: !1
                 })
@@ -203,7 +203,7 @@ _global.SENTRY_RELEASE = {
                   var r
                 };
                 try {
-                  var o = l(344);
+                  var o = l(969);
                   if (!o) return;
                   var a = e => e && e.init && e.init(l.S[t], n);
                   if (o.then) return s.push(o.then(a, r));
@@ -222,7 +222,7 @@ _global.SENTRY_RELEASE = {
           if (!e && r && (r.currentScript && (e = r.currentScript.src), !e)) {
             var t = r.getElementsByTagName("script");
             if (t.length)
-              for (var n = t.length - 1; n > -1 && !e;) e = t[n--].src
+              for (var n = t.length - 1; n > -1 && (!e || !/^http(s?):/.test(e));) e = t[n--].src
           }
           if (!e) throw new Error("Automatic publicPath is not supported in this browser");
           e = e.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/"), l.p = e
@@ -295,10 +295,10 @@ _global.SENTRY_RELEASE = {
             })),
             o = {},
             a = {
-              272: () => n("default", "@rockstargames/locale-tools", [1, "workspace:*"], (() => Promise.all([l.e(11), l.e(304)]).then((() => () => l(304)))))
+              717: () => n("default", "@rockstargames/locale-tools", [1, "workspace:*"], (() => Promise.all([l.e(667), l.e(143)]).then((() => () => l(143)))))
             },
             i = {
-              160: [272]
+              135: [717]
             },
             s = {};
           l.f.consumes = (e, r) => {
@@ -327,7 +327,7 @@ _global.SENTRY_RELEASE = {
           }
         })(), (() => {
           var e = {
-            68: 0
+            323: 0
           };
           l.f.j = (r, t) => {
             var n = l.o(e, r) ? e[r] : void 0;
@@ -360,7 +360,7 @@ _global.SENTRY_RELEASE = {
             },
             t = self.webpackChunk_rockstargames_intl = self.webpackChunk_rockstargames_intl || [];
           t.forEach(r.bind(null, 0)), t.push = r.bind(null, t.push.bind(t))
-        })(), l(824), l(612)
+        })(), l(160), l(243)
       })())
     }
   }

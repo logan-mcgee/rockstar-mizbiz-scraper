@@ -1,0 +1,338 @@
+.rockstargames-modules-core-newswire-articlef87ac9a7d56545847cf4d8ca471b03e6 {
+  align-items: center;
+  background: var(--white-15);
+  border: none;
+  border-radius: 100px;
+  color: var(--white-100);
+  cursor: pointer;
+  display: flex;
+  font-family: var(--font-family-body);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  justify-content: center;
+  line-height: var(--rem-125);
+  min-width: var(--rem-6);
+  padding: var(--padding-xs) var(--padding-sm);
+  text-align: center;
+  transition: background-color .3s ease-in-out
+}
+
+.rockstargames-modules-core-newswire-articlef87ac9a7d56545847cf4d8ca471b03e6 img {
+  height: var(--nav-icon-size);
+  margin-left: var(--grid-gap-xs);
+  transition: filter .3s ease-in-out;
+  width: var(--nav-icon-size)
+}
+
+.rockstargames-modules-core-newswire-articlef87ac9a7d56545847cf4d8ca471b03e6:focus,
+.rockstargames-modules-core-newswire-articlef87ac9a7d56545847cf4d8ca471b03e6:hover {
+  background-color: var(--white-40);
+  outline: none
+}
+
+.rockstargames-modules-core-newswire-articlef87ac9a7d56545847cf4d8ca471b03e6.rockstargames-modules-core-newswire-articlea8ea61e57fd58bfcb99aef7e6d687045 {
+  background: var(--white-100);
+  color: var(--black-200)
+}
+
+.rockstargames-modules-core-newswire-articlef87ac9a7d56545847cf4d8ca471b03e6.rockstargames-modules-core-newswire-articlea8ea61e57fd58bfcb99aef7e6d687045 img {
+  filter: invert()
+}
+
+.rockstargames-modules-core-newswire-articlea57241f29873f89f89ab8b27994e71c3 {
+  --ordered-list-grid-column-responsive: var(--ordered-list-grid-column, 1);
+  align-items: flex-start;
+  background: var(--black-200, #000);
+  border: 2px solid var(--border-color, #282828);
+  border-radius: var(--border-radius-md, 8px);
+  display: flex;
+  flex-direction: column;
+  gap: var(--grid-gap-xs, 10px);
+  grid-template-columns: repeat(var(--ordered-list-grid-column-responsive), 1fr);
+  justify-content: space-around;
+  padding: var(--padding-sm, 20px)
+}
+
+@media (max-width:767px) {
+  .rockstargames-modules-core-newswire-articlea57241f29873f89f89ab8b27994e71c3 {
+    --ordered-list-grid-column-responsive: var(--ordered-list-grid-column-mobile, 1) !important
+  }
+}
+
+.rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361 {
+  grid-gap: var(--grid-gap-static-md);
+  --ordered-list-grid-column-responsive: var(--ordered-list-grid-column, 1);
+  counter-reset: my-counter;
+  display: grid;
+  grid-template-columns: repeat(var(--ordered-list-grid-column-responsive), 1fr);
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0 !important;
+  row-gap: 0;
+  text-align: left;
+  width: auto
+}
+
+@media (max-width:767px) {
+  .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361 {
+    --ordered-list-grid-column-responsive: var(--ordered-list-grid-column-mobile, 1) !important
+  }
+}
+
+.rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361 li {
+  counter-increment: my-counter
+}
+
+.rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361 li,
+.rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361 li:before {
+  color: var(--color-body);
+  display: flex;
+  flex-direction: row;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-2);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--letter-spacing-body);
+  line-height: var(--line-height-lg)
+}
+
+.rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361 li:before {
+  align-items: center;
+  background-color: var(--white-15);
+  border-radius: 100%;
+  content: counter(my-counter);
+  font-weight: var(--font-weight-bold);
+  height: 1.75rem;
+  justify-content: center;
+  margin-right: var(--grid-gap-xs, 10px);
+  margin-top: -.21875rem;
+  min-height: 1.75rem;
+  min-width: 1.75rem;
+  width: 1.75rem
+}
+
+.rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361 li:not(:last-child) {
+  margin-bottom: var(--li-margin-tb, var(--grid-gap-xs, 10px))
+}
+
+.rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articlebd78cfb71ed31029ba4279325166bfab {
+  margin: 0;
+  padding-left: var(--list-padding-left, 0)
+}
+
+.rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articlebd78cfb71ed31029ba4279325166bfab li {
+  font-weight: var(--li-font-weight, 400);
+  line-height: var(--li-line-height, 1.4rem);
+  list-style-type: none;
+  margin: var(--li-margin-tb, var(--grid-gap-static-sm, 1rem)) 0;
+  padding-left: calc(var(--base-rem-size) * 1.3);
+  position: relative
+}
+
+.rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articlebd78cfb71ed31029ba4279325166bfab li:before {
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/055974c59ae2fd76f3c8584183967670.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  height: .5rem;
+  left: 0;
+  position: absolute;
+  top: .45rem;
+  width: .5rem
+}
+
+.rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articlea6244398a800ffddab72c14f717b0eab,
+.newswireFull.rdo .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361,
+[data-game=rdo] .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361 {
+  margin: 0;
+  padding-left: 0
+}
+
+.rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articlea6244398a800ffddab72c14f717b0eab li,
+.newswireFull.rdo .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361 li,
+[data-game=rdo] .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361 li {
+  list-style-type: none;
+  margin: 1rem 0;
+  padding-left: calc(var(--base-rem-size) * 1.3);
+  position: relative
+}
+
+.rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articlea6244398a800ffddab72c14f717b0eab li:before,
+.newswireFull.rdo .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361 li:before,
+[data-game=rdo] .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361 li:before {
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/bd62daf191f66403ccb4b8b24bae7de5.svg);
+  background-repeat: no-repeat;
+  content: "";
+  height: 11px;
+  left: 0;
+  position: absolute;
+  top: .6rem;
+  width: 11px
+}
+
+@media (max-width:767px) {
+
+  .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articlea6244398a800ffddab72c14f717b0eab li:before,
+  .newswireFull.rdo .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361 li:before,
+  [data-game=rdo] .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361 li:before {
+    top: .3rem
+  }
+}
+
+.rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articlea6244398a800ffddab72c14f717b0eab li:not(:last-child),
+.newswireFull.rdo .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361 li:not(:last-child),
+[data-game=rdo] .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361 li:not(:last-child) {
+  margin-bottom: var(--base-rem-size)
+}
+
+.rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articlea6244398a800ffddab72c14f717b0eab.rockstargames-modules-core-newswire-articlee88f741af7d5e0529ff4fb6bb82af04f,
+.newswireFull.rdo .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articlee88f741af7d5e0529ff4fb6bb82af04f,
+[data-game=rdo] .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articlee88f741af7d5e0529ff4fb6bb82af04f {
+  padding-left: var(--grid-gap-static-md)
+}
+
+.rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articlea6244398a800ffddab72c14f717b0eab.rockstargames-modules-core-newswire-articlee88f741af7d5e0529ff4fb6bb82af04f li,
+.newswireFull.rdo .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articlee88f741af7d5e0529ff4fb6bb82af04f li,
+[data-game=rdo] .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articlee88f741af7d5e0529ff4fb6bb82af04f li {
+  list-style-type: disc;
+  margin: 0 0 1rem;
+  padding: 0 0 0 .5rem
+}
+
+.rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articlea6244398a800ffddab72c14f717b0eab.rockstargames-modules-core-newswire-articlee88f741af7d5e0529ff4fb6bb82af04f li:last-child,
+.newswireFull.rdo .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articlee88f741af7d5e0529ff4fb6bb82af04f li:last-child,
+[data-game=rdo] .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articlee88f741af7d5e0529ff4fb6bb82af04f li:last-child {
+  margin: 0
+}
+
+.rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articlea6244398a800ffddab72c14f717b0eab.rockstargames-modules-core-newswire-articlee88f741af7d5e0529ff4fb6bb82af04f li:before,
+.newswireFull.rdo .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articlee88f741af7d5e0529ff4fb6bb82af04f li:before,
+[data-game=rdo] .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articlee88f741af7d5e0529ff4fb6bb82af04f li:before {
+  content: none
+}
+
+.rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articleab60d91453348d2e4c090ef3ebb04347,
+.newswireFull.gtao .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361,
+[data-game=gtao] .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361 {
+  margin: 0;
+  padding-left: 0
+}
+
+.rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articleab60d91453348d2e4c090ef3ebb04347 li,
+.newswireFull.gtao .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361 li,
+[data-game=gtao] .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361 li {
+  font-weight: var(--li-font-weight, 700);
+  line-height: var(--li-line-height, 1.4rem);
+  list-style-type: none;
+  margin: var(--grid-gap-static-sm, 1rem) 0;
+  padding-left: calc(var(--base-rem-size) * 1.3);
+  position: relative
+}
+
+.rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articleab60d91453348d2e4c090ef3ebb04347 li:before,
+.newswireFull.gtao .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361 li:before,
+[data-game=gtao] .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361 li:before {
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/2e9206b87feb4567a83a182d243ae0b6.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  height: 11px;
+  left: 0;
+  position: absolute;
+  top: 20%;
+  width: 11px
+}
+
+.rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articleab60d91453348d2e4c090ef3ebb04347.rockstargames-modules-core-newswire-articlec20e7ba6ceaba3afd37095b172797711 li:before,
+.newswireFull.gtao .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articlec20e7ba6ceaba3afd37095b172797711 li:before,
+[data-game=gtao] .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articlec20e7ba6ceaba3afd37095b172797711 li:before {
+  background-image: var(--custom-star, none)
+}
+
+.rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articleab60d91453348d2e4c090ef3ebb04347.rockstargames-modules-core-newswire-articleb16672deedfe102b065925cbe0fb931c li:before,
+.newswireFull.gtao .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articleb16672deedfe102b065925cbe0fb931c li:before,
+[data-game=gtao] .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articleb16672deedfe102b065925cbe0fb931c li:before {
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/a52713a70c65e31024b27e83be6847d3.svg)
+}
+
+.rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articleab60d91453348d2e4c090ef3ebb04347.rockstargames-modules-core-newswire-articled0d01601de7131d9d6d11321b4299e59 li:before,
+.newswireFull.gtao .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articled0d01601de7131d9d6d11321b4299e59 li:before,
+[data-game=gtao] .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articled0d01601de7131d9d6d11321b4299e59 li:before {
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/2757dccd4c25bb85b00d92fec26d2abe.svg)
+}
+
+.rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articleab60d91453348d2e4c090ef3ebb04347.rockstargames-modules-core-newswire-articled1b5397aff94d33b57674b04a3456e03 li:before,
+.newswireFull.gtao .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articled1b5397aff94d33b57674b04a3456e03 li:before,
+[data-game=gtao] .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articled1b5397aff94d33b57674b04a3456e03 li:before {
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/80cd85db506133304f8cddad89af1782.svg)
+}
+
+.rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articleab60d91453348d2e4c090ef3ebb04347.rockstargames-modules-core-newswire-articled6541b973ce158c8f2fb81483015211f li:before,
+.newswireFull.gtao .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articled6541b973ce158c8f2fb81483015211f li:before,
+[data-game=gtao] .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articled6541b973ce158c8f2fb81483015211f li:before {
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/f191d2d6dbd04e4c9768a0a64855d1a6.svg)
+}
+
+.rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articleab60d91453348d2e4c090ef3ebb04347.rockstargames-modules-core-newswire-articlef3e34d902681219d4d8490eb164f7727 li:before,
+.newswireFull.gtao .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articlef3e34d902681219d4d8490eb164f7727 li:before,
+[data-game=gtao] .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articlef3e34d902681219d4d8490eb164f7727 li:before {
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/e06b78f7ccb432f507dc3be415fba32c.svg)
+}
+
+.rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articleab60d91453348d2e4c090ef3ebb04347.rockstargames-modules-core-newswire-articlea6c3b6b6a2395eb18a1174294f26f4ea li:before,
+.newswireFull.gtao .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articlea6c3b6b6a2395eb18a1174294f26f4ea li:before,
+[data-game=gtao] .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articlea6c3b6b6a2395eb18a1174294f26f4ea li:before {
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/196bc0ec80f9c57e51d21335cc76a671.svg)
+}
+
+.rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articleab60d91453348d2e4c090ef3ebb04347.rockstargames-modules-core-newswire-articleeade6e843c5afd48d3a8959fb0b88222 li:before,
+.newswireFull.gtao .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articleeade6e843c5afd48d3a8959fb0b88222 li:before,
+[data-game=gtao] .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articleeade6e843c5afd48d3a8959fb0b88222 li:before {
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/0bcb70671487ed8af0621d77e074411c.svg)
+}
+
+.rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articleab60d91453348d2e4c090ef3ebb04347.rockstargames-modules-core-newswire-articlea82c313f8f85fc6304ddb703be2fa271 li:before,
+.newswireFull.gtao .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articlea82c313f8f85fc6304ddb703be2fa271 li:before,
+[data-game=gtao] .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articlea82c313f8f85fc6304ddb703be2fa271 li:before {
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/36956250db7dc74d6ca9721c977f3d41.svg)
+}
+
+.rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articleab60d91453348d2e4c090ef3ebb04347.rockstargames-modules-core-newswire-articled394c61fdce2bf8894ffb801ee680c2a li:before,
+.newswireFull.gtao .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articled394c61fdce2bf8894ffb801ee680c2a li:before,
+[data-game=gtao] .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articled394c61fdce2bf8894ffb801ee680c2a li:before {
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/7b020492bb9714c229ed738928d2e598.svg)
+}
+
+.rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articleab60d91453348d2e4c090ef3ebb04347.rockstargames-modules-core-newswire-articlef1d73cc00a3ab644aab949183a8298a7 li:before,
+.newswireFull.gtao .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articlef1d73cc00a3ab644aab949183a8298a7 li:before,
+[data-game=gtao] .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articlef1d73cc00a3ab644aab949183a8298a7 li:before {
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/aa0f52f2b27a17f3ddc4646a6146fe59.svg)
+}
+
+.rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articleab60d91453348d2e4c090ef3ebb04347.rockstargames-modules-core-newswire-articlecdcb0c5076309a329da2a6e857cc3bdf li:before,
+.newswireFull.gtao .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articlecdcb0c5076309a329da2a6e857cc3bdf li:before,
+[data-game=gtao] .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articlecdcb0c5076309a329da2a6e857cc3bdf li:before {
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/562857802f2942e67d47d893b473abd7.svg)
+}
+
+.rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articleab60d91453348d2e4c090ef3ebb04347.rockstargames-modules-core-newswire-articleba4bd16bff2fbc40616457007b4a7442 li:before,
+.newswireFull.gtao .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articleba4bd16bff2fbc40616457007b4a7442 li:before,
+[data-game=gtao] .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361.rockstargames-modules-core-newswire-articleba4bd16bff2fbc40616457007b4a7442 li:before {
+  background-image: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/5443c35249177dc987b7561f93e3c12f.svg);
+  background-size: 105%;
+  height: 100%;
+  width: 12px
+}
+
+.rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361 span {
+  color: var(--list-color-span, inherit);
+  font-weight: var(--list-font-weight-span, inherit)
+}
+
+@media (max-width:640px) {
+  .rockstargames-modules-core-newswire-articledaec3f5ce63d42cb07e3e724737c8361 {
+    width: auto
+  }
+}
+
+/*# sourceMappingURL=a74511202c6604457e5faa8aa8a94b53.css.map*/

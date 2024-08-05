@@ -1,0 +1,1528 @@
+@layer foundry_qskx6d0;
+@layer foundry_qskx6d0.foundry_qskx6d1;
+@layer foundry_qskx6d0.foundry_qskx6d1.foundry_qskx6d2;
+@layer foundry_qskx6d0.foundry_qskx6d1.foundry_qskx6d2.foundry_qskx6d3;
+@layer foundry_qskx6d0.foundry_qskx6d1.foundry_qskx6d2.foundry_qskx6d3;
+
+@layer foundry_qskx6d0.foundry_qskx6d1.foundry_qskx6d2.foundry_qskx6d3 {
+  .foundry_8kowh40 {
+    all: unset;
+  }
+}
+
+@layer foundry_qskx6d8.foundry_qskx6d9;
+
+@layer foundry_qskx6d8.foundry_qskx6d9 {
+  .foundry_1d5mo5m0 {
+    outline-width: 2px;
+    outline-style: solid;
+    outline-offset: -2px;
+    outline-color: transparent;
+  }
+
+  .foundry_1d5mo5m0:focus-visible {
+    outline-color: var(--foundry_nu8bkp85);
+  }
+}
+
+@layer foundry_qskx6d4.foundry_qskx6d5;
+
+@layer foundry_qskx6d4.foundry_qskx6d5 {
+  .foundry_1qqcnua1 {
+    color: var(--foundry_nu8bkp7z);
+    border-color: var(--foundry_nu8bkp4r);
+    background-color: var(--foundry_nu8bkp4r);
+  }
+
+  .foundry_1qqcnua1:disabled {
+    color: var(--foundry_nu8bkp8y);
+    border-color: var(--foundry_nu8bkp3o);
+    background-color: var(--foundry_nu8bkp3o);
+  }
+
+  .foundry_1qqcnua1[data-pressed="true"] {
+    color: var(--foundry_nu8bkp8x);
+    border-color: var(--foundry_nu8bkp84);
+    background-color: var(--foundry_nu8bkp3n);
+  }
+
+  .foundry_1qqcnua1:not([data-pressed="true"]):not([disabled]):hover {
+    color: var(--foundry_nu8bkp8x);
+    border-color: var(--foundry_nu8bkp84);
+    background-color: transparent;
+  }
+
+  .foundry_1qqcnua1:not([data-pressed="true"]):focus-visible {
+    color: var(--foundry_nu8bkp8x);
+    border-color: var(--foundry_nu8bkp84);
+    background-color: transparent;
+  }
+
+  .foundry_1qqcnua1:focus-visible {
+    outline-color: var(--foundry_nu8bkp4t);
+  }
+
+  .foundry_1qqcnua2 {
+    color: var(--foundry_nu8bkp8x);
+    border-color: var(--foundry_nu8bkp84);
+    background-color: transparent;
+  }
+
+  .foundry_1qqcnua2:disabled {
+    color: var(--foundry_nu8bkp8y);
+    border-color: var(--foundry_nu8bkp8k);
+  }
+
+  .foundry_1qqcnua2[data-pressed="true"] {
+    background-color: var(--foundry_nu8bkp3n);
+  }
+
+  .foundry_1qqcnua2:not([data-pressed="true"]):not([disabled]):hover {
+    background-color: var(--foundry_nu8bkp3m);
+  }
+
+  .foundry_1qqcnua2:not([data-pressed="true"]):focus-visible {
+    background-color: var(--foundry_nu8bkp3m);
+  }
+
+  .foundry_1qqcnua3 {
+    color: var(--foundry_nu8bkp90);
+    border-color: var(--foundry_nu8bkp3n);
+    background-color: var(--foundry_nu8bkp3n);
+  }
+
+  .foundry_1qqcnua3:disabled {
+    color: var(--foundry_nu8bkp8y);
+    border-color: var(--foundry_nu8bkp3o);
+    background-color: var(--foundry_nu8bkp3o);
+  }
+
+  .foundry_1qqcnua3[data-pressed="true"] {
+    border-color: var(--foundry_nu8bkp3p);
+    background-color: var(--foundry_nu8bkp3p);
+  }
+
+  .foundry_1qqcnua3:not([data-pressed="true"]):not([disabled]):hover {
+    border-color: var(--foundry_nu8bkp3o);
+    background-color: var(--foundry_nu8bkp3o);
+  }
+
+  .foundry_1qqcnua3:not([data-pressed="true"]):focus-visible {
+    border-color: var(--foundry_nu8bkp3o);
+    background-color: var(--foundry_nu8bkp3o);
+  }
+
+  .foundry_1qqcnua4 {
+    color: var(--foundry_nu8bkp8x);
+    border-color: transparent;
+    background-color: transparent;
+  }
+
+  .foundry_1qqcnua4:disabled {
+    color: var(--foundry_nu8bkp8y);
+  }
+
+  .foundry_1qqcnua4[data-pressed="true"] {
+    border-color: var(--foundry_nu8bkp3n);
+    background-color: var(--foundry_nu8bkp3n);
+  }
+
+  .foundry_1qqcnua4:not([data-pressed="true"]):not([disabled]):hover {
+    border-color: var(--foundry_nu8bkp3m);
+    background-color: var(--foundry_nu8bkp3m);
+  }
+
+  .foundry_1qqcnua4:not([data-pressed="true"]):focus-visible {
+    border-color: var(--foundry_nu8bkp3m);
+    background-color: var(--foundry_nu8bkp3m);
+  }
+
+  .foundry_1qqcnua5 {
+    color: var(--foundry_nu8bkp7r);
+    border-color: var(--foundry_nu8bkp6g);
+    background-color: var(--foundry_nu8bkp6g);
+  }
+
+  .foundry_1qqcnua5:disabled {
+    color: var(--foundry_nu8bkp8y);
+    border-color: var(--foundry_nu8bkp3o);
+    background-color: var(--foundry_nu8bkp3o);
+  }
+
+  .foundry_1qqcnua5[data-pressed="true"] {
+    border-color: var(--foundry_nu8bkp6i);
+    background-color: var(--foundry_nu8bkp6i);
+  }
+
+  .foundry_1qqcnua5:not([data-pressed="true"]):not([disabled]):hover {
+    border-color: var(--foundry_nu8bkp6h);
+    background-color: var(--foundry_nu8bkp6h);
+  }
+
+  .foundry_1qqcnua5:not([data-pressed="true"]):focus-visible {
+    border-color: var(--foundry_nu8bkp6h);
+    background-color: var(--foundry_nu8bkp6h);
+  }
+
+  .foundry_1qqcnua5:focus-visible {
+    outline-color: var(--foundry_nu8bkp6d);
+  }
+
+  .foundry_1qqcnua6 {
+    color: var(--foundry_nu8bkp7r);
+    border-color: var(--foundry_nu8bkp43);
+    background-color: var(--foundry_nu8bkp43);
+  }
+
+  .foundry_1qqcnua6:disabled {
+    color: var(--foundry_nu8bkp8y);
+    border-color: var(--foundry_nu8bkp3o);
+    background-color: var(--foundry_nu8bkp3o);
+  }
+
+  .foundry_1qqcnua6[data-pressed="true"] {
+    border-color: var(--foundry_nu8bkp45);
+    background-color: var(--foundry_nu8bkp45);
+  }
+
+  .foundry_1qqcnua6:not([data-pressed="true"]):not([disabled]):hover {
+    border-color: var(--foundry_nu8bkp44);
+    background-color: var(--foundry_nu8bkp44);
+  }
+
+  .foundry_1qqcnua6:not([data-pressed="true"]):focus-visible {
+    border-color: var(--foundry_nu8bkp44);
+    background-color: var(--foundry_nu8bkp44);
+  }
+
+  .foundry_1qqcnua6:focus-visible {
+    outline-color: var(--foundry_nu8bkp41);
+  }
+}
+
+@layer foundry_qskx6dc.foundry_qskx6dd.foundry_qskx6de;
+
+@layer foundry_qskx6dc.foundry_qskx6dd.foundry_qskx6de {
+  .foundry_tdsdcd0 {
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: 'ss01' on, 'salt' on;
+  }
+
+  .foundry_tdsdcd1 {
+    font-style: normal;
+    font-weight: var(--foundry_nu8bkp2s);
+    line-height: var(--foundry_nu8bkp35);
+    font-family: var(--foundry_nu8bkp2f), var(--foundry_nu8bkp2g);
+    letter-spacing: var(--foundry_nu8bkp2l);
+  }
+
+  .foundry_tdsdcd3 {
+    font-size: var(--foundry_nu8bkp2u);
+  }
+
+  .foundry_tdsdcd4 {
+    font-size: var(--foundry_nu8bkp2v);
+  }
+
+  .foundry_tdsdcd5 {
+    font-size: var(--foundry_nu8bkp2w);
+  }
+
+  .foundry_tdsdcd6 {
+    font-size: var(--foundry_nu8bkp2x);
+  }
+
+  .foundry_tdsdcd7 {
+    font-size: var(--foundry_nu8bkp2y);
+  }
+
+  .foundry_tdsdcd8 {
+    font-size: var(--foundry_nu8bkp2z);
+    font-weight: var(--foundry_nu8bkp2r);
+  }
+
+  .foundry_tdsdcd9 {
+    font-family: var(--foundry_nu8bkp2h), var(--foundry_nu8bkp2i);
+    line-height: var(--foundry_nu8bkp36);
+    font-style: normal;
+    font-weight: var(--foundry_nu8bkp2r);
+    font-size: var(--foundry_nu8bkp33);
+    letter-spacing: var(--foundry_nu8bkp2p);
+    text-transform: uppercase;
+  }
+
+  .foundry_tdsdcdc {
+    font-weight: var(--foundry_nu8bkp2s);
+  }
+
+  .foundry_tdsdcdd {
+    font-family: var(--foundry_nu8bkp2h), var(--foundry_nu8bkp2i);
+    line-height: var(--foundry_nu8bkp36);
+    font-style: normal;
+    font-weight: var(--foundry_nu8bkp2r);
+    font-size: var(--foundry_nu8bkp30);
+    letter-spacing: var(--foundry_nu8bkp2n);
+  }
+
+  .foundry_tdsdcdg {
+    font-weight: var(--foundry_nu8bkp2s);
+  }
+
+  .foundry_tdsdcdh {
+    font-weight: var(--foundry_nu8bkp2s);
+    text-decoration-line: underline;
+  }
+
+  .foundry_tdsdcdi {
+    font-weight: var(--foundry_nu8bkp2s);
+    letter-spacing: var(--foundry_nu8bkp2p);
+    text-transform: uppercase;
+  }
+
+  .foundry_tdsdcdj {
+    font-family: var(--foundry_nu8bkp2h), var(--foundry_nu8bkp2i);
+    line-height: var(--foundry_nu8bkp36);
+    font-style: normal;
+    font-weight: var(--foundry_nu8bkp2r);
+    font-size: var(--foundry_nu8bkp31);
+    letter-spacing: var(--foundry_nu8bkp2n);
+  }
+
+  .foundry_tdsdcdm {
+    font-weight: var(--foundry_nu8bkp2s);
+  }
+
+  .foundry_tdsdcdn {
+    font-weight: var(--foundry_nu8bkp2s);
+    text-decoration-line: underline;
+  }
+
+  .foundry_tdsdcdo {
+    font-weight: var(--foundry_nu8bkp2s);
+    letter-spacing: var(--foundry_nu8bkp2p);
+    text-transform: uppercase;
+  }
+
+  .foundry_tdsdcdp {
+    font-family: var(--foundry_nu8bkp2h), var(--foundry_nu8bkp2i);
+    line-height: var(--foundry_nu8bkp36);
+    font-style: normal;
+    font-weight: var(--foundry_nu8bkp2r);
+    font-size: var(--foundry_nu8bkp32);
+    letter-spacing: var(--foundry_nu8bkp2n);
+  }
+
+  .foundry_tdsdcds {
+    font-weight: var(--foundry_nu8bkp2s);
+  }
+}
+
+@font-face {
+  font-family: "Helvetica Now Text";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/63cfc284c204bd1597bc68464e18042b.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica Now Text";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/ddff8a927395b3bbeb442818124b332e.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica Now Text";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/064abecda5d2f269d95fa7fd0f340e87.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica Now Display";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/8a7bed18c779bf815ff56c24ab6207e5.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica Now Display";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/2182248632b4e44ebf3764bc8ac7aba2.woff) format("woff");
+}
+
+.foundry_nu8bkp1 {
+  --foundry_nu8bkp2: 0px;
+  --foundry_nu8bkp3: 2px;
+  --foundry_nu8bkp4: 4px;
+  --foundry_nu8bkp5: 8px;
+  --foundry_nu8bkp6: 12px;
+  --foundry_nu8bkp7: 16px;
+  --foundry_nu8bkp8: 24px;
+  --foundry_nu8bkp9: 32px;
+  --foundry_nu8bkpa: 9999px;
+  --foundry_nu8bkpb: 1000px;
+  --foundry_nu8bkpc: 0px;
+  --foundry_nu8bkpd: 1px;
+  --foundry_nu8bkpe: 2px;
+  --foundry_nu8bkpf: 3px;
+  --foundry_nu8bkpg: 4px;
+  --foundry_nu8bkph: calc(2px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkpi: calc(4px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkpj: calc(8px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkpk: calc(12px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkpl: calc(14px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkpm: calc(16px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkpn: calc(20px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkpo: calc(24px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkpp: calc(32px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkpq: calc(40px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkpr: calc(48px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkps: calc(56px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkpt: calc(64px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkpu: calc(72px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkpv: calc(80px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkpw: calc(88px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkpx: calc(96px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkpy: calc(112px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkpz: calc(128px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp10: calc(2px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp11: calc(4px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp12: calc(8px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp13: calc(12px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp14: calc(14px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp15: calc(16px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp16: calc(20px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp17: calc(24px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp18: calc(32px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp19: calc(40px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp1a: calc(48px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp1b: calc(56px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp1c: calc(64px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp1d: calc(72px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp1e: calc(80px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp1f: calc(88px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp1g: calc(96px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp1h: calc(112px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp1i: calc(128px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp1j: calc(144px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp1k: calc(160px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp1l: calc(176px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp1m: calc(200px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp1n: calc(240px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp1o: calc(280px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp1p: calc(320px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp1q: calc(360px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp1r: calc(400px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp1s: calc(500px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp1t: Arial;
+  --foundry_nu8bkp1u: Helvetica Now Display;
+  --foundry_nu8bkp1v: Helvetica Now Text;
+  --foundry_nu8bkp1w: Consolas;
+  --foundry_nu8bkp1x: 400;
+  --foundry_nu8bkp1y: 700;
+  --foundry_nu8bkp1z: calc(12px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp20: calc(14px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp21: calc(16px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp22: calc(20px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp23: calc(24px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp24: calc(32px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp25: calc(40px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp26: calc(56px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp27: 0%;
+  --foundry_nu8bkp28: 1%;
+  --foundry_nu8bkp29: 2.5%;
+  --foundry_nu8bkp2a: -2.5%;
+  --foundry_nu8bkp2b: -1%;
+  --foundry_nu8bkp2c: 130%;
+  --foundry_nu8bkp2d: 150%;
+  --foundry_nu8bkp2e: calc(32px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp2f: Helvetica Now Display;
+  --foundry_nu8bkp2g: Arial;
+  --foundry_nu8bkp2h: Helvetica Now Text;
+  --foundry_nu8bkp2i: Arial;
+  --foundry_nu8bkp2j: Consolas;
+  --foundry_nu8bkp2k: Consolas;
+  --foundry_nu8bkp2l: -2.5%;
+  --foundry_nu8bkp2m: -2.5%;
+  --foundry_nu8bkp2n: -2.5%;
+  --foundry_nu8bkp2o: -2.5%;
+  --foundry_nu8bkp2p: 1%;
+  --foundry_nu8bkp2q: 1%;
+  --foundry_nu8bkp2r: 400;
+  --foundry_nu8bkp2s: 700;
+  --foundry_nu8bkp2t: calc(32px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp2u: calc(56px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp2v: calc(40px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp2w: calc(32px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp2x: calc(24px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp2y: calc(20px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp2z: calc(20px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp30: calc(16px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp31: calc(14px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp32: calc(12px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp33: calc(12px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp34: calc(16px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp35: 130%;
+  --foundry_nu8bkp36: 150%;
+}
+
+.foundry_nu8bkpaf {
+  --foundry_nu8bkp37: #fdfdfd;
+  --foundry_nu8bkp38: #fdfdfd;
+  --foundry_nu8bkp39: #fdfdfd;
+  --foundry_nu8bkp3a: #fdfdfd;
+  --foundry_nu8bkp3b: #eaeaea;
+  --foundry_nu8bkp3c: #d8d8d8;
+  --foundry_nu8bkp3d: #b2b2b2;
+  --foundry_nu8bkp3e: #919191;
+  --foundry_nu8bkp3f: #6d6d6d;
+  --foundry_nu8bkp3g: #464646;
+  --foundry_nu8bkp3h: #212121;
+  --foundry_nu8bkp3i: #000000;
+  --foundry_nu8bkp3j: #ffffff;
+  --foundry_nu8bkp3k: #ffffff;
+  --foundry_nu8bkp3l: #f5f5f5;
+  --foundry_nu8bkp3m: #e4e4e4;
+  --foundry_nu8bkp3n: #d0d0d0;
+  --foundry_nu8bkp3o: #b1b1b1;
+  --foundry_nu8bkp3p: #8e8e8e;
+  --foundry_nu8bkp3q: #6d6d6d;
+  --foundry_nu8bkp3r: #525252;
+  --foundry_nu8bkp3s: #3d3d3d;
+  --foundry_nu8bkp3t: #2a2a2a;
+  --foundry_nu8bkp3u: #111111;
+  --foundry_nu8bkp3v: #fff3f3;
+  --foundry_nu8bkp3w: #ffe3e3;
+  --foundry_nu8bkp3x: #ffd3d3;
+  --foundry_nu8bkp3y: #ffbdbd;
+  --foundry_nu8bkp3z: #ffa5a5;
+  --foundry_nu8bkp40: #ff8181;
+  --foundry_nu8bkp41: #ff5c5c;
+  --foundry_nu8bkp42: #e74646;
+  --foundry_nu8bkp43: #c93838;
+  --foundry_nu8bkp44: #a92d2d;
+  --foundry_nu8bkp45: #8b2323;
+  --foundry_nu8bkp46: #6d1c1c;
+  --foundry_nu8bkp47: #541515;
+  --foundry_nu8bkp48: #401010;
+  --foundry_nu8bkp49: #fecccc;
+  --foundry_nu8bkp4a: #feb6b6;
+  --foundry_nu8bkp4b: #fd9d9d;
+  --foundry_nu8bkp4c: #fd7d7d;
+  --foundry_nu8bkp4d: #fc5858;
+  --foundry_nu8bkp4e: #fb1e1e;
+  --foundry_nu8bkp4f: #e10404;
+  --foundry_nu8bkp4g: #c50303;
+  --foundry_nu8bkp4h: #aa0303;
+  --foundry_nu8bkp4i: #920303;
+  --foundry_nu8bkp4j: #7e0202;
+  --foundry_nu8bkp4k: #690202;
+  --foundry_nu8bkp4l: #570202;
+  --foundry_nu8bkp4m: #480101;
+  --foundry_nu8bkp4n: #fff4d4;
+  --foundry_nu8bkp4o: #ffe8a4;
+  --foundry_nu8bkp4p: #ffdb72;
+  --foundry_nu8bkp4q: #ffc539;
+  --foundry_nu8bkp4r: #fcaf17;
+  --foundry_nu8bkp4s: #e19808;
+  --foundry_nu8bkp4t: #ca8602;
+  --foundry_nu8bkp4u: #b07400;
+  --foundry_nu8bkp4v: #976300;
+  --foundry_nu8bkp4w: #7e5200;
+  --foundry_nu8bkp4x: #654200;
+  --foundry_nu8bkp4y: #503400;
+  --foundry_nu8bkp4z: #3c2800;
+  --foundry_nu8bkp50: #2e1e00;
+  --foundry_nu8bkp51: #ffd258;
+  --foundry_nu8bkp52: #ffbd29;
+  --foundry_nu8bkp53: #f4a811;
+  --foundry_nu8bkp54: #dd9507;
+  --foundry_nu8bkp55: #c68402;
+  --foundry_nu8bkp56: #af7400;
+  --foundry_nu8bkp57: #9a6500;
+  --foundry_nu8bkp58: #855800;
+  --foundry_nu8bkp59: #734b00;
+  --foundry_nu8bkp5a: #624000;
+  --foundry_nu8bkp5b: #523600;
+  --foundry_nu8bkp5c: #442c00;
+  --foundry_nu8bkp5d: #372400;
+  --foundry_nu8bkp5e: #2d1d00;
+  --foundry_nu8bkp5f: #e0fbea;
+  --foundry_nu8bkp5g: #bef7d5;
+  --foundry_nu8bkp5h: #93f2b9;
+  --foundry_nu8bkp5i: #5ce693;
+  --foundry_nu8bkp5j: #39d878;
+  --foundry_nu8bkp5k: #20c05f;
+  --foundry_nu8bkp5l: #15aa51;
+  --foundry_nu8bkp5m: #0f9444;
+  --foundry_nu8bkp5n: #0b7f39;
+  --foundry_nu8bkp5o: #08692f;
+  --foundry_nu8bkp5p: #065626;
+  --foundry_nu8bkp5q: #05431e;
+  --foundry_nu8bkp5r: #043317;
+  --foundry_nu8bkp5s: #032712;
+  --foundry_nu8bkp5t: #96eab8;
+  --foundry_nu8bkp5u: #64e096;
+  --foundry_nu8bkp5v: #2ad16c;
+  --foundry_nu8bkp5w: #26bb61;
+  --foundry_nu8bkp5x: #21a657;
+  --foundry_nu8bkp5y: #1e934c;
+  --foundry_nu8bkp5z: #1a8043;
+  --foundry_nu8bkp60: #166f3a;
+  --foundry_nu8bkp61: #135f32;
+  --foundry_nu8bkp62: #10522a;
+  --foundry_nu8bkp63: #0e4424;
+  --foundry_nu8bkp64: #0b381d;
+  --foundry_nu8bkp65: #092e18;
+  --foundry_nu8bkp66: #082513;
+  --foundry_nu8bkp67: #f1f4f9;
+  --foundry_nu8bkp68: #e3eaf4;
+  --foundry_nu8bkp69: #d4dfee;
+  --foundry_nu8bkp6a: #bdcfe6;
+  --foundry_nu8bkp6b: #a9c0de;
+  --foundry_nu8bkp6c: #8ba9d2;
+  --foundry_nu8bkp6d: #7296c8;
+  --foundry_nu8bkp6e: #5882bc;
+  --foundry_nu8bkp6f: #406faf;
+  --foundry_nu8bkp6g: #295b9f;
+  --foundry_nu8bkp6h: #17498b;
+  --foundry_nu8bkp6i: #0c3874;
+  --foundry_nu8bkp6j: #062a5b;
+  --foundry_nu8bkp6k: #032047;
+  --foundry_nu8bkp6l: #ccd9eb;
+  --foundry_nu8bkp6m: #b7cae4;
+  --foundry_nu8bkp6n: #9fb9db;
+  --foundry_nu8bkp6o: #86a6d1;
+  --foundry_nu8bkp6p: #6e94c6;
+  --foundry_nu8bkp6q: #5782bc;
+  --foundry_nu8bkp6r: #4271b0;
+  --foundry_nu8bkp6s: #2f61a4;
+  --foundry_nu8bkp6t: #205396;
+  --foundry_nu8bkp6u: #144587;
+  --foundry_nu8bkp6v: #0d3a76;
+  --foundry_nu8bkp6w: #082f64;
+  --foundry_nu8bkp6x: #052654;
+  --foundry_nu8bkp6y: #031f45;
+  --foundry_nu8bkp6z: #f2f4f6;
+  --foundry_nu8bkp70: #e7ebee;
+  --foundry_nu8bkp71: #d9dfe4;
+  --foundry_nu8bkp72: #c5cfd6;
+  --foundry_nu8bkp73: #b2c0c8;
+  --foundry_nu8bkp74: #98aab6;
+  --foundry_nu8bkp75: #8297a5;
+  --foundry_nu8bkp76: #6b8495;
+  --foundry_nu8bkp77: #5a717f;
+  --foundry_nu8bkp78: #4b5e6a;
+  --foundry_nu8bkp79: #3d4c55;
+  --foundry_nu8bkp7a: #303b43;
+  --foundry_nu8bkp7b: #242d33;
+  --foundry_nu8bkp7c: #1b2226;
+  --foundry_nu8bkp7d: #d6d8da;
+  --foundry_nu8bkp7e: #c6cacc;
+  --foundry_nu8bkp7f: #b3b7ba;
+  --foundry_nu8bkp7g: #9fa5a9;
+  --foundry_nu8bkp7h: #8b9297;
+  --foundry_nu8bkp7i: #798187;
+  --foundry_nu8bkp7j: #697177;
+  --foundry_nu8bkp7k: #596269;
+  --foundry_nu8bkp7l: #4a555b;
+  --foundry_nu8bkp7m: #3e484f;
+  --foundry_nu8bkp7n: #323d43;
+  --foundry_nu8bkp7o: #273239;
+  --foundry_nu8bkp7p: #1f2930;
+  --foundry_nu8bkp7q: #182128;
+  --foundry_nu8bkp7r: #ffffff;
+  --foundry_nu8bkp7s: rgba(0, 0, 0, 0.1);
+  --foundry_nu8bkp7t: rgba(0, 0, 0, 0.15);
+  --foundry_nu8bkp7u: rgba(0, 0, 0, 0.4);
+  --foundry_nu8bkp7v: rgba(0, 0, 0, 0.5);
+  --foundry_nu8bkp7w: rgba(0, 0, 0, 0.65);
+  --foundry_nu8bkp7x: rgba(0, 0, 0, 0.8);
+  --foundry_nu8bkp7y: rgba(0, 0, 0, 0.9);
+  --foundry_nu8bkp7z: #000000;
+  --foundry_nu8bkp80: rgba(0, 0, 0, 0);
+  --foundry_nu8bkp81: #b1b1b1;
+  --foundry_nu8bkp82: #d0d0d0;
+  --foundry_nu8bkp83: #8e8e8e;
+  --foundry_nu8bkp84: #525252;
+  --foundry_nu8bkp85: #4271b0;
+  --foundry_nu8bkp86: #5782bc;
+  --foundry_nu8bkp87: #2f61a4;
+  --foundry_nu8bkp88: #1a8043;
+  --foundry_nu8bkp89: #1e934c;
+  --foundry_nu8bkp8a: #166f3a;
+  --foundry_nu8bkp8b: #9a6500;
+  --foundry_nu8bkp8c: #af7400;
+  --foundry_nu8bkp8d: #855800;
+  --foundry_nu8bkp8e: #e10404;
+  --foundry_nu8bkp8f: #fb1e1e;
+  --foundry_nu8bkp8g: #c50303;
+  --foundry_nu8bkp8h: #697177;
+  --foundry_nu8bkp8i: #798187;
+  --foundry_nu8bkp8j: #596269;
+  --foundry_nu8bkp8k: #b1b1b1;
+  --foundry_nu8bkp8l: #ffffff;
+  --foundry_nu8bkp8m: #f5f5f5;
+  --foundry_nu8bkp8n: #e4e4e4;
+  --foundry_nu8bkp8o: #ffffff;
+  --foundry_nu8bkp8p: #f5f5f5;
+  --foundry_nu8bkp8q: #e4e4e4;
+  --foundry_nu8bkp8r: #ffffff;
+  --foundry_nu8bkp8s: #96eab8;
+  --foundry_nu8bkp8t: #ccd9eb;
+  --foundry_nu8bkp8u: #ffd258;
+  --foundry_nu8bkp8v: #fecccc;
+  --foundry_nu8bkp8w: #d6d8da;
+  --foundry_nu8bkp8x: #2a2a2a;
+  --foundry_nu8bkp8y: #6d6d6d;
+  --foundry_nu8bkp8z: #525252;
+  --foundry_nu8bkp90: #111111;
+  --foundry_nu8bkp91: #135f32;
+  --foundry_nu8bkp92: #205396;
+  --foundry_nu8bkp93: #734b00;
+  --foundry_nu8bkp94: #aa0303;
+  --foundry_nu8bkp95: #4a555b;
+  --foundry_nu8bkp96: #2a2a2a;
+  --foundry_nu8bkp97: #6d6d6d;
+  --foundry_nu8bkp98: #525252;
+  --foundry_nu8bkp99: #3d3d3d;
+  --foundry_nu8bkp9a: #525252;
+  --foundry_nu8bkp9b: #205396;
+  --foundry_nu8bkp9c: #2f61a4;
+  --foundry_nu8bkp9d: #144587;
+  --foundry_nu8bkp9e: #4271b0;
+  --foundry_nu8bkp9f: #0d3a76;
+  --foundry_nu8bkp9g: #135f32;
+  --foundry_nu8bkp9h: #166f3a;
+  --foundry_nu8bkp9i: #10522a;
+  --foundry_nu8bkp9j: #1a8043;
+  --foundry_nu8bkp9k: #0e4424;
+  --foundry_nu8bkp9l: #734b00;
+  --foundry_nu8bkp9m: #855800;
+  --foundry_nu8bkp9n: #624000;
+  --foundry_nu8bkp9o: #9a6500;
+  --foundry_nu8bkp9p: #523600;
+  --foundry_nu8bkp9q: #aa0303;
+  --foundry_nu8bkp9r: #c50303;
+  --foundry_nu8bkp9s: #920303;
+  --foundry_nu8bkp9t: #e10404;
+  --foundry_nu8bkp9u: #7e0202;
+  --foundry_nu8bkp9v: #4a555b;
+  --foundry_nu8bkp9w: #596269;
+  --foundry_nu8bkp9x: #3e484f;
+  --foundry_nu8bkp9y: #697177;
+  --foundry_nu8bkp9z: #323d43;
+  --foundry_nu8bkpa0: #6e94c6;
+  --foundry_nu8bkpa1: #86a6d1;
+  --foundry_nu8bkpa2: #5782bc;
+  --foundry_nu8bkpa3: #21a657;
+  --foundry_nu8bkpa4: #26bb61;
+  --foundry_nu8bkpa5: #1e934c;
+  --foundry_nu8bkpa6: #c68402;
+  --foundry_nu8bkpa7: #dd9507;
+  --foundry_nu8bkpa8: #af7400;
+  --foundry_nu8bkpa9: #fc5858;
+  --foundry_nu8bkpaa: #fd7d7d;
+  --foundry_nu8bkpab: #fb1e1e;
+  --foundry_nu8bkpac: #8b9297;
+  --foundry_nu8bkpad: #9fa5a9;
+  --foundry_nu8bkpae: #798187;
+}
+
+.foundry_nu8bkpag {
+  --foundry_nu8bkp37: #fdfdfd;
+  --foundry_nu8bkp38: #fdfdfd;
+  --foundry_nu8bkp39: #fdfdfd;
+  --foundry_nu8bkp3a: #fdfdfd;
+  --foundry_nu8bkp3b: #cdcdcd;
+  --foundry_nu8bkp3c: #adadad;
+  --foundry_nu8bkp3d: #797979;
+  --foundry_nu8bkp3e: #555555;
+  --foundry_nu8bkp3f: #2e2e2e;
+  --foundry_nu8bkp3g: #000000;
+  --foundry_nu8bkp3h: #000000;
+  --foundry_nu8bkp3i: #000000;
+  --foundry_nu8bkp3j: #ffffff;
+  --foundry_nu8bkp3k: #ffffff;
+  --foundry_nu8bkp3l: #ffffff;
+  --foundry_nu8bkp3m: #e4e4e4;
+  --foundry_nu8bkp3n: #b4b4b4;
+  --foundry_nu8bkp3o: #818181;
+  --foundry_nu8bkp3p: #565656;
+  --foundry_nu8bkp3q: #313131;
+  --foundry_nu8bkp3r: #010101;
+  --foundry_nu8bkp3s: #000000;
+  --foundry_nu8bkp3t: #000000;
+  --foundry_nu8bkp3u: #000000;
+  --foundry_nu8bkp3v: #ffdddd;
+  --foundry_nu8bkp3w: #ffbdbd;
+  --foundry_nu8bkp3x: #ff9c9c;
+  --foundry_nu8bkp3y: #ff6d6d;
+  --foundry_nu8bkp3z: #f04c4c;
+  --foundry_nu8bkp40: #c73737;
+  --foundry_nu8bkp41: #a42b2b;
+  --foundry_nu8bkp42: #802121;
+  --foundry_nu8bkp43: #5a1717;
+  --foundry_nu8bkp44: #290b0b;
+  --foundry_nu8bkp45: #000000;
+  --foundry_nu8bkp46: #000000;
+  --foundry_nu8bkp47: #000000;
+  --foundry_nu8bkp48: #000000;
+  --foundry_nu8bkp49: #feb1b1;
+  --foundry_nu8bkp4a: #fd8181;
+  --foundry_nu8bkp4b: #fc4242;
+  --foundry_nu8bkp4c: #e20404;
+  --foundry_nu8bkp4d: #b90303;
+  --foundry_nu8bkp4e: #940303;
+  --foundry_nu8bkp4f: #710202;
+  --foundry_nu8bkp4g: #4b0101;
+  --foundry_nu8bkp4h: #130000;
+  --foundry_nu8bkp4i: #000000;
+  --foundry_nu8bkp4j: #000000;
+  --foundry_nu8bkp4k: #000000;
+  --foundry_nu8bkp4l: #000000;
+  --foundry_nu8bkp4m: #000000;
+  --foundry_nu8bkp4n: #ffe492;
+  --foundry_nu8bkp4o: #ffc539;
+  --foundry_nu8bkp4p: #f4a811;
+  --foundry_nu8bkp4q: #d48e04;
+  --foundry_nu8bkp4r: #b87a00;
+  --foundry_nu8bkp4s: #966200;
+  --foundry_nu8bkp4t: #7a5000;
+  --foundry_nu8bkp4u: #5e3e00;
+  --foundry_nu8bkp4v: #412b00;
+  --foundry_nu8bkp4w: #1d1300;
+  --foundry_nu8bkp4x: #000000;
+  --foundry_nu8bkp4y: #000000;
+  --foundry_nu8bkp4z: #000000;
+  --foundry_nu8bkp50: #000000;
+  --foundry_nu8bkp51: #ffb720;
+  --foundry_nu8bkp52: #e19808;
+  --foundry_nu8bkp53: #bb7c00;
+  --foundry_nu8bkp54: #9a6500;
+  --foundry_nu8bkp55: #7c5200;
+  --foundry_nu8bkp56: #624000;
+  --foundry_nu8bkp57: #483000;
+  --foundry_nu8bkp58: #2e1e00;
+  --foundry_nu8bkp59: #070400;
+  --foundry_nu8bkp5a: #000000;
+  --foundry_nu8bkp5b: #000000;
+  --foundry_nu8bkp5c: #000000;
+  --foundry_nu8bkp5d: #000000;
+  --foundry_nu8bkp5e: #000000;
+  --foundry_nu8bkp5f: #adf5ca;
+  --foundry_nu8bkp5g: #5ce693;
+  --foundry_nu8bkp5h: #2ed16f;
+  --foundry_nu8bkp5i: #19b357;
+  --foundry_nu8bkp5j: #119c48;
+  --foundry_nu8bkp5k: #0a7e38;
+  --foundry_nu8bkp5l: #07662d;
+  --foundry_nu8bkp5m: #064f23;
+  --foundry_nu8bkp5n: #043719;
+  --foundry_nu8bkp5o: #03190c;
+  --foundry_nu8bkp5p: #000000;
+  --foundry_nu8bkp5q: #000000;
+  --foundry_nu8bkp5r: #000000;
+  --foundry_nu8bkp5s: #000000;
+  --foundry_nu8bkp5t: #57dd8c;
+  --foundry_nu8bkp5u: #26be63;
+  --foundry_nu8bkp5v: #1f9d51;
+  --foundry_nu8bkp5w: #1a8043;
+  --foundry_nu8bkp5x: #156836;
+  --foundry_nu8bkp5y: #10522b;
+  --foundry_nu8bkp5z: #0c3d1f;
+  --foundry_nu8bkp60: #082614;
+  --foundry_nu8bkp61: #010603;
+  --foundry_nu8bkp62: #000000;
+  --foundry_nu8bkp63: #000000;
+  --foundry_nu8bkp64: #000000;
+  --foundry_nu8bkp65: #000000;
+  --foundry_nu8bkp66: #000000;
+  --foundry_nu8bkp67: #dee6f2;
+  --foundry_nu8bkp68: #bdcfe6;
+  --foundry_nu8bkp69: #9fb9db;
+  --foundry_nu8bkp6a: #7c9fcc;
+  --foundry_nu8bkp6b: #6189c0;
+  --foundry_nu8bkp6c: #3e6eae;
+  --foundry_nu8bkp6d: #26589c;
+  --foundry_nu8bkp6e: #134384;
+  --foundry_nu8bkp6f: #072e62;
+  --foundry_nu8bkp6g: #02152e;
+  --foundry_nu8bkp6h: #000000;
+  --foundry_nu8bkp6i: #000000;
+  --foundry_nu8bkp6j: #000000;
+  --foundry_nu8bkp6k: #000000;
+  --foundry_nu8bkp6l: #b2c7e2;
+  --foundry_nu8bkp6m: #8aa9d2;
+  --foundry_nu8bkp6n: #638bc1;
+  --foundry_nu8bkp6o: #4271b0;
+  --foundry_nu8bkp6p: #285a9e;
+  --foundry_nu8bkp6q: #154688;
+  --foundry_nu8bkp6r: #09336c;
+  --foundry_nu8bkp6s: #032047;
+  --foundry_nu8bkp6t: #01050b;
+  --foundry_nu8bkp6u: #000000;
+  --foundry_nu8bkp6v: #000000;
+  --foundry_nu8bkp6w: #000000;
+  --foundry_nu8bkp6x: #000000;
+  --foundry_nu8bkp6y: #000000;
+  --foundry_nu8bkp6z: #e0e6e9;
+  --foundry_nu8bkp70: #c5cfd6;
+  --foundry_nu8bkp71: #aab9c2;
+  --foundry_nu8bkp72: #8b9fac;
+  --foundry_nu8bkp73: #728a9a;
+  --foundry_nu8bkp74: #5a707e;
+  --foundry_nu8bkp75: #495b67;
+  --foundry_nu8bkp76: #39464f;
+  --foundry_nu8bkp77: #273037;
+  --foundry_nu8bkp78: #111518;
+  --foundry_nu8bkp79: #000000;
+  --foundry_nu8bkp7a: #000000;
+  --foundry_nu8bkp7b: #000000;
+  --foundry_nu8bkp7c: #000000;
+  --foundry_nu8bkp7d: #c1c5c8;
+  --foundry_nu8bkp7e: #a1a7ab;
+  --foundry_nu8bkp7f: #838a8f;
+  --foundry_nu8bkp7g: #697177;
+  --foundry_nu8bkp7h: #525c62;
+  --foundry_nu8bkp7i: #3e484f;
+  --foundry_nu8bkp7j: #2b363d;
+  --foundry_nu8bkp7k: #182229;
+  --foundry_nu8bkp7l: #030506;
+  --foundry_nu8bkp7m: #000000;
+  --foundry_nu8bkp7n: #000000;
+  --foundry_nu8bkp7o: #000000;
+  --foundry_nu8bkp7p: #000000;
+  --foundry_nu8bkp7q: #000000;
+  --foundry_nu8bkp7r: #ffffff;
+  --foundry_nu8bkp7s: rgba(0, 0, 0, 0.1);
+  --foundry_nu8bkp7t: rgba(0, 0, 0, 0.15);
+  --foundry_nu8bkp7u: rgba(0, 0, 0, 0.4);
+  --foundry_nu8bkp7v: rgba(0, 0, 0, 0.5);
+  --foundry_nu8bkp7w: rgba(0, 0, 0, 0.65);
+  --foundry_nu8bkp7x: rgba(0, 0, 0, 0.8);
+  --foundry_nu8bkp7y: rgba(0, 0, 0, 0.9);
+  --foundry_nu8bkp7z: #000000;
+  --foundry_nu8bkp80: rgba(0, 0, 0, 0);
+  --foundry_nu8bkp81: #818181;
+  --foundry_nu8bkp82: #b4b4b4;
+  --foundry_nu8bkp83: #565656;
+  --foundry_nu8bkp84: #010101;
+  --foundry_nu8bkp85: #09336c;
+  --foundry_nu8bkp86: #154688;
+  --foundry_nu8bkp87: #032047;
+  --foundry_nu8bkp88: #0c3d1f;
+  --foundry_nu8bkp89: #10522b;
+  --foundry_nu8bkp8a: #082614;
+  --foundry_nu8bkp8b: #483000;
+  --foundry_nu8bkp8c: #624000;
+  --foundry_nu8bkp8d: #2e1e00;
+  --foundry_nu8bkp8e: #710202;
+  --foundry_nu8bkp8f: #940303;
+  --foundry_nu8bkp8g: #4b0101;
+  --foundry_nu8bkp8h: #2b363d;
+  --foundry_nu8bkp8i: #3e484f;
+  --foundry_nu8bkp8j: #182229;
+  --foundry_nu8bkp8k: #818181;
+  --foundry_nu8bkp8l: #ffffff;
+  --foundry_nu8bkp8m: #ffffff;
+  --foundry_nu8bkp8n: #e4e4e4;
+  --foundry_nu8bkp8o: #ffffff;
+  --foundry_nu8bkp8p: #ffffff;
+  --foundry_nu8bkp8q: #e4e4e4;
+  --foundry_nu8bkp8r: #ffffff;
+  --foundry_nu8bkp8s: #57dd8c;
+  --foundry_nu8bkp8t: #b2c7e2;
+  --foundry_nu8bkp8u: #ffb720;
+  --foundry_nu8bkp8v: #feb1b1;
+  --foundry_nu8bkp8w: #c1c5c8;
+  --foundry_nu8bkp8x: #000000;
+  --foundry_nu8bkp8y: #313131;
+  --foundry_nu8bkp8z: #010101;
+  --foundry_nu8bkp90: #000000;
+  --foundry_nu8bkp91: #010603;
+  --foundry_nu8bkp92: #01050b;
+  --foundry_nu8bkp93: #070400;
+  --foundry_nu8bkp94: #130000;
+  --foundry_nu8bkp95: #030506;
+  --foundry_nu8bkp96: #000000;
+  --foundry_nu8bkp97: #313131;
+  --foundry_nu8bkp98: #010101;
+  --foundry_nu8bkp99: #000000;
+  --foundry_nu8bkp9a: #010101;
+  --foundry_nu8bkp9b: #01050b;
+  --foundry_nu8bkp9c: #032047;
+  --foundry_nu8bkp9d: #000000;
+  --foundry_nu8bkp9e: #09336c;
+  --foundry_nu8bkp9f: #000000;
+  --foundry_nu8bkp9g: #010603;
+  --foundry_nu8bkp9h: #082614;
+  --foundry_nu8bkp9i: #000000;
+  --foundry_nu8bkp9j: #0c3d1f;
+  --foundry_nu8bkp9k: #000000;
+  --foundry_nu8bkp9l: #070400;
+  --foundry_nu8bkp9m: #2e1e00;
+  --foundry_nu8bkp9n: #000000;
+  --foundry_nu8bkp9o: #483000;
+  --foundry_nu8bkp9p: #000000;
+  --foundry_nu8bkp9q: #130000;
+  --foundry_nu8bkp9r: #4b0101;
+  --foundry_nu8bkp9s: #000000;
+  --foundry_nu8bkp9t: #710202;
+  --foundry_nu8bkp9u: #000000;
+  --foundry_nu8bkp9v: #030506;
+  --foundry_nu8bkp9w: #182229;
+  --foundry_nu8bkp9x: #000000;
+  --foundry_nu8bkp9y: #2b363d;
+  --foundry_nu8bkp9z: #000000;
+  --foundry_nu8bkpa0: #285a9e;
+  --foundry_nu8bkpa1: #4271b0;
+  --foundry_nu8bkpa2: #154688;
+  --foundry_nu8bkpa3: #156836;
+  --foundry_nu8bkpa4: #1a8043;
+  --foundry_nu8bkpa5: #10522b;
+  --foundry_nu8bkpa6: #7c5200;
+  --foundry_nu8bkpa7: #9a6500;
+  --foundry_nu8bkpa8: #624000;
+  --foundry_nu8bkpa9: #b90303;
+  --foundry_nu8bkpaa: #e20404;
+  --foundry_nu8bkpab: #940303;
+  --foundry_nu8bkpac: #525c62;
+  --foundry_nu8bkpad: #697177;
+  --foundry_nu8bkpae: #3e484f;
+}
+
+.foundry_nu8bkpah {
+  --foundry_nu8bkp37: #fdfdfd;
+  --foundry_nu8bkp38: #fdfdfd;
+  --foundry_nu8bkp39: #fdfdfd;
+  --foundry_nu8bkp3a: #fdfdfd;
+  --foundry_nu8bkp3b: #eaeaea;
+  --foundry_nu8bkp3c: #d8d8d8;
+  --foundry_nu8bkp3d: #b2b2b2;
+  --foundry_nu8bkp3e: #919191;
+  --foundry_nu8bkp3f: #6d6d6d;
+  --foundry_nu8bkp3g: #464646;
+  --foundry_nu8bkp3h: #212121;
+  --foundry_nu8bkp3i: #000000;
+  --foundry_nu8bkp3j: #000000;
+  --foundry_nu8bkp3k: #0e0e0e;
+  --foundry_nu8bkp3l: #141414;
+  --foundry_nu8bkp3m: #1a1a1a;
+  --foundry_nu8bkp3n: #222222;
+  --foundry_nu8bkp3o: #3f3f3f;
+  --foundry_nu8bkp3p: #5b5b5b;
+  --foundry_nu8bkp3q: #797979;
+  --foundry_nu8bkp3r: #989898;
+  --foundry_nu8bkp3s: #b3b3b3;
+  --foundry_nu8bkp3t: #cecece;
+  --foundry_nu8bkp3u: #ebebeb;
+  --foundry_nu8bkp3v: #fff3f3;
+  --foundry_nu8bkp3w: #ffe3e3;
+  --foundry_nu8bkp3x: #ffd3d3;
+  --foundry_nu8bkp3y: #ffbdbd;
+  --foundry_nu8bkp3z: #ffa5a5;
+  --foundry_nu8bkp40: #ff8181;
+  --foundry_nu8bkp41: #ff5c5c;
+  --foundry_nu8bkp42: #e74646;
+  --foundry_nu8bkp43: #c93838;
+  --foundry_nu8bkp44: #a92d2d;
+  --foundry_nu8bkp45: #8b2323;
+  --foundry_nu8bkp46: #6d1c1c;
+  --foundry_nu8bkp47: #541515;
+  --foundry_nu8bkp48: #401010;
+  --foundry_nu8bkp49: #4b0808;
+  --foundry_nu8bkp4a: #610b0b;
+  --foundry_nu8bkp4b: #7a0e0e;
+  --foundry_nu8bkp4c: #941111;
+  --foundry_nu8bkp4d: #b01414;
+  --foundry_nu8bkp4e: #cc1717;
+  --foundry_nu8bkp4f: #e72424;
+  --foundry_nu8bkp4g: #eb5050;
+  --foundry_nu8bkp4h: #ef6f6f;
+  --foundry_nu8bkp4i: #f28989;
+  --foundry_nu8bkp4j: #f5a4a4;
+  --foundry_nu8bkp4k: #f7b5b5;
+  --foundry_nu8bkp4l: #f9c5c5;
+  --foundry_nu8bkp4m: #fad3d3;
+  --foundry_nu8bkp4n: #fff4d4;
+  --foundry_nu8bkp4o: #ffe8a4;
+  --foundry_nu8bkp4p: #ffdb72;
+  --foundry_nu8bkp4q: #ffc539;
+  --foundry_nu8bkp4r: #fcaf17;
+  --foundry_nu8bkp4s: #e19808;
+  --foundry_nu8bkp4t: #ca8602;
+  --foundry_nu8bkp4u: #b07400;
+  --foundry_nu8bkp4v: #976300;
+  --foundry_nu8bkp4w: #7e5200;
+  --foundry_nu8bkp4x: #654200;
+  --foundry_nu8bkp4y: #503400;
+  --foundry_nu8bkp4z: #3c2800;
+  --foundry_nu8bkp50: #2e1e00;
+  --foundry_nu8bkp51: #312000;
+  --foundry_nu8bkp52: #402a00;
+  --foundry_nu8bkp53: #533600;
+  --foundry_nu8bkp54: #654200;
+  --foundry_nu8bkp55: #794f00;
+  --foundry_nu8bkp56: #8e5d00;
+  --foundry_nu8bkp57: #a36b00;
+  --foundry_nu8bkp58: #b87a00;
+  --foundry_nu8bkp59: #ce8903;
+  --foundry_nu8bkp5a: #e29808;
+  --foundry_nu8bkp5b: #f7aa13;
+  --foundry_nu8bkp5c: #ffb923;
+  --foundry_nu8bkp5d: #ffcb47;
+  --foundry_nu8bkp5e: #ffd86c;
+  --foundry_nu8bkp5f: #e0fbea;
+  --foundry_nu8bkp5g: #bef7d5;
+  --foundry_nu8bkp5h: #93f2b9;
+  --foundry_nu8bkp5i: #5ce693;
+  --foundry_nu8bkp5j: #39d878;
+  --foundry_nu8bkp5k: #20c05f;
+  --foundry_nu8bkp5l: #15aa51;
+  --foundry_nu8bkp5m: #0f9444;
+  --foundry_nu8bkp5n: #0b7f39;
+  --foundry_nu8bkp5o: #08692f;
+  --foundry_nu8bkp5p: #065626;
+  --foundry_nu8bkp5q: #05431e;
+  --foundry_nu8bkp5r: #043317;
+  --foundry_nu8bkp5s: #032712;
+  --foundry_nu8bkp5t: #082915;
+  --foundry_nu8bkp5u: #0b361c;
+  --foundry_nu8bkp5v: #0e4524;
+  --foundry_nu8bkp5w: #11552c;
+  --foundry_nu8bkp5x: #146535;
+  --foundry_nu8bkp5y: #18763d;
+  --foundry_nu8bkp5z: #1b8847;
+  --foundry_nu8bkp60: #1f9a50;
+  --foundry_nu8bkp61: #23ad5a;
+  --foundry_nu8bkp62: #26bf63;
+  --foundry_nu8bkp63: #2bd46f;
+  --foundry_nu8bkp64: #58dd8d;
+  --foundry_nu8bkp65: #84e6ab;
+  --foundry_nu8bkp66: #a3ecc0;
+  --foundry_nu8bkp67: #f1f4f9;
+  --foundry_nu8bkp68: #e3eaf4;
+  --foundry_nu8bkp69: #d4dfee;
+  --foundry_nu8bkp6a: #bdcfe6;
+  --foundry_nu8bkp6b: #a9c0de;
+  --foundry_nu8bkp6c: #8ba9d2;
+  --foundry_nu8bkp6d: #7296c8;
+  --foundry_nu8bkp6e: #5882bc;
+  --foundry_nu8bkp6f: #406faf;
+  --foundry_nu8bkp6g: #295b9f;
+  --foundry_nu8bkp6h: #17498b;
+  --foundry_nu8bkp6i: #0c3874;
+  --foundry_nu8bkp6j: #062a5b;
+  --foundry_nu8bkp6k: #032047;
+  --foundry_nu8bkp6l: #02234c;
+  --foundry_nu8bkp6m: #052e61;
+  --foundry_nu8bkp6n: #0c3b76;
+  --foundry_nu8bkp6o: #17498a;
+  --foundry_nu8bkp6p: #265899;
+  --foundry_nu8bkp6q: #3868a6;
+  --foundry_nu8bkp6r: #4c78b2;
+  --foundry_nu8bkp6s: #6189bd;
+  --foundry_nu8bkp6t: #7699c7;
+  --foundry_nu8bkp6u: #8baad0;
+  --foundry_nu8bkp6v: #a4bbda;
+  --foundry_nu8bkp6w: #b4c7e0;
+  --foundry_nu8bkp6x: #c4d3e7;
+  --foundry_nu8bkp6y: #d2ddec;
+  --foundry_nu8bkp6z: #f2f4f6;
+  --foundry_nu8bkp70: #e7ebee;
+  --foundry_nu8bkp71: #d9dfe4;
+  --foundry_nu8bkp72: #c5cfd6;
+  --foundry_nu8bkp73: #b2c0c8;
+  --foundry_nu8bkp74: #98aab6;
+  --foundry_nu8bkp75: #8297a5;
+  --foundry_nu8bkp76: #6b8495;
+  --foundry_nu8bkp77: #5a717f;
+  --foundry_nu8bkp78: #4b5e6a;
+  --foundry_nu8bkp79: #3d4c55;
+  --foundry_nu8bkp7a: #303b43;
+  --foundry_nu8bkp7b: #242d33;
+  --foundry_nu8bkp7c: #1b2226;
+  --foundry_nu8bkp7d: #1b252c;
+  --foundry_nu8bkp7e: #253037;
+  --foundry_nu8bkp7f: #323d44;
+  --foundry_nu8bkp7g: #404b52;
+  --foundry_nu8bkp7h: #4f5960;
+  --foundry_nu8bkp7i: #5f686e;
+  --foundry_nu8bkp7j: #6f787d;
+  --foundry_nu8bkp7k: #80888c;
+  --foundry_nu8bkp7l: #92989c;
+  --foundry_nu8bkp7m: #a3a8ac;
+  --foundry_nu8bkp7n: #b6babd;
+  --foundry_nu8bkp7o: #c2c6c8;
+  --foundry_nu8bkp7p: #d0d2d4;
+  --foundry_nu8bkp7q: #dadcde;
+  --foundry_nu8bkp7r: #ffffff;
+  --foundry_nu8bkp7s: rgba(0, 0, 0, 0.1);
+  --foundry_nu8bkp7t: rgba(0, 0, 0, 0.15);
+  --foundry_nu8bkp7u: rgba(0, 0, 0, 0.4);
+  --foundry_nu8bkp7v: rgba(0, 0, 0, 0.5);
+  --foundry_nu8bkp7w: rgba(0, 0, 0, 0.65);
+  --foundry_nu8bkp7x: rgba(0, 0, 0, 0.8);
+  --foundry_nu8bkp7y: rgba(0, 0, 0, 0.9);
+  --foundry_nu8bkp7z: #000000;
+  --foundry_nu8bkp80: #222222;
+  --foundry_nu8bkp81: #3f3f3f;
+  --foundry_nu8bkp82: #222222;
+  --foundry_nu8bkp83: #5b5b5b;
+  --foundry_nu8bkp84: #989898;
+  --foundry_nu8bkp85: #4c78b2;
+  --foundry_nu8bkp86: #3868a6;
+  --foundry_nu8bkp87: #6189bd;
+  --foundry_nu8bkp88: #1b8847;
+  --foundry_nu8bkp89: #18763d;
+  --foundry_nu8bkp8a: #1f9a50;
+  --foundry_nu8bkp8b: #a36b00;
+  --foundry_nu8bkp8c: #8e5d00;
+  --foundry_nu8bkp8d: #b87a00;
+  --foundry_nu8bkp8e: #e72424;
+  --foundry_nu8bkp8f: #cc1717;
+  --foundry_nu8bkp8g: #eb5050;
+  --foundry_nu8bkp8h: #6f787d;
+  --foundry_nu8bkp8i: #5f686e;
+  --foundry_nu8bkp8j: #80888c;
+  --foundry_nu8bkp8k: #3f3f3f;
+  --foundry_nu8bkp8l: #000000;
+  --foundry_nu8bkp8m: #141414;
+  --foundry_nu8bkp8n: #222222;
+  --foundry_nu8bkp8o: #3f3f3f;
+  --foundry_nu8bkp8p: #1a1a1a;
+  --foundry_nu8bkp8q: #141414;
+  --foundry_nu8bkp8r: #0e0e0e;
+  --foundry_nu8bkp8s: #082915;
+  --foundry_nu8bkp8t: #02234c;
+  --foundry_nu8bkp8u: #312000;
+  --foundry_nu8bkp8v: #4b0808;
+  --foundry_nu8bkp8w: #1b252c;
+  --foundry_nu8bkp8x: #cecece;
+  --foundry_nu8bkp8y: #797979;
+  --foundry_nu8bkp8z: #989898;
+  --foundry_nu8bkp90: #ebebeb;
+  --foundry_nu8bkp91: #23ad5a;
+  --foundry_nu8bkp92: #7699c7;
+  --foundry_nu8bkp93: #ce8903;
+  --foundry_nu8bkp94: #ef6f6f;
+  --foundry_nu8bkp95: #92989c;
+  --foundry_nu8bkp96: #cecece;
+  --foundry_nu8bkp97: #797979;
+  --foundry_nu8bkp98: #989898;
+  --foundry_nu8bkp99: #b3b3b3;
+  --foundry_nu8bkp9a: #989898;
+  --foundry_nu8bkp9b: #7699c7;
+  --foundry_nu8bkp9c: #6189bd;
+  --foundry_nu8bkp9d: #8baad0;
+  --foundry_nu8bkp9e: #4c78b2;
+  --foundry_nu8bkp9f: #a4bbda;
+  --foundry_nu8bkp9g: #23ad5a;
+  --foundry_nu8bkp9h: #1f9a50;
+  --foundry_nu8bkp9i: #26bf63;
+  --foundry_nu8bkp9j: #1b8847;
+  --foundry_nu8bkp9k: #2bd46f;
+  --foundry_nu8bkp9l: #ce8903;
+  --foundry_nu8bkp9m: #b87a00;
+  --foundry_nu8bkp9n: #e29808;
+  --foundry_nu8bkp9o: #a36b00;
+  --foundry_nu8bkp9p: #f7aa13;
+  --foundry_nu8bkp9q: #ef6f6f;
+  --foundry_nu8bkp9r: #eb5050;
+  --foundry_nu8bkp9s: #f28989;
+  --foundry_nu8bkp9t: #e72424;
+  --foundry_nu8bkp9u: #f5a4a4;
+  --foundry_nu8bkp9v: #92989c;
+  --foundry_nu8bkp9w: #80888c;
+  --foundry_nu8bkp9x: #a3a8ac;
+  --foundry_nu8bkp9y: #6f787d;
+  --foundry_nu8bkp9z: #b6babd;
+  --foundry_nu8bkpa0: #265899;
+  --foundry_nu8bkpa1: #17498a;
+  --foundry_nu8bkpa2: #3868a6;
+  --foundry_nu8bkpa3: #146535;
+  --foundry_nu8bkpa4: #11552c;
+  --foundry_nu8bkpa5: #18763d;
+  --foundry_nu8bkpa6: #794f00;
+  --foundry_nu8bkpa7: #654200;
+  --foundry_nu8bkpa8: #8e5d00;
+  --foundry_nu8bkpa9: #b01414;
+  --foundry_nu8bkpaa: #941111;
+  --foundry_nu8bkpab: #cc1717;
+  --foundry_nu8bkpac: #4f5960;
+  --foundry_nu8bkpad: #404b52;
+  --foundry_nu8bkpae: #5f686e;
+}
+
+.foundry_nu8bkpai {
+  --foundry_nu8bkp37: #fdfdfd;
+  --foundry_nu8bkp38: #fdfdfd;
+  --foundry_nu8bkp39: #fdfdfd;
+  --foundry_nu8bkp3a: #fdfdfd;
+  --foundry_nu8bkp3b: #cdcdcd;
+  --foundry_nu8bkp3c: #adadad;
+  --foundry_nu8bkp3d: #797979;
+  --foundry_nu8bkp3e: #555555;
+  --foundry_nu8bkp3f: #2e2e2e;
+  --foundry_nu8bkp3g: #000000;
+  --foundry_nu8bkp3h: #000000;
+  --foundry_nu8bkp3i: #000000;
+  --foundry_nu8bkp3j: #000000;
+  --foundry_nu8bkp3k: #000000;
+  --foundry_nu8bkp3l: #070707;
+  --foundry_nu8bkp3m: #1a1a1a;
+  --foundry_nu8bkp3n: #2f2f2f;
+  --foundry_nu8bkp3o: #656565;
+  --foundry_nu8bkp3p: #939393;
+  --foundry_nu8bkp3q: #c4c4c4;
+  --foundry_nu8bkp3r: #f5f5f5;
+  --foundry_nu8bkp3s: #ffffff;
+  --foundry_nu8bkp3t: #ffffff;
+  --foundry_nu8bkp3u: #ffffff;
+  --foundry_nu8bkp3v: #ffdddd;
+  --foundry_nu8bkp3w: #ffbdbd;
+  --foundry_nu8bkp3x: #ff9c9c;
+  --foundry_nu8bkp3y: #ff6d6d;
+  --foundry_nu8bkp3z: #f04c4c;
+  --foundry_nu8bkp40: #c73737;
+  --foundry_nu8bkp41: #a42b2b;
+  --foundry_nu8bkp42: #802121;
+  --foundry_nu8bkp43: #5a1717;
+  --foundry_nu8bkp44: #290b0b;
+  --foundry_nu8bkp45: #000000;
+  --foundry_nu8bkp46: #000000;
+  --foundry_nu8bkp47: #000000;
+  --foundry_nu8bkp48: #000000;
+  --foundry_nu8bkp49: #670b0b;
+  --foundry_nu8bkp4a: #911010;
+  --foundry_nu8bkp4b: #bd1515;
+  --foundry_nu8bkp4c: #e62323;
+  --foundry_nu8bkp4d: #ed6060;
+  --foundry_nu8bkp4e: #f28989;
+  --foundry_nu8bkp4f: #f6aeae;
+  --foundry_nu8bkp4g: #fad0d0;
+  --foundry_nu8bkp4h: #fef2f2;
+  --foundry_nu8bkp4i: #ffffff;
+  --foundry_nu8bkp4j: #ffffff;
+  --foundry_nu8bkp4k: #ffffff;
+  --foundry_nu8bkp4l: #ffffff;
+  --foundry_nu8bkp4m: #ffffff;
+  --foundry_nu8bkp4n: #ffe492;
+  --foundry_nu8bkp4o: #ffc539;
+  --foundry_nu8bkp4p: #f4a811;
+  --foundry_nu8bkp4q: #d48e04;
+  --foundry_nu8bkp4r: #b87a00;
+  --foundry_nu8bkp4s: #966200;
+  --foundry_nu8bkp4t: #7a5000;
+  --foundry_nu8bkp4u: #5e3e00;
+  --foundry_nu8bkp4v: #412b00;
+  --foundry_nu8bkp4w: #1d1300;
+  --foundry_nu8bkp4x: #000000;
+  --foundry_nu8bkp4y: #000000;
+  --foundry_nu8bkp4z: #000000;
+  --foundry_nu8bkp50: #000000;
+  --foundry_nu8bkp51: #442d00;
+  --foundry_nu8bkp52: #634100;
+  --foundry_nu8bkp53: #825600;
+  --foundry_nu8bkp54: #a26b00;
+  --foundry_nu8bkp55: #c28101;
+  --foundry_nu8bkp56: #e29808;
+  --foundry_nu8bkp57: #feb21a;
+  --foundry_nu8bkp58: #ffd665;
+  --foundry_nu8bkp59: #fff4d7;
+  --foundry_nu8bkp5a: #ffffff;
+  --foundry_nu8bkp5b: #ffffff;
+  --foundry_nu8bkp5c: #ffffff;
+  --foundry_nu8bkp5d: #ffffff;
+  --foundry_nu8bkp5e: #ffffff;
+  --foundry_nu8bkp5f: #adf5ca;
+  --foundry_nu8bkp5g: #5ce693;
+  --foundry_nu8bkp5h: #2ed16f;
+  --foundry_nu8bkp5i: #19b357;
+  --foundry_nu8bkp5j: #119c48;
+  --foundry_nu8bkp5k: #0a7e38;
+  --foundry_nu8bkp5l: #07662d;
+  --foundry_nu8bkp5m: #064f23;
+  --foundry_nu8bkp5n: #043719;
+  --foundry_nu8bkp5o: #03190c;
+  --foundry_nu8bkp5p: #000000;
+  --foundry_nu8bkp5q: #000000;
+  --foundry_nu8bkp5r: #000000;
+  --foundry_nu8bkp5s: #000000;
+  --foundry_nu8bkp5t: #0c3a1e;
+  --foundry_nu8bkp5u: #11522b;
+  --foundry_nu8bkp5v: #166d39;
+  --foundry_nu8bkp5w: #1b8746;
+  --foundry_nu8bkp5x: #21a355;
+  --foundry_nu8bkp5y: #26bf63;
+  --foundry_nu8bkp5z: #44da80;
+  --foundry_nu8bkp60: #9eebbd;
+  --foundry_nu8bkp61: #e4faec;
+  --foundry_nu8bkp62: #ffffff;
+  --foundry_nu8bkp63: #ffffff;
+  --foundry_nu8bkp64: #ffffff;
+  --foundry_nu8bkp65: #ffffff;
+  --foundry_nu8bkp66: #ffffff;
+  --foundry_nu8bkp67: #dee6f2;
+  --foundry_nu8bkp68: #bdcfe6;
+  --foundry_nu8bkp69: #9fb9db;
+  --foundry_nu8bkp6a: #7c9fcc;
+  --foundry_nu8bkp6b: #6189c0;
+  --foundry_nu8bkp6c: #3e6eae;
+  --foundry_nu8bkp6d: #26589c;
+  --foundry_nu8bkp6e: #134384;
+  --foundry_nu8bkp6f: #072e62;
+  --foundry_nu8bkp6g: #02152e;
+  --foundry_nu8bkp6h: #000000;
+  --foundry_nu8bkp6i: #000000;
+  --foundry_nu8bkp6j: #000000;
+  --foundry_nu8bkp6k: #000000;
+  --foundry_nu8bkp6l: #073065;
+  --foundry_nu8bkp6m: #154787;
+  --foundry_nu8bkp6n: #2e609f;
+  --foundry_nu8bkp6o: #4b78b2;
+  --foundry_nu8bkp6p: #6a91c1;
+  --foundry_nu8bkp6q: #8ba9d0;
+  --foundry_nu8bkp6r: #adc2de;
+  --foundry_nu8bkp6s: #cfdbeb;
+  --foundry_nu8bkp6t: #f1f5f9;
+  --foundry_nu8bkp6u: #ffffff;
+  --foundry_nu8bkp6v: #ffffff;
+  --foundry_nu8bkp6w: #ffffff;
+  --foundry_nu8bkp6x: #ffffff;
+  --foundry_nu8bkp6y: #ffffff;
+  --foundry_nu8bkp6z: #e0e6e9;
+  --foundry_nu8bkp70: #c5cfd6;
+  --foundry_nu8bkp71: #aab9c2;
+  --foundry_nu8bkp72: #8b9fac;
+  --foundry_nu8bkp73: #728a9a;
+  --foundry_nu8bkp74: #5a707e;
+  --foundry_nu8bkp75: #495b67;
+  --foundry_nu8bkp76: #39464f;
+  --foundry_nu8bkp77: #273037;
+  --foundry_nu8bkp78: #111518;
+  --foundry_nu8bkp79: #000000;
+  --foundry_nu8bkp7a: #000000;
+  --foundry_nu8bkp7b: #000000;
+  --foundry_nu8bkp7c: #000000;
+  --foundry_nu8bkp7d: #28333a;
+  --foundry_nu8bkp7e: #3e4950;
+  --foundry_nu8bkp7f: #576067;
+  --foundry_nu8bkp7g: #6f777d;
+  --foundry_nu8bkp7h: #888f94;
+  --foundry_nu8bkp7i: #a2a8ab;
+  --foundry_nu8bkp7j: #bdc1c4;
+  --foundry_nu8bkp7k: #d8dadc;
+  --foundry_nu8bkp7l: #f4f4f5;
+  --foundry_nu8bkp7m: #ffffff;
+  --foundry_nu8bkp7n: #ffffff;
+  --foundry_nu8bkp7o: #ffffff;
+  --foundry_nu8bkp7p: #ffffff;
+  --foundry_nu8bkp7q: #ffffff;
+  --foundry_nu8bkp7r: #ffffff;
+  --foundry_nu8bkp7s: rgba(0, 0, 0, 0.1);
+  --foundry_nu8bkp7t: rgba(0, 0, 0, 0.15);
+  --foundry_nu8bkp7u: rgba(0, 0, 0, 0.4);
+  --foundry_nu8bkp7v: rgba(0, 0, 0, 0.5);
+  --foundry_nu8bkp7w: rgba(0, 0, 0, 0.65);
+  --foundry_nu8bkp7x: rgba(0, 0, 0, 0.8);
+  --foundry_nu8bkp7y: rgba(0, 0, 0, 0.9);
+  --foundry_nu8bkp7z: #000000;
+  --foundry_nu8bkp80: #2f2f2f;
+  --foundry_nu8bkp81: #656565;
+  --foundry_nu8bkp82: #2f2f2f;
+  --foundry_nu8bkp83: #939393;
+  --foundry_nu8bkp84: #f5f5f5;
+  --foundry_nu8bkp85: #adc2de;
+  --foundry_nu8bkp86: #8ba9d0;
+  --foundry_nu8bkp87: #cfdbeb;
+  --foundry_nu8bkp88: #44da80;
+  --foundry_nu8bkp89: #26bf63;
+  --foundry_nu8bkp8a: #9eebbd;
+  --foundry_nu8bkp8b: #feb21a;
+  --foundry_nu8bkp8c: #e29808;
+  --foundry_nu8bkp8d: #ffd665;
+  --foundry_nu8bkp8e: #f6aeae;
+  --foundry_nu8bkp8f: #f28989;
+  --foundry_nu8bkp8g: #fad0d0;
+  --foundry_nu8bkp8h: #bdc1c4;
+  --foundry_nu8bkp8i: #a2a8ab;
+  --foundry_nu8bkp8j: #d8dadc;
+  --foundry_nu8bkp8k: #656565;
+  --foundry_nu8bkp8l: #000000;
+  --foundry_nu8bkp8m: #070707;
+  --foundry_nu8bkp8n: #2f2f2f;
+  --foundry_nu8bkp8o: #656565;
+  --foundry_nu8bkp8p: #1a1a1a;
+  --foundry_nu8bkp8q: #070707;
+  --foundry_nu8bkp8r: #000000;
+  --foundry_nu8bkp8s: #0c3a1e;
+  --foundry_nu8bkp8t: #073065;
+  --foundry_nu8bkp8u: #442d00;
+  --foundry_nu8bkp8v: #670b0b;
+  --foundry_nu8bkp8w: #28333a;
+  --foundry_nu8bkp8x: #ffffff;
+  --foundry_nu8bkp8y: #c4c4c4;
+  --foundry_nu8bkp8z: #f5f5f5;
+  --foundry_nu8bkp90: #ffffff;
+  --foundry_nu8bkp91: #e4faec;
+  --foundry_nu8bkp92: #f1f5f9;
+  --foundry_nu8bkp93: #fff4d7;
+  --foundry_nu8bkp94: #fef2f2;
+  --foundry_nu8bkp95: #f4f4f5;
+  --foundry_nu8bkp96: #ffffff;
+  --foundry_nu8bkp97: #c4c4c4;
+  --foundry_nu8bkp98: #f5f5f5;
+  --foundry_nu8bkp99: #ffffff;
+  --foundry_nu8bkp9a: #f5f5f5;
+  --foundry_nu8bkp9b: #f1f5f9;
+  --foundry_nu8bkp9c: #cfdbeb;
+  --foundry_nu8bkp9d: #ffffff;
+  --foundry_nu8bkp9e: #adc2de;
+  --foundry_nu8bkp9f: #ffffff;
+  --foundry_nu8bkp9g: #e4faec;
+  --foundry_nu8bkp9h: #9eebbd;
+  --foundry_nu8bkp9i: #ffffff;
+  --foundry_nu8bkp9j: #44da80;
+  --foundry_nu8bkp9k: #ffffff;
+  --foundry_nu8bkp9l: #fff4d7;
+  --foundry_nu8bkp9m: #ffd665;
+  --foundry_nu8bkp9n: #ffffff;
+  --foundry_nu8bkp9o: #feb21a;
+  --foundry_nu8bkp9p: #ffffff;
+  --foundry_nu8bkp9q: #fef2f2;
+  --foundry_nu8bkp9r: #fad0d0;
+  --foundry_nu8bkp9s: #ffffff;
+  --foundry_nu8bkp9t: #f6aeae;
+  --foundry_nu8bkp9u: #ffffff;
+  --foundry_nu8bkp9v: #f4f4f5;
+  --foundry_nu8bkp9w: #d8dadc;
+  --foundry_nu8bkp9x: #ffffff;
+  --foundry_nu8bkp9y: #bdc1c4;
+  --foundry_nu8bkp9z: #ffffff;
+  --foundry_nu8bkpa0: #6a91c1;
+  --foundry_nu8bkpa1: #4b78b2;
+  --foundry_nu8bkpa2: #8ba9d0;
+  --foundry_nu8bkpa3: #21a355;
+  --foundry_nu8bkpa4: #1b8746;
+  --foundry_nu8bkpa5: #26bf63;
+  --foundry_nu8bkpa6: #c28101;
+  --foundry_nu8bkpa7: #a26b00;
+  --foundry_nu8bkpa8: #e29808;
+  --foundry_nu8bkpa9: #ed6060;
+  --foundry_nu8bkpaa: #e62323;
+  --foundry_nu8bkpab: #f28989;
+  --foundry_nu8bkpac: #888f94;
+  --foundry_nu8bkpad: #6f777d;
+  --foundry_nu8bkpae: #a2a8ab;
+}
+
+/*# sourceMappingURL=d4efb5c8ca00f0d82e4419e2b6335676.css.map*/
