@@ -49,7 +49,7 @@ _global.SENTRY_RELEASE = {
     },
     156: (e, t, n) => {
       n.d(t, {
-        A: () => f
+        A: () => h
       });
       var r = n(686),
         s = n(540),
@@ -60,7 +60,7 @@ _global.SENTRY_RELEASE = {
         i = n(577);
       const {
         apiHost: l
-      } = (0, u.A)(), d = (0, i.t)(document.documentElement.lang), h = {}, f = async function(e) {
+      } = (0, u.A)(), d = (0, i.t)(document.documentElement.lang), f = {}, h = async function(e) {
         let {
           fetchOptions: t = {},
           finalFetchOptions: n = {},
@@ -71,7 +71,7 @@ _global.SENTRY_RELEASE = {
         } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
         try {
           const {
-            bearerToken: f = null
+            bearerToken: h = null
           } = await (a?.()) ?? {}, g = {
             "X-Requested-With": "XMLHttpRequest",
             "X-AMC": !0,
@@ -81,8 +81,8 @@ _global.SENTRY_RELEASE = {
             }
           };
           let w = `${l}/${e}`;
-          if (null === s || c().isEmpty(s) || (w += `?${new URLSearchParams(s)}`), !f && u) return null;
-          f && (g.Authorization = `Bearer ${f}`);
+          if (null === s || c().isEmpty(s) || (w += `?${new URLSearchParams(s)}`), !h && u) return null;
+          h && (g.Authorization = `Bearer ${h}`);
           const p = {
               headers: g
             },
@@ -93,18 +93,18 @@ _global.SENTRY_RELEASE = {
             }),
             b = await (0, r.sha256)(v);
           if (i) {
-            if (h[b]?.response) return h[b].response;
-            if (h[b]?.loading) return {
+            if (f[b]?.response) return f[b].response;
+            if (f[b]?.loading) return {
               error: null,
               result: null
             };
-            h[b] = {
+            f[b] = {
               loading: !0
             }
           }
           const k = await fetch(w, m),
             y = await k.json();
-          return i && (h[b] = {
+          return i && (f[b] = {
             response: y,
             loading: !1
           }), y
@@ -131,24 +131,24 @@ _global.SENTRY_RELEASE = {
             key: l,
             marketingAuthTLD: d
           } = e;
-          const h = r?.apiHost ?? t,
-            f = r?.authHost ?? n,
+          const f = r?.apiHost ?? t,
+            h = r?.authHost ?? n,
             g = r?.cdnBase ?? i,
             w = r?.clientId ?? o,
             p = s?.marketingAuthTLD ?? d,
             m = r?.scHost ?? c;
           return {
-            apiHost: `https://${h}.rockstargames.com`,
+            apiHost: `https://${f}.rockstargames.com`,
             graphEnv: r?.graphEnv ?? a,
             host: m,
             hostname: u,
             cdnBase: g,
             key: l,
             clientId: w,
-            authHost: f,
-            login: `https://${f}.rockstargames.com/connect/authorize/${w}`,
-            silentCheck: `https://${f}.rockstargames.com/connect/cors/check/${w}`,
-            signup: `https://${f}.rockstargames.com/create/?cid=${w}`,
+            authHost: h,
+            login: `https://${h}.rockstargames.com/connect/authorize/${w}`,
+            silentCheck: `https://${h}.rockstargames.com/connect/cors/check/${w}`,
+            signup: `https://${h}.rockstargames.com/create/?cid=${w}`,
             gateway: `https://${p}/auth/gateway.json`,
             logout: `https://${p}/auth/sc-auth-logout`,
             pingBearer: `https://${p}/auth/ping-bearer.json`
@@ -217,7 +217,7 @@ _global.SENTRY_RELEASE = {
         useRockstarEventDispatcher: () => k,
         useRockstarEventSubscriber: () => y,
         useRockstarLocalState: () => d,
-        useScApi: () => f,
+        useScApi: () => h,
         useScroll: () => S.Ll
       });
       var r = n(407),
@@ -355,8 +355,8 @@ _global.SENTRY_RELEASE = {
             }
           }
         };
-      var h = n(156);
-      const f = (e, t) => {
+      var f = n(156);
+      const h = (e, t) => {
         let {
           autoFetch: n = !0,
           fetchOptions: s = {},
@@ -365,7 +365,7 @@ _global.SENTRY_RELEASE = {
         const c = (0, r.useRockstarTokenPing)(),
           [u, i] = (0, a.useState)(null),
           [l, d] = (0, a.useState)(!1),
-          [f, g] = (0, a.useState)(null),
+          [h, g] = (0, a.useState)(null),
           w = (0, a.useCallback)((async function() {
             let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
               n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
@@ -374,7 +374,7 @@ _global.SENTRY_RELEASE = {
                 fetchOptions: r = {}
               } = t;
               g(null), i(null), d(!0);
-              const a = await (0, h.A)(n ?? e, {
+              const a = await (0, f.A)(n ?? e, {
                 pingBearer: c,
                 fetchOptions: s,
                 finalFetchOptions: r,
@@ -387,10 +387,10 @@ _global.SENTRY_RELEASE = {
             return null
           }), [e, s, o]);
         return (0, a.useEffect)((() => {
-          null === u && null === f && !l && n && w()
-        }), [n, u, f, l, w]), {
+          null === u && null === h && !l && n && w()
+        }), [n, u, h, l, w]), {
           data: u,
-          error: f,
+          error: h,
           loading: l,
           fetch: w
         }
@@ -509,11 +509,11 @@ _global.SENTRY_RELEASE = {
           let {
             children: t
           } = e;
-          const [n, i] = (0, s.useState)(window.pageYOffset), [l, d] = (0, s.useState)(null), [h, f] = (0, s.useState)(!1), g = (0, r.useReactiveVar)(a);
+          const [n, i] = (0, s.useState)(window.pageYOffset), [l, d] = (0, s.useState)(null), [f, h] = (0, s.useState)(!1), g = (0, r.useReactiveVar)(a);
           let w;
           const p = () => {
-            f(!0), clearTimeout(w), w = setTimeout((() => {
-              f(!1)
+            h(!0), clearTimeout(w), w = setTimeout((() => {
+              h(!1)
             }), 2e3)
           };
           return (0, s.useEffect)((() => {
@@ -521,12 +521,12 @@ _global.SENTRY_RELEASE = {
             const t = () => {
               if (g) return void d(!1);
               const t = Math.max(0, window.pageYOffset);
-              i(t), h || d(t > 60 && t > e), e = t
+              i(t), f || d(t > 60 && t > e), e = t
             };
             return window.addEventListener("scroll", t), () => {
               window.removeEventListener("scroll", t)
             }
-          }), [h, g]), (0, s.useMemo)((() => (0, o.jsx)(u.Provider, {
+          }), [f, g]), (0, s.useMemo)((() => (0, o.jsx)(u.Provider, {
             value: {
               freezeUserShouldSeeMore: g,
               pageYOffset: n,

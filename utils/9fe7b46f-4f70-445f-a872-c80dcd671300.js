@@ -30,7 +30,7 @@ _global.SENTRY_RELEASE = {
         t = "function" == typeof Symbol && Symbol.for ? Symbol.for("react.element") : 60103;
 
       function n(e, r) {
-        return !1 !== r.clone && r.isMergeableObject(e) ? f((t = e, Array.isArray(t) ? [] : {}), e, r) : e;
+        return !1 !== r.clone && r.isMergeableObject(e) ? c((t = e, Array.isArray(t) ? [] : {}), e, r) : e;
         var t
       }
 
@@ -48,7 +48,7 @@ _global.SENTRY_RELEASE = {
         }(e))
       }
 
-      function c(e, r) {
+      function f(e, r) {
         try {
           return r in e
         } catch (e) {
@@ -56,7 +56,7 @@ _global.SENTRY_RELEASE = {
         }
       }
 
-      function f(e, t, u) {
+      function c(e, t, u) {
         (u = u || {}).arrayMerge = u.arrayMerge || o, u.isMergeableObject = u.isMergeableObject || r, u.cloneUnlessOtherwiseSpecified = n;
         var l = Array.isArray(t);
         return l === Array.isArray(e) ? l ? u.arrayMerge(e, t, u) : function(e, r, t) {
@@ -65,22 +65,22 @@ _global.SENTRY_RELEASE = {
             o[r] = n(e[r], t)
           })), a(r).forEach((function(a) {
             (function(e, r) {
-              return c(e, r) && !(Object.hasOwnProperty.call(e, r) && Object.propertyIsEnumerable.call(e, r))
-            })(e, a) || (c(e, a) && t.isMergeableObject(r[a]) ? o[a] = function(e, r) {
-              if (!r.customMerge) return f;
+              return f(e, r) && !(Object.hasOwnProperty.call(e, r) && Object.propertyIsEnumerable.call(e, r))
+            })(e, a) || (f(e, a) && t.isMergeableObject(r[a]) ? o[a] = function(e, r) {
+              if (!r.customMerge) return c;
               var t = r.customMerge(e);
-              return "function" == typeof t ? t : f
+              return "function" == typeof t ? t : c
             }(a, t)(e[a], r[a], t) : o[a] = n(r[a], t))
           })), o
         }(e, t, u) : n(t, u)
       }
-      f.all = function(e, r) {
+      c.all = function(e, r) {
         if (!Array.isArray(e)) throw new Error("first argument should be an array");
         return e.reduce((function(e, t) {
-          return f(e, t, r)
+          return c(e, t, r)
         }), {})
       };
-      var u = f;
+      var u = c;
       e.exports = u
     }
   }

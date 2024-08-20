@@ -31,15 +31,15 @@ _global.SENTRY_RELEASE = {
       n.jsx = function(e, n, i) {
         var t, l = {},
           d = null,
-          c = null;
-        for (t in void 0 !== i && (d = "" + i), void 0 !== n.key && (d = "" + n.key), void 0 !== n.ref && (c = n.ref), n) o.call(n, t) && !s.hasOwnProperty(t) && (l[t] = n[t]);
+          f = null;
+        for (t in void 0 !== i && (d = "" + i), void 0 !== n.key && (d = "" + n.key), void 0 !== n.ref && (f = n.ref), n) o.call(n, t) && !s.hasOwnProperty(t) && (l[t] = n[t]);
         if (e && e.defaultProps)
           for (t in n = e.defaultProps) void 0 === l[t] && (l[t] = n[t]);
         return {
           $$typeof: a,
           type: e,
           key: d,
-          ref: c,
+          ref: f,
           props: l,
           _owner: r.current
         }
@@ -124,8 +124,8 @@ _global.SENTRY_RELEASE = {
         })
       })(e, n);
       var d = i(784),
-        c = i(252),
-        f = i.n(c);
+        f = i(252),
+        c = i.n(f);
       const u = function(e) {
         let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 250;
         return i => ((e, n, i) => {
@@ -148,7 +148,7 @@ _global.SENTRY_RELEASE = {
             })), n) : n
           };
           return (0, d.useEffect)((() => {
-            const e = f().debounce((() => {
+            const e = c().debounce((() => {
               o(r(n))
             }), i);
             return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)

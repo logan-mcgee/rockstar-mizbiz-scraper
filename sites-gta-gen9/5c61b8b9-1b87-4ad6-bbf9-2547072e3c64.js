@@ -22,8 +22,8 @@ _global.SENTRY_RELEASE = {
         Cl: () => a,
         Ju: () => f,
         Tt: () => l,
-        fX: () => i,
-        zs: () => c
+        fX: () => c,
+        zs: () => i
       });
       var n = function(e, t) {
         return n = Object.setPrototypeOf || {
@@ -78,7 +78,7 @@ _global.SENTRY_RELEASE = {
         throw new TypeError(t ? "Object is not iterable." : "Symbol.iterator is not defined.")
       }
 
-      function c(e, t) {
+      function i(e, t) {
         var r = "function" == typeof Symbol && e[Symbol.iterator];
         if (!r) return e;
         var n, o, a = r.call(e),
@@ -100,7 +100,7 @@ _global.SENTRY_RELEASE = {
         return l
       }
 
-      function i(e, t, r) {
+      function c(e, t, r) {
         if (r || 2 === arguments.length)
           for (var n, o = 0, a = t.length; o < a; o++) !n && o in t || (n || (n = Array.prototype.slice.call(t, 0, o)), n[o] = t[o]);
         return e.concat(n || Array.prototype.slice.call(t))

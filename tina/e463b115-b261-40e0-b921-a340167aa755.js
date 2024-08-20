@@ -31,15 +31,15 @@ _global.SENTRY_RELEASE = {
           a = o.transformKey || n,
           f = {};
         return function e(n, i, s) {
-          s = s || 1, Object.keys(n).forEach((function(l) {
-            const u = n[l],
-              b = o.safe && Array.isArray(u),
-              d = Object.prototype.toString.call(u),
-              y = t(u),
-              p = "[object Object]" === d || "[object Array]" === d,
-              g = i ? i + r + a(l) : a(l);
-            if (!b && !y && p && Object.keys(u).length && (!o.maxDepth || s < c)) return e(u, g, s + 1);
-            f[g] = u
+          s = s || 1, Object.keys(n).forEach((function(b) {
+            const d = n[b],
+              l = o.safe && Array.isArray(d),
+              u = Object.prototype.toString.call(d),
+              y = t(d),
+              p = "[object Object]" === u || "[object Array]" === u,
+              g = i ? i + r + a(b) : a(b);
+            if (!l && !y && p && Object.keys(d).length && (!o.maxDepth || s < c)) return e(d, g, s + 1);
+            f[g] = d
           }))
         }(e), f
       }
@@ -50,7 +50,7 @@ _global.SENTRY_RELEASE = {
           s = {};
         if (t(r) || "[object Object]" !== Object.prototype.toString.call(r)) return r;
 
-        function l(e) {
+        function b(e) {
           const t = Number(e);
           return isNaN(t) || -1 !== e.indexOf(".") || c.object ? e : t
         }
@@ -67,17 +67,17 @@ _global.SENTRY_RELEASE = {
           }(t, e, o(r[t], c))
         }), {}), Object.keys(r).forEach((function(t) {
           const n = t.split(a).map(i);
-          let o = l(n.shift()),
-            u = l(n[0]),
-            b = s;
-          for (; void 0 !== u;) {
+          let o = b(n.shift()),
+            d = b(n[0]),
+            l = s;
+          for (; void 0 !== d;) {
             if ("__proto__" === o) return;
-            const e = Object.prototype.toString.call(b[o]),
+            const e = Object.prototype.toString.call(l[o]),
               t = "[object Object]" === e || "[object Array]" === e;
-            if (!f && !t && void 0 !== b[o]) return;
-            (f && !t || !f && null == b[o]) && (b[o] = "number" != typeof u || c.object ? {} : []), b = b[o], n.length > 0 && (o = l(n.shift()), u = l(n[0]))
+            if (!f && !t && void 0 !== l[o]) return;
+            (f && !t || !f && null == l[o]) && (l[o] = "number" != typeof d || c.object ? {} : []), l = l[o], n.length > 0 && (o = b(n.shift()), d = b(n[0]))
           }
-          b[o] = e(r[t], c)
+          l[o] = e(r[t], c)
         })), s
       }
     }

@@ -19,49 +19,49 @@ _global.SENTRY_RELEASE = {
     6570: (e, t, r) => {
       "use strict";
       r.r(t), r.d(t, {
-        Manager: () => a,
+        Manager: () => u,
         Popper: () => _,
         Reference: () => k,
         usePopper: () => g
       });
       var n = r(1403),
         o = n.createContext(),
-        u = n.createContext();
+        a = n.createContext();
 
-      function a(e) {
+      function u(e) {
         var t = e.children,
           r = n.useState(null),
-          a = r[0],
-          f = r[1],
-          i = n.useRef(!1);
+          u = r[0],
+          i = r[1],
+          f = n.useRef(!1);
         n.useEffect((function() {
           return function() {
-            i.current = !0
+            f.current = !0
           }
         }), []);
-        var c = n.useCallback((function(e) {
-          i.current || f(e)
+        var s = n.useCallback((function(e) {
+          f.current || i(e)
         }), []);
         return n.createElement(o.Provider, {
-          value: a
-        }, n.createElement(u.Provider, {
-          value: c
+          value: u
+        }, n.createElement(a.Provider, {
+          value: s
         }, t))
       }
-      var f = function(e) {
+      var i = function(e) {
           return Array.isArray(e) ? e[0] : e
         },
-        i = function(e) {
+        f = function(e) {
           if ("function" == typeof e) {
             for (var t = arguments.length, r = new Array(t > 1 ? t - 1 : 0), n = 1; n < t; n++) r[n - 1] = arguments[n];
             return e.apply(void 0, r)
           }
         },
-        c = function(e, t) {
-          if ("function" == typeof e) return i(e, t);
+        s = function(e, t) {
+          if ("function" == typeof e) return f(e, t);
           null != e && (e.current = t)
         },
-        s = function(e) {
+        c = function(e) {
           return e.reduce((function(e, t) {
             var r = t[0],
               n = t[1];
@@ -72,21 +72,21 @@ _global.SENTRY_RELEASE = {
         d = r(9493),
         p = r(851),
         y = r(9337),
-        m = r.n(y),
-        b = [],
+        b = r.n(y),
+        m = [],
         g = function(e, t, r) {
           void 0 === r && (r = {});
           var o = n.useRef(null),
-            u = {
+            a = {
               onFirstUpdate: r.onFirstUpdate,
               placement: r.placement || "bottom",
               strategy: r.strategy || "absolute",
-              modifiers: r.modifiers || b
+              modifiers: r.modifiers || m
             },
-            a = n.useState({
+            u = n.useState({
               styles: {
                 popper: {
-                  position: u.strategy,
+                  position: a.strategy,
                   left: "0",
                   top: "0"
                 },
@@ -96,9 +96,9 @@ _global.SENTRY_RELEASE = {
               },
               attributes: {}
             }),
-            f = a[0],
-            i = a[1],
-            c = n.useMemo((function() {
+            i = u[0],
+            f = u[1],
+            s = n.useMemo((function() {
               return {
                 name: "updateState",
                 enabled: !0,
@@ -107,11 +107,11 @@ _global.SENTRY_RELEASE = {
                   var t = e.state,
                     r = Object.keys(t.elements);
                   d.flushSync((function() {
-                    i({
-                      styles: s(r.map((function(e) {
+                    f({
+                      styles: c(r.map((function(e) {
                         return [e, t.styles[e] || {}]
                       }))),
-                      attributes: s(r.map((function(e) {
+                      attributes: c(r.map((function(e) {
                         return [e, t.attributes[e]]
                       })))
                     })
@@ -122,16 +122,16 @@ _global.SENTRY_RELEASE = {
             }), []),
             y = n.useMemo((function() {
               var e = {
-                onFirstUpdate: u.onFirstUpdate,
-                placement: u.placement,
-                strategy: u.strategy,
-                modifiers: [].concat(u.modifiers, [c, {
+                onFirstUpdate: a.onFirstUpdate,
+                placement: a.placement,
+                strategy: a.strategy,
+                modifiers: [].concat(a.modifiers, [s, {
                   name: "applyStyles",
                   enabled: !1
                 }])
               };
-              return m()(o.current, e) ? o.current || e : (o.current = e, e)
-            }), [u.onFirstUpdate, u.placement, u.strategy, u.modifiers, c]),
+              return b()(o.current, e) ? o.current || e : (o.current = e, e)
+            }), [a.onFirstUpdate, a.placement, a.strategy, a.modifiers, s]),
             g = n.useRef();
           return l((function() {
             g.current && g.current.setOptions(y)
@@ -145,8 +145,8 @@ _global.SENTRY_RELEASE = {
             }
           }), [e, t, r.createPopper]), {
             state: g.current ? g.current.state : null,
-            styles: f.styles,
-            attributes: f.attributes,
+            styles: i.styles,
+            attributes: i.attributes,
             update: g.current ? g.current.update : null,
             forceUpdate: g.current ? g.current.forceUpdate : null
           }
@@ -160,30 +160,30 @@ _global.SENTRY_RELEASE = {
       function _(e) {
         var t = e.placement,
           r = void 0 === t ? "bottom" : t,
-          u = e.strategy,
-          a = void 0 === u ? "absolute" : u,
-          i = e.modifiers,
-          s = void 0 === i ? h : i,
+          a = e.strategy,
+          u = void 0 === a ? "absolute" : a,
+          f = e.modifiers,
+          c = void 0 === f ? h : f,
           l = e.referenceElement,
           d = e.onFirstUpdate,
           p = e.innerRef,
           y = e.children,
-          m = n.useContext(o),
-          b = n.useState(null),
-          _ = b[0],
-          E = b[1],
+          b = n.useContext(o),
+          m = n.useState(null),
+          _ = m[0],
+          E = m[1],
           S = n.useState(null),
           k = S[0],
           M = S[1];
         n.useEffect((function() {
-          c(p, _)
+          s(p, _)
         }), [p, _]);
         var O = n.useMemo((function() {
             return {
               placement: r,
-              strategy: a,
+              strategy: u,
               onFirstUpdate: d,
-              modifiers: [].concat(s, [{
+              modifiers: [].concat(c, [{
                 name: "arrow",
                 enabled: null != k,
                 options: {
@@ -191,8 +191,8 @@ _global.SENTRY_RELEASE = {
                 }
               }])
             }
-          }), [r, a, d, s, k]),
-          P = g(l || m, _, O),
+          }), [r, u, d, c, k]),
+          P = g(l || b, _, O),
           R = P.state,
           U = P.styles,
           x = P.forceUpdate,
@@ -212,7 +212,7 @@ _global.SENTRY_RELEASE = {
               update: A || w
             }
           }), [E, M, r, R, U, A, x]);
-        return f(y)(j)
+        return i(y)(j)
       }
       var E = r(7622),
         S = r.n(E);
@@ -220,18 +220,18 @@ _global.SENTRY_RELEASE = {
       function k(e) {
         var t = e.children,
           r = e.innerRef,
-          o = n.useContext(u),
-          a = n.useCallback((function(e) {
-            c(r, e), i(o, e)
+          o = n.useContext(a),
+          u = n.useCallback((function(e) {
+            s(r, e), f(o, e)
           }), [r, o]);
         return n.useEffect((function() {
           return function() {
-            return c(r, null)
+            return s(r, null)
           }
         }), []), n.useEffect((function() {
           S()(Boolean(o), "`Reference` should not be used outside of a `Manager` component.")
-        }), [o]), f(t)({
-          ref: a
+        }), [o]), i(t)({
+          ref: u
         })
       }
     },
@@ -241,53 +241,53 @@ _global.SENTRY_RELEASE = {
         n = "function" == typeof Set,
         o = "function" == typeof ArrayBuffer && !!ArrayBuffer.isView;
 
-      function u(e, a) {
-        if (e === a) return !0;
-        if (e && a && "object" == typeof e && "object" == typeof a) {
-          if (e.constructor !== a.constructor) return !1;
-          var f, i, c, s;
+      function a(e, u) {
+        if (e === u) return !0;
+        if (e && u && "object" == typeof e && "object" == typeof u) {
+          if (e.constructor !== u.constructor) return !1;
+          var i, f, s, c;
           if (Array.isArray(e)) {
-            if ((f = e.length) != a.length) return !1;
-            for (i = f; 0 != i--;)
-              if (!u(e[i], a[i])) return !1;
+            if ((i = e.length) != u.length) return !1;
+            for (f = i; 0 != f--;)
+              if (!a(e[f], u[f])) return !1;
             return !0
           }
-          if (r && e instanceof Map && a instanceof Map) {
-            if (e.size !== a.size) return !1;
-            for (s = e.entries(); !(i = s.next()).done;)
-              if (!a.has(i.value[0])) return !1;
-            for (s = e.entries(); !(i = s.next()).done;)
-              if (!u(i.value[1], a.get(i.value[0]))) return !1;
+          if (r && e instanceof Map && u instanceof Map) {
+            if (e.size !== u.size) return !1;
+            for (c = e.entries(); !(f = c.next()).done;)
+              if (!u.has(f.value[0])) return !1;
+            for (c = e.entries(); !(f = c.next()).done;)
+              if (!a(f.value[1], u.get(f.value[0]))) return !1;
             return !0
           }
-          if (n && e instanceof Set && a instanceof Set) {
-            if (e.size !== a.size) return !1;
-            for (s = e.entries(); !(i = s.next()).done;)
-              if (!a.has(i.value[0])) return !1;
+          if (n && e instanceof Set && u instanceof Set) {
+            if (e.size !== u.size) return !1;
+            for (c = e.entries(); !(f = c.next()).done;)
+              if (!u.has(f.value[0])) return !1;
             return !0
           }
-          if (o && ArrayBuffer.isView(e) && ArrayBuffer.isView(a)) {
-            if ((f = e.length) != a.length) return !1;
-            for (i = f; 0 != i--;)
-              if (e[i] !== a[i]) return !1;
+          if (o && ArrayBuffer.isView(e) && ArrayBuffer.isView(u)) {
+            if ((i = e.length) != u.length) return !1;
+            for (f = i; 0 != f--;)
+              if (e[f] !== u[f]) return !1;
             return !0
           }
-          if (e.constructor === RegExp) return e.source === a.source && e.flags === a.flags;
-          if (e.valueOf !== Object.prototype.valueOf && "function" == typeof e.valueOf && "function" == typeof a.valueOf) return e.valueOf() === a.valueOf();
-          if (e.toString !== Object.prototype.toString && "function" == typeof e.toString && "function" == typeof a.toString) return e.toString() === a.toString();
-          if ((f = (c = Object.keys(e)).length) !== Object.keys(a).length) return !1;
-          for (i = f; 0 != i--;)
-            if (!Object.prototype.hasOwnProperty.call(a, c[i])) return !1;
+          if (e.constructor === RegExp) return e.source === u.source && e.flags === u.flags;
+          if (e.valueOf !== Object.prototype.valueOf && "function" == typeof e.valueOf && "function" == typeof u.valueOf) return e.valueOf() === u.valueOf();
+          if (e.toString !== Object.prototype.toString && "function" == typeof e.toString && "function" == typeof u.toString) return e.toString() === u.toString();
+          if ((i = (s = Object.keys(e)).length) !== Object.keys(u).length) return !1;
+          for (f = i; 0 != f--;)
+            if (!Object.prototype.hasOwnProperty.call(u, s[f])) return !1;
           if (t && e instanceof Element) return !1;
-          for (i = f; 0 != i--;)
-            if (("_owner" !== c[i] && "__v" !== c[i] && "__o" !== c[i] || !e.$$typeof) && !u(e[c[i]], a[c[i]])) return !1;
+          for (f = i; 0 != f--;)
+            if (("_owner" !== s[f] && "__v" !== s[f] && "__o" !== s[f] || !e.$$typeof) && !a(e[s[f]], u[s[f]])) return !1;
           return !0
         }
-        return e != e && a != a
+        return e != e && u != u
       }
       e.exports = function(e, t) {
         try {
-          return u(e, t)
+          return a(e, t)
         } catch (e) {
           if ((e.message || "").match(/stack|recursion/i)) return console.warn("react-fast-compare cannot handle circular refs"), !1;
           throw e

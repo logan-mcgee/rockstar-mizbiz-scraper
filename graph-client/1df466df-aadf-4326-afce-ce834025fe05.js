@@ -19,9 +19,9 @@ _global.SENTRY_RELEASE = {
     9961: (e, t, a) => {
       a.r(t), a.d(t, {
         sha1: () => n,
-        sha256: () => o,
-        sha384: () => l,
-        sha512: () => s
+        sha256: () => f,
+        sha384: () => o,
+        sha512: () => l
       });
       const d = e => async function(t) {
         let {
@@ -35,7 +35,7 @@ _global.SENTRY_RELEASE = {
           for (let e = 0; e < t.byteLength; e += 4) a += t.getUint32(e).toString(16).padStart(8, "0");
           return a
         })(d) : d
-      }, n = d("SHA-1"), o = d("SHA-256"), l = d("SHA-384"), s = d("SHA-512")
+      }, n = d("SHA-1"), f = d("SHA-256"), o = d("SHA-384"), l = d("SHA-512")
     }
   }
 ]);

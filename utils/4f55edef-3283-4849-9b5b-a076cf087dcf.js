@@ -29,16 +29,16 @@ _global.SENTRY_RELEASE = {
         };
       t.jsx = function(e, t, n) {
         var o, i = {},
-          l = null,
-          f = null;
-        for (o in void 0 !== n && (l = "" + n), void 0 !== t.key && (l = "" + t.key), void 0 !== t.ref && (f = t.ref), t) a.call(t, o) && !s.hasOwnProperty(o) && (i[o] = t[o]);
+          f = null,
+          l = null;
+        for (o in void 0 !== n && (f = "" + n), void 0 !== t.key && (f = "" + t.key), void 0 !== t.ref && (l = t.ref), t) a.call(t, o) && !s.hasOwnProperty(o) && (i[o] = t[o]);
         if (e && e.defaultProps)
           for (o in t = e.defaultProps) void 0 === i[o] && (i[o] = t[o]);
         return {
           $$typeof: r,
           type: e,
-          key: l,
-          ref: f,
+          key: f,
+          ref: l,
           props: i,
           _owner: d.current
         }
@@ -50,9 +50,9 @@ _global.SENTRY_RELEASE = {
     551: (e, t, n) => {
       n.r(t), n.d(t, {
         TagManager: () => r(),
-        init: () => f,
+        init: () => l,
         track: () => a.A,
-        withAutoRouteTracking: () => l
+        withAutoRouteTracking: () => f
       });
       var o = n(482),
         r = n.n(o),
@@ -60,7 +60,7 @@ _global.SENTRY_RELEASE = {
         d = n(784),
         s = n(779),
         i = n(632);
-      const l = e => t => ((e, t) => {
+      const f = e => t => ((e, t) => {
           const {
             pathname: n
           } = (0, s.useLocation)();
@@ -72,7 +72,7 @@ _global.SENTRY_RELEASE = {
             ...t
           })
         })(e, t),
-        f = e => {
+        l = e => {
           let {
             id: t
           } = e;
@@ -85,7 +85,7 @@ _global.SENTRY_RELEASE = {
     },
     359: (e, t, n) => {
       n.d(t, {
-        A: () => l
+        A: () => f
       });
       var o = n(482),
         r = n.n(o);
@@ -120,7 +120,7 @@ _global.SENTRY_RELEASE = {
         })(),
         s = d?.id,
         i = /Mobi/i.test(window.navigator.userAgent) ? "mobile" : "desktop",
-        l = e => {
+        f = e => {
           const t = {
             ...e,
             environment: s,

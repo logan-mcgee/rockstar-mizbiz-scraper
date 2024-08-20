@@ -20,7 +20,7 @@ _global.SENTRY_RELEASE = {
       a.r(t), a.d(t, {
         mutateLSSettings: () => o,
         settingsReactive: () => l,
-        useRockstarWebLSSettings: () => r
+        useRockstarWebLSSettings: () => f
       });
       var n = a(407);
       const d = "rockstar-games-web";
@@ -43,7 +43,7 @@ _global.SENTRY_RELEASE = {
           };
           return n[t] = a, null === a && delete n[t], window.localStorage.setItem(d, JSON.stringify(n)), l(n), n
         },
-        r = () => ({
+        f = () => ({
           lsSettings: (0, n.useReactiveVar)(l),
           settingsReactive: l,
           mutateLSSettings: o

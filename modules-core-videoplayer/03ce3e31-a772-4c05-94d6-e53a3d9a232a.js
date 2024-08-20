@@ -27,24 +27,24 @@ _global.SENTRY_RELEASE = {
         c = d(2757),
         i = d(6454),
         u = d(470),
-        f = d(6632);
-      const g = window?.env?.graphEnv ?? "prod",
-        p = () => {
+        g = d(6632);
+      const f = window?.env?.graphEnv ?? "prod",
+        b = () => {
           const [e, a] = (0, t.useSearchParams)(), [{
             iso: d
-          }] = (0, s.getLocale)(), o = "true" === e.get("autoplay"), n = e.get("id"), r = e.get("resolution") ?? null, g = e.get("locale") ?? "en_us", p = Number(e.get("start") ?? 0);
-          return (0, f.jsx)(l.ResizeProvider, {
-            children: (0, f.jsx)(c.GtmProvider, {
-              children: (0, f.jsx)(s.IntlProvider, {
+          }] = (0, s.getLocale)(), o = "true" === e.get("autoplay"), n = e.get("id"), r = e.get("resolution") ?? null, f = e.get("locale") ?? "en_us", b = Number(e.get("start") ?? 0);
+          return (0, g.jsx)(l.ResizeProvider, {
+            children: (0, g.jsx)(c.GtmProvider, {
+              children: (0, g.jsx)(s.IntlProvider, {
                 locales: i,
                 lang: d,
-                children: (0, f.jsx)(u.A, {
+                children: (0, g.jsx)(u.A, {
                   autoplay: o,
                   context: "embed",
-                  locale: g,
+                  locale: f,
                   id: n,
                   resolution: r,
-                  start: p,
+                  start: b,
                   wrapper: !1,
                   videoChangeCallback: e => {
                     a({
@@ -58,17 +58,17 @@ _global.SENTRY_RELEASE = {
             })
           })
         },
-        y = (0, r.withRockstarGraph)((() => (0, f.jsx)(t.BrowserRouter, {
-          children: (0, f.jsx)(p, {})
+        p = (0, r.withRockstarGraph)((() => (0, g.jsx)(t.BrowserRouter, {
+          children: (0, g.jsx)(b, {})
         })), {
-          env: g
+          env: f
         }),
-        b = window?.env?.gtmId ?? null;
+        y = window?.env?.gtmId ?? null;
       (0, o.init)({
-        id: b
+        id: y
       });
       const w = document.createElement("main");
-      document.body.appendChild(w), (0, n.H)(w).render((0, f.jsx)(y, {}))
+      document.body.appendChild(w), (0, n.H)(w).render((0, g.jsx)(p, {}))
     }
   }
 ]);

@@ -16,16 +16,16 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_red_dead_online = self.webpackChunk_rockstargames_sites_red_dead_online || []).push([
   [977], {
-    89269: (e, n, t) => {
+    89269: (e, n, a) => {
       "use strict";
-      var a = t(17254);
+      var t = a(17254);
 
       function o() {}
 
-      function r() {}
-      r.resetWarningCache = o, e.exports = function() {
-        function e(e, n, t, o, r, d) {
-          if (d !== a) {
+      function d() {}
+      d.resetWarningCache = o, e.exports = function() {
+        function e(e, n, a, o, d, r) {
+          if (r !== t) {
             var s = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
             throw s.name = "Invariant Violation", s
           }
@@ -35,7 +35,7 @@ _global.SENTRY_RELEASE = {
           return e
         }
         e.isRequired = e;
-        var t = {
+        var a = {
           array: e,
           bigint: e,
           bool: e,
@@ -55,14 +55,14 @@ _global.SENTRY_RELEASE = {
           oneOfType: n,
           shape: n,
           exact: n,
-          checkPropTypes: r,
+          checkPropTypes: d,
           resetWarningCache: o
         };
-        return t.PropTypes = t, t
+        return a.PropTypes = a, a
       }
     },
-    37977: (e, n, t) => {
-      e.exports = t(89269)()
+    37977: (e, n, a) => {
+      e.exports = a(89269)()
     },
     17254: e => {
       "use strict";

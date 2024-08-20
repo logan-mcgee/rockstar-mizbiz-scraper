@@ -19,8 +19,8 @@ _global.SENTRY_RELEASE = {
     300: (e, t, i) => {
       i.r(t), i.d(t, {
         InView: () => u,
-        defaultFallbackInView: () => c,
-        observe: () => h,
+        defaultFallbackInView: () => h,
+        observe: () => c,
         useInView: () => b
       });
       var n = i(71403),
@@ -35,14 +35,14 @@ _global.SENTRY_RELEASE = {
         })(e, "symbol" != typeof t ? t + "" : t, i), i),
         o = new Map,
         a = new WeakMap,
-        l = 0,
-        d = void 0;
+        d = 0,
+        l = void 0;
 
-      function c(e) {
-        d = e
+      function h(e) {
+        l = e
       }
 
-      function h(e, t, i = {}, n = d) {
+      function c(e, t, i = {}, n = l) {
         if (void 0 === window.IntersectionObserver && void 0 !== n) {
           const r = e.getBoundingClientRect();
           return t(n, {
@@ -58,11 +58,11 @@ _global.SENTRY_RELEASE = {
         const {
           id: r,
           observer: s,
-          elements: c
+          elements: h
         } = function(e) {
           const t = function(e) {
             return Object.keys(e).sort().filter((t => void 0 !== e[t])).map((t => {
-              return `${t}_${"root"===t?(i=e.root,i?(a.has(i)||(l+=1,a.set(i,l.toString())),a.get(i)):"0"):e[t]}`;
+              return `${t}_${"root"===t?(i=e.root,i?(a.has(i)||(d+=1,a.set(i,d.toString())),a.get(i)):"0"):e[t]}`;
               var i
             })).toString()
           }(e);
@@ -86,10 +86,10 @@ _global.SENTRY_RELEASE = {
             }, o.set(t, i)
           }
           return i
-        }(i), h = c.get(e) || [];
-        return c.has(e) || c.set(e, h), h.push(t), s.observe(e),
+        }(i), c = h.get(e) || [];
+        return h.has(e) || h.set(e, c), c.push(t), s.observe(e),
           function() {
-            h.splice(h.indexOf(t), 1), 0 === h.length && (c.delete(e), s.unobserve(e)), 0 === c.size && (s.disconnect(), o.delete(r))
+            c.splice(c.indexOf(t), 1), 0 === c.length && (h.delete(e), s.unobserve(e)), 0 === h.size && (s.disconnect(), o.delete(r))
           }
       }
       var u = class extends n.Component {
@@ -131,7 +131,7 @@ _global.SENTRY_RELEASE = {
             delay: r,
             fallbackInView: s
           } = this.props;
-          this._unobserveCb = h(this.node, this.handleChange, {
+          this._unobserveCb = c(this.node, this.handleChange, {
             threshold: e,
             root: t,
             rootMargin: i,
@@ -164,10 +164,10 @@ _global.SENTRY_RELEASE = {
             root: s,
             rootMargin: o,
             onChange: a,
-            skip: l,
-            trackVisibility: d,
-            delay: c,
-            initialInView: h,
+            skip: d,
+            trackVisibility: l,
+            delay: h,
+            initialInView: c,
             fallbackInView: u,
             ...b
           } = this.props;
@@ -186,40 +186,40 @@ _global.SENTRY_RELEASE = {
         root: s,
         triggerOnce: o,
         skip: a,
-        initialInView: l,
-        fallbackInView: d,
-        onChange: c
+        initialInView: d,
+        fallbackInView: l,
+        onChange: h
       } = {}) {
         var u;
-        const [b, p] = n.useState(null), f = n.useRef(), [g, y] = n.useState({
-          inView: !!l,
+        const [b, f] = n.useState(null), p = n.useRef(), [g, y] = n.useState({
+          inView: !!d,
           entry: void 0
         });
-        f.current = c, n.useEffect((() => {
+        p.current = h, n.useEffect((() => {
           if (a || !b) return;
           let n;
-          return n = h(b, ((e, t) => {
+          return n = c(b, ((e, t) => {
             y({
               inView: e,
               entry: t
-            }), f.current && f.current(e, t), t.isIntersecting && o && n && (n(), n = void 0)
+            }), p.current && p.current(e, t), t.isIntersecting && o && n && (n(), n = void 0)
           }), {
             root: s,
             rootMargin: r,
             threshold: e,
             trackVisibility: i,
             delay: t
-          }, d), () => {
+          }, l), () => {
             n && n()
           }
-        }), [Array.isArray(e) ? e.toString() : e, b, s, r, o, a, i, d, t]);
+        }), [Array.isArray(e) ? e.toString() : e, b, s, r, o, a, i, l, t]);
         const v = null == (u = g.entry) ? void 0 : u.target,
           w = n.useRef();
         b || !v || o || a || w.current === v || (w.current = v, y({
-          inView: !!l,
+          inView: !!d,
           entry: void 0
         }));
-        const k = [p, g.inView, g.entry];
+        const k = [f, g.inView, g.entry];
         return k.ref = k[0], k.inView = k[1], k.entry = k[2], k
       }
     }

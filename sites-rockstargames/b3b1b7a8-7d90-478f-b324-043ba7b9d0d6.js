@@ -23,7 +23,7 @@ _global.SENTRY_RELEASE = {
         throw new Error("setTimeout has not been defined")
       }
 
-      function c() {
+      function a() {
         throw new Error("clearTimeout has not been defined")
       }
 
@@ -46,17 +46,17 @@ _global.SENTRY_RELEASE = {
           t = o
         }
         try {
-          r = "function" == typeof clearTimeout ? clearTimeout : c
+          r = "function" == typeof clearTimeout ? clearTimeout : a
         } catch (e) {
-          r = c
+          r = a
         }
       }();
-      var a, s = [],
+      var c, s = [],
         u = !1,
         l = -1;
 
       function f() {
-        u && a && (u = !1, a.length ? s = a.concat(s) : l = -1, s.length && d())
+        u && c && (u = !1, c.length ? s = c.concat(s) : l = -1, s.length && d())
       }
 
       function d() {
@@ -64,13 +64,13 @@ _global.SENTRY_RELEASE = {
           var e = i(f);
           u = !0;
           for (var t = s.length; t;) {
-            for (a = s, s = []; ++l < t;) a && a[l].run();
+            for (c = s, s = []; ++l < t;) c && c[l].run();
             l = -1, t = s.length
           }
-          a = null, u = !1,
+          c = null, u = !1,
             function(e) {
               if (r === clearTimeout) return clearTimeout(e);
-              if ((r === c || !r) && clearTimeout) return r = clearTimeout, clearTimeout(e);
+              if ((r === a || !r) && clearTimeout) return r = clearTimeout, clearTimeout(e);
               try {
                 return r(e)
               } catch (t) {
@@ -112,9 +112,9 @@ _global.SENTRY_RELEASE = {
       "use strict";
       r.d(t, {
         C6: () => o,
-        Cl: () => c,
+        Cl: () => a,
         Tt: () => i,
-        fX: () => a
+        fX: () => c
       });
       var n = function(e, t) {
         return n = Object.setPrototypeOf || {
@@ -135,12 +135,12 @@ _global.SENTRY_RELEASE = {
         }
         n(e, t), e.prototype = null === t ? Object.create(t) : (r.prototype = t.prototype, new r)
       }
-      var c = function() {
-        return c = Object.assign || function(e) {
+      var a = function() {
+        return a = Object.assign || function(e) {
           for (var t, r = 1, n = arguments.length; r < n; r++)
             for (var o in t = arguments[r]) Object.prototype.hasOwnProperty.call(t, o) && (e[o] = t[o]);
           return e
-        }, c.apply(this, arguments)
+        }, a.apply(this, arguments)
       };
 
       function i(e, t) {
@@ -153,9 +153,9 @@ _global.SENTRY_RELEASE = {
         return r
       }
 
-      function a(e, t, r) {
+      function c(e, t, r) {
         if (r || 2 === arguments.length)
-          for (var n, o = 0, c = t.length; o < c; o++) !n && o in t || (n || (n = Array.prototype.slice.call(t, 0, o)), n[o] = t[o]);
+          for (var n, o = 0, a = t.length; o < a; o++) !n && o in t || (n || (n = Array.prototype.slice.call(t, 0, o)), n[o] = t[o]);
         return e.concat(n || Array.prototype.slice.call(t))
       }
       Object.create, Object.create, "function" == typeof SuppressedError && SuppressedError

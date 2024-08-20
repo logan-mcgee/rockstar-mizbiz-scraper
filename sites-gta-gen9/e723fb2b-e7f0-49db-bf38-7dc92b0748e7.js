@@ -20,10 +20,10 @@ _global.SENTRY_RELEASE = {
       r.d(t, {
         C6: () => o,
         Cl: () => a,
-        Ju: () => f,
-        Tt: () => l,
-        fX: () => i,
-        zs: () => c
+        Ju: () => l,
+        Tt: () => f,
+        fX: () => c,
+        zs: () => i
       });
       var n = function(e, t) {
         return n = Object.setPrototypeOf || {
@@ -52,7 +52,7 @@ _global.SENTRY_RELEASE = {
         }, a.apply(this, arguments)
       };
 
-      function l(e, t) {
+      function f(e, t) {
         var r = {};
         for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (r[n] = e[n]);
         if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -62,7 +62,7 @@ _global.SENTRY_RELEASE = {
         return r
       }
 
-      function f(e) {
+      function l(e) {
         var t = "function" == typeof Symbol && Symbol.iterator,
           r = t && e[t],
           n = 0;
@@ -78,14 +78,14 @@ _global.SENTRY_RELEASE = {
         throw new TypeError(t ? "Object is not iterable." : "Symbol.iterator is not defined.")
       }
 
-      function c(e, t) {
+      function i(e, t) {
         var r = "function" == typeof Symbol && e[Symbol.iterator];
         if (!r) return e;
         var n, o, a = r.call(e),
-          l = [];
+          f = [];
         try {
           for (;
-            (void 0 === t || t-- > 0) && !(n = a.next()).done;) l.push(n.value)
+            (void 0 === t || t-- > 0) && !(n = a.next()).done;) f.push(n.value)
         } catch (e) {
           o = {
             error: e
@@ -97,10 +97,10 @@ _global.SENTRY_RELEASE = {
             if (o) throw o.error
           }
         }
-        return l
+        return f
       }
 
-      function i(e, t, r) {
+      function c(e, t, r) {
         if (r || 2 === arguments.length)
           for (var n, o = 0, a = t.length; o < a; o++) !n && o in t || (n || (n = Array.prototype.slice.call(t, 0, o)), n[o] = t[o]);
         return e.concat(n || Array.prototype.slice.call(t))

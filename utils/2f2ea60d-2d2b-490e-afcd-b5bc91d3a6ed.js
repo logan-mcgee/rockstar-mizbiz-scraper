@@ -104,8 +104,8 @@ _global.SENTRY_RELEASE = {
     },
     904: (e, t, r) => {
       r.d(t, {
-        G4: () => f,
-        uU: () => c
+        G4: () => c,
+        uU: () => f
       });
       var n = r(784),
         o = r(407),
@@ -168,7 +168,7 @@ _global.SENTRY_RELEASE = {
           Consumer: l
         } = i,
         u = (0, o.makeVar)(d()),
-        c = e => {
+        f = e => {
           let {
             children: t
           } = e;
@@ -185,7 +185,7 @@ _global.SENTRY_RELEASE = {
             children: t
           })
         },
-        f = () => (0, n.useContext)(i)
+        c = () => (0, n.useContext)(i)
     },
     295: (e, t, r) => {
       r.d(t, {
@@ -204,33 +204,33 @@ _global.SENTRY_RELEASE = {
           let {
             children: t
           } = e;
-          const [r, l] = (0, o.useState)(window.pageYOffset), [u, c] = (0, o.useState)(null), [f, m] = (0, o.useState)(!1), w = (0, n.useReactiveVar)(s);
-          let v;
-          const b = () => {
-            m(!0), clearTimeout(v), v = setTimeout((() => {
+          const [r, l] = (0, o.useState)(window.pageYOffset), [u, f] = (0, o.useState)(null), [c, m] = (0, o.useState)(!1), w = (0, n.useReactiveVar)(s);
+          let b;
+          const v = () => {
+            m(!0), clearTimeout(b), b = setTimeout((() => {
               m(!1)
             }), 2e3)
           };
           return (0, o.useEffect)((() => {
             let e;
             const t = () => {
-              if (w) return void c(!1);
+              if (w) return void f(!1);
               const t = Math.max(0, window.pageYOffset);
-              l(t), f || c(t > 60 && t > e), e = t
+              l(t), c || f(t > 60 && t > e), e = t
             };
             return window.addEventListener("scroll", t), () => {
               window.removeEventListener("scroll", t)
             }
-          }), [f, w]), (0, o.useMemo)((() => (0, a.jsx)(i.Provider, {
+          }), [c, w]), (0, o.useMemo)((() => (0, a.jsx)(i.Provider, {
             value: {
               freezeUserShouldSeeMore: w,
               pageYOffset: r,
-              pauseUserShouldSeeMore: b,
+              pauseUserShouldSeeMore: v,
               setFreezeUserShouldSeeMore: d,
               userShouldSeeMore: u
             },
             children: t
-          })), [w, r, b, u])
+          })), [w, r, v, u])
         }
     }
   }

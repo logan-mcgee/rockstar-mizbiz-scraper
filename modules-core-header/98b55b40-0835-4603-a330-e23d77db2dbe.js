@@ -22,30 +22,30 @@ _global.SENTRY_RELEASE = {
         r = Symbol.for("react.fragment"),
         d = Object.prototype.hasOwnProperty,
         l = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        s = {
+        f = {
           key: !0,
           ref: !0,
           __self: !0,
           __source: !0
         };
 
-      function f(e, o, a) {
+      function s(e, o, a) {
         var t, r = {},
-          f = null,
+          s = null,
           i = null;
-        for (t in void 0 !== a && (f = "" + a), void 0 !== o.key && (f = "" + o.key), void 0 !== o.ref && (i = o.ref), o) d.call(o, t) && !s.hasOwnProperty(t) && (r[t] = o[t]);
+        for (t in void 0 !== a && (s = "" + a), void 0 !== o.key && (s = "" + o.key), void 0 !== o.ref && (i = o.ref), o) d.call(o, t) && !f.hasOwnProperty(t) && (r[t] = o[t]);
         if (e && e.defaultProps)
           for (t in o = e.defaultProps) void 0 === r[t] && (r[t] = o[t]);
         return {
           $$typeof: n,
           type: e,
-          key: f,
+          key: s,
           ref: i,
           props: r,
           _owner: l.current
         }
       }
-      o.Fragment = r, o.jsx = f, o.jsxs = f
+      o.Fragment = r, o.jsx = s, o.jsxs = s
     },
     6632: (e, o, a) => {
       e.exports = a(6516)
@@ -63,12 +63,12 @@ _global.SENTRY_RELEASE = {
           children: a,
           history: d
         } = e;
-        const [l, s] = (0, t.useState)({
+        const [l, f] = (0, t.useState)({
           action: d.action,
           location: d.location
         });
         return (0, t.useLayoutEffect)((() => d.listen(((e, o) => {
-          s({
+          f({
             location: e,
             action: o
           })

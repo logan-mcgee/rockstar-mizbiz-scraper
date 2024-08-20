@@ -74,14 +74,14 @@ _global.SENTRY_RELEASE = {
               o = e.auth,
               s = void 0 === o ? "" : o,
               l = e.preview,
-              c = void 0 === l ? "" : l,
+              f = void 0 === l ? "" : l,
               u = this.gtm({
                 id: t,
                 events: d,
                 dataLayer: n || void 0,
                 dataLayerName: i,
                 auth: s,
-                preview: c
+                preview: f
               });
             n && document.head.appendChild(u.dataScript), document.head.insertBefore(u.script(), document.head.childNodes[0]), document.body.insertBefore(u.noScript(), document.body.childNodes[0])
           },

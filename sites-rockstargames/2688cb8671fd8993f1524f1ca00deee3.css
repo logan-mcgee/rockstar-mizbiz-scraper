@@ -1,0 +1,2369 @@
+:root {
+  --__foundry-global-platform-scales-ratio: 1
+}
+
+:root {
+  --foundry-global-font-line-height-150: 150%;
+  --foundry-global-font-line-height-130: 130%;
+  --foundry-global-font-letter-spacing-neg-10: -1%;
+  --foundry-global-font-letter-spacing-neg-33: -2.5%;
+  --foundry-global-font-letter-spacing-33: 2.5%;
+  --foundry-global-font-letter-spacing-10: 1%;
+  --foundry-global-font-letter-spacing-0: 0%;
+  --foundry-global-font-weight-700: 700;
+  --foundry-global-font-weight-400: 400;
+  --foundry-global-font-family-consolas: "Consolas";
+  --foundry-global-font-family-helvetica-now-text: "Helvetica Now Text";
+  --foundry-global-font-family-helvetica-now-display: "Helvetica Now Display";
+  --foundry-global-font-family-arial: "Arial";
+  --foundry-global-border-width-50: 4px;
+  --foundry-global-border-width-33: 3px;
+  --foundry-global-border-width-25: 2px;
+  --foundry-global-border-width-10: 1px;
+  --foundry-global-border-width-0: 0px;
+  --foundry-global-border-radius-pill: 1000px;
+  --foundry-global-border-radius-circle: 9999px;
+  --foundry-global-border-radius-400: 32px;
+  --foundry-global-border-radius-300: 24px;
+  --foundry-global-border-radius-200: 16px;
+  --foundry-global-border-radius-150: 12px;
+  --foundry-global-border-radius-100: 8px;
+  --foundry-global-border-radius-50: 4px;
+  --foundry-global-border-radius-25: 2px;
+  --foundry-global-border-radius-0: 0px;
+  --foundry-alias-font-line-height-body: var(--foundry-global-font-line-height-150);
+  --foundry-alias-font-line-height-heading: var(--foundry-global-font-line-height-130);
+  --foundry-alias-font-weight-bold: var(--foundry-global-font-weight-700);
+  --foundry-alias-font-weight-regular: var(--foundry-global-font-weight-400);
+  --foundry-alias-font-letter-spacing-all-caps-fallback: var(--foundry-global-font-letter-spacing-10);
+  --foundry-alias-font-letter-spacing-all-caps-primary: var(--foundry-global-font-letter-spacing-10);
+  --foundry-alias-font-letter-spacing-body-fallback: var(--foundry-global-font-letter-spacing-neg-33);
+  --foundry-alias-font-letter-spacing-body-primary: var(--foundry-global-font-letter-spacing-neg-33);
+  --foundry-alias-font-letter-spacing-heading-fallback: var(--foundry-global-font-letter-spacing-neg-33);
+  --foundry-alias-font-letter-spacing-heading-primary: var(--foundry-global-font-letter-spacing-neg-33);
+  --foundry-alias-font-family-code-fallback: var(--foundry-global-font-family-consolas);
+  --foundry-alias-font-family-code-primary: var(--foundry-global-font-family-consolas);
+  --foundry-alias-font-family-body-fallback: var(--foundry-global-font-family-arial);
+  --foundry-alias-font-family-body-primary: var(--foundry-global-font-family-helvetica-now-text);
+  --foundry-alias-font-family-heading-fallback: var(--foundry-global-font-family-arial);
+  --foundry-alias-font-family-heading-primary: var(--foundry-global-font-family-helvetica-now-display);
+  --__foundry-global-platform-scales-scale-6250: calc(500px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-5000: calc(400px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-4500: calc(360px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-4000: calc(320px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-3500: calc(280px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-3000: calc(240px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-2500: calc(200px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-2200: calc(176px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-2000: calc(160px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-1800: calc(144px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-1600: calc(128px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-1400: calc(112px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-1200: calc(96px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-1100: calc(88px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-1000: calc(80px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-900: calc(72px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-800: calc(64px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-700: calc(56px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-600: calc(48px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-500: calc(40px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-400: calc(32px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-300: calc(24px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-250: calc(20px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-200: calc(16px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-175: calc(14px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-150: calc(12px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-100: calc(8px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-50: calc(4px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-33: calc(3px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-25: calc(2px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-10: calc(1px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-0: calc(0px * var(--__foundry-global-platform-scales-ratio));
+  --foundry-global-font-spacing-400: var(--__foundry-global-platform-scales-scale-400);
+  --foundry-global-font-size-700: var(--__foundry-global-platform-scales-scale-700);
+  --foundry-global-font-size-500: var(--__foundry-global-platform-scales-scale-500);
+  --foundry-global-font-size-400: var(--__foundry-global-platform-scales-scale-400);
+  --foundry-global-font-size-300: var(--__foundry-global-platform-scales-scale-300);
+  --foundry-global-font-size-250: var(--__foundry-global-platform-scales-scale-250);
+  --foundry-global-font-size-200: var(--__foundry-global-platform-scales-scale-200);
+  --foundry-global-font-size-175: var(--__foundry-global-platform-scales-scale-175);
+  --foundry-global-font-size-150: var(--__foundry-global-platform-scales-scale-150);
+  --foundry-global-spacing-dimensions-6250: var(--__foundry-global-platform-scales-scale-6250);
+  --foundry-global-spacing-dimensions-5000: var(--__foundry-global-platform-scales-scale-5000);
+  --foundry-global-spacing-dimensions-4500: var(--__foundry-global-platform-scales-scale-4500);
+  --foundry-global-spacing-dimensions-4000: var(--__foundry-global-platform-scales-scale-4000);
+  --foundry-global-spacing-dimensions-3500: var(--__foundry-global-platform-scales-scale-3500);
+  --foundry-global-spacing-dimensions-3000: var(--__foundry-global-platform-scales-scale-3000);
+  --foundry-global-spacing-dimensions-2500: var(--__foundry-global-platform-scales-scale-2500);
+  --foundry-global-spacing-dimensions-2200: var(--__foundry-global-platform-scales-scale-2200);
+  --foundry-global-spacing-dimensions-2000: var(--__foundry-global-platform-scales-scale-2000);
+  --foundry-global-spacing-dimensions-1800: var(--__foundry-global-platform-scales-scale-1800);
+  --foundry-global-spacing-dimensions-1600: var(--__foundry-global-platform-scales-scale-1600);
+  --foundry-global-spacing-dimensions-1400: var(--__foundry-global-platform-scales-scale-1400);
+  --foundry-global-spacing-dimensions-1200: var(--__foundry-global-platform-scales-scale-1200);
+  --foundry-global-spacing-dimensions-1100: var(--__foundry-global-platform-scales-scale-1100);
+  --foundry-global-spacing-dimensions-1000: var(--__foundry-global-platform-scales-scale-1000);
+  --foundry-global-spacing-dimensions-900: var(--__foundry-global-platform-scales-scale-900);
+  --foundry-global-spacing-dimensions-800: var(--__foundry-global-platform-scales-scale-800);
+  --foundry-global-spacing-dimensions-700: var(--__foundry-global-platform-scales-scale-700);
+  --foundry-global-spacing-dimensions-600: var(--__foundry-global-platform-scales-scale-600);
+  --foundry-global-spacing-dimensions-500: var(--__foundry-global-platform-scales-scale-500);
+  --foundry-global-spacing-dimensions-400: var(--__foundry-global-platform-scales-scale-400);
+  --foundry-global-spacing-dimensions-300: var(--__foundry-global-platform-scales-scale-300);
+  --foundry-global-spacing-dimensions-250: var(--__foundry-global-platform-scales-scale-250);
+  --foundry-global-spacing-dimensions-200: var(--__foundry-global-platform-scales-scale-200);
+  --foundry-global-spacing-dimensions-175: var(--__foundry-global-platform-scales-scale-175);
+  --foundry-global-spacing-dimensions-150: var(--__foundry-global-platform-scales-scale-150);
+  --foundry-global-spacing-dimensions-100: var(--__foundry-global-platform-scales-scale-100);
+  --foundry-global-spacing-dimensions-50: var(--__foundry-global-platform-scales-scale-50);
+  --foundry-global-spacing-dimensions-25: var(--__foundry-global-platform-scales-scale-25);
+  --foundry-global-spacing-gap-1600: var(--__foundry-global-platform-scales-scale-1600);
+  --foundry-global-spacing-gap-1400: var(--__foundry-global-platform-scales-scale-1400);
+  --foundry-global-spacing-gap-1200: var(--__foundry-global-platform-scales-scale-1200);
+  --foundry-global-spacing-gap-1100: var(--__foundry-global-platform-scales-scale-1100);
+  --foundry-global-spacing-gap-1000: var(--__foundry-global-platform-scales-scale-1000);
+  --foundry-global-spacing-gap-900: var(--__foundry-global-platform-scales-scale-900);
+  --foundry-global-spacing-gap-800: var(--__foundry-global-platform-scales-scale-800);
+  --foundry-global-spacing-gap-700: var(--__foundry-global-platform-scales-scale-700);
+  --foundry-global-spacing-gap-600: var(--__foundry-global-platform-scales-scale-600);
+  --foundry-global-spacing-gap-500: var(--__foundry-global-platform-scales-scale-500);
+  --foundry-global-spacing-gap-400: var(--__foundry-global-platform-scales-scale-400);
+  --foundry-global-spacing-gap-300: var(--__foundry-global-platform-scales-scale-300);
+  --foundry-global-spacing-gap-250: var(--__foundry-global-platform-scales-scale-250);
+  --foundry-global-spacing-gap-200: var(--__foundry-global-platform-scales-scale-200);
+  --foundry-global-spacing-gap-175: var(--__foundry-global-platform-scales-scale-175);
+  --foundry-global-spacing-gap-150: var(--__foundry-global-platform-scales-scale-150);
+  --foundry-global-spacing-gap-100: var(--__foundry-global-platform-scales-scale-100);
+  --foundry-global-spacing-gap-50: var(--__foundry-global-platform-scales-scale-50);
+  --foundry-global-spacing-gap-25: var(--__foundry-global-platform-scales-scale-25);
+  --foundry-alias-font-size-body-code: var(--foundry-global-font-size-200);
+  --foundry-alias-font-size-body-all-caps: var(--foundry-global-font-size-150);
+  --foundry-alias-font-size-body-metadata: var(--foundry-global-font-size-150);
+  --foundry-alias-font-size-body-caption: var(--foundry-global-font-size-175);
+  --foundry-alias-font-size-body-paragraph: var(--foundry-global-font-size-200);
+  --foundry-alias-font-size-heading-06: var(--foundry-global-font-size-250);
+  --foundry-alias-font-size-heading-05: var(--foundry-global-font-size-250);
+  --foundry-alias-font-size-heading-04: var(--foundry-global-font-size-300);
+  --foundry-alias-font-size-heading-03: var(--foundry-global-font-size-400);
+  --foundry-alias-font-size-heading-02: var(--foundry-global-font-size-500);
+  --foundry-alias-font-size-heading-01: var(--foundry-global-font-size-700);
+  --foundry-alias-font-spacing-paragraph: var(--foundry-global-font-spacing-400)
+}
+
+:root {
+  --foundry-global-color-seafoam-adaptive-1400: #dadcde;
+  --foundry-global-color-seafoam-adaptive-1300: #d0d2d4;
+  --foundry-global-color-seafoam-adaptive-1200: #c2c6c8;
+  --foundry-global-color-seafoam-adaptive-1100: #b6babd;
+  --foundry-global-color-seafoam-adaptive-1000: #a3a8ac;
+  --foundry-global-color-seafoam-adaptive-900: #92989c;
+  --foundry-global-color-seafoam-adaptive-800: #80888c;
+  --foundry-global-color-seafoam-adaptive-700: #6f787d;
+  --foundry-global-color-seafoam-adaptive-600: #5f686e;
+  --foundry-global-color-seafoam-adaptive-500: #4f5960;
+  --foundry-global-color-seafoam-adaptive-400: #404b52;
+  --foundry-global-color-seafoam-adaptive-300: #323d44;
+  --foundry-global-color-seafoam-adaptive-200: #253037;
+  --foundry-global-color-seafoam-adaptive-100: #1b252c;
+  --foundry-global-color-blue-adaptive-1400: #d2ddec;
+  --foundry-global-color-blue-adaptive-1300: #c4d3e7;
+  --foundry-global-color-blue-adaptive-1200: #b4c7e0;
+  --foundry-global-color-blue-adaptive-1100: #a4bbda;
+  --foundry-global-color-blue-adaptive-1000: #8baad0;
+  --foundry-global-color-blue-adaptive-900: #7699c7;
+  --foundry-global-color-blue-adaptive-800: #6189bd;
+  --foundry-global-color-blue-adaptive-700: #4c78b2;
+  --foundry-global-color-blue-adaptive-600: #3868a6;
+  --foundry-global-color-blue-adaptive-500: #265899;
+  --foundry-global-color-blue-adaptive-400: #17498a;
+  --foundry-global-color-blue-adaptive-300: #0c3b76;
+  --foundry-global-color-blue-adaptive-200: #052e61;
+  --foundry-global-color-blue-adaptive-100: #02234c;
+  --foundry-global-color-green-adaptive-1400: #a3ecc0;
+  --foundry-global-color-green-adaptive-1300: #84e6ab;
+  --foundry-global-color-green-adaptive-1200: #58dd8d;
+  --foundry-global-color-green-adaptive-1100: #2bd46f;
+  --foundry-global-color-green-adaptive-1000: #26bf63;
+  --foundry-global-color-green-adaptive-900: #23ad5a;
+  --foundry-global-color-green-adaptive-800: #1f9a50;
+  --foundry-global-color-green-adaptive-700: #1b8847;
+  --foundry-global-color-green-adaptive-600: #18763d;
+  --foundry-global-color-green-adaptive-500: #146535;
+  --foundry-global-color-green-adaptive-400: #11552c;
+  --foundry-global-color-green-adaptive-300: #0e4524;
+  --foundry-global-color-green-adaptive-200: #0b361c;
+  --foundry-global-color-green-adaptive-100: #082915;
+  --foundry-global-color-yellow-adaptive-1400: #ffd86c;
+  --foundry-global-color-yellow-adaptive-1300: #ffcb47;
+  --foundry-global-color-yellow-adaptive-1200: #ffb923;
+  --foundry-global-color-yellow-adaptive-1100: #f7aa13;
+  --foundry-global-color-yellow-adaptive-1000: #e29808;
+  --foundry-global-color-yellow-adaptive-900: #ce8903;
+  --foundry-global-color-yellow-adaptive-800: #b87a00;
+  --foundry-global-color-yellow-adaptive-700: #a36b00;
+  --foundry-global-color-yellow-adaptive-600: #8e5d00;
+  --foundry-global-color-yellow-adaptive-500: #794f00;
+  --foundry-global-color-yellow-adaptive-400: #654200;
+  --foundry-global-color-yellow-adaptive-300: #533600;
+  --foundry-global-color-yellow-adaptive-200: #402a00;
+  --foundry-global-color-yellow-adaptive-100: #312000;
+  --foundry-global-color-red-adaptive-1400: #fad3d3;
+  --foundry-global-color-red-adaptive-1300: #f9c5c5;
+  --foundry-global-color-red-adaptive-1200: #f7b5b5;
+  --foundry-global-color-red-adaptive-1100: #f5a4a4;
+  --foundry-global-color-red-adaptive-1000: #f28989;
+  --foundry-global-color-red-adaptive-900: #ef6f6f;
+  --foundry-global-color-red-adaptive-800: #eb5050;
+  --foundry-global-color-red-adaptive-700: #e72424;
+  --foundry-global-color-red-adaptive-600: #cc1717;
+  --foundry-global-color-red-adaptive-500: #b01414;
+  --foundry-global-color-red-adaptive-400: #941111;
+  --foundry-global-color-red-adaptive-300: #7a0e0e;
+  --foundry-global-color-red-adaptive-200: #610b0b;
+  --foundry-global-color-red-adaptive-100: #4b0808;
+  --foundry-global-color-grey-adaptive-900: #dcdcdc;
+  --foundry-global-color-grey-adaptive-800: #cacaca;
+  --foundry-global-color-grey-adaptive-700: #b3b3b3;
+  --foundry-global-color-grey-adaptive-600: #989898;
+  --foundry-global-color-grey-adaptive-500: #797979;
+  --foundry-global-color-grey-adaptive-400: #5b5b5b;
+  --foundry-global-color-grey-adaptive-300: #3f3f3f;
+  --foundry-global-color-grey-adaptive-200: #222;
+  --foundry-global-color-grey-adaptive-100: #1a1a1a;
+  --foundry-global-color-grey-adaptive-75: #141414;
+  --foundry-global-color-grey-adaptive-50: #0e0e0e;
+  --foundry-global-color-grey-adaptive-25: #000;
+  --foundry-alias-color-decorative-seafoam-highest-contrast: var(--foundry-global-color-seafoam-adaptive-600);
+  --foundry-alias-color-decorative-seafoam-lowest-contrast: var(--foundry-global-color-seafoam-adaptive-400);
+  --foundry-alias-color-decorative-seafoam: var(--foundry-global-color-seafoam-adaptive-500);
+  --foundry-alias-color-decorative-danger-highest-contrast: var(--foundry-global-color-red-adaptive-600);
+  --foundry-alias-color-decorative-danger-lowest-contrast: var(--foundry-global-color-red-adaptive-400);
+  --foundry-alias-color-decorative-danger: var(--foundry-global-color-red-adaptive-500);
+  --foundry-alias-color-decorative-warning-highest-contrast: var(--foundry-global-color-yellow-adaptive-600);
+  --foundry-alias-color-decorative-warning-lowest-contrast: var(--foundry-global-color-yellow-adaptive-400);
+  --foundry-alias-color-decorative-warning: var(--foundry-global-color-yellow-adaptive-500);
+  --foundry-alias-color-decorative-success-highest-contrast: var(--foundry-global-color-green-adaptive-600);
+  --foundry-alias-color-decorative-success-lowest-contrast: var(--foundry-global-color-green-adaptive-400);
+  --foundry-alias-color-decorative-success: var(--foundry-global-color-green-adaptive-500);
+  --foundry-alias-color-decorative-information-highest-contrast: var(--foundry-global-color-blue-adaptive-600);
+  --foundry-alias-color-decorative-information-lowest-contrast: var(--foundry-global-color-blue-adaptive-400);
+  --foundry-alias-color-decorative-information: var(--foundry-global-color-blue-adaptive-500);
+  --foundry-alias-color-icon-seafoam-highest-contrast: var(--foundry-global-color-seafoam-adaptive-1100);
+  --foundry-alias-color-icon-seafoam-lowest-contrast: var(--foundry-global-color-seafoam-adaptive-700);
+  --foundry-alias-color-icon-seafoam-higher-contrast: var(--foundry-global-color-seafoam-adaptive-1000);
+  --foundry-alias-color-icon-seafoam-lower-contrast: var(--foundry-global-color-seafoam-adaptive-800);
+  --foundry-alias-color-icon-seafoam: var(--foundry-global-color-seafoam-adaptive-900);
+  --foundry-alias-color-icon-danger-highest-contrast: var(--foundry-global-color-red-adaptive-1100);
+  --foundry-alias-color-icon-danger-lowest-contrast: var(--foundry-global-color-red-adaptive-700);
+  --foundry-alias-color-icon-danger-higher-contrast: var(--foundry-global-color-red-adaptive-1000);
+  --foundry-alias-color-icon-danger-lower-contrast: var(--foundry-global-color-red-adaptive-800);
+  --foundry-alias-color-icon-danger: var(--foundry-global-color-red-adaptive-900);
+  --foundry-alias-color-icon-warning-highest-contrast: var(--foundry-global-color-yellow-adaptive-1100);
+  --foundry-alias-color-icon-warning-lowest-contrast: var(--foundry-global-color-yellow-adaptive-700);
+  --foundry-alias-color-icon-warning-higher-contrast: var(--foundry-global-color-yellow-adaptive-1000);
+  --foundry-alias-color-icon-warning-lower-contrast: var(--foundry-global-color-yellow-adaptive-800);
+  --foundry-alias-color-icon-warning: var(--foundry-global-color-yellow-adaptive-900);
+  --foundry-alias-color-icon-success-highest-contrast: var(--foundry-global-color-green-adaptive-1100);
+  --foundry-alias-color-icon-success-lowest-contrast: var(--foundry-global-color-green-adaptive-700);
+  --foundry-alias-color-icon-success-higher-contrast: var(--foundry-global-color-green-adaptive-1000);
+  --foundry-alias-color-icon-success-lower-contrast: var(--foundry-global-color-green-adaptive-800);
+  --foundry-alias-color-icon-success: var(--foundry-global-color-green-adaptive-900);
+  --foundry-alias-color-icon-information-highest-contrast: var(--foundry-global-color-blue-adaptive-1100);
+  --foundry-alias-color-icon-information-lowest-contrast: var(--foundry-global-color-blue-adaptive-700);
+  --foundry-alias-color-icon-information-higher-contrast: var(--foundry-global-color-blue-adaptive-1000);
+  --foundry-alias-color-icon-information-lower-contrast: var(--foundry-global-color-blue-adaptive-800);
+  --foundry-alias-color-icon-information: var(--foundry-global-color-blue-adaptive-900);
+  --foundry-alias-color-icon-subdued-lowest-contrast: var(--foundry-global-color-grey-adaptive-600);
+  --foundry-alias-color-icon-subdued: var(--foundry-global-color-grey-adaptive-700);
+  --foundry-alias-color-icon-illustration: var(--foundry-global-color-grey-adaptive-500);
+  --foundry-alias-color-icon-disabled: var(--foundry-global-color-grey-adaptive-400);
+  --foundry-alias-color-icon-standard: var(--foundry-global-color-grey-adaptive-800);
+  --foundry-alias-color-text-seafoam: var(--foundry-global-color-seafoam-adaptive-900);
+  --foundry-alias-color-text-danger: var(--foundry-global-color-red-adaptive-900);
+  --foundry-alias-color-text-warning: var(--foundry-global-color-yellow-adaptive-900);
+  --foundry-alias-color-text-information: var(--foundry-global-color-blue-adaptive-900);
+  --foundry-alias-color-text-success: var(--foundry-global-color-green-adaptive-900);
+  --foundry-alias-color-text-header: var(--foundry-global-color-grey-adaptive-900);
+  --foundry-alias-color-text-subdued: var(--foundry-global-color-grey-adaptive-600);
+  --foundry-alias-color-text-disabled: var(--foundry-global-color-grey-adaptive-500);
+  --foundry-alias-color-text-standard: var(--foundry-global-color-grey-adaptive-800);
+  --foundry-alias-color-background-twotone-seafoam: var(--foundry-global-color-seafoam-adaptive-100);
+  --foundry-alias-color-background-twotone-danger: var(--foundry-global-color-red-adaptive-100);
+  --foundry-alias-color-background-twotone-warning: var(--foundry-global-color-yellow-adaptive-100);
+  --foundry-alias-color-background-twotone-information: var(--foundry-global-color-blue-adaptive-100);
+  --foundry-alias-color-background-twotone-success: var(--foundry-global-color-green-adaptive-100);
+  --foundry-alias-color-background-subtle-layer-2: var(--foundry-global-color-grey-adaptive-50);
+  --foundry-alias-color-background-subtle-layer-1: var(--foundry-global-color-grey-adaptive-75);
+  --foundry-alias-color-background-subtle-layer-0: var(--foundry-global-color-grey-adaptive-100);
+  --foundry-alias-color-background-bold-layer-3: var(--foundry-global-color-grey-adaptive-300);
+  --foundry-alias-color-background-bold-layer-2: var(--foundry-global-color-grey-adaptive-200);
+  --foundry-alias-color-background-bold-layer-1: var(--foundry-global-color-grey-adaptive-75);
+  --foundry-alias-color-background-bold-layer-0: var(--foundry-global-color-grey-adaptive-25);
+  --foundry-alias-color-border-disabled: var(--foundry-global-color-grey-adaptive-200);
+  --foundry-alias-color-border-seafoam-highest-contrast: var(--foundry-global-color-seafoam-adaptive-800);
+  --foundry-alias-color-border-seafoam-lowest-contrast: var(--foundry-global-color-seafoam-adaptive-600);
+  --foundry-alias-color-border-seafoam: var(--foundry-global-color-seafoam-adaptive-700);
+  --foundry-alias-color-border-danger-highest-contrast: var(--foundry-global-color-red-adaptive-800);
+  --foundry-alias-color-border-danger-lowest-contrast: var(--foundry-global-color-red-adaptive-600);
+  --foundry-alias-color-border-danger: var(--foundry-global-color-red-adaptive-700);
+  --foundry-alias-color-border-warning-highest-contrast: var(--foundry-global-color-yellow-adaptive-800);
+  --foundry-alias-color-border-warning-lowest-contrast: var(--foundry-global-color-yellow-adaptive-600);
+  --foundry-alias-color-border-warning: var(--foundry-global-color-yellow-adaptive-700);
+  --foundry-alias-color-border-success-highest-contrast: var(--foundry-global-color-green-adaptive-800);
+  --foundry-alias-color-border-success-lowest-contrast: var(--foundry-global-color-green-adaptive-600);
+  --foundry-alias-color-border-success: var(--foundry-global-color-green-adaptive-700);
+  --foundry-alias-color-border-information-highest-contrast: var(--foundry-global-color-blue-adaptive-800);
+  --foundry-alias-color-border-information-lowest-contrast: var(--foundry-global-color-blue-adaptive-600);
+  --foundry-alias-color-border-information: var(--foundry-global-color-blue-adaptive-700);
+  --foundry-alias-color-border-control: var(--foundry-global-color-grey-adaptive-600);
+  --foundry-alias-color-border-field: var(--foundry-global-color-grey-adaptive-400);
+  --foundry-alias-color-border-decorative-lowest-contrast: var(--foundry-global-color-grey-adaptive-200);
+  --foundry-alias-color-border-decorative: var(--foundry-global-color-grey-adaptive-300);
+  --foundry-alias-color-border-shadow: var(--foundry-global-color-grey-adaptive-200)
+}
+
+:root {
+  --foundry-global-color-black-static-100: #000;
+  --foundry-global-color-white-static-100: #fff;
+  --foundry-global-color-seafoam-static-1400: #1b2226;
+  --foundry-global-color-seafoam-static-1300: #242d33;
+  --foundry-global-color-seafoam-static-1200: #303b43;
+  --foundry-global-color-seafoam-static-1100: #3d4c55;
+  --foundry-global-color-seafoam-static-1000: #4b5e6a;
+  --foundry-global-color-seafoam-static-900: #5a717f;
+  --foundry-global-color-seafoam-static-800: #6b8495;
+  --foundry-global-color-seafoam-static-700: #8297a5;
+  --foundry-global-color-seafoam-static-600: #98aab6;
+  --foundry-global-color-seafoam-static-500: #b2c0c8;
+  --foundry-global-color-seafoam-static-400: #c5cfd6;
+  --foundry-global-color-seafoam-static-300: #d9dfe4;
+  --foundry-global-color-seafoam-static-200: #e7ebee;
+  --foundry-global-color-seafoam-static-100: #f2f4f6;
+  --foundry-global-color-blue-static-1400: #032047;
+  --foundry-global-color-blue-static-1300: #062a5b;
+  --foundry-global-color-blue-static-1200: #0c3874;
+  --foundry-global-color-blue-static-1100: #17498b;
+  --foundry-global-color-blue-static-1000: #295b9f;
+  --foundry-global-color-blue-static-900: #406faf;
+  --foundry-global-color-blue-static-800: #5882bc;
+  --foundry-global-color-blue-static-700: #7296c8;
+  --foundry-global-color-blue-static-600: #8ba9d2;
+  --foundry-global-color-blue-static-500: #a9c0de;
+  --foundry-global-color-blue-static-400: #bdcfe6;
+  --foundry-global-color-blue-static-300: #d4dfee;
+  --foundry-global-color-blue-static-200: #e3eaf4;
+  --foundry-global-color-blue-static-100: #f1f4f9;
+  --foundry-global-color-green-static-1400: #032712;
+  --foundry-global-color-green-static-1300: #043317;
+  --foundry-global-color-green-static-1200: #05431e;
+  --foundry-global-color-green-static-1100: #065626;
+  --foundry-global-color-green-static-1000: #08692f;
+  --foundry-global-color-green-static-900: #0b7f39;
+  --foundry-global-color-green-static-800: #0f9444;
+  --foundry-global-color-green-static-700: #15aa51;
+  --foundry-global-color-green-static-600: #20c05f;
+  --foundry-global-color-green-static-500: #39d878;
+  --foundry-global-color-green-static-400: #5ce693;
+  --foundry-global-color-green-static-300: #93f2b9;
+  --foundry-global-color-green-static-200: #bef7d5;
+  --foundry-global-color-green-static-100: #e0fbea;
+  --foundry-global-color-yellow-static-1400: #2e1e00;
+  --foundry-global-color-yellow-static-1300: #3c2800;
+  --foundry-global-color-yellow-static-1200: #503400;
+  --foundry-global-color-yellow-static-1100: #654200;
+  --foundry-global-color-yellow-static-1000: #7e5200;
+  --foundry-global-color-yellow-static-900: #976300;
+  --foundry-global-color-yellow-static-800: #b07400;
+  --foundry-global-color-yellow-static-700: #ca8602;
+  --foundry-global-color-yellow-static-600: #e19808;
+  --foundry-global-color-yellow-static-500: #fcaf17;
+  --foundry-global-color-yellow-static-400: #ffc539;
+  --foundry-global-color-yellow-static-300: #ffdb72;
+  --foundry-global-color-yellow-static-200: #ffe8a4;
+  --foundry-global-color-yellow-static-100: #fff4d4;
+  --foundry-global-color-red-static-1400: #401010;
+  --foundry-global-color-red-static-1300: #541515;
+  --foundry-global-color-red-static-1200: #6d1c1c;
+  --foundry-global-color-red-static-1100: #8b2323;
+  --foundry-global-color-red-static-1000: #a92d2d;
+  --foundry-global-color-red-static-900: #c93838;
+  --foundry-global-color-red-static-800: #e74646;
+  --foundry-global-color-red-static-700: #ff5c5c;
+  --foundry-global-color-red-static-600: #ff8181;
+  --foundry-global-color-red-static-500: #ffa5a5;
+  --foundry-global-color-red-static-400: #ffbdbd;
+  --foundry-global-color-red-static-300: #ffd3d3;
+  --foundry-global-color-red-static-200: #ffe3e3;
+  --foundry-global-color-red-static-100: #fff3f3;
+  --foundry-global-color-grey-static-900: #000;
+  --foundry-global-color-grey-static-800: #212121;
+  --foundry-global-color-grey-static-700: #464646;
+  --foundry-global-color-grey-static-600: #6d6d6d;
+  --foundry-global-color-grey-static-500: #919191;
+  --foundry-global-color-grey-static-400: #b2b2b2;
+  --foundry-global-color-grey-static-300: #d8d8d8;
+  --foundry-global-color-grey-static-200: #eaeaea;
+  --foundry-global-color-grey-static-100: #fdfdfd;
+  --foundry-global-color-grey-static-75: #fdfdfd;
+  --foundry-global-color-grey-static-50: #fdfdfd;
+  --foundry-global-color-grey-static-25: #fdfdfd
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.15
+}
+
+body {
+  margin: 0
+}
+
+main {
+  display: block
+}
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0
+}
+
+hr {
+  box-sizing: initial;
+  height: 0;
+  overflow: visible
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em
+}
+
+a {
+  background-color: initial
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted
+}
+
+b,
+strong {
+  font-weight: bolder
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em
+}
+
+small {
+  font-size: 80%
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: initial
+}
+
+sub {
+  bottom: -.25em
+}
+
+sup {
+  top: -.5em
+}
+
+img {
+  border-style: none
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0
+}
+
+button,
+input {
+  overflow: visible
+}
+
+button,
+select {
+  text-transform: none
+}
+
+[type=button],
+[type=reset],
+[type=submit],
+button {
+  -webkit-appearance: button
+}
+
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner,
+button::-moz-focus-inner {
+  border-style: none;
+  padding: 0
+}
+
+fieldset {
+  padding: .35em .75em .625em
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal
+}
+
+progress {
+  vertical-align: initial
+}
+
+textarea {
+  overflow: auto
+}
+
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  padding: 0
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px
+}
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit
+}
+
+details {
+  display: block
+}
+
+summary {
+  display: list-item
+}
+
+[hidden],
+template {
+  display: none
+}
+
+:root {
+  --text-section-max-width: 640px;
+  --base-pixel-size: 12px;
+  --base-rem-size: 0.75rem;
+  --half-rem-size: calc(var(--base-rem-size) / 2);
+  --twice-rem-size: calc(var(--base-rem-size) * 2);
+  --section-margin-bottom: calc(var(--base-rem-size) * 4);
+  --header-height: 80px;
+  --breadcrumbs-height: calc(var(--base-pixel-size) * 3.5);
+  --max-width: 1920px;
+  --standard-color: #fcaf17;
+  --color-h: #fff;
+  --body-color: #e8e8e8;
+  --background-color: #0b0b0b;
+  --card-background-color: #000;
+  --border-color: #282828;
+  --privacy-banner-height: 0px;
+  --game-header-height: 50px;
+  --standard-grid-gap: calc(var(--base-rem-size) * 2);
+  --image-margin-bottom: inherit;
+  --image-rounding: 0px;
+  --image-rounding-static: 16px;
+  --image-rounding-static-sm: 8px;
+  --image-rounding-static-xs: 4px;
+  --grid-gap-static-xs: 0.5rem;
+  --grid-gap-static-sm: 1rem;
+  --grid-gap-static-md: 2rem;
+  --grid-gap-static-lg: 4rem;
+  --grid-gap-static-xl: 8rem;
+  --max-width-static: 640px;
+  --max-width-static-md: 1088px;
+  --max-width-static-lg: 1920px;
+  --max-width-static-xl: 2560px;
+  --margin-static: 0 0 2rem;
+  --h2-margin: 2rem 0 0 0;
+  --padding-sides: var(--grid-gap-static-lg);
+  --padding-top-bottom: var(--padding-sides);
+  --padding-static: var(--padding-sides);
+  --font-size-1: 0.75rem;
+  --font-size-2: 0.75rem;
+  --font-size-3: 1rem;
+  --font-size-4: 1.25rem;
+  --font-size-5: 1.5rem;
+  --font-size-6: 2rem;
+  --font-size-7: 2.5rem;
+  --font-size-8: 3rem;
+  --font-size-9: 4rem;
+  --font-size-10: 5rem;
+  --font-family-std: var(--rsg-font-family-std);
+  --font-family-h: var(--rsg-font-family-h);
+  --font-family-h-halloween: nightmar;
+  --rsg-font-family-std: HelveticaNowText;
+  --rsg-font-family-h: HelveticaNowDisplayBold;
+  --gta-font-family-std: Chalet;
+  --gta-font-family-h: ChaletComprime;
+  --gta-font-family-badge: Pricedown;
+  --rdr-font-family-std: HapnaSlabSerif;
+  --rdr-font-family-h: RDRLino-Regular;
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif;
+  --rdr-area-font: RDRCatalogueBold;
+  --header-multiplier: var(--header-numerator, var(--root-font-size)) /var(--root-font-size);
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--background-color, transparent);
+  font-family: var(--font-family-std, HelveticaNowText);
+  font-size: calc(var(--root-font-size) * 1px);
+  font-weight: var(--font-weight-std, 400);
+  letter-spacing: var(--letter-spacing-std, -.025em);
+  line-height: var(--line-height-std, 1.6)
+}
+
+@media (max-width:767px) {
+  :root {
+    --grid-gap-static-lg: 2rem;
+    --grid-gap-static-xl: 4rem
+  }
+}
+
+@media (min-width:2560px) {
+  :root {
+    --max-width-static-md: 1440px
+  }
+}
+
+@font-face {
+  font-family: HelveticaNowText;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/63cfc284c204bd1597bc68464e18042b.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNowText;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/ddff8a927395b3bbeb442818124b332e.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNowText;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/064abecda5d2f269d95fa7fd0f340e87.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNowDisplayBold;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/2182248632b4e44ebf3764bc8ac7aba2.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNowDisplayMedium;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/55aff5d02363927e69c11c450746bfd8.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNeueLTW05;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/6f2bacca1d507ccd5eb7b82f9224a74f.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNeueLTW05;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/96a3e88142b1180d6a8f0c79b2f1683a.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNeueLTW07;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/2b00d9b63daf42f3a42cdbd63cf047ea.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNeueLTW07;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/774ad5166eb5921aca5e0c86b90e5acc.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNeueLTW07;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/97774bba32302ec2b24cfff140f0622b.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNeueLTW07;
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/6cd147a8d9ee1f0d4c56a4613962581c.woff) format("woff")
+}
+
+@font-face {
+  font-family: HelveticaNeueLTW07-85Heavy;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/85e45820f22a3efb16f495d218f310b2.woff) format("woff")
+}
+
+@font-face {
+  font-family: NeueHelveticaPaneuropean;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/bf1c99f9a5316689221de8a3540abf38.woff) format("woff")
+}
+
+@font-face {
+  font-family: SackersGothicW01-Square;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/decd41a7166cfa68918f81e92db8e1c1.woff) format("woff")
+}
+
+@font-face {
+  font-family: Cabrito-Nordem;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/63c1db80114374c24625111e06557170.woff) format("woff")
+}
+
+@font-face {
+  font-family: Droid-Serif-Pro;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/6e2e46bc0a11279c325310a4ef9ce77c.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansSC;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/8517df1baaad4b49346c1293b195088a.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansSC;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/6ffa7afc52831edad562d5a1c17dc41e.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansSC;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/0782dca93011dc6ab08f338b6c31e1d6.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansSC;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/dd749523aef22373be9db64ea01d64bc.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansTC;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/90ef908f0a56e2fa2b7d9b2056d81bcc.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansTC;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/94d584a6e397820977db9932febb4b92.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansTC;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/f3472849022d6ce77ee5fc572d732db8.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansTC;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/4d21d448eea7cddea2f20b68968226c1.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansJP;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/0cd5b1e38f54ef83942d288ce01980e6.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansJP;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/e2838b19e760e3e6f50866c533aeb282.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansJP;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/010014d365bcd4b2fedd44df3f0e9728.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansJP;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/7935b57c9db57ab14bd5a876dbfb87f4.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansKR;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/c31221106dc90ced1c3479d73a5fe115.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansKR;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/e34f12fc5033d9cdc9f062f80c447b8f.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansKR;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/76a3f4e73b6671642a161e05923a968b.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSansKR;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/a7d5ee48f5e8cb1f732d7206c9869112.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSerifJP;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/58a759aebd79ce94dbe18b5a67013eca.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSerifJP;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/86d40c5569b20fa82ce1ed87dea47810.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSerifKR;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/688eae524f5ac689bcae1c3cbc4549c0.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSerifKR;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/688eae524f5ac689bcae1c3cbc4549c0.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSerifSC;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/b66ddc09c267984e4d637e9745c7fbf8.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSerifSC;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/c5771270ac701867f740f52e82d886af.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSerifTC;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/6d335c7bdc0dedb8593d2740f9e9b8e0.woff) format("woff")
+}
+
+@font-face {
+  font-family: NotoSerifTC;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/c5dfa9c826b62645cced60df6042f7ef.woff) format("woff")
+}
+
+@font-face {
+  font-family: ChaletComprime;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/95ca59e1c2cf140daa8b024c6a139e4c.woff) format("woff")
+}
+
+@font-face {
+  font-family: ChaletComprime;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/aa2a7321d65db9f2de3cafabeb37e354.woff) format("woff")
+}
+
+@font-face {
+  font-family: Chalet;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/ee9fe642d516bd426445b83dfe08cd39.woff) format("woff")
+}
+
+@font-face {
+  font-family: Chalet;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/ef44f43ca79bb1aee29fbc2d457e7dee.woff) format("woff")
+}
+
+@font-face {
+  font-family: Pricedown;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/099c158b47220bfa6b52c3aaf2ff3753.woff) format("woff")
+}
+
+@font-face {
+  font-family: NeueHelveticaW05;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/a531a5aaeac0ada2930fd697606d7e9e.woff) format("woff")
+}
+
+@font-face {
+  font-family: NeueHelveticaW05;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/0c60fa85dfc771ab4d15d175246263b5.woff) format("woff")
+}
+
+@font-face {
+  font-family: NeueHelveticaW05;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/acbb38cbe0ae2cdfc5f72a96cd32fe86.woff) format("woff")
+}
+
+@font-face {
+  font-family: FrizQuadrataW05;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/e4be9aed1e8beccc21ffb995f0a89da0.woff) format("woff")
+}
+
+@font-face {
+  font-family: FrizQuadrataW05;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/db765ccb047ec8429212c1a913914694.woff) format("woff")
+}
+
+@font-face {
+  font-family: FrizQuadrataW05;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/202c95f3c4658c54223b0f4166bd3825.woff) format("woff")
+}
+
+@font-face {
+  font-family: FrizQuadrataW05;
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/a5e4e77906b6b4b3cbf21f4c26271861.woff) format("woff")
+}
+
+@font-face {
+  font-family: CorporateW05;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/a8da93d3b93aa6f5b995c8fca0a49d56.woff) format("woff")
+}
+
+@font-face {
+  font-family: NimbusSansW05;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/f09f2d938e708e14f4211b5c41b1ae2c.woff) format("woff")
+}
+
+@font-face {
+  font-family: NimbusSansW05;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/c70a0570c2d0687a208d5612623a9fdc.woff) format("woff")
+}
+
+@font-face {
+  font-family: EurostileNextW05;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/63234fb79c05a628350bb714e8b70f1d.woff) format("woff")
+}
+
+@font-face {
+  font-family: Diploma;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/bc4df074e2a0a7a841c564dba3e08fe8.woff) format("woff")
+}
+
+@font-face {
+  font-family: BrushScriptMT;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/ab64825965d1d9e6e8721c549ca9b65a.woff) format("woff")
+}
+
+@font-face {
+  font-family: BankGothicBT;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/59de0d7e9b43e1cc0cab80a770e9efe6.woff) format("woff")
+}
+
+@font-face {
+  font-family: MeltdownRegular;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/d063646155b907d60f49ada779b60713.woff) format("woff")
+}
+
+@font-face {
+  font-family: SharkSnackRegular;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/976c864a7229fe453650a438f00e0d3e.woff) format("woff")
+}
+
+@font-face {
+  font-family: GTAArtDeco;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/20f419b63a6f61085c182ec2f1cd8fa0.woff) format("woff")
+}
+
+@font-face {
+  font-family: GTAArtDeco;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/62b84dbfc20341e064c88ec93455ccac.woff) format("woff")
+}
+
+@font-face {
+  font-family: RDRLino-Regular;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/a0a8cf635f2f27fc761850d82537fd01.woff) format("woff")
+}
+
+@font-face {
+  font-family: HapnaSlabSerif;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/327335f15d6b7bebd592eb24947cf560.woff) format("woff")
+}
+
+@font-face {
+  font-family: HapnaSlabSerif;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/4ab575ea1a8eca627680b2b7ef138d0d.woff) format("woff")
+}
+
+@font-face {
+  font-family: nightmar;
+  font-style: normal;
+  font-weight: 100;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/91d1b5e1fa862640813fc7aa5db77d08.woff) format("woff")
+}
+
+@font-face {
+  font-family: RDRCatalogueBold;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/c44079bdc60b7e381d435bec0216767f.woff) format("woff")
+}
+
+@font-face {
+  font-family: RDRUltraHeadline;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/16612f150b055e9108648a89c5f4a8d7.woff) format("woff")
+}
+
+@media (min-width:0px) {
+  :root {
+    --root-font-size: 16
+  }
+}
+
+@media (min-width:768px) {
+  :root {
+    --root-font-size: 18
+  }
+}
+
+@media (min-width:1024px) {
+  :root {
+    --root-font-size: 20
+  }
+}
+
+@media (min-width:1920px) {
+  :root {
+    --root-font-size: 22
+  }
+}
+
+:root * {
+  box-sizing: border-box
+}
+
+:root a {
+  color: inherit;
+  text-decoration: none
+}
+
+:root h1,
+:root h2,
+:root h3,
+:root h4,
+:root h5,
+:root h6,
+:root p {
+  margin: 0
+}
+
+:root figure {
+  margin: 0
+}
+
+:root caption,
+:root figcaption {
+  --padding-dynamic: var(--padding-sides);
+  --padding-dynamic-tb: initial;
+  color: var(--body-color);
+  display: block;
+  font-family: var(--font-family-std);
+  font-size: var(--font-size-2);
+  font-style: italic;
+  margin: var(--grid-gap-static-sm) auto 0;
+  padding: var(--padding-t, var(--padding-dynamic-tb, 0)) var(--padding-dynamic, 0) var(--padding-b, var(--padding-dynamic-tb, 0)) var(--padding-dynamic, 0);
+  text-align: center
+}
+
+:root caption p,
+:root figcaption p {
+  display: block
+}
+
+:root :lang(ru_ru) {
+  --font-family-h-halloween: RDRLino-Regular
+}
+
+:root :lang(ko_kr) {
+  word-break: keep-all
+}
+
+:root:lang(ja_jp) {
+  --rsg-font-family-std: HelveticaNowText, NotoSansJP
+}
+
+:root:lang(zh_hans) {
+  --rsg-font-family-std: HelveticaNowText, NotoSansSC
+}
+
+:root:lang(zh_tw) {
+  --rsg-font-family-std: HelveticaNowText, NotoSansTC
+}
+
+:root:lang(ja_jp) {
+  --rsg-font-family-h: HelveticaNowDisplayBold, NotoSansJP
+}
+
+:root:lang(zh_hans) {
+  --rsg-font-family-h: HelveticaNowDisplayBold, NotoSansSC
+}
+
+:root:lang(zh_tw) {
+  --rsg-font-family-h: HelveticaNowDisplayBold, NotoSansTC
+}
+
+:root:lang(ja_jp) {
+  --gta-font-family-std: Chalet, NotoSansJP
+}
+
+:root:lang(zh_hans) {
+  --gta-font-family-std: Chalet, NotoSansSC
+}
+
+:root:lang(zh_tw) {
+  --gta-font-family-std: Chalet, NotoSansTC
+}
+
+:root:lang(ja_jp) {
+  --gta-font-family-h: ChaletComprime, NotoSansJP
+}
+
+:root:lang(zh_hans) {
+  --gta-font-family-h: ChaletComprime, NotoSansSC
+}
+
+:root:lang(zh_tw) {
+  --gta-font-family-h: ChaletComprime, NotoSansTC
+}
+
+:root:lang(ja_jp) {
+  --gta-font-family-badge: Pricedown, NotoSansJP
+}
+
+:root:lang(zh_hans) {
+  --gta-font-family-badge: Pricedown, NotoSansSC
+}
+
+:root:lang(zh_tw) {
+  --gta-font-family-badge: Pricedown, NotoSansTC
+}
+
+:root:lang(ja_jp) {
+  --rdr-font-family-std: HapnaSlabSerif, NotoSansJP
+}
+
+:root:lang(zh_hans) {
+  --rdr-font-family-std: HapnaSlabSerif, NotoSansSC
+}
+
+:root:lang(zh_tw) {
+  --rdr-font-family-std: HapnaSlabSerif, NotoSansTC
+}
+
+:root:lang(ja_jp) {
+  --rdr-font-family-h: RDRLino-Regular, NotoSansJP
+}
+
+:root:lang(zh_hans) {
+  --rdr-font-family-h: RDRLino-Regular, NotoSansSC
+}
+
+:root:lang(zh_tw) {
+  --rdr-font-family-h: RDRLino-Regular, NotoSansTC
+}
+
+:root:lang(ja_jp) {
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif, NotoSansJP
+}
+
+:root:lang(zh_hans) {
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif, NotoSansSC
+}
+
+:root:lang(zh_tw) {
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif, NotoSansTC
+}
+
+:root:lang(ja_jp) {
+  --rdr-area-font: RDRCatalogueBold, NotoSansJP
+}
+
+:root:lang(zh_hans) {
+  --rdr-area-font: RDRCatalogueBold, NotoSansSC
+}
+
+:root:lang(zh_tw) {
+  --rdr-area-font: RDRCatalogueBold, NotoSansTC
+}
+
+:root h1,
+:root h1.large,
+:root h2,
+:root h3,
+:root h4 {
+  font-family: var(--font-family-h, HelveticaNowDisplayBold);
+  letter-spacing: var(--letter-spacing-h, -.025em)
+}
+
+:root h1,
+:root h1.large {
+  font-weight: var(--font-weight-h1, var(--font-weight-h, 700));
+  line-height: var(--line-height-h1, var(--line-height-h, 1.1));
+  text-transform: var(--text-transform-h1, var(--text-transform-h, none))
+}
+
+:root h1.large {
+  font-size: calc(var(--font-size-8) * var(--header-multiplier))
+}
+
+:root h1 {
+  font-size: calc(var(--font-size-7) * var(--header-multiplier))
+}
+
+:root h2 {
+  font-size: calc(var(--font-size-6) * var(--header-multiplier));
+  font-weight: var(--font-weight-h2, var(--font-weight-h, 700));
+  line-height: var(--line-height-h, 1.1);
+  text-transform: var(--text-transform-h2, var(--text-transform-h, none))
+}
+
+:root h3 {
+  font-size: calc(var(--font-size-5) * var(--header-multiplier));
+  font-weight: var(--font-weight-h3, var(--font-weight-h, 700));
+  line-height: var(--line-height-h, 1.1);
+  text-transform: var(--text-transform-h3, var(--text-transform-h, none))
+}
+
+:root h3[data-context=newswire-subtitle] {
+  font-family: var(--font-family-newswire-subtitle, var(--font-family-h));
+  font-size: calc(var(--font-size-5) * var(--h3-numerator-override-newswire-subtitle, var(--header-multiplier)));
+  font-weight: var(--font-weight-newswire-subtitle, var(--font-weight-h));
+  text-transform: var(--text-transform-newswire-subtitle)
+}
+
+[data-game=rdo] :root h3,
+[data-game^=rdr] :root h3 {
+  font-weight: var(--font-weight-h3, var(--font-weight-h, 400))
+}
+
+:root h4,
+:root h5,
+:root h6 {
+  font-size: calc(var(--font-size-4) * var(--header-multiplier));
+  line-height: var(--line-height-h, 1.1)
+}
+
+:root h1,
+:root h1.large {
+  color: var(--color-h-dynamic, var(--color-h1, var(--color-h, inherit)))
+}
+
+:root h2 {
+  color: var(--color-h-dynamic, var(--color-h2, var(--color-h, inherit)))
+}
+
+:root h3 {
+  color: var(--color-h-dynamic, var(--color-h3, var(--color-h, inherit)))
+}
+
+:root h3[data-context=newswire-subtitle] {
+  color: var(--color-subtitle-dynamic, var(--color-h-dynamic, var(--color-h3, var(--color-h, inherit))))
+}
+
+:root h4,
+:root h5,
+:root h6 {
+  color: var(--color-h-dynamic, var(--color-h, inherit))
+}
+
+:root [template=community] {
+  --time-color: var(--body-color, #2d2d2d);
+  --breadcrumb-separator-filter-invert: invert(0)
+}
+
+:root [template=community] main {
+  color: var(--color-h, #161616)
+}
+
+:root [template=community] p {
+  color: var(--body-color, #2d2d2d)
+}
+
+:root [data-game^=gta] {
+  --font-family-std: var(--gta-font-family-std);
+  --font-family-h: var(--gta-font-family-h);
+  --letter-spacing-h: 0;
+  --line-height-h1: 1;
+  --font-weight-newswire-subtitle: 400;
+  --letter-spacing-std: 0;
+  --color-h: #fff;
+  --body-color: #e8e8e8;
+  --background-color: var(var(--background-color));
+  --tag-color: #e8e8e8;
+  --rsg-font-family-std: HelveticaNowText;
+  --rsg-font-family-h: HelveticaNowDisplayBold;
+  --gta-font-family-std: Chalet;
+  --gta-font-family-h: ChaletComprime;
+  --gta-font-family-badge: Pricedown;
+  --rdr-font-family-std: HapnaSlabSerif;
+  --rdr-font-family-h: RDRLino-Regular;
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif;
+  --rdr-area-font: RDRCatalogueBold;
+  --header-multiplier: var(--header-numerator, var(--root-font-size)) /var(--root-font-size);
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--background-color, transparent);
+  color: #e8e8e8;
+  font-family: var(--font-family-std, HelveticaNowText);
+  font-size: calc(var(--root-font-size) * 1px);
+  font-weight: var(--font-weight-std, 400);
+  letter-spacing: var(--letter-spacing-std, -.025em);
+  line-height: var(--line-height-std, 1.6)
+}
+
+@media (min-width:0px) {
+  :root [data-game^=gta] {
+    --header-numerator: 20.8
+  }
+}
+
+@media (min-width:768px) {
+  :root [data-game^=gta] {
+    --header-numerator: 23.4
+  }
+}
+
+@media (min-width:1024px) {
+  :root [data-game^=gta] {
+    --header-numerator: 26
+  }
+}
+
+@media (min-width:1920px) {
+  :root [data-game^=gta] {
+    --header-numerator: 29.25
+  }
+}
+
+:root [data-game^=gta]:lang(ja_jp) {
+  --rsg-font-family-std: HelveticaNowText, NotoSansJP
+}
+
+:root [data-game^=gta]:lang(zh_hans) {
+  --rsg-font-family-std: HelveticaNowText, NotoSansSC
+}
+
+:root [data-game^=gta]:lang(zh_tw) {
+  --rsg-font-family-std: HelveticaNowText, NotoSansTC
+}
+
+:root [data-game^=gta]:lang(ja_jp) {
+  --rsg-font-family-h: HelveticaNowDisplayBold, NotoSansJP
+}
+
+:root [data-game^=gta]:lang(zh_hans) {
+  --rsg-font-family-h: HelveticaNowDisplayBold, NotoSansSC
+}
+
+:root [data-game^=gta]:lang(zh_tw) {
+  --rsg-font-family-h: HelveticaNowDisplayBold, NotoSansTC
+}
+
+:root [data-game^=gta]:lang(ja_jp) {
+  --gta-font-family-std: Chalet, NotoSansJP
+}
+
+:root [data-game^=gta]:lang(zh_hans) {
+  --gta-font-family-std: Chalet, NotoSansSC
+}
+
+:root [data-game^=gta]:lang(zh_tw) {
+  --gta-font-family-std: Chalet, NotoSansTC
+}
+
+:root [data-game^=gta]:lang(ja_jp) {
+  --gta-font-family-h: ChaletComprime, NotoSansJP
+}
+
+:root [data-game^=gta]:lang(zh_hans) {
+  --gta-font-family-h: ChaletComprime, NotoSansSC
+}
+
+:root [data-game^=gta]:lang(zh_tw) {
+  --gta-font-family-h: ChaletComprime, NotoSansTC
+}
+
+:root [data-game^=gta]:lang(ja_jp) {
+  --gta-font-family-badge: Pricedown, NotoSansJP
+}
+
+:root [data-game^=gta]:lang(zh_hans) {
+  --gta-font-family-badge: Pricedown, NotoSansSC
+}
+
+:root [data-game^=gta]:lang(zh_tw) {
+  --gta-font-family-badge: Pricedown, NotoSansTC
+}
+
+:root [data-game^=gta]:lang(ja_jp) {
+  --rdr-font-family-std: HapnaSlabSerif, NotoSansJP
+}
+
+:root [data-game^=gta]:lang(zh_hans) {
+  --rdr-font-family-std: HapnaSlabSerif, NotoSansSC
+}
+
+:root [data-game^=gta]:lang(zh_tw) {
+  --rdr-font-family-std: HapnaSlabSerif, NotoSansTC
+}
+
+:root [data-game^=gta]:lang(ja_jp) {
+  --rdr-font-family-h: RDRLino-Regular, NotoSansJP
+}
+
+:root [data-game^=gta]:lang(zh_hans) {
+  --rdr-font-family-h: RDRLino-Regular, NotoSansSC
+}
+
+:root [data-game^=gta]:lang(zh_tw) {
+  --rdr-font-family-h: RDRLino-Regular, NotoSansTC
+}
+
+:root [data-game^=gta]:lang(ja_jp) {
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif, NotoSansJP
+}
+
+:root [data-game^=gta]:lang(zh_hans) {
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif, NotoSansSC
+}
+
+:root [data-game^=gta]:lang(zh_tw) {
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif, NotoSansTC
+}
+
+:root [data-game^=gta]:lang(ja_jp) {
+  --rdr-area-font: RDRCatalogueBold, NotoSansJP
+}
+
+:root [data-game^=gta]:lang(zh_hans) {
+  --rdr-area-font: RDRCatalogueBold, NotoSansSC
+}
+
+:root [data-game^=gta]:lang(zh_tw) {
+  --rdr-area-font: RDRCatalogueBold, NotoSansTC
+}
+
+:root [data-game^=gta] h1,
+:root [data-game^=gta] h1.large,
+:root [data-game^=gta] h2,
+:root [data-game^=gta] h3,
+:root [data-game^=gta] h4 {
+  font-family: var(--font-family-h, HelveticaNowDisplayBold);
+  letter-spacing: var(--letter-spacing-h, -.025em)
+}
+
+:root [data-game^=gta] h1,
+:root [data-game^=gta] h1.large {
+  font-weight: var(--font-weight-h1, var(--font-weight-h, 700));
+  line-height: var(--line-height-h1, var(--line-height-h, 1.1));
+  text-transform: var(--text-transform-h1, var(--text-transform-h, none))
+}
+
+:root [data-game^=gta] h1.large {
+  font-size: calc(var(--font-size-8) * var(--header-multiplier))
+}
+
+:root [data-game^=gta] h1 {
+  font-size: calc(var(--font-size-7) * var(--header-multiplier))
+}
+
+:root [data-game^=gta] h2 {
+  font-size: calc(var(--font-size-6) * var(--header-multiplier));
+  font-weight: var(--font-weight-h2, var(--font-weight-h, 700));
+  line-height: var(--line-height-h, 1.1);
+  text-transform: var(--text-transform-h2, var(--text-transform-h, none))
+}
+
+:root [data-game^=gta] h3 {
+  font-size: calc(var(--font-size-5) * var(--header-multiplier));
+  font-weight: var(--font-weight-h3, var(--font-weight-h, 700));
+  line-height: var(--line-height-h, 1.1);
+  text-transform: var(--text-transform-h3, var(--text-transform-h, none))
+}
+
+:root [data-game^=gta] h3[data-context=newswire-subtitle] {
+  font-family: var(--font-family-newswire-subtitle, var(--font-family-h));
+  font-size: calc(var(--font-size-5) * var(--h3-numerator-override-newswire-subtitle, var(--header-multiplier)));
+  font-weight: var(--font-weight-newswire-subtitle, var(--font-weight-h));
+  text-transform: var(--text-transform-newswire-subtitle)
+}
+
+[data-game=rdo] :root [data-game^=gta] h3,
+[data-game^=rdr] :root [data-game^=gta] h3 {
+  font-weight: var(--font-weight-h3, var(--font-weight-h, 400))
+}
+
+:root [data-game^=gta] h4,
+:root [data-game^=gta] h5,
+:root [data-game^=gta] h6 {
+  font-size: calc(var(--font-size-4) * var(--header-multiplier));
+  line-height: var(--line-height-h, 1.1)
+}
+
+:root [data-game^=gta] h1,
+:root [data-game^=gta] h1.large {
+  color: var(--color-h-dynamic, var(--color-h1, var(--color-h, inherit)))
+}
+
+:root [data-game^=gta] h2 {
+  color: var(--color-h-dynamic, var(--color-h2, var(--color-h, inherit)))
+}
+
+:root [data-game^=gta] h3 {
+  color: var(--color-h-dynamic, var(--color-h3, var(--color-h, inherit)))
+}
+
+:root [data-game^=gta] h3[data-context=newswire-subtitle] {
+  color: var(--color-subtitle-dynamic, var(--color-h-dynamic, var(--color-h3, var(--color-h, inherit))))
+}
+
+:root [data-game^=gta] h4,
+:root [data-game^=gta] h5,
+:root [data-game^=gta] h6 {
+  color: var(--color-h-dynamic, var(--color-h, inherit))
+}
+
+:root [data-game^=gta] [template=community] {
+  --time-color: var(--body-color, #2d2d2d);
+  --breadcrumb-separator-filter-invert: invert(0)
+}
+
+:root [data-game^=gta] [template=community] main {
+  color: var(--color-h, #161616)
+}
+
+:root [data-game^=gta] [template=community] p {
+  color: var(--body-color, #2d2d2d)
+}
+
+:root [data-game^=gta] .badge {
+  font-family: var(--gta-font-family-badge)
+}
+
+:root :lang(pl_pl) [data-game^=gta] {
+  --font-family-h: ChaletComprime, NeueHelveticaW05;
+  --font-family-newswire-subtitle: ChaletComprime, NeueHelveticaW05;
+  --badge-font: Pricedown, NeueHelveticaW05
+}
+
+:root :lang(pl_pl) [data-context=newswire-article] h1 {
+  --font-family-h: NeueHelveticaPaneuropean
+}
+
+:root :lang(ru_ru) [data-game^=gta] {
+  --font-family-h: NeueHelveticaW05;
+  --font-family-newswire-subtitle: NeueHelveticaW05;
+  --badge-font: Pricedown, NeueHelveticaW05
+}
+
+:root :lang(ru_ru) [data-context=newswire-article] h1 {
+  --font-family-h: NeueHelveticaW05
+}
+
+:root :lang(zh_hans) [data-game^=gta] {
+  --font-family-h: NotoSansSC;
+  --font-family-newswire-subtitle: NotoSansSC;
+  --font-family-std: NotoSansSC;
+  --badge-font: Pricedown, NotoSansSC
+}
+
+:root :lang(zh_hant) [data-game^=gta] {
+  --font-family-h: NotoSansTC;
+  --font-family-newswire-subtitle: NotoSansTC;
+  --font-family-std: NotoSansTC;
+  --badge-font: Pricedown, NotoSansTC
+}
+
+:root :lang(ja_jp) [data-game^=gta] {
+  --font-family-h: NotoSansJP;
+  --font-family-newswire-subtitle: NotoSansJP;
+  --font-family-std: NotoSansJP;
+  --badge-font: Pricedown, NotoSansJP
+}
+
+:root :lang(ja_jp) [data-context=newswire-article] h1 {
+  --font-family-h: NotoSansJP
+}
+
+:root :lang(ko_kr) [data-game^=gta] {
+  --font-family-h: NotoSansKR;
+  --font-family-newswire-subtitle: NotoSansKR;
+  --font-family-std: NotoSansKR;
+  --badge-font: Pricedown, NotoSansKR
+}
+
+:root [data-game=rdo],
+:root [data-game^=rdr] {
+  --font-family-std: var(--rdr-font-family-std);
+  --font-family-h: var(--rdr-font-family-h);
+  --font-family-newswire-subtitle: var(--rdr-font-family-newswire-subtitle);
+  --area-font: var(--rdr-area-font);
+  --font-weight-h: 400;
+  --font-weight-h1: 400;
+  --font-weight-h3: 400;
+  --font-weight-newswire-subtitle: 700;
+  --h3-numerator-override-newswire-subtitle: 1;
+  --letter-spacing-h: 0;
+  --line-height-h: 1.2;
+  --letter-spacing-std: 0;
+  --text-transform-newswire-subtitle: initial;
+  --color-h: #c00;
+  --color-h3: #fff;
+  --color-h4: #fff;
+  --body-color: #e8e8e8;
+  --text-transform-h: uppercase;
+  --background-color: var(var(--background-color));
+  --tag-color: #e8e8e8;
+  --rsg-font-family-std: HelveticaNowText;
+  --rsg-font-family-h: HelveticaNowDisplayBold;
+  --gta-font-family-std: Chalet;
+  --gta-font-family-h: ChaletComprime;
+  --gta-font-family-badge: Pricedown;
+  --rdr-font-family-std: HapnaSlabSerif;
+  --rdr-font-family-h: RDRLino-Regular;
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif;
+  --rdr-area-font: RDRCatalogueBold;
+  --header-multiplier: var(--header-numerator, var(--root-font-size)) /var(--root-font-size);
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--background-color, transparent);
+  color: #e8e8e8;
+  font-family: var(--font-family-std, HelveticaNowText);
+  font-size: calc(var(--root-font-size) * 1px);
+  font-weight: var(--font-weight-std, 400);
+  letter-spacing: var(--letter-spacing-std, -.025em);
+  line-height: var(--line-height-std, 1.6)
+}
+
+@media (min-width:0px) {
+
+  :root [data-game=rdo],
+  :root [data-game^=rdr] {
+    --header-numerator: 15
+  }
+}
+
+@media (min-width:768px) {
+
+  :root [data-game=rdo],
+  :root [data-game^=rdr] {
+    --header-numerator: 16.88
+  }
+}
+
+@media (min-width:1024px) {
+
+  :root [data-game=rdo],
+  :root [data-game^=rdr] {
+    --header-numerator: 18.75
+  }
+}
+
+@media (min-width:1920px) {
+
+  :root [data-game=rdo],
+  :root [data-game^=rdr] {
+    --header-numerator: 21.09
+  }
+}
+
+:root [data-game=rdo]:lang(ja_jp),
+:root [data-game^=rdr]:lang(ja_jp) {
+  --rsg-font-family-std: HelveticaNowText, NotoSansJP
+}
+
+:root [data-game=rdo]:lang(zh_hans),
+:root [data-game^=rdr]:lang(zh_hans) {
+  --rsg-font-family-std: HelveticaNowText, NotoSansSC
+}
+
+:root [data-game=rdo]:lang(zh_tw),
+:root [data-game^=rdr]:lang(zh_tw) {
+  --rsg-font-family-std: HelveticaNowText, NotoSansTC
+}
+
+:root [data-game=rdo]:lang(ja_jp),
+:root [data-game^=rdr]:lang(ja_jp) {
+  --rsg-font-family-h: HelveticaNowDisplayBold, NotoSansJP
+}
+
+:root [data-game=rdo]:lang(zh_hans),
+:root [data-game^=rdr]:lang(zh_hans) {
+  --rsg-font-family-h: HelveticaNowDisplayBold, NotoSansSC
+}
+
+:root [data-game=rdo]:lang(zh_tw),
+:root [data-game^=rdr]:lang(zh_tw) {
+  --rsg-font-family-h: HelveticaNowDisplayBold, NotoSansTC
+}
+
+:root [data-game=rdo]:lang(ja_jp),
+:root [data-game^=rdr]:lang(ja_jp) {
+  --gta-font-family-std: Chalet, NotoSansJP
+}
+
+:root [data-game=rdo]:lang(zh_hans),
+:root [data-game^=rdr]:lang(zh_hans) {
+  --gta-font-family-std: Chalet, NotoSansSC
+}
+
+:root [data-game=rdo]:lang(zh_tw),
+:root [data-game^=rdr]:lang(zh_tw) {
+  --gta-font-family-std: Chalet, NotoSansTC
+}
+
+:root [data-game=rdo]:lang(ja_jp),
+:root [data-game^=rdr]:lang(ja_jp) {
+  --gta-font-family-h: ChaletComprime, NotoSansJP
+}
+
+:root [data-game=rdo]:lang(zh_hans),
+:root [data-game^=rdr]:lang(zh_hans) {
+  --gta-font-family-h: ChaletComprime, NotoSansSC
+}
+
+:root [data-game=rdo]:lang(zh_tw),
+:root [data-game^=rdr]:lang(zh_tw) {
+  --gta-font-family-h: ChaletComprime, NotoSansTC
+}
+
+:root [data-game=rdo]:lang(ja_jp),
+:root [data-game^=rdr]:lang(ja_jp) {
+  --gta-font-family-badge: Pricedown, NotoSansJP
+}
+
+:root [data-game=rdo]:lang(zh_hans),
+:root [data-game^=rdr]:lang(zh_hans) {
+  --gta-font-family-badge: Pricedown, NotoSansSC
+}
+
+:root [data-game=rdo]:lang(zh_tw),
+:root [data-game^=rdr]:lang(zh_tw) {
+  --gta-font-family-badge: Pricedown, NotoSansTC
+}
+
+:root [data-game=rdo]:lang(ja_jp),
+:root [data-game^=rdr]:lang(ja_jp) {
+  --rdr-font-family-std: HapnaSlabSerif, NotoSansJP
+}
+
+:root [data-game=rdo]:lang(zh_hans),
+:root [data-game^=rdr]:lang(zh_hans) {
+  --rdr-font-family-std: HapnaSlabSerif, NotoSansSC
+}
+
+:root [data-game=rdo]:lang(zh_tw),
+:root [data-game^=rdr]:lang(zh_tw) {
+  --rdr-font-family-std: HapnaSlabSerif, NotoSansTC
+}
+
+:root [data-game=rdo]:lang(ja_jp),
+:root [data-game^=rdr]:lang(ja_jp) {
+  --rdr-font-family-h: RDRLino-Regular, NotoSansJP
+}
+
+:root [data-game=rdo]:lang(zh_hans),
+:root [data-game^=rdr]:lang(zh_hans) {
+  --rdr-font-family-h: RDRLino-Regular, NotoSansSC
+}
+
+:root [data-game=rdo]:lang(zh_tw),
+:root [data-game^=rdr]:lang(zh_tw) {
+  --rdr-font-family-h: RDRLino-Regular, NotoSansTC
+}
+
+:root [data-game=rdo]:lang(ja_jp),
+:root [data-game^=rdr]:lang(ja_jp) {
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif, NotoSansJP
+}
+
+:root [data-game=rdo]:lang(zh_hans),
+:root [data-game^=rdr]:lang(zh_hans) {
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif, NotoSansSC
+}
+
+:root [data-game=rdo]:lang(zh_tw),
+:root [data-game^=rdr]:lang(zh_tw) {
+  --rdr-font-family-newswire-subtitle: HapnaSlabSerif, NotoSansTC
+}
+
+:root [data-game=rdo]:lang(ja_jp),
+:root [data-game^=rdr]:lang(ja_jp) {
+  --rdr-area-font: RDRCatalogueBold, NotoSansJP
+}
+
+:root [data-game=rdo]:lang(zh_hans),
+:root [data-game^=rdr]:lang(zh_hans) {
+  --rdr-area-font: RDRCatalogueBold, NotoSansSC
+}
+
+:root [data-game=rdo]:lang(zh_tw),
+:root [data-game^=rdr]:lang(zh_tw) {
+  --rdr-area-font: RDRCatalogueBold, NotoSansTC
+}
+
+:root [data-game=rdo] h1,
+:root [data-game=rdo] h1.large,
+:root [data-game=rdo] h2,
+:root [data-game=rdo] h3,
+:root [data-game=rdo] h4,
+:root [data-game^=rdr] h1,
+:root [data-game^=rdr] h1.large,
+:root [data-game^=rdr] h2,
+:root [data-game^=rdr] h3,
+:root [data-game^=rdr] h4 {
+  font-family: var(--font-family-h, HelveticaNowDisplayBold);
+  letter-spacing: var(--letter-spacing-h, -.025em)
+}
+
+:root [data-game=rdo] h1,
+:root [data-game=rdo] h1.large,
+:root [data-game^=rdr] h1,
+:root [data-game^=rdr] h1.large {
+  font-weight: var(--font-weight-h1, var(--font-weight-h, 700));
+  line-height: var(--line-height-h1, var(--line-height-h, 1.1));
+  text-transform: var(--text-transform-h1, var(--text-transform-h, none))
+}
+
+:root [data-game=rdo] h1.large,
+:root [data-game^=rdr] h1.large {
+  font-size: calc(var(--font-size-8) * var(--header-multiplier))
+}
+
+:root [data-game=rdo] h1,
+:root [data-game^=rdr] h1 {
+  font-size: calc(var(--font-size-7) * var(--header-multiplier))
+}
+
+:root [data-game=rdo] h2,
+:root [data-game^=rdr] h2 {
+  font-size: calc(var(--font-size-6) * var(--header-multiplier));
+  font-weight: var(--font-weight-h2, var(--font-weight-h, 700));
+  line-height: var(--line-height-h, 1.1);
+  text-transform: var(--text-transform-h2, var(--text-transform-h, none))
+}
+
+:root [data-game=rdo] h3,
+:root [data-game^=rdr] h3 {
+  font-size: calc(var(--font-size-5) * var(--header-multiplier));
+  font-weight: var(--font-weight-h3, var(--font-weight-h, 700));
+  line-height: var(--line-height-h, 1.1);
+  text-transform: var(--text-transform-h3, var(--text-transform-h, none))
+}
+
+:root [data-game=rdo] h3[data-context=newswire-subtitle],
+:root [data-game^=rdr] h3[data-context=newswire-subtitle] {
+  font-family: var(--font-family-newswire-subtitle, var(--font-family-h));
+  font-size: calc(var(--font-size-5) * var(--h3-numerator-override-newswire-subtitle, var(--header-multiplier)));
+  font-weight: var(--font-weight-newswire-subtitle, var(--font-weight-h));
+  text-transform: var(--text-transform-newswire-subtitle)
+}
+
+[data-game=rdo] :root [data-game=rdo] h3,
+[data-game=rdo] :root [data-game^=rdr] h3,
+[data-game^=rdr] :root [data-game=rdo] h3,
+[data-game^=rdr] :root [data-game^=rdr] h3 {
+  font-weight: var(--font-weight-h3, var(--font-weight-h, 400))
+}
+
+:root [data-game=rdo] h4,
+:root [data-game=rdo] h5,
+:root [data-game=rdo] h6,
+:root [data-game^=rdr] h4,
+:root [data-game^=rdr] h5,
+:root [data-game^=rdr] h6 {
+  font-size: calc(var(--font-size-4) * var(--header-multiplier));
+  line-height: var(--line-height-h, 1.1)
+}
+
+:root [data-game=rdo] h1,
+:root [data-game=rdo] h1.large,
+:root [data-game^=rdr] h1,
+:root [data-game^=rdr] h1.large {
+  color: var(--color-h-dynamic, var(--color-h1, var(--color-h, inherit)))
+}
+
+:root [data-game=rdo] h2,
+:root [data-game^=rdr] h2 {
+  color: var(--color-h-dynamic, var(--color-h2, var(--color-h, inherit)))
+}
+
+:root [data-game=rdo] h3,
+:root [data-game^=rdr] h3 {
+  color: var(--color-h-dynamic, var(--color-h3, var(--color-h, inherit)))
+}
+
+:root [data-game=rdo] h3[data-context=newswire-subtitle],
+:root [data-game^=rdr] h3[data-context=newswire-subtitle] {
+  color: var(--color-subtitle-dynamic, var(--color-h-dynamic, var(--color-h3, var(--color-h, inherit))))
+}
+
+:root [data-game=rdo] h4,
+:root [data-game=rdo] h5,
+:root [data-game=rdo] h6,
+:root [data-game^=rdr] h4,
+:root [data-game^=rdr] h5,
+:root [data-game^=rdr] h6 {
+  color: var(--color-h-dynamic, var(--color-h, inherit))
+}
+
+:root [data-game=rdo] [template=community],
+:root [data-game^=rdr] [template=community] {
+  --time-color: var(--body-color, #2d2d2d);
+  --breadcrumb-separator-filter-invert: invert(0)
+}
+
+:root [data-game=rdo] [template=community] main,
+:root [data-game^=rdr] [template=community] main {
+  color: var(--color-h, #161616)
+}
+
+:root [data-game=rdo] [template=community] p,
+:root [data-game^=rdr] [template=community] p {
+  color: var(--body-color, #2d2d2d)
+}
+
+:root :lang(pl_pl) [data-game=rdo],
+:root :lang(pl_pl) [data-game^=rdr] {
+  --font-family-h: RDRLino-Regular;
+  --font-family-newswire-subtitle: HapnaSlabSerif;
+  --font-family-std: HapnaSlabSerif;
+  --badge-font: RDRLino-Regular
+}
+
+:root :lang(zh_hans) [data-game=rdo],
+:root :lang(zh_hans) [data-game^=rdr] {
+  --font-family-h: NotoSerifSC;
+  --font-family-newswire-subtitle: NotoSansSC, ;
+  --font-family-std: NotoSansSC;
+  --area-font: NotoSansSC;
+  --badge-font: RDRLino-Regular, NotoSerifSC
+}
+
+:root :lang(zh_hant) [data-game=rdo],
+:root :lang(zh_hant) [data-game^=rdr] {
+  --font-family-h: NotoSerifTC;
+  --font-family-newswire-subtitle: NotoSansTC;
+  --font-family-std: NotoSansTC;
+  --area-font: NotoSansTC;
+  --badge-font: RDRLino-Regular, NotoSerifTC
+}
+
+:root :lang(ja_jp) [data-game=rdo],
+:root :lang(ja_jp) [data-game^=rdr] {
+  --font-family-h: NotoSerifJP;
+  --font-family-newswire-subtitle: NotoSansJP;
+  --font-family-std: NotoSansJP;
+  --area-font: NotoSansJP;
+  --badge-font: RDRLino-Regular, NotoSerifTC
+}
+
+:root :lang(ko_kr) [data-game=rdo],
+:root :lang(ko_kr) [data-game^=rdr] {
+  --font-family-h: NotoSerifKR;
+  --font-family-newswire-subtitle: NotoSansKR;
+  --font-family-std: NotoSansKR;
+  --area-font: NotoSansKR;
+  --badge-font: RDRLino-Regular, NotoSerifKR
+}
+
+:root .hiddenMobile {
+  display: none
+}
+
+@media (min-width:768px) {
+  :root .hiddenMobile {
+    display: var(--display-original, block)
+  }
+}
+
+:root .hiddenLarge {
+  display: var(--display-original, block)
+}
+
+@media (min-width:768px) {
+  :root .hiddenLarge {
+    display: none
+  }
+}
+
+:root .hidden-sm {
+  display: var(--display-original, block)
+}
+
+@media (min-width:0px) {
+  :root .hidden-sm {
+    display: none
+  }
+}
+
+@media (min-width:0px) {
+  :root .show-sm {
+    display: var(--display-original, block)
+  }
+}
+
+:root .hidden-md {
+  display: var(--display-original, block)
+}
+
+@media (min-width:768px) {
+  :root .hidden-md {
+    display: none
+  }
+}
+
+@media (min-width:768px) {
+  :root .show-md {
+    display: var(--display-original, block)
+  }
+}
+
+:root .hidden-lg {
+  display: var(--display-original, block)
+}
+
+@media (min-width:1024px) {
+  :root .hidden-lg {
+    display: none
+  }
+}
+
+@media (min-width:1024px) {
+  :root .show-lg {
+    display: var(--display-original, block)
+  }
+}
+
+:root .hidden-xl {
+  display: var(--display-original, block)
+}
+
+@media (min-width:1920px) {
+  :root .hidden-xl {
+    display: none
+  }
+}
+
+@media (min-width:1920px) {
+  :root .show-xl {
+    display: var(--display-original, block)
+  }
+}
+
+:root .hidden-xxl {
+  display: var(--display-original, block)
+}
+
+@media (min-width:2560px) {
+  :root .hidden-xxl {
+    display: none
+  }
+}
+
+@media (min-width:2560px) {
+  :root .show-xxl {
+    display: var(--display-original, block)
+  }
+}
+
+:root .full-width {
+  left: 50%;
+  margin-left: calc((100vw / 2) * -1);
+  margin-right: calc((100vw / 2) * -1);
+  max-width: 100vw !important;
+  position: relative;
+  right: 50%;
+  width: 100vw
+}
+
+@media (max-width:767px) {
+  :root .reverse-mobile {
+    display: flex;
+    flex-direction: column-reverse
+  }
+}
+
+:root .center-children {
+  align-items: center;
+  display: flex;
+  justify-content: center
+}
+
+:root .std-padding-mobile-desktop-none {
+  --padding-dynamic: var(--padding-static)
+}
+
+@media (min-width:1024px) {
+  :root .std-padding-mobile-desktop-none {
+    --padding-dynamic: 0
+  }
+}
+
+:root .std-padding-desktop-mobile-none {
+  --padding-dynamic: 0
+}
+
+@media (min-width:1024px) {
+  :root .std-padding-desktop-mobile-none {
+    --padding-dynamic: var(--padding-static)
+  }
+}
+
+:root .horizontal-line {
+  background: #fff;
+  height: 2px;
+  margin-top: var(--grid-gap-static-sm);
+  width: 100%
+}
+
+@media (max-width:1023px) {
+  :root .horizontal-line {
+    margin-top: var(--grid-gap-static-xs)
+  }
+}
+
+:root .horizontal-line.gold {
+  background: linear-gradient(96deg, #977b52 18%, #ded0a4 51%, #b19b6b 85%)
+}
+
+body {
+  background: var(--background-color);
+  overflow-x: hidden;
+  overflow-y: scroll
+}
+
+ul {
+  padding-left: 40px !important
+}
+
+@supports (--custom:property) {
+  [style*="--aspect-ratio"] {
+    --aspect-ratio-default: 1;
+    position: relative
+  }
+
+  @media (min-width:1024px) {
+    [style*="--aspect-ratio"] {
+      --aspect-ratio-default: 16/9
+    }
+  }
+
+  [style*="--aspect-ratio"]:before {
+    content: "";
+    display: block;
+    height: 0;
+    padding-bottom: calc(100% / calc(var(--aspect-ratio, var(--aspect-ratio-default))));
+    width: 100%
+  }
+
+  [style*="--aspect-ratio"]>* {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
+  }
+}
+
+[class^=SidebarContainer-] {
+  --color-h-dynamic: #000
+}
+
+[class^=SidebarContainer-] .prose {
+  background: var(--tina-color-grey-0);
+  background-color: var(--tina-color-grey-0);
+  border: 1px solid var(--tina-color-grey-2);
+  border-radius: var(--tina-radius-small);
+  box-shadow: 0 0 0 2px transparent;
+  color: var(--tina-color-grey-10);
+  margin-bottom: 14px;
+  padding: var(--tina-padding-small)
+}
+
+[class^=SidebarContainer-] .prose .ProseMirror {
+  grid-gap: var(--grid-gap-static-sm);
+  display: grid
+}
+
+[class^=SidebarContainer-] .prose .ProseMirror a {
+  text-decoration: underline
+}
+
+[class^=BlockMenuList-] button {
+  --color-h: #000
+}
+
+@keyframes globalFadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px)
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible
+  }
+}
+
+@keyframes globalFadeIn {
+  0% {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1;
+    visibility: visible
+  }
+}
+
+[data-disallow-body-scroll] {
+  --body-overflow: hidden
+}
+
+body {
+  overflow-y: var(--body-overflow, auto)
+}
+
+/*# sourceMappingURL=2688cb8671fd8993f1524f1ca00deee3.css.map*/
