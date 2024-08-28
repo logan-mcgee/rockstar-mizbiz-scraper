@@ -19,64 +19,64 @@ _global.SENTRY_RELEASE = {
     6516: (e, o, a) => {
       var t = a(1403),
         n = Symbol.for("react.element"),
-        r = Symbol.for("react.fragment"),
-        d = Object.prototype.hasOwnProperty,
+        d = Symbol.for("react.fragment"),
+        r = Object.prototype.hasOwnProperty,
         l = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        f = {
+        s = {
           key: !0,
           ref: !0,
           __self: !0,
           __source: !0
         };
 
-      function s(e, o, a) {
-        var t, r = {},
-          s = null,
+      function f(e, o, a) {
+        var t, d = {},
+          f = null,
           i = null;
-        for (t in void 0 !== a && (s = "" + a), void 0 !== o.key && (s = "" + o.key), void 0 !== o.ref && (i = o.ref), o) d.call(o, t) && !f.hasOwnProperty(t) && (r[t] = o[t]);
+        for (t in void 0 !== a && (f = "" + a), void 0 !== o.key && (f = "" + o.key), void 0 !== o.ref && (i = o.ref), o) r.call(o, t) && !s.hasOwnProperty(t) && (d[t] = o[t]);
         if (e && e.defaultProps)
-          for (t in o = e.defaultProps) void 0 === r[t] && (r[t] = o[t]);
+          for (t in o = e.defaultProps) void 0 === d[t] && (d[t] = o[t]);
         return {
           $$typeof: n,
           type: e,
-          key: s,
+          key: f,
           ref: i,
-          props: r,
+          props: d,
           _owner: l.current
         }
       }
-      o.Fragment = r, o.jsx = s, o.jsxs = s
+      o.Fragment = d, o.jsx = f, o.jsxs = f
     },
     6632: (e, o, a) => {
       e.exports = a(6516)
     },
     3002: (e, o, a) => {
       a.r(o), a.d(o, {
-        default: () => d
+        default: () => r
       });
       var t = a(1403),
         n = a(4410),
-        r = a(6632);
-      const d = e => {
+        d = a(6632);
+      const r = e => {
         let {
           basename: o,
           children: a,
-          history: d
+          history: r
         } = e;
-        const [l, f] = (0, t.useState)({
-          action: d.action,
-          location: d.location
+        const [l, s] = (0, t.useState)({
+          action: r.action,
+          location: r.location
         });
-        return (0, t.useLayoutEffect)((() => d.listen(((e, o) => {
-          f({
+        return (0, t.useLayoutEffect)((() => r.listen(((e, o) => {
+          s({
             location: e,
             action: o
           })
-        }))), [d]), (0, r.jsx)(n.Router, {
+        }))), [r]), (0, d.jsx)(n.Router, {
           basename: o,
           location: l.location,
           navigationType: l.action,
-          navigator: d,
+          navigator: r,
           children: a
         })
       }
