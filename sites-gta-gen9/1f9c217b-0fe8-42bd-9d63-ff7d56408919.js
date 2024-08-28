@@ -16,35 +16,35 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_gta_gen9 = self.webpackChunk_rockstargames_sites_gta_gen9 || []).push([
   [3277, 5658], {
-    83277: (e, n, t) => {
-      t.r(n), t.d(n, {
+    83277: (e, n, d) => {
+      d.r(n), d.d(n, {
         useGSAP: () => c
       });
-      var d = t(71403),
-        a = t(26040),
-        f = t.n(a);
-      let o = "undefined" != typeof window ? d.useLayoutEffect : d.useEffect,
-        s = e => e && !Array.isArray(e) && "object" == typeof e,
+      var t = d(71403),
+        a = d(26040),
+        o = d.n(a);
+      let s = "undefined" != typeof window ? t.useLayoutEffect : t.useEffect,
+        f = e => e && !Array.isArray(e) && "object" == typeof e,
         r = [],
         l = {},
-        i = f();
+        i = o();
       const c = function(e) {
         let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r,
-          t = l;
-        s(e) ? (t = e, e = null, n = "dependencies" in t ? t.dependencies : r) : s(n) && (t = n, n = "dependencies" in t ? t.dependencies : r);
+          d = l;
+        f(e) ? (d = e, e = null, n = "dependencies" in d ? d.dependencies : r) : f(n) && (d = n, n = "dependencies" in d ? d.dependencies : r);
         let {
           scope: a,
-          revertOnUpdate: f
-        } = t, [c, u] = (0, d.useState)(!1);
+          revertOnUpdate: o
+        } = d, [c, b] = (0, t.useState)(!1);
         e && "function" != typeof e && console.warn("First parameter must be a function or config object");
-        const b = i.context((() => {}), a),
-          g = () => b.revert(),
-          y = n && n.length && !f;
-        return o((() => {
-          if (e && b.add(e, a), !y || !c) return g
-        }), n), y && o((() => (u(!0), g)), r), {
-          context: b,
-          contextSafe: e => b.add(null, e)
+        const u = i.context((() => {}), a),
+          g = () => u.revert(),
+          y = n && n.length && !o;
+        return s((() => {
+          if (e && u.add(e, a), !y || !c) return g
+        }), n), y && s((() => (b(!0), g)), r), {
+          context: u,
+          contextSafe: e => u.add(null, e)
         }
       };
       c.register = e => {

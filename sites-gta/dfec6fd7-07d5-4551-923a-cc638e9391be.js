@@ -50,7 +50,7 @@ _global.SENTRY_RELEASE = {
     3496: (e, t, n) => {
       n.d(t, {
         C: () => u,
-        f: () => f
+        f: () => c
       });
       var r = n(226);
 
@@ -120,7 +120,7 @@ _global.SENTRY_RELEASE = {
         return void 0 === t && (t = o), a(e, t)
       }
 
-      function f(e) {
+      function c(e) {
         void 0 === e && (e = {});
         var t = a(null);
         return t.options = (0, r.Cl)({
@@ -134,7 +134,7 @@ _global.SENTRY_RELEASE = {
         C6: () => o,
         Cl: () => a,
         Tt: () => u,
-        fX: () => f
+        fX: () => c
       });
       var r = function(e, t) {
         return r = Object.setPrototypeOf || {
@@ -173,7 +173,7 @@ _global.SENTRY_RELEASE = {
         return n
       }
 
-      function f(e, t, n) {
+      function c(e, t, n) {
         if (n || 2 === arguments.length)
           for (var r, o = 0, a = t.length; o < a; o++) !r && o in t || (r || (r = Array.prototype.slice.call(t, 0, o)), r[o] = t[o]);
         return e.concat(r || Array.prototype.slice.call(t))

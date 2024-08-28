@@ -71,9 +71,9 @@ _global.SENTRY_RELEASE = {
         goldenrod: "rockstargames-sites-legacycdcb0c5076309a329da2a6e857cc3bdf",
         skull: "rockstargames-sites-legacyba4bd16bff2fbc40616457007b4a7442"
       };
-      var m = a(46632);
+      var d = a(46632);
       const {
-        sanitize: d
+        sanitize: m
       } = n(), u = e => {
         let {
           list: l,
@@ -89,27 +89,27 @@ _global.SENTRY_RELEASE = {
         const [f, v] = (0, t.useState)(null);
         return (0, t.useEffect)((() => {
           v(l)
-        }), [l]), a || l ? p && f ? (0, m.jsx)("div", {
+        }), [l]), a || l ? p && f ? (0, d.jsx)("div", {
           className: s.grid,
           style: {
             "--ordered-list-grid-column": p,
             "--ordered-list-grid-column-mobile": g ?? p
           },
-          children: (0, m.jsx)("ol", {
+          children: (0, d.jsx)("ol", {
             style: (0, r.safeStyles)(n),
             className: (0, i.classList)(s.itemList, s.noImg, s[o], s[b]),
-            children: f.map((e => (0, m.jsx)("li", {
+            children: f.map((e => (0, d.jsx)("li", {
               dangerouslySetInnerHTML: {
-                __html: d(e.content)
+                __html: m(e.content)
               }
             }, e.content)))
           })
-        }) : (0, m.jsx)("ol", {
+        }) : (0, d.jsx)("ol", {
           style: (0, r.safeStyles)(n),
           className: (0, i.classList)(s.itemList, s.custom, c ? s.noImg : "", o ? s[o] : "", b ? s[b] : "", u ?? ""),
-          children: l.map((e => (0, m.jsx)("li", {
+          children: l.map((e => (0, d.jsx)("li", {
             dangerouslySetInnerHTML: {
-              __html: d(e?.content ?? e)
+              __html: m(e?.content ?? e)
             }
           }, e?.content)))
         }) : null
@@ -290,7 +290,7 @@ _global.SENTRY_RELEASE = {
             component: () => (0, r.jsx)("hr", {})
           }
         },
-        m = function() {
+        d = function() {
           return {
             label: arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "Grid Number of Columns",
             name: arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "--grid-num-columns",
@@ -323,8 +323,8 @@ _global.SENTRY_RELEASE = {
       s("Grid"),
         function() {
           (arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "Label").toLowerCase().split(" ").join("_")
-        }("Grid"), m("style.--grid-num-columns-mobile", "Grid Number of Columns (Mobile)"), m("style.--grid-num-columns-desktop", "Grid Number of Columns (Desktop)"), s("Grid"), a(60207), a(58407);
-      var d = a(33809);
+        }("Grid"), d("style.--grid-num-columns-mobile", "Grid Number of Columns (Mobile)"), d("style.--grid-num-columns-desktop", "Grid Number of Columns (Desktop)"), s("Grid"), a(60207), a(58407);
+      var m = a(33809);
       a(50048), a(22941), a(63672);
       const u = () => ({
           name: "buttons",
@@ -1018,7 +1018,7 @@ _global.SENTRY_RELEASE = {
             meta: a,
             input: t
           } = e;
-          return (0, r.jsxs)(d.FieldWrapper, {
+          return (0, r.jsxs)(m.FieldWrapper, {
             field: l,
             meta: a,
             children: [(0, r.jsx)("input", {

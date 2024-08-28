@@ -88,7 +88,7 @@ _global.SENTRY_RELEASE = {
         this.fun = e, this.array = t
       }
 
-      function y() {}
+      function b() {}
       n.nextTick = function(e) {
         var t = new Array(arguments.length - 1);
         if (arguments.length > 1)
@@ -96,7 +96,7 @@ _global.SENTRY_RELEASE = {
         s.push(new p(e, t)), 1 !== s.length || u || i(d)
       }, p.prototype.run = function() {
         this.fun.apply(null, this.array)
-      }, n.title = "browser", n.browser = !0, n.env = {}, n.argv = [], n.version = "", n.versions = {}, n.on = y, n.addListener = y, n.once = y, n.off = y, n.removeListener = y, n.removeAllListeners = y, n.emit = y, n.prependListener = y, n.prependOnceListener = y, n.listeners = function(e) {
+      }, n.title = "browser", n.browser = !0, n.env = {}, n.argv = [], n.version = "", n.versions = {}, n.on = b, n.addListener = b, n.once = b, n.off = b, n.removeListener = b, n.removeAllListeners = b, n.emit = b, n.prependListener = b, n.prependOnceListener = b, n.listeners = function(e) {
         return []
       }, n.binding = function(e) {
         throw new Error("process.binding is not supported")

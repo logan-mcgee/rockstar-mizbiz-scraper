@@ -44,8 +44,8 @@ _global.SENTRY_RELEASE = {
         a = p(n(52696)),
         l = p(n(51901)),
         s = p(n(66785)),
-        f = p(n(28512)),
-        d = p(n(54518)),
+        d = p(n(28512)),
+        f = p(n(54518)),
         c = n(75923);
 
       function p(e) {
@@ -75,7 +75,7 @@ _global.SENTRY_RELEASE = {
             ready: !1
           }, n.handleWindowResize = function() {
             n.process()
-          }, "perfectFit" in e && console.warn("TextFit property perfectFit has been removed."), n.handleWindowResize = (0, f.default)(n.handleWindowResize, e.throttle), n
+          }, "perfectFit" in e && console.warn("TextFit property perfectFit has been removed."), n.handleWindowResize = (0, d.default)(n.handleWindowResize, e.throttle), n
         }
         return function(e, t) {
           if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function, not " + typeof t);
@@ -100,7 +100,7 @@ _global.SENTRY_RELEASE = {
         }, {
           key: "componentWillUnmount",
           value: function() {
-            this.props.autoResize && window.removeEventListener("resize", this.handleWindowResize), this.pid = (0, d.default)()
+            this.props.autoResize && window.removeEventListener("resize", this.handleWindowResize), this.pid = (0, f.default)()
           }
         }, {
           key: "process",
@@ -113,26 +113,26 @@ _global.SENTRY_RELEASE = {
               i = t.forceSingleModeWidth,
               u = t.onReady,
               a = this._parent,
-              f = this._child,
+              d = this._child,
               p = (0, c.innerWidth)(a),
               g = (0, c.innerHeight)(a);
             if (g <= 0 || isNaN(g)) console.warn("Can not process element without height. Make sure the element is displayed and has a static height.");
             else if (p <= 0 || isNaN(p)) console.warn("Can not process element without width. Make sure the element is displayed and has a static width.");
             else {
-              var m = (0, d.default)();
+              var m = (0, f.default)();
               this.pid = m;
               var b = function() {
                   return m !== e.pid
                 },
                 v = "multi" === o ? function() {
-                  return y(f, g)
+                  return y(d, g)
                 } : function() {
-                  return h(f, p)
+                  return h(d, p)
                 },
                 w = "multi" === o ? function() {
-                  return h(f, p)
+                  return h(d, p)
                 } : function() {
-                  return y(f, g)
+                  return y(d, g)
                 },
                 _ = void 0,
                 M = n,
@@ -190,13 +190,13 @@ _global.SENTRY_RELEASE = {
                 return n
               }(t, ["children", "text", "style", "min", "max", "mode", "forceWidth", "forceSingleModeWidth", "throttle", "autoResize", "onReady"])),
               s = this.state,
-              f = s.fontSize,
-              d = s.ready,
+              d = s.fontSize,
+              f = s.ready,
               c = r({}, u, {
-                fontSize: f
+                fontSize: d
               }),
               p = {
-                display: d ? "block" : "inline-block"
+                display: f ? "block" : "inline-block"
               };
             return "single" === a && (p.whiteSpace = "nowrap"), i.default.createElement("div", r({
               ref: function(t) {
@@ -208,7 +208,7 @@ _global.SENTRY_RELEASE = {
                 return e._child = t
               },
               style: p
-            }, o && "function" == typeof n ? d ? n(o) : o : n))
+            }, o && "function" == typeof n ? f ? n(o) : o : n))
           }
         }]), t
       }(i.default.Component);
@@ -368,19 +368,19 @@ _global.SENTRY_RELEASE = {
       }();
       var a, l = [],
         s = !1,
-        f = -1;
+        d = -1;
 
-      function d() {
-        s && a && (s = !1, a.length ? l = a.concat(l) : f = -1, l.length && c())
+      function f() {
+        s && a && (s = !1, a.length ? l = a.concat(l) : d = -1, l.length && c())
       }
 
       function c() {
         if (!s) {
-          var e = u(d);
+          var e = u(f);
           s = !0;
           for (var t = l.length; t;) {
-            for (a = l, l = []; ++f < t;) a && a[f].run();
-            f = -1, t = l.length
+            for (a = l, l = []; ++d < t;) a && a[d].run();
+            d = -1, t = l.length
           }
           a = null, s = !1,
             function(e) {

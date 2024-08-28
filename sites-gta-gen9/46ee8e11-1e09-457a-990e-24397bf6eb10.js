@@ -18,7 +18,7 @@ _global.SENTRY_RELEASE = {
   [5658, 3277], {
     83277: (e, n, t) => {
       t.r(n), t.d(n, {
-        useGSAP: () => u
+        useGSAP: () => c
       });
       var d = t(71403),
         a = t(26040),
@@ -28,28 +28,28 @@ _global.SENTRY_RELEASE = {
         r = [],
         l = {},
         i = o();
-      const u = function(e) {
+      const c = function(e) {
         let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r,
           t = l;
         f(e) ? (t = e, e = null, n = "dependencies" in t ? t.dependencies : r) : f(n) && (t = n, n = "dependencies" in t ? t.dependencies : r);
         let {
           scope: a,
           revertOnUpdate: o
-        } = t, [u, c] = (0, d.useState)(!1);
+        } = t, [c, b] = (0, d.useState)(!1);
         e && "function" != typeof e && console.warn("First parameter must be a function or config object");
-        const b = i.context((() => {}), a),
-          g = () => b.revert(),
+        const u = i.context((() => {}), a),
+          g = () => u.revert(),
           y = n && n.length && !o;
         return s((() => {
-          if (e && b.add(e, a), !y || !u) return g
-        }), n), y && s((() => (c(!0), g)), r), {
-          context: b,
-          contextSafe: e => b.add(null, e)
+          if (e && u.add(e, a), !y || !c) return g
+        }), n), y && s((() => (b(!0), g)), r), {
+          context: u,
+          contextSafe: e => u.add(null, e)
         }
       };
-      u.register = e => {
+      c.register = e => {
         i = e
-      }, u.headless = !0
+      }, c.headless = !0
     }
   }
 ]);

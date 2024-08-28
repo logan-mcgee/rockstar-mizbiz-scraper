@@ -20,8 +20,8 @@ _global.SENTRY_RELEASE = {
       r.d(t, {
         C6: () => o,
         Cl: () => a,
-        Ju: () => l,
-        Tt: () => f,
+        Ju: () => f,
+        Tt: () => l,
         fX: () => c,
         zs: () => i
       });
@@ -52,7 +52,7 @@ _global.SENTRY_RELEASE = {
         }, a.apply(this, arguments)
       };
 
-      function f(e, t) {
+      function l(e, t) {
         var r = {};
         for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (r[n] = e[n]);
         if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -62,7 +62,7 @@ _global.SENTRY_RELEASE = {
         return r
       }
 
-      function l(e) {
+      function f(e) {
         var t = "function" == typeof Symbol && Symbol.iterator,
           r = t && e[t],
           n = 0;
@@ -82,10 +82,10 @@ _global.SENTRY_RELEASE = {
         var r = "function" == typeof Symbol && e[Symbol.iterator];
         if (!r) return e;
         var n, o, a = r.call(e),
-          f = [];
+          l = [];
         try {
           for (;
-            (void 0 === t || t-- > 0) && !(n = a.next()).done;) f.push(n.value)
+            (void 0 === t || t-- > 0) && !(n = a.next()).done;) l.push(n.value)
         } catch (e) {
           o = {
             error: e
@@ -97,7 +97,7 @@ _global.SENTRY_RELEASE = {
             if (o) throw o.error
           }
         }
-        return f
+        return l
       }
 
       function c(e, t, r) {
