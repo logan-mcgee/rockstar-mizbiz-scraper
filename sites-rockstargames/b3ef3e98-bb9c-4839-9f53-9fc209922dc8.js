@@ -1,8 +1,8 @@
 ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "b3ef3e98-bb9c-4839-9f53-9fc209922dc8", e._sentryDebugIdIdentifier = "sentry-dbid-b3ef3e98-bb9c-4839-9f53-9fc209922dc8")
+      r = (new Error).stack;
+    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "b3ef3e98-bb9c-4839-9f53-9fc209922dc8", e._sentryDebugIdIdentifier = "sentry-dbid-b3ef3e98-bb9c-4839-9f53-9fc209922dc8")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -16,8 +16,8 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [4007, 6632, 6388], {
-    26516: (e, a, r) => {
-      var s = r(71403),
+    26516: (e, r, a) => {
+      var s = a(71403),
         t = Symbol.for("react.element"),
         o = Symbol.for("react.fragment"),
         n = Object.prototype.hasOwnProperty,
@@ -29,13 +29,13 @@ _global.SENTRY_RELEASE = {
           __source: !0
         };
 
-      function l(e, a, r) {
+      function l(e, r, a) {
         var s, o = {},
           l = null,
           c = null;
-        for (s in void 0 !== r && (l = "" + r), void 0 !== a.key && (l = "" + a.key), void 0 !== a.ref && (c = a.ref), a) n.call(a, s) && !f.hasOwnProperty(s) && (o[s] = a[s]);
+        for (s in void 0 !== a && (l = "" + a), void 0 !== r.key && (l = "" + r.key), void 0 !== r.ref && (c = r.ref), r) n.call(r, s) && !f.hasOwnProperty(s) && (o[s] = r[s]);
         if (e && e.defaultProps)
-          for (s in a = e.defaultProps) void 0 === o[s] && (o[s] = a[s]);
+          for (s in r = e.defaultProps) void 0 === o[s] && (o[s] = r[s]);
         return {
           $$typeof: t,
           type: e,
@@ -45,29 +45,29 @@ _global.SENTRY_RELEASE = {
           _owner: d.current
         }
       }
-      a.Fragment = o, a.jsx = l, a.jsxs = l
+      r.Fragment = o, r.jsx = l, r.jsxs = l
     },
-    46632: (e, a, r) => {
-      e.exports = r(26516)
+    46632: (e, r, a) => {
+      e.exports = a(26516)
     },
-    54007: (e, a, r) => {
-      r.r(a), r.d(a, {
+    54007: (e, r, a) => {
+      a.r(r), a.d(r, {
         default: () => o
       });
-      var s = r(14410);
-      var t = r(46632);
+      var s = a(14410);
+      var t = a(46632);
       const o = () => {
-        const [e] = (0, s.useSearchParams)(), a = e.get("src") ?? null;
-        if (!a) return null;
+        const [e] = (0, s.useSearchParams)(), r = e.get("src") ?? null;
+        if (!r) return null;
         const {
-          hostname: r
-        } = new URL(a);
-        return ["media.rockstargames.com", "www.rockstargames.com"].includes(r) ? (0, t.jsx)("div", {
+          hostname: a
+        } = new URL(r);
+        return ["media.rockstargames.com", "www.rockstargames.com"].includes(a) ? (0, t.jsx)("div", {
           className: "rockstargames-sites-rockstargamesd66031000744eafe5244f0f181e114d4",
           children: (0, t.jsx)("div", {
             className: "rockstargames-sites-rockstargamesdc6ce3af69e4264cd2a5522445cef045",
             style: {
-              background: `url(${a}) no-repeat center/contain`
+              background: `url(${r}) no-repeat center/contain`
             }
           })
         }) : null

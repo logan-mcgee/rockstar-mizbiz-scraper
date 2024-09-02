@@ -23,11 +23,11 @@ _global.SENTRY_RELEASE = {
         throw new Error("setTimeout has not been defined")
       }
 
-      function a() {
+      function i() {
         throw new Error("clearTimeout has not been defined")
       }
 
-      function i(e) {
+      function a(e) {
         if (t === setTimeout) return setTimeout(e, 0);
         if ((t === o || !t) && setTimeout) return t = setTimeout, setTimeout(e, 0);
         try {
@@ -46,9 +46,9 @@ _global.SENTRY_RELEASE = {
           t = o
         }
         try {
-          r = "function" == typeof clearTimeout ? clearTimeout : a
+          r = "function" == typeof clearTimeout ? clearTimeout : i
         } catch (e) {
-          r = a
+          r = i
         }
       }();
       var c, l = [],
@@ -56,12 +56,12 @@ _global.SENTRY_RELEASE = {
         f = -1;
 
       function s() {
-        u && c && (u = !1, c.length ? l = c.concat(l) : f = -1, l.length && d())
+        u && c && (u = !1, c.length ? l = c.concat(l) : f = -1, l.length && p())
       }
 
-      function d() {
+      function p() {
         if (!u) {
-          var e = i(s);
+          var e = a(s);
           u = !0;
           for (var t = l.length; t;) {
             for (c = l, l = []; ++f < t;) c && c[f].run();
@@ -70,7 +70,7 @@ _global.SENTRY_RELEASE = {
           c = null, u = !1,
             function(e) {
               if (r === clearTimeout) return clearTimeout(e);
-              if ((r === a || !r) && clearTimeout) return r = clearTimeout, clearTimeout(e);
+              if ((r === i || !r) && clearTimeout) return r = clearTimeout, clearTimeout(e);
               try {
                 return r(e)
               } catch (t) {
@@ -84,7 +84,7 @@ _global.SENTRY_RELEASE = {
         }
       }
 
-      function p(e, t) {
+      function d(e, t) {
         this.fun = e, this.array = t
       }
 
@@ -93,8 +93,8 @@ _global.SENTRY_RELEASE = {
         var t = new Array(arguments.length - 1);
         if (arguments.length > 1)
           for (var r = 1; r < arguments.length; r++) t[r - 1] = arguments[r];
-        l.push(new p(e, t)), 1 !== l.length || u || i(d)
-      }, p.prototype.run = function() {
+        l.push(new d(e, t)), 1 !== l.length || u || a(p)
+      }, d.prototype.run = function() {
         this.fun.apply(null, this.array)
       }, n.title = "browser", n.browser = !0, n.env = {}, n.argv = [], n.version = "", n.versions = {}, n.on = y, n.addListener = y, n.once = y, n.off = y, n.removeListener = y, n.removeAllListeners = y, n.emit = y, n.prependListener = y, n.prependOnceListener = y, n.listeners = function(e) {
         return []
@@ -112,9 +112,9 @@ _global.SENTRY_RELEASE = {
       "use strict";
       r.d(t, {
         C6: () => o,
-        Cl: () => a,
+        Cl: () => i,
         Ju: () => c,
-        Tt: () => i,
+        Tt: () => a,
         fX: () => u,
         zs: () => l
       });
@@ -137,15 +137,15 @@ _global.SENTRY_RELEASE = {
         }
         n(e, t), e.prototype = null === t ? Object.create(t) : (r.prototype = t.prototype, new r)
       }
-      var a = function() {
-        return a = Object.assign || function(e) {
+      var i = function() {
+        return i = Object.assign || function(e) {
           for (var t, r = 1, n = arguments.length; r < n; r++)
             for (var o in t = arguments[r]) Object.prototype.hasOwnProperty.call(t, o) && (e[o] = t[o]);
           return e
-        }, a.apply(this, arguments)
+        }, i.apply(this, arguments)
       };
 
-      function i(e, t) {
+      function a(e, t) {
         var r = {};
         for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (r[n] = e[n]);
         if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -174,28 +174,28 @@ _global.SENTRY_RELEASE = {
       function l(e, t) {
         var r = "function" == typeof Symbol && e[Symbol.iterator];
         if (!r) return e;
-        var n, o, a = r.call(e),
-          i = [];
+        var n, o, i = r.call(e),
+          a = [];
         try {
           for (;
-            (void 0 === t || t-- > 0) && !(n = a.next()).done;) i.push(n.value)
+            (void 0 === t || t-- > 0) && !(n = i.next()).done;) a.push(n.value)
         } catch (e) {
           o = {
             error: e
           }
         } finally {
           try {
-            n && !n.done && (r = a.return) && r.call(a)
+            n && !n.done && (r = i.return) && r.call(i)
           } finally {
             if (o) throw o.error
           }
         }
-        return i
+        return a
       }
 
       function u(e, t, r) {
         if (r || 2 === arguments.length)
-          for (var n, o = 0, a = t.length; o < a; o++) !n && o in t || (n || (n = Array.prototype.slice.call(t, 0, o)), n[o] = t[o]);
+          for (var n, o = 0, i = t.length; o < i; o++) !n && o in t || (n || (n = Array.prototype.slice.call(t, 0, o)), n[o] = t[o]);
         return e.concat(n || Array.prototype.slice.call(t))
       }
       Object.create, Object.create, "function" == typeof SuppressedError && SuppressedError

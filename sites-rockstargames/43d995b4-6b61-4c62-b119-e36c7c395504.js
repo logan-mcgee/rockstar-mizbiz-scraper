@@ -16,12 +16,12 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [6632], {
-    26516: (e, r, a) => {
-      var o = a(71403),
-        t = Symbol.for("react.element"),
-        d = Symbol.for("react.fragment"),
-        n = Object.prototype.hasOwnProperty,
-        s = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+    26516: (e, r, o) => {
+      var t = o(71403),
+        a = Symbol.for("react.element"),
+        n = Symbol.for("react.fragment"),
+        s = Object.prototype.hasOwnProperty,
+        d = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         f = {
           key: !0,
           ref: !0,
@@ -29,26 +29,26 @@ _global.SENTRY_RELEASE = {
           __source: !0
         };
 
-      function l(e, r, a) {
-        var o, d = {},
+      function l(e, r, o) {
+        var t, n = {},
           l = null,
-          b = null;
-        for (o in void 0 !== a && (l = "" + a), void 0 !== r.key && (l = "" + r.key), void 0 !== r.ref && (b = r.ref), r) n.call(r, o) && !f.hasOwnProperty(o) && (d[o] = r[o]);
+          _ = null;
+        for (t in void 0 !== o && (l = "" + o), void 0 !== r.key && (l = "" + r.key), void 0 !== r.ref && (_ = r.ref), r) s.call(r, t) && !f.hasOwnProperty(t) && (n[t] = r[t]);
         if (e && e.defaultProps)
-          for (o in r = e.defaultProps) void 0 === d[o] && (d[o] = r[o]);
+          for (t in r = e.defaultProps) void 0 === n[t] && (n[t] = r[t]);
         return {
-          $$typeof: t,
+          $$typeof: a,
           type: e,
           key: l,
-          ref: b,
-          props: d,
-          _owner: s.current
+          ref: _,
+          props: n,
+          _owner: d.current
         }
       }
-      r.Fragment = d, r.jsx = l, r.jsxs = l
+      r.Fragment = n, r.jsx = l, r.jsxs = l
     },
-    46632: (e, r, a) => {
-      e.exports = a(26516)
+    46632: (e, r, o) => {
+      e.exports = o(26516)
     }
   }
 ]);

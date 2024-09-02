@@ -81,10 +81,10 @@ _global.SENTRY_RELEASE = {
           u = Object.freeze,
           f = Object.seal,
           m = Object.create,
-          d = "undefined" != typeof Reflect && Reflect,
-          p = d.apply,
-          g = d.construct;
-        p || (p = function(e, t, n) {
+          p = "undefined" != typeof Reflect && Reflect,
+          d = p.apply,
+          g = p.construct;
+        d || (d = function(e, t, n) {
           return e.apply(t, n)
         }), u || (u = function(e) {
           return e
@@ -111,7 +111,7 @@ _global.SENTRY_RELEASE = {
         function x(e) {
           return function(t) {
             for (var n = arguments.length, r = new Array(n > 1 ? n - 1 : 0), o = 1; o < n; o++) r[o - 1] = arguments[o];
-            return p(e, t, r)
+            return d(e, t, r)
           }
         }
 
@@ -131,7 +131,7 @@ _global.SENTRY_RELEASE = {
 
         function D(e) {
           var t, n = m(null);
-          for (t in e) !0 === p(a, e, [t]) && (n[t] = e[t]);
+          for (t in e) !0 === d(a, e, [t]) && (n[t] = e[t]);
           return n
         }
 
@@ -184,8 +184,8 @@ _global.SENTRY_RELEASE = {
             s = n.Node,
             f = n.Element,
             m = n.NodeFilter,
-            d = n.NamedNodeMap,
-            p = void 0 === d ? n.NamedNodeMap || n.MozNamedAttrMap : d,
+            p = n.NamedNodeMap,
+            d = void 0 === p ? n.NamedNodeMap || n.MozNamedAttrMap : p,
             g = n.HTMLFormElement,
             h = n.DOMParser,
             x = n.trustedTypes,
@@ -224,12 +224,12 @@ _global.SENTRY_RELEASE = {
             ue = le.createDocumentFragment,
             fe = le.getElementsByTagName,
             me = a.importNode,
-            de = {};
+            pe = {};
           try {
-            de = D(i).documentMode ? i.documentMode : {}
+            pe = D(i).documentMode ? i.documentMode : {}
           } catch (e) {}
-          var pe = {};
-          o.isSupported = "function" == typeof re && ce && void 0 !== ce.createHTMLDocument && 9 !== de;
+          var de = {};
+          o.isSupported = "function" == typeof re && ce && void 0 !== ce.createHTMLDocument && 9 !== pe;
           var ge, he, ye = G,
             be = W,
             ve = q,
@@ -303,8 +303,8 @@ _global.SENTRY_RELEASE = {
               ct && ct === t || (t && "object" === e(t) || (t = {}), t = D(t), ge = ge = -1 === lt.indexOf(t.PARSER_MEDIA_TYPE) ? "text/html" : t.PARSER_MEDIA_TYPE, he = "application/xhtml+xml" === ge ? N : T, _e = "ALLOWED_TAGS" in t ? L({}, t.ALLOWED_TAGS, he) : Se, ke = "ALLOWED_ATTR" in t ? L({}, t.ALLOWED_ATTR, he) : xe, at = "ALLOWED_NAMESPACES" in t ? L({}, t.ALLOWED_NAMESPACES, N) : it, Je = "ADD_URI_SAFE_ATTR" in t ? L(D(Qe), t.ADD_URI_SAFE_ATTR, he) : Qe, Xe = "ADD_DATA_URI_TAGS" in t ? L(D(Ze), t.ADD_DATA_URI_TAGS, he) : Ze, Ke = "FORBID_CONTENTS" in t ? L({}, t.FORBID_CONTENTS, he) : Ve, De = "FORBID_TAGS" in t ? L({}, t.FORBID_TAGS, he) : {}, Me = "FORBID_ATTR" in t ? L({}, t.FORBID_ATTR, he) : {}, $e = "USE_PROFILES" in t && t.USE_PROFILES, Oe = !1 !== t.ALLOW_ARIA_ATTR, Re = !1 !== t.ALLOW_DATA_ATTR, Ce = t.ALLOW_UNKNOWN_PROTOCOLS || !1, Ie = !1 !== t.ALLOW_SELF_CLOSE_IN_ATTR, Fe = t.SAFE_FOR_TEMPLATES || !1, Ue = t.WHOLE_DOCUMENT || !1, Pe = t.RETURN_DOM || !1, Be = t.RETURN_DOM_FRAGMENT || !1, je = t.RETURN_TRUSTED_TYPE || !1, ze = t.FORCE_BODY || !1, Ge = !1 !== t.SANITIZE_DOM, We = t.SANITIZE_NAMED_PROPS || !1, qe = !1 !== t.KEEP_CONTENT, Ye = t.IN_PLACE || !1, we = t.ALLOWED_URI_REGEXP || we, rt = t.NAMESPACE || nt, Le = t.CUSTOM_ELEMENT_HANDLING || {}, t.CUSTOM_ELEMENT_HANDLING && ut(t.CUSTOM_ELEMENT_HANDLING.tagNameCheck) && (Le.tagNameCheck = t.CUSTOM_ELEMENT_HANDLING.tagNameCheck), t.CUSTOM_ELEMENT_HANDLING && ut(t.CUSTOM_ELEMENT_HANDLING.attributeNameCheck) && (Le.attributeNameCheck = t.CUSTOM_ELEMENT_HANDLING.attributeNameCheck), t.CUSTOM_ELEMENT_HANDLING && "boolean" == typeof t.CUSTOM_ELEMENT_HANDLING.allowCustomizedBuiltInElements && (Le.allowCustomizedBuiltInElements = t.CUSTOM_ELEMENT_HANDLING.allowCustomizedBuiltInElements), Fe && (Re = !1), Be && (Pe = !0), $e && (_e = L({}, r(H)), ke = [], !0 === $e.html && (L(_e, O), L(ke, z)), !0 === $e.svg && (L(_e, R), L(ke, P), L(ke, j)), !0 === $e.svgFilters && (L(_e, C), L(ke, P), L(ke, j)), !0 === $e.mathMl && (L(_e, F), L(ke, B), L(ke, j))), t.ADD_TAGS && (_e === Se && (_e = D(_e)), L(_e, t.ADD_TAGS, he)), t.ADD_ATTR && (ke === xe && (ke = D(ke)), L(ke, t.ADD_ATTR, he)), t.ADD_URI_SAFE_ATTR && L(Je, t.ADD_URI_SAFE_ATTR, he), t.FORBID_CONTENTS && (Ke === Ve && (Ke = D(Ke)), L(Ke, t.FORBID_CONTENTS, he)), qe && (_e["#text"] = !0), Ue && L(_e, ["html", "head", "body"]), _e.table && (L(_e, ["tbody"]), delete De.tbody), u && u(t), ct = t)
             },
             mt = L({}, ["mi", "mo", "mn", "ms", "mtext"]),
-            dt = L({}, ["foreignobject", "desc", "title", "annotation-xml"]),
-            pt = L({}, ["title", "style", "font", "a", "script"]),
+            pt = L({}, ["foreignobject", "desc", "title", "annotation-xml"]),
+            dt = L({}, ["title", "style", "font", "a", "script"]),
             gt = L({}, R);
           L(gt, C), L(gt, I);
           var ht = L({}, F);
@@ -370,13 +370,13 @@ _global.SENTRY_RELEASE = {
               return "object" === e(s) ? t instanceof s : t && "object" === e(t) && "number" == typeof t.nodeType && "string" == typeof t.nodeName
             },
             Et = function(e, t, n) {
-              pe[e] && y(pe[e], (function(e) {
+              de[e] && y(de[e], (function(e) {
                 e.call(o, t, n, ct)
               }))
             },
             At = function(e) {
               var t, n;
-              if (Et("beforeSanitizeElements", e, null), (n = e) instanceof g && ("string" != typeof n.nodeName || "string" != typeof n.textContent || "function" != typeof n.removeChild || !(n.attributes instanceof p) || "function" != typeof n.removeAttribute || "function" != typeof n.setAttribute || "string" != typeof n.namespaceURI || "function" != typeof n.insertBefore || "function" != typeof n.hasChildNodes)) return yt(e), !0;
+              if (Et("beforeSanitizeElements", e, null), (n = e) instanceof g && ("string" != typeof n.nodeName || "string" != typeof n.textContent || "function" != typeof n.removeChild || !(n.attributes instanceof d) || "function" != typeof n.removeAttribute || "function" != typeof n.setAttribute || "string" != typeof n.namespaceURI || "function" != typeof n.insertBefore || "function" != typeof n.hasChildNodes)) return yt(e), !0;
               if (S(/[\u0080-\uFFFF]/, e.nodeName)) return yt(e), !0;
               var r = he(e.nodeName);
               if (Et("uponSanitizeElement", e, {
@@ -405,7 +405,7 @@ _global.SENTRY_RELEASE = {
                 });
                 var n = T(e.tagName),
                   r = T(t.tagName);
-                return !!at[e.namespaceURI] && (e.namespaceURI === tt ? t.namespaceURI === nt ? "svg" === n : t.namespaceURI === et ? "svg" === n && ("annotation-xml" === r || mt[r]) : Boolean(gt[n]) : e.namespaceURI === et ? t.namespaceURI === nt ? "math" === n : t.namespaceURI === tt ? "math" === n && dt[r] : Boolean(ht[n]) : e.namespaceURI === nt ? !(t.namespaceURI === tt && !dt[r]) && !(t.namespaceURI === et && !mt[r]) && !ht[n] && (pt[n] || !gt[n]) : !("application/xhtml+xml" !== ge || !at[e.namespaceURI]))
+                return !!at[e.namespaceURI] && (e.namespaceURI === tt ? t.namespaceURI === nt ? "svg" === n : t.namespaceURI === et ? "svg" === n && ("annotation-xml" === r || mt[r]) : Boolean(gt[n]) : e.namespaceURI === et ? t.namespaceURI === nt ? "math" === n : t.namespaceURI === tt ? "math" === n && pt[r] : Boolean(ht[n]) : e.namespaceURI === nt ? !(t.namespaceURI === tt && !pt[r]) && !(t.namespaceURI === et && !mt[r]) && !ht[n] && (dt[n] || !gt[n]) : !("application/xhtml+xml" !== ge || !at[e.namespaceURI]))
               }(e) ? (yt(e), !0) : "noscript" !== r && "noembed" !== r && "noframes" !== r || !S(/<\/no(script|embed|frames)/i, e.innerHTML) ? (Fe && 3 === e.nodeType && (t = e.textContent, t = A(t, ye, " "), t = A(t, be, " "), t = A(t, ve, " "), e.textContent !== t && (v(o.removed, {
                 element: e.cloneNode()
               }), e.textContent = t)), Et("afterSanitizeElements", e, null), !1) : (yt(e), !0)
@@ -484,8 +484,8 @@ _global.SENTRY_RELEASE = {
             }
             if (He || ft(m), o.removed = [], "string" == typeof t && (Ye = !1), Ye) {
               if (t.nodeName) {
-                var d = he(t.nodeName);
-                if (!_e[d] || De[d]) throw k("root node is forbidden and cannot be sanitized in-place")
+                var p = he(t.nodeName);
+                if (!_e[p] || De[p]) throw k("root node is forbidden and cannot be sanitized in-place")
               }
             } else if (t instanceof s) 1 === (i = (r = vt("\x3c!----\x3e")).ownerDocument.importNode(t, !0)).nodeType && "BODY" === i.nodeName || "HTML" === i.nodeName ? r = i : r.appendChild(i);
             else {
@@ -493,7 +493,7 @@ _global.SENTRY_RELEASE = {
               if (!(r = vt(t))) return Pe ? null : je ? ie : ""
             }
             r && ze && yt(r.firstChild);
-            for (var p = Tt(Ye ? t : r); c = p.nextNode();) 3 === c.nodeType && c === u || At(c) || (c.content instanceof l && kt(c.content), St(c), u = c);
+            for (var d = Tt(Ye ? t : r); c = d.nextNode();) 3 === c.nodeType && c === u || At(c) || (c.content instanceof l && kt(c.content), St(c), u = c);
             if (u = null, Ye) return t;
             if (Pe) {
               if (Be)
@@ -513,13 +513,13 @@ _global.SENTRY_RELEASE = {
               o = he(t);
             return wt(r, o, n)
           }, o.addHook = function(e, t) {
-            "function" == typeof t && (pe[e] = pe[e] || [], v(pe[e], t))
+            "function" == typeof t && (de[e] = de[e] || [], v(de[e], t))
           }, o.removeHook = function(e) {
-            if (pe[e]) return b(pe[e])
+            if (de[e]) return b(de[e])
           }, o.removeHooks = function(e) {
-            pe[e] && (pe[e] = [])
+            de[e] && (de[e] = [])
           }, o.removeAllHooks = function() {
-            pe = {}
+            de = {}
           }, o
         }()
       }()

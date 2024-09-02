@@ -1,8 +1,8 @@
 ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      d = (new Error).stack;
-    d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "687beb4e-8f3e-42a3-ad44-83d29b900c9b", e._sentryDebugIdIdentifier = "sentry-dbid-687beb4e-8f3e-42a3-ad44-83d29b900c9b")
+      a = (new Error).stack;
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "687beb4e-8f3e-42a3-ad44-83d29b900c9b", e._sentryDebugIdIdentifier = "sentry-dbid-687beb4e-8f3e-42a3-ad44-83d29b900c9b")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -16,31 +16,31 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
   [4216], {
-    74216: (e, d, a) => {
-      a.r(d), a.d(d, {
+    74216: (e, a, d) => {
+      d.r(a), d.d(a, {
         componentsForTinaParser: () => w
       });
-      var o = a(20009),
-        n = a(64064),
-        r = a.n(n),
-        l = a(74459),
-        s = a.n(l),
-        t = a(26527),
-        f = a.n(t),
-        b = a(31879),
-        i = a.n(b),
-        c = a(66713),
-        u = a.n(c),
-        _ = a(53473);
+      var o = d(20009),
+        n = d(64064),
+        r = d.n(n),
+        l = d(74459),
+        s = d.n(l),
+        t = d(26527),
+        f = d.n(t),
+        i = d(31879),
+        b = d.n(i),
+        c = d(66713),
+        u = d.n(c),
+        _ = d(53473);
       const w = {
         ...o,
-        ...a(26750),
+        ...d(26750),
         ...{
           ClrCard: _.y3,
           ClrCollapsedCard: _.h7,
           Gif: r(),
           GroupOfItems: s(),
-          RockstarVideoPlayer: i(),
+          RockstarVideoPlayer: b(),
           SwiperCarousel: f(),
           UGCJobSpotlight: u()
         }

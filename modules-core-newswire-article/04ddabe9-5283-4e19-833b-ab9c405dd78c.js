@@ -75,8 +75,8 @@ _global.SENTRY_RELEASE = {
         g = a(41074),
         p = a(28606),
         h = a(87839),
-        b = a(2024),
-        w = a(95625),
+        w = a(2024),
+        b = a(95625),
         N = a(61841),
         _ = a(43108),
         x = a(75930),
@@ -151,7 +151,7 @@ _global.SENTRY_RELEASE = {
             ImageWithBadge: e => (0, t.jsx)(u.A, {
               ...e
             }),
-            MultiSourceImage: e => (0, t.jsx)(b.A, {
+            MultiSourceImage: e => (0, t.jsx)(w.A, {
               ...e
             }),
             NewswireFull: e => (0, t.jsx)(V.NewswireFull, {
@@ -166,7 +166,7 @@ _global.SENTRY_RELEASE = {
             Podium: e => (0, t.jsx)(V.Podium, {
               ...e
             }),
-            ResponsiveGridBox: e => (0, t.jsx)(w.A, {
+            ResponsiveGridBox: e => (0, t.jsx)(b.A, {
               ...e
             }),
             ResponsiveGridItem: e => (0, t.jsx)(N.A, {

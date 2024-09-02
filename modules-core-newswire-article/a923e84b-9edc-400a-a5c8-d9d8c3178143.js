@@ -91,7 +91,7 @@ _global.SENTRY_RELEASE = {
         m = a(31879),
         g = a.n(m),
         u = a(74401);
-      const b = e => {
+      const f = e => {
           let {
             impressionTracking: s,
             gtm: a = {},
@@ -103,7 +103,7 @@ _global.SENTRY_RELEASE = {
             children: t
           }) : t
         },
-        f = e => {
+        b = e => {
           let {
             to: s,
             children: a
@@ -146,10 +146,10 @@ _global.SENTRY_RELEASE = {
             style: a,
             className: (0, u.classList)("rockstargames-modules-core-newswire-articlefbb6b44c6d90c22144e4fbed29bc540b", r),
             id: l,
-            children: s.map((e => (0, d.jsx)(b, {
+            children: s.map((e => (0, d.jsx)(f, {
               impressionTracking: e?.impressionTracking,
               gtm: e?.gtm,
-              children: (0, d.jsx)(f, {
+              children: (0, d.jsx)(b, {
                 to: e?.to,
                 children: (0, d.jsxs)("div", {
                   className: (0, u.classList)("rockstargames-modules-core-newswire-articlec6ef137c3cc0ba12d735aedb6db0cae3", e.className),

@@ -312,7 +312,8 @@
   display: flex;
   flex-direction: column;
   opacity: 1;
-  padding: var(--padding-sm)
+  padding: var(--padding-sm);
+  text-align: left
 }
 
 .rockstargames-sites-gta-gen9f721d7192d3e29e64567a729fd8d5985[data-show-background=true] {
@@ -11042,4 +11043,4 @@ html[data-disallow-body-scroll] .rockstargames-sites-gta-gen9d43b6cdcbcc07082eda
   z-index: 0
 }
 
-/*# sourceMappingURL=58a263938769bf38d2d1f978e34bb315.css.map*/
+/*# sourceMappingURL=0a0736a92c1753297354380d87ab7997.css.map*/

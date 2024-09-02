@@ -119,17 +119,17 @@ _global.SENTRY_RELEASE = {
             if (m <= 0 || isNaN(m)) console.warn("Can not process element without height. Make sure the element is displayed and has a static height.");
             else if (p <= 0 || isNaN(p)) console.warn("Can not process element without width. Make sure the element is displayed and has a static width.");
             else {
-              var b = (0, f.default)();
-              this.pid = b;
-              var _ = function() {
-                  return b !== e.pid
+              var _ = (0, f.default)();
+              this.pid = _;
+              var g = function() {
+                  return _ !== e.pid
                 },
-                g = "multi" === o ? function() {
+                v = "multi" === o ? function() {
                   return y(c, m)
                 } : function() {
                   return h(c, p)
                 },
-                v = "multi" === o ? function() {
+                b = "multi" === o ? function() {
                   return h(c, p)
                 } : function() {
                   return y(c, m)
@@ -143,31 +143,31 @@ _global.SENTRY_RELEASE = {
                 return (0, s.default)((function() {
                   return O <= T
                 }), (function(t) {
-                  if (_()) return t(!0);
+                  if (g()) return t(!0);
                   w = parseInt((O + T) / 2, 10), e.setState({
                     fontSize: w
                   }, (function() {
-                    return _() ? t(!0) : (g() ? O = w + 1 : T = w - 1, t())
+                    return g() ? t(!0) : (v() ? O = w + 1 : T = w - 1, t())
                   }))
                 }), t)
               }, function(t) {
-                return "single" === o && i || v() ? t() : (O = n, T = w, (0, s.default)((function() {
+                return "single" === o && i || b() ? t() : (O = n, T = w, (0, s.default)((function() {
                   return O < T
                 }), (function(t) {
-                  if (_()) return t(!0);
+                  if (g()) return t(!0);
                   w = parseInt((O + T) / 2, 10), e.setState({
                     fontSize: w
                   }, (function() {
-                    return b !== e.pid ? t(!0) : (v() ? O = w + 1 : T = w - 1, t())
+                    return _ !== e.pid ? t(!0) : (b() ? O = w + 1 : T = w - 1, t())
                   }))
                 }), t))
               }, function(t) {
-                if (w = Math.min(O, T), w = Math.max(w, n), w = Math.min(w, r), w = Math.max(w, 0), _()) return t(!0);
+                if (w = Math.min(O, T), w = Math.max(w, n), w = Math.min(w, r), w = Math.max(w, 0), g()) return t(!0);
                 e.setState({
                   fontSize: w
                 }, t)
               }], (function(t) {
-                t || _() || e.setState({
+                t || g() || e.setState({
                   ready: !0
                 }, (function() {
                   return a(w)
