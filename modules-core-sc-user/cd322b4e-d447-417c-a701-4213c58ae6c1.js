@@ -1,8 +1,8 @@
 ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      d = (new Error).stack;
-    d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "cd322b4e-d447-417c-a701-4213c58ae6c1", e._sentryDebugIdIdentifier = "sentry-dbid-cd322b4e-d447-417c-a701-4213c58ae6c1")
+      a = (new Error).stack;
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "cd322b4e-d447-417c-a701-4213c58ae6c1", e._sentryDebugIdIdentifier = "sentry-dbid-cd322b4e-d447-417c-a701-4213c58ae6c1")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -16,28 +16,28 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_sc_user = self.webpackChunk_rockstargames_modules_core_sc_user || []).push([
   [847], {
-    847: (e, d, a) => {
-      a.r(d), a.d(d, {
+    847: (e, a, d) => {
+      d.r(a), d.d(a, {
         default: () => o
       });
-      var s = a(756);
+      var s = d(756);
       const o = {
         RockstarGames_Users_Model_Entity_User_o: {
           fields: {
             logged_in: {
-              read(e, d) {
+              read(e, a) {
                 let {
-                  readField: a
-                } = d;
-                return Number.isInteger(a("id"))
+                  readField: d
+                } = a;
+                return Number.isInteger(d("id"))
               }
             },
             agegate_pass: {
-              read(e, d) {
+              read(e, a) {
                 let {
-                  readField: a
-                } = d;
-                const o = void 0 !== a("isAMinor") && !a("isAMinor"),
+                  readField: d
+                } = a;
+                const o = void 0 !== d("isAMinor") && !d("isAMinor"),
                   n = (0, s.lsSettingsReactive)()?.agegatePass;
                 return o ?? n
               }

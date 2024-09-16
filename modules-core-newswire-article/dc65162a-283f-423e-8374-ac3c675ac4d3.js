@@ -129,12 +129,12 @@ _global.SENTRY_RELEASE = {
                 } : function() {
                   return h(c, p)
                 },
-                b = "multi" === o ? function() {
+                w = "multi" === o ? function() {
                   return h(c, p)
                 } : function() {
                   return y(c, m)
                 },
-                w = void 0,
+                b = void 0,
                 O = n,
                 T = r;
               this.setState({
@@ -144,33 +144,33 @@ _global.SENTRY_RELEASE = {
                   return O <= T
                 }), (function(t) {
                   if (g()) return t(!0);
-                  w = parseInt((O + T) / 2, 10), e.setState({
-                    fontSize: w
+                  b = parseInt((O + T) / 2, 10), e.setState({
+                    fontSize: b
                   }, (function() {
-                    return g() ? t(!0) : (v() ? O = w + 1 : T = w - 1, t())
+                    return g() ? t(!0) : (v() ? O = b + 1 : T = b - 1, t())
                   }))
                 }), t)
               }, function(t) {
-                return "single" === o && i || b() ? t() : (O = n, T = w, (0, s.default)((function() {
+                return "single" === o && i || w() ? t() : (O = n, T = b, (0, s.default)((function() {
                   return O < T
                 }), (function(t) {
                   if (g()) return t(!0);
-                  w = parseInt((O + T) / 2, 10), e.setState({
-                    fontSize: w
+                  b = parseInt((O + T) / 2, 10), e.setState({
+                    fontSize: b
                   }, (function() {
-                    return _ !== e.pid ? t(!0) : (b() ? O = w + 1 : T = w - 1, t())
+                    return _ !== e.pid ? t(!0) : (w() ? O = b + 1 : T = b - 1, t())
                   }))
                 }), t))
               }, function(t) {
-                if (w = Math.min(O, T), w = Math.max(w, n), w = Math.min(w, r), w = Math.max(w, 0), g()) return t(!0);
+                if (b = Math.min(O, T), b = Math.max(b, n), b = Math.min(b, r), b = Math.max(b, 0), g()) return t(!0);
                 e.setState({
-                  fontSize: w
+                  fontSize: b
                 }, t)
               }], (function(t) {
                 t || g() || e.setState({
                   ready: !0
                 }, (function() {
-                  return a(w)
+                  return a(b)
                 }))
               }))
             }

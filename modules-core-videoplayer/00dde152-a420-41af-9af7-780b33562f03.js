@@ -1,8 +1,8 @@
 ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      d = (new Error).stack;
-    d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "00dde152-a420-41af-9af7-780b33562f03", e._sentryDebugIdIdentifier = "sentry-dbid-00dde152-a420-41af-9af7-780b33562f03")
+      n = (new Error).stack;
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "00dde152-a420-41af-9af7-780b33562f03", e._sentryDebugIdIdentifier = "sentry-dbid-00dde152-a420-41af-9af7-780b33562f03")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -16,40 +16,40 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_videoplayer = self.webpackChunk_rockstargames_modules_core_videoplayer || []).push([
   [658, 277], {
-    3277: (e, d, n) => {
-      n.r(d), n.d(d, {
-        useGSAP: () => c
+    3277: (e, n, d) => {
+      d.r(n), d.d(n, {
+        useGSAP: () => u
       });
-      var t = n(1403),
-        a = n(6040),
-        o = n.n(a);
+      var t = d(1403),
+        o = d(6040),
+        a = d.n(o);
       let f = "undefined" != typeof window ? t.useLayoutEffect : t.useEffect,
         r = e => e && !Array.isArray(e) && "object" == typeof e,
         s = [],
         l = {},
-        i = o();
-      const c = function(e) {
-        let d = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : s,
-          n = l;
-        r(e) ? (n = e, e = null, d = "dependencies" in n ? n.dependencies : s) : r(d) && (n = d, d = "dependencies" in n ? n.dependencies : s);
+        i = a();
+      const u = function(e) {
+        let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : s,
+          d = l;
+        r(e) ? (d = e, e = null, n = "dependencies" in d ? d.dependencies : s) : r(n) && (d = n, n = "dependencies" in d ? d.dependencies : s);
         let {
-          scope: a,
-          revertOnUpdate: o
-        } = n, [c, u] = (0, t.useState)(!1);
+          scope: o,
+          revertOnUpdate: a
+        } = d, [u, c] = (0, t.useState)(!1);
         e && "function" != typeof e && console.warn("First parameter must be a function or config object");
-        const b = i.context((() => {}), a),
-          y = () => b.revert(),
-          p = d && d.length && !o;
+        const y = i.context((() => {}), o),
+          p = () => y.revert(),
+          g = n && n.length && !a;
         return f((() => {
-          if (e && b.add(e, a), !p || !c) return y
-        }), d), p && f((() => (u(!0), y)), s), {
-          context: b,
-          contextSafe: e => b.add(null, e)
+          if (e && y.add(e, o), !g || !u) return p
+        }), n), g && f((() => (c(!0), p)), s), {
+          context: y,
+          contextSafe: e => y.add(null, e)
         }
       };
-      c.register = e => {
+      u.register = e => {
         i = e
-      }, c.headless = !0
+      }, u.headless = !0
     }
   }
 ]);

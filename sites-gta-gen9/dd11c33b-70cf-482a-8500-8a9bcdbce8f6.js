@@ -27,8 +27,8 @@ _global.SENTRY_RELEASE = {
         }(this, e);
         var o = r.y0,
           i = r.y1,
-          u = r.x1,
-          a = r.x0,
+          a = r.x1,
+          u = r.x0,
           l = "%" === i.unit && "%" === o.unit,
           s = o.value,
           c = i.value;
@@ -36,12 +36,12 @@ _global.SENTRY_RELEASE = {
           var f = t.height / 100;
           s = o.value * f, c = i.value * f
         }
-        var d = "%" === u.unit && "%" === a.unit,
-          p = a.value,
-          h = u.value;
+        var d = "%" === a.unit && "%" === u.unit,
+          p = u.value,
+          h = a.value;
         if (d) {
           var y = t.width / 100;
-          p = a.value * y, h = u.value * y
+          p = u.value * y, h = a.value * y
         }
         var b = Math.abs(s) + Math.abs(c);
         this.totalDistY = n.height + t.height + b;
@@ -62,8 +62,8 @@ _global.SENTRY_RELEASE = {
       var n = r(71775),
         o = r(67727),
         i = r(65972),
-        u = l(r(43233)),
-        a = l(r(84542));
+        a = l(r(43233)),
+        u = l(r(84542));
 
       function l(e) {
         return e && e.__esModule ? e : {
@@ -124,7 +124,7 @@ _global.SENTRY_RELEASE = {
         }, {
           key: "setCachedAttributes",
           value: function(e, t) {
-            return this.rect = new a.default(this.elOuter, e, t), this.bounds = new u.default(this.rect, this.offsets, e), this
+            return this.rect = new u.default(this.elOuter, e, t), this.bounds = new a.default(this.rect, this.offsets, e), this
           }
         }, {
           key: "_updatePositionHorizontal",
@@ -148,8 +148,8 @@ _global.SENTRY_RELEASE = {
       var n = r(71775),
         o = r(67727),
         i = r(23745),
-        u = r(44093),
-        a = r(48350),
+        a = r(44093),
+        u = r(48350),
         l = r(65972);
 
       function s(e, t) {
@@ -199,7 +199,7 @@ _global.SENTRY_RELEASE = {
           h = c || window,
           y = p ? h.scrollLeft : window.pageXOffset,
           b = p ? h.scrollTop : window.pageYOffset,
-          v = new u.Scroll(y, b),
+          v = new a.Scroll(y, b),
           m = new i.View({
             width: 0,
             height: 0,
@@ -257,7 +257,7 @@ _global.SENTRY_RELEASE = {
         w(h), M(), this.getElements = function() {
           return d
         }, this.createElement = function(e) {
-          var t, n = new a.Element(f(f({}, e), {}, {
+          var t, n = new u.Element(f(f({}, e), {}, {
             scrollAxis: r
           }));
           return n.setCachedAttributes(m, v), d = d ? [].concat(function(e) {
@@ -415,13 +415,13 @@ _global.SENTRY_RELEASE = {
             o = Object.defineProperty && Object.getOwnPropertyDescriptor;
           for (var i in e)
             if (Object.prototype.hasOwnProperty.call(e, i)) {
-              var u = o ? Object.getOwnPropertyDescriptor(e, i) : null;
-              u && (u.get || u.set) ? Object.defineProperty(r, i, u) : r[i] = e[i]
+              var a = o ? Object.getOwnPropertyDescriptor(e, i) : null;
+              a && (a.get || a.set) ? Object.defineProperty(r, i, a) : r[i] = e[i]
             } return r.default = e, t && t.set(e, r), r
         }(r(71403)),
         i = l(r(37977)),
-        u = l(r(7707)),
-        a = l(r(57320));
+        a = l(r(7707)),
+        u = l(r(57320));
 
       function l(e) {
         return e && e.__esModule ? e : {
@@ -480,7 +480,7 @@ _global.SENTRY_RELEASE = {
             }
           }), t && f(e, t)
         }(s, e);
-        var t, r, i, a, l = (i = s, a = function() {
+        var t, r, i, u, l = (i = s, u = function() {
           if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
           if (Reflect.construct.sham) return !1;
           if ("function" == typeof Proxy) return !0;
@@ -491,7 +491,7 @@ _global.SENTRY_RELEASE = {
           }
         }(), function() {
           var e, t = p(i);
-          if (a) {
+          if (u) {
             var r = p(this).constructor;
             e = Reflect.construct(t, arguments, r)
           } else e = t.apply(this, arguments);
@@ -515,7 +515,7 @@ _global.SENTRY_RELEASE = {
         return t = s, (r = [{
           key: "componentDidMount",
           value: function() {
-            var e = this.controller instanceof u.default;
+            var e = this.controller instanceof a.default;
             if (!this.controller && !e) throw new Error("Must wrap your application's <Parallax /> components in a <ParallaxProvider />.");
             this.element = this.controller.createElement(this._getElementOptions())
           }
@@ -557,17 +557,17 @@ _global.SENTRY_RELEASE = {
               r = e.className,
               n = e.tagOuter,
               i = e.tagInner,
-              u = e.styleOuter,
-              a = e.styleInner,
+              a = e.styleOuter,
+              u = e.styleInner,
               l = "parallax-outer" + (r ? " ".concat(r) : "");
             return o.default.createElement(n, {
               className: l,
               ref: this.mapRefOuter,
-              style: u
+              style: a
             }, o.default.createElement(i, {
               className: "parallax-inner",
               ref: this.mapRefInner,
-              style: a
+              style: u
             }, t))
           }
         }]) && c(t.prototype, r), s
@@ -590,7 +590,7 @@ _global.SENTRY_RELEASE = {
         x: i.default.arrayOf(i.default.oneOfType([i.default.string, i.default.number])),
         y: i.default.arrayOf(i.default.oneOfType([i.default.string, i.default.number]))
       });
-      var b = (0, a.default)(y);
+      var b = (0, u.default)(y);
       t.default = b
     },
     33569: (e, t, r) => {
@@ -598,24 +598,24 @@ _global.SENTRY_RELEASE = {
       Object.defineProperty(t, "__esModule", {
         value: !0
       }), t.default = void 0;
-      var n = u(r(71403)),
-        o = u(r(37977)),
-        i = u(r(91007));
+      var n = a(r(71403)),
+        o = a(r(37977)),
+        i = a(r(91007));
 
-      function u(e) {
+      function a(e) {
         return e && e.__esModule ? e : {
           default: e
         }
       }
 
-      function a() {
-        return a = Object.assign || function(e) {
+      function u() {
+        return u = Object.assign || function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var r = arguments[t];
             for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n])
           }
           return e
-        }, a.apply(this, arguments)
+        }, u.apply(this, arguments)
       }
 
       function l(e, t) {
@@ -666,16 +666,16 @@ _global.SENTRY_RELEASE = {
           var t = e.children,
             r = e.className,
             o = e.layers,
-            u = e.style,
+            a = e.style,
             l = e.disabled;
           return n.default.createElement("div", {
-            style: s(s({}, f), u),
+            style: s(s({}, f), a),
             className: "parallax-banner" + (r ? " ".concat(r) : "")
           }, o.map((function(e, t) {
             var r = e.amount,
               o = e.children,
-              u = e.expanded,
-              c = void 0 === u || u,
+              a = e.expanded,
+              c = void 0 === a || a,
               f = e.image,
               p = e.props,
               h = void 0 === p ? {} : p,
@@ -698,7 +698,7 @@ _global.SENTRY_RELEASE = {
               styleInner: d,
               styleOuter: d,
               disabled: l
-            }, n.default.createElement("div", a({
+            }, n.default.createElement("div", u({
               className: v,
               style: s(s(s(s({}, g), d), m), y)
             }, h), o))
@@ -746,13 +746,13 @@ _global.SENTRY_RELEASE = {
             o = Object.defineProperty && Object.getOwnPropertyDescriptor;
           for (var i in e)
             if (Object.prototype.hasOwnProperty.call(e, i)) {
-              var u = o ? Object.getOwnPropertyDescriptor(e, i) : null;
-              u && (u.get || u.set) ? Object.defineProperty(r, i, u) : r[i] = e[i]
+              var a = o ? Object.getOwnPropertyDescriptor(e, i) : null;
+              a && (a.get || a.set) ? Object.defineProperty(r, i, a) : r[i] = e[i]
             } return r.default = e, t && t.set(e, r), r
         }(r(71403)),
         i = c(r(37977)),
-        u = c(r(52949)),
-        a = c(r(7707)),
+        a = c(r(52949)),
+        u = c(r(7707)),
         l = r(65972),
         s = c(r(67094));
 
@@ -838,7 +838,7 @@ _global.SENTRY_RELEASE = {
           }(this, c), (t = s.call(this, e)).controller = (r = {
             scrollAxis: e.scrollAxis,
             scrollContainer: e.scrollContainer
-          }, "undefined" == typeof window ? null : a.default.init(r)), t
+          }, "undefined" == typeof window ? null : u.default.init(r)), t
         }
         return t = c, (r = [{
           key: "componentDidUpdate",
@@ -854,7 +854,7 @@ _global.SENTRY_RELEASE = {
           key: "render",
           value: function() {
             var e = this.props.children;
-            return o.default.createElement(u.default.Provider, {
+            return o.default.createElement(a.default.Provider, {
               value: this.controller
             }, e)
           }
@@ -910,14 +910,14 @@ _global.SENTRY_RELEASE = {
             o = Object.defineProperty && Object.getOwnPropertyDescriptor;
           for (var i in e)
             if (Object.prototype.hasOwnProperty.call(e, i)) {
-              var u = o ? Object.getOwnPropertyDescriptor(e, i) : null;
-              u && (u.get || u.set) ? Object.defineProperty(r, i, u) : r[i] = e[i]
+              var a = o ? Object.getOwnPropertyDescriptor(e, i) : null;
+              a && (a.get || a.set) ? Object.defineProperty(r, i, a) : r[i] = e[i]
             } return r.default = e, t && t.set(e, r), r
         }(r(71403)),
-        i = a(r(37977)),
-        u = a(r(52949));
+        i = u(r(37977)),
+        a = u(r(52949));
 
-      function a(e) {
+      function u(e) {
         return e && e.__esModule ? e : {
           default: e
         }
@@ -960,7 +960,7 @@ _global.SENTRY_RELEASE = {
         }, d(e)
       }
       t.default = function(e) {
-        var t, r, a, l = function(t) {
+        var t, r, u, l = function(t) {
           ! function(e, t) {
             if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function");
             e.prototype = Object.create(t && t.prototype, {
@@ -971,7 +971,7 @@ _global.SENTRY_RELEASE = {
               }
             }), t && f(e, t)
           }(h, t);
-          var r, i, a, l, p = (a = h, l = function() {
+          var r, i, u, l, p = (u = h, l = function() {
             if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
             if (Reflect.construct.sham) return !1;
             if ("function" == typeof Proxy) return !0;
@@ -981,7 +981,7 @@ _global.SENTRY_RELEASE = {
               return !1
             }
           }(), function() {
-            var e, t = d(a);
+            var e, t = d(u);
             if (l) {
               var r = d(this).constructor;
               e = Reflect.construct(t, arguments, r)
@@ -1003,7 +1003,7 @@ _global.SENTRY_RELEASE = {
             key: "render",
             value: function() {
               var t = this;
-              return o.default.createElement(u.default.Consumer, null, (function(r) {
+              return o.default.createElement(a.default.Consumer, null, (function(r) {
                 return o.default.createElement(e, s({
                   parallaxController: r
                 }, t.props))
@@ -1011,14 +1011,14 @@ _global.SENTRY_RELEASE = {
             }
           }]) && c(r.prototype, i), h
         }(o.Component);
-        return t = l, r = "propTypes", a = {
+        return t = l, r = "propTypes", u = {
           parallaxController: i.default.object
         }, r in t ? Object.defineProperty(t, r, {
-          value: a,
+          value: u,
           enumerable: !0,
           configurable: !0,
           writable: !0
-        }) : t[r] = a, l
+        }) : t[r] = u, l
       }
     },
     65972: (e, t) => {
@@ -1045,12 +1045,12 @@ _global.SENTRY_RELEASE = {
       }), t.setParallaxStyles = function(e, t, r) {
         var o = (0, n.getParallaxOffsets)(t, r),
           i = o.x,
-          u = i.value,
-          a = i.unit,
+          a = i.value,
+          u = i.unit,
           l = o.y,
           s = l.value,
           c = l.unit;
-        e.style.transform = "translate3d(".concat(u).concat(a, ", ").concat(s).concat(c, ", 0)")
+        e.style.transform = "translate3d(".concat(a).concat(u, ", ").concat(s).concat(c, ", 0)")
       }, t.resetStyles = function(e) {
         e.elInner.style.transform = ""
       };
@@ -1065,16 +1065,16 @@ _global.SENTRY_RELEASE = {
           r = e.y1,
           o = e.x1,
           i = e.x0,
-          u = (0, n.parseValueAndUnit)(t),
-          a = (0, n.parseValueAndUnit)(r),
+          a = (0, n.parseValueAndUnit)(t),
+          u = (0, n.parseValueAndUnit)(r),
           l = (0, n.parseValueAndUnit)(i),
           s = (0, n.parseValueAndUnit)(o);
-        if (l.unit !== s.unit || u.unit !== a.unit) throw new Error("Must provide matching units for the min and max offset values of each axis.");
+        if (l.unit !== s.unit || a.unit !== u.unit) throw new Error("Must provide matching units for the min and max offset values of each axis.");
         return {
           xUnit: l.unit || "%",
-          yUnit: u.unit || "%",
-          y0: u,
-          y1: a,
+          yUnit: a.unit || "%",
+          y0: a,
+          y1: u,
           x0: l,
           x1: s
         }
@@ -1089,17 +1089,17 @@ _global.SENTRY_RELEASE = {
         var r = e.y0,
           o = e.y1,
           i = e.x0,
-          u = e.x1,
-          a = o.unit,
-          l = u.unit;
+          a = e.x1,
+          u = o.unit,
+          l = a.unit;
         return {
           x: {
-            value: (0, n.scaleBetween)(t, i.value, u.value, 0, 100),
+            value: (0, n.scaleBetween)(t, i.value, a.value, 0, 100),
             unit: l
           },
           y: {
             value: (0, n.scaleBetween)(t, r.value, o.value, 0, 100),
-            unit: a
+            unit: u
           }
         }
       };
@@ -1132,12 +1132,12 @@ _global.SENTRY_RELEASE = {
       }), Object.defineProperty(t, "getParallaxOffsets", {
         enumerable: !0,
         get: function() {
-          return u.getParallaxOffsets
+          return a.getParallaxOffsets
         }
       }), Object.defineProperty(t, "isElementInView", {
         enumerable: !0,
         get: function() {
-          return a.isElementInView
+          return u.isElementInView
         }
       }), Object.defineProperty(t, "getOffsets", {
         enumerable: !0,
@@ -1148,8 +1148,8 @@ _global.SENTRY_RELEASE = {
       var n = s(r(52949)),
         o = r(32079),
         i = r(92505),
-        u = r(51006),
-        a = r(40649),
+        a = r(51006),
+        u = r(40649),
         l = s(r(60943));
 
       function s(e) {
@@ -1196,16 +1196,16 @@ _global.SENTRY_RELEASE = {
       }), Object.defineProperty(t, "y", {
         enumerable: !0,
         get: function() {
-          return u.default
+          return a.default
         }
       });
-      var n = a(r(91297)),
-        o = (a(r(57320)), a(r(91007))),
-        i = a(r(34686)),
-        u = a(r(33569));
-      a(r(52949));
+      var n = u(r(91297)),
+        o = (u(r(57320)), u(r(91007))),
+        i = u(r(34686)),
+        a = u(r(33569));
+      u(r(52949));
 
-      function a(e) {
+      function u(e) {
         return e && e.__esModule ? e : {
           default: e
         }
@@ -1242,15 +1242,15 @@ _global.SENTRY_RELEASE = {
       }), Object.defineProperty(t, "createId", {
         enumerable: !0,
         get: function() {
-          return u.createId
+          return a.createId
         }
       });
-      var n = a(r(25088)),
-        o = a(r(8793)),
-        i = a(r(53722)),
-        u = r(75070);
+      var n = u(r(25088)),
+        o = u(r(8793)),
+        i = u(r(53722)),
+        a = r(75070);
 
-      function a(e) {
+      function u(e) {
         return e && e.__esModule ? e : {
           default: e
         }
@@ -1318,22 +1318,22 @@ _global.SENTRY_RELEASE = {
           return "string" != typeof e || "" === e ? (console.error("The hook name must be a non-empty string."), !1) : /^__/.test(e) ? (console.error("The hook name cannot begin with `__`."), !1) : !!/^[a-zA-Z][a-zA-Z0-9_.-]*$/.test(e) || (console.error("The hook name can only contain numbers, letters, dashes, periods and underscores."), !1)
         },
         i = function(e, t) {
-          return function(r, i, u) {
-            let a = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 10;
+          return function(r, i, a) {
+            let u = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 10;
             const l = e[t];
             if (!o(r)) return;
             if (!n(i)) return;
-            if ("function" != typeof u) return void console.error("The hook callback must be a function.");
-            if ("number" != typeof a) return void console.error("If specified, the hook priority must be a number.");
+            if ("function" != typeof a) return void console.error("The hook callback must be a function.");
+            if ("number" != typeof u) return void console.error("If specified, the hook priority must be a number.");
             const s = {
-              callback: u,
-              priority: a,
+              callback: a,
+              priority: u,
               namespace: i
             };
             if (l[r]) {
               const e = l[r].handlers;
               let t;
-              for (t = e.length; t > 0 && !(a >= e[t - 1].priority); t--);
+              for (t = e.length; t > 0 && !(u >= e[t - 1].priority); t--);
               t === e.length ? e[t] = s : e.splice(t, 0, s), l.__current.forEach((e => {
                 e.name === r && e.currentIndex >= t && e.currentIndex++
               }))
@@ -1341,31 +1341,31 @@ _global.SENTRY_RELEASE = {
               handlers: [s],
               runs: 0
             };
-            "hookAdded" !== r && e.doAction("hookAdded", r, i, u, a)
-          }
-        },
-        u = function(e, t) {
-          let r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
-          return function(i, u) {
-            const a = e[t];
-            if (!o(i)) return;
-            if (!r && !n(u)) return;
-            if (!a[i]) return 0;
-            let l = 0;
-            if (r) l = a[i].handlers.length, a[i] = {
-              runs: a[i].runs,
-              handlers: []
-            };
-            else {
-              const e = a[i].handlers;
-              for (let t = e.length - 1; t >= 0; t--) e[t].namespace === u && (e.splice(t, 1), l++, a.__current.forEach((e => {
-                e.name === i && e.currentIndex >= t && e.currentIndex--
-              })))
-            }
-            return "hookRemoved" !== i && e.doAction("hookRemoved", i, u), l
+            "hookAdded" !== r && e.doAction("hookAdded", r, i, a, u)
           }
         },
         a = function(e, t) {
+          let r = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
+          return function(i, a) {
+            const u = e[t];
+            if (!o(i)) return;
+            if (!r && !n(a)) return;
+            if (!u[i]) return 0;
+            let l = 0;
+            if (r) l = u[i].handlers.length, u[i] = {
+              runs: u[i].runs,
+              handlers: []
+            };
+            else {
+              const e = u[i].handlers;
+              for (let t = e.length - 1; t >= 0; t--) e[t].namespace === a && (e.splice(t, 1), l++, u.__current.forEach((e => {
+                e.name === i && e.currentIndex >= t && e.currentIndex--
+              })))
+            }
+            return "hookRemoved" !== i && e.doAction("hookRemoved", i, a), l
+          }
+        },
+        u = function(e, t) {
           return function(r, n) {
             const o = e[t];
             return void 0 !== n ? r in o && o[r].handlers.some((e => e.namespace === n)) : r in o
@@ -1380,17 +1380,17 @@ _global.SENTRY_RELEASE = {
               runs: 0
             }), o[n].runs++;
             const i = o[n].handlers;
-            for (var u = arguments.length, a = new Array(u > 1 ? u - 1 : 0), l = 1; l < u; l++) a[l - 1] = arguments[l];
-            if (!i || !i.length) return r ? a[0] : void 0;
+            for (var a = arguments.length, u = new Array(a > 1 ? a - 1 : 0), l = 1; l < a; l++) u[l - 1] = arguments[l];
+            if (!i || !i.length) return r ? u[0] : void 0;
             const s = {
               name: n,
               currentIndex: 0
             };
             for (o.__current.push(s); s.currentIndex < i.length;) {
-              const e = i[s.currentIndex].callback.apply(null, a);
-              r && (a[0] = e), s.currentIndex++
+              const e = i[s.currentIndex].callback.apply(null, u);
+              r && (u[0] = e), s.currentIndex++
             }
-            return o.__current.pop(), r ? a[0] : void 0
+            return o.__current.pop(), r ? u[0] : void 0
           }
         },
         s = function(e, t) {
@@ -1414,7 +1414,7 @@ _global.SENTRY_RELEASE = {
         };
       class d {
         constructor() {
-          this.actions = Object.create(null), this.actions.__current = [], this.filters = Object.create(null), this.filters.__current = [], this.addAction = i(this, "actions"), this.addFilter = i(this, "filters"), this.removeAction = u(this, "actions"), this.removeFilter = u(this, "filters"), this.hasAction = a(this, "actions"), this.hasFilter = a(this, "filters"), this.removeAllActions = u(this, "actions", !0), this.removeAllFilters = u(this, "filters", !0), this.doAction = l(this, "actions"), this.applyFilters = l(this, "filters", !0), this.currentAction = s(this, "actions"), this.currentFilter = s(this, "filters"), this.doingAction = c(this, "actions"), this.doingFilter = c(this, "filters"), this.didAction = f(this, "actions"), this.didFilter = f(this, "filters")
+          this.actions = Object.create(null), this.actions.__current = [], this.filters = Object.create(null), this.filters.__current = [], this.addAction = i(this, "actions"), this.addFilter = i(this, "filters"), this.removeAction = a(this, "actions"), this.removeFilter = a(this, "filters"), this.hasAction = u(this, "actions"), this.hasFilter = u(this, "filters"), this.removeAllActions = a(this, "actions", !0), this.removeAllFilters = a(this, "filters", !0), this.doAction = l(this, "actions"), this.applyFilters = l(this, "filters", !0), this.currentAction = s(this, "actions"), this.currentFilter = s(this, "filters"), this.doingAction = c(this, "actions"), this.doingFilter = c(this, "filters"), this.didAction = f(this, "actions"), this.didFilter = f(this, "filters")
         }
       }
       const p = function() {
@@ -1450,9 +1450,9 @@ _global.SENTRY_RELEASE = {
       var n = r(19435),
         o = r(16061),
         i = r(84968),
-        u = n ? n.toStringTag : void 0;
+        a = n ? n.toStringTag : void 0;
       e.exports = function(e) {
-        return null == e ? void 0 === e ? "[object Undefined]" : "[object Null]" : u && u in Object(e) ? o(e) : i(e)
+        return null == e ? void 0 === e ? "[object Undefined]" : "[object Null]" : a && a in Object(e) ? o(e) : i(e)
       }
     },
     48530: (e, t, r) => {
@@ -1470,17 +1470,17 @@ _global.SENTRY_RELEASE = {
       var n = r(19435),
         o = Object.prototype,
         i = o.hasOwnProperty,
-        u = o.toString,
-        a = n ? n.toStringTag : void 0;
+        a = o.toString,
+        u = n ? n.toStringTag : void 0;
       e.exports = function(e) {
-        var t = i.call(e, a),
-          r = e[a];
+        var t = i.call(e, u),
+          r = e[u];
         try {
-          e[a] = void 0;
+          e[u] = void 0;
           var n = !0
         } catch (e) {}
-        var o = u.call(e);
-        return n && (t ? e[a] = r : delete e[a]), o
+        var o = a.call(e);
+        return n && (t ? e[u] = r : delete e[u]), o
       }
     },
     84968: e => {
@@ -1506,8 +1506,8 @@ _global.SENTRY_RELEASE = {
       var n = r(27335),
         o = r(92346),
         i = r(58972),
-        u = Math.max,
-        a = Math.min;
+        a = Math.max,
+        u = Math.min;
       e.exports = function(e, t, r) {
         var l, s, c, f, d, p, h = 0,
           y = !1,
@@ -1531,7 +1531,7 @@ _global.SENTRY_RELEASE = {
           if (g(e)) return w(e);
           d = setTimeout(O, function(e) {
             var r = t - (e - p);
-            return b ? a(r, c - (e - h)) : r
+            return b ? u(r, c - (e - h)) : r
           }(e))
         }
 
@@ -1550,7 +1550,7 @@ _global.SENTRY_RELEASE = {
           }
           return void 0 === d && (d = setTimeout(O, t)), f
         }
-        return t = i(t) || 0, n(r) && (y = !!r.leading, c = (b = "maxWait" in r) ? u(i(r.maxWait) || 0, t) : c, v = "trailing" in r ? !!r.trailing : v), _.cancel = function() {
+        return t = i(t) || 0, n(r) && (y = !!r.leading, c = (b = "maxWait" in r) ? a(i(r.maxWait) || 0, t) : c, v = "trailing" in r ? !!r.trailing : v), _.cancel = function() {
           void 0 !== d && clearTimeout(d), h = 0, l = p = s = d = void 0
         }, _.flush = function() {
           return void 0 === d ? f : w(o())
@@ -1585,8 +1585,8 @@ _global.SENTRY_RELEASE = {
       var n = r(48530),
         o = r(27335),
         i = r(87416),
-        u = /^[-+]0x[0-9a-f]+$/i,
-        a = /^0b[01]+$/i,
+        a = /^[-+]0x[0-9a-f]+$/i,
+        u = /^0b[01]+$/i,
         l = /^0o[0-7]+$/i,
         s = parseInt;
       e.exports = function(e) {
@@ -1598,8 +1598,8 @@ _global.SENTRY_RELEASE = {
         }
         if ("string" != typeof e) return 0 === e ? e : +e;
         e = n(e);
-        var r = a.test(e);
-        return r || l.test(e) ? s(e.slice(2), r ? 2 : 8) : u.test(e) ? NaN : +e
+        var r = u.test(e);
+        return r || l.test(e) ? s(e.slice(2), r ? 2 : 8) : a.test(e) ? NaN : +e
       }
     }
   }

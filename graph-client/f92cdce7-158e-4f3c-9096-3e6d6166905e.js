@@ -1,8 +1,8 @@
 ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      d = (new Error).stack;
-    d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "f92cdce7-158e-4f3c-9096-3e6d6166905e", e._sentryDebugIdIdentifier = "sentry-dbid-f92cdce7-158e-4f3c-9096-3e6d6166905e")
+      a = (new Error).stack;
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "f92cdce7-158e-4f3c-9096-3e6d6166905e", e._sentryDebugIdIdentifier = "sentry-dbid-f92cdce7-158e-4f3c-9096-3e6d6166905e")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -16,8 +16,8 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_graph_client = self.webpackChunk_rockstargames_graph_client || []).push([
   [108], {
-    3108: (e, d, a) => {
-      a.r(d), a.d(d, {
+    3108: (e, a, d) => {
+      d.r(a), d.d(a, {
         base: () => u,
         cdn: () => l,
         locale: () => t,
@@ -25,7 +25,7 @@ _global.SENTRY_RELEASE = {
         useCdn: () => r,
         useLocale: () => o
       });
-      var n = a(7264);
+      var n = d(7264);
       const t = (0, n.makeVar)(document.documentElement.lang),
         o = () => (0, n.useReactiveVar)(t),
         s = window?.env,
@@ -34,9 +34,9 @@ _global.SENTRY_RELEASE = {
           videos: s?.cdn?.videos
         }),
         r = () => (0, n.useReactiveVar)(l),
-        f = document.currentScript,
-        c = f?.src ? new URL(f.src).origin : "";
-      let i = document.getElementsByTagName("base")[0]?.getAttribute("href") ?? `${c}/`;
+        c = document.currentScript,
+        f = c?.src ? new URL(c.src).origin : "";
+      let i = document.getElementsByTagName("base")[0]?.getAttribute("href") ?? `${f}/`;
       i.endsWith("/") || (i = `${i}/`);
       const u = (0, n.makeVar)(i),
         g = () => (0, n.useReactiveVar)(u)

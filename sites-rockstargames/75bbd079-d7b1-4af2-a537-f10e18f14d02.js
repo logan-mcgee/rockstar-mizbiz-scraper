@@ -42,7 +42,7 @@ _global.SENTRY_RELEASE = {
         UNSAFE_ViewTransitionContext: () => E,
         UNSAFE_useRouteId: () => a.UNSAFE_useRouteId,
         UNSAFE_useScrollRestoration: () => $,
-        createBrowserRouter: () => g,
+        createBrowserRouter: () => b,
         createHashRouter: () => y,
         createMemoryRouter: () => a.createMemoryRouter,
         createPath: () => a.createPath,
@@ -181,9 +181,9 @@ _global.SENTRY_RELEASE = {
       }
       const h = ["onClick", "relative", "reloadDocument", "replace", "state", "target", "to", "preventScrollReset", "unstable_viewTransition"],
         w = ["aria-current", "caseSensitive", "className", "end", "style", "to", "unstable_viewTransition", "children"],
-        b = ["reloadDocument", "replace", "state", "method", "action", "onSubmit", "submit", "relative", "preventScrollReset", "unstable_viewTransition"];
+        g = ["reloadDocument", "replace", "state", "method", "action", "onSubmit", "submit", "relative", "preventScrollReset", "unstable_viewTransition"];
 
-      function g(e, t) {
+      function b(e, t) {
         return (0, r.aE)({
           basename: null == t ? void 0 : t.basename,
           future: i({}, null == t ? void 0 : t.future, {
@@ -268,12 +268,12 @@ _global.SENTRY_RELEASE = {
         } = e, [i, s] = o.useState(n.state), [u, l] = o.useState(), [c, d] = o.useState({
           isTransitioning: !1
         }), [f, m] = o.useState(), [v, p] = o.useState(), [h, w] = o.useState(), {
-          v7_startTransition: b
-        } = r || {}, g = o.useCallback((e => {
-          b ? function(e) {
+          v7_startTransition: g
+        } = r || {}, b = o.useCallback((e => {
+          g ? function(e) {
             _ ? _(e) : e()
           }(e) : e()
-        }), [b]), y = o.useCallback(((e, t) => {
+        }), [g]), y = o.useCallback(((e, t) => {
           let {
             unstable_viewTransitionOpts: o
           } = t;
@@ -285,8 +285,8 @@ _global.SENTRY_RELEASE = {
             isTransitioning: !0,
             currentLocation: o.currentLocation,
             nextLocation: o.nextLocation
-          })) : g((() => s(e)))
-        }), [g, v, f, n.window]);
+          })) : b((() => s(e)))
+        }), [b, v, f, n.window]);
         o.useLayoutEffect((() => n.subscribe(y)), [n, y]), o.useEffect((() => {
           c.isTransitioning && m(new C)
         }), [c.isTransitioning]), o.useEffect((() => {
@@ -294,7 +294,7 @@ _global.SENTRY_RELEASE = {
             let e = u,
               t = f.promise,
               o = n.window.document.startViewTransition((async () => {
-                g((() => s(e))), await t
+                b((() => s(e))), await t
               }));
             o.finished.finally((() => {
               m(void 0), p(void 0), l(void 0), d({
@@ -302,7 +302,7 @@ _global.SENTRY_RELEASE = {
               })
             })), p(o)
           }
-        }), [g, u, f, n.window]), o.useEffect((() => {
+        }), [b, u, f, n.window]), o.useEffect((() => {
           f && u && i.location.key === u.location.key && f.resolve()
         }), [f, v, i.location, u]), o.useEffect((() => {
           !c.isTransitioning && h && (l(h.state), d({
@@ -455,15 +455,15 @@ _global.SENTRY_RELEASE = {
               preventScrollReset: p,
               unstable_viewTransition: w
             } = e,
-            b = s(e, h),
+            g = s(e, h),
             {
-              basename: g
+              basename: b
             } = o.useContext(a.UNSAFE_NavigationContext),
             y = !1;
           if ("string" == typeof v && U.test(v) && (n = v, F)) try {
             let e = new URL(window.location.href),
               t = v.startsWith("//") ? new URL(e.protocol + v) : new URL(v),
-              n = (0, r.pb)(t.pathname, g);
+              n = (0, r.pb)(t.pathname, b);
             t.origin === e.origin && null != n ? v = n + t.search + t.hash : y = !0
           } catch (e) {}
           let R = (0, a.useHref)(v, {
@@ -477,7 +477,7 @@ _global.SENTRY_RELEASE = {
               relative: l,
               unstable_viewTransition: w
             });
-          return o.createElement("a", i({}, b, {
+          return o.createElement("a", i({}, g, {
             href: n || R,
             onClick: y || c ? u : function(e) {
               u && u(e), e.defaultPrevented || S(e)
@@ -498,9 +498,9 @@ _global.SENTRY_RELEASE = {
             children: m
           } = e, v = s(e, w), p = (0, a.useResolvedPath)(d, {
             relative: v.relative
-          }), h = (0, a.useLocation)(), b = o.useContext(a.UNSAFE_DataRouterStateContext), {
-            navigator: g
-          } = o.useContext(a.UNSAFE_NavigationContext), y = null != b && ne(p) && !0 === f, R = g.encodeLocation ? g.encodeLocation(p).pathname : p.pathname, S = h.pathname, E = b && b.navigation && b.navigation.location ? b.navigation.location.pathname : null;
+          }), h = (0, a.useLocation)(), g = o.useContext(a.UNSAFE_DataRouterStateContext), {
+            navigator: b
+          } = o.useContext(a.UNSAFE_NavigationContext), y = null != g && ne(p) && !0 === f, R = b.encodeLocation ? b.encodeLocation(p).pathname : p.pathname, S = h.pathname, E = g && g.navigation && g.navigation.location ? g.navigation.location.pathname : null;
           r || (S = S.toLowerCase(), E = E ? E.toLowerCase() : null, R = R.toLowerCase());
           let _, C = S === R || !l && S.startsWith(R) && "/" === S.charAt(R.length),
             N = null != E && (E === R || !l && E.startsWith(R) && "/" === E.charAt(R.length)),
@@ -540,13 +540,13 @@ _global.SENTRY_RELEASE = {
             relative: m,
             preventScrollReset: v,
             unstable_viewTransition: p
-          } = e, h = s(e, b), w = "get" === l.toLowerCase() ? "get" : "post", g = J(c, {
+          } = e, h = s(e, g), w = "get" === l.toLowerCase() ? "get" : "post", b = J(c, {
             relative: m
           });
           return o.createElement("form", i({
             ref: t,
             method: w,
-            action: g,
+            action: b,
             onSubmit: n ? d : e => {
               if (d && d(e), e.defaultPrevented) return;
               e.preventDefault();

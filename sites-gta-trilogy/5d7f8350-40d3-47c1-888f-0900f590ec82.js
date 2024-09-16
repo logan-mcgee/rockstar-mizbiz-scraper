@@ -33,8 +33,8 @@ _global.SENTRY_RELEASE = {
         useFetch: () => y,
         useHover: () => h,
         useImageOnLoad: () => p,
-        useIntersectionObserver: () => b,
-        useInterval: () => m,
+        useIntersectionObserver: () => m,
+        useInterval: () => b,
         useIsClient: () => k,
         useIsFirstRender: () => S,
         useIsMounted: () => E,
@@ -132,7 +132,7 @@ _global.SENTRY_RELEASE = {
           }, h = (0, o.useCallback)((() => {
             c !== u ? s ? l() : d() : v()
           }), [c, u, d, l, s, v]);
-          return m(h, g ? n : null), i ? [c, {
+          return b(h, g ? n : null), i ? [c, {
             start: w,
             stop: v,
             reset: y
@@ -323,7 +323,7 @@ _global.SENTRY_RELEASE = {
             }
           }
         },
-        b = function(e, t) {
+        m = function(e, t) {
           let {
             threshold: n = 0,
             root: r = null,
@@ -345,7 +345,7 @@ _global.SENTRY_RELEASE = {
             return o.observe(t), () => o.disconnect()
           }), [null == e ? void 0 : e.current, JSON.stringify(n), r, s, c]), i
         },
-        m = function(e, t) {
+        b = function(e, t) {
           const n = (0, o.useRef)(e);
           C((() => {
             n.current = e

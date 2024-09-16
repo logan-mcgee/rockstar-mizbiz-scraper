@@ -128,7 +128,7 @@ _global.SENTRY_RELEASE = {
       };
       var a = {};
 
-      function d(e, n) {
+      function t(e, n) {
         for (var i = 0; i < e.definitions.length; i++) {
           var a = e.definitions[i];
           if (a.name && a.name.value == n) return a
@@ -142,13 +142,13 @@ _global.SENTRY_RELEASE = {
       })), e.exports = n, e.exports.videoFields = function(e, n) {
         var i = {
           kind: e.kind,
-          definitions: [d(e, n)]
+          definitions: [t(e, n)]
         };
         e.hasOwnProperty("loc") && (i.loc = e.loc);
-        var t = a[n] || new Set,
+        var d = a[n] || new Set,
           o = new Set,
           l = new Set;
-        for (t.forEach((function(e) {
+        for (d.forEach((function(e) {
             l.add(e)
           })); l.size > 0;) {
           var s = l;
@@ -159,7 +159,7 @@ _global.SENTRY_RELEASE = {
           }))
         }
         return o.forEach((function(n) {
-          var a = d(e, n);
+          var a = t(e, n);
           a && i.definitions.push(a)
         })), i
       }(n, "videoFields")

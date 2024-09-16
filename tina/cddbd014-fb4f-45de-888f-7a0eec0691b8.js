@@ -21,7 +21,7 @@ _global.SENTRY_RELEASE = {
         InView: () => u,
         defaultFallbackInView: () => h,
         observe: () => c,
-        useInView: () => b
+        useInView: () => f
       });
       var i = n(1403),
         r = Object.defineProperty,
@@ -169,16 +169,16 @@ _global.SENTRY_RELEASE = {
             delay: h,
             initialInView: c,
             fallbackInView: u,
-            ...b
+            ...f
           } = this.props;
           return i.createElement(t || "div", {
             ref: this.handleNode,
-            ...b
+            ...f
           }, e)
         }
       };
 
-      function b({
+      function f({
         threshold: e,
         delay: t,
         trackVisibility: n,
@@ -191,14 +191,14 @@ _global.SENTRY_RELEASE = {
         onChange: h
       } = {}) {
         var u;
-        const [b, f] = i.useState(null), p = i.useRef(), [g, y] = i.useState({
+        const [f, b] = i.useState(null), p = i.useRef(), [g, y] = i.useState({
           inView: !!d,
           entry: void 0
         });
         p.current = h, i.useEffect((() => {
-          if (a || !b) return;
+          if (a || !f) return;
           let i;
-          return i = c(b, ((e, t) => {
+          return i = c(f, ((e, t) => {
             y({
               inView: e,
               entry: t
@@ -212,14 +212,14 @@ _global.SENTRY_RELEASE = {
           }, l), () => {
             i && i()
           }
-        }), [Array.isArray(e) ? e.toString() : e, b, o, r, s, a, n, l, t]);
+        }), [Array.isArray(e) ? e.toString() : e, f, o, r, s, a, n, l, t]);
         const v = null == (u = g.entry) ? void 0 : u.target,
           w = i.useRef();
-        b || !v || s || a || w.current === v || (w.current = v, y({
+        f || !v || s || a || w.current === v || (w.current = v, y({
           inView: !!d,
           entry: void 0
         }));
-        const k = [f, g.inView, g.entry];
+        const k = [b, g.inView, g.entry];
         return k.ref = k[0], k.inView = k[1], k.entry = k[2], k
       }
     }

@@ -1,0 +1,35 @@
+.rockstargames-sites-rockstargamesee5e5a68eb125090583fe5d4f8ce03df {
+  align-items: center;
+  background: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/69446ff620d0701f929f986380918d62.gif) fixed;
+  display: flex;
+  flex: 1;
+  justify-content: center
+}
+
+.rockstargames-sites-rockstargamesf5aef392e680073f8fed78567c8dbb4e {
+  grid-gap: 1.5rem;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  border-radius: 5px;
+  box-shadow: 0 0 5px hsla(0, 0%, 100%, .25);
+  display: grid;
+  max-width: 640px;
+  padding: 1.5rem;
+  text-align: center
+}
+
+.rockstargames-sites-rockstargamesda2fe3ab2392b09ff23958abdf602eb4 {
+  background: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/60681b90bf08a69831bcb56e88f92c91.png) no-repeat 50%/contain;
+  margin: 0 auto;
+  max-width: 256px;
+  width: 100%
+}
+
+.rockstargames-sites-rockstargamesda2fe3ab2392b09ff23958abdf602eb4:after {
+  content: "";
+  display: block;
+  padding-top: 28.125%;
+  width: 100%
+}
+
+/*# sourceMappingURL=c0bffa456f7bb7fc64d9af6f63b50730.css.map*/

@@ -61,7 +61,7 @@ _global.SENTRY_RELEASE = {
         useLocation: () => h,
         useMatch: () => g,
         useMatches: () => T,
-        useNavigate: () => b,
+        useNavigate: () => y,
         useNavigation: () => j,
         useNavigationType: () => v,
         useOutlet: () => R,
@@ -143,7 +143,7 @@ _global.SENTRY_RELEASE = {
         n.useContext(s).static || n.useLayoutEffect(e)
       }
 
-      function b() {
+      function y() {
         let {
           isDataRoute: e
         } = n.useContext(d);
@@ -183,15 +183,15 @@ _global.SENTRY_RELEASE = {
           }), [t, r, u, l, e])
         }()
       }
-      const y = n.createContext(null);
+      const b = n.createContext(null);
 
       function C() {
-        return n.useContext(y)
+        return n.useContext(b)
       }
 
       function R(e) {
         let t = n.useContext(d).outlet;
-        return t ? n.createElement(y.Provider, {
+        return t ? n.createElement(b.Provider, {
           value: e
         }, t) : t
       }
@@ -232,10 +232,10 @@ _global.SENTRY_RELEASE = {
           let e = "string" == typeof t ? (0, a.Rr)(t) : t;
           "/" === m || (null == (E = e.pathname) ? void 0 : E.startsWith(m)) || (0, a.Oi)(!1), v = e
         } else v = g;
-        let b = v.pathname || "/",
-          y = "/" === m ? b : b.slice(m.length) || "/",
+        let y = v.pathname || "/",
+          b = "/" === m ? y : y.slice(m.length) || "/",
           C = (0, a.ue)(e, {
-            pathname: y
+            pathname: b
           }),
           R = B(C && C.map((e => Object.assign({}, e, {
             params: Object.assign({}, p, e.params),
@@ -582,7 +582,7 @@ _global.SENTRY_RELEASE = {
           matches: l
         } = n.useContext(d), {
           pathname: u
-        } = h(), s = b(), c = (0, a.Gh)(t, (0, a.sd)(l).map((e => e.pathnameBase)), u, "path" === i), p = JSON.stringify(c);
+        } = h(), s = y(), c = (0, a.Gh)(t, (0, a.sd)(l).map((e => e.pathnameBase)), u, "path" === i), p = JSON.stringify(c);
         return n.useEffect((() => s(JSON.parse(p), {
           replace: r,
           state: o,
@@ -621,7 +621,7 @@ _global.SENTRY_RELEASE = {
           hash: v = "",
           state: g = null,
           key: E = "default"
-        } = o, b = n.useMemo((() => {
+        } = o, y = n.useMemo((() => {
           let e = (0, a.pb)(m, d);
           return null == e ? null : {
             location: {
@@ -634,11 +634,11 @@ _global.SENTRY_RELEASE = {
             navigationType: i
           }
         }), [d, m, h, v, g, E, i]);
-        return null == b ? null : n.createElement(s.Provider, {
+        return null == y ? null : n.createElement(s.Provider, {
           value: p
         }, n.createElement(c.Provider, {
           children: r,
-          value: b
+          value: y
         }))
       }
 

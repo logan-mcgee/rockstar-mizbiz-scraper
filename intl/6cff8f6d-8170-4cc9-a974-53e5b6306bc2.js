@@ -22,8 +22,8 @@ _global.SENTRY_RELEASE = {
         engagement: () => o,
         sitesCareers: () => r,
         sitesCirco: () => i,
-        sitesLegacy: () => d,
-        sitesRockstar: () => _,
+        sitesLegacy: () => _,
+        sitesRockstar: () => d,
         videoplayer: () => n
       });
       var s = t(717);
@@ -211,7 +211,7 @@ _global.SENTRY_RELEASE = {
             defaultMessage: "Country"
           }
         }),
-        d = (0, s.defineMessages)({
+        _ = (0, s.defineMessages)({
           legacy_header_cta_label_reddeadredemption: {
             id: "legacy_header_cta_label_reddeadredemption",
             defaultMessage: "Buy Now"
@@ -221,7 +221,7 @@ _global.SENTRY_RELEASE = {
             defaultMessage: "Features"
           }
         }),
-        _ = (0, s.defineMessages)({
+        d = (0, s.defineMessages)({
           rsg_total_results_message: {
             id: "rsg_total_results_message",
             defaultMessage: "Showing {Tab} filtered by {Query}"

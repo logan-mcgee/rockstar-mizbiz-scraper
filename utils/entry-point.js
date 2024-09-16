@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "a8ddfaf1-a03a-4c87-8e90-f528c71f02e8", e._sentryDebugIdIdentifier = "sentry-dbid-a8ddfaf1-a03a-4c87-8e90-f528c71f02e8")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "43ba9aff-56b7-40c4-a457-f85c112baa8b", e._sentryDebugIdIdentifier = "sentry-dbid-43ba9aff-56b7-40c4-a457-f85c112baa8b")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -34,20 +34,20 @@ _global.SENTRY_RELEASE = {
     execute: function() {
       e((() => {
         var e, n, o, i, f = {
-            539: (e, t, r) => {
-              (0, r(403).w)(1)
+            6539: (e, t, r) => {
+              (0, r(3403).w)(1)
             },
-            403: (e, t, r) => {
-              const a = r(659).y;
+            3403: (e, t, r) => {
+              const a = r(5659).y;
               t.w = function(e) {
                 if (e || (e = 1), !r.y.meta || !r.y.meta.url) throw console.error("__system_context__", r.y), Error("systemjs-webpack-interop was provided an unknown SystemJS context. Expected context.meta.url, but none was provided");
                 r.p = a(r.y.meta.url, e)
               }
             },
-            160: (e, t, r) => {
-              r(539)
+            2160: (e, t, r) => {
+              r(6539)
             },
-            659: (e, t, r) => {
+            5659: (e, t, r) => {
               t.y = function(e, t) {
                 var r = document.createElement("a");
                 r.href = e;
@@ -58,17 +58,17 @@ _global.SENTRY_RELEASE = {
               };
               Number.isInteger
             },
-            930: (e, t, r) => {
+            3930: (e, t, r) => {
               "use strict";
               var a = {
-                  "./functions": () => Promise.all([r.e(403), r.e(252), r.e(509)]).then((() => () => r(509))),
-                  "./gtm": () => Promise.all([r.e(403), r.e(779), r.e(482), r.e(551)]).then((() => () => r(551))),
-                  "./hocs": () => Promise.all([r.e(403), r.e(407), r.e(252), r.e(482), r.e(136), r.e(244)]).then((() => () => r(244))),
-                  "./hooks": () => Promise.all([r.e(403), r.e(407), r.e(252), r.e(779), r.e(136), r.e(328), r.e(508)]).then((() => () => r(508))),
-                  "./index": () => Promise.all([r.e(403), r.e(407), r.e(252), r.e(779), r.e(482), r.e(136), r.e(328), r.e(886)]).then((() => () => r(886))),
-                  "./local-storage-settings": () => Promise.all([r.e(407), r.e(847)]).then((() => () => r(847))),
-                  "./onetrust": () => r.e(150).then((() => () => r(150))),
-                  "./providers": () => Promise.all([r.e(403), r.e(407), r.e(50)]).then((() => () => r(50)))
+                  "./functions": () => Promise.all([r.e(403), r.e(252), r.e(509)]).then((() => () => r(6509))),
+                  "./gtm": () => Promise.all([r.e(403), r.e(779), r.e(482), r.e(551)]).then((() => () => r(6551))),
+                  "./hocs": () => Promise.all([r.e(403), r.e(407), r.e(252), r.e(482), r.e(136), r.e(244)]).then((() => () => r(3244))),
+                  "./hooks": () => Promise.all([r.e(403), r.e(407), r.e(252), r.e(779), r.e(136), r.e(279), r.e(324)]).then((() => () => r(3324))),
+                  "./index": () => Promise.all([r.e(403), r.e(407), r.e(252), r.e(779), r.e(482), r.e(136), r.e(279), r.e(886)]).then((() => () => r(3886))),
+                  "./local-storage-settings": () => Promise.all([r.e(407), r.e(847)]).then((() => () => r(6847))),
+                  "./onetrust": () => r.e(150).then((() => () => r(2150))),
+                  "./providers": () => Promise.all([r.e(403), r.e(407), r.e(50)]).then((() => () => r(4050)))
                 },
                 n = (e, t) => (r.R = t, t = r.o(a, e) ? a[e]() : Promise.resolve().then((() => {
                   throw new Error('Module "' + e + '" does not exist in container.')
@@ -86,11 +86,11 @@ _global.SENTRY_RELEASE = {
                 init: () => o
               })
             },
-            24: e => {
+            1024: e => {
               "use strict";
               e.exports = r
             },
-            969: e => {
+            2969: e => {
               "use strict";
               e.exports = a
             }
@@ -107,7 +107,7 @@ _global.SENTRY_RELEASE = {
           };
           return f[e].call(r.exports, r, r.exports, s), r.loaded = !0, r.exports
         }
-        return s.m = f, s.c = d, s.y = t, s.n = e => {
+        return s.m = f, s.c = d, s.y = t, s.amdO = {}, s.n = e => {
           var t = e && e.__esModule ? () => e.default : () => e;
           return s.d(t, {
             a: t
@@ -118,27 +118,30 @@ _global.SENTRY_RELEASE = {
             get: t[r]
           })
         }, s.f = {}, s.e = e => Promise.all(Object.keys(s.f).reduce(((t, r) => (s.f[r](e, t), t)), [])), s.u = e => "js/" + {
-          50: "7a19f5443d796ab06beeb4fb7e931550",
+          50: "b41143a5fe4d5c0ac3d617f0692f6224",
           136: "efd41f4c8d3b88fb4fe43c7de672275d",
-          150: "ae42e7988e73bc1333e48b5afa08a78b",
-          244: "4a0887cbaa31c803a9b80dedd87b79de",
+          150: "d28e7589a15f9ca645557488e8ea68c3",
+          244: "f133917d94bffde130bc79713d53c75f",
           252: "3fc32d9a38186c5d66de6088885b50ac",
-          327: "e2bb14f3e51ccb4f7829431c2a41e6ab",
-          328: "3f7bdb947f47b397e872369462c611e5",
-          380: "17e217e05666c39cc6d5544cd34bd78f",
-          398: "c6abdcfc23187e4bffaefc9fb0221022",
+          279: "49cf4a9a16abe5a043d563c37419e7cb",
+          324: "088ad95c05480c6e78b5ce9276358ee5",
+          327: "e9667ecfa9d61635abdd96a3826b8919",
+          369: "f5d6ea707a520f60b4233248cc0b4138",
+          380: "a74c595367a0978e729ed5268be6be7d",
+          398: "dfec689f5e8c10e86dd16b07cc8012b4",
           403: "6d2499285b8ef978a74780129750e875",
           407: "afeee0d8645ef44371880cb2c531f2b0",
-          429: "5b84df3583b5bc47fc9bf65e2d203ccd",
+          429: "58132bef98a94e9a2b3450cb834072bf",
           482: "ad6aedf1c0208dc6c6a9d4a3db0d7974",
-          508: "ae313e0af7fc44478edcf63c5a64c887",
-          509: "429aaf0a628e0ce342563f7bf1026ffc",
-          551: "077f50f37ef1d1df7b7d7a96c7321097",
-          714: "73d72577e68055253a2ac99a3ab7f17c",
+          509: "5d0bcef9a8962d23ab6366c3e84fcc44",
+          551: "65e49c1e29e2db2567f274fae621edfb",
+          714: "ab1c8b57b7fb6e5e3b2ac97e91c0acef",
+          750: "8c490b24fb131d3631cc0d812a295f18",
           779: "b139f7747f8124e8d3f7d0e65b7cf725",
-          847: "abaa63eb25589117f92ceb9da9757ba7",
-          886: "17b16adec60203096dabc68796d32cbc",
-          961: "5569917364c23c46ba90a99950acfe85"
+          847: "3183798c30db843dc3ad398f7a27dfc5",
+          886: "bea1710120c9281d4808f9df9b4d5eb7",
+          961: "403dd402c82feb5da4b6091956432a5d",
+          977: "0bc58623cac12603639f80124ed43149"
         } [e] + ".js", s.miniCssF = e => {}, s.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
@@ -178,12 +181,12 @@ _global.SENTRY_RELEASE = {
           })
         }, s.nmd = e => (e.paths = [], e.children || (e.children = []), e), o = {
           136: [136],
-          328: [756],
-          407: [407]
+          279: [2756],
+          407: [8407]
         }, i = {
-          136: ["default", "./reactive", 24],
-          407: ["default", "./index", 24],
-          756: ["default", "./index", 969]
+          136: ["default", "./reactive", 1024],
+          2756: ["default", "./index", 2969],
+          8407: ["default", "./index", 1024]
         }, s.f.remotes = (e, t) => {
           s.o(o, e) && o[e].forEach((e => {
             var r = s.R;
@@ -254,7 +257,7 @@ _global.SENTRY_RELEASE = {
                   }
                 },
                 c = [];
-              return "default" === r && (f("crypto-hash", "2.0.1", (() => s.e(961).then((() => () => s(961))))), f("deepmerge", "4.3.1", (() => s.e(327).then((() => () => s(327))))), f("lodash", "4.17.21", (() => s.e(429).then((() => () => s(429))))), f("react-gtm-module", "2.0.11", (() => s.e(714).then((() => () => s(714))))), f("react-router-dom", "6.17.0", (() => Promise.all([s.e(398), s.e(403)]).then((() => () => s(398))))), f("react", "18.2.0", (() => s.e(380).then((() => () => s(380))))), d(24), d(969)), c.length ? e[r] = Promise.all(c).then((() => e[r] = 1)) : e[r] = 1
+              return "default" === r && (f("crypto-hash", "2.0.1", (() => s.e(961).then((() => () => s(9961))))), f("deepmerge", "4.3.1", (() => s.e(327).then((() => () => s(7327))))), f("lodash", "4.17.21", (() => s.e(429).then((() => () => s(9429))))), f("react-adaptive-hooks", "0.0.8", (() => Promise.all([s.e(403), s.e(369)]).then((() => () => s(4369))))), f("react-device-detect", "2.2.3", (() => Promise.all([s.e(977), s.e(403)]).then((() => () => s(1977))))), f("react-gtm-module", "2.0.11", (() => s.e(714).then((() => () => s(714))))), f("react-router-dom", "6.17.0", (() => Promise.all([s.e(398), s.e(403)]).then((() => () => s(3398))))), f("react", "18.2.0", (() => s.e(380).then((() => () => s(3380))))), d(1024), d(2969)), c.length ? e[r] = Promise.all(c).then((() => e[r] = 1)) : e[r] = 1
             }
           }
         })(), (() => {
@@ -337,19 +340,21 @@ _global.SENTRY_RELEASE = {
             })),
             n = {},
             o = {
-              784: () => a("default", "react", [1, 18, 2, 0], (() => s.e(380).then((() => () => s(380))))),
-              252: () => a("default", "lodash", [1, 4, 17, 21], (() => s.e(429).then((() => () => s(429))))),
-              779: () => a("default", "react-router-dom", [1, 6, 11, 2], (() => s.e(398).then((() => () => s(398))))),
-              482: () => a("default", "react-gtm-module", [1, 2, 0, 11], (() => s.e(714).then((() => () => s(714))))),
-              540: () => a("default", "deepmerge", [1, 4, 2, 2], (() => s.e(327).then((() => () => s(327))))),
-              686: () => a("default", "crypto-hash", [1, 2, 0, 1], (() => s.e(961).then((() => () => s(961)))))
+              1403: () => a("default", "react", [1, 18, 2, 0], (() => s.e(380).then((() => () => s(3380))))),
+              4252: () => a("default", "lodash", [1, 4, 17, 21], (() => s.e(429).then((() => () => s(9429))))),
+              9779: () => a("default", "react-router-dom", [1, 6, 11, 2], (() => s.e(398).then((() => () => s(3398))))),
+              1482: () => a("default", "react-gtm-module", [1, 2, 0, 11], (() => s.e(714).then((() => () => s(714))))),
+              4686: () => a("default", "crypto-hash", [1, 2, 0, 1], (() => s.e(961).then((() => () => s(9961))))),
+              4999: () => a("default", "react-device-detect", [1, 2, 2, 3], (() => s.e(977).then((() => () => s(1977))))),
+              6540: () => a("default", "deepmerge", [1, 4, 2, 2], (() => s.e(327).then((() => () => s(7327))))),
+              9928: () => a("default", "react-adaptive-hooks", [3, 0, 0, 8], (() => s.e(750).then((() => () => s(4369)))))
             },
             i = {
-              252: [252],
-              328: [540, 686],
-              403: [784],
-              482: [482],
-              779: [779]
+              252: [4252],
+              279: [4686, 4999, 6540, 9928],
+              403: [1403],
+              482: [1482],
+              779: [9779]
             },
             f = {};
           s.f.consumes = (e, t) => {
@@ -384,7 +389,7 @@ _global.SENTRY_RELEASE = {
             var a = s.o(e, t) ? e[t] : void 0;
             if (0 !== a)
               if (a) r.push(a[2]);
-              else if (/^(4(03|07|82)|136|252|328|779)$/.test(t)) e[t] = 0;
+              else if (/^(4(03|07|82)|[27]79|136|252)$/.test(t)) e[t] = 0;
             else {
               var n = new Promise(((r, n) => a = e[t] = [r, n]));
               r.push(a[2] = n);
@@ -412,7 +417,7 @@ _global.SENTRY_RELEASE = {
             },
             r = self.webpackChunk_rockstargames_utils = self.webpackChunk_rockstargames_utils || [];
           r.forEach(t.bind(null, 0)), r.push = t.bind(null, r.push.bind(r))
-        })(), s(160), s(930)
+        })(), s(2160), s(3930)
       })())
     }
   }

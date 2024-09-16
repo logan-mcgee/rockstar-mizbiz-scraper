@@ -23,15 +23,15 @@ _global.SENTRY_RELEASE = {
       var d = t(71403),
         a = t(26040),
         o = t.n(a);
-      let s = "undefined" != typeof window ? d.useLayoutEffect : d.useEffect,
-        f = e => e && !Array.isArray(e) && "object" == typeof e,
+      let f = "undefined" != typeof window ? d.useLayoutEffect : d.useEffect,
+        s = e => e && !Array.isArray(e) && "object" == typeof e,
         r = [],
         l = {},
         i = o();
       const c = function(e) {
         let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r,
           t = l;
-        f(e) ? (t = e, e = null, n = "dependencies" in t ? t.dependencies : r) : f(n) && (t = n, n = "dependencies" in t ? t.dependencies : r);
+        s(e) ? (t = e, e = null, n = "dependencies" in t ? t.dependencies : r) : s(n) && (t = n, n = "dependencies" in t ? t.dependencies : r);
         let {
           scope: a,
           revertOnUpdate: o
@@ -40,9 +40,9 @@ _global.SENTRY_RELEASE = {
         const g = i.context((() => {}), a),
           b = () => g.revert(),
           y = n && n.length && !o;
-        return s((() => {
+        return f((() => {
           if (e && g.add(e, a), !y || !c) return b
-        }), n), y && s((() => (u(!0), b)), r), {
+        }), n), y && f((() => (u(!0), b)), r), {
           context: g,
           contextSafe: e => g.add(null, e)
         }

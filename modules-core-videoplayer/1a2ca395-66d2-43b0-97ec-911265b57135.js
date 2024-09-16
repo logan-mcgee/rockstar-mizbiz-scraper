@@ -19,8 +19,8 @@ _global.SENTRY_RELEASE = {
     6516: (e, a, l) => {
       var o = l(1403),
         t = Symbol.for("react.element"),
-        d = Symbol.for("react.fragment"),
-        r = Object.prototype.hasOwnProperty,
+        r = Symbol.for("react.fragment"),
+        d = Object.prototype.hasOwnProperty,
         i = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         s = {
           key: !0,
@@ -30,22 +30,22 @@ _global.SENTRY_RELEASE = {
         };
 
       function n(e, a, l) {
-        var o, d = {},
+        var o, r = {},
           n = null,
           c = null;
-        for (o in void 0 !== l && (n = "" + l), void 0 !== a.key && (n = "" + a.key), void 0 !== a.ref && (c = a.ref), a) r.call(a, o) && !s.hasOwnProperty(o) && (d[o] = a[o]);
+        for (o in void 0 !== l && (n = "" + l), void 0 !== a.key && (n = "" + a.key), void 0 !== a.ref && (c = a.ref), a) d.call(a, o) && !s.hasOwnProperty(o) && (r[o] = a[o]);
         if (e && e.defaultProps)
-          for (o in a = e.defaultProps) void 0 === d[o] && (d[o] = a[o]);
+          for (o in a = e.defaultProps) void 0 === r[o] && (r[o] = a[o]);
         return {
           $$typeof: t,
           type: e,
           key: n,
           ref: c,
-          props: d,
+          props: r,
           _owner: i.current
         }
       }
-      a.Fragment = d, a.jsx = n, a.jsxs = n
+      a.Fragment = r, a.jsx = n, a.jsxs = n
     },
     6632: (e, a, l) => {
       e.exports = l(6516)
@@ -54,12 +54,12 @@ _global.SENTRY_RELEASE = {
       l.r(a), l.d(a, {
         RockstarVideoPlayer: () => m,
         VideoField: () => p,
-        default: () => b
+        default: () => y
       });
       var o = l(8407),
         t = l(472),
-        d = l(5140),
-        r = l(3809);
+        r = l(5140),
+        d = l(3809);
       const i = "rockstargames-modules-core-videoplayerc63cfb461217f059c8c25eec09602b30";
       var s = l(6632);
       const n = e => {
@@ -86,7 +86,7 @@ _global.SENTRY_RELEASE = {
           let {
             field: a,
             input: l,
-            meta: d
+            meta: r
           } = e;
           const {
             data: i
@@ -101,11 +101,11 @@ _global.SENTRY_RELEASE = {
               title: e.title
             })))
           }))).value();
-          return (0, s.jsx)(r.FieldWrapper, {
+          return (0, s.jsx)(d.FieldWrapper, {
             name: l.name || a.name || a.label,
             label: a.label,
             description: a.description,
-            meta: d,
+            meta: r,
             children: i && c?.length ? (0, s.jsxs)("select", {
               ...l,
               children: [(0, s.jsx)("option", {
@@ -147,23 +147,23 @@ _global.SENTRY_RELEASE = {
         },
         m = () => ({
           label: "Video",
-          fields: [(0, d.NameField)(), p(), {
+          fields: [(0, r.NameField)(), p(), {
             name: "autoplay",
             label: "Auto Play",
             description: "Should the video play as soon as it is loaded?",
             component: "toggle"
-          }, (0, d.LeadAssetToggle)(), (0, d.ImageField)({
+          }, (0, r.LeadAssetToggle)(), (0, r.ImageField)({
             label: "Background Image"
           })],
-          defaultItem: () => (0, d.defaultItemUnique)({
+          defaultItem: () => (0, r.defaultItemUnique)({
             wrapper: !0,
             autoplay: !1
           }),
-          itemProps: e => (0, d.itemPropsWithKey)(e, {
+          itemProps: e => (0, r.itemPropsWithKey)(e, {
             label: e?.name ? `${e.name} [Video]` : "New [Video]"
           })
         }),
-        b = m
+        y = m
     }
   }
 ]);
