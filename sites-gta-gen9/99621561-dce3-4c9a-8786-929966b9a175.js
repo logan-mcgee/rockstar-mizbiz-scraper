@@ -47,12 +47,12 @@ _global.SENTRY_RELEASE = {
       function f() {
         return d().IS_REACT_ACT_ENVIRONMENT
       }
-      const m = (b = c, e => {
+      const b = (m = c, e => {
         const t = f();
         p(!0);
         try {
           let r = !1;
-          const n = b((() => {
+          const n = m((() => {
             const t = e();
             return null !== t && "object" == typeof t && "function" == typeof t.then && (r = !0), t
           }));
@@ -73,7 +73,7 @@ _global.SENTRY_RELEASE = {
           throw p(t), e
         }
       });
-      var b;
+      var m;
       const y = function() {
         return (0, u.rC)(...arguments)
       };
@@ -107,7 +107,7 @@ _global.SENTRY_RELEASE = {
       }, y.focus = function() {
         return y.focusIn(...arguments), E(...arguments)
       }, (0, u.jK)({
-        unstable_advanceTimersWrapper: e => m(e),
+        unstable_advanceTimersWrapper: e => b(e),
         asyncWrapper: async e => {
           const t = f();
           p(!1);
@@ -124,7 +124,7 @@ _global.SENTRY_RELEASE = {
         },
         eventWrapper: e => {
           let t;
-          return m((() => {
+          return b((() => {
             t = e()
           })), t
         }
@@ -138,7 +138,7 @@ _global.SENTRY_RELEASE = {
           ui: a,
           wrapper: i
         } = t;
-        return n ? m((() => {
+        return n ? b((() => {
           r = l.c(e, i ? o.createElement(i, null, a) : a)
         })) : r = l.H(e), {
           hydrate() {
@@ -177,7 +177,7 @@ _global.SENTRY_RELEASE = {
           wrapper: s
         } = t;
         const c = e => s ? o.createElement(s, null, e) : e;
-        return m((() => {
+        return b((() => {
           a ? l.hydrate(c(e), n) : l.render(c(e), n)
         })), {
           container: n,
@@ -186,7 +186,7 @@ _global.SENTRY_RELEASE = {
             return void 0 === e && (e = r), Array.isArray(e) ? e.forEach((e => console.log((0, u.fE)(e, t, n)))) : console.log((0, u.fE)(e, t, n))
           },
           unmount: () => {
-            m((() => {
+            b((() => {
               l.unmount()
             }))
           },
@@ -241,7 +241,7 @@ _global.SENTRY_RELEASE = {
             root: t,
             container: r
           } = e;
-          m((() => {
+          b((() => {
             t.unmount()
           })), r.parentNode === document.body && document.body.removeChild(r)
         })), x.length = 0, q.clear()
@@ -313,7 +313,7 @@ _global.SENTRY_RELEASE = {
           detail: 0
         });
       s(p);
-      var f, m, b, y = a({}, p, {
+      var f, b, m, y = a({}, p, {
         screenX: 0,
         screenY: 0,
         clientX: 0,
@@ -331,10 +331,10 @@ _global.SENTRY_RELEASE = {
           return void 0 === e.relatedTarget ? e.fromElement === e.srcElement ? e.toElement : e.fromElement : e.relatedTarget
         },
         movementX: function(e) {
-          return "movementX" in e ? e.movementX : (e !== b && (b && "mousemove" === e.type ? (f = e.screenX - b.screenX, m = e.screenY - b.screenY) : m = f = 0, b = e), f)
+          return "movementX" in e ? e.movementX : (e !== m && (m && "mousemove" === e.type ? (f = e.screenX - m.screenX, b = e.screenY - m.screenY) : b = f = 0, m = e), f)
         },
         movementY: function(e) {
-          return "movementY" in e ? e.movementY : m
+          return "movementY" in e ? e.movementY : b
         }
       });
       s(y), s(a({}, y, {
@@ -775,7 +775,7 @@ _global.SENTRY_RELEASE = {
           tr: "row",
           ul: "list"
         },
-        m = {
+        b = {
           caption: new Set(["aria-label", "aria-labelledby"]),
           code: new Set(["aria-label", "aria-labelledby"]),
           deletion: new Set(["aria-label", "aria-labelledby"]),
@@ -789,11 +789,11 @@ _global.SENTRY_RELEASE = {
           superscript: new Set(["aria-label", "aria-labelledby"])
         };
 
-      function b(e, t) {
+      function m(e, t) {
         return function(e, t) {
           return ["aria-atomic", "aria-busy", "aria-controls", "aria-current", "aria-describedby", "aria-details", "aria-dropeffect", "aria-flowto", "aria-grabbed", "aria-hidden", "aria-keyshortcuts", "aria-label", "aria-labelledby", "aria-live", "aria-owns", "aria-relevant", "aria-roledescription"].some((function(r) {
             var n;
-            return e.hasAttribute(r) && !(null !== (n = m[t]) && void 0 !== n && n.has(r))
+            return e.hasAttribute(r) && !(null !== (n = b[t]) && void 0 !== n && n.has(r))
           }))
         }(e, t)
       }
@@ -854,7 +854,7 @@ _global.SENTRY_RELEASE = {
                   if (e.hasAttribute("href")) return "link";
                   break;
                 case "img":
-                  return "" !== e.getAttribute("alt") || b(e, "img") ? "img" : "presentation";
+                  return "" !== e.getAttribute("alt") || m(e, "img") ? "img" : "presentation";
                 case "input":
                   var r = e.type;
                   switch (r) {
@@ -885,7 +885,7 @@ _global.SENTRY_RELEASE = {
               }
               return null
             }(e);
-            if ("presentation" !== t || b(e, r || "")) return r
+            if ("presentation" !== t || m(e, r || "")) return r
           }
           return t
         }(e))
@@ -946,9 +946,9 @@ _global.SENTRY_RELEASE = {
           s = t.getComputedStyle,
           c = void 0 === s ? n.getComputedStyle.bind(n) : s,
           f = t.hidden,
-          m = void 0 !== f && f;
+          b = void 0 !== f && f;
 
-        function b(e, t) {
+        function m(e, t) {
           var r, n, o = "";
           if (y(e) && u) {
             var a = x(c(e, "::before"));
@@ -978,7 +978,7 @@ _global.SENTRY_RELEASE = {
 
         function j(e, t) {
           if (r.has(e)) return "";
-          if (!m && function(e, t) {
+          if (!b && function(e, t) {
               if (!y(e)) return !1;
               if (e.hasAttribute("hidden") || "true" === e.getAttribute("aria-hidden")) return !0;
               var r = t(e);
@@ -1043,8 +1043,8 @@ _global.SENTRY_RELEASE = {
                   } else if (function(e) {
                       return y(e) && "optgroup" === p(e)
                     }(e)) {
-                    var m = S(e, "label");
-                    if (null !== m) return m
+                    var b = S(e, "label");
+                    if (null !== b) return b
                   }
                 }
                 if (h(e) && ("button" === e.type || "submit" === e.type || "reset" === e.type)) {
@@ -1072,7 +1072,7 @@ _global.SENTRY_RELEASE = {
                   return null !== A ? A : "Submit Query"
                 }
                 if (C(e, ["button"])) {
-                  var M = b(e, {
+                  var M = m(e, {
                     isEmbeddedInLabel: !1,
                     isReferenced: !1
                   });
@@ -1111,14 +1111,14 @@ _global.SENTRY_RELEASE = {
             }(e) || y(e) && t.isReferenced || function(e) {
               return v(e)
             }(e)) {
-            var x = b(e, {
+            var x = m(e, {
               isEmbeddedInLabel: t.isEmbeddedInLabel,
               isReferenced: !1
             });
             if ("" !== x) return r.add(e), x
           }
           if (e.nodeType === e.TEXT_NODE) return r.add(e), e.textContent || "";
-          if (t.recursion) return r.add(e), b(e, {
+          if (t.recursion) return r.add(e), m(e, {
             isEmbeddedInLabel: t.isEmbeddedInLabel,
             isReferenced: !1
           });
@@ -1341,7 +1341,7 @@ _global.SENTRY_RELEASE = {
         });
         return void 0 !== t && e.outerHTML.length > t ? l.slice(0, t) + "..." : l
       }
-      const me = function() {
+      const be = function() {
         const e = te && re ? function(e) {
           const t = e.indexOf("(") + 1,
             r = e.indexOf(")"),
@@ -1367,7 +1367,7 @@ _global.SENTRY_RELEASE = {
         }((new Error).stack.split("\n").slice(1).find((e => !e.includes("node_modules/")))) : "";
         e ? console.log(fe(...arguments) + "\n\n" + e) : console.log(fe(...arguments))
       };
-      let be = {
+      let me = {
         testIdAttribute: "data-testid",
         asyncUtilTimeout: 1e3,
         asyncWrapper: e => e(),
@@ -1379,7 +1379,7 @@ _global.SENTRY_RELEASE = {
         throwSuggestions: !1,
         getElementError(e, t) {
           const r = fe(t),
-            n = new Error([e, "Ignored nodes: comments, " + be.defaultIgnore + "\n" + r].filter(Boolean).join("\n\n"));
+            n = new Error([e, "Ignored nodes: comments, " + me.defaultIgnore + "\n" + r].filter(Boolean).join("\n\n"));
           return n.name = "TestingLibraryElementError", n
         },
         _disableExpensiveErrorDiagnostics: !1,
@@ -1387,14 +1387,14 @@ _global.SENTRY_RELEASE = {
       };
 
       function ye(e) {
-        "function" == typeof e && (e = e(be)), be = {
-          ...be,
+        "function" == typeof e && (e = e(me)), me = {
+          ...me,
           ...e
         }
       }
 
       function ve() {
-        return be
+        return me
       }
       const he = ["button", "meter", "output", "progress", "select", "textarea", "input"];
 
@@ -1675,8 +1675,8 @@ _global.SENTRY_RELEASE = {
           if ("function" != typeof e) throw new TypeError("Received `callback` arg must be a function");
           return new Promise((async (t, s) => {
             let c, d, p, f = !1,
-              m = "idle";
-            const b = setTimeout((function() {
+              b = "idle";
+            const m = setTimeout((function() {
                 let e;
                 c ? (e = c, o || "TestingLibraryElementError" !== e.name || Ue(e, a)) : (e = new Error("Timed out in waitFor."), o || Ue(e, a)), v(l(e), null)
               }), n),
@@ -1708,7 +1708,7 @@ _global.SENTRY_RELEASE = {
             }
 
             function v(e, r) {
-              f = !0, clearTimeout(b), y || (clearInterval(d), p.disconnect()), e ? s(e) : t(r)
+              f = !0, clearTimeout(m), y || (clearInterval(d), p.disconnect()), e ? s(e) : t(r)
             }
 
             function h() {
@@ -1720,18 +1720,18 @@ _global.SENTRY_RELEASE = {
             }
 
             function g() {
-              if ("pending" !== m) try {
+              if ("pending" !== b) try {
                 const t = function(e) {
                   try {
-                    return be._disableExpensiveErrorDiagnostics = !0, e()
+                    return me._disableExpensiveErrorDiagnostics = !0, e()
                   } finally {
-                    be._disableExpensiveErrorDiagnostics = !1
+                    me._disableExpensiveErrorDiagnostics = !1
                   }
                 }(e);
-                "function" == typeof(null == t ? void 0 : t.then) ? (m = "pending", t.then((e => {
-                  m = "resolved", v(null, e)
+                "function" == typeof(null == t ? void 0 : t.then) ? (b = "pending", t.then((e => {
+                  b = "resolved", v(null, e)
                 }), (e => {
-                  m = "rejected", c = e
+                  b = "rejected", c = e
                 }))) : v(null, t)
               } catch (e) {
                 c = e
@@ -1951,8 +1951,8 @@ _global.SENTRY_RELEASE = {
           let d = [];
           return "function" == typeof e.matches && e.matches(n) && (d = [e]), [...d, ...Array.from(e.querySelectorAll(n))].filter((e => !l || !e.matches(l))).filter((e => s(je(e), e, t, c)))
         },
-        mt = Ke(ft, ft.name, "queryAll"),
-        [bt, yt, vt, ht, gt] = Xe(ft, ((e, t) => "Found multiple elements with the text: " + t), (function(e, t, r) {
+        bt = Ke(ft, ft.name, "queryAll"),
+        [mt, yt, vt, ht, gt] = Xe(ft, ((e, t) => "Found multiple elements with the text: " + t), (function(e, t, r) {
           void 0 === r && (r = {});
           const {
             collapseWhitespace: n,
@@ -2025,8 +2025,8 @@ _global.SENTRY_RELEASE = {
             level: p,
             expanded: f,
             value: {
-              now: m,
-              min: b,
+              now: b,
+              min: m,
               max: y,
               text: v
             } = {}
@@ -2038,9 +2038,9 @@ _global.SENTRY_RELEASE = {
           if (void 0 !== c && void 0 === (null == (w = N.Ot.get(t)) ? void 0 : w.props["aria-pressed"])) throw new Error('"aria-pressed" is not supported on role "' + t + '".');
           if (void 0 !== d && void 0 === (null == (C = N.Ot.get(t)) ? void 0 : C.props["aria-current"])) throw new Error('"aria-current" is not supported on role "' + t + '".');
           if (void 0 !== p && "heading" !== t) throw new Error('Role "' + t + '" cannot have "level" property.');
-          if (void 0 !== m && void 0 === (null == (E = N.Ot.get(t)) ? void 0 : E.props["aria-valuenow"])) throw new Error('"aria-valuenow" is not supported on role "' + t + '".');
+          if (void 0 !== b && void 0 === (null == (E = N.Ot.get(t)) ? void 0 : E.props["aria-valuenow"])) throw new Error('"aria-valuenow" is not supported on role "' + t + '".');
           if (void 0 !== y && void 0 === (null == (q = N.Ot.get(t)) ? void 0 : q.props["aria-valuemax"])) throw new Error('"aria-valuemax" is not supported on role "' + t + '".');
-          if (void 0 !== b && void 0 === (null == (x = N.Ot.get(t)) ? void 0 : x.props["aria-valuemin"])) throw new Error('"aria-valuemin" is not supported on role "' + t + '".');
+          if (void 0 !== m && void 0 === (null == (x = N.Ot.get(t)) ? void 0 : x.props["aria-valuemin"])) throw new Error('"aria-valuemin" is not supported on role "' + t + '".');
           if (void 0 !== v && void 0 === (null == (O = N.Ot.get(t)) ? void 0 : O.props["aria-valuetext"])) throw new Error('"aria-valuetext" is not supported on role "' + t + '".');
           if (void 0 !== f && void 0 === (null == (S = N.Ot.get(t)) ? void 0 : S.props["aria-expanded"])) throw new Error('"aria-expanded" is not supported on role "' + t + '".');
           const R = new WeakMap;
@@ -2097,16 +2097,16 @@ _global.SENTRY_RELEASE = {
                 H6: 6
               } [e.tagName]
             }(e);
-            if (void 0 !== m || void 0 !== y || void 0 !== b || void 0 !== v) {
+            if (void 0 !== b || void 0 !== y || void 0 !== m || void 0 !== v) {
               let r = !0;
               var t;
-              return void 0 !== m && r && (r = m === function(e) {
+              return void 0 !== b && r && (r = b === function(e) {
                 const t = e.getAttribute("aria-valuenow");
                 return null === t ? void 0 : +t
               }(e)), void 0 !== y && r && (r = y === function(e) {
                 const t = e.getAttribute("aria-valuemax");
                 return null === t ? void 0 : +t
-              }(e)), void 0 !== b && r && (r = b === function(e) {
+              }(e)), void 0 !== m && r && (r = m === function(e) {
                 const t = e.getAttribute("aria-valuemin");
                 return null === t ? void 0 : +t
               }(e)), void 0 !== v && r && (r = xe(null != (t = function(e) {
@@ -2213,8 +2213,8 @@ _global.SENTRY_RELEASE = {
         getAllByPlaceholderText: st,
         findAllByPlaceholderText: dt,
         findByPlaceholderText: pt,
-        queryByText: bt,
-        queryAllByText: mt,
+        queryByText: mt,
+        queryAllByText: bt,
         getByText: vt,
         getAllByText: yt,
         findAllByText: ht,
@@ -3013,7 +3013,7 @@ _global.SENTRY_RELEASE = {
         }
       }));
       const cr = {
-          debug: (e, t, r) => Array.isArray(e) ? e.forEach((e => me(e, t, r))) : me(e, t, r),
+          debug: (e, t, r) => Array.isArray(e) ? e.forEach((e => be(e, t, r))) : be(e, t, r),
           logTestingPlaygroundURL: function(e) {
             if (void 0 === e && (e = ae().body), !e || !("innerHTML" in e)) return void console.log("The element you're providing isn't a valid DOM element.");
             if (!e.innerHTML) return void console.log("The provided element doesn't have any children.");
@@ -4021,10 +4021,10 @@ _global.SENTRY_RELEASE = {
       }
       for (var c = [], d = a.default.keys(), p = 0; p < d.length; p++) {
         var f = d[p],
-          m = a.default.get(f);
-        if (m)
-          for (var b = [].concat(m.baseConcepts, m.relatedConcepts), y = 0; y < b.length; y++) {
-            var v = b[y];
+          b = a.default.get(f);
+        if (b)
+          for (var m = [].concat(b.baseConcepts, b.relatedConcepts), y = 0; y < m.length; y++) {
+            var v = m[y];
             if ("HTML" === v.module) {
               var h = v.concept;
               h && function() {
@@ -4483,20 +4483,20 @@ _global.SENTRY_RELEASE = {
       Object.defineProperty(t, "__esModule", {
         value: !0
       }), t.default = void 0;
-      var n = b(r(51515)),
-        o = b(r(63765)),
-        a = b(r(77786)),
-        i = b(r(50076)),
-        l = b(r(83683)),
-        u = b(r(17900)),
-        s = b(r(3477)),
-        c = b(r(11339)),
-        d = b(r(32896)),
-        p = b(r(28259)),
-        f = b(r(54448)),
-        m = b(r(95944));
+      var n = m(r(51515)),
+        o = m(r(63765)),
+        a = m(r(77786)),
+        i = m(r(50076)),
+        l = m(r(83683)),
+        u = m(r(17900)),
+        s = m(r(3477)),
+        c = m(r(11339)),
+        d = m(r(32896)),
+        p = m(r(28259)),
+        f = m(r(54448)),
+        b = m(r(95944));
 
-      function b(e) {
+      function m(e) {
         return e && e.__esModule ? e : {
           default: e
         }
@@ -4513,7 +4513,7 @@ _global.SENTRY_RELEASE = {
         ["select", d.default],
         ["structure", p.default],
         ["widget", f.default],
-        ["window", m.default]
+        ["window", b.default]
       ];
       t.default = y
     },
@@ -4533,8 +4533,8 @@ _global.SENTRY_RELEASE = {
         d = H(r(85384)),
         p = H(r(56699)),
         f = H(r(27038)),
-        m = H(r(1386)),
-        b = H(r(78780)),
+        b = H(r(1386)),
+        m = H(r(78780)),
         y = H(r(25071)),
         v = H(r(73255)),
         h = H(r(99436)),
@@ -4579,8 +4579,8 @@ _global.SENTRY_RELEASE = {
         ["doc-chapter", d.default],
         ["doc-colophon", p.default],
         ["doc-conclusion", f.default],
-        ["doc-cover", m.default],
-        ["doc-credit", b.default],
+        ["doc-cover", b.default],
+        ["doc-credit", m.default],
         ["doc-credits", y.default],
         ["doc-dedication", v.default],
         ["doc-endnote", h.default],
@@ -4647,8 +4647,8 @@ _global.SENTRY_RELEASE = {
         d = Ae(r(20767)),
         p = Ae(r(68674)),
         f = Ae(r(48502)),
-        m = Ae(r(42312)),
-        b = Ae(r(73064)),
+        b = Ae(r(42312)),
+        m = Ae(r(73064)),
         y = Ae(r(62709)),
         v = Ae(r(67398)),
         h = Ae(r(27026)),
@@ -4701,8 +4701,8 @@ _global.SENTRY_RELEASE = {
         de = Ae(r(81878)),
         pe = Ae(r(41967)),
         fe = Ae(r(59241)),
-        me = Ae(r(99516)),
-        be = Ae(r(49338)),
+        be = Ae(r(99516)),
+        me = Ae(r(49338)),
         ye = Ae(r(83839)),
         ve = Ae(r(84863)),
         he = Ae(r(20820)),
@@ -4736,8 +4736,8 @@ _global.SENTRY_RELEASE = {
         ["cell", d.default],
         ["checkbox", p.default],
         ["code", f.default],
-        ["columnheader", m.default],
-        ["combobox", b.default],
+        ["columnheader", b.default],
+        ["combobox", m.default],
         ["complementary", y.default],
         ["contentinfo", v.default],
         ["definition", h.default],
@@ -4790,8 +4790,8 @@ _global.SENTRY_RELEASE = {
         ["slider", de.default],
         ["spinbutton", pe.default],
         ["status", fe.default],
-        ["strong", me.default],
-        ["subscript", be.default],
+        ["strong", be.default],
+        ["subscript", me.default],
         ["superscript", ye.default],
         ["switch", ve.default],
         ["tab", he.default],
@@ -9384,8 +9384,8 @@ _global.SENTRY_RELEASE = {
             }))
           }
         },
-        m = (0, n.default)(f, f.entries());
-      t.default = m
+        b = (0, n.default)(f, f.entries());
+      t.default = b
     },
     66947: (e, t, r) => {
       "use strict";
@@ -9529,7 +9529,7 @@ _global.SENTRY_RELEASE = {
           n.f()
         }
       }));
-      var m = {
+      var b = {
           entries: function() {
             return f
           },
@@ -9556,7 +9556,7 @@ _global.SENTRY_RELEASE = {
             return t && t[1]
           },
           has: function(e) {
-            return !!m.get(e)
+            return !!b.get(e)
           },
           keys: function() {
             return f.map((function(e) {
@@ -9569,8 +9569,8 @@ _global.SENTRY_RELEASE = {
             }))
           }
         },
-        b = (0, l.default)(m, m.entries());
-      t.default = b
+        m = (0, l.default)(b, b.entries());
+      t.default = m
     },
     67177: (e, t, r) => {
       "use strict";
@@ -9682,8 +9682,8 @@ _global.SENTRY_RELEASE = {
         d = r(6707),
         p = r(99362),
         f = r(39561),
-        m = r(29292),
-        b = r(4111),
+        b = r(29292),
+        m = r(4111),
         y = r(98017),
         v = r(81576),
         h = r(57802),
@@ -9757,8 +9757,8 @@ _global.SENTRY_RELEASE = {
               v = t instanceof Error;
             if (s !== v) return !1;
             if ((s || v) && (e.name !== t.name || e.message !== t.message)) return !1;
-            var _ = m(e),
-              I = m(t);
+            var _ = b(e),
+              I = b(t);
             if (_ !== I) return !1;
             if ((_ || I) && (e.source !== t.source || a(e) !== a(t))) return !1;
             var U = f(e),
@@ -9788,8 +9788,8 @@ _global.SENTRY_RELEASE = {
               G = p(t);
             if (V !== G) return !1;
             if (V || G) return P(e) === P(t) && "function" == typeof Uint8Array && B(new Uint8Array(e), new Uint8Array(t), r, o);
-            var K = b(e),
-              X = b(t);
+            var K = m(e),
+              X = m(t);
             if (K !== X) return !1;
             if (K || X) return w(e) === w(t) && "function" == typeof Uint8Array && B(new Uint8Array(e), new Uint8Array(t), r, o);
             if (typeof e != typeof t) return !1;
@@ -10027,18 +10027,18 @@ _global.SENTRY_RELEASE = {
         f = Object.getPrototypeOf || (p ? function(e) {
           return e.__proto__
         } : null),
-        m = {},
-        b = "undefined" != typeof Uint8Array && f ? f(Uint8Array) : n,
+        b = {},
+        m = "undefined" != typeof Uint8Array && f ? f(Uint8Array) : n,
         y = {
           "%AggregateError%": "undefined" == typeof AggregateError ? n : AggregateError,
           "%Array%": Array,
           "%ArrayBuffer%": "undefined" == typeof ArrayBuffer ? n : ArrayBuffer,
           "%ArrayIteratorPrototype%": d && f ? f([][Symbol.iterator]()) : n,
           "%AsyncFromSyncIteratorPrototype%": n,
-          "%AsyncFunction%": m,
-          "%AsyncGenerator%": m,
-          "%AsyncGeneratorFunction%": m,
-          "%AsyncIteratorPrototype%": m,
+          "%AsyncFunction%": b,
+          "%AsyncGenerator%": b,
+          "%AsyncGeneratorFunction%": b,
+          "%AsyncIteratorPrototype%": b,
           "%Atomics%": "undefined" == typeof Atomics ? n : Atomics,
           "%BigInt%": "undefined" == typeof BigInt ? n : BigInt,
           "%BigInt64Array%": "undefined" == typeof BigInt64Array ? n : BigInt64Array,
@@ -10057,7 +10057,7 @@ _global.SENTRY_RELEASE = {
           "%Float64Array%": "undefined" == typeof Float64Array ? n : Float64Array,
           "%FinalizationRegistry%": "undefined" == typeof FinalizationRegistry ? n : FinalizationRegistry,
           "%Function%": a,
-          "%GeneratorFunction%": m,
+          "%GeneratorFunction%": b,
           "%Int8Array%": "undefined" == typeof Int8Array ? n : Int8Array,
           "%Int16Array%": "undefined" == typeof Int16Array ? n : Int16Array,
           "%Int32Array%": "undefined" == typeof Int32Array ? n : Int32Array,
@@ -10086,7 +10086,7 @@ _global.SENTRY_RELEASE = {
           "%Symbol%": d ? Symbol : n,
           "%SyntaxError%": o,
           "%ThrowTypeError%": c,
-          "%TypedArray%": b,
+          "%TypedArray%": m,
           "%TypeError%": i,
           "%Uint8Array%": "undefined" == typeof Uint8Array ? n : Uint8Array,
           "%Uint8ClampedArray%": "undefined" == typeof Uint8ClampedArray ? n : Uint8ClampedArray,
@@ -10183,7 +10183,7 @@ _global.SENTRY_RELEASE = {
           var r, n = e;
           if (w(g, n) && (n = "%" + (r = g[n])[0] + "%"), w(y, n)) {
             var a = y[n];
-            if (a === m && (a = h(n)), void 0 === a && !t) throw new i("intrinsic " + e + " exists, but is not available. Please file an issue!");
+            if (a === b && (a = h(n)), void 0 === a && !t) throw new i("intrinsic " + e + " exists, but is not available. Please file an issue!");
             return {
               alias: r,
               name: n,
@@ -10214,20 +10214,20 @@ _global.SENTRY_RELEASE = {
           d = a.alias;
         d && (n = d[0], E(r, C([0, 1], d)));
         for (var p = 1, f = !0; p < r.length; p += 1) {
-          var m = r[p],
-            b = x(m, 0, 1),
-            v = x(m, -1);
-          if (('"' === b || "'" === b || "`" === b || '"' === v || "'" === v || "`" === v) && b !== v) throw new o("property names with quotes must have matching quotes");
-          if ("constructor" !== m && f || (c = !0), w(y, l = "%" + (n += "." + m) + "%")) s = y[l];
+          var b = r[p],
+            m = x(b, 0, 1),
+            v = x(b, -1);
+          if (('"' === m || "'" === m || "`" === m || '"' === v || "'" === v || "`" === v) && m !== v) throw new o("property names with quotes must have matching quotes");
+          if ("constructor" !== b && f || (c = !0), w(y, l = "%" + (n += "." + b) + "%")) s = y[l];
           else if (null != s) {
-            if (!(m in s)) {
+            if (!(b in s)) {
               if (!t) throw new i("base intrinsic for " + e + " exists, but the property is not available.");
               return
             }
             if (u && p + 1 >= r.length) {
-              var h = u(s, m);
-              s = (f = !!h) && "get" in h && !("originalValue" in h.get) ? h.get : s[m]
-            } else f = w(s, m), s = s[m];
+              var h = u(s, b);
+              s = (f = !!h) && "get" in h && !("originalValue" in h.get) ? h.get : s[b]
+            } else f = w(s, b), s = s[b];
             f && !c && (y[l] = s)
           }
         }
@@ -10816,47 +10816,47 @@ _global.SENTRY_RELEASE = {
               d = 2,
               p = 3,
               f = 2,
-              m = [],
-              b = 0,
+              b = [],
+              m = 0,
               y = 0;
             for (a = 0; a < e.length; a += 1)
               if (u = e.charAt(a), Object.prototype.hasOwnProperty.call(i, u) || (i[u] = p++, l[u] = !0), s = c + u, Object.prototype.hasOwnProperty.call(i, s)) c = s;
               else {
                 if (Object.prototype.hasOwnProperty.call(l, c)) {
                   if (c.charCodeAt(0) < 256) {
-                    for (n = 0; n < f; n++) b <<= 1, y == t - 1 ? (y = 0, m.push(r(b)), b = 0) : y++;
-                    for (o = c.charCodeAt(0), n = 0; n < 8; n++) b = b << 1 | 1 & o, y == t - 1 ? (y = 0, m.push(r(b)), b = 0) : y++, o >>= 1
+                    for (n = 0; n < f; n++) m <<= 1, y == t - 1 ? (y = 0, b.push(r(m)), m = 0) : y++;
+                    for (o = c.charCodeAt(0), n = 0; n < 8; n++) m = m << 1 | 1 & o, y == t - 1 ? (y = 0, b.push(r(m)), m = 0) : y++, o >>= 1
                   } else {
-                    for (o = 1, n = 0; n < f; n++) b = b << 1 | o, y == t - 1 ? (y = 0, m.push(r(b)), b = 0) : y++, o = 0;
-                    for (o = c.charCodeAt(0), n = 0; n < 16; n++) b = b << 1 | 1 & o, y == t - 1 ? (y = 0, m.push(r(b)), b = 0) : y++, o >>= 1
+                    for (o = 1, n = 0; n < f; n++) m = m << 1 | o, y == t - 1 ? (y = 0, b.push(r(m)), m = 0) : y++, o = 0;
+                    for (o = c.charCodeAt(0), n = 0; n < 16; n++) m = m << 1 | 1 & o, y == t - 1 ? (y = 0, b.push(r(m)), m = 0) : y++, o >>= 1
                   }
                   0 == --d && (d = Math.pow(2, f), f++), delete l[c]
                 } else
-                  for (o = i[c], n = 0; n < f; n++) b = b << 1 | 1 & o, y == t - 1 ? (y = 0, m.push(r(b)), b = 0) : y++, o >>= 1;
+                  for (o = i[c], n = 0; n < f; n++) m = m << 1 | 1 & o, y == t - 1 ? (y = 0, b.push(r(m)), m = 0) : y++, o >>= 1;
                 0 == --d && (d = Math.pow(2, f), f++), i[s] = p++, c = String(u)
               } if ("" !== c) {
               if (Object.prototype.hasOwnProperty.call(l, c)) {
                 if (c.charCodeAt(0) < 256) {
-                  for (n = 0; n < f; n++) b <<= 1, y == t - 1 ? (y = 0, m.push(r(b)), b = 0) : y++;
-                  for (o = c.charCodeAt(0), n = 0; n < 8; n++) b = b << 1 | 1 & o, y == t - 1 ? (y = 0, m.push(r(b)), b = 0) : y++, o >>= 1
+                  for (n = 0; n < f; n++) m <<= 1, y == t - 1 ? (y = 0, b.push(r(m)), m = 0) : y++;
+                  for (o = c.charCodeAt(0), n = 0; n < 8; n++) m = m << 1 | 1 & o, y == t - 1 ? (y = 0, b.push(r(m)), m = 0) : y++, o >>= 1
                 } else {
-                  for (o = 1, n = 0; n < f; n++) b = b << 1 | o, y == t - 1 ? (y = 0, m.push(r(b)), b = 0) : y++, o = 0;
-                  for (o = c.charCodeAt(0), n = 0; n < 16; n++) b = b << 1 | 1 & o, y == t - 1 ? (y = 0, m.push(r(b)), b = 0) : y++, o >>= 1
+                  for (o = 1, n = 0; n < f; n++) m = m << 1 | o, y == t - 1 ? (y = 0, b.push(r(m)), m = 0) : y++, o = 0;
+                  for (o = c.charCodeAt(0), n = 0; n < 16; n++) m = m << 1 | 1 & o, y == t - 1 ? (y = 0, b.push(r(m)), m = 0) : y++, o >>= 1
                 }
                 0 == --d && (d = Math.pow(2, f), f++), delete l[c]
               } else
-                for (o = i[c], n = 0; n < f; n++) b = b << 1 | 1 & o, y == t - 1 ? (y = 0, m.push(r(b)), b = 0) : y++, o >>= 1;
+                for (o = i[c], n = 0; n < f; n++) m = m << 1 | 1 & o, y == t - 1 ? (y = 0, b.push(r(m)), m = 0) : y++, o >>= 1;
               0 == --d && (d = Math.pow(2, f), f++)
             }
-            for (o = 2, n = 0; n < f; n++) b = b << 1 | 1 & o, y == t - 1 ? (y = 0, m.push(r(b)), b = 0) : y++, o >>= 1;
+            for (o = 2, n = 0; n < f; n++) m = m << 1 | 1 & o, y == t - 1 ? (y = 0, b.push(r(m)), m = 0) : y++, o >>= 1;
             for (;;) {
-              if (b <<= 1, y == t - 1) {
-                m.push(r(b));
+              if (m <<= 1, y == t - 1) {
+                b.push(r(m));
                 break
               }
               y++
             }
-            return m.join("")
+            return b.join("")
           },
           decompress: function(e) {
             return null == e ? "" : "" == e ? null : a._decompress(e.length, 32768, (function(t) {
@@ -10867,8 +10867,8 @@ _global.SENTRY_RELEASE = {
             var o, a, i, l, u, s, c, d = [],
               p = 4,
               f = 4,
-              m = 3,
-              b = "",
+              b = 3,
+              m = "",
               y = [],
               v = {
                 val: n(0),
@@ -10891,7 +10891,7 @@ _global.SENTRY_RELEASE = {
             }
             for (d[3] = c, a = c, y.push(c);;) {
               if (v.index > t) return "";
-              for (i = 0, u = Math.pow(2, m), s = 1; s != u;) l = v.val & v.position, v.position >>= 1, 0 == v.position && (v.position = r, v.val = n(v.index++)), i |= (l > 0 ? 1 : 0) * s, s <<= 1;
+              for (i = 0, u = Math.pow(2, b), s = 1; s != u;) l = v.val & v.position, v.position >>= 1, 0 == v.position && (v.position = r, v.val = n(v.index++)), i |= (l > 0 ? 1 : 0) * s, s <<= 1;
               switch (c = i) {
                 case 0:
                   for (i = 0, u = Math.pow(2, 8), s = 1; s != u;) l = v.val & v.position, v.position >>= 1, 0 == v.position && (v.position = r, v.val = n(v.index++)), i |= (l > 0 ? 1 : 0) * s, s <<= 1;
@@ -10904,12 +10904,12 @@ _global.SENTRY_RELEASE = {
                 case 2:
                   return y.join("")
               }
-              if (0 == p && (p = Math.pow(2, m), m++), d[c]) b = d[c];
+              if (0 == p && (p = Math.pow(2, b), b++), d[c]) m = d[c];
               else {
                 if (c !== f) return null;
-                b = a + a.charAt(0)
+                m = a + a.charAt(0)
               }
-              y.push(b), d[f++] = a + b.charAt(0), a = b, 0 == --p && (p = Math.pow(2, m), m++)
+              y.push(m), d[f++] = a + m.charAt(0), a = m, 0 == --p && (p = Math.pow(2, b), b++)
             }
           }
         };
@@ -10931,8 +10931,8 @@ _global.SENTRY_RELEASE = {
         d = "function" == typeof WeakMap && WeakMap.prototype ? WeakMap.prototype.has : null,
         p = "function" == typeof WeakSet && WeakSet.prototype ? WeakSet.prototype.has : null,
         f = "function" == typeof WeakRef && WeakRef.prototype ? WeakRef.prototype.deref : null,
-        m = Boolean.prototype.valueOf,
-        b = Object.prototype.toString,
+        b = Boolean.prototype.valueOf,
+        m = Object.prototype.toString,
         y = Function.prototype.toString,
         v = String.prototype.match,
         h = String.prototype.slice,
@@ -11001,8 +11001,8 @@ _global.SENTRY_RELEASE = {
         var u = n || {};
         if (W(u, "quoteStyle") && "single" !== u.quoteStyle && "double" !== u.quoteStyle) throw new TypeError('option "quoteStyle" must be "single" or "double"');
         if (W(u, "maxStringLength") && ("number" == typeof u.maxStringLength ? u.maxStringLength < 0 && u.maxStringLength !== 1 / 0 : null !== u.maxStringLength)) throw new TypeError('option "maxStringLength", if provided, must be a positive integer, Infinity, or `null`');
-        var b = !W(u, "customInspect") || u.customInspect;
-        if ("boolean" != typeof b && "symbol" !== b) throw new TypeError("option \"customInspect\", if provided, must be `true`, `false`, or `'symbol'`");
+        var m = !W(u, "customInspect") || u.customInspect;
+        if ("boolean" != typeof m && "symbol" !== m) throw new TypeError("option \"customInspect\", if provided, must be `true`, `false`, or `'symbol'`");
         if (W(u, "indent") && null !== u.indent && "\t" !== u.indent && !(parseInt(u.indent, 10) === u.indent && u.indent > 0)) throw new TypeError('option "indent" must be "\\t", an integer > 0, or `null`');
         if (W(u, "numericSeparator") && "boolean" != typeof u.numericSeparator) throw new TypeError('option "numericSeparator", if provided, must be `true` or `false`');
         var P = u.numericSeparator;
@@ -11077,11 +11077,11 @@ _global.SENTRY_RELEASE = {
           var le = Q(t, K);
           return "cause" in Error.prototype || !("cause" in t) || M.call(t, "cause") ? 0 === le.length ? "[" + String(t) + "]" : "{ [" + String(t) + "] " + q.call(le, ", ") + " }" : "{ [" + String(t) + "] " + q.call(E.call("[cause]: " + K(t.cause), le), ", ") + " }"
         }
-        if ("object" == typeof t && b) {
+        if ("object" == typeof t && m) {
           if (F && "function" == typeof t[F] && k) return k(t, {
             depth: R - o
           });
-          if ("symbol" !== b && "function" == typeof t.inspect) return t.inspect()
+          if ("symbol" !== m && "function" == typeof t.inspect) return t.inspect()
         }
         if (function(e) {
             if (!a || !e || "object" != typeof e) return !1;
@@ -11164,7 +11164,7 @@ _global.SENTRY_RELEASE = {
           }(t)) return X(K(S.call(t)));
         if (function(e) {
             return !("[object Boolean]" !== z(e) || A && "object" == typeof e && A in e)
-          }(t)) return X(m.call(t));
+          }(t)) return X(b.call(t));
         if (function(e) {
             return !("[object String]" !== z(e) || A && "object" == typeof e && A in e)
           }(t)) return X(K(String(t)));
@@ -11177,8 +11177,8 @@ _global.SENTRY_RELEASE = {
             de = T ? T(t) === Object.prototype : t instanceof Object || t.constructor === Object,
             pe = t instanceof Object ? "" : "null prototype",
             fe = !de && A && Object(t) === t && A in t ? h.call(z(t), 8, -1) : pe ? "Object" : "",
-            me = (de || "function" != typeof t.constructor ? "" : t.constructor.name ? t.constructor.name + " " : "") + (fe || pe ? "[" + q.call(E.call([], fe || [], pe || []), ": ") + "] " : "");
-          return 0 === ce.length ? me + "{}" : $ ? me + "{" + Z(ce, $) + "}" : me + "{ " + q.call(ce, ", ") + " }"
+            be = (de || "function" != typeof t.constructor ? "" : t.constructor.name ? t.constructor.name + " " : "") + (fe || pe ? "[" + q.call(E.call([], fe || [], pe || []), ": ") + "] " : "");
+          return 0 === ce.length ? be + "{}" : $ ? be + "{" + Z(ce, $) + "}" : be + "{ " + q.call(ce, ", ") + " }"
         }
         return String(t)
       };
@@ -11191,7 +11191,7 @@ _global.SENTRY_RELEASE = {
       }
 
       function z(e) {
-        return b.call(e)
+        return m.call(e)
       }
 
       function V(e, t) {
@@ -11365,13 +11365,13 @@ _global.SENTRY_RELEASE = {
             l = t && "[object String]" === a.call(e),
             p = [];
           if (!t && !r && !n) throw new TypeError("Object.keys called on a non-object");
-          var m = s && r;
+          var b = s && r;
           if (l && e.length > 0 && !o.call(e, 0))
-            for (var b = 0; b < e.length; ++b) p.push(String(b));
+            for (var m = 0; m < e.length; ++m) p.push(String(m));
           if (n && e.length > 0)
             for (var y = 0; y < e.length; ++y) p.push(String(y));
           else
-            for (var v in e) m && "prototype" === v || !o.call(e, v) || p.push(String(v));
+            for (var v in e) b && "prototype" === v || !o.call(e, v) || p.push(String(v));
           if (u)
             for (var h = function(e) {
                 if ("undefined" == typeof window || !f) return d(e);
@@ -11435,9 +11435,9 @@ _global.SENTRY_RELEASE = {
             d = n(c),
             p = o && (Object.getOwnPropertySymbols || s);
           if (p)
-            for (var f = p(c), m = 0; m < f.length; ++m) {
-              var b = f[m];
-              u(c, b) && l(d, b)
+            for (var f = p(c), b = 0; b < f.length; ++b) {
+              var m = f[b];
+              u(c, m) && l(d, m)
             }
           for (var y = 0; y < d.length; ++y) {
             var v = d[y];
@@ -11596,8 +11596,8 @@ _global.SENTRY_RELEASE = {
         }
       }
       const f = Object.prototype.toString,
-        m = Date.prototype.toISOString,
-        b = Error.prototype.toString,
+        b = Date.prototype.toISOString,
+        m = Error.prototype.toString,
         y = RegExp.prototype.toString,
         v = e => "function" == typeof e.constructor && e.constructor.name || "Object",
         h = e => "undefined" != typeof window && e === window,
@@ -11618,7 +11618,7 @@ _global.SENTRY_RELEASE = {
       }
 
       function q(e) {
-        return "[" + b.call(e) + "]"
+        return "[" + m.call(e) + "]"
       }
 
       function x(e, t, r, n) {
@@ -11636,7 +11636,7 @@ _global.SENTRY_RELEASE = {
         if ("function" === o) return C(e, t);
         if ("symbol" === o) return E(e);
         const a = f.call(e);
-        return "[object WeakMap]" === a ? "WeakMap {}" : "[object WeakSet]" === a ? "WeakSet {}" : "[object Function]" === a || "[object GeneratorFunction]" === a ? C(e, t) : "[object Symbol]" === a ? E(e) : "[object Date]" === a ? isNaN(+e) ? "Date { NaN }" : m.call(e) : "[object Error]" === a ? q(e) : "[object RegExp]" === a ? r ? y.call(e).replace(/[\\^$*+?.()|[\]{}]/g, "\\$&") : y.call(e) : e instanceof Error ? q(e) : null
+        return "[object WeakMap]" === a ? "WeakMap {}" : "[object WeakSet]" === a ? "WeakSet {}" : "[object Function]" === a || "[object GeneratorFunction]" === a ? C(e, t) : "[object Symbol]" === a ? E(e) : "[object Date]" === a ? isNaN(+e) ? "Date { NaN }" : b.call(e) : "[object Error]" === a ? q(e) : "[object RegExp]" === a ? r ? y.call(e).replace(/[\\^$*+?.()|[\]{}]/g, "\\$&") : y.call(e) : e instanceof Error ? q(e) : null
       }
 
       function O(e, t, r, n, a, i) {
@@ -12105,14 +12105,14 @@ _global.SENTRY_RELEASE = {
         d = 60120,
         p = 60115,
         f = 60116,
-        m = 60121,
-        b = 60122,
+        b = 60121,
+        m = 60122,
         y = 60117,
         v = 60129,
         h = 60131;
       if ("function" == typeof Symbol && Symbol.for) {
         var g = Symbol.for;
-        r = g("react.element"), n = g("react.portal"), o = g("react.fragment"), a = g("react.strict_mode"), i = g("react.profiler"), l = g("react.provider"), u = g("react.context"), s = g("react.forward_ref"), c = g("react.suspense"), d = g("react.suspense_list"), p = g("react.memo"), f = g("react.lazy"), m = g("react.block"), b = g("react.server.block"), y = g("react.fundamental"), v = g("react.debug_trace_mode"), h = g("react.legacy_hidden")
+        r = g("react.element"), n = g("react.portal"), o = g("react.fragment"), a = g("react.strict_mode"), i = g("react.profiler"), l = g("react.provider"), u = g("react.context"), s = g("react.forward_ref"), c = g("react.suspense"), d = g("react.suspense_list"), p = g("react.memo"), f = g("react.lazy"), b = g("react.block"), m = g("react.server.block"), y = g("react.fundamental"), v = g("react.debug_trace_mode"), h = g("react.legacy_hidden")
       }
 
       function P(e) {
@@ -12181,7 +12181,7 @@ _global.SENTRY_RELEASE = {
       }, t.isSuspense = function(e) {
         return P(e) === c
       }, t.isValidElementType = function(e) {
-        return "string" == typeof e || "function" == typeof e || e === o || e === i || e === v || e === a || e === c || e === d || e === h || "object" == typeof e && null !== e && (e.$$typeof === f || e.$$typeof === p || e.$$typeof === l || e.$$typeof === u || e.$$typeof === s || e.$$typeof === y || e.$$typeof === m || e[0] === b)
+        return "string" == typeof e || "function" == typeof e || e === o || e === i || e === v || e === a || e === c || e === d || e === h || "object" == typeof e && null !== e && (e.$$typeof === f || e.$$typeof === p || e.$$typeof === l || e.$$typeof === u || e.$$typeof === s || e.$$typeof === y || e.$$typeof === b || e[0] === m)
       }, t.typeOf = P
     },
     36842: (e, t, r) => {
@@ -12304,8 +12304,8 @@ _global.SENTRY_RELEASE = {
         d = o("WeakMap.prototype.has", !0),
         p = o("Map.prototype.get", !0),
         f = o("Map.prototype.set", !0),
-        m = o("Map.prototype.has", !0),
-        b = function(e, t) {
+        b = o("Map.prototype.has", !0),
+        m = function(e, t) {
           for (var r, n = e; null !== (r = n.next); n = r)
             if (r.key === t) return n.next = r.next, r.next = e.next, e.next = r, r
         };
@@ -12320,7 +12320,7 @@ _global.SENTRY_RELEASE = {
             } else if (u) {
               if (t) return p(t, n)
             } else if (r) return function(e, t) {
-              var r = b(e, t);
+              var r = m(e, t);
               return r && r.value
             }(r, n)
           },
@@ -12328,9 +12328,9 @@ _global.SENTRY_RELEASE = {
             if (l && n && ("object" == typeof n || "function" == typeof n)) {
               if (e) return d(e, n)
             } else if (u) {
-              if (t) return m(t, n)
+              if (t) return b(t, n)
             } else if (r) return function(e, t) {
-              return !!b(e, t)
+              return !!m(e, t)
             }(r, n);
             return !1
           },
@@ -12339,7 +12339,7 @@ _global.SENTRY_RELEASE = {
               key: {},
               next: null
             }), function(e, t, r) {
-              var n = b(e, t);
+              var n = m(e, t);
               n ? n.value = r : e.next = {
                 key: t,
                 next: e.next,
@@ -12404,12 +12404,12 @@ _global.SENTRY_RELEASE = {
         d = o(),
         p = i("String.prototype.slice"),
         f = Object.getPrototypeOf,
-        m = i("Array.prototype.indexOf", !0) || function(e, t) {
+        b = i("Array.prototype.indexOf", !0) || function(e, t) {
           for (var r = 0; r < e.length; r += 1)
             if (e[r] === t) return r;
           return -1
         },
-        b = {
+        m = {
           __proto__: null
         };
       n(d, s && l && f ? function(e) {
@@ -12421,19 +12421,19 @@ _global.SENTRY_RELEASE = {
             var o = f(r);
             n = l(o, Symbol.toStringTag)
           }
-          b["$" + e] = a(n.get)
+          m["$" + e] = a(n.get)
         }
       } : function(e) {
         var t = new c[e],
           r = t.slice || t.set;
-        r && (b["$" + e] = a(r))
+        r && (m["$" + e] = a(r))
       }), e.exports = function(e) {
         if (!e || "object" != typeof e) return !1;
         if (!s) {
           var t = p(u(e), 8, -1);
-          return m(d, t) > -1 ? t : "Object" === t && function(e) {
+          return b(d, t) > -1 ? t : "Object" === t && function(e) {
             var t = !1;
-            return n(b, (function(r, n) {
+            return n(m, (function(r, n) {
               if (!t) try {
                 r(e), t = p(n, 1)
               } catch (e) {}
@@ -12442,7 +12442,7 @@ _global.SENTRY_RELEASE = {
         }
         return l ? function(e) {
           var t = !1;
-          return n(b, (function(r, n) {
+          return n(m, (function(r, n) {
             if (!t) try {
               "$" + r(e) === n && (t = p(n, 1))
             } catch (e) {}
@@ -12477,8 +12477,8 @@ _global.SENTRY_RELEASE = {
           d = s("%Set%", !0),
           p = r(72717),
           f = p("Array.prototype.push"),
-          m = p("String.prototype.charCodeAt"),
-          b = p("String.prototype.slice"),
+          b = p("String.prototype.charCodeAt"),
+          m = p("String.prototype.slice"),
           y = function(e) {
             var t = 0;
             return {
@@ -12499,12 +12499,12 @@ _global.SENTRY_RELEASE = {
                 next: function() {
                   var t = function(e, t) {
                       if (t + 1 >= e.length) return t + 1;
-                      var r = m(e, t);
+                      var r = b(e, t);
                       if (r < 55296 || r > 56319) return t + 1;
-                      var n = m(e, t + 1);
+                      var n = b(e, t + 1);
                       return n < 56320 || n > 57343 ? t + 1 : t + 2
                     }(e, r),
-                    n = b(e, r, t);
+                    n = m(e, r, t);
                   return r = t, {
                     done: t > e.length,
                     value: n

@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       o = (new Error).stack;
-    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "b7affc4d-d570-4045-b824-5de9a8cb6e1f", e._sentryDebugIdIdentifier = "sentry-dbid-b7affc4d-d570-4045-b824-5de9a8cb6e1f")
+    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "0f796a66-e3bf-4142-8f52-eef83b2a5ff5", e._sentryDebugIdIdentifier = "sentry-dbid-0f796a66-e3bf-4142-8f52-eef83b2a5ff5")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -15,7 +15,7 @@ var _global = "undefined" != typeof window ? window : "undefined" != typeof glob
 _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
-  [524, 143], {
+  [143, 524], {
     4143: (e, o, s) => {
       "use strict";
       s.r(o), s.d(o, {
@@ -99,7 +99,7 @@ _global.SENTRY_RELEASE = {
       s.d(o, {
         A: () => l
       });
-      var t = s(922),
+      var t = s(5662),
         n = s(1403),
         a = s(5136);
       const l = e => {

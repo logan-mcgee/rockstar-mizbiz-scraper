@@ -18,38 +18,38 @@ _global.SENTRY_RELEASE = {
   [3277, 5658], {
     83277: (e, n, t) => {
       t.r(n), t.d(n, {
-        useGSAP: () => c
+        useGSAP: () => u
       });
       var d = t(71403),
         a = t(26040),
         o = t.n(a);
-      let f = "undefined" != typeof window ? d.useLayoutEffect : d.useEffect,
-        s = e => e && !Array.isArray(e) && "object" == typeof e,
+      let s = "undefined" != typeof window ? d.useLayoutEffect : d.useEffect,
+        f = e => e && !Array.isArray(e) && "object" == typeof e,
         r = [],
         l = {},
         i = o();
-      const c = function(e) {
+      const u = function(e) {
         let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r,
           t = l;
-        s(e) ? (t = e, e = null, n = "dependencies" in t ? t.dependencies : r) : s(n) && (t = n, n = "dependencies" in t ? t.dependencies : r);
+        f(e) ? (t = e, e = null, n = "dependencies" in t ? t.dependencies : r) : f(n) && (t = n, n = "dependencies" in t ? t.dependencies : r);
         let {
           scope: a,
           revertOnUpdate: o
-        } = t, [c, u] = (0, d.useState)(!1);
+        } = t, [u, c] = (0, d.useState)(!1);
         e && "function" != typeof e && console.warn("First parameter must be a function or config object");
-        const g = i.context((() => {}), a),
-          b = () => g.revert(),
+        const b = i.context((() => {}), a),
+          g = () => b.revert(),
           y = n && n.length && !o;
-        return f((() => {
-          if (e && g.add(e, a), !y || !c) return b
-        }), n), y && f((() => (u(!0), b)), r), {
-          context: g,
-          contextSafe: e => g.add(null, e)
+        return s((() => {
+          if (e && b.add(e, a), !y || !u) return g
+        }), n), y && s((() => (c(!0), g)), r), {
+          context: b,
+          contextSafe: e => b.add(null, e)
         }
       };
-      c.register = e => {
+      u.register = e => {
         i = e
-      }, c.headless = !0
+      }, u.headless = !0
     }
   }
 ]);

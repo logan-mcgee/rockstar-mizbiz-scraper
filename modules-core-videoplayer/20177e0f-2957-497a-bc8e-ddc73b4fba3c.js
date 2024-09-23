@@ -29,7 +29,7 @@ _global.SENTRY_RELEASE = {
         beforeRead: () => g,
         beforeWrite: () => E,
         bottom: () => o,
-        clippingParents: () => d,
+        clippingParents: () => l,
         computeStyles: () => ne,
         createPopper: () => Le,
         createPopperBase: () => _e,
@@ -54,7 +54,7 @@ _global.SENTRY_RELEASE = {
         start: () => c,
         top: () => r,
         variationPlacements: () => h,
-        viewport: () => l,
+        viewport: () => d,
         write: () => j
       });
       var r = "top",
@@ -65,8 +65,8 @@ _global.SENTRY_RELEASE = {
         f = [r, o, i, a],
         c = "start",
         p = "end",
-        d = "clippingParents",
-        l = "viewport",
+        l = "clippingParents",
+        d = "viewport",
         u = "popper",
         m = "reference",
         h = f.reduce((function(e, t) {
@@ -186,13 +186,13 @@ _global.SENTRY_RELEASE = {
           f = (r.left + (s && a ? a.offsetLeft : 0)) / o,
           c = (r.top + (s && a ? a.offsetTop : 0)) / i,
           p = r.width / o,
-          d = r.height / i;
+          l = r.height / i;
         return {
           width: p,
-          height: d,
+          height: l,
           top: c,
           right: f + p,
-          bottom: c + d,
+          bottom: c + l,
           left: f,
           x: f,
           y: c
@@ -290,11 +290,11 @@ _global.SENTRY_RELEASE = {
             s = e.name,
             c = e.options,
             p = n.elements.arrow,
-            d = n.modifiersData.popperOffsets,
-            l = R(n.placement),
-            u = G(l),
-            m = [a, i].indexOf(l) >= 0 ? "height" : "width";
-          if (p && d) {
+            l = n.modifiersData.popperOffsets,
+            d = R(n.placement),
+            u = G(d),
+            m = [a, i].indexOf(d) >= 0 ? "height" : "width";
+          if (p && l) {
             var h = function(e, t) {
                 return K("number" != typeof(e = "function" == typeof e ? e(Object.assign({}, t.rects, {
                   placement: t.placement
@@ -303,8 +303,8 @@ _global.SENTRY_RELEASE = {
               v = q(p),
               g = "y" === u ? r : a,
               y = "y" === u ? o : i,
-              b = n.rects.reference[m] + n.rects.reference[u] - d[u] - n.rects.popper[m],
-              w = d[u] - n.rects.reference[u],
+              b = n.rects.reference[m] + n.rects.reference[u] - l[u] - n.rects.popper[m],
+              w = l[u] - n.rects.reference[u],
               x = X(p),
               O = x ? "y" === u ? x.clientHeight || 0 : x.clientWidth || 0 : 0,
               E = b / 2 - w / 2,
@@ -341,15 +341,15 @@ _global.SENTRY_RELEASE = {
           s = e.popperRect,
           f = e.placement,
           c = e.variation,
-          d = e.offsets,
-          l = e.position,
+          l = e.offsets,
+          d = e.position,
           u = e.gpuAcceleration,
           m = e.adaptive,
           h = e.roundOffsets,
           v = e.isFixed,
-          g = d.x,
+          g = l.x,
           y = void 0 === g ? 0 : g,
-          b = d.y,
+          b = l.y,
           w = void 0 === b ? 0 : b,
           x = "function" == typeof h ? h({
             x: y,
@@ -359,8 +359,8 @@ _global.SENTRY_RELEASE = {
             y: w
           };
         y = x.x, w = x.y;
-        var O = d.hasOwnProperty("x"),
-          E = d.hasOwnProperty("y"),
+        var O = l.hasOwnProperty("x"),
+          E = l.hasOwnProperty("y"),
           j = a,
           D = r,
           k = window;
@@ -368,10 +368,10 @@ _global.SENTRY_RELEASE = {
           var A = X(n),
             P = "clientHeight",
             _ = "clientWidth";
-          A === M(n) && "static" !== N(A = U(n)).position && "absolute" === l && (P = "scrollHeight", _ = "scrollWidth"), (f === r || (f === a || f === i) && c === p) && (D = o, w -= (v && A === k && k.visualViewport ? k.visualViewport.height : A[P]) - s.height, w *= u ? 1 : -1), f !== a && (f !== r && f !== o || c !== p) || (j = i, y -= (v && A === k && k.visualViewport ? k.visualViewport.width : A[_]) - s.width, y *= u ? 1 : -1)
+          A === M(n) && "static" !== N(A = U(n)).position && "absolute" === d && (P = "scrollHeight", _ = "scrollWidth"), (f === r || (f === a || f === i) && c === p) && (D = o, w -= (v && A === k && k.visualViewport ? k.visualViewport.height : A[P]) - s.height, w *= u ? 1 : -1), f !== a && (f !== r && f !== o || c !== p) || (j = i, y -= (v && A === k && k.visualViewport ? k.visualViewport.width : A[_]) - s.width, y *= u ? 1 : -1)
         }
         var L, W = Object.assign({
-            position: l
+            position: d
           }, m && ee),
           R = !0 === h ? function(e, t) {
             var n = e.x,
@@ -491,7 +491,7 @@ _global.SENTRY_RELEASE = {
         return V(U(e)).left + ce(e).scrollLeft
       }
 
-      function de(e) {
+      function le(e) {
         var t = N(e),
           n = t.overflow,
           r = t.overflowX,
@@ -499,17 +499,17 @@ _global.SENTRY_RELEASE = {
         return /auto|scroll|overlay|hidden/.test(n + o + r)
       }
 
-      function le(e) {
-        return ["html", "body", "#document"].indexOf(A(e)) >= 0 ? e.ownerDocument.body : _(e) && de(e) ? e : le(z(e))
+      function de(e) {
+        return ["html", "body", "#document"].indexOf(A(e)) >= 0 ? e.ownerDocument.body : _(e) && le(e) ? e : de(z(e))
       }
 
       function ue(e, t) {
         var n;
         void 0 === t && (t = []);
-        var r = le(e),
+        var r = de(e),
           o = r === (null == (n = e.ownerDocument) ? void 0 : n.body),
           i = M(r),
-          a = o ? [i].concat(i.visualViewport || [], de(r) ? r : []) : r,
+          a = o ? [i].concat(i.visualViewport || [], le(r) ? r : []) : r,
           s = t.concat(a);
         return o ? s : s.concat(ue(z(a)))
       }
@@ -524,7 +524,7 @@ _global.SENTRY_RELEASE = {
       }
 
       function he(e, t, n) {
-        return t === l ? me(function(e, t) {
+        return t === d ? me(function(e, t) {
           var n = M(e),
             r = U(e),
             o = n.visualViewport,
@@ -567,11 +567,11 @@ _global.SENTRY_RELEASE = {
         var t, n = e.reference,
           s = e.element,
           f = e.placement,
-          d = f ? R(f) : null,
-          l = f ? $(f) : null,
+          l = f ? R(f) : null,
+          d = f ? $(f) : null,
           u = n.x + n.width / 2 - s.width / 2,
           m = n.y + n.height / 2 - s.height / 2;
-        switch (d) {
+        switch (l) {
           case r:
             t = {
               x: u,
@@ -602,10 +602,10 @@ _global.SENTRY_RELEASE = {
               y: n.y
             }
         }
-        var h = d ? G(d) : null;
+        var h = l ? G(l) : null;
         if (null != h) {
           var v = "y" === h ? "height" : "width";
-          switch (l) {
+          switch (d) {
             case c:
               t[h] = t[h] - (n[v] / 2 - s[v] / 2);
               break;
@@ -624,9 +624,9 @@ _global.SENTRY_RELEASE = {
           c = n.strategy,
           p = void 0 === c ? e.strategy : c,
           h = n.boundary,
-          v = void 0 === h ? d : h,
+          v = void 0 === h ? l : h,
           g = n.rootBoundary,
-          y = void 0 === g ? l : g,
+          y = void 0 === g ? d : g,
           b = n.elementContext,
           w = void 0 === b ? u : b,
           x = n.altBoundary,
@@ -688,7 +688,7 @@ _global.SENTRY_RELEASE = {
             n = e.options,
             p = e.name;
           if (!t.modifiersData[p]._skip) {
-            for (var d = n.mainAxis, l = void 0 === d || d, u = n.altAxis, m = void 0 === u || u, g = n.fallbackPlacements, y = n.padding, b = n.boundary, w = n.rootBoundary, x = n.altBoundary, O = n.flipVariations, E = void 0 === O || O, j = n.allowedAutoPlacements, D = t.options.placement, k = R(D), A = g || (k !== D && E ? function(e) {
+            for (var l = n.mainAxis, d = void 0 === l || l, u = n.altAxis, m = void 0 === u || u, g = n.fallbackPlacements, y = n.padding, b = n.boundary, w = n.rootBoundary, x = n.altBoundary, O = n.flipVariations, E = void 0 === O || O, j = n.allowedAutoPlacements, D = t.options.placement, k = R(D), A = g || (k !== D && E ? function(e) {
                 if (R(e) === s) return [];
                 var t = ae(e);
                 return [fe(e), t, fe(t)]
@@ -703,14 +703,14 @@ _global.SENTRY_RELEASE = {
                     s = n.flipVariations,
                     c = n.allowedAutoPlacements,
                     p = void 0 === c ? v : c,
-                    d = $(r),
-                    l = d ? s ? h : h.filter((function(e) {
-                      return $(e) === d
+                    l = $(r),
+                    d = l ? s ? h : h.filter((function(e) {
+                      return $(e) === l
                     })) : f,
-                    u = l.filter((function(e) {
+                    u = d.filter((function(e) {
                       return p.indexOf(e) >= 0
                     }));
-                  0 === u.length && (u = l);
+                  0 === u.length && (u = d);
                   var m = u.reduce((function(t, n) {
                     return t[n] = ge(e, {
                       placement: n,
@@ -747,7 +747,7 @@ _global.SENTRY_RELEASE = {
               P[q] > _[q] && (N = ae(N));
               var F = ae(N),
                 U = [];
-              if (l && U.push(I[T] <= 0), m && U.push(I[N] <= 0, I[F] <= 0), U.every((function(e) {
+              if (d && U.push(I[T] <= 0), m && U.push(I[N] <= 0, I[F] <= 0), U.every((function(e) {
                   return e
                 }))) {
                 B = S, W = !1;
@@ -811,15 +811,15 @@ _global.SENTRY_RELEASE = {
               f = be(a, r),
               c = be(s, o, i),
               p = we(f),
-              d = we(c);
+              l = we(c);
             t.modifiersData[n] = {
               referenceClippingOffsets: f,
               popperEscapeOffsets: c,
               isReferenceHidden: p,
-              hasPopperEscaped: d
+              hasPopperEscaped: l
             }, t.attributes.popper = Object.assign({}, t.attributes.popper, {
               "data-popper-reference-hidden": p,
-              "data-popper-escaped": d
+              "data-popper-escaped": l
             })
           }
         },
@@ -853,9 +853,9 @@ _global.SENTRY_RELEASE = {
                 }(n, t.rects, f), e
               }), {}),
               p = c[t.placement],
-              d = p.x,
-              l = p.y;
-            null != t.modifiersData.popperOffsets && (t.modifiersData.popperOffsets.x += d, t.modifiersData.popperOffsets.y += l), t.modifiersData[o] = c
+              l = p.x,
+              d = p.y;
+            null != t.modifiersData.popperOffsets && (t.modifiersData.popperOffsets.x += l, t.modifiersData.popperOffsets.y += d), t.modifiersData[o] = c
           }
         },
         Ee = {
@@ -884,8 +884,8 @@ _global.SENTRY_RELEASE = {
               s = e.name,
               f = n.mainAxis,
               p = void 0 === f || f,
-              d = n.altAxis,
-              l = void 0 !== d && d,
+              l = n.altAxis,
+              d = void 0 !== l && l,
               u = n.boundary,
               m = n.rootBoundary,
               h = n.altBoundary,
@@ -957,15 +957,15 @@ _global.SENTRY_RELEASE = {
                   pe = J(y ? H(F, N + oe - fe - se) : F, N, y ? B(U, ce) : U);
                 A[D] = pe, S[D] = pe - N
               }
-              if (l) {
-                var de, le = "x" === D ? r : a,
+              if (d) {
+                var le, de = "x" === D ? r : a,
                   ue = "x" === D ? o : i,
                   me = A[k],
                   he = "y" === k ? "height" : "width",
-                  ve = me + x[le],
+                  ve = me + x[de],
                   ye = me - x[ue],
                   be = -1 !== [r, a].indexOf(O),
-                  we = null != (de = null == W ? void 0 : W[k]) ? de : 0,
+                  we = null != (le = null == W ? void 0 : W[k]) ? le : 0,
                   xe = be ? ve : me - M[he] - P[he] - we + L.altAxis,
                   Oe = be ? me + M[he] + P[he] - we - L.altAxis : ye,
                   Ee = y && be ? function(e, t, n) {
@@ -999,7 +999,7 @@ _global.SENTRY_RELEASE = {
             x: 0,
             y: 0
           };
-        return (i || !i && !n) && (("body" !== A(t) || de(s)) && (c = (r = t) !== M(r) && _(r) ? {
+        return (i || !i && !n) && (("body" !== A(t) || le(s)) && (c = (r = t) !== M(r) && _(r) ? {
           scrollLeft: (o = r).scrollLeft,
           scrollTop: o.scrollTop
         } : ce(r)), _(t) ? ((p = V(t, !0)).x += t.clientLeft, p.y += t.clientTop) : s && (p.x = pe(s))), {
@@ -1069,11 +1069,11 @@ _global.SENTRY_RELEASE = {
               state: s,
               setOptions: function(n) {
                 var o = "function" == typeof n ? n(s.options) : n;
-                d(), s.options = Object.assign({}, i, s.options, o), s.scrollParents = {
+                l(), s.options = Object.assign({}, i, s.options, o), s.scrollParents = {
                   reference: P(e) ? ue(e) : e.contextElement ? ue(e.contextElement) : [],
                   popper: ue(t)
                 };
-                var a, c, l = function(e) {
+                var a, c, d = function(e) {
                   var t = ke(e);
                   return k.reduce((function(e, n) {
                     return e.concat(t.filter((function(e) {
@@ -1089,7 +1089,7 @@ _global.SENTRY_RELEASE = {
                 }), {}), Object.keys(c).map((function(e) {
                   return c[e]
                 }))));
-                return s.orderedModifiers = l.filter((function(e) {
+                return s.orderedModifiers = d.filter((function(e) {
                   return e.enabled
                 })), s.orderedModifiers.forEach((function(e) {
                   var t = e.name,
@@ -1125,11 +1125,11 @@ _global.SENTRY_RELEASE = {
                           i = o.fn,
                           a = o.options,
                           f = void 0 === a ? {} : a,
-                          d = o.name;
+                          l = o.name;
                         "function" == typeof i && (s = i({
                           state: s,
                           options: f,
-                          name: d,
+                          name: l,
                           instance: p
                         }) || s)
                       } else s.reset = !1, r = -1
@@ -1148,12 +1148,12 @@ _global.SENTRY_RELEASE = {
                 }))), a
               }),
               destroy: function() {
-                d(), c = !0
+                l(), c = !0
               }
             };
           if (!Me(e, t)) return p;
 
-          function d() {
+          function l() {
             f.forEach((function(e) {
               return e()
             })), f = []

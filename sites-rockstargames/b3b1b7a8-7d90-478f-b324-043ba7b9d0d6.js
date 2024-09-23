@@ -51,23 +51,23 @@ _global.SENTRY_RELEASE = {
           r = a
         }
       }();
-      var c, s = [],
+      var s, c = [],
         u = !1,
         l = -1;
 
       function f() {
-        u && c && (u = !1, c.length ? s = c.concat(s) : l = -1, s.length && d())
+        u && s && (u = !1, s.length ? c = s.concat(c) : l = -1, c.length && d())
       }
 
       function d() {
         if (!u) {
           var e = i(f);
           u = !0;
-          for (var t = s.length; t;) {
-            for (c = s, s = []; ++l < t;) c && c[l].run();
-            l = -1, t = s.length
+          for (var t = c.length; t;) {
+            for (s = c, c = []; ++l < t;) s && s[l].run();
+            l = -1, t = c.length
           }
-          c = null, u = !1,
+          s = null, u = !1,
             function(e) {
               if (r === clearTimeout) return clearTimeout(e);
               if ((r === a || !r) && clearTimeout) return r = clearTimeout, clearTimeout(e);
@@ -93,7 +93,7 @@ _global.SENTRY_RELEASE = {
         var t = new Array(arguments.length - 1);
         if (arguments.length > 1)
           for (var r = 1; r < arguments.length; r++) t[r - 1] = arguments[r];
-        s.push(new p(e, t)), 1 !== s.length || u || i(d)
+        c.push(new p(e, t)), 1 !== c.length || u || i(d)
       }, p.prototype.run = function() {
         this.fun.apply(null, this.array)
       }, n.title = "browser", n.browser = !0, n.env = {}, n.argv = [], n.version = "", n.versions = {}, n.on = y, n.addListener = y, n.once = y, n.off = y, n.removeListener = y, n.removeAllListeners = y, n.emit = y, n.prependListener = y, n.prependOnceListener = y, n.listeners = function(e) {
@@ -114,7 +114,7 @@ _global.SENTRY_RELEASE = {
         C6: () => o,
         Cl: () => a,
         Tt: () => i,
-        fX: () => c
+        fX: () => s
       });
       var n = function(e, t) {
         return n = Object.setPrototypeOf || {
@@ -153,7 +153,7 @@ _global.SENTRY_RELEASE = {
         return r
       }
 
-      function c(e, t, r) {
+      function s(e, t, r) {
         if (r || 2 === arguments.length)
           for (var n, o = 0, a = t.length; o < a; o++) !n && o in t || (n || (n = Array.prototype.slice.call(t, 0, o)), n[o] = t[o]);
         return e.concat(n || Array.prototype.slice.call(t))

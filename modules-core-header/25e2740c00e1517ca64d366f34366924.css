@@ -959,7 +959,6 @@
   --letter-spacing-std: 0;
   --color-h: #fff;
   --body-color: #e8e8e8;
-  --background-color: var(var(--background-color));
   --tag-color: #e8e8e8;
   --rsg-font-family-std: HelveticaNowText;
   --rsg-font-family-h: HelveticaNowDisplayBold;
@@ -1282,7 +1281,6 @@
   --color-h4: #fff;
   --body-color: #e8e8e8;
   --text-transform-h: uppercase;
-  --background-color: var(var(--background-color));
   --tag-color: #e8e8e8;
   --rsg-font-family-std: HelveticaNowText;
   --rsg-font-family-h: HelveticaNowDisplayBold;
@@ -5565,4 +5563,4 @@ body[data-show-more-content] .rockstargames-modules-core-headere0662a86745a18f67
   z-index: 9999
 }
 
-/*# sourceMappingURL=cfea06fed72e07f047da38be2dedbbd5.css.map*/
+/*# sourceMappingURL=25e2740c00e1517ca64d366f34366924.css.map*/

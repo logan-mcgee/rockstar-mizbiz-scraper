@@ -21,25 +21,25 @@ _global.SENTRY_RELEASE = {
         s = Symbol.for("react.element"),
         o = (Symbol.for("react.fragment"), Object.prototype.hasOwnProperty),
         a = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        c = {
+        i = {
           key: !0,
           ref: !0,
           __self: !0,
           __source: !0
         };
       t.jsx = function(e, t, n) {
-        var r, i = {},
+        var r, c = {},
           u = null,
           l = null;
-        for (r in void 0 !== n && (u = "" + n), void 0 !== t.key && (u = "" + t.key), void 0 !== t.ref && (l = t.ref), t) o.call(t, r) && !c.hasOwnProperty(r) && (i[r] = t[r]);
+        for (r in void 0 !== n && (u = "" + n), void 0 !== t.key && (u = "" + t.key), void 0 !== t.ref && (l = t.ref), t) o.call(t, r) && !i.hasOwnProperty(r) && (c[r] = t[r]);
         if (e && e.defaultProps)
-          for (r in t = e.defaultProps) void 0 === i[r] && (i[r] = t[r]);
+          for (r in t = e.defaultProps) void 0 === c[r] && (c[r] = t[r]);
         return {
           $$typeof: s,
           type: e,
           key: u,
           ref: l,
-          props: i,
+          props: c,
           _owner: a.current
         }
       }
@@ -55,18 +55,18 @@ _global.SENTRY_RELEASE = {
         s = n(6540),
         o = n.n(s),
         a = n(4252),
-        c = n.n(a),
-        i = n(6088),
+        i = n.n(a),
+        c = n(6088),
         u = n(5577);
       const {
         apiHost: l
-      } = (0, i.A)(), d = (0, u.t)(document.documentElement.lang), f = {}, w = async function(e) {
+      } = (0, c.A)(), d = (0, u.t)(document.documentElement.lang), f = {}, w = async function(e) {
         let {
           fetchOptions: t = {},
           finalFetchOptions: n = {},
           query: s = null,
           pingBearer: a,
-          requireBearerToken: i = !0,
+          requireBearerToken: c = !0,
           useCache: u = !0
         } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
         try {
@@ -81,7 +81,7 @@ _global.SENTRY_RELEASE = {
             }
           };
           let g = `${l}/${e}`;
-          if (null === s || c().isEmpty(s) || (g += `?${new URLSearchParams(s)}`), !w && i) return null;
+          if (null === s || i().isEmpty(s) || (g += `?${new URLSearchParams(s)}`), !w && c) return null;
           w && (h.Authorization = `Bearer ${w}`);
           const v = {
               headers: h
@@ -115,7 +115,7 @@ _global.SENTRY_RELEASE = {
     },
     6088: (e, t, n) => {
       n.d(t, {
-        A: () => c
+        A: () => i
       });
       const r = window?.env?.sc,
         s = window?.env?.marketing,
@@ -125,8 +125,8 @@ _global.SENTRY_RELEASE = {
             authHost: n,
             clientId: o,
             graphEnv: a,
-            scHost: c,
-            hostname: i,
+            scHost: i,
+            hostname: c,
             cdnBase: u,
             key: l,
             marketingAuthTLD: d
@@ -136,12 +136,12 @@ _global.SENTRY_RELEASE = {
             h = r?.cdnBase ?? u,
             g = r?.clientId ?? o,
             v = s?.marketingAuthTLD ?? d,
-            m = r?.scHost ?? c;
+            m = r?.scHost ?? i;
           return {
             apiHost: `https://${f}.rockstargames.com`,
             graphEnv: r?.graphEnv ?? a,
             host: m,
-            hostname: i,
+            hostname: c,
             cdnBase: h,
             key: l,
             clientId: g,
@@ -175,7 +175,7 @@ _global.SENTRY_RELEASE = {
           cdnBase: "https://s.rsg.sc/sc",
           marketingAuthTLD: "www.rockstargames.com"
         })],
-        c = () => {
+        i = () => {
           const e = window?.env?.scEnv ?? null;
           if (e) {
             const t = a.find((t => {
@@ -212,7 +212,7 @@ _global.SENTRY_RELEASE = {
         useHasSaveDataPreference: () => k,
         useLocale: () => o,
         useNewswirePost: () => E.useNewswirePost,
-        usePreloadImg: () => c,
+        usePreloadImg: () => i,
         usePrevious: () => l,
         useQueryParams: () => u,
         useRockstarEventDispatcher: () => p,
@@ -225,13 +225,13 @@ _global.SENTRY_RELEASE = {
         s = n(136);
       const o = () => (0, r.useReactiveVar)(s.locale);
       var a = n(1403);
-      const c = e => {
-        const [t, n] = (0, a.useState)(null), [r, s] = (0, a.useState)(null), [o, c] = (0, a.useState)({});
+      const i = e => {
+        const [t, n] = (0, a.useState)(null), [r, s] = (0, a.useState)(null), [o, i] = (0, a.useState)({});
         return (0, a.useLayoutEffect)((() => {
           let t = new Image,
             r = !1;
           return t.addEventListener("load", (() => {
-            c({
+            i({
               width: t.width,
               height: t.height
             }), t = null, r || n(!0)
@@ -242,11 +242,11 @@ _global.SENTRY_RELEASE = {
           }
         }), [e]), [t, o]
       };
-      var i = n(9779);
+      var c = n(9779);
       const u = () => {
           const {
             search: e
-          } = (0, i.useLocation)();
+          } = (0, c.useLocation)();
           return new URLSearchParams(e)
         },
         l = e => {
@@ -363,8 +363,8 @@ _global.SENTRY_RELEASE = {
           fetchOptions: s = {},
           query: o = null
         } = t;
-        const c = (0, r.useRockstarTokenPing)(),
-          [i, u] = (0, a.useState)(null),
+        const i = (0, r.useRockstarTokenPing)(),
+          [c, u] = (0, a.useState)(null),
           [l, d] = (0, a.useState)(!1),
           [w, h] = (0, a.useState)(null),
           g = (0, a.useCallback)((async function() {
@@ -376,7 +376,7 @@ _global.SENTRY_RELEASE = {
               } = t;
               h(null), u(null), d(!0);
               const a = await (0, f.A)(n ?? e, {
-                pingBearer: c,
+                pingBearer: i,
                 fetchOptions: s,
                 finalFetchOptions: r,
                 query: o
@@ -388,9 +388,9 @@ _global.SENTRY_RELEASE = {
             return null
           }), [e, s, o]);
         return (0, a.useEffect)((() => {
-          null === i && null === w && !l && n && g()
-        }), [n, i, w, l, g]), {
-          data: i,
+          null === c && null === w && !l && n && g()
+        }), [n, c, w, l, g]), {
+          data: c,
           error: w,
           loading: l,
           fetch: g
@@ -479,30 +479,30 @@ _global.SENTRY_RELEASE = {
           numberOfLogicalProcessors: s
         } = (0, _.useHardwareConcurrency)(), {
           saveData: o
-        } = (0, _.useSaveData)(), c = S(), i = () => {
+        } = (0, _.useSaveData)(), i = S(), c = () => {
           const a = (() => {
             const e = e => !1 === e;
-            if (c) return !1;
+            if (i) return !1;
             if (L.isLegacyEdge || L.isIE || L.isWearable || L.isSmartTV) return !1;
             const t = "Safari" === L.browserName,
               a = "Firefox" === L.browserName,
-              i = r && !["slow-2g", "2g", "3g", "other", "unknown", "none"].includes(r),
+              c = r && !["slow-2g", "2g", "3g", "other", "unknown", "none"].includes(r),
               u = s && s >= 4,
               l = n && n >= 4;
-            return !(e(!o) || e(i) || e(u) || !t && !a && e(l))
+            return !(e(!o) || e(c) || e(u) || !t && !a && e(l))
           })();
           a !== e && t(a)
         };
-        return (0, a.useEffect)((() => (i(), window.addEventListener("online", i), window.addEventListener("offline", i), window.addEventListener("devicememory", i), () => {
-          window.removeEventListener("online", i), window.removeEventListener("offline", i), window.removeEventListener("devicememory", i)
-        })), [n, r, e, s, o, c]), e
+        return (0, a.useEffect)((() => (c(), window.addEventListener("online", c), window.addEventListener("offline", c), window.addEventListener("devicememory", c), () => {
+          window.removeEventListener("online", c), window.removeEventListener("offline", c), window.removeEventListener("devicememory", c)
+        })), [n, r, e, s, o, i]), e
       }
     },
     359: (e, t, n) => {
       n.r(t), n.d(t, {
         Consumer: () => a,
-        Provider: () => c,
-        useNewswirePost: () => i
+        Provider: () => i,
+        useNewswirePost: () => c
       });
       var r = n(1403),
         s = n(6632);
@@ -510,7 +510,7 @@ _global.SENTRY_RELEASE = {
         {
           Consumer: a
         } = o,
-        c = e => {
+        i = e => {
           let {
             article: t,
             children: n
@@ -520,21 +520,21 @@ _global.SENTRY_RELEASE = {
             children: n
           })
         },
-        i = () => (0, r.useContext)(o)
+        c = () => (0, r.useContext)(o)
     },
     295: (e, t, n) => {
       n.d(t, {
         Ll: () => u,
         N2: () => l,
-        U4: () => c
+        U4: () => i
       });
       var r = n(8407),
         s = n(1403),
         o = n(6632);
       const a = (0, r.makeVar)(!1),
-        c = e => a(e),
-        i = (0, s.createContext)(null),
-        u = () => (0, s.useContext)(i),
+        i = e => a(e),
+        c = (0, s.createContext)(null),
+        u = () => (0, s.useContext)(c),
         l = e => {
           let {
             children: t
@@ -556,12 +556,12 @@ _global.SENTRY_RELEASE = {
             return window.addEventListener("scroll", t), () => {
               window.removeEventListener("scroll", t)
             }
-          }), [f, h]), (0, s.useMemo)((() => (0, o.jsx)(i.Provider, {
+          }), [f, h]), (0, s.useMemo)((() => (0, o.jsx)(c.Provider, {
             value: {
               freezeUserShouldSeeMore: h,
               pageYOffset: n,
               pauseUserShouldSeeMore: v,
-              setFreezeUserShouldSeeMore: c,
+              setFreezeUserShouldSeeMore: i,
               userShouldSeeMore: l
             },
             children: t

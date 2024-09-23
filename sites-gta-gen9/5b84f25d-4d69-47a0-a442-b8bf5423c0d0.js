@@ -57,8 +57,8 @@ _global.SENTRY_RELEASE = {
         n = a(42756),
         r = a(64205),
         i = a(27926),
-        c = a(74401),
-        o = a(40207),
+        o = a(74401),
+        c = a(40207),
         l = a(89779);
       var d = a(46632);
       const m = e => {
@@ -90,7 +90,7 @@ _global.SENTRY_RELEASE = {
             top: S
           } = u, C = v?.indexOf(k), [T, A] = (0, s.useState)(v?.length || 0), {
             track: M
-          } = (0, o.useGtmTrack)(), I = null !== v && (v?.length || 0) > 1 && ("flag_bg" === x || "fob" === N?.size), [E, L] = (0, l.useSearchParams)(), [P, B] = (0, s.useState)(!1), [$, V] = (0, s.useState)(!1), [D, H] = (0, s.useState)(), O = e => {
+          } = (0, c.useGtmTrack)(), I = null !== v && (v?.length || 0) > 1 && ("flag_bg" === x || "fob" === N?.size), [E, L] = (0, l.useSearchParams)(), [P, B] = (0, s.useState)(!1), [$, V] = (0, s.useState)(!1), [D, H] = (0, s.useState)(), O = e => {
             "number" == typeof e && v && e < v.length && e > -1 && (console.log("navigating to: ", e), L({
               info: v[e].toString()
             }))
@@ -291,9 +291,9 @@ _global.SENTRY_RELEASE = {
                   transition: q,
                   style: f,
                   children: (0, d.jsxs)(i.motion.div, {
-                    className: (0, c.classList)("rockstargames-sites-gta-gen9b6aa5ebf680af5d95d0e9c76ac36ed82", n),
+                    className: (0, o.classList)("rockstargames-sites-gta-gen9b6aa5ebf680af5d95d0e9c76ac36ed82", n),
                     children: [!I && ae, (0, d.jsx)(i.motion.div, {
-                      className: (0, c.classList)("rockstargames-sites-gta-gen9d901631c0b9d817396c8352c027a2a0d", p),
+                      className: (0, o.classList)("rockstargames-sites-gta-gen9d901631c0b9d817396c8352c027a2a0d", p),
                       initial: {
                         opacity: ee
                       },
@@ -324,15 +324,15 @@ _global.SENTRY_RELEASE = {
           } = e;
           const [a, r] = (0, s.useState)(u), {
             setBodyIsLocked: i
-          } = (0, n.useBodyScrollable)("ModalProvider"), c = (0, s.useMemo)((() => a?.content ? (0, d.jsx)(m, {
+          } = (0, n.useBodyScrollable)("ModalProvider"), o = (0, s.useMemo)((() => a?.content ? (0, d.jsx)(m, {
             modal: a
-          }) : null), [a]), o = () => i(!1);
-          return (0, s.useEffect)((() => (window.addEventListener("popstate", o), () => {
-            window.removeEventListener("popstate", o)
+          }) : null), [a]), c = () => i(!1);
+          return (0, s.useEffect)((() => (window.addEventListener("popstate", c), () => {
+            window.removeEventListener("popstate", c)
           })), []), (0, s.useEffect)((() => {
-            i(!!c)
-          }), [c]), (0, d.jsx)(f.Provider, {
-            value: [c, r],
+            i(!!o)
+          }), [o]), (0, d.jsx)(f.Provider, {
+            value: [o, r],
             children: t
           })
         }
@@ -370,7 +370,7 @@ _global.SENTRY_RELEASE = {
         n = a(40207),
         r = a(35459),
         i = a(46632);
-      const c = e => {
+      const o = e => {
           let {
             children: t,
             className: a,
@@ -387,19 +387,19 @@ _global.SENTRY_RELEASE = {
             children: t
           })
         },
-        o = e => {
+        c = e => {
           let {
             children: t,
             className: a,
             onClick: n,
             style: r,
-            to: c
+            to: o
           } = e;
           return (0, i.jsx)(s.NavLink, {
             className: a,
             onClick: n,
             style: r,
-            to: c,
+            to: o,
             children: t
           })
         },
@@ -458,7 +458,7 @@ _global.SENTRY_RELEASE = {
                 })
               })
             }
-            return (0, i.jsx)(o, {
+            return (0, i.jsx)(c, {
               className: _,
               onClick: N,
               style: y,
@@ -466,7 +466,7 @@ _global.SENTRY_RELEASE = {
               children: j
             })
           }
-          return (0, i.jsx)(c, {
+          return (0, i.jsx)(o, {
             className: _,
             onClick: N,
             style: y,
@@ -495,14 +495,14 @@ _global.SENTRY_RELEASE = {
               icon: a,
               to: s,
               title: i,
-              gtm: c
+              gtm: o
             } = e;
             return i ? (0, r.jsx)(n.A, {
               className: "white",
               text: i,
               to: s,
               icon: a,
-              gtm: c
+              gtm: o
             }, t) : ""
           }))
         }) : null
@@ -517,8 +517,8 @@ _global.SENTRY_RELEASE = {
         n = a(48331),
         r = a(355),
         i = a(47252),
-        c = a(40207),
-        o = a(49948),
+        o = a(40207),
+        c = a(49948),
         l = a(74401),
         d = a(81902),
         m = a(89269),
@@ -580,13 +580,13 @@ _global.SENTRY_RELEASE = {
             addedInfo: t = null,
             buynowbtn: r = null,
             description: i = null,
-            images: o,
+            images: c,
             links: l = [],
             title: m = null
           } = e;
           const {
             track: h
-          } = (0, c.useGtmTrack)(), [v, k] = (0, s.useState)(!1), x = {
+          } = (0, o.useGtmTrack)(), [v, k] = (0, s.useState)(!1), x = {
             type: "spring",
             stiffness: 425,
             damping: 40
@@ -669,10 +669,10 @@ _global.SENTRY_RELEASE = {
                 className: u.imageGroup,
                 children: [(0, p.jsx)(b, {
                   className: u.backgroundImage,
-                  images: o?.background
+                  images: c?.background
                 }), (0, p.jsx)(b, {
                   className: u.foregroundImage,
-                  images: o?.foreground
+                  images: c?.foreground
                 })]
               }), (0, p.jsxs)("div", {
                 className: u.content,
@@ -828,10 +828,10 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: i
-          } = (0, c.useGtmTrack)(), {
+          } = (0, o.useGtmTrack)(), {
             ref: l,
             inView: g
-          } = (0, o.useInView)({
+          } = (0, c.useInView)({
             threshold: .6
           }), [f, b] = (0, s.useState)(!1);
           return (0, s.useEffect)((() => {
@@ -904,16 +904,16 @@ _global.SENTRY_RELEASE = {
           text: a = null,
           title: r,
           className: i = "",
-          style: c = {}
+          style: o = {}
         } = e;
-        const o = a ?? t?.text ?? null,
-          l = r ? `<h5>${r}</h5>${o}` : o;
-        return o ? (0, n.jsx)("div", {
+        const c = a ?? t?.text ?? null,
+          l = r ? `<h5>${r}</h5>${c}` : c;
+        return c ? (0, n.jsx)("div", {
           className: (0, s.classList)("rockstargames-sites-gta-gen9fafe66500f74b5fda33cb7b70746a014", i),
           dangerouslySetInnerHTML: {
             __html: l
           },
-          style: c
+          style: o
         }) : null
       }
     },
@@ -926,8 +926,8 @@ _global.SENTRY_RELEASE = {
         n = a(32148),
         r = a(47252),
         i = a(40207),
-        c = a(49948),
-        o = a(33588),
+        o = a(49948),
+        c = a(33588),
         l = a(94430),
         d = a.n(l);
       const m = {
@@ -954,9 +954,9 @@ _global.SENTRY_RELEASE = {
             className: s,
             ...r
           } = e;
-          return (0, g.jsx)(o.Header, {
+          return (0, g.jsx)(c.Header, {
             className: m.accordionHeader,
-            children: (0, g.jsxs)(o.Trigger, {
+            children: (0, g.jsxs)(c.Trigger, {
               ref: t,
               className: d()(m.accordionTrigger, s),
               ...r,
@@ -973,7 +973,7 @@ _global.SENTRY_RELEASE = {
             className: s,
             ...n
           } = e;
-          return (0, g.jsx)(o.Content, {
+          return (0, g.jsx)(c.Content, {
             className: d()(m.accordionContent, s),
             ...n,
             ref: t,
@@ -998,7 +998,7 @@ _global.SENTRY_RELEASE = {
             track: h
           } = (0, i.useGtmTrack)(), [v, k] = (0, s.useState)(l), [x, _] = (0, s.useState)(void 0), [y, j] = (0, s.useState)(!1), N = (0, s.useRef)(null), w = (0, s.useRef)([]), {
             ref: S
-          } = (0, c.useInView)({
+          } = (0, o.useInView)({
             threshold: .6,
             triggerOnce: !0,
             onChange: e => {
@@ -1026,7 +1026,7 @@ _global.SENTRY_RELEASE = {
                     __html: a
                   }
                 })]
-              }), (0, g.jsx)(o.Root, {
+              }), (0, g.jsx)(c.Root, {
                 className: m.accordionRoot,
                 type: "single",
                 collapsible: !0,
@@ -1046,7 +1046,7 @@ _global.SENTRY_RELEASE = {
                     question: a,
                     answer: s
                   } = e;
-                  return (0, g.jsxs)(o.Item, {
+                  return (0, g.jsxs)(c.Item, {
                     className: m.accordionItem,
                     value: (t + 1).toString(),
                     children: [(0, g.jsx)(u, {
@@ -1124,8 +1124,8 @@ _global.SENTRY_RELEASE = {
         n = a(54252),
         r = a.n(n),
         i = a(60285),
-        c = a(68340),
-        o = a(25180),
+        o = a(68340),
+        c = a(25180),
         l = a(28089),
         d = a(40207);
       var m = a(46632);
@@ -1138,15 +1138,15 @@ _global.SENTRY_RELEASE = {
           const {
             track: n
           } = (0, d.useGtmTrack)();
-          let c = {
+          let o = {
             hero: {}
           };
           r().cloneDeepWith(t, ((e, t) => {
-            "images" === t && (c = e)
+            "images" === t && (o = e)
           }));
           const {
-            src: o
-          } = (0, l.useImageParser)(c?.thumb ?? {});
+            src: c
+          } = (0, l.useImageParser)(o?.thumb ?? {});
           return (0, m.jsx)("div", {
             className: "rockstargames-sites-gta-gen9b40f08dc1045d471f902655ea561c15e",
             children: (0, m.jsxs)(i.A, {
@@ -1164,7 +1164,7 @@ _global.SENTRY_RELEASE = {
               children: [(0, m.jsx)("div", {
                 style: {
                   "--aspect-ratio": 1,
-                  background: `url(${o?.mobile}) no-repeat center/cover`
+                  background: `url(${c?.mobile}) no-repeat center/cover`
                 }
               }), (0, m.jsx)("h4", {
                 children: t.title
@@ -1179,7 +1179,7 @@ _global.SENTRY_RELEASE = {
             title: n
           } = e;
           const i = r().map(t, "guide_id"),
-            l = (0, o.X)({
+            l = (0, c.X)({
               ids: i
             }),
             d = a?.[0]?.title ?? n,
@@ -1191,7 +1191,7 @@ _global.SENTRY_RELEASE = {
               index: t
             }, e.id)));
             f(e)
-          }), [l]), (0, m.jsx)(c.A, {
+          }), [l]), (0, m.jsx)(o.A, {
             size: "lg",
             slideChildren: u,
             title: d
@@ -1207,7 +1207,7 @@ _global.SENTRY_RELEASE = {
         n = a(89779),
         r = a(98436);
       var i = a(46632);
-      const c = () => {
+      const o = () => {
           const {
             guideId: e
           } = (0, n.useParams)(), t = (0, r.qj)(e, "<span></span>");
@@ -1218,7 +1218,7 @@ _global.SENTRY_RELEASE = {
             }
           }) : null
         },
-        o = e => {
+        c = e => {
           let {
             hero: t
           } = e;
@@ -1244,11 +1244,11 @@ _global.SENTRY_RELEASE = {
             title: s
           } = e;
           return (0, i.jsxs)(i.Fragment, {
-            children: [a ? (0, i.jsx)(o, {
+            children: [a ? (0, i.jsx)(c, {
               hero: a
             }) : "", (0, i.jsxs)("div", {
               className: "rockstargames-sites-gta-gen9b06267934a8fc8ac84e510f131df16ae",
-              children: [(0, i.jsx)(c, {}), (0, i.jsx)("h1", {
+              children: [(0, i.jsx)(o, {}), (0, i.jsx)("h1", {
                 children: s
               }), t && (0, i.jsx)("span", {
                 className: "rockstargames-sites-gta-gen9f9e4e76ad2623c28b29786ba7af5ac87",
@@ -1269,8 +1269,8 @@ _global.SENTRY_RELEASE = {
         n = a(89779),
         r = a(54252),
         i = a.n(r),
-        c = a(48331),
-        o = a(60285),
+        o = a(48331),
+        c = a(60285),
         l = a(40207),
         d = a(98436);
       const m = {
@@ -1308,14 +1308,14 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: i
-          } = (0, l.useGtmTrack)(), [c, u] = (0, s.useState)(n === r), {
+          } = (0, l.useGtmTrack)(), [o, u] = (0, s.useState)(n === r), {
             state: f
           } = (0, d.E_)(), {
             activeSection: p
           } = f;
-          return (0, s.useEffect)((() => u(r !== p ? p === n : r === n)), [p]), (0, g.jsx)(o.A, {
+          return (0, s.useEffect)((() => u(r !== p ? p === n : r === n)), [p]), (0, g.jsx)(c.A, {
             to: t,
-            className: c ? m.activeSection : "",
+            className: o ? m.activeSection : "",
             onClick: () => {
               i({
                 event: "nav_click",
@@ -1371,7 +1371,7 @@ _global.SENTRY_RELEASE = {
               type: "button",
               onClick: () => r(!n),
               children: a.title
-            }), (0, g.jsx)(c.motion.nav, {
+            }), (0, g.jsx)(o.motion.nav, {
               animate: n ? "open" : "closed",
               variants: f,
               transition: u,
@@ -1384,7 +1384,7 @@ _global.SENTRY_RELEASE = {
                 } = e;
                 return (0, g.jsxs)("div", {
                   className: m.guide,
-                  children: [(0, g.jsx)(o.A, {
+                  children: [(0, g.jsx)(c.A, {
                     className: [m.guideLink, t === n ? m.guideLinkCurrent : ""].join(" "),
                     to: i,
                     children: r
@@ -1422,20 +1422,20 @@ _global.SENTRY_RELEASE = {
     1333: (e, t, a) => {
       "use strict";
       a.d(t, {
-        A: () => c
+        A: () => o
       });
       var s = a(71403),
         n = a(49948),
         r = a(98436);
       var i = a(46632);
-      const c = e => {
+      const o = e => {
         let {
           style: t,
           children: a,
-          __anchor: c = null
+          __anchor: o = null
         } = e;
         const {
-          announcePresence: o
+          announcePresence: c
         } = (0, r.Yh)(), {
           ref: l,
           inView: d
@@ -1445,13 +1445,13 @@ _global.SENTRY_RELEASE = {
           delay: 850
         });
         return (0, s.useEffect)((() => {
-          o(c)
-        }), [c]), (0, s.useEffect)((() => {
-          d && o(c)
+          c(o)
+        }), [o]), (0, s.useEffect)((() => {
+          d && c(o)
         }), [d]), (0, i.jsx)("span", {
           style: t,
           className: "rockstargames-sites-gta-gen9e46af541dffc51dc338509484cffa659",
-          name: c,
+          name: o,
           ref: l,
           children: a
         })
@@ -1466,8 +1466,8 @@ _global.SENTRY_RELEASE = {
         n = a(355),
         r = a(74401),
         i = a(40207),
-        c = a(49948),
-        o = a(72877),
+        o = a(49948),
+        c = a(72877),
         l = a(71864),
         d = a(5765);
       var m = a(46632);
@@ -1490,7 +1490,7 @@ _global.SENTRY_RELEASE = {
         } = (0, i.useGtmTrack)(), {
           ref: _,
           inView: y
-        } = (0, c.useInView)({
+        } = (0, o.useInView)({
           threshold: .6
         }), [j, N] = (0, s.useState)(!1), w = (0, r.useGetCdnSource)(u?.full_src ?? null) ?? null;
         return (0, s.useEffect)((() => {
@@ -1523,7 +1523,7 @@ _global.SENTRY_RELEASE = {
                   __html: a
                 }
               }) : ""]
-            }), (0, m.jsx)(o.A, {
+            }), (0, m.jsx)(c.A, {
               ctas: n
             }), (0, m.jsx)(d.A, {
               disclaimer: g
@@ -1535,7 +1535,7 @@ _global.SENTRY_RELEASE = {
     50562: (e, t, a) => {
       "use strict";
       a.d(t, {
-        A: () => c
+        A: () => o
       });
       var s = a(74401),
         n = a(33727);
@@ -1548,19 +1548,19 @@ _global.SENTRY_RELEASE = {
         bgDesktop: "rockstargames-sites-gta-gen9d6c821fe070e5eb41f1fba6178bd3571"
       };
       var i = a(46632);
-      const c = e => {
+      const o = e => {
         let {
           bg: t,
           image_text_groups: a = [],
-          style: c = {},
-          className: o = ""
+          style: o = {},
+          className: c = ""
         } = e;
         const l = (0, s.useGetCdnSource)(t?.image?.mobile?.full_src ?? null),
           d = (0, s.useGetCdnSource)(t?.image?.desktop?.full_src ?? null) ?? l;
         return a.length ? (0, i.jsxs)("div", {
-          className: (0, s.classList)(r.imageTextGroupGroup, o),
+          className: (0, s.classList)(r.imageTextGroupGroup, c),
           style: {
-            ...c
+            ...o
           },
           children: [l ? (0, i.jsx)("div", {
             className: [r.bgMobile, r.bg].join(" "),
@@ -1581,7 +1581,7 @@ _global.SENTRY_RELEASE = {
     37281: (e, t, a) => {
       "use strict";
       a.d(t, {
-        A: () => c
+        A: () => o
       });
       var s = a(60285),
         n = a(74401);
@@ -1592,24 +1592,24 @@ _global.SENTRY_RELEASE = {
         cta: "rockstargames-sites-gta-gen9eec30b6a686a74885da49d3cf33c1795"
       };
       var i = a(46632);
-      const c = e => {
+      const o = e => {
         let {
           text: t,
-          cta: c,
-          to: o,
+          cta: o,
+          to: c,
           className: l = "",
           style: d = {}
         } = e;
         return (0, i.jsxs)(s.A, {
           className: (0, n.classList)(r.linkoutSection, l),
-          to: o,
+          to: c,
           style: d,
           children: [t && (0, i.jsx)("div", {
             className: r.text,
             children: t
-          }), c && (0, i.jsxs)("div", {
+          }), o && (0, i.jsxs)("div", {
             className: r.cta,
-            children: [c, " ", (0, i.jsx)("img", {
+            children: [o, " ", (0, i.jsx)("img", {
               src: a(56675)
             })]
           })]
@@ -1630,13 +1630,13 @@ _global.SENTRY_RELEASE = {
           style: a,
           theme: i
         } = e;
-        const [c, o] = (0, s.useState)(i);
+        const [o, c] = (0, s.useState)(i);
         return (0, s.useEffect)((() => {
-          i && o(i)
+          i && c(i)
         }), [i]), (0, r.jsx)("div", {
           className: "rockstargames-sites-gta-gen9a691fa72d9c1962b69090f47fbb6eadf",
           style: (0, n.safeStyles)(a),
-          "data-theme": c,
+          "data-theme": o,
           children: t
         })
       }
@@ -1671,7 +1671,7 @@ _global.SENTRY_RELEASE = {
       a.r(t), a.d(t, {
         BrandMessage: () => r,
         BuyNow: () => i.A,
-        ClaimCountdown: () => o,
+        ClaimCountdown: () => c,
         Disclaimer: () => d.A,
         DiscoverCallout: () => l.A,
         ElevatorPitch: () => L,
@@ -1692,10 +1692,10 @@ _global.SENTRY_RELEASE = {
         Summary: () => U,
         SummaryCard: () => X,
         Tile: () => K,
-        TinaWrapper: () => ce.A,
+        TinaWrapper: () => oe.A,
         TitleImage: () => D,
         ValueProp: () => ee,
-        VideoPlayerWrapper: () => oe.A
+        VideoPlayerWrapper: () => ce.A
       });
       var s = a(71864);
       var n = a(46632);
@@ -1725,22 +1725,22 @@ _global.SENTRY_RELEASE = {
         })
       };
       var i = a(99074),
-        c = a(71403);
-      const o = e => {
+        o = a(71403);
+      const c = e => {
         let {
           left: t,
           right: a
         } = e;
-        const [s, r] = (0, c.useState)(""), [i, o] = (0, c.useState)(!1);
+        const [s, r] = (0, o.useState)(""), [i, c] = (0, o.useState)(!1);
         return (0, n.jsxs)("div", {
           className: "rockstargames-sites-gta-gen9b868510520ca3ebc97d9ce2ea9d2edf2",
           children: [(0, n.jsxs)("h2", {
             "aria-hidden": i,
             onMouseOver: () => {
-              o(!0), r(`${t} ${a}`)
+              c(!0), r(`${t} ${a}`)
             },
             onMouseOut: () => {
-              o(!1), r("")
+              c(!1), r("")
             },
             onFocus: () => {},
             onBlur: () => {},
@@ -1807,8 +1807,8 @@ _global.SENTRY_RELEASE = {
             title: t = "Membership Rewards",
             shards: a
           } = e;
-          const [s, r] = (0, c.useState)(null);
-          return (0, c.useEffect)((() => {
+          const [s, r] = (0, o.useState)(null);
+          return (0, o.useEffect)((() => {
             a && r(a.map((e => {
               if (!e?.shardImg) return;
               const {
@@ -1840,8 +1840,8 @@ _global.SENTRY_RELEASE = {
             backgroundImg: a,
             layeredImg: r,
             ctas: i = [],
-            expandingButtonLabel: c = "Subscribe",
-            platformsAndLinks: o = [],
+            expandingButtonLabel: o = "Subscribe",
+            platformsAndLinks: c = [],
             description: l,
             title: d,
             legalText: m,
@@ -1916,11 +1916,11 @@ _global.SENTRY_RELEASE = {
                 children: (0, n.jsx)(s.A, {
                   brands: t
                 })
-              }), o.length ? (0, n.jsx)(k.motion.div, {
+              }), c.length ? (0, n.jsx)(k.motion.div, {
                 variants: w,
                 children: (0, n.jsx)(v.A, {
-                  buttonText: c,
-                  platformsAndLinks: o,
+                  buttonText: o,
+                  platformsAndLinks: c,
                   children: (0, n.jsxs)(n.Fragment, {
                     children: [(0, n.jsxs)(k.motion.div, {
                       className: y.descriptions,
@@ -2107,12 +2107,12 @@ _global.SENTRY_RELEASE = {
         } = e;
         const i = (0, x.useGetCdnSource)(t) ?? null,
           {
-            isTablet: o
+            isTablet: c
           } = (0, T.useWindowResize)(),
-          [l, d] = (0, c.useState)(0);
-        return (0, c.useEffect)((() => {
-          d(o ? .5 * window.innerHeight : .25 * window.innerHeight)
-        }), [o, window.innerHeight]), (0, n.jsxs)("figure", {
+          [l, d] = (0, o.useState)(0);
+        return (0, o.useEffect)((() => {
+          d(c ? .5 * window.innerHeight : .25 * window.innerHeight)
+        }), [c, window.innerHeight]), (0, n.jsxs)("figure", {
           className: "rockstargames-sites-gta-gen9ff6de3d17596f7d56f83302c8a3dd352",
           children: [(0, n.jsx)("div", {
             className: "rockstargames-sites-gta-gen9e887f05b18428646120596f3178947b0",
@@ -2169,8 +2169,8 @@ _global.SENTRY_RELEASE = {
           shadow: "rockstargames-sites-gta-gen9ff71d0b79549193178ee720c73bd4384"
         },
         z = e => {
-          const [t, a] = (0, c.useState)(void 0);
-          return (0, c.useEffect)((() => {
+          const [t, a] = (0, o.useState)(void 0);
+          return (0, o.useEffect)((() => {
             a(!!e)
           }), [e]), t
         },
@@ -2183,7 +2183,7 @@ _global.SENTRY_RELEASE = {
             disableStickyOnMobile: i
           } = e;
           const {
-            track: o
+            track: c
           } = (0, O.useGtmTrack)(), {
             isTablet: l
           } = (0, T.useWindowResize)(), {
@@ -2192,30 +2192,30 @@ _global.SENTRY_RELEASE = {
             threshold: .6,
             triggerOnce: !0,
             onChange: e => {
-              e && o({
+              e && c({
                 event: "page_section_impression",
                 element_placement: t?.toLowerCase()
               })
             }
-          }), m = (0, c.useRef)(null), g = (0, c.useRef)(null), u = z(r), f = z(i), p = (0, x.useTinaComponents)(), b = (0, c.useMemo)((() => ({
+          }), m = (0, o.useRef)(null), g = (0, o.useRef)(null), u = z(r), f = z(i), p = (0, x.useTinaComponents)(), b = (0, o.useMemo)((() => ({
             ...p,
             HTMLElement
           })), [p]);
           return ((e, t, a) => {
-            const s = (0, c.useCallback)((() => {
+            const s = (0, o.useCallback)((() => {
               if (e && t.current && a.current) {
                 const e = t.current.getBoundingClientRect().bottom,
                   s = a.current.getBoundingClientRect().top;
                 a.current.style.marginTop = s <= e ? "" + (e - s) : "0"
               }
             }), [e, t, a]);
-            (0, c.useEffect)((() => (window.addEventListener("scroll", s), window.addEventListener("resize", s), () => {
+            (0, o.useEffect)((() => (window.addEventListener("scroll", s), window.addEventListener("resize", s), () => {
               window.removeEventListener("scroll", s), window.removeEventListener("resize", s)
             })), [s])
           })(l, m, g), (0, n.jsx)(H.A, {
             thresholds: [.5, 1],
             onThresholdReached: e => {
-              o({
+              c({
                 event: "page_section_scroll",
                 element_placement: t?.toLowerCase(),
                 scroll_depth: 100 * e + "%"
@@ -2307,7 +2307,7 @@ _global.SENTRY_RELEASE = {
             cta: r
           } = e;
           const i = (0, x.useGetCdnSource)(s?.mobile),
-            c = (0, x.useGetCdnSource)(s?.desktop) || i;
+            o = (0, x.useGetCdnSource)(s?.desktop) || i;
           return (0, n.jsxs)("div", {
             className: "rockstargames-sites-gta-gen9bb445cecf9072d887768043c0ed55717",
             role: "article",
@@ -2340,7 +2340,7 @@ _global.SENTRY_RELEASE = {
             }), s && (0, n.jsx)("div", {
               className: "rockstargames-sites-gta-gen9d73faadb1c2ddd9be27a1247a6ec8836",
               children: (0, n.jsx)("img", {
-                src: c,
+                src: o,
                 alt: t
               })
             })]
@@ -2371,8 +2371,8 @@ _global.SENTRY_RELEASE = {
             cta: s,
             imgSrc: r,
             imgPosition: i = "top",
-            cardSize: c = "medium",
-            enableFullBleed: o,
+            cardSize: o = "medium",
+            enableFullBleed: c,
             background: l = "var(--foundry-alias-color-background-bold-layer-2)",
             backgroundSize: d = "cover",
             backgroundImage: m,
@@ -2392,7 +2392,7 @@ _global.SENTRY_RELEASE = {
               ...f
             };
           return (0, n.jsxs)("article", {
-            className: V()(Y.tile, [Y[`tile--${c}`]], [Y[o ? "fullBleed" : "contain"]], [Y[`tile--${i}`]]),
+            className: V()(Y.tile, [Y[`tile--${o}`]], [Y[c ? "fullBleed" : "contain"]], [Y[`tile--${i}`]]),
             style: {
               ...k
             },
@@ -2429,7 +2429,7 @@ _global.SENTRY_RELEASE = {
             })]
           })
         },
-        K = (0, c.memo)(Q),
+        K = (0, o.memo)(Q),
         Z = e => {
           let {
             src: t,
@@ -2444,7 +2444,7 @@ _global.SENTRY_RELEASE = {
             })
           })
         },
-        J = (0, c.memo)(Z),
+        J = (0, o.memo)(Z),
         ee = e => {
           let {
             name: t,
@@ -2464,7 +2464,7 @@ _global.SENTRY_RELEASE = {
                 element_placement: t.toLowerCase()
               })
             }
-          }), o = (0, c.useCallback)((e => () => {
+          }), c = (0, o.useCallback)((e => () => {
             const a = e + 1;
             r({
               event: "card_click",
@@ -2480,7 +2480,7 @@ _global.SENTRY_RELEASE = {
             className: "rockstargames-sites-gta-gen9ac883cf395291a034c0c6065f9636504",
             children: a.map(((e, t) => (0, n.jsxs)("div", {
               className: "rockstargames-sites-gta-gen9f47b785957378c295f893b75cf01623b",
-              onClick: o(t),
+              onClick: c(t),
               children: [e?.iconImgSrc && (0, n.jsx)("div", {
                 className: "rockstargames-sites-gta-gen9d75773fe36fb02bf0770bd0ce4ae8692",
                 children: (0, n.jsx)(J, {
@@ -2509,8 +2509,8 @@ _global.SENTRY_RELEASE = {
         ie = () => (0, n.jsx)("h2", {
           children: "Section"
         });
-      var ce = a(21027),
-        oe = a(24347)
+      var oe = a(21027),
+        ce = a(24347)
     },
     98436: (e, t, a) => {
       "use strict";
@@ -2518,7 +2518,7 @@ _global.SENTRY_RELEASE = {
         E_: () => r,
         Yh: () => i.Y,
         qj: () => g,
-        hY: () => o,
+        hY: () => c,
         hI: () => d
       });
       var s = a(58407);
@@ -2568,11 +2568,11 @@ _global.SENTRY_RELEASE = {
           }
         };
       var i = a(65046),
-        c = a(41194);
-      const o = () => {
+        o = a(41194);
+      const c = () => {
         const {
           data: e
-        } = (0, s.useQuery)(c.TinaModulesTree, {
+        } = (0, s.useQuery)(o.TinaModulesTree, {
           variables: {
             type: "gen9-guide-group"
           }
@@ -2635,9 +2635,9 @@ _global.SENTRY_RELEASE = {
         n = a(89779),
         r = a(70396),
         i = a(98436),
-        c = a(46632);
-      const o = (0, s.createContext)(),
-        l = () => (0, s.useContext)(o),
+        o = a(46632);
+      const c = (0, s.createContext)(),
+        l = () => (0, s.useContext)(c),
         d = e => {
           let {
             children: t
@@ -2661,7 +2661,7 @@ _global.SENTRY_RELEASE = {
             section: a,
             setSection: l
           })), [u, a, l]);
-          return (0, c.jsx)(o.Provider, {
+          return (0, o.jsx)(c.Provider, {
             value: f,
             children: t
           })
@@ -2677,8 +2677,8 @@ _global.SENTRY_RELEASE = {
         n = a(21450),
         r = a(91318),
         i = a(31090),
-        c = a(39695),
-        o = a(28606),
+        o = a(39695),
+        c = a(28606),
         l = a(95137),
         d = a(87839),
         m = a(22941),
@@ -2740,7 +2740,7 @@ _global.SENTRY_RELEASE = {
             hasDescription: n,
             description: r,
             fadesOut: i = !1,
-            badges: c
+            badges: o
           } = e;
           return (0, I.jsx)(P, {
             initial: $.fade.out.initial,
@@ -2754,7 +2754,7 @@ _global.SENTRY_RELEASE = {
               children: [(0, I.jsx)(E, {
                 hasTag: a,
                 tag: s,
-                badges: c?.filter((e => e?.isPrimary))
+                badges: o?.filter((e => e?.isPrimary))
               }), (0, I.jsx)("h3", {
                 children: t
               }), n && r && (0, I.jsx)("div", {
@@ -2772,13 +2772,13 @@ _global.SENTRY_RELEASE = {
             tag: n,
             tagStyle: r,
             discountPrice: i,
-            originalPrice: c,
-            setPricingContainerHeight: o = null
+            originalPrice: o,
+            setPricingContainerHeight: c = null
           } = e;
           const l = (0, _.createRef)();
           return (0, _.useEffect)((() => {
             const e = () => {
-              l.current && null !== o && o(l.current.clientHeight)
+              l.current && null !== c && c(l.current.clientHeight)
             };
             return e(), window.addEventListener("resize", e), () => {
               window.removeEventListener("resize", e)
@@ -2801,7 +2801,7 @@ _global.SENTRY_RELEASE = {
                 children: i
               }), (0, I.jsx)("span", {
                 className: "rockstargames-sites-gta-gen9a3632910b63514f6b49539fe45bcccb6",
-                children: c
+                children: o
               })]
             })]
           })
@@ -2835,17 +2835,17 @@ _global.SENTRY_RELEASE = {
             setPricingContainerHeight: r = (() => {}),
             expandedView: i
           } = e;
-          const c = (0, _.createRef)();
+          const o = (0, _.createRef)();
           return (0, _.useEffect)((() => {
             const e = () => {
-              c.current && null !== r && r(c.current.clientHeight)
+              o.current && null !== r && r(o.current.clientHeight)
             };
             return e(), window.addEventListener("resize", e), () => {
               window.removeEventListener("resize", e)
             }
-          }), [c]), (0, I.jsxs)("div", {
+          }), [o]), (0, I.jsxs)("div", {
             className: "rockstargames-sites-gta-gen9e754e3afc303a114f9e28e09c5519a30",
-            ref: c,
+            ref: o,
             "data-show-background": s,
             "data-show-platforms": !i,
             children: [a && (0, I.jsx)("span", {
@@ -2882,8 +2882,8 @@ _global.SENTRY_RELEASE = {
             expandedView: n = !1,
             children: r,
             pricingOptions: i,
-            setPricingContainerHeight: c,
-            isCoverCard: o = !1,
+            setPricingContainerHeight: o,
+            isCoverCard: c = !1,
             platformOptions: l
           } = e;
           const [d] = (e => {
@@ -2894,23 +2894,23 @@ _global.SENTRY_RELEASE = {
               description: n,
               collapsedHasDescription: r,
               size: i,
-              title: c,
-              expandedView: o,
+              title: o,
+              expandedView: c,
               badges: l
             } = e;
             const [d, m] = (0, _.useState)(null), g = (0, _.useMemo)((() => {
               if (!t) return null;
               const e = "sm" !== i && r;
               return (0, I.jsx)(D, {
-                title: c,
+                title: o,
                 hasTag: s,
                 tag: a,
                 hasDescription: e,
                 description: n,
-                fadesOut: o,
+                fadesOut: c,
                 badges: l
               })
-            }), [t, a, s, n, r, i, c, o, l]);
+            }), [t, a, s, n, r, i, o, c, l]);
             return (0, _.useEffect)((() => {
               m(g)
             }), [g]), [d, m]
@@ -2922,7 +2922,7 @@ _global.SENTRY_RELEASE = {
           }), m = void 0 !== i?.hasPricingOptions || null !== l;
           return (0, I.jsxs)("header", {
             className: "rockstargames-sites-gta-gen9c525342927ce11e37cc24e653e0ffc95",
-            "data-is-covercard": o,
+            "data-is-covercard": c,
             "data-expanded-view": n,
             children: [_.Children.map(r, (e => (0, _.cloneElement)(e, {
               title: a,
@@ -2933,7 +2933,7 @@ _global.SENTRY_RELEASE = {
                 title: a,
                 platformOptions: l,
                 pricingOptions: i,
-                setPricingContainerHeight: c,
+                setPricingContainerHeight: o,
                 expandedView: n
               }), !0 === i?.hasPricingOptions && (0, I.jsx)(H, {
                 title: a,
@@ -2941,7 +2941,7 @@ _global.SENTRY_RELEASE = {
                 tagStyle: i?._memoq?.tagStyle || "free",
                 discountPrice: i?._memoq?.discountPrice,
                 originalPrice: i?._memoq?.originalPrice,
-                setPricingContainerHeight: c
+                setPricingContainerHeight: o
               })]
             })]
           })
@@ -2961,8 +2961,8 @@ _global.SENTRY_RELEASE = {
             size: n,
             title: r,
             initial: i = "initial",
-            animate: c = "animate",
-            variants: o,
+            animate: o = "animate",
+            variants: c,
             type: l = null,
             context: d = null,
             textOverlayProps: m,
@@ -3002,8 +3002,8 @@ _global.SENTRY_RELEASE = {
               children: (0, I.jsxs)(K, {
                 ref: j,
                 initial: i,
-                animate: c,
-                variants: o.expanded,
+                animate: o,
+                variants: c.expanded,
                 transition: J.cardOpen,
                 className: (0, y.classList)("rockstargames-sites-gta-gen9dcb84dcfd34616fb0089133acf0c4669", g),
                 "data-type": l,
@@ -3026,7 +3026,7 @@ _global.SENTRY_RELEASE = {
                 }), (0, I.jsxs)(K, {
                   ref: N,
                   className: "rockstargames-sites-gta-gen9eaf357a8d0bae1199142949cbf24e7b9",
-                  variants: o.expandedContents,
+                  variants: c.expandedContents,
                   transition: J.afterCardOpen,
                   "data-theme": f,
                   children: [(0, I.jsxs)("div", {
@@ -3083,7 +3083,7 @@ _global.SENTRY_RELEASE = {
             defaultMessage: "{tag} {title} on {platformList}"
           }
         }),
-        ce = (0, te.withIntl)((e => {
+        oe = (0, te.withIntl)((e => {
           let {
             id: t,
             position: a,
@@ -3091,12 +3091,12 @@ _global.SENTRY_RELEASE = {
             size: n = "md",
             sectionTitle: r = "",
             expandedType: i = null,
-            modalProps: c = {
+            modalProps: o = {
               content: null,
               className: "",
               contentClassName: ""
             },
-            className: o,
+            className: c,
             children: l,
             isProductCard: d,
             cardIds: m = null,
@@ -3114,23 +3114,23 @@ _global.SENTRY_RELEASE = {
               event: "trackPageview"
             })
           }, S = () => {
-            if (!c?.content || !k.current || !i || "linkout" === i) return;
+            if (!o?.content || !k.current || !i || "linkout" === i) return;
             const e = k.current,
               r = window.getComputedStyle(e),
-              o = parseInt(r.getPropertyValue("width"), 10),
+              c = parseInt(r.getPropertyValue("width"), 10),
               l = parseInt(r.getPropertyValue("height"), 10),
               d = e.getBoundingClientRect(),
               {
                 content: u,
                 className: f,
                 contentClassName: p
-              } = c,
+              } = o,
               b = "fob" === n ? "fob" : "default";
             x({
               content: u,
               onClose: w,
               rect: d,
-              width: o,
+              width: c,
               height: l,
               className: f,
               contentClassName: p,
@@ -3189,7 +3189,7 @@ _global.SENTRY_RELEASE = {
           }), [f, s]);
           return u || "linkout" === i ? (0, I.jsx)("div", {
             ref: k,
-            className: o,
+            className: c,
             "data-size": n,
             "data-type": i,
             "data-product": d,
@@ -3210,7 +3210,7 @@ _global.SENTRY_RELEASE = {
                 link_url: window.location.href
               })
             },
-            className: o,
+            className: c,
             "data-size": n,
             "data-type": i,
             "data-product": d,
@@ -3220,7 +3220,7 @@ _global.SENTRY_RELEASE = {
             children: l
           })
         }), re),
-        oe = {
+        ce = {
           pillBtn: "rockstargames-sites-gta-gen9ebdcdd73cdde7ce5626490066de01474",
           selected: "rockstargames-sites-gta-gen9d058244e6f29505e3c05558039370b54",
           card: "rockstargames-sites-gta-gen9c2685d1ff8cc088bfef4c336b1a9f8ae",
@@ -3237,8 +3237,8 @@ _global.SENTRY_RELEASE = {
             images: s,
             size: r,
             title: i,
-            initial: c,
-            animate: o,
+            initial: o,
+            animate: c,
             variants: l,
             id: m,
             position: g,
@@ -3283,8 +3283,8 @@ _global.SENTRY_RELEASE = {
               title: i,
               context: p,
               textOverlayProps: k,
-              initial: c,
-              animate: o,
+              initial: o,
+              animate: c,
               variants: l,
               theme: N,
               cardIds: S,
@@ -3295,9 +3295,9 @@ _global.SENTRY_RELEASE = {
               platformOptions: T,
               isProductCard: E,
               children: v
-            })), [f, s, a, r, i, k, v, c, o, l, P, t, E]),
-            $ = [oe.card, M ? oe.coverCardWrapper : ""].join(" ");
-          return (0, I.jsx)(ce, {
+            })), [f, s, a, r, i, k, v, o, c, l, P, t, E]),
+            $ = [ce.card, M ? ce.coverCardWrapper : ""].join(" ");
+          return (0, I.jsx)(oe, {
             id: m,
             position: g,
             sectionTitle: u,
@@ -3366,13 +3366,13 @@ _global.SENTRY_RELEASE = {
             expandedView: n = !1,
             style: r = {}
           } = e;
-          const [i, c] = (0, _.useState)({
+          const [i, o] = (0, _.useState)({
             height: window.innerHeight,
             width: window.innerWidth
           });
           (0, _.useEffect)((() => {
             function e() {
-              c({
+              o({
                 height: window.innerHeight,
                 width: window.innerWidth
               })
@@ -3381,7 +3381,7 @@ _global.SENTRY_RELEASE = {
               window.removeEventListener("resize", e)
             }
           }), [i]);
-          const o = (0, _.useMemo)((() => t?.length && 0 !== t.length ? t.map((e => (0, I.jsx)(ge, {
+          const c = (0, _.useMemo)((() => t?.length && 0 !== t.length ? t.map((e => (0, I.jsx)(ge, {
             className: (0, y.classList)(me[e?.specialClass] ?? me.imageMask, me[e?.sizeClass], e?.className),
             variants: fe(e?.specialClass ?? "imageMask", n ? "expanded" : "collapsed"),
             initial: "initial",
@@ -3399,7 +3399,7 @@ _global.SENTRY_RELEASE = {
             animate: pe.fade.in.animate,
             transition: be.instantFade,
             "data-expanded-view": n,
-            children: o
+            children: c
           })
         };
       var ke = a(60285);
@@ -3411,8 +3411,8 @@ _global.SENTRY_RELEASE = {
             style: n,
             sectionTitle: r = "",
             id: i,
-            cardTitle: c,
-            position: o
+            cardTitle: o,
+            position: c
           } = e;
           const {
             track: l
@@ -3421,11 +3421,11 @@ _global.SENTRY_RELEASE = {
               event: "card_click",
               link_url: a,
               card_id: i,
-              card_name: c,
+              card_name: o,
               element_placement: r.toLowerCase(),
-              position: o
+              position: c
             })
-          }), [r, a, i, c, r, o]);
+          }), [r, a, i, o, r, c]);
           return "linkout" === t && a ? (0, I.jsx)(ke.A, {
             to: a,
             style: n,
@@ -3458,8 +3458,8 @@ _global.SENTRY_RELEASE = {
               description: "",
               collapsedHasDescription: !1
             },
-            images: c = [],
-            deckProps: o = {},
+            images: o = [],
+            deckProps: c = {},
             to: l = null,
             tina: d = {},
             position: m = 0,
@@ -3471,18 +3471,18 @@ _global.SENTRY_RELEASE = {
           } = e;
           const h = (0, y.useTinaPayload)(),
             v = d?.payload?.meta?.cdn ?? h?.meta?.prod ?? !1,
-            [k, x] = (0, _.useState)(o?.size ?? n),
+            [k, x] = (0, _.useState)(c?.size ?? n),
             [j, N] = (0, _.useState)(0),
             w = void 0 !== f?.hasPricingOptions || void 0 !== b?.hasPlatformOptions;
           return (0, _.useEffect)((() => {
-            x(o?.size ?? n)
-          }), [o?.size, n]), (0, I.jsx)(le, {
+            x(c?.size ?? n)
+          }), [c?.size, n]), (0, I.jsx)(le, {
             id: t,
             title: a,
             size: k,
             expandedType: r,
-            images: c,
-            deckProps: o,
+            images: o,
+            deckProps: c,
             prod: v,
             payload: {
               content: s,
@@ -3495,7 +3495,7 @@ _global.SENTRY_RELEASE = {
               contentClassName: _e.customModalContent
             },
             expandedCardContents: (0, I.jsx)(ve, {
-              images: c,
+              images: o,
               prod: v,
               expandedView: !0
             }),
@@ -3525,7 +3525,7 @@ _global.SENTRY_RELEASE = {
                   platformOptions: b,
                   setPricingContainerHeight: N,
                   children: (0, I.jsx)(ve, {
-                    images: c,
+                    images: o,
                     prod: v
                   })
                 })
@@ -3560,8 +3560,8 @@ _global.SENTRY_RELEASE = {
             name: n = null,
             title: r,
             titleSizeClass: i = null,
-            content: c,
-            ctaText: o,
+            content: o,
+            ctaText: c,
             ctaURL: l,
             size: d = "md",
             expandedType: m = "short",
@@ -3600,7 +3600,7 @@ _global.SENTRY_RELEASE = {
             images: u,
             deckProps: f,
             payload: {
-              content: c,
+              content: o,
               meta: {}
             },
             variants: Me.plainCard,
@@ -3637,7 +3637,7 @@ _global.SENTRY_RELEASE = {
                 }), (0, I.jsx)(Te.A, {
                   target: "newtab" === m ? "_blank" : "_self",
                   to: l || void 0,
-                  children: o || k.formatMessage(Ce.card.card_learn_more)
+                  children: c || k.formatMessage(Ce.card.card_learn_more)
                 })]
               })
             })
@@ -3692,8 +3692,8 @@ _global.SENTRY_RELEASE = {
               description: "",
               collapsedHasDescription: !1
             },
-            images: c = [],
-            deckProps: o = {},
+            images: o = [],
+            deckProps: c = {},
             tina: l = {},
             payload: d,
             position: m = 0,
@@ -3709,16 +3709,16 @@ _global.SENTRY_RELEASE = {
                 ...e.image,
                 prod: t
               }
-            } : e)))(c, b),
-            [v, k] = (0, _.useState)(o?.size ?? n),
+            } : e)))(o, b),
+            [v, k] = (0, _.useState)(c?.size ?? n),
             {
               parent: x,
               main: j,
               thumbs: N
             } = $e?.cardWithImageGallery?.gallery ?? {};
           return (0, _.useEffect)((() => {
-            k(o?.size ?? n)
-          }), [o?.size, n]), (0, I.jsx)(le, {
+            k(c?.size ?? n)
+          }), [c?.size, n]), (0, I.jsx)(le, {
             id: t,
             position: m,
             sectionTitle: g,
@@ -3731,7 +3731,7 @@ _global.SENTRY_RELEASE = {
             size: v,
             expandedType: r,
             images: h,
-            deckProps: o,
+            deckProps: c,
             prod: b,
             variants: $e.cardWithImageGallery,
             textOverlayProps: i,
@@ -3829,8 +3829,8 @@ _global.SENTRY_RELEASE = {
           title: n,
           description: r,
           disclaimer: i,
-          customSlidesPerView: c = null,
-          theme: o = "none",
+          customSlidesPerView: o = null,
+          theme: c = "none",
           cardSizeBreakpoints: l = {},
           customAspectRatio: d = "3/1",
           titleBadge: m = null
@@ -3840,7 +3840,7 @@ _global.SENTRY_RELEASE = {
           f = ze({
             ids: u
           }),
-          [p, b] = (0, _.useState)(c),
+          [p, b] = (0, _.useState)(o),
           [h] = (0, ae.useSearchParams)(),
           [v, k] = (0, _.useState)(!1);
         (0, _.useEffect)((() => {
@@ -3854,7 +3854,7 @@ _global.SENTRY_RELEASE = {
         }), []), (0, _.useEffect)((() => {
           if (!g.current) return;
           const e = () => {
-            const e = c || window.getComputedStyle(g.current).getPropertyValue("--slides-per-view");
+            const e = o || window.getComputedStyle(g.current).getPropertyValue("--slides-per-view");
             b(e)
           };
           return window.addEventListener("resize", e), e(), () => {
@@ -3871,8 +3871,8 @@ _global.SENTRY_RELEASE = {
             if (r) {
               const {
                 id: i,
-                tina: c
-              } = r, l = C().clone(c);
+                tina: o
+              } = r, l = C().clone(o);
               C().set(l, "payload.meta.id", i), s.push((0, I.jsx)(y.TinaParser, {
                 components: We,
                 tina: l,
@@ -3884,7 +3884,7 @@ _global.SENTRY_RELEASE = {
                   id: i,
                   position: e,
                   sectionTitle: n,
-                  theme: o,
+                  theme: c,
                   cardIds: u.filter((e => e !== t))
                 }
               }, i)), e += 1
@@ -3894,7 +3894,7 @@ _global.SENTRY_RELEASE = {
         }), [f, a]);
         return (0, I.jsxs)("div", {
           className: "rockstargames-sites-gta-gen9caf46db6464a84ad4990aed75ef74ff1",
-          "data-theme": o,
+          "data-theme": c,
           ref: g,
           children: [(0, I.jsx)(Ge, {
             description: r,
@@ -3906,7 +3906,7 @@ _global.SENTRY_RELEASE = {
             customSlidesPerView: p,
             customAspectRatio: d,
             titleBadge: m,
-            theme: o
+            theme: c
           }), i && (0, I.jsx)("div", {
             className: "rockstargames-sites-gta-gen9e90de79e6e215bde4beeb973696fcc11",
             children: (0, I.jsx)("span", {
@@ -3953,8 +3953,8 @@ _global.SENTRY_RELEASE = {
             itemNumber: n,
             inModalMode: r,
             openModalMode: i,
-            element: c,
-            upNext: o,
+            element: o,
+            upNext: c,
             mobileMode: l,
             refDeck: d,
             components: m,
@@ -3990,7 +3990,7 @@ _global.SENTRY_RELEASE = {
             [J, ee] = (0, _.useState)(-1),
             [ae, se] = (0, _.useState)(0),
             [re, ie] = (0, _.useState)(0),
-            [ce, oe] = (0, _.useState)(0),
+            [oe, ce] = (0, _.useState)(0),
             [le, me] = (0, _.useState)(!1),
             [ge, ue] = (0, _.useState)(""),
             [fe, pe] = (0, _.useState)(null),
@@ -4034,14 +4034,14 @@ _global.SENTRY_RELEASE = {
             it = e => {
               rt(e)
             },
-            ct = e => {
+            ot = e => {
               if (!0 === z || 0 === $e || !r && !l || be) return;
               const t = Ke(e),
                 a = t.x > $e ? 1 : -1,
                 s = Math.abs($e - t.x);
               r && !l && s > Xe ? (nt(!0), ue(a > 0 ? "prev" : "next"), lt()) : (We(!0), Ue(s * a), k(s * a))
             },
-            ot = e => {
+            ct = e => {
               if (!0 === z || !r && !l || be) return;
               const t = Ke(e),
                 a = t.x > $e ? 1 : -1,
@@ -4073,11 +4073,11 @@ _global.SENTRY_RELEASE = {
                 const e = a * Qe(d?.current, "--eventDeck-modalGutters"),
                   s = t?.innerWidth,
                   n = s - 2 * e;
-                $(n), C.current && l && D(n), O(Qe(d.current, "--eventDeck-itemSize") * a), oe(Qe(d.current, "--eventDeck-phaseOneTransitionDuration"));
+                $(n), C.current && l && D(n), O(Qe(d.current, "--eventDeck-itemSize") * a), ce(Qe(d.current, "--eventDeck-phaseOneTransitionDuration"));
                 const r = Qe(d?.current, "--eventDeck-itemImageTitleMargins") * a,
                   i = w?.current?.clientHeight,
-                  c = i + r;
-                Number.isNaN(c) || q(c), se(Qe(d?.current, "--eventDeck-headerHeight") * a)
+                  o = i + r;
+                Number.isNaN(o) || q(o), se(Qe(d?.current, "--eventDeck-headerHeight") * a)
               }
               let s = Math.min(700, t.innerWidth);
               l || (s = 900), Z(`${s}`)
@@ -4135,18 +4135,18 @@ _global.SENTRY_RELEASE = {
           }), [st]), (0, _.useEffect)((() => {
             r && clearTimeout(J), setTimeout((() => {
               me(!le)
-            }), ce)
+            }), oe)
           }), [r]), (0, _.useEffect)((() => (document.body.addEventListener("mouseleave", lt), () => {
             document.body.removeEventListener("mouseleave", lt)
           })), []), (0, _.useEffect)((() => {
-            T.current ? _e(Ze(T.current)) : _e(!1), void 0 !== c && c.current ? je(Ze(c.current)) : je(!1)
-          }), [c, T, t, r, le]), Ae ? (0, I.jsxs)("div", {
+            T.current ? _e(Ze(T.current)) : _e(!1), void 0 !== o && o.current ? je(Ze(o.current)) : je(!1)
+          }), [o, T, t, r, le]), Ae ? (0, I.jsxs)("div", {
             className: "rockstargames-sites-gta-gen9c4090652e3c0a4e1979bb0a36b22b7cd",
-            ref: c,
+            ref: o,
             "data-item-position": n,
             "data-modal-mode": r,
             "data-active-item": t,
-            "data-up-next": o,
+            "data-up-next": c,
             "data-transition": Fe || 0 !== v ? "none" : p,
             "data-scrollable": ye,
             style: {
@@ -4173,11 +4173,11 @@ _global.SENTRY_RELEASE = {
               r || E(!1), r || l || clearTimeout(J)
             },
             onTouchStart: it,
-            onTouchMove: ct,
-            onTouchEnd: ot,
+            onTouchMove: ot,
+            onTouchEnd: ct,
             onMouseDown: it,
-            onMouseMove: ct,
-            onMouseUp: ot,
+            onMouseMove: ot,
+            onMouseUp: ct,
             onKeyUp: e => {
               "Enter" === e.key && (r || i(e))
             },
@@ -4261,8 +4261,8 @@ _global.SENTRY_RELEASE = {
             nextBtnDisabled: n,
             selectedItemNumber: r,
             itemsData: i,
-            closeModalMode: c,
-            inModalMode: o,
+            closeModalMode: o,
+            inModalMode: c,
             controlsHidden: l
           } = e;
           const d = (0, te.useIntl)();
@@ -4275,10 +4275,10 @@ _global.SENTRY_RELEASE = {
                 type: "button",
                 onClick: t,
                 disabled: a,
-                "aria-label": o ? d.formatMessage(Ce.card.events_deck_modal_previous_aria_label) : d.formatMessage(Ce.card.events_deck_previous_aria_label)
+                "aria-label": c ? d.formatMessage(Ce.card.events_deck_modal_previous_aria_label) : d.formatMessage(Ce.card.events_deck_previous_aria_label)
               }), (0, I.jsxs)("span", {
                 className: "rockstargames-sites-gta-gen9a94a647e9943db9c97ae87c8c6a162cd",
-                "aria-hidden": !o,
+                "aria-hidden": !c,
                 "aria-label": d.formatMessage(Ce.card.events_deck_paging_label, {
                   currentPage: r + 1,
                   totalPages: i.length
@@ -4291,15 +4291,15 @@ _global.SENTRY_RELEASE = {
                 type: "button",
                 onClick: s,
                 disabled: n,
-                "aria-label": o ? d.formatMessage(Ce.card.events_deck_modal_next_aria_label) : d.formatMessage(Ce.card.events_deck_next_aria_label)
+                "aria-label": c ? d.formatMessage(Ce.card.events_deck_modal_next_aria_label) : d.formatMessage(Ce.card.events_deck_next_aria_label)
               })]
             }), (0, I.jsx)("button", {
               className: "rockstargames-sites-gta-gen9d43b6cdcbcc07082edacd9a7cb1598c5",
               type: "button",
-              onClick: c,
+              onClick: o,
               "aria-label": d.formatMessage(Ce.card.events_deck_modal_close_label),
-              "aria-hidden": !o,
-              tabIndex: o ? 0 : -1
+              "aria-hidden": !c,
+              tabIndex: c ? 0 : -1
             })]
           })
         };
@@ -4307,8 +4307,8 @@ _global.SENTRY_RELEASE = {
         nt = a.n(st),
         rt = a(205),
         it = a.n(rt),
-        ct = a(32503),
-        ot = a.n(ct),
+        ot = a(32503),
+        ct = a.n(ot),
         lt = a(99074),
         dt = a(37109),
         mt = a(5765),
@@ -4336,7 +4336,7 @@ _global.SENTRY_RELEASE = {
               title: a
             } = e, {
               track: s
-            } = (0, ne.useGtmTrack)(), [r, i] = (0, _.useState)(!1), c = (() => {
+            } = (0, ne.useGtmTrack)(), [r, i] = (0, _.useState)(!1), o = (() => {
               const {
                 data: e
               } = (0, we.useQuery)(Se.TinaModulesList, {
@@ -4349,14 +4349,14 @@ _global.SENTRY_RELEASE = {
               return (0, x.X)({
                 ids: a
               })
-            })(), [o, l] = (0, _.useState)([]), [m, g] = (0, _.useState)(null), [u, f] = (0, _.useState)(0), [h, v] = (0, _.useState)(window.devicePixelRatio || window.screen.availWidth / document.documentElement.clientWidth), [k, j] = (0, _.useState)(!1), N = (0, _.createRef)(), [S, T] = (0, _.useState)(null), M = (0, _.createRef)(), E = (0, _.createRef)(), [L, P] = (0, _.useState)([]), [B, $] = (0, _.useState)(!0), [V, D] = (0, _.useState)(!1), [H, O] = (0, _.useState)(!1), [G, R] = (0, _.useState)([]), [z, F] = (0, _.useState)(404), [W, q] = (0, _.useState)(808), [U, X] = (0, _.useState)(672), [Y, Q] = (0, _.useState)(336), [K, Z] = (0, _.useState)(0), [J, ee] = (0, _.useState)(0), [te, ae] = (0, _.useState)(0), [se, re] = (0, _.useState)(0), [ie, ce] = (0, _.useState)(0), [oe, le] = (0, _.useState)(!1), de = !!(0, A.usePrevious)(oe), [me, ge] = (0, _.useState)(window.innerWidth), [ue, fe] = (0, _.useState)(0), [pe, be] = (0, _.useState)(0), [he, ve] = (0, _.useState)(0), [ke, xe] = (0, _.useState)(0), [_e, ye] = (0, _.useState)(0), [je, Ne] = (0, _.useState)(0), [Ce, Te] = (0, _.useState)(0), [Ae, Me] = (0, _.useState)(0), [Ie, Ee] = (0, _.useState)(-1e3), [Le, Pe] = (0, _.useState)(0), [Be, $e] = (0, _.useState)(50), [De, He] = (0, _.useState)(0), [Oe, Ge] = (0, _.useState)(!1), [Re, ze] = (0, _.useState)(768), [Fe, We] = (0, _.useState)(!1), [qe, Ue] = (0, _.useState)(!1), [Xe, Ze] = (0, _.useState)(!1), [Je, tt] = (0, _.useState)(!1), [st, nt] = (0, _.useState)(!1), [rt, it] = (0, _.useState)(1e3), [ct, ot] = (0, _.useState)(1.2), [lt, dt] = (0, _.useState)(0), [mt, gt] = (0, _.useState)(!1), [ut, ft] = (0, _.useState)(!1), [pt, bt] = (0, _.useState)(!0), [ht, vt] = (0, _.useState)(!1), [kt, xt] = (0, _.useState)(!1), [_t, yt] = (0, _.useState)(null), [jt, Nt] = (0, _.useState)(100), [wt, St] = (0, _.useState)(!1), [Ct, Tt] = (0, _.useState)({}), [At, Mt] = (0, _.useState)(""), [It, Et] = (0, _.useState)(0), [Lt, Pt] = (0, _.useState)(!1), [Bt, $t] = (0, _.useState)(!1), [Vt, Dt] = (0, _.useState)(0), [Ht, Ot] = (0, _.useState)(0), [Gt, Rt] = (0, _.useState)(100), [zt, Ft] = (0, _.useState)(!1), [Wt, qt] = (0, _.useState)(!1), Ut = () => me * ue + Be, Xt = () => !1 === Oe ? ct : 1, Yt = e => e === Ce - 1 || e === Ce + 1, Qt = () => {
+            })(), [c, l] = (0, _.useState)([]), [m, g] = (0, _.useState)(null), [u, f] = (0, _.useState)(0), [h, v] = (0, _.useState)(window.devicePixelRatio || window.screen.availWidth / document.documentElement.clientWidth), [k, j] = (0, _.useState)(!1), N = (0, _.createRef)(), [S, T] = (0, _.useState)(null), M = (0, _.createRef)(), E = (0, _.createRef)(), [L, P] = (0, _.useState)([]), [B, $] = (0, _.useState)(!0), [V, D] = (0, _.useState)(!1), [H, O] = (0, _.useState)(!1), [G, R] = (0, _.useState)([]), [z, F] = (0, _.useState)(404), [W, q] = (0, _.useState)(808), [U, X] = (0, _.useState)(672), [Y, Q] = (0, _.useState)(336), [K, Z] = (0, _.useState)(0), [J, ee] = (0, _.useState)(0), [te, ae] = (0, _.useState)(0), [se, re] = (0, _.useState)(0), [ie, oe] = (0, _.useState)(0), [ce, le] = (0, _.useState)(!1), de = !!(0, A.usePrevious)(ce), [me, ge] = (0, _.useState)(window.innerWidth), [ue, fe] = (0, _.useState)(0), [pe, be] = (0, _.useState)(0), [he, ve] = (0, _.useState)(0), [ke, xe] = (0, _.useState)(0), [_e, ye] = (0, _.useState)(0), [je, Ne] = (0, _.useState)(0), [Ce, Te] = (0, _.useState)(0), [Ae, Me] = (0, _.useState)(0), [Ie, Ee] = (0, _.useState)(-1e3), [Le, Pe] = (0, _.useState)(0), [Be, $e] = (0, _.useState)(50), [De, He] = (0, _.useState)(0), [Oe, Ge] = (0, _.useState)(!1), [Re, ze] = (0, _.useState)(768), [Fe, We] = (0, _.useState)(!1), [qe, Ue] = (0, _.useState)(!1), [Xe, Ze] = (0, _.useState)(!1), [Je, tt] = (0, _.useState)(!1), [st, nt] = (0, _.useState)(!1), [rt, it] = (0, _.useState)(1e3), [ot, ct] = (0, _.useState)(1.2), [lt, dt] = (0, _.useState)(0), [mt, gt] = (0, _.useState)(!1), [ut, ft] = (0, _.useState)(!1), [pt, bt] = (0, _.useState)(!0), [ht, vt] = (0, _.useState)(!1), [kt, xt] = (0, _.useState)(!1), [_t, yt] = (0, _.useState)(null), [jt, Nt] = (0, _.useState)(100), [wt, St] = (0, _.useState)(!1), [Ct, Tt] = (0, _.useState)({}), [At, Mt] = (0, _.useState)(""), [It, Et] = (0, _.useState)(0), [Lt, Pt] = (0, _.useState)(!1), [Bt, $t] = (0, _.useState)(!1), [Vt, Dt] = (0, _.useState)(0), [Ht, Ot] = (0, _.useState)(0), [Gt, Rt] = (0, _.useState)(100), [zt, Ft] = (0, _.useState)(!1), [Wt, qt] = (0, _.useState)(!1), Ut = () => me * ue + Be, Xt = () => !1 === Oe ? ot : 1, Yt = e => e === Ce - 1 || e === Ce + 1, Qt = () => {
               let e = -1 * je;
               return e = -1 * je - ke, e
             }, Kt = function(e) {
               let t = !(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1];
               if (!0 === Oe) return 0;
               const a = e.itemNumber % 2 == 0,
-                s = z * ct;
+                s = z * ot;
               if (!0 === a && 0 !== e.itemNumber) {
                 const a = Qe(e?.element?.current, "top");
                 let n = a - te;
@@ -4375,10 +4375,10 @@ _global.SENTRY_RELEASE = {
             }, ea = function(e) {
               let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
               if (kt || ht) return;
-              if (xt(!0), oe) return void
+              if (xt(!0), ce) return void
               function() {
                 let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-                if (Ce + 1 >= o.length) return;
+                if (Ce + 1 >= c.length) return;
                 const t = L[Ce + 1]?.tina?.payload?.meta?.title ?? `card-${Ce+1}`;
                 s({
                   event: e ? "modal_swipe" : "modal_next",
@@ -4388,7 +4388,7 @@ _global.SENTRY_RELEASE = {
                   view_name: `${L[Ce+1].source_content_id}/${t}`,
                   source_content_id: L[Ce + 1].source_content_id,
                   source_content_name: L[Ce + 1].source_content_name
-                }), Jt(Ce + 1, o.length, !0), Oe ? Oe && P(L.map((e => {
+                }), Jt(Ce + 1, c.length, !0), Oe ? Oe && P(L.map((e => {
                   e.itemNumber === Ce - 1 ? e.upNext = !1 : e.itemNumber === Ce + 2 ? e.upNext = !0 : e.itemNumber === Ce + 1 ? e.active = !0 : e.itemNumber === Ce && (e.upNext = !0, e.active = !1);
                   const t = e.styles.transform.replace("translate3d(", "").split(",");
                   let a = Number(t[0].replace("px", ""));
@@ -4425,7 +4425,7 @@ _global.SENTRY_RELEASE = {
             }, ta = function(e) {
               let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
               if (kt || ht) return;
-              if (xt(!0), !0 === oe) return void
+              if (xt(!0), !0 === ce) return void
               function() {
                 let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
                 if (kt) return;
@@ -4440,7 +4440,7 @@ _global.SENTRY_RELEASE = {
                   view_name: `${L[Ce-1].source_content_id}/${t}`,
                   source_content_id: L[Ce - 1].source_content_id,
                   source_content_name: L[Ce - 1].source_content_name
-                }), Jt(Ce - 1, o.length, !0), Oe || P(L.map((e => (e.itemNumber === Ce + 1 ? e.upNext = !1 : e.itemNumber === Ce - 2 ? e.upNext = !0 : e.itemNumber === Ce ? (e.upNext = !0, e.active = !1, e.styles = {
+                }), Jt(Ce - 1, c.length, !0), Oe || P(L.map((e => (e.itemNumber === Ce + 1 ? e.upNext = !1 : e.itemNumber === Ce - 2 ? e.upNext = !0 : e.itemNumber === Ce ? (e.upNext = !0, e.active = !1, e.styles = {
                   ...e.styles,
                   transform: `translate3d(${Zt(e,1)}px, ${Kt(e)}px, 0) scale(${Xt()})`
                 }) : e.itemNumber === Ce - 1 && (e.active = !0, e.styles = {
@@ -4475,17 +4475,17 @@ _global.SENTRY_RELEASE = {
                   ye(n), (e > 0 || 0 === e || -1 * e < W) && (e = 0, $(!0), D(!1), ye(0)), Ne(e)
                 }
             }, aa = e => {
-              if (Lt || oe || Oe) return;
+              if (Lt || ce || Oe) return;
               const t = Ke(e);
               Et(t.x)
             }, sa = e => {
-              if (Lt || 0 === It || oe || Oe) return;
+              if (Lt || 0 === It || ce || Oe) return;
               const t = Ke(e),
                 a = t.x > It ? 1 : -1;
               let s = Math.abs(It - t.x) * a;
               (0 === _e && 1 === a || _e === ie && -1 === a) && (s *= .35), $t(!0), Dt(s)
             }, na = e => {
-              if (Lt || oe || Oe) return;
+              if (Lt || ce || Oe) return;
               const t = Ke(e),
                 a = t.x > It ? 1 : -1,
                 s = Math.abs(It - t.x);
@@ -4494,7 +4494,7 @@ _global.SENTRY_RELEASE = {
               Pt(!0), Et(0), Dt(0), $t(!1)
             }, ia = e => {
               Bt && (na(e), $t(!1))
-            }, ca = function(e, t) {
+            }, oa = function(e, t) {
               let a = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "";
               return e.map(((e, s) => {
                 let n = s * Y,
@@ -4520,7 +4520,7 @@ _global.SENTRY_RELEASE = {
                   }
                 }
               }))
-            }, oa = () => {
+            }, ca = () => {
               const e = L[Ce]?.tina?.payload?.meta?.title ?? `card-${Ce}`;
               if (s({
                   event: "modal_close",
@@ -4533,9 +4533,9 @@ _global.SENTRY_RELEASE = {
                   source_content_name: L[Ce].source_content_name
                 }), Oe) {
                 let e = Ce * Y * -1;
-                e < Ie && (e = Ie, D(!0), $(!1), ye(ie)), ye(Ce), Jt(Ce, ie, !1), P(ca(o, "cardClose", `translate3d(${e}px, 0, 0)`))
+                e < Ie && (e = Ie, D(!0), $(!1), ye(ie)), ye(Ce), Jt(Ce, ie, !1), P(oa(c, "cardClose", `translate3d(${e}px, 0, 0)`))
               } else {
-                P(ca(o, "cardClose"));
+                P(oa(c, "cardClose"));
                 const e = Math.ceil((L[Ce].columnNumber + 1) / K) - 1;
                 ye(e);
                 let t = e * J * -1;
@@ -4571,7 +4571,7 @@ _global.SENTRY_RELEASE = {
                 source_content_name: t
               })
             }), [wt]), (0, _.useEffect)((() => {
-              if (!qe || oe) return;
+              if (!qe || ce) return;
               Ue(!1);
               const e = (() => {
                 const e = S?.getBoundingClientRect().top;
@@ -4617,7 +4617,7 @@ _global.SENTRY_RELEASE = {
               })))
             };
             (0, _.useEffect)((() => {
-              !1 !== Fe && !0 !== oe && (le(!0), We(!1), Jt(Ce, L.length, !0), M.current && (M.current.style.transition = "all var(--eventDeck-transitionCardOpen)", M.current.style.transform = `translate(${-1*ke}px, ${lt}px)`), da(), Oe ? (Ne(0), vt(!1), ft(!0)) : nt(!0))
+              !1 !== Fe && !0 !== ce && (le(!0), We(!1), Jt(Ce, L.length, !0), M.current && (M.current.style.transition = "all var(--eventDeck-transitionCardOpen)", M.current.style.transform = `translate(${-1*ke}px, ${lt}px)`), da(), Oe ? (Ne(0), vt(!1), ft(!0)) : nt(!0))
             }), [Fe]), (0, _.useEffect)((() => {
               ut && (ft(!1), P(L.map((e => ("none" === e.styles.display && (e.styles.display = null, e.styles.transition = null), e)))))
             }), [ut]);
@@ -4643,14 +4643,14 @@ _global.SENTRY_RELEASE = {
                 ma(), vt(!1)
               }), 1))
             }), [st]), (0, _.useEffect)((() => {
-              P(ca(o, ""))
-            }), [U, Y, o]), (0, _.useEffect)((() => {
+              P(oa(c, ""))
+            }), [U, Y, c]), (0, _.useEffect)((() => {
               const e = window.navigator?.userAgentData?.platform || window.navigator?.platform;
               Ft(["iPad Simulator", "iPhone Simulator", "iPod Simulator", "iPad", "iPhone", "iPod"].includes(e))
             }), []), (0, _.useEffect)((() => {
-              const e = de !== oe;
-              oe ? (e && t(!0), zt && qt(!0)) : Bt || oe || (e && t(!1), zt && Wt && qt(!1))
-            }), [oe, Bt]), (0, _.useEffect)((() => {
+              const e = de !== ce;
+              ce ? (e && t(!0), zt && qt(!0)) : Bt || ce || (e && t(!1), zt && Wt && qt(!1))
+            }), [ce, Bt]), (0, _.useEffect)((() => {
               if (!kt) return;
               clearTimeout(_t);
               const e = setTimeout((() => {
@@ -4664,11 +4664,11 @@ _global.SENTRY_RELEASE = {
             }), [k]), (0, _.useEffect)((() => {
               j(!0), Ne(0), ye(0);
               let e = Math.ceil(Math.ceil(De / Y) / K);
-              Oe && (e = L.length - 1), e < 0 && (e = 1), Jt(0, e, !1), oe && oa()
+              Oe && (e = L.length - 1), e < 0 && (e = 1), Jt(0, e, !1), ce && ca()
             }), [Oe]), (0, _.useEffect)((() => {
-              M.current && !oe && (M.current.style.transform = "")
-            }), [M, Oe, oe]), (0, _.useEffect)((() => {
-              const e = (c ?? []).map((e => {
+              M.current && !ce && (M.current.style.transform = "")
+            }), [M, Oe, ce]), (0, _.useEffect)((() => {
+              const e = (o ?? []).map((e => {
                 let t = null;
                 return "FeaturedEventInfo" === e?.tina?.payload?.content[0]?._template && e?.tina?.variables?.keys?.meta && (t = e?.tina?.variables?.keys?.meta?.title), {
                   ...e,
@@ -4679,9 +4679,9 @@ _global.SENTRY_RELEASE = {
                 }
               }));
               l(e)
-            }), [c]), (0, _.useEffect)((() => {
-              R(o.map((() => (0, _.createRef)())))
             }), [o]), (0, _.useEffect)((() => {
+              R(c.map((() => (0, _.createRef)())))
+            }), [c]), (0, _.useEffect)((() => {
               const e = e => {
                 const {
                   key: t
@@ -4691,13 +4691,13 @@ _global.SENTRY_RELEASE = {
               return document.addEventListener("keydown", e), () => {
                 document.removeEventListener("keydown", e)
               }
-            }), [kt, ht, oe]), (0, _.useEffect)((() => {
+            }), [kt, ht, ce]), (0, _.useEffect)((() => {
               if (M.current) {
                 let e = 0;
                 e = M?.current?.clientHeight, e += Qe(M?.current, "margin-top"), e += Qe(M?.current, "margin-bottom"), Me(e)
               }
             }), [M, E]), (0, _.useEffect)((() => {
-              oe && (() => {
+              ce && (() => {
                 const e = S?.getBoundingClientRect().top,
                   t = -1 * (e - u);
                 if (P(L.map((e => {
@@ -4715,8 +4715,8 @@ _global.SENTRY_RELEASE = {
                   M.current.style.transform = `translate(${-1*ke}px, ${t}px)`
                 }
               })()
-            }), [Oe, oe, lt]), (0, _.useEffect)((() => {
-              oe || (De < ue * me && 0 === _e ? (Ne(0), D(!0), $(!0)) : je < Ie ? (D(!0), $(!1), ye(ie), Ne(Ie)) : je < 0 && (D(!1), ye(ie - 1)), De > ue * me && V && D(!1))
+            }), [Oe, ce, lt]), (0, _.useEffect)((() => {
+              ce || (De < ue * me && 0 === _e ? (Ne(0), D(!0), $(!0)) : je < Ie ? (D(!0), $(!1), ye(ie), Ne(Ie)) : je < 0 && (D(!1), ye(ie - 1)), De > ue * me && V && D(!1))
             }), [Ie]), (0, _.useEffect)((() => {
               if (N.current) {
                 T(N.current);
@@ -4731,8 +4731,8 @@ _global.SENTRY_RELEASE = {
                 n < me && (r = .5 * (me - n)), xe(r);
                 let i = Qe(N.current, "--eventDeck-modalBottomGutter");
                 i *= e;
-                const c = window.innerHeight - (Ae + i);
-                ae(.5 * s < c ? s / 4 : .5 * c);
+                const o = window.innerHeight - (Ae + i);
+                ae(.5 * s < o ? s / 4 : .5 * o);
                 const l = Qe(N.current, "--eventDeck-mobileBreakpoint");
                 ze(l);
                 let d = Qe(N.current, "--eventDeck-itemSize");
@@ -4745,22 +4745,22 @@ _global.SENTRY_RELEASE = {
                 q(b), X(b + p);
                 const h = d + p;
                 Q(h);
-                let v = Math.ceil(.5 * (o.length - 1)) * h + b;
-                Oe && (v = o.length * h), He(v), 0 !== De && Ee(-1 * De + s);
+                let v = Math.ceil(.5 * (c.length - 1)) * h + b;
+                Oe && (v = c.length * h), He(v), 0 !== De && Ee(-1 * De + s);
                 let k = Math.ceil(Math.ceil(v / h) / K);
-                (Oe || oe) && (k = L.length - 1), ce(k);
+                (Oe || ce) && (k = L.length - 1), oe(k);
                 const x = Qe(N.current, "--eventDeck-itemScaleUpAmount");
-                ot(x), it(Qe(N.current, "--eventDeck-cardCloseTransitionDuration")), f(Qe(N.current, "--eventDeck-itemImageTitleMargins") * e), null !== m && e !== m && (g(e), oe && ma()), null === m && g(e)
+                ct(x), it(Qe(N.current, "--eventDeck-cardCloseTransitionDuration")), f(Qe(N.current, "--eventDeck-itemImageTitleMargins") * e), null !== m && e !== m && (g(e), ce && ma()), null === m && g(e)
               }
-            }), [N, o]), (0, _.useEffect)((() => {
-              if (oe && !Oe) {
+            }), [N, c]), (0, _.useEffect)((() => {
+              if (ce && !Oe) {
                 ma();
                 const e = S?.getBoundingClientRect().top,
                   t = -1 * (e - u);
                 t !== lt && dt(t)
               }
             }), [h]), (0, _.useEffect)((() => {
-              O(!(!B || !V || oe))
+              O(!(!B || !V || ce))
             }), [B, V]), (0, _.useEffect)((() => {
               const e = Ye()((e => {
                 ge(e), Ge(e < Re);
@@ -4771,7 +4771,7 @@ _global.SENTRY_RELEASE = {
                 let s = a * Y;
                 s > he && (s = he), ee(s), re(e - e * t);
                 const n = window.devicePixelRatio || window.screen.availWidth / document.documentElement.clientWidth;
-                if (n !== h && v(n), oe && n === h && !k) {
+                if (n !== h && v(n), ce && n === h && !k) {
                   const e = S?.getBoundingClientRect().top,
                     t = -1 * (e - u);
                   t !== lt && dt(t)
@@ -4780,14 +4780,14 @@ _global.SENTRY_RELEASE = {
               return window.addEventListener("resize", (() => {
                 e(window.innerWidth)
               })), window.addEventListener("scroll", (() => {
-                oe && Oe && e(window.innerWidth)
+                ce && Oe && e(window.innerWidth)
               })), e(window.innerWidth), () => {
                 window.removeEventListener("resize", (() => {
                   e(window.innerWidth)
                 }))
               }
-            }), [Y, ue, oe, Oe]), (0, _.useEffect)((() => {
-              !1 !== oe && !0 !== k && (Oe ? da() : ma(!0))
+            }), [Y, ue, ce, Oe]), (0, _.useEffect)((() => {
+              !1 !== ce && !0 !== k && (Oe ? da() : ma(!0))
             }), [se, J, Be, z, me, Le, te, lt]), (0, _.useEffect)((() => {
               const e = () => {
                 if (N.current && pt) {
@@ -4826,8 +4826,8 @@ _global.SENTRY_RELEASE = {
             }), [Lt]), (0, _.useEffect)((() => {
               Rt(Oe ? 20 : 100)
             }), [Oe]), (0, _.useEffect)((() => {
-              Nt(oe ? 500 : 100)
-            }), [oe]);
+              Nt(ce ? 500 : 100)
+            }), [ce]);
             const ua = (0, y.useTinaComponents)(),
               fa = (0, _.useMemo)((() => ({
                 ...ua,
@@ -4858,7 +4858,7 @@ _global.SENTRY_RELEASE = {
                 "aria-hidden": "true"
               }), (0, I.jsxs)("div", {
                 className: "rockstargames-sites-gta-gen9bf13eb49657ff34f800ad89de65ad3b9",
-                "data-modal-mode": oe,
+                "data-modal-mode": ce,
                 "data-faded": pt,
                 ref: N,
                 onTouchStart: aa,
@@ -4874,7 +4874,7 @@ _global.SENTRY_RELEASE = {
                   "aria-hidden": "true"
                 }), (0, I.jsxs)("div", {
                   className: "rockstargames-sites-gta-gen9bc0660e650ef4aabf28e90cce99a05be",
-                  "data-modal-mode": oe,
+                  "data-modal-mode": ce,
                   ref: M,
                   "data-animating": mt,
                   children: [(0, I.jsx)("h2", {
@@ -4886,14 +4886,14 @@ _global.SENTRY_RELEASE = {
                     nextPage: ea,
                     nextBtnDisabled: V,
                     selectedItemNumber: Ce,
-                    itemsData: o,
-                    closeModalMode: oa,
-                    inModalMode: oe,
+                    itemsData: c,
+                    closeModalMode: ca,
+                    inModalMode: ce,
                     controlsHidden: H
                   })]
                 }), (0, I.jsx)("div", {
                   className: "rockstargames-sites-gta-gen9c54f31f5237995d05edfb79cc4e08a33",
-                  "data-modal-mode": oe,
+                  "data-modal-mode": ce,
                   "data-is-dragging": Bt,
                   style: {
                     transform: `translate3d(${je+Vt}px, 0, 0)`,
@@ -4906,10 +4906,10 @@ _global.SENTRY_RELEASE = {
             })
           },
           PageTemplate: it(),
-          ExpandingPlatformButton: c.A,
+          ExpandingPlatformButton: o.A,
           TextCard: He,
           Deck: qe,
-          Grid: o.A,
+          Grid: c.A,
           Hero: l.A,
           HighlightsItem: Ue.HighlightsItem,
           HTMLElement: d.A,
@@ -4926,7 +4926,7 @@ _global.SENTRY_RELEASE = {
           TinaModuleFetchNRender: x.A,
           PromoModule: h.A,
           RockstarVideoPlayer: nt(),
-          Engagement: ot()
+          Engagement: ct()
         },
         yt = {
           CalloutSection: s.A,
@@ -4935,9 +4935,9 @@ _global.SENTRY_RELEASE = {
           ConditionalBlock: r.A,
           CoverCard: Ie,
           Carousel: n.A,
-          ExpandingPlatformButton: c.A,
+          ExpandingPlatformButton: o.A,
           Hero: l.A,
-          Grid: o.A,
+          Grid: c.A,
           TextCard: He,
           Deck: qe,
           GroupOfItems: w(),
@@ -4945,7 +4945,7 @@ _global.SENTRY_RELEASE = {
           ParallaxOuterLayer: u.A,
           ParallaxWrapper: f.A,
           PromoModule: h.A,
-          Engagement: ot(),
+          Engagement: ct(),
           gen9: {
             BuyNow: lt.A,
             Disclaimer: mt.A,
@@ -4978,14 +4978,14 @@ _global.SENTRY_RELEASE = {
         n = a(26040),
         r = a.n(n),
         i = a(75638),
-        c = a(14781),
-        o = a(96717),
+        o = a(14781),
+        c = a(96717),
         l = a(42756),
         d = a(62811),
         m = a(26177),
         g = a(40207),
         u = a(76394);
-      const f = (0, o.defineMessages)({
+      const f = (0, c.defineMessages)({
           discover_callout_cards_aria: {
             id: "discover_callout_cards_aria",
             defaultMessage: "Pack Cards"
@@ -5009,13 +5009,13 @@ _global.SENTRY_RELEASE = {
         }),
         p = "rockstargames-sites-gta-gen9b506e23d940f40d5c37eaad601382f65";
       var b = a(46632);
-      r().registerPlugin(c.u), r().registerPlugin(i.useGSAP);
+      r().registerPlugin(o.u), r().registerPlugin(i.useGSAP);
       const h = (0, l.withLocale)((e => {
         let {
           backgroundColor: t,
           cardsOrientation: n = "left"
         } = e;
-        const [r, i] = (0, s.useState)(""), [c, h] = (0, s.useState)(void 0), {
+        const [r, i] = (0, s.useState)(""), [o, h] = (0, s.useState)(void 0), {
           currentCharId: v
         } = (0, g.useRockstarUserState)(), {
           data: k
@@ -5023,7 +5023,7 @@ _global.SENTRY_RELEASE = {
           track: x
         } = (0, g.useGtmTrack)(), {
           windowWidth: _
-        } = (0, l.useWindowResize)(), y = (0, o.useIntl)(), j = {
+        } = (0, l.useWindowResize)(), y = (0, c.useIntl)(), j = {
           "--promo-background": t ?? "var(--black-200)",
           "--promo-order": "left" === n ? "row" : "row-reverse"
         }, N = a(84465), w = () => {}, S = (0, u.A)().data, C = !!S?.length, T = (0, s.useMemo)((() => C ? ((e, t, a) => {
@@ -5074,7 +5074,7 @@ _global.SENTRY_RELEASE = {
                 children: C && T.map(((e, t) => (0, b.jsxs)("div", {
                   className: "rockstargames-sites-gta-gen9d79f85b800486e9c17109b2db723aa1f",
                   style: {
-                    "--packCard-height": c ? `${c}px` : "100px"
+                    "--packCard-height": o ? `${o}px` : "100px"
                   },
                   tabIndex: -1,
                   children: [e.map((e => (0, b.jsx)("img", {
@@ -5148,15 +5148,15 @@ _global.SENTRY_RELEASE = {
           clipRule: n = "evenodd",
           fill: r = "white",
           fillRule: i = "evenodd",
-          height: c = "20",
-          viewBox: o = "0 0 20 20",
+          height: o = "20",
+          viewBox: c = "0 0 20 20",
           width: l = "20"
         } = e;
         return (0, s.jsxs)("svg", {
           className: a,
-          height: c,
+          height: o,
           width: l,
-          viewBox: o,
+          viewBox: c,
           xmlns: "http://www.w3.org/2000/svg",
           children: [(0, s.jsx)("title", {
             children: t
@@ -5188,15 +5188,15 @@ _global.SENTRY_RELEASE = {
           clipRule: n = "evenodd",
           fill: r = "white",
           fillRule: i = "evenodd",
-          height: c = "20",
-          viewBox: o = "0 0 20 20",
+          height: o = "20",
+          viewBox: c = "0 0 20 20",
           width: l = "20"
         } = e;
         return (0, s.jsxs)("svg", {
           className: a,
-          height: c,
+          height: o,
           width: l,
-          viewBox: o,
+          viewBox: c,
           xmlns: "http://www.w3.org/2000/svg",
           children: [(0, s.jsx)("title", {
             children: t
@@ -5217,8 +5217,8 @@ _global.SENTRY_RELEASE = {
         n = a(40207),
         r = a(74401),
         i = a(72902),
-        c = a(29107),
-        o = a(94028),
+        o = a(29107),
+        c = a(94028),
         l = a(46632);
       jest.mock("@rockstargames/locale-tools", (() => ({
         ...jest.requireActual("@rockstargames/locale-tools"),
@@ -5286,9 +5286,9 @@ _global.SENTRY_RELEASE = {
         })), beforeEach((() => {
           n.useGtmTrack.mockReturnValue({
             track: e
-          }), r.useGetCdnSource.mockImplementation(t), c.getVideoUrl.mockImplementation(a), i.isReducedMotionPreferred.mockImplementation(d), e.mockClear(), t.mockClear(), a.mockClear(), d.mockClear()
+          }), r.useGetCdnSource.mockImplementation(t), o.getVideoUrl.mockImplementation(a), i.isReducedMotionPreferred.mockImplementation(d), e.mockClear(), t.mockClear(), a.mockClear(), d.mockClear()
         })), test("it renders fallback image when variant is image", (() => {
-          d.mockReturnValue(!1), a.mockReturnValue("mock-video-url.mp4"), t.mockReturnValue("fallback.jpg"), (0, s.XX)((0, l.jsx)(o.default, {
+          d.mockReturnValue(!1), a.mockReturnValue("mock-video-url.mp4"), t.mockReturnValue("fallback.jpg"), (0, s.XX)((0, l.jsx)(c.default, {
             variant: "image",
             videoSrc: "mock-video-url.mp4",
             fallbackImg: "fallback.jpg",
@@ -5297,7 +5297,7 @@ _global.SENTRY_RELEASE = {
           const e = s.nj.getByAltText("Fallback Image");
           expect(e).toBeInTheDocument(), expect(e).toHaveAttribute("src", "fallback.jpg")
         })), test("it renders video when variant is video and reduced notion is not preferred", (() => {
-          d.mockReturnValue(!1), a.mockReturnValue("mock-video-url.mp4"), t.mockReturnValue("fallback.jpg"), (0, s.XX)((0, l.jsx)(o.default, {
+          d.mockReturnValue(!1), a.mockReturnValue("mock-video-url.mp4"), t.mockReturnValue("fallback.jpg"), (0, s.XX)((0, l.jsx)(c.default, {
             variant: "video",
             videoSrc: "mock-video-url.mp4",
             fallbackImg: "fallback.jpg",
@@ -5306,7 +5306,7 @@ _global.SENTRY_RELEASE = {
           const e = s.nj.getByTestId("hero-video");
           expect(e).toBeInTheDocument()
         })), test("it toggles play/pause state when play/pause button is clicked", (() => {
-          d.mockReturnValue(!1), a.mockReturnValue("mock-video-url.mp4"), t.mockReturnValue("fallback.jpg"), (0, s.XX)((0, l.jsx)(o.default, {
+          d.mockReturnValue(!1), a.mockReturnValue("mock-video-url.mp4"), t.mockReturnValue("fallback.jpg"), (0, s.XX)((0, l.jsx)(c.default, {
             variant: "video",
             videoSrc: "mock-video-url.mp4",
             fallbackImg: "fallback.jpg",
@@ -5322,7 +5322,7 @@ _global.SENTRY_RELEASE = {
             text: "toggle pause"
           }))
         })), test("it renders video play/pause button with correct icon", (() => {
-          d.mockReturnValue(!1), a.mockReturnValue("mock-video-url.mp4"), t.mockReturnValue("fallback.jpg"), (0, s.XX)((0, l.jsx)(o.default, {
+          d.mockReturnValue(!1), a.mockReturnValue("mock-video-url.mp4"), t.mockReturnValue("fallback.jpg"), (0, s.XX)((0, l.jsx)(c.default, {
             variant: "video",
             videoSrc: "mock-video-url.mp4",
             fallbackImg: "fallback.jpg",
@@ -5336,7 +5336,7 @@ _global.SENTRY_RELEASE = {
           d.mockReturnValue(!1), a.mockReturnValue("mock-video-url.mp4");
           const {
             unmount: e
-          } = (0, s.XX)((0, l.jsx)(o.default, {
+          } = (0, s.XX)((0, l.jsx)(c.default, {
             variant: "video",
             videoSrc: "mock-video-url.mp4",
             fallbackImg: "fallback.jpg",
@@ -5344,7 +5344,7 @@ _global.SENTRY_RELEASE = {
           })), t = s.nj.getByTestId("hero-video");
           expect(t.addEventListener).toHaveBeenCalledWith("play", expect.any(Function)), expect(t.addEventListener).toHaveBeenCalledWith("pause", expect.any(Function)), e(), expect(t.removeEventListener).toHaveBeenCalledWith("play", expect.any(Function)), expect(t.removeEventListener).toHaveBeenCalledWith("pause", expect.any(Function))
         })), test("it does not render video when reduced motion is preferred", (() => {
-          d.mockReturnValue(!0), a.mockReturnValue("mock-video-url.mp4"), t.mockReturnValue("fallback.jpg"), (0, s.XX)((0, l.jsx)(o.default, {
+          d.mockReturnValue(!0), a.mockReturnValue("mock-video-url.mp4"), t.mockReturnValue("fallback.jpg"), (0, s.XX)((0, l.jsx)(c.default, {
             variant: "video",
             videoSrc: "mock-video-url.mp4",
             fallbackImg: "fallback.jpg",
@@ -5364,16 +5364,16 @@ _global.SENTRY_RELEASE = {
         n = a(74401),
         r = a(40207),
         i = a(96717),
-        c = a(42756),
-        o = a(29107),
+        o = a(42756),
+        c = a(29107),
         l = a(72902),
         d = a(36901),
         m = a(82594),
         g = a(46632);
-      const u = (0, c.withLocale)((e => {
+      const u = (0, o.withLocale)((e => {
         let {
           variant: t,
-          videoSrc: c,
+          videoSrc: o,
           fallbackImg: u,
           fallbackImgAlt: f,
           contentImgSrc: p,
@@ -5386,7 +5386,7 @@ _global.SENTRY_RELEASE = {
         } = e;
         const {
           track: y
-        } = (0, r.useGtmTrack)(), j = (0, s.useRef)(null), [N, w] = (0, s.useState)(!1), S = (0, l.isReducedMotionPreferred)(), C = (0, n.useGetCdnSource)(p?.full_src ?? ""), T = (0, n.useGetCdnSource)(u), A = (0, o.getVideoUrl)(c), {
+        } = (0, r.useGtmTrack)(), j = (0, s.useRef)(null), [N, w] = (0, s.useState)(!1), S = (0, l.isReducedMotionPreferred)(), C = (0, n.useGetCdnSource)(p?.full_src ?? ""), T = (0, n.useGetCdnSource)(u), A = (0, c.getVideoUrl)(o), {
           formatMessage: M
         } = (0, i.useIntl)(), I = "image" === t || S;
         let E;
@@ -5486,7 +5486,7 @@ _global.SENTRY_RELEASE = {
     88996: (e, t, a) => {
       "use strict";
       a.r(t), a.d(t, {
-        default: () => c
+        default: () => o
       });
       var s = a(55140),
         n = a(28089);
@@ -5517,7 +5517,7 @@ _global.SENTRY_RELEASE = {
             label: "Vinewood Club"
           }]
         },
-        c = () => ({
+        o = () => ({
           label: "Hero Video",
           name: "content",
           component: "group",
@@ -5923,14 +5923,14 @@ _global.SENTRY_RELEASE = {
         e.hasOwnProperty("loc") && (a.loc = e.loc);
         var r = s[t] || new Set,
           i = new Set,
-          c = new Set;
+          o = new Set;
         for (r.forEach((function(e) {
-            c.add(e)
-          })); c.size > 0;) {
-          var o = c;
-          c = new Set, o.forEach((function(e) {
+            o.add(e)
+          })); o.size > 0;) {
+          var c = o;
+          o = new Set, c.forEach((function(e) {
             i.has(e) || (i.add(e), (s[e] || new Set).forEach((function(e) {
-              c.add(e)
+              o.add(e)
             })))
           }))
         }
@@ -6169,14 +6169,14 @@ _global.SENTRY_RELEASE = {
         e.hasOwnProperty("loc") && (a.loc = e.loc);
         var r = s[t] || new Set,
           i = new Set,
-          c = new Set;
+          o = new Set;
         for (r.forEach((function(e) {
-            c.add(e)
-          })); c.size > 0;) {
-          var o = c;
-          c = new Set, o.forEach((function(e) {
+            o.add(e)
+          })); o.size > 0;) {
+          var c = o;
+          o = new Set, c.forEach((function(e) {
             i.has(e) || (i.add(e), (s[e] || new Set).forEach((function(e) {
-              c.add(e)
+              o.add(e)
             })))
           }))
         }
@@ -6367,14 +6367,14 @@ _global.SENTRY_RELEASE = {
         e.hasOwnProperty("loc") && (a.loc = e.loc);
         var r = s[t] || new Set,
           i = new Set,
-          c = new Set;
+          o = new Set;
         for (r.forEach((function(e) {
-            c.add(e)
-          })); c.size > 0;) {
-          var o = c;
-          c = new Set, o.forEach((function(e) {
+            o.add(e)
+          })); o.size > 0;) {
+          var c = o;
+          o = new Set, c.forEach((function(e) {
             i.has(e) || (i.add(e), (s[e] || new Set).forEach((function(e) {
-              c.add(e)
+              o.add(e)
             })))
           }))
         }

@@ -17,10 +17,10 @@ _global.SENTRY_RELEASE = {
 }, (self.webpackChunk_rockstargames_utils = self.webpackChunk_rockstargames_utils || []).push([
   [509], {
     6516: (e, t, n) => {
-      var a = n(1403),
-        o = Symbol.for("react.element"),
+      var o = n(1403),
+        a = Symbol.for("react.element"),
         r = (Symbol.for("react.fragment"), Object.prototype.hasOwnProperty),
-        s = a.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        s = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         l = {
           key: !0,
           ref: !0,
@@ -28,14 +28,14 @@ _global.SENTRY_RELEASE = {
           __source: !0
         };
       t.jsx = function(e, t, n) {
-        var a, c = {},
+        var o, c = {},
           d = null,
           i = null;
-        for (a in void 0 !== n && (d = "" + n), void 0 !== t.key && (d = "" + t.key), void 0 !== t.ref && (i = t.ref), t) r.call(t, a) && !l.hasOwnProperty(a) && (c[a] = t[a]);
+        for (o in void 0 !== n && (d = "" + n), void 0 !== t.key && (d = "" + t.key), void 0 !== t.ref && (i = t.ref), t) r.call(t, o) && !l.hasOwnProperty(o) && (c[o] = t[o]);
         if (e && e.defaultProps)
-          for (a in t = e.defaultProps) void 0 === c[a] && (c[a] = t[a]);
+          for (o in t = e.defaultProps) void 0 === c[o] && (c[o] = t[o]);
         return {
-          $$typeof: o,
+          $$typeof: a,
           type: e,
           key: d,
           ref: i,
@@ -68,8 +68,8 @@ _global.SENTRY_RELEASE = {
         scrollToElement: () => r,
         stripHTML: () => g
       });
-      var a = n(4252),
-        o = n.n(a);
+      var o = n(4252),
+        a = n.n(o);
       const r = e => {
           let {
             element: t
@@ -79,10 +79,10 @@ _global.SENTRY_RELEASE = {
               block: "center",
               inline: "center"
             })), 100),
-            a = e => {
-              e.target === document && (clearInterval(n), document.removeEventListener("scroll", a))
+            o = e => {
+              e.target === document && (clearInterval(n), document.removeEventListener("scroll", o))
             };
-          document.addEventListener("scroll", a)
+          document.addEventListener("scroll", o)
         },
         s = function() {
           let {
@@ -96,8 +96,8 @@ _global.SENTRY_RELEASE = {
         };
       class l {
         constructor(e, t, n) {
-          let a = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : null;
-          this.name = e, this.friendlyName = t, this.id = n, this.alias = a
+          let o = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : null;
+          this.name = e, this.friendlyName = t, this.id = n, this.alias = o
         }
       }
       const c = Object.freeze({
@@ -143,25 +143,25 @@ _global.SENTRY_RELEASE = {
         b = function(e) {
           let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "";
           const n = {};
-          return Object.keys(e).forEach((a => {
-            const o = t ? `${t}.${a}` : a;
-            "object" == typeof e[a] && null !== e[a] ? Object.assign(n, b(e[a], o)) : n[o] = e[a]
+          return Object.keys(e).forEach((o => {
+            const a = t ? `${t}.${o}` : o;
+            "object" == typeof e[o] && null !== e[o] ? Object.assign(n, b(e[o], a)) : n[a] = e[o]
           })), n
         },
         m = e => {
           const t = {};
           return Object.keys(e).forEach((n => {
             if (n.indexOf(".") > -1) {
-              const a = e[n],
+              const o = e[n],
                 r = n.split(".").reverse().reduce(((e, t, n) => 1 === n ? {
                   [t]: {
-                    [e]: a
+                    [e]: o
                   }
                 } : {
                   [t]: e
                 }));
-              o().merge(t, r)
-            } else o().merge(t, {
+              a().merge(t, r)
+            } else a().merge(t, {
               [n]: e[n]
             })
           })), t
@@ -199,8 +199,8 @@ _global.SENTRY_RELEASE = {
             headers: {}
           }).then((e => e.arrayBuffer())).then((e => {
             const t = window.URL.createObjectURL(new Blob([e])),
-              a = document.createElement("a");
-            a.href = t, a.setAttribute("download", n), document.body.appendChild(a), a.click(), document.body.removeChild(a)
+              o = document.createElement("a");
+            o.href = t, o.setAttribute("download", n), document.body.appendChild(o), o.click(), document.body.removeChild(o)
           })).catch((e => {
             console.log(e)
           }))

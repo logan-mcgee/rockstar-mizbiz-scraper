@@ -90,8 +90,8 @@ _global.SENTRY_RELEASE = {
       var o = t(14522),
         g = t(31879),
         m = t.n(g),
-        f = t(74401);
-      const b = e => {
+        b = t(74401);
+      const f = e => {
           let {
             impressionTracking: s,
             gtm: t = {},
@@ -144,15 +144,15 @@ _global.SENTRY_RELEASE = {
           } = e;
           return (0, d.jsx)("div", {
             style: t,
-            className: (0, f.classList)("rockstargames-sites-gta-gen9fbb6b44c6d90c22144e4fbed29bc540b", l),
+            className: (0, b.classList)("rockstargames-sites-gta-gen9fbb6b44c6d90c22144e4fbed29bc540b", l),
             id: r,
-            children: s.map((e => (0, d.jsx)(b, {
+            children: s.map((e => (0, d.jsx)(f, {
               impressionTracking: e?.impressionTracking,
               gtm: e?.gtm,
               children: (0, d.jsx)(p, {
                 to: e?.to,
                 children: (0, d.jsxs)("div", {
-                  className: (0, f.classList)("rockstargames-sites-gta-gen9c6ef137c3cc0ba12d735aedb6db0cae3", e.className),
+                  className: (0, b.classList)("rockstargames-sites-gta-gen9c6ef137c3cc0ba12d735aedb6db0cae3", e.className),
                   style: e?.style ?? {},
                   ...e?.props,
                   children: [e?.image || e?.videoId ? (0, d.jsx)(u, {
@@ -253,12 +253,12 @@ _global.SENTRY_RELEASE = {
             threshold: s,
             trackVisibility: !0,
             delay: 100
-          }), [m, f] = (0, a.useState)(!1);
+          }), [m, b] = (0, a.useState)(!1);
           return (0, a.useEffect)((() => {
             g && !m && (n({
               ...c,
               ...d
-            }), f(!0))
+            }), b(!0))
           }), [g, o]), (0, i.jsx)("section", {
             ref: o,
             children: t

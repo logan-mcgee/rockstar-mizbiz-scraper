@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "5073f51a-804e-4519-9e12-f94fe6f4bfc8", e._sentryDebugIdIdentifier = "sentry-dbid-5073f51a-804e-4519-9e12-f94fe6f4bfc8")
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "00949d2d-1ac0-40c5-86c1-b2c04d001bbb", e._sentryDebugIdIdentifier = "sentry-dbid-00949d2d-1ac0-40c5-86c1-b2c04d001bbb")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -15,13 +15,13 @@ var _global = "undefined" != typeof window ? window : "undefined" != typeof glob
 _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
-  [621], {
+  [2], {
     3002: (e, a, o) => {
       o.r(a), o.d(a, {
         default: () => l
       });
-      var d = o(1403),
-        n = o(4410),
+      var n = o(1403),
+        d = o(4410),
         t = o(6632);
       const l = e => {
         let {
@@ -29,19 +29,19 @@ _global.SENTRY_RELEASE = {
           children: o,
           history: l
         } = e;
-        const [f, s] = (0, d.useState)({
+        const [s, r] = (0, n.useState)({
           action: l.action,
           location: l.location
         });
-        return (0, d.useLayoutEffect)((() => l.listen(((e, a) => {
-          s({
+        return (0, n.useLayoutEffect)((() => l.listen(((e, a) => {
+          r({
             location: e,
             action: a
           })
-        }))), [l]), (0, t.jsx)(n.Router, {
+        }))), [l]), (0, t.jsx)(d.Router, {
           basename: a,
-          location: f.location,
-          navigationType: f.action,
+          location: s.location,
+          navigationType: s.action,
           navigator: l,
           children: o
         })

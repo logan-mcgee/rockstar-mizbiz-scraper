@@ -27,8 +27,8 @@ _global.SENTRY_RELEASE = {
         i = Symbol.for("react.forward_ref"),
         l = Symbol.for("react.suspense"),
         s = Symbol.for("react.memo"),
-        d = Symbol.for("react.lazy"),
-        p = Symbol.iterator,
+        p = Symbol.for("react.lazy"),
+        d = Symbol.iterator,
         y = {
           isMounted: function() {
             return !1
@@ -144,7 +144,7 @@ _global.SENTRY_RELEASE = {
             var l = u + j(f = e[i], i);
             c += I(f, t, o, l, a)
           } else if (l = function(e) {
-              return null === e || "object" != typeof e ? null : "function" == typeof(e = p && e[p] || e["@@iterator"]) ? e : null
+              return null === e || "object" != typeof e ? null : "function" == typeof(e = d && e[d] || e["@@iterator"]) ? e : null
             }(e), "function" == typeof l)
             for (e = l.call(e), i = 0; !(f = e.next()).done;) c += I(f = f.value, t, o, l = u + j(f, i++), a);
           else if ("object" === f) throw t = String(e), Error("Objects are not valid as a React child (found: " + ("[object Object]" === t ? "object with keys {" + Object.keys(e).join(", ") + "}" : t) + "). If you meant to render a collection of children, use an array instead.");
@@ -258,7 +258,7 @@ _global.SENTRY_RELEASE = {
         }
       }, t.isValidElement = $, t.lazy = function(e) {
         return {
-          $$typeof: d,
+          $$typeof: p,
           _payload: {
             _status: -1,
             _result: e

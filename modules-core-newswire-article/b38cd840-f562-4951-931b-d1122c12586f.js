@@ -19,11 +19,11 @@ _global.SENTRY_RELEASE = {
     21450: (e, a, s) => {
       "use strict";
       s.d(a, {
-        A: () => b
+        A: () => f
       });
       var r = s(71403),
-        c = s(74401),
-        t = s(81902),
+        t = s(74401),
+        c = s(81902),
         d = s(41136);
       const l = {
         deprecatedCarousel: "rockstargames-modules-core-newswire-articleeb5df7b3d51dffc4d993ca7abce4e944",
@@ -61,13 +61,13 @@ _global.SENTRY_RELEASE = {
               type: a?.type,
               ariaLabel: a?.image?.ariaLabel ?? a.description,
               style: a?.style,
-              className: (0, c.classList)(l.img, a?.className)
+              className: (0, t.classList)(l.img, a?.className)
             }), (a?.title || a?.description) && (0, n.jsx)(o.A, {
               item: a
             })]
           })
         },
-        f = e => {
+        b = e => {
           let {
             current: a,
             total: s
@@ -83,12 +83,12 @@ _global.SENTRY_RELEASE = {
             })
           })
         },
-        b = e => {
+        f = e => {
           let {
             children: a,
             items: s = [],
             style: i = {},
-            noInfiniteScroll: b = !1,
+            noInfiniteScroll: f = !1,
             className: g = "",
             renderTemplate: u = "standard",
             text: w,
@@ -113,10 +113,10 @@ _global.SENTRY_RELEASE = {
             }
           };
           return (0, n.jsxs)("div", {
-            className: (0, c.classList)(l.deprecatedCarousel, l[u], l[`infinite_${!b}`], a ? l.renderedWithChildren : "", g),
+            className: (0, t.classList)(l.deprecatedCarousel, l[u], l[`infinite_${!f}`], a ? l.renderedWithChildren : "", g),
             style: i,
-            children: [(0, n.jsxs)(t.RC, {
-              loop: !b,
+            children: [(0, n.jsxs)(c.RC, {
+              loop: !f,
               grabCursor: !0,
               centeredSlides: k,
               centerInsufficientSlides: k,
@@ -130,15 +130,15 @@ _global.SENTRY_RELEASE = {
                 className: l.trackWrapper,
                 children: (0, n.jsxs)("div", {
                   className: l.track,
-                  children: [s?.map((e => (0, n.jsx)(t.qr, {
+                  children: [s?.map((e => (0, n.jsx)(c.qr, {
                     children: (0, n.jsx)(m, {
                       item: e
                     })
-                  }, e.key))), a && a.map(((e, a) => e && (0, n.jsx)(t.qr, {
+                  }, e.key))), a && a.map(((e, a) => e && (0, n.jsx)(c.qr, {
                     children: e
                   }, _ && _[a])))]
                 })
-              }), (0, n.jsx)(f, {
+              }), (0, n.jsx)(b, {
                 current: y,
                 total: a ? a.length : s.length
               })]
@@ -154,8 +154,8 @@ _global.SENTRY_RELEASE = {
         A: () => n
       });
       var r = s(74401),
-        c = s(2024),
-        t = s(63672),
+        t = s(2024),
+        c = s(63672),
         d = s(63303);
       const l = "rockstargames-modules-core-newswire-articlefa6885b15a718acb24f48949c52e31f1";
       var o = s(46632);
@@ -183,7 +183,7 @@ _global.SENTRY_RELEASE = {
               children: (0, o.jsx)("h3", {
                 children: a.title
               })
-            }), Array.isArray(a?.description?.content) ? a.description.content?.map(((e, a) => e?.unorderedList ? (0, o.jsx)(t.A, {
+            }), Array.isArray(a?.description?.content) ? a.description.content?.map(((e, a) => e?.unorderedList ? (0, o.jsx)(c.A, {
               columns: e.unorderedList.columns ?? null,
               style: {
                 "--unordered-list-padding": "var(--grid-gap-static-sm)",
@@ -191,7 +191,7 @@ _global.SENTRY_RELEASE = {
               },
               noImg: !0,
               list: e.unorderedList.list
-            }, a) : e?.image ? (0, o.jsx)(c.A, {
+            }, a) : e?.image ? (0, o.jsx)(t.A, {
               image: e.image,
               className: e?.className,
               ariaLabel: e.image?.ariaLabel
@@ -222,15 +222,15 @@ _global.SENTRY_RELEASE = {
         A: () => d
       });
       var r = s(71403),
-        c = s(64544),
-        t = s(46632);
+        t = s(64544),
+        c = s(46632);
       const d = e => {
         let {
           children: a,
           ...s
         } = e;
         const [d, l] = (0, r.useState)(!1);
-        return (0, t.jsx)(c.zb, {
+        return (0, c.jsx)(t.zb, {
           ...s,
           onReady: () => {
             document.fonts.ready.then((() => {
@@ -247,8 +247,8 @@ _global.SENTRY_RELEASE = {
         A: () => o
       });
       var r = s(2024),
-        c = s(62550);
-      const t = {
+        t = s(62550);
+      const c = {
         badge: "rockstargames-modules-core-newswire-articlee279e2cebfa338f34b03fd732416e836",
         badgeSizeUpdate: "rockstargames-modules-core-newswire-articled7362a3e27ccaad9d2aadd2f31691340",
         badge2: "rockstargames-modules-core-newswire-articled697f4a5f7c876d5e540a96da1e0ca3a",
@@ -260,9 +260,9 @@ _global.SENTRY_RELEASE = {
             wrapper: a,
             children: s,
             role: r,
-            splitter: c
+            splitter: t
           } = e;
-          return c || r ? a(s) : s
+          return t || r ? a(s) : s
         },
         o = e => {
           let {
@@ -273,12 +273,12 @@ _global.SENTRY_RELEASE = {
           } = e;
           const m = [];
           n ? a.split(n).map(((e, a) => m.push(e))) : m.push(a);
-          let f = 100;
+          let b = 100;
           return 2 == m.length && m[1].length < 4 && "off" !== m[1].toLowerCase() && 45, (0, d.jsxs)(l, {
             splitter: n,
             role: i,
             wrapper: e => (0, d.jsx)("div", {
-              className: `${t.badge} ${o?t[o]:""} `,
+              className: `${c.badge} ${o?c[o]:""} `,
               children: e
             }),
             children: [(0, d.jsx)(d.Fragment, {
@@ -288,14 +288,14 @@ _global.SENTRY_RELEASE = {
                   desktop: s(45628)(`./${i}.png`)
                 }
               })
-            }), (0, d.jsx)(c.A, {
-              className: `${n||i?"":t.badge} ${o?t[o]:""}`,
+            }), (0, d.jsx)(t.A, {
+              className: `${n||i?"":c.badge} ${o?c[o]:""}`,
               min: 8,
               max: 1e3,
               mode: n || i ? "single" : "multi",
               children: m[0]
             }), (0, d.jsx)(d.Fragment, {
-              children: m.shift() && n && m.length >= 1 && (0, d.jsx)(c.A, {
+              children: m.shift() && n && m.length >= 1 && (0, d.jsx)(t.A, {
                 min: 8,
                 max: 1e3,
                 mode: "single",
@@ -312,8 +312,8 @@ _global.SENTRY_RELEASE = {
         A: () => i
       });
       var r = s(74401),
-        c = s(42756),
-        t = s(52328),
+        t = s(42756),
+        c = s(52328),
         d = s(2024);
       var l = s(46632);
       const o = e => {
@@ -333,8 +333,8 @@ _global.SENTRY_RELEASE = {
             discountTxt: i,
             splitter: n,
             image: m,
-            style: f,
-            className: b = "",
+            style: b,
+            className: f = "",
             attributes: g = {},
             role: u,
             hero: w = !1
@@ -343,16 +343,16 @@ _global.SENTRY_RELEASE = {
             hero: w,
             children: (0, l.jsx)("figure", {
               children: (0, l.jsxs)("div", {
-                className: (0, r.classList)("rockstargames-modules-core-newswire-articlecab262c98c7f5bb3e982d9b075b3c2a8", w ? "rockstargames-modules-core-newswire-articlecefd6d8859aeec1057caed28caa160c3" : "", g?.hiddenMobile ? "hiddenMobile" : "", g?.hiddenLarge ? "hiddenLarge" : "", g?.className, b),
-                style: (0, c.safeStyles)({
-                  ...f,
+                className: (0, r.classList)("rockstargames-modules-core-newswire-articlecab262c98c7f5bb3e982d9b075b3c2a8", w ? "rockstargames-modules-core-newswire-articlecefd6d8859aeec1057caed28caa160c3" : "", g?.hiddenMobile ? "hiddenMobile" : "", g?.hiddenLarge ? "hiddenLarge" : "", g?.className, f),
+                style: (0, t.safeStyles)({
+                  ...b,
                   ...g?.style
                 }),
                 ...g,
                 children: [(0, l.jsx)(d.A, {
                   image: m,
-                  className: b
-                }), (m?.badge || m?.discountTxt || a || i) && (0, l.jsx)(t.A, {
+                  className: f
+                }), (m?.badge || m?.discountTxt || a || i) && (0, l.jsx)(c.A, {
                   badge: m?.discountTxt ?? m?.badge ?? a ?? i,
                   badgeType: s,
                   splitter: m?.splitter ?? n,
@@ -370,23 +370,23 @@ _global.SENTRY_RELEASE = {
     63303: (e, a, s) => {
       "use strict";
       s.d(a, {
-        A: () => t
+        A: () => c
       });
       const r = {
         hr: "rockstargames-modules-core-newswire-articlef5cd418ab2ef6a89df6c95d2caa06ba8",
         redLine: "rockstargames-modules-core-newswire-articlef8b44ef9bbd3e7feb22bf79cc009b16e",
         gtao: "rockstargames-modules-core-newswire-articlec442f7264db862a7cca6d9a56dacc205"
       };
-      var c = s(46632);
-      const t = e => {
+      var t = s(46632);
+      const c = e => {
         let {
           style: a,
           className: s = "",
-          type: t
+          type: c
         } = e;
-        return (0, c.jsx)("div", {
+        return (0, t.jsx)("div", {
           style: a,
-          className: [r.hr, r[t], s].join(" ")
+          className: [r.hr, r[c], s].join(" ")
         })
       }
     },
@@ -396,8 +396,8 @@ _global.SENTRY_RELEASE = {
         A: () => m
       });
       var r = s(71403),
-        c = s(61631),
-        t = s.n(c),
+        t = s(61631),
+        c = s.n(t),
         d = s(74401),
         l = s(42756);
       const o = {
@@ -426,15 +426,15 @@ _global.SENTRY_RELEASE = {
       var i = s(46632);
       const {
         sanitize: n
-      } = t(), m = e => {
+      } = c(), m = e => {
         let {
           list: a,
           string: s,
-          starColor: c,
-          style: t,
+          starColor: t,
+          style: c,
           className: m,
-          game: f,
-          noImg: b,
+          game: b,
+          noImg: f,
           columns: g,
           mobileColumns: u
         } = e;
@@ -448,8 +448,8 @@ _global.SENTRY_RELEASE = {
             "--unordered-list-grid-column-mobile": u ?? g
           },
           children: (0, i.jsx)("ul", {
-            style: (0, l.safeStyles)(t),
-            className: (0, d.classList)(o.itemList, o.noImg, o[c], o[f]),
+            style: (0, l.safeStyles)(c),
+            className: (0, d.classList)(o.itemList, o.noImg, o[t], o[b]),
             children: w.map(((e, a) => (0, i.jsx)("li", {
               dangerouslySetInnerHTML: {
                 __html: n(e.content)
@@ -457,8 +457,8 @@ _global.SENTRY_RELEASE = {
             }, a)))
           })
         }) : (0, i.jsx)("ul", {
-          style: (0, l.safeStyles)(t),
-          className: (0, d.classList)(o.itemList, o.custom, b ? o.noImg : "", c ? o[c] : "", f ? o[f] : "", m ?? ""),
+          style: (0, l.safeStyles)(c),
+          className: (0, d.classList)(o.itemList, o.custom, f ? o.noImg : "", t ? o[t] : "", b ? o[b] : "", m ?? ""),
           children: k.map(((e, a) => (0, i.jsx)("li", {
             dangerouslySetInnerHTML: {
               __html: n(e?.content ?? e)
@@ -473,31 +473,31 @@ _global.SENTRY_RELEASE = {
         A: () => o
       });
       var r = s(28089),
-        c = s(42756);
-      const t = "rockstargames-modules-core-newswire-articleeb64520e04e486931cd65dc5b3fa61e8";
+        t = s(42756);
+      const c = "rockstargames-modules-core-newswire-articleeb64520e04e486931cd65dc5b3fa61e8";
       var d = s(46632);
       const l = e => {
           let {
             alt: a,
             className: r,
-            src: t,
+            src: c,
             style: l
           } = e;
-          const [o, i] = (0, c.usePreloadImg)(t);
-          let n = t;
+          const [o, i] = (0, t.usePreloadImg)(c);
+          let n = c;
           !1 === o && ("rockstargames-modules-core-newswire-articleee609f31f3685766122c2c6fc0ef0710" === r && (n = s(14572)), n = s(8820));
           const {
             width: m,
-            height: f
-          } = i, b = {
-            "--aspect-ratio": Number.isNaN(m / f) ? "" : m / f,
+            height: b
+          } = i, f = {
+            "--aspect-ratio": Number.isNaN(m / b) ? "" : m / b,
             ...l
           };
           return (0, d.jsx)("img", {
             src: n,
             className: r ?? "",
             alt: a,
-            style: b
+            style: f
           })
         },
         o = e => {
@@ -508,23 +508,23 @@ _global.SENTRY_RELEASE = {
             imageStyle: n = {}
           } = e, {
             alt: m,
-            src: f
+            src: b
           } = (0, r.useImageParser)(i);
           const {
-            isMobile: b
-          } = (0, c.useWindowResize)();
-          return f.desktop || f.mobile || (m = "", f = {
+            isMobile: f
+          } = (0, t.useWindowResize)();
+          return b.desktop || b.mobile || (m = "", b = {
             mobile: s(14572),
             desktop: s(8820)
           }), (0, d.jsx)("div", {
-            className: i.frame ? `${i.frame} ${t}` : t,
+            className: i.frame ? `${i.frame} ${c}` : c,
             style: o,
             children: (0, d.jsx)(l, {
               style: {
                 ...n,
                 ...i?.style
               },
-              src: b ? f.mobile || f.desktop : f?.desktop || f?.mobile,
+              src: f ? b.mobile || b.desktop : b?.desktop || b?.mobile,
               alt: m,
               className: a
             })
@@ -540,21 +540,21 @@ _global.SENTRY_RELEASE = {
         "./trader.png": 22864
       };
 
-      function c(e) {
-        var a = t(e);
+      function t(e) {
+        var a = c(e);
         return s(a)
       }
 
-      function t(e) {
+      function c(e) {
         if (!s.o(r, e)) {
           var a = new Error("Cannot find module '" + e + "'");
           throw a.code = "MODULE_NOT_FOUND", a
         }
         return r[e]
       }
-      c.keys = function() {
+      t.keys = function() {
         return Object.keys(r)
-      }, c.resolve = t, e.exports = c, c.id = 45628
+      }, t.resolve = c, e.exports = t, t.id = 45628
     },
     89177: e => {
       "use strict";

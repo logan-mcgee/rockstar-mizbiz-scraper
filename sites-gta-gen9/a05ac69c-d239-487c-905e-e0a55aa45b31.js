@@ -19,7 +19,7 @@ _global.SENTRY_RELEASE = {
     21450: (e, a, s) => {
       "use strict";
       s.d(a, {
-        A: () => f
+        A: () => b
       });
       var t = s(71403),
         r = s(74401),
@@ -83,13 +83,13 @@ _global.SENTRY_RELEASE = {
             })
           })
         },
-        f = e => {
+        b = e => {
           let {
             children: a,
             items: s = [],
             style: g = {},
-            noInfiniteScroll: f = !1,
-            className: b = "",
+            noInfiniteScroll: b = !1,
+            className: f = "",
             renderTemplate: p = "standard",
             text: u,
             customSpaceBetween: k = null,
@@ -113,10 +113,10 @@ _global.SENTRY_RELEASE = {
             }
           };
           return (0, l.jsxs)("div", {
-            className: (0, r.classList)(i.deprecatedCarousel, i[p], i[`infinite_${!f}`], a ? i.renderedWithChildren : "", b),
+            className: (0, r.classList)(i.deprecatedCarousel, i[p], i[`infinite_${!b}`], a ? i.renderedWithChildren : "", f),
             style: g,
             children: [(0, l.jsxs)(c.RC, {
-              loop: !f,
+              loop: !b,
               grabCursor: !0,
               centeredSlides: h,
               centerInsufficientSlides: h,
@@ -334,8 +334,8 @@ _global.SENTRY_RELEASE = {
             splitter: l,
             image: o,
             style: m,
-            className: f = "",
-            attributes: b = {},
+            className: b = "",
+            attributes: f = {},
             role: p,
             hero: u = !1
           } = e;
@@ -343,15 +343,15 @@ _global.SENTRY_RELEASE = {
             hero: u,
             children: (0, i.jsx)("figure", {
               children: (0, i.jsxs)("div", {
-                className: (0, t.classList)("rockstargames-sites-gta-gen9cab262c98c7f5bb3e982d9b075b3c2a8", u ? "rockstargames-sites-gta-gen9cefd6d8859aeec1057caed28caa160c3" : "", b?.hiddenMobile ? "hiddenMobile" : "", b?.hiddenLarge ? "hiddenLarge" : "", b?.className, f),
+                className: (0, t.classList)("rockstargames-sites-gta-gen9cab262c98c7f5bb3e982d9b075b3c2a8", u ? "rockstargames-sites-gta-gen9cefd6d8859aeec1057caed28caa160c3" : "", f?.hiddenMobile ? "hiddenMobile" : "", f?.hiddenLarge ? "hiddenLarge" : "", f?.className, b),
                 style: (0, r.safeStyles)({
                   ...m,
-                  ...b?.style
+                  ...f?.style
                 }),
-                ...b,
+                ...f,
                 children: [(0, i.jsx)(d.A, {
                   image: o,
-                  className: f
+                  className: b
                 }), (o?.badge || o?.discountTxt || a || g) && (0, i.jsx)(c.A, {
                   badge: o?.discountTxt ?? o?.badge ?? a ?? g,
                   badgeType: s,
@@ -434,18 +434,18 @@ _global.SENTRY_RELEASE = {
           style: c,
           className: o,
           game: m,
-          noImg: f,
-          columns: b,
+          noImg: b,
+          columns: f,
           mobileColumns: p
         } = e;
         const [u, k] = (0, t.useState)(null), h = s ? s.split("_#_") : a;
         return (0, t.useEffect)((() => {
           k(a)
-        }), [a]), s || a ? b && u ? (0, g.jsx)("div", {
+        }), [a]), s || a ? f && u ? (0, g.jsx)("div", {
           className: n.grid,
           style: {
-            "--unordered-list-grid-column": b,
-            "--unordered-list-grid-column-mobile": p ?? b
+            "--unordered-list-grid-column": f,
+            "--unordered-list-grid-column-mobile": p ?? f
           },
           children: (0, g.jsx)("ul", {
             style: (0, i.safeStyles)(c),
@@ -458,7 +458,7 @@ _global.SENTRY_RELEASE = {
           })
         }) : (0, g.jsx)("ul", {
           style: (0, i.safeStyles)(c),
-          className: (0, d.classList)(n.itemList, n.custom, f ? n.noImg : "", r ? n[r] : "", m ? n[m] : "", o ?? ""),
+          className: (0, d.classList)(n.itemList, n.custom, b ? n.noImg : "", r ? n[r] : "", m ? n[m] : "", o ?? ""),
           children: h.map(((e, a) => (0, g.jsx)("li", {
             dangerouslySetInnerHTML: {
               __html: l(e?.content ?? e)
@@ -489,7 +489,7 @@ _global.SENTRY_RELEASE = {
           const {
             width: o,
             height: m
-          } = g, f = {
+          } = g, b = {
             "--aspect-ratio": Number.isNaN(o / m) ? "" : o / m,
             ...i
           };
@@ -497,7 +497,7 @@ _global.SENTRY_RELEASE = {
             src: l,
             className: t ?? "",
             alt: a,
-            style: f
+            style: b
           })
         },
         n = e => {
@@ -511,7 +511,7 @@ _global.SENTRY_RELEASE = {
             src: m
           } = (0, t.useImageParser)(g);
           const {
-            isMobile: f
+            isMobile: b
           } = (0, r.useWindowResize)();
           return m.desktop || m.mobile || (o = "", m = {
             mobile: s(14572),
@@ -524,7 +524,7 @@ _global.SENTRY_RELEASE = {
                 ...l,
                 ...g?.style
               },
-              src: f ? m.mobile || m.desktop : m?.desktop || m?.mobile,
+              src: b ? m.mobile || m.desktop : m?.desktop || m?.mobile,
               alt: o,
               className: a
             })

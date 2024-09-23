@@ -90,8 +90,8 @@ _global.SENTRY_RELEASE = {
       var o = a(14522),
         m = a(31879),
         g = a.n(m),
-        f = a(74401);
-      const u = e => {
+        u = a(74401);
+      const b = e => {
           let {
             impressionTracking: s,
             gtm: a = {},
@@ -103,7 +103,7 @@ _global.SENTRY_RELEASE = {
             children: t
           }) : t
         },
-        b = e => {
+        f = e => {
           let {
             to: s,
             children: a
@@ -144,15 +144,15 @@ _global.SENTRY_RELEASE = {
           } = e;
           return (0, d.jsx)("div", {
             style: a,
-            className: (0, f.classList)("rockstargames-modules-core-newswire-articlefbb6b44c6d90c22144e4fbed29bc540b", r),
+            className: (0, u.classList)("rockstargames-modules-core-newswire-articlefbb6b44c6d90c22144e4fbed29bc540b", r),
             id: l,
-            children: s.map((e => (0, d.jsx)(u, {
+            children: s.map((e => (0, d.jsx)(b, {
               impressionTracking: e?.impressionTracking,
               gtm: e?.gtm,
-              children: (0, d.jsx)(b, {
+              children: (0, d.jsx)(f, {
                 to: e?.to,
                 children: (0, d.jsxs)("div", {
-                  className: (0, f.classList)("rockstargames-modules-core-newswire-articlec6ef137c3cc0ba12d735aedb6db0cae3", e.className),
+                  className: (0, u.classList)("rockstargames-modules-core-newswire-articlec6ef137c3cc0ba12d735aedb6db0cae3", e.className),
                   style: e?.style ?? {},
                   ...e?.props,
                   children: [e?.image || e?.videoId ? (0, d.jsx)(p, {
@@ -253,12 +253,12 @@ _global.SENTRY_RELEASE = {
             threshold: s,
             trackVisibility: !0,
             delay: 100
-          }), [g, f] = (0, t.useState)(!1);
+          }), [g, u] = (0, t.useState)(!1);
           return (0, t.useEffect)((() => {
             m && !g && (n({
               ...c,
               ...d
-            }), f(!0))
+            }), u(!0))
           }), [m, o]), (0, i.jsx)("section", {
             ref: o,
             children: a

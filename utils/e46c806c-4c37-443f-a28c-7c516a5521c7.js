@@ -30,15 +30,15 @@ _global.SENTRY_RELEASE = {
       t.jsx = function(e, t, r) {
         var n, d = {},
           l = null,
-          c = null;
-        for (n in void 0 !== r && (l = "" + r), void 0 !== t.key && (l = "" + t.key), void 0 !== t.ref && (c = t.ref), t) a.call(t, n) && !i.hasOwnProperty(n) && (d[n] = t[n]);
+          u = null;
+        for (n in void 0 !== r && (l = "" + r), void 0 !== t.key && (l = "" + t.key), void 0 !== t.ref && (u = t.ref), t) a.call(t, n) && !i.hasOwnProperty(n) && (d[n] = t[n]);
         if (e && e.defaultProps)
           for (n in t = e.defaultProps) void 0 === d[n] && (d[n] = t[n]);
         return {
           $$typeof: o,
           type: e,
           key: l,
-          ref: c,
+          ref: u,
           props: d,
           _owner: s.current
         }
@@ -49,7 +49,7 @@ _global.SENTRY_RELEASE = {
     },
     4050: (e, t, r) => {
       r.r(t), r.d(t, {
-        DataLayerProvider: () => c,
+        DataLayerProvider: () => u,
         ResizeProvider: () => o.uU,
         ScrollProvider: () => a.N2,
         newswirePost: () => n,
@@ -62,7 +62,7 @@ _global.SENTRY_RELEASE = {
         i = r(6632);
       const d = (0, s.createContext)({}),
         l = () => (0, s.useContext)(d),
-        c = e => {
+        u = e => {
           let {
             children: t,
             ...r
@@ -105,7 +105,7 @@ _global.SENTRY_RELEASE = {
     2904: (e, t, r) => {
       r.d(t, {
         G4: () => f,
-        uU: () => u
+        uU: () => c
       });
       var n = r(1403),
         o = r(8407),
@@ -167,15 +167,15 @@ _global.SENTRY_RELEASE = {
         {
           Consumer: l
         } = d,
-        c = (0, o.makeVar)(i()),
-        u = e => {
+        u = (0, o.makeVar)(i()),
+        c = e => {
           let {
             children: t
           } = e;
-          const r = (0, o.useReactiveVar)(c);
+          const r = (0, o.useReactiveVar)(u);
           return (0, n.useEffect)((() => {
             const e = () => {
-              c(i())
+              u(i())
             };
             return window.addEventListener("resize", e), () => {
               window.removeEventListener("resize", e)
@@ -190,7 +190,7 @@ _global.SENTRY_RELEASE = {
     295: (e, t, r) => {
       r.d(t, {
         Ll: () => l,
-        N2: () => c,
+        N2: () => u,
         U4: () => i
       });
       var n = r(8407),
@@ -200,11 +200,11 @@ _global.SENTRY_RELEASE = {
         i = e => s(e),
         d = (0, o.createContext)(null),
         l = () => (0, o.useContext)(d),
-        c = e => {
+        u = e => {
           let {
             children: t
           } = e;
-          const [r, l] = (0, o.useState)(window.pageYOffset), [c, u] = (0, o.useState)(null), [f, m] = (0, o.useState)(!1), w = (0, n.useReactiveVar)(s);
+          const [r, l] = (0, o.useState)(window.pageYOffset), [u, c] = (0, o.useState)(null), [f, m] = (0, o.useState)(!1), w = (0, n.useReactiveVar)(s);
           let v;
           const _ = () => {
             m(!0), clearTimeout(v), v = setTimeout((() => {
@@ -214,9 +214,9 @@ _global.SENTRY_RELEASE = {
           return (0, o.useEffect)((() => {
             let e;
             const t = () => {
-              if (w) return void u(!1);
+              if (w) return void c(!1);
               const t = Math.max(0, window.pageYOffset);
-              l(t), f || u(t > 60 && t > e), e = t
+              l(t), f || c(t > 60 && t > e), e = t
             };
             return window.addEventListener("scroll", t), () => {
               window.removeEventListener("scroll", t)
@@ -227,10 +227,10 @@ _global.SENTRY_RELEASE = {
               pageYOffset: r,
               pauseUserShouldSeeMore: _,
               setFreezeUserShouldSeeMore: i,
-              userShouldSeeMore: c
+              userShouldSeeMore: u
             },
             children: t
-          })), [w, r, _, c])
+          })), [w, r, _, u])
         }
     }
   }

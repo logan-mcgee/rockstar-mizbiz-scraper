@@ -22,7 +22,7 @@ _global.SENTRY_RELEASE = {
         Cl: () => a,
         Ju: () => f,
         Tt: () => l,
-        fX: () => c,
+        fX: () => s,
         zs: () => i
       });
       var n = function(e, t) {
@@ -100,7 +100,7 @@ _global.SENTRY_RELEASE = {
         return l
       }
 
-      function c(e, t, r) {
+      function s(e, t, r) {
         if (r || 2 === arguments.length)
           for (var n, o = 0, a = t.length; o < a; o++) !n && o in t || (n || (n = Array.prototype.slice.call(t, 0, o)), n[o] = t[o]);
         return e.concat(n || Array.prototype.slice.call(t))

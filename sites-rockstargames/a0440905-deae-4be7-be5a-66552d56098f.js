@@ -19,7 +19,7 @@ _global.SENTRY_RELEASE = {
     44981: (e, a, n) => {
       "use strict";
       n.r(a), n.d(a, {
-        default: () => b
+        default: () => N
       });
       var i = n(58407),
         t = n(42756),
@@ -32,8 +32,8 @@ _global.SENTRY_RELEASE = {
       const m = "rockstargames-sites-rockstargamesf75798e3984014f9cd35c5956e94fbb3",
         u = "rockstargames-sites-rockstargamesaa6bc8070e5e81ea0594636575db8fd6";
       var k = n(3131),
-        f = n(46632);
-      const v = void 0 !== k.HomeData ? k.HomeData : HomeDataDefault,
+        v = n(46632);
+      const f = void 0 !== k.HomeData ? k.HomeData : HomeDataDefault,
         g = e => {
           let {
             games: a,
@@ -42,23 +42,23 @@ _global.SENTRY_RELEASE = {
           const {
             track: i
           } = (0, s.useGtmTrack)();
-          return (0, f.jsxs)("section", {
+          return (0, v.jsxs)("section", {
             className: "rockstargames-sites-rockstargamesbec4f690ea94ae150d36b6be04b7011d",
             "data-testid": "featuredGames",
-            children: [(0, f.jsx)("h3", {
+            children: [(0, v.jsx)("h3", {
               className: m,
-              children: (0, f.jsx)(l.A, {
+              children: (0, v.jsx)(l.A, {
                 to: "newswire",
                 "aria-label": n("Featured Games"),
                 "data-testid": "featuredGamesHeader",
                 children: n("Featured Games")
               })
-            }), (0, f.jsx)("div", {
+            }), (0, v.jsx)("div", {
               className: u,
-              children: a.map((e => (0, f.jsx)(c.N, {
+              children: a.map((e => (0, v.jsx)(c.N, {
                 game: e
               }, e.id)))
-            }), (0, f.jsx)(d.A, {
+            }), (0, v.jsx)(d.A, {
               to: "games",
               context: "secondary",
               "data-testid": "viewMoreButton",
@@ -75,7 +75,7 @@ _global.SENTRY_RELEASE = {
             })]
           })
         },
-        N = e => {
+        b = e => {
           let {
             posts: a,
             t: n
@@ -83,23 +83,23 @@ _global.SENTRY_RELEASE = {
           const {
             track: i
           } = (0, s.useGtmTrack)();
-          return (0, f.jsxs)("section", {
+          return (0, v.jsxs)("section", {
             className: "rockstargames-sites-rockstargamesbc6c5d345fb1cccca402fd4a97a8bef8",
             "data-testid": "newswire",
-            children: [(0, f.jsx)("h3", {
+            children: [(0, v.jsx)("h3", {
               className: m,
-              children: (0, f.jsx)(l.A, {
+              children: (0, v.jsx)(l.A, {
                 to: "newswire",
                 "aria-label": n("Newswire"),
                 "data-testid": "newswireHeader",
                 children: n("Newswire")
               })
-            }), (0, f.jsx)(r.A, {
+            }), (0, v.jsx)(r.A, {
               section: "Home",
               className: u,
               posts: a,
               noSpecialOrder: !0
-            }), (0, f.jsx)(d.A, {
+            }), (0, v.jsx)(d.A, {
               to: "newswire",
               context: "secondary",
               "data-testid": "viewMoreButton",
@@ -116,13 +116,13 @@ _global.SENTRY_RELEASE = {
             })]
           })
         },
-        b = (0, t.withTranslations)((e => {
+        N = (0, t.withTranslations)((e => {
           let {
             t: a
           } = e;
           const {
             data: n
-          } = (0, i.useQuery)(v, {
+          } = (0, i.useQuery)(f, {
             autoSetLoading: !0
           });
           if (!n) return null;
@@ -131,18 +131,18 @@ _global.SENTRY_RELEASE = {
             posts: s,
             videos: l
           } = n;
-          return (0, f.jsxs)("div", {
+          return (0, v.jsxs)("div", {
             className: "rockstargames-sites-rockstargamesdcf817f11d19ae0ef32bf4b753d292a2",
             "data-testid": "homepageBody",
-            children: [(0, f.jsx)(o.A, {
+            children: [(0, v.jsx)(o.A, {
               videos: l.results,
               t: a
-            }), (0, f.jsxs)("div", {
+            }), (0, v.jsxs)("div", {
               className: "rockstargames-sites-rockstargamesd04358d9e38bc205e1c35dee36efcaa1",
-              children: [(0, f.jsx)(N, {
+              children: [(0, v.jsx)(b, {
                 posts: s.results,
                 t: a
-              }), (0, f.jsx)(g, {
+              }), (0, v.jsx)(g, {
                 games: t.results,
                 t: a
               })]

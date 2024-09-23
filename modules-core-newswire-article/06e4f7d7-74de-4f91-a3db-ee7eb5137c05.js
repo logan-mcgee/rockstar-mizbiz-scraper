@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "2924b6c7-5505-4259-9194-a8b9e6b8e514", e._sentryDebugIdIdentifier = "sentry-dbid-2924b6c7-5505-4259-9194-a8b9e6b8e514")
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "06e4f7d7-74de-4f91-a3db-ee7eb5137c05", e._sentryDebugIdIdentifier = "sentry-dbid-06e4f7d7-74de-4f91-a3db-ee7eb5137c05")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -200,7 +200,7 @@ _global.SENTRY_RELEASE = {
             name: "type",
             label: "Text",
             component: "group",
-            fields: [(0, i.NameField)(), (0, i.TextField)(), (0, i.ClassNamesField)({
+            fields: [(0, i.NameField)(), (0, i.IdField)(), (0, i.TextField)(), (0, i.ClassNamesField)({
               filter: "grid"
             }), (0, i.StyleField)({
               filter: "grid"

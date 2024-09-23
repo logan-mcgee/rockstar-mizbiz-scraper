@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "e639a64c-8004-48f5-9469-90193460f1a4", e._sentryDebugIdIdentifier = "sentry-dbid-e639a64c-8004-48f5-9469-90193460f1a4")
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "4746127e-732c-4b4e-a130-71796118695c", e._sentryDebugIdIdentifier = "sentry-dbid-4746127e-732c-4b4e-a130-71796118695c")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -329,8 +329,8 @@ _global.SENTRY_RELEASE = {
             size: c,
             title: g,
             name: f,
-            customSlidesPerView: v = null,
-            customSpaceBetween: b = null,
+            customSlidesPerView: b = null,
+            customSpaceBetween: v = null,
             slideClass: p,
             style: k,
             className: h,
@@ -364,31 +364,31 @@ _global.SENTRY_RELEASE = {
           }), [B]);
           const Q = {
             0: {
-              spaceBetween: b ?? 16
+              spaceBetween: v ?? 16
             },
             1024: {
-              spaceBetween: b ?? 18
+              spaceBetween: v ?? 18
             },
             1920: {
-              spaceBetween: b ?? 20
+              spaceBetween: v ?? 20
             },
             2560: {
-              spaceBetween: b ?? 22
+              spaceBetween: v ?? 22
             }
           };
           (0, n.useEffect)((() => {
             if (!j.current) return;
             const e = () => {
               if (j.current) {
-                const e = v || Number(window.getComputedStyle(j.current).getPropertyValue("--slides-per-view")),
-                  a = v ? 1 : Number(window.getComputedStyle(j.current).getPropertyValue("--slides-per-view-multiplier"));
+                const e = b || Number(window.getComputedStyle(j.current).getPropertyValue("--slides-per-view")),
+                  a = b ? 1 : Number(window.getComputedStyle(j.current).getPropertyValue("--slides-per-view-multiplier"));
                 L(e * a)
               }
             };
             return window.addEventListener("resize", e), e(), () => {
               window.removeEventListener("resize", e)
             }
-          }), [j, v]), (0, n.useEffect)((() => {
+          }), [j, b]), (0, n.useEffect)((() => {
             if (!t) return;
             let e = !1;
             t.forEach((a => {
@@ -634,8 +634,8 @@ _global.SENTRY_RELEASE = {
         };
       var g = t(39695),
         f = t(31090),
-        v = t(34634),
-        b = t(32331);
+        b = t(34634),
+        v = t(32331);
       const p = e => {
           let {
             animated: a = !1,
@@ -668,7 +668,7 @@ _global.SENTRY_RELEASE = {
               platformsAndLinks: r,
               children: !!m.length && (0, c.jsx)(n.motion.div, {
                 variants: l,
-                children: (0, c.jsx)(b.A, {
+                children: (0, c.jsx)(v.A, {
                   buttons: m,
                   className: s.buttonGroup
                 })
@@ -677,7 +677,7 @@ _global.SENTRY_RELEASE = {
           }) : (0, c.jsx)(c.Fragment, {
             children: !!m.length && (0, c.jsx)(n.motion.div, {
               variants: l,
-              children: (0, c.jsx)(b.A, {
+              children: (0, c.jsx)(v.A, {
                 buttons: m,
                 className: s.buttonGroup
               })
@@ -692,7 +692,7 @@ _global.SENTRY_RELEASE = {
             cta: o = [],
             description: m = "",
             expandingButtonLabel: u = "Subscribe",
-            title: b = "",
+            title: v = "",
             legalText: k
           } = e;
           return (0, c.jsxs)(n.motion.div, {
@@ -702,15 +702,15 @@ _global.SENTRY_RELEASE = {
             variants: a ? r : void 0,
             children: [(0, c.jsx)(n.motion.div, {
               variants: a ? l : void 0,
-              children: (0, c.jsx)(v.A, {
+              children: (0, c.jsx)(b.A, {
                 brands: t
               })
-            }), (b || m) && (0, c.jsxs)(n.motion.div, {
+            }), (v || m) && (0, c.jsxs)(n.motion.div, {
               className: s.descriptions,
               variants: a ? l : void 0,
-              children: [b && (0, c.jsx)("h2", {
+              children: [v && (0, c.jsx)("h2", {
                 dangerouslySetInnerHTML: {
-                  __html: b
+                  __html: v
                 }
               }), m && (0, c.jsx)("p", {
                 dangerouslySetInnerHTML: {
@@ -758,8 +758,8 @@ _global.SENTRY_RELEASE = {
             cta: m,
             description: g = "",
             expandingButtonLabel: f = "Subscribe",
-            layeredImage: v,
-            layeredImageSettings: b,
+            layeredImage: b,
+            layeredImageSettings: v,
             legalText: p,
             shardsSection: h = {},
             theme: y = "gen9",
@@ -791,11 +791,11 @@ _global.SENTRY_RELEASE = {
                   }))
                 }
               })), a
-            })(b),
+            })(v),
             S = (0, i.useGetCdnSource)(t?.mobile?.full_src ?? null),
             w = (0, i.useGetCdnSource)(t?.desktop?.full_src ?? S),
-            j = (0, i.useGetCdnSource)(v?.mobile?.full_src ?? null),
-            _ = (0, i.useGetCdnSource)(v?.desktop?.full_src ?? j);
+            j = (0, i.useGetCdnSource)(b?.mobile?.full_src ?? null),
+            _ = (0, i.useGetCdnSource)(b?.desktop?.full_src ?? j);
           return (0, c.jsxs)(n.motion.div, {
             className: (0, i.classList)(s.hero, d),
             style: {
@@ -816,7 +816,7 @@ _global.SENTRY_RELEASE = {
                 style: t?.style ?? {}
               }) : "", j && _ ? (0, c.jsx)("div", {
                 className: s.layered,
-                style: b ? N : {}
+                style: v ? N : {}
               }) : "", (0, c.jsx)("div", {
                 className: s.gradient
               })]
@@ -867,8 +867,8 @@ _global.SENTRY_RELEASE = {
           description: u = "",
           ctaLabel: g,
           ctaLink: f = "https://rockstargames.com",
-          gradient: v = !0,
-          image: b,
+          gradient: b = !0,
+          image: v,
           imageOrientation: p = "right",
           title: k = "",
           name: h = ""
@@ -882,7 +882,7 @@ _global.SENTRY_RELEASE = {
           track: w
         } = (0, s.useGtmTrack)(), j = {
           "--promo-background": a ?? "var(--black-200)",
-          "--promo-image": `url(${(0,i.useGetCdnSource)(b)??"var(--promo-background)"})`,
+          "--promo-image": `url(${(0,i.useGetCdnSource)(v)??"var(--promo-background)"})`,
           "--promo-order": "left" === p ? "row" : "row-reverse"
         };
         return (0, n.useEffect)((() => {
@@ -914,7 +914,7 @@ _global.SENTRY_RELEASE = {
               },
               ref: N,
               children: [(0, m.jsx)("div", {
-                className: [c.promoModuleImage, v ? c.gradient : "", "left" === p ? c.left : c.right].join(" ")
+                className: [c.promoModuleImage, b ? c.gradient : "", "left" === p ? c.left : c.right].join(" ")
               }), (0, m.jsxs)("div", {
                 className: c.promoModuleContentContainer,
                 children: [(0, m.jsx)(o.A, {
@@ -1052,12 +1052,12 @@ _global.SENTRY_RELEASE = {
             loop: u = !1,
             navigation: g = !1,
             slideChildren: f = [],
-            variants: v = {
+            variants: b = {
               parent: void 0,
               main: void 0,
               thumbs: void 0
             },
-            transition: b = {
+            transition: v = {
               parent: void 0,
               main: void 0,
               thumbs: void 0
@@ -1077,14 +1077,14 @@ _global.SENTRY_RELEASE = {
             S(e)
           }), [f]), N ? (0, c.jsxs)(i.motion.div, {
             className: "rockstargames-sites-gta-gen9d4f245838b94234f21463a08a8112910",
-            variants: v.parent,
-            transition: b.parent,
+            variants: b.parent,
+            transition: v.parent,
             initial: "initial",
             animate: "animate",
             children: [(0, c.jsx)(i.motion.div, {
               className: d,
-              variants: v.main,
-              transition: b.main,
+              variants: b.main,
+              transition: v.main,
               initial: "initial",
               animate: "animate",
               children: (0, c.jsx)(r.RC, {
@@ -1121,8 +1121,8 @@ _global.SENTRY_RELEASE = {
               })
             }), (0, c.jsx)(i.motion.div, {
               className: o,
-              variants: v.thumbs,
-              transition: b.thumbs,
+              variants: b.thumbs,
+              transition: v.thumbs,
               initial: "initial",
               animate: "animate",
               children: (0, c.jsx)(r.RC, {
@@ -1241,7 +1241,7 @@ _global.SENTRY_RELEASE = {
           refetch: g
         } = (0, i.useQuery)(r.UserGetVote, {
           skip: !0
-        }), [f] = (0, i.useMutation)(r.UserCastVote), [v, b] = (0, n.useState)(null), p = (0, n.useCallback)((async e => {
+        }), [f] = (0, i.useMutation)(r.UserCastVote), [b, v] = (0, n.useState)(null), p = (0, n.useCallback)((async e => {
           m({
             event: "cta_" + (e ? "like" : "dislike"),
             text: `${o} ${t}`
@@ -1254,7 +1254,7 @@ _global.SENTRY_RELEASE = {
             n = await f({
               variables: a
             });
-          b(n?.data?.userCastVote?.vote ?? null)
+          v(n?.data?.userCastVote?.vote ?? null)
         }), [t, o]);
         return (0, n.useEffect)((() => {
           (async () => {
@@ -1263,7 +1263,7 @@ _global.SENTRY_RELEASE = {
               foreign_id: t,
               foreign_type: o
             });
-            b(e?.data?.userGetVote?.vote ?? null)
+            v(e?.data?.userGetVote?.vote ?? null)
           })()
         }), [t, o, u]), (0, d.jsx)("div", {
           className: l.userVote,
@@ -1280,11 +1280,11 @@ _global.SENTRY_RELEASE = {
               className: [l.voteButtons, u ? "" : l.loggedOutButtons].join(" "),
               children: [(0, d.jsx)("button", {
                 onClick: () => p(!0),
-                className: [l.upVote, v ? l.voteButtonActive : ""].join(" "),
+                className: [l.upVote, b ? l.voteButtonActive : ""].join(" "),
                 type: "button",
                 "aria-label": "Vote up"
               }), (0, d.jsx)("button", {
-                className: [l.downVote, !1 === v ? l.voteButtonActive : ""].join(" "),
+                className: [l.downVote, !1 === b ? l.voteButtonActive : ""].join(" "),
                 onClick: () => p(!1),
                 type: "button",
                 "aria-label": "Vote down"
@@ -1384,11 +1384,11 @@ _global.SENTRY_RELEASE = {
             secondText: u,
             size: g,
             text: f,
-            to: v,
-            type: b = "",
+            to: b,
+            type: v = "",
             ariaLabel: p
           } = e;
-          const k = [i.plusButton, i[b] ?? "", i[g] ?? "", i[n] ?? "", t].join(" "),
+          const k = [i.plusButton, i[v] ?? "", i[g] ?? "", i[n] ?? "", t].join(" "),
             h = {
               "--hvr-color": a ?? c,
               "--hvr-bg-color": c ?? a,
@@ -1406,9 +1406,9 @@ _global.SENTRY_RELEASE = {
                 }) : ""]
               })]
             });
-          if (v) {
-            if (v.startsWith("http")) {
-              const e = v.startsWith(document.location.origin) ? "_self" : "_blank";
+          if (b) {
+            if (b.startsWith("http")) {
+              const e = b.startsWith(document.location.origin) ? "_self" : "_blank";
               return (0, s.jsx)("span", {
                 onClick: m,
                 onKeyDown: m,
@@ -1417,7 +1417,7 @@ _global.SENTRY_RELEASE = {
                 "aria-label": p,
                 tabIndex: 0,
                 children: (0, s.jsx)("a", {
-                  href: v,
+                  href: b,
                   target: e,
                   children: y
                 })
@@ -1429,7 +1429,7 @@ _global.SENTRY_RELEASE = {
               style: {
                 ...h
               },
-              to: v,
+              to: b,
               ariaLabel: p,
               children: y
             })
@@ -1467,27 +1467,27 @@ _global.SENTRY_RELEASE = {
           className: g = "",
           id: f = null
         } = e;
-        const v = (0, i.useImageParser)(d ?? {}),
-          b = {
+        const b = (0, i.useImageParser)(d ?? {}),
+          v = {
             ...o
           };
-        if (v?.src?.desktop) {
+        if (b?.src?.desktop) {
           const e = (d?.style && d?.style["--background-image-size"]) ?? "var(--grid-background-size, cover)",
             a = (d?.style && d?.style["--background-image-repeat"]) ?? "var(--grid-background-repeat, no-repeat)",
             t = `var(--grid-background-position, center)/${e??"cover"}`;
-          if (b.background = `url(${v?.src?.desktop}) ${a} ${t}`, d?.style && d?.style["--linear-gradient"]) b.background = `linear-gradient(${d?.style["--linear-gradient"]}), url(${v?.src?.desktop}) ${a} ${t}`;
+          if (v.background = `url(${b?.src?.desktop}) ${a} ${t}`, d?.style && d?.style["--linear-gradient"]) v.background = `linear-gradient(${d?.style["--linear-gradient"]}), url(${b?.src?.desktop}) ${a} ${t}`;
           else if (d?.style && d?.style["--gradient-height"]) {
             const e = d?.style["--gradient-height"] || "3",
               n = d?.style["--gradient-start-color"] || "var(--background-color, transparent)",
               i = d?.style["--gradient-end-color"] || "var(--background-color, transparent)";
-            b.background = `linear-gradient(180deg, ${n}, transparent ${e}%, transparent ${100-e}%, ${i}), url(${v?.src?.desktop}) ${a} ${t}`
+            v.background = `linear-gradient(180deg, ${n}, transparent ${e}%, transparent ${100-e}%, ${i}), url(${b?.src?.desktop}) ${a} ${t}`
           }
         }
         return (0, r.jsx)("div", {
           id: f,
           className: (0, n.classList)("rockstargames-sites-gta-gen9f42b4606ed4a5b16b7647ad7b7eb229d", u ? "rockstargames-sites-gta-gen9b00444166ce6346d7ca364a75a335ecc" : "", g),
           "data-game": "community" === c ? null : l,
-          style: (0, s.safeStyles)(b),
+          style: (0, s.safeStyles)(v),
           "data-context": t,
           "data-template": c,
           "data-theme": m,
@@ -1510,10 +1510,12 @@ _global.SENTRY_RELEASE = {
           children: a,
           attributes: t = {},
           className: n = "",
-          style: d = {}
+          style: d = {},
+          id: o = ""
         } = e;
         return (0, l.jsx)("span", {
           className: (0, s.classList)(n, t?.className, "rockstargames-sites-gta-gen9a7f106a8036d74ed9282a741476c6b5a"),
+          id: o,
           style: (0, r.safeStyles)(d ?? t?.style ?? {}),
           dangerouslySetInnerHTML: {
             __html: i().unescape(a)
@@ -1567,21 +1569,21 @@ _global.SENTRY_RELEASE = {
           game: u,
           noImg: g,
           columns: f,
-          mobileColumns: v
+          mobileColumns: b
         } = e;
-        const [b, p] = (0, n.useState)(null);
+        const [v, p] = (0, n.useState)(null);
         return (0, n.useEffect)((() => {
           p(a)
-        }), [a]), t || a ? f && b ? (0, o.jsx)("div", {
+        }), [a]), t || a ? f && v ? (0, o.jsx)("div", {
           className: d.grid,
           style: {
             "--ordered-list-grid-column": f,
-            "--ordered-list-grid-column-mobile": v ?? f
+            "--ordered-list-grid-column-mobile": b ?? f
           },
           children: (0, o.jsx)("ol", {
             style: (0, l.safeStyles)(s),
             className: (0, r.classList)(d.itemList, d.noImg, d[i], d[u]),
-            children: b.map((e => (0, o.jsx)("li", {
+            children: v.map((e => (0, o.jsx)("li", {
               dangerouslySetInnerHTML: {
                 __html: c(e.content)
               }
@@ -1604,7 +1606,7 @@ _global.SENTRY_RELEASE = {
         Animations: () => n,
         LiteMotion: () => d,
         withFadeIn: () => u,
-        withFadeUp: () => b
+        withFadeUp: () => v
       });
       var n = {};
       t.r(n), t.d(n, {
@@ -1678,7 +1680,7 @@ _global.SENTRY_RELEASE = {
           ease: "easeIn",
           duration: .75
         },
-        v = e => {
+        b = e => {
           let {
             children: a
           } = e;
@@ -1695,7 +1697,7 @@ _global.SENTRY_RELEASE = {
             children: a
           })
         },
-        b = e => a => (0, r.jsx)(v, {
+        v = e => a => (0, r.jsx)(b, {
           children: (0, r.jsx)(e, {
             ...a
           })

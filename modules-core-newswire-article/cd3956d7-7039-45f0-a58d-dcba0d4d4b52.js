@@ -48,9 +48,9 @@ _global.SENTRY_RELEASE = {
           g = /^#/.test(_),
           w = k?.target ?? (r ? "_blank" : "_self");
         let {
-          ...v
-        } = k, b = "";
-        if ("aria-label" in v && v["aria-label"] && (b = "_blank" === w ? `${v["aria-label"]} ${u.formatMessage(o.aria_label_open_new_window)}` : v["aria-label"]), (0, n.useEffect)((() => {
+          ...b
+        } = k, v = "";
+        if ("aria-label" in b && b["aria-label"] && (v = "_blank" === w ? `${b["aria-label"]} ${u.formatMessage(o.aria_label_open_new_window)}` : b["aria-label"]), (0, n.useEffect)((() => {
             p && m?.current && m.current.focus()
           }), [m?.current, p]), g) {
           const e = e => {
@@ -63,10 +63,10 @@ _global.SENTRY_RELEASE = {
             title: l,
             href: _,
             onClick: e,
-            ...v,
-            "aria-label": b,
+            ...b,
+            "aria-label": v,
             ref: m,
-            children: [i, "_blank" === w && !b && (0, t.jsx)("span", {
+            children: [i, "_blank" === w && !v && (0, t.jsx)("span", {
               className: a,
               children: u.formatMessage(o.aria_label_open_new_window)
             })]
@@ -76,15 +76,15 @@ _global.SENTRY_RELEASE = {
           title: l,
           to: _,
           onClick: d,
-          ...v,
-          "aria-label": b,
+          ...b,
+          "aria-label": v,
           ref: m,
-          children: [i, "_blank" === w && !b && (0, t.jsx)("span", {
+          children: [i, "_blank" === w && !v && (0, t.jsx)("span", {
             className: a,
             children: u.formatMessage(o.aria_label_open_new_window)
           })]
         });
-        const h = Object.keys(v).filter((e => !["activeClassName", "key", "end"].includes(e))).reduce(((e, i) => ({
+        const h = Object.keys(b).filter((e => !["activeClassName", "key", "end"].includes(e))).reduce(((e, i) => ({
           ...e,
           [i]: k[i]
         })), {});
@@ -94,9 +94,9 @@ _global.SENTRY_RELEASE = {
           onClick: d,
           target: w,
           ...h,
-          "aria-label": b,
+          "aria-label": v,
           ref: m,
-          children: [i, "_blank" === w && !b && (0, t.jsx)("span", {
+          children: [i, "_blank" === w && !v && (0, t.jsx)("span", {
             className: a,
             children: u.formatMessage(o.aria_label_open_new_window)
           })]

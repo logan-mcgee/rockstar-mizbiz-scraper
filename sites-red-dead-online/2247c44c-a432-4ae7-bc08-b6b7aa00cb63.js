@@ -38,7 +38,7 @@ _global.SENTRY_RELEASE = {
         Rq: () => l,
         UX: () => d,
         Ye: () => R,
-        Zp: () => y,
+        Zp: () => E,
         bg: () => ce,
         cq: () => T,
         fS: () => Q,
@@ -125,11 +125,11 @@ _global.SENTRY_RELEASE = {
         return n.useMemo((() => (0, a.B6)(e, t)), [t, e])
       }
 
-      function E(e) {
+      function b(e) {
         n.useContext(s).static || n.useLayoutEffect(e)
       }
 
-      function y() {
+      function E() {
         let {
           isDataRoute: e
         } = n.useContext(d);
@@ -137,7 +137,7 @@ _global.SENTRY_RELEASE = {
           let {
             router: e
           } = j(w.UseNavigateStable), t = I(L.UseNavigateStable), r = n.useRef(!1);
-          return E((() => {
+          return b((() => {
             r.current = !0
           })), n.useCallback((function(n, a) {
             void 0 === a && (a = {}), r.current && ("number" == typeof n ? e.navigate(n) : e.navigate(n, o({
@@ -159,7 +159,7 @@ _global.SENTRY_RELEASE = {
             } = m(),
             u = JSON.stringify((0, a.sd)(o).map((e => e.pathnameBase))),
             c = n.useRef(!1);
-          return E((() => {
+          return b((() => {
             c.current = !0
           })), n.useCallback((function(n, o) {
             if (void 0 === o && (o = {}), !c.current) return;
@@ -169,15 +169,15 @@ _global.SENTRY_RELEASE = {
           }), [t, r, u, l, e])
         }()
       }
-      const b = n.createContext(null);
+      const y = n.createContext(null);
 
       function C() {
-        return n.useContext(b)
+        return n.useContext(y)
       }
 
       function x(e) {
         let t = n.useContext(d).outlet;
-        return t ? n.createElement(b.Provider, {
+        return t ? n.createElement(y.Provider, {
           value: e
         }, t) : t
       }
@@ -214,14 +214,14 @@ _global.SENTRY_RELEASE = {
         u && u.route;
         let v, g = m();
         if (t) {
-          var E;
+          var b;
           let e = "string" == typeof t ? (0, a.Rr)(t) : t;
-          "/" === f || (null == (E = e.pathname) ? void 0 : E.startsWith(f)) || (0, a.Oi)(!1), v = e
+          "/" === f || (null == (b = e.pathname) ? void 0 : b.startsWith(f)) || (0, a.Oi)(!1), v = e
         } else v = g;
-        let y = v.pathname || "/",
-          b = "/" === f ? y : y.slice(f.length) || "/",
+        let E = v.pathname || "/",
+          y = "/" === f ? E : E.slice(f.length) || "/",
           C = (0, a.ue)(e, {
-            pathname: b
+            pathname: y
           }),
           x = S(C && C.map((e => Object.assign({}, e, {
             params: Object.assign({}, p, e.params),
@@ -513,7 +513,7 @@ _global.SENTRY_RELEASE = {
           matches: l
         } = n.useContext(d), {
           pathname: u
-        } = m(), s = y(), c = (0, a.Gh)(t, (0, a.sd)(l).map((e => e.pathnameBase)), u, "path" === i), p = JSON.stringify(c);
+        } = m(), s = E(), c = (0, a.Gh)(t, (0, a.sd)(l).map((e => e.pathnameBase)), u, "path" === i), p = JSON.stringify(c);
         return n.useEffect((() => s(JSON.parse(p), {
           replace: r,
           state: o,
@@ -551,8 +551,8 @@ _global.SENTRY_RELEASE = {
           search: m = "",
           hash: v = "",
           state: g = null,
-          key: E = "default"
-        } = o, y = n.useMemo((() => {
+          key: b = "default"
+        } = o, E = n.useMemo((() => {
           let e = (0, a.pb)(f, d);
           return null == e ? null : {
             location: {
@@ -560,16 +560,16 @@ _global.SENTRY_RELEASE = {
               search: m,
               hash: v,
               state: g,
-              key: E
+              key: b
             },
             navigationType: i
           }
-        }), [d, f, m, v, g, E, i]);
-        return null == y ? null : n.createElement(s.Provider, {
+        }), [d, f, m, v, g, b, i]);
+        return null == E ? null : n.createElement(s.Provider, {
           value: p
         }, n.createElement(c.Provider, {
           children: r,
-          value: y
+          value: E
         }))
       }
 

@@ -29,20 +29,20 @@ _global.SENTRY_RELEASE = {
         f = d.n(t),
         i = d(31879),
         b = d.n(i),
-        c = d(66713),
-        u = d.n(c),
-        _ = d(42012);
+        u = d(66713),
+        _ = d.n(u),
+        c = d(42012);
       const w = {
         ...o,
         ...d(26750),
         ...{
-          ClrCard: _.y3,
-          ClrCollapsedCard: _.h7,
+          ClrCard: c.y3,
+          ClrCollapsedCard: c.h7,
           Gif: r(),
           GroupOfItems: s(),
           RockstarVideoPlayer: b(),
           SwiperCarousel: f(),
-          UGCJobSpotlight: u()
+          UGCJobSpotlight: _()
         }
       }
     }

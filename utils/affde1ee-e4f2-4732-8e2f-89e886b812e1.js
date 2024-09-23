@@ -20,8 +20,8 @@ _global.SENTRY_RELEASE = {
       t.r(n), t.d(n, {
         useHardwareConcurrency: () => v,
         useMemoryStatus: () => g,
-        useNetworkStatus: () => s,
-        useSaveData: () => l
+        useNetworkStatus: () => l,
+        useSaveData: () => d
       });
       var r = t(1403);
 
@@ -56,7 +56,7 @@ _global.SENTRY_RELEASE = {
         }
         return e
       }
-      var u, f, c, d, s = function(e) {
+      var u, f, c, s, l = function(e) {
           var n, t = {
               unsupported: u = !("undefined" != typeof navigator && "connection" in navigator && "effectiveType" in navigator.connection),
               effectiveConnectionType: u ? e : navigator.connection.effectiveType
@@ -104,18 +104,18 @@ _global.SENTRY_RELEASE = {
             setNetworkStatus: f
           })
         },
-        l = function() {
+        d = function() {
           return {
             unsupported: f = !("undefined" != typeof navigator && "connection" in navigator && "saveData" in navigator.connection),
             saveData: f ? arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null : !0 === navigator.connection.saveData
           }
         };
-      if (c = !("undefined" != typeof navigator && "deviceMemory" in navigator)) d = {
+      if (c = !("undefined" != typeof navigator && "deviceMemory" in navigator)) s = {
         unsupported: c
       };
       else {
         var p = "memory" in performance ? performance.memory : null;
-        d = {
+        s = {
           unsupported: c,
           deviceMemory: navigator.deviceMemory,
           totalJSHeapSize: p ? p.totalJSHeapSize : null,
@@ -124,7 +124,7 @@ _global.SENTRY_RELEASE = {
         }
       }
       var y, g = function(e) {
-        return c && e ? i({}, d, {}, e) : i({}, d)
+        return c && e ? i({}, s, {}, e) : i({}, s)
       };
       y = "undefined" != typeof navigator && "hardwareConcurrency" in navigator ? {
         unsupported: !1,

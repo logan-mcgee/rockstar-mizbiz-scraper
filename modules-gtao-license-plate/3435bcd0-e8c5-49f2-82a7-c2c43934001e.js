@@ -80,10 +80,10 @@ _global.SENTRY_RELEASE = {
         c = s(4677),
         d = s(9186),
         p = s(5136),
-        m = s(1272),
-        b = {};
-      for (const e in m)["default", "FormattedMessage", "IntlProvider", "POSIXLocales", "createDevLocaleHook", "createIntl", "defineMessages", "englishLocale", "getCookieValueByName", "getLocale", "localeCookieHandler", "locales", "splitLocale", "useIntl", "withIntl"].indexOf(e) < 0 && (b[e] = () => m[e]);
-      s.d(o, b)
+        b = s(1272),
+        m = {};
+      for (const e in b)["default", "FormattedMessage", "IntlProvider", "POSIXLocales", "createDevLocaleHook", "createIntl", "defineMessages", "englishLocale", "getCookieValueByName", "getLocale", "localeCookieHandler", "locales", "splitLocale", "useIntl", "withIntl"].indexOf(e) < 0 && (m[e] = () => b[e]);
+      s.d(o, m)
     },
     120: (e, o, s) => {
       "use strict";

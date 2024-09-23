@@ -16,8 +16,8 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_graph_client = self.webpackChunk_rockstargames_graph_client || []).push([
   [108], {
-    3108: (e, a, d) => {
-      d.r(a), d.d(a, {
+    3108: (e, a, n) => {
+      n.r(a), n.d(a, {
         base: () => u,
         cdn: () => l,
         locale: () => t,
@@ -25,21 +25,21 @@ _global.SENTRY_RELEASE = {
         useCdn: () => r,
         useLocale: () => o
       });
-      var n = d(7264);
-      const t = (0, n.makeVar)(document.documentElement.lang),
-        o = () => (0, n.useReactiveVar)(t),
+      var d = n(7264);
+      const t = (0, d.makeVar)(document.documentElement.lang),
+        o = () => (0, d.useReactiveVar)(t),
         s = window?.env,
-        l = (0, n.makeVar)({
+        l = (0, d.makeVar)({
           media: s?.cdn?.media,
           videos: s?.cdn?.videos
         }),
-        r = () => (0, n.useReactiveVar)(l),
+        r = () => (0, d.useReactiveVar)(l),
         c = document.currentScript,
         f = c?.src ? new URL(c.src).origin : "";
       let i = document.getElementsByTagName("base")[0]?.getAttribute("href") ?? `${f}/`;
       i.endsWith("/") || (i = `${i}/`);
-      const u = (0, n.makeVar)(i),
-        g = () => (0, n.useReactiveVar)(u)
+      const u = (0, d.makeVar)(i),
+        g = () => (0, d.useReactiveVar)(u)
     }
   }
 ]);

@@ -55,8 +55,8 @@ _global.SENTRY_RELEASE = {
           parent: k = "footer"
         } = e;
         const {
-          track: f
-        } = (0, n.useGtmTrack)(), g = (0, i.useIntl)(), [u, p] = (0, i.getLocale)(), [b, h] = (0, t.useState)(!1), v = (0, t.useMemo)((() => (0, o.A)()), []), w = (0, t.useCallback)((e => {
+          track: g
+        } = (0, n.useGtmTrack)(), f = (0, i.useIntl)(), [u, p] = (0, i.getLocale)(), [b, h] = (0, t.useState)(!1), v = (0, t.useMemo)((() => (0, o.A)()), []), w = (0, t.useCallback)((e => {
           let a = m.pathname;
           const s = a.split("/");
           return i.locales.map((e => e.subdomaincom)).includes(s[0]) && (a = s.slice(1).join("/")), v.currentSite?.site === o.C.www ? "en" === e ? `${window.location.origin}${a}${m.search}` : `${window.location.origin}/${e}${a}${m.search}` : `${window.location.origin}${a}${m.search}`
@@ -65,7 +65,7 @@ _global.SENTRY_RELEASE = {
           const a = i.locales.find((a => a.subdomaincom === e));
           if (a) {
             const s = w(e);
-            f({
+            g({
               event: "cta_other",
               link_url: s,
               text: e,
@@ -89,7 +89,7 @@ _global.SENTRY_RELEASE = {
                 const a = e.currentTarget.value;
                 C(a)
               },
-              "aria-label": g.formatMessage(l.language_selector_default),
+              "aria-label": f.formatMessage(l.language_selector_default),
               children: [(0, d.jsx)("option", {
                 className: _.selectBoxOption,
                 value: "none",
@@ -114,7 +114,7 @@ _global.SENTRY_RELEASE = {
                 e.stopPropagation(), c && c(!b), h(!b)
               },
               type: "button",
-              "aria-label": g.formatMessage(l.language_selector_default),
+              "aria-label": f.formatMessage(l.language_selector_default),
               children: [(0, d.jsx)("i", {}), (0, d.jsx)("span", {
                 children: (0, d.jsx)(i.FormattedMessage, {
                   ...l.language_selector_default
@@ -232,17 +232,17 @@ _global.SENTRY_RELEASE = {
           focused: m = !1,
           ...k
         } = e;
-        const f = (0, i.useRef)(null),
-          g = (0, t.useIntl)(),
+        const g = (0, i.useRef)(null),
+          f = (0, t.useIntl)(),
           u = !/^(https?|mailto):/i.test(s),
           p = /^#/.test(s),
           b = k?.target ?? (_ ? "_blank" : "_self");
         let {
           ...h
         } = k, v = "";
-        if ("aria-label" in h && h["aria-label"] && (v = "_blank" === b ? `${h["aria-label"]} ${g.formatMessage(o.aria_label_open_new_window)}` : h["aria-label"]), (0, i.useEffect)((() => {
-            m && f?.current && f.current.focus()
-          }), [f?.current, m]), p) {
+        if ("aria-label" in h && h["aria-label"] && (v = "_blank" === b ? `${h["aria-label"]} ${f.formatMessage(o.aria_label_open_new_window)}` : h["aria-label"]), (0, i.useEffect)((() => {
+            m && g?.current && g.current.focus()
+          }), [g?.current, m]), p) {
           const e = e => {
             e.preventDefault(), document?.querySelector(`[id='${s.replace("#","")}']`)?.scrollIntoView({
               behavior: "smooth",
@@ -255,10 +255,10 @@ _global.SENTRY_RELEASE = {
             onClick: e,
             ...h,
             "aria-label": v,
-            ref: f,
+            ref: g,
             children: [a, "_blank" === b && !v && (0, r.jsx)("span", {
               className: l,
-              children: g.formatMessage(o.aria_label_open_new_window)
+              children: f.formatMessage(o.aria_label_open_new_window)
             })]
           })
         }
@@ -268,10 +268,10 @@ _global.SENTRY_RELEASE = {
           onClick: d,
           ...h,
           "aria-label": v,
-          ref: f,
+          ref: g,
           children: [a, "_blank" === b && !v && (0, r.jsx)("span", {
             className: l,
-            children: g.formatMessage(o.aria_label_open_new_window)
+            children: f.formatMessage(o.aria_label_open_new_window)
           })]
         });
         const w = Object.keys(h).filter((e => !["activeClassName", "key", "end"].includes(e))).reduce(((e, a) => ({
@@ -285,10 +285,10 @@ _global.SENTRY_RELEASE = {
           target: b,
           ...w,
           "aria-label": v,
-          ref: f,
+          ref: g,
           children: [a, "_blank" === b && !v && (0, r.jsx)("span", {
             className: l,
-            children: g.formatMessage(o.aria_label_open_new_window)
+            children: f.formatMessage(o.aria_label_open_new_window)
           })]
         })
       }), n)
@@ -560,8 +560,8 @@ _global.SENTRY_RELEASE = {
         d = s(40207),
         m = s(42756),
         k = s(26039),
-        f = s(96717);
-      const g = (0, f.defineMessages)({
+        g = s(96717);
+      const f = (0, g.defineMessages)({
           footer_rockstar_games: {
             id: "footer_rockstar_games",
             defaultMessage: "Rockstar Games"
@@ -626,7 +626,7 @@ _global.SENTRY_RELEASE = {
           let {
             t: a
           } = e;
-          const s = (0, f.useIntl)(),
+          const s = (0, g.useIntl)(),
             n = (0, r.useLocation)(),
             {
               host: c
@@ -662,7 +662,7 @@ _global.SENTRY_RELEASE = {
                 "data-testid": "contactButton",
                 onClick: b("cta_other", "/contact", "contact", "footer"),
                 to: "/contact",
-                children: s.formatMessage(g.footer_contact_label_text)
+                children: s.formatMessage(f.footer_contact_label_text)
               }), (0, o.jsx)(i.A, {
                 "data-testid": "careersLink",
                 onClick: b("cta_other", "/careers", "careers", "footer"),
@@ -672,7 +672,7 @@ _global.SENTRY_RELEASE = {
                 "data-testid": "communityGuidelinesLink",
                 onClick: b("cta_other", "/community-guidelines", "community guidelines", "footer"),
                 to: "/community-guidelines",
-                children: s.formatMessage(g.footer_community_guidelines_label_text)
+                children: s.formatMessage(f.footer_community_guidelines_label_text)
               }), (0, o.jsx)(i.A, {
                 "data-testid": "subscribeLink",
                 className: u.subscribe,
@@ -703,12 +703,12 @@ _global.SENTRY_RELEASE = {
                     element_placement: "footer"
                   }), window.OneTrust?.ToggleInfoDisplay()
                 }),
-                children: s.formatMessage(g.footer_cookie_settings_label_text)
+                children: s.formatMessage(f.footer_cookie_settings_label_text)
               }), (0, o.jsx)(i.A, {
                 "data-testid": "cookiePolicyButton",
                 onClick: b("cta_other", "/cookies", "cookie policy", "footer"),
                 to: "/cookies",
-                children: s.formatMessage(g.footer_cookie_policy_label_text)
+                children: s.formatMessage(f.footer_cookie_policy_label_text)
               }), (0, o.jsx)(i.A, {
                 "data-testid": "legalButton",
                 onClick: b("cta_other", "/legal", "legal", "footer"),
@@ -767,25 +767,25 @@ _global.SENTRY_RELEASE = {
               className: u.showsOver,
               children: [(0, o.jsx)("div", {
                 className: u.whatTeamWildcats,
-                children: s.formatMessage(g.footer_rockstar_games)
+                children: s.formatMessage(f.footer_rockstar_games)
               }), (0, o.jsxs)("div", {
                 className: u.places,
                 children: [(0, o.jsx)("span", {
-                  children: s.formatMessage(g.footer_locations_new_york)
+                  children: s.formatMessage(f.footer_locations_new_york)
                 }), (0, o.jsx)("span", {
-                  children: s.formatMessage(g.footer_locations_london)
+                  children: s.formatMessage(f.footer_locations_london)
                 }), (0, o.jsx)("span", {
-                  children: s.formatMessage(g.footer_locations_paris)
+                  children: s.formatMessage(f.footer_locations_paris)
                 }), (0, o.jsx)("span", {
-                  children: s.formatMessage(g.footer_locations_bogota)
+                  children: s.formatMessage(f.footer_locations_bogota)
                 })]
               }), (0, o.jsxs)("div", {
                 className: u.sophomore,
                 children: [(0, o.jsx)("span", {
                   "aria-hidden": !0,
-                  children: s.formatMessage(g.footer_established_date_roman)
+                  children: s.formatMessage(f.footer_established_date_roman)
                 }), (0, o.jsx)(k.A, {
-                  children: s.formatMessage(g.footer_established_date_numerical)
+                  children: s.formatMessage(f.footer_established_date_numerical)
                 })]
               })]
             })]

@@ -67,18 +67,18 @@ _global.SENTRY_RELEASE = {
       }
 
       function g(e, t, a, n, f, l) {
-        for (var i, g = e.data, s = 2 * l + 1, d = n - 1, c = f - 1, b = l + 1, y = b * (b + 1) / 2, v = new u, p = v, x = 1; x < s; x++) p = p.next = new u, x === b && (i = p);
+        for (var i, g = e.data, s = 2 * l + 1, d = n - 1, b = f - 1, c = l + 1, y = c * (c + 1) / 2, v = new u, p = v, x = 1; x < s; x++) p = p.next = new u, x === c && (i = p);
         p.next = v;
         for (var w = null, m = null, h = 0, _ = 0, E = r[l], I = o[l], k = 0; k < f; k++) {
           p = v;
-          for (var C = g[_], B = g[_ + 1], D = g[_ + 2], N = g[_ + 3], R = 0; R < b; R++) p.r = C, p.g = B, p.b = D, p.a = N, p = p.next;
-          for (var S = 0, M = 0, G = 0, A = 0, T = b * C, W = b * B, H = b * D, j = b * N, L = y * C, Y = y * B, q = y * D, z = y * N, F = 1; F < b; F++) {
+          for (var C = g[_], B = g[_ + 1], D = g[_ + 2], N = g[_ + 3], R = 0; R < c; R++) p.r = C, p.g = B, p.b = D, p.a = N, p = p.next;
+          for (var S = 0, M = 0, G = 0, A = 0, T = c * C, W = c * B, H = c * D, j = c * N, L = y * C, Y = y * B, q = y * D, z = y * N, F = 1; F < c; F++) {
             var J = _ + ((d < F ? d : F) << 2),
               K = g[J],
               O = g[J + 1],
               P = g[J + 2],
               Q = g[J + 3],
-              U = b - F;
+              U = c - F;
             L += (p.r = K) * U, Y += (p.g = O) * U, q += (p.b = P) * U, z += (p.a = Q) * U, S += K, M += O, G += P, A += Q, p = p.next
           }
           w = v, m = i;
@@ -105,25 +105,25 @@ _global.SENTRY_RELEASE = {
             le = g[_ + 1],
             ie = g[_ + 2],
             ge = g[_ + 3],
-            se = b * fe,
-            de = b * le,
-            ue = b * ie,
-            ce = b * ge,
-            be = y * fe,
+            se = c * fe,
+            de = c * le,
+            ue = c * ie,
+            be = c * ge,
+            ce = y * fe,
             ye = y * le,
             ve = y * ie,
             pe = y * ge;
           p = v;
-          for (var xe = 0; xe < b; xe++) p.r = fe, p.g = le, p.b = ie, p.a = ge, p = p.next;
+          for (var xe = 0; xe < c; xe++) p.r = fe, p.g = le, p.b = ie, p.a = ge, p = p.next;
           for (var we = n, me = 0, he = 0, _e = 0, Ee = 0, Ie = 1; Ie <= l; Ie++) {
             _ = we + oe << 2;
-            var ke = b - Ie;
-            be += (p.r = fe = g[_]) * ke, ye += (p.g = le = g[_ + 1]) * ke, ve += (p.b = ie = g[_ + 2]) * ke, pe += (p.a = ge = g[_ + 3]) * ke, Ee += fe, me += le, he += ie, _e += ge, p = p.next, Ie < c && (we += n)
+            var ke = c - Ie;
+            ce += (p.r = fe = g[_]) * ke, ye += (p.g = le = g[_ + 1]) * ke, ve += (p.b = ie = g[_ + 2]) * ke, pe += (p.a = ge = g[_ + 3]) * ke, Ee += fe, me += le, he += ie, _e += ge, p = p.next, Ie < b && (we += n)
           }
           _ = oe, w = v, m = i;
           for (var Ce = 0; Ce < f; Ce++) {
             var Be = _ << 2;
-            g[Be + 3] = ge = pe * E >> I, ge > 0 ? (ge = 255 / ge, g[Be] = (be * E >> I) * ge, g[Be + 1] = (ye * E >> I) * ge, g[Be + 2] = (ve * E >> I) * ge) : g[Be] = g[Be + 1] = g[Be + 2] = 0, be -= se, ye -= de, ve -= ue, pe -= ce, se -= w.r, de -= w.g, ue -= w.b, ce -= w.a, Be = oe + ((Be = Ce + b) < c ? Be : c) * n << 2, be += Ee += w.r = g[Be], ye += me += w.g = g[Be + 1], ve += he += w.b = g[Be + 2], pe += _e += w.a = g[Be + 3], w = w.next, se += fe = m.r, de += le = m.g, ue += ie = m.b, ce += ge = m.a, Ee -= fe, me -= le, he -= ie, _e -= ge, m = m.next, _ += n
+            g[Be + 3] = ge = pe * E >> I, ge > 0 ? (ge = 255 / ge, g[Be] = (ce * E >> I) * ge, g[Be + 1] = (ye * E >> I) * ge, g[Be + 2] = (ve * E >> I) * ge) : g[Be] = g[Be + 1] = g[Be + 2] = 0, ce -= se, ye -= de, ve -= ue, pe -= be, se -= w.r, de -= w.g, ue -= w.b, be -= w.a, Be = oe + ((Be = Ce + c) < b ? Be : b) * n << 2, ce += Ee += w.r = g[Be], ye += me += w.g = g[Be + 1], ve += he += w.b = g[Be + 2], pe += _e += w.a = g[Be + 3], w = w.next, se += fe = m.r, de += le = m.g, ue += ie = m.b, be += ge = m.a, Ee -= fe, me -= le, he -= ie, _e -= ge, m = m.next, _ += n
           }
         }
         return e
@@ -138,21 +138,21 @@ _global.SENTRY_RELEASE = {
       }
 
       function d(e, t, a, n, f, l) {
-        for (var i, g = e.data, s = 2 * l + 1, d = n - 1, c = f - 1, b = l + 1, y = b * (b + 1) / 2, v = new u, p = v, x = 1; x < s; x++) p = p.next = new u, x === b && (i = p);
+        for (var i, g = e.data, s = 2 * l + 1, d = n - 1, b = f - 1, c = l + 1, y = c * (c + 1) / 2, v = new u, p = v, x = 1; x < s; x++) p = p.next = new u, x === c && (i = p);
         p.next = v;
         for (var w, m, h = null, _ = null, E = r[l], I = o[l], k = 0, C = 0, B = 0; B < f; B++) {
           var D = g[C],
             N = g[C + 1],
             R = g[C + 2],
-            S = b * D,
-            M = b * N,
-            G = b * R,
+            S = c * D,
+            M = c * N,
+            G = c * R,
             A = y * D,
             T = y * N,
             W = y * R;
           p = v;
-          for (var H = 0; H < b; H++) p.r = D, p.g = N, p.b = R, p = p.next;
-          for (var j = 0, L = 0, Y = 0, q = 1; q < b; q++) w = C + ((d < q ? d : q) << 2), A += (p.r = D = g[w]) * (m = b - q), T += (p.g = N = g[w + 1]) * m, W += (p.b = R = g[w + 2]) * m, j += D, L += N, Y += R, p = p.next;
+          for (var H = 0; H < c; H++) p.r = D, p.g = N, p.b = R, p = p.next;
+          for (var j = 0, L = 0, Y = 0, q = 1; q < c; q++) w = C + ((d < q ? d : q) << 2), A += (p.r = D = g[w]) * (m = c - q), T += (p.g = N = g[w + 1]) * m, W += (p.b = R = g[w + 2]) * m, j += D, L += N, Y += R, p = p.next;
           h = v, _ = i;
           for (var z = 0; z < n; z++) g[C] = A * E >> I, g[C + 1] = T * E >> I, g[C + 2] = W * E >> I, A -= S, T -= M, W -= G, S -= h.r, M -= h.g, G -= h.b, w = k + ((w = z + l + 1) < d ? w : d) << 2, A += j += h.r = g[w], T += L += h.g = g[w + 1], W += Y += h.b = g[w + 2], h = h.next, S += D = _.r, M += N = _.g, G += R = _.b, j -= D, L -= N, Y -= R, _ = _.next, C += 4;
           k += n
@@ -161,17 +161,17 @@ _global.SENTRY_RELEASE = {
           var J = g[C = F << 2],
             K = g[C + 1],
             O = g[C + 2],
-            P = b * J,
-            Q = b * K,
-            U = b * O,
+            P = c * J,
+            Q = c * K,
+            U = c * O,
             V = y * J,
             X = y * K,
             Z = y * O;
           p = v;
-          for (var $ = 0; $ < b; $++) p.r = J, p.g = K, p.b = O, p = p.next;
-          for (var ee = 0, te = 0, ae = 0, ne = 1, re = n; ne <= l; ne++) C = re + F << 2, V += (p.r = J = g[C]) * (m = b - ne), X += (p.g = K = g[C + 1]) * m, Z += (p.b = O = g[C + 2]) * m, ee += J, te += K, ae += O, p = p.next, ne < c && (re += n);
+          for (var $ = 0; $ < c; $++) p.r = J, p.g = K, p.b = O, p = p.next;
+          for (var ee = 0, te = 0, ae = 0, ne = 1, re = n; ne <= l; ne++) C = re + F << 2, V += (p.r = J = g[C]) * (m = c - ne), X += (p.g = K = g[C + 1]) * m, Z += (p.b = O = g[C + 2]) * m, ee += J, te += K, ae += O, p = p.next, ne < b && (re += n);
           C = F, h = v, _ = i;
-          for (var oe = 0; oe < f; oe++) g[w = C << 2] = V * E >> I, g[w + 1] = X * E >> I, g[w + 2] = Z * E >> I, V -= P, X -= Q, Z -= U, P -= h.r, Q -= h.g, U -= h.b, w = F + ((w = oe + b) < c ? w : c) * n << 2, V += ee += h.r = g[w], X += te += h.g = g[w + 1], Z += ae += h.b = g[w + 2], h = h.next, P += J = _.r, Q += K = _.g, U += O = _.b, ee -= J, te -= K, ae -= O, _ = _.next, C += n
+          for (var oe = 0; oe < f; oe++) g[w = C << 2] = V * E >> I, g[w + 1] = X * E >> I, g[w + 2] = Z * E >> I, V -= P, X -= Q, Z -= U, P -= h.r, Q -= h.g, U -= h.b, w = F + ((w = oe + c) < b ? w : b) * n << 2, V += ee += h.r = g[w], X += te += h.g = g[w + 1], Z += ae += h.b = g[w + 2], h = h.next, P += J = _.r, Q += K = _.g, U += O = _.b, ee -= J, te -= K, ae -= O, _ = _.next, C += n
         }
         return e
       }

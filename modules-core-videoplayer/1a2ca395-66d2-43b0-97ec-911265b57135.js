@@ -54,7 +54,7 @@ _global.SENTRY_RELEASE = {
       l.r(a), l.d(a, {
         RockstarVideoPlayer: () => m,
         VideoField: () => p,
-        default: () => y
+        default: () => b
       });
       var o = l(8407),
         t = l(472),
@@ -163,7 +163,7 @@ _global.SENTRY_RELEASE = {
             label: e?.name ? `${e.name} [Video]` : "New [Video]"
           })
         }),
-        y = m
+        b = m
     }
   }
 ]);

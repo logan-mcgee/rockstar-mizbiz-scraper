@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       n = (new Error).stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "9160d363-0342-4e23-92fe-400a9798914d", e._sentryDebugIdIdentifier = "sentry-dbid-9160d363-0342-4e23-92fe-400a9798914d")
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "bde86517-ff39-4b33-947e-046a8001e559", e._sentryDebugIdIdentifier = "sentry-dbid-bde86517-ff39-4b33-947e-046a8001e559")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -15,7 +15,7 @@ var _global = "undefined" != typeof window ? window : "undefined" != typeof glob
 _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
-  [994], {
+  [375], {
     8613: (e, n, t) => {
       t.r(n), t.d(n, {
         RemoveScroll: () => Y
@@ -110,8 +110,8 @@ _global.SENTRY_RELEASE = {
             p = e.shards,
             g = e.sideCar,
             m = e.noIsolation,
-            w = e.inert,
-            b = e.allowPinchZoom,
+            b = e.inert,
+            w = e.allowPinchZoom,
             y = e.as,
             E = void 0 === y ? "div" : y,
             C = e.gapMode,
@@ -147,9 +147,9 @@ _global.SENTRY_RELEASE = {
             removeScrollBar: h,
             shards: p,
             noIsolation: m,
-            inert: w,
+            inert: b,
             setCallbacks: i,
-            allowPinchZoom: !!b,
+            allowPinchZoom: !!w,
             lockRef: t,
             gapMode: C
           }), d ? o.cloneElement(o.Children.only(s), (0, r.Cl)((0, r.Cl)({}, R), {
@@ -229,7 +229,7 @@ _global.SENTRY_RELEASE = {
             l = e.gap;
           return void 0 === t && (t = "margin"), "\n  .".concat("with-scroll-bars-hidden", " {\n   overflow: hidden ").concat(r, ";\n   padding-right: ").concat(l, "px ").concat(r, ";\n  }\n  body {\n    overflow: hidden ").concat(r, ";\n    overscroll-behavior: contain;\n    ").concat([n && "position: relative ".concat(r, ";"), "margin" === t && "\n    padding-left: ".concat(o, "px;\n    padding-top: ").concat(i, "px;\n    padding-right: ").concat(u, "px;\n    margin-left:0;\n    margin-top:0;\n    margin-right: ").concat(l, "px ").concat(r, ";\n    "), "padding" === t && "padding-right: ".concat(l, "px ").concat(r, ";")].filter(Boolean).join(""), "\n  }\n  \n  .").concat(a, " {\n    right: ").concat(l, "px ").concat(r, ";\n  }\n  \n  .").concat(c, " {\n    margin-right: ").concat(l, "px ").concat(r, ";\n  }\n  \n  .").concat(a, " .").concat(a, " {\n    right: 0 ").concat(r, ";\n  }\n  \n  .").concat(c, " .").concat(c, " {\n    margin-right: 0 ").concat(r, ";\n  }\n  \n  body {\n    ").concat("--removed-body-scroll-bar-size", ": ").concat(l, "px;\n  }\n")
         },
-        w = function(e) {
+        b = function(e) {
           var n = e.noRelative,
             t = e.noImportant,
             r = e.gapMode,
@@ -258,18 +258,18 @@ _global.SENTRY_RELEASE = {
             styles: m(c, !n, a, t ? "" : "!important")
           })
         },
-        b = !1;
+        w = !1;
       if ("undefined" != typeof window) try {
         var y = Object.defineProperty({}, "passive", {
           get: function() {
-            return b = !0, !0
+            return w = !0, !0
           }
         });
         window.addEventListener("test", y, y), window.removeEventListener("test", y, y)
       } catch (e) {
-        b = !1
+        w = !1
       }
-      var E = !!b && {
+      var E = !!w && {
           passive: !1
         },
         C = function(e, n) {
@@ -435,7 +435,7 @@ _global.SENTRY_RELEASE = {
           m = e.inert;
         return o.createElement(o.Fragment, null, m ? o.createElement(i, {
           styles: L(c)
-        }) : null, g ? o.createElement(w, {
+        }) : null, g ? o.createElement(b, {
           gapMode: e.gapMode
         }) : null)
       }, u.useMedium(B), s);

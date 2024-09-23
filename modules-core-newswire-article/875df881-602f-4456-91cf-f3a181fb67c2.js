@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "3c07c988-b0d0-4ce0-80c1-044bd9fa8bef", e._sentryDebugIdIdentifier = "sentry-dbid-3c07c988-b0d0-4ce0-80c1-044bd9fa8bef")
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "875df881-602f-4456-91cf-f3a181fb67c2", e._sentryDebugIdIdentifier = "sentry-dbid-875df881-602f-4456-91cf-f3a181fb67c2")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -990,10 +990,12 @@ _global.SENTRY_RELEASE = {
           children: a,
           attributes: i = {},
           className: n = "",
-          style: c = {}
+          style: c = {},
+          id: l = ""
         } = e;
         return (0, o.jsx)("span", {
           className: (0, r.classList)(n, i?.className, "rockstargames-modules-core-newswire-articlea7f106a8036d74ed9282a741476c6b5a"),
+          id: l,
           style: (0, s.safeStyles)(c ?? i?.style ?? {}),
           dangerouslySetInnerHTML: {
             __html: t().unescape(a)

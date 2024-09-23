@@ -21,25 +21,25 @@ _global.SENTRY_RELEASE = {
         a = Symbol.for("react.element"),
         r = (Symbol.for("react.fragment"), Object.prototype.hasOwnProperty),
         s = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        d = {
+        i = {
           key: !0,
           ref: !0,
           __self: !0,
           __source: !0
         };
       t.jsx = function(e, t, n) {
-        var o, i = {},
+        var o, d = {},
           l = null,
           f = null;
-        for (o in void 0 !== n && (l = "" + n), void 0 !== t.key && (l = "" + t.key), void 0 !== t.ref && (f = t.ref), t) r.call(t, o) && !d.hasOwnProperty(o) && (i[o] = t[o]);
+        for (o in void 0 !== n && (l = "" + n), void 0 !== t.key && (l = "" + t.key), void 0 !== t.ref && (f = t.ref), t) r.call(t, o) && !i.hasOwnProperty(o) && (d[o] = t[o]);
         if (e && e.defaultProps)
-          for (o in t = e.defaultProps) void 0 === i[o] && (i[o] = t[o]);
+          for (o in t = e.defaultProps) void 0 === d[o] && (d[o] = t[o]);
         return {
           $$typeof: a,
           type: e,
           key: l,
           ref: f,
-          props: i,
+          props: d,
           _owner: s.current
         }
       }
@@ -58,17 +58,17 @@ _global.SENTRY_RELEASE = {
         a = n.n(o),
         r = n(1359),
         s = n(1403),
-        d = n(9779),
-        i = n(6632);
+        i = n(9779),
+        d = n(6632);
       const l = e => t => ((e, t) => {
           const {
             pathname: n
-          } = (0, d.useLocation)();
+          } = (0, i.useLocation)();
           return (0, s.useEffect)((() => {
             (0, r.A)({
               event: "trackPageview"
             })
-          }), [n]), (0, i.jsx)(e, {
+          }), [n]), (0, d.jsx)(e, {
             ...t
           })
         })(e, t),
@@ -118,13 +118,13 @@ _global.SENTRY_RELEASE = {
             currentSite: e
           }
         })(),
-        d = s?.id,
-        i = /Mobi/i.test(window.navigator.userAgent) ? "mobile" : "desktop",
+        i = s?.id,
+        d = /Mobi/i.test(window.navigator.userAgent) ? "mobile" : "desktop",
         l = e => {
           const t = {
             ...e,
-            environment: d,
-            display_type: i
+            environment: i,
+            display_type: d
           };
           a().dataLayer({
             dataLayer: t

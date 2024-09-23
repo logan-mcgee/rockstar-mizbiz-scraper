@@ -16,36 +16,36 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [963], {
-    4344: (e, a, d) => {
-      d.r(a), d.d(a, {
+    4344: (e, a, n) => {
+      n.r(a), n.d(a, {
         default: () => f
       });
-      var n = d(9807),
-        o = d(4277),
-        t = d(7573),
-        l = d(6632);
+      var o = n(9807),
+        d = n(4277),
+        t = n(7573),
+        l = n(6632);
       const {
         graphEnv: r,
         pingBearer: s
-      } = (0, o.S0)(), f = e => {
+      } = (0, d.S0)(), f = e => {
         let {
           navData: a,
-          location: d,
-          onNavigate: o,
+          location: n,
+          onNavigate: d,
           searchConfig: f,
           routeOptions: i
         } = e;
-        const c = (0, n.my)(t.default, {
+        const u = (0, o.my)(t.default, {
           env: r,
-          token: (0, n.UT)(null),
-          tokenPing: (0, n.UT)(s),
-          tokenPingExpires: (0, n.UT)(null),
+          token: (0, o.UT)(null),
+          tokenPing: (0, o.UT)(s),
+          tokenPingExpires: (0, o.UT)(null),
           typePolicies: {}
         });
-        return (0, l.jsx)(c, {
+        return (0, l.jsx)(u, {
           navData: a,
-          location: d,
-          onNavigate: o,
+          location: n,
+          onNavigate: d,
           searchConfig: f,
           routeOptions: i
         })

@@ -1,8 +1,8 @@
 ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "a6c5cd25-85a9-47fb-b988-a58560a324e1", e._sentryDebugIdIdentifier = "sentry-dbid-a6c5cd25-85a9-47fb-b988-a58560a324e1")
+      n = (new Error).stack;
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "2d039f29-6ae0-49a4-9a73-ade848f0b213", e._sentryDebugIdIdentifier = "sentry-dbid-2d039f29-6ae0-49a4-9a73-ade848f0b213")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -15,10 +15,10 @@ var _global = "undefined" != typeof window ? window : "undefined" != typeof glob
 _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
-  [834], {
-    3963: (e, t, n) => {
+  [230], {
+    3963: (e, n, t) => {
       "use strict";
-      n.d(t, {
+      t.d(n, {
         A: () => a,
         C: () => o
       });
@@ -41,10 +41,10 @@ _global.SENTRY_RELEASE = {
         a = () => {
           let e;
           const {
-            location: t
-          } = window, n = t.hostname.substring(0, t.hostname.indexOf(".rockstargames.com")), o = i.findIndex((t => Object.entries(t.sites).findIndex((t => {
-            let [o, i] = t;
-            return i === n && (e = {
+            location: n
+          } = window, t = n.hostname.substring(0, n.hostname.indexOf(".rockstargames.com")), o = i.findIndex((n => Object.entries(n.sites).findIndex((n => {
+            let [o, i] = n;
+            return i === t && (e = {
               site: o,
               subDomain: i
             }, !0)
@@ -58,40 +58,40 @@ _global.SENTRY_RELEASE = {
           }
         }
     },
-    9807: (e, t, n) => {
+    9807: (e, n, t) => {
       "use strict";
-      n.d(t, {
+      t.d(n, {
         UT: () => o.UT,
-        hp: () => M,
-        RX: () => z,
+        hp: () => q,
+        RX: () => X,
         IT: () => y,
         qs: () => i.q,
-        e9: () => $,
-        Es: () => O,
-        bD: () => N,
+        e9: () => N,
+        Es: () => $,
+        bD: () => L,
         J0: () => E,
         my: () => B
       });
-      var o = n(1796),
-        i = n(9409),
-        a = n(1403),
-        r = n(555),
-        s = n(2296),
-        l = n(9998),
-        c = n(7637),
-        d = n(4252),
-        u = n.n(d),
-        p = n(7679);
-      const w = (e, t) => {
-        const n = (0, i.q)(p.Hg),
+      var o = t(1796),
+        i = t(9409),
+        a = t(1403),
+        r = t(555),
+        s = t(2296),
+        l = t(9998),
+        c = t(7637),
+        d = t(4252),
+        u = t.n(d),
+        w = t(7679);
+      const p = (e, n) => {
+        const t = (0, i.q)(w.Hg),
           o = {
             autoSetError: !0,
             autoSetLoading: !1,
             setTitleDataPath: "meta.title",
-            ...t,
+            ...n,
             variables: {
-              locale: n,
-              ...t?.variables
+              locale: t,
+              ...n?.variables
             }
           },
           {
@@ -125,40 +125,40 @@ _global.SENTRY_RELEASE = {
           ...d
         }
       };
-      var g = n(6632);
-      const h = (0, a.createContext)((() => ({
+      var m = t(6632);
+      const g = (0, a.createContext)((() => ({
           data: null
         }))),
-        m = new Promise((e => {
+        h = new Promise((e => {
           e()
         })),
         f = {
           cache: window?.["apollo-cache"] ?? (window["apollo-cache"] = new r.D)
         },
-        k = [() => m, {
+        v = [() => h, {
           data: null,
           loading: !1,
           called: !1,
           reset: () => null,
           client: window?.["apollo-client"] ?? (window["apollo-client"] = new s.R(f))
         }],
-        v = (0, a.createContext)((() => k)),
+        k = (0, a.createContext)((() => v)),
         b = window?.["apollo-graph-provider"] ?? (window["apollo-graph-provider"] = e => {
           let {
-            children: t
+            children: n
           } = e;
-          return (0, g.jsx)(v.Provider, {
+          return (0, m.jsx)(k.Provider, {
             value: l.n,
-            children: (0, g.jsx)(h.Provider, {
-              value: w,
-              children: t
+            children: (0, m.jsx)(g.Provider, {
+              value: p,
+              children: n
             })
           })
         }),
-        y = window?.["apollo-use-query"] ?? (window["apollo-use-query"] = (e, t) => (0, a.useContext)(h)(e, t)),
-        x = (window?.["apollo-use-mutation"] ?? (window["apollo-use-mutation"] = e => (0, a.useContext)(v)(e)), (0, a.createContext)({})),
+        y = window?.["apollo-use-query"] ?? (window["apollo-use-query"] = (e, n) => (0, a.useContext)(g)(e, n)),
+        x = (window?.["apollo-use-mutation"] ?? (window["apollo-use-mutation"] = e => (0, a.useContext)(k)(e)), (0, a.createContext)({})),
         E = () => (0, a.useContext)(x);
-      var S = n(5019);
+      var S = t(5019);
       const T = "graph-token-context",
         P = {
           token: (0, o.UT)(null),
@@ -168,53 +168,53 @@ _global.SENTRY_RELEASE = {
         _ = window?.[T] ?? (window[T] = (0, a.createContext)(P)),
         C = e => {
           let {
-            children: t,
-            token: n,
+            children: n,
+            token: t,
             tokenPing: o,
             tokenPingExpires: i
           } = e;
-          return (0, g.jsx)(_.Provider, {
+          return (0, m.jsx)(_.Provider, {
             value: {
-              token: n,
+              token: t,
               tokenPing: o,
               tokenPingExpires: i
             },
-            children: t
+            children: n
           })
         },
-        N = () => {
+        L = () => {
           const {
             token: e,
-            tokenPing: t,
-            tokenPingExpires: n
+            tokenPing: n,
+            tokenPingExpires: t
           } = (0, a.useContext)(_);
-          return [e, t, n]
+          return [e, n, t]
         },
-        $ = () => {
-          const [e] = N();
+        N = () => {
+          const [e] = L();
           return (0, i.q)(e)
         },
-        O = () => {
-          const [e, t, n] = N();
+        $ = () => {
+          const [e, n, t] = L();
           return () => (async e => {
             let {
-              url: t,
-              token: n,
+              url: n,
+              token: t,
               tokenPingExpires: o
             } = e;
-            const i = t?.();
+            const i = n?.();
             try {
               const e = o?.() ?? 0,
-                t = n?.() ?? null,
+                n = t?.() ?? null,
                 a = (e => {
-                  const t = Date.now() / 1e3;
-                  return Math.ceil(e - t)
+                  const n = Date.now() / 1e3;
+                  return Math.ceil(e - n)
                 })(e) > 0;
-              if (!1 === t) return {
-                bearerToken: t
+              if (!1 === n) return {
+                bearerToken: n
               };
-              if (a && t) return {
-                bearerToken: t
+              if (a && n) return {
+                bearerToken: n
               };
               const r = await fetch(i, {
                   credentials: "include",
@@ -227,53 +227,53 @@ _global.SENTRY_RELEASE = {
                 {
                   tokenExpiresTime: l = null
                 } = s;
-              return null !== l && o?.(l), n(s.bearerToken ?? null), s
+              return null !== l && o?.(l), t(s.bearerToken ?? null), s
             } catch (e) {
-              return n(!1), !1
+              return t(!1), !1
             }
           })({
-            url: t,
+            url: n,
             token: e,
-            tokenPingExpires: n
+            tokenPingExpires: t
           })
         };
-      var D = n(8102);
-      var A = n(6375),
-        L = n(8793),
-        j = n.n(L);
-      var H = n(7249),
-        I = n(9961);
-      const U = (0, H.ez)({
+      var O = t(8102);
+      var D = t(6375),
+        A = t(8793),
+        j = t.n(A);
+      var H = t(7249),
+        I = t(9961);
+      const M = (0, H.ez)({
           sha256: I.sc
         }),
-        q = e => {
+        U = e => {
           let {
-            children: t,
-            graphOptions: n,
+            children: n,
+            graphOptions: t,
             typePolicies: o
           } = e;
           const i = (e => {
             let {
-              graphOptions: t,
-              typePolicies: n = {}
+              graphOptions: n,
+              typePolicies: t = {}
             } = e;
-            const o = t?.env ? z(t?.env) : t?.uri,
+            const o = n?.env ? X(n?.env) : n?.uri,
               i = {
-                ...t,
+                ...n,
                 uri: o
               },
               [l] = (0, a.useState)(new r.D({
-                typePolicies: n
+                typePolicies: t
               })),
-              c = U.concat((e => {
+              c = M.concat((e => {
                 let {
-                  token: t
+                  token: n
                 } = e;
-                return (0, D.o)(((e, n) => {
+                return (0, O.o)(((e, t) => {
                   let {
                     headers: o
-                  } = n;
-                  const i = t?.() ?? null;
+                  } = t;
+                  const i = n?.() ?? null;
                   return i ? {
                     headers: {
                       ...o,
@@ -282,8 +282,8 @@ _global.SENTRY_RELEASE = {
                   } : null
                 }))
               })({
-                token: t?.token
-              }).concat((e => (0, A.$)({
+                token: n?.token
+              }).concat((e => (0, D.$)({
                 ...e,
                 fetch: j()
               }))(i)));
@@ -292,75 +292,75 @@ _global.SENTRY_RELEASE = {
               link: c
             })
           })({
-            graphOptions: n,
+            graphOptions: t,
             typePolicies: o
           });
-          return (0, g.jsx)(C, {
-            token: n?.token,
-            tokenPing: n?.tokenPing,
-            tokenPingExpires: n?.tokenPingExpires,
-            children: (0, g.jsx)(S.X, {
+          return (0, m.jsx)(C, {
+            token: t?.token,
+            tokenPing: t?.tokenPing,
+            tokenPingExpires: t?.tokenPingExpires,
+            children: (0, m.jsx)(S.X, {
               client: i,
-              children: (0, g.jsx)(b, {
-                children: t
+              children: (0, m.jsx)(b, {
+                children: n
               })
             })
           })
         },
-        M = e => {
-          const t = "__makevars__";
-          return window?.[t] || (window[t] = {}), window?.[t]?.[e] || (window[t][e] = {}), ((e, t) => (n, i) => {
-            const a = window?.[e]?.[t]?.[n] ?? (0, o.UT)(i);
-            return window[e][t][n] = a, a
-          })(t, e)
+        q = e => {
+          const n = "__makevars__";
+          return window?.[n] || (window[n] = {}), window?.[n]?.[e] || (window[n][e] = {}), ((e, n) => (t, i) => {
+            const a = window?.[e]?.[n]?.[t] ?? (0, o.UT)(i);
+            return window[e][n][t] = a, a
+          })(n, e)
         },
-        R = M("graph-with-rs-graph"),
-        B = (e, t) => {
+        R = q("graph-with-rs-graph"),
+        B = (e, n) => {
           let {
-            env: n = "prod",
+            env: t = "prod",
             typePolicies: o,
             token: i = R("token", null),
             tokenPingExpires: a = R("tokenPingExpires", null),
             tokenPing: r = R("token", null)
-          } = t;
-          return function(t) {
-            return (0, g.jsx)(q, {
+          } = n;
+          return function(n) {
+            return (0, m.jsx)(U, {
               typePolicies: o,
               graphOptions: {
-                env: n,
+                env: t,
                 useGETForQueries: !0,
                 token: i,
                 tokenPing: r,
                 tokenPingExpires: a
               },
-              children: (0, g.jsx)(e, {
-                ...t
+              children: (0, m.jsx)(e, {
+                ...n
               })
             })
           }
         },
-        z = (M("graph-hoc"), e => {
+        X = (q("graph-hoc"), e => {
           if (/^https{0,1}:\/\//.test(e)) return e;
-          let t = "";
+          let n = "";
           switch (e) {
             case "prod":
-              t = "graph";
+              n = "graph";
               break;
             case "prod-int":
-              t = "graph-int";
+              n = "graph-int";
               break;
             default:
-              t = `${e}-graph`
+              n = `${e}-graph`
           }
-          return `https://${t}.rockstargames.com?origin=${document.location.origin}`
+          return `https://${n}.rockstargames.com?origin=${document.location.origin}`
         })
     },
-    7679: (e, t, n) => {
+    7679: (e, n, t) => {
       "use strict";
-      n.d(t, {
+      t.d(n, {
         Hg: () => i
       });
-      var o = n(1796);
+      var o = t(1796);
       const i = (0, o.UT)(document.documentElement.lang),
         a = window?.env,
         r = ((0, o.UT)({
@@ -371,24 +371,24 @@ _global.SENTRY_RELEASE = {
       let l = document.getElementsByTagName("base")[0]?.getAttribute("href") ?? `${s}/`;
       l.endsWith("/") || (l = `${l}/`), (0, o.UT)(l)
     },
-    1534: (e, t, n) => {
+    1534: (e, n, t) => {
       "use strict";
-      n.d(t, {
-        A: () => w
+      t.d(n, {
+        A: () => p
       });
-      var o = n(9961),
-        i = n(7327),
-        a = n.n(i),
-        r = n(4252),
-        s = n.n(r),
-        l = n(5866),
-        c = n(5691);
+      var o = t(9961),
+        i = t(7327),
+        a = t.n(i),
+        r = t(4252),
+        s = t.n(r),
+        l = t(5866),
+        c = t(5691);
       const {
         apiHost: d
-      } = (0, l.A)(), u = (0, c.t)(document.documentElement.lang), p = {}, w = async function(e) {
+      } = (0, l.A)(), u = (0, c.t)(document.documentElement.lang), w = {}, p = async function(e) {
         let {
-          fetchOptions: t = {},
-          finalFetchOptions: n = {},
+          fetchOptions: n = {},
+          finalFetchOptions: t = {},
           query: i = null,
           pingBearer: r,
           requireBearerToken: l = !0,
@@ -396,8 +396,8 @@ _global.SENTRY_RELEASE = {
         } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
         try {
           const {
-            bearerToken: w = null
-          } = await (r?.()) ?? {}, g = {
+            bearerToken: p = null
+          } = await (r?.()) ?? {}, m = {
             "X-Requested-With": "XMLHttpRequest",
             "X-AMC": !0,
             "Content-Type": "application/json",
@@ -405,50 +405,50 @@ _global.SENTRY_RELEASE = {
               "X-lang": u
             }
           };
-          let h = `${d}/${e}`;
-          if (null === i || s().isEmpty(i) || (h += `?${new URLSearchParams(i)}`), !w && l) return null;
-          w && (g.Authorization = `Bearer ${w}`);
-          const m = {
-              headers: g
+          let g = `${d}/${e}`;
+          if (null === i || s().isEmpty(i) || (g += `?${new URLSearchParams(i)}`), !p && l) return null;
+          p && (m.Authorization = `Bearer ${p}`);
+          const h = {
+              headers: m
             },
-            f = a().all([m, t, n]),
-            k = JSON.stringify({
+            f = a().all([h, n, t]),
+            v = JSON.stringify({
               ...f,
-              url: h
+              url: g
             }),
-            v = await (0, o.sc)(k);
+            k = await (0, o.sc)(v);
           if (c) {
-            if (p[v]?.response) return p[v].response;
-            if (p[v]?.loading) return {
+            if (w[k]?.response) return w[k].response;
+            if (w[k]?.loading) return {
               error: null,
               result: null
             };
-            p[v] = {
+            w[k] = {
               loading: !0
             }
           }
-          const b = await fetch(h, f),
+          const b = await fetch(g, f),
             y = await b.json();
-          return c && (p[v] = {
+          return c && (w[k] = {
             response: y,
             loading: !1
           }), y
-        } catch (t) {
-          console.error(`ScApi fetch error ${e}:`, t)
+        } catch (n) {
+          console.error(`ScApi fetch error ${e}:`, n)
         }
       }
     },
-    5866: (e, t, n) => {
+    5866: (e, n, t) => {
       "use strict";
-      n.d(t, {
+      t.d(n, {
         A: () => s
       });
       const o = window?.env?.sc,
         i = window?.env?.marketing,
         a = e => {
           let {
-            apiHost: t,
-            authHost: n,
+            apiHost: n,
+            authHost: t,
             clientId: a,
             graphEnv: r,
             scHost: s,
@@ -457,27 +457,27 @@ _global.SENTRY_RELEASE = {
             key: d,
             marketingAuthTLD: u
           } = e;
-          const p = o?.apiHost ?? t,
-            w = o?.authHost ?? n,
-            g = o?.cdnBase ?? c,
-            h = o?.clientId ?? a,
-            m = i?.marketingAuthTLD ?? u,
+          const w = o?.apiHost ?? n,
+            p = o?.authHost ?? t,
+            m = o?.cdnBase ?? c,
+            g = o?.clientId ?? a,
+            h = i?.marketingAuthTLD ?? u,
             f = o?.scHost ?? s;
           return {
-            apiHost: `https://${p}.rockstargames.com`,
+            apiHost: `https://${w}.rockstargames.com`,
             graphEnv: o?.graphEnv ?? r,
             host: f,
             hostname: l,
-            cdnBase: g,
+            cdnBase: m,
             key: d,
-            clientId: h,
-            authHost: w,
-            login: `https://${w}.rockstargames.com/connect/authorize/${h}`,
-            silentCheck: `https://${w}.rockstargames.com/connect/cors/check/${h}`,
-            signup: `https://${w}.rockstargames.com/create/?cid=${h}`,
-            gateway: `https://${m}/auth/gateway.json`,
-            logout: `https://${m}/auth/sc-auth-logout`,
-            pingBearer: `https://${m}/auth/ping-bearer.json`
+            clientId: g,
+            authHost: p,
+            login: `https://${p}.rockstargames.com/connect/authorize/${g}`,
+            silentCheck: `https://${p}.rockstargames.com/connect/cors/check/${g}`,
+            signup: `https://${p}.rockstargames.com/create/?cid=${g}`,
+            gateway: `https://${h}/auth/gateway.json`,
+            logout: `https://${h}/auth/sc-auth-logout`,
+            pingBearer: `https://${h}/auth/ping-bearer.json`
           }
         },
         r = [a({
@@ -504,103 +504,104 @@ _global.SENTRY_RELEASE = {
         s = () => {
           const e = window?.env?.scEnv ?? null;
           if (e) {
-            const t = r.find((t => {
+            const n = r.find((n => {
               let {
-                key: n
-              } = t;
-              return n === e
+                key: t
+              } = n;
+              return t === e
             })) ?? null;
-            if (t) return t
+            if (n) return n
           }
           return r.find((e => {
             let {
-              hostname: t
+              hostname: n
             } = e;
-            return new RegExp(t).test(document.location.hostname)
+            return new RegExp(n).test(document.location.hostname)
           })) || r[0]
         }
     },
-    5691: (e, t, n) => {
+    5691: (e, n, t) => {
       "use strict";
-      n.d(t, {
+      t.d(n, {
         t: () => o
       });
       const o = e => {
-        const t = e.replace("_", "-");
-        return "zh-hans" === t ? "zh-cn" : t
+        const n = e.replace("_", "-");
+        return "zh-hans" === n ? "zh-cn" : n
       }
     },
-    6279: (e, t, n) => {
+    6279: (e, n, t) => {
       "use strict";
-      n.d(t, {
+      t.d(n, {
         A: () => l
       });
-      var o = n(714),
-        i = n.n(o);
-      const a = (0, n(3963).A)(),
+      var o = t(714),
+        i = t.n(o);
+      const a = (0, t(3963).A)(),
         r = a?.id,
         s = /Mobi/i.test(window.navigator.userAgent) ? "mobile" : "desktop",
         l = e => {
-          const t = {
+          const n = {
             ...e,
             environment: r,
             display_type: s
           };
           i().dataLayer({
-            dataLayer: t
+            dataLayer: n
           })
         }
     },
-    922: (e, t, n) => {
+    5662: (e, n, t) => {
       "use strict";
-      n.d(t, {
+      t.d(n, {
+        bn: () => p,
         Ym: () => a,
         OG: () => s,
         ZC: () => l,
         OH: () => d
       });
-      var o = n(9807),
-        i = n(7679);
+      var o = t(9807),
+        i = t(7679);
       const a = () => (0, o.qs)(i.Hg);
-      var r = n(1403);
+      var r = t(1403);
       const s = e => {
-        const [t, n] = (0, r.useState)(null), [o, i] = (0, r.useState)(null), [a, s] = (0, r.useState)({});
+        const [n, t] = (0, r.useState)(null), [o, i] = (0, r.useState)(null), [a, s] = (0, r.useState)({});
         return (0, r.useLayoutEffect)((() => {
-          let t = new Image,
+          let n = new Image,
             o = !1;
-          return t.addEventListener("load", (() => {
+          return n.addEventListener("load", (() => {
             s({
-              width: t.width,
-              height: t.height
-            }), t = null, o || n(!0)
-          })), t.addEventListener("error", (() => {
-            t = null, o || (n(!1), i(!0))
-          })), t.src = e, () => {
-            o = !0, null !== t && (t.src = "")
+              width: n.width,
+              height: n.height
+            }), n = null, o || t(!0)
+          })), n.addEventListener("error", (() => {
+            n = null, o || (t(!1), i(!0))
+          })), n.src = e, () => {
+            o = !0, null !== n && (n.src = "")
           }
-        }), [e]), [t, a]
+        }), [e]), [n, a]
       };
-      n(9779);
+      t(9779);
       const l = e => {
-        const t = (0, r.useRef)();
+        const n = (0, r.useRef)();
         return (0, r.useEffect)((() => {
-          t.current = e
-        }), [e]), t.current
+          n.current = e
+        }), [e]), n.current
       };
-      n(1534), n(4277);
+      t(1534), t(4277);
       const c = "__RS_CUSTOM_EVENTS__";
       window[c] || (window[c] = {});
       const d = () => {
-        const e = (e, t) => {
+        const e = (e, n) => {
           if (!e) throw Error("Event name must be provided to work with custom events");
-          const n = (e => `rsCustomEvent:${e}`)(e),
-            o = new CustomEvent(n, {
-              detail: t
+          const t = (e => `rsCustomEvent:${e}`)(e),
+            o = new CustomEvent(t, {
+              detail: n
             });
-          window[c][n] || (window[c][n] = {
+          window[c][t] || (window[c][t] = {
             eventQueue: [],
             subscribers: []
-          }), window[c][n].eventQueue.push(o), window[c][n].subscribers.forEach((e => {
+          }), window[c][t].eventQueue.push(o), window[c][t].subscribers.forEach((e => {
             e(o.detail)
           }))
         };
@@ -608,55 +609,95 @@ _global.SENTRY_RELEASE = {
           dispatch: e
         })), [])
       };
-      n(9269), n(6269)
+      t(9269), t(6269);
+      var u = t(4369),
+        w = t(1977);
+      const p = () => {
+        const [e, n] = (0, r.useState)(!1), {
+          deviceMemory: t
+        } = (0, u.XB)(), {
+          effectiveConnectionType: o
+        } = (0, u.M5)(), {
+          numberOfLogicalProcessors: i
+        } = (0, u.xV)(), {
+          saveData: a
+        } = (0, u.zp)(), s = (() => {
+          const [e, n] = (0, r.useState)(!1);
+          return (0, r.useEffect)((() => {
+            const e = window.matchMedia("(prefers-reduced-motion: reduce)"),
+              t = e => {
+                n(e.matches)
+              };
+            return n(e?.matches), e.addEventListener("change", t), () => {
+              e.removeEventListener("change", t)
+            }
+          }), []), e
+        })(), l = () => {
+          const r = (() => {
+            const e = e => !1 === e;
+            if (s) return !1;
+            if (w.n8 || w.lT || w.w || w.UX) return !1;
+            const n = "Safari" === w.C0,
+              r = "Firefox" === w.C0,
+              l = o && !["slow-2g", "2g", "3g", "other", "unknown", "none"].includes(o),
+              c = i && i >= 4,
+              d = t && t >= 4;
+            return !(e(!a) || e(l) || e(c) || !n && !r && e(d))
+          })();
+          r !== e && n(r)
+        };
+        return (0, r.useEffect)((() => (l(), window.addEventListener("online", l), window.addEventListener("offline", l), window.addEventListener("devicememory", l), () => {
+          window.removeEventListener("online", l), window.removeEventListener("offline", l), window.removeEventListener("devicememory", l)
+        })), [t, o, e, i, a, s]), e
+      }
     },
-    4277: (e, t, n) => {
+    4277: (e, n, t) => {
       "use strict";
-      n.d(t, {
+      t.d(n, {
         uU: () => C,
-        Ax: () => h.A,
-        S0: () => m.A,
+        Ax: () => g.A,
+        S0: () => h.A,
         pT: () => d,
         _h: () => b,
         tI: () => f.t,
-        bJ: () => g,
+        bJ: () => m,
         Ym: () => u.Ym,
         OG: () => u.OG,
         ZC: () => u.ZC,
         L$: () => x,
-        G4: () => N,
+        G4: () => L,
         JG: () => s
-      }), n(6279);
-      var o = n(6632),
-        i = n(9807);
-      n(7679);
-      var a = n(1403);
-      n(4252);
-      var r = n(313);
+      }), t(6279);
+      var o = t(6632),
+        i = t(9807);
+      t(7679);
+      var a = t(1403);
+      t(4252);
+      var r = t(313);
       const s = function(e) {
-        let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "default";
-        return n => ((e, t, n) => {
+        let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "default";
+        return t => ((e, n, t) => {
           const a = function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "default";
             const {
-              data: t
+              data: n
             } = (0, i.IT)(r.Translations, {
               variables: {
                 config: e
               }
             });
-            return t ? e => t?.translations.find((t => t.key === e))?.value ?? e : null
-          }(n);
+            return n ? e => n?.translations.find((n => n.key === e))?.value ?? e : null
+          }(t);
           return a ? (0, o.jsx)(e, {
-            ...t,
+            ...n,
             t: a
           }) : null
-        })(e, n, t)
+        })(e, t, n)
       };
       class l {
-        constructor(e, t, n) {
+        constructor(e, n, t) {
           let o = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : null;
-          this.name = e, this.friendlyName = t, this.id = n, this.alias = o
+          this.name = e, this.friendlyName = n, this.id = t, this.alias = o
         }
       }
       const c = Object.freeze({
@@ -673,51 +714,51 @@ _global.SENTRY_RELEASE = {
       });
       Object.freeze(Object.values(c));
       const d = e => e.keys().forEach(e);
-      var u = n(922);
-      const p = (0, i.hp)("@rockstargames/utils")("bodyIsScrollableReactive", {}),
-        w = "data-disallow-body-scroll",
-        g = e => {
-          const t = (0, i.qs)(p),
-            n = Object.values(t).some((e => !!e));
+      var u = t(5662);
+      const w = (0, i.hp)("@rockstargames/utils")("bodyIsScrollableReactive", {}),
+        p = "data-disallow-body-scroll",
+        m = e => {
+          const n = (0, i.qs)(w),
+            t = Object.values(n).some((e => !!e));
           return (0, a.useEffect)((() => {
-            n ? document.documentElement.setAttribute(w, "true") : document.documentElement.removeAttribute(w)
-          }), [n]), {
-            bodyShouldLock: n,
-            setBodyIsLocked: n => (e => p(e))({
-              ...t,
-              [e]: n
+            t ? document.documentElement.setAttribute(p, "true") : document.documentElement.removeAttribute(p)
+          }), [t]), {
+            bodyShouldLock: t,
+            setBodyIsLocked: t => (e => w(e))({
+              ...n,
+              [e]: t
             })
           }
         };
-      var h = n(1534),
-        m = n(5866),
-        f = n(5691);
-      const k = "rockstar-games-web";
-      let v;
+      var g = t(1534),
+        h = t(5866),
+        f = t(5691);
+      const v = "rockstar-games-web";
+      let k;
       try {
-        const e = window.localStorage.getItem(k);
-        v = null !== e ? JSON.parse(e) : {}
+        const e = window.localStorage.getItem(v);
+        k = null !== e ? JSON.parse(e) : {}
       } catch (e) {
-        v = {}
+        k = {}
       }
-      const b = (0, i.UT)(v),
+      const b = (0, i.UT)(k),
         y = e => {
           let {
-            key: t,
-            value: n
+            key: n,
+            value: t
           } = e;
-          if (null == t) throw Error("You have to specify a key and a value.");
+          if (null == n) throw Error("You have to specify a key and a value.");
           const o = {
             ...b() ?? {}
           };
-          return o[t] = n, null === n && delete o[t], window.localStorage.setItem(k, JSON.stringify(o)), b(o), o
+          return o[n] = t, null === t && delete o[n], window.localStorage.setItem(v, JSON.stringify(o)), b(o), o
         },
         x = () => ({
           lsSettings: (0, i.qs)(b),
           settingsReactive: b,
           mutateLSSettings: y
         });
-      n(9269);
+      t(9269);
       const E = {
           xxs: {
             min: 0,
@@ -750,14 +791,14 @@ _global.SENTRY_RELEASE = {
         },
         S = () => {
           const e = window.innerWidth,
-            t = window.innerHeight,
-            n = E;
-          return Object.keys(E).map((t => {
+            n = window.innerHeight,
+            t = E;
+          return Object.keys(E).map((n => {
             const {
               min: o,
               max: i
-            } = E[t], a = e >= o && e <= i, r = e >= o;
-            n[t] = {
+            } = E[n], a = e >= o && e <= i, r = e >= o;
+            t[n] = {
               activeExact: a,
               activeMin: r,
               min: o,
@@ -766,9 +807,9 @@ _global.SENTRY_RELEASE = {
           })), {
             isMobile: e < E.sm.min,
             isTablet: e < E.md.max,
-            breakpoints: n,
+            breakpoints: t,
             windowWidth: e,
-            windowHeight: t
+            windowHeight: n
           }
         },
         T = (0, a.createContext)(S()),
@@ -778,9 +819,9 @@ _global.SENTRY_RELEASE = {
         _ = (0, i.UT)(S()),
         C = e => {
           let {
-            children: t
+            children: n
           } = e;
-          const n = (0, i.qs)(_);
+          const t = (0, i.qs)(_);
           return (0, a.useEffect)((() => {
             const e = () => {
               _(S())
@@ -789,29 +830,29 @@ _global.SENTRY_RELEASE = {
               window.removeEventListener("resize", e)
             }
           }), []), (0, o.jsx)(T.Provider, {
-            value: n,
-            children: t
+            value: t,
+            children: n
           })
         },
-        N = () => (0, a.useContext)(T);
-      n(6269)
+        L = () => (0, a.useContext)(T);
+      t(6269)
     },
-    9269: (e, t, n) => {
+    9269: (e, n, t) => {
       "use strict";
-      var o = n(1403);
-      n(6632);
+      var o = t(1403);
+      t(6632);
       const i = (0, o.createContext)(),
         {
           Consumer: a
         } = i
     },
-    6269: (e, t, n) => {
+    6269: (e, n, t) => {
       "use strict";
-      var o = n(9807);
-      n(1403), n(6632), (0, o.UT)(!1)
+      var o = t(9807);
+      t(1403), t(6632), (0, o.UT)(!1)
     },
     313: e => {
-      var t = {
+      var n = {
         kind: "Document",
         definitions: [{
           kind: "OperationDefinition",
@@ -927,21 +968,21 @@ _global.SENTRY_RELEASE = {
         }
       };
 
-      function n(e, t) {
-        if ("FragmentSpread" === e.kind) t.add(e.name.value);
+      function t(e, n) {
+        if ("FragmentSpread" === e.kind) n.add(e.name.value);
         else if ("VariableDefinition" === e.kind) {
           var o = e.type;
-          "NamedType" === o.kind && t.add(o.name.value)
+          "NamedType" === o.kind && n.add(o.name.value)
         }
         e.selectionSet && e.selectionSet.selections.forEach((function(e) {
-          n(e, t)
+          t(e, n)
         })), e.variableDefinitions && e.variableDefinitions.forEach((function(e) {
-          n(e, t)
+          t(e, n)
         })), e.definitions && e.definitions.forEach((function(e) {
-          n(e, t)
+          t(e, n)
         }))
       }
-      t.loc.source = {
+      n.loc.source = {
         body: "query Translations($locale: String!, $config: String!) {\n    translations(locale: $locale, config: $config) {\n        key\n        value\n    }\n}\n",
         name: "GraphQL request",
         locationOffset: {
@@ -951,24 +992,24 @@ _global.SENTRY_RELEASE = {
       };
       var o = {};
 
-      function i(e, t) {
-        for (var n = 0; n < e.definitions.length; n++) {
-          var o = e.definitions[n];
-          if (o.name && o.name.value == t) return o
+      function i(e, n) {
+        for (var t = 0; t < e.definitions.length; t++) {
+          var o = e.definitions[t];
+          if (o.name && o.name.value == n) return o
         }
       }
-      t.definitions.forEach((function(e) {
+      n.definitions.forEach((function(e) {
         if (e.name) {
-          var t = new Set;
-          n(e, t), o[e.name.value] = t
+          var n = new Set;
+          t(e, n), o[e.name.value] = n
         }
-      })), e.exports = t, e.exports.Translations = function(e, t) {
-        var n = {
+      })), e.exports = n, e.exports.Translations = function(e, n) {
+        var t = {
           kind: e.kind,
-          definitions: [i(e, t)]
+          definitions: [i(e, n)]
         };
-        e.hasOwnProperty("loc") && (n.loc = e.loc);
-        var a = o[t] || new Set,
+        e.hasOwnProperty("loc") && (t.loc = e.loc);
+        var a = o[n] || new Set,
           r = new Set,
           s = new Set;
         for (a.forEach((function(e) {
@@ -981,11 +1022,11 @@ _global.SENTRY_RELEASE = {
             })))
           }))
         }
-        return r.forEach((function(t) {
-          var o = i(e, t);
-          o && n.definitions.push(o)
-        })), n
-      }(t, "Translations")
+        return r.forEach((function(n) {
+          var o = i(e, n);
+          o && t.definitions.push(o)
+        })), t
+      }(n, "Translations")
     }
   }
 ]);

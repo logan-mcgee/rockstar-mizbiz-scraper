@@ -71,8 +71,8 @@ _global.SENTRY_RELEASE = {
         m = r(8999),
         f = r(60285),
         k = r(22778),
-        v = r(39613),
-        b = r(41074),
+        b = r(39613),
+        v = r(41074),
         w = r(28606),
         g = r(87839),
         p = r(2024),
@@ -115,7 +115,7 @@ _global.SENTRY_RELEASE = {
             Carousel: e => (0, t.jsx)(u.A, {
               ...e
             }),
-            Cta: e => (0, t.jsx)(v.A, {
+            Cta: e => (0, t.jsx)(b.A, {
               ...e
             }),
             Discounts: e => (0, t.jsx)(F.Discounts, {
@@ -124,7 +124,7 @@ _global.SENTRY_RELEASE = {
             Donate: e => (0, t.jsx)(F.Donate, {
               ...e
             }),
-            FadeInContent: e => (0, t.jsx)(b.A, {
+            FadeInContent: e => (0, t.jsx)(v.A, {
               ...e
             }),
             FontClip: e => (0, t.jsx)(F.FontClip, {
@@ -253,7 +253,7 @@ _global.SENTRY_RELEASE = {
     74216: (e, a, r) => {
       "use strict";
       r.r(a), r.d(a, {
-        componentsForTinaParser: () => v
+        componentsForTinaParser: () => b
       });
       var s = r(20009),
         t = r(64064),
@@ -267,7 +267,7 @@ _global.SENTRY_RELEASE = {
         m = r(66713),
         f = r.n(m),
         k = r(42012);
-      const v = {
+      const b = {
         ...s,
         ...r(26750),
         ...{
@@ -346,8 +346,8 @@ _global.SENTRY_RELEASE = {
             trackBounds: f,
             setAutoNext: k
           } = e;
-          const v = (0, s.useRef)(null),
-            b = (0, s.useRef)(null),
+          const b = (0, s.useRef)(null),
+            v = (0, s.useRef)(null),
             w = (0, s.useRef)(null),
             [g, p] = (0, s.useState)(null),
             [x, j] = (0, s.useState)(!1),
@@ -358,19 +358,19 @@ _global.SENTRY_RELEASE = {
               return `${r.toString().padStart(2,"0")}:${s.toString().padStart(2,"0")}`
             };
           return (0, s.useEffect)((() => {
-            if (!b.current || !w.current) return;
+            if (!v.current || !w.current) return;
             const e = () => {
-              w.current && b.current && p(w.current.clientWidth > b.current.clientWidth)
+              w.current && v.current && p(w.current.clientWidth > v.current.clientWidth)
             };
             return window.addEventListener("resize", e), e(), () => window.removeEventListener("resize", e)
-          }), [w, b, a]), (0, s.useEffect)((() => {
-            if (!v.current || !a?.duration) return;
+          }), [w, v, a]), (0, s.useEffect)((() => {
+            if (!b.current || !a?.duration) return;
             let e = null;
-            const r = new(n())(v.current),
+            const r = new(n())(b.current),
               s = e => {
-                if (v.current) {
-                  const r = v.current.clientWidth;
-                  if (!v.current.contains(e.srcEvent.target)) return;
+                if (b.current) {
+                  const r = b.current.clientWidth;
+                  if (!b.current.contains(e.srcEvent.target)) return;
                   const s = Math.max(0, e.srcEvent.offsetX),
                     n = Number(s / r * a.duration);
                   t.currentTime = n
@@ -385,7 +385,7 @@ _global.SENTRY_RELEASE = {
             return r.on("panstart", c), r.on("panleft", s), r.on("panright", s), r.on("panend", i), r.on("tap", s), () => {
               r.off("panstart", c), r.off("panleft", s), r.off("panright", s), r.off("panend", i), r.off("tap", s)
             }
-          }), [v.current, a.duration]), (0, s.useEffect)((() => {
+          }), [b.current, a.duration]), (0, s.useEffect)((() => {
             const e = Number(t?.currentTime);
             (r || !isNaN(e) && 0 !== e) && j(!0)
           }), [r, t?.currentTime]), (0, d.jsxs)("div", {
@@ -399,7 +399,7 @@ _global.SENTRY_RELEASE = {
               className: [o.controlsCurrentBg, x ? o.controlsCurrentBgVisible : ""].join(" ")
             }), (0, d.jsx)("div", {
               className: o.controlsTrack,
-              ref: b,
+              ref: v,
               children: (0, d.jsx)("span", {
                 className: [o.controlsTrackTitle, g ? o.controlsTrackAnimating : ""].join(" "),
                 ref: w,
@@ -438,7 +438,7 @@ _global.SENTRY_RELEASE = {
                 children: h(a.current)
               }), (0, d.jsx)("div", {
                 className: o.controlsScrubTrack,
-                ref: v
+                ref: b
               }), (0, d.jsx)("span", {
                 children: h(a.duration)
               })]
@@ -499,14 +499,14 @@ _global.SENTRY_RELEASE = {
             variables: {
               id: a
             }
-          }), [n, f] = (0, s.useState)(), [k, v] = (0, s.useState)(), [b, w] = (0, s.useState)(), [g, p] = (0, s.useState)(!1), [x, j] = (0, s.useState)(!1), [h, N] = (0, s.useState)(new HTMLAudioElement), [y, A] = (0, s.useState)({
+          }), [n, f] = (0, s.useState)(), [k, b] = (0, s.useState)(), [v, w] = (0, s.useState)(), [g, p] = (0, s.useState)(!1), [x, j] = (0, s.useState)(!1), [h, N] = (0, s.useState)(new HTMLAudioElement), [y, A] = (0, s.useState)({
             current: 0,
             duration: 0
           }), [T, S] = (0, s.useState)(!0);
           return (0, s.useEffect)((() => {
             const e = "audio",
               a = a => {
-                a?.data?.rockstarAudioPlayerPlayTrackId && (v(a.data.rockstarAudioPlayerPlayTrackId), S(!1), j(!0)), x && a?.data?.attentionBlurredElsewhere && a?.data?.from !== e && j(!1)
+                a?.data?.rockstarAudioPlayerPlayTrackId && (b(a.data.rockstarAudioPlayerPlayTrackId), S(!1), j(!0)), x && a?.data?.attentionBlurredElsewhere && a?.data?.from !== e && j(!1)
               };
             return x && window.postMessage({
               attentionBlurredElsewhere: !0,
@@ -521,7 +521,7 @@ _global.SENTRY_RELEASE = {
                 })
               },
               a = () => {
-                T && n && v(n[1])
+                T && n && b(n[1])
               };
             return h.addEventListener("loadedmetadata", e), h.addEventListener("timeupdate", e), h.addEventListener("ended", a), () => {
               h.removeEventListener("loadedmetadata", e), h.removeEventListener("timeupdate", e), h.removeEventListener("ended", a)
@@ -533,40 +533,40 @@ _global.SENTRY_RELEASE = {
             })
           }), [x]), (0, s.useEffect)((() => {
             h && (x ? h.play() : h.pause(), p(!1))
-          }), [x, h, b?.id]), (0, s.useEffect)((() => {
+          }), [x, h, v?.id]), (0, s.useEffect)((() => {
             if (!k) return;
             const {
               tracks: e
             } = t.audioAlbum, a = t.audioAlbum.tracks.findIndex((e => e.id === k));
             f([e[a - 1]?.id ?? e[e.length - 1].id, e[a + 1]?.id ?? e[0].id]), w(e[a])
           }), [k]), (0, s.useEffect)((() => {
-            t && v(t.audioAlbum.tracks[0].id)
-          }), [t]), b ? (0, d.jsxs)("div", {
+            t && b(t.audioAlbum.tracks[0].id)
+          }), [t]), v ? (0, d.jsxs)("div", {
             className: [o.player, o[r], g ? o.tracksOpen : ""].join(" "),
             children: [(0, d.jsx)("audio", {
               ref: e => {
                 N(e)
               },
-              src: b.mp3_src
+              src: v.mp3_src
             }), (0, d.jsx)(m, {
               tracks: t.audioAlbum.tracks,
-              setTrackId: v,
+              setTrackId: b,
               trackId: k,
               tracksOpen: g,
               setTracksOpen: p,
               setPlaying: j,
               setAutoNext: S
             }), (0, d.jsx)(l, {
-              src: b.cover_src
+              src: v.cover_src
             }), (0, d.jsx)(u, {
-              setTrackId: v,
+              setTrackId: b,
               trackBounds: n,
               tracksOpen: g,
               setTracksOpen: p,
               playing: x,
               setPlaying: j,
               timing: y,
-              trackData: b,
+              trackData: v,
               audioRef: h,
               setAutoNext: S
             })]

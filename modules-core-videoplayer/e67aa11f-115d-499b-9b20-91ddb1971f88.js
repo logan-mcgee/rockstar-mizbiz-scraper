@@ -80,8 +80,8 @@ _global.SENTRY_RELEASE = {
             track: u
           } = (0, r.useGtmTrack)(), {
             mutateLSSettings: f
-          } = (0, s.useRockstarWebLSSettings)(), [g, p] = (0, n.useState)(null), m = (0, n.createRef)(), _ = (0, n.createRef)(), y = (0, n.createRef)(), {
-            style: b
+          } = (0, s.useRockstarWebLSSettings)(), [g, p] = (0, n.useState)(null), m = (0, n.createRef)(), b = (0, n.createRef)(), _ = (0, n.createRef)(), {
+            style: y
           } = t;
           (0, n.useEffect)((() => {
             u({
@@ -91,13 +91,13 @@ _global.SENTRY_RELEASE = {
           }), []);
           return !1 === a ? (0, i.jsxs)("div", {
             className: d.agegate,
-            style: b,
+            style: y,
             children: [t?.header, (0, i.jsx)("h2", {
               children: c("agegate_fail")
             })]
           }) : null === a ? (0, i.jsxs)("div", {
             className: d.agegate,
-            style: b,
+            style: y,
             children: [t?.header, (0, i.jsx)("div", {
               className: d.bg,
               style: t?.bgImg ? {
@@ -109,7 +109,7 @@ _global.SENTRY_RELEASE = {
             }) : "", (0, i.jsxs)("form", {
               onSubmit: async e => {
                 e.preventDefault();
-                const a = `${y.current.value}-${m.current.value.padStart(2,0)}-${_.current.value.padStart(2,0)}`,
+                const a = `${_.current.value}-${m.current.value.padStart(2,0)}-${b.current.value.padStart(2,0)}`,
                   t = o()(a, "YYYY-MM-DD", !0).isValid();
                 if (p(t), t) {
                   const e = o()().diff(a, "years") >= 17;
@@ -142,7 +142,7 @@ _global.SENTRY_RELEASE = {
                   htmlFor: "dayInput",
                   children: [c("Day"), (0, i.jsx)("input", {
                     id: "dayInput",
-                    ref: _,
+                    ref: b,
                     placeholder: c("DD"),
                     maxLength: 2
                   })]
@@ -150,7 +150,7 @@ _global.SENTRY_RELEASE = {
                   htmlFor: "yearInput",
                   children: [c("Year"), (0, i.jsx)("input", {
                     id: "yearInput",
-                    ref: y,
+                    ref: _,
                     className: d.year,
                     placeholder: c("YYYY"),
                     maxLength: 4

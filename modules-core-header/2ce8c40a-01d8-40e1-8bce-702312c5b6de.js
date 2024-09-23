@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       o = (new Error).stack;
-    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "98b55b40-0835-4603-a330-e23d77db2dbe", e._sentryDebugIdIdentifier = "sentry-dbid-98b55b40-0835-4603-a330-e23d77db2dbe")
+    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "2ce8c40a-01d8-40e1-8bce-702312c5b6de", e._sentryDebugIdIdentifier = "sentry-dbid-2ce8c40a-01d8-40e1-8bce-702312c5b6de")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -15,12 +15,12 @@ var _global = "undefined" != typeof window ? window : "undefined" != typeof glob
 _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
-  [764, 621], {
+  [621, 2], {
     6516: (e, o, a) => {
       var t = a(1403),
         n = Symbol.for("react.element"),
-        d = Symbol.for("react.fragment"),
-        r = Object.prototype.hasOwnProperty,
+        r = Symbol.for("react.fragment"),
+        d = Object.prototype.hasOwnProperty,
         l = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         s = {
           key: !0,
@@ -30,53 +30,53 @@ _global.SENTRY_RELEASE = {
         };
 
       function f(e, o, a) {
-        var t, d = {},
+        var t, r = {},
           f = null,
           i = null;
-        for (t in void 0 !== a && (f = "" + a), void 0 !== o.key && (f = "" + o.key), void 0 !== o.ref && (i = o.ref), o) r.call(o, t) && !s.hasOwnProperty(t) && (d[t] = o[t]);
+        for (t in void 0 !== a && (f = "" + a), void 0 !== o.key && (f = "" + o.key), void 0 !== o.ref && (i = o.ref), o) d.call(o, t) && !s.hasOwnProperty(t) && (r[t] = o[t]);
         if (e && e.defaultProps)
-          for (t in o = e.defaultProps) void 0 === d[t] && (d[t] = o[t]);
+          for (t in o = e.defaultProps) void 0 === r[t] && (r[t] = o[t]);
         return {
           $$typeof: n,
           type: e,
           key: f,
           ref: i,
-          props: d,
+          props: r,
           _owner: l.current
         }
       }
-      o.Fragment = d, o.jsx = f, o.jsxs = f
+      o.Fragment = r, o.jsx = f, o.jsxs = f
     },
     6632: (e, o, a) => {
       e.exports = a(6516)
     },
     3002: (e, o, a) => {
       a.r(o), a.d(o, {
-        default: () => r
+        default: () => d
       });
       var t = a(1403),
         n = a(4410),
-        d = a(6632);
-      const r = e => {
+        r = a(6632);
+      const d = e => {
         let {
           basename: o,
           children: a,
-          history: r
+          history: d
         } = e;
         const [l, s] = (0, t.useState)({
-          action: r.action,
-          location: r.location
+          action: d.action,
+          location: d.location
         });
-        return (0, t.useLayoutEffect)((() => r.listen(((e, o) => {
+        return (0, t.useLayoutEffect)((() => d.listen(((e, o) => {
           s({
             location: e,
             action: o
           })
-        }))), [r]), (0, d.jsx)(n.Router, {
+        }))), [d]), (0, r.jsx)(n.Router, {
           basename: o,
           location: l.location,
           navigationType: l.action,
-          navigator: r,
+          navigator: d,
           children: a
         })
       }

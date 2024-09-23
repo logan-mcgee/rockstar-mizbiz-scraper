@@ -26,14 +26,14 @@ _global.SENTRY_RELEASE = {
       const o = () => {
         const [e, a] = (0, t.useState)(), s = (0, n.useRockstarUser)(), {
           currentCharId: o
-        } = (0, n.useRockstarUserState)(), r = (0, d.useNavigate)(), f = (0, n.useIsUserGtaPlus)(s.data, o);
+        } = (0, n.useRockstarUserState)(), r = (0, d.useNavigate)(), l = (0, n.useIsUserGtaPlus)(s.data, o);
         return (0, t.useEffect)((() => {
           if (!s) return;
           const {
             loggedIn: e
           } = s;
-          null != e && (!1 !== e ? void 0 !== o && a(f) : a(!1))
-        }), [f, s, o]), (0, t.useEffect)((() => {
+          null != e && (!1 !== e ? void 0 !== o && a(l) : a(!1))
+        }), [l, s, o]), (0, t.useEffect)((() => {
           null != e && r(e ? "./benefits" : "./join", {
             replace: !0
           })

@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "3aedd0f9-e7cd-4aa5-8e69-01a5e45b9522", e._sentryDebugIdIdentifier = "sentry-dbid-3aedd0f9-e7cd-4aa5-8e69-01a5e45b9522")
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "7994cea3-9896-45f0-883a-5848b181d1e4", e._sentryDebugIdIdentifier = "sentry-dbid-7994cea3-9896-45f0-883a-5848b181d1e4")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -1410,10 +1410,12 @@ _global.SENTRY_RELEASE = {
           children: a,
           attributes: t = {},
           className: s = "",
-          style: o = {}
+          style: o = {},
+          id: d = ""
         } = e;
         return (0, c.jsx)("span", {
           className: (0, n.classList)(s, t?.className, "rockstargames-sites-legacya7f106a8036d74ed9282a741476c6b5a"),
+          id: d,
           style: (0, r.safeStyles)(o ?? t?.style ?? {}),
           dangerouslySetInnerHTML: {
             __html: i().unescape(a)

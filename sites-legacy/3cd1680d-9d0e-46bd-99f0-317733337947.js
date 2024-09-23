@@ -50,8 +50,8 @@ _global.SENTRY_RELEASE = {
     93665: (e, a, t) => {
       "use strict";
       t.d(a, {
-        Z: () => b,
-        h: () => p
+        Z: () => p,
+        h: () => b
       });
       var s = t(71403),
         i = t(42756),
@@ -75,8 +75,8 @@ _global.SENTRY_RELEASE = {
               top: 0
             },
             contentStyle: u = {},
-            contentClassName: p = "",
-            width: b,
+            contentClassName: b = "",
+            width: p,
             fadeIn: y = !0,
             cardIds: h,
             activeId: k,
@@ -126,7 +126,7 @@ _global.SENTRY_RELEASE = {
             x: C,
             top: 0,
             left: 0,
-            width: b,
+            width: p,
             height: m,
             border: "0px solid transparent",
             background: "transparent",
@@ -293,7 +293,7 @@ _global.SENTRY_RELEASE = {
                   children: (0, d.jsxs)(r.motion.div, {
                     className: (0, c.classList)("rockstargames-sites-legacyb6aa5ebf680af5d95d0e9c76ac36ed82", i),
                     children: [!T && te, (0, d.jsx)(r.motion.div, {
-                      className: (0, c.classList)("rockstargames-sites-legacyd901631c0b9d817396c8352c027a2a0d", p),
+                      className: (0, c.classList)("rockstargames-sites-legacyd901631c0b9d817396c8352c027a2a0d", b),
                       initial: {
                         opacity: ee
                       },
@@ -317,8 +317,8 @@ _global.SENTRY_RELEASE = {
         g = "modal-context",
         f = [null, () => null],
         u = window?.[g] ?? (window[g] = (0, s.createContext)(f)),
-        p = () => (0, s.useContext)(u),
-        b = e => {
+        b = () => (0, s.useContext)(u),
+        p = e => {
           let {
             children: a
           } = e;
@@ -368,8 +368,8 @@ _global.SENTRY_RELEASE = {
         g = t(31879),
         f = t.n(g),
         u = t(2024),
-        p = t(355),
-        b = t(40207),
+        b = t(355),
+        p = t(40207),
         y = t(70834);
       const h = {
           pillBtn: "rockstargames-sites-legacyb141beea308c3749c34ab64661bd85c1",
@@ -388,7 +388,7 @@ _global.SENTRY_RELEASE = {
           rdrUltra: "rockstargames-sites-legacya1c4a1ca44e89c5ab32ef4e4a1cc06a6",
           universalCyrillic: "rockstargames-sites-legacyebc2801def19a848a9aa6f01927d6053"
         },
-        k = p.withFadeIn((e => {
+        k = b.withFadeIn((e => {
           let {
             title: a = "",
             headerLogo: t,
@@ -399,14 +399,14 @@ _global.SENTRY_RELEASE = {
             customHeaderFont: o,
             setVideoAsDefault: d,
             large: g = !1,
-            image_on_right: p = !1,
+            image_on_right: b = !1,
             style: k = {},
             className: x = "",
             ...v
           } = e;
           const {
             track: j
-          } = (0, b.useGtmTrack)(), {
+          } = (0, p.useGtmTrack)(), {
             ref: _,
             inView: N
           } = (0, y.useInView)({
@@ -420,7 +420,7 @@ _global.SENTRY_RELEASE = {
               element_placement: v?._memoq?.title?.toLowerCase()
             }), w(!0))
           }), [N]), (0, l.jsxs)("div", {
-            className: (0, m.classList)(h.container, g ? h.large : "", p ? h.flipped : "", n ? "" : h.singleColumn, x),
+            className: (0, m.classList)(h.container, g ? h.large : "", b ? h.flipped : "", n ? "" : h.singleColumn, x),
             style: k,
             ref: _,
             children: [d && r ? (0, l.jsx)(f(), {
@@ -558,7 +558,7 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: g
-          } = (0, b.useGtmTrack)(), f = (0, m.useGetCdnSource)(r?.mobile?.image?.full_src ?? r?.mobile?.image), p = (0, m.useGetCdnSource)(r?.desktop?.image?.full_src ?? f), y = {
+          } = (0, p.useGtmTrack)(), f = (0, m.useGetCdnSource)(r?.mobile?.image?.full_src ?? r?.mobile?.image), b = (0, m.useGetCdnSource)(r?.desktop?.image?.full_src ?? f), y = {
             "--aspect-ratio-mobile": r?.mobile?.aspectRatio ?? "",
             "--aspect-ratio-desktop": r?.desktop?.aspectRatio ?? "",
             justifyContent: c ?? ""
@@ -573,7 +573,7 @@ _global.SENTRY_RELEASE = {
             "--gradient-angle": `${w(d?.angle)}deg`
           }, v = {
             mobile: f,
-            desktop: p,
+            desktop: b,
             alt: a
           };
           return (0, l.jsxs)(j.NavLink, {
@@ -669,7 +669,7 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: r
-          } = (0, b.useGtmTrack)(), {
+          } = (0, p.useGtmTrack)(), {
             ref: o,
             inView: d
           } = (0, y.useInView)({
@@ -735,18 +735,18 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: i
-          } = (0, b.useGtmTrack)(), n = (0, c.useRef)(null), [r, o] = (0, c.useState)(!1), [d, m] = (0, c.useState)(!1), [g, f] = (0, c.useState)(!1), u = e => () => {
+          } = (0, p.useGtmTrack)(), n = (0, c.useRef)(null), [r, o] = (0, c.useState)(!1), [d, m] = (0, c.useState)(!1), [g, f] = (0, c.useState)(!1), u = e => () => {
             i({
               event: "component_tab_click",
               text: a[e]?.name?.toLowerCase() ?? void 0,
               element_placement: "image gallery"
             }), t && t(e)
-          }, p = e => {
+          }, b = e => {
             e.isEnd ? o(!0) : o(!1), e.isBeginning ? m(!0) : m(!1)
           };
           return (0, c.useEffect)((() => {
             const e = () => {
-              n.current && ((n.current.wrapperEl.clientWidth || 0) > (n.current.el.clientWidth || 0) ? (f(!0), n.current.params.centeredSlides = !0, n.current.params.centeredSlidesBounds = !0) : (f(!1), n.current.params.centeredSlides = !1, n.current.params.centeredSlidesBounds = !1), p(n.current))
+              n.current && ((n.current.wrapperEl.clientWidth || 0) > (n.current.el.clientWidth || 0) ? (f(!0), n.current.params.centeredSlides = !0, n.current.params.centeredSlidesBounds = !0) : (f(!1), n.current.params.centeredSlides = !1, n.current.params.centeredSlidesBounds = !1), b(n.current))
             };
             return window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
           }), []), (0, l.jsxs)("div", {
@@ -768,12 +768,12 @@ _global.SENTRY_RELEASE = {
               className: [O.tabControl, g ? O.withScroll : ""].join(" "),
               children: (0, l.jsx)(E.RC, {
                 onBeforeInit: e => n.current = e,
-                onInit: p,
+                onInit: b,
                 direction: "horizontal",
                 grabCursor: !0,
                 slidesPerView: "auto",
-                onSlideChange: p,
-                onResize: p,
+                onSlideChange: b,
+                onResize: b,
                 className: O.pills,
                 children: a?.filter((e => {
                   let {
@@ -874,10 +874,10 @@ _global.SENTRY_RELEASE = {
           } = e;
           const [i, n] = (0, c.useState)(a.findIndex((e => e?.image?.sources === t?.image?.sources))), [r, o] = (0, c.useState)(0 === i), [d, m] = (0, c.useState)(i + 1 >= a?.length), {
             track: g
-          } = (0, b.useGtmTrack)(), f = {
+          } = (0, p.useGtmTrack)(), f = {
             ease: [.77, 0, .175, 1],
             duration: .5
-          }, p = (0, c.useCallback)((() => {
+          }, b = (0, c.useCallback)((() => {
             const e = (i + 1) % a.length;
             e !== i && i !== a.length - 1 && (n(e), o(!1)), m(e === a.length - 1), g({
               event: "modal_next",
@@ -905,7 +905,7 @@ _global.SENTRY_RELEASE = {
             })
           }), [i]), (0, c.useEffect)((() => {
             const e = e => {
-              "ArrowLeft" === e.key ? y() : "ArrowRight" === e.key ? p() : "Escape" === e.key && (g({
+              "ArrowLeft" === e.key ? y() : "ArrowRight" === e.key ? b() : "Escape" === e.key && (g({
                 event: "modal_close",
                 element_placement: "image gallery modal",
                 card_name: `${a[i]?.image?.name??"unnamed image"}`.toLowerCase(),
@@ -917,7 +917,7 @@ _global.SENTRY_RELEASE = {
             return window.addEventListener("keydown", e), () => {
               window.removeEventListener("keydown", e)
             }
-          }), [i, y, p, s]), (0, l.jsx)(T.AnimatePresence, {
+          }), [i, y, b, s]), (0, l.jsx)(T.AnimatePresence, {
             children: (0, l.jsx)(T.motion.div, {
               role: "presentation",
               className: W.overlay,
@@ -967,7 +967,7 @@ _global.SENTRY_RELEASE = {
                       "aria-controls": "legacyImageGallery-liveRegion",
                       children: [(0, l.jsx)(q, {
                         navigatePrevious: y,
-                        navigateNext: p,
+                        navigateNext: b,
                         prevDisabled: r,
                         nextDisabled: d
                       }), (0, l.jsx)("button", {
@@ -1050,7 +1050,7 @@ _global.SENTRY_RELEASE = {
           } = e;
           const [s, i] = (0, c.useState)(null), {
             track: n
-          } = (0, b.useGtmTrack)(), r = t.flat(2), {
+          } = (0, p.useGtmTrack)(), r = t.flat(2), {
             setBodyIsLocked: o
           } = (0, H.useBodyScrollable)("LegacyScreensModule"), d = e => {
             n({
@@ -1126,7 +1126,7 @@ _global.SENTRY_RELEASE = {
           } = e;
           const [s, i] = (0, c.useState)(null), {
             track: n
-          } = (0, b.useGtmTrack)(), r = t.flat(2), {
+          } = (0, p.useGtmTrack)(), r = t.flat(2), {
             setBodyIsLocked: o
           } = (0, H.useBodyScrollable)("LegacyScreensModule"), d = e => {
             n({
@@ -1328,13 +1328,13 @@ _global.SENTRY_RELEASE = {
           universalCyrillic: "rockstargames-sites-legacyf39368204eb24134b55790e846806916",
           helveticaNow: "rockstargames-sites-legacyc8b5986c219588bac8b87dbb162c3fda"
         },
-        te = p.withFadeIn((e => {
+        te = b.withFadeIn((e => {
           let {
             imageGallery: a
           } = e;
           const {
             track: t
-          } = (0, b.useGtmTrack)(), {
+          } = (0, p.useGtmTrack)(), {
             ref: s,
             inView: i
           } = (0, y.useInView)({
@@ -1355,7 +1355,7 @@ _global.SENTRY_RELEASE = {
               element_placement: `image gallery - ${f[d]?.name}`.toLowerCase()
             }), r(!0))
           }), [i]);
-          const p = f?.length > 0 && f.some((e => e?.name || e?.platform));
+          const b = f?.length > 0 && f.some((e => e?.name || e?.platform));
           return (0, l.jsx)("section", {
             className: ae.sectionWrapper,
             ref: s,
@@ -1366,7 +1366,7 @@ _global.SENTRY_RELEASE = {
                 children: [(0, l.jsx)("h2", {
                   className: [ae.heading, g].join(" "),
                   children: a?.title
-                }), p && (0, l.jsx)(z, {
+                }), b && (0, l.jsx)(z, {
                   data: f,
                   onClick: e => {
                     m(e)
@@ -1493,7 +1493,7 @@ _global.SENTRY_RELEASE = {
             className: a?.className
           })
         },
-        pe = e => {
+        be = e => {
           let {
             items: a,
             style: t = {},
@@ -1524,7 +1524,7 @@ _global.SENTRY_RELEASE = {
             }, e.key)))
           })
         },
-        be = e => {
+        pe = e => {
           let {
             children: a,
             text: t,
@@ -1554,7 +1554,7 @@ _global.SENTRY_RELEASE = {
                 children: a
               });
             default:
-              return (0, l.jsx)(pe, {
+              return (0, l.jsx)(be, {
                 items: s,
                 style: n,
                 id: r,
@@ -1592,7 +1592,7 @@ _global.SENTRY_RELEASE = {
         {
           LiteMotion: _e,
           Animations: Ne
-        } = p,
+        } = b,
         {
           variants: Ce,
           transitions: we
@@ -1816,7 +1816,7 @@ _global.SENTRY_RELEASE = {
         {
           LiteMotion: Ge,
           Animations: We
-        } = p,
+        } = b,
         {
           transitions: qe
         } = We,
@@ -1833,8 +1833,8 @@ _global.SENTRY_RELEASE = {
             type: g = null,
             context: f = null,
             textOverlayProps: u,
-            className: p,
-            children: b,
+            className: b,
+            children: p,
             theme: y = "none",
             id: h,
             pricingOptions: k,
@@ -1851,7 +1851,7 @@ _global.SENTRY_RELEASE = {
               badges: P
             } = u;
           he().set(t, "meta.prod", s);
-          const L = b?.props?.images.length > 0;
+          const L = p?.props?.images.length > 0;
           let S = (0, l.jsx)("h1", {
             children: n
           });
@@ -1872,7 +1872,7 @@ _global.SENTRY_RELEASE = {
                 animate: o,
                 variants: d.expanded,
                 transition: qe.cardOpen,
-                className: (0, m.classList)("rockstargames-sites-legacydcb84dcfd34616fb0089133acf0c4669", p),
+                className: (0, m.classList)("rockstargames-sites-legacydcb84dcfd34616fb0089133acf0c4669", b),
                 "data-type": g,
                 "data-size": i,
                 "data-product": _,
@@ -1889,7 +1889,7 @@ _global.SENTRY_RELEASE = {
                   pricingOptions: k,
                   platformOptions: j,
                   isCoverCard: v,
-                  children: b
+                  children: p
                 }), (0, l.jsxs)(Ge, {
                   ref: C,
                   className: "rockstargames-sites-legacyeaf357a8d0bae1199142949cbf24e7b9",
@@ -1967,7 +1967,7 @@ _global.SENTRY_RELEASE = {
             isProductCard: g,
             cardIds: f = null,
             theme: u = "none",
-            isCoverCard: p,
+            isCoverCard: b,
             platformOptions: y
           } = e;
           const {
@@ -1975,7 +1975,7 @@ _global.SENTRY_RELEASE = {
             formatList: k
           } = (0, Re.useIntl)(), [x, v] = (0, Ue.useSearchParams)(), j = (0, c.useRef)(null), [, _] = (0, Ke.h)(), {
             track: N
-          } = (0, b.useGtmTrack)(), [C, w] = (0, c.useState)(!1), I = () => {
+          } = (0, p.useGtmTrack)(), [C, w] = (0, c.useState)(!1), I = () => {
             w(!1), _(null), v({}), N({
               event: "trackPageview"
             })
@@ -1989,9 +1989,9 @@ _global.SENTRY_RELEASE = {
               {
                 content: m,
                 className: g,
-                contentClassName: p
+                contentClassName: b
               } = o,
-              b = "fob" === i ? "fob" : "default";
+              p = "fob" === i ? "fob" : "default";
             _({
               content: m,
               onClose: I,
@@ -1999,7 +1999,7 @@ _global.SENTRY_RELEASE = {
               width: c,
               height: l,
               className: g,
-              contentClassName: p,
+              contentClassName: b,
               fadeIn: !1,
               cardIds: f,
               theme: u,
@@ -2009,7 +2009,7 @@ _global.SENTRY_RELEASE = {
                 card_name: s?.toLowerCase(),
                 position: t
               },
-              aspectRatio: b,
+              aspectRatio: p,
               cardDimensions: {
                 size: i,
                 type: r
@@ -2053,7 +2053,7 @@ _global.SENTRY_RELEASE = {
               title: s
             }) : s
           }), [y, s]);
-          return p || "linkout" === r ? (0, l.jsx)("div", {
+          return b || "linkout" === r ? (0, l.jsx)("div", {
             ref: j,
             className: d,
             "data-size": i,
@@ -2109,8 +2109,8 @@ _global.SENTRY_RELEASE = {
             id: g,
             position: f,
             sectionTitle: u,
-            expandedType: p,
-            context: b,
+            expandedType: b,
+            context: p,
             children: y,
             expandedCardContents: h,
             textOverlayProps: k = {
@@ -2137,17 +2137,17 @@ _global.SENTRY_RELEASE = {
               HTMLElement: ie.A,
               ImageWithBadge: ne.A,
               Carousel: re.A,
-              GroupOfItems: be
+              GroupOfItems: pe
             })), [L]),
             T = (0, c.useMemo)((() => (0, l.jsx)(Fe, {
-              type: p,
+              type: b,
               components: S,
               payload: a,
               prod: t,
               images: s,
               size: i,
               title: n,
-              context: b,
+              context: p,
               textOverlayProps: k,
               initial: r,
               animate: o,
@@ -2161,7 +2161,7 @@ _global.SENTRY_RELEASE = {
               platformOptions: C,
               isProductCard: P,
               children: h
-            })), [p, s, t, i, n, k, h, r, o, d, S, a, P]),
+            })), [b, s, t, i, n, k, h, r, o, d, S, a, P]),
             E = [Qe.card, I ? Qe.coverCardWrapper : ""].join(" ");
           return (0, l.jsx)(Je, {
             id: g,
@@ -2169,7 +2169,7 @@ _global.SENTRY_RELEASE = {
             sectionTitle: u,
             title: n,
             size: i,
-            expandedType: p,
+            expandedType: b,
             images: s,
             deckProps: x,
             modalProps: {
@@ -2197,7 +2197,7 @@ _global.SENTRY_RELEASE = {
         {
           LiteMotion: ta,
           Animations: sa
-        } = p,
+        } = b,
         {
           getVariant: ia,
           variants: na,
@@ -2282,7 +2282,7 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: m
-          } = (0, b.useGtmTrack)(), g = (0, c.useCallback)((() => {
+          } = (0, p.useGtmTrack)(), g = (0, c.useCallback)((() => {
             m({
               event: "card_click",
               link_url: t,
@@ -2308,7 +2308,7 @@ _global.SENTRY_RELEASE = {
         },
         {
           variants: ga
-        } = p.Animations,
+        } = b.Animations,
         fa = e => {
           let {
             id: a,
@@ -2329,8 +2329,8 @@ _global.SENTRY_RELEASE = {
             to: g = null,
             tina: f = {},
             position: u = 0,
-            sectionTitle: p = "",
-            theme: b,
+            sectionTitle: b = "",
+            theme: p,
             pricingOptions: y,
             cardIds: h,
             platformOptions: k = null
@@ -2366,8 +2366,8 @@ _global.SENTRY_RELEASE = {
               expandedView: !0
             }),
             position: u,
-            sectionTitle: p,
-            theme: b,
+            sectionTitle: b,
+            theme: p,
             cardIds: h,
             pricingOptions: y,
             platformOptions: k,
@@ -2376,7 +2376,7 @@ _global.SENTRY_RELEASE = {
             children: (0, l.jsx)(da, {
               expandedType: n,
               to: g,
-              sectionTitle: p,
+              sectionTitle: b,
               id: a,
               cardTitle: t,
               position: u,
@@ -2402,10 +2402,10 @@ _global.SENTRY_RELEASE = {
       t(66325), t(28606), t(55430), t(7607);
       const {
         variants: ua
-      } = p.Animations;
+      } = b.Animations;
       t(58407), t(72752);
-      var pa = t(94566),
-        ba = t(22778);
+      var ba = t(94566),
+        pa = t(22778);
       const ya = {
           pillBtn: "rockstargames-sites-legacya50fca350d7dbc4340ad3c68f1da1960",
           selected: "rockstargames-sites-legacye6487295119cf4eafefadf26f76ed1f8",
@@ -2416,7 +2416,7 @@ _global.SENTRY_RELEASE = {
         },
         {
           variants: ha
-        } = p.Animations,
+        } = b.Animations,
         ka = e => {
           let {
             id: a,
@@ -2430,7 +2430,7 @@ _global.SENTRY_RELEASE = {
             ctaURL: g,
             size: f = "md",
             expandedType: u = "short",
-            textOverlayProps: p = {
+            textOverlayProps: b = {
               hasTextOverlay: !1,
               tag: "",
               collapsedHasTag: !1,
@@ -2438,7 +2438,7 @@ _global.SENTRY_RELEASE = {
               description: "",
               collapsedHasDescription: !1
             },
-            images: b = [],
+            images: p = [],
             deckProps: y = {},
             to: h = null,
             tina: k = {},
@@ -2462,20 +2462,20 @@ _global.SENTRY_RELEASE = {
             sectionTitle: i || n,
             size: N,
             expandedType: u,
-            images: b,
+            images: p,
             deckProps: y,
             payload: {
               content: o,
               meta: {}
             },
             variants: ha.plainCard,
-            textOverlayProps: p,
+            textOverlayProps: b,
             modalProps: {
               className: ya.customModal,
               contentClassName: ya.customModalContent
             },
             expandedCardContents: (0, l.jsx)(la, {
-              images: b,
+              images: p,
               expandedView: !0
             }),
             theme: v,
@@ -2499,10 +2499,10 @@ _global.SENTRY_RELEASE = {
                   children: n
                 }), P && (0, l.jsx)("p", {
                   children: P
-                }), (0, l.jsx)(ba.A, {
+                }), (0, l.jsx)(pa.A, {
                   target: "newtab" === u ? "_blank" : "_self",
                   to: g || void 0,
-                  children: d || j.formatMessage(pa.card.card_learn_more)
+                  children: d || j.formatMessage(ba.card.card_learn_more)
                 })]
               })
             })
@@ -2541,7 +2541,7 @@ _global.SENTRY_RELEASE = {
         {
           transitions: _a,
           variants: Na
-        } = p.Animations;
+        } = b.Animations;
       var Ca = t(63672),
         wa = t(60207);
       var Ia = t(20009);
@@ -2572,8 +2572,8 @@ _global.SENTRY_RELEASE = {
             tina: g = {},
             payload: f,
             position: u = 0,
-            sectionTitle: p = "",
-            cardIds: b
+            sectionTitle: b = "",
+            cardIds: p
           } = e;
           const y = (0, m.useTinaPayload)(),
             h = f ?? y,
@@ -2596,7 +2596,7 @@ _global.SENTRY_RELEASE = {
           }), [d?.size, i]), (0, l.jsx)(Ze, {
             id: a,
             position: u,
-            sectionTitle: p,
+            sectionTitle: b,
             payload: {
               content: s,
               meta: {},
@@ -2630,7 +2630,7 @@ _global.SENTRY_RELEASE = {
                 thumbs: _a.cardOpen
               }
             }),
-            cardIds: b,
+            cardIds: p,
             children: (0, l.jsx)("div", {
               className: ja.content,
               children: (0, l.jsx)(De, {
@@ -2699,10 +2699,10 @@ _global.SENTRY_RELEASE = {
           customAspectRatio: f = "3/1",
           titleBadge: u = null
         } = e;
-        const p = (0, c.useRef)(null),
-          b = he().map(a, "id"),
+        const b = (0, c.useRef)(null),
+          p = he().map(a, "id"),
           y = Sa({
-            ids: b
+            ids: p
           }),
           [h, k] = (0, c.useState)(o),
           [x] = (0, Ue.useSearchParams)(),
@@ -2710,15 +2710,15 @@ _global.SENTRY_RELEASE = {
         (0, c.useEffect)((() => {
           if ("fob" === t) {
             const e = x.get("section");
-            if (e && "games" === e && !v && (j(!0), p.current)) {
+            if (e && "games" === e && !v && (j(!0), b.current)) {
               const e = 100;
-              window.scrollTo(0, p.current.offsetTop - e)
+              window.scrollTo(0, b.current.offsetTop - e)
             }
           }
         }), []), (0, c.useEffect)((() => {
-          if (!p.current) return;
+          if (!b.current) return;
           const e = () => {
-            const e = o || window.getComputedStyle(p.current).getPropertyValue("--slides-per-view");
+            const e = o || window.getComputedStyle(b.current).getPropertyValue("--slides-per-view");
             k(e)
           };
           return window.addEventListener("resize", e), e(), () => {
@@ -2749,7 +2749,7 @@ _global.SENTRY_RELEASE = {
                   position: e,
                   sectionTitle: i,
                   theme: d,
-                  cardIds: b.filter((e => e !== a))
+                  cardIds: p.filter((e => e !== a))
                 }
               }, r)), e += 1
             }
@@ -2759,7 +2759,7 @@ _global.SENTRY_RELEASE = {
         return (0, l.jsxs)("div", {
           className: "rockstargames-sites-legacycaf46db6464a84ad4990aed75ef74ff1",
           "data-theme": d,
-          ref: p,
+          ref: b,
           children: [(0, l.jsx)(Pa, {
             description: n,
             size: t,
@@ -2816,15 +2816,15 @@ _global.SENTRY_RELEASE = {
           } = e;
           const [d] = (0, j.useSearchParams)(), {
             key: g
-          } = (0, j.useLocation)(), f = (0, H.useLocale)(), u = r?.sources?.[f] ?? r?.sources?.en_us, p = u?.mobile ?? u?.desktop, {
+          } = (0, j.useLocation)(), f = (0, H.useLocale)(), u = r?.sources?.[f] ?? r?.sources?.en_us, b = u?.mobile ?? u?.desktop, {
             track: h
-          } = (0, b.useGtmTrack)(), {
+          } = (0, p.useGtmTrack)(), {
             ref: k,
             inView: x,
             entry: v
           } = (0, y.useInView)({
             threshold: .6
-          }), [_, N] = (0, c.useState)(!1), C = n?.buttons, w = [], I = (0, m.useGetCdnSource)(p ?? null), P = (0, m.useGetCdnSource)(i?.backgroundImage?.mobile), L = (0, m.useGetCdnSource)(i?.backgroundImage?.desktop ?? P), S = (0, m.useGetCdnSource)(i?.backgroundImageMask?.mobile), E = (0, m.useGetCdnSource)(i?.backgroundImageMask?.desktop ?? S), B = !(!E && !S), A = i?.backgroundImage?._memoq?.backgroundAttachment || "", M = i?.backgroundImage?._memoq?.backgroundClip || "", O = i?.backgroundImage?._memoq?.backgroundColor || "", z = i?.backgroundImage?._memoq?.backgroundOrigin || "", $ = i?.backgroundImage?._memoq?.backgroundPosition || "", V = i?.backgroundImage?._memoq?.backgroundRepeat || "", D = i?.backgroundImage?._memoq?.backgroundSize || "", G = {
+          }), [_, N] = (0, c.useState)(!1), C = n?.buttons, w = [], I = (0, m.useGetCdnSource)(b ?? null), P = (0, m.useGetCdnSource)(i?.backgroundImage?.mobile), L = (0, m.useGetCdnSource)(i?.backgroundImage?.desktop ?? P), S = (0, m.useGetCdnSource)(i?.backgroundImageMask?.mobile), E = (0, m.useGetCdnSource)(i?.backgroundImageMask?.desktop ?? S), B = !(!E && !S), A = i?.backgroundImage?._memoq?.backgroundAttachment || "", M = i?.backgroundImage?._memoq?.backgroundClip || "", O = i?.backgroundImage?._memoq?.backgroundColor || "", z = i?.backgroundImage?._memoq?.backgroundOrigin || "", $ = i?.backgroundImage?._memoq?.backgroundPosition || "", V = i?.backgroundImage?._memoq?.backgroundRepeat || "", D = i?.backgroundImage?._memoq?.backgroundSize || "", G = {
             "--background-image-desktop": `url(${L})`,
             "--background-image-mobile": `url(${P})`,
             "--image-mask-desktop": `url(${E})`,
@@ -2993,8 +2993,8 @@ _global.SENTRY_RELEASE = {
             highlightCollection: m,
             imageGallery: f,
             relatedLinks: u,
-            titleSlug: p,
-            backgroundFields: b,
+            titleSlug: b,
+            backgroundFields: p,
             tinaModuleId: y,
             videoProps: h
           } = e;
@@ -3007,10 +3007,10 @@ _global.SENTRY_RELEASE = {
             },
             _ = h?.id || "",
             N = (0, H.useLocale)();
-          return x["--playlist-background-color"] = h?.["--playlist-background-color"], x.backgroundColor = b?.style["--legacy-custom-background"] || b?.style["--legacy-background-color"] || "#161616", (0, l.jsx)(d, {
+          return x["--playlist-background-color"] = h?.["--playlist-background-color"], x.backgroundColor = p?.style["--legacy-custom-background"] || p?.style["--legacy-background-color"] || "#161616", (0, l.jsx)(d, {
             children: (0, l.jsxs)("div", {
               className: [za.legacyPageTemplate, k].join(" "),
-              "data-brand": p,
+              "data-brand": b,
               style: x,
               children: [t && (0, l.jsx)(n(), {
                 animated: t.animated,
@@ -3068,9 +3068,9 @@ _global.SENTRY_RELEASE = {
                 })
               }), (0, l.jsx)("div", {
                 className: za.maxWidthContainer,
-                children: p && (0, l.jsx)(s.A, {
+                children: b && (0, l.jsx)(s.A, {
                   id: "rating",
-                  titleSlug: p
+                  titleSlug: b
                 })
               })]
             })

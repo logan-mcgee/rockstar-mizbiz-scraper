@@ -32,7 +32,7 @@ _global.SENTRY_RELEASE = {
         pingBearer: s
       } = (0, o.S0)();
 
-      function c() {
+      function i() {
         const e = document.createElement("div");
         e.id = "global-nav-root", document.body.prepend(e);
         const d = (0, t.H)(e),
@@ -45,7 +45,7 @@ _global.SENTRY_RELEASE = {
           });
         d.render((0, r.jsx)(n, {}))
       }
-      "loading" === document.readyState ? document.addEventListener("DOMContentLoaded", c) : c()
+      "loading" === document.readyState ? document.addEventListener("DOMContentLoaded", i) : i()
     }
   }
 ]);
