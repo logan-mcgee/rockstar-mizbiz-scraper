@@ -20,17 +20,17 @@ _global.SENTRY_RELEASE = {
       s.r(a), s.d(a, {
         default: () => r
       });
-      var t = s(14410);
-      var d = s(46632);
+      var d = s(14410);
+      var t = s(46632);
       const r = () => {
-        const [e] = (0, t.useSearchParams)(), a = e.get("src") ?? null;
+        const [e] = (0, d.useSearchParams)(), a = e.get("src") ?? null;
         if (!a) return null;
         const {
           hostname: s
         } = new URL(a);
-        return ["media.rockstargames.com", "www.rockstargames.com"].includes(s) ? (0, d.jsx)("div", {
+        return ["media.rockstargames.com", "www.rockstargames.com"].includes(s) ? (0, t.jsx)("div", {
           className: "rockstargames-sites-rockstargamesd66031000744eafe5244f0f181e114d4",
-          children: (0, d.jsx)("div", {
+          children: (0, t.jsx)("div", {
             className: "rockstargames-sites-rockstargamesdc6ce3af69e4264cd2a5522445cef045",
             style: {
               background: `url(${a}) no-repeat center/contain`

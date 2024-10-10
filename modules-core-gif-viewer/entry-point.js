@@ -93,51 +93,51 @@ _global.SENTRY_RELEASE = {
           },
           f = {};
 
-        function l(e) {
+        function d(e) {
           var r = f[e];
           if (void 0 !== r) return r.exports;
           var t = f[e] = {
             exports: {}
           };
-          return s[e](t, t.exports, l), t.exports
+          return s[e](t, t.exports, d), t.exports
         }
-        return l.m = s, l.c = f, l.y = r, l.d = (e, r) => {
-          for (var t in r) l.o(r, t) && !l.o(e, t) && Object.defineProperty(e, t, {
+        return d.m = s, d.c = f, d.y = r, d.d = (e, r) => {
+          for (var t in r) d.o(r, t) && !d.o(e, t) && Object.defineProperty(e, t, {
             enumerable: !0,
             get: r[t]
           })
-        }, l.f = {}, l.e = e => Promise.all(Object.keys(l.f).reduce(((r, t) => (l.f[t](e, r), r)), [])), l.u = e => "js/" + {
-          162: "59b0051c36784230a36e4f68cafdf93d",
-          179: "bbde57f3b6b7355950776a3983ad8933",
-          380: "ffdacb345b2956249e78ff2f5d72c01e",
+        }, d.f = {}, d.e = e => Promise.all(Object.keys(d.f).reduce(((r, t) => (d.f[t](e, r), r)), [])), d.u = e => "js/" + {
+          162: "4154d368255fa599c0f32b5dfeebb79e",
+          179: "a576c886588e1629a615ba1136da6aa4",
+          380: "76f54afd6ad92f0714794dc9897a325f",
           403: "f8992979be13f39b77e9aaec3b0b21b3",
           407: "8e8fe8e5272feb667c05f4e781e7018a",
-          748: "04550cb5910e680e8b4053f671ee998a",
-          949: "d106f50239dfb8afa341eff13953e1c3"
-        } [e] + ".js", l.miniCssF = e => "css/" + {
+          748: "69f3521028ffd01e8efede9c8b231b34",
+          949: "148323995a0a0dd442fe76b584d23d8a"
+        } [e] + ".js", d.miniCssF = e => "css/" + {
           162: "5754518f8676a553fd5fd46915d3a889",
           179: "fe210ed3f04fe64376cb80e4b64a13b3",
           949: "a2c14791497f4da32703f3acc0251cfc"
-        } [e] + ".css", l.g = function() {
+        } [e] + ".css", d.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
             return this || new Function("return this")()
           } catch (e) {
             if ("object" == typeof window) return window
           }
-        }(), l.o = (e, r) => Object.prototype.hasOwnProperty.call(e, r), e = {}, n = "@rockstargames/modules-core-gif-viewer:", l.l = (r, t, a, o) => {
+        }(), d.o = (e, r) => Object.prototype.hasOwnProperty.call(e, r), e = {}, n = "@rockstargames/modules-core-gif-viewer:", d.l = (r, t, a, o) => {
           if (e[r]) e[r].push(t);
           else {
             var i, s;
             if (void 0 !== a)
-              for (var f = document.getElementsByTagName("script"), d = 0; d < f.length; d++) {
-                var u = f[d];
+              for (var f = document.getElementsByTagName("script"), l = 0; l < f.length; l++) {
+                var u = f[l];
                 if (u.getAttribute("src") == r || u.getAttribute("data-webpack") == n + a) {
                   i = u;
                   break
                 }
               }
-            i || (s = !0, (i = document.createElement("script")).charset = "utf-8", i.timeout = 120, l.nc && i.setAttribute("nonce", l.nc), i.setAttribute("data-webpack", n + a), i.src = r), e[r] = [t];
+            i || (s = !0, (i = document.createElement("script")).charset = "utf-8", i.timeout = 120, d.nc && i.setAttribute("nonce", d.nc), i.setAttribute("data-webpack", n + a), i.src = r), e[r] = [t];
             var c = (t, a) => {
                 i.onerror = i.onload = null, clearTimeout(p);
                 var n = e[r];
@@ -149,7 +149,7 @@ _global.SENTRY_RELEASE = {
               }), 12e4);
             i.onerror = c.bind(null, i.onerror), i.onload = c.bind(null, i.onload), s && document.head.appendChild(i)
           }
-        }, l.r = e => {
+        }, d.r = e => {
           "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
             value: "Module"
           }), Object.defineProperty(e, "__esModule", {
@@ -162,49 +162,49 @@ _global.SENTRY_RELEASE = {
           140: ["default", "./properties", 466],
           407: ["default", "./index", 24],
           809: ["default", "./ui", 466]
-        }, l.f.remotes = (e, r) => {
-          l.o(o, e) && o[e].forEach((e => {
-            var t = l.R;
+        }, d.f.remotes = (e, r) => {
+          d.o(o, e) && o[e].forEach((e => {
+            var t = d.R;
             t || (t = []);
             var a = i[e];
             if (!(t.indexOf(a) >= 0)) {
               if (t.push(a), a.p) return r.push(a.p);
               var n = r => {
-                  r || (r = new Error("Container missing")), "string" == typeof r.message && (r.message += '\nwhile loading "' + a[1] + '" from ' + a[2]), l.m[e] = () => {
+                  r || (r = new Error("Container missing")), "string" == typeof r.message && (r.message += '\nwhile loading "' + a[1] + '" from ' + a[2]), d.m[e] = () => {
                     throw r
                   }, a.p = 0
                 },
                 o = (e, t, o, i, s, f) => {
                   try {
-                    var l = e(t, o);
-                    if (!l || !l.then) return s(l, i, f);
-                    var d = l.then((e => s(e, i)), n);
-                    if (!f) return d;
-                    r.push(a.p = d)
+                    var d = e(t, o);
+                    if (!d || !d.then) return s(d, i, f);
+                    var l = d.then((e => s(e, i)), n);
+                    if (!f) return l;
+                    r.push(a.p = l)
                   } catch (e) {
                     n(e)
                   }
                 },
                 s = (e, r, n) => o(r.get, a[1], t, 0, f, n),
                 f = r => {
-                  a.p = 1, l.m[e] = e => {
+                  a.p = 1, d.m[e] = e => {
                     e.exports = r()
                   }
                 };
-              o(l, a[2], 0, 0, ((e, r, t) => e ? o(l.I, a[0], 0, e, s, t) : n()), 1)
+              o(d, a[2], 0, 0, ((e, r, t) => e ? o(d.I, a[0], 0, e, s, t) : n()), 1)
             }
           }))
         }, (() => {
-          l.S = {};
+          d.S = {};
           var e = {},
             r = {};
-          l.I = (t, a) => {
+          d.I = (t, a) => {
             a || (a = []);
             var n = r[t];
             if (n || (n = r[t] = {}), !(a.indexOf(n) >= 0)) {
               if (a.push(n), e[t]) return e[t];
-              l.o(l.S, t) || (l.S[t] = {});
-              var o = l.S[t],
+              d.o(d.S, t) || (d.S[t] = {});
+              var o = d.S[t],
                 i = "@rockstargames/modules-core-gif-viewer",
                 s = (e, r, t, a) => {
                   var n = o[e] = o[e] || {},
@@ -221,31 +221,31 @@ _global.SENTRY_RELEASE = {
                     var r
                   };
                   try {
-                    var n = l(e);
+                    var n = d(e);
                     if (!n) return;
-                    var o = e => e && e.init && e.init(l.S[t], a);
-                    if (n.then) return d.push(n.then(o, r));
+                    var o = e => e && e.init && e.init(d.S[t], a);
+                    if (n.then) return l.push(n.then(o, r));
                     var i = o(n);
-                    if (i && i.then) return d.push(i.catch(r))
+                    if (i && i.then) return l.push(i.catch(r))
                   } catch (e) {
                     r(e)
                   }
                 },
-                d = [];
-              return "default" === t && (s("react-router-dom", "6.17.0", (() => Promise.all([l.e(748), l.e(403)]).then((() => () => l(748))))), s("react", "18.2.0", (() => l.e(380).then((() => () => l(380))))), f(24), f(466)), d.length ? e[t] = Promise.all(d).then((() => e[t] = 1)) : e[t] = 1
+                l = [];
+              return "default" === t && (s("react-router-dom", "6.17.0", (() => Promise.all([d.e(748), d.e(403)]).then((() => () => d(748))))), s("react", "18.2.0", (() => d.e(380).then((() => () => d(380))))), f(24), f(466)), l.length ? e[t] = Promise.all(l).then((() => e[t] = 1)) : e[t] = 1
             }
           }
         })(), (() => {
           var e;
-          l.g.importScripts && (e = l.g.location + "");
-          var r = l.g.document;
+          d.g.importScripts && (e = d.g.location + "");
+          var r = d.g.document;
           if (!e && r && (r.currentScript && (e = r.currentScript.src), !e)) {
             var t = r.getElementsByTagName("script");
             if (t.length)
               for (var a = t.length - 1; a > -1 && (!e || !/^http(s?):/.test(e));) e = t[a--].src
           }
           if (!e) throw new Error("Automatic publicPath is not supported in this browser");
-          e = e.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/"), l.p = e
+          e = e.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/"), d.p = e
         })(), (() => {
           var e = e => {
               var r = e => e.split(".").map((e => +e == e ? +e : e)),
@@ -260,23 +260,23 @@ _global.SENTRY_RELEASE = {
                   o = n < 0;
                 o && (n = -n - 1);
                 for (var i = 0, s = 1, f = !0;; s++, i++) {
-                  var l, d, u = s < t.length ? (typeof t[s])[0] : "";
-                  if (i >= a.length || "o" == (d = (typeof(l = a[i]))[0])) return !f || ("u" == u ? s > n && !o : "" == u != o);
-                  if ("u" == d) {
+                  var d, l, u = s < t.length ? (typeof t[s])[0] : "";
+                  if (i >= a.length || "o" == (l = (typeof(d = a[i]))[0])) return !f || ("u" == u ? s > n && !o : "" == u != o);
+                  if ("u" == l) {
                     if (!f || "u" != u) return !1
                   } else if (f)
-                    if (u == d)
+                    if (u == l)
                       if (s <= n) {
-                        if (l != t[s]) return !1
+                        if (d != t[s]) return !1
                       } else {
-                        if (o ? l > t[s] : l < t[s]) return !1;
-                        l != t[s] && (f = !1)
+                        if (o ? d > t[s] : d < t[s]) return !1;
+                        d != t[s] && (f = !1)
                       }
                   else if ("s" != u && "n" != u) {
                     if (o || s <= n) return !1;
                     f = !1, s--
                   } else {
-                    if (s <= n || d < u != o) return !1;
+                    if (s <= n || l < u != o) return !1;
                     f = !1
                   } else "s" != u && "n" != u && (f = !1, s--)
                 }
@@ -307,35 +307,35 @@ _global.SENTRY_RELEASE = {
               })(t, a) ? t : a), 0)) && o[a]
             },
             a = (e => function(r, t, a, n) {
-              var o = l.I(r);
-              return o && o.then ? o.then(e.bind(e, r, l.S[r], t, a, n)) : e(r, l.S[r], t, a, n)
+              var o = d.I(r);
+              return o && o.then ? o.then(e.bind(e, r, d.S[r], t, a, n)) : e(r, d.S[r], t, a, n)
             })(((e, r, a, n, o) => {
-              var i = r && l.o(r, a) && t(r, a, n);
+              var i = r && d.o(r, a) && t(r, a, n);
               return i ? (e => (e.loaded = 1, e.get()))(i) : o()
             })),
             n = {},
             o = {
-              784: () => a("default", "react", [1, 18, 2, 0], (() => l.e(380).then((() => () => l(380))))),
-              410: () => a("default", "react-router-dom", [1, 6, 11, 2], (() => l.e(748).then((() => () => l(748)))))
+              784: () => a("default", "react", [1, 18, 2, 0], (() => d.e(380).then((() => () => d(380))))),
+              410: () => a("default", "react-router-dom", [1, 6, 11, 2], (() => d.e(748).then((() => () => d(748)))))
             },
             i = {
               162: [410],
               403: [784]
             },
             s = {};
-          l.f.consumes = (e, r) => {
-            l.o(i, e) && i[e].forEach((e => {
-              if (l.o(n, e)) return r.push(n[e]);
+          d.f.consumes = (e, r) => {
+            d.o(i, e) && i[e].forEach((e => {
+              if (d.o(n, e)) return r.push(n[e]);
               if (!s[e]) {
                 var t = r => {
-                  n[e] = 0, l.m[e] = t => {
-                    delete l.c[e], t.exports = r()
+                  n[e] = 0, d.m[e] = t => {
+                    delete d.c[e], t.exports = r()
                   }
                 };
                 s[e] = !0;
                 var a = r => {
-                  delete n[e], l.m[e] = t => {
-                    throw delete l.c[e], r
+                  delete n[e], d.m[e] = t => {
+                    throw delete d.c[e], r
                   }
                 };
                 try {
@@ -352,14 +352,14 @@ _global.SENTRY_RELEASE = {
             var e = {
               737: 0
             };
-            l.f.miniCss = (r, t) => {
+            d.f.miniCss = (r, t) => {
               e[r] ? t.push(e[r]) : 0 !== e[r] && {
                 162: 1,
                 179: 1,
                 949: 1
               } [r] && t.push(e[r] = (e => new Promise(((r, t) => {
-                var a = l.miniCssF(e),
-                  n = l.p + a;
+                var a = d.miniCssF(e),
+                  n = d.p + a;
                 if (((e, r) => {
                     for (var t = document.getElementsByTagName("link"), a = 0; a < t.length; a++) {
                       var n = (i = t[a]).getAttribute("data-href") || i.getAttribute("href");
@@ -394,18 +394,18 @@ _global.SENTRY_RELEASE = {
           var e = {
             737: 0
           };
-          l.f.j = (r, t) => {
-            var a = l.o(e, r) ? e[r] : void 0;
+          d.f.j = (r, t) => {
+            var a = d.o(e, r) ? e[r] : void 0;
             if (0 !== a)
               if (a) t.push(a[2]);
               else if (/^40[37]$/.test(r)) e[r] = 0;
             else {
               var n = new Promise(((t, n) => a = e[r] = [t, n]));
               t.push(a[2] = n);
-              var o = l.p + l.u(r),
+              var o = d.p + d.u(r),
                 i = new Error;
-              l.l(o, (t => {
-                if (l.o(e, r) && (0 !== (a = e[r]) && (e[r] = void 0), a)) {
+              d.l(o, (t => {
+                if (d.o(e, r) && (0 !== (a = e[r]) && (e[r] = void 0), a)) {
                   var n = t && ("load" === t.type ? "missing" : t.type),
                     o = t && t.target && t.target.src;
                   i.message = "Loading chunk " + r + " failed.\n(" + n + ": " + o + ")", i.name = "ChunkLoadError", i.type = n, i.request = o, a[1](i)
@@ -419,14 +419,14 @@ _global.SENTRY_RELEASE = {
                 s = t[2],
                 f = 0;
               if (o.some((r => 0 !== e[r]))) {
-                for (a in i) l.o(i, a) && (l.m[a] = i[a]);
-                s && s(l)
+                for (a in i) d.o(i, a) && (d.m[a] = i[a]);
+                s && s(d)
               }
-              for (r && r(t); f < o.length; f++) n = o[f], l.o(e, n) && e[n] && e[n][0](), e[n] = 0
+              for (r && r(t); f < o.length; f++) n = o[f], d.o(e, n) && e[n] && e[n][0](), e[n] = 0
             },
             t = self.webpackChunk_rockstargames_modules_core_gif_viewer = self.webpackChunk_rockstargames_modules_core_gif_viewer || [];
           t.forEach(r.bind(null, 0)), t.push = r.bind(null, t.push.bind(t))
-        })(), l(160), l(464)
+        })(), d(160), d(464)
       })())
     }
   }

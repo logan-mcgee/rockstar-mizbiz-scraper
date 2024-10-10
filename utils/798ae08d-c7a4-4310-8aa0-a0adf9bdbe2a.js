@@ -48,7 +48,7 @@ _global.SENTRY_RELEASE = {
         }(e))
       }
 
-      function f(e, r) {
+      function c(e, r) {
         try {
           return r in e
         } catch (e) {
@@ -56,23 +56,23 @@ _global.SENTRY_RELEASE = {
         }
       }
 
-      function u(e, t, c) {
-        (c = c || {}).arrayMerge = c.arrayMerge || a, c.isMergeableObject = c.isMergeableObject || r, c.cloneUnlessOtherwiseSpecified = n;
-        var l = Array.isArray(t);
-        return l === Array.isArray(e) ? l ? c.arrayMerge(e, t, c) : function(e, r, t) {
+      function u(e, t, l) {
+        (l = l || {}).arrayMerge = l.arrayMerge || a, l.isMergeableObject = l.isMergeableObject || r, l.cloneUnlessOtherwiseSpecified = n;
+        var f = Array.isArray(t);
+        return f === Array.isArray(e) ? f ? l.arrayMerge(e, t, l) : function(e, r, t) {
           var a = {};
           return t.isMergeableObject(e) && o(e).forEach((function(r) {
             a[r] = n(e[r], t)
           })), o(r).forEach((function(o) {
             (function(e, r) {
-              return f(e, r) && !(Object.hasOwnProperty.call(e, r) && Object.propertyIsEnumerable.call(e, r))
-            })(e, o) || (f(e, o) && t.isMergeableObject(r[o]) ? a[o] = function(e, r) {
+              return c(e, r) && !(Object.hasOwnProperty.call(e, r) && Object.propertyIsEnumerable.call(e, r))
+            })(e, o) || (c(e, o) && t.isMergeableObject(r[o]) ? a[o] = function(e, r) {
               if (!r.customMerge) return u;
               var t = r.customMerge(e);
               return "function" == typeof t ? t : u
             }(o, t)(e[o], r[o], t) : a[o] = n(r[o], t))
           })), a
-        }(e, t, c) : n(t, c)
+        }(e, t, l) : n(t, l)
       }
       u.all = function(e, r) {
         if (!Array.isArray(e)) throw new Error("first argument should be an array");
@@ -80,8 +80,8 @@ _global.SENTRY_RELEASE = {
           return u(e, t, r)
         }), {})
       };
-      var c = u;
-      e.exports = c
+      var l = u;
+      e.exports = l
     }
   }
 ]);

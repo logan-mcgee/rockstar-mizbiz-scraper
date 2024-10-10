@@ -35,16 +35,16 @@ _global.SENTRY_RELEASE = {
         let {
           scope: a,
           revertOnUpdate: o
-        } = d, [u, c] = (0, t.useState)(!1);
+        } = d, [u, b] = (0, t.useState)(!1);
         e && "function" != typeof e && console.warn("First parameter must be a function or config object");
-        const b = i.context((() => {}), a),
-          y = () => b.revert(),
+        const c = i.context((() => {}), a),
+          y = () => c.revert(),
           p = n && n.length && !o;
         return f((() => {
-          if (e && b.add(e, a), !p || !u) return y
-        }), n), p && f((() => (c(!0), y)), s), {
-          context: b,
-          contextSafe: e => b.add(null, e)
+          if (e && c.add(e, a), !p || !u) return y
+        }), n), p && f((() => (b(!0), y)), s), {
+          context: c,
+          contextSafe: e => c.add(null, e)
         }
       };
       u.register = e => {

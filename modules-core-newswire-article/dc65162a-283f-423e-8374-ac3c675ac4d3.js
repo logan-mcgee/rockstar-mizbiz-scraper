@@ -61,7 +61,7 @@ _global.SENTRY_RELEASE = {
       function y(e, t) {
         return e.scrollHeight - 1 <= t
       }
-      var m = function(e) {
+      var b = function(e) {
         function t(e) {
           ! function(e, t) {
             if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
@@ -115,24 +115,24 @@ _global.SENTRY_RELEASE = {
               u = this._parent,
               c = this._child,
               p = (0, d.innerWidth)(u),
-              m = (0, d.innerHeight)(u);
-            if (m <= 0 || isNaN(m)) console.warn("Can not process element without height. Make sure the element is displayed and has a static height.");
+              b = (0, d.innerHeight)(u);
+            if (b <= 0 || isNaN(b)) console.warn("Can not process element without height. Make sure the element is displayed and has a static height.");
             else if (p <= 0 || isNaN(p)) console.warn("Can not process element without width. Make sure the element is displayed and has a static width.");
             else {
-              var b = (0, f.default)();
-              this.pid = b;
+              var m = (0, f.default)();
+              this.pid = m;
               var _ = function() {
-                  return b !== e.pid
+                  return m !== e.pid
                 },
                 g = "multi" === o ? function() {
-                  return y(c, m)
+                  return y(c, b)
                 } : function() {
                   return h(c, p)
                 },
                 v = "multi" === o ? function() {
                   return h(c, p)
                 } : function() {
-                  return y(c, m)
+                  return y(c, b)
                 },
                 w = void 0,
                 O = n,
@@ -158,7 +158,7 @@ _global.SENTRY_RELEASE = {
                   w = parseInt((O + T) / 2, 10), e.setState({
                     fontSize: w
                   }, (function() {
-                    return b !== e.pid ? t(!0) : (v() ? O = w + 1 : T = w - 1, t())
+                    return m !== e.pid ? t(!0) : (v() ? O = w + 1 : T = w - 1, t())
                   }))
                 }), t))
               }, function(t) {
@@ -212,7 +212,7 @@ _global.SENTRY_RELEASE = {
           }
         }]), t
       }(i.default.Component);
-      m.propTypes = {
+      b.propTypes = {
         children: a.default.node,
         text: a.default.string,
         min: a.default.number,
@@ -221,7 +221,7 @@ _global.SENTRY_RELEASE = {
         forceSingleModeWidth: a.default.bool,
         throttle: a.default.number,
         onReady: a.default.func
-      }, m.defaultProps = {
+      }, b.defaultProps = {
         min: 1,
         max: 100,
         mode: "multi",
@@ -229,7 +229,7 @@ _global.SENTRY_RELEASE = {
         throttle: 50,
         autoResize: !0,
         onReady: function() {}
-      }, t.default = m
+      }, t.default = b
     },
     64544: (e, t, n) => {
       "use strict";

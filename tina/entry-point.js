@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "8fab2702-237b-41b2-973e-ffc6543239aa", e._sentryDebugIdIdentifier = "sentry-dbid-8fab2702-237b-41b2-973e-ffc6543239aa")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "01c3a4c7-52a7-4c5f-9dc2-1904143c9fda", e._sentryDebugIdIdentifier = "sentry-dbid-01c3a4c7-52a7-4c5f-9dc2-1904143c9fda")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -47,7 +47,7 @@ _global.SENTRY_RELEASE = {
     }],
     execute: function() {
       e((() => {
-        var e, i, s, f, d = {
+        var e, i, s, d, l = {
             6539: (e, t, r) => {
               (0, r(3403).w)(1)
             },
@@ -80,7 +80,7 @@ _global.SENTRY_RELEASE = {
                   "./helpers/uploads": () => Promise.all([r.e(403), r.e(756), r.e(235)]).then((() => () => r(8235))),
                   "./index": () => Promise.all([r.e(403), r.e(139), r.e(756), r.e(736), r.e(252), r.e(369)]).then((() => () => r(5369))),
                   "./properties": () => Promise.all([r.e(403), r.e(139), r.e(756), r.e(736)]).then((() => () => r(1736))),
-                  "./tinaBlockTemplates": () => r.e(72).then((() => () => r(3072))),
+                  "./tinaBlockTemplates": () => Promise.all([r.e(403), r.e(139), r.e(756), r.e(736), r.e(977)]).then((() => () => r(6977))),
                   "./ui": () => Promise.all([r.e(403), r.e(139)]).then((() => () => r(8139)))
                 },
                 n = (e, t) => (r.R = t, t = r.o(a, e) ? a[e]() : Promise.resolve().then((() => {
@@ -116,19 +116,19 @@ _global.SENTRY_RELEASE = {
               e.exports = o
             }
           },
-          l = {};
+          f = {};
 
         function c(e) {
-          var t = l[e];
+          var t = f[e];
           if (void 0 !== t) return t.exports;
-          var r = l[e] = {
+          var r = f[e] = {
             id: e,
             loaded: !1,
             exports: {}
           };
-          return d[e].call(r.exports, r, r.exports, c), r.loaded = !0, r.exports
+          return l[e].call(r.exports, r, r.exports, c), r.loaded = !0, r.exports
         }
-        return c.m = d, c.c = l, c.y = t, c.n = e => {
+        return c.m = l, c.c = f, c.y = t, c.n = e => {
           var t = e && e.__esModule ? () => e.default : () => e;
           return c.d(t, {
             a: t
@@ -140,26 +140,24 @@ _global.SENTRY_RELEASE = {
           })
         }, c.f = {}, c.e = e => Promise.all(Object.keys(c.f).reduce(((t, r) => (c.f[r](e, t), t)), [])), c.u = e => "js/" + {
           11: "e1204967c51340107c1f3fd40be2abec",
-          72: "18f78983913049d5dac6c3c99b8fea43",
-          105: "5c030cc898c4496bc30d4a3b626f687d",
-          139: "34cb07685e0bd819edcacba20fa3d581",
-          144: "cbe7e52e3538073be015a046c1545a54",
-          235: "c9bca61f24246b8dc73c9c48c8e59473",
+          105: "0c27940ed053455fa092de5626b48b62",
+          139: "8f2c244cb1c66d0bf10a326e1e2302d3",
+          144: "b51dfba2276cbb2b1fa28c7939b748e8",
+          235: "eefda0e40e314dce9af0e1bdc9e8de37",
           252: "ffac20c4e7454c998a083e84279c1293",
-          283: "658f36d2571f51a2f2e7077fcca1da30",
-          285: "d1916321903657bc94867272d148fce5",
-          300: "2e1f6fb58d06498a6d60ea1e39320761",
-          369: "133d7d4b8e2bafbf9f66e487241cf5c0",
-          380: "217db884983f427d544e8fe63acb114a",
+          283: "a43a91ac8949d8415968beaf3425951d",
+          285: "937c7062fe252df25d414c2e2814ec0a",
+          369: "9471c6a5ddf2611e29b6ff2e3fb64159",
+          380: "ab7a607749a5383ee16f31e06b6ed6cc",
           403: "39b96c90de9392d6ace91be969262eac",
-          429: "70f1942861e4010cbb5ee99378f9b202",
-          445: "9652789db102dd52b871448b8373e480",
-          646: "1d63e7c386d20cebfd651da8bcc7638d",
-          736: "68bb7edc3dfa48ab5ef0fd49c32171d7",
+          429: "368825a6058eca85af6c6a3c3151836f",
+          445: "f436ae8206f76d5f0eb69547c61be702",
+          646: "3e8988352ee7703a12bd911621e97b39",
+          736: "d10b3679c05d3123d72a59dce39d0bea",
           756: "ad45ccd2174744fb7166ceb7a53f2041",
-          763: "8a0c4ac0d511ced9e1f61877ae4dbee3",
-          891: "261f3f32315df49f6b726cf6145030c1",
-          919: "a13a5645c08d3b7dd2b90144311daf3c"
+          763: "5a2d251713a606d8ba8529927cbf0aa0",
+          891: "f57b2770199ee9b86f9bf432fffe6313",
+          977: "6c2e09c4d4960349f585ce5cb8ef48cc"
         } [e] + ".js", c.miniCssF = e => "css/22964693c61c3167369e822eef4d3510.css", c.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
@@ -172,10 +170,10 @@ _global.SENTRY_RELEASE = {
           else {
             var o, s;
             if (void 0 !== a)
-              for (var f = document.getElementsByTagName("script"), d = 0; d < f.length; d++) {
-                var l = f[d];
-                if (l.getAttribute("src") == t || l.getAttribute("data-webpack") == i + a) {
-                  o = l;
+              for (var d = document.getElementsByTagName("script"), l = 0; l < d.length; l++) {
+                var f = d[l];
+                if (f.getAttribute("src") == t || f.getAttribute("data-webpack") == i + a) {
+                  o = f;
                   break
                 }
               }
@@ -198,13 +196,12 @@ _global.SENTRY_RELEASE = {
             value: !0
           })
         }, c.nmd = e => (e.paths = [], e.children || (e.children = []), e), s = {
-          72: [5140],
           369: [207],
-          736: [396, 8407],
-          756: [2756]
-        }, f = {
+          736: [8407],
+          756: [2756],
+          977: [5140]
+        }, d = {
           207: ["default", "./index", 404],
-          396: ["default", "./hooks", 2969],
           2756: ["default", "./index", 2969],
           5140: ["default", "./properties", 9466],
           8407: ["default", "./index", 1024]
@@ -212,7 +209,7 @@ _global.SENTRY_RELEASE = {
           c.o(s, e) && s[e].forEach((e => {
             var r = c.R;
             r || (r = []);
-            var a = f[e];
+            var a = d[e];
             if (!(r.indexOf(a) >= 0)) {
               if (r.push(a), a.p) return t.push(a.p);
               var n = t => {
@@ -220,13 +217,13 @@ _global.SENTRY_RELEASE = {
                     throw t
                   }, a.p = 0
                 },
-                o = (e, r, o, i, s, f) => {
+                o = (e, r, o, i, s, d) => {
                   try {
-                    var d = e(r, o);
-                    if (!d || !d.then) return s(d, i, f);
-                    var l = d.then((e => s(e, i)), n);
-                    if (!f) return l;
-                    t.push(a.p = l)
+                    var l = e(r, o);
+                    if (!l || !l.then) return s(l, i, d);
+                    var f = l.then((e => s(e, i)), n);
+                    if (!d) return f;
+                    t.push(a.p = f)
                   } catch (e) {
                     n(e)
                   }
@@ -261,7 +258,7 @@ _global.SENTRY_RELEASE = {
                     eager: !!a
                   })
                 },
-                f = e => {
+                d = e => {
                   var t = e => {
                     return t = "Initialization of sharing external failed: " + e, void("undefined" != typeof console && console.warn && console.warn(t));
                     var t
@@ -270,15 +267,15 @@ _global.SENTRY_RELEASE = {
                     var n = c(e);
                     if (!n) return;
                     var o = e => e && e.init && e.init(c.S[r], a);
-                    if (n.then) return d.push(n.then(o, t));
+                    if (n.then) return l.push(n.then(o, t));
                     var i = o(n);
-                    if (i && i.then) return d.push(i.catch(t))
+                    if (i && i.then) return l.push(i.catch(t))
                   } catch (e) {
                     t(e)
                   }
                 },
-                d = [];
-              return "default" === r && (s("flat", "5.0.2", (() => c.e(445).then((() => () => c(5445))))), s("lodash", "4.17.21", (() => c.e(429).then((() => () => c(9429))))), s("re-resizable", "6.9.11", (() => Promise.all([c.e(285), c.e(403), c.e(11)]).then((() => () => c(2285))))), s("react-dom", "18.2.0", (() => Promise.all([c.e(283), c.e(403)]).then((() => () => c(5283))))), s("react-intersection-observer", "9.10.3", (() => Promise.all([c.e(403), c.e(763)]).then((() => () => c(9763))))), s("react-intersection-observer", "9.10.3", (() => Promise.all([c.e(403), c.e(300)]).then((() => () => c(300))))), s("react", "18.2.0", (() => c.e(380).then((() => () => c(3380))))), s("uuid", "9.0.1", (() => c.e(646).then((() => () => c(4646))))), f(2969), f(1024), f(404), f(9466)), d.length ? e[r] = Promise.all(d).then((() => e[r] = 1)) : e[r] = 1
+                l = [];
+              return "default" === r && (s("flat", "5.0.2", (() => c.e(445).then((() => () => c(5445))))), s("lodash", "4.17.21", (() => c.e(429).then((() => () => c(9429))))), s("re-resizable", "6.9.11", (() => Promise.all([c.e(285), c.e(403), c.e(11)]).then((() => () => c(2285))))), s("react-dom", "18.2.0", (() => Promise.all([c.e(283), c.e(403)]).then((() => () => c(5283))))), s("react-intersection-observer", "9.10.3", (() => Promise.all([c.e(403), c.e(763)]).then((() => () => c(9763))))), s("react", "18.2.0", (() => c.e(380).then((() => () => c(3380))))), s("uuid", "9.0.1", (() => c.e(646).then((() => () => c(4646))))), d(2969), d(1024), d(404), d(9466)), l.length ? e[r] = Promise.all(l).then((() => e[r] = 1)) : e[r] = 1
             }
           }
         })(), (() => {
@@ -305,26 +302,26 @@ _global.SENTRY_RELEASE = {
                 var n = r[0],
                   o = n < 0;
                 o && (n = -n - 1);
-                for (var i = 0, s = 1, f = !0;; s++, i++) {
-                  var d, l, c = s < r.length ? (typeof r[s])[0] : "";
-                  if (i >= a.length || "o" == (l = (typeof(d = a[i]))[0])) return !f || ("u" == c ? s > n && !o : "" == c != o);
-                  if ("u" == l) {
-                    if (!f || "u" != c) return !1
-                  } else if (f)
-                    if (c == l)
+                for (var i = 0, s = 1, d = !0;; s++, i++) {
+                  var l, f, c = s < r.length ? (typeof r[s])[0] : "";
+                  if (i >= a.length || "o" == (f = (typeof(l = a[i]))[0])) return !d || ("u" == c ? s > n && !o : "" == c != o);
+                  if ("u" == f) {
+                    if (!d || "u" != c) return !1
+                  } else if (d)
+                    if (c == f)
                       if (s <= n) {
-                        if (d != r[s]) return !1
+                        if (l != r[s]) return !1
                       } else {
-                        if (o ? d > r[s] : d < r[s]) return !1;
-                        d != r[s] && (f = !1)
+                        if (o ? l > r[s] : l < r[s]) return !1;
+                        l != r[s] && (d = !1)
                       }
                   else if ("s" != c && "n" != c) {
                     if (o || s <= n) return !1;
-                    f = !1, s--
+                    d = !1, s--
                   } else {
-                    if (s <= n || l < c != o) return !1;
-                    f = !1
-                  } else "s" != c && "n" != c && (f = !1, s--)
+                    if (s <= n || f < c != o) return !1;
+                    d = !1
+                  } else "s" != c && "n" != c && (d = !1, s--)
                 }
               }
               var u = [],
@@ -367,14 +364,13 @@ _global.SENTRY_RELEASE = {
               7475: () => a("default", "react-intersection-observer", [1, 9, 10, 3], (() => c.e(144).then((() => () => c(9763))))),
               3004: () => a("default", "uuid", [1, 9, 0, 0], (() => c.e(646).then((() => () => c(4646))))),
               3112: () => a("default", "flat", [1, 5, 0, 2], (() => c.e(445).then((() => () => c(5445))))),
-              9948: () => a("default", "react-intersection-observer", [1, 9, 10, 3], (() => c.e(919).then((() => () => c(300))))),
               1011: () => a("default", "react-dom", [1, 18, 2, 0], (() => c.e(283).then((() => () => c(5283)))))
             },
             i = {
               11: [1011],
               139: [5154, 7475],
               252: [4252],
-              369: [3112, 9948],
+              369: [3112],
               403: [1403],
               736: [3004]
             },
@@ -432,8 +428,8 @@ _global.SENTRY_RELEASE = {
                     else {
                       var i = r && ("load" === r.type ? "missing" : r.type),
                         s = r && r.target && r.target.href || t,
-                        f = new Error("Loading CSS chunk " + e + " failed.\n(" + s + ")");
-                      f.code = "CSS_CHUNK_LOAD_FAILED", f.type = i, f.request = s, o.parentNode && o.parentNode.removeChild(o), n(f)
+                        d = new Error("Loading CSS chunk " + e + " failed.\n(" + s + ")");
+                      d.code = "CSS_CHUNK_LOAD_FAILED", d.type = i, d.request = s, o.parentNode && o.parentNode.removeChild(o), n(d)
                     }
                   }, o.href = t, document.head.appendChild(o)
                 })(e, n, 0, t, r)
@@ -471,12 +467,12 @@ _global.SENTRY_RELEASE = {
               var a, n, o = r[0],
                 i = r[1],
                 s = r[2],
-                f = 0;
+                d = 0;
               if (o.some((t => 0 !== e[t]))) {
                 for (a in i) c.o(i, a) && (c.m[a] = i[a]);
                 s && s(c)
               }
-              for (t && t(r); f < o.length; f++) n = o[f], c.o(e, n) && e[n] && e[n][0](), e[n] = 0
+              for (t && t(r); d < o.length; d++) n = o[d], c.o(e, n) && e[n] && e[n][0](), e[n] = 0
             },
             r = self.webpackChunk_rockstargames_tina = self.webpackChunk_rockstargames_tina || [];
           r.forEach(t.bind(null, 0)), r.push = t.bind(null, r.push.bind(r))

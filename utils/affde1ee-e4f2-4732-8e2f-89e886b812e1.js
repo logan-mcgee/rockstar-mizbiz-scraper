@@ -20,8 +20,8 @@ _global.SENTRY_RELEASE = {
       t.r(n), t.d(n, {
         useHardwareConcurrency: () => v,
         useMemoryStatus: () => g,
-        useNetworkStatus: () => l,
-        useSaveData: () => d
+        useNetworkStatus: () => s,
+        useSaveData: () => l
       });
       var r = t(1403);
 
@@ -56,7 +56,7 @@ _global.SENTRY_RELEASE = {
         }
         return e
       }
-      var u, f, c, s, l = function(e) {
+      var u, c, f, d, s = function(e) {
           var n, t = {
               unsupported: u = !("undefined" != typeof navigator && "connection" in navigator && "effectiveType" in navigator.connection),
               effectiveConnectionType: u ? e : navigator.connection.effectiveType
@@ -86,12 +86,12 @@ _global.SENTRY_RELEASE = {
               throw new TypeError("Invalid attempt to destructure non-iterable instance")
             }(),
             a = o[0],
-            f = o[1];
+            c = o[1];
           return (0, r.useEffect)((function() {
             if (!u) {
               var e = navigator.connection,
                 n = function() {
-                  f({
+                  c({
                     effectiveConnectionType: e.effectiveType
                   })
                 };
@@ -101,22 +101,22 @@ _global.SENTRY_RELEASE = {
                 }
             }
           }), []), i({}, a, {
-            setNetworkStatus: f
+            setNetworkStatus: c
           })
         },
-        d = function() {
+        l = function() {
           return {
-            unsupported: f = !("undefined" != typeof navigator && "connection" in navigator && "saveData" in navigator.connection),
-            saveData: f ? arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null : !0 === navigator.connection.saveData
+            unsupported: c = !("undefined" != typeof navigator && "connection" in navigator && "saveData" in navigator.connection),
+            saveData: c ? arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null : !0 === navigator.connection.saveData
           }
         };
-      if (c = !("undefined" != typeof navigator && "deviceMemory" in navigator)) s = {
-        unsupported: c
+      if (f = !("undefined" != typeof navigator && "deviceMemory" in navigator)) d = {
+        unsupported: f
       };
       else {
         var p = "memory" in performance ? performance.memory : null;
-        s = {
-          unsupported: c,
+        d = {
+          unsupported: f,
           deviceMemory: navigator.deviceMemory,
           totalJSHeapSize: p ? p.totalJSHeapSize : null,
           usedJSHeapSize: p ? p.usedJSHeapSize : null,
@@ -124,7 +124,7 @@ _global.SENTRY_RELEASE = {
         }
       }
       var y, g = function(e) {
-        return c && e ? i({}, s, {}, e) : i({}, s)
+        return f && e ? i({}, d, {}, e) : i({}, d)
       };
       y = "undefined" != typeof navigator && "hardwareConcurrency" in navigator ? {
         unsupported: !1,

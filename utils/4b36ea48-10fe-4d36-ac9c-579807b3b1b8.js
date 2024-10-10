@@ -20,27 +20,27 @@ _global.SENTRY_RELEASE = {
       var o = n(1403),
         a = Symbol.for("react.element"),
         r = (Symbol.for("react.fragment"), Object.prototype.hasOwnProperty),
-        s = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        i = {
+        d = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        s = {
           key: !0,
           ref: !0,
           __self: !0,
           __source: !0
         };
       t.jsx = function(e, t, n) {
-        var o, d = {},
+        var o, i = {},
           l = null,
           f = null;
-        for (o in void 0 !== n && (l = "" + n), void 0 !== t.key && (l = "" + t.key), void 0 !== t.ref && (f = t.ref), t) r.call(t, o) && !i.hasOwnProperty(o) && (d[o] = t[o]);
+        for (o in void 0 !== n && (l = "" + n), void 0 !== t.key && (l = "" + t.key), void 0 !== t.ref && (f = t.ref), t) r.call(t, o) && !s.hasOwnProperty(o) && (i[o] = t[o]);
         if (e && e.defaultProps)
-          for (o in t = e.defaultProps) void 0 === d[o] && (d[o] = t[o]);
+          for (o in t = e.defaultProps) void 0 === i[o] && (i[o] = t[o]);
         return {
           $$typeof: a,
           type: e,
           key: l,
           ref: f,
-          props: d,
-          _owner: s.current
+          props: i,
+          _owner: d.current
         }
       }
     },
@@ -57,18 +57,18 @@ _global.SENTRY_RELEASE = {
       var o = n(1482),
         a = n.n(o),
         r = n(1359),
-        s = n(1403),
-        i = n(9779),
-        d = n(6632);
+        d = n(1403),
+        s = n(9779),
+        i = n(6632);
       const l = e => t => ((e, t) => {
           const {
             pathname: n
-          } = (0, i.useLocation)();
-          return (0, s.useEffect)((() => {
+          } = (0, s.useLocation)();
+          return (0, d.useEffect)((() => {
             (0, r.A)({
               event: "trackPageview"
             })
-          }), [n]), (0, d.jsx)(e, {
+          }), [n]), (0, i.jsx)(e, {
             ...t
           })
         })(e, t),
@@ -99,7 +99,7 @@ _global.SENTRY_RELEASE = {
           },
           cookieIdentifier: "prod"
         }],
-        s = (() => {
+        d = (() => {
           let e;
           const {
             location: t
@@ -118,13 +118,13 @@ _global.SENTRY_RELEASE = {
             currentSite: e
           }
         })(),
-        i = s?.id,
-        d = /Mobi/i.test(window.navigator.userAgent) ? "mobile" : "desktop",
+        s = d?.id,
+        i = /Mobi/i.test(window.navigator.userAgent) ? "mobile" : "desktop",
         l = e => {
           const t = {
             ...e,
-            environment: i,
-            display_type: d
+            environment: s,
+            display_type: i
           };
           a().dataLayer({
             dataLayer: t

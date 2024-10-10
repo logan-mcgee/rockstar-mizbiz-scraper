@@ -32,8 +32,8 @@ _global.SENTRY_RELEASE = {
         useEventListener: () => v,
         useFetch: () => y,
         useHover: () => h,
-        useImageOnLoad: () => p,
-        useIntersectionObserver: () => b,
+        useImageOnLoad: () => b,
+        useIntersectionObserver: () => p,
         useInterval: () => m,
         useIsClient: () => k,
         useIsFirstRender: () => S,
@@ -304,7 +304,7 @@ _global.SENTRY_RELEASE = {
           const [t, n] = (0, o.useState)(!1);
           return v("mouseenter", (() => n(!0)), e), v("mouseleave", (() => n(!1)), e), t
         },
-        p = function() {
+        b = function() {
           const [e, t] = (0, o.useState)(!1);
           return {
             handleImageOnLoad: () => {
@@ -323,7 +323,7 @@ _global.SENTRY_RELEASE = {
             }
           }
         },
-        b = function(e, t) {
+        p = function(e, t) {
           let {
             threshold: n = 0,
             root: r = null,

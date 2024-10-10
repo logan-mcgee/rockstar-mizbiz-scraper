@@ -18,10 +18,10 @@ _global.SENTRY_RELEASE = {
   [300, 919], {
     300: (e, t, i) => {
       i.r(t), i.d(t, {
-        InView: () => u,
+        InView: () => b,
         defaultFallbackInView: () => h,
         observe: () => c,
-        useInView: () => b
+        useInView: () => u
       });
       var n = i(71403),
         r = Object.defineProperty,
@@ -92,7 +92,7 @@ _global.SENTRY_RELEASE = {
             c.splice(c.indexOf(t), 1), 0 === c.length && (h.delete(e), s.unobserve(e)), 0 === h.size && (s.disconnect(), o.delete(r))
           }
       }
-      var u = class extends n.Component {
+      var b = class extends n.Component {
         constructor(e) {
           super(e), s(this, "node", null), s(this, "_unobserveCb", null), s(this, "handleNode", (e => {
             this.node && (this.unobserve(), e || this.props.triggerOnce || this.props.skip || this.setState({
@@ -168,17 +168,17 @@ _global.SENTRY_RELEASE = {
             trackVisibility: d,
             delay: h,
             initialInView: c,
-            fallbackInView: u,
-            ...b
+            fallbackInView: b,
+            ...u
           } = this.props;
           return n.createElement(t || "div", {
             ref: this.handleNode,
-            ...b
+            ...u
           }, e)
         }
       };
 
-      function b({
+      function u({
         threshold: e,
         delay: t,
         trackVisibility: i,
@@ -190,15 +190,15 @@ _global.SENTRY_RELEASE = {
         fallbackInView: d,
         onChange: h
       } = {}) {
-        var u;
-        const [b, f] = n.useState(null), p = n.useRef(), [g, y] = n.useState({
+        var b;
+        const [u, f] = n.useState(null), p = n.useRef(), [g, y] = n.useState({
           inView: !!l,
           entry: void 0
         });
         p.current = h, n.useEffect((() => {
-          if (a || !b) return;
+          if (a || !u) return;
           let n;
-          return n = c(b, ((e, t) => {
+          return n = c(u, ((e, t) => {
             y({
               inView: e,
               entry: t
@@ -212,10 +212,10 @@ _global.SENTRY_RELEASE = {
           }, d), () => {
             n && n()
           }
-        }), [Array.isArray(e) ? e.toString() : e, b, s, r, o, a, i, d, t]);
-        const v = null == (u = g.entry) ? void 0 : u.target,
+        }), [Array.isArray(e) ? e.toString() : e, u, s, r, o, a, i, d, t]);
+        const v = null == (b = g.entry) ? void 0 : b.target,
           w = n.useRef();
-        b || !v || o || a || w.current === v || (w.current = v, y({
+        u || !v || o || a || w.current === v || (w.current = v, y({
           inView: !!l,
           entry: void 0
         }));

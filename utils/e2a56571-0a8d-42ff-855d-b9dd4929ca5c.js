@@ -1,8 +1,8 @@
 ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "e2a56571-0a8d-42ff-855d-b9dd4929ca5c", e._sentryDebugIdIdentifier = "sentry-dbid-e2a56571-0a8d-42ff-855d-b9dd4929ca5c")
+      a = (new Error).stack;
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "e2a56571-0a8d-42ff-855d-b9dd4929ca5c", e._sentryDebugIdIdentifier = "sentry-dbid-e2a56571-0a8d-42ff-855d-b9dd4929ca5c")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -16,26 +16,26 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_utils = self.webpackChunk_rockstargames_utils || []).push([
   [961], {
-    9961: (e, t, a) => {
-      a.r(t), a.d(t, {
-        sha1: () => d,
+    9961: (e, a, d) => {
+      d.r(a), d.d(a, {
+        sha1: () => n,
         sha256: () => o,
         sha384: () => s,
         sha512: () => l
       });
-      const n = e => async function(t) {
+      const t = e => async function(a) {
         let {
-          outputFormat: a = "hex"
+          outputFormat: d = "hex"
         } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-        "string" == typeof t && (t = (new globalThis.TextEncoder).encode(t));
-        const n = await globalThis.crypto.subtle.digest(e, t);
-        return "hex" === a ? (e => {
-          const t = new DataView(e);
-          let a = "";
-          for (let e = 0; e < t.byteLength; e += 4) a += t.getUint32(e).toString(16).padStart(8, "0");
-          return a
-        })(n) : n
-      }, d = n("SHA-1"), o = n("SHA-256"), s = n("SHA-384"), l = n("SHA-512")
+        "string" == typeof a && (a = (new globalThis.TextEncoder).encode(a));
+        const t = await globalThis.crypto.subtle.digest(e, a);
+        return "hex" === d ? (e => {
+          const a = new DataView(e);
+          let d = "";
+          for (let e = 0; e < a.byteLength; e += 4) d += a.getUint32(e).toString(16).padStart(8, "0");
+          return d
+        })(t) : t
+      }, n = t("SHA-1"), o = t("SHA-256"), s = t("SHA-384"), l = t("SHA-512")
     }
   }
 ]);

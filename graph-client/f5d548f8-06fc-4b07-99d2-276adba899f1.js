@@ -38,11 +38,11 @@ _global.SENTRY_RELEASE = {
             i = "FormData" in t,
             s = "ArrayBuffer" in t;
           if (s) var a = ["[object Int8Array]", "[object Uint8Array]", "[object Uint8ClampedArray]", "[object Int16Array]", "[object Uint16Array]", "[object Int32Array]", "[object Uint32Array]", "[object Float32Array]", "[object Float64Array]"],
-            f = ArrayBuffer.isView || function(t) {
+            d = ArrayBuffer.isView || function(t) {
               return t && a.indexOf(Object.prototype.toString.call(t)) > -1
             };
 
-          function d(t) {
+          function f(t) {
             if ("string" != typeof t && (t = String(t)), /[^a-z0-9\-#$%&'*+.^_`|~]/i.test(t)) throw new TypeError("Invalid character in header field name");
             return t.toLowerCase()
           }
@@ -66,8 +66,8 @@ _global.SENTRY_RELEASE = {
             }), e
           }
 
-          function l(t) {
-            this.map = {}, t instanceof l ? t.forEach((function(t, e) {
+          function c(t) {
+            this.map = {}, t instanceof c ? t.forEach((function(t, e) {
               this.append(e, t)
             }), this) : Array.isArray(t) ? t.forEach((function(t) {
               this.append(t[0], t[1])
@@ -76,7 +76,7 @@ _global.SENTRY_RELEASE = {
             }), this)
           }
 
-          function c(t) {
+          function l(t) {
             if (t.bodyUsed) return Promise.reject(new TypeError("Already read"));
             t.bodyUsed = !0
           }
@@ -106,18 +106,18 @@ _global.SENTRY_RELEASE = {
           function w() {
             return this.bodyUsed = !1, this._initBody = function(t) {
               var e;
-              this._bodyInit = t, t ? "string" == typeof t ? this._bodyText = t : n && Blob.prototype.isPrototypeOf(t) ? this._bodyBlob = t : i && FormData.prototype.isPrototypeOf(t) ? this._bodyFormData = t : r && URLSearchParams.prototype.isPrototypeOf(t) ? this._bodyText = t.toString() : s && n && (e = t) && DataView.prototype.isPrototypeOf(e) ? (this._bodyArrayBuffer = b(t.buffer), this._bodyInit = new Blob([this._bodyArrayBuffer])) : s && (ArrayBuffer.prototype.isPrototypeOf(t) || f(t)) ? this._bodyArrayBuffer = b(t) : this._bodyText = t = Object.prototype.toString.call(t) : this._bodyText = "", this.headers.get("content-type") || ("string" == typeof t ? this.headers.set("content-type", "text/plain;charset=UTF-8") : this._bodyBlob && this._bodyBlob.type ? this.headers.set("content-type", this._bodyBlob.type) : r && URLSearchParams.prototype.isPrototypeOf(t) && this.headers.set("content-type", "application/x-www-form-urlencoded;charset=UTF-8"))
+              this._bodyInit = t, t ? "string" == typeof t ? this._bodyText = t : n && Blob.prototype.isPrototypeOf(t) ? this._bodyBlob = t : i && FormData.prototype.isPrototypeOf(t) ? this._bodyFormData = t : r && URLSearchParams.prototype.isPrototypeOf(t) ? this._bodyText = t.toString() : s && n && (e = t) && DataView.prototype.isPrototypeOf(e) ? (this._bodyArrayBuffer = b(t.buffer), this._bodyInit = new Blob([this._bodyArrayBuffer])) : s && (ArrayBuffer.prototype.isPrototypeOf(t) || d(t)) ? this._bodyArrayBuffer = b(t) : this._bodyText = t = Object.prototype.toString.call(t) : this._bodyText = "", this.headers.get("content-type") || ("string" == typeof t ? this.headers.set("content-type", "text/plain;charset=UTF-8") : this._bodyBlob && this._bodyBlob.type ? this.headers.set("content-type", this._bodyBlob.type) : r && URLSearchParams.prototype.isPrototypeOf(t) && this.headers.set("content-type", "application/x-www-form-urlencoded;charset=UTF-8"))
             }, n && (this.blob = function() {
-              var t = c(this);
+              var t = l(this);
               if (t) return t;
               if (this._bodyBlob) return Promise.resolve(this._bodyBlob);
               if (this._bodyArrayBuffer) return Promise.resolve(new Blob([this._bodyArrayBuffer]));
               if (this._bodyFormData) throw new Error("could not read FormData body as blob");
               return Promise.resolve(new Blob([this._bodyText]))
             }, this.arrayBuffer = function() {
-              return this._bodyArrayBuffer ? c(this) || Promise.resolve(this._bodyArrayBuffer) : this.blob().then(y)
+              return this._bodyArrayBuffer ? l(this) || Promise.resolve(this._bodyArrayBuffer) : this.blob().then(y)
             }), this.text = function() {
-              var t, e, r, o = c(this);
+              var t, e, r, o = l(this);
               if (o) return o;
               if (this._bodyBlob) return t = this._bodyBlob, r = p(e = new FileReader), e.readAsText(t), r;
               if (this._bodyArrayBuffer) return Promise.resolve(function(t) {
@@ -132,45 +132,45 @@ _global.SENTRY_RELEASE = {
               return this.text().then(JSON.parse)
             }, this
           }
-          l.prototype.append = function(t, e) {
-            t = d(t), e = h(e);
+          c.prototype.append = function(t, e) {
+            t = f(t), e = h(e);
             var r = this.map[t];
             this.map[t] = r ? r + ", " + e : e
-          }, l.prototype.delete = function(t) {
-            delete this.map[d(t)]
-          }, l.prototype.get = function(t) {
-            return t = d(t), this.has(t) ? this.map[t] : null
-          }, l.prototype.has = function(t) {
-            return this.map.hasOwnProperty(d(t))
-          }, l.prototype.set = function(t, e) {
-            this.map[d(t)] = h(e)
-          }, l.prototype.forEach = function(t, e) {
+          }, c.prototype.delete = function(t) {
+            delete this.map[f(t)]
+          }, c.prototype.get = function(t) {
+            return t = f(t), this.has(t) ? this.map[t] : null
+          }, c.prototype.has = function(t) {
+            return this.map.hasOwnProperty(f(t))
+          }, c.prototype.set = function(t, e) {
+            this.map[f(t)] = h(e)
+          }, c.prototype.forEach = function(t, e) {
             for (var r in this.map) this.map.hasOwnProperty(r) && t.call(e, this.map[r], r, this)
-          }, l.prototype.keys = function() {
+          }, c.prototype.keys = function() {
             var t = [];
             return this.forEach((function(e, r) {
               t.push(r)
             })), u(t)
-          }, l.prototype.values = function() {
+          }, c.prototype.values = function() {
             var t = [];
             return this.forEach((function(e) {
               t.push(e)
             })), u(t)
-          }, l.prototype.entries = function() {
+          }, c.prototype.entries = function() {
             var t = [];
             return this.forEach((function(e, r) {
               t.push([r, e])
             })), u(t)
-          }, o && (l.prototype[Symbol.iterator] = l.prototype.entries);
+          }, o && (c.prototype[Symbol.iterator] = c.prototype.entries);
           var m = ["DELETE", "GET", "HEAD", "OPTIONS", "POST", "PUT"];
 
           function g(t, e) {
             var r, o, n = (e = e || {}).body;
             if (t instanceof g) {
               if (t.bodyUsed) throw new TypeError("Already read");
-              this.url = t.url, this.credentials = t.credentials, e.headers || (this.headers = new l(t.headers)), this.method = t.method, this.mode = t.mode, this.signal = t.signal, n || null == t._bodyInit || (n = t._bodyInit, t.bodyUsed = !0)
+              this.url = t.url, this.credentials = t.credentials, e.headers || (this.headers = new c(t.headers)), this.method = t.method, this.mode = t.mode, this.signal = t.signal, n || null == t._bodyInit || (n = t._bodyInit, t.bodyUsed = !0)
             } else this.url = String(t);
-            if (this.credentials = e.credentials || this.credentials || "same-origin", !e.headers && this.headers || (this.headers = new l(e.headers)), this.method = (o = (r = e.method || this.method || "GET").toUpperCase(), m.indexOf(o) > -1 ? o : r), this.mode = e.mode || this.mode || null, this.signal = e.signal || this.signal, this.referrer = null, ("GET" === this.method || "HEAD" === this.method) && n) throw new TypeError("Body not allowed for GET or HEAD requests");
+            if (this.credentials = e.credentials || this.credentials || "same-origin", !e.headers && this.headers || (this.headers = new c(e.headers)), this.method = (o = (r = e.method || this.method || "GET").toUpperCase(), m.indexOf(o) > -1 ? o : r), this.mode = e.mode || this.mode || null, this.signal = e.signal || this.signal, this.referrer = null, ("GET" === this.method || "HEAD" === this.method) && n) throw new TypeError("Body not allowed for GET or HEAD requests");
             this._initBody(n)
           }
 
@@ -187,7 +187,7 @@ _global.SENTRY_RELEASE = {
           }
 
           function E(t, e) {
-            e || (e = {}), this.type = "default", this.status = void 0 === e.status ? 200 : e.status, this.ok = this.status >= 200 && this.status < 300, this.statusText = "statusText" in e ? e.statusText : "OK", this.headers = new l(e.headers), this.url = e.url || "", this._initBody(t)
+            e || (e = {}), this.type = "default", this.status = void 0 === e.status ? 200 : e.status, this.ok = this.status >= 200 && this.status < 300, this.statusText = "statusText" in e ? e.statusText : "OK", this.headers = new c(e.headers), this.url = e.url || "", this._initBody(t)
           }
           g.prototype.clone = function() {
             return new g(this, {
@@ -197,7 +197,7 @@ _global.SENTRY_RELEASE = {
             return new E(this._bodyInit, {
               status: this.status,
               statusText: this.statusText,
-              headers: new l(this.headers),
+              headers: new c(this.headers),
               url: this.url
             })
           }, E.error = function() {
@@ -233,14 +233,14 @@ _global.SENTRY_RELEASE = {
               if (s.signal && s.signal.aborted) return i(new e.DOMException("Aborted", "AbortError"));
               var a = new XMLHttpRequest;
 
-              function f() {
+              function d() {
                 a.abort()
               }
               a.onload = function() {
                 var t, e, r = {
                   status: a.status,
                   statusText: a.statusText,
-                  headers: (t = a.getAllResponseHeaders() || "", e = new l, t.replace(/\r?\n[\t ]+/g, " ").split(/\r?\n/).forEach((function(t) {
+                  headers: (t = a.getAllResponseHeaders() || "", e = new c, t.replace(/\r?\n[\t ]+/g, " ").split(/\r?\n/).forEach((function(t) {
                     var r = t.split(":"),
                       o = r.shift().trim();
                     if (o) {
@@ -260,12 +260,12 @@ _global.SENTRY_RELEASE = {
                 i(new e.DOMException("Aborted", "AbortError"))
               }, a.open(s.method, s.url, !0), "include" === s.credentials ? a.withCredentials = !0 : "omit" === s.credentials && (a.withCredentials = !1), "responseType" in a && n && (a.responseType = "blob"), s.headers.forEach((function(t, e) {
                 a.setRequestHeader(e, t)
-              })), s.signal && (s.signal.addEventListener("abort", f), a.onreadystatechange = function() {
-                4 === a.readyState && s.signal.removeEventListener("abort", f)
+              })), s.signal && (s.signal.addEventListener("abort", d), a.onreadystatechange = function() {
+                4 === a.readyState && s.signal.removeEventListener("abort", d)
               }), a.send(void 0 === s._bodyInit ? null : s._bodyInit)
             }))
           }
-          A.polyfill = !0, t.fetch || (t.fetch = A, t.Headers = l, t.Request = g, t.Response = E), e.Headers = l, e.Request = g, e.Response = E, e.fetch = A, Object.defineProperty(e, "__esModule", {
+          A.polyfill = !0, t.fetch || (t.fetch = A, t.Headers = c, t.Request = g, t.Response = E), e.Headers = c, e.Request = g, e.Response = E, e.fetch = A, Object.defineProperty(e, "__esModule", {
             value: !0
           })
         }({})

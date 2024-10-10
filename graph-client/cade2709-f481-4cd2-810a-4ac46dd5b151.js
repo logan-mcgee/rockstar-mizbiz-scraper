@@ -34,16 +34,16 @@ _global.SENTRY_RELEASE = {
 
       function u(e, t, n) {
         var r, u = {},
-          l = null,
-          c = null;
-        for (r in void 0 !== n && (l = "" + n), void 0 !== t.key && (l = "" + t.key), void 0 !== t.ref && (c = t.ref), t) a.call(t, r) && !s.hasOwnProperty(r) && (u[r] = t[r]);
+          c = null,
+          l = null;
+        for (r in void 0 !== n && (c = "" + n), void 0 !== t.key && (c = "" + t.key), void 0 !== t.ref && (l = t.ref), t) a.call(t, r) && !s.hasOwnProperty(r) && (u[r] = t[r]);
         if (e && e.defaultProps)
           for (r in t = e.defaultProps) void 0 === u[r] && (u[r] = t[r]);
         return {
           $$typeof: o,
           type: e,
-          key: l,
-          ref: c,
+          key: c,
+          ref: l,
           props: u,
           _owner: i.current
         }
@@ -81,7 +81,7 @@ _global.SENTRY_RELEASE = {
             children: "Loading..."
           })
         },
-        l = e => {
+        c = e => {
           let {
             env: t
           } = e;
@@ -94,8 +94,8 @@ _global.SENTRY_RELEASE = {
             children: [(0, s.jsx)(u, {}), (0, s.jsx)(u, {}), (0, s.jsx)(u, {})]
           })
         },
-        c = document.createElement("div");
-      document.body.appendChild(c), (0, o.H)(c).render((0, s.jsx)(l, {
+        l = document.createElement("div");
+      document.body.appendChild(l), (0, o.H)(l).render((0, s.jsx)(c, {
         env: "dev"
       }))
     },
@@ -109,7 +109,7 @@ _global.SENTRY_RELEASE = {
         useApolloClient: () => p.m,
         useBase: () => h.useBase,
         useCdn: () => h.useCdn,
-        useMutateState: () => c,
+        useMutateState: () => l,
         useMutation: () => o.n_,
         useQuery: () => o.IT,
         useReactiveVar: () => r.useReactiveVar,
@@ -127,8 +127,8 @@ _global.SENTRY_RELEASE = {
         i = n(6632);
       const s = (0, a.createContext)({}),
         u = () => (0, a.useContext)(s),
-        l = (0, a.createContext)({}),
-        c = () => (0, a.useContext)(l),
+        c = (0, a.createContext)({}),
+        l = () => (0, a.useContext)(c),
         d = e => {
           let {
             children: t,
@@ -144,7 +144,7 @@ _global.SENTRY_RELEASE = {
           }), [n]);
           return (0, i.jsx)(s.Provider, {
             value: n(),
-            children: (0, i.jsx)(l.Provider, {
+            children: (0, i.jsx)(c.Provider, {
               value: o,
               children: t
             })
@@ -252,8 +252,8 @@ _global.SENTRY_RELEASE = {
           },
           {
             data: u,
-            loading: l,
-            error: c,
+            loading: c,
+            error: l,
             ...d
           } = (0, o.useQuery)(e, a);
         return (0, r.useEffect)((() => {
@@ -266,23 +266,23 @@ _global.SENTRY_RELEASE = {
           }
         }), [u]), (0, r.useEffect)((() => (a.autoSetLoading && window.postMessage({
           type: "graph.loadingUpdate",
-          loading: l
+          loading: c
         }), () => {
           a.autoSetLoading && window.postMessage({
             type: "graph.loadingUpdate",
             loading: !1
           })
-        })), [l]), (0, r.useEffect)((() => {
-          if (a.autoSetError && c) throw new Error(String(c))
-        }), [c]), {
-          loading: l,
-          error: c,
+        })), [c]), (0, r.useEffect)((() => {
+          if (a.autoSetError && l) throw new Error(String(l))
+        }), [l]), {
+          loading: c,
+          error: l,
           data: u,
           ...d
         }
       };
-      var l = n(6632);
-      const c = (0, r.createContext)((() => ({
+      var c = n(6632);
+      const l = (0, r.createContext)((() => ({
           data: null
         }))),
         d = new Promise((e => {
@@ -303,15 +303,15 @@ _global.SENTRY_RELEASE = {
           let {
             children: t
           } = e;
-          return (0, l.jsx)(h.Provider, {
+          return (0, c.jsx)(h.Provider, {
             value: o.useMutation,
-            children: (0, l.jsx)(c.Provider, {
+            children: (0, c.jsx)(l.Provider, {
               value: u,
               children: t
             })
           })
         }),
-        v = window?.["apollo-use-query"] ?? (window["apollo-use-query"] = (e, t) => (0, r.useContext)(c)(e, t)),
+        v = window?.["apollo-use-query"] ?? (window["apollo-use-query"] = (e, t) => (0, r.useContext)(l)(e, t)),
         w = window?.["apollo-use-mutation"] ?? (window["apollo-use-mutation"] = e => (0, r.useContext)(h)(e))
     },
     4403: (e, t, n) => {
@@ -325,9 +325,9 @@ _global.SENTRY_RELEASE = {
         i = n(2889),
         s = n(226),
         u = n(1622),
-        l = n(4984);
-      var c = n(7124),
-        d = n.n(c);
+        c = n(4984);
+      var l = n(7124),
+        d = n.n(l);
       var p, f = n(7860),
         h = n(4512),
         g = n(8226),
@@ -365,7 +365,7 @@ _global.SENTRY_RELEASE = {
             return Promise.resolve(r((0, h.y)(e)))
           } : o,
           i = n.disable,
-          c = n.retry,
+          l = n.retry,
           d = n.useGETForHashedQueries,
           p = !0,
           y = function(e) {
@@ -376,14 +376,14 @@ _global.SENTRY_RELEASE = {
         return new u.C((function(e, n) {
           __DEV__ ? (0, f.V1)(n, "PersistedQueryLink cannot be the last link in the chain.") : (0, f.V1)(n, 26);
           var r = e.query;
-          return new l.c((function(o) {
-            var a, u, l = !1,
+          return new c.c((function(o) {
+            var a, u, c = !1,
               f = !1,
               h = function(t, r) {
                 var o = t.response,
                   s = t.networkError;
-                if (!l && (o && o.errors || s)) {
-                  l = !0;
+                if (!c && (o && o.errors || s)) {
+                  c = !0;
                   var d = [],
                     h = o && o.errors;
                   (0, g.E)(h) && d.push.apply(d, h);
@@ -396,7 +396,7 @@ _global.SENTRY_RELEASE = {
                     graphQLErrors: (0, g.E)(d) ? d : void 0,
                     meta: w(d)
                   };
-                  if (p = !i(y), c(y)) return a && a.unsubscribe(), e.setContext({
+                  if (p = !i(y), l(y)) return a && a.unsubscribe(), e.setContext({
                     http: {
                       includeQuery: !0,
                       includeExtensions: p
@@ -474,7 +474,7 @@ _global.SENTRY_RELEASE = {
               ...t,
               uri: a
             },
-            [c] = (0, r.useState)(new o.InMemoryCache({
+            [l] = (0, r.useState)(new o.InMemoryCache({
               typePolicies: n
             })),
             p = y.concat((e => {
@@ -494,7 +494,7 @@ _global.SENTRY_RELEASE = {
                 } : null
               }, new u.C((function(e, t) {
                 var r = (0, s.Tt)(e, []);
-                return new l.c((function(o) {
+                return new c.c((function(o) {
                   var a, i = !1;
                   return Promise.resolve(r).then((function(t) {
                       return n(0, e.getContext())
@@ -518,7 +518,7 @@ _global.SENTRY_RELEASE = {
               fetch: d()
             }))(i)));
           return new o.ApolloClient({
-            cache: c,
+            cache: l,
             link: p
           })
         },
@@ -547,10 +547,10 @@ _global.SENTRY_RELEASE = {
     },
     2889: (e, t, n) => {
       n.d(t, {
-        ec: () => l,
+        ec: () => c,
         e9: () => d,
         Es: () => p,
-        bD: () => c
+        bD: () => l
       });
       var r = n(1403),
         o = n(7264);
@@ -562,7 +562,7 @@ _global.SENTRY_RELEASE = {
           tokenPingExpires: (0, o.makeVar)(100)
         },
         u = window?.[i] ?? (window[i] = (0, r.createContext)(s)),
-        l = e => {
+        c = e => {
           let {
             children: t,
             token: n,
@@ -578,7 +578,7 @@ _global.SENTRY_RELEASE = {
             children: t
           })
         },
-        c = () => {
+        l = () => {
           const {
             token: e,
             tokenPing: t,
@@ -587,11 +587,11 @@ _global.SENTRY_RELEASE = {
           return [e, t, n]
         },
         d = () => {
-          const [e] = c();
+          const [e] = l();
           return (0, o.useReactiveVar)(e)
         },
         p = () => {
-          const [e, t, n] = c();
+          const [e, t, n] = l();
           return () => (async e => {
             let {
               url: t,
@@ -652,9 +652,9 @@ _global.SENTRY_RELEASE = {
           videos: i?.cdn?.videos
         }),
         u = () => (0, r.useReactiveVar)(s),
-        l = document.currentScript,
-        c = l?.src ? new URL(l.src).origin : "";
-      let d = document.getElementsByTagName("base")[0]?.getAttribute("href") ?? `${c}/`;
+        c = document.currentScript,
+        l = c?.src ? new URL(c.src).origin : "";
+      let d = document.getElementsByTagName("base")[0]?.getAttribute("href") ?? `${l}/`;
       d.endsWith("/") || (d = `${d}/`);
       const p = (0, r.makeVar)(d),
         f = () => (0, r.useReactiveVar)(p)

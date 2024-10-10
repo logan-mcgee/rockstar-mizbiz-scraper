@@ -28,7 +28,7 @@ _global.SENTRY_RELEASE = {
       function r(e, t) {
         for (var n = 0; n < t.length; n++) {
           var o = t[n];
-          o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, c(o.key), o)
+          o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, u(o.key), o)
         }
       }
 
@@ -43,13 +43,13 @@ _global.SENTRY_RELEASE = {
         return e
       }
 
-      function u(e) {
-        return u = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {
+      function c(e) {
+        return c = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {
           return e.__proto__ || Object.getPrototypeOf(e)
-        }, u(e)
+        }, c(e)
       }
 
-      function c(e) {
+      function u(e) {
         var t = function(e, t) {
           if ("object" !== o(e) || null === e) return e;
           var n = e[Symbol.toPrimitive];
@@ -89,9 +89,9 @@ _global.SENTRY_RELEASE = {
               return !1
             }
           }(), function() {
-            var e, t = u(l);
+            var e, t = c(l);
             if (f) {
-              var n = u(this).constructor;
+              var n = c(this).constructor;
               e = Reflect.construct(t, arguments, n)
             } else e = t.apply(this, arguments);
             return function(e, t) {
@@ -115,10 +115,10 @@ _global.SENTRY_RELEASE = {
                 if (void 0 === n || !1 === n) return n;
                 throw new Error("`".concat(e, "` was specified but was not a node, or did not return a node"))
               }
-              var i, u = n;
-              if ("string" == typeof n && !(u = null === (i = this.getDocument()) || void 0 === i ? void 0 : i.querySelector(n))) throw new Error("`".concat(e, "` as selector refers to no known node"));
-              return u
-            }, (o = c(o = "getNodeForOption")) in n ? Object.defineProperty(n, o, {
+              var i, c = n;
+              if ("string" == typeof n && !(c = null === (i = this.getDocument()) || void 0 === i ? void 0 : i.querySelector(n))) throw new Error("`".concat(e, "` as selector refers to no known node"));
+              return c
+            }, (o = u(o = "getNodeForOption")) in n ? Object.defineProperty(n, o, {
               value: r,
               enumerable: !0,
               configurable: !0,
@@ -137,7 +137,7 @@ _global.SENTRY_RELEASE = {
               clickOutsideDeactivates: !1
             };
             var a = e.focusTrapOptions;
-            for (var u in a) Object.prototype.hasOwnProperty.call(a, u) && ("returnFocusOnDeactivate" !== u && "onDeactivate" !== u && "onPostDeactivate" !== u && "checkCanReturnFocus" !== u && "clickOutsideDeactivates" !== u ? t.internalOptions[u] = a[u] : t.originalOptions[u] = a[u]);
+            for (var c in a) Object.prototype.hasOwnProperty.call(a, c) && ("returnFocusOnDeactivate" !== c && "onDeactivate" !== c && "onPostDeactivate" !== c && "checkCanReturnFocus" !== c && "clickOutsideDeactivates" !== c ? t.internalOptions[c] = a[c] : t.originalOptions[c] = a[c]);
             return t.outsideClick = null, t.focusTrapElements = e.containerElements || [], t.updatePreviousElement(), t
           }
           return t = v, (n = [{
@@ -333,10 +333,10 @@ _global.SENTRY_RELEASE = {
       var i = function(e) {
           return "Tab" === (null == e ? void 0 : e.key) || 9 === (null == e ? void 0 : e.keyCode)
         },
-        u = function(e) {
+        c = function(e) {
           return i(e) && !e.shiftKey
         },
-        c = function(e) {
+        u = function(e) {
           return i(e) && e.shiftKey
         },
         s = function(e) {
@@ -363,8 +363,8 @@ _global.SENTRY_RELEASE = {
               returnFocusOnDeactivate: !0,
               escapeDeactivates: !0,
               delayInitialFocus: !0,
-              isKeyForward: u,
-              isKeyBackward: c
+              isKeyForward: c,
+              isKeyBackward: u
             }, t),
             h = {
               containers: [],
@@ -424,21 +424,21 @@ _global.SENTRY_RELEASE = {
                     i = n.find((function(e) {
                       return (0, o.isTabbable)(e)
                     })),
-                    u = n.slice().reverse().find((function(e) {
+                    c = n.slice().reverse().find((function(e) {
                       return (0, o.isTabbable)(e)
                     })),
-                    c = !!t.find((function(e) {
+                    u = !!t.find((function(e) {
                       return (0, o.getTabIndex)(e) > 0
                     }));
                   return {
                     container: e,
                     tabbableNodes: t,
                     focusableNodes: n,
-                    posTabIndexesFound: c,
+                    posTabIndexesFound: u,
                     firstTabbableNode: r,
                     lastTabbableNode: a,
                     firstDomTabbableNode: i,
-                    lastDomTabbableNode: u,
+                    lastDomTabbableNode: c,
                     nextTabbableNode: function(e) {
                       var r = !(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1],
                         a = t.indexOf(e);
@@ -477,34 +477,34 @@ _global.SENTRY_RELEASE = {
                 r = e.isBackward,
                 a = void 0 !== r && r;
               t = t || d(n), O();
-              var u = null;
+              var c = null;
               if (h.tabbableGroups.length > 0) {
-                var c = m(t, n),
-                  s = c >= 0 ? h.containerGroups[c] : void 0;
-                if (c < 0) u = a ? h.tabbableGroups[h.tabbableGroups.length - 1].lastTabbableNode : h.tabbableGroups[0].firstTabbableNode;
+                var u = m(t, n),
+                  s = u >= 0 ? h.containerGroups[u] : void 0;
+                if (u < 0) c = a ? h.tabbableGroups[h.tabbableGroups.length - 1].lastTabbableNode : h.tabbableGroups[0].firstTabbableNode;
                 else if (a) {
                   var f = l(h.tabbableGroups, (function(e) {
                     var n = e.firstTabbableNode;
                     return t === n
                   }));
-                  if (f < 0 && (s.container === t || (0, o.isFocusable)(t, b.tabbableOptions) && !(0, o.isTabbable)(t, b.tabbableOptions) && !s.nextTabbableNode(t, !1)) && (f = c), f >= 0) {
+                  if (f < 0 && (s.container === t || (0, o.isFocusable)(t, b.tabbableOptions) && !(0, o.isTabbable)(t, b.tabbableOptions) && !s.nextTabbableNode(t, !1)) && (f = u), f >= 0) {
                     var p = 0 === f ? h.tabbableGroups.length - 1 : f - 1,
                       v = h.tabbableGroups[p];
-                    u = (0, o.getTabIndex)(t) >= 0 ? v.lastTabbableNode : v.lastDomTabbableNode
-                  } else i(n) || (u = s.nextTabbableNode(t, !1))
+                    c = (0, o.getTabIndex)(t) >= 0 ? v.lastTabbableNode : v.lastDomTabbableNode
+                  } else i(n) || (c = s.nextTabbableNode(t, !1))
                 } else {
                   var y = l(h.tabbableGroups, (function(e) {
                     var n = e.lastTabbableNode;
                     return t === n
                   }));
-                  if (y < 0 && (s.container === t || (0, o.isFocusable)(t, b.tabbableOptions) && !(0, o.isTabbable)(t, b.tabbableOptions) && !s.nextTabbableNode(t)) && (y = c), y >= 0) {
+                  if (y < 0 && (s.container === t || (0, o.isFocusable)(t, b.tabbableOptions) && !(0, o.isTabbable)(t, b.tabbableOptions) && !s.nextTabbableNode(t)) && (y = u), y >= 0) {
                     var w = y === h.tabbableGroups.length - 1 ? 0 : y + 1,
                       T = h.tabbableGroups[w];
-                    u = (0, o.getTabIndex)(t) >= 0 ? T.firstTabbableNode : T.firstDomTabbableNode
-                  } else i(n) || (u = s.nextTabbableNode(t))
+                    c = (0, o.getTabIndex)(t) >= 0 ? T.firstTabbableNode : T.firstDomTabbableNode
+                  } else i(n) || (c = s.nextTabbableNode(t))
                 }
-              } else u = g("fallbackFocus");
-              return u
+              } else c = g("fallbackFocus");
+              return c
             },
             F = function(e) {
               var t = d(e);
@@ -523,12 +523,12 @@ _global.SENTRY_RELEASE = {
                 if (h.mostRecentlyFocusedNode)
                   if ((0, o.getTabIndex)(h.mostRecentlyFocusedNode) > 0) {
                     var i = m(h.mostRecentlyFocusedNode),
-                      u = h.containerGroups[i].tabbableNodes;
-                    if (u.length > 0) {
-                      var c = u.findIndex((function(e) {
+                      c = h.containerGroups[i].tabbableNodes;
+                    if (c.length > 0) {
+                      var u = c.findIndex((function(e) {
                         return e === h.mostRecentlyFocusedNode
                       }));
-                      c >= 0 && (b.isKeyForward(h.recentNavEvent) ? c + 1 < u.length && (r = u[c + 1], a = !1) : c - 1 >= 0 && (r = u[c - 1], a = !1))
+                      u >= 0 && (b.isKeyForward(h.recentNavEvent) ? u + 1 < c.length && (r = c[u + 1], a = !1) : u - 1 >= 0 && (r = c[u - 1], a = !1))
                     }
                   } else h.containerGroups.some((function(e) {
                     return e.tabbableNodes.some((function(e) {
@@ -633,14 +633,14 @@ _global.SENTRY_RELEASE = {
               var o = y(t, "onDeactivate"),
                 r = y(t, "onPostDeactivate"),
                 i = y(t, "checkCanReturnFocus"),
-                u = y(t, "returnFocus", "returnFocusOnDeactivate");
+                c = y(t, "returnFocus", "returnFocusOnDeactivate");
               null == o || o();
-              var c = function() {
+              var u = function() {
                 s((function() {
-                  u && E(k(h.nodeFocusedBeforeActivation)), null == r || r()
+                  c && E(k(h.nodeFocusedBeforeActivation)), null == r || r()
                 }))
               };
-              return u && i ? (i(k(h.nodeFocusedBeforeActivation)).then(c, c), this) : (c(), this)
+              return c && i ? (i(k(h.nodeFocusedBeforeActivation)).then(u, u), this) : (u(), this)
             },
             pause: function(e) {
               if (h.paused || !h.active) return this;
@@ -675,27 +675,27 @@ _global.SENTRY_RELEASE = {
         r = o.join(","),
         a = "undefined" == typeof Element,
         i = a ? function() {} : Element.prototype.matches || Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector,
-        u = !a && Element.prototype.getRootNode ? function(e) {
+        c = !a && Element.prototype.getRootNode ? function(e) {
           var t;
           return null == e || null === (t = e.getRootNode) || void 0 === t ? void 0 : t.call(e)
         } : function(e) {
           return null == e ? void 0 : e.ownerDocument
         },
-        c = function e(t, n) {
+        u = function e(t, n) {
           var o;
           void 0 === n && (n = !0);
           var r = null == t || null === (o = t.getAttribute) || void 0 === o ? void 0 : o.call(t, "inert");
           return "" === r || "true" === r || n && t && e(t.parentNode)
         },
         s = function(e, t, n) {
-          if (c(e)) return [];
+          if (u(e)) return [];
           var o = Array.prototype.slice.apply(e.querySelectorAll(r));
           return t && i.call(e, r) && o.unshift(e), o.filter(n)
         },
         l = function e(t, n, o) {
-          for (var a = [], u = Array.from(t); u.length;) {
-            var s = u.shift();
-            if (!c(s, !1))
+          for (var a = [], c = Array.from(t); c.length;) {
+            var s = c.shift();
+            if (!u(s, !1))
               if ("SLOT" === s.tagName) {
                 var l = s.assignedElements(),
                   f = e(l.length ? l : s.children, !0, o);
@@ -706,14 +706,14 @@ _global.SENTRY_RELEASE = {
               } else {
                 i.call(s, r) && o.filter(s) && (n || !t.includes(s)) && a.push(s);
                 var d = s.shadowRoot || "function" == typeof o.getShadowRoot && o.getShadowRoot(s),
-                  p = !c(d, !1) && (!o.shadowRootFilter || o.shadowRootFilter(s));
+                  p = !u(d, !1) && (!o.shadowRootFilter || o.shadowRootFilter(s));
                 if (d && p) {
                   var v = e(!0 === d ? s.children : d.children, !0, o);
                   o.flatten ? a.push.apply(a, v) : a.push({
                     scopeParent: s,
                     candidates: v
                   })
-                } else u.unshift.apply(u, s.children)
+                } else c.unshift.apply(c, s.children)
               }
           }
           return a
@@ -741,7 +741,7 @@ _global.SENTRY_RELEASE = {
           return 0 === n && 0 === o
         },
         h = function(e, t) {
-          return !(t.disabled || c(t) || function(e) {
+          return !(t.disabled || u(t) || function(e) {
             return v(e) && "hidden" === e.type
           }(t) || function(e, t) {
             var n = t.displayCheck,
@@ -754,23 +754,23 @@ _global.SENTRY_RELEASE = {
             } else {
               if ("function" == typeof o) {
                 for (var a = e; e;) {
-                  var c = e.parentElement,
-                    s = u(e);
-                  if (c && !c.shadowRoot && !0 === o(c)) return b(e);
-                  e = e.assignedSlot ? e.assignedSlot : c || s === e.ownerDocument ? c : s.host
+                  var u = e.parentElement,
+                    s = c(e);
+                  if (u && !u.shadowRoot && !0 === o(u)) return b(e);
+                  e = e.assignedSlot ? e.assignedSlot : u || s === e.ownerDocument ? u : s.host
                 }
                 e = a
               }
               if (function(e) {
-                  var t, n, o, r, a = e && u(e),
+                  var t, n, o, r, a = e && c(e),
                     i = null === (t = a) || void 0 === t ? void 0 : t.host,
-                    c = !1;
+                    u = !1;
                   if (a && a !== e)
-                    for (c = !!(null !== (n = i) && void 0 !== n && null !== (o = n.ownerDocument) && void 0 !== o && o.contains(i) || null != e && null !== (r = e.ownerDocument) && void 0 !== r && r.contains(e)); !c && i;) {
+                    for (u = !!(null !== (n = i) && void 0 !== n && null !== (o = n.ownerDocument) && void 0 !== o && o.contains(i) || null != e && null !== (r = e.ownerDocument) && void 0 !== r && r.contains(e)); !u && i;) {
                       var s, l, f;
-                      c = !(null === (l = i = null === (s = a = u(i)) || void 0 === s ? void 0 : s.host) || void 0 === l || null === (f = l.ownerDocument) || void 0 === f || !f.contains(i))
+                      u = !(null === (l = i = null === (s = a = c(i)) || void 0 === s ? void 0 : s.host) || void 0 === l || null === (f = l.ownerDocument) || void 0 === f || !f.contains(i))
                     }
-                  return c
+                  return u
                 }(e)) return !e.getClientRects().length;
               if ("legacy-full" !== n) return !0
             }
@@ -800,7 +800,7 @@ _global.SENTRY_RELEASE = {
               return v(e) && "radio" === e.type
             }(e) && ! function(e) {
               if (!e.name) return !0;
-              var t, n = e.form || u(e),
+              var t, n = e.form || c(e),
                 o = function(e) {
                   return n.querySelectorAll('input[type="radio"][name="' + e + '"]')
                 };
@@ -828,17 +828,17 @@ _global.SENTRY_RELEASE = {
           return t.forEach((function(t, r) {
             var a = !!t.scopeParent,
               i = a ? t.scopeParent : t,
-              u = function(e, t) {
+              c = function(e, t) {
                 var n = d(e);
                 return n < 0 && t && !f(e) ? 0 : n
               }(i, a),
-              c = a ? e(t.candidates) : i;
-            0 === u ? a ? n.push.apply(n, c) : n.push(i) : o.push({
+              u = a ? e(t.candidates) : i;
+            0 === c ? a ? n.push.apply(n, u) : n.push(i) : o.push({
               documentOrder: r,
-              tabIndex: u,
+              tabIndex: c,
               item: t,
               isScope: a,
-              content: c
+              content: u
             })
           })), o.sort(p).reduce((function(e, t) {
             return t.isScope ? e.push.apply(e, t.content) : e.push(t.content), e

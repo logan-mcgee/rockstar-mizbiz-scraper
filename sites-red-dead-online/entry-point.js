@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "1770c38f-bbb5-4a01-bf35-ee60c71aaa97", e._sentryDebugIdIdentifier = "sentry-dbid-1770c38f-bbb5-4a01-bf35-ee60c71aaa97")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "7115a346-429d-4117-ba93-e2fd36843cb1", e._sentryDebugIdIdentifier = "sentry-dbid-7115a346-429d-4117-ba93-e2fd36843cb1")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -153,29 +153,28 @@ _global.SENTRY_RELEASE = {
             get: t[r]
           })
         }, p.f = {}, p.e = e => Promise.all(Object.keys(p.f).reduce(((t, r) => (p.f[r](e, t), t)), [])), p.u = e => "js/" + {
-          8: "e152d7831d544da4f9191b4d60fc4176",
-          26: "7c814e9abef28df73ff7d596e63a010b",
-          28: "6ddc045eb07f5d1f210f83a1c8ceb77c",
-          66: "0ec249dcc3750d1940bd60dfad36fb4d",
-          105: "1584a371ef0a2da80660d2ce8a5dddc2",
-          143: "2be57e630165c25203925ebfdfbcd406",
-          173: "42ddaf44611b18f9d35374140d08c010",
-          180: "fc767b11af15ad5edc5b17a9061170b6",
-          261: "e4a79308c49d0209923abce186af4790",
-          380: "7722e4e57f126525b3f4f088b70c244b",
-          396: "6ff1ac374fde45dba2ed83bba13056d3",
+          8: "d15846f945b4cc5924f9fd3a692e29e6",
+          26: "382a8ad9c6224cb5111b6e6a95c1c3a4",
+          28: "c6873447c695432e78f522b10eeb8186",
+          66: "4d982cb6844c282dd2dc72b9d05e4766",
+          105: "248ea2767711d0ee09a9954b533ca60f",
+          143: "3d6b0c98a218d47d5d0896e3eee44284",
+          173: "7b6393c23b615b333754b768e718fea0",
+          180: "129edd061a9111de7e8326128aa8c2da",
+          261: "a88b8e213caecf75dfe0592caccdd9bb",
+          380: "a49339551d5490841ba89241aa311ba9",
           403: "372493411d1617771216b2bad646e784",
-          435: "16fe5c851e7f11be4471f8e5753ae300",
-          451: "71a3b3520cb8cd977dec8a6b4c280054",
-          471: "ea091626419da0b738f32743c81c842b",
+          435: "35d40f6c6ccceccb3c7f318e93ffaf6a",
+          451: "3f8875b831c6a5ecd11235c2c18ad5d6",
+          471: "142248a2a26e8e30099dda85437e93a2",
           516: "2c9bb6fa5536a9b968d050e7af4ddcf0",
-          524: "eed9987a8ae2fb3f0b37f1a0bf21190f",
+          524: "e1fcb5d878e6bf1313d70f3cd9a33107",
           730: "72acc66f289803151dbfa4d86f9a4356",
           828: "be90a4a05bb4c8b86d050756b69ffe66",
-          852: "511e409f063fbfa827c570c036bbf502",
-          977: "13a896a7247cbbe9aad3f31d5686243b"
+          852: "4af5d281716e26b9b9be45bff0362350",
+          977: "2392ee454813843c0ee156529ac1c6dd"
         } [e] + ".js", p.miniCssF = e => "css/" + {
-          26: "c533f71462ac1ff17d1c13fce4d2520f",
+          26: "8ec7d5988ed34ac2902f4658272ba28d",
           471: "883088bdc563779838a6137df3754da7",
           852: "883088bdc563779838a6137df3754da7"
         } [e] + ".css", p.g = function() {
@@ -217,7 +216,6 @@ _global.SENTRY_RELEASE = {
           })
         }, f = {
           26: [24550, 28089, 28300, 31879, 74401, 78417, 78722, 90588],
-          396: [70396],
           828: [40207, 42756, 58407]
         }, l = {
           24550: ["default", "./operations/queries", 61024],
@@ -227,7 +225,6 @@ _global.SENTRY_RELEASE = {
           40207: ["default", "./index", 60404],
           42756: ["default", "./index", 92969],
           58407: ["default", "./index", 61024],
-          70396: ["default", "./hooks", 92969],
           74401: ["default", "./index", 99466],
           78417: ["default", "./operations/fragments/paging.graphql", 61024],
           78722: ["default", "./NewswireArticle", 66819],
@@ -302,7 +299,7 @@ _global.SENTRY_RELEASE = {
                   }
                 },
                 f = [];
-              return "default" === r && (i("@rockstargames/locale-tools", "1.0.0", (() => Promise.all([p.e(66), p.e(403), p.e(396), p.e(143)]).then((() => () => p(24143))))), i("@rockstargames/modules-core-feedback", "1.0.48", (() => Promise.all([p.e(403), p.e(828), p.e(730), p.e(852)]).then((() => () => p(8852))))), i("hammerjs", "2.0.8", (() => p.e(28).then((() => () => p(59028))))), i("prop-types", "15.8.1", (() => p.e(977).then((() => () => p(37977))))), i("react-focus-lock", "2.9.6", (() => Promise.all([p.e(173), p.e(403), p.e(516)]).then((() => () => p(42173))))), i("react-router-dom", "6.17.0", (() => Promise.all([p.e(261), p.e(180), p.e(403)]).then((() => () => p(22180))))), i("react-router-dom", "6.17.0", (() => Promise.all([p.e(261), p.e(105), p.e(8), p.e(403)]).then((() => () => p(76008))))), i("react-router-dom", "6.17.0", (() => Promise.all([p.e(261), p.e(105), p.e(451), p.e(403)]).then((() => () => p(4451))))), i("react", "18.2.0", (() => p.e(380).then((() => () => p(23380))))), d(61024), d(60404), d(92969), d(66819), d(25136), d(99466)), f.length ? e[r] = Promise.all(f).then((() => e[r] = 1)) : e[r] = 1
+              return "default" === r && (i("@rockstargames/locale-tools", "1.0.0", (() => Promise.all([p.e(66), p.e(403), p.e(143)]).then((() => () => p(24143))))), i("@rockstargames/modules-core-feedback", "1.0.48", (() => Promise.all([p.e(403), p.e(828), p.e(730), p.e(852)]).then((() => () => p(8852))))), i("hammerjs", "2.0.8", (() => p.e(28).then((() => () => p(59028))))), i("prop-types", "15.8.1", (() => p.e(977).then((() => () => p(37977))))), i("react-focus-lock", "2.9.6", (() => Promise.all([p.e(173), p.e(403), p.e(516)]).then((() => () => p(42173))))), i("react-router-dom", "6.17.0", (() => Promise.all([p.e(261), p.e(180), p.e(403)]).then((() => () => p(22180))))), i("react-router-dom", "6.17.0", (() => Promise.all([p.e(261), p.e(105), p.e(8), p.e(403)]).then((() => () => p(76008))))), i("react-router-dom", "6.17.0", (() => Promise.all([p.e(261), p.e(105), p.e(451), p.e(403)]).then((() => () => p(4451))))), i("react", "18.2.0", (() => p.e(380).then((() => () => p(23380))))), d(61024), d(60404), d(92969), d(66819), d(25136), d(99466)), f.length ? e[r] = Promise.all(f).then((() => e[r] = 1)) : e[r] = 1
             }
           }
         })(), (() => {
@@ -354,8 +351,8 @@ _global.SENTRY_RELEASE = {
               var u = [],
                 p = u.pop.bind(u);
               for (s = 1; s < r.length; s++) {
-                var b = r[s];
-                u.push(1 == b ? p() | p() : 2 == b ? p() & p() : b ? t(b, a) : !p())
+                var h = r[s];
+                u.push(1 == h ? p() | p() : 2 == h ? p() & p() : h ? t(h, a) : !p())
               }
               return !!p()
             },
@@ -386,7 +383,7 @@ _global.SENTRY_RELEASE = {
             o = {},
             n = {
               71403: () => a("default", "react", [1, 18, 2, 0], (() => p.e(380).then((() => () => p(23380))))),
-              96717: () => a("default", "@rockstargames/locale-tools", [1, "workspace:*"], (() => Promise.all([p.e(66), p.e(396), p.e(524)]).then((() => () => p(24143))))),
+              96717: () => a("default", "@rockstargames/locale-tools", [1, "workspace:*"], (() => Promise.all([p.e(66), p.e(524)]).then((() => () => p(24143))))),
               39516: () => a("default", "prop-types", [1, 15, 8, 1], (() => p.e(977).then((() => () => p(37977))))),
               42205: () => a("default", "@rockstargames/modules-core-feedback", [1, "workspace:*"], (() => Promise.all([p.e(730), p.e(471)]).then((() => () => p(8852))))),
               56864: () => a("default", "react-focus-lock", [1, 2, 9, 6], (() => p.e(173).then((() => () => p(42173))))),
@@ -478,7 +475,7 @@ _global.SENTRY_RELEASE = {
             var a = p.o(e, t) ? e[t] : void 0;
             if (0 !== a)
               if (a) r.push(a[2]);
-              else if (/^(396|403|516|730|828)$/.test(t)) e[t] = 0;
+              else if (/^(403|516|730|828)$/.test(t)) e[t] = 0;
             else {
               var o = new Promise(((r, o) => a = e[t] = [r, o]));
               r.push(a[2] = o);

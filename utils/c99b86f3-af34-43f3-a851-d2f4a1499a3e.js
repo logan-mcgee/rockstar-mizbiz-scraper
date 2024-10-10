@@ -1,8 +1,8 @@
 ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "c99b86f3-af34-43f3-a851-d2f4a1499a3e", e._sentryDebugIdIdentifier = "sentry-dbid-c99b86f3-af34-43f3-a851-d2f4a1499a3e")
+      a = (new Error).stack;
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "c99b86f3-af34-43f3-a851-d2f4a1499a3e", e._sentryDebugIdIdentifier = "sentry-dbid-c99b86f3-af34-43f3-a851-d2f4a1499a3e")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -16,19 +16,19 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_utils = self.webpackChunk_rockstargames_utils || []).push([
   [150], {
-    2150: (e, t, a) => {
-      a.r(t), a.d(t, {
-        default: () => d
+    2150: (e, a, d) => {
+      d.r(a), d.d(a, {
+        default: () => t
       });
-      const d = e => {
+      const t = e => {
         let {
-          id: t,
-          init: a
+          id: a,
+          init: d
         } = e;
-        if (t) {
+        if (a) {
           const e = document.createElement("script");
-          e.onload = () => a(), e.onerror = () => a(), e.src = "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js", e.setAttribute("data-domain-script", t), e.setAttribute("data-document-language", "true"), document.head.appendChild(e)
-        } else a()
+          e.onload = () => d(), e.onerror = () => d(), e.src = "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js", e.setAttribute("data-domain-script", a), e.setAttribute("data-document-language", "true"), document.head.appendChild(e)
+        } else d()
       }
     }
   }

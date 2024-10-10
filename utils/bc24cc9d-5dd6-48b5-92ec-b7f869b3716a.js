@@ -22,25 +22,25 @@ _global.SENTRY_RELEASE = {
         a = Symbol.for("react.element"),
         o = (Symbol.for("react.fragment"), Object.prototype.hasOwnProperty),
         r = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        s = {
+        d = {
           key: !0,
           ref: !0,
           __self: !0,
           __source: !0
         };
       n.jsx = function(e, n, i) {
-        var t, l = {},
-          d = null,
+        var t, s = {},
+          l = null,
           c = null;
-        for (t in void 0 !== i && (d = "" + i), void 0 !== n.key && (d = "" + n.key), void 0 !== n.ref && (c = n.ref), n) o.call(n, t) && !s.hasOwnProperty(t) && (l[t] = n[t]);
+        for (t in void 0 !== i && (l = "" + i), void 0 !== n.key && (l = "" + n.key), void 0 !== n.ref && (c = n.ref), n) o.call(n, t) && !d.hasOwnProperty(t) && (s[t] = n[t]);
         if (e && e.defaultProps)
-          for (t in n = e.defaultProps) void 0 === l[t] && (l[t] = n[t]);
+          for (t in n = e.defaultProps) void 0 === s[t] && (s[t] = n[t]);
         return {
           $$typeof: a,
           type: e,
-          key: d,
+          key: l,
           ref: c,
-          props: l,
+          props: s,
           _owner: r.current
         }
       }
@@ -52,7 +52,7 @@ _global.SENTRY_RELEASE = {
     1359: (e, n, i) => {
       "use strict";
       i.d(n, {
-        A: () => d
+        A: () => l
       });
       var t = i(1482),
         a = i.n(t);
@@ -85,13 +85,13 @@ _global.SENTRY_RELEASE = {
             currentSite: e
           }
         })(),
-        s = r?.id,
-        l = /Mobi/i.test(window.navigator.userAgent) ? "mobile" : "desktop",
-        d = e => {
+        d = r?.id,
+        s = /Mobi/i.test(window.navigator.userAgent) ? "mobile" : "desktop",
+        l = e => {
           const n = {
             ...e,
-            environment: s,
-            display_type: l
+            environment: d,
+            display_type: s
           };
           a().dataLayer({
             dataLayer: n
@@ -102,7 +102,7 @@ _global.SENTRY_RELEASE = {
       "use strict";
       i.r(n), i.d(n, {
         withGtmTracking: () => o,
-        withLocale: () => l,
+        withLocale: () => s,
         withMediaBasedProps: () => f,
         withTranslations: () => v
       });
@@ -115,21 +115,21 @@ _global.SENTRY_RELEASE = {
         }
       }))(e, n);
       var r = i(8407),
-        s = i(136);
-      const l = e => n => ((e, n) => {
-        const i = (0, r.useReactiveVar)(s.locale);
+        d = i(136);
+      const s = e => n => ((e, n) => {
+        const i = (0, r.useReactiveVar)(d.locale);
         return (0, a.jsx)(e, {
           ...n,
           locale: i
         })
       })(e, n);
-      var d = i(1403),
+      var l = i(1403),
         c = i(4252),
         u = i.n(c);
       const f = function(e) {
         let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 250;
         return i => ((e, n, i) => {
-          const [t, o] = (0, d.useState)(n), r = e => {
+          const [t, o] = (0, l.useState)(n), r = e => {
             let n = e;
             const i = n?.items;
             if (i?.length) {
@@ -147,7 +147,7 @@ _global.SENTRY_RELEASE = {
               }
             })), n) : n
           };
-          return (0, d.useEffect)((() => {
+          return (0, l.useEffect)((() => {
             const e = u().debounce((() => {
               o(r(n))
             }), i);
@@ -339,14 +339,14 @@ _global.SENTRY_RELEASE = {
         e.hasOwnProperty("loc") && (i.loc = e.loc);
         var o = t[n] || new Set,
           r = new Set,
-          s = new Set;
+          d = new Set;
         for (o.forEach((function(e) {
-            s.add(e)
-          })); s.size > 0;) {
-          var l = s;
-          s = new Set, l.forEach((function(e) {
+            d.add(e)
+          })); d.size > 0;) {
+          var s = d;
+          d = new Set, s.forEach((function(e) {
             r.has(e) || (r.add(e), (t[e] || new Set).forEach((function(e) {
-              s.add(e)
+              d.add(e)
             })))
           }))
         }
