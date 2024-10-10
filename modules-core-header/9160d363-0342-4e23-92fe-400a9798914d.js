@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       n = (new Error).stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "bde86517-ff39-4b33-947e-046a8001e559", e._sentryDebugIdIdentifier = "sentry-dbid-bde86517-ff39-4b33-947e-046a8001e559")
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "9160d363-0342-4e23-92fe-400a9798914d", e._sentryDebugIdIdentifier = "sentry-dbid-9160d363-0342-4e23-92fe-400a9798914d")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -15,7 +15,7 @@ var _global = "undefined" != typeof window ? window : "undefined" != typeof glob
 _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
-  [375], {
+  [994], {
     8613: (e, n, t) => {
       t.r(n), t.d(n, {
         RemoveScroll: () => Y

@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       n = (new Error).stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "2f1e9b64-2cf8-44a4-93f0-19a94bc43838", e._sentryDebugIdIdentifier = "sentry-dbid-2f1e9b64-2cf8-44a4-93f0-19a94bc43838")
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "dfa15b89-0120-4f3d-9335-c5140e1dcc19", e._sentryDebugIdIdentifier = "sentry-dbid-dfa15b89-0120-4f3d-9335-c5140e1dcc19")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -15,7 +15,7 @@ var _global = "undefined" != typeof window ? window : "undefined" != typeof glob
 _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
-  [613, 375], {
+  [613, 994], {
     8613: (e, n, t) => {
       t.r(n), t.d(n, {
         RemoveScroll: () => B
@@ -93,7 +93,7 @@ _global.SENTRY_RELEASE = {
           }, e), n
         }(),
         l = function() {},
-        f = o.forwardRef((function(e, n) {
+        d = o.forwardRef((function(e, n) {
           var t = o.useRef(null),
             a = o.useState({
               onScrollCapture: l,
@@ -102,16 +102,16 @@ _global.SENTRY_RELEASE = {
             }),
             c = a[0],
             i = a[1],
-            f = e.forwardProps,
-            s = e.children,
-            d = e.className,
+            d = e.forwardProps,
+            f = e.children,
+            s = e.className,
             p = e.removeScrollBar,
             h = e.enabled,
             v = e.shards,
             g = e.sideCar,
             m = e.noIsolation,
-            y = e.inert,
-            b = e.allowPinchZoom,
+            b = e.inert,
+            y = e.allowPinchZoom,
             w = e.as,
             E = void 0 === w ? "div" : w,
             C = e.gapMode,
@@ -147,27 +147,27 @@ _global.SENTRY_RELEASE = {
             removeScrollBar: p,
             shards: v,
             noIsolation: m,
-            inert: y,
+            inert: b,
             setCallbacks: i,
-            allowPinchZoom: !!b,
+            allowPinchZoom: !!y,
             lockRef: t,
             gapMode: C
-          }), f ? o.cloneElement(o.Children.only(s), (0, r.Cl)((0, r.Cl)({}, M), {
+          }), d ? o.cloneElement(o.Children.only(f), (0, r.Cl)((0, r.Cl)({}, M), {
             ref: _
           })) : o.createElement(E, (0, r.Cl)({}, M, {
-            className: d,
+            className: s,
             ref: _
-          }), s))
+          }), f))
         }));
-      f.defaultProps = {
+      d.defaultProps = {
         enabled: !0,
         removeScrollBar: !0,
         inert: !1
-      }, f.classNames = {
+      }, d.classNames = {
         fullWidth: c,
         zeroRight: a
       };
-      var s = function(e) {
+      var f = function(e) {
         var n = e.sideCar,
           t = (0, r.Tt)(e, ["sideCar"]);
         if (!n) throw new Error("Sidecar: please provide `sideCar` property to import the right car");
@@ -175,8 +175,8 @@ _global.SENTRY_RELEASE = {
         if (!a) throw new Error("Sidecar medium not found");
         return o.createElement(a, (0, r.Cl)({}, t))
       };
-      s.isSideCarExport = !0;
-      var d = function() {
+      f.isSideCarExport = !0;
+      var s = function() {
           var e = 0,
             n = null;
           return {
@@ -198,7 +198,7 @@ _global.SENTRY_RELEASE = {
           }
         },
         p = function() {
-          var e, n = (e = d(), function(n, t) {
+          var e, n = (e = s(), function(n, t) {
             o.useEffect((function() {
               return e.add(n),
                 function() {
@@ -229,7 +229,7 @@ _global.SENTRY_RELEASE = {
             l = e.gap;
           return void 0 === t && (t = "margin"), "\n  .".concat("with-scroll-bars-hidden", " {\n   overflow: hidden ").concat(r, ";\n   padding-right: ").concat(l, "px ").concat(r, ";\n  }\n  body {\n    overflow: hidden ").concat(r, ";\n    overscroll-behavior: contain;\n    ").concat([n && "position: relative ".concat(r, ";"), "margin" === t && "\n    padding-left: ".concat(o, "px;\n    padding-top: ").concat(i, "px;\n    padding-right: ").concat(u, "px;\n    margin-left:0;\n    margin-top:0;\n    margin-right: ").concat(l, "px ").concat(r, ";\n    "), "padding" === t && "padding-right: ".concat(l, "px ").concat(r, ";")].filter(Boolean).join(""), "\n  }\n  \n  .").concat(a, " {\n    right: ").concat(l, "px ").concat(r, ";\n  }\n  \n  .").concat(c, " {\n    margin-right: ").concat(l, "px ").concat(r, ";\n  }\n  \n  .").concat(a, " .").concat(a, " {\n    right: 0 ").concat(r, ";\n  }\n  \n  .").concat(c, " .").concat(c, " {\n    margin-right: 0 ").concat(r, ";\n  }\n  \n  body {\n    ").concat("--removed-body-scroll-bar-size", ": ").concat(l, "px;\n  }\n")
         },
-        y = function(e) {
+        b = function(e) {
           var n = e.noRelative,
             t = e.noImportant,
             r = e.gapMode,
@@ -258,18 +258,18 @@ _global.SENTRY_RELEASE = {
             styles: m(c, !n, a, t ? "" : "!important")
           })
         },
-        b = !1;
+        y = !1;
       if ("undefined" != typeof window) try {
         var w = Object.defineProperty({}, "passive", {
           get: function() {
-            return b = !0, !0
+            return y = !0, !0
           }
         });
         window.addEventListener("test", w, w), window.removeEventListener("test", w, w)
       } catch (e) {
-        b = !1
+        y = !1
       }
-      var E = !!b && {
+      var E = !!y && {
           passive: !1
         },
         C = function(e, n) {
@@ -351,12 +351,12 @@ _global.SENTRY_RELEASE = {
               c = t.current,
               i = "deltaX" in e ? e.deltaX : c[0] - o[0],
               l = "deltaY" in e ? e.deltaY : c[1] - o[1],
-              f = e.target,
-              s = Math.abs(i) > Math.abs(l) ? "h" : "v";
-            if ("touches" in e && "h" === s && "range" === f.type) return !1;
-            var d = S(s, f);
-            if (!d) return !0;
-            if (d ? r = s : (r = "v" === s ? "h" : "v", d = S(s, f)), !d) return !1;
+              d = e.target,
+              f = Math.abs(i) > Math.abs(l) ? "h" : "v";
+            if ("touches" in e && "h" === f && "range" === d.type) return !1;
+            var s = S(f, d);
+            if (!s) return !0;
+            if (s ? r = f : (r = "v" === f ? "h" : "v", s = S(f, d)), !s) return !1;
             if (!a.current && "changedTouches" in e && (i || l) && (a.current = r), !r) return !0;
             var p = a.current || r;
             return function(e, n, t, r, o) {
@@ -367,19 +367,19 @@ _global.SENTRY_RELEASE = {
                 i = t.target,
                 u = n.contains(i),
                 l = !1,
-                f = c > 0,
-                s = 0,
-                d = 0;
+                d = c > 0,
+                f = 0,
+                s = 0;
               do {
                 var p = _(e, i),
                   h = p[0],
                   v = p[1] - p[2] - a * h;
-                (h || v) && k(e, i) && (s += v, d += h), i = i instanceof ShadowRoot ? i.host : i.parentNode
+                (h || v) && k(e, i) && (f += v, s += h), i = i instanceof ShadowRoot ? i.host : i.parentNode
               } while (!u && i !== document.body || u && (n.contains(i) || n === i));
-              return (f && (Math.abs(s) < 1 || !1) || !f && (Math.abs(d) < 1 || !1)) && (l = !0), l
+              return (d && (Math.abs(f) < 1 || !1) || !d && (Math.abs(s) < 1 || !1)) && (l = !0), l
             }(p, n, e, "h" === p ? i : l)
           }), []),
-          f = o.useCallback((function(e) {
+          d = o.useCallback((function(e) {
             var t = e;
             if (P.length && P[P.length - 1] === i) {
               var r = "deltaY" in t ? R(t) : M(t),
@@ -396,7 +396,7 @@ _global.SENTRY_RELEASE = {
               }
             }
           }), []),
-          s = o.useCallback((function(e, t, r, o) {
+          f = o.useCallback((function(e, t, r, o) {
             var a = {
               name: e,
               delta: t,
@@ -410,42 +410,42 @@ _global.SENTRY_RELEASE = {
               }))
             }), 1)
           }), []),
-          d = o.useCallback((function(e) {
+          s = o.useCallback((function(e) {
             t.current = M(e), a.current = void 0
           }), []),
           h = o.useCallback((function(n) {
-            s(n.type, R(n), n.target, l(n, e.lockRef.current))
+            f(n.type, R(n), n.target, l(n, e.lockRef.current))
           }), []),
           v = o.useCallback((function(n) {
-            s(n.type, M(n), n.target, l(n, e.lockRef.current))
+            f(n.type, M(n), n.target, l(n, e.lockRef.current))
           }), []);
         o.useEffect((function() {
           return P.push(i), e.setCallbacks({
               onScrollCapture: h,
               onWheelCapture: h,
               onTouchMoveCapture: v
-            }), document.addEventListener("wheel", f, E), document.addEventListener("touchmove", f, E), document.addEventListener("touchstart", d, E),
+            }), document.addEventListener("wheel", d, E), document.addEventListener("touchmove", d, E), document.addEventListener("touchstart", s, E),
             function() {
               P = P.filter((function(e) {
                 return e !== i
-              })), document.removeEventListener("wheel", f, E), document.removeEventListener("touchmove", f, E), document.removeEventListener("touchstart", d, E)
+              })), document.removeEventListener("wheel", d, E), document.removeEventListener("touchmove", d, E), document.removeEventListener("touchstart", s, E)
             }
         }), []);
         var g = e.removeScrollBar,
           m = e.inert;
         return o.createElement(o.Fragment, null, m ? o.createElement(i, {
           styles: T(c)
-        }) : null, g ? o.createElement(y, {
+        }) : null, g ? o.createElement(b, {
           gapMode: e.gapMode
         }) : null)
-      }, u.useMedium(j), s);
+      }, u.useMedium(j), f);
       var j, I = o.forwardRef((function(e, n) {
-        return o.createElement(f, (0, r.Cl)({}, e, {
+        return o.createElement(d, (0, r.Cl)({}, e, {
           ref: n,
           sideCar: N
         }))
       }));
-      I.classNames = f.classNames;
+      I.classNames = d.classNames;
       const B = I
     },
     226: (e, n, t) => {
