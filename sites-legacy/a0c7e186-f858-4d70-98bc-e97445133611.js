@@ -1,8 +1,8 @@
 ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "a0c7e186-f858-4d70-98bc-e97445133611", e._sentryDebugIdIdentifier = "sentry-dbid-a0c7e186-f858-4d70-98bc-e97445133611")
+      t = (new Error).stack;
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "a0c7e186-f858-4d70-98bc-e97445133611", e._sentryDebugIdIdentifier = "sentry-dbid-a0c7e186-f858-4d70-98bc-e97445133611")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -16,26 +16,26 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_legacy = self.webpackChunk_rockstargames_sites_legacy || []).push([
   [977], {
-    11650: (e, a, t) => {
+    11650: (e, t, n) => {
       "use strict";
-      var n = t(17254);
+      var a = n(17254);
 
       function o() {}
 
       function r() {}
       r.resetWarningCache = o, e.exports = function() {
-        function e(e, a, t, o, r, s) {
-          if (s !== n) {
+        function e(e, t, n, o, r, s) {
+          if (s !== a) {
             var d = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
             throw d.name = "Invariant Violation", d
           }
         }
 
-        function a() {
+        function t() {
           return e
         }
         e.isRequired = e;
-        var t = {
+        var n = {
           array: e,
           bigint: e,
           bool: e,
@@ -45,24 +45,24 @@ _global.SENTRY_RELEASE = {
           string: e,
           symbol: e,
           any: e,
-          arrayOf: a,
+          arrayOf: t,
           element: e,
           elementType: e,
-          instanceOf: a,
+          instanceOf: t,
           node: e,
-          objectOf: a,
-          oneOf: a,
-          oneOfType: a,
-          shape: a,
-          exact: a,
+          objectOf: t,
+          oneOf: t,
+          oneOfType: t,
+          shape: t,
+          exact: t,
           checkPropTypes: r,
           resetWarningCache: o
         };
-        return t.PropTypes = t, t
+        return n.PropTypes = n, n
       }
     },
-    37977: (e, a, t) => {
-      e.exports = t(11650)()
+    37977: (e, t, n) => {
+      e.exports = n(11650)()
     },
     17254: e => {
       "use strict";

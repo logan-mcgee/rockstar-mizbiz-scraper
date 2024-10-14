@@ -33,21 +33,21 @@ _global.SENTRY_RELEASE = {
           location: n,
           onNavigate: t,
           searchConfig: f,
-          routeOptions: b
+          routeOptions: i
         } = e;
-        const i = (0, o.my)(d.default, {
+        const c = (0, o.my)(d.default, {
           env: r,
           token: (0, o.UT)(null),
           tokenPing: (0, o.UT)(s),
           tokenPingExpires: (0, o.UT)(null),
           typePolicies: {}
         });
-        return (0, l.jsx)(i, {
+        return (0, l.jsx)(c, {
           navData: a,
           location: n,
           onNavigate: t,
           searchConfig: f,
-          routeOptions: b
+          routeOptions: i
         })
       }
     }

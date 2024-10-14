@@ -22,22 +22,22 @@ _global.SENTRY_RELEASE = {
         Lightbox_Close_Button_Tooltip: () => a,
         Lightbox_Download_Button_Label: () => r,
         Lightbox_Download_Button_Tooltip: () => L,
-        Lightbox_Open_Button_Label: () => f,
+        Lightbox_Open_Button_Label: () => h,
         Lightbox_Reset_Zoom_Button_Label: () => d,
         Lightbox_Reset_Zoom_Button_Tooltip: () => s,
-        Lightbox_Zoom_In_Button_Label: () => b,
-        Lightbox_Zoom_In_Button_Tooltip: () => l,
-        Lightbox_Zoom_Out_Button_Label: () => n,
+        Lightbox_Zoom_In_Button_Label: () => l,
+        Lightbox_Zoom_In_Button_Tooltip: () => n,
+        Lightbox_Zoom_Out_Button_Label: () => b,
         Lightbox_Zoom_Out_Button__Tooltip: () => i,
         Lightbox_Zoom_Slider_Label: () => u,
         Lightbox_Zoom_Slider_Tooltip: () => g,
-        default: () => h
+        default: () => f
       });
       var _ = "Закрыть всплывающее окно",
         a = "Нажмите {shortcut}",
-        b = "Увеличить размер изображения",
-        l = "Нажмите {shortcut}",
-        n = "Уменьшить размер изображения",
+        l = "Увеличить размер изображения",
+        n = "Нажмите {shortcut}",
+        b = "Уменьшить размер изображения",
         i = "Нажмите {shortcut}",
         d = "Вернуться к стандартному размеру изображения",
         s = "Нажмите {shortcut}",
@@ -45,13 +45,13 @@ _global.SENTRY_RELEASE = {
         g = "{zoom}%",
         r = "Загрузить",
         L = "Загрузить",
-        f = "Увеличить изображение",
-        h = {
+        h = "Увеличить изображение",
+        f = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: a,
-          Lightbox_Zoom_In_Button_Label: b,
-          Lightbox_Zoom_In_Button_Tooltip: l,
-          Lightbox_Zoom_Out_Button_Label: n,
+          Lightbox_Zoom_In_Button_Label: l,
+          Lightbox_Zoom_In_Button_Tooltip: n,
+          Lightbox_Zoom_Out_Button_Label: b,
           Lightbox_Zoom_Out_Button__Tooltip: i,
           Lightbox_Reset_Zoom_Button_Label: d,
           Lightbox_Reset_Zoom_Button_Tooltip: s,
@@ -59,7 +59,7 @@ _global.SENTRY_RELEASE = {
           Lightbox_Zoom_Slider_Tooltip: g,
           Lightbox_Download_Button_Label: r,
           Lightbox_Download_Button_Tooltip: L,
-          Lightbox_Open_Button_Label: f
+          Lightbox_Open_Button_Label: h
         }
     }
   }

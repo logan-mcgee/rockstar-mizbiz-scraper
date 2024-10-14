@@ -75,8 +75,8 @@ _global.SENTRY_RELEASE = {
       });
       var t = s(74401),
         r = s(42756),
-        o = s(40581),
-        c = s(34634);
+        c = s(40581),
+        o = s(34634);
       const d = {
           visible: {
             opacity: 1,
@@ -127,17 +127,17 @@ _global.SENTRY_RELEASE = {
             brands: a,
             legalText: s
           } = l();
-          return (0, b.jsxs)(o.motion.div, {
+          return (0, b.jsxs)(c.motion.div, {
             className: f.content,
             initial: "hidden",
             animate: "visible",
             variants: e ? d : void 0,
-            children: [(0, b.jsx)(o.motion.div, {
+            children: [(0, b.jsx)(c.motion.div, {
               variants: e ? m : void 0,
-              children: (0, b.jsx)(c.A, {
+              children: (0, b.jsx)(o.A, {
                 brands: a
               })
-            }), s && (0, b.jsx)(o.motion.div, {
+            }), s && (0, b.jsx)(c.motion.div, {
               className: f.legalText,
               variants: e ? m : void 0,
               children: (0, b.jsx)("p", {
@@ -154,12 +154,12 @@ _global.SENTRY_RELEASE = {
             hasBackgroundImage: a,
             hasForegroundImage: s,
             className: r,
-            imageStyles: c,
+            imageStyles: o,
             foregroundImageStyles: m
           } = l();
-          return (0, b.jsxs)(o.motion.div, {
+          return (0, b.jsxs)(c.motion.div, {
             className: (0, t.classList)("rockstargames-sites-legacyb2b8cd4005cc08e559780a20041d59a2", r),
-            style: c,
+            style: o,
             initial: "hidden",
             animate: "visible",
             variants: e ? d : void 0,
@@ -239,23 +239,23 @@ _global.SENTRY_RELEASE = {
             enablePlatforms: t = !1
           } = e;
           const {
-            isMobile: o
+            isMobile: c
           } = (0, r.useWindowResize)(), {
-            track: c
+            track: o
           } = (0, x.useGtmTrack)();
           return a?.buttons?.length ? (0, b.jsxs)("section", {
-            className: [w.ctaAndPlatformContainer, o ? w.bottomEdge : ""].join(" "),
+            className: [w.ctaAndPlatformContainer, c ? w.bottomEdge : ""].join(" "),
             children: [(0, b.jsx)("div", {
               className: w.buttons,
               style: {
-                width: o ? "100%" : ""
+                width: c ? "100%" : ""
               },
               children: a?.buttons.map((e => ((e, a) => {
                 const {
                   key: s,
                   label: t,
-                  name: o,
-                  icon: c,
+                  name: c,
+                  icon: o,
                   primary: d,
                   type: m,
                   href: i
@@ -268,7 +268,7 @@ _global.SENTRY_RELEASE = {
                       onClick: () => {
                         (0, r.detectIfWeShouldAnchorSomewhere)(), a({
                           event: "add_to_wishlist",
-                          text: (o ?? t).toLowerCase(),
+                          text: (c ?? t).toLowerCase(),
                           element_placement: "hero",
                           link_url: i
                         })
@@ -295,14 +295,14 @@ _global.SENTRY_RELEASE = {
                           event: "cta_buy",
                           element_placement: "hero",
                           link_url: i,
-                          text: (o ?? t).toLowerCase()
+                          text: (c ?? t).toLowerCase()
                         })
                       },
                       children: (0, b.jsxs)("div", {
                         className: [d ? w.primary : "", w.cta].filter((e => e)).join(" "),
                         children: [e?.icon && (0, b.jsx)("img", {
                           className: w.platformIcon,
-                          src: z(c) || "",
+                          src: z(o) || "",
                           alt: t,
                           "aria-label": t
                         }), (0, b.jsx)("div", {
@@ -318,7 +318,7 @@ _global.SENTRY_RELEASE = {
                       onClick: () => {
                         a({
                           event: "cta_watch_video",
-                          text: (o ?? t).toLowerCase(),
+                          text: (c ?? t).toLowerCase(),
                           link_url: i,
                           element_placement: "hero"
                         })
@@ -327,7 +327,7 @@ _global.SENTRY_RELEASE = {
                         className: [d ? w.primary : "", w.cta].filter((e => e)).join(" "),
                         children: [e?.icon && (0, b.jsx)("img", {
                           className: w.platformIcon,
-                          src: z(c) || "",
+                          src: z(o) || "",
                           alt: t,
                           "aria-label": t
                         }), (0, b.jsx)("div", {
@@ -343,7 +343,7 @@ _global.SENTRY_RELEASE = {
                       onClick: () => {
                         a({
                           event: "cta_other",
-                          text: (o ?? t).toLowerCase(),
+                          text: (c ?? t).toLowerCase(),
                           link_url: i,
                           element_placement: "hero"
                         })
@@ -352,7 +352,7 @@ _global.SENTRY_RELEASE = {
                         className: [d ? w.primary : "", w.cta].filter((e => e)).join(" "),
                         children: [e?.icon && (0, b.jsx)("img", {
                           className: w.platformIcon,
-                          src: z(c) || "",
+                          src: z(o) || "",
                           alt: t,
                           "aria-label": t
                         }), (0, b.jsx)("div", {
@@ -362,8 +362,8 @@ _global.SENTRY_RELEASE = {
                       })
                     }, s)
                 }
-              })(e, (e => c(e)))))
-            }), o && t && (0, b.jsx)("div", {
+              })(e, (e => o(e)))))
+            }), c && t && (0, b.jsx)("div", {
               className: w.platformSection,
               children: s?.map((e => (0, b.jsxs)("div", {
                 className: w.col,
@@ -399,7 +399,7 @@ _global.SENTRY_RELEASE = {
               breakpoints: a
             } = (0, r.useWindowResize)(),
             {
-              animated: c,
+              animated: o,
               brands: d,
               ctas: m,
               platformCollection: i,
@@ -417,12 +417,12 @@ _global.SENTRY_RELEASE = {
           } catch (e) {
             y = s(63798)(`./${x}.svg`)
           }
-          return (0, b.jsxs)(o.motion.div, {
+          return (0, b.jsxs)(c.motion.div, {
             className: (0, t.classList)(N.hero, g),
             style: p,
             initial: "hidden",
             animate: "visible",
-            variants: c ? h : void 0,
+            variants: o ? h : void 0,
             "data-type": "hero",
             children: [(0, b.jsxs)("div", {
               className: N.images,
@@ -432,14 +432,14 @@ _global.SENTRY_RELEASE = {
                 className: N.foreground,
                 style: k ?? {}
               })]
-            }), (0, b.jsx)(o.motion.div, {
+            }), (0, b.jsx)(c.motion.div, {
               className: N.content,
               initial: "hidden",
               animate: "visible",
-              variants: c ? h : void 0,
-              children: (0, b.jsxs)(o.motion.div, {
+              variants: o ? h : void 0,
+              children: (0, b.jsxs)(c.motion.div, {
                 className: N.brand,
-                variants: c ? _ : void 0,
+                variants: o ? _ : void 0,
                 children: [x && (0, b.jsx)("div", {
                   className: N.brandLogo,
                   children: (0, b.jsx)("img", {
@@ -476,8 +476,8 @@ _global.SENTRY_RELEASE = {
             animated: a = !1,
             content: {
               brands: s = [],
-              platformCollection: o,
-              enablePlatforms: c,
+              platformCollection: c,
+              enablePlatforms: o,
               description: d = "",
               legalText: m = "",
               title: i = "",
@@ -509,13 +509,13 @@ _global.SENTRY_RELEASE = {
                 s = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "en_us",
                 t = arguments.length > 3 ? arguments[3] : void 0;
               const r = e?.[a]?.image?.full_src,
-                o = e?.[a]?.image?.sources?.[s];
-              return x(o ?? r ?? t)
+                c = e?.[a]?.image?.sources?.[s];
+              return x(c ?? r ?? t)
             },
             T = (e, a, s, t) => {
               const r = e?.[s],
-                o = a?.[s]?.full_src;
-              return x(r ?? o ?? t)
+                c = a?.[s]?.full_src;
+              return x(r ?? c ?? t)
             },
             M = x(y?.mask?.full_src ?? null),
             A = T(C, y, "mobile", null),
@@ -539,9 +539,9 @@ _global.SENTRY_RELEASE = {
                 Object.getOwnPropertyNames(e[t]).forEach((r => {
                   if (s.has(r)) {
                     const {
-                      unit: o,
-                      value: c
-                    } = e[t][r], d = s.get(r), m = o?.length && c?.length ? `${c}${o}` : void 0;
+                      unit: c,
+                      value: o
+                    } = e[t][r], d = s.get(r), m = c?.length && o?.length ? `${o}${c}` : void 0;
                     m && (a = {
                       ...a,
                       [`${d}${t}`]: `${m}`
@@ -590,8 +590,8 @@ _global.SENTRY_RELEASE = {
               brands: s,
               className: u,
               ctas: N,
-              platformCollection: o,
-              enablePlatforms: c,
+              platformCollection: c,
+              enablePlatforms: o,
               description: d,
               expandingButton: w,
               hasBackgroundImage: F,
@@ -614,8 +614,8 @@ _global.SENTRY_RELEASE = {
                 }
               })(), k && (0, b.jsx)(j, {
                 ctas: N,
-                platformCollection: o,
-                enablePlatforms: c,
+                platformCollection: c,
+                enablePlatforms: o,
                 backgroundImageMask: M
               })]
             })
@@ -671,11 +671,11 @@ _global.SENTRY_RELEASE = {
       };
 
       function r(e) {
-        var a = o(e);
+        var a = c(e);
         return s(a)
       }
 
-      function o(e) {
+      function c(e) {
         if (!s.o(t, e)) {
           var a = new Error("Cannot find module '" + e + "'");
           throw a.code = "MODULE_NOT_FOUND", a
@@ -684,7 +684,7 @@ _global.SENTRY_RELEASE = {
       }
       r.keys = function() {
         return Object.keys(t)
-      }, r.resolve = o, e.exports = r, r.id = 63798
+      }, r.resolve = c, e.exports = r, r.id = 63798
     },
     11053: (e, a, s) => {
       var t = {
@@ -746,11 +746,11 @@ _global.SENTRY_RELEASE = {
       };
 
       function r(e) {
-        var a = o(e);
+        var a = c(e);
         return s(a)
       }
 
-      function o(e) {
+      function c(e) {
         if (!s.o(t, e)) {
           var a = new Error("Cannot find module '" + e + "'");
           throw a.code = "MODULE_NOT_FOUND", a
@@ -759,7 +759,7 @@ _global.SENTRY_RELEASE = {
       }
       r.keys = function() {
         return Object.keys(t)
-      }, r.resolve = o, e.exports = r, r.id = 11053
+      }, r.resolve = c, e.exports = r, r.id = 11053
     },
     78229: e => {
       "use strict";

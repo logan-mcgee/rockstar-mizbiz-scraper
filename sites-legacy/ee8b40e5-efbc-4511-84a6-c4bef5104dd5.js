@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "10d78203-8c58-4709-9c39-32963201cd9a", e._sentryDebugIdIdentifier = "sentry-dbid-10d78203-8c58-4709-9c39-32963201cd9a")
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "ee8b40e5-efbc-4511-84a6-c4bef5104dd5", e._sentryDebugIdIdentifier = "sentry-dbid-ee8b40e5-efbc-4511-84a6-c4bef5104dd5")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -15,46 +15,46 @@ var _global = "undefined" != typeof window ? window : "undefined" != typeof glob
 _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_legacy = self.webpackChunk_rockstargames_sites_legacy || []).push([
-  [969], {
+  [861], {
     87240: (e, a, n) => {
       "use strict";
       n.d(a, {
-        A: () => v
+        A: () => k
       });
       var i = n(71403),
         t = n(25076),
         d = n(26177),
-        l = n(88038),
-        r = n(58407),
-        s = n(93665),
-        o = n(74401),
+        r = n(88038),
+        l = n(58407),
+        o = n(93665),
+        s = n(74401),
         c = n(31879),
         u = n(42756),
         f = n(97655),
         m = n(85770);
-      var k = n(46632);
-      const v = (0, u.withTranslations)((e => {
+      var v = n(46632);
+      const k = (0, u.withTranslations)((e => {
         let {
           t: a
         } = e;
-        const [, n] = (0, s.h)(), [v, b] = (0, t.useSearchParams)(), {
+        const [, n] = (0, o.h)(), [k, b] = (0, t.useSearchParams)(), {
           pathname: g
         } = (0, t.useLocation)(), {
           data: y,
           loading: p
-        } = (0, r.useQuery)(f.MetaUrlInfo, {
+        } = (0, l.useQuery)(f.MetaUrlInfo, {
           variables: {
             url: g.replace(/\/$/, "")
           },
           setTitleDataPath: "metaUrlInfo.title"
         }), h = (0, u.useLocale)(), N = y?.metaUrlInfo?.tina;
         return (0, i.useEffect)((() => {
-          const e = v.get("video");
+          const e = k.get("video");
           if (!e || !N) return void n(null);
           const i = Number(N?.payload?.content[0].content[0]?.tag ?? 0);
           let t;
-          t = 40 === i && ["pt_br", "zh_tw", "zh_hans", "ko_kr", "ru_ru", "ja_jp", "pl_pl"].includes(h) ? "en_us" : h;
-          const d = (0, k.jsx)(c.VideoWithPlaylist, {
+          t = 40 === i && "ru_ru" === h ? "en_us" : h;
+          const d = (0, v.jsx)(c.VideoWithPlaylist, {
               tagIds: [i],
               locale: t,
               playlistTitle: a("Up Next"),
@@ -62,32 +62,32 @@ _global.SENTRY_RELEASE = {
               currentVideoId: e,
               isModal: !0
             }),
-            l = {
+            r = {
               left: window.innerWidth / 2,
               top: window.innerHeight / 2
             };
           n({
             content: d,
-            rect: l,
+            rect: r,
             onClose: () => {
               b({})
             },
             title: "Video Modal",
             contentClassName: "rockstargames-sites-legacya1b74831bac97f1749e525bcc2aeccb2"
           })
-        }), [v.get("video"), h, N]), (0, i.useEffect)((() => () => n(null)), []), p || N ? p ? (0, k.jsx)("div", {
+        }), [k.get("video"), h, N]), (0, i.useEffect)((() => () => n(null)), []), p || N ? p ? (0, v.jsx)("div", {
           className: "rockstargames-sites-legacye7319efabeddf6cdc8c95f038912d0c1",
-          children: (0, k.jsx)(d.A, {})
-        }) : (0, k.jsx)(o.TinaParser, {
+          children: (0, v.jsx)(d.A, {})
+        }) : (0, v.jsx)(s.TinaParser, {
           components: m.componentsForTinaParser,
           tina: N
-        }) : (0, k.jsx)(l.A, {})
+        }) : (0, v.jsx)(r.A, {})
       }))
     },
     54506: (e, a, n) => {
       "use strict";
       n.d(a, {
-        A: () => o
+        A: () => s
       });
       var i = n(71403);
       n(94566), (0, n(96717).createDevLocaleHook)({
@@ -100,20 +100,20 @@ _global.SENTRY_RELEASE = {
           brand: null,
           headerHidden: !1
         }),
-        l = (e, a) => d({
+        r = (e, a) => d({
           ...d(),
           [e]: a
         }),
-        r = () => {
+        l = () => {
           const e = (0, t.useReactiveVar)(d);
           return {
-            setState: l,
+            setState: r,
             state: e
           }
         };
       n(7471);
-      var s = n(46632);
-      const o = e => {
+      var o = n(46632);
+      const s = e => {
         let {
           children: a,
           brandStyles: n,
@@ -121,47 +121,44 @@ _global.SENTRY_RELEASE = {
         } = e;
         const {
           setState: d
-        } = r();
+        } = l();
         return (0, i.useLayoutEffect)((() => {
           d("brand", n)
-        }), []), (0, s.jsx)("div", {
+        }), []), (0, o.jsx)("div", {
           className: "rockstargames-sites-legacyfa85682f753d59e768dbb3eedf01a62a",
           "data-brand": n,
           children: a
         })
       }
     },
-    74969: (e, a, n) => {
+    92861: (e, a, n) => {
       "use strict";
       n.r(a), n.d(a, {
-        default: () => o
+        default: () => s
       });
       var i = n(25076),
         t = n(88038),
         d = n(99718),
-        l = n(87240),
-        r = n(54506),
-        s = n(46632);
-      const o = (0, d.A)((e => {
+        r = n(87240),
+        l = n(54506),
+        o = n(46632);
+      const s = (0, d.A)((e => {
         let {
           setHeaderHidden: a
         } = e;
         const n = [{
           path: "/",
-          element: (0, s.jsx)(l.A, {})
+          element: (0, o.jsx)(r.A, {})
         }, {
           path: "*",
-          element: (0, s.jsx)(t.A, {
+          element: (0, o.jsx)(t.A, {
             error: {
               code: window?.env?.responseStatusCode ?? 398
             }
           })
-        }, {
-          path: "/bully/*",
-          element: (0, s.jsx)(l.A, {})
         }];
-        return (0, s.jsx)(r.A, {
-          brandStyles: "bully",
+        return (0, o.jsx)(l.A, {
+          brandStyles: "reddeadredemption",
           setHeaderHidden: a,
           children: (0, i.useRoutes)(n)
         })
@@ -421,19 +418,19 @@ _global.SENTRY_RELEASE = {
         };
         e.hasOwnProperty("loc") && (n.loc = e.loc);
         var d = i[a] || new Set,
-          l = new Set,
-          r = new Set;
+          r = new Set,
+          l = new Set;
         for (d.forEach((function(e) {
-            r.add(e)
-          })); r.size > 0;) {
-          var s = r;
-          r = new Set, s.forEach((function(e) {
-            l.has(e) || (l.add(e), (i[e] || new Set).forEach((function(e) {
-              r.add(e)
+            l.add(e)
+          })); l.size > 0;) {
+          var o = l;
+          l = new Set, o.forEach((function(e) {
+            r.has(e) || (r.add(e), (i[e] || new Set).forEach((function(e) {
+              l.add(e)
             })))
           }))
         }
-        return l.forEach((function(a) {
+        return r.forEach((function(a) {
           var i = t(e, a);
           i && n.definitions.push(i)
         })), n

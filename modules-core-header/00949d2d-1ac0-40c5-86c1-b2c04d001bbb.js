@@ -29,19 +29,19 @@ _global.SENTRY_RELEASE = {
           children: o,
           history: l
         } = e;
-        const [s, r] = (0, d.useState)({
+        const [c, s] = (0, d.useState)({
           action: l.action,
           location: l.location
         });
         return (0, d.useLayoutEffect)((() => l.listen(((e, a) => {
-          r({
+          s({
             location: e,
             action: a
           })
         }))), [l]), (0, t.jsx)(n.Router, {
           basename: a,
-          location: s.location,
-          navigationType: s.action,
+          location: c.location,
+          navigationType: c.action,
           navigator: l,
           children: o
         })

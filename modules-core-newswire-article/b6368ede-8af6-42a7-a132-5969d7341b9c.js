@@ -54,16 +54,16 @@ _global.SENTRY_RELEASE = {
         i = Object.prototype,
         r = i.hasOwnProperty,
         l = i.toString,
-        s = o ? o.toStringTag : void 0;
+        c = o ? o.toStringTag : void 0;
       t.exports = function(t) {
-        var e = r.call(t, s),
-          n = t[s];
+        var e = r.call(t, c),
+          n = t[c];
         try {
-          t[s] = void 0;
+          t[c] = void 0;
           var o = !0
         } catch (t) {}
         var i = l.call(t);
-        return o && (e ? t[s] = n : delete t[s]), i
+        return o && (e ? t[c] = n : delete t[c]), i
       }
     },
     84968: t => {
@@ -90,18 +90,18 @@ _global.SENTRY_RELEASE = {
         i = n(92346),
         r = n(58972),
         l = Math.max,
-        s = Math.min;
+        c = Math.min;
       t.exports = function(t, e, n) {
-        var c, a, f, u, d, p, m = 0,
+        var s, a, f, u, d, p, m = 0,
           g = !1,
           h = !1,
           y = !0;
         if ("function" != typeof t) throw new TypeError("Expected a function");
 
         function x(e) {
-          var n = c,
+          var n = s,
             o = a;
-          return c = a = void 0, m = e, u = t.apply(o, n)
+          return s = a = void 0, m = e, u = t.apply(o, n)
         }
 
         function w(t) {
@@ -114,18 +114,18 @@ _global.SENTRY_RELEASE = {
           if (w(t)) return b(t);
           d = setTimeout(v, function(t) {
             var n = e - (t - p);
-            return h ? s(n, f - (t - m)) : n
+            return h ? c(n, f - (t - m)) : n
           }(t))
         }
 
         function b(t) {
-          return d = void 0, y && c ? x(t) : (c = a = void 0, u)
+          return d = void 0, y && s ? x(t) : (s = a = void 0, u)
         }
 
         function T() {
           var t = i(),
             n = w(t);
-          if (c = arguments, a = this, p = t, n) {
+          if (s = arguments, a = this, p = t, n) {
             if (void 0 === d) return function(t) {
               return m = t, d = setTimeout(v, e), g ? x(t) : u
             }(p);
@@ -134,7 +134,7 @@ _global.SENTRY_RELEASE = {
           return void 0 === d && (d = setTimeout(v, e)), u
         }
         return e = r(e) || 0, o(n) && (g = !!n.leading, f = (h = "maxWait" in n) ? l(r(n.maxWait) || 0, e) : f, y = "trailing" in n ? !!n.trailing : y), T.cancel = function() {
-          void 0 !== d && clearTimeout(d), m = 0, c = p = a = d = void 0
+          void 0 !== d && clearTimeout(d), m = 0, s = p = a = d = void 0
         }, T.flush = function() {
           return void 0 === d ? u : b(i())
         }, T
@@ -169,8 +169,8 @@ _global.SENTRY_RELEASE = {
         i = n(27335),
         r = n(87416),
         l = /^[-+]0x[0-9a-f]+$/i,
-        s = /^0b[01]+$/i,
-        c = /^0o[0-7]+$/i,
+        c = /^0b[01]+$/i,
+        s = /^0o[0-7]+$/i,
         a = parseInt;
       t.exports = function(t) {
         if ("number" == typeof t) return t;
@@ -181,8 +181,8 @@ _global.SENTRY_RELEASE = {
         }
         if ("string" != typeof t) return 0 === t ? t : +t;
         t = o(t);
-        var n = s.test(t);
-        return n || c.test(t) ? a(t.slice(2), n ? 2 : 8) : l.test(t) ? NaN : +t
+        var n = c.test(t);
+        return n || s.test(t) ? a(t.slice(2), n ? 2 : 8) : l.test(t) ? NaN : +t
       }
     },
     26677: (t, e, n) => {
@@ -207,8 +207,8 @@ _global.SENTRY_RELEASE = {
         BN: () => p,
         ER: () => m,
         Ej: () => g,
-        UE: () => s,
-        UU: () => c,
+        UE: () => c,
+        UU: () => s,
         cY: () => d,
         jD: () => u,
         rD: () => r
@@ -221,13 +221,13 @@ _global.SENTRY_RELEASE = {
           floating: r
         } = t;
         const l = (0, o.TV)(e),
-          s = (0, o.Dz)(e),
-          c = (0, o.sq)(s),
+          c = (0, o.Dz)(e),
+          s = (0, o.sq)(c),
           a = (0, o.C0)(e),
           f = "y" === l,
           u = i.x + i.width / 2 - r.width / 2,
           d = i.y + i.height / 2 - r.height / 2,
-          p = i[c] / 2 - r[c] / 2;
+          p = i[s] / 2 - r[s] / 2;
         let m;
         switch (a) {
           case "top":
@@ -262,10 +262,10 @@ _global.SENTRY_RELEASE = {
         }
         switch ((0, o.Sg)(e)) {
           case "start":
-            m[s] -= p * (n && f ? -1 : 1);
+            m[c] -= p * (n && f ? -1 : 1);
             break;
           case "end":
-            m[s] += p * (n && f ? -1 : 1)
+            m[c] += p * (n && f ? -1 : 1)
         }
         return m
       }
@@ -274,9 +274,9 @@ _global.SENTRY_RELEASE = {
           placement: o = "bottom",
           strategy: r = "absolute",
           middleware: l = [],
-          platform: s
-        } = n, c = l.filter(Boolean), a = await (null == s.isRTL ? void 0 : s.isRTL(e));
-        let f = await s.getElementRects({
+          platform: c
+        } = n, s = l.filter(Boolean), a = await (null == c.isRTL ? void 0 : c.isRTL(e));
+        let f = await c.getElementRects({
             reference: t,
             floating: e,
             strategy: r
@@ -288,11 +288,11 @@ _global.SENTRY_RELEASE = {
           p = o,
           m = {},
           g = 0;
-        for (let n = 0; n < c.length; n++) {
+        for (let n = 0; n < s.length; n++) {
           const {
             name: l,
             fn: h
-          } = c[n], {
+          } = s[n], {
             x: y,
             y: x,
             data: w,
@@ -305,7 +305,7 @@ _global.SENTRY_RELEASE = {
             strategy: r,
             middlewareData: m,
             rects: f,
-            platform: s,
+            platform: c,
             elements: {
               reference: t,
               floating: e
@@ -317,7 +317,7 @@ _global.SENTRY_RELEASE = {
               ...m[l],
               ...w
             }
-          }, v && g <= 50 && (g++, "object" == typeof v && (v.placement && (p = v.placement), v.rects && (f = !0 === v.rects ? await s.getElementRects({
+          }, v && g <= 50 && (g++, "object" == typeof v && (v.placement && (p = v.placement), v.rects && (f = !0 === v.rects ? await c.getElementRects({
             reference: t,
             floating: e,
             strategy: r
@@ -341,8 +341,8 @@ _global.SENTRY_RELEASE = {
           x: i,
           y: r,
           platform: l,
-          rects: s,
-          elements: c,
+          rects: c,
+          elements: s,
           strategy: a
         } = t, {
           boundary: f = "clippingAncestors",
@@ -350,16 +350,16 @@ _global.SENTRY_RELEASE = {
           elementContext: d = "floating",
           altBoundary: p = !1,
           padding: m = 0
-        } = (0, o._3)(e, t), g = (0, o.nI)(m), h = c[p ? "floating" === d ? "reference" : "floating" : d], y = (0, o.B1)(await l.getClippingRect({
-          element: null == (n = await (null == l.isElement ? void 0 : l.isElement(h))) || n ? h : h.contextElement || await (null == l.getDocumentElement ? void 0 : l.getDocumentElement(c.floating)),
+        } = (0, o._3)(e, t), g = (0, o.nI)(m), h = s[p ? "floating" === d ? "reference" : "floating" : d], y = (0, o.B1)(await l.getClippingRect({
+          element: null == (n = await (null == l.isElement ? void 0 : l.isElement(h))) || n ? h : h.contextElement || await (null == l.getDocumentElement ? void 0 : l.getDocumentElement(s.floating)),
           boundary: f,
           rootBoundary: u,
           strategy: a
         })), x = "floating" === d ? {
-          ...s.floating,
+          ...c.floating,
           x: i,
           y: r
-        } : s.reference, w = await (null == l.getOffsetParent ? void 0 : l.getOffsetParent(c.floating)), v = await (null == l.isElement ? void 0 : l.isElement(w)) && await (null == l.getScale ? void 0 : l.getScale(w)) || {
+        } : c.reference, w = await (null == l.getOffsetParent ? void 0 : l.getOffsetParent(s.floating)), v = await (null == l.isElement ? void 0 : l.isElement(w)) && await (null == l.getScale ? void 0 : l.getScale(w)) || {
           x: 1,
           y: 1
         }, b = (0, o.B1)(l.convertOffsetParentRelativeRectToViewportRelativeRect ? await l.convertOffsetParentRelativeRectToViewportRelativeRect({
@@ -374,7 +374,7 @@ _global.SENTRY_RELEASE = {
           right: (b.right - y.right + g.right) / v.x
         }
       }
-      const s = t => ({
+      const c = t => ({
           name: "arrow",
           options: t,
           async fn(e) {
@@ -383,8 +383,8 @@ _global.SENTRY_RELEASE = {
               y: i,
               placement: r,
               rects: l,
-              platform: s,
-              elements: c,
+              platform: c,
+              elements: s,
               middlewareData: a
             } = e, {
               element: f,
@@ -398,16 +398,16 @@ _global.SENTRY_RELEASE = {
               },
               m = (0, o.Dz)(r),
               g = (0, o.sq)(m),
-              h = await s.getDimensions(f),
+              h = await c.getDimensions(f),
               y = "y" === m,
               x = y ? "top" : "left",
               w = y ? "bottom" : "right",
               v = y ? "clientHeight" : "clientWidth",
               b = l.reference[g] + l.reference[m] - p[m] - l.floating[g],
               T = p[m] - l.reference[m],
-              R = await (null == s.getOffsetParent ? void 0 : s.getOffsetParent(f));
+              R = await (null == c.getOffsetParent ? void 0 : c.getOffsetParent(f));
             let E = R ? R[v] : 0;
-            E && await (null == s.isElement ? void 0 : s.isElement(R)) || (E = c.floating[v] || l.floating[g]);
+            E && await (null == c.isElement ? void 0 : c.isElement(R)) || (E = s.floating[v] || l.floating[g]);
             const L = b / 2 - T / 2,
               _ = E / 2 - h[g] / 2 - 1,
               A = (0, o.jk)(d[x], _),
@@ -431,7 +431,7 @@ _global.SENTRY_RELEASE = {
             }
           }
         }),
-        c = function(t) {
+        s = function(t) {
           return void 0 === t && (t = {}), {
             name: "flip",
             options: t,
@@ -439,8 +439,8 @@ _global.SENTRY_RELEASE = {
               var n, i;
               const {
                 placement: r,
-                middlewareData: s,
-                rects: c,
+                middlewareData: c,
+                rects: s,
                 initialPlacement: a,
                 platform: f,
                 elements: u
@@ -453,7 +453,7 @@ _global.SENTRY_RELEASE = {
                 flipAlignment: y = !0,
                 ...x
               } = (0, o._3)(t, e);
-              if (null != (n = s.arrow) && n.alignmentOffset) return {};
+              if (null != (n = c.arrow) && n.alignmentOffset) return {};
               const w = (0, o.C0)(r),
                 v = (0, o.C0)(a) === a,
                 b = await (null == f.isRTL ? void 0 : f.isRTL(u.floating)),
@@ -462,9 +462,9 @@ _global.SENTRY_RELEASE = {
               const R = [a, ...T],
                 E = await l(e, x),
                 L = [];
-              let _ = (null == (i = s.flip) ? void 0 : i.overflows) || [];
+              let _ = (null == (i = c.flip) ? void 0 : i.overflows) || [];
               if (d && L.push(E[w]), p) {
-                const t = (0, o.w7)(r, c, b);
+                const t = (0, o.w7)(r, s, b);
                 L.push(E[t[0]], E[t[1]])
               }
               if (_ = [..._, {
@@ -472,7 +472,7 @@ _global.SENTRY_RELEASE = {
                   overflows: L
                 }], !L.every((t => t <= 0))) {
                 var A, O;
-                const t = ((null == (A = s.flip) ? void 0 : A.index) || 0) + 1,
+                const t = ((null == (A = c.flip) ? void 0 : A.index) || 0) + 1,
                   e = R[t];
                 if (e) return {
                   data: {
@@ -572,7 +572,7 @@ _global.SENTRY_RELEASE = {
                   placement: n,
                   platform: i,
                   elements: r
-                } = t, l = await (null == i.isRTL ? void 0 : i.isRTL(r.floating)), s = (0, o.C0)(n), c = (0, o.Sg)(n), a = "y" === (0, o.TV)(n), f = ["left", "top"].includes(s) ? -1 : 1, u = l && a ? -1 : 1, d = (0, o._3)(e, t);
+                } = t, l = await (null == i.isRTL ? void 0 : i.isRTL(r.floating)), c = (0, o.C0)(n), s = (0, o.Sg)(n), a = "y" === (0, o.TV)(n), f = ["left", "top"].includes(c) ? -1 : 1, u = l && a ? -1 : 1, d = (0, o._3)(e, t);
                 let {
                   mainAxis: p,
                   crossAxis: m,
@@ -587,7 +587,7 @@ _global.SENTRY_RELEASE = {
                   alignmentAxis: null,
                   ...d
                 };
-                return c && "number" == typeof g && (m = "end" === c ? -1 * g : g), a ? {
+                return s && "number" == typeof g && (m = "end" === s ? -1 * g : g), a ? {
                   x: m * u,
                   y: p * f
                 } : {
@@ -613,8 +613,8 @@ _global.SENTRY_RELEASE = {
                 y: i,
                 placement: r
               } = e, {
-                mainAxis: s = !0,
-                crossAxis: c = !1,
+                mainAxis: c = !0,
+                crossAxis: s = !1,
                 limiter: a = {
                   fn: t => {
                     let {
@@ -634,13 +634,13 @@ _global.SENTRY_RELEASE = {
               }, d = await l(e, f), p = (0, o.TV)((0, o.C0)(r)), m = (0, o.PG)(p);
               let g = u[m],
                 h = u[p];
-              if (s) {
+              if (c) {
                 const t = "y" === m ? "bottom" : "right",
                   e = g + d["y" === m ? "top" : "left"],
                   n = g - d[t];
                 g = (0, o.qE)(e, g, n)
               }
-              if (c) {
+              if (s) {
                 const t = "y" === p ? "bottom" : "right",
                   e = h + d["y" === p ? "top" : "left"],
                   n = h - d[t];
@@ -670,9 +670,9 @@ _global.SENTRY_RELEASE = {
                 y: i,
                 placement: r,
                 rects: l,
-                middlewareData: s
+                middlewareData: c
               } = e, {
-                offset: c = 0,
+                offset: s = 0,
                 mainAxis: a = !0,
                 crossAxis: f = !0
               } = (0, o._3)(t, e), u = {
@@ -681,7 +681,7 @@ _global.SENTRY_RELEASE = {
               }, d = (0, o.TV)(r), p = (0, o.PG)(d);
               let m = u[p],
                 g = u[d];
-              const h = (0, o._3)(c, e),
+              const h = (0, o._3)(s, e),
                 y = "number" == typeof h ? {
                   mainAxis: h,
                   crossAxis: 0
@@ -700,8 +700,8 @@ _global.SENTRY_RELEASE = {
                 var x, w;
                 const t = "y" === p ? "width" : "height",
                   e = ["top", "left"].includes((0, o.C0)(r)),
-                  n = l.reference[d] - l.floating[t] + (e && (null == (x = s.offset) ? void 0 : x[d]) || 0) + (e ? 0 : y.crossAxis),
-                  i = l.reference[d] + l.reference[t] + (e ? 0 : (null == (w = s.offset) ? void 0 : w[d]) || 0) - (e ? y.crossAxis : 0);
+                  n = l.reference[d] - l.floating[t] + (e && (null == (x = c.offset) ? void 0 : x[d]) || 0) + (e ? 0 : y.crossAxis),
+                  i = l.reference[d] + l.reference[t] + (e ? 0 : (null == (w = c.offset) ? void 0 : w[d]) || 0) - (e ? y.crossAxis : 0);
                 g < n ? g = n : g > i && (g = i)
               }
               return {
@@ -720,16 +720,16 @@ _global.SENTRY_RELEASE = {
                 placement: n,
                 rects: i,
                 platform: r,
-                elements: s
+                elements: c
               } = e, {
-                apply: c = (() => {}),
+                apply: s = (() => {}),
                 ...a
               } = (0, o._3)(t, e), f = await l(e, a), u = (0, o.C0)(n), d = (0, o.Sg)(n), p = "y" === (0, o.TV)(n), {
                 width: m,
                 height: g
               } = i.floating;
               let h, y;
-              "top" === u || "bottom" === u ? (h = u, y = d === (await (null == r.isRTL ? void 0 : r.isRTL(s.floating)) ? "start" : "end") ? "left" : "right") : (y = u, h = "end" === d ? "top" : "bottom");
+              "top" === u || "bottom" === u ? (h = u, y = d === (await (null == r.isRTL ? void 0 : r.isRTL(c.floating)) ? "start" : "end") ? "left" : "right") : (y = u, h = "end" === d ? "top" : "bottom");
               const x = g - f[h],
                 w = m - f[y],
                 v = !e.middlewareData.shift;
@@ -749,12 +749,12 @@ _global.SENTRY_RELEASE = {
                   i = (0, o.T9)(f.bottom, 0);
                 p ? T = m - 2 * (0 !== t || 0 !== e ? t + e : (0, o.T9)(f.left, f.right)) : b = g - 2 * (0 !== n || 0 !== i ? n + i : (0, o.T9)(f.top, f.bottom))
               }
-              await c({
+              await s({
                 ...e,
                 availableWidth: T,
                 availableHeight: b
               });
-              const R = await r.getDimensions(s.floating);
+              const R = await r.getDimensions(c.floating);
               return m !== R.width || g !== R.height ? {
                 reset: {
                   rects: !0
@@ -774,7 +774,7 @@ _global.SENTRY_RELEASE = {
         i = n(23340);
 
       function r(t) {
-        return c(t) ? (t.nodeName || "").toLowerCase() : "#document"
+        return s(t) ? (t.nodeName || "").toLowerCase() : "#document"
       }
 
       function l(t) {
@@ -782,12 +782,12 @@ _global.SENTRY_RELEASE = {
         return (null == t || null == (e = t.ownerDocument) ? void 0 : e.defaultView) || window
       }
 
-      function s(t) {
+      function c(t) {
         var e;
-        return null == (e = (c(t) ? t.ownerDocument : t.document) || window.document) ? void 0 : e.documentElement
+        return null == (e = (s(t) ? t.ownerDocument : t.document) || window.document) ? void 0 : e.documentElement
       }
 
-      function c(t) {
+      function s(t) {
         return t instanceof Node || t instanceof l(t).Node
       }
 
@@ -847,7 +847,7 @@ _global.SENTRY_RELEASE = {
 
       function w(t) {
         if ("html" === r(t)) return t;
-        const e = t.assignedSlot || t.parentNode || u(t) && t.host || s(t);
+        const e = t.assignedSlot || t.parentNode || u(t) && t.host || c(t);
         return u(e) ? e.host : e
       }
 
@@ -861,8 +861,8 @@ _global.SENTRY_RELEASE = {
         void 0 === e && (e = []), void 0 === n && (n = !0);
         const i = v(t),
           r = i === (null == (o = t.ownerDocument) ? void 0 : o.body),
-          s = l(i);
-        return r ? e.concat(s, s.visualViewport || [], d(i) ? i : [], s.frameElement && n ? b(s.frameElement) : []) : e.concat(i, b(i, [], n))
+          c = l(i);
+        return r ? e.concat(c, c.visualViewport || [], d(i) ? i : [], c.frameElement && n ? b(c.frameElement) : []) : e.concat(i, b(i, [], n))
       }
 
       function T(t) {
@@ -871,12 +871,12 @@ _global.SENTRY_RELEASE = {
           i = parseFloat(e.height) || 0;
         const r = f(t),
           l = r ? t.offsetWidth : n,
-          s = r ? t.offsetHeight : i,
-          c = (0, o.LI)(n) !== l || (0, o.LI)(i) !== s;
-        return c && (n = l, i = s), {
+          c = r ? t.offsetHeight : i,
+          s = (0, o.LI)(n) !== l || (0, o.LI)(i) !== c;
+        return s && (n = l, i = c), {
           width: n,
           height: i,
-          $: c
+          $: s
         }
       }
 
@@ -893,11 +893,11 @@ _global.SENTRY_RELEASE = {
             height: r,
             $: l
           } = T(e);
-        let s = (l ? (0, o.LI)(n.width) : n.width) / i,
-          c = (l ? (0, o.LI)(n.height) : n.height) / r;
-        return s && Number.isFinite(s) || (s = 1), c && Number.isFinite(c) || (c = 1), {
-          x: s,
-          y: c
+        let c = (l ? (0, o.LI)(n.width) : n.width) / i,
+          s = (l ? (0, o.LI)(n.height) : n.height) / r;
+        return c && Number.isFinite(c) || (c = 1), s && Number.isFinite(s) || (s = 1), {
+          x: c,
+          y: s
         }
       }
       const L = (0, o.Jx)(0);
@@ -913,18 +913,18 @@ _global.SENTRY_RELEASE = {
       function A(t, e, n, i) {
         void 0 === e && (e = !1), void 0 === n && (n = !1);
         const r = t.getBoundingClientRect(),
-          s = R(t);
-        let c = (0, o.Jx)(1);
-        e && (i ? a(i) && (c = E(i)) : c = E(t));
+          c = R(t);
+        let s = (0, o.Jx)(1);
+        e && (i ? a(i) && (s = E(i)) : s = E(t));
         const f = function(t, e, n) {
           return void 0 === e && (e = !1), !(!n || e && n !== l(t)) && e
-        }(s, n, i) ? _(s) : (0, o.Jx)(0);
-        let u = (r.left + f.x) / c.x,
-          d = (r.top + f.y) / c.y,
-          p = r.width / c.x,
-          m = r.height / c.y;
-        if (s) {
-          const t = l(s),
+        }(c, n, i) ? _(c) : (0, o.Jx)(0);
+        let u = (r.left + f.x) / s.x,
+          d = (r.top + f.y) / s.y,
+          p = r.width / s.x,
+          m = r.height / s.y;
+        if (c) {
+          const t = l(c),
             e = i && a(i) ? l(i) : i;
           let n = t.frameElement;
           for (; n && i && e !== t;) {
@@ -945,46 +945,46 @@ _global.SENTRY_RELEASE = {
       }
 
       function O(t) {
-        return A(s(t)).left + x(t).scrollLeft
+        return A(c(t)).left + x(t).scrollLeft
       }
 
       function D(t, e, n) {
         let i;
         if ("viewport" === e) i = function(t, e) {
           const n = l(t),
-            o = s(t),
+            o = c(t),
             i = n.visualViewport;
           let r = o.clientWidth,
-            c = o.clientHeight,
+            s = o.clientHeight,
             a = 0,
             f = 0;
           if (i) {
-            r = i.width, c = i.height;
+            r = i.width, s = i.height;
             const t = g();
             (!t || t && "fixed" === e) && (a = i.offsetLeft, f = i.offsetTop)
           }
           return {
             width: r,
-            height: c,
+            height: s,
             x: a,
             y: f
           }
         }(t, n);
         else if ("document" === e) i = function(t) {
-          const e = s(t),
+          const e = c(t),
             n = x(t),
             i = t.ownerDocument.body,
             r = (0, o.T9)(e.scrollWidth, e.clientWidth, i.scrollWidth, i.clientWidth),
             l = (0, o.T9)(e.scrollHeight, e.clientHeight, i.scrollHeight, i.clientHeight);
-          let c = -n.scrollLeft + O(t);
+          let s = -n.scrollLeft + O(t);
           const a = -n.scrollTop;
-          return "rtl" === y(i).direction && (c += (0, o.T9)(e.clientWidth, i.clientWidth) - r), {
+          return "rtl" === y(i).direction && (s += (0, o.T9)(e.clientWidth, i.clientWidth) - r), {
             width: r,
             height: l,
-            x: c,
+            x: s,
             y: a
           }
-        }(s(t));
+        }(c(t));
         else if (a(e)) i = function(t, e) {
           const n = A(t, !0, "fixed" === e),
             i = n.top + t.clientTop,
@@ -1015,17 +1015,17 @@ _global.SENTRY_RELEASE = {
 
       function S(t, e, n) {
         const i = f(e),
-          l = s(e),
-          c = "fixed" === n,
-          a = A(t, !0, c, e);
+          l = c(e),
+          s = "fixed" === n,
+          a = A(t, !0, s, e);
         let u = {
           scrollLeft: 0,
           scrollTop: 0
         };
         const p = (0, o.Jx)(0);
-        if (i || !i && !c)
+        if (i || !i && !s)
           if (("body" !== r(e) || d(l)) && (u = x(e)), i) {
-            const t = A(e, !0, c, e);
+            const t = A(e, !0, s, e);
             p.x = t.x + e.clientLeft, p.y = t.y + e.clientTop
           } else l && (p.x = O(l));
         return {
@@ -1062,15 +1062,15 @@ _global.SENTRY_RELEASE = {
             strategy: i
           } = t;
           const l = f(n),
-            c = s(n);
-          if (n === c) return e;
+            s = c(n);
+          if (n === s) return e;
           let a = {
               scrollLeft: 0,
               scrollTop: 0
             },
             u = (0, o.Jx)(1);
           const p = (0, o.Jx)(0);
-          if ((l || !l && "fixed" !== i) && (("body" !== r(n) || d(c)) && (a = x(n)), f(n))) {
+          if ((l || !l && "fixed" !== i) && (("body" !== r(n) || d(s)) && (a = x(n)), f(n))) {
             const t = A(n);
             u = E(n), p.x = t.x + n.clientLeft, p.y = t.y + n.clientTop
           }
@@ -1081,7 +1081,7 @@ _global.SENTRY_RELEASE = {
             y: e.y * u.y - a.scrollTop * u.y + p.y
           }
         },
-        getDocumentElement: s,
+        getDocumentElement: c,
         getClippingRect: function(t) {
           let {
             element: e,
@@ -1089,25 +1089,25 @@ _global.SENTRY_RELEASE = {
             rootBoundary: i,
             strategy: l
           } = t;
-          const s = [..."clippingAncestors" === n ? function(t, e) {
+          const c = [..."clippingAncestors" === n ? function(t, e) {
               const n = e.get(t);
               if (n) return n;
               let o = b(t, [], !1).filter((t => a(t) && "body" !== r(t))),
                 i = null;
               const l = "fixed" === y(t).position;
-              let s = l ? w(t) : t;
-              for (; a(s) && !h(s);) {
-                const e = y(s),
-                  n = m(s);
-                n || "fixed" !== e.position || (i = null), (l ? !n && !i : !n && "static" === e.position && i && ["absolute", "fixed"].includes(i.position) || d(s) && !n && k(t, s)) ? o = o.filter((t => t !== s)) : i = e, s = w(s)
+              let c = l ? w(t) : t;
+              for (; a(c) && !h(c);) {
+                const e = y(c),
+                  n = m(c);
+                n || "fixed" !== e.position || (i = null), (l ? !n && !i : !n && "static" === e.position && i && ["absolute", "fixed"].includes(i.position) || d(c) && !n && k(t, c)) ? o = o.filter((t => t !== c)) : i = e, c = w(c)
               }
               return e.set(t, o), o
             }(e, this._c) : [].concat(n), i],
-            c = s[0],
-            f = s.reduce(((t, n) => {
+            s = c[0],
+            f = c.reduce(((t, n) => {
               const i = D(e, n, l);
               return t.top = (0, o.T9)(i.top, t.top), t.right = (0, o.jk)(i.right, t.right), t.bottom = (0, o.jk)(i.bottom, t.bottom), t.left = (0, o.T9)(i.left, t.left), t
-            }), D(e, c, l));
+            }), D(e, s, l));
           return {
             width: f.right - f.left,
             height: f.bottom - f.top,
@@ -1151,7 +1151,7 @@ _global.SENTRY_RELEASE = {
         const {
           ancestorScroll: r = !0,
           ancestorResize: l = !0,
-          elementResize: c = "function" == typeof ResizeObserver,
+          elementResize: s = "function" == typeof ResizeObserver,
           layoutShift: a = "function" == typeof IntersectionObserver,
           animationFrame: f = !1
         } = i, u = R(t), d = r || l ? [...u ? b(u) : [], ...b(e)] : [];
@@ -1162,20 +1162,20 @@ _global.SENTRY_RELEASE = {
         }));
         const p = u && a ? function(t, e) {
           let n, i = null;
-          const r = s(t);
+          const r = c(t);
 
           function l() {
             clearTimeout(n), i && i.disconnect(), i = null
           }
-          return function s(c, a) {
-            void 0 === c && (c = !1), void 0 === a && (a = 1), l();
+          return function c(s, a) {
+            void 0 === s && (s = !1), void 0 === a && (a = 1), l();
             const {
               left: f,
               top: u,
               width: d,
               height: p
             } = t.getBoundingClientRect();
-            if (c || e(), !d || !p) return;
+            if (s || e(), !d || !p) return;
             const m = {
               rootMargin: -(0, o.RI)(u) + "px " + -(0, o.RI)(r.clientWidth - (f + d)) + "px " + -(0, o.RI)(r.clientHeight - (u + p)) + "px " + -(0, o.RI)(f) + "px",
               threshold: (0, o.T9)(0, (0, o.jk)(1, a)) || 1
@@ -1185,9 +1185,9 @@ _global.SENTRY_RELEASE = {
             function h(t) {
               const e = t[0].intersectionRatio;
               if (e !== a) {
-                if (!g) return s();
-                e ? s(!1, e) : n = setTimeout((() => {
-                  s(!1, 1e-7)
+                if (!g) return c();
+                e ? c(!1, e) : n = setTimeout((() => {
+                  c(!1, 1e-7)
                 }), 100)
               }
               g = !1
@@ -1205,7 +1205,7 @@ _global.SENTRY_RELEASE = {
         }(u, n) : null;
         let m, g = -1,
           h = null;
-        c && (h = new ResizeObserver((t => {
+        s && (h = new ResizeObserver((t => {
           let [o] = t;
           o && o.target === u && h && (h.unobserve(e), cancelAnimationFrame(g), g = requestAnimationFrame((() => {
             h && h.observe(e)
@@ -1243,10 +1243,10 @@ _global.SENTRY_RELEASE = {
         B1: () => L,
         C0: () => p,
         Dz: () => x,
-        Jx: () => c,
+        Jx: () => s,
         LI: () => l,
         PG: () => g,
-        RI: () => s,
+        RI: () => c,
         Sg: () => m,
         T9: () => r,
         TV: () => y,
@@ -1265,8 +1265,8 @@ _global.SENTRY_RELEASE = {
         i = Math.min,
         r = Math.max,
         l = Math.round,
-        s = Math.floor,
-        c = t => ({
+        c = Math.floor,
+        s = t => ({
           x: t,
           y: t
         }),

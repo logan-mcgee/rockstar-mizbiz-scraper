@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "4e82a0b5-399a-4e4e-90b3-ef85249d08b7", e._sentryDebugIdIdentifier = "sentry-dbid-4e82a0b5-399a-4e4e-90b3-ef85249d08b7")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "30baebe9-c413-45b7-a6da-2cedd53d89e3", e._sentryDebugIdIdentifier = "sentry-dbid-30baebe9-c413-45b7-a6da-2cedd53d89e3")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -143,8 +143,8 @@ _global.SENTRY_RELEASE = {
         LocalizedImageGroup: () => Be,
         LocalizedResponsiveImageGroup: () => De,
         MediaQueryField: () => $e,
-        MetaField: () => ze,
-        NameField: () => Oe,
+        MetaField: () => Oe,
+        NameField: () => ze,
         PlatformsAndLinksField: () => je,
         PostEntryFields: () => He,
         PostMetaField: () => Ue,
@@ -448,7 +448,7 @@ _global.SENTRY_RELEASE = {
             label: "Standard Margin"
           }, ...u, ...b]
         },
-        _ = {
+        T = {
           label: "Left Margin",
           name: "margin-left",
           description: "Set the left margin",
@@ -461,7 +461,7 @@ _global.SENTRY_RELEASE = {
             label: "Standard"
           }, ...u, ...b]
         },
-        T = {
+        _ = {
           label: "Right Margin",
           name: "margin-right",
           description: "Set the right margin",
@@ -611,13 +611,13 @@ _global.SENTRY_RELEASE = {
           description: "Set the --font-family-h",
           component: "text"
         },
-        z = {
+        O = {
           label: "--font-weight-h",
           name: "--font-weight-h",
           description: "Set the --font-weight-h",
           component: "text"
         },
-        O = {
+        z = {
           label: "--letter-spacing-h",
           name: "--letter-spacing-h",
           description: "Set the --letter-spacing-h",
@@ -669,12 +669,12 @@ _global.SENTRY_RELEASE = {
           description: "Applies to the body font.",
           component: "color"
         },
-        Y = {
+        Q = {
           label: "Highlight Color",
           name: "--highlight-color",
           component: "color"
         },
-        Q = {
+        Y = {
           label: "Date/Time Color",
           name: "--time-color",
           description: "Applies to time tags inside this component.",
@@ -841,9 +841,9 @@ _global.SENTRY_RELEASE = {
             }, {
               ...I
             }, {
-              ..._
-            }, {
               ...T
+            }, {
+              ..._
             }, {
               ...C
             }, {
@@ -889,9 +889,9 @@ _global.SENTRY_RELEASE = {
             }, {
               ...$
             }, {
-              ...z
-            }, {
               ...O
+            }, {
+              ...z
             }, {
               ...U
             }, {
@@ -899,7 +899,7 @@ _global.SENTRY_RELEASE = {
             }, {
               ...W
             }, {
-              ...Y
+              ...Q
             }, {
               ...p("Text")
             }],
@@ -971,7 +971,7 @@ _global.SENTRY_RELEASE = {
             b = [...l, ...a, ...n, ...o];
           return "grid" === t && b.push(...d), ("image" === t || "layeredImage" === t || t?.startsWith("parallax")) && b.push(...u), "gridItem" === t && b.push({
             ...D
-          }), "title" === t && (b.push(Q), b.push(V)), b
+          }), "title" === t && (b.push(Y), b.push(V)), b
         },
         ie = e => {
           let {
@@ -1391,6 +1391,9 @@ _global.SENTRY_RELEASE = {
             name: "caption",
             label: "Caption",
             component: "html"
+          }), ue({
+            label: "Translation Key",
+            description: "Only used for images that were marked as translatable after they were created. This value must begin with `key_` and MUST BE UNIQUE."
           })];
           return "rdo" !== t && "rdr2" !== t || l.push({
             name: "role",
@@ -1446,8 +1449,8 @@ _global.SENTRY_RELEASE = {
           }
         };
       var Ie = a(1403);
-      const _e = ["de_de", "fr_fr", "it_it", "ja_jp", "ru_ru", "es_es", "es_mx", "pt_br", "ko_kr", "zh_tw", "pl_pl", "zh_hans"];
-      var Te = a(8139);
+      const Te = ["de_de", "fr_fr", "it_it", "ja_jp", "ru_ru", "es_es", "es_mx", "pt_br", "ko_kr", "zh_tw", "pl_pl", "zh_hans"];
+      var _e = a(8139);
       const Ce = {
           alt: "",
           badge: null,
@@ -1499,7 +1502,7 @@ _global.SENTRY_RELEASE = {
             description: l,
             ImageField: n = Pe
           } = e;
-          const o = _e;
+          const o = Te;
           return {
             name: t,
             label: a,
@@ -1537,9 +1540,9 @@ _global.SENTRY_RELEASE = {
           })
         },
         Le = [{
-          ...(0, Te.Divider)("Background Image Gradient")
+          ...(0, _e.Divider)("Background Image Gradient")
         }, {
-          ...(0, Te.TinaLabel)("Background Image Gradient")
+          ...(0, _e.TinaLabel)("Background Image Gradient")
         }, {
           name: "style.--gradient-height",
           label: "Gradient Height",
@@ -1573,7 +1576,7 @@ _global.SENTRY_RELEASE = {
           label: "Bottom Color",
           component: "color"
         }, {
-          ...(0, Te.Divider)("Background Image Gradient")
+          ...(0, _e.Divider)("Background Image Gradient")
         }, {
           label: "CSS for Linear Gradient (Optional)",
           description: "Example: to bottom, rgba(0,0,0,0.5) 80%, #000000",
@@ -1629,6 +1632,9 @@ _global.SENTRY_RELEASE = {
             name: "caption",
             label: "Caption",
             component: "html"
+          }), ue({
+            label: "Translation Key",
+            description: "Only used for images that were marked as translatable after they were created. This value must begin with `key_` and MUST BE UNIQUE."
           })];
           return "rdo" !== t && "rdr2" !== t || l.push({
             name: "role",
@@ -1810,7 +1816,7 @@ _global.SENTRY_RELEASE = {
             })]
           }
         },
-        ze = function() {
+        Oe = function() {
           return {
             name: "info",
             label: "Metadata",
@@ -1835,13 +1841,14 @@ _global.SENTRY_RELEASE = {
             }]
           }
         },
-        Oe = () => ({
+        ze = () => ({
           label: "Name",
           name: "name",
           component: "text",
           description: "Block label for internal use only"
         }),
         je = function() {
+          let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
           return {
             component: "group-list",
             name: "platformsAndLinks",
@@ -1894,8 +1901,8 @@ _global.SENTRY_RELEASE = {
               label: "Button Text",
               description: "For non-platform button labels.",
               component: "text"
-            }],
-            ...arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
+            }, ve()],
+            ...e,
             itemProps: e => pt(e, {
               label: `Link for [${e?.platform??""}]`
             }),
@@ -2100,8 +2107,8 @@ _global.SENTRY_RELEASE = {
           }),
           defaultItem: () => dt()
         });
-      var Ye = a(8407),
-        Qe = a(6385),
+      var Qe = a(8407),
+        Ye = a(6385),
         Ve = a(2887);
       const qe = e => {
           let {
@@ -2120,7 +2127,7 @@ _global.SENTRY_RELEASE = {
               } = e;
               const {
                 data: o
-              } = (0, Ye.useQuery)(Qe.TagList, {
+              } = (0, Qe.useQuery)(Ye.TagList, {
                 variables: {
                   locale: "en_us",
                   context: l

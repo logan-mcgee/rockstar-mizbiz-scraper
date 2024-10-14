@@ -19,14 +19,14 @@ _global.SENTRY_RELEASE = {
     67426: (o, t, e) => {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => _,
-        Lightbox_Close_Button_Tooltip: () => b,
-        Lightbox_Download_Button_Label: () => L,
-        Lightbox_Download_Button_Tooltip: () => r,
-        Lightbox_Open_Button_Label: () => f,
+        Lightbox_Close_Button_Tooltip: () => n,
+        Lightbox_Download_Button_Label: () => f,
+        Lightbox_Download_Button_Tooltip: () => L,
+        Lightbox_Open_Button_Label: () => r,
         Lightbox_Reset_Zoom_Button_Label: () => d,
         Lightbox_Reset_Zoom_Button_Tooltip: () => g,
-        Lightbox_Zoom_In_Button_Label: () => n,
-        Lightbox_Zoom_In_Button_Tooltip: () => l,
+        Lightbox_Zoom_In_Button_Label: () => l,
+        Lightbox_Zoom_In_Button_Tooltip: () => b,
         Lightbox_Zoom_Out_Button_Label: () => a,
         Lightbox_Zoom_Out_Button__Tooltip: () => i,
         Lightbox_Zoom_Slider_Label: () => s,
@@ -34,32 +34,32 @@ _global.SENTRY_RELEASE = {
         default: () => h
       });
       var _ = "Закрыть всплывающее окно",
+        n = "Нажмите {shortcut}",
+        l = "Увеличить размер изображения",
         b = "Нажмите {shortcut}",
-        n = "Увеличить размер изображения",
-        l = "Нажмите {shortcut}",
         a = "Уменьшить размер изображения",
         i = "Нажмите {shortcut}",
         d = "Вернуться к стандартному размеру изображения",
         g = "Нажмите {shortcut}",
         s = "Масштаб",
         u = "{zoom}%",
+        f = "Загрузить",
         L = "Загрузить",
-        r = "Загрузить",
-        f = "Увеличить изображение",
+        r = "Увеличить изображение",
         h = {
           Lightbox_Close_Button_Label: _,
-          Lightbox_Close_Button_Tooltip: b,
-          Lightbox_Zoom_In_Button_Label: n,
-          Lightbox_Zoom_In_Button_Tooltip: l,
+          Lightbox_Close_Button_Tooltip: n,
+          Lightbox_Zoom_In_Button_Label: l,
+          Lightbox_Zoom_In_Button_Tooltip: b,
           Lightbox_Zoom_Out_Button_Label: a,
           Lightbox_Zoom_Out_Button__Tooltip: i,
           Lightbox_Reset_Zoom_Button_Label: d,
           Lightbox_Reset_Zoom_Button_Tooltip: g,
           Lightbox_Zoom_Slider_Label: s,
           Lightbox_Zoom_Slider_Tooltip: u,
-          Lightbox_Download_Button_Label: L,
-          Lightbox_Download_Button_Tooltip: r,
-          Lightbox_Open_Button_Label: f
+          Lightbox_Download_Button_Label: f,
+          Lightbox_Download_Button_Tooltip: L,
+          Lightbox_Open_Button_Label: r
         }
     }
   }

@@ -152,8 +152,8 @@ _global.SENTRY_RELEASE = {
         const a = r - l;
         o.velocity = a > h ? 0 : (0, g.f)(o.current - c, a)
       }
-      var b = n(96358),
-        m = n(55201),
+      var m = n(96358),
+        b = n(55201),
         w = n(96791);
       const E = {
         Enter: [
@@ -259,7 +259,7 @@ _global.SENTRY_RELEASE = {
                 const n = S(r[t], a[s], l[s], c[i]);
                 f || n === e[i].interpolatorOffsets[t] || (f = !0), e[i].offset[t] = n
               }
-              f && (e[i].interpolate = (0, m.G)((0, w.Z)(u), e[i].offset), e[i].interpolatorOffsets = [...e[i].offset]), e[i].progress = e[i].interpolate(e[i].current)
+              f && (e[i].interpolate = (0, b.G)((0, w.Z)(u), e[i].offset), e[i].interpolatorOffsets = [...e[i].offset]), e[i].progress = e[i].interpolate(e[i].current)
             }(t, n, r)
           },
           notify: (0, u.T)(e) ? () => e(n) : (i = e, s = n[o], i.pause(), i.forEachNative(((t, e) => {
@@ -267,7 +267,7 @@ _global.SENTRY_RELEASE = {
               easing: n
             } = e;
             var r, o;
-            if (t.updateDuration) n || (t.easing = b.p), t.updateDuration(1);
+            if (t.updateDuration) n || (t.easing = m.p), t.updateDuration(1);
             else {
               const e = {
                 duration: 1e3
@@ -305,7 +305,7 @@ _global.SENTRY_RELEASE = {
           const e = M(n);
           window.addEventListener("resize", t, {
             passive: !0
-          }), n !== document.documentElement && z.set(n, (v = n, b = t, (0, u.T)(v) ? (y = v, a.add(y), f || (f = () => {
+          }), n !== document.documentElement && z.set(n, (v = n, m = t, (0, u.T)(v) ? (y = v, a.add(y), f || (f = () => {
             const t = {
                 width: window.innerWidth,
                 height: window.innerHeight
@@ -330,13 +330,13 @@ _global.SENTRY_RELEASE = {
                 null == n || n.delete(e), (null == n ? void 0 : n.size) || null == s || s.unobserve(t)
               }))
             }
-          }(v, b))), e.addEventListener("scroll", t, {
+          }(v, m))), e.addEventListener("scroll", t, {
             passive: !0
           })
         }
-        var y, v, b;
-        const m = A.get(n),
-          w = requestAnimationFrame(m);
+        var y, v, m;
+        const b = A.get(n),
+          w = requestAnimationFrame(b);
         return () => {
           var e;
           "function" != typeof t && t.stop(), cancelAnimationFrame(w);

@@ -105,11 +105,11 @@ _global.SENTRY_RELEASE = {
             {
               meta: c = {}
             } = (0, l.i)() ?? {},
-            [p, b] = (0, n.useState)(f ?? c?.cdn ?? c?.prod ?? !0);
+            [p, _] = (0, n.useState)(f ?? c?.cdn ?? c?.prod ?? !0);
           (0, n.useEffect)((() => {
-            b(f ?? c?.cdn ?? c?.prod ?? !0)
+            _(f ?? c?.cdn ?? c?.prod ?? !0)
           }), [f, c]);
-          const _ = (0, n.useCallback)((e => {
+          const b = (0, n.useCallback)((e => {
             const t = null !== u,
               r = e?.previewSrc ?? e ?? null;
             if (null === r || "string" != typeof r) return null;
@@ -121,8 +121,8 @@ _global.SENTRY_RELEASE = {
             alt: t,
             ariaLabel: d,
             src: {
-              mobile: _(u?.[i]?.mobile ?? u?.en_us?.mobile ?? r),
-              desktop: _(u?.[i]?.desktop ?? u?.en_us?.desktop ?? s)
+              mobile: b(u?.[i]?.mobile ?? u?.en_us?.mobile ?? r),
+              desktop: b(u?.[i]?.desktop ?? u?.en_us?.desktop ?? s)
             }
           }
         },

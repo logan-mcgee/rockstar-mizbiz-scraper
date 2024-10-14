@@ -49,8 +49,8 @@ _global.SENTRY_RELEASE = {
     },
     23496: (e, t, n) => {
       n.d(t, {
-        C: () => u,
-        f: () => f
+        C: () => f,
+        f: () => u
       });
       var r = n(80226);
 
@@ -101,12 +101,12 @@ _global.SENTRY_RELEASE = {
                 var n = t;
                 t = [], n.forEach(e)
               },
-              u = function() {
+              f = function() {
                 return Promise.resolve().then(a)
               };
-            u(), n = {
+            f(), n = {
               push: function(e) {
-                t.push(e), u()
+                t.push(e), f()
               },
               filter: function(e) {
                 return t = t.filter(e), n
@@ -116,11 +116,11 @@ _global.SENTRY_RELEASE = {
         }
       }
 
-      function u(e, t) {
+      function f(e, t) {
         return void 0 === t && (t = o), a(e, t)
       }
 
-      function f(e) {
+      function u(e) {
         void 0 === e && (e = {});
         var t = a(null);
         return t.options = (0, r.Cl)({
@@ -147,8 +147,8 @@ _global.SENTRY_RELEASE = {
       n.d(t, {
         C6: () => o,
         Cl: () => a,
-        Ju: () => f,
-        Tt: () => u,
+        Ju: () => u,
+        Tt: () => f,
         fX: () => l,
         zs: () => i
       });
@@ -179,7 +179,7 @@ _global.SENTRY_RELEASE = {
         }, a.apply(this, arguments)
       };
 
-      function u(e, t) {
+      function f(e, t) {
         var n = {};
         for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && t.indexOf(r) < 0 && (n[r] = e[r]);
         if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -189,7 +189,7 @@ _global.SENTRY_RELEASE = {
         return n
       }
 
-      function f(e) {
+      function u(e) {
         var t = "function" == typeof Symbol && Symbol.iterator,
           n = t && e[t],
           r = 0;
@@ -209,10 +209,10 @@ _global.SENTRY_RELEASE = {
         var n = "function" == typeof Symbol && e[Symbol.iterator];
         if (!n) return e;
         var r, o, a = n.call(e),
-          u = [];
+          f = [];
         try {
           for (;
-            (void 0 === t || t-- > 0) && !(r = a.next()).done;) u.push(r.value)
+            (void 0 === t || t-- > 0) && !(r = a.next()).done;) f.push(r.value)
         } catch (e) {
           o = {
             error: e
@@ -224,7 +224,7 @@ _global.SENTRY_RELEASE = {
             if (o) throw o.error
           }
         }
-        return u
+        return f
       }
 
       function l(e, t, n) {

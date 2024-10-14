@@ -26,11 +26,11 @@ _global.SENTRY_RELEASE = {
         t = d(74459),
         s = d.n(t),
         l = d(26527),
-        b = d.n(l),
-        f = d(31879),
-        i = d.n(f),
-        c = d(66713),
-        u = d.n(c),
+        i = d.n(l),
+        c = d(31879),
+        f = d.n(c),
+        u = d(66713),
+        b = d.n(u),
         g = d(42012),
         _ = d(26750),
         w = d(29210),
@@ -54,9 +54,9 @@ _global.SENTRY_RELEASE = {
             thumbnail: o
           })
         },
-        RockstarVideoPlayer: i(),
-        SwiperCarousel: b(),
-        UGCJobSpotlight: u()
+        RockstarVideoPlayer: f(),
+        SwiperCarousel: i(),
+        UGCJobSpotlight: b()
       }
     }
   }

@@ -32,8 +32,8 @@ _global.SENTRY_RELEASE = {
         i = (t(39516), "data-focus-lock"),
         a = "data-focus-lock-disabled",
         c = "data-no-focus-lock",
-        f = "data-autofocus-inside",
-        d = t(26208),
+        d = "data-autofocus-inside",
+        f = t(26208),
         s = {
           width: "1px",
           height: "0px",
@@ -68,8 +68,8 @@ _global.SENTRY_RELEASE = {
             currentTarget: e.currentTarget
           }
         })),
-        b = (0, p.C)(),
         y = (0, p.C)(),
+        b = (0, p.C)(),
         h = (0, p.f)({
           async: !0
         }),
@@ -77,11 +77,11 @@ _global.SENTRY_RELEASE = {
         E = o.forwardRef((function(e, n) {
           var t, u = o.useState(),
             c = u[0],
-            f = u[1],
+            d = u[1],
             l = o.useRef(),
             v = o.useRef(!1),
             p = o.useRef(null),
-            y = e.children,
+            b = e.children,
             E = e.disabled,
             w = e.noFocusGuards,
             O = e.persistentFocus,
@@ -127,14 +127,14 @@ _global.SENTRY_RELEASE = {
             H = o.useCallback((function(e) {
               v.current && m.useMedium(e)
             }), []),
-            V = b.useMedium,
+            V = y.useMedium,
             Y = o.useCallback((function(e) {
-              l.current !== e && (l.current = e, f(e))
+              l.current !== e && (l.current = e, d(e))
             }), []),
             K = (0, r.A)(((t = {})[a] = E && "disabled", t[i] = I, t), C),
             X = !0 !== w,
             z = X && "tail" !== w,
-            J = (0, d.S)([n, Y]);
+            J = (0, f.S)([n, Y]);
           return o.createElement(o.Fragment, null, X && [o.createElement("div", {
             key: "guard-first",
             "data-focus-guard": !0,
@@ -165,7 +165,7 @@ _global.SENTRY_RELEASE = {
             className: _,
             onBlur: V,
             onFocus: H
-          }), y), z && o.createElement("div", {
+          }), b), z && o.createElement("div", {
             "data-focus-guard": !0,
             tabIndex: E ? -1 : 0,
             style: s
@@ -419,22 +419,22 @@ _global.SENTRY_RELEASE = {
         },
         ie = function(e, n) {
           var t, r, o, u, i, a, c = z(I(e).length > 0 ? document : _(e).ownerDocument),
-            d = Q(e).filter(j),
-            s = ue(c || e, e, d),
+            f = Q(e).filter(j),
+            s = ue(c || e, e, f),
             l = new Map,
-            v = K(d, l),
-            p = Y(d, l).filter((function(e) {
+            v = K(f, l),
+            p = Y(f, l).filter((function(e) {
               var n = e.node;
               return j(n)
             }));
           if (p[0] || (p = v)[0]) {
-            var m, b, y, h = K([s], l).map((function(e) {
+            var m, y, b, h = K([s], l).map((function(e) {
                 return e.node
               })),
-              g = (m = h, b = p, y = new Map, b.forEach((function(e) {
-                return y.set(e.node, e)
+              g = (m = h, y = p, b = new Map, y.forEach((function(e) {
+                return b.set(e.node, e)
               })), m.map((function(e) {
-                return y.get(e)
+                return b.get(e)
               })).filter(L)),
               E = g.map((function(e) {
                 return e.node
@@ -445,28 +445,28 @@ _global.SENTRY_RELEASE = {
                   i = e[o - 1],
                   a = D(t);
                 if (!(t && e.indexOf(t) >= 0)) {
-                  var c, f, d = void 0 !== t ? n.indexOf(t) : -1,
-                    s = r ? n.indexOf(r) : d,
+                  var c, d, f = void 0 !== t ? n.indexOf(t) : -1,
+                    s = r ? n.indexOf(r) : f,
                     l = r ? e.indexOf(r) : -1,
-                    v = d - s,
+                    v = f - s,
                     p = n.indexOf(u),
                     m = n.indexOf(i),
-                    b = (c = n, f = new Set, c.forEach((function(e) {
-                      return f.add($(e, c))
+                    y = (c = n, d = new Set, c.forEach((function(e) {
+                      return d.add($(e, c))
                     })), c.filter((function(e) {
-                      return f.has(e)
+                      return d.has(e)
                     }))),
-                    y = (void 0 !== t ? b.indexOf(t) : -1) - (r ? b.indexOf(r) : d),
+                    b = (void 0 !== t ? y.indexOf(t) : -1) - (r ? y.indexOf(r) : f),
                     h = ne(e, 0),
                     g = ne(e, o - 1);
-                  return -1 === d || -1 === l ? te : !v && l >= 0 ? l : d <= p && a && Math.abs(v) > 1 ? g : d >= m && a && Math.abs(v) > 1 ? h : v && Math.abs(y) > 1 ? l : d <= p ? g : d > m ? h : v ? Math.abs(v) > 1 ? l : (o + l + v) % o : void 0
+                  return -1 === f || -1 === l ? te : !v && l >= 0 ? l : f <= p && a && Math.abs(v) > 1 ? g : f >= m && a && Math.abs(v) > 1 ? h : v && Math.abs(b) > 1 ? l : f <= p ? g : f > m ? h : v ? Math.abs(v) > 1 ? l : (o + l + v) % o : void 0
                 }
               }(E, h, c, n);
             if (w === te) {
               var O = (t = v, r = E, o = function(e, n) {
                 return e.reduce((function(e, t) {
                   return e.concat(function(e, n) {
-                    return H((t = e.querySelectorAll("[".concat(f, "]")), x(t).map((function(e) {
+                    return H((t = e.querySelectorAll("[".concat(d, "]")), x(t).map((function(e) {
                       return q([e])
                     })).reduce((function(e, n) {
                       return e.concat(n)
@@ -474,7 +474,7 @@ _global.SENTRY_RELEASE = {
                     var t
                   }(t, n))
                 }), [])
-              }(d, l), i = t.map((function(e) {
+              }(f, l), i = t.map((function(e) {
                 return e.node
               })), (a = V(i.filter((u = o, function(e) {
                 var n, t = null === (n = M(e)) || void 0 === n ? void 0 : n.autofocus;
@@ -489,7 +489,7 @@ _global.SENTRY_RELEASE = {
         },
         ae = 0,
         ce = !1,
-        fe = function(e, n, t) {
+        de = function(e, n, t) {
           void 0 === t && (t = {});
           var r, o, u = ie(e, n);
           if (!ce && u) {
@@ -500,7 +500,7 @@ _global.SENTRY_RELEASE = {
           }
         };
 
-      function de(e) {
+      function fe(e) {
         setTimeout(e, 1)
       }
       var se = function(e, n) {
@@ -511,11 +511,11 @@ _global.SENTRY_RELEASE = {
         ve = null,
         pe = null,
         me = !1,
-        be = function() {
+        ye = function() {
           return !0
         };
 
-      function ye(e, n, t, r) {
+      function be(e, n, t, r) {
         var o = null,
           u = e;
         do {
@@ -538,30 +538,30 @@ _global.SENTRY_RELEASE = {
         Ee = function() {
           var e, n, t, r, o, u, i, a = !1;
           if (le) {
-            var f = le,
-              d = f.observed,
-              s = f.persistentFocus,
-              l = f.autoFocus,
-              v = f.shards,
-              p = f.crossFrame,
-              m = f.focusOptions,
-              b = d || pe && pe.portaledElement,
-              y = document && document.activeElement;
-            if (b) {
-              var h = [b].concat(v.map(he).filter(Boolean));
-              if (y && ! function(e) {
-                  return (le.whiteList || be)(e)
-                }(y) || (s || (p ? Boolean(me) : "meanwhile" === me) || !(document && document.activeElement === document.body || function(e) {
+            var d = le,
+              f = d.observed,
+              s = d.persistentFocus,
+              l = d.autoFocus,
+              v = d.shards,
+              p = d.crossFrame,
+              m = d.focusOptions,
+              y = f || pe && pe.portaledElement,
+              b = document && document.activeElement;
+            if (y) {
+              var h = [y].concat(v.map(he).filter(Boolean));
+              if (b && ! function(e) {
+                  return (le.whiteList || ye)(e)
+                }(b) || (s || (p ? Boolean(me) : "meanwhile" === me) || !(document && document.activeElement === document.body || function(e) {
                   void 0 === e && (e = document);
                   var n = z(e);
                   return !!n && x(e.querySelectorAll("[".concat(c, "]"))).some((function(e) {
                     return X(e, n)
                   }))
-                }()) || !ve && l) && (b && !(Z(h) || y && function(e, n) {
+                }()) || !ve && l) && (y && !(Z(h) || b && function(e, n) {
                   return n.some((function(n) {
                     return ge(e, n, n)
                   }))
-                }(y, h) || (i = y, pe && pe.portaledElement === i)) && (document && !ve && y && !l ? (y.blur && y.blur(), document.body.focus()) : (a = fe(h, ve, {
+                }(b, h) || (i = b, pe && pe.portaledElement === i)) && (document && !ve && b && !l ? (b.blur && b.blur(), document.body.focus()) : (a = de(h, ve, {
                   focusOptions: m
                 }), pe = {})), me = !1, ve = document && document.activeElement), document) {
                 var g = document && document.activeElement,
@@ -588,7 +588,7 @@ _global.SENTRY_RELEASE = {
                   return n && t.dataset.focusAutoGuard
                 })).forEach((function(e) {
                   return e.node.removeAttribute("tabIndex")
-                })), ye(w, E.length, 1, E), ye(w, -1, -1, E))
+                })), be(w, E.length, 1, E), be(w, -1, -1, E))
               }
             }
           }
@@ -598,10 +598,10 @@ _global.SENTRY_RELEASE = {
           Ee() && e && (e.stopPropagation(), e.preventDefault())
         },
         Oe = function() {
-          return de(Ee)
+          return fe(Ee)
         },
         Ne = function() {
-          me = "just", de((function() {
+          me = "just", fe((function() {
             me = "meanwhile"
           }))
         };
@@ -612,9 +612,9 @@ _global.SENTRY_RELEASE = {
           observerNode: t,
           portaledElement: n
         })
-      })), b.assignMedium(Oe), y.assignMedium((function(e) {
+      })), y.assignMedium(Oe), b.assignMedium((function(e) {
         return e({
-          moveFocusInside: fe,
+          moveFocusInside: de,
           focusInside: Z
         })
       }));
@@ -629,7 +629,7 @@ _global.SENTRY_RELEASE = {
           r = t && n && n.id === t.id;
         le = n, t && !r && (t.onDeactivation(), e.filter((function(e) {
           return e.id === t.id
-        })).length || t.returnFocus(!n)), n ? (ve = null, r && t.observed === n.observed || n.onActivation(), Ee(), de(Ee)) : (document.removeEventListener("focusin", we), document.removeEventListener("focusout", Oe), window.removeEventListener("blur", Ne), ve = null)
+        })).length || t.returnFocus(!n)), n ? (ve = null, r && t.observed === n.observed || n.onActivation(), Ee(), fe(Ee)) : (document.removeEventListener("focusin", we), document.removeEventListener("focusout", Oe), window.removeEventListener("blur", Ne), ve = null)
       }, function(e) {
         var n, t = [];
 
@@ -638,7 +638,7 @@ _global.SENTRY_RELEASE = {
             return e.props
           }))), _e(n)
         }
-        var i, a, c, f = function(o) {
+        var i, a, c, d = function(o) {
           var i, a;
 
           function c() {
@@ -647,19 +647,19 @@ _global.SENTRY_RELEASE = {
           a = o, (i = c).prototype = Object.create(a.prototype), i.prototype.constructor = i, O(i, a), c.peek = function() {
             return n
           };
-          var f = c.prototype;
-          return f.componentDidMount = function() {
+          var d = c.prototype;
+          return d.componentDidMount = function() {
             t.push(this), r()
-          }, f.componentDidUpdate = function() {
+          }, d.componentDidUpdate = function() {
             r()
-          }, f.componentWillUnmount = function() {
+          }, d.componentWillUnmount = function() {
             var e = t.indexOf(this);
             t.splice(e, 1), r()
-          }, f.render = function() {
+          }, d.render = function() {
             return u().createElement(e, this.props)
           }, c
         }(o.PureComponent);
-        return i = f, a = "displayName", c = "SideEffect(" + function(e) {
+        return i = d, a = "displayName", c = "SideEffect(" + function(e) {
           return e.displayName || e.name || "Component"
         }(e) + ")", (a = function(e) {
           var n = function(e, n) {
@@ -678,7 +678,7 @@ _global.SENTRY_RELEASE = {
           enumerable: !0,
           configurable: !0,
           writable: !0
-        }) : i[a] = c, f
+        }) : i[a] = c, d
       })((function() {
         return null
       }));
@@ -703,7 +703,7 @@ _global.SENTRY_RELEASE = {
           u = e.children,
           i = e.className,
           a = void 0 === i ? void 0 : i;
-        return o.createElement("div", (0, r.A)({}, se(f, !t), {
+        return o.createElement("div", (0, r.A)({}, se(d, !t), {
           className: a
         }), u)
       };
@@ -712,7 +712,7 @@ _global.SENTRY_RELEASE = {
       var Ae = function(e) {
         o.useEffect((function() {
           var n = !0;
-          return y.useMedium((function(t) {
+          return b.useMedium((function(t) {
               var r = e && e.current;
               n && r && (t.focusInside(r) || t.moveFocusInside(r, null))
             })),
@@ -727,7 +727,7 @@ _global.SENTRY_RELEASE = {
           t = e.className,
           u = e.children,
           i = o.useRef(null);
-        return Ae(n ? void 0 : i), o.createElement("div", (0, r.A)({}, se(f, !n), {
+        return Ae(n ? void 0 : i), o.createElement("div", (0, r.A)({}, se(d, !n), {
           ref: i,
           className: t
         }), u)

@@ -42,85 +42,85 @@ _global.SENTRY_RELEASE = {
         foregroundContent: "rockstargames-modules-core-newswire-articlefa5c09eaa5d07cb6da01d9524cca299d",
         "swiper-preloader-spin": "rockstargames-modules-core-newswire-articledd9665694d33734ed3e110477feda51d"
       };
-      var i = s(46632);
-      const c = e => {
+      var c = s(46632);
+      const i = e => {
           let {
             shouldFade: a,
             condition: s,
             className: r,
             children: t
           } = e;
-          return (0, i.jsx)("div", {
+          return (0, c.jsx)("div", {
             className: (0, d.classList)(r, a ? n.fadeIn : "", s ? n.active : ""),
             children: t
           })
         },
-        b = e => {
+        m = e => {
           let {
             currentSlide: a
           } = e;
-          return (0, i.jsx)("div", {
+          return (0, c.jsx)("div", {
             className: n.customPagination,
-            children: (0, i.jsx)("span", {
+            children: (0, c.jsx)("span", {
               children: a?.itemName ?? "Item"
             })
           })
         },
-        f = e => {
+        u = e => {
           let {
             item: a,
             vertical: s,
             horizontal: r
           } = e;
-          return a && a?.content ? (0, i.jsx)(c, {
+          return a && a?.content ? (0, c.jsx)(i, {
             shouldFade: a?.fadeIn,
             condition: a?.fadeIn,
             className: (0, d.classList)(n.slot, n[s], n[r]),
-            children: (0, i.jsx)(l.A, {
+            children: (0, c.jsx)(l.A, {
               ...a.content[0]
             })
           }) : null
         },
-        m = e => {
+        f = e => {
           let {
             active: a = !1,
             backgroundContent: s,
             foregroundContent: r
           } = e;
-          return (0, i.jsxs)("div", {
+          return (0, c.jsxs)("div", {
             className: n.slideContent,
-            children: [s && (0, i.jsx)(c, {
+            children: [s && (0, c.jsx)(i, {
               shouldFade: s?.fadeIn,
               condition: a,
-              children: (0, i.jsx)("div", {
+              children: (0, c.jsx)("div", {
                 className: n.backgroundContent,
-                children: (0, i.jsx)(l.A, {
+                children: (0, c.jsx)(l.A, {
                   ...s.imageWithBadge
                 })
               })
-            }), r && (0, i.jsx)(c, {
+            }), r && (0, c.jsx)(i, {
               shouldFade: r?.fadeIn,
               condition: a,
-              children: (0, i.jsx)("div", {
+              children: (0, c.jsx)("div", {
                 className: n.foregroundContent,
-                children: (0, i.jsx)(l.A, {
+                children: (0, c.jsx)(l.A, {
                   ...r.imageWithBadge
                 })
               })
             })]
           })
         },
-        u = e => {
+        b = e => {
           let {
             loop: a = !0,
             grabCursor: s = !0,
             centeredSlides: l = !0,
-            slides: c = null
+            slides: i = null
           } = e;
-          const [u, w] = (0, r.useState)(null);
-          return c ? (0, i.jsx)("div", {
+          const [b, w] = (0, r.useState)(null);
+          return i ? (0, c.jsx)("div", {
             className: n.panoramaCarouselWrapper,
-            children: (0, i.jsxs)(t.RC, {
+            children: (0, c.jsxs)(t.RC, {
               modules: [o.Vx],
               loop: a,
               grabCursor: s,
@@ -131,7 +131,7 @@ _global.SENTRY_RELEASE = {
               pagination: !1,
               speed: 700,
               onActiveIndexChange: e => (e => {
-                w(c[e])
+                w(i[e])
               })(e?.realIndex ?? 0),
               breakpoints: {
                 768: {
@@ -144,44 +144,44 @@ _global.SENTRY_RELEASE = {
                   slidesPerView: 1.75
                 }
               },
-              children: [(0, i.jsxs)("div", {
+              children: [(0, c.jsxs)("div", {
                 className: (0, d.classList)(n.slotContainer, n.top),
-                children: [(0, i.jsx)(f, {
-                  item: u?.topLeftSlot,
+                children: [(0, c.jsx)(u, {
+                  item: b?.topLeftSlot,
                   vertical: "top",
                   horizontal: "left"
-                }), (0, i.jsx)(f, {
-                  item: u?.topCenterSlot,
+                }), (0, c.jsx)(u, {
+                  item: b?.topCenterSlot,
                   vertical: "top",
                   horizontal: "center"
-                }), (0, i.jsx)(f, {
-                  item: u?.topRightSlot,
+                }), (0, c.jsx)(u, {
+                  item: b?.topRightSlot,
                   vertical: "top",
                   horizontal: "right"
                 })]
-              }), c.map((e => (0, i.jsx)(t.qr, {
+              }), i.map((e => (0, c.jsx)(t.qr, {
                 children: a => {
                   let {
                     isActive: s
                   } = a;
-                  return (0, i.jsx)(m, {
+                  return (0, c.jsx)(f, {
                     active: s,
                     ...e
                   })
                 }
-              }, e?.key))), (0, i.jsxs)("div", {
+              }, e?.key))), (0, c.jsxs)("div", {
                 className: (0, d.classList)(n.slotContainer, n.bottom),
-                children: [(0, i.jsx)(f, {
-                  item: u?.bottomLeftSlot,
+                children: [(0, c.jsx)(u, {
+                  item: b?.bottomLeftSlot,
                   vertical: "bottom",
                   horizontal: "left"
-                }), (0, i.jsx)(f, {
-                  item: u?.bottomRightSlot,
+                }), (0, c.jsx)(u, {
+                  item: b?.bottomRightSlot,
                   vertical: "bottom",
                   horizontal: "right"
                 })]
-              }), (0, i.jsx)(b, {
-                currentSlide: u
+              }), (0, c.jsx)(m, {
+                currentSlide: b
               })]
             })
           }) : null
@@ -193,7 +193,7 @@ _global.SENTRY_RELEASE = {
             style: r,
             panoramaCarousel: t
           } = e;
-          return a ? (o = u, d = t, (0, i.jsx)(o, {
+          return a ? (o = b, d = t, (0, c.jsx)(o, {
             className: s,
             style: r,
             ...d

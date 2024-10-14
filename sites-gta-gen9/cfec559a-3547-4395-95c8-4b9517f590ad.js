@@ -28,9 +28,9 @@ _global.SENTRY_RELEASE = {
         Lightbox_Zoom_In_Button_Label: () => s,
         Lightbox_Zoom_In_Button_Tooltip: () => g,
         Lightbox_Zoom_Out_Button_Label: () => u,
-        Lightbox_Zoom_Out_Button__Tooltip: () => r,
-        Lightbox_Zoom_Slider_Label: () => L,
-        Lightbox_Zoom_Slider_Tooltip: () => f,
+        Lightbox_Zoom_Out_Button__Tooltip: () => f,
+        Lightbox_Zoom_Slider_Label: () => r,
+        Lightbox_Zoom_Slider_Tooltip: () => L,
         default: () => h
       });
       var _ = "Close lightbox",
@@ -43,9 +43,9 @@ _global.SENTRY_RELEASE = {
         s = "Zoom in",
         g = "Press {shortcut}",
         u = "Zoom out",
-        r = "Press {shortcut}",
-        L = "Zoom level",
-        f = "{zoom}%",
+        f = "Press {shortcut}",
+        r = "Zoom level",
+        L = "{zoom}%",
         h = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: l,
@@ -57,9 +57,9 @@ _global.SENTRY_RELEASE = {
           Lightbox_Zoom_In_Button_Label: s,
           Lightbox_Zoom_In_Button_Tooltip: g,
           Lightbox_Zoom_Out_Button_Label: u,
-          Lightbox_Zoom_Out_Button__Tooltip: r,
-          Lightbox_Zoom_Slider_Label: L,
-          Lightbox_Zoom_Slider_Tooltip: f
+          Lightbox_Zoom_Out_Button__Tooltip: f,
+          Lightbox_Zoom_Slider_Label: r,
+          Lightbox_Zoom_Slider_Tooltip: L
         }
     }
   }

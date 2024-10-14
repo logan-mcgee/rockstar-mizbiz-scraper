@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "652d331e-5bd8-4f11-81bd-020a1f2e3e63", e._sentryDebugIdIdentifier = "sentry-dbid-652d331e-5bd8-4f11-81bd-020a1f2e3e63")
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "e58c4bdf-7f18-43b1-a4c7-883827e076e7", e._sentryDebugIdIdentifier = "sentry-dbid-e58c4bdf-7f18-43b1-a4c7-883827e076e7")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -431,7 +431,7 @@ _global.SENTRY_RELEASE = {
       var S = l(3496),
         E = l(1499),
         V = l(4401);
-      const B = (0, c.defineMessages)({
+      const R = (0, c.defineMessages)({
           videoplayer_fullscreen_button_label: {
             id: "videoplayer_fullscreen_button_label",
             defaultMessage: "Toggle video in fullscreen mode"
@@ -445,7 +445,7 @@ _global.SENTRY_RELEASE = {
             defaultMessage: "Windowed"
           }
         }),
-        R = e => {
+        B = e => {
           let {
             alt: a = "",
             className: l = "",
@@ -575,14 +575,14 @@ _global.SENTRY_RELEASE = {
             l("fullscreen", !t)
           };
           return (0, i.jsx)(I, {
-            tooltipLabel: e(t ? B.videoplayer_windowed_hover_label : B.videoplayer_fullscreen_hover_label),
-            "aria-label": e(B.videoplayer_fullscreen_button_label),
+            tooltipLabel: e(t ? R.videoplayer_windowed_hover_label : R.videoplayer_fullscreen_hover_label),
+            "aria-label": e(R.videoplayer_fullscreen_button_label),
             className: A.button,
             onClick: o,
             onKeyDown: e => {
               "Enter" === e.code && (e.preventDefault(), o())
             },
-            children: t ? (0, i.jsx)(R, {
+            children: t ? (0, i.jsx)(B, {
               className: A.icon
             }) : (0, i.jsx)(T, {
               className: A.icon
@@ -1860,7 +1860,7 @@ _global.SENTRY_RELEASE = {
             })]
           })
         },
-        Be = e => {
+        Re = e => {
           let {
             alt: a = "",
             className: l = "",
@@ -1893,7 +1893,7 @@ _global.SENTRY_RELEASE = {
             })]
           })
         },
-        Re = e => {
+        Be = e => {
           let {
             alt: a = "",
             className: l = "",
@@ -2102,7 +2102,7 @@ _global.SENTRY_RELEASE = {
             name: "reddit",
             template: "http://www.reddit.com/submit?url={url}&title={title}&r=gaming"
           }], x = [{
-            icon: (0, i.jsx)(Be, {
+            icon: (0, i.jsx)(Re, {
               className: He.embedIcon
             }),
             name: "embed",
@@ -2117,7 +2117,7 @@ _global.SENTRY_RELEASE = {
               fill: "black"
             })]
           }), M = (0, i.jsxs)(i.Fragment, {
-            children: [_(Ae.videoplayer_share_time_copied), (0, i.jsx)(Re, {
+            children: [_(Ae.videoplayer_share_time_copied), (0, i.jsx)(Be, {
               className: He.copyLinkIcon,
               stroke: "black"
             })]
@@ -2235,7 +2235,7 @@ _global.SENTRY_RELEASE = {
                 },
                 children: [(0, i.jsx)("div", {
                   className: (0, V.classList)(He.checkbox, o ? He.selected : ""),
-                  children: o && (0, i.jsx)(Re, {
+                  children: o && (0, i.jsx)(Be, {
                     className: He.checkmark,
                     stroke: "black"
                   })
@@ -2438,29 +2438,27 @@ _global.SENTRY_RELEASE = {
         },
         Ge = () => {
           const [e, a] = (0, t.useState)([]), [l, o] = (0, t.useState)([]), [r, n] = (0, t.useState)([]), [s, u] = (0, t.useState)(), _ = (0, t.useRef)(null), {
-            setBodyIsLocked: p
-          } = (0, d.useBodyScrollable)("VideoPlayerMenuHandler"), {
-            formatMessage: m
+            formatMessage: p
           } = (0, c.useIntl)(), {
-            windowWidth: y
+            windowWidth: m
           } = (0, d.useWindowResize)(), {
-            state: f,
-            toggleMenu: h,
-            menuStates: g
+            state: y,
+            toggleMenu: f,
+            menuStates: h
           } = (0, b.Tc)(), {
-            airplayAvailable: C,
-            captions: k,
-            playerRef: x,
-            videoData: w,
-            videoRef: j
-          } = f, {
-            video: N
-          } = w, {
-            contextSafe: M
-          } = (0, oe.useGSAP)(), L = j?.current ? .5 * j.current.clientHeight : "200", S = ["downloads", "share", "airplay", "quality", "captions"], E = ["captions", "quality", "downloads", "share", "airplay"], V = M((e => {
+            airplayAvailable: g,
+            captions: C,
+            playerRef: k,
+            videoData: x,
+            videoRef: w
+          } = y, {
+            video: j
+          } = x, {
+            contextSafe: N
+          } = (0, oe.useGSAP)(), M = w?.current ? .5 * w.current.clientHeight : "200", L = ["downloads", "share", "airplay", "quality", "captions"], S = ["captions", "quality", "downloads", "share", "airplay"], E = N((e => {
             const a = .125,
               l = "none";
-            g?.isAnyMenuOpen ? g[e] ? (0, b.CN)() ? v.gsap.timeline({
+            h?.isAnyMenuOpen ? h[e] ? (0, b.CN)() ? v.gsap.timeline({
               overwrite: "auto"
             }).to(_?.current, {
               "--backdrop-opacity": 0,
@@ -2468,18 +2466,18 @@ _global.SENTRY_RELEASE = {
               duration: a,
               ease: l,
               onComplete: () => {
-                _?.current?.close(), h(e, !1), p(!1)
+                _?.current?.close(), f(e, !1)
               }
             }) : v.gsap.to(_?.current, {
               duration: a,
               ease: l,
               opacity: 1,
               onComplete: () => {
-                _?.current?.close(), h(e, !1), p(!1)
+                _?.current?.close(), f(e, !1)
               }
             }) : (0, b.CN)() ? v.gsap.timeline({
               onStart: () => {
-                h(e, !0)
+                f(e, !0)
               },
               duration: a,
               ease: l,
@@ -2496,7 +2494,7 @@ _global.SENTRY_RELEASE = {
               ease: l,
               opacity: 0,
               onComplete: () => {
-                _?.current?.close(), h(e, !0), v.gsap.to(_?.current, {
+                _?.current?.close(), f(e, !0), v.gsap.to(_?.current, {
                   delay: .05,
                   onStart: () => {
                     _?.current?.show()
@@ -2516,7 +2514,7 @@ _global.SENTRY_RELEASE = {
               bottom: "-100%"
             }, {
               onStart: () => {
-                _?.current?.showModal(), h(e, !0), p(!0)
+                _?.current?.showModal(), f(e, !0)
               },
               "--backdrop-opacity": .8,
               bottom: 0,
@@ -2529,25 +2527,25 @@ _global.SENTRY_RELEASE = {
               ease: l,
               opacity: 1,
               onStart: () => {
-                p(!1), _?.current?.show(), h(e, !0)
+                _?.current?.show(), f(e, !0)
               }
             }))
           }));
           return (0, t.useEffect)((() => {
-            const e = [...S];
-            if (!C) {
+            const e = [...L];
+            if (!g) {
               const a = e.indexOf("airplay");
               a > -1 && e.splice(a, 1)
             }
-            if (!k?.length) {
+            if (!C?.length) {
               const a = e.indexOf("captions");
               a > -1 && e.splice(a, 1)
             }
             n([...e])
-          }), [N?.id, C, k?.length]), (0, t.useEffect)((() => {
+          }), [j?.id, g, C?.length]), (0, t.useEffect)((() => {
             const e = v.gsap.context((() => {
-              if (!x?.current) return;
-              const e = x?.current?.clientWidth || 0,
+              if (!k?.current) return;
+              const e = k?.current?.clientWidth || 0,
                 l = Math.floor(e / 2),
                 t = Math.floor(l / 60) - 2,
                 n = r.length - t,
@@ -2558,79 +2556,79 @@ _global.SENTRY_RELEASE = {
                   ["airplay", {
                     button: (0, i.jsx)(Fe, {
                       collapsed: d.some((e => "airplay" === e)),
-                      onClick: () => V("isAirplayMenuOpen")
+                      onClick: () => E("isAirplayMenuOpen")
                     }, "airplay_button")
                   }],
                   ["downloads", {
                     button: (0, i.jsx)(ce, {
                       collapsed: d.some((e => "downloads" === e)),
-                      onClick: () => V("isDownloadMenuOpen")
+                      onClick: () => E("isDownloadMenuOpen")
                     }, "downloads_button"),
                     content: (0, i.jsx)(ue, {
                       collapsed: d.some((e => "downloads" === e)),
-                      onBackButtonClick: () => V("isEllipsisMenuOpen"),
-                      onOptionSelect: () => V("isDownloadMenuOpen")
+                      onBackButtonClick: () => E("isEllipsisMenuOpen"),
+                      onOptionSelect: () => E("isDownloadMenuOpen")
                     }, "downloads_content")
                   }],
                   ["quality", {
                     button: (0, i.jsx)(ge, {
                       collapsed: d.some((e => "quality" === e)),
-                      onClick: () => V("isQualityMenuOpen")
+                      onClick: () => E("isQualityMenuOpen")
                     }, "quality_button"),
                     content: (0, i.jsx)(Ce, {
                       collapsed: d.some((e => "quality" === e)),
-                      onBackButtonClick: () => V("isEllipsisMenuOpen"),
-                      onOptionSelect: () => V("isQualityMenuOpen")
+                      onBackButtonClick: () => E("isEllipsisMenuOpen"),
+                      onOptionSelect: () => E("isQualityMenuOpen")
                     }, "quality_content")
                   }],
                   ["captions", {
                     button: (0, i.jsx)(Ne, {
                       collapsed: d.some((e => "captions" === e)),
-                      onClick: () => V("isCaptionsMenuOpen")
+                      onClick: () => E("isCaptionsMenuOpen")
                     }, "captions_button"),
                     content: (0, i.jsx)(Me, {
                       collapsed: d.some((e => "captions" === e)),
-                      onBackButtonClick: () => V("isEllipsisMenuOpen"),
-                      onOptionSelect: () => V("isCaptionsMenuOpen")
+                      onBackButtonClick: () => E("isEllipsisMenuOpen"),
+                      onOptionSelect: () => E("isCaptionsMenuOpen")
                     }, "captions_content")
                   }],
                   ["share", {
                     button: (0, i.jsx)(De, {
                       collapsed: d.some((e => "share" === e)),
-                      onClick: () => V("isShareMenuOpen")
+                      onClick: () => E("isShareMenuOpen")
                     }, "share_button"),
                     content: (0, i.jsx)(Ie, {
                       collapsed: d.some((e => "share" === e)),
-                      onBackButtonClick: () => V("isEllipsisMenuOpen")
+                      onBackButtonClick: () => E("isEllipsisMenuOpen")
                     }, "share_content")
                   }]
                 ]);
               if (c.length) {
                 const e = [];
                 c.forEach((a => {
-                  if (u.has(a) && E.indexOf(a) > -1) {
-                    const l = E.indexOf(a);
+                  if (u.has(a) && S.indexOf(a) > -1) {
+                    const l = S.indexOf(a);
                     e[l] = u.get(a)
                   }
                 })), o(e.filter((e => e)))
               } else o([]);
-              !d.length && g?.isEllipsisMenuOpen ? (h("isEllipsisMenuOpen", !1), a([])) : a(d.map((e => u?.get(e)))?.filter((e => e)) || [])
+              !d.length && h?.isEllipsisMenuOpen ? (f("isEllipsisMenuOpen", !1), a([])) : a(d.map((e => u?.get(e)))?.filter((e => e)) || [])
             }));
             return () => e.revert()
-          }), [r, y, x?.current, s, g?.isEllipsisMenuOpen, g?.isCaptionsMenuOpen, g?.isQualityMenuOpen, g?.isDownloadMenuOpen, g?.isShareMenuOpen, g?.isAirPlayMenuOpen]), (0, i.jsxs)(i.Fragment, {
+          }), [r, m, k?.current, s, h?.isEllipsisMenuOpen, h?.isCaptionsMenuOpen, h?.isQualityMenuOpen, h?.isDownloadMenuOpen, h?.isShareMenuOpen, h?.isAirPlayMenuOpen]), (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsxs)("dialog", {
               "data-testid": "menu-handler-dialog",
               className: "rockstargames-modules-core-videoplayerab72872846a3159dd954410e2a5fe059",
               onClick: e => {
                 if (!e.currentTarget) return;
                 const a = e.currentTarget.getBoundingClientRect();
-                (a.left > e.clientX || a.right < e.clientX || a.top > e.clientY || a.bottom < e.clientY) && (e.preventDefault(), e.stopPropagation(), V("isAnyMenuOpen"))
+                (a.left > e.clientX || a.right < e.clientX || a.top > e.clientY || a.bottom < e.clientY) && (e.preventDefault(), e.stopPropagation(), E("isAnyMenuOpen"))
               },
               ref: _,
               style: {
-                "--options-height": `${L}px`
+                "--options-height": `${M}px`
               },
-              children: [l.concat(e).map((e => e.content)), e.length > 0 && g?.isEllipsisMenuOpen && (0, i.jsxs)("div", {
+              children: [l.concat(e).map((e => e.content)), e.length > 0 && h?.isEllipsisMenuOpen && (0, i.jsxs)("div", {
                 children: [(0, i.jsx)("header", {
                   className: "rockstargames-modules-core-videoplayerb38b9a189ab76a47717610d6e991e711",
                   children: (0, i.jsxs)("div", {
@@ -2638,7 +2636,7 @@ _global.SENTRY_RELEASE = {
                     children: [(0, i.jsx)(qe, {
                       className: $e
                     }), (0, i.jsx)("span", {
-                      children: m(Ze.videoplayer_collapsed_menu_header_label)
+                      children: p(Ze.videoplayer_collapsed_menu_header_label)
                     })]
                   })
                 }), (0, i.jsx)("div", {
@@ -2647,7 +2645,7 @@ _global.SENTRY_RELEASE = {
                 })]
               })]
             }), e.length > 0 && (0, i.jsx)(ze, {
-              onClick: () => V("isEllipsisMenuOpen")
+              onClick: () => E("isEllipsisMenuOpen")
             }), l.length > 0 && l.map((e => e.button))]
           })
         },
@@ -3126,11 +3124,11 @@ _global.SENTRY_RELEASE = {
             brand: N,
             fileIndex: M,
             running: V,
-            videoData: B
+            videoData: R
           } = g, {
-            loading: R,
+            loading: B,
             video: T
-          } = B, A = (0, s.useAgegated)(), H = (0, o.useNavigate)(), {
+          } = R, A = (0, s.useAgegated)(), H = (0, o.useNavigate)(), {
             formatMessage: D
           } = (0, c.useIntl)(), {
             currentSite: I
@@ -3217,16 +3215,16 @@ _global.SENTRY_RELEASE = {
             const a = l || j || !1;
             C("controlsActive", !0), C("fullscreen", !1), C("idle", !1), C("meta", null), C("playerEnded", !1), C("playing", a), C("progressBarState", {}), C("isAnyMenuOpen", !1), C("shareOpen", !1), C("videoId", d), a && (C("autoplay", !0), C("running", !0)), C("videoData", w)
           }), [JSON.stringify(w)]), (0, t.useEffect)((() => {
-            j && !R && T && T.id === d && k({
+            j && !B && T && T.id === d && k({
               event: "video_play_auto"
             })
-          }), [j, R, T, d]), (0, t.useEffect)((() => {
+          }), [j, B, T, d]), (0, t.useEffect)((() => {
             C("aspectRatio", a)
           }), [a]), (0, t.useEffect)((() => {
             C("context", n)
           }), [n]), (0, t.useEffect)((() => {
             C("resolution", _)
-          }), [_]), !T || R ? (0, i.jsx)(E.A, {
+          }), [_]), !T || B ? (0, i.jsx)(E.A, {
             hero: u,
             wrapper: v,
             titleCrop: h,

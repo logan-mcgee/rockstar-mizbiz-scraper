@@ -19,7 +19,7 @@ _global.SENTRY_RELEASE = {
     24079: (e, a, t) => {
       "use strict";
       t.d(a, {
-        A: () => c
+        A: () => d
       });
       var s = t(71403),
         r = t(42756);
@@ -29,22 +29,22 @@ _global.SENTRY_RELEASE = {
       };
       var m = t(46632);
       (0, r.importAll)(t(43202));
-      const c = e => {
+      const d = e => {
         let {
           isWideCard: a = !1,
-          size: c = 640,
-          title: d,
+          size: d = 640,
+          title: c,
           titleSlug: i
         } = e;
         const {
           isMobile: n
         } = (0, r.useWindowResize)(), g = (0, s.useMemo)((() => {
           let e = "";
-          return a && (e = n ? t(17426)(`./${i}/mobile.png`) : t(65392)(`./${i}/desktop.png`)), e || (e = t(32781)(`./${i}.jpg`), e += `?im=Resize=${c}`), e
+          return a && (e = n ? t(17426)(`./${i}/mobile.png`) : t(65392)(`./${i}/desktop.png`)), e || (e = t(32781)(`./${i}.jpg`), e += `?im=Resize=${d}`), e
         }), [n, i]), [p] = (0, r.usePreloadImg)(g);
         return (0, m.jsx)("div", {
           role: "img",
-          "aria-label": d,
+          "aria-label": c,
           className: [o.img, p ? o.startAnimation : "", a ? o.wide : ""].join(" "),
           style: {
             backgroundImage: `url(${g})`
@@ -56,7 +56,7 @@ _global.SENTRY_RELEASE = {
       "use strict";
       t.d(a, {
         s: () => s.A,
-        N: () => c
+        N: () => d
       });
       var s = t(24079),
         r = t(60285);
@@ -65,26 +65,26 @@ _global.SENTRY_RELEASE = {
         wide: "rockstargames-sites-rockstargamesa9b41f96042bda8a8c77b7b7b10f84d5"
       };
       var m = t(46632);
-      const c = e => {
+      const d = e => {
         let {
           game: a,
           to: t
         } = e;
         const {
-          titleSlug: c,
-          urlOfficial: d = ""
-        } = a, i = ["VI"].includes(c);
+          titleSlug: d,
+          urlOfficial: c = ""
+        } = a, i = ["VI"].includes(d);
         return (0, m.jsx)(r.A, {
           "data-gtm-category": "Games",
           "data-gtm-action": "Game Click-through",
-          "data-gtm-label": c,
-          "data-testid": `${c}-gamecard`,
-          to: t ?? d,
+          "data-gtm-label": d,
+          "data-testid": `${d}-gamecard`,
+          to: t ?? c,
           target: "_self",
           className: [o.fobLink, i ? o.wide : ""].join(" "),
           children: (0, m.jsx)(s.A, {
             title: a.title,
-            titleSlug: c,
+            titleSlug: d,
             isWideCard: i
           })
         })
@@ -93,8 +93,8 @@ _global.SENTRY_RELEASE = {
     67356: (e, a, t) => {
       "use strict";
       t.d(a, {
-        s: () => c,
-        N: () => d
+        s: () => d,
+        N: () => c
       });
       var s = t(42756),
         r = t(60285);
@@ -108,26 +108,26 @@ _global.SENTRY_RELEASE = {
         gameTitle: "rockstargames-sites-rockstargamesdebff452a4923aded7de826c081bab5d"
       };
       var m = t(46632);
-      const c = e => {
+      const d = e => {
           let {
             video: a,
             size: t = 640
           } = e;
           const r = () => a.screencap.includes("akamai") ? `${a.screencap}?im=Resize=${t}` : a.screencap,
-            [c] = (0, s.usePreloadImg)(r());
+            [d] = (0, s.usePreloadImg)(r());
           return (0, m.jsx)("div", {
-            className: [o.screencap, c ? o.screencapLoaded : ""].join(" "),
+            className: [o.screencap, d ? o.screencapLoaded : ""].join(" "),
             style: {
               background: `url(${r()}) center/cover`
             }
           })
         },
-        d = e => {
+        c = e => {
           let {
             gameTitleNecessary: a = !0,
             openInNewWindow: t = !1,
             video: s,
-            size: d,
+            size: c,
             toExplicit: i
           } = e;
           const n = i ?? `/videos/${s.id}`,
@@ -139,9 +139,9 @@ _global.SENTRY_RELEASE = {
             },
             p = (0, m.jsxs)("div", {
               className: o.card,
-              children: [(0, m.jsx)(c, {
+              children: [(0, m.jsx)(d, {
                 video: s,
-                size: d
+                size: c
               }), (0, m.jsxs)("div", {
                 className: o.info,
                 children: [a ? (0, m.jsx)("div", {
@@ -178,8 +178,8 @@ _global.SENTRY_RELEASE = {
         r = t(67356),
         o = t(40207),
         m = t(74401),
-        c = t(81902),
-        d = t(66573),
+        d = t(81902),
+        c = t(66573),
         i = t(96717),
         n = t(20066);
       const g = (0, i.defineMessages)({
@@ -244,7 +244,7 @@ _global.SENTRY_RELEASE = {
         };
         let E;
         return E = "games" === k ? (0, l.jsx)(l.Fragment, {
-          children: t.results.map(((e, a) => "775700as" !== e.id && (0, l.jsx)(c.qr, {
+          children: t.results.map(((e, a) => "775700as" !== e.id && (0, l.jsx)(d.qr, {
             className: f.slide,
             onFocus: () => T(a),
             children: (0, l.jsx)(p.N, {
@@ -254,7 +254,7 @@ _global.SENTRY_RELEASE = {
             })
           }, e.id)))
         }) : (0, l.jsx)(l.Fragment, {
-          children: a.map(((e, a) => (0, l.jsx)(c.qr, {
+          children: a.map(((e, a) => (0, l.jsx)(d.qr, {
             className: f.slide,
             onFocus: () => T(a),
             children: (0, l.jsx)(r.N, {
@@ -290,7 +290,7 @@ _global.SENTRY_RELEASE = {
             className: [f.items, y % 1 != 0 ? f.partial : ""].join(" "),
             children: (0, l.jsx)("div", {
               className: f.trackWrapper,
-              children: y && (0, l.jsx)(c.RC, {
+              children: y && (0, l.jsx)(d.RC, {
                 className: f.track,
                 slidesPerView: y,
                 spaceBetween: 24,
@@ -299,7 +299,7 @@ _global.SENTRY_RELEASE = {
                 },
                 grabCursor: !0,
                 navigation: x,
-                modules: [d.Vx],
+                modules: [c.Vx],
                 slideClass: (0, m.classList)("swiper-slide"),
                 onSlideNextTransitionEnd: () => {
                   j({
@@ -335,18 +335,18 @@ _global.SENTRY_RELEASE = {
         r = t(25076),
         o = t(74460),
         m = t(31879),
-        c = t(70396),
-        d = t(42756),
+        d = t(70396),
+        c = t(42756),
         i = t(46632);
-      const n = (0, d.withTranslations)((e => {
+      const n = (0, c.withTranslations)((e => {
         let {
           t: a
         } = e;
-        const [t] = (0, r.useSearchParams)(), d = (0, r.useNavigate)(), {
+        const [t] = (0, r.useSearchParams)(), c = (0, r.useNavigate)(), {
           setNormalLogo: n,
           setBreadcrumb: g,
           setTitle: p
-        } = (0, c.useRockstarLocalState)(), {
+        } = (0, d.useRockstarLocalState)(), {
           videoId: f
         } = (0, r.useParams)(), {
           video: l,
@@ -366,7 +366,7 @@ _global.SENTRY_RELEASE = {
             resolution: u,
             videoId: f,
             videoChangeCallback: e => {
-              d(`../videos/${e}`)
+              c(`../videos/${e}`)
             }
           }), b?.results?.length ? (0, i.jsx)(o.A, {
             vids: b.results,

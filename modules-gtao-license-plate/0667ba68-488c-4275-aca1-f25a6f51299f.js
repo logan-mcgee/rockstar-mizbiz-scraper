@@ -66,7 +66,7 @@ _global.SENTRY_RELEASE = {
         getLocale: () => u.A,
         localeCookieHandler: () => d.A,
         locales: () => c.Ay,
-        splitLocale: () => b.A,
+        splitLocale: () => p.A,
         useIntl: () => r.A,
         withIntl: () => i.QY
       });
@@ -79,11 +79,11 @@ _global.SENTRY_RELEASE = {
         u = s(175),
         d = s(4677),
         c = s(9186),
-        b = s(5136),
-        p = s(1272),
-        f = {};
-      for (const e in p)["default", "FormattedMessage", "IntlProvider", "POSIXLocales", "createDevLocaleHook", "createIntl", "defineMessages", "englishLocale", "getCookieValueByName", "getLocale", "localeCookieHandler", "locales", "splitLocale", "useIntl", "withIntl"].indexOf(e) < 0 && (f[e] = () => p[e]);
-      s.d(o, f)
+        p = s(5136),
+        b = s(1272),
+        m = {};
+      for (const e in b)["default", "FormattedMessage", "IntlProvider", "POSIXLocales", "createDevLocaleHook", "createIntl", "defineMessages", "englishLocale", "getCookieValueByName", "getLocale", "localeCookieHandler", "locales", "splitLocale", "useIntl", "withIntl"].indexOf(e) < 0 && (m[e] = () => b[e]);
+      s.d(o, m)
     },
     120: (e, o, s) => {
       "use strict";
@@ -170,8 +170,8 @@ _global.SENTRY_RELEASE = {
         const u = `rockstarweb_lang.${o.cookieIdentifier}`,
           d = (0, n.h)(u);
         l = o.currentSite?.site === t.C.www ? a.Ay.find((e => e.subdomaincom === r)) || a.Ay.find((e => e.subdomaincom === s)) || i : a.Ay.find((e => e.iso === d)) || i;
-        const [c, b] = (0, n.A)(u, l.iso);
-        return [l, b]
+        const [c, p] = (0, n.A)(u, l.iso);
+        return [l, p]
       }
     },
     4677: (e, o, s) => {

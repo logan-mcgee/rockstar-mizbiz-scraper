@@ -1,8 +1,8 @@
 ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      n = (new Error).stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "ee4374d2-834d-4cd3-9864-bb6a91a242cc", e._sentryDebugIdIdentifier = "sentry-dbid-ee4374d2-834d-4cd3-9864-bb6a91a242cc")
+      a = (new Error).stack;
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "ee4374d2-834d-4cd3-9864-bb6a91a242cc", e._sentryDebugIdIdentifier = "sentry-dbid-ee4374d2-834d-4cd3-9864-bb6a91a242cc")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -16,83 +16,83 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
   [825, 4216, 5946], {
-    45946: (e, n, a) => {
+    45946: (e, a, n) => {
       "use strict";
-      a.r(n), a.d(n, {
+      n.r(a), n.d(a, {
         Jsx0: () => s,
         Jsx1: () => V,
         Jsx2: () => B
       });
-      var i = a(31716);
-      var t = a(46632);
+      var i = n(31716);
+      var t = n(46632);
       const s = e => {
         let {
-          article: n,
-          children: a
+          article: a,
+          children: n
         } = e;
-        const s = n.primary_tags[n.primary_tags.length > 1 && 722 === n.primary_tags[0].id ? 1 : 0];
+        const s = a.primary_tags[a.primary_tags.length > 1 && 722 === a.primary_tags[0].id ? 1 : 0];
         return (0, t.jsxs)("div", {
           className: "rockstargames-modules-core-newswire-articlefde6afcfe220cf25157dc91bf1b2d18e",
           children: [(0, t.jsxs)("div", {
             className: "rockstargames-modules-core-newswire-articlebca2269fc10a1f1bd0a9e45876f0c9cf",
             children: [(0, t.jsxs)("h1", {
-              children: [n.title, n.subtitle ? (0, t.jsx)("span", {
-                children: n.subtitle
+              children: [a.title, a.subtitle ? (0, t.jsx)("span", {
+                children: a.subtitle
               }) : ""]
             }), (0, t.jsxs)("div", {
               className: "rockstargames-modules-core-newswire-articlec37d0dc8985df7232f651846152c95e2",
-              children: [n.primary_tags.length ? (0, t.jsx)(i.A, {
+              children: [a.primary_tags.length ? (0, t.jsx)(i.A, {
                 title: s.name,
                 href: `/newswire?tag_id=${s.id}`
               }) : "", (0, t.jsx)("time", {
-                dateTime: n.created,
-                children: n.created_formatted
+                dateTime: a.created,
+                children: a.created_formatted
               })]
-            }), n.posts_hero && "iframe" === n.posts_hero.type ? (0, t.jsx)("div", {
+            }), a.posts_hero && "iframe" === a.posts_hero.type ? (0, t.jsx)("div", {
               className: "rockstargames-modules-core-newswire-articlea802e7b8d32570889cd1dfceaae9f128",
               children: (0, t.jsx)("iframe", {
-                src: n.posts_hero.hero
+                src: a.posts_hero.hero
               })
             }) : "", (0, t.jsx)("div", {
               className: "rockstargames-modules-core-newswire-articlefec56da42544417b3e8932627cfb9ab8",
               dangerouslySetInnerHTML: {
-                __html: n.content
+                __html: a.content
               }
             })]
-          }), a]
+          }), n]
         })
       };
-      var d = a(71403),
-        r = a(85865),
-        l = a.n(r),
-        o = a(42756),
-        c = a(34983),
-        m = a(21450),
-        u = a(8999),
-        k = a(60285),
-        v = a(22778),
-        f = a(39613),
-        g = a(41074),
-        p = a(28606),
-        h = a(87839),
-        b = a(2024),
-        w = a(95625),
-        N = a(61841),
-        _ = a(43108),
-        x = a(75930),
-        S = a(17375),
-        y = a(37297),
-        j = a(63303),
-        F = a(63672),
-        A = a(74459),
-        T = a.n(A),
-        I = a(64064),
-        D = a.n(I),
-        P = a(26750);
+      var d = n(71403),
+        r = n(85865),
+        l = n.n(r),
+        o = n(42756),
+        c = n(34983),
+        m = n(21450),
+        u = n(8999),
+        k = n(60285),
+        v = n(22778),
+        g = n(39613),
+        f = n(41074),
+        p = n(28606),
+        h = n(87839),
+        w = n(2024),
+        b = n(95625),
+        N = n(61841),
+        _ = n(43108),
+        x = n(75930),
+        S = n(17375),
+        y = n(37297),
+        j = n(63303),
+        F = n(63672),
+        A = n(74459),
+        T = n.n(A),
+        I = n(64064),
+        D = n.n(I),
+        P = n(26750);
       const V = (0, o.withTranslations)((0, o.withLocale)((e => {
         let {
-          article: n,
-          children: a,
+          article: a,
+          children: n,
           locale: s,
           t: r
         } = e;
@@ -115,7 +115,7 @@ _global.SENTRY_RELEASE = {
             Carousel: e => (0, t.jsx)(m.A, {
               ...e
             }),
-            Cta: e => (0, t.jsx)(f.A, {
+            Cta: e => (0, t.jsx)(g.A, {
               ...e
             }),
             Discounts: e => (0, t.jsx)(P.Discounts, {
@@ -124,7 +124,7 @@ _global.SENTRY_RELEASE = {
             Donate: e => (0, t.jsx)(P.Donate, {
               ...e
             }),
-            FadeInContent: e => (0, t.jsx)(g.A, {
+            FadeInContent: e => (0, t.jsx)(f.A, {
               ...e
             }),
             FontClip: e => (0, t.jsx)(P.FontClip, {
@@ -151,7 +151,7 @@ _global.SENTRY_RELEASE = {
             ImageWithBadge: e => (0, t.jsx)(u.A, {
               ...e
             }),
-            MultiSourceImage: e => (0, t.jsx)(b.A, {
+            MultiSourceImage: e => (0, t.jsx)(w.A, {
               ...e
             }),
             NewswireFull: e => (0, t.jsx)(P.NewswireFull, {
@@ -166,7 +166,7 @@ _global.SENTRY_RELEASE = {
             Podium: e => (0, t.jsx)(P.Podium, {
               ...e
             }),
-            ResponsiveGridBox: e => (0, t.jsx)(w.A, {
+            ResponsiveGridBox: e => (0, t.jsx)(b.A, {
               ...e
             }),
             ResponsiveGridItem: e => (0, t.jsx)(N.A, {
@@ -194,46 +194,46 @@ _global.SENTRY_RELEASE = {
               ...e
             })
           },
-          A = n.posts_jsx.variables_us_defaulted,
+          A = a.posts_jsx.variables_us_defaulted,
           [I] = (0, d.useState)((0, t.jsx)(l(), {
             renderInWrapper: !1,
             bindings: {
-              getArray: (e, n) => e[n],
+              getArray: (e, a) => e[a],
               renderHtml: e => (0, t.jsx)("span", {
                 dangerouslySetInnerHTML: {
                   __html: e
                 }
               }, I),
-              article: n,
+              article: a,
               locale: s,
               t: r,
               variables: A
             },
             components: o,
-            jsx: n.posts_jsx.markup,
+            jsx: a.posts_jsx.markup,
             onError: e => {
               console.error(e)
             }
           }));
         return (0, t.jsxs)("div", {
           className: "rockstargames-modules-core-newswire-articlec24348b14cbdcfa0c1461aa99aa4c1f6",
-          children: [I, a]
+          children: [I, n]
         })
       })));
-      var C = a(74401),
-        E = a(74216),
-        G = a(87319),
-        L = a(96717);
+      var C = n(74401),
+        E = n(74216),
+        G = n(87319),
+        L = n(96717);
       const B = e => {
         let {
-          children: n,
-          payload: a,
+          children: a,
+          payload: n,
           variablesKeys: i
         } = e, s = !1;
         s = !0;
         const [d] = (0, L.getLocale)(), r = e => {
           let {
-            children: n
+            children: a
           } = e;
           return (0, t.jsx)(G.NP, {
             locale: d?.iso,
@@ -241,7 +241,7 @@ _global.SENTRY_RELEASE = {
             defaultColorScheme: "dark",
             defaultContrastMode: "normal",
             defaultPlatformScale: "desktop",
-            children: n
+            children: a
           })
         };
         return (0, t.jsx)(r, {
@@ -249,51 +249,51 @@ _global.SENTRY_RELEASE = {
             className: "rockstargames-modules-core-newswire-articled024f9dc1e6bc46f9b3576bcf12e1eb9",
             children: [(0, t.jsx)(C.TinaParser, {
               tina: {
-                payload: a,
+                payload: n,
                 variables: {
                   keys: i
                 }
               },
               components: E.componentsForTinaParser
-            }), n]
+            }), a]
           })
         })
       }
     },
-    74216: (e, n, a) => {
+    74216: (e, a, n) => {
       "use strict";
-      a.r(n), a.d(n, {
-        componentsForTinaParser: () => b
+      n.r(a), n.d(a, {
+        componentsForTinaParser: () => w
       });
-      var i = a(73695),
-        t = a(64064),
-        s = a.n(t),
-        d = a(74459),
-        r = a.n(d),
-        l = a(26527),
-        o = a.n(l),
-        c = a(31879),
-        m = a.n(c),
-        u = a(66713),
-        k = a.n(u),
-        v = a(42012),
-        f = a(26750),
-        g = a(29210),
-        p = a(28089),
-        h = a(46632);
-      const b = {
+      var i = n(73695),
+        t = n(64064),
+        s = n.n(t),
+        d = n(74459),
+        r = n.n(d),
+        l = n(26527),
+        o = n.n(l),
+        c = n(31879),
+        m = n.n(c),
+        u = n(66713),
+        k = n.n(u),
+        v = n(42012),
+        g = n(26750),
+        f = n(29210),
+        p = n(28089),
+        h = n(46632);
+      const w = {
         ...i,
-        ...f,
+        ...g,
         ClrCard: v.y3,
         ClrCollapsedCard: v.h7,
         Gif: s(),
         GroupOfItems: r(),
         Lightbox: e => {
           const {
-            src: n,
-            thumbnail: a
-          } = e, i = (0, p.useGetCdnSource)(n), t = (0, p.useGetCdnSource)(a);
-          return (0, h.jsx)(g.Lightbox, {
+            src: a,
+            thumbnail: n
+          } = e, i = (0, p.useGetCdnSource)(a), t = (0, p.useGetCdnSource)(n);
+          return (0, h.jsx)(f.Lightbox, {
             ...e,
             src: i,
             thumbnail: t
@@ -304,56 +304,56 @@ _global.SENTRY_RELEASE = {
         UGCJobSpotlight: k()
       }
     },
-    80825: (e, n, a) => {
+    80825: (e, a, n) => {
       "use strict";
-      a.r(n), a.d(n, {
+      n.r(a), n.d(a, {
         default: () => m
       });
-      var i = a(71403),
-        t = a(58407),
-        s = a(95073),
-        d = a(42158),
-        r = a(45946),
-        l = a(27523),
-        o = a(46632);
+      var i = n(71403),
+        t = n(58407),
+        s = n(95073),
+        d = n(42158),
+        r = n(45946),
+        l = n(27523),
+        o = n(46632);
       const c = e => {
           let {
-            article: n,
-            relatedBlock: a
+            article: a,
+            relatedBlock: n
           } = e;
-          switch (n.jsx) {
+          switch (a.jsx) {
             case 0:
               return (0, o.jsx)(r.Jsx0, {
-                article: n,
-                children: a
+                article: a,
+                children: n
               });
             case 1:
               return (0, o.jsx)(r.Jsx1, {
-                article: n,
-                children: a
+                article: a,
+                children: n
               });
             default:
               return (0, o.jsx)(r.Jsx2, {
-                payload: n.tina.payload,
-                variablesKeys: n.tina.variables.keys,
-                children: a
+                payload: a.tina.payload,
+                variablesKeys: a.tina.variables.keys,
+                children: n
               })
           }
         },
         m = e => {
           let {
-            idHash: n
+            idHash: a
           } = e;
           const {
-            data: a,
+            data: n,
             loading: r
           } = (0, t.useQuery)(l.NewswirePost, {
             variables: {
-              id_hash: n
+              id_hash: a
             },
             setTitleDataPath: "post.title",
             autoSetLoading: !0
-          }), m = a?.post ?? null, u = a?.related?.results ?? null;
+          }), m = n?.post ?? null, u = n?.related?.results ?? null;
           if ((0, i.useEffect)((() => {
               m && (window?.instgrm?.Embeds?.process?.(), window?.twttr?.widgets?.load?.())
             }), [m]), !m || r) return null;
@@ -369,7 +369,7 @@ _global.SENTRY_RELEASE = {
           })
         }
     },
-    27523: (e, n, a) => {
+    27523: (e, a, n) => {
       var i = {
         kind: "Document",
         definitions: [{
@@ -943,45 +943,45 @@ _global.SENTRY_RELEASE = {
       };
       var t = {};
 
-      function s(e, n) {
-        if ("FragmentSpread" === e.kind) n.add(e.name.value);
+      function s(e, a) {
+        if ("FragmentSpread" === e.kind) a.add(e.name.value);
         else if ("VariableDefinition" === e.kind) {
-          var a = e.type;
-          "NamedType" === a.kind && n.add(a.name.value)
+          var n = e.type;
+          "NamedType" === n.kind && a.add(n.name.value)
         }
         e.selectionSet && e.selectionSet.selections.forEach((function(e) {
-          s(e, n)
+          s(e, a)
         })), e.variableDefinitions && e.variableDefinitions.forEach((function(e) {
-          s(e, n)
+          s(e, a)
         })), e.definitions && e.definitions.forEach((function(e) {
-          s(e, n)
+          s(e, a)
         }))
       }
-      i.definitions = i.definitions.concat(a(90588).definitions.filter((function(e) {
+      i.definitions = i.definitions.concat(n(90588).definitions.filter((function(e) {
         if ("FragmentDefinition" !== e.kind) return !0;
-        var n = e.name.value;
-        return !t[n] && (t[n] = !0, !0)
+        var a = e.name.value;
+        return !t[a] && (t[a] = !0, !0)
       })));
       var d = {};
 
-      function r(e, n) {
-        for (var a = 0; a < e.definitions.length; a++) {
-          var i = e.definitions[a];
-          if (i.name && i.name.value == n) return i
+      function r(e, a) {
+        for (var n = 0; n < e.definitions.length; n++) {
+          var i = e.definitions[n];
+          if (i.name && i.name.value == a) return i
         }
       }
       i.definitions.forEach((function(e) {
         if (e.name) {
-          var n = new Set;
-          s(e, n), d[e.name.value] = n
+          var a = new Set;
+          s(e, a), d[e.name.value] = a
         }
-      })), e.exports = i, e.exports.NewswirePost = function(e, n) {
-        var a = {
+      })), e.exports = i, e.exports.NewswirePost = function(e, a) {
+        var n = {
           kind: e.kind,
-          definitions: [r(e, n)]
+          definitions: [r(e, a)]
         };
-        e.hasOwnProperty("loc") && (a.loc = e.loc);
-        var i = d[n] || new Set,
+        e.hasOwnProperty("loc") && (n.loc = e.loc);
+        var i = d[a] || new Set,
           t = new Set,
           s = new Set;
         for (i.forEach((function(e) {
@@ -994,10 +994,10 @@ _global.SENTRY_RELEASE = {
             })))
           }))
         }
-        return t.forEach((function(n) {
-          var i = r(e, n);
-          i && a.definitions.push(i)
-        })), a
+        return t.forEach((function(a) {
+          var i = r(e, a);
+          i && n.definitions.push(i)
+        })), n
       }(i, "NewswirePost")
     }
   }

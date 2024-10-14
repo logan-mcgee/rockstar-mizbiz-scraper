@@ -1,8 +1,8 @@
 ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "04983531-3648-4f48-b409-7b1a079cb32a", e._sentryDebugIdIdentifier = "sentry-dbid-04983531-3648-4f48-b409-7b1a079cb32a")
+      s = (new Error).stack;
+    s && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[s] = "c7d5e194-4390-477d-b366-b450096b4eaf", e._sentryDebugIdIdentifier = "sentry-dbid-c7d5e194-4390-477d-b366-b450096b4eaf")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -15,336 +15,42 @@ var _global = "undefined" != typeof window ? window : "undefined" != typeof glob
 _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_gta_gen9 = self.webpackChunk_rockstargames_sites_gta_gen9 || []).push([
-  [9598, 6636], {
-    19435: (e, t, s) => {
-      var a = s(78007).Symbol;
-      e.exports = a
-    },
-    7158: (e, t, s) => {
-      var a = s(19435),
-        n = s(16061),
-        r = s(84968),
-        c = a ? a.toStringTag : void 0;
-      e.exports = function(e) {
-        return null == e ? void 0 === e ? "[object Undefined]" : "[object Null]" : c && c in Object(e) ? n(e) : r(e)
-      }
-    },
-    48530: (e, t, s) => {
-      var a = s(18478),
-        n = /^\s+/;
-      e.exports = function(e) {
-        return e ? e.slice(0, a(e) + 1).replace(n, "") : e
-      }
-    },
-    94626: (e, t, s) => {
-      var a = "object" == typeof s.g && s.g && s.g.Object === Object && s.g;
-      e.exports = a
-    },
-    16061: (e, t, s) => {
-      var a = s(19435),
-        n = Object.prototype,
-        r = n.hasOwnProperty,
-        c = n.toString,
-        i = a ? a.toStringTag : void 0;
-      e.exports = function(e) {
-        var t = r.call(e, i),
-          s = e[i];
-        try {
-          e[i] = void 0;
-          var a = !0
-        } catch (e) {}
-        var n = c.call(e);
-        return a && (t ? e[i] = s : delete e[i]), n
-      }
-    },
-    84968: e => {
-      var t = Object.prototype.toString;
-      e.exports = function(e) {
-        return t.call(e)
-      }
-    },
-    78007: (e, t, s) => {
-      var a = s(94626),
-        n = "object" == typeof self && self && self.Object === Object && self,
-        r = a || n || Function("return this")();
-      e.exports = r
-    },
-    18478: e => {
-      var t = /\s/;
-      e.exports = function(e) {
-        for (var s = e.length; s-- && t.test(e.charAt(s)););
-        return s
-      }
-    },
-    14963: (e, t, s) => {
-      var a = s(27335),
-        n = s(92346),
-        r = s(58972),
-        c = Math.max,
-        i = Math.min;
-      e.exports = function(e, t, s) {
-        var o, l, d, g, u, m, f = 0,
-          b = !1,
-          x = !1,
-          _ = !0;
-        if ("function" != typeof e) throw new TypeError("Expected a function");
-
-        function h(t) {
-          var s = o,
-            a = l;
-          return o = l = void 0, f = t, g = e.apply(a, s)
-        }
-
-        function w(e) {
-          var s = e - m;
-          return void 0 === m || s >= t || s < 0 || x && e - f >= d
-        }
-
-        function k() {
-          var e = n();
-          if (w(e)) return p(e);
-          u = setTimeout(k, function(e) {
-            var s = t - (e - m);
-            return x ? i(s, d - (e - f)) : s
-          }(e))
-        }
-
-        function p(e) {
-          return u = void 0, _ && o ? h(e) : (o = l = void 0, g)
-        }
-
-        function v() {
-          var e = n(),
-            s = w(e);
-          if (o = arguments, l = this, m = e, s) {
-            if (void 0 === u) return function(e) {
-              return f = e, u = setTimeout(k, t), b ? h(e) : g
-            }(m);
-            if (x) return clearTimeout(u), u = setTimeout(k, t), h(m)
-          }
-          return void 0 === u && (u = setTimeout(k, t)), g
-        }
-        return t = r(t) || 0, a(s) && (b = !!s.leading, d = (x = "maxWait" in s) ? c(r(s.maxWait) || 0, t) : d, _ = "trailing" in s ? !!s.trailing : _), v.cancel = function() {
-          void 0 !== u && clearTimeout(u), f = 0, o = m = l = u = void 0
-        }, v.flush = function() {
-          return void 0 === u ? g : p(n())
-        }, v
-      }
-    },
-    27335: e => {
-      e.exports = function(e) {
-        var t = typeof e;
-        return null != e && ("object" == t || "function" == t)
-      }
-    },
-    95360: e => {
-      e.exports = function(e) {
-        return null != e && "object" == typeof e
-      }
-    },
-    87416: (e, t, s) => {
-      var a = s(7158),
-        n = s(95360);
-      e.exports = function(e) {
-        return "symbol" == typeof e || n(e) && "[object Symbol]" == a(e)
-      }
-    },
-    92346: (e, t, s) => {
-      var a = s(78007);
-      e.exports = function() {
-        return a.Date.now()
-      }
-    },
-    58972: (e, t, s) => {
-      var a = s(48530),
-        n = s(27335),
-        r = s(87416),
-        c = /^[-+]0x[0-9a-f]+$/i,
-        i = /^0b[01]+$/i,
-        o = /^0o[0-7]+$/i,
-        l = parseInt;
-      e.exports = function(e) {
-        if ("number" == typeof e) return e;
-        if (r(e)) return NaN;
-        if (n(e)) {
-          var t = "function" == typeof e.valueOf ? e.valueOf() : e;
-          e = n(t) ? t + "" : t
-        }
-        if ("string" != typeof e) return 0 === e ? e : +e;
-        e = a(e);
-        var s = i.test(e);
-        return s || o.test(e) ? l(e.slice(2), s ? 2 : 8) : c.test(e) ? NaN : +e
-      }
-    },
-    62811: (e, t, s) => {
-      "use strict";
-      s.d(t, {
-        A: () => o
+  [6636], {
+    57784: (e, s, t) => {
+      t.r(s), t.d(s, {
+        default: () => T
       });
-      var a = s(89779);
-      const n = {
-        pillBtn: "rockstargames-sites-gta-gen9b59962d0e68ccd73b5ee2e571528d469",
-        selected: "rockstargames-sites-gta-gen9f5c57dad202e0d6ff855d5a4aca2c804",
-        plusButton: "rockstargames-sites-gta-gen9cffaf489342637258d28f9b3b718836a",
-        small: "rockstargames-sites-gta-gen9b8abf927f0ba0af0d8ac0e9c77690d34",
-        btnText: "rockstargames-sites-gta-gen9e6e56461bfc2e426c4abc5451cd17284",
-        btnTexticon: "rockstargames-sites-gta-gen9cef9f9ce913d167a1fe2e7118a407cdd",
-        whiteBtn: "rockstargames-sites-gta-gen9b257e0629b9f8e101791d7a948ed15be",
-        blackBtn: "rockstargames-sites-gta-gen9cb03bccaee79394858682d2ce4d08253",
-        transparentBtn: "rockstargames-sites-gta-gen9d0460159a17533d4d23686d7dca76794",
-        iconBtn: "rockstargames-sites-gta-gen9ac61186c3c22346c9a4ee2cd2820d341",
-        link: "rockstargames-sites-gta-gen9c5920e56149b82f20f4db2ad9d397495",
-        xboxone: "rockstargames-sites-gta-gen9a7057f2e6d398341f57bc462716d0508",
-        xboxseriesxs: "rockstargames-sites-gta-gen9a693ab5879f34d7dea1737d3172ed4e4",
-        ps4: "rockstargames-sites-gta-gen9a029ff88fc9aef470aaeef8053f90436",
-        ps5: "rockstargames-sites-gta-gen9e25638751cf3e7267db23c6a401fcc36",
-        pc: "rockstargames-sites-gta-gen9e03d92653f19a7ae3c4b3d5137bc9909"
-      };
-      var r = s(46632);
-      const c = e => {
-          let {
-            children: t,
-            className: s,
-            onClick: a,
-            style: n,
-            ariaLabel: c
-          } = e;
-          return (0, r.jsx)("button", {
-            className: s,
-            onClick: a,
-            style: n,
-            type: "button",
-            "aria-label": c,
-            children: t
-          })
-        },
-        i = e => {
-          let {
-            children: t,
-            className: s,
-            onClick: n,
-            style: c,
-            to: i,
-            ariaLabel: o
-          } = e;
-          return (0, r.jsx)(a.NavLink, {
-            className: s,
-            onClick: n,
-            style: c,
-            to: i,
-            "aria-label": o,
-            children: t
-          })
-        },
-        o = e => {
-          let {
-            btnColor: t = "#fff",
-            className: s = "",
-            consoleBtn: a,
-            icon: o = "",
-            img: l,
-            labelColor: d = "#000",
-            onClick: g,
-            secondText: u,
-            size: m,
-            text: f,
-            to: b,
-            type: x = "",
-            ariaLabel: _
-          } = e;
-          const h = [n.plusButton, n[x] ?? "", n[m] ?? "", n[a] ?? "", s].join(" "),
-            w = {
-              "--hvr-color": t ?? d,
-              "--hvr-bg-color": d ?? t,
-              "--hvr-border-color": t ?? d
-            },
-            k = (0, r.jsxs)(r.Fragment, {
-              children: [l ? (0, r.jsx)("img", {
-                src: l,
-                alt: ""
-              }) : "", (0, r.jsxs)("div", {
-                className: n.btnText,
-                icon: o,
-                children: [f, u ? (0, r.jsx)("span", {
-                  children: u
-                }) : ""]
-              })]
-            });
-          if (b) {
-            if (b.startsWith("http")) {
-              const e = b.startsWith(document.location.origin) ? "_self" : "_blank";
-              return (0, r.jsx)("span", {
-                onClick: g,
-                onKeyDown: g,
-                className: h,
-                role: "button",
-                "aria-label": _,
-                tabIndex: 0,
-                children: (0, r.jsx)("a", {
-                  href: b,
-                  target: e,
-                  children: k
-                })
-              })
-            }
-            return (0, r.jsx)(i, {
-              className: h,
-              onClick: g,
-              style: {
-                ...w
-              },
-              to: b,
-              ariaLabel: _,
-              children: k
-            })
-          }
-          return (0, r.jsx)(c, {
-            className: h,
-            onClick: g,
-            style: {
-              ...w
-            },
-            ariaLabel: _,
-            children: k
-          })
-        }
-    },
-    57784: (e, t, s) => {
-      "use strict";
-      s.r(t), s.d(t, {
-        default: () => R
-      });
-      var a = s(94430),
-        n = s.n(a),
-        r = s(74401),
-        c = s(28089);
-      var i = s(46632);
-      const o = e => {
+      var a = t(94430),
+        n = t.n(a),
+        c = t(74401),
+        r = t(28089);
+      var i = t(46632);
+      const d = e => {
         let {
-          backgroundImage: t,
-          image: s,
+          backgroundImage: s,
+          image: t,
           logoHorizontalPosition: a,
-          logoVerticalPosition: o,
+          logoVerticalPosition: d,
           enableOverlay: l = !1,
-          overlayBackground: d = "rgba(0,0,0,0.25)"
+          overlayBackground: o = "rgba(0,0,0,0.25)"
         } = e;
-        const g = (0, c.useImageParser)(s ?? {}),
-          u = (0, r.useGetCdnSource)(t?.mobile ?? null),
-          m = (0, r.useGetCdnSource)(t?.desktop ?? u),
+        const g = (0, r.useImageParser)(t ?? {}),
+          m = (0, c.useGetCdnSource)(s?.mobile ?? null),
+          u = (0, c.useGetCdnSource)(s?.desktop ?? m),
           f = g?.src?.mobile,
           b = g?.src?.desktop ?? f;
         return (0, i.jsx)("div", {
           className: n()("rockstargames-sites-gta-gen9ed09e8cd8784cef75c8e083c6d5195e5", l ? "rockstargames-sites-gta-gen9ba63665ed9f22bf03682026e6367a0b3" : ""),
           style: {
-            "--overlay-background-color": d
+            "--overlay-background-color": o
           },
           children: (0, i.jsx)("div", {
             className: "rockstargames-sites-gta-gen9d46e1512d9373817c2ca8cac7190158b",
             style: {
-              "--background-image-mobile": `url(${u})`,
-              "--background-image-desktop": `url(${m})`,
+              "--background-image-mobile": `url(${m})`,
+              "--background-image-desktop": `url(${u})`,
               "--logo-justify-position": a ?? "normal",
-              "--logo-align-position": o ?? "normal"
+              "--logo-align-position": d ?? "normal"
             },
             children: b && (0, i.jsx)("img", {
               src: b,
@@ -354,26 +60,26 @@ _global.SENTRY_RELEASE = {
           })
         })
       };
-      var l = s(71403);
+      var l = t(71403);
 
-      function d(e) {
-        const t = Object.prototype.toString.call(e);
-        return e instanceof Date || "object" == typeof e && "[object Date]" === t ? new e.constructor(+e) : "number" == typeof e || "[object Number]" === t || "string" == typeof e || "[object String]" === t ? new Date(e) : new Date(NaN)
+      function o(e) {
+        const s = Object.prototype.toString.call(e);
+        return e instanceof Date || "object" == typeof e && "[object Date]" === s ? new e.constructor(+e) : "number" == typeof e || "[object Number]" === s || "string" == typeof e || "[object String]" === s ? new Date(e) : new Date(NaN)
       }
 
-      function g(e, t, s) {
-        const a = function(e, t) {
-          return +d(e) - +d(t)
-        }(e, t) / 1e3;
-        return (n = s?.roundingMethod, e => {
-          const t = (n ? Math[n] : Math.trunc)(e);
-          return 0 === t ? 0 : t
+      function g(e, s, t) {
+        const a = function(e, s) {
+          return +o(e) - +o(s)
+        }(e, s) / 1e3;
+        return (n = t?.roundingMethod, e => {
+          const s = (n ? Math[n] : Math.trunc)(e);
+          return 0 === s ? 0 : s
         })(a);
         var n
       }
-      var u = s(42756),
-        m = s(96717);
-      const f = (0, m.defineMessages)({
+      var m = t(42756),
+        u = t(96717);
+      const f = (0, u.defineMessages)({
           countdown_timer_header_title: {
             id: "countdown_timer_header_title",
             defaultMessage: "Time Remaining"
@@ -433,65 +139,67 @@ _global.SENTRY_RELEASE = {
           countdownBlock: "rockstargames-sites-gta-gen9fa5628d465dd05a47d8d5e8d25ff3a76",
           counter: "rockstargames-sites-gta-gen9d6fa39f761d1ab9d53271743d189b602",
           countdownLabel: "rockstargames-sites-gta-gen9f576cb3d8f9e58e4cbdcda87f60760f2",
+          container: "rockstargames-sites-gta-gen9fb7022008dcc028ef78f1d4c6300e654",
+          accentImage: "rockstargames-sites-gta-gen9d052abad5051d4699afda1c888a94111",
           failureLabel: "rockstargames-sites-gta-gen9f637125e954900e1e3f6dbc30c566931",
           successLabel: "rockstargames-sites-gta-gen9dcc87457d47b9a7e8678e2099da8387a",
           textGlow: "rockstargames-sites-gta-gen9ec255862d45ef8396868808f0312fdf2",
           glow: "rockstargames-sites-gta-gen9e994f4b7736affcdce75b42d05d1b27e"
         },
-        x = (0, u.withLocale)((e => {
+        _ = (0, m.withLocale)((e => {
           let {
-            targetDate: t,
-            status: s = "active",
+            targetDate: s,
+            status: t = "active",
             theme: a,
-            includeSeconds: c = !1,
-            showBackground: o,
-            backgroundColor: d,
-            successBgImages: x,
-            failureBgImages: _
+            includeSeconds: r = !1,
+            showBackground: d,
+            backgroundColor: o,
+            successBgImages: _,
+            failureBgImages: h
           } = e;
           const {
-            isMobile: h
-          } = (0, u.useWindowResize)(), [w, k] = (0, l.useState)(!1), p = (0, r.useGetCdnSource)(x?.imageLeft?.mobile ?? null), v = (0, r.useGetCdnSource)(x?.imageLeft?.desktop ?? p), j = (0, r.useGetCdnSource)(x?.imageRight?.mobile ?? null), N = (0, r.useGetCdnSource)(x?.imageRight?.desktop ?? j), y = (0, r.useGetCdnSource)(_?.imageLeft?.mobile ?? null), M = (0, r.useGetCdnSource)(_?.imageLeft?.desktop ?? y), S = (0, r.useGetCdnSource)(_?.imageRight?.mobile ?? null), C = (0, r.useGetCdnSource)(_?.imageRight?.desktop ?? S), B = (0, l.useCallback)(((e, t) => {
-            const s = g(e, new Date);
-            return s <= 0 ? (k(!0), {
+            isMobile: x
+          } = (0, m.useWindowResize)(), [w, k] = (0, l.useState)(!1), j = (0, c.useGetCdnSource)(_?.imageLeft?.mobile ?? null), p = (0, c.useGetCdnSource)(_?.imageLeft?.desktop ?? j), v = (0, c.useGetCdnSource)(_?.imageRight?.mobile ?? null), N = (0, c.useGetCdnSource)(_?.imageRight?.desktop ?? v), y = (0, c.useGetCdnSource)(h?.imageLeft?.mobile ?? null), M = (0, c.useGetCdnSource)(h?.imageLeft?.desktop ?? y), S = (0, c.useGetCdnSource)(h?.imageRight?.mobile ?? null), C = (0, c.useGetCdnSource)(h?.imageRight?.desktop ?? S), I = (0, l.useCallback)(((e, s) => {
+            const t = g(e, new Date);
+            return t <= 0 ? (k(!0), {
               days: "00",
               hours: "00",
               minutes: "00",
               seconds: "00"
             }) : {
-              days: String(Math.floor(s / 86400)).padStart(2, "0"),
-              hours: String(Math.floor(s % 86400 / 3600)).padStart(2, "0"),
-              minutes: String(Math.floor(s % 3600 / 60)).padStart(2, "0"),
-              seconds: t ? String(Math.floor(s % 60)).padStart(2, "0") : "00"
+              days: String(Math.floor(t / 86400)).padStart(2, "0"),
+              hours: String(Math.floor(t % 86400 / 3600)).padStart(2, "0"),
+              minutes: String(Math.floor(t % 3600 / 60)).padStart(2, "0"),
+              seconds: s ? String(Math.floor(t % 60)).padStart(2, "0") : "00"
             }
-          }), []), [L, T] = (0, l.useState)((() => B(t, c)));
+          }), []), [B, L] = (0, l.useState)((() => I(s, r)));
           return (0, l.useEffect)((() => {
             const e = setInterval((() => {
-              T(B(t, c))
-            }), c ? 1e3 : 6e4);
+              L(I(s, r))
+            }), r ? 1e3 : 6e4);
             return () => clearInterval(e)
-          }), [t, c, B]), (0, i.jsxs)("div", {
-            className: n()(b.countdownContainer, s),
+          }), [s, r, I]), (0, i.jsxs)("div", {
+            className: n()(b.countdownContainer, t),
             style: {
               "--counter-text-color": a?.enableTextGradient ? "transparent" : a?.textColor,
               "--counter-text-stroke-color": a?.enableTextStroke ? a?.textStrokeColor : "unset",
               "--counter-text-stroke-width": a?.enableTextStroke ? a?.textStrokeWidth : "unset",
               "--counter-text-shadow": a?.enableTextShadow ? a.textShadow : "unset",
               "--counter-text-gradient": a?.enableTextGradient ? a.textGradient : "none",
-              "--counter-background-color": o ? d : "none",
+              "--counter-background-color": d ? o : "none",
               "--counter-orientation": "vertical" === a?.counterOrientation ? "column" : "row"
             },
-            children: ["active" === s && (0, i.jsxs)(i.Fragment, {
+            children: ["active" === t && (0, i.jsxs)(i.Fragment, {
               children: [(0, i.jsx)("h1", {
                 className: b.countdownHeader,
-                children: (0, i.jsx)(m.FormattedMessage, {
+                children: (0, i.jsx)(u.FormattedMessage, {
                   ...f.countdown_timer_header_title
                 })
-              }), "active" === s && w && (0, i.jsx)("div", {
+              }), "active" === t && w && (0, i.jsx)("div", {
                 "data-testid": "pendingResults",
                 className: b.pendingResults,
                 children: (0, i.jsx)("p", {
-                  children: (0, i.jsx)(m.FormattedMessage, {
+                  children: (0, i.jsx)(u.FormattedMessage, {
                     ...f.countdown_timer_header_pending_title
                   })
                 })
@@ -503,12 +211,12 @@ _global.SENTRY_RELEASE = {
                     className: b.countdownBlock,
                     children: [(0, i.jsx)("span", {
                       className: n()(b.counter, a?.textGlow ? b.textGlow : ""),
-                      children: L.days
+                      children: B.days
                     }), (0, i.jsx)("div", {
                       className: b.countdownLabel,
-                      children: h ? (0, i.jsx)(m.FormattedMessage, {
+                      children: x ? (0, i.jsx)(u.FormattedMessage, {
                         ...f.countdown_timer_days_title_short
-                      }) : (0, i.jsx)(m.FormattedMessage, {
+                      }) : (0, i.jsx)(u.FormattedMessage, {
                         ...f.countdown_timer_days_title_long
                       })
                     })]
@@ -518,12 +226,12 @@ _global.SENTRY_RELEASE = {
                     className: b.countdownBlock,
                     children: [(0, i.jsx)("span", {
                       className: n()(b.counter, a?.textGlow ? b.textGlow : ""),
-                      children: L.hours
+                      children: B.hours
                     }), (0, i.jsx)("div", {
                       className: b.countdownLabel,
-                      children: h ? (0, i.jsx)(m.FormattedMessage, {
+                      children: x ? (0, i.jsx)(u.FormattedMessage, {
                         ...f.countdown_timer_hours_title_short
-                      }) : (0, i.jsx)(m.FormattedMessage, {
+                      }) : (0, i.jsx)(u.FormattedMessage, {
                         ...f.countdown_timer_hours_title_long
                       })
                     })]
@@ -533,109 +241,113 @@ _global.SENTRY_RELEASE = {
                     className: b.countdownBlock,
                     children: [(0, i.jsx)("span", {
                       className: n()(b.counter, a?.textGlow ? b.textGlow : ""),
-                      children: L.minutes
+                      children: B.minutes
                     }), (0, i.jsx)("div", {
                       className: b.countdownLabel,
-                      children: h ? (0, i.jsx)(m.FormattedMessage, {
+                      children: x ? (0, i.jsx)(u.FormattedMessage, {
                         ...f.countdown_timer_minutes_title_short
-                      }) : (0, i.jsx)(m.FormattedMessage, {
+                      }) : (0, i.jsx)(u.FormattedMessage, {
                         ...f.countdown_timer_minutes_title_long
                       })
                     })]
                   })
-                }), c && (0, i.jsx)("li", {
+                }), r && (0, i.jsx)("li", {
                   children: (0, i.jsxs)("div", {
                     className: n()(b.countdownBlock, b.secondsCounter),
                     children: [(0, i.jsx)("span", {
                       className: n()(b.counter, a?.textGlow ? b.textGlow : ""),
-                      children: L.seconds
+                      children: B.seconds
                     }), (0, i.jsx)("div", {
                       className: b.countdownLabel,
-                      children: h ? (0, i.jsx)(m.FormattedMessage, {
+                      children: x ? (0, i.jsx)(u.FormattedMessage, {
                         ...f.countdown_timer_seconds_title_short
-                      }) : (0, i.jsx)(m.FormattedMessage, {
+                      }) : (0, i.jsx)(u.FormattedMessage, {
                         ...f.countdown_timer_seconds_title_long
                       })
                     })]
                   })
                 })]
               })]
-            }), "success" === s && (0, i.jsxs)("div", {
-              className: "container",
+            }), "success" === t && (0, i.jsxs)("div", {
+              className: b.container,
               style: {
                 display: "flex",
                 alignItems: "center"
               },
               children: [(0, i.jsx)("img", {
-                src: v,
-                alt: x?.imageLeft?.altText
+                className: b.accentImage,
+                src: p,
+                alt: _?.imageLeft?.altText
               }), (0, i.jsx)("div", {
                 "data-testid": "successMessage",
                 className: b.successLabel,
-                children: (0, i.jsx)(m.FormattedMessage, {
+                children: (0, i.jsx)(u.FormattedMessage, {
                   ...f.countdown_timer_success_title
                 })
               }), (0, i.jsx)("img", {
+                className: b.accentImage,
                 src: N,
-                alt: x?.imageRight?.altText
+                alt: _?.imageRight?.altText
               })]
-            }), "failure" === s && (0, i.jsxs)("div", {
-              className: "container",
+            }), "failure" === t && (0, i.jsxs)("div", {
+              className: b.container,
               style: {
                 display: "flex",
                 alignItems: "center"
               },
               children: [(0, i.jsx)("img", {
+                className: b.accentImage,
                 src: M,
-                alt: _?.imageLeft?.altText
+                alt: h?.imageLeft?.altText
               }), (0, i.jsx)("div", {
                 "data-testid": "failureMessage",
                 className: b.failureLabel,
-                children: (0, i.jsx)(m.FormattedMessage, {
+                children: (0, i.jsx)(u.FormattedMessage, {
                   ...f.countdown_timer_failure_title
                 })
               }), (0, i.jsx)("img", {
+                className: b.accentImage,
                 src: C,
-                alt: _?.imageRight?.altText
+                alt: h?.imageRight?.altText
               })]
             })]
           })
         })),
-        _ = e => {
+        h = e => {
           let {
-            milestones: t,
-            incompleteImage: s,
+            milestones: s,
+            incompleteImage: t,
             completedImage: a
           } = e;
-          const n = (t.findLastIndex((e => e.active)) + 1) / t.length,
-            c = 100 / n;
+          const n = (s.findLastIndex((e => e.active)) + 1) / s.length,
+            r = 100 / n;
           return (0, i.jsxs)("div", {
             className: "rockstargames-sites-gta-gen9e2b85b2eea9f5c5b1de14340e9ca70b8",
             children: [(0, i.jsx)("div", {
               className: "rockstargames-sites-gta-gen9f593b34d7e7d832c0c661f6fa56da016",
               style: {
-                backgroundImage: `url(${(0,r.useGetCdnSource)(s)})`
+                backgroundImage: `url(${(0,c.useGetCdnSource)(t)})`
               },
               "data-testid": "incompleteImage"
             }), (0, i.jsx)("div", {
               className: "rockstargames-sites-gta-gen9b95b71434ed7e54aee5d2ab15d4f30a8",
               style: {
-                backgroundImage: `url(${(0,r.useGetCdnSource)(a)})`,
-                backgroundSize: `${c}%`,
+                backgroundImage: `url(${(0,c.useGetCdnSource)(a)})`,
+                backgroundSize: `${r}%`,
                 width: 100 * n + "%"
               },
               "data-testid": "completedImage"
-            }), t.map(((e, s) => (0, i.jsx)("div", {
-              className: (0, r.classList)("rockstargames-sites-gta-gen9d4baab273071911a6488e078dcf8a854", 0 === s ? "rockstargames-sites-gta-gen9f94ba24bd2023dfc8bc7fa7dc51423e8" : "", s === t.length - 1 ? "rockstargames-sites-gta-gen9c2ae0481500b2df444bccaa5b4904837" : ""),
+            }), s.map(((e, t) => (0, i.jsx)("div", {
+              className: (0, c.classList)("rockstargames-sites-gta-gen9d4baab273071911a6488e078dcf8a854", 0 === t ? "rockstargames-sites-gta-gen9f94ba24bd2023dfc8bc7fa7dc51423e8" : "", t === s.length - 1 ? "rockstargames-sites-gta-gen9c2ae0481500b2df444bccaa5b4904837" : ""),
               "data-testid": "milestoneBox",
               children: (0, i.jsx)("div", {
                 className: "rockstargames-sites-gta-gen9b31199c3d14b84a5c36a6847b3604e83"
               })
-            }, s)))]
+            }, t)))]
           })
         };
-      var h = s(9182);
-      const w = (0, m.defineMessages)({
+      var x = t(9182);
+      const w = (0, u.defineMessages)({
           milestone_marker_success_aria: {
             id: "milestone_marker_success_aria",
             defaultMessage: "Milestone achieved"
@@ -643,30 +355,30 @@ _global.SENTRY_RELEASE = {
         }),
         k = e => {
           let {
-            title: t,
-            date: s,
+            title: s,
+            date: t,
             active: a,
-            final: r
+            final: c
           } = e;
-          const c = (0, m.useIntl)(),
-            o = a ? "rockstargames-sites-gta-gen9bd115bca85c8165906ec9ebc6c5978e3" : "",
-            l = r ? "rockstargames-sites-gta-gen9d8aea31b88e125cdeed883c2bb2a3cd3" : "";
+          const r = (0, u.useIntl)(),
+            d = a ? "rockstargames-sites-gta-gen9bd115bca85c8165906ec9ebc6c5978e3" : "",
+            l = c ? "rockstargames-sites-gta-gen9d8aea31b88e125cdeed883c2bb2a3cd3" : "";
           return (0, i.jsx)("div", {
             className: "rockstargames-sites-gta-gen9d6e710a1f92fd65be7c9672ad80cf3d9",
             children: (0, i.jsxs)("div", {
-              className: n()("rockstargames-sites-gta-gen9feab6bd12128b95efa364a54487b2901", o, l),
+              className: n()("rockstargames-sites-gta-gen9feab6bd12128b95efa364a54487b2901", d, l),
               children: [(0, i.jsxs)("div", {
                 className: "rockstargames-sites-gta-gen9f135a449f2811af9aabb7c1f865f8969",
                 children: [(0, i.jsx)("h4", {
-                  children: t
-                }), a && (0, i.jsx)(h.Check, {
-                  label: c.formatMessage(w.milestone_marker_success_aria),
+                  children: s
+                }), a && (0, i.jsx)(x.Check, {
+                  label: r.formatMessage(w.milestone_marker_success_aria),
                   className: "rockstargames-sites-gta-gen9dc7353331b2aa89f4fa04c75c826ad10",
                   testId: "checkmark"
                 })]
-              }), s && (0, i.jsx)("p", {
+              }), t && (0, i.jsx)("p", {
                 className: "rockstargames-sites-gta-gen9e1627aa7e659e1a50423c53608f2d30c",
-                children: c.formatDate(s, {
+                children: r.formatDate(t, {
                   month: "short",
                   day: "numeric"
                 })
@@ -674,28 +386,28 @@ _global.SENTRY_RELEASE = {
             })
           })
         },
-        p = e => {
+        j = e => {
           let {
-            alt: t = "",
-            className: s = "",
+            alt: s = "",
+            className: t = "",
             fill: a = "#E0330E"
           } = e;
           return (0, i.jsxs)("svg", {
-            className: s,
+            className: t,
             version: "1.1",
             width: "15",
             height: "11",
             viewBox: "0 0 15 11",
             xmlns: "http://www.w3.org/2000/svg",
             children: [(0, i.jsx)("title", {
-              children: t
+              children: s
             }), (0, i.jsx)("path", {
               d: "M7.5 10.5166L0.138783 0.0166029L14.8612 0.0166017L7.5 10.5166Z",
               fill: a
             })]
           })
         },
-        v = {
+        p = {
           pillBtn: "rockstargames-sites-gta-gen9b20e5d16aa58b6b553464f673927a4bb",
           selected: "rockstargames-sites-gta-gen9ff158f70b8ee379ecc89d7f237ccb3b9",
           milestoneHeading: "rockstargames-sites-gta-gen9f359d4868ea779425e940e13d31428f6",
@@ -707,91 +419,91 @@ _global.SENTRY_RELEASE = {
           milestoneMarkers: "rockstargames-sites-gta-gen9cdc5cacccaf09b535369aaaf6fd9b9bb",
           milestoneFlag: "rockstargames-sites-gta-gen9a479115d004522519e5d6605f1be92cd"
         },
-        j = e => {
+        v = e => {
           let {
-            heading: t,
-            completedMilestoneImage: s,
+            heading: s,
+            completedMilestoneImage: t,
             incompleteMilestoneImage: a,
             milestones: n,
-            initialTitle: r,
-            initialDate: c
+            initialTitle: c,
+            initialDate: r
           } = e;
-          const o = (0, l.useRef)(null),
-            d = (0, l.useRef)(null),
-            [g, m] = (0, l.useState)(!1),
+          const d = (0, l.useRef)(null),
+            o = (0, l.useRef)(null),
+            [g, u] = (0, l.useState)(!1),
             {
               isMobile: f
-            } = (0, u.useWindowResize)();
-          if ((0, u.useCursorScroll)(o), (0, l.useEffect)((() => {
-              f && o.current && d.current && (o.current.scrollLeft = d.current.getBoundingClientRect().left - window.innerWidth / 2, o.current.addEventListener("scroll", (e => {
-                const t = e.target;
-                t && Math.ceil(t.scrollLeft + t.clientWidth) >= t.scrollWidth ? m(!0) : m(!1)
+            } = (0, m.useWindowResize)();
+          if ((0, m.useCursorScroll)(d), (0, l.useEffect)((() => {
+              f && d.current && o.current && (d.current.scrollLeft = o.current.getBoundingClientRect().left - window.innerWidth / 2, d.current.addEventListener("scroll", (e => {
+                const s = e.target;
+                s && Math.ceil(s.scrollLeft + s.clientWidth) >= s.scrollWidth ? u(!0) : u(!1)
               })))
             }), [f]), !n || 0 === n.length) return null;
           const b = n.findLastIndex((e => e.active)),
-            x = n[n.length - 1].title;
+            _ = n[n.length - 1].title;
           return (0, i.jsxs)("section", {
-            className: v.milestoneIndicators,
+            className: p.milestoneIndicators,
             children: [(0, i.jsxs)("div", {
-              className: v.milestoneHeading,
+              className: p.milestoneHeading,
               children: [(0, i.jsx)("h3", {
-                className: v.milestoneTitle,
-                children: t
+                className: p.milestoneTitle,
+                children: s
               }), !g && (0, i.jsxs)("div", {
-                className: v.milestoneGoal,
+                className: p.milestoneGoal,
                 "data-testid": "milestone-goal",
-                children: [x, (0, i.jsx)(h.ArrowRight, {
+                children: [_, (0, i.jsx)(x.ArrowRight, {
                   label: "",
                   size: "MD"
                 })]
               })]
             }), (0, i.jsx)("div", {
-              className: v.milestoneScroll,
-              ref: o,
+              className: p.milestoneScroll,
+              ref: d,
               children: (0, i.jsxs)("div", {
-                className: v.milestoneGroup,
+                className: p.milestoneGroup,
                 children: [(0, i.jsxs)("div", {
-                  className: v.milestoneFlags,
+                  className: p.milestoneFlags,
                   children: [-1 === b ? (0, i.jsx)("div", {
-                    ref: d,
-                    className: v.milestoneFlag,
+                    ref: o,
+                    className: p.milestoneFlag,
                     "data-testid": "marker",
-                    children: (0, i.jsx)(p, {})
+                    children: (0, i.jsx)(j, {})
                   }) : (0, i.jsx)("div", {
-                    className: v.milestoneFlag
-                  }), n.map(((e, t) => t === b ? (0, i.jsx)("div", {
-                    ref: d,
-                    className: v.milestoneFlag,
+                    className: p.milestoneFlag
+                  }), n.map(((e, s) => s === b ? (0, i.jsx)("div", {
+                    ref: o,
+                    className: p.milestoneFlag,
                     "data-testid": "marker",
-                    children: (0, i.jsx)(p, {})
-                  }, t) : (0, i.jsx)("div", {
-                    className: v.milestoneFlag
-                  }, t)))]
-                }), (0, i.jsx)(_, {
+                    children: (0, i.jsx)(j, {})
+                  }, s) : (0, i.jsx)("div", {
+                    className: p.milestoneFlag
+                  }, s)))]
+                }), (0, i.jsx)(h, {
                   milestones: n,
                   incompleteImage: a,
-                  completedImage: s
+                  completedImage: t
                 }), (0, i.jsxs)("div", {
-                  className: v.milestoneMarkers,
+                  className: p.milestoneMarkers,
                   children: [(0, i.jsx)(k, {
-                    title: r,
-                    date: c,
+                    title: c,
+                    date: r,
                     active: !0
-                  }), n.map(((e, t) => (0, i.jsx)(k, {
+                  }), n.map(((e, s) => (0, i.jsx)(k, {
                     title: e.title,
                     date: e.date,
                     active: e.active,
-                    final: t === n.length - 1
-                  }, t)))]
+                    final: s === n.length - 1
+                  }, s)))]
                 })]
               })
             })]
           })
         };
-      var N = s(81902),
-        y = s(40207),
-        M = s(89269);
-      const S = (0, m.defineMessages)({
+      var N = t(81902),
+        y = t(40207),
+        M = t(89269);
+      const S = (0, u.defineMessages)({
         no_rewards_available_title: {
           id: "no_rewards_available_title",
           defaultMessage: "No rewards available"
@@ -805,32 +517,32 @@ _global.SENTRY_RELEASE = {
           defaultMessage: "Next"
         }
       });
-      var C = s(62811);
-      const B = e => {
+      var C = t(62811);
+      const I = e => {
           let {
-            heading: t,
-            description: s,
+            heading: s,
+            description: t,
             ctaText: a,
             ctaLink: n
           } = e;
           const {
-            track: r
+            track: c
           } = (0, y.useGtmTrack)();
           return (0, i.jsxs)("div", {
             className: "rockstargames-sites-gta-gen9be01331043fa82f22bb769fd8586a621",
-            children: [t && (0, i.jsx)("h1", {
+            children: [s && (0, i.jsx)("h1", {
               className: "rockstargames-sites-gta-gen9a90a5344060fff1d460fd727e4d74adb",
-              children: t
+              children: s
             }), (0, i.jsxs)("div", {
               className: "rockstargames-sites-gta-gen9c8c025bd26dd1c31cf37937ae72c5f1d",
-              children: [s && (0, i.jsx)("p", {
+              children: [t && (0, i.jsx)("p", {
                 className: "rockstargames-sites-gta-gen9a2fb55c0617121317877bc1096f164c6",
-                children: s
+                children: t
               }), a && (0, i.jsx)(C.A, {
                 className: "rockstargames-sites-gta-gen9ad653c7e9d155d97ca939e3fd8ce2188",
                 text: a,
                 to: n,
-                onClick: () => r({
+                onClick: () => c({
                   event: "cta_learn",
                   element_placement: "community challenge cta",
                   link_url: n,
@@ -840,32 +552,32 @@ _global.SENTRY_RELEASE = {
             })]
           })
         },
-        L = e => {
+        B = e => {
           let {
-            title: t,
-            subTitle: s,
+            title: s,
+            subTitle: t,
             rewardsBgImage: a
           } = e;
-          const n = (0, r.useGetCdnSource)(a?.mobile ?? null),
-            c = (0, r.useGetCdnSource)(a?.desktop ?? n);
+          const n = (0, c.useGetCdnSource)(a?.mobile ?? null),
+            r = (0, c.useGetCdnSource)(a?.desktop ?? n);
           return (0, i.jsx)("div", {
             className: "rockstargames-sites-gta-gen9b32fe3d4623889cde297fb913c90393c",
             style: {
-              "--rewards-background-image": `url(${c})`
+              "--rewards-background-image": `url(${r})`
             },
             children: (0, i.jsxs)("div", {
               className: "rockstargames-sites-gta-gen9bf4e950111fc0d5f083eff61213f31d0",
               children: [(0, i.jsx)("div", {
                 className: "rockstargames-sites-gta-gen9f98a844c4f1b9945971af59786264657",
-                children: s
+                children: t
               }), (0, i.jsx)("div", {
                 className: "rockstargames-sites-gta-gen9bcd23c06f2ed2429153dc51303ae2159",
-                children: t
+                children: s
               })]
             })
           })
         },
-        T = {
+        L = {
           pillBtn: "rockstargames-sites-gta-gen9b845cad8d25d6d54ed5ccc2157adb77c",
           selected: "rockstargames-sites-gta-gen9e7260573331f02c67437ec2901e4a1d3",
           rewardsWrapper: "rockstargames-sites-gta-gen9d7399e5db4bf9dcad65247005277c53b",
@@ -881,76 +593,76 @@ _global.SENTRY_RELEASE = {
           disabled: "rockstargames-sites-gta-gen9e576d455ff8f03de8c17ccfe914e0db4",
           "swiper-preloader-spin": "rockstargames-sites-gta-gen9e2fecf1bddba290114773b5c09be536c"
         },
-        I = (0, u.withLocale)((e => {
+        G = (0, m.withLocale)((e => {
           let {
-            deck: t,
-            detail: s
+            deck: s,
+            detail: t
           } = e;
           const {
             isMobile: a
-          } = (0, u.useWindowResize)(), n = (0, m.useIntl)(), c = (0, l.useRef)(null), o = (0, l.useRef)(null), d = (0, l.useRef)(null), g = (0, l.useRef)(), [f, b] = (0, l.useState)(!1), [x, _] = (0, l.useState)(), [h, w] = (0, l.useState)(!1), [k, p] = (0, l.useState)(!1), {
-            track: v
-          } = (0, y.useGtmTrack)(), j = g?.current?.swiper, C = t?.heading, I = t?.cards;
+          } = (0, m.useWindowResize)(), n = (0, u.useIntl)(), r = (0, l.useRef)(null), d = (0, l.useRef)(null), o = (0, l.useRef)(null), g = (0, l.useRef)(), [f, b] = (0, l.useState)(!1), [_, h] = (0, l.useState)(), [x, w] = (0, l.useState)(!1), [k, j] = (0, l.useState)(!1), {
+            track: p
+          } = (0, y.useGtmTrack)(), v = g?.current?.swiper, C = s?.heading, G = s?.cards;
           (0, l.useEffect)((() => {
-            if (j && "number" == typeof j?.params?.slidesPerView) {
-              const e = j.slides?.length;
-              b(e > j.params.slidesPerView)
+            if (v && "number" == typeof v?.params?.slidesPerView) {
+              const e = v.slides?.length;
+              b(e > v.params.slidesPerView)
             }
-          }), [I, j?.params.slidesPerView]), (0, l.useEffect)((() => {
-            _({
-              nextEl: o.current,
-              prevEl: c.current
+          }), [G, v?.params.slidesPerView]), (0, l.useEffect)((() => {
+            h({
+              nextEl: d.current,
+              prevEl: r.current
             })
-          }), [o, c]);
-          const G = () => {
-              j?.slidePrev(300, !1), v({
+          }), [d, r]);
+          const R = () => {
+              v?.slidePrev(300, !1), p({
                 event: "carousel_prev",
                 element_placement: "community challenge rewards"
               })
             },
-            R = () => {
-              j?.slideNext(300, !1), v({
+            T = () => {
+              v?.slideNext(300, !1), p({
                 event: "carousel_next",
                 element_placement: "community challenge rewards"
               })
             },
             F = e => {
               if ("Tab" === e.key && !e.shiftKey) {
-                const t = j?.slides[j?.activeIndex].querySelector('a, button, [role="button"]');
-                t && t?.tabIndex > -1 && (e.preventDefault(), t.focus())
+                const s = v?.slides[v?.activeIndex].querySelector('a, button, [role="button"]');
+                s && s?.tabIndex > -1 && (e.preventDefault(), s.focus())
               }
             };
           return (0, i.jsxs)("div", {
-            className: T.rewardPanel,
+            className: L.rewardPanel,
             children: [(0, i.jsx)("div", {
-              className: T.leftColumn,
-              children: (0, i.jsx)(B, {
-                ...s
+              className: L.leftColumn,
+              children: (0, i.jsx)(I, {
+                ...t
               })
             }), (0, i.jsx)("div", {
-              ref: d,
-              className: T.rightColumn,
-              children: I?.length ? (0, i.jsxs)(i.Fragment, {
+              ref: o,
+              className: L.rightColumn,
+              children: G?.length ? (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsxs)("div", {
-                  className: T.navControl,
+                  className: L.navControl,
                   children: [(0, i.jsx)("h1", {
-                    className: T.titleHeading,
+                    className: L.titleHeading,
                     children: C
                   }), !a && f && (0, i.jsxs)("div", {
-                    className: T.btnArea,
+                    className: L.btnArea,
                     children: [(0, i.jsx)("button", {
                       "data-testid": "prevBtn",
-                      ref: c,
-                      className: (0, r.classList)(T.prevBtn, h ? T.disabled : ""),
-                      onClick: G,
+                      ref: r,
+                      className: (0, c.classList)(L.prevBtn, x ? L.disabled : ""),
+                      onClick: R,
                       "aria-label": n.formatMessage(S.rewards_carousel_previous),
                       type: "button",
-                      disabled: h
+                      disabled: x
                     }), (0, i.jsx)("button", {
                       "data-testid": "nextBtn",
-                      ref: o,
-                      className: (0, r.classList)(T.nextBtn, k ? T.disabled : ""),
-                      onClick: R,
+                      ref: d,
+                      className: (0, c.classList)(L.nextBtn, k ? L.disabled : ""),
+                      onClick: T,
                       onKeyDown: F,
                       "aria-label": n.formatMessage(S.rewards_carousel_next),
                       type: "button",
@@ -961,10 +673,10 @@ _global.SENTRY_RELEASE = {
                   slidesPerView: 1.25,
                   ref: g,
                   onSlideChange: e => {
-                    w(e.isBeginning), p(e.isEnd)
+                    w(e.isBeginning), j(e.isEnd)
                   },
                   onSlidesUpdated: e => {
-                    w(e.isBeginning), p(e.isEnd)
+                    w(e.isBeginning), j(e.isEnd)
                   },
                   modules: [M.Vx],
                   spaceBetween: 50,
@@ -1002,61 +714,61 @@ _global.SENTRY_RELEASE = {
                       slidesPerView: 2
                     }
                   },
-                  navigation: x,
+                  navigation: _,
                   slideClass: "swiper-slide",
                   onSlideChangeTransitionEnd: () => {
-                    v({
+                    p({
                       event: "carousel_swipe",
                       element_placement: "community challenge rewards"
                     })
                   },
                   children: [a && (0, i.jsxs)("div", {
-                    className: T.btnArea,
+                    className: L.btnArea,
                     children: [(0, i.jsx)("button", {
                       "data-testid": "prevBtn",
-                      ref: c,
-                      className: (0, r.classList)(T.prevBtn, h ? T.disabled : ""),
-                      onClick: G,
+                      ref: r,
+                      className: (0, c.classList)(L.prevBtn, x ? L.disabled : ""),
+                      onClick: R,
                       "aria-label": n.formatMessage(S.rewards_carousel_previous),
                       type: "button",
-                      disabled: h
+                      disabled: x
                     }), (0, i.jsx)("button", {
                       "data-testid": "nextBtn",
-                      ref: o,
-                      className: (0, r.classList)(T.nextBtn, k ? T.disabled : ""),
-                      onClick: R,
+                      ref: d,
+                      className: (0, c.classList)(L.nextBtn, k ? L.disabled : ""),
+                      onClick: T,
                       onKeyDown: F,
                       "aria-label": n.formatMessage(S.rewards_carousel_next),
                       type: "button",
                       disabled: k
                     })]
-                  }), I.map(((e, t) => {
-                    const s = e?.title,
+                  }), G.map(((e, s) => {
+                    const t = e?.title,
                       a = e?.subTitle,
                       n = e?.rewardsBgImage;
                     return (0, i.jsx)(N.qr, {
-                      className: T.slide,
+                      className: L.slide,
                       onFocus: () => (e => {
-                        j?.slideTo(e)
-                      })(t),
-                      children: (0, i.jsx)(L, {
-                        title: s,
+                        v?.slideTo(e)
+                      })(s),
+                      children: (0, i.jsx)(B, {
+                        title: t,
                         subTitle: a,
                         rewardsBgImage: n
                       })
-                    }, t)
+                    }, s)
                   }))]
                 })]
               }) : (0, i.jsx)("div", {
-                className: T.noRewardsAvailable,
-                children: (0, i.jsx)(m.FormattedMessage, {
+                className: L.noRewardsAvailable,
+                children: (0, i.jsx)(u.FormattedMessage, {
                   ...S.no_rewards_available_title
                 })
               })
             })]
           })
         })),
-        G = {
+        R = {
           pillBtn: "rockstargames-sites-gta-gen9fdcd1fe581f9d66ecd103ba4545c9602",
           selected: "rockstargames-sites-gta-gen9d96573d407db448dec0e014357935d80",
           communityChallenges: "rockstargames-sites-gta-gen9a08d01c5660d4155c354cc7cc48be71a",
@@ -1064,28 +776,28 @@ _global.SENTRY_RELEASE = {
           communityChallengeInfoPanel: "rockstargames-sites-gta-gen9ac547b1575d60873a21f01524642a3b4",
           content: "rockstargames-sites-gta-gen9b594194f4f7db6c5db8432dc16b51bf2"
         },
-        R = e => {
+        T = e => {
           let {
-            banner: t,
-            countdown: s,
+            banner: s,
+            countdown: t,
             rewards: a,
             milestoneIndicator: n
           } = e;
           return (0, i.jsx)("div", {
-            className: G.communityChallenges,
+            className: R.communityChallenges,
             children: (0, i.jsxs)("div", {
-              className: G.wrapper,
-              children: [t && (0, i.jsx)(o, {
-                ...t
+              className: R.wrapper,
+              children: [s && (0, i.jsx)(d, {
+                ...s
               }), (0, i.jsxs)("div", {
-                className: G.content,
-                children: [s.timer && (0, i.jsx)(x, {
-                  ...s.timer
-                }), n && (0, i.jsx)(j, {
+                className: R.content,
+                children: [t?.timer && (0, i.jsx)(_, {
+                  ...t.timer
+                }), n && (0, i.jsx)(v, {
                   ...n
                 }), a && (0, i.jsx)("section", {
-                  className: G.rewardsSection,
-                  children: (0, i.jsx)(I, {
+                  className: R.rewardsSection,
+                  children: (0, i.jsx)(G, {
                     ...a
                   })
                 })]

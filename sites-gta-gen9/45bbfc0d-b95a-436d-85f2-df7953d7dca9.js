@@ -19,14 +19,14 @@ _global.SENTRY_RELEASE = {
     49663: (o, t, _) => {
       _.r(t), _.d(t, {
         Lightbox_Close_Button_Label: () => e,
-        Lightbox_Close_Button_Tooltip: () => b,
+        Lightbox_Close_Button_Tooltip: () => n,
         Lightbox_Download_Button_Label: () => f,
         Lightbox_Download_Button_Tooltip: () => L,
         Lightbox_Open_Button_Label: () => r,
         Lightbox_Reset_Zoom_Button_Label: () => d,
         Lightbox_Reset_Zoom_Button_Tooltip: () => g,
-        Lightbox_Zoom_In_Button_Label: () => n,
-        Lightbox_Zoom_In_Button_Tooltip: () => l,
+        Lightbox_Zoom_In_Button_Label: () => l,
+        Lightbox_Zoom_In_Button_Tooltip: () => b,
         Lightbox_Zoom_Out_Button_Label: () => a,
         Lightbox_Zoom_Out_Button__Tooltip: () => i,
         Lightbox_Zoom_Slider_Label: () => s,
@@ -34,9 +34,9 @@ _global.SENTRY_RELEASE = {
         default: () => h
       });
       var e = "라이트박스 닫기",
+        n = "{shortcut} 누르기",
+        l = "확대",
         b = "{shortcut} 누르기",
-        n = "확대",
-        l = "{shortcut} 누르기",
         a = "축소",
         i = "{shortcut} 누르기",
         d = "초기화",
@@ -48,9 +48,9 @@ _global.SENTRY_RELEASE = {
         r = "이미지 확대",
         h = {
           Lightbox_Close_Button_Label: e,
-          Lightbox_Close_Button_Tooltip: b,
-          Lightbox_Zoom_In_Button_Label: n,
-          Lightbox_Zoom_In_Button_Tooltip: l,
+          Lightbox_Close_Button_Tooltip: n,
+          Lightbox_Zoom_In_Button_Label: l,
+          Lightbox_Zoom_In_Button_Tooltip: b,
           Lightbox_Zoom_Out_Button_Label: a,
           Lightbox_Zoom_Out_Button__Tooltip: i,
           Lightbox_Reset_Zoom_Button_Label: d,

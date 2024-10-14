@@ -52,9 +52,9 @@ _global.SENTRY_RELEASE = {
     },
     8949: (e, a, l) => {
       l.r(a), l.d(a, {
-        RockstarVideoPlayer: () => b,
+        RockstarVideoPlayer: () => m,
         VideoField: () => p,
-        default: () => m
+        default: () => y
       });
       var o = l(8407),
         t = l(472),
@@ -145,7 +145,7 @@ _global.SENTRY_RELEASE = {
             }
           }
         },
-        b = () => ({
+        m = () => ({
           label: "Video",
           fields: [(0, r.NameField)(), p(), {
             name: "autoplay",
@@ -163,7 +163,7 @@ _global.SENTRY_RELEASE = {
             label: e?.name ? `${e.name} [Video]` : "New [Video]"
           })
         }),
-        m = b
+        y = m
     }
   }
 ]);

@@ -89,9 +89,9 @@ _global.SENTRY_RELEASE = {
         };
       var o = s(14522),
         g = s(31879),
-        b = s.n(g),
+        f = s.n(g),
         m = s(74401);
-      const f = e => {
+      const b = e => {
           let {
             impressionTracking: a,
             gtm: s = {},
@@ -119,7 +119,7 @@ _global.SENTRY_RELEASE = {
           let {
             item: a
           } = e;
-          return a?.videoId ? (0, d.jsx)(b(), {
+          return a?.videoId ? (0, d.jsx)(f(), {
             context: "site",
             autoplay: !1,
             id: a.videoId
@@ -146,7 +146,7 @@ _global.SENTRY_RELEASE = {
             style: s,
             className: (0, m.classList)("rockstargames-sites-gta-gen9fbb6b44c6d90c22144e4fbed29bc540b", l),
             id: i,
-            children: a.map((e => (0, d.jsx)(f, {
+            children: a.map((e => (0, d.jsx)(b, {
               impressionTracking: e?.impressionTracking,
               gtm: e?.gtm,
               children: (0, d.jsx)(p, {

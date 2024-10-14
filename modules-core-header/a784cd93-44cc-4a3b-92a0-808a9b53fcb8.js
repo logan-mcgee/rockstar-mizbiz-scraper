@@ -29,7 +29,7 @@ _global.SENTRY_RELEASE = {
         r = d(6632);
       const {
         graphEnv: s,
-        pingBearer: b
+        pingBearer: c
       } = (0, o.S0)();
 
       function f() {
@@ -39,7 +39,7 @@ _global.SENTRY_RELEASE = {
           d = (0, n.my)(l.default, {
             env: s,
             token: (0, n.UT)(null),
-            tokenPing: (0, n.UT)(b),
+            tokenPing: (0, n.UT)(c),
             tokenPingExpires: (0, n.UT)(null),
             typePolicies: {}
           });
