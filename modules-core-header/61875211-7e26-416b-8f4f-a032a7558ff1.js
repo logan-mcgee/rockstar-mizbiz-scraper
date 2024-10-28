@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "00949d2d-1ac0-40c5-86c1-b2c04d001bbb", e._sentryDebugIdIdentifier = "sentry-dbid-00949d2d-1ac0-40c5-86c1-b2c04d001bbb")
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "61875211-7e26-416b-8f4f-a032a7558ff1", e._sentryDebugIdIdentifier = "sentry-dbid-61875211-7e26-416b-8f4f-a032a7558ff1")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -15,35 +15,39 @@ var _global = "undefined" != typeof window ? window : "undefined" != typeof glob
 _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
-  [2], {
-    3002: (e, a, o) => {
-      o.r(a), o.d(a, {
-        default: () => l
+  [344], {
+    4344: (e, a, n) => {
+      n.r(a), n.d(a, {
+        default: () => s
       });
-      var d = o(1403),
-        n = o(4410),
-        t = o(6632);
-      const l = e => {
+      var o = n(9807),
+        t = n(4277),
+        d = n(7905),
+        f = n(6632);
+      const {
+        graphEnv: l,
+        pingBearer: r
+      } = (0, t.S0)(), s = e => {
         let {
-          basename: a,
-          children: o,
-          history: l
+          navData: a,
+          location: n,
+          onNavigate: t,
+          searchConfig: s,
+          routeOptions: i
         } = e;
-        const [c, s] = (0, d.useState)({
-          action: l.action,
-          location: l.location
+        const u = (0, o.my)(d.default, {
+          env: l,
+          token: (0, o.UT)(null),
+          tokenPing: (0, o.UT)(r),
+          tokenPingExpires: (0, o.UT)(null),
+          typePolicies: {}
         });
-        return (0, d.useLayoutEffect)((() => l.listen(((e, a) => {
-          s({
-            location: e,
-            action: a
-          })
-        }))), [l]), (0, t.jsx)(n.Router, {
-          basename: a,
-          location: c.location,
-          navigationType: c.action,
-          navigator: l,
-          children: o
+        return (0, f.jsx)(u, {
+          navData: a,
+          location: n,
+          onNavigate: t,
+          searchConfig: s,
+          routeOptions: i
         })
       }
     }

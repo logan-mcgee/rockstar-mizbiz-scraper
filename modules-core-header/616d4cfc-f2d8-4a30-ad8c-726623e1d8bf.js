@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       o = (new Error).stack;
-    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "cb601696-fdc8-4cca-abd9-dc586313dbea", e._sentryDebugIdIdentifier = "sentry-dbid-cb601696-fdc8-4cca-abd9-dc586313dbea")
+    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "616d4cfc-f2d8-4a30-ad8c-726623e1d8bf", e._sentryDebugIdIdentifier = "sentry-dbid-616d4cfc-f2d8-4a30-ad8c-726623e1d8bf")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -15,21 +15,21 @@ var _global = "undefined" != typeof window ? window : "undefined" != typeof glob
 _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
-  [143], {
+  [524], {
     4143: (e, o, s) => {
       "use strict";
       s.r(o), s.d(o, {
         FormattedMessage: () => t.A,
         IntlProvider: () => i.Kq,
-        POSIXLocales: () => u.FN,
+        POSIXLocales: () => c.FN,
         createDevLocaleHook: () => r.A,
         createIntl: () => a.E,
         defineMessages: () => n.YK,
-        englishLocale: () => u.Vm,
-        getCookieValueByName: () => c.h,
+        englishLocale: () => c.Vm,
+        getCookieValueByName: () => u.h,
         getLocale: () => d.A,
-        localeCookieHandler: () => c.A,
-        locales: () => u.Ay,
+        localeCookieHandler: () => u.A,
+        locales: () => c.Ay,
         splitLocale: () => b.A,
         useIntl: () => l.A,
         withIntl: () => i.QY
@@ -41,13 +41,13 @@ _global.SENTRY_RELEASE = {
         i = s(120),
         r = s(3480),
         d = s(175),
-        c = s(4677),
-        u = s(9186),
+        u = s(4677),
+        c = s(9186),
         b = s(5136),
         m = s(1272),
-        p = {};
-      for (const e in m)["default", "FormattedMessage", "IntlProvider", "POSIXLocales", "createDevLocaleHook", "createIntl", "defineMessages", "englishLocale", "getCookieValueByName", "getLocale", "localeCookieHandler", "locales", "splitLocale", "useIntl", "withIntl"].indexOf(e) < 0 && (p[e] = () => m[e]);
-      s.d(o, p)
+        f = {};
+      for (const e in m)["default", "FormattedMessage", "IntlProvider", "POSIXLocales", "createDevLocaleHook", "createIntl", "defineMessages", "englishLocale", "getCookieValueByName", "getLocale", "localeCookieHandler", "locales", "splitLocale", "useIntl", "withIntl"].indexOf(e) < 0 && (f[e] = () => m[e]);
+      s.d(o, f)
     },
     120: (e, o, s) => {
       "use strict";
@@ -66,11 +66,11 @@ _global.SENTRY_RELEASE = {
           lang: s,
           children: n
         } = e;
-        const [r, d] = (0, t.useMemo)((() => (0, l.A)(s)), [s]), c = (0, t.useMemo)((() => function(e, o) {
+        const [r, d] = (0, t.useMemo)((() => (0, l.A)(s)), [s]), u = (0, t.useMemo)((() => function(e, o) {
           return e?.[o] ?? {}
         }(o, d)), [s, o]);
         return (0, i.jsx)(a.A, {
-          messages: c,
+          messages: u,
           locale: r,
           defaultLocale: "en",
           children: n
@@ -132,9 +132,9 @@ _global.SENTRY_RELEASE = {
         })(e), i = n.Vm;
         let r = i;
         const d = `rockstarweb_lang.${o.cookieIdentifier}`,
-          c = (0, a.h)(d);
-        r = o.currentSite?.site === t.C.www ? n.Ay.find((e => e.subdomaincom === l)) || n.Ay.find((e => e.subdomaincom === s)) || i : n.Ay.find((e => e.iso === c)) || i;
-        const [u, b] = (0, a.A)(d, r.iso);
+          u = (0, a.h)(d);
+        r = o.currentSite?.site === t.C.www ? n.Ay.find((e => e.subdomaincom === l)) || n.Ay.find((e => e.subdomaincom === s)) || i : n.Ay.find((e => e.iso === u)) || i;
+        const [c, b] = (0, a.A)(d, r.iso);
         return [r, b]
       }
     },

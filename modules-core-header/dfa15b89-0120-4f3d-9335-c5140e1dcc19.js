@@ -93,7 +93,7 @@ _global.SENTRY_RELEASE = {
           }, e), n
         }(),
         l = function() {},
-        d = o.forwardRef((function(e, n) {
+        f = o.forwardRef((function(e, n) {
           var t = o.useRef(null),
             a = o.useState({
               onScrollCapture: l,
@@ -102,8 +102,8 @@ _global.SENTRY_RELEASE = {
             }),
             c = a[0],
             i = a[1],
-            d = e.forwardProps,
-            f = e.children,
+            f = e.forwardProps,
+            d = e.children,
             s = e.className,
             p = e.removeScrollBar,
             h = e.enabled,
@@ -152,22 +152,22 @@ _global.SENTRY_RELEASE = {
             allowPinchZoom: !!b,
             lockRef: t,
             gapMode: C
-          }), d ? o.cloneElement(o.Children.only(f), (0, r.Cl)((0, r.Cl)({}, M), {
+          }), f ? o.cloneElement(o.Children.only(d), (0, r.Cl)((0, r.Cl)({}, M), {
             ref: _
           })) : o.createElement(E, (0, r.Cl)({}, M, {
             className: s,
             ref: _
-          }), f))
+          }), d))
         }));
-      d.defaultProps = {
+      f.defaultProps = {
         enabled: !0,
         removeScrollBar: !0,
         inert: !1
-      }, d.classNames = {
+      }, f.classNames = {
         fullWidth: c,
         zeroRight: a
       };
-      var f = function(e) {
+      var d = function(e) {
         var n = e.sideCar,
           t = (0, r.Tt)(e, ["sideCar"]);
         if (!n) throw new Error("Sidecar: please provide `sideCar` property to import the right car");
@@ -175,7 +175,7 @@ _global.SENTRY_RELEASE = {
         if (!a) throw new Error("Sidecar medium not found");
         return o.createElement(a, (0, r.Cl)({}, t))
       };
-      f.isSideCarExport = !0;
+      d.isSideCarExport = !0;
       var s = function() {
           var e = 0,
             n = null;
@@ -351,12 +351,12 @@ _global.SENTRY_RELEASE = {
               c = t.current,
               i = "deltaX" in e ? e.deltaX : c[0] - o[0],
               l = "deltaY" in e ? e.deltaY : c[1] - o[1],
-              d = e.target,
-              f = Math.abs(i) > Math.abs(l) ? "h" : "v";
-            if ("touches" in e && "h" === f && "range" === d.type) return !1;
-            var s = S(f, d);
+              f = e.target,
+              d = Math.abs(i) > Math.abs(l) ? "h" : "v";
+            if ("touches" in e && "h" === d && "range" === f.type) return !1;
+            var s = S(d, f);
             if (!s) return !0;
-            if (s ? r = f : (r = "v" === f ? "h" : "v", s = S(f, d)), !s) return !1;
+            if (s ? r = d : (r = "v" === d ? "h" : "v", s = S(d, f)), !s) return !1;
             if (!a.current && "changedTouches" in e && (i || l) && (a.current = r), !r) return !0;
             var p = a.current || r;
             return function(e, n, t, r, o) {
@@ -367,19 +367,19 @@ _global.SENTRY_RELEASE = {
                 i = t.target,
                 u = n.contains(i),
                 l = !1,
-                d = c > 0,
-                f = 0,
+                f = c > 0,
+                d = 0,
                 s = 0;
               do {
                 var p = _(e, i),
                   h = p[0],
                   v = p[1] - p[2] - a * h;
-                (h || v) && k(e, i) && (f += v, s += h), i = i instanceof ShadowRoot ? i.host : i.parentNode
+                (h || v) && k(e, i) && (d += v, s += h), i = i instanceof ShadowRoot ? i.host : i.parentNode
               } while (!u && i !== document.body || u && (n.contains(i) || n === i));
-              return (d && (Math.abs(f) < 1 || !1) || !d && (Math.abs(s) < 1 || !1)) && (l = !0), l
+              return (f && (Math.abs(d) < 1 || !1) || !f && (Math.abs(s) < 1 || !1)) && (l = !0), l
             }(p, n, e, "h" === p ? i : l)
           }), []),
-          d = o.useCallback((function(e) {
+          f = o.useCallback((function(e) {
             var t = e;
             if (P.length && P[P.length - 1] === i) {
               var r = "deltaY" in t ? R(t) : M(t),
@@ -396,7 +396,7 @@ _global.SENTRY_RELEASE = {
               }
             }
           }), []),
-          f = o.useCallback((function(e, t, r, o) {
+          d = o.useCallback((function(e, t, r, o) {
             var a = {
               name: e,
               delta: t,
@@ -414,21 +414,21 @@ _global.SENTRY_RELEASE = {
             t.current = M(e), a.current = void 0
           }), []),
           h = o.useCallback((function(n) {
-            f(n.type, R(n), n.target, l(n, e.lockRef.current))
+            d(n.type, R(n), n.target, l(n, e.lockRef.current))
           }), []),
           v = o.useCallback((function(n) {
-            f(n.type, M(n), n.target, l(n, e.lockRef.current))
+            d(n.type, M(n), n.target, l(n, e.lockRef.current))
           }), []);
         o.useEffect((function() {
           return P.push(i), e.setCallbacks({
               onScrollCapture: h,
               onWheelCapture: h,
               onTouchMoveCapture: v
-            }), document.addEventListener("wheel", d, E), document.addEventListener("touchmove", d, E), document.addEventListener("touchstart", s, E),
+            }), document.addEventListener("wheel", f, E), document.addEventListener("touchmove", f, E), document.addEventListener("touchstart", s, E),
             function() {
               P = P.filter((function(e) {
                 return e !== i
-              })), document.removeEventListener("wheel", d, E), document.removeEventListener("touchmove", d, E), document.removeEventListener("touchstart", s, E)
+              })), document.removeEventListener("wheel", f, E), document.removeEventListener("touchmove", f, E), document.removeEventListener("touchstart", s, E)
             }
         }), []);
         var g = e.removeScrollBar,
@@ -438,14 +438,14 @@ _global.SENTRY_RELEASE = {
         }) : null, g ? o.createElement(y, {
           gapMode: e.gapMode
         }) : null)
-      }, u.useMedium(j), f);
+      }, u.useMedium(j), d);
       var j, I = o.forwardRef((function(e, n) {
-        return o.createElement(d, (0, r.Cl)({}, e, {
+        return o.createElement(f, (0, r.Cl)({}, e, {
           ref: n,
           sideCar: N
         }))
       }));
-      I.classNames = d.classNames;
+      I.classNames = f.classNames;
       const B = I
     },
     226: (e, n, t) => {
