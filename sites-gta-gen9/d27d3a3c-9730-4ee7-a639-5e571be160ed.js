@@ -21,8 +21,8 @@ _global.SENTRY_RELEASE = {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => a,
         Lightbox_Download_Button_Label: () => u,
-        Lightbox_Download_Button_Tooltip: () => f,
-        Lightbox_Open_Button_Label: () => L,
+        Lightbox_Download_Button_Tooltip: () => L,
+        Lightbox_Open_Button_Label: () => h,
         Lightbox_Reset_Zoom_Button_Label: () => d,
         Lightbox_Reset_Zoom_Button_Tooltip: () => s,
         Lightbox_Zoom_In_Button_Label: () => n,
@@ -31,7 +31,7 @@ _global.SENTRY_RELEASE = {
         Lightbox_Zoom_Out_Button__Tooltip: () => b,
         Lightbox_Zoom_Slider_Label: () => g,
         Lightbox_Zoom_Slider_Tooltip: () => r,
-        default: () => h
+        default: () => f
       });
       var _ = "Fechar lightbox",
         a = "Pressionar {shortcut}",
@@ -44,9 +44,9 @@ _global.SENTRY_RELEASE = {
         g = "Nível de zoom",
         r = "{zoom}%",
         u = "Baixar",
-        f = "Baixar",
-        L = "Expandir imagem",
-        h = {
+        L = "Baixar",
+        h = "Expandir imagem",
+        f = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: a,
           Lightbox_Zoom_In_Button_Label: n,
@@ -58,8 +58,8 @@ _global.SENTRY_RELEASE = {
           Lightbox_Zoom_Slider_Label: g,
           Lightbox_Zoom_Slider_Tooltip: r,
           Lightbox_Download_Button_Label: u,
-          Lightbox_Download_Button_Tooltip: f,
-          Lightbox_Open_Button_Label: L
+          Lightbox_Download_Button_Tooltip: L,
+          Lightbox_Open_Button_Label: h
         }
     }
   }

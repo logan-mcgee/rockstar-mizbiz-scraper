@@ -26,7 +26,7 @@ _global.SENTRY_RELEASE = {
         v3: () => k,
         v4: () => E,
         v5: () => R,
-        validate: () => s,
+        validate: () => c,
         version: () => N
       });
       const o = new Uint8Array(16);
@@ -35,9 +35,9 @@ _global.SENTRY_RELEASE = {
         if (!r && (r = "undefined" != typeof crypto && crypto.getRandomValues && crypto.getRandomValues.bind(crypto), !r)) throw new Error("crypto.getRandomValues() not supported. See https://github.com/uuidjs/uuid#getrandomvalues-not-supported");
         return r(o)
       }
-      const c = /^(?:[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}|00000000-0000-0000-0000-000000000000)$/i,
-        s = function(e) {
-          return "string" == typeof e && c.test(e)
+      const s = /^(?:[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}|00000000-0000-0000-0000-000000000000)$/i,
+        c = function(e) {
+          return "string" == typeof e && s.test(e)
         },
         i = [];
       for (let e = 0; e < 256; ++e) i.push((e + 256).toString(16).slice(1));
@@ -48,7 +48,7 @@ _global.SENTRY_RELEASE = {
       }
       const f = function(e) {
         const n = l(e, arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0);
-        if (!s(n)) throw TypeError("Stringified UUID is invalid");
+        if (!c(n)) throw TypeError("Stringified UUID is invalid");
         return n
       };
       let u, d, p = 0,
@@ -56,26 +56,26 @@ _global.SENTRY_RELEASE = {
       const g = function(e, n, t) {
           let r = n && t || 0;
           const o = n || new Array(16);
-          let c = (e = e || {}).node || u,
-            s = void 0 !== e.clockseq ? e.clockseq : d;
-          if (null == c || null == s) {
+          let s = (e = e || {}).node || u,
+            c = void 0 !== e.clockseq ? e.clockseq : d;
+          if (null == s || null == c) {
             const n = e.random || (e.rng || a)();
-            null == c && (c = u = [1 | n[0], n[1], n[2], n[3], n[4], n[5]]), null == s && (s = d = 16383 & (n[6] << 8 | n[7]))
+            null == s && (s = u = [1 | n[0], n[1], n[2], n[3], n[4], n[5]]), null == c && (c = d = 16383 & (n[6] << 8 | n[7]))
           }
           let i = void 0 !== e.msecs ? e.msecs : Date.now(),
             f = void 0 !== e.nsecs ? e.nsecs : y + 1;
           const g = i - p + (f - y) / 1e4;
-          if (g < 0 && void 0 === e.clockseq && (s = s + 1 & 16383), (g < 0 || i > p) && void 0 === e.nsecs && (f = 0), f >= 1e4) throw new Error("uuid.v1(): Can't create more than 10M uuids/sec");
-          p = i, y = f, d = s, i += 122192928e5;
+          if (g < 0 && void 0 === e.clockseq && (c = c + 1 & 16383), (g < 0 || i > p) && void 0 === e.nsecs && (f = 0), f >= 1e4) throw new Error("uuid.v1(): Can't create more than 10M uuids/sec");
+          p = i, y = f, d = c, i += 122192928e5;
           const h = (1e4 * (268435455 & i) + f) % 4294967296;
           o[r++] = h >>> 24 & 255, o[r++] = h >>> 16 & 255, o[r++] = h >>> 8 & 255, o[r++] = 255 & h;
           const b = i / 4294967296 * 1e4 & 268435455;
-          o[r++] = b >>> 8 & 255, o[r++] = 255 & b, o[r++] = b >>> 24 & 15 | 16, o[r++] = b >>> 16 & 255, o[r++] = s >>> 8 | 128, o[r++] = 255 & s;
-          for (let e = 0; e < 6; ++e) o[r + e] = c[e];
+          o[r++] = b >>> 8 & 255, o[r++] = 255 & b, o[r++] = b >>> 24 & 15 | 16, o[r++] = b >>> 16 & 255, o[r++] = c >>> 8 | 128, o[r++] = 255 & c;
+          for (let e = 0; e < 6; ++e) o[r + e] = s[e];
           return n || l(o)
         },
         h = function(e) {
-          if (!s(e)) throw TypeError("Invalid UUID");
+          if (!c(e)) throw TypeError("Invalid UUID");
           let n;
           const t = new Uint8Array(16);
           return t[0] = (n = parseInt(e.slice(0, 8), 16)) >>> 24, t[1] = n >>> 16 & 255, t[2] = n >>> 8 & 255, t[3] = 255 & n, t[4] = (n = parseInt(e.slice(9, 13), 16)) >>> 8, t[5] = 255 & n, t[6] = (n = parseInt(e.slice(14, 18), 16)) >>> 8, t[7] = 255 & n, t[8] = (n = parseInt(e.slice(19, 23), 16)) >>> 8, t[9] = 255 & n, t[10] = (n = parseInt(e.slice(24, 36), 16)) / 1099511627776 & 255, t[11] = n / 4294967296 & 255, t[12] = n >>> 24 & 255, t[13] = n >>> 16 & 255, t[14] = n >>> 8 & 255, t[15] = 255 & n, t
@@ -83,20 +83,20 @@ _global.SENTRY_RELEASE = {
 
       function b(e, n, t) {
         function r(e, r, o, a) {
-          var c;
+          var s;
           if ("string" == typeof e && (e = function(e) {
               e = unescape(encodeURIComponent(e));
               const n = [];
               for (let t = 0; t < e.length; ++t) n.push(e.charCodeAt(t));
               return n
-            }(e)), "string" == typeof r && (r = h(r)), 16 !== (null === (c = r) || void 0 === c ? void 0 : c.length)) throw TypeError("Namespace must be array-like (16 iterable integer values, 0-255)");
-          let s = new Uint8Array(16 + e.length);
-          if (s.set(r), s.set(e, r.length), s = t(s), s[6] = 15 & s[6] | n, s[8] = 63 & s[8] | 128, o) {
+            }(e)), "string" == typeof r && (r = h(r)), 16 !== (null === (s = r) || void 0 === s ? void 0 : s.length)) throw TypeError("Namespace must be array-like (16 iterable integer values, 0-255)");
+          let c = new Uint8Array(16 + e.length);
+          if (c.set(r), c.set(e, r.length), c = t(c), c[6] = 15 & c[6] | n, c[8] = 63 & c[8] | 128, o) {
             a = a || 0;
-            for (let e = 0; e < 16; ++e) o[a + e] = s[e];
+            for (let e = 0; e < 16; ++e) o[a + e] = c[e];
             return o
           }
-          return l(s)
+          return l(c)
         }
         try {
           r.name = e
@@ -114,24 +114,24 @@ _global.SENTRY_RELEASE = {
       }
 
       function U(e, n, t, r, o, a) {
-        return v((c = v(v(n, e), v(r, a))) << (s = o) | c >>> 32 - s, t);
-        var c, s
+        return v((s = v(v(n, e), v(r, a))) << (c = o) | s >>> 32 - c, t);
+        var s, c
       }
 
-      function I(e, n, t, r, o, a, c) {
-        return U(n & t | ~n & r, e, n, o, a, c)
+      function I(e, n, t, r, o, a, s) {
+        return U(n & t | ~n & r, e, n, o, a, s)
       }
 
-      function m(e, n, t, r, o, a, c) {
-        return U(n & r | t & ~r, e, n, o, a, c)
+      function m(e, n, t, r, o, a, s) {
+        return U(n & r | t & ~r, e, n, o, a, s)
       }
 
-      function A(e, n, t, r, o, a, c) {
-        return U(n ^ t ^ r, e, n, o, a, c)
+      function A(e, n, t, r, o, a, s) {
+        return U(n ^ t ^ r, e, n, o, a, s)
       }
 
-      function _(e, n, t, r, o, a, c) {
-        return U(t ^ (n | ~r), e, n, o, a, c)
+      function _(e, n, t, r, o, a, s) {
+        return U(t ^ (n | ~r), e, n, o, a, s)
       }
       const k = b("v3", 48, (function(e) {
           if ("string" == typeof e) {
@@ -156,11 +156,11 @@ _global.SENTRY_RELEASE = {
               o = -1732584194,
               a = 271733878;
             for (let n = 0; n < e.length; n += 16) {
-              const c = t,
-                s = r,
+              const s = t,
+                c = r,
                 i = o,
                 l = a;
-              t = I(t, r, o, a, e[n], 7, -680876936), a = I(a, t, r, o, e[n + 1], 12, -389564586), o = I(o, a, t, r, e[n + 2], 17, 606105819), r = I(r, o, a, t, e[n + 3], 22, -1044525330), t = I(t, r, o, a, e[n + 4], 7, -176418897), a = I(a, t, r, o, e[n + 5], 12, 1200080426), o = I(o, a, t, r, e[n + 6], 17, -1473231341), r = I(r, o, a, t, e[n + 7], 22, -45705983), t = I(t, r, o, a, e[n + 8], 7, 1770035416), a = I(a, t, r, o, e[n + 9], 12, -1958414417), o = I(o, a, t, r, e[n + 10], 17, -42063), r = I(r, o, a, t, e[n + 11], 22, -1990404162), t = I(t, r, o, a, e[n + 12], 7, 1804603682), a = I(a, t, r, o, e[n + 13], 12, -40341101), o = I(o, a, t, r, e[n + 14], 17, -1502002290), r = I(r, o, a, t, e[n + 15], 22, 1236535329), t = m(t, r, o, a, e[n + 1], 5, -165796510), a = m(a, t, r, o, e[n + 6], 9, -1069501632), o = m(o, a, t, r, e[n + 11], 14, 643717713), r = m(r, o, a, t, e[n], 20, -373897302), t = m(t, r, o, a, e[n + 5], 5, -701558691), a = m(a, t, r, o, e[n + 10], 9, 38016083), o = m(o, a, t, r, e[n + 15], 14, -660478335), r = m(r, o, a, t, e[n + 4], 20, -405537848), t = m(t, r, o, a, e[n + 9], 5, 568446438), a = m(a, t, r, o, e[n + 14], 9, -1019803690), o = m(o, a, t, r, e[n + 3], 14, -187363961), r = m(r, o, a, t, e[n + 8], 20, 1163531501), t = m(t, r, o, a, e[n + 13], 5, -1444681467), a = m(a, t, r, o, e[n + 2], 9, -51403784), o = m(o, a, t, r, e[n + 7], 14, 1735328473), r = m(r, o, a, t, e[n + 12], 20, -1926607734), t = A(t, r, o, a, e[n + 5], 4, -378558), a = A(a, t, r, o, e[n + 8], 11, -2022574463), o = A(o, a, t, r, e[n + 11], 16, 1839030562), r = A(r, o, a, t, e[n + 14], 23, -35309556), t = A(t, r, o, a, e[n + 1], 4, -1530992060), a = A(a, t, r, o, e[n + 4], 11, 1272893353), o = A(o, a, t, r, e[n + 7], 16, -155497632), r = A(r, o, a, t, e[n + 10], 23, -1094730640), t = A(t, r, o, a, e[n + 13], 4, 681279174), a = A(a, t, r, o, e[n], 11, -358537222), o = A(o, a, t, r, e[n + 3], 16, -722521979), r = A(r, o, a, t, e[n + 6], 23, 76029189), t = A(t, r, o, a, e[n + 9], 4, -640364487), a = A(a, t, r, o, e[n + 12], 11, -421815835), o = A(o, a, t, r, e[n + 15], 16, 530742520), r = A(r, o, a, t, e[n + 2], 23, -995338651), t = _(t, r, o, a, e[n], 6, -198630844), a = _(a, t, r, o, e[n + 7], 10, 1126891415), o = _(o, a, t, r, e[n + 14], 15, -1416354905), r = _(r, o, a, t, e[n + 5], 21, -57434055), t = _(t, r, o, a, e[n + 12], 6, 1700485571), a = _(a, t, r, o, e[n + 3], 10, -1894986606), o = _(o, a, t, r, e[n + 10], 15, -1051523), r = _(r, o, a, t, e[n + 1], 21, -2054922799), t = _(t, r, o, a, e[n + 8], 6, 1873313359), a = _(a, t, r, o, e[n + 15], 10, -30611744), o = _(o, a, t, r, e[n + 6], 15, -1560198380), r = _(r, o, a, t, e[n + 13], 21, 1309151649), t = _(t, r, o, a, e[n + 4], 6, -145523070), a = _(a, t, r, o, e[n + 11], 10, -1120210379), o = _(o, a, t, r, e[n + 2], 15, 718787259), r = _(r, o, a, t, e[n + 9], 21, -343485551), t = v(t, c), r = v(r, s), o = v(o, i), a = v(a, l)
+              t = I(t, r, o, a, e[n], 7, -680876936), a = I(a, t, r, o, e[n + 1], 12, -389564586), o = I(o, a, t, r, e[n + 2], 17, 606105819), r = I(r, o, a, t, e[n + 3], 22, -1044525330), t = I(t, r, o, a, e[n + 4], 7, -176418897), a = I(a, t, r, o, e[n + 5], 12, 1200080426), o = I(o, a, t, r, e[n + 6], 17, -1473231341), r = I(r, o, a, t, e[n + 7], 22, -45705983), t = I(t, r, o, a, e[n + 8], 7, 1770035416), a = I(a, t, r, o, e[n + 9], 12, -1958414417), o = I(o, a, t, r, e[n + 10], 17, -42063), r = I(r, o, a, t, e[n + 11], 22, -1990404162), t = I(t, r, o, a, e[n + 12], 7, 1804603682), a = I(a, t, r, o, e[n + 13], 12, -40341101), o = I(o, a, t, r, e[n + 14], 17, -1502002290), r = I(r, o, a, t, e[n + 15], 22, 1236535329), t = m(t, r, o, a, e[n + 1], 5, -165796510), a = m(a, t, r, o, e[n + 6], 9, -1069501632), o = m(o, a, t, r, e[n + 11], 14, 643717713), r = m(r, o, a, t, e[n], 20, -373897302), t = m(t, r, o, a, e[n + 5], 5, -701558691), a = m(a, t, r, o, e[n + 10], 9, 38016083), o = m(o, a, t, r, e[n + 15], 14, -660478335), r = m(r, o, a, t, e[n + 4], 20, -405537848), t = m(t, r, o, a, e[n + 9], 5, 568446438), a = m(a, t, r, o, e[n + 14], 9, -1019803690), o = m(o, a, t, r, e[n + 3], 14, -187363961), r = m(r, o, a, t, e[n + 8], 20, 1163531501), t = m(t, r, o, a, e[n + 13], 5, -1444681467), a = m(a, t, r, o, e[n + 2], 9, -51403784), o = m(o, a, t, r, e[n + 7], 14, 1735328473), r = m(r, o, a, t, e[n + 12], 20, -1926607734), t = A(t, r, o, a, e[n + 5], 4, -378558), a = A(a, t, r, o, e[n + 8], 11, -2022574463), o = A(o, a, t, r, e[n + 11], 16, 1839030562), r = A(r, o, a, t, e[n + 14], 23, -35309556), t = A(t, r, o, a, e[n + 1], 4, -1530992060), a = A(a, t, r, o, e[n + 4], 11, 1272893353), o = A(o, a, t, r, e[n + 7], 16, -155497632), r = A(r, o, a, t, e[n + 10], 23, -1094730640), t = A(t, r, o, a, e[n + 13], 4, 681279174), a = A(a, t, r, o, e[n], 11, -358537222), o = A(o, a, t, r, e[n + 3], 16, -722521979), r = A(r, o, a, t, e[n + 6], 23, 76029189), t = A(t, r, o, a, e[n + 9], 4, -640364487), a = A(a, t, r, o, e[n + 12], 11, -421815835), o = A(o, a, t, r, e[n + 15], 16, 530742520), r = A(r, o, a, t, e[n + 2], 23, -995338651), t = _(t, r, o, a, e[n], 6, -198630844), a = _(a, t, r, o, e[n + 7], 10, 1126891415), o = _(o, a, t, r, e[n + 14], 15, -1416354905), r = _(r, o, a, t, e[n + 5], 21, -57434055), t = _(t, r, o, a, e[n + 12], 6, 1700485571), a = _(a, t, r, o, e[n + 3], 10, -1894986606), o = _(o, a, t, r, e[n + 10], 15, -1051523), r = _(r, o, a, t, e[n + 1], 21, -2054922799), t = _(t, r, o, a, e[n + 8], 6, 1873313359), a = _(a, t, r, o, e[n + 15], 10, -30611744), o = _(o, a, t, r, e[n + 6], 15, -1560198380), r = _(r, o, a, t, e[n + 13], 21, 1309151649), t = _(t, r, o, a, e[n + 4], 6, -145523070), a = _(a, t, r, o, e[n + 11], 10, -1120210379), o = _(o, a, t, r, e[n + 2], 15, 718787259), r = _(r, o, a, t, e[n + 9], 21, -343485551), t = v(t, s), r = v(r, c), o = v(o, i), a = v(a, l)
             }
             return [t, r, o, a]
           }(function(e) {
@@ -223,22 +223,22 @@ _global.SENTRY_RELEASE = {
             for (let n = 0; n < 16; ++n) r[n] = a[e][n];
             for (let e = 16; e < 80; ++e) r[e] = C(r[e - 3] ^ r[e - 8] ^ r[e - 14] ^ r[e - 16], 1);
             let o = t[0],
-              c = t[1],
-              s = t[2],
+              s = t[1],
+              c = t[2],
               i = t[3],
               l = t[4];
             for (let e = 0; e < 80; ++e) {
               const t = Math.floor(e / 20),
-                a = C(o, 5) + M(t, c, s, i) + l + n[t] + r[e] >>> 0;
-              l = i, i = s, s = C(c, 30) >>> 0, c = o, o = a
+                a = C(o, 5) + M(t, s, c, i) + l + n[t] + r[e] >>> 0;
+              l = i, i = c, c = C(s, 30) >>> 0, s = o, o = a
             }
-            t[0] = t[0] + o >>> 0, t[1] = t[1] + c >>> 0, t[2] = t[2] + s >>> 0, t[3] = t[3] + i >>> 0, t[4] = t[4] + l >>> 0
+            t[0] = t[0] + o >>> 0, t[1] = t[1] + s >>> 0, t[2] = t[2] + c >>> 0, t[3] = t[3] + i >>> 0, t[4] = t[4] + l >>> 0
           }
           return [t[0] >> 24 & 255, t[0] >> 16 & 255, t[0] >> 8 & 255, 255 & t[0], t[1] >> 24 & 255, t[1] >> 16 & 255, t[1] >> 8 & 255, 255 & t[1], t[2] >> 24 & 255, t[2] >> 16 & 255, t[2] >> 8 & 255, 255 & t[2], t[3] >> 24 & 255, t[3] >> 16 & 255, t[3] >> 8 & 255, 255 & t[3], t[4] >> 24 & 255, t[4] >> 16 & 255, t[4] >> 8 & 255, 255 & t[4]]
         })),
         S = "00000000-0000-0000-0000-000000000000",
         N = function(e) {
-          if (!s(e)) throw TypeError("Invalid UUID");
+          if (!c(e)) throw TypeError("Invalid UUID");
           return parseInt(e.slice(14, 15), 16)
         }
     }

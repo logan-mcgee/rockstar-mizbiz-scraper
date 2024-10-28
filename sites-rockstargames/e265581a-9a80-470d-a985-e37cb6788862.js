@@ -159,8 +159,8 @@ _global.SENTRY_RELEASE = {
           focused: p
         } = e;
         const {
-          track: u
-        } = (0, n.useGtmTrack)(), [f] = (0, i.useSearchParams)(), k = l.preview_images_parsed.newswire_block, b = {
+          track: f
+        } = (0, n.useGtmTrack)(), [u] = (0, i.useSearchParams)(), k = l.preview_images_parsed.newswire_block, b = {
           default: 0 !== t || g ? k.square || k.d16x9 || k._fallback : k.d16x9 || k.square || k._fallback,
           mobile: k.square || k._fallback
         }, [v, j] = (0, r.usePreloadImg)(b.default), h = {
@@ -171,7 +171,7 @@ _global.SENTRY_RELEASE = {
             backgroundImage: `url(${b.mobile})`
           }
         }, _ = (0, s.useCallback)((() => {
-          u({
+          f({
             event: "card_click",
             card_id: l.id,
             card_name: l.name_slug.replace(/-/g, " "),
@@ -186,7 +186,7 @@ _global.SENTRY_RELEASE = {
           focused: p,
           onClick: _,
           children: (0, m.jsxs)(m.Fragment, {
-            children: [0 !== t || f.get("tag_id") ? (0, m.jsx)("div", {
+            children: [0 !== t || u.get("tag_id") ? (0, m.jsx)("div", {
               className: c.preview,
               style: h.default
             }) : (0, m.jsxs)(m.Fragment, {
@@ -346,10 +346,10 @@ _global.SENTRY_RELEASE = {
           t: p
         } = e;
         const {
-          track: u
-        } = (0, o.useGtmTrack)(), [f] = (0, i.useSearchParams)(), {
+          track: f
+        } = (0, o.useGtmTrack)(), [u] = (0, i.useSearchParams)(), {
           tagId: k = null
-        } = (0, i.useParams)(), [b, v] = (0, s.useState)(k ?? n ?? f.get("tag_id")), [j, h] = (0, s.useState)(1), [_, x] = (0, s.useState)([]), [N, w] = (0, s.useState)(null), {
+        } = (0, i.useParams)(), [b, v] = (0, s.useState)(k ?? n ?? u.get("tag_id")), [j, h] = (0, s.useState)(1), [_, x] = (0, s.useState)([]), [N, w] = (0, s.useState)(null), {
           data: y
         } = (0, r.useQuery)(l(), {
           variables: {
@@ -360,8 +360,8 @@ _global.SENTRY_RELEASE = {
           autoSetLoading: !0
         });
         return (0, s.useEffect)((() => {
-          h(1), x([]), v(k ?? n ?? f.get("tag_id"))
-        }), [f.get("tag_id")]), (0, s.useEffect)((() => {
+          h(1), x([]), v(k ?? n ?? u.get("tag_id"))
+        }), [u.get("tag_id")]), (0, s.useEffect)((() => {
           y && y.posts && y.posts.paging && w(y.posts.paging), y && y.posts && y.posts.results && x(_.concat(y.posts.results))
         }), [y]), _.length ? (0, g.jsxs)(g.Fragment, {
           children: [(0, g.jsx)(c.A, {
@@ -371,7 +371,7 @@ _global.SENTRY_RELEASE = {
             noSpecialOrder: null !== b
           }), null !== N && N.nextPage ? (0, g.jsx)(d.A, {
             onClick: e => {
-              h(j + 1), u({
+              h(j + 1), f({
                 event: "cta_learn",
                 text: "more stories",
                 element_placement: "newswire"
@@ -501,8 +501,8 @@ _global.SENTRY_RELEASE = {
         const {
           track: p
         } = (0, i.useGtmTrack)(), {
-          setBodyIsLocked: u
-        } = (0, r.useBodyScrollable)("VideoCarousel"), [f, k] = (0, s.useState)(0), [b, v] = (0, s.useState)(0), j = (0, s.useRef)(null), h = (0, s.useRef)(null);
+          setBodyIsLocked: f
+        } = (0, r.useBodyScrollable)("VideoCarousel"), [u, k] = (0, s.useState)(0), [b, v] = (0, s.useState)(0), j = (0, s.useRef)(null), h = (0, s.useRef)(null);
         return (0, s.useEffect)((() => {
           if (!j.current || !h.current) return;
           const e = new(o())(j.current);
@@ -513,31 +513,31 @@ _global.SENTRY_RELEASE = {
           });
           const a = () => "ontouchstart" in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0,
             t = () => {
-              k(f - 1 < 0 ? 0 : f - 1), v(0)
+              k(u - 1 < 0 ? 0 : u - 1), v(0)
             },
             s = () => {
-              const e = f + 1 >= n.length - 1 ? n.length - 1 : f + 1;
+              const e = u + 1 >= n.length - 1 ? n.length - 1 : u + 1;
               k(e), v(0)
             },
             i = e => {
-              v(e.isFinal ? 0 : e.deltaX), "panleft" !== e.additionalEvent && "panright" !== e.additionalEvent || !h.current?.classList.contains(l.dragging) || a() && u(!0)
+              v(e.isFinal ? 0 : e.deltaX), "panleft" !== e.additionalEvent && "panright" !== e.additionalEvent || !h.current?.classList.contains(l.dragging) || a() && f(!0)
             },
             r = () => {
-              a() && u(!1), v(0)
+              a() && f(!1), v(0)
             },
             d = e => {
               "press" === e.type && j.current?.classList.add(`${l.disableClick}`), "tap" === e.type && (j.current?.classList.remove(`${l.disableClick}`), document.elementFromPoint(e.center.x, e.center.y).click())
             },
             c = () => {
-              a() && u(!1), j.current && j.current.classList.remove(`${l.disableClick}`)
+              a() && f(!1), j.current && j.current.classList.remove(`${l.disableClick}`)
             },
             m = () => {
-              a() && u(!1)
+              a() && f(!1)
             };
           return h.current.addEventListener("transitionend", m), e.on("swiperight", t), e.on("swipeleft", s), e.on("pan", i), e.on("panend", r), e.on("press tap", d), e.on("pressup", c), () => {
             e.off("swiperight", t), e.off("swipeleft", s), e.off("pan", i), e.off("panend", r), e.off("press tap", d), e.off("pressup", c), h.current && h.current.removeEventListener("transitionend", m), v(0)
           }
-        }), [j.current, f]), (0, g.jsxs)("section", {
+        }), [j.current, u]), (0, g.jsxs)("section", {
           className: l.carousel,
           children: [(0, g.jsx)("div", {
             className: l.track,
@@ -546,17 +546,17 @@ _global.SENTRY_RELEASE = {
               className: `${l.items} ${0!==b?l.dragging:""}`,
               ref: h,
               style: {
-                transform: `translateX(calc(-${100*f}% + ${b}px))`
+                transform: `translateX(calc(-${100*u}% + ${b}px))`
               },
               children: n.map(((e, a) => (0, g.jsx)(d.A, {
                 "data-gtm-category": "Carousel",
                 "data-gtm-action": "Click-through screencap",
                 "data-gtm-label": `/videos/${e.id}`,
                 to: `/videos/${e.id}`,
-                className: f === a ? l.active : "",
+                className: u === a ? l.active : "",
                 role: "link",
                 title: e.title,
-                tabIndex: f === a ? 0 : -1,
+                tabIndex: u === a ? 0 : -1,
                 children: (0, g.jsx)(m.s, {
                   video: e,
                   size: 1280
@@ -568,14 +568,14 @@ _global.SENTRY_RELEASE = {
               className: l.text,
               children: n.map(((e, s) => {
                 return (0, g.jsxs)(d.A, {
-                  className: [l.info, s === f ? l.active : ""].join(" "),
+                  className: [l.info, s === u ? l.active : ""].join(" "),
                   "data-gtm-category": "Carousel",
                   "data-gtm-action": "Click-through footer",
                   "data-gtm-label": `/videos/${e.id}`,
                   to: `/videos/${e.id}`,
                   role: "link",
                   title: e.title,
-                  tabIndex: f === s ? 0 : -1,
+                  tabIndex: u === s ? 0 : -1,
                   children: [(0, g.jsxs)("div", {
                     className: l.title,
                     children: [(0, g.jsxs)("div", {
@@ -608,7 +608,7 @@ _global.SENTRY_RELEASE = {
                 "data-gtm-action": "Dot click",
                 "data-gtm-label": `Dot clicked to ${a}`,
                 onClick: () => k(a),
-                className: f === a ? l.active : "",
+                className: u === a ? l.active : "",
                 type: "button"
               }, e.id)))
             })]
@@ -632,9 +632,9 @@ _global.SENTRY_RELEASE = {
         l = t(79286);
       const g = "rockstargames-sites-rockstargamesf75798e3984014f9cd35c5956e94fbb3",
         p = "rockstargames-sites-rockstargamesaa6bc8070e5e81ea0594636575db8fd6";
-      var u = t(3131),
-        f = t(46632);
-      const k = void 0 !== u.HomeData ? u.HomeData : HomeDataDefault,
+      var f = t(3131),
+        u = t(46632);
+      const k = void 0 !== f.HomeData ? f.HomeData : HomeDataDefault,
         b = e => {
           let {
             games: a,
@@ -643,23 +643,23 @@ _global.SENTRY_RELEASE = {
           const {
             track: s
           } = (0, r.useGtmTrack)();
-          return (0, f.jsxs)("section", {
+          return (0, u.jsxs)("section", {
             className: "rockstargames-sites-rockstargamesbec4f690ea94ae150d36b6be04b7011d",
             "data-testid": "featuredGames",
-            children: [(0, f.jsx)("h3", {
+            children: [(0, u.jsx)("h3", {
               className: g,
-              children: (0, f.jsx)(n.A, {
+              children: (0, u.jsx)(n.A, {
                 to: "games",
                 "aria-label": t("Featured Games"),
                 "data-testid": "featuredGamesHeader",
                 children: t("Featured Games")
               })
-            }), (0, f.jsx)("div", {
+            }), (0, u.jsx)("div", {
               className: p,
-              children: a.map((e => (0, f.jsx)(m.N, {
+              children: a.map((e => (0, u.jsx)(m.N, {
                 game: e
               }, e.id)))
-            }), (0, f.jsx)(o.A, {
+            }), (0, u.jsx)(o.A, {
               to: "games",
               context: "secondary",
               "data-testid": "viewMoreButton",
@@ -684,23 +684,23 @@ _global.SENTRY_RELEASE = {
           const {
             track: s
           } = (0, r.useGtmTrack)();
-          return (0, f.jsxs)("section", {
+          return (0, u.jsxs)("section", {
             className: "rockstargames-sites-rockstargamesbc6c5d345fb1cccca402fd4a97a8bef8",
             "data-testid": "newswire",
-            children: [(0, f.jsx)("h3", {
+            children: [(0, u.jsx)("h3", {
               className: g,
-              children: (0, f.jsx)(n.A, {
+              children: (0, u.jsx)(n.A, {
                 to: "newswire",
                 "aria-label": t("Newswire"),
                 "data-testid": "newswireHeader",
                 children: t("Newswire")
               })
-            }), (0, f.jsx)(d.A, {
+            }), (0, u.jsx)(d.A, {
               section: "Home",
               className: p,
               posts: a,
               noSpecialOrder: !0
-            }), (0, f.jsx)(o.A, {
+            }), (0, u.jsx)(o.A, {
               to: "newswire",
               context: "secondary",
               "data-testid": "viewMoreButton",
@@ -732,24 +732,24 @@ _global.SENTRY_RELEASE = {
             posts: r,
             videos: n
           } = t;
-          return (0, f.jsxs)(f.Fragment, {
-            children: [(0, f.jsxs)("div", {
+          return (0, u.jsxs)(u.Fragment, {
+            children: [(0, u.jsxs)("div", {
               className: "rockstargames-sites-rockstargamesdcf817f11d19ae0ef32bf4b753d292a2",
               "data-testid": "homepageBody",
-              children: [(0, f.jsx)(c.A, {
+              children: [(0, u.jsx)(c.A, {
                 videos: n.results,
                 t: a
-              }), (0, f.jsxs)("div", {
+              }), (0, u.jsxs)("div", {
                 className: "rockstargames-sites-rockstargamesd04358d9e38bc205e1c35dee36efcaa1",
-                children: [(0, f.jsx)(v, {
+                children: [(0, u.jsx)(v, {
                   posts: r.results,
                   t: a
-                }), (0, f.jsx)(b, {
+                }), (0, u.jsx)(b, {
                   games: i.results,
                   t: a
                 })]
               })]
-            }), (0, f.jsx)(l.A, {})]
+            }), (0, u.jsx)(l.A, {})]
           })
         }))
     },

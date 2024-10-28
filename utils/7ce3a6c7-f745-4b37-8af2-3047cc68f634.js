@@ -1,8 +1,8 @@
 ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "7ce3a6c7-f745-4b37-8af2-3047cc68f634", e._sentryDebugIdIdentifier = "sentry-dbid-7ce3a6c7-f745-4b37-8af2-3047cc68f634")
+      t = (new Error).stack;
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "7ce3a6c7-f745-4b37-8af2-3047cc68f634", e._sentryDebugIdIdentifier = "sentry-dbid-7ce3a6c7-f745-4b37-8af2-3047cc68f634")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -16,58 +16,58 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_utils = self.webpackChunk_rockstargames_utils || []).push([
   [714], {
-    2522: (e, a, t) => {
-      var d, n = (d = t(3102)) && d.__esModule ? d : {
+    2522: (e, t, a) => {
+      var d, n = (d = a(3102)) && d.__esModule ? d : {
           default: d
         },
         r = {
           tags: function(e) {
-            var a = e.id,
-              t = e.events,
+            var t = e.id,
+              a = e.events,
               d = e.dataLayer,
               r = e.dataLayerName,
               i = e.preview,
               o = "&gtm_auth=" + e.auth,
               s = "&gtm_preview=" + i;
-            return a || (0, n.default)("GTM Id is required"), {
-              iframe: '\n      <iframe src="https://www.googletagmanager.com/ns.html?id=' + a + o + s + '&gtm_cookies_win=x"\n        height="0" width="0" style="display:none;visibility:hidden" id="tag-manager"></iframe>',
-              script: "\n      (function(w,d,s,l,i){w[l]=w[l]||[];\n        w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js', " + JSON.stringify(t).slice(1, -1) + "});\n        var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';\n        j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+'" + o + s + "&gtm_cookies_win=x';\n        f.parentNode.insertBefore(j,f);\n      })(window,document,'script','" + r + "','" + a + "');",
+            return t || (0, n.default)("GTM Id is required"), {
+              iframe: '\n      <iframe src="https://www.googletagmanager.com/ns.html?id=' + t + o + s + '&gtm_cookies_win=x"\n        height="0" width="0" style="display:none;visibility:hidden" id="tag-manager"></iframe>',
+              script: "\n      (function(w,d,s,l,i){w[l]=w[l]||[];\n        w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js', " + JSON.stringify(a).slice(1, -1) + "});\n        var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';\n        j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+'" + o + s + "&gtm_cookies_win=x';\n        f.parentNode.insertBefore(j,f);\n      })(window,document,'script','" + r + "','" + t + "');",
               dataLayerVar: this.dataLayer(d, r)
             }
           },
-          dataLayer: function(e, a) {
-            return "\n      window." + a + " = window." + a + " || [];\n      window." + a + ".push(" + JSON.stringify(e) + ")"
+          dataLayer: function(e, t) {
+            return "\n      window." + t + " = window." + t + " || [];\n      window." + t + ".push(" + JSON.stringify(e) + ")"
           }
         };
       e.exports = r
     },
-    8295: (e, a, t) => {
-      var d, n = (d = t(2522)) && d.__esModule ? d : {
+    8295: (e, t, a) => {
+      var d, n = (d = a(2522)) && d.__esModule ? d : {
           default: d
         },
         r = {
           dataScript: function(e) {
-            var a = document.createElement("script");
-            return a.innerHTML = e, a
+            var t = document.createElement("script");
+            return t.innerHTML = e, t
           },
           gtm: function(e) {
-            var a = n.default.tags(e);
+            var t = n.default.tags(e);
             return {
               noScript: function() {
                 var e = document.createElement("noscript");
-                return e.innerHTML = a.iframe, e
+                return e.innerHTML = t.iframe, e
               },
               script: function() {
                 var e = document.createElement("script");
-                return e.innerHTML = a.script, e
+                return e.innerHTML = t.script, e
               },
-              dataScript: this.dataScript(a.dataLayerVar)
+              dataScript: this.dataScript(t.dataLayerVar)
             }
           },
           initialize: function(e) {
-            var a = e.gtmId,
-              t = e.events,
-              d = void 0 === t ? {} : t,
+            var t = e.gtmId,
+              a = e.events,
+              d = void 0 === a ? {} : a,
               n = e.dataLayer,
               r = e.dataLayerName,
               i = void 0 === r ? "dataLayer" : r,
@@ -76,7 +76,7 @@ _global.SENTRY_RELEASE = {
               c = e.preview,
               l = void 0 === c ? "" : c,
               u = this.gtm({
-                id: a,
+                id: t,
                 events: d,
                 dataLayer: n || void 0,
                 dataLayerName: i,
@@ -86,27 +86,27 @@ _global.SENTRY_RELEASE = {
             n && document.head.appendChild(u.dataScript), document.head.insertBefore(u.script(), document.head.childNodes[0]), document.body.insertBefore(u.noScript(), document.body.childNodes[0])
           },
           dataLayer: function(e) {
-            var a = e.dataLayer,
-              t = e.dataLayerName,
-              d = void 0 === t ? "dataLayer" : t;
-            if (window[d]) return window[d].push(a);
-            var r = n.default.dataLayer(a, d),
+            var t = e.dataLayer,
+              a = e.dataLayerName,
+              d = void 0 === a ? "dataLayer" : a;
+            if (window[d]) return window[d].push(t);
+            var r = n.default.dataLayer(t, d),
               i = this.dataScript(r);
             document.head.insertBefore(i, document.head.childNodes[0])
           }
         };
       e.exports = r
     },
-    714: (e, a, t) => {
-      var d, n = (d = t(8295)) && d.__esModule ? d : {
+    714: (e, t, a) => {
+      var d, n = (d = a(8295)) && d.__esModule ? d : {
         default: d
       };
       e.exports = n.default
     },
-    3102: (e, a) => {
-      Object.defineProperty(a, "__esModule", {
+    3102: (e, t) => {
+      Object.defineProperty(t, "__esModule", {
         value: !0
-      }), a.default = function(e) {
+      }), t.default = function(e) {
         console.warn("[react-gtm]", e)
       }
     }

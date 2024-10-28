@@ -56,10 +56,10 @@ _global.SENTRY_RELEASE = {
         }
       }
 
-      function u(e, t, l) {
-        (l = l || {}).arrayMerge = l.arrayMerge || a, l.isMergeableObject = l.isMergeableObject || r, l.cloneUnlessOtherwiseSpecified = n;
-        var f = Array.isArray(t);
-        return f === Array.isArray(e) ? f ? l.arrayMerge(e, t, l) : function(e, r, t) {
+      function u(e, t, f) {
+        (f = f || {}).arrayMerge = f.arrayMerge || a, f.isMergeableObject = f.isMergeableObject || r, f.cloneUnlessOtherwiseSpecified = n;
+        var d = Array.isArray(t);
+        return d === Array.isArray(e) ? d ? f.arrayMerge(e, t, f) : function(e, r, t) {
           var a = {};
           return t.isMergeableObject(e) && o(e).forEach((function(r) {
             a[r] = n(e[r], t)
@@ -72,7 +72,7 @@ _global.SENTRY_RELEASE = {
               return "function" == typeof t ? t : u
             }(o, t)(e[o], r[o], t) : a[o] = n(r[o], t))
           })), a
-        }(e, t, l) : n(t, l)
+        }(e, t, f) : n(t, f)
       }
       u.all = function(e, r) {
         if (!Array.isArray(e)) throw new Error("first argument should be an array");
@@ -80,8 +80,8 @@ _global.SENTRY_RELEASE = {
           return u(e, t, r)
         }), {})
       };
-      var l = u;
-      e.exports = l
+      var f = u;
+      e.exports = f
     }
   }
 ]);

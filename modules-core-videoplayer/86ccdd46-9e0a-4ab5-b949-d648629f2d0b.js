@@ -20,28 +20,28 @@ _global.SENTRY_RELEASE = {
       n.r(d), n.d(d, {
         useGSAP: () => c
       });
-      var a = n(1403),
-        t = n(6040),
-        o = n.n(t);
-      let r = "undefined" != typeof window ? a.useLayoutEffect : a.useEffect,
+      var t = n(1403),
+        o = n(6040),
+        a = n.n(o);
+      let r = "undefined" != typeof window ? t.useLayoutEffect : t.useEffect,
         s = e => e && !Array.isArray(e) && "object" == typeof e,
         l = [],
         f = {},
-        i = o();
+        i = a();
       const c = function(e) {
         let d = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : l,
           n = f;
         s(e) ? (n = e, e = null, d = "dependencies" in n ? n.dependencies : l) : s(d) && (n = d, d = "dependencies" in n ? n.dependencies : l);
         let {
-          scope: t,
-          revertOnUpdate: o
-        } = n, [c, u] = (0, a.useState)(!1);
+          scope: o,
+          revertOnUpdate: a
+        } = n, [c, u] = (0, t.useState)(!1);
         e && "function" != typeof e && console.warn("First parameter must be a function or config object");
-        const b = i.context((() => {}), t),
+        const b = i.context((() => {}), o),
           y = () => b.revert(),
-          p = d && d.length && !o;
+          p = d && d.length && !a;
         return r((() => {
-          if (e && b.add(e, t), !p || !c) return y
+          if (e && b.add(e, o), !p || !c) return y
         }), d), p && r((() => (u(!0), y)), l), {
           context: b,
           contextSafe: e => b.add(null, e)

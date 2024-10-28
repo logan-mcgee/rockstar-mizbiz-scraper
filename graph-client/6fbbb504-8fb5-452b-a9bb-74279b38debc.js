@@ -107,8 +107,8 @@ _global.SENTRY_RELEASE = {
       function i(e, n) {
         if ("FragmentSpread" === e.kind) n.add(e.name.value);
         else if ("VariableDefinition" === e.kind) {
-          var a = e.type;
-          "NamedType" === a.kind && n.add(a.name.value)
+          var d = e.type;
+          "NamedType" === d.kind && n.add(d.name.value)
         }
         e.selectionSet && e.selectionSet.selections.forEach((function(e) {
           i(e, n)
@@ -126,26 +126,26 @@ _global.SENTRY_RELEASE = {
           column: 1
         }
       };
-      var a = {};
+      var d = {};
 
-      function d(e, n) {
+      function a(e, n) {
         for (var i = 0; i < e.definitions.length; i++) {
-          var a = e.definitions[i];
-          if (a.name && a.name.value == n) return a
+          var d = e.definitions[i];
+          if (d.name && d.name.value == n) return d
         }
       }
       n.definitions.forEach((function(e) {
         if (e.name) {
           var n = new Set;
-          i(e, n), a[e.name.value] = n
+          i(e, n), d[e.name.value] = n
         }
       })), e.exports = n, e.exports.videoFields = function(e, n) {
         var i = {
           kind: e.kind,
-          definitions: [d(e, n)]
+          definitions: [a(e, n)]
         };
         e.hasOwnProperty("loc") && (i.loc = e.loc);
-        var t = a[n] || new Set,
+        var t = d[n] || new Set,
           o = new Set,
           l = new Set;
         for (t.forEach((function(e) {
@@ -153,14 +153,14 @@ _global.SENTRY_RELEASE = {
           })); l.size > 0;) {
           var s = l;
           l = new Set, s.forEach((function(e) {
-            o.has(e) || (o.add(e), (a[e] || new Set).forEach((function(e) {
+            o.has(e) || (o.add(e), (d[e] || new Set).forEach((function(e) {
               l.add(e)
             })))
           }))
         }
         return o.forEach((function(n) {
-          var a = d(e, n);
-          a && i.definitions.push(a)
+          var d = a(e, n);
+          d && i.definitions.push(d)
         })), i
       }(n, "videoFields")
     }

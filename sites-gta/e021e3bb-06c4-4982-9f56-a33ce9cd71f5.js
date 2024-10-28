@@ -22,13 +22,13 @@ _global.SENTRY_RELEASE = {
         o = Symbol.for("react.fragment"),
         u = Symbol.for("react.strict_mode"),
         a = Symbol.for("react.profiler"),
-        c = Symbol.for("react.provider"),
-        f = Symbol.for("react.context"),
+        f = Symbol.for("react.provider"),
+        c = Symbol.for("react.context"),
         i = Symbol.for("react.forward_ref"),
         s = Symbol.for("react.suspense"),
         l = Symbol.for("react.memo"),
-        d = Symbol.for("react.lazy"),
-        p = Symbol.iterator,
+        p = Symbol.for("react.lazy"),
+        d = Symbol.iterator,
         y = {
           isMounted: function() {
             return !1
@@ -72,22 +72,22 @@ _global.SENTRY_RELEASE = {
       function R(e, t, n) {
         var o, u = {},
           a = null,
-          c = null;
+          f = null;
         if (null != t)
-          for (o in void 0 !== t.ref && (c = t.ref), void 0 !== t.key && (a = "" + t.key), t) S.call(t, o) && !E.hasOwnProperty(o) && (u[o] = t[o]);
-        var f = arguments.length - 2;
-        if (1 === f) u.children = n;
-        else if (1 < f) {
-          for (var i = Array(f), s = 0; s < f; s++) i[s] = arguments[s + 2];
+          for (o in void 0 !== t.ref && (f = t.ref), void 0 !== t.key && (a = "" + t.key), t) S.call(t, o) && !E.hasOwnProperty(o) && (u[o] = t[o]);
+        var c = arguments.length - 2;
+        if (1 === c) u.children = n;
+        else if (1 < c) {
+          for (var i = Array(c), s = 0; s < c; s++) i[s] = arguments[s + 2];
           u.children = i
         }
         if (e && e.defaultProps)
-          for (o in f = e.defaultProps) void 0 === u[o] && (u[o] = f[o]);
+          for (o in c = e.defaultProps) void 0 === u[o] && (u[o] = c[o]);
         return {
           $$typeof: r,
           type: e,
           key: a,
-          ref: c,
+          ref: f,
           props: u,
           _owner: k.current
         }
@@ -111,23 +111,23 @@ _global.SENTRY_RELEASE = {
       }
 
       function I(e, t, o, u, a) {
-        var c = typeof e;
-        "undefined" !== c && "boolean" !== c || (e = null);
-        var f = !1;
-        if (null === e) f = !0;
-        else switch (c) {
+        var f = typeof e;
+        "undefined" !== f && "boolean" !== f || (e = null);
+        var c = !1;
+        if (null === e) c = !0;
+        else switch (f) {
           case "string":
           case "number":
-            f = !0;
+            c = !0;
             break;
           case "object":
             switch (e.$$typeof) {
               case r:
               case n:
-                f = !0
+                c = !0
             }
         }
-        if (f) return a = a(f = e), e = "" === u ? "." + j(f, 0) : u, w(a) ? (o = "", null != e && (o = e.replace(C, "$&/") + "/"), I(a, t, o, "", (function(e) {
+        if (c) return a = a(c = e), e = "" === u ? "." + j(c, 0) : u, w(a) ? (o = "", null != e && (o = e.replace(C, "$&/") + "/"), I(a, t, o, "", (function(e) {
           return e
         }))) : null != a && ($(a) && (a = function(e, t) {
           return {
@@ -138,17 +138,17 @@ _global.SENTRY_RELEASE = {
             props: e.props,
             _owner: e._owner
           }
-        }(a, o + (!a.key || f && f.key === a.key ? "" : ("" + a.key).replace(C, "$&/") + "/") + e)), t.push(a)), 1;
-        if (f = 0, u = "" === u ? "." : u + ":", w(e))
+        }(a, o + (!a.key || c && c.key === a.key ? "" : ("" + a.key).replace(C, "$&/") + "/") + e)), t.push(a)), 1;
+        if (c = 0, u = "" === u ? "." : u + ":", w(e))
           for (var i = 0; i < e.length; i++) {
-            var s = u + j(c = e[i], i);
-            f += I(c, t, o, s, a)
+            var s = u + j(f = e[i], i);
+            c += I(f, t, o, s, a)
           } else if (s = function(e) {
-              return null === e || "object" != typeof e ? null : "function" == typeof(e = p && e[p] || e["@@iterator"]) ? e : null
+              return null === e || "object" != typeof e ? null : "function" == typeof(e = d && e[d] || e["@@iterator"]) ? e : null
             }(e), "function" == typeof s)
-            for (e = s.call(e), i = 0; !(c = e.next()).done;) f += I(c = c.value, t, o, s = u + j(c, i++), a);
-          else if ("object" === c) throw t = String(e), Error("Objects are not valid as a React child (found: " + ("[object Object]" === t ? "object with keys {" + Object.keys(e).join(", ") + "}" : t) + "). If you meant to render a collection of children, use an array instead.");
-        return f
+            for (e = s.call(e), i = 0; !(f = e.next()).done;) c += I(f = f.value, t, o, s = u + j(f, i++), a);
+          else if ("object" === f) throw t = String(e), Error("Objects are not valid as a React child (found: " + ("[object Object]" === t ? "object with keys {" + Object.keys(e).join(", ") + "}" : t) + "). If you meant to render a collection of children, use an array instead.");
+        return c
       }
 
       function O(e, t, r) {
@@ -210,17 +210,17 @@ _global.SENTRY_RELEASE = {
         var o = _({}, e.props),
           u = e.key,
           a = e.ref,
-          c = e._owner;
+          f = e._owner;
         if (null != t) {
-          if (void 0 !== t.ref && (a = t.ref, c = k.current), void 0 !== t.key && (u = "" + t.key), e.type && e.type.defaultProps) var f = e.type.defaultProps;
-          for (i in t) S.call(t, i) && !E.hasOwnProperty(i) && (o[i] = void 0 === t[i] && void 0 !== f ? f[i] : t[i])
+          if (void 0 !== t.ref && (a = t.ref, f = k.current), void 0 !== t.key && (u = "" + t.key), e.type && e.type.defaultProps) var c = e.type.defaultProps;
+          for (i in t) S.call(t, i) && !E.hasOwnProperty(i) && (o[i] = void 0 === t[i] && void 0 !== c ? c[i] : t[i])
         }
         var i = arguments.length - 2;
         if (1 === i) o.children = n;
         else if (1 < i) {
-          f = Array(i);
-          for (var s = 0; s < i; s++) f[s] = arguments[s + 2];
-          o.children = f
+          c = Array(i);
+          for (var s = 0; s < i; s++) c[s] = arguments[s + 2];
+          o.children = c
         }
         return {
           $$typeof: r,
@@ -228,11 +228,11 @@ _global.SENTRY_RELEASE = {
           key: u,
           ref: a,
           props: o,
-          _owner: c
+          _owner: f
         }
       }, t.createContext = function(e) {
         return (e = {
-          $$typeof: f,
+          $$typeof: c,
           _currentValue: e,
           _currentValue2: e,
           _threadCount: 0,
@@ -241,7 +241,7 @@ _global.SENTRY_RELEASE = {
           _defaultValue: null,
           _globalName: null
         }).Provider = {
-          $$typeof: c,
+          $$typeof: f,
           _context: e
         }, e.Consumer = e
       }, t.createElement = R, t.createFactory = function(e) {
@@ -258,7 +258,7 @@ _global.SENTRY_RELEASE = {
         }
       }, t.isValidElement = $, t.lazy = function(e) {
         return {
-          $$typeof: d,
+          $$typeof: p,
           _payload: {
             _status: -1,
             _result: e

@@ -16,33 +16,33 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_videoplayer = self.webpackChunk_rockstargames_modules_core_videoplayer || []).push([
   [658, 277], {
-    3277: (e, n, a) => {
-      a.r(n), a.d(n, {
+    3277: (e, n, d) => {
+      d.r(n), d.d(n, {
         useGSAP: () => u
       });
-      var d = a(1403),
-        t = a(6040),
-        o = a.n(t);
-      let f = "undefined" != typeof window ? d.useLayoutEffect : d.useEffect,
+      var t = d(1403),
+        o = d(6040),
+        a = d.n(o);
+      let f = "undefined" != typeof window ? t.useLayoutEffect : t.useEffect,
         r = e => e && !Array.isArray(e) && "object" == typeof e,
         s = [],
         l = {},
-        i = o();
+        i = a();
       const u = function(e) {
         let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : s,
-          a = l;
-        r(e) ? (a = e, e = null, n = "dependencies" in a ? a.dependencies : s) : r(n) && (a = n, n = "dependencies" in a ? a.dependencies : s);
+          d = l;
+        r(e) ? (d = e, e = null, n = "dependencies" in d ? d.dependencies : s) : r(n) && (d = n, n = "dependencies" in d ? d.dependencies : s);
         let {
-          scope: t,
-          revertOnUpdate: o
-        } = a, [u, c] = (0, d.useState)(!1);
+          scope: o,
+          revertOnUpdate: a
+        } = d, [u, c] = (0, t.useState)(!1);
         e && "function" != typeof e && console.warn("First parameter must be a function or config object");
-        const y = i.context((() => {}), t),
+        const y = i.context((() => {}), o),
           p = () => y.revert(),
-          g = n && n.length && !o;
+          b = n && n.length && !a;
         return f((() => {
-          if (e && y.add(e, t), !g || !u) return p
-        }), n), g && f((() => (c(!0), p)), s), {
+          if (e && y.add(e, o), !b || !u) return p
+        }), n), b && f((() => (c(!0), p)), s), {
           context: y,
           contextSafe: e => y.add(null, e)
         }

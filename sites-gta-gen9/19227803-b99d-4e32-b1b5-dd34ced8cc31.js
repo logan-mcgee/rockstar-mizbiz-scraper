@@ -191,18 +191,18 @@ _global.SENTRY_RELEASE = {
         onChange: h
       } = {}) {
         var u;
-        const [b, f] = i.useState(null), p = i.useRef(), [g, y] = i.useState({
+        const [b, p] = i.useState(null), f = i.useRef(), [g, y] = i.useState({
           inView: !!d,
           entry: void 0
         });
-        p.current = h, i.useEffect((() => {
+        f.current = h, i.useEffect((() => {
           if (a || !b) return;
           let i;
           return i = c(b, ((e, t) => {
             y({
               inView: e,
               entry: t
-            }), p.current && p.current(e, t), t.isIntersecting && o && i && (i(), i = void 0)
+            }), f.current && f.current(e, t), t.isIntersecting && o && i && (i(), i = void 0)
           }), {
             root: s,
             rootMargin: r,
@@ -219,7 +219,7 @@ _global.SENTRY_RELEASE = {
           inView: !!d,
           entry: void 0
         }));
-        const k = [f, g.inView, g.entry];
+        const k = [p, g.inView, g.entry];
         return k.ref = k[0], k.inView = k[1], k.entry = k[2], k
       }
     }

@@ -116,7 +116,7 @@ _global.SENTRY_RELEASE = {
       };
       var i = {};
 
-      function t(e, n) {
+      function d(e, n) {
         for (var a = 0; a < e.definitions.length; a++) {
           var i = e.definitions[a];
           if (i.name && i.name.value == n) return i
@@ -130,13 +130,13 @@ _global.SENTRY_RELEASE = {
       })), e.exports = n, e.exports.paging = function(e, n) {
         var a = {
           kind: e.kind,
-          definitions: [t(e, n)]
+          definitions: [d(e, n)]
         };
         e.hasOwnProperty("loc") && (a.loc = e.loc);
-        var d = i[n] || new Set,
+        var t = i[n] || new Set,
           o = new Set,
           r = new Set;
-        for (d.forEach((function(e) {
+        for (t.forEach((function(e) {
             r.add(e)
           })); r.size > 0;) {
           var s = r;
@@ -147,7 +147,7 @@ _global.SENTRY_RELEASE = {
           }))
         }
         return o.forEach((function(n) {
-          var i = t(e, n);
+          var i = d(e, n);
           i && a.definitions.push(i)
         })), a
       }(n, "paging")

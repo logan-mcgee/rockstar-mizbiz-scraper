@@ -79,8 +79,8 @@ _global.SENTRY_RELEASE = {
           c = Object.getPrototypeOf,
           s = Object.getOwnPropertyDescriptor,
           u = Object.freeze,
-          m = Object.seal,
-          f = Object.create,
+          f = Object.seal,
+          m = Object.create,
           d = "undefined" != typeof Reflect && Reflect,
           p = d.apply,
           g = d.construct;
@@ -88,7 +88,7 @@ _global.SENTRY_RELEASE = {
           return e.apply(t, n)
         }), u || (u = function(e) {
           return e
-        }), m || (m = function(e) {
+        }), f || (f = function(e) {
           return e
         }), g || (g = function(e, t) {
           return n(e, r(t))
@@ -130,7 +130,7 @@ _global.SENTRY_RELEASE = {
         }
 
         function D(e) {
-          var t, n = f(null);
+          var t, n = m(null);
           for (t in e) !0 === p(a, e, [t]) && (n[t] = e[t]);
           return n
         }
@@ -159,15 +159,15 @@ _global.SENTRY_RELEASE = {
           P = u(["accent-height", "accumulate", "additive", "alignment-baseline", "ascent", "attributename", "attributetype", "azimuth", "basefrequency", "baseline-shift", "begin", "bias", "by", "class", "clip", "clippathunits", "clip-path", "clip-rule", "color", "color-interpolation", "color-interpolation-filters", "color-profile", "color-rendering", "cx", "cy", "d", "dx", "dy", "diffuseconstant", "direction", "display", "divisor", "dur", "edgemode", "elevation", "end", "fill", "fill-opacity", "fill-rule", "filter", "filterunits", "flood-color", "flood-opacity", "font-family", "font-size", "font-size-adjust", "font-stretch", "font-style", "font-variant", "font-weight", "fx", "fy", "g1", "g2", "glyph-name", "glyphref", "gradientunits", "gradienttransform", "height", "href", "id", "image-rendering", "in", "in2", "k", "k1", "k2", "k3", "k4", "kerning", "keypoints", "keysplines", "keytimes", "lang", "lengthadjust", "letter-spacing", "kernelmatrix", "kernelunitlength", "lighting-color", "local", "marker-end", "marker-mid", "marker-start", "markerheight", "markerunits", "markerwidth", "maskcontentunits", "maskunits", "max", "mask", "media", "method", "mode", "min", "name", "numoctaves", "offset", "operator", "opacity", "order", "orient", "orientation", "origin", "overflow", "paint-order", "path", "pathlength", "patterncontentunits", "patterntransform", "patternunits", "points", "preservealpha", "preserveaspectratio", "primitiveunits", "r", "rx", "ry", "radius", "refx", "refy", "repeatcount", "repeatdur", "restart", "result", "rotate", "scale", "seed", "shape-rendering", "specularconstant", "specularexponent", "spreadmethod", "startoffset", "stddeviation", "stitchtiles", "stop-color", "stop-opacity", "stroke-dasharray", "stroke-dashoffset", "stroke-linecap", "stroke-linejoin", "stroke-miterlimit", "stroke-opacity", "stroke", "stroke-width", "style", "surfacescale", "systemlanguage", "tabindex", "targetx", "targety", "transform", "transform-origin", "text-anchor", "text-decoration", "text-rendering", "textlength", "type", "u1", "u2", "unicode", "values", "viewbox", "visibility", "version", "vert-adv-y", "vert-origin-x", "vert-origin-y", "width", "word-spacing", "wrap", "writing-mode", "xchannelselector", "ychannelselector", "x", "x1", "x2", "xmlns", "y", "y1", "y2", "z", "zoomandpan"]),
           B = u(["accent", "accentunder", "align", "bevelled", "close", "columnsalign", "columnlines", "columnspan", "denomalign", "depth", "dir", "display", "displaystyle", "encoding", "fence", "frame", "height", "href", "id", "largeop", "length", "linethickness", "lspace", "lquote", "mathbackground", "mathcolor", "mathsize", "mathvariant", "maxsize", "minsize", "movablelimits", "notation", "numalign", "open", "rowalign", "rowlines", "rowspacing", "rowspan", "rspace", "rquote", "scriptlevel", "scriptminsize", "scriptsizemultiplier", "selection", "separator", "separators", "stretchy", "subscriptshift", "supscriptshift", "symmetric", "voffset", "width", "xmlns"]),
           j = u(["xlink:href", "xml:id", "xlink:title", "xml:space", "xmlns:xlink"]),
-          G = m(/\{\{[\w\W]*|[\w\W]*\}\}/gm),
-          W = m(/<%[\w\W]*|[\w\W]*%>/gm),
-          q = m(/\${[\w\W]*}/gm),
-          Y = m(/^data-[\-\w.\u00B7-\uFFFF]/),
-          $ = m(/^aria-[\-\w]+$/),
-          K = m(/^(?:(?:(?:f|ht)tps?|mailto|tel|callto|cid|xmpp):|[^a-z]|[a-z+.\-]+(?:[^a-z+.\-:]|$))/i),
-          V = m(/^(?:\w+script|data):/i),
-          X = m(/[\u0000-\u0020\u00A0\u1680\u180E\u2000-\u2029\u205F\u3000]/g),
-          Z = m(/^html$/i),
+          G = f(/\{\{[\w\W]*|[\w\W]*\}\}/gm),
+          W = f(/<%[\w\W]*|[\w\W]*%>/gm),
+          q = f(/\${[\w\W]*}/gm),
+          Y = f(/^data-[\-\w.\u00B7-\uFFFF]/),
+          $ = f(/^aria-[\-\w]+$/),
+          K = f(/^(?:(?:(?:f|ht)tps?|mailto|tel|callto|cid|xmpp):|[^a-z]|[a-z+.\-]+(?:[^a-z+.\-:]|$))/i),
+          V = f(/^(?:\w+script|data):/i),
+          X = f(/[\u0000-\u0020\u00A0\u1680\u180E\u2000-\u2029\u205F\u3000]/g),
+          Z = f(/^html$/i),
           J = function() {
             return "undefined" == typeof window ? null : window
           };
@@ -182,14 +182,14 @@ _global.SENTRY_RELEASE = {
             l = n.DocumentFragment,
             c = n.HTMLTemplateElement,
             s = n.Node,
-            m = n.Element,
-            f = n.NodeFilter,
+            f = n.Element,
+            m = n.NodeFilter,
             d = n.NamedNodeMap,
             p = void 0 === d ? n.NamedNodeMap || n.MozNamedAttrMap : d,
             g = n.HTMLFormElement,
             h = n.DOMParser,
             x = n.trustedTypes,
-            Q = m.prototype,
+            Q = f.prototype,
             ee = M(Q, "cloneNode"),
             te = M(Q, "nextSibling"),
             ne = M(Q, "childNodes"),
@@ -222,8 +222,8 @@ _global.SENTRY_RELEASE = {
             ce = le.implementation,
             se = le.createNodeIterator,
             ue = le.createDocumentFragment,
-            me = le.getElementsByTagName,
-            fe = a.importNode,
+            fe = le.getElementsByTagName,
+            me = a.importNode,
             de = {};
           try {
             de = D(i).documentMode ? i.documentMode : {}
@@ -299,10 +299,10 @@ _global.SENTRY_RELEASE = {
             ut = function(e) {
               return e instanceof RegExp || e instanceof Function
             },
-            mt = function(t) {
+            ft = function(t) {
               ct && ct === t || (t && "object" === e(t) || (t = {}), t = D(t), ge = ge = -1 === lt.indexOf(t.PARSER_MEDIA_TYPE) ? "text/html" : t.PARSER_MEDIA_TYPE, he = "application/xhtml+xml" === ge ? N : T, _e = "ALLOWED_TAGS" in t ? L({}, t.ALLOWED_TAGS, he) : Se, ke = "ALLOWED_ATTR" in t ? L({}, t.ALLOWED_ATTR, he) : xe, at = "ALLOWED_NAMESPACES" in t ? L({}, t.ALLOWED_NAMESPACES, N) : it, Je = "ADD_URI_SAFE_ATTR" in t ? L(D(Qe), t.ADD_URI_SAFE_ATTR, he) : Qe, Xe = "ADD_DATA_URI_TAGS" in t ? L(D(Ze), t.ADD_DATA_URI_TAGS, he) : Ze, Ke = "FORBID_CONTENTS" in t ? L({}, t.FORBID_CONTENTS, he) : Ve, De = "FORBID_TAGS" in t ? L({}, t.FORBID_TAGS, he) : {}, Me = "FORBID_ATTR" in t ? L({}, t.FORBID_ATTR, he) : {}, $e = "USE_PROFILES" in t && t.USE_PROFILES, Oe = !1 !== t.ALLOW_ARIA_ATTR, Re = !1 !== t.ALLOW_DATA_ATTR, Ce = t.ALLOW_UNKNOWN_PROTOCOLS || !1, Ie = !1 !== t.ALLOW_SELF_CLOSE_IN_ATTR, Fe = t.SAFE_FOR_TEMPLATES || !1, Ue = t.WHOLE_DOCUMENT || !1, Pe = t.RETURN_DOM || !1, Be = t.RETURN_DOM_FRAGMENT || !1, je = t.RETURN_TRUSTED_TYPE || !1, ze = t.FORCE_BODY || !1, Ge = !1 !== t.SANITIZE_DOM, We = t.SANITIZE_NAMED_PROPS || !1, qe = !1 !== t.KEEP_CONTENT, Ye = t.IN_PLACE || !1, Ae = t.ALLOWED_URI_REGEXP || Ae, rt = t.NAMESPACE || nt, Le = t.CUSTOM_ELEMENT_HANDLING || {}, t.CUSTOM_ELEMENT_HANDLING && ut(t.CUSTOM_ELEMENT_HANDLING.tagNameCheck) && (Le.tagNameCheck = t.CUSTOM_ELEMENT_HANDLING.tagNameCheck), t.CUSTOM_ELEMENT_HANDLING && ut(t.CUSTOM_ELEMENT_HANDLING.attributeNameCheck) && (Le.attributeNameCheck = t.CUSTOM_ELEMENT_HANDLING.attributeNameCheck), t.CUSTOM_ELEMENT_HANDLING && "boolean" == typeof t.CUSTOM_ELEMENT_HANDLING.allowCustomizedBuiltInElements && (Le.allowCustomizedBuiltInElements = t.CUSTOM_ELEMENT_HANDLING.allowCustomizedBuiltInElements), Fe && (Re = !1), Be && (Pe = !0), $e && (_e = L({}, r(H)), ke = [], !0 === $e.html && (L(_e, O), L(ke, z)), !0 === $e.svg && (L(_e, R), L(ke, P), L(ke, j)), !0 === $e.svgFilters && (L(_e, C), L(ke, P), L(ke, j)), !0 === $e.mathMl && (L(_e, F), L(ke, B), L(ke, j))), t.ADD_TAGS && (_e === Se && (_e = D(_e)), L(_e, t.ADD_TAGS, he)), t.ADD_ATTR && (ke === xe && (ke = D(ke)), L(ke, t.ADD_ATTR, he)), t.ADD_URI_SAFE_ATTR && L(Je, t.ADD_URI_SAFE_ATTR, he), t.FORBID_CONTENTS && (Ke === Ve && (Ke = D(Ke)), L(Ke, t.FORBID_CONTENTS, he)), qe && (_e["#text"] = !0), Ue && L(_e, ["html", "head", "body"]), _e.table && (L(_e, ["tbody"]), delete De.tbody), u && u(t), ct = t)
             },
-            ft = L({}, ["mi", "mo", "mn", "ms", "mtext"]),
+            mt = L({}, ["mi", "mo", "mn", "ms", "mtext"]),
             dt = L({}, ["foreignobject", "desc", "title", "annotation-xml"]),
             pt = L({}, ["title", "style", "font", "a", "script"]),
             gt = L({}, R);
@@ -361,10 +361,10 @@ _global.SENTRY_RELEASE = {
                 } catch (e) {}
               }
               var a = t.body || t.documentElement;
-              return e && n && a.insertBefore(i.createTextNode(n), a.childNodes[0] || null), rt === nt ? me.call(t, Ue ? "html" : "body")[0] : Ue ? t.documentElement : a
+              return e && n && a.insertBefore(i.createTextNode(n), a.childNodes[0] || null), rt === nt ? fe.call(t, Ue ? "html" : "body")[0] : Ue ? t.documentElement : a
             },
             Tt = function(e) {
-              return se.call(e.ownerDocument || e, e, f.SHOW_ELEMENT | f.SHOW_COMMENT | f.SHOW_TEXT, null, !1)
+              return se.call(e.ownerDocument || e, e, m.SHOW_ELEMENT | m.SHOW_COMMENT | m.SHOW_TEXT, null, !1)
             },
             Nt = function(t) {
               return "object" === e(s) ? t instanceof s : t && "object" === e(t) && "number" == typeof t.nodeType && "string" == typeof t.nodeName
@@ -397,7 +397,7 @@ _global.SENTRY_RELEASE = {
                 }
                 return yt(e), !0
               }
-              return e instanceof m && ! function(e) {
+              return e instanceof f && ! function(e) {
                 var t = re(e);
                 t && t.tagName || (t = {
                   namespaceURI: rt,
@@ -405,7 +405,7 @@ _global.SENTRY_RELEASE = {
                 });
                 var n = T(e.tagName),
                   r = T(t.tagName);
-                return !!at[e.namespaceURI] && (e.namespaceURI === tt ? t.namespaceURI === nt ? "svg" === n : t.namespaceURI === et ? "svg" === n && ("annotation-xml" === r || ft[r]) : Boolean(gt[n]) : e.namespaceURI === et ? t.namespaceURI === nt ? "math" === n : t.namespaceURI === tt ? "math" === n && dt[r] : Boolean(ht[n]) : e.namespaceURI === nt ? !(t.namespaceURI === tt && !dt[r]) && !(t.namespaceURI === et && !ft[r]) && !ht[n] && (pt[n] || !gt[n]) : !("application/xhtml+xml" !== ge || !at[e.namespaceURI]))
+                return !!at[e.namespaceURI] && (e.namespaceURI === tt ? t.namespaceURI === nt ? "svg" === n : t.namespaceURI === et ? "svg" === n && ("annotation-xml" === r || mt[r]) : Boolean(gt[n]) : e.namespaceURI === et ? t.namespaceURI === nt ? "math" === n : t.namespaceURI === tt ? "math" === n && dt[r] : Boolean(ht[n]) : e.namespaceURI === nt ? !(t.namespaceURI === tt && !dt[r]) && !(t.namespaceURI === et && !mt[r]) && !ht[n] && (pt[n] || !gt[n]) : !("application/xhtml+xml" !== ge || !at[e.namespaceURI]))
               }(e) ? (yt(e), !0) : "noscript" !== r && "noembed" !== r && "noframes" !== r || !S(/<\/no(script|embed|frames)/i, e.innerHTML) ? (Fe && 3 === e.nodeType && (t = e.textContent, t = w(t, ye, " "), t = w(t, be, " "), t = w(t, ve, " "), e.textContent !== t && (v(o.removed, {
                 element: e.cloneNode()
               }), e.textContent = t)), Et("afterSanitizeElements", e, null), !1) : (yt(e), !0)
@@ -440,15 +440,15 @@ _global.SENTRY_RELEASE = {
                 for (i = l.length; i--;) {
                   var s = n = l[i],
                     u = s.name,
-                    m = s.namespaceURI;
+                    f = s.namespaceURI;
                   if (r = "value" === u ? n.value : _(n.value), a = he(u), c.attrName = a, c.attrValue = r, c.keepAttr = !0, c.forceKeepAttr = void 0, Et("uponSanitizeAttribute", t, c), r = c.attrValue, !c.forceKeepAttr && (bt(u, t), c.keepAttr))
                     if (Ie || !S(/\/>/i, r)) {
                       Fe && (r = w(r, ye, " "), r = w(r, be, " "), r = w(r, ve, " "));
-                      var f = he(t.nodeName);
-                      if (At(f, a, r)) {
+                      var m = he(t.nodeName);
+                      if (At(m, a, r)) {
                         if (!We || "id" !== a && "name" !== a || (bt(u, t), r = "user-content-" + r), ae && "object" === e(x) && "function" == typeof x.getAttributeType)
-                          if (m);
-                          else switch (x.getAttributeType(f, a)) {
+                          if (f);
+                          else switch (x.getAttributeType(m, a)) {
                             case "TrustedHTML":
                               r = ae.createHTML(r);
                               break;
@@ -456,7 +456,7 @@ _global.SENTRY_RELEASE = {
                               r = ae.createScriptURL(r)
                           }
                         try {
-                          m ? t.setAttributeNS(m, u, r) : t.setAttribute(u, r), b(o.removed)
+                          f ? t.setAttributeNS(f, u, r) : t.setAttribute(u, r), b(o.removed)
                         } catch (e) {}
                       }
                     } else bt(u, t)
@@ -470,7 +470,7 @@ _global.SENTRY_RELEASE = {
               Et("afterSanitizeShadowDOM", t, null)
             };
           return o.sanitize = function(t) {
-            var r, i, c, u, m, f = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
+            var r, i, c, u, f, m = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
             if ((ot = !t) && (t = "\x3c!--\x3e"), "string" != typeof t && !Nt(t)) {
               if ("function" != typeof t.toString) throw k("toString is not a function");
               if ("string" != typeof(t = t.toString())) throw k("dirty is not a string, aborting")
@@ -482,7 +482,7 @@ _global.SENTRY_RELEASE = {
               }
               return t
             }
-            if (He || mt(f), o.removed = [], "string" == typeof t && (Ye = !1), Ye) {
+            if (He || ft(m), o.removed = [], "string" == typeof t && (Ye = !1), Ye) {
               if (t.nodeName) {
                 var d = he(t.nodeName);
                 if (!_e[d] || De[d]) throw k("root node is forbidden and cannot be sanitized in-place")
@@ -497,18 +497,18 @@ _global.SENTRY_RELEASE = {
             if (u = null, Ye) return t;
             if (Pe) {
               if (Be)
-                for (m = ue.call(r.ownerDocument); r.firstChild;) m.appendChild(r.firstChild);
-              else m = r;
-              return (ke.shadowroot || ke.shadowrootmod) && (m = fe.call(a, m, !0)), m
+                for (f = ue.call(r.ownerDocument); r.firstChild;) f.appendChild(r.firstChild);
+              else f = r;
+              return (ke.shadowroot || ke.shadowrootmod) && (f = me.call(a, f, !0)), f
             }
             var g = Ue ? r.outerHTML : r.innerHTML;
             return Ue && _e["!doctype"] && r.ownerDocument && r.ownerDocument.doctype && r.ownerDocument.doctype.name && S(Z, r.ownerDocument.doctype.name) && (g = "<!DOCTYPE " + r.ownerDocument.doctype.name + ">\n" + g), Fe && (g = w(g, ye, " "), g = w(g, be, " "), g = w(g, ve, " ")), ae && je ? ae.createHTML(g) : g
           }, o.setConfig = function(e) {
-            mt(e), He = !0
+            ft(e), He = !0
           }, o.clearConfig = function() {
             ct = null, He = !1
           }, o.isValidAttribute = function(e, t, n) {
-            ct || mt({});
+            ct || ft({});
             var r = he(e),
               o = he(t);
             return At(r, o, n)

@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "01535797-08b7-450b-917a-cbd0cb3f4b81", e._sentryDebugIdIdentifier = "sentry-dbid-01535797-08b7-450b-917a-cbd0cb3f4b81")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "622ecf10-fc6b-4434-8f83-90ea5aae393c", e._sentryDebugIdIdentifier = "sentry-dbid-622ecf10-fc6b-4434-8f83-90ea5aae393c")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -47,7 +47,7 @@ _global.SENTRY_RELEASE = {
     }],
     execute: function() {
       e((() => {
-        var e, i, s, d, l = {
+        var e, i, s, d, f = {
             6539: (e, t, r) => {
               (0, r(3403).w)(1)
             },
@@ -80,7 +80,7 @@ _global.SENTRY_RELEASE = {
                   "./helpers/uploads": () => Promise.all([r.e(403), r.e(756), r.e(235)]).then((() => () => r(8235))),
                   "./index": () => Promise.all([r.e(403), r.e(139), r.e(756), r.e(736), r.e(252), r.e(369)]).then((() => () => r(5369))),
                   "./properties": () => Promise.all([r.e(403), r.e(139), r.e(756), r.e(736)]).then((() => () => r(1736))),
-                  "./tinaBlockTemplates": () => Promise.all([r.e(403), r.e(139), r.e(756), r.e(736), r.e(977)]).then((() => () => r(6977))),
+                  "./tinaBlockTemplates": () => r.e(72).then((() => () => r(3072))),
                   "./ui": () => Promise.all([r.e(403), r.e(139)]).then((() => () => r(8139)))
                 },
                 n = (e, t) => (r.R = t, t = r.o(a, e) ? a[e]() : Promise.resolve().then((() => {
@@ -116,19 +116,19 @@ _global.SENTRY_RELEASE = {
               e.exports = o
             }
           },
-          f = {};
+          l = {};
 
         function c(e) {
-          var t = f[e];
+          var t = l[e];
           if (void 0 !== t) return t.exports;
-          var r = f[e] = {
+          var r = l[e] = {
             id: e,
             loaded: !1,
             exports: {}
           };
-          return l[e].call(r.exports, r, r.exports, c), r.loaded = !0, r.exports
+          return f[e].call(r.exports, r, r.exports, c), r.loaded = !0, r.exports
         }
-        return c.m = l, c.c = f, c.y = t, c.n = e => {
+        return c.m = f, c.c = l, c.y = t, c.n = e => {
           var t = e && e.__esModule ? () => e.default : () => e;
           return c.d(t, {
             a: t
@@ -140,24 +140,24 @@ _global.SENTRY_RELEASE = {
           })
         }, c.f = {}, c.e = e => Promise.all(Object.keys(c.f).reduce(((t, r) => (c.f[r](e, t), t)), [])), c.u = e => "js/" + {
           11: "e1204967c51340107c1f3fd40be2abec",
-          105: "fc5d384ef674d68b9762d2488e7cc1ef",
-          139: "888ec2217cfbd03bad3e500ccdac814d",
-          144: "0c981bbc17720c2d206d79472a3cf4eb",
-          235: "4438a0e15a6cca23cbec4308c6c80180",
+          72: "7090721d283ee4783519460d319e6d52",
+          105: "c70ff2c626b4af1efcfc3bc96602bdb5",
+          139: "390fdb833d34149e7dd766dc2632d295",
+          144: "95b6889f2cb1fde7da62d3a2221e675c",
+          235: "52814f6f02f2a5eb034c6f6ecd709e9a",
           252: "ffac20c4e7454c998a083e84279c1293",
-          283: "154c36343a29801482e2baae996964b2",
-          285: "0a48aefa84ba6d571cab35c15e0dfcba",
-          369: "7f7d897ff717cc3a8546e63075a03b8f",
-          380: "b64fb8102d4777ee8ebd68275b1f753f",
+          283: "735154889afe7846257c05e900d58a5e",
+          285: "65dcdeea2c886ffef07a49aa80f62cce",
+          369: "a58e368c03edd5457b26956d357dbfdc",
+          380: "cafd4f90ff049d0286eb4130f097e629",
           403: "39b96c90de9392d6ace91be969262eac",
-          429: "cae74dfb3b1a73738f3625e031989120",
-          445: "32a7d79624dc76fbe737ef2905bd034b",
-          646: "4841278aa0eb2682625e0438fd080a90",
-          736: "76f8b21160a4866327b6d30de9a3d1bb",
+          429: "7292b5eb4cec5913567accf504a9bb7f",
+          445: "01dbc7b8aa6829f0131c5d3dd1fd9c4b",
+          646: "9b40277235798ca513cd94eb56c11f76",
+          736: "cfc7617537030622002695b97f52143e",
           756: "ad45ccd2174744fb7166ceb7a53f2041",
-          763: "4f4afaeea13a15b085bdae20ecf72ab9",
-          891: "a80b3b9e7f83dfc8fd3081ded8e6961c",
-          977: "a1693a0c77009ebb6aaad57ab1ad2b1a"
+          763: "179595cea9a09e28c863af51da2f9915",
+          891: "a252b00cbcf178f18b36d2f39528a312"
         } [e] + ".js", c.miniCssF = e => "css/22964693c61c3167369e822eef4d3510.css", c.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
@@ -170,10 +170,10 @@ _global.SENTRY_RELEASE = {
           else {
             var o, s;
             if (void 0 !== a)
-              for (var d = document.getElementsByTagName("script"), l = 0; l < d.length; l++) {
-                var f = d[l];
-                if (f.getAttribute("src") == t || f.getAttribute("data-webpack") == i + a) {
-                  o = f;
+              for (var d = document.getElementsByTagName("script"), f = 0; f < d.length; f++) {
+                var l = d[f];
+                if (l.getAttribute("src") == t || l.getAttribute("data-webpack") == i + a) {
+                  o = l;
                   break
                 }
               }
@@ -196,10 +196,10 @@ _global.SENTRY_RELEASE = {
             value: !0
           })
         }, c.nmd = e => (e.paths = [], e.children || (e.children = []), e), s = {
+          72: [5140],
           369: [207],
           736: [8407],
-          756: [2756],
-          977: [5140]
+          756: [2756]
         }, d = {
           207: ["default", "./index", 404],
           2756: ["default", "./index", 2969],
@@ -219,11 +219,11 @@ _global.SENTRY_RELEASE = {
                 },
                 o = (e, r, o, i, s, d) => {
                   try {
-                    var l = e(r, o);
-                    if (!l || !l.then) return s(l, i, d);
-                    var f = l.then((e => s(e, i)), n);
-                    if (!d) return f;
-                    t.push(a.p = f)
+                    var f = e(r, o);
+                    if (!f || !f.then) return s(f, i, d);
+                    var l = f.then((e => s(e, i)), n);
+                    if (!d) return l;
+                    t.push(a.p = l)
                   } catch (e) {
                     n(e)
                   }
@@ -267,15 +267,15 @@ _global.SENTRY_RELEASE = {
                     var n = c(e);
                     if (!n) return;
                     var o = e => e && e.init && e.init(c.S[r], a);
-                    if (n.then) return l.push(n.then(o, t));
+                    if (n.then) return f.push(n.then(o, t));
                     var i = o(n);
-                    if (i && i.then) return l.push(i.catch(t))
+                    if (i && i.then) return f.push(i.catch(t))
                   } catch (e) {
                     t(e)
                   }
                 },
-                l = [];
-              return "default" === r && (s("flat", "5.0.2", (() => c.e(445).then((() => () => c(5445))))), s("lodash", "4.17.21", (() => c.e(429).then((() => () => c(9429))))), s("re-resizable", "6.9.11", (() => Promise.all([c.e(285), c.e(403), c.e(11)]).then((() => () => c(2285))))), s("react-dom", "18.2.0", (() => Promise.all([c.e(283), c.e(403)]).then((() => () => c(5283))))), s("react-intersection-observer", "9.10.3", (() => Promise.all([c.e(403), c.e(763)]).then((() => () => c(9763))))), s("react", "18.2.0", (() => c.e(380).then((() => () => c(3380))))), s("uuid", "9.0.1", (() => c.e(646).then((() => () => c(4646))))), d(2969), d(1024), d(404), d(9466)), l.length ? e[r] = Promise.all(l).then((() => e[r] = 1)) : e[r] = 1
+                f = [];
+              return "default" === r && (s("flat", "5.0.2", (() => c.e(445).then((() => () => c(5445))))), s("lodash", "4.17.21", (() => c.e(429).then((() => () => c(9429))))), s("re-resizable", "6.9.11", (() => Promise.all([c.e(285), c.e(403), c.e(11)]).then((() => () => c(2285))))), s("react-dom", "18.2.0", (() => Promise.all([c.e(283), c.e(403)]).then((() => () => c(5283))))), s("react-intersection-observer", "9.10.3", (() => Promise.all([c.e(403), c.e(763)]).then((() => () => c(9763))))), s("react", "18.2.0", (() => c.e(380).then((() => () => c(3380))))), s("uuid", "9.0.1", (() => c.e(646).then((() => () => c(4646))))), d(2969), d(1024), d(404), d(9466)), f.length ? e[r] = Promise.all(f).then((() => e[r] = 1)) : e[r] = 1
             }
           }
         })(), (() => {
@@ -303,23 +303,23 @@ _global.SENTRY_RELEASE = {
                   o = n < 0;
                 o && (n = -n - 1);
                 for (var i = 0, s = 1, d = !0;; s++, i++) {
-                  var l, f, c = s < r.length ? (typeof r[s])[0] : "";
-                  if (i >= a.length || "o" == (f = (typeof(l = a[i]))[0])) return !d || ("u" == c ? s > n && !o : "" == c != o);
-                  if ("u" == f) {
+                  var f, l, c = s < r.length ? (typeof r[s])[0] : "";
+                  if (i >= a.length || "o" == (l = (typeof(f = a[i]))[0])) return !d || ("u" == c ? s > n && !o : "" == c != o);
+                  if ("u" == l) {
                     if (!d || "u" != c) return !1
                   } else if (d)
-                    if (c == f)
+                    if (c == l)
                       if (s <= n) {
-                        if (l != r[s]) return !1
+                        if (f != r[s]) return !1
                       } else {
-                        if (o ? l > r[s] : l < r[s]) return !1;
-                        l != r[s] && (d = !1)
+                        if (o ? f > r[s] : f < r[s]) return !1;
+                        f != r[s] && (d = !1)
                       }
                   else if ("s" != c && "n" != c) {
                     if (o || s <= n) return !1;
                     d = !1, s--
                   } else {
-                    if (s <= n || f < c != o) return !1;
+                    if (s <= n || l < c != o) return !1;
                     d = !1
                   } else "s" != c && "n" != c && (d = !1, s--)
                 }
