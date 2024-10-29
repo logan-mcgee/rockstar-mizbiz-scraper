@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "95dd04ea-1d9c-490a-90d0-fe61d9b3f8c3", e._sentryDebugIdIdentifier = "sentry-dbid-95dd04ea-1d9c-490a-90d0-fe61d9b3f8c3")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "049f63ef-15e2-41b1-9df0-450609eebfd2", e._sentryDebugIdIdentifier = "sentry-dbid-049f63ef-15e2-41b1-9df0-450609eebfd2")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -18,7 +18,7 @@ _global.SENTRY_RELEASE = {
   return {
     execute: function() {
       e((() => {
-        var e, r, a, o, n, d, l, f, i, s, c, u, p, b, h = {
+        var e, r, a, o, n, d, f, l, i, s, c, u, b, p, h = {
             6539: (e, t, r) => {
               (0, r(3403).w)(1)
             },
@@ -105,30 +105,30 @@ _global.SENTRY_RELEASE = {
           })
         }, g.f = {}, g.e = e => Promise.all(Object.keys(g.f).reduce(((t, r) => (g.f[r](e, t), t)), [])), g.u = e => "js/" + {
           4: "e72207df602fcbc6c1f960e45d70e846",
-          63: "dc091b41d1971fd5bd2e62a9b9852efc",
-          66: "7e474797898ca0980196708ab6b6e153",
-          124: "dbe5eb25b219bcaf8cff88b79896535d",
-          143: "a9afd4331ee846049bafd50813c6b8fe",
-          149: "b04ab919af9fa6b2e520fcf773de1263",
-          189: "c949ddb5da1daedfa7a16bd03d69d7c2",
-          235: "169150fe3d6f3ba9569ff3785a2b28ad",
-          344: "c3a95e00d8152f415fa08c9c77492241",
-          380: "b7311d44fd7fa7b5b5df5aa39dd581c4",
-          396: "849cbcfaad31e343ff97ee15c39c6568",
-          398: "17ff2ff71baa02930c07542c2452ce64",
+          63: "81301ee6355912e81e692959c139d9a7",
+          66: "80ade56e6ca2682b21e6a68b3a873390",
+          124: "0df0617f875a37d13461710c0048a720",
+          143: "074a1d0582ddeb67bf09db2a6b008d96",
+          149: "2263da775a97eeb1ebf54c3ece75e81b",
+          189: "abcc1d55dcb52506097e744ea7c89a56",
+          235: "bc3fa00c9c6753b35c8abab512d40051",
+          344: "69b02102ae6d36c7a085d9047d439b00",
+          380: "09f9ec3ee26e9a7cb5f77637e52f043a",
+          396: "fbbab881f52657d11307e3ef586c37be",
+          398: "0b6a8c4e6dc70880699402ab73449d36",
           403: "312be5725d20393940e5ec42c154bc62",
-          429: "4e417c1ee0bcca77893566ea20960f37",
+          429: "bf5ce1ca6ea9805f658b866a4b9c8af8",
           493: "a207c78af1164e83038c21316c883ce7",
-          524: "6e9270a71baaca78ceda3b4510ae144e",
-          533: "0dc29e8ee85a5136461a3a698d1db8d9",
-          570: "d96b96a67f90bc42e9385fcbd6c842fc",
-          592: "3ffd5bfb4e033c3a7cae4cc0abb72f4d",
-          613: "6bd52279e5ca88f2231c7770822f95e6",
-          689: "c3b85eac6e23ff623f7d6a9e381135fc",
-          749: "6d213eabb5c9c56cbb840e522711f788",
-          949: "61d66e77a1c4d5ad7797866c4191aae4",
-          984: "0357cc3422b35c53203cab66b04e7d8a",
-          994: "47bafdc2059c809dce568c3db79cfd57"
+          524: "1bf4f3ce19f081bc9d18a47971fe05a4",
+          533: "b7475b79ae2012c536828b3c10d92859",
+          570: "5cbb0df1879f14c58ef620eff4a36ab1",
+          592: "1d208ccd9627cd665161739813673806",
+          613: "7377f8940f3019e3d07525d27ec54567",
+          689: "d93557e01e6c9babd7ce619d4d18aebc",
+          749: "5a86e95e3b343bd27fe79683e738d456",
+          949: "11f4aa6dc8844f3f4c5af2b1bbe78544",
+          984: "cbbe75bbc0c7fd731ca66797130168ad",
+          994: "65c8955695b112ff94571e6afaec3af9"
         } [e] + ".js", g.miniCssF = e => "css/2d9bae9261e12d96331790adb279d106.css", g.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
@@ -139,16 +139,16 @@ _global.SENTRY_RELEASE = {
         }(), g.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t), a = {}, o = "@rockstargames/modules-core-header:", g.l = (e, t, r, n) => {
           if (a[e]) a[e].push(t);
           else {
-            var d, l;
+            var d, f;
             if (void 0 !== r)
-              for (var f = document.getElementsByTagName("script"), i = 0; i < f.length; i++) {
-                var s = f[i];
+              for (var l = document.getElementsByTagName("script"), i = 0; i < l.length; i++) {
+                var s = l[i];
                 if (s.getAttribute("src") == e || s.getAttribute("data-webpack") == o + r) {
                   d = s;
                   break
                 }
               }
-            d || (l = !0, (d = document.createElement("script")).charset = "utf-8", d.timeout = 120, g.nc && d.setAttribute("nonce", g.nc), d.setAttribute("data-webpack", o + r), d.src = e), a[e] = [t];
+            d || (f = !0, (d = document.createElement("script")).charset = "utf-8", d.timeout = 120, g.nc && d.setAttribute("nonce", g.nc), d.setAttribute("data-webpack", o + r), d.src = e), a[e] = [t];
             var c = (t, r) => {
                 d.onerror = d.onload = null, clearTimeout(u);
                 var o = a[e];
@@ -158,7 +158,7 @@ _global.SENTRY_RELEASE = {
                 type: "timeout",
                 target: d
               }), 12e4);
-            d.onerror = c.bind(null, d.onerror), d.onload = c.bind(null, d.onload), l && document.head.appendChild(d)
+            d.onerror = c.bind(null, d.onerror), d.onload = c.bind(null, d.onload), f && document.head.appendChild(d)
           }
         }, g.r = e => {
           "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
@@ -178,17 +178,17 @@ _global.SENTRY_RELEASE = {
               g.o(g.S, r) || (g.S[r] = {});
               var n = g.S[r],
                 d = "@rockstargames/modules-core-header",
-                l = (e, t, r, a) => {
+                f = (e, t, r, a) => {
                   var o = n[e] = n[e] || {},
-                    l = o[t];
-                  (!l || !l.loaded && (!a != !l.eager ? a : d > l.from)) && (o[t] = {
+                    f = o[t];
+                  (!f || !f.loaded && (!a != !f.eager ? a : d > f.from)) && (o[t] = {
                     get: r,
                     from: d,
                     eager: !!a
                   })
                 },
-                f = [];
-              return "default" === r && (l("@popperjs/core", "2.11.8", (() => g.e(124).then((() => () => g(2124))))), l("@rockstargames/locale-tools", "1.0.0", (() => Promise.all([g.e(66), g.e(403), g.e(143)]).then((() => () => g(4143))))), l("framer-motion", "7.10.3", (() => Promise.all([g.e(689), g.e(749), g.e(403)]).then((() => () => g(5749))))), l("gsap", "0.0.0", (() => g.e(149).then((() => () => g(3149))))), l("lodash", "4.17.21", (() => g.e(429).then((() => () => g(9429))))), l("react-dom", "18.2.0", (() => Promise.all([g.e(533), g.e(403)]).then((() => () => g(7533))))), l("react-popper", "2.3.0", (() => Promise.all([g.e(403), g.e(493), g.e(4), g.e(570)]).then((() => () => g(6570))))), l("react-remove-scroll", "2.5.7", (() => Promise.all([g.e(403), g.e(613)]).then((() => () => g(8613))))), l("react-router-dom", "6.17.0", (() => Promise.all([g.e(398), g.e(403)]).then((() => () => g(3398))))), l("react", "18.2.0", (() => g.e(380).then((() => () => g(3380))))), l("spatial-navigation-polyfill", "1.3.1", (() => g.e(984).then((() => () => g(8984)))))), e[r] = f.length ? Promise.all(f).then((() => e[r] = 1)) : 1
+                l = [];
+              return "default" === r && (f("@popperjs/core", "2.11.8", (() => g.e(124).then((() => () => g(2124))))), f("@rockstargames/locale-tools", "1.0.0", (() => Promise.all([g.e(66), g.e(403), g.e(143)]).then((() => () => g(4143))))), f("framer-motion", "7.10.3", (() => Promise.all([g.e(689), g.e(749), g.e(403)]).then((() => () => g(5749))))), f("gsap", "0.0.0", (() => g.e(149).then((() => () => g(3149))))), f("lodash", "4.17.21", (() => g.e(429).then((() => () => g(9429))))), f("react-dom", "18.2.0", (() => Promise.all([g.e(533), g.e(403)]).then((() => () => g(7533))))), f("react-popper", "2.3.0", (() => Promise.all([g.e(403), g.e(493), g.e(4), g.e(570)]).then((() => () => g(6570))))), f("react-remove-scroll", "2.5.7", (() => Promise.all([g.e(403), g.e(613)]).then((() => () => g(8613))))), f("react-router-dom", "6.17.0", (() => Promise.all([g.e(398), g.e(403)]).then((() => () => g(3398))))), f("react", "18.2.0", (() => g.e(380).then((() => () => g(3380))))), f("spatial-navigation-polyfill", "1.3.1", (() => g.e(984).then((() => () => g(8984)))))), e[r] = l.length ? Promise.all(l).then((() => e[r] = 1)) : 1
             }
           }
         })(), (() => {
@@ -215,54 +215,54 @@ _global.SENTRY_RELEASE = {
               o = (typeof a)[0];
             if (r >= t.length) return "u" == o;
             var d = t[r],
-              l = (typeof d)[0];
-            if (o != l) return "o" == o && "n" == l || "s" == l || "u" == o;
+              f = (typeof d)[0];
+            if (o != f) return "o" == o && "n" == f || "s" == f || "u" == o;
             if ("o" != o && "u" != o && a != d) return a < d;
             r++
           }
-        }, l = (e, t) => {
+        }, f = (e, t) => {
           if (0 in e) {
             t = n(t);
             var r = e[0],
               a = r < 0;
             a && (r = -r - 1);
-            for (var o = 0, d = 1, f = !0;; d++, o++) {
+            for (var o = 0, d = 1, l = !0;; d++, o++) {
               var i, s, c = d < e.length ? (typeof e[d])[0] : "";
-              if (o >= t.length || "o" == (s = (typeof(i = t[o]))[0])) return !f || ("u" == c ? d > r && !a : "" == c != a);
+              if (o >= t.length || "o" == (s = (typeof(i = t[o]))[0])) return !l || ("u" == c ? d > r && !a : "" == c != a);
               if ("u" == s) {
-                if (!f || "u" != c) return !1
-              } else if (f)
+                if (!l || "u" != c) return !1
+              } else if (l)
                 if (c == s)
                   if (d <= r) {
                     if (i != e[d]) return !1
                   } else {
                     if (a ? i > e[d] : i < e[d]) return !1;
-                    i != e[d] && (f = !1)
+                    i != e[d] && (l = !1)
                   }
               else if ("s" != c && "n" != c) {
                 if (a || d <= r) return !1;
-                f = !1, d--
+                l = !1, d--
               } else {
                 if (d <= r || s < c != a) return !1;
-                f = !1
-              } else "s" != c && "n" != c && (f = !1, d--)
+                l = !1
+              } else "s" != c && "n" != c && (l = !1, d--)
             }
           }
           var u = [],
-            p = u.pop.bind(u);
+            b = u.pop.bind(u);
           for (o = 1; o < e.length; o++) {
-            var b = e[o];
-            u.push(1 == b ? p() | p() : 2 == b ? p() & p() : b ? l(b, t) : !p())
+            var p = e[o];
+            u.push(1 == p ? b() | b() : 2 == p ? b() & b() : p ? f(p, t) : !b())
           }
-          return !!p()
-        }, f = (e, t, r) => {
+          return !!b()
+        }, l = (e, t, r) => {
           var a = e[t];
-          return (t = Object.keys(a).reduce(((e, t) => !l(r, t) || e && !d(e, t) ? e : t), 0)) && a[t]
+          return (t = Object.keys(a).reduce(((e, t) => !f(r, t) || e && !d(e, t) ? e : t), 0)) && a[t]
         }, i = e => (e.loaded = 1, e.get()), s = (e => function(t, r, a, o) {
           var n = g.I(t);
           return n && n.then ? n.then(e.bind(e, t, g.S[t], r, a, o)) : e(0, g.S[t], r, a, o)
         })(((e, t, r, a, o) => {
-          var n = t && g.o(t, r) && f(t, r, a);
+          var n = t && g.o(t, r) && l(t, r, a);
           return n ? i(n) : o()
         })), c = {}, u = {
           1403: () => s("default", "react", [1, 18, 2, 0], (() => g.e(380).then((() => () => g(3380))))),
@@ -276,22 +276,22 @@ _global.SENTRY_RELEASE = {
           9779: () => s("default", "react-router-dom", [1, 6, 11, 2], (() => g.e(398).then((() => () => g(3398))))),
           9493: () => s("default", "react-dom", [1, 18, 2, 0], (() => g.e(533).then((() => () => g(7533))))),
           5004: () => s("default", "@popperjs/core", [1, 2, 11, 8], (() => g.e(124).then((() => () => g(2124)))))
-        }, p = {
+        }, b = {
           4: [5004],
           235: [3181, 4252, 6040, 6649, 7460, 8588, 9779],
           396: [6717],
           403: [1403],
           493: [9493]
-        }, b = {}, g.f.consumes = (e, t) => {
-          g.o(p, e) && p[e].forEach((e => {
+        }, p = {}, g.f.consumes = (e, t) => {
+          g.o(b, e) && b[e].forEach((e => {
             if (g.o(c, e)) return t.push(c[e]);
-            if (!b[e]) {
+            if (!p[e]) {
               var r = t => {
                 c[e] = 0, g.m[e] = r => {
                   delete g.c[e], r.exports = t()
                 }
               };
-              b[e] = !0;
+              p[e] = !0;
               var a = t => {
                 delete c[e], g.m[e] = r => {
                   throw delete g.c[e], t
@@ -333,9 +333,9 @@ _global.SENTRY_RELEASE = {
                     if (n.onerror = n.onload = null, "load" === r.type) a();
                     else {
                       var d = r && ("load" === r.type ? "missing" : r.type),
-                        l = r && r.target && r.target.href || t,
-                        f = new Error("Loading CSS chunk " + e + " failed.\n(" + l + ")");
-                      f.code = "CSS_CHUNK_LOAD_FAILED", f.type = d, f.request = l, n.parentNode && n.parentNode.removeChild(n), o(f)
+                        f = r && r.target && r.target.href || t,
+                        l = new Error("Loading CSS chunk " + e + " failed.\n(" + f + ")");
+                      l.code = "CSS_CHUNK_LOAD_FAILED", l.type = d, l.request = f, n.parentNode && n.parentNode.removeChild(n), o(l)
                     }
                   }, n.href = t, document.head.appendChild(n)
                 })(e, o, 0, t, r)
@@ -372,13 +372,13 @@ _global.SENTRY_RELEASE = {
           var t = (t, r) => {
               var a, o, n = r[0],
                 d = r[1],
-                l = r[2],
-                f = 0;
+                f = r[2],
+                l = 0;
               if (n.some((t => 0 !== e[t]))) {
                 for (a in d) g.o(d, a) && (g.m[a] = d[a]);
-                l && l(g)
+                f && f(g)
               }
-              for (t && t(r); f < n.length; f++) o = n[f], g.o(e, o) && e[o] && e[o][0](), e[o] = 0
+              for (t && t(r); l < n.length; l++) o = n[l], g.o(e, o) && e[o] && e[o][0](), e[o] = 0
             },
             r = self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || [];
           r.forEach(t.bind(null, 0)), r.push = t.bind(null, r.push.bind(r))

@@ -21,31 +21,31 @@ _global.SENTRY_RELEASE = {
         default: () => s
       });
       var o = n(9807),
-        t = n(4277),
-        d = n(7905),
-        f = n(6632);
+        d = n(4277),
+        f = n(7905),
+        t = n(6632);
       const {
         graphEnv: l,
         pingBearer: r
-      } = (0, t.S0)(), s = e => {
+      } = (0, d.S0)(), s = e => {
         let {
           navData: a,
           location: n,
-          onNavigate: t,
+          onNavigate: d,
           searchConfig: s,
           routeOptions: i
         } = e;
-        const u = (0, o.my)(d.default, {
+        const b = (0, o.my)(f.default, {
           env: l,
           token: (0, o.UT)(null),
           tokenPing: (0, o.UT)(r),
           tokenPingExpires: (0, o.UT)(null),
           typePolicies: {}
         });
-        return (0, f.jsx)(u, {
+        return (0, t.jsx)(b, {
           navData: a,
           location: n,
-          onNavigate: t,
+          onNavigate: d,
           searchConfig: s,
           routeOptions: i
         })

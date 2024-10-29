@@ -110,8 +110,8 @@ _global.SENTRY_RELEASE = {
             v = e.shards,
             g = e.sideCar,
             m = e.noIsolation,
-            y = e.inert,
-            b = e.allowPinchZoom,
+            b = e.inert,
+            y = e.allowPinchZoom,
             w = e.as,
             E = void 0 === w ? "div" : w,
             C = e.gapMode,
@@ -147,9 +147,9 @@ _global.SENTRY_RELEASE = {
             removeScrollBar: p,
             shards: v,
             noIsolation: m,
-            inert: y,
+            inert: b,
             setCallbacks: i,
-            allowPinchZoom: !!b,
+            allowPinchZoom: !!y,
             lockRef: t,
             gapMode: C
           }), f ? o.cloneElement(o.Children.only(d), (0, r.Cl)((0, r.Cl)({}, M), {
@@ -229,7 +229,7 @@ _global.SENTRY_RELEASE = {
             l = e.gap;
           return void 0 === t && (t = "margin"), "\n  .".concat("with-scroll-bars-hidden", " {\n   overflow: hidden ").concat(r, ";\n   padding-right: ").concat(l, "px ").concat(r, ";\n  }\n  body {\n    overflow: hidden ").concat(r, ";\n    overscroll-behavior: contain;\n    ").concat([n && "position: relative ".concat(r, ";"), "margin" === t && "\n    padding-left: ".concat(o, "px;\n    padding-top: ").concat(i, "px;\n    padding-right: ").concat(u, "px;\n    margin-left:0;\n    margin-top:0;\n    margin-right: ").concat(l, "px ").concat(r, ";\n    "), "padding" === t && "padding-right: ".concat(l, "px ").concat(r, ";")].filter(Boolean).join(""), "\n  }\n  \n  .").concat(a, " {\n    right: ").concat(l, "px ").concat(r, ";\n  }\n  \n  .").concat(c, " {\n    margin-right: ").concat(l, "px ").concat(r, ";\n  }\n  \n  .").concat(a, " .").concat(a, " {\n    right: 0 ").concat(r, ";\n  }\n  \n  .").concat(c, " .").concat(c, " {\n    margin-right: 0 ").concat(r, ";\n  }\n  \n  body {\n    ").concat("--removed-body-scroll-bar-size", ": ").concat(l, "px;\n  }\n")
         },
-        y = function(e) {
+        b = function(e) {
           var n = e.noRelative,
             t = e.noImportant,
             r = e.gapMode,
@@ -258,18 +258,18 @@ _global.SENTRY_RELEASE = {
             styles: m(c, !n, a, t ? "" : "!important")
           })
         },
-        b = !1;
+        y = !1;
       if ("undefined" != typeof window) try {
         var w = Object.defineProperty({}, "passive", {
           get: function() {
-            return b = !0, !0
+            return y = !0, !0
           }
         });
         window.addEventListener("test", w, w), window.removeEventListener("test", w, w)
       } catch (e) {
-        b = !1
+        y = !1
       }
-      var E = !!b && {
+      var E = !!y && {
           passive: !1
         },
         C = function(e, n) {
@@ -435,7 +435,7 @@ _global.SENTRY_RELEASE = {
           m = e.inert;
         return o.createElement(o.Fragment, null, m ? o.createElement(i, {
           styles: T(c)
-        }) : null, g ? o.createElement(y, {
+        }) : null, g ? o.createElement(b, {
           gapMode: e.gapMode
         }) : null)
       }, u.useMedium(j), d);

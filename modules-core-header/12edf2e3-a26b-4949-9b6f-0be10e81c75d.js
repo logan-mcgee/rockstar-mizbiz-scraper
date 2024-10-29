@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "87e3562f-463d-493d-a68a-d9894cc37d04", e._sentryDebugIdIdentifier = "sentry-dbid-87e3562f-463d-493d-a68a-d9894cc37d04")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "12edf2e3-a26b-4949-9b6f-0be10e81c75d", e._sentryDebugIdIdentifier = "sentry-dbid-12edf2e3-a26b-4949-9b6f-0be10e81c75d")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -4184,6 +4184,10 @@ _global.SENTRY_RELEASE = {
             id: "games_menu_rdr_online",
             defaultMessage: "Red Dead Online"
           },
+          games_menu_rdr: {
+            id: "games_menu_rdr",
+            defaultMessage: "Red Dead Redemption"
+          },
           search_action: {
             id: "search_action",
             defaultMessage: "Search"
@@ -5133,15 +5137,6 @@ _global.SENTRY_RELEASE = {
               },
               dataTestId: "gtao"
             }, {
-              titleSlug: "GTATrilogy",
-              text: e.formatMessage(cn.games_menu_gta_trilogy),
-              gaText: "Grand Theft Auto: The Trilogy",
-              location: {
-                domain: a,
-                path: "/GTATrilogy"
-              },
-              dataTestId: "gtaTrilogy"
-            }, {
               titleSlug: "reddeadredemption2",
               text: e.formatMessage(cn.games_menu_rdr_2),
               gaText: "Red Dead Redemption 2",
@@ -5151,6 +5146,15 @@ _global.SENTRY_RELEASE = {
               },
               dataTestId: "rdr2"
             }, {
+              titleSlug: "reddeadredemption",
+              text: e.formatMessage(cn.games_menu_rdr),
+              gaText: "Red Dead Redemption",
+              location: {
+                domain: a,
+                path: "/reddeadredemption"
+              },
+              dataTestId: "rdr"
+            }, {
               titleSlug: "reddeadonline",
               text: e.formatMessage(cn.games_menu_rdr_online),
               gaText: "Red Dead Online",
@@ -5159,6 +5163,15 @@ _global.SENTRY_RELEASE = {
                 path: "/reddeadonline"
               },
               dataTestId: "rdo"
+            }, {
+              titleSlug: "GTATrilogy",
+              text: e.formatMessage(cn.games_menu_gta_trilogy),
+              gaText: "Grand Theft Auto: The Trilogy",
+              location: {
+                domain: a,
+                path: "/GTATrilogy"
+              },
+              dataTestId: "gtaTrilogy"
             }]
           }
         },

@@ -16,36 +16,36 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [63], {
-    1190: (e, d, a) => {
-      var n = a(9493);
-      d.H = n.createRoot, n.hydrateRoot
+    1190: (e, d, n) => {
+      var a = n(9493);
+      d.H = a.createRoot, a.hydrateRoot
     },
-    1063: (e, d, a) => {
-      a.r(d);
-      var n = a(9807),
-        o = a(4277),
-        t = a(1190),
-        l = a(7905),
-        r = a(6632);
+    1063: (e, d, n) => {
+      n.r(d);
+      var a = n(9807),
+        o = n(4277),
+        t = n(1190),
+        f = n(7905),
+        l = n(6632);
       const {
-        graphEnv: f,
+        graphEnv: r,
         pingBearer: s
       } = (0, o.S0)();
 
-      function i() {
+      function c() {
         const e = document.createElement("div");
         e.id = "global-nav-root", document.body.prepend(e);
         const d = (0, t.H)(e),
-          a = (0, n.my)(l.default, {
-            env: f,
-            token: (0, n.UT)(null),
-            tokenPing: (0, n.UT)(s),
-            tokenPingExpires: (0, n.UT)(null),
+          n = (0, a.my)(f.default, {
+            env: r,
+            token: (0, a.UT)(null),
+            tokenPing: (0, a.UT)(s),
+            tokenPingExpires: (0, a.UT)(null),
             typePolicies: {}
           });
-        d.render((0, r.jsx)(a, {}))
+        d.render((0, l.jsx)(n, {}))
       }
-      "loading" === document.readyState ? document.addEventListener("DOMContentLoaded", i) : i()
+      "loading" === document.readyState ? document.addEventListener("DOMContentLoaded", c) : c()
     }
   }
 ]);
