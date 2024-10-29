@@ -25,22 +25,22 @@ _global.SENTRY_RELEASE = {
         function a() {
           for (var e = "", t = 0; t < arguments.length; t++) {
             var n = arguments[t];
-            n && (e = f(e, o(n)))
+            n && (e = o(e, f(n)))
           }
           return e
         }
 
-        function o(e) {
+        function f(e) {
           if ("string" == typeof e || "number" == typeof e) return e;
           if ("object" != typeof e) return "";
           if (Array.isArray(e)) return a.apply(null, e);
           if (e.toString !== Object.prototype.toString && !e.toString.toString().includes("[native code]")) return e.toString();
           var t = "";
-          for (var n in e) r.call(e, n) && e[n] && (t = f(t, n));
+          for (var n in e) r.call(e, n) && e[n] && (t = o(t, n));
           return t
         }
 
-        function f(e, t) {
+        function o(e, t) {
           return t ? e ? e + " " + t : e + t : e
         }
         e.exports ? (a.default = a, e.exports = a) : void 0 === (n = function() {

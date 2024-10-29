@@ -16,28 +16,28 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_tina = self.webpackChunk_rockstargames_tina || []).push([
   [891], {
-    4891: (e, a, n) => {
-      n.r(a), n.d(a, {
-        patch: () => o,
-        pick: () => f
+    4891: (e, a, d) => {
+      d.r(a), d.d(a, {
+        patch: () => t,
+        pick: () => o
       });
-      var d = n(4252),
-        t = n.n(d);
-      const o = (e, a) => {
-          const n = t().cloneDeepWith(n, ((e, n, d) => {
-            t().keys(a).map((o => {
-              "key" === n && e === o && t().keys(a[o]).map((e => {
-                d[e] = a[o][e]
+      var n = d(4252),
+        f = d.n(n);
+      const t = (e, a) => {
+          const d = f().cloneDeepWith(d, ((e, d, n) => {
+            f().keys(a).map((t => {
+              "key" === d && e === t && f().keys(a[t]).map((e => {
+                n[e] = a[t][e]
               }))
             }))
           }));
-          return n
+          return d
         },
-        f = (e, a) => {
-          const n = {};
-          return t().cloneDeepWith(e, ((e, d, t) => {
-            d === a && e && (n[t.key] = e)
-          })), n
+        o = (e, a) => {
+          const d = {};
+          return f().cloneDeepWith(e, ((e, n, f) => {
+            n === a && e && (d[f.key] = e)
+          })), d
         }
     }
   }

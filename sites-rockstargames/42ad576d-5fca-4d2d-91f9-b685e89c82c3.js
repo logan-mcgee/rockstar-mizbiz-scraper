@@ -80,8 +80,8 @@ _global.SENTRY_RELEASE = {
           template: o = null,
           theme: i = null,
           reversedOnMobile: g = !1,
-          className: b = "",
-          id: f = null
+          className: f = "",
+          id: b = null
         } = e;
         const p = (0, l.useImageParser)(r ?? {}),
           k = {
@@ -100,8 +100,8 @@ _global.SENTRY_RELEASE = {
           }
         }
         return (0, d.jsx)("div", {
-          id: f,
-          className: (0, n.classList)("rockstargames-sites-rockstargamesf42b4606ed4a5b16b7647ad7b7eb229d", g ? "rockstargames-sites-rockstargamesb00444166ce6346d7ca364a75a335ecc" : "", b),
+          id: b,
+          className: (0, n.classList)("rockstargames-sites-rockstargamesf42b4606ed4a5b16b7647ad7b7eb229d", g ? "rockstargames-sites-rockstargamesb00444166ce6346d7ca364a75a335ecc" : "", f),
           "data-game": "community" === o ? null : t,
           style: (0, m.safeStyles)(k),
           "data-context": s,
@@ -110,8 +110,8 @@ _global.SENTRY_RELEASE = {
           children: a
         })
       };
-      var b = s(35856);
-      const f = "rockstargames-sites-rockstargameseb64520e04e486931cd65dc5b3fa61e8",
+      var f = s(35856);
+      const b = "rockstargames-sites-rockstargameseb64520e04e486931cd65dc5b3fa61e8",
         p = e => {
           let {
             alt: a,
@@ -125,7 +125,7 @@ _global.SENTRY_RELEASE = {
           const {
             width: l,
             height: g
-          } = i, b = {
+          } = i, f = {
             "--aspect-ratio": Number.isNaN(l / g) ? "" : l / g,
             ...c
           };
@@ -133,7 +133,7 @@ _global.SENTRY_RELEASE = {
             src: n,
             className: t ?? "",
             alt: a,
-            style: b
+            style: f
           })
         },
         k = e => {
@@ -153,7 +153,7 @@ _global.SENTRY_RELEASE = {
             mobile: s(14572),
             desktop: s(8820)
           });
-          let g = r.frame ? `${r.frame} ${f}` : f;
+          let g = r.frame ? `${r.frame} ${b}` : b;
           return (0, d.jsx)("div", {
             className: g,
             style: t,
@@ -228,7 +228,7 @@ _global.SENTRY_RELEASE = {
             }), (0, d.jsx)("p", {
               className: u.disclaimer,
               children: "チャレンジは2023年9月7日午後6時(日本時間)に終了します。日本にお住いのプレイヤーに限ります。 Social Clubアカウント1つにつき最大でGTAマネー250万ドルが贈られます。コミュニティ報酬はチャレンジ参加者限定です。 コミュニティの目標に到達した場合、報酬はゲーム内で受け取る必要があります。コンソールでオンラインをプレイするには別に有料のサブスクリプションが必要です。 規約が適用されます。可能な限り、イベント終了後72時間以内にプレイヤーのアカウントに贈られます。"
-            }), (0, d.jsx)(b.A, {
+            }), (0, d.jsx)(f.A, {
               condensed: !0,
               titleSlug: "gta-online"
             })]

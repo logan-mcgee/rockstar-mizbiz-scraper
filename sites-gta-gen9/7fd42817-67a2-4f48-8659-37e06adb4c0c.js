@@ -22,19 +22,19 @@ _global.SENTRY_RELEASE = {
       });
       var t = s(26371),
         l = s(8999),
-        i = s(21450);
-      const r = {
+        d = s(21450);
+      const i = {
         padding: "rockstargames-sites-gta-gen9e1811c65983d2df02484c7bd49620f6d",
         carouselWrapper: "rockstargames-sites-gta-gen9daf8d6c749fa379c43a098df8a842f62",
         carouselTitle: "rockstargames-sites-gta-gen9ffab2486abb58ef9090c19d6d5bdd44c"
       };
-      var d = s(46632);
+      var r = s(46632);
       const n = e => {
           let {
             to: a,
             children: s
           } = e;
-          return a ? (0, d.jsx)("a", {
+          return a ? (0, r.jsx)("a", {
             href: a,
             target: "_blank",
             children: s
@@ -48,14 +48,14 @@ _global.SENTRY_RELEASE = {
             className: o = "",
             id: g = null
           } = e;
-          return a?.length ? (0, d.jsxs)("div", {
+          return a?.length ? (0, r.jsxs)("div", {
             id: g,
-            children: [(0, d.jsx)(i.A, {
+            children: [(0, r.jsx)(d.A, {
               style: c,
-              className: [o, r.carouselWrapper].join(" "),
-              children: a.map((e => (0, d.jsxs)("div", {
+              className: [o, i.carouselWrapper].join(" "),
+              children: a.map((e => (0, r.jsxs)("div", {
                 id: e?.id ?? null,
-                children: [(0, d.jsx)(l.A, {
+                children: [(0, r.jsx)(l.A, {
                   image: e?.image,
                   badge: e?.badge ?? e?.image?.badge,
                   badgeType: "badge3",
@@ -64,24 +64,24 @@ _global.SENTRY_RELEASE = {
                   type: e?.type,
                   ariaLabel: e?.image?.ariaLabel ?? e.description,
                   style: e?.style,
-                  className: [r.img, e?.className].join(" ")
-                }), e.title && (0, d.jsx)(n, {
+                  className: [i.img, e?.className].join(" ")
+                }), e.title && (0, r.jsx)(n, {
                   to: e?.to,
-                  children: (0, d.jsx)("h4", {
-                    className: r.carouselTitle,
+                  children: (0, r.jsx)("h4", {
+                    className: i.carouselTitle,
                     children: e.title
                   })
-                }), e.description && (0, d.jsx)("span", {
-                  className: r.description,
+                }), e.description && (0, r.jsx)("span", {
+                  className: i.description,
                   dangerouslySetInnerHTML: {
                     __html: e.description
                   }
                 })]
               }, e?.key ?? e?.title)))
-            }), s?.title || s?.description ? (0, d.jsx)("div", {
-              className: r.padding,
+            }), s?.title || s?.description ? (0, r.jsx)("div", {
+              className: i.padding,
               style: s?.style ?? {},
-              children: (0, d.jsx)(t.A, {
+              children: (0, r.jsx)(t.A, {
                 item: s
               })
             }) : ""]
@@ -89,15 +89,15 @@ _global.SENTRY_RELEASE = {
         };
       var o = s(14522),
         g = s(31879),
-        m = s.n(g),
-        f = s(74401);
-      const b = e => {
+        f = s.n(g),
+        b = s(74401);
+      const m = e => {
           let {
             impressionTracking: a,
             gtm: s = {},
             children: t
           } = e;
-          return a?.shouldTrack ? (0, d.jsx)(o.H, {
+          return a?.shouldTrack ? (0, r.jsx)(o.H, {
             threshold: a?.threshold,
             gtm: s,
             children: t
@@ -108,7 +108,7 @@ _global.SENTRY_RELEASE = {
             to: a,
             children: s
           } = e;
-          return a ? (0, d.jsx)("a", {
+          return a ? (0, r.jsx)("a", {
             href: a,
             target: "_blank",
             rel: "noreferrer",
@@ -119,11 +119,11 @@ _global.SENTRY_RELEASE = {
           let {
             item: a
           } = e;
-          return a?.videoId ? (0, d.jsx)(m(), {
+          return a?.videoId ? (0, r.jsx)(f(), {
             context: "site",
             autoplay: !1,
             id: a.videoId
-          }) : (0, d.jsx)(l.A, {
+          }) : (0, r.jsx)(l.A, {
             image: a?.image,
             badge: a?.badge ?? a?.image?.badge,
             badgeType: "badge3",
@@ -140,24 +140,24 @@ _global.SENTRY_RELEASE = {
             items: a,
             style: s = {},
             className: l = "",
-            id: i = null
+            id: d = null
           } = e;
-          return (0, d.jsx)("div", {
+          return (0, r.jsx)("div", {
             style: s,
-            className: (0, f.classList)("rockstargames-sites-gta-gen9fbb6b44c6d90c22144e4fbed29bc540b", l),
-            id: i,
-            children: a.map((e => (0, d.jsx)(b, {
+            className: (0, b.classList)("rockstargames-sites-gta-gen9fbb6b44c6d90c22144e4fbed29bc540b", l),
+            id: d,
+            children: a.map((e => (0, r.jsx)(m, {
               impressionTracking: e?.impressionTracking,
               gtm: e?.gtm,
-              children: (0, d.jsx)(p, {
+              children: (0, r.jsx)(p, {
                 to: e?.to,
-                children: (0, d.jsxs)("div", {
-                  className: (0, f.classList)("rockstargames-sites-gta-gen9c6ef137c3cc0ba12d735aedb6db0cae3", e.className),
+                children: (0, r.jsxs)("div", {
+                  className: (0, b.classList)("rockstargames-sites-gta-gen9c6ef137c3cc0ba12d735aedb6db0cae3", e.className),
                   style: e?.style ?? {},
                   ...e?.props,
-                  children: [e?.image || e?.videoId ? (0, d.jsx)(u, {
+                  children: [e?.image || e?.videoId ? (0, r.jsx)(u, {
                     item: e
-                  }) : "", e.title || e.description ? (0, d.jsx)(t.A, {
+                  }) : "", e.title || e.description ? (0, r.jsx)(t.A, {
                     item: e,
                     className: "rockstargames-sites-gta-gen9a953f78a1d15741f11ef44c196dbb9c4"
                   }) : ""]
@@ -172,34 +172,34 @@ _global.SENTRY_RELEASE = {
             text: s,
             items: t = [],
             renderTemplate: l,
-            style: i,
-            id: r = null,
+            style: d,
+            id: i = null,
             ...n
           } = e;
           if (!t.length) return null;
           switch (l) {
             case "carousel":
-              return (0, d.jsx)(c, {
+              return (0, r.jsx)(c, {
                 text: s,
                 items: t,
-                style: i,
-                id: r,
+                style: d,
+                id: i,
                 children: a
               });
             case "carousel-panorama":
-              return (0, d.jsx)(c, {
+              return (0, r.jsx)(c, {
                 text: s,
                 items: t,
-                style: i,
+                style: d,
                 className: "panorama",
-                id: r,
+                id: i,
                 children: a
               });
             default:
-              return (0, d.jsx)(y, {
+              return (0, r.jsx)(y, {
                 items: t,
-                style: i,
-                id: r,
+                style: d,
+                id: i,
                 ...n,
                 children: a
               })

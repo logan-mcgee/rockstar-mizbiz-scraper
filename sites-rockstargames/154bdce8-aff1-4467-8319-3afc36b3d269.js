@@ -83,7 +83,7 @@ _global.SENTRY_RELEASE = {
     50553: (e, a, s) => {
       "use strict";
       s.d(a, {
-        A: () => y
+        A: () => b
       });
       var n = s(71403),
         t = s(25076),
@@ -169,7 +169,7 @@ _global.SENTRY_RELEASE = {
         u = s(45416),
         _ = s.n(u),
         p = s(46632);
-      const y = (0, i.A)((e => {
+      const b = (0, i.A)((e => {
         let {
           CookieSettingsModal: a,
           noCountrySelector: s,
@@ -177,8 +177,8 @@ _global.SENTRY_RELEASE = {
           titleKey: i,
           jsonType: u
         } = e;
-        const y = (0, f.useIntl)(),
-          b = (0, t.useNavigate)(),
+        const b = (0, f.useIntl)(),
+          y = (0, t.useNavigate)(),
           v = (0, t.useLocation)(),
           h = (0, l.useLocale)(),
           N = (0, l.useQueryParams)(),
@@ -191,7 +191,7 @@ _global.SENTRY_RELEASE = {
               r = N.get("country");
             if (e) {
               const a = `${v.pathname}${N.get("country")?`?country=${r}`:""}${s}`;
-              b(a), e.preventDefault()
+              y(a), e.preventDefault()
             }
             o && window.scroll(0, o.offsetTop - S.current.getBoundingClientRect().height - 60)
           },
@@ -248,8 +248,8 @@ _global.SENTRY_RELEASE = {
             }), "undefined" !== s && s ? "" : (0, p.jsx)("nav", {
               className: k.A.nav,
               children: ["us", "br", "cz", "de", "es", "fr", "it", "jp", "kr", "mx", "nl", "pl", "ru", "sa", "tw", "zh"].map(((e, a) => {
-                const s = y.formatMessage(g.rockstargames_company_info_display_for_country, {
-                  country: y.formatMessage(g[`rockstargames_company_info_${e}`])
+                const s = b.formatMessage(g.rockstargames_company_info_display_for_country, {
+                  country: b.formatMessage(g[`rockstargames_company_info_${e}`])
                 });
                 return (0, p.jsx)(c.A, {
                   to: `${v.pathname}?country=${e}`,

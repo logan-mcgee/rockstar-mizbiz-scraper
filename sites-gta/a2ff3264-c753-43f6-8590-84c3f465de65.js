@@ -28,9 +28,9 @@ _global.SENTRY_RELEASE = {
       var c = a(3963),
         i = a(2756),
         d = a(6717);
-      const m = JSON.parse('{"us":{"home_text":"Home","rockstar_games_logo_alt_text":"Rockstar Games Logo"},"de":{"home_text":"Startseite","rockstar_games_logo_alt_text":"Rockstar-Games-Logo"},"es":{"home_text":"Inicio","rockstar_games_logo_alt_text":"Logo de Rockstar Games"},"mx":{"home_text":"Inicio","rockstar_games_logo_alt_text":"Logo de Rockstar Games"},"fr":{"home_text":"Accueil","rockstar_games_logo_alt_text":"Logo Rockstar Games"},"it":{"home_text":"Home","rockstar_games_logo_alt_text":"Logo di Rockstar Games"},"jp":{"home_text":"ホーム","rockstar_games_logo_alt_text":"ロックスター・ゲームスロゴ"},"kr":{"home_text":"홈","rockstar_games_logo_alt_text":"Rockstar Games 로고"},"pl":{"home_text":"Strona główna","rockstar_games_logo_alt_text":"Logo Rockstar Games"},"br":{"home_text":"Início","rockstar_games_logo_alt_text":"Logotipo da Rockstar Games"},"ru":{"home_text":"Главная страница","rockstar_games_logo_alt_text":"Логотип Rockstar Games"},"hans":{"home_text":"主页","rockstar_games_logo_alt_text":"Rockstar Games 标志"},"tw":{"home_text":"首頁","rockstar_games_logo_alt_text":"Rockstar Games 標誌"}}');
-      var _ = a(207),
-        f = a(6040),
+      const f = JSON.parse('{"us":{"home_text":"Home","rockstar_games_logo_alt_text":"Rockstar Games Logo"},"de":{"home_text":"Startseite","rockstar_games_logo_alt_text":"Rockstar-Games-Logo"},"es":{"home_text":"Inicio","rockstar_games_logo_alt_text":"Logo de Rockstar Games"},"mx":{"home_text":"Inicio","rockstar_games_logo_alt_text":"Logo de Rockstar Games"},"fr":{"home_text":"Accueil","rockstar_games_logo_alt_text":"Logo Rockstar Games"},"it":{"home_text":"Home","rockstar_games_logo_alt_text":"Logo di Rockstar Games"},"jp":{"home_text":"ホーム","rockstar_games_logo_alt_text":"ロックスター・ゲームスロゴ"},"kr":{"home_text":"홈","rockstar_games_logo_alt_text":"Rockstar Games 로고"},"pl":{"home_text":"Strona główna","rockstar_games_logo_alt_text":"Logo Rockstar Games"},"br":{"home_text":"Início","rockstar_games_logo_alt_text":"Logotipo da Rockstar Games"},"ru":{"home_text":"Главная страница","rockstar_games_logo_alt_text":"Логотип Rockstar Games"},"hans":{"home_text":"主页","rockstar_games_logo_alt_text":"Rockstar Games 标志"},"tw":{"home_text":"首頁","rockstar_games_logo_alt_text":"Rockstar Games 標誌"}}');
+      var m = a(207),
+        _ = a(6040),
         g = a(8281),
         u = a(3134),
         b = a(4781),
@@ -66,7 +66,7 @@ _global.SENTRY_RELEASE = {
       var j = a(1744),
         L = a(5190);
       const T = "rockstargames-sites-gtaa799fab6998f229f5b8c00d05b335595";
-      f.gsap.registerPlugin(b.u, g.R, u.I);
+      _.gsap.registerPlugin(b.u, g.R, u.I);
       const E = () => {
           const {
             loading: e,
@@ -78,10 +78,10 @@ _global.SENTRY_RELEASE = {
             mutateLSSettings: r
           } = (0, i.useRockstarWebLSSettings)(), {
             track: n
-          } = (0, _.useGtmTrack)(), {
+          } = (0, m.useGtmTrack)(), {
             currentSite: l,
             sites: d
-          } = (0, c.A)(), m = (0, s.useBase)(), g = "promo_banner2", u = (0, k.useRef)(), b = (0, k.useRef)(null), h = (0, k.useRef)(null), E = (0, k.useRef)(null), I = (0, k.useRef)(null), A = (0, k.useRef)(null), C = (0, k.useRef)(null), {
+          } = (0, c.A)(), f = (0, s.useBase)(), g = "promo_banner2", u = (0, k.useRef)(), b = (0, k.useRef)(null), h = (0, k.useRef)(null), E = (0, k.useRef)(null), I = (0, k.useRef)(null), A = (0, k.useRef)(null), C = (0, k.useRef)(null), {
             ctaButtonRef: G,
             timelines: N,
             addTimeline: S,
@@ -92,7 +92,7 @@ _global.SENTRY_RELEASE = {
             resetVideo: H
           } = (0, w.I2)();
           if ((0, k.useEffect)((() => {
-              f.gsap.set(window, {
+              _.gsap.set(window, {
                 scrollTo: 0
               })
             }), []), (0, k.useEffect)((() => {
@@ -100,8 +100,8 @@ _global.SENTRY_RELEASE = {
             }), [M, N?.bannerTimeline]), (0, k.useLayoutEffect)((() => {
               u?.current?.invalidate()
             }), [a, o]), (0, k.useLayoutEffect)((() => {
-              const e = f.gsap.context((() => {
-                N?.bannerTimeline?.progress(0).kill(), V && (u.current = f.gsap.timeline({
+              const e = _.gsap.context((() => {
+                N?.bannerTimeline?.progress(0).kill(), V && (u.current = _.gsap.timeline({
                   paused: !0,
                   defaults: {
                     duration: y.ft.takeover,
@@ -183,7 +183,7 @@ _global.SENTRY_RELEASE = {
                         n({
                           event: "cta_other",
                           element_placement: "banner"
-                        }), l?.site === c.C.socialClub ? window.location.href = `https://${d.www}.rockstargames.com/VI` : window.location.href = `${m}VI`
+                        }), l?.site === c.C.socialClub ? window.location.href = `https://${d.www}.rockstargames.com/VI` : window.location.href = `${f}VI`
                       }
                     }), (0, v.jsx)(j.A, {
                       closeRef: b,
@@ -191,7 +191,7 @@ _global.SENTRY_RELEASE = {
                         B(!1), r({
                           key: y.uD,
                           value: !1
-                        }), G.current && f.gsap.to(G.current, {
+                        }), G.current && _.gsap.to(G.current, {
                           autoAlpha: 0,
                           duration: y.ft.playVideo.cta,
                           ease: y.Le.playVideo.cta
@@ -237,7 +237,7 @@ _global.SENTRY_RELEASE = {
               })
             })
           })
-        }), m)
+        }), f)
     }
   }
 ]);

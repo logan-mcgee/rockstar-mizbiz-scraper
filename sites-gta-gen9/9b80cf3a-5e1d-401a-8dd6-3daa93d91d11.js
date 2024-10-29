@@ -52,10 +52,10 @@ _global.SENTRY_RELEASE = {
             },
             setMobileNavOpen: d
           } = (0, l.E_)(),
-          [m, v] = (0, n.useState)(!1);
+          [m, b] = (0, n.useState)(!1);
         return (0, n.useEffect)((() => {
           const e = () => {
-            window.innerWidth > 1024 ? v(!1) : v(!0)
+            window.innerWidth > 1024 ? b(!1) : b(!0)
           };
           return e(), window.addEventListener("resize", e), () => {
             window.removeEventListener("resize", e)
@@ -105,26 +105,26 @@ _global.SENTRY_RELEASE = {
           }))
         })
       }));
-      var v = t(89779),
-        b = t(58407),
+      var b = t(89779),
+        v = t(58407),
         g = t(74401),
-        p = t(99074),
-        f = t(21027),
+        f = t(99074),
+        p = t(21027),
         k = t(24347),
         h = t(35663);
       const y = "rockstargames-sites-gta-gen9dba59499dbf2e8e419dd99a9fc7d6076",
         S = {
-          BuyNow: p.A,
-          TinaWrapper: f.A
+          BuyNow: f.A,
+          TinaWrapper: p.A
         },
         N = () => {
           const {
             setBodyIsLocked: e
           } = (0, d.useBodyScrollable)("ModalContent"), {
             track: a
-          } = (0, s.useGtmTrack)(), [t, o] = (0, v.useSearchParams)(), {
+          } = (0, s.useGtmTrack)(), [t, o] = (0, b.useSearchParams)(), {
             data: r
-          } = (0, b.useQuery)(h.BuyNowQ, {
+          } = (0, v.useQuery)(h.BuyNowQ, {
             variables: {
               ids: ["6a84"]
             }
@@ -295,7 +295,7 @@ _global.SENTRY_RELEASE = {
             [r, l] = (0, n.useState)({}),
             {
               data: c
-            } = (0, b.useQuery)(t, {
+            } = (0, v.useQuery)(t, {
               variables: r,
               skip: !Object.entries(r).length
             });
@@ -371,7 +371,7 @@ _global.SENTRY_RELEASE = {
           } = (0, s.useRockstarUser)(), c = (0, n.useRef)(), [d, {
             data: u,
             error: m
-          }] = (0, b.useMutation)(t);
+          }] = (0, v.useMutation)(t);
           return l ? u?.submittal?.id ? (0, _.jsx)("div", {
             className: V.success,
             dangerouslySetInnerHTML: {
@@ -444,17 +444,17 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: t
-          } = (0, s.useGtmTrack)(), i = (0, l.hY)(), [o, r] = (0, n.useState)(!1), [d, u] = (0, n.useState)(null), [m, b] = (0, n.useState)(null), [g] = (0, v.useSearchParams)();
+          } = (0, s.useGtmTrack)(), i = (0, l.hY)(), [o, r] = (0, n.useState)(!1), [d, u] = (0, n.useState)(null), [m, v] = (0, n.useState)(null), [g] = (0, b.useSearchParams)();
           if ((0, n.useEffect)((() => {
               G().cloneDeepWith(i, ((e, t, n) => {
                 a === e && u(n?.children ?? null)
               }))
             }), [a, i, g.get("section")]), (0, n.useEffect)((() => {
-              b(null), G().cloneDeepWith(d, ((e, a, t) => {
-                "id_hash" === a && g.get("section") === e && b(t)
+              v(null), G().cloneDeepWith(d, ((e, a, t) => {
+                "id_hash" === a && g.get("section") === e && v(t)
               }))
             }), [d, g.get("section")]), !d) return null;
-          const p = () => {
+          const f = () => {
             r(!1), t({
               event: "nav_click",
               element_placement: "guide nav"
@@ -475,7 +475,7 @@ _global.SENTRY_RELEASE = {
                   return (0, _.jsx)(c.A, {
                     className: a === m?.id_hash ? L.activeSection : "",
                     to: n,
-                    onClick: p,
+                    onClick: f,
                     children: t
                   }, n)
                 }))
@@ -497,7 +497,7 @@ _global.SENTRY_RELEASE = {
         }), []);
         const {
           guideId: a
-        } = (0, v.useParams)(), t = (0, C.X)({
+        } = (0, b.useParams)(), t = (0, C.X)({
           ids: [a],
           setTitleDataPath: "tinaModulesInfo[0].title_doc"
         })?.[0] ?? {};
@@ -530,7 +530,7 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             data: o
-          } = (0, b.useQuery)(Q.MetaUrlInfo, {
+          } = (0, v.useQuery)(Q.MetaUrlInfo, {
             variables: {
               url: i
             },
@@ -558,7 +558,7 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             pathname: t
-          } = (0, v.useLocation)();
+          } = (0, b.useLocation)();
           return (0, n.useMemo)((() => {
             const e = t.replace(/\/$/, "");
             return W.includes(e) ? (0, _.jsx)(R, {
@@ -652,7 +652,7 @@ _global.SENTRY_RELEASE = {
               }
             })
           }];
-          return (0, v.useRoutes)(t)
+          return (0, b.useRoutes)(t)
         })),
         Y = e => {
           let {

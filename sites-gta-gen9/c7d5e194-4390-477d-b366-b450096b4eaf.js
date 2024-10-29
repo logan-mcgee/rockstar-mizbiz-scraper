@@ -24,13 +24,13 @@ _global.SENTRY_RELEASE = {
         n = t.n(a),
         c = t(74401),
         r = t(28089);
-      var i = t(46632);
-      const d = e => {
+      var d = t(46632);
+      const i = e => {
         let {
           backgroundImage: s,
           image: t,
           logoHorizontalPosition: a,
-          logoVerticalPosition: d,
+          logoVerticalPosition: i,
           enableOverlay: l = !1,
           overlayBackground: o = "rgba(0,0,0,0.25)"
         } = e;
@@ -39,20 +39,20 @@ _global.SENTRY_RELEASE = {
           u = (0, c.useGetCdnSource)(s?.desktop ?? m),
           f = g?.src?.mobile,
           b = g?.src?.desktop ?? f;
-        return (0, i.jsx)("div", {
+        return (0, d.jsx)("div", {
           className: n()("rockstargames-sites-gta-gen9ed09e8cd8784cef75c8e083c6d5195e5", l ? "rockstargames-sites-gta-gen9ba63665ed9f22bf03682026e6367a0b3" : ""),
           style: {
             "--overlay-background-color": o
           },
-          children: (0, i.jsx)("div", {
+          children: (0, d.jsx)("div", {
             className: "rockstargames-sites-gta-gen9d46e1512d9373817c2ca8cac7190158b",
             style: {
               "--background-image-mobile": `url(${m})`,
               "--background-image-desktop": `url(${u})`,
               "--logo-justify-position": a ?? "normal",
-              "--logo-align-position": d ?? "normal"
+              "--logo-align-position": i ?? "normal"
             },
-            children: b && (0, i.jsx)("img", {
+            children: b && (0, d.jsx)("img", {
               src: b,
               className: "rockstargames-sites-gta-gen9d0a7642eb372c8ebe2af888a62a45194",
               alt: g?.alt ?? ""
@@ -152,7 +152,7 @@ _global.SENTRY_RELEASE = {
             status: t = "active",
             theme: a,
             includeSeconds: r = !1,
-            showBackground: d,
+            showBackground: i,
             backgroundColor: o,
             successBgImages: _,
             failureBgImages: h
@@ -178,7 +178,7 @@ _global.SENTRY_RELEASE = {
               L(I(s, r))
             }), r ? 1e3 : 6e4);
             return () => clearInterval(e)
-          }), [s, r, I]), (0, i.jsxs)("div", {
+          }), [s, r, I]), (0, d.jsxs)("div", {
             className: n()(b.countdownContainer, t),
             style: {
               "--counter-text-color": a?.enableTextGradient ? "transparent" : a?.textColor,
@@ -186,126 +186,126 @@ _global.SENTRY_RELEASE = {
               "--counter-text-stroke-width": a?.enableTextStroke ? a?.textStrokeWidth : "unset",
               "--counter-text-shadow": a?.enableTextShadow ? a.textShadow : "unset",
               "--counter-text-gradient": a?.enableTextGradient ? a.textGradient : "none",
-              "--counter-background-color": d ? o : "none",
+              "--counter-background-color": i ? o : "none",
               "--counter-orientation": "vertical" === a?.counterOrientation ? "column" : "row"
             },
-            children: ["active" === t && (0, i.jsxs)(i.Fragment, {
-              children: [(0, i.jsx)("h1", {
+            children: ["active" === t && (0, d.jsxs)(d.Fragment, {
+              children: [(0, d.jsx)("h1", {
                 className: b.countdownHeader,
-                children: (0, i.jsx)(u.FormattedMessage, {
+                children: (0, d.jsx)(u.FormattedMessage, {
                   ...f.countdown_timer_header_title
                 })
-              }), "active" === t && w && (0, i.jsx)("div", {
+              }), "active" === t && w && (0, d.jsx)("div", {
                 "data-testid": "pendingResults",
                 className: b.pendingResults,
-                children: (0, i.jsx)("p", {
-                  children: (0, i.jsx)(u.FormattedMessage, {
+                children: (0, d.jsx)("p", {
+                  children: (0, d.jsx)(u.FormattedMessage, {
                     ...f.countdown_timer_header_pending_title
                   })
                 })
-              }), (0, i.jsxs)("ul", {
+              }), (0, d.jsxs)("ul", {
                 "data-testid": "countdownTimer",
                 className: n()(b.countDownTimer),
-                children: [(0, i.jsx)("li", {
-                  children: (0, i.jsxs)("div", {
+                children: [(0, d.jsx)("li", {
+                  children: (0, d.jsxs)("div", {
                     className: b.countdownBlock,
-                    children: [(0, i.jsx)("span", {
+                    children: [(0, d.jsx)("span", {
                       className: n()(b.counter, a?.textGlow ? b.textGlow : ""),
                       children: B.days
-                    }), (0, i.jsx)("div", {
+                    }), (0, d.jsx)("div", {
                       className: b.countdownLabel,
-                      children: x ? (0, i.jsx)(u.FormattedMessage, {
+                      children: x ? (0, d.jsx)(u.FormattedMessage, {
                         ...f.countdown_timer_days_title_short
-                      }) : (0, i.jsx)(u.FormattedMessage, {
+                      }) : (0, d.jsx)(u.FormattedMessage, {
                         ...f.countdown_timer_days_title_long
                       })
                     })]
                   })
-                }), (0, i.jsx)("li", {
-                  children: (0, i.jsxs)("div", {
+                }), (0, d.jsx)("li", {
+                  children: (0, d.jsxs)("div", {
                     className: b.countdownBlock,
-                    children: [(0, i.jsx)("span", {
+                    children: [(0, d.jsx)("span", {
                       className: n()(b.counter, a?.textGlow ? b.textGlow : ""),
                       children: B.hours
-                    }), (0, i.jsx)("div", {
+                    }), (0, d.jsx)("div", {
                       className: b.countdownLabel,
-                      children: x ? (0, i.jsx)(u.FormattedMessage, {
+                      children: x ? (0, d.jsx)(u.FormattedMessage, {
                         ...f.countdown_timer_hours_title_short
-                      }) : (0, i.jsx)(u.FormattedMessage, {
+                      }) : (0, d.jsx)(u.FormattedMessage, {
                         ...f.countdown_timer_hours_title_long
                       })
                     })]
                   })
-                }), (0, i.jsx)("li", {
-                  children: (0, i.jsxs)("div", {
+                }), (0, d.jsx)("li", {
+                  children: (0, d.jsxs)("div", {
                     className: b.countdownBlock,
-                    children: [(0, i.jsx)("span", {
+                    children: [(0, d.jsx)("span", {
                       className: n()(b.counter, a?.textGlow ? b.textGlow : ""),
                       children: B.minutes
-                    }), (0, i.jsx)("div", {
+                    }), (0, d.jsx)("div", {
                       className: b.countdownLabel,
-                      children: x ? (0, i.jsx)(u.FormattedMessage, {
+                      children: x ? (0, d.jsx)(u.FormattedMessage, {
                         ...f.countdown_timer_minutes_title_short
-                      }) : (0, i.jsx)(u.FormattedMessage, {
+                      }) : (0, d.jsx)(u.FormattedMessage, {
                         ...f.countdown_timer_minutes_title_long
                       })
                     })]
                   })
-                }), r && (0, i.jsx)("li", {
-                  children: (0, i.jsxs)("div", {
+                }), r && (0, d.jsx)("li", {
+                  children: (0, d.jsxs)("div", {
                     className: n()(b.countdownBlock, b.secondsCounter),
-                    children: [(0, i.jsx)("span", {
+                    children: [(0, d.jsx)("span", {
                       className: n()(b.counter, a?.textGlow ? b.textGlow : ""),
                       children: B.seconds
-                    }), (0, i.jsx)("div", {
+                    }), (0, d.jsx)("div", {
                       className: b.countdownLabel,
-                      children: x ? (0, i.jsx)(u.FormattedMessage, {
+                      children: x ? (0, d.jsx)(u.FormattedMessage, {
                         ...f.countdown_timer_seconds_title_short
-                      }) : (0, i.jsx)(u.FormattedMessage, {
+                      }) : (0, d.jsx)(u.FormattedMessage, {
                         ...f.countdown_timer_seconds_title_long
                       })
                     })]
                   })
                 })]
               })]
-            }), "success" === t && (0, i.jsxs)("div", {
+            }), "success" === t && (0, d.jsxs)("div", {
               className: b.container,
               style: {
                 display: "flex",
                 alignItems: "center"
               },
-              children: [(0, i.jsx)("img", {
+              children: [(0, d.jsx)("img", {
                 className: b.accentImage,
                 src: p,
                 alt: _?.imageLeft?.altText
-              }), (0, i.jsx)("div", {
+              }), (0, d.jsx)("div", {
                 "data-testid": "successMessage",
                 className: b.successLabel,
-                children: (0, i.jsx)(u.FormattedMessage, {
+                children: (0, d.jsx)(u.FormattedMessage, {
                   ...f.countdown_timer_success_title
                 })
-              }), (0, i.jsx)("img", {
+              }), (0, d.jsx)("img", {
                 className: b.accentImage,
                 src: N,
                 alt: _?.imageRight?.altText
               })]
-            }), "failure" === t && (0, i.jsxs)("div", {
+            }), "failure" === t && (0, d.jsxs)("div", {
               className: b.container,
               style: {
                 display: "flex",
                 alignItems: "center"
               },
-              children: [(0, i.jsx)("img", {
+              children: [(0, d.jsx)("img", {
                 className: b.accentImage,
                 src: M,
                 alt: h?.imageLeft?.altText
-              }), (0, i.jsx)("div", {
+              }), (0, d.jsx)("div", {
                 "data-testid": "failureMessage",
                 className: b.failureLabel,
-                children: (0, i.jsx)(u.FormattedMessage, {
+                children: (0, d.jsx)(u.FormattedMessage, {
                   ...f.countdown_timer_failure_title
                 })
-              }), (0, i.jsx)("img", {
+              }), (0, d.jsx)("img", {
                 className: b.accentImage,
                 src: C,
                 alt: h?.imageRight?.altText
@@ -321,15 +321,15 @@ _global.SENTRY_RELEASE = {
           } = e;
           const n = (s.findLastIndex((e => e.active)) + 1) / s.length,
             r = 100 / n;
-          return (0, i.jsxs)("div", {
+          return (0, d.jsxs)("div", {
             className: "rockstargames-sites-gta-gen9e2b85b2eea9f5c5b1de14340e9ca70b8",
-            children: [(0, i.jsx)("div", {
+            children: [(0, d.jsx)("div", {
               className: "rockstargames-sites-gta-gen9f593b34d7e7d832c0c661f6fa56da016",
               style: {
                 backgroundImage: `url(${(0,c.useGetCdnSource)(t)})`
               },
               "data-testid": "incompleteImage"
-            }), (0, i.jsx)("div", {
+            }), (0, d.jsx)("div", {
               className: "rockstargames-sites-gta-gen9b95b71434ed7e54aee5d2ab15d4f30a8",
               style: {
                 backgroundImage: `url(${(0,c.useGetCdnSource)(a)})`,
@@ -337,10 +337,10 @@ _global.SENTRY_RELEASE = {
                 width: 100 * n + "%"
               },
               "data-testid": "completedImage"
-            }), s.map(((e, t) => (0, i.jsx)("div", {
+            }), s.map(((e, t) => (0, d.jsx)("div", {
               className: (0, c.classList)("rockstargames-sites-gta-gen9d4baab273071911a6488e078dcf8a854", 0 === t ? "rockstargames-sites-gta-gen9f94ba24bd2023dfc8bc7fa7dc51423e8" : "", t === s.length - 1 ? "rockstargames-sites-gta-gen9c2ae0481500b2df444bccaa5b4904837" : ""),
               "data-testid": "milestoneBox",
-              children: (0, i.jsx)("div", {
+              children: (0, d.jsx)("div", {
                 className: "rockstargames-sites-gta-gen9b31199c3d14b84a5c36a6847b3604e83"
               })
             }, t)))]
@@ -361,22 +361,22 @@ _global.SENTRY_RELEASE = {
             final: c
           } = e;
           const r = (0, u.useIntl)(),
-            d = a ? "rockstargames-sites-gta-gen9bd115bca85c8165906ec9ebc6c5978e3" : "",
+            i = a ? "rockstargames-sites-gta-gen9bd115bca85c8165906ec9ebc6c5978e3" : "",
             l = c ? "rockstargames-sites-gta-gen9d8aea31b88e125cdeed883c2bb2a3cd3" : "";
-          return (0, i.jsx)("div", {
+          return (0, d.jsx)("div", {
             className: "rockstargames-sites-gta-gen9d6e710a1f92fd65be7c9672ad80cf3d9",
-            children: (0, i.jsxs)("div", {
-              className: n()("rockstargames-sites-gta-gen9feab6bd12128b95efa364a54487b2901", d, l),
-              children: [(0, i.jsxs)("div", {
+            children: (0, d.jsxs)("div", {
+              className: n()("rockstargames-sites-gta-gen9feab6bd12128b95efa364a54487b2901", i, l),
+              children: [(0, d.jsxs)("div", {
                 className: "rockstargames-sites-gta-gen9f135a449f2811af9aabb7c1f865f8969",
-                children: [(0, i.jsx)("h4", {
+                children: [(0, d.jsx)("h4", {
                   children: s
-                }), a && (0, i.jsx)(x.Check, {
+                }), a && (0, d.jsx)(x.Check, {
                   label: r.formatMessage(w.milestone_marker_success_aria),
                   className: "rockstargames-sites-gta-gen9dc7353331b2aa89f4fa04c75c826ad10",
                   testId: "checkmark"
                 })]
-              }), t && (0, i.jsx)("p", {
+              }), t && (0, d.jsx)("p", {
                 className: "rockstargames-sites-gta-gen9e1627aa7e659e1a50423c53608f2d30c",
                 children: r.formatDate(t, {
                   month: "short",
@@ -392,16 +392,16 @@ _global.SENTRY_RELEASE = {
             className: t = "",
             fill: a = "#E0330E"
           } = e;
-          return (0, i.jsxs)("svg", {
+          return (0, d.jsxs)("svg", {
             className: t,
             version: "1.1",
             width: "15",
             height: "11",
             viewBox: "0 0 15 11",
             xmlns: "http://www.w3.org/2000/svg",
-            children: [(0, i.jsx)("title", {
+            children: [(0, d.jsx)("title", {
               children: s
-            }), (0, i.jsx)("path", {
+            }), (0, d.jsx)("path", {
               d: "M7.5 10.5166L0.138783 0.0166029L14.8612 0.0166017L7.5 10.5166Z",
               fill: a
             })]
@@ -428,68 +428,68 @@ _global.SENTRY_RELEASE = {
             initialTitle: c,
             initialDate: r
           } = e;
-          const d = (0, l.useRef)(null),
+          const i = (0, l.useRef)(null),
             o = (0, l.useRef)(null),
             [g, u] = (0, l.useState)(!1),
             {
               isMobile: f
             } = (0, m.useWindowResize)();
-          if ((0, m.useCursorScroll)(d), (0, l.useEffect)((() => {
-              f && d.current && o.current && (d.current.scrollLeft = o.current.getBoundingClientRect().left - window.innerWidth / 2, d.current.addEventListener("scroll", (e => {
+          if ((0, m.useCursorScroll)(i), (0, l.useEffect)((() => {
+              f && i.current && o.current && (i.current.scrollLeft = o.current.getBoundingClientRect().left - window.innerWidth / 2, i.current.addEventListener("scroll", (e => {
                 const s = e.target;
                 s && Math.ceil(s.scrollLeft + s.clientWidth) >= s.scrollWidth ? u(!0) : u(!1)
               })))
             }), [f]), !n || 0 === n.length) return null;
           const b = n.findLastIndex((e => e.active)),
             _ = n[n.length - 1].title;
-          return (0, i.jsxs)("section", {
+          return (0, d.jsxs)("section", {
             className: p.milestoneIndicators,
-            children: [(0, i.jsxs)("div", {
+            children: [(0, d.jsxs)("div", {
               className: p.milestoneHeading,
-              children: [(0, i.jsx)("h3", {
+              children: [(0, d.jsx)("h3", {
                 className: p.milestoneTitle,
                 children: s
-              }), !g && (0, i.jsxs)("div", {
+              }), !g && (0, d.jsxs)("div", {
                 className: p.milestoneGoal,
                 "data-testid": "milestone-goal",
-                children: [_, (0, i.jsx)(x.ArrowRight, {
+                children: [_, (0, d.jsx)(x.ArrowRight, {
                   label: "",
                   size: "MD"
                 })]
               })]
-            }), (0, i.jsx)("div", {
+            }), (0, d.jsx)("div", {
               className: p.milestoneScroll,
-              ref: d,
-              children: (0, i.jsxs)("div", {
+              ref: i,
+              children: (0, d.jsxs)("div", {
                 className: p.milestoneGroup,
-                children: [(0, i.jsxs)("div", {
+                children: [(0, d.jsxs)("div", {
                   className: p.milestoneFlags,
-                  children: [-1 === b ? (0, i.jsx)("div", {
+                  children: [-1 === b ? (0, d.jsx)("div", {
                     ref: o,
                     className: p.milestoneFlag,
                     "data-testid": "marker",
-                    children: (0, i.jsx)(j, {})
-                  }) : (0, i.jsx)("div", {
+                    children: (0, d.jsx)(j, {})
+                  }) : (0, d.jsx)("div", {
                     className: p.milestoneFlag
-                  }), n.map(((e, s) => s === b ? (0, i.jsx)("div", {
+                  }), n.map(((e, s) => s === b ? (0, d.jsx)("div", {
                     ref: o,
                     className: p.milestoneFlag,
                     "data-testid": "marker",
-                    children: (0, i.jsx)(j, {})
-                  }, s) : (0, i.jsx)("div", {
+                    children: (0, d.jsx)(j, {})
+                  }, s) : (0, d.jsx)("div", {
                     className: p.milestoneFlag
                   }, s)))]
-                }), (0, i.jsx)(h, {
+                }), (0, d.jsx)(h, {
                   milestones: n,
                   incompleteImage: a,
                   completedImage: t
-                }), (0, i.jsxs)("div", {
+                }), (0, d.jsxs)("div", {
                   className: p.milestoneMarkers,
-                  children: [(0, i.jsx)(k, {
+                  children: [(0, d.jsx)(k, {
                     title: c,
                     date: r,
                     active: !0
-                  }), n.map(((e, s) => (0, i.jsx)(k, {
+                  }), n.map(((e, s) => (0, d.jsx)(k, {
                     title: e.title,
                     date: e.date,
                     active: e.active,
@@ -528,17 +528,17 @@ _global.SENTRY_RELEASE = {
           const {
             track: c
           } = (0, y.useGtmTrack)();
-          return (0, i.jsxs)("div", {
+          return (0, d.jsxs)("div", {
             className: "rockstargames-sites-gta-gen9be01331043fa82f22bb769fd8586a621",
-            children: [s && (0, i.jsx)("h1", {
+            children: [s && (0, d.jsx)("h1", {
               className: "rockstargames-sites-gta-gen9a90a5344060fff1d460fd727e4d74adb",
               children: s
-            }), (0, i.jsxs)("div", {
+            }), (0, d.jsxs)("div", {
               className: "rockstargames-sites-gta-gen9c8c025bd26dd1c31cf37937ae72c5f1d",
-              children: [t && (0, i.jsx)("p", {
+              children: [t && (0, d.jsx)("p", {
                 className: "rockstargames-sites-gta-gen9a2fb55c0617121317877bc1096f164c6",
                 children: t
-              }), a && (0, i.jsx)(C.A, {
+              }), a && (0, d.jsx)(C.A, {
                 className: "rockstargames-sites-gta-gen9ad653c7e9d155d97ca939e3fd8ce2188",
                 text: a,
                 to: n,
@@ -560,17 +560,17 @@ _global.SENTRY_RELEASE = {
           } = e;
           const n = (0, c.useGetCdnSource)(a?.mobile ?? null),
             r = (0, c.useGetCdnSource)(a?.desktop ?? n);
-          return (0, i.jsx)("div", {
+          return (0, d.jsx)("div", {
             className: "rockstargames-sites-gta-gen9b32fe3d4623889cde297fb913c90393c",
             style: {
               "--rewards-background-image": `url(${r})`
             },
-            children: (0, i.jsxs)("div", {
+            children: (0, d.jsxs)("div", {
               className: "rockstargames-sites-gta-gen9bf4e950111fc0d5f083eff61213f31d0",
-              children: [(0, i.jsx)("div", {
+              children: [(0, d.jsx)("div", {
                 className: "rockstargames-sites-gta-gen9f98a844c4f1b9945971af59786264657",
                 children: t
-              }), (0, i.jsx)("div", {
+              }), (0, d.jsx)("div", {
                 className: "rockstargames-sites-gta-gen9bcd23c06f2ed2429153dc51303ae2159",
                 children: s
               })]
@@ -600,7 +600,7 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             isMobile: a
-          } = (0, m.useWindowResize)(), n = (0, u.useIntl)(), r = (0, l.useRef)(null), d = (0, l.useRef)(null), o = (0, l.useRef)(null), g = (0, l.useRef)(), [f, b] = (0, l.useState)(!1), [_, h] = (0, l.useState)(), [x, w] = (0, l.useState)(!1), [k, j] = (0, l.useState)(!1), {
+          } = (0, m.useWindowResize)(), n = (0, u.useIntl)(), r = (0, l.useRef)(null), i = (0, l.useRef)(null), o = (0, l.useRef)(null), g = (0, l.useRef)(), [f, b] = (0, l.useState)(!1), [_, h] = (0, l.useState)(), [x, w] = (0, l.useState)(!1), [k, j] = (0, l.useState)(!1), {
             track: p
           } = (0, y.useGtmTrack)(), v = g?.current?.swiper, C = s?.heading, G = s?.cards;
           (0, l.useEffect)((() => {
@@ -610,10 +610,10 @@ _global.SENTRY_RELEASE = {
             }
           }), [G, v?.params.slidesPerView]), (0, l.useEffect)((() => {
             h({
-              nextEl: d.current,
+              nextEl: i.current,
               prevEl: r.current
             })
-          }), [d, r]);
+          }), [i, r]);
           const R = () => {
               v?.slidePrev(300, !1), p({
                 event: "carousel_prev",
@@ -632,25 +632,25 @@ _global.SENTRY_RELEASE = {
                 s && s?.tabIndex > -1 && (e.preventDefault(), s.focus())
               }
             };
-          return (0, i.jsxs)("div", {
+          return (0, d.jsxs)("div", {
             className: L.rewardPanel,
-            children: [(0, i.jsx)("div", {
+            children: [(0, d.jsx)("div", {
               className: L.leftColumn,
-              children: (0, i.jsx)(I, {
+              children: (0, d.jsx)(I, {
                 ...t
               })
-            }), (0, i.jsx)("div", {
+            }), (0, d.jsx)("div", {
               ref: o,
               className: L.rightColumn,
-              children: G?.length ? (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsxs)("div", {
+              children: G?.length ? (0, d.jsxs)(d.Fragment, {
+                children: [(0, d.jsxs)("div", {
                   className: L.navControl,
-                  children: [(0, i.jsx)("h1", {
+                  children: [(0, d.jsx)("h1", {
                     className: L.titleHeading,
                     children: C
-                  }), !a && f && (0, i.jsxs)("div", {
+                  }), !a && f && (0, d.jsxs)("div", {
                     className: L.btnArea,
-                    children: [(0, i.jsx)("button", {
+                    children: [(0, d.jsx)("button", {
                       "data-testid": "prevBtn",
                       ref: r,
                       className: (0, c.classList)(L.prevBtn, x ? L.disabled : ""),
@@ -658,9 +658,9 @@ _global.SENTRY_RELEASE = {
                       "aria-label": n.formatMessage(S.rewards_carousel_previous),
                       type: "button",
                       disabled: x
-                    }), (0, i.jsx)("button", {
+                    }), (0, d.jsx)("button", {
                       "data-testid": "nextBtn",
-                      ref: d,
+                      ref: i,
                       className: (0, c.classList)(L.nextBtn, k ? L.disabled : ""),
                       onClick: T,
                       onKeyDown: F,
@@ -669,7 +669,7 @@ _global.SENTRY_RELEASE = {
                       disabled: k
                     })]
                   })]
-                }), (0, i.jsxs)(N.RC, {
+                }), (0, d.jsxs)(N.RC, {
                   slidesPerView: 1.25,
                   ref: g,
                   onSlideChange: e => {
@@ -722,9 +722,9 @@ _global.SENTRY_RELEASE = {
                       element_placement: "community challenge rewards"
                     })
                   },
-                  children: [a && (0, i.jsxs)("div", {
+                  children: [a && (0, d.jsxs)("div", {
                     className: L.btnArea,
-                    children: [(0, i.jsx)("button", {
+                    children: [(0, d.jsx)("button", {
                       "data-testid": "prevBtn",
                       ref: r,
                       className: (0, c.classList)(L.prevBtn, x ? L.disabled : ""),
@@ -732,9 +732,9 @@ _global.SENTRY_RELEASE = {
                       "aria-label": n.formatMessage(S.rewards_carousel_previous),
                       type: "button",
                       disabled: x
-                    }), (0, i.jsx)("button", {
+                    }), (0, d.jsx)("button", {
                       "data-testid": "nextBtn",
-                      ref: d,
+                      ref: i,
                       className: (0, c.classList)(L.nextBtn, k ? L.disabled : ""),
                       onClick: T,
                       onKeyDown: F,
@@ -746,12 +746,12 @@ _global.SENTRY_RELEASE = {
                     const t = e?.title,
                       a = e?.subTitle,
                       n = e?.rewardsBgImage;
-                    return (0, i.jsx)(N.qr, {
+                    return (0, d.jsx)(N.qr, {
                       className: L.slide,
                       onFocus: () => (e => {
                         v?.slideTo(e)
                       })(s),
-                      children: (0, i.jsx)(B, {
+                      children: (0, d.jsx)(B, {
                         title: t,
                         subTitle: a,
                         rewardsBgImage: n
@@ -759,9 +759,9 @@ _global.SENTRY_RELEASE = {
                     }, s)
                   }))]
                 })]
-              }) : (0, i.jsx)("div", {
+              }) : (0, d.jsx)("div", {
                 className: L.noRewardsAvailable,
-                children: (0, i.jsx)(u.FormattedMessage, {
+                children: (0, d.jsx)(u.FormattedMessage, {
                   ...S.no_rewards_available_title
                 })
               })
@@ -783,21 +783,21 @@ _global.SENTRY_RELEASE = {
             rewards: a,
             milestoneIndicator: n
           } = e;
-          return (0, i.jsx)("div", {
+          return (0, d.jsx)("div", {
             className: R.communityChallenges,
-            children: (0, i.jsxs)("div", {
+            children: (0, d.jsxs)("div", {
               className: R.wrapper,
-              children: [s && (0, i.jsx)(d, {
+              children: [s && (0, d.jsx)(i, {
                 ...s
-              }), (0, i.jsxs)("div", {
+              }), (0, d.jsxs)("div", {
                 className: R.content,
-                children: [t?.timer && (0, i.jsx)(_, {
+                children: [t?.timer && (0, d.jsx)(_, {
                   ...t.timer
-                }), n && (0, i.jsx)(v, {
+                }), n && (0, d.jsx)(v, {
                   ...n
-                }), a && (0, i.jsx)("section", {
+                }), a && (0, d.jsx)("section", {
                   className: R.rewardsSection,
-                  children: (0, i.jsx)(G, {
+                  children: (0, d.jsx)(G, {
                     ...a
                   })
                 })]

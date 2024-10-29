@@ -40,8 +40,8 @@ _global.SENTRY_RELEASE = {
         i = (t(39516), "data-focus-lock"),
         a = "data-focus-lock-disabled",
         c = "data-no-focus-lock",
-        d = "data-autofocus-inside";
-      var f = {
+        f = "data-autofocus-inside";
+      var d = {
           width: "1px",
           height: "0px",
           padding: 0,
@@ -56,12 +56,12 @@ _global.SENTRY_RELEASE = {
             key: "guard-first",
             "data-focus-guard": !0,
             "data-focus-auto-guard": !0,
-            style: f
+            style: d
           }), n, n && o.createElement("div", {
             key: "guard-last",
             "data-focus-guard": !0,
             "data-focus-auto-guard": !0,
-            style: f
+            style: d
           }))
         };
       s.propTypes = {}, s.defaultProps = {
@@ -157,7 +157,7 @@ _global.SENTRY_RELEASE = {
         w = o.forwardRef((function(e, n) {
           var t, u = o.useState(),
             c = u[0],
-            d = u[1],
+            f = u[1],
             s = o.useRef(),
             l = o.useRef(!1),
             v = o.useRef(null),
@@ -209,7 +209,7 @@ _global.SENTRY_RELEASE = {
             }), []),
             z = h.useMedium,
             J = o.useCallback((function(e) {
-              s.current !== e && (s.current = e, d(e))
+              s.current !== e && (s.current = e, f(e))
             }), []),
             Q = r(((t = {})[a] = m && "disabled", t[i] = _, t), j),
             Z = !0 !== b,
@@ -239,12 +239,12 @@ _global.SENTRY_RELEASE = {
             key: "guard-first",
             "data-focus-guard": !0,
             tabIndex: m ? -1 : 0,
-            style: f
+            style: d
           }), k ? o.createElement("div", {
             key: "guard-nearest",
             "data-focus-guard": !0,
             tabIndex: m ? -1 : 1,
-            style: f
+            style: d
           }) : null], !m && o.createElement(A, {
             id: B,
             sideCar: E,
@@ -268,7 +268,7 @@ _global.SENTRY_RELEASE = {
           }), p), $ && o.createElement("div", {
             "data-focus-guard": !0,
             tabIndex: m ? -1 : 0,
-            style: f
+            style: d
           }))
         }));
       w.propTypes = {}, w.defaultProps = {
@@ -519,11 +519,11 @@ _global.SENTRY_RELEASE = {
         },
         ce = function(e, n) {
           var t, r, o, u, i, a, c = Q(k(e).length > 0 ? document : S(e).ownerDocument),
-            f = $(e).filter(R),
-            s = ae(c || e, e, f),
+            d = $(e).filter(R),
+            s = ae(c || e, e, d),
             l = new Map,
-            v = z(f, l),
-            p = X(f, l).filter((function(e) {
+            v = z(d, l),
+            p = X(d, l).filter((function(e) {
               var n = e.node;
               return R(n)
             }));
@@ -545,28 +545,28 @@ _global.SENTRY_RELEASE = {
                   i = e[o - 1],
                   a = L(t);
                 if (!(t && e.indexOf(t) >= 0)) {
-                  var c, d, f = void 0 !== t ? n.indexOf(t) : -1,
-                    s = r ? n.indexOf(r) : f,
+                  var c, f, d = void 0 !== t ? n.indexOf(t) : -1,
+                    s = r ? n.indexOf(r) : d,
                     l = r ? e.indexOf(r) : -1,
-                    v = f - s,
+                    v = d - s,
                     p = n.indexOf(u),
                     m = n.indexOf(i),
-                    b = (c = n, d = new Set, c.forEach((function(e) {
-                      return d.add(ne(e, c))
+                    b = (c = n, f = new Set, c.forEach((function(e) {
+                      return f.add(ne(e, c))
                     })), c.filter((function(e) {
-                      return d.has(e)
+                      return f.has(e)
                     }))),
-                    y = (void 0 !== t ? b.indexOf(t) : -1) - (r ? b.indexOf(r) : f),
+                    y = (void 0 !== t ? b.indexOf(t) : -1) - (r ? b.indexOf(r) : d),
                     h = re(e, 0),
                     g = re(e, o - 1);
-                  return -1 === f || -1 === l ? oe : !v && l >= 0 ? l : f <= p && a && Math.abs(v) > 1 ? g : f >= m && a && Math.abs(v) > 1 ? h : v && Math.abs(y) > 1 ? l : f <= p ? g : f > m ? h : v ? Math.abs(v) > 1 ? l : (o + l + v) % o : void 0
+                  return -1 === d || -1 === l ? oe : !v && l >= 0 ? l : d <= p && a && Math.abs(v) > 1 ? g : d >= m && a && Math.abs(v) > 1 ? h : v && Math.abs(y) > 1 ? l : d <= p ? g : d > m ? h : v ? Math.abs(v) > 1 ? l : (o + l + v) % o : void 0
                 }
               }(E, h, c, n);
             if (O === oe) {
               var w = (t = v, r = E, o = function(e, n) {
                 return e.reduce((function(e, t) {
                   return e.concat(function(e, n) {
-                    return Y((t = e.querySelectorAll("[".concat(d, "]")), I(t).map((function(e) {
+                    return Y((t = e.querySelectorAll("[".concat(f, "]")), I(t).map((function(e) {
                       return V([e])
                     })).reduce((function(e, n) {
                       return e.concat(n)
@@ -574,7 +574,7 @@ _global.SENTRY_RELEASE = {
                     var t
                   }(t, n))
                 }), [])
-              }(f, l), i = t.map((function(e) {
+              }(d, l), i = t.map((function(e) {
                 return e.node
               })), (a = K(i.filter((u = o, function(e) {
                 var n, t = null === (n = j(e)) || void 0 === n ? void 0 : n.autofocus;
@@ -587,16 +587,16 @@ _global.SENTRY_RELEASE = {
             return void 0 === O ? O : g[O]
           }
         },
-        de = 0,
-        fe = !1,
+        fe = 0,
+        de = !1,
         se = function(e, n, t) {
           void 0 === t && (t = {});
           var r, o, u = ce(e, n);
-          if (!fe && u) {
-            if (de > 2) return console.error("FocusLock: focus-fighting detected. Only one focus management system could be active. See https://github.com/theKashey/focus-lock/#focus-fighting"), fe = !0, void setTimeout((function() {
-              fe = !1
+          if (!de && u) {
+            if (fe > 2) return console.error("FocusLock: focus-fighting detected. Only one focus management system could be active. See https://github.com/theKashey/focus-lock/#focus-fighting"), de = !0, void setTimeout((function() {
+              de = !1
             }), 1);
-            de++, r = u.node, o = t.focusOptions, "focus" in r && r.focus(o), "contentWindow" in r && r.contentWindow && r.contentWindow.focus(), de--
+            fe++, r = u.node, o = t.focusOptions, "focus" in r && r.focus(o), "contentWindow" in r && r.contentWindow && r.contentWindow.focus(), fe--
           }
         };
 
@@ -638,14 +638,14 @@ _global.SENTRY_RELEASE = {
         we = function() {
           var e, n, t, r, o, u, i, a = !1;
           if (pe) {
-            var d = pe,
-              f = d.observed,
-              s = d.persistentFocus,
-              l = d.autoFocus,
-              v = d.shards,
-              p = d.crossFrame,
-              m = d.focusOptions,
-              b = f || be && be.portaledElement,
+            var f = pe,
+              d = f.observed,
+              s = f.persistentFocus,
+              l = f.autoFocus,
+              v = f.shards,
+              p = f.crossFrame,
+              m = f.focusOptions,
+              b = d || be && be.portaledElement,
               y = document && document.activeElement;
             if (b) {
               var h = [b].concat(v.map(Ee).filter(Boolean));
@@ -738,7 +738,7 @@ _global.SENTRY_RELEASE = {
             return e.props
           }))), Se(n)
         }
-        var i, a, c, d = function(o) {
+        var i, a, c, f = function(o) {
           var i, a;
 
           function c() {
@@ -747,19 +747,19 @@ _global.SENTRY_RELEASE = {
           a = o, (i = c).prototype = Object.create(a.prototype), i.prototype.constructor = i, _(i, a), c.peek = function() {
             return n
           };
-          var d = c.prototype;
-          return d.componentDidMount = function() {
+          var f = c.prototype;
+          return f.componentDidMount = function() {
             t.push(this), r()
-          }, d.componentDidUpdate = function() {
+          }, f.componentDidUpdate = function() {
             r()
-          }, d.componentWillUnmount = function() {
+          }, f.componentWillUnmount = function() {
             var e = t.indexOf(this);
             t.splice(e, 1), r()
-          }, d.render = function() {
+          }, f.render = function() {
             return u().createElement(e, this.props)
           }, c
         }(o.PureComponent);
-        return i = d, a = "displayName", c = "SideEffect(" + function(e) {
+        return i = f, a = "displayName", c = "SideEffect(" + function(e) {
           return e.displayName || e.name || "Component"
         }(e) + ")", (a = function(e) {
           var n = function(e, n) {
@@ -778,7 +778,7 @@ _global.SENTRY_RELEASE = {
           enumerable: !0,
           configurable: !0,
           writable: !0
-        }) : i[a] = c, d
+        }) : i[a] = c, f
       })((function() {
         return null
       }));
@@ -803,7 +803,7 @@ _global.SENTRY_RELEASE = {
           u = e.children,
           i = e.className,
           a = void 0 === i ? void 0 : i;
-        return o.createElement("div", r({}, ve(d, !t), {
+        return o.createElement("div", r({}, ve(f, !t), {
           className: a
         }), u)
       };
@@ -827,7 +827,7 @@ _global.SENTRY_RELEASE = {
           t = e.className,
           u = e.children,
           i = o.useRef(null);
-        return Ae(n ? void 0 : i), o.createElement("div", r({}, ve(d, !n), {
+        return Ae(n ? void 0 : i), o.createElement("div", r({}, ve(f, !n), {
           ref: i,
           className: t
         }), u)

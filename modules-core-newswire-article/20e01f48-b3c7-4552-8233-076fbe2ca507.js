@@ -20,9 +20,9 @@ _global.SENTRY_RELEASE = {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => i,
-        Lightbox_Download_Button_Label: () => g,
-        Lightbox_Download_Button_Tooltip: () => L,
-        Lightbox_Open_Button_Label: () => f,
+        Lightbox_Download_Button_Label: () => f,
+        Lightbox_Download_Button_Tooltip: () => g,
+        Lightbox_Open_Button_Label: () => L,
         Lightbox_Reset_Zoom_Button_Label: () => d,
         Lightbox_Reset_Zoom_Button_Tooltip: () => u,
         Lightbox_Zoom_In_Button_Label: () => l,
@@ -31,7 +31,7 @@ _global.SENTRY_RELEASE = {
         Lightbox_Zoom_Out_Button__Tooltip: () => b,
         Lightbox_Zoom_Slider_Label: () => s,
         Lightbox_Zoom_Slider_Tooltip: () => r,
-        default: () => h
+        default: () => c
       });
       var _ = "Chiudi lightbox",
         i = "Premi {shortcut}",
@@ -43,10 +43,10 @@ _global.SENTRY_RELEASE = {
         u = "Premi {shortcut}",
         s = "Livello zoom",
         r = "{zoom}%",
+        f = "Scarica",
         g = "Scarica",
-        L = "Scarica",
-        f = "Espandi immagine",
-        h = {
+        L = "Espandi immagine",
+        c = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: i,
           Lightbox_Zoom_In_Button_Label: l,
@@ -57,9 +57,9 @@ _global.SENTRY_RELEASE = {
           Lightbox_Reset_Zoom_Button_Tooltip: u,
           Lightbox_Zoom_Slider_Label: s,
           Lightbox_Zoom_Slider_Tooltip: r,
-          Lightbox_Download_Button_Label: g,
-          Lightbox_Download_Button_Tooltip: L,
-          Lightbox_Open_Button_Label: f
+          Lightbox_Download_Button_Label: f,
+          Lightbox_Download_Button_Tooltip: g,
+          Lightbox_Open_Button_Label: L
         }
     }
   }

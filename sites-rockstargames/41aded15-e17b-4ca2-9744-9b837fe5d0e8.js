@@ -16,33 +16,33 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [5678], {
-    75678: (e, a, s) => {
-      s.r(a), s.d(a, {
-        default: () => i
+    75678: (e, a, d) => {
+      d.r(a), d.d(a, {
+        default: () => b
       });
-      var t = s(71403),
-        d = s(25076),
-        n = s(78722),
-        o = s.n(n),
-        r = s(70396),
-        l = s(42756),
-        f = s(46632);
-      const i = (0, l.withTranslations)((e => {
+      var s = d(71403),
+        t = d(25076),
+        f = d(78722),
+        n = d.n(f),
+        o = d(70396),
+        r = d(42756),
+        l = d(46632);
+      const b = (0, r.withTranslations)((e => {
         let {
           t: a
         } = e;
-        const s = (0, d.useParams)(),
+        const d = (0, t.useParams)(),
           {
-            setBreadcrumb: n,
-            setNormalLogo: l
-          } = (0, r.useRockstarLocalState)();
-        return (0, t.useEffect)((() => (n([{
+            setBreadcrumb: f,
+            setNormalLogo: r
+          } = (0, o.useRockstarLocalState)();
+        return (0, s.useEffect)((() => (f([{
           href: "/newswire",
           title: a("Newswire")
         }], ""), () => {
-          l(!0), n()
-        })), []), (0, f.jsx)(o(), {
-          idHash: String(s.articleId)
+          r(!0), f()
+        })), []), (0, l.jsx)(n(), {
+          idHash: String(d.articleId)
         })
       }))
     }

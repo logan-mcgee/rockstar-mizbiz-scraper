@@ -55,13 +55,13 @@ _global.SENTRY_RELEASE = {
         useActionData: () => z,
         useAsyncError: () => W,
         useAsyncValue: () => V,
-        useHref: () => m,
-        useInRouterContext: () => f,
+        useHref: () => f,
+        useInRouterContext: () => m,
         useLoaderData: () => H,
         useLocation: () => h,
         useMatch: () => g,
         useMatches: () => T,
-        useNavigate: () => y,
+        useNavigate: () => b,
         useNavigation: () => j,
         useNavigationType: () => v,
         useOutlet: () => R,
@@ -97,11 +97,11 @@ _global.SENTRY_RELEASE = {
         }),
         p = n.createContext(null);
 
-      function m(e, t) {
+      function f(e, t) {
         let {
           relative: r
         } = void 0 === t ? {} : t;
-        f() || (0, a.Oi)(!1);
+        m() || (0, a.Oi)(!1);
         let {
           basename: o,
           navigator: i
@@ -119,12 +119,12 @@ _global.SENTRY_RELEASE = {
         })
       }
 
-      function f() {
+      function m() {
         return null != n.useContext(c)
       }
 
       function h() {
-        return f() || (0, a.Oi)(!1), n.useContext(c).location
+        return m() || (0, a.Oi)(!1), n.useContext(c).location
       }
 
       function v() {
@@ -132,7 +132,7 @@ _global.SENTRY_RELEASE = {
       }
 
       function g(e) {
-        f() || (0, a.Oi)(!1);
+        m() || (0, a.Oi)(!1);
         let {
           pathname: t
         } = h();
@@ -143,7 +143,7 @@ _global.SENTRY_RELEASE = {
         n.useContext(s).static || n.useLayoutEffect(e)
       }
 
-      function y() {
+      function b() {
         let {
           isDataRoute: e
         } = n.useContext(d);
@@ -159,7 +159,7 @@ _global.SENTRY_RELEASE = {
             }, a)))
           }), [e, t])
         }() : function() {
-          f() || (0, a.Oi)(!1);
+          m() || (0, a.Oi)(!1);
           let e = n.useContext(i),
             {
               basename: t,
@@ -183,15 +183,15 @@ _global.SENTRY_RELEASE = {
           }), [t, r, u, l, e])
         }()
       }
-      const b = n.createContext(null);
+      const y = n.createContext(null);
 
       function C() {
-        return n.useContext(b)
+        return n.useContext(y)
       }
 
       function R(e) {
         let t = n.useContext(d).outlet;
-        return t ? n.createElement(b.Provider, {
+        return t ? n.createElement(y.Provider, {
           value: e
         }, t) : t
       }
@@ -219,28 +219,28 @@ _global.SENTRY_RELEASE = {
       }
 
       function S(e, t, r) {
-        f() || (0, a.Oi)(!1);
+        m() || (0, a.Oi)(!1);
         let {
           navigator: i
         } = n.useContext(s), {
           matches: l
-        } = n.useContext(d), u = l[l.length - 1], p = u ? u.params : {}, m = (u && u.pathname, u ? u.pathnameBase : "/");
+        } = n.useContext(d), u = l[l.length - 1], p = u ? u.params : {}, f = (u && u.pathname, u ? u.pathnameBase : "/");
         u && u.route;
         let v, g = h();
         if (t) {
           var E;
           let e = "string" == typeof t ? (0, a.Rr)(t) : t;
-          "/" === m || (null == (E = e.pathname) ? void 0 : E.startsWith(m)) || (0, a.Oi)(!1), v = e
+          "/" === f || (null == (E = e.pathname) ? void 0 : E.startsWith(f)) || (0, a.Oi)(!1), v = e
         } else v = g;
-        let y = v.pathname || "/",
-          b = "/" === m ? y : y.slice(m.length) || "/",
+        let b = v.pathname || "/",
+          y = "/" === f ? b : b.slice(f.length) || "/",
           C = (0, a.ue)(e, {
-            pathname: b
+            pathname: y
           }),
           R = B(C && C.map((e => Object.assign({}, e, {
             params: Object.assign({}, p, e.params),
-            pathname: (0, a.HS)([m, i.encodeLocation ? i.encodeLocation(e.pathname).pathname : e.pathname]),
-            pathnameBase: "/" === e.pathnameBase ? m : (0, a.HS)([m, i.encodeLocation ? i.encodeLocation(e.pathnameBase).pathname : e.pathnameBase])
+            pathname: (0, a.HS)([f, i.encodeLocation ? i.encodeLocation(e.pathname).pathname : e.pathname]),
+            pathnameBase: "/" === e.pathnameBase ? f : (0, a.HS)([f, i.encodeLocation ? i.encodeLocation(e.pathnameBase).pathname : e.pathnameBase])
           }))), l, r);
         return t && R ? n.createElement(c.Provider, {
           value: {
@@ -508,14 +508,14 @@ _global.SENTRY_RELEASE = {
             })
           })), [r]),
           p = r.basename || "/",
-          m = n.useMemo((() => ({
+          f = n.useMemo((() => ({
             router: r,
             navigator: d,
             static: !1,
             basename: p
           })), [r, d, p]);
         return n.createElement(n.Fragment, null, n.createElement(i.Provider, {
-          value: m
+          value: f
         }, n.createElement(l.Provider, {
           value: o
         }, n.createElement(re, {
@@ -558,10 +558,10 @@ _global.SENTRY_RELEASE = {
           {
             v7_startTransition: p
           } = l || {},
-          m = n.useCallback((e => {
+          f = n.useCallback((e => {
             p && q ? q((() => d(e))) : d(e)
           }), [d, p]);
-        return n.useLayoutEffect((() => s.listen(m)), [s, m]), n.createElement(re, {
+        return n.useLayoutEffect((() => s.listen(f)), [s, f]), n.createElement(re, {
           basename: t,
           children: r,
           location: c.location,
@@ -577,12 +577,12 @@ _global.SENTRY_RELEASE = {
           state: o,
           relative: i
         } = e;
-        f() || (0, a.Oi)(!1);
+        m() || (0, a.Oi)(!1);
         let {
           matches: l
         } = n.useContext(d), {
           pathname: u
-        } = h(), s = y(), c = (0, a.Gh)(t, (0, a.sd)(l).map((e => e.pathnameBase)), u, "path" === i), p = JSON.stringify(c);
+        } = h(), s = b(), c = (0, a.Gh)(t, (0, a.sd)(l).map((e => e.pathnameBase)), u, "path" === i), p = JSON.stringify(c);
         return n.useEffect((() => s(JSON.parse(p), {
           replace: r,
           state: o,
@@ -607,7 +607,7 @@ _global.SENTRY_RELEASE = {
           navigator: l,
           static: u = !1
         } = e;
-        f() && (0, a.Oi)(!1);
+        m() && (0, a.Oi)(!1);
         let d = t.replace(/^\/*/, "/"),
           p = n.useMemo((() => ({
             basename: d,
@@ -616,13 +616,13 @@ _global.SENTRY_RELEASE = {
           })), [d, l, u]);
         "string" == typeof o && (o = (0, a.Rr)(o));
         let {
-          pathname: m = "/",
+          pathname: f = "/",
           search: h = "",
           hash: v = "",
           state: g = null,
           key: E = "default"
-        } = o, y = n.useMemo((() => {
-          let e = (0, a.pb)(m, d);
+        } = o, b = n.useMemo((() => {
+          let e = (0, a.pb)(f, d);
           return null == e ? null : {
             location: {
               pathname: e,
@@ -633,12 +633,12 @@ _global.SENTRY_RELEASE = {
             },
             navigationType: i
           }
-        }), [d, m, h, v, g, E, i]);
-        return null == y ? null : n.createElement(s.Provider, {
+        }), [d, f, h, v, g, E, i]);
+        return null == b ? null : n.createElement(s.Provider, {
           value: p
         }, n.createElement(c.Provider, {
           children: r,
-          value: y
+          value: b
         }))
       }
 

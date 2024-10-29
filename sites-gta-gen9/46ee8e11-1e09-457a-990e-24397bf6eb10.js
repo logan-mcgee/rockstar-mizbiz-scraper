@@ -18,38 +18,38 @@ _global.SENTRY_RELEASE = {
   [5658, 3277], {
     83277: (e, n, t) => {
       t.r(n), t.d(n, {
-        useGSAP: () => u
+        useGSAP: () => c
       });
       var d = t(71403),
         a = t(26040),
-        o = t.n(a);
-      let s = "undefined" != typeof window ? d.useLayoutEffect : d.useEffect,
-        f = e => e && !Array.isArray(e) && "object" == typeof e,
+        f = t.n(a);
+      let o = "undefined" != typeof window ? d.useLayoutEffect : d.useEffect,
+        s = e => e && !Array.isArray(e) && "object" == typeof e,
         r = [],
         l = {},
-        i = o();
-      const u = function(e) {
+        i = f();
+      const c = function(e) {
         let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r,
           t = l;
-        f(e) ? (t = e, e = null, n = "dependencies" in t ? t.dependencies : r) : f(n) && (t = n, n = "dependencies" in t ? t.dependencies : r);
+        s(e) ? (t = e, e = null, n = "dependencies" in t ? t.dependencies : r) : s(n) && (t = n, n = "dependencies" in t ? t.dependencies : r);
         let {
           scope: a,
-          revertOnUpdate: o
-        } = t, [u, c] = (0, d.useState)(!1);
+          revertOnUpdate: f
+        } = t, [c, b] = (0, d.useState)(!1);
         e && "function" != typeof e && console.warn("First parameter must be a function or config object");
-        const g = i.context((() => {}), a),
-          b = () => g.revert(),
-          y = n && n.length && !o;
-        return s((() => {
-          if (e && g.add(e, a), !y || !u) return b
-        }), n), y && s((() => (c(!0), b)), r), {
-          context: g,
-          contextSafe: e => g.add(null, e)
+        const u = i.context((() => {}), a),
+          g = () => u.revert(),
+          y = n && n.length && !f;
+        return o((() => {
+          if (e && u.add(e, a), !y || !c) return g
+        }), n), y && o((() => (b(!0), g)), r), {
+          context: u,
+          contextSafe: e => u.add(null, e)
         }
       };
-      u.register = e => {
+      c.register = e => {
         i = e
-      }, u.headless = !0
+      }, c.headless = !0
     }
   }
 ]);

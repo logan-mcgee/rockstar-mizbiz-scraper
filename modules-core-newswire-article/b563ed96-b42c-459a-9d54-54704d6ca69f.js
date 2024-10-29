@@ -29,43 +29,43 @@ _global.SENTRY_RELEASE = {
           "function" == typeof e ? e(t) : null != e && (e.current = t)
         }(e, t)))
       }
-      const s = (0, o.forwardRef)(((e, t) => {
+      const c = (0, o.forwardRef)(((e, t) => {
         const {
           children: r,
           ...a
-        } = e, l = o.Children.toArray(r), s = l.find(i);
-        if (s) {
-          const e = s.props.children,
-            r = l.map((t => t === s ? o.Children.count(e) > 1 ? o.Children.only(null) : (0, o.isValidElement)(e) ? e.props.children : null : t));
-          return (0, o.createElement)(c, (0, n.A)({}, a, {
+        } = e, l = o.Children.toArray(r), c = l.find(f);
+        if (c) {
+          const e = c.props.children,
+            r = l.map((t => t === c ? o.Children.count(e) > 1 ? o.Children.only(null) : (0, o.isValidElement)(e) ? e.props.children : null : t));
+          return (0, o.createElement)(s, (0, n.A)({}, a, {
             ref: t
           }), (0, o.isValidElement)(e) ? (0, o.cloneElement)(e, void 0, r) : null)
         }
-        return (0, o.createElement)(c, (0, n.A)({}, a, {
+        return (0, o.createElement)(s, (0, n.A)({}, a, {
           ref: t
         }), r)
       }));
-      s.displayName = "Slot";
-      const c = (0, o.forwardRef)(((e, t) => {
+      c.displayName = "Slot";
+      const s = (0, o.forwardRef)(((e, t) => {
         const {
           children: r,
           ...a
         } = e;
         return (0, o.isValidElement)(r) ? (0, o.cloneElement)(r, {
-          ...f(a, r.props),
+          ...i(a, r.props),
           ref: t ? l(t, r.ref) : r.ref
         }) : o.Children.count(r) > 1 ? o.Children.only(null) : null
       }));
-      c.displayName = "SlotClone";
+      s.displayName = "SlotClone";
       const d = ({
         children: e
       }) => (0, o.createElement)(o.Fragment, null, e);
 
-      function i(e) {
+      function f(e) {
         return (0, o.isValidElement)(e) && e.type === d
       }
 
-      function f(e, t) {
+      function i(e, t) {
         const r = {
           ...t
         };
@@ -98,10 +98,10 @@ _global.SENTRY_RELEASE = {
         },
         p = "foundry_nu8bkpar",
         h = "foundry_nu8bkpat",
-        S = "foundry_nu8bkpaq",
-        w = "foundry_nu8bkpas",
-        y = "--foundry_nu8bkp0",
-        b = "foundry_nu8bkp1";
+        b = "foundry_nu8bkpaq",
+        S = "foundry_nu8bkpas",
+        w = "--foundry_nu8bkp0",
+        y = "foundry_nu8bkp1";
       const v = (0, o.createContext)({
           colorScheme: "dark",
           defaultColorScheme: "dark",
@@ -122,13 +122,13 @@ _global.SENTRY_RELEASE = {
         const a = e => k || !window.matchMedia ? t : window.matchMedia(e).matches,
           [n, l] = (0, o.useState)((() => r ? a(e) : t));
 
-        function s() {
+        function c() {
           l(a(e))
         }
         return (0, o.useEffect)((() => {
           const t = window.matchMedia?.(e);
-          return s(), t?.addListener ? t?.addListener(s) : t?.addEventListener("change", s), () => {
-            t?.removeListener ? t?.removeListener(s) : t?.removeEventListener("change", s)
+          return c(), t?.addListener ? t?.addListener(c) : t?.addEventListener("change", c), () => {
+            t?.removeListener ? t?.removeListener(c) : t?.removeEventListener("change", c)
           }
         }), [e]), n
       }
@@ -144,7 +144,7 @@ _global.SENTRY_RELEASE = {
           prev: r
         }), t.current.prev
       }
-      const C = (e, t) => "dark" === e ? "more" === t ? h : p : "more" === t ? w : S;
+      const C = (e, t) => "dark" === e ? "more" === t ? h : p : "more" === t ? S : b;
       r(94066), r(94048), r(27335), r(11377), r(51315), r(31949), r(31062), r(14653), r(4642), r(14963);
       const E = () => k ? null : document.body,
         M = (0, o.forwardRef)((({
@@ -153,10 +153,10 @@ _global.SENTRY_RELEASE = {
           container: r = E(),
           asChild: n,
           colorScheme: l,
-          defaultColorScheme: c,
+          defaultColorScheme: s,
           contrastMode: d,
-          defaultContrastMode: i,
-          platformScaleBreakpoints: f,
+          defaultContrastMode: f,
+          platformScaleBreakpoints: i,
           platformScaleRatios: M,
           defaultPlatformScale: L,
           platformScale: R,
@@ -185,7 +185,7 @@ _global.SENTRY_RELEASE = {
                 })), [e.platformScaleBreakpoints]),
                 [a, n] = (0, o.useState)(e.platformScale || e.defaultPlatformScale),
                 l = (0, o.useRef)([]),
-                s = () => {
+                c = () => {
                   if (!k) {
                     for (const {
                         handler: e,
@@ -197,7 +197,7 @@ _global.SENTRY_RELEASE = {
                 };
               return (0, o.useEffect)((() => (e.platformScale ? n(e.platformScale) : (() => {
                 if (!k) {
-                  s();
+                  c();
                   for (const e in r) {
                     const t = window.matchMedia(r[e]),
                       a = t => {
@@ -209,12 +209,12 @@ _global.SENTRY_RELEASE = {
                     })
                   }
                 }
-              })(), s)), [r, e.platformScale]), {
+              })(), c)), [r, e.platformScale]), {
                 scale: a,
                 ratio: t[a]
               }
             }({
-              platformScaleBreakpoints: f,
+              platformScaleBreakpoints: i,
               platformScaleRatios: M,
               defaultPlatformScale: L,
               platformScale: R
@@ -232,49 +232,49 @@ _global.SENTRY_RELEASE = {
             }) {
               const n = g("(prefers-color-scheme: light)"),
                 l = g("(prefers-color-scheme: dark)"),
-                s = g("(prefers-contrast: more)"),
-                c = "system" !== e && e || n && "light" || l && "dark" || t,
-                d = r || s && "more" || a,
-                i = (0, o.useMemo)((() => C(c, d)), [c, d]),
-                f = (0, o.useMemo)((() => ((e, t) => {
+                c = g("(prefers-contrast: more)"),
+                s = "system" !== e && e || n && "light" || l && "dark" || t,
+                d = r || c && "more" || a,
+                f = (0, o.useMemo)((() => C(s, d)), [s, d]),
+                i = (0, o.useMemo)((() => ((e, t) => {
                   const r = C(e, t);
-                  return [S, p, w, h].filter((e => e !== r))
-                })(c, d)), [c, d]);
+                  return [b, p, S, h].filter((e => e !== r))
+                })(s, d)), [s, d]);
               return {
-                appearanceClass: i,
-                otherAppearanceClasses: f,
-                providerColor: c,
+                appearanceClass: f,
+                otherAppearanceClasses: i,
+                providerColor: s,
                 providerContrast: d
               }
             }({
               colorScheme: l,
-              defaultColorScheme: c,
+              defaultColorScheme: s,
               contrastMode: d,
-              defaultContrastMode: i
+              defaultContrastMode: f
             });
           return ((e, t, r, a, n) => {
             const l = _(n),
-              s = _(e.current);
+              c = _(e.current);
             (0, o.useEffect)((() => {
-              e.current?.classList.contains(b) || e.current?.classList.add(b), e.current?.classList.add(r), e.current?.classList.remove(...a), l && n && e.current?.classList.contains(l) ? e.current?.classList.replace(l, n) : l && !n && e.current?.classList.contains(l) ? e.current?.classList.remove(l) : n && e.current?.classList.add(n)
+              e.current?.classList.contains(y) || e.current?.classList.add(y), e.current?.classList.add(r), e.current?.classList.remove(...a), l && n && e.current?.classList.contains(l) ? e.current?.classList.replace(l, n) : l && !n && e.current?.classList.contains(l) ? e.current?.classList.remove(l) : n && e.current?.classList.add(n)
             }), [r, n]), (0, o.useEffect)((() => {
-              e.current?.style.setProperty(y, t.toString())
+              e.current?.style.setProperty(w, t.toString())
             }), [t]), (0, o.useEffect)((() => {
-              s?.classList.remove(b), s?.classList.remove(r), s?.style.removeProperty(y), n && s?.classList.remove(n)
-            }), [s])
+              c?.classList.remove(y), c?.classList.remove(r), c?.style.removeProperty(w), n && c?.classList.remove(n)
+            }), [c])
           })(n ? A : B, N, I, D, t), (0, a.jsx)(v.Provider, {
             value: {
               locale: x,
-              defaultColorScheme: c,
+              defaultColorScheme: s,
               colorScheme: j,
-              defaultContrastMode: i,
+              defaultContrastMode: f,
               contrastMode: U,
               defaultPlatformScale: L,
               platformScale: V,
               platformScaleRatios: M,
-              platformScaleBreakpoints: f
+              platformScaleBreakpoints: i
             },
-            children: n ? (0, a.jsx)(s, {
+            children: n ? (0, a.jsx)(c, {
               ref: A,
               children: e
             }) : e

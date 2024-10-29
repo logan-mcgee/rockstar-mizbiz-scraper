@@ -31,15 +31,15 @@ _global.SENTRY_RELEASE = {
 
       function t(e, a, i) {
         var n, t = {},
-          l = null,
+          f = null,
           c = null;
-        for (n in void 0 !== i && (l = "" + i), void 0 !== a.key && (l = "" + a.key), void 0 !== a.ref && (c = a.ref), a) r.call(a, n) && !s.hasOwnProperty(n) && (t[n] = a[n]);
+        for (n in void 0 !== i && (f = "" + i), void 0 !== a.key && (f = "" + a.key), void 0 !== a.ref && (c = a.ref), a) r.call(a, n) && !s.hasOwnProperty(n) && (t[n] = a[n]);
         if (e && e.defaultProps)
           for (n in a = e.defaultProps) void 0 === t[n] && (t[n] = a[n]);
         return {
           $$typeof: o,
           type: e,
-          key: l,
+          key: f,
           ref: c,
           props: t,
           _owner: d.current
@@ -99,36 +99,36 @@ _global.SENTRY_RELEASE = {
           const {
             desktop: t = null,
             mobile: c = null
-          } = a, [f, u] = (0, n.useState)(!0), m = {
+          } = a, [l, u] = (0, n.useState)(!0), m = {
             autoPlay: !i,
             hover: i,
             loop: o,
             sound: d,
-            muted: f
+            muted: l
           };
           return (0, s.jsxs)("div", {
-            onClick: () => u(!f),
-            children: [t && (0, s.jsx)(l, {
+            onClick: () => u(!l),
+            children: [t && (0, s.jsx)(f, {
               className: [c ? r.hiddenMobile : "", r.videoDesktop].join(" "),
               hash: t,
               ...m
-            }), c && (0, s.jsx)(l, {
+            }), c && (0, s.jsx)(f, {
               className: [t ? r.hiddenLarge : "", r.videoMobile].join(" "),
               hash: c,
               ...m
             }), m.sound ? (0, s.jsx)("div", {
-              className: [r.muteBtn, f ? "" : r.unMuted].join(" ")
+              className: [r.muteBtn, l ? "" : r.unMuted].join(" ")
             }) : ""]
           })
         },
-        l = e => {
+        f = e => {
           let {
             className: a,
             hash: i,
             hover: t,
-            autoPlay: l,
+            autoPlay: f,
             loop: c,
-            muted: f,
+            muted: l,
             sound: u
           } = e;
           const {
@@ -145,9 +145,9 @@ _global.SENTRY_RELEASE = {
             children: (0, s.jsx)("video", {
               ref: b,
               src: m.gifInfo.file,
-              autoPlay: l,
+              autoPlay: f,
               loop: c,
-              muted: f,
+              muted: l,
               playsInline: !0
             })
           }) : null
@@ -159,9 +159,9 @@ _global.SENTRY_RELEASE = {
             title: n,
             caption: o,
             hero: d = !1,
-            loop: l = !0,
+            loop: f = !0,
             sound: c = !1,
-            hover: f = !1
+            hover: l = !1
           } = e;
           if (!a) return null;
           const u = "object" == typeof a ? a : Object.keys(a).map((e => ({
@@ -172,8 +172,8 @@ _global.SENTRY_RELEASE = {
             style: i,
             children: [(0, s.jsx)(t, {
               hashes: u,
-              hover: f,
-              loop: l,
+              hover: l,
+              loop: f,
               sound: c,
               title: n ?? "R* Games"
             }), o && (0, s.jsx)("figcaption", {

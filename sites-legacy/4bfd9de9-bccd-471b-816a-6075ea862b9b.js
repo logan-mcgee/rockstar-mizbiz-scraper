@@ -65,17 +65,17 @@ _global.SENTRY_RELEASE = {
           focused: u = !1,
           ...m
         } = e;
-        const p = (0, n.useRef)(null),
-          f = (0, _.useIntl)(),
+        const f = (0, n.useRef)(null),
+          p = (0, _.useIntl)(),
           k = !/^(https?|mailto):/i.test(i),
           g = /^#/.test(i),
           b = m?.target ?? (c ? "_blank" : "_self");
         let {
           ...y
         } = m, v = "";
-        if ("aria-label" in y && y["aria-label"] && (v = "_blank" === b ? `${y["aria-label"]} ${f.formatMessage(a.aria_label_open_new_window)}` : y["aria-label"]), (0, n.useEffect)((() => {
-            u && p?.current && p.current.focus()
-          }), [p?.current, u]), g) {
+        if ("aria-label" in y && y["aria-label"] && (v = "_blank" === b ? `${y["aria-label"]} ${p.formatMessage(a.aria_label_open_new_window)}` : y["aria-label"]), (0, n.useEffect)((() => {
+            u && f?.current && f.current.focus()
+          }), [f?.current, u]), g) {
           const e = e => {
             e.preventDefault(), document?.querySelector(`[id='${i.replace("#","")}']`)?.scrollIntoView({
               behavior: "smooth",
@@ -88,10 +88,10 @@ _global.SENTRY_RELEASE = {
             onClick: e,
             ...y,
             "aria-label": v,
-            ref: p,
+            ref: f,
             children: [s, "_blank" === b && !v && (0, l.jsx)("span", {
               className: o,
-              children: f.formatMessage(a.aria_label_open_new_window)
+              children: p.formatMessage(a.aria_label_open_new_window)
             })]
           })
         }
@@ -101,10 +101,10 @@ _global.SENTRY_RELEASE = {
           onClick: d,
           ...y,
           "aria-label": v,
-          ref: p,
+          ref: f,
           children: [s, "_blank" === b && !v && (0, l.jsx)("span", {
             className: o,
-            children: f.formatMessage(a.aria_label_open_new_window)
+            children: p.formatMessage(a.aria_label_open_new_window)
           })]
         });
         const w = Object.keys(y).filter((e => !["activeClassName", "key", "end"].includes(e))).reduce(((e, s) => ({
@@ -118,10 +118,10 @@ _global.SENTRY_RELEASE = {
           target: b,
           ...w,
           "aria-label": v,
-          ref: p,
+          ref: f,
           children: [s, "_blank" === b && !v && (0, l.jsx)("span", {
             className: o,
-            children: f.formatMessage(a.aria_label_open_new_window)
+            children: p.formatMessage(a.aria_label_open_new_window)
           })]
         })
       }), t)

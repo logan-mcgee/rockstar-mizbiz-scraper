@@ -133,7 +133,7 @@ _global.SENTRY_RELEASE = {
         ContentField: () => pe,
         DisplayClassField: () => se,
         FormEntryField: () => ge,
-        GridContextField: () => fe,
+        GridContextField: () => he,
         GtmField: () => ve,
         IdField: () => Se,
         ImageField: () => we,
@@ -341,13 +341,13 @@ _global.SENTRY_RELEASE = {
           description: "Distance from top for LAYERS (recommended to use %)",
           component: "text"
         },
-        h = {
+        f = {
           label: "Left",
           name: "left",
           description: "Distance from left for LAYERS (recommended to use %)",
           component: "text"
         },
-        f = {
+        h = {
           label: "Right",
           name: "right",
           description: "Distance from right for LAYERS (recommended to use %)",
@@ -818,9 +818,9 @@ _global.SENTRY_RELEASE = {
             }, {
               ...g
             }, {
-              ...h
-            }, {
               ...f
+            }, {
+              ...h
             }, {
               ...v
             }, {
@@ -1182,7 +1182,7 @@ _global.SENTRY_RELEASE = {
             templates: t
           }
         },
-        he = [{
+        fe = [{
           value: "",
           label: "-- Select Grid Context --"
         }, {
@@ -1201,13 +1201,13 @@ _global.SENTRY_RELEASE = {
           value: "gta-plus",
           label: "GTA Plus"
         }],
-        fe = () => ({
+        he = () => ({
           name: "context",
           label: "Container Type",
           component: "select",
           description: "What kind of content container is this?",
-          options: he,
-          initialValues: he[0]
+          options: fe,
+          initialValues: fe[0]
         }),
         ve = () => ({
           name: "gtm",

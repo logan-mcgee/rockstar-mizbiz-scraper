@@ -16,28 +16,28 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [5427], {
-    85427: (e, a, s) => {
-      s.r(a), s.d(a, {
-        default: () => o
+    85427: (e, a, d) => {
+      d.r(a), d.d(a, {
+        default: () => n
       });
-      var t = s(71403),
-        d = s(25076),
-        n = s(40207);
-      const o = () => {
-        const [e, a] = (0, t.useState)(), s = (0, n.useRockstarUser)(), {
-          currentCharId: o
-        } = (0, n.useRockstarUserState)(), r = (0, d.useNavigate)(), l = (0, n.useIsUserGtaPlus)(s.data, o);
-        return (0, t.useEffect)((() => {
-          if (!s) return;
+      var s = d(71403),
+        t = d(25076),
+        f = d(40207);
+      const n = () => {
+        const [e, a] = (0, s.useState)(), d = (0, f.useRockstarUser)(), {
+          currentCharId: n
+        } = (0, f.useRockstarUserState)(), o = (0, t.useNavigate)(), r = (0, f.useIsUserGtaPlus)(d.data, n);
+        return (0, s.useEffect)((() => {
+          if (!d) return;
           const {
             loggedIn: e
-          } = s;
-          null != e && (!1 !== e ? void 0 !== o && a(l) : a(!1))
-        }), [l, s, o]), (0, t.useEffect)((() => {
-          null != e && r(e ? "./benefits" : "./join", {
+          } = d;
+          null != e && (!1 !== e ? void 0 !== n && a(r) : a(!1))
+        }), [r, d, n]), (0, s.useEffect)((() => {
+          null != e && o(e ? "./benefits" : "./join", {
             replace: !0
           })
-        }), [e, r]), null
+        }), [e, o]), null
       }
     }
   }

@@ -22,26 +22,26 @@ _global.SENTRY_RELEASE = {
       });
       var o = a(76612),
         n = a(64064),
-        r = a.n(n),
-        l = a(74459),
-        s = a.n(l),
-        t = a(26527),
-        f = a.n(t),
+        f = a.n(n),
+        r = a(74459),
+        l = a.n(r),
+        s = a(26527),
+        t = a.n(s),
         i = a(31879),
-        c = a.n(i),
-        u = a(66713),
-        b = a.n(u),
+        b = a.n(i),
+        c = a(66713),
+        u = a.n(c),
         _ = a(42012);
       const w = {
         ...o,
         ...a(26750),
         ClrCard: _.y3,
         ClrCollapsedCard: _.h7,
-        Gif: r(),
-        GroupOfItems: s(),
-        RockstarVideoPlayer: c(),
-        SwiperCarousel: f(),
-        UGCJobSpotlight: b()
+        Gif: f(),
+        GroupOfItems: l(),
+        RockstarVideoPlayer: b(),
+        SwiperCarousel: t(),
+        UGCJobSpotlight: u()
       }
     }
   }

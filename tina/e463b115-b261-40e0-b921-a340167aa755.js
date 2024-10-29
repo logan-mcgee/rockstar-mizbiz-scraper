@@ -28,29 +28,29 @@ _global.SENTRY_RELEASE = {
       function o(e, o) {
         const r = (o = o || {}).delimiter || ".",
           c = o.maxDepth,
-          a = o.transformKey || n,
-          f = {};
-        return function e(n, i, s) {
-          s = s || 1, Object.keys(n).forEach((function(l) {
-            const u = n[l],
-              b = o.safe && Array.isArray(u),
-              d = Object.prototype.toString.call(u),
-              y = t(u),
-              p = "[object Object]" === d || "[object Array]" === d,
-              g = i ? i + r + a(l) : a(l);
-            if (!b && !y && p && Object.keys(u).length && (!o.maxDepth || s < c)) return e(u, g, s + 1);
-            f[g] = u
+          f = o.transformKey || n,
+          a = {};
+        return function e(n, b, i) {
+          i = i || 1, Object.keys(n).forEach((function(s) {
+            const d = n[s],
+              l = o.safe && Array.isArray(d),
+              u = Object.prototype.toString.call(d),
+              y = t(d),
+              p = "[object Object]" === u || "[object Array]" === u,
+              g = b ? b + r + f(s) : f(s);
+            if (!l && !y && p && Object.keys(d).length && (!o.maxDepth || i < c)) return e(d, g, i + 1);
+            a[g] = d
           }))
-        }(e), f
+        }(e), a
       }
       e.exports = o, o.flatten = o, o.unflatten = function e(r, c) {
-        const a = (c = c || {}).delimiter || ".",
-          f = c.overwrite || !1,
-          i = c.transformKey || n,
-          s = {};
+        const f = (c = c || {}).delimiter || ".",
+          a = c.overwrite || !1,
+          b = c.transformKey || n,
+          i = {};
         if (t(r) || "[object Object]" !== Object.prototype.toString.call(r)) return r;
 
-        function l(e) {
+        function s(e) {
           const t = Number(e);
           return isNaN(t) || -1 !== e.indexOf(".") || c.object ? e : t
         }
@@ -62,23 +62,23 @@ _global.SENTRY_RELEASE = {
             return !e || ("[object Array]" === t ? !e.length : n ? !Object.keys(e).length : void 0)
           }(r[t]) ? (e[t] = r[t], e) : function(e, t, n) {
             return Object.keys(n).reduce((function(t, o) {
-              return t[e + a + o] = n[o], t
+              return t[e + f + o] = n[o], t
             }), t)
           }(t, e, o(r[t], c))
         }), {}), Object.keys(r).forEach((function(t) {
-          const n = t.split(a).map(i);
-          let o = l(n.shift()),
-            u = l(n[0]),
-            b = s;
-          for (; void 0 !== u;) {
+          const n = t.split(f).map(b);
+          let o = s(n.shift()),
+            d = s(n[0]),
+            l = i;
+          for (; void 0 !== d;) {
             if ("__proto__" === o) return;
-            const e = Object.prototype.toString.call(b[o]),
+            const e = Object.prototype.toString.call(l[o]),
               t = "[object Object]" === e || "[object Array]" === e;
-            if (!f && !t && void 0 !== b[o]) return;
-            (f && !t || !f && null == b[o]) && (b[o] = "number" != typeof u || c.object ? {} : []), b = b[o], n.length > 0 && (o = l(n.shift()), u = l(n[0]))
+            if (!a && !t && void 0 !== l[o]) return;
+            (a && !t || !a && null == l[o]) && (l[o] = "number" != typeof d || c.object ? {} : []), l = l[o], n.length > 0 && (o = s(n.shift()), d = s(n[0]))
           }
-          b[o] = e(r[t], c)
-        })), s
+          l[o] = e(r[t], c)
+        })), i
       }
     }
   }

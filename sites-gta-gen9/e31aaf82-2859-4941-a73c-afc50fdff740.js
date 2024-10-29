@@ -49,7 +49,7 @@ _global.SENTRY_RELEASE = {
             mugshotUrl: f,
             stats: u
           } = s,
-          [_, b] = (0, t.useState)(f),
+          [b, _] = (0, t.useState)(f),
           k = (0, r.A)(g, "large");
         return (0, l.jsxs)("div", {
           className: d.scCharacterCard,
@@ -57,12 +57,12 @@ _global.SENTRY_RELEASE = {
             className: d.scAvatar,
             "data-size": "small",
             children: (0, l.jsx)("img", {
-              src: _,
+              src: b,
               alt: c.formatMessage(o.A.profile_selector_mugshot, {
                 userName: m
               }),
               onError: () => {
-                b(a(58989))
+                _(a(58989))
               }
             })
           }), (0, l.jsx)("div", {
@@ -355,11 +355,11 @@ _global.SENTRY_RELEASE = {
             secondText: m,
             size: f,
             text: u,
-            to: _,
-            type: b = "",
+            to: b,
+            type: _ = "",
             ariaLabel: k
           } = e;
-          const p = [n.plusButton, n[b] ?? "", n[f] ?? "", n[t] ?? "", a].join(" "),
+          const p = [n.plusButton, n[_] ?? "", n[f] ?? "", n[t] ?? "", a].join(" "),
             h = {
               "--hvr-color": s ?? l,
               "--hvr-bg-color": l ?? s,
@@ -377,9 +377,9 @@ _global.SENTRY_RELEASE = {
                 }) : ""]
               })]
             });
-          if (_) {
-            if (_.startsWith("http")) {
-              const e = _.startsWith(document.location.origin) ? "_self" : "_blank";
+          if (b) {
+            if (b.startsWith("http")) {
+              const e = b.startsWith(document.location.origin) ? "_self" : "_blank";
               return (0, c.jsx)("span", {
                 onClick: g,
                 onKeyDown: g,
@@ -388,7 +388,7 @@ _global.SENTRY_RELEASE = {
                 "aria-label": k,
                 tabIndex: 0,
                 children: (0, c.jsx)("a", {
-                  href: _,
+                  href: b,
                   target: e,
                   children: x
                 })
@@ -400,7 +400,7 @@ _global.SENTRY_RELEASE = {
               style: {
                 ...h
               },
-              to: _,
+              to: b,
               ariaLabel: k,
               children: x
             })
@@ -432,12 +432,12 @@ _global.SENTRY_RELEASE = {
         m = a(94566),
         f = a(74401),
         u = a(62811),
-        _ = a(46632);
-      const b = e => {
+        b = a(46632);
+      const _ = e => {
           let {
             legalText: s
           } = e;
-          return (0, _.jsx)("div", {
+          return (0, b.jsx)("div", {
             dangerouslySetInnerHTML: {
               __html: s
             }
@@ -454,45 +454,45 @@ _global.SENTRY_RELEASE = {
             signin: r,
             landingSlide: i
           } = e;
-          return (0, _.jsxs)("div", {
+          return (0, b.jsxs)("div", {
             className: [s.contentContainer, s[i], s.landingSlide].join(" "),
             ref: t,
-            children: [(0, _.jsx)("img", {
+            children: [(0, b.jsx)("img", {
               src: a.introScreen.image.sources.mobile || k,
               className: s.moduleImageMobile,
               alt: a.introScreen.image.alt
-            }), (0, _.jsxs)("div", {
+            }), (0, b.jsxs)("div", {
               className: s.topContent,
-              children: [(0, _.jsx)("div", {
+              children: [(0, b.jsx)("div", {
                 className: s.textContent,
-                children: (0, _.jsxs)("div", {
+                children: (0, b.jsxs)("div", {
                   className: s.alert,
-                  children: [(0, _.jsx)("div", {
+                  children: [(0, b.jsx)("div", {
                     className: s.badge,
                     children: a.introScreen.tag
-                  }), (0, _.jsxs)("div", {
+                  }), (0, b.jsxs)("div", {
                     className: s.alertText,
-                    children: [(0, _.jsx)("h2", {
+                    children: [(0, b.jsx)("h2", {
                       children: a.introScreen.headline
-                    }), (0, _.jsx)("div", {
+                    }), (0, b.jsx)("div", {
                       dangerouslySetInnerHTML: {
                         __html: a.introScreen.body
                       }
                     })]
                   })]
                 })
-              }), (0, _.jsx)("div", {
+              }), (0, b.jsx)("div", {
                 className: s.btnContainer,
-                children: (0, _.jsx)(u.A, {
+                children: (0, b.jsx)(u.A, {
                   text: n ? a.introScreen.btnText.loggedIn : a.introScreen.btnText.loggedOut,
                   onClick: n ? c : r
                 })
               })]
-            }), (0, _.jsx)("div", {
+            }), (0, b.jsx)("div", {
               className: s.bottomContent,
-              children: (0, _.jsx)("div", {
+              children: (0, b.jsx)("div", {
                 className: s.legal,
-                children: (0, _.jsx)(b, {
+                children: (0, b.jsx)(_, {
                   legalText: a.legalText
                 })
               })
@@ -534,32 +534,32 @@ _global.SENTRY_RELEASE = {
             nextEl: g?.current,
             prevEl: m?.current
           })
-        }), [m?.current, g?.current]), (0, _.jsxs)("div", {
+        }), [m?.current, g?.current]), (0, b.jsxs)("div", {
           className: [s.contentContainer, s[c], s.successSlide].join(" "),
           "data-type": "long",
           ref: n,
-          children: [(0, _.jsxs)("div", {
+          children: [(0, b.jsxs)("div", {
             className: s.topContent,
-            children: [(0, _.jsxs)("div", {
+            children: [(0, b.jsxs)("div", {
               className: s.alert,
-              children: [(0, _.jsx)("div", {
+              children: [(0, b.jsx)("div", {
                 className: s.successAlert
-              }), (0, _.jsxs)("div", {
+              }), (0, b.jsxs)("div", {
                 className: s.alertText,
-                children: [(0, _.jsx)("h3", {
+                children: [(0, b.jsx)("h3", {
                   children: a.successScreen.headline
-                }), (0, _.jsx)("div", {
+                }), (0, b.jsx)("div", {
                   dangerouslySetInnerHTML: {
                     __html: a.successScreen.body
                   }
                 })]
               })]
-            }), (0, _.jsxs)("div", {
+            }), (0, b.jsxs)("div", {
               className: s.swiperWrap,
-              children: [(0, _.jsx)("div", {
+              children: [(0, b.jsx)("div", {
                 className: s.swiperContainer,
                 ref: l,
-                children: (0, _.jsxs)(h.RC, {
+                children: (0, b.jsxs)(h.RC, {
                   loop: !1,
                   grabCursor: k,
                   slidesPerView: "auto",
@@ -572,25 +572,25 @@ _global.SENTRY_RELEASE = {
                   onSlideChange: e => {
                     w(e?.isEnd), M(e?.isBeginning)
                   },
-                  children: [r.map((e => (0, _.jsx)(h.qr, {
+                  children: [r.map((e => (0, b.jsx)(h.qr, {
                     tabIndex: "0",
                     children: (0, t.createElement)(v.A, {
                       characterData: e,
                       key: e.mugshotUrl
                     })
-                  }, e.mugshotUrl))), (0, _.jsx)(h.qr, {
-                    children: (0, _.jsx)(S.A, {
+                  }, e.mugshotUrl))), (0, b.jsx)(h.qr, {
+                    children: (0, b.jsx)(S.A, {
                       className: [s.linkMore, r.length > 0 ? s.withIcon : ""].join(" "),
                       to: i,
                       onClick: o,
-                      children: (0, _.jsx)("div", {
+                      children: (0, b.jsx)("div", {
                         className: s.btnText,
                         children: d
                       })
                     })
                   }, "linkMore")]
                 })
-              }), (0, _.jsx)("button", {
+              }), (0, b.jsx)("button", {
                 className: s.swiperBtnPrev,
                 "aria-label": "Previous Character",
                 type: "button",
@@ -600,7 +600,7 @@ _global.SENTRY_RELEASE = {
                 },
                 disabled: N,
                 "data-hidden": !k
-              }), (0, _.jsx)("button", {
+              }), (0, b.jsx)("button", {
                 className: s.swiperBtnNext,
                 "aria-label": "Next Character",
                 type: "button",
@@ -612,9 +612,9 @@ _global.SENTRY_RELEASE = {
                 "data-hidden": !k
               })]
             })]
-          }), (0, _.jsx)("div", {
+          }), (0, b.jsx)("div", {
             className: s.legal,
-            children: (0, _.jsx)(b, {
+            children: (0, b.jsx)(_, {
               legalText: a.legalText
             })
           })]
@@ -631,18 +631,18 @@ _global.SENTRY_RELEASE = {
             platformLogin: r,
             giftId: i
           } = e;
-          return (0, _.jsxs)("div", {
+          return (0, b.jsxs)("div", {
             className: [s.contentContainer, s[t], s.unlinkedSlide, s.textContent].join(" "),
             ref: n,
-            children: [(0, _.jsx)("div", {
+            children: [(0, b.jsx)("div", {
               className: s.textContent,
-              children: (0, _.jsxs)("div", {
+              children: (0, b.jsxs)("div", {
                 className: s.platformButtonContainer,
-                children: [(0, _.jsx)("div", {
+                children: [(0, b.jsx)("div", {
                   className: s.errorAlert
-                }), (0, _.jsx)("h3", {
+                }), (0, b.jsx)("h3", {
                   children: a.unlinkedScreen.headline
-                }), (0, _.jsx)(y.A, {
+                }), (0, b.jsx)(y.A, {
                   variant: "secondary",
                   buttonText: c,
                   platformsAndLinks: [{
@@ -660,11 +660,11 @@ _global.SENTRY_RELEASE = {
                   trackingParent: "WOC",
                   target: "_self",
                   trackingOId: i,
-                  children: (0, _.jsx)("div", {
+                  children: (0, b.jsx)("div", {
                     className: s.alert,
-                    children: (0, _.jsx)("div", {
+                    children: (0, b.jsx)("div", {
                       className: s.alertText,
-                      children: (0, _.jsx)("div", {
+                      children: (0, b.jsx)("div", {
                         dangerouslySetInnerHTML: {
                           __html: a.unlinkedScreen.body
                         }
@@ -673,9 +673,9 @@ _global.SENTRY_RELEASE = {
                   })
                 })]
               })
-            }), (0, _.jsx)("div", {
+            }), (0, b.jsx)("div", {
               className: s.legal,
-              children: (0, _.jsx)(b, {
+              children: (0, b.jsx)(_, {
                 legalText: a.legalText
               })
             })]
@@ -688,28 +688,28 @@ _global.SENTRY_RELEASE = {
             content: t,
             refError: n
           } = e;
-          return (0, _.jsxs)("div", {
+          return (0, b.jsxs)("div", {
             className: [s.contentContainer, s[a], s.errorSlide, s.textContent].join(" "),
             ref: n,
-            children: [(0, _.jsxs)("div", {
+            children: [(0, b.jsxs)("div", {
               className: s.textContent,
-              children: [(0, _.jsxs)("div", {
+              children: [(0, b.jsxs)("div", {
                 className: s.alert,
-                children: [(0, _.jsx)("div", {
+                children: [(0, b.jsx)("div", {
                   className: s.errorAlert
-                }), (0, _.jsx)("div", {
+                }), (0, b.jsx)("div", {
                   className: s.alertText,
-                  children: (0, _.jsx)("h3", {
+                  children: (0, b.jsx)("h3", {
                     children: t.errorScreen.headline
                   })
                 })]
-              }), (0, _.jsx)(u.A, {
+              }), (0, b.jsx)(u.A, {
                 text: t.errorScreen.btnText,
                 onClick: () => window.location.reload()
               })]
-            }), (0, _.jsx)("div", {
+            }), (0, b.jsx)("div", {
               className: s.legal,
-              children: (0, _.jsx)(b, {
+              children: (0, b.jsx)(_, {
                 legalText: t.legalText
               })
             })]
@@ -774,7 +774,7 @@ _global.SENTRY_RELEASE = {
             giftId: s,
             location: a = "gtaplus_site",
             introScreen: u,
-            errorScreen: b,
+            errorScreen: _,
             unlinkedScreen: h,
             successScreen: x,
             jumpLinkId: v,
@@ -783,8 +783,8 @@ _global.SENTRY_RELEASE = {
           const y = (0, i.useLocale)(),
             E = {
               errorScreen: {
-                btnText: b?.errorButton || "",
-                headline: b?.errorHeadline || ""
+                btnText: _?.errorButton || "",
+                headline: _?.errorHeadline || ""
               },
               introScreen: {
                 body: u?.introContent || "",
@@ -847,7 +847,7 @@ _global.SENTRY_RELEASE = {
             [de, le] = (0, t.useState)("hidden"),
             [ge, me] = (0, t.useState)("hidden"),
             [fe, ue] = (0, t.useState)(!1),
-            [_e, be] = (0, t.useState)("disabled"),
+            [be, _e] = (0, t.useState)("disabled"),
             [ke, pe] = (0, t.useState)(N.landing),
             [he, xe] = (0, t.useState)(0),
             [ve, Se] = (0, t.useState)(0),
@@ -938,10 +938,10 @@ _global.SENTRY_RELEASE = {
               o_id: s,
               text: "Something went wrong on our end. Please try again in a few minutes."
             })
-          }), [ge]), (0, _.jsxs)(_.Fragment, {
-            children: [!1, (0, _.jsx)("div", {
+          }), [ge]), (0, b.jsxs)(b.Fragment, {
+            children: [!1, (0, b.jsx)("div", {
               className: M.interestTrackerWrapper,
-              children: (0, _.jsxs)(c.motion.div, {
+              children: (0, b.jsxs)(c.motion.div, {
                 className: [M.interestTracker, te && M.loader].join(" "),
                 initial: {
                   opacity: 0
@@ -960,12 +960,12 @@ _global.SENTRY_RELEASE = {
                 "data-context": "interestTracker",
                 ref: F,
                 id: v || "",
-                children: [(0, _.jsx)("div", {
+                children: [(0, b.jsx)("div", {
                   className: M.moduleImage,
                   style: {
                     "--engagement-image": `url(${Ae})`
                   }
-                }), (0, _.jsx)("div", {
+                }), (0, b.jsx)("div", {
                   className: [M.slideContainer, te ? M.loader : ""].join(" "),
                   ref: K,
                   "data-dev-mode": "disabled",
@@ -973,13 +973,13 @@ _global.SENTRY_RELEASE = {
                     "--engagement-height": 0 === he ? "200%" : `${he}px`,
                     height: 0 !== he && se ? `${he}px` : "auto"
                   },
-                  children: te ? (0, _.jsx)("div", {
+                  children: te ? (0, b.jsx)("div", {
                     className: M.spinner,
-                    children: (0, _.jsx)(l.A, {
+                    children: (0, b.jsx)(l.A, {
                       type: "SPINNING"
                     })
-                  }) : (0, _.jsxs)(_.Fragment, {
-                    children: [(0, _.jsx)(p, {
+                  }) : (0, b.jsxs)(b.Fragment, {
+                    children: [(0, b.jsx)(p, {
                       s: M,
                       content: E,
                       refLanding: V,
@@ -1000,7 +1000,7 @@ _global.SENTRY_RELEASE = {
                           utmMedium: B.get("utm_medium"),
                           utmSource: B.get("utm_source")
                         };
-                        if ("disabled" === _e)
+                        if ("disabled" === be)
                           if (Z.length > 0) {
                             const {
                               status: s
@@ -1013,7 +1013,7 @@ _global.SENTRY_RELEASE = {
                             }) ?? [];
                             Oe(s ? N.success : N.error, !1)
                           } else Oe(N.unlinked, !1);
-                        else "success" === _e ? Oe(N.success, !1) : "error" === _e ? Oe(N.error, !1) : "unlinked" === _e && Oe(N.unlinked, !1)
+                        else "success" === be ? Oe(N.success, !1) : "error" === be ? Oe(N.error, !1) : "unlinked" === be && Oe(N.unlinked, !1)
                       },
                       signin: () => {
                         const e = `${I}?returnUrl=${encodeURIComponent(Pe)}&lang=${U}`;
@@ -1026,7 +1026,7 @@ _global.SENTRY_RELEASE = {
                         }), window.location.href = e
                       },
                       landingSlide: ie
-                    }), (0, _.jsx)(j, {
+                    }), (0, b.jsx)(j, {
                       s: M,
                       content: E,
                       refSuccess: X,
@@ -1041,10 +1041,10 @@ _global.SENTRY_RELEASE = {
                           text: m.engagement.engagement_link_account.defaultMessage
                         })
                       },
-                      linkAccountBtn: (0, _.jsx)(g.FormattedMessage, {
+                      linkAccountBtn: (0, b.jsx)(g.FormattedMessage, {
                         ...m.engagement.engagement_link_account
                       })
-                    }), (0, _.jsx)(C, {
+                    }), (0, b.jsx)(C, {
                       s: M,
                       content: E,
                       unlinkedSlide: de,
@@ -1052,7 +1052,7 @@ _global.SENTRY_RELEASE = {
                       linkConsoleText: H.formatMessage(m.engagement.engagement_link_console_account),
                       platformLogin: e => `https://${A}.rockstargames.com/tpa/${e}/link/?cid=${L}&lang=${U}&returnUrl=${encodeURIComponent(Pe)}&accessToken=${P}`,
                       giftId: s
-                    }), (0, _.jsx)(w, {
+                    }), (0, b.jsx)(w, {
                       s: M,
                       errorSlide: ge,
                       content: E,

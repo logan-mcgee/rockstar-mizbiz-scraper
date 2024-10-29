@@ -21,7 +21,7 @@ _global.SENTRY_RELEASE = {
       t.r(n), t.d(n, {
         NIL: () => S,
         parse: () => h,
-        stringify: () => f,
+        stringify: () => i,
         v1: () => g,
         v3: () => k,
         v4: () => E,
@@ -39,40 +39,40 @@ _global.SENTRY_RELEASE = {
         s = function(e) {
           return "string" == typeof e && c.test(e)
         },
-        l = [];
-      for (let e = 0; e < 256; ++e) l.push((e + 256).toString(16).slice(1));
+        f = [];
+      for (let e = 0; e < 256; ++e) f.push((e + 256).toString(16).slice(1));
 
-      function i(e) {
+      function l(e) {
         let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
-        return l[e[n + 0]] + l[e[n + 1]] + l[e[n + 2]] + l[e[n + 3]] + "-" + l[e[n + 4]] + l[e[n + 5]] + "-" + l[e[n + 6]] + l[e[n + 7]] + "-" + l[e[n + 8]] + l[e[n + 9]] + "-" + l[e[n + 10]] + l[e[n + 11]] + l[e[n + 12]] + l[e[n + 13]] + l[e[n + 14]] + l[e[n + 15]]
+        return f[e[n + 0]] + f[e[n + 1]] + f[e[n + 2]] + f[e[n + 3]] + "-" + f[e[n + 4]] + f[e[n + 5]] + "-" + f[e[n + 6]] + f[e[n + 7]] + "-" + f[e[n + 8]] + f[e[n + 9]] + "-" + f[e[n + 10]] + f[e[n + 11]] + f[e[n + 12]] + f[e[n + 13]] + f[e[n + 14]] + f[e[n + 15]]
       }
-      const f = function(e) {
-        const n = i(e, arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0);
+      const i = function(e) {
+        const n = l(e, arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0);
         if (!s(n)) throw TypeError("Stringified UUID is invalid");
         return n
       };
-      let u, d, p = 0,
+      let d, u, p = 0,
         y = 0;
       const g = function(e, n, t) {
           let r = n && t || 0;
           const o = n || new Array(16);
-          let c = (e = e || {}).node || u,
-            s = void 0 !== e.clockseq ? e.clockseq : d;
+          let c = (e = e || {}).node || d,
+            s = void 0 !== e.clockseq ? e.clockseq : u;
           if (null == c || null == s) {
             const n = e.random || (e.rng || a)();
-            null == c && (c = u = [1 | n[0], n[1], n[2], n[3], n[4], n[5]]), null == s && (s = d = 16383 & (n[6] << 8 | n[7]))
+            null == c && (c = d = [1 | n[0], n[1], n[2], n[3], n[4], n[5]]), null == s && (s = u = 16383 & (n[6] << 8 | n[7]))
           }
-          let l = void 0 !== e.msecs ? e.msecs : Date.now(),
-            f = void 0 !== e.nsecs ? e.nsecs : y + 1;
-          const g = l - p + (f - y) / 1e4;
-          if (g < 0 && void 0 === e.clockseq && (s = s + 1 & 16383), (g < 0 || l > p) && void 0 === e.nsecs && (f = 0), f >= 1e4) throw new Error("uuid.v1(): Can't create more than 10M uuids/sec");
-          p = l, y = f, d = s, l += 122192928e5;
-          const h = (1e4 * (268435455 & l) + f) % 4294967296;
+          let f = void 0 !== e.msecs ? e.msecs : Date.now(),
+            i = void 0 !== e.nsecs ? e.nsecs : y + 1;
+          const g = f - p + (i - y) / 1e4;
+          if (g < 0 && void 0 === e.clockseq && (s = s + 1 & 16383), (g < 0 || f > p) && void 0 === e.nsecs && (i = 0), i >= 1e4) throw new Error("uuid.v1(): Can't create more than 10M uuids/sec");
+          p = f, y = i, u = s, f += 122192928e5;
+          const h = (1e4 * (268435455 & f) + i) % 4294967296;
           o[r++] = h >>> 24 & 255, o[r++] = h >>> 16 & 255, o[r++] = h >>> 8 & 255, o[r++] = 255 & h;
-          const b = l / 4294967296 * 1e4 & 268435455;
+          const b = f / 4294967296 * 1e4 & 268435455;
           o[r++] = b >>> 8 & 255, o[r++] = 255 & b, o[r++] = b >>> 24 & 15 | 16, o[r++] = b >>> 16 & 255, o[r++] = s >>> 8 | 128, o[r++] = 255 & s;
           for (let e = 0; e < 6; ++e) o[r + e] = c[e];
-          return n || i(o)
+          return n || l(o)
         },
         h = function(e) {
           if (!s(e)) throw TypeError("Invalid UUID");
@@ -96,7 +96,7 @@ _global.SENTRY_RELEASE = {
             for (let e = 0; e < 16; ++e) o[a + e] = s[e];
             return o
           }
-          return i(s)
+          return l(s)
         }
         try {
           r.name = e
@@ -158,9 +158,9 @@ _global.SENTRY_RELEASE = {
             for (let n = 0; n < e.length; n += 16) {
               const c = t,
                 s = r,
-                l = o,
-                i = a;
-              t = U(t, r, o, a, e[n], 7, -680876936), a = U(a, t, r, o, e[n + 1], 12, -389564586), o = U(o, a, t, r, e[n + 2], 17, 606105819), r = U(r, o, a, t, e[n + 3], 22, -1044525330), t = U(t, r, o, a, e[n + 4], 7, -176418897), a = U(a, t, r, o, e[n + 5], 12, 1200080426), o = U(o, a, t, r, e[n + 6], 17, -1473231341), r = U(r, o, a, t, e[n + 7], 22, -45705983), t = U(t, r, o, a, e[n + 8], 7, 1770035416), a = U(a, t, r, o, e[n + 9], 12, -1958414417), o = U(o, a, t, r, e[n + 10], 17, -42063), r = U(r, o, a, t, e[n + 11], 22, -1990404162), t = U(t, r, o, a, e[n + 12], 7, 1804603682), a = U(a, t, r, o, e[n + 13], 12, -40341101), o = U(o, a, t, r, e[n + 14], 17, -1502002290), r = U(r, o, a, t, e[n + 15], 22, 1236535329), t = I(t, r, o, a, e[n + 1], 5, -165796510), a = I(a, t, r, o, e[n + 6], 9, -1069501632), o = I(o, a, t, r, e[n + 11], 14, 643717713), r = I(r, o, a, t, e[n], 20, -373897302), t = I(t, r, o, a, e[n + 5], 5, -701558691), a = I(a, t, r, o, e[n + 10], 9, 38016083), o = I(o, a, t, r, e[n + 15], 14, -660478335), r = I(r, o, a, t, e[n + 4], 20, -405537848), t = I(t, r, o, a, e[n + 9], 5, 568446438), a = I(a, t, r, o, e[n + 14], 9, -1019803690), o = I(o, a, t, r, e[n + 3], 14, -187363961), r = I(r, o, a, t, e[n + 8], 20, 1163531501), t = I(t, r, o, a, e[n + 13], 5, -1444681467), a = I(a, t, r, o, e[n + 2], 9, -51403784), o = I(o, a, t, r, e[n + 7], 14, 1735328473), r = I(r, o, a, t, e[n + 12], 20, -1926607734), t = _(t, r, o, a, e[n + 5], 4, -378558), a = _(a, t, r, o, e[n + 8], 11, -2022574463), o = _(o, a, t, r, e[n + 11], 16, 1839030562), r = _(r, o, a, t, e[n + 14], 23, -35309556), t = _(t, r, o, a, e[n + 1], 4, -1530992060), a = _(a, t, r, o, e[n + 4], 11, 1272893353), o = _(o, a, t, r, e[n + 7], 16, -155497632), r = _(r, o, a, t, e[n + 10], 23, -1094730640), t = _(t, r, o, a, e[n + 13], 4, 681279174), a = _(a, t, r, o, e[n], 11, -358537222), o = _(o, a, t, r, e[n + 3], 16, -722521979), r = _(r, o, a, t, e[n + 6], 23, 76029189), t = _(t, r, o, a, e[n + 9], 4, -640364487), a = _(a, t, r, o, e[n + 12], 11, -421815835), o = _(o, a, t, r, e[n + 15], 16, 530742520), r = _(r, o, a, t, e[n + 2], 23, -995338651), t = A(t, r, o, a, e[n], 6, -198630844), a = A(a, t, r, o, e[n + 7], 10, 1126891415), o = A(o, a, t, r, e[n + 14], 15, -1416354905), r = A(r, o, a, t, e[n + 5], 21, -57434055), t = A(t, r, o, a, e[n + 12], 6, 1700485571), a = A(a, t, r, o, e[n + 3], 10, -1894986606), o = A(o, a, t, r, e[n + 10], 15, -1051523), r = A(r, o, a, t, e[n + 1], 21, -2054922799), t = A(t, r, o, a, e[n + 8], 6, 1873313359), a = A(a, t, r, o, e[n + 15], 10, -30611744), o = A(o, a, t, r, e[n + 6], 15, -1560198380), r = A(r, o, a, t, e[n + 13], 21, 1309151649), t = A(t, r, o, a, e[n + 4], 6, -145523070), a = A(a, t, r, o, e[n + 11], 10, -1120210379), o = A(o, a, t, r, e[n + 2], 15, 718787259), r = A(r, o, a, t, e[n + 9], 21, -343485551), t = v(t, c), r = v(r, s), o = v(o, l), a = v(a, i)
+                f = o,
+                l = a;
+              t = U(t, r, o, a, e[n], 7, -680876936), a = U(a, t, r, o, e[n + 1], 12, -389564586), o = U(o, a, t, r, e[n + 2], 17, 606105819), r = U(r, o, a, t, e[n + 3], 22, -1044525330), t = U(t, r, o, a, e[n + 4], 7, -176418897), a = U(a, t, r, o, e[n + 5], 12, 1200080426), o = U(o, a, t, r, e[n + 6], 17, -1473231341), r = U(r, o, a, t, e[n + 7], 22, -45705983), t = U(t, r, o, a, e[n + 8], 7, 1770035416), a = U(a, t, r, o, e[n + 9], 12, -1958414417), o = U(o, a, t, r, e[n + 10], 17, -42063), r = U(r, o, a, t, e[n + 11], 22, -1990404162), t = U(t, r, o, a, e[n + 12], 7, 1804603682), a = U(a, t, r, o, e[n + 13], 12, -40341101), o = U(o, a, t, r, e[n + 14], 17, -1502002290), r = U(r, o, a, t, e[n + 15], 22, 1236535329), t = I(t, r, o, a, e[n + 1], 5, -165796510), a = I(a, t, r, o, e[n + 6], 9, -1069501632), o = I(o, a, t, r, e[n + 11], 14, 643717713), r = I(r, o, a, t, e[n], 20, -373897302), t = I(t, r, o, a, e[n + 5], 5, -701558691), a = I(a, t, r, o, e[n + 10], 9, 38016083), o = I(o, a, t, r, e[n + 15], 14, -660478335), r = I(r, o, a, t, e[n + 4], 20, -405537848), t = I(t, r, o, a, e[n + 9], 5, 568446438), a = I(a, t, r, o, e[n + 14], 9, -1019803690), o = I(o, a, t, r, e[n + 3], 14, -187363961), r = I(r, o, a, t, e[n + 8], 20, 1163531501), t = I(t, r, o, a, e[n + 13], 5, -1444681467), a = I(a, t, r, o, e[n + 2], 9, -51403784), o = I(o, a, t, r, e[n + 7], 14, 1735328473), r = I(r, o, a, t, e[n + 12], 20, -1926607734), t = _(t, r, o, a, e[n + 5], 4, -378558), a = _(a, t, r, o, e[n + 8], 11, -2022574463), o = _(o, a, t, r, e[n + 11], 16, 1839030562), r = _(r, o, a, t, e[n + 14], 23, -35309556), t = _(t, r, o, a, e[n + 1], 4, -1530992060), a = _(a, t, r, o, e[n + 4], 11, 1272893353), o = _(o, a, t, r, e[n + 7], 16, -155497632), r = _(r, o, a, t, e[n + 10], 23, -1094730640), t = _(t, r, o, a, e[n + 13], 4, 681279174), a = _(a, t, r, o, e[n], 11, -358537222), o = _(o, a, t, r, e[n + 3], 16, -722521979), r = _(r, o, a, t, e[n + 6], 23, 76029189), t = _(t, r, o, a, e[n + 9], 4, -640364487), a = _(a, t, r, o, e[n + 12], 11, -421815835), o = _(o, a, t, r, e[n + 15], 16, 530742520), r = _(r, o, a, t, e[n + 2], 23, -995338651), t = A(t, r, o, a, e[n], 6, -198630844), a = A(a, t, r, o, e[n + 7], 10, 1126891415), o = A(o, a, t, r, e[n + 14], 15, -1416354905), r = A(r, o, a, t, e[n + 5], 21, -57434055), t = A(t, r, o, a, e[n + 12], 6, 1700485571), a = A(a, t, r, o, e[n + 3], 10, -1894986606), o = A(o, a, t, r, e[n + 10], 15, -1051523), r = A(r, o, a, t, e[n + 1], 21, -2054922799), t = A(t, r, o, a, e[n + 8], 6, 1873313359), a = A(a, t, r, o, e[n + 15], 10, -30611744), o = A(o, a, t, r, e[n + 6], 15, -1560198380), r = A(r, o, a, t, e[n + 13], 21, 1309151649), t = A(t, r, o, a, e[n + 4], 6, -145523070), a = A(a, t, r, o, e[n + 11], 10, -1120210379), o = A(o, a, t, r, e[n + 2], 15, 718787259), r = A(r, o, a, t, e[n + 9], 21, -343485551), t = v(t, c), r = v(r, s), o = v(o, f), a = v(a, l)
             }
             return [t, r, o, a]
           }(function(e) {
@@ -182,7 +182,7 @@ _global.SENTRY_RELEASE = {
             for (let e = 0; e < 16; ++e) n[t + e] = r[e];
             return n
           }
-          return i(r)
+          return l(r)
         };
 
       function M(e, n, t, r) {
@@ -225,14 +225,14 @@ _global.SENTRY_RELEASE = {
             let o = t[0],
               c = t[1],
               s = t[2],
-              l = t[3],
-              i = t[4];
+              f = t[3],
+              l = t[4];
             for (let e = 0; e < 80; ++e) {
               const t = Math.floor(e / 20),
-                a = C(o, 5) + M(t, c, s, l) + i + n[t] + r[e] >>> 0;
-              i = l, l = s, s = C(c, 30) >>> 0, c = o, o = a
+                a = C(o, 5) + M(t, c, s, f) + l + n[t] + r[e] >>> 0;
+              l = f, f = s, s = C(c, 30) >>> 0, c = o, o = a
             }
-            t[0] = t[0] + o >>> 0, t[1] = t[1] + c >>> 0, t[2] = t[2] + s >>> 0, t[3] = t[3] + l >>> 0, t[4] = t[4] + i >>> 0
+            t[0] = t[0] + o >>> 0, t[1] = t[1] + c >>> 0, t[2] = t[2] + s >>> 0, t[3] = t[3] + f >>> 0, t[4] = t[4] + l >>> 0
           }
           return [t[0] >> 24 & 255, t[0] >> 16 & 255, t[0] >> 8 & 255, 255 & t[0], t[1] >> 24 & 255, t[1] >> 16 & 255, t[1] >> 8 & 255, 255 & t[1], t[2] >> 24 & 255, t[2] >> 16 & 255, t[2] >> 8 & 255, 255 & t[2], t[3] >> 24 & 255, t[3] >> 16 & 255, t[3] >> 8 & 255, 255 & t[3], t[4] >> 24 & 255, t[4] >> 16 & 255, t[4] >> 8 & 255, 255 & t[4]]
         })),

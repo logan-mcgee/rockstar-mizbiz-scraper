@@ -27,8 +27,8 @@ _global.SENTRY_RELEASE = {
         l = d(96717),
         c = d(63902),
         p = d(52757),
-        m = (d(83142), d(80594), d(91045), d(18118), d(813), d(92306), d(74035), d(21535), d(43474), d(88863), d(17240), d(76277), d(95911), d(88372), d(20442), d(26266), d(33719), d(95938), d(45669), d(31190)),
-        f = d(84828),
+        f = (d(83142), d(80594), d(91045), d(18118), d(813), d(92306), d(74035), d(21535), d(43474), d(88863), d(17240), d(76277), d(95911), d(88372), d(20442), d(26266), d(33719), d(95938), d(45669), d(31190)),
+        m = d(84828),
         b = d(46632);
       const g = (0, n.makeVar)(null),
         u = window?.env?.graphEnv ?? "prod",
@@ -48,7 +48,7 @@ _global.SENTRY_RELEASE = {
                     lang: d,
                     children: (0, b.jsxs)(o.A, {
                       threshold: [25, 50, 75, 90, 100],
-                      children: [e, (0, b.jsx)(f.A, {
+                      children: [e, (0, b.jsx)(m.A, {
                         ...y
                       })]
                     })
@@ -71,7 +71,7 @@ _global.SENTRY_RELEASE = {
           typePolicies: {}
         }),
         v = document.createElement("div");
-      document.body.appendChild(v), (0, m.H)(v).render((0, b.jsx)(w, {}))
+      document.body.appendChild(v), (0, f.H)(v).render((0, b.jsx)(w, {}))
     }
   }
 ]);

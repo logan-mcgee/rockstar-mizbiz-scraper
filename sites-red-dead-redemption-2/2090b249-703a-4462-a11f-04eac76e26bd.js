@@ -19,8 +19,8 @@ _global.SENTRY_RELEASE = {
     30033: (e, a, t) => {
       "use strict";
       t.r(a), t.d(a, {
-        fbar: () => u,
-        useAgegated: () => g
+        fbar: () => g,
+        useAgegated: () => f
       });
       var s = t(40207),
         n = t(42756),
@@ -41,14 +41,14 @@ _global.SENTRY_RELEASE = {
             t: c
           } = e;
           const {
-            track: g
+            track: f
           } = (0, s.useGtmTrack)(), {
-            mutateLSSettings: u
-          } = (0, n.useRockstarWebLSSettings)(), [f, m] = (0, d.useState)(null), p = (0, d.createRef)(), b = (0, d.createRef)(), _ = (0, d.createRef)(), {
+            mutateLSSettings: g
+          } = (0, n.useRockstarWebLSSettings)(), [u, b] = (0, d.useState)(null), m = (0, d.createRef)(), p = (0, d.createRef)(), _ = (0, d.createRef)(), {
             style: h
           } = t;
           (0, d.useEffect)((() => {
-            g({
+            f({
               event: "age_gate_popup",
               element_placement: l.element_placement ?? ""
             })
@@ -67,24 +67,24 @@ _global.SENTRY_RELEASE = {
               style: t?.bgImg ? {
                 backgroundImage: `url(${t.bgImg})`
               } : {}
-            }), !1 === f ? (0, i.jsx)("h5", {
+            }), !1 === u ? (0, i.jsx)("h5", {
               className: o.error,
               children: c("Please enter a valid age")
             }) : "", (0, i.jsxs)("form", {
               onSubmit: async e => {
                 e.preventDefault();
-                const a = `${_.current.value}-${p.current.value.padStart(2,0)}-${b.current.value.padStart(2,0)}`,
+                const a = `${_.current.value}-${m.current.value.padStart(2,0)}-${p.current.value.padStart(2,0)}`,
                   t = r()(a, "YYYY-MM-DD", !0).isValid();
-                if (m(t), t) {
+                if (b(t), t) {
                   const e = r()().diff(a, "years") >= 17;
-                  g(e ? {
+                  f(e ? {
                     event: "age_gate_passed",
                     element_placement: l.element_placement ?? ""
                   } : {
                     event: "age_gate_failed",
                     element_placement: l.element_placement ?? "",
                     text: "you may not view this content at this time"
-                  }), u({
+                  }), g({
                     key: "agegatePass",
                     value: e
                   })
@@ -98,7 +98,7 @@ _global.SENTRY_RELEASE = {
                   htmlFor: "monthInput",
                   children: [c("Month"), (0, i.jsx)("input", {
                     id: "monthInput",
-                    ref: p,
+                    ref: m,
                     placeholder: c("MM"),
                     maxLength: 2
                   })]
@@ -106,7 +106,7 @@ _global.SENTRY_RELEASE = {
                   htmlFor: "dayInput",
                   children: [c("Day"), (0, i.jsx)("input", {
                     id: "dayInput",
-                    ref: b,
+                    ref: p,
                     placeholder: c("DD"),
                     maxLength: 2
                   })]
@@ -128,7 +128,7 @@ _global.SENTRY_RELEASE = {
             }), t?.footer]
           }) : null
         })),
-        g = () => {
+        f = () => {
           const {
             lsSettings: e
           } = (0, n.useRockstarWebLSSettings)(), {
@@ -147,7 +147,7 @@ _global.SENTRY_RELEASE = {
             })
           }
         },
-        u = 12
+        g = 12
     },
     3941: e => {
       function a(e) {
