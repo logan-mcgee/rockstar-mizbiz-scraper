@@ -48,7 +48,7 @@ _global.SENTRY_RELEASE = {
         createPath: () => a.AO,
         createRoutesFromChildren: () => r.AV,
         createRoutesFromElements: () => r.Eu,
-        createSearchParams: () => f,
+        createSearchParams: () => d,
         defer: () => a.v6,
         generatePath: () => a.tW,
         isRouteErrorResponse: () => a.pX,
@@ -120,7 +120,7 @@ _global.SENTRY_RELEASE = {
         return null != e && "string" == typeof e.tagName
       }
 
-      function f(e) {
+      function d(e) {
         return void 0 === e && (e = ""), new URLSearchParams("string" == typeof e || Array.isArray(e) || e instanceof URLSearchParams ? e : Object.keys(e).reduce(((t, n) => {
           let o = e[n];
           return t.concat(Array.isArray(o) ? o.map((e => [n, e])) : [
@@ -128,7 +128,7 @@ _global.SENTRY_RELEASE = {
           ])
         }), []))
       }
-      let d = null;
+      let f = null;
       const m = new Set(["application/x-www-form-urlencoded", "multipart/form-data", "text/plain"]);
 
       function p(e) {
@@ -137,7 +137,7 @@ _global.SENTRY_RELEASE = {
 
       function w(e, t) {
         let n, o, r, i, s;
-        if (c(f = e) && "form" === f.tagName.toLowerCase()) {
+        if (c(d = e) && "form" === d.tagName.toLowerCase()) {
           let s = e.getAttribute("action");
           o = s ? (0, a.pb)(s, t) : null, n = e.getAttribute("method") || l, r = p(e.getAttribute("enctype")) || u, i = new FormData(e)
         } else if (function(e) {
@@ -149,12 +149,12 @@ _global.SENTRY_RELEASE = {
           if (null == s) throw new Error('Cannot submit a <button> or <input type="submit"> without a <form>');
           let c = e.getAttribute("formaction") || s.getAttribute("action");
           if (o = c ? (0, a.pb)(c, t) : null, n = e.getAttribute("formmethod") || s.getAttribute("method") || l, r = p(e.getAttribute("formenctype")) || p(s.getAttribute("enctype")) || u, i = new FormData(s, e), ! function() {
-              if (null === d) try {
-                new FormData(document.createElement("form"), 0), d = !1
+              if (null === f) try {
+                new FormData(document.createElement("form"), 0), f = !1
               } catch (e) {
-                d = !0
+                f = !0
               }
-              return d
+              return f
             }()) {
             let {
               name: t,
@@ -170,7 +170,7 @@ _global.SENTRY_RELEASE = {
           if (c(e)) throw new Error('Cannot submit element that is not <form>, <button>, or <input type="submit|image">');
           n = l, o = null, r = u, s = e
         }
-        var f;
+        var d;
         return i && "text/plain" === r && (s = i, i = void 0), {
           action: o,
           method: n.toLowerCase(),
@@ -265,9 +265,9 @@ _global.SENTRY_RELEASE = {
           fallbackElement: t,
           router: n,
           future: a
-        } = e, [i, s] = o.useState(n.state), [l, u] = o.useState(), [c, f] = o.useState({
+        } = e, [i, s] = o.useState(n.state), [l, u] = o.useState(), [c, d] = o.useState({
           isTransitioning: !1
-        }), [d, m] = o.useState(), [p, w] = o.useState(), [v, h] = o.useState(), {
+        }), [f, m] = o.useState(), [p, w] = o.useState(), [v, h] = o.useState(), {
           v7_startTransition: b
         } = a || {}, g = o.useCallback((e => {
           b ? function(e) {
@@ -277,35 +277,35 @@ _global.SENTRY_RELEASE = {
           let {
             unstable_viewTransitionOpts: o
           } = t;
-          o && null != n.window && "function" == typeof n.window.document.startViewTransition ? p && d ? (d.resolve(), p.skipTransition(), h({
+          o && null != n.window && "function" == typeof n.window.document.startViewTransition ? p && f ? (f.resolve(), p.skipTransition(), h({
             state: e,
             currentLocation: o.currentLocation,
             nextLocation: o.nextLocation
-          })) : (u(e), f({
+          })) : (u(e), d({
             isTransitioning: !0,
             currentLocation: o.currentLocation,
             nextLocation: o.nextLocation
           })) : g((() => s(e)))
-        }), [g, p, d, n.window]);
+        }), [g, p, f, n.window]);
         o.useLayoutEffect((() => n.subscribe(y)), [n, y]), o.useEffect((() => {
           c.isTransitioning && m(new T)
         }), [c.isTransitioning]), o.useEffect((() => {
-          if (d && l && n.window) {
+          if (f && l && n.window) {
             let e = l,
-              t = d.promise,
+              t = f.promise,
               o = n.window.document.startViewTransition((async () => {
                 g((() => s(e))), await t
               }));
             o.finished.finally((() => {
-              m(void 0), w(void 0), u(void 0), f({
+              m(void 0), w(void 0), u(void 0), d({
                 isTransitioning: !1
               })
             })), w(o)
           }
-        }), [g, l, d, n.window]), o.useEffect((() => {
-          d && l && i.location.key === l.location.key && d.resolve()
-        }), [d, p, i.location, l]), o.useEffect((() => {
-          !c.isTransitioning && v && (u(v.state), f({
+        }), [g, l, f, n.window]), o.useEffect((() => {
+          f && l && i.location.key === l.location.key && f.resolve()
+        }), [f, p, i.location, l]), o.useEffect((() => {
+          !c.isTransitioning && v && (u(v.state), d({
             isTransitioning: !0,
             currentLocation: v.currentLocation,
             nextLocation: v.nextLocation
@@ -369,16 +369,16 @@ _global.SENTRY_RELEASE = {
           v5Compat: !0
         }));
         let u = l.current,
-          [c, f] = o.useState({
+          [c, d] = o.useState({
             action: u.action,
             location: u.location
           }),
           {
-            v7_startTransition: d
+            v7_startTransition: f
           } = i || {},
           m = o.useCallback((e => {
-            d && _ ? _((() => f(e))) : f(e)
-          }), [f, d]);
+            f && _ ? _((() => d(e))) : d(e)
+          }), [d, f]);
         return o.useLayoutEffect((() => u.listen(m)), [u, m]), o.createElement(r.Ix, {
           basename: t,
           children: n,
@@ -400,16 +400,16 @@ _global.SENTRY_RELEASE = {
           v5Compat: !0
         }));
         let u = l.current,
-          [c, f] = o.useState({
+          [c, d] = o.useState({
             action: u.action,
             location: u.location
           }),
           {
-            v7_startTransition: d
+            v7_startTransition: f
           } = i || {},
           m = o.useCallback((e => {
-            d && _ ? _((() => f(e))) : f(e)
-          }), [f, d]);
+            f && _ ? _((() => d(e))) : d(e)
+          }), [d, f]);
         return o.useLayoutEffect((() => u.listen(m)), [u, m]), o.createElement(r.Ix, {
           basename: t,
           children: n,
@@ -448,8 +448,8 @@ _global.SENTRY_RELEASE = {
               onClick: l,
               relative: u,
               reloadDocument: c,
-              replace: f,
-              state: d,
+              replace: d,
+              state: f,
               target: m,
               to: p,
               preventScrollReset: w,
@@ -470,8 +470,8 @@ _global.SENTRY_RELEASE = {
               relative: u
             }),
             S = z(p, {
-              replace: f,
-              state: d,
+              replace: d,
+              state: f,
               target: m,
               preventScrollReset: w,
               relative: u,
@@ -493,14 +493,14 @@ _global.SENTRY_RELEASE = {
             className: l = "",
             end: u = !1,
             style: c,
-            to: f,
-            unstable_viewTransition: d,
+            to: d,
+            unstable_viewTransition: f,
             children: m
-          } = e, p = s(e, h), w = (0, r.x$)(f, {
+          } = e, p = s(e, h), w = (0, r.x$)(d, {
             relative: p.relative
           }), v = (0, r.zy)(), b = o.useContext(r.Rq), {
             navigator: g
-          } = o.useContext(r.jb), y = null != b && ne(w) && !0 === d, R = g.encodeLocation ? g.encodeLocation(w).pathname : w.pathname, S = v.pathname, E = b && b.navigation && b.navigation.location ? b.navigation.location.pathname : null;
+          } = o.useContext(r.jb), y = null != b && ne(w) && !0 === f, R = g.encodeLocation ? g.encodeLocation(w).pathname : w.pathname, S = v.pathname, E = b && b.navigation && b.navigation.location ? b.navigation.location.pathname : null;
           a || (S = S.toLowerCase(), E = E ? E.toLowerCase() : null, R = R.toLowerCase());
           let _, T = S === R || !u && S.startsWith(R) && "/" === S.charAt(R.length),
             L = null != E && (E === R || !u && E.startsWith(R) && "/" === E.charAt(R.length)),
@@ -517,8 +517,8 @@ _global.SENTRY_RELEASE = {
             className: _,
             ref: t,
             style: k,
-            to: f,
-            unstable_viewTransition: d
+            to: d,
+            unstable_viewTransition: f
           }), "function" == typeof m ? m(C) : m)
         })),
         N = o.forwardRef(((e, t) => {
@@ -535,8 +535,8 @@ _global.SENTRY_RELEASE = {
             state: a,
             method: u = l,
             action: c,
-            onSubmit: f,
-            submit: d,
+            onSubmit: d,
+            submit: f,
             relative: m,
             preventScrollReset: p,
             unstable_viewTransition: w
@@ -547,12 +547,12 @@ _global.SENTRY_RELEASE = {
             ref: t,
             method: h,
             action: g,
-            onSubmit: n ? f : e => {
-              if (f && f(e), e.defaultPrevented) return;
+            onSubmit: n ? d : e => {
+              if (d && d(e), e.defaultPrevented) return;
               e.preventDefault();
               let t = e.nativeEvent.submitter,
                 n = (null == t ? void 0 : t.getAttribute("formmethod")) || u;
-              d(t || e.currentTarget, {
+              f(t || e.currentTarget, {
                 method: n,
                 replace: r,
                 state: a,
@@ -594,7 +594,7 @@ _global.SENTRY_RELEASE = {
           preventScrollReset: l,
           relative: u,
           unstable_viewTransition: c
-        } = void 0 === t ? {} : t, f = (0, r.Zp)(), d = (0, r.zy)(), m = (0, r.x$)(e, {
+        } = void 0 === t ? {} : t, d = (0, r.Zp)(), f = (0, r.zy)(), m = (0, r.x$)(e, {
           relative: u
         });
         return o.useCallback((t => {
@@ -604,8 +604,8 @@ _global.SENTRY_RELEASE = {
               }(e))
             }(t, n)) {
             t.preventDefault();
-            let n = void 0 !== i ? i : (0, a.AO)(d) === (0, a.AO)(m);
-            f(e, {
+            let n = void 0 !== i ? i : (0, a.AO)(f) === (0, a.AO)(m);
+            d(e, {
               replace: n,
               state: s,
               preventScrollReset: l,
@@ -613,15 +613,15 @@ _global.SENTRY_RELEASE = {
               unstable_viewTransition: c
             })
           }
-        }), [d, f, m, i, s, n, e, l, u, c])
+        }), [f, d, m, i, s, n, e, l, u, c])
       }
 
       function K(e) {
-        let t = o.useRef(f(e)),
+        let t = o.useRef(d(e)),
           n = o.useRef(!1),
           a = (0, r.zy)(),
           i = o.useMemo((() => function(e, t) {
-            let n = f(e);
+            let n = d(e);
             return t && t.forEach(((e, o) => {
               n.has(o) || t.getAll(o).forEach((e => {
                 n.append(o, e)
@@ -630,7 +630,7 @@ _global.SENTRY_RELEASE = {
           }(a.search, n.current ? null : t.current)), [a.search]),
           s = (0, r.Zp)(),
           l = o.useCallback(((e, t) => {
-            const o = f("function" == typeof e ? e(i) : e);
+            const o = d("function" == typeof e ? e(i) : e);
             n.current = !0, s("?" + o, t)
           }), [s, i]);
         return [i, l]
@@ -682,12 +682,12 @@ _global.SENTRY_RELEASE = {
             method: l,
             encType: u,
             formData: c,
-            body: f
+            body: d
           } = w(o, i);
           null == t && (0, a.Oi)(!1), n.fetch(e, t, r.action || s, {
             preventScrollReset: r.preventScrollReset,
             formData: c,
-            body: f,
+            body: d,
             formMethod: r.method || l,
             formEncType: r.encType || u
           })
@@ -703,8 +703,8 @@ _global.SENTRY_RELEASE = {
         l || (0, a.Oi)(!1);
         let [u] = l.matches.slice(-1), c = i({}, (0, r.x$)(e || ".", {
           relative: n
-        })), f = (0, r.zy)();
-        if (null == e && (c.search = f.search, u.route.index)) {
+        })), d = (0, r.zy)();
+        if (null == e && (c.search = d.search, u.route.index)) {
           let e = new URLSearchParams(c.search);
           e.delete("index"), c.search = e.toString() ? "?" + e.toString() : ""
         }
@@ -735,11 +735,11 @@ _global.SENTRY_RELEASE = {
           }))
         }(l, s)))), [c] = o.useState((() => e => {
           t || (0, a.Oi)(!1), s || (0, a.Oi)(!1), t.fetch(l, s, e)
-        })), f = q(l, s), d = t.getFetcher(l), m = o.useMemo((() => i({
+        })), d = q(l, s), f = t.getFetcher(l), m = o.useMemo((() => i({
           Form: u,
-          submit: f,
+          submit: d,
           load: c
-        }, d)), [d, u, f, c]);
+        }, f)), [f, u, d, c]);
         return o.useEffect((() => () => {
           t ? t.deleteFetcher(l) : console.warn("No router available to clean up from useFetcher()")
         }), [t, l]), m
@@ -762,7 +762,7 @@ _global.SENTRY_RELEASE = {
           preventScrollReset: u
         } = V(j.UseScrollRestoration), {
           basename: c
-        } = o.useContext(r.jb), f = (0, r.zy)(), d = (0, r.FE)(), m = (0, r.cq)();
+        } = o.useContext(r.jb), d = (0, r.zy)(), f = (0, r.FE)(), m = (0, r.cq)();
         o.useEffect((() => (window.history.scrollRestoration = "manual", () => {
             window.history.scrollRestoration = "auto"
           })), []),
@@ -780,14 +780,14 @@ _global.SENTRY_RELEASE = {
             }), [e, n])
           }(o.useCallback((() => {
             if ("idle" === m.state) {
-              let e = (t ? t(f, d) : null) || f.key;
+              let e = (t ? t(d, f) : null) || d.key;
               Q[e] = window.scrollY
             }
             try {
               sessionStorage.setItem(n || Z, JSON.stringify(Q))
             } catch (e) {}
             window.history.scrollRestoration = "auto"
-          }), [n, t, m.state, f, d])), "undefined" != typeof document && (o.useLayoutEffect((() => {
+          }), [n, t, m.state, d, f])), "undefined" != typeof document && (o.useLayoutEffect((() => {
             try {
               let e = sessionStorage.getItem(n || Z);
               e && (Q = JSON.parse(e))
@@ -801,12 +801,12 @@ _global.SENTRY_RELEASE = {
           }), [s, c, t]), o.useLayoutEffect((() => {
             if (!1 !== l)
               if ("number" != typeof l) {
-                if (f.hash) {
-                  let e = document.getElementById(decodeURIComponent(f.hash.slice(1)));
+                if (d.hash) {
+                  let e = document.getElementById(decodeURIComponent(d.hash.slice(1)));
                   if (e) return void e.scrollIntoView()
                 }!0 !== u && window.scrollTo(0, 0)
               } else window.scrollTo(0, l)
-          }), [f, l, u]))
+          }), [d, l, u]))
       }
 
       function ee(e, t) {

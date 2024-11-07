@@ -71,10 +71,10 @@ _global.SENTRY_RELEASE = {
         u = a(60285),
         x = a(22778),
         j = a(39613),
-        b = a(41074),
-        g = a(28606),
-        p = a(87839),
-        w = a(2024),
+        g = a(41074),
+        p = a(28606),
+        w = a(87839),
+        b = a(2024),
         _ = a(95625),
         h = a(61841),
         y = a(43108),
@@ -123,7 +123,7 @@ _global.SENTRY_RELEASE = {
             Donate: e => (0, t.jsx)(P.Donate, {
               ...e
             }),
-            FadeInContent: e => (0, t.jsx)(b.A, {
+            FadeInContent: e => (0, t.jsx)(g.A, {
               ...e
             }),
             FontClip: e => (0, t.jsx)(P.FontClip, {
@@ -135,7 +135,7 @@ _global.SENTRY_RELEASE = {
             Gif: e => (0, t.jsx)(M(), {
               ...e
             }),
-            Grid: e => (0, t.jsx)(g.A, {
+            Grid: e => (0, t.jsx)(p.A, {
               ...e
             }),
             GroupOfItems: e => (0, t.jsx)(S(), {
@@ -144,13 +144,13 @@ _global.SENTRY_RELEASE = {
             HeroImage: e => (0, t.jsx)(P.HeroImage, {
               ...e
             }),
-            HTMLElement: e => (0, t.jsx)(p.A, {
+            HTMLElement: e => (0, t.jsx)(w.A, {
               ...e
             }),
             ImageWithBadge: e => (0, t.jsx)(m.A, {
               ...e
             }),
-            MultiSourceImage: e => (0, t.jsx)(w.A, {
+            MultiSourceImage: e => (0, t.jsx)(b.A, {
               ...e
             }),
             NewswireFull: e => (0, t.jsx)(P.NewswireFull, {

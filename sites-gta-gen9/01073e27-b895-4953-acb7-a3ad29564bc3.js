@@ -153,8 +153,8 @@ _global.SENTRY_RELEASE = {
         o.velocity = a > h ? 0 : (0, g.f)(o.current - c, a)
       }
       var m = n(96358),
-        b = n(55201),
-        w = n(96791);
+        w = n(55201),
+        b = n(96791);
       const E = {
         Enter: [
           [0, 1],
@@ -259,7 +259,7 @@ _global.SENTRY_RELEASE = {
                 const n = S(r[t], a[s], l[s], c[i]);
                 f || n === e[i].interpolatorOffsets[t] || (f = !0), e[i].offset[t] = n
               }
-              f && (e[i].interpolate = (0, b.G)((0, w.Z)(u), e[i].offset), e[i].interpolatorOffsets = [...e[i].offset]), e[i].progress = e[i].interpolate(e[i].current)
+              f && (e[i].interpolate = (0, w.G)((0, b.Z)(u), e[i].offset), e[i].interpolatorOffsets = [...e[i].offset]), e[i].progress = e[i].interpolate(e[i].current)
             }(t, n, r)
           },
           notify: (0, u.T)(e) ? () => e(n) : (i = e, s = n[o], i.pause(), i.forEachNative(((t, e) => {
@@ -335,11 +335,11 @@ _global.SENTRY_RELEASE = {
           })
         }
         var y, v, m;
-        const b = A.get(n),
-          w = requestAnimationFrame(b);
+        const w = A.get(n),
+          b = requestAnimationFrame(w);
         return () => {
           var e;
-          "function" != typeof t && t.stop(), cancelAnimationFrame(w);
+          "function" != typeof t && t.stop(), cancelAnimationFrame(b);
           const r = j.get(n);
           if (!r) return;
           if (r.delete(h), r.size) return;

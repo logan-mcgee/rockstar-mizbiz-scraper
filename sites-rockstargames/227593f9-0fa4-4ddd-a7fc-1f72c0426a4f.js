@@ -18,10 +18,10 @@ _global.SENTRY_RELEASE = {
   [760], {
     70760: (e, a, s) => {
       s.r(a), s.d(a, {
-        default: () => f
+        default: () => t
       });
       var d = s(46632);
-      const f = () => (0, d.jsxs)("div", {
+      const t = () => (0, d.jsxs)("div", {
         className: "rockstargames-sites-rockstargamesc4061150feb48d282a2363b7cbed6ac5",
         children: [(0, d.jsx)("div", {
           className: "rockstargames-sites-rockstargamesa026b866e5e33e40478c738b8a6714fd"

@@ -20,17 +20,17 @@ _global.SENTRY_RELEASE = {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => a,
-        Lightbox_Download_Button_Label: () => g,
-        Lightbox_Download_Button_Tooltip: () => r,
-        Lightbox_Open_Button_Label: () => L,
+        Lightbox_Download_Button_Label: () => r,
+        Lightbox_Download_Button_Tooltip: () => L,
+        Lightbox_Open_Button_Label: () => f,
         Lightbox_Reset_Zoom_Button_Label: () => d,
         Lightbox_Reset_Zoom_Button_Tooltip: () => s,
         Lightbox_Zoom_In_Button_Label: () => l,
         Lightbox_Zoom_In_Button_Tooltip: () => n,
         Lightbox_Zoom_Out_Button_Label: () => b,
         Lightbox_Zoom_Out_Button__Tooltip: () => i,
-        Lightbox_Zoom_Slider_Label: () => f,
-        Lightbox_Zoom_Slider_Tooltip: () => u,
+        Lightbox_Zoom_Slider_Label: () => u,
+        Lightbox_Zoom_Slider_Tooltip: () => g,
         default: () => h
       });
       var _ = "라이트박스 닫기",
@@ -41,11 +41,11 @@ _global.SENTRY_RELEASE = {
         i = "{shortcut} 누르기",
         d = "초기화",
         s = "{shortcut} 누르기",
-        f = "줌 레벨",
-        u = "{zoom}%",
-        g = "다운로드",
+        u = "줌 레벨",
+        g = "{zoom}%",
         r = "다운로드",
-        L = "이미지 확대",
+        L = "다운로드",
+        f = "이미지 확대",
         h = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: a,
@@ -55,11 +55,11 @@ _global.SENTRY_RELEASE = {
           Lightbox_Zoom_Out_Button__Tooltip: i,
           Lightbox_Reset_Zoom_Button_Label: d,
           Lightbox_Reset_Zoom_Button_Tooltip: s,
-          Lightbox_Zoom_Slider_Label: f,
-          Lightbox_Zoom_Slider_Tooltip: u,
-          Lightbox_Download_Button_Label: g,
-          Lightbox_Download_Button_Tooltip: r,
-          Lightbox_Open_Button_Label: L
+          Lightbox_Zoom_Slider_Label: u,
+          Lightbox_Zoom_Slider_Tooltip: g,
+          Lightbox_Download_Button_Label: r,
+          Lightbox_Download_Button_Tooltip: L,
+          Lightbox_Open_Button_Label: f
         }
     }
   }

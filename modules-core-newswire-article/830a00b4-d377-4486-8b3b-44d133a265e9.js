@@ -151,7 +151,7 @@ _global.SENTRY_RELEASE = {
           l = e || p || f || v,
           b = l ? n(r.length, String) : [],
           y = b.length;
-        for (var d in r) !t && !s.call(r, d) || l && ("length" == d || f && ("offset" == d || "parent" == d) || v && ("buffer" == d || "byteLength" == d || "byteOffset" == d) || c(d, y)) || b.push(d);
+        for (var x in r) !t && !s.call(r, x) || l && ("length" == x || f && ("offset" == x || "parent" == x) || v && ("buffer" == x || "byteLength" == x || "byteOffset" == x) || c(x, y)) || b.push(x);
         return b
       }
     },
@@ -230,8 +230,8 @@ _global.SENTRY_RELEASE = {
         l = e(86515),
         b = e(25387),
         y = e(29027),
-        d = e(36293),
-        x = e(84675),
+        x = e(36293),
+        d = e(84675),
         h = e(49927),
         _ = e(21210),
         j = e(36160),
@@ -257,10 +257,10 @@ _global.SENTRY_RELEASE = {
             T = C == S || "[object GeneratorFunction]" == C;
           if (_(t)) return i(t, U);
           if (C == z || C == m || T && !P) {
-            if (F = D || T ? {} : x(t), !U) return D ? f(t, c(F, t)) : p(t, u(F, t))
+            if (F = D || T ? {} : d(t), !U) return D ? f(t, c(F, t)) : p(t, u(F, t))
           } else {
             if (!I[C]) return P ? t : {};
-            F = d(t, C, U)
+            F = x(t, C, U)
           }
         }
         k || (k = new n);
@@ -426,11 +426,11 @@ _global.SENTRY_RELEASE = {
         l = e(27335),
         b = e(35829),
         y = e(96265),
-        d = e(73684),
-        x = e(71414);
+        x = e(73684),
+        d = e(71414);
       r.exports = function(r, t, e, h, _, j, g) {
-        var w = d(r, e),
-          O = d(t, e),
+        var w = x(r, e),
+          O = x(t, e),
           A = g.get(O);
         if (A) n(r, e, A);
         else {
@@ -440,7 +440,7 @@ _global.SENTRY_RELEASE = {
             var z = s(O),
               I = !z && f(O),
               M = !z && !I && y(O);
-            m = O, z || I || M ? s(w) ? m = w : p(w) ? m = u(w) : I ? (S = !1, m = o(O, !0)) : M ? (S = !1, m = a(O, !0)) : m = [] : b(O) || i(O) ? (m = w, i(w) ? m = x(w) : l(w) && !v(w) || (m = c(O))) : S = !1
+            m = O, z || I || M ? s(w) ? m = w : p(w) ? m = u(w) : I ? (S = !1, m = o(O, !0)) : M ? (S = !1, m = a(O, !0)) : m = [] : b(O) || i(O) ? (m = w, i(w) ? m = d(w) : l(w) && !v(w) || (m = c(O))) : S = !1
           }
           S && (g.set(O, m), _(m, O, h, j, g), g.delete(O)), n(r, e, m)
         }
@@ -776,8 +776,8 @@ _global.SENTRY_RELEASE = {
         l = "[object WeakMap]",
         b = "[object DataView]",
         y = s(n),
-        d = s(o),
-        x = s(a),
+        x = s(o),
+        d = s(a),
         h = s(u),
         _ = s(c),
         j = i;
@@ -788,9 +788,9 @@ _global.SENTRY_RELEASE = {
         if (n) switch (n) {
           case y:
             return b;
-          case d:
-            return p;
           case x:
+            return p;
+          case d:
             return f;
           case h:
             return v;

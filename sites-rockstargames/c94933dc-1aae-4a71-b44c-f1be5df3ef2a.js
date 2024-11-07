@@ -132,8 +132,8 @@ _global.SENTRY_RELEASE = {
           defaultMessage: "Update Preferences"
         }
       });
-      var f = a(26454);
-      const m = {
+      var m = a(26454);
+      const u = {
         container: "rockstargames-sites-rockstargamesec870dfb536235bd7aa6333cdbd47b18",
         dialogModal: "rockstargames-sites-rockstargamesafb2793530a9c355979762cf109389bc",
         pillBtn: "rockstargames-sites-rockstargamesa91a63c702436d7d074161542743303f",
@@ -145,7 +145,7 @@ _global.SENTRY_RELEASE = {
         successIcon: "rockstargames-sites-rockstargamesb0577d88ad20962e591709a28d77b664",
         infoIcon: "rockstargames-sites-rockstargamesc6551367635546f0aa5ae9cfc95466cf"
       };
-      var u = a(46632);
+      var f = a(46632);
       const {
         host: b
       } = (0, o.getScConfigForOrigin)(), p = (0, c.withIntl)((() => {
@@ -153,7 +153,7 @@ _global.SENTRY_RELEASE = {
           {
             track: s
           } = (0, n.useGtmTrack)(),
-          [a, f] = (0, t.useState)(""),
+          [a, m] = (0, t.useState)(""),
           p = `https://${b}.rockstargames.com/settings/email`,
           g = (0, i.useRockstarTokenPing)(),
           [x] = (0, r.useSearchParams)(),
@@ -169,7 +169,7 @@ _global.SENTRY_RELEASE = {
         return (0, t.useEffect)((() => {
           (async () => {
             const e = x.get("token");
-            if (!e) return void f("error");
+            if (!e) return void m("error");
             const s = await (0, o.coreScApiFetch)("marketing/unsubscribe", {
                 fetchOptions: {
                   method: "POST"
@@ -181,30 +181,30 @@ _global.SENTRY_RELEASE = {
                 }
               }) ?? [],
               a = s?.error?.code;
-            s?.status ? f("success") : a && !s?.status && f(y[a] || "error")
+            s?.status ? m("success") : a && !s?.status && m(y[a] || "error")
           })()
         }), [x.get("token")]), (0, t.useEffect)((() => {
           a && s({
             event: "virtualPageview",
             view_name: k[`unsubscribe_${a}_header`].defaultMessage
           })
-        }), [a]), (0, u.jsx)("div", {
-          className: m.container,
-          children: a ? (0, u.jsxs)("div", {
-            className: m.dialogModal,
-            children: [(0, u.jsx)("div", {
-              className: m[`${a}Icon`]
-            }), (0, u.jsxs)("div", {
-              className: m.textContent,
-              children: [(0, u.jsx)("h3", {
-                className: m.heading,
+        }), [a]), (0, f.jsx)("div", {
+          className: u.container,
+          children: a ? (0, f.jsxs)("div", {
+            className: u.dialogModal,
+            children: [(0, f.jsx)("div", {
+              className: u[`${a}Icon`]
+            }), (0, f.jsxs)("div", {
+              className: u.textContent,
+              children: [(0, f.jsx)("h3", {
+                className: u.heading,
                 children: e.formatMessage(k[`unsubscribe_${a}_header`])
-              }), (0, u.jsx)("div", {
-                className: m.description,
+              }), (0, f.jsx)("div", {
+                className: u.description,
                 children: e.formatMessage(k[`unsubscribe_${a}_description`])
               })]
-            }), (0, u.jsx)("div", {
-              children: (0, u.jsx)(d.A, {
+            }), (0, f.jsx)("div", {
+              children: (0, f.jsx)(d.A, {
                 to: p,
                 onClick: h ? () => s({
                   ...h
@@ -212,9 +212,9 @@ _global.SENTRY_RELEASE = {
                 children: e.formatMessage(k.email_settings_cta)
               })
             })]
-          }) : (0, u.jsx)(l.A, {})
+          }) : (0, f.jsx)(l.A, {})
         })
-      }), f)
+      }), m)
     }
   }
 ]);

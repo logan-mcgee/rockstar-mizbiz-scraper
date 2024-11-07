@@ -70,8 +70,8 @@ _global.SENTRY_RELEASE = {
         d = s(20066),
         u = s(71403),
         g = s(300),
-        f = s(48309),
-        b = s(60285);
+        b = s(48309),
+        f = s(60285);
       const m = {
         rockstarLogo: "rockstargames-sites-rockstargamesba0c20f78999975dfb8d9cff0de44b34",
         glitch: "rockstargames-sites-rockstargamesfa2efe98e2909a02a6bfca4b1d384429",
@@ -83,7 +83,7 @@ _global.SENTRY_RELEASE = {
           disableLink: t,
           className: s
         } = e;
-        const a = t ? "span" : b.A;
+        const a = t ? "span" : f.A;
         return (0, _.jsx)(a, {
           className: [m.rockstarLogo, s || ""].join(" "),
           alt: "Rockstar Games Home",
@@ -175,7 +175,7 @@ _global.SENTRY_RELEASE = {
           (0, u.useEffect)((() => {
             n && d?.current && (d.current?.showModal?.(), g(!0))
           }), [n]);
-          const f = () => {
+          const b = () => {
             g(!1), i(), d.current?.close?.()
           };
           if (n) return (0, _.jsxs)("dialog", {
@@ -205,7 +205,7 @@ _global.SENTRY_RELEASE = {
               children: r.slice(0, 2).map(((e, t) => (0, _.jsx)(y, {
                 style: 0 === t ? "primary" : "secondary",
                 button: e,
-                closeDialog: f
+                closeDialog: b
               }, e.buttonText)))
             })]
           })
@@ -324,7 +324,7 @@ _global.SENTRY_RELEASE = {
             isButtonLoading: o,
             showDialog: c,
             setShowDialog: d,
-            dialog: b,
+            dialog: f,
             isSubscribed: m
           } = e;
           const [h, y] = (0, u.useState)(!1), x = (0, r.useIntl)(), {
@@ -334,7 +334,7 @@ _global.SENTRY_RELEASE = {
             inView: M
           } = (0, g.Wx)({
             threshold: .6
-          }), I = b?.buttons || [{
+          }), I = f?.buttons || [{
             buttonText: x.formatMessage(v.ns_ok_button_text),
             onClick: () => {
               d(!1)
@@ -343,7 +343,7 @@ _global.SENTRY_RELEASE = {
             ctaClasses: R.ctaText,
             testId: "ok-btn"
           }, {
-            buttonText: b?.showManagePreferences && x.formatMessage(v.ns_manage_prefs_button_text),
+            buttonText: f?.showManagePreferences && x.formatMessage(v.ns_manage_prefs_button_text),
             isLink: !0,
             link: a.preferences,
             extraClasses: R.alertLinkClass,
@@ -370,19 +370,19 @@ _global.SENTRY_RELEASE = {
                       className: R.fadeIn
                     }), (0, _.jsxs)("div", {
                       className: R.body,
-                      children: [(0, _.jsx)(f.Heading, {
+                      children: [(0, _.jsx)(b.Heading, {
                         level: 4,
                         className: [R.heading, R.fadeIn].join(" "),
                         children: (0, _.jsx)(r.FormattedMessage, {
                           ...v.ns_cta_title
                         })
-                      }), (0, _.jsx)(f.Paragraph, {
+                      }), (0, _.jsx)(b.Paragraph, {
                         className: [R.copy, R.fadeIn].join(" "),
                         children: (0, _.jsx)(r.FormattedMessage, {
                           ...v.ns_cta_text
                         })
                       })]
-                    }), s ? (0, _.jsxs)(f.Button, {
+                    }), s ? (0, _.jsxs)(b.Button, {
                       size: "MD",
                       appearance: "secondary",
                       allCaps: !0,
@@ -416,12 +416,12 @@ _global.SENTRY_RELEASE = {
                   })
                 })
               })
-            }), b && (0, _.jsx)(_.Fragment, {
+            }), f && (0, _.jsx)(_.Fragment, {
               children: (0, _.jsx)(w, {
-                icon: b.icon,
-                title: x.formatMessage(b.heading),
-                secondaryText: x.formatMessage(b.bodyText),
-                closeOnOutsideClick: b.closeOnOutsideClick,
+                icon: f.icon,
+                title: x.formatMessage(f.heading),
+                secondaryText: x.formatMessage(f.bodyText),
+                closeOnOutsideClick: f.closeOnOutsideClick,
                 buttons: [{
                   ...I[0]
                 }, {
@@ -509,13 +509,13 @@ _global.SENTRY_RELEASE = {
         B = (0, a.makeVarNamespace)("@rockstargames/buildtime/newslettersubscription")("subscriptionStatusReactive", null),
         A = e => B(e),
         T = (e, t, s) => {
-          const [i, c] = (0, u.useState)(), [l, d] = (0, u.useState)(!1), [g, f] = (0, u.useState)(!1), [b, m] = (0, u.useState)(!1), [_, k] = (0, u.useState)(!1), p = (0, a.useReactiveVar)(B), h = (0, r.useIntl)(), {
+          const [i, c] = (0, u.useState)(), [l, d] = (0, u.useState)(!1), [g, b] = (0, u.useState)(!1), [f, m] = (0, u.useState)(!1), [_, k] = (0, u.useState)(!1), p = (0, a.useReactiveVar)(B), h = (0, r.useIntl)(), {
             track: y
           } = (0, n.useGtmTrack)(), x = {
             preferences: `https://${e.sc}.rockstargames.com/settings/email`,
             auth: `${e.login}?returnUrl=${window.location.pathname}%3Fmarketing%3Dtrue&lang=${e.lang}&newsletter=true`
           }, w = e => {
-            c(e), f(!0)
+            c(e), b(!0)
           }, E = {
             ...j.NEW_ACCOUNT,
             closeOnOutsideClick: !1,
@@ -527,7 +527,7 @@ _global.SENTRY_RELEASE = {
             }, {
               buttonText: h.formatMessage(v.ns_go_back_text),
               onClick: () => {
-                c(null), f(!1)
+                c(null), b(!1)
               }
             }]
           }, S = async () => (y({
@@ -641,9 +641,9 @@ _global.SENTRY_RELEASE = {
             dialog: i,
             handleSubscribeButton: S,
             isButtonLoading: _,
-            isLoading: b,
+            isLoading: f,
             isSubscribed: l,
-            setShowDialog: f,
+            setShowDialog: b,
             showDialog: g,
             subscriptionStatus: p,
             urls: x,
@@ -700,8 +700,8 @@ _global.SENTRY_RELEASE = {
               iso: u
             }] = (0, r.getLocale)(),
             g = (0, o.toScLocaleString)(u),
-            f = (0, a.useReactiveVar)(n.scConfig),
-            [b] = (0, l.useSearchParams)(),
+            b = (0, a.useReactiveVar)(n.scConfig),
+            [f] = (0, l.useSearchParams)(),
             m = (0, l.useNavigate)(),
             k = (0, l.useLocation)(),
             {
@@ -709,11 +709,11 @@ _global.SENTRY_RELEASE = {
               data: h,
               loading: y
             } = (0, n.useRockstarUser)(),
-            x = "true" === b.get("marketing"),
+            x = "true" === f.get("marketing"),
             w = {
               lang: g,
               location: k.pathname,
-              login: f.login,
+              login: b.login,
               navigate: m,
               sc: d.sites.socialClub
             },
@@ -859,14 +859,14 @@ _global.SENTRY_RELEASE = {
         onChange: u
       } = {}) {
         var g;
-        const [f, b] = a.useState(null), m = a.useRef(), [_, k] = a.useState({
+        const [b, f] = a.useState(null), m = a.useRef(), [_, k] = a.useState({
           inView: !!l,
           entry: void 0
         });
         m.current = u, a.useEffect((() => {
-          if (o || !f) return;
+          if (o || !b) return;
           let a;
-          return a = c(f, ((e, t) => {
+          return a = c(b, ((e, t) => {
             k({
               inView: e,
               entry: t
@@ -880,14 +880,14 @@ _global.SENTRY_RELEASE = {
           }, d), () => {
             a && a()
           }
-        }), [Array.isArray(e) ? e.toString() : e, f, n, r, i, o, s, d, t]);
+        }), [Array.isArray(e) ? e.toString() : e, b, n, r, i, o, s, d, t]);
         const p = null == (g = _.entry) ? void 0 : g.target,
           h = a.useRef();
-        f || !p || i || o || h.current === p || (h.current = p, k({
+        b || !p || i || o || h.current === p || (h.current = p, k({
           inView: !!l,
           entry: void 0
         }));
-        const y = [b, _.inView, _.entry];
+        const y = [f, _.inView, _.entry];
         return y.ref = y[0], y.inView = y[1], y.entry = y[2], y
       }
       a.Component

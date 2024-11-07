@@ -19,13 +19,13 @@ _global.SENTRY_RELEASE = {
     29191: (o, t, e) => {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => _,
-        Lightbox_Close_Button_Tooltip: () => n,
-        Lightbox_Download_Button_Label: () => f,
-        Lightbox_Download_Button_Tooltip: () => L,
+        Lightbox_Close_Button_Tooltip: () => a,
+        Lightbox_Download_Button_Label: () => L,
+        Lightbox_Download_Button_Tooltip: () => f,
         Lightbox_Open_Button_Label: () => r,
         Lightbox_Reset_Zoom_Button_Label: () => d,
         Lightbox_Reset_Zoom_Button_Tooltip: () => g,
-        Lightbox_Zoom_In_Button_Label: () => a,
+        Lightbox_Zoom_In_Button_Label: () => n,
         Lightbox_Zoom_In_Button_Tooltip: () => l,
         Lightbox_Zoom_Out_Button_Label: () => b,
         Lightbox_Zoom_Out_Button__Tooltip: () => i,
@@ -34,8 +34,8 @@ _global.SENTRY_RELEASE = {
         default: () => h
       });
       var _ = "关闭弹窗",
-        n = "按{shortcut}",
-        a = "放大",
+        a = "按{shortcut}",
+        n = "放大",
         l = "按{shortcut}",
         b = "缩小",
         i = "按{shortcut}",
@@ -43,13 +43,13 @@ _global.SENTRY_RELEASE = {
         g = "按{shortcut}",
         s = "缩放比例",
         u = "{zoom}%",
-        f = "下载",
         L = "下载",
+        f = "下载",
         r = "展开图片",
         h = {
           Lightbox_Close_Button_Label: _,
-          Lightbox_Close_Button_Tooltip: n,
-          Lightbox_Zoom_In_Button_Label: a,
+          Lightbox_Close_Button_Tooltip: a,
+          Lightbox_Zoom_In_Button_Label: n,
           Lightbox_Zoom_In_Button_Tooltip: l,
           Lightbox_Zoom_Out_Button_Label: b,
           Lightbox_Zoom_Out_Button__Tooltip: i,
@@ -57,8 +57,8 @@ _global.SENTRY_RELEASE = {
           Lightbox_Reset_Zoom_Button_Tooltip: g,
           Lightbox_Zoom_Slider_Label: s,
           Lightbox_Zoom_Slider_Tooltip: u,
-          Lightbox_Download_Button_Label: f,
-          Lightbox_Download_Button_Tooltip: L,
+          Lightbox_Download_Button_Label: L,
+          Lightbox_Download_Button_Tooltip: f,
           Lightbox_Open_Button_Label: r
         }
     }

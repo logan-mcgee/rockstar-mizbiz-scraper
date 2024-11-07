@@ -20,31 +20,31 @@ _global.SENTRY_RELEASE = {
       var n;
       ! function() {
         "use strict";
-        var r = {}.hasOwnProperty;
+        var a = {}.hasOwnProperty;
 
-        function a() {
+        function r() {
           for (var e = "", t = 0; t < arguments.length; t++) {
             var n = arguments[t];
-            n && (e = o(e, f(n)))
+            n && (e = f(e, o(n)))
           }
           return e
         }
 
-        function f(e) {
+        function o(e) {
           if ("string" == typeof e || "number" == typeof e) return e;
           if ("object" != typeof e) return "";
-          if (Array.isArray(e)) return a.apply(null, e);
+          if (Array.isArray(e)) return r.apply(null, e);
           if (e.toString !== Object.prototype.toString && !e.toString.toString().includes("[native code]")) return e.toString();
           var t = "";
-          for (var n in e) r.call(e, n) && e[n] && (t = o(t, n));
+          for (var n in e) a.call(e, n) && e[n] && (t = f(t, n));
           return t
         }
 
-        function o(e, t) {
+        function f(e, t) {
           return t ? e ? e + " " + t : e + t : e
         }
-        e.exports ? (a.default = a, e.exports = a) : void 0 === (n = function() {
-          return a
+        e.exports ? (r.default = r, e.exports = r) : void 0 === (n = function() {
+          return r
         }.apply(t, [])) || (e.exports = n)
       }()
     }

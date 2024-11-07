@@ -1,8 +1,8 @@
 ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      s = (new Error).stack;
-    s && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[s] = "e31aaf82-2859-4941-a73c-afc50fdff740", e._sentryDebugIdIdentifier = "sentry-dbid-e31aaf82-2859-4941-a73c-afc50fdff740")
+      a = (new Error).stack;
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "e31aaf82-2859-4941-a73c-afc50fdff740", e._sentryDebugIdIdentifier = "sentry-dbid-e31aaf82-2859-4941-a73c-afc50fdff740")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -16,16 +16,16 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_gta_gen9 = self.webpackChunk_rockstargames_sites_gta_gen9 || []).push([
   [9088], {
-    67446: (e, s, a) => {
-      a.d(s, {
+    67446: (e, a, s) => {
+      s.d(a, {
         A: () => g
       });
-      var t = a(71403),
-        n = a(96717),
-        c = a(20066),
-        r = a(73167),
-        i = a(98310),
-        o = a(39493);
+      var t = s(71403),
+        n = s(96717),
+        c = s(20066),
+        r = s(73167),
+        i = s(98310),
+        o = s(39493);
       const d = {
         pillBtn: "rockstargames-sites-gta-gen9e4a42eaa9bfb682035e61ac2e2a34515",
         selected: "rockstargames-sites-gta-gen9eb889d8958be54a67b790d7529530986",
@@ -37,10 +37,10 @@ _global.SENTRY_RELEASE = {
         scRpLevel: "rockstargames-sites-gta-gen9b1f87c58a800ad546200fbf17e029f35",
         scRpIcon: "rockstargames-sites-gta-gen9f1e0bcba6214698c490b8201bbd850b7"
       };
-      var l = a(46632);
+      var l = s(46632);
       const g = (0, n.withIntl)((e => {
         let {
-          characterData: s
+          characterData: a
         } = e;
         const c = (0, n.useIntl)(),
           {
@@ -48,7 +48,7 @@ _global.SENTRY_RELEASE = {
             platformUsername: m,
             mugshotUrl: f,
             stats: u
-          } = s,
+          } = a,
           [b, _] = (0, t.useState)(f),
           k = (0, r.A)(g, "large");
         return (0, l.jsxs)("div", {
@@ -62,7 +62,7 @@ _global.SENTRY_RELEASE = {
                 userName: m
               }),
               onError: () => {
-                _(a(58989))
+                _(s(58989))
               }
             })
           }), (0, l.jsx)("div", {
@@ -85,7 +85,7 @@ _global.SENTRY_RELEASE = {
                     src: (0, i.A)(u.overview.rank.value),
                     alt: c.formatMessage(o.A.profile_selector_rp_icon)
                   }), (0, l.jsx)("span", {
-                    children: s.stats.overview.rank.value
+                    children: a.stats.overview.rank.value
                   })]
                 })
               })]
@@ -94,50 +94,50 @@ _global.SENTRY_RELEASE = {
         })
       }), c)
     },
-    73167: (e, s, a) => {
-      a.d(s, {
+    73167: (e, a, s) => {
+      s.d(a, {
         A: () => t
       });
-      const t = (e, s) => {
+      const t = (e, a) => {
         switch (e) {
           case "pc":
-            return "small" === s ? {
-              src: a(89544),
+            return "small" === a ? {
+              src: s(89544),
               alt: "PC"
             } : {
-              src: a(45710),
+              src: s(45710),
               alt: "PC"
             };
           case "ps4":
-            return "small" === s ? {
-              src: a(65636),
+            return "small" === a ? {
+              src: s(65636),
               alt: "PS4"
             } : {
-              src: a(8318),
+              src: s(8318),
               alt: "PS4"
             };
           case "ps5":
-            return "small" === s ? {
-              src: a(20357),
+            return "small" === a ? {
+              src: s(20357),
               alt: "PS5"
             } : {
-              src: a(52047),
+              src: s(52047),
               alt: "PS5"
             };
           case "xboxone":
-            return "small" === s ? {
-              src: a(17976),
+            return "small" === a ? {
+              src: s(17976),
               alt: "Xbox One"
             } : {
-              src: a(60350),
+              src: s(60350),
               alt: "Xbox One"
             };
           case "xboxsx":
-            return "small" === s ? {
-              src: a(84923),
+            return "small" === a ? {
+              src: s(84923),
               alt: "Xbox Series X|S"
             } : {
-              src: a(89825),
+              src: s(89825),
               alt: "Xbox Series X|S"
             };
           default:
@@ -147,17 +147,17 @@ _global.SENTRY_RELEASE = {
         }
       }
     },
-    98310: (e, s, a) => {
-      a.d(s, {
+    98310: (e, a, s) => {
+      s.d(a, {
         A: () => t
       });
-      const t = e => a(e < 100 ? 36399 : e > 99 && e < 500 ? 92627 : e > 499 && e < 750 ? 43864 : 76425)
+      const t = e => s(e < 100 ? 36399 : e > 99 && e < 500 ? 92627 : e > 499 && e < 750 ? 43864 : 76425)
     },
-    39493: (e, s, a) => {
-      a.d(s, {
+    39493: (e, a, s) => {
+      s.d(a, {
         A: () => t
       });
-      const t = (0, a(96717).defineMessages)({
+      const t = (0, s(96717).defineMessages)({
         sc_link_activity_feed: {
           id: "sc_link_activity_feed",
           defaultMessage: "Activity Feed"
@@ -284,11 +284,11 @@ _global.SENTRY_RELEASE = {
         }
       })
     },
-    62811: (e, s, a) => {
-      a.d(s, {
+    62811: (e, a, s) => {
+      s.d(a, {
         A: () => o
       });
-      var t = a(89779);
+      var t = s(89779);
       const n = {
         pillBtn: "rockstargames-sites-gta-gen9b59962d0e68ccd73b5ee2e571528d469",
         selected: "rockstargames-sites-gta-gen9f5c57dad202e0d6ff855d5a4aca2c804",
@@ -307,46 +307,46 @@ _global.SENTRY_RELEASE = {
         ps5: "rockstargames-sites-gta-gen9e25638751cf3e7267db23c6a401fcc36",
         pc: "rockstargames-sites-gta-gen9e03d92653f19a7ae3c4b3d5137bc9909"
       };
-      var c = a(46632);
+      var c = s(46632);
       const r = e => {
           let {
-            children: s,
-            className: a,
+            children: a,
+            className: s,
             onClick: t,
             style: n,
             ariaLabel: r
           } = e;
           return (0, c.jsx)("button", {
-            className: a,
+            className: s,
             onClick: t,
             style: n,
             type: "button",
             "aria-label": r,
-            children: s
+            children: a
           })
         },
         i = e => {
           let {
-            children: s,
-            className: a,
+            children: a,
+            className: s,
             onClick: n,
             style: r,
             to: i,
             ariaLabel: o
           } = e;
           return (0, c.jsx)(t.NavLink, {
-            className: a,
+            className: s,
             onClick: n,
             style: r,
             to: i,
             "aria-label": o,
-            children: s
+            children: a
           })
         },
         o = e => {
           let {
-            btnColor: s = "#fff",
-            className: a = "",
+            btnColor: a = "#fff",
+            className: s = "",
             consoleBtn: t,
             icon: o = "",
             img: d,
@@ -359,11 +359,11 @@ _global.SENTRY_RELEASE = {
             type: _ = "",
             ariaLabel: k
           } = e;
-          const p = [n.plusButton, n[_] ?? "", n[f] ?? "", n[t] ?? "", a].join(" "),
+          const p = [n.plusButton, n[_] ?? "", n[f] ?? "", n[t] ?? "", s].join(" "),
             h = {
-              "--hvr-color": s ?? l,
-              "--hvr-bg-color": l ?? s,
-              "--hvr-border-color": s ?? l
+              "--hvr-color": a ?? l,
+              "--hvr-bg-color": l ?? a,
+              "--hvr-border-color": a ?? l
             },
             x = (0, c.jsxs)(c.Fragment, {
               children: [d ? (0, c.jsx)("img", {
@@ -416,38 +416,38 @@ _global.SENTRY_RELEASE = {
           })
         }
     },
-    13772: (e, s, a) => {
-      a.r(s), a.d(s, {
+    13772: (e, a, s) => {
+      s.r(a), s.d(a, {
         default: () => E
       });
-      var t = a(71403),
-        n = a(57172),
-        c = a(77356),
-        r = a(59217),
-        i = a(42756),
-        o = a(58407),
-        d = a(40207),
-        l = a(26177),
-        g = a(96717),
-        m = a(94566),
-        f = a(74401),
-        u = a(62811),
-        b = a(46632);
+      var t = s(71403),
+        n = s(57172),
+        c = s(77356),
+        r = s(59217),
+        i = s(42756),
+        o = s(58407),
+        d = s(40207),
+        l = s(26177),
+        g = s(96717),
+        m = s(94566),
+        f = s(74401),
+        u = s(62811),
+        b = s(46632);
       const _ = e => {
           let {
-            legalText: s
+            legalText: a
           } = e;
           return (0, b.jsx)("div", {
             dangerouslySetInnerHTML: {
-              __html: s
+              __html: a
             }
           })
         },
         k = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/cb04fb2acd10f43aa501729b4d7d26a8.jpg",
         p = e => {
           let {
-            s,
-            content: a,
+            s: a,
+            content: s,
             refLanding: t,
             loggedIn: n,
             addClaim: c,
@@ -455,58 +455,58 @@ _global.SENTRY_RELEASE = {
             landingSlide: i
           } = e;
           return (0, b.jsxs)("div", {
-            className: [s.contentContainer, s[i], s.landingSlide].join(" "),
+            className: [a.contentContainer, a[i], a.landingSlide].join(" "),
             ref: t,
             children: [(0, b.jsx)("img", {
-              src: a.introScreen.image.sources.mobile || k,
-              className: s.moduleImageMobile,
-              alt: a.introScreen.image.alt
+              src: s.introScreen.image.sources.mobile || k,
+              className: a.moduleImageMobile,
+              alt: s.introScreen.image.alt
             }), (0, b.jsxs)("div", {
-              className: s.topContent,
+              className: a.topContent,
               children: [(0, b.jsx)("div", {
-                className: s.textContent,
+                className: a.textContent,
                 children: (0, b.jsxs)("div", {
-                  className: s.alert,
+                  className: a.alert,
                   children: [(0, b.jsx)("div", {
-                    className: s.badge,
-                    children: a.introScreen.tag
+                    className: a.badge,
+                    children: s.introScreen.tag
                   }), (0, b.jsxs)("div", {
-                    className: s.alertText,
+                    className: a.alertText,
                     children: [(0, b.jsx)("h2", {
-                      children: a.introScreen.headline
+                      children: s.introScreen.headline
                     }), (0, b.jsx)("div", {
                       dangerouslySetInnerHTML: {
-                        __html: a.introScreen.body
+                        __html: s.introScreen.body
                       }
                     })]
                   })]
                 })
               }), (0, b.jsx)("div", {
-                className: s.btnContainer,
+                className: a.btnContainer,
                 children: (0, b.jsx)(u.A, {
-                  text: n ? a.introScreen.btnText.loggedIn : a.introScreen.btnText.loggedOut,
+                  text: n ? s.introScreen.btnText.loggedIn : s.introScreen.btnText.loggedOut,
                   onClick: n ? c : r
                 })
               })]
             }), (0, b.jsx)("div", {
-              className: s.bottomContent,
+              className: a.bottomContent,
               children: (0, b.jsx)("div", {
-                className: s.legal,
+                className: a.legal,
                 children: (0, b.jsx)(_, {
-                  legalText: a.legalText
+                  legalText: s.legalText
                 })
               })
             })]
           })
         };
-      var h = a(81902),
-        x = a(89269),
-        v = a(67446),
-        S = a(60285);
+      var h = s(81902),
+        x = s(89269),
+        v = s(67446),
+        S = s(60285);
       const j = e => {
         let {
-          s,
-          content: a,
+          s: a,
+          content: s,
           refSuccess: n,
           successSlide: c,
           characterList: r,
@@ -535,29 +535,29 @@ _global.SENTRY_RELEASE = {
             prevEl: m?.current
           })
         }), [m?.current, g?.current]), (0, b.jsxs)("div", {
-          className: [s.contentContainer, s[c], s.successSlide].join(" "),
+          className: [a.contentContainer, a[c], a.successSlide].join(" "),
           "data-type": "long",
           ref: n,
           children: [(0, b.jsxs)("div", {
-            className: s.topContent,
+            className: a.topContent,
             children: [(0, b.jsxs)("div", {
-              className: s.alert,
+              className: a.alert,
               children: [(0, b.jsx)("div", {
-                className: s.successAlert
+                className: a.successAlert
               }), (0, b.jsxs)("div", {
-                className: s.alertText,
+                className: a.alertText,
                 children: [(0, b.jsx)("h3", {
-                  children: a.successScreen.headline
+                  children: s.successScreen.headline
                 }), (0, b.jsx)("div", {
                   dangerouslySetInnerHTML: {
-                    __html: a.successScreen.body
+                    __html: s.successScreen.body
                   }
                 })]
               })]
             }), (0, b.jsxs)("div", {
-              className: s.swiperWrap,
+              className: a.swiperWrap,
               children: [(0, b.jsx)("div", {
-                className: s.swiperContainer,
+                className: a.swiperContainer,
                 ref: l,
                 children: (0, b.jsxs)(h.RC, {
                   loop: !1,
@@ -580,18 +580,18 @@ _global.SENTRY_RELEASE = {
                     })
                   }, e.mugshotUrl))), (0, b.jsx)(h.qr, {
                     children: (0, b.jsx)(S.A, {
-                      className: [s.linkMore, r.length > 0 ? s.withIcon : ""].join(" "),
+                      className: [a.linkMore, r.length > 0 ? a.withIcon : ""].join(" "),
                       to: i,
                       onClick: o,
                       children: (0, b.jsx)("div", {
-                        className: s.btnText,
+                        className: a.btnText,
                         children: d
                       })
                     })
                   }, "linkMore")]
                 })
               }), (0, b.jsx)("button", {
-                className: s.swiperBtnPrev,
+                className: a.swiperBtnPrev,
                 "aria-label": "Previous Character",
                 type: "button",
                 ref: m,
@@ -601,7 +601,7 @@ _global.SENTRY_RELEASE = {
                 disabled: N,
                 "data-hidden": !k
               }), (0, b.jsx)("button", {
-                className: s.swiperBtnNext,
+                className: a.swiperBtnNext,
                 "aria-label": "Next Character",
                 type: "button",
                 ref: g,
@@ -613,18 +613,18 @@ _global.SENTRY_RELEASE = {
               })]
             })]
           }), (0, b.jsx)("div", {
-            className: s.legal,
+            className: a.legal,
             children: (0, b.jsx)(_, {
-              legalText: a.legalText
+              legalText: s.legalText
             })
           })]
         })
       };
-      var y = a(39695);
+      var y = s(39695);
       const C = e => {
           let {
-            s,
-            content: a,
+            s: a,
+            content: s,
             unlinkedSlide: t,
             refUnlinked: n,
             linkConsoleText: c,
@@ -632,16 +632,16 @@ _global.SENTRY_RELEASE = {
             giftId: i
           } = e;
           return (0, b.jsxs)("div", {
-            className: [s.contentContainer, s[t], s.unlinkedSlide, s.textContent].join(" "),
+            className: [a.contentContainer, a[t], a.unlinkedSlide, a.textContent].join(" "),
             ref: n,
             children: [(0, b.jsx)("div", {
-              className: s.textContent,
+              className: a.textContent,
               children: (0, b.jsxs)("div", {
-                className: s.platformButtonContainer,
+                className: a.platformButtonContainer,
                 children: [(0, b.jsx)("div", {
-                  className: s.errorAlert
+                  className: a.errorAlert
                 }), (0, b.jsx)("h3", {
-                  children: a.unlinkedScreen.headline
+                  children: s.unlinkedScreen.headline
                 }), (0, b.jsx)(y.A, {
                   variant: "secondary",
                   buttonText: c,
@@ -661,12 +661,12 @@ _global.SENTRY_RELEASE = {
                   target: "_self",
                   trackingOId: i,
                   children: (0, b.jsx)("div", {
-                    className: s.alert,
+                    className: a.alert,
                     children: (0, b.jsx)("div", {
-                      className: s.alertText,
+                      className: a.alertText,
                       children: (0, b.jsx)("div", {
                         dangerouslySetInnerHTML: {
-                          __html: a.unlinkedScreen.body
+                          __html: s.unlinkedScreen.body
                         }
                       })
                     })
@@ -674,31 +674,31 @@ _global.SENTRY_RELEASE = {
                 })]
               })
             }), (0, b.jsx)("div", {
-              className: s.legal,
+              className: a.legal,
               children: (0, b.jsx)(_, {
-                legalText: a.legalText
+                legalText: s.legalText
               })
             })]
           })
         },
         w = e => {
           let {
-            s,
-            errorSlide: a,
+            s: a,
+            errorSlide: s,
             content: t,
             refError: n
           } = e;
           return (0, b.jsxs)("div", {
-            className: [s.contentContainer, s[a], s.errorSlide, s.textContent].join(" "),
+            className: [a.contentContainer, a[s], a.errorSlide, a.textContent].join(" "),
             ref: n,
             children: [(0, b.jsxs)("div", {
-              className: s.textContent,
+              className: a.textContent,
               children: [(0, b.jsxs)("div", {
-                className: s.alert,
+                className: a.alert,
                 children: [(0, b.jsx)("div", {
-                  className: s.errorAlert
+                  className: a.errorAlert
                 }), (0, b.jsx)("div", {
-                  className: s.alertText,
+                  className: a.alertText,
                   children: (0, b.jsx)("h3", {
                     children: t.errorScreen.headline
                   })
@@ -708,7 +708,7 @@ _global.SENTRY_RELEASE = {
                 onClick: () => window.location.reload()
               })]
             }), (0, b.jsx)("div", {
-              className: s.legal,
+              className: a.legal,
               children: (0, b.jsx)(_, {
                 legalText: t.legalText
               })
@@ -771,8 +771,8 @@ _global.SENTRY_RELEASE = {
         } = (0, i.getScConfigForOrigin)(),
         E = e => {
           let {
-            giftId: s,
-            location: a = "gtaplus_site",
+            giftId: a,
+            location: s = "gtaplus_site",
             introScreen: u,
             errorScreen: _,
             unlinkedScreen: h,
@@ -840,7 +840,7 @@ _global.SENTRY_RELEASE = {
             K = (0, t.createRef)(),
             [Q, Y] = (0, t.useState)(),
             [Z, ee] = (0, t.useState)([]),
-            [se, ae] = (0, t.useState)(!1),
+            [ae, se] = (0, t.useState)(!1),
             [te, ne] = (0, t.useState)(),
             [ce, re] = (0, t.useState)("hidden"),
             [ie, oe] = (0, t.useState)("hidden"),
@@ -863,16 +863,16 @@ _global.SENTRY_RELEASE = {
             We = () => {
               V.current && Se(V?.current?.scrollHeight), X.current && ye(X?.current?.scrollHeight), G.current && we(G?.current?.scrollHeight), J.current && Me(J?.current?.scrollHeight)
             },
-            Oe = (e, s) => {
-              e === N.landing && (pe(N.landing), s && xe(ve), oe("onScreen"), re("hidden"), me("hidden"), le("hidden")), e === N.success && (pe(N.success), s && xe(je), oe("offScreen"), re("visible"), setTimeout((() => {
+            Oe = (e, a) => {
+              e === N.landing && (pe(N.landing), a && xe(ve), oe("onScreen"), re("hidden"), me("hidden"), le("hidden")), e === N.success && (pe(N.success), a && xe(je), oe("offScreen"), re("visible"), setTimeout((() => {
                 oe("hidden"), me("hidden")
               }), 300), setTimeout((() => {
                 re("onScreen")
-              }), 100)), e === N.error && (pe(N.error), s && xe(Ce), oe("offScreen"), setTimeout((() => {
+              }), 100)), e === N.error && (pe(N.error), a && xe(Ce), oe("offScreen"), setTimeout((() => {
                 oe("hidden")
               }), 300), setTimeout((() => {
                 me("onScreen")
-              }), 100)), e === N.unlinked && (pe(N.unlinked), s && xe(Ne), oe("offScreen"), le("visible"), setTimeout((() => {
+              }), 100)), e === N.unlinked && (pe(N.unlinked), a && xe(Ne), oe("offScreen"), le("visible"), setTimeout((() => {
                 oe("hidden"), me("hidden")
               }), 300), setTimeout((() => {
                 le("onScreen")
@@ -880,15 +880,15 @@ _global.SENTRY_RELEASE = {
             };
           return (0, t.useEffect)((() => {
             const e = () => {
-                window.innerWidth > 2560 && "newswire" !== a ? Le(E.introScreen.image.sources.mobile || k) : Le(E.introScreen.image.sources.desktop || k)
+                window.innerWidth > 2560 && "newswire" !== s ? Le(E.introScreen.image.sources.mobile || k) : Le(E.introScreen.image.sources.desktop || k)
               },
-              s = () => {
-                We(), window.innerWidth <= q && !se && (ae(!0), Oe(ke, !0)), window.innerWidth > q && se && ae(!1), e()
+              a = () => {
+                We(), window.innerWidth <= q && !ae && (se(!0), Oe(ke, !0)), window.innerWidth > q && ae && se(!1), e()
               };
-            return ae(window.innerWidth <= q), e(), window.addEventListener("resize", s), () => {
-              window.removeEventListener("resize", s)
+            return se(window.innerWidth <= q), e(), window.addEventListener("resize", a), () => {
+              window.removeEventListener("resize", a)
             }
-          }), [ke, se, V, J, G, X]), (0, t.useEffect)((() => {
+          }), [ke, ae, V, J, G, X]), (0, t.useEffect)((() => {
             ke === N.success && he !== je ? xe(je) : ke === N.error && he !== Ce ? xe(Ce) : ke === N.landing && he !== ve ? xe(ve) : ke === N.unlinked && he !== Ne && xe(Ne)
           }), [Ce, je, he, Ne, ve]), (0, t.useEffect)((() => {
             Ee || (Be(!0), We(), Te && ke === N.success && xe(X?.current?.scrollHeight || 0))
@@ -902,7 +902,7 @@ _global.SENTRY_RELEASE = {
               } = await (0, i.coreScApiFetch)("marketing/engagement/claim/exists", {
                 pingBearer: W,
                 query: {
-                  giftUId: s
+                  giftUId: a
                 }
               });
               Y(e), ne(!1)
@@ -921,21 +921,21 @@ _global.SENTRY_RELEASE = {
             "onScreen" === ce && $({
               element_placement: "WOC",
               event: "alert_update",
-              o_id: s,
+              o_id: a,
               text: "Almost there!"
             })
           }), [ce]), (0, t.useEffect)((() => {
             "onScreen" === de && $({
               element_placement: "WOC",
               event: "alert_error",
-              o_id: s,
+              o_id: a,
               text: "No Qualifying Character Found"
             })
           }), [de]), (0, t.useEffect)((() => {
             "onScreen" === ge && $({
               element_placement: "event_label",
               event: "alert_error",
-              o_id: s,
+              o_id: a,
               text: "Something went wrong on our end. Please try again in a few minutes."
             })
           }), [ge]), (0, b.jsxs)(b.Fragment, {
@@ -971,7 +971,7 @@ _global.SENTRY_RELEASE = {
                   "data-dev-mode": "disabled",
                   style: {
                     "--engagement-height": 0 === he ? "200%" : `${he}px`,
-                    height: 0 !== he && se ? `${he}px` : "auto"
+                    height: 0 !== he && ae ? `${he}px` : "auto"
                   },
                   children: te ? (0, b.jsx)("div", {
                     className: M.spinner,
@@ -988,13 +988,13 @@ _global.SENTRY_RELEASE = {
                         $({
                           element_placement: "WOC",
                           event: "cta_claim",
-                          o_id: s,
+                          o_id: a,
                           text: "claim now",
                           section_layout: R ? "signed in" : "signed out"
                         });
                         const e = {
-                          giftUId: s,
-                          location: a,
+                          giftUId: a,
+                          location: s,
                           utmCampaign: B.get("utm_campaign"),
                           utmContent: B.get("utm_content"),
                           utmMedium: B.get("utm_medium"),
@@ -1003,7 +1003,7 @@ _global.SENTRY_RELEASE = {
                         if ("disabled" === be)
                           if (Z.length > 0) {
                             const {
-                              status: s
+                              status: a
                             } = await (0, i.coreScApiFetch)("marketing/engagement/claim/create", {
                               fetchOptions: {
                                 method: "POST"
@@ -1011,7 +1011,7 @@ _global.SENTRY_RELEASE = {
                               pingBearer: W,
                               query: e
                             }) ?? [];
-                            Oe(s ? N.success : N.error, !1)
+                            Oe(a ? N.success : N.error, !1)
                           } else Oe(N.unlinked, !1);
                         else "success" === be ? Oe(N.success, !1) : "error" === be ? Oe(N.error, !1) : "unlinked" === be && Oe(N.unlinked, !1)
                       },
@@ -1051,7 +1051,7 @@ _global.SENTRY_RELEASE = {
                       refUnlinked: J,
                       linkConsoleText: H.formatMessage(m.engagement.engagement_link_console_account),
                       platformLogin: e => `https://${A}.rockstargames.com/tpa/${e}/link/?cid=${L}&lang=${U}&returnUrl=${encodeURIComponent(Pe)}&accessToken=${P}`,
-                      giftId: s
+                      giftId: a
                     }), (0, b.jsx)(w, {
                       s: M,
                       errorSlide: ge,

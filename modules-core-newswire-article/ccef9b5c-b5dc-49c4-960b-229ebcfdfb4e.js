@@ -44,8 +44,8 @@ _global.SENTRY_RELEASE = {
         u = p(n(52696)),
         l = p(n(51901)),
         s = p(n(66785)),
-        f = p(n(28512)),
-        c = p(n(54518)),
+        c = p(n(28512)),
+        f = p(n(54518)),
         d = n(75923);
 
       function p(e) {
@@ -75,7 +75,7 @@ _global.SENTRY_RELEASE = {
             ready: !1
           }, n.handleWindowResize = function() {
             n.process()
-          }, "perfectFit" in e && console.warn("TextFit property perfectFit has been removed."), n.handleWindowResize = (0, f.default)(n.handleWindowResize, e.throttle), n
+          }, "perfectFit" in e && console.warn("TextFit property perfectFit has been removed."), n.handleWindowResize = (0, c.default)(n.handleWindowResize, e.throttle), n
         }
         return function(e, t) {
           if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function, not " + typeof t);
@@ -100,7 +100,7 @@ _global.SENTRY_RELEASE = {
         }, {
           key: "componentWillUnmount",
           value: function() {
-            this.props.autoResize && window.removeEventListener("resize", this.handleWindowResize), this.pid = (0, c.default)()
+            this.props.autoResize && window.removeEventListener("resize", this.handleWindowResize), this.pid = (0, f.default)()
           }
         }, {
           key: "process",
@@ -113,26 +113,26 @@ _global.SENTRY_RELEASE = {
               i = t.forceSingleModeWidth,
               a = t.onReady,
               u = this._parent,
-              f = this._child,
+              c = this._child,
               p = (0, d.innerWidth)(u),
               b = (0, d.innerHeight)(u);
             if (b <= 0 || isNaN(b)) console.warn("Can not process element without height. Make sure the element is displayed and has a static height.");
             else if (p <= 0 || isNaN(p)) console.warn("Can not process element without width. Make sure the element is displayed and has a static width.");
             else {
-              var m = (0, c.default)();
+              var m = (0, f.default)();
               this.pid = m;
               var _ = function() {
                   return m !== e.pid
                 },
                 g = "multi" === o ? function() {
-                  return y(f, b)
+                  return y(c, b)
                 } : function() {
-                  return h(f, p)
+                  return h(c, p)
                 },
                 v = "multi" === o ? function() {
-                  return h(f, p)
+                  return h(c, p)
                 } : function() {
-                  return y(f, b)
+                  return y(c, b)
                 },
                 w = void 0,
                 O = n,
@@ -190,13 +190,13 @@ _global.SENTRY_RELEASE = {
                 return n
               }(t, ["children", "text", "style", "min", "max", "mode", "forceWidth", "forceSingleModeWidth", "throttle", "autoResize", "onReady"])),
               s = this.state,
-              f = s.fontSize,
-              c = s.ready,
+              c = s.fontSize,
+              f = s.ready,
               d = r({}, a, {
-                fontSize: f
+                fontSize: c
               }),
               p = {
-                display: c ? "block" : "inline-block"
+                display: f ? "block" : "inline-block"
               };
             return "single" === u && (p.whiteSpace = "nowrap"), i.default.createElement("div", r({
               ref: function(t) {
@@ -208,7 +208,7 @@ _global.SENTRY_RELEASE = {
                 return e._child = t
               },
               style: p
-            }, o && "function" == typeof n ? c ? n(o) : o : n))
+            }, o && "function" == typeof n ? f ? n(o) : o : n))
           }
         }]), t
       }(i.default.Component);
@@ -368,19 +368,19 @@ _global.SENTRY_RELEASE = {
       }();
       var u, l = [],
         s = !1,
-        f = -1;
+        c = -1;
 
-      function c() {
-        s && u && (s = !1, u.length ? l = u.concat(l) : f = -1, l.length && d())
+      function f() {
+        s && u && (s = !1, u.length ? l = u.concat(l) : c = -1, l.length && d())
       }
 
       function d() {
         if (!s) {
-          var e = a(c);
+          var e = a(f);
           s = !0;
           for (var t = l.length; t;) {
-            for (u = l, l = []; ++f < t;) u && u[f].run();
-            f = -1, t = l.length
+            for (u = l, l = []; ++c < t;) u && u[c].run();
+            c = -1, t = l.length
           }
           u = null, s = !1,
             function(e) {
@@ -492,15 +492,15 @@ _global.SENTRY_RELEASE = {
       function s(e, t, n) {
         var r, i = {},
           s = null,
-          f = null;
-        for (r in void 0 !== n && (s = "" + n), void 0 !== t.key && (s = "" + t.key), void 0 !== t.ref && (f = t.ref), t) a.call(t, r) && !l.hasOwnProperty(r) && (i[r] = t[r]);
+          c = null;
+        for (r in void 0 !== n && (s = "" + n), void 0 !== t.key && (s = "" + t.key), void 0 !== t.ref && (c = t.ref), t) a.call(t, r) && !l.hasOwnProperty(r) && (i[r] = t[r]);
         if (e && e.defaultProps)
           for (r in t = e.defaultProps) void 0 === i[r] && (i[r] = t[r]);
         return {
           $$typeof: o,
           type: e,
           key: s,
-          ref: f,
+          ref: c,
           props: i,
           _owner: u.current
         }

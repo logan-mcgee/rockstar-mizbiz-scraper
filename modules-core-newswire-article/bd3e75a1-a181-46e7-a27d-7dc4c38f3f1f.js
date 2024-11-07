@@ -30,8 +30,8 @@ _global.SENTRY_RELEASE = {
         d = r(26177),
         u = r(96717),
         m = r(94566),
-        f = r(74401),
-        g = r(62811),
+        g = r(74401),
+        f = r(62811),
         b = r(46632);
       const w = e => {
           let {
@@ -83,7 +83,7 @@ _global.SENTRY_RELEASE = {
                 })
               }), (0, b.jsx)("div", {
                 className: t.btnContainer,
-                children: (0, b.jsx)(g.A, {
+                children: (0, b.jsx)(f.A, {
                   text: a ? r.introScreen.btnText.loggedIn : r.introScreen.btnText.loggedOut,
                   onClick: a ? s : c
                 })
@@ -117,7 +117,7 @@ _global.SENTRY_RELEASE = {
         const d = (0, n.createRef)(),
           u = (0, n.createRef)(),
           m = (0, n.createRef)(),
-          [f, g] = (0, n.useState)(),
+          [g, f] = (0, n.useState)(),
           [k, h] = (0, n.useState)(!1),
           [_, j] = (0, n.useState)(),
           [C, y] = (0, n.useState)(!1),
@@ -130,7 +130,7 @@ _global.SENTRY_RELEASE = {
             window.removeEventListener("resize", e)
           }
         }), [d]), (0, n.useEffect)((() => {
-          g({
+          f({
             nextEl: u?.current,
             prevEl: m?.current
           })
@@ -164,7 +164,7 @@ _global.SENTRY_RELEASE = {
                   grabCursor: k,
                   slidesPerView: "auto",
                   speed: 700,
-                  navigation: f,
+                  navigation: g,
                   modules: [S.Vx, S.Jq],
                   onInit: e => {
                     j(e)
@@ -303,7 +303,7 @@ _global.SENTRY_RELEASE = {
                     children: n.errorScreen.headline
                   })
                 })]
-              }), (0, b.jsx)(g.A, {
+              }), (0, b.jsx)(f.A, {
                 text: n.errorScreen.btnText,
                 onClick: () => window.location.reload()
               })]
@@ -373,7 +373,7 @@ _global.SENTRY_RELEASE = {
           let {
             giftId: t,
             location: r = "gtaplus_site",
-            introScreen: g,
+            introScreen: f,
             errorScreen: w,
             unlinkedScreen: x,
             successScreen: S,
@@ -387,20 +387,20 @@ _global.SENTRY_RELEASE = {
                 headline: w?.errorHeadline || ""
               },
               introScreen: {
-                body: g?.introContent || "",
+                body: f?.introContent || "",
                 btnText: {
-                  loggedIn: g?.btnTextLoggedIn || "",
-                  loggedOut: g?.btnTextLoggedOut || ""
+                  loggedIn: f?.btnTextLoggedIn || "",
+                  loggedOut: f?.btnTextLoggedOut || ""
                 },
-                headline: g?.introHeadline || "",
+                headline: f?.introHeadline || "",
                 image: {
-                  alt: g?.image?.alt || g?.introHeadline || "",
+                  alt: f?.image?.alt || f?.introHeadline || "",
                   sources: {
-                    desktop: (0, f.useGetCdnSource)(g?.image?.sources?.en_us?.desktop) || null,
-                    mobile: (0, f.useGetCdnSource)(g?.image?.sources?.en_us?.mobile) || null
+                    desktop: (0, g.useGetCdnSource)(f?.image?.sources?.en_us?.desktop) || null,
+                    mobile: (0, g.useGetCdnSource)(f?.image?.sources?.en_us?.mobile) || null
                   }
                 },
-                tag: g?.tag || ""
+                tag: f?.tag || ""
               },
               legalText: v,
               successScreen: {
@@ -446,7 +446,7 @@ _global.SENTRY_RELEASE = {
             [ie, oe] = (0, n.useState)("hidden"),
             [le, de] = (0, n.useState)("hidden"),
             [ue, me] = (0, n.useState)("hidden"),
-            [fe, ge] = (0, n.useState)(!1),
+            [ge, fe] = (0, n.useState)(!1),
             [be, we] = (0, n.useState)("disabled"),
             [ke, he] = (0, n.useState)(T.landing),
             [xe, Se] = (0, n.useState)(0),
@@ -512,11 +512,11 @@ _global.SENTRY_RELEASE = {
           }), [$]), (0, n.useEffect)((() => {
             K ? (Ee(!0), Oe(T.success, !0)) : "boolean" != typeof K || K || Oe(T.landing, !0)
           }), [K]), (0, n.useEffect)((() => {
-            z && !fe && (q({
+            z && !ge && (q({
               element_placement: "WOC",
               event: "page_section_impression",
               section_layout: $ ? "signed in" : "signed out"
-            }), ge(!0))
+            }), fe(!0))
           }), [z]), (0, n.useEffect)((() => {
             "onScreen" === se && q({
               element_placement: "WOC",

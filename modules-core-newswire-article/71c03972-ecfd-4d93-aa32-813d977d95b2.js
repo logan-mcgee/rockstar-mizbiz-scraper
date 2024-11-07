@@ -1,8 +1,8 @@
 ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      d = (new Error).stack;
-    d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "71c03972-ecfd-4d93-aa32-813d977d95b2", e._sentryDebugIdIdentifier = "sentry-dbid-71c03972-ecfd-4d93-aa32-813d977d95b2")
+      a = (new Error).stack;
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "71c03972-ecfd-4d93-aa32-813d977d95b2", e._sentryDebugIdIdentifier = "sentry-dbid-71c03972-ecfd-4d93-aa32-813d977d95b2")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -16,31 +16,31 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
   [4216], {
-    74216: (e, d, a) => {
-      a.r(d), a.d(d, {
+    74216: (e, a, d) => {
+      d.r(a), d.d(a, {
         componentsForTinaParser: () => w
       });
-      var o = a(76612),
-        n = a(64064),
-        f = a.n(n),
-        r = a(74459),
-        l = a.n(r),
-        s = a(26527),
-        t = a.n(s),
-        i = a(31879),
-        b = a.n(i),
-        c = a(66713),
-        u = a.n(c),
-        _ = a(42012);
+      var o = d(76612),
+        n = d(64064),
+        r = d.n(n),
+        l = d(74459),
+        s = d.n(l),
+        t = d(26527),
+        f = d.n(t),
+        i = d(31879),
+        c = d.n(i),
+        b = d(66713),
+        u = d.n(b),
+        _ = d(42012);
       const w = {
         ...o,
-        ...a(26750),
+        ...d(26750),
         ClrCard: _.y3,
         ClrCollapsedCard: _.h7,
-        Gif: f(),
-        GroupOfItems: l(),
-        RockstarVideoPlayer: b(),
-        SwiperCarousel: t(),
+        Gif: r(),
+        GroupOfItems: s(),
+        RockstarVideoPlayer: c(),
+        SwiperCarousel: f(),
         UGCJobSpotlight: u()
       }
     }

@@ -17,17 +17,17 @@ _global.SENTRY_RELEASE = {
 }, (self.webpackChunk_rockstargames_sites_gta_gen9 = self.webpackChunk_rockstargames_sites_gta_gen9 || []).push([
   [6677], {
     26677: (e, a, n) => {
-      function d() {
-        return d = Object.assign ? Object.assign.bind() : function(e) {
+      function t() {
+        return t = Object.assign ? Object.assign.bind() : function(e) {
           for (var a = 1; a < arguments.length; a++) {
             var n = arguments[a];
-            for (var d in n) Object.prototype.hasOwnProperty.call(n, d) && (e[d] = n[d])
+            for (var t in n) Object.prototype.hasOwnProperty.call(n, t) && (e[t] = n[t])
           }
           return e
-        }, d.apply(this, arguments)
+        }, t.apply(this, arguments)
       }
       n.d(a, {
-        A: () => d
+        A: () => t
       })
     }
   }

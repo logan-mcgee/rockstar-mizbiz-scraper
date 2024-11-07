@@ -89,9 +89,9 @@ _global.SENTRY_RELEASE = {
         };
       var o = s(14522),
         m = s(31879),
-        f = s.n(m),
+        g = s.n(m),
         b = s(74401);
-      const g = e => {
+      const f = e => {
           let {
             impressionTracking: a,
             gtm: s = {},
@@ -119,7 +119,7 @@ _global.SENTRY_RELEASE = {
           let {
             item: a
           } = e;
-          return a?.videoId ? (0, d.jsx)(f(), {
+          return a?.videoId ? (0, d.jsx)(g(), {
             context: "site",
             autoplay: !1,
             id: a.videoId
@@ -146,7 +146,7 @@ _global.SENTRY_RELEASE = {
             style: s,
             className: (0, b.classList)("rockstargames-modules-core-newswire-articlefbb6b44c6d90c22144e4fbed29bc540b", t),
             id: r,
-            children: a.map((e => (0, d.jsx)(g, {
+            children: a.map((e => (0, d.jsx)(f, {
               impressionTracking: e?.impressionTracking,
               gtm: e?.gtm,
               children: (0, d.jsx)(u, {

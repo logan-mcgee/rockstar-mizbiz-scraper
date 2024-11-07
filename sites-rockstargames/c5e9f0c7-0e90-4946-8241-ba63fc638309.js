@@ -16,18 +16,18 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [6677], {
-    26677: (e, a, f) => {
-      function n() {
-        return n = Object.assign ? Object.assign.bind() : function(e) {
+    26677: (e, a, n) => {
+      function t() {
+        return t = Object.assign ? Object.assign.bind() : function(e) {
           for (var a = 1; a < arguments.length; a++) {
-            var f = arguments[a];
-            for (var n in f) Object.prototype.hasOwnProperty.call(f, n) && (e[n] = f[n])
+            var n = arguments[a];
+            for (var t in n) Object.prototype.hasOwnProperty.call(n, t) && (e[t] = n[t])
           }
           return e
-        }, n.apply(this, arguments)
+        }, t.apply(this, arguments)
       }
-      f.d(a, {
-        A: () => n
+      n.d(a, {
+        A: () => t
       })
     }
   }

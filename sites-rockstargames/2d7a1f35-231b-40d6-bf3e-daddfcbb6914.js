@@ -119,7 +119,7 @@ _global.SENTRY_RELEASE = {
           }))
         };
       var u = a(89779);
-      const f = () => {
+      const p = () => {
         const {
           pathname: e
         } = (0, u.useLocation)();
@@ -130,7 +130,7 @@ _global.SENTRY_RELEASE = {
           }), 0)
         }), [e]), null
       };
-      var p = a(40207);
+      var f = a(40207);
       const g = (0, i.forwardRef)(((e, o) => {
         const {
           threshold: a,
@@ -139,7 +139,7 @@ _global.SENTRY_RELEASE = {
           requireUser: t
         } = e, {
           track: n
-        } = (0, p.useGtmTrack)(t), [c, _] = (0, i.useState)(o?.current);
+        } = (0, f.useGtmTrack)(t), [c, _] = (0, i.useState)(o?.current);
         return (0, i.useEffect)((() => {
           o?.current && _(o.current)
         }), [o]), ((e, o, a) => {
@@ -229,7 +229,7 @@ _global.SENTRY_RELEASE = {
             width: l,
             fadeIn: m = !0,
             cardIds: d,
-            activeId: f,
+            activeId: p,
             theme: g,
             title: k,
             gtm: b = {},
@@ -238,9 +238,9 @@ _global.SENTRY_RELEASE = {
           } = o, {
             left: j,
             top: z
-          } = n, C = d?.indexOf(f), [P, S] = (0, i.useState)(d?.length || 0), {
+          } = n, C = d?.indexOf(p), [P, S] = (0, i.useState)(d?.length || 0), {
             track: G
-          } = (0, p.useGtmTrack)(), E = null !== d && (d?.length || 0) > 1 && ("flag_bg" === g || "fob" === R?.size), [I, M] = (0, u.useSearchParams)(), [N, L] = (0, i.useState)(!1), [B, A] = (0, i.useState)(!1), [D, T] = (0, i.useState)(), U = e => {
+          } = (0, f.useGtmTrack)(), E = null !== d && (d?.length || 0) > 1 && ("flag_bg" === g || "fob" === R?.size), [I, M] = (0, u.useSearchParams)(), [N, L] = (0, i.useState)(!1), [B, A] = (0, i.useState)(!1), [D, T] = (0, i.useState)(), U = e => {
             "number" == typeof e && d && e < d.length && e > -1 && (console.log("navigating to: ", e), M({
               info: d[e].toString()
             }))
@@ -268,9 +268,9 @@ _global.SENTRY_RELEASE = {
           }), [d?.length]), (0, i.useEffect)((() => {
             null !== C && null !== d && U(C)
           }), [C, d]), (0, i.useEffect)((() => {
-            const e = d?.findIndex((e => e === f));
+            const e = d?.findIndex((e => e === p));
             "number" == typeof e && (A(e <= 0), L(e >= P - 1))
-          }), [d, f]);
+          }), [d, p]);
           const [H] = (0, i.useState)({
             y: z,
             x: j,
@@ -802,7 +802,7 @@ _global.SENTRY_RELEASE = {
                   children: [(0, v.jsx)(A(), {
                     globalNavLoaderComponent: T,
                     globalNavComponent: V()
-                  }), a, (0, v.jsx)(f, {}), (0, v.jsx)(J, {}), e || o ? "" : (0, v.jsx)(H.FooterNav, {})]
+                  }), a, (0, v.jsx)(p, {}), (0, v.jsx)(J, {}), e || o ? "" : (0, v.jsx)(H.FooterNav, {})]
                 })
               })
             })

@@ -90,8 +90,8 @@ _global.SENTRY_RELEASE = {
       var o = s(14522),
         g = s(31879),
         b = s.n(g),
-        f = s(74401);
-      const m = e => {
+        m = s(74401);
+      const f = e => {
           let {
             impressionTracking: a,
             gtm: s = {},
@@ -144,15 +144,15 @@ _global.SENTRY_RELEASE = {
           } = e;
           return (0, d.jsx)("div", {
             style: s,
-            className: (0, f.classList)("rockstargames-sites-gta-gen9fbb6b44c6d90c22144e4fbed29bc540b", l),
+            className: (0, m.classList)("rockstargames-sites-gta-gen9fbb6b44c6d90c22144e4fbed29bc540b", l),
             id: i,
-            children: a.map((e => (0, d.jsx)(m, {
+            children: a.map((e => (0, d.jsx)(f, {
               impressionTracking: e?.impressionTracking,
               gtm: e?.gtm,
               children: (0, d.jsx)(p, {
                 to: e?.to,
                 children: (0, d.jsxs)("div", {
-                  className: (0, f.classList)("rockstargames-sites-gta-gen9c6ef137c3cc0ba12d735aedb6db0cae3", e.className),
+                  className: (0, m.classList)("rockstargames-sites-gta-gen9c6ef137c3cc0ba12d735aedb6db0cae3", e.className),
                   style: e?.style ?? {},
                   ...e?.props,
                   children: [e?.image || e?.videoId ? (0, d.jsx)(u, {

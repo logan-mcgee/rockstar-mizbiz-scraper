@@ -108,14 +108,14 @@ _global.SENTRY_RELEASE = {
       var b = t(89779),
         v = t(58407),
         g = t(74401),
-        f = t(99074),
-        p = t(21027),
+        p = t(99074),
+        f = t(21027),
         k = t(24347),
         h = t(35663);
       const y = "rockstargames-sites-gta-gen9dba59499dbf2e8e419dd99a9fc7d6076",
         S = {
-          BuyNow: f.A,
-          TinaWrapper: p.A
+          BuyNow: p.A,
+          TinaWrapper: f.A
         },
         N = () => {
           const {
@@ -454,7 +454,7 @@ _global.SENTRY_RELEASE = {
                 "id_hash" === a && g.get("section") === e && v(t)
               }))
             }), [d, g.get("section")]), !d) return null;
-          const f = () => {
+          const p = () => {
             r(!1), t({
               event: "nav_click",
               element_placement: "guide nav"
@@ -475,7 +475,7 @@ _global.SENTRY_RELEASE = {
                   return (0, _.jsx)(c.A, {
                     className: a === m?.id_hash ? L.activeSection : "",
                     to: n,
-                    onClick: f,
+                    onClick: p,
                     children: t
                   }, n)
                 }))

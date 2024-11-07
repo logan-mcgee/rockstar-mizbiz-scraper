@@ -1,8 +1,8 @@
 ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      f = (new Error).stack;
-    f && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[f] = "fc39ff10-033a-47b2-8801-f2cc43fdd42f", e._sentryDebugIdIdentifier = "sentry-dbid-fc39ff10-033a-47b2-8801-f2cc43fdd42f")
+      r = (new Error).stack;
+    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "fc39ff10-033a-47b2-8801-f2cc43fdd42f", e._sentryDebugIdIdentifier = "sentry-dbid-fc39ff10-033a-47b2-8801-f2cc43fdd42f")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -16,11 +16,11 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
   [6632], {
-    26516: (e, f, r) => {
-      var o = r(71403),
-        a = Symbol.for("react.element"),
-        d = Symbol.for("react.fragment"),
-        n = Object.prototype.hasOwnProperty,
+    26516: (e, r, a) => {
+      var o = a(71403),
+        f = Symbol.for("react.element"),
+        n = Symbol.for("react.fragment"),
+        d = Object.prototype.hasOwnProperty,
         t = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         l = {
           key: !0,
@@ -29,26 +29,26 @@ _global.SENTRY_RELEASE = {
           __source: !0
         };
 
-      function s(e, f, r) {
-        var o, d = {},
+      function s(e, r, a) {
+        var o, n = {},
           s = null,
           _ = null;
-        for (o in void 0 !== r && (s = "" + r), void 0 !== f.key && (s = "" + f.key), void 0 !== f.ref && (_ = f.ref), f) n.call(f, o) && !l.hasOwnProperty(o) && (d[o] = f[o]);
+        for (o in void 0 !== a && (s = "" + a), void 0 !== r.key && (s = "" + r.key), void 0 !== r.ref && (_ = r.ref), r) d.call(r, o) && !l.hasOwnProperty(o) && (n[o] = r[o]);
         if (e && e.defaultProps)
-          for (o in f = e.defaultProps) void 0 === d[o] && (d[o] = f[o]);
+          for (o in r = e.defaultProps) void 0 === n[o] && (n[o] = r[o]);
         return {
-          $$typeof: a,
+          $$typeof: f,
           type: e,
           key: s,
           ref: _,
-          props: d,
+          props: n,
           _owner: t.current
         }
       }
-      f.Fragment = d, f.jsx = s, f.jsxs = s
+      r.Fragment = n, r.jsx = s, r.jsxs = s
     },
-    46632: (e, f, r) => {
-      e.exports = r(26516)
+    46632: (e, r, a) => {
+      e.exports = a(26516)
     }
   }
 ]);
