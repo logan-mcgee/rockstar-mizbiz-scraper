@@ -103,8 +103,8 @@ _global.SENTRY_RELEASE = {
             c = a[0],
             i = a[1],
             d = e.forwardProps,
-            f = e.children,
-            s = e.className,
+            s = e.children,
+            f = e.className,
             h = e.removeScrollBar,
             v = e.enabled,
             p = e.shards,
@@ -152,12 +152,12 @@ _global.SENTRY_RELEASE = {
             allowPinchZoom: !!w,
             lockRef: t,
             gapMode: C
-          }), d ? o.cloneElement(o.Children.only(f), (0, r.Cl)((0, r.Cl)({}, R), {
+          }), d ? o.cloneElement(o.Children.only(s), (0, r.Cl)((0, r.Cl)({}, R), {
             ref: M
           })) : o.createElement(E, (0, r.Cl)({}, R, {
-            className: s,
+            className: f,
             ref: M
-          }), f))
+          }), s))
         }));
       d.defaultProps = {
         enabled: !0,
@@ -167,7 +167,7 @@ _global.SENTRY_RELEASE = {
         fullWidth: c,
         zeroRight: a
       };
-      var f = function(e) {
+      var s = function(e) {
         var n = e.sideCar,
           t = (0, r.Tt)(e, ["sideCar"]);
         if (!n) throw new Error("Sidecar: please provide `sideCar` property to import the right car");
@@ -175,8 +175,8 @@ _global.SENTRY_RELEASE = {
         if (!a) throw new Error("Sidecar medium not found");
         return o.createElement(a, (0, r.Cl)({}, t))
       };
-      f.isSideCarExport = !0;
-      var s = function() {
+      s.isSideCarExport = !0;
+      var f = function() {
           var e = 0,
             n = null;
           return {
@@ -198,7 +198,7 @@ _global.SENTRY_RELEASE = {
           }
         },
         h = function() {
-          var e, n = (e = s(), function(n, t) {
+          var e, n = (e = f(), function(n, t) {
             o.useEffect((function() {
               return e.add(n),
                 function() {
@@ -352,11 +352,11 @@ _global.SENTRY_RELEASE = {
               i = "deltaX" in e ? e.deltaX : c[0] - o[0],
               l = "deltaY" in e ? e.deltaY : c[1] - o[1],
               d = e.target,
-              f = Math.abs(i) > Math.abs(l) ? "h" : "v";
-            if ("touches" in e && "h" === f && "range" === d.type) return !1;
-            var s = k(f, d);
-            if (!s) return !0;
-            if (s ? r = f : (r = "v" === f ? "h" : "v", s = k(f, d)), !s) return !1;
+              s = Math.abs(i) > Math.abs(l) ? "h" : "v";
+            if ("touches" in e && "h" === s && "range" === d.type) return !1;
+            var f = k(s, d);
+            if (!f) return !0;
+            if (f ? r = s : (r = "v" === s ? "h" : "v", f = k(s, d)), !f) return !1;
             if (!a.current && "changedTouches" in e && (i || l) && (a.current = r), !r) return !0;
             var h = a.current || r;
             return function(e, n, t, r, o) {
@@ -368,15 +368,15 @@ _global.SENTRY_RELEASE = {
                 u = n.contains(i),
                 l = !1,
                 d = c > 0,
-                f = 0,
-                s = 0;
+                s = 0,
+                f = 0;
               do {
                 var h = M(e, i),
                   v = h[0],
                   p = h[1] - h[2] - a * v;
-                (v || p) && S(e, i) && (f += p, s += v), i = i instanceof ShadowRoot ? i.host : i.parentNode
+                (v || p) && S(e, i) && (s += p, f += v), i = i instanceof ShadowRoot ? i.host : i.parentNode
               } while (!u && i !== document.body || u && (n.contains(i) || n === i));
-              return (d && (Math.abs(f) < 1 || !1) || !d && (Math.abs(s) < 1 || !1)) && (l = !0), l
+              return (d && (Math.abs(s) < 1 || !1) || !d && (Math.abs(f) < 1 || !1)) && (l = !0), l
             }(h, n, e, "h" === h ? i : l)
           }), []),
           d = o.useCallback((function(e) {
@@ -396,7 +396,7 @@ _global.SENTRY_RELEASE = {
               }
             }
           }), []),
-          f = o.useCallback((function(e, t, r, o) {
+          s = o.useCallback((function(e, t, r, o) {
             var a = {
               name: e,
               delta: t,
@@ -410,25 +410,25 @@ _global.SENTRY_RELEASE = {
               }))
             }), 1)
           }), []),
-          s = o.useCallback((function(e) {
+          f = o.useCallback((function(e) {
             t.current = R(e), a.current = void 0
           }), []),
           v = o.useCallback((function(n) {
-            f(n.type, _(n), n.target, l(n, e.lockRef.current))
+            s(n.type, _(n), n.target, l(n, e.lockRef.current))
           }), []),
           p = o.useCallback((function(n) {
-            f(n.type, R(n), n.target, l(n, e.lockRef.current))
+            s(n.type, R(n), n.target, l(n, e.lockRef.current))
           }), []);
         o.useEffect((function() {
           return x.push(i), e.setCallbacks({
               onScrollCapture: v,
               onWheelCapture: v,
               onTouchMoveCapture: p
-            }), document.addEventListener("wheel", d, E), document.addEventListener("touchmove", d, E), document.addEventListener("touchstart", s, E),
+            }), document.addEventListener("wheel", d, E), document.addEventListener("touchmove", d, E), document.addEventListener("touchstart", f, E),
             function() {
               x = x.filter((function(e) {
                 return e !== i
-              })), document.removeEventListener("wheel", d, E), document.removeEventListener("touchmove", d, E), document.removeEventListener("touchstart", s, E)
+              })), document.removeEventListener("wheel", d, E), document.removeEventListener("touchmove", d, E), document.removeEventListener("touchstart", f, E)
             }
         }), []);
         var g = e.removeScrollBar,
@@ -438,7 +438,7 @@ _global.SENTRY_RELEASE = {
         }) : null, g ? o.createElement(b, {
           gapMode: e.gapMode
         }) : null)
-      }, u.useMedium(B), f);
+      }, u.useMedium(B), s);
       var B, X = o.forwardRef((function(e, n) {
         return o.createElement(d, (0, r.Cl)({}, e, {
           ref: n,

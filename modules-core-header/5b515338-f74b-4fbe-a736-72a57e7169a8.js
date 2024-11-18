@@ -2,7 +2,7 @@
   try {
     var a = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       e = (new Error).stack;
-    e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "36d41a43-407f-4a08-b48f-9615aca9e7bc", a._sentryDebugIdIdentifier = "sentry-dbid-36d41a43-407f-4a08-b48f-9615aca9e7bc")
+    e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "5b515338-f74b-4fbe-a736-72a57e7169a8", a._sentryDebugIdIdentifier = "sentry-dbid-5b515338-f74b-4fbe-a736-72a57e7169a8")
   } catch (a) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -57,7 +57,7 @@ _global.SENTRY_RELEASE = {
       var s = {};
       t.r(s), t.d(s, {
         beaterator: () => r,
-        bully: () => m,
+        bully: () => c,
         careers: () => v,
         gta: () => p,
         gta2: () => u,
@@ -970,9 +970,9 @@ _global.SENTRY_RELEASE = {
           defaultMessage: "User Videos"
         }
       });
-      let g, _, l, c;
-      g = "/bully/*", _ = "/bully", l = "/bully/?section=order", c = o.C.www;
-      const m = a => ({
+      let g, _, l, m;
+      g = "/bully/*", _ = "/bully", l = "/bully/?section=order", m = o.C.www;
+      const c = a => ({
           site: "bully",
           appearancePaths: {
             [o.C.www]: [{
@@ -981,6 +981,9 @@ _global.SENTRY_RELEASE = {
             }],
             [o.C.socialClub]: [{
               path: "/games/bully*",
+              options: {}
+            }, {
+              path: "/member/*/games/bully/*",
               options: {}
             }]
           },
@@ -1018,7 +1021,7 @@ _global.SENTRY_RELEASE = {
             text: a.formatMessage(d.nav_bully_cta_buy_now),
             gaText: d.nav_bully_cta_buy_now.defaultMessage,
             location: {
-              domain: c,
+              domain: m,
               path: "/bully/?section=order"
             },
             ga: "cta_buy",
@@ -1125,6 +1128,9 @@ _global.SENTRY_RELEASE = {
             [o.C.socialClub]: [{
               path: "/games/gtaiv*",
               options: {}
+            }, {
+              path: "/member/*/games/gtaiv*",
+              options: {}
             }]
           },
           brand: "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/01dcdecd53de88ec599ab76ce2863fcd.svg",
@@ -1178,6 +1184,9 @@ _global.SENTRY_RELEASE = {
             }],
             [o.C.socialClub]: [{
               path: "/games/gtav/*",
+              options: {}
+            }, {
+              path: "/member/*/games/gtav/*",
               options: {}
             }]
           },
@@ -2185,10 +2194,19 @@ _global.SENTRY_RELEASE = {
               path: "/games/gtasa($|/*)",
               options: {}
             }, {
+              path: "/member/*/games/gtasa/*",
+              options: {}
+            }, {
               path: "/games/gtavc($|/*)",
               options: {}
             }, {
+              path: "/member/*/games/gtavc/*",
+              options: {}
+            }, {
               path: "/games/gta3($|/*)",
+              options: {}
+            }, {
+              path: "/member/*/games/gta3/*",
               options: {}
             }]
           },
@@ -2332,7 +2350,13 @@ _global.SENTRY_RELEASE = {
               path: "/games/lanvr/*",
               options: {}
             }, {
+              path: "/member/*/games/lanvr/*",
+              options: {}
+            }, {
               path: "/games/lan/*",
+              options: {}
+            }, {
+              path: "/member/*/games/lan/*",
               options: {}
             }]
           },
@@ -2507,6 +2531,9 @@ _global.SENTRY_RELEASE = {
             }],
             [o.C.socialClub]: [{
               path: "/games/maxpayne3*",
+              options: {}
+            }, {
+              path: "/member/*/games/maxpayne3*",
               options: {}
             }]
           },
@@ -3506,7 +3533,7 @@ _global.SENTRY_RELEASE = {
           } = a;
           const _ = (0, i.useIntl)(),
             l = (0, o.A)(),
-            c = (a => {
+            m = (a => {
               const e = (0, o.A)(),
                 t = a.subdomaincom,
                 s = a => {
@@ -3530,7 +3557,7 @@ _global.SENTRY_RELEASE = {
                 };
               return a => s(a)
             })(r),
-            m = e,
+            c = e,
             v = (a => ({
               targets: [{
                 text: a.formatMessage(d.search_target_games),
@@ -3638,14 +3665,14 @@ _global.SENTRY_RELEASE = {
                 return [...t, {
                   ...s,
                   appearancePaths: l.currentSite?.site ? s?.appearancePaths?.[l.currentSite.site] : [],
-                  links: n.map(c),
-                  cta: s.cta && c(s.cta)
+                  links: n.map(m),
+                  cta: s.cta && m(s.cta)
                 }]
               }), [])
             }), [p, f]),
             w = {
               ...v,
-              targets: v.targets.map(c)
+              targets: v.targets.map(m)
             };
           return (0, n.useEffect)((() => {
             const a = () => {
@@ -3654,7 +3681,7 @@ _global.SENTRY_RELEASE = {
             return window.addEventListener("resize", a), () => {
               window.removeEventListener("resize", a)
             }
-          }), []), (0, ga.jsx)(m, {
+          }), []), (0, ga.jsx)(c, {
             navigationData: h,
             locale: r,
             searchConfig: w,

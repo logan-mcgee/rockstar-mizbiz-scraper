@@ -1,8 +1,8 @@
 ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      d = (new Error).stack;
-    d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "0a5eb8fc-1719-4d38-975a-6547e2fdd435", e._sentryDebugIdIdentifier = "sentry-dbid-0a5eb8fc-1719-4d38-975a-6547e2fdd435")
+      a = (new Error).stack;
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "9204141f-315a-424c-8fa0-abeacf3cbbd1", e._sentryDebugIdIdentifier = "sentry-dbid-9204141f-315a-424c-8fa0-abeacf3cbbd1")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -16,36 +16,36 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [63], {
-    1190: (e, d, n) => {
-      var a = n(9493);
-      d.H = a.createRoot, a.hydrateRoot
+    1190: (e, a, n) => {
+      var d = n(9493);
+      a.H = d.createRoot, d.hydrateRoot
     },
-    1063: (e, d, n) => {
-      n.r(d);
-      var a = n(9807),
+    1063: (e, a, n) => {
+      n.r(a);
+      var d = n(9807),
         o = n(4277),
         t = n(1190),
-        f = n(7905),
-        l = n(6632);
+        l = n(7905),
+        r = n(6632);
       const {
-        graphEnv: r,
+        graphEnv: f,
         pingBearer: s
       } = (0, o.S0)();
 
-      function c() {
+      function b() {
         const e = document.createElement("div");
         e.id = "global-nav-root", document.body.prepend(e);
-        const d = (0, t.H)(e),
-          n = (0, a.my)(f.default, {
-            env: r,
-            token: (0, a.UT)(null),
-            tokenPing: (0, a.UT)(s),
-            tokenPingExpires: (0, a.UT)(null),
+        const a = (0, t.H)(e),
+          n = (0, d.my)(l.default, {
+            env: f,
+            token: (0, d.UT)(null),
+            tokenPing: (0, d.UT)(s),
+            tokenPingExpires: (0, d.UT)(null),
             typePolicies: {}
           });
-        d.render((0, l.jsx)(n, {}))
+        a.render((0, r.jsx)(n, {}))
       }
-      "loading" === document.readyState ? document.addEventListener("DOMContentLoaded", c) : c()
+      "loading" === document.readyState ? document.addEventListener("DOMContentLoaded", b) : b()
     }
   }
 ]);

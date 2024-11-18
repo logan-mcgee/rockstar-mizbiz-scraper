@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "12edf2e3-a26b-4949-9b6f-0be10e81c75d", e._sentryDebugIdIdentifier = "sentry-dbid-12edf2e3-a26b-4949-9b6f-0be10e81c75d")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "b916f542-a971-417d-90ae-c1b546f60e62", e._sentryDebugIdIdentifier = "sentry-dbid-b916f542-a971-417d-90ae-c1b546f60e62")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -2936,6 +2936,7 @@ _global.SENTRY_RELEASE = {
             onClick: e => {
               n?.(e), l || i || (r ? (e.preventDefault(), r(t)) : (e.preventDefault(), window.history.pushState({}, "", t)))
             },
+            target: a,
             ...c,
             children: o
           })
@@ -3967,15 +3968,19 @@ _global.SENTRY_RELEASE = {
             P.current && (!1 === p && !1 === N && (P.current.style.height = `${P.current.scrollHeight}px`), !0 === p && (P.current.style.height = null))
           }), [p, P, N]), (0, n.useEffect)((() => {
             const e = () => {
-                y && (w(!1), X(!0))
+                w(!1), X(!0)
               },
               t = t => {
+                const a = R?.current && t?.composedPath().includes(R.current);
+                y && !a && e()
+              },
+              a = t => {
                 "Escape" === t.code && e()
               };
-            return document.addEventListener("click", e), document.addEventListener("keyup", t), () => {
-              document.removeEventListener("click", e), document.removeEventListener("keyup", t)
+            return document.addEventListener("click", t), document.addEventListener("keyup", a), () => {
+              document.removeEventListener("click", t), document.removeEventListener("keyup", a)
             }
-          }), [y]), (0, n.useEffect)((() => {
+          }), [R]), (0, n.useEffect)((() => {
             w(!1), X(!0)
           }), [k]), (0, n.useEffect)((() => {
             if (R.current) {
@@ -4246,7 +4251,7 @@ _global.SENTRY_RELEASE = {
           },
           accessibility_skip_button: {
             id: "accessibility_skip_button",
-            defaultMessage: "Skip to main content"
+            defaultMessage: "Skip the Menu"
           }
         }),
         ln = e => {
@@ -4490,10 +4495,12 @@ _global.SENTRY_RELEASE = {
             visible: r
           } = e;
           return a ? (0, z.jsxs)("div", {
-            className: [Nn.backgroundElevation].join(" "),
+            className: Nn.backgroundElevation,
             onClick: s,
+            "data-testid": "background-elevation",
             children: [(0, z.jsx)("div", {
-              className: [Nn.backgroundOverlay, r ? Nn.backgroundVisible : ""].join(" ")
+              className: [Nn.backgroundOverlay, r ? Nn.backgroundVisible : ""].join(" "),
+              "data-testid": "background-overlay"
             }), t]
           }) : null
         },
@@ -4575,7 +4582,8 @@ _global.SENTRY_RELEASE = {
               onMouseEnter: i,
               style: {
                 ...o
-              }
+              },
+              "data-testid": "navigation-overlay"
             }), t && (0, z.jsx)("div", {
               className: [En.secondaryNavigationSlide, ...c].join(" "),
               children: t
@@ -4836,7 +4844,7 @@ _global.SENTRY_RELEASE = {
               r.forEach(((e, t) => {
                 "{query}" === e && r.set(t, a)
               }));
-              const i = r.size > 0 ? `?${r.toString()}` : "",
+              const i = r.toString() ? `?${r.toString()}` : "",
                 o = {
                   domain: s.domain,
                   path: n + i
@@ -4887,7 +4895,7 @@ _global.SENTRY_RELEASE = {
                 const t = e.targets?.findIndex((e => {
                   if ("" === e.type) {
                     if (e.location.path && s.startsWith(e.location.path) && N(i, e.location.params)) return f(e), !0;
-                    if (M(s + i, e.location.path)) return f(e), !0
+                    if (M(s, e.location.path)) return f(e), !0
                   }
                   return !1
                 }));
@@ -4978,7 +4986,7 @@ _global.SENTRY_RELEASE = {
             let i = Gn(r || "");
             const o = Un(i, Gn(t));
             let c;
-            return n && (c = Un(n, Gn(t))), o || c
+            return n && (c = Un(n, Gn(t))), Boolean(o || c)
           })) : []
         },
         Xn = e => {
@@ -5163,15 +5171,6 @@ _global.SENTRY_RELEASE = {
                 path: "/reddeadonline"
               },
               dataTestId: "rdo"
-            }, {
-              titleSlug: "GTATrilogy",
-              text: e.formatMessage(cn.games_menu_gta_trilogy),
-              gaText: "Grand Theft Auto: The Trilogy",
-              location: {
-                domain: a,
-                path: "/GTATrilogy"
-              },
-              dataTestId: "gtaTrilogy"
             }]
           }
         },
@@ -5842,9 +5841,9 @@ _global.SENTRY_RELEASE = {
           } = (0, o.G4)(), s = (0, r.useIntl)(), i = K(), {
             viewAllLocation: c,
             games: l
-          } = Qn(s, i), d = (0, n.useRef)(), [u, m] = (0, n.useState)(2.5);
+          } = Qn(s, i), [d, u] = (0, n.useState)(2.5);
           return (0, n.useEffect)((() => {
-            m(a ? 2.5 : 3.5)
+            u(a ? 2.5 : 3.5)
           }), [a]), (0, z.jsxs)("div", {
             className: "rockstargames-modules-core-headeraa2723b31994eccf90bdaddb160c6327",
             "data-testid": "gamesMenu",
@@ -5866,12 +5865,11 @@ _global.SENTRY_RELEASE = {
               })]
             }), (0, z.jsx)(xi.RC, {
               className: "rockstargames-modules-core-headerf7e74e3a912223c8415039d7d12a0094",
-              ref: d,
               spaceBetween: 12.8,
               loop: !1,
               grabCursor: !0,
               centeredSlides: !1,
-              slidesPerView: u,
+              slidesPerView: d,
               speed: 700,
               children: l.map((e => (0, z.jsx)(xi.qr, {
                 className: "rockstargames-modules-core-headerd4ae0014e8dd232a33aa354b013838cb",
@@ -6237,7 +6235,9 @@ _global.SENTRY_RELEASE = {
             onClick: () => {
               const a = document.querySelector("header");
               if (t && a) {
-                let s = t.findCandidates(a).filter((t => !a.contains(t) && e.current !== t));
+                let s = t.findCandidates(a, "down", {
+                  mode: "all"
+                }).filter((t => !a.contains(t) && e.current !== t));
                 s.length > 0 && s[0].focus()
               }
             },
