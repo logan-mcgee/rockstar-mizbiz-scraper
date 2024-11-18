@@ -28,18 +28,18 @@ _global.SENTRY_RELEASE = {
           __source: !0
         };
       t.jsx = function(e, t, n) {
-        var o, d = {},
-          c = null,
-          i = null;
-        for (o in void 0 !== n && (c = "" + n), void 0 !== t.key && (c = "" + t.key), void 0 !== t.ref && (i = t.ref), t) r.call(t, o) && !l.hasOwnProperty(o) && (d[o] = t[o]);
+        var o, c = {},
+          i = null,
+          d = null;
+        for (o in void 0 !== n && (i = "" + n), void 0 !== t.key && (i = "" + t.key), void 0 !== t.ref && (d = t.ref), t) r.call(t, o) && !l.hasOwnProperty(o) && (c[o] = t[o]);
         if (e && e.defaultProps)
-          for (o in t = e.defaultProps) void 0 === d[o] && (d[o] = t[o]);
+          for (o in t = e.defaultProps) void 0 === c[o] && (c[o] = t[o]);
         return {
           $$typeof: a,
           type: e,
-          key: c,
-          ref: i,
-          props: d,
+          key: i,
+          ref: d,
+          props: c,
           _owner: s.current
         }
       }
@@ -51,17 +51,17 @@ _global.SENTRY_RELEASE = {
       n.r(t), n.d(t, {
         ArraySort: () => u,
         Platform: () => l,
-        Platforms: () => d,
+        Platforms: () => c,
         default: () => E,
         detectIfWeShouldAnchorSomewhere: () => s,
         downloadFile: () => x,
-        findPlatform: () => i,
+        findPlatform: () => d,
         flattenObjectPreserveNesting: () => g,
         getCdnPrefix: () => y,
         getGen8Consoles: () => _,
         getGen9Consoles: () => v,
         getLanguageLabel: () => S,
-        importAll: () => f,
+        importAll: () => p,
         isGen9Platform: () => k,
         nestFlattenedObject: () => b,
         prettyPrint: () => h,
@@ -100,7 +100,7 @@ _global.SENTRY_RELEASE = {
           this.name = e, this.friendlyName = t, this.id = n, this.alias = o
         }
       }
-      const d = Object.freeze({
+      const c = Object.freeze({
           pc: new l("pc", "PC", 8),
           ps: new l("ps", "PlayStation", 3),
           ps3: new l("ps3", "PlayStation 3", 2),
@@ -117,16 +117,16 @@ _global.SENTRY_RELEASE = {
           appStore: new l("app_store", "App Store", 102),
           googlePlay: new l("ggle_play", "Google Play", 1023)
         }),
-        c = Object.freeze(Object.values(d));
+        i = Object.freeze(Object.values(c));
 
-      function i(e) {
+      function d(e) {
         if (!e) return;
         if (e instanceof l) return e;
         const t = e.toString().toLowerCase();
-        return c.find((e => t === e.name || t === e.id.toString() || t === e.friendlyName.toLowerCase() || t === e.alias?.toLowerCase()))
+        return i.find((e => t === e.name || t === e.id.toString() || t === e.friendlyName.toLowerCase() || t === e.alias?.toLowerCase()))
       }
-      var p = n(6632);
-      const f = e => e.keys().forEach(e),
+      var f = n(6632);
+      const p = e => e.keys().forEach(e),
         u = {
           alphabetical: {
             asc: (e, t) => [...e].sort(((e, n) => e[t].localeCompare(n[t], "en", {
@@ -174,7 +174,7 @@ _global.SENTRY_RELEASE = {
         m = e => e.replace(/(<([^>]+)>)/gi, ""),
         h = e => {
           const t = e.replace(/{/g, "{<br>").replace(/,/g, ",<br>").replace(/}/g, "<br>}");
-          return (0, p.jsx)("span", {
+          return (0, f.jsx)("span", {
             dangerouslySetInnerHTML: {
               __html: t
             }
@@ -210,8 +210,8 @@ _global.SENTRY_RELEASE = {
             console.log(e)
           }))
         },
-        _ = () => [d.xbox360.name, d.xboxone.name, d.ps3.name, d.ps4.name, d.pc.name],
-        v = () => [d.xboxsx.name, d.ps5.name],
+        _ = () => [c.xbox360.name, c.xboxone.name, c.ps3.name, c.ps4.name, c.pc.name],
+        v = () => [c.xboxsx.name, c.ps5.name],
         k = e => v().includes(e),
         S = e => {
           const t = new Map([

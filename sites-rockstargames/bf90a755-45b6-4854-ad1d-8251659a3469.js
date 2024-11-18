@@ -41,8 +41,8 @@ _global.SENTRY_RELEASE = {
         }
       });
       var m = i(60285),
-        o = i(24079),
-        c = i(22778),
+        c = i(24079),
+        o = i(22778),
         u = i(56864),
         k = i.n(u),
         g = i(61631),
@@ -86,8 +86,8 @@ _global.SENTRY_RELEASE = {
             collectionId: i,
             name: t,
             title: d,
-            label: o,
-            t: c
+            label: c,
+            t: o
           } = e;
           const u = (0, s.useIntl)(),
             [g, b] = (0, n.useState)(!1),
@@ -95,7 +95,7 @@ _global.SENTRY_RELEASE = {
               sanitize: N
             } = v(),
             h = [11, 10, 12, 13, 14, 15].includes(i),
-            w = t || c("Select Retailer"),
+            w = t || o("Select Retailer"),
             j = (0, n.useRef)(),
             _ = e => {
               j.current.contains(e.target) || b(!1)
@@ -138,7 +138,7 @@ _global.SENTRY_RELEASE = {
                   className: p.header,
                   onClick: () => b(!g),
                   type: "select",
-                  "aria-label": `${o?o+", ":""}${w}`,
+                  "aria-label": `${c?c+", ":""}${w}`,
                   children: (0, f.jsxs)("div", {
                     className: p.title,
                     children: [(0, f.jsx)("p", {
@@ -218,7 +218,7 @@ _global.SENTRY_RELEASE = {
               className: p.grid,
               children: i.results.map((e => (0, f.jsxs)("div", {
                 className: p.downloadItem,
-                children: [(0, f.jsx)(o.A, {
+                children: [(0, f.jsx)(c.A, {
                   title: e.title,
                   titleSlug: e.titleSlug
                 }), (0, f.jsx)(b, {
@@ -229,7 +229,7 @@ _global.SENTRY_RELEASE = {
               }, e.titleSlug)))
             }), n ? (0, f.jsx)("div", {
               className: p.viewAll,
-              children: (0, f.jsx)(c.A, {
+              children: (0, f.jsx)(o.A, {
                 role: "link",
                 "aria-label": a.title,
                 "data-gtm-category": "Downloads",
@@ -270,7 +270,7 @@ _global.SENTRY_RELEASE = {
               }, e.id)))
             }), i ? (0, f.jsx)("div", {
               className: p.viewAll,
-              children: (0, f.jsx)(c.A, {
+              children: (0, f.jsx)(o.A, {
                 role: "link",
                 "aria-label": a.title,
                 "data-gtm-category": "Downloads",
@@ -347,7 +347,7 @@ _global.SENTRY_RELEASE = {
                 }),
                 children: (0, f.jsx)("div", {
                   className: p.card,
-                  children: (0, f.jsx)(o.A, {
+                  children: (0, f.jsx)(c.A, {
                     title: e.game.title,
                     titleSlug: e?.game?.titleSlug ?? e.game.title_slug
                   })
@@ -405,7 +405,7 @@ _global.SENTRY_RELEASE = {
           const t = (0, s.useIntl)(),
             d = (0, n.useRef)(),
             l = a.title_slug,
-            o = !["music", "dlc"].includes(l);
+            c = !["music", "dlc"].includes(l);
           return (0, n.useEffect)((() => {
             d?.current && d.current.focus()
           }), [d]), (0, f.jsxs)("div", {
@@ -441,7 +441,7 @@ _global.SENTRY_RELEASE = {
                       backgroundImage: `url(${e?.musics?.[0]?.thumb??e?.dlcs?.[0]?.thumb??e.preview})`,
                       "--aspect-ratio": i
                     }
-                  }), o ? (0, f.jsx)("h5", {
+                  }), c ? (0, f.jsx)("h5", {
                     className: p.title,
                     "aria-hidden": !0,
                     children: e.title
@@ -564,7 +564,7 @@ _global.SENTRY_RELEASE = {
                       __html: i.description
                     }
                   })]
-                }), (0, f.jsx)(c.A, {
+                }), (0, f.jsx)(o.A, {
                   to: "https://store.rockstargames.com/game/buy-red-dead-redemption-2?_gl=1",
                   target: "_blank",
                   "data-gtm-category": "Downloads",
@@ -666,7 +666,7 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             setBreadcrumb: i
-          } = (0, d.useRockstarLocalState)(), s = (0, l.useQueryParams)(), [r, m] = (0, n.useState)(null), [o, c] = (0, n.useState)(null), {
+          } = (0, d.useRockstarLocalState)(), s = (0, l.useQueryParams)(), [r, m] = (0, n.useState)(null), [c, o] = (0, n.useState)(null), {
             loading: u,
             refetch: k
           } = (0, t.useQuery)(I, {
@@ -675,7 +675,7 @@ _global.SENTRY_RELEASE = {
             autoSetLoading: !0
           });
           if ((0, n.useEffect)((() => {
-              c(null);
+              o(null);
               const e = null !== s.get("series"),
                 a = {
                   seriesId: Number(s.get("series")),
@@ -695,38 +695,38 @@ _global.SENTRY_RELEASE = {
                   withSharkCards: "14" === s.get("collection")
                 };
               m(a)
-            }), [s.get("series"), s.get("collection"), c]), (0, n.useEffect)((() => {
+            }), [s.get("series"), s.get("collection"), o]), (0, n.useEffect)((() => {
               let e = [{
                 href: "/downloads",
                 title: a("Downloads")
               }];
-              return o?.collection?.id && r.withSeries && (e = [...e, {
-                href: `/downloads?collection=${o.collection.id}`,
-                title: o.collection.title
+              return c?.collection?.id && r.withSeries && (e = [...e, {
+                href: `/downloads?collection=${c.collection.id}`,
+                title: c.collection.title
               }]), i(e), () => {
                 i()
               }
-            }), [o, r]), (0, n.useEffect)((() => {
+            }), [c, r]), (0, n.useEffect)((() => {
               r && (async () => {
                 const e = await k(r);
-                c(e.data)
+                o(e.data)
               })()
-            }), [k, r]), !o || u) return null;
+            }), [k, r]), !c || u) return null;
           if (r.withIndex) return (0, f.jsx)("div", {
             className: p.index,
             children: (0, f.jsxs)("div", {
               className: p.sections,
               children: [(0, f.jsx)(V, {
-                data: o
+                data: c
               }), (0, f.jsx)(N, {
                 homepage: !0,
-                games: o.pcMacGames,
-                collection: o.collections.find((e => "gamespcmac" === e.title_slug))
+                games: c.pcMacGames,
+                collection: c.collections.find((e => "gamespcmac" === e.title_slug))
               }), (0, f.jsx)(h, {
                 homepage: !0,
-                collection: o.collections.find((e => "apps" === e.title_slug))
+                collection: c.collections.find((e => "apps" === e.title_slug))
               }), (0, f.jsx)(F, {
-                collections: o.collections.filter((e => !["apps", "gamespcmac", "sharkcards"].includes(e.title_slug)))
+                collections: c.collections.filter((e => !["apps", "gamespcmac", "sharkcards"].includes(e.title_slug)))
               })]
             })
           });
@@ -735,7 +735,7 @@ _global.SENTRY_RELEASE = {
             return (0, f.jsx)("div", {
               className: p.index,
               children: (0, f.jsx)(D, {
-                collection: o.collection,
+                collection: c.collection,
                 imgRatio: e
               })
             })
@@ -743,8 +743,8 @@ _global.SENTRY_RELEASE = {
           return r.withCollection ? (0, f.jsx)("div", {
             className: p.index,
             children: (0, f.jsx)(S, {
-              collection: o.collection,
-              games: o.pcMacGames
+              collection: c.collection,
+              games: c.pcMacGames
             })
           }) : null
         }))
@@ -768,20 +768,20 @@ _global.SENTRY_RELEASE = {
           to: s,
           onClick: r,
           target: m = "_self",
-          ...o
+          ...c
         } = e;
-        const c = [t.button, t[l], a].join(" ");
+        const o = [t.button, t[l], a].join(" ");
         return s ? (0, d.jsx)(n.A, {
-          ...o,
+          ...c,
           to: s,
-          className: c,
+          className: o,
           onClick: r,
           target: m,
           children: i
         }) : (0, d.jsx)("button", {
-          ...o,
+          ...c,
           type: "button",
-          className: c,
+          className: o,
           onClick: r,
           children: i
         })
@@ -808,17 +808,17 @@ _global.SENTRY_RELEASE = {
           titleSlug: m
         } = e;
         const {
-          isMobile: o
-        } = (0, t.useWindowResize)(), c = (0, n.useMemo)((() => {
+          isMobile: c
+        } = (0, t.useWindowResize)(), o = (0, n.useMemo)((() => {
           let e = "";
-          return a && (e = o ? i(17426)(`./${m}/mobile.png`) : i(65392)(`./${m}/desktop.png`)), e || (e = i(32781)(`./${m}.jpg`), e += `?im=Resize=${s}`), e
-        }), [o, m]), [u] = (0, t.usePreloadImg)(c);
+          return a && (e = c ? i(17426)(`./${m}/mobile.png`) : i(65392)(`./${m}/desktop.png`)), e || (e = i(32781)(`./${m}.jpg`), e += `?im=Resize=${s}`), e
+        }), [c, m]), [u] = (0, t.usePreloadImg)(o);
         return (0, l.jsx)("div", {
           role: "img",
           "aria-label": r,
           className: [d.img, u ? d.startAnimation : "", a ? d.wide : ""].join(" "),
           style: {
-            backgroundImage: `url(${c})`
+            backgroundImage: `url(${o})`
           }
         })
       }

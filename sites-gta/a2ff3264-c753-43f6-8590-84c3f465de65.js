@@ -1,8 +1,8 @@
 ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "a2ff3264-c753-43f6-8590-84c3f465de65", e._sentryDebugIdIdentifier = "sentry-dbid-a2ff3264-c753-43f6-8590-84c3f465de65")
+      a = (new Error).stack;
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "a2ff3264-c753-43f6-8590-84c3f465de65", e._sentryDebugIdIdentifier = "sentry-dbid-a2ff3264-c753-43f6-8590-84c3f465de65")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -16,35 +16,35 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_gta = self.webpackChunk_rockstargames_sites_gta || []).push([
   [932], {
-    796: (e, t, a) => {
-      a.r(t), a.d(t, {
+    796: (e, a, t) => {
+      t.r(a), t.d(a, {
         default: () => I
       });
-      var s = a(8407),
-        o = a(5301),
-        r = a.n(o),
-        n = a(600);
+      var s = t(8407),
+        o = t(5301),
+        r = t.n(o),
+        n = t(600);
       const l = "__MFE_GLOBAL_HOOK__";
-      var c = a(3963),
-        i = a(2756),
-        d = a(6717);
+      var c = t(3963),
+        i = t(2756),
+        d = t(6717);
       const f = JSON.parse('{"us":{"home_text":"Home","rockstar_games_logo_alt_text":"Rockstar Games Logo"},"de":{"home_text":"Startseite","rockstar_games_logo_alt_text":"Rockstar-Games-Logo"},"es":{"home_text":"Inicio","rockstar_games_logo_alt_text":"Logo de Rockstar Games"},"mx":{"home_text":"Inicio","rockstar_games_logo_alt_text":"Logo de Rockstar Games"},"fr":{"home_text":"Accueil","rockstar_games_logo_alt_text":"Logo Rockstar Games"},"it":{"home_text":"Home","rockstar_games_logo_alt_text":"Logo di Rockstar Games"},"jp":{"home_text":"ホーム","rockstar_games_logo_alt_text":"ロックスター・ゲームスロゴ"},"kr":{"home_text":"홈","rockstar_games_logo_alt_text":"Rockstar Games 로고"},"pl":{"home_text":"Strona główna","rockstar_games_logo_alt_text":"Logo Rockstar Games"},"br":{"home_text":"Início","rockstar_games_logo_alt_text":"Logotipo da Rockstar Games"},"ru":{"home_text":"Главная страница","rockstar_games_logo_alt_text":"Логотип Rockstar Games"},"hans":{"home_text":"主页","rockstar_games_logo_alt_text":"Rockstar Games 标志"},"tw":{"home_text":"首頁","rockstar_games_logo_alt_text":"Rockstar Games 標誌"}}');
-      var m = a(207),
-        _ = a(6040),
-        g = a(8281),
-        u = a(3134),
-        b = a(4781),
-        k = a(1403),
-        h = a(6864),
-        p = a.n(h),
-        x = a(7460),
-        w = a(5186),
-        y = a(7679);
-      var v = a(6632);
+      var m = t(207),
+        _ = t(6040),
+        g = t(8281),
+        u = t(3134),
+        b = t(4781),
+        k = t(1403),
+        h = t(6864),
+        p = t.n(h),
+        x = t(7460),
+        w = t(5186),
+        y = t(7679);
+      var v = t(6632);
       const R = e => {
         let {
-          onClick: t,
-          ctaLabel: a
+          onClick: a,
+          ctaLabel: t
         } = e;
         const {
           ctaButtonRef: s
@@ -53,26 +53,26 @@ _global.SENTRY_RELEASE = {
           type: "button",
           className: "rockstargames-sites-gtafe32ab82b94a899a4ec1b7e4fbf734b1",
           ref: s,
-          onClick: t,
+          onClick: a,
           "aria-label": "cta",
           children: [(0, v.jsx)("span", {
             className: "rockstargames-sites-gtabbe97a0a526c88364481687b61a403c8",
-            children: a
+            children: t
           }), (0, v.jsx)("div", {
             className: "rockstargames-sites-gtae4971974377013b474cfbf687656923a"
           })]
         })
       };
-      var j = a(1744),
-        L = a(5190);
+      var j = t(1744),
+        L = t(5190);
       const T = "rockstargames-sites-gtaa799fab6998f229f5b8c00d05b335595";
       _.gsap.registerPlugin(b.u, g.R, u.I);
       const E = () => {
           const {
             loading: e,
-            translation: t
+            translation: a
           } = (0, w.c3)(), {
-            windowWidth: a,
+            windowWidth: t,
             windowHeight: o
           } = (0, i.useWindowResize)(), {
             mutateLSSettings: r
@@ -99,7 +99,7 @@ _global.SENTRY_RELEASE = {
               N?.bannerTimeline && (M ? D ? N.bannerTimeline.progress(1) : N.bannerTimeline.play() : M || D || N.bannerTimeline.reverse())
             }), [M, N?.bannerTimeline]), (0, k.useLayoutEffect)((() => {
               u?.current?.invalidate()
-            }), [a, o]), (0, k.useLayoutEffect)((() => {
+            }), [t, o]), (0, k.useLayoutEffect)((() => {
               const e = _.gsap.context((() => {
                 N?.bannerTimeline?.progress(0).kill(), V && (u.current = _.gsap.timeline({
                   paused: !0,
@@ -162,13 +162,13 @@ _global.SENTRY_RELEASE = {
                     },
                     children: [(0, v.jsx)("p", {
                       className: "rockstargames-sites-gtaef774f834d259ac49eb9874eac4447cb",
-                      children: t("d2.bannerMsg")
+                      children: a("d2.bannerMsg")
                     }), (0, v.jsx)("p", {
                       className: T,
-                      children: t("d2.bannerMob1")
+                      children: a("d2.bannerMob1")
                     }), (0, v.jsx)("p", {
                       className: T,
-                      children: t("d2.bannerMob2")
+                      children: a("d2.bannerMob2")
                     })]
                   }), (0, v.jsx)("div", {
                     className: "rockstargames-sites-gtaa032f0013ab3ef4b2a5c9cbcde8fad40",
@@ -178,7 +178,7 @@ _global.SENTRY_RELEASE = {
                     ref: C,
                     className: "rockstargames-sites-gtab95e30584f20eb079ce8b88ad536479b",
                     children: [(0, v.jsx)(R, {
-                      ctaLabel: e ? "" : t("d2.destCTA"),
+                      ctaLabel: e ? "" : a("d2.destCTA"),
                       onClick: () => {
                         n({
                           event: "cta_other",
@@ -223,11 +223,11 @@ _global.SENTRY_RELEASE = {
                 })(), e[l]?.history) return e[l].history;
               throw new Error("Browser History has not been initialised")
             })(),
-            t = (0, s.useBase)(),
+            a = (0, s.useBase)(),
             {
-              currentSite: a
+              currentSite: t
             } = (0, c.A)(),
-            o = a?.site === c.C.socialClub ? "/" : t;
+            o = t?.site === c.C.socialClub ? "/" : a;
           return (0, v.jsx)(i.ResizeProvider, {
             children: (0, v.jsx)(r(), {
               history: e,

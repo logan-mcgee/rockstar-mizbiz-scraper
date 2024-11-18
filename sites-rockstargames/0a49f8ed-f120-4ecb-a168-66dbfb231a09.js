@@ -18,24 +18,24 @@ _global.SENTRY_RELEASE = {
   [4233], {
     84233: (e, a, s) => {
       s.r(a), s.d(a, {
-        default: () => d
+        default: () => o
       });
-      const t = {
+      const d = {
         maint: "rockstargames-sites-rockstargamesee5e5a68eb125090583fe5d4f8ce03df",
         content: "rockstargames-sites-rockstargamesf5aef392e680073f8fed78567c8dbb4e",
         logo: "rockstargames-sites-rockstargamesda2fe3ab2392b09ff23958abdf602eb4"
       };
-      var o = s(46632);
-      const d = () => (0, o.jsx)("div", {
-        className: t.maint,
-        children: (0, o.jsxs)("div", {
-          className: t.content,
-          children: [(0, o.jsx)("div", {
-            className: t.logo
-          }), (0, o.jsx)("p", {
+      var t = s(46632);
+      const o = () => (0, t.jsx)("div", {
+        className: d.maint,
+        children: (0, t.jsxs)("div", {
+          className: d.content,
+          children: [(0, t.jsx)("div", {
+            className: d.logo
+          }), (0, t.jsx)("p", {
             children: "The Rockstar Games Social Club is currently undergoing maintenance. Please check back soon."
-          }), (0, o.jsx)("a", {
-            className: t.support,
+          }), (0, t.jsx)("a", {
+            className: d.support,
             href: "https://support.rockstargames.com/",
             children: "https://support.rockstargames.com/"
           })]

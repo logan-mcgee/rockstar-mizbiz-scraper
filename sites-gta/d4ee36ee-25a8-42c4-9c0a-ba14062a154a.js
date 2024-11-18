@@ -21,21 +21,21 @@ _global.SENTRY_RELEASE = {
         RemoveScroll: () => X
       });
       var r = t(226),
-        o = t(1403),
-        a = "right-scroll-bar-position",
+        a = t(1403),
+        o = "right-scroll-bar-position",
         c = "width-before-scroll-bar",
         i = t(6208),
         l = (0, t(3496).f)(),
         d = function() {},
-        u = o.forwardRef((function(e, n) {
-          var t = o.useRef(null),
-            a = o.useState({
+        u = a.forwardRef((function(e, n) {
+          var t = a.useRef(null),
+            o = a.useState({
               onScrollCapture: d,
               onWheelCapture: d,
               onTouchMoveCapture: d
             }),
-            c = a[0],
-            u = a[1],
+            c = o[0],
+            u = o[1],
             s = e.forwardProps,
             f = e.children,
             h = e.className,
@@ -43,8 +43,8 @@ _global.SENTRY_RELEASE = {
             p = e.enabled,
             g = e.shards,
             m = e.sideCar,
-            b = e.noIsolation,
-            w = e.inert,
+            w = e.noIsolation,
+            b = e.inert,
             y = e.allowPinchZoom,
             C = e.as,
             E = void 0 === C ? "div" : C,
@@ -53,19 +53,19 @@ _global.SENTRY_RELEASE = {
             R = m,
             M = (0, i.S)([t, n]),
             _ = (0, r.Cl)((0, r.Cl)({}, S), c);
-          return o.createElement(o.Fragment, null, p && o.createElement(R, {
+          return a.createElement(a.Fragment, null, p && a.createElement(R, {
             sideCar: l,
             removeScrollBar: v,
             shards: g,
-            noIsolation: b,
-            inert: w,
+            noIsolation: w,
+            inert: b,
             setCallbacks: u,
             allowPinchZoom: !!y,
             lockRef: t,
             gapMode: k
-          }), s ? o.cloneElement(o.Children.only(f), (0, r.Cl)((0, r.Cl)({}, _), {
+          }), s ? a.cloneElement(a.Children.only(f), (0, r.Cl)((0, r.Cl)({}, _), {
             ref: M
-          })) : o.createElement(E, (0, r.Cl)({}, _, {
+          })) : a.createElement(E, (0, r.Cl)({}, _, {
             className: h,
             ref: M
           }), f))
@@ -76,15 +76,15 @@ _global.SENTRY_RELEASE = {
         inert: !1
       }, u.classNames = {
         fullWidth: c,
-        zeroRight: a
+        zeroRight: o
       };
       var s = function(e) {
         var n = e.sideCar,
           t = (0, r.Tt)(e, ["sideCar"]);
         if (!n) throw new Error("Sidecar: please provide `sideCar` property to import the right car");
-        var a = n.read();
-        if (!a) throw new Error("Sidecar medium not found");
-        return o.createElement(a, (0, r.Cl)({}, t))
+        var o = n.read();
+        if (!o) throw new Error("Sidecar medium not found");
+        return a.createElement(o, (0, r.Cl)({}, t))
       };
       s.isSideCarExport = !0;
       var f = function() {
@@ -92,14 +92,14 @@ _global.SENTRY_RELEASE = {
             n = null;
           return {
             add: function(r) {
-              var o, a;
+              var a, o;
               0 == e && (n = function() {
                 if (!document) return null;
                 var e = document.createElement("style");
                 e.type = "text/css";
                 var n = t.nc;
                 return n && e.setAttribute("nonce", n), e
-              }()) && (a = r, (o = n).styleSheet ? o.styleSheet.cssText = a : o.appendChild(document.createTextNode(a)), function(e) {
+              }()) && (o = r, (a = n).styleSheet ? a.styleSheet.cssText = o : a.appendChild(document.createTextNode(o)), function(e) {
                 (document.head || document.getElementsByTagName("head")[0]).appendChild(e)
               }(n)), e++
             },
@@ -110,7 +110,7 @@ _global.SENTRY_RELEASE = {
         },
         h = function() {
           var e, n = (e = f(), function(n, t) {
-            o.useEffect((function() {
+            a.useEffect((function() {
               return e.add(n),
                 function() {
                   e.remove()
@@ -134,26 +134,26 @@ _global.SENTRY_RELEASE = {
         },
         g = h(),
         m = function(e, n, t, r) {
-          var o = e.left,
+          var a = e.left,
             i = e.top,
             l = e.right,
             d = e.gap;
-          return void 0 === t && (t = "margin"), "\n  .".concat("with-scroll-bars-hidden", " {\n   overflow: hidden ").concat(r, ";\n   padding-right: ").concat(d, "px ").concat(r, ";\n  }\n  body {\n    overflow: hidden ").concat(r, ";\n    overscroll-behavior: contain;\n    ").concat([n && "position: relative ".concat(r, ";"), "margin" === t && "\n    padding-left: ".concat(o, "px;\n    padding-top: ").concat(i, "px;\n    padding-right: ").concat(l, "px;\n    margin-left:0;\n    margin-top:0;\n    margin-right: ").concat(d, "px ").concat(r, ";\n    "), "padding" === t && "padding-right: ".concat(d, "px ").concat(r, ";")].filter(Boolean).join(""), "\n  }\n  \n  .").concat(a, " {\n    right: ").concat(d, "px ").concat(r, ";\n  }\n  \n  .").concat(c, " {\n    margin-right: ").concat(d, "px ").concat(r, ";\n  }\n  \n  .").concat(a, " .").concat(a, " {\n    right: 0 ").concat(r, ";\n  }\n  \n  .").concat(c, " .").concat(c, " {\n    margin-right: 0 ").concat(r, ";\n  }\n  \n  body {\n    ").concat("--removed-body-scroll-bar-size", ": ").concat(d, "px;\n  }\n")
+          return void 0 === t && (t = "margin"), "\n  .".concat("with-scroll-bars-hidden", " {\n   overflow: hidden ").concat(r, ";\n   padding-right: ").concat(d, "px ").concat(r, ";\n  }\n  body {\n    overflow: hidden ").concat(r, ";\n    overscroll-behavior: contain;\n    ").concat([n && "position: relative ".concat(r, ";"), "margin" === t && "\n    padding-left: ".concat(a, "px;\n    padding-top: ").concat(i, "px;\n    padding-right: ").concat(l, "px;\n    margin-left:0;\n    margin-top:0;\n    margin-right: ").concat(d, "px ").concat(r, ";\n    "), "padding" === t && "padding-right: ".concat(d, "px ").concat(r, ";")].filter(Boolean).join(""), "\n  }\n  \n  .").concat(o, " {\n    right: ").concat(d, "px ").concat(r, ";\n  }\n  \n  .").concat(c, " {\n    margin-right: ").concat(d, "px ").concat(r, ";\n  }\n  \n  .").concat(o, " .").concat(o, " {\n    right: 0 ").concat(r, ";\n  }\n  \n  .").concat(c, " .").concat(c, " {\n    margin-right: 0 ").concat(r, ";\n  }\n  \n  body {\n    ").concat("--removed-body-scroll-bar-size", ": ").concat(d, "px;\n  }\n")
         },
-        b = function(e) {
+        w = function(e) {
           var n = e.noRelative,
             t = e.noImportant,
             r = e.gapMode,
-            a = void 0 === r ? "margin" : r,
-            c = o.useMemo((function() {
+            o = void 0 === r ? "margin" : r,
+            c = a.useMemo((function() {
               return function(e) {
                 if (void 0 === e && (e = "margin"), "undefined" == typeof window) return v;
                 var n = function(e) {
                     var n = window.getComputedStyle(document.body),
                       t = n["padding" === e ? "paddingLeft" : "marginLeft"],
                       r = n["padding" === e ? "paddingTop" : "marginTop"],
-                      o = n["padding" === e ? "paddingRight" : "marginRight"];
-                    return [p(t), p(r), p(o)]
+                      a = n["padding" === e ? "paddingRight" : "marginRight"];
+                    return [p(t), p(r), p(a)]
                   }(e),
                   t = document.documentElement.clientWidth,
                   r = window.innerWidth;
@@ -163,24 +163,24 @@ _global.SENTRY_RELEASE = {
                   right: n[2],
                   gap: Math.max(0, r - t + n[2] - n[0])
                 }
-              }(a)
-            }), [a]);
-          return o.createElement(g, {
-            styles: m(c, !n, a, t ? "" : "!important")
+              }(o)
+            }), [o]);
+          return a.createElement(g, {
+            styles: m(c, !n, o, t ? "" : "!important")
           })
         },
-        w = !1;
+        b = !1;
       if ("undefined" != typeof window) try {
         var y = Object.defineProperty({}, "passive", {
           get: function() {
-            return w = !0, !0
+            return b = !0, !0
           }
         });
         window.addEventListener("test", y, y), window.removeEventListener("test", y, y)
       } catch (e) {
-        w = !1
+        b = !1
       }
-      var C = !!w && {
+      var C = !!b && {
           passive: !1
         },
         E = function(e, n) {
@@ -194,8 +194,8 @@ _global.SENTRY_RELEASE = {
             r = n;
           do {
             if ("undefined" != typeof ShadowRoot && r instanceof ShadowRoot && (r = r.host), S(e, r)) {
-              var o = R(e, r);
-              if (o[1] > o[2]) return !0
+              var a = R(e, r);
+              if (a[1] > a[2]) return !0
             }
             r = r.parentNode
           } while (r && r !== t.body);
@@ -234,15 +234,15 @@ _global.SENTRY_RELEASE = {
         return n
       }
       const P = (l.useMedium((function(e) {
-        var n = o.useRef([]),
-          t = o.useRef([0, 0]),
-          a = o.useRef(),
-          c = o.useState(N++)[0],
-          i = o.useState(h)[0],
-          l = o.useRef(e);
-        o.useEffect((function() {
+        var n = a.useRef([]),
+          t = a.useRef([0, 0]),
+          o = a.useRef(),
+          c = a.useState(N++)[0],
+          i = a.useState(h)[0],
+          l = a.useRef(e);
+        a.useEffect((function() {
           l.current = e
-        }), [e]), o.useEffect((function() {
+        }), [e]), a.useEffect((function() {
           if (e.inert) {
             document.body.classList.add("block-interactivity-".concat(c));
             var n = (0, r.fX)([e.lockRef.current], (e.shards || []).map(T), !0).filter(Boolean);
@@ -256,25 +256,25 @@ _global.SENTRY_RELEASE = {
               }
           }
         }), [e.inert, e.lockRef.current, e.shards]);
-        var d = o.useCallback((function(e, n) {
+        var d = a.useCallback((function(e, n) {
             if ("touches" in e && 2 === e.touches.length) return !l.current.allowPinchZoom;
-            var r, o = M(e),
+            var r, a = M(e),
               c = t.current,
-              i = "deltaX" in e ? e.deltaX : c[0] - o[0],
-              d = "deltaY" in e ? e.deltaY : c[1] - o[1],
+              i = "deltaX" in e ? e.deltaX : c[0] - a[0],
+              d = "deltaY" in e ? e.deltaY : c[1] - a[1],
               u = e.target,
               s = Math.abs(i) > Math.abs(d) ? "h" : "v";
             if ("touches" in e && "h" === s && "range" === u.type) return !1;
             var f = k(s, u);
             if (!f) return !0;
             if (f ? r = s : (r = "v" === s ? "h" : "v", f = k(s, u)), !f) return !1;
-            if (!a.current && "changedTouches" in e && (i || d) && (a.current = r), !r) return !0;
-            var h = a.current || r;
-            return function(e, n, t, r, o) {
-              var a = function(e, n) {
+            if (!o.current && "changedTouches" in e && (i || d) && (o.current = r), !r) return !0;
+            var h = o.current || r;
+            return function(e, n, t, r, a) {
+              var o = function(e, n) {
                   return "h" === e && "rtl" === n ? -1 : 1
                 }(e, window.getComputedStyle(n).direction),
-                c = a * r,
+                c = o * r,
                 i = t.target,
                 l = n.contains(i),
                 d = !1,
@@ -284,53 +284,53 @@ _global.SENTRY_RELEASE = {
               do {
                 var h = R(e, i),
                   v = h[0],
-                  p = h[1] - h[2] - a * v;
+                  p = h[1] - h[2] - o * v;
                 (v || p) && S(e, i) && (s += p, f += v), i = i instanceof ShadowRoot ? i.host : i.parentNode
               } while (!l && i !== document.body || l && (n.contains(i) || n === i));
-              return (u && (o && Math.abs(s) < 1 || !o && c > s) || !u && (o && Math.abs(f) < 1 || !o && -c > f)) && (d = !0), d
+              return (u && (a && Math.abs(s) < 1 || !a && c > s) || !u && (a && Math.abs(f) < 1 || !a && -c > f)) && (d = !0), d
             }(h, n, e, "h" === h ? i : d, !0)
           }), []),
-          u = o.useCallback((function(e) {
+          u = a.useCallback((function(e) {
             var t = e;
             if (x.length && x[x.length - 1] === i) {
               var r = "deltaY" in t ? _(t) : M(t),
-                o = n.current.filter((function(e) {
-                  return e.name === t.type && (e.target === t.target || t.target === e.shadowParent) && (n = e.delta, o = r, n[0] === o[0] && n[1] === o[1]);
-                  var n, o
+                a = n.current.filter((function(e) {
+                  return e.name === t.type && (e.target === t.target || t.target === e.shadowParent) && (n = e.delta, a = r, n[0] === a[0] && n[1] === a[1]);
+                  var n, a
                 }))[0];
-              if (o && o.should) t.cancelable && t.preventDefault();
-              else if (!o) {
-                var a = (l.current.shards || []).map(T).filter(Boolean).filter((function(e) {
+              if (a && a.should) t.cancelable && t.preventDefault();
+              else if (!a) {
+                var o = (l.current.shards || []).map(T).filter(Boolean).filter((function(e) {
                   return e.contains(t.target)
                 }));
-                (a.length > 0 ? d(t, a[0]) : !l.current.noIsolation) && t.cancelable && t.preventDefault()
+                (o.length > 0 ? d(t, o[0]) : !l.current.noIsolation) && t.cancelable && t.preventDefault()
               }
             }
           }), []),
-          s = o.useCallback((function(e, t, r, o) {
-            var a = {
+          s = a.useCallback((function(e, t, r, a) {
+            var o = {
               name: e,
               delta: t,
               target: r,
-              should: o,
+              should: a,
               shadowParent: I(r)
             };
-            n.current.push(a), setTimeout((function() {
+            n.current.push(o), setTimeout((function() {
               n.current = n.current.filter((function(e) {
-                return e !== a
+                return e !== o
               }))
             }), 1)
           }), []),
-          f = o.useCallback((function(e) {
-            t.current = M(e), a.current = void 0
+          f = a.useCallback((function(e) {
+            t.current = M(e), o.current = void 0
           }), []),
-          v = o.useCallback((function(n) {
+          v = a.useCallback((function(n) {
             s(n.type, _(n), n.target, d(n, e.lockRef.current))
           }), []),
-          p = o.useCallback((function(n) {
+          p = a.useCallback((function(n) {
             s(n.type, M(n), n.target, d(n, e.lockRef.current))
           }), []);
-        o.useEffect((function() {
+        a.useEffect((function() {
           return x.push(i), e.setCallbacks({
               onScrollCapture: v,
               onWheelCapture: v,
@@ -344,14 +344,14 @@ _global.SENTRY_RELEASE = {
         }), []);
         var g = e.removeScrollBar,
           m = e.inert;
-        return o.createElement(o.Fragment, null, m ? o.createElement(i, {
+        return a.createElement(a.Fragment, null, m ? a.createElement(i, {
           styles: L(c)
-        }) : null, g ? o.createElement(b, {
+        }) : null, g ? a.createElement(w, {
           gapMode: e.gapMode
         }) : null)
       })), s);
-      var B = o.forwardRef((function(e, n) {
-        return o.createElement(u, (0, r.Cl)({}, e, {
+      var B = a.forwardRef((function(e, n) {
+        return a.createElement(u, (0, r.Cl)({}, e, {
           ref: n,
           sideCar: P
         }))

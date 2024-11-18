@@ -207,7 +207,7 @@ _global.SENTRY_RELEASE = {
       };
       var a = {};
 
-      function d(e, n) {
+      function t(e, n) {
         for (var i = 0; i < e.definitions.length; i++) {
           var a = e.definitions[i];
           if (a.name && a.name.value == n) return a
@@ -221,13 +221,13 @@ _global.SENTRY_RELEASE = {
       })), e.exports = n, e.exports.VideosList = function(e, n) {
         var i = {
           kind: e.kind,
-          definitions: [d(e, n)]
+          definitions: [t(e, n)]
         };
         e.hasOwnProperty("loc") && (i.loc = e.loc);
-        var t = a[n] || new Set,
+        var d = a[n] || new Set,
           l = new Set,
           o = new Set;
-        for (t.forEach((function(e) {
+        for (d.forEach((function(e) {
             o.add(e)
           })); o.size > 0;) {
           var r = o;
@@ -238,7 +238,7 @@ _global.SENTRY_RELEASE = {
           }))
         }
         return l.forEach((function(n) {
-          var a = d(e, n);
+          var a = t(e, n);
           a && i.definitions.push(a)
         })), i
       }(n, "VideosList")

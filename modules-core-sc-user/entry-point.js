@@ -33,7 +33,7 @@ _global.SENTRY_RELEASE = {
     }],
     execute: function() {
       e((() => {
-        var e, o, a, i, s = {
+        var e, a, o, i, s = {
             539: (e, r, t) => {
               (0, t(403).w)(1)
             },
@@ -51,9 +51,9 @@ _global.SENTRY_RELEASE = {
               r.y = function(e, r) {
                 var t = document.createElement("a");
                 t.href = e;
-                for (var n = "/" === t.pathname[0] ? t.pathname : "/" + t.pathname, o = 0, a = n.length; o !== r && a >= 0;) "/" === n[--a] && o++;
-                if (o !== r) throw Error("systemjs-webpack-interop: rootDirectoryLevel (" + r + ") is greater than the number of directories (" + o + ") in the URL path " + e);
-                var i = n.slice(0, a + 1);
+                for (var n = "/" === t.pathname[0] ? t.pathname : "/" + t.pathname, a = 0, o = n.length; a !== r && o >= 0;) "/" === n[--o] && a++;
+                if (a !== r) throw Error("systemjs-webpack-interop: rootDirectoryLevel (" + r + ") is greater than the number of directories (" + a + ") in the URL path " + e);
+                var i = n.slice(0, o + 1);
                 return t.protocol + "//" + t.host + i
               };
               Number.isInteger
@@ -65,20 +65,20 @@ _global.SENTRY_RELEASE = {
                   "./index": () => Promise.all([t.e(756), t.e(563)]).then((() => () => t(36))),
                   "./providers": () => Promise.all([t.e(756), t.e(563)]).then((() => () => t(896)))
                 },
-                o = (e, r) => (t.R = r, r = t.o(n, e) ? n[e]() : Promise.resolve().then((() => {
+                a = (e, r) => (t.R = r, r = t.o(n, e) ? n[e]() : Promise.resolve().then((() => {
                   throw new Error('Module "' + e + '" does not exist in container.')
                 })), t.R = void 0, r),
-                a = (e, r) => {
+                o = (e, r) => {
                   if (t.S) {
                     var n = "default",
-                      o = t.S[n];
-                    if (o && o !== e) throw new Error("Container initialization failed as it has already been initialized with a different share scope");
+                      a = t.S[n];
+                    if (a && a !== e) throw new Error("Container initialization failed as it has already been initialized with a different share scope");
                     return t.S[n] = e, t.I(n, r)
                   }
                 };
               t.d(r, {
-                get: () => o,
-                init: () => a
+                get: () => a,
+                init: () => o
               })
             },
             24: e => {
@@ -90,56 +90,56 @@ _global.SENTRY_RELEASE = {
               e.exports = n
             }
           },
-          u = {};
+          f = {};
 
-        function d(e) {
-          var r = u[e];
+        function u(e) {
+          var r = f[e];
           if (void 0 !== r) return r.exports;
-          var t = u[e] = {
+          var t = f[e] = {
             exports: {}
           };
-          return s[e](t, t.exports, d), t.exports
+          return s[e](t, t.exports, u), t.exports
         }
-        return d.m = s, d.c = u, d.y = r, d.n = e => {
+        return u.m = s, u.c = f, u.y = r, u.n = e => {
           var r = e && e.__esModule ? () => e.default : () => e;
-          return d.d(r, {
+          return u.d(r, {
             a: r
           }), r
-        }, d.d = (e, r) => {
-          for (var t in r) d.o(r, t) && !d.o(e, t) && Object.defineProperty(e, t, {
+        }, u.d = (e, r) => {
+          for (var t in r) u.o(r, t) && !u.o(e, t) && Object.defineProperty(e, t, {
             enumerable: !0,
             get: r[t]
           })
-        }, d.f = {}, d.e = e => Promise.all(Object.keys(d.f).reduce(((r, t) => (d.f[t](e, r), r)), [])), d.u = e => "js/" + {
-          377: "33d6e6e5561dac681dcb335f2e7da95f",
-          380: "601d2031a769300d6f8ea44af256eafb",
-          563: "1e564ab4261cbe85ef40d63640ad8935",
+        }, u.f = {}, u.e = e => Promise.all(Object.keys(u.f).reduce(((r, t) => (u.f[t](e, r), r)), [])), u.u = e => "js/" + {
+          377: "2f90d7ff26a68bbbf025d7ea39618d77",
+          380: "bb5296dac1ac4f2c4e4bfd7422c09378",
+          563: "e16d305ae2890725a201767e2745117e",
           756: "078fd74e421144441ef2a89b9930d6af",
-          847: "1ac681496fc56986af97dfbd84bcfb6e"
-        } [e] + ".js", d.miniCssF = e => {}, d.g = function() {
+          847: "ba333400d84aae67e23b54b2db1d5bd8"
+        } [e] + ".js", u.miniCssF = e => {}, u.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
             return this || new Function("return this")()
           } catch (e) {
             if ("object" == typeof window) return window
           }
-        }(), d.o = (e, r) => Object.prototype.hasOwnProperty.call(e, r), e = {}, o = "@rockstargames/modules-core-sc-user:", d.l = (r, t, n, a) => {
+        }(), u.o = (e, r) => Object.prototype.hasOwnProperty.call(e, r), e = {}, a = "@rockstargames/modules-core-sc-user:", u.l = (r, t, n, o) => {
           if (e[r]) e[r].push(t);
           else {
             var i, s;
             if (void 0 !== n)
-              for (var u = document.getElementsByTagName("script"), f = 0; f < u.length; f++) {
-                var l = u[f];
-                if (l.getAttribute("src") == r || l.getAttribute("data-webpack") == o + n) {
-                  i = l;
+              for (var f = document.getElementsByTagName("script"), l = 0; l < f.length; l++) {
+                var d = f[l];
+                if (d.getAttribute("src") == r || d.getAttribute("data-webpack") == a + n) {
+                  i = d;
                   break
                 }
               }
-            i || (s = !0, (i = document.createElement("script")).charset = "utf-8", i.timeout = 120, d.nc && i.setAttribute("nonce", d.nc), i.setAttribute("data-webpack", o + n), i.src = r), e[r] = [t];
+            i || (s = !0, (i = document.createElement("script")).charset = "utf-8", i.timeout = 120, u.nc && i.setAttribute("nonce", u.nc), i.setAttribute("data-webpack", a + n), i.src = r), e[r] = [t];
             var c = (t, n) => {
                 i.onerror = i.onload = null, clearTimeout(p);
-                var o = e[r];
-                if (delete e[r], i.parentNode && i.parentNode.removeChild(i), o && o.forEach((e => e(n))), t) return t(n)
+                var a = e[r];
+                if (delete e[r], i.parentNode && i.parentNode.removeChild(i), a && a.forEach((e => e(n))), t) return t(n)
               },
               p = setTimeout(c.bind(null, void 0, {
                 type: "timeout",
@@ -147,13 +147,13 @@ _global.SENTRY_RELEASE = {
               }), 12e4);
             i.onerror = c.bind(null, i.onerror), i.onload = c.bind(null, i.onload), s && document.head.appendChild(i)
           }
-        }, d.r = e => {
+        }, u.r = e => {
           "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
             value: "Module"
           }), Object.defineProperty(e, "__esModule", {
             value: !0
           })
-        }, a = {
+        }, o = {
           563: [396, 407, 662],
           756: [756]
         }, i = {
@@ -161,90 +161,90 @@ _global.SENTRY_RELEASE = {
           407: ["default", "./index", 24],
           662: ["default", "./gtm", 969],
           756: ["default", "./index", 969]
-        }, d.f.remotes = (e, r) => {
-          d.o(a, e) && a[e].forEach((e => {
-            var t = d.R;
+        }, u.f.remotes = (e, r) => {
+          u.o(o, e) && o[e].forEach((e => {
+            var t = u.R;
             t || (t = []);
             var n = i[e];
             if (!(t.indexOf(n) >= 0)) {
               if (t.push(n), n.p) return r.push(n.p);
-              var o = r => {
-                  r || (r = new Error("Container missing")), "string" == typeof r.message && (r.message += '\nwhile loading "' + n[1] + '" from ' + n[2]), d.m[e] = () => {
+              var a = r => {
+                  r || (r = new Error("Container missing")), "string" == typeof r.message && (r.message += '\nwhile loading "' + n[1] + '" from ' + n[2]), u.m[e] = () => {
                     throw r
                   }, n.p = 0
                 },
-                a = (e, t, a, i, s, u) => {
+                o = (e, t, o, i, s, f) => {
                   try {
-                    var d = e(t, a);
-                    if (!d || !d.then) return s(d, i, u);
-                    var f = d.then((e => s(e, i)), o);
-                    if (!u) return f;
-                    r.push(n.p = f)
+                    var u = e(t, o);
+                    if (!u || !u.then) return s(u, i, f);
+                    var l = u.then((e => s(e, i)), a);
+                    if (!f) return l;
+                    r.push(n.p = l)
                   } catch (e) {
-                    o(e)
+                    a(e)
                   }
                 },
-                s = (e, r, o) => a(r.get, n[1], t, 0, u, o),
-                u = r => {
-                  n.p = 1, d.m[e] = e => {
+                s = (e, r, a) => o(r.get, n[1], t, 0, f, a),
+                f = r => {
+                  n.p = 1, u.m[e] = e => {
                     e.exports = r()
                   }
                 };
-              a(d, n[2], 0, 0, ((e, r, t) => e ? a(d.I, n[0], 0, e, s, t) : o()), 1)
+              o(u, n[2], 0, 0, ((e, r, t) => e ? o(u.I, n[0], 0, e, s, t) : a()), 1)
             }
           }))
         }, (() => {
-          d.S = {};
+          u.S = {};
           var e = {},
             r = {};
-          d.I = (t, n) => {
+          u.I = (t, n) => {
             n || (n = []);
-            var o = r[t];
-            if (o || (o = r[t] = {}), !(n.indexOf(o) >= 0)) {
-              if (n.push(o), e[t]) return e[t];
-              d.o(d.S, t) || (d.S[t] = {});
-              var a = d.S[t],
+            var a = r[t];
+            if (a || (a = r[t] = {}), !(n.indexOf(a) >= 0)) {
+              if (n.push(a), e[t]) return e[t];
+              u.o(u.S, t) || (u.S[t] = {});
+              var o = u.S[t],
                 i = "@rockstargames/modules-core-sc-user",
                 s = (e, r, t, n) => {
-                  var o = a[e] = a[e] || {},
-                    s = o[r];
-                  (!s || !s.loaded && (!n != !s.eager ? n : i > s.from)) && (o[r] = {
+                  var a = o[e] = o[e] || {},
+                    s = a[r];
+                  (!s || !s.loaded && (!n != !s.eager ? n : i > s.from)) && (a[r] = {
                     get: t,
                     from: i,
                     eager: !!n
                   })
                 },
-                u = e => {
+                f = e => {
                   var r = e => {
                     return r = "Initialization of sharing external failed: " + e, void("undefined" != typeof console && console.warn && console.warn(r));
                     var r
                   };
                   try {
-                    var o = d(e);
-                    if (!o) return;
-                    var a = e => e && e.init && e.init(d.S[t], n);
-                    if (o.then) return f.push(o.then(a, r));
-                    var i = a(o);
-                    if (i && i.then) return f.push(i.catch(r))
+                    var a = u(e);
+                    if (!a) return;
+                    var o = e => e && e.init && e.init(u.S[t], n);
+                    if (a.then) return l.push(a.then(o, r));
+                    var i = o(a);
+                    if (i && i.then) return l.push(i.catch(r))
                   } catch (e) {
                     r(e)
                   }
                 },
-                f = [];
-              return "default" === t && (s("@rockstar/fingerprint-js", "1.0.0", (() => d.e(377).then((() => () => d(377))))), s("react", "18.2.0", (() => d.e(380).then((() => () => d(380))))), u(969), u(24)), f.length ? e[t] = Promise.all(f).then((() => e[t] = 1)) : e[t] = 1
+                l = [];
+              return "default" === t && (s("@rockstar/fingerprint-js", "1.0.0", (() => u.e(377).then((() => () => u(377))))), s("react", "18.2.0", (() => u.e(380).then((() => () => u(380))))), f(969), f(24)), l.length ? e[t] = Promise.all(l).then((() => e[t] = 1)) : e[t] = 1
             }
           }
         })(), (() => {
           var e;
-          d.g.importScripts && (e = d.g.location + "");
-          var r = d.g.document;
+          u.g.importScripts && (e = u.g.location + "");
+          var r = u.g.document;
           if (!e && r && (r.currentScript && (e = r.currentScript.src), !e)) {
             var t = r.getElementsByTagName("script");
             if (t.length)
               for (var n = t.length - 1; n > -1 && (!e || !/^http(s?):/.test(e));) e = t[n--].src
           }
           if (!e) throw new Error("Automatic publicPath is not supported in this browser");
-          e = e.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/"), d.p = e
+          e = e.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/"), u.p = e
         })(), (() => {
           var e = e => {
               var r = e => e.split(".").map((e => +e == e ? +e : e)),
@@ -255,29 +255,29 @@ _global.SENTRY_RELEASE = {
             r = (t, n) => {
               if (0 in t) {
                 n = e(n);
-                var o = t[0],
-                  a = o < 0;
-                a && (o = -o - 1);
-                for (var i = 0, s = 1, u = !0;; s++, i++) {
-                  var d, f, l = s < t.length ? (typeof t[s])[0] : "";
-                  if (i >= n.length || "o" == (f = (typeof(d = n[i]))[0])) return !u || ("u" == l ? s > o && !a : "" == l != a);
-                  if ("u" == f) {
-                    if (!u || "u" != l) return !1
-                  } else if (u)
-                    if (l == f)
-                      if (s <= o) {
-                        if (d != t[s]) return !1
+                var a = t[0],
+                  o = a < 0;
+                o && (a = -a - 1);
+                for (var i = 0, s = 1, f = !0;; s++, i++) {
+                  var u, l, d = s < t.length ? (typeof t[s])[0] : "";
+                  if (i >= n.length || "o" == (l = (typeof(u = n[i]))[0])) return !f || ("u" == d ? s > a && !o : "" == d != o);
+                  if ("u" == l) {
+                    if (!f || "u" != d) return !1
+                  } else if (f)
+                    if (d == l)
+                      if (s <= a) {
+                        if (u != t[s]) return !1
                       } else {
-                        if (a ? d > t[s] : d < t[s]) return !1;
-                        d != t[s] && (u = !1)
+                        if (o ? u > t[s] : u < t[s]) return !1;
+                        u != t[s] && (f = !1)
                       }
-                  else if ("s" != l && "n" != l) {
-                    if (a || s <= o) return !1;
-                    u = !1, s--
+                  else if ("s" != d && "n" != d) {
+                    if (o || s <= a) return !1;
+                    f = !1, s--
                   } else {
-                    if (s <= o || f < l != a) return !1;
-                    u = !1
-                  } else "s" != l && "n" != l && (u = !1, s--)
+                    if (s <= a || l < d != o) return !1;
+                    f = !1
+                  } else "s" != d && "n" != d && (f = !1, s--)
                 }
               }
               var c = [],
@@ -288,57 +288,57 @@ _global.SENTRY_RELEASE = {
               }
               return !!p()
             },
-            t = (t, n, o) => {
-              var a = t[n];
-              return (n = Object.keys(a).reduce(((t, n) => !r(o, n) || t && !((r, t) => {
+            t = (t, n, a) => {
+              var o = t[n];
+              return (n = Object.keys(o).reduce(((t, n) => !r(a, n) || t && !((r, t) => {
                 r = e(r), t = e(t);
                 for (var n = 0;;) {
                   if (n >= r.length) return n < t.length && "u" != (typeof t[n])[0];
-                  var o = r[n],
-                    a = (typeof o)[0];
-                  if (n >= t.length) return "u" == a;
+                  var a = r[n],
+                    o = (typeof a)[0];
+                  if (n >= t.length) return "u" == o;
                   var i = t[n],
                     s = (typeof i)[0];
-                  if (a != s) return "o" == a && "n" == s || "s" == s || "u" == a;
-                  if ("o" != a && "u" != a && o != i) return o < i;
+                  if (o != s) return "o" == o && "n" == s || "s" == s || "u" == o;
+                  if ("o" != o && "u" != o && a != i) return a < i;
                   n++
                 }
-              })(t, n) ? t : n), 0)) && a[n]
+              })(t, n) ? t : n), 0)) && o[n]
             },
-            n = (e => function(r, t, n, o) {
-              var a = d.I(r);
-              return a && a.then ? a.then(e.bind(e, r, d.S[r], t, n, o)) : e(r, d.S[r], t, n, o)
-            })(((e, r, n, o, a) => {
-              var i = r && d.o(r, n) && t(r, n, o);
-              return i ? (e => (e.loaded = 1, e.get()))(i) : a()
+            n = (e => function(r, t, n, a) {
+              var o = u.I(r);
+              return o && o.then ? o.then(e.bind(e, r, u.S[r], t, n, a)) : e(r, u.S[r], t, n, a)
+            })(((e, r, n, a, o) => {
+              var i = r && u.o(r, n) && t(r, n, a);
+              return i ? (e => (e.loaded = 1, e.get()))(i) : o()
             })),
-            o = {},
-            a = {
-              525: () => n("default", "@rockstar/fingerprint-js", [1, 1, 0, 0], (() => d.e(377).then((() => () => d(377))))),
-              784: () => n("default", "react", [1, 18, 2, 0], (() => d.e(380).then((() => () => d(380)))))
+            a = {},
+            o = {
+              525: () => n("default", "@rockstar/fingerprint-js", [1, 1, 0, 0], (() => u.e(377).then((() => () => u(377))))),
+              784: () => n("default", "react", [1, 18, 2, 0], (() => u.e(380).then((() => () => u(380)))))
             },
             i = {
               563: [525, 784]
             },
             s = {};
-          d.f.consumes = (e, r) => {
-            d.o(i, e) && i[e].forEach((e => {
-              if (d.o(o, e)) return r.push(o[e]);
+          u.f.consumes = (e, r) => {
+            u.o(i, e) && i[e].forEach((e => {
+              if (u.o(a, e)) return r.push(a[e]);
               if (!s[e]) {
                 var t = r => {
-                  o[e] = 0, d.m[e] = t => {
-                    delete d.c[e], t.exports = r()
+                  a[e] = 0, u.m[e] = t => {
+                    delete u.c[e], t.exports = r()
                   }
                 };
                 s[e] = !0;
                 var n = r => {
-                  delete o[e], d.m[e] = t => {
-                    throw delete d.c[e], r
+                  delete a[e], u.m[e] = t => {
+                    throw delete u.c[e], r
                   }
                 };
                 try {
-                  var i = a[e]();
-                  i.then ? r.push(o[e] = i.then(t).catch(n)) : t(i)
+                  var i = o[e]();
+                  i.then ? r.push(a[e] = i.then(t).catch(n)) : t(i)
                 } catch (e) {
                   n(e)
                 }
@@ -349,38 +349,38 @@ _global.SENTRY_RELEASE = {
           var e = {
             178: 0
           };
-          d.f.j = (r, t) => {
-            var n = d.o(e, r) ? e[r] : void 0;
+          u.f.j = (r, t) => {
+            var n = u.o(e, r) ? e[r] : void 0;
             if (0 !== n)
               if (n) t.push(n[2]);
               else if (756 != r) {
-              var o = new Promise(((t, o) => n = e[r] = [t, o]));
-              t.push(n[2] = o);
-              var a = d.p + d.u(r),
+              var a = new Promise(((t, a) => n = e[r] = [t, a]));
+              t.push(n[2] = a);
+              var o = u.p + u.u(r),
                 i = new Error;
-              d.l(a, (t => {
-                if (d.o(e, r) && (0 !== (n = e[r]) && (e[r] = void 0), n)) {
-                  var o = t && ("load" === t.type ? "missing" : t.type),
-                    a = t && t.target && t.target.src;
-                  i.message = "Loading chunk " + r + " failed.\n(" + o + ": " + a + ")", i.name = "ChunkLoadError", i.type = o, i.request = a, n[1](i)
+              u.l(o, (t => {
+                if (u.o(e, r) && (0 !== (n = e[r]) && (e[r] = void 0), n)) {
+                  var a = t && ("load" === t.type ? "missing" : t.type),
+                    o = t && t.target && t.target.src;
+                  i.message = "Loading chunk " + r + " failed.\n(" + a + ": " + o + ")", i.name = "ChunkLoadError", i.type = a, i.request = o, n[1](i)
                 }
               }), "chunk-" + r, r)
             } else e[r] = 0
           };
           var r = (r, t) => {
-              var n, o, a = t[0],
+              var n, a, o = t[0],
                 i = t[1],
                 s = t[2],
-                u = 0;
-              if (a.some((r => 0 !== e[r]))) {
-                for (n in i) d.o(i, n) && (d.m[n] = i[n]);
-                s && s(d)
+                f = 0;
+              if (o.some((r => 0 !== e[r]))) {
+                for (n in i) u.o(i, n) && (u.m[n] = i[n]);
+                s && s(u)
               }
-              for (r && r(t); u < a.length; u++) o = a[u], d.o(e, o) && e[o] && e[o][0](), e[o] = 0
+              for (r && r(t); f < o.length; f++) a = o[f], u.o(e, a) && e[a] && e[a][0](), e[a] = 0
             },
             t = self.webpackChunk_rockstargames_modules_core_sc_user = self.webpackChunk_rockstargames_modules_core_sc_user || [];
           t.forEach(r.bind(null, 0)), t.push = r.bind(null, t.push.bind(t))
-        })(), d(160), d(527)
+        })(), u(160), u(527)
       })())
     }
   }

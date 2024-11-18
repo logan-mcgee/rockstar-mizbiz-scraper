@@ -32,15 +32,15 @@ _global.SENTRY_RELEASE = {
       function n(e, a, l) {
         var o, d = {},
           n = null,
-          f = null;
-        for (o in void 0 !== l && (n = "" + l), void 0 !== a.key && (n = "" + a.key), void 0 !== a.ref && (f = a.ref), a) r.call(a, o) && !s.hasOwnProperty(o) && (d[o] = a[o]);
+          c = null;
+        for (o in void 0 !== l && (n = "" + l), void 0 !== a.key && (n = "" + a.key), void 0 !== a.ref && (c = a.ref), a) r.call(a, o) && !s.hasOwnProperty(o) && (d[o] = a[o]);
         if (e && e.defaultProps)
           for (o in a = e.defaultProps) void 0 === d[o] && (d[o] = a[o]);
         return {
           $$typeof: t,
           type: e,
           key: n,
-          ref: f,
+          ref: c,
           props: d,
           _owner: i.current
         }
@@ -52,9 +52,9 @@ _global.SENTRY_RELEASE = {
     },
     8949: (e, a, l) => {
       l.r(a), l.d(a, {
-        RockstarVideoPlayer: () => b,
+        RockstarVideoPlayer: () => m,
         VideoField: () => p,
-        default: () => m
+        default: () => b
       });
       var o = l(8407),
         t = l(472),
@@ -80,8 +80,8 @@ _global.SENTRY_RELEASE = {
           })]
         })
       };
-      var f = l(4252),
-        c = l.n(f);
+      var c = l(4252),
+        f = l.n(c);
       const u = e => {
           let {
             field: a,
@@ -94,7 +94,7 @@ _global.SENTRY_RELEASE = {
             variables: {
               limit: 1e3
             }
-          }), f = c()(i?.videos?.results).groupBy("game.title").map(((e, a) => ({
+          }), c = f()(i?.videos?.results).groupBy("game.title").map(((e, a) => ({
             gameTitle: a,
             videos: e.map((e => ({
               id: e.id,
@@ -106,12 +106,12 @@ _global.SENTRY_RELEASE = {
             label: a.label,
             description: a.description,
             meta: d,
-            children: i && f?.length ? (0, s.jsxs)("select", {
+            children: i && c?.length ? (0, s.jsxs)("select", {
               ...l,
               children: [(0, s.jsx)("option", {
                 value: "",
                 children: "-- Select a video --"
-              }), f.map((e => (0, s.jsx)("optgroup", {
+              }), c.map((e => (0, s.jsx)("optgroup", {
                 label: e.gameTitle,
                 children: e.videos.map((e => (0, s.jsxs)("option", {
                   value: e.id,
@@ -145,7 +145,7 @@ _global.SENTRY_RELEASE = {
             }
           }
         },
-        b = () => ({
+        m = () => ({
           label: "Video",
           fields: [(0, d.NameField)(), p(), {
             name: "autoplay",
@@ -163,7 +163,7 @@ _global.SENTRY_RELEASE = {
             label: e?.name ? `${e.name} [Video]` : "New [Video]"
           })
         }),
-        m = b
+        b = m
     }
   }
 ]);

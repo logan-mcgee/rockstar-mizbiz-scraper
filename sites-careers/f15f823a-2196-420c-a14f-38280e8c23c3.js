@@ -22,15 +22,15 @@ _global.SENTRY_RELEASE = {
         s = d(9779),
         t = d(1716),
         r = d.n(t),
-        f = d(8407),
-        o = d(5662),
-        l = d(2158),
+        o = d(8407),
+        l = d(5662),
+        f = d(2158),
         i = d(2757),
         c = d(2871),
         b = d(6632);
-      (0, o.init)();
+      (0, l.init)();
       const g = window?.env?.graphEnv ?? "dev",
-        u = (0, f.withReactiveState)((() => (0, b.jsx)(l.ScrollProvider, {
+        u = (0, o.withReactiveState)((() => (0, b.jsx)(f.ScrollProvider, {
           children: (0, b.jsx)(s.BrowserRouter, {
             basename: "/",
             children: (0, b.jsx)(i.RockstarUserProvider, {
@@ -40,7 +40,7 @@ _global.SENTRY_RELEASE = {
         })), {
           state: null
         }),
-        w = (0, f.withRockstarGraph)(u, {
+        w = (0, o.withRockstarGraph)(u, {
           env: g,
           typePolicies: {
             ...r()

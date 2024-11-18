@@ -38,11 +38,11 @@ _global.SENTRY_RELEASE = {
             i = "FormData" in t,
             s = "ArrayBuffer" in t;
           if (s) var a = ["[object Int8Array]", "[object Uint8Array]", "[object Uint8ClampedArray]", "[object Int16Array]", "[object Uint16Array]", "[object Int32Array]", "[object Uint32Array]", "[object Float32Array]", "[object Float64Array]"],
-            d = ArrayBuffer.isView || function(t) {
+            f = ArrayBuffer.isView || function(t) {
               return t && a.indexOf(Object.prototype.toString.call(t)) > -1
             };
 
-          function f(t) {
+          function d(t) {
             if ("string" != typeof t && (t = String(t)), /[^a-z0-9\-#$%&'*+.^_`|~]/i.test(t)) throw new TypeError("Invalid character in header field name");
             return t.toLowerCase()
           }
@@ -106,7 +106,7 @@ _global.SENTRY_RELEASE = {
           function w() {
             return this.bodyUsed = !1, this._initBody = function(t) {
               var e;
-              this._bodyInit = t, t ? "string" == typeof t ? this._bodyText = t : n && Blob.prototype.isPrototypeOf(t) ? this._bodyBlob = t : i && FormData.prototype.isPrototypeOf(t) ? this._bodyFormData = t : r && URLSearchParams.prototype.isPrototypeOf(t) ? this._bodyText = t.toString() : s && n && (e = t) && DataView.prototype.isPrototypeOf(e) ? (this._bodyArrayBuffer = b(t.buffer), this._bodyInit = new Blob([this._bodyArrayBuffer])) : s && (ArrayBuffer.prototype.isPrototypeOf(t) || d(t)) ? this._bodyArrayBuffer = b(t) : this._bodyText = t = Object.prototype.toString.call(t) : this._bodyText = "", this.headers.get("content-type") || ("string" == typeof t ? this.headers.set("content-type", "text/plain;charset=UTF-8") : this._bodyBlob && this._bodyBlob.type ? this.headers.set("content-type", this._bodyBlob.type) : r && URLSearchParams.prototype.isPrototypeOf(t) && this.headers.set("content-type", "application/x-www-form-urlencoded;charset=UTF-8"))
+              this._bodyInit = t, t ? "string" == typeof t ? this._bodyText = t : n && Blob.prototype.isPrototypeOf(t) ? this._bodyBlob = t : i && FormData.prototype.isPrototypeOf(t) ? this._bodyFormData = t : r && URLSearchParams.prototype.isPrototypeOf(t) ? this._bodyText = t.toString() : s && n && (e = t) && DataView.prototype.isPrototypeOf(e) ? (this._bodyArrayBuffer = b(t.buffer), this._bodyInit = new Blob([this._bodyArrayBuffer])) : s && (ArrayBuffer.prototype.isPrototypeOf(t) || f(t)) ? this._bodyArrayBuffer = b(t) : this._bodyText = t = Object.prototype.toString.call(t) : this._bodyText = "", this.headers.get("content-type") || ("string" == typeof t ? this.headers.set("content-type", "text/plain;charset=UTF-8") : this._bodyBlob && this._bodyBlob.type ? this.headers.set("content-type", this._bodyBlob.type) : r && URLSearchParams.prototype.isPrototypeOf(t) && this.headers.set("content-type", "application/x-www-form-urlencoded;charset=UTF-8"))
             }, n && (this.blob = function() {
               var t = l(this);
               if (t) return t;
@@ -133,17 +133,17 @@ _global.SENTRY_RELEASE = {
             }, this
           }
           c.prototype.append = function(t, e) {
-            t = f(t), e = h(e);
+            t = d(t), e = h(e);
             var r = this.map[t];
             this.map[t] = r ? r + ", " + e : e
           }, c.prototype.delete = function(t) {
-            delete this.map[f(t)]
+            delete this.map[d(t)]
           }, c.prototype.get = function(t) {
-            return t = f(t), this.has(t) ? this.map[t] : null
+            return t = d(t), this.has(t) ? this.map[t] : null
           }, c.prototype.has = function(t) {
-            return this.map.hasOwnProperty(f(t))
+            return this.map.hasOwnProperty(d(t))
           }, c.prototype.set = function(t, e) {
-            this.map[f(t)] = h(e)
+            this.map[d(t)] = h(e)
           }, c.prototype.forEach = function(t, e) {
             for (var r in this.map) this.map.hasOwnProperty(r) && t.call(e, this.map[r], r, this)
           }, c.prototype.keys = function() {
@@ -233,7 +233,7 @@ _global.SENTRY_RELEASE = {
               if (s.signal && s.signal.aborted) return i(new e.DOMException("Aborted", "AbortError"));
               var a = new XMLHttpRequest;
 
-              function d() {
+              function f() {
                 a.abort()
               }
               a.onload = function() {
@@ -260,8 +260,8 @@ _global.SENTRY_RELEASE = {
                 i(new e.DOMException("Aborted", "AbortError"))
               }, a.open(s.method, s.url, !0), "include" === s.credentials ? a.withCredentials = !0 : "omit" === s.credentials && (a.withCredentials = !1), "responseType" in a && n && (a.responseType = "blob"), s.headers.forEach((function(t, e) {
                 a.setRequestHeader(e, t)
-              })), s.signal && (s.signal.addEventListener("abort", d), a.onreadystatechange = function() {
-                4 === a.readyState && s.signal.removeEventListener("abort", d)
+              })), s.signal && (s.signal.addEventListener("abort", f), a.onreadystatechange = function() {
+                4 === a.readyState && s.signal.removeEventListener("abort", f)
               }), a.send(void 0 === s._bodyInit ? null : s._bodyInit)
             }))
           }

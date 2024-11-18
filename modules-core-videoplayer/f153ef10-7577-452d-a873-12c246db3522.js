@@ -19,14 +19,14 @@ _global.SENTRY_RELEASE = {
     33: (e, a, t) => {
       "use strict";
       t.r(a), t.d(a, {
-        fbar: () => u,
-        useAgegated: () => f
+        fbar: () => g,
+        useAgegated: () => u
       });
       var s = t(207),
         n = t(2756),
         l = t(1403),
-        d = t(2946),
-        r = t.n(d);
+        r = t(2946),
+        d = t.n(r);
       const o = {
         agegate: "rockstargames-modules-core-videoplayerb564767f67a0f63737d816dcca714d49",
         inputs: "rockstargames-modules-core-videoplayerf33bd58bdfa63206fe9444fde46261d1",
@@ -37,20 +37,20 @@ _global.SENTRY_RELEASE = {
           let {
             agegateValue: a,
             options: t = {},
-            ga: d = {},
+            ga: r = {},
             t: i
           } = e;
           const {
-            track: f
+            track: u
           } = (0, s.useGtmTrack)(), {
-            mutateLSSettings: u
-          } = (0, n.useRockstarWebLSSettings)(), [g, b] = (0, l.useState)(null), m = (0, l.createRef)(), p = (0, l.createRef)(), y = (0, l.createRef)(), {
+            mutateLSSettings: g
+          } = (0, n.useRockstarWebLSSettings)(), [f, m] = (0, l.useState)(null), p = (0, l.createRef)(), b = (0, l.createRef)(), y = (0, l.createRef)(), {
             style: h
           } = t;
           (0, l.useEffect)((() => {
-            f({
+            u({
               event: "age_gate_popup",
-              element_placement: d.element_placement ?? ""
+              element_placement: r.element_placement ?? ""
             })
           }), []);
           return !1 === a ? (0, c.jsxs)("div", {
@@ -67,24 +67,24 @@ _global.SENTRY_RELEASE = {
               style: t?.bgImg ? {
                 backgroundImage: `url(${t.bgImg})`
               } : {}
-            }), !1 === g ? (0, c.jsx)("h5", {
+            }), !1 === f ? (0, c.jsx)("h5", {
               className: o.error,
               children: i("Please enter a valid age")
             }) : "", (0, c.jsxs)("form", {
               onSubmit: async e => {
                 e.preventDefault();
-                const a = `${y.current.value}-${m.current.value.padStart(2,0)}-${p.current.value.padStart(2,0)}`,
-                  t = r()(a, "YYYY-MM-DD", !0).isValid();
-                if (b(t), t) {
-                  const e = r()().diff(a, "years") >= 17;
-                  f(e ? {
+                const a = `${y.current.value}-${p.current.value.padStart(2,0)}-${b.current.value.padStart(2,0)}`,
+                  t = d()(a, "YYYY-MM-DD", !0).isValid();
+                if (m(t), t) {
+                  const e = d()().diff(a, "years") >= 17;
+                  u(e ? {
                     event: "age_gate_passed",
-                    element_placement: d.element_placement ?? ""
+                    element_placement: r.element_placement ?? ""
                   } : {
                     event: "age_gate_failed",
-                    element_placement: d.element_placement ?? "",
+                    element_placement: r.element_placement ?? "",
                     text: "you may not view this content at this time"
-                  }), u({
+                  }), g({
                     key: "agegatePass",
                     value: e
                   })
@@ -98,7 +98,7 @@ _global.SENTRY_RELEASE = {
                   htmlFor: "monthInput",
                   children: [i("Month"), (0, c.jsx)("input", {
                     id: "monthInput",
-                    ref: m,
+                    ref: p,
                     placeholder: i("MM"),
                     maxLength: 2
                   })]
@@ -106,7 +106,7 @@ _global.SENTRY_RELEASE = {
                   htmlFor: "dayInput",
                   children: [i("Day"), (0, c.jsx)("input", {
                     id: "dayInput",
-                    ref: p,
+                    ref: b,
                     placeholder: i("DD"),
                     maxLength: 2
                   })]
@@ -128,7 +128,7 @@ _global.SENTRY_RELEASE = {
             }), t?.footer]
           }) : null
         })),
-        f = () => {
+        u = () => {
           const {
             lsSettings: e
           } = (0, n.useRockstarWebLSSettings)(), {
@@ -138,16 +138,16 @@ _global.SENTRY_RELEASE = {
           return function(s) {
             let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
               l = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
-            const d = e?.agegatePass ?? null,
-              r = a?.agegate_pass ?? d ?? null;
-            return !r && t ? null : r ? s : (0, c.jsx)(i, {
-              agegateValue: r,
+            const r = e?.agegatePass ?? null,
+              d = a?.agegate_pass ?? r ?? null;
+            return !d && t ? null : d ? s : (0, c.jsx)(i, {
+              agegateValue: d,
               options: n,
               ga: l
             })
           }
         },
-        u = 12
+        g = 12
     },
     3941: e => {
       function a(e) {
