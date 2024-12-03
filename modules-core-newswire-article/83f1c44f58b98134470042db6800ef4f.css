@@ -13653,6 +13653,7 @@ a.rockstargames-modules-core-newswire-articlefded54fb94f7325c5a0b57590585b175.ro
 .rockstargames-modules-core-newswire-articleb604683b1b1cf1316f5cf35ce2fe4b31 {
   --grid-gap-dynamic: 0.5rem;
   grid-gap: var(--grid-gap-dynamic);
+  text-wrap-style: balance;
   align-content: var(--grid-align-content);
   align-items: var(--grid-align-items);
   align-self: var(--grid-align-self);
@@ -21909,4 +21910,4 @@ html[data-disallow-body-scroll] .rockstargames-modules-core-newswire-articled43b
   animation: rockstargames-modules-core-newswire-articleaad00868609a0c29e85f7a5b3c290d65 1s 1s forwards
 }
 
-/*# sourceMappingURL=162bba8a2ff14a549bfd752b0d185e40.css.map*/
+/*# sourceMappingURL=83f1c44f58b98134470042db6800ef4f.css.map*/

@@ -24,11 +24,11 @@ _global.SENTRY_RELEASE = {
         n = d(64064),
         r = d.n(n),
         l = d(5217),
-        f = d.n(l),
-        s = d(26527),
-        t = d.n(s),
-        c = d(31879),
-        i = d.n(c),
+        s = d.n(l),
+        t = d(26527),
+        f = d.n(t),
+        i = d(31879),
+        c = d.n(i),
         b = d(66713),
         u = d.n(b),
         _ = d(42012);
@@ -38,9 +38,9 @@ _global.SENTRY_RELEASE = {
         ClrCard: _.y3,
         ClrCollapsedCard: _.h7,
         Gif: r(),
-        GroupOfItems: f(),
-        RockstarVideoPlayer: i(),
-        SwiperCarousel: t(),
+        GroupOfItems: s(),
+        RockstarVideoPlayer: c(),
+        SwiperCarousel: f(),
         UGCJobSpotlight: u()
       }
     }

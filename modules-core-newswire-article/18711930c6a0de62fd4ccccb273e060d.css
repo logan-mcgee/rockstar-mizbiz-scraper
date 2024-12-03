@@ -166,6 +166,7 @@
 .rockstargames-modules-core-newswire-articleb604683b1b1cf1316f5cf35ce2fe4b31 {
   --grid-gap-dynamic: 0.5rem;
   grid-gap: var(--grid-gap-dynamic);
+  text-wrap-style: balance;
   align-content: var(--grid-align-content);
   align-items: var(--grid-align-items);
   align-self: var(--grid-align-self);
@@ -202,4 +203,4 @@
   filter: none
 }
 
-/*# sourceMappingURL=2437cf6a7a9dc144e5eb8c961218836a.css.map*/
+/*# sourceMappingURL=18711930c6a0de62fd4ccccb273e060d.css.map*/
