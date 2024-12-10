@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "c1a1d4a2-4344-4d9d-a38a-bd4bd09d2fbb", e._sentryDebugIdIdentifier = "sentry-dbid-c1a1d4a2-4344-4d9d-a38a-bd4bd09d2fbb")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "8320e27c-5544-4504-ba24-aeaccffb971d", e._sentryDebugIdIdentifier = "sentry-dbid-8320e27c-5544-4504-ba24-aeaccffb971d")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -43,13 +43,13 @@ _global.SENTRY_RELEASE = {
               };
               Number.isInteger
             },
-            2609: (e, t, r) => {
+            7824: (e, t, r) => {
               "use strict";
               var a = {
-                  "./bootstrap": () => Promise.all([r.e(689), r.e(949), r.e(403), r.e(396), r.e(235), r.e(493), r.e(63)]).then((() => () => r(1063))),
-                  "./core": () => Promise.all([r.e(689), r.e(949), r.e(403), r.e(396), r.e(235), r.e(344)]).then((() => () => r(4344))),
-                  "./index": () => Promise.all([r.e(689), r.e(949), r.e(403), r.e(396), r.e(235)]).then((() => () => r(7905))),
-                  "./GlobalNavigationWrapper": () => Promise.all([r.e(403), r.e(396), r.e(592)]).then((() => () => r(9965)))
+                  "./bootstrap": () => Promise.all([r.e(689), r.e(949), r.e(403), r.e(396), r.e(82), r.e(493), r.e(63)]).then((() => () => r(1063))),
+                  "./core": () => Promise.all([r.e(689), r.e(949), r.e(403), r.e(396), r.e(82), r.e(344)]).then((() => () => r(4344))),
+                  "./index": () => Promise.all([r.e(689), r.e(949), r.e(403), r.e(396), r.e(82)]).then((() => () => r(3430))),
+                  "./GlobalNavigationWrapper": () => Promise.all([r.e(403), r.e(396), r.e(674)]).then((() => () => r(7087)))
                 },
                 o = (e, t) => (r.R = t, t = r.o(a, e) ? a[e]() : Promise.resolve().then((() => {
                   throw new Error('Module "' + e + '" does not exist in container.')
@@ -105,31 +105,31 @@ _global.SENTRY_RELEASE = {
           })
         }, l.f = {}, l.e = e => Promise.all(Object.keys(l.f).reduce(((t, r) => (l.f[r](e, t), t)), [])), l.u = e => "js/" + {
           4: "e72207df602fcbc6c1f960e45d70e846",
-          63: "586b091b3d9bb98e29deab7c8636142d",
-          66: "fe51a56ea47d859c53fdc2df188c161a",
-          124: "adb5c968838e02e4a3b151a31cd2f6a3",
-          143: "ae18c834e09dc61f038c02294e7ff8f3",
-          149: "8bbc00af8bf368d60382b7191094eb05",
-          189: "7245a1db94dcbc004b06b5a8a77ac860",
-          235: "45cf1deb11894afff16f30b5a33a4b85",
-          344: "51a6a3151d2165070ddd9762828b992b",
-          380: "5d0745ea2f2ae19cd0ae400dae3a0b8d",
-          396: "6281b6a00fa70494e2be593d668e9c3e",
-          398: "d8e89d579780792c2be680595dd11f69",
+          63: "794dd7d5ec7be166bd9c24576d7501ad",
+          66: "87c88ecca256b1e692c1728eeea2843f",
+          82: "ce05cb2d5c163bd6a5f5071120995c0f",
+          124: "6a914ad7b7b99cb489a5da97b0c96fec",
+          143: "436f2593e99b8c7f88c84700bc7bef20",
+          149: "47d56017f0c1fc954db6cc36efecbb7f",
+          189: "52029ef3e20ddb7eabbceae0c4fccc23",
+          344: "c714b0d86eccca03ba23fa0c5922b043",
+          380: "933ad994911e678b6536448f0e0a87f5",
+          396: "f6cb2e58d6d5302e1e748b4ea7c30d80",
+          398: "cc39900c59a0581e79310deedbd1c717",
           403: "312be5725d20393940e5ec42c154bc62",
-          429: "bfb53a027676874ab0719f875287c36e",
+          429: "eafff9b2782a5e68466a21f8f6e86b28",
           493: "a207c78af1164e83038c21316c883ce7",
-          524: "39862aa6bacd189f760565299c477f69",
-          533: "a52da458772bb752726cc4d935a85332",
-          570: "694421faa87870d1d79e5ab3207689cc",
-          592: "4b7a5da280614744a9a89bd74a770e79",
-          613: "6e5b19c2f8ae1748d3f54770d25d7dfd",
-          689: "c6aaa119f9fd0cfa0fb0e7affe9d7a00",
-          749: "64531265dc8ac4d010d92224f50855ef",
-          949: "4cf9c1fa59a652ef2020fe2cd3d06891",
-          984: "750628b707b3b61df2cd9b1caaaeea2e",
-          994: "f9527275ea450bf27fbc2f09d1cfabb1"
-        } [e] + ".js", l.miniCssF = e => "css/2d9bae9261e12d96331790adb279d106.css", l.g = function() {
+          524: "3693500ec174ff16f464fb43b35e74c1",
+          533: "e385dcfabc9eb165a2a49f2e36fb3862",
+          570: "f43c9cbabfebf033b9923f1dde827065",
+          613: "5f538809b657f8b5190e99d94b3b47e2",
+          674: "e1281adee4e8fa78f469ce5988c29519",
+          689: "c554a22a73c11826d6ea0fcb9045c2bb",
+          749: "ad409ed126df127316f83cfd59807c2b",
+          949: "0b969ccdce754a483b9b469f1d9c2a99",
+          984: "3a20333a1499bde722220dd958926c48",
+          994: "9b01e1fbcef85d299558beb333f18f2c"
+        } [e] + ".js", l.miniCssF = e => "css/de55ce929bdc2795775b684d9b0a266c.css", l.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
             return this || new Function("return this")()
@@ -317,7 +317,7 @@ _global.SENTRY_RELEASE = {
             },
             d = {
               4: [5004],
-              235: [3181, 4252, 6040, 6649, 7460, 8588, 9779],
+              82: [3181, 4252, 6040, 6649, 7460, 8588, 9779],
               396: [6717],
               403: [1403],
               493: [9493]
@@ -354,7 +354,7 @@ _global.SENTRY_RELEASE = {
             };
             l.f.miniCss = (t, r) => {
               e[t] ? r.push(e[t]) : 0 !== e[t] && {
-                235: 1
+                82: 1
               } [t] && r.push(e[t] = (e => new Promise(((t, r) => {
                 var a = l.miniCssF(e),
                   o = l.p + a;
@@ -424,7 +424,7 @@ _global.SENTRY_RELEASE = {
             },
             r = self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || [];
           r.forEach(t.bind(null, 0)), r.push = t.bind(null, r.push.bind(r))
-        })(), l.nc = void 0, l(2160), l(2609)
+        })(), l.nc = void 0, l(2160), l(7824)
       })())
     }
   }

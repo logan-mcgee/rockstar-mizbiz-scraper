@@ -2,7 +2,7 @@
   try {
     var a = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       e = (new Error).stack;
-    e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "5b515338-f74b-4fbe-a736-72a57e7169a8", a._sentryDebugIdIdentifier = "sentry-dbid-5b515338-f74b-4fbe-a736-72a57e7169a8")
+    e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "74afc7c0-c98c-41c2-9cc2-5e997faa8155", a._sentryDebugIdIdentifier = "sentry-dbid-74afc7c0-c98c-41c2-9cc2-5e997faa8155")
   } catch (a) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -15,7 +15,7 @@ var _global = "undefined" != typeof window ? window : "undefined" != typeof glob
 _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
-  [592], {
+  [674], {
     6516: (a, e, t) => {
       var s = t(1403),
         n = Symbol.for("react.element"),
@@ -50,14 +50,14 @@ _global.SENTRY_RELEASE = {
     6632: (a, e, t) => {
       a.exports = t(6516)
     },
-    9965: (a, e, t) => {
+    7087: (a, e, t) => {
       t.r(e), t.d(e, {
         default: () => la
       });
       var s = {};
       t.r(s), t.d(s, {
         beaterator: () => r,
-        bully: () => c,
+        bully: () => m,
         careers: () => v,
         gta: () => p,
         gta2: () => u,
@@ -970,9 +970,9 @@ _global.SENTRY_RELEASE = {
           defaultMessage: "User Videos"
         }
       });
-      let g, _, l, m;
-      g = "/bully/*", _ = "/bully", l = "/bully/?section=order", m = o.C.www;
-      const c = a => ({
+      let g, _, l, c;
+      g = "/bully/*", _ = "/bully", l = "/bully/?section=order", c = o.C.www;
+      const m = a => ({
           site: "bully",
           appearancePaths: {
             [o.C.www]: [{
@@ -1021,7 +1021,7 @@ _global.SENTRY_RELEASE = {
             text: a.formatMessage(d.nav_bully_cta_buy_now),
             gaText: d.nav_bully_cta_buy_now.defaultMessage,
             location: {
-              domain: m,
+              domain: c,
               path: "/bully/?section=order"
             },
             ga: "cta_buy",
@@ -3533,7 +3533,7 @@ _global.SENTRY_RELEASE = {
           } = a;
           const _ = (0, i.useIntl)(),
             l = (0, o.A)(),
-            m = (a => {
+            c = (a => {
               const e = (0, o.A)(),
                 t = a.subdomaincom,
                 s = a => {
@@ -3557,7 +3557,7 @@ _global.SENTRY_RELEASE = {
                 };
               return a => s(a)
             })(r),
-            c = e,
+            m = e,
             v = (a => ({
               targets: [{
                 text: a.formatMessage(d.search_target_games),
@@ -3665,14 +3665,14 @@ _global.SENTRY_RELEASE = {
                 return [...t, {
                   ...s,
                   appearancePaths: l.currentSite?.site ? s?.appearancePaths?.[l.currentSite.site] : [],
-                  links: n.map(m),
-                  cta: s.cta && m(s.cta)
+                  links: n.map(c),
+                  cta: s.cta && c(s.cta)
                 }]
               }), [])
             }), [p, f]),
             w = {
               ...v,
-              targets: v.targets.map(m)
+              targets: v.targets.map(c)
             };
           return (0, n.useEffect)((() => {
             const a = () => {
@@ -3681,7 +3681,7 @@ _global.SENTRY_RELEASE = {
             return window.addEventListener("resize", a), () => {
               window.removeEventListener("resize", a)
             }
-          }), []), (0, ga.jsx)(c, {
+          }), []), (0, ga.jsx)(m, {
             navigationData: h,
             locale: r,
             searchConfig: w,

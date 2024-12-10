@@ -1,3 +1,19 @@
+.rockstargames-modules-core-headerf903c45f8ecc18bd55f702e202f3763a {
+  grid-gap: 1rem;
+  align-content: center;
+  background: #000;
+  display: grid;
+  grid-auto-rows: max-content;
+  height: 100%;
+  justify-items: center;
+  padding: .5rem
+}
+
+.rockstargames-modules-core-headerf903c45f8ecc18bd55f702e202f3763a,
+.rockstargames-modules-core-headerf903c45f8ecc18bd55f702e202f3763a h1 {
+  color: #fff
+}
+
 .rockstargames-modules-core-headere4a42eaa9bfb682035e61ac2e2a34515 {
   align-items: center;
   background: var(--white-15);
@@ -3525,11 +3541,8 @@ html[data-disallow-body-scroll] {
   overflow-y: hidden
 }
 
-:root {
-  --nav-base-font-size: 16px
-}
-
 .rockstargames-modules-core-headerfb82b02e2df2877785d54800828cef99 {
+  --nav-base-font-size: 16px;
   -webkit-backdrop-filter: blur(25px);
   backdrop-filter: blur(25px);
   background: rgba(0, 0, 0, .85);
@@ -5461,11 +5474,6 @@ body[data-show-more-content] .rockstargames-modules-core-headerfb82b02e2df287778
   src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/63cfc284c204bd1597bc68464e18042b.woff) format("woff")
 }
 
-.rockstargames-modules-core-headercbf9895f81110bad4f8cf856f1f6e982 :root {
-  --font-family-h: HelveticaNowDisplayBold;
-  --font-family-body: HelveticaNowText
-}
-
 .rockstargames-modules-core-headercbf9895f81110bad4f8cf856f1f6e982 :lang(pl-PL),
 .rockstargames-modules-core-headercbf9895f81110bad4f8cf856f1f6e982 :lang(pl_pl) {
   --font-family-h: NeueHelveticaPaneuropean;
@@ -5577,4 +5585,4 @@ body[data-show-more-content] .rockstargames-modules-core-headerfb82b02e2df287778
   }
 }
 
-/*# sourceMappingURL=2d9bae9261e12d96331790adb279d106.css.map*/
+/*# sourceMappingURL=de55ce929bdc2795775b684d9b0a266c.css.map*/
