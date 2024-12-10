@@ -29,10 +29,10 @@ _global.SENTRY_RELEASE = {
         i = a(2756),
         d = a(6717);
       const m = JSON.parse('{"us":{"home_text":"Home","rockstar_games_logo_alt_text":"Rockstar Games Logo"},"de":{"home_text":"Startseite","rockstar_games_logo_alt_text":"Rockstar-Games-Logo"},"es":{"home_text":"Inicio","rockstar_games_logo_alt_text":"Logo de Rockstar Games"},"mx":{"home_text":"Inicio","rockstar_games_logo_alt_text":"Logo de Rockstar Games"},"fr":{"home_text":"Accueil","rockstar_games_logo_alt_text":"Logo Rockstar Games"},"it":{"home_text":"Home","rockstar_games_logo_alt_text":"Logo di Rockstar Games"},"jp":{"home_text":"ホーム","rockstar_games_logo_alt_text":"ロックスター・ゲームスロゴ"},"kr":{"home_text":"홈","rockstar_games_logo_alt_text":"Rockstar Games 로고"},"pl":{"home_text":"Strona główna","rockstar_games_logo_alt_text":"Logo Rockstar Games"},"br":{"home_text":"Início","rockstar_games_logo_alt_text":"Logotipo da Rockstar Games"},"ru":{"home_text":"Главная страница","rockstar_games_logo_alt_text":"Логотип Rockstar Games"},"hans":{"home_text":"主页","rockstar_games_logo_alt_text":"Rockstar Games 标志"},"tw":{"home_text":"首頁","rockstar_games_logo_alt_text":"Rockstar Games 標誌"}}');
-      var f = a(207),
-        _ = a(6040),
-        g = a(8281),
-        u = a(3134),
+      var _ = a(207),
+        g = a(6040),
+        u = a(8281),
+        f = a(3134),
         b = a(4781),
         k = a(1403),
         h = a(6864),
@@ -66,7 +66,7 @@ _global.SENTRY_RELEASE = {
       var j = a(1744),
         L = a(5190);
       const T = "rockstargames-sites-gtaa799fab6998f229f5b8c00d05b335595";
-      _.gsap.registerPlugin(b.u, g.R, u.I);
+      g.gsap.registerPlugin(b.u, u.R, f.I);
       const E = () => {
           const {
             loading: e,
@@ -78,10 +78,10 @@ _global.SENTRY_RELEASE = {
             mutateLSSettings: r
           } = (0, i.useRockstarWebLSSettings)(), {
             track: n
-          } = (0, f.useGtmTrack)(), {
+          } = (0, _.useGtmTrack)(), {
             currentSite: l,
             sites: d
-          } = (0, c.A)(), m = (0, s.useBase)(), g = "promo_banner2", u = (0, k.useRef)(), b = (0, k.useRef)(null), h = (0, k.useRef)(null), E = (0, k.useRef)(null), I = (0, k.useRef)(null), A = (0, k.useRef)(null), C = (0, k.useRef)(null), {
+          } = (0, c.A)(), m = (0, s.useBase)(), u = "promo_banner2", f = (0, k.useRef)(), b = (0, k.useRef)(null), h = (0, k.useRef)(null), E = (0, k.useRef)(null), I = (0, k.useRef)(null), A = (0, k.useRef)(null), C = (0, k.useRef)(null), {
             ctaButtonRef: G,
             timelines: N,
             addTimeline: S,
@@ -92,16 +92,16 @@ _global.SENTRY_RELEASE = {
             resetVideo: H
           } = (0, w.I2)();
           if ((0, k.useEffect)((() => {
-              _.gsap.set(window, {
+              g.gsap.set(window, {
                 scrollTo: 0
               })
             }), []), (0, k.useEffect)((() => {
               N?.bannerTimeline && (M ? D ? N.bannerTimeline.progress(1) : N.bannerTimeline.play() : M || D || N.bannerTimeline.reverse())
             }), [M, N?.bannerTimeline]), (0, k.useLayoutEffect)((() => {
-              u?.current?.invalidate()
+              f?.current?.invalidate()
             }), [a, o]), (0, k.useLayoutEffect)((() => {
-              const e = _.gsap.context((() => {
-                N?.bannerTimeline?.progress(0).kill(), V && (u.current = _.gsap.timeline({
+              const e = g.gsap.context((() => {
+                N?.bannerTimeline?.progress(0).kill(), V && (f.current = g.gsap.timeline({
                   paused: !0,
                   defaults: {
                     duration: y.ft.takeover,
@@ -111,7 +111,7 @@ _global.SENTRY_RELEASE = {
                   onStart: () => {
                     n({
                       event: "takeover_impression",
-                      element_placement: g
+                      element_placement: u
                     })
                   }
                 }).fromTo(I.current, {
@@ -136,7 +136,7 @@ _global.SENTRY_RELEASE = {
                   autoAlpha: 0
                 }, {
                   autoAlpha: 1
-                }, "<"), S("bannerTimeline", u?.current))
+                }, "<"), S("bannerTimeline", f?.current))
               }));
               return () => e.revert()
             }), [V]), !V) return null;
@@ -157,7 +157,7 @@ _global.SENTRY_RELEASE = {
                     onClick: () => {
                       B(!0), n({
                         event: "site_banner_click",
-                        element_placement: g
+                        element_placement: u
                       })
                     },
                     children: [(0, v.jsx)("p", {
@@ -191,15 +191,15 @@ _global.SENTRY_RELEASE = {
                         B(!1), r({
                           key: y.uD,
                           value: !1
-                        }), G.current && _.gsap.to(G.current, {
+                        }), G.current && g.gsap.to(G.current, {
                           autoAlpha: 0,
                           duration: y.ft.playVideo.cta,
                           ease: y.Le.playVideo.cta
                         }), N.bannerTimeline.reverse(), N.bannerTimeline.eventCallback("onReverseComplete", (() => {
-                          u.current && N.playVideoTimeline && N.playVideoTimeline.progress(0).pause(), H()
+                          f.current && N.playVideoTimeline && N.playVideoTimeline.progress(0).pause(), H()
                         })), n({
                           event: "takeover_close",
-                          element_placement: g
+                          element_placement: u
                         })
                       }
                     })]

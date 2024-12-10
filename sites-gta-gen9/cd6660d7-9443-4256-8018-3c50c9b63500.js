@@ -16,50 +16,50 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_gta_gen9 = self.webpackChunk_rockstargames_sites_gta_gen9 || []).push([
   [9853], {
-    99853: (o, t, e) => {
-      e.r(t), e.d(t, {
-        Lightbox_Close_Button_Label: () => _,
+    99853: (o, t, _) => {
+      _.r(t), _.d(t, {
+        Lightbox_Close_Button_Label: () => e,
         Lightbox_Close_Button_Tooltip: () => n,
         Lightbox_Download_Button_Label: () => L,
-        Lightbox_Download_Button_Tooltip: () => f,
-        Lightbox_Open_Button_Label: () => r,
-        Lightbox_Reset_Zoom_Button_Label: () => b,
+        Lightbox_Download_Button_Tooltip: () => r,
+        Lightbox_Open_Button_Label: () => h,
+        Lightbox_Reset_Zoom_Button_Label: () => i,
         Lightbox_Reset_Zoom_Button_Tooltip: () => g,
         Lightbox_Zoom_In_Button_Label: () => l,
-        Lightbox_Zoom_In_Button_Tooltip: () => a,
-        Lightbox_Zoom_Out_Button_Label: () => i,
+        Lightbox_Zoom_In_Button_Tooltip: () => b,
+        Lightbox_Zoom_Out_Button_Label: () => a,
         Lightbox_Zoom_Out_Button__Tooltip: () => d,
         Lightbox_Zoom_Slider_Label: () => s,
         Lightbox_Zoom_Slider_Tooltip: () => u,
-        default: () => h
+        default: () => f
       });
-      var _ = "ライトボックスを閉じる",
+      var e = "ライトボックスを閉じる",
         n = "{shortcut}を押す",
         l = "ズームイン",
-        a = "{shortcut}を押す",
-        i = "ズームアウト",
+        b = "{shortcut}を押す",
+        a = "ズームアウト",
         d = "{shortcut}を押す",
-        b = "リセット",
+        i = "リセット",
         g = "{shortcut}を押す",
         s = "ズームの度合",
         u = "{zoom}%",
         L = "ダウンロード",
-        f = "ダウンロード",
-        r = "拡大する",
-        h = {
-          Lightbox_Close_Button_Label: _,
+        r = "ダウンロード",
+        h = "拡大する",
+        f = {
+          Lightbox_Close_Button_Label: e,
           Lightbox_Close_Button_Tooltip: n,
           Lightbox_Zoom_In_Button_Label: l,
-          Lightbox_Zoom_In_Button_Tooltip: a,
-          Lightbox_Zoom_Out_Button_Label: i,
+          Lightbox_Zoom_In_Button_Tooltip: b,
+          Lightbox_Zoom_Out_Button_Label: a,
           Lightbox_Zoom_Out_Button__Tooltip: d,
-          Lightbox_Reset_Zoom_Button_Label: b,
+          Lightbox_Reset_Zoom_Button_Label: i,
           Lightbox_Reset_Zoom_Button_Tooltip: g,
           Lightbox_Zoom_Slider_Label: s,
           Lightbox_Zoom_Slider_Tooltip: u,
           Lightbox_Download_Button_Label: L,
-          Lightbox_Download_Button_Tooltip: f,
-          Lightbox_Open_Button_Label: r
+          Lightbox_Download_Button_Tooltip: r,
+          Lightbox_Open_Button_Label: h
         }
     }
   }

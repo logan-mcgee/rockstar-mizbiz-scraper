@@ -64,13 +64,13 @@ _global.SENTRY_RELEASE = {
       var n = a(71403),
         d = a(85865),
         l = a.n(d),
-        c = a(42756),
-        i = a(34983),
+        i = a(42756),
+        c = a(34983),
         f = a(21450),
         m = a(8999),
-        u = a(60285),
-        x = a(22778),
-        b = a(39613),
+        b = a(60285),
+        u = a(22778),
+        x = a(39613),
         j = a(41074),
         g = a(28606),
         p = a(87839),
@@ -88,15 +88,15 @@ _global.SENTRY_RELEASE = {
         T = a(64064),
         M = a.n(T),
         P = a(26750);
-      const R = (0, c.withTranslations)((0, c.withLocale)((e => {
+      const R = (0, i.withTranslations)((0, i.withLocale)((e => {
         let {
           article: s,
           children: a,
           locale: o,
           t: d
         } = e;
-        const c = {
-            A: e => (0, t.jsx)(u.A, {
+        const i = {
+            A: e => (0, t.jsx)(b.A, {
               ...e
             }),
             AnchorLink: e => (0, t.jsx)(P.AnchorLink, {
@@ -105,16 +105,16 @@ _global.SENTRY_RELEASE = {
             ArticleTag: e => (0, t.jsx)(r.A, {
               ...e
             }),
-            AudioPlayer: e => (0, t.jsx)(i.A, {
+            AudioPlayer: e => (0, t.jsx)(c.A, {
               ...e
             }),
-            Button: e => (0, t.jsx)(x.A, {
+            Button: e => (0, t.jsx)(u.A, {
               ...e
             }),
             Carousel: e => (0, t.jsx)(f.A, {
               ...e
             }),
-            Cta: e => (0, t.jsx)(b.A, {
+            Cta: e => (0, t.jsx)(x.A, {
               ...e
             }),
             Discounts: e => (0, t.jsx)(P.Discounts, {
@@ -208,7 +208,7 @@ _global.SENTRY_RELEASE = {
               t: d,
               variables: N
             },
-            components: c,
+            components: i,
             jsx: s.posts_jsx.markup,
             onError: e => {
               console.error(e)
@@ -261,7 +261,7 @@ _global.SENTRY_RELEASE = {
     },
     74216: (e, s, a) => {
       a.r(s), a.d(s, {
-        componentsForTinaParser: () => b
+        componentsForTinaParser: () => x
       });
       var r = a(76612),
         t = a(64064),
@@ -269,22 +269,22 @@ _global.SENTRY_RELEASE = {
         n = a(5217),
         d = a.n(n),
         l = a(26527),
-        c = a.n(l),
-        i = a(31879),
-        f = a.n(i),
+        i = a.n(l),
+        c = a(31879),
+        f = a.n(c),
         m = a(66713),
-        u = a.n(m),
-        x = a(42012);
-      const b = {
+        b = a.n(m),
+        u = a(42012);
+      const x = {
         ...r,
         ...a(26750),
-        ClrCard: x.y3,
-        ClrCollapsedCard: x.h7,
+        ClrCard: u.y3,
+        ClrCollapsedCard: u.h7,
         Gif: o(),
         GroupOfItems: d(),
         RockstarVideoPlayer: f(),
-        SwiperCarousel: c(),
-        UGCJobSpotlight: u()
+        SwiperCarousel: i(),
+        UGCJobSpotlight: b()
       }
     }
   }

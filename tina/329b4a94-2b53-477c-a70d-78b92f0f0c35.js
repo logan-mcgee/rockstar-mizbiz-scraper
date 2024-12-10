@@ -19,7 +19,7 @@ _global.SENTRY_RELEASE = {
     4891: (e, a, d) => {
       d.r(a), d.d(a, {
         patch: () => o,
-        pick: () => f
+        pick: () => l
       });
       var n = d(4252),
         t = d.n(n);
@@ -33,7 +33,7 @@ _global.SENTRY_RELEASE = {
           }));
           return d
         },
-        f = (e, a) => {
+        l = (e, a) => {
           const d = {};
           return t().cloneDeepWith(e, ((e, n, t) => {
             n === a && e && (d[t.key] = e)

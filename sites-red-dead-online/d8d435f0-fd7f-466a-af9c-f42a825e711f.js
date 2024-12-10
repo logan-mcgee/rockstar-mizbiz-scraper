@@ -50,15 +50,15 @@ _global.SENTRY_RELEASE = {
         } = e;
         const u = (0, r.useRef)(null),
           f = (0, n.useIntl)(),
-          k = !/^(https?|mailto):/i.test(t),
-          b = /^#/.test(t),
+          b = !/^(https?|mailto):/i.test(t),
+          k = /^#/.test(t),
           h = p?.target ?? (o ? "_blank" : "_self");
         let {
           ...v
         } = p, x = "";
         if ("aria-label" in v && v["aria-label"] && (x = "_blank" === h ? `${v["aria-label"]} ${f.formatMessage(l.aria_label_open_new_window)}` : v["aria-label"]), (0, r.useEffect)((() => {
             c && u?.current && u.current.focus()
-          }), [u?.current, c]), b) {
+          }), [u?.current, c]), k) {
           const e = e => {
             e.preventDefault(), document?.querySelector(`[id='${t.replace("#","")}']`)?.scrollIntoView({
               behavior: "smooth",
@@ -78,7 +78,7 @@ _global.SENTRY_RELEASE = {
             })]
           })
         }
-        if (k) return (0, g.jsxs)(_.NavLink, {
+        if (b) return (0, g.jsxs)(_.NavLink, {
           title: i,
           to: t,
           onClick: d,
@@ -147,13 +147,13 @@ _global.SENTRY_RELEASE = {
             })
           }
         },
-        k = {
+        b = {
           rating: "rockstargames-sites-red-dead-onlinea1271bbed316bf567eb67e78d2143808",
           withDescriptors: "rockstargames-sites-red-dead-onlinecba248edc2520d3f1ad195a8495dc1f8",
           withOutDescriptors: "rockstargames-sites-red-dead-onlineff919f7a60b854473b61075a671deb6a",
           text: "rockstargames-sites-red-dead-onlined47cd2b7c7415cb44cddef00b1c9b35f"
         },
-        b = (0, n.defineMessages)({
+        k = (0, n.defineMessages)({
           components_ratings_link_alt: {
             id: "components_ratings_link_alt",
             defaultMessage: "Rating: {rating}. Click here learn more about rating systems"
@@ -201,21 +201,21 @@ _global.SENTRY_RELEASE = {
             }), [w]), !y.ratingImg) return null;
           const O = !!y.ratingDescriptors;
           return (0, g.jsxs)("div", {
-            className: [k.rating, O ? k.withDescriptors : k.withOutDescriptors, f || ""].join(" "),
+            className: [b.rating, O ? b.withDescriptors : b.withOutDescriptors, f || ""].join(" "),
             style: (0, i.safeStyles)(u),
             children: [(0, g.jsx)(p, {
               to: y.ratingUrl,
               target: "_blank",
               children: (0, g.jsx)("img", {
-                alt: S.formatMessage(b.components_ratings_link_alt, {
+                alt: S.formatMessage(k.components_ratings_link_alt, {
                   rating: (E = y.ratingImg, E.replace(/_/g, " ").split(".")[0].toUpperCase())
                 }),
                 src: t(73983)(`./${y.ratingImg}`)
               })
             }), O && (0, g.jsxs)("div", {
-              className: k.text,
+              className: b.text,
               children: [(0, g.jsx)("p", {
-                className: k.descriptors,
+                className: b.descriptors,
                 dangerouslySetInnerHTML: {
                   __html: y?.ratingDescriptors?.split(/<br\s?\/?>/).join(", ") || ""
                 }
@@ -596,7 +596,7 @@ _global.SENTRY_RELEASE = {
               window.removeEventListener("resize", e)
             }
           }), []);
-          const k = e => {
+          const b = e => {
             e >= 0 && e < t.length && d.current[e] && d.current[e]?.focus()
           };
           return (0, g.jsxs)("div", {
@@ -623,19 +623,19 @@ _global.SENTRY_RELEASE = {
                   switch (e.key) {
                     case "Home":
                       e.preventDefault(), _(0), setTimeout((() => {
-                        s(t[0]), k(0)
+                        s(t[0]), b(0)
                       }), 100);
                       break;
                     case "End":
                       e.preventDefault(), _(L(t.length - 1, u, t.length)), setTimeout((() => {
-                        s(t[t.length - 1]), k(t.length - 1)
+                        s(t[t.length - 1]), b(t.length - 1)
                       }), 100);
                       break;
                     case "Tab":
                       e.shiftKey ? (e.preventDefault(), r = 0 === a ? 0 : a - 1, _(L(r, u, t.length)), setTimeout((() => {
-                        s(t[r]), k(r)
+                        s(t[r]), b(r)
                       }), 100)) : (e.preventDefault(), r = a === t.length - 1 ? t.length - 1 : a + 1, _(L(r, u, t.length)), setTimeout((() => {
-                        s(t[r]), k(r)
+                        s(t[r]), b(r)
                       }), 100))
                   }
                 })(e, r),
@@ -1048,7 +1048,7 @@ _global.SENTRY_RELEASE = {
           query: ue.FeedbackSteps,
           type: "rdo"
         }),
-        ke = (0, n.defineMessages)({
+        be = (0, n.defineMessages)({
           rdo_feature_getting_started_controller_ps4_dpad_right: {
             id: "rdo_feature_getting_started_controller_ps4_dpad_right",
             defaultMessage: "Right directional button on PlayStation4"
@@ -1138,7 +1138,7 @@ _global.SENTRY_RELEASE = {
             defaultMessage: "or"
           }
         }),
-        be = e => {
+        ke = e => {
           let {
             feature: a
           } = e;
@@ -1150,28 +1150,28 @@ _global.SENTRY_RELEASE = {
             [_, m] = (0, r.useState)("0px");
           let p = window.pageYOffset || document.documentElement.scrollTop;
           const u = {
-              "ps4-dpad-right": t.formatMessage(ke.rdo_feature_getting_started_controller_ps4_dpad_right),
-              "xb1-dpad-right": t.formatMessage(ke.rdo_feature_getting_started_controller_xb1_dpad_right),
-              "ps4-dpad-up": t.formatMessage(ke.rdo_feature_getting_started_controller_ps4_dpad_up),
-              "xb1-dpad-up": t.formatMessage(ke.rdo_feature_getting_started_controller_xb1_dpad_up),
-              "ps4-options": t.formatMessage(ke.rdo_feature_getting_started_controller_ps4_options),
-              "xb1-options": t.formatMessage(ke.rdo_feature_getting_started_controller_xb1_options),
-              "ps4-x": t.formatMessage(ke.rdo_feature_getting_started_controller_ps4_x),
-              "xb1-a": t.formatMessage(ke.rdo_feature_getting_started_controller_xb1_a),
-              "ps4-l3": t.formatMessage(ke.rdo_feature_getting_started_controller_ps4_l3),
-              "xb1-l3": t.formatMessage(ke.rdo_feature_getting_started_controller_xb1_l3),
-              "ps4-r3": t.formatMessage(ke.rdo_feature_getting_started_controller_ps4_r3),
-              "xb1-r3": t.formatMessage(ke.rdo_feature_getting_started_controller_xb1_r3),
-              "ps4-l1": t.formatMessage(ke.rdo_feature_getting_started_controller_ps4_l1),
-              "xb1-lb": t.formatMessage(ke.rdo_feature_getting_started_controller_xb1_lb),
-              "ps4-r": t.formatMessage(ke.rdo_feature_getting_started_controller_ps4_r),
-              "ps4-l2": t.formatMessage(ke.rdo_feature_getting_started_controller_ps4_l2),
-              "xb1-lt": t.formatMessage(ke.rdo_feature_getting_started_controller_xb1_lt),
-              "ps4-r2": t.formatMessage(ke.rdo_feature_getting_started_controller_ps4_r2),
-              "xb1-rt": t.formatMessage(ke.rdo_feature_getting_started_controller_xb1_rt),
-              "ps4-circle": t.formatMessage(ke.rdo_feature_getting_started_controller_ps4_circle),
-              "xb1-b": t.formatMessage(ke.rdo_feature_getting_started_controller_xb1_b),
-              or: t.formatMessage(ke.rdo_feature_getting_started_or)
+              "ps4-dpad-right": t.formatMessage(be.rdo_feature_getting_started_controller_ps4_dpad_right),
+              "xb1-dpad-right": t.formatMessage(be.rdo_feature_getting_started_controller_xb1_dpad_right),
+              "ps4-dpad-up": t.formatMessage(be.rdo_feature_getting_started_controller_ps4_dpad_up),
+              "xb1-dpad-up": t.formatMessage(be.rdo_feature_getting_started_controller_xb1_dpad_up),
+              "ps4-options": t.formatMessage(be.rdo_feature_getting_started_controller_ps4_options),
+              "xb1-options": t.formatMessage(be.rdo_feature_getting_started_controller_xb1_options),
+              "ps4-x": t.formatMessage(be.rdo_feature_getting_started_controller_ps4_x),
+              "xb1-a": t.formatMessage(be.rdo_feature_getting_started_controller_xb1_a),
+              "ps4-l3": t.formatMessage(be.rdo_feature_getting_started_controller_ps4_l3),
+              "xb1-l3": t.formatMessage(be.rdo_feature_getting_started_controller_xb1_l3),
+              "ps4-r3": t.formatMessage(be.rdo_feature_getting_started_controller_ps4_r3),
+              "xb1-r3": t.formatMessage(be.rdo_feature_getting_started_controller_xb1_r3),
+              "ps4-l1": t.formatMessage(be.rdo_feature_getting_started_controller_ps4_l1),
+              "xb1-lb": t.formatMessage(be.rdo_feature_getting_started_controller_xb1_lb),
+              "ps4-r": t.formatMessage(be.rdo_feature_getting_started_controller_ps4_r),
+              "ps4-l2": t.formatMessage(be.rdo_feature_getting_started_controller_ps4_l2),
+              "xb1-lt": t.formatMessage(be.rdo_feature_getting_started_controller_xb1_lt),
+              "ps4-r2": t.formatMessage(be.rdo_feature_getting_started_controller_ps4_r2),
+              "xb1-rt": t.formatMessage(be.rdo_feature_getting_started_controller_xb1_rt),
+              "ps4-circle": t.formatMessage(be.rdo_feature_getting_started_controller_ps4_circle),
+              "xb1-b": t.formatMessage(be.rdo_feature_getting_started_controller_xb1_b),
+              or: t.formatMessage(be.rdo_feature_getting_started_or)
             },
             f = e => {
               const a = e.childNodes;
@@ -1192,7 +1192,7 @@ _global.SENTRY_RELEASE = {
                 }
               }
             },
-            k = e => {
+            b = e => {
               const a = document.createElement("div");
               return a.innerHTML = e, f(a), a.innerHTML
             };
@@ -1251,7 +1251,7 @@ _global.SENTRY_RELEASE = {
                 }) : "", e.details ? (0, g.jsx)("span", {
                   className: "rockstargames-sites-red-dead-onlinec01cb63450800b0ffa0488f6895ccbf8",
                   dangerouslySetInnerHTML: {
-                    __html: k(e.details)
+                    __html: b(e.details)
                   }
                 }) : ""]
               }, e.title_slug)))
@@ -2017,7 +2017,7 @@ _global.SENTRY_RELEASE = {
           let i = "";
           switch (e) {
             case "getting-started":
-              i = (0, g.jsx)(be, {
+              i = (0, g.jsx)(ke, {
                 feature: t
               });
               break;
@@ -2280,7 +2280,7 @@ _global.SENTRY_RELEASE = {
         }), "rdo");
       var ua = t(78722),
         fa = t.n(ua);
-      const ka = () => {
+      const ba = () => {
           const {
             articleId: e
           } = (0, y.useParams)();
@@ -2288,7 +2288,7 @@ _global.SENTRY_RELEASE = {
             idHash: String(e)
           })
         },
-        ba = {
+        ka = {
           button: "rockstargames-sites-red-dead-onlinee056494c33cff1fe89431f279fdb6b9a",
           secondary: "rockstargames-sites-red-dead-onlined340cf27f380a4347994e59544432eb3"
         },
@@ -2302,7 +2302,7 @@ _global.SENTRY_RELEASE = {
             target: i = "_self",
             ...o
           } = e;
-          const d = [ba.button, ba[s], a].join(" ");
+          const d = [ka.button, ka[s], a].join(" ");
           return r ? (0, g.jsx)(p, {
             ...o,
             to: r,
@@ -2361,7 +2361,7 @@ _global.SENTRY_RELEASE = {
           } = (0, d.useGtmTrack)(), [l] = (0, _.useSearchParams)(), m = s.preview_images_parsed.newswire_block, u = {
             default: 0 !== t || n ? m.square || m.d16x9 || m._fallback : m.d16x9 || m.square || m._fallback,
             mobile: m.square || m._fallback
-          }, [f, k] = (0, i.usePreloadImg)(u.default), b = {
+          }, [f, b] = (0, i.usePreloadImg)(u.default), k = {
             default: {
               backgroundImage: `url(${u.default})`
             },
@@ -2386,14 +2386,14 @@ _global.SENTRY_RELEASE = {
             children: (0, g.jsxs)(g.Fragment, {
               children: [0 !== t || l.get("tag_id") ? (0, g.jsx)("div", {
                 className: wa.preview,
-                style: b.default
+                style: k.default
               }) : (0, g.jsxs)(g.Fragment, {
                 children: [(0, g.jsx)("div", {
                   className: wa.previewMobile,
-                  style: b.mobile
+                  style: k.mobile
                 }), (0, g.jsx)("div", {
                   className: wa.preview,
-                  style: b.default
+                  style: k.default
                 })]
               }), (0, g.jsxs)("div", {
                 className: wa.info,
@@ -2494,20 +2494,20 @@ _global.SENTRY_RELEASE = {
             track: c
           } = (0, d.useGtmTrack)(), [l, m] = (0, _.useSearchParams)(), {
             tagId: p = null
-          } = (0, _.useParams)(), [u, f] = (0, r.useState)(p ?? n ?? l.get("tag_id")), [k, b] = (0, r.useState)(1), [h, v] = (0, r.useState)(20), [x, w] = (0, r.useState)([]), [y, j] = (0, r.useState)(null), [N, {
+          } = (0, _.useParams)(), [u, f] = (0, r.useState)(p ?? n ?? l.get("tag_id")), [b, k] = (0, r.useState)(1), [h, v] = (0, r.useState)(20), [x, w] = (0, r.useState)([]), [y, j] = (0, r.useState)(null), [N, {
             loading: S,
             data: z
           }] = (0, s.useLazyQuery)(Oa(), {
             variables: {
               tagId: Number(u),
-              page: k,
+              page: b,
               metaUrl: i,
               limit: h,
               locale: "en_us"
             }
           });
           return (0, r.useEffect)((() => {
-            b(1), w([]), v(20), f(p ?? n ?? l.get("tag_id")), N()
+            k(1), w([]), v(20), f(p ?? n ?? l.get("tag_id")), N()
           }), [l.get("tag_id"), p, n]), (0, r.useEffect)((() => {
             const e = x;
             z?.posts?.paging && j(z?.posts?.paging), z?.posts?.results && w(e.concat(z?.posts?.results))
@@ -2528,8 +2528,8 @@ _global.SENTRY_RELEASE = {
               "data-testid": "more-stories",
               onClick: e => {
                 const a = l.get("page"),
-                  t = Number(a ?? k) + 1;
-                b(t), 20 !== h && v(20), N(), m({
+                  t = Number(a ?? b) + 1;
+                k(t), 20 !== h && v(20), N(), m({
                   page: String(t)
                 }, {
                   replace: !0
@@ -2724,7 +2724,7 @@ _global.SENTRY_RELEASE = {
           element: (0, g.jsx)(P, {})
         }, {
           path: "newswire/article/:articleId/:articleSlug",
-          element: (0, g.jsx)(ka, {})
+          element: (0, g.jsx)(ba, {})
         }, {
           path: "clubrewards",
           element: (0, g.jsx)(le, {})

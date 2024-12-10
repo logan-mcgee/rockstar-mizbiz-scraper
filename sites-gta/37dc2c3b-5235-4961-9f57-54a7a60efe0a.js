@@ -21,24 +21,24 @@ _global.SENTRY_RELEASE = {
         default: () => s
       });
       var n = t(1403),
-        o = t(4410),
-        d = t(6632);
+        d = t(4410),
+        o = t(6632);
       const s = e => {
         let {
           basename: a,
           children: t,
           history: s
         } = e;
-        const [l, f] = (0, n.useState)({
+        const [l, i] = (0, n.useState)({
           action: s.action,
           location: s.location
         });
         return (0, n.useLayoutEffect)((() => s.listen(((e, a) => {
-          f({
+          i({
             location: e,
             action: a
           })
-        }))), [s]), (0, d.jsx)(o.Router, {
+        }))), [s]), (0, o.jsx)(d.Router, {
           basename: a,
           location: l.location,
           navigationType: l.action,

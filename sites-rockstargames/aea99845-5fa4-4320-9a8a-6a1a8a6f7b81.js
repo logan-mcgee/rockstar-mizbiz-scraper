@@ -34,19 +34,19 @@ _global.SENTRY_RELEASE = {
           context: r = "",
           to: l,
           onClick: d,
-          target: c = "_self",
-          ...o
+          target: o = "_self",
+          ...c
         } = e;
         const m = [n.button, n[r], a].join(" ");
         return l ? (0, s.jsx)(i.A, {
-          ...o,
+          ...c,
           to: l,
           className: m,
           onClick: d,
-          target: c,
+          target: o,
           children: t
         }) : (0, s.jsx)("button", {
-          ...o,
+          ...c,
           type: "button",
           className: m,
           onClick: d,
@@ -65,7 +65,7 @@ _global.SENTRY_RELEASE = {
         r = t(40207),
         l = t(60285),
         d = t(31716);
-      const c = {
+      const o = {
         newswireBlock: "rockstargames-sites-rockstargamesa793f470884d207243d6c3caac8ad811",
         info: "rockstargames-sites-rockstargamesd50f6d2bc5f983c05311292acb4c78a5",
         title: "rockstargames-sites-rockstargamescc389449dc1495fc9c323fc2c547857d",
@@ -75,17 +75,17 @@ _global.SENTRY_RELEASE = {
         top: "rockstargames-sites-rockstargamesfa1a6f4c7d94b94f5af2dc1ac9af79f1",
         startAnimation: "rockstargames-sites-rockstargamese380e8c67066df6f33fc018341ea96e5"
       };
-      var o = t(46632);
+      var c = t(46632);
       const m = e => {
         let {
           section: a = "",
           index: t,
           post: m,
           noSpecialOrder: u = !1,
-          focused: f
+          focused: k
         } = e;
         const {
-          track: k
+          track: f
         } = (0, r.useGtmTrack)(), [g] = (0, n.useSearchParams)(), p = m.preview_images_parsed.newswire_block, v = {
           default: 0 !== t || u ? p.square || p.d16x9 || p._fallback : p.d16x9 || p.square || p._fallback,
           mobile: p.square || p._fallback
@@ -97,7 +97,7 @@ _global.SENTRY_RELEASE = {
             backgroundImage: `url(${v.mobile})`
           }
         }, h = (0, i.useCallback)((() => {
-          k({
+          f({
             event: "card_click",
             card_id: m.id,
             card_name: m.name_slug.replace(/-/g, " "),
@@ -106,35 +106,35 @@ _global.SENTRY_RELEASE = {
             element_placement: a
           })
         }), [m]);
-        return (0, o.jsx)(l.A, {
+        return (0, c.jsx)(l.A, {
           to: m.url,
-          className: [c.newswireBlock, u ? c.newswireBlockNoSpecialOrder : "", null !== b ? c.startAnimation : ""].join(" "),
-          focused: f,
+          className: [o.newswireBlock, u ? o.newswireBlockNoSpecialOrder : "", null !== b ? o.startAnimation : ""].join(" "),
+          focused: k,
           onClick: h,
-          children: (0, o.jsxs)(o.Fragment, {
-            children: [0 !== t || g.get("tag_id") ? (0, o.jsx)("div", {
-              className: c.preview,
+          children: (0, c.jsxs)(c.Fragment, {
+            children: [0 !== t || g.get("tag_id") ? (0, c.jsx)("div", {
+              className: o.preview,
               style: N.default
-            }) : (0, o.jsxs)(o.Fragment, {
-              children: [(0, o.jsx)("div", {
-                className: c.previewMobile,
+            }) : (0, c.jsxs)(c.Fragment, {
+              children: [(0, c.jsx)("div", {
+                className: o.previewMobile,
                 style: N.mobile
-              }), (0, o.jsx)("div", {
-                className: c.preview,
+              }), (0, c.jsx)("div", {
+                className: o.preview,
                 style: N.default
               })]
-            }), (0, o.jsxs)("div", {
-              className: c.info,
-              children: [(0, o.jsxs)("div", {
-                className: c.top,
-                children: [m.primary_tags.length ? (0, o.jsx)(d.A, {
+            }), (0, c.jsxs)("div", {
+              className: o.info,
+              children: [(0, c.jsxs)("div", {
+                className: o.top,
+                children: [m.primary_tags.length ? (0, c.jsx)(d.A, {
                   title: m.primary_tags[m.primary_tags.length > 1 && 722 === m.primary_tags[0].id ? 1 : 0].name
-                }) : "", (0, o.jsx)("time", {
+                }) : "", (0, c.jsx)("time", {
                   dateTime: m.created,
                   children: m.created_formatted
                 })]
-              }), (0, o.jsx)("h5", {
-                className: c.title,
+              }), (0, c.jsx)("h5", {
+                className: o.title,
                 dangerouslySetInnerHTML: {
                   __html: m.title
                 }
@@ -175,7 +175,7 @@ _global.SENTRY_RELEASE = {
     24486: (e, a, t) => {
       "use strict";
       t.d(a, {
-        A: () => c
+        A: () => o
       });
       var i = t(71403),
         n = t(42756),
@@ -211,15 +211,15 @@ _global.SENTRY_RELEASE = {
           newswireBlocks: "rockstargames-sites-rockstargamesc2c8eedd25de7e186655f98b2a8d8960",
           noSpecialOrder: "rockstargames-sites-rockstargamesc0d0db9dfc71c9f4f959b9c017b1ae4b"
         },
-        c = (0, n.withGtmTracking)((e => {
+        o = (0, n.withGtmTracking)((e => {
           let {
             section: a = "",
             noSpecialOrder: t = !1,
             posts: n,
             gtmTrack: r,
-            relativeTo: c
+            relativeTo: o
           } = e;
-          const [o, m] = (0, i.useState)(null);
+          const [c, m] = (0, i.useState)(null);
           return (0, i.useEffect)((() => {
             if (!n.length) return;
             const e = {
@@ -244,7 +244,7 @@ _global.SENTRY_RELEASE = {
               index: i,
               noSpecialOrder: t,
               post: e,
-              focused: i === o
+              focused: i === c
             }, e.id)))
           })
         }))
@@ -252,7 +252,7 @@ _global.SENTRY_RELEASE = {
     49853: (e, a, t) => {
       "use strict";
       t.d(a, {
-        A: () => f
+        A: () => k
       });
       var i = t(71403),
         n = t(89779),
@@ -260,20 +260,20 @@ _global.SENTRY_RELEASE = {
         r = t(42756),
         l = t(40207),
         d = t(22778),
-        c = t(24486),
-        o = t(31955),
-        m = t.n(o),
+        o = t(24486),
+        c = t(31955),
+        m = t.n(c),
         u = t(46632);
-      const f = (0, r.withTranslations)((e => {
+      const k = (0, r.withTranslations)((e => {
         let {
           section: a = "",
           relativeTo: t = "",
           tagId: r = null,
-          metaUrl: o = "/newswire",
-          t: f
+          metaUrl: c = "/newswire",
+          t: k
         } = e;
         const {
-          track: k
+          track: f
         } = (0, l.useGtmTrack)(), [g, p] = (0, n.useSearchParams)(), {
           tagId: v = null
         } = (0, n.useParams)(), [b, w] = (0, i.useState)(v ?? r ?? g.get("tag_id")), [N, h] = (0, i.useState)(1), [y, S] = (0, i.useState)(20), [_, x] = (0, i.useState)([]), [j, A] = (0, i.useState)(null), [I, {
@@ -283,7 +283,7 @@ _global.SENTRY_RELEASE = {
           variables: {
             tagId: Number(b),
             page: N,
-            metaUrl: o,
+            metaUrl: c,
             limit: y,
             locale: "en_us"
           }
@@ -301,7 +301,7 @@ _global.SENTRY_RELEASE = {
           })()
         }), []), _.length ? (0, u.jsxs)("div", {
           "data-testid": "newswire-list",
-          children: [(0, u.jsx)(c.A, {
+          children: [(0, u.jsx)(o.A, {
             section: a,
             posts: _,
             relativeTo: t,
@@ -315,7 +315,7 @@ _global.SENTRY_RELEASE = {
                 page: String(t)
               }, {
                 replace: !0
-              }), k({
+              }), f({
                 event: "cta_learn",
                 text: "more stories",
                 element_placement: "newswire"
@@ -323,7 +323,7 @@ _global.SENTRY_RELEASE = {
             },
             disabled: T,
             context: "secondary",
-            children: f("More Stories")
+            children: k("More Stories")
           }) : ""]
         }) : null
       }))
@@ -331,7 +331,7 @@ _global.SENTRY_RELEASE = {
     35275: (e, a, t) => {
       "use strict";
       t.r(a), t.d(a, {
-        default: () => c
+        default: () => o
       });
       var i = t(71403),
         n = t(49853),
@@ -339,7 +339,7 @@ _global.SENTRY_RELEASE = {
         r = t(42756),
         l = t(79286);
       var d = t(46632);
-      const c = (0, r.withTranslations)((e => {
+      const o = (0, r.withTranslations)((e => {
         let {
           t: a
         } = e;

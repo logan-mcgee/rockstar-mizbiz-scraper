@@ -18,38 +18,38 @@ _global.SENTRY_RELEASE = {
   [658, 277], {
     3277: (e, d, n) => {
       n.r(d), n.d(d, {
-        useGSAP: () => i
+        useGSAP: () => u
       });
-      var t = n(1403),
-        a = n(6040),
-        o = n.n(a);
-      let f = "undefined" != typeof window ? t.useLayoutEffect : t.useEffect,
-        r = e => e && !Array.isArray(e) && "object" == typeof e,
-        s = [],
-        l = {},
-        c = o();
-      const i = function(e) {
-        let d = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : s,
-          n = l;
-        r(e) ? (n = e, e = null, d = "dependencies" in n ? n.dependencies : s) : r(d) && (n = d, d = "dependencies" in n ? n.dependencies : s);
+      var a = n(1403),
+        t = n(6040),
+        o = n.n(t);
+      let r = "undefined" != typeof window ? a.useLayoutEffect : a.useEffect,
+        s = e => e && !Array.isArray(e) && "object" == typeof e,
+        l = [],
+        f = {},
+        i = o();
+      const u = function(e) {
+        let d = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : l,
+          n = f;
+        s(e) ? (n = e, e = null, d = "dependencies" in n ? n.dependencies : l) : s(d) && (n = d, d = "dependencies" in n ? n.dependencies : l);
         let {
-          scope: a,
+          scope: t,
           revertOnUpdate: o
-        } = n, [i, u] = (0, t.useState)(!1);
+        } = n, [u, b] = (0, a.useState)(!1);
         e && "function" != typeof e && console.warn("First parameter must be a function or config object");
-        const y = c.context((() => {}), a),
-          p = () => y.revert(),
-          b = d && d.length && !o;
-        return f((() => {
-          if (e && y.add(e, a), !b || !i) return p
-        }), d), b && f((() => (u(!0), p)), s), {
-          context: y,
-          contextSafe: e => y.add(null, e)
+        const c = i.context((() => {}), t),
+          y = () => c.revert(),
+          p = d && d.length && !o;
+        return r((() => {
+          if (e && c.add(e, t), !p || !u) return y
+        }), d), p && r((() => (b(!0), y)), l), {
+          context: c,
+          contextSafe: e => c.add(null, e)
         }
       };
-      i.register = e => {
-        c = e
-      }, i.headless = !0
+      u.register = e => {
+        i = e
+      }, u.headless = !0
     }
   }
 ]);

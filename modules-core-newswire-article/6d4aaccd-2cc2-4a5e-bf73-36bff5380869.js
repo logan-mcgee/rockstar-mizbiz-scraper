@@ -27,10 +27,10 @@ _global.SENTRY_RELEASE = {
         s = d.n(l),
         t = d(26527),
         f = d.n(t),
-        c = d(31879),
-        i = d.n(c),
-        b = d(66713),
-        u = d.n(b),
+        b = d(31879),
+        i = d.n(b),
+        c = d(66713),
+        u = d.n(c),
         _ = d(42012);
       const w = {
         ...o,

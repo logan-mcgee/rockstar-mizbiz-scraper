@@ -31,16 +31,16 @@ _global.SENTRY_RELEASE = {
 
       function t(e, a, i) {
         var o, t = {},
-          c = null,
-          l = null;
-        for (o in void 0 !== i && (c = "" + i), void 0 !== a.key && (c = "" + a.key), void 0 !== a.ref && (l = a.ref), a) r.call(a, o) && !s.hasOwnProperty(o) && (t[o] = a[o]);
+          l = null,
+          c = null;
+        for (o in void 0 !== i && (l = "" + i), void 0 !== a.key && (l = "" + a.key), void 0 !== a.ref && (c = a.ref), a) r.call(a, o) && !s.hasOwnProperty(o) && (t[o] = a[o]);
         if (e && e.defaultProps)
           for (o in a = e.defaultProps) void 0 === t[o] && (t[o] = a[o]);
         return {
           $$typeof: n,
           type: e,
-          key: c,
-          ref: l,
+          key: l,
+          ref: c,
           props: t,
           _owner: d.current
         }
@@ -54,7 +54,7 @@ _global.SENTRY_RELEASE = {
     362: (e, a, i) => {
       "use strict";
       i.d(a, {
-        A: () => l
+        A: () => c
       });
       var o = i(784),
         n = i(407);
@@ -98,7 +98,7 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             desktop: t = null,
-            mobile: l = null
+            mobile: c = null
           } = a, [f, u] = (0, o.useState)(!0), m = {
             autoPlay: !i,
             hover: i,
@@ -108,26 +108,26 @@ _global.SENTRY_RELEASE = {
           };
           return (0, s.jsxs)("div", {
             onClick: () => u(!f),
-            children: [t && (0, s.jsx)(c, {
-              className: [l ? r.hiddenMobile : "", r.videoDesktop].join(" "),
+            children: [t && (0, s.jsx)(l, {
+              className: [c ? r.hiddenMobile : "", r.videoDesktop].join(" "),
               hash: t,
               ...m
-            }), l && (0, s.jsx)(c, {
+            }), c && (0, s.jsx)(l, {
               className: [t ? r.hiddenLarge : "", r.videoMobile].join(" "),
-              hash: l,
+              hash: c,
               ...m
             }), m.sound ? (0, s.jsx)("div", {
               className: [r.muteBtn, f ? "" : r.unMuted].join(" ")
             }) : ""]
           })
         },
-        c = e => {
+        l = e => {
           let {
             className: a,
             hash: i,
             hover: t,
-            autoPlay: c,
-            loop: l,
+            autoPlay: l,
+            loop: c,
             muted: f,
             sound: u
           } = e;
@@ -145,22 +145,22 @@ _global.SENTRY_RELEASE = {
             children: (0, s.jsx)("video", {
               ref: b,
               src: m.gifInfo.file,
-              autoPlay: c,
-              loop: l,
+              autoPlay: l,
+              loop: c,
               muted: f,
               playsInline: !0
             })
           }) : null
         },
-        l = e => {
+        c = e => {
           let {
             hash: a,
             style: i,
             title: o,
             caption: n,
             hero: d = !1,
-            loop: c = !0,
-            sound: l = !1,
+            loop: l = !0,
+            sound: c = !1,
             hover: f = !1
           } = e;
           if (!a) return null;
@@ -173,8 +173,8 @@ _global.SENTRY_RELEASE = {
             children: [(0, s.jsx)(t, {
               hashes: u,
               hover: f,
-              loop: c,
-              sound: l,
+              loop: l,
+              sound: c,
               title: o ?? "R* Games"
             }), n && (0, s.jsx)("figcaption", {
               dangerouslySetInnerHTML: {

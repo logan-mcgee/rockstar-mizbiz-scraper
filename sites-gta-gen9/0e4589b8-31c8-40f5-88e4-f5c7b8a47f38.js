@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "2f68ec5b-1ee9-4c60-a9bc-83b70e8db8df", e._sentryDebugIdIdentifier = "sentry-dbid-2f68ec5b-1ee9-4c60-a9bc-83b70e8db8df")
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "0e4589b8-31c8-40f5-88e4-f5c7b8a47f38", e._sentryDebugIdIdentifier = "sentry-dbid-0e4589b8-31c8-40f5-88e4-f5c7b8a47f38")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -3219,7 +3219,7 @@ _global.SENTRY_RELEASE = {
             } = t ?? {};
             return {
               ...s,
-              breakpointSpecificStyles: x >= _ ? a : e
+              ...x >= _ ? a : e
             }
           }), [x, t?.style, t?.mobileStyle, t?.desktopStyle]);
           return (0, u.jsxs)(y.motion.div, {

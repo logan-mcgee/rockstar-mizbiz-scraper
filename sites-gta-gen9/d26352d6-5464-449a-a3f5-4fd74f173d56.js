@@ -91,8 +91,8 @@ _global.SENTRY_RELEASE = {
       var o = s(14522),
         g = s(31879),
         m = s.n(g),
-        f = s(74401);
-      const u = e => {
+        b = s(74401);
+      const f = e => {
           let {
             impressionTracking: a,
             gtm: s = {},
@@ -104,7 +104,7 @@ _global.SENTRY_RELEASE = {
             children: t
           }) : t
         },
-        p = e => {
+        u = e => {
           let {
             to: a,
             children: s
@@ -116,7 +116,7 @@ _global.SENTRY_RELEASE = {
             children: s
           }) : s
         },
-        b = e => {
+        p = e => {
           let {
             item: a
           } = e;
@@ -144,19 +144,19 @@ _global.SENTRY_RELEASE = {
           } = e;
           return (0, r.jsx)("div", {
             style: s,
-            className: (0, f.classList)("rockstargames-sites-gta-gen9c84f82c9ba8b58c3cfcc3834228a96d7", l),
+            className: (0, b.classList)("rockstargames-sites-gta-gen9c84f82c9ba8b58c3cfcc3834228a96d7", l),
             id: d,
             "data-testid": "standard-group-of-items",
-            children: a.map((e => (0, r.jsx)(u, {
+            children: a.map((e => (0, r.jsx)(f, {
               impressionTracking: e?.impressionTracking,
               gtm: e?.gtm,
-              children: (0, r.jsx)(p, {
+              children: (0, r.jsx)(u, {
                 to: e?.to,
                 children: (0, r.jsxs)("div", {
-                  className: (0, f.classList)("rockstargames-sites-gta-gen9ea3df4f9076c3f017962a018b926c3e0", e.className),
+                  className: (0, b.classList)("rockstargames-sites-gta-gen9ea3df4f9076c3f017962a018b926c3e0", e.className),
                   style: e?.style ?? {},
                   ...e?.props,
-                  children: [e?.image || e?.videoId ? (0, r.jsx)(b, {
+                  children: [e?.image || e?.videoId ? (0, r.jsx)(p, {
                     item: e
                   }) : "", e.title || e.description ? (0, r.jsx)(t.A, {
                     item: e,

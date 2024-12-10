@@ -20,13 +20,13 @@ _global.SENTRY_RELEASE = {
       n.r(t), n.d(t, {
         default: () => M
       });
-      var s = n(71403),
-        a = n(57172),
+      var a = n(71403),
+        s = n(57172),
         r = n(77356),
         c = n(59217),
         i = n(42756),
-        o = n(58407),
-        d = n(40207),
+        d = n(58407),
+        o = n(40207),
         l = n(26177),
         g = n(96717),
         u = n(94566),
@@ -48,15 +48,15 @@ _global.SENTRY_RELEASE = {
           let {
             s: t,
             content: n,
-            refLanding: s,
-            loggedIn: a,
+            refLanding: a,
+            loggedIn: s,
             addClaim: r,
             signin: c,
             landingSlide: i
           } = e;
           return (0, b.jsxs)("div", {
             className: [t.contentContainer, t[i], t.landingSlide].join(" "),
-            ref: s,
+            ref: a,
             children: [(0, b.jsx)("img", {
               src: n.introScreen.image.sources.mobile || k,
               className: t.moduleImageMobile,
@@ -84,8 +84,8 @@ _global.SENTRY_RELEASE = {
               }), (0, b.jsx)("div", {
                 className: t.btnContainer,
                 children: (0, b.jsx)(m.A, {
-                  text: a ? n.introScreen.btnText.loggedIn : n.introScreen.btnText.loggedOut,
-                  onClick: a ? r : c
+                  text: s ? n.introScreen.btnText.loggedIn : n.introScreen.btnText.loggedOut,
+                  onClick: s ? r : c
                 })
               })]
             }), (0, b.jsx)("div", {
@@ -107,29 +107,29 @@ _global.SENTRY_RELEASE = {
         let {
           s: t,
           content: n,
-          refSuccess: a,
+          refSuccess: s,
           successSlide: r,
           characterList: c,
           linkAccountUrl: i,
-          linkMoreAccounts: o,
-          linkAccountBtn: d
+          linkMoreAccounts: d,
+          linkAccountBtn: o
         } = e;
-        const l = (0, s.createRef)(),
-          g = (0, s.createRef)(),
-          u = (0, s.createRef)(),
-          [f, m] = (0, s.useState)(),
-          [k, x] = (0, s.useState)(!1),
-          [_, w] = (0, s.useState)(),
-          [C, y] = (0, s.useState)(!1),
-          [T, N] = (0, s.useState)(!0);
-        return (0, s.useEffect)((() => {
+        const l = (0, a.createRef)(),
+          g = (0, a.createRef)(),
+          u = (0, a.createRef)(),
+          [f, m] = (0, a.useState)(),
+          [k, x] = (0, a.useState)(!1),
+          [_, w] = (0, a.useState)(),
+          [C, y] = (0, a.useState)(!1),
+          [T, N] = (0, a.useState)(!0);
+        return (0, a.useEffect)((() => {
           const e = () => {
             l?.current && x(l?.current?.scrollWidth > l?.current?.offsetWidth)
           };
           return e(), window.addEventListener("resize", e), () => {
             window.removeEventListener("resize", e)
           }
-        }), [l]), (0, s.useEffect)((() => {
+        }), [l]), (0, a.useEffect)((() => {
           m({
             nextEl: g?.current,
             prevEl: u?.current
@@ -137,7 +137,7 @@ _global.SENTRY_RELEASE = {
         }), [u?.current, g?.current]), (0, b.jsxs)("div", {
           className: [t.contentContainer, t[r], t.successSlide].join(" "),
           "data-type": "long",
-          ref: a,
+          ref: s,
           children: [(0, b.jsxs)("div", {
             className: t.topContent,
             children: [(0, b.jsxs)("div", {
@@ -177,7 +177,7 @@ _global.SENTRY_RELEASE = {
                   },
                   children: [c.map((e => (0, b.jsx)(S.qr, {
                     tabIndex: "0",
-                    children: (0, s.createElement)(j.A, {
+                    children: (0, a.createElement)(j.A, {
                       characterData: e,
                       key: e.mugshotUrl
                     })
@@ -185,10 +185,10 @@ _global.SENTRY_RELEASE = {
                     children: (0, b.jsx)(v.A, {
                       className: [t.linkMore, c.length > 0 ? t.withIcon : ""].join(" "),
                       to: i,
-                      onClick: o,
+                      onClick: d,
                       children: (0, b.jsx)("div", {
                         className: t.btnText,
-                        children: d
+                        children: o
                       })
                     })
                   }, "linkMore")]
@@ -228,15 +228,15 @@ _global.SENTRY_RELEASE = {
           let {
             s: t,
             content: n,
-            unlinkedSlide: s,
-            refUnlinked: a,
+            unlinkedSlide: a,
+            refUnlinked: s,
             linkConsoleText: r,
             platformLogin: c,
             giftId: i
           } = e;
           return (0, b.jsxs)("div", {
-            className: [t.contentContainer, t[s], t.unlinkedSlide, t.textContent].join(" "),
-            ref: a,
+            className: [t.contentContainer, t[a], t.unlinkedSlide, t.textContent].join(" "),
+            ref: s,
             children: [(0, b.jsx)("div", {
               className: t.textContent,
               children: (0, b.jsxs)("div", {
@@ -288,12 +288,12 @@ _global.SENTRY_RELEASE = {
           let {
             s: t,
             errorSlide: n,
-            content: s,
-            refError: a
+            content: a,
+            refError: s
           } = e;
           return (0, b.jsxs)("div", {
             className: [t.contentContainer, t[n], t.errorSlide, t.textContent].join(" "),
-            ref: a,
+            ref: s,
             children: [(0, b.jsxs)("div", {
               className: t.textContent,
               children: [(0, b.jsxs)("div", {
@@ -303,17 +303,17 @@ _global.SENTRY_RELEASE = {
                 }), (0, b.jsx)("div", {
                   className: t.alertText,
                   children: (0, b.jsx)("h3", {
-                    children: s.errorScreen.headline
+                    children: a.errorScreen.headline
                   })
                 })]
               }), (0, b.jsx)(m.A, {
-                text: s.errorScreen.btnText,
+                text: a.errorScreen.btnText,
                 onClick: () => window.location.reload()
               })]
             }), (0, b.jsx)("div", {
               className: t.legal,
               children: (0, b.jsx)(h, {
-                legalText: s.legalText
+                legalText: a.legalText
               })
             })]
           })
@@ -413,19 +413,19 @@ _global.SENTRY_RELEASE = {
                 headline: S?.unlinkedHeadline || ""
               }
             },
-            [O] = (0, a.useSearchParams)(),
-            R = (0, o.useRockstarToken)(),
+            [O] = (0, s.useSearchParams)(),
+            R = (0, d.useRockstarToken)(),
             {
               data: W,
               loggedIn: $
-            } = (0, d.useRockstarUser)(),
-            B = (0, o.useRockstarTokenPing)(),
+            } = (0, o.useRockstarUser)(),
+            B = (0, d.useRockstarTokenPing)(),
             H = `https://${I}.rockstargames.com/settings/linkedaccounts`,
             P = (0, i.toScLocaleString)(w),
             U = (0, g.useIntl)(),
             {
               track: q
-            } = (0, d.useGtmTrack)(),
+            } = (0, o.useGtmTrack)(),
             {
               ref: F,
               inView: z
@@ -433,54 +433,54 @@ _global.SENTRY_RELEASE = {
               threshold: .6
             }),
             D = 1280,
-            V = (0, s.createRef)(),
-            G = (0, s.createRef)(),
-            J = (0, s.createRef)(),
-            Q = (0, s.createRef)(),
-            Y = (0, s.createRef)(),
-            [K, X] = (0, s.useState)(),
-            [Z, ee] = (0, s.useState)([]),
-            [te, ne] = (0, s.useState)(!1),
-            [se, ae] = (0, s.useState)(),
-            [re, ce] = (0, s.useState)("hidden"),
-            [ie, oe] = (0, s.useState)("hidden"),
-            [de, le] = (0, s.useState)("hidden"),
-            [ge, ue] = (0, s.useState)("hidden"),
-            [fe, me] = (0, s.useState)(!1),
-            [be, he] = (0, s.useState)(T.disabled),
-            [ke, xe] = (0, s.useState)(T.landing),
-            [Se, pe] = (0, s.useState)(0),
-            [je, ve] = (0, s.useState)(0),
-            [_e, we] = (0, s.useState)(0),
-            [Ce, ye] = (0, s.useState)(0),
-            [Te, Ne] = (0, s.useState)(0),
-            [Ie, Ee] = (0, s.useState)(!1),
-            [Ae, Le] = (0, s.useState)(M.introScreen.image.sources.mobile || k),
-            [Me, Oe] = (0, s.useState)(!1),
+            V = (0, a.createRef)(),
+            G = (0, a.createRef)(),
+            J = (0, a.createRef)(),
+            Q = (0, a.createRef)(),
+            Y = (0, a.createRef)(),
+            [K, X] = (0, a.useState)(),
+            [Z, ee] = (0, a.useState)([]),
+            [te, ne] = (0, a.useState)(!1),
+            [ae, se] = (0, a.useState)(),
+            [re, ce] = (0, a.useState)("hidden"),
+            [ie, de] = (0, a.useState)("hidden"),
+            [oe, le] = (0, a.useState)("hidden"),
+            [ge, ue] = (0, a.useState)("hidden"),
+            [fe, me] = (0, a.useState)(!1),
+            [be, he] = (0, a.useState)(T.disabled),
+            [ke, xe] = (0, a.useState)(T.landing),
+            [Se, pe] = (0, a.useState)(0),
+            [je, ve] = (0, a.useState)(0),
+            [_e, we] = (0, a.useState)(0),
+            [Ce, ye] = (0, a.useState)(0),
+            [Te, Ne] = (0, a.useState)(0),
+            [Ie, Ee] = (0, a.useState)(!1),
+            [Ae, Le] = (0, a.useState)(M.introScreen.image.sources.mobile || k),
+            [Me, Oe] = (0, a.useState)(!1),
             Re = `${document.location.pathname}${document.location.search}#${j}`,
-            We = (0, i.usePrevious)(se),
+            We = (0, i.usePrevious)(ae),
             $e = (0, i.usePrevious)($),
             Be = () => {
               V.current && ve(V?.current?.scrollHeight), G.current && we(G?.current?.scrollHeight), J.current && ye(J?.current?.scrollHeight), Q.current && Ne(Q?.current?.scrollHeight)
             },
             He = (e, t) => {
               e === T.landing && (e => {
-                xe(T.landing), e && pe(je), oe("onScreen"), ce("hidden"), ue("hidden"), le("hidden")
+                xe(T.landing), e && pe(je), de("onScreen"), ce("hidden"), ue("hidden"), le("hidden")
               })(t), e === T.success && (e => {
-                xe(T.success), e && pe(_e), oe("offScreen"), ce("visible"), setTimeout((() => {
-                  oe("hidden"), ue("hidden")
+                xe(T.success), e && pe(_e), de("offScreen"), ce("visible"), setTimeout((() => {
+                  de("hidden"), ue("hidden")
                 }), 300), setTimeout((() => {
                   ce("onScreen")
                 }), 100)
               })(t), e === T.error && (e => {
-                xe(T.error), e && pe(Ce), oe("offScreen"), setTimeout((() => {
-                  oe("hidden")
+                xe(T.error), e && pe(Ce), de("offScreen"), setTimeout((() => {
+                  de("hidden")
                 }), 300), setTimeout((() => {
                   ue("onScreen")
                 }), 100)
               })(t), e === T.unlinked && (e => {
-                xe(T.unlinked), e && pe(Te), oe("offScreen"), le("visible"), setTimeout((() => {
-                  oe("hidden"), ue("hidden")
+                xe(T.unlinked), e && pe(Te), de("offScreen"), le("visible"), setTimeout((() => {
+                  de("hidden"), ue("hidden")
                 }), 300), setTimeout((() => {
                   le("onScreen")
                 }), 100)
@@ -510,7 +510,7 @@ _global.SENTRY_RELEASE = {
                 } else He(K ? T.unlinked : T.landing, !1)
               })() : "success" === be ? He(T.success, !1) : "error" === be ? He(T.error, !1) : "unlinked" === be && He(T.unlinked, !1)
             };
-          return (0, s.useEffect)((() => {
+          return (0, a.useEffect)((() => {
             const e = () => {
                 window.innerWidth > 2560 && "newswire" !== n ? Le(M.introScreen.image.sources.mobile || k) : Le(M.introScreen.image.sources.desktop || k)
               },
@@ -520,15 +520,15 @@ _global.SENTRY_RELEASE = {
             return ne(window.innerWidth <= D), e(), window.addEventListener("resize", t), () => {
               window.removeEventListener("resize", t)
             }
-          }), [ke, te, V, Q, J, G]), (0, s.useEffect)((() => {
+          }), [ke, te, V, Q, J, G]), (0, a.useEffect)((() => {
             ke === T.success && Se !== _e ? pe(_e) : ke === T.error && Se !== Ce ? pe(Ce) : ke === T.landing && Se !== je ? pe(je) : ke === T.unlinked && Se !== Te && pe(Te)
-          }), [Ce, _e, Se, Te, je]), (0, s.useEffect)((() => {
+          }), [Ce, _e, Se, Te, je]), (0, a.useEffect)((() => {
             Me || (Oe(!0), Be(), Ie && ke === T.success && pe(G?.current?.scrollHeight || 0))
-          }), [V, Q, J, G]), (0, s.useEffect)((() => {
+          }), [V, Q, J, G]), (0, a.useEffect)((() => {
             const e = W?.characters?.gtao;
             ee(e || [])
-          }), [W]), (0, s.useEffect)((() => {
-            "boolean" != typeof We && "boolean" != typeof $e || se && $ && (async () => {
+          }), [W]), (0, a.useEffect)((() => {
+            "boolean" != typeof We && "boolean" != typeof $e || ae && $ && (async () => {
               const {
                 result: e
               } = await (0, i.coreScApiFetch)("marketing/engagement/claim/exists", {
@@ -537,46 +537,46 @@ _global.SENTRY_RELEASE = {
                   giftUId: t
                 }
               });
-              X(e), ae(!1)
+              X(e), se(!1)
             })()
-          }), [se, $]), (0, s.useEffect)((() => {
-            "boolean" == typeof $ ? $ ? ae(!0) : (ae(!1), oe("onScreen")) : ae(!0)
-          }), [$]), (0, s.useEffect)((() => {
+          }), [ae, $]), (0, a.useEffect)((() => {
+            "boolean" == typeof $ ? $ ? se(!0) : (se(!1), de("onScreen")) : se(!0)
+          }), [$]), (0, a.useEffect)((() => {
             K && Z.length > 0 ? (Ee(!0), He(T.success, !0)) : K && 0 === Z.length ? He(T.unlinked, !0) : "boolean" != typeof K && K || He(T.landing, !0)
-          }), [K]), (0, s.useEffect)((() => {
+          }), [K]), (0, a.useEffect)((() => {
             z && !fe && (q({
               element_placement: "WOC",
               event: "page_section_impression",
               section_layout: $ ? "signed in" : "signed out"
             }), me(!0))
-          }), [z]), (0, s.useEffect)((() => {
+          }), [z]), (0, a.useEffect)((() => {
             "onScreen" === re && q({
               element_placement: "WOC",
               event: "alert_update",
               o_id: t,
               text: "Almost there!"
             })
-          }), [re]), (0, s.useEffect)((() => {
-            "onScreen" === de && q({
+          }), [re]), (0, a.useEffect)((() => {
+            "onScreen" === oe && q({
               element_placement: "WOC",
               event: "alert_error",
               o_id: t,
               text: "No Qualifying Character Found"
             })
-          }), [de]), (0, s.useEffect)((() => {
+          }), [oe]), (0, a.useEffect)((() => {
             "onScreen" === ge && q({
               element_placement: "event_label",
               event: "alert_error",
               o_id: t,
               text: "Something went wrong on our end. Please try again in a few minutes."
             })
-          }), [ge]), (0, s.useEffect)((() => {
+          }), [ge]), (0, a.useEffect)((() => {
             Pe()
           }), [be]), (0, b.jsxs)(b.Fragment, {
             children: [!1, (0, b.jsx)("div", {
               className: N.interestTrackerWrapper,
               children: (0, b.jsxs)(r.motion.div, {
-                className: [N.interestTracker, se && N.loader].join(" "),
+                className: [N.interestTracker, ae && N.loader].join(" "),
                 initial: {
                   opacity: 0
                 },
@@ -600,14 +600,14 @@ _global.SENTRY_RELEASE = {
                     "--engagement-image": `url(${Ae})`
                   }
                 }), (0, b.jsx)("div", {
-                  className: [N.slideContainer, se ? N.loader : ""].join(" "),
+                  className: [N.slideContainer, ae ? N.loader : ""].join(" "),
                   ref: Y,
                   "data-dev-mode": "disabled",
                   style: {
                     "--engagement-height": 0 === Se ? "200%" : `${Se}px`,
                     height: 0 !== Se && te ? `${Se}px` : "auto"
                   },
-                  children: se ? (0, b.jsx)("div", {
+                  children: ae ? (0, b.jsx)("div", {
                     className: N.spinner,
                     children: (0, b.jsx)(l.A, {
                       type: "SPINNING"
@@ -659,7 +659,7 @@ _global.SENTRY_RELEASE = {
                     }), (0, b.jsx)(C, {
                       s: N,
                       content: M,
-                      unlinkedSlide: de,
+                      unlinkedSlide: oe,
                       refUnlinked: Q,
                       linkConsoleText: U.formatMessage(u.engagement.engagement_link_console_account),
                       platformLogin: e => `https://${A}.rockstargames.com/tpa/${e}/link/?cid=${L}&lang=${P}&returnUrl=${encodeURIComponent(Re)}&accessToken=${R}`,

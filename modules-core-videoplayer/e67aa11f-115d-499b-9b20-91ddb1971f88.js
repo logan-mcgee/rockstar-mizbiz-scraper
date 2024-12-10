@@ -30,23 +30,23 @@ _global.SENTRY_RELEASE = {
           __source: !0
         };
 
-      function c(e, a, t) {
+      function i(e, a, t) {
         var r, n = {},
-          c = null,
-          i = null;
-        for (r in void 0 !== t && (c = "" + t), void 0 !== a.key && (c = "" + a.key), void 0 !== a.ref && (i = a.ref), a) l.call(a, r) && !o.hasOwnProperty(r) && (n[r] = a[r]);
+          i = null,
+          c = null;
+        for (r in void 0 !== t && (i = "" + t), void 0 !== a.key && (i = "" + a.key), void 0 !== a.ref && (c = a.ref), a) l.call(a, r) && !o.hasOwnProperty(r) && (n[r] = a[r]);
         if (e && e.defaultProps)
           for (r in a = e.defaultProps) void 0 === n[r] && (n[r] = a[r]);
         return {
           $$typeof: s,
           type: e,
-          key: c,
-          ref: i,
+          key: i,
+          ref: c,
           props: n,
           _owner: d.current
         }
       }
-      a.Fragment = n, a.jsx = c, a.jsxs = c
+      a.Fragment = n, a.jsx = i, a.jsxs = i
     },
     6632: (e, a, t) => {
       "use strict";
@@ -68,20 +68,20 @@ _global.SENTRY_RELEASE = {
         inputs: "rockstargames-modules-core-videoplayerf33bd58bdfa63206fe9444fde46261d1",
         bg: "rockstargames-modules-core-videoplayerdb2f50238f9208ec72ef210e47b60e3b"
       };
-      var c = t(6632);
-      const i = (0, s.withTranslations)((e => {
+      var i = t(6632);
+      const c = (0, s.withTranslations)((e => {
           let {
             agegateValue: a,
             options: t = {},
             ga: l = {},
-            t: i
+            t: c
           } = e;
           const {
             track: u
           } = (0, r.useGtmTrack)(), {
             mutateLSSettings: f
-          } = (0, s.useRockstarWebLSSettings)(), [g, p] = (0, n.useState)(null), m = (0, n.createRef)(), _ = (0, n.createRef)(), y = (0, n.createRef)(), {
-            style: b
+          } = (0, s.useRockstarWebLSSettings)(), [g, p] = (0, n.useState)(null), b = (0, n.createRef)(), m = (0, n.createRef)(), _ = (0, n.createRef)(), {
+            style: y
           } = t;
           (0, n.useEffect)((() => {
             u({
@@ -89,27 +89,27 @@ _global.SENTRY_RELEASE = {
               element_placement: l.element_placement ?? ""
             })
           }), []);
-          return !1 === a ? (0, c.jsxs)("div", {
+          return !1 === a ? (0, i.jsxs)("div", {
             className: o.agegate,
-            style: b,
-            children: [t?.header, (0, c.jsx)("h2", {
-              children: i("agegate_fail")
+            style: y,
+            children: [t?.header, (0, i.jsx)("h2", {
+              children: c("agegate_fail")
             })]
-          }) : null === a ? (0, c.jsxs)("div", {
+          }) : null === a ? (0, i.jsxs)("div", {
             className: o.agegate,
-            style: b,
-            children: [t?.header, (0, c.jsx)("div", {
+            style: y,
+            children: [t?.header, (0, i.jsx)("div", {
               className: o.bg,
               style: t?.bgImg ? {
                 backgroundImage: `url(${t.bgImg})`
               } : {}
-            }), !1 === g ? (0, c.jsx)("h5", {
+            }), !1 === g ? (0, i.jsx)("h5", {
               className: o.error,
-              children: i("Please enter a valid age")
-            }) : "", (0, c.jsxs)("form", {
+              children: c("Please enter a valid age")
+            }) : "", (0, i.jsxs)("form", {
               onSubmit: async e => {
                 e.preventDefault();
-                const a = `${y.current.value}-${m.current.value.padStart(2,0)}-${_.current.value.padStart(2,0)}`,
+                const a = `${_.current.value}-${b.current.value.padStart(2,0)}-${m.current.value.padStart(2,0)}`,
                   t = d()(a, "YYYY-MM-DD", !0).isValid();
                 if (p(t), t) {
                   const e = d()().diff(a, "years") >= 17;
@@ -126,39 +126,39 @@ _global.SENTRY_RELEASE = {
                   })
                 }
               },
-              children: [(0, c.jsx)("h5", {
-                children: i("agegate_header")
-              }), (0, c.jsxs)("div", {
+              children: [(0, i.jsx)("h5", {
+                children: c("agegate_header")
+              }), (0, i.jsxs)("div", {
                 className: o.inputs,
-                children: [(0, c.jsxs)("label", {
+                children: [(0, i.jsxs)("label", {
                   htmlFor: "monthInput",
-                  children: [i("Month"), (0, c.jsx)("input", {
+                  children: [c("Month"), (0, i.jsx)("input", {
                     id: "monthInput",
-                    ref: m,
-                    placeholder: i("MM"),
+                    ref: b,
+                    placeholder: c("MM"),
                     maxLength: 2
                   })]
-                }), (0, c.jsxs)("label", {
+                }), (0, i.jsxs)("label", {
                   htmlFor: "dayInput",
-                  children: [i("Day"), (0, c.jsx)("input", {
+                  children: [c("Day"), (0, i.jsx)("input", {
                     id: "dayInput",
-                    ref: _,
-                    placeholder: i("DD"),
+                    ref: m,
+                    placeholder: c("DD"),
                     maxLength: 2
                   })]
-                }), (0, c.jsxs)("label", {
+                }), (0, i.jsxs)("label", {
                   htmlFor: "yearInput",
-                  children: [i("Year"), (0, c.jsx)("input", {
+                  children: [c("Year"), (0, i.jsx)("input", {
                     id: "yearInput",
-                    ref: y,
+                    ref: _,
                     className: o.year,
-                    placeholder: i("YYYY"),
+                    placeholder: c("YYYY"),
                     maxLength: 4
                   })]
-                }), (0, c.jsx)("button", {
+                }), (0, i.jsx)("button", {
                   type: "submit",
                   className: o.submit,
-                  children: i("SUBMIT")
+                  children: c("SUBMIT")
                 })]
               })]
             }), t?.footer]
@@ -176,7 +176,7 @@ _global.SENTRY_RELEASE = {
               n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
             const l = e?.agegatePass ?? null,
               d = a?.agegate_pass ?? l ?? null;
-            return !d && t ? null : d ? r : (0, c.jsx)(i, {
+            return !d && t ? null : d ? r : (0, i.jsx)(c, {
               agegateValue: d,
               options: s,
               ga: n

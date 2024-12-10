@@ -20,11 +20,11 @@ _global.SENTRY_RELEASE = {
       "use strict";
       var t = a(17254);
 
-      function o() {}
-
       function d() {}
-      d.resetWarningCache = o, e.exports = function() {
-        function e(e, n, a, o, d, r) {
+
+      function o() {}
+      o.resetWarningCache = d, e.exports = function() {
+        function e(e, n, a, d, o, r) {
           if (r !== t) {
             var s = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
             throw s.name = "Invariant Violation", s
@@ -55,8 +55,8 @@ _global.SENTRY_RELEASE = {
           oneOfType: n,
           shape: n,
           exact: n,
-          checkPropTypes: d,
-          resetWarningCache: o
+          checkPropTypes: o,
+          resetWarningCache: d
         };
         return a.PropTypes = a, a
       }

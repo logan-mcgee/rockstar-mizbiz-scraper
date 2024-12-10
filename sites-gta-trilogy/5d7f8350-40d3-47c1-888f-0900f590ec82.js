@@ -32,9 +32,9 @@ _global.SENTRY_RELEASE = {
         useEventListener: () => v,
         useFetch: () => y,
         useHover: () => h,
-        useImageOnLoad: () => p,
-        useIntersectionObserver: () => m,
-        useInterval: () => b,
+        useImageOnLoad: () => b,
+        useIntersectionObserver: () => p,
+        useInterval: () => m,
         useIsClient: () => k,
         useIsFirstRender: () => S,
         useIsMounted: () => E,
@@ -132,7 +132,7 @@ _global.SENTRY_RELEASE = {
           }, h = (0, o.useCallback)((() => {
             c !== u ? s ? l() : d() : v()
           }), [c, u, d, l, s, v]);
-          return b(h, g ? n : null), i ? [c, {
+          return m(h, g ? n : null), i ? [c, {
             start: w,
             stop: v,
             reset: y
@@ -304,7 +304,7 @@ _global.SENTRY_RELEASE = {
           const [t, n] = (0, o.useState)(!1);
           return v("mouseenter", (() => n(!0)), e), v("mouseleave", (() => n(!1)), e), t
         },
-        p = function() {
+        b = function() {
           const [e, t] = (0, o.useState)(!1);
           return {
             handleImageOnLoad: () => {
@@ -323,7 +323,7 @@ _global.SENTRY_RELEASE = {
             }
           }
         },
-        m = function(e, t) {
+        p = function(e, t) {
           let {
             threshold: n = 0,
             root: r = null,
@@ -345,7 +345,7 @@ _global.SENTRY_RELEASE = {
             return o.observe(t), () => o.disconnect()
           }), [null == e ? void 0 : e.current, JSON.stringify(n), r, s, c]), i
         },
-        b = function(e, t) {
+        m = function(e, t) {
           const n = (0, o.useRef)(e);
           C((() => {
             n.current = e

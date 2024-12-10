@@ -18,7 +18,7 @@ _global.SENTRY_RELEASE = {
   [5678], {
     75678: (e, a, d) => {
       d.r(a), d.d(a, {
-        default: () => c
+        default: () => b
       });
       var s = d(71403),
         t = d(25076),
@@ -27,7 +27,7 @@ _global.SENTRY_RELEASE = {
         r = d(70396),
         l = d(42756),
         f = d(46632);
-      const c = (0, l.withTranslations)((e => {
+      const b = (0, l.withTranslations)((e => {
         let {
           t: a
         } = e;

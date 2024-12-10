@@ -22,30 +22,30 @@ _global.SENTRY_RELEASE = {
         o = Symbol.for("react.fragment"),
         n = Object.prototype.hasOwnProperty,
         d = s.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        f = {
+        l = {
           key: !0,
           ref: !0,
           __self: !0,
           __source: !0
         };
 
-      function l(e, a, r) {
+      function f(e, a, r) {
         var s, o = {},
-          l = null,
+          f = null,
           c = null;
-        for (s in void 0 !== r && (l = "" + r), void 0 !== a.key && (l = "" + a.key), void 0 !== a.ref && (c = a.ref), a) n.call(a, s) && !f.hasOwnProperty(s) && (o[s] = a[s]);
+        for (s in void 0 !== r && (f = "" + r), void 0 !== a.key && (f = "" + a.key), void 0 !== a.ref && (c = a.ref), a) n.call(a, s) && !l.hasOwnProperty(s) && (o[s] = a[s]);
         if (e && e.defaultProps)
           for (s in a = e.defaultProps) void 0 === o[s] && (o[s] = a[s]);
         return {
           $$typeof: t,
           type: e,
-          key: l,
+          key: f,
           ref: c,
           props: o,
           _owner: d.current
         }
       }
-      a.Fragment = o, a.jsx = l, a.jsxs = l
+      a.Fragment = o, a.jsx = f, a.jsxs = f
     },
     46632: (e, a, r) => {
       e.exports = r(26516)

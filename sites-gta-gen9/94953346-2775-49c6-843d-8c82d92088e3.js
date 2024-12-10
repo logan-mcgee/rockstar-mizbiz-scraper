@@ -19,7 +19,7 @@ _global.SENTRY_RELEASE = {
     76131: (e, t, i) => {
       i.r(t), i.d(t, {
         Highlights: () => x,
-        HighlightsItem: () => m
+        HighlightsItem: () => b
       });
       var a = i(71403),
         s = i(59217),
@@ -78,7 +78,7 @@ _global.SENTRY_RELEASE = {
             }
           }
         },
-        m = (0, h.withIntl)((e => {
+        b = (0, h.withIntl)((e => {
           let {
             heading: t,
             title: i,
@@ -116,13 +116,13 @@ _global.SENTRY_RELEASE = {
               ref: u,
               className: _.summaryText,
               dangerouslySetInnerHTML: {
-                __html: (m = s, m ? m.split(/\r?\n/).filter((e => e.trim())).map((e => `<p>${e}</p>`)).join("") : "")
+                __html: (b = s, b ? b.split(/\r?\n/).filter((e => e.trim())).map((e => `<p>${e}</p>`)).join("") : "")
               }
             })]
           });
-          var m
+          var b
         }), d),
-        b = {
+        m = {
           pillBtn: "rockstargames-sites-gta-gen9fbf2653dcb83a5319042540c5a7bfded",
           selected: "rockstargames-sites-gta-gen9fcab921449e395e9d9b91430f2cf93da",
           mainContainer: "rockstargames-sites-gta-gen9b074cd4a4ec387dfeb02a44613beade3",
@@ -191,11 +191,11 @@ _global.SENTRY_RELEASE = {
               }))
             }
           })), [C]), t?.length ? (0, p.jsxs)("section", {
-            className: b.mainContainer,
+            className: m.mainContainer,
             ref: _,
             children: [(0, p.jsxs)("div", {
               ref: M,
-              className: b.mainCarousel,
+              className: m.mainCarousel,
               onMouseEnter: () => {
                 y(!0)
               },
@@ -207,7 +207,7 @@ _global.SENTRY_RELEASE = {
                   ref: B,
                   type: "button",
                   "aria-label": d.formatMessage(o.cph_highlights_previous),
-                  className: [b.controlBtn, b.prevBtn, k ? b.fadeIn : b.fadeOut].join(" "),
+                  className: [m.controlBtn, m.prevBtn, k ? m.fadeIn : m.fadeOut].join(" "),
                   onClick: () => {
                     f({
                       event: "carousel_previous",
@@ -219,7 +219,7 @@ _global.SENTRY_RELEASE = {
                   ref: P,
                   type: "button",
                   "aria-label": d.formatMessage(o.cph_highlights_next),
-                  className: [b.controlBtn, b.nextBtn, k ? b.fadeIn : b.fadeOut].join(" "),
+                  className: [m.controlBtn, m.nextBtn, k ? m.fadeIn : m.fadeOut].join(" "),
                   onClick: () => {
                     f({
                       event: "carousel_next",
@@ -274,9 +274,9 @@ _global.SENTRY_RELEASE = {
                 }, `${e.title}-${t}`)))
               })]
             }), (0, p.jsxs)("div", {
-              className: b.contentContainer,
+              className: m.contentContainer,
               children: [(0, p.jsx)("div", {
-                className: b.carouselContainer,
+                className: m.carouselContainer,
                 children: (0, p.jsx)(r.RC, {
                   onInit: e => {
                     R.current = e
@@ -299,7 +299,7 @@ _global.SENTRY_RELEASE = {
                           card_name: t[e]?.title
                         }), j(e), N.current?.slideTo(e), R.current?.slideTo(e)
                       })(i),
-                      className: `${i===w?b.active:""}`,
+                      className: `${i===w?m.active:""}`,
                       "aria-label": e.title,
                       "aria-current": i === w,
                       children: (0, p.jsx)("img", {
@@ -310,8 +310,8 @@ _global.SENTRY_RELEASE = {
                   }, e.key)))
                 })
               }), (0, p.jsx)("div", {
-                className: b.textContainer,
-                children: t.map(((e, a) => (0, p.jsx)(m, {
+                className: m.textContainer,
+                children: t.map(((e, a) => (0, p.jsx)(b, {
                   heading: i,
                   title: e.title,
                   summary: e.summary,

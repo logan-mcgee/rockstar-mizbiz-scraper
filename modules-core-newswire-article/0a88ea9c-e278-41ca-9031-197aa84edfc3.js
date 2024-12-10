@@ -20,33 +20,33 @@ _global.SENTRY_RELEASE = {
       var t = [],
         a = function() {
           var e, n;
-          for (n = 0; n < t.length; n += 1) e = t[n], l(e) && (e.style.maxWidth = "", r(e, e.clientHeight, 0, e.clientWidth))
+          for (n = 0; n < t.length; n += 1) e = t[n], d(e) && (e.style.maxWidth = "", r(e, e.clientHeight, 0, e.clientWidth))
         },
         r = function(e, n, t, a) {
-          var l;
-          t >= a ? e.style.maxWidth = a + "px" : (l = (t + a) / 2, e.style.maxWidth = l + "px", e.clientHeight > n ? r(e, n, l + 1, a) : r(e, n, t + 1, l))
+          var d;
+          t >= a ? e.style.maxWidth = a + "px" : (d = (t + a) / 2, e.style.maxWidth = d + "px", e.clientHeight > n ? r(e, n, d + 1, a) : r(e, n, t + 1, d))
         },
-        l = function(e) {
-          var n, t, a, r, l;
-          return l = e.innerHTML, a = e.innerHTML.split(" "), (r = document.createElement("span")).id = "element-first-word", r.innerHTML = a[0], a = a.slice(1), e.innerHTML = "", e.appendChild(r), e.innerHTML += " " + a.join(" "), n = (r = document.getElementById("element-first-word")).offsetHeight, t = e.offsetHeight, e.innerHTML = l, t - 10 > n
+        d = function(e) {
+          var n, t, a, r, d;
+          return d = e.innerHTML, a = e.innerHTML.split(" "), (r = document.createElement("span")).id = "element-first-word", r.innerHTML = a[0], a = a.slice(1), e.innerHTML = "", e.appendChild(r), e.innerHTML += " " + a.join(" "), n = (r = document.getElementById("element-first-word")).offsetHeight, t = e.offsetHeight, e.innerHTML = d, t - 10 > n
         };
       n.balanceText = function(e) {
         e ? function(e) {
           selectorArray = e.split(",");
           for (var n = 0; n < selectorArray.length; n += 1)
             for (var a = document.querySelectorAll(selectorArray[n].trim()), r = 0; r < a.length; r += 1) {
-              var l = a[r];
-              t.push(l)
+              var d = a[r];
+              t.push(d)
             }
         }(e) : t = document.querySelectorAll(".balance-text"), a();
-        var n, r, l, d, o = (n = function() {
+        var n, r, d, l, o = (n = function() {
           a()
         }, r = 100, function() {
           var e = this,
             t = arguments,
-            a = l && !d;
-          clearTimeout(d), d = setTimeout((function() {
-            d = null, l || n.apply(e, t)
+            a = d && !l;
+          clearTimeout(l), l = setTimeout((function() {
+            l = null, d || n.apply(e, t)
           }), r), a && n.apply(e, t)
         });
         window.addEventListener("resize", o)

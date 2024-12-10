@@ -20,9 +20,9 @@ _global.SENTRY_RELEASE = {
       var n;
       ! function() {
         "use strict";
-        var r = {}.hasOwnProperty;
+        var a = {}.hasOwnProperty;
 
-        function a() {
+        function r() {
           for (var e = "", t = 0; t < arguments.length; t++) {
             var n = arguments[t];
             n && (e = d(e, o(n)))
@@ -33,18 +33,18 @@ _global.SENTRY_RELEASE = {
         function o(e) {
           if ("string" == typeof e || "number" == typeof e) return e;
           if ("object" != typeof e) return "";
-          if (Array.isArray(e)) return a.apply(null, e);
+          if (Array.isArray(e)) return r.apply(null, e);
           if (e.toString !== Object.prototype.toString && !e.toString.toString().includes("[native code]")) return e.toString();
           var t = "";
-          for (var n in e) r.call(e, n) && e[n] && (t = d(t, n));
+          for (var n in e) a.call(e, n) && e[n] && (t = d(t, n));
           return t
         }
 
         function d(e, t) {
           return t ? e ? e + " " + t : e + t : e
         }
-        e.exports ? (a.default = a, e.exports = a) : void 0 === (n = function() {
-          return a
+        e.exports ? (r.default = r, e.exports = r) : void 0 === (n = function() {
+          return r
         }.apply(t, [])) || (e.exports = n)
       }()
     }

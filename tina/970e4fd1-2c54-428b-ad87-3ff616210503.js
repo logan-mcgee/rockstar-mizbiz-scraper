@@ -31,15 +31,15 @@ _global.SENTRY_RELEASE = {
       function s(e, t, r) {
         var n, s = {},
           u = null,
-          f = null;
-        for (n in void 0 !== r && (u = "" + r), void 0 !== t.key && (u = "" + t.key), void 0 !== t.ref && (f = t.ref), t) l.call(t, n) && !d.hasOwnProperty(n) && (s[n] = t[n]);
+          i = null;
+        for (n in void 0 !== r && (u = "" + r), void 0 !== t.key && (u = "" + t.key), void 0 !== t.ref && (i = t.ref), t) l.call(t, n) && !d.hasOwnProperty(n) && (s[n] = t[n]);
         if (e && e.defaultProps)
           for (n in t = e.defaultProps) void 0 === s[n] && (s[n] = t[n]);
         return {
           $$typeof: a,
           type: e,
           key: u,
-          ref: f,
+          ref: i,
           props: s,
           _owner: o.current
         }
@@ -74,8 +74,8 @@ _global.SENTRY_RELEASE = {
     },
     8235: (e, t, r) => {
       r.r(t), r.d(t, {
-        parse: () => f,
-        previewSrc: () => i,
+        parse: () => i,
+        previewSrc: () => f,
         uploadDir: () => c,
         useGenerateCdnSource: () => u,
         useGetCdnSource: () => s,
@@ -99,17 +99,17 @@ _global.SENTRY_RELEASE = {
             desktop: d = null,
             ariaLabel: s = null,
             sources: u = null,
-            prod: f = null
+            prod: i = null
           } = e;
-          const i = (0, a.useLocale)(),
+          const f = (0, a.useLocale)(),
             {
               meta: c = {}
             } = (0, l.i)() ?? {},
-            [p, _] = (0, n.useState)(f ?? c?.cdn ?? c?.prod ?? !0);
+            [p, b] = (0, n.useState)(i ?? c?.cdn ?? c?.prod ?? !0);
           (0, n.useEffect)((() => {
-            _(f ?? c?.cdn ?? c?.prod ?? !0)
-          }), [f, c]);
-          const b = (0, n.useCallback)((e => {
+            b(i ?? c?.cdn ?? c?.prod ?? !0)
+          }), [i, c]);
+          const _ = (0, n.useCallback)((e => {
             const t = null !== u,
               r = e?.previewSrc ?? e ?? null;
             if (null === r || "string" != typeof r) return null;
@@ -121,8 +121,8 @@ _global.SENTRY_RELEASE = {
             alt: t,
             ariaLabel: s,
             src: {
-              mobile: b(u?.[i]?.mobile ?? u?.en_us?.mobile ?? r),
-              desktop: b(u?.[i]?.desktop ?? u?.en_us?.desktop ?? d)
+              mobile: _(u?.[f]?.mobile ?? u?.en_us?.mobile ?? r),
+              desktop: _(u?.[f]?.desktop ?? u?.en_us?.desktop ?? d)
             }
           }
         },
@@ -144,8 +144,8 @@ _global.SENTRY_RELEASE = {
             return e ? e?.startsWith("http") ? o(e) : o(`${(0,a.getCdnPrefix)(n)}${e}`) : null
           }), [t])
         },
-        f = e => e.full_src,
-        i = e => {
+        i = e => e.full_src,
+        f = e => {
           const t = e?.previewSrc ?? e?.preview_src ?? e;
           return t?.startsWith("http") ? t : `${(0,a.getCdnPrefix)(!1)}${t}`
         },

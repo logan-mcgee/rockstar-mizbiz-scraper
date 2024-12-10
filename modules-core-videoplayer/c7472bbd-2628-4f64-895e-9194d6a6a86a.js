@@ -25,26 +25,26 @@ _global.SENTRY_RELEASE = {
         r = a(8407),
         s = a(6717),
         i = a(2757),
-        c = a(6454),
+        b = a(6454),
         u = a(470),
-        f = a(6632);
-      const g = window?.env?.graphEnv ?? "prod",
-        b = () => {
+        c = a(6632);
+      const f = window?.env?.graphEnv ?? "prod",
+        g = () => {
           const [e, d] = (0, t.useSearchParams)(), [{
             iso: a
-          }] = (0, s.getLocale)(), o = "true" === e.get("autoplay"), n = e.get("id"), r = e.get("resolution") ?? null, g = e.get("locale") ?? "en_us", b = Number(e.get("start") ?? 0);
-          return (0, f.jsx)(l.ResizeProvider, {
-            children: (0, f.jsx)(i.GtmProvider, {
-              children: (0, f.jsx)(s.IntlProvider, {
-                locales: c,
+          }] = (0, s.getLocale)(), o = "true" === e.get("autoplay"), n = e.get("id"), r = e.get("resolution") ?? null, f = e.get("locale") ?? "en_us", g = Number(e.get("start") ?? 0);
+          return (0, c.jsx)(l.ResizeProvider, {
+            children: (0, c.jsx)(i.GtmProvider, {
+              children: (0, c.jsx)(s.IntlProvider, {
+                locales: b,
                 lang: a,
-                children: (0, f.jsx)(u.A, {
+                children: (0, c.jsx)(u.A, {
                   autoplay: o,
                   context: "embed",
-                  locale: g,
+                  locale: f,
                   id: n,
                   resolution: r,
-                  start: b,
+                  start: g,
                   wrapper: !1,
                   videoChangeCallback: e => {
                     d({
@@ -58,17 +58,17 @@ _global.SENTRY_RELEASE = {
             })
           })
         },
-        p = (0, r.withRockstarGraph)((() => (0, f.jsx)(t.BrowserRouter, {
-          children: (0, f.jsx)(b, {})
+        p = (0, r.withRockstarGraph)((() => (0, c.jsx)(t.BrowserRouter, {
+          children: (0, c.jsx)(g, {})
         })), {
-          env: g
+          env: f
         }),
         y = window?.env?.gtmId ?? null;
       (0, o.init)({
         id: y
       });
       const w = document.createElement("main");
-      document.body.appendChild(w), (0, n.H)(w).render((0, f.jsx)(p, {}))
+      document.body.appendChild(w), (0, n.H)(w).render((0, c.jsx)(p, {}))
     }
   }
 ]);

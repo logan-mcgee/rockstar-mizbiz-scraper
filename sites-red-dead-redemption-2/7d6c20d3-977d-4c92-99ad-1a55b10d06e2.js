@@ -80,7 +80,7 @@ _global.SENTRY_RELEASE = {
             track: u
           } = (0, s.useGtmTrack)(), {
             mutateLSSettings: f
-          } = (0, n.useRockstarWebLSSettings)(), [g, p] = (0, r.useState)(null), _ = (0, r.createRef)(), m = (0, r.createRef)(), b = (0, r.createRef)(), {
+          } = (0, n.useRockstarWebLSSettings)(), [g, p] = (0, r.useState)(null), _ = (0, r.createRef)(), b = (0, r.createRef)(), m = (0, r.createRef)(), {
             style: y
           } = a;
           (0, r.useEffect)((() => {
@@ -109,7 +109,7 @@ _global.SENTRY_RELEASE = {
             }) : "", (0, i.jsxs)("form", {
               onSubmit: async e => {
                 e.preventDefault();
-                const t = `${b.current.value}-${_.current.value.padStart(2,0)}-${m.current.value.padStart(2,0)}`,
+                const t = `${m.current.value}-${_.current.value.padStart(2,0)}-${b.current.value.padStart(2,0)}`,
                   a = l()(t, "YYYY-MM-DD", !0).isValid();
                 if (p(a), a) {
                   const e = l()().diff(t, "years") >= 17;
@@ -142,7 +142,7 @@ _global.SENTRY_RELEASE = {
                   htmlFor: "dayInput",
                   children: [c("Day"), (0, i.jsx)("input", {
                     id: "dayInput",
-                    ref: m,
+                    ref: b,
                     placeholder: c("DD"),
                     maxLength: 2
                   })]
@@ -150,7 +150,7 @@ _global.SENTRY_RELEASE = {
                   htmlFor: "yearInput",
                   children: [c("Year"), (0, i.jsx)("input", {
                     id: "yearInput",
-                    ref: b,
+                    ref: m,
                     className: o.year,
                     placeholder: c("YYYY"),
                     maxLength: 4

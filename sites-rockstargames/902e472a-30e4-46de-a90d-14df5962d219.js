@@ -19,9 +19,9 @@ _global.SENTRY_RELEASE = {
     300: (e, t, i) => {
       i.r(t), i.d(t, {
         InView: () => u,
-        defaultFallbackInView: () => c,
-        observe: () => h,
-        useInView: () => f
+        defaultFallbackInView: () => h,
+        observe: () => c,
+        useInView: () => b
       });
       var n = i(71403),
         r = Object.defineProperty,
@@ -38,11 +38,11 @@ _global.SENTRY_RELEASE = {
         d = 0,
         l = void 0;
 
-      function c(e) {
+      function h(e) {
         l = e
       }
 
-      function h(e, t, i = {}, n = l) {
+      function c(e, t, i = {}, n = l) {
         if (void 0 === window.IntersectionObserver && void 0 !== n) {
           const r = e.getBoundingClientRect();
           return t(n, {
@@ -58,7 +58,7 @@ _global.SENTRY_RELEASE = {
         const {
           id: r,
           observer: s,
-          elements: c
+          elements: h
         } = function(e) {
           const t = function(e) {
             return Object.keys(e).sort().filter((t => void 0 !== e[t])).map((t => {
@@ -86,10 +86,10 @@ _global.SENTRY_RELEASE = {
             }, o.set(t, i)
           }
           return i
-        }(i), h = c.get(e) || [];
-        return c.has(e) || c.set(e, h), h.push(t), s.observe(e),
+        }(i), c = h.get(e) || [];
+        return h.has(e) || h.set(e, c), c.push(t), s.observe(e),
           function() {
-            h.splice(h.indexOf(t), 1), 0 === h.length && (c.delete(e), s.unobserve(e)), 0 === c.size && (s.disconnect(), o.delete(r))
+            c.splice(c.indexOf(t), 1), 0 === c.length && (h.delete(e), s.unobserve(e)), 0 === h.size && (s.disconnect(), o.delete(r))
           }
       }
       var u = class extends n.Component {
@@ -131,7 +131,7 @@ _global.SENTRY_RELEASE = {
             delay: r,
             fallbackInView: s
           } = this.props;
-          this._unobserveCb = h(this.node, this.handleChange, {
+          this._unobserveCb = c(this.node, this.handleChange, {
             threshold: e,
             root: t,
             rootMargin: i,
@@ -166,19 +166,19 @@ _global.SENTRY_RELEASE = {
             onChange: a,
             skip: d,
             trackVisibility: l,
-            delay: c,
-            initialInView: h,
+            delay: h,
+            initialInView: c,
             fallbackInView: u,
-            ...f
+            ...b
           } = this.props;
           return n.createElement(t || "div", {
             ref: this.handleNode,
-            ...f
+            ...b
           }, e)
         }
       };
 
-      function f({
+      function b({
         threshold: e,
         delay: t,
         trackVisibility: i,
@@ -188,21 +188,21 @@ _global.SENTRY_RELEASE = {
         skip: a,
         initialInView: d,
         fallbackInView: l,
-        onChange: c
+        onChange: h
       } = {}) {
         var u;
-        const [f, p] = n.useState(null), b = n.useRef(), [g, y] = n.useState({
+        const [b, p] = n.useState(null), f = n.useRef(), [g, y] = n.useState({
           inView: !!d,
           entry: void 0
         });
-        b.current = c, n.useEffect((() => {
-          if (a || !f) return;
+        f.current = h, n.useEffect((() => {
+          if (a || !b) return;
           let n;
-          return n = h(f, ((e, t) => {
+          return n = c(b, ((e, t) => {
             y({
               inView: e,
               entry: t
-            }), b.current && b.current(e, t), t.isIntersecting && o && n && (n(), n = void 0)
+            }), f.current && f.current(e, t), t.isIntersecting && o && n && (n(), n = void 0)
           }), {
             root: s,
             rootMargin: r,
@@ -212,10 +212,10 @@ _global.SENTRY_RELEASE = {
           }, l), () => {
             n && n()
           }
-        }), [Array.isArray(e) ? e.toString() : e, f, s, r, o, a, i, l, t]);
+        }), [Array.isArray(e) ? e.toString() : e, b, s, r, o, a, i, l, t]);
         const v = null == (u = g.entry) ? void 0 : u.target,
           w = n.useRef();
-        f || !v || o || a || w.current === v || (w.current = v, y({
+        b || !v || o || a || w.current === v || (w.current = v, y({
           inView: !!d,
           entry: void 0
         }));
