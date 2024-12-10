@@ -16,27 +16,27 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_utils = self.webpackChunk_rockstargames_utils || []).push([
   [244], {
-    6516: (e, n, a) => {
+    6516: (e, n, i) => {
       "use strict";
-      var i = a(1403),
-        t = Symbol.for("react.element"),
+      var t = i(1403),
+        a = Symbol.for("react.element"),
         o = (Symbol.for("react.fragment"), Object.prototype.hasOwnProperty),
-        r = i.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        r = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         s = {
           key: !0,
           ref: !0,
           __self: !0,
           __source: !0
         };
-      n.jsx = function(e, n, a) {
-        var i, l = {},
+      n.jsx = function(e, n, i) {
+        var t, l = {},
           d = null,
           c = null;
-        for (i in void 0 !== a && (d = "" + a), void 0 !== n.key && (d = "" + n.key), void 0 !== n.ref && (c = n.ref), n) o.call(n, i) && !s.hasOwnProperty(i) && (l[i] = n[i]);
+        for (t in void 0 !== i && (d = "" + i), void 0 !== n.key && (d = "" + n.key), void 0 !== n.ref && (c = n.ref), n) o.call(n, t) && !s.hasOwnProperty(t) && (l[t] = n[t]);
         if (e && e.defaultProps)
-          for (i in n = e.defaultProps) void 0 === l[i] && (l[i] = n[i]);
+          for (t in n = e.defaultProps) void 0 === l[t] && (l[t] = n[t]);
         return {
-          $$typeof: t,
+          $$typeof: a,
           type: e,
           key: d,
           ref: c,
@@ -45,17 +45,17 @@ _global.SENTRY_RELEASE = {
         }
       }
     },
-    6632: (e, n, a) => {
+    6632: (e, n, i) => {
       "use strict";
-      e.exports = a(6516)
+      e.exports = i(6516)
     },
-    1359: (e, n, a) => {
+    1359: (e, n, i) => {
       "use strict";
-      a.d(n, {
+      i.d(n, {
         A: () => d
       });
-      var i = a(1482),
-        t = a.n(i);
+      var t = i(1482),
+        a = i.n(t);
       const o = [{
           id: "prod",
           sites: {
@@ -70,18 +70,18 @@ _global.SENTRY_RELEASE = {
           let e;
           const {
             location: n
-          } = window, a = n.hostname.substring(0, n.hostname.indexOf(".rockstargames.com")), i = o.findIndex((n => Object.entries(n.sites).findIndex((n => {
-            let [i, t] = n;
-            return t === a && (e = {
-              site: i,
-              subDomain: t
+          } = window, i = n.hostname.substring(0, n.hostname.indexOf(".rockstargames.com")), t = o.findIndex((n => Object.entries(n.sites).findIndex((n => {
+            let [t, a] = n;
+            return a === i && (e = {
+              site: t,
+              subDomain: a
             }, !0)
-          })) >= 0)), t = o[i >= 0 ? i : 0];
+          })) >= 0)), a = o[t >= 0 ? t : 0];
           return e || (e = {
             site: "www",
             subDomain: "local"
           }), {
-            ...t,
+            ...a,
             currentSite: e
           }
         })(),
@@ -93,54 +93,54 @@ _global.SENTRY_RELEASE = {
             environment: s,
             display_type: l
           };
-          t().dataLayer({
+          a().dataLayer({
             dataLayer: n
           })
         }
     },
-    3244: (e, n, a) => {
+    3244: (e, n, i) => {
       "use strict";
-      a.r(n), a.d(n, {
+      i.r(n), i.d(n, {
         withGtmTracking: () => o,
         withLocale: () => l,
         withMediaBasedProps: () => u,
         withTranslations: () => v
       });
-      var i = a(1359),
-        t = a(6632);
-      const o = e => n => ((e, n) => (0, t.jsx)(e, {
+      var t = i(1359),
+        a = i(6632);
+      const o = e => n => ((e, n) => (0, a.jsx)(e, {
         ...n,
         gtmTrack: e => {
-          (0, i.A)(e)
+          (0, t.A)(e)
         }
       }))(e, n);
-      var r = a(8407),
-        s = a(136);
+      var r = i(8407),
+        s = i(136);
       const l = e => n => ((e, n) => {
-        const a = (0, r.useReactiveVar)(s.locale);
-        return (0, t.jsx)(e, {
+        const i = (0, r.useReactiveVar)(s.locale);
+        return (0, a.jsx)(e, {
           ...n,
-          locale: a
+          locale: i
         })
       })(e, n);
-      var d = a(1403),
-        c = a(4252),
-        f = a.n(c);
+      var d = i(1403),
+        c = i(4252),
+        f = i.n(c);
       const u = function(e) {
         let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 250;
-        return a => ((e, n, a) => {
-          const [i, o] = (0, d.useState)(n), r = e => {
+        return i => ((e, n, i) => {
+          const [t, o] = (0, d.useState)(n), r = e => {
             let n = e;
-            const a = n?.items;
-            if (a?.length) {
-              const e = a.map((e => r(e)));
+            const i = n?.items;
+            if (i?.length) {
+              const e = i.map((e => r(e)));
               n = {
                 ...n,
                 items: e
               }
             }
-            const i = n?.mediaQueryList;
-            return i?.length ? (i.filter((e => window.matchMedia(e.mediaQueryString).matches)).forEach((e => {
+            const t = n?.mediaQueryList;
+            return t?.length ? (t.filter((e => window.matchMedia(e.mediaQueryString).matches)).forEach((e => {
               n = {
                 ...n,
                 ...e
@@ -150,18 +150,18 @@ _global.SENTRY_RELEASE = {
           return (0, d.useEffect)((() => {
             const e = f().debounce((() => {
               o(r(n))
-            }), a);
+            }), i);
             return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
-          })), (0, t.jsx)(e, {
-            ...i
+          })), (0, a.jsx)(e, {
+            ...t
           })
-        })(e, a, n)
+        })(e, i, n)
       };
-      var m = a(2529);
+      var m = i(2529);
       const v = function(e) {
         let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "default";
-        return a => ((e, n, a) => {
-          const i = function() {
+        return i => ((e, n, i) => {
+          const t = function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "default";
             const {
               data: n
@@ -171,12 +171,12 @@ _global.SENTRY_RELEASE = {
               }
             });
             return n ? e => n?.translations.find((n => n.key === e))?.value ?? e : null
-          }(a);
-          return i ? (0, t.jsx)(e, {
+          }(i);
+          return t ? (0, a.jsx)(e, {
             ...n,
-            t: i
+            t
           }) : null
-        })(e, a, n)
+        })(e, i, n)
       }
     },
     2529: e => {
@@ -296,18 +296,18 @@ _global.SENTRY_RELEASE = {
         }
       };
 
-      function a(e, n) {
+      function i(e, n) {
         if ("FragmentSpread" === e.kind) n.add(e.name.value);
         else if ("VariableDefinition" === e.kind) {
-          var i = e.type;
-          "NamedType" === i.kind && n.add(i.name.value)
+          var t = e.type;
+          "NamedType" === t.kind && n.add(t.name.value)
         }
         e.selectionSet && e.selectionSet.selections.forEach((function(e) {
-          a(e, n)
+          i(e, n)
         })), e.variableDefinitions && e.variableDefinitions.forEach((function(e) {
-          a(e, n)
+          i(e, n)
         })), e.definitions && e.definitions.forEach((function(e) {
-          a(e, n)
+          i(e, n)
         }))
       }
       n.loc.source = {
@@ -318,26 +318,26 @@ _global.SENTRY_RELEASE = {
           column: 1
         }
       };
-      var i = {};
+      var t = {};
 
-      function t(e, n) {
-        for (var a = 0; a < e.definitions.length; a++) {
-          var i = e.definitions[a];
-          if (i.name && i.name.value == n) return i
+      function a(e, n) {
+        for (var i = 0; i < e.definitions.length; i++) {
+          var t = e.definitions[i];
+          if (t.name && t.name.value == n) return t
         }
       }
       n.definitions.forEach((function(e) {
         if (e.name) {
           var n = new Set;
-          a(e, n), i[e.name.value] = n
+          i(e, n), t[e.name.value] = n
         }
       })), e.exports = n, e.exports.Translations = function(e, n) {
-        var a = {
+        var i = {
           kind: e.kind,
-          definitions: [t(e, n)]
+          definitions: [a(e, n)]
         };
-        e.hasOwnProperty("loc") && (a.loc = e.loc);
-        var o = i[n] || new Set,
+        e.hasOwnProperty("loc") && (i.loc = e.loc);
+        var o = t[n] || new Set,
           r = new Set,
           s = new Set;
         for (o.forEach((function(e) {
@@ -345,15 +345,15 @@ _global.SENTRY_RELEASE = {
           })); s.size > 0;) {
           var l = s;
           s = new Set, l.forEach((function(e) {
-            r.has(e) || (r.add(e), (i[e] || new Set).forEach((function(e) {
+            r.has(e) || (r.add(e), (t[e] || new Set).forEach((function(e) {
               s.add(e)
             })))
           }))
         }
         return r.forEach((function(n) {
-          var i = t(e, n);
-          i && a.definitions.push(i)
-        })), a
+          var t = a(e, n);
+          t && i.definitions.push(t)
+        })), i
       }(n, "Translations")
     }
   }

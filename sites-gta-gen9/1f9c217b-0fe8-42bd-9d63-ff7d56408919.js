@@ -16,40 +16,40 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_gta_gen9 = self.webpackChunk_rockstargames_sites_gta_gen9 || []).push([
   [3277, 5658], {
-    83277: (e, n, t) => {
-      t.r(n), t.d(n, {
-        useGSAP: () => c
+    83277: (e, n, d) => {
+      d.r(n), d.d(n, {
+        useGSAP: () => i
       });
-      var d = t(71403),
-        a = t(26040),
-        f = t.n(a);
-      let o = "undefined" != typeof window ? d.useLayoutEffect : d.useEffect,
+      var t = d(71403),
+        a = d(26040),
+        o = d.n(a);
+      let f = "undefined" != typeof window ? t.useLayoutEffect : t.useEffect,
         s = e => e && !Array.isArray(e) && "object" == typeof e,
         r = [],
         l = {},
-        i = f();
-      const c = function(e) {
+        c = o();
+      const i = function(e) {
         let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r,
-          t = l;
-        s(e) ? (t = e, e = null, n = "dependencies" in t ? t.dependencies : r) : s(n) && (t = n, n = "dependencies" in t ? t.dependencies : r);
+          d = l;
+        s(e) ? (d = e, e = null, n = "dependencies" in d ? d.dependencies : r) : s(n) && (d = n, n = "dependencies" in d ? d.dependencies : r);
         let {
           scope: a,
-          revertOnUpdate: f
-        } = t, [c, u] = (0, d.useState)(!1);
+          revertOnUpdate: o
+        } = d, [i, u] = (0, t.useState)(!1);
         e && "function" != typeof e && console.warn("First parameter must be a function or config object");
-        const g = i.context((() => {}), a),
+        const g = c.context((() => {}), a),
           b = () => g.revert(),
-          y = n && n.length && !f;
-        return o((() => {
-          if (e && g.add(e, a), !y || !c) return b
-        }), n), y && o((() => (u(!0), b)), r), {
+          y = n && n.length && !o;
+        return f((() => {
+          if (e && g.add(e, a), !y || !i) return b
+        }), n), y && f((() => (u(!0), b)), r), {
           context: g,
           contextSafe: e => g.add(null, e)
         }
       };
-      c.register = e => {
-        i = e
-      }, c.headless = !0
+      i.register = e => {
+        c = e
+      }, i.headless = !0
     }
   }
 ]);

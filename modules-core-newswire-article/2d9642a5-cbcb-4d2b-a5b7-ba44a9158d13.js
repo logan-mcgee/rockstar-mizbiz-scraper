@@ -62,10 +62,10 @@ _global.SENTRY_RELEASE = {
         })
       };
       var n = a(71403),
-        l = a(85865),
-        d = a.n(l),
-        i = a(42756),
-        c = a(34983),
+        d = a(85865),
+        l = a.n(d),
+        c = a(42756),
+        i = a(34983),
         f = a(21450),
         m = a(8999),
         u = a(60285),
@@ -88,14 +88,14 @@ _global.SENTRY_RELEASE = {
         T = a(64064),
         M = a.n(T),
         P = a(26750);
-      const R = (0, i.withTranslations)((0, i.withLocale)((e => {
+      const R = (0, c.withTranslations)((0, c.withLocale)((e => {
         let {
           article: s,
           children: a,
           locale: o,
-          t: l
+          t: d
         } = e;
-        const i = {
+        const c = {
             A: e => (0, t.jsx)(u.A, {
               ...e
             }),
@@ -105,7 +105,7 @@ _global.SENTRY_RELEASE = {
             ArticleTag: e => (0, t.jsx)(r.A, {
               ...e
             }),
-            AudioPlayer: e => (0, t.jsx)(c.A, {
+            AudioPlayer: e => (0, t.jsx)(i.A, {
               ...e
             }),
             Button: e => (0, t.jsx)(x.A, {
@@ -194,7 +194,7 @@ _global.SENTRY_RELEASE = {
             })
           },
           N = s.posts_jsx.variables_us_defaulted,
-          [T] = (0, n.useState)((0, t.jsx)(d(), {
+          [T] = (0, n.useState)((0, t.jsx)(l(), {
             renderInWrapper: !1,
             bindings: {
               getArray: (e, s) => e[s],
@@ -205,10 +205,10 @@ _global.SENTRY_RELEASE = {
               }, T),
               article: s,
               locale: o,
-              t: l,
+              t: d,
               variables: N
             },
-            components: i,
+            components: c,
             jsx: s.posts_jsx.markup,
             onError: e => {
               console.error(e)
@@ -230,7 +230,7 @@ _global.SENTRY_RELEASE = {
           variablesKeys: r
         } = e, o = !1;
         o = !0;
-        const [n] = (0, D.getLocale)(), l = e => {
+        const [n] = (0, D.getLocale)(), d = e => {
           let {
             children: s
           } = e;
@@ -243,7 +243,7 @@ _global.SENTRY_RELEASE = {
             children: s
           })
         };
-        return (0, t.jsx)(l, {
+        return (0, t.jsx)(d, {
           children: (0, t.jsxs)("div", {
             className: "rockstargames-modules-core-newswire-articled024f9dc1e6bc46f9b3576bcf12e1eb9",
             children: [(0, t.jsx)(G.TinaParser, {
@@ -267,11 +267,11 @@ _global.SENTRY_RELEASE = {
         t = a(64064),
         o = a.n(t),
         n = a(5217),
-        l = a.n(n),
-        d = a(26527),
-        i = a.n(d),
-        c = a(31879),
-        f = a.n(c),
+        d = a.n(n),
+        l = a(26527),
+        c = a.n(l),
+        i = a(31879),
+        f = a.n(i),
         m = a(66713),
         u = a.n(m),
         x = a(42012);
@@ -281,9 +281,9 @@ _global.SENTRY_RELEASE = {
         ClrCard: x.y3,
         ClrCollapsedCard: x.h7,
         Gif: o(),
-        GroupOfItems: l(),
+        GroupOfItems: d(),
         RockstarVideoPlayer: f(),
-        SwiperCarousel: i(),
+        SwiperCarousel: c(),
         UGCJobSpotlight: u()
       }
     }

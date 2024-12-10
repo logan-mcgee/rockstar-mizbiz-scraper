@@ -145,8 +145,8 @@ _global.SENTRY_RELEASE = {
       }
       var p = t(54867);
       const m = Boolean(null === globalThis || void 0 === globalThis ? void 0 : globalThis.document) ? o.useLayoutEffect : () => {};
-      var b = t(79493);
-      const g = e => {
+      var g = t(79493);
+      const b = e => {
         const {
           present: n,
           children: t
@@ -184,7 +184,7 @@ _global.SENTRY_RELEASE = {
             if (n) {
               const e = e => {
                   const t = v(r.current).includes(e.animationName);
-                  e.target === n && t && (0, b.flushSync)((() => s("ANIMATION_END")))
+                  e.target === n && t && (0, g.flushSync)((() => s("ANIMATION_END")))
                 },
                 t = e => {
                   e.target === n && (l.current = v(r.current))
@@ -211,7 +211,7 @@ _global.SENTRY_RELEASE = {
       function v(e) {
         return (null == e ? void 0 : e.animationName) || "none"
       }
-      g.displayName = "Presence";
+      b.displayName = "Presence";
       const y = a["useId".toString()] || (() => {});
       let E = 0;
 
@@ -273,7 +273,7 @@ _global.SENTRY_RELEASE = {
             forceMount: t,
             ...a
           } = e, l = N(M, e.__scopeCollapsible);
-          return (0, o.createElement)(g, {
+          return (0, o.createElement)(b, {
             present: t || l.open
           }, (({
             present: e
@@ -288,7 +288,7 @@ _global.SENTRY_RELEASE = {
             present: a,
             children: l,
             ...c
-          } = e, s = N(M, t), [d, u] = (0, o.useState)(a), f = (0, o.useRef)(null), b = (0, i.s)(n, f), g = (0, o.useRef)(0), v = g.current, y = (0, o.useRef)(0), E = y.current, A = s.open || d, h = (0, o.useRef)(A), w = (0, o.useRef)();
+          } = e, s = N(M, t), [d, u] = (0, o.useState)(a), f = (0, o.useRef)(null), g = (0, i.s)(n, f), b = (0, o.useRef)(0), v = b.current, y = (0, o.useRef)(0), E = y.current, A = s.open || d, h = (0, o.useRef)(A), w = (0, o.useRef)();
           return (0, o.useEffect)((() => {
             const e = requestAnimationFrame((() => h.current = !1));
             return () => cancelAnimationFrame(e)
@@ -300,7 +300,7 @@ _global.SENTRY_RELEASE = {
                 animationName: e.style.animationName
               }, e.style.transitionDuration = "0s", e.style.animationName = "none";
               const n = e.getBoundingClientRect();
-              g.current = n.height, y.current = n.width, h.current || (e.style.transitionDuration = w.current.transitionDuration, e.style.animationName = w.current.animationName), u(a)
+              b.current = n.height, y.current = n.width, h.current || (e.style.transitionDuration = w.current.transitionDuration, e.style.animationName = w.current.animationName), u(a)
             }
           }), [s.open, a]), (0, o.createElement)(p.sG.div, (0, r.A)({
             "data-state": x(s.open),
@@ -308,7 +308,7 @@ _global.SENTRY_RELEASE = {
             id: s.contentId,
             hidden: !A
           }, c, {
-            ref: b,
+            ref: g,
             style: {
               "--radix-collapsible-content-height": v ? `${v}px` : void 0,
               "--radix-collapsible-content-width": E ? `${E}px` : void 0,
@@ -460,10 +460,10 @@ _global.SENTRY_RELEASE = {
           dir: l,
           orientation: c = "vertical",
           ...s
-        } = e, u = o.useRef(null), f = (0, i.s)(u, n), m = $(t), b = "ltr" === function(e) {
+        } = e, u = o.useRef(null), f = (0, i.s)(u, n), m = $(t), g = "ltr" === function(e) {
           const n = (0, o.useContext)(P);
           return e || n || "ltr"
-        }(l), g = d(e.onKeyDown, (e => {
+        }(l), b = d(e.onKeyDown, (e => {
           var n;
           if (!V.includes(e.key)) return;
           const t = e.target,
@@ -491,13 +491,13 @@ _global.SENTRY_RELEASE = {
               l = i;
               break;
             case "ArrowRight":
-              "horizontal" === c && (b ? s() : d());
+              "horizontal" === c && (g ? s() : d());
               break;
             case "ArrowDown":
               "vertical" === c && s();
               break;
             case "ArrowLeft":
-              "horizontal" === c && (b ? d() : s());
+              "horizontal" === c && (g ? d() : s());
               break;
             case "ArrowUp":
               "vertical" === c && d()
@@ -514,7 +514,7 @@ _global.SENTRY_RELEASE = {
         }, o.createElement(p.sG.div, (0, r.A)({}, s, {
           "data-orientation": c,
           ref: f,
-          onKeyDown: a ? void 0 : g
+          onKeyDown: a ? void 0 : b
         }))))
       })), ee = "AccordionItem", [ne, te] = H(ee), re = o.forwardRef(((e, n) => {
         const {

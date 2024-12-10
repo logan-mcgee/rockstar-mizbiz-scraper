@@ -40,8 +40,8 @@ _global.SENTRY_RELEASE = {
           }
         }(),
         i = p(n(71403)),
-        a = p(n(37977)),
-        u = p(n(52696)),
+        u = p(n(37977)),
+        a = p(n(52696)),
         s = p(n(51901)),
         l = p(n(66785)),
         c = p(n(28512)),
@@ -95,7 +95,7 @@ _global.SENTRY_RELEASE = {
         }, {
           key: "componentDidUpdate",
           value: function(e) {
-            this.state.ready && ((0, u.default)(this.props, e) || this.process())
+            this.state.ready && ((0, a.default)(this.props, e) || this.process())
           }
         }, {
           key: "componentWillUnmount",
@@ -111,11 +111,11 @@ _global.SENTRY_RELEASE = {
               r = t.max,
               o = t.mode,
               i = t.forceSingleModeWidth,
-              a = t.onReady,
-              u = this._parent,
+              u = t.onReady,
+              a = this._parent,
               c = this._child,
-              p = (0, d.innerWidth)(u),
-              g = (0, d.innerHeight)(u);
+              p = (0, d.innerWidth)(a),
+              g = (0, d.innerHeight)(a);
             if (g <= 0 || isNaN(g)) console.warn("Can not process element without height. Make sure the element is displayed and has a static height.");
             else if (p <= 0 || isNaN(p)) console.warn("Can not process element without width. Make sure the element is displayed and has a static width.");
             else {
@@ -170,7 +170,7 @@ _global.SENTRY_RELEASE = {
                 t || b() || e.setState({
                   ready: !0
                 }, (function() {
-                  return a(_)
+                  return u(_)
                 }))
               }))
             }
@@ -182,8 +182,8 @@ _global.SENTRY_RELEASE = {
               t = this.props,
               n = t.children,
               o = t.text,
-              a = t.style,
-              u = (t.min, t.max, t.mode),
+              u = t.style,
+              a = (t.min, t.max, t.mode),
               s = (t.forceWidth, t.forceSingleModeWidth, t.throttle, t.autoResize, t.onReady, function(e, t) {
                 var n = {};
                 for (var r in e) t.indexOf(r) >= 0 || Object.prototype.hasOwnProperty.call(e, r) && (n[r] = e[r]);
@@ -192,13 +192,13 @@ _global.SENTRY_RELEASE = {
               l = this.state,
               c = l.fontSize,
               f = l.ready,
-              d = r({}, a, {
+              d = r({}, u, {
                 fontSize: c
               }),
               p = {
                 display: f ? "block" : "inline-block"
               };
-            return "single" === u && (p.whiteSpace = "nowrap"), i.default.createElement("div", r({
+            return "single" === a && (p.whiteSpace = "nowrap"), i.default.createElement("div", r({
               ref: function(t) {
                 return e._parent = t
               },
@@ -213,14 +213,14 @@ _global.SENTRY_RELEASE = {
         }]), t
       }(i.default.Component);
       g.propTypes = {
-        children: a.default.node,
-        text: a.default.string,
-        min: a.default.number,
-        max: a.default.number,
-        mode: a.default.oneOf(["single", "multi"]),
-        forceSingleModeWidth: a.default.bool,
-        throttle: a.default.number,
-        onReady: a.default.func
+        children: u.default.node,
+        text: u.default.string,
+        min: u.default.number,
+        max: u.default.number,
+        mode: u.default.oneOf(["single", "multi"]),
+        forceSingleModeWidth: u.default.bool,
+        throttle: u.default.number,
+        onReady: u.default.func
       }, g.defaultProps = {
         min: 1,
         max: 100,
@@ -260,15 +260,15 @@ _global.SENTRY_RELEASE = {
           r = 0,
           i = !0;
 
-        function a(e) {
+        function u(e) {
           function r() {
             t && t(e, n)
           }
           i ? o.default.nextTick(r) : r()
         }
         e.length > 0 ? e[0]((function t(o, i) {
-          n.push(i), ++r >= e.length || o ? a(o) : e[r](t)
-        })) : a(null), i = !1
+          n.push(i), ++r >= e.length || o ? u(o) : e[r](t)
+        })) : u(null), i = !1
       };
       var r, o = (r = n(90098)) && r.__esModule ? r : {
         default: r
@@ -297,15 +297,15 @@ _global.SENTRY_RELEASE = {
           r = void 0,
           o = void 0,
           i = void 0,
-          a = 0;
+          u = 0;
 
-        function u() {
-          i = 0, a = +new Date, o = e.apply(n, r), n = null, r = null
+        function a() {
+          i = 0, u = +new Date, o = e.apply(n, r), n = null, r = null
         }
         return function() {
           n = this, r = arguments;
-          var e = new Date - a;
-          return i || (e >= t ? u() : i = setTimeout(u, t - e)), o
+          var e = new Date - u;
+          return i || (e >= t ? a() : i = setTimeout(a, t - e)), o
         }
       }
     },
@@ -325,8 +325,8 @@ _global.SENTRY_RELEASE = {
       }), t.default = function(e, t) {
         var r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : n;
         e() ? t((function n(o) {
-          for (var i = arguments.length, a = Array(i > 1 ? i - 1 : 0), u = 1; u < i; u++) a[u - 1] = arguments[u];
-          o ? r(o) : e.apply(this, a) ? t(n) : r(null)
+          for (var i = arguments.length, u = Array(i > 1 ? i - 1 : 0), a = 1; a < i; a++) u[a - 1] = arguments[a];
+          o ? r(o) : e.apply(this, u) ? t(n) : r(null)
         })) : r(null)
       };
       var n = function() {}
@@ -342,7 +342,7 @@ _global.SENTRY_RELEASE = {
         throw new Error("clearTimeout has not been defined")
       }
 
-      function a(e) {
+      function u(e) {
         if (t === setTimeout) return setTimeout(e, 0);
         if ((t === o || !t) && setTimeout) return t = setTimeout, setTimeout(e, 0);
         try {
@@ -366,23 +366,23 @@ _global.SENTRY_RELEASE = {
           n = i
         }
       }();
-      var u, s = [],
+      var a, s = [],
         l = !1,
         c = -1;
 
       function f() {
-        l && u && (l = !1, u.length ? s = u.concat(s) : c = -1, s.length && d())
+        l && a && (l = !1, a.length ? s = a.concat(s) : c = -1, s.length && d())
       }
 
       function d() {
         if (!l) {
-          var e = a(f);
+          var e = u(f);
           l = !0;
           for (var t = s.length; t;) {
-            for (u = s, s = []; ++c < t;) u && u[c].run();
+            for (a = s, s = []; ++c < t;) a && a[c].run();
             c = -1, t = s.length
           }
-          u = null, l = !1,
+          a = null, l = !1,
             function(e) {
               if (n === clearTimeout) return clearTimeout(e);
               if ((n === i || !n) && clearTimeout) return n = clearTimeout, clearTimeout(e);
@@ -408,7 +408,7 @@ _global.SENTRY_RELEASE = {
         var t = new Array(arguments.length - 1);
         if (arguments.length > 1)
           for (var n = 1; n < arguments.length; n++) t[n - 1] = arguments[n];
-        s.push(new p(e, t)), 1 !== s.length || l || a(d)
+        s.push(new p(e, t)), 1 !== s.length || l || u(d)
       }, p.prototype.run = function() {
         this.fun.apply(null, this.array)
       }, r.title = "browser", r.browser = !0, r.env = {}, r.argv = [], r.version = "", r.versions = {}, r.on = h, r.addListener = h, r.once = h, r.off = h, r.removeListener = h, r.removeAllListeners = h, r.emit = h, r.prependListener = h, r.prependOnceListener = h, r.listeners = function(e) {
@@ -431,10 +431,10 @@ _global.SENTRY_RELEASE = {
 
       function i() {}
       i.resetWarningCache = o, e.exports = function() {
-        function e(e, t, n, o, i, a) {
-          if (a !== r) {
-            var u = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
-            throw u.name = "Invariant Violation", u
+        function e(e, t, n, o, i, u) {
+          if (u !== r) {
+            var a = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
+            throw a.name = "Invariant Violation", a
           }
         }
 
@@ -486,15 +486,15 @@ _global.SENTRY_RELEASE = {
       let o;
       const i = new Uint8Array(16);
 
-      function a() {
+      function u() {
         if (!o && (o = "undefined" != typeof crypto && crypto.getRandomValues && crypto.getRandomValues.bind(crypto), !o)) throw new Error("crypto.getRandomValues() not supported. See https://github.com/uuidjs/uuid#getrandomvalues-not-supported");
         return o(i)
       }
-      const u = [];
-      for (let e = 0; e < 256; ++e) u.push((e + 256).toString(16).slice(1));
+      const a = [];
+      for (let e = 0; e < 256; ++e) a.push((e + 256).toString(16).slice(1));
       const s = function(e, t, n) {
         if (r.randomUUID && !t && !e) return r.randomUUID();
-        const o = (e = e || {}).random || (e.rng || a)();
+        const o = (e = e || {}).random || (e.rng || u)();
         if (o[6] = 15 & o[6] | 64, o[8] = 63 & o[8] | 128, t) {
           n = n || 0;
           for (let e = 0; e < 16; ++e) t[n + e] = o[e];
@@ -502,7 +502,7 @@ _global.SENTRY_RELEASE = {
         }
         return function(e) {
           let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
-          return u[e[t + 0]] + u[e[t + 1]] + u[e[t + 2]] + u[e[t + 3]] + "-" + u[e[t + 4]] + u[e[t + 5]] + "-" + u[e[t + 6]] + u[e[t + 7]] + "-" + u[e[t + 8]] + u[e[t + 9]] + "-" + u[e[t + 10]] + u[e[t + 11]] + u[e[t + 12]] + u[e[t + 13]] + u[e[t + 14]] + u[e[t + 15]]
+          return a[e[t + 0]] + a[e[t + 1]] + a[e[t + 2]] + a[e[t + 3]] + "-" + a[e[t + 4]] + a[e[t + 5]] + "-" + a[e[t + 6]] + a[e[t + 7]] + "-" + a[e[t + 8]] + a[e[t + 9]] + "-" + a[e[t + 10]] + a[e[t + 11]] + a[e[t + 12]] + a[e[t + 13]] + a[e[t + 14]] + a[e[t + 15]]
         }(o)
       }
     }

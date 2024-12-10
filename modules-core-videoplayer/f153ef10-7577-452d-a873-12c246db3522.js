@@ -25,8 +25,8 @@ _global.SENTRY_RELEASE = {
       var s = t(207),
         n = t(2756),
         l = t(1403),
-        r = t(2946),
-        d = t.n(r);
+        d = t(2946),
+        r = t.n(d);
       const o = {
         agegate: "rockstargames-modules-core-videoplayerb564767f67a0f63737d816dcca714d49",
         inputs: "rockstargames-modules-core-videoplayerf33bd58bdfa63206fe9444fde46261d1",
@@ -37,7 +37,7 @@ _global.SENTRY_RELEASE = {
           let {
             agegateValue: a,
             options: t = {},
-            ga: r = {},
+            ga: d = {},
             t: i
           } = e;
           const {
@@ -50,7 +50,7 @@ _global.SENTRY_RELEASE = {
           (0, l.useEffect)((() => {
             u({
               event: "age_gate_popup",
-              element_placement: r.element_placement ?? ""
+              element_placement: d.element_placement ?? ""
             })
           }), []);
           return !1 === a ? (0, c.jsxs)("div", {
@@ -74,15 +74,15 @@ _global.SENTRY_RELEASE = {
               onSubmit: async e => {
                 e.preventDefault();
                 const a = `${y.current.value}-${p.current.value.padStart(2,0)}-${b.current.value.padStart(2,0)}`,
-                  t = d()(a, "YYYY-MM-DD", !0).isValid();
+                  t = r()(a, "YYYY-MM-DD", !0).isValid();
                 if (m(t), t) {
-                  const e = d()().diff(a, "years") >= 17;
+                  const e = r()().diff(a, "years") >= 17;
                   u(e ? {
                     event: "age_gate_passed",
-                    element_placement: r.element_placement ?? ""
+                    element_placement: d.element_placement ?? ""
                   } : {
                     event: "age_gate_failed",
-                    element_placement: r.element_placement ?? "",
+                    element_placement: d.element_placement ?? "",
                     text: "you may not view this content at this time"
                   }), g({
                     key: "agegatePass",
@@ -138,10 +138,10 @@ _global.SENTRY_RELEASE = {
           return function(s) {
             let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
               l = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
-            const r = e?.agegatePass ?? null,
-              d = a?.agegate_pass ?? r ?? null;
-            return !d && t ? null : d ? s : (0, c.jsx)(i, {
-              agegateValue: d,
+            const d = e?.agegatePass ?? null,
+              r = a?.agegate_pass ?? d ?? null;
+            return !r && t ? null : r ? s : (0, c.jsx)(i, {
+              agegateValue: r,
               options: n,
               ga: l
             })

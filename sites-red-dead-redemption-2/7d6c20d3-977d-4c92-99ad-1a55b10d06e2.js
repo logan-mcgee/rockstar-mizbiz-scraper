@@ -55,8 +55,8 @@ _global.SENTRY_RELEASE = {
     30033: (e, t, a) => {
       "use strict";
       a.r(t), a.d(t, {
-        fbar: () => u,
-        useAgegated: () => f
+        fbar: () => f,
+        useAgegated: () => u
       });
       var s = a(40207),
         n = a(42756),
@@ -77,14 +77,14 @@ _global.SENTRY_RELEASE = {
             t: c
           } = e;
           const {
-            track: f
+            track: u
           } = (0, s.useGtmTrack)(), {
-            mutateLSSettings: u
+            mutateLSSettings: f
           } = (0, n.useRockstarWebLSSettings)(), [g, p] = (0, r.useState)(null), _ = (0, r.createRef)(), m = (0, r.createRef)(), b = (0, r.createRef)(), {
             style: y
           } = a;
           (0, r.useEffect)((() => {
-            f({
+            u({
               event: "age_gate_popup",
               element_placement: d.element_placement ?? ""
             })
@@ -113,14 +113,14 @@ _global.SENTRY_RELEASE = {
                   a = l()(t, "YYYY-MM-DD", !0).isValid();
                 if (p(a), a) {
                   const e = l()().diff(t, "years") >= 17;
-                  f(e ? {
+                  u(e ? {
                     event: "age_gate_passed",
                     element_placement: d.element_placement ?? ""
                   } : {
                     event: "age_gate_failed",
                     element_placement: d.element_placement ?? "",
                     text: "you may not view this content at this time"
-                  }), u({
+                  }), f({
                     key: "agegatePass",
                     value: e
                   })
@@ -164,7 +164,7 @@ _global.SENTRY_RELEASE = {
             }), a?.footer]
           }) : null
         })),
-        f = () => {
+        u = () => {
           const {
             lsSettings: e
           } = (0, n.useRockstarWebLSSettings)(), {
@@ -183,7 +183,7 @@ _global.SENTRY_RELEASE = {
             })
           }
         },
-        u = 12
+        f = 12
     },
     3941: e => {
       function t(e) {

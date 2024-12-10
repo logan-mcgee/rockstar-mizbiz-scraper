@@ -19,23 +19,23 @@ _global.SENTRY_RELEASE = {
     3108: (e, a, d) => {
       d.r(a), d.d(a, {
         base: () => u,
-        cdn: () => l,
+        cdn: () => c,
         locale: () => t,
         useBase: () => g,
-        useCdn: () => r,
+        useCdn: () => l,
         useLocale: () => o
       });
       var n = d(7264);
       const t = (0, n.makeVar)(document.documentElement.lang),
         o = () => (0, n.useReactiveVar)(t),
         s = window?.env,
-        l = (0, n.makeVar)({
+        c = (0, n.makeVar)({
           media: s?.cdn?.media,
           videos: s?.cdn?.videos
         }),
-        r = () => (0, n.useReactiveVar)(l),
-        c = document.currentScript,
-        f = c?.src ? new URL(c.src).origin : "";
+        l = () => (0, n.useReactiveVar)(c),
+        r = document.currentScript,
+        f = r?.src ? new URL(r.src).origin : "";
       let i = document.getElementsByTagName("base")[0]?.getAttribute("href") ?? `${f}/`;
       i.endsWith("/") || (i = `${i}/`);
       const u = (0, n.makeVar)(i),

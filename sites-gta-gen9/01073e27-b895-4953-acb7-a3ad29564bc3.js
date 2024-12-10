@@ -35,23 +35,23 @@ _global.SENTRY_RELEASE = {
           amount: c = "any"
         } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
         if ("undefined" == typeof IntersectionObserver) return () => {};
-        const a = (0, r.K)(t),
-          l = new WeakMap,
+        const l = (0, r.K)(t),
+          a = new WeakMap,
           f = new IntersectionObserver((t => {
             t.forEach((t => {
-              const n = l.get(t.target);
+              const n = a.get(t.target);
               if (t.isIntersecting !== Boolean(n))
                 if (t.isIntersecting) {
                   const n = e(t);
-                  (0, o.T)(n) ? l.set(t.target, n): f.unobserve(t.target)
-                } else n && (n(t), l.delete(t.target))
+                  (0, o.T)(n) ? a.set(t.target, n): f.unobserve(t.target)
+                } else n && (n(t), a.delete(t.target))
             }))
           }), {
             root: n,
             rootMargin: s,
             threshold: "number" == typeof c ? c : i[c]
           });
-        return a.forEach((t => f.observe(t))), () => f.disconnect()
+        return l.forEach((t => f.observe(t))), () => f.disconnect()
       }
     },
     24149: (t, e, n) => {
@@ -97,10 +97,10 @@ _global.SENTRY_RELEASE = {
         }))
       }
 
-      function a(t) {
+      function l(t) {
         t.forEach(c)
       }
-      const l = new Set;
+      const a = new Set;
       let f;
       var u = n(32949),
         d = n(48339),
@@ -147,10 +147,10 @@ _global.SENTRY_RELEASE = {
             position: s
           } = y[e],
           c = o.current,
-          a = n.time;
+          l = n.time;
         o.current = t["scroll" + s], o.scrollLength = t["scroll" + i] - t["client" + i], o.offset.length = 0, o.offset[0] = 0, o.offset[1] = o.scrollLength, o.progress = (0, d.q)(0, o.scrollLength, o.current);
-        const l = r - a;
-        o.velocity = l > h ? 0 : (0, g.f)(o.current - c, l)
+        const a = r - l;
+        o.velocity = a > h ? 0 : (0, g.f)(o.current - c, a)
       }
       var m = n(96358),
         w = n(55201),
@@ -242,13 +242,13 @@ _global.SENTRY_RELEASE = {
                   for (n.x += e, n.y += t; r && "svg" !== r.tagName;) r = r.parentNode
                 }
                 return n
-              }(o, t) : W, a = o === t ? {
+              }(o, t) : W, l = o === t ? {
                 width: t.scrollWidth,
                 height: t.scrollHeight
               } : {
                 width: o.clientWidth,
                 height: o.clientHeight
-              }, l = {
+              }, a = {
                 width: t.clientWidth,
                 height: t.clientHeight
               };
@@ -256,7 +256,7 @@ _global.SENTRY_RELEASE = {
               let f = !e[i].interpolate;
               const u = r.length;
               for (let t = 0; t < u; t++) {
-                const n = S(r[t], l[s], a[s], c[i]);
+                const n = S(r[t], a[s], l[s], c[i]);
                 f || n === e[i].interpolatorOffsets[t] || (f = !0), e[i].offset[t] = n
               }
               f && (e[i].interpolate = (0, w.G)((0, b.Z)(u), e[i].offset), e[i].interpolatorOffsets = [...e[i].offset]), e[i].progress = e[i].interpolate(e[i].current)
@@ -305,7 +305,7 @@ _global.SENTRY_RELEASE = {
           const e = M(n);
           window.addEventListener("resize", t, {
             passive: !0
-          }), n !== document.documentElement && z.set(n, (v = n, m = t, (0, u.T)(v) ? (y = v, l.add(y), f || (f = () => {
+          }), n !== document.documentElement && z.set(n, (v = n, m = t, (0, u.T)(v) ? (y = v, a.add(y), f || (f = () => {
             const t = {
                 width: window.innerWidth,
                 height: window.innerHeight
@@ -315,11 +315,11 @@ _global.SENTRY_RELEASE = {
                 size: t,
                 contentSize: t
               };
-            l.forEach((t => t(e)))
+            a.forEach((t => t(e)))
           }, window.addEventListener("resize", f)), () => {
-            l.delete(y), !l.size && f && (f = void 0)
+            a.delete(y), !a.size && f && (f = void 0)
           }) : function(t, e) {
-            s || "undefined" != typeof ResizeObserver && (s = new ResizeObserver(a));
+            s || "undefined" != typeof ResizeObserver && (s = new ResizeObserver(l));
             const n = (0, o.K)(t);
             return n.forEach((t => {
               let n = i.get(t);
@@ -369,8 +369,8 @@ _global.SENTRY_RELEASE = {
         i = n(96791),
         s = n(48339),
         c = n(44282);
-      const a = t => Array.isArray(t) && !(0, c.E)(t[0]),
-        l = (t, e, n) => {
+      const l = t => Array.isArray(t) && !(0, c.E)(t[0]),
+        a = (t, e, n) => {
           const r = e - t;
           return ((n - t) % r + r) % r + t
         },
@@ -386,7 +386,7 @@ _global.SENTRY_RELEASE = {
           for (; i < c - 2 && !(o < e[i + 1]); i++);
           let u = f(0, 1, (0, s.q)(e[i], e[i + 1], o));
           const d = function(t, e) {
-            return a(t) ? t[l(0, t.length, e)] : t
+            return l(t) ? t[a(0, t.length, e)] : t
           }(n, i);
           return u = d(u), (0, r.j)(t[i], t[i + 1], u)
         }
@@ -510,23 +510,23 @@ _global.SENTRY_RELEASE = {
           n = i
         }
       }();
-      var c, a = [],
-        l = !1,
+      var c, l = [],
+        a = !1,
         f = -1;
 
       function u() {
-        l && c && (l = !1, c.length ? a = c.concat(a) : f = -1, a.length && d())
+        a && c && (a = !1, c.length ? l = c.concat(l) : f = -1, l.length && d())
       }
 
       function d() {
-        if (!l) {
+        if (!a) {
           var t = s(u);
-          l = !0;
-          for (var e = a.length; e;) {
-            for (c = a, a = []; ++f < e;) c && c[f].run();
-            f = -1, e = a.length
+          a = !0;
+          for (var e = l.length; e;) {
+            for (c = l, l = []; ++f < e;) c && c[f].run();
+            f = -1, e = l.length
           }
-          c = null, l = !1,
+          c = null, a = !1,
             function(t) {
               if (n === clearTimeout) return clearTimeout(t);
               if ((n === i || !n) && clearTimeout) return n = clearTimeout, clearTimeout(t);
@@ -552,7 +552,7 @@ _global.SENTRY_RELEASE = {
         var e = new Array(arguments.length - 1);
         if (arguments.length > 1)
           for (var n = 1; n < arguments.length; n++) e[n - 1] = arguments[n];
-        a.push(new g(t, e)), 1 !== a.length || l || s(d)
+        l.push(new g(t, e)), 1 !== l.length || a || s(d)
       }, g.prototype.run = function() {
         this.fun.apply(null, this.array)
       }, r.title = "browser", r.browser = !0, r.env = {}, r.argv = [], r.version = "", r.versions = {}, r.on = h, r.addListener = h, r.once = h, r.off = h, r.removeListener = h, r.removeAllListeners = h, r.emit = h, r.prependListener = h, r.prependOnceListener = h, r.listeners = function(t) {
@@ -574,8 +574,8 @@ _global.SENTRY_RELEASE = {
         Cl: () => i,
         Ju: () => c,
         Tt: () => s,
-        fX: () => l,
-        zs: () => a
+        fX: () => a,
+        zs: () => l
       });
       var r = function(t, e) {
         return r = Object.setPrototypeOf || {
@@ -630,7 +630,7 @@ _global.SENTRY_RELEASE = {
         throw new TypeError(e ? "Object is not iterable." : "Symbol.iterator is not defined.")
       }
 
-      function a(t, e) {
+      function l(t, e) {
         var n = "function" == typeof Symbol && t[Symbol.iterator];
         if (!n) return t;
         var r, o, i = n.call(t),
@@ -652,7 +652,7 @@ _global.SENTRY_RELEASE = {
         return s
       }
 
-      function l(t, e, n) {
+      function a(t, e, n) {
         if (n || 2 === arguments.length)
           for (var r, o = 0, i = e.length; o < i; o++) !r && o in e || (r || (r = Array.prototype.slice.call(e, 0, o)), r[o] = e[o]);
         return t.concat(r || Array.prototype.slice.call(e))

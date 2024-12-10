@@ -26,9 +26,9 @@ _global.SENTRY_RELEASE = {
         createIntl: () => n.E,
         defineMessages: () => a.YK,
         englishLocale: () => c.Vm,
-        getCookieValueByName: () => d.h,
-        getLocale: () => u.A,
-        localeCookieHandler: () => d.A,
+        getCookieValueByName: () => u.h,
+        getLocale: () => d.A,
+        localeCookieHandler: () => u.A,
         locales: () => c.Ay,
         splitLocale: () => b.A,
         useIntl: () => i.A,
@@ -40,8 +40,8 @@ _global.SENTRY_RELEASE = {
         i = s(708),
         l = s(80120),
         r = s(93480),
-        u = s(70175),
-        d = s(64677),
+        d = s(70175),
+        u = s(64677),
         c = s(29186),
         b = s(95136),
         m = s(31272),
@@ -53,7 +53,7 @@ _global.SENTRY_RELEASE = {
       "use strict";
       s.d(o, {
         Kq: () => r,
-        QY: () => u
+        QY: () => d
       });
       var t = s(71403),
         n = s(43071),
@@ -66,18 +66,18 @@ _global.SENTRY_RELEASE = {
           lang: s,
           children: a
         } = e;
-        const [r, u] = (0, t.useMemo)((() => (0, i.A)(s)), [s]), d = (0, t.useMemo)((() => function(e, o) {
+        const [r, d] = (0, t.useMemo)((() => (0, i.A)(s)), [s]), u = (0, t.useMemo)((() => function(e, o) {
           return e?.[o] ?? {}
-        }(o, u)), [s, o]);
+        }(o, d)), [s, o]);
         return (0, l.jsx)(n.A, {
-          messages: d,
+          messages: u,
           locale: r,
           defaultLocale: "en",
           children: a
         })
       };
 
-      function u(e, o) {
+      function d(e, o) {
         return s => {
           const [{
             iso: t
@@ -131,10 +131,10 @@ _global.SENTRY_RELEASE = {
           return o?.split("=")[1]
         })(e), l = a.Vm;
         let r = l;
-        const u = `rockstarweb_lang.${o.cookieIdentifier}`,
-          d = (0, n.h)(u);
-        r = o.currentSite?.site === t.C.www ? a.Ay.find((e => e.subdomaincom === i)) || a.Ay.find((e => e.subdomaincom === s)) || l : a.Ay.find((e => e.iso === d)) || l;
-        const [c, b] = (0, n.A)(u, r.iso);
+        const d = `rockstarweb_lang.${o.cookieIdentifier}`,
+          u = (0, n.h)(d);
+        r = o.currentSite?.site === t.C.www ? a.Ay.find((e => e.subdomaincom === i)) || a.Ay.find((e => e.subdomaincom === s)) || l : a.Ay.find((e => e.iso === u)) || l;
+        const [c, b] = (0, n.A)(d, r.iso);
         return [r, b]
       }
     },

@@ -82,10 +82,10 @@ _global.SENTRY_RELEASE = {
           index: t,
           post: m,
           noSpecialOrder: u = !1,
-          focused: k
+          focused: f
         } = e;
         const {
-          track: f
+          track: k
         } = (0, r.useGtmTrack)(), [g] = (0, n.useSearchParams)(), p = m.preview_images_parsed.newswire_block, v = {
           default: 0 !== t || u ? p.square || p.d16x9 || p._fallback : p.d16x9 || p.square || p._fallback,
           mobile: p.square || p._fallback
@@ -97,7 +97,7 @@ _global.SENTRY_RELEASE = {
             backgroundImage: `url(${v.mobile})`
           }
         }, h = (0, i.useCallback)((() => {
-          f({
+          k({
             event: "card_click",
             card_id: m.id,
             card_name: m.name_slug.replace(/-/g, " "),
@@ -109,7 +109,7 @@ _global.SENTRY_RELEASE = {
         return (0, o.jsx)(l.A, {
           to: m.url,
           className: [c.newswireBlock, u ? c.newswireBlockNoSpecialOrder : "", null !== b ? c.startAnimation : ""].join(" "),
-          focused: k,
+          focused: f,
           onClick: h,
           children: (0, o.jsxs)(o.Fragment, {
             children: [0 !== t || g.get("tag_id") ? (0, o.jsx)("div", {
@@ -252,7 +252,7 @@ _global.SENTRY_RELEASE = {
     49853: (e, a, t) => {
       "use strict";
       t.d(a, {
-        A: () => k
+        A: () => f
       });
       var i = t(71403),
         n = t(89779),
@@ -264,16 +264,16 @@ _global.SENTRY_RELEASE = {
         o = t(31955),
         m = t.n(o),
         u = t(46632);
-      const k = (0, r.withTranslations)((e => {
+      const f = (0, r.withTranslations)((e => {
         let {
           section: a = "",
           relativeTo: t = "",
           tagId: r = null,
           metaUrl: o = "/newswire",
-          t: k
+          t: f
         } = e;
         const {
-          track: f
+          track: k
         } = (0, l.useGtmTrack)(), [g, p] = (0, n.useSearchParams)(), {
           tagId: v = null
         } = (0, n.useParams)(), [b, w] = (0, i.useState)(v ?? r ?? g.get("tag_id")), [N, h] = (0, i.useState)(1), [y, S] = (0, i.useState)(20), [_, x] = (0, i.useState)([]), [j, A] = (0, i.useState)(null), [I, {
@@ -315,7 +315,7 @@ _global.SENTRY_RELEASE = {
                 page: String(t)
               }, {
                 replace: !0
-              }), f({
+              }), k({
                 event: "cta_learn",
                 text: "more stories",
                 element_placement: "newswire"
@@ -323,7 +323,7 @@ _global.SENTRY_RELEASE = {
             },
             disabled: T,
             context: "secondary",
-            children: k("More Stories")
+            children: f("More Stories")
           }) : ""]
         }) : null
       }))

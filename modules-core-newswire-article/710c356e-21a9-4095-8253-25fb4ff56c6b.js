@@ -19,47 +19,47 @@ _global.SENTRY_RELEASE = {
     50881: (o, e, t) => {
       t.r(e), t.d(e, {
         Lightbox_Close_Button_Label: () => _,
-        Lightbox_Close_Button_Tooltip: () => a,
+        Lightbox_Close_Button_Tooltip: () => l,
         Lightbox_Download_Button_Label: () => g,
         Lightbox_Download_Button_Tooltip: () => f,
-        Lightbox_Open_Button_Label: () => L,
-        Lightbox_Reset_Zoom_Button_Label: () => r,
-        Lightbox_Reset_Zoom_Button_Tooltip: () => d,
-        Lightbox_Zoom_In_Button_Label: () => l,
+        Lightbox_Open_Button_Label: () => c,
+        Lightbox_Reset_Zoom_Button_Label: () => d,
+        Lightbox_Reset_Zoom_Button_Tooltip: () => r,
+        Lightbox_Zoom_In_Button_Label: () => a,
         Lightbox_Zoom_In_Button_Tooltip: () => n,
         Lightbox_Zoom_Out_Button_Label: () => i,
         Lightbox_Zoom_Out_Button__Tooltip: () => b,
         Lightbox_Zoom_Slider_Label: () => s,
         Lightbox_Zoom_Slider_Tooltip: () => u,
-        default: () => h
+        default: () => L
       });
       var _ = "Cerrar",
-        a = "Presiona {shortcut}",
-        l = "Acercar",
+        l = "Presiona {shortcut}",
+        a = "Acercar",
         n = "Presiona {shortcut}",
         i = "Alejar",
         b = "Presiona {shortcut}",
-        r = "Restablecer",
-        d = "Presiona {shortcut}",
+        d = "Restablecer",
+        r = "Presiona {shortcut}",
         s = "Nivel del zoom",
         u = "{zoom}%",
         g = "Descargar",
         f = "Descargar",
-        L = "Ampliar imagen",
-        h = {
+        c = "Ampliar imagen",
+        L = {
           Lightbox_Close_Button_Label: _,
-          Lightbox_Close_Button_Tooltip: a,
-          Lightbox_Zoom_In_Button_Label: l,
+          Lightbox_Close_Button_Tooltip: l,
+          Lightbox_Zoom_In_Button_Label: a,
           Lightbox_Zoom_In_Button_Tooltip: n,
           Lightbox_Zoom_Out_Button_Label: i,
           Lightbox_Zoom_Out_Button__Tooltip: b,
-          Lightbox_Reset_Zoom_Button_Label: r,
-          Lightbox_Reset_Zoom_Button_Tooltip: d,
+          Lightbox_Reset_Zoom_Button_Label: d,
+          Lightbox_Reset_Zoom_Button_Tooltip: r,
           Lightbox_Zoom_Slider_Label: s,
           Lightbox_Zoom_Slider_Tooltip: u,
           Lightbox_Download_Button_Label: g,
           Lightbox_Download_Button_Tooltip: f,
-          Lightbox_Open_Button_Label: L
+          Lightbox_Open_Button_Label: c
         }
     }
   }

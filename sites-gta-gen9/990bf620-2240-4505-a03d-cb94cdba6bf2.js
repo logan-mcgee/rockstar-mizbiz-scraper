@@ -145,13 +145,13 @@ _global.SENTRY_RELEASE = {
         s = Object.prototype.hasOwnProperty;
       r.exports = function(r, t) {
         var e = a(r),
-          f = !e && o(r),
-          p = !e && !f && i(r),
-          l = !e && !f && !p && u(r),
-          v = e || f || p || l,
+          p = !e && o(r),
+          f = !e && !p && i(r),
+          l = !e && !p && !f && u(r),
+          v = e || p || f || l,
           d = v ? n(r.length, String) : [],
           b = d.length;
-        for (var y in r) !t && !s.call(r, y) || v && ("length" == y || p && ("offset" == y || "parent" == y) || l && ("buffer" == y || "byteLength" == y || "byteOffset" == y) || c(y, b)) || d.push(y);
+        for (var y in r) !t && !s.call(r, y) || v && ("length" == y || f && ("offset" == y || "parent" == y) || l && ("buffer" == y || "byteLength" == y || "byteOffset" == y) || c(y, b)) || d.push(y);
         return d
       }
     },
@@ -224,8 +224,8 @@ _global.SENTRY_RELEASE = {
         c = e(36192),
         u = e(872),
         s = e(77809),
-        f = e(89705),
-        p = e(73362),
+        p = e(89705),
+        f = e(73362),
         l = e(38220),
         v = e(86515),
         d = e(25387),
@@ -257,7 +257,7 @@ _global.SENTRY_RELEASE = {
             B = $ == S || "[object GeneratorFunction]" == $;
           if (_(t)) return u(t, D);
           if ($ == E || $ == A || B && !M) {
-            if (C = F || B ? {} : h(t), !D) return F ? p(t, c(C, t)) : f(t, i(C, t))
+            if (C = F || B ? {} : h(t), !D) return F ? f(t, c(C, t)) : p(t, i(C, t))
           } else {
             if (!P[$]) return M ? t : {};
             C = y(t, $, D)
@@ -299,8 +299,8 @@ _global.SENTRY_RELEASE = {
         var u = -1,
           s = t.length;
         for (a || (a = o), c || (c = []); ++u < s;) {
-          var f = t[u];
-          e > 0 && a(f) ? e > 1 ? r(f, e - 1, a, i, c) : n(c, f) : i || (c[c.length] = f)
+          var p = t[u];
+          e > 0 && a(p) ? e > 1 ? r(p, e - 1, a, i, c) : n(c, p) : i || (c[c.length] = p)
         }
         return c
       }
@@ -347,9 +347,9 @@ _global.SENTRY_RELEASE = {
         c = /^\[object .+?Constructor\]$/,
         u = Function.prototype,
         s = Object.prototype,
-        f = u.toString,
-        p = s.hasOwnProperty,
-        l = RegExp("^" + f.call(p).replace(/[\\^$.*+?()[\]{}|]/g, "\\$&").replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, "$1.*?") + "$");
+        p = u.toString,
+        f = s.hasOwnProperty,
+        l = RegExp("^" + p.call(f).replace(/[\\^$.*+?()[\]{}|]/g, "\\$&").replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, "$1.*?") + "$");
       r.exports = function(r) {
         return !(!a(r) || o(r)) && (n(r) ? l : c).test(i(r))
       }
@@ -402,11 +402,11 @@ _global.SENTRY_RELEASE = {
         c = e(27335),
         u = e(63219),
         s = e(73684);
-      r.exports = function r(t, e, f, p, l) {
+      r.exports = function r(t, e, p, f, l) {
         t !== e && a(e, (function(a, u) {
-          if (l || (l = new n), c(a)) i(t, e, u, f, r, p, l);
+          if (l || (l = new n), c(a)) i(t, e, u, p, r, f, l);
           else {
-            var v = p ? p(s(t, u), a, u + "", t, e, l) : void 0;
+            var v = f ? f(s(t, u), a, u + "", t, e, l) : void 0;
             void 0 === v && (v = a), o(t, u, v)
           }
         }), u)
@@ -420,8 +420,8 @@ _global.SENTRY_RELEASE = {
         c = e(84675),
         u = e(25138),
         s = e(49927),
-        f = e(20807),
-        p = e(21210),
+        p = e(20807),
+        f = e(21210),
         l = e(94048),
         v = e(27335),
         d = e(35829),
@@ -438,9 +438,9 @@ _global.SENTRY_RELEASE = {
             S = void 0 === A;
           if (S) {
             var E = s(m),
-              P = !E && p(m),
+              P = !E && f(m),
               z = !E && !P && b(m);
-            A = m, E || P || z ? s(w) ? A = w : f(w) ? A = i(w) : P ? (S = !1, A = o(m, !0)) : z ? (S = !1, A = a(m, !0)) : A = [] : d(m) || u(m) ? (A = w, u(w) ? A = h(w) : v(w) && !l(w) || (A = c(m))) : S = !1
+            A = m, E || P || z ? s(w) ? A = w : p(w) ? A = i(w) : P ? (S = !1, A = o(m, !0)) : z ? (S = !1, A = a(m, !0)) : A = [] : d(m) || u(m) ? (A = w, u(w) ? A = h(w) : v(w) && !l(w) || (A = c(m))) : S = !1
           }
           S && (j.set(m, A), _(A, m, x, g, j), j.delete(m)), n(r, e, A)
         }
@@ -470,11 +470,11 @@ _global.SENTRY_RELEASE = {
         c = e(25095);
       r.exports = function(r, t, e, u) {
         if (!i(r)) return r;
-        for (var s = -1, f = (t = o(t, r)).length, p = f - 1, l = r; null != l && ++s < f;) {
+        for (var s = -1, p = (t = o(t, r)).length, f = p - 1, l = r; null != l && ++s < p;) {
           var v = c(t[s]),
             d = e;
           if ("__proto__" === v || "constructor" === v || "prototype" === v) return r;
-          if (s != p) {
+          if (s != f) {
             var b = l[v];
             void 0 === (d = u ? u(b, v, l) : void 0) && (d = i(b) ? b : a(t[s + 1]) ? [] : {})
           }
@@ -618,8 +618,8 @@ _global.SENTRY_RELEASE = {
         e || (e = {});
         for (var c = -1, u = t.length; ++c < u;) {
           var s = t[c],
-            f = a ? a(e[s], r[s], s, e, r) : void 0;
-          void 0 === f && (f = r[s]), i ? o(e, s, f) : n(e, s, f)
+            p = a ? a(e[s], r[s], s, e, r) : void 0;
+          void 0 === p && (p = r[s]), i ? o(e, s, p) : n(e, s, p)
         }
         return e
       }
@@ -770,8 +770,8 @@ _global.SENTRY_RELEASE = {
         c = e(88737),
         u = e(7158),
         s = e(36635),
-        f = "[object Map]",
-        p = "[object Promise]",
+        p = "[object Map]",
+        f = "[object Promise]",
         l = "[object Set]",
         v = "[object WeakMap]",
         d = "[object DataView]",
@@ -781,7 +781,7 @@ _global.SENTRY_RELEASE = {
         x = s(i),
         _ = s(c),
         g = u;
-      (n && g(new n(new ArrayBuffer(1))) != d || o && g(new o) != f || a && g(a.resolve()) != p || i && g(new i) != l || c && g(new c) != v) && (g = function(r) {
+      (n && g(new n(new ArrayBuffer(1))) != d || o && g(new o) != p || a && g(a.resolve()) != f || i && g(new i) != l || c && g(new c) != v) && (g = function(r) {
         var t = u(r),
           e = "[object Object]" == t ? r.constructor : void 0,
           n = e ? s(e) : "";
@@ -789,9 +789,9 @@ _global.SENTRY_RELEASE = {
           case b:
             return d;
           case y:
-            return f;
-          case h:
             return p;
+          case h:
+            return f;
           case x:
             return l;
           case _:
@@ -1294,13 +1294,13 @@ _global.SENTRY_RELEASE = {
         c = Object.prototype,
         u = i.toString,
         s = c.hasOwnProperty,
-        f = u.call(Object);
+        p = u.call(Object);
       r.exports = function(r) {
         if (!a(r) || "[object Object]" != n(r)) return !1;
         var t = o(r);
         if (null === t) return !0;
         var e = s.call(t, "constructor") && t.constructor;
-        return "function" == typeof e && e instanceof e && u.call(e) == f
+        return "function" == typeof e && e instanceof e && u.call(e) == p
       }
     },
     39226: (r, t, e) => {
@@ -1388,18 +1388,18 @@ _global.SENTRY_RELEASE = {
         c = e(51469),
         u = e(67800),
         s = e(17274),
-        f = e(86515),
-        p = s((function(r, t) {
+        p = e(86515),
+        f = s((function(r, t) {
           var e = {};
           if (null == r) return e;
           var s = !1;
           t = n(t, (function(t) {
             return t = i(t, r), s || (s = t.length > 1), t
-          })), c(r, f(r), e), s && (e = o(e, 7, u));
-          for (var p = t.length; p--;) a(e, t[p]);
+          })), c(r, p(r), e), s && (e = o(e, 7, u));
+          for (var f = t.length; f--;) a(e, t[f]);
           return e
         }));
-      r.exports = p
+      r.exports = f
     },
     51315: (r, t, e) => {
       var n = e(69666)();
@@ -1556,7 +1556,7 @@ _global.SENTRY_RELEASE = {
             return e ? r.ref : (t = Object.getOwnPropertyDescriptor(r, "ref")?.get, e = t && "isReactWarning" in t && t.isReactWarning, e ? r.props.ref : r.props.ref || r.ref)
           }(e);
           return n.cloneElement(e, {
-            ...f(a, e.props),
+            ...p(a, e.props),
             ref: t ? (0, o.t)(t, r) : r
           })
         }
@@ -1573,7 +1573,7 @@ _global.SENTRY_RELEASE = {
         return n.isValidElement(r) && r.type === u
       }
 
-      function f(r, t) {
+      function p(r, t) {
         const e = {
           ...t
         };

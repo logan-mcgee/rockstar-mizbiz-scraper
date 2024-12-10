@@ -22,8 +22,8 @@ _global.SENTRY_RELEASE = {
         s = Symbol.for("react.element"),
         n = Symbol.for("react.fragment"),
         l = Object.prototype.hasOwnProperty,
-        o = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        d = {
+        d = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        o = {
           key: !0,
           ref: !0,
           __self: !0,
@@ -34,7 +34,7 @@ _global.SENTRY_RELEASE = {
         var r, n = {},
           c = null,
           i = null;
-        for (r in void 0 !== t && (c = "" + t), void 0 !== a.key && (c = "" + a.key), void 0 !== a.ref && (i = a.ref), a) l.call(a, r) && !d.hasOwnProperty(r) && (n[r] = a[r]);
+        for (r in void 0 !== t && (c = "" + t), void 0 !== a.key && (c = "" + a.key), void 0 !== a.ref && (i = a.ref), a) l.call(a, r) && !o.hasOwnProperty(r) && (n[r] = a[r]);
         if (e && e.defaultProps)
           for (r in a = e.defaultProps) void 0 === n[r] && (n[r] = a[r]);
         return {
@@ -43,7 +43,7 @@ _global.SENTRY_RELEASE = {
           key: c,
           ref: i,
           props: n,
-          _owner: o.current
+          _owner: d.current
         }
       }
       a.Fragment = n, a.jsx = c, a.jsxs = c
@@ -62,8 +62,8 @@ _global.SENTRY_RELEASE = {
         s = t(2756),
         n = t(1403),
         l = t(2946),
-        o = t.n(l);
-      const d = {
+        d = t.n(l);
+      const o = {
         agegate: "rockstargames-modules-core-videoplayerb564767f67a0f63737d816dcca714d49",
         inputs: "rockstargames-modules-core-videoplayerf33bd58bdfa63206fe9444fde46261d1",
         bg: "rockstargames-modules-core-videoplayerdb2f50238f9208ec72ef210e47b60e3b"
@@ -80,8 +80,8 @@ _global.SENTRY_RELEASE = {
             track: u
           } = (0, r.useGtmTrack)(), {
             mutateLSSettings: f
-          } = (0, s.useRockstarWebLSSettings)(), [g, p] = (0, n.useState)(null), m = (0, n.createRef)(), _ = (0, n.createRef)(), b = (0, n.createRef)(), {
-            style: y
+          } = (0, s.useRockstarWebLSSettings)(), [g, p] = (0, n.useState)(null), m = (0, n.createRef)(), _ = (0, n.createRef)(), y = (0, n.createRef)(), {
+            style: b
           } = t;
           (0, n.useEffect)((() => {
             u({
@@ -90,29 +90,29 @@ _global.SENTRY_RELEASE = {
             })
           }), []);
           return !1 === a ? (0, c.jsxs)("div", {
-            className: d.agegate,
-            style: y,
+            className: o.agegate,
+            style: b,
             children: [t?.header, (0, c.jsx)("h2", {
               children: i("agegate_fail")
             })]
           }) : null === a ? (0, c.jsxs)("div", {
-            className: d.agegate,
-            style: y,
+            className: o.agegate,
+            style: b,
             children: [t?.header, (0, c.jsx)("div", {
-              className: d.bg,
+              className: o.bg,
               style: t?.bgImg ? {
                 backgroundImage: `url(${t.bgImg})`
               } : {}
             }), !1 === g ? (0, c.jsx)("h5", {
-              className: d.error,
+              className: o.error,
               children: i("Please enter a valid age")
             }) : "", (0, c.jsxs)("form", {
               onSubmit: async e => {
                 e.preventDefault();
-                const a = `${b.current.value}-${m.current.value.padStart(2,0)}-${_.current.value.padStart(2,0)}`,
-                  t = o()(a, "YYYY-MM-DD", !0).isValid();
+                const a = `${y.current.value}-${m.current.value.padStart(2,0)}-${_.current.value.padStart(2,0)}`,
+                  t = d()(a, "YYYY-MM-DD", !0).isValid();
                 if (p(t), t) {
-                  const e = o()().diff(a, "years") >= 17;
+                  const e = d()().diff(a, "years") >= 17;
                   u(e ? {
                     event: "age_gate_passed",
                     element_placement: l.element_placement ?? ""
@@ -129,7 +129,7 @@ _global.SENTRY_RELEASE = {
               children: [(0, c.jsx)("h5", {
                 children: i("agegate_header")
               }), (0, c.jsxs)("div", {
-                className: d.inputs,
+                className: o.inputs,
                 children: [(0, c.jsxs)("label", {
                   htmlFor: "monthInput",
                   children: [i("Month"), (0, c.jsx)("input", {
@@ -150,14 +150,14 @@ _global.SENTRY_RELEASE = {
                   htmlFor: "yearInput",
                   children: [i("Year"), (0, c.jsx)("input", {
                     id: "yearInput",
-                    ref: b,
-                    className: d.year,
+                    ref: y,
+                    className: o.year,
                     placeholder: i("YYYY"),
                     maxLength: 4
                   })]
                 }), (0, c.jsx)("button", {
                   type: "submit",
-                  className: d.submit,
+                  className: o.submit,
                   children: i("SUBMIT")
                 })]
               })]
@@ -175,9 +175,9 @@ _global.SENTRY_RELEASE = {
             let s = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
               n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
             const l = e?.agegatePass ?? null,
-              o = a?.agegate_pass ?? l ?? null;
-            return !o && t ? null : o ? r : (0, c.jsx)(i, {
-              agegateValue: o,
+              d = a?.agegate_pass ?? l ?? null;
+            return !d && t ? null : d ? r : (0, c.jsx)(i, {
+              agegateValue: d,
               options: s,
               ga: n
             })

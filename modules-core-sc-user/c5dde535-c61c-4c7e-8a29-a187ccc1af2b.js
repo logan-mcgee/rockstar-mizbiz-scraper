@@ -22,25 +22,25 @@ _global.SENTRY_RELEASE = {
         n = Symbol.for("react.element"),
         s = (Symbol.for("react.fragment"), Object.prototype.hasOwnProperty),
         i = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        o = {
+        c = {
           key: !0,
           ref: !0,
           __self: !0,
           __source: !0
         };
       a.jsx = function(e, a, t) {
-        var r, c = {},
+        var r, o = {},
           d = null,
           u = null;
-        for (r in void 0 !== t && (d = "" + t), void 0 !== a.key && (d = "" + a.key), void 0 !== a.ref && (u = a.ref), a) s.call(a, r) && !o.hasOwnProperty(r) && (c[r] = a[r]);
+        for (r in void 0 !== t && (d = "" + t), void 0 !== a.key && (d = "" + a.key), void 0 !== a.ref && (u = a.ref), a) s.call(a, r) && !c.hasOwnProperty(r) && (o[r] = a[r]);
         if (e && e.defaultProps)
-          for (r in a = e.defaultProps) void 0 === c[r] && (c[r] = a[r]);
+          for (r in a = e.defaultProps) void 0 === o[r] && (o[r] = a[r]);
         return {
           $$typeof: n,
           type: e,
           key: d,
           ref: u,
-          props: c,
+          props: o,
           _owner: i.current
         }
       }
@@ -83,9 +83,9 @@ _global.SENTRY_RELEASE = {
         n = t(756);
       const s = (0, r.makeVarNamespace)("@rockstargames/modules-core-sc-user"),
         i = s("navOpenReactive", !1),
-        o = e => i(e),
-        c = s("jumpScMenuFocusReactive", !1),
-        d = e => c(e),
+        c = e => i(e),
+        o = s("jumpScMenuFocusReactive", !1),
+        d = e => o(e),
         u = s("hasNotificationsReactive", !1),
         l = e => u(e),
         f = s("currentCharIdReactive", (0, n.lsSettingsReactive)()?.currentCharId),
@@ -110,11 +110,11 @@ _global.SENTRY_RELEASE = {
             navOpen: t,
             userData: (0, r.useReactiveVar)(_),
             selectedCharacterTuple: s,
-            jumpScMenuFocus: (0, r.useReactiveVar)(c),
+            jumpScMenuFocus: (0, r.useReactiveVar)(o),
             setCharactersNeeded: h,
             setCurrentCharId: m,
             setHasNotifications: l,
-            setNavOpen: o,
+            setNavOpen: c,
             setSelectedCharacterTuple: v,
             setUserData: b,
             setJumpScMenuFocus: d
@@ -124,20 +124,20 @@ _global.SENTRY_RELEASE = {
     36: (e, a, t) => {
       "use strict";
       t.r(a), t.d(a, {
-        scConfig: () => o.A,
+        scConfig: () => c.A,
         useGtmTrack: () => r.useGtmTrack,
         useIsUserGtaPlus: () => n.F,
         useRockstarUser: () => r.useRockstarUser,
         useRockstarUserState: () => s.A,
         useRpCategory: () => d,
-        useScConfig: () => c
+        useScConfig: () => o
       });
       var r = t(896),
         n = t(600),
         s = t(480),
         i = t(407),
-        o = t(951);
-      const c = () => (0, i.useReactiveVar)(o.A),
+        c = t(951);
+      const o = () => (0, i.useReactiveVar)(c.A),
         d = e => t(e < 100 ? 934 : e > 99 && e < 500 ? 210 : e > 499 && e < 750 ? 253 : 792)
     },
     896: (e, a, t) => {
@@ -152,9 +152,9 @@ _global.SENTRY_RELEASE = {
         n = t(407),
         s = t(756),
         i = t(148),
-        o = t(480);
-      var c = t(525),
-        d = t.n(c),
+        c = t(480);
+      var o = t(525),
+        d = t.n(o),
         u = t(951);
       const {
         graphEnv: l
@@ -170,7 +170,7 @@ _global.SENTRY_RELEASE = {
               gtao: []
             }
           }),
-          [c, l] = (0, r.useState)(!0),
+          [o, l] = (0, r.useState)(!0),
           [m, , p] = (0, n.useRockstarTokenReactive)(),
           v = (0, n.useRockstarTokenPing)(),
           {
@@ -242,28 +242,28 @@ _global.SENTRY_RELEASE = {
                       }))
                     }), Promise.resolve())), !n.length) return n;
                   const {
-                    status: o,
-                    accounts: c
+                    status: c,
+                    accounts: o
                   } = await (0, s.coreScApiFetch)(`profile/getprofile?nickname=${t}&maxFriends=0`, {
                     pingBearer: a
                   });
-                  return o && c.length ? (c.forEach((e => {
+                  return c && o.length ? (o.forEach((e => {
                     const {
                       rockstarAccount: a,
                       linkedAccounts: s
                     } = e;
                     if (a?.rockstarId !== r) return;
                     const i = t;
-                    let o = "",
-                      c = "";
-                    s?.map((e => ("xbl" === e?.onlineService ? o = e.userName : "np" === e?.onlineService && (c = e.userName), e))), n.sort(((e, a) => Number(a.activeCharacter) - Number(e.activeCharacter))), n.map(((e, a) => (e.platformUsername = i, e.index = a, ["ps4", "ps5"].includes(e.platform) && (e.platformUsername = c || i), ["xboxone", "xboxsx"].includes(e.platform) && (e.platformUsername = o || i), e)))
+                    let c = "",
+                      o = "";
+                    s?.map((e => ("xbl" === e?.onlineService ? c = e.userName : "np" === e?.onlineService && (o = e.userName), e))), n.sort(((e, a) => Number(a.activeCharacter) - Number(e.activeCharacter))), n.map(((e, a) => (e.platformUsername = i, e.index = a, ["ps4", "ps5"].includes(e.platform) && (e.platformUsername = o || i), ["xboxone", "xboxsx"].includes(e.platform) && (e.platformUsername = c || i), e)))
                   })), n) : n
                 })({
                   pingBearer: v,
                   nickname: e?.data?.user?.nickname,
                   rockstarId: r
                 }),
-                c = {
+                o = {
                   ...a,
                   ...e?.data?.user,
                   crews: n,
@@ -271,7 +271,7 @@ _global.SENTRY_RELEASE = {
                     gtao: i
                   }
                 };
-              l(!1), t(c), h(!0), (0, o.K)(r)
+              l(!1), t(o), h(!0), (0, c.K)(r)
             }
             if (!1 === r && !w) {
               try {
@@ -293,14 +293,14 @@ _global.SENTRY_RELEASE = {
                   if (200 !== n.status) return void a(!1);
                   const s = await n.json(),
                     i = `${(0,u.A)().gateway}?code=${s}`,
-                    o = await fetch(i, {
+                    c = await fetch(i, {
                       credentials: "include"
                     }),
                     {
-                      bearerToken: c,
+                      bearerToken: o,
                       tokenExpiresTime: l
-                    } = await o.json();
-                  return a(c), t(l), c
+                    } = await c.json();
+                  return a(o), t(l), o
                 })({
                   token: m,
                   tokenPingExpires: p
@@ -311,7 +311,7 @@ _global.SENTRY_RELEASE = {
           })()
         }), [e, _, w]), {
           data: a,
-          loading: c,
+          loading: o,
           loggedIn: k
         }
       };
@@ -354,12 +354,12 @@ _global.SENTRY_RELEASE = {
           } = e;
           const n = function() {
               let e = !(arguments.length > 0 && void 0 !== arguments[0]) || arguments[0];
-              const [a, t] = (0, r.useState)([]), [n, s] = (0, r.useState)([]), [i, o] = (0, r.useState)(null), {
-                data: c,
+              const [a, t] = (0, r.useState)([]), [n, s] = (0, r.useState)([]), [i, c] = (0, r.useState)(null), {
+                data: o,
                 loggedIn: d
               } = (0, w.useRockstarUser)(), {
                 currentCharId: u
-              } = (0, w.useRockstarUserState)(), l = (0, y.F)(c, u), f = (0, S.useBrowserCapabilityDetection)(), m = (e, r) => {
+              } = (0, w.useRockstarUserState)(), l = (0, y.F)(o, u), f = (0, S.useBrowserCapabilityDetection)(), m = (e, r) => {
                 const n = [];
                 e.forEach((e => {
                   if (-1 === a.indexOf(e)) {
@@ -372,11 +372,11 @@ _global.SENTRY_RELEASE = {
                 })), t([...a, ...n])
               };
               (0, r.useEffect)((() => {
-                if (c && null !== d) {
-                  const e = p(c);
-                  n.length && e && m(n, e), o(e)
+                if (o && null !== d) {
+                  const e = p(o);
+                  n.length && e && m(n, e), c(e)
                 } else e || n.length && m(n)
-              }), [c, d, n]), (0, r.useEffect)((() => {
+              }), [o, d, n]), (0, r.useEffect)((() => {
                 const e = n.filter((e => -1 === a.indexOf(e)));
                 s(e)
               }), [a]);
@@ -400,7 +400,7 @@ _global.SENTRY_RELEASE = {
               };
               return {
                 track: e => {
-                  if (null === d || !c || !i) {
+                  if (null === d || !o || !i) {
                     const a = [...n];
                     return a.push({
                       ...e
@@ -592,14 +592,14 @@ _global.SENTRY_RELEASE = {
         e.hasOwnProperty("loc") && (t.loc = e.loc);
         var s = r[a] || new Set,
           i = new Set,
-          o = new Set;
+          c = new Set;
         for (s.forEach((function(e) {
-            o.add(e)
-          })); o.size > 0;) {
-          var c = o;
-          o = new Set, c.forEach((function(e) {
+            c.add(e)
+          })); c.size > 0;) {
+          var o = c;
+          c = new Set, o.forEach((function(e) {
             i.has(e) || (i.add(e), (r[e] || new Set).forEach((function(e) {
-              o.add(e)
+              c.add(e)
             })))
           }))
         }

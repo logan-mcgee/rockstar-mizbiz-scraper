@@ -31,7 +31,7 @@ _global.SENTRY_RELEASE = {
         isGecko: () => P,
         isTrident: () => T,
         isWebKit: () => k,
-        load: () => me,
+        load: () => fe,
         loadSources: () => L,
         murmurX64Hash128: () => ge,
         prepareForSources: () => de,
@@ -202,11 +202,11 @@ _global.SENTRY_RELEASE = {
         }))
       }
 
-      function f(e) {
+      function m(e) {
         e.then(void 0, (function() {}))
       }
 
-      function m(e, t) {
+      function f(e, t) {
         e = [e[0] >>> 16, 65535 & e[0], e[1] >>> 16, 65535 & e[1]], t = [t[0] >>> 16, 65535 & t[0], t[1] >>> 16, 65535 & t[1]];
         var n = [0, 0, 0, 0];
         return n[3] += e[3] + t[3], n[2] += n[3] >>> 16, n[3] &= 65535, n[2] += e[2] + t[2], n[1] += n[2] >>> 16, n[2] &= 65535, n[1] += e[1] + t[1], n[0] += n[1] >>> 16, n[1] &= 65535, n[0] += e[0] + t[0], n[0] &= 65535, [n[0] << 16 | n[1], n[2] << 16 | n[3]]
@@ -244,7 +244,7 @@ _global.SENTRY_RELEASE = {
           s = [0, 0],
           l = [2277735313, 289559509],
           u = [1291169091, 658871167];
-        for (n = 0; n < a; n += 16) c = [255 & e.charCodeAt(n + 4) | (255 & e.charCodeAt(n + 5)) << 8 | (255 & e.charCodeAt(n + 6)) << 16 | (255 & e.charCodeAt(n + 7)) << 24, 255 & e.charCodeAt(n) | (255 & e.charCodeAt(n + 1)) << 8 | (255 & e.charCodeAt(n + 2)) << 16 | (255 & e.charCodeAt(n + 3)) << 24], s = [255 & e.charCodeAt(n + 12) | (255 & e.charCodeAt(n + 13)) << 8 | (255 & e.charCodeAt(n + 14)) << 16 | (255 & e.charCodeAt(n + 15)) << 24, 255 & e.charCodeAt(n + 8) | (255 & e.charCodeAt(n + 9)) << 8 | (255 & e.charCodeAt(n + 10)) << 16 | (255 & e.charCodeAt(n + 11)) << 24], c = g(c = h(c, l), 31), o = m(o = g(o = v(o, c = h(c, u)), 27), i), o = m(h(o, [0, 5]), [0, 1390208809]), s = g(s = h(s, u), 33), i = m(i = g(i = v(i, s = h(s, l)), 31), o), i = m(h(i, [0, 5]), [0, 944331445]);
+        for (n = 0; n < a; n += 16) c = [255 & e.charCodeAt(n + 4) | (255 & e.charCodeAt(n + 5)) << 8 | (255 & e.charCodeAt(n + 6)) << 16 | (255 & e.charCodeAt(n + 7)) << 24, 255 & e.charCodeAt(n) | (255 & e.charCodeAt(n + 1)) << 8 | (255 & e.charCodeAt(n + 2)) << 16 | (255 & e.charCodeAt(n + 3)) << 24], s = [255 & e.charCodeAt(n + 12) | (255 & e.charCodeAt(n + 13)) << 8 | (255 & e.charCodeAt(n + 14)) << 16 | (255 & e.charCodeAt(n + 15)) << 24, 255 & e.charCodeAt(n + 8) | (255 & e.charCodeAt(n + 9)) << 8 | (255 & e.charCodeAt(n + 10)) << 16 | (255 & e.charCodeAt(n + 11)) << 24], c = g(c = h(c, l), 31), o = f(o = g(o = v(o, c = h(c, u)), 27), i), o = f(h(o, [0, 5]), [0, 1390208809]), s = g(s = h(s, u), 33), i = f(i = g(i = v(i, s = h(s, l)), 31), o), i = f(h(i, [0, 5]), [0, 944331445]);
         switch (c = [0, 0], s = [0, 0], r) {
           case 15:
             s = v(s, p([0, e.charCodeAt(n + 14)], 48));
@@ -277,7 +277,7 @@ _global.SENTRY_RELEASE = {
           case 1:
             c = h(c = v(c, [0, e.charCodeAt(n)]), l), o = v(o, c = h(c = g(c, 31), u))
         }
-        return o = m(o = v(o, [0, e.length]), i = v(i, [0, e.length])), i = m(i, o), o = m(o = b(o), i = b(i)), i = m(i, o), ("00000000" + (o[0] >>> 0).toString(16)).slice(-8) + ("00000000" + (o[1] >>> 0).toString(16)).slice(-8) + ("00000000" + (i[0] >>> 0).toString(16)).slice(-8) + ("00000000" + (i[1] >>> 0).toString(16)).slice(-8)
+        return o = f(o = v(o, [0, e.length]), i = v(i, [0, e.length])), i = f(i, o), o = f(o = b(o), i = b(i)), i = f(i, o), ("00000000" + (o[0] >>> 0).toString(16)).slice(-8) + ("00000000" + (o[1] >>> 0).toString(16)).slice(-8) + ("00000000" + (i[0] >>> 0).toString(16)).slice(-8) + ("00000000" + (i[1] >>> 0).toString(16)).slice(-8)
       }
 
       function w(e) {
@@ -361,7 +361,7 @@ _global.SENTRY_RELEASE = {
                   }))
                 }))
               }));
-              return f(n),
+              return m(n),
                 function() {
                   return n.then((function(e) {
                     return e()
@@ -369,7 +369,7 @@ _global.SENTRY_RELEASE = {
                 }
             }(e[n], t)
           }));
-        return f(i),
+        return m(i),
           function() {
             return a(this, void 0, void 0, (function() {
               var e, t, n, a;
@@ -380,7 +380,7 @@ _global.SENTRY_RELEASE = {
                   case 1:
                     return [4, d(o.sent(), (function(e) {
                       var t = e();
-                      return f(t), t
+                      return m(t), t
                     }))];
                   case 2:
                     return e = o.sent(), [4, Promise.all(e)];
@@ -806,14 +806,14 @@ _global.SENTRY_RELEASE = {
                       l = void 0 === s ? {} : s,
                       u = c[1],
                       d = void 0 === u ? "mmMwWLliI0fiflO&1" : u,
-                      f = e.createElement("span");
-                    f.textContent = d, f.style.whiteSpace = "nowrap";
-                    for (var m = 0, h = Object.keys(l); m < h.length; m++) {
-                      var g = h[m],
+                      m = e.createElement("span");
+                    m.textContent = d, m.style.whiteSpace = "nowrap";
+                    for (var f = 0, h = Object.keys(l); f < h.length; f++) {
+                      var g = h[f],
                         p = l[g];
-                      void 0 !== p && (f.style[g] = p)
+                      void 0 !== p && (m.style[g] = p)
                     }
-                    n[i] = f, t.appendChild(e.createElement("br")), t.appendChild(f)
+                    n[i] = m, t.appendChild(e.createElement("br")), t.appendChild(m)
                   }
                   for (var v = 0, b = Object.keys(oe); v < b.length; v++) r[i = b[v]] = n[i].getBoundingClientRect().width;
                   return r
@@ -851,7 +851,7 @@ _global.SENTRY_RELEASE = {
                     s = function() {
                       try {
                         var t = e.startRendering();
-                        switch (l(t) && f(t), e.state) {
+                        switch (l(t) && m(t), e.state) {
                           case "running":
                             i = Date.now(), a && c();
                             break;
@@ -878,7 +878,7 @@ _global.SENTRY_RELEASE = {
                 if ("timeout" === e.name || "suspended" === e.name) return -3;
                 throw e
               }));
-            return f(s),
+            return m(s),
               function() {
                 return c(), s
               }
@@ -1119,8 +1119,8 @@ _global.SENTRY_RELEASE = {
               l = re.cos || ae,
               u = re.cosh || ae,
               d = re.tan || ae,
-              f = re.tanh || ae,
-              m = re.exp || ae,
+              m = re.tanh || ae,
+              f = re.exp || ae,
               h = re.expm1 || ae,
               g = re.log1p || ae;
             return {
@@ -1140,9 +1140,9 @@ _global.SENTRY_RELEASE = {
               cosh: u(1),
               coshPf: (re.exp(1) + 1 / re.exp(1)) / 2,
               tan: d(-1e300),
-              tanh: f(1),
+              tanh: m(1),
               tanhPf: (re.exp(2) - 1) / (re.exp(2) + 1),
-              exp: m(1),
+              exp: f(1),
               expm1: h(1),
               expm1Pf: re.exp(1) - 1,
               log1p: g(10),
@@ -1226,7 +1226,7 @@ _global.SENTRY_RELEASE = {
           }(e, 2 * e)
       }
 
-      function fe(e, t) {
+      function me(e, t) {
         var n = Date.now();
         return {
           get: function(r) {
@@ -1258,7 +1258,7 @@ _global.SENTRY_RELEASE = {
         }
       }
 
-      function me(e) {
+      function fe(e) {
         var t = void 0 === e ? {} : e,
           n = t.delayFallback,
           r = t.debug,
@@ -1277,7 +1277,7 @@ _global.SENTRY_RELEASE = {
                   }
                 }(), [4, de(n)];
               case 1:
-                return e.sent(), [2, fe(L(ie, {
+                return e.sent(), [2, me(L(ie, {
                   debug: r
                 }, []), r)]
             }
@@ -1285,7 +1285,7 @@ _global.SENTRY_RELEASE = {
         }))
       }
       var he = {
-          load: me,
+          load: fe,
           hashComponents: ue,
           componentsToDebugString: le
         },
@@ -1318,23 +1318,23 @@ _global.SENTRY_RELEASE = {
         return [e[0] ^ t[0], e[1] ^ t[1]]
       }
 
-      function f(e) {
+      function m(e) {
         return e = d(e, [0, e[0] >>> 1]), e = d(e = s(e, [4283543511, 3981806797]), [0, e[0] >>> 1]), d(e = s(e, [3301882366, 444984403]), [0, e[0] >>> 1])
       }
 
-      function m(e) {
+      function f(e) {
         return e.length > 32 ? function(e, t) {
           t = t || 0;
           let n, r = (e = e || "").length % 16,
             a = e.length - r,
             o = [0, t],
             i = [0, t],
-            m = [0, 0],
+            f = [0, 0],
             h = [0, 0],
             g = [2277735313, 289559509],
             p = [1291169091, 658871167];
-          for (n = 0; n < a; n += 16) m = [255 & e.charCodeAt(n + 4) | (255 & e.charCodeAt(n + 5)) << 8 | (255 & e.charCodeAt(n + 6)) << 16 | (255 & e.charCodeAt(n + 7)) << 24, 255 & e.charCodeAt(n) | (255 & e.charCodeAt(n + 1)) << 8 | (255 & e.charCodeAt(n + 2)) << 16 | (255 & e.charCodeAt(n + 3)) << 24], h = [255 & e.charCodeAt(n + 12) | (255 & e.charCodeAt(n + 13)) << 8 | (255 & e.charCodeAt(n + 14)) << 16 | (255 & e.charCodeAt(n + 15)) << 24, 255 & e.charCodeAt(n + 8) | (255 & e.charCodeAt(n + 9)) << 8 | (255 & e.charCodeAt(n + 10)) << 16 | (255 & e.charCodeAt(n + 11)) << 24], m = s(m, g), m = l(m, 31), m = s(m, p), o = d(o, m), o = l(o, 27), o = c(o, i), o = c(s(o, [0, 5]), [0, 1390208809]), h = s(h, p), h = l(h, 33), h = s(h, g), i = d(i, h), i = l(i, 31), i = c(i, o), i = c(s(i, [0, 5]), [0, 944331445]);
-          switch (m = [0, 0], h = [0, 0], r) {
+          for (n = 0; n < a; n += 16) f = [255 & e.charCodeAt(n + 4) | (255 & e.charCodeAt(n + 5)) << 8 | (255 & e.charCodeAt(n + 6)) << 16 | (255 & e.charCodeAt(n + 7)) << 24, 255 & e.charCodeAt(n) | (255 & e.charCodeAt(n + 1)) << 8 | (255 & e.charCodeAt(n + 2)) << 16 | (255 & e.charCodeAt(n + 3)) << 24], h = [255 & e.charCodeAt(n + 12) | (255 & e.charCodeAt(n + 13)) << 8 | (255 & e.charCodeAt(n + 14)) << 16 | (255 & e.charCodeAt(n + 15)) << 24, 255 & e.charCodeAt(n + 8) | (255 & e.charCodeAt(n + 9)) << 8 | (255 & e.charCodeAt(n + 10)) << 16 | (255 & e.charCodeAt(n + 11)) << 24], f = s(f, g), f = l(f, 31), f = s(f, p), o = d(o, f), o = l(o, 27), o = c(o, i), o = c(s(o, [0, 5]), [0, 1390208809]), h = s(h, p), h = l(h, 33), h = s(h, g), i = d(i, h), i = l(i, 31), i = c(i, o), i = c(s(i, [0, 5]), [0, 944331445]);
+          switch (f = [0, 0], h = [0, 0], r) {
             case 15:
               h = d(h, u([0, e.charCodeAt(n + 14)], 48));
               break;
@@ -1357,30 +1357,30 @@ _global.SENTRY_RELEASE = {
               h = d(h, [0, e.charCodeAt(n + 8)]), h = s(h, p), h = l(h, 33), h = s(h, g), i = d(i, h);
               break;
             case 8:
-              m = d(m, u([0, e.charCodeAt(n + 7)], 56));
+              f = d(f, u([0, e.charCodeAt(n + 7)], 56));
               break;
             case 7:
-              m = d(m, u([0, e.charCodeAt(n + 6)], 48));
+              f = d(f, u([0, e.charCodeAt(n + 6)], 48));
               break;
             case 6:
-              m = d(m, u([0, e.charCodeAt(n + 5)], 40));
+              f = d(f, u([0, e.charCodeAt(n + 5)], 40));
               break;
             case 5:
-              m = d(m, u([0, e.charCodeAt(n + 4)], 32));
+              f = d(f, u([0, e.charCodeAt(n + 4)], 32));
               break;
             case 4:
-              m = d(m, u([0, e.charCodeAt(n + 3)], 24));
+              f = d(f, u([0, e.charCodeAt(n + 3)], 24));
               break;
             case 3:
-              m = d(m, u([0, e.charCodeAt(n + 2)], 16));
+              f = d(f, u([0, e.charCodeAt(n + 2)], 16));
               break;
             case 2:
-              m = d(m, u([0, e.charCodeAt(n + 1)], 8));
+              f = d(f, u([0, e.charCodeAt(n + 1)], 8));
               break;
             case 1:
-              m = d(m, [0, e.charCodeAt(n)]), m = s(m, g), m = l(m, 31), m = s(m, p), o = d(o, m)
+              f = d(f, [0, e.charCodeAt(n)]), f = s(f, g), f = l(f, 31), f = s(f, p), o = d(o, f)
           }
-          return o = d(o, [0, e.length]), i = d(i, [0, e.length]), o = c(o, i), i = c(i, o), o = f(o), i = f(i), o = c(o, i), i = c(i, o), ("00000000" + (o[0] >>> 0).toString(16)).slice(-8) + ("00000000" + (o[1] >>> 0).toString(16)).slice(-8) + ("00000000" + (i[0] >>> 0).toString(16)).slice(-8) + ("00000000" + (i[1] >>> 0).toString(16)).slice(-8)
+          return o = d(o, [0, e.length]), i = d(i, [0, e.length]), o = c(o, i), i = c(i, o), o = m(o), i = m(i), o = c(o, i), i = c(i, o), ("00000000" + (o[0] >>> 0).toString(16)).slice(-8) + ("00000000" + (o[1] >>> 0).toString(16)).slice(-8) + ("00000000" + (i[0] >>> 0).toString(16)).slice(-8) + ("00000000" + (i[1] >>> 0).toString(16)).slice(-8)
         }(e, 31) : e
       }
 
@@ -1489,7 +1489,7 @@ _global.SENTRY_RELEASE = {
           }();
         r.appendChild(a);
         for (let e = 0, n = t.length; e < n; e++) i[t[e]] = d[e].offsetWidth, c[t[e]] = d[e].offsetHeight;
-        let f = function() {
+        let m = function() {
           let e = {};
           for (let r = 0, a = n.length; r < a; r++) {
             let a = [];
@@ -1502,9 +1502,9 @@ _global.SENTRY_RELEASE = {
           return e
         }();
         r.appendChild(o);
-        let m = [];
-        for (let e = 0, t = n.length; e < t; e++) u(f[n[e]]) && m.push(n[e]);
-        return r.removeChild(o), r.removeChild(a), m
+        let f = [];
+        for (let e = 0, t = n.length; e < t; e++) u(m[n[e]]) && f.push(n[e]);
+        return r.removeChild(o), r.removeChild(a), f
       }
       r = e.exports, Object.defineProperty(r, "__esModule", {
         value: !0,
@@ -1532,7 +1532,7 @@ _global.SENTRY_RELEASE = {
                 const r = n.components,
                   o = {
                     fp: {
-                      user_agent: m(navigator.userAgent),
+                      user_agent: f(navigator.userAgent),
                       language: navigator.language || navigator.userLanguage || navigator.browserLanguage || navigator.systemLanguage || "",
                       pixel_ratio: window.devicePixelRatio || "",
                       timezone_offset: (new Date).getTimezoneOffset(),
@@ -1543,17 +1543,17 @@ _global.SENTRY_RELEASE = {
                       cpu_class: r.cpuClass.value ? r.cpuClass.value : "unknown",
                       navigator_platform: r.platform.value ? r.platform.value : "unknown",
                       do_not_track: navigator.doNotTrack ? navigator.doNotTrack : "unknown",
-                      regular_plugins: m(h(r.plugins.value).join(";")),
+                      regular_plugins: f(h(r.plugins.value).join(";")),
                       canvas: null,
                       webgl: null,
-                      adblock: m(p()),
+                      adblock: f(p()),
                       has_lied_os: v(a),
                       touch_support: [r.touchSupport.value.maxTouchPoints, r.touchSupport.value.touchEvent, r.touchSupport.value.touchStart].join(";"),
                       device_name: b(e, a),
-                      js_fonts: m(w().join(";"))
+                      js_fonts: f(w().join(";"))
                     }
                   };
-                g() ? o.fp.canvas = m(function() {
+                g() ? o.fp.canvas = f(function() {
                     let e = [],
                       t = document.createElement("canvas");
                     t.width = 2e3, t.height = 200, t.style.display = "inline";
@@ -1569,7 +1569,7 @@ _global.SENTRY_RELEASE = {
                       e = !1
                     }
                     return !!window.WebGLRenderingContext && !!e
-                  }() ? o.fp.webgl = m(function() {
+                  }() ? o.fp.webgl = f(function() {
                     let e, t = function(t) {
                       return e.clearColor(0, 0, 0, 1), e.enable(e.DEPTH_TEST), e.depthFunc(e.LEQUAL), e.clear(e.COLOR_BUFFER_BIT | e.DEPTH_BUFFER_BIT), "[" + t[0] + ", " + t[1] + "]"
                     };

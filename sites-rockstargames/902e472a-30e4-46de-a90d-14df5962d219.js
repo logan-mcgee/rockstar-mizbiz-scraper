@@ -21,7 +21,7 @@ _global.SENTRY_RELEASE = {
         InView: () => u,
         defaultFallbackInView: () => c,
         observe: () => h,
-        useInView: () => b
+        useInView: () => f
       });
       var n = i(71403),
         r = Object.defineProperty,
@@ -169,16 +169,16 @@ _global.SENTRY_RELEASE = {
             delay: c,
             initialInView: h,
             fallbackInView: u,
-            ...b
+            ...f
           } = this.props;
           return n.createElement(t || "div", {
             ref: this.handleNode,
-            ...b
+            ...f
           }, e)
         }
       };
 
-      function b({
+      function f({
         threshold: e,
         delay: t,
         trackVisibility: i,
@@ -191,18 +191,18 @@ _global.SENTRY_RELEASE = {
         onChange: c
       } = {}) {
         var u;
-        const [b, p] = n.useState(null), f = n.useRef(), [g, y] = n.useState({
+        const [f, p] = n.useState(null), b = n.useRef(), [g, y] = n.useState({
           inView: !!d,
           entry: void 0
         });
-        f.current = c, n.useEffect((() => {
-          if (a || !b) return;
+        b.current = c, n.useEffect((() => {
+          if (a || !f) return;
           let n;
-          return n = h(b, ((e, t) => {
+          return n = h(f, ((e, t) => {
             y({
               inView: e,
               entry: t
-            }), f.current && f.current(e, t), t.isIntersecting && o && n && (n(), n = void 0)
+            }), b.current && b.current(e, t), t.isIntersecting && o && n && (n(), n = void 0)
           }), {
             root: s,
             rootMargin: r,
@@ -212,10 +212,10 @@ _global.SENTRY_RELEASE = {
           }, l), () => {
             n && n()
           }
-        }), [Array.isArray(e) ? e.toString() : e, b, s, r, o, a, i, l, t]);
+        }), [Array.isArray(e) ? e.toString() : e, f, s, r, o, a, i, l, t]);
         const v = null == (u = g.entry) ? void 0 : u.target,
           w = n.useRef();
-        b || !v || o || a || w.current === v || (w.current = v, y({
+        f || !v || o || a || w.current === v || (w.current = v, y({
           inView: !!d,
           entry: void 0
         }));

@@ -16,79 +16,79 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_utils = self.webpackChunk_rockstargames_utils || []).push([
   [551], {
-    6516: (e, t, a) => {
-      var n = a(1403),
-        o = Symbol.for("react.element"),
+    6516: (e, t, n) => {
+      var o = n(1403),
+        a = Symbol.for("react.element"),
         r = (Symbol.for("react.fragment"), Object.prototype.hasOwnProperty),
-        s = n.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        d = {
+        d = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        s = {
           key: !0,
           ref: !0,
           __self: !0,
           __source: !0
         };
-      t.jsx = function(e, t, a) {
-        var n, i = {},
-          f = null,
-          l = null;
-        for (n in void 0 !== a && (f = "" + a), void 0 !== t.key && (f = "" + t.key), void 0 !== t.ref && (l = t.ref), t) r.call(t, n) && !d.hasOwnProperty(n) && (i[n] = t[n]);
+      t.jsx = function(e, t, n) {
+        var o, i = {},
+          l = null,
+          f = null;
+        for (o in void 0 !== n && (l = "" + n), void 0 !== t.key && (l = "" + t.key), void 0 !== t.ref && (f = t.ref), t) r.call(t, o) && !s.hasOwnProperty(o) && (i[o] = t[o]);
         if (e && e.defaultProps)
-          for (n in t = e.defaultProps) void 0 === i[n] && (i[n] = t[n]);
+          for (o in t = e.defaultProps) void 0 === i[o] && (i[o] = t[o]);
         return {
-          $$typeof: o,
+          $$typeof: a,
           type: e,
-          key: f,
-          ref: l,
+          key: l,
+          ref: f,
           props: i,
-          _owner: s.current
+          _owner: d.current
         }
       }
     },
-    6632: (e, t, a) => {
-      e.exports = a(6516)
+    6632: (e, t, n) => {
+      e.exports = n(6516)
     },
-    6551: (e, t, a) => {
-      a.r(t), a.d(t, {
-        TagManager: () => o(),
-        init: () => l,
+    6551: (e, t, n) => {
+      n.r(t), n.d(t, {
+        TagManager: () => a(),
+        init: () => f,
         track: () => r.A,
-        withAutoRouteTracking: () => f
+        withAutoRouteTracking: () => l
       });
-      var n = a(1482),
-        o = a.n(n),
-        r = a(1359),
-        s = a(1403),
-        d = a(9779),
-        i = a(6632);
-      const f = e => t => ((e, t) => {
+      var o = n(1482),
+        a = n.n(o),
+        r = n(1359),
+        d = n(1403),
+        s = n(9779),
+        i = n(6632);
+      const l = e => t => ((e, t) => {
           const {
-            pathname: a
-          } = (0, d.useLocation)();
-          return (0, s.useEffect)((() => {
+            pathname: n
+          } = (0, s.useLocation)();
+          return (0, d.useEffect)((() => {
             (0, r.A)({
               event: "trackPageview"
             })
-          }), [a]), (0, i.jsx)(e, {
+          }), [n]), (0, i.jsx)(e, {
             ...t
           })
         })(e, t),
-        l = e => {
+        f = e => {
           let {
             id: t
           } = e;
           if (!t) return;
-          const a = {
+          const n = {
             gtmId: t
           };
-          o().initialize(a)
+          a().initialize(n)
         }
     },
-    1359: (e, t, a) => {
-      a.d(t, {
-        A: () => f
+    1359: (e, t, n) => {
+      n.d(t, {
+        A: () => l
       });
-      var n = a(1482),
-        o = a.n(n);
+      var o = n(1482),
+        a = n.n(o);
       const r = [{
           id: "prod",
           sites: {
@@ -99,34 +99,34 @@ _global.SENTRY_RELEASE = {
           },
           cookieIdentifier: "prod"
         }],
-        s = (() => {
+        d = (() => {
           let e;
           const {
             location: t
-          } = window, a = t.hostname.substring(0, t.hostname.indexOf(".rockstargames.com")), n = r.findIndex((t => Object.entries(t.sites).findIndex((t => {
-            let [n, o] = t;
-            return o === a && (e = {
-              site: n,
-              subDomain: o
+          } = window, n = t.hostname.substring(0, t.hostname.indexOf(".rockstargames.com")), o = r.findIndex((t => Object.entries(t.sites).findIndex((t => {
+            let [o, a] = t;
+            return a === n && (e = {
+              site: o,
+              subDomain: a
             }, !0)
-          })) >= 0)), o = r[n >= 0 ? n : 0];
+          })) >= 0)), a = r[o >= 0 ? o : 0];
           return e || (e = {
             site: "www",
             subDomain: "local"
           }), {
-            ...o,
+            ...a,
             currentSite: e
           }
         })(),
-        d = s?.id,
+        s = d?.id,
         i = /Mobi/i.test(window.navigator.userAgent) ? "mobile" : "desktop",
-        f = e => {
+        l = e => {
           const t = {
             ...e,
-            environment: d,
+            environment: s,
             display_type: i
           };
-          o().dataLayer({
+          a().dataLayer({
             dataLayer: t
           })
         }

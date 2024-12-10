@@ -31,7 +31,7 @@ _global.SENTRY_RELEASE = {
         Lightbox_Zoom_Out_Button__Tooltip: () => b,
         Lightbox_Zoom_Slider_Label: () => s,
         Lightbox_Zoom_Slider_Tooltip: () => u,
-        default: () => h
+        default: () => c
       });
       var _ = "Chiudi lightbox",
         a = "Premi {shortcut}",
@@ -46,7 +46,7 @@ _global.SENTRY_RELEASE = {
         r = "Scarica",
         L = "Scarica",
         f = "Espandi immagine",
-        h = {
+        c = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: a,
           Lightbox_Zoom_In_Button_Label: i,

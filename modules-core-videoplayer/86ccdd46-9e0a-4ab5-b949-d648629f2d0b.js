@@ -20,29 +20,29 @@ _global.SENTRY_RELEASE = {
       n.r(d), n.d(d, {
         useGSAP: () => i
       });
-      var a = n(1403),
-        t = n(6040),
-        o = n.n(t);
-      let f = "undefined" != typeof window ? a.useLayoutEffect : a.useEffect,
-        r = e => e && !Array.isArray(e) && "object" == typeof e,
-        s = [],
-        l = {},
-        c = o();
+      var t = n(1403),
+        o = n(6040),
+        a = n.n(o);
+      let r = "undefined" != typeof window ? t.useLayoutEffect : t.useEffect,
+        s = e => e && !Array.isArray(e) && "object" == typeof e,
+        l = [],
+        f = {},
+        c = a();
       const i = function(e) {
-        let d = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : s,
-          n = l;
-        r(e) ? (n = e, e = null, d = "dependencies" in n ? n.dependencies : s) : r(d) && (n = d, d = "dependencies" in n ? n.dependencies : s);
+        let d = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : l,
+          n = f;
+        s(e) ? (n = e, e = null, d = "dependencies" in n ? n.dependencies : l) : s(d) && (n = d, d = "dependencies" in n ? n.dependencies : l);
         let {
-          scope: t,
-          revertOnUpdate: o
-        } = n, [i, u] = (0, a.useState)(!1);
+          scope: o,
+          revertOnUpdate: a
+        } = n, [i, u] = (0, t.useState)(!1);
         e && "function" != typeof e && console.warn("First parameter must be a function or config object");
-        const b = c.context((() => {}), t),
+        const b = c.context((() => {}), o),
           y = () => b.revert(),
-          p = d && d.length && !o;
-        return f((() => {
-          if (e && b.add(e, t), !p || !i) return y
-        }), d), p && f((() => (u(!0), y)), s), {
+          p = d && d.length && !a;
+        return r((() => {
+          if (e && b.add(e, o), !p || !i) return y
+        }), d), p && r((() => (u(!0), y)), l), {
           context: b,
           contextSafe: e => b.add(null, e)
         }
