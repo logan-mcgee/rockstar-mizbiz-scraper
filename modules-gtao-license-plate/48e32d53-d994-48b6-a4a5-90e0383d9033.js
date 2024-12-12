@@ -24,8 +24,8 @@ _global.SENTRY_RELEASE = {
         t = a(2158),
         s = a(2024),
         r = a(6632);
-      const b = document.createElement("div");
-      document.querySelector("body").append(b), (0, n.H)(b).render((0, r.jsx)(t.ScrollProvider, {
+      const i = document.createElement("div");
+      document.querySelector("body").append(i), (0, n.H)(i).render((0, r.jsx)(t.ScrollProvider, {
         children: (0, r.jsx)(o.BrowserRouter, {
           basename: "/",
           children: (0, r.jsx)(l.RockstarUserProvider, {

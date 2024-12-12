@@ -62,15 +62,15 @@ _global.SENTRY_RELEASE = {
         })
       };
       var n = a(71403),
-        d = a(85865),
-        l = a.n(d),
+        l = a(85865),
+        d = a.n(l),
         i = a(42756),
         c = a(34983),
-        f = a(21450),
-        m = a(8999),
-        b = a(60285),
-        u = a(22778),
-        x = a(39613),
+        m = a(21450),
+        f = a(8999),
+        u = a(60285),
+        x = a(22778),
+        b = a(39613),
         j = a(41074),
         g = a(28606),
         p = a(87839),
@@ -93,10 +93,10 @@ _global.SENTRY_RELEASE = {
           article: s,
           children: a,
           locale: o,
-          t: d
+          t: l
         } = e;
         const i = {
-            A: e => (0, t.jsx)(b.A, {
+            A: e => (0, t.jsx)(u.A, {
               ...e
             }),
             AnchorLink: e => (0, t.jsx)(P.AnchorLink, {
@@ -108,13 +108,13 @@ _global.SENTRY_RELEASE = {
             AudioPlayer: e => (0, t.jsx)(c.A, {
               ...e
             }),
-            Button: e => (0, t.jsx)(u.A, {
+            Button: e => (0, t.jsx)(x.A, {
               ...e
             }),
-            Carousel: e => (0, t.jsx)(f.A, {
+            Carousel: e => (0, t.jsx)(m.A, {
               ...e
             }),
-            Cta: e => (0, t.jsx)(x.A, {
+            Cta: e => (0, t.jsx)(b.A, {
               ...e
             }),
             Discounts: e => (0, t.jsx)(P.Discounts, {
@@ -147,7 +147,7 @@ _global.SENTRY_RELEASE = {
             HTMLElement: e => (0, t.jsx)(p.A, {
               ...e
             }),
-            ImageWithBadge: e => (0, t.jsx)(m.A, {
+            ImageWithBadge: e => (0, t.jsx)(f.A, {
               ...e
             }),
             MultiSourceImage: e => (0, t.jsx)(w.A, {
@@ -194,7 +194,7 @@ _global.SENTRY_RELEASE = {
             })
           },
           N = s.posts_jsx.variables_us_defaulted,
-          [T] = (0, n.useState)((0, t.jsx)(l(), {
+          [T] = (0, n.useState)((0, t.jsx)(d(), {
             renderInWrapper: !1,
             bindings: {
               getArray: (e, s) => e[s],
@@ -205,7 +205,7 @@ _global.SENTRY_RELEASE = {
               }, T),
               article: s,
               locale: o,
-              t: d,
+              t: l,
               variables: N
             },
             components: i,
@@ -230,7 +230,7 @@ _global.SENTRY_RELEASE = {
           variablesKeys: r
         } = e, o = !1;
         o = !0;
-        const [n] = (0, D.getLocale)(), d = e => {
+        const [n] = (0, D.getLocale)(), l = e => {
           let {
             children: s
           } = e;
@@ -243,7 +243,7 @@ _global.SENTRY_RELEASE = {
             children: s
           })
         };
-        return (0, t.jsx)(d, {
+        return (0, t.jsx)(l, {
           children: (0, t.jsxs)("div", {
             className: "rockstargames-modules-core-newswire-articled024f9dc1e6bc46f9b3576bcf12e1eb9",
             children: [(0, t.jsx)(G.TinaParser, {
@@ -261,30 +261,30 @@ _global.SENTRY_RELEASE = {
     },
     74216: (e, s, a) => {
       a.r(s), a.d(s, {
-        componentsForTinaParser: () => x
+        componentsForTinaParser: () => b
       });
       var r = a(76612),
         t = a(64064),
         o = a.n(t),
         n = a(5217),
-        d = a.n(n),
-        l = a(26527),
-        i = a.n(l),
+        l = a.n(n),
+        d = a(26527),
+        i = a.n(d),
         c = a(31879),
-        f = a.n(c),
-        m = a(66713),
-        b = a.n(m),
-        u = a(42012);
-      const x = {
+        m = a.n(c),
+        f = a(66713),
+        u = a.n(f),
+        x = a(42012);
+      const b = {
         ...r,
         ...a(26750),
-        ClrCard: u.y3,
-        ClrCollapsedCard: u.h7,
+        ClrCard: x.y3,
+        ClrCollapsedCard: x.h7,
         Gif: o(),
-        GroupOfItems: d(),
-        RockstarVideoPlayer: f(),
+        GroupOfItems: l(),
+        RockstarVideoPlayer: m(),
         SwiperCarousel: i(),
-        UGCJobSpotlight: b()
+        UGCJobSpotlight: u()
       }
     }
   }

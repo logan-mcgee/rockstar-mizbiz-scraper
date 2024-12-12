@@ -123,9 +123,9 @@ _global.SENTRY_RELEASE = {
         } = e;
         const {
           track: u
-        } = (0, r.useGtmTrack)(), [f] = (0, s.useSearchParams)(), k = l.preview_images_parsed.newswire_block, b = {
-          default: 0 !== t || g ? k.square || k.d16x9 || k._fallback : k.d16x9 || k.square || k._fallback,
-          mobile: k.square || k._fallback
+        } = (0, r.useGtmTrack)(), [k] = (0, s.useSearchParams)(), f = l.preview_images_parsed.newswire_block, b = {
+          default: 0 !== t || g ? f.square || f.d16x9 || f._fallback : f.d16x9 || f.square || f._fallback,
+          mobile: f.square || f._fallback
         }, [v, j] = (0, n.usePreloadImg)(b.default), h = {
           default: {
             backgroundImage: `url(${b.default})`
@@ -149,7 +149,7 @@ _global.SENTRY_RELEASE = {
           focused: p,
           onClick: _,
           children: (0, c.jsxs)(c.Fragment, {
-            children: [0 !== t || f.get("tag_id") ? (0, c.jsx)("div", {
+            children: [0 !== t || k.get("tag_id") ? (0, c.jsx)("div", {
               className: o.preview,
               style: h.default
             }) : (0, c.jsxs)(c.Fragment, {
@@ -359,18 +359,18 @@ _global.SENTRY_RELEASE = {
         g = t(58407),
         p = t(70396),
         u = t(42756),
-        f = t(25076),
-        k = t(90648);
+        k = t(25076),
+        f = t(90648);
       const b = "rockstargames-sites-rockstargamesa6b96f1aa331851eea3b9fad5cb04a8f",
         v = "rockstargames-sites-rockstargamescdc8dd93ce6946707dab221c0a16845e",
-        j = k.SearchData ?? SearchDataDefault,
+        j = f.SearchData ?? SearchDataDefault,
         h = e => {
           let {
             loading: a,
             searchResponse: t,
             activeTab: i
           } = e;
-          const [n, d] = (0, f.useSearchParams)();
+          const [n, d] = (0, k.useSearchParams)();
           let o;
           switch (i) {
             case "posts":
@@ -423,7 +423,7 @@ _global.SENTRY_RELEASE = {
             },
             setSearch: s,
             setTitle: n
-          } = (0, p.useRockstarLocalState)(), d = (0, u.useQueryParams)(), [m, c] = (0, i.useState)(null), [l, f] = (0, i.useState)({}), [k, _] = (0, i.useState)(d.get("tab") ?? "games"), {
+          } = (0, p.useRockstarLocalState)(), d = (0, u.useQueryParams)(), [m, c] = (0, i.useState)(null), [l, k] = (0, i.useState)({}), [f, _] = (0, i.useState)(d.get("tab") ?? "games"), {
             data: N = {},
             loading: x
           } = (0, g.useQuery)(j, {
@@ -439,8 +439,8 @@ _global.SENTRY_RELEASE = {
               withPosts: !0,
               withVideos: !0
             };
-            f(e), s(d.get("q"))
-          }), [d.get("q"), d.get("page"), d.get("tab"), k]), (0, i.useEffect)((() => {
+            k(e), s(d.get("q"))
+          }), [d.get("q"), d.get("page"), d.get("tab"), f]), (0, i.useEffect)((() => {
             const e = Object.entries(N).find((e => {
               let [, a] = e;
               return a?.paging?.count > 0
@@ -448,7 +448,7 @@ _global.SENTRY_RELEASE = {
             _(d.get("tab") ?? e ?? "games")
           }), [N, d.get("tab")]), (0, i.useEffect)((() => {
             void 0 !== N?.games?.paging?.count && (c((N?.games?.paging?.count ?? 0) + (N?.videos?.paging?.count ?? 0) + (N?.posts?.paging?.count ?? 0)), n(N?.meta?.title.replace("%s", t)))
-          }), [N, k]), Object.entries(l).length ? l.q ? null === m || x ? null : (0, r.jsxs)("div", {
+          }), [N, f]), Object.entries(l).length ? l.q ? null === m || x ? null : (0, r.jsxs)("div", {
             className: b,
             children: [(0, r.jsx)("section", {
               className: v,
@@ -463,7 +463,7 @@ _global.SENTRY_RELEASE = {
             }), !x && m ? (0, r.jsx)(h, {
               searchResponse: N,
               searchTerm: t,
-              activeTab: k,
+              activeTab: f,
               t: a
             }) : ""]
           }) : (0, r.jsx)("div", {

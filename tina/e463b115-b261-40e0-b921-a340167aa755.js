@@ -29,28 +29,28 @@ _global.SENTRY_RELEASE = {
         const r = (o = o || {}).delimiter || ".",
           a = o.maxDepth,
           c = o.transformKey || n,
-          b = {};
-        return function e(n, f, i) {
-          i = i || 1, Object.keys(n).forEach((function(d) {
-            const s = n[d],
-              l = o.safe && Array.isArray(s),
-              u = Object.prototype.toString.call(s),
-              y = t(s),
-              p = "[object Object]" === u || "[object Array]" === u,
-              g = f ? f + r + c(d) : c(d);
-            if (!l && !y && p && Object.keys(s).length && (!o.maxDepth || i < a)) return e(s, g, i + 1);
-            b[g] = s
+          f = {};
+        return function e(n, i, s) {
+          s = s || 1, Object.keys(n).forEach((function(b) {
+            const l = n[b],
+              u = o.safe && Array.isArray(l),
+              d = Object.prototype.toString.call(l),
+              y = t(l),
+              p = "[object Object]" === d || "[object Array]" === d,
+              g = i ? i + r + c(b) : c(b);
+            if (!u && !y && p && Object.keys(l).length && (!o.maxDepth || s < a)) return e(l, g, s + 1);
+            f[g] = l
           }))
-        }(e), b
+        }(e), f
       }
       e.exports = o, o.flatten = o, o.unflatten = function e(r, a) {
         const c = (a = a || {}).delimiter || ".",
-          b = a.overwrite || !1,
-          f = a.transformKey || n,
-          i = {};
+          f = a.overwrite || !1,
+          i = a.transformKey || n,
+          s = {};
         if (t(r) || "[object Object]" !== Object.prototype.toString.call(r)) return r;
 
-        function d(e) {
+        function b(e) {
           const t = Number(e);
           return isNaN(t) || -1 !== e.indexOf(".") || a.object ? e : t
         }
@@ -66,19 +66,19 @@ _global.SENTRY_RELEASE = {
             }), t)
           }(t, e, o(r[t], a))
         }), {}), Object.keys(r).forEach((function(t) {
-          const n = t.split(c).map(f);
-          let o = d(n.shift()),
-            s = d(n[0]),
-            l = i;
-          for (; void 0 !== s;) {
+          const n = t.split(c).map(i);
+          let o = b(n.shift()),
+            l = b(n[0]),
+            u = s;
+          for (; void 0 !== l;) {
             if ("__proto__" === o) return;
-            const e = Object.prototype.toString.call(l[o]),
+            const e = Object.prototype.toString.call(u[o]),
               t = "[object Object]" === e || "[object Array]" === e;
-            if (!b && !t && void 0 !== l[o]) return;
-            (b && !t || !b && null == l[o]) && (l[o] = "number" != typeof s || a.object ? {} : []), l = l[o], n.length > 0 && (o = d(n.shift()), s = d(n[0]))
+            if (!f && !t && void 0 !== u[o]) return;
+            (f && !t || !f && null == u[o]) && (u[o] = "number" != typeof l || a.object ? {} : []), u = u[o], n.length > 0 && (o = b(n.shift()), l = b(n[0]))
           }
-          l[o] = e(r[t], a)
-        })), i
+          u[o] = e(r[t], a)
+        })), s
       }
     }
   }

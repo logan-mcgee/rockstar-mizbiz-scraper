@@ -19,14 +19,14 @@ _global.SENTRY_RELEASE = {
     2124: (e, t, n) => {
       n.r(t), n.d(t, {
         afterMain: () => O,
-        afterRead: () => y,
+        afterRead: () => b,
         afterWrite: () => D,
         applyStyles: () => W,
         arrow: () => Z,
         auto: () => s,
         basePlacements: () => f,
         beforeMain: () => w,
-        beforeRead: () => b,
+        beforeRead: () => g,
         beforeWrite: () => E,
         bottom: () => o,
         clippingParents: () => d,
@@ -34,10 +34,10 @@ _global.SENTRY_RELEASE = {
         createPopper: () => Le,
         createPopperBase: () => _e,
         createPopperLite: () => We,
-        detectOverflow: () => be,
+        detectOverflow: () => ge,
         end: () => p,
         eventListeners: () => oe,
-        flip: () => ge,
+        flip: () => ye,
         hide: () => xe,
         left: () => a,
         main: () => x,
@@ -48,7 +48,7 @@ _global.SENTRY_RELEASE = {
         popperGenerator: () => Pe,
         popperOffsets: () => Ee,
         preventOverflow: () => je,
-        read: () => g,
+        read: () => y,
         reference: () => m,
         right: () => i,
         start: () => c,
@@ -75,16 +75,16 @@ _global.SENTRY_RELEASE = {
         v = [].concat(f, [s]).reduce((function(e, t) {
           return e.concat([t, t + "-" + c, t + "-" + p])
         }), []),
-        b = "beforeRead",
-        g = "read",
-        y = "afterRead",
+        g = "beforeRead",
+        y = "read",
+        b = "afterRead",
         w = "beforeMain",
         x = "main",
         O = "afterMain",
         E = "beforeWrite",
         j = "write",
         D = "afterWrite",
-        k = [b, g, y, w, x, O, E, j, D];
+        k = [g, y, b, w, x, O, E, j, D];
 
       function A(e) {
         return e ? (e.nodeName || "").toLowerCase() : null
@@ -301,15 +301,15 @@ _global.SENTRY_RELEASE = {
                 })) : e) ? e : Q(e, f))
               }(c.padding, n),
               v = q(p),
-              b = "y" === u ? r : a,
-              g = "y" === u ? o : i,
-              y = n.rects.reference[m] + n.rects.reference[u] - d[u] - n.rects.popper[m],
+              g = "y" === u ? r : a,
+              y = "y" === u ? o : i,
+              b = n.rects.reference[m] + n.rects.reference[u] - d[u] - n.rects.popper[m],
               w = d[u] - n.rects.reference[u],
               x = X(p),
               O = x ? "y" === u ? x.clientHeight || 0 : x.clientWidth || 0 : 0,
-              E = y / 2 - w / 2,
-              j = h[b],
-              D = O - v[m] - h[g],
+              E = b / 2 - w / 2,
+              j = h[g],
+              D = O - v[m] - h[y],
               k = O / 2 - v[m] / 2 + E,
               A = J(j, k, D),
               M = u;
@@ -347,18 +347,18 @@ _global.SENTRY_RELEASE = {
           m = e.adaptive,
           h = e.roundOffsets,
           v = e.isFixed,
-          b = d.x,
-          g = void 0 === b ? 0 : b,
-          y = d.y,
-          w = void 0 === y ? 0 : y,
+          g = d.x,
+          y = void 0 === g ? 0 : g,
+          b = d.y,
+          w = void 0 === b ? 0 : b,
           x = "function" == typeof h ? h({
-            x: g,
+            x: y,
             y: w
           }) : {
-            x: g,
+            x: y,
             y: w
           };
-        g = x.x, w = x.y;
+        y = x.x, w = x.y;
         var O = d.hasOwnProperty("x"),
           E = d.hasOwnProperty("y"),
           j = a,
@@ -368,7 +368,7 @@ _global.SENTRY_RELEASE = {
           var A = X(n),
             P = "clientHeight",
             _ = "clientWidth";
-          A === M(n) && "static" !== N(A = U(n)).position && "absolute" === l && (P = "scrollHeight", _ = "scrollWidth"), (f === r || (f === a || f === i) && c === p) && (D = o, w -= (v && A === k && k.visualViewport ? k.visualViewport.height : A[P]) - s.height, w *= u ? 1 : -1), f !== a && (f !== r && f !== o || c !== p) || (j = i, g -= (v && A === k && k.visualViewport ? k.visualViewport.width : A[_]) - s.width, g *= u ? 1 : -1)
+          A === M(n) && "static" !== N(A = U(n)).position && "absolute" === l && (P = "scrollHeight", _ = "scrollWidth"), (f === r || (f === a || f === i) && c === p) && (D = o, w -= (v && A === k && k.visualViewport ? k.visualViewport.height : A[P]) - s.height, w *= u ? 1 : -1), f !== a && (f !== r && f !== o || c !== p) || (j = i, y -= (v && A === k && k.visualViewport ? k.visualViewport.width : A[_]) - s.width, y *= u ? 1 : -1)
         }
         var L, W = Object.assign({
             position: l
@@ -382,13 +382,13 @@ _global.SENTRY_RELEASE = {
               y: S(r * o) / o || 0
             }
           }({
-            x: g,
+            x: y,
             y: w
           }, M(n)) : {
-            x: g,
+            x: y,
             y: w
           };
-        return g = R.x, w = R.y, u ? Object.assign({}, W, ((L = {})[D] = E ? "0" : "", L[j] = O ? "0" : "", L.transform = (k.devicePixelRatio || 1) <= 1 ? "translate(" + g + "px, " + w + "px)" : "translate3d(" + g + "px, " + w + "px, 0)", L)) : Object.assign({}, W, ((t = {})[D] = E ? w + "px" : "", t[j] = O ? g + "px" : "", t.transform = "", t))
+        return y = R.x, w = R.y, u ? Object.assign({}, W, ((L = {})[D] = E ? "0" : "", L[j] = O ? "0" : "", L.transform = (k.devicePixelRatio || 1) <= 1 ? "translate(" + y + "px, " + w + "px)" : "translate3d(" + y + "px, " + w + "px, 0)", L)) : Object.assign({}, W, ((t = {})[D] = E ? w + "px" : "", t[j] = O ? y + "px" : "", t.transform = "", t))
       }
       const ne = {
         name: "computeStyles",
@@ -616,7 +616,7 @@ _global.SENTRY_RELEASE = {
         return t
       }
 
-      function be(e, t) {
+      function ge(e, t) {
         void 0 === t && (t = {});
         var n = t,
           a = n.placement,
@@ -625,10 +625,10 @@ _global.SENTRY_RELEASE = {
           p = void 0 === c ? e.strategy : c,
           h = n.boundary,
           v = void 0 === h ? d : h,
-          b = n.rootBoundary,
-          g = void 0 === b ? l : b,
-          y = n.elementContext,
-          w = void 0 === y ? u : y,
+          g = n.rootBoundary,
+          y = void 0 === g ? l : g,
+          b = n.elementContext,
+          w = void 0 === b ? u : b,
           x = n.altBoundary,
           O = void 0 !== x && x,
           E = n.padding,
@@ -652,7 +652,7 @@ _global.SENTRY_RELEASE = {
                 return t.top = B(o.top, t.top), t.right = H(o.right, t.right), t.bottom = H(o.bottom, t.bottom), t.left = B(o.left, t.left), t
               }), he(e, a, r));
             return s.width = s.right - s.left, s.height = s.bottom - s.top, s.x = s.left, s.y = s.top, s
-          }(P(L) ? L : L.contextElement || U(e.elements.popper), v, g, p),
+          }(P(L) ? L : L.contextElement || U(e.elements.popper), v, y, p),
           R = V(e.elements.reference),
           S = ve({
             reference: R,
@@ -679,7 +679,7 @@ _global.SENTRY_RELEASE = {
         }
         return q
       }
-      const ge = {
+      const ye = {
         name: "flip",
         enabled: !0,
         phase: "main",
@@ -688,7 +688,7 @@ _global.SENTRY_RELEASE = {
             n = e.options,
             p = e.name;
           if (!t.modifiersData[p]._skip) {
-            for (var d = n.mainAxis, l = void 0 === d || d, u = n.altAxis, m = void 0 === u || u, b = n.fallbackPlacements, g = n.padding, y = n.boundary, w = n.rootBoundary, x = n.altBoundary, O = n.flipVariations, E = void 0 === O || O, j = n.allowedAutoPlacements, D = t.options.placement, k = R(D), A = b || (k !== D && E ? function(e) {
+            for (var d = n.mainAxis, l = void 0 === d || d, u = n.altAxis, m = void 0 === u || u, g = n.fallbackPlacements, y = n.padding, b = n.boundary, w = n.rootBoundary, x = n.altBoundary, O = n.flipVariations, E = void 0 === O || O, j = n.allowedAutoPlacements, D = t.options.placement, k = R(D), A = g || (k !== D && E ? function(e) {
                 if (R(e) === s) return [];
                 var t = ae(e);
                 return [fe(e), t, fe(t)]
@@ -712,7 +712,7 @@ _global.SENTRY_RELEASE = {
                     }));
                   0 === u.length && (u = l);
                   var m = u.reduce((function(t, n) {
-                    return t[n] = be(e, {
+                    return t[n] = ge(e, {
                       placement: n,
                       boundary: o,
                       rootBoundary: i,
@@ -724,9 +724,9 @@ _global.SENTRY_RELEASE = {
                   }))
                 }(t, {
                   placement: n,
-                  boundary: y,
+                  boundary: b,
                   rootBoundary: w,
-                  padding: g,
+                  padding: y,
                   flipVariations: E,
                   allowedAutoPlacements: j
                 }) : n)
@@ -736,12 +736,12 @@ _global.SENTRY_RELEASE = {
                 C = $(S) === c,
                 V = [r, o].indexOf(T) >= 0,
                 q = V ? "width" : "height",
-                I = be(t, {
+                I = ge(t, {
                   placement: S,
-                  boundary: y,
+                  boundary: b,
                   rootBoundary: w,
                   altBoundary: x,
-                  padding: g
+                  padding: y
                 }),
                 N = V ? C ? i : a : C ? o : r;
               P[q] > _[q] && (N = ae(N));
@@ -774,7 +774,7 @@ _global.SENTRY_RELEASE = {
         }
       };
 
-      function ye(e, t, n) {
+      function be(e, t, n) {
         return void 0 === n && (n = {
           x: 0,
           y: 0
@@ -802,14 +802,14 @@ _global.SENTRY_RELEASE = {
               r = t.rects.reference,
               o = t.rects.popper,
               i = t.modifiersData.preventOverflow,
-              a = be(t, {
+              a = ge(t, {
                 elementContext: "reference"
               }),
-              s = be(t, {
+              s = ge(t, {
                 altBoundary: !0
               }),
-              f = ye(a, r),
-              c = ye(s, o, i),
+              f = be(a, r),
+              c = be(s, o, i),
               p = we(f),
               d = we(c);
             t.modifiersData[n] = {
@@ -890,11 +890,11 @@ _global.SENTRY_RELEASE = {
               m = n.rootBoundary,
               h = n.altBoundary,
               v = n.padding,
-              b = n.tether,
-              g = void 0 === b || b,
-              y = n.tetherOffset,
-              w = void 0 === y ? 0 : y,
-              x = be(t, {
+              g = n.tether,
+              y = void 0 === g || g,
+              b = n.tetherOffset,
+              w = void 0 === b ? 0 : b,
+              x = ge(t, {
                 boundary: u,
                 rootBoundary: m,
                 padding: v,
@@ -931,11 +931,11 @@ _global.SENTRY_RELEASE = {
                   N = A[D],
                   F = N + x[C],
                   U = N - x[V],
-                  z = g ? -P[I] / 2 : 0,
+                  z = y ? -P[I] / 2 : 0,
                   Y = E === c ? M[I] : P[I],
                   K = E === c ? -P[I] : -M[I],
                   Q = t.elements.arrow,
-                  Z = g && Q ? q(Q) : {
+                  Z = y && Q ? q(Q) : {
                     width: 0,
                     height: 0
                   },
@@ -954,7 +954,7 @@ _global.SENTRY_RELEASE = {
                   se = ae ? "y" === D ? ae.clientTop || 0 : ae.clientLeft || 0 : 0,
                   fe = null != (T = null == W ? void 0 : W[D]) ? T : 0,
                   ce = N + ie - fe,
-                  pe = J(g ? H(F, N + oe - fe - se) : F, N, g ? B(U, ce) : U);
+                  pe = J(y ? H(F, N + oe - fe - se) : F, N, y ? B(U, ce) : U);
                 A[D] = pe, S[D] = pe - N
               }
               if (l) {
@@ -963,15 +963,15 @@ _global.SENTRY_RELEASE = {
                   me = A[k],
                   he = "y" === k ? "height" : "width",
                   ve = me + x[le],
-                  ge = me - x[ue],
-                  ye = -1 !== [r, a].indexOf(O),
+                  ye = me - x[ue],
+                  be = -1 !== [r, a].indexOf(O),
                   we = null != (de = null == W ? void 0 : W[k]) ? de : 0,
-                  xe = ye ? ve : me - M[he] - P[he] - we + L.altAxis,
-                  Oe = ye ? me + M[he] + P[he] - we - L.altAxis : ge,
-                  Ee = g && ye ? function(e, t, n) {
+                  xe = be ? ve : me - M[he] - P[he] - we + L.altAxis,
+                  Oe = be ? me + M[he] + P[he] - we - L.altAxis : ye,
+                  Ee = y && be ? function(e, t, n) {
                     var r = J(e, t, n);
                     return r > n ? n : r
-                  }(xe, me, Oe) : J(g ? xe : ve, me, g ? Oe : ge);
+                  }(xe, me, Oe) : J(y ? xe : ve, me, y ? Oe : ye);
                 A[k] = Ee, S[k] = Ee - me
               }
               t.modifiersData[s] = S
@@ -1165,7 +1165,7 @@ _global.SENTRY_RELEASE = {
       }
       var _e = Pe(),
         Le = Pe({
-          defaultModifiers: [oe, Ee, ne, W, Oe, ge, je, Z, xe]
+          defaultModifiers: [oe, Ee, ne, W, Oe, ye, je, Z, xe]
         }),
         We = Pe({
           defaultModifiers: [oe, Ee, ne, W]

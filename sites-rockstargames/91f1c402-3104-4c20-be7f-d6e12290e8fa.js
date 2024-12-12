@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       o = (new Error).stack;
-    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "8ddcde32-f846-410c-aa4f-4511722ebcec", e._sentryDebugIdIdentifier = "sentry-dbid-8ddcde32-f846-410c-aa4f-4511722ebcec")
+    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "91f1c402-3104-4c20-be7f-d6e12290e8fa", e._sentryDebugIdIdentifier = "sentry-dbid-91f1c402-3104-4c20-be7f-d6e12290e8fa")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -241,9 +241,9 @@ _global.SENTRY_RELEASE = {
           } = n, C = d?.indexOf(p), [P, S] = (0, i.useState)(d?.length || 0), {
             track: G
           } = (0, f.useGtmTrack)(), E = null !== d && (d?.length || 0) > 1 && ("flag_bg" === g || "fob" === R?.size), [I, M] = (0, u.useSearchParams)(), [N, L] = (0, i.useState)(!1), [B, A] = (0, i.useState)(!1), [D, T] = (0, i.useState)(), U = e => {
-            "number" == typeof e && d && e < d.length && e > -1 && (console.log("navigating to: ", e), M({
+            "number" == typeof e && d && e < d.length && e > -1 && M({
               info: d[e].toString()
-            }))
+            })
           }, V = () => {
             const e = C > -1 ? C - 1 : 0;
             U(e), G({
@@ -270,7 +270,7 @@ _global.SENTRY_RELEASE = {
           }), [C, d]), (0, i.useEffect)((() => {
             const e = d?.findIndex((e => e === p));
             "number" == typeof e && (A(e <= 0), L(e >= P - 1))
-          }), [d, p]);
+          }), [d, p, P]);
           const [H] = (0, i.useState)({
             y: z,
             x: j,

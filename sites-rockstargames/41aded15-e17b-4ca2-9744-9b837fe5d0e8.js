@@ -16,33 +16,33 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [5678], {
-    75678: (e, a, d) => {
-      d.r(a), d.d(a, {
-        default: () => b
+    75678: (e, a, s) => {
+      s.r(a), s.d(a, {
+        default: () => i
       });
-      var s = d(71403),
-        t = d(25076),
-        n = d(78722),
-        o = d.n(n),
-        r = d(70396),
-        l = d(42756),
-        f = d(46632);
-      const b = (0, l.withTranslations)((e => {
+      var t = s(71403),
+        d = s(25076),
+        n = s(78722),
+        o = s.n(n),
+        r = s(70396),
+        l = s(42756),
+        f = s(46632);
+      const i = (0, l.withTranslations)((e => {
         let {
           t: a
         } = e;
-        const d = (0, t.useParams)(),
+        const s = (0, d.useParams)(),
           {
             setBreadcrumb: n,
             setNormalLogo: l
           } = (0, r.useRockstarLocalState)();
-        return (0, s.useEffect)((() => (n([{
+        return (0, t.useEffect)((() => (n([{
           href: "/newswire",
           title: a("Newswire")
         }], ""), () => {
           l(!0), n()
         })), []), (0, f.jsx)(o(), {
-          idHash: String(d.articleId)
+          idHash: String(s.articleId)
         })
       }))
     }

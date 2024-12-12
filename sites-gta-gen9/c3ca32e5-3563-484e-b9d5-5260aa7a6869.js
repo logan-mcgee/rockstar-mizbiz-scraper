@@ -19,13 +19,13 @@ _global.SENTRY_RELEASE = {
     61622: (o, t, e) => {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => _,
-        Lightbox_Close_Button_Tooltip: () => a,
+        Lightbox_Close_Button_Tooltip: () => n,
         Lightbox_Download_Button_Label: () => L,
         Lightbox_Download_Button_Tooltip: () => r,
         Lightbox_Open_Button_Label: () => h,
         Lightbox_Reset_Zoom_Button_Label: () => d,
         Lightbox_Reset_Zoom_Button_Tooltip: () => g,
-        Lightbox_Zoom_In_Button_Label: () => n,
+        Lightbox_Zoom_In_Button_Label: () => a,
         Lightbox_Zoom_In_Button_Tooltip: () => l,
         Lightbox_Zoom_Out_Button_Label: () => b,
         Lightbox_Zoom_Out_Button__Tooltip: () => i,
@@ -34,8 +34,8 @@ _global.SENTRY_RELEASE = {
         default: () => f
       });
       var _ = "Закрыть всплывающее окно",
-        a = "Нажмите {shortcut}",
-        n = "Увеличить размер изображения",
+        n = "Нажмите {shortcut}",
+        a = "Увеличить размер изображения",
         l = "Нажмите {shortcut}",
         b = "Уменьшить размер изображения",
         i = "Нажмите {shortcut}",
@@ -48,8 +48,8 @@ _global.SENTRY_RELEASE = {
         h = "Увеличить изображение",
         f = {
           Lightbox_Close_Button_Label: _,
-          Lightbox_Close_Button_Tooltip: a,
-          Lightbox_Zoom_In_Button_Label: n,
+          Lightbox_Close_Button_Tooltip: n,
+          Lightbox_Zoom_In_Button_Label: a,
           Lightbox_Zoom_In_Button_Tooltip: l,
           Lightbox_Zoom_Out_Button_Label: b,
           Lightbox_Zoom_Out_Button__Tooltip: i,

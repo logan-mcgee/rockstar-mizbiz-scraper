@@ -135,7 +135,7 @@ _global.SENTRY_RELEASE = {
         return null == e || m.has(e) ? e : null
       }
 
-      function b(e, t) {
+      function v(e, t) {
         let n, o, a, i, s;
         if (c(d = e) && "form" === d.tagName.toLowerCase()) {
           let s = e.getAttribute("action");
@@ -179,8 +179,8 @@ _global.SENTRY_RELEASE = {
           body: s
         }
       }
-      const v = ["onClick", "relative", "reloadDocument", "replace", "state", "target", "to", "preventScrollReset", "unstable_viewTransition"],
-        w = ["aria-current", "caseSensitive", "className", "end", "style", "to", "unstable_viewTransition", "children"],
+      const w = ["onClick", "relative", "reloadDocument", "replace", "state", "target", "to", "preventScrollReset", "unstable_viewTransition"],
+        b = ["aria-current", "caseSensitive", "className", "end", "style", "to", "unstable_viewTransition", "children"],
         h = ["reloadDocument", "replace", "state", "method", "action", "onSubmit", "submit", "relative", "preventScrollReset", "unstable_viewTransition"];
 
       function g(e, t) {
@@ -267,7 +267,7 @@ _global.SENTRY_RELEASE = {
           future: r
         } = e, [i, s] = o.useState(n.state), [l, u] = o.useState(), [c, d] = o.useState({
           isTransitioning: !1
-        }), [f, m] = o.useState(), [p, b] = o.useState(), [v, w] = o.useState(), {
+        }), [f, m] = o.useState(), [p, v] = o.useState(), [w, b] = o.useState(), {
           v7_startTransition: h
         } = r || {}, g = o.useCallback((e => {
           h ? function(e) {
@@ -277,7 +277,7 @@ _global.SENTRY_RELEASE = {
           let {
             unstable_viewTransitionOpts: o
           } = t;
-          o && null != n.window && "function" == typeof n.window.document.startViewTransition ? p && f ? (f.resolve(), p.skipTransition(), w({
+          o && null != n.window && "function" == typeof n.window.document.startViewTransition ? p && f ? (f.resolve(), p.skipTransition(), b({
             state: e,
             currentLocation: o.currentLocation,
             nextLocation: o.nextLocation
@@ -297,20 +297,20 @@ _global.SENTRY_RELEASE = {
                 g((() => s(e))), await t
               }));
             o.finished.finally((() => {
-              m(void 0), b(void 0), u(void 0), d({
+              m(void 0), v(void 0), u(void 0), d({
                 isTransitioning: !1
               })
-            })), b(o)
+            })), v(o)
           }
         }), [g, l, f, n.window]), o.useEffect((() => {
           f && l && i.location.key === l.location.key && f.resolve()
         }), [f, p, i.location, l]), o.useEffect((() => {
-          !c.isTransitioning && v && (u(v.state), d({
+          !c.isTransitioning && w && (u(w.state), d({
             isTransitioning: !0,
-            currentLocation: v.currentLocation,
-            nextLocation: v.nextLocation
-          }), w(void 0))
-        }), [c.isTransitioning, v]);
+            currentLocation: w.currentLocation,
+            nextLocation: w.nextLocation
+          }), b(void 0))
+        }), [c.isTransitioning, w]);
         let R = o.useMemo((() => ({
             createHref: n.createHref,
             encodeLocation: n.encodeLocation,
@@ -452,10 +452,10 @@ _global.SENTRY_RELEASE = {
               state: f,
               target: m,
               to: p,
-              preventScrollReset: b,
-              unstable_viewTransition: w
+              preventScrollReset: v,
+              unstable_viewTransition: b
             } = e,
-            h = s(e, v),
+            h = s(e, w),
             {
               basename: g
             } = o.useContext(a.jb),
@@ -473,9 +473,9 @@ _global.SENTRY_RELEASE = {
               replace: d,
               state: f,
               target: m,
-              preventScrollReset: b,
+              preventScrollReset: v,
               relative: u,
-              unstable_viewTransition: w
+              unstable_viewTransition: b
             });
           return o.createElement("a", i({}, h, {
             href: n || R,
@@ -496,11 +496,11 @@ _global.SENTRY_RELEASE = {
             to: d,
             unstable_viewTransition: f,
             children: m
-          } = e, p = s(e, w), b = (0, a.x$)(d, {
+          } = e, p = s(e, b), v = (0, a.x$)(d, {
             relative: p.relative
-          }), v = (0, a.zy)(), h = o.useContext(a.Rq), {
+          }), w = (0, a.zy)(), h = o.useContext(a.Rq), {
             navigator: g
-          } = o.useContext(a.jb), y = null != h && ne(b) && !0 === f, R = g.encodeLocation ? g.encodeLocation(b).pathname : b.pathname, S = v.pathname, E = h && h.navigation && h.navigation.location ? h.navigation.location.pathname : null;
+          } = o.useContext(a.jb), y = null != h && ne(v) && !0 === f, R = g.encodeLocation ? g.encodeLocation(v).pathname : v.pathname, S = w.pathname, E = h && h.navigation && h.navigation.location ? h.navigation.location.pathname : null;
           r || (S = S.toLowerCase(), E = E ? E.toLowerCase() : null, R = R.toLowerCase());
           let T, _ = S === R || !u && S.startsWith(R) && "/" === S.charAt(R.length),
             L = null != E && (E === R || !u && E.startsWith(R) && "/" === E.charAt(R.length)),
@@ -539,13 +539,13 @@ _global.SENTRY_RELEASE = {
             submit: f,
             relative: m,
             preventScrollReset: p,
-            unstable_viewTransition: b
-          } = e, v = s(e, h), w = "get" === u.toLowerCase() ? "get" : "post", g = Y(c, {
+            unstable_viewTransition: v
+          } = e, w = s(e, h), b = "get" === u.toLowerCase() ? "get" : "post", g = Y(c, {
             relative: m
           });
           return o.createElement("form", i({
             ref: t,
-            method: w,
+            method: b,
             action: g,
             onSubmit: n ? d : e => {
               if (d && d(e), e.defaultPrevented) return;
@@ -558,10 +558,10 @@ _global.SENTRY_RELEASE = {
                 state: r,
                 relative: m,
                 preventScrollReset: p,
-                unstable_viewTransition: b
+                unstable_viewTransition: v
               })
             }
-          }, v))
+          }, w))
         }));
 
       function I(e) {
@@ -654,7 +654,7 @@ _global.SENTRY_RELEASE = {
             encType: s,
             formData: l,
             body: u
-          } = b(o, t);
+          } = v(o, t);
           e.navigate(a.action || r, {
             preventScrollReset: a.preventScrollReset,
             formData: l,
@@ -683,7 +683,7 @@ _global.SENTRY_RELEASE = {
             encType: u,
             formData: c,
             body: d
-          } = b(o, i);
+          } = v(o, i);
           null == t && (0, r.Oi)(!1), n.fetch(e, t, a.action || s, {
             preventScrollReset: a.preventScrollReset,
             formData: c,

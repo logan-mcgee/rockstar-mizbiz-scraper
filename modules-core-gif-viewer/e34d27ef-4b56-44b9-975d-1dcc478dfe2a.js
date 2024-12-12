@@ -20,8 +20,8 @@ _global.SENTRY_RELEASE = {
       "use strict";
       var n = i(784),
         o = Symbol.for("react.element"),
-        d = (Symbol.for("react.fragment"), Object.prototype.hasOwnProperty),
-        r = n.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        r = (Symbol.for("react.fragment"), Object.prototype.hasOwnProperty),
+        d = n.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         s = {
           key: !0,
           ref: !0,
@@ -33,7 +33,7 @@ _global.SENTRY_RELEASE = {
         var n, t = {},
           l = null,
           c = null;
-        for (n in void 0 !== i && (l = "" + i), void 0 !== a.key && (l = "" + a.key), void 0 !== a.ref && (c = a.ref), a) d.call(a, n) && !s.hasOwnProperty(n) && (t[n] = a[n]);
+        for (n in void 0 !== i && (l = "" + i), void 0 !== a.key && (l = "" + a.key), void 0 !== a.ref && (c = a.ref), a) r.call(a, n) && !s.hasOwnProperty(n) && (t[n] = a[n]);
         if (e && e.defaultProps)
           for (n in a = e.defaultProps) void 0 === t[n] && (t[n] = a[n]);
         return {
@@ -42,7 +42,7 @@ _global.SENTRY_RELEASE = {
           key: l,
           ref: c,
           props: t,
-          _owner: r.current
+          _owner: d.current
         }
       }
       a.jsx = t, a.jsxs = t
@@ -58,7 +58,7 @@ _global.SENTRY_RELEASE = {
       });
       var n = i(784),
         o = i(407);
-      const d = {
+      const r = {
         hiddenMobile: "rockstargames-modules-core-gif-viewerff7b0b8c8b5337d09e0494100b0f4bca",
         hiddenLarge: "rockstargames-modules-core-gif-viewerb5f7015455ef0b013385884e296f9b47",
         "hidden-sm": "rockstargames-modules-core-gif-viewerb0a40020f6ade9f5b03e6dd84fd7c720",
@@ -87,14 +87,14 @@ _global.SENTRY_RELEASE = {
         videoDesktop: "rockstargames-modules-core-gif-viewerc29cfac86e2c81ed526dac35af666f9d",
         mutable: "rockstargames-modules-core-gif-viewerd7de22cf0597def1dd4ca337c1401d4b"
       };
-      var r = i(614),
+      var d = i(614),
         s = i(632);
       const t = e => {
           let {
             hashes: a,
             hover: i,
             loop: o,
-            sound: r
+            sound: d
           } = e;
           const {
             desktop: t = null,
@@ -103,21 +103,21 @@ _global.SENTRY_RELEASE = {
             autoPlay: !i,
             hover: i,
             loop: o,
-            sound: r,
+            sound: d,
             muted: f
           };
           return (0, s.jsxs)("div", {
             onClick: () => u(!f),
             children: [t && (0, s.jsx)(l, {
-              className: [c ? d.hiddenMobile : "", d.videoDesktop].join(" "),
+              className: [c ? r.hiddenMobile : "", r.videoDesktop].join(" "),
               hash: t,
               ...m
             }), c && (0, s.jsx)(l, {
-              className: [t ? d.hiddenLarge : "", d.videoMobile].join(" "),
+              className: [t ? r.hiddenLarge : "", r.videoMobile].join(" "),
               hash: c,
               ...m
             }), m.sound ? (0, s.jsx)("div", {
-              className: [d.muteBtn, f ? "" : d.unMuted].join(" ")
+              className: [r.muteBtn, f ? "" : r.unMuted].join(" ")
             }) : ""]
           })
         },
@@ -133,13 +133,13 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             data: m
-          } = (0, o.useQuery)(r.GifInfo, {
+          } = (0, o.useQuery)(d.GifInfo, {
             variables: {
               hash: i
             }
           }), b = (0, n.useRef)();
           return m ? (0, s.jsx)("div", {
-            className: [a, d.video, u ? d.mutable : ""].join(" "),
+            className: [a, r.video, u ? r.mutable : ""].join(" "),
             onMouseEnter: () => t && void b.current.play(),
             onMouseLeave: () => t && (b.current.pause(), void(b.current.currentTime = 0)),
             children: (0, s.jsx)("video", {
@@ -158,7 +158,7 @@ _global.SENTRY_RELEASE = {
             style: i,
             title: n,
             caption: o,
-            hero: r = !1,
+            hero: d = !1,
             loop: l = !0,
             sound: c = !1,
             hover: f = !1
@@ -168,7 +168,7 @@ _global.SENTRY_RELEASE = {
             [e]: a[e]
           })));
           return (0, s.jsxs)("figure", {
-            className: `${d.gifWrapper} ${r?d.gifWrapperHero:""}`,
+            className: `${r.gifWrapper} ${d?r.gifWrapperHero:""}`,
             style: i,
             children: [(0, s.jsx)(t, {
               hashes: u,
@@ -393,26 +393,26 @@ _global.SENTRY_RELEASE = {
         }
       }
 
-      function d(e, a) {
+      function r(e, a) {
         var i = {
           kind: e.kind,
           definitions: [o(e, a)]
         };
         e.hasOwnProperty("loc") && (i.loc = e.loc);
-        var d = n[a] || new Set,
-          r = new Set,
+        var r = n[a] || new Set,
+          d = new Set,
           s = new Set;
-        for (d.forEach((function(e) {
+        for (r.forEach((function(e) {
             s.add(e)
           })); s.size > 0;) {
           var t = s;
           s = new Set, t.forEach((function(e) {
-            r.has(e) || (r.add(e), (n[e] || new Set).forEach((function(e) {
+            d.has(e) || (d.add(e), (n[e] || new Set).forEach((function(e) {
               s.add(e)
             })))
           }))
         }
-        return r.forEach((function(a) {
+        return d.forEach((function(a) {
           var n = o(e, a);
           n && i.definitions.push(n)
         })), i
@@ -422,7 +422,7 @@ _global.SENTRY_RELEASE = {
           var a = new Set;
           i(e, a), n[e.name.value] = a
         }
-      })), e.exports = a, e.exports.GifsList = d(a, "GifsList"), e.exports.GifInfo = d(a, "GifInfo")
+      })), e.exports = a, e.exports.GifsList = r(a, "GifsList"), e.exports.GifInfo = r(a, "GifInfo")
     }
   }
 ]);

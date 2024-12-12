@@ -20,8 +20,8 @@ _global.SENTRY_RELEASE = {
       s.r(a), s.d(a, {
         default: () => m
       });
-      var d = s(71403),
-        t = s(15730),
+      var t = s(71403),
+        d = s(15730),
         c = s(96717),
         n = s(40207),
         r = s(58407),
@@ -87,18 +87,18 @@ _global.SENTRY_RELEASE = {
           let {
             mutation: a,
             query: s,
-            type: t,
+            type: d,
             t: c
           } = e;
           const n = (0, o.useQueryParams)(),
-            [i, l] = (0, d.useState)({}),
+            [i, l] = (0, t.useState)({}),
             {
               data: g
             } = (0, r.useQuery)(s, {
               variables: i,
               skip: !Object.entries(i).length
             });
-          return (0, d.useEffect)((() => {
+          return (0, t.useEffect)((() => {
             l({
               step: n.get("step")
             })
@@ -114,7 +114,7 @@ _global.SENTRY_RELEASE = {
             }), g && (0, b.jsx)(p, {
               mutation: a,
               tree: g.tree,
-              type: t,
+              type: d,
               t: c
             })]
           })
@@ -123,15 +123,15 @@ _global.SENTRY_RELEASE = {
           let {
             mutation: a,
             tree: s,
-            type: d,
+            type: t,
             t: c
           } = e;
-          const n = s.path.map((e => 1 === s.path.length && "_root" === e.feedback_type.name ? null : (0, b.jsx)(t.NavLink, {
+          const n = s.path.map((e => 1 === s.path.length && "_root" === e.feedback_type.name ? null : (0, b.jsx)(d.NavLink, {
               to: `?step=${e.id_hash}`,
               className: f[`stepIcon${e.feedback_type.name}`],
               children: e.feedback_type.title
             }, e.id_hash))),
-            r = s.next.map((e => "_root" === e.feedback_type.name ? null : (0, b.jsxs)(t.NavLink, {
+            r = s.next.map((e => "_root" === e.feedback_type.name ? null : (0, b.jsxs)(d.NavLink, {
               target: e?.feedback_type?.href ? "_blank" : "_self",
               className: f[`stepIcon${e.feedback_type.name}`],
               to: e?.feedback_type?.href ? e.feedback_type.href : `?step=${e.id_hash}`,
@@ -143,7 +143,7 @@ _global.SENTRY_RELEASE = {
               }) : ""]
             }, e.id_hash)));
           return (0, b.jsxs)("div", {
-            className: [f.steps, f[d]].join(" "),
+            className: [f.steps, f[t]].join(" "),
             children: [(0, b.jsx)("div", {
               className: f.stepsPrevious,
               children: n
@@ -161,20 +161,20 @@ _global.SENTRY_RELEASE = {
           let {
             feedbackStep: a,
             mutation: s,
-            t
+            t: d
           } = e;
           const {
             formatMessage: o
           } = (0, c.useIntl)(), {
             loggedIn: l
-          } = (0, n.useRockstarUser)(), p = (0, d.useRef)(), [g, {
+          } = (0, n.useRockstarUser)(), p = (0, t.useRef)(), [g, {
             data: m,
             error: k
           }] = (0, r.useMutation)(s);
           return l ? m?.submittal?.id ? (0, b.jsx)("div", {
             className: f.success,
             dangerouslySetInnerHTML: {
-              __html: t("feedback.enter_success")
+              __html: d("feedback.enter_success")
             }
           }) : (0, b.jsxs)("form", {
             onSubmit: e => (e => {
@@ -192,13 +192,13 @@ _global.SENTRY_RELEASE = {
               ref: p,
               maxLength: 500,
               rows: 6,
-              placeholder: t("feedback.placeholder")
+              placeholder: d("feedback.placeholder")
             }), k ? (0, b.jsx)("div", {
               className: f.error,
               children: String(k)
             }) : "", (0, b.jsx)("button", {
               type: "submit",
-              children: t("SUBMIT")
+              children: d("SUBMIT")
             })]
           }) : o(i.gtao_feedback_login_cta_text)
         },
@@ -206,12 +206,12 @@ _global.SENTRY_RELEASE = {
           let {
             mutation: a,
             query: s,
-            type: d
+            type: t
           } = e;
-          return (0, o.withTranslations)(l, "rdo" === d ? "rdr2" : d)({
+          return (0, o.withTranslations)(l, "rdo" === t ? "rdr2" : t)({
             mutation: a,
             query: s,
-            type: d
+            type: t
           })
         }
     }

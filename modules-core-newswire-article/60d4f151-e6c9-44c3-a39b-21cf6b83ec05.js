@@ -71,8 +71,8 @@ _global.SENTRY_RELEASE = {
           image: i = {},
           style: n = {},
           t: m,
-          className: b = "",
-          variant: f = null
+          className: f = "",
+          variant: b = null
         } = e, u = {};
         void 0 !== n.toggleInvertSeparator && (u = {
           "--breadcrumb-separator-filter-invert": n.toggleInvertSeparator ? "invert(0)" : "invert(1)"
@@ -115,12 +115,12 @@ _global.SENTRY_RELEASE = {
           }, e.to)))
         });
         return h?.desktop && (n.background = `url(${h.desktop}) center/cover no-repeat`), (0, d.jsx)("div", {
-          className: [b, l.title].join(" "),
+          className: [f, l.title].join(" "),
           style: {
             ...n,
             ...u
           },
-          children: "separated" === f ? (0, d.jsxs)(d.Fragment, {
+          children: "separated" === b ? (0, d.jsxs)(d.Fragment, {
             children: [(0, d.jsxs)("header", {
               "data-context": "title",
               children: [j, (0, d.jsx)("h1", {
@@ -272,8 +272,8 @@ _global.SENTRY_RELEASE = {
           starColor: t,
           style: c,
           className: m,
-          game: b,
-          noImg: f,
+          game: f,
+          noImg: b,
           columns: u,
           mobileColumns: g
         } = e;
@@ -288,7 +288,7 @@ _global.SENTRY_RELEASE = {
           },
           children: (0, i.jsx)("ul", {
             style: (0, l.safeStyles)(c),
-            className: (0, o.classList)(d.itemList, d.noImg, d[t], d[b]),
+            className: (0, o.classList)(d.itemList, d.noImg, d[t], d[f]),
             children: w.map(((e, r) => (0, i.jsx)("li", {
               dangerouslySetInnerHTML: {
                 __html: n(e.content)
@@ -297,7 +297,7 @@ _global.SENTRY_RELEASE = {
           })
         }) : (0, i.jsx)("ul", {
           style: (0, l.safeStyles)(c),
-          className: (0, o.classList)(d.itemList, d.custom, f ? d.noImg : "", t ? d[t] : "", b ? d[b] : "", m ?? ""),
+          className: (0, o.classList)(d.itemList, d.custom, b ? d.noImg : "", t ? d[t] : "", f ? d[f] : "", m ?? ""),
           children: _.map(((e, r) => (0, i.jsx)("li", {
             dangerouslySetInnerHTML: {
               __html: n(e?.content ?? e)
@@ -326,16 +326,16 @@ _global.SENTRY_RELEASE = {
           !1 === d && ("rockstargames-modules-core-newswire-articleee609f31f3685766122c2c6fc0ef0710" === s && (n = a(14572)), n = a(8820));
           const {
             width: m,
-            height: b
-          } = i, f = {
-            "--aspect-ratio": Number.isNaN(m / b) ? "" : m / b,
+            height: f
+          } = i, b = {
+            "--aspect-ratio": Number.isNaN(m / f) ? "" : m / f,
             ...l
           };
           return (0, o.jsx)("img", {
             src: n,
             className: s ?? "",
             alt: r,
-            style: f
+            style: b
           })
         },
         d = e => {
@@ -346,12 +346,12 @@ _global.SENTRY_RELEASE = {
             imageStyle: n = {}
           } = e, {
             alt: m,
-            src: b
+            src: f
           } = (0, s.useImageParser)(i);
           const {
-            isMobile: f
+            isMobile: b
           } = (0, t.useWindowResize)();
-          b.desktop || b.mobile || (m = "", b = {
+          f.desktop || f.mobile || (m = "", f = {
             mobile: a(14572),
             desktop: a(8820)
           });
@@ -364,7 +364,7 @@ _global.SENTRY_RELEASE = {
                 ...n,
                 ...i?.style
               },
-              src: f ? b.mobile || b.desktop : b?.desktop || b?.mobile,
+              src: b ? f.mobile || f.desktop : f?.desktop || f?.mobile,
               alt: m,
               className: r
             })

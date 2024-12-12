@@ -21,8 +21,8 @@ _global.SENTRY_RELEASE = {
         default: () => M
       });
       var r = n(71403),
-        a = n(57172),
-        s = n(37197),
+        s = n(57172),
+        a = n(37197),
         c = n(66105),
         i = n(42756),
         o = n(58407),
@@ -49,8 +49,8 @@ _global.SENTRY_RELEASE = {
             s: t,
             content: n,
             refLanding: r,
-            loggedIn: a,
-            addClaim: s,
+            loggedIn: s,
+            addClaim: a,
             signin: c,
             landingSlide: i
           } = e;
@@ -84,8 +84,8 @@ _global.SENTRY_RELEASE = {
               }), (0, b.jsx)("div", {
                 className: t.btnContainer,
                 children: (0, b.jsx)(f.A, {
-                  text: a ? n.introScreen.btnText.loggedIn : n.introScreen.btnText.loggedOut,
-                  onClick: a ? s : c
+                  text: s ? n.introScreen.btnText.loggedIn : n.introScreen.btnText.loggedOut,
+                  onClick: s ? a : c
                 })
               })]
             }), (0, b.jsx)("div", {
@@ -107,8 +107,8 @@ _global.SENTRY_RELEASE = {
         let {
           s: t,
           content: n,
-          refSuccess: a,
-          successSlide: s,
+          refSuccess: s,
+          successSlide: a,
           characterList: c,
           linkAccountUrl: i,
           linkMoreAccounts: o,
@@ -135,9 +135,9 @@ _global.SENTRY_RELEASE = {
             prevEl: m?.current
           })
         }), [m?.current, u?.current]), (0, b.jsxs)("div", {
-          className: [t.contentContainer, t[s], t.successSlide].join(" "),
+          className: [t.contentContainer, t[a], t.successSlide].join(" "),
           "data-type": "long",
-          ref: a,
+          ref: s,
           children: [(0, b.jsxs)("div", {
             className: t.topContent,
             children: [(0, b.jsxs)("div", {
@@ -229,14 +229,14 @@ _global.SENTRY_RELEASE = {
             s: t,
             content: n,
             unlinkedSlide: r,
-            refUnlinked: a,
-            linkConsoleText: s,
+            refUnlinked: s,
+            linkConsoleText: a,
             platformLogin: c,
             giftId: i
           } = e;
           return (0, b.jsxs)("div", {
             className: [t.contentContainer, t[r], t.unlinkedSlide, t.textContent].join(" "),
-            ref: a,
+            ref: s,
             children: [(0, b.jsx)("div", {
               className: t.textContent,
               children: (0, b.jsxs)("div", {
@@ -247,7 +247,7 @@ _global.SENTRY_RELEASE = {
                   children: n.unlinkedScreen.headline
                 }), (0, b.jsx)(v.A, {
                   variant: "secondary",
-                  buttonText: s,
+                  buttonText: a,
                   platformsAndLinks: [{
                     href: c("np"),
                     key: "ps",
@@ -289,11 +289,11 @@ _global.SENTRY_RELEASE = {
             s: t,
             errorSlide: n,
             content: r,
-            refError: a
+            refError: s
           } = e;
           return (0, b.jsxs)("div", {
             className: [t.contentContainer, t[n], t.errorSlide, t.textContent].join(" "),
-            ref: a,
+            ref: s,
             children: [(0, b.jsxs)("div", {
               className: t.textContent,
               children: [(0, b.jsxs)("div", {
@@ -413,7 +413,7 @@ _global.SENTRY_RELEASE = {
                 headline: x?.unlinkedHeadline || ""
               }
             },
-            [W] = (0, a.useSearchParams)(),
+            [W] = (0, s.useSearchParams)(),
             O = (0, o.useRockstarToken)(),
             {
               data: R,
@@ -441,8 +441,8 @@ _global.SENTRY_RELEASE = {
             [K, X] = (0, r.useState)(),
             [Z, ee] = (0, r.useState)([]),
             [te, ne] = (0, r.useState)(!1),
-            [re, ae] = (0, r.useState)(),
-            [se, ce] = (0, r.useState)("hidden"),
+            [re, se] = (0, r.useState)(),
+            [ae, ce] = (0, r.useState)("hidden"),
             [ie, oe] = (0, r.useState)("hidden"),
             [le, de] = (0, r.useState)("hidden"),
             [ue, me] = (0, r.useState)("hidden"),
@@ -537,10 +537,10 @@ _global.SENTRY_RELEASE = {
                   giftUId: t
                 }
               });
-              X(e), ae(!1)
+              X(e), se(!1)
             })()
           }), [re, $]), (0, r.useEffect)((() => {
-            "boolean" == typeof $ ? $ ? ae(!0) : (ae(!1), oe("onScreen")) : ae(!0)
+            "boolean" == typeof $ ? $ ? se(!0) : (se(!1), oe("onScreen")) : se(!0)
           }), [$]), (0, r.useEffect)((() => {
             K && Z.length > 0 ? (Ee(!0), He(T.success, !0)) : K && 0 === Z.length ? He(T.unlinked, !0) : "boolean" != typeof K && K || He(T.landing, !0)
           }), [K]), (0, r.useEffect)((() => {
@@ -550,13 +550,13 @@ _global.SENTRY_RELEASE = {
               section_layout: $ ? "signed in" : "signed out"
             }), fe(!0))
           }), [z]), (0, r.useEffect)((() => {
-            "onScreen" === se && q({
+            "onScreen" === ae && q({
               element_placement: "WOC",
               event: "alert_update",
               o_id: t,
               text: "Almost there!"
             })
-          }), [se]), (0, r.useEffect)((() => {
+          }), [ae]), (0, r.useEffect)((() => {
             "onScreen" === le && q({
               element_placement: "WOC",
               event: "alert_error",
@@ -575,7 +575,7 @@ _global.SENTRY_RELEASE = {
           }), [be]), (0, b.jsxs)(b.Fragment, {
             children: [!1, (0, b.jsx)("div", {
               className: N.interestTrackerWrapper,
-              children: (0, b.jsxs)(s.P.div, {
+              children: (0, b.jsxs)(a.P.div, {
                 className: [N.interestTracker, re && N.loader].join(" "),
                 initial: {
                   opacity: 0
@@ -642,7 +642,7 @@ _global.SENTRY_RELEASE = {
                       s: N,
                       content: M,
                       refSuccess: V,
-                      successSlide: se,
+                      successSlide: ae,
                       characterList: Z,
                       linkAccountUrl: H,
                       linkMoreAccounts: () => {

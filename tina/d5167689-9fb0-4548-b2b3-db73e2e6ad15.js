@@ -20,8 +20,8 @@ _global.SENTRY_RELEASE = {
       let r;
       t.r(n), t.d(n, {
         NIL: () => S,
-        parse: () => b,
-        stringify: () => d,
+        parse: () => h,
+        stringify: () => u,
         v1: () => g,
         v3: () => k,
         v4: () => E,
@@ -46,42 +46,42 @@ _global.SENTRY_RELEASE = {
         let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
         return i[e[n + 0]] + i[e[n + 1]] + i[e[n + 2]] + i[e[n + 3]] + "-" + i[e[n + 4]] + i[e[n + 5]] + "-" + i[e[n + 6]] + i[e[n + 7]] + "-" + i[e[n + 8]] + i[e[n + 9]] + "-" + i[e[n + 10]] + i[e[n + 11]] + i[e[n + 12]] + i[e[n + 13]] + i[e[n + 14]] + i[e[n + 15]]
       }
-      const d = function(e) {
+      const u = function(e) {
         const n = l(e, arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0);
         if (!c(n)) throw TypeError("Stringified UUID is invalid");
         return n
       };
-      let f, u, p = 0,
+      let f, d, p = 0,
         y = 0;
       const g = function(e, n, t) {
           let r = n && t || 0;
           const o = n || new Array(16);
           let s = (e = e || {}).node || f,
-            c = void 0 !== e.clockseq ? e.clockseq : u;
+            c = void 0 !== e.clockseq ? e.clockseq : d;
           if (null == s || null == c) {
             const n = e.random || (e.rng || a)();
-            null == s && (s = f = [1 | n[0], n[1], n[2], n[3], n[4], n[5]]), null == c && (c = u = 16383 & (n[6] << 8 | n[7]))
+            null == s && (s = f = [1 | n[0], n[1], n[2], n[3], n[4], n[5]]), null == c && (c = d = 16383 & (n[6] << 8 | n[7]))
           }
           let i = void 0 !== e.msecs ? e.msecs : Date.now(),
-            d = void 0 !== e.nsecs ? e.nsecs : y + 1;
-          const g = i - p + (d - y) / 1e4;
-          if (g < 0 && void 0 === e.clockseq && (c = c + 1 & 16383), (g < 0 || i > p) && void 0 === e.nsecs && (d = 0), d >= 1e4) throw new Error("uuid.v1(): Can't create more than 10M uuids/sec");
-          p = i, y = d, u = c, i += 122192928e5;
-          const b = (1e4 * (268435455 & i) + d) % 4294967296;
-          o[r++] = b >>> 24 & 255, o[r++] = b >>> 16 & 255, o[r++] = b >>> 8 & 255, o[r++] = 255 & b;
-          const h = i / 4294967296 * 1e4 & 268435455;
-          o[r++] = h >>> 8 & 255, o[r++] = 255 & h, o[r++] = h >>> 24 & 15 | 16, o[r++] = h >>> 16 & 255, o[r++] = c >>> 8 | 128, o[r++] = 255 & c;
+            u = void 0 !== e.nsecs ? e.nsecs : y + 1;
+          const g = i - p + (u - y) / 1e4;
+          if (g < 0 && void 0 === e.clockseq && (c = c + 1 & 16383), (g < 0 || i > p) && void 0 === e.nsecs && (u = 0), u >= 1e4) throw new Error("uuid.v1(): Can't create more than 10M uuids/sec");
+          p = i, y = u, d = c, i += 122192928e5;
+          const h = (1e4 * (268435455 & i) + u) % 4294967296;
+          o[r++] = h >>> 24 & 255, o[r++] = h >>> 16 & 255, o[r++] = h >>> 8 & 255, o[r++] = 255 & h;
+          const b = i / 4294967296 * 1e4 & 268435455;
+          o[r++] = b >>> 8 & 255, o[r++] = 255 & b, o[r++] = b >>> 24 & 15 | 16, o[r++] = b >>> 16 & 255, o[r++] = c >>> 8 | 128, o[r++] = 255 & c;
           for (let e = 0; e < 6; ++e) o[r + e] = s[e];
           return n || l(o)
         },
-        b = function(e) {
+        h = function(e) {
           if (!c(e)) throw TypeError("Invalid UUID");
           let n;
           const t = new Uint8Array(16);
           return t[0] = (n = parseInt(e.slice(0, 8), 16)) >>> 24, t[1] = n >>> 16 & 255, t[2] = n >>> 8 & 255, t[3] = 255 & n, t[4] = (n = parseInt(e.slice(9, 13), 16)) >>> 8, t[5] = 255 & n, t[6] = (n = parseInt(e.slice(14, 18), 16)) >>> 8, t[7] = 255 & n, t[8] = (n = parseInt(e.slice(19, 23), 16)) >>> 8, t[9] = 255 & n, t[10] = (n = parseInt(e.slice(24, 36), 16)) / 1099511627776 & 255, t[11] = n / 4294967296 & 255, t[12] = n >>> 24 & 255, t[13] = n >>> 16 & 255, t[14] = n >>> 8 & 255, t[15] = 255 & n, t
         };
 
-      function h(e, n, t) {
+      function b(e, n, t) {
         function r(e, r, o, a) {
           var s;
           if ("string" == typeof e && (e = function(e) {
@@ -89,7 +89,7 @@ _global.SENTRY_RELEASE = {
               const n = [];
               for (let t = 0; t < e.length; ++t) n.push(e.charCodeAt(t));
               return n
-            }(e)), "string" == typeof r && (r = b(r)), 16 !== (null === (s = r) || void 0 === s ? void 0 : s.length)) throw TypeError("Namespace must be array-like (16 iterable integer values, 0-255)");
+            }(e)), "string" == typeof r && (r = h(r)), 16 !== (null === (s = r) || void 0 === s ? void 0 : s.length)) throw TypeError("Namespace must be array-like (16 iterable integer values, 0-255)");
           let c = new Uint8Array(16 + e.length);
           if (c.set(r), c.set(e, r.length), c = t(c), c[6] = 15 & c[6] | n, c[8] = 63 & c[8] | 128, o) {
             a = a || 0;
@@ -133,7 +133,7 @@ _global.SENTRY_RELEASE = {
       function _(e, n, t, r, o, a, s) {
         return U(t ^ (n | ~r), e, n, o, a, s)
       }
-      const k = h("v3", 48, (function(e) {
+      const k = b("v3", 48, (function(e) {
           if ("string" == typeof e) {
             const n = unescape(encodeURIComponent(e));
             e = new Uint8Array(n.length);
@@ -200,7 +200,7 @@ _global.SENTRY_RELEASE = {
       function C(e, n) {
         return e << n | e >>> 32 - n
       }
-      const R = h("v5", 80, (function(e) {
+      const R = b("v5", 80, (function(e) {
           const n = [1518500249, 1859775393, 2400959708, 3395469782],
             t = [1732584193, 4023233417, 2562383102, 271733878, 3285377520];
           if ("string" == typeof e) {

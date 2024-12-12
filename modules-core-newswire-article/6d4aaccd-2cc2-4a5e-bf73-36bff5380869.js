@@ -27,8 +27,8 @@ _global.SENTRY_RELEASE = {
         s = d.n(l),
         t = d(26527),
         f = d.n(t),
-        b = d(31879),
-        i = d.n(b),
+        i = d(31879),
+        b = d.n(i),
         c = d(66713),
         u = d.n(c),
         _ = d(42012);
@@ -39,7 +39,7 @@ _global.SENTRY_RELEASE = {
         ClrCollapsedCard: _.h7,
         Gif: r(),
         GroupOfItems: s(),
-        RockstarVideoPlayer: i(),
+        RockstarVideoPlayer: b(),
         SwiperCarousel: f(),
         UGCJobSpotlight: u()
       }

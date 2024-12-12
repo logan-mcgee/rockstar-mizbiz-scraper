@@ -16,40 +16,40 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_gta_gen9 = self.webpackChunk_rockstargames_sites_gta_gen9 || []).push([
   [3277, 5658], {
-    83277: (e, n, d) => {
-      d.r(n), d.d(n, {
-        useGSAP: () => b
+    83277: (e, n, t) => {
+      t.r(n), t.d(n, {
+        useGSAP: () => u
       });
-      var t = d(71403),
-        a = d(26040),
-        o = d.n(a);
-      let s = "undefined" != typeof window ? t.useLayoutEffect : t.useEffect,
+      var d = t(71403),
+        a = t(26040),
+        o = t.n(a);
+      let s = "undefined" != typeof window ? d.useLayoutEffect : d.useEffect,
         f = e => e && !Array.isArray(e) && "object" == typeof e,
         r = [],
         l = {},
         i = o();
-      const b = function(e) {
+      const u = function(e) {
         let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r,
-          d = l;
-        f(e) ? (d = e, e = null, n = "dependencies" in d ? d.dependencies : r) : f(n) && (d = n, n = "dependencies" in d ? d.dependencies : r);
+          t = l;
+        f(e) ? (t = e, e = null, n = "dependencies" in t ? t.dependencies : r) : f(n) && (t = n, n = "dependencies" in t ? t.dependencies : r);
         let {
           scope: a,
           revertOnUpdate: o
-        } = d, [b, c] = (0, t.useState)(!1);
+        } = t, [u, c] = (0, d.useState)(!1);
         e && "function" != typeof e && console.warn("First parameter must be a function or config object");
-        const u = i.context((() => {}), a),
-          g = () => u.revert(),
+        const b = i.context((() => {}), a),
+          g = () => b.revert(),
           y = n && n.length && !o;
         return s((() => {
-          if (e && u.add(e, a), !y || !b) return g
+          if (e && b.add(e, a), !y || !u) return g
         }), n), y && s((() => (c(!0), g)), r), {
-          context: u,
-          contextSafe: e => u.add(null, e)
+          context: b,
+          contextSafe: e => b.add(null, e)
         }
       };
-      b.register = e => {
+      u.register = e => {
         i = e
-      }, b.headless = !0
+      }, u.headless = !0
     }
   }
 ]);

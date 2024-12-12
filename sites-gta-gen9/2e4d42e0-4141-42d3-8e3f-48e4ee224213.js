@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "66cf6d7b-ccaf-4664-bb15-6ce2e184492c", e._sentryDebugIdIdentifier = "sentry-dbid-66cf6d7b-ccaf-4664-bb15-6ce2e184492c")
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "2e4d42e0-4141-42d3-8e3f-48e4ee224213", e._sentryDebugIdIdentifier = "sentry-dbid-2e4d42e0-4141-42d3-8e3f-48e4ee224213")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -132,7 +132,7 @@ _global.SENTRY_RELEASE = {
           return (0, t.useEffect)((() => {
             e(!!l)
           }), [l]), (0, t.useEffect)((() => {
-            const e = "order" !== n.get("info") && "trailer" !== n.get("info");
+            const e = "order" !== n.get("info") && "trailer" !== n.get("info") && n.get("videoId");
             if (n.get("info") || n.get("videoId")) {
               if (e) {
                 const e = (0, _.jsx)(k.A, {

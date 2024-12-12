@@ -55,7 +55,7 @@ _global.SENTRY_RELEASE = {
     30033: (e, t, a) => {
       "use strict";
       a.r(t), a.d(t, {
-        fbar: () => f,
+        fbar: () => g,
         useAgegated: () => u
       });
       var s = a(40207),
@@ -79,8 +79,8 @@ _global.SENTRY_RELEASE = {
           const {
             track: u
           } = (0, s.useGtmTrack)(), {
-            mutateLSSettings: f
-          } = (0, n.useRockstarWebLSSettings)(), [g, p] = (0, r.useState)(null), _ = (0, r.createRef)(), b = (0, r.createRef)(), m = (0, r.createRef)(), {
+            mutateLSSettings: g
+          } = (0, n.useRockstarWebLSSettings)(), [f, p] = (0, r.useState)(null), _ = (0, r.createRef)(), m = (0, r.createRef)(), b = (0, r.createRef)(), {
             style: y
           } = a;
           (0, r.useEffect)((() => {
@@ -103,13 +103,13 @@ _global.SENTRY_RELEASE = {
               style: a?.bgImg ? {
                 backgroundImage: `url(${a.bgImg})`
               } : {}
-            }), !1 === g ? (0, i.jsx)("h5", {
+            }), !1 === f ? (0, i.jsx)("h5", {
               className: o.error,
               children: c("Please enter a valid age")
             }) : "", (0, i.jsxs)("form", {
               onSubmit: async e => {
                 e.preventDefault();
-                const t = `${m.current.value}-${_.current.value.padStart(2,0)}-${b.current.value.padStart(2,0)}`,
+                const t = `${b.current.value}-${_.current.value.padStart(2,0)}-${m.current.value.padStart(2,0)}`,
                   a = l()(t, "YYYY-MM-DD", !0).isValid();
                 if (p(a), a) {
                   const e = l()().diff(t, "years") >= 17;
@@ -120,7 +120,7 @@ _global.SENTRY_RELEASE = {
                     event: "age_gate_failed",
                     element_placement: d.element_placement ?? "",
                     text: "you may not view this content at this time"
-                  }), f({
+                  }), g({
                     key: "agegatePass",
                     value: e
                   })
@@ -142,7 +142,7 @@ _global.SENTRY_RELEASE = {
                   htmlFor: "dayInput",
                   children: [c("Day"), (0, i.jsx)("input", {
                     id: "dayInput",
-                    ref: b,
+                    ref: m,
                     placeholder: c("DD"),
                     maxLength: 2
                   })]
@@ -150,7 +150,7 @@ _global.SENTRY_RELEASE = {
                   htmlFor: "yearInput",
                   children: [c("Year"), (0, i.jsx)("input", {
                     id: "yearInput",
-                    ref: m,
+                    ref: b,
                     className: o.year,
                     placeholder: c("YYYY"),
                     maxLength: 4
@@ -183,7 +183,7 @@ _global.SENTRY_RELEASE = {
             })
           }
         },
-        f = 12
+        g = 12
     },
     3941: e => {
       function t(e) {

@@ -18,10 +18,10 @@ _global.SENTRY_RELEASE = {
   [300, 7919], {
     300: (e, t, n) => {
       n.r(t), n.d(t, {
-        InView: () => b,
+        InView: () => u,
         defaultFallbackInView: () => h,
         observe: () => c,
-        useInView: () => u
+        useInView: () => b
       });
       var i = n(71403),
         r = Object.defineProperty,
@@ -35,14 +35,14 @@ _global.SENTRY_RELEASE = {
         })(e, "symbol" != typeof t ? t + "" : t, n), n),
         o = new Map,
         a = new WeakMap,
-        d = 0,
-        l = void 0;
+        l = 0,
+        d = void 0;
 
       function h(e) {
-        l = e
+        d = e
       }
 
-      function c(e, t, n = {}, i = l) {
+      function c(e, t, n = {}, i = d) {
         if (void 0 === window.IntersectionObserver && void 0 !== i) {
           const r = e.getBoundingClientRect();
           return t(i, {
@@ -62,7 +62,7 @@ _global.SENTRY_RELEASE = {
         } = function(e) {
           const t = function(e) {
             return Object.keys(e).sort().filter((t => void 0 !== e[t])).map((t => {
-              return `${t}_${"root"===t?(n=e.root,n?(a.has(n)||(d+=1,a.set(n,d.toString())),a.get(n)):"0"):e[t]}`;
+              return `${t}_${"root"===t?(n=e.root,n?(a.has(n)||(l+=1,a.set(n,l.toString())),a.get(n)):"0"):e[t]}`;
               var n
             })).toString()
           }(e);
@@ -92,7 +92,7 @@ _global.SENTRY_RELEASE = {
             c.splice(c.indexOf(t), 1), 0 === c.length && (h.delete(e), s.unobserve(e)), 0 === h.size && (s.disconnect(), o.delete(r))
           }
       }
-      var b = class extends i.Component {
+      var u = class extends i.Component {
         constructor(e) {
           super(e), s(this, "node", null), s(this, "_unobserveCb", null), s(this, "handleNode", (e => {
             this.node && (this.unobserve(), e || this.props.triggerOnce || this.props.skip || this.setState({
@@ -164,21 +164,21 @@ _global.SENTRY_RELEASE = {
             root: s,
             rootMargin: o,
             onChange: a,
-            skip: d,
-            trackVisibility: l,
+            skip: l,
+            trackVisibility: d,
             delay: h,
             initialInView: c,
-            fallbackInView: b,
-            ...u
+            fallbackInView: u,
+            ...b
           } = this.props;
           return i.createElement(t || "div", {
             ref: this.handleNode,
-            ...u
+            ...b
           }, e)
         }
       };
 
-      function u({
+      function b({
         threshold: e,
         delay: t,
         trackVisibility: n,
@@ -186,40 +186,40 @@ _global.SENTRY_RELEASE = {
         root: s,
         triggerOnce: o,
         skip: a,
-        initialInView: d,
-        fallbackInView: l,
+        initialInView: l,
+        fallbackInView: d,
         onChange: h
       } = {}) {
-        var b;
-        const [u, f] = i.useState(null), p = i.useRef(), [g, y] = i.useState({
-          inView: !!d,
+        var u;
+        const [b, p] = i.useState(null), f = i.useRef(), [g, y] = i.useState({
+          inView: !!l,
           entry: void 0
         });
-        p.current = h, i.useEffect((() => {
-          if (a || !u) return;
+        f.current = h, i.useEffect((() => {
+          if (a || !b) return;
           let i;
-          return i = c(u, ((e, t) => {
+          return i = c(b, ((e, t) => {
             y({
               inView: e,
               entry: t
-            }), p.current && p.current(e, t), t.isIntersecting && o && i && (i(), i = void 0)
+            }), f.current && f.current(e, t), t.isIntersecting && o && i && (i(), i = void 0)
           }), {
             root: s,
             rootMargin: r,
             threshold: e,
             trackVisibility: n,
             delay: t
-          }, l), () => {
+          }, d), () => {
             i && i()
           }
-        }), [Array.isArray(e) ? e.toString() : e, u, s, r, o, a, n, l, t]);
-        const v = null == (b = g.entry) ? void 0 : b.target,
+        }), [Array.isArray(e) ? e.toString() : e, b, s, r, o, a, n, d, t]);
+        const v = null == (u = g.entry) ? void 0 : u.target,
           w = i.useRef();
-        u || !v || o || a || w.current === v || (w.current = v, y({
-          inView: !!d,
+        b || !v || o || a || w.current === v || (w.current = v, y({
+          inView: !!l,
           entry: void 0
         }));
-        const k = [f, g.inView, g.entry];
+        const k = [p, g.inView, g.entry];
         return k.ref = k[0], k.inView = k[1], k.entry = k[2], k
       }
     }

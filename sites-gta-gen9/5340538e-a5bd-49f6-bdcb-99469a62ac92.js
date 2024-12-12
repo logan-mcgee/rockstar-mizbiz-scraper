@@ -26,7 +26,7 @@ _global.SENTRY_RELEASE = {
         r = a(73167),
         i = a(98310),
         o = a(39493);
-      const d = {
+      const l = {
         pillBtn: "rockstargames-sites-gta-gen9e4a42eaa9bfb682035e61ac2e2a34515",
         selected: "rockstargames-sites-gta-gen9eb889d8958be54a67b790d7529530986",
         scCharacterCard: "rockstargames-sites-gta-gen9df279e92086c0d3c96905b3a91b369ed",
@@ -37,7 +37,7 @@ _global.SENTRY_RELEASE = {
         scRpLevel: "rockstargames-sites-gta-gen9b1f87c58a800ad546200fbf17e029f35",
         scRpIcon: "rockstargames-sites-gta-gen9f1e0bcba6214698c490b8201bbd850b7"
       };
-      var l = a(46632);
+      var d = a(46632);
       const g = (0, n.withIntl)((e => {
         let {
           characterData: s
@@ -51,12 +51,12 @@ _global.SENTRY_RELEASE = {
           } = s,
           [b, _] = (0, t.useState)(f),
           k = (0, r.A)(g, "large");
-        return (0, l.jsxs)("div", {
-          className: d.scCharacterCard,
-          children: [(0, l.jsx)("div", {
-            className: d.scAvatar,
+        return (0, d.jsxs)("div", {
+          className: l.scCharacterCard,
+          children: [(0, d.jsx)("div", {
+            className: l.scAvatar,
             "data-size": "small",
-            children: (0, l.jsx)("img", {
+            children: (0, d.jsx)("img", {
               src: b,
               alt: c.formatMessage(o.A.profile_selector_mugshot, {
                 userName: m
@@ -65,26 +65,26 @@ _global.SENTRY_RELEASE = {
                 _(a(58989))
               }
             })
-          }), (0, l.jsx)("div", {
-            className: d.scCharacterStats,
-            children: (0, l.jsxs)("div", {
-              className: d.scCharNames,
-              children: [(0, l.jsx)("img", {
+          }), (0, d.jsx)("div", {
+            className: l.scCharacterStats,
+            children: (0, d.jsxs)("div", {
+              className: l.scCharNames,
+              children: [(0, d.jsx)("img", {
                 src: k.src,
                 alt: k.alt
-              }), (0, l.jsx)("div", {
-                className: d.scUserName,
+              }), (0, d.jsx)("div", {
+                className: l.scUserName,
                 "data-size": "small",
                 children: m
-              }), (0, l.jsx)("div", {
-                className: d.scRp,
-                children: (0, l.jsxs)("div", {
-                  className: d.scRpLevel,
-                  children: [(0, l.jsx)("img", {
-                    className: d.scRpIcon,
+              }), (0, d.jsx)("div", {
+                className: l.scRp,
+                children: (0, d.jsxs)("div", {
+                  className: l.scRpLevel,
+                  children: [(0, d.jsx)("img", {
+                    className: l.scRpIcon,
                     src: (0, i.A)(u.overview.rank.value),
                     alt: c.formatMessage(o.A.profile_selector_rp_icon)
-                  }), (0, l.jsx)("span", {
+                  }), (0, d.jsx)("span", {
                     children: s.stats.overview.rank.value
                   })]
                 })
@@ -349,8 +349,8 @@ _global.SENTRY_RELEASE = {
             className: a = "",
             consoleBtn: t,
             icon: o = "",
-            img: d,
-            labelColor: l = "#000",
+            img: l,
+            labelColor: d = "#000",
             onClick: g,
             secondText: m,
             size: f,
@@ -361,13 +361,13 @@ _global.SENTRY_RELEASE = {
           } = e;
           const p = [n.plusButton, n[_] ?? "", n[f] ?? "", n[t] ?? "", a].join(" "),
             h = {
-              "--hvr-color": s ?? l,
-              "--hvr-bg-color": l ?? s,
-              "--hvr-border-color": s ?? l
+              "--hvr-color": s ?? d,
+              "--hvr-bg-color": d ?? s,
+              "--hvr-border-color": s ?? d
             },
             x = (0, c.jsxs)(c.Fragment, {
-              children: [d ? (0, c.jsx)("img", {
-                src: d,
+              children: [l ? (0, c.jsx)("img", {
+                src: l,
                 alt: ""
               }) : "", (0, c.jsxs)("div", {
                 className: n.btnText,
@@ -426,8 +426,8 @@ _global.SENTRY_RELEASE = {
         r = a(59217),
         i = a(42756),
         o = a(58407),
-        d = a(40207),
-        l = a(26177),
+        l = a(40207),
+        d = a(26177),
         g = a(96717),
         m = a(94566),
         f = a(74401),
@@ -512,9 +512,9 @@ _global.SENTRY_RELEASE = {
           characterList: r,
           linkAccountUrl: i,
           linkMoreAccounts: o,
-          linkAccountBtn: d
+          linkAccountBtn: l
         } = e;
-        const l = (0, t.createRef)(),
+        const d = (0, t.createRef)(),
           g = (0, t.createRef)(),
           m = (0, t.createRef)(),
           [f, u] = (0, t.useState)(),
@@ -524,12 +524,12 @@ _global.SENTRY_RELEASE = {
           [N, M] = (0, t.useState)(!0);
         return (0, t.useEffect)((() => {
           const e = () => {
-            l?.current && p(l?.current?.scrollWidth > l?.current?.offsetWidth)
+            d?.current && p(d?.current?.scrollWidth > d?.current?.offsetWidth)
           };
           return e(), window.addEventListener("resize", e), () => {
             window.removeEventListener("resize", e)
           }
-        }), [l]), (0, t.useEffect)((() => {
+        }), [d]), (0, t.useEffect)((() => {
           u({
             nextEl: g?.current,
             prevEl: m?.current
@@ -558,7 +558,7 @@ _global.SENTRY_RELEASE = {
               className: s.swiperWrap,
               children: [(0, b.jsx)("div", {
                 className: s.swiperContainer,
-                ref: l,
+                ref: d,
                 children: (0, b.jsxs)(h.RC, {
                   releaseOnEdges: !0,
                   touchReleaseOnEdges: !0,
@@ -588,7 +588,7 @@ _global.SENTRY_RELEASE = {
                       onClick: o,
                       children: (0, b.jsx)("div", {
                         className: s.btnText,
-                        children: d
+                        children: l
                       })
                     })
                   }, "linkMore")]
@@ -818,14 +818,14 @@ _global.SENTRY_RELEASE = {
             {
               data: z,
               loggedIn: R
-            } = (0, d.useRockstarUser)(),
+            } = (0, l.useRockstarUser)(),
             O = (0, o.useRockstarTokenPing)(),
             W = `https://${T}.rockstargames.com/settings/linkedaccounts`,
             U = (0, i.toScLocaleString)(y),
             H = (0, g.useIntl)(),
             {
               track: $
-            } = (0, d.useGtmTrack)(),
+            } = (0, l.useGtmTrack)(),
             {
               ref: F,
               inView: D
@@ -844,7 +844,7 @@ _global.SENTRY_RELEASE = {
             [te, ne] = (0, t.useState)(),
             [ce, re] = (0, t.useState)("hidden"),
             [ie, oe] = (0, t.useState)("hidden"),
-            [de, le] = (0, t.useState)("hidden"),
+            [le, de] = (0, t.useState)("hidden"),
             [ge, me] = (0, t.useState)("hidden"),
             [fe, ue] = (0, t.useState)(!1),
             [be, _e] = (0, t.useState)(N.disabled),
@@ -865,7 +865,7 @@ _global.SENTRY_RELEASE = {
             },
             We = (e, s) => {
               e === N.landing && (e => {
-                pe(N.landing), e && xe(ve), oe("onScreen"), re("hidden"), me("hidden"), le("hidden")
+                pe(N.landing), e && xe(ve), oe("onScreen"), re("hidden"), me("hidden"), de("hidden")
               })(s), e === N.success && (e => {
                 pe(N.success), e && xe(je), oe("offScreen"), re("visible"), setTimeout((() => {
                   oe("hidden"), me("hidden")
@@ -879,10 +879,10 @@ _global.SENTRY_RELEASE = {
                   me("onScreen")
                 }), 100)
               })(s), e === N.unlinked && (e => {
-                pe(N.unlinked), e && xe(Ne), oe("offScreen"), le("visible"), setTimeout((() => {
+                pe(N.unlinked), e && xe(Ne), oe("offScreen"), de("visible"), setTimeout((() => {
                   oe("hidden"), me("hidden")
                 }), 300), setTimeout((() => {
-                  le("onScreen")
+                  de("onScreen")
                 }), 100)
               })(s)
             },
@@ -957,13 +957,13 @@ _global.SENTRY_RELEASE = {
               text: "Almost there!"
             })
           }), [ce]), (0, t.useEffect)((() => {
-            "onScreen" === de && $({
+            "onScreen" === le && $({
               element_placement: "WOC",
               event: "alert_error",
               o_id: s,
               text: "No Qualifying Character Found"
             })
-          }), [de]), (0, t.useEffect)((() => {
+          }), [le]), (0, t.useEffect)((() => {
             "onScreen" === ge && $({
               element_placement: "event_label",
               event: "alert_error",
@@ -1009,7 +1009,7 @@ _global.SENTRY_RELEASE = {
                   },
                   children: te ? (0, b.jsx)("div", {
                     className: M.spinner,
-                    children: (0, b.jsx)(l.A, {
+                    children: (0, b.jsx)(d.A, {
                       type: "SPINNING"
                     })
                   }) : (0, b.jsxs)(b.Fragment, {
@@ -1059,7 +1059,7 @@ _global.SENTRY_RELEASE = {
                     }), (0, b.jsx)(C, {
                       s: M,
                       content: L,
-                      unlinkedSlide: de,
+                      unlinkedSlide: le,
                       refUnlinked: J,
                       linkConsoleText: H.formatMessage(m.engagement.engagement_link_console_account),
                       platformLogin: e => `https://${A}.rockstargames.com/tpa/${e}/link/?cid=${E}&lang=${U}&returnUrl=${encodeURIComponent(Be)}&accessToken=${B}`,

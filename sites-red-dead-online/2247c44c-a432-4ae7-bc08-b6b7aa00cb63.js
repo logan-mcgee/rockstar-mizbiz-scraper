@@ -34,7 +34,7 @@ _global.SENTRY_RELEASE = {
         LG: () => F,
         P1: () => x,
         RQ: () => g,
-        Ri: () => f,
+        Ri: () => m,
         Rq: () => l,
         UX: () => d,
         Ye: () => R,
@@ -57,7 +57,7 @@ _global.SENTRY_RELEASE = {
         wQ: () => v,
         x$: () => O,
         yN: () => c,
-        zy: () => m
+        zy: () => f
       });
       var n = r(71403),
         a = r(15261);
@@ -87,7 +87,7 @@ _global.SENTRY_RELEASE = {
         let {
           relative: r
         } = void 0 === t ? {} : t;
-        f() || (0, a.Oi)(!1);
+        m() || (0, a.Oi)(!1);
         let {
           basename: o,
           navigator: i
@@ -105,12 +105,12 @@ _global.SENTRY_RELEASE = {
         })
       }
 
-      function f() {
+      function m() {
         return null != n.useContext(c)
       }
 
-      function m() {
-        return f() || (0, a.Oi)(!1), n.useContext(c).location
+      function f() {
+        return m() || (0, a.Oi)(!1), n.useContext(c).location
       }
 
       function v() {
@@ -118,10 +118,10 @@ _global.SENTRY_RELEASE = {
       }
 
       function g(e) {
-        f() || (0, a.Oi)(!1);
+        m() || (0, a.Oi)(!1);
         let {
           pathname: t
-        } = m();
+        } = f();
         return n.useMemo((() => (0, a.B6)(e, t)), [t, e])
       }
 
@@ -145,7 +145,7 @@ _global.SENTRY_RELEASE = {
             }, a)))
           }), [e, t])
         }() : function() {
-          f() || (0, a.Oi)(!1);
+          m() || (0, a.Oi)(!1);
           let e = n.useContext(i),
             {
               basename: t,
@@ -156,7 +156,7 @@ _global.SENTRY_RELEASE = {
             } = n.useContext(d),
             {
               pathname: l
-            } = m(),
+            } = f(),
             u = JSON.stringify((0, a.sd)(o).map((e => e.pathnameBase))),
             c = n.useRef(!1);
           return b((() => {
@@ -196,7 +196,7 @@ _global.SENTRY_RELEASE = {
           matches: o
         } = n.useContext(d), {
           pathname: i
-        } = m(), l = JSON.stringify((0, a.sd)(o).map((e => e.pathnameBase)));
+        } = f(), l = JSON.stringify((0, a.sd)(o).map((e => e.pathnameBase)));
         return n.useMemo((() => (0, a.Gh)(e, JSON.parse(l), i, "path" === r)), [e, l, i, r])
       }
 
@@ -205,14 +205,14 @@ _global.SENTRY_RELEASE = {
       }
 
       function k(e, t, r) {
-        f() || (0, a.Oi)(!1);
+        m() || (0, a.Oi)(!1);
         let {
           navigator: i
         } = n.useContext(s), {
           matches: l
         } = n.useContext(d), u = l[l.length - 1], p = u ? u.params : {}, h = (u && u.pathname, u ? u.pathnameBase : "/");
         u && u.route;
-        let v, g = m();
+        let v, g = f();
         if (t) {
           var b;
           let e = "string" == typeof t ? (0, a.Rr)(t) : t;
@@ -508,12 +508,12 @@ _global.SENTRY_RELEASE = {
           state: o,
           relative: i
         } = e;
-        f() || (0, a.Oi)(!1);
+        m() || (0, a.Oi)(!1);
         let {
           matches: l
         } = n.useContext(d), {
           pathname: u
-        } = m(), s = E(), c = (0, a.Gh)(t, (0, a.sd)(l).map((e => e.pathnameBase)), u, "path" === i), p = JSON.stringify(c);
+        } = f(), s = E(), c = (0, a.Gh)(t, (0, a.sd)(l).map((e => e.pathnameBase)), u, "path" === i), p = JSON.stringify(c);
         return n.useEffect((() => s(JSON.parse(p), {
           replace: r,
           state: o,
@@ -538,7 +538,7 @@ _global.SENTRY_RELEASE = {
           navigator: l,
           static: u = !1
         } = e;
-        f() && (0, a.Oi)(!1);
+        m() && (0, a.Oi)(!1);
         let d = t.replace(/^\/*/, "/"),
           p = n.useMemo((() => ({
             basename: d,
@@ -548,7 +548,7 @@ _global.SENTRY_RELEASE = {
         "string" == typeof o && (o = (0, a.Rr)(o));
         let {
           pathname: h = "/",
-          search: m = "",
+          search: f = "",
           hash: v = "",
           state: g = null,
           key: b = "default"
@@ -557,14 +557,14 @@ _global.SENTRY_RELEASE = {
           return null == e ? null : {
             location: {
               pathname: e,
-              search: m,
+              search: f,
               hash: v,
               state: g,
               key: b
             },
             navigationType: i
           }
-        }), [d, h, m, v, g, b, i]);
+        }), [d, h, f, v, g, b, i]);
         return null == E ? null : n.createElement(s.Provider, {
           value: p
         }, n.createElement(c.Provider, {

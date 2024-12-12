@@ -16,39 +16,39 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_gta_gen9 = self.webpackChunk_rockstargames_sites_gta_gen9 || []).push([
   [6632], {
-    26516: (e, a, d) => {
-      var t = d(71403),
-        n = Symbol.for("react.element"),
-        o = Symbol.for("react.fragment"),
-        r = Object.prototype.hasOwnProperty,
-        s = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        f = {
+    26516: (e, a, t) => {
+      var n = t(71403),
+        o = Symbol.for("react.element"),
+        r = Symbol.for("react.fragment"),
+        d = Object.prototype.hasOwnProperty,
+        s = n.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        l = {
           key: !0,
           ref: !0,
           __self: !0,
           __source: !0
         };
 
-      function l(e, a, d) {
-        var t, o = {},
-          l = null,
-          b = null;
-        for (t in void 0 !== d && (l = "" + d), void 0 !== a.key && (l = "" + a.key), void 0 !== a.ref && (b = a.ref), a) r.call(a, t) && !f.hasOwnProperty(t) && (o[t] = a[t]);
+      function f(e, a, t) {
+        var n, r = {},
+          f = null,
+          _ = null;
+        for (n in void 0 !== t && (f = "" + t), void 0 !== a.key && (f = "" + a.key), void 0 !== a.ref && (_ = a.ref), a) d.call(a, n) && !l.hasOwnProperty(n) && (r[n] = a[n]);
         if (e && e.defaultProps)
-          for (t in a = e.defaultProps) void 0 === o[t] && (o[t] = a[t]);
+          for (n in a = e.defaultProps) void 0 === r[n] && (r[n] = a[n]);
         return {
-          $$typeof: n,
+          $$typeof: o,
           type: e,
-          key: l,
-          ref: b,
-          props: o,
+          key: f,
+          ref: _,
+          props: r,
           _owner: s.current
         }
       }
-      a.Fragment = o, a.jsx = l, a.jsxs = l
+      a.Fragment = r, a.jsx = f, a.jsxs = f
     },
-    46632: (e, a, d) => {
-      e.exports = d(26516)
+    46632: (e, a, t) => {
+      e.exports = t(26516)
     }
   }
 ]);

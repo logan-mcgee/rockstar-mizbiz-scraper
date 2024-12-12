@@ -25,8 +25,8 @@ _global.SENTRY_RELEASE = {
         r = a.n(o),
         n = a(600);
       const l = "__MFE_GLOBAL_HOOK__";
-      var c = a(3963),
-        i = a(2756),
+      var i = a(3963),
+        c = a(2756),
         d = a(6717);
       const m = JSON.parse('{"us":{"home_text":"Home","rockstar_games_logo_alt_text":"Rockstar Games Logo"},"de":{"home_text":"Startseite","rockstar_games_logo_alt_text":"Rockstar-Games-Logo"},"es":{"home_text":"Inicio","rockstar_games_logo_alt_text":"Logo de Rockstar Games"},"mx":{"home_text":"Inicio","rockstar_games_logo_alt_text":"Logo de Rockstar Games"},"fr":{"home_text":"Accueil","rockstar_games_logo_alt_text":"Logo Rockstar Games"},"it":{"home_text":"Home","rockstar_games_logo_alt_text":"Logo di Rockstar Games"},"jp":{"home_text":"ホーム","rockstar_games_logo_alt_text":"ロックスター・ゲームスロゴ"},"kr":{"home_text":"홈","rockstar_games_logo_alt_text":"Rockstar Games 로고"},"pl":{"home_text":"Strona główna","rockstar_games_logo_alt_text":"Logo Rockstar Games"},"br":{"home_text":"Início","rockstar_games_logo_alt_text":"Logotipo da Rockstar Games"},"ru":{"home_text":"Главная страница","rockstar_games_logo_alt_text":"Логотип Rockstar Games"},"hans":{"home_text":"主页","rockstar_games_logo_alt_text":"Rockstar Games 标志"},"tw":{"home_text":"首頁","rockstar_games_logo_alt_text":"Rockstar Games 標誌"}}');
       var _ = a(207),
@@ -74,14 +74,14 @@ _global.SENTRY_RELEASE = {
           } = (0, w.c3)(), {
             windowWidth: a,
             windowHeight: o
-          } = (0, i.useWindowResize)(), {
+          } = (0, c.useWindowResize)(), {
             mutateLSSettings: r
-          } = (0, i.useRockstarWebLSSettings)(), {
+          } = (0, c.useRockstarWebLSSettings)(), {
             track: n
           } = (0, _.useGtmTrack)(), {
             currentSite: l,
             sites: d
-          } = (0, c.A)(), m = (0, s.useBase)(), u = "promo_banner2", f = (0, k.useRef)(), b = (0, k.useRef)(null), h = (0, k.useRef)(null), E = (0, k.useRef)(null), I = (0, k.useRef)(null), A = (0, k.useRef)(null), C = (0, k.useRef)(null), {
+          } = (0, i.A)(), m = (0, s.useBase)(), u = "promo_banner2", f = (0, k.useRef)(), b = (0, k.useRef)(null), h = (0, k.useRef)(null), E = (0, k.useRef)(null), I = (0, k.useRef)(null), A = (0, k.useRef)(null), C = (0, k.useRef)(null), {
             ctaButtonRef: G,
             timelines: N,
             addTimeline: S,
@@ -183,7 +183,7 @@ _global.SENTRY_RELEASE = {
                         n({
                           event: "cta_other",
                           element_placement: "banner"
-                        }), l?.site === c.C.socialClub ? window.location.href = `https://${d.www}.rockstargames.com/VI` : window.location.href = `${m}VI`
+                        }), l?.site === i.C.socialClub ? window.location.href = `https://${d.www}.rockstargames.com/VI` : window.location.href = `${m}VI`
                       }
                     }), (0, v.jsx)(j.A, {
                       closeRef: b,
@@ -226,9 +226,9 @@ _global.SENTRY_RELEASE = {
             t = (0, s.useBase)(),
             {
               currentSite: a
-            } = (0, c.A)(),
-            o = a?.site === c.C.socialClub ? "/" : t;
-          return (0, v.jsx)(i.ResizeProvider, {
+            } = (0, i.A)(),
+            o = a?.site === i.C.socialClub ? "/" : t;
+          return (0, v.jsx)(c.ResizeProvider, {
             children: (0, v.jsx)(r(), {
               history: e,
               basename: o,

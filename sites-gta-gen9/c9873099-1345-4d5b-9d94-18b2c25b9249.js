@@ -83,21 +83,21 @@ _global.SENTRY_RELEASE = {
         c = Math.max,
         i = Math.min;
       e.exports = function(e, t, s) {
-        var d, l, o, g, m, u, f = 0,
+        var l, o, d, g, m, u, f = 0,
           b = !1,
           x = !1,
           _ = !0;
         if ("function" != typeof e) throw new TypeError("Expected a function");
 
         function h(t) {
-          var s = d,
-            a = l;
-          return d = l = void 0, f = t, g = e.apply(a, s)
+          var s = l,
+            a = o;
+          return l = o = void 0, f = t, g = e.apply(a, s)
         }
 
         function k(e) {
           var s = e - u;
-          return void 0 === u || s >= t || s < 0 || x && e - f >= o
+          return void 0 === u || s >= t || s < 0 || x && e - f >= d
         }
 
         function w() {
@@ -105,18 +105,18 @@ _global.SENTRY_RELEASE = {
           if (k(e)) return p(e);
           m = setTimeout(w, function(e) {
             var s = t - (e - u);
-            return x ? i(s, o - (e - f)) : s
+            return x ? i(s, d - (e - f)) : s
           }(e))
         }
 
         function p(e) {
-          return m = void 0, _ && d ? h(e) : (d = l = void 0, g)
+          return m = void 0, _ && l ? h(e) : (l = o = void 0, g)
         }
 
         function v() {
           var e = n(),
             s = k(e);
-          if (d = arguments, l = this, u = e, s) {
+          if (l = arguments, o = this, u = e, s) {
             if (void 0 === m) return function(e) {
               return f = e, m = setTimeout(w, t), b ? h(e) : g
             }(u);
@@ -124,8 +124,8 @@ _global.SENTRY_RELEASE = {
           }
           return void 0 === m && (m = setTimeout(w, t)), g
         }
-        return t = r(t) || 0, a(s) && (b = !!s.leading, o = (x = "maxWait" in s) ? c(r(s.maxWait) || 0, t) : o, _ = "trailing" in s ? !!s.trailing : _), v.cancel = function() {
-          void 0 !== m && clearTimeout(m), f = 0, d = u = l = m = void 0
+        return t = r(t) || 0, a(s) && (b = !!s.leading, d = (x = "maxWait" in s) ? c(r(s.maxWait) || 0, t) : d, _ = "trailing" in s ? !!s.trailing : _), v.cancel = function() {
+          void 0 !== m && clearTimeout(m), f = 0, l = u = o = m = void 0
         }, v.flush = function() {
           return void 0 === m ? g : p(n())
         }, v
@@ -161,8 +161,8 @@ _global.SENTRY_RELEASE = {
         r = s(87416),
         c = /^[-+]0x[0-9a-f]+$/i,
         i = /^0b[01]+$/i,
-        d = /^0o[0-7]+$/i,
-        l = parseInt;
+        l = /^0o[0-7]+$/i,
+        o = parseInt;
       e.exports = function(e) {
         if ("number" == typeof e) return e;
         if (r(e)) return NaN;
@@ -173,13 +173,13 @@ _global.SENTRY_RELEASE = {
         if ("string" != typeof e) return 0 === e ? e : +e;
         e = a(e);
         var s = i.test(e);
-        return s || d.test(e) ? l(e.slice(2), s ? 2 : 8) : c.test(e) ? NaN : +e
+        return s || l.test(e) ? o(e.slice(2), s ? 2 : 8) : c.test(e) ? NaN : +e
       }
     },
     62811: (e, t, s) => {
       "use strict";
       s.d(t, {
-        A: () => d
+        A: () => l
       });
       var a = s(89779);
       const n = {
@@ -225,25 +225,25 @@ _global.SENTRY_RELEASE = {
             onClick: n,
             style: c,
             to: i,
-            ariaLabel: d
+            ariaLabel: l
           } = e;
           return (0, r.jsx)(a.NavLink, {
             className: s,
             onClick: n,
             style: c,
             to: i,
-            "aria-label": d,
+            "aria-label": l,
             children: t
           })
         },
-        d = e => {
+        l = e => {
           let {
             btnColor: t = "#fff",
             className: s = "",
             consoleBtn: a,
-            icon: d = "",
-            img: l,
-            labelColor: o = "#000",
+            icon: l = "",
+            img: o,
+            labelColor: d = "#000",
             onClick: g,
             secondText: m,
             size: u,
@@ -254,17 +254,17 @@ _global.SENTRY_RELEASE = {
           } = e;
           const h = [n.plusButton, n[x] ?? "", n[u] ?? "", n[a] ?? "", s].join(" "),
             k = {
-              "--hvr-color": t ?? o,
-              "--hvr-bg-color": o ?? t,
-              "--hvr-border-color": t ?? o
+              "--hvr-color": t ?? d,
+              "--hvr-bg-color": d ?? t,
+              "--hvr-border-color": t ?? d
             },
             w = (0, r.jsxs)(r.Fragment, {
-              children: [l ? (0, r.jsx)("img", {
-                src: l,
+              children: [o ? (0, r.jsx)("img", {
+                src: o,
                 alt: ""
               }) : "", (0, r.jsxs)("div", {
                 className: n.btnText,
-                icon: d,
+                icon: l,
                 children: [f, m ? (0, r.jsx)("span", {
                   children: m
                 }) : ""]
@@ -319,14 +319,14 @@ _global.SENTRY_RELEASE = {
         r = s(74401),
         c = s(28089);
       var i = s(46632);
-      const d = e => {
+      const l = e => {
         let {
           backgroundImage: t,
           image: s,
           logoHorizontalPosition: a,
-          logoVerticalPosition: d,
-          enableOverlay: l = !1,
-          overlayBackground: o = "rgba(0,0,0,0.25)"
+          logoVerticalPosition: l,
+          enableOverlay: o = !1,
+          overlayBackground: d = "rgba(0,0,0,0.25)"
         } = e;
         const g = (0, c.useImageParser)(s ?? {}),
           m = (0, r.useGetCdnSource)(t?.mobile ?? null),
@@ -334,9 +334,9 @@ _global.SENTRY_RELEASE = {
           f = g?.src?.mobile,
           b = g?.src?.desktop ?? f;
         return (0, i.jsx)("div", {
-          className: n()("rockstargames-sites-gta-gen9ed09e8cd8784cef75c8e083c6d5195e5", l ? "rockstargames-sites-gta-gen9ba63665ed9f22bf03682026e6367a0b3" : ""),
+          className: n()("rockstargames-sites-gta-gen9ed09e8cd8784cef75c8e083c6d5195e5", o ? "rockstargames-sites-gta-gen9ba63665ed9f22bf03682026e6367a0b3" : ""),
           style: {
-            "--overlay-background-color": o
+            "--overlay-background-color": d
           },
           children: (0, i.jsx)("div", {
             className: "rockstargames-sites-gta-gen9d46e1512d9373817c2ca8cac7190158b",
@@ -344,7 +344,7 @@ _global.SENTRY_RELEASE = {
               "--background-image-mobile": `url(${m})`,
               "--background-image-desktop": `url(${u})`,
               "--logo-justify-position": a ?? "normal",
-              "--logo-align-position": d ?? "normal"
+              "--logo-align-position": l ?? "normal"
             },
             children: b && (0, i.jsx)("img", {
               src: b,
@@ -354,8 +354,8 @@ _global.SENTRY_RELEASE = {
           })
         })
       };
-      var l = s(71403),
-        o = s(44632),
+      var o = s(71403),
+        d = s(44632),
         g = s(42756),
         m = s(96717);
       const u = (0, m.defineMessages)({
@@ -431,16 +431,16 @@ _global.SENTRY_RELEASE = {
             status: s = "active",
             theme: a,
             includeSeconds: c = !1,
-            showBackground: d,
+            showBackground: l,
             backgroundColor: b,
             successBgImages: x,
             failureBgImages: _
           } = e;
           const {
             isMobile: h
-          } = (0, g.useWindowResize)(), [k, w] = (0, l.useState)(!1), p = (0, r.useGetCdnSource)(x?.imageLeft?.mobile ?? null), v = (0, r.useGetCdnSource)(x?.imageLeft?.desktop ?? p), j = (0, r.useGetCdnSource)(x?.imageRight?.mobile ?? null), N = (0, r.useGetCdnSource)(x?.imageRight?.desktop ?? j), y = (0, r.useGetCdnSource)(_?.imageLeft?.mobile ?? null), M = (0, r.useGetCdnSource)(_?.imageLeft?.desktop ?? y), S = (0, r.useGetCdnSource)(_?.imageRight?.mobile ?? null), C = (0, r.useGetCdnSource)(_?.imageRight?.desktop ?? S), B = (0, l.useCallback)(((e, t) => {
+          } = (0, g.useWindowResize)(), [k, w] = (0, o.useState)(!1), p = (0, r.useGetCdnSource)(x?.imageLeft?.mobile ?? null), v = (0, r.useGetCdnSource)(x?.imageLeft?.desktop ?? p), j = (0, r.useGetCdnSource)(x?.imageRight?.mobile ?? null), N = (0, r.useGetCdnSource)(x?.imageRight?.desktop ?? j), y = (0, r.useGetCdnSource)(_?.imageLeft?.mobile ?? null), M = (0, r.useGetCdnSource)(_?.imageLeft?.desktop ?? y), S = (0, r.useGetCdnSource)(_?.imageRight?.mobile ?? null), C = (0, r.useGetCdnSource)(_?.imageRight?.desktop ?? S), B = (0, o.useCallback)(((e, t) => {
             const s = new Date,
-              a = (0, o.O)(e, s);
+              a = (0, d.O)(e, s);
             return a <= 0 ? (w(!0), {
               days: "00",
               hours: "00",
@@ -452,8 +452,8 @@ _global.SENTRY_RELEASE = {
               minutes: String(Math.floor(a % 3600 / 60)).padStart(2, "0"),
               seconds: t ? String(Math.floor(a % 60)).padStart(2, "0") : "00"
             }
-          }), []), [I, L] = (0, l.useState)((() => B(t, c)));
-          return (0, l.useEffect)((() => {
+          }), []), [I, L] = (0, o.useState)((() => B(t, c)));
+          return (0, o.useEffect)((() => {
             const e = setInterval((() => {
               L(B(t, c))
             }), c ? 1e3 : 6e4);
@@ -466,7 +466,7 @@ _global.SENTRY_RELEASE = {
               "--counter-text-stroke-width": a?.enableTextStroke ? a?.textStrokeWidth : "unset",
               "--counter-text-shadow": a?.enableTextShadow ? a.textShadow : "unset",
               "--counter-text-gradient": a?.enableTextGradient ? a.textGradient : "none",
-              "--counter-background-color": d ? b : "none",
+              "--counter-background-color": l ? b : "none",
               "--counter-orientation": "vertical" === a?.counterOrientation ? "column" : "row"
             },
             children: ["active" === s && (0, i.jsxs)(i.Fragment, {
@@ -641,12 +641,12 @@ _global.SENTRY_RELEASE = {
             final: r
           } = e;
           const c = (0, m.useIntl)(),
-            d = a ? "rockstargames-sites-gta-gen9bd115bca85c8165906ec9ebc6c5978e3" : "",
-            l = r ? "rockstargames-sites-gta-gen9d8aea31b88e125cdeed883c2bb2a3cd3" : "";
+            l = a ? "rockstargames-sites-gta-gen9bd115bca85c8165906ec9ebc6c5978e3" : "",
+            o = r ? "rockstargames-sites-gta-gen9d8aea31b88e125cdeed883c2bb2a3cd3" : "";
           return (0, i.jsx)("div", {
             className: "rockstargames-sites-gta-gen9d6e710a1f92fd65be7c9672ad80cf3d9",
             children: (0, i.jsxs)("div", {
-              className: n()("rockstargames-sites-gta-gen9feab6bd12128b95efa364a54487b2901", d, l),
+              className: n()("rockstargames-sites-gta-gen9feab6bd12128b95efa364a54487b2901", l, o),
               children: [(0, i.jsxs)("div", {
                 className: "rockstargames-sites-gta-gen9f135a449f2811af9aabb7c1f865f8969",
                 children: [(0, i.jsx)("h4", {
@@ -708,14 +708,14 @@ _global.SENTRY_RELEASE = {
             initialTitle: r,
             initialDate: c
           } = e;
-          const d = (0, l.useRef)(null),
-            o = (0, l.useRef)(null),
-            [m, u] = (0, l.useState)(!1),
+          const l = (0, o.useRef)(null),
+            d = (0, o.useRef)(null),
+            [m, u] = (0, o.useState)(!1),
             {
               isMobile: f
             } = (0, g.useWindowResize)();
-          if ((0, g.useCursorScroll)(d), (0, l.useEffect)((() => {
-              f && d.current && o.current && (d.current.scrollLeft = o.current.getBoundingClientRect().left - window.innerWidth / 2, d.current.addEventListener("scroll", (e => {
+          if ((0, g.useCursorScroll)(l), (0, o.useEffect)((() => {
+              f && l.current && d.current && (l.current.scrollLeft = d.current.getBoundingClientRect().left - window.innerWidth / 2, l.current.addEventListener("scroll", (e => {
                 const t = e.target;
                 t && Math.ceil(t.scrollLeft + t.clientWidth) >= t.scrollWidth ? u(!0) : u(!1)
               })))
@@ -739,20 +739,20 @@ _global.SENTRY_RELEASE = {
               })]
             }), (0, i.jsx)("div", {
               className: p.milestoneScroll,
-              ref: d,
+              ref: l,
               children: (0, i.jsxs)("div", {
                 className: p.milestoneGroup,
                 children: [(0, i.jsxs)("div", {
                   className: p.milestoneFlags,
                   children: [-1 === b ? (0, i.jsx)("div", {
-                    ref: o,
+                    ref: d,
                     className: p.milestoneFlag,
                     "data-testid": "marker",
                     children: (0, i.jsx)(w, {})
                   }) : (0, i.jsx)("div", {
                     className: p.milestoneFlag
                   }), n.map(((e, t) => t === b ? (0, i.jsx)("div", {
-                    ref: o,
+                    ref: d,
                     className: p.milestoneFlag,
                     "data-testid": "marker",
                     children: (0, i.jsx)(w, {})
@@ -880,20 +880,20 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             isMobile: a
-          } = (0, g.useWindowResize)(), n = (0, m.useIntl)(), c = (0, l.useRef)(null), d = (0, l.useRef)(null), o = (0, l.useRef)(null), u = (0, l.useRef)(), [f, b] = (0, l.useState)(!1), [x, _] = (0, l.useState)(), [h, k] = (0, l.useState)(!1), [w, p] = (0, l.useState)(!1), {
+          } = (0, g.useWindowResize)(), n = (0, m.useIntl)(), c = (0, o.useRef)(null), l = (0, o.useRef)(null), d = (0, o.useRef)(null), u = (0, o.useRef)(), [f, b] = (0, o.useState)(!1), [x, _] = (0, o.useState)(), [h, k] = (0, o.useState)(!1), [w, p] = (0, o.useState)(!1), {
             track: v
           } = (0, N.useGtmTrack)(), S = u?.current?.swiper, L = t?.heading, T = t?.cards;
-          (0, l.useEffect)((() => {
+          (0, o.useEffect)((() => {
             if (S && "number" == typeof S?.params?.slidesPerView) {
               const e = S.slides?.length;
               b(e > S.params.slidesPerView)
             }
-          }), [T, S?.params.slidesPerView]), (0, l.useEffect)((() => {
+          }), [T, S?.params.slidesPerView]), (0, o.useEffect)((() => {
             _({
-              nextEl: d.current,
+              nextEl: l.current,
               prevEl: c.current
             })
-          }), [d, c]);
+          }), [l, c]);
           const G = () => {
               S?.slidePrev(300, !1), v({
                 event: "carousel_prev",
@@ -920,7 +920,7 @@ _global.SENTRY_RELEASE = {
                 ...s
               })
             }), (0, i.jsx)("div", {
-              ref: o,
+              ref: d,
               className: I.rightColumn,
               children: T?.length ? (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsxs)("div", {
@@ -940,7 +940,7 @@ _global.SENTRY_RELEASE = {
                       disabled: h
                     }), (0, i.jsx)("button", {
                       "data-testid": "nextBtn",
-                      ref: d,
+                      ref: l,
                       className: (0, r.classList)(I.nextBtn, w ? I.disabled : ""),
                       onClick: F,
                       onKeyDown: R,
@@ -1014,7 +1014,7 @@ _global.SENTRY_RELEASE = {
                       disabled: h
                     }), (0, i.jsx)("button", {
                       "data-testid": "nextBtn",
-                      ref: d,
+                      ref: l,
                       className: (0, r.classList)(I.nextBtn, w ? I.disabled : ""),
                       onClick: F,
                       onKeyDown: R,
@@ -1067,7 +1067,7 @@ _global.SENTRY_RELEASE = {
             className: T.communityChallenges,
             children: (0, i.jsxs)("div", {
               className: T.wrapper,
-              children: [t && (0, i.jsx)(d, {
+              children: [t && (0, i.jsx)(l, {
                 ...t
               }), (0, i.jsxs)("div", {
                 className: T.content,

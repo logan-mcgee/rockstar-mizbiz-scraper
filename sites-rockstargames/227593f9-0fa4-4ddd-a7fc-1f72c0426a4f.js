@@ -16,16 +16,16 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [760], {
-    70760: (e, a, d) => {
-      d.r(a), d.d(a, {
+    70760: (e, a, s) => {
+      s.r(a), s.d(a, {
         default: () => t
       });
-      var s = d(46632);
-      const t = () => (0, s.jsxs)("div", {
+      var d = s(46632);
+      const t = () => (0, d.jsxs)("div", {
         className: "rockstargames-sites-rockstargamesc4061150feb48d282a2363b7cbed6ac5",
-        children: [(0, s.jsx)("div", {
+        children: [(0, d.jsx)("div", {
           className: "rockstargames-sites-rockstargamesa026b866e5e33e40478c738b8a6714fd"
-        }), (0, s.jsx)("h3", {
+        }), (0, d.jsx)("h3", {
           children: "Standard Deviation is now a part of Rockstar Games."
         })]
       })
