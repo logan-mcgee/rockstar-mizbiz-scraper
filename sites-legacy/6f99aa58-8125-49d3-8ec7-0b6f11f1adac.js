@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "d63903b9-b53c-4dd7-b92f-5e3ab46e98f4", e._sentryDebugIdIdentifier = "sentry-dbid-d63903b9-b53c-4dd7-b92f-5e3ab46e98f4")
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "6f99aa58-8125-49d3-8ec7-0b6f11f1adac", e._sentryDebugIdIdentifier = "sentry-dbid-6f99aa58-8125-49d3-8ec7-0b6f11f1adac")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -8680,44 +8680,44 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: n
-          } = (0, u.useGtmTrack)(), [c, d] = (0, Ka.useSearchParams)(), {
-            tagId: m = null
-          } = (0, Ka.useParams)(), [g, f] = (0, o.useState)(m ?? s ?? c.get("tag_id")), [h, b] = (0, o.useState)(1), [k, v] = (0, o.useState)(20), [_, y] = (0, o.useState)([]), [x, N] = (0, o.useState)(null), [j, {
-            loading: w,
-            data: S
+          } = (0, u.useGtmTrack)(), c = (0, m.useLocale)(), [d, g] = (0, Ka.useSearchParams)(), {
+            tagId: f = null
+          } = (0, Ka.useParams)(), [h, b] = (0, o.useState)(f ?? s ?? d.get("tag_id")), [k, v] = (0, o.useState)(1), [_, y] = (0, o.useState)(20), [x, N] = (0, o.useState)([]), [j, w] = (0, o.useState)(null), [S, {
+            loading: C,
+            data: T
           }] = (0, l.useLazyQuery)(gi(), {
             variables: {
-              tagId: Number(g),
-              page: h,
+              tagId: Number(h),
+              page: k,
               metaUrl: i,
-              limit: k,
-              locale: "en_us"
+              limit: _,
+              locale: c
             }
           });
           return (0, o.useEffect)((() => {
-            b(1), y([]), v(20), f(m ?? s ?? c.get("tag_id")), j()
-          }), [c.get("tag_id"), m, s]), (0, o.useEffect)((() => {
-            const e = _;
-            S?.posts?.paging && N(S?.posts?.paging), S?.posts?.results && y(e.concat(S?.posts?.results))
-          }), [S]), (0, o.useEffect)((() => {
+            v(1), N([]), y(20), b(f ?? s ?? d.get("tag_id")), S()
+          }), [d.get("tag_id"), f, s]), (0, o.useEffect)((() => {
+            const e = x;
+            T?.posts?.paging && w(T?.posts?.paging), T?.posts?.results && N(e.concat(T?.posts?.results))
+          }), [T]), (0, o.useEffect)((() => {
             (() => {
-              const e = c.get("page"),
+              const e = d.get("page"),
                 a = Number(e ?? 1);
-              v(20 * a), j()
+              y(20 * a), S()
             })()
-          }), []), _.length ? (0, p.jsxs)("div", {
+          }), []), x.length ? (0, p.jsxs)("div", {
             "data-testid": "newswire-list",
             children: [(0, p.jsx)(bi, {
               section: a,
-              posts: _,
+              posts: x,
               relativeTo: t,
-              noSpecialOrder: null !== g
-            }), null !== x && x.nextPage ? (0, p.jsx)(Ct, {
+              noSpecialOrder: null !== h
+            }), null !== j && j.nextPage ? (0, p.jsx)(Ct, {
               "data-testid": "more-stories",
               onClick: e => {
-                const a = c.get("page"),
-                  t = Number(a ?? h) + 1;
-                b(t), 20 !== k && v(20), j(), d({
+                const a = d.get("page"),
+                  t = Number(a ?? k) + 1;
+                v(t), 20 !== _ && y(20), S(), g({
                   page: String(t)
                 }, {
                   replace: !0
@@ -8727,7 +8727,7 @@ _global.SENTRY_RELEASE = {
                   element_placement: "newswire"
                 })
               },
-              disabled: w,
+              disabled: C,
               context: "secondary",
               children: r("More Stories")
             }) : ""]

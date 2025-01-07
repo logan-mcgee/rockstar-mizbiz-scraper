@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "54b56366-d404-47c5-b5a7-e98d94ca0623", e._sentryDebugIdIdentifier = "sentry-dbid-54b56366-d404-47c5-b5a7-e98d94ca0623")
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "7d471222-8541-4184-8763-f4aa64b542fb", e._sentryDebugIdIdentifier = "sentry-dbid-7d471222-8541-4184-8763-f4aa64b542fb")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -2487,61 +2487,61 @@ _global.SENTRY_RELEASE = {
             section: a = "",
             relativeTo: t = "",
             tagId: n = null,
-            metaUrl: i = "/newswire",
-            t: o
+            metaUrl: o = "/newswire",
+            t: c
           } = e;
           const {
-            track: c
-          } = (0, d.useGtmTrack)(), [l, m] = (0, _.useSearchParams)(), {
-            tagId: p = null
-          } = (0, _.useParams)(), [u, f] = (0, r.useState)(p ?? n ?? l.get("tag_id")), [k, b] = (0, r.useState)(1), [h, v] = (0, r.useState)(20), [x, w] = (0, r.useState)([]), [y, j] = (0, r.useState)(null), [N, {
-            loading: S,
-            data: z
+            track: l
+          } = (0, d.useGtmTrack)(), m = (0, i.useLocale)(), [p, u] = (0, _.useSearchParams)(), {
+            tagId: f = null
+          } = (0, _.useParams)(), [k, b] = (0, r.useState)(f ?? n ?? p.get("tag_id")), [h, v] = (0, r.useState)(1), [x, w] = (0, r.useState)(20), [y, j] = (0, r.useState)([]), [N, S] = (0, r.useState)(null), [z, {
+            loading: O,
+            data: E
           }] = (0, s.useLazyQuery)(Oa(), {
             variables: {
-              tagId: Number(u),
-              page: k,
-              metaUrl: i,
-              limit: h,
-              locale: "en_us"
+              tagId: Number(k),
+              page: h,
+              metaUrl: o,
+              limit: x,
+              locale: m
             }
           });
           return (0, r.useEffect)((() => {
-            b(1), w([]), v(20), f(p ?? n ?? l.get("tag_id")), N()
-          }), [l.get("tag_id"), p, n]), (0, r.useEffect)((() => {
-            const e = x;
-            z?.posts?.paging && j(z?.posts?.paging), z?.posts?.results && w(e.concat(z?.posts?.results))
-          }), [z]), (0, r.useEffect)((() => {
+            v(1), j([]), w(20), b(f ?? n ?? p.get("tag_id")), z()
+          }), [p.get("tag_id"), f, n]), (0, r.useEffect)((() => {
+            const e = y;
+            E?.posts?.paging && S(E?.posts?.paging), E?.posts?.results && j(e.concat(E?.posts?.results))
+          }), [E]), (0, r.useEffect)((() => {
             (() => {
-              const e = l.get("page"),
+              const e = p.get("page"),
                 a = Number(e ?? 1);
-              v(20 * a), N()
+              w(20 * a), z()
             })()
-          }), []), x.length ? (0, g.jsxs)("div", {
+          }), []), y.length ? (0, g.jsxs)("div", {
             "data-testid": "newswire-list",
             children: [(0, g.jsx)(Sa, {
               section: a,
-              posts: x,
+              posts: y,
               relativeTo: t,
-              noSpecialOrder: null !== u
-            }), null !== y && y.nextPage ? (0, g.jsx)(ha, {
+              noSpecialOrder: null !== k
+            }), null !== N && N.nextPage ? (0, g.jsx)(ha, {
               "data-testid": "more-stories",
               onClick: e => {
-                const a = l.get("page"),
-                  t = Number(a ?? k) + 1;
-                b(t), 20 !== h && v(20), N(), m({
+                const a = p.get("page"),
+                  t = Number(a ?? h) + 1;
+                v(t), 20 !== x && w(20), z(), u({
                   page: String(t)
                 }, {
                   replace: !0
-                }), c({
+                }), l({
                   event: "cta_learn",
                   text: "more stories",
                   element_placement: "newswire"
                 })
               },
-              disabled: S,
+              disabled: O,
               context: "secondary",
-              children: o("More Stories")
+              children: c("More Stories")
             }) : ""]
           }) : null
         })),

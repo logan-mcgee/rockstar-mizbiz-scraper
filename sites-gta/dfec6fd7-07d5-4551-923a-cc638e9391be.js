@@ -49,8 +49,8 @@ _global.SENTRY_RELEASE = {
     },
     3496: (e, t, n) => {
       n.d(t, {
-        C: () => u,
-        f: () => c
+        C: () => c,
+        f: () => u
       });
       var r = n(226);
 
@@ -101,12 +101,12 @@ _global.SENTRY_RELEASE = {
                 var n = t;
                 t = [], n.forEach(e)
               },
-              u = function() {
+              c = function() {
                 return Promise.resolve().then(a)
               };
-            u(), n = {
+            c(), n = {
               push: function(e) {
-                t.push(e), u()
+                t.push(e), c()
               },
               filter: function(e) {
                 return t = t.filter(e), n
@@ -116,11 +116,11 @@ _global.SENTRY_RELEASE = {
         }
       }
 
-      function u(e, t) {
+      function c(e, t) {
         return void 0 === t && (t = o), a(e, t)
       }
 
-      function c(e) {
+      function u(e) {
         void 0 === e && (e = {});
         var t = a(null);
         return t.options = (0, r.Cl)({
@@ -133,8 +133,8 @@ _global.SENTRY_RELEASE = {
       n.d(t, {
         C6: () => o,
         Cl: () => a,
-        Tt: () => u,
-        fX: () => c
+        Tt: () => c,
+        fX: () => u
       });
       var r = function(e, t) {
         return r = Object.setPrototypeOf || {
@@ -163,7 +163,7 @@ _global.SENTRY_RELEASE = {
         }, a.apply(this, arguments)
       };
 
-      function u(e, t) {
+      function c(e, t) {
         var n = {};
         for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && t.indexOf(r) < 0 && (n[r] = e[r]);
         if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -173,7 +173,7 @@ _global.SENTRY_RELEASE = {
         return n
       }
 
-      function c(e, t, n) {
+      function u(e, t, n) {
         if (n || 2 === arguments.length)
           for (var r, o = 0, a = t.length; o < a; o++) !r && o in t || (r || (r = Array.prototype.slice.call(t, 0, o)), r[o] = t[o]);
         return e.concat(r || Array.prototype.slice.call(t))

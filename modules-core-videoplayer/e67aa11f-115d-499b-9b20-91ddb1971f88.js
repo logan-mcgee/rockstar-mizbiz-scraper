@@ -1,8 +1,8 @@
 ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "e67aa11f-115d-499b-9b20-91ddb1971f88", e._sentryDebugIdIdentifier = "sentry-dbid-e67aa11f-115d-499b-9b20-91ddb1971f88")
+      t = (new Error).stack;
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "e67aa11f-115d-499b-9b20-91ddb1971f88", e._sentryDebugIdIdentifier = "sentry-dbid-e67aa11f-115d-499b-9b20-91ddb1971f88")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -16,9 +16,9 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_videoplayer = self.webpackChunk_rockstargames_modules_core_videoplayer || []).push([
   [725, 106], {
-    6516: (e, a, t) => {
+    6516: (e, t, a) => {
       "use strict";
-      var r = t(1403),
+      var r = a(1403),
         s = Symbol.for("react.element"),
         n = Symbol.for("react.fragment"),
         l = Object.prototype.hasOwnProperty,
@@ -30,89 +30,89 @@ _global.SENTRY_RELEASE = {
           __source: !0
         };
 
-      function i(e, a, t) {
+      function c(e, t, a) {
         var r, n = {},
-          i = null,
-          c = null;
-        for (r in void 0 !== t && (i = "" + t), void 0 !== a.key && (i = "" + a.key), void 0 !== a.ref && (c = a.ref), a) l.call(a, r) && !d.hasOwnProperty(r) && (n[r] = a[r]);
+          c = null,
+          i = null;
+        for (r in void 0 !== a && (c = "" + a), void 0 !== t.key && (c = "" + t.key), void 0 !== t.ref && (i = t.ref), t) l.call(t, r) && !d.hasOwnProperty(r) && (n[r] = t[r]);
         if (e && e.defaultProps)
-          for (r in a = e.defaultProps) void 0 === n[r] && (n[r] = a[r]);
+          for (r in t = e.defaultProps) void 0 === n[r] && (n[r] = t[r]);
         return {
           $$typeof: s,
           type: e,
-          key: i,
-          ref: c,
+          key: c,
+          ref: i,
           props: n,
           _owner: o.current
         }
       }
-      a.Fragment = n, a.jsx = i, a.jsxs = i
+      t.Fragment = n, t.jsx = c, t.jsxs = c
     },
-    6632: (e, a, t) => {
+    6632: (e, t, a) => {
       "use strict";
-      e.exports = t(6516)
+      e.exports = a(6516)
     },
-    33: (e, a, t) => {
+    33: (e, t, a) => {
       "use strict";
-      t.r(a), t.d(a, {
+      a.r(t), a.d(t, {
         fbar: () => f,
         useAgegated: () => u
       });
-      var r = t(207),
-        s = t(2756),
-        n = t(1403),
-        l = t(2946),
-        o = t.n(l);
+      var r = a(207),
+        s = a(2756),
+        n = a(1403),
+        l = a(2946),
+        o = a.n(l);
       const d = {
         agegate: "rockstargames-modules-core-videoplayerb564767f67a0f63737d816dcca714d49",
         inputs: "rockstargames-modules-core-videoplayerf33bd58bdfa63206fe9444fde46261d1",
         bg: "rockstargames-modules-core-videoplayerdb2f50238f9208ec72ef210e47b60e3b"
       };
-      var i = t(6632);
-      const c = (0, s.withTranslations)((e => {
+      var c = a(6632);
+      const i = (0, s.withTranslations)((e => {
           let {
-            agegateValue: a,
-            options: t = {},
+            agegateValue: t,
+            options: a = {},
             ga: l = {},
-            t: c
+            t: i
           } = e;
           const {
             track: u
           } = (0, r.useGtmTrack)(), {
             mutateLSSettings: f
-          } = (0, s.useRockstarWebLSSettings)(), [g, p] = (0, n.useState)(null), m = (0, n.createRef)(), b = (0, n.createRef)(), _ = (0, n.createRef)(), {
+          } = (0, s.useRockstarWebLSSettings)(), [g, p] = (0, n.useState)(null), m = (0, n.createRef)(), _ = (0, n.createRef)(), b = (0, n.createRef)(), {
             style: y
-          } = t;
+          } = a;
           (0, n.useEffect)((() => {
             u({
               event: "age_gate_popup",
               element_placement: l.element_placement ?? ""
             })
           }), []);
-          return !1 === a ? (0, i.jsxs)("div", {
+          return !1 === t ? (0, c.jsxs)("div", {
             className: d.agegate,
             style: y,
-            children: [t?.header, (0, i.jsx)("h2", {
-              children: c("agegate_fail")
+            children: [a?.header, (0, c.jsx)("h2", {
+              children: i("agegate_fail")
             })]
-          }) : null === a ? (0, i.jsxs)("div", {
+          }) : null === t ? (0, c.jsxs)("div", {
             className: d.agegate,
             style: y,
-            children: [t?.header, (0, i.jsx)("div", {
+            children: [a?.header, (0, c.jsx)("div", {
               className: d.bg,
-              style: t?.bgImg ? {
-                backgroundImage: `url(${t.bgImg})`
+              style: a?.bgImg ? {
+                backgroundImage: `url(${a.bgImg})`
               } : {}
-            }), !1 === g ? (0, i.jsx)("h5", {
+            }), !1 === g ? (0, c.jsx)("h5", {
               className: d.error,
-              children: c("Please enter a valid age")
-            }) : "", (0, i.jsxs)("form", {
+              children: i("Please enter a valid age")
+            }) : "", (0, c.jsxs)("form", {
               onSubmit: async e => {
                 e.preventDefault();
-                const a = `${_.current.value}-${m.current.value.padStart(2,0)}-${b.current.value.padStart(2,0)}`,
-                  t = o()(a, "YYYY-MM-DD", !0).isValid();
-                if (p(t), t) {
-                  const e = o()().diff(a, "years") >= 17;
+                const t = `${b.current.value}-${m.current.value.padStart(2,0)}-${_.current.value.padStart(2,0)}`,
+                  a = o()(t, "YYYY-MM-DD", !0).isValid();
+                if (p(a), a) {
+                  const e = o()().diff(t, "years") >= 17;
                   u(e ? {
                     event: "age_gate_passed",
                     element_placement: l.element_placement ?? ""
@@ -126,57 +126,57 @@ _global.SENTRY_RELEASE = {
                   })
                 }
               },
-              children: [(0, i.jsx)("h5", {
-                children: c("agegate_header")
-              }), (0, i.jsxs)("div", {
+              children: [(0, c.jsx)("h5", {
+                children: i("agegate_header")
+              }), (0, c.jsxs)("div", {
                 className: d.inputs,
-                children: [(0, i.jsxs)("label", {
+                children: [(0, c.jsxs)("label", {
                   htmlFor: "monthInput",
-                  children: [c("Month"), (0, i.jsx)("input", {
+                  children: [i("Month"), (0, c.jsx)("input", {
                     id: "monthInput",
                     ref: m,
-                    placeholder: c("MM"),
+                    placeholder: i("MM"),
                     maxLength: 2
                   })]
-                }), (0, i.jsxs)("label", {
+                }), (0, c.jsxs)("label", {
                   htmlFor: "dayInput",
-                  children: [c("Day"), (0, i.jsx)("input", {
+                  children: [i("Day"), (0, c.jsx)("input", {
                     id: "dayInput",
-                    ref: b,
-                    placeholder: c("DD"),
+                    ref: _,
+                    placeholder: i("DD"),
                     maxLength: 2
                   })]
-                }), (0, i.jsxs)("label", {
+                }), (0, c.jsxs)("label", {
                   htmlFor: "yearInput",
-                  children: [c("Year"), (0, i.jsx)("input", {
+                  children: [i("Year"), (0, c.jsx)("input", {
                     id: "yearInput",
-                    ref: _,
+                    ref: b,
                     className: d.year,
-                    placeholder: c("YYYY"),
+                    placeholder: i("YYYY"),
                     maxLength: 4
                   })]
-                }), (0, i.jsx)("button", {
+                }), (0, c.jsx)("button", {
                   type: "submit",
                   className: d.submit,
-                  children: c("SUBMIT")
+                  children: i("SUBMIT")
                 })]
               })]
-            }), t?.footer]
+            }), a?.footer]
           }) : null
         })),
         u = () => {
           const {
             lsSettings: e
           } = (0, s.useRockstarWebLSSettings)(), {
-            data: a,
-            loading: t
+            data: t,
+            loading: a
           } = (0, r.useRockstarUser)();
           return function(r) {
             let s = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
               n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
             const l = e?.agegatePass ?? null,
-              o = a?.agegate_pass ?? l ?? null;
-            return !o && t ? null : o ? r : (0, i.jsx)(c, {
+              o = t?.agegate_pass ?? l ?? null;
+            return !o && a ? null : o ? r : (0, c.jsx)(i, {
               agegateValue: o,
               options: s,
               ga: n
@@ -186,11 +186,11 @@ _global.SENTRY_RELEASE = {
         f = 12
     },
     3941: e => {
-      function a(e) {
-        var a = new Error("Cannot find module '" + e + "'");
-        throw a.code = "MODULE_NOT_FOUND", a
+      function t(e) {
+        var t = new Error("Cannot find module '" + e + "'");
+        throw t.code = "MODULE_NOT_FOUND", t
       }
-      a.keys = () => [], a.resolve = a, a.id = 3941, e.exports = a
+      t.keys = () => [], t.resolve = t, t.id = 3941, e.exports = t
     }
   }
 ]);

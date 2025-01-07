@@ -22,44 +22,44 @@ _global.SENTRY_RELEASE = {
         Lightbox_Close_Button_Tooltip: () => i,
         Lightbox_Download_Button_Label: () => g,
         Lightbox_Download_Button_Tooltip: () => L,
-        Lightbox_Open_Button_Label: () => h,
-        Lightbox_Reset_Zoom_Button_Label: () => d,
+        Lightbox_Open_Button_Label: () => c,
+        Lightbox_Reset_Zoom_Button_Label: () => b,
         Lightbox_Reset_Zoom_Button_Tooltip: () => u,
         Lightbox_Zoom_In_Button_Label: () => l,
         Lightbox_Zoom_In_Button_Tooltip: () => n,
         Lightbox_Zoom_Out_Button_Label: () => a,
-        Lightbox_Zoom_Out_Button__Tooltip: () => b,
+        Lightbox_Zoom_Out_Button__Tooltip: () => d,
         Lightbox_Zoom_Slider_Label: () => s,
         Lightbox_Zoom_Slider_Tooltip: () => r,
-        default: () => m
+        default: () => f
       });
       var _ = "Chiudi lightbox",
         i = "Premi {shortcut}",
         l = "Aumenta zoom",
         n = "Premi {shortcut}",
         a = "Diminuisci zoom",
-        b = "Premi {shortcut}",
-        d = "Ripristina",
+        d = "Premi {shortcut}",
+        b = "Ripristina",
         u = "Premi {shortcut}",
         s = "Livello zoom",
         r = "{zoom}%",
         g = "Scarica",
         L = "Scarica",
-        h = "Espandi immagine",
-        m = {
+        c = "Espandi immagine",
+        f = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: i,
           Lightbox_Zoom_In_Button_Label: l,
           Lightbox_Zoom_In_Button_Tooltip: n,
           Lightbox_Zoom_Out_Button_Label: a,
-          Lightbox_Zoom_Out_Button__Tooltip: b,
-          Lightbox_Reset_Zoom_Button_Label: d,
+          Lightbox_Zoom_Out_Button__Tooltip: d,
+          Lightbox_Reset_Zoom_Button_Label: b,
           Lightbox_Reset_Zoom_Button_Tooltip: u,
           Lightbox_Zoom_Slider_Label: s,
           Lightbox_Zoom_Slider_Tooltip: r,
           Lightbox_Download_Button_Label: g,
           Lightbox_Download_Button_Tooltip: L,
-          Lightbox_Open_Button_Label: h
+          Lightbox_Open_Button_Label: c
         }
     }
   }

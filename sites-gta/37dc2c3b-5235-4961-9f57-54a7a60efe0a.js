@@ -29,12 +29,12 @@ _global.SENTRY_RELEASE = {
           children: t,
           history: s
         } = e;
-        const [l, i] = (0, n.useState)({
+        const [l, c] = (0, n.useState)({
           action: s.action,
           location: s.location
         });
         return (0, n.useLayoutEffect)((() => s.listen(((e, a) => {
-          i({
+          c({
             location: e,
             action: a
           })

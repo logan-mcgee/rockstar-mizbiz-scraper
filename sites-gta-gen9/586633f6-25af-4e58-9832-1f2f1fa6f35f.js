@@ -20,8 +20,8 @@ _global.SENTRY_RELEASE = {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => a,
-        Lightbox_Download_Button_Label: () => r,
-        Lightbox_Download_Button_Tooltip: () => f,
+        Lightbox_Download_Button_Label: () => f,
+        Lightbox_Download_Button_Tooltip: () => r,
         Lightbox_Open_Button_Label: () => L,
         Lightbox_Reset_Zoom_Button_Label: () => d,
         Lightbox_Reset_Zoom_Button_Tooltip: () => g,
@@ -43,8 +43,8 @@ _global.SENTRY_RELEASE = {
         g = "Pulsa {shortcut}",
         s = "Nivel de zoom",
         u = "{zoom}%",
-        r = "Descargar",
         f = "Descargar",
+        r = "Descargar",
         L = "Expandir imagen",
         h = {
           Lightbox_Close_Button_Label: _,
@@ -57,8 +57,8 @@ _global.SENTRY_RELEASE = {
           Lightbox_Reset_Zoom_Button_Tooltip: g,
           Lightbox_Zoom_Slider_Label: s,
           Lightbox_Zoom_Slider_Tooltip: u,
-          Lightbox_Download_Button_Label: r,
-          Lightbox_Download_Button_Tooltip: f,
+          Lightbox_Download_Button_Label: f,
+          Lightbox_Download_Button_Tooltip: r,
           Lightbox_Open_Button_Label: L
         }
     }

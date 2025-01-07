@@ -21,8 +21,8 @@ _global.SENTRY_RELEASE = {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => l,
         Lightbox_Download_Button_Label: () => L,
-        Lightbox_Download_Button_Tooltip: () => r,
-        Lightbox_Open_Button_Label: () => h,
+        Lightbox_Download_Button_Tooltip: () => f,
+        Lightbox_Open_Button_Label: () => r,
         Lightbox_Reset_Zoom_Button_Label: () => d,
         Lightbox_Reset_Zoom_Button_Tooltip: () => s,
         Lightbox_Zoom_In_Button_Label: () => n,
@@ -31,7 +31,7 @@ _global.SENTRY_RELEASE = {
         Lightbox_Zoom_Out_Button__Tooltip: () => i,
         Lightbox_Zoom_Slider_Label: () => u,
         Lightbox_Zoom_Slider_Tooltip: () => g,
-        default: () => f
+        default: () => c
       });
       var _ = "关闭弹窗",
         l = "按{shortcut}",
@@ -44,9 +44,9 @@ _global.SENTRY_RELEASE = {
         u = "缩放比例",
         g = "{zoom}%",
         L = "下载",
-        r = "下载",
-        h = "展开图片",
-        f = {
+        f = "下载",
+        r = "展开图片",
+        c = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: l,
           Lightbox_Zoom_In_Button_Label: n,
@@ -58,8 +58,8 @@ _global.SENTRY_RELEASE = {
           Lightbox_Zoom_Slider_Label: u,
           Lightbox_Zoom_Slider_Tooltip: g,
           Lightbox_Download_Button_Label: L,
-          Lightbox_Download_Button_Tooltip: r,
-          Lightbox_Open_Button_Label: h
+          Lightbox_Download_Button_Tooltip: f,
+          Lightbox_Open_Button_Label: r
         }
     }
   }

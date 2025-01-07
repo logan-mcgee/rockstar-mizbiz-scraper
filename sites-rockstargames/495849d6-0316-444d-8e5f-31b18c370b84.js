@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "b521022a-025b-4d43-9a90-081c437893aa", e._sentryDebugIdIdentifier = "sentry-dbid-b521022a-025b-4d43-9a90-081c437893aa")
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "495849d6-0316-444d-8e5f-31b18c370b84", e._sentryDebugIdIdentifier = "sentry-dbid-495849d6-0316-444d-8e5f-31b18c370b84")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -343,62 +343,62 @@ _global.SENTRY_RELEASE = {
         let {
           section: a = "",
           relativeTo: t = "",
-          tagId: r = null,
-          metaUrl: m = "/newswire",
-          t: p
+          tagId: m = null,
+          metaUrl: p = "/newswire",
+          t: u
         } = e;
         const {
-          track: u
-        } = (0, o.useGtmTrack)(), [f, k] = (0, i.useSearchParams)(), {
-          tagId: b = null
-        } = (0, i.useParams)(), [v, j] = (0, s.useState)(b ?? r ?? f.get("tag_id")), [h, _] = (0, s.useState)(1), [x, N] = (0, s.useState)(20), [w, y] = (0, s.useState)([]), [S, z] = (0, s.useState)(null), [A, {
-          loading: T,
-          data: V
+          track: f
+        } = (0, o.useGtmTrack)(), k = (0, r.useLocale)(), [b, v] = (0, i.useSearchParams)(), {
+          tagId: j = null
+        } = (0, i.useParams)(), [h, _] = (0, s.useState)(j ?? m ?? b.get("tag_id")), [x, N] = (0, s.useState)(1), [w, y] = (0, s.useState)(20), [S, z] = (0, s.useState)([]), [A, T] = (0, s.useState)(null), [V, {
+          loading: F,
+          data: D
         }] = (0, n.useLazyQuery)(l(), {
           variables: {
-            tagId: Number(v),
-            page: h,
-            metaUrl: m,
-            limit: x,
-            locale: "en_us"
+            tagId: Number(h),
+            page: x,
+            metaUrl: p,
+            limit: w,
+            locale: k
           }
         });
         return (0, s.useEffect)((() => {
-          _(1), y([]), N(20), j(b ?? r ?? f.get("tag_id")), A()
-        }), [f.get("tag_id"), b, r]), (0, s.useEffect)((() => {
-          const e = w;
-          V?.posts?.paging && z(V?.posts?.paging), V?.posts?.results && y(e.concat(V?.posts?.results))
-        }), [V]), (0, s.useEffect)((() => {
+          N(1), z([]), y(20), _(j ?? m ?? b.get("tag_id")), V()
+        }), [b.get("tag_id"), j, m]), (0, s.useEffect)((() => {
+          const e = S;
+          D?.posts?.paging && T(D?.posts?.paging), D?.posts?.results && z(e.concat(D?.posts?.results))
+        }), [D]), (0, s.useEffect)((() => {
           (() => {
-            const e = f.get("page"),
+            const e = b.get("page"),
               a = Number(e ?? 1);
-            N(20 * a), A()
+            y(20 * a), V()
           })()
-        }), []), w.length ? (0, g.jsxs)("div", {
+        }), []), S.length ? (0, g.jsxs)("div", {
           "data-testid": "newswire-list",
           children: [(0, g.jsx)(c.A, {
             section: a,
-            posts: w,
+            posts: S,
             relativeTo: t,
-            noSpecialOrder: null !== v
-          }), null !== S && S.nextPage ? (0, g.jsx)(d.A, {
+            noSpecialOrder: null !== h
+          }), null !== A && A.nextPage ? (0, g.jsx)(d.A, {
             "data-testid": "more-stories",
             onClick: e => {
-              const a = f.get("page"),
-                t = Number(a ?? h) + 1;
-              _(t), 20 !== x && N(20), A(), k({
+              const a = b.get("page"),
+                t = Number(a ?? x) + 1;
+              N(t), 20 !== w && y(20), V(), v({
                 page: String(t)
               }, {
                 replace: !0
-              }), u({
+              }), f({
                 event: "cta_learn",
                 text: "more stories",
                 element_placement: "newswire"
               })
             },
-            disabled: T,
+            disabled: F,
             context: "secondary",
-            children: p("More Stories")
+            children: u("More Stories")
           }) : ""]
         }) : null
       }))

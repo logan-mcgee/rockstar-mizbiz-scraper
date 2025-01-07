@@ -35,8 +35,8 @@ _global.SENTRY_RELEASE = {
         var t, r = n && n.split("/") || [],
           i = e && e.split("/") || [],
           f = n && o(n),
-          s = e && o(e),
-          c = f || s;
+          c = e && o(e),
+          s = f || c;
         if (n && o(n) ? i = r : r.length && (i.pop(), i = i.concat(r)), !i.length) return "/";
         if (i.length) {
           var d = i[i.length - 1];
@@ -46,16 +46,16 @@ _global.SENTRY_RELEASE = {
           var h = i[l];
           "." === h ? a(i, l) : ".." === h ? (a(i, l), u++) : u && (a(i, l), u--)
         }
-        if (!c)
+        if (!s)
           for (; u--; u) i.unshift("..");
-        !c || "" === i[0] || i[0] && o(i[0]) || i.unshift("");
+        !s || "" === i[0] || i[0] && o(i[0]) || i.unshift("");
         var p = i.join("/");
         return t && "/" !== p.substr(-1) && (p += "/"), p
       };
       var f = !0,
-        s = "Invariant failed";
+        c = "Invariant failed";
 
-      function c(n, e, t, o) {
+      function s(n, e, t, o) {
         var a;
         "string" == typeof n ? (a = function(n) {
           var e = n || "/",
@@ -94,8 +94,8 @@ _global.SENTRY_RELEASE = {
 
       function v(n) {
         void 0 === n && (n = {}), d || function(n, e) {
-          if (f) throw new Error(s);
-          throw new Error(s)
+          if (f) throw new Error(c);
+          throw new Error(c)
         }();
         var e, t, o = window.history,
           a = (-1 === (e = window.navigator.userAgent).indexOf("Android 2.") && -1 === e.indexOf("Android 4.0") || -1 === e.indexOf("Mobile Safari") || -1 !== e.indexOf("Chrome") || -1 !== e.indexOf("Windows Phone")) && window.history && "pushState" in window.history,
@@ -121,7 +121,7 @@ _global.SENTRY_RELEASE = {
             return function(n, e) {
               return 0 === n.toLowerCase().indexOf(e.toLowerCase()) && -1 !== "/?#".indexOf(n.charAt(e.length))
             }(n, e) ? n.substr(e.length) : n
-          }(a, k)), c(a, r, t)
+          }(a, k)), s(a, r, t)
         }
 
         function E() {
@@ -219,7 +219,7 @@ _global.SENTRY_RELEASE = {
             createHref: j,
             push: function(n, e) {
               var t = "PUSH",
-                r = c(n, e, E(), B.location);
+                r = s(n, e, E(), B.location);
               P.confirmTransitionTo(r, t, b, (function(n) {
                 if (n) {
                   var e = j(r),
@@ -231,9 +231,9 @@ _global.SENTRY_RELEASE = {
                         state: f
                       }, null, e), y) window.location.href = e;
                     else {
-                      var s = M.indexOf(B.location.key),
-                        c = M.slice(0, s + 1);
-                      c.push(r.key), M = c, L({
+                      var c = M.indexOf(B.location.key),
+                        s = M.slice(0, c + 1);
+                      s.push(r.key), M = s, L({
                         action: t,
                         location: r
                       })
@@ -244,7 +244,7 @@ _global.SENTRY_RELEASE = {
             },
             replace: function(n, e) {
               var t = "REPLACE",
-                r = c(n, e, E(), B.location);
+                r = s(n, e, E(), B.location);
               P.confirmTransitionTo(r, t, b, (function(n) {
                 if (n) {
                   var e = j(r),
@@ -256,7 +256,7 @@ _global.SENTRY_RELEASE = {
                         state: f
                       }, null, e), y) window.location.replace(e);
                     else {
-                      var s = M.indexOf(B.location.key); - 1 !== s && (M[s] = r.key), L({
+                      var c = M.indexOf(B.location.key); - 1 !== c && (M[c] = r.key), L({
                         action: t,
                         location: r
                       })
@@ -297,30 +297,30 @@ _global.SENTRY_RELEASE = {
         a = Symbol.for("react.fragment"),
         i = Object.prototype.hasOwnProperty,
         f = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        s = {
+        c = {
           key: !0,
           ref: !0,
           __self: !0,
           __source: !0
         };
 
-      function c(n, e, t) {
+      function s(n, e, t) {
         var r, a = {},
-          c = null,
+          s = null,
           d = null;
-        for (r in void 0 !== t && (c = "" + t), void 0 !== e.key && (c = "" + e.key), void 0 !== e.ref && (d = e.ref), e) i.call(e, r) && !s.hasOwnProperty(r) && (a[r] = e[r]);
+        for (r in void 0 !== t && (s = "" + t), void 0 !== e.key && (s = "" + e.key), void 0 !== e.ref && (d = e.ref), e) i.call(e, r) && !c.hasOwnProperty(r) && (a[r] = e[r]);
         if (n && n.defaultProps)
           for (r in e = n.defaultProps) void 0 === a[r] && (a[r] = e[r]);
         return {
           $$typeof: o,
           type: n,
-          key: c,
+          key: s,
           ref: d,
           props: a,
           _owner: f.current
         }
       }
-      e.Fragment = a, e.jsx = c, e.jsxs = c
+      e.Fragment = a, e.jsx = s, e.jsxs = s
     },
     6632: (n, e, t) => {
       n.exports = t(6516)

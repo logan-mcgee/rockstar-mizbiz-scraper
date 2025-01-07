@@ -31,7 +31,7 @@ _global.SENTRY_RELEASE = {
         Lightbox_Zoom_Out_Button__Tooltip: () => i,
         Lightbox_Zoom_Slider_Label: () => r,
         Lightbox_Zoom_Slider_Tooltip: () => u,
-        default: () => h
+        default: () => c
       });
       var _ = "Lightbox schließen",
         n = "{shortcut} drücken",
@@ -46,7 +46,7 @@ _global.SENTRY_RELEASE = {
         g = "Herunterladen",
         f = "Herunterladen",
         L = "Bild vergrößern",
-        h = {
+        c = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: n,
           Lightbox_Zoom_In_Button_Label: a,

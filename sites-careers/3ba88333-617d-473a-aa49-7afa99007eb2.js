@@ -22,13 +22,13 @@ _global.SENTRY_RELEASE = {
         o = Symbol.for("react.fragment"),
         u = Symbol.for("react.strict_mode"),
         a = Symbol.for("react.profiler"),
-        f = Symbol.for("react.provider"),
-        c = Symbol.for("react.context"),
+        c = Symbol.for("react.provider"),
+        f = Symbol.for("react.context"),
         s = Symbol.for("react.forward_ref"),
         i = Symbol.for("react.suspense"),
         l = Symbol.for("react.memo"),
-        p = Symbol.for("react.lazy"),
-        d = Symbol.iterator,
+        d = Symbol.for("react.lazy"),
+        p = Symbol.iterator,
         y = {
           isMounted: function() {
             return !1
@@ -37,17 +37,17 @@ _global.SENTRY_RELEASE = {
           enqueueReplaceState: function() {},
           enqueueSetState: function() {}
         },
-        b = Object.assign,
-        _ = {};
+        _ = Object.assign,
+        b = {};
 
       function h(e, t, r) {
-        this.props = e, this.context = t, this.refs = _, this.updater = r || y
+        this.props = e, this.context = t, this.refs = b, this.updater = r || y
       }
 
       function m() {}
 
       function v(e, t, r) {
-        this.props = e, this.context = t, this.refs = _, this.updater = r || y
+        this.props = e, this.context = t, this.refs = b, this.updater = r || y
       }
       h.prototype.isReactComponent = {}, h.prototype.setState = function(e, t) {
         if ("object" != typeof e && "function" != typeof e && null != e) throw Error("setState(...): takes an object of state variables to update or a function which returns an object of state variables.");
@@ -56,7 +56,7 @@ _global.SENTRY_RELEASE = {
         this.updater.enqueueForceUpdate(this, e, "forceUpdate")
       }, m.prototype = h.prototype;
       var w = v.prototype = new m;
-      w.constructor = v, b(w, h.prototype), w.isPureReactComponent = !0;
+      w.constructor = v, _(w, h.prototype), w.isPureReactComponent = !0;
       var g = Array.isArray,
         S = Object.prototype.hasOwnProperty,
         k = {
@@ -72,22 +72,22 @@ _global.SENTRY_RELEASE = {
       function R(e, t, n) {
         var o, u = {},
           a = null,
-          f = null;
+          c = null;
         if (null != t)
-          for (o in void 0 !== t.ref && (f = t.ref), void 0 !== t.key && (a = "" + t.key), t) S.call(t, o) && !E.hasOwnProperty(o) && (u[o] = t[o]);
-        var c = arguments.length - 2;
-        if (1 === c) u.children = n;
-        else if (1 < c) {
-          for (var s = Array(c), i = 0; i < c; i++) s[i] = arguments[i + 2];
+          for (o in void 0 !== t.ref && (c = t.ref), void 0 !== t.key && (a = "" + t.key), t) S.call(t, o) && !E.hasOwnProperty(o) && (u[o] = t[o]);
+        var f = arguments.length - 2;
+        if (1 === f) u.children = n;
+        else if (1 < f) {
+          for (var s = Array(f), i = 0; i < f; i++) s[i] = arguments[i + 2];
           u.children = s
         }
         if (e && e.defaultProps)
-          for (o in c = e.defaultProps) void 0 === u[o] && (u[o] = c[o]);
+          for (o in f = e.defaultProps) void 0 === u[o] && (u[o] = f[o]);
         return {
           $$typeof: r,
           type: e,
           key: a,
-          ref: f,
+          ref: c,
           props: u,
           _owner: k.current
         }
@@ -111,23 +111,23 @@ _global.SENTRY_RELEASE = {
       }
 
       function I(e, t, o, u, a) {
-        var f = typeof e;
-        "undefined" !== f && "boolean" !== f || (e = null);
-        var c = !1;
-        if (null === e) c = !0;
-        else switch (f) {
+        var c = typeof e;
+        "undefined" !== c && "boolean" !== c || (e = null);
+        var f = !1;
+        if (null === e) f = !0;
+        else switch (c) {
           case "string":
           case "number":
-            c = !0;
+            f = !0;
             break;
           case "object":
             switch (e.$$typeof) {
               case r:
               case n:
-                c = !0
+                f = !0
             }
         }
-        if (c) return a = a(c = e), e = "" === u ? "." + j(c, 0) : u, g(a) ? (o = "", null != e && (o = e.replace(C, "$&/") + "/"), I(a, t, o, "", (function(e) {
+        if (f) return a = a(f = e), e = "" === u ? "." + j(f, 0) : u, g(a) ? (o = "", null != e && (o = e.replace(C, "$&/") + "/"), I(a, t, o, "", (function(e) {
           return e
         }))) : null != a && ($(a) && (a = function(e, t) {
           return {
@@ -138,17 +138,17 @@ _global.SENTRY_RELEASE = {
             props: e.props,
             _owner: e._owner
           }
-        }(a, o + (!a.key || c && c.key === a.key ? "" : ("" + a.key).replace(C, "$&/") + "/") + e)), t.push(a)), 1;
-        if (c = 0, u = "" === u ? "." : u + ":", g(e))
+        }(a, o + (!a.key || f && f.key === a.key ? "" : ("" + a.key).replace(C, "$&/") + "/") + e)), t.push(a)), 1;
+        if (f = 0, u = "" === u ? "." : u + ":", g(e))
           for (var s = 0; s < e.length; s++) {
-            var i = u + j(f = e[s], s);
-            c += I(f, t, o, i, a)
+            var i = u + j(c = e[s], s);
+            f += I(c, t, o, i, a)
           } else if (i = function(e) {
-              return null === e || "object" != typeof e ? null : "function" == typeof(e = d && e[d] || e["@@iterator"]) ? e : null
+              return null === e || "object" != typeof e ? null : "function" == typeof(e = p && e[p] || e["@@iterator"]) ? e : null
             }(e), "function" == typeof i)
-            for (e = i.call(e), s = 0; !(f = e.next()).done;) c += I(f = f.value, t, o, i = u + j(f, s++), a);
-          else if ("object" === f) throw t = String(e), Error("Objects are not valid as a React child (found: " + ("[object Object]" === t ? "object with keys {" + Object.keys(e).join(", ") + "}" : t) + "). If you meant to render a collection of children, use an array instead.");
-        return c
+            for (e = i.call(e), s = 0; !(c = e.next()).done;) f += I(c = c.value, t, o, i = u + j(c, s++), a);
+          else if ("object" === c) throw t = String(e), Error("Objects are not valid as a React child (found: " + ("[object Object]" === t ? "object with keys {" + Object.keys(e).join(", ") + "}" : t) + "). If you meant to render a collection of children, use an array instead.");
+        return f
       }
 
       function O(e, t, r) {
@@ -207,20 +207,20 @@ _global.SENTRY_RELEASE = {
         }
       }, t.Component = h, t.Fragment = o, t.Profiler = a, t.PureComponent = v, t.StrictMode = u, t.Suspense = i, t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = M, t.cloneElement = function(e, t, n) {
         if (null == e) throw Error("React.cloneElement(...): The argument must be a React element, but you passed " + e + ".");
-        var o = b({}, e.props),
+        var o = _({}, e.props),
           u = e.key,
           a = e.ref,
-          f = e._owner;
+          c = e._owner;
         if (null != t) {
-          if (void 0 !== t.ref && (a = t.ref, f = k.current), void 0 !== t.key && (u = "" + t.key), e.type && e.type.defaultProps) var c = e.type.defaultProps;
-          for (s in t) S.call(t, s) && !E.hasOwnProperty(s) && (o[s] = void 0 === t[s] && void 0 !== c ? c[s] : t[s])
+          if (void 0 !== t.ref && (a = t.ref, c = k.current), void 0 !== t.key && (u = "" + t.key), e.type && e.type.defaultProps) var f = e.type.defaultProps;
+          for (s in t) S.call(t, s) && !E.hasOwnProperty(s) && (o[s] = void 0 === t[s] && void 0 !== f ? f[s] : t[s])
         }
         var s = arguments.length - 2;
         if (1 === s) o.children = n;
         else if (1 < s) {
-          c = Array(s);
-          for (var i = 0; i < s; i++) c[i] = arguments[i + 2];
-          o.children = c
+          f = Array(s);
+          for (var i = 0; i < s; i++) f[i] = arguments[i + 2];
+          o.children = f
         }
         return {
           $$typeof: r,
@@ -228,11 +228,11 @@ _global.SENTRY_RELEASE = {
           key: u,
           ref: a,
           props: o,
-          _owner: f
+          _owner: c
         }
       }, t.createContext = function(e) {
         return (e = {
-          $$typeof: c,
+          $$typeof: f,
           _currentValue: e,
           _currentValue2: e,
           _threadCount: 0,
@@ -241,7 +241,7 @@ _global.SENTRY_RELEASE = {
           _defaultValue: null,
           _globalName: null
         }).Provider = {
-          $$typeof: f,
+          $$typeof: c,
           _context: e
         }, e.Consumer = e
       }, t.createElement = R, t.createFactory = function(e) {
@@ -258,7 +258,7 @@ _global.SENTRY_RELEASE = {
         }
       }, t.isValidElement = $, t.lazy = function(e) {
         return {
-          $$typeof: p,
+          $$typeof: d,
           _payload: {
             _status: -1,
             _result: e

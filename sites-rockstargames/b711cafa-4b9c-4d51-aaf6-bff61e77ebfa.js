@@ -133,7 +133,7 @@ _global.SENTRY_RELEASE = {
         }
       });
       var m = a(26454);
-      const u = {
+      const f = {
         container: "rockstargames-sites-rockstargamesec870dfb536235bd7aa6333cdbd47b18",
         dialogModal: "rockstargames-sites-rockstargamesafb2793530a9c355979762cf109389bc",
         pillBtn: "rockstargames-sites-rockstargamesa91a63c702436d7d074161542743303f",
@@ -145,7 +145,7 @@ _global.SENTRY_RELEASE = {
         successIcon: "rockstargames-sites-rockstargamesb0577d88ad20962e591709a28d77b664",
         infoIcon: "rockstargames-sites-rockstargamesc6551367635546f0aa5ae9cfc95466cf"
       };
-      var f = a(46632);
+      var u = a(46632);
       const {
         host: b
       } = (0, o.getScConfigForOrigin)(), p = (0, c.withIntl)((() => {
@@ -188,23 +188,23 @@ _global.SENTRY_RELEASE = {
             event: "virtualPageview",
             view_name: k[`unsubscribe_${a}_header`].defaultMessage
           })
-        }), [a]), (0, f.jsx)("div", {
-          className: u.container,
-          children: a ? (0, f.jsxs)("div", {
-            className: u.dialogModal,
-            children: [(0, f.jsx)("div", {
-              className: u[`${a}Icon`]
-            }), (0, f.jsxs)("div", {
-              className: u.textContent,
-              children: [(0, f.jsx)("h3", {
-                className: u.heading,
+        }), [a]), (0, u.jsx)("div", {
+          className: f.container,
+          children: a ? (0, u.jsxs)("div", {
+            className: f.dialogModal,
+            children: [(0, u.jsx)("div", {
+              className: f[`${a}Icon`]
+            }), (0, u.jsxs)("div", {
+              className: f.textContent,
+              children: [(0, u.jsx)("h3", {
+                className: f.heading,
                 children: e.formatMessage(k[`unsubscribe_${a}_header`])
-              }), (0, f.jsx)("div", {
-                className: u.description,
+              }), (0, u.jsx)("div", {
+                className: f.description,
                 children: e.formatMessage(k[`unsubscribe_${a}_description`])
               })]
-            }), (0, f.jsx)("div", {
-              children: (0, f.jsx)(d.A, {
+            }), (0, u.jsx)("div", {
+              children: (0, u.jsx)(d.A, {
                 to: p,
                 onClick: h ? () => s({
                   ...h
@@ -212,7 +212,7 @@ _global.SENTRY_RELEASE = {
                 children: e.formatMessage(k.email_settings_cta)
               })
             })]
-          }) : (0, f.jsx)(l.A, {})
+          }) : (0, u.jsx)(l.A, {})
         })
       }), m)
     }

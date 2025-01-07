@@ -22,7 +22,7 @@ _global.SENTRY_RELEASE = {
         Lightbox_Close_Button_Tooltip: () => l,
         Lightbox_Download_Button_Label: () => r,
         Lightbox_Download_Button_Tooltip: () => L,
-        Lightbox_Open_Button_Label: () => h,
+        Lightbox_Open_Button_Label: () => f,
         Lightbox_Reset_Zoom_Button_Label: () => d,
         Lightbox_Reset_Zoom_Button_Tooltip: () => u,
         Lightbox_Zoom_In_Button_Label: () => n,
@@ -31,7 +31,7 @@ _global.SENTRY_RELEASE = {
         Lightbox_Zoom_Out_Button__Tooltip: () => b,
         Lightbox_Zoom_Slider_Label: () => s,
         Lightbox_Zoom_Slider_Tooltip: () => g,
-        default: () => f
+        default: () => c
       });
       var _ = "Закрыть всплывающее окно",
         l = "Нажмите {shortcut}",
@@ -45,8 +45,8 @@ _global.SENTRY_RELEASE = {
         g = "{zoom}%",
         r = "Загрузить",
         L = "Загрузить",
-        h = "Увеличить изображение",
-        f = {
+        f = "Увеличить изображение",
+        c = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: l,
           Lightbox_Zoom_In_Button_Label: n,
@@ -59,7 +59,7 @@ _global.SENTRY_RELEASE = {
           Lightbox_Zoom_Slider_Tooltip: g,
           Lightbox_Download_Button_Label: r,
           Lightbox_Download_Button_Tooltip: L,
-          Lightbox_Open_Button_Label: h
+          Lightbox_Open_Button_Label: f
         }
     }
   }

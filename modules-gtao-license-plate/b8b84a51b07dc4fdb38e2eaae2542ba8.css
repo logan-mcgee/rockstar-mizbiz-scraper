@@ -7092,6 +7092,7 @@ ul {
   bottom: 0;
   display: flex;
   flex: 1;
+  flex: unset;
   justify-content: center;
   left: 0;
   min-height: var(--app-height);
@@ -7548,4 +7549,4 @@ ul {
   width: 100%
 }
 
-/*# sourceMappingURL=8c5cd3ca0402f262a66713a38ced642e.css.map*/
+/*# sourceMappingURL=b8b84a51b07dc4fdb38e2eaae2542ba8.css.map*/

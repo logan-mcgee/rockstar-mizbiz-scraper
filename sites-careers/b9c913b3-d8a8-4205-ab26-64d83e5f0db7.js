@@ -21,15 +21,15 @@ _global.SENTRY_RELEASE = {
       o.r(s), o.d(s, {
         FormattedMessage: () => t.A,
         IntlProvider: () => l.Kq,
-        POSIXLocales: () => c.FN,
+        POSIXLocales: () => u.FN,
         createDevLocaleHook: () => r.A,
         createIntl: () => n.E,
         defineMessages: () => a.YK,
-        englishLocale: () => c.Vm,
-        getCookieValueByName: () => u.h,
+        englishLocale: () => u.Vm,
+        getCookieValueByName: () => c.h,
         getLocale: () => d.A,
-        localeCookieHandler: () => u.A,
-        locales: () => c.Ay,
+        localeCookieHandler: () => c.A,
+        locales: () => u.Ay,
         splitLocale: () => b.A,
         useIntl: () => i.A,
         withIntl: () => l.QY
@@ -41,8 +41,8 @@ _global.SENTRY_RELEASE = {
         l = o(120),
         r = o(3480),
         d = o(1134),
-        u = o(4677),
-        c = o(9186),
+        c = o(4677),
+        u = o(9186),
         b = o(5136),
         m = o(1272),
         p = {};
@@ -66,11 +66,11 @@ _global.SENTRY_RELEASE = {
           lang: o,
           children: a
         } = e;
-        const [r, d] = (0, t.useMemo)((() => (0, i.A)(o)), [o]), u = (0, t.useMemo)((() => function(e, s) {
+        const [r, d] = (0, t.useMemo)((() => (0, i.A)(o)), [o]), c = (0, t.useMemo)((() => function(e, s) {
           return e?.[s] ?? {}
         }(s, d)), [o, s]);
         return (0, l.jsx)(n.A, {
-          messages: u,
+          messages: c,
           locale: r,
           defaultLocale: "en",
           children: a
@@ -159,9 +159,9 @@ _global.SENTRY_RELEASE = {
         })(e), l = a.Vm;
         let r = l;
         const d = `rockstarweb_lang.${s.cookieIdentifier}`,
-          u = (0, n.h)(d);
-        r = "www" === s.currentSite?.site ? a.Ay.find((e => e.subdomaincom === i)) || a.Ay.find((e => e.subdomaincom === o)) || l : a.Ay.find((e => e.iso === u)) || l;
-        const [c, b] = (0, n.A)(d, r.iso);
+          c = (0, n.h)(d);
+        r = "www" === s.currentSite?.site ? a.Ay.find((e => e.subdomaincom === i)) || a.Ay.find((e => e.subdomaincom === o)) || l : a.Ay.find((e => e.iso === c)) || l;
+        const [u, b] = (0, n.A)(d, r.iso);
         return [r, b]
       }
     },

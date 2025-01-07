@@ -25,20 +25,20 @@ _global.SENTRY_RELEASE = {
       var s = t(207),
         n = t(2756),
         l = t(1403),
-        r = t(2946),
-        d = t.n(r);
+        d = t(2946),
+        r = t.n(d);
       const o = {
         agegate: "rockstargames-modules-core-videoplayerb564767f67a0f63737d816dcca714d49",
         inputs: "rockstargames-modules-core-videoplayerf33bd58bdfa63206fe9444fde46261d1",
         bg: "rockstargames-modules-core-videoplayerdb2f50238f9208ec72ef210e47b60e3b"
       };
-      var i = t(6632);
-      const c = (0, n.withTranslations)((e => {
+      var c = t(6632);
+      const i = (0, n.withTranslations)((e => {
           let {
             agegateValue: a,
             options: t = {},
-            ga: r = {},
-            t: c
+            ga: d = {},
+            t: i
           } = e;
           const {
             track: u
@@ -50,39 +50,39 @@ _global.SENTRY_RELEASE = {
           (0, l.useEffect)((() => {
             u({
               event: "age_gate_popup",
-              element_placement: r.element_placement ?? ""
+              element_placement: d.element_placement ?? ""
             })
           }), []);
-          return !1 === a ? (0, i.jsxs)("div", {
+          return !1 === a ? (0, c.jsxs)("div", {
             className: o.agegate,
             style: h,
-            children: [t?.header, (0, i.jsx)("h2", {
-              children: c("agegate_fail")
+            children: [t?.header, (0, c.jsx)("h2", {
+              children: i("agegate_fail")
             })]
-          }) : null === a ? (0, i.jsxs)("div", {
+          }) : null === a ? (0, c.jsxs)("div", {
             className: o.agegate,
             style: h,
-            children: [t?.header, (0, i.jsx)("div", {
+            children: [t?.header, (0, c.jsx)("div", {
               className: o.bg,
               style: t?.bgImg ? {
                 backgroundImage: `url(${t.bgImg})`
               } : {}
-            }), !1 === f ? (0, i.jsx)("h5", {
+            }), !1 === f ? (0, c.jsx)("h5", {
               className: o.error,
-              children: c("Please enter a valid age")
-            }) : "", (0, i.jsxs)("form", {
+              children: i("Please enter a valid age")
+            }) : "", (0, c.jsxs)("form", {
               onSubmit: async e => {
                 e.preventDefault();
                 const a = `${y.current.value}-${p.current.value.padStart(2,0)}-${b.current.value.padStart(2,0)}`,
-                  t = d()(a, "YYYY-MM-DD", !0).isValid();
+                  t = r()(a, "YYYY-MM-DD", !0).isValid();
                 if (m(t), t) {
-                  const e = d()().diff(a, "years") >= 17;
+                  const e = r()().diff(a, "years") >= 17;
                   u(e ? {
                     event: "age_gate_passed",
-                    element_placement: r.element_placement ?? ""
+                    element_placement: d.element_placement ?? ""
                   } : {
                     event: "age_gate_failed",
-                    element_placement: r.element_placement ?? "",
+                    element_placement: d.element_placement ?? "",
                     text: "you may not view this content at this time"
                   }), g({
                     key: "agegatePass",
@@ -90,39 +90,39 @@ _global.SENTRY_RELEASE = {
                   })
                 }
               },
-              children: [(0, i.jsx)("h5", {
-                children: c("agegate_header")
-              }), (0, i.jsxs)("div", {
+              children: [(0, c.jsx)("h5", {
+                children: i("agegate_header")
+              }), (0, c.jsxs)("div", {
                 className: o.inputs,
-                children: [(0, i.jsxs)("label", {
+                children: [(0, c.jsxs)("label", {
                   htmlFor: "monthInput",
-                  children: [c("Month"), (0, i.jsx)("input", {
+                  children: [i("Month"), (0, c.jsx)("input", {
                     id: "monthInput",
                     ref: p,
-                    placeholder: c("MM"),
+                    placeholder: i("MM"),
                     maxLength: 2
                   })]
-                }), (0, i.jsxs)("label", {
+                }), (0, c.jsxs)("label", {
                   htmlFor: "dayInput",
-                  children: [c("Day"), (0, i.jsx)("input", {
+                  children: [i("Day"), (0, c.jsx)("input", {
                     id: "dayInput",
                     ref: b,
-                    placeholder: c("DD"),
+                    placeholder: i("DD"),
                     maxLength: 2
                   })]
-                }), (0, i.jsxs)("label", {
+                }), (0, c.jsxs)("label", {
                   htmlFor: "yearInput",
-                  children: [c("Year"), (0, i.jsx)("input", {
+                  children: [i("Year"), (0, c.jsx)("input", {
                     id: "yearInput",
                     ref: y,
                     className: o.year,
-                    placeholder: c("YYYY"),
+                    placeholder: i("YYYY"),
                     maxLength: 4
                   })]
-                }), (0, i.jsx)("button", {
+                }), (0, c.jsx)("button", {
                   type: "submit",
                   className: o.submit,
-                  children: c("SUBMIT")
+                  children: i("SUBMIT")
                 })]
               })]
             }), t?.footer]
@@ -138,10 +138,10 @@ _global.SENTRY_RELEASE = {
           return function(s) {
             let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
               l = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
-            const r = e?.agegatePass ?? null,
-              d = a?.agegate_pass ?? r ?? null;
-            return !d && t ? null : d ? s : (0, i.jsx)(c, {
-              agegateValue: d,
+            const d = e?.agegatePass ?? null,
+              r = a?.agegate_pass ?? d ?? null;
+            return !r && t ? null : r ? s : (0, c.jsx)(i, {
+              agegateValue: r,
               options: n,
               ga: l
             })

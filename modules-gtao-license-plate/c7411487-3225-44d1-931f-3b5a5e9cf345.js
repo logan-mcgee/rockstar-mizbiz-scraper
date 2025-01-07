@@ -33,15 +33,15 @@ _global.SENTRY_RELEASE = {
       function u(e, o, s) {
         var t, a = {},
           u = null,
-          d = null;
-        for (t in void 0 !== s && (u = "" + s), void 0 !== o.key && (u = "" + o.key), void 0 !== o.ref && (d = o.ref), o) r.call(o, t) && !l.hasOwnProperty(t) && (a[t] = o[t]);
+          c = null;
+        for (t in void 0 !== s && (u = "" + s), void 0 !== o.key && (u = "" + o.key), void 0 !== o.ref && (c = o.ref), o) r.call(o, t) && !l.hasOwnProperty(t) && (a[t] = o[t]);
         if (e && e.defaultProps)
           for (t in o = e.defaultProps) void 0 === a[t] && (a[t] = o[t]);
         return {
           $$typeof: n,
           type: e,
           key: u,
-          ref: d,
+          ref: c,
           props: a,
           _owner: i.current
         }
@@ -57,15 +57,15 @@ _global.SENTRY_RELEASE = {
       s.r(o), s.d(o, {
         FormattedMessage: () => t.A,
         IntlProvider: () => i.Kq,
-        POSIXLocales: () => c.FN,
+        POSIXLocales: () => d.FN,
         createDevLocaleHook: () => l.A,
         createIntl: () => n.E,
         defineMessages: () => a.YK,
-        englishLocale: () => c.Vm,
-        getCookieValueByName: () => d.h,
+        englishLocale: () => d.Vm,
+        getCookieValueByName: () => c.h,
         getLocale: () => u.A,
-        localeCookieHandler: () => d.A,
-        locales: () => c.Ay,
+        localeCookieHandler: () => c.A,
+        locales: () => d.Ay,
         splitLocale: () => p.A,
         useIntl: () => r.A,
         withIntl: () => i.QY
@@ -77,8 +77,8 @@ _global.SENTRY_RELEASE = {
         i = s(120),
         l = s(3480),
         u = s(175),
-        d = s(4677),
-        c = s(9186),
+        c = s(4677),
+        d = s(9186),
         p = s(5136),
         b = s(1272),
         m = {};
@@ -102,11 +102,11 @@ _global.SENTRY_RELEASE = {
           lang: s,
           children: a
         } = e;
-        const [l, u] = (0, t.useMemo)((() => (0, r.A)(s)), [s]), d = (0, t.useMemo)((() => function(e, o) {
+        const [l, u] = (0, t.useMemo)((() => (0, r.A)(s)), [s]), c = (0, t.useMemo)((() => function(e, o) {
           return e?.[o] ?? {}
         }(o, u)), [s, o]);
         return (0, i.jsx)(n.A, {
-          messages: d,
+          messages: c,
           locale: l,
           defaultLocale: "en",
           children: a
@@ -168,9 +168,9 @@ _global.SENTRY_RELEASE = {
         })(e), i = a.Vm;
         let l = i;
         const u = `rockstarweb_lang.${o.cookieIdentifier}`,
-          d = (0, n.h)(u);
-        l = o.currentSite?.site === t.C.www ? a.Ay.find((e => e.subdomaincom === r)) || a.Ay.find((e => e.subdomaincom === s)) || i : a.Ay.find((e => e.iso === d)) || i;
-        const [c, p] = (0, n.A)(u, l.iso);
+          c = (0, n.h)(u);
+        l = o.currentSite?.site === t.C.www ? a.Ay.find((e => e.subdomaincom === r)) || a.Ay.find((e => e.subdomaincom === s)) || i : a.Ay.find((e => e.iso === c)) || i;
+        const [d, p] = (0, n.A)(u, l.iso);
         return [l, p]
       }
     },

@@ -155,7 +155,7 @@ _global.SENTRY_RELEASE = {
           v = e || f || p || l,
           d = v ? n(t.length, String) : [],
           h = d.length;
-        for (var b in t) !r && !c.call(t, b) || v && ("length" == b || p && ("offset" == b || "parent" == b) || l && ("buffer" == b || "byteLength" == b || "byteOffset" == b) || s(b, h)) || d.push(b);
+        for (var y in t) !r && !c.call(t, y) || v && ("length" == y || p && ("offset" == y || "parent" == y) || l && ("buffer" == y || "byteLength" == y || "byteOffset" == y) || s(y, h)) || d.push(y);
         return d
       }
     },
@@ -278,7 +278,7 @@ _global.SENTRY_RELEASE = {
         l = "[object Array]",
         v = "[object Object]",
         d = Object.prototype.hasOwnProperty;
-      t.exports = function(t, r, e, h, b, y) {
+      t.exports = function(t, r, e, h, y, b) {
         var _ = u(t),
           x = u(r),
           g = _ ? l : s(t),
@@ -290,17 +290,17 @@ _global.SENTRY_RELEASE = {
           if (!c(r)) return !1;
           _ = !0, w = !1
         }
-        if (m && !w) return y || (y = new n), _ || f(t) ? o(t, r, e, h, b, y) : a(t, r, g, e, h, b, y);
+        if (m && !w) return b || (b = new n), _ || f(t) ? o(t, r, e, h, y, b) : a(t, r, g, e, h, y, b);
         if (!(1 & e)) {
           var A = w && d.call(t, "__wrapped__"),
             k = O && d.call(r, "__wrapped__");
           if (A || k) {
             var S = A ? t.value() : t,
               E = k ? r.value() : r;
-            return y || (y = new n), b(S, E, e, h, y)
+            return b || (b = new n), y(S, E, e, h, b)
           }
         }
-        return !!m && (y || (y = new n), i(t, r, e, h, b, y))
+        return !!m && (b || (b = new n), i(t, r, e, h, y, b))
       }
     },
     52697: (t, r, e) => {
@@ -522,24 +522,24 @@ _global.SENTRY_RELEASE = {
         if (l && v) return l == r && v == t;
         var d = -1,
           h = !0,
-          b = 2 & e ? new n : void 0;
+          y = 2 & e ? new n : void 0;
         for (u.set(t, r), u.set(r, t); ++d < f;) {
-          var y = t[d],
+          var b = t[d],
             _ = r[d];
-          if (i) var x = c ? i(_, y, d, r, t, u) : i(y, _, d, t, r, u);
+          if (i) var x = c ? i(_, b, d, r, t, u) : i(b, _, d, t, r, u);
           if (void 0 !== x) {
             if (x) continue;
             h = !1;
             break
           }
-          if (b) {
+          if (y) {
             if (!o(r, (function(t, r) {
-                if (!a(b, r) && (y === t || s(y, t, e, i, u))) return b.push(r)
+                if (!a(y, r) && (b === t || s(b, t, e, i, u))) return y.push(r)
               }))) {
               h = !1;
               break
             }
-          } else if (y !== _ && !s(y, _, e, i, u)) {
+          } else if (b !== _ && !s(b, _, e, i, u)) {
             h = !1;
             break
           }
@@ -580,8 +580,8 @@ _global.SENTRY_RELEASE = {
             var h = l.get(t);
             if (h) return h == r;
             n |= 2, l.set(t, r);
-            var b = i(v(t), v(r), n, c, p, l);
-            return l.delete(t), b;
+            var y = i(v(t), v(r), n, c, p, l);
+            return l.delete(t), y;
           case "[object Symbol]":
             if (f) return f.call(t) == f.call(r)
         }
@@ -605,17 +605,17 @@ _global.SENTRY_RELEASE = {
         if (v && d) return v == r && d == t;
         var h = !0;
         s.set(t, r), s.set(r, t);
-        for (var b = u; ++p < f;) {
-          var y = t[l = c[p]],
+        for (var y = u; ++p < f;) {
+          var b = t[l = c[p]],
             _ = r[l];
-          if (a) var x = u ? a(_, y, l, r, t, s) : a(y, _, l, t, r, s);
-          if (!(void 0 === x ? y === _ || i(y, _, e, a, s) : x)) {
+          if (a) var x = u ? a(_, b, l, r, t, s) : a(b, _, l, t, r, s);
+          if (!(void 0 === x ? b === _ || i(b, _, e, a, s) : x)) {
             h = !1;
             break
           }
-          b || (b = "constructor" == l)
+          y || (y = "constructor" == l)
         }
-        if (h && !b) {
+        if (h && !y) {
           var g = t.constructor,
             j = r.constructor;
           g == j || !("constructor" in t) || !("constructor" in r) || "function" == typeof g && g instanceof g && "function" == typeof j && j instanceof j || (h = !1)
@@ -705,8 +705,8 @@ _global.SENTRY_RELEASE = {
         v = "[object WeakMap]",
         d = "[object DataView]",
         h = c(n),
-        b = c(o),
-        y = c(a),
+        y = c(o),
+        b = c(a),
         _ = c(i),
         x = c(s),
         g = u;
@@ -717,9 +717,9 @@ _global.SENTRY_RELEASE = {
         if (n) switch (n) {
           case h:
             return d;
-          case b:
-            return f;
           case y:
+            return f;
+          case b:
             return p;
           case _:
             return l;
@@ -1332,7 +1332,7 @@ _global.SENTRY_RELEASE = {
         onChange: p
       } = {}) {
         var l;
-        const [v, d] = n.useState(null), h = n.useRef(), [b, y] = n.useState({
+        const [v, d] = n.useState(null), h = n.useRef(), [y, b] = n.useState({
           inView: !!c,
           entry: void 0
         });
@@ -1340,7 +1340,7 @@ _global.SENTRY_RELEASE = {
           if (s || !v) return;
           let n;
           return n = u(v, ((t, r) => {
-            y({
+            b({
               inView: t,
               entry: r
             }), h.current && h.current(t, r), r.isIntersecting && i && n && (n(), n = void 0)
@@ -1354,13 +1354,13 @@ _global.SENTRY_RELEASE = {
             n && n()
           }
         }), [Array.isArray(t) ? t.toString() : t, v, a, o, i, s, e, f, r]);
-        const _ = null == (l = b.entry) ? void 0 : l.target,
+        const _ = null == (l = y.entry) ? void 0 : l.target,
           x = n.useRef();
-        v || !_ || i || s || x.current === _ || (x.current = _, y({
+        v || !_ || i || s || x.current === _ || (x.current = _, b({
           inView: !!c,
           entry: void 0
         }));
-        const g = [d, b.inView, b.entry];
+        const g = [d, y.inView, y.entry];
         return g.ref = g[0], g.inView = g[1], g.entry = g[2], g
       }
       n.Component

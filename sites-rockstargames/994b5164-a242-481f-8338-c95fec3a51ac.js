@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "aea99845-5fa4-4320-9a8a-6a1a8a6f7b81", e._sentryDebugIdIdentifier = "sentry-dbid-aea99845-5fa4-4320-9a8a-6a1a8a6f7b81")
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "994b5164-a242-481f-8338-c95fec3a51ac", e._sentryDebugIdIdentifier = "sentry-dbid-994b5164-a242-481f-8338-c95fec3a51ac")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -34,19 +34,19 @@ _global.SENTRY_RELEASE = {
           context: r = "",
           to: l,
           onClick: d,
-          target: o = "_self",
-          ...c
+          target: c = "_self",
+          ...o
         } = e;
         const m = [n.button, n[r], a].join(" ");
         return l ? (0, s.jsx)(i.A, {
-          ...c,
+          ...o,
           to: l,
           className: m,
           onClick: d,
-          target: o,
+          target: c,
           children: t
         }) : (0, s.jsx)("button", {
-          ...c,
+          ...o,
           type: "button",
           className: m,
           onClick: d,
@@ -65,7 +65,7 @@ _global.SENTRY_RELEASE = {
         r = t(40207),
         l = t(60285),
         d = t(31716);
-      const o = {
+      const c = {
         newswireBlock: "rockstargames-sites-rockstargamesa793f470884d207243d6c3caac8ad811",
         info: "rockstargames-sites-rockstargamesd50f6d2bc5f983c05311292acb4c78a5",
         title: "rockstargames-sites-rockstargamescc389449dc1495fc9c323fc2c547857d",
@@ -75,17 +75,17 @@ _global.SENTRY_RELEASE = {
         top: "rockstargames-sites-rockstargamesfa1a6f4c7d94b94f5af2dc1ac9af79f1",
         startAnimation: "rockstargames-sites-rockstargamese380e8c67066df6f33fc018341ea96e5"
       };
-      var c = t(46632);
+      var o = t(46632);
       const m = e => {
         let {
           section: a = "",
           index: t,
           post: m,
           noSpecialOrder: u = !1,
-          focused: k
+          focused: f
         } = e;
         const {
-          track: f
+          track: k
         } = (0, r.useGtmTrack)(), [g] = (0, n.useSearchParams)(), p = m.preview_images_parsed.newswire_block, v = {
           default: 0 !== t || u ? p.square || p.d16x9 || p._fallback : p.d16x9 || p.square || p._fallback,
           mobile: p.square || p._fallback
@@ -97,7 +97,7 @@ _global.SENTRY_RELEASE = {
             backgroundImage: `url(${v.mobile})`
           }
         }, h = (0, i.useCallback)((() => {
-          f({
+          k({
             event: "card_click",
             card_id: m.id,
             card_name: m.name_slug.replace(/-/g, " "),
@@ -106,35 +106,35 @@ _global.SENTRY_RELEASE = {
             element_placement: a
           })
         }), [m]);
-        return (0, c.jsx)(l.A, {
+        return (0, o.jsx)(l.A, {
           to: m.url,
-          className: [o.newswireBlock, u ? o.newswireBlockNoSpecialOrder : "", null !== b ? o.startAnimation : ""].join(" "),
-          focused: k,
+          className: [c.newswireBlock, u ? c.newswireBlockNoSpecialOrder : "", null !== b ? c.startAnimation : ""].join(" "),
+          focused: f,
           onClick: h,
-          children: (0, c.jsxs)(c.Fragment, {
-            children: [0 !== t || g.get("tag_id") ? (0, c.jsx)("div", {
-              className: o.preview,
+          children: (0, o.jsxs)(o.Fragment, {
+            children: [0 !== t || g.get("tag_id") ? (0, o.jsx)("div", {
+              className: c.preview,
               style: N.default
-            }) : (0, c.jsxs)(c.Fragment, {
-              children: [(0, c.jsx)("div", {
-                className: o.previewMobile,
+            }) : (0, o.jsxs)(o.Fragment, {
+              children: [(0, o.jsx)("div", {
+                className: c.previewMobile,
                 style: N.mobile
-              }), (0, c.jsx)("div", {
-                className: o.preview,
+              }), (0, o.jsx)("div", {
+                className: c.preview,
                 style: N.default
               })]
-            }), (0, c.jsxs)("div", {
-              className: o.info,
-              children: [(0, c.jsxs)("div", {
-                className: o.top,
-                children: [m.primary_tags.length ? (0, c.jsx)(d.A, {
+            }), (0, o.jsxs)("div", {
+              className: c.info,
+              children: [(0, o.jsxs)("div", {
+                className: c.top,
+                children: [m.primary_tags.length ? (0, o.jsx)(d.A, {
                   title: m.primary_tags[m.primary_tags.length > 1 && 722 === m.primary_tags[0].id ? 1 : 0].name
-                }) : "", (0, c.jsx)("time", {
+                }) : "", (0, o.jsx)("time", {
                   dateTime: m.created,
                   children: m.created_formatted
                 })]
-              }), (0, c.jsx)("h5", {
-                className: o.title,
+              }), (0, o.jsx)("h5", {
+                className: c.title,
                 dangerouslySetInnerHTML: {
                   __html: m.title
                 }
@@ -175,7 +175,7 @@ _global.SENTRY_RELEASE = {
     24486: (e, a, t) => {
       "use strict";
       t.d(a, {
-        A: () => o
+        A: () => c
       });
       var i = t(71403),
         n = t(42756),
@@ -211,15 +211,15 @@ _global.SENTRY_RELEASE = {
           newswireBlocks: "rockstargames-sites-rockstargamesc2c8eedd25de7e186655f98b2a8d8960",
           noSpecialOrder: "rockstargames-sites-rockstargamesc0d0db9dfc71c9f4f959b9c017b1ae4b"
         },
-        o = (0, n.withGtmTracking)((e => {
+        c = (0, n.withGtmTracking)((e => {
           let {
             section: a = "",
             noSpecialOrder: t = !1,
             posts: n,
             gtmTrack: r,
-            relativeTo: o
+            relativeTo: c
           } = e;
-          const [c, m] = (0, i.useState)(null);
+          const [o, m] = (0, i.useState)(null);
           return (0, i.useEffect)((() => {
             if (!n.length) return;
             const e = {
@@ -244,7 +244,7 @@ _global.SENTRY_RELEASE = {
               index: i,
               noSpecialOrder: t,
               post: e,
-              focused: i === c
+              focused: i === o
             }, e.id)))
           })
         }))
@@ -252,7 +252,7 @@ _global.SENTRY_RELEASE = {
     49853: (e, a, t) => {
       "use strict";
       t.d(a, {
-        A: () => k
+        A: () => f
       });
       var i = t(71403),
         n = t(89779),
@@ -260,68 +260,68 @@ _global.SENTRY_RELEASE = {
         r = t(42756),
         l = t(40207),
         d = t(22778),
-        o = t(24486),
-        c = t(31955),
-        m = t.n(c),
+        c = t(24486),
+        o = t(31955),
+        m = t.n(o),
         u = t(46632);
-      const k = (0, r.withTranslations)((e => {
+      const f = (0, r.withTranslations)((e => {
         let {
           section: a = "",
           relativeTo: t = "",
-          tagId: r = null,
-          metaUrl: c = "/newswire",
+          tagId: o = null,
+          metaUrl: f = "/newswire",
           t: k
         } = e;
         const {
-          track: f
-        } = (0, l.useGtmTrack)(), [g, p] = (0, n.useSearchParams)(), {
-          tagId: v = null
-        } = (0, n.useParams)(), [b, w] = (0, i.useState)(v ?? r ?? g.get("tag_id")), [N, h] = (0, i.useState)(1), [y, S] = (0, i.useState)(20), [_, x] = (0, i.useState)([]), [j, A] = (0, i.useState)(null), [I, {
-          loading: T,
-          data: V
+          track: g
+        } = (0, l.useGtmTrack)(), p = (0, r.useLocale)(), [v, b] = (0, n.useSearchParams)(), {
+          tagId: w = null
+        } = (0, n.useParams)(), [N, h] = (0, i.useState)(w ?? o ?? v.get("tag_id")), [y, S] = (0, i.useState)(1), [_, x] = (0, i.useState)(20), [j, A] = (0, i.useState)([]), [I, T] = (0, i.useState)(null), [V, {
+          loading: E,
+          data: D
         }] = (0, s.useLazyQuery)(m(), {
           variables: {
-            tagId: Number(b),
-            page: N,
-            metaUrl: c,
-            limit: y,
-            locale: "en_us"
+            tagId: Number(N),
+            page: y,
+            metaUrl: f,
+            limit: _,
+            locale: p
           }
         });
         return (0, i.useEffect)((() => {
-          h(1), x([]), S(20), w(v ?? r ?? g.get("tag_id")), I()
-        }), [g.get("tag_id"), v, r]), (0, i.useEffect)((() => {
-          const e = _;
-          V?.posts?.paging && A(V?.posts?.paging), V?.posts?.results && x(e.concat(V?.posts?.results))
-        }), [V]), (0, i.useEffect)((() => {
+          S(1), A([]), x(20), h(w ?? o ?? v.get("tag_id")), V()
+        }), [v.get("tag_id"), w, o]), (0, i.useEffect)((() => {
+          const e = j;
+          D?.posts?.paging && T(D?.posts?.paging), D?.posts?.results && A(e.concat(D?.posts?.results))
+        }), [D]), (0, i.useEffect)((() => {
           (() => {
-            const e = g.get("page"),
+            const e = v.get("page"),
               a = Number(e ?? 1);
-            S(20 * a), I()
+            x(20 * a), V()
           })()
-        }), []), _.length ? (0, u.jsxs)("div", {
+        }), []), j.length ? (0, u.jsxs)("div", {
           "data-testid": "newswire-list",
-          children: [(0, u.jsx)(o.A, {
+          children: [(0, u.jsx)(c.A, {
             section: a,
-            posts: _,
+            posts: j,
             relativeTo: t,
-            noSpecialOrder: null !== b
-          }), null !== j && j.nextPage ? (0, u.jsx)(d.A, {
+            noSpecialOrder: null !== N
+          }), null !== I && I.nextPage ? (0, u.jsx)(d.A, {
             "data-testid": "more-stories",
             onClick: e => {
-              const a = g.get("page"),
-                t = Number(a ?? N) + 1;
-              h(t), 20 !== y && S(20), I(), p({
+              const a = v.get("page"),
+                t = Number(a ?? y) + 1;
+              S(t), 20 !== _ && x(20), V(), b({
                 page: String(t)
               }, {
                 replace: !0
-              }), f({
+              }), g({
                 event: "cta_learn",
                 text: "more stories",
                 element_placement: "newswire"
               })
             },
-            disabled: T,
+            disabled: E,
             context: "secondary",
             children: k("More Stories")
           }) : ""]
@@ -331,7 +331,7 @@ _global.SENTRY_RELEASE = {
     35275: (e, a, t) => {
       "use strict";
       t.r(a), t.d(a, {
-        default: () => o
+        default: () => c
       });
       var i = t(71403),
         n = t(49853),
@@ -339,7 +339,7 @@ _global.SENTRY_RELEASE = {
         r = t(42756),
         l = t(79286);
       var d = t(46632);
-      const o = (0, r.withTranslations)((e => {
+      const c = (0, r.withTranslations)((e => {
         let {
           t: a
         } = e;

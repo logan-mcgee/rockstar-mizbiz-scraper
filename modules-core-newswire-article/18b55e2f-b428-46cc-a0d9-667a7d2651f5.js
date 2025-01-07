@@ -29,7 +29,7 @@ _global.SENTRY_RELEASE = {
         carouselTitle: "rockstargames-modules-core-newswire-articleeeecd14725803dea4b8848410b644b27"
       };
       var d = s(46632);
-      const n = e => {
+      const c = e => {
           let {
             to: a,
             children: s
@@ -40,11 +40,11 @@ _global.SENTRY_RELEASE = {
             children: s
           }) : s
         },
-        c = e => {
+        n = e => {
           let {
             items: a = [],
             text: s = {},
-            style: c,
+            style: n,
             className: o = "",
             id: m = null
           } = e;
@@ -52,7 +52,7 @@ _global.SENTRY_RELEASE = {
             id: m,
             "data-testid": `carousel${o&&`-${o}`}-group-of-items`,
             children: [(0, d.jsx)(r.A, {
-              style: c,
+              style: n,
               className: [o, i.carouselWrapper].join(" "),
               children: a.map((e => (0, d.jsxs)("div", {
                 id: e?.id ?? null,
@@ -66,7 +66,7 @@ _global.SENTRY_RELEASE = {
                   ariaLabel: e?.image?.ariaLabel ?? e.description,
                   style: e?.style,
                   className: [i.img, e?.className].join(" ")
-                }), e.title && (0, d.jsx)(n, {
+                }), e.title && (0, d.jsx)(c, {
                   to: e?.to,
                   children: (0, d.jsx)("h4", {
                     className: i.carouselTitle,
@@ -92,7 +92,7 @@ _global.SENTRY_RELEASE = {
         m = s(31879),
         g = s.n(m),
         u = s(74401);
-      const b = e => {
+      const f = e => {
           let {
             impressionTracking: a,
             gtm: s = {},
@@ -104,7 +104,7 @@ _global.SENTRY_RELEASE = {
             children: t
           }) : t
         },
-        f = e => {
+        b = e => {
           let {
             to: a,
             children: s
@@ -147,10 +147,10 @@ _global.SENTRY_RELEASE = {
             className: (0, u.classList)("rockstargames-modules-core-newswire-articlec84f82c9ba8b58c3cfcc3834228a96d7", l),
             id: r,
             "data-testid": "standard-group-of-items",
-            children: a.map((e => (0, d.jsx)(b, {
+            children: a.map((e => (0, d.jsx)(f, {
               impressionTracking: e?.impressionTracking,
               gtm: e?.gtm,
-              children: (0, d.jsx)(f, {
+              children: (0, d.jsx)(b, {
                 to: e?.to,
                 children: (0, d.jsxs)("div", {
                   className: (0, u.classList)("rockstargames-modules-core-newswire-articleea3df4f9076c3f017962a018b926c3e0", e.className),
@@ -175,12 +175,12 @@ _global.SENTRY_RELEASE = {
             renderTemplate: l = "",
             style: r = {},
             id: i = null,
-            ...n
+            ...c
           } = e;
           if (!t.length) return null;
           switch (l) {
             case "carousel":
-              return (0, d.jsx)(c, {
+              return (0, d.jsx)(n, {
                 text: s,
                 items: t,
                 style: r,
@@ -188,7 +188,7 @@ _global.SENTRY_RELEASE = {
                 children: a
               });
             case "carousel-panorama":
-              return (0, d.jsx)(c, {
+              return (0, d.jsx)(n, {
                 text: s,
                 items: t,
                 style: r,
@@ -201,7 +201,7 @@ _global.SENTRY_RELEASE = {
                 items: t,
                 style: r,
                 id: i,
-                ...n,
+                ...c,
                 children: a
               })
           }

@@ -22,11 +22,11 @@ _global.SENTRY_RELEASE = {
         Lightbox_Close_Button_Tooltip: () => i,
         Lightbox_Download_Button_Label: () => g,
         Lightbox_Download_Button_Tooltip: () => L,
-        Lightbox_Open_Button_Label: () => h,
+        Lightbox_Open_Button_Label: () => c,
         Lightbox_Reset_Zoom_Button_Label: () => d,
         Lightbox_Reset_Zoom_Button_Tooltip: () => s,
-        Lightbox_Zoom_In_Button_Label: () => a,
-        Lightbox_Zoom_In_Button_Tooltip: () => n,
+        Lightbox_Zoom_In_Button_Label: () => n,
+        Lightbox_Zoom_In_Button_Tooltip: () => a,
         Lightbox_Zoom_Out_Button_Label: () => l,
         Lightbox_Zoom_Out_Button__Tooltip: () => b,
         Lightbox_Zoom_Slider_Label: () => u,
@@ -35,8 +35,8 @@ _global.SENTRY_RELEASE = {
       });
       var _ = "Zamknij podgląd",
         i = "Naciśnij {shortcut}",
-        a = "Powiększ",
-        n = "Naciśnij {shortcut}",
+        n = "Powiększ",
+        a = "Naciśnij {shortcut}",
         l = "Pomniejsz",
         b = "Naciśnij {shortcut}",
         d = "Zresetuj",
@@ -45,12 +45,12 @@ _global.SENTRY_RELEASE = {
         r = "{zoom}%",
         g = "Pobierz",
         L = "Pobierz",
-        h = "Powiększ obraz",
+        c = "Powiększ obraz",
         f = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: i,
-          Lightbox_Zoom_In_Button_Label: a,
-          Lightbox_Zoom_In_Button_Tooltip: n,
+          Lightbox_Zoom_In_Button_Label: n,
+          Lightbox_Zoom_In_Button_Tooltip: a,
           Lightbox_Zoom_Out_Button_Label: l,
           Lightbox_Zoom_Out_Button__Tooltip: b,
           Lightbox_Reset_Zoom_Button_Label: d,
@@ -59,7 +59,7 @@ _global.SENTRY_RELEASE = {
           Lightbox_Zoom_Slider_Tooltip: r,
           Lightbox_Download_Button_Label: g,
           Lightbox_Download_Button_Tooltip: L,
-          Lightbox_Open_Button_Label: h
+          Lightbox_Open_Button_Label: c
         }
     }
   }

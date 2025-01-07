@@ -27,7 +27,7 @@ _global.SENTRY_RELEASE = {
         throw new Error("clearTimeout has not been defined")
       }
 
-      function a(e) {
+      function c(e) {
         if (t === setTimeout) return setTimeout(e, 0);
         if ((t === o || !t) && setTimeout) return t = setTimeout, setTimeout(e, 0);
         try {
@@ -51,23 +51,23 @@ _global.SENTRY_RELEASE = {
           r = i
         }
       }();
-      var l, u = [],
-        c = !1,
+      var a, l = [],
+        u = !1,
         f = -1;
 
       function s() {
-        c && l && (c = !1, l.length ? u = l.concat(u) : f = -1, u.length && d())
+        u && a && (u = !1, a.length ? l = a.concat(l) : f = -1, l.length && d())
       }
 
       function d() {
-        if (!c) {
-          var e = a(s);
-          c = !0;
-          for (var t = u.length; t;) {
-            for (l = u, u = []; ++f < t;) l && l[f].run();
-            f = -1, t = u.length
+        if (!u) {
+          var e = c(s);
+          u = !0;
+          for (var t = l.length; t;) {
+            for (a = l, l = []; ++f < t;) a && a[f].run();
+            f = -1, t = l.length
           }
-          l = null, c = !1,
+          a = null, u = !1,
             function(e) {
               if (r === clearTimeout) return clearTimeout(e);
               if ((r === i || !r) && clearTimeout) return r = clearTimeout, clearTimeout(e);
@@ -93,7 +93,7 @@ _global.SENTRY_RELEASE = {
         var t = new Array(arguments.length - 1);
         if (arguments.length > 1)
           for (var r = 1; r < arguments.length; r++) t[r - 1] = arguments[r];
-        u.push(new p(e, t)), 1 !== u.length || c || a(d)
+        l.push(new p(e, t)), 1 !== l.length || u || c(d)
       }, p.prototype.run = function() {
         this.fun.apply(null, this.array)
       }, n.title = "browser", n.browser = !0, n.env = {}, n.argv = [], n.version = "", n.versions = {}, n.on = y, n.addListener = y, n.once = y, n.off = y, n.removeListener = y, n.removeAllListeners = y, n.emit = y, n.prependListener = y, n.prependOnceListener = y, n.listeners = function(e) {
@@ -113,10 +113,10 @@ _global.SENTRY_RELEASE = {
       r.d(t, {
         C6: () => o,
         Cl: () => i,
-        Ju: () => l,
-        Tt: () => a,
-        fX: () => c,
-        zs: () => u
+        Ju: () => a,
+        Tt: () => c,
+        fX: () => u,
+        zs: () => l
       });
       var n = function(e, t) {
         return n = Object.setPrototypeOf || {
@@ -145,7 +145,7 @@ _global.SENTRY_RELEASE = {
         }, i.apply(this, arguments)
       };
 
-      function a(e, t) {
+      function c(e, t) {
         var r = {};
         for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (r[n] = e[n]);
         if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -155,7 +155,7 @@ _global.SENTRY_RELEASE = {
         return r
       }
 
-      function l(e) {
+      function a(e) {
         var t = "function" == typeof Symbol && Symbol.iterator,
           r = t && e[t],
           n = 0;
@@ -171,14 +171,14 @@ _global.SENTRY_RELEASE = {
         throw new TypeError(t ? "Object is not iterable." : "Symbol.iterator is not defined.")
       }
 
-      function u(e, t) {
+      function l(e, t) {
         var r = "function" == typeof Symbol && e[Symbol.iterator];
         if (!r) return e;
         var n, o, i = r.call(e),
-          a = [];
+          c = [];
         try {
           for (;
-            (void 0 === t || t-- > 0) && !(n = i.next()).done;) a.push(n.value)
+            (void 0 === t || t-- > 0) && !(n = i.next()).done;) c.push(n.value)
         } catch (e) {
           o = {
             error: e
@@ -190,10 +190,10 @@ _global.SENTRY_RELEASE = {
             if (o) throw o.error
           }
         }
-        return a
+        return c
       }
 
-      function c(e, t, r) {
+      function u(e, t, r) {
         if (r || 2 === arguments.length)
           for (var n, o = 0, i = t.length; o < i; o++) !n && o in t || (n || (n = Array.prototype.slice.call(t, 0, o)), n[o] = t[o]);
         return e.concat(n || Array.prototype.slice.call(t))

@@ -306,8 +306,8 @@ _global.SENTRY_RELEASE = {
             f = e.messages,
             m = e.defaultLocale,
             p = e.defaultFormats,
-            g = e.fallbackOnEmptyString,
-            d = e.onError,
+            d = e.fallbackOnEmptyString,
+            g = e.onError,
             y = e.timeZone,
             E = e.defaultRichTextElements;
           void 0 === r && (r = {
@@ -321,11 +321,11 @@ _global.SENTRY_RELEASE = {
           if (Array.isArray(_) && 1 === _.length && _[0].type === s.ZE.literal) return _[0].value;
           if (!i && _ && "string" == typeof _ && !E) return _.replace(/'\{(.*?)\}'/gi, "{$1}");
           if (i = (0, n.Cl)((0, n.Cl)({}, E), i || {}), c = h(c, y), p = h(p, y), !_) {
-            if (!1 === g && "" === _) return _;
-            if ((!v || u && u.toLowerCase() !== m.toLowerCase()) && d(new a.sb(r, u)), v) try {
+            if (!1 === d && "" === _) return _;
+            if ((!v || u && u.toLowerCase() !== m.toLowerCase()) && g(new a.sb(r, u)), v) try {
               return t.getMessageFormat(v, m, p, l).format(i)
             } catch (e) {
-              return d(new a.Ho('Error formatting default message for: "'.concat(T, '", rendering default message verbatim'), u, r, e)), "string" == typeof v ? v : T
+              return g(new a.Ho('Error formatting default message for: "'.concat(T, '", rendering default message verbatim'), u, r, e)), "string" == typeof v ? v : T
             }
             return T
           }
@@ -334,12 +334,12 @@ _global.SENTRY_RELEASE = {
               formatters: t
             }, l || {})).format(i)
           } catch (e) {
-            d(new a.Ho('Error formatting message: "'.concat(T, '", using ').concat(v ? "default message" : "id", " as fallback."), u, r, e))
+            g(new a.Ho('Error formatting message: "'.concat(T, '", using ').concat(v ? "default message" : "id", " as fallback."), u, r, e))
           }
           if (v) try {
             return t.getMessageFormat(v, m, p, l).format(i)
           } catch (e) {
-            d(new a.Ho('Error formatting the default message for: "'.concat(T, '", rendering message verbatim'), u, r, e))
+            g(new a.Ho('Error formatting the default message for: "'.concat(T, '", rendering message verbatim'), u, r, e))
           }
           return "string" == typeof _ ? _ : "string" == typeof v ? v : T
         },
@@ -356,7 +356,7 @@ _global.SENTRY_RELEASE = {
         return t(n, (0, f.J9)(r, m, s))
       }
 
-      function g(e, t, r, n) {
+      function d(e, t, r, n) {
         void 0 === n && (n = {});
         try {
           return p(e, t, n).format(r)
@@ -366,7 +366,7 @@ _global.SENTRY_RELEASE = {
         return String(r)
       }
 
-      function d(e, t, r, n) {
+      function g(e, t, r, n) {
         void 0 === n && (n = {});
         try {
           return p(e, t, n).formatToParts(r)
@@ -586,8 +586,8 @@ _global.SENTRY_RELEASE = {
                   e.onWarn && e.defaultRichTextElements && "string" == typeof((t = e.messages || {}) ? t[Object.keys(t)[0]] : void 0) && e.onWarn('[@formatjs/intl] "defaultRichTextElements" was specified but "message" was not pre-compiled. \nPlease consider using "@formatjs/cli" to pre-compile your messages for performance.\nFor more details see https://formatjs.io/docs/getting-started/message-distribution')
                 }(o), (0, n.Cl)((0, n.Cl)({}, o), {
                   formatters: r,
-                  formatNumber: g.bind(null, o, r.getNumberFormat),
-                  formatNumberToParts: d.bind(null, o, r.getNumberFormat),
+                  formatNumber: d.bind(null, o, r.getNumberFormat),
+                  formatNumberToParts: g.bind(null, o, r.getNumberFormat),
                   formatRelativeTime: b.bind(null, o, r.getRelativeTimeFormat),
                   formatDate: _.bind(null, o, r.getDateTimeFormat),
                   formatDateToParts: C.bind(null, o, r.getDateTimeFormat),
@@ -854,11 +854,11 @@ _global.SENTRY_RELEASE = {
         Tu: () => y,
         eW: () => s,
         oF: () => u,
-        N1: () => d,
+        N1: () => g,
         N6: () => m,
         jA: () => p,
         Jp: () => f,
-        xm: () => g,
+        xm: () => d,
         Qh: () => c,
         qg: () => ie
       });
@@ -896,11 +896,11 @@ _global.SENTRY_RELEASE = {
         return e.type === o.pound
       }
 
-      function g(e) {
+      function d(e) {
         return e.type === o.tag
       }
 
-      function d(e) {
+      function g(e) {
         return !(!e || "object" != typeof e || e.type !== i.number)
       }
 
@@ -1770,8 +1770,8 @@ _global.SENTRY_RELEASE = {
               if ((H = this.tryParseArgumentClose(s)).err) return H;
               var p = F(s, this.clonePosition());
               if (f && K(null == f ? void 0 : f.style, "::", 0)) {
-                var g = J(f.style.slice(2));
-                if ("number" === h) return (_ = this.parseNumberSkeletonFromString(g, f.styleLocation)).err ? _ : {
+                var d = J(f.style.slice(2));
+                if ("number" === h) return (_ = this.parseNumberSkeletonFromString(d, f.styleLocation)).err ? _ : {
                   val: {
                     type: o.number,
                     value: r,
@@ -1780,9 +1780,9 @@ _global.SENTRY_RELEASE = {
                   },
                   err: null
                 };
-                if (0 === g.length) return this.error(n.EXPECT_DATE_TIME_SKELETON, p);
-                var d = g;
-                this.locale && (d = function(e, t) {
+                if (0 === d.length) return this.error(n.EXPECT_DATE_TIME_SKELETON, p);
+                var g = d;
+                this.locale && (g = function(e, t) {
                   for (var r = "", n = 0; n < e.length; n++) {
                     var o = e.charAt(n);
                     if ("j" === o) {
@@ -1795,12 +1795,12 @@ _global.SENTRY_RELEASE = {
                     } else r += "J" === o ? "H" : o
                   }
                   return r
-                }(g, this.locale));
+                }(d, this.locale));
                 var y = {
                   type: i.dateTime,
-                  pattern: d,
+                  pattern: g,
                   location: f.styleLocation,
-                  parsedOptions: this.shouldParseSkeletons ? v(d) : {}
+                  parsedOptions: this.shouldParseSkeletons ? v(g) : {}
                 };
                 return {
                   val: {
@@ -1936,8 +1936,8 @@ _global.SENTRY_RELEASE = {
             if (!this.bumpIf("{")) return this.error("select" === t ? n.EXPECT_SELECT_ARGUMENT_SELECTOR_FRAGMENT : n.EXPECT_PLURAL_ARGUMENT_SELECTOR_FRAGMENT, F(this.clonePosition(), this.clonePosition()));
             var p = this.parseMessage(e + 1, t, r);
             if (p.err) return p;
-            var g = this.tryParseArgumentClose(m);
-            if (g.err) return g;
+            var d = this.tryParseArgumentClose(m);
+            if (d.err) return d;
             s.push([u, {
               value: p.val,
               location: F(m, this.clonePosition())
@@ -2036,7 +2036,7 @@ _global.SENTRY_RELEASE = {
         e.forEach((function(e) {
           if (delete e.location, f(e) || m(e))
             for (var t in e.options) delete e.options[t].location, oe(e.options[t].value);
-          else u(e) && d(e.style) || (h(e) || c(e)) && y(e.style) ? delete e.style.location : g(e) && oe(e.children)
+          else u(e) && g(e.style) || (h(e) || c(e)) && y(e.style) ? delete e.style.location : d(e) && oe(e.children)
         }))
       }
 
@@ -2111,9 +2111,9 @@ _global.SENTRY_RELEASE = {
           }
           var a = h(r);
           c && (a = a.concat(c(r)));
-          for (var s = l(t), g = l(r), d = 0; d < a.length; ++d) {
-            var y = a[d];
-            if (!(i[y] || n && n[y] || g && g[y] || s && s[y])) {
+          for (var s = l(t), d = l(r), g = 0; g < a.length; ++g) {
+            var y = a[g];
+            if (!(i[y] || n && n[y] || d && d[y] || s && s[y])) {
               var E = f(r, y);
               try {
                 u(t, y, E)
@@ -2343,41 +2343,41 @@ _global.SENTRY_RELEASE = {
           value: e[0].value
         }];
         for (var f = [], m = 0, p = e; m < p.length; m++) {
-          var g = p[m];
-          if ((0, o.eW)(g)) f.push({
+          var d = p[m];
+          if ((0, o.eW)(d)) f.push({
             type: n.literal,
-            value: g.value
+            value: d.value
           });
-          else if ((0, o.jA)(g)) "number" == typeof h && f.push({
+          else if ((0, o.jA)(d)) "number" == typeof h && f.push({
             type: n.literal,
             value: r.getNumberFormat(t).format(h)
           });
           else {
-            var d = g.value;
-            if (!u || !(d in u)) throw new i.Ei(d, c);
-            var y = u[d];
-            if ((0, o.Im)(g)) y && "string" != typeof y && "number" != typeof y || (y = "string" == typeof y || "number" == typeof y ? String(y) : ""), f.push({
+            var g = d.value;
+            if (!u || !(g in u)) throw new i.Ei(g, c);
+            var y = u[g];
+            if ((0, o.Im)(d)) y && "string" != typeof y && "number" != typeof y || (y = "string" == typeof y || "number" == typeof y ? String(y) : ""), f.push({
               type: "string" == typeof y ? n.literal : n.object,
               value: y
             });
-            else if ((0, o.tv)(g)) {
-              var E = "string" == typeof g.style ? l.date[g.style] : (0, o.Tu)(g.style) ? g.style.parsedOptions : void 0;
+            else if ((0, o.tv)(d)) {
+              var E = "string" == typeof d.style ? l.date[d.style] : (0, o.Tu)(d.style) ? d.style.parsedOptions : void 0;
               f.push({
                 type: n.literal,
                 value: r.getDateTimeFormat(t, E).format(y)
               })
-            } else if ((0, o.Qh)(g)) E = "string" == typeof g.style ? l.time[g.style] : (0, o.Tu)(g.style) ? g.style.parsedOptions : l.time.medium, f.push({
+            } else if ((0, o.Qh)(d)) E = "string" == typeof d.style ? l.time[d.style] : (0, o.Tu)(d.style) ? d.style.parsedOptions : l.time.medium, f.push({
               type: n.literal,
               value: r.getDateTimeFormat(t, E).format(y)
             });
-            else if ((0, o.oF)(g))(E = "string" == typeof g.style ? l.number[g.style] : (0, o.N1)(g.style) ? g.style.parsedOptions : void 0) && E.scale && (y *= E.scale || 1), f.push({
+            else if ((0, o.oF)(d))(E = "string" == typeof d.style ? l.number[d.style] : (0, o.N1)(d.style) ? d.style.parsedOptions : void 0) && E.scale && (y *= E.scale || 1), f.push({
               type: n.literal,
               value: r.getNumberFormat(t, E).format(y)
             });
             else {
-              if ((0, o.xm)(g)) {
-                var b = g.children,
-                  v = g.value,
+              if ((0, o.xm)(d)) {
+                var b = d.children,
+                  v = d.value,
                   T = u[v];
                 if (!a(T)) throw new i.Zo(v, "function", c);
                 var _ = T(s(b, t, r, l, u, h).map((function(e) {
@@ -2390,20 +2390,20 @@ _global.SENTRY_RELEASE = {
                   }
                 })))
               }
-              if ((0, o.Jp)(g)) {
-                if (!(H = g.options[y] || g.options.other)) throw new i.$x(g.value, y, Object.keys(g.options), c);
+              if ((0, o.Jp)(d)) {
+                if (!(H = d.options[y] || d.options.other)) throw new i.$x(d.value, y, Object.keys(d.options), c);
                 f.push.apply(f, s(H.value, t, r, l, u))
-              } else if ((0, o.N6)(g)) {
+              } else if ((0, o.N6)(d)) {
                 var H;
-                if (!(H = g.options["=".concat(y)])) {
+                if (!(H = d.options["=".concat(y)])) {
                   if (!Intl.PluralRules) throw new i.IF('Intl.PluralRules is not available in this environment.\nTry polyfilling it using "@formatjs/intl-pluralrules"\n', i.O4.MISSING_INTL_API, c);
                   var S = r.getPluralRules(t, {
-                    type: g.pluralType
-                  }).select(y - (g.offset || 0));
-                  H = g.options[S] || g.options.other
+                    type: d.pluralType
+                  }).select(y - (d.offset || 0));
+                  H = d.options[S] || d.options.other
                 }
-                if (!H) throw new i.$x(g.value, y, Object.keys(g.options), c);
-                f.push.apply(f, s(H.value, t, r, l, u, y - (g.offset || 0)))
+                if (!H) throw new i.$x(d.value, y, Object.keys(d.options), c);
+                f.push.apply(f, s(H.value, t, r, l, u, y - (d.offset || 0)))
               }
             }
           }
@@ -2431,8 +2431,8 @@ _global.SENTRY_RELEASE = {
         f = r ? Symbol.for("react.forward_ref") : 60112,
         m = r ? Symbol.for("react.suspense") : 60113,
         p = r ? Symbol.for("react.suspense_list") : 60120,
-        g = r ? Symbol.for("react.memo") : 60115,
-        d = r ? Symbol.for("react.lazy") : 60116,
+        d = r ? Symbol.for("react.memo") : 60115,
+        g = r ? Symbol.for("react.lazy") : 60116,
         y = r ? Symbol.for("react.block") : 60121,
         E = r ? Symbol.for("react.fundamental") : 60117,
         b = r ? Symbol.for("react.responder") : 60118,
@@ -2455,8 +2455,8 @@ _global.SENTRY_RELEASE = {
                   switch (e = e && e.$$typeof) {
                     case u:
                     case f:
-                    case d:
                     case g:
+                    case d:
                     case l:
                       return e;
                     default:
@@ -2472,7 +2472,7 @@ _global.SENTRY_RELEASE = {
       function _(e) {
         return T(e) === c
       }
-      t.AsyncMode = h, t.ConcurrentMode = c, t.ContextConsumer = u, t.ContextProvider = l, t.Element = n, t.ForwardRef = f, t.Fragment = i, t.Lazy = d, t.Memo = g, t.Portal = o, t.Profiler = s, t.StrictMode = a, t.Suspense = m, t.isAsyncMode = function(e) {
+      t.AsyncMode = h, t.ConcurrentMode = c, t.ContextConsumer = u, t.ContextProvider = l, t.Element = n, t.ForwardRef = f, t.Fragment = i, t.Lazy = g, t.Memo = d, t.Portal = o, t.Profiler = s, t.StrictMode = a, t.Suspense = m, t.isAsyncMode = function(e) {
         return _(e) || T(e) === h
       }, t.isConcurrentMode = _, t.isContextConsumer = function(e) {
         return T(e) === u
@@ -2485,9 +2485,9 @@ _global.SENTRY_RELEASE = {
       }, t.isFragment = function(e) {
         return T(e) === i
       }, t.isLazy = function(e) {
-        return T(e) === d
-      }, t.isMemo = function(e) {
         return T(e) === g
+      }, t.isMemo = function(e) {
+        return T(e) === d
       }, t.isPortal = function(e) {
         return T(e) === o
       }, t.isProfiler = function(e) {
@@ -2497,7 +2497,7 @@ _global.SENTRY_RELEASE = {
       }, t.isSuspense = function(e) {
         return T(e) === m
       }, t.isValidElementType = function(e) {
-        return "string" == typeof e || "function" == typeof e || e === i || e === c || e === s || e === a || e === m || e === p || "object" == typeof e && null !== e && (e.$$typeof === d || e.$$typeof === g || e.$$typeof === l || e.$$typeof === u || e.$$typeof === f || e.$$typeof === E || e.$$typeof === b || e.$$typeof === v || e.$$typeof === y)
+        return "string" == typeof e || "function" == typeof e || e === i || e === c || e === s || e === a || e === m || e === p || "object" == typeof e && null !== e && (e.$$typeof === g || e.$$typeof === d || e.$$typeof === l || e.$$typeof === u || e.$$typeof === f || e.$$typeof === E || e.$$typeof === b || e.$$typeof === v || e.$$typeof === y)
       }, t.typeOf = T
     },
     36057: (e, t, r) => {

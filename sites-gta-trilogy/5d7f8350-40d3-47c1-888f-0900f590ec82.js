@@ -22,8 +22,8 @@ _global.SENTRY_RELEASE = {
         useClickAnyWhere: () => s,
         useCopyToClipboard: () => u,
         useCountdown: () => i,
-        useCounter: () => a,
-        useDarkMode: () => c,
+        useCounter: () => c,
+        useDarkMode: () => a,
         useDebounce: () => l,
         useDocumentTitle: () => d,
         useEffectOnce: () => f,
@@ -85,7 +85,7 @@ _global.SENTRY_RELEASE = {
             }, new((r = void 0) || (r = Promise))((function(e, t) {
               function u(e) {
                 try {
-                  a(s.next(e))
+                  c(s.next(e))
                 } catch (e) {
                   t(e)
                 }
@@ -93,19 +93,19 @@ _global.SENTRY_RELEASE = {
 
               function i(e) {
                 try {
-                  a(s.throw(e))
+                  c(s.throw(e))
                 } catch (e) {
                   t(e)
                 }
               }
 
-              function a(t) {
+              function c(t) {
                 var n;
                 t.done ? e(t.value) : (n = t.value, n instanceof r ? n : new r((function(e) {
                   e(n)
                 }))).then(u, i)
               }
-              a((s = s.apply(n, o || [])).next())
+              c((s = s.apply(n, o || [])).next())
             }));
             var n, o, r, s
           }]
@@ -119,30 +119,30 @@ _global.SENTRY_RELEASE = {
             countStop: u
           } = e), n = null != n ? n : 1e3, s = null != s && s, u = null != u ? u : 0;
           const {
-            count: c,
+            count: a,
             increment: l,
             decrement: d,
             reset: f
-          } = a(t), {
+          } = c(t), {
             value: g,
             setTrue: w,
             setFalse: v
           } = r(!1), y = () => {
             v(), f()
           }, h = (0, o.useCallback)((() => {
-            c !== u ? s ? l() : d() : v()
-          }), [c, u, d, l, s, v]);
-          return m(h, g ? n : null), i ? [c, {
+            a !== u ? s ? l() : d() : v()
+          }), [a, u, d, l, s, v]);
+          return m(h, g ? n : null), i ? [a, {
             start: w,
             stop: v,
             reset: y
-          }] : [c, {
+          }] : [a, {
             startCountdown: w,
             stopCountdown: v,
             resetCountdown: y
           }]
         },
-        a = function(e) {
+        c = function(e) {
           const [t, n] = (0, o.useState)(e || 0);
           return {
             count: t,
@@ -152,7 +152,7 @@ _global.SENTRY_RELEASE = {
             setCount: n
           }
         },
-        c = function(e) {
+        a = function(e) {
           var t;
           const n = _("(prefers-color-scheme: dark)"),
             [o, r] = M("usehooks-ts-dark-mode", null !== (t = null != e ? e : n) && void 0 !== t && t);
@@ -246,8 +246,8 @@ _global.SENTRY_RELEASE = {
             }), s);
           return (0, o.useEffect)((() => {
             if (e) return r.current = !1, (() => {
-              var o, s, u, a;
-              o = this, s = void 0, a = function*() {
+              var o, s, u, c;
+              o = this, s = void 0, c = function*() {
                 if (i({
                     type: "loading"
                   }), n.current[e]) i({
@@ -273,7 +273,7 @@ _global.SENTRY_RELEASE = {
               }, new((u = void 0) || (u = Promise))((function(e, t) {
                 function n(e) {
                   try {
-                    i(a.next(e))
+                    i(c.next(e))
                   } catch (e) {
                     t(e)
                   }
@@ -281,7 +281,7 @@ _global.SENTRY_RELEASE = {
 
                 function r(e) {
                   try {
-                    i(a.throw(e))
+                    i(c.throw(e))
                   } catch (e) {
                     t(e)
                   }
@@ -293,7 +293,7 @@ _global.SENTRY_RELEASE = {
                     e(o)
                   }))).then(n, r)
                 }
-                i((a = a.apply(o, s || [])).next())
+                i((c = c.apply(o, s || [])).next())
               }))
             })(), () => {
               r.current = !0
@@ -330,20 +330,20 @@ _global.SENTRY_RELEASE = {
             rootMargin: s = "0%",
             freezeOnceVisible: u = !1
           } = t;
-          const [i, a] = (0, o.useState)(), c = (null == i ? void 0 : i.isIntersecting) && u, l = e => {
+          const [i, c] = (0, o.useState)(), a = (null == i ? void 0 : i.isIntersecting) && u, l = e => {
             let [t] = e;
-            a(t)
+            c(t)
           };
           return (0, o.useEffect)((() => {
             const t = null == e ? void 0 : e.current;
-            if (!window.IntersectionObserver || c || !t) return;
+            if (!window.IntersectionObserver || a || !t) return;
             const o = new IntersectionObserver(l, {
               threshold: n,
               root: r,
               rootMargin: s
             });
             return o.observe(t), () => o.disconnect()
-          }), [null == e ? void 0 : e.current, JSON.stringify(n), r, s, c]), i
+          }), [null == e ? void 0 : e.current, JSON.stringify(n), r, s, a]), i
         },
         m = function(e, t) {
           const n = (0, o.useRef)(e);
@@ -531,12 +531,12 @@ _global.SENTRY_RELEASE = {
               };
               i.addEventListener("load", t), i.addEventListener("error", t)
             }
-            const a = t => {
+            const c = t => {
               const n = "load" === t.type ? "ready" : "error";
               r(n), D[e] = n
             };
-            return i.addEventListener("load", a), i.addEventListener("error", a), () => {
-              i && (i.removeEventListener("load", a), i.removeEventListener("error", a)), i && (null == t ? void 0 : t.removeOnUnmount) && i.remove()
+            return i.addEventListener("load", c), i.addEventListener("error", c), () => {
+              i && (i.removeEventListener("load", c), i.removeEventListener("error", c)), i && (null == t ? void 0 : t.removeOnUnmount) && i.remove()
             }
           }), [e, null == t ? void 0 : t.shouldPreventLoad, null == t ? void 0 : t.removeOnUnmount]), n
         },
@@ -590,18 +590,18 @@ _global.SENTRY_RELEASE = {
             n(r)
           }), [e, t]), i = (0, o.useCallback)((() => {
             r && n((e => e + 1))
-          }), [r]), a = (0, o.useCallback)((() => {
+          }), [r]), c = (0, o.useCallback)((() => {
             s && n((e => e - 1))
-          }), [s]), c = (0, o.useCallback)((() => {
+          }), [s]), a = (0, o.useCallback)((() => {
             n(1)
           }), []);
           return [t, {
             goToNextStep: i,
-            goToPrevStep: a,
+            goToPrevStep: c,
             canGoToNextStep: r,
             canGoToPrevStep: s,
             setStep: u,
-            reset: c
+            reset: a
           }]
         },
         W = function() {

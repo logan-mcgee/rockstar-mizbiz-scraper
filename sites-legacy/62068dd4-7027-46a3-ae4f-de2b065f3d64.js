@@ -201,14 +201,14 @@ _global.SENTRY_RELEASE = {
           }),
           defaultItem: () => (0, t.defaultItemUnique)()
         }),
-        b = () => ({
+        c = () => ({
           name: "modal",
           label: "Modal Content",
           description: "Modify modal content details in here.",
           component: "group",
           fields: []
         }),
-        c = () => ({
+        b = () => ({
           name: "helperText",
           label: "Helper Link Section",
           component: "group",
@@ -325,7 +325,7 @@ _global.SENTRY_RELEASE = {
               description: "Modify expanding platform button details in here.",
               component: "group",
               fields: [p()]
-            }, b()],
+            }, c()],
             itemProps: e => (0, t.itemPropsWithKey)(e, {
               label: `${e?.name??"New"} [SubHero Button]`
             }),
@@ -398,14 +398,14 @@ _global.SENTRY_RELEASE = {
             itemProps: e => (0, t.itemPropsWithKey)(e, {
               label: `${e?.name??"New"} ${e.type??""} [Platform]`
             })
-          }, c()],
+          }, b()],
           itemProps: e => (0, t.itemPropsWithKey)(e, {
             label: `${e?.name??"New"} [Sub Hero]`
           }),
           defaultItem: {
             description: "",
             buttons: [],
-            helperLink: (0, t.defaultItemUnique)(c().defaultItem ?? {})
+            helperLink: (0, t.defaultItemUnique)(b().defaultItem ?? {})
           }
         }),
         f = () => ({

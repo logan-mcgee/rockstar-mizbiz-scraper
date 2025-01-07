@@ -16,68 +16,68 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_gta = self.webpackChunk_rockstargames_sites_gta || []).push([
   [621, 2], {
-    6516: (e, t, a) => {
-      var o = a(1403),
+    6516: (e, t, o) => {
+      var a = o(1403),
         n = Symbol.for("react.element"),
         r = Symbol.for("react.fragment"),
-        s = Object.prototype.hasOwnProperty,
-        d = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        l = {
+        d = Object.prototype.hasOwnProperty,
+        f = a.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        s = {
           key: !0,
           ref: !0,
           __self: !0,
           __source: !0
         };
 
-      function f(e, t, a) {
-        var o, r = {},
-          f = null,
-          i = null;
-        for (o in void 0 !== a && (f = "" + a), void 0 !== t.key && (f = "" + t.key), void 0 !== t.ref && (i = t.ref), t) s.call(t, o) && !l.hasOwnProperty(o) && (r[o] = t[o]);
+      function l(e, t, o) {
+        var a, r = {},
+          l = null,
+          c = null;
+        for (a in void 0 !== o && (l = "" + o), void 0 !== t.key && (l = "" + t.key), void 0 !== t.ref && (c = t.ref), t) d.call(t, a) && !s.hasOwnProperty(a) && (r[a] = t[a]);
         if (e && e.defaultProps)
-          for (o in t = e.defaultProps) void 0 === r[o] && (r[o] = t[o]);
+          for (a in t = e.defaultProps) void 0 === r[a] && (r[a] = t[a]);
         return {
           $$typeof: n,
           type: e,
-          key: f,
-          ref: i,
+          key: l,
+          ref: c,
           props: r,
-          _owner: d.current
+          _owner: f.current
         }
       }
-      t.Fragment = r, t.jsx = f, t.jsxs = f
+      t.Fragment = r, t.jsx = l, t.jsxs = l
     },
-    6632: (e, t, a) => {
-      e.exports = a(6516)
+    6632: (e, t, o) => {
+      e.exports = o(6516)
     },
-    3002: (e, t, a) => {
-      a.r(t), a.d(t, {
-        default: () => s
+    3002: (e, t, o) => {
+      o.r(t), o.d(t, {
+        default: () => d
       });
-      var o = a(1403),
-        n = a(4410),
-        r = a(6632);
-      const s = e => {
+      var a = o(1403),
+        n = o(4410),
+        r = o(6632);
+      const d = e => {
         let {
           basename: t,
-          children: a,
-          history: s
+          children: o,
+          history: d
         } = e;
-        const [d, l] = (0, o.useState)({
-          action: s.action,
-          location: s.location
+        const [f, s] = (0, a.useState)({
+          action: d.action,
+          location: d.location
         });
-        return (0, o.useLayoutEffect)((() => s.listen(((e, t) => {
-          l({
+        return (0, a.useLayoutEffect)((() => d.listen(((e, t) => {
+          s({
             location: e,
             action: t
           })
-        }))), [s]), (0, r.jsx)(n.Router, {
+        }))), [d]), (0, r.jsx)(n.Router, {
           basename: t,
-          location: d.location,
-          navigationType: d.action,
-          navigator: s,
-          children: a
+          location: f.location,
+          navigationType: f.action,
+          navigator: d,
+          children: o
         })
       }
     }

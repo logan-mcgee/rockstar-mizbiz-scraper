@@ -25,14 +25,14 @@ _global.SENTRY_RELEASE = {
         r = a.n(o),
         n = a(600);
       const l = "__MFE_GLOBAL_HOOK__";
-      var i = a(3963),
-        c = a(2756),
+      var c = a(3963),
+        i = a(2756),
         d = a(6717);
       const m = JSON.parse('{"us":{"home_text":"Home","rockstar_games_logo_alt_text":"Rockstar Games Logo"},"de":{"home_text":"Startseite","rockstar_games_logo_alt_text":"Rockstar-Games-Logo"},"es":{"home_text":"Inicio","rockstar_games_logo_alt_text":"Logo de Rockstar Games"},"mx":{"home_text":"Inicio","rockstar_games_logo_alt_text":"Logo de Rockstar Games"},"fr":{"home_text":"Accueil","rockstar_games_logo_alt_text":"Logo Rockstar Games"},"it":{"home_text":"Home","rockstar_games_logo_alt_text":"Logo di Rockstar Games"},"jp":{"home_text":"ホーム","rockstar_games_logo_alt_text":"ロックスター・ゲームスロゴ"},"kr":{"home_text":"홈","rockstar_games_logo_alt_text":"Rockstar Games 로고"},"pl":{"home_text":"Strona główna","rockstar_games_logo_alt_text":"Logo Rockstar Games"},"br":{"home_text":"Início","rockstar_games_logo_alt_text":"Logotipo da Rockstar Games"},"ru":{"home_text":"Главная страница","rockstar_games_logo_alt_text":"Логотип Rockstar Games"},"hans":{"home_text":"主页","rockstar_games_logo_alt_text":"Rockstar Games 标志"},"tw":{"home_text":"首頁","rockstar_games_logo_alt_text":"Rockstar Games 標誌"}}');
       var _ = a(207),
-        g = a(6040),
-        u = a(8281),
-        f = a(3134),
+        f = a(6040),
+        g = a(8281),
+        u = a(3134),
         b = a(4781),
         k = a(1403),
         h = a(6864),
@@ -66,7 +66,7 @@ _global.SENTRY_RELEASE = {
       var j = a(1744),
         L = a(5190);
       const T = "rockstargames-sites-gtaa799fab6998f229f5b8c00d05b335595";
-      g.gsap.registerPlugin(b.u, u.R, f.I);
+      f.gsap.registerPlugin(b.u, g.R, u.I);
       const E = () => {
           const {
             loading: e,
@@ -74,14 +74,14 @@ _global.SENTRY_RELEASE = {
           } = (0, w.c3)(), {
             windowWidth: a,
             windowHeight: o
-          } = (0, c.useWindowResize)(), {
+          } = (0, i.useWindowResize)(), {
             mutateLSSettings: r
-          } = (0, c.useRockstarWebLSSettings)(), {
+          } = (0, i.useRockstarWebLSSettings)(), {
             track: n
           } = (0, _.useGtmTrack)(), {
             currentSite: l,
             sites: d
-          } = (0, i.A)(), m = (0, s.useBase)(), u = "promo_banner2", f = (0, k.useRef)(), b = (0, k.useRef)(null), h = (0, k.useRef)(null), E = (0, k.useRef)(null), I = (0, k.useRef)(null), A = (0, k.useRef)(null), C = (0, k.useRef)(null), {
+          } = (0, c.A)(), m = (0, s.useBase)(), g = "promo_banner2", u = (0, k.useRef)(), b = (0, k.useRef)(null), h = (0, k.useRef)(null), E = (0, k.useRef)(null), I = (0, k.useRef)(null), A = (0, k.useRef)(null), C = (0, k.useRef)(null), {
             ctaButtonRef: G,
             timelines: N,
             addTimeline: S,
@@ -92,16 +92,16 @@ _global.SENTRY_RELEASE = {
             resetVideo: H
           } = (0, w.I2)();
           if ((0, k.useEffect)((() => {
-              g.gsap.set(window, {
+              f.gsap.set(window, {
                 scrollTo: 0
               })
             }), []), (0, k.useEffect)((() => {
               N?.bannerTimeline && (M ? D ? N.bannerTimeline.progress(1) : N.bannerTimeline.play() : M || D || N.bannerTimeline.reverse())
             }), [M, N?.bannerTimeline]), (0, k.useLayoutEffect)((() => {
-              f?.current?.invalidate()
+              u?.current?.invalidate()
             }), [a, o]), (0, k.useLayoutEffect)((() => {
-              const e = g.gsap.context((() => {
-                N?.bannerTimeline?.progress(0).kill(), V && (f.current = g.gsap.timeline({
+              const e = f.gsap.context((() => {
+                N?.bannerTimeline?.progress(0).kill(), V && (u.current = f.gsap.timeline({
                   paused: !0,
                   defaults: {
                     duration: y.ft.takeover,
@@ -111,7 +111,7 @@ _global.SENTRY_RELEASE = {
                   onStart: () => {
                     n({
                       event: "takeover_impression",
-                      element_placement: u
+                      element_placement: g
                     })
                   }
                 }).fromTo(I.current, {
@@ -136,7 +136,7 @@ _global.SENTRY_RELEASE = {
                   autoAlpha: 0
                 }, {
                   autoAlpha: 1
-                }, "<"), S("bannerTimeline", f?.current))
+                }, "<"), S("bannerTimeline", u?.current))
               }));
               return () => e.revert()
             }), [V]), !V) return null;
@@ -157,7 +157,7 @@ _global.SENTRY_RELEASE = {
                     onClick: () => {
                       B(!0), n({
                         event: "site_banner_click",
-                        element_placement: u
+                        element_placement: g
                       })
                     },
                     children: [(0, v.jsx)("p", {
@@ -183,7 +183,7 @@ _global.SENTRY_RELEASE = {
                         n({
                           event: "cta_other",
                           element_placement: "banner"
-                        }), l?.site === i.C.socialClub ? window.location.href = `https://${d.www}.rockstargames.com/VI` : window.location.href = `${m}VI`
+                        }), l?.site === c.C.socialClub ? window.location.href = `https://${d.www}.rockstargames.com/VI` : window.location.href = `${m}VI`
                       }
                     }), (0, v.jsx)(j.A, {
                       closeRef: b,
@@ -191,15 +191,15 @@ _global.SENTRY_RELEASE = {
                         B(!1), r({
                           key: y.uD,
                           value: !1
-                        }), G.current && g.gsap.to(G.current, {
+                        }), G.current && f.gsap.to(G.current, {
                           autoAlpha: 0,
                           duration: y.ft.playVideo.cta,
                           ease: y.Le.playVideo.cta
                         }), N.bannerTimeline.reverse(), N.bannerTimeline.eventCallback("onReverseComplete", (() => {
-                          f.current && N.playVideoTimeline && N.playVideoTimeline.progress(0).pause(), H()
+                          u.current && N.playVideoTimeline && N.playVideoTimeline.progress(0).pause(), H()
                         })), n({
                           event: "takeover_close",
-                          element_placement: u
+                          element_placement: g
                         })
                       }
                     })]
@@ -226,9 +226,9 @@ _global.SENTRY_RELEASE = {
             t = (0, s.useBase)(),
             {
               currentSite: a
-            } = (0, i.A)(),
-            o = a?.site === i.C.socialClub ? "/" : t;
-          return (0, v.jsx)(c.ResizeProvider, {
+            } = (0, c.A)(),
+            o = a?.site === c.C.socialClub ? "/" : t;
+          return (0, v.jsx)(i.ResizeProvider, {
             children: (0, v.jsx)(r(), {
               history: e,
               basename: o,

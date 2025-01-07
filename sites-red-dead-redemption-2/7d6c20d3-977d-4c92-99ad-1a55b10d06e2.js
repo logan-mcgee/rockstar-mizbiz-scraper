@@ -30,23 +30,23 @@ _global.SENTRY_RELEASE = {
           __source: !0
         };
 
-      function i(e, t, a) {
+      function c(e, t, a) {
         var s, r = {},
-          i = null,
-          c = null;
-        for (s in void 0 !== a && (i = "" + a), void 0 !== t.key && (i = "" + t.key), void 0 !== t.ref && (c = t.ref), t) d.call(t, s) && !o.hasOwnProperty(s) && (r[s] = t[s]);
+          c = null,
+          i = null;
+        for (s in void 0 !== a && (c = "" + a), void 0 !== t.key && (c = "" + t.key), void 0 !== t.ref && (i = t.ref), t) d.call(t, s) && !o.hasOwnProperty(s) && (r[s] = t[s]);
         if (e && e.defaultProps)
           for (s in t = e.defaultProps) void 0 === r[s] && (r[s] = t[s]);
         return {
           $$typeof: n,
           type: e,
-          key: i,
-          ref: c,
+          key: c,
+          ref: i,
           props: r,
           _owner: l.current
         }
       }
-      t.Fragment = r, t.jsx = i, t.jsxs = i
+      t.Fragment = r, t.jsx = c, t.jsxs = c
     },
     46632: (e, t, a) => {
       "use strict";
@@ -55,7 +55,7 @@ _global.SENTRY_RELEASE = {
     30033: (e, t, a) => {
       "use strict";
       a.r(t), a.d(t, {
-        fbar: () => g,
+        fbar: () => f,
         useAgegated: () => u
       });
       var s = a(40207),
@@ -68,19 +68,19 @@ _global.SENTRY_RELEASE = {
         inputs: "rockstargames-sites-red-dead-redemption-2f33bd58bdfa63206fe9444fde46261d1",
         bg: "rockstargames-sites-red-dead-redemption-2db2f50238f9208ec72ef210e47b60e3b"
       };
-      var i = a(46632);
-      const c = (0, n.withTranslations)((e => {
+      var c = a(46632);
+      const i = (0, n.withTranslations)((e => {
           let {
             agegateValue: t,
             options: a = {},
             ga: d = {},
-            t: c
+            t: i
           } = e;
           const {
             track: u
           } = (0, s.useGtmTrack)(), {
-            mutateLSSettings: g
-          } = (0, n.useRockstarWebLSSettings)(), [f, p] = (0, r.useState)(null), _ = (0, r.createRef)(), m = (0, r.createRef)(), b = (0, r.createRef)(), {
+            mutateLSSettings: f
+          } = (0, n.useRockstarWebLSSettings)(), [g, p] = (0, r.useState)(null), _ = (0, r.createRef)(), m = (0, r.createRef)(), b = (0, r.createRef)(), {
             style: y
           } = a;
           (0, r.useEffect)((() => {
@@ -89,24 +89,24 @@ _global.SENTRY_RELEASE = {
               element_placement: d.element_placement ?? ""
             })
           }), []);
-          return !1 === t ? (0, i.jsxs)("div", {
+          return !1 === t ? (0, c.jsxs)("div", {
             className: o.agegate,
             style: y,
-            children: [a?.header, (0, i.jsx)("h2", {
-              children: c("agegate_fail")
+            children: [a?.header, (0, c.jsx)("h2", {
+              children: i("agegate_fail")
             })]
-          }) : null === t ? (0, i.jsxs)("div", {
+          }) : null === t ? (0, c.jsxs)("div", {
             className: o.agegate,
             style: y,
-            children: [a?.header, (0, i.jsx)("div", {
+            children: [a?.header, (0, c.jsx)("div", {
               className: o.bg,
               style: a?.bgImg ? {
                 backgroundImage: `url(${a.bgImg})`
               } : {}
-            }), !1 === f ? (0, i.jsx)("h5", {
+            }), !1 === g ? (0, c.jsx)("h5", {
               className: o.error,
-              children: c("Please enter a valid age")
-            }) : "", (0, i.jsxs)("form", {
+              children: i("Please enter a valid age")
+            }) : "", (0, c.jsxs)("form", {
               onSubmit: async e => {
                 e.preventDefault();
                 const t = `${b.current.value}-${_.current.value.padStart(2,0)}-${m.current.value.padStart(2,0)}`,
@@ -120,45 +120,45 @@ _global.SENTRY_RELEASE = {
                     event: "age_gate_failed",
                     element_placement: d.element_placement ?? "",
                     text: "you may not view this content at this time"
-                  }), g({
+                  }), f({
                     key: "agegatePass",
                     value: e
                   })
                 }
               },
-              children: [(0, i.jsx)("h5", {
-                children: c("agegate_header")
-              }), (0, i.jsxs)("div", {
+              children: [(0, c.jsx)("h5", {
+                children: i("agegate_header")
+              }), (0, c.jsxs)("div", {
                 className: o.inputs,
-                children: [(0, i.jsxs)("label", {
+                children: [(0, c.jsxs)("label", {
                   htmlFor: "monthInput",
-                  children: [c("Month"), (0, i.jsx)("input", {
+                  children: [i("Month"), (0, c.jsx)("input", {
                     id: "monthInput",
                     ref: _,
-                    placeholder: c("MM"),
+                    placeholder: i("MM"),
                     maxLength: 2
                   })]
-                }), (0, i.jsxs)("label", {
+                }), (0, c.jsxs)("label", {
                   htmlFor: "dayInput",
-                  children: [c("Day"), (0, i.jsx)("input", {
+                  children: [i("Day"), (0, c.jsx)("input", {
                     id: "dayInput",
                     ref: m,
-                    placeholder: c("DD"),
+                    placeholder: i("DD"),
                     maxLength: 2
                   })]
-                }), (0, i.jsxs)("label", {
+                }), (0, c.jsxs)("label", {
                   htmlFor: "yearInput",
-                  children: [c("Year"), (0, i.jsx)("input", {
+                  children: [i("Year"), (0, c.jsx)("input", {
                     id: "yearInput",
                     ref: b,
                     className: o.year,
-                    placeholder: c("YYYY"),
+                    placeholder: i("YYYY"),
                     maxLength: 4
                   })]
-                }), (0, i.jsx)("button", {
+                }), (0, c.jsx)("button", {
                   type: "submit",
                   className: o.submit,
-                  children: c("SUBMIT")
+                  children: i("SUBMIT")
                 })]
               })]
             }), a?.footer]
@@ -176,14 +176,14 @@ _global.SENTRY_RELEASE = {
               r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
             const d = e?.agegatePass ?? null,
               l = t?.agegate_pass ?? d ?? null;
-            return !l && a ? null : l ? s : (0, i.jsx)(c, {
+            return !l && a ? null : l ? s : (0, c.jsx)(i, {
               agegateValue: l,
               options: n,
               ga: r
             })
           }
         },
-        g = 12
+        f = 12
     },
     3941: e => {
       function t(e) {

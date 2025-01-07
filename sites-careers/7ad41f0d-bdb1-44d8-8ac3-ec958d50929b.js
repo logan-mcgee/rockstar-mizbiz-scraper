@@ -30,8 +30,8 @@ _global.SENTRY_RELEASE = {
         o = t(6677),
         u = t(1403),
         i = t.n(u),
-        a = (t(9516), "data-focus-lock"),
-        c = "data-focus-lock-disabled",
+        c = (t(9516), "data-focus-lock"),
+        a = "data-focus-lock-disabled",
         d = "data-no-focus-lock",
         f = "data-autofocus-inside";
       var s = {
@@ -204,7 +204,7 @@ _global.SENTRY_RELEASE = {
             J = u.useCallback((function(e) {
               f.current !== e && (f.current = e, d(e))
             }), []),
-            Q = (0, o.A)(((t = {})[c] = m && "disabled", t[a] = A, t), P),
+            Q = (0, o.A)(((t = {})[a] = m && "disabled", t[c] = A, t), P),
             Z = !0 !== b,
             $ = Z && "tail" !== b,
             ee = (W = [n, J], H = q || null, V = function(e) {
@@ -436,7 +436,7 @@ _global.SENTRY_RELEASE = {
         },
         ee = function(e) {
           return k(e).filter(Boolean).reduce((function(e, n) {
-            var t = n.getAttribute(a);
+            var t = n.getAttribute(c);
             return e.push.apply(e, t ? function(e) {
               for (var n = new Set, t = e.length, r = 0; r < t; r += 1)
                 for (var o = r + 1; o < t; o += 1) {
@@ -446,7 +446,7 @@ _global.SENTRY_RELEASE = {
               return e.filter((function(e, t) {
                 return !n.has(t)
               }))
-            }(_($(n).querySelectorAll("[".concat(a, '="').concat(t, '"]:not([').concat(c, '="disabled"])')))) : [n]), e
+            }(_($(n).querySelectorAll("[".concat(c, '="').concat(t, '"]:not([').concat(a, '="disabled"])')))) : [n]), e
           }), [])
         },
         ne = function(e, n) {
@@ -479,29 +479,29 @@ _global.SENTRY_RELEASE = {
         ie = function(e, n) {
           return void 0 === n && (n = []), n.push(e), e.parentNode && ie(e.parentNode.host || e.parentNode, n), n
         },
-        ae = function(e, n) {
+        ce = function(e, n) {
           for (var t = ie(e), r = ie(n), o = 0; o < t.length; o += 1) {
             var u = t[o];
             if (r.indexOf(u) >= 0) return u
           }
           return !1
         },
-        ce = function(e, n, t) {
+        ae = function(e, n, t) {
           var r = k(e),
             o = k(n),
             u = r[0],
             i = !1;
           return o.filter(Boolean).forEach((function(e) {
-            i = ae(i || e, e) || i, t.filter(Boolean).forEach((function(e) {
-              var n = ae(u, e);
-              n && (i = !i || Q(n, i) ? n : ae(n, i))
+            i = ce(i || e, e) || i, t.filter(Boolean).forEach((function(e) {
+              var n = ce(u, e);
+              n && (i = !i || Q(n, i) ? n : ce(n, i))
             }))
           })), i
         },
         de = function(e, n) {
-          var t, r, o, u, i, a, c = Z(k(e).length > 0 ? document : S(e).ownerDocument),
+          var t, r, o, u, i, c, a = Z(k(e).length > 0 ? document : S(e).ownerDocument),
             d = ee(e).filter(B),
-            s = ce(c || e, e, d),
+            s = ae(a || e, e, d),
             l = new Map,
             v = J(d, l),
             p = z(d, l).filter((function(e) {
@@ -524,25 +524,25 @@ _global.SENTRY_RELEASE = {
                 var o = e.length,
                   u = e[0],
                   i = e[o - 1],
-                  a = R(t);
+                  c = R(t);
                 if (!(t && e.indexOf(t) >= 0)) {
-                  var c, d, f = void 0 !== t ? n.indexOf(t) : -1,
+                  var a, d, f = void 0 !== t ? n.indexOf(t) : -1,
                     s = r ? n.indexOf(r) : f,
                     l = r ? e.indexOf(r) : -1,
                     v = f - s,
                     p = n.indexOf(u),
                     m = n.indexOf(i),
-                    b = (c = n, d = new Set, c.forEach((function(e) {
-                      return d.add(te(e, c))
-                    })), c.filter((function(e) {
+                    b = (a = n, d = new Set, a.forEach((function(e) {
+                      return d.add(te(e, a))
+                    })), a.filter((function(e) {
                       return d.has(e)
                     }))),
                     y = (void 0 !== t ? b.indexOf(t) : -1) - (r ? b.indexOf(r) : f),
                     h = oe(e, 0),
                     g = oe(e, o - 1);
-                  return -1 === f || -1 === l ? ue : !v && l >= 0 ? l : f <= p && a && Math.abs(v) > 1 ? g : f >= m && a && Math.abs(v) > 1 ? h : v && Math.abs(y) > 1 ? l : f <= p ? g : f > m ? h : v ? Math.abs(v) > 1 ? l : (o + l + v) % o : void 0
+                  return -1 === f || -1 === l ? ue : !v && l >= 0 ? l : f <= p && c && Math.abs(v) > 1 ? g : f >= m && c && Math.abs(v) > 1 ? h : v && Math.abs(y) > 1 ? l : f <= p ? g : f > m ? h : v ? Math.abs(v) > 1 ? l : (o + l + v) % o : void 0
                 }
-              }(E, h, c, n);
+              }(E, h, a, n);
             if (O === ue) {
               var w = (t = v, r = E, o = function(e, n) {
                 return e.reduce((function(e, t) {
@@ -557,10 +557,10 @@ _global.SENTRY_RELEASE = {
                 }), [])
               }(d, l), i = t.map((function(e) {
                 return e.node
-              })), (a = X(i.filter((u = o, function(e) {
+              })), (c = X(i.filter((u = o, function(e) {
                 var n, t = null === (n = j(e)) || void 0 === n ? void 0 : n.autofocus;
                 return e.autofocus || void 0 !== t && "false" !== t || u.indexOf(e) >= 0
-              })))) && a.length ? re(a) : re(X(r)));
+              })))) && c.length ? re(c) : re(X(r)));
               return w ? {
                 node: w
               } : void console.warn("focus-lock: cannot find any node to move focus into")
@@ -617,15 +617,15 @@ _global.SENTRY_RELEASE = {
           return t && (t.host === n && (!t.activeElement || r.contains(t.activeElement)) || t.parentNode && e(n, t.parentNode, r))
         },
         Ne = function() {
-          var e, n, t, r, o, u, i, a = !1;
+          var e, n, t, r, o, u, i, c = !1;
           if (me) {
-            var c = me,
-              f = c.observed,
-              s = c.persistentFocus,
-              l = c.autoFocus,
-              v = c.shards,
-              p = c.crossFrame,
-              m = c.focusOptions,
+            var a = me,
+              f = a.observed,
+              s = a.persistentFocus,
+              l = a.autoFocus,
+              v = a.shards,
+              p = a.crossFrame,
+              m = a.focusOptions,
               b = f || ye && ye.portaledElement,
               y = document && document.activeElement;
             if (b) {
@@ -642,11 +642,11 @@ _global.SENTRY_RELEASE = {
                   return n.some((function(n) {
                     return we(e, n, n)
                   }))
-                }(y, h) || (i = y, ye && ye.portaledElement === i)) && (document && !be && y && !l ? (y.blur && y.blur(), document.body.focus()) : (a = le(h, be, {
+                }(y, h) || (i = y, ye && ye.portaledElement === i)) && (document && !be && y && !l ? (y.blur && y.blur(), document.body.focus()) : (c = le(h, be, {
                   focusOptions: m
                 }), ye = {})), he = !1, be = document && document.activeElement), document) {
                 var g = document && document.activeElement,
-                  E = (n = ee(e = h).filter(B), t = ce(e, e, n), r = new Map, o = z([t], r, !0), u = z(n, r).filter((function(e) {
+                  E = (n = ee(e = h).filter(B), t = ae(e, e, n), r = new Map, o = z([t], r, !0), u = z(n, r).filter((function(e) {
                     var n = e.node;
                     return B(n)
                   })).map((function(e) {
@@ -673,7 +673,7 @@ _global.SENTRY_RELEASE = {
               }
             }
           }
-          return a
+          return c
         },
         Ae = function(e) {
           Ne() && e && (e.stopPropagation(), e.preventDefault())
@@ -720,15 +720,15 @@ _global.SENTRY_RELEASE = {
           }))), Se(n)
         }
         var o = function(o) {
-          var u, a;
+          var u, c;
 
-          function c() {
+          function a() {
             return o.apply(this, arguments) || this
           }
-          a = o, (u = c).prototype = Object.create(a.prototype), u.prototype.constructor = u, (0, x.A)(u, a), c.peek = function() {
+          c = o, (u = a).prototype = Object.create(c.prototype), u.prototype.constructor = u, (0, x.A)(u, c), a.peek = function() {
             return n
           };
-          var d = c.prototype;
+          var d = a.prototype;
           return d.componentDidMount = function() {
             t.push(this), r()
           }, d.componentDidUpdate = function() {
@@ -738,7 +738,7 @@ _global.SENTRY_RELEASE = {
             t.splice(e, 1), r()
           }, d.render = function() {
             return i().createElement(e, this.props)
-          }, c
+          }, a
         }(u.PureComponent);
         return (0, I.A)(o, "displayName", "SideEffect(" + function(e) {
           return e.displayName || e.name || "Component"
@@ -760,9 +760,9 @@ _global.SENTRY_RELEASE = {
           t = void 0 !== n && n,
           r = e.children,
           i = e.className,
-          a = void 0 === i ? void 0 : i;
+          c = void 0 === i ? void 0 : i;
         return u.createElement("div", (0, o.A)({}, pe(f, !t), {
-          className: a
+          className: c
         }), r)
       };
       Pe.propTypes = {};
@@ -896,7 +896,7 @@ _global.SENTRY_RELEASE = {
         C6: () => o,
         Cl: () => u,
         Tt: () => i,
-        fX: () => a
+        fX: () => c
       });
       var r = function(e, n) {
         return r = Object.setPrototypeOf || {
@@ -935,7 +935,7 @@ _global.SENTRY_RELEASE = {
         return t
       }
 
-      function a(e, n, t) {
+      function c(e, n, t) {
         if (t || 2 === arguments.length)
           for (var r, o = 0, u = n.length; o < u; o++) !r && o in n || (r || (r = Array.prototype.slice.call(n, 0, o)), r[o] = n[o]);
         return e.concat(r || Array.prototype.slice.call(n))
