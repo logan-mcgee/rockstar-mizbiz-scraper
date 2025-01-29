@@ -1,0 +1,1472 @@
+! function() {
+  try {
+    var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
+      t = (new Error).stack;
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "7eadba1e-0490-4fa9-97a7-d2ef3f51db18", e._sentryDebugIdIdentifier = "sentry-dbid-7eadba1e-0490-4fa9-97a7-d2ef3f51db18")
+  } catch (e) {}
+}();
+var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
+_global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
+  release: "sentry-release-id",
+  packageName: "@rockstargames/sites-gta-gen9",
+  dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
+};
+var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
+_global.SENTRY_RELEASE = {
+  id: "sentry-release-id"
+}, (self.webpackChunk_rockstargames_sites_gta_gen9 = self.webpackChunk_rockstargames_sites_gta_gen9 || []).push([
+  [7170], {
+    15138: (e, t, n) => {
+      n.d(t, {
+        A: () => s,
+        C: () => o
+      });
+      const o = {
+          www: "www",
+          socialClub: "socialClub",
+          support: "support",
+          store: "store"
+        },
+        r = [{
+          id: "prod",
+          sites: {
+            www: "www",
+            socialClub: "socialclub",
+            support: "support",
+            store: "store"
+          },
+          cookieIdentifier: "prod"
+        }],
+        s = () => {
+          let e;
+          const {
+            location: t
+          } = window, n = t.hostname.substring(0, t.hostname.indexOf(".rockstargames.com")), o = r.findIndex((t => Object.entries(t.sites).findIndex((t => {
+            let [o, r] = t;
+            return r === n && (e = {
+              site: o,
+              subDomain: r
+            }, !0)
+          })) >= 0)), s = r[o >= 0 ? o : 0];
+          return e || (e = {
+            site: "www",
+            subDomain: "local"
+          }), {
+            ...s,
+            currentSite: e
+          }
+        }
+    },
+    69358: (e, t, n) => {
+      n.d(t, {
+        A: () => g
+      });
+      var o = n(61328),
+        r = n(41032),
+        s = n.n(r),
+        a = n(16188),
+        i = n.n(a),
+        c = n(12570),
+        l = n(60267);
+      const {
+        apiHost: d
+      } = (0, c.A)(), u = (0, l.t)(document.documentElement.lang), w = {}, g = async function(e) {
+        let {
+          fetchOptions: t = {},
+          finalFetchOptions: n = {},
+          query: r = null,
+          pingBearer: a,
+          requireBearerToken: c = !0,
+          useCache: l = !0
+        } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
+        try {
+          const {
+            bearerToken: g = null
+          } = await (a?.()) ?? {}, h = {
+            "X-Requested-With": "XMLHttpRequest",
+            "X-AMC": !0,
+            "Content-Type": "application/json",
+            ...u && {
+              "X-lang": u
+            }
+          };
+          let m = `${d}/${e}`;
+          if (null === r || i().isEmpty(r) || (m += `?${new URLSearchParams(r)}`), !g && c) return null;
+          g && (h.Authorization = `Bearer ${g}`);
+          const p = {
+              headers: h
+            },
+            f = s().all([p, t, n]),
+            v = JSON.stringify({
+              ...f,
+              url: m
+            }),
+            b = await (0, o.sc)(v);
+          if (l) {
+            if (w[b]?.response) return w[b].response;
+            if (w[b]?.loading) return {
+              error: null,
+              result: null
+            };
+            w[b] = {
+              loading: !0
+            }
+          }
+          const k = await fetch(m, f),
+            x = await k.json();
+          return l && (w[b] = {
+            response: x,
+            loading: !1
+          }), x
+        } catch (t) {
+          console.error(`ScApi fetch error ${e}:`, t)
+        }
+      }
+    },
+    87122: (e, t, n) => {
+      n.d(t, {
+        A: () => o
+      });
+      const o = () => {
+        const e = document.currentScript,
+          t = e?.src ? new URL(e.src).origin : "";
+        let n = document.getElementsByTagName("base")[0]?.getAttribute("href") ?? `${t}/`;
+        return n.endsWith("/") || (n = `${n}/`), n
+      }
+    },
+    12570: (e, t, n) => {
+      n.d(t, {
+        A: () => i
+      });
+      const o = window?.env?.sc,
+        r = window?.env?.marketing,
+        s = e => {
+          let {
+            apiHost: t,
+            authHost: n,
+            clientId: s,
+            graphEnv: a,
+            scHost: i,
+            hostname: c,
+            cdnBase: l,
+            key: d,
+            marketingAuthTLD: u
+          } = e;
+          const w = o?.apiHost ?? t,
+            g = o?.authHost ?? n,
+            h = o?.cdnBase ?? l,
+            m = o?.clientId ?? s,
+            p = r?.marketingAuthTLD ?? u,
+            f = o?.scHost ?? i,
+            v = r?.pingBearerEndpoint ?? "auth/ping-bearer.json";
+          return {
+            apiHost: `https://${w}.rockstargames.com`,
+            graphEnv: o?.graphEnv ?? a,
+            host: f,
+            hostname: c,
+            cdnBase: h,
+            key: d,
+            clientId: m,
+            authHost: g,
+            login: `https://${g}.rockstargames.com/connect/authorize/${m}`,
+            silentCheck: `https://${g}.rockstargames.com/connect/cors/check/${m}`,
+            signup: `https://${g}.rockstargames.com/create/?cid=${m}`,
+            gateway: `https://${p}/auth/gateway.json`,
+            logout: `https://${p}/auth/sc-auth-logout`,
+            pingBearer: `https://${p}/${v}`
+          }
+        },
+        a = [s({
+          key: "prod",
+          clientId: "rsg",
+          graphEnv: "prod",
+          authHost: "signin",
+          scHost: "socialclub",
+          apiHost: "scapi",
+          hostname: /www/,
+          cdnBase: "https://s.rsg.sc/sc",
+          marketingAuthTLD: "www.rockstargames.com"
+        }), s({
+          key: "sc-prod",
+          clientId: "socialclub",
+          graphEnv: "prod",
+          authHost: "signin",
+          scHost: "socialclub",
+          apiHost: "scapi",
+          hostname: /^socialclub\./,
+          cdnBase: "https://s.rsg.sc/sc",
+          marketingAuthTLD: "www.rockstargames.com"
+        })],
+        i = () => {
+          const e = window?.env?.scEnv ?? null;
+          if (e) {
+            const t = a.find((t => {
+              let {
+                key: n
+              } = t;
+              return n === e
+            })) ?? null;
+            if (t) return t
+          }
+          return a.find((e => {
+            let {
+              hostname: t
+            } = e;
+            return new RegExp(t).test(document.location.hostname)
+          })) || a[0]
+        }
+    },
+    21207: (e, t, n) => {
+      n.d(t, {
+        OD: () => a,
+        lv: () => i,
+        pP: () => d,
+        wC: () => r,
+        PE: () => v,
+        rB: () => l,
+        yh: () => f,
+        Ap: () => w,
+        Xs: () => b,
+        kx: () => k,
+        rJ: () => y,
+        pT: () => h,
+        lV: () => x,
+        PA: () => o,
+        My: () => g,
+        _e: () => m
+      }), n(16188);
+      const o = e => {
+          let {
+            element: t
+          } = e;
+          const n = setInterval((() => t.scrollIntoView({
+              behavior: "smooth",
+              block: "center",
+              inline: "center"
+            })), 100),
+            o = e => {
+              e.target === document && (clearInterval(n), document.removeEventListener("scroll", o))
+            };
+          document.addEventListener("scroll", o)
+        },
+        r = function() {
+          let {
+            paramName: e = "section"
+          } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
+          const t = new URLSearchParams(document.location.search),
+            n = document.getElementById(t.get(e) || e);
+          n && (o({
+            element: n
+          }), s(n))
+        },
+        s = e => {
+          const t = ["a", "button", "input", "textarea", "select", "details", '[tabindex]:not([tabindex="-1"])'];
+          if (t.includes(e.nodeName.toLowerCase())) e.focus();
+          else {
+            const n = e?.querySelectorAll(t.join(", "));
+            if (n?.length) {
+              const e = [...n].find((e => !e?.hasAttribute("disabled")));
+              e?.focus()
+            }
+          }
+        };
+      class a {
+        constructor(e, t, n) {
+          let o = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : null;
+          this.name = e, this.friendlyName = t, this.id = n, this.alias = o
+        }
+      }
+      const i = Object.freeze({
+          pc: new a("pc", "PC", 8),
+          ps: new a("ps", "PlayStation", 3),
+          ps3: new a("ps3", "PlayStation 3", 2),
+          ps4: new a("ps4", "PlayStation 4", 11),
+          ps5: new a("ps5", "PlayStation 5", 20),
+          xbox: new a("xbox", "Xbox", 4),
+          xbox360: new a("xbox360", "Xbox 360", 1),
+          xboxone: new a("xboxone", "Xbox One", 12),
+          xboxsx: new a("xboxsx", "Xbox Series X|S", 21, "xboxseriesxs"),
+          switch: new a("switch", "Nintendo Switch™", 18),
+          nintendoswitch: new a("nintendoswitch", "Nintendo Switch™", 18),
+          applestore: new a("applestore", "App Store", 102),
+          googleplay: new a("googleplay", "Google Play", 1023),
+          appStore: new a("app_store", "App Store", 102),
+          googlePlay: new a("ggle_play", "Google Play", 1023)
+        }),
+        c = Object.freeze(Object.values(i));
+
+      function l(e) {
+        if (!e) return;
+        if (e instanceof a) return e;
+        const t = e.toString().toLowerCase();
+        return c.find((e => t === e.name || t === e.id.toString() || t === e.friendlyName.toLowerCase() || t === e.alias?.toLowerCase()))
+      }
+      const d = function() {
+        for (var e = arguments.length, t = new Array(e), n = 0; n < e; n++) t[n] = arguments[n];
+        return [...t].filter(Boolean).join(" ")
+      };
+      var u = n(74511);
+      const w = e => {
+          const t = document.cookie.split("; "),
+            n = `${e}=`,
+            o = t.find((e => e.startsWith(n))),
+            r = o?.substring(n.length, o.length);
+          return r
+        },
+        g = (e, t) => {
+          e && void 0 !== t && (0, u.canStoreCookie)(e) && w(e) !== t && (document.cookie = `${e}=${t}; domain=${(()=>{const e=window.location.hostname.split(".");return e.slice(e.length-2).join(".")})()}; path=/;`)
+        };
+      n(98096);
+      const h = e => e.keys().forEach(e),
+        m = e => e.replace(/(<([^>]+)>)/gi, ""),
+        p = [{
+          key: "dev",
+          path: "https://media-dev-rockstargames-com.akamaized.net"
+        }, {
+          key: "prod",
+          path: "https://media-rockstargames-com.akamaized.net"
+        }],
+        f = function() {
+          let e = !(arguments.length > 0 && void 0 !== arguments[0]) || arguments[0];
+          return p.filter((t => t.key === (e ? "prod" : "dev")))[0]?.path ?? null
+        },
+        v = e => {
+          e.preventDefault();
+          const t = e.currentTarget.href,
+            n = (e => {
+              const t = new URL(e).pathname.split("/"),
+                n = t[t.length - 1];
+              return decodeURIComponent(n)
+            })(t);
+          fetch(t, {
+            method: "GET",
+            headers: {}
+          }).then((e => e.arrayBuffer())).then((e => {
+            const t = window.URL.createObjectURL(new Blob([e])),
+              o = document.createElement("a");
+            o.href = t, o.setAttribute("download", n), document.body.appendChild(o), o.click(), document.body.removeChild(o)
+          })).catch((e => {
+            console.log(e)
+          }))
+        },
+        b = () => [i.xbox360.name, i.xboxone.name, i.ps3.name, i.ps4.name, i.pc.name],
+        k = () => [i.xboxsx.name, i.ps5.name],
+        x = e => k().includes(e),
+        y = e => {
+          const t = new Map([
+            ["en-us", "English (United States)"],
+            ["de-de", "Deutsch (Deutschland)"],
+            ["fr-fr", "Français (France)"],
+            ["fr-ca", "Français (Canada)"],
+            ["it-it", "Italiano (Italia)"],
+            ["ja-jp", "日本語"],
+            ["ru-ru", "Pусский"],
+            ["es-es", "Español (España)"],
+            ["es-mx", "Español (México)"],
+            ["pt-br", "Português (Brasil)"],
+            ["ko-kr", "한국어"],
+            ["zh-hans", "中文（简体）"],
+            ["zh-hant", "中文（繁體）"],
+            ["pl-pl", "Polski"]
+          ]);
+          return t.has(e) ? t.get(e) : e
+        }
+    },
+    27807: (e, t, n) => {
+      n.d(t, {
+        A: () => r
+      });
+      const o = () => window.reactContextFactory = window?.reactContextFactory ?? {},
+        r = e => {
+          let {
+            context: t,
+            key: n
+          } = e;
+          return o()?.[n] || (o()[n] = t), o()[n]
+        }
+    },
+    45459: (e, t, n) => {
+      n.d(t, {
+        A: () => r
+      });
+      const o = () => window.reactMakeVarFactory = window?.reactMakeVarFactory ?? {},
+        r = e => {
+          let {
+            key: t,
+            value: n,
+            domain: r = "default"
+          } = e;
+          return o()?.[r] || (o()[r] = {}), o()?.[r]?.[t] || (o()[r][t] = n), o()[r][t]
+        }
+    },
+    60267: (e, t, n) => {
+      n.d(t, {
+        t: () => o
+      });
+      const o = e => {
+        const t = e.replace("_", "-");
+        return "zh-hans" === t ? "zh-cn" : t
+      }
+    },
+    86082: (e, t, n) => {
+      n.d(t, {
+        RK: () => r,
+        bn: () => A,
+        T0: () => _,
+        ri: () => a,
+        vx: () => S,
+        sb: () => C,
+        Ym: () => d,
+        CA: () => y.useNewswirePost,
+        OG: () => u,
+        ZC: () => h,
+        sq: () => g,
+        OH: () => k,
+        zP: () => x,
+        Cb: () => f,
+        GA: () => T,
+        G4: () => E.G4
+      });
+      const o = (0, n(87122).A)(),
+        r = () => o;
+      var s = n(62229);
+      const a = (e, t) => {
+        const [n, o] = (0, s.useState)(0);
+        return (0, s.useEffect)((() => {
+          if (e.current) {
+            const {
+              current: n
+            } = e, r = n.getBoundingClientRect(), {
+              width: s
+            } = r;
+            let a = s;
+            if (!0 === t) {
+              const e = window.getComputedStyle(n);
+              a += parseInt(e.marginLeft, 10) + parseInt(e.marginRight, 10)
+            }
+            o(a)
+          }
+        }), [e]), n
+      };
+      var i = n(53562),
+        c = n(60175);
+      const l = (0, i.UT)(document.documentElement.lang),
+        d = () => (0, c.q)(l),
+        u = e => {
+          const [t, n] = (0, s.useState)(null), [o, r] = (0, s.useState)(null), [a, i] = (0, s.useState)({});
+          return (0, s.useLayoutEffect)((() => {
+            let t = new Image,
+              o = !1;
+            return t.addEventListener("load", (() => {
+              i({
+                width: t.width,
+                height: t.height
+              }), t = null, o || n(!0)
+            })), t.addEventListener("error", (() => {
+              t = null, o || (n(!1), r(!0))
+            })), t.src = e, () => {
+              o = !0, null !== t && (t.src = "")
+            }
+          }), [e]), [t, a]
+        };
+      var w = n(9623);
+      const g = () => {
+          const {
+            search: e
+          } = (0, w.useLocation)();
+          return new URLSearchParams(e)
+        },
+        h = e => {
+          const t = (0, s.useRef)();
+          return (0, s.useEffect)((() => {
+            t.current = e
+          }), [e]), t.current
+        };
+      var m = n(16118),
+        p = n(69358);
+      const f = (e, t) => {
+        let {
+          autoFetch: n = !0,
+          fetchOptions: o = {},
+          query: r = null
+        } = t;
+        const a = (0, m.Es)(),
+          [i, c] = (0, s.useState)(null),
+          [l, d] = (0, s.useState)(!1),
+          [u, w] = (0, s.useState)(null),
+          g = (0, s.useCallback)((async function() {
+            let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
+              n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
+            try {
+              const {
+                fetchOptions: s = {}
+              } = t;
+              w(null), c(null), d(!0);
+              const i = await (0, p.A)(n ?? e, {
+                pingBearer: a,
+                fetchOptions: o,
+                finalFetchOptions: s,
+                query: r
+              });
+              return i?.status || w(JSON.stringify(i?.error)), c(i), d(!1), i
+            } catch (e) {
+              w(String(e)), d(!1)
+            }
+            return null
+          }), [e, o, r]);
+        return (0, s.useEffect)((() => {
+          null === i && null === u && !l && n && g()
+        }), [n, i, u, l, g]), {
+          data: i,
+          error: u,
+          loading: l,
+          fetch: g
+        }
+      };
+      n(12570);
+      const v = "__RS_CUSTOM_EVENTS__",
+        b = e => `rsCustomEvent:${e}`;
+      window[v] || (window[v] = {});
+      const k = () => {
+          const e = (e, t) => {
+            if (!e) throw Error("Event name must be provided to work with custom events");
+            const n = b(e),
+              o = new CustomEvent(n, {
+                detail: t
+              });
+            window[v][n] || (window[v][n] = {
+              eventQueue: [],
+              subscribers: []
+            }), window[v][n].eventQueue.push(o), window[v][n].subscribers.forEach((e => {
+              e(o.detail)
+            }))
+          };
+          return (0, s.useMemo)((() => ({
+            dispatch: e
+          })), [])
+        },
+        x = (e, t) => {
+          if (!e) throw Error("Event name must be provided to work with custom events");
+          return (0, s.useEffect)((() => {
+            const n = b(e);
+            return window[v][n] || (window[v][n] = {
+              eventQueue: [],
+              subscribers: []
+            }), window[v][n].subscribers.push(t), window[v][n].eventQueue.forEach((e => {
+              t(e.detail)
+            })), () => {
+              window[v][n].subscribers = window[v][n].subscribers.filter((e => e !== t)), 0 === window[v][n].subscribers.length && delete window[v][n]
+            }
+          }), [e, t]), (0, s.useMemo)((() => ({})), [])
+        };
+      var y = n(55285),
+        E = (n(46941), n(36450));
+      const S = () => {
+          const [e, t] = (0, s.useState)(!1);
+          return (0, s.useEffect)((() => {
+            const e = window.matchMedia("(prefers-reduced-motion: reduce)"),
+              n = e => {
+                t(e.matches)
+              };
+            return t(e?.matches), e.addEventListener("change", n), () => {
+              e.removeEventListener("change", n)
+            }
+          }), []), e
+        },
+        C = () => {
+          const [e, t] = (0, s.useState)(!1);
+          return (0, s.useEffect)((() => {
+            if ("connection" in navigator && "saveData" in navigator.connection) {
+              const e = navigator?.connection;
+              t(e.saveData);
+              const n = () => {
+                t(e.saveData)
+              };
+              return e.addEventListener("change", n), () => {
+                e.removeEventListener("change", n)
+              }
+            }
+          }), []), e
+        };
+      var P = n(12859),
+        L = n(94943);
+      const A = () => {
+          const [e, t] = (0, s.useState)(!1), {
+            deviceMemory: n
+          } = (0, P.XB)(), {
+            effectiveConnectionType: o
+          } = (0, P.M5)(), {
+            numberOfLogicalProcessors: r
+          } = (0, P.xV)(), {
+            saveData: a
+          } = (0, P.zp)(), i = S(), c = () => {
+            const s = (() => {
+              const e = e => !1 === e;
+              if (i) return !1;
+              if (L.n8 || L.lT || L.w || L.UX) return !1;
+              const t = "Safari" === L.C0,
+                s = "Firefox" === L.C0,
+                c = o && !["slow-2g", "2g", "3g", "other", "unknown", "none"].includes(o),
+                l = r && r >= 4,
+                d = n && n >= 4;
+              return !(e(!a) || e(c) || e(l) || !t && !s && e(d))
+            })();
+            s !== e && t(s)
+          };
+          return (0, s.useEffect)((() => (c(), window.addEventListener("online", c), window.addEventListener("offline", c), window.addEventListener("devicememory", c), () => {
+            window.removeEventListener("online", c), window.removeEventListener("offline", c), window.removeEventListener("devicememory", c)
+          })), [n, o, e, r, a, i]), e
+        },
+        T = e => {
+          const [t, n] = (0, s.useState)(!1), o = (0, s.useRef)(null);
+          return (0, s.useEffect)((() => {
+            const r = () => {
+              if (t || !o.current) return;
+              const s = o.current,
+                {
+                  height: a
+                } = s.getBoundingClientRect(),
+                i = window.innerHeight;
+              window.scrollY + i >= s.offsetTop + a * e && (n(!0), window.removeEventListener("scroll", r))
+            };
+            return window.addEventListener("scroll", r, {
+              passive: !0
+            }), () => {
+              window.removeEventListener("scroll", r)
+            }
+          }), [t, e]), {
+            ref: o,
+            scrollTracked: t
+          }
+        },
+        _ = e => {
+          const [t, n] = (0, s.useState)(null);
+          let o, r;
+          const a = e => {
+              e.preventDefault(), "mousedown" === e.type && t ? (window.addEventListener("mousemove", i), o = e.pageX - t?.offsetLeft, r = t?.scrollLeft) : window.removeEventListener("mousemove", i)
+            },
+            i = e => {
+              if (t) {
+                e.preventDefault();
+                const n = e.pageX - t.offsetLeft - o;
+                t.scrollLeft = r - n
+              }
+            };
+          (0, s.useEffect)((() => (n(e?.current), t && (t.addEventListener("mousedown", a), window.addEventListener("mouseup", a)), () => {
+            t && t.removeEventListener("mousedown", a), window.removeEventListener("mouseup", a), window.removeEventListener("mousemove", i)
+          })), [e?.current])
+        }
+    },
+    75811: (e, t, n) => {
+      n.r(t), n.d(t, {
+        ApolloClient: () => G.R,
+        ApolloProvider: () => N.X,
+        DataLayerProvider: () => de,
+        GraphOperationsProvider: () => y._y,
+        InMemoryCache: () => X.D,
+        Platform: () => H.OD,
+        Platforms: () => H.lv,
+        ReactiveStateProvider: () => b,
+        ResizeProvider: () => ue.uU,
+        RockstarGraphProvider: () => R,
+        RockstarTokenProvider: () => E.ec,
+        ScrollProvider: () => fe.N2,
+        classList: () => H.pP,
+        coreScApiFetch: () => o.A,
+        detectIfWeShouldAnchorSomewhere: () => H.wC,
+        downloadFile: () => H.PE,
+        findPlatform: () => H.rB,
+        getAccentColor: () => r,
+        getBase: () => s.A,
+        getCdnPrefix: () => H.yh,
+        getCookieValueByName: () => H.Ap,
+        getGen8Consoles: () => H.Xs,
+        getGen9Consoles: () => H.kx,
+        getLanguageLabel: () => H.rJ,
+        getScConfigForOrigin: () => a.A,
+        getUriForGraphEnv: () => i,
+        gql: () => q.J1,
+        gtmInit: () => ne,
+        importAll: () => H.pT,
+        isGen9Platform: () => H.lV,
+        lsSettingsReactive: () => se,
+        makeVar: () => x.UT,
+        mutateLSSettings: () => ae,
+        newswirePost: () => F,
+        oneTrustInit: () => $,
+        safeStyles: () => d,
+        scrollToElement: () => H.PA,
+        setContextItem: () => u.A,
+        setCookieValue: () => H.My,
+        setMakeVarItem: () => w.A,
+        supportedBrowsers: () => z,
+        toScLocaleString: () => V.t,
+        track: () => Z,
+        useApolloClient: () => M,
+        useBase: () => pe.RK,
+        useBodyScrollable: () => B,
+        useDataLayer: () => le,
+        useHasReduceMotionPreference: () => pe.vx,
+        useHasSaveDataPreference: () => pe.sb,
+        useLocale: () => pe.Ym,
+        useMutateState: () => v,
+        useMutation: () => y.n_,
+        useNewswirePost: () => pe.CA,
+        usePreloadImg: () => pe.OG,
+        usePrevious: () => pe.ZC,
+        useQuery: () => y.IT,
+        useQueryParams: () => pe.sq,
+        useReactiveVar: () => I.q,
+        useRockstarEventDispatcher: () => pe.OH,
+        useRockstarEventSubscriber: () => pe.zP,
+        useRockstarToken: () => E.e9,
+        useRockstarTokenPing: () => E.Es,
+        useRockstarTokenReactive: () => E.bD,
+        useRockstarWebLSSettings: () => ie,
+        useScApi: () => pe.Cb,
+        useScroll: () => fe.Ll,
+        useScrollTracking: () => pe.GA,
+        useState: () => p,
+        useWindowResize: () => ue.G4,
+        withAutoRouteTracking: () => te,
+        withGtmTracking: () => we,
+        withMediaBasedProps: () => ge,
+        withReactiveState: () => k,
+        withRockstarGraph: () => j,
+        withTranslations: () => me
+      });
+      var o = n(69358);
+      const r = e => e.includes("reddead") || e.includes("rdr") ? "#CC0000" : e.includes("bully") ? "#F8AD00" : "#FCAF17";
+      var s = n(87122),
+        a = n(12570);
+      const i = e => {
+        if (/^https{0,1}:\/\//.test(e)) return e;
+        let t = "";
+        switch (e) {
+          case "prod":
+            t = "graph";
+            break;
+          case "prod-int":
+            t = "graph-int";
+            break;
+          default:
+            t = `${e}-graph`
+        }
+        return `https://${t}.rockstargames.com?origin=${document.location.origin}`
+      };
+      var c = n(16188),
+        l = n.n(c);
+      const d = e => {
+        const t = l().clone(e);
+        return t?.["margin-top"] && (t.marginTop = t["margin-top"]), t?.["margin-bottom"] && (t.marginBottom = t["margin-bottom"]), t?.["margin-left"] && (t.marginLeft = t["margin-left"]), t?.["margin-right"] && (t.marginRight = t["margin-right"]), t?.["object-fit"] && (t.objectFit = t["object-fit"]), t?.["min-height"] && (t.minHeight = t["min-height"]), t?.["max-height"] && (t.maxHeight = t["max-height"]), delete t?.["margin-top"], delete t?.["margin-bottom"], delete t?.["margin-right"], delete t?.["margin-left"], delete t?.["object-fit"], delete t?.["min-height"], delete t?.["max-height"], t
+      };
+      var u = n(27807),
+        w = n(45459),
+        g = n(62229),
+        h = n(98096);
+      const m = (0, u.A)({
+          context: (0, g.createContext)({}),
+          key: "graphContextGet"
+        }),
+        p = () => (0, g.useContext)(m),
+        f = (0, u.A)({
+          context: (0, g.createContext)({}),
+          key: "graphContextSet"
+        }),
+        v = () => (0, g.useContext)(f),
+        b = e => {
+          let {
+            children: t,
+            state: n
+          } = e;
+          (0, I.q)(n);
+          const o = (0, g.useCallback)((e => {
+            const t = {
+              ...n(),
+              ...e
+            };
+            n(t)
+          }), [n]);
+          return (0, h.jsx)(m.Provider, {
+            value: n(),
+            children: (0, h.jsx)(f.Provider, {
+              value: o,
+              children: t
+            })
+          })
+        },
+        k = (e, t) => {
+          let {
+            state: n
+          } = t;
+          return function(t) {
+            return (0, h.jsx)(b, {
+              state: n,
+              children: (0, h.jsx)(e, {
+                ...t
+              })
+            })
+          }
+        };
+      var x = n(53562),
+        y = n(61940),
+        E = n(16118),
+        S = n(96532);
+      var C = n(25879),
+        P = n(40049),
+        L = n.n(P);
+      var A = n(81863),
+        T = n(61328);
+      const _ = (0, A.e)({
+          sha256: T.sc
+        }),
+        M = e => {
+          let {
+            graphOptions: t,
+            typePolicies: n = {}
+          } = e;
+          const o = t?.env ? i(t?.env) : t?.uri,
+            r = {
+              ...t,
+              uri: o
+            },
+            [s] = (0, g.useState)(new X.D({
+              typePolicies: n
+            })),
+            a = _.concat((e => {
+              let {
+                token: t
+              } = e;
+              return (0, S.o)(((e, n) => {
+                let {
+                  headers: o
+                } = n;
+                const r = t?.() ?? null;
+                return r ? {
+                  headers: {
+                    ...o,
+                    authorization: `Bearer ${r}`
+                  }
+                } : null
+              }))
+            })({
+              token: t?.token
+            }).concat((e => (0, C.$)({
+              ...e,
+              fetch: L()
+            }))(r)));
+          return new G.R({
+            cache: s,
+            link: a
+          })
+        },
+        R = e => {
+          let {
+            children: t,
+            graphOptions: n,
+            typePolicies: o
+          } = e;
+          const r = M({
+            graphOptions: n,
+            typePolicies: o
+          });
+          return (0, h.jsx)(E.ec, {
+            token: n?.token,
+            tokenPingExpires: n?.tokenPingExpires,
+            children: (0, h.jsx)(N.X, {
+              client: r,
+              children: (0, h.jsx)(y._y, {
+                children: t
+              })
+            })
+          })
+        },
+        O = {
+          RockstarGames_Users_Model_Entity_User_o: {
+            fields: {
+              logged_in: {
+                read(e, t) {
+                  let {
+                    readField: n
+                  } = t;
+                  return Number.isInteger(n("id"))
+                }
+              },
+              agegate_pass: {
+                read(e, t) {
+                  let {
+                    readField: n
+                  } = t;
+                  const o = void 0 !== n("isAMinor") && !n("isAMinor"),
+                    r = se()?.agegatePass;
+                  return o ?? r
+                }
+              }
+            }
+          }
+        },
+        j = (e, t) => {
+          let {
+            env: n = "prod"
+          } = t;
+          const o = (0, x.UT)(null),
+            r = (0, x.UT)(null);
+          return function(t) {
+            return (0, h.jsx)(R, {
+              typePolicies: O,
+              graphOptions: {
+                env: n,
+                useGETForQueries: !0,
+                token: o,
+                tokenPingExpires: r
+              },
+              children: (0, h.jsx)(e, {
+                ...t
+              })
+            })
+          }
+        };
+      var I = n(60175);
+      const U = (0, x.UT)({}),
+        D = "data-disallow-body-scroll",
+        B = e => {
+          const t = (0, I.q)(U),
+            n = Object.values(t).some((e => !!e));
+          return (0, g.useEffect)((() => {
+            n ? document.documentElement.setAttribute(D, "true") : document.documentElement.removeAttribute(D)
+          }), [n]), {
+            bodyShouldLock: n,
+            setBodyIsLocked: n => (e => U(e))({
+              ...t,
+              [e]: n
+            })
+          }
+        },
+        $ = e => {
+          let {
+            id: t,
+            init: n
+          } = e;
+          if (t) {
+            const e = document.createElement("script");
+            e.onload = () => n(), e.onerror = () => n(), e.src = "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js", e.setAttribute("data-domain-script", t), e.setAttribute("data-document-language", "true"), document.head.appendChild(e)
+          } else n()
+        };
+      var F = n(55285);
+      const z = /Edge?\/(13\d|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Firefox\/(1{2}[5-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Chrom(ium|e)\/(109|1[1-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|(Maci|X1{2}).+ Version\/(17\.([6-9]|\d{2,})|(1[89]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(1{2}[3-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(15[._]([6-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](13[1-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Mobile Safari.+OPR\/([89]\d|\d{3,})\.\d+\.\d+|Android.+Firefox\/(13[2-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(13[1-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+(UC? ?Browser|UCWEB|U3)[ /]?(15\.([5-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})\.\d+)\.\d+|SamsungBrowser\/(2[6-9]|[3-9]\d|\d{3,})\.\d+|Android.+MQ{2}Browser\/(14(\.(9|\d{2,})|)|(1[5-9]|[2-9]\d|\d{3,})(\.\d+|))(\.\d+|)|K[Aa][Ii]OS\/(2\.([5-9]|\d{2,})|([3-9]|\d{2,})\.\d+)(\.\d+|)/;
+      var H = n(21207),
+        G = n(73645),
+        N = n(41477),
+        q = n(37767),
+        X = n(25164),
+        V = n(60267),
+        Q = n(84875),
+        W = n.n(Q);
+      const Y = (0, n(15138).A)(),
+        J = Y?.id,
+        K = /Mobi/i.test(window.navigator.userAgent) ? "mobile" : "desktop",
+        Z = e => {
+          const t = {
+            ...e,
+            environment: J,
+            display_type: K
+          };
+          W().dataLayer({
+            dataLayer: t
+          })
+        };
+      var ee = n(9623);
+      const te = e => t => ((e, t) => {
+          const {
+            pathname: n
+          } = (0, ee.useLocation)();
+          return (0, g.useEffect)((() => {
+            Z({
+              event: "trackPageview"
+            })
+          }), [n]), (0, h.jsx)(e, {
+            ...t
+          })
+        })(e, t),
+        ne = e => {
+          let {
+            id: t
+          } = e;
+          if (!t) return;
+          const n = {
+            gtmId: t
+          };
+          W().initialize(n)
+        },
+        oe = "rockstar-games-web";
+      let re;
+      try {
+        const e = window.localStorage.getItem(oe);
+        re = null !== e ? JSON.parse(e) : {}
+      } catch (e) {
+        re = {}
+      }
+      const se = (0, x.UT)(re),
+        ae = e => {
+          let {
+            key: t,
+            value: n
+          } = e;
+          if (null == t) throw Error("You have to specify a key and a value.");
+          const o = {
+            ...se() ?? {}
+          };
+          return o[t] = n, null === n && delete o[t], window.localStorage.setItem(oe, JSON.stringify(o)), se(o), o
+        },
+        ie = () => ({
+          lsSettings: (0, I.q)(se),
+          settingsReactive: se,
+          mutateLSSettings: ae
+        }),
+        ce = (0, u.A)({
+          context: (0, g.createContext)({}),
+          key: "gtmDatalayer"
+        }),
+        le = () => (0, g.useContext)(ce),
+        de = e => {
+          let {
+            children: t,
+            ...n
+          } = e;
+          const o = le() ?? {},
+            r = (0, g.useMemo)((() => ({
+              ...o,
+              ...n
+            })), [o, n]);
+          return (0, h.jsx)(ce.Provider, {
+            value: r,
+            children: t
+          })
+        };
+      var ue = n(36450);
+      const we = e => t => ((e, t) => (0, h.jsx)(e, {
+          ...t,
+          gtmTrack: e => {
+            Z(e)
+          }
+        }))(e, t),
+        ge = function(e) {
+          let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 250;
+          return n => ((e, t, n) => {
+            const [o, r] = (0, g.useState)(t), s = e => {
+              let t = e;
+              const n = t?.items;
+              if (n?.length) {
+                const e = n.map((e => s(e)));
+                t = {
+                  ...t,
+                  items: e
+                }
+              }
+              const o = t?.mediaQueryList;
+              return o?.length ? (o.filter((e => window.matchMedia(e.mediaQueryString).matches)).forEach((e => {
+                t = {
+                  ...t,
+                  ...e
+                }
+              })), t) : t
+            };
+            return (0, g.useEffect)((() => {
+              const e = l().debounce((() => {
+                r(s(t))
+              }), n);
+              return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
+            })), (0, h.jsx)(e, {
+              ...o
+            })
+          })(e, n, t)
+        },
+        he = q.J1`
+query Translations($locale: String!, $config: String!) {
+    translations(locale: $locale, config: $config) {
+        key
+        value
+    }
+}`,
+        me = function(e) {
+          let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "default";
+          return n => ((e, t, n) => {
+            const o = function() {
+              let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "default";
+              const {
+                data: t
+              } = (0, y.IT)(he, {
+                variables: {
+                  config: e,
+                  locale: "en_us"
+                }
+              });
+              return t ? e => t?.translations.find((t => t.key === e))?.value ?? e : null
+            }(n);
+            return o ? (0, h.jsx)(e, {
+              ...t,
+              t: o
+            }) : null
+          })(e, n, t)
+        };
+      var pe = n(86082),
+        fe = n(46941)
+    },
+    61940: (e, t, n) => {
+      n.d(t, {
+        _y: () => b,
+        _l: () => i._,
+        n_: () => x,
+        IT: () => k
+      });
+      var o = n(62229),
+        r = n(25164),
+        s = n(73645),
+        a = n(96164),
+        i = n(70121),
+        c = n(4474),
+        l = n(16188),
+        d = n.n(l),
+        u = n(86082);
+      const w = (e, t) => {
+        const n = (0, u.Ym)(),
+          r = {
+            autoSetError: !0,
+            autoSetLoading: !1,
+            setTitleDataPath: "meta.title",
+            ...t,
+            variables: {
+              locale: n,
+              ...t?.variables
+            }
+          },
+          {
+            data: s,
+            loading: a,
+            error: i,
+            ...l
+          } = (0, c.IT)(e, r);
+        return (0, o.useEffect)((() => {
+          if (s && r.setTitleDataPath) {
+            const e = d().get(s, r.setTitleDataPath) ?? null;
+            e && window.postMessage({
+              type: "graph.titleUpdate",
+              title: e
+            })
+          }
+        }), [s]), (0, o.useEffect)((() => (r.autoSetLoading && window.postMessage({
+          type: "graph.loadingUpdate",
+          loading: a
+        }), () => {
+          r.autoSetLoading && window.postMessage({
+            type: "graph.loadingUpdate",
+            loading: !1
+          })
+        })), [a]), (0, o.useEffect)((() => {
+          if (r.autoSetError && i) throw new Error(String(i))
+        }), [i]), {
+          loading: a,
+          error: i,
+          data: s,
+          ...l
+        }
+      };
+      var g = n(98096);
+      const h = (0, o.createContext)((() => ({
+          data: null
+        }))),
+        m = new Promise((e => {
+          e()
+        })),
+        p = {
+          cache: window?.["apollo-cache"] ?? (window["apollo-cache"] = new r.D)
+        },
+        f = [() => m, {
+          data: null,
+          loading: !1,
+          called: !1,
+          reset: () => null,
+          client: window?.["apollo-client"] ?? (window["apollo-client"] = new s.R(p))
+        }],
+        v = (0, o.createContext)((() => f)),
+        b = window?.["apollo-graph-provider"] ?? (window["apollo-graph-provider"] = e => {
+          let {
+            children: t
+          } = e;
+          return (0, g.jsx)(v.Provider, {
+            value: a.n,
+            children: (0, g.jsx)(h.Provider, {
+              value: w,
+              children: t
+            })
+          })
+        }),
+        k = window?.["apollo-use-query"] ?? (window["apollo-use-query"] = (e, t) => (0, o.useContext)(h)(e, t)),
+        x = window?.["apollo-use-mutation"] ?? (window["apollo-use-mutation"] = e => (0, o.useContext)(v)(e))
+    },
+    16118: (e, t, n) => {
+      n.d(t, {
+        ec: () => u,
+        e9: () => g,
+        Es: () => h,
+        bD: () => w
+      });
+      var o = n(62229),
+        r = n(53562),
+        s = n(27807),
+        a = n(95966);
+      var i = n(75811),
+        c = n(98096);
+      const l = {
+          token: (0, r.UT)(null),
+          tokenPingExpires: (0, r.UT)(100)
+        },
+        d = (0, s.A)({
+          context: (0, o.createContext)(l),
+          key: "utilsTokenProvider"
+        }),
+        u = e => {
+          let {
+            children: t,
+            token: n,
+            tokenPing: o,
+            tokenPingExpires: r
+          } = e;
+          return (0, c.jsx)(d.Provider, {
+            value: {
+              token: n,
+              tokenPing: o,
+              tokenPingExpires: r
+            },
+            children: t
+          })
+        },
+        w = () => {
+          const {
+            token: e,
+            tokenPingExpires: t
+          } = (0, o.useContext)(d);
+          return [e, t]
+        },
+        g = () => {
+          const [e] = w();
+          return (0, i.useReactiveVar)(e)
+        },
+        h = () => {
+          const [e, t] = w();
+          return () => (async e => {
+            let {
+              token: t,
+              tokenPingExpires: n
+            } = e;
+            const {
+              pingBearer: o
+            } = (0, a.getScConfigForOrigin)();
+            try {
+              const e = n?.() ?? 0,
+                r = t?.() ?? null,
+                s = (e => {
+                  const t = Date.now() / 1e3;
+                  return Math.ceil(e - t)
+                })(e) > 0;
+              if (!1 === r) return {
+                bearerToken: r
+              };
+              if (s && r) return {
+                bearerToken: r
+              };
+              const a = await fetch(o, {
+                  credentials: "include",
+                  method: "POST",
+                  headers: {
+                    "Content-Type": "application/json"
+                  }
+                }),
+                i = await a.json(),
+                {
+                  tokenExpiresTime: c = null
+                } = i;
+              return null !== c && n?.(c), t(i.bearerToken ?? null), i
+            } catch (e) {
+              return t(!1), !1
+            }
+          })({
+            token: e,
+            tokenPingExpires: t
+          })
+        }
+    },
+    55285: (e, t, n) => {
+      n.r(t), n.d(t, {
+        Consumer: () => i,
+        Provider: () => c,
+        useNewswirePost: () => l
+      });
+      var o = n(62229),
+        r = n(27807),
+        s = n(98096);
+      const a = (0, r.A)({
+          context: (0, o.createContext)(null),
+          key: "newswirePost"
+        }),
+        {
+          Consumer: i
+        } = a,
+        c = e => {
+          let {
+            article: t,
+            children: n
+          } = e;
+          return (0, s.jsx)(a.Provider, {
+            value: t,
+            children: n
+          })
+        },
+        l = () => (0, o.useContext)(a)
+    },
+    36450: (e, t, n) => {
+      n.d(t, {
+        G4: () => h,
+        uU: () => g
+      });
+      var o = n(62229),
+        r = n(53562),
+        s = n(60175),
+        a = n(27807),
+        i = n(98096);
+      const c = {
+          xxs: {
+            min: 0,
+            max: 479
+          },
+          xs: {
+            min: 480,
+            max: 767
+          },
+          sm: {
+            min: 768,
+            max: 991
+          },
+          md: {
+            min: 992,
+            max: 1199
+          },
+          lg: {
+            min: 1200,
+            max: 1439
+          },
+          xl: {
+            min: 1440,
+            max: 1919
+          },
+          xxl: {
+            min: 1920,
+            max: 99999
+          }
+        },
+        l = () => {
+          const e = window.innerWidth,
+            t = window.innerHeight,
+            n = c;
+          return Object.keys(c).map((t => {
+            const {
+              min: o,
+              max: r
+            } = c[t], s = e >= o && e <= r, a = e >= o;
+            n[t] = {
+              activeExact: s,
+              activeMin: a,
+              min: o,
+              max: r
+            }
+          })), {
+            isMobile: e < c.sm.min,
+            isTablet: e < c.md.max,
+            breakpoints: n,
+            windowWidth: e,
+            windowHeight: t
+          }
+        },
+        d = (0, a.A)({
+          context: (0, o.createContext)(l()),
+          key: "resizeContext"
+        }),
+        {
+          Consumer: u
+        } = d,
+        w = (0, r.UT)(l()),
+        g = e => {
+          let {
+            children: t
+          } = e;
+          const n = (0, s.q)(w);
+          return (0, o.useEffect)((() => {
+            const e = () => {
+              w(l())
+            };
+            return window.addEventListener("resize", e), () => {
+              window.removeEventListener("resize", e)
+            }
+          }), []), (0, i.jsx)(d.Provider, {
+            value: n,
+            children: t
+          })
+        },
+        h = () => (0, o.useContext)(d)
+    },
+    46941: (e, t, n) => {
+      n.d(t, {
+        Ll: () => w,
+        N2: () => g
+      });
+      var o = n(62229),
+        r = n(53562),
+        s = n(60175),
+        a = n(27807),
+        i = n(45459),
+        c = n(98096);
+      const l = (0, i.A)({
+          key: "freezeUserShouldSeeMoreReactive",
+          value: (0, r.UT)(!1)
+        }),
+        d = e => l(e),
+        u = (0, a.A)({
+          context: (0, o.createContext)(null),
+          key: "scrollContext"
+        }),
+        w = () => (0, o.useContext)(u),
+        g = e => {
+          let {
+            children: t
+          } = e;
+          const [n, r] = (0, o.useState)(window.pageYOffset), [a, i] = (0, o.useState)(null), [w, g] = (0, o.useState)(!1), h = (0, s.q)(l);
+          let m;
+          const p = () => {
+            g(!0), clearTimeout(m), m = setTimeout((() => {
+              g(!1)
+            }), 2e3)
+          };
+          return (0, o.useEffect)((() => {
+            let e;
+            const t = () => {
+              if (h) return void i(!1);
+              const t = Math.max(0, window.pageYOffset);
+              r(t), w || i(t > 60 && t > e), e = t
+            };
+            return window.addEventListener("scroll", t), () => {
+              window.removeEventListener("scroll", t)
+            }
+          }), [w, h]), (0, o.useMemo)((() => (0, c.jsx)(u.Provider, {
+            value: {
+              freezeUserShouldSeeMore: h,
+              pageYOffset: n,
+              pauseUserShouldSeeMore: p,
+              setFreezeUserShouldSeeMore: d,
+              userShouldSeeMore: a
+            },
+            children: t
+          })), [h, n, p, a])
+        }
+    }
+  }
+]);

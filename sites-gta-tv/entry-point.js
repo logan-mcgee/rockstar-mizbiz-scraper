@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "8acb46b8-f5d1-4da9-aac6-abbb896e1c08", e._sentryDebugIdIdentifier = "sentry-dbid-8acb46b8-f5d1-4da9-aac6-abbb896e1c08")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "9fd783b3-f9c0-4371-93c3-81eed665c4b5", e._sentryDebugIdIdentifier = "sentry-dbid-9fd783b3-f9c0-4371-93c3-81eed665c4b5")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -14,47 +14,33 @@ _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2.
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
-}, System.register(["@rockstargames/graph-client", "@rockstargames/modules-core-videoplayer", "@rockstargames/utils"], (function(e, t) {
-  var r = {},
-    n = {},
-    a = {};
+}, System.register(["@rockstargames/modules-core-videoplayer"], (function(e, t) {
+  var r = {};
   return Object.defineProperty(r, "__esModule", {
-    value: !0
-  }), Object.defineProperty(n, "__esModule", {
-    value: !0
-  }), Object.defineProperty(a, "__esModule", {
     value: !0
   }), {
     setters: [function(e) {
       Object.keys(e).forEach((function(t) {
         r[t] = e[t]
       }))
-    }, function(e) {
-      Object.keys(e).forEach((function(t) {
-        n[t] = e[t]
-      }))
-    }, function(e) {
-      Object.keys(e).forEach((function(t) {
-        a[t] = e[t]
-      }))
     }],
     execute: function() {
       e((() => {
-        var e, o, i, s, f = {
-            6539: (e, t, r) => {
-              (0, r(3403).w)(1)
+        var e, n, a, o, i, s, f = {
+            5144: (e, t, r) => {
+              (0, r(3454).w)(1)
             },
-            3403: (e, t, r) => {
-              const n = r(5659).y;
+            3454: (e, t, r) => {
+              const n = r(8294).y;
               t.w = function(e) {
                 if (e || (e = 1), !r.y.meta || !r.y.meta.url) throw console.error("__system_context__", r.y), Error("systemjs-webpack-interop was provided an unknown SystemJS context. Expected context.meta.url, but none was provided");
                 r.p = n(r.y.meta.url, e)
               }
             },
-            2160: (e, t, r) => {
-              r(6539)
+            3787: (e, t, r) => {
+              r(5144)
             },
-            5659: (e, t, r) => {
+            8294: (e, t, r) => {
               t.y = function(e, t) {
                 var r = document.createElement("a");
                 r.href = e;
@@ -65,10 +51,10 @@ _global.SENTRY_RELEASE = {
               };
               Number.isInteger
             },
-            8527: (e, t, r) => {
+            5819: (e, t, r) => {
               "use strict";
               var n = {
-                  "./index": () => Promise.all([r.e(785), r.e(403), r.e(968)]).then((() => () => r(5968)))
+                  "./index": () => Promise.all([r.e(819), r.e(263), r.e(229), r.e(680), r.e(267)]).then((() => () => r(5267)))
                 },
                 a = (e, t) => (r.R = t, t = r.o(n, e) ? n[e]() : Promise.resolve().then((() => {
                   throw new Error('Module "' + e + '" does not exist in container.')
@@ -86,17 +72,9 @@ _global.SENTRY_RELEASE = {
                 init: () => o
               })
             },
-            1024: e => {
-              "use strict";
-              e.exports = r
-            },
             5136: e => {
               "use strict";
-              e.exports = n
-            },
-            2969: e => {
-              "use strict";
-              e.exports = a
+              e.exports = r
             }
           },
           d = {};
@@ -105,52 +83,70 @@ _global.SENTRY_RELEASE = {
           var t = d[e];
           if (void 0 !== t) return t.exports;
           var r = d[e] = {
+            id: e,
+            loaded: !1,
             exports: {}
           };
-          return f[e](r, r.exports, l), r.exports
+          return f[e].call(r.exports, r, r.exports, l), r.loaded = !0, r.exports
         }
-        return l.m = f, l.c = d, l.y = t, l.n = e => {
+        return l.m = f, l.c = d, l.y = t, l.amdO = {}, l.n = e => {
           var t = e && e.__esModule ? () => e.default : () => e;
           return l.d(t, {
             a: t
           }), t
+        }, n = Object.getPrototypeOf ? e => Object.getPrototypeOf(e) : e => e.__proto__, l.t = function(t, r) {
+          if (1 & r && (t = this(t)), 8 & r) return t;
+          if ("object" == typeof t && t) {
+            if (4 & r && t.__esModule) return t;
+            if (16 & r && "function" == typeof t.then) return t
+          }
+          var a = Object.create(null);
+          l.r(a);
+          var o = {};
+          e = e || [null, n({}), n([]), n(n)];
+          for (var i = 2 & r && t;
+            "object" == typeof i && !~e.indexOf(i); i = n(i)) Object.getOwnPropertyNames(i).forEach((e => o[e] = () => t[e]));
+          return o.default = () => t, l.d(a, o), a
         }, l.d = (e, t) => {
           for (var r in t) l.o(t, r) && !l.o(e, r) && Object.defineProperty(e, r, {
             enumerable: !0,
             get: t[r]
           })
         }, l.f = {}, l.e = e => Promise.all(Object.keys(l.f).reduce(((t, r) => (l.f[r](e, t), t)), [])), l.u = e => "js/" + {
-          49: "615a94e9c9be2d93ec4f96c9fff51533",
-          261: "dfe57d3ea972c8f6510bf832dae7a7c8",
-          380: "f4800d70cd1228afb45f57fdbcdd99c7",
-          403: "ff9ec9f80eaf0eb9acf84c2ec4644ce2",
-          776: "6ebfb084ea7d5365988472d4ff775abb",
-          785: "0ec42114ef57229d43a7e9fd6988201f",
-          968: "ded20f07622b52e4379f1f87d0114b8f"
-        } [e] + ".js", l.miniCssF = e => "css/00c96d0e221657c074bde949535f789a.css", l.g = function() {
+          220: "b0d6b010d4c2f06685de6f46b54ee66d",
+          229: "5f596e27c31f3a0bb889cf316827a09e",
+          263: "0f9735a2f7a955a23bd2e8d8421f6e70",
+          267: "f68d89b091039541bf9b2e45ce058fa0",
+          282: "139a711e07e211fb8b6833f2070a0900",
+          508: "867ab10599ae85c763f8cd83e0193c89",
+          637: "547299465796b030b487de5d5b62b626",
+          680: "e0e86525554ad2574f94997e11638c38",
+          819: "4b4e32b756c391d4ae2c0e5bd503ae21",
+          839: "a28cd0fe515764b1464dfab8e54b8e0e"
+        } [e] + ".js", l.miniCssF = e => "css/7e6e4909d0fdd4aaf4a1ac7e294416a3.css", l.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
             return this || new Function("return this")()
           } catch (e) {
             if ("object" == typeof window) return window
           }
-        }(), l.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t), e = {}, o = "@rockstargames/sites-gta-tv:", l.l = (t, r, n, a) => {
-          if (e[t]) e[t].push(r);
+        }(), l.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t), a = {}, o = "@rockstargames/sites-gta-tv:", l.l = (e, t, r, n) => {
+          if (a[e]) a[e].push(t);
           else {
             var i, s;
-            if (void 0 !== n)
+            if (void 0 !== r)
               for (var f = document.getElementsByTagName("script"), d = 0; d < f.length; d++) {
                 var u = f[d];
-                if (u.getAttribute("src") == t || u.getAttribute("data-webpack") == o + n) {
+                if (u.getAttribute("src") == e || u.getAttribute("data-webpack") == o + r) {
                   i = u;
                   break
                 }
               }
-            i || (s = !0, (i = document.createElement("script")).charset = "utf-8", i.timeout = 120, l.nc && i.setAttribute("nonce", l.nc), i.setAttribute("data-webpack", o + n), i.src = t), e[t] = [r];
-            var c = (r, n) => {
+            i || (s = !0, (i = document.createElement("script")).charset = "utf-8", i.timeout = 120, l.nc && i.setAttribute("nonce", l.nc), i.setAttribute("data-webpack", o + r), i.src = e), a[e] = [t];
+            var c = (t, r) => {
                 i.onerror = i.onload = null, clearTimeout(p);
-                var a = e[t];
-                if (delete e[t], i.parentNode && i.parentNode.removeChild(i), a && a.forEach((e => e(n))), r) return r(n)
+                var n = a[e];
+                if (delete a[e], i.parentNode && i.parentNode.removeChild(i), n && n.forEach((e => e(r))), t) return t(r)
               },
               p = setTimeout(c.bind(null, void 0, {
                 type: "timeout",
@@ -164,12 +160,10 @@ _global.SENTRY_RELEASE = {
           }), Object.defineProperty(e, "__esModule", {
             value: !0
           })
-        }, i = {
-          968: [1879, 2756, 8407]
+        }, l.nmd = e => (e.paths = [], e.children || (e.children = []), e), i = {
+          267: [1879]
         }, s = {
-          1879: ["default", "./index", 5136],
-          2756: ["default", "./index", 2969],
-          8407: ["default", "./index", 1024]
+          1879: ["default", "./index", 5136]
         }, l.f.remotes = (e, t) => {
           l.o(i, e) && i[e].forEach((e => {
             var r = l.R;
@@ -223,24 +217,23 @@ _global.SENTRY_RELEASE = {
                     eager: !!n
                   })
                 },
-                f = e => {
-                  var t = e => {
-                    return t = "Initialization of sharing external failed: " + e, void("undefined" != typeof console && console.warn && console.warn(t));
-                    var t
-                  };
-                  try {
-                    var a = l(e);
-                    if (!a) return;
-                    var o = e => e && e.init && e.init(l.S[r], n);
-                    if (a.then) return d.push(a.then(o, t));
-                    var i = o(a);
-                    if (i && i.then) return d.push(i.catch(t))
-                  } catch (e) {
-                    t(e)
-                  }
-                },
-                d = [];
-              return "default" === r && (s("react-router-dom", "6.17.0", (() => Promise.all([l.e(261), l.e(49), l.e(403)]).then((() => () => l(2049))))), s("react-router-dom", "6.17.0", (() => Promise.all([l.e(261), l.e(776), l.e(403)]).then((() => () => l(2776))))), s("react", "18.2.0", (() => l.e(380).then((() => () => l(3380))))), f(1024), f(5136), f(2969)), d.length ? e[r] = Promise.all(d).then((() => e[r] = 1)) : e[r] = 1
+                f = [];
+              return "default" === r && (s("@rsgweb/utils", "1.0.0", (() => Promise.all([l.e(637), l.e(819), l.e(229), l.e(680), l.e(220)]).then((() => () => l(839))))), s("react-router-dom", "6.17.0", (() => Promise.all([l.e(282), l.e(229)]).then((() => () => l(282))))), s("react", "18.2.0", (() => l.e(508).then((() => () => l(508))))), (e => {
+                var t = e => {
+                  return t = "Initialization of sharing external failed: " + e, void("undefined" != typeof console && console.warn && console.warn(t));
+                  var t
+                };
+                try {
+                  var a = l(5136);
+                  if (!a) return;
+                  var o = e => e && e.init && e.init(l.S[r], n);
+                  if (a.then) return f.push(a.then(o, t));
+                  var i = o(a);
+                  if (i && i.then) return f.push(i.catch(t))
+                } catch (e) {
+                  t(e)
+                }
+              })()), f.length ? e[r] = Promise.all(f).then((() => e[r] = 1)) : e[r] = 1
             }
           }
         })(), (() => {
@@ -323,13 +316,13 @@ _global.SENTRY_RELEASE = {
             })),
             a = {},
             o = {
-              1403: () => n("default", "react", [1, 18, 2, 0], (() => l.e(380).then((() => () => l(3380))))),
-              4410: () => n("default", "react-router-dom", [1, 6, 11, 2], (() => Promise.all([l.e(261), l.e(776)]).then((() => () => l(2776))))),
-              9779: () => n("default", "react-router-dom", [1, 6, 11, 2], (() => Promise.all([l.e(261), l.e(49)]).then((() => () => l(2049)))))
+              2229: () => n("default", "react", [1, 18, 2, 0], (() => l.e(508).then((() => () => l(508))))),
+              5966: () => n("default", "@rsgweb/utils", [1, "workspace:^"], (() => Promise.all([l.e(637), l.e(839)]).then((() => () => l(839))))),
+              9623: () => n("default", "react-router-dom", [1, 6, 11, 2], (() => l.e(282).then((() => () => l(282)))))
             },
             i = {
-              403: [1403],
-              968: [4410, 9779]
+              229: [2229],
+              680: [5966, 9623]
             },
             s = {};
           l.f.consumes = (e, t) => {
@@ -363,7 +356,7 @@ _global.SENTRY_RELEASE = {
             };
             l.f.miniCss = (t, r) => {
               e[t] ? r.push(e[t]) : 0 !== e[t] && {
-                968: 1
+                267: 1
               } [t] && r.push(e[t] = (e => new Promise(((t, r) => {
                 var n = l.miniCssF(e),
                   a = l.p + n;
@@ -405,7 +398,8 @@ _global.SENTRY_RELEASE = {
             var n = l.o(e, t) ? e[t] : void 0;
             if (0 !== n)
               if (n) r.push(n[2]);
-              else if (403 != t) {
+              else if (/^(229|680)$/.test(t)) e[t] = 0;
+            else {
               var a = new Promise(((r, a) => n = e[t] = [r, a]));
               r.push(n[2] = a);
               var o = l.p + l.u(t),
@@ -417,7 +411,7 @@ _global.SENTRY_RELEASE = {
                   i.message = "Loading chunk " + t + " failed.\n(" + a + ": " + o + ")", i.name = "ChunkLoadError", i.type = a, i.request = o, n[1](i)
                 }
               }), "chunk-" + t, t)
-            } else e[t] = 0
+            }
           };
           var t = (t, r) => {
               var n, a, o = r[0],
@@ -432,7 +426,7 @@ _global.SENTRY_RELEASE = {
             },
             r = self.webpackChunk_rockstargames_sites_gta_tv = self.webpackChunk_rockstargames_sites_gta_tv || [];
           r.forEach(t.bind(null, 0)), r.push = t.bind(null, r.push.bind(r))
-        })(), l(2160), l(8527)
+        })(), l(3787), l(5819)
       })())
     }
   }

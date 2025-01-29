@@ -1,8 +1,8 @@
 ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "e9d66ab1-e3a4-4b53-92b3-115f73e282a2", e._sentryDebugIdIdentifier = "sentry-dbid-e9d66ab1-e3a4-4b53-92b3-115f73e282a2")
+      a = (new Error).stack;
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "e955e370-fd45-4f82-aa3a-2ecb8199b454", e._sentryDebugIdIdentifier = "sentry-dbid-e955e370-fd45-4f82-aa3a-2ecb8199b454")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -14,524 +14,448 @@ _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2.
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
-}, System.register(["@rockstargames/graph-client", "@rockstargames/intl", "@rockstargames/modules-core-gif-viewer", "@rockstargames/modules-core-sc-user", "@rockstargames/modules-core-videoplayer", "@rockstargames/tina", "@rockstargames/utils"], (function(e, t) {
+}, System.register(["@rockstargames/modules-core-gif-viewer", "@rockstargames/modules-core-videoplayer"], (function(e, a) {
   var r = {},
-    a = {},
-    o = {},
-    d = {},
-    c = {},
-    n = {},
-    f = {};
+    t = {};
   return Object.defineProperty(r, "__esModule", {
     value: !0
-  }), Object.defineProperty(a, "__esModule", {
-    value: !0
-  }), Object.defineProperty(o, "__esModule", {
-    value: !0
-  }), Object.defineProperty(d, "__esModule", {
-    value: !0
-  }), Object.defineProperty(c, "__esModule", {
-    value: !0
-  }), Object.defineProperty(n, "__esModule", {
-    value: !0
-  }), Object.defineProperty(f, "__esModule", {
+  }), Object.defineProperty(t, "__esModule", {
     value: !0
   }), {
     setters: [function(e) {
-      Object.keys(e).forEach((function(t) {
-        r[t] = e[t]
+      Object.keys(e).forEach((function(a) {
+        r[a] = e[a]
       }))
     }, function(e) {
-      Object.keys(e).forEach((function(t) {
-        a[t] = e[t]
-      }))
-    }, function(e) {
-      Object.keys(e).forEach((function(t) {
-        o[t] = e[t]
-      }))
-    }, function(e) {
-      Object.keys(e).forEach((function(t) {
-        d[t] = e[t]
-      }))
-    }, function(e) {
-      Object.keys(e).forEach((function(t) {
-        c[t] = e[t]
-      }))
-    }, function(e) {
-      Object.keys(e).forEach((function(t) {
-        n[t] = e[t]
-      }))
-    }, function(e) {
-      Object.keys(e).forEach((function(t) {
-        f[t] = e[t]
+      Object.keys(e).forEach((function(a) {
+        t[a] = e[a]
       }))
     }],
     execute: function() {
       e((() => {
-        var e, s, i, l, u, b, p = {
-            6539: (e, t, r) => {
-              (0, r(13403).w)(1)
+        var e, f, o, d, c, n, s = {
+            35144: (e, a, r) => {
+              (0, r(13454).w)(1)
             },
-            13403: (e, t, r) => {
-              const a = r(75659).y;
-              t.w = function(e) {
+            13454: (e, a, r) => {
+              const t = r(38294).y;
+              a.w = function(e) {
                 if (e || (e = 1), !r.y.meta || !r.y.meta.url) throw console.error("__system_context__", r.y), Error("systemjs-webpack-interop was provided an unknown SystemJS context. Expected context.meta.url, but none was provided");
-                r.p = a(r.y.meta.url, e)
+                r.p = t(r.y.meta.url, e)
               }
             },
-            32160: (e, t, r) => {
-              r(6539)
+            23787: (e, a, r) => {
+              r(35144)
             },
-            75659: (e, t, r) => {
-              t.y = function(e, t) {
+            38294: (e, a, r) => {
+              a.y = function(e, a) {
                 var r = document.createElement("a");
                 r.href = e;
-                for (var a = "/" === r.pathname[0] ? r.pathname : "/" + r.pathname, o = 0, d = a.length; o !== t && d >= 0;) "/" === a[--d] && o++;
-                if (o !== t) throw Error("systemjs-webpack-interop: rootDirectoryLevel (" + t + ") is greater than the number of directories (" + o + ") in the URL path " + e);
-                var c = a.slice(0, d + 1);
-                return r.protocol + "//" + r.host + c
+                for (var t = "/" === r.pathname[0] ? r.pathname : "/" + r.pathname, f = 0, o = t.length; f !== a && o >= 0;) "/" === t[--o] && f++;
+                if (f !== a) throw Error("systemjs-webpack-interop: rootDirectoryLevel (" + a + ") is greater than the number of directories (" + f + ") in the URL path " + e);
+                var d = t.slice(0, o + 1);
+                return r.protocol + "//" + r.host + d
               };
               Number.isInteger
             },
-            68623: (e, t, r) => {
+            55974: (e, a, r) => {
               "use strict";
-              var a = {
-                  "./NewswireArticle": () => Promise.all([r.e(3524), r.e(1223), r.e(9269), r.e(4303), r.e(1225), r.e(1189), r.e(6878), r.e(7187), r.e(1403), r.e(1156), r.e(8089), r.e(7185), r.e(285), r.e(1879), r.e(207), r.e(8407), r.e(6758), r.e(9756), r.e(7989), r.e(9493), r.e(2553), r.e(9415), r.e(7207), r.e(825)]).then((() => () => r(80825))),
-                  "./NewswireTitle": () => Promise.all([r.e(1403), r.e(1156), r.e(8089), r.e(7185), r.e(285), r.e(353)]).then((() => () => r(85184))),
-                  "./components": () => Promise.all([r.e(3524), r.e(1223), r.e(9269), r.e(4303), r.e(1225), r.e(1189), r.e(1403), r.e(1156), r.e(8089), r.e(7185), r.e(285), r.e(1879), r.e(207), r.e(8407), r.e(6758), r.e(9756), r.e(7989), r.e(9493), r.e(2553)]).then((() => () => r(26750))),
-                  "./index": () => Promise.all([r.e(3524), r.e(1223), r.e(9269), r.e(4303), r.e(1225), r.e(1189), r.e(1403), r.e(1156), r.e(8089), r.e(7185), r.e(285), r.e(1879), r.e(207), r.e(8407), r.e(6758), r.e(9756), r.e(7989), r.e(9493), r.e(2553), r.e(9415), r.e(4216)]).then((() => () => r(74216))),
-                  "./tinaBlockTemplates": () => Promise.all([r.e(7601), r.e(1403), r.e(1156), r.e(8089), r.e(7185), r.e(1879), r.e(8407), r.e(6758), r.e(5800)]).then((() => () => r(75800))),
-                  "./types": () => Promise.all([r.e(3524), r.e(1223), r.e(9269), r.e(4303), r.e(1225), r.e(1189), r.e(6878), r.e(7187), r.e(1403), r.e(1156), r.e(8089), r.e(7185), r.e(285), r.e(1879), r.e(207), r.e(8407), r.e(6758), r.e(9756), r.e(7989), r.e(9493), r.e(2553), r.e(9415), r.e(7207), r.e(9435)]).then((() => () => r(69435)))
+              var t = {
+                  "./index": () => Promise.all([r.e(9713), r.e(8384), r.e(4888), r.e(7512), r.e(7545), r.e(925), r.e(2151), r.e(2440), r.e(2229), r.e(6188), r.e(5966), r.e(6118), r.e(1788), r.e(4853), r.e(745), r.e(3924), r.e(50), r.e(5241), r.e(59), r.e(5053), r.e(9123), r.e(5009), r.e(5535)]).then((() => () => r(98654))),
+                  "./tinaBlockTemplates": () => Promise.all([r.e(7512), r.e(4172), r.e(2229), r.e(6188), r.e(5966), r.e(1788), r.e(4853), r.e(745), r.e(3924), r.e(5241), r.e(5053), r.e(590)]).then((() => () => r(10590))),
+                  "./types": () => Promise.all([r.e(9713), r.e(8384), r.e(4888), r.e(7512), r.e(7545), r.e(925), r.e(2151), r.e(2440), r.e(2229), r.e(6188), r.e(5966), r.e(6118), r.e(1788), r.e(4853), r.e(745), r.e(3924), r.e(50), r.e(5241), r.e(59), r.e(5053), r.e(9123), r.e(5009), r.e(5535)]).then((() => () => r(99973)))
                 },
-                o = (e, t) => (r.R = t, t = r.o(a, e) ? a[e]() : Promise.resolve().then((() => {
+                f = (e, a) => (r.R = a, a = r.o(t, e) ? t[e]() : Promise.resolve().then((() => {
                   throw new Error('Module "' + e + '" does not exist in container.')
-                })), r.R = void 0, t),
-                d = (e, t) => {
+                })), r.R = void 0, a),
+                o = (e, a) => {
                   if (r.S) {
-                    var a = "default",
-                      o = r.S[a];
-                    if (o && o !== e) throw new Error("Container initialization failed as it has already been initialized with a different share scope");
-                    return r.S[a] = e, r.I(a, t)
+                    var t = "default",
+                      f = r.S[t];
+                    if (f && f !== e) throw new Error("Container initialization failed as it has already been initialized with a different share scope");
+                    return r.S[t] = e, r.I(t, a)
                   }
                 };
-              r.d(t, {
-                get: () => o,
-                init: () => d
+              r.d(a, {
+                get: () => f,
+                init: () => o
               })
-            },
-            61024: e => {
-              "use strict";
-              e.exports = r
-            },
-            49787: e => {
-              "use strict";
-              e.exports = a
             },
             29441: e => {
               "use strict";
-              e.exports = o
-            },
-            60404: e => {
-              "use strict";
-              e.exports = d
+              e.exports = r
             },
             25136: e => {
               "use strict";
-              e.exports = c
-            },
-            99466: e => {
-              "use strict";
-              e.exports = n
-            },
-            92969: e => {
-              "use strict";
-              e.exports = f
+              e.exports = t
             }
           },
-          h = {};
+          i = {};
 
-        function m(e) {
-          var t = h[e];
-          if (void 0 !== t) return t.exports;
-          var r = h[e] = {
+        function l(e) {
+          var a = i[e];
+          if (void 0 !== a) return a.exports;
+          var r = i[e] = {
             id: e,
             loaded: !1,
             exports: {}
           };
-          return p[e].call(r.exports, r, r.exports, m), r.loaded = !0, r.exports
+          return s[e].call(r.exports, r, r.exports, l), r.loaded = !0, r.exports
         }
-        return m.m = p, m.c = h, m.y = t, m.amdO = {}, m.n = e => {
-          var t = e && e.__esModule ? () => e.default : () => e;
-          return m.d(t, {
-            a: t
-          }), t
-        }, s = Object.getPrototypeOf ? e => Object.getPrototypeOf(e) : e => e.__proto__, m.t = function(t, r) {
-          if (1 & r && (t = this(t)), 8 & r) return t;
-          if ("object" == typeof t && t) {
-            if (4 & r && t.__esModule) return t;
-            if (16 & r && "function" == typeof t.then) return t
+        return l.m = s, l.c = i, l.y = a, l.amdO = {}, l.n = e => {
+          var a = e && e.__esModule ? () => e.default : () => e;
+          return l.d(a, {
+            a
+          }), a
+        }, f = Object.getPrototypeOf ? e => Object.getPrototypeOf(e) : e => e.__proto__, l.t = function(a, r) {
+          if (1 & r && (a = this(a)), 8 & r) return a;
+          if ("object" == typeof a && a) {
+            if (4 & r && a.__esModule) return a;
+            if (16 & r && "function" == typeof a.then) return a
           }
-          var a = Object.create(null);
-          m.r(a);
+          var t = Object.create(null);
+          l.r(t);
           var o = {};
-          e = e || [null, s({}), s([]), s(s)];
-          for (var d = 2 & r && t;
-            "object" == typeof d && !~e.indexOf(d); d = s(d)) Object.getOwnPropertyNames(d).forEach((e => o[e] = () => t[e]));
-          return o.default = () => t, m.d(a, o), a
-        }, m.d = (e, t) => {
-          for (var r in t) m.o(t, r) && !m.o(e, r) && Object.defineProperty(e, r, {
+          e = e || [null, f({}), f([]), f(f)];
+          for (var d = 2 & r && a;
+            "object" == typeof d && !~e.indexOf(d); d = f(d)) Object.getOwnPropertyNames(d).forEach((e => o[e] = () => a[e]));
+          return o.default = () => a, l.d(t, o), t
+        }, l.d = (e, a) => {
+          for (var r in a) l.o(a, r) && !l.o(e, r) && Object.defineProperty(e, r, {
             enumerable: !0,
-            get: t[r]
+            get: a[r]
           })
-        }, m.f = {}, m.e = e => Promise.all(Object.keys(m.f).reduce(((t, r) => (m.f[r](e, t), t)), [])), m.u = e => "js/" + {
-          199: "6130d920b46d76b73e09b4dd2c847197",
-          207: "4c6f54af0546121331db01f1db335f8d",
-          285: "80a8e416b3aa0070ab98a643172eef39",
-          353: "7f9377d46de33196050f3d0873dc58ec",
-          381: "ff99bae65a9f689c20e3117e9825f892",
-          732: "61394d05cf669f2ef410f86dbedba41d",
-          825: "16ab20cedfc4faedbb3c31869f9bf04d",
-          881: "4a5fa9f1c490117b6a0d75648384d6a3",
-          1156: "cc922efc646be03a6e96db0c8dc79076",
-          1189: "eb835eb54cec7b46a6617a634c7fc824",
-          1223: "2538c51728b4b2a5efc9d39084e3cd47",
-          1225: "ef23e9fe4c1f8238f206c0eeddec2767",
-          1331: "cf2e09fde57ee6f7dbba400e06918f15",
-          1403: "ddb9799907f7446101f8ded56fdf5523",
-          1469: "9ae5b4ad29988017cf35c38542cc26e7",
-          1622: "49c002047fa9193228b17fcbaddcea93",
-          1879: "fd6db654d72fc6bdacfc5fe94abe7b4c",
-          2495: "55fffc27932c93f909146d4bd46a6617",
-          2553: "ac7b7ef9774b3f1ffc2bbcd1b1dc228f",
-          2808: "55c68b06873ef71d625f9152b8da943d",
-          2939: "ed1c11fd8b0f6a34db0bc249481a641b",
-          2956: "86f7eacdbb6633ae3596113115c48777",
-          3380: "3031acf6b49615ce5a9b73660075be77",
-          3431: "23876c1e8cb56d35ca196ae6d2511bf9",
-          3464: "cf62a608e2e98d3770cdc3161a2d0de5",
-          3524: "7b4ff605171d20bc4fe8d2ed0f3d321c",
-          3712: "57857af4bd7e5a666552b4956dec45fe",
-          4105: "6a4a085d34beb22b6f864720e30ebbc8",
-          4143: "bfdd8f74c522a15bb091cf7298439c6d",
-          4216: "be6f38c176e8aa3f9009ac19835ff4ad",
-          4303: "23607032023f032c0588d29982555558",
-          4451: "545ed1bc62597dea1740e1f0c3c7b44a",
-          4876: "8bdcb9ace6547be1d26fb409d4553967",
-          4992: "9c6c0e4aaaf0ee8a6ba5a364715ae1c0",
-          5238: "9b0ce5fb80d20dd20db269db3e94e319",
-          5283: "a5aced2597c3a4b44d706b2410664711",
-          5342: "789b7d2b62196b2b2d6ea19ad02aa6bd",
-          5800: "c3a1e400c01554352789f44714ea962c",
-          6008: "9b8aed37c21b373532021c90153b8ae6",
-          6524: "7eaa9c62fd6ae2c7ed69a9287e2c8c02",
-          6632: "07b8f92dc29accbe15120e345f5c0a01",
-          6758: "2b7efe8a86506ced3d27adab157fdf78",
-          6808: "69c93cb46c20d6dd5982940bca89f4f8",
-          6878: "26dfeeec006c122d292c8b5ec95fb30e",
-          6996: "e33d0745898219c45450c585a783721e",
-          7123: "727eb9e2592707102d228306177d05f2",
-          7185: "c2666a9149566bae8996633b276aa7ad",
-          7187: "fe5e9f9051296a79b22c326c22fe372d",
-          7207: "da957446ae2156d9c488a2801a17472c",
-          7533: "55f79711ffd41d1810d4fb5ac529a941",
-          7601: "1e31ecf9935146a29b69507c5df7d4cf",
-          7781: "b384bb14cff1af877d94d62fc1a2628e",
-          7989: "83150e6b5b7c04216439ee4d9efc30fa",
-          8066: "39d1b5b4966fd37ae33aba56e403937e",
-          8089: "8bab15068b5f8709c6793d02556eb838",
-          8290: "8c3cafcfd6e9c2bf8b59f8bcfb8fd893",
-          8314: "12041e3b8e3841a6c59a263e1f0e3686",
-          8407: "89d369fbace1d513bd0b21d0d3f3e07b",
-          9269: "bac9f3a2b0885afd90d788938ee30dce",
-          9415: "612fec2d7dcc713c4bd6f47f07bc9cea",
-          9429: "1e62b509a2fe624bc6eb3fd47184b8b4",
-          9435: "f4b3bea8eba9dc0d430392e9b339be48",
-          9493: "d954671b5fb8a740a9ea8c408e52bb6b",
-          9756: "fb1266debf0f7fa2888b01e53cc9aa3e",
-          9853: "7db6f6b0e4484b609c1210b189b9a1eb"
-        } [e] + ".js", m.miniCssF = e => "css/" + {
-          353: "18711930c6a0de62fd4ccccb273e060d",
-          732: "7804a8964f391fe5e1b3d2ce77453b1e",
-          2495: "fc9d09ede16f176d4bfcddbe67b7386e",
-          2553: "8c0430f14493609e006f3578865e31c5",
-          3712: "b8df5e4b23fe38de94f67a48602e6f3b",
-          4876: "3ca63ccb7d679ba37b97863db3aa29fa",
-          4992: "2b35314f2a2d77a8a199e02d5cb9bad0",
-          5342: "d7a0fa50d12bf5218511da15a8de9c39",
-          6758: "4b0ed39075607cfb88e45f4fbf45a999",
-          7185: "14e901cdb3151040ad44fc13b493452e",
-          7187: "bd1f235fa318fbbfb685016ac24c4271",
-          7207: "da765f37e8fa2feef83d178ed0e0256f",
-          7989: "2d479fdc2ad051cd66458cf1c2f66dff",
-          9756: "42311820f84dac14ae05ea8000b0335d"
-        } [e] + ".css", m.g = function() {
+        }, l.f = {}, l.e = e => Promise.all(Object.keys(l.f).reduce(((a, r) => (l.f[r](e, a), a)), [])), l.u = e => "js/" + {
+          50: "fc7714432c56bb128ff5e1a603a7e5ac",
+          59: "75e87d444ba59903894cd27a8f97e7f0",
+          68: "f1d6f1443f37f2487df9d81dd417cbc6",
+          173: "513820c2e1180ec535ae1a809c68302c",
+          182: "aa334339e6b1cbdd87562bb3166fd6f3",
+          282: "d332b06b26fbe1c0ac8f24193ee3a111",
+          289: "ee93f47a9a2fbd7e39be522b44caab8c",
+          471: "cdda5846169402640824f4013655d4ba",
+          508: "59a80589eff074fa0b7d7305596dcc3f",
+          590: "69e104981a468cb3d13f481cfc7c723b",
+          745: "d49246f3035d81851e73516641b8344f",
+          925: "917775e9357623d57e4c435f59b1c71b",
+          942: "53489dfe2bb4425b50e2835f2145c2fb",
+          1758: "20e7d992997e59cc6787fd8197d4d798",
+          1788: "557bd1ad020cb1227bbe5acf69b602f2",
+          1927: "5b41bbb48f2810eb282fa9d9e7846bf8",
+          1999: "2f132bc000e367817875a2dc8fb4b04b",
+          2151: "9602c26e7aeac11b4d42a69991510443",
+          2229: "07b435f890979de431fa1d64b08dc445",
+          2234: "99e7a7ef75328a64d9c23a56f0697658",
+          2437: "0b1e217677b29ac5e41fd7e1c5b670b3",
+          2440: "901630a747514289547376b1cf237d2b",
+          2670: "885517618506a24289ca25d05256d1fa",
+          3401: "22c64e4104cd4752778feb79b5fcfad4",
+          3896: "366281132d161a06d30f75da315b039c",
+          3924: "c7cbd0a6c472049c1e90cbe626709fa7",
+          3926: "17703414d231bce852325cc746917fb4",
+          4172: "d47160c60b286620ed5d9dee11e6ec83",
+          4281: "fd2586c372724092e3604d47322e83f1",
+          4853: "75c741c5320f8a0ad822ec3e177ee249",
+          4888: "e341fdb44107330baa6fc094f0af1ae7",
+          5009: "e76e47f5adf497d3faa67c9bfada793a",
+          5053: "79a5757db5369a67419f73a6c341c5c3",
+          5241: "5529bd5abc024df45e8dd233da3cedc6",
+          5265: "7d3ceae8220d7da3bd5623c94f0ab1b8",
+          5415: "c95e167f2c9609ffa98c89478f3127fe",
+          5535: "59f51958c339a92de6213c78536ccae1",
+          5966: "bfac8804d873085f58d6a18caa968d9a",
+          6118: "f32ceebdbc744763752d785a36a681e3",
+          6188: "de94ab264084d1f213f45bda8785848b",
+          6255: "d5f666ec43c191cc5e48ba4389d029b6",
+          6471: "865092d36dd22afc00a12214d8dd12ba",
+          7407: "987e46b8e7ddf8e3c8f1c96a46eb32b8",
+          7512: "88247f142530e7f19d5d18c589008b68",
+          7545: "e76e07136c28d73acdf04d15dbb816b8",
+          7605: "054904568db2544eb58d257e50163386",
+          7801: "518a556410492c9a35403917d3ca09c1",
+          8096: "f738b33af4e9e4ae515d9ecc725d5bf1",
+          8144: "30c9fd52e3e8809127a5321ef4d40bdf",
+          8325: "ca6135703fde91915c2772db440bdeea",
+          8384: "1513339b97e2760dcdfd74a206497559",
+          8463: "fa587729a03faf15c8942f99d8c06cdc",
+          8577: "dfc4f332a61e1281e53b4793cdf61c7c",
+          8676: "103c76ef73de9214a6cd8a443f1ad6f5",
+          8746: "f2402fd21c81b74fa44cbc090a0e02a2",
+          8845: "ff0f74ff3e93bae47804829e9582e5be",
+          8852: "95d8c8cd5dbaec46ef6c33c3cef343d5",
+          8938: "0d57f468c3b286d0b283c40a3c8882d9",
+          9123: "e80dad5319f823b5c4677b68ea067603",
+          9713: "4368969b675192b13090dbd840facc8c",
+          9760: "86ab550d9027f094ebcc651697d27187",
+          9965: "517f7cef9482b1281a42def5747dfcf2",
+          9986: "24b3cd82ebfe782d85745e5ff51de440"
+        } [e] + ".js", l.miniCssF = e => "css/" + {
+          289: "a183e3230fd27669a21ecdc8a082c2f7",
+          471: "384cddac2173849afd90c4a73e287f5e",
+          942: "25c722cb525ac6c6280af22b8a0c5b31",
+          2151: "bd1f235fa318fbbfb685016ac24c4271",
+          2670: "a183e3230fd27669a21ecdc8a082c2f7",
+          3401: "af340189dc39ad467e73aa44af88c314",
+          3924: "99c2fd9adb621652406552432f4eb84c",
+          4281: "64347ce070cf4aadd218c489baa103d7",
+          5009: "a4d0d05f2c595a76a83fc48160ec1820",
+          5053: "72518ca966bc5c01f3e45685eb43a2c6",
+          5241: "6cd6ed1f7ec476b645d80bafef5d1962",
+          5535: "33c7cc8094f30cd73a83f3af1c24cc53",
+          8144: "c66a0b0dab0f4a7504561df18087fb93",
+          8676: "384cddac2173849afd90c4a73e287f5e",
+          9123: "edcf47f275dd4a0907325018f66ee7cf",
+          9965: "6ba48a96558cc7637ceac72510a41048"
+        } [e] + ".css", l.g = function() {
           if ("object" == typeof globalThis) return globalThis;
           try {
             return this || new Function("return this")()
           } catch (e) {
             if ("object" == typeof window) return window
           }
-        }(), m.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t), i = {}, l = "@rockstargames/modules-core-newswire-article:", m.l = (e, t, r, a) => {
-          if (i[e]) i[e].push(t);
+        }(), l.o = (e, a) => Object.prototype.hasOwnProperty.call(e, a), o = {}, d = "@rockstargames/modules-core-newswire-article:", l.l = (e, a, r, t) => {
+          if (o[e]) o[e].push(a);
           else {
-            var o, d;
+            var f, c;
             if (void 0 !== r)
-              for (var c = document.getElementsByTagName("script"), n = 0; n < c.length; n++) {
-                var f = c[n];
-                if (f.getAttribute("src") == e || f.getAttribute("data-webpack") == l + r) {
-                  o = f;
+              for (var n = document.getElementsByTagName("script"), s = 0; s < n.length; s++) {
+                var i = n[s];
+                if (i.getAttribute("src") == e || i.getAttribute("data-webpack") == d + r) {
+                  f = i;
                   break
                 }
               }
-            o || (d = !0, (o = document.createElement("script")).charset = "utf-8", o.timeout = 120, m.nc && o.setAttribute("nonce", m.nc), o.setAttribute("data-webpack", l + r), o.src = e), i[e] = [t];
-            var s = (t, r) => {
-                o.onerror = o.onload = null, clearTimeout(u);
-                var a = i[e];
-                if (delete i[e], o.parentNode && o.parentNode.removeChild(o), a && a.forEach((e => e(r))), t) return t(r)
+            f || (c = !0, (f = document.createElement("script")).charset = "utf-8", f.timeout = 120, l.nc && f.setAttribute("nonce", l.nc), f.setAttribute("data-webpack", d + r), f.src = e), o[e] = [a];
+            var b = (a, r) => {
+                f.onerror = f.onload = null, clearTimeout(u);
+                var t = o[e];
+                if (delete o[e], f.parentNode && f.parentNode.removeChild(f), t && t.forEach((e => e(r))), a) return a(r)
               },
-              u = setTimeout(s.bind(null, void 0, {
+              u = setTimeout(b.bind(null, void 0, {
                 type: "timeout",
-                target: o
+                target: f
               }), 12e4);
-            o.onerror = s.bind(null, o.onerror), o.onload = s.bind(null, o.onload), d && document.head.appendChild(o)
+            f.onerror = b.bind(null, f.onerror), f.onload = b.bind(null, f.onload), c && document.head.appendChild(f)
           }
-        }, m.r = e => {
+        }, l.r = e => {
           "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
             value: "Module"
           }), Object.defineProperty(e, "__esModule", {
             value: !0
           })
-        }, m.nmd = e => (e.paths = [], e.children || (e.children = []), e), u = {
-          207: [40207],
-          825: [42158],
-          1156: [74401, 42756],
-          1879: [31879],
-          2553: [70396, 78417, 90588],
-          5800: [11438, 17523, 33809, 44019, 83166],
-          6758: [26398, 55140, 64064, 73379],
-          8089: [28089],
-          8407: [58407],
-          9756: [94566]
-        }, b = {
+        }, l.nmd = e => (e.paths = [], e.children || (e.children = []), e), c = {
+          590: [11438, 17523, 44019, 83166],
+          5053: [64064],
+          5241: [31879]
+        }, n = {
           11438: ["default", "./tinaBlockTemplates", 29441],
           17523: ["default", "./tina", 25136],
-          26398: ["default", "./helpers", 99466],
-          28089: ["default", "./helpers/uploads", 99466],
           31879: ["default", "./index", 25136],
-          33809: ["default", "./ui", 99466],
-          40207: ["default", "./index", 60404],
-          42158: ["default", "./providers", 92969],
-          42756: ["default", "./index", 92969],
           44019: ["default", "./tinaBlockTemplates", 25136],
-          55140: ["default", "./properties", 99466],
-          58407: ["default", "./index", 61024],
           64064: ["default", "./index", 29441],
-          70396: ["default", "./hooks", 92969],
-          73379: ["default", "./functions", 92969],
-          74401: ["default", "./index", 99466],
-          78417: ["default", "./operations/fragments/paging.graphql", 61024],
-          83166: ["default", "./tina", 29441],
-          90588: ["default", "./operations/fragments/newswire-post.graphql", 61024],
-          94566: ["default", "./messages", 49787]
-        }, m.f.remotes = (e, t) => {
-          m.o(u, e) && u[e].forEach((e => {
-            var r = m.R;
+          83166: ["default", "./tina", 29441]
+        }, l.f.remotes = (e, a) => {
+          l.o(c, e) && c[e].forEach((e => {
+            var r = l.R;
             r || (r = []);
-            var a = b[e];
-            if (!(r.indexOf(a) >= 0)) {
-              if (r.push(a), a.p) return t.push(a.p);
-              var o = t => {
-                  t || (t = new Error("Container missing")), "string" == typeof t.message && (t.message += '\nwhile loading "' + a[1] + '" from ' + a[2]), m.m[e] = () => {
-                    throw t
-                  }, a.p = 0
+            var t = n[e];
+            if (!(r.indexOf(t) >= 0)) {
+              if (r.push(t), t.p) return a.push(t.p);
+              var f = a => {
+                  a || (a = new Error("Container missing")), "string" == typeof a.message && (a.message += '\nwhile loading "' + t[1] + '" from ' + t[2]), l.m[e] = () => {
+                    throw a
+                  }, t.p = 0
                 },
-                d = (e, r, d, c, n, f) => {
+                o = (e, r, o, d, c, n) => {
                   try {
-                    var s = e(r, d);
-                    if (!s || !s.then) return n(s, c, f);
-                    var i = s.then((e => n(e, c)), o);
-                    if (!f) return i;
-                    t.push(a.p = i)
+                    var s = e(r, o);
+                    if (!s || !s.then) return c(s, d, n);
+                    var i = s.then((e => c(e, d)), f);
+                    if (!n) return i;
+                    a.push(t.p = i)
                   } catch (e) {
-                    o(e)
+                    f(e)
                   }
                 },
-                c = (e, t, o) => d(t.get, a[1], r, 0, n, o),
-                n = t => {
-                  a.p = 1, m.m[e] = e => {
-                    e.exports = t()
+                d = (e, a, f) => o(a.get, t[1], r, 0, c, f),
+                c = a => {
+                  t.p = 1, l.m[e] = e => {
+                    e.exports = a()
                   }
                 };
-              d(m, a[2], 0, 0, ((e, t, r) => e ? d(m.I, a[0], 0, e, c, r) : o()), 1)
+              o(l, t[2], 0, 0, ((e, a, r) => e ? o(l.I, t[0], 0, e, d, r) : f()), 1)
             }
           }))
         }, (() => {
-          m.S = {};
+          l.S = {};
           var e = {},
-            t = {};
-          m.I = (r, a) => {
-            a || (a = []);
-            var o = t[r];
-            if (o || (o = t[r] = {}), !(a.indexOf(o) >= 0)) {
-              if (a.push(o), e[r]) return e[r];
-              m.o(m.S, r) || (m.S[r] = {});
-              var d = m.S[r],
-                c = "@rockstargames/modules-core-newswire-article",
-                n = (e, t, r, a) => {
-                  var o = d[e] = d[e] || {},
-                    n = o[t];
-                  (!n || !n.loaded && (!a != !n.eager ? a : c > n.from)) && (o[t] = {
+            a = {};
+          l.I = (r, t) => {
+            t || (t = []);
+            var f = a[r];
+            if (f || (f = a[r] = {}), !(t.indexOf(f) >= 0)) {
+              if (t.push(f), e[r]) return e[r];
+              l.o(l.S, r) || (l.S[r] = {});
+              var o = l.S[r],
+                d = "@rockstargames/modules-core-newswire-article",
+                c = (e, a, r, t) => {
+                  var f = o[e] = o[e] || {},
+                    c = f[a];
+                  (!c || !c.loaded && (!t != !c.eager ? t : d > c.from)) && (f[a] = {
                     get: r,
-                    from: c,
-                    eager: !!a
+                    from: d,
+                    eager: !!t
                   })
                 },
-                f = e => {
-                  var t = e => {
-                    return t = "Initialization of sharing external failed: " + e, void("undefined" != typeof console && console.warn && console.warn(t));
-                    var t
+                n = e => {
+                  var a = e => {
+                    return a = "Initialization of sharing external failed: " + e, void("undefined" != typeof console && console.warn && console.warn(a));
+                    var a
                   };
                   try {
-                    var o = m(e);
-                    if (!o) return;
-                    var d = e => e && e.init && e.init(m.S[r], a);
-                    if (o.then) return s.push(o.then(d, t));
-                    var c = d(o);
-                    if (c && c.then) return s.push(c.catch(t))
+                    var f = l(e);
+                    if (!f) return;
+                    var o = e => e && e.init && e.init(l.S[r], t);
+                    if (f.then) return s.push(f.then(o, a));
+                    var d = o(f);
+                    if (d && d.then) return s.push(d.catch(a))
                   } catch (e) {
-                    t(e)
+                    a(e)
                   }
                 },
                 s = [];
-              return "default" === r && (n("@foundry/react", "1.19.0", (() => Promise.all([m.e(1223), m.e(1225), m.e(6878), m.e(4992), m.e(1403), m.e(9493), m.e(6632)]).then((() => () => m(14992))))), n("@rockstargames/locale-tools", "1.0.0", (() => Promise.all([m.e(1223), m.e(8066), m.e(1403), m.e(4143)]).then((() => () => m(24143))))), n("@rockstargames/modules-core-carousel", "1.2.4", (() => Promise.all([m.e(3524), m.e(9269), m.e(1403), m.e(1156), m.e(8089), m.e(732), m.e(3712)]).then((() => () => m(51331))))), n("@rockstargames/modules-core-engagement", "0.0.2", (() => Promise.all([m.e(3524), m.e(9269), m.e(4303), m.e(1469), m.e(1403), m.e(1156), m.e(285), m.e(207), m.e(8407), m.e(9756), m.e(5342)]).then((() => () => m(87027))))), n("@rockstargames/modules-core-group-of-items", "1.2.0", (() => Promise.all([m.e(3524), m.e(1403), m.e(1156), m.e(8089), m.e(7185), m.e(1879), m.e(207), m.e(7989), m.e(2495)]).then((() => () => m(42495))))), n("@rockstargames/modules-sc-ugc-spotlight", "1.1.3", (() => m.e(381).then((() => () => m(20381))))), n("dompurify", "2.4.7", (() => m.e(2956).then((() => () => m(72956))))), n("lodash", "4.17.21", (() => m.e(9429).then((() => () => m(79429))))), n("react-dom", "18.2.0", (() => Promise.all([m.e(5283), m.e(1403)]).then((() => () => m(15283))))), n("react-dom", "18.2.0", (() => Promise.all([m.e(7533), m.e(1403)]).then((() => () => m(47533))))), n("react-jsx-parser", "1.29.0", (() => Promise.all([m.e(1403), m.e(5238)]).then((() => () => m(85238))))), n("react-router-dom", "6.17.0", (() => Promise.all([m.e(4105), m.e(6008), m.e(1403)]).then((() => () => m(76008))))), n("react-router-dom", "6.17.0", (() => Promise.all([m.e(4105), m.e(4451), m.e(1403)]).then((() => () => m(4451))))), n("react", "18.2.0", (() => m.e(3380).then((() => () => m(23380))))), n("text-balancer", "1.0.5", (() => m.e(199).then((() => () => m(20199))))), f(99466), f(92969), f(25136), f(60404), f(61024), f(29441), f(49787)), s.length ? e[r] = Promise.all(s).then((() => e[r] = 1)) : e[r] = 1
+              return "default" === r && (c("@foundry/react", "1.19.0", (() => Promise.all([l.e(9965), l.e(2151), l.e(2229), l.e(4853), l.e(6471)]).then((() => () => l(79965))))), c("@rsgweb/locale-tools", "1.0.0", (() => Promise.all([l.e(1927), l.e(2229), l.e(6188), l.e(9986)]).then((() => () => l(89986))))), c("@rsgweb/modules-core-carousel", "0.0.0", (() => Promise.all([l.e(4888), l.e(7545), l.e(2229), l.e(5966), l.e(3924), l.e(942), l.e(182)]).then((() => () => l(80182))))), c("@rsgweb/modules-core-engagement", "0.0.0", (() => Promise.all([l.e(9713), l.e(8384), l.e(4888), l.e(7545), l.e(925), l.e(2229), l.e(6188), l.e(5966), l.e(6118), l.e(1788), l.e(50), l.e(59), l.e(3401), l.e(9123)]).then((() => () => l(3237))))), c("@rsgweb/modules-core-group-of-items", "1.0.0", (() => Promise.all([l.e(4888), l.e(2229), l.e(5966), l.e(3924), l.e(5241), l.e(59), l.e(5009), l.e(2670)]).then((() => () => l(12670))))), c("@rsgweb/modules-core-user-action-menu", "0.0.0", (() => Promise.all([l.e(9713), l.e(8384), l.e(8463), l.e(2229), l.e(6188), l.e(5966), l.e(6118), l.e(1788), l.e(50), l.e(8144), l.e(4281)]).then((() => () => l(68144))))), c("@rsgweb/tina", "0.0.0", (() => Promise.all([l.e(9713), l.e(8384), l.e(7512), l.e(2229), l.e(6188), l.e(5966), l.e(6118), l.e(1788), l.e(4853), l.e(745), l.e(2437), l.e(471)]).then((() => () => l(52437))))), c("@rsgweb/utils", "1.0.0", (() => Promise.all([l.e(9713), l.e(2229), l.e(6188), l.e(5966), l.e(6118), l.e(8096)]).then((() => () => l(75811))))), c("dompurify", "2.4.7", (() => l.e(3926).then((() => () => l(93926))))), c("lodash", "4.17.21", (() => l.e(1999).then((() => () => l(71999))))), c("react-dom", "18.2.0", (() => Promise.all([l.e(8577), l.e(2229)]).then((() => () => l(78577))))), c("react-jsx-parser", "1.29.0", (() => Promise.all([l.e(2229), l.e(8746)]).then((() => () => l(78746))))), c("react-router-dom", "6.17.0", (() => Promise.all([l.e(282), l.e(2229)]).then((() => () => l(70282))))), c("react", "18.2.0", (() => l.e(508).then((() => () => l(50508))))), c("text-balancer", "1.0.5", (() => l.e(6255).then((() => () => l(16255))))), n(25136), n(29441)), s.length ? e[r] = Promise.all(s).then((() => e[r] = 1)) : e[r] = 1
             }
           }
         })(), (() => {
           var e;
-          m.g.importScripts && (e = m.g.location + "");
-          var t = m.g.document;
-          if (!e && t && (t.currentScript && (e = t.currentScript.src), !e)) {
-            var r = t.getElementsByTagName("script");
+          l.g.importScripts && (e = l.g.location + "");
+          var a = l.g.document;
+          if (!e && a && (a.currentScript && (e = a.currentScript.src), !e)) {
+            var r = a.getElementsByTagName("script");
             if (r.length)
-              for (var a = r.length - 1; a > -1 && (!e || !/^http(s?):/.test(e));) e = r[a--].src
+              for (var t = r.length - 1; t > -1 && (!e || !/^http(s?):/.test(e));) e = r[t--].src
           }
           if (!e) throw new Error("Automatic publicPath is not supported in this browser");
-          e = e.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/"), m.p = e
+          e = e.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/"), l.p = e
         })(), (() => {
           var e = e => {
-              var t = e => e.split(".").map((e => +e == e ? +e : e)),
+              var a = e => e.split(".").map((e => +e == e ? +e : e)),
                 r = /^([^-+]+)?(?:-([^+]+))?(?:\+(.+))?$/.exec(e),
-                a = r[1] ? t(r[1]) : [];
-              return r[2] && (a.length++, a.push.apply(a, t(r[2]))), r[3] && (a.push([]), a.push.apply(a, t(r[3]))), a
+                t = r[1] ? a(r[1]) : [];
+              return r[2] && (t.length++, t.push.apply(t, a(r[2]))), r[3] && (t.push([]), t.push.apply(t, a(r[3]))), t
             },
-            t = (r, a) => {
+            a = (r, t) => {
               if (0 in r) {
-                a = e(a);
-                var o = r[0],
-                  d = o < 0;
-                d && (o = -o - 1);
-                for (var c = 0, n = 1, f = !0;; n++, c++) {
-                  var s, i, l = n < r.length ? (typeof r[n])[0] : "";
-                  if (c >= a.length || "o" == (i = (typeof(s = a[c]))[0])) return !f || ("u" == l ? n > o && !d : "" == l != d);
+                t = e(t);
+                var f = r[0],
+                  o = f < 0;
+                o && (f = -f - 1);
+                for (var d = 0, c = 1, n = !0;; c++, d++) {
+                  var s, i, l = c < r.length ? (typeof r[c])[0] : "";
+                  if (d >= t.length || "o" == (i = (typeof(s = t[d]))[0])) return !n || ("u" == l ? c > f && !o : "" == l != o);
                   if ("u" == i) {
-                    if (!f || "u" != l) return !1
-                  } else if (f)
+                    if (!n || "u" != l) return !1
+                  } else if (n)
                     if (l == i)
-                      if (n <= o) {
-                        if (s != r[n]) return !1
+                      if (c <= f) {
+                        if (s != r[c]) return !1
                       } else {
-                        if (d ? s > r[n] : s < r[n]) return !1;
-                        s != r[n] && (f = !1)
+                        if (o ? s > r[c] : s < r[c]) return !1;
+                        s != r[c] && (n = !1)
                       }
                   else if ("s" != l && "n" != l) {
-                    if (d || n <= o) return !1;
-                    f = !1, n--
+                    if (o || c <= f) return !1;
+                    n = !1, c--
                   } else {
-                    if (n <= o || i < l != d) return !1;
-                    f = !1
-                  } else "s" != l && "n" != l && (f = !1, n--)
+                    if (c <= f || i < l != o) return !1;
+                    n = !1
+                  } else "s" != l && "n" != l && (n = !1, c--)
                 }
               }
-              var u = [],
-                b = u.pop.bind(u);
-              for (c = 1; c < r.length; c++) {
-                var p = r[c];
-                u.push(1 == p ? b() | b() : 2 == p ? b() & b() : p ? t(p, a) : !b())
+              var b = [],
+                u = b.pop.bind(b);
+              for (d = 1; d < r.length; d++) {
+                var h = r[d];
+                b.push(1 == h ? u() | u() : 2 == h ? u() & u() : h ? a(h, t) : !u())
               }
-              return !!b()
+              return !!u()
             },
-            r = (r, a, o) => {
-              var d = r[a];
-              return (a = Object.keys(d).reduce(((r, a) => !t(o, a) || r && !((t, r) => {
-                t = e(t), r = e(r);
-                for (var a = 0;;) {
-                  if (a >= t.length) return a < r.length && "u" != (typeof r[a])[0];
-                  var o = t[a],
-                    d = (typeof o)[0];
-                  if (a >= r.length) return "u" == d;
-                  var c = r[a],
-                    n = (typeof c)[0];
-                  if (d != n) return "o" == d && "n" == n || "s" == n || "u" == d;
-                  if ("o" != d && "u" != d && o != c) return o < c;
-                  a++
+            r = (r, t, f) => {
+              var o = r[t];
+              return (t = Object.keys(o).reduce(((r, t) => !a(f, t) || r && !((a, r) => {
+                a = e(a), r = e(r);
+                for (var t = 0;;) {
+                  if (t >= a.length) return t < r.length && "u" != (typeof r[t])[0];
+                  var f = a[t],
+                    o = (typeof f)[0];
+                  if (t >= r.length) return "u" == o;
+                  var d = r[t],
+                    c = (typeof d)[0];
+                  if (o != c) return "o" == o && "n" == c || "s" == c || "u" == o;
+                  if ("o" != o && "u" != o && f != d) return f < d;
+                  t++
                 }
-              })(r, a) ? r : a), 0)) && d[a]
+              })(r, t) ? r : t), 0)) && o[t]
             },
-            a = (e => function(t, r, a, o) {
-              var d = m.I(t);
-              return d && d.then ? d.then(e.bind(e, t, m.S[t], r, a, o)) : e(t, m.S[t], r, a, o)
-            })(((e, t, a, o, d) => {
-              var c = t && m.o(t, a) && r(t, a, o);
-              return c ? (e => (e.loaded = 1, e.get()))(c) : d()
+            t = (e => function(a, r, t, f) {
+              var o = l.I(a);
+              return o && o.then ? o.then(e.bind(e, a, l.S[a], r, t, f)) : e(a, l.S[a], r, t, f)
+            })(((e, a, t, f, o) => {
+              var d = a && l.o(a, t) && r(a, t, f);
+              return d ? (e => (e.loaded = 1, e.get()))(d) : o()
             })),
-            o = {},
+            f = {},
+            o = {
+              62229: () => t("default", "react", [1, 18, 2, 0], (() => l.e(508).then((() => () => l(50508))))),
+              16188: () => t("default", "lodash", [1, 4, 17, 21], (() => l.e(1999).then((() => () => l(71999))))),
+              95966: () => t("default", "@rsgweb/utils", [1, "workspace:^"], (() => Promise.all([l.e(9713), l.e(6188), l.e(6118)]).then((() => () => l(75811))))),
+              9623: () => t("default", "react-router-dom", [1, 6, 11, 2], (() => l.e(282).then((() => () => l(70282))))),
+              81788: () => t("default", "@rsgweb/locale-tools", [1, "workspace:^"], (() => Promise.all([l.e(1927), l.e(7605)]).then((() => () => l(89986))))),
+              44853: () => t("default", "react-dom", [1, 18, 2, 0], (() => l.e(8577).then((() => () => l(78577))))),
+              2973: () => t("default", "dompurify", [1, 2, 4, 1], (() => l.e(3926).then((() => () => l(93926))))),
+              92440: () => t("default", "@rsgweb/tina", [1, "workspace:^"], (() => Promise.all([l.e(9713), l.e(8384), l.e(7512), l.e(6188), l.e(6118), l.e(1788), l.e(4853), l.e(745), l.e(2437), l.e(8676)]).then((() => () => l(52437))))),
+              15310: () => t("default", "@rsgweb/modules-core-group-of-items", [1, "workspace:^"], (() => l.e(289).then((() => () => l(12670))))),
+              20206: () => t("default", "@rsgweb/modules-core-engagement", [1, "workspace:^"], (() => l.e(3401).then((() => () => l(3237))))),
+              23608: () => t("default", "@rsgweb/modules-core-carousel", [1, "workspace:^"], (() => Promise.all([l.e(942), l.e(7801)]).then((() => () => l(80182))))),
+              37896: () => t("default", "@foundry/react", [1, 1, 14, 2], (() => l.e(9965).then((() => () => l(79965))))),
+              94581: () => t("default", "react-jsx-parser", [1, "workspace:^"], (() => l.e(8746).then((() => () => l(78746))))),
+              97384: () => t("default", "text-balancer", [1, 1, 0, 5], (() => l.e(6255).then((() => () => l(16255))))),
+              20270: () => t("default", "@rsgweb/modules-core-user-action-menu", [1, "workspace:^"], (() => Promise.all([l.e(8463), l.e(8144)]).then((() => () => l(68144)))))
+            },
             d = {
-              71403: () => a("default", "react", [1, 18, 2, 0], (() => m.e(3380).then((() => () => m(23380))))),
-              61631: () => a("default", "dompurify", [1, 2, 4, 1], (() => m.e(2956).then((() => () => m(72956))))),
-              89779: () => a("default", "react-router-dom", [1, 6, 11, 2], (() => Promise.all([m.e(4105), m.e(6008)]).then((() => () => m(76008))))),
-              96717: () => a("default", "@rockstargames/locale-tools", [1, "workspace:*"], (() => Promise.all([m.e(1223), m.e(8066), m.e(6524)]).then((() => () => m(24143))))),
-              79493: () => a("default", "react-dom", [1, 18, 2, 0], (() => m.e(7533).then((() => () => m(47533))))),
-              5217: () => a("default", "@rockstargames/modules-core-group-of-items", [1, "workspace:*"], (() => m.e(4876).then((() => () => m(42495))))),
-              32503: () => a("default", "@rockstargames/modules-core-engagement", [1, "workspace:*"], (() => Promise.all([m.e(1469), m.e(5342)]).then((() => () => m(87027))))),
-              37920: () => a("default", "text-balancer", [1, 1, 0, 5], (() => m.e(199).then((() => () => m(20199))))),
-              54252: () => a("default", "lodash", [1, 4, 17, 21], (() => m.e(9429).then((() => () => m(79429))))),
-              99096: () => a("default", "@foundry/react", [1, 1, 14, 2], (() => Promise.all([m.e(6878), m.e(4992)]).then((() => () => m(14992))))),
-              26527: () => a("default", "@rockstargames/modules-core-carousel", [1, "workspace:*"], (() => Promise.all([m.e(732), m.e(1331)]).then((() => () => m(51331))))),
-              66713: () => a("default", "@rockstargames/modules-sc-ugc-spotlight", [1, "workspace:*"], (() => m.e(381).then((() => () => m(20381))))),
-              85865: () => a("default", "react-jsx-parser", [1, "workspace:*"], (() => m.e(5238).then((() => () => m(85238))))),
-              57172: () => a("default", "react-router-dom", [1, 6, 11, 2], (() => Promise.all([m.e(4105), m.e(4451)]).then((() => () => m(4451)))))
+              59: [92440],
+              1788: [81788],
+              2229: [62229],
+              3401: [20270],
+              4853: [44853],
+              5241: [2973],
+              5535: [15310, 20206, 23608, 37896, 94581, 97384],
+              5966: [95966],
+              6118: [9623],
+              6188: [16188]
             },
-            c = {
-              285: [89779, 96717],
-              1403: [71403],
-              2553: [5217, 32503, 37920, 54252, 99096],
-              5342: [57172],
-              7185: [61631],
-              7207: [85865],
-              9415: [26527, 66713],
-              9493: [79493]
-            },
-            n = {};
-          m.f.consumes = (e, t) => {
-            m.o(c, e) && c[e].forEach((e => {
-              if (m.o(o, e)) return t.push(o[e]);
-              if (!n[e]) {
-                var r = t => {
-                  o[e] = 0, m.m[e] = r => {
-                    delete m.c[e], r.exports = t()
+            c = {};
+          l.f.consumes = (e, a) => {
+            l.o(d, e) && d[e].forEach((e => {
+              if (l.o(f, e)) return a.push(f[e]);
+              if (!c[e]) {
+                var r = a => {
+                  f[e] = 0, l.m[e] = r => {
+                    delete l.c[e], r.exports = a()
                   }
                 };
-                n[e] = !0;
-                var a = t => {
-                  delete o[e], m.m[e] = r => {
-                    throw delete m.c[e], t
+                c[e] = !0;
+                var t = a => {
+                  delete f[e], l.m[e] = r => {
+                    throw delete l.c[e], a
                   }
                 };
                 try {
-                  var c = d[e]();
-                  c.then ? t.push(o[e] = c.then(r).catch(a)) : r(c)
+                  var d = o[e]();
+                  d.then ? a.push(f[e] = d.then(r).catch(t)) : r(d)
                 } catch (e) {
-                  a(e)
+                  t(e)
                 }
               }
             }))
@@ -541,52 +465,54 @@ _global.SENTRY_RELEASE = {
             var e = {
               6947: 0
             };
-            m.f.miniCss = (t, r) => {
-              e[t] ? r.push(e[t]) : 0 !== e[t] && {
-                353: 1,
-                732: 1,
-                2495: 1,
-                2553: 1,
-                3712: 1,
-                4876: 1,
-                4992: 1,
-                5342: 1,
-                6758: 1,
-                7185: 1,
-                7187: 1,
-                7207: 1,
-                7989: 1,
-                9756: 1
-              } [t] && r.push(e[t] = (e => new Promise(((t, r) => {
-                var a = m.miniCssF(e),
-                  o = m.p + a;
-                if (((e, t) => {
-                    for (var r = document.getElementsByTagName("link"), a = 0; a < r.length; a++) {
-                      var o = (c = r[a]).getAttribute("data-href") || c.getAttribute("href");
-                      if ("stylesheet" === c.rel && (o === e || o === t)) return c
+            l.f.miniCss = (a, r) => {
+              e[a] ? r.push(e[a]) : 0 !== e[a] && {
+                289: 1,
+                471: 1,
+                942: 1,
+                2151: 1,
+                2670: 1,
+                3401: 1,
+                3924: 1,
+                4281: 1,
+                5009: 1,
+                5053: 1,
+                5241: 1,
+                5535: 1,
+                8144: 1,
+                8676: 1,
+                9123: 1,
+                9965: 1
+              } [a] && r.push(e[a] = (e => new Promise(((a, r) => {
+                var t = l.miniCssF(e),
+                  f = l.p + t;
+                if (((e, a) => {
+                    for (var r = document.getElementsByTagName("link"), t = 0; t < r.length; t++) {
+                      var f = (d = r[t]).getAttribute("data-href") || d.getAttribute("href");
+                      if ("stylesheet" === d.rel && (f === e || f === a)) return d
                     }
-                    var d = document.getElementsByTagName("style");
-                    for (a = 0; a < d.length; a++) {
-                      var c;
-                      if ((o = (c = d[a]).getAttribute("data-href")) === e || o === t) return c
+                    var o = document.getElementsByTagName("style");
+                    for (t = 0; t < o.length; t++) {
+                      var d;
+                      if ((f = (d = o[t]).getAttribute("data-href")) === e || f === a) return d
                     }
-                  })(a, o)) return t();
-                ((e, t, r, a, o) => {
-                  var d = document.createElement("link");
-                  d.rel = "stylesheet", d.type = "text/css", d.onerror = d.onload = r => {
-                    if (d.onerror = d.onload = null, "load" === r.type) a();
+                  })(t, f)) return a();
+                ((e, a, r, t, f) => {
+                  var o = document.createElement("link");
+                  o.rel = "stylesheet", o.type = "text/css", o.onerror = o.onload = r => {
+                    if (o.onerror = o.onload = null, "load" === r.type) t();
                     else {
-                      var c = r && ("load" === r.type ? "missing" : r.type),
-                        n = r && r.target && r.target.href || t,
-                        f = new Error("Loading CSS chunk " + e + " failed.\n(" + n + ")");
-                      f.code = "CSS_CHUNK_LOAD_FAILED", f.type = c, f.request = n, d.parentNode && d.parentNode.removeChild(d), o(f)
+                      var d = r && ("load" === r.type ? "missing" : r.type),
+                        c = r && r.target && r.target.href || a,
+                        n = new Error("Loading CSS chunk " + e + " failed.\n(" + c + ")");
+                      n.code = "CSS_CHUNK_LOAD_FAILED", n.type = d, n.request = c, o.parentNode && o.parentNode.removeChild(o), f(n)
                     }
-                  }, d.href = t, document.head.appendChild(d)
-                })(e, o, 0, t, r)
-              })))(t).then((() => {
-                e[t] = 0
+                  }, o.href = a, document.head.appendChild(o)
+                })(e, f, 0, a, r)
+              })))(a).then((() => {
+                e[a] = 0
               }), (r => {
-                throw delete e[t], r
+                throw delete e[a], r
               })))
             }
           }
@@ -594,39 +520,39 @@ _global.SENTRY_RELEASE = {
           var e = {
             6947: 0
           };
-          m.f.j = (t, r) => {
-            var a = m.o(e, t) ? e[t] : void 0;
-            if (0 !== a)
-              if (a) r.push(a[2]);
-              else if (/^(1(156|403|879)|7(185|207|32|989)|94(15|93)|(2|84)07|8089)$/.test(t)) e[t] = 0;
+          l.f.j = (a, r) => {
+            var t = l.o(e, a) ? e[a] : void 0;
+            if (0 !== t)
+              if (t) r.push(t[2]);
+              else if (/^(5(009|241|9|966)|(17|61)88|2229|3924|4853|8676|942)$/.test(a)) e[a] = 0;
             else {
-              var o = new Promise(((r, o) => a = e[t] = [r, o]));
-              r.push(a[2] = o);
-              var d = m.p + m.u(t),
-                c = new Error;
-              m.l(d, (r => {
-                if (m.o(e, t) && (0 !== (a = e[t]) && (e[t] = void 0), a)) {
-                  var o = r && ("load" === r.type ? "missing" : r.type),
-                    d = r && r.target && r.target.src;
-                  c.message = "Loading chunk " + t + " failed.\n(" + o + ": " + d + ")", c.name = "ChunkLoadError", c.type = o, c.request = d, a[1](c)
+              var f = new Promise(((r, f) => t = e[a] = [r, f]));
+              r.push(t[2] = f);
+              var o = l.p + l.u(a),
+                d = new Error;
+              l.l(o, (r => {
+                if (l.o(e, a) && (0 !== (t = e[a]) && (e[a] = void 0), t)) {
+                  var f = r && ("load" === r.type ? "missing" : r.type),
+                    o = r && r.target && r.target.src;
+                  d.message = "Loading chunk " + a + " failed.\n(" + f + ": " + o + ")", d.name = "ChunkLoadError", d.type = f, d.request = o, t[1](d)
                 }
-              }), "chunk-" + t, t)
+              }), "chunk-" + a, a)
             }
           };
-          var t = (t, r) => {
-              var a, o, d = r[0],
-                c = r[1],
-                n = r[2],
-                f = 0;
-              if (d.some((t => 0 !== e[t]))) {
-                for (a in c) m.o(c, a) && (m.m[a] = c[a]);
-                n && n(m)
+          var a = (a, r) => {
+              var t, f, o = r[0],
+                d = r[1],
+                c = r[2],
+                n = 0;
+              if (o.some((a => 0 !== e[a]))) {
+                for (t in d) l.o(d, t) && (l.m[t] = d[t]);
+                c && c(l)
               }
-              for (t && t(r); f < d.length; f++) o = d[f], m.o(e, o) && e[o] && e[o][0](), e[o] = 0
+              for (a && a(r); n < o.length; n++) f = o[n], l.o(e, f) && e[f] && e[f][0](), e[f] = 0
             },
             r = self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || [];
-          r.forEach(t.bind(null, 0)), r.push = t.bind(null, r.push.bind(r))
-        })(), m.nc = void 0, m(32160), m(68623)
+          r.forEach(a.bind(null, 0)), r.push = a.bind(null, r.push.bind(r))
+        })(), l.nc = void 0, l(23787), l(55974)
       })())
     }
   }
