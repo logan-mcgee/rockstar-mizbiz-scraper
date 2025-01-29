@@ -19,14 +19,14 @@ _global.SENTRY_RELEASE = {
     3896: (o, t, e) => {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => _,
-        Lightbox_Close_Button_Tooltip: () => n,
+        Lightbox_Close_Button_Tooltip: () => a,
         Lightbox_Download_Button_Label: () => f,
         Lightbox_Download_Button_Tooltip: () => L,
         Lightbox_Open_Button_Label: () => r,
         Lightbox_Reset_Zoom_Button_Label: () => d,
         Lightbox_Reset_Zoom_Button_Tooltip: () => g,
-        Lightbox_Zoom_In_Button_Label: () => l,
-        Lightbox_Zoom_In_Button_Tooltip: () => a,
+        Lightbox_Zoom_In_Button_Label: () => n,
+        Lightbox_Zoom_In_Button_Tooltip: () => l,
         Lightbox_Zoom_Out_Button_Label: () => b,
         Lightbox_Zoom_Out_Button__Tooltip: () => i,
         Lightbox_Zoom_Slider_Label: () => s,
@@ -34,9 +34,9 @@ _global.SENTRY_RELEASE = {
         default: () => h
       });
       var _ = "ライトボックスを閉じる",
-        n = "{shortcut}を押す",
-        l = "ズームイン",
         a = "{shortcut}を押す",
+        n = "ズームイン",
+        l = "{shortcut}を押す",
         b = "ズームアウト",
         i = "{shortcut}を押す",
         d = "リセット",
@@ -48,9 +48,9 @@ _global.SENTRY_RELEASE = {
         r = "拡大する",
         h = {
           Lightbox_Close_Button_Label: _,
-          Lightbox_Close_Button_Tooltip: n,
-          Lightbox_Zoom_In_Button_Label: l,
-          Lightbox_Zoom_In_Button_Tooltip: a,
+          Lightbox_Close_Button_Tooltip: a,
+          Lightbox_Zoom_In_Button_Label: n,
+          Lightbox_Zoom_In_Button_Tooltip: l,
           Lightbox_Zoom_Out_Button_Label: b,
           Lightbox_Zoom_Out_Button__Tooltip: i,
           Lightbox_Reset_Zoom_Button_Label: d,

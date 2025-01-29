@@ -19,14 +19,14 @@ _global.SENTRY_RELEASE = {
     5265: (o, t, e) => {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => _,
-        Lightbox_Close_Button_Tooltip: () => i,
+        Lightbox_Close_Button_Tooltip: () => a,
         Lightbox_Download_Button_Label: () => r,
-        Lightbox_Download_Button_Tooltip: () => f,
-        Lightbox_Open_Button_Label: () => L,
+        Lightbox_Download_Button_Tooltip: () => L,
+        Lightbox_Open_Button_Label: () => f,
         Lightbox_Reset_Zoom_Button_Label: () => d,
         Lightbox_Reset_Zoom_Button_Tooltip: () => s,
-        Lightbox_Zoom_In_Button_Label: () => n,
-        Lightbox_Zoom_In_Button_Tooltip: () => a,
+        Lightbox_Zoom_In_Button_Label: () => i,
+        Lightbox_Zoom_In_Button_Tooltip: () => n,
         Lightbox_Zoom_Out_Button_Label: () => l,
         Lightbox_Zoom_Out_Button__Tooltip: () => b,
         Lightbox_Zoom_Slider_Label: () => u,
@@ -34,9 +34,9 @@ _global.SENTRY_RELEASE = {
         default: () => c
       });
       var _ = "Zamknij podgląd",
-        i = "Naciśnij {shortcut}",
-        n = "Powiększ",
         a = "Naciśnij {shortcut}",
+        i = "Powiększ",
+        n = "Naciśnij {shortcut}",
         l = "Pomniejsz",
         b = "Naciśnij {shortcut}",
         d = "Zresetuj",
@@ -44,13 +44,13 @@ _global.SENTRY_RELEASE = {
         u = "Poziom powiększenia",
         g = "{zoom}%",
         r = "Pobierz",
-        f = "Pobierz",
-        L = "Powiększ obraz",
+        L = "Pobierz",
+        f = "Powiększ obraz",
         c = {
           Lightbox_Close_Button_Label: _,
-          Lightbox_Close_Button_Tooltip: i,
-          Lightbox_Zoom_In_Button_Label: n,
-          Lightbox_Zoom_In_Button_Tooltip: a,
+          Lightbox_Close_Button_Tooltip: a,
+          Lightbox_Zoom_In_Button_Label: i,
+          Lightbox_Zoom_In_Button_Tooltip: n,
           Lightbox_Zoom_Out_Button_Label: l,
           Lightbox_Zoom_Out_Button__Tooltip: b,
           Lightbox_Reset_Zoom_Button_Label: d,
@@ -58,8 +58,8 @@ _global.SENTRY_RELEASE = {
           Lightbox_Zoom_Slider_Label: u,
           Lightbox_Zoom_Slider_Tooltip: g,
           Lightbox_Download_Button_Label: r,
-          Lightbox_Download_Button_Tooltip: f,
-          Lightbox_Open_Button_Label: L
+          Lightbox_Download_Button_Tooltip: L,
+          Lightbox_Open_Button_Label: f
         }
     }
   }

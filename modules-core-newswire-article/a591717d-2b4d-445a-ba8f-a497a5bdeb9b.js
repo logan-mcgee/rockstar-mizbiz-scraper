@@ -1,8 +1,8 @@
 ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      r = (new Error).stack;
-    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "a591717d-2b4d-445a-ba8f-a497a5bdeb9b", e._sentryDebugIdIdentifier = "sentry-dbid-a591717d-2b4d-445a-ba8f-a497a5bdeb9b")
+      a = (new Error).stack;
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "a591717d-2b4d-445a-ba8f-a497a5bdeb9b", e._sentryDebugIdIdentifier = "sentry-dbid-a591717d-2b4d-445a-ba8f-a497a5bdeb9b")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -16,39 +16,39 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
   [471, 8096, 8676], {
-    45356: (e, r, a) => {
-      var o = a(62229),
+    45356: (e, a, r) => {
+      var o = r(62229),
         d = Symbol.for("react.element"),
         n = Symbol.for("react.fragment"),
         t = Object.prototype.hasOwnProperty,
-        f = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        l = {
+        l = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        f = {
           key: !0,
           ref: !0,
           __self: !0,
           __source: !0
         };
 
-      function s(e, r, a) {
+      function s(e, a, r) {
         var o, n = {},
           s = null,
           _ = null;
-        for (o in void 0 !== a && (s = "" + a), void 0 !== r.key && (s = "" + r.key), void 0 !== r.ref && (_ = r.ref), r) t.call(r, o) && !l.hasOwnProperty(o) && (n[o] = r[o]);
+        for (o in void 0 !== r && (s = "" + r), void 0 !== a.key && (s = "" + a.key), void 0 !== a.ref && (_ = a.ref), a) t.call(a, o) && !f.hasOwnProperty(o) && (n[o] = a[o]);
         if (e && e.defaultProps)
-          for (o in r = e.defaultProps) void 0 === n[o] && (n[o] = r[o]);
+          for (o in a = e.defaultProps) void 0 === n[o] && (n[o] = a[o]);
         return {
           $$typeof: d,
           type: e,
           key: s,
           ref: _,
           props: n,
-          _owner: f.current
+          _owner: l.current
         }
       }
-      r.Fragment = n, r.jsx = s, r.jsxs = s
+      a.Fragment = n, a.jsx = s, a.jsxs = s
     },
-    98096: (e, r, a) => {
-      e.exports = a(45356)
+    98096: (e, a, r) => {
+      e.exports = r(45356)
     }
   }
 ]);

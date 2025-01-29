@@ -22,8 +22,8 @@ _global.SENTRY_RELEASE = {
       });
       var n = s(62229),
         t = s(85865),
-        d = s.n(t),
-        o = s(81788),
+        o = s.n(t),
+        d = s(81788),
         i = s(539),
         r = s(95966),
         l = s(36671),
@@ -34,8 +34,8 @@ _global.SENTRY_RELEASE = {
         u = s(72251),
         b = s(25469);
       var y = s(98096);
-      const p = (0, o.withIntl)((() => {
-        const e = (0, o.useIntl)(),
+      const p = (0, d.withIntl)((() => {
+        const e = (0, d.useIntl)(),
           a = (0, r.useLocale)(),
           [s, t] = ((0, r.useQueryParams)(), (0, n.useState)({})),
           {
@@ -75,7 +75,7 @@ _global.SENTRY_RELEASE = {
                 "aria-label": e.formatMessage(i.en.community_guidelines_image_alt_text)
               }), (0, y.jsx)("div", {
                 className: b.A.bodyContent,
-                children: (0, y.jsx)(d(), {
+                children: (0, y.jsx)(o(), {
                   renderInWrapper: !1,
                   jsx: p,
                   onError: e => {

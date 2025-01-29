@@ -21,8 +21,8 @@ _global.SENTRY_RELEASE = {
         o = Symbol.for("react.element"),
         a = Symbol.for("react.fragment"),
         l = Object.prototype.hasOwnProperty,
-        f = n.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        c = {
+        c = n.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        f = {
           key: !0,
           ref: !0,
           __self: !0,
@@ -33,7 +33,7 @@ _global.SENTRY_RELEASE = {
         var n, a = {},
           i = null,
           u = null;
-        for (n in void 0 !== r && (i = "" + r), void 0 !== t.key && (i = "" + t.key), void 0 !== t.ref && (u = t.ref), t) l.call(t, n) && !c.hasOwnProperty(n) && (a[n] = t[n]);
+        for (n in void 0 !== r && (i = "" + r), void 0 !== t.key && (i = "" + t.key), void 0 !== t.ref && (u = t.ref), t) l.call(t, n) && !f.hasOwnProperty(n) && (a[n] = t[n]);
         if (e && e.defaultProps)
           for (n in t = e.defaultProps) void 0 === a[n] && (a[n] = t[n]);
         return {
@@ -42,7 +42,7 @@ _global.SENTRY_RELEASE = {
           key: i,
           ref: u,
           props: a,
-          _owner: f.current
+          _owner: c.current
         }
       }
       t.Fragment = a, t.jsx = i, t.jsxs = i
@@ -55,9 +55,9 @@ _global.SENTRY_RELEASE = {
         C6: () => o,
         Cl: () => a,
         Tt: () => l,
-        YH: () => c,
+        YH: () => f,
         fX: () => i,
-        sH: () => f
+        sH: () => c
       });
       var n = function(e, t) {
         return n = Object.setPrototypeOf || {
@@ -96,35 +96,35 @@ _global.SENTRY_RELEASE = {
         return r
       }
 
-      function f(e, t, r, n) {
+      function c(e, t, r, n) {
         return new(r || (r = Promise))((function(o, a) {
           function l(e) {
             try {
-              c(n.next(e))
-            } catch (e) {
-              a(e)
-            }
-          }
-
-          function f(e) {
-            try {
-              c(n.throw(e))
+              f(n.next(e))
             } catch (e) {
               a(e)
             }
           }
 
           function c(e) {
+            try {
+              f(n.throw(e))
+            } catch (e) {
+              a(e)
+            }
+          }
+
+          function f(e) {
             var t;
             e.done ? o(e.value) : (t = e.value, t instanceof r ? t : new r((function(e) {
               e(t)
-            }))).then(l, f)
+            }))).then(l, c)
           }
-          c((n = n.apply(e, t || [])).next())
+          f((n = n.apply(e, t || [])).next())
         }))
       }
 
-      function c(e, t) {
+      function f(e, t) {
         var r, n, o, a, l = {
           label: 0,
           sent: function() {
@@ -135,67 +135,67 @@ _global.SENTRY_RELEASE = {
           ops: []
         };
         return a = {
-          next: f(0),
-          throw: f(1),
-          return: f(2)
+          next: c(0),
+          throw: c(1),
+          return: c(2)
         }, "function" == typeof Symbol && (a[Symbol.iterator] = function() {
           return this
         }), a;
 
-        function f(f) {
-          return function(c) {
-            return function(f) {
+        function c(c) {
+          return function(f) {
+            return function(c) {
               if (r) throw new TypeError("Generator is already executing.");
-              for (; a && (a = 0, f[0] && (l = 0)), l;) try {
-                if (r = 1, n && (o = 2 & f[0] ? n.return : f[0] ? n.throw || ((o = n.return) && o.call(n), 0) : n.next) && !(o = o.call(n, f[1])).done) return o;
-                switch (n = 0, o && (f = [2 & f[0], o.value]), f[0]) {
+              for (; a && (a = 0, c[0] && (l = 0)), l;) try {
+                if (r = 1, n && (o = 2 & c[0] ? n.return : c[0] ? n.throw || ((o = n.return) && o.call(n), 0) : n.next) && !(o = o.call(n, c[1])).done) return o;
+                switch (n = 0, o && (c = [2 & c[0], o.value]), c[0]) {
                   case 0:
                   case 1:
-                    o = f;
+                    o = c;
                     break;
                   case 4:
                     return l.label++, {
-                      value: f[1],
+                      value: c[1],
                       done: !1
                     };
                   case 5:
-                    l.label++, n = f[1], f = [0];
+                    l.label++, n = c[1], c = [0];
                     continue;
                   case 7:
-                    f = l.ops.pop(), l.trys.pop();
+                    c = l.ops.pop(), l.trys.pop();
                     continue;
                   default:
-                    if (!((o = (o = l.trys).length > 0 && o[o.length - 1]) || 6 !== f[0] && 2 !== f[0])) {
+                    if (!((o = (o = l.trys).length > 0 && o[o.length - 1]) || 6 !== c[0] && 2 !== c[0])) {
                       l = 0;
                       continue
                     }
-                    if (3 === f[0] && (!o || f[1] > o[0] && f[1] < o[3])) {
-                      l.label = f[1];
+                    if (3 === c[0] && (!o || c[1] > o[0] && c[1] < o[3])) {
+                      l.label = c[1];
                       break
                     }
-                    if (6 === f[0] && l.label < o[1]) {
-                      l.label = o[1], o = f;
+                    if (6 === c[0] && l.label < o[1]) {
+                      l.label = o[1], o = c;
                       break
                     }
                     if (o && l.label < o[2]) {
-                      l.label = o[2], l.ops.push(f);
+                      l.label = o[2], l.ops.push(c);
                       break
                     }
                     o[2] && l.ops.pop(), l.trys.pop();
                     continue
                 }
-                f = t.call(e, l)
+                c = t.call(e, l)
               } catch (e) {
-                f = [6, e], n = 0
+                c = [6, e], n = 0
               } finally {
                 r = o = 0
               }
-              if (5 & f[0]) throw f[1];
+              if (5 & c[0]) throw c[1];
               return {
-                value: f[0] ? f[1] : void 0,
+                value: c[0] ? c[1] : void 0,
                 done: !0
               }
-            }([f, c])
+            }([c, f])
           }
         }
       }

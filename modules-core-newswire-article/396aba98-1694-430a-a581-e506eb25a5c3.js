@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "ee33dc00-8378-4374-90dd-5f7d89f397b7", e._sentryDebugIdIdentifier = "sentry-dbid-ee33dc00-8378-4374-90dd-5f7d89f397b7")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "396aba98-1694-430a-a581-e506eb25a5c3", e._sentryDebugIdIdentifier = "sentry-dbid-396aba98-1694-430a-a581-e506eb25a5c3")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -27,7 +27,7 @@ _global.SENTRY_RELEASE = {
         i = a(98096);
       const o = (0, n.setContextItem)({
           context: (0, l.createContext)(),
-          key: "tinaParser"
+          key: "tinaPayloadContext"
         }),
         {
           Provider: r
@@ -132,7 +132,7 @@ _global.SENTRY_RELEASE = {
         Y4: () => de,
         f6: () => ce,
         KO: () => me,
-        CT: () => fe,
+        CT: () => he,
         pr: () => ve,
         Xt: () => Se,
         ho: () => ye,
@@ -317,13 +317,13 @@ _global.SENTRY_RELEASE = {
           description: "Distance from left for LAYERS (recommended to use %)",
           component: "text"
         },
-        f = {
+        h = {
           label: "Right",
           name: "right",
           description: "Distance from right for LAYERS (recommended to use %)",
           component: "text"
         },
-        h = {
+        f = {
           label: "Bottom",
           name: "bottom",
           description: "Distance from bottom for LAYERS (recommended to use %)",
@@ -790,9 +790,9 @@ _global.SENTRY_RELEASE = {
             }, {
               ...g
             }, {
-              ...f
-            }, {
               ...h
+            }, {
+              ...f
             }, {
               ...v
             }, {
@@ -1148,7 +1148,7 @@ _global.SENTRY_RELEASE = {
           name: "style.--linear-gradient",
           component: "text"
         }],
-        fe = e => {
+        he = e => {
           let {
             game: t = null,
             label: a = "Image Configuration"
@@ -1266,8 +1266,8 @@ _global.SENTRY_RELEASE = {
           }
         };
       a(81788);
-      var he = a(2942);
-      (0, he.cG)("Background Image Gradient"), (0, he.ri)("Background Image Gradient"), (0, he.cG)("Background Image Gradient");
+      var fe = a(2942);
+      (0, fe.cG)("Background Image Gradient"), (0, fe.ri)("Background Image Gradient"), (0, fe.cG)("Background Image Gradient");
       const ve = () => ({
           name: "impressionTracking",
           label: "Impression Tracking",
@@ -1298,7 +1298,7 @@ _global.SENTRY_RELEASE = {
             label: "Title",
             name: "title",
             component: "text"
-          }), fe({
+          }), he({
             game: t,
             label: "Image Sources"
           })];
@@ -1450,7 +1450,7 @@ _global.SENTRY_RELEASE = {
           error: b,
           children: g
         } = e;
-        const f = () => r ? (0, i.jsx)(n.c, {
+        const h = () => r ? (0, i.jsx)(n.c, {
           defaultSize: {
             width: a || "100%",
             height: o || "500px"
@@ -1470,7 +1470,7 @@ _global.SENTRY_RELEASE = {
               className: "rockstargames-modules-core-newswire-articlea0b2c6a5b66b849b487834caa1f6e3c8 FieldDescription-sc-custom cyKzVM",
               children: u ?? s?.description
             })]
-          }), (0, i.jsx)(f, {}), (b || c?.error) && (0, i.jsx)("div", {
+          }), (0, i.jsx)(h, {}), (b || c?.error) && (0, i.jsx)("div", {
             className: "FieldError_sc_custom",
             children: b ?? c?.error
           })]

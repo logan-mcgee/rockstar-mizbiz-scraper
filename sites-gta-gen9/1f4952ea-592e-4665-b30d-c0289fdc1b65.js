@@ -26,7 +26,7 @@ _global.SENTRY_RELEASE = {
         Content: () => be,
         Header: () => pe,
         Item: () => fe,
-        Root: () => ue,
+        Root: () => de,
         Trigger: () => me,
         createAccordionScope: () => F
       });
@@ -98,7 +98,7 @@ _global.SENTRY_RELEASE = {
       var i = t(95362),
         s = t(39447);
 
-      function d(e, n, {
+      function u(e, n, {
         checkForDefaultPrevented: t = !0
       } = {}) {
         return function(o) {
@@ -106,7 +106,7 @@ _global.SENTRY_RELEASE = {
         }
       }
 
-      function u(e) {
+      function d(e) {
         const n = (0, r.useRef)(e);
         return (0, r.useEffect)((() => {
           n.current = e
@@ -128,14 +128,14 @@ _global.SENTRY_RELEASE = {
           const t = (0, r.useState)(e),
             [o] = t,
             a = (0, r.useRef)(o),
-            l = u(n);
+            l = d(n);
           return (0, r.useEffect)((() => {
             a.current !== o && (l(o), a.current = o)
           }), [o, a, l]), t
         }({
           defaultProp: n,
           onChange: t
-        }), l = void 0 !== e, c = l ? e : o, i = u(t);
+        }), l = void 0 !== e, c = l ? e : o, i = d(t);
         return [c, (0, r.useCallback)((n => {
           if (l) {
             const t = "function" == typeof n ? n(e) : n;
@@ -234,7 +234,7 @@ _global.SENTRY_RELEASE = {
             disabled: c,
             onOpenChange: i,
             ...s
-          } = e, [d = !1, u] = f({
+          } = e, [u = !1, d] = f({
             prop: a,
             defaultProp: l,
             onChange: i
@@ -243,10 +243,10 @@ _global.SENTRY_RELEASE = {
             scope: t,
             disabled: c,
             contentId: w(),
-            open: d,
-            onOpenToggle: (0, r.useCallback)((() => u((e => !e))), [u])
+            open: u,
+            onOpenToggle: (0, r.useCallback)((() => d((e => !e))), [d])
           }, (0, r.createElement)(p.sG.div, (0, o.A)({
-            "data-state": x(d),
+            "data-state": x(u),
             "data-disabled": c ? "" : void 0
           }, s, {
             ref: n
@@ -266,7 +266,7 @@ _global.SENTRY_RELEASE = {
             disabled: l.disabled
           }, a, {
             ref: n,
-            onClick: d(e.onClick, l.onOpenToggle)
+            onClick: u(e.onClick, l.onOpenToggle)
           }))
         })),
         k = "CollapsibleContent",
@@ -290,7 +290,7 @@ _global.SENTRY_RELEASE = {
             present: a,
             children: l,
             ...c
-          } = e, s = I(k, t), [d, u] = (0, r.useState)(a), f = (0, r.useRef)(null), b = (0, i.s)(n, f), g = (0, r.useRef)(0), v = g.current, y = (0, r.useRef)(0), h = y.current, E = s.open || d, A = (0, r.useRef)(E), w = (0, r.useRef)();
+          } = e, s = I(k, t), [u, d] = (0, r.useState)(a), f = (0, r.useRef)(null), b = (0, i.s)(n, f), g = (0, r.useRef)(0), v = g.current, y = (0, r.useRef)(0), h = y.current, E = s.open || u, A = (0, r.useRef)(E), w = (0, r.useRef)();
           return (0, r.useEffect)((() => {
             const e = requestAnimationFrame((() => A.current = !1));
             return () => cancelAnimationFrame(e)
@@ -302,7 +302,7 @@ _global.SENTRY_RELEASE = {
                 animationName: e.style.animationName
               }, e.style.transitionDuration = "0s", e.style.animationName = "none";
               const n = e.getBoundingClientRect();
-              g.current = n.height, y.current = n.width, A.current || (e.style.transitionDuration = w.current.transitionDuration, e.style.animationName = w.current.animationName), u(a)
+              g.current = n.height, y.current = n.width, A.current || (e.style.transitionDuration = w.current.transitionDuration, e.style.animationName = w.current.animationName), d(a)
             }
           }), [s.open, a]), (0, r.createElement)(p.sG.div, (0, o.A)({
             "data-state": x(s.open),
@@ -337,8 +337,8 @@ _global.SENTRY_RELEASE = {
               },
               itemMap: new Map
             }),
-            d = e + "CollectionSlot",
-            u = e + "CollectionItemSlot",
+            u = e + "CollectionSlot",
+            d = e + "CollectionItemSlot",
             f = "data-radix-collection-item";
           return [{
             Provider: e => {
@@ -356,7 +356,7 @@ _global.SENTRY_RELEASE = {
               const {
                 scope: t,
                 children: o
-              } = e, a = c(d, t), l = (0, i.s)(n, a.collectionRef);
+              } = e, a = c(u, t), l = (0, i.s)(n, a.collectionRef);
               return r.createElement(s.DX, {
                 ref: l
               }, o)
@@ -366,7 +366,7 @@ _global.SENTRY_RELEASE = {
                 scope: t,
                 children: o,
                 ...a
-              } = e, l = r.useRef(null), d = (0, i.s)(n, l), p = c(u, t);
+              } = e, l = r.useRef(null), u = (0, i.s)(n, l), p = c(d, t);
               return r.useEffect((() => (p.itemMap.set(l, {
                 ref: l,
                 ...a
@@ -374,7 +374,7 @@ _global.SENTRY_RELEASE = {
                 p.itemMap.delete(l)
               }))), r.createElement(s.DX, {
                 [f]: "",
-                ref: d
+                ref: u
               }, o)
             }))
           }, function(n) {
@@ -417,7 +417,7 @@ _global.SENTRY_RELEASE = {
           onValueChange: l = (() => {}),
           collapsible: c = !1,
           ...i
-        } = e, [s, d] = f({
+        } = e, [s, u] = f({
           prop: t,
           defaultProp: a,
           onChange: l
@@ -425,8 +425,8 @@ _global.SENTRY_RELEASE = {
         return r.createElement(z, {
           scope: e.__scopeAccordion,
           value: s ? [s] : [],
-          onItemOpen: d,
-          onItemClose: r.useCallback((() => c && d("")), [c, d])
+          onItemOpen: u,
+          onItemClose: r.useCallback((() => c && u("")), [c, u])
         }, r.createElement(Y, {
           scope: e.__scopeAccordion,
           collapsible: c
@@ -443,12 +443,12 @@ _global.SENTRY_RELEASE = {
           prop: t,
           defaultProp: a,
           onChange: l
-        }), d = r.useCallback((e => s(((n = []) => [...n, e]))), [s]), u = r.useCallback((e => s(((n = []) => n.filter((n => n !== e))))), [s]);
+        }), u = r.useCallback((e => s(((n = []) => [...n, e]))), [s]), d = r.useCallback((e => s(((n = []) => n.filter((n => n !== e))))), [s]);
         return r.createElement(z, {
           scope: e.__scopeAccordion,
           value: i,
-          onItemOpen: d,
-          onItemClose: u
+          onItemOpen: u,
+          onItemClose: d
         }, r.createElement(Y, {
           scope: e.__scopeAccordion,
           collapsible: !0
@@ -462,10 +462,10 @@ _global.SENTRY_RELEASE = {
           dir: l,
           orientation: c = "vertical",
           ...s
-        } = e, u = r.useRef(null), f = (0, i.s)(u, n), m = j(t), b = "ltr" === function(e) {
+        } = e, d = r.useRef(null), f = (0, i.s)(d, n), m = j(t), b = "ltr" === function(e) {
           const n = (0, r.useContext)(L);
           return e || n || "ltr"
-        }(l), g = d(e.onKeyDown, (e => {
+        }(l), g = u(e.onKeyDown, (e => {
           var n;
           if (!$.includes(e.key)) return;
           const t = e.target,
@@ -482,7 +482,7 @@ _global.SENTRY_RELEASE = {
             s = () => {
               l = r + 1, l > i && (l = 0)
             },
-            d = () => {
+            u = () => {
               l = r - 1, l < 0 && (l = i)
             };
           switch (e.key) {
@@ -493,16 +493,16 @@ _global.SENTRY_RELEASE = {
               l = i;
               break;
             case "ArrowRight":
-              "horizontal" === c && (b ? s() : d());
+              "horizontal" === c && (b ? s() : u());
               break;
             case "ArrowDown":
               "vertical" === c && s();
               break;
             case "ArrowLeft":
-              "horizontal" === c && (b ? d() : s());
+              "horizontal" === c && (b ? u() : s());
               break;
             case "ArrowUp":
-              "vertical" === c && d()
+              "vertical" === c && u()
           }
           null === (n = o[l % a].ref.current) || void 0 === n || n.focus()
         }));
@@ -523,19 +523,19 @@ _global.SENTRY_RELEASE = {
           __scopeAccordion: t,
           value: a,
           ...l
-        } = e, c = ee(te, t), i = K(te, t), s = X(t), d = w(), u = a && i.value.includes(a) || !1, f = c.disabled || e.disabled;
+        } = e, c = ee(te, t), i = K(te, t), s = X(t), u = w(), d = a && i.value.includes(a) || !1, f = c.disabled || e.disabled;
         return r.createElement(oe, {
           scope: t,
-          open: u,
+          open: d,
           disabled: f,
-          triggerId: d
+          triggerId: u
         }, r.createElement(D, (0, o.A)({
           "data-orientation": c.orientation,
-          "data-state": de(u)
+          "data-state": ue(d)
         }, s, l, {
           ref: n,
           disabled: f,
-          open: u,
+          open: d,
           onOpenChange: e => {
             e ? i.onItemOpen(a) : i.onItemClose(a)
           }
@@ -547,7 +547,7 @@ _global.SENTRY_RELEASE = {
         } = e, l = ee(V, t), c = re("AccordionHeader", t);
         return r.createElement(p.sG.h3, (0, o.A)({
           "data-orientation": l.orientation,
-          "data-state": de(c.open),
+          "data-state": ue(c.open),
           "data-disabled": c.disabled ? "" : void 0
         }, a, {
           ref: n
@@ -585,10 +585,10 @@ _global.SENTRY_RELEASE = {
         }))
       }));
 
-      function de(e) {
+      function ue(e) {
         return e ? "open" : "closed"
       }
-      const ue = q,
+      const de = q,
         fe = ae,
         pe = le,
         me = ie,
@@ -667,7 +667,7 @@ _global.SENTRY_RELEASE = {
           ...o
         } = e;
         return (0, r.isValidElement)(t) ? (0, r.cloneElement)(t, {
-          ...d(o, t.props),
+          ...u(o, t.props),
           ref: n ? (0, a.t)(n, t.ref) : t.ref
         }) : r.Children.count(t) > 1 ? r.Children.only(null) : null
       }));
@@ -680,7 +680,7 @@ _global.SENTRY_RELEASE = {
         return (0, r.isValidElement)(e) && e.type === i
       }
 
-      function d(e, n) {
+      function u(e, n) {
         const t = {
           ...n
         };

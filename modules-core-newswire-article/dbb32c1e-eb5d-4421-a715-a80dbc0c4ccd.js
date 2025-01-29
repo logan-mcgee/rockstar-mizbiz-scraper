@@ -32,7 +32,7 @@ _global.SENTRY_RELEASE = {
         PctBar: () => $
       });
       var l = n(30745);
-      const o = {
+      const a = {
         gtao: "Grand Theft Auto Online",
         gtav: "Grand Theft Auto V",
         gtaplus: "GTA+",
@@ -76,11 +76,11 @@ _global.SENTRY_RELEASE = {
         warriors: "Warriors",
         lossantoscustoms: "Los Santos Customs"
       };
-      Object.keys(o).map((e => ({
+      Object.keys(a).map((e => ({
         value: e,
-        label: o[e]
+        label: a[e]
       })));
-      var a = n(13916),
+      var o = n(13916),
         i = n(98096);
       const s = function() {
           let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "";
@@ -149,12 +149,12 @@ _global.SENTRY_RELEASE = {
           let {
             game: t = null,
             label: n = "Image",
-            description: o = ""
+            description: a = ""
           } = e;
           return {
             name: "imageWithBadge",
             label: n,
-            description: o,
+            description: a,
             component: "group",
             fields: [(0, l.om)(), (0, l.CT)({
               game: t
@@ -202,8 +202,8 @@ _global.SENTRY_RELEASE = {
             game: t = null,
             parent: n = null
           } = e;
-          const o = [(0, l.om)()];
-          return "gtao" !== t && "gtav" !== t || o.push({
+          const a = [(0, l.om)()];
+          return "gtao" !== t && "gtav" !== t || a.push({
             name: "starColor",
             label: "Star Color",
             description: 'If "none", it will use default bullet styles',
@@ -251,7 +251,7 @@ _global.SENTRY_RELEASE = {
               value: "gtaplus",
               label: "GTA+ Icon"
             }]
-          }), o.push((0, l.z9)({
+          }), a.push((0, l.z9)({
             label: "Title",
             name: "title",
             component: "text"
@@ -276,7 +276,7 @@ _global.SENTRY_RELEASE = {
             name: "unorderedList",
             label: "Unordered List",
             component: "group",
-            fields: o,
+            fields: a,
             defaultItem: () => (0, l.Q)({
               content: p.A,
               columns: 1,
@@ -767,12 +767,12 @@ _global.SENTRY_RELEASE = {
               name: "backgroundImg",
               label: "Background Image",
               component: "image",
-              uploadDir: a.XC
+              uploadDir: o.XC
             }, {
               name: "layeredImg",
               label: "Layered Image",
               component: "image",
-              uploadDir: a.XC
+              uploadDir: o.XC
             }]
           }, {
             name: "perPage",
@@ -817,7 +817,7 @@ _global.SENTRY_RELEASE = {
           let {
             game: t = null,
             parent: n = null,
-            post: o = null
+            post: a = null
           } = e;
           return {
             label: "Lead Image Asset",
@@ -878,11 +878,11 @@ _global.SENTRY_RELEASE = {
           let {
             defaults: t = {},
             templates: n = {},
-            itemsDescription: o = ""
+            itemsDescription: a = ""
           } = e;
-          const a = [{
+          const o = [{
             label: "Items",
-            description: o,
+            description: a,
             name: l.ZH,
             component: "blocks",
             templates: n
@@ -904,8 +904,8 @@ _global.SENTRY_RELEASE = {
           return {
             label: "Title",
             component: "group",
-            fields: [...a, (0, l.Zn)({
-              fields: a
+            fields: [...o, (0, l.Zn)({
+              fields: o
             })],
             defaultItem: () => (0, l.Q)({
               style: t?.style ?? {}
@@ -949,7 +949,7 @@ _global.SENTRY_RELEASE = {
         OD: () => i,
         lv: () => s,
         pP: () => d,
-        wC: () => o,
+        wC: () => a,
         PE: () => v,
         rB: () => m,
         yh: () => h,
@@ -977,7 +977,7 @@ _global.SENTRY_RELEASE = {
             };
           document.addEventListener("scroll", l)
         },
-        o = function() {
+        a = function() {
           let {
             paramName: e = "section"
           } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
@@ -985,9 +985,9 @@ _global.SENTRY_RELEASE = {
             n = document.getElementById(t.get(e) || e);
           n && (l({
             element: n
-          }), a(n))
+          }), o(n))
         },
-        a = e => {
+        o = e => {
           const t = ["a", "button", "input", "textarea", "select", "details", '[tabindex]:not([tabindex="-1"])'];
           if (t.includes(e.nodeName.toLowerCase())) e.focus();
           else {
@@ -1038,8 +1038,8 @@ _global.SENTRY_RELEASE = {
           const t = document.cookie.split("; "),
             n = `${e}=`,
             l = t.find((e => e.startsWith(n))),
-            o = l?.substring(n.length, l.length);
-          return o
+            a = l?.substring(n.length, l.length);
+          return a
         },
         p = (e, t) => {
           e && void 0 !== t && (0, c.canStoreCookie)(e) && u(e) !== t && (document.cookie = `${e}=${t}; domain=${(()=>{const e=window.location.hostname.split(".");return e.slice(e.length-2).join(".")})()}; path=/;`)

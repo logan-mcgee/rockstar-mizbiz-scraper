@@ -16,33 +16,33 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_gta_gen9 = self.webpackChunk_rockstargames_sites_gta_gen9 || []).push([
   [9394, 7013], {
-    67013: (e, n, t) => {
-      t.r(n), t.d(n, {
+    67013: (e, n, a) => {
+      a.r(n), a.d(n, {
         useGSAP: () => c
       });
-      var d = t(62229),
-        a = t(13581),
-        f = t.n(a);
-      let o = "undefined" != typeof window ? d.useLayoutEffect : d.useEffect,
-        s = e => e && !Array.isArray(e) && "object" == typeof e,
+      var t = a(62229),
+        d = a(13581),
+        o = a.n(d);
+      let s = "undefined" != typeof window ? t.useLayoutEffect : t.useEffect,
+        f = e => e && !Array.isArray(e) && "object" == typeof e,
         r = [],
         l = {},
-        i = f();
+        i = o();
       const c = function(e) {
         let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r,
-          t = l;
-        s(e) ? (t = e, e = null, n = "dependencies" in t ? t.dependencies : r) : s(n) && (t = n, n = "dependencies" in t ? t.dependencies : r);
+          a = l;
+        f(e) ? (a = e, e = null, n = "dependencies" in a ? a.dependencies : r) : f(n) && (a = n, n = "dependencies" in a ? a.dependencies : r);
         let {
-          scope: a,
-          revertOnUpdate: f
-        } = t, [c, u] = (0, d.useState)(!1);
+          scope: d,
+          revertOnUpdate: o
+        } = a, [c, u] = (0, t.useState)(!1);
         e && "function" != typeof e && console.warn("First parameter must be a function or config object");
-        const g = i.context((() => {}), a),
+        const g = i.context((() => {}), d),
           b = () => g.revert(),
-          y = n && n.length && !f;
-        return o((() => {
-          if (e && g.add(e, a), !y || !c) return b
-        }), n), y && o((() => (u(!0), b)), r), {
+          y = n && n.length && !o;
+        return s((() => {
+          if (e && g.add(e, d), !y || !c) return b
+        }), n), y && s((() => (u(!0), b)), r), {
           context: g,
           contextSafe: e => g.add(null, e)
         }

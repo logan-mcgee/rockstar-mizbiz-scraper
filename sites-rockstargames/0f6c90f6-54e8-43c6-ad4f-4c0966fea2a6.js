@@ -20,8 +20,8 @@ _global.SENTRY_RELEASE = {
       var n = r(62229),
         o = Symbol.for("react.element"),
         a = Symbol.for("react.fragment"),
-        f = Object.prototype.hasOwnProperty,
-        l = n.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        l = Object.prototype.hasOwnProperty,
+        f = n.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         c = {
           key: !0,
           ref: !0,
@@ -33,7 +33,7 @@ _global.SENTRY_RELEASE = {
         var n, a = {},
           s = null,
           i = null;
-        for (n in void 0 !== r && (s = "" + r), void 0 !== t.key && (s = "" + t.key), void 0 !== t.ref && (i = t.ref), t) f.call(t, n) && !c.hasOwnProperty(n) && (a[n] = t[n]);
+        for (n in void 0 !== r && (s = "" + r), void 0 !== t.key && (s = "" + t.key), void 0 !== t.ref && (i = t.ref), t) l.call(t, n) && !c.hasOwnProperty(n) && (a[n] = t[n]);
         if (e && e.defaultProps)
           for (n in t = e.defaultProps) void 0 === a[n] && (a[n] = t[n]);
         return {
@@ -42,7 +42,7 @@ _global.SENTRY_RELEASE = {
           key: s,
           ref: i,
           props: a,
-          _owner: l.current
+          _owner: f.current
         }
       }
       t.Fragment = a, t.jsx = s, t.jsxs = s
@@ -54,10 +54,10 @@ _global.SENTRY_RELEASE = {
       r.d(t, {
         C6: () => o,
         Cl: () => a,
-        Tt: () => f,
+        Tt: () => l,
         YH: () => c,
         fX: () => s,
-        sH: () => l
+        sH: () => f
       });
       var n = function(e, t) {
         return n = Object.setPrototypeOf || {
@@ -86,7 +86,7 @@ _global.SENTRY_RELEASE = {
         }, a.apply(this, arguments)
       };
 
-      function f(e, t) {
+      function l(e, t) {
         var r = {};
         for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (r[n] = e[n]);
         if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -96,9 +96,9 @@ _global.SENTRY_RELEASE = {
         return r
       }
 
-      function l(e, t, r, n) {
+      function f(e, t, r, n) {
         return new(r || (r = Promise))((function(o, a) {
-          function f(e) {
+          function l(e) {
             try {
               c(n.next(e))
             } catch (e) {
@@ -106,7 +106,7 @@ _global.SENTRY_RELEASE = {
             }
           }
 
-          function l(e) {
+          function f(e) {
             try {
               c(n.throw(e))
             } catch (e) {
@@ -118,14 +118,14 @@ _global.SENTRY_RELEASE = {
             var t;
             e.done ? o(e.value) : (t = e.value, t instanceof r ? t : new r((function(e) {
               e(t)
-            }))).then(f, l)
+            }))).then(l, f)
           }
           c((n = n.apply(e, t || [])).next())
         }))
       }
 
       function c(e, t) {
-        var r, n, o, a, f = {
+        var r, n, o, a, l = {
           label: 0,
           sent: function() {
             if (1 & o[0]) throw o[1];
@@ -135,67 +135,67 @@ _global.SENTRY_RELEASE = {
           ops: []
         };
         return a = {
-          next: l(0),
-          throw: l(1),
-          return: l(2)
+          next: f(0),
+          throw: f(1),
+          return: f(2)
         }, "function" == typeof Symbol && (a[Symbol.iterator] = function() {
           return this
         }), a;
 
-        function l(l) {
+        function f(f) {
           return function(c) {
-            return function(l) {
+            return function(f) {
               if (r) throw new TypeError("Generator is already executing.");
-              for (; a && (a = 0, l[0] && (f = 0)), f;) try {
-                if (r = 1, n && (o = 2 & l[0] ? n.return : l[0] ? n.throw || ((o = n.return) && o.call(n), 0) : n.next) && !(o = o.call(n, l[1])).done) return o;
-                switch (n = 0, o && (l = [2 & l[0], o.value]), l[0]) {
+              for (; a && (a = 0, f[0] && (l = 0)), l;) try {
+                if (r = 1, n && (o = 2 & f[0] ? n.return : f[0] ? n.throw || ((o = n.return) && o.call(n), 0) : n.next) && !(o = o.call(n, f[1])).done) return o;
+                switch (n = 0, o && (f = [2 & f[0], o.value]), f[0]) {
                   case 0:
                   case 1:
-                    o = l;
+                    o = f;
                     break;
                   case 4:
-                    return f.label++, {
-                      value: l[1],
+                    return l.label++, {
+                      value: f[1],
                       done: !1
                     };
                   case 5:
-                    f.label++, n = l[1], l = [0];
+                    l.label++, n = f[1], f = [0];
                     continue;
                   case 7:
-                    l = f.ops.pop(), f.trys.pop();
+                    f = l.ops.pop(), l.trys.pop();
                     continue;
                   default:
-                    if (!((o = (o = f.trys).length > 0 && o[o.length - 1]) || 6 !== l[0] && 2 !== l[0])) {
-                      f = 0;
+                    if (!((o = (o = l.trys).length > 0 && o[o.length - 1]) || 6 !== f[0] && 2 !== f[0])) {
+                      l = 0;
                       continue
                     }
-                    if (3 === l[0] && (!o || l[1] > o[0] && l[1] < o[3])) {
-                      f.label = l[1];
+                    if (3 === f[0] && (!o || f[1] > o[0] && f[1] < o[3])) {
+                      l.label = f[1];
                       break
                     }
-                    if (6 === l[0] && f.label < o[1]) {
-                      f.label = o[1], o = l;
+                    if (6 === f[0] && l.label < o[1]) {
+                      l.label = o[1], o = f;
                       break
                     }
-                    if (o && f.label < o[2]) {
-                      f.label = o[2], f.ops.push(l);
+                    if (o && l.label < o[2]) {
+                      l.label = o[2], l.ops.push(f);
                       break
                     }
-                    o[2] && f.ops.pop(), f.trys.pop();
+                    o[2] && l.ops.pop(), l.trys.pop();
                     continue
                 }
-                l = t.call(e, f)
+                f = t.call(e, l)
               } catch (e) {
-                l = [6, e], n = 0
+                f = [6, e], n = 0
               } finally {
                 r = o = 0
               }
-              if (5 & l[0]) throw l[1];
+              if (5 & f[0]) throw f[1];
               return {
-                value: l[0] ? l[1] : void 0,
+                value: f[0] ? f[1] : void 0,
                 done: !0
               }
-            }([l, c])
+            }([f, c])
           }
         }
       }

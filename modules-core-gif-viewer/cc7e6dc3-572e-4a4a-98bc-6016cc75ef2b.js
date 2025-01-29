@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       n = (new Error).stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "73cb6f6c-675c-451d-9883-fd7c79a4e293", e._sentryDebugIdIdentifier = "sentry-dbid-73cb6f6c-675c-451d-9883-fd7c79a4e293")
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "cc7e6dc3-572e-4a4a-98bc-6016cc75ef2b", e._sentryDebugIdIdentifier = "sentry-dbid-cc7e6dc3-572e-4a4a-98bc-6016cc75ef2b")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -16,12 +16,12 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_gif_viewer = self.webpackChunk_rockstargames_modules_core_gif_viewer || []).push([
   [799], {
-    5138: (e, n, i) => {
+    5138: (e, n, a) => {
       "use strict";
-      i.d(n, {
+      a.d(n, {
         A: () => t
       });
-      const a = [{
+      const i = [{
           id: "prod",
           sites: {
             www: "www",
@@ -35,13 +35,13 @@ _global.SENTRY_RELEASE = {
           let e;
           const {
             location: n
-          } = window, i = n.hostname.substring(0, n.hostname.indexOf(".rockstargames.com")), t = a.findIndex((n => Object.entries(n.sites).findIndex((n => {
-            let [a, t] = n;
-            return t === i && (e = {
-              site: a,
+          } = window, a = n.hostname.substring(0, n.hostname.indexOf(".rockstargames.com")), t = i.findIndex((n => Object.entries(n.sites).findIndex((n => {
+            let [i, t] = n;
+            return t === a && (e = {
+              site: i,
               subDomain: t
             }, !0)
-          })) >= 0)), o = a[t >= 0 ? t : 0];
+          })) >= 0)), o = i[t >= 0 ? t : 0];
           return e || (e = {
             site: "www",
             subDomain: "local"
@@ -51,9 +51,9 @@ _global.SENTRY_RELEASE = {
           }
         }
     },
-    1207: (e, n, i) => {
+    1207: (e, n, a) => {
       "use strict";
-      i.d(n, {
+      a.d(n, {
         OD: () => l,
         lv: () => r,
         pP: () => c,
@@ -61,54 +61,54 @@ _global.SENTRY_RELEASE = {
         PE: () => g,
         rB: () => d,
         yh: () => v,
-        Ap: () => f,
+        Ap: () => m,
         Xs: () => k,
         kx: () => b,
         rJ: () => y,
         pT: () => p,
         lV: () => w,
-        PA: () => a,
-        My: () => m
-      }), i(1999);
-      const a = e => {
+        PA: () => i,
+        My: () => f
+      }), a(1999);
+      const i = e => {
           let {
             element: n
           } = e;
-          const i = setInterval((() => n.scrollIntoView({
+          const a = setInterval((() => n.scrollIntoView({
               behavior: "smooth",
               block: "center",
               inline: "center"
             })), 100),
-            a = e => {
-              e.target === document && (clearInterval(i), document.removeEventListener("scroll", a))
+            i = e => {
+              e.target === document && (clearInterval(a), document.removeEventListener("scroll", i))
             };
-          document.addEventListener("scroll", a)
+          document.addEventListener("scroll", i)
         },
         t = function() {
           let {
             paramName: e = "section"
           } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
           const n = new URLSearchParams(document.location.search),
-            i = document.getElementById(n.get(e) || e);
-          i && (a({
-            element: i
-          }), o(i))
+            a = document.getElementById(n.get(e) || e);
+          a && (i({
+            element: a
+          }), o(a))
         },
         o = e => {
           const n = ["a", "button", "input", "textarea", "select", "details", '[tabindex]:not([tabindex="-1"])'];
           if (n.includes(e.nodeName.toLowerCase())) e.focus();
           else {
-            const i = e?.querySelectorAll(n.join(", "));
-            if (i?.length) {
-              const e = [...i].find((e => !e?.hasAttribute("disabled")));
+            const a = e?.querySelectorAll(n.join(", "));
+            if (a?.length) {
+              const e = [...a].find((e => !e?.hasAttribute("disabled")));
               e?.focus()
             }
           }
         };
       class l {
-        constructor(e, n, i) {
-          let a = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : null;
-          this.name = e, this.friendlyName = n, this.id = i, this.alias = a
+        constructor(e, n, a) {
+          let i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : null;
+          this.name = e, this.friendlyName = n, this.id = a, this.alias = i
         }
       }
       const r = Object.freeze({
@@ -137,21 +137,21 @@ _global.SENTRY_RELEASE = {
         return s.find((e => n === e.name || n === e.id.toString() || n === e.friendlyName.toLowerCase() || n === e.alias?.toLowerCase()))
       }
       const c = function() {
-        for (var e = arguments.length, n = new Array(e), i = 0; i < e; i++) n[i] = arguments[i];
+        for (var e = arguments.length, n = new Array(e), a = 0; a < e; a++) n[a] = arguments[a];
         return [...n].filter(Boolean).join(" ")
       };
-      var u = i(4511);
-      const f = e => {
+      var u = a(4511);
+      const m = e => {
           const n = document.cookie.split("; "),
-            i = `${e}=`,
-            a = n.find((e => e.startsWith(i))),
-            t = a?.substring(i.length, a.length);
+            a = `${e}=`,
+            i = n.find((e => e.startsWith(a))),
+            t = i?.substring(a.length, i.length);
           return t
         },
-        m = (e, n) => {
-          e && void 0 !== n && (0, u.canStoreCookie)(e) && f(e) !== n && (document.cookie = `${e}=${n}; domain=${(()=>{const e=window.location.hostname.split(".");return e.slice(e.length-2).join(".")})()}; path=/;`)
+        f = (e, n) => {
+          e && void 0 !== n && (0, u.canStoreCookie)(e) && m(e) !== n && (document.cookie = `${e}=${n}; domain=${(()=>{const e=window.location.hostname.split(".");return e.slice(e.length-2).join(".")})()}; path=/;`)
         };
-      i(8096);
+      a(8096);
       const p = e => e.keys().forEach(e),
         h = [{
           key: "dev",
@@ -167,18 +167,18 @@ _global.SENTRY_RELEASE = {
         g = e => {
           e.preventDefault();
           const n = e.currentTarget.href,
-            i = (e => {
+            a = (e => {
               const n = new URL(e).pathname.split("/"),
-                i = n[n.length - 1];
-              return decodeURIComponent(i)
+                a = n[n.length - 1];
+              return decodeURIComponent(a)
             })(n);
           fetch(n, {
             method: "GET",
             headers: {}
           }).then((e => e.arrayBuffer())).then((e => {
             const n = window.URL.createObjectURL(new Blob([e])),
-              a = document.createElement("a");
-            a.href = n, a.setAttribute("download", i), document.body.appendChild(a), a.click(), document.body.removeChild(a)
+              i = document.createElement("a");
+            i.href = n, i.setAttribute("download", a), document.body.appendChild(i), i.click(), document.body.removeChild(i)
           })).catch((e => {
             console.log(e)
           }))
@@ -206,14 +206,14 @@ _global.SENTRY_RELEASE = {
           return n.has(e) ? n.get(e) : e
         }
     },
-    1799: (e, n, i) => {
+    1799: (e, n, a) => {
       "use strict";
-      i.r(n), i.d(n, {
+      a.r(n), a.d(n, {
         Gif: () => w,
         HashSelector: () => b
       });
-      const a = "rockstargames-modules-core-gif-viewera19bcd2b98d91e60c43b9de146e20f4e";
-      var t = i(8096);
+      const i = "rockstargames-modules-core-gif-viewera19bcd2b98d91e60c43b9de146e20f4e";
+      var t = a(8096);
       const o = e => {
         let {
           color: n
@@ -224,20 +224,20 @@ _global.SENTRY_RELEASE = {
             "--loader-color": n
           },
           children: [(0, t.jsx)("div", {
-            className: a
+            className: i
           }), (0, t.jsx)("div", {
-            className: a
+            className: i
           }), (0, t.jsx)("div", {
-            className: a
+            className: i
           })]
         })
       };
-      var l = i(8648);
-      var r = i(2229),
-        s = i(5966);
+      var l = a(8648);
+      var r = a(2229),
+        s = a(5966);
       const d = (0, s.setContextItem)({
           context: (0, r.createContext)(),
-          key: "tinaParser"
+          key: "tinaPayloadContext"
         }),
         {
           Provider: c
@@ -253,8 +253,8 @@ _global.SENTRY_RELEASE = {
       u("Background Image Gradient"),
         function() {
           (arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "Label").toLowerCase().split(" ").join("_")
-        }("Background Image Gradient"), u("Background Image Gradient"), i(5138), i(1207);
-      const f = function() {
+        }("Background Image Gradient"), u("Background Image Gradient"), a(5138), a(1207);
+      const m = function() {
         let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "";
         return {
           label: `${e} Line`,
@@ -262,26 +262,26 @@ _global.SENTRY_RELEASE = {
           component: () => (0, t.jsx)("hr", {})
         }
       };
-      var m = i(1969);
+      var f = a(1969);
       const p = e => {
           let {
             style: n,
-            width: i,
-            height: a,
+            width: a,
+            height: i,
             resizable: o,
             field: l,
             input: s,
             meta: d,
             name: c,
             label: u,
-            description: f,
+            description: m,
             error: p,
             children: h
           } = e;
-          const v = () => o ? (0, t.jsx)(m.c, {
+          const v = () => o ? (0, t.jsx)(f.c, {
             defaultSize: {
-              width: i || "100%",
-              height: a || "500px"
+              width: a || "100%",
+              height: i || "500px"
             },
             style: {
               paddingBottom: "10px"
@@ -296,7 +296,7 @@ _global.SENTRY_RELEASE = {
               htmlFor: c ?? l?.name,
               children: [u ?? l?.label, (0, t.jsx)("span", {
                 className: "rockstargames-modules-core-gif-viewera0b2c6a5b66b849b487834caa1f6e3c8 FieldDescription-sc-custom cyKzVM",
-                children: f ?? l?.description
+                children: m ?? l?.description
               })]
             }), (0, t.jsx)(v, {}), (p || d?.error) && (0, t.jsx)("div", {
               className: "FieldError_sc_custom",
@@ -304,10 +304,10 @@ _global.SENTRY_RELEASE = {
             })]
           })
         },
-        h = (f("Background Image Gradient"), function() {
+        h = (m("Background Image Gradient"), function() {
           let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "Label";
           e.toLowerCase().split(" ").join("_")
-        }("Background Image Gradient"), f("Background Image Gradient"), () => ({
+        }("Background Image Gradient"), m("Background Image Gradient"), () => ({
           name: "hero",
           label: "Is this a lead asset?",
           component: "toggle",
@@ -316,30 +316,30 @@ _global.SENTRY_RELEASE = {
             hero: !1
           })
         }));
-      i(1398);
+      a(1398);
       const v = function() {
         return {
           ...arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
           key: `key_${(0,l.A)()}`
         }
       };
-      var g = i(4235);
+      var g = a(4235);
       const k = e => {
           let {
             field: n,
-            input: i,
-            meta: a
+            input: a,
+            meta: i
           } = e;
           const {
             data: l
           } = (0, s.useQuery)(g.GifsList);
           return (0, t.jsx)(p, {
-            name: i.name || n.name || n.label,
+            name: a.name || n.name || n.label,
             label: n.label,
             description: n.description,
-            meta: a,
+            meta: i,
             children: l?.gifsList?.length ? (0, t.jsxs)("select", {
-              ...i,
+              ...a,
               children: [(0, t.jsx)("option", {
                 value: "",
                 children: "-- Select a gif --"
@@ -361,13 +361,13 @@ _global.SENTRY_RELEASE = {
             component: e => {
               let {
                 field: n,
-                input: i,
-                meta: a
+                input: a,
+                meta: i
               } = e;
               return (0, t.jsx)(k, {
                 field: n,
-                input: i,
-                meta: a
+                input: a,
+                meta: i
               })
             }
           }
@@ -532,18 +532,18 @@ _global.SENTRY_RELEASE = {
         }
       };
 
-      function i(e, n) {
+      function a(e, n) {
         if ("FragmentSpread" === e.kind) n.add(e.name.value);
         else if ("VariableDefinition" === e.kind) {
-          var a = e.type;
-          "NamedType" === a.kind && n.add(a.name.value)
+          var i = e.type;
+          "NamedType" === i.kind && n.add(i.name.value)
         }
         e.selectionSet && e.selectionSet.selections.forEach((function(e) {
-          i(e, n)
+          a(e, n)
         })), e.variableDefinitions && e.variableDefinitions.forEach((function(e) {
-          i(e, n)
+          a(e, n)
         })), e.definitions && e.definitions.forEach((function(e) {
-          i(e, n)
+          a(e, n)
         }))
       }
       n.loc.source = {
@@ -554,26 +554,26 @@ _global.SENTRY_RELEASE = {
           column: 1
         }
       };
-      var a = {};
+      var i = {};
 
       function t(e, n) {
-        for (var i = 0; i < e.definitions.length; i++) {
-          var a = e.definitions[i];
-          if (a.name && a.name.value == n) return a
+        for (var a = 0; a < e.definitions.length; a++) {
+          var i = e.definitions[a];
+          if (i.name && i.name.value == n) return i
         }
       }
       n.definitions.forEach((function(e) {
         if (e.name) {
           var n = new Set;
-          i(e, n), a[e.name.value] = n
+          a(e, n), i[e.name.value] = n
         }
       })), e.exports = n, e.exports.TagList = function(e, n) {
-        var i = {
+        var a = {
           kind: e.kind,
           definitions: [t(e, n)]
         };
-        e.hasOwnProperty("loc") && (i.loc = e.loc);
-        var o = a[n] || new Set,
+        e.hasOwnProperty("loc") && (a.loc = e.loc);
+        var o = i[n] || new Set,
           l = new Set,
           r = new Set;
         for (o.forEach((function(e) {
@@ -581,15 +581,15 @@ _global.SENTRY_RELEASE = {
           })); r.size > 0;) {
           var s = r;
           r = new Set, s.forEach((function(e) {
-            l.has(e) || (l.add(e), (a[e] || new Set).forEach((function(e) {
+            l.has(e) || (l.add(e), (i[e] || new Set).forEach((function(e) {
               r.add(e)
             })))
           }))
         }
         return l.forEach((function(n) {
-          var a = t(e, n);
-          a && i.definitions.push(a)
-        })), i
+          var i = t(e, n);
+          i && a.definitions.push(i)
+        })), a
       }(n, "TagList")
     },
     4235: e => {
@@ -763,18 +763,18 @@ _global.SENTRY_RELEASE = {
         }
       };
 
-      function i(e, n) {
+      function a(e, n) {
         if ("FragmentSpread" === e.kind) n.add(e.name.value);
         else if ("VariableDefinition" === e.kind) {
-          var a = e.type;
-          "NamedType" === a.kind && n.add(a.name.value)
+          var i = e.type;
+          "NamedType" === i.kind && n.add(i.name.value)
         }
         e.selectionSet && e.selectionSet.selections.forEach((function(e) {
-          i(e, n)
+          a(e, n)
         })), e.variableDefinitions && e.variableDefinitions.forEach((function(e) {
-          i(e, n)
+          a(e, n)
         })), e.definitions && e.definitions.forEach((function(e) {
-          i(e, n)
+          a(e, n)
         }))
       }
       n.loc.source = {
@@ -785,22 +785,22 @@ _global.SENTRY_RELEASE = {
           column: 1
         }
       };
-      var a = {};
+      var i = {};
 
       function t(e, n) {
-        for (var i = 0; i < e.definitions.length; i++) {
-          var a = e.definitions[i];
-          if (a.name && a.name.value == n) return a
+        for (var a = 0; a < e.definitions.length; a++) {
+          var i = e.definitions[a];
+          if (i.name && i.name.value == n) return i
         }
       }
 
       function o(e, n) {
-        var i = {
+        var a = {
           kind: e.kind,
           definitions: [t(e, n)]
         };
-        e.hasOwnProperty("loc") && (i.loc = e.loc);
-        var o = a[n] || new Set,
+        e.hasOwnProperty("loc") && (a.loc = e.loc);
+        var o = i[n] || new Set,
           l = new Set,
           r = new Set;
         for (o.forEach((function(e) {
@@ -808,20 +808,20 @@ _global.SENTRY_RELEASE = {
           })); r.size > 0;) {
           var s = r;
           r = new Set, s.forEach((function(e) {
-            l.has(e) || (l.add(e), (a[e] || new Set).forEach((function(e) {
+            l.has(e) || (l.add(e), (i[e] || new Set).forEach((function(e) {
               r.add(e)
             })))
           }))
         }
         return l.forEach((function(n) {
-          var a = t(e, n);
-          a && i.definitions.push(a)
-        })), i
+          var i = t(e, n);
+          i && a.definitions.push(i)
+        })), a
       }
       n.definitions.forEach((function(e) {
         if (e.name) {
           var n = new Set;
-          i(e, n), a[e.name.value] = n
+          a(e, n), i[e.name.value] = n
         }
       })), e.exports = n, e.exports.GifsList = o(n, "GifsList"), e.exports.GifInfo = o(n, "GifInfo")
     }

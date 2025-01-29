@@ -25,7 +25,7 @@ _global.SENTRY_RELEASE = {
       });
       var r = t(62229);
 
-      function o(e, n, t) {
+      function a(e, n, t) {
         return n in e ? Object.defineProperty(e, n, {
           value: t,
           enumerable: !0,
@@ -34,7 +34,7 @@ _global.SENTRY_RELEASE = {
         }) : e[n] = t, e
       }
 
-      function a(e, n) {
+      function o(e, n) {
         var t = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
@@ -48,36 +48,36 @@ _global.SENTRY_RELEASE = {
       function i(e) {
         for (var n = 1; n < arguments.length; n++) {
           var t = null != arguments[n] ? arguments[n] : {};
-          n % 2 ? a(t, !0).forEach((function(n) {
-            o(e, n, t[n])
-          })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : a(t).forEach((function(n) {
+          n % 2 ? o(t, !0).forEach((function(n) {
+            a(e, n, t[n])
+          })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : o(t).forEach((function(n) {
             Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
           }))
         }
         return e
       }
-      var f, c, u, s, d = function(e) {
+      var c, f, u, s, d = function(e) {
           var n, t = {
-              unsupported: f = !("undefined" != typeof navigator && "connection" in navigator && "effectiveType" in navigator.connection),
-              effectiveConnectionType: f ? e : navigator.connection.effectiveType
+              unsupported: c = !("undefined" != typeof navigator && "connection" in navigator && "effectiveType" in navigator.connection),
+              effectiveConnectionType: c ? e : navigator.connection.effectiveType
             },
-            o = function(e) {
+            a = function(e) {
               if (Array.isArray(e)) return e
             }(n = (0, r.useState)(t)) || function(e, n) {
               if (Symbol.iterator in Object(e) || "[object Arguments]" === Object.prototype.toString.call(e)) {
                 var t = [],
                   r = !0,
-                  o = !1,
-                  a = void 0;
+                  a = !1,
+                  o = void 0;
                 try {
-                  for (var i, f = e[Symbol.iterator](); !(r = (i = f.next()).done) && (t.push(i.value), 2 !== t.length); r = !0);
+                  for (var i, c = e[Symbol.iterator](); !(r = (i = c.next()).done) && (t.push(i.value), 2 !== t.length); r = !0);
                 } catch (e) {
-                  o = !0, a = e
+                  a = !0, o = e
                 } finally {
                   try {
-                    r || null == f.return || f.return()
+                    r || null == c.return || c.return()
                   } finally {
-                    if (o) throw a
+                    if (a) throw o
                   }
                 }
                 return t
@@ -85,13 +85,13 @@ _global.SENTRY_RELEASE = {
             }(n) || function() {
               throw new TypeError("Invalid attempt to destructure non-iterable instance")
             }(),
-            a = o[0],
-            c = o[1];
+            o = a[0],
+            f = a[1];
           return (0, r.useEffect)((function() {
-            if (!f) {
+            if (!c) {
               var e = navigator.connection,
                 n = function() {
-                  c({
+                  f({
                     effectiveConnectionType: e.effectiveType
                   })
                 };
@@ -100,14 +100,14 @@ _global.SENTRY_RELEASE = {
                   e.removeEventListener("change", n)
                 }
             }
-          }), []), i({}, a, {
-            setNetworkStatus: c
+          }), []), i({}, o, {
+            setNetworkStatus: f
           })
         },
         l = function() {
           return {
-            unsupported: c = !("undefined" != typeof navigator && "connection" in navigator && "saveData" in navigator.connection),
-            saveData: c ? arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null : !0 === navigator.connection.saveData
+            unsupported: f = !("undefined" != typeof navigator && "connection" in navigator && "saveData" in navigator.connection),
+            saveData: f ? arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null : !0 === navigator.connection.saveData
           }
         };
       if (u = !("undefined" != typeof navigator && "deviceMemory" in navigator)) s = {

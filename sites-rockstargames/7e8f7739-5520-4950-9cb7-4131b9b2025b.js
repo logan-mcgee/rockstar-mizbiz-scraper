@@ -1,8 +1,8 @@
 ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      s = (new Error).stack;
-    s && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[s] = "7e8f7739-5520-4950-9cb7-4131b9b2025b", e._sentryDebugIdIdentifier = "sentry-dbid-7e8f7739-5520-4950-9cb7-4131b9b2025b")
+      a = (new Error).stack;
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "7e8f7739-5520-4950-9cb7-4131b9b2025b", e._sentryDebugIdIdentifier = "sentry-dbid-7e8f7739-5520-4950-9cb7-4131b9b2025b")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -16,28 +16,28 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [7882], {
-    27882: (e, s, a) => {
-      a.r(s), a.d(s, {
-        default: () => f
+    27882: (e, a, s) => {
+      s.r(a), s.d(a, {
+        default: () => o
       });
-      var t = a(62229),
-        d = a(9623),
-        n = a(2918);
-      const f = () => {
-        const [e, s] = (0, t.useState)(), a = (0, n.useRockstarUser)(), {
-          currentCharId: f
-        } = (0, n.useRockstarUserState)(), o = (0, d.useNavigate)(), r = (0, n.useIsUserGtaPlus)(a.data, f);
+      var t = s(62229),
+        n = s(9623),
+        d = s(2918);
+      const o = () => {
+        const [e, a] = (0, t.useState)(), s = (0, d.useRockstarUser)(), {
+          currentCharId: o
+        } = (0, d.useRockstarUserState)(), r = (0, n.useNavigate)(), l = (0, d.useIsUserGtaPlus)(s.data, o);
         return (0, t.useEffect)((() => {
-          if (!a) return;
+          if (!s) return;
           const {
             loggedIn: e
-          } = a;
-          null != e && (!1 !== e ? void 0 !== f && s(r) : s(!1))
-        }), [r, a, f]), (0, t.useEffect)((() => {
-          null != e && o(e ? "./benefits" : "./join", {
+          } = s;
+          null != e && (!1 !== e ? void 0 !== o && a(l) : a(!1))
+        }), [l, s, o]), (0, t.useEffect)((() => {
+          null != e && r(e ? "./benefits" : "./join", {
             replace: !0
           })
-        }), [e, o]), null
+        }), [e, r]), null
       }
     }
   }

@@ -37,10 +37,10 @@ _global.SENTRY_RELEASE = {
         })
       }
       var n = {};
-      o(n, "ONETRUST_LOADED_EVENT", (() => r)), o(n, "WRAPPER_CALLED_EVENT", (() => a)), o(n, "CONSENT_CHANGED_EVENT", (() => i)), o(n, "init", (() => c));
+      o(n, "ONETRUST_LOADED_EVENT", (() => a)), o(n, "WRAPPER_CALLED_EVENT", (() => r)), o(n, "CONSENT_CHANGED_EVENT", (() => i)), o(n, "init", (() => c));
       const s = window.document.currentScript?.nonce,
-        r = "ONETRUST_LOADED_EVENT",
-        a = "WRAPPER_CALLED_EVENT",
+        a = "ONETRUST_LOADED_EVENT",
+        r = "WRAPPER_CALLED_EVENT",
         i = "CONSENT_CHANGED_EVENT";
       let l = !0;
 
@@ -49,9 +49,9 @@ _global.SENTRY_RELEASE = {
           o = window.document.createElement("script");
         if (o.setAttribute("id", "onetrust-sdk-stub"), o.setAttribute("src", "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"), o.setAttribute("type", "text/javascript"), o.setAttribute("charset", "UTF-8"), o.setAttribute("data-document-language", "true"), s && (o.nonce = s), !e) throw new Error("You must specify the OneTrust script ID");
         o.setAttribute("data-domain-script", e), t.insertBefore(o, t.firstChild), window.OptanonWrapper = function() {
-          l && (l = !1, window.dispatchEvent(new CustomEvent(r, {
+          l && (l = !1, window.dispatchEvent(new CustomEvent(a, {
             bubbles: !0
-          }))), window.dispatchEvent(new CustomEvent(a, {
+          }))), window.dispatchEvent(new CustomEvent(r, {
             bubbles: !0
           })), window.OneTrust.OnConsentChanged((() => {
             window.dispatchEvent(new CustomEvent(i, {
@@ -87,8 +87,8 @@ _global.SENTRY_RELEASE = {
       "use strict";
       var n = o(62229),
         s = Symbol.for("react.element"),
-        r = Symbol.for("react.fragment"),
-        a = Object.prototype.hasOwnProperty,
+        a = Symbol.for("react.fragment"),
+        r = Object.prototype.hasOwnProperty,
         i = n.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         l = {
           key: !0,
@@ -98,22 +98,22 @@ _global.SENTRY_RELEASE = {
         };
 
       function c(e, t, o) {
-        var n, r = {},
+        var n, a = {},
           c = null,
           d = null;
-        for (n in void 0 !== o && (c = "" + o), void 0 !== t.key && (c = "" + t.key), void 0 !== t.ref && (d = t.ref), t) a.call(t, n) && !l.hasOwnProperty(n) && (r[n] = t[n]);
+        for (n in void 0 !== o && (c = "" + o), void 0 !== t.key && (c = "" + t.key), void 0 !== t.ref && (d = t.ref), t) r.call(t, n) && !l.hasOwnProperty(n) && (a[n] = t[n]);
         if (e && e.defaultProps)
-          for (n in t = e.defaultProps) void 0 === r[n] && (r[n] = t[n]);
+          for (n in t = e.defaultProps) void 0 === a[n] && (a[n] = t[n]);
         return {
           $$typeof: s,
           type: e,
           key: c,
           ref: d,
-          props: r,
+          props: a,
           _owner: i.current
         }
       }
-      t.Fragment = r, t.jsx = c, t.jsxs = c
+      t.Fragment = a, t.jsx = c, t.jsxs = c
     },
     98096: (e, t, o) => {
       "use strict";
@@ -127,18 +127,18 @@ _global.SENTRY_RELEASE = {
         POSIXLocales: () => d.FN,
         createDevLocaleHook: () => l.A,
         createIntl: () => s.E,
-        defineMessages: () => r.YK,
+        defineMessages: () => a.YK,
         englishLocale: () => d.Vm,
         getLocale: () => c.A,
         locales: () => d.Ay,
         splitLocale: () => u.A,
-        useIntl: () => a.A,
+        useIntl: () => r.A,
         withIntl: () => i.QY
       });
       var n = o(43160),
         s = o(78924),
-        r = o(95129),
-        a = o(53075),
+        a = o(95129),
+        r = o(53075),
         i = o(90823),
         l = o(14685),
         c = o(45478),
@@ -157,23 +157,23 @@ _global.SENTRY_RELEASE = {
       });
       var n = o(62229),
         s = o(27042),
-        r = o(45478),
-        a = o(91631),
+        a = o(45478),
+        r = o(91631),
         i = o(98096);
       const l = e => {
         let {
           locales: t,
           lang: o,
-          children: r
+          children: a
         } = e;
-        const [l, c] = (0, n.useMemo)((() => (0, a.A)(o)), [o]), d = (0, n.useMemo)((() => function(e, t) {
+        const [l, c] = (0, n.useMemo)((() => (0, r.A)(o)), [o]), d = (0, n.useMemo)((() => function(e, t) {
           return e?.[t] ?? {}
         }(t, c)), [o, t]);
         return (0, i.jsx)(s.A, {
           messages: d,
           locale: l,
           defaultLocale: "en",
-          children: r
+          children: a
         })
       };
 
@@ -181,7 +181,7 @@ _global.SENTRY_RELEASE = {
         return o => {
           const [{
             iso: n
-          }] = (0, r.A)();
+          }] = (0, a.A)();
           return (0, i.jsx)(l, {
             locales: t,
             lang: n,
@@ -196,46 +196,46 @@ _global.SENTRY_RELEASE = {
     14685: (e, t, o) => {
       "use strict";
       o.d(t, {
-        A: () => r
+        A: () => a
       });
       var n = o(45478),
         s = o(91631);
-      const r = e => {
+      const a = e => {
         if (!e.us || 0 === Object.keys(e?.us).length) throw new Error("createDevLocaleHook requires at least a 'us' key with definitions");
         return () => {
           const [{
             iso: t
-          }] = (0, n.A)(), [o, r] = (0, s.A)(t);
-          return e?.[r] ?? e.us
+          }] = (0, n.A)(), [o, a] = (0, s.A)(t);
+          return e?.[a] ?? e.us
         }
       }
     },
     45478: (e, t, o) => {
       "use strict";
       o.d(t, {
-        A: () => a
+        A: () => r
       });
       var n = o(15138),
         s = o(21207),
-        r = o(68203);
-      const a = () => {
+        a = o(68203);
+      const r = () => {
         const {
           location: e
         } = window, t = (0, n.A)(), o = (e => {
-          const t = r.Ay.map((e => e.subdomaincom)),
+          const t = a.Ay.map((e => e.subdomaincom)),
             o = e.pathname.substring(1).split("/"),
             n = "detect-locals" === o[0] ? 1 : 0;
           return -1 !== t.indexOf(o[n]) ? o[n] : null
-        })(e), a = (e => {
+        })(e), r = (e => {
           const t = e.search.substring(1).split("&").find((e => e.startsWith("lang")));
           return t?.split("=")[1]
-        })(e), i = r.Vm;
+        })(e), i = a.Vm;
         let l = i;
         const c = `rockstarweb_lang.${t.cookieIdentifier}`;
-        if (t.currentSite?.site === n.C.www) l = r.Ay.find((e => e.subdomaincom === a)) || r.Ay.find((e => e.subdomaincom === o)) || i;
+        if (t.currentSite?.site === n.C.www) l = a.Ay.find((e => e.subdomaincom === r)) || a.Ay.find((e => e.subdomaincom === o)) || i;
         else {
           const e = (0, s.Ap)(c);
-          l = r.Ay.find((t => t.iso === e)) || i
+          l = a.Ay.find((t => t.iso === e)) || i
         }
         return [l, (e => t => {
           (0, s.My)(e, t)
@@ -245,8 +245,8 @@ _global.SENTRY_RELEASE = {
     68203: (e, t, o) => {
       "use strict";
       o.d(t, {
-        Ay: () => a,
-        FN: () => r,
+        Ay: () => r,
+        FN: () => a,
         Vm: () => s
       });
       const n = [{
@@ -329,8 +329,8 @@ _global.SENTRY_RELEASE = {
           iso: "zh-CN"
         }],
         s = n[1],
-        r = ["de_de", "fr_fr", "it_it", "ja_jp", "ru_ru", "es_es", "es_mx", "pt_br", "ko_kr", "zh_tw", "pl_pl", "zh_hans"],
-        a = n
+        a = ["de_de", "fr_fr", "it_it", "ja_jp", "ru_ru", "es_es", "es_mx", "pt_br", "ko_kr", "zh_tw", "pl_pl", "zh_hans"],
+        r = n
     },
     91631: (e, t, o) => {
       "use strict";
@@ -348,7 +348,7 @@ _global.SENTRY_RELEASE = {
     15138: (e, t, o) => {
       "use strict";
       o.d(t, {
-        A: () => r,
+        A: () => a,
         C: () => n
       });
       const n = {
@@ -367,7 +367,7 @@ _global.SENTRY_RELEASE = {
           },
           cookieIdentifier: "prod"
         }],
-        r = () => {
+        a = () => {
           let e;
           const {
             location: t
@@ -377,12 +377,12 @@ _global.SENTRY_RELEASE = {
               site: n,
               subDomain: s
             }, !0)
-          })) >= 0)), r = s[n >= 0 ? n : 0];
+          })) >= 0)), a = s[n >= 0 ? n : 0];
           return e || (e = {
             site: "www",
             subDomain: "local"
           }), {
-            ...r,
+            ...a,
             currentSite: e
           }
         }
@@ -390,7 +390,7 @@ _global.SENTRY_RELEASE = {
     21207: (e, t, o) => {
       "use strict";
       o.d(t, {
-        OD: () => a,
+        OD: () => r,
         lv: () => i,
         pP: () => d,
         wC: () => s,
@@ -429,9 +429,9 @@ _global.SENTRY_RELEASE = {
             o = document.getElementById(t.get(e) || e);
           o && (n({
             element: o
-          }), r(o))
+          }), a(o))
         },
-        r = e => {
+        a = e => {
           const t = ["a", "button", "input", "textarea", "select", "details", '[tabindex]:not([tabindex="-1"])'];
           if (t.includes(e.nodeName.toLowerCase())) e.focus();
           else {
@@ -442,34 +442,34 @@ _global.SENTRY_RELEASE = {
             }
           }
         };
-      class a {
+      class r {
         constructor(e, t, o) {
           let n = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : null;
           this.name = e, this.friendlyName = t, this.id = o, this.alias = n
         }
       }
       const i = Object.freeze({
-          pc: new a("pc", "PC", 8),
-          ps: new a("ps", "PlayStation", 3),
-          ps3: new a("ps3", "PlayStation 3", 2),
-          ps4: new a("ps4", "PlayStation 4", 11),
-          ps5: new a("ps5", "PlayStation 5", 20),
-          xbox: new a("xbox", "Xbox", 4),
-          xbox360: new a("xbox360", "Xbox 360", 1),
-          xboxone: new a("xboxone", "Xbox One", 12),
-          xboxsx: new a("xboxsx", "Xbox Series X|S", 21, "xboxseriesxs"),
-          switch: new a("switch", "Nintendo Switch™", 18),
-          nintendoswitch: new a("nintendoswitch", "Nintendo Switch™", 18),
-          applestore: new a("applestore", "App Store", 102),
-          googleplay: new a("googleplay", "Google Play", 1023),
-          appStore: new a("app_store", "App Store", 102),
-          googlePlay: new a("ggle_play", "Google Play", 1023)
+          pc: new r("pc", "PC", 8),
+          ps: new r("ps", "PlayStation", 3),
+          ps3: new r("ps3", "PlayStation 3", 2),
+          ps4: new r("ps4", "PlayStation 4", 11),
+          ps5: new r("ps5", "PlayStation 5", 20),
+          xbox: new r("xbox", "Xbox", 4),
+          xbox360: new r("xbox360", "Xbox 360", 1),
+          xboxone: new r("xboxone", "Xbox One", 12),
+          xboxsx: new r("xboxsx", "Xbox Series X|S", 21, "xboxseriesxs"),
+          switch: new r("switch", "Nintendo Switch™", 18),
+          nintendoswitch: new r("nintendoswitch", "Nintendo Switch™", 18),
+          applestore: new r("applestore", "App Store", 102),
+          googleplay: new r("googleplay", "Google Play", 1023),
+          appStore: new r("app_store", "App Store", 102),
+          googlePlay: new r("ggle_play", "Google Play", 1023)
         }),
         l = Object.freeze(Object.values(i));
 
       function c(e) {
         if (!e) return;
-        if (e instanceof a) return e;
+        if (e instanceof r) return e;
         const t = e.toString().toLowerCase();
         return l.find((e => t === e.name || t === e.id.toString() || t === e.friendlyName.toLowerCase() || t === e.alias?.toLowerCase()))
       }

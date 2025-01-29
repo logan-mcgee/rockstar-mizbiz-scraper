@@ -19,13 +19,13 @@ _global.SENTRY_RELEASE = {
     40173: (o, t, e) => {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => _,
-        Lightbox_Close_Button_Tooltip: () => l,
+        Lightbox_Close_Button_Tooltip: () => a,
         Lightbox_Download_Button_Label: () => g,
         Lightbox_Download_Button_Tooltip: () => f,
         Lightbox_Open_Button_Label: () => L,
         Lightbox_Reset_Zoom_Button_Label: () => d,
         Lightbox_Reset_Zoom_Button_Tooltip: () => r,
-        Lightbox_Zoom_In_Button_Label: () => a,
+        Lightbox_Zoom_In_Button_Label: () => l,
         Lightbox_Zoom_In_Button_Tooltip: () => n,
         Lightbox_Zoom_Out_Button_Label: () => i,
         Lightbox_Zoom_Out_Button__Tooltip: () => b,
@@ -34,8 +34,8 @@ _global.SENTRY_RELEASE = {
         default: () => c
       });
       var _ = "Cerrar lightbox",
-        l = "Pulsa {shortcut}",
-        a = "Acercar zoom",
+        a = "Pulsa {shortcut}",
+        l = "Acercar zoom",
         n = "Pulsa {shortcut}",
         i = "Alejar zoom",
         b = "Pulsa {shortcut}",
@@ -48,8 +48,8 @@ _global.SENTRY_RELEASE = {
         L = "Expandir imagen",
         c = {
           Lightbox_Close_Button_Label: _,
-          Lightbox_Close_Button_Tooltip: l,
-          Lightbox_Zoom_In_Button_Label: a,
+          Lightbox_Close_Button_Tooltip: a,
+          Lightbox_Zoom_In_Button_Label: l,
           Lightbox_Zoom_In_Button_Tooltip: n,
           Lightbox_Zoom_Out_Button_Label: i,
           Lightbox_Zoom_Out_Button__Tooltip: b,

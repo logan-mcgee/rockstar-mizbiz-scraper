@@ -179,16 +179,16 @@ _global.SENTRY_RELEASE = {
       var u = "undefined" != typeof window ? o.useLayoutEffect : o.useEffect,
         l = new WeakMap;
       var d = (0, t(64269).f)(),
-        f = function() {},
-        s = o.forwardRef((function(e, n) {
+        s = function() {},
+        f = o.forwardRef((function(e, n) {
           var t = o.useRef(null),
             a = o.useState({
-              onScrollCapture: f,
-              onWheelCapture: f,
-              onTouchMoveCapture: f
+              onScrollCapture: s,
+              onWheelCapture: s,
+              onTouchMoveCapture: s
             }),
             c = a[0],
-            s = a[1],
+            f = a[1],
             h = e.forwardProps,
             v = e.children,
             m = e.className,
@@ -246,7 +246,7 @@ _global.SENTRY_RELEASE = {
             shards: b,
             noIsolation: y,
             inert: E,
-            setCallbacks: s,
+            setCallbacks: f,
             allowPinchZoom: !!C,
             lockRef: t,
             gapMode: M
@@ -257,11 +257,11 @@ _global.SENTRY_RELEASE = {
             ref: N
           }), v))
         }));
-      s.defaultProps = {
+      f.defaultProps = {
         enabled: !0,
         removeScrollBar: !0,
         inert: !1
-      }, s.classNames = {
+      }, f.classNames = {
         fullWidth: c,
         zeroRight: a
       };
@@ -448,11 +448,11 @@ _global.SENTRY_RELEASE = {
               i = "deltaX" in e ? e.deltaX : c[0] - o[0],
               l = "deltaY" in e ? e.deltaY : c[1] - o[1],
               d = e.target,
-              f = Math.abs(i) > Math.abs(l) ? "h" : "v";
-            if ("touches" in e && "h" === f && "range" === d.type) return !1;
-            var s = L(f, d);
-            if (!s) return !0;
-            if (s ? r = f : (r = "v" === f ? "h" : "v", s = L(f, d)), !s) return !1;
+              s = Math.abs(i) > Math.abs(l) ? "h" : "v";
+            if ("touches" in e && "h" === s && "range" === d.type) return !1;
+            var f = L(s, d);
+            if (!f) return !0;
+            if (f ? r = s : (r = "v" === s ? "h" : "v", f = L(s, d)), !f) return !1;
             if (!a.current && "changedTouches" in e && (i || l) && (a.current = r), !r) return !0;
             var h = a.current || r;
             return function(e, n, t, r, o) {
@@ -464,15 +464,15 @@ _global.SENTRY_RELEASE = {
                 u = n.contains(i),
                 l = !1,
                 d = c > 0,
-                f = 0,
-                s = 0;
+                s = 0,
+                f = 0;
               do {
                 var h = P(e, i),
                   v = h[0],
                   m = h[1] - h[2] - a * v;
-                (v || m) && I(e, i) && (f += m, s += v), i = i instanceof ShadowRoot ? i.host : i.parentNode
+                (v || m) && I(e, i) && (s += m, f += v), i = i instanceof ShadowRoot ? i.host : i.parentNode
               } while (!u && i !== document.body || u && (n.contains(i) || n === i));
-              return (d && (Math.abs(f) < 1 || !1) || !d && (Math.abs(s) < 1 || !1)) && (l = !0), l
+              return (d && (Math.abs(s) < 1 || !1) || !d && (Math.abs(f) < 1 || !1)) && (l = !0), l
             }(h, n, e, "h" === h ? i : l)
           }), []),
           d = o.useCallback((function(e) {
@@ -492,7 +492,7 @@ _global.SENTRY_RELEASE = {
               }
             }
           }), []),
-          f = o.useCallback((function(e, t, r, o) {
+          s = o.useCallback((function(e, t, r, o) {
             var a = {
               name: e,
               delta: t,
@@ -506,25 +506,25 @@ _global.SENTRY_RELEASE = {
               }))
             }), 1)
           }), []),
-          s = o.useCallback((function(e) {
+          f = o.useCallback((function(e) {
             t.current = A(e), a.current = void 0
           }), []),
           h = o.useCallback((function(n) {
-            f(n.type, B(n), n.target, l(n, e.lockRef.current))
+            s(n.type, B(n), n.target, l(n, e.lockRef.current))
           }), []),
           v = o.useCallback((function(n) {
-            f(n.type, A(n), n.target, l(n, e.lockRef.current))
+            s(n.type, A(n), n.target, l(n, e.lockRef.current))
           }), []);
         o.useEffect((function() {
           return D.push(i), e.setCallbacks({
               onScrollCapture: h,
               onWheelCapture: h,
               onTouchMoveCapture: v
-            }), document.addEventListener("wheel", d, _), document.addEventListener("touchmove", d, _), document.addEventListener("touchstart", s, _),
+            }), document.addEventListener("wheel", d, _), document.addEventListener("touchmove", d, _), document.addEventListener("touchstart", f, _),
             function() {
               D = D.filter((function(e) {
                 return e !== i
-              })), document.removeEventListener("wheel", d, _), document.removeEventListener("touchmove", d, _), document.removeEventListener("touchstart", s, _)
+              })), document.removeEventListener("wheel", d, _), document.removeEventListener("touchmove", d, _), document.removeEventListener("touchstart", f, _)
             }
         }), []);
         var m = e.removeScrollBar,
@@ -536,12 +536,12 @@ _global.SENTRY_RELEASE = {
         }) : null)
       }));
       var j = o.forwardRef((function(e, n) {
-        return o.createElement(s, (0, r.Cl)({}, e, {
+        return o.createElement(f, (0, r.Cl)({}, e, {
           ref: n,
           sideCar: F
         }))
       }));
-      j.classNames = s.classNames;
+      j.classNames = f.classNames;
       const z = j
     }
   }

@@ -2,37 +2,37 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "d060c73d-c92d-4911-9b47-5f50deadf5b7", e._sentryDebugIdIdentifier = "sentry-dbid-d060c73d-c92d-4911-9b47-5f50deadf5b7")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "d8905a0b-26d1-48d3-93e0-f65834efddbf", e._sentryDebugIdIdentifier = "sentry-dbid-d8905a0b-26d1-48d3-93e0-f65834efddbf")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
   release: "sentry-release-id",
-  packageName: "@rockstargames/sites-legacy",
+  packageName: "@rockstargames/sites-gta-gen9",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
-}, (self.webpackChunk_rockstargames_sites_legacy = self.webpackChunk_rockstargames_sites_legacy || []).push([
-  [600], {
+}, (self.webpackChunk_rockstargames_sites_gta_gen9 = self.webpackChunk_rockstargames_sites_gta_gen9 || []).push([
+  [394], {
     50412: (e, t, a) => {
       "use strict";
       a.d(t, {
-        i: () => s,
-        o: () => d
+        i: () => d,
+        o: () => s
       });
       var l = a(62229),
         n = a(95966),
         o = a(98096);
       const i = (0, n.setContextItem)({
           context: (0, l.createContext)(),
-          key: "tinaParser"
+          key: "tinaPayloadContext"
         }),
         {
           Provider: r
         } = i,
-        d = e => {
+        s = e => {
           let {
             children: t,
             payload: a
@@ -42,15 +42,15 @@ _global.SENTRY_RELEASE = {
             children: t
           })
         },
-        s = () => (0, l.useContext)(i)
+        d = () => (0, l.useContext)(i)
     },
     13916: (e, t, a) => {
       "use strict";
       a.d(t, {
-        C1: () => d,
+        C1: () => s,
         S1: () => r,
         XC: () => p,
-        jS: () => s,
+        jS: () => d,
         qg: () => c,
         z0: () => m
       });
@@ -70,8 +70,8 @@ _global.SENTRY_RELEASE = {
             alt: t = null,
             mobile: a = null,
             desktop: r = null,
-            ariaLabel: d = null,
-            sources: s = null,
+            ariaLabel: s = null,
+            sources: d = null,
             prod: c = null
           } = e;
           const m = (0, n.useLocale)(),
@@ -83,23 +83,23 @@ _global.SENTRY_RELEASE = {
             b(c ?? p?.cdn ?? p?.prod ?? !0)
           }), [c, p]);
           const g = (0, l.useCallback)((e => {
-            const t = null !== s,
+            const t = null !== d,
               a = e?.previewSrc ?? e ?? null;
             if (null === a || "string" != typeof a) return null;
             if (a.startsWith("http")) return i(a);
             const l = `${t?(0,n.getCdnPrefix)(u):""}${a}`;
             return i(l)
-          }), [u, s]);
+          }), [u, d]);
           return {
             alt: t,
-            ariaLabel: d,
+            ariaLabel: s,
             src: {
-              mobile: g(s?.[m]?.mobile ?? s?.en_us?.mobile ?? a),
-              desktop: g(s?.[m]?.desktop ?? s?.en_us?.desktop ?? r)
+              mobile: g(d?.[m]?.mobile ?? d?.en_us?.mobile ?? a),
+              desktop: g(d?.[m]?.desktop ?? d?.en_us?.desktop ?? r)
             }
           }
         },
-        d = e => {
+        s = e => {
           const {
             meta: t = {}
           } = (0, o.i)() ?? {}, [a, r] = (0, l.useState)(t?.cdn ?? t?.prod ?? !1);
@@ -107,7 +107,7 @@ _global.SENTRY_RELEASE = {
             r(t?.cdn ?? t?.prod ?? !1)
           }), [t]), null === e ? null : e?.startsWith("http") ? i(e) : i(`${(0,n.getCdnPrefix)(a)}${e}`)
         },
-        s = () => {
+        d = () => {
           const {
             meta: e = {}
           } = (0, o.i)() ?? {}, t = (0, l.useMemo)((() => e?.cdn ?? e?.prod ?? !1), [e]);
@@ -124,22 +124,25 @@ _global.SENTRY_RELEASE = {
         },
         p = e => e.meta.uploads_directory
     },
-    83686: (e, t, a) => {
+    10394: (e, t, a) => {
       "use strict";
       a.d(t, {
-        f6: () => ie,
-        CT: () => me,
-        SX: () => ve,
-        a2: () => fe,
-        om: () => he,
-        Vz: () => xe,
+        bY: () => ie,
+        f6: () => re,
+        KO: () => se,
+        CT: () => ue,
+        pr: () => ge,
+        om: () => ve,
+        Vz: () => he,
         sE: () => ne,
         Qw: () => _e,
-        ZH: () => Ie,
-        UP: () => we,
+        ZH: () => we,
+        A_: () => fe,
+        gY: () => xe,
         Q: () => Ce,
-        Rv: () => Le,
-        z9: () => Me
+        Rv: () => Ie,
+        xc: () => ke,
+        z9: () => Te
       });
       var l = a(48648);
       const n = {
@@ -221,13 +224,13 @@ _global.SENTRY_RELEASE = {
             options: ["", "repeat", "no-repeat", "repeat-y", "repeat-x", "initial", "inherit"]
           }]
         };
-      var d = a(98096);
-      const s = function() {
+      var s = a(98096);
+      const d = function() {
           let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "Label";
           return {
             label: e,
             name: e.toLowerCase().split(" ").join("_"),
-            component: () => (0, d.jsx)("h3", {
+            component: () => (0, s.jsx)("h3", {
               style: {
                 marginBottom: "var(--tina-padding-small)",
                 "--color-h3": "var(--tina-color-grey-8)"
@@ -241,7 +244,7 @@ _global.SENTRY_RELEASE = {
           return {
             label: `${e} Line`,
             name: `${e}_line`,
-            component: () => (0, d.jsx)("hr", {})
+            component: () => (0, s.jsx)("hr", {})
           }
         },
         m = [{
@@ -312,13 +315,13 @@ _global.SENTRY_RELEASE = {
           description: "Distance from bottom for LAYERS (recommended to use %)",
           component: "text"
         },
-        f = {
+        h = {
           label: "Object Position - Vertical",
           name: "--bg-position-vertical",
           description: "Distance from top for BACKGROUND IMAGES (recommended to use %)",
           component: "text"
         },
-        h = {
+        f = {
           label: "Object Position - Horizontal",
           name: "--bg-position-horizontal",
           description: "Distance from left BACKGROUND IMAGES (recommended to use %)",
@@ -414,7 +417,7 @@ _global.SENTRY_RELEASE = {
             label: "Standard"
           }, ...m, ...p]
         },
-        I = {
+        _ = {
           label: "Right Margin",
           name: "margin-right",
           description: "Set the right margin",
@@ -427,7 +430,7 @@ _global.SENTRY_RELEASE = {
             label: "Standard"
           }, ...m, ...p]
         },
-        _ = {
+        C = {
           label: "Bottom Margin",
           name: "margin-bottom",
           description: "Set the bottom margin",
@@ -440,7 +443,7 @@ _global.SENTRY_RELEASE = {
             label: "Standard"
           }, ...m, ...p]
         },
-        C = {
+        I = {
           label: "Top Padding",
           name: "--padding-t",
           description: "Set the top padding",
@@ -453,7 +456,7 @@ _global.SENTRY_RELEASE = {
             label: "Standard Padding"
           }, ...m]
         },
-        L = {
+        T = {
           label: "Side Padding",
           name: "--padding-dynamic",
           description: "Set the side padding",
@@ -492,7 +495,7 @@ _global.SENTRY_RELEASE = {
             label: "All Columns"
           }]
         },
-        N = function() {
+        L = function() {
           return {
             label: arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "Grid Position",
             name: arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "--grid-position",
@@ -522,55 +525,55 @@ _global.SENTRY_RELEASE = {
             }]
           }
         },
-        P = {
+        G = {
           label: "Grid Align Content",
           name: "--grid-align-content",
           description: "Set the align-content property",
           component: "text"
         },
-        G = {
+        N = {
           label: "Grid Align items",
           name: "--grid-align-items",
           description: "Set the align-items property",
           component: "text"
         },
-        T = {
+        A = {
           label: "Grid Align Self",
           name: "--grid-align-self",
           description: "Set the align-self property",
           component: "text"
         },
-        E = {
+        P = {
           label: "Grid Justify Content",
           name: "--grid-justify-content",
           description: "Set the justify-content property",
           component: "text"
         },
-        D = {
+        E = {
           label: "Grid Justify Items",
           name: "--grid-justify-items",
           description: "Set the justify-items property",
           component: "text"
         },
-        j = {
+        D = {
           label: "Grid Justify Self",
           name: "--grid-justify-self",
           description: "Set the justify-self property",
           component: "text"
         },
-        A = {
+        j = {
           label: "--font-family-h",
           name: "--font-family-h",
           description: "Set the --font-family-h",
           component: "text"
         },
-        $ = {
+        z = {
           label: "--font-weight-h",
           name: "--font-weight-h",
           description: "Set the --font-weight-h",
           component: "text"
         },
-        z = {
+        $ = {
           label: "--letter-spacing-h",
           name: "--letter-spacing-h",
           description: "Set the --letter-spacing-h",
@@ -598,31 +601,31 @@ _global.SENTRY_RELEASE = {
             label: "Much Bigger (x1.5)"
           }]
         },
-        F = {
+        O = {
           label: "Header Multiplier",
           name: "--header-multiplier",
           description: "Set the --header-multiplier",
           component: "text"
         },
-        O = {
+        F = {
           label: "Header Color",
           name: "--color-h-dynamic",
           description: "Applies to each header tag inside this component, unless overridden.",
           component: "color"
         },
-        X = {
+        H = {
           label: "Subtitle Color",
           name: "--color-subtitle-dynamic",
           description: "Applies to ONLY the post title. Should only update this on the root level.",
           component: "color"
         },
-        U = {
+        X = {
           label: "Body Color",
           name: "color",
           description: "Applies to the body font.",
           component: "color"
         },
-        H = {
+        U = {
           label: "Highlight Color",
           name: "--highlight-color",
           component: "color"
@@ -645,19 +648,19 @@ _global.SENTRY_RELEASE = {
           description: "Set the image width",
           component: "text"
         },
-        Q = {
+        Y = {
           label: "Image Min-Width",
           name: "min-width",
           description: "Set the image min-width",
           component: "text"
         },
-        Y = {
+        K = {
           label: "Object Fit",
           name: "object-fit",
           description: "Set the image object-fit",
           component: "text"
         },
-        K = {
+        Q = {
           label: "Image Max-Width",
           name: "max-width",
           description: "Set the image max-width",
@@ -767,7 +770,7 @@ _global.SENTRY_RELEASE = {
             filter: t = null
           } = e;
           const a = [{
-              ...s("Position")
+              ...d("Position")
             }, {
               ...u
             }, {
@@ -777,14 +780,14 @@ _global.SENTRY_RELEASE = {
             }, {
               ...v
             }, {
-              ...f
-            }, {
               ...h
+            }, {
+              ...f
             }, {
               ...c("Position")
             }],
             l = [{
-              ...s("Box Model")
+              ...d("Box Model")
             }, {
               ...x
             }, {
@@ -796,13 +799,13 @@ _global.SENTRY_RELEASE = {
             }, {
               ...w
             }, {
-              ...I
-            }, {
               ..._
             }, {
               ...C
             }, {
-              ...L
+              ...I
+            }, {
+              ...T
             }, {
               ...M
             }, {
@@ -837,30 +840,30 @@ _global.SENTRY_RELEASE = {
               ...c("Box Model")
             }],
             n = [{
-              ...s("Text")
+              ...d("Text")
             }, {
-              ...F
+              ...O
             }, {
               ...R
             }, {
-              ...A
-            }, {
-              ...$
+              ...j
             }, {
               ...z
             }, {
-              ...O
+              ...$
+            }, {
+              ...F
+            }, {
+              ...H
             }, {
               ...X
             }, {
               ...U
             }, {
-              ...H
-            }, {
               ...c("Text")
             }],
-            d = [{
-              ...s("Background..")
+            s = [{
+              ...d("Background..")
             }, ...o({
               filter: t
             }), ...i({
@@ -871,16 +874,16 @@ _global.SENTRY_RELEASE = {
               ...c("Background")
             }],
             m = [{
-              ...s("Grid")
+              ...d("Grid")
             }, {
-              ...N("--grid-position-mobile", "Grid Position (Mobile)")
+              ...L("--grid-position-mobile", "Grid Position (Mobile)")
             }, {
               label: "Grid Template Override (Mobile)",
               name: "--grid-template-mobile-override",
               description: "Short-hand for grid template rows/columns (overrides the above field)",
               component: "text"
             }, {
-              ...N("--grid-position-desktop", "Grid Position (Desktop)")
+              ...L("--grid-position-desktop", "Grid Position (Desktop)")
             }, {
               label: "Grid Template Override (Desktop)",
               name: "--grid-template-desktop-override",
@@ -889,32 +892,32 @@ _global.SENTRY_RELEASE = {
             }, {
               ...B
             }, {
-              ...P
-            }, {
               ...G
             }, {
-              ...T
+              ...N
+            }, {
+              ...A
+            }, {
+              ...P
             }, {
               ...E
             }, {
               ...D
             }, {
-              ...j
-            }, {
               ...c("Grid")
             }],
             p = [{
-              ...s("Image")
+              ...d("Image")
             }, {
-              ...Y
+              ...K
             }, {
               ...te
             }, {
               ...q
             }, {
-              ...Q
+              ...Y
             }, {
-              ...K
+              ...Q
             }, {
               ...J
             }, {
@@ -924,7 +927,7 @@ _global.SENTRY_RELEASE = {
             }, {
               ...c("Image")
             }],
-            le = [...l, ...a, ...n, ...d];
+            le = [...l, ...a, ...n, ...s];
           return "grid" === t && le.push(...m), ("image" === t || "layeredImage" === t || t?.startsWith("parallax")) && le.push(...p), "gridItem" === t && le.push({
             ...B
           }), "title" === t && (le.push(V), le.push(W)), le
@@ -946,7 +949,18 @@ _global.SENTRY_RELEASE = {
           }
         };
       var oe = a(13916);
-      const ie = () => ({
+      const ie = e => {
+          let {
+            filter: t = null
+          } = e;
+          return {
+            name: "className",
+            label: "Class Names",
+            component: "text",
+            description: "Must be a space-separated list of valid CSS class names (excluding periods)."
+          }
+        },
+        re = () => ({
           name: "gtm",
           label: "Google Analytics",
           component: "group",
@@ -963,12 +977,18 @@ _global.SENTRY_RELEASE = {
             label: "Text",
             component: "text"
           }],
-          itemProps: e => Le(e, {
+          itemProps: e => Ie(e, {
             label: "GA Event Tracking"
           }),
           defaultItem: () => Ce()
         }),
-        re = function() {
+        se = () => ({
+          name: "id",
+          label: "ID",
+          description: "HTML attribute used to specify a unique id for an element. (WITHOUT the # sign, sometimes used for jump links)",
+          component: "text"
+        }),
+        de = function() {
           return {
             name: "key",
             component: "text",
@@ -978,15 +998,15 @@ _global.SENTRY_RELEASE = {
             }
           }
         },
-        de = function() {
+        ce = function() {
           let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "";
           return {
             label: `${e} Line`,
             name: `${e}_line`,
-            component: () => (0, d.jsx)("hr", {})
+            component: () => (0, s.jsx)("hr", {})
           }
         },
-        se = e => {
+        me = e => {
           let {
             name: t,
             label: a = t
@@ -1015,15 +1035,15 @@ _global.SENTRY_RELEASE = {
             }]
           }
         },
-        ce = [{
-          ...de("Background Image Gradient")
+        pe = [{
+          ...ce("Background Image Gradient")
         }, {
           ... function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "Label";
             return {
               label: e,
               name: e.toLowerCase().split(" ").join("_"),
-              component: () => (0, d.jsx)("h3", {
+              component: () => (0, s.jsx)("h3", {
                 style: {
                   marginBottom: "var(--tina-padding-small)",
                   "--color-h3": "var(--tina-color-grey-8)"
@@ -1065,23 +1085,23 @@ _global.SENTRY_RELEASE = {
           label: "Bottom Color",
           component: "color"
         }, {
-          ...de("Background Image Gradient")
+          ...ce("Background Image Gradient")
         }, {
           label: "CSS for Linear Gradient (Optional)",
           description: "ex: to bottom, rgba(0,0,0,0.5) 80%, #000000",
           name: "style.--linear-gradient",
           component: "text"
         }],
-        me = e => {
+        ue = e => {
           let {
             game: t = null,
             label: a = "Image Configuration"
           } = e;
-          const l = [Me({
+          const l = [Te({
             name: "alt",
             label: "Alt Text",
             component: "text"
-          }), Me({
+          }), Te({
             label: "Badge Text",
             name: "badge",
             description: "What text should appear inside the badge? If blank, the badge will not be displayed.",
@@ -1091,7 +1111,7 @@ _global.SENTRY_RELEASE = {
             name: "splitter",
             description: "Character that used as a line break for badge text. Default is a single space.",
             component: "text"
-          }, se({
+          }, me({
             name: "sources.en_us",
             label: "Upload Global Images"
           }), {
@@ -1099,10 +1119,10 @@ _global.SENTRY_RELEASE = {
             label: "Upload Local Images",
             description: "The site will default to the global value, but use a local one on local sites if it exists here.",
             component: "group",
-            fields: ["de_de", "fr_fr", "it_it", "ja_jp", "ru_ru", "es_es", "es_mx", "pt_br", "ko_kr", "zh_tw", "pl_pl", "zh_hans"].map((e => se({
+            fields: ["de_de", "fr_fr", "it_it", "ja_jp", "ru_ru", "es_es", "es_mx", "pt_br", "ko_kr", "zh_tw", "pl_pl", "zh_hans"].map((e => me({
               name: e
             })))
-          }, Me({
+          }, Te({
             name: "frame",
             label: "Choose Frame",
             component: "select",
@@ -1128,11 +1148,11 @@ _global.SENTRY_RELEASE = {
               value: "frame_6",
               label: "Frame 6"
             }]
-          }), Me({
+          }), Te({
             name: "caption",
             label: "Caption",
             component: "html"
-          }), re({
+          }), de({
             label: "Translation Key",
             description: "Only used for images that were marked as translatable after they were created. This value must begin with `key_` and MUST BE UNIQUE."
           })];
@@ -1178,107 +1198,48 @@ _global.SENTRY_RELEASE = {
             label: "Background Repeat",
             component: "select",
             options: ["", "repeat", "no-repeat", "repeat-y", "repeat-x", "initial", "inherit"]
-          }), "Background Image" === a && l.push(...ce), {
+          }), "Background Image" === a && l.push(...pe), {
             name: "image",
             label: a,
             component: "group",
             fields: l,
             defaultItem: () => Ce(n),
-            itemProps: e => Le(e, {
+            itemProps: e => Ie(e, {
               label: e?.name ? `${e.name} [Image]` : "New [Image]"
             })
           }
         };
-      var pe = a(81788),
-        ue = a(2942);
-      const be = e => {
-          let {
-            name: t,
-            label: a = t,
-            description: l
-          } = e;
-          return {
-            name: t,
-            label: a,
-            description: l,
-            component: "image",
-            clearable: !0,
-            uploadDir: oe.XC,
-            parse: oe.qg,
-            previewSrc: oe.z0
-          }
-        },
-        ge = e => {
-          let {
-            name: t,
-            label: a = t,
-            description: l
-          } = e;
-          return {
-            name: t,
-            label: a,
-            description: l ?? "If responsive, only the Mobile Source is needed.",
-            component: "group",
-            fields: [be({
-              name: "mobile",
-              label: "Mobile Source"
-            }), be({
-              name: "desktop",
-              label: "Desktop Source"
-            })]
-          }
-        },
-        ve = e => {
-          let {
-            name: t = "image",
-            label: a = "Image",
-            description: l,
-            ImageField: n = be
-          } = e;
-          const o = pe.POSIXLocales;
-          return {
-            name: t,
-            label: a,
-            description: l,
-            component: "group",
-            fields: [n({
-              name: "sources.en_us",
-              label: "Upload Global Images"
-            }), {
-              name: "sources",
-              label: "Upload Locale Images",
-              description: "The site will default to the global value, but use a locale one on locale sites if it exists here.",
-              component: "group",
-              fields: o.map((e => n({
-                name: e
-              })))
-            }],
-            defaultItem: () => Ce(),
-            itemProps: e => Le(e, {
-              label: e?.name ? `${e.name} [Image]` : "New [Image]"
-            })
-          }
-        },
-        fe = e => {
-          let {
-            name: t,
-            label: a,
-            description: l
-          } = e;
-          return ve({
-            name: "image",
-            label: "Image",
-            description: l,
-            ImageField: ge
-          })
-        },
-        he = ((0, ue.cG)("Background Image Gradient"), (0, ue.ri)("Background Image Gradient"), (0, ue.cG)("Background Image Gradient"), () => ({
+      a(81788);
+      var be = a(2942);
+      (0, be.cG)("Background Image Gradient"), (0, be.ri)("Background Image Gradient"), (0, be.cG)("Background Image Gradient");
+      const ge = () => ({
+          name: "impressionTracking",
+          label: "Impression Tracking",
+          component: "group",
+          fields: [{
+            name: "shouldTrack",
+            label: "Track Section Impression",
+            component: "toggle",
+            description: "Should a GA tracking event be fired when this section enters the viewport? (Event data is set in GA Event Tracking section)"
+          }, {
+            name: "threshold",
+            label: "Threshold",
+            component: "number",
+            step: .1,
+            description: "A number from 0 - 1, how much of the component should be in the viewport before tracking? (i.e. 0.6 is 60%)"
+          }],
+          itemProps: e => Ie(e, {
+            label: "GA Impression Tracking"
+          }),
+          defaultItem: () => Ce()
+        }),
+        ve = () => ({
           label: "Name",
           name: "name",
           component: "text",
           description: "Block label for internal use only"
-        })),
-        xe = function() {
+        }),
+        he = function() {
           let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
           return {
             component: "group-list",
@@ -1332,62 +1293,121 @@ _global.SENTRY_RELEASE = {
               label: "Button Text",
               description: "For non-platform button labels.",
               component: "text"
-            }, ie()],
+            }, re()],
             ...e,
-            itemProps: e => Le(e, {
+            itemProps: e => Ie(e, {
               label: `Link for [${e?.platform??""}]`
             }),
             defaultItem: () => Ce()
           }
         };
-      var Se = a(95966),
-        ye = a(61398),
-        ke = a(56086);
-      const we = e => {
-        let {
-          label: t = "Tags",
-          name: a = "tags",
-          context: l = null
-        } = e;
-        return {
-          label: t,
-          name: a,
-          component: function(e) {
-            let {
-              field: t,
-              input: a,
-              meta: n
-            } = e;
-            const {
-              data: o
-            } = (0, Se.useQuery)(ye.TagList, {
-              variables: {
-                locale: "en_us",
-                context: l
-              }
-            });
-            if (!o || !(o?.tagList ?? []).length) return null;
-            const i = [{
-              id: "",
-              name: "-- Select Tag --"
-            }, ...o.tagList];
-            return (0, d.jsx)(ke.A, {
-              field: t,
-              input: a,
-              meta: n,
-              children: (0, d.jsx)("select", {
-                ...a,
-                children: i.map((e => (0, d.jsx)("option", {
-                  value: e.id,
-                  children: e.name
-                }, e.id)))
-              })
+      a(95966), a(61398), a(56086);
+      const fe = () => Te({
+          label: "Text",
+          name: we,
+          component: "html"
+        }),
+        xe = () => ({
+          label: "Hardcoded Theme",
+          name: "theme",
+          description: "Dev-built themes for one-off posts.",
+          component: "select",
+          options: [{
+            value: "",
+            label: "-- Select Theme --"
+          }, {
+            value: "gtao-halloween-2022",
+            label: "GTAO Halloween 2022"
+          }, {
+            value: "gtao-tuner-promo",
+            label: "GTAO Tuner Promo"
+          }, {
+            value: "gtao-tuner-announcement",
+            label: "GTAO Tuner Announcement"
+          }, {
+            value: "gta-trilogy-announcement",
+            label: "GTA Trilogy Announcement"
+          }, {
+            value: "rdo-telegram",
+            label: "RDO Telegram"
+          }, {
+            value: "9998",
+            label: "9998"
+          }, {
+            value: "9997",
+            label: "9997"
+          }, {
+            value: "9996",
+            label: "9996"
+          }]
+        });
+      a(62229), a(44146);
+      const Se = e => {
+          let {
+            name: t,
+            label: a = t
+          } = e;
+          return {
+            name: t,
+            label: a,
+            component: "group",
+            description: "(If responsive, only Mobile Source is needed)",
+            fields: [{
+              name: "mobile",
+              label: "Mobile Source",
+              component: "image",
+              clearable: !0,
+              uploadDir: oe.XC,
+              parse: oe.qg,
+              previewSrc: oe.z0
+            }, {
+              name: "desktop",
+              label: "Desktop Source",
+              component: "image",
+              clearable: !0,
+              uploadDir: oe.XC,
+              parse: oe.qg,
+              previewSrc: oe.z0
+            }]
+          }
+        },
+        ye = ["de_de", "fr_fr", "it_it", "ja_jp", "ru_ru", "es_es", "es_mx", "pt_br", "ko_kr", "zh_tw", "pl_pl", "zh_hans"],
+        ke = e => {
+          let {
+            name: t = "image",
+            label: a = "Image configuration"
+          } = e;
+          return {
+            name: t,
+            label: a,
+            component: "group",
+            fields: [Te({
+              name: "alt",
+              label: "Alt Text",
+              component: "text"
+            }), Se({
+              name: "sources.en_us",
+              label: "Upload global images"
+            }), {
+              name: "sources",
+              label: "Upload local images",
+              description: "The site will default to the global value, but use a local one on local sites if it exists here.",
+              component: "group",
+              fields: ye.map((e => Se({
+                name: e
+              })))
+            }, Te({
+              name: "caption",
+              label: "Caption",
+              component: "html"
+            })],
+            defaultItem: () => Ce(),
+            itemProps: e => Ie(e, {
+              label: `Image [${t}]`
             })
           }
-        }
-      };
-      a(62229), a(44146);
-      const Ie = "content",
+        },
+        we = "content",
         _e = "_memoq",
         Ce = function() {
           return {
@@ -1395,13 +1415,13 @@ _global.SENTRY_RELEASE = {
             key: `key_${(0,l.A)()}`
           }
         },
-        Le = function(e) {
+        Ie = function(e) {
           return {
             ...arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
             key: e.key
           }
         },
-        Me = e => ({
+        Te = e => ({
           ...e,
           name: `${_e}.${e.name}`
         })
@@ -1420,8 +1440,8 @@ _global.SENTRY_RELEASE = {
           width: a,
           height: i,
           resizable: r,
-          field: d,
-          input: s,
+          field: s,
+          input: d,
           meta: c,
           name: m,
           label: p,
@@ -1437,17 +1457,17 @@ _global.SENTRY_RELEASE = {
           style: {
             paddingBottom: "10px"
           },
-          children: (0, l.cloneElement)(g, ...s)
+          children: (0, l.cloneElement)(g, ...d)
         }) : g;
         return (0, o.jsxs)("div", {
-          className: "rockstargames-sites-legacye8a5daf12553885a40529a38c92c1d67 FieldWrapper-sc-custom jpQZXK",
+          className: "rockstargames-sites-gta-gen9e8a5daf12553885a40529a38c92c1d67 FieldWrapper-sc-custom jpQZXK",
           style: t,
           children: [(0, o.jsxs)("label", {
-            className: "rockstargames-sites-legacyceac2b2784e621f05ce51dade558df8d FieldLabel-sc-custom dzLxXV",
-            htmlFor: m ?? d?.name,
-            children: [p ?? d?.label, (0, o.jsx)("span", {
-              className: "rockstargames-sites-legacya0b2c6a5b66b849b487834caa1f6e3c8 FieldDescription-sc-custom cyKzVM",
-              children: u ?? d?.description
+            className: "rockstargames-sites-gta-gen9ceac2b2784e621f05ce51dade558df8d FieldLabel-sc-custom dzLxXV",
+            htmlFor: m ?? s?.name,
+            children: [p ?? s?.label, (0, o.jsx)("span", {
+              className: "rockstargames-sites-gta-gen9a0b2c6a5b66b849b487834caa1f6e3c8 FieldDescription-sc-custom cyKzVM",
+              children: u ?? s?.description
             })]
           }), (0, o.jsx)(v, {}), (b || c?.error) && (0, o.jsx)("div", {
             className: "FieldError_sc_custom",
@@ -1654,8 +1674,8 @@ _global.SENTRY_RELEASE = {
         for (o.forEach((function(e) {
             r.add(e)
           })); r.size > 0;) {
-          var d = r;
-          r = new Set, d.forEach((function(e) {
+          var s = r;
+          r = new Set, s.forEach((function(e) {
             i.has(e) || (i.add(e), (l[e] || new Set).forEach((function(e) {
               r.add(e)
             })))

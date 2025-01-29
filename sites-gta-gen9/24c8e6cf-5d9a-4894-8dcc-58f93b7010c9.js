@@ -23,11 +23,11 @@ _global.SENTRY_RELEASE = {
         throw new Error("setTimeout has not been defined")
       }
 
-      function i() {
+      function a() {
         throw new Error("clearTimeout has not been defined")
       }
 
-      function a(e) {
+      function i(e) {
         if (t === setTimeout) return setTimeout(e, 0);
         if ((t === o || !t) && setTimeout) return t = setTimeout, setTimeout(e, 0);
         try {
@@ -46,31 +46,31 @@ _global.SENTRY_RELEASE = {
           t = o
         }
         try {
-          n = "function" == typeof clearTimeout ? clearTimeout : i
+          n = "function" == typeof clearTimeout ? clearTimeout : a
         } catch (e) {
-          n = i
+          n = a
         }
       }();
-      var c, f = [],
-        s = !1,
-        u = -1;
+      var c, s = [],
+        u = !1,
+        f = -1;
 
       function l() {
-        s && c && (s = !1, c.length ? f = c.concat(f) : u = -1, f.length && d())
+        u && c && (u = !1, c.length ? s = c.concat(s) : f = -1, s.length && d())
       }
 
       function d() {
-        if (!s) {
-          var e = a(l);
-          s = !0;
-          for (var t = f.length; t;) {
-            for (c = f, f = []; ++u < t;) c && c[u].run();
-            u = -1, t = f.length
+        if (!u) {
+          var e = i(l);
+          u = !0;
+          for (var t = s.length; t;) {
+            for (c = s, s = []; ++f < t;) c && c[f].run();
+            f = -1, t = s.length
           }
-          c = null, s = !1,
+          c = null, u = !1,
             function(e) {
               if (n === clearTimeout) return clearTimeout(e);
-              if ((n === i || !n) && clearTimeout) return n = clearTimeout, clearTimeout(e);
+              if ((n === a || !n) && clearTimeout) return n = clearTimeout, clearTimeout(e);
               try {
                 return n(e)
               } catch (t) {
@@ -93,7 +93,7 @@ _global.SENTRY_RELEASE = {
         var t = new Array(arguments.length - 1);
         if (arguments.length > 1)
           for (var n = 1; n < arguments.length; n++) t[n - 1] = arguments[n];
-        f.push(new g(e, t)), 1 !== f.length || s || a(d)
+        s.push(new g(e, t)), 1 !== s.length || u || i(d)
       }, g.prototype.run = function() {
         this.fun.apply(null, this.array)
       }, r.title = "browser", r.browser = !0, r.env = {}, r.argv = [], r.version = "", r.versions = {}, r.on = h, r.addListener = h, r.once = h, r.off = h, r.removeListener = h, r.removeAllListeners = h, r.emit = h, r.prependListener = h, r.prependOnceListener = h, r.listeners = function(e) {

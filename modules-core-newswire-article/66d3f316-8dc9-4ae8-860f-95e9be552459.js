@@ -91,8 +91,8 @@ _global.SENTRY_RELEASE = {
       var o = s(31879),
         m = s.n(o),
         g = s(92440),
-        f = s(95966);
-      const u = e => {
+        u = s(95966);
+      const b = e => {
           let {
             impressionTracking: a,
             gtm: s = {},
@@ -104,7 +104,7 @@ _global.SENTRY_RELEASE = {
             children: t
           }) : t
         },
-        b = e => {
+        f = e => {
           let {
             to: a,
             children: s
@@ -144,16 +144,16 @@ _global.SENTRY_RELEASE = {
           } = e;
           return (0, d.jsx)("div", {
             style: s,
-            className: (0, f.classList)("rockstargames-modules-core-newswire-articled38af92e8657708abd3dc5295e62476c", r),
+            className: (0, u.classList)("rockstargames-modules-core-newswire-articled38af92e8657708abd3dc5295e62476c", r),
             id: l,
             "data-testid": "standard-group-of-items",
-            children: a.map((e => (0, d.jsx)(u, {
+            children: a.map((e => (0, d.jsx)(b, {
               impressionTracking: e?.impressionTracking,
               gtm: e?.gtm,
-              children: (0, d.jsx)(b, {
+              children: (0, d.jsx)(f, {
                 to: e?.to,
                 children: (0, d.jsxs)("div", {
-                  className: (0, f.classList)("rockstargames-modules-core-newswire-articlea9b63d3aa2f18fa6c84b19c8993a7893", e.className),
+                  className: (0, u.classList)("rockstargames-modules-core-newswire-articlea9b63d3aa2f18fa6c84b19c8993a7893", e.className),
                   style: e?.style ?? {},
                   ...e?.props,
                   children: [e?.image || e?.videoId ? (0, d.jsx)(p, {

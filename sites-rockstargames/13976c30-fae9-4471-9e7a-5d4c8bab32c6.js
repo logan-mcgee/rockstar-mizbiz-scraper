@@ -21,8 +21,8 @@ _global.SENTRY_RELEASE = {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => a,
         Lightbox_Download_Button_Label: () => u,
-        Lightbox_Download_Button_Tooltip: () => f,
-        Lightbox_Open_Button_Label: () => L,
+        Lightbox_Download_Button_Tooltip: () => L,
+        Lightbox_Open_Button_Label: () => f,
         Lightbox_Reset_Zoom_Button_Label: () => s,
         Lightbox_Reset_Zoom_Button_Tooltip: () => d,
         Lightbox_Zoom_In_Button_Label: () => n,
@@ -44,8 +44,8 @@ _global.SENTRY_RELEASE = {
         r = "Nível de zoom",
         g = "{zoom}%",
         u = "Baixar",
-        f = "Baixar",
-        L = "Expandir imagem",
+        L = "Baixar",
+        f = "Expandir imagem",
         h = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: a,
@@ -58,8 +58,8 @@ _global.SENTRY_RELEASE = {
           Lightbox_Zoom_Slider_Label: r,
           Lightbox_Zoom_Slider_Tooltip: g,
           Lightbox_Download_Button_Label: u,
-          Lightbox_Download_Button_Tooltip: f,
-          Lightbox_Open_Button_Label: L
+          Lightbox_Download_Button_Tooltip: L,
+          Lightbox_Open_Button_Label: f
         }
     }
   }

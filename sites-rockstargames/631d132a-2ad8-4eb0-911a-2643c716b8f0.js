@@ -22,8 +22,8 @@ _global.SENTRY_RELEASE = {
       });
       var n = s(62229),
         t = s(85865),
-        d = s.n(t),
-        o = s(81788),
+        o = s.n(t),
+        d = s(81788),
         r = s(539),
         l = s(95966),
         i = s(36671),
@@ -34,8 +34,8 @@ _global.SENTRY_RELEASE = {
         b = s(25469),
         y = s(72251),
         p = s(98096);
-      const m = (0, o.withIntl)((() => {
-        const e = (0, o.useIntl)(),
+      const m = (0, d.withIntl)((() => {
+        const e = (0, d.useIntl)(),
           a = (0, l.useLocale)(),
           [s, t] = ((0, l.useQueryParams)(), (0, n.useState)({})),
           {
@@ -69,7 +69,7 @@ _global.SENTRY_RELEASE = {
                 lastUpdatedDate: e.formatMessage(r.en.resources_last_updated_date)
               }), (0, p.jsx)("div", {
                 className: b.A.bodyContent,
-                children: (0, p.jsx)(d(), {
+                children: (0, p.jsx)(o(), {
                   renderInWrapper: !1,
                   jsx: m,
                   onError: e => {

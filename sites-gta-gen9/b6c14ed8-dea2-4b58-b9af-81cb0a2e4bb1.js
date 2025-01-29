@@ -26,21 +26,21 @@ _global.SENTRY_RELEASE = {
     },
     5718: (e, n, t) => {
       t.d(n, {
-        T0: () => a
+        T0: () => o
       });
       var r = t(62229),
-        o = t(45739),
-        a = function() {
-          var e, n, t, a = (n = 0, t = null, e = {
+        a = t(45739),
+        o = function() {
+          var e, n, t, o = (n = 0, t = null, e = {
             add: function(e) {
-              var r, a;
+              var r, o;
               0 == n && (t = function() {
                 if (!document) return null;
                 var e = document.createElement("style");
                 e.type = "text/css";
-                var n = (0, o.m)();
+                var n = (0, a.m)();
                 return n && e.setAttribute("nonce", n), e
-              }()) && (a = e, (r = t).styleSheet ? r.styleSheet.cssText = a : r.appendChild(document.createTextNode(a)), function(e) {
+              }()) && (o = e, (r = t).styleSheet ? r.styleSheet.cssText = o : r.appendChild(document.createTextNode(o)), function(e) {
                 (document.head || document.getElementsByTagName("head")[0]).appendChild(e)
               }(t)), n++
             },
@@ -58,7 +58,7 @@ _global.SENTRY_RELEASE = {
           return function(e) {
             var n = e.styles,
               t = e.dynamic;
-            return a(n, t), null
+            return o(n, t), null
           }
         }
     },
@@ -67,46 +67,46 @@ _global.SENTRY_RELEASE = {
         m: () => c
       });
       var r = t(78322),
-        o = t(62229),
-        a = function(e) {
+        a = t(62229),
+        o = function(e) {
           var n = e.sideCar,
             t = (0, r.Tt)(e, ["sideCar"]);
           if (!n) throw new Error("Sidecar: please provide `sideCar` property to import the right car");
-          var a = n.read();
-          if (!a) throw new Error("Sidecar medium not found");
-          return o.createElement(a, (0, r.Cl)({}, t))
+          var o = n.read();
+          if (!o) throw new Error("Sidecar medium not found");
+          return a.createElement(o, (0, r.Cl)({}, t))
         };
 
       function c(e, n) {
-        return e.useMedium(n), a
+        return e.useMedium(n), o
       }
-      a.isSideCarExport = !0
+      o.isSideCarExport = !0
     },
     64147: (e, n, t) => {
       t.d(n, {
         A: () => z
       });
       var r = t(78322),
-        o = t(62229),
-        a = "right-scroll-bar-position",
+        a = t(62229),
+        o = "right-scroll-bar-position",
         c = "width-before-scroll-bar";
 
       function i(e, n) {
         return "function" == typeof e ? e(n) : e && (e.current = n), e
       }
-      var u = "undefined" != typeof window ? o.useLayoutEffect : o.useEffect,
+      var u = "undefined" != typeof window ? a.useLayoutEffect : a.useEffect,
         l = new WeakMap;
       var d = (0, t(64269).f)(),
         s = function() {},
-        f = o.forwardRef((function(e, n) {
-          var t = o.useRef(null),
-            a = o.useState({
+        f = a.forwardRef((function(e, n) {
+          var t = a.useRef(null),
+            o = a.useState({
               onScrollCapture: s,
               onWheelCapture: s,
               onTouchMoveCapture: s
             }),
-            c = a[0],
-            f = a[1],
+            c = o[0],
+            f = o[1],
             h = e.forwardProps,
             v = e.children,
             m = e.className,
@@ -123,42 +123,42 @@ _global.SENTRY_RELEASE = {
             T = (0, r.Tt)(e, ["forwardProps", "children", "className", "removeScrollBar", "enabled", "shards", "sideCar", "noIsolation", "inert", "allowPinchZoom", "as", "gapMode"]),
             M = w,
             _ = function(e, n) {
-              var t, r, a, c = (t = n || null, r = function(n) {
+              var t, r, o, c = (t = n || null, r = function(n) {
                 return e.forEach((function(e) {
                   return i(e, n)
                 }))
-              }, (a = (0, o.useState)((function() {
+              }, (o = (0, a.useState)((function() {
                 return {
                   value: t,
                   callback: r,
                   facade: {
                     get current() {
-                      return a.value
+                      return o.value
                     },
                     set current(e) {
-                      var n = a.value;
-                      n !== e && (a.value = e, a.callback(e, n))
+                      var n = o.value;
+                      n !== e && (o.value = e, o.callback(e, n))
                     }
                   }
                 }
-              }))[0]).callback = r, a.facade);
+              }))[0]).callback = r, o.facade);
               return u((function() {
                 var n = l.get(c);
                 if (n) {
                   var t = new Set(n),
                     r = new Set(e),
-                    o = c.current;
+                    a = c.current;
                   t.forEach((function(e) {
                     r.has(e) || i(e, null)
                   })), r.forEach((function(e) {
-                    t.has(e) || i(e, o)
+                    t.has(e) || i(e, a)
                   }))
                 }
                 l.set(c, e)
               }), [e]), c
             }([t, n]),
             N = (0, r.Cl)((0, r.Cl)({}, T), c);
-          return o.createElement(o.Fragment, null, g && o.createElement(M, {
+          return a.createElement(a.Fragment, null, g && a.createElement(M, {
             sideCar: d,
             removeScrollBar: p,
             shards: b,
@@ -168,9 +168,9 @@ _global.SENTRY_RELEASE = {
             allowPinchZoom: !!C,
             lockRef: t,
             gapMode: R
-          }), h ? o.cloneElement(o.Children.only(v), (0, r.Cl)((0, r.Cl)({}, N), {
+          }), h ? a.cloneElement(a.Children.only(v), (0, r.Cl)((0, r.Cl)({}, N), {
             ref: _
-          })) : o.createElement(S, (0, r.Cl)({}, N, {
+          })) : a.createElement(S, (0, r.Cl)({}, N, {
             className: m,
             ref: _
           }), v))
@@ -181,7 +181,7 @@ _global.SENTRY_RELEASE = {
         inert: !1
       }, f.classNames = {
         fullWidth: c,
-        zeroRight: a
+        zeroRight: o
       };
       var h, v, m, p, g = t(50555),
         b = t(45739),
@@ -211,7 +211,7 @@ _global.SENTRY_RELEASE = {
             !--m && p && (p.parentNode && p.parentNode.removeChild(p), p = null)
           }
         }, v = function(e, n) {
-          o.useEffect((function() {
+          a.useEffect((function() {
             return h.add(e),
               function() {
                 h.remove()
@@ -224,11 +224,11 @@ _global.SENTRY_RELEASE = {
         }),
         C = "data-scroll-locked",
         k = function(e, n, t, r) {
-          var o = e.left,
+          var a = e.left,
             i = e.top,
             u = e.right,
             l = e.gap;
-          return void 0 === t && (t = "margin"), "\n  .".concat("with-scroll-bars-hidden", " {\n   overflow: hidden ").concat(r, ";\n   padding-right: ").concat(l, "px ").concat(r, ";\n  }\n  body[").concat(C, "] {\n    overflow: hidden ").concat(r, ";\n    overscroll-behavior: contain;\n    ").concat([n && "position: relative ".concat(r, ";"), "margin" === t && "\n    padding-left: ".concat(o, "px;\n    padding-top: ").concat(i, "px;\n    padding-right: ").concat(u, "px;\n    margin-left:0;\n    margin-top:0;\n    margin-right: ").concat(l, "px ").concat(r, ";\n    "), "padding" === t && "padding-right: ".concat(l, "px ").concat(r, ";")].filter(Boolean).join(""), "\n  }\n  \n  .").concat(a, " {\n    right: ").concat(l, "px ").concat(r, ";\n  }\n  \n  .").concat(c, " {\n    margin-right: ").concat(l, "px ").concat(r, ";\n  }\n  \n  .").concat(a, " .").concat(a, " {\n    right: 0 ").concat(r, ";\n  }\n  \n  .").concat(c, " .").concat(c, " {\n    margin-right: 0 ").concat(r, ";\n  }\n  \n  body[").concat(C, "] {\n    ").concat("--removed-body-scroll-bar-size", ": ").concat(l, "px;\n  }\n")
+          return void 0 === t && (t = "margin"), "\n  .".concat("with-scroll-bars-hidden", " {\n   overflow: hidden ").concat(r, ";\n   padding-right: ").concat(l, "px ").concat(r, ";\n  }\n  body[").concat(C, "] {\n    overflow: hidden ").concat(r, ";\n    overscroll-behavior: contain;\n    ").concat([n && "position: relative ".concat(r, ";"), "margin" === t && "\n    padding-left: ".concat(a, "px;\n    padding-top: ").concat(i, "px;\n    padding-right: ").concat(u, "px;\n    margin-left:0;\n    margin-top:0;\n    margin-right: ").concat(l, "px ").concat(r, ";\n    "), "padding" === t && "padding-right: ".concat(l, "px ").concat(r, ";")].filter(Boolean).join(""), "\n  }\n  \n  .").concat(o, " {\n    right: ").concat(l, "px ").concat(r, ";\n  }\n  \n  .").concat(c, " {\n    margin-right: ").concat(l, "px ").concat(r, ";\n  }\n  \n  .").concat(o, " .").concat(o, " {\n    right: 0 ").concat(r, ";\n  }\n  \n  .").concat(c, " .").concat(c, " {\n    margin-right: 0 ").concat(r, ";\n  }\n  \n  body[").concat(C, "] {\n    ").concat("--removed-body-scroll-bar-size", ": ").concat(l, "px;\n  }\n")
         },
         S = function() {
           var e = parseInt(document.body.getAttribute(C) || "0", 10);
@@ -238,23 +238,23 @@ _global.SENTRY_RELEASE = {
           var n = e.noRelative,
             t = e.noImportant,
             r = e.gapMode,
-            a = void 0 === r ? "margin" : r;
-          o.useEffect((function() {
+            o = void 0 === r ? "margin" : r;
+          a.useEffect((function() {
             return document.body.setAttribute(C, (S() + 1).toString()),
               function() {
                 var e = S() - 1;
                 e <= 0 ? document.body.removeAttribute(C) : document.body.setAttribute(C, e.toString())
               }
           }), []);
-          var c = o.useMemo((function() {
+          var c = a.useMemo((function() {
             return function(e) {
               if (void 0 === e && (e = "margin"), "undefined" == typeof window) return w;
               var n = function(e) {
                   var n = window.getComputedStyle(document.body),
                     t = n["padding" === e ? "paddingLeft" : "marginLeft"],
                     r = n["padding" === e ? "paddingTop" : "marginTop"],
-                    o = n["padding" === e ? "paddingRight" : "marginRight"];
-                  return [y(t), y(r), y(o)]
+                    a = n["padding" === e ? "paddingRight" : "marginRight"];
+                  return [y(t), y(r), y(a)]
                 }(e),
                 t = document.documentElement.clientWidth,
                 r = window.innerWidth;
@@ -264,10 +264,10 @@ _global.SENTRY_RELEASE = {
                 right: n[2],
                 gap: Math.max(0, r - t + n[2] - n[0])
               }
-            }(a)
-          }), [a]);
-          return o.createElement(E, {
-            styles: k(c, !n, a, t ? "" : "!important")
+            }(o)
+          }), [o]);
+          return a.createElement(E, {
+            styles: k(c, !n, o, t ? "" : "!important")
           })
         },
         T = t(5718),
@@ -297,8 +297,8 @@ _global.SENTRY_RELEASE = {
             r = n;
           do {
             if ("undefined" != typeof ShadowRoot && r instanceof ShadowRoot && (r = r.host), I(e, r)) {
-              var o = A(e, r);
-              if (o[1] > o[2]) return !0
+              var a = A(e, r);
+              if (a[1] > a[2]) return !0
             }
             r = r.parentNode
           } while (r && r !== t.body);
@@ -337,15 +337,15 @@ _global.SENTRY_RELEASE = {
         return n
       }
       const F = (0, g.m)(d, (function(e) {
-        var n = o.useRef([]),
-          t = o.useRef([0, 0]),
-          a = o.useRef(),
-          c = o.useState(Y++)[0],
-          i = o.useState(T.T0)[0],
-          u = o.useRef(e);
-        o.useEffect((function() {
+        var n = a.useRef([]),
+          t = a.useRef([0, 0]),
+          o = a.useRef(),
+          c = a.useState(Y++)[0],
+          i = a.useState(T.T0)[0],
+          u = a.useRef(e);
+        a.useEffect((function() {
           u.current = e
-        }), [e]), o.useEffect((function() {
+        }), [e]), a.useEffect((function() {
           if (e.inert) {
             document.body.classList.add("block-interactivity-".concat(c));
             var n = (0, r.fX)([e.lockRef.current], (e.shards || []).map(W), !0).filter(Boolean);
@@ -359,25 +359,25 @@ _global.SENTRY_RELEASE = {
               }
           }
         }), [e.inert, e.lockRef.current, e.shards]);
-        var l = o.useCallback((function(e, n) {
+        var l = a.useCallback((function(e, n) {
             if ("touches" in e && 2 === e.touches.length || "wheel" === e.type && e.ctrlKey) return !u.current.allowPinchZoom;
-            var r, o = B(e),
+            var r, a = B(e),
               c = t.current,
-              i = "deltaX" in e ? e.deltaX : c[0] - o[0],
-              l = "deltaY" in e ? e.deltaY : c[1] - o[1],
+              i = "deltaX" in e ? e.deltaX : c[0] - a[0],
+              l = "deltaY" in e ? e.deltaY : c[1] - a[1],
               d = e.target,
               s = Math.abs(i) > Math.abs(l) ? "h" : "v";
             if ("touches" in e && "h" === s && "range" === d.type) return !1;
             var f = L(s, d);
             if (!f) return !0;
             if (f ? r = s : (r = "v" === s ? "h" : "v", f = L(s, d)), !f) return !1;
-            if (!a.current && "changedTouches" in e && (i || l) && (a.current = r), !r) return !0;
-            var h = a.current || r;
-            return function(e, n, t, r, o) {
-              var a = function(e, n) {
+            if (!o.current && "changedTouches" in e && (i || l) && (o.current = r), !r) return !0;
+            var h = o.current || r;
+            return function(e, n, t, r, a) {
+              var o = function(e, n) {
                   return "h" === e && "rtl" === n ? -1 : 1
                 }(e, window.getComputedStyle(n).direction),
-                c = a * r,
+                c = o * r,
                 i = t.target,
                 u = n.contains(i),
                 l = !1,
@@ -387,53 +387,53 @@ _global.SENTRY_RELEASE = {
               do {
                 var h = A(e, i),
                   v = h[0],
-                  m = h[1] - h[2] - a * v;
+                  m = h[1] - h[2] - o * v;
                 (v || m) && I(e, i) && (s += m, f += v), i = i instanceof ShadowRoot ? i.host : i.parentNode
               } while (!u && i !== document.body || u && (n.contains(i) || n === i));
               return (d && (Math.abs(s) < 1 || !1) || !d && (Math.abs(f) < 1 || !1)) && (l = !0), l
             }(h, n, e, "h" === h ? i : l)
           }), []),
-          d = o.useCallback((function(e) {
+          d = a.useCallback((function(e) {
             var t = e;
             if (D.length && D[D.length - 1] === i) {
               var r = "deltaY" in t ? P(t) : B(t),
-                o = n.current.filter((function(e) {
-                  return e.name === t.type && (e.target === t.target || t.target === e.shadowParent) && (n = e.delta, o = r, n[0] === o[0] && n[1] === o[1]);
-                  var n, o
+                a = n.current.filter((function(e) {
+                  return e.name === t.type && (e.target === t.target || t.target === e.shadowParent) && (n = e.delta, a = r, n[0] === a[0] && n[1] === a[1]);
+                  var n, a
                 }))[0];
-              if (o && o.should) t.cancelable && t.preventDefault();
-              else if (!o) {
-                var a = (u.current.shards || []).map(W).filter(Boolean).filter((function(e) {
+              if (a && a.should) t.cancelable && t.preventDefault();
+              else if (!a) {
+                var o = (u.current.shards || []).map(W).filter(Boolean).filter((function(e) {
                   return e.contains(t.target)
                 }));
-                (a.length > 0 ? l(t, a[0]) : !u.current.noIsolation) && t.cancelable && t.preventDefault()
+                (o.length > 0 ? l(t, o[0]) : !u.current.noIsolation) && t.cancelable && t.preventDefault()
               }
             }
           }), []),
-          s = o.useCallback((function(e, t, r, o) {
-            var a = {
+          s = a.useCallback((function(e, t, r, a) {
+            var o = {
               name: e,
               delta: t,
               target: r,
-              should: o,
+              should: a,
               shadowParent: Z(r)
             };
-            n.current.push(a), setTimeout((function() {
+            n.current.push(o), setTimeout((function() {
               n.current = n.current.filter((function(e) {
-                return e !== a
+                return e !== o
               }))
             }), 1)
           }), []),
-          f = o.useCallback((function(e) {
-            t.current = B(e), a.current = void 0
+          f = a.useCallback((function(e) {
+            t.current = B(e), o.current = void 0
           }), []),
-          h = o.useCallback((function(n) {
+          h = a.useCallback((function(n) {
             s(n.type, P(n), n.target, l(n, e.lockRef.current))
           }), []),
-          v = o.useCallback((function(n) {
+          v = a.useCallback((function(n) {
             s(n.type, B(n), n.target, l(n, e.lockRef.current))
           }), []);
-        o.useEffect((function() {
+        a.useEffect((function() {
           return D.push(i), e.setCallbacks({
               onScrollCapture: h,
               onWheelCapture: h,
@@ -447,14 +447,14 @@ _global.SENTRY_RELEASE = {
         }), []);
         var m = e.removeScrollBar,
           p = e.inert;
-        return o.createElement(o.Fragment, null, p ? o.createElement(i, {
+        return a.createElement(a.Fragment, null, p ? a.createElement(i, {
           styles: X(c)
-        }) : null, m ? o.createElement(R, {
+        }) : null, m ? a.createElement(R, {
           gapMode: e.gapMode
         }) : null)
       }));
-      var j = o.forwardRef((function(e, n) {
-        return o.createElement(f, (0, r.Cl)({}, e, {
+      var j = a.forwardRef((function(e, n) {
+        return a.createElement(f, (0, r.Cl)({}, e, {
           ref: n,
           sideCar: F
         }))

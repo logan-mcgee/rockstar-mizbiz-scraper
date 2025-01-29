@@ -1,9 +1,9 @@
 ! function() {
   try {
-    var t = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      a = (new Error).stack;
-    a && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[a] = "8b0bc327-e6b6-404a-ac20-6a116b4e17c5", t._sentryDebugIdIdentifier = "sentry-dbid-8b0bc327-e6b6-404a-ac20-6a116b4e17c5")
-  } catch (t) {}
+    var a = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
+      t = (new Error).stack;
+    t && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[t] = "8b0bc327-e6b6-404a-ac20-6a116b4e17c5", a._sentryDebugIdIdentifier = "sentry-dbid-8b0bc327-e6b6-404a-ac20-6a116b4e17c5")
+  } catch (a) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
@@ -16,17 +16,17 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [4739], {
-    74739: (t, a, e) => {
-      e.r(a), e.d(a, {
+    74739: (a, t, e) => {
+      e.r(t), e.d(t, {
         default: () => o
       });
       var s = e(89950),
         c = e(95966);
       var r = e(98096);
-      const o = (0, c.withTranslations)((t => {
+      const o = (0, c.withTranslations)((a => {
         let {
-          t: a
-        } = t;
+          t
+        } = a;
         return (0, r.jsxs)("div", {
           className: "rockstargames-sites-rockstargamese82a9783654fecabcb84eedfee5045cb",
           children: [(0, r.jsx)("section", {
@@ -37,10 +37,10 @@ _global.SENTRY_RELEASE = {
           }), (0, r.jsxs)("section", {
             className: "rockstargames-sites-rockstargamese37eaed9bbdf361d6fc41a34f0c3658e",
             children: [(0, r.jsx)("p", {
-              children: a("contact.intro")
+              children: t("contact.intro")
             }), (0, r.jsxs)("p", {
               children: [(0, r.jsx)("span", {
-                children: a("contact.gtao-feedback")
+                children: t("contact.gtao-feedback")
               }), (0, r.jsx)("br", {}), (0, r.jsx)(s.A, {
                 to: "https://www.rockstargames.com/GTAOnline/feedback",
                 "data-gtm-category": "Contact Us",
@@ -50,7 +50,7 @@ _global.SENTRY_RELEASE = {
               })]
             }), (0, r.jsxs)("p", {
               children: [(0, r.jsx)("span", {
-                children: a("contact.rdo-feedback")
+                children: t("contact.rdo-feedback")
               }), (0, r.jsx)("br", {}), (0, r.jsx)(s.A, {
                 to: "https://www.rockstargames.com/reddeadonline/feedback",
                 "data-gtm-category": "Contact Us",
@@ -60,7 +60,7 @@ _global.SENTRY_RELEASE = {
               })]
             }), (0, r.jsxs)("p", {
               children: [(0, r.jsx)("span", {
-                children: a("contact.technical")
+                children: t("contact.technical")
               }), (0, r.jsx)("br", {}), (0, r.jsx)(s.A, {
                 to: "https://support.rockstargames.com/",
                 "data-gtm-category": "Contact Us",
@@ -70,7 +70,7 @@ _global.SENTRY_RELEASE = {
               })]
             }), (0, r.jsxs)("p", {
               children: [(0, r.jsx)("span", {
-                children: a("contact.career")
+                children: t("contact.career")
               }), (0, r.jsx)("br", {}), (0, r.jsx)(s.A, {
                 to: "https://www.rockstargames.com/careers/",
                 "data-gtm-category": "Contact Us",
@@ -80,7 +80,7 @@ _global.SENTRY_RELEASE = {
               })]
             }), (0, r.jsxs)("p", {
               children: [(0, r.jsx)("span", {
-                children: a("contact.copyright")
+                children: t("contact.copyright")
               }), (0, r.jsx)("br", {}), (0, r.jsx)(s.A, {
                 to: "https://support.rockstargames.com/articles/200153756/Policy-on-posting-copyrighted-Rockstar-Games-material",
                 "data-gtm-category": "Contact Us",
@@ -90,7 +90,7 @@ _global.SENTRY_RELEASE = {
               })]
             }), (0, r.jsxs)("p", {
               children: [(0, r.jsx)("span", {
-                children: a("contact.legal")
+                children: t("contact.legal")
               }), (0, r.jsx)("br", {}), (0, r.jsx)(s.A, {
                 to: "mailto:Copyright@take2games.com",
                 "data-gtm-category": "Contact Us",
@@ -100,7 +100,7 @@ _global.SENTRY_RELEASE = {
               })]
             }), (0, r.jsxs)("p", {
               children: [(0, r.jsx)("span", {
-                children: a("contact.latest")
+                children: t("contact.latest")
               }), (0, r.jsx)("br", {}), (0, r.jsx)(s.A, {
                 to: "https://www.rockstargames.com/",
                 "data-gtm-category": "Contact Us",

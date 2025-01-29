@@ -40,19 +40,19 @@ _global.SENTRY_RELEASE = {
               site: o,
               subDomain: r
             }, !0)
-          })) >= 0)), s = o[r >= 0 ? r : 0];
+          })) >= 0)), a = o[r >= 0 ? r : 0];
           return e || (e = {
             site: "www",
             subDomain: "local"
           }), {
-            ...s,
+            ...a,
             currentSite: e
           }
         }
     },
     1207: (e, t, n) => {
       n.d(t, {
-        OD: () => a,
+        OD: () => s,
         lv: () => i,
         pP: () => d,
         wC: () => r,
@@ -90,9 +90,9 @@ _global.SENTRY_RELEASE = {
             n = document.getElementById(t.get(e) || e);
           n && (o({
             element: n
-          }), s(n))
+          }), a(n))
         },
-        s = e => {
+        a = e => {
           const t = ["a", "button", "input", "textarea", "select", "details", '[tabindex]:not([tabindex="-1"])'];
           if (t.includes(e.nodeName.toLowerCase())) e.focus();
           else {
@@ -103,34 +103,34 @@ _global.SENTRY_RELEASE = {
             }
           }
         };
-      class a {
+      class s {
         constructor(e, t, n) {
           let o = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : null;
           this.name = e, this.friendlyName = t, this.id = n, this.alias = o
         }
       }
       const i = Object.freeze({
-          pc: new a("pc", "PC", 8),
-          ps: new a("ps", "PlayStation", 3),
-          ps3: new a("ps3", "PlayStation 3", 2),
-          ps4: new a("ps4", "PlayStation 4", 11),
-          ps5: new a("ps5", "PlayStation 5", 20),
-          xbox: new a("xbox", "Xbox", 4),
-          xbox360: new a("xbox360", "Xbox 360", 1),
-          xboxone: new a("xboxone", "Xbox One", 12),
-          xboxsx: new a("xboxsx", "Xbox Series X|S", 21, "xboxseriesxs"),
-          switch: new a("switch", "Nintendo Switch™", 18),
-          nintendoswitch: new a("nintendoswitch", "Nintendo Switch™", 18),
-          applestore: new a("applestore", "App Store", 102),
-          googleplay: new a("googleplay", "Google Play", 1023),
-          appStore: new a("app_store", "App Store", 102),
-          googlePlay: new a("ggle_play", "Google Play", 1023)
+          pc: new s("pc", "PC", 8),
+          ps: new s("ps", "PlayStation", 3),
+          ps3: new s("ps3", "PlayStation 3", 2),
+          ps4: new s("ps4", "PlayStation 4", 11),
+          ps5: new s("ps5", "PlayStation 5", 20),
+          xbox: new s("xbox", "Xbox", 4),
+          xbox360: new s("xbox360", "Xbox 360", 1),
+          xboxone: new s("xboxone", "Xbox One", 12),
+          xboxsx: new s("xboxsx", "Xbox Series X|S", 21, "xboxseriesxs"),
+          switch: new s("switch", "Nintendo Switch™", 18),
+          nintendoswitch: new s("nintendoswitch", "Nintendo Switch™", 18),
+          applestore: new s("applestore", "App Store", 102),
+          googleplay: new s("googleplay", "Google Play", 1023),
+          appStore: new s("app_store", "App Store", 102),
+          googlePlay: new s("ggle_play", "Google Play", 1023)
         }),
         l = Object.freeze(Object.values(i));
 
       function c(e) {
         if (!e) return;
-        if (e instanceof a) return e;
+        if (e instanceof s) return e;
         const t = e.toString().toLowerCase();
         return l.find((e => t === e.name || t === e.id.toString() || t === e.friendlyName.toLowerCase() || t === e.alias?.toLowerCase()))
       }
@@ -233,7 +233,7 @@ _global.SENTRY_RELEASE = {
         getScConfigForOrigin: () => g,
         getUriForGraphEnv: () => x,
         gql: () => Ye.J1,
-        gtmInit: () => st,
+        gtmInit: () => at,
         importAll: () => We.pT,
         isGen9Platform: () => We.lV,
         lsSettingsReactive: () => lt,
@@ -264,8 +264,8 @@ _global.SENTRY_RELEASE = {
         useQuery: () => je,
         useQueryParams: () => V,
         useReactiveVar: () => z.q,
-        useRockstarEventDispatcher: () => se,
-        useRockstarEventSubscriber: () => ae,
+        useRockstarEventDispatcher: () => ae,
+        useRockstarEventSubscriber: () => se,
         useRockstarToken: () => ee,
         useRockstarTokenPing: () => te,
         useRockstarTokenReactive: () => Z,
@@ -289,8 +289,8 @@ _global.SENTRY_RELEASE = {
         useNewswirePost: () => de
       });
       var r = n(1328),
-        s = n(1032),
-        a = n.n(s),
+        a = n(1032),
+        s = n.n(a),
         i = n(1999),
         l = n.n(i);
       const c = window?.env?.sc,
@@ -301,8 +301,8 @@ _global.SENTRY_RELEASE = {
             authHost: n,
             clientId: o,
             graphEnv: r,
-            scHost: s,
-            hostname: a,
+            scHost: a,
+            hostname: s,
             cdnBase: i,
             key: l,
             marketingAuthTLD: u
@@ -312,13 +312,13 @@ _global.SENTRY_RELEASE = {
             w = c?.cdnBase ?? i,
             m = c?.clientId ?? o,
             p = d?.marketingAuthTLD ?? u,
-            f = c?.scHost ?? s,
+            f = c?.scHost ?? a,
             v = d?.pingBearerEndpoint ?? "auth/ping-bearer.json";
           return {
             apiHost: `https://${h}.rockstargames.com`,
             graphEnv: c?.graphEnv ?? r,
             host: f,
-            hostname: a,
+            hostname: s,
             cdnBase: w,
             key: l,
             clientId: m,
@@ -384,14 +384,14 @@ _global.SENTRY_RELEASE = {
             fetchOptions: t = {},
             finalFetchOptions: n = {},
             query: o = null,
-            pingBearer: s,
+            pingBearer: a,
             requireBearerToken: i = !0,
             useCache: c = !0
           } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
           try {
             const {
               bearerToken: d = null
-            } = await (s?.()) ?? {}, u = {
+            } = await (a?.()) ?? {}, u = {
               "X-Requested-With": "XMLHttpRequest",
               "X-AMC": !0,
               "Content-Type": "application/json",
@@ -405,7 +405,7 @@ _global.SENTRY_RELEASE = {
             const g = {
                 headers: u
               },
-              w = a().all([g, t, n]),
+              w = s().all([g, t, n]),
               v = JSON.stringify({
                 ...w,
                 url: h
@@ -523,12 +523,12 @@ _global.SENTRY_RELEASE = {
       const q = (0, U.UT)(document.documentElement.lang),
         N = () => (0, z.q)(q),
         G = e => {
-          const [t, n] = (0, L.useState)(null), [o, r] = (0, L.useState)(null), [s, a] = (0, L.useState)({});
+          const [t, n] = (0, L.useState)(null), [o, r] = (0, L.useState)(null), [a, s] = (0, L.useState)({});
           return (0, L.useLayoutEffect)((() => {
             let t = new Image,
               o = !1;
             return t.addEventListener("load", (() => {
-              a({
+              s({
                 width: t.width,
                 height: t.height
               }), t = null, o || n(!0)
@@ -537,7 +537,7 @@ _global.SENTRY_RELEASE = {
             })), t.src = e, () => {
               o = !0, null !== t && (t.src = "")
             }
-          }), [e]), [t, s]
+          }), [e]), [t, a]
         };
       var X = n(9623);
       const V = () => {
@@ -601,24 +601,24 @@ _global.SENTRY_RELEASE = {
             try {
               const e = n?.() ?? 0,
                 r = t?.() ?? null,
-                s = (e => {
+                a = (e => {
                   const t = Date.now() / 1e3;
                   return Math.ceil(e - t)
                 })(e) > 0;
               if (!1 === r) return {
                 bearerToken: r
               };
-              if (s && r) return {
+              if (a && r) return {
                 bearerToken: r
               };
-              const a = await fetch(o, {
+              const s = await fetch(o, {
                   credentials: "include",
                   method: "POST",
                   headers: {
                     "Content-Type": "application/json"
                   }
                 }),
-                i = await a.json(),
+                i = await s.json(),
                 {
                   tokenExpiresTime: l = null
                 } = i;
@@ -637,8 +637,8 @@ _global.SENTRY_RELEASE = {
             fetchOptions: o = {},
             query: r = null
           } = t;
-          const s = te(),
-            [a, i] = (0, L.useState)(null),
+          const a = te(),
+            [s, i] = (0, L.useState)(null),
             [l, c] = (0, L.useState)(!1),
             [d, u] = (0, L.useState)(null),
             h = (0, L.useCallback)((async function() {
@@ -646,13 +646,13 @@ _global.SENTRY_RELEASE = {
                 n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
               try {
                 const {
-                  fetchOptions: a = {}
+                  fetchOptions: s = {}
                 } = t;
                 u(null), i(null), c(!0);
                 const l = await v(n ?? e, {
-                  pingBearer: s,
+                  pingBearer: a,
                   fetchOptions: o,
-                  finalFetchOptions: a,
+                  finalFetchOptions: s,
                   query: r
                 });
                 return l?.status || u(JSON.stringify(l?.error)), i(l), c(!1), l
@@ -662,9 +662,9 @@ _global.SENTRY_RELEASE = {
               return null
             }), [e, o, r]);
           return (0, L.useEffect)((() => {
-            null === a && null === d && !l && n && h()
-          }), [n, a, d, l, h]), {
-            data: a,
+            null === s && null === d && !l && n && h()
+          }), [n, s, d, l, h]), {
+            data: s,
             error: d,
             loading: l,
             fetch: h
@@ -673,7 +673,7 @@ _global.SENTRY_RELEASE = {
         oe = "__RS_CUSTOM_EVENTS__",
         re = e => `rsCustomEvent:${e}`;
       window[oe] || (window[oe] = {});
-      const se = () => {
+      const ae = () => {
           const e = (e, t) => {
             if (!e) throw Error("Event name must be provided to work with custom events");
             const n = re(e),
@@ -691,7 +691,7 @@ _global.SENTRY_RELEASE = {
             dispatch: e
           })), [])
         },
-        ae = (e, t) => {
+        se = (e, t) => {
           if (!e) throw Error("Event name must be provided to work with custom events");
           return (0, L.useEffect)((() => {
             const n = re(e);
@@ -737,7 +737,7 @@ _global.SENTRY_RELEASE = {
           let {
             children: t
           } = e;
-          const [n, o] = (0, L.useState)(window.pageYOffset), [r, s] = (0, L.useState)(null), [a, i] = (0, L.useState)(!1), l = (0, z.q)(ue);
+          const [n, o] = (0, L.useState)(window.pageYOffset), [r, a] = (0, L.useState)(null), [s, i] = (0, L.useState)(!1), l = (0, z.q)(ue);
           let c;
           const d = () => {
             i(!0), clearTimeout(c), c = setTimeout((() => {
@@ -747,14 +747,14 @@ _global.SENTRY_RELEASE = {
           return (0, L.useEffect)((() => {
             let e;
             const t = () => {
-              if (l) return void s(!1);
+              if (l) return void a(!1);
               const t = Math.max(0, window.pageYOffset);
-              o(t), a || s(t > 60 && t > e), e = t
+              o(t), s || a(t > 60 && t > e), e = t
             };
             return window.addEventListener("scroll", t), () => {
               window.removeEventListener("scroll", t)
             }
-          }), [a, l]), (0, L.useMemo)((() => (0, T.jsx)(ge.Provider, {
+          }), [s, l]), (0, L.useMemo)((() => (0, T.jsx)(ge.Provider, {
             value: {
               freezeUserShouldSeeMore: l,
               pageYOffset: n,
@@ -803,10 +803,10 @@ _global.SENTRY_RELEASE = {
             const {
               min: o,
               max: r
-            } = pe[t], s = e >= o && e <= r, a = e >= o;
+            } = pe[t], a = e >= o && e <= r, s = e >= o;
             n[t] = {
-              activeExact: s,
-              activeMin: a,
+              activeExact: a,
+              activeMin: s,
               min: o,
               max: r
             }
@@ -877,12 +877,12 @@ _global.SENTRY_RELEASE = {
           return (0, L.useEffect)((() => {
             const r = () => {
               if (t || !o.current) return;
-              const s = o.current,
+              const a = o.current,
                 {
-                  height: a
-                } = s.getBoundingClientRect(),
+                  height: s
+                } = a.getBoundingClientRect(),
                 i = window.innerHeight;
-              window.scrollY + i >= s.offsetTop + a * e && (n(!0), window.removeEventListener("scroll", r))
+              window.scrollY + i >= a.offsetTop + s * e && (n(!0), window.removeEventListener("scroll", r))
             };
             return window.addEventListener("scroll", r, {
               passive: !0
@@ -908,8 +908,8 @@ _global.SENTRY_RELEASE = {
             },
             {
               data: r,
-              loading: s,
-              error: a,
+              loading: a,
+              error: s,
               ...i
             } = (0, $.IT)(e, o);
           return (0, L.useEffect)((() => {
@@ -922,17 +922,17 @@ _global.SENTRY_RELEASE = {
             }
           }), [r]), (0, L.useEffect)((() => (o.autoSetLoading && window.postMessage({
             type: "graph.loadingUpdate",
-            loading: s
+            loading: a
           }), () => {
             o.autoSetLoading && window.postMessage({
               type: "graph.loadingUpdate",
               loading: !1
             })
-          })), [s]), (0, L.useEffect)((() => {
-            if (o.autoSetError && a) throw new Error(String(a))
-          }), [a]), {
-            loading: s,
-            error: a,
+          })), [a]), (0, L.useEffect)((() => {
+            if (o.autoSetError && s) throw new Error(String(s))
+          }), [s]), {
+            loading: a,
+            error: s,
             data: r,
             ...i
           }
@@ -985,10 +985,10 @@ _global.SENTRY_RELEASE = {
               ...t,
               uri: o
             },
-            [s] = (0, L.useState)(new I.D({
+            [a] = (0, L.useState)(new I.D({
               typePolicies: n
             })),
-            a = $e.concat((e => {
+            s = $e.concat((e => {
               let {
                 token: t
               } = e;
@@ -1011,8 +1011,8 @@ _global.SENTRY_RELEASE = {
               fetch: De()
             }))(r)));
           return new B.R({
-            cache: s,
-            link: a
+            cache: a,
+            link: s
           })
         },
         He = e => {
@@ -1137,7 +1137,7 @@ _global.SENTRY_RELEASE = {
             ...t
           })
         })(e, t),
-        st = e => {
+        at = e => {
           let {
             id: t
           } = e;
@@ -1147,10 +1147,10 @@ _global.SENTRY_RELEASE = {
           };
           Ze().initialize(n)
         },
-        at = "rockstar-games-web";
+        st = "rockstar-games-web";
       let it;
       try {
-        const e = window.localStorage.getItem(at);
+        const e = window.localStorage.getItem(st);
         it = null !== e ? JSON.parse(e) : {}
       } catch (e) {
         it = {}
@@ -1165,7 +1165,7 @@ _global.SENTRY_RELEASE = {
           const o = {
             ...lt() ?? {}
           };
-          return o[t] = n, null === n && delete o[t], window.localStorage.setItem(at, JSON.stringify(o)), lt(o), o
+          return o[t] = n, null === n && delete o[t], window.localStorage.setItem(st, JSON.stringify(o)), lt(o), o
         },
         dt = () => ({
           lsSettings: (0, z.q)(lt),
@@ -1201,11 +1201,11 @@ _global.SENTRY_RELEASE = {
         mt = function(e) {
           let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 250;
           return n => ((e, t, n) => {
-            const [o, r] = (0, L.useState)(t), s = e => {
+            const [o, r] = (0, L.useState)(t), a = e => {
               let t = e;
               const n = t?.items;
               if (n?.length) {
-                const e = n.map((e => s(e)));
+                const e = n.map((e => a(e)));
                 t = {
                   ...t,
                   items: e
@@ -1221,7 +1221,7 @@ _global.SENTRY_RELEASE = {
             };
             return (0, L.useEffect)((() => {
               const e = l().debounce((() => {
-                r(s(t))
+                r(a(t))
               }), n);
               return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
             })), (0, T.jsx)(e, {

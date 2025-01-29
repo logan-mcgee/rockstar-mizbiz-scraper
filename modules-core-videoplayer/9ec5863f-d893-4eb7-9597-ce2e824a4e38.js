@@ -18,7 +18,7 @@ _global.SENTRY_RELEASE = {
   [947], {
     9328: (e, a, t) => {
       t.r(a), t.d(a, {
-        AgeGate: () => g
+        AgeGate: () => f
       });
       var n = t(2229),
         s = t(5966),
@@ -33,44 +33,44 @@ _global.SENTRY_RELEASE = {
         bg: "rockstargames-modules-core-videoplayeraa5cfbd26930aee31e4643edcda52b39"
       };
       var u = t(8096);
-      const f = Object.freeze({
+      const g = Object.freeze({
           NOT_SUBMITTED: void 0,
           PASSED: "1",
           FAILED: "0"
         }),
-        g = (0, s.withTranslations)((e => {
+        f = (0, s.withTranslations)((e => {
           let {
             ageGatePassAge: a = 17,
             children: t,
-            options: g = {},
+            options: f = {},
             ga: m = {},
             t: p
           } = e;
           const {
             track: b
-          } = (0, r.useGtmTrack)(), y = (0, s.getCookieValueByName)("UAGC"), [h, _] = (0, n.useState)("1" === (v = y) ? f.PASSED : "0" === v ? f.FAILED : f.NOT_SUBMITTED);
+          } = (0, r.useGtmTrack)(), y = (0, s.getCookieValueByName)("UAGC"), [h, _] = (0, n.useState)("1" === (v = y) ? g.PASSED : "0" === v ? g.FAILED : g.NOT_SUBMITTED);
           var v;
           const [w, I] = (0, n.useState)(), x = (0, n.createRef)(), D = (0, n.createRef)(), k = (0, n.createRef)(), {
             style: j
-          } = g;
+          } = f;
           return (0, n.useEffect)((() => {
             b({
               event: "age_gate_popup",
               element_placement: m.element_placement ?? ""
             })
-          }), []), h === f.PASSED ? t : h === f.FAILED ? (0, u.jsxs)("div", {
+          }), []), h === g.PASSED ? t : h === g.FAILED ? (0, u.jsxs)("div", {
             className: i.agegate,
             style: j,
-            children: [g?.header, (0, u.jsx)("h2", {
+            children: [f?.header, (0, u.jsx)("h2", {
               children: p("agegate_fail")
             })]
           }) : (0, u.jsxs)("div", {
             className: i.agegate,
             style: j,
-            children: [g?.header, (0, u.jsx)("div", {
+            children: [f?.header, (0, u.jsx)("div", {
               className: i.bg,
-              style: g?.bgImg ? {
-                backgroundImage: `url(${g.bgImg})`
+              style: f?.bgImg ? {
+                backgroundImage: `url(${f.bgImg})`
               } : {}
             }), !1 === w && (0, u.jsx)("h5", {
               className: i.error,
@@ -140,7 +140,7 @@ _global.SENTRY_RELEASE = {
                   children: p("SUBMIT")
                 })]
               })]
-            }), g?.footer]
+            }), f?.footer]
           })
         }))
     }
