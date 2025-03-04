@@ -18,19 +18,19 @@ _global.SENTRY_RELEASE = {
   [8476], {
     66095: (e, a, s) => {
       s.r(a), s.d(a, {
-        default: () => d
+        default: () => r
       });
-      var t = s(9623);
-      var r = s(91029);
-      const d = () => {
-        const [e] = (0, t.useSearchParams)(), a = e.get("src") ?? null;
+      var d = s(9623);
+      var t = s(91029);
+      const r = () => {
+        const [e] = (0, d.useSearchParams)(), a = e.get("src") ?? null;
         if (!a) return null;
         const {
           hostname: s
         } = new URL(a);
-        return ["media.rockstargames.com", "www.rockstargames.com"].includes(s) ? (0, r.jsx)("div", {
+        return ["media.rockstargames.com", "www.rockstargames.com"].includes(s) ? (0, t.jsx)("div", {
           className: "rockstargames-sites-rockstargamesd3d06437c2c029c4d95e42b4b1690f8e",
-          children: (0, r.jsx)("div", {
+          children: (0, t.jsx)("div", {
             className: "rockstargames-sites-rockstargamescb8ab5c6a510d8d025142e899a0588f8",
             style: {
               background: `url(${a}) no-repeat center/contain`

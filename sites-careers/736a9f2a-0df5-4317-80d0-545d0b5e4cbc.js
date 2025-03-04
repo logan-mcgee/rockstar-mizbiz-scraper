@@ -172,10 +172,10 @@ _global.SENTRY_RELEASE = {
     6922: (e, n, r) => {
       Object.defineProperty(n, "__esModule", {
         value: !0
-      }), n._shouldPolyfillWithoutLocale = t, n.shouldPolyfill = function(e) {
+      }), n._shouldPolyfillWithoutLocale = f, n.shouldPolyfill = function(e) {
         void 0 === e && (e = "en");
         try {
-          if (t() || ! function(e) {
+          if (f() || ! function(e) {
               if (!e) return !0;
               var n = Array.isArray(e) ? e : [e];
               return Intl.DisplayNames.supportedLocalesOf(n).length === n.length
@@ -187,7 +187,7 @@ _global.SENTRY_RELEASE = {
       var a = r(6832),
         s = r(956);
 
-      function t() {
+      function f() {
         return !Intl.DisplayNames || !(!(e = Intl.DisplayNames) || e.polyfilled) && "CA" === new e(["en"], {
           type: "region"
         }).of("CA") || function() {

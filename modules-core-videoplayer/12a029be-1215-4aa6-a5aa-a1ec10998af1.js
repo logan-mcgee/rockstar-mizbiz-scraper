@@ -18,7 +18,7 @@ _global.SENTRY_RELEASE = {
   [8646], {
     6265: (e, a, t) => {
       t.r(a), t.d(a, {
-        AgeGate: () => m
+        AgeGate: () => f
       });
       var s = t(62229),
         n = t(7313),
@@ -38,45 +38,45 @@ _global.SENTRY_RELEASE = {
           PASSED: "1",
           FAILED: "0"
         }),
-        m = (0, o.withTranslations)((e => {
+        f = (0, o.withTranslations)((e => {
           let {
             ageGatePassAge: a = 17,
             children: t,
-            options: m = {},
-            ga: f = {},
-            t: p
+            options: f = {},
+            ga: m = {},
+            t: b
           } = e;
           const {
-            data: b
+            data: p
           } = (0, c.useRockstarUser)(), {
             track: y
           } = (0, c.useGtmTrack)(), h = (0, o.getCookieValueByName)("UAGC"), [_, v] = (0, s.useState)("1" === (w = h) ? g.PASSED : "0" === w ? g.FAILED : g.NOT_SUBMITTED);
           var w;
           const [I, k] = (0, s.useState)(), x = (0, s.createRef)(), D = (0, s.createRef)(), j = (0, s.createRef)(), {
             style: E
-          } = m;
+          } = f;
           return (0, s.useEffect)((() => {
             y({
               event: "age_gate_popup",
-              element_placement: f.element_placement ?? ""
+              element_placement: m.element_placement ?? ""
             })
-          }), []), _ === g.PASSED || !1 === b?.isAMinor ? t : _ === g.FAILED ? (0, u.jsxs)("div", {
+          }), []), _ === g.PASSED || !1 === p?.isAMinor ? t : _ === g.FAILED ? (0, u.jsxs)("div", {
             className: i.agegate,
             style: E,
-            children: [m?.header, (0, u.jsx)("h2", {
-              children: p("agegate_fail")
+            children: [f?.header, (0, u.jsx)("h2", {
+              children: b("agegate_fail")
             })]
           }) : (0, u.jsxs)("div", {
             className: i.agegate,
             style: E,
-            children: [m?.header, (0, u.jsx)("div", {
+            children: [f?.header, (0, u.jsx)("div", {
               className: i.bg,
-              style: m?.bgImg ? {
-                backgroundImage: `url(${m.bgImg})`
+              style: f?.bgImg ? {
+                backgroundImage: `url(${f.bgImg})`
               } : {}
             }), !1 === I && (0, u.jsx)("h5", {
               className: i.error,
-              children: p("Please enter a valid age")
+              children: b("Please enter a valid age")
             }), (0, u.jsxs)("form", {
               name: "agegate",
               onSubmit: async e => {
@@ -90,10 +90,10 @@ _global.SENTRY_RELEASE = {
                   const e = (0, d.V)(new Date, t) >= a;
                   y(e ? {
                     event: "age_gate_passed",
-                    element_placement: f.element_placement ?? ""
+                    element_placement: m.element_placement ?? ""
                   } : {
                     event: "age_gate_failed",
-                    element_placement: f.element_placement ?? "",
+                    element_placement: m.element_placement ?? "",
                     text: "you may not view this content at this time"
                   });
                   const s = e ? "1" : "0";
@@ -102,36 +102,36 @@ _global.SENTRY_RELEASE = {
               },
               "data-testid": "agegate-form",
               children: [(0, u.jsx)("h5", {
-                children: p("agegate_header")
+                children: b("agegate_header")
               }), (0, u.jsxs)("div", {
                 className: i.inputs,
                 children: [(0, u.jsxs)("label", {
                   htmlFor: "monthInput",
-                  children: [p("Month"), (0, u.jsx)("input", {
+                  children: [b("Month"), (0, u.jsx)("input", {
                     id: "monthInput",
                     ref: x,
-                    placeholder: p("MM"),
+                    placeholder: b("MM"),
                     maxLength: 2,
                     type: "number",
                     required: !0
                   })]
                 }), (0, u.jsxs)("label", {
                   htmlFor: "dayInput",
-                  children: [p("Day"), (0, u.jsx)("input", {
+                  children: [b("Day"), (0, u.jsx)("input", {
                     id: "dayInput",
                     ref: D,
-                    placeholder: p("DD"),
+                    placeholder: b("DD"),
                     maxLength: 2,
                     type: "number",
                     required: !0
                   })]
                 }), (0, u.jsxs)("label", {
                   htmlFor: "yearInput",
-                  children: [p("Year"), (0, u.jsx)("input", {
+                  children: [b("Year"), (0, u.jsx)("input", {
                     id: "yearInput",
                     ref: j,
                     className: i.year,
-                    placeholder: p("YYYY"),
+                    placeholder: b("YYYY"),
                     maxLength: 4,
                     type: "number",
                     required: !0
@@ -139,10 +139,10 @@ _global.SENTRY_RELEASE = {
                 }), (0, u.jsx)("button", {
                   type: "submit",
                   className: i.submit,
-                  children: p("SUBMIT")
+                  children: b("SUBMIT")
                 })]
               })]
-            }), m?.footer]
+            }), f?.footer]
           })
         }))
     }

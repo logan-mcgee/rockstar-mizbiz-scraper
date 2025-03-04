@@ -25,13 +25,13 @@ _global.SENTRY_RELEASE = {
         n = s(81788),
         r = s(2918),
         o = s(95966);
-      const g = (0, n.defineMessages)({
+      const d = (0, n.defineMessages)({
           gtao_feedback_login_cta_text: {
             id: "gtao_feedback_login_cta_text",
             defaultMessage: "Sign in to your Rockstar Games Account to submit feedback."
           }
         }),
-        d = {
+        g = {
           feedback: "rockstargames-sites-gta-gen9c386be0dcd753031c7c8370a05206972",
           stepMessage: "rockstargames-sites-gta-gen9ccb8ae7398f53e45ded9dfe28c3993e6",
           desc: "rockstargames-sites-gta-gen9d72e70db4d8f2e2475325b0ec8c822cd",
@@ -90,23 +90,23 @@ _global.SENTRY_RELEASE = {
             t: n
           } = e;
           const r = (0, o.useQueryParams)(),
-            [g, b] = (0, t.useState)({}),
+            [d, b] = (0, t.useState)({}),
             {
               data: p
             } = (0, o.useQuery)(s, {
-              variables: g,
-              skip: !Object.entries(g).length
+              variables: d,
+              skip: !Object.entries(d).length
             });
           return (0, t.useEffect)((() => {
             b({
               step: r.get("step")
             })
           }), [r.get("step")]), (0, f.jsxs)("div", {
-            className: d.feedback,
+            className: g.feedback,
             children: [(0, f.jsx)("h1", {
               children: n("online-feedback-h1")
             }), (0, f.jsx)("div", {
-              className: d.desc,
+              className: g.desc,
               dangerouslySetInnerHTML: {
                 __html: n("online-feedback-desc")
               }
@@ -127,27 +127,27 @@ _global.SENTRY_RELEASE = {
           } = e;
           const r = s.path.map((e => 1 === s.path.length && "_root" === e.feedback_type.name ? null : (0, f.jsx)(c.NavLink, {
               to: `?step=${e.id_hash}`,
-              className: d[`stepIcon${e.feedback_type.name}`],
+              className: g[`stepIcon${e.feedback_type.name}`],
               children: e.feedback_type.title
             }, e.id_hash))),
             o = s.next.map((e => "_root" === e.feedback_type.name ? null : (0, f.jsxs)(c.NavLink, {
               target: e?.feedback_type?.href ? "_blank" : "_self",
-              className: d[`stepIcon${e.feedback_type.name}`],
+              className: g[`stepIcon${e.feedback_type.name}`],
               to: e?.feedback_type?.href ? e.feedback_type.href : `?step=${e.id_hash}`,
               children: [e.feedback_type.title, e.message ? (0, f.jsx)("div", {
-                className: d.stepMessage,
+                className: g.stepMessage,
                 dangerouslySetInnerHTML: {
                   __html: e.message
                 }
               }) : ""]
             }, e.id_hash)));
           return (0, f.jsxs)("div", {
-            className: [d.steps, d[t]].join(" "),
+            className: [g.steps, g[t]].join(" "),
             children: [(0, f.jsx)("div", {
-              className: d.stepsPrevious,
+              className: g.stepsPrevious,
               children: r
             }), (0, f.jsx)("div", {
-              className: d.stepsNext,
+              className: g.stepsNext,
               children: o
             }), o.length ? "" : (0, f.jsx)(p, {
               feedbackStep: s.path[s.path.length - 1].id,
@@ -171,7 +171,7 @@ _global.SENTRY_RELEASE = {
             error: k
           }] = (0, o.useMutation)(s);
           return i ? l?.submittal?.id ? (0, f.jsx)("div", {
-            className: d.success,
+            className: g.success,
             dangerouslySetInnerHTML: {
               __html: c("feedback.enter_success")
             }
@@ -193,13 +193,13 @@ _global.SENTRY_RELEASE = {
               rows: 6,
               placeholder: c("feedback.placeholder")
             }), k ? (0, f.jsx)("div", {
-              className: d.error,
+              className: g.error,
               children: String(k)
             }) : "", (0, f.jsx)("button", {
               type: "submit",
               children: c("SUBMIT")
             })]
-          }) : b(g.gtao_feedback_login_cta_text)
+          }) : b(d.gtao_feedback_login_cta_text)
         },
         m = e => {
           let {

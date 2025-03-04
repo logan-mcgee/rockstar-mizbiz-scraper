@@ -24,11 +24,11 @@ _global.SENTRY_RELEASE = {
             ordinal: ["other"]
           },
           fn: function(e, a) {
-            var n = String(e).split("."),
-              d = n[0],
-              t = !n[1],
-              l = d.slice(-1),
-              o = d.slice(-2);
+            var d = String(e).split("."),
+              n = d[0],
+              t = !d[1],
+              l = n.slice(-1),
+              o = n.slice(-2);
             return a ? "other" : t && 1 == l && 11 != o ? "one" : t && l >= 2 && l <= 4 && (o < 12 || o > 14) ? "few" : t && 0 == l || t && l >= 5 && l <= 9 || t && o >= 11 && o <= 14 ? "many" : "other"
           }
         },

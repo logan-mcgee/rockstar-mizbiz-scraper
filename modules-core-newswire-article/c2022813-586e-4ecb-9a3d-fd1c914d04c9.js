@@ -30,7 +30,7 @@ _global.SENTRY_RELEASE = {
         t = "function" == typeof Symbol && Symbol.for ? Symbol.for("react.element") : 60103;
 
       function n(e, r) {
-        return !1 !== r.clone && r.isMergeableObject(e) ? i((t = e, Array.isArray(t) ? [] : {}), e, r) : e;
+        return !1 !== r.clone && r.isMergeableObject(e) ? c((t = e, Array.isArray(t) ? [] : {}), e, r) : e;
         var t
       }
 
@@ -48,7 +48,7 @@ _global.SENTRY_RELEASE = {
         }(e))
       }
 
-      function c(e, r) {
+      function i(e, r) {
         try {
           return r in e
         } catch (e) {
@@ -56,7 +56,7 @@ _global.SENTRY_RELEASE = {
         }
       }
 
-      function i(e, t, u) {
+      function c(e, t, u) {
         (u = u || {}).arrayMerge = u.arrayMerge || o, u.isMergeableObject = u.isMergeableObject || r, u.cloneUnlessOtherwiseSpecified = n;
         var s = Array.isArray(t);
         return s === Array.isArray(e) ? s ? u.arrayMerge(e, t, u) : function(e, r, t) {
@@ -65,22 +65,22 @@ _global.SENTRY_RELEASE = {
             o[r] = n(e[r], t)
           })), a(r).forEach((function(a) {
             (function(e, r) {
-              return c(e, r) && !(Object.hasOwnProperty.call(e, r) && Object.propertyIsEnumerable.call(e, r))
-            })(e, a) || (c(e, a) && t.isMergeableObject(r[a]) ? o[a] = function(e, r) {
-              if (!r.customMerge) return i;
+              return i(e, r) && !(Object.hasOwnProperty.call(e, r) && Object.propertyIsEnumerable.call(e, r))
+            })(e, a) || (i(e, a) && t.isMergeableObject(r[a]) ? o[a] = function(e, r) {
+              if (!r.customMerge) return c;
               var t = r.customMerge(e);
-              return "function" == typeof t ? t : i
+              return "function" == typeof t ? t : c
             }(a, t)(e[a], r[a], t) : o[a] = n(r[a], t))
           })), o
         }(e, t, u) : n(t, u)
       }
-      i.all = function(e, r) {
+      c.all = function(e, r) {
         if (!Array.isArray(e)) throw new Error("first argument should be an array");
         return e.reduce((function(e, t) {
-          return i(e, t, r)
+          return c(e, t, r)
         }), {})
       };
-      var u = i;
+      var u = c;
       e.exports = u
     },
     63461: (e, r, t) => {
@@ -96,7 +96,7 @@ _global.SENTRY_RELEASE = {
         __classPrivateFieldIn: () => D,
         __classPrivateFieldSet: () => A,
         __createBinding: () => b,
-        __decorate: () => i,
+        __decorate: () => c,
         __disposeResources: () => C,
         __esDecorate: () => s,
         __exportStar: () => w,
@@ -107,10 +107,10 @@ _global.SENTRY_RELEASE = {
         __makeTemplateObject: () => x,
         __metadata: () => y,
         __param: () => u,
-        __propKey: () => f,
+        __propKey: () => l,
         __read: () => v,
-        __rest: () => c,
-        __runInitializers: () => l,
+        __rest: () => i,
+        __runInitializers: () => f,
         __setFunctionName: () => p,
         __spread: () => g,
         __spreadArray: () => O,
@@ -145,7 +145,7 @@ _global.SENTRY_RELEASE = {
         }, a.apply(this, arguments)
       };
 
-      function c(e, r) {
+      function i(e, r) {
         var t = {};
         for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && r.indexOf(n) < 0 && (t[n] = e[n]);
         if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
@@ -155,13 +155,13 @@ _global.SENTRY_RELEASE = {
         return t
       }
 
-      function i(e, r, t, n) {
+      function c(e, r, t, n) {
         var o, a = arguments.length,
-          c = a < 3 ? r : null === n ? n = Object.getOwnPropertyDescriptor(r, t) : n;
-        if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) c = Reflect.decorate(e, r, t, n);
+          i = a < 3 ? r : null === n ? n = Object.getOwnPropertyDescriptor(r, t) : n;
+        if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) i = Reflect.decorate(e, r, t, n);
         else
-          for (var i = e.length - 1; i >= 0; i--)(o = e[i]) && (c = (a < 3 ? o(c) : a > 3 ? o(r, t, c) : o(r, t)) || c);
-        return a > 3 && c && Object.defineProperty(r, t, c), c
+          for (var c = e.length - 1; c >= 0; c--)(o = e[c]) && (i = (a < 3 ? o(i) : a > 3 ? o(r, t, i) : o(r, t)) || i);
+        return a > 3 && i && Object.defineProperty(r, t, i), i
       }
 
       function u(e, r) {
@@ -171,37 +171,37 @@ _global.SENTRY_RELEASE = {
       }
 
       function s(e, r, t, n, o, a) {
-        function c(e) {
+        function i(e) {
           if (void 0 !== e && "function" != typeof e) throw new TypeError("Function expected");
           return e
         }
-        for (var i, u = n.kind, s = "getter" === u ? "get" : "setter" === u ? "set" : "value", l = !r && e ? n.static ? e : e.prototype : null, f = r || (l ? Object.getOwnPropertyDescriptor(l, n.name) : {}), p = !1, y = t.length - 1; y >= 0; y--) {
+        for (var c, u = n.kind, s = "getter" === u ? "get" : "setter" === u ? "set" : "value", f = !r && e ? n.static ? e : e.prototype : null, l = r || (f ? Object.getOwnPropertyDescriptor(f, n.name) : {}), p = !1, y = t.length - 1; y >= 0; y--) {
           var d = {};
           for (var _ in n) d[_] = "access" === _ ? {} : n[_];
           for (var _ in n.access) d.access[_] = n.access[_];
           d.addInitializer = function(e) {
             if (p) throw new TypeError("Cannot add initializers after decoration has completed");
-            a.push(c(e || null))
+            a.push(i(e || null))
           };
           var b = (0, t[y])("accessor" === u ? {
-            get: f.get,
-            set: f.set
-          } : f[s], d);
+            get: l.get,
+            set: l.set
+          } : l[s], d);
           if ("accessor" === u) {
             if (void 0 === b) continue;
             if (null === b || "object" != typeof b) throw new TypeError("Object expected");
-            (i = c(b.get)) && (f.get = i), (i = c(b.set)) && (f.set = i), (i = c(b.init)) && o.unshift(i)
-          } else(i = c(b)) && ("field" === u ? o.unshift(i) : f[s] = i)
+            (c = i(b.get)) && (l.get = c), (c = i(b.set)) && (l.set = c), (c = i(b.init)) && o.unshift(c)
+          } else(c = i(b)) && ("field" === u ? o.unshift(c) : l[s] = c)
         }
-        l && Object.defineProperty(l, n.name, f), p = !0
+        f && Object.defineProperty(f, n.name, l), p = !0
       }
 
-      function l(e, r, t) {
+      function f(e, r, t) {
         for (var n = arguments.length > 2, o = 0; o < r.length; o++) t = n ? r[o].call(e, t) : r[o].call(e);
         return n ? t : void 0
       }
 
-      function f(e) {
+      function l(e) {
         return "symbol" == typeof e ? e : "".concat(e)
       }
 
@@ -218,7 +218,7 @@ _global.SENTRY_RELEASE = {
 
       function d(e, r, t, n) {
         return new(t || (t = Promise))((function(o, a) {
-          function c(e) {
+          function i(e) {
             try {
               u(n.next(e))
             } catch (e) {
@@ -226,7 +226,7 @@ _global.SENTRY_RELEASE = {
             }
           }
 
-          function i(e) {
+          function c(e) {
             try {
               u(n.throw(e))
             } catch (e) {
@@ -238,14 +238,14 @@ _global.SENTRY_RELEASE = {
             var r;
             e.done ? o(e.value) : (r = e.value, r instanceof t ? r : new t((function(e) {
               e(r)
-            }))).then(c, i)
+            }))).then(i, c)
           }
           u((n = n.apply(e, r || [])).next())
         }))
       }
 
       function _(e, r) {
-        var t, n, o, a, c = {
+        var t, n, o, a, i = {
           label: 0,
           sent: function() {
             if (1 & o[0]) throw o[1];
@@ -255,67 +255,67 @@ _global.SENTRY_RELEASE = {
           ops: []
         };
         return a = {
-          next: i(0),
-          throw: i(1),
-          return: i(2)
+          next: c(0),
+          throw: c(1),
+          return: c(2)
         }, "function" == typeof Symbol && (a[Symbol.iterator] = function() {
           return this
         }), a;
 
-        function i(i) {
+        function c(c) {
           return function(u) {
-            return function(i) {
+            return function(c) {
               if (t) throw new TypeError("Generator is already executing.");
-              for (; a && (a = 0, i[0] && (c = 0)), c;) try {
-                if (t = 1, n && (o = 2 & i[0] ? n.return : i[0] ? n.throw || ((o = n.return) && o.call(n), 0) : n.next) && !(o = o.call(n, i[1])).done) return o;
-                switch (n = 0, o && (i = [2 & i[0], o.value]), i[0]) {
+              for (; a && (a = 0, c[0] && (i = 0)), i;) try {
+                if (t = 1, n && (o = 2 & c[0] ? n.return : c[0] ? n.throw || ((o = n.return) && o.call(n), 0) : n.next) && !(o = o.call(n, c[1])).done) return o;
+                switch (n = 0, o && (c = [2 & c[0], o.value]), c[0]) {
                   case 0:
                   case 1:
-                    o = i;
+                    o = c;
                     break;
                   case 4:
-                    return c.label++, {
-                      value: i[1],
+                    return i.label++, {
+                      value: c[1],
                       done: !1
                     };
                   case 5:
-                    c.label++, n = i[1], i = [0];
+                    i.label++, n = c[1], c = [0];
                     continue;
                   case 7:
-                    i = c.ops.pop(), c.trys.pop();
+                    c = i.ops.pop(), i.trys.pop();
                     continue;
                   default:
-                    if (!((o = (o = c.trys).length > 0 && o[o.length - 1]) || 6 !== i[0] && 2 !== i[0])) {
-                      c = 0;
+                    if (!((o = (o = i.trys).length > 0 && o[o.length - 1]) || 6 !== c[0] && 2 !== c[0])) {
+                      i = 0;
                       continue
                     }
-                    if (3 === i[0] && (!o || i[1] > o[0] && i[1] < o[3])) {
-                      c.label = i[1];
+                    if (3 === c[0] && (!o || c[1] > o[0] && c[1] < o[3])) {
+                      i.label = c[1];
                       break
                     }
-                    if (6 === i[0] && c.label < o[1]) {
-                      c.label = o[1], o = i;
+                    if (6 === c[0] && i.label < o[1]) {
+                      i.label = o[1], o = c;
                       break
                     }
-                    if (o && c.label < o[2]) {
-                      c.label = o[2], c.ops.push(i);
+                    if (o && i.label < o[2]) {
+                      i.label = o[2], i.ops.push(c);
                       break
                     }
-                    o[2] && c.ops.pop(), c.trys.pop();
+                    o[2] && i.ops.pop(), i.trys.pop();
                     continue
                 }
-                i = r.call(e, c)
+                c = r.call(e, i)
               } catch (e) {
-                i = [6, e], n = 0
+                c = [6, e], n = 0
               } finally {
                 t = o = 0
               }
-              if (5 & i[0]) throw i[1];
+              if (5 & c[0]) throw c[1];
               return {
-                value: i[0] ? i[1] : void 0,
+                value: c[0] ? c[1] : void 0,
                 done: !0
               }
-            }([i, u])
+            }([c, u])
           }
         }
       }
@@ -356,10 +356,10 @@ _global.SENTRY_RELEASE = {
         var t = "function" == typeof Symbol && e[Symbol.iterator];
         if (!t) return e;
         var n, o, a = t.call(e),
-          c = [];
+          i = [];
         try {
           for (;
-            (void 0 === r || r-- > 0) && !(n = a.next()).done;) c.push(n.value)
+            (void 0 === r || r-- > 0) && !(n = a.next()).done;) i.push(n.value)
         } catch (e) {
           o = {
             error: e
@@ -371,7 +371,7 @@ _global.SENTRY_RELEASE = {
             if (o) throw o.error
           }
         }
-        return c
+        return i
       }
 
       function g() {
@@ -384,7 +384,7 @@ _global.SENTRY_RELEASE = {
         var n = Array(e),
           o = 0;
         for (r = 0; r < t; r++)
-          for (var a = arguments[r], c = 0, i = a.length; c < i; c++, o++) n[o] = a[c];
+          for (var a = arguments[r], i = 0, c = a.length; i < c; i++, o++) n[o] = a[i];
         return n
       }
 
@@ -402,37 +402,37 @@ _global.SENTRY_RELEASE = {
         if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
         var n, o = t.apply(e, r || []),
           a = [];
-        return n = {}, c("next"), c("throw"), c("return"), n[Symbol.asyncIterator] = function() {
+        return n = {}, i("next"), i("throw"), i("return"), n[Symbol.asyncIterator] = function() {
           return this
         }, n;
 
-        function c(e) {
+        function i(e) {
           o[e] && (n[e] = function(r) {
             return new Promise((function(t, n) {
-              a.push([e, r, t, n]) > 1 || i(e, r)
+              a.push([e, r, t, n]) > 1 || c(e, r)
             }))
           })
         }
 
-        function i(e, r) {
+        function c(e, r) {
           try {
-            (t = o[e](r)).value instanceof j ? Promise.resolve(t.value.v).then(u, s) : l(a[0][2], t)
+            (t = o[e](r)).value instanceof j ? Promise.resolve(t.value.v).then(u, s) : f(a[0][2], t)
           } catch (e) {
-            l(a[0][3], e)
+            f(a[0][3], e)
           }
           var t
         }
 
         function u(e) {
-          i("next", e)
+          c("next", e)
         }
 
         function s(e) {
-          i("throw", e)
+          c("throw", e)
         }
 
-        function l(e, r) {
-          e(r), a.shift(), a.length && i(a[0][0], a[0][1])
+        function f(e, r) {
+          e(r), a.shift(), a.length && c(a[0][0], a[0][1])
         }
       }
 
@@ -573,8 +573,8 @@ _global.SENTRY_RELEASE = {
       const G = {
         __extends: o,
         __assign: a,
-        __rest: c,
-        __decorate: i,
+        __rest: i,
+        __decorate: c,
         __param: u,
         __metadata: y,
         __awaiter: d,

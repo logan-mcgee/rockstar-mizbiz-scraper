@@ -53,19 +53,19 @@ _global.SENTRY_RELEASE = {
       }();
       var u, l = [],
         s = !1,
-        c = -1;
+        f = -1;
 
-      function f() {
-        s && u && (s = !1, u.length ? l = u.concat(l) : c = -1, l.length && d())
+      function c() {
+        s && u && (s = !1, u.length ? l = u.concat(l) : f = -1, l.length && d())
       }
 
       function d() {
         if (!s) {
-          var e = a(f);
+          var e = a(c);
           s = !0;
           for (var t = l.length; t;) {
-            for (u = l, l = []; ++c < t;) u && u[c].run();
-            c = -1, t = l.length
+            for (u = l, l = []; ++f < t;) u && u[f].run();
+            f = -1, t = l.length
           }
           u = null, s = !1,
             function(e) {
@@ -188,8 +188,8 @@ _global.SENTRY_RELEASE = {
         u = p(n(90278)),
         l = p(n(23651)),
         s = p(n(70787)),
-        c = p(n(59394)),
-        f = p(n(76884)),
+        f = p(n(59394)),
+        c = p(n(76884)),
         d = n(51005);
 
       function p(e) {
@@ -205,7 +205,7 @@ _global.SENTRY_RELEASE = {
       function y(e, t) {
         return e.scrollHeight - 1 <= t
       }
-      var g = function(e) {
+      var b = function(e) {
         function t(e) {
           ! function(e, t) {
             if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
@@ -219,7 +219,7 @@ _global.SENTRY_RELEASE = {
             ready: !1
           }, n.handleWindowResize = function() {
             n.process()
-          }, "perfectFit" in e && console.warn("TextFit property perfectFit has been removed."), n.handleWindowResize = (0, c.default)(n.handleWindowResize, e.throttle), n
+          }, "perfectFit" in e && console.warn("TextFit property perfectFit has been removed."), n.handleWindowResize = (0, f.default)(n.handleWindowResize, e.throttle), n
         }
         return function(e, t) {
           if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function, not " + typeof t);
@@ -244,7 +244,7 @@ _global.SENTRY_RELEASE = {
         }, {
           key: "componentWillUnmount",
           value: function() {
-            this.props.autoResize && window.removeEventListener("resize", this.handleWindowResize), this.pid = (0, f.default)()
+            this.props.autoResize && window.removeEventListener("resize", this.handleWindowResize), this.pid = (0, c.default)()
           }
         }, {
           key: "process",
@@ -257,26 +257,26 @@ _global.SENTRY_RELEASE = {
               i = t.forceSingleModeWidth,
               a = t.onReady,
               u = this._parent,
-              c = this._child,
+              f = this._child,
               p = (0, d.innerWidth)(u),
-              g = (0, d.innerHeight)(u);
-            if (g <= 0 || isNaN(g)) console.warn("Can not process element without height. Make sure the element is displayed and has a static height.");
+              b = (0, d.innerHeight)(u);
+            if (b <= 0 || isNaN(b)) console.warn("Can not process element without height. Make sure the element is displayed and has a static height.");
             else if (p <= 0 || isNaN(p)) console.warn("Can not process element without width. Make sure the element is displayed and has a static width.");
             else {
-              var b = (0, f.default)();
-              this.pid = b;
+              var g = (0, c.default)();
+              this.pid = g;
               var m = function() {
-                  return b !== e.pid
+                  return g !== e.pid
                 },
                 v = "multi" === o ? function() {
-                  return y(c, g)
+                  return y(f, b)
                 } : function() {
-                  return h(c, p)
+                  return h(f, p)
                 },
                 w = "multi" === o ? function() {
-                  return h(c, p)
+                  return h(f, p)
                 } : function() {
-                  return y(c, g)
+                  return y(f, b)
                 },
                 _ = void 0,
                 O = n,
@@ -302,7 +302,7 @@ _global.SENTRY_RELEASE = {
                   _ = parseInt((O + T) / 2, 10), e.setState({
                     fontSize: _
                   }, (function() {
-                    return b !== e.pid ? t(!0) : (w() ? O = _ + 1 : T = _ - 1, t())
+                    return g !== e.pid ? t(!0) : (w() ? O = _ + 1 : T = _ - 1, t())
                   }))
                 }), t))
               }, function(t) {
@@ -334,13 +334,13 @@ _global.SENTRY_RELEASE = {
                 return n
               }(t, ["children", "text", "style", "min", "max", "mode", "forceWidth", "forceSingleModeWidth", "throttle", "autoResize", "onReady"])),
               s = this.state,
-              c = s.fontSize,
-              f = s.ready,
+              f = s.fontSize,
+              c = s.ready,
               d = r({}, a, {
-                fontSize: c
+                fontSize: f
               }),
               p = {
-                display: f ? "block" : "inline-block"
+                display: c ? "block" : "inline-block"
               };
             return "single" === u && (p.whiteSpace = "nowrap"), i.default.createElement("div", r({
               ref: function(t) {
@@ -352,11 +352,11 @@ _global.SENTRY_RELEASE = {
                 return e._child = t
               },
               style: p
-            }, o && "function" == typeof n ? f ? n(o) : o : n))
+            }, o && "function" == typeof n ? c ? n(o) : o : n))
           }
         }]), t
       }(i.default.Component);
-      g.propTypes = {
+      b.propTypes = {
         children: a.default.node,
         text: a.default.string,
         min: a.default.number,
@@ -365,7 +365,7 @@ _global.SENTRY_RELEASE = {
         forceSingleModeWidth: a.default.bool,
         throttle: a.default.number,
         onReady: a.default.func
-      }, g.defaultProps = {
+      }, b.defaultProps = {
         min: 1,
         max: 100,
         mode: "multi",
@@ -373,7 +373,7 @@ _global.SENTRY_RELEASE = {
         throttle: 50,
         autoResize: !0,
         onReady: function() {}
-      }, t.default = g
+      }, t.default = b
     },
     16762: (e, t, n) => {
       "use strict";

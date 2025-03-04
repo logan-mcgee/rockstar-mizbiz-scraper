@@ -87,11 +87,11 @@ _global.SENTRY_RELEASE = {
             url: d
           },
           setTitleDataPath: "metaUrlInfo.title"
-        }), [u, m] = (0, i.useState)(null);
+        }), [u, f] = (0, i.useState)(null);
         return (0, i.useEffect)((() => {
           const e = c?.metaUrlInfo?.tina ?? null,
             n = e?.payload?.meta?.brand ?? null;
-          n && o?.(n), e && m(e)
+          n && o?.(n), e && f(e)
         }), [c]), u ? (0, s.jsx)("div", {
           "data-root": a,
           className: "rockstargames-sites-rockstargamesb682ae1b0f926c7f6b70f0415bef334f",

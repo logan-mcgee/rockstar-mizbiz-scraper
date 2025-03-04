@@ -1,8 +1,8 @@
 ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "cab476cd-a482-4ed1-a409-620f14a38342", e._sentryDebugIdIdentifier = "sentry-dbid-cab476cd-a482-4ed1-a409-620f14a38342")
+      o = (new Error).stack;
+    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "cab476cd-a482-4ed1-a409-620f14a38342", e._sentryDebugIdIdentifier = "sentry-dbid-cab476cd-a482-4ed1-a409-620f14a38342")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -16,8 +16,8 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_videoplayer = self.webpackChunk_rockstargames_modules_core_videoplayer || []).push([
   [1029], {
-    65039: (e, a, o) => {
-      var r = o(62229),
+    65039: (e, o, a) => {
+      var r = a(62229),
         d = Symbol.for("react.element"),
         n = Symbol.for("react.fragment"),
         t = Object.prototype.hasOwnProperty,
@@ -29,13 +29,13 @@ _global.SENTRY_RELEASE = {
           __source: !0
         };
 
-      function s(e, a, o) {
+      function s(e, o, a) {
         var r, n = {},
           s = null,
           _ = null;
-        for (r in void 0 !== o && (s = "" + o), void 0 !== a.key && (s = "" + a.key), void 0 !== a.ref && (_ = a.ref), a) t.call(a, r) && !f.hasOwnProperty(r) && (n[r] = a[r]);
+        for (r in void 0 !== a && (s = "" + a), void 0 !== o.key && (s = "" + o.key), void 0 !== o.ref && (_ = o.ref), o) t.call(o, r) && !f.hasOwnProperty(r) && (n[r] = o[r]);
         if (e && e.defaultProps)
-          for (r in a = e.defaultProps) void 0 === n[r] && (n[r] = a[r]);
+          for (r in o = e.defaultProps) void 0 === n[r] && (n[r] = o[r]);
         return {
           $$typeof: d,
           type: e,
@@ -45,10 +45,10 @@ _global.SENTRY_RELEASE = {
           _owner: l.current
         }
       }
-      a.Fragment = n, a.jsx = s, a.jsxs = s
+      o.Fragment = n, o.jsx = s, o.jsxs = s
     },
-    91029: (e, a, o) => {
-      e.exports = o(65039)
+    91029: (e, o, a) => {
+      e.exports = a(65039)
     }
   }
 ]);

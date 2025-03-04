@@ -16,12 +16,12 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_legacy = self.webpackChunk_rockstargames_sites_legacy || []).push([
   [1029], {
-    65039: (e, a, o) => {
-      var r = o(62229),
-        t = Symbol.for("react.element"),
-        n = Symbol.for("react.fragment"),
-        d = Object.prototype.hasOwnProperty,
-        l = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+    65039: (e, a, d) => {
+      var o = d(62229),
+        r = Symbol.for("react.element"),
+        t = Symbol.for("react.fragment"),
+        n = Object.prototype.hasOwnProperty,
+        l = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         s = {
           key: !0,
           ref: !0,
@@ -29,26 +29,26 @@ _global.SENTRY_RELEASE = {
           __source: !0
         };
 
-      function f(e, a, o) {
-        var r, n = {},
+      function f(e, a, d) {
+        var o, t = {},
           f = null,
           _ = null;
-        for (r in void 0 !== o && (f = "" + o), void 0 !== a.key && (f = "" + a.key), void 0 !== a.ref && (_ = a.ref), a) d.call(a, r) && !s.hasOwnProperty(r) && (n[r] = a[r]);
+        for (o in void 0 !== d && (f = "" + d), void 0 !== a.key && (f = "" + a.key), void 0 !== a.ref && (_ = a.ref), a) n.call(a, o) && !s.hasOwnProperty(o) && (t[o] = a[o]);
         if (e && e.defaultProps)
-          for (r in a = e.defaultProps) void 0 === n[r] && (n[r] = a[r]);
+          for (o in a = e.defaultProps) void 0 === t[o] && (t[o] = a[o]);
         return {
-          $$typeof: t,
+          $$typeof: r,
           type: e,
           key: f,
           ref: _,
-          props: n,
+          props: t,
           _owner: l.current
         }
       }
-      a.Fragment = n, a.jsx = f, a.jsxs = f
+      a.Fragment = t, a.jsx = f, a.jsxs = f
     },
-    91029: (e, a, o) => {
-      e.exports = o(65039)
+    91029: (e, a, d) => {
+      e.exports = d(65039)
     }
   }
 ]);

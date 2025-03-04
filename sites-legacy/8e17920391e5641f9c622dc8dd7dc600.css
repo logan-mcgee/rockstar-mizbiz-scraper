@@ -1,0 +1,3935 @@
+.foundry_vsn8np0 {
+  margin: 0;
+  color: var(--foundry_nu8bkp8m);
+}
+
+.foundry_kwp8su0 {
+  margin: 0;
+  color: var(--foundry_nu8bkp8j);
+}
+
+.foundry_kwp8su0+.foundry_kwp8su0 {
+  margin-top: var(--foundry_nu8bkp2z);
+}
+
+.foundry_tv8xa40 {
+  display: block;
+  color: var(--foundry_nu8bkp8j);
+}
+
+.foundry_13plll30 {
+  display: block;
+  color: var(--foundry_nu8bkp8j);
+}
+
+.foundry_xnp8ik0 {
+  margin: 0;
+  color: var(--foundry_nu8bkp8j);
+}
+
+.foundry_12nwidl1 {
+  text-decoration-line: underline;
+}
+
+.foundry_12nwidl2 {
+  font-style: italic;
+}
+
+.foundry_12nwidl3 {
+  font-style: italic;
+}
+
+.foundry_12nwidl4 {
+  font-style: italic;
+}
+
+.foundry_12nwidl5 {
+  background: var(--foundry_nu8bkp4x);
+  color: var(--foundry_nu8bkp85);
+}
+
+.foundry_12nwidl6 {
+  text-decoration-line: strikethrough;
+}
+
+.foundry_12nwidl7 {
+  font-weight: bold;
+}
+
+.foundry_12nwidla {
+  text-decoration-line: underline;
+}
+
+.foundry_v1yii71 {
+  width: var(--foundry_nu8bkp15);
+  height: var(--foundry_nu8bkp15);
+}
+
+.foundry_v1yii72 {
+  width: var(--foundry_nu8bkp17);
+  height: var(--foundry_nu8bkp17);
+}
+
+.foundry_v1yii73 {
+  width: var(--foundry_nu8bkp18);
+  height: var(--foundry_nu8bkp18);
+}
+
+.foundry_vq8c3j0 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: var(--foundry_nu8bkpj);
+  width: 100%;
+}
+
+.foundry_vq8c3j1 {
+  display: grid;
+  grid-template-areas: "label hint";
+  grid-template-columns: 1fr max(20%, 100px);
+  gap: var(--foundry_nu8bkpj);
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.foundry_vq8c3j2 {
+  grid-area: label;
+  word-break: break-all;
+}
+
+.foundry_vq8c3j3 {
+  grid-area: hint;
+  overflow: hidden;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--foundry_nu8bkp8l);
+}
+
+.foundry_vq8c3j4 {
+  color: var(--foundry_nu8bkp8l);
+}
+
+.foundry_vq8c3j5 {
+  color: var(--foundry_nu8bkp8q);
+}
+
+.foundry_vq8c3j6 {
+  padding-top: 3px;
+  vertical-align: text-top;
+  margin-right: var(--foundry_nu8bkpi);
+}
+
+.foundry_vq8c3j7 {
+  color: var(--foundry_nu8bkp8q);
+  margin-left: var(--foundry_nu8bkpi);
+}
+
+.foundry_vq8c3j8 {
+  color: var(--foundry_nu8bkp8k);
+}
+
+.foundry_vq8c3j9 {
+  resize: none;
+  padding: var(--foundry_nu8bkpk);
+  padding-right: 0;
+  border-radius: var(--foundry_nu8bkp5);
+  background: var(--foundry_nu8bkp3p);
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--foundry_nu8bkp9o);
+  color: var(--foundry_nu8bkp8j);
+  width: 100%;
+  box-sizing: border-box;
+  scrollbar-gutter: stable;
+}
+
+.foundry_vq8c3j9:hover {
+  border-color: var(--foundry_nu8bkp3z);
+}
+
+.foundry_vq8c3j9:focus-visible {
+  border-color: transparent;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: -2px;
+  outline-color: var(--foundry_nu8bkp9q);
+}
+
+.foundry_vq8c3j9::placeholder {
+  color: var(--foundry_nu8bkp8k);
+}
+
+.foundry_vq8c3j9:disabled {
+  background: var(--foundry_nu8bkp3u);
+  border-color: var(--foundry_nu8bkpa5);
+  color: var(--foundry_nu8bkp8k);
+  cursor: not-allowed;
+}
+
+.foundry_vq8c3j9:read-only {
+  background: var(--foundry_nu8bkp3u);
+  border-color: var(--foundry_nu8bkpa5);
+  color: var(--foundry_nu8bkp8k);
+}
+
+.foundry_vq8c3j9::-webkit-scrollbar {
+  width: calc(var(--foundry_nu8bkpm) + var(--foundry_nu8bkpj));
+}
+
+.foundry_vq8c3j9::-webkit-scrollbar-track {
+  display: none;
+  user-select: none;
+  touch-action: none;
+}
+
+.foundry_vq8c3j9::-webkit-scrollbar-thumb {
+  border-width: calc((var(--foundry_nu8bkpm) + var(--foundry_nu8bkpj) - 6px) / 2);
+  border-style: solid;
+  border-color: transparent;
+  background-color: var(--foundry_nu8bkp9m);
+  border-radius: var(--foundry_nu8bkpb);
+  background-clip: content-box;
+}
+
+.foundry_vq8c3j9:hover::placeholder {
+  color: var(--foundry_nu8bkp8l);
+}
+
+.foundry_vq8c3j9[aria-invalid="true"]:disabled,
+.foundry_vq8c3j9[aria-invalid="true"][readonly] {
+  border-color: var(--foundry_nu8bkp9z);
+}
+
+.foundry_vq8c3jb {
+  border-width: 2px;
+  border-color: var(--foundry_nu8bkp9z);
+}
+
+.foundry_vq8c3jb:hover {
+  border-color: var(--foundry_nu8bkp4m);
+}
+
+.foundry_vq8c3jb:focus-visible {
+  border-color: transparent;
+}
+
+.foundry_17pcofy1 {
+  cursor: pointer;
+  display: inline-flex;
+  flex-shrink: 0;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: var(--foundry_nu8bkp5);
+  border-width: 1px;
+  border-style: solid;
+  transition: all 0.15s ease-out;
+  transition-property: color, background-color, border-color, outline-color;
+}
+
+.foundry_17pcofy1:disabled {
+  cursor: not-allowed;
+}
+
+.foundry_17pcofya {
+  --foundry_17pcofy0: var(--foundry_nu8bkpj);
+  padding: var(--foundry_nu8bkpk) var(--foundry_nu8bkpo);
+}
+
+.foundry_17pcofyb {
+  --foundry_17pcofy0: var(--foundry_nu8bkpk);
+  padding: var(--foundry_nu8bkpm) var(--foundry_nu8bkpp);
+}
+
+.foundry_17pcofyc {
+  width: 100%;
+}
+
+.foundry_17pcofyk {
+  margin-right: var(--foundry_17pcofy0);
+}
+
+.foundry_17pcofym {
+  margin-left: auto;
+}
+
+.foundry_17pcofyn {
+  margin-left: var(--foundry_17pcofy0);
+}
+
+.foundry_17pcofyo {
+  height: var(--foundry_nu8bkp15);
+  width: var(--foundry_nu8bkp15);
+  margin-right: auto;
+}
+
+@layer foundry_8kowh40;
+
+@layer foundry_8kowh40 {
+  .foundry_8kowh41 {
+    all: unset;
+  }
+}
+
+.foundry_1d5mo5m0 {
+  outline-width: 2px;
+  outline-style: solid;
+  outline-offset: 4px;
+  outline-color: transparent;
+}
+
+.foundry_1d5mo5m0:focus-visible {
+  outline-color: var(--foundry_nu8bkp9q);
+}
+
+.foundry_1qqcnua0:disabled {
+  color: var(--foundry_nu8bkp8k);
+  border-color: var(--foundry_nu8bkp3u);
+  background-color: var(--foundry_nu8bkp3u);
+}
+
+.foundry_1qqcnua1 {
+  color: var(--foundry_nu8bkp85);
+  border-color: var(--foundry_nu8bkp4x);
+  background-color: var(--foundry_nu8bkp4x);
+}
+
+.foundry_1qqcnua1[data-pressed="true"] {
+  border-color: var(--foundry_nu8bkp4z);
+  background-color: var(--foundry_nu8bkp4z);
+}
+
+.foundry_1qqcnua1:not([data-pressed="true"]):not([disabled]):hover {
+  border-color: var(--foundry_nu8bkp4y);
+  background-color: var(--foundry_nu8bkp4y);
+}
+
+.foundry_1qqcnua1:not([data-pressed="true"]):focus-visible {
+  border-color: var(--foundry_nu8bkp4y);
+  background-color: var(--foundry_nu8bkp4y);
+}
+
+.foundry_1qqcnua1:focus-visible {
+  outline-color: var(--foundry_nu8bkp4v);
+}
+
+.foundry_1qqcnua2 {
+  color: var(--foundry_nu8bkp8j);
+  border-color: var(--foundry_nu8bkp9p);
+  background-color: transparent;
+}
+
+.foundry_1qqcnua2[data-pressed="true"] {
+  background-color: var(--foundry_nu8bkp3t);
+}
+
+.foundry_1qqcnua2:not([data-pressed="true"]):not([disabled]):hover {
+  background-color: var(--foundry_nu8bkp3s);
+}
+
+.foundry_1qqcnua2:not([data-pressed="true"]):focus-visible {
+  background-color: var(--foundry_nu8bkp3s);
+}
+
+.foundry_1qqcnua3 {
+  color: var(--foundry_nu8bkp8m);
+  border-color: var(--foundry_nu8bkp3t);
+  background-color: var(--foundry_nu8bkp3t);
+}
+
+.foundry_1qqcnua3[data-pressed="true"] {
+  border-color: var(--foundry_nu8bkp3v);
+  background-color: var(--foundry_nu8bkp3v);
+}
+
+.foundry_1qqcnua3:not([data-pressed="true"]):not([disabled]):hover {
+  border-color: var(--foundry_nu8bkp3u);
+  background-color: var(--foundry_nu8bkp3u);
+}
+
+.foundry_1qqcnua3:not([data-pressed="true"]):focus-visible {
+  border-color: var(--foundry_nu8bkp3u);
+  background-color: var(--foundry_nu8bkp3u);
+}
+
+.foundry_1qqcnua4 {
+  color: var(--foundry_nu8bkp8j);
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.foundry_1qqcnua4:disabled {
+  color: var(--foundry_nu8bkp8k);
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.foundry_1qqcnua4[data-pressed="true"] {
+  border-color: var(--foundry_nu8bkp3t);
+  background-color: var(--foundry_nu8bkp3t);
+}
+
+.foundry_1qqcnua4:not([data-pressed="true"]):not([disabled]):hover {
+  border-color: var(--foundry_nu8bkp3s);
+  background-color: var(--foundry_nu8bkp3s);
+}
+
+.foundry_1qqcnua4:not([data-pressed="true"]):focus-visible {
+  border-color: var(--foundry_nu8bkp3s);
+  background-color: var(--foundry_nu8bkp3s);
+}
+
+.foundry_1qqcnua5 {
+  color: var(--foundry_nu8bkp7x);
+  border-color: var(--foundry_nu8bkp6m);
+  background-color: var(--foundry_nu8bkp6m);
+}
+
+.foundry_1qqcnua5[data-pressed="true"] {
+  border-color: var(--foundry_nu8bkp6o);
+  background-color: var(--foundry_nu8bkp6o);
+}
+
+.foundry_1qqcnua5:not([data-pressed="true"]):not([disabled]):hover {
+  border-color: var(--foundry_nu8bkp6n);
+  background-color: var(--foundry_nu8bkp6n);
+}
+
+.foundry_1qqcnua5:not([data-pressed="true"]):focus-visible {
+  border-color: var(--foundry_nu8bkp6n);
+  background-color: var(--foundry_nu8bkp6n);
+}
+
+.foundry_1qqcnua5:focus-visible {
+  outline-color: var(--foundry_nu8bkp6j);
+}
+
+.foundry_1qqcnua6 {
+  color: var(--foundry_nu8bkp7x);
+  border-color: var(--foundry_nu8bkp49);
+  background-color: var(--foundry_nu8bkp49);
+}
+
+.foundry_1qqcnua6[data-pressed="true"] {
+  border-color: var(--foundry_nu8bkp4b);
+  background-color: var(--foundry_nu8bkp4b);
+}
+
+.foundry_1qqcnua6:not([data-pressed="true"]):not([disabled]):hover {
+  border-color: var(--foundry_nu8bkp4a);
+  background-color: var(--foundry_nu8bkp4a);
+}
+
+.foundry_1qqcnua6:not([data-pressed="true"]):focus-visible {
+  border-color: var(--foundry_nu8bkp4a);
+  background-color: var(--foundry_nu8bkp4a);
+}
+
+.foundry_1qqcnua6:focus-visible {
+  outline-color: var(--foundry_nu8bkp47);
+}
+
+.foundry_1qqcnua7 {
+  color: var(--foundry_nu8bkp8j);
+  border-color: var(--foundry_nu8bkp9p);
+  background-color: transparent;
+}
+
+.foundry_1qqcnua7[data-pressed="true"] {
+  background-color: var(--foundry_nu8bkp3y);
+  border-color: var(--foundry_nu8bkp3y);
+  color: var(--foundry_nu8bkp3q);
+}
+
+.foundry_1qqcnua7:not([data-pressed="true"]):not([disabled]):hover {
+  background-color: var(--foundry_nu8bkp40);
+  border-color: var(--foundry_nu8bkp40);
+  color: var(--foundry_nu8bkp3q);
+}
+
+.foundry_1qqcnua7:not([data-pressed="true"]):focus-visible {
+  background-color: var(--foundry_nu8bkp40);
+  border-color: var(--foundry_nu8bkp40);
+  color: var(--foundry_nu8bkp3q);
+}
+
+.foundry_tdsdcd0 {
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: 'ss01' on, 'salt' on;
+}
+
+.foundry_tdsdcd1 {
+  font-style: normal;
+  font-weight: var(--foundry_nu8bkp2y);
+  line-height: var(--foundry_nu8bkp3b);
+  font-family: var(--foundry_nu8bkp2l), var(--foundry_nu8bkp2m);
+  letter-spacing: var(--foundry_nu8bkp2r);
+}
+
+.foundry_tdsdcd3 {
+  font-size: var(--foundry_nu8bkp30);
+}
+
+.foundry_tdsdcd4 {
+  font-size: var(--foundry_nu8bkp31);
+}
+
+.foundry_tdsdcd5 {
+  font-size: var(--foundry_nu8bkp32);
+}
+
+.foundry_tdsdcd6 {
+  font-size: var(--foundry_nu8bkp33);
+}
+
+.foundry_tdsdcd7 {
+  font-size: var(--foundry_nu8bkp34);
+}
+
+.foundry_tdsdcd8 {
+  font-size: var(--foundry_nu8bkp35);
+  font-weight: var(--foundry_nu8bkp2x);
+}
+
+.foundry_tdsdcd9 {
+  font-family: var(--foundry_nu8bkp2n), var(--foundry_nu8bkp2o);
+  line-height: var(--foundry_nu8bkp3c);
+  font-style: normal;
+  font-weight: var(--foundry_nu8bkp2x);
+  font-size: var(--foundry_nu8bkp39);
+  letter-spacing: var(--foundry_nu8bkp2v);
+  text-transform: uppercase;
+}
+
+.foundry_tdsdcdc {
+  font-weight: var(--foundry_nu8bkp2y);
+}
+
+.foundry_tdsdcdd {
+  font-family: var(--foundry_nu8bkp2n), var(--foundry_nu8bkp2o);
+  line-height: var(--foundry_nu8bkp3c);
+  font-style: normal;
+  font-weight: var(--foundry_nu8bkp2x);
+  font-size: var(--foundry_nu8bkp36);
+  letter-spacing: var(--foundry_nu8bkp2t);
+}
+
+.foundry_tdsdcdg {
+  font-weight: var(--foundry_nu8bkp2y);
+}
+
+.foundry_tdsdcdh {
+  font-weight: var(--foundry_nu8bkp2y);
+  text-decoration-line: underline;
+}
+
+.foundry_tdsdcdi {
+  font-weight: var(--foundry_nu8bkp2y);
+  letter-spacing: var(--foundry_nu8bkp2v);
+  text-transform: uppercase;
+}
+
+.foundry_tdsdcdj {
+  font-family: var(--foundry_nu8bkp2n), var(--foundry_nu8bkp2o);
+  line-height: var(--foundry_nu8bkp3c);
+  font-style: normal;
+  font-weight: var(--foundry_nu8bkp2x);
+  font-size: var(--foundry_nu8bkp37);
+  letter-spacing: var(--foundry_nu8bkp2t);
+}
+
+.foundry_tdsdcdm {
+  font-weight: var(--foundry_nu8bkp2y);
+}
+
+.foundry_tdsdcdn {
+  font-weight: var(--foundry_nu8bkp2y);
+  text-decoration-line: underline;
+}
+
+.foundry_tdsdcdo {
+  font-weight: var(--foundry_nu8bkp2y);
+  letter-spacing: var(--foundry_nu8bkp2v);
+  text-transform: uppercase;
+}
+
+.foundry_tdsdcdp {
+  font-family: var(--foundry_nu8bkp2n), var(--foundry_nu8bkp2o);
+  line-height: var(--foundry_nu8bkp3c);
+  font-style: normal;
+  font-weight: var(--foundry_nu8bkp2x);
+  font-size: var(--foundry_nu8bkp38);
+  letter-spacing: var(--foundry_nu8bkp2t);
+}
+
+.foundry_tdsdcds {
+  font-weight: var(--foundry_nu8bkp2y);
+}
+
+@font-face {
+  font-family: "Helvetica Now Text";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/63cfc284c204bd1597bc68464e18042b.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica Now Text";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/ddff8a927395b3bbeb442818124b332e.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica Now Text";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/064abecda5d2f269d95fa7fd0f340e87.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica Now Display";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/8a7bed18c779bf815ff56c24ab6207e5.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica Now Display";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/2182248632b4e44ebf3764bc8ac7aba2.woff) format("woff");
+}
+
+.foundry_nu8bkp1 {
+  --foundry_nu8bkp2: 0px;
+  --foundry_nu8bkp3: 2px;
+  --foundry_nu8bkp4: 4px;
+  --foundry_nu8bkp5: 8px;
+  --foundry_nu8bkp6: 12px;
+  --foundry_nu8bkp7: 16px;
+  --foundry_nu8bkp8: 24px;
+  --foundry_nu8bkp9: 32px;
+  --foundry_nu8bkpa: 9999px;
+  --foundry_nu8bkpb: 1000px;
+  --foundry_nu8bkpc: 0px;
+  --foundry_nu8bkpd: 1px;
+  --foundry_nu8bkpe: 2px;
+  --foundry_nu8bkpf: 3px;
+  --foundry_nu8bkpg: 4px;
+  --foundry_nu8bkph: calc(2px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkpi: calc(4px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkpj: calc(8px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkpk: calc(12px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkpl: calc(14px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkpm: calc(16px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkpn: calc(20px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkpo: calc(24px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkpp: calc(32px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkpq: calc(40px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkpr: calc(48px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkps: calc(56px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkpt: calc(64px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkpu: calc(72px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkpv: calc(80px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkpw: calc(88px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkpx: calc(96px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkpy: calc(112px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkpz: calc(128px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp10: calc(2px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp11: calc(4px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp12: calc(8px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp13: calc(12px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp14: calc(14px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp15: calc(16px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp16: calc(20px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp17: calc(24px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp18: calc(32px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp19: calc(40px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp1a: calc(48px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp1b: calc(56px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp1c: calc(64px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp1d: calc(72px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp1e: calc(80px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp1f: calc(88px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp1g: calc(96px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp1h: calc(112px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp1i: calc(128px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp1j: calc(144px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp1k: calc(160px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp1l: calc(176px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp1m: calc(200px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp1n: calc(240px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp1o: calc(280px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp1p: calc(320px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp1q: calc(360px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp1r: calc(400px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp1s: calc(500px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp1t: Arial;
+  --foundry_nu8bkp1u: Helvetica Now Display;
+  --foundry_nu8bkp1v: Helvetica Now Text;
+  --foundry_nu8bkp1w: Consolas;
+  --foundry_nu8bkp1x: 400;
+  --foundry_nu8bkp1y: 700;
+  --foundry_nu8bkp1z: calc(12px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp20: calc(14px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp21: calc(16px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp22: calc(18px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp23: calc(20px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp24: calc(24px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp25: calc(32px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp26: calc(40px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp27: calc(48px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp28: calc(56px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp29: calc(64px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp2a: calc(72px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp2b: calc(80px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp2c: calc(88px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp2d: 0%;
+  --foundry_nu8bkp2e: 1%;
+  --foundry_nu8bkp2f: 2.5%;
+  --foundry_nu8bkp2g: -2.5%;
+  --foundry_nu8bkp2h: -1%;
+  --foundry_nu8bkp2i: 130%;
+  --foundry_nu8bkp2j: 150%;
+  --foundry_nu8bkp2k: calc(32px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp2l: Helvetica Now Display;
+  --foundry_nu8bkp2m: Arial;
+  --foundry_nu8bkp2n: Helvetica Now Text;
+  --foundry_nu8bkp2o: Arial;
+  --foundry_nu8bkp2p: Consolas;
+  --foundry_nu8bkp2q: Consolas;
+  --foundry_nu8bkp2r: -2.5%;
+  --foundry_nu8bkp2s: -2.5%;
+  --foundry_nu8bkp2t: -2.5%;
+  --foundry_nu8bkp2u: -2.5%;
+  --foundry_nu8bkp2v: 1%;
+  --foundry_nu8bkp2w: 1%;
+  --foundry_nu8bkp2x: 400;
+  --foundry_nu8bkp2y: 700;
+  --foundry_nu8bkp2z: calc(32px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp30: calc(56px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp31: calc(40px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp32: calc(32px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp33: calc(24px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp34: calc(20px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp35: calc(20px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp36: calc(16px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp37: calc(14px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp38: calc(12px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp39: calc(12px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp3a: calc(16px * var(--foundry_nu8bkp0));
+  --foundry_nu8bkp3b: 130%;
+  --foundry_nu8bkp3c: 150%;
+}
+
+.foundry_nu8bkpaq {
+  --foundry_nu8bkp3d: #fdfdfd;
+  --foundry_nu8bkp3e: #fdfdfd;
+  --foundry_nu8bkp3f: #fdfdfd;
+  --foundry_nu8bkp3g: #fdfdfd;
+  --foundry_nu8bkp3h: #eaeaea;
+  --foundry_nu8bkp3i: #d8d8d8;
+  --foundry_nu8bkp3j: #b2b2b2;
+  --foundry_nu8bkp3k: #919191;
+  --foundry_nu8bkp3l: #6d6d6d;
+  --foundry_nu8bkp3m: #464646;
+  --foundry_nu8bkp3n: #212121;
+  --foundry_nu8bkp3o: #000000;
+  --foundry_nu8bkp3p: #ffffff;
+  --foundry_nu8bkp3q: #ffffff;
+  --foundry_nu8bkp3r: #f5f5f5;
+  --foundry_nu8bkp3s: #e4e4e4;
+  --foundry_nu8bkp3t: #d1d1d1;
+  --foundry_nu8bkp3u: #c0c0c0;
+  --foundry_nu8bkp3v: #9f9f9f;
+  --foundry_nu8bkp3w: #767676;
+  --foundry_nu8bkp3x: #585858;
+  --foundry_nu8bkp3y: #414141;
+  --foundry_nu8bkp3z: #2d2d2d;
+  --foundry_nu8bkp40: #151515;
+  --foundry_nu8bkp41: #fff3f3;
+  --foundry_nu8bkp42: #ffe3e3;
+  --foundry_nu8bkp43: #ffd3d3;
+  --foundry_nu8bkp44: #ffbdbd;
+  --foundry_nu8bkp45: #ffa5a5;
+  --foundry_nu8bkp46: #ff8181;
+  --foundry_nu8bkp47: #ff5c5c;
+  --foundry_nu8bkp48: #e74646;
+  --foundry_nu8bkp49: #c93838;
+  --foundry_nu8bkp4a: #a92d2d;
+  --foundry_nu8bkp4b: #8b2323;
+  --foundry_nu8bkp4c: #6d1c1c;
+  --foundry_nu8bkp4d: #541515;
+  --foundry_nu8bkp4e: #401010;
+  --foundry_nu8bkp4f: #fecccc;
+  --foundry_nu8bkp4g: #feb6b6;
+  --foundry_nu8bkp4h: #fd9d9d;
+  --foundry_nu8bkp4i: #fd7d7d;
+  --foundry_nu8bkp4j: #fc5858;
+  --foundry_nu8bkp4k: #fb1e1e;
+  --foundry_nu8bkp4l: #e10404;
+  --foundry_nu8bkp4m: #c50303;
+  --foundry_nu8bkp4n: #aa0303;
+  --foundry_nu8bkp4o: #920303;
+  --foundry_nu8bkp4p: #7e0202;
+  --foundry_nu8bkp4q: #690202;
+  --foundry_nu8bkp4r: #570202;
+  --foundry_nu8bkp4s: #480101;
+  --foundry_nu8bkp4t: #fff4d4;
+  --foundry_nu8bkp4u: #ffe8a4;
+  --foundry_nu8bkp4v: #ffdb72;
+  --foundry_nu8bkp4w: #ffc539;
+  --foundry_nu8bkp4x: #fcaf17;
+  --foundry_nu8bkp4y: #e19808;
+  --foundry_nu8bkp4z: #ca8602;
+  --foundry_nu8bkp50: #b07400;
+  --foundry_nu8bkp51: #976300;
+  --foundry_nu8bkp52: #7e5200;
+  --foundry_nu8bkp53: #654200;
+  --foundry_nu8bkp54: #503400;
+  --foundry_nu8bkp55: #3c2800;
+  --foundry_nu8bkp56: #2e1e00;
+  --foundry_nu8bkp57: #ffd258;
+  --foundry_nu8bkp58: #ffbd29;
+  --foundry_nu8bkp59: #f4a811;
+  --foundry_nu8bkp5a: #dd9507;
+  --foundry_nu8bkp5b: #c68402;
+  --foundry_nu8bkp5c: #af7400;
+  --foundry_nu8bkp5d: #9a6500;
+  --foundry_nu8bkp5e: #855800;
+  --foundry_nu8bkp5f: #734b00;
+  --foundry_nu8bkp5g: #624000;
+  --foundry_nu8bkp5h: #523600;
+  --foundry_nu8bkp5i: #442c00;
+  --foundry_nu8bkp5j: #372400;
+  --foundry_nu8bkp5k: #2d1d00;
+  --foundry_nu8bkp5l: #e0fbea;
+  --foundry_nu8bkp5m: #bef7d5;
+  --foundry_nu8bkp5n: #93f2b9;
+  --foundry_nu8bkp5o: #5ce693;
+  --foundry_nu8bkp5p: #39d878;
+  --foundry_nu8bkp5q: #20c05f;
+  --foundry_nu8bkp5r: #15aa51;
+  --foundry_nu8bkp5s: #0f9444;
+  --foundry_nu8bkp5t: #0b7f39;
+  --foundry_nu8bkp5u: #08692f;
+  --foundry_nu8bkp5v: #065626;
+  --foundry_nu8bkp5w: #05431e;
+  --foundry_nu8bkp5x: #043317;
+  --foundry_nu8bkp5y: #032712;
+  --foundry_nu8bkp5z: #96eab8;
+  --foundry_nu8bkp60: #64e096;
+  --foundry_nu8bkp61: #2ad16c;
+  --foundry_nu8bkp62: #26bb61;
+  --foundry_nu8bkp63: #21a657;
+  --foundry_nu8bkp64: #1e934c;
+  --foundry_nu8bkp65: #1a8043;
+  --foundry_nu8bkp66: #166f3a;
+  --foundry_nu8bkp67: #135f32;
+  --foundry_nu8bkp68: #10522a;
+  --foundry_nu8bkp69: #0e4424;
+  --foundry_nu8bkp6a: #0b381d;
+  --foundry_nu8bkp6b: #092e18;
+  --foundry_nu8bkp6c: #082513;
+  --foundry_nu8bkp6d: #f1f4f9;
+  --foundry_nu8bkp6e: #e3eaf4;
+  --foundry_nu8bkp6f: #d4dfee;
+  --foundry_nu8bkp6g: #bdcfe6;
+  --foundry_nu8bkp6h: #a9c0de;
+  --foundry_nu8bkp6i: #8ba9d2;
+  --foundry_nu8bkp6j: #7296c8;
+  --foundry_nu8bkp6k: #5882bc;
+  --foundry_nu8bkp6l: #406faf;
+  --foundry_nu8bkp6m: #295b9f;
+  --foundry_nu8bkp6n: #17498b;
+  --foundry_nu8bkp6o: #0c3874;
+  --foundry_nu8bkp6p: #062a5b;
+  --foundry_nu8bkp6q: #032047;
+  --foundry_nu8bkp6r: #ccd9eb;
+  --foundry_nu8bkp6s: #b7cae4;
+  --foundry_nu8bkp6t: #9fb9db;
+  --foundry_nu8bkp6u: #86a6d1;
+  --foundry_nu8bkp6v: #6e94c6;
+  --foundry_nu8bkp6w: #5782bc;
+  --foundry_nu8bkp6x: #4271b0;
+  --foundry_nu8bkp6y: #2f61a4;
+  --foundry_nu8bkp6z: #205396;
+  --foundry_nu8bkp70: #144587;
+  --foundry_nu8bkp71: #0d3a76;
+  --foundry_nu8bkp72: #082f64;
+  --foundry_nu8bkp73: #052654;
+  --foundry_nu8bkp74: #031f45;
+  --foundry_nu8bkp75: #f2f4f6;
+  --foundry_nu8bkp76: #e7ebee;
+  --foundry_nu8bkp77: #d9dfe4;
+  --foundry_nu8bkp78: #c5cfd6;
+  --foundry_nu8bkp79: #b2c0c8;
+  --foundry_nu8bkp7a: #98aab6;
+  --foundry_nu8bkp7b: #8297a5;
+  --foundry_nu8bkp7c: #6b8495;
+  --foundry_nu8bkp7d: #5a717f;
+  --foundry_nu8bkp7e: #4b5e6a;
+  --foundry_nu8bkp7f: #3d4c55;
+  --foundry_nu8bkp7g: #303b43;
+  --foundry_nu8bkp7h: #242d33;
+  --foundry_nu8bkp7i: #1b2226;
+  --foundry_nu8bkp7j: #d6d8da;
+  --foundry_nu8bkp7k: #c6cacc;
+  --foundry_nu8bkp7l: #b3b7ba;
+  --foundry_nu8bkp7m: #9fa5a9;
+  --foundry_nu8bkp7n: #8b9297;
+  --foundry_nu8bkp7o: #798187;
+  --foundry_nu8bkp7p: #697177;
+  --foundry_nu8bkp7q: #596269;
+  --foundry_nu8bkp7r: #4a555b;
+  --foundry_nu8bkp7s: #3e484f;
+  --foundry_nu8bkp7t: #323d43;
+  --foundry_nu8bkp7u: #273239;
+  --foundry_nu8bkp7v: #1f2930;
+  --foundry_nu8bkp7w: #182128;
+  --foundry_nu8bkp7x: #ffffff;
+  --foundry_nu8bkp7y: rgba(0, 0, 0, 0.1);
+  --foundry_nu8bkp7z: rgba(0, 0, 0, 0.15);
+  --foundry_nu8bkp80: rgba(0, 0, 0, 0.4);
+  --foundry_nu8bkp81: rgba(0, 0, 0, 0.5);
+  --foundry_nu8bkp82: rgba(0, 0, 0, 0.65);
+  --foundry_nu8bkp83: rgba(0, 0, 0, 0.8);
+  --foundry_nu8bkp84: rgba(0, 0, 0, 0.9);
+  --foundry_nu8bkp85: #000000;
+  --foundry_nu8bkp86: #96eab8;
+  --foundry_nu8bkp87: #ccd9eb;
+  --foundry_nu8bkp88: #ffd258;
+  --foundry_nu8bkp89: #fecccc;
+  --foundry_nu8bkp8a: #d6d8da;
+  --foundry_nu8bkp8b: #ffffff;
+  --foundry_nu8bkp8c: #f5f5f5;
+  --foundry_nu8bkp8d: #e4e4e4;
+  --foundry_nu8bkp8e: #ffffff;
+  --foundry_nu8bkp8f: #f5f5f5;
+  --foundry_nu8bkp8g: #e4e4e4;
+  --foundry_nu8bkp8h: #ffffff;
+  --foundry_nu8bkp8i: #464646;
+  --foundry_nu8bkp8j: #2d2d2d;
+  --foundry_nu8bkp8k: #767676;
+  --foundry_nu8bkp8l: #585858;
+  --foundry_nu8bkp8m: #151515;
+  --foundry_nu8bkp8n: #135f32;
+  --foundry_nu8bkp8o: #205396;
+  --foundry_nu8bkp8p: #734b00;
+  --foundry_nu8bkp8q: #aa0303;
+  --foundry_nu8bkp8r: #4a555b;
+  --foundry_nu8bkp8s: #2d2d2d;
+  --foundry_nu8bkp8t: #767676;
+  --foundry_nu8bkp8u: #585858;
+  --foundry_nu8bkp8v: #414141;
+  --foundry_nu8bkp8w: #585858;
+  --foundry_nu8bkp8x: #205396;
+  --foundry_nu8bkp8y: #2f61a4;
+  --foundry_nu8bkp8z: #144587;
+  --foundry_nu8bkp90: #4271b0;
+  --foundry_nu8bkp91: #0d3a76;
+  --foundry_nu8bkp92: #135f32;
+  --foundry_nu8bkp93: #166f3a;
+  --foundry_nu8bkp94: #10522a;
+  --foundry_nu8bkp95: #1a8043;
+  --foundry_nu8bkp96: #0e4424;
+  --foundry_nu8bkp97: #734b00;
+  --foundry_nu8bkp98: #855800;
+  --foundry_nu8bkp99: #624000;
+  --foundry_nu8bkp9a: #9a6500;
+  --foundry_nu8bkp9b: #523600;
+  --foundry_nu8bkp9c: #aa0303;
+  --foundry_nu8bkp9d: #c50303;
+  --foundry_nu8bkp9e: #920303;
+  --foundry_nu8bkp9f: #e10404;
+  --foundry_nu8bkp9g: #7e0202;
+  --foundry_nu8bkp9h: #4a555b;
+  --foundry_nu8bkp9i: #596269;
+  --foundry_nu8bkp9j: #3e484f;
+  --foundry_nu8bkp9k: #697177;
+  --foundry_nu8bkp9l: #323d43;
+  --foundry_nu8bkp9m: #c0c0c0;
+  --foundry_nu8bkp9n: #d1d1d1;
+  --foundry_nu8bkp9o: #9f9f9f;
+  --foundry_nu8bkp9p: #585858;
+  --foundry_nu8bkp9q: #4271b0;
+  --foundry_nu8bkp9r: #5782bc;
+  --foundry_nu8bkp9s: #2f61a4;
+  --foundry_nu8bkp9t: #1a8043;
+  --foundry_nu8bkp9u: #1e934c;
+  --foundry_nu8bkp9v: #166f3a;
+  --foundry_nu8bkp9w: #9a6500;
+  --foundry_nu8bkp9x: #af7400;
+  --foundry_nu8bkp9y: #855800;
+  --foundry_nu8bkp9z: #e10404;
+  --foundry_nu8bkpa0: #fb1e1e;
+  --foundry_nu8bkpa1: #c50303;
+  --foundry_nu8bkpa2: #697177;
+  --foundry_nu8bkpa3: #798187;
+  --foundry_nu8bkpa4: #596269;
+  --foundry_nu8bkpa5: #c0c0c0;
+  --foundry_nu8bkpa6: rgba(0, 0, 0, 0);
+  --foundry_nu8bkpa7: #6e94c6;
+  --foundry_nu8bkpa8: #86a6d1;
+  --foundry_nu8bkpa9: #5782bc;
+  --foundry_nu8bkpaa: #21a657;
+  --foundry_nu8bkpab: #26bb61;
+  --foundry_nu8bkpac: #1e934c;
+  --foundry_nu8bkpad: #c68402;
+  --foundry_nu8bkpae: #dd9507;
+  --foundry_nu8bkpaf: #af7400;
+  --foundry_nu8bkpag: #fc5858;
+  --foundry_nu8bkpah: #fd7d7d;
+  --foundry_nu8bkpai: #fb1e1e;
+  --foundry_nu8bkpaj: #8b9297;
+  --foundry_nu8bkpak: #9fa5a9;
+  --foundry_nu8bkpal: #798187;
+  --foundry_nu8bkpam: #003366;
+  --foundry_nu8bkpan: #FFAA00;
+  --foundry_nu8bkpao: #CC0000;
+  --foundry_nu8bkpap: #fcaf17;
+}
+
+.foundry_nu8bkpar {
+  --foundry_nu8bkp3d: #fdfdfd;
+  --foundry_nu8bkp3e: #fdfdfd;
+  --foundry_nu8bkp3f: #fdfdfd;
+  --foundry_nu8bkp3g: #fdfdfd;
+  --foundry_nu8bkp3h: #eaeaea;
+  --foundry_nu8bkp3i: #d8d8d8;
+  --foundry_nu8bkp3j: #b2b2b2;
+  --foundry_nu8bkp3k: #919191;
+  --foundry_nu8bkp3l: #6d6d6d;
+  --foundry_nu8bkp3m: #464646;
+  --foundry_nu8bkp3n: #212121;
+  --foundry_nu8bkp3o: #000000;
+  --foundry_nu8bkp3p: #000000;
+  --foundry_nu8bkp3q: #0e0e0e;
+  --foundry_nu8bkp3r: #141414;
+  --foundry_nu8bkp3s: #1a1a1a;
+  --foundry_nu8bkp3t: #222222;
+  --foundry_nu8bkp3u: #3f3f3f;
+  --foundry_nu8bkp3v: #5b5b5b;
+  --foundry_nu8bkp3w: #797979;
+  --foundry_nu8bkp3x: #989898;
+  --foundry_nu8bkp3y: #b3b3b3;
+  --foundry_nu8bkp3z: #cecece;
+  --foundry_nu8bkp40: #ebebeb;
+  --foundry_nu8bkp41: #fff3f3;
+  --foundry_nu8bkp42: #ffe3e3;
+  --foundry_nu8bkp43: #ffd3d3;
+  --foundry_nu8bkp44: #ffbdbd;
+  --foundry_nu8bkp45: #ffa5a5;
+  --foundry_nu8bkp46: #ff8181;
+  --foundry_nu8bkp47: #ff5c5c;
+  --foundry_nu8bkp48: #e74646;
+  --foundry_nu8bkp49: #c93838;
+  --foundry_nu8bkp4a: #a92d2d;
+  --foundry_nu8bkp4b: #8b2323;
+  --foundry_nu8bkp4c: #6d1c1c;
+  --foundry_nu8bkp4d: #541515;
+  --foundry_nu8bkp4e: #401010;
+  --foundry_nu8bkp4f: #4b0808;
+  --foundry_nu8bkp4g: #610b0b;
+  --foundry_nu8bkp4h: #7a0e0e;
+  --foundry_nu8bkp4i: #941111;
+  --foundry_nu8bkp4j: #b01414;
+  --foundry_nu8bkp4k: #cc1717;
+  --foundry_nu8bkp4l: #e72424;
+  --foundry_nu8bkp4m: #eb5050;
+  --foundry_nu8bkp4n: #ef6f6f;
+  --foundry_nu8bkp4o: #f28989;
+  --foundry_nu8bkp4p: #f5a4a4;
+  --foundry_nu8bkp4q: #f7b5b5;
+  --foundry_nu8bkp4r: #f9c5c5;
+  --foundry_nu8bkp4s: #fad3d3;
+  --foundry_nu8bkp4t: #fff4d4;
+  --foundry_nu8bkp4u: #ffe8a4;
+  --foundry_nu8bkp4v: #ffdb72;
+  --foundry_nu8bkp4w: #ffc539;
+  --foundry_nu8bkp4x: #fcaf17;
+  --foundry_nu8bkp4y: #e19808;
+  --foundry_nu8bkp4z: #ca8602;
+  --foundry_nu8bkp50: #b07400;
+  --foundry_nu8bkp51: #976300;
+  --foundry_nu8bkp52: #7e5200;
+  --foundry_nu8bkp53: #654200;
+  --foundry_nu8bkp54: #503400;
+  --foundry_nu8bkp55: #3c2800;
+  --foundry_nu8bkp56: #2e1e00;
+  --foundry_nu8bkp57: #312000;
+  --foundry_nu8bkp58: #402a00;
+  --foundry_nu8bkp59: #533600;
+  --foundry_nu8bkp5a: #654200;
+  --foundry_nu8bkp5b: #794f00;
+  --foundry_nu8bkp5c: #8e5d00;
+  --foundry_nu8bkp5d: #a36b00;
+  --foundry_nu8bkp5e: #b87a00;
+  --foundry_nu8bkp5f: #ce8903;
+  --foundry_nu8bkp5g: #e29808;
+  --foundry_nu8bkp5h: #f7aa13;
+  --foundry_nu8bkp5i: #ffb923;
+  --foundry_nu8bkp5j: #ffcb47;
+  --foundry_nu8bkp5k: #ffd86c;
+  --foundry_nu8bkp5l: #e0fbea;
+  --foundry_nu8bkp5m: #bef7d5;
+  --foundry_nu8bkp5n: #93f2b9;
+  --foundry_nu8bkp5o: #5ce693;
+  --foundry_nu8bkp5p: #39d878;
+  --foundry_nu8bkp5q: #20c05f;
+  --foundry_nu8bkp5r: #15aa51;
+  --foundry_nu8bkp5s: #0f9444;
+  --foundry_nu8bkp5t: #0b7f39;
+  --foundry_nu8bkp5u: #08692f;
+  --foundry_nu8bkp5v: #065626;
+  --foundry_nu8bkp5w: #05431e;
+  --foundry_nu8bkp5x: #043317;
+  --foundry_nu8bkp5y: #032712;
+  --foundry_nu8bkp5z: #082915;
+  --foundry_nu8bkp60: #0b361c;
+  --foundry_nu8bkp61: #0e4524;
+  --foundry_nu8bkp62: #11552c;
+  --foundry_nu8bkp63: #146535;
+  --foundry_nu8bkp64: #18763d;
+  --foundry_nu8bkp65: #1b8847;
+  --foundry_nu8bkp66: #1f9a50;
+  --foundry_nu8bkp67: #23ad5a;
+  --foundry_nu8bkp68: #26bf63;
+  --foundry_nu8bkp69: #2bd46f;
+  --foundry_nu8bkp6a: #58dd8d;
+  --foundry_nu8bkp6b: #84e6ab;
+  --foundry_nu8bkp6c: #a3ecc0;
+  --foundry_nu8bkp6d: #f1f4f9;
+  --foundry_nu8bkp6e: #e3eaf4;
+  --foundry_nu8bkp6f: #d4dfee;
+  --foundry_nu8bkp6g: #bdcfe6;
+  --foundry_nu8bkp6h: #a9c0de;
+  --foundry_nu8bkp6i: #8ba9d2;
+  --foundry_nu8bkp6j: #7296c8;
+  --foundry_nu8bkp6k: #5882bc;
+  --foundry_nu8bkp6l: #406faf;
+  --foundry_nu8bkp6m: #295b9f;
+  --foundry_nu8bkp6n: #17498b;
+  --foundry_nu8bkp6o: #0c3874;
+  --foundry_nu8bkp6p: #062a5b;
+  --foundry_nu8bkp6q: #032047;
+  --foundry_nu8bkp6r: #02234c;
+  --foundry_nu8bkp6s: #052e61;
+  --foundry_nu8bkp6t: #0c3b76;
+  --foundry_nu8bkp6u: #17498a;
+  --foundry_nu8bkp6v: #265899;
+  --foundry_nu8bkp6w: #3868a6;
+  --foundry_nu8bkp6x: #4c78b2;
+  --foundry_nu8bkp6y: #6189bd;
+  --foundry_nu8bkp6z: #7699c7;
+  --foundry_nu8bkp70: #8baad0;
+  --foundry_nu8bkp71: #a4bbda;
+  --foundry_nu8bkp72: #b4c7e0;
+  --foundry_nu8bkp73: #c4d3e7;
+  --foundry_nu8bkp74: #d2ddec;
+  --foundry_nu8bkp75: #f2f4f6;
+  --foundry_nu8bkp76: #e7ebee;
+  --foundry_nu8bkp77: #d9dfe4;
+  --foundry_nu8bkp78: #c5cfd6;
+  --foundry_nu8bkp79: #b2c0c8;
+  --foundry_nu8bkp7a: #98aab6;
+  --foundry_nu8bkp7b: #8297a5;
+  --foundry_nu8bkp7c: #6b8495;
+  --foundry_nu8bkp7d: #5a717f;
+  --foundry_nu8bkp7e: #4b5e6a;
+  --foundry_nu8bkp7f: #3d4c55;
+  --foundry_nu8bkp7g: #303b43;
+  --foundry_nu8bkp7h: #242d33;
+  --foundry_nu8bkp7i: #1b2226;
+  --foundry_nu8bkp7j: #1b252c;
+  --foundry_nu8bkp7k: #253037;
+  --foundry_nu8bkp7l: #323d44;
+  --foundry_nu8bkp7m: #404b52;
+  --foundry_nu8bkp7n: #4f5960;
+  --foundry_nu8bkp7o: #5f686e;
+  --foundry_nu8bkp7p: #6f787d;
+  --foundry_nu8bkp7q: #80888c;
+  --foundry_nu8bkp7r: #92989c;
+  --foundry_nu8bkp7s: #a3a8ac;
+  --foundry_nu8bkp7t: #b6babd;
+  --foundry_nu8bkp7u: #c2c6c8;
+  --foundry_nu8bkp7v: #d0d2d4;
+  --foundry_nu8bkp7w: #dadcde;
+  --foundry_nu8bkp7x: #ffffff;
+  --foundry_nu8bkp7y: rgba(0, 0, 0, 0.1);
+  --foundry_nu8bkp7z: rgba(0, 0, 0, 0.15);
+  --foundry_nu8bkp80: rgba(0, 0, 0, 0.4);
+  --foundry_nu8bkp81: rgba(0, 0, 0, 0.5);
+  --foundry_nu8bkp82: rgba(0, 0, 0, 0.65);
+  --foundry_nu8bkp83: rgba(0, 0, 0, 0.8);
+  --foundry_nu8bkp84: rgba(0, 0, 0, 0.9);
+  --foundry_nu8bkp85: #000000;
+  --foundry_nu8bkp86: #082915;
+  --foundry_nu8bkp87: #02234c;
+  --foundry_nu8bkp88: #312000;
+  --foundry_nu8bkp89: #4b0808;
+  --foundry_nu8bkp8a: #1b252c;
+  --foundry_nu8bkp8b: #000000;
+  --foundry_nu8bkp8c: #141414;
+  --foundry_nu8bkp8d: #222222;
+  --foundry_nu8bkp8e: #3f3f3f;
+  --foundry_nu8bkp8f: #1a1a1a;
+  --foundry_nu8bkp8g: #141414;
+  --foundry_nu8bkp8h: #0e0e0e;
+  --foundry_nu8bkp8i: #212121;
+  --foundry_nu8bkp8j: #cecece;
+  --foundry_nu8bkp8k: #797979;
+  --foundry_nu8bkp8l: #989898;
+  --foundry_nu8bkp8m: #ebebeb;
+  --foundry_nu8bkp8n: #23ad5a;
+  --foundry_nu8bkp8o: #7699c7;
+  --foundry_nu8bkp8p: #ce8903;
+  --foundry_nu8bkp8q: #ef6f6f;
+  --foundry_nu8bkp8r: #92989c;
+  --foundry_nu8bkp8s: #cecece;
+  --foundry_nu8bkp8t: #797979;
+  --foundry_nu8bkp8u: #989898;
+  --foundry_nu8bkp8v: #b3b3b3;
+  --foundry_nu8bkp8w: #989898;
+  --foundry_nu8bkp8x: #7699c7;
+  --foundry_nu8bkp8y: #6189bd;
+  --foundry_nu8bkp8z: #8baad0;
+  --foundry_nu8bkp90: #4c78b2;
+  --foundry_nu8bkp91: #a4bbda;
+  --foundry_nu8bkp92: #23ad5a;
+  --foundry_nu8bkp93: #1f9a50;
+  --foundry_nu8bkp94: #26bf63;
+  --foundry_nu8bkp95: #1b8847;
+  --foundry_nu8bkp96: #2bd46f;
+  --foundry_nu8bkp97: #ce8903;
+  --foundry_nu8bkp98: #b87a00;
+  --foundry_nu8bkp99: #e29808;
+  --foundry_nu8bkp9a: #a36b00;
+  --foundry_nu8bkp9b: #f7aa13;
+  --foundry_nu8bkp9c: #ef6f6f;
+  --foundry_nu8bkp9d: #eb5050;
+  --foundry_nu8bkp9e: #f28989;
+  --foundry_nu8bkp9f: #e72424;
+  --foundry_nu8bkp9g: #f5a4a4;
+  --foundry_nu8bkp9h: #92989c;
+  --foundry_nu8bkp9i: #80888c;
+  --foundry_nu8bkp9j: #a3a8ac;
+  --foundry_nu8bkp9k: #6f787d;
+  --foundry_nu8bkp9l: #b6babd;
+  --foundry_nu8bkp9m: #3f3f3f;
+  --foundry_nu8bkp9n: #222222;
+  --foundry_nu8bkp9o: #5b5b5b;
+  --foundry_nu8bkp9p: #989898;
+  --foundry_nu8bkp9q: #4c78b2;
+  --foundry_nu8bkp9r: #3868a6;
+  --foundry_nu8bkp9s: #6189bd;
+  --foundry_nu8bkp9t: #1b8847;
+  --foundry_nu8bkp9u: #18763d;
+  --foundry_nu8bkp9v: #1f9a50;
+  --foundry_nu8bkp9w: #a36b00;
+  --foundry_nu8bkp9x: #8e5d00;
+  --foundry_nu8bkp9y: #b87a00;
+  --foundry_nu8bkp9z: #e72424;
+  --foundry_nu8bkpa0: #cc1717;
+  --foundry_nu8bkpa1: #eb5050;
+  --foundry_nu8bkpa2: #6f787d;
+  --foundry_nu8bkpa3: #5f686e;
+  --foundry_nu8bkpa4: #80888c;
+  --foundry_nu8bkpa5: #3f3f3f;
+  --foundry_nu8bkpa6: #222222;
+  --foundry_nu8bkpa7: #265899;
+  --foundry_nu8bkpa8: #17498a;
+  --foundry_nu8bkpa9: #3868a6;
+  --foundry_nu8bkpaa: #146535;
+  --foundry_nu8bkpab: #11552c;
+  --foundry_nu8bkpac: #18763d;
+  --foundry_nu8bkpad: #794f00;
+  --foundry_nu8bkpae: #654200;
+  --foundry_nu8bkpaf: #8e5d00;
+  --foundry_nu8bkpag: #b01414;
+  --foundry_nu8bkpah: #941111;
+  --foundry_nu8bkpai: #cc1717;
+  --foundry_nu8bkpaj: #4f5960;
+  --foundry_nu8bkpak: #404b52;
+  --foundry_nu8bkpal: #5f686e;
+  --foundry_nu8bkpam: #003366;
+  --foundry_nu8bkpan: #FFAA00;
+  --foundry_nu8bkpao: #CC0000;
+  --foundry_nu8bkpap: #fcaf17;
+}
+
+.foundry_nu8bkpas {
+  --foundry_nu8bkp3d: #fdfdfd;
+  --foundry_nu8bkp3e: #fdfdfd;
+  --foundry_nu8bkp3f: #fdfdfd;
+  --foundry_nu8bkp3g: #fdfdfd;
+  --foundry_nu8bkp3h: #cdcdcd;
+  --foundry_nu8bkp3i: #adadad;
+  --foundry_nu8bkp3j: #797979;
+  --foundry_nu8bkp3k: #555555;
+  --foundry_nu8bkp3l: #2e2e2e;
+  --foundry_nu8bkp3m: #000000;
+  --foundry_nu8bkp3n: #000000;
+  --foundry_nu8bkp3o: #000000;
+  --foundry_nu8bkp3p: #ffffff;
+  --foundry_nu8bkp3q: #ffffff;
+  --foundry_nu8bkp3r: #ffffff;
+  --foundry_nu8bkp3s: #e4e4e4;
+  --foundry_nu8bkp3t: #b5b5b5;
+  --foundry_nu8bkp3u: #979797;
+  --foundry_nu8bkp3v: #6a6a6a;
+  --foundry_nu8bkp3w: #3c3c3c;
+  --foundry_nu8bkp3x: #111111;
+  --foundry_nu8bkp3y: #000000;
+  --foundry_nu8bkp3z: #000000;
+  --foundry_nu8bkp40: #000000;
+  --foundry_nu8bkp41: #ffdddd;
+  --foundry_nu8bkp42: #ffbdbd;
+  --foundry_nu8bkp43: #ff9c9c;
+  --foundry_nu8bkp44: #ff6d6d;
+  --foundry_nu8bkp45: #f04c4c;
+  --foundry_nu8bkp46: #c73737;
+  --foundry_nu8bkp47: #a42b2b;
+  --foundry_nu8bkp48: #802121;
+  --foundry_nu8bkp49: #5a1717;
+  --foundry_nu8bkp4a: #290b0b;
+  --foundry_nu8bkp4b: #000000;
+  --foundry_nu8bkp4c: #000000;
+  --foundry_nu8bkp4d: #000000;
+  --foundry_nu8bkp4e: #000000;
+  --foundry_nu8bkp4f: #feb1b1;
+  --foundry_nu8bkp4g: #fd8181;
+  --foundry_nu8bkp4h: #fc4242;
+  --foundry_nu8bkp4i: #e20404;
+  --foundry_nu8bkp4j: #b90303;
+  --foundry_nu8bkp4k: #940303;
+  --foundry_nu8bkp4l: #710202;
+  --foundry_nu8bkp4m: #4b0101;
+  --foundry_nu8bkp4n: #130000;
+  --foundry_nu8bkp4o: #000000;
+  --foundry_nu8bkp4p: #000000;
+  --foundry_nu8bkp4q: #000000;
+  --foundry_nu8bkp4r: #000000;
+  --foundry_nu8bkp4s: #000000;
+  --foundry_nu8bkp4t: #ffe492;
+  --foundry_nu8bkp4u: #ffc539;
+  --foundry_nu8bkp4v: #f4a811;
+  --foundry_nu8bkp4w: #d48e04;
+  --foundry_nu8bkp4x: #b87a00;
+  --foundry_nu8bkp4y: #966200;
+  --foundry_nu8bkp4z: #7a5000;
+  --foundry_nu8bkp50: #5e3e00;
+  --foundry_nu8bkp51: #412b00;
+  --foundry_nu8bkp52: #1d1300;
+  --foundry_nu8bkp53: #000000;
+  --foundry_nu8bkp54: #000000;
+  --foundry_nu8bkp55: #000000;
+  --foundry_nu8bkp56: #000000;
+  --foundry_nu8bkp57: #ffb720;
+  --foundry_nu8bkp58: #e19808;
+  --foundry_nu8bkp59: #bb7c00;
+  --foundry_nu8bkp5a: #9a6500;
+  --foundry_nu8bkp5b: #7c5200;
+  --foundry_nu8bkp5c: #624000;
+  --foundry_nu8bkp5d: #483000;
+  --foundry_nu8bkp5e: #2e1e00;
+  --foundry_nu8bkp5f: #070400;
+  --foundry_nu8bkp5g: #000000;
+  --foundry_nu8bkp5h: #000000;
+  --foundry_nu8bkp5i: #000000;
+  --foundry_nu8bkp5j: #000000;
+  --foundry_nu8bkp5k: #000000;
+  --foundry_nu8bkp5l: #adf5ca;
+  --foundry_nu8bkp5m: #5ce693;
+  --foundry_nu8bkp5n: #2ed16f;
+  --foundry_nu8bkp5o: #19b357;
+  --foundry_nu8bkp5p: #119c48;
+  --foundry_nu8bkp5q: #0a7e38;
+  --foundry_nu8bkp5r: #07662d;
+  --foundry_nu8bkp5s: #064f23;
+  --foundry_nu8bkp5t: #043719;
+  --foundry_nu8bkp5u: #03190c;
+  --foundry_nu8bkp5v: #000000;
+  --foundry_nu8bkp5w: #000000;
+  --foundry_nu8bkp5x: #000000;
+  --foundry_nu8bkp5y: #000000;
+  --foundry_nu8bkp5z: #57dd8c;
+  --foundry_nu8bkp60: #26be63;
+  --foundry_nu8bkp61: #1f9d51;
+  --foundry_nu8bkp62: #1a8043;
+  --foundry_nu8bkp63: #156836;
+  --foundry_nu8bkp64: #10522b;
+  --foundry_nu8bkp65: #0c3d1f;
+  --foundry_nu8bkp66: #082614;
+  --foundry_nu8bkp67: #010603;
+  --foundry_nu8bkp68: #000000;
+  --foundry_nu8bkp69: #000000;
+  --foundry_nu8bkp6a: #000000;
+  --foundry_nu8bkp6b: #000000;
+  --foundry_nu8bkp6c: #000000;
+  --foundry_nu8bkp6d: #dee6f2;
+  --foundry_nu8bkp6e: #bdcfe6;
+  --foundry_nu8bkp6f: #9fb9db;
+  --foundry_nu8bkp6g: #7c9fcc;
+  --foundry_nu8bkp6h: #6189c0;
+  --foundry_nu8bkp6i: #3e6eae;
+  --foundry_nu8bkp6j: #26589c;
+  --foundry_nu8bkp6k: #134384;
+  --foundry_nu8bkp6l: #072e62;
+  --foundry_nu8bkp6m: #02152e;
+  --foundry_nu8bkp6n: #000000;
+  --foundry_nu8bkp6o: #000000;
+  --foundry_nu8bkp6p: #000000;
+  --foundry_nu8bkp6q: #000000;
+  --foundry_nu8bkp6r: #b2c7e2;
+  --foundry_nu8bkp6s: #8aa9d2;
+  --foundry_nu8bkp6t: #638bc1;
+  --foundry_nu8bkp6u: #4271b0;
+  --foundry_nu8bkp6v: #285a9e;
+  --foundry_nu8bkp6w: #154688;
+  --foundry_nu8bkp6x: #09336c;
+  --foundry_nu8bkp6y: #032047;
+  --foundry_nu8bkp6z: #01050b;
+  --foundry_nu8bkp70: #000000;
+  --foundry_nu8bkp71: #000000;
+  --foundry_nu8bkp72: #000000;
+  --foundry_nu8bkp73: #000000;
+  --foundry_nu8bkp74: #000000;
+  --foundry_nu8bkp75: #e0e6e9;
+  --foundry_nu8bkp76: #c5cfd6;
+  --foundry_nu8bkp77: #aab9c2;
+  --foundry_nu8bkp78: #8b9fac;
+  --foundry_nu8bkp79: #728a9a;
+  --foundry_nu8bkp7a: #5a707e;
+  --foundry_nu8bkp7b: #495b67;
+  --foundry_nu8bkp7c: #39464f;
+  --foundry_nu8bkp7d: #273037;
+  --foundry_nu8bkp7e: #111518;
+  --foundry_nu8bkp7f: #000000;
+  --foundry_nu8bkp7g: #000000;
+  --foundry_nu8bkp7h: #000000;
+  --foundry_nu8bkp7i: #000000;
+  --foundry_nu8bkp7j: #c1c5c8;
+  --foundry_nu8bkp7k: #a1a7ab;
+  --foundry_nu8bkp7l: #838a8f;
+  --foundry_nu8bkp7m: #697177;
+  --foundry_nu8bkp7n: #525c62;
+  --foundry_nu8bkp7o: #3e484f;
+  --foundry_nu8bkp7p: #2b363d;
+  --foundry_nu8bkp7q: #182229;
+  --foundry_nu8bkp7r: #030506;
+  --foundry_nu8bkp7s: #000000;
+  --foundry_nu8bkp7t: #000000;
+  --foundry_nu8bkp7u: #000000;
+  --foundry_nu8bkp7v: #000000;
+  --foundry_nu8bkp7w: #000000;
+  --foundry_nu8bkp7x: #ffffff;
+  --foundry_nu8bkp7y: rgba(0, 0, 0, 0.1);
+  --foundry_nu8bkp7z: rgba(0, 0, 0, 0.15);
+  --foundry_nu8bkp80: rgba(0, 0, 0, 0.4);
+  --foundry_nu8bkp81: rgba(0, 0, 0, 0.5);
+  --foundry_nu8bkp82: rgba(0, 0, 0, 0.65);
+  --foundry_nu8bkp83: rgba(0, 0, 0, 0.8);
+  --foundry_nu8bkp84: rgba(0, 0, 0, 0.9);
+  --foundry_nu8bkp85: #000000;
+  --foundry_nu8bkp86: #57dd8c;
+  --foundry_nu8bkp87: #b2c7e2;
+  --foundry_nu8bkp88: #ffb720;
+  --foundry_nu8bkp89: #feb1b1;
+  --foundry_nu8bkp8a: #c1c5c8;
+  --foundry_nu8bkp8b: #ffffff;
+  --foundry_nu8bkp8c: #ffffff;
+  --foundry_nu8bkp8d: #e4e4e4;
+  --foundry_nu8bkp8e: #ffffff;
+  --foundry_nu8bkp8f: #ffffff;
+  --foundry_nu8bkp8g: #e4e4e4;
+  --foundry_nu8bkp8h: #ffffff;
+  --foundry_nu8bkp8i: #000000;
+  --foundry_nu8bkp8j: #000000;
+  --foundry_nu8bkp8k: #3c3c3c;
+  --foundry_nu8bkp8l: #111111;
+  --foundry_nu8bkp8m: #000000;
+  --foundry_nu8bkp8n: #010603;
+  --foundry_nu8bkp8o: #01050b;
+  --foundry_nu8bkp8p: #070400;
+  --foundry_nu8bkp8q: #130000;
+  --foundry_nu8bkp8r: #030506;
+  --foundry_nu8bkp8s: #000000;
+  --foundry_nu8bkp8t: #3c3c3c;
+  --foundry_nu8bkp8u: #111111;
+  --foundry_nu8bkp8v: #000000;
+  --foundry_nu8bkp8w: #111111;
+  --foundry_nu8bkp8x: #01050b;
+  --foundry_nu8bkp8y: #032047;
+  --foundry_nu8bkp8z: #000000;
+  --foundry_nu8bkp90: #09336c;
+  --foundry_nu8bkp91: #000000;
+  --foundry_nu8bkp92: #010603;
+  --foundry_nu8bkp93: #082614;
+  --foundry_nu8bkp94: #000000;
+  --foundry_nu8bkp95: #0c3d1f;
+  --foundry_nu8bkp96: #000000;
+  --foundry_nu8bkp97: #070400;
+  --foundry_nu8bkp98: #2e1e00;
+  --foundry_nu8bkp99: #000000;
+  --foundry_nu8bkp9a: #483000;
+  --foundry_nu8bkp9b: #000000;
+  --foundry_nu8bkp9c: #130000;
+  --foundry_nu8bkp9d: #4b0101;
+  --foundry_nu8bkp9e: #000000;
+  --foundry_nu8bkp9f: #710202;
+  --foundry_nu8bkp9g: #000000;
+  --foundry_nu8bkp9h: #030506;
+  --foundry_nu8bkp9i: #182229;
+  --foundry_nu8bkp9j: #000000;
+  --foundry_nu8bkp9k: #2b363d;
+  --foundry_nu8bkp9l: #000000;
+  --foundry_nu8bkp9m: #979797;
+  --foundry_nu8bkp9n: #b5b5b5;
+  --foundry_nu8bkp9o: #6a6a6a;
+  --foundry_nu8bkp9p: #111111;
+  --foundry_nu8bkp9q: #09336c;
+  --foundry_nu8bkp9r: #154688;
+  --foundry_nu8bkp9s: #032047;
+  --foundry_nu8bkp9t: #0c3d1f;
+  --foundry_nu8bkp9u: #10522b;
+  --foundry_nu8bkp9v: #082614;
+  --foundry_nu8bkp9w: #483000;
+  --foundry_nu8bkp9x: #624000;
+  --foundry_nu8bkp9y: #2e1e00;
+  --foundry_nu8bkp9z: #710202;
+  --foundry_nu8bkpa0: #940303;
+  --foundry_nu8bkpa1: #4b0101;
+  --foundry_nu8bkpa2: #2b363d;
+  --foundry_nu8bkpa3: #3e484f;
+  --foundry_nu8bkpa4: #182229;
+  --foundry_nu8bkpa5: #979797;
+  --foundry_nu8bkpa6: rgba(0, 0, 0, 0);
+  --foundry_nu8bkpa7: #285a9e;
+  --foundry_nu8bkpa8: #4271b0;
+  --foundry_nu8bkpa9: #154688;
+  --foundry_nu8bkpaa: #156836;
+  --foundry_nu8bkpab: #1a8043;
+  --foundry_nu8bkpac: #10522b;
+  --foundry_nu8bkpad: #7c5200;
+  --foundry_nu8bkpae: #9a6500;
+  --foundry_nu8bkpaf: #624000;
+  --foundry_nu8bkpag: #b90303;
+  --foundry_nu8bkpah: #e20404;
+  --foundry_nu8bkpai: #940303;
+  --foundry_nu8bkpaj: #525c62;
+  --foundry_nu8bkpak: #697177;
+  --foundry_nu8bkpal: #3e484f;
+  --foundry_nu8bkpam: #003366;
+  --foundry_nu8bkpan: #FFAA00;
+  --foundry_nu8bkpao: #CC0000;
+  --foundry_nu8bkpap: #b87a00;
+}
+
+.foundry_nu8bkpat {
+  --foundry_nu8bkp3d: #fdfdfd;
+  --foundry_nu8bkp3e: #fdfdfd;
+  --foundry_nu8bkp3f: #fdfdfd;
+  --foundry_nu8bkp3g: #fdfdfd;
+  --foundry_nu8bkp3h: #cdcdcd;
+  --foundry_nu8bkp3i: #adadad;
+  --foundry_nu8bkp3j: #797979;
+  --foundry_nu8bkp3k: #555555;
+  --foundry_nu8bkp3l: #2e2e2e;
+  --foundry_nu8bkp3m: #000000;
+  --foundry_nu8bkp3n: #000000;
+  --foundry_nu8bkp3o: #000000;
+  --foundry_nu8bkp3p: #000000;
+  --foundry_nu8bkp3q: #000000;
+  --foundry_nu8bkp3r: #070707;
+  --foundry_nu8bkp3s: #1a1a1a;
+  --foundry_nu8bkp3t: #2f2f2f;
+  --foundry_nu8bkp3u: #656565;
+  --foundry_nu8bkp3v: #939393;
+  --foundry_nu8bkp3w: #c4c4c4;
+  --foundry_nu8bkp3x: #f5f5f5;
+  --foundry_nu8bkp3y: #ffffff;
+  --foundry_nu8bkp3z: #ffffff;
+  --foundry_nu8bkp40: #ffffff;
+  --foundry_nu8bkp41: #ffdddd;
+  --foundry_nu8bkp42: #ffbdbd;
+  --foundry_nu8bkp43: #ff9c9c;
+  --foundry_nu8bkp44: #ff6d6d;
+  --foundry_nu8bkp45: #f04c4c;
+  --foundry_nu8bkp46: #c73737;
+  --foundry_nu8bkp47: #a42b2b;
+  --foundry_nu8bkp48: #802121;
+  --foundry_nu8bkp49: #5a1717;
+  --foundry_nu8bkp4a: #290b0b;
+  --foundry_nu8bkp4b: #000000;
+  --foundry_nu8bkp4c: #000000;
+  --foundry_nu8bkp4d: #000000;
+  --foundry_nu8bkp4e: #000000;
+  --foundry_nu8bkp4f: #670b0b;
+  --foundry_nu8bkp4g: #911010;
+  --foundry_nu8bkp4h: #bd1515;
+  --foundry_nu8bkp4i: #e62323;
+  --foundry_nu8bkp4j: #ed6060;
+  --foundry_nu8bkp4k: #f28989;
+  --foundry_nu8bkp4l: #f6aeae;
+  --foundry_nu8bkp4m: #fad0d0;
+  --foundry_nu8bkp4n: #fef2f2;
+  --foundry_nu8bkp4o: #ffffff;
+  --foundry_nu8bkp4p: #ffffff;
+  --foundry_nu8bkp4q: #ffffff;
+  --foundry_nu8bkp4r: #ffffff;
+  --foundry_nu8bkp4s: #ffffff;
+  --foundry_nu8bkp4t: #ffe492;
+  --foundry_nu8bkp4u: #ffc539;
+  --foundry_nu8bkp4v: #f4a811;
+  --foundry_nu8bkp4w: #d48e04;
+  --foundry_nu8bkp4x: #b87a00;
+  --foundry_nu8bkp4y: #966200;
+  --foundry_nu8bkp4z: #7a5000;
+  --foundry_nu8bkp50: #5e3e00;
+  --foundry_nu8bkp51: #412b00;
+  --foundry_nu8bkp52: #1d1300;
+  --foundry_nu8bkp53: #000000;
+  --foundry_nu8bkp54: #000000;
+  --foundry_nu8bkp55: #000000;
+  --foundry_nu8bkp56: #000000;
+  --foundry_nu8bkp57: #442d00;
+  --foundry_nu8bkp58: #634100;
+  --foundry_nu8bkp59: #825600;
+  --foundry_nu8bkp5a: #a26b00;
+  --foundry_nu8bkp5b: #c28101;
+  --foundry_nu8bkp5c: #e29808;
+  --foundry_nu8bkp5d: #feb21a;
+  --foundry_nu8bkp5e: #ffd665;
+  --foundry_nu8bkp5f: #fff4d7;
+  --foundry_nu8bkp5g: #ffffff;
+  --foundry_nu8bkp5h: #ffffff;
+  --foundry_nu8bkp5i: #ffffff;
+  --foundry_nu8bkp5j: #ffffff;
+  --foundry_nu8bkp5k: #ffffff;
+  --foundry_nu8bkp5l: #adf5ca;
+  --foundry_nu8bkp5m: #5ce693;
+  --foundry_nu8bkp5n: #2ed16f;
+  --foundry_nu8bkp5o: #19b357;
+  --foundry_nu8bkp5p: #119c48;
+  --foundry_nu8bkp5q: #0a7e38;
+  --foundry_nu8bkp5r: #07662d;
+  --foundry_nu8bkp5s: #064f23;
+  --foundry_nu8bkp5t: #043719;
+  --foundry_nu8bkp5u: #03190c;
+  --foundry_nu8bkp5v: #000000;
+  --foundry_nu8bkp5w: #000000;
+  --foundry_nu8bkp5x: #000000;
+  --foundry_nu8bkp5y: #000000;
+  --foundry_nu8bkp5z: #0c3a1e;
+  --foundry_nu8bkp60: #11522b;
+  --foundry_nu8bkp61: #166d39;
+  --foundry_nu8bkp62: #1b8746;
+  --foundry_nu8bkp63: #21a355;
+  --foundry_nu8bkp64: #26bf63;
+  --foundry_nu8bkp65: #44da80;
+  --foundry_nu8bkp66: #9eebbd;
+  --foundry_nu8bkp67: #e4faec;
+  --foundry_nu8bkp68: #ffffff;
+  --foundry_nu8bkp69: #ffffff;
+  --foundry_nu8bkp6a: #ffffff;
+  --foundry_nu8bkp6b: #ffffff;
+  --foundry_nu8bkp6c: #ffffff;
+  --foundry_nu8bkp6d: #dee6f2;
+  --foundry_nu8bkp6e: #bdcfe6;
+  --foundry_nu8bkp6f: #9fb9db;
+  --foundry_nu8bkp6g: #7c9fcc;
+  --foundry_nu8bkp6h: #6189c0;
+  --foundry_nu8bkp6i: #3e6eae;
+  --foundry_nu8bkp6j: #26589c;
+  --foundry_nu8bkp6k: #134384;
+  --foundry_nu8bkp6l: #072e62;
+  --foundry_nu8bkp6m: #02152e;
+  --foundry_nu8bkp6n: #000000;
+  --foundry_nu8bkp6o: #000000;
+  --foundry_nu8bkp6p: #000000;
+  --foundry_nu8bkp6q: #000000;
+  --foundry_nu8bkp6r: #073065;
+  --foundry_nu8bkp6s: #154787;
+  --foundry_nu8bkp6t: #2e609f;
+  --foundry_nu8bkp6u: #4b78b2;
+  --foundry_nu8bkp6v: #6a91c1;
+  --foundry_nu8bkp6w: #8ba9d0;
+  --foundry_nu8bkp6x: #adc2de;
+  --foundry_nu8bkp6y: #cfdbeb;
+  --foundry_nu8bkp6z: #f1f5f9;
+  --foundry_nu8bkp70: #ffffff;
+  --foundry_nu8bkp71: #ffffff;
+  --foundry_nu8bkp72: #ffffff;
+  --foundry_nu8bkp73: #ffffff;
+  --foundry_nu8bkp74: #ffffff;
+  --foundry_nu8bkp75: #e0e6e9;
+  --foundry_nu8bkp76: #c5cfd6;
+  --foundry_nu8bkp77: #aab9c2;
+  --foundry_nu8bkp78: #8b9fac;
+  --foundry_nu8bkp79: #728a9a;
+  --foundry_nu8bkp7a: #5a707e;
+  --foundry_nu8bkp7b: #495b67;
+  --foundry_nu8bkp7c: #39464f;
+  --foundry_nu8bkp7d: #273037;
+  --foundry_nu8bkp7e: #111518;
+  --foundry_nu8bkp7f: #000000;
+  --foundry_nu8bkp7g: #000000;
+  --foundry_nu8bkp7h: #000000;
+  --foundry_nu8bkp7i: #000000;
+  --foundry_nu8bkp7j: #28333a;
+  --foundry_nu8bkp7k: #3e4950;
+  --foundry_nu8bkp7l: #576067;
+  --foundry_nu8bkp7m: #6f777d;
+  --foundry_nu8bkp7n: #888f94;
+  --foundry_nu8bkp7o: #a2a8ab;
+  --foundry_nu8bkp7p: #bdc1c4;
+  --foundry_nu8bkp7q: #d8dadc;
+  --foundry_nu8bkp7r: #f4f4f5;
+  --foundry_nu8bkp7s: #ffffff;
+  --foundry_nu8bkp7t: #ffffff;
+  --foundry_nu8bkp7u: #ffffff;
+  --foundry_nu8bkp7v: #ffffff;
+  --foundry_nu8bkp7w: #ffffff;
+  --foundry_nu8bkp7x: #ffffff;
+  --foundry_nu8bkp7y: rgba(0, 0, 0, 0.1);
+  --foundry_nu8bkp7z: rgba(0, 0, 0, 0.15);
+  --foundry_nu8bkp80: rgba(0, 0, 0, 0.4);
+  --foundry_nu8bkp81: rgba(0, 0, 0, 0.5);
+  --foundry_nu8bkp82: rgba(0, 0, 0, 0.65);
+  --foundry_nu8bkp83: rgba(0, 0, 0, 0.8);
+  --foundry_nu8bkp84: rgba(0, 0, 0, 0.9);
+  --foundry_nu8bkp85: #000000;
+  --foundry_nu8bkp86: #0c3a1e;
+  --foundry_nu8bkp87: #073065;
+  --foundry_nu8bkp88: #442d00;
+  --foundry_nu8bkp89: #670b0b;
+  --foundry_nu8bkp8a: #28333a;
+  --foundry_nu8bkp8b: #000000;
+  --foundry_nu8bkp8c: #070707;
+  --foundry_nu8bkp8d: #2f2f2f;
+  --foundry_nu8bkp8e: #656565;
+  --foundry_nu8bkp8f: #1a1a1a;
+  --foundry_nu8bkp8g: #070707;
+  --foundry_nu8bkp8h: #000000;
+  --foundry_nu8bkp8i: #000000;
+  --foundry_nu8bkp8j: #ffffff;
+  --foundry_nu8bkp8k: #c4c4c4;
+  --foundry_nu8bkp8l: #f5f5f5;
+  --foundry_nu8bkp8m: #ffffff;
+  --foundry_nu8bkp8n: #e4faec;
+  --foundry_nu8bkp8o: #f1f5f9;
+  --foundry_nu8bkp8p: #fff4d7;
+  --foundry_nu8bkp8q: #fef2f2;
+  --foundry_nu8bkp8r: #f4f4f5;
+  --foundry_nu8bkp8s: #ffffff;
+  --foundry_nu8bkp8t: #c4c4c4;
+  --foundry_nu8bkp8u: #f5f5f5;
+  --foundry_nu8bkp8v: #ffffff;
+  --foundry_nu8bkp8w: #f5f5f5;
+  --foundry_nu8bkp8x: #f1f5f9;
+  --foundry_nu8bkp8y: #cfdbeb;
+  --foundry_nu8bkp8z: #ffffff;
+  --foundry_nu8bkp90: #adc2de;
+  --foundry_nu8bkp91: #ffffff;
+  --foundry_nu8bkp92: #e4faec;
+  --foundry_nu8bkp93: #9eebbd;
+  --foundry_nu8bkp94: #ffffff;
+  --foundry_nu8bkp95: #44da80;
+  --foundry_nu8bkp96: #ffffff;
+  --foundry_nu8bkp97: #fff4d7;
+  --foundry_nu8bkp98: #ffd665;
+  --foundry_nu8bkp99: #ffffff;
+  --foundry_nu8bkp9a: #feb21a;
+  --foundry_nu8bkp9b: #ffffff;
+  --foundry_nu8bkp9c: #fef2f2;
+  --foundry_nu8bkp9d: #fad0d0;
+  --foundry_nu8bkp9e: #ffffff;
+  --foundry_nu8bkp9f: #f6aeae;
+  --foundry_nu8bkp9g: #ffffff;
+  --foundry_nu8bkp9h: #f4f4f5;
+  --foundry_nu8bkp9i: #d8dadc;
+  --foundry_nu8bkp9j: #ffffff;
+  --foundry_nu8bkp9k: #bdc1c4;
+  --foundry_nu8bkp9l: #ffffff;
+  --foundry_nu8bkp9m: #656565;
+  --foundry_nu8bkp9n: #2f2f2f;
+  --foundry_nu8bkp9o: #939393;
+  --foundry_nu8bkp9p: #f5f5f5;
+  --foundry_nu8bkp9q: #adc2de;
+  --foundry_nu8bkp9r: #8ba9d0;
+  --foundry_nu8bkp9s: #cfdbeb;
+  --foundry_nu8bkp9t: #44da80;
+  --foundry_nu8bkp9u: #26bf63;
+  --foundry_nu8bkp9v: #9eebbd;
+  --foundry_nu8bkp9w: #feb21a;
+  --foundry_nu8bkp9x: #e29808;
+  --foundry_nu8bkp9y: #ffd665;
+  --foundry_nu8bkp9z: #f6aeae;
+  --foundry_nu8bkpa0: #f28989;
+  --foundry_nu8bkpa1: #fad0d0;
+  --foundry_nu8bkpa2: #bdc1c4;
+  --foundry_nu8bkpa3: #a2a8ab;
+  --foundry_nu8bkpa4: #d8dadc;
+  --foundry_nu8bkpa5: #656565;
+  --foundry_nu8bkpa6: #2f2f2f;
+  --foundry_nu8bkpa7: #6a91c1;
+  --foundry_nu8bkpa8: #4b78b2;
+  --foundry_nu8bkpa9: #8ba9d0;
+  --foundry_nu8bkpaa: #21a355;
+  --foundry_nu8bkpab: #1b8746;
+  --foundry_nu8bkpac: #26bf63;
+  --foundry_nu8bkpad: #c28101;
+  --foundry_nu8bkpae: #a26b00;
+  --foundry_nu8bkpaf: #e29808;
+  --foundry_nu8bkpag: #ed6060;
+  --foundry_nu8bkpah: #e62323;
+  --foundry_nu8bkpai: #f28989;
+  --foundry_nu8bkpaj: #888f94;
+  --foundry_nu8bkpak: #6f777d;
+  --foundry_nu8bkpal: #a2a8ab;
+  --foundry_nu8bkpam: #003366;
+  --foundry_nu8bkpan: #FFAA00;
+  --foundry_nu8bkpao: #CC0000;
+  --foundry_nu8bkpap: #b87a00;
+}
+
+.foundry_148vt480 {
+  z-index: 1;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.foundry_148vt481 {
+  will-change: transform;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  touch-action: none;
+}
+
+.foundry_a5x3kh0 {
+  cursor: pointer;
+  display: inline-flex;
+  flex-shrink: 0;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  transition: all 0.15s ease-out;
+  transition-property: color, background-color, border-color, outline-color;
+}
+
+.foundry_a5x3kh0:disabled {
+  cursor: not-allowed;
+}
+
+.foundry_a5x3kh9 {
+  padding: var(--foundry_nu8bkpj);
+  border-radius: var(--foundry_nu8bkp4);
+}
+
+.foundry_a5x3kha {
+  padding: var(--foundry_nu8bkpk);
+  border-radius: var(--foundry_nu8bkp5);
+}
+
+.foundry_a5x3khb {
+  padding: calc(var(--foundry_nu8bkpj) + 2.5px);
+  border-radius: var(--foundry_nu8bkp5);
+}
+
+.foundry_a5x3khc {
+  padding: var(--foundry_nu8bkpm);
+  border-radius: var(--foundry_nu8bkp5);
+}
+
+.foundry_a5x3khd {
+  width: 100%;
+}
+
+.foundry_bc732x0 {
+  background: var(--foundry_nu8bkp3r);
+  color: var(--foundry_nu8bkp8j);
+  border-radius: var(--foundry_nu8bkp4);
+  padding: var(--foundry_nu8bkp11) var(--foundry_nu8bkp12);
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--foundry_nu8bkp9m);
+  user-select: none;
+  font-family: var(--foundry_nu8bkp2n);
+  font-size: var(--foundry_nu8bkp38);
+  white-space: nowrap;
+}
+
+.foundry_bc732x1 {
+  display: inline;
+  padding: 0 var(--foundry_nu8bkp11);
+}
+
+.foundry_h3lgaa0 {
+  border-radius: var(--foundry_nu8bkp4);
+  background-color: var(--foundry_nu8bkp8i);
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--foundry_nu8bkp8i);
+  box-shadow: 0 0 2px var(--foundry_nu8bkp7z), 0 8px 24px var(--foundry_nu8bkp7z);
+  user-select: none;
+  max-width: var(--foundry_nu8bkp1p);
+  position: relative;
+  z-index: 110;
+}
+
+.foundry_h3lgaa1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--foundry_nu8bkpi) var(--foundry_nu8bkpk);
+  gap: var(--foundry_nu8bkpj);
+  color: var(--foundry_nu8bkp7x);
+}
+
+.foundry_h3lgaa2 {
+  fill: var(--foundry_nu8bkp8i);
+  width: var(--foundry_nu8bkp12);
+  height: var(--foundry_nu8bkp11);
+}
+
+.foundry_bwy1ds0 {
+  display: block;
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 3;
+}
+
+.foundry_bwy1ds1:disabled {
+  border-color: var(--foundry_nu8bkp3t);
+  background-color: var(--foundry_nu8bkp3t);
+}
+
+.foundry_bwy1ds1:not(:disabled) {
+  pointer-events: auto;
+}
+
+.foundry_bwy1ds2 {
+  position: fixed;
+  top: var(--foundry_nu8bkp15);
+  left: var(--foundry_nu8bkp15);
+}
+
+.foundry_bwy1ds3 {
+  top: var(--foundry_nu8bkp15);
+  right: var(--foundry_nu8bkp15);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  gap: var(--foundry_nu8bkpj);
+}
+
+.foundry_bwy1ds4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--foundry_nu8bkpj);
+  border-color: var(--foundry_nu8bkp3n);
+  background-color: var(--foundry_nu8bkp3n);
+  border-radius: var(--foundry_nu8bkp6);
+  pointer-events: auto;
+}
+
+.foundry_bwy1ds5 {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.foundry_bwy1ds6 {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.foundry_bwy1ds8 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: var(--foundry_nu8bkpm);
+  padding: 0 var(--foundry_nu8bkp15) var(--foundry_nu8bkp15);
+  box-sizing: border-box;
+}
+
+.foundry_bwy1ds9 {
+  margin-left: auto;
+}
+
+.foundry_bwy1dsa {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  user-select: none;
+  touch-action: none;
+  width: 100%;
+  height: 64px;
+}
+
+.foundry_bwy1dsb {
+  background-color: var(--foundry_nu8bkp3l);
+  position: relative;
+  flex-grow: 1;
+  width: var(--foundry_nu8bkp10);
+}
+
+.foundry_bwy1dsc {
+  position: absolute;
+  background-color: var(--foundry_nu8bkp3l);
+  height: 100%;
+}
+
+.foundry_bwy1dsb+span {
+  width: 100%;
+  pointer-events: none;
+}
+
+.foundry_bwy1dsd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.foundry_bwy1dsd:focus-visible {
+  outline: none;
+}
+
+.foundry_bwy1dse {
+  display: block;
+  width: var(--foundry_nu8bkp13);
+  height: var(--foundry_nu8bkp13);
+  background-color: var(--foundry_nu8bkp3d);
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.foundry_bwy1dsd:focus-visible .foundry_bwy1dse {
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: var(--foundry_nu8bkp9q);
+}
+
+.foundry_bwy1dsf {
+  display: flex;
+  flex-direction: column;
+}
+
+.foundry_bwy1dsf .foundry_bwy1dsg {
+  color: var(--foundry_nu8bkp3j);
+}
+
+.foundry_bwy1dsh {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  min-height: var(--foundry_nu8bkp1l);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.65) 75%);
+  z-index: -1;
+}
+
+@media screen and (min-width: 1024px) {
+  .foundry_bwy1ds2 {
+    top: var(--foundry_nu8bkp18);
+    left: var(--foundry_nu8bkp18);
+  }
+
+  .foundry_bwy1ds3 {
+    top: var(--foundry_nu8bkp18);
+    right: var(--foundry_nu8bkp18);
+  }
+
+  .foundry_bwy1ds8 {
+    padding: 0 var(--foundry_nu8bkp18) var(--foundry_nu8bkp18);
+  }
+}
+
+.foundry_1a74xwb0 {
+  position: relative;
+  display: block;
+}
+
+.foundry_1a74xwb1 {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: zoom-in;
+  position: relative;
+  width: 100%;
+  transform-origin: center;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  will-change: transform, width, height, top, left, aspect-ratio, position, object-fit, object-position, opacity;
+}
+
+.foundry_1a74xwb2 {
+  opacity: 0;
+  position: fixed;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 8003;
+}
+
+.foundry_1a74xwb3 {
+  outline-width: 4px;
+  outline-offset: -4px;
+}
+
+.foundry_1a74xwb3:focus-visible {
+  outline-color: var(--foundry_nu8bkp7x);
+}
+
+.foundry_1a74xwb3[data-idle="false"]:focus-visible {
+  outline-color: transparent !important;
+}
+
+.foundry_1a74xwb3>* {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.foundry_1a74xwb4 {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: inherit;
+  object-position: inherit;
+}
+
+.foundry_1a74xwb5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--foundry_nu8bkp1a);
+  width: var(--foundry_nu8bkp1a);
+  position: absolute;
+  bottom: var(--foundry_nu8bkp17);
+  right: var(--foundry_nu8bkp17);
+  color: var(--foundry_nu8bkp3g);
+  background-color: color-mix(in srgb, var(--foundry_nu8bkp85), transparent 50%);
+  border-radius: var(--foundry_nu8bkpa);
+  backdrop-filter: blur(5px);
+  transition: all 0.15s ease-out;
+  will-change: opacity;
+}
+
+.foundry_1a74xwb3:hover .foundry_1a74xwb5,
+.foundry_1a74xwb3:focus-visible .foundry_1a74xwb5 {
+  background-color: var(--foundry_nu8bkp3g);
+  color: var(--foundry_nu8bkp3n);
+}
+
+.foundry_1a74xwb6 {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  z-index: 8002;
+  will-change: opacity;
+}
+
+.foundry_1a74xwb7 {
+  touch-action: none;
+  will-change: transform;
+  cursor: grab;
+}
+
+.foundry_1a74xwb8 {
+  position: fixed;
+  inset: 0;
+  background-color: var(--foundry_nu8bkp85);
+  z-index: 8001;
+  will-change: opacity;
+}
+
+.foundry_1a74xwb9 {
+  position: relative;
+  z-index: 8004;
+  will-change: opacity;
+}
+
+.foundry_1a74xwba {
+  display: block;
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.foundry_uaq1gw0 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: var(--foundry_nu8bkpj);
+  width: 100%;
+}
+
+.foundry_uaq1gw1 {
+  display: grid;
+  grid-template-areas: "label hint";
+  grid-template-columns: 1fr max(20%, 100px);
+  gap: var(--foundry_nu8bkpj);
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.foundry_uaq1gw2 {
+  grid-area: label;
+  word-break: break-all;
+}
+
+.foundry_uaq1gw3 {
+  grid-area: hint;
+  overflow: hidden;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--foundry_nu8bkp8l);
+}
+
+.foundry_uaq1gw4 {
+  color: var(--foundry_nu8bkp8q);
+  margin-left: var(--foundry_nu8bkpi);
+}
+
+.foundry_uaq1gw5 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: var(--foundry_nu8bkpk);
+  width: 100%;
+  background: var(--foundry_nu8bkp3p);
+  color: var(--foundry_nu8bkp8k);
+  border: 1px solid var(--foundry_nu8bkp9o);
+  border-radius: var(--foundry_nu8bkp5);
+}
+
+.foundry_uaq1gw5:hover {
+  border-color: var(--foundry_nu8bkp3z);
+  color: var(--foundry_nu8bkp8l);
+}
+
+.foundry_uaq1gw5:focus-visible {
+  outline: 2px solid var(--foundry_nu8bkp9q);
+  z-index: 1;
+}
+
+.foundry_uaq1gw5:disabled {
+  background: var(--foundry_nu8bkp3u);
+  border-color: var(--foundry_nu8bkpa5);
+  color: var(--foundry_nu8bkp8k);
+  cursor: not-allowed;
+}
+
+.foundry_uaq1gw5:not([data-placeholder]) {
+  color: var(--foundry_nu8bkp8j);
+}
+
+.foundry_uaq1gw5[data-state="open"] {
+  color: var(--foundry_nu8bkp8j);
+}
+
+.foundry_uaq1gw6 {
+  background: var(--foundry_nu8bkp3u);
+  border-color: var(--foundry_nu8bkpa5);
+  color: var(--foundry_nu8bkp8k);
+}
+
+.foundry_uaq1gw6:hover {
+  color: var(--foundry_nu8bkp8j);
+}
+
+.foundry_uaq1gw7 {
+  border-color: var(--foundry_nu8bkp9z);
+  border-width: 2px;
+}
+
+.foundry_uaq1gw7:hover {
+  border-color: var(--foundry_nu8bkp4m);
+}
+
+.foundry_uaq1gw7:focus-visible {
+  outline: 2px solid var(--foundry_nu8bkp9q);
+  outline-offset: -2px;
+  z-index: 1;
+}
+
+.foundry_uaq1gw8 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.foundry_uaq1gw9 {
+  color: var(--foundry_nu8bkp8s);
+  flex: none;
+}
+
+.foundry_uaq1gwa {
+  color: var(--foundry_nu8bkp8t);
+}
+
+.foundry_uaq1gwb {
+  border: 1px solid var(--foundry_nu8bkpa6);
+  width: var(--radix-select-trigger-width);
+  border-radius: var(--foundry_nu8bkp5);
+}
+
+.foundry_uaq1gwc {
+  margin: 0;
+  padding: 0;
+  background: var(--foundry_nu8bkp3p);
+  border-radius: var(--foundry_nu8bkp5);
+  box-shadow: 0px 0px 2px 0px var(--foundry_nu8bkp7z), 0px 8px 24px 0px var(--foundry_nu8bkp7z);
+  width: var(--radix-select-trigger-width);
+  max-height: calc(var(--radix-select-trigger-height) * 5);
+}
+
+.foundry_uaq1gwe {
+  margin: 0;
+  padding: var(--foundry_nu8bkpk);
+  color: var(--foundry_nu8bkp8j);
+  border-radius: 0;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--foundry_nu8bkpk);
+}
+
+.foundry_uaq1gwe::after {
+  content: "";
+  position: absolute;
+  margin: auto;
+  bottom: 3px;
+  left: 0;
+  right: 0;
+  width: calc(100% - (var(--foundry_nu8bkp13) * 2));
+  height: 1px;
+  background: var(--foundry_nu8bkp3t);
+}
+
+.foundry_uaq1gwe:focus {
+  outline: none;
+}
+
+.foundry_uaq1gwe:hover {
+  background: var(--foundry_nu8bkp3s);
+}
+
+.foundry_uaq1gwe:active {
+  background: var(--foundry_nu8bkp3t);
+}
+
+.foundry_uaq1gwe:hover:not(:focus-visible) {
+  background: var(--foundry_nu8bkp3s);
+}
+
+.foundry_uaq1gwe:not(:hover):focus-visible {
+  outline: 2px solid var(--foundry_nu8bkp9q);
+  outline-offset: -2px;
+  z-index: 1;
+}
+
+.foundry_uaq1gwe[data-state="checked"] {
+  font-weight: var(--foundry_nu8bkp2y);
+}
+
+.foundry_uaq1gwe[data-disabled] {
+  background: var(--foundry_nu8bkp3r);
+  color: var(--foundry_nu8bkp8k);
+  cursor: not-allowed;
+}
+
+.foundry_uaq1gwe[data-disabled]:hover {
+  background: var(--foundry_nu8bkp3r);
+}
+
+.foundry_uaq1gwc .foundry_uaq1gwe:first-of-type {
+  border-top-left-radius: var(--foundry_nu8bkp5);
+  border-top-right-radius: var(--foundry_nu8bkp5);
+}
+
+.foundry_uaq1gwc .foundry_uaq1gwe:last-of-type {
+  border-bottom-left-radius: var(--foundry_nu8bkp5);
+  border-bottom-right-radius: var(--foundry_nu8bkp5);
+}
+
+.foundry_uaq1gwc .foundry_uaq1gwe:last-of-type:after {
+  display: none;
+}
+
+.foundry_uaq1gwd .foundry_uaq1gwe:after {
+  display: none;
+}
+
+.foundry_uaq1gwf {
+  color: var(--foundry_nu8bkp8l);
+}
+
+.foundry_uaq1gwg {
+  color: var(--foundry_nu8bkp8q);
+}
+
+.foundry_uaq1gwh {
+  padding-top: 3px;
+  vertical-align: text-top;
+  margin-right: var(--foundry_nu8bkpi);
+}
+
+.foundry_uaq1gwi {
+  margin-left: auto;
+}
+
+.foundry_uaq1gwj {
+  width: 100%;
+  height: 100%;
+}
+
+.foundry_uaq1gwk {
+  width: 100%;
+  height: 100%;
+}
+
+.foundry_uaq1gwl {
+  width: 6px;
+  padding: 8px 5px;
+}
+
+.foundry_uaq1gwm {
+  background: var(--foundry_nu8bkp3u);
+  border-radius: var(--foundry_nu8bkpb);
+}
+
+.foundry_uaq1gwn {
+  color: var(--foundry_nu8bkp8k);
+}
+
+.foundry_m1icrx0 {
+  position: relative;
+  width: 100%;
+}
+
+.foundry_m1icrx1 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.foundry_m1icrx2 {
+  gap: var(--foundry_nu8bkph);
+}
+
+.foundry_m1icrx3 {
+  gap: var(--foundry_nu8bkpi);
+}
+
+.foundry_m1icrx4 {
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.foundry_m1icrx7 {
+  color: var(--foundry_nu8bkp3x);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--foundry_nu8bkpi);
+}
+
+.foundry_m1icrx7:after {
+  content: "/";
+  padding: 0 var(--foundry_nu8bkpi);
+}
+
+.foundry_m1icrx7:hover {
+  color: var(--foundry_nu8bkp8l);
+}
+
+.foundry_m1icrx7:last-child:after {
+  content: "";
+}
+
+.foundry_m1icrxa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--foundry_nu8bkp3x);
+  border-radius: var(--foundry_nu8bkp3);
+  text-decoration: none;
+  outline-offset: -1px;
+  white-space: nowrap;
+}
+
+.foundry_m1icrxa:hover {
+  color: var(--foundry_nu8bkp8l);
+  text-decoration: underline;
+}
+
+.foundry_m1icrxb {
+  padding: var(--foundry_nu8bkph) var(--foundry_nu8bkpi) var(--foundry_nu8bkph) var(--foundry_nu8bkph);
+  gap: var(--foundry_nu8bkph);
+}
+
+.foundry_m1icrxc {
+  padding: var(--foundry_nu8bkpi) var(--foundry_nu8bkpj) var(--foundry_nu8bkpi) var(--foundry_nu8bkpi);
+  gap: var(--foundry_nu8bkpi);
+}
+
+.foundry_m1icrxd {
+  color: var(--foundry_nu8bkp8j);
+  white-space: normal;
+}
+
+.foundry_m1icrxd:hover {
+  color: var(--foundry_nu8bkp8j);
+  text-decoration: none;
+}
+
+.foundry_m1icrxe {
+  background: transparent;
+  color: var(--foundry_nu8bkp3x);
+  border-radius: var(--foundry_nu8bkp3);
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.foundry_m1icrxe:hover {
+  color: var(--foundry_nu8bkp8l);
+  text-decoration: underline;
+}
+
+.foundry_m1icrxe[data-state="open"] {
+  color: var(--foundry_nu8bkp8l);
+  text-decoration: underline;
+}
+
+.foundry_m1icrxf {
+  border: 1px solid var(--foundry_nu8bkpa6);
+  border-radius: var(--foundry_nu8bkp5);
+}
+
+.foundry_m1icrxg {
+  margin: 0;
+  padding: 0;
+  background: var(--foundry_nu8bkp3p);
+  border-radius: var(--foundry_nu8bkp5);
+  box-shadow: 0px 0px 2px 0px var(--foundry_nu8bkp7z), 0px 8px 24px 0px var(--foundry_nu8bkp7z);
+  min-width: var(--foundry_nu8bkp1l);
+}
+
+.foundry_m1icrxh {
+  margin: 0;
+  padding: var(--foundry_nu8bkpk);
+  color: var(--foundry_nu8bkp8j);
+  border-radius: 0;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--foundry_nu8bkpk);
+}
+
+.foundry_m1icrxh:focus {
+  outline: none;
+}
+
+.foundry_m1icrxh:hover {
+  background: var(--foundry_nu8bkp3s);
+}
+
+.foundry_m1icrxh:active {
+  background: var(--foundry_nu8bkp3t);
+}
+
+.foundry_m1icrxh:hover:not(:focus-visible) {
+  background: var(--foundry_nu8bkp3s);
+}
+
+.foundry_m1icrxh:not(:hover):focus-visible {
+  outline: 2px solid var(--foundry_nu8bkp9q);
+  outline-offset: -2px;
+  z-index: 1;
+}
+
+.foundry_m1icrxh[data-state="checked"] {
+  font-weight: var(--foundry_nu8bkp2y);
+}
+
+.foundry_m1icrxh[data-disabled] {
+  background: var(--foundry_nu8bkp3r);
+  color: var(--foundry_nu8bkp8k);
+  cursor: not-allowed;
+}
+
+.foundry_m1icrxh[data-disabled]:hover {
+  background: var(--foundry_nu8bkp3r);
+}
+
+.foundry_m1icrxg .foundry_m1icrxh:first-of-type {
+  border-top-left-radius: var(--foundry_nu8bkp5);
+  border-top-right-radius: var(--foundry_nu8bkp5);
+}
+
+.foundry_m1icrxg .foundry_m1icrxh:last-of-type {
+  border-bottom-left-radius: var(--foundry_nu8bkp5);
+  border-bottom-right-radius: var(--foundry_nu8bkp5);
+}
+
+.foundry_11gbdty0 {
+  color: var(--foundry_nu8bkp8j);
+  display: flex;
+  justify-content: center;
+  gap: var(--foundry_nu8bkpk);
+}
+
+.foundry_11gbdty2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.foundry_11gbdty2:has(.foundry_11gbdty1[aria-invalid="true"]) {
+  border-color: transparent;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: var(--foundry_nu8bkp9z);
+}
+
+.foundry_11gbdty2:has(.foundry_11gbdty1[aria-invalid="true"]):hover {
+  border-color: transparent;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: var(--foundry_nu8bkp4m);
+}
+
+.foundry_11gbdty2:has(.foundry_11gbdty1:focus-visible) {
+  border-color: transparent;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: var(--foundry_nu8bkp9q);
+}
+
+.foundry_11gbdty3 {
+  height: var(--foundry_nu8bkp15);
+  width: var(--foundry_nu8bkp15);
+  padding: 2px;
+  border-radius: var(--foundry_nu8bkp4);
+}
+
+.foundry_11gbdty4 {
+  height: var(--foundry_nu8bkp17);
+  width: var(--foundry_nu8bkp17);
+  padding: 3px;
+  border-radius: var(--foundry_nu8bkp5);
+}
+
+.foundry_11gbdty5 {
+  height: var(--foundry_nu8bkp18);
+  width: var(--foundry_nu8bkp18);
+  padding: 4px;
+  border-radius: var(--foundry_nu8bkp5);
+}
+
+.foundry_11gbdty6 {
+  height: 100%;
+  width: 100%;
+  border-radius: var(--foundry_nu8bkp3);
+  box-sizing: border-box;
+  border-width: var(--foundry_nu8bkpe);
+}
+
+.foundry_11gbdty8 {
+  border-radius: var(--foundry_nu8bkp4);
+}
+
+.foundry_11gbdty9 {
+  border-radius: var(--foundry_nu8bkp4);
+}
+
+.foundry_11gbdtya {
+  background-color: transparent;
+  border-style: solid;
+  border-color: var(--foundry_nu8bkp8v);
+  color: var(--foundry_nu8bkp85);
+}
+
+.foundry_11gbdtya:hover {
+  border-color: var(--foundry_nu8bkpap);
+}
+
+.foundry_11gbdtya[data-state="checked"],
+.foundry_11gbdtya[data-state="mixed"] {
+  border-color: var(--foundry_nu8bkpap);
+  background-color: var(--foundry_nu8bkpap);
+}
+
+.foundry_11gbdtya[data-disabled="true"],
+.foundry_11gbdtya[data-disabled="true"]:hover {
+  color: var(--foundry_nu8bkp8t);
+  background-color: var(--foundry_nu8bkp3u);
+  border-color: var(--foundry_nu8bkp3u);
+  cursor: not-allowed;
+}
+
+.foundry_11gbdtyb {
+  background-color: transparent;
+  border-style: solid;
+  border-color: var(--foundry_nu8bkp8v);
+  color: var(--foundry_nu8bkp3q);
+}
+
+.foundry_11gbdtyb:hover {
+  border-color: var(--foundry_nu8bkp40);
+}
+
+.foundry_11gbdtyb[data-state="checked"],
+.foundry_11gbdtyb[data-state="mixed"] {
+  border-color: var(--foundry_nu8bkp40);
+  background-color: var(--foundry_nu8bkp40);
+}
+
+.foundry_11gbdtyb[data-disabled="true"],
+.foundry_11gbdtyb[data-disabled="true"]:hover {
+  color: var(--foundry_nu8bkp8t);
+  background-color: var(--foundry_nu8bkp3u);
+  border-color: var(--foundry_nu8bkp3u);
+  cursor: not-allowed;
+}
+
+.foundry_11gbdtyc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  transition: all 0.15s ease-out;
+}
+
+.foundry_11gbdtyd {
+  display: flex;
+  flex-direction: column;
+  gap: var(--foundry_nu8bkpi);
+}
+
+.foundry_11gbdtyf {
+  padding-top: var(--foundry_nu8bkph);
+}
+
+.foundry_11gbdtyg {
+  padding-top: var(--foundry_nu8bkpi);
+  gap: var(--foundry_nu8bkpj);
+}
+
+.foundry_11gbdtyh {
+  color: var(--foundry_nu8bkp8k);
+}
+
+.foundry_11gbdtyi {
+  margin: 0;
+}
+
+.foundry_11gbdtym {
+  color: var(--foundry_nu8bkp8l);
+}
+
+.foundry_11gbdtyn {
+  color: var(--foundry_nu8bkp8q);
+}
+
+.foundry_njguqn0 {
+  color: var(--foundry_nu8bkp8j);
+  display: flex;
+  flex-direction: column;
+  gap: var(--foundry_nu8bkpo);
+}
+
+.foundry_njguqn1 {
+  display: flex;
+  align-items: flex-start;
+}
+
+.foundry_njguqn2 {
+  gap: var(--foundry_nu8bkpm);
+}
+
+.foundry_njguqn3 {
+  gap: var(--foundry_nu8bkpm);
+}
+
+.foundry_njguqn4 {
+  gap: var(--foundry_nu8bkpn);
+}
+
+.foundry_njguqn5 {
+  flex-direction: row;
+}
+
+.foundry_njguqn6 {
+  flex-direction: column;
+}
+
+.foundry_njguqn7 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--foundry_nu8bkpj);
+}
+
+.foundry_njguqn8 {
+  margin: 0;
+}
+
+.foundry_njguqn9 {
+  color: var(--foundry_nu8bkp8q);
+  margin-left: var(--foundry_nu8bkpi);
+}
+
+.foundry_njguqna {
+  color: var(--foundry_nu8bkp8l);
+}
+
+.foundry_njguqnb {
+  color: var(--foundry_nu8bkp8q);
+}
+
+.foundry_njguqnc {
+  padding-top: 3px;
+  vertical-align: text-top;
+  margin-right: var(--foundry_nu8bkpi);
+}
+
+.foundry_1pfduet0 {
+  color: var(--foundry_nu8bkp8j);
+  display: flex;
+  justify-content: center;
+  gap: var(--foundry_nu8bkpk);
+}
+
+.foundry_1pfduet2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  border-radius: var(--foundry_nu8bkpa);
+}
+
+.foundry_1pfduet2:has(.foundry_1pfduet1[aria-invalid="true"]) {
+  border-color: transparent;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: var(--foundry_nu8bkp9z);
+}
+
+.foundry_1pfduet2:has(.foundry_1pfduet1[aria-invalid="true"]):hover {
+  border-color: transparent;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: var(--foundry_nu8bkp4m);
+}
+
+.foundry_1pfduet2:has(.foundry_1pfduet1:focus-visible) {
+  border-color: transparent;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: var(--foundry_nu8bkp9q);
+}
+
+.foundry_1pfduet3 {
+  height: var(--foundry_nu8bkp15);
+  width: var(--foundry_nu8bkp15);
+  padding: 1px;
+}
+
+.foundry_1pfduet4 {
+  height: var(--foundry_nu8bkp17);
+  width: var(--foundry_nu8bkp17);
+  padding: 2px;
+}
+
+.foundry_1pfduet5 {
+  height: var(--foundry_nu8bkp18);
+  width: var(--foundry_nu8bkp18);
+  padding: 3px;
+}
+
+.foundry_1pfduet6 {
+  height: 100%;
+  width: 100%;
+  border-radius: var(--foundry_nu8bkpa);
+  box-sizing: border-box;
+  border-width: var(--foundry_nu8bkpe);
+}
+
+.foundry_1pfduet7 {
+  background-color: transparent;
+  border-style: solid;
+  border-color: var(--foundry_nu8bkp8v);
+  color: var(--foundry_nu8bkp85);
+}
+
+.foundry_1pfduet7:hover {
+  border-color: var(--foundry_nu8bkpap);
+}
+
+.foundry_1pfduet7[data-state="checked"] {
+  border-color: var(--foundry_nu8bkpap);
+  background-color: var(--foundry_nu8bkpap);
+}
+
+.foundry_1pfduet7[data-disabled="true"] {
+  border-color: var(--foundry_nu8bkp3u);
+  background-color: var(--foundry_nu8bkp3u);
+  cursor: not-allowed;
+}
+
+.foundry_1pfduet7[data-state="checked"][data-disabled="true"] {
+  border-color: var(--foundry_nu8bkp3u);
+  background-color: var(--foundry_nu8bkp3u);
+}
+
+.foundry_1pfduet8 {
+  background-color: transparent;
+  border-style: solid;
+  border-color: var(--foundry_nu8bkp8v);
+  color: var(--foundry_nu8bkp3q);
+}
+
+.foundry_1pfduet8:hover {
+  border-color: var(--foundry_nu8bkp40);
+}
+
+.foundry_1pfduet8[data-state="checked"] {
+  border-color: var(--foundry_nu8bkp40);
+  background-color: var(--foundry_nu8bkp40);
+}
+
+.foundry_1pfduet8[data-disabled="true"] {
+  border-color: var(--foundry_nu8bkp3u);
+  background-color: var(--foundry_nu8bkp3u);
+  cursor: not-allowed;
+}
+
+.foundry_1pfduet8[data-state="checked"][data-disabled="true"] {
+  border-color: var(--foundry_nu8bkp3u);
+  background-color: var(--foundry_nu8bkp3u);
+}
+
+.foundry_1pfduet9 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  transition: all 0.15s ease-out;
+}
+
+.foundry_1pfdueta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--foundry_nu8bkpi);
+}
+
+.foundry_1pfduetc {
+  padding-top: var(--foundry_nu8bkph);
+}
+
+.foundry_1pfduetd {
+  padding-top: var(--foundry_nu8bkpi);
+  gap: var(--foundry_nu8bkpj);
+}
+
+.foundry_1pfduete {
+  margin: 0;
+}
+
+.foundry_1pfdueti {
+  color: var(--foundry_nu8bkp8k);
+}
+
+.foundry_1pfduetj {
+  color: var(--foundry_nu8bkp8l);
+}
+
+.foundry_1pfduetk {
+  color: var(--foundry_nu8bkp8q);
+}
+
+.foundry_thj3a31 {
+  border: none;
+  margin: 0;
+  background-color: var(--foundry_nu8bkp3u);
+}
+
+.foundry_thj3a32 {
+  --foundry_thj3a30: 1px;
+}
+
+.foundry_thj3a33 {
+  --foundry_thj3a30: 2px;
+}
+
+.foundry_thj3a34 {
+  --foundry_thj3a30: 3px;
+}
+
+.foundry_thj3a35 {
+  --foundry_thj3a30: 4px;
+}
+
+.foundry_thj3a36 {
+  height: var(--foundry_thj3a30);
+  width: 100%;
+}
+
+.foundry_thj3a37 {
+  width: var(--foundry_thj3a30);
+  height: 100%;
+}
+
+.foundry_okz6z20 {
+  color: var(--foundry_nu8bkp8j);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: var(--foundry_nu8bkpk);
+}
+
+.foundry_okz6z21 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  border-radius: var(--foundry_nu8bkpb);
+  border-width: var(--foundry_nu8bkpe);
+  border-style: solid;
+  border-color: var(--foundry_nu8bkp8v);
+  transition: all 100ms ease-in-out;
+}
+
+.foundry_okz6z21:has(input:focus-visible) {
+  outline-width: 2px;
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-color: var(--foundry_nu8bkp9q);
+}
+
+.foundry_okz6z22 {
+  background-color: transparent;
+  color: var(--foundry_nu8bkp8v);
+}
+
+.foundry_okz6z22:hover {
+  border-color: var(--foundry_nu8bkpap);
+  color: var(--foundry_nu8bkpap);
+}
+
+.foundry_okz6z22[data-state="selected"],
+.foundry_okz6z22[data-state="selected"]:hover {
+  border-color: var(--foundry_nu8bkpap);
+  background-color: var(--foundry_nu8bkpap);
+  color: var(--foundry_nu8bkp85);
+}
+
+.foundry_okz6z22[data-disabled="true"] {
+  border-color: var(--foundry_nu8bkp3v);
+  color: var(--foundry_nu8bkp3v);
+  cursor: not-allowed;
+}
+
+.foundry_okz6z22[data-state="selected"][data-disabled="true"] {
+  border-color: var(--foundry_nu8bkp3u);
+  background-color: var(--foundry_nu8bkp3u);
+  color: var(--foundry_nu8bkp8t);
+}
+
+.foundry_okz6z23 {
+  background-color: transparent;
+  border-color: var(--foundry_nu8bkp8s);
+  color: var(--foundry_nu8bkp8s);
+}
+
+.foundry_okz6z23:hover {
+  border-color: var(--foundry_nu8bkp40);
+  color: var(--foundry_nu8bkp40);
+}
+
+.foundry_okz6z23[data-state="selected"],
+.foundry_okz6z23[data-state="selected"]:hover {
+  background-color: var(--foundry_nu8bkp40);
+  color: var(--foundry_nu8bkp3q);
+}
+
+.foundry_okz6z23[data-disabled="true"] {
+  border-color: var(--foundry_nu8bkp3v);
+  color: var(--foundry_nu8bkp3v);
+  cursor: not-allowed;
+}
+
+.foundry_okz6z23[data-state="selected"][data-disabled="true"] {
+  border-color: var(--foundry_nu8bkp3u);
+  background-color: var(--foundry_nu8bkp3u);
+  color: var(--foundry_nu8bkp8t);
+}
+
+.foundry_okz6z24 {
+  width: var(--foundry_nu8bkp19);
+}
+
+.foundry_okz6z25 {
+  height: var(--foundry_nu8bkp16);
+}
+
+.foundry_okz6z26 {
+  width: var(--foundry_nu8bkp1a);
+}
+
+.foundry_okz6z27 {
+  height: var(--foundry_nu8bkp17);
+}
+
+.foundry_okz6z28 {
+  box-sizing: border-box;
+  border-radius: var(--foundry_nu8bkpb);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.foundry_okz6z29 {
+  padding-left: 4px;
+}
+
+.foundry_okz6z2a {
+  padding-left: 5px;
+}
+
+.foundry_okz6z2b {
+  display: flex;
+  flex-direction: column;
+  gap: var(--foundry_nu8bkpi);
+}
+
+.foundry_okz6z2c {
+  color: var(--foundry_nu8bkp8k);
+}
+
+.foundry_okz6z2d {
+  padding-top: var(--foundry_nu8bkph);
+}
+
+.foundry_okz6z2e {
+  padding-top: var(--foundry_nu8bkpi);
+  gap: var(--foundry_nu8bkpj);
+}
+
+.foundry_okz6z2f {
+  margin: 0;
+}
+
+.foundry_okz6z2i {
+  color: var(--foundry_nu8bkp8l);
+}
+
+.foundry_okz6z2k {
+  width: var(--foundry_nu8bkp15);
+}
+
+.foundry_okz6z2l {
+  height: var(--foundry_nu8bkp15);
+}
+
+.foundry_okz6z2m {
+  width: var(--foundry_nu8bkp15);
+}
+
+.foundry_okz6z2n {
+  height: var(--foundry_nu8bkp15);
+}
+
+.foundry_okz6z2o {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  margin: auto;
+  transition: opacity 50ms ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.foundry_okz6z2p {
+  --foundry_okz6z2j: 5px;
+}
+
+.foundry_okz6z2q {
+  --foundry_okz6z2j: 7px;
+}
+
+.foundry_okz6z2r {
+  left: var(--foundry_okz6z2j);
+  right: auto;
+}
+
+.foundry_okz6z2s {
+  left: auto;
+  right: var(--foundry_okz6z2j);
+}
+
+.foundry_okz6z2v {
+  opacity: 1;
+}
+
+.foundry_okz6z2w {
+  opacity: 1;
+}
+
+.foundry_okz6z2y {
+  width: var(--foundry_nu8bkp13);
+}
+
+.foundry_okz6z2z {
+  height: var(--foundry_nu8bkp13);
+}
+
+.foundry_okz6z210 {
+  width: var(--foundry_nu8bkp14);
+}
+
+.foundry_okz6z211 {
+  height: var(--foundry_nu8bkp14);
+}
+
+.foundry_okz6z212 {
+  display: flex;
+  transition: transform 80ms ease-out;
+  will-change: transform;
+}
+
+.foundry_okz6z213 {
+  --foundry_okz6z2x: var(--foundry_nu8bkp16);
+}
+
+.foundry_okz6z214 {
+  --foundry_okz6z2x: var(--foundry_nu8bkp17);
+}
+
+.foundry_okz6z215 {
+  transform: translateX(var(--foundry_okz6z2x));
+}
+
+@supports (width: round(1px, 1px)) {
+  .foundry_okz6z24 {
+    width: round(var(--foundry_nu8bkp19), 2px);
+  }
+
+  .foundry_okz6z26 {
+    width: round(var(--foundry_nu8bkp1a), 2px);
+  }
+
+  .foundry_okz6z2k {
+    width: round(var(--foundry_nu8bkp15), 2px);
+  }
+
+  .foundry_okz6z2m {
+    width: round(var(--foundry_nu8bkp15), 2px);
+  }
+
+  .foundry_okz6z2y {
+    width: round(var(--foundry_nu8bkp13), 2px);
+  }
+
+  .foundry_okz6z210 {
+    width: round(var(--foundry_nu8bkp14), 2px);
+  }
+}
+
+@supports (height: round(1px, 1px)) {
+  .foundry_okz6z25 {
+    height: round(var(--foundry_nu8bkp16), 2px);
+  }
+
+  .foundry_okz6z27 {
+    height: round(var(--foundry_nu8bkp17), 2px);
+  }
+
+  .foundry_okz6z2l {
+    height: round(var(--foundry_nu8bkp15), 2px);
+  }
+
+  .foundry_okz6z2n {
+    height: round(var(--foundry_nu8bkp15), 2px);
+  }
+
+  .foundry_okz6z2z {
+    height: round(var(--foundry_nu8bkp13), 2px);
+  }
+
+  .foundry_okz6z211 {
+    height: round(var(--foundry_nu8bkp14), 2px);
+  }
+}
+
+.foundry_1m368qh2 {
+  width: 100%;
+  box-sizing: border-box;
+  padding: var(--foundry_nu8bkpn);
+  border-width: 1px;
+  border-radius: var(--foundry_nu8bkp5);
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: var(--foundry_nu8bkpm);
+}
+
+.foundry_1m368qh3 {
+  --foundry_1m368qh0: var(--foundry_nu8bkp89);
+  --foundry_1m368qh1: var(--foundry_nu8bkp4h);
+}
+
+.foundry_1m368qh4 {
+  --foundry_1m368qh0: var(--foundry_nu8bkp87);
+  --foundry_1m368qh1: var(--foundry_nu8bkp6t);
+}
+
+.foundry_1m368qh5 {
+  --foundry_1m368qh0: var(--foundry_nu8bkp86);
+  --foundry_1m368qh1: var(--foundry_nu8bkp61);
+}
+
+.foundry_1m368qh6 {
+  --foundry_1m368qh0: var(--foundry_nu8bkp88);
+  --foundry_1m368qh1: var(--foundry_nu8bkp59);
+}
+
+.foundry_1m368qh7 {
+  background-color: var(--foundry_1m368qh0);
+  border-color: var(--foundry_1m368qh1);
+}
+
+.foundry_1m368qh8 {
+  background-color: var(--foundry_nu8bkp3s);
+  border-color: var(--foundry_nu8bkp9n);
+}
+
+.foundry_1m368qh9 {
+  padding: 0;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.foundry_1m368qha {
+  display: grid;
+  grid-template-areas: "icon title";
+  grid-template-columns: min-content 1fr;
+  grid-column-gap: var(--foundry_nu8bkpk);
+  grid-row-gap: var(--foundry_nu8bkpm);
+  padding-right: var(--foundry_nu8bkpq);
+  position: relative;
+}
+
+.foundry_1m368qhb {
+  display: grid;
+  grid-row-gap: var(--foundry_nu8bkpi);
+}
+
+.foundry_1m368qhc {
+  height: var(--foundry_nu8bkp18);
+  display: flex;
+  align-items: center;
+}
+
+.foundry_1m368qhd {
+  grid-area: icon;
+}
+
+.foundry_1m368qhe {
+  color: var(--foundry_nu8bkp90);
+}
+
+.foundry_1m368qhf {
+  color: var(--foundry_nu8bkp9f);
+}
+
+.foundry_1m368qhg {
+  color: var(--foundry_nu8bkp95);
+}
+
+.foundry_1m368qhh {
+  color: var(--foundry_nu8bkp9a);
+}
+
+.foundry_1m368qhi {
+  color: var(--foundry_nu8bkp8j);
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--foundry_nu8bkp18);
+}
+
+.foundry_1m368qhj {
+  color: var(--foundry_nu8bkp8j);
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--foundry_nu8bkp18);
+}
+
+.foundry_1m368qhk {
+  width: max-content;
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--foundry_nu8bkp18);
+  color: var(--foundry_nu8bkp8m);
+  border-radius: var(--foundry_nu8bkp3);
+  outline-offset: 2px;
+}
+
+.foundry_1m368qhk:not([data-pressed="true"]):not([disabled]):hover {
+  color: var(--foundry_nu8bkp3x);
+}
+
+.foundry_1m368qhk[data-pressed="true"] {
+  color: var(--foundry_nu8bkp3y);
+  outline-color: transparent;
+}
+
+.foundry_1m368qhk:disabled {
+  color: var(--foundry_nu8bkp8k);
+}
+
+.foundry_1m368qhk:visited {
+  color: var(--foundry_nu8bkp40);
+}
+
+.foundry_1m368qhl {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--foundry_nu8bkpj);
+  color: var(--foundry_nu8bkp8l);
+  border-top: 1px solid var(--foundry_nu8bkp3w);
+  padding-top: var(--foundry_nu8bkp15);
+}
+
+.foundry_1m368qhm {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: var(--foundry_nu8bkpj);
+  outline-offset: 0;
+}
+
+.foundry_1m368qhm[data-pressed="true"] {
+  background-color: var(--foundry_nu8bkp7z);
+  border-color: var(--foundry_nu8bkp7z);
+}
+
+.foundry_1m368qhm:not([data-pressed="true"]):not([disabled]):hover {
+  background-color: var(--foundry_nu8bkp7y);
+  border-color: var(--foundry_nu8bkp7y);
+}
+
+.foundry_1m368qhm:not([data-pressed="true"]):focus-visible {
+  background-color: var(--foundry_nu8bkp7y);
+  border-color: var(--foundry_nu8bkp7y);
+}
+
+.foundry_1m368qhn {
+  top: 0;
+  right: 0;
+}
+
+.foundry_1m368qho {
+  color: var(--foundry_nu8bkp8l);
+}
+
+:root {
+  --__foundry-global-platform-scales-ratio: 1
+}
+
+:root {
+  --foundry-global-font-line-height-150: 150%;
+  --foundry-global-font-line-height-130: 130%;
+  --foundry-global-font-letter-spacing-neg-10: -1%;
+  --foundry-global-font-letter-spacing-neg-33: -2.5%;
+  --foundry-global-font-letter-spacing-33: 2.5%;
+  --foundry-global-font-letter-spacing-10: 1%;
+  --foundry-global-font-letter-spacing-0: 0%;
+  --foundry-global-font-weight-700: 700;
+  --foundry-global-font-weight-400: 400;
+  --foundry-global-font-family-consolas: "Consolas";
+  --foundry-global-font-family-helvetica-now-text: "Helvetica Now Text";
+  --foundry-global-font-family-helvetica-now-display: "Helvetica Now Display";
+  --foundry-global-font-family-arial: "Arial";
+  --foundry-global-border-width-50: 4px;
+  --foundry-global-border-width-33: 3px;
+  --foundry-global-border-width-25: 2px;
+  --foundry-global-border-width-10: 1px;
+  --foundry-global-border-width-0: 0px;
+  --foundry-global-border-radius-pill: 1000px;
+  --foundry-global-border-radius-circle: 9999px;
+  --foundry-global-border-radius-400: 32px;
+  --foundry-global-border-radius-300: 24px;
+  --foundry-global-border-radius-200: 16px;
+  --foundry-global-border-radius-150: 12px;
+  --foundry-global-border-radius-100: 8px;
+  --foundry-global-border-radius-50: 4px;
+  --foundry-global-border-radius-25: 2px;
+  --foundry-global-border-radius-0: 0px;
+  --foundry-alias-font-line-height-body: var(--foundry-global-font-line-height-150);
+  --foundry-alias-font-line-height-heading: var(--foundry-global-font-line-height-130);
+  --foundry-alias-font-weight-bold: var(--foundry-global-font-weight-700);
+  --foundry-alias-font-weight-regular: var(--foundry-global-font-weight-400);
+  --foundry-alias-font-letter-spacing-all-caps-fallback: var(--foundry-global-font-letter-spacing-10);
+  --foundry-alias-font-letter-spacing-all-caps-primary: var(--foundry-global-font-letter-spacing-10);
+  --foundry-alias-font-letter-spacing-body-fallback: var(--foundry-global-font-letter-spacing-neg-33);
+  --foundry-alias-font-letter-spacing-body-primary: var(--foundry-global-font-letter-spacing-neg-33);
+  --foundry-alias-font-letter-spacing-heading-fallback: var(--foundry-global-font-letter-spacing-neg-33);
+  --foundry-alias-font-letter-spacing-heading-primary: var(--foundry-global-font-letter-spacing-neg-33);
+  --foundry-alias-font-family-code-fallback: var(--foundry-global-font-family-consolas);
+  --foundry-alias-font-family-code-primary: var(--foundry-global-font-family-consolas);
+  --foundry-alias-font-family-body-fallback: var(--foundry-global-font-family-arial);
+  --foundry-alias-font-family-body-primary: var(--foundry-global-font-family-helvetica-now-text);
+  --foundry-alias-font-family-heading-fallback: var(--foundry-global-font-family-arial);
+  --foundry-alias-font-family-heading-primary: var(--foundry-global-font-family-helvetica-now-display);
+  --__foundry-global-platform-scales-scale-6250: calc(500px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-5000: calc(400px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-4500: calc(360px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-4000: calc(320px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-3500: calc(280px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-3000: calc(240px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-2500: calc(200px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-2200: calc(176px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-2000: calc(160px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-1800: calc(144px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-1600: calc(128px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-1400: calc(112px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-1200: calc(96px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-1100: calc(88px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-1000: calc(80px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-900: calc(72px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-800: calc(64px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-700: calc(56px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-600: calc(48px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-500: calc(40px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-400: calc(32px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-300: calc(24px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-250: calc(20px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-225: calc(18px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-200: calc(16px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-175: calc(14px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-150: calc(12px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-100: calc(8px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-50: calc(4px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-33: calc(3px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-25: calc(2px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-10: calc(1px * var(--__foundry-global-platform-scales-ratio));
+  --__foundry-global-platform-scales-scale-0: calc(0px * var(--__foundry-global-platform-scales-ratio));
+  --foundry-global-font-spacing-400: var(--__foundry-global-platform-scales-scale-400);
+  --foundry-global-font-size-1100: var(--__foundry-global-platform-scales-scale-1100);
+  --foundry-global-font-size-1000: var(--__foundry-global-platform-scales-scale-1000);
+  --foundry-global-font-size-900: var(--__foundry-global-platform-scales-scale-900);
+  --foundry-global-font-size-800: var(--__foundry-global-platform-scales-scale-800);
+  --foundry-global-font-size-700: var(--__foundry-global-platform-scales-scale-700);
+  --foundry-global-font-size-600: var(--__foundry-global-platform-scales-scale-600);
+  --foundry-global-font-size-500: var(--__foundry-global-platform-scales-scale-500);
+  --foundry-global-font-size-400: var(--__foundry-global-platform-scales-scale-400);
+  --foundry-global-font-size-300: var(--__foundry-global-platform-scales-scale-300);
+  --foundry-global-font-size-250: var(--__foundry-global-platform-scales-scale-250);
+  --foundry-global-font-size-225: var(--__foundry-global-platform-scales-scale-225);
+  --foundry-global-font-size-200: var(--__foundry-global-platform-scales-scale-200);
+  --foundry-global-font-size-175: var(--__foundry-global-platform-scales-scale-175);
+  --foundry-global-font-size-150: var(--__foundry-global-platform-scales-scale-150);
+  --foundry-global-spacing-dimensions-6250: var(--__foundry-global-platform-scales-scale-6250);
+  --foundry-global-spacing-dimensions-5000: var(--__foundry-global-platform-scales-scale-5000);
+  --foundry-global-spacing-dimensions-4500: var(--__foundry-global-platform-scales-scale-4500);
+  --foundry-global-spacing-dimensions-4000: var(--__foundry-global-platform-scales-scale-4000);
+  --foundry-global-spacing-dimensions-3500: var(--__foundry-global-platform-scales-scale-3500);
+  --foundry-global-spacing-dimensions-3000: var(--__foundry-global-platform-scales-scale-3000);
+  --foundry-global-spacing-dimensions-2500: var(--__foundry-global-platform-scales-scale-2500);
+  --foundry-global-spacing-dimensions-2200: var(--__foundry-global-platform-scales-scale-2200);
+  --foundry-global-spacing-dimensions-2000: var(--__foundry-global-platform-scales-scale-2000);
+  --foundry-global-spacing-dimensions-1800: var(--__foundry-global-platform-scales-scale-1800);
+  --foundry-global-spacing-dimensions-1600: var(--__foundry-global-platform-scales-scale-1600);
+  --foundry-global-spacing-dimensions-1400: var(--__foundry-global-platform-scales-scale-1400);
+  --foundry-global-spacing-dimensions-1200: var(--__foundry-global-platform-scales-scale-1200);
+  --foundry-global-spacing-dimensions-1100: var(--__foundry-global-platform-scales-scale-1100);
+  --foundry-global-spacing-dimensions-1000: var(--__foundry-global-platform-scales-scale-1000);
+  --foundry-global-spacing-dimensions-900: var(--__foundry-global-platform-scales-scale-900);
+  --foundry-global-spacing-dimensions-800: var(--__foundry-global-platform-scales-scale-800);
+  --foundry-global-spacing-dimensions-700: var(--__foundry-global-platform-scales-scale-700);
+  --foundry-global-spacing-dimensions-600: var(--__foundry-global-platform-scales-scale-600);
+  --foundry-global-spacing-dimensions-500: var(--__foundry-global-platform-scales-scale-500);
+  --foundry-global-spacing-dimensions-400: var(--__foundry-global-platform-scales-scale-400);
+  --foundry-global-spacing-dimensions-300: var(--__foundry-global-platform-scales-scale-300);
+  --foundry-global-spacing-dimensions-250: var(--__foundry-global-platform-scales-scale-250);
+  --foundry-global-spacing-dimensions-200: var(--__foundry-global-platform-scales-scale-200);
+  --foundry-global-spacing-dimensions-175: var(--__foundry-global-platform-scales-scale-175);
+  --foundry-global-spacing-dimensions-150: var(--__foundry-global-platform-scales-scale-150);
+  --foundry-global-spacing-dimensions-100: var(--__foundry-global-platform-scales-scale-100);
+  --foundry-global-spacing-dimensions-50: var(--__foundry-global-platform-scales-scale-50);
+  --foundry-global-spacing-dimensions-25: var(--__foundry-global-platform-scales-scale-25);
+  --foundry-global-spacing-gap-1600: var(--__foundry-global-platform-scales-scale-1600);
+  --foundry-global-spacing-gap-1400: var(--__foundry-global-platform-scales-scale-1400);
+  --foundry-global-spacing-gap-1200: var(--__foundry-global-platform-scales-scale-1200);
+  --foundry-global-spacing-gap-1100: var(--__foundry-global-platform-scales-scale-1100);
+  --foundry-global-spacing-gap-1000: var(--__foundry-global-platform-scales-scale-1000);
+  --foundry-global-spacing-gap-900: var(--__foundry-global-platform-scales-scale-900);
+  --foundry-global-spacing-gap-800: var(--__foundry-global-platform-scales-scale-800);
+  --foundry-global-spacing-gap-700: var(--__foundry-global-platform-scales-scale-700);
+  --foundry-global-spacing-gap-600: var(--__foundry-global-platform-scales-scale-600);
+  --foundry-global-spacing-gap-500: var(--__foundry-global-platform-scales-scale-500);
+  --foundry-global-spacing-gap-400: var(--__foundry-global-platform-scales-scale-400);
+  --foundry-global-spacing-gap-300: var(--__foundry-global-platform-scales-scale-300);
+  --foundry-global-spacing-gap-250: var(--__foundry-global-platform-scales-scale-250);
+  --foundry-global-spacing-gap-200: var(--__foundry-global-platform-scales-scale-200);
+  --foundry-global-spacing-gap-175: var(--__foundry-global-platform-scales-scale-175);
+  --foundry-global-spacing-gap-150: var(--__foundry-global-platform-scales-scale-150);
+  --foundry-global-spacing-gap-100: var(--__foundry-global-platform-scales-scale-100);
+  --foundry-global-spacing-gap-50: var(--__foundry-global-platform-scales-scale-50);
+  --foundry-global-spacing-gap-25: var(--__foundry-global-platform-scales-scale-25);
+  --foundry-alias-font-size-body-code: var(--foundry-global-font-size-200);
+  --foundry-alias-font-size-body-all-caps: var(--foundry-global-font-size-150);
+  --foundry-alias-font-size-body-metadata: var(--foundry-global-font-size-150);
+  --foundry-alias-font-size-body-caption: var(--foundry-global-font-size-175);
+  --foundry-alias-font-size-body-paragraph: var(--foundry-global-font-size-200);
+  --foundry-alias-font-size-heading-06: var(--foundry-global-font-size-250);
+  --foundry-alias-font-size-heading-05: var(--foundry-global-font-size-250);
+  --foundry-alias-font-size-heading-04: var(--foundry-global-font-size-300);
+  --foundry-alias-font-size-heading-03: var(--foundry-global-font-size-400);
+  --foundry-alias-font-size-heading-02: var(--foundry-global-font-size-500);
+  --foundry-alias-font-size-heading-01: var(--foundry-global-font-size-700);
+  --foundry-alias-font-spacing-paragraph: var(--foundry-global-font-spacing-400)
+}
+
+:root {
+  --foundry-alias-color-brand-rdr-red: #c00;
+  --foundry-alias-color-brand-bully-yellow: #fa0;
+  --foundry-alias-color-brand-bully-blue: #036;
+  --foundry-global-color-black-static-100: #000;
+  --foundry-global-color-black-static-90: rgba(0, 0, 0, .9);
+  --foundry-global-color-black-static-80: rgba(0, 0, 0, .8);
+  --foundry-global-color-black-static-65: rgba(0, 0, 0, .65);
+  --foundry-global-color-black-static-50: rgba(0, 0, 0, .5);
+  --foundry-global-color-black-static-40: rgba(0, 0, 0, .4);
+  --foundry-global-color-black-static-15: rgba(0, 0, 0, .15);
+  --foundry-global-color-black-static-10: rgba(0, 0, 0, .1);
+  --foundry-global-color-white-static-100: #fff;
+  --foundry-global-color-seafoam-adaptive-1400: #dadcde;
+  --foundry-global-color-seafoam-adaptive-1300: #d0d2d4;
+  --foundry-global-color-seafoam-adaptive-1200: #c2c6c8;
+  --foundry-global-color-seafoam-adaptive-1100: #b6babd;
+  --foundry-global-color-seafoam-adaptive-1000: #a3a8ac;
+  --foundry-global-color-seafoam-adaptive-900: #92989c;
+  --foundry-global-color-seafoam-adaptive-800: #80888c;
+  --foundry-global-color-seafoam-adaptive-700: #6f787d;
+  --foundry-global-color-seafoam-adaptive-600: #5f686e;
+  --foundry-global-color-seafoam-adaptive-500: #4f5960;
+  --foundry-global-color-seafoam-adaptive-400: #404b52;
+  --foundry-global-color-seafoam-adaptive-300: #323d44;
+  --foundry-global-color-seafoam-adaptive-200: #253037;
+  --foundry-global-color-seafoam-adaptive-100: #1b252c;
+  --foundry-global-color-seafoam-static-1400: #1b2226;
+  --foundry-global-color-seafoam-static-1300: #242d33;
+  --foundry-global-color-seafoam-static-1200: #303b43;
+  --foundry-global-color-seafoam-static-1100: #3d4c55;
+  --foundry-global-color-seafoam-static-1000: #4b5e6a;
+  --foundry-global-color-seafoam-static-900: #5a717f;
+  --foundry-global-color-seafoam-static-800: #6b8495;
+  --foundry-global-color-seafoam-static-700: #8297a5;
+  --foundry-global-color-seafoam-static-600: #98aab6;
+  --foundry-global-color-seafoam-static-500: #b2c0c8;
+  --foundry-global-color-seafoam-static-400: #c5cfd6;
+  --foundry-global-color-seafoam-static-300: #d9dfe4;
+  --foundry-global-color-seafoam-static-200: #e7ebee;
+  --foundry-global-color-seafoam-static-100: #f2f4f6;
+  --foundry-global-color-blue-adaptive-1400: #d2ddec;
+  --foundry-global-color-blue-adaptive-1300: #c4d3e7;
+  --foundry-global-color-blue-adaptive-1200: #b4c7e0;
+  --foundry-global-color-blue-adaptive-1100: #a4bbda;
+  --foundry-global-color-blue-adaptive-1000: #8baad0;
+  --foundry-global-color-blue-adaptive-900: #7699c7;
+  --foundry-global-color-blue-adaptive-800: #6189bd;
+  --foundry-global-color-blue-adaptive-700: #4c78b2;
+  --foundry-global-color-blue-adaptive-600: #3868a6;
+  --foundry-global-color-blue-adaptive-500: #265899;
+  --foundry-global-color-blue-adaptive-400: #17498a;
+  --foundry-global-color-blue-adaptive-300: #0c3b76;
+  --foundry-global-color-blue-adaptive-200: #052e61;
+  --foundry-global-color-blue-adaptive-100: #02234c;
+  --foundry-global-color-blue-static-1400: #032047;
+  --foundry-global-color-blue-static-1300: #062a5b;
+  --foundry-global-color-blue-static-1200: #0c3874;
+  --foundry-global-color-blue-static-1100: #17498b;
+  --foundry-global-color-blue-static-1000: #295b9f;
+  --foundry-global-color-blue-static-900: #406faf;
+  --foundry-global-color-blue-static-800: #5882bc;
+  --foundry-global-color-blue-static-700: #7296c8;
+  --foundry-global-color-blue-static-600: #8ba9d2;
+  --foundry-global-color-blue-static-500: #a9c0de;
+  --foundry-global-color-blue-static-400: #bdcfe6;
+  --foundry-global-color-blue-static-300: #d4dfee;
+  --foundry-global-color-blue-static-200: #e3eaf4;
+  --foundry-global-color-blue-static-100: #f1f4f9;
+  --foundry-global-color-green-adaptive-1400: #a3ecc0;
+  --foundry-global-color-green-adaptive-1300: #84e6ab;
+  --foundry-global-color-green-adaptive-1200: #58dd8d;
+  --foundry-global-color-green-adaptive-1100: #2bd46f;
+  --foundry-global-color-green-adaptive-1000: #26bf63;
+  --foundry-global-color-green-adaptive-900: #23ad5a;
+  --foundry-global-color-green-adaptive-800: #1f9a50;
+  --foundry-global-color-green-adaptive-700: #1b8847;
+  --foundry-global-color-green-adaptive-600: #18763d;
+  --foundry-global-color-green-adaptive-500: #146535;
+  --foundry-global-color-green-adaptive-400: #11552c;
+  --foundry-global-color-green-adaptive-300: #0e4524;
+  --foundry-global-color-green-adaptive-200: #0b361c;
+  --foundry-global-color-green-adaptive-100: #082915;
+  --foundry-global-color-green-static-1400: #032712;
+  --foundry-global-color-green-static-1300: #043317;
+  --foundry-global-color-green-static-1200: #05431e;
+  --foundry-global-color-green-static-1100: #065626;
+  --foundry-global-color-green-static-1000: #08692f;
+  --foundry-global-color-green-static-900: #0b7f39;
+  --foundry-global-color-green-static-800: #0f9444;
+  --foundry-global-color-green-static-700: #15aa51;
+  --foundry-global-color-green-static-600: #20c05f;
+  --foundry-global-color-green-static-500: #39d878;
+  --foundry-global-color-green-static-400: #5ce693;
+  --foundry-global-color-green-static-300: #93f2b9;
+  --foundry-global-color-green-static-200: #bef7d5;
+  --foundry-global-color-green-static-100: #e0fbea;
+  --foundry-global-color-yellow-adaptive-1400: #ffd86c;
+  --foundry-global-color-yellow-adaptive-1300: #ffcb47;
+  --foundry-global-color-yellow-adaptive-1200: #ffb923;
+  --foundry-global-color-yellow-adaptive-1100: #f7aa13;
+  --foundry-global-color-yellow-adaptive-1000: #e29808;
+  --foundry-global-color-yellow-adaptive-900: #ce8903;
+  --foundry-global-color-yellow-adaptive-800: #b87a00;
+  --foundry-global-color-yellow-adaptive-700: #a36b00;
+  --foundry-global-color-yellow-adaptive-600: #8e5d00;
+  --foundry-global-color-yellow-adaptive-500: #794f00;
+  --foundry-global-color-yellow-adaptive-400: #654200;
+  --foundry-global-color-yellow-adaptive-300: #533600;
+  --foundry-global-color-yellow-adaptive-200: #402a00;
+  --foundry-global-color-yellow-adaptive-100: #312000;
+  --foundry-global-color-yellow-static-1400: #2e1e00;
+  --foundry-global-color-yellow-static-1300: #3c2800;
+  --foundry-global-color-yellow-static-1200: #503400;
+  --foundry-global-color-yellow-static-1100: #654200;
+  --foundry-global-color-yellow-static-1000: #7e5200;
+  --foundry-global-color-yellow-static-900: #976300;
+  --foundry-global-color-yellow-static-800: #b07400;
+  --foundry-global-color-yellow-static-700: #ca8602;
+  --foundry-global-color-yellow-static-600: #e19808;
+  --foundry-global-color-yellow-static-500: #fcaf17;
+  --foundry-global-color-yellow-static-400: #ffc539;
+  --foundry-global-color-yellow-static-300: #ffdb72;
+  --foundry-global-color-yellow-static-200: #ffe8a4;
+  --foundry-global-color-yellow-static-100: #fff4d4;
+  --foundry-global-color-red-adaptive-1400: #fad3d3;
+  --foundry-global-color-red-adaptive-1300: #f9c5c5;
+  --foundry-global-color-red-adaptive-1200: #f7b5b5;
+  --foundry-global-color-red-adaptive-1100: #f5a4a4;
+  --foundry-global-color-red-adaptive-1000: #f28989;
+  --foundry-global-color-red-adaptive-900: #ef6f6f;
+  --foundry-global-color-red-adaptive-800: #eb5050;
+  --foundry-global-color-red-adaptive-700: #e72424;
+  --foundry-global-color-red-adaptive-600: #cc1717;
+  --foundry-global-color-red-adaptive-500: #b01414;
+  --foundry-global-color-red-adaptive-400: #941111;
+  --foundry-global-color-red-adaptive-300: #7a0e0e;
+  --foundry-global-color-red-adaptive-200: #610b0b;
+  --foundry-global-color-red-adaptive-100: #4b0808;
+  --foundry-global-color-red-static-1400: #401010;
+  --foundry-global-color-red-static-1300: #541515;
+  --foundry-global-color-red-static-1200: #6d1c1c;
+  --foundry-global-color-red-static-1100: #8b2323;
+  --foundry-global-color-red-static-1000: #a92d2d;
+  --foundry-global-color-red-static-900: #c93838;
+  --foundry-global-color-red-static-800: #e74646;
+  --foundry-global-color-red-static-700: #ff5c5c;
+  --foundry-global-color-red-static-600: #ff8181;
+  --foundry-global-color-red-static-500: #ffa5a5;
+  --foundry-global-color-red-static-400: #ffbdbd;
+  --foundry-global-color-red-static-300: #ffd3d3;
+  --foundry-global-color-red-static-200: #ffe3e3;
+  --foundry-global-color-red-static-100: #fff3f3;
+  --foundry-global-color-grey-adaptive-900: #ebebeb;
+  --foundry-global-color-grey-adaptive-800: #cecece;
+  --foundry-global-color-grey-adaptive-700: #b3b3b3;
+  --foundry-global-color-grey-adaptive-600: #989898;
+  --foundry-global-color-grey-adaptive-500: #797979;
+  --foundry-global-color-grey-adaptive-400: #5b5b5b;
+  --foundry-global-color-grey-adaptive-300: #3f3f3f;
+  --foundry-global-color-grey-adaptive-200: #222;
+  --foundry-global-color-grey-adaptive-100: #1a1a1a;
+  --foundry-global-color-grey-adaptive-75: #141414;
+  --foundry-global-color-grey-adaptive-50: #0e0e0e;
+  --foundry-global-color-grey-adaptive-25: #000;
+  --foundry-global-color-grey-static-900: #000;
+  --foundry-global-color-grey-static-800: #212121;
+  --foundry-global-color-grey-static-700: #464646;
+  --foundry-global-color-grey-static-600: #6d6d6d;
+  --foundry-global-color-grey-static-500: #919191;
+  --foundry-global-color-grey-static-400: #b2b2b2;
+  --foundry-global-color-grey-static-300: #d8d8d8;
+  --foundry-global-color-grey-static-200: #eaeaea;
+  --foundry-global-color-grey-static-100: #fdfdfd;
+  --foundry-global-color-grey-static-75: #fdfdfd;
+  --foundry-global-color-grey-static-50: #fdfdfd;
+  --foundry-global-color-grey-static-25: #fdfdfd;
+  --foundry-alias-color-brand-rockstar-gold: var(--foundry-global-color-yellow-static-500);
+  --foundry-alias-color-decorative-seafoam-highest-contrast: var(--foundry-global-color-seafoam-adaptive-600);
+  --foundry-alias-color-decorative-seafoam-lowest-contrast: var(--foundry-global-color-seafoam-adaptive-400);
+  --foundry-alias-color-decorative-seafoam: var(--foundry-global-color-seafoam-adaptive-500);
+  --foundry-alias-color-decorative-danger-highest-contrast: var(--foundry-global-color-red-adaptive-600);
+  --foundry-alias-color-decorative-danger-lowest-contrast: var(--foundry-global-color-red-adaptive-400);
+  --foundry-alias-color-decorative-danger: var(--foundry-global-color-red-adaptive-500);
+  --foundry-alias-color-decorative-warning-highest-contrast: var(--foundry-global-color-yellow-adaptive-600);
+  --foundry-alias-color-decorative-warning-lowest-contrast: var(--foundry-global-color-yellow-adaptive-400);
+  --foundry-alias-color-decorative-warning: var(--foundry-global-color-yellow-adaptive-500);
+  --foundry-alias-color-decorative-success-highest-contrast: var(--foundry-global-color-green-adaptive-600);
+  --foundry-alias-color-decorative-success-lowest-contrast: var(--foundry-global-color-green-adaptive-400);
+  --foundry-alias-color-decorative-success: var(--foundry-global-color-green-adaptive-500);
+  --foundry-alias-color-decorative-information-highest-contrast: var(--foundry-global-color-blue-adaptive-600);
+  --foundry-alias-color-decorative-information-lowest-contrast: var(--foundry-global-color-blue-adaptive-400);
+  --foundry-alias-color-decorative-information: var(--foundry-global-color-blue-adaptive-500);
+  --foundry-alias-color-border-shadow: var(--foundry-global-color-grey-adaptive-200);
+  --foundry-alias-color-border-disabled: var(--foundry-global-color-grey-adaptive-300);
+  --foundry-alias-color-border-seafoam-highest-contrast: var(--foundry-global-color-seafoam-adaptive-800);
+  --foundry-alias-color-border-seafoam-lowest-contrast: var(--foundry-global-color-seafoam-adaptive-600);
+  --foundry-alias-color-border-seafoam: var(--foundry-global-color-seafoam-adaptive-700);
+  --foundry-alias-color-border-danger-highest-contrast: var(--foundry-global-color-red-adaptive-800);
+  --foundry-alias-color-border-danger-lowest-contrast: var(--foundry-global-color-red-adaptive-600);
+  --foundry-alias-color-border-danger: var(--foundry-global-color-red-adaptive-700);
+  --foundry-alias-color-border-warning-highest-contrast: var(--foundry-global-color-yellow-adaptive-800);
+  --foundry-alias-color-border-warning-lowest-contrast: var(--foundry-global-color-yellow-adaptive-600);
+  --foundry-alias-color-border-warning: var(--foundry-global-color-yellow-adaptive-700);
+  --foundry-alias-color-border-success-highest-contrast: var(--foundry-global-color-green-adaptive-800);
+  --foundry-alias-color-border-success-lowest-contrast: var(--foundry-global-color-green-adaptive-600);
+  --foundry-alias-color-border-success: var(--foundry-global-color-green-adaptive-700);
+  --foundry-alias-color-border-information-highest-contrast: var(--foundry-global-color-blue-adaptive-800);
+  --foundry-alias-color-border-information-lowest-contrast: var(--foundry-global-color-blue-adaptive-600);
+  --foundry-alias-color-border-information: var(--foundry-global-color-blue-adaptive-700);
+  --foundry-alias-color-border-control: var(--foundry-global-color-grey-adaptive-600);
+  --foundry-alias-color-border-field: var(--foundry-global-color-grey-adaptive-400);
+  --foundry-alias-color-border-decorative-lowest-contrast: var(--foundry-global-color-grey-adaptive-200);
+  --foundry-alias-color-border-decorative: var(--foundry-global-color-grey-adaptive-300);
+  --foundry-alias-color-icon-seafoam-highest-contrast: var(--foundry-global-color-seafoam-adaptive-1100);
+  --foundry-alias-color-icon-seafoam-lowest-contrast: var(--foundry-global-color-seafoam-adaptive-700);
+  --foundry-alias-color-icon-seafoam-higher-contrast: var(--foundry-global-color-seafoam-adaptive-1000);
+  --foundry-alias-color-icon-seafoam-lower-contrast: var(--foundry-global-color-seafoam-adaptive-800);
+  --foundry-alias-color-icon-seafoam: var(--foundry-global-color-seafoam-adaptive-900);
+  --foundry-alias-color-icon-danger-highest-contrast: var(--foundry-global-color-red-adaptive-1100);
+  --foundry-alias-color-icon-danger-lowest-contrast: var(--foundry-global-color-red-adaptive-700);
+  --foundry-alias-color-icon-danger-higher-contrast: var(--foundry-global-color-red-adaptive-1000);
+  --foundry-alias-color-icon-danger-lower-contrast: var(--foundry-global-color-red-adaptive-800);
+  --foundry-alias-color-icon-danger: var(--foundry-global-color-red-adaptive-900);
+  --foundry-alias-color-icon-warning-highest-contrast: var(--foundry-global-color-yellow-adaptive-1100);
+  --foundry-alias-color-icon-warning-lowest-contrast: var(--foundry-global-color-yellow-adaptive-700);
+  --foundry-alias-color-icon-warning-higher-contrast: var(--foundry-global-color-yellow-adaptive-1000);
+  --foundry-alias-color-icon-warning-lower-contrast: var(--foundry-global-color-yellow-adaptive-800);
+  --foundry-alias-color-icon-warning: var(--foundry-global-color-yellow-adaptive-900);
+  --foundry-alias-color-icon-success-highest-contrast: var(--foundry-global-color-green-adaptive-1100);
+  --foundry-alias-color-icon-success-lowest-contrast: var(--foundry-global-color-green-adaptive-700);
+  --foundry-alias-color-icon-success-higher-contrast: var(--foundry-global-color-green-adaptive-1000);
+  --foundry-alias-color-icon-success-lower-contrast: var(--foundry-global-color-green-adaptive-800);
+  --foundry-alias-color-icon-success: var(--foundry-global-color-green-adaptive-900);
+  --foundry-alias-color-icon-information-highest-contrast: var(--foundry-global-color-blue-adaptive-1100);
+  --foundry-alias-color-icon-information-lowest-contrast: var(--foundry-global-color-blue-adaptive-700);
+  --foundry-alias-color-icon-information-higher-contrast: var(--foundry-global-color-blue-adaptive-1000);
+  --foundry-alias-color-icon-information-lower-contrast: var(--foundry-global-color-blue-adaptive-800);
+  --foundry-alias-color-icon-information: var(--foundry-global-color-blue-adaptive-900);
+  --foundry-alias-color-icon-subdued-lowest-contrast: var(--foundry-global-color-grey-adaptive-600);
+  --foundry-alias-color-icon-subdued: var(--foundry-global-color-grey-adaptive-700);
+  --foundry-alias-color-icon-illustration: var(--foundry-global-color-grey-adaptive-600);
+  --foundry-alias-color-icon-disabled: var(--foundry-global-color-grey-adaptive-500);
+  --foundry-alias-color-icon-standard: var(--foundry-global-color-grey-adaptive-800);
+  --foundry-alias-color-text-seafoam: var(--foundry-global-color-seafoam-adaptive-900);
+  --foundry-alias-color-text-danger: var(--foundry-global-color-red-adaptive-900);
+  --foundry-alias-color-text-warning: var(--foundry-global-color-yellow-adaptive-900);
+  --foundry-alias-color-text-information: var(--foundry-global-color-blue-adaptive-900);
+  --foundry-alias-color-text-success: var(--foundry-global-color-green-adaptive-900);
+  --foundry-alias-color-text-header: var(--foundry-global-color-grey-adaptive-900);
+  --foundry-alias-color-text-subdued: var(--foundry-global-color-grey-adaptive-600);
+  --foundry-alias-color-text-disabled: var(--foundry-global-color-grey-adaptive-500);
+  --foundry-alias-color-text-standard: var(--foundry-global-color-grey-adaptive-800);
+  --foundry-alias-color-background-component-tooltip: var(--foundry-global-color-grey-static-800);
+  --foundry-alias-color-background-subtle-layer-2: var(--foundry-global-color-grey-adaptive-50);
+  --foundry-alias-color-background-subtle-layer-1: var(--foundry-global-color-grey-adaptive-75);
+  --foundry-alias-color-background-subtle-layer-0: var(--foundry-global-color-grey-adaptive-100);
+  --foundry-alias-color-background-bold-layer-3: var(--foundry-global-color-grey-adaptive-300);
+  --foundry-alias-color-background-bold-layer-2: var(--foundry-global-color-grey-adaptive-200);
+  --foundry-alias-color-background-bold-layer-1: var(--foundry-global-color-grey-adaptive-75);
+  --foundry-alias-color-background-bold-layer-0: var(--foundry-global-color-grey-adaptive-25);
+  --foundry-alias-color-background-twotone-seafoam: var(--foundry-global-color-seafoam-adaptive-100);
+  --foundry-alias-color-background-twotone-danger: var(--foundry-global-color-red-adaptive-100);
+  --foundry-alias-color-background-twotone-warning: var(--foundry-global-color-yellow-adaptive-100);
+  --foundry-alias-color-background-twotone-information: var(--foundry-global-color-blue-adaptive-100);
+  --foundry-alias-color-background-twotone-success: var(--foundry-global-color-green-adaptive-100)
+}
+
+/*# sourceMappingURL=8e17920391e5641f9c622dc8dd7dc600.css.map*/

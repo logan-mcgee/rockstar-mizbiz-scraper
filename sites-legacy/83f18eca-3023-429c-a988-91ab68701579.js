@@ -23,8 +23,8 @@ _global.SENTRY_RELEASE = {
       });
       var i = n(62229),
         t = n(9623),
-        l = n(9137),
-        d = n(74309),
+        d = n(9137),
+        l = n(74309),
         r = n(13624),
         o = n(92440),
         s = n(95966),
@@ -53,7 +53,7 @@ _global.SENTRY_RELEASE = {
           const i = Number(h?.payload?.content[0].content[0]?.tag ?? 0);
           let t;
           t = 40 === i && "ru_ru" === p ? "en_us" : p;
-          const l = (0, m.jsx)(c.VideoWithPlaylist, {
+          const d = (0, m.jsx)(c.VideoWithPlaylist, {
               tagIds: [i],
               locale: t,
               playlistTitle: a("Up Next"),
@@ -61,13 +61,13 @@ _global.SENTRY_RELEASE = {
               currentVideoId: e,
               isModal: !0
             }),
-            d = {
+            l = {
               left: window.innerWidth / 2,
               top: window.innerHeight / 2
             };
           n({
-            content: l,
-            rect: d,
+            content: d,
+            rect: l,
             onClose: () => {
               k({})
             },
@@ -76,11 +76,11 @@ _global.SENTRY_RELEASE = {
           })
         }), [v.get("video"), p, h]), (0, i.useEffect)((() => () => n(null)), []), y || h ? y ? (0, m.jsx)("div", {
           className: "rockstargames-sites-legacyf28d8b23b6a74f9954e121d94441fa56",
-          children: (0, m.jsx)(l.A, {})
+          children: (0, m.jsx)(d.A, {})
         }) : (0, m.jsx)(o.TinaParser, {
           components: f.componentsForTinaParser,
           tina: h
-        }) : (0, m.jsx)(d.A, {})
+        }) : (0, m.jsx)(l.A, {})
       }))
     },
     54217: (e, a, n) => {
@@ -95,18 +95,18 @@ _global.SENTRY_RELEASE = {
         }
       });
       var t = n(95966);
-      const l = (0, t.makeVar)({
+      const d = (0, t.makeVar)({
           brand: null,
           headerHidden: !1
         }),
-        d = (e, a) => l({
-          ...l(),
+        l = (e, a) => d({
+          ...d(),
           [e]: a
         }),
         r = () => {
-          const e = (0, t.useReactiveVar)(l);
+          const e = (0, t.useReactiveVar)(d);
           return {
-            setState: d,
+            setState: l,
             state: e
           }
         };
@@ -119,10 +119,10 @@ _global.SENTRY_RELEASE = {
           setHeaderHidden: t
         } = e;
         const {
-          setState: l
+          setState: d
         } = r();
         return (0, i.useLayoutEffect)((() => {
-          l("brand", n)
+          d("brand", n)
         }), []), (0, o.jsx)("div", {
           className: "rockstargames-sites-legacybdf41fef2e2c09dce092e29717248436",
           "data-brand": n,
@@ -137,14 +137,14 @@ _global.SENTRY_RELEASE = {
       });
       var i = n(9623),
         t = n(74309),
-        l = n(3025),
-        d = n(99273),
+        d = n(3025),
+        l = n(99273),
         r = n(54217),
         o = n(91029);
-      const s = (0, l.A)((() => {
+      const s = (0, d.A)((() => {
         const e = [{
           path: "/",
-          element: (0, o.jsx)(d.A, {})
+          element: (0, o.jsx)(l.A, {})
         }, {
           path: "*",
           element: (0, o.jsx)(t.A, {
@@ -154,7 +154,7 @@ _global.SENTRY_RELEASE = {
           })
         }, {
           path: "/bully/*",
-          element: (0, o.jsx)(d.A, {})
+          element: (0, o.jsx)(l.A, {})
         }];
         return (0, o.jsx)(r.A, {
           brandStyles: "bully",
@@ -415,20 +415,20 @@ _global.SENTRY_RELEASE = {
           definitions: [t(e, a)]
         };
         e.hasOwnProperty("loc") && (n.loc = e.loc);
-        var l = i[a] || new Set,
-          d = new Set,
+        var d = i[a] || new Set,
+          l = new Set,
           r = new Set;
-        for (l.forEach((function(e) {
+        for (d.forEach((function(e) {
             r.add(e)
           })); r.size > 0;) {
           var o = r;
           r = new Set, o.forEach((function(e) {
-            d.has(e) || (d.add(e), (i[e] || new Set).forEach((function(e) {
+            l.has(e) || (l.add(e), (i[e] || new Set).forEach((function(e) {
               r.add(e)
             })))
           }))
         }
-        return d.forEach((function(a) {
+        return l.forEach((function(a) {
           var i = t(e, a);
           i && n.definitions.push(i)
         })), n

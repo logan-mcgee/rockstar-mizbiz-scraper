@@ -23,9 +23,9 @@ _global.SENTRY_RELEASE = {
         return e.concat(n || Array.prototype.slice.call(d))
       }
       a.r(d), a.d(d, {
-        LookupSupportedLocales: () => g,
+        LookupSupportedLocales: () => f,
         ResolveLocale: () => m,
-        match: () => f
+        match: () => g
       }), Object.create, Object.create, "function" == typeof SuppressedError && SuppressedError;
       var r = {
           supplemental: {
@@ -2464,7 +2464,7 @@ _global.SENTRY_RELEASE = {
         });
         var o, c, y = u.locale,
           m = r[y],
-          g = {
+          f = {
             locale: "en",
             dataLocale: y
           };
@@ -2486,7 +2486,7 @@ _global.SENTRY_RELEASE = {
             keywords: n
           }
         }(u.extension), c = o.keywords) : c = [];
-        for (var f = [], S = function(e) {
+        for (var g = [], S = function(e) {
             var d = null !== (i = null == m ? void 0 : m[e]) && void 0 !== i ? i : [];
             s(Array.isArray(d), "keyLocaleData for ".concat(e, " must be an array"));
             var n = d[0];
@@ -2506,9 +2506,9 @@ _global.SENTRY_RELEASE = {
               })
             }
             var u, o, y = a[e];
-            s(null == y || "string" == typeof y, "optionsValue must be a string or undefined"), "string" == typeof y && (u = e.toLowerCase(), o = y.toLowerCase(), s(void 0 !== u, "ukey must be defined"), "" === (y = o) && (y = "true")), y !== n && d.indexOf(y) > -1 && (n = y, r = void 0), r && f.push(r), g[e] = n
+            s(null == y || "string" == typeof y, "optionsValue must be a string or undefined"), "string" == typeof y && (u = e.toLowerCase(), o = y.toLowerCase(), s(void 0 !== u, "ukey must be defined"), "" === (y = o) && (y = "true")), y !== n && d.indexOf(y) > -1 && (n = y, r = void 0), r && g.push(r), f[e] = n
           }, L = 0, G = n; L < G.length; L++) S(G[L]);
-        return f.length > 0 && (y = function(e, d, a) {
+        return g.length > 0 && (y = function(e, d, a) {
           s(-1 === e.indexOf("-u-"), "Expected locale to not have a Unicode locale extension");
           for (var n = "-u", r = 0, _ = []; r < _.length; r++) {
             n += "-".concat(_[r])
@@ -2522,10 +2522,10 @@ _global.SENTRY_RELEASE = {
           if ("-u" === n) return l(e);
           var y = e.indexOf("-x-");
           return l(-1 === y ? e + n : e.slice(0, y) + n + e.slice(y))
-        }(y, 0, f)), g.locale = y, g
+        }(y, 0, g)), f.locale = y, f
       }
 
-      function g(e, d) {
+      function f(e, d) {
         for (var a = [], n = 0, r = d; n < r.length; n++) {
           var _ = M(e, r[n].replace(t, ""));
           _ && a.push(_)
@@ -2533,7 +2533,7 @@ _global.SENTRY_RELEASE = {
         return a
       }
 
-      function f(e, d, a, n) {
+      function g(e, d, a, n) {
         return m(d, (r = e, Intl.getCanonicalLocales(r)), {
           localeMatcher: (null == n ? void 0 : n.algorithm) || "best fit"
         }, [], {}, (function() {

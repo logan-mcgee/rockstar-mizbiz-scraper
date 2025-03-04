@@ -17,11 +17,11 @@ _global.SENTRY_RELEASE = {
 }, (self.webpackChunk_rockstargames_modules_core_gif_viewer = self.webpackChunk_rockstargames_modules_core_gif_viewer || []).push([
   [1029], {
     5039: (e, o, r) => {
-      var a = r(2229),
-        d = Symbol.for("react.element"),
+      var d = r(2229),
+        a = Symbol.for("react.element"),
         n = (Symbol.for("react.fragment"), Object.prototype.hasOwnProperty),
-        t = a.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        f = {
+        f = d.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        t = {
           key: !0,
           ref: !0,
           __self: !0,
@@ -29,19 +29,19 @@ _global.SENTRY_RELEASE = {
         };
 
       function l(e, o, r) {
-        var a, l = {},
+        var d, l = {},
           s = null,
           _ = null;
-        for (a in void 0 !== r && (s = "" + r), void 0 !== o.key && (s = "" + o.key), void 0 !== o.ref && (_ = o.ref), o) n.call(o, a) && !f.hasOwnProperty(a) && (l[a] = o[a]);
+        for (d in void 0 !== r && (s = "" + r), void 0 !== o.key && (s = "" + o.key), void 0 !== o.ref && (_ = o.ref), o) n.call(o, d) && !t.hasOwnProperty(d) && (l[d] = o[d]);
         if (e && e.defaultProps)
-          for (a in o = e.defaultProps) void 0 === l[a] && (l[a] = o[a]);
+          for (d in o = e.defaultProps) void 0 === l[d] && (l[d] = o[d]);
         return {
-          $$typeof: d,
+          $$typeof: a,
           type: e,
           key: s,
           ref: _,
           props: l,
-          _owner: t.current
+          _owner: f.current
         }
       }
       o.jsx = l, o.jsxs = l

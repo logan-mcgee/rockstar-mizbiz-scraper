@@ -50,8 +50,8 @@ _global.SENTRY_RELEASE = {
           return a.getFullYear() - r.getFullYear()
         }(a, r));
         a.setFullYear(1584), r.setFullYear(1584);
-        const c = s * (i - +(d(a, r) === -s));
-        return 0 === c ? 0 : c
+        const f = s * (i - +(d(a, r) === -s));
+        return 0 === f ? 0 : f
       }
     },
     94061: (e, t, n) => {
@@ -105,11 +105,11 @@ _global.SENTRY_RELEASE = {
           years: o = 0,
           months: s = 0,
           weeks: i = 0,
-          days: c = 0,
+          days: f = 0,
           hours: u = 0,
-          minutes: f = 0,
-          seconds: l = 0
-        } = t, b = r(d(e, s + 12 * o, n), c + 7 * i, n), g = 1e3 * (l + 60 * (f + 60 * u));
+          minutes: l = 0,
+          seconds: c = 0
+        } = t, b = r(d(e, s + 12 * o, n), f + 7 * i, n), g = 1e3 * (c + 60 * (l + 60 * u));
         return (0, a.w)(n?.in || e, +b - g)
       }
     },

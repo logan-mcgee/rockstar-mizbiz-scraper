@@ -21,8 +21,8 @@ _global.SENTRY_RELEASE = {
         n = Symbol.for("react.element"),
         s = Symbol.for("react.fragment"),
         l = Object.prototype.hasOwnProperty,
-        o = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        d = {
+        d = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        o = {
           key: !0,
           ref: !0,
           __self: !0,
@@ -33,7 +33,7 @@ _global.SENTRY_RELEASE = {
         var r, s = {},
           c = null,
           i = null;
-        for (r in void 0 !== t && (c = "" + t), void 0 !== a.key && (c = "" + a.key), void 0 !== a.ref && (i = a.ref), a) l.call(a, r) && !d.hasOwnProperty(r) && (s[r] = a[r]);
+        for (r in void 0 !== t && (c = "" + t), void 0 !== a.key && (c = "" + a.key), void 0 !== a.ref && (i = a.ref), a) l.call(a, r) && !o.hasOwnProperty(r) && (s[r] = a[r]);
         if (e && e.defaultProps)
           for (r in a = e.defaultProps) void 0 === s[r] && (s[r] = a[r]);
         return {
@@ -42,7 +42,7 @@ _global.SENTRY_RELEASE = {
           key: c,
           ref: i,
           props: s,
-          _owner: o.current
+          _owner: d.current
         }
       }
       a.Fragment = s, a.jsx = c, a.jsxs = c
@@ -58,8 +58,8 @@ _global.SENTRY_RELEASE = {
         n = t(7313),
         s = t(65685),
         l = t(94061),
-        o = t(56135),
-        d = t(95966),
+        d = t(56135),
+        o = t(95966),
         c = t(2918);
       const i = {
         agegate: "rockstargames-modules-core-videoplayerf9427878ee67735075cd3e245d49eabe",
@@ -72,7 +72,7 @@ _global.SENTRY_RELEASE = {
           PASSED: "1",
           FAILED: "0"
         }),
-        g = (0, d.withTranslations)((e => {
+        g = (0, o.withTranslations)((e => {
           let {
             ageGatePassAge: a = 17,
             children: t,
@@ -81,20 +81,20 @@ _global.SENTRY_RELEASE = {
             t: p
           } = e;
           const {
-            data: y
+            data: b
           } = (0, c.useRockstarUser)(), {
-            track: _
-          } = (0, c.useGtmTrack)(), b = (0, d.getCookieValueByName)("UAGC"), [h, v] = (0, r.useState)("1" === (w = b) ? f.PASSED : "0" === w ? f.FAILED : f.NOT_SUBMITTED);
+            track: y
+          } = (0, c.useGtmTrack)(), _ = (0, o.getCookieValueByName)("UAGC"), [h, v] = (0, r.useState)("1" === (w = _) ? f.PASSED : "0" === w ? f.FAILED : f.NOT_SUBMITTED);
           var w;
           const [k, I] = (0, r.useState)(), x = (0, r.createRef)(), D = (0, r.createRef)(), E = (0, r.createRef)(), {
             style: j
           } = g;
           return (0, r.useEffect)((() => {
-            _({
+            y({
               event: "age_gate_popup",
               element_placement: m.element_placement ?? ""
             })
-          }), []), h === f.PASSED || !1 === y?.isAMinor ? t : h === f.FAILED ? (0, u.jsxs)("div", {
+          }), []), h === f.PASSED || !1 === b?.isAMinor ? t : h === f.FAILED ? (0, u.jsxs)("div", {
             className: i.agegate,
             style: j,
             children: [g?.header, (0, u.jsx)("h2", {
@@ -121,8 +121,8 @@ _global.SENTRY_RELEASE = {
                   }),
                   c = (0, s.f)(t) && (0, l.d)(t, r);
                 if (I(c), c) {
-                  const e = (0, o.V)(new Date, t) >= a;
-                  _(e ? {
+                  const e = (0, d.V)(new Date, t) >= a;
+                  y(e ? {
                     event: "age_gate_passed",
                     element_placement: m.element_placement ?? ""
                   } : {
@@ -131,7 +131,7 @@ _global.SENTRY_RELEASE = {
                     text: "you may not view this content at this time"
                   });
                   const r = e ? "1" : "0";
-                  (0, d.setCookieValue)("UAGC", r), v(r)
+                  (0, o.setCookieValue)("UAGC", r), v(r)
                 }
               },
               "data-testid": "agegate-form",
