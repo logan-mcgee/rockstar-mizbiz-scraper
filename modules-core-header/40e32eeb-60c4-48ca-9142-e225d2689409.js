@@ -16,32 +16,32 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [3823, 6204], {
-    73823: (e, a, d) => {
-      d.r(a), d.d(a, {
+    73823: (e, a, n) => {
+      n.r(a), n.d(a, {
         Root: () => s,
         VisuallyHidden: () => l
       });
-      var n = d(18751),
-        o = d(62229),
-        r = (d(44853), d(20025));
+      var o = n(18751),
+        r = n(62229),
+        d = (n(44853), n(20025));
       const t = ["a", "button", "div", "form", "h2", "h3", "img", "input", "label", "li", "nav", "ol", "p", "span", "svg", "ul"].reduce(((e, a) => {
-          const d = (0, o.forwardRef)(((e, d) => {
+          const n = (0, r.forwardRef)(((e, n) => {
             const {
               asChild: t,
               ...l
-            } = e, s = t ? r.Slot : a;
-            return (0, o.useEffect)((() => {
+            } = e, s = t ? d.Slot : a;
+            return (0, r.useEffect)((() => {
               window[Symbol.for("radix-ui")] = !0
-            }), []), (0, o.createElement)(s, (0, n.A)({}, l, {
-              ref: d
+            }), []), (0, r.createElement)(s, (0, o.A)({}, l, {
+              ref: n
             }))
           }));
-          return d.displayName = `Primitive.${a}`, {
+          return n.displayName = `Primitive.${a}`, {
             ...e,
-            [a]: d
+            [a]: n
           }
         }), {}),
-        l = (0, o.forwardRef)(((e, a) => (0, o.createElement)(t.span, (0, n.A)({}, e, {
+        l = (0, r.forwardRef)(((e, a) => (0, r.createElement)(t.span, (0, o.A)({}, e, {
           ref: a,
           style: {
             position: "absolute",
@@ -59,18 +59,18 @@ _global.SENTRY_RELEASE = {
         })))),
         s = l
     },
-    18751: (e, a, d) => {
-      function n() {
-        return n = Object.assign ? Object.assign.bind() : function(e) {
+    18751: (e, a, n) => {
+      function o() {
+        return o = Object.assign ? Object.assign.bind() : function(e) {
           for (var a = 1; a < arguments.length; a++) {
-            var d = arguments[a];
-            for (var n in d) Object.prototype.hasOwnProperty.call(d, n) && (e[n] = d[n])
+            var n = arguments[a];
+            for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
           }
           return e
-        }, n.apply(this, arguments)
+        }, o.apply(this, arguments)
       }
-      d.d(a, {
-        A: () => n
+      n.d(a, {
+        A: () => o
       })
     }
   }

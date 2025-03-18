@@ -24,7 +24,7 @@ _global.SENTRY_RELEASE = {
         s = t(96711),
         n = t(29529);
       var r = t(91029);
-      const i = e => {
+      const c = e => {
         let {
           children: o,
           ...t
@@ -35,11 +35,11 @@ _global.SENTRY_RELEASE = {
           children: o
         })
       };
-      var c = t(20270),
+      var i = t(20270),
         l = t(2918),
-        d = t(95966),
-        f = t(81788);
-      const m = (0, f.defineMessages)({
+        f = t(95966),
+        d = t(81788);
+      const m = (0, d.defineMessages)({
           footer_rockstar_games: {
             id: "footer_rockstar_games",
             defaultMessage: "Rockstar Games"
@@ -148,14 +148,14 @@ _global.SENTRY_RELEASE = {
         },
         {
           host: k
-        } = (0, d.getConfigForDomain)(),
+        } = (0, f.getConfigForDomain)(),
         b = e => {
           let {
             linkBase: o,
             onLanguageChange: t,
-            ...d
+            ...f
           } = e;
-          const _ = (0, f.useIntl)(),
+          const _ = (0, d.useIntl)(),
             b = (0, a.useLocation)(),
             {
               track: u
@@ -173,7 +173,7 @@ _global.SENTRY_RELEASE = {
             "data-testid": "footer-nav",
             role: "navigation",
             title: "Footer",
-            ...d,
+            ...f,
             children: [(0, r.jsxs)("div", {
               className: g.siteFooterFirstRow,
               children: [(0, r.jsx)("nav", {
@@ -220,7 +220,7 @@ _global.SENTRY_RELEASE = {
                     })
                   })]
                 })
-              }), (0, r.jsx)(c.LanguageSelector, {
+              }), (0, r.jsx)(i.LanguageSelector, {
                 theme: "footer",
                 location: b,
                 onLanguageChange: t
@@ -437,14 +437,14 @@ _global.SENTRY_RELEASE = {
                 className: g.additionalInfoEstablishedDate,
                 children: [(0, r.jsx)("span", {
                   children: _.formatMessage(m.footer_established_date_roman)
-                }), (0, r.jsx)(i, {
+                }), (0, r.jsx)(c, {
                   children: _.formatMessage(m.footer_established_date_numerical)
                 })]
               })]
             })]
           })
         },
-        u = (0, f.withIntl)((e => {
+        u = (0, d.withIntl)((e => {
           let {
             includeBrowserRouter: o = !1,
             linkBase: t = "",

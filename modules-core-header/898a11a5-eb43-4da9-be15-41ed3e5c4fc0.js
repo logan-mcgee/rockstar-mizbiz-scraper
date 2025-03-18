@@ -30,13 +30,13 @@ _global.SENTRY_RELEASE = {
           const {
             container: d,
             ...s
-          } = e, [f, b] = o.useState(!1);
-          (0, l.N)((() => b(!0)), []);
-          const u = d || f && globalThis?.document?.body;
-          return u ? n.createPortal((0, r.jsx)(t.sG.div, {
+          } = e, [f, c] = o.useState(!1);
+          (0, l.N)((() => c(!0)), []);
+          const b = d || f && globalThis?.document?.body;
+          return b ? n.createPortal((0, r.jsx)(t.sG.div, {
             ...s,
             ref: a
-          }), u) : null
+          }), b) : null
         }));
       s.displayName = "Portal";
       var f = s

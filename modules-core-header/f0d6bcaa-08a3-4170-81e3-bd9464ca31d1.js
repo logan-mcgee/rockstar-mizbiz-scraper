@@ -1,8 +1,8 @@
 ! function() {
   try {
     var o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      t = (new Error).stack;
-    t && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[t] = "f0d6bcaa-08a3-4170-81e3-bd9464ca31d1", o._sentryDebugIdIdentifier = "sentry-dbid-f0d6bcaa-08a3-4170-81e3-bd9464ca31d1")
+      e = (new Error).stack;
+    e && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[e] = "f0d6bcaa-08a3-4170-81e3-bd9464ca31d1", o._sentryDebugIdIdentifier = "sentry-dbid-f0d6bcaa-08a3-4170-81e3-bd9464ca31d1")
   } catch (o) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -16,8 +16,8 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [6521], {
-    16521: (o, t, e) => {
-      e.r(t), e.d(t, {
+    16521: (o, e, t) => {
+      t.r(e), t.d(e, {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => a,
         Lightbox_Dialog_Description: () => c,

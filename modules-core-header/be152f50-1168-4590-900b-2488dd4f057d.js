@@ -23,8 +23,8 @@ _global.SENTRY_RELEASE = {
     43696: (e, o, a) => {
       a.r(o);
       var n = a(95966),
-        d = a(91689),
-        t = a(96240),
+        t = a(91689),
+        d = a(96240),
         r = a(91029);
       const {
         graphEnv: s
@@ -32,17 +32,17 @@ _global.SENTRY_RELEASE = {
         let {
           navData: o,
           location: a,
-          onNavigate: d,
+          onNavigate: t,
           searchConfig: l,
           routeOptions: f
         } = e;
-        const i = (0, n.withRockstarGraph)(t.A, {
+        const i = (0, n.withRockstarGraph)(d.A, {
           env: s
         });
         return (0, r.jsx)(i, {
           navData: o,
           location: a,
-          onNavigate: d,
+          onNavigate: t,
           searchConfig: l,
           routeOptions: f
         })
@@ -53,7 +53,7 @@ _global.SENTRY_RELEASE = {
       function i() {
         const e = document.createElement("div");
         e.id = "global-nav-root", document.body.prepend(e);
-        const o = (0, d.H)(e),
+        const o = (0, t.H)(e),
           a = (0, n.withRockstarGraph)(l, {
             env: f
           });

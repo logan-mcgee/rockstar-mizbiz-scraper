@@ -21,8 +21,8 @@ _global.SENTRY_RELEASE = {
         o = Symbol.for("react.element"),
         l = Symbol.for("react.fragment"),
         a = Object.prototype.hasOwnProperty,
-        d = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        f = {
+        f = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        d = {
           key: !0,
           ref: !0,
           __self: !0,
@@ -33,7 +33,7 @@ _global.SENTRY_RELEASE = {
         var t, l = {},
           s = null,
           i = null;
-        for (t in void 0 !== r && (s = "" + r), void 0 !== n.key && (s = "" + n.key), void 0 !== n.ref && (i = n.ref), n) a.call(n, t) && !f.hasOwnProperty(t) && (l[t] = n[t]);
+        for (t in void 0 !== r && (s = "" + r), void 0 !== n.key && (s = "" + n.key), void 0 !== n.ref && (i = n.ref), n) a.call(n, t) && !d.hasOwnProperty(t) && (l[t] = n[t]);
         if (e && e.defaultProps)
           for (t in n = e.defaultProps) void 0 === l[t] && (l[t] = n[t]);
         return {
@@ -42,7 +42,7 @@ _global.SENTRY_RELEASE = {
           key: s,
           ref: i,
           props: l,
-          _owner: d.current
+          _owner: f.current
         }
       }
       n.Fragment = l, n.jsx = s, n.jsxs = s
@@ -86,7 +86,7 @@ _global.SENTRY_RELEASE = {
       r.r(n), r.d(n, {
         Root: () => i,
         Slot: () => a,
-        Slottable: () => f
+        Slottable: () => d
       });
       var t = r(62229),
         o = r(83957),
@@ -95,24 +95,24 @@ _global.SENTRY_RELEASE = {
           const {
             children: r,
             ...o
-          } = e, a = t.Children.toArray(r), f = a.find(s);
-          if (f) {
-            const e = f.props.children,
-              r = a.map((n => n === f ? t.Children.count(e) > 1 ? t.Children.only(null) : t.isValidElement(e) ? e.props.children : null : n));
-            return (0, l.jsx)(d, {
+          } = e, a = t.Children.toArray(r), d = a.find(s);
+          if (d) {
+            const e = d.props.children,
+              r = a.map((n => n === d ? t.Children.count(e) > 1 ? t.Children.only(null) : t.isValidElement(e) ? e.props.children : null : n));
+            return (0, l.jsx)(f, {
               ...o,
               ref: n,
               children: t.isValidElement(e) ? t.cloneElement(e, void 0, r) : null
             })
           }
-          return (0, l.jsx)(d, {
+          return (0, l.jsx)(f, {
             ...o,
             ref: n,
             children: r
           })
         }));
       a.displayName = "Slot";
-      var d = t.forwardRef(((e, n) => {
+      var f = t.forwardRef(((e, n) => {
         const {
           children: r,
           ...l
@@ -146,15 +146,15 @@ _global.SENTRY_RELEASE = {
         }
         return t.Children.count(r) > 1 ? t.Children.only(null) : null
       }));
-      d.displayName = "SlotClone";
-      var f = ({
+      f.displayName = "SlotClone";
+      var d = ({
         children: e
       }) => (0, l.jsx)(l.Fragment, {
         children: e
       });
 
       function s(e) {
-        return t.isValidElement(e) && e.type === f
+        return t.isValidElement(e) && e.type === d
       }
       var i = a
     }

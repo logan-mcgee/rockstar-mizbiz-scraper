@@ -20,7 +20,7 @@ _global.SENTRY_RELEASE = {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => l,
-        Lightbox_Dialog_Description: () => p,
+        Lightbox_Dialog_Description: () => c,
         Lightbox_Dialog_Title: () => h,
         Lightbox_Download_Button_Label: () => f,
         Lightbox_Download_Button_Tooltip: () => r,
@@ -33,7 +33,7 @@ _global.SENTRY_RELEASE = {
         Lightbox_Zoom_Out_Button__Tooltip: () => b,
         Lightbox_Zoom_Slider_Label: () => u,
         Lightbox_Zoom_Slider_Tooltip: () => s,
-        default: () => x
+        default: () => p
       });
       var _ = "Закрыть всплывающее окно",
         l = "Нажмите {shortcut}",
@@ -49,8 +49,8 @@ _global.SENTRY_RELEASE = {
         r = "Загрузить",
         L = "Открыть изображение в всплывающем окне",
         h = "Всплывающее окно",
-        p = "Замещающий текст: {alt}",
-        x = {
+        c = "Замещающий текст: {alt}",
+        p = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: l,
           Lightbox_Zoom_In_Button_Label: a,
@@ -65,7 +65,7 @@ _global.SENTRY_RELEASE = {
           Lightbox_Download_Button_Tooltip: r,
           Lightbox_Open_Button_Label: L,
           Lightbox_Dialog_Title: h,
-          Lightbox_Dialog_Description: p
+          Lightbox_Dialog_Description: c
         }
     }
   }

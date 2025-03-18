@@ -18,7 +18,7 @@ _global.SENTRY_RELEASE = {
   [4783], {
     83957: (e, n, r) => {
       r.d(n, {
-        s: () => d,
+        s: () => a,
         t: () => l
       });
       var t = r(62229);
@@ -44,41 +44,41 @@ _global.SENTRY_RELEASE = {
         }
       }
 
-      function d(...e) {
+      function a(...e) {
         return t.useCallback(l(...e), e)
       }
     },
     27164: (e, n, r) => {
       r.r(n), r.d(n, {
-        Root: () => f,
-        Slot: () => d,
+        Root: () => c,
+        Slot: () => a,
         Slottable: () => i
       });
       var t = r(62229),
         o = r(83957),
         l = r(91029),
-        d = t.forwardRef(((e, n) => {
+        a = t.forwardRef(((e, n) => {
           const {
             children: r,
             ...o
-          } = e, d = t.Children.toArray(r), i = d.find(s);
+          } = e, a = t.Children.toArray(r), i = a.find(s);
           if (i) {
             const e = i.props.children,
-              r = d.map((n => n === i ? t.Children.count(e) > 1 ? t.Children.only(null) : t.isValidElement(e) ? e.props.children : null : n));
-            return (0, l.jsx)(a, {
+              r = a.map((n => n === i ? t.Children.count(e) > 1 ? t.Children.only(null) : t.isValidElement(e) ? e.props.children : null : n));
+            return (0, l.jsx)(d, {
               ...o,
               ref: n,
               children: t.isValidElement(e) ? t.cloneElement(e, void 0, r) : null
             })
           }
-          return (0, l.jsx)(a, {
+          return (0, l.jsx)(d, {
             ...o,
             ref: n,
             children: r
           })
         }));
-      d.displayName = "Slot";
-      var a = t.forwardRef(((e, n) => {
+      a.displayName = "Slot";
+      var d = t.forwardRef(((e, n) => {
         const {
           children: r,
           ...l
@@ -89,7 +89,7 @@ _global.SENTRY_RELEASE = {
                 r = n && "isReactWarning" in n && n.isReactWarning;
               return r ? e.ref : (n = Object.getOwnPropertyDescriptor(e, "ref")?.get, r = n && "isReactWarning" in n && n.isReactWarning, r ? e.props.ref : e.props.ref || e.ref)
             }(r),
-            d = function(e, n) {
+            a = function(e, n) {
               const r = {
                 ...n
               };
@@ -108,11 +108,11 @@ _global.SENTRY_RELEASE = {
                 ...r
               }
             }(l, r.props);
-          return r.type !== t.Fragment && (d.ref = n ? (0, o.t)(n, e) : e), t.cloneElement(r, d)
+          return r.type !== t.Fragment && (a.ref = n ? (0, o.t)(n, e) : e), t.cloneElement(r, a)
         }
         return t.Children.count(r) > 1 ? t.Children.only(null) : null
       }));
-      a.displayName = "SlotClone";
+      d.displayName = "SlotClone";
       var i = ({
         children: e
       }) => (0, l.jsx)(l.Fragment, {
@@ -122,7 +122,7 @@ _global.SENTRY_RELEASE = {
       function s(e) {
         return t.isValidElement(e) && e.type === i
       }
-      var f = d
+      var c = a
     }
   }
 ]);

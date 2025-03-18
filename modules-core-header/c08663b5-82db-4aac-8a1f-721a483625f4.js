@@ -18,28 +18,28 @@ _global.SENTRY_RELEASE = {
   [194], {
     97813: (e, a, d) => {
       d.r(a), d.d(a, {
-        Portal: () => s,
-        Root: () => f
+        Portal: () => f,
+        Root: () => s
       });
       var o = d(62229),
         n = d(44853),
         t = d(96988),
         l = d(66698),
         r = d(91029),
-        s = o.forwardRef(((e, a) => {
+        f = o.forwardRef(((e, a) => {
           const {
             container: d,
-            ...s
-          } = e, [f, b] = o.useState(!1);
-          (0, l.N)((() => b(!0)), []);
-          const u = d || f && globalThis?.document?.body;
-          return u ? n.createPortal((0, r.jsx)(t.sG.div, {
-            ...s,
+            ...f
+          } = e, [s, c] = o.useState(!1);
+          (0, l.N)((() => c(!0)), []);
+          const b = d || s && globalThis?.document?.body;
+          return b ? n.createPortal((0, r.jsx)(t.sG.div, {
+            ...f,
             ref: a
-          }), u) : null
+          }), b) : null
         }));
-      s.displayName = "Portal";
-      var f = s
+      f.displayName = "Portal";
+      var s = f
     }
   }
 ]);

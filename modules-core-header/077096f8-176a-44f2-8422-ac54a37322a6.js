@@ -22,30 +22,30 @@ _global.SENTRY_RELEASE = {
         l = Symbol.for("react.fragment"),
         a = Object.prototype.hasOwnProperty,
         f = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        d = {
+        s = {
           key: !0,
           ref: !0,
           __self: !0,
           __source: !0
         };
 
-      function s(e, n, r) {
+      function i(e, n, r) {
         var t, l = {},
-          s = null,
-          i = null;
-        for (t in void 0 !== r && (s = "" + r), void 0 !== n.key && (s = "" + n.key), void 0 !== n.ref && (i = n.ref), n) a.call(n, t) && !d.hasOwnProperty(t) && (l[t] = n[t]);
+          i = null,
+          d = null;
+        for (t in void 0 !== r && (i = "" + r), void 0 !== n.key && (i = "" + n.key), void 0 !== n.ref && (d = n.ref), n) a.call(n, t) && !s.hasOwnProperty(t) && (l[t] = n[t]);
         if (e && e.defaultProps)
           for (t in n = e.defaultProps) void 0 === l[t] && (l[t] = n[t]);
         return {
           $$typeof: o,
           type: e,
-          key: s,
-          ref: i,
+          key: i,
+          ref: d,
           props: l,
           _owner: f.current
         }
       }
-      n.Fragment = l, n.jsx = s, n.jsxs = s
+      n.Fragment = l, n.jsx = i, n.jsxs = i
     },
     91029: (e, n, r) => {
       e.exports = r(65039)
@@ -84,9 +84,9 @@ _global.SENTRY_RELEASE = {
     },
     22343: (e, n, r) => {
       r.r(n), r.d(n, {
-        Root: () => i,
+        Root: () => d,
         Slot: () => a,
-        Slottable: () => d
+        Slottable: () => s
       });
       var t = r(62229),
         o = r(83957),
@@ -95,10 +95,10 @@ _global.SENTRY_RELEASE = {
           const {
             children: r,
             ...o
-          } = e, a = t.Children.toArray(r), d = a.find(s);
-          if (d) {
-            const e = d.props.children,
-              r = a.map((n => n === d ? t.Children.count(e) > 1 ? t.Children.only(null) : t.isValidElement(e) ? e.props.children : null : n));
+          } = e, a = t.Children.toArray(r), s = a.find(i);
+          if (s) {
+            const e = s.props.children,
+              r = a.map((n => n === s ? t.Children.count(e) > 1 ? t.Children.only(null) : t.isValidElement(e) ? e.props.children : null : n));
             return (0, l.jsx)(f, {
               ...o,
               ref: n,
@@ -147,16 +147,16 @@ _global.SENTRY_RELEASE = {
         return t.Children.count(r) > 1 ? t.Children.only(null) : null
       }));
       f.displayName = "SlotClone";
-      var d = ({
+      var s = ({
         children: e
       }) => (0, l.jsx)(l.Fragment, {
         children: e
       });
 
-      function s(e) {
-        return t.isValidElement(e) && e.type === d
+      function i(e) {
+        return t.isValidElement(e) && e.type === s
       }
-      var i = a
+      var d = a
     }
   }
 ]);

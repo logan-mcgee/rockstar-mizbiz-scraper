@@ -18,8 +18,8 @@ _global.SENTRY_RELEASE = {
   [8174, 1029, 3410, 5791, 8172, 3692], {
     65039: (e, t, o) => {
       var r = o(62229),
-        n = Symbol.for("react.element"),
-        a = Symbol.for("react.fragment"),
+        a = Symbol.for("react.element"),
+        n = Symbol.for("react.fragment"),
         s = Object.prototype.hasOwnProperty,
         d = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         l = {
@@ -30,37 +30,37 @@ _global.SENTRY_RELEASE = {
         };
 
       function i(e, t, o) {
-        var r, a = {},
+        var r, n = {},
           i = null,
           f = null;
-        for (r in void 0 !== o && (i = "" + o), void 0 !== t.key && (i = "" + t.key), void 0 !== t.ref && (f = t.ref), t) s.call(t, r) && !l.hasOwnProperty(r) && (a[r] = t[r]);
+        for (r in void 0 !== o && (i = "" + o), void 0 !== t.key && (i = "" + t.key), void 0 !== t.ref && (f = t.ref), t) s.call(t, r) && !l.hasOwnProperty(r) && (n[r] = t[r]);
         if (e && e.defaultProps)
-          for (r in t = e.defaultProps) void 0 === a[r] && (a[r] = t[r]);
+          for (r in t = e.defaultProps) void 0 === n[r] && (n[r] = t[r]);
         return {
-          $$typeof: n,
+          $$typeof: a,
           type: e,
           key: i,
           ref: f,
-          props: a,
+          props: n,
           _owner: d.current
         }
       }
-      t.Fragment = a, t.jsx = i, t.jsxs = i
+      t.Fragment = n, t.jsx = i, t.jsxs = i
     },
     91029: (e, t, o) => {
       e.exports = o(65039)
     },
     35127: (e, t, o) => {
       o.d(t, {
-        A: () => n
+        A: () => a
       });
       var r = o(91029);
-      const n = e => {
+      const a = e => {
         let {
           to: t,
           target: o,
-          className: n,
-          onNavigate: a,
+          className: a,
+          onNavigate: n,
           onClick: s,
           reloadDocument: d,
           children: l,
@@ -69,9 +69,9 @@ _global.SENTRY_RELEASE = {
         const f = t?.startsWith("http");
         return (0, r.jsx)("a", {
           href: t,
-          className: n,
+          className: a,
           onClick: e => {
-            s?.(e), f || d || (a ? (e.preventDefault(), a(t)) : (e.preventDefault(), window.history.pushState({}, "", t)))
+            s?.(e), f || d || (n ? (e.preventDefault(), n(t)) : (e.preventDefault(), window.history.pushState({}, "", t)))
           },
           target: o,
           ...i,
@@ -81,7 +81,7 @@ _global.SENTRY_RELEASE = {
     },
     6400: (e, t, o) => {
       o.d(t, {
-        A: () => a,
+        A: () => n,
         C: () => r
       });
       const r = {
@@ -90,7 +90,7 @@ _global.SENTRY_RELEASE = {
           support: "support",
           store: "store"
         },
-        n = [{
+        a = [{
           id: "prod",
           sites: {
             www: "www",
@@ -100,22 +100,22 @@ _global.SENTRY_RELEASE = {
           },
           cookieIdentifier: "prod"
         }],
-        a = () => {
+        n = () => {
           let e;
           const {
             location: t
-          } = window, o = t.hostname.substring(0, t.hostname.indexOf(".rockstargames.com")), r = n.findIndex((t => Object.entries(t.sites).findIndex((t => {
-            let [r, n] = t;
-            return n === o && (e = {
+          } = window, o = t.hostname.substring(0, t.hostname.indexOf(".rockstargames.com")), r = a.findIndex((t => Object.entries(t.sites).findIndex((t => {
+            let [r, a] = t;
+            return a === o && (e = {
               site: r,
-              subDomain: n
+              subDomain: a
             }, !0)
-          })) >= 0)), a = n[r >= 0 ? r : 0];
+          })) >= 0)), n = a[r >= 0 ? r : 0];
           return e || (e = {
             site: "www",
             subDomain: "local"
           }), {
-            ...a,
+            ...n,
             currentSite: e
           }
         }

@@ -16,53 +16,53 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [4784], {
-    12403: (e, d, o) => {
-      o.r(d), o.d(d, {
+    12403: (e, d, a) => {
+      a.r(d), a.d(d, {
         Portal: () => f,
         Root: () => i
       });
-      var a = o(62229),
-        n = o(44853),
-        t = o(34730),
-        l = o(91029),
+      var o = a(62229),
+        n = a(44853),
+        t = a(34730),
+        l = a(91029),
         r = ["a", "button", "div", "form", "h2", "h3", "img", "input", "label", "li", "nav", "ol", "p", "span", "svg", "ul"].reduce(((e, d) => {
-          const o = a.forwardRef(((e, o) => {
+          const a = o.forwardRef(((e, a) => {
             const {
-              asChild: a,
+              asChild: o,
               ...n
-            } = e, r = a ? t.Slot : d;
+            } = e, r = o ? t.Slot : d;
             return "undefined" != typeof window && (window[Symbol.for("radix-ui")] = !0), (0, l.jsx)(r, {
               ...n,
-              ref: o
+              ref: a
             })
           }));
-          return o.displayName = `Primitive.${d}`, {
+          return a.displayName = `Primitive.${d}`, {
             ...e,
-            [d]: o
+            [d]: a
           }
         }), {}),
-        s = o(66698),
-        f = a.forwardRef(((e, d) => {
+        s = a(66698),
+        f = o.forwardRef(((e, d) => {
           const {
-            container: o,
+            container: a,
             ...t
-          } = e, [f, i] = a.useState(!1);
+          } = e, [f, i] = o.useState(!1);
           (0, s.N)((() => i(!0)), []);
-          const u = o || f && globalThis?.document?.body;
-          return u ? n.createPortal((0, l.jsx)(r.div, {
+          const c = a || f && globalThis?.document?.body;
+          return c ? n.createPortal((0, l.jsx)(r.div, {
             ...t,
             ref: d
-          }), u) : null
+          }), c) : null
         }));
       f.displayName = "Portal";
       var i = f
     },
-    66698: (e, d, o) => {
-      o.d(d, {
+    66698: (e, d, a) => {
+      a.d(d, {
         N: () => n
       });
-      var a = o(62229),
-        n = Boolean(globalThis?.document) ? a.useLayoutEffect : () => {}
+      var o = a(62229),
+        n = Boolean(globalThis?.document) ? o.useLayoutEffect : () => {}
     }
   }
 ]);

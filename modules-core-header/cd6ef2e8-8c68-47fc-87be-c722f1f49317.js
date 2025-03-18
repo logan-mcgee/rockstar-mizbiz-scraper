@@ -18,13 +18,13 @@ _global.SENTRY_RELEASE = {
   [8977], {
     41358: (e, d, a) => {
       a.r(d), a.d(d, {
-        Root: () => f,
-        VisuallyHidden: () => r
+        Root: () => r,
+        VisuallyHidden: () => f
       });
       var o = a(62229),
         n = a(31873),
         l = a(91029),
-        r = o.forwardRef(((e, d) => (0, l.jsx)(n.sG.span, {
+        f = o.forwardRef(((e, d) => (0, l.jsx)(n.sG.span, {
           ...e,
           ref: d,
           style: {
@@ -41,8 +41,8 @@ _global.SENTRY_RELEASE = {
             ...e.style
           }
         })));
-      r.displayName = "VisuallyHidden";
-      var f = r
+      f.displayName = "VisuallyHidden";
+      var r = f
     }
   }
 ]);

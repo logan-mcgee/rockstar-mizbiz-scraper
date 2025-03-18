@@ -58,8 +58,8 @@ _global.SENTRY_RELEASE = {
 
       function c(e, t, u) {
         (u = u || {}).arrayMerge = u.arrayMerge || o, u.isMergeableObject = u.isMergeableObject || r, u.cloneUnlessOtherwiseSpecified = n;
-        var s = Array.isArray(t);
-        return s === Array.isArray(e) ? s ? u.arrayMerge(e, t, u) : function(e, r, t) {
+        var f = Array.isArray(t);
+        return f === Array.isArray(e) ? f ? u.arrayMerge(e, t, u) : function(e, r, t) {
           var o = {};
           return t.isMergeableObject(e) && a(e).forEach((function(r) {
             o[r] = n(e[r], t)
@@ -98,7 +98,7 @@ _global.SENTRY_RELEASE = {
         __createBinding: () => b,
         __decorate: () => c,
         __disposeResources: () => C,
-        __esDecorate: () => s,
+        __esDecorate: () => f,
         __exportStar: () => h,
         __extends: () => o,
         __generator: () => _,
@@ -110,7 +110,7 @@ _global.SENTRY_RELEASE = {
         __propKey: () => l,
         __read: () => v,
         __rest: () => i,
-        __runInitializers: () => f,
+        __runInitializers: () => s,
         __setFunctionName: () => p,
         __spread: () => g,
         __spreadArray: () => O,
@@ -170,12 +170,12 @@ _global.SENTRY_RELEASE = {
         }
       }
 
-      function s(e, r, t, n, o, a) {
+      function f(e, r, t, n, o, a) {
         function i(e) {
           if (void 0 !== e && "function" != typeof e) throw new TypeError("Function expected");
           return e
         }
-        for (var c, u = n.kind, s = "getter" === u ? "get" : "setter" === u ? "set" : "value", f = !r && e ? n.static ? e : e.prototype : null, l = r || (f ? Object.getOwnPropertyDescriptor(f, n.name) : {}), p = !1, y = t.length - 1; y >= 0; y--) {
+        for (var c, u = n.kind, f = "getter" === u ? "get" : "setter" === u ? "set" : "value", s = !r && e ? n.static ? e : e.prototype : null, l = r || (s ? Object.getOwnPropertyDescriptor(s, n.name) : {}), p = !1, y = t.length - 1; y >= 0; y--) {
           var d = {};
           for (var _ in n) d[_] = "access" === _ ? {} : n[_];
           for (var _ in n.access) d.access[_] = n.access[_];
@@ -186,17 +186,17 @@ _global.SENTRY_RELEASE = {
           var b = (0, t[y])("accessor" === u ? {
             get: l.get,
             set: l.set
-          } : l[s], d);
+          } : l[f], d);
           if ("accessor" === u) {
             if (void 0 === b) continue;
             if (null === b || "object" != typeof b) throw new TypeError("Object expected");
             (c = i(b.get)) && (l.get = c), (c = i(b.set)) && (l.set = c), (c = i(b.init)) && o.unshift(c)
-          } else(c = i(b)) && ("field" === u ? o.unshift(c) : l[s] = c)
+          } else(c = i(b)) && ("field" === u ? o.unshift(c) : l[f] = c)
         }
-        f && Object.defineProperty(f, n.name, l), p = !0
+        s && Object.defineProperty(s, n.name, l), p = !0
       }
 
-      function f(e, r, t) {
+      function s(e, r, t) {
         for (var n = arguments.length > 2, o = 0; o < r.length; o++) t = n ? r[o].call(e, t) : r[o].call(e);
         return n ? t : void 0
       }
@@ -416,9 +416,9 @@ _global.SENTRY_RELEASE = {
 
         function c(e, r) {
           try {
-            (t = o[e](r)).value instanceof j ? Promise.resolve(t.value.v).then(u, s) : f(a[0][2], t)
+            (t = o[e](r)).value instanceof j ? Promise.resolve(t.value.v).then(u, f) : s(a[0][2], t)
           } catch (e) {
-            f(a[0][3], e)
+            s(a[0][3], e)
           }
           var t
         }
@@ -427,11 +427,11 @@ _global.SENTRY_RELEASE = {
           c("next", e)
         }
 
-        function s(e) {
+        function f(e) {
           c("throw", e)
         }
 
-        function f(e, r) {
+        function s(e, r) {
           e(r), a.shift(), a.length && c(a[0][0], a[0][1])
         }
       }

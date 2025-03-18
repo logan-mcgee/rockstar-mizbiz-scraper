@@ -16,12 +16,12 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [5868, 1029, 3410, 5791, 8172, 3487], {
-    65039: (e, o, d) => {
-      var r = d(62229),
-        a = Symbol.for("react.element"),
+    65039: (e, o, r) => {
+      var a = r(62229),
+        d = Symbol.for("react.element"),
         t = Symbol.for("react.fragment"),
         n = Object.prototype.hasOwnProperty,
-        l = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        l = a.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         f = {
           key: !0,
           ref: !0,
@@ -29,15 +29,15 @@ _global.SENTRY_RELEASE = {
           __source: !0
         };
 
-      function s(e, o, d) {
-        var r, t = {},
+      function s(e, o, r) {
+        var a, t = {},
           s = null,
           i = null;
-        for (r in void 0 !== d && (s = "" + d), void 0 !== o.key && (s = "" + o.key), void 0 !== o.ref && (i = o.ref), o) n.call(o, r) && !f.hasOwnProperty(r) && (t[r] = o[r]);
+        for (a in void 0 !== r && (s = "" + r), void 0 !== o.key && (s = "" + o.key), void 0 !== o.ref && (i = o.ref), o) n.call(o, a) && !f.hasOwnProperty(a) && (t[a] = o[a]);
         if (e && e.defaultProps)
-          for (r in o = e.defaultProps) void 0 === t[r] && (t[r] = o[r]);
+          for (a in o = e.defaultProps) void 0 === t[a] && (t[a] = o[a]);
         return {
-          $$typeof: a,
+          $$typeof: d,
           type: e,
           key: s,
           ref: i,
@@ -47,27 +47,27 @@ _global.SENTRY_RELEASE = {
       }
       o.Fragment = t, o.jsx = s, o.jsxs = s
     },
-    91029: (e, o, d) => {
-      e.exports = d(65039)
+    91029: (e, o, r) => {
+      e.exports = r(65039)
     },
-    15868: (e, o, d) => {
-      d.r(o), d.d(o, {
+    15868: (e, o, r) => {
+      r.r(o), r.d(o, {
         Portal: () => f,
         Root: () => s
       });
-      var r = d(62229),
-        a = d(44853),
-        t = d(4119),
-        n = d(66698),
-        l = d(91029),
-        f = r.forwardRef(((e, o) => {
+      var a = r(62229),
+        d = r(44853),
+        t = r(4119),
+        n = r(66698),
+        l = r(91029),
+        f = a.forwardRef(((e, o) => {
           const {
-            container: d,
+            container: r,
             ...f
-          } = e, [s, i] = r.useState(!1);
+          } = e, [s, i] = a.useState(!1);
           (0, n.N)((() => i(!0)), []);
-          const u = d || s && globalThis?.document?.body;
-          return u ? a.createPortal((0, l.jsx)(t.sG.div, {
+          const u = r || s && globalThis?.document?.body;
+          return u ? d.createPortal((0, l.jsx)(t.sG.div, {
             ...f,
             ref: o
           }), u) : null
@@ -75,42 +75,42 @@ _global.SENTRY_RELEASE = {
       f.displayName = "Portal";
       var s = f
     },
-    4119: (e, o, d) => {
-      d.d(o, {
+    4119: (e, o, r) => {
+      r.d(o, {
         hO: () => f,
         sG: () => l
       });
-      var r = d(62229),
-        a = d(44853),
-        t = d(21222),
-        n = d(91029),
+      var a = r(62229),
+        d = r(44853),
+        t = r(21222),
+        n = r(91029),
         l = ["a", "button", "div", "form", "h2", "h3", "img", "input", "label", "li", "nav", "ol", "p", "span", "svg", "ul"].reduce(((e, o) => {
-          const d = r.forwardRef(((e, d) => {
+          const r = a.forwardRef(((e, r) => {
             const {
-              asChild: r,
-              ...a
-            } = e, l = r ? t.Slot : o;
+              asChild: a,
+              ...d
+            } = e, l = a ? t.Slot : o;
             return "undefined" != typeof window && (window[Symbol.for("radix-ui")] = !0), (0, n.jsx)(l, {
-              ...a,
-              ref: d
+              ...d,
+              ref: r
             })
           }));
-          return d.displayName = `Primitive.${o}`, {
+          return r.displayName = `Primitive.${o}`, {
             ...e,
-            [o]: d
+            [o]: r
           }
         }), {});
 
       function f(e, o) {
-        e && a.flushSync((() => e.dispatchEvent(o)))
+        e && d.flushSync((() => e.dispatchEvent(o)))
       }
     },
-    66698: (e, o, d) => {
-      d.d(o, {
-        N: () => a
+    66698: (e, o, r) => {
+      r.d(o, {
+        N: () => d
       });
-      var r = d(62229),
-        a = Boolean(globalThis?.document) ? r.useLayoutEffect : () => {}
+      var a = r(62229),
+        d = Boolean(globalThis?.document) ? a.useLayoutEffect : () => {}
     }
   }
 ]);

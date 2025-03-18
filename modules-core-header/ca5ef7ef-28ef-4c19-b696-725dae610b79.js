@@ -106,21 +106,21 @@ _global.SENTRY_RELEASE = {
           const i = r.createContext(s),
             a = n.length;
           n = [...n, s];
-          const u = t => {
+          const c = t => {
             const {
               scope: n,
               children: s,
-              ...u
-            } = t, c = n?.[e]?.[a] || i, d = r.useMemo((() => u), Object.values(u));
-            return (0, o.jsx)(c.Provider, {
+              ...c
+            } = t, u = n?.[e]?.[a] || i, d = r.useMemo((() => c), Object.values(c));
+            return (0, o.jsx)(u.Provider, {
               value: d,
               children: s
             })
           };
-          return u.displayName = t + "Provider", [u, function(n, o) {
-            const u = o?.[e]?.[a] || i,
-              c = r.useContext(u);
-            if (c) return c;
+          return c.displayName = t + "Provider", [c, function(n, o) {
+            const c = o?.[e]?.[a] || i,
+              u = r.useContext(c);
+            if (u) return u;
             if (void 0 !== s) return s;
             throw new Error(`\`${n}\` must be used within \`${t}\``)
           }]
@@ -159,8 +159,8 @@ _global.SENTRY_RELEASE = {
         s = n(20627),
         i = n(31873),
         a = n(83957),
-        u = n(59693),
-        c = n(99935),
+        c = n(59693),
+        u = n(99935),
         d = n(91029),
         l = "dismissableLayer.update",
         f = o.createContext({
@@ -175,10 +175,10 @@ _global.SENTRY_RELEASE = {
             onPointerDownOutside: h,
             onFocusOutside: g,
             onInteractOutside: y,
-            onDismiss: b,
-            ...w
+            onDismiss: w,
+            ...b
           } = e, E = o.useContext(f), [x, P] = o.useState(null), C = x?.ownerDocument ?? globalThis?.document, [, O] = o.useState({}), N = (0, a.s)(t, (e => P(e))), _ = Array.from(E.layers), [A] = [...E.layersWithOutsidePointerEventsDisabled].slice(-1), R = _.indexOf(A), D = x ? _.indexOf(x) : -1, S = E.layersWithOutsidePointerEventsDisabled.size > 0, j = D >= R, F = function(e, t = globalThis?.document) {
-            const n = (0, u.c)(e),
+            const n = (0, c.c)(e),
               r = o.useRef(!1),
               s = o.useRef((() => {}));
             return o.useEffect((() => {
@@ -210,9 +210,9 @@ _global.SENTRY_RELEASE = {
           }((e => {
             const t = e.target,
               n = [...E.branches].some((e => e.contains(t)));
-            j && !n && (h?.(e), y?.(e), e.defaultPrevented || b?.())
+            j && !n && (h?.(e), y?.(e), e.defaultPrevented || w?.())
           }), C), T = function(e, t = globalThis?.document) {
-            const n = (0, u.c)(e),
+            const n = (0, c.c)(e),
               r = o.useRef(!1);
             return o.useEffect((() => {
               const e = e => {
@@ -229,10 +229,10 @@ _global.SENTRY_RELEASE = {
             }
           }((e => {
             const t = e.target;
-            [...E.branches].some((e => e.contains(t))) || (g?.(e), y?.(e), e.defaultPrevented || b?.())
+            [...E.branches].some((e => e.contains(t))) || (g?.(e), y?.(e), e.defaultPrevented || w?.())
           }), C);
-          return (0, c.U)((e => {
-            D === E.layers.size - 1 && (p?.(e), !e.defaultPrevented && b && (e.preventDefault(), b()))
+          return (0, u.U)((e => {
+            D === E.layers.size - 1 && (p?.(e), !e.defaultPrevented && w && (e.preventDefault(), w()))
           }), C), o.useEffect((() => {
             if (x) return n && (0 === E.layersWithOutsidePointerEventsDisabled.size && (r = C.body.style.pointerEvents, C.body.style.pointerEvents = "none"), E.layersWithOutsidePointerEventsDisabled.add(x)), E.layers.add(x), m(), () => {
               n && 1 === E.layersWithOutsidePointerEventsDisabled.size && (C.body.style.pointerEvents = r)
@@ -243,7 +243,7 @@ _global.SENTRY_RELEASE = {
             const e = () => O({});
             return document.addEventListener(l, e), () => document.removeEventListener(l, e)
           }), []), (0, d.jsx)(i.sG.div, {
-            ...w,
+            ...b,
             ref: N,
             style: {
               pointerEvents: S ? j ? "auto" : "none" : void 0,
@@ -319,7 +319,7 @@ _global.SENTRY_RELEASE = {
         PopoverAnchor: () => fe,
         PopoverArrow: () => Ne,
         PopoverClose: () => Oe,
-        PopoverContent: () => we,
+        PopoverContent: () => be,
         PopoverPortal: () => ye,
         PopoverTrigger: () => me,
         Portal: () => Se,
@@ -332,8 +332,8 @@ _global.SENTRY_RELEASE = {
         s = n(83957),
         i = n(85983),
         a = n(52420),
-        u = n(11365),
-        c = n(31873),
+        c = n(11365),
+        u = n(31873),
         d = n(59693),
         l = n(91029),
         f = "focusScope.autoFocusOnMount",
@@ -348,7 +348,7 @@ _global.SENTRY_RELEASE = {
             trapped: o = !1,
             onMountAutoFocus: i,
             onUnmountAutoFocus: a,
-            ...u
+            ...c
           } = e, [v, y] = r.useState(null), E = (0, d.c)(i), x = (0, d.c)(a), P = r.useRef(null), C = (0, s.s)(t, (e => y(e))), O = r.useRef({
             paused: !1,
             pause() {
@@ -363,20 +363,20 @@ _global.SENTRY_RELEASE = {
               let e = function(e) {
                   if (O.paused || !v) return;
                   const t = e.target;
-                  v.contains(t) ? P.current = t : b(P.current, {
+                  v.contains(t) ? P.current = t : w(P.current, {
                     select: !0
                   })
                 },
                 t = function(e) {
                   if (O.paused || !v) return;
                   const t = e.relatedTarget;
-                  null !== t && (v.contains(t) || b(P.current, {
+                  null !== t && (v.contains(t) || w(P.current, {
                     select: !0
                   }))
                 },
                 n = function(e) {
                   if (document.activeElement === document.body)
-                    for (const t of e) t.removedNodes.length > 0 && b(v)
+                    for (const t of e) t.removedNodes.length > 0 && w(v)
                 };
               document.addEventListener("focusin", e), document.addEventListener("focusout", t);
               const r = new MutationObserver(n);
@@ -389,7 +389,7 @@ _global.SENTRY_RELEASE = {
             }
           }), [o, v, O.paused]), r.useEffect((() => {
             if (v) {
-              w.add(O);
+              b.add(O);
               const e = document.activeElement;
               if (!v.contains(e)) {
                 const t = new CustomEvent(f, m);
@@ -398,19 +398,19 @@ _global.SENTRY_RELEASE = {
                 } = {}) {
                   const n = document.activeElement;
                   for (const r of e)
-                    if (b(r, {
+                    if (w(r, {
                         select: t
                       }), document.activeElement !== n) return
                 }(h(v).filter((e => "A" !== e.tagName)), {
                   select: !0
-                }), document.activeElement === e && b(v))
+                }), document.activeElement === e && w(v))
               }
               return () => {
                 v.removeEventListener(f, E), setTimeout((() => {
                   const t = new CustomEvent(p, m);
-                  v.addEventListener(p, x), v.dispatchEvent(t), t.defaultPrevented || b(e ?? document.body, {
+                  v.addEventListener(p, x), v.dispatchEvent(t), t.defaultPrevented || w(e ?? document.body, {
                     select: !0
-                  }), v.removeEventListener(p, x), w.remove(O)
+                  }), v.removeEventListener(p, x), b.remove(O)
                 }), 0)
               }
             }
@@ -426,16 +426,16 @@ _global.SENTRY_RELEASE = {
                   const t = h(e);
                   return [g(t, e), g(t.reverse(), e)]
                 }(t);
-              o && s ? e.shiftKey || r !== s ? e.shiftKey && r === o && (e.preventDefault(), n && b(s, {
+              o && s ? e.shiftKey || r !== s ? e.shiftKey && r === o && (e.preventDefault(), n && w(s, {
                 select: !0
-              })) : (e.preventDefault(), n && b(o, {
+              })) : (e.preventDefault(), n && w(o, {
                 select: !0
               })) : r === t && e.preventDefault()
             }
           }), [n, o, O.paused]);
-          return (0, l.jsx)(c.sG.div, {
+          return (0, l.jsx)(u.sG.div, {
             tabIndex: -1,
-            ...u,
+            ...c,
             ref: C,
             onKeyDown: N
           })
@@ -472,7 +472,7 @@ _global.SENTRY_RELEASE = {
         return !1
       }
 
-      function b(e, {
+      function w(e, {
         select: t = !1
       } = {}) {
         if (e && e.focus) {
@@ -485,7 +485,7 @@ _global.SENTRY_RELEASE = {
         }
       }
       v.displayName = "FocusScope";
-      var w = function() {
+      var b = function() {
         let e = [];
         return {
           add(t) {
@@ -514,7 +514,7 @@ _global.SENTRY_RELEASE = {
             height: o = 5,
             ...s
           } = e;
-          return (0, l.jsx)(c.sG.svg, {
+          return (0, l.jsx)(u.sG.svg, {
             ...s,
             ref: t,
             width: r,
@@ -552,10 +552,10 @@ _global.SENTRY_RELEASE = {
             __scopePopper: n,
             virtualRef: o,
             ...i
-          } = e, a = T(M, n), u = r.useRef(null), d = (0, s.s)(t, u);
+          } = e, a = T(M, n), c = r.useRef(null), d = (0, s.s)(t, c);
           return r.useEffect((() => {
-            a.onAnchorChange(o?.current || u.current)
-          })), o ? null : (0, l.jsx)(c.sG.div, {
+            a.onAnchorChange(o?.current || c.current)
+          })), o ? null : (0, l.jsx)(u.sG.div, {
             ...i,
             ref: d
           })
@@ -569,7 +569,7 @@ _global.SENTRY_RELEASE = {
             side: o = "bottom",
             sideOffset: i = 0,
             align: a = "center",
-            alignOffset: u = 0,
+            alignOffset: c = 0,
             arrowPadding: f = 0,
             avoidCollisions: p = !0,
             collisionBoundary: m = [],
@@ -577,8 +577,8 @@ _global.SENTRY_RELEASE = {
             sticky: h = "partial",
             hideWhenDetached: g = !1,
             updatePositionStrategy: y = "optimized",
-            onPlaced: b,
-            ...w
+            onPlaced: w,
+            ...b
           } = e, E = T(k, n), [x, N] = r.useState(null), _ = (0, s.s)(t, (e => N(e))), [D, S] = r.useState(null), j = (0, R.X)(D), F = j?.width ?? 0, L = j?.height ?? 0, M = o + ("center" !== a ? "-" + a : ""), I = "number" == typeof v ? v : {
             top: 0,
             right: 0,
@@ -606,7 +606,7 @@ _global.SENTRY_RELEASE = {
             },
             middleware: [(0, O.cY)({
               mainAxis: i + L,
-              alignmentAxis: u
+              alignmentAxis: c
             }), p && (0, O.BN)({
               mainAxis: !0,
               crossAxis: !1,
@@ -638,7 +638,7 @@ _global.SENTRY_RELEASE = {
               strategy: "referenceHidden",
               ...K
             })]
-          }), [Z, J] = Y(q), Q = (0, d.c)(b);
+          }), [Z, J] = Y(q), Q = (0, d.c)(w);
           (0, A.N)((() => {
             X && Q?.()
           }), [X, Q]);
@@ -670,13 +670,13 @@ _global.SENTRY_RELEASE = {
               arrowX: ee,
               arrowY: te,
               shouldHideArrow: ne,
-              children: (0, l.jsx)(c.sG.div, {
+              children: (0, l.jsx)(u.sG.div, {
                 "data-side": Z,
                 "data-align": J,
-                ...w,
+                ...b,
                 ref: _,
                 style: {
-                  ...w.style,
+                  ...b.style,
                   animation: X ? void 0 : "none"
                 }
               })
@@ -740,14 +740,14 @@ _global.SENTRY_RELEASE = {
             placement: n,
             rects: r,
             middlewareData: o
-          } = t, s = 0 !== o.arrow?.centerOffset, i = s ? 0 : e.arrowWidth, a = s ? 0 : e.arrowHeight, [u, c] = Y(n), d = {
+          } = t, s = 0 !== o.arrow?.centerOffset, i = s ? 0 : e.arrowWidth, a = s ? 0 : e.arrowHeight, [c, u] = Y(n), d = {
             start: "0%",
             center: "50%",
             end: "100%"
-          } [c], l = (o.arrow?.x ?? 0) + i / 2, f = (o.arrow?.y ?? 0) + a / 2;
+          } [u], l = (o.arrow?.x ?? 0) + i / 2, f = (o.arrow?.y ?? 0) + a / 2;
           let p = "",
             m = "";
-          return "bottom" === u ? (p = s ? d : `${l}px`, m = -a + "px") : "top" === u ? (p = s ? d : `${l}px`, m = `${r.floating.height+a}px`) : "right" === u ? (p = -a + "px", m = s ? d : `${f}px`) : "left" === u && (p = `${r.floating.width+a}px`, m = s ? d : `${f}px`), {
+          return "bottom" === c ? (p = s ? d : `${l}px`, m = -a + "px") : "top" === c ? (p = s ? d : `${l}px`, m = `${r.floating.height+a}px`) : "right" === c ? (p = -a + "px", m = s ? d : `${f}px`) : "left" === c && (p = `${r.floating.width+a}px`, m = s ? d : `${f}px`), {
             data: {
               x: p,
               y: m
@@ -773,7 +773,7 @@ _global.SENTRY_RELEASE = {
         oe = "Popover",
         [se, ie] = (0, i.A)(oe, [j]),
         ae = j(),
-        [ue, ce] = se(oe),
+        [ce, ue] = se(oe),
         de = e => {
           const {
             __scopePopover: t,
@@ -782,17 +782,17 @@ _global.SENTRY_RELEASE = {
             defaultOpen: s,
             onOpenChange: i,
             modal: a = !1
-          } = e, u = ae(t), c = r.useRef(null), [d, f] = r.useState(!1), [p = !1, m] = (0, te.i)({
+          } = e, c = ae(t), u = r.useRef(null), [d, f] = r.useState(!1), [p = !1, m] = (0, te.i)({
             prop: o,
             defaultProp: s,
             onChange: i
           });
           return (0, l.jsx)(q, {
-            ...u,
-            children: (0, l.jsx)(ue, {
+            ...c,
+            children: (0, l.jsx)(ce, {
               scope: t,
               contentId: (0, x.useId)(),
-              triggerRef: c,
+              triggerRef: u,
               open: p,
               onOpenChange: m,
               onOpenToggle: r.useCallback((() => m((e => !e))), [m]),
@@ -810,11 +810,11 @@ _global.SENTRY_RELEASE = {
           const {
             __scopePopover: n,
             ...o
-          } = e, s = ce(le, n), i = ae(n), {
+          } = e, s = ue(le, n), i = ae(n), {
             onCustomAnchorAdd: a,
-            onCustomAnchorRemove: u
+            onCustomAnchorRemove: c
           } = s;
-          return r.useEffect((() => (a(), () => u())), [a, u]), (0, l.jsx)(X, {
+          return r.useEffect((() => (a(), () => c())), [a, c]), (0, l.jsx)(X, {
             ...i,
             ...o,
             ref: t
@@ -826,14 +826,14 @@ _global.SENTRY_RELEASE = {
           const {
             __scopePopover: n,
             ...r
-          } = e, i = ce(pe, n), a = ae(n), u = (0, s.s)(t, i.triggerRef), d = (0, l.jsx)(c.sG.button, {
+          } = e, i = ue(pe, n), a = ae(n), c = (0, s.s)(t, i.triggerRef), d = (0, l.jsx)(u.sG.button, {
             type: "button",
             "aria-haspopup": "dialog",
             "aria-expanded": i.open,
             "aria-controls": i.contentId,
             "data-state": _e(i.open),
             ...r,
-            ref: u,
+            ref: c,
             onClick: (0, o.m)(e.onClick, i.onOpenToggle)
           });
           return i.hasCustomAnchor ? d : (0, l.jsx)(X, {
@@ -853,7 +853,7 @@ _global.SENTRY_RELEASE = {
             forceMount: n,
             children: r,
             container: o
-          } = e, s = ce(ve, t);
+          } = e, s = ue(ve, t);
           return (0, l.jsx)(he, {
             scope: t,
             forceMount: n,
@@ -868,14 +868,14 @@ _global.SENTRY_RELEASE = {
           })
         };
       ye.displayName = ve;
-      var be = "PopoverContent",
-        we = r.forwardRef(((e, t) => {
-          const n = ge(be, e.__scopePopover),
+      var we = "PopoverContent",
+        be = r.forwardRef(((e, t) => {
+          const n = ge(we, e.__scopePopover),
             {
               forceMount: r = n.forceMount,
               ...o
             } = e,
-            s = ce(be, e.__scopePopover);
+            s = ue(we, e.__scopePopover);
           return (0, l.jsx)(Q.C, {
             present: r || s.open,
             children: s.modal ? (0, l.jsx)(Ee, {
@@ -887,12 +887,12 @@ _global.SENTRY_RELEASE = {
             })
           })
         }));
-      we.displayName = be;
+      be.displayName = we;
       var Ee = r.forwardRef(((e, t) => {
-          const n = ce(be, e.__scopePopover),
+          const n = ue(we, e.__scopePopover),
             i = r.useRef(null),
             a = (0, s.s)(t, i),
-            u = r.useRef(!1);
+            c = r.useRef(!1);
           return r.useEffect((() => {
             const e = i.current;
             if (e) return (0, ne.Eq)(e)
@@ -905,13 +905,13 @@ _global.SENTRY_RELEASE = {
               trapFocus: n.open,
               disableOutsidePointerEvents: !0,
               onCloseAutoFocus: (0, o.m)(e.onCloseAutoFocus, (e => {
-                e.preventDefault(), u.current || n.triggerRef.current?.focus()
+                e.preventDefault(), c.current || n.triggerRef.current?.focus()
               })),
               onPointerDownOutside: (0, o.m)(e.onPointerDownOutside, (e => {
                 const t = e.detail.originalEvent,
                   n = 0 === t.button && !0 === t.ctrlKey,
                   r = 2 === t.button || n;
-                u.current = r
+                c.current = r
               }), {
                 checkForDefaultPrevented: !1
               }),
@@ -922,7 +922,7 @@ _global.SENTRY_RELEASE = {
           })
         })),
         xe = r.forwardRef(((e, t) => {
-          const n = ce(be, e.__scopePopover),
+          const n = ue(we, e.__scopePopover),
             o = r.useRef(!1),
             s = r.useRef(!1);
           return (0, l.jsx)(Pe, {
@@ -948,13 +948,13 @@ _global.SENTRY_RELEASE = {
             onOpenAutoFocus: o,
             onCloseAutoFocus: s,
             disableOutsidePointerEvents: i,
-            onEscapeKeyDown: c,
+            onEscapeKeyDown: u,
             onPointerDownOutside: d,
             onFocusOutside: f,
             onInteractOutside: p,
             ...m
-          } = e, h = ce(be, n), g = ae(n);
-          return (0, u.Oh)(), (0, l.jsx)(v, {
+          } = e, h = ue(we, n), g = ae(n);
+          return (0, c.Oh)(), (0, l.jsx)(v, {
             asChild: !0,
             loop: !0,
             trapped: r,
@@ -964,7 +964,7 @@ _global.SENTRY_RELEASE = {
               asChild: !0,
               disableOutsidePointerEvents: i,
               onInteractOutside: p,
-              onEscapeKeyDown: c,
+              onEscapeKeyDown: u,
               onPointerDownOutside: d,
               onFocusOutside: f,
               onDismiss: () => h.onOpenChange(!1),
@@ -992,8 +992,8 @@ _global.SENTRY_RELEASE = {
           const {
             __scopePopover: n,
             ...r
-          } = e, s = ce(Ce, n);
-          return (0, l.jsx)(c.sG.button, {
+          } = e, s = ue(Ce, n);
+          return (0, l.jsx)(u.sG.button, {
             type: "button",
             ...r,
             ref: t,
@@ -1021,7 +1021,7 @@ _global.SENTRY_RELEASE = {
         Re = fe,
         De = me,
         Se = ye,
-        je = we,
+        je = be,
         Fe = Oe,
         Te = Ne
     },
@@ -1037,9 +1037,9 @@ _global.SENTRY_RELEASE = {
             present: t,
             children: n
           } = e, i = function(e) {
-            const [t, n] = r.useState(), o = r.useRef({}), i = r.useRef(e), u = r.useRef("none"), c = e ? "mounted" : "unmounted", [d, l] = function(e, t) {
+            const [t, n] = r.useState(), o = r.useRef({}), i = r.useRef(e), c = r.useRef("none"), u = e ? "mounted" : "unmounted", [d, l] = function(e, t) {
               return r.useReducer(((e, n) => t[e][n] ?? e), e)
-            }(c, {
+            }(u, {
               mounted: {
                 UNMOUNT: "unmounted",
                 ANIMATION_OUT: "unmountSuspended"
@@ -1054,12 +1054,12 @@ _global.SENTRY_RELEASE = {
             });
             return r.useEffect((() => {
               const e = a(o.current);
-              u.current = "mounted" === d ? e : "none"
+              c.current = "mounted" === d ? e : "none"
             }), [d]), (0, s.N)((() => {
               const t = o.current,
                 n = i.current;
               if (n !== e) {
-                const r = u.current,
+                const r = c.current,
                   o = a(t);
                 l(e ? "MOUNT" : "none" === o || "none" === t?.display ? "UNMOUNT" : n && r !== o ? "ANIMATION_OUT" : "UNMOUNT"), i.current = e
               }
@@ -1077,7 +1077,7 @@ _global.SENTRY_RELEASE = {
                     }
                   },
                   s = e => {
-                    e.target === t && (u.current = a(o.current))
+                    e.target === t && (c.current = a(o.current))
                   };
                 return t.addEventListener("animationstart", s), t.addEventListener("animationcancel", r), t.addEventListener("animationend", r), () => {
                   n.clearTimeout(e), t.removeEventListener("animationstart", s), t.removeEventListener("animationcancel", r), t.removeEventListener("animationend", r)
@@ -1090,15 +1090,15 @@ _global.SENTRY_RELEASE = {
                 e && (o.current = getComputedStyle(e)), n(e)
               }), [])
             }
-          }(t), u = "function" == typeof n ? n({
+          }(t), c = "function" == typeof n ? n({
             present: i.isPresent
-          }) : r.Children.only(n), c = (0, o.s)(i.ref, function(e) {
+          }) : r.Children.only(n), u = (0, o.s)(i.ref, function(e) {
             let t = Object.getOwnPropertyDescriptor(e.props, "ref")?.get,
               n = t && "isReactWarning" in t && t.isReactWarning;
             return n ? e.ref : (t = Object.getOwnPropertyDescriptor(e, "ref")?.get, n = t && "isReactWarning" in t && t.isReactWarning, n ? e.props.ref : e.props.ref || e.ref)
-          }(u));
-          return "function" == typeof n || i.isPresent ? r.cloneElement(u, {
-            ref: c
+          }(c));
+          return "function" == typeof n || i.isPresent ? r.cloneElement(c, {
+            ref: u
           }) : null
         };
 
@@ -1109,7 +1109,7 @@ _global.SENTRY_RELEASE = {
     },
     31873: (e, t, n) => {
       n.d(t, {
-        hO: () => u,
+        hO: () => c,
         sG: () => a
       });
       var r = n(62229),
@@ -1133,7 +1133,7 @@ _global.SENTRY_RELEASE = {
           }
         }), {});
 
-      function u(e, t) {
+      function c(e, t) {
         e && o.flushSync((() => e.dispatchEvent(t)))
       }
     }
