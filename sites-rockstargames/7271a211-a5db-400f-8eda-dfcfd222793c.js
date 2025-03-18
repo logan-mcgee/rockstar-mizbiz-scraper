@@ -131,7 +131,7 @@ _global.SENTRY_RELEASE = {
         useImageParser: () => g.S1,
         useTinaComponents: () => u,
         useTinaPayload: () => m.i,
-        useTranslations: () => b
+        useTranslations: () => h
       });
       var a = t(62229),
         i = t(14282),
@@ -187,7 +187,7 @@ _global.SENTRY_RELEASE = {
           e.toLowerCase().split(" ").join("_")
         }("Background Image Gradient"), v("Background Image Gradient"), t(61398);
       const y = "content",
-        b = e => {
+        h = e => {
           let {
             payload: n,
             variables: t
@@ -212,7 +212,7 @@ _global.SENTRY_RELEASE = {
             })(t)
           })), o
         };
-      var h = t(20310),
+      var b = t(20310),
         S = t(2918);
       const _ = {
           event: "page_section_impression",
@@ -290,7 +290,7 @@ _global.SENTRY_RELEASE = {
                   }
                 }),
                 m = [...e?.translations ?? []].reverse(),
-                f = `componentProps_${(0,h.A)()}`;
+                f = `componentProps_${(0,b.A)()}`;
               return (0, a.createElement)(u, {
                 ...t?.meta,
                 ...e,
@@ -356,7 +356,7 @@ _global.SENTRY_RELEASE = {
             }), [n]), t
           })({
             payload: l
-          }), v = b({
+          }), v = h({
             payload: l,
             variables: f
           });

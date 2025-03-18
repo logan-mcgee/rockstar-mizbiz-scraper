@@ -29,23 +29,23 @@ _global.SENTRY_RELEASE = {
           __source: !0
         };
 
-      function d(e, r, n) {
+      function f(e, r, n) {
         var t, a = {},
-          d = null,
-          f = null;
-        for (t in void 0 !== n && (d = "" + n), void 0 !== r.key && (d = "" + r.key), void 0 !== r.ref && (f = r.ref), r) l.call(r, t) && !i.hasOwnProperty(t) && (a[t] = r[t]);
+          f = null,
+          d = null;
+        for (t in void 0 !== n && (f = "" + n), void 0 !== r.key && (f = "" + r.key), void 0 !== r.ref && (d = r.ref), r) l.call(r, t) && !i.hasOwnProperty(t) && (a[t] = r[t]);
         if (e && e.defaultProps)
           for (t in r = e.defaultProps) void 0 === a[t] && (a[t] = r[t]);
         return {
           $$typeof: o,
           type: e,
-          key: d,
-          ref: f,
+          key: f,
+          ref: d,
           props: a,
           _owner: s.current
         }
       }
-      r.Fragment = a, r.jsx = d, r.jsxs = d
+      r.Fragment = a, r.jsx = f, r.jsxs = f
     },
     91029: (e, r, n) => {
       e.exports = n(65039)
@@ -67,7 +67,7 @@ _global.SENTRY_RELEASE = {
           const {
             children: n,
             ...o
-          } = e, l = t.Children.toArray(n), i = l.find(d);
+          } = e, l = t.Children.toArray(n), i = l.find(f);
           if (i) {
             const e = i.props.children,
               n = l.map((r => r === i ? t.Children.count(e) > 1 ? t.Children.only(null) : t.isValidElement(e) ? e.props.children : null : r));
@@ -96,7 +96,7 @@ _global.SENTRY_RELEASE = {
             return n ? e.ref : (r = Object.getOwnPropertyDescriptor(e, "ref")?.get, n = r && "isReactWarning" in r && r.isReactWarning, n ? e.props.ref : e.props.ref || e.ref)
           }(n);
           return t.cloneElement(n, {
-            ...f(a, n.props),
+            ...d(a, n.props),
             ref: r ? o(r, e) : e
           })
         }
@@ -109,11 +109,11 @@ _global.SENTRY_RELEASE = {
         children: e
       });
 
-      function d(e) {
+      function f(e) {
         return t.isValidElement(e) && e.type === i
       }
 
-      function f(e, r) {
+      function d(e, r) {
         const n = {
           ...r
         };

@@ -84,14 +84,14 @@ _global.SENTRY_RELEASE = {
         })
       };
       var m = t(9137);
-      const _ = {
+      const f = {
           pillBtn: "rockstargames-sites-rockstargamesec4cf2a0d1bf4b163356a239c9fcd2c5",
           selected: "rockstargames-sites-rockstargamesf2bcb112e2fedaca40598307a49544c4",
           dialogButton: "rockstargames-sites-rockstargamesad86d4b21240f743281b4922702072b0",
           primary: "rockstargames-sites-rockstargamese4ce9e8b1c839a16acd1198dd6155b0a",
           secondary: "rockstargames-sites-rockstargamesc2b869b762352eaa5d0adbeb70fac94c"
         },
-        f = e => {
+        _ = e => {
           let {
             button: s,
             closeDialog: t,
@@ -108,14 +108,14 @@ _global.SENTRY_RELEASE = {
             testId: u
           } = s;
           return c ? n && (0, g.jsx)("a", {
-            className: [_.dialogButton, _.link, _[a], i].join(" "),
+            className: [f.dialogButton, f.link, f[a], i].join(" "),
             href: l,
             ...u && {
               "data-testid": u
             },
             children: n
           }) : (0, g.jsx)("button", {
-            className: [_.dialogButton, _[a], i].join(" "),
+            className: [f.dialogButton, f[a], i].join(" "),
             disabled: o,
             onClick: e => (e => {
               d && d(), t && t(), e.stopPropagation()
@@ -128,7 +128,7 @@ _global.SENTRY_RELEASE = {
             },
             children: (0, g.jsxs)("span", {
               children: [n, r && (0, g.jsx)("div", {
-                className: _.ctaIcon
+                className: f.ctaIcon
               })]
             })
           })
@@ -193,7 +193,7 @@ _global.SENTRY_RELEASE = {
               })]
             }), r && (0, g.jsx)("div", {
               className: k.actions,
-              children: r.slice(0, 2).map(((e, s) => (0, g.jsx)(f, {
+              children: r.slice(0, 2).map(((e, s) => (0, g.jsx)(_, {
                 style: 0 === s ? "primary" : "secondary",
                 button: e,
                 closeDialog: m
@@ -313,8 +313,8 @@ _global.SENTRY_RELEASE = {
             urls: n,
             handleSubscribeButton: i,
             isButtonLoading: u,
-            showDialog: _,
-            setShowDialog: f,
+            showDialog: f,
+            setShowDialog: _,
             dialog: k,
             isSubscribed: h
           } = e;
@@ -328,7 +328,7 @@ _global.SENTRY_RELEASE = {
           }), M = k?.buttons || [{
             buttonText: v.formatMessage(x.ns_ok_button_text),
             onClick: () => {
-              f(!1)
+              _(!1)
             },
             extraClasses: w.alertBtnClass,
             ctaClasses: w.ctaText,
@@ -417,8 +417,8 @@ _global.SENTRY_RELEASE = {
               }, {
                 ...M[1]
               }],
-              showDialog: _,
-              onClose: () => f(!1),
+              showDialog: f,
+              onClose: () => _(!1),
               extraClasses: {
                 dialog: w.dialog,
                 title: w.title,
@@ -482,7 +482,7 @@ _global.SENTRY_RELEASE = {
         }),
         C = e => R(e),
         N = (e, s) => {
-          const [t, i] = (0, c.useState)(), [o, l] = (0, c.useState)(!1), [d, u] = (0, c.useState)(!1), [g, b] = (0, c.useState)(!1), [m, _] = (0, c.useState)(!1), f = (0, n.useReactiveVar)(R), k = (0, a.useIntl)(), {
+          const [t, i] = (0, c.useState)(), [o, l] = (0, c.useState)(!1), [d, u] = (0, c.useState)(!1), [g, b] = (0, c.useState)(!1), [m, f] = (0, c.useState)(!1), _ = (0, n.useReactiveVar)(R), k = (0, a.useIntl)(), {
             track: p
           } = (0, r.useGtmTrack)(), h = {
             preferences: `https://${e.sc}.rockstargames.com/settings/email`,
@@ -508,15 +508,15 @@ _global.SENTRY_RELEASE = {
             section_layout: s.loggedIn ? "signed in" : "signed out",
             element_placement: "newsletter subscribe",
             text: "subscribe now"
-          }), s.loggedIn || (window.location.href = h.auth), s.loggedIn && s.isAMinor ? (y(S.ERROR_GENERIC), _(!1), void p({
+          }), s.loggedIn || (window.location.href = h.auth), s.loggedIn && s.isAMinor ? (y(S.ERROR_GENERIC), f(!1), void p({
             event: "alert_error",
             text: "error message with no preferences link",
             element_placement: "newsletter subscribe"
-          })) : s.loggedIn && !f || s.loggedIn && 3 == f ? void await N() : s.loggedIn && f ? (p({
+          })) : s.loggedIn && !_ || s.loggedIn && 3 == _ ? void await N() : s.loggedIn && _ ? (p({
             event: "alert_update",
             text: "alert - user already subscribed",
             element_placement: "newsletter subscribe"
-          }), y(S.ALREADY_SUBSCRIBED), void _(!1)) : void 0), N = async () => {
+          }), y(S.ALREADY_SUBSCRIBED), void f(!1)) : void 0), N = async () => {
             const {
               error: e = null,
               result: t
@@ -551,12 +551,12 @@ _global.SENTRY_RELEASE = {
             }
           };
           return (0, c.useEffect)((() => {
-            l(1 === f)
-          }), [f]), (0, c.useEffect)((() => {
+            l(1 === _)
+          }), [_]), (0, c.useEffect)((() => {
             (async () => {
               await (async () => {
                 s.loggedIn ? await (async () => {
-                  if (-1 === f) return;
+                  if (-1 === _) return;
                   C(-1), b(!0);
                   const {
                     error: t = null,
@@ -612,7 +612,7 @@ _global.SENTRY_RELEASE = {
             isSubscribed: o,
             setShowDialog: u,
             showDialog: d,
-            subscriptionStatus: f,
+            subscriptionStatus: _,
             urls: h,
             setDialog: i
           }
@@ -632,8 +632,8 @@ _global.SENTRY_RELEASE = {
             b = (0, o.useLocation)(),
             {
               loggedIn: m,
-              data: _,
-              loading: f
+              data: f,
+              loading: _
             } = (0, r.useRockstarUser)(),
             k = "true" === d.get("marketing"),
             p = {
@@ -644,11 +644,11 @@ _global.SENTRY_RELEASE = {
               sc: s.sites.socialClub
             },
             x = {
-              ..._,
+              ...f,
               isFromAuth: k || !1,
               loggedIn: m,
               pingBearer: e,
-              userLoading: f
+              userLoading: _
             },
             h = N(p, x),
             {
@@ -666,7 +666,7 @@ _global.SENTRY_RELEASE = {
             children: (0, g.jsx)(E, {
               handleSubscribeButton: S,
               loggedIn: m || !1,
-              loading: f || R,
+              loading: _ || R,
               urls: B,
               isButtonLoading: v,
               setShowDialog: M,

@@ -25,13 +25,13 @@ _global.SENTRY_RELEASE = {
         n = s(81788),
         r = s(2918),
         o = s(95966);
-      const d = (0, n.defineMessages)({
+      const g = (0, n.defineMessages)({
           gtao_feedback_login_cta_text: {
             id: "gtao_feedback_login_cta_text",
             defaultMessage: "Sign in to your Rockstar Games Account to submit feedback."
           }
         }),
-        g = {
+        d = {
           feedback: "rockstargames-sites-gta-gen9c386be0dcd753031c7c8370a05206972",
           stepMessage: "rockstargames-sites-gta-gen9ccb8ae7398f53e45ded9dfe28c3993e6",
           desc: "rockstargames-sites-gta-gen9d72e70db4d8f2e2475325b0ec8c822cd",
@@ -82,7 +82,7 @@ _global.SENTRY_RELEASE = {
           stepIconroles: "rockstargames-sites-gta-gen9ea5b759ebe95532d36d128e2a7c66bdb"
         };
       var f = s(91029);
-      const b = e => {
+      const i = e => {
           let {
             mutation: a,
             query: s,
@@ -90,27 +90,27 @@ _global.SENTRY_RELEASE = {
             t: n
           } = e;
           const r = (0, o.useQueryParams)(),
-            [d, b] = (0, t.useState)({}),
+            [g, i] = (0, t.useState)({}),
             {
               data: p
             } = (0, o.useQuery)(s, {
-              variables: d,
-              skip: !Object.entries(d).length
+              variables: g,
+              skip: !Object.entries(g).length
             });
           return (0, t.useEffect)((() => {
-            b({
+            i({
               step: r.get("step")
             })
           }), [r.get("step")]), (0, f.jsxs)("div", {
-            className: g.feedback,
+            className: d.feedback,
             children: [(0, f.jsx)("h1", {
               children: n("online-feedback-h1")
             }), (0, f.jsx)("div", {
-              className: g.desc,
+              className: d.desc,
               dangerouslySetInnerHTML: {
                 __html: n("online-feedback-desc")
               }
-            }), p && (0, f.jsx)(i, {
+            }), p && (0, f.jsx)(b, {
               mutation: a,
               tree: p.tree,
               type: c,
@@ -118,7 +118,7 @@ _global.SENTRY_RELEASE = {
             })]
           })
         },
-        i = e => {
+        b = e => {
           let {
             mutation: a,
             tree: s,
@@ -127,27 +127,27 @@ _global.SENTRY_RELEASE = {
           } = e;
           const r = s.path.map((e => 1 === s.path.length && "_root" === e.feedback_type.name ? null : (0, f.jsx)(c.NavLink, {
               to: `?step=${e.id_hash}`,
-              className: g[`stepIcon${e.feedback_type.name}`],
+              className: d[`stepIcon${e.feedback_type.name}`],
               children: e.feedback_type.title
             }, e.id_hash))),
             o = s.next.map((e => "_root" === e.feedback_type.name ? null : (0, f.jsxs)(c.NavLink, {
               target: e?.feedback_type?.href ? "_blank" : "_self",
-              className: g[`stepIcon${e.feedback_type.name}`],
+              className: d[`stepIcon${e.feedback_type.name}`],
               to: e?.feedback_type?.href ? e.feedback_type.href : `?step=${e.id_hash}`,
               children: [e.feedback_type.title, e.message ? (0, f.jsx)("div", {
-                className: g.stepMessage,
+                className: d.stepMessage,
                 dangerouslySetInnerHTML: {
                   __html: e.message
                 }
               }) : ""]
             }, e.id_hash)));
           return (0, f.jsxs)("div", {
-            className: [g.steps, g[t]].join(" "),
+            className: [d.steps, d[t]].join(" "),
             children: [(0, f.jsx)("div", {
-              className: g.stepsPrevious,
+              className: d.stepsPrevious,
               children: r
             }), (0, f.jsx)("div", {
-              className: g.stepsNext,
+              className: d.stepsNext,
               children: o
             }), o.length ? "" : (0, f.jsx)(p, {
               feedbackStep: s.path[s.path.length - 1].id,
@@ -163,15 +163,15 @@ _global.SENTRY_RELEASE = {
             t: c
           } = e;
           const {
-            formatMessage: b
+            formatMessage: i
           } = (0, n.useIntl)(), {
-            loggedIn: i
+            loggedIn: b
           } = (0, r.useRockstarUser)(), p = (0, t.useRef)(), [m, {
             data: l,
             error: k
           }] = (0, o.useMutation)(s);
-          return i ? l?.submittal?.id ? (0, f.jsx)("div", {
-            className: g.success,
+          return b ? l?.submittal?.id ? (0, f.jsx)("div", {
+            className: d.success,
             dangerouslySetInnerHTML: {
               __html: c("feedback.enter_success")
             }
@@ -193,13 +193,13 @@ _global.SENTRY_RELEASE = {
               rows: 6,
               placeholder: c("feedback.placeholder")
             }), k ? (0, f.jsx)("div", {
-              className: g.error,
+              className: d.error,
               children: String(k)
             }) : "", (0, f.jsx)("button", {
               type: "submit",
               children: c("SUBMIT")
             })]
-          }) : b(d.gtao_feedback_login_cta_text)
+          }) : i(g.gtao_feedback_login_cta_text)
         },
         m = e => {
           let {
@@ -207,7 +207,7 @@ _global.SENTRY_RELEASE = {
             query: s,
             type: t
           } = e;
-          return (0, o.withTranslations)(b, "rdo" === t ? "rdr2" : t)({
+          return (0, o.withTranslations)(i, "rdo" === t ? "rdr2" : t)({
             mutation: a,
             query: s,
             type: t

@@ -137,13 +137,13 @@ _global.SENTRY_RELEASE = {
             variables: {
               hash: i
             }
-          }), b = (0, o.useRef)();
+          }), v = (0, o.useRef)();
           return m ? (0, d.jsx)("div", {
             className: [a, r.video, u ? r.mutable : ""].join(" "),
-            onMouseEnter: () => t && void b.current.play(),
-            onMouseLeave: () => t && (b.current.pause(), void(b.current.currentTime = 0)),
+            onMouseEnter: () => t && void v.current.play(),
+            onMouseLeave: () => t && (v.current.pause(), void(v.current.currentTime = 0)),
             children: (0, d.jsx)("video", {
-              ref: b,
+              ref: v,
               src: m.gifInfo.file,
               autoPlay: l,
               loop: f,

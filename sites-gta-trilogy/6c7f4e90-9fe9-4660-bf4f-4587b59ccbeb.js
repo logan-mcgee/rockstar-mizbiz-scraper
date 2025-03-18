@@ -86,15 +86,15 @@ _global.SENTRY_RELEASE = {
             (0, o.invariant)(!!y, "Missing locale data for ".concat(p)), f(this, "localeData", y), (0, o.invariant)(void 0 !== y, "locale data for ".concat(s.locale, " does not exist."));
             var _ = y.types;
             (0, o.invariant)("object" == typeof _ && null != _, "invalid types data");
-            var b = _[d];
-            (0, o.invariant)("object" == typeof b && null != b, "invalid typeFields data");
-            var v = (0, o.GetOption)(r, "languageDisplay", "string", ["dialect", "standard"], "dialect");
+            var v = _[d];
+            (0, o.invariant)("object" == typeof v && null != v, "invalid typeFields data");
+            var b = (0, o.GetOption)(r, "languageDisplay", "string", ["dialect", "standard"], "dialect");
             if ("language" === d) {
-              f(this, "languageDisplay", v);
-              var g = _[d][v];
+              f(this, "languageDisplay", b);
+              var g = _[d][b];
               (0, o.invariant)("object" == typeof g && null != g, "invalid language typeFields data")
             }
-            var h = "language" === d ? _[d][v][u] : _[d][u];
+            var h = "language" === d ? _[d][b][u] : _[d][u];
             (0, o.invariant)("object" == typeof h && null != h, "invalid styleFields data"), f(this, "fields", h)
           }
           return e.supportedLocalesOf = function(t, r) {
@@ -211,11 +211,11 @@ _global.SENTRY_RELEASE = {
         __classPrivateFieldGet: () => C,
         __classPrivateFieldIn: () => F,
         __classPrivateFieldSet: () => L,
-        __createBinding: () => b,
+        __createBinding: () => v,
         __decorate: () => l,
         __disposeResources: () => M,
         __esDecorate: () => s,
-        __exportStar: () => v,
+        __exportStar: () => b,
         __extends: () => o,
         __generator: () => _,
         __importDefault: () => x,
@@ -300,15 +300,15 @@ _global.SENTRY_RELEASE = {
             if (d) throw new TypeError("Cannot add initializers after decoration has completed");
             a.push(i(e || null))
           };
-          var b = (0, r[p])("accessor" === c ? {
+          var v = (0, r[p])("accessor" === c ? {
             get: f.get,
             set: f.set
           } : f[s], y);
           if ("accessor" === c) {
-            if (void 0 === b) continue;
-            if (null === b || "object" != typeof b) throw new TypeError("Object expected");
-            (l = i(b.get)) && (f.get = l), (l = i(b.set)) && (f.set = l), (l = i(b.init)) && o.unshift(l)
-          } else(l = i(b)) && ("field" === c ? o.unshift(l) : f[s] = l)
+            if (void 0 === v) continue;
+            if (null === v || "object" != typeof v) throw new TypeError("Object expected");
+            (l = i(v.get)) && (f.get = l), (l = i(v.set)) && (f.set = l), (l = i(v.init)) && o.unshift(l)
+          } else(l = i(v)) && ("field" === c ? o.unshift(l) : f[s] = l)
         }
         u && Object.defineProperty(u, n.name, f), d = !0
       }
@@ -433,7 +433,7 @@ _global.SENTRY_RELEASE = {
           }
         }
       }
-      var b = Object.create ? function(e, t, r, n) {
+      var v = Object.create ? function(e, t, r, n) {
         void 0 === n && (n = r);
         var o = Object.getOwnPropertyDescriptor(t, r);
         o && !("get" in o ? !t.__esModule : o.writable || o.configurable) || (o = {
@@ -446,8 +446,8 @@ _global.SENTRY_RELEASE = {
         void 0 === n && (n = r), e[n] = t[r]
       };
 
-      function v(e, t) {
-        for (var r in e) "default" === r || Object.prototype.hasOwnProperty.call(t, r) || b(t, e, r)
+      function b(e, t) {
+        for (var r in e) "default" === r || Object.prototype.hasOwnProperty.call(t, r) || v(t, e, r)
       }
 
       function g(e) {
@@ -620,7 +620,7 @@ _global.SENTRY_RELEASE = {
         if (e && e.__esModule) return e;
         var t = {};
         if (null != e)
-          for (var r = T(e), n = 0; n < r.length; n++) "default" !== r[n] && b(t, e, r[n]);
+          for (var r = T(e), n = 0; n < r.length; n++) "default" !== r[n] && v(t, e, r[n]);
         return I(t, e), t
       }
 
@@ -722,8 +722,8 @@ _global.SENTRY_RELEASE = {
         __metadata: p,
         __awaiter: y,
         __generator: _,
-        __createBinding: b,
-        __exportStar: v,
+        __createBinding: v,
+        __exportStar: b,
         __values: g,
         __read: h,
         __spread: w,

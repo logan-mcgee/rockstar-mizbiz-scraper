@@ -106,14 +106,14 @@ _global.SENTRY_RELEASE = {
       }));
       var v = n(9623),
         m = n(92440),
-        b = n(37242),
-        p = n(48967),
+        p = n(37242),
+        b = n(48967),
         k = n(20451),
         g = n(29982);
       const f = "rockstargames-sites-gta-gen9e1700f22ef2633cdb13fe46819b9250f",
         h = {
-          BuyNow: b.A,
-          TinaWrapper: p.A
+          BuyNow: p.A,
+          TinaWrapper: b.A
         },
         y = () => {
           const {
@@ -284,16 +284,16 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: n
-          } = (0, l.useGtmTrack)(), t = (0, s.hY)(), [o, c] = (0, i.useState)(!1), [d, _] = (0, i.useState)(null), [m, b] = (0, i.useState)(null), [p] = (0, v.useSearchParams)();
+          } = (0, l.useGtmTrack)(), t = (0, s.hY)(), [o, c] = (0, i.useState)(!1), [d, _] = (0, i.useState)(null), [m, p] = (0, i.useState)(null), [b] = (0, v.useSearchParams)();
           if ((0, i.useEffect)((() => {
               I().cloneDeepWith(t, ((e, n, i) => {
                 a === e && _(i?.children ?? null)
               }))
-            }), [a, t, p.get("section")]), (0, i.useEffect)((() => {
-              b(null), I().cloneDeepWith(d, ((e, a, n) => {
-                "id_hash" === a && p.get("section") === e && b(n)
+            }), [a, t, b.get("section")]), (0, i.useEffect)((() => {
+              p(null), I().cloneDeepWith(d, ((e, a, n) => {
+                "id_hash" === a && b.get("section") === e && p(n)
               }))
-            }), [d, p.get("section")]), !d) return null;
+            }), [d, b.get("section")]), !d) return null;
           const k = () => {
             c(!1), n({
               event: "nav_click",

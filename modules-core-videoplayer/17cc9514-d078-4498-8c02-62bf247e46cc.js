@@ -26,18 +26,18 @@ _global.SENTRY_RELEASE = {
       let r = "undefined" != typeof window ? t.useLayoutEffect : t.useEffect,
         s = e => e && !Array.isArray(e) && "object" == typeof e,
         l = [],
-        f = {},
-        c = a();
+        c = {},
+        f = a();
       const i = function(e) {
         let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : l,
-          d = f;
+          d = c;
         s(e) ? (d = e, e = null, n = "dependencies" in d ? d.dependencies : l) : s(n) && (d = n, n = "dependencies" in d ? d.dependencies : l);
         let {
           scope: o,
           revertOnUpdate: a
         } = d, [i, u] = (0, t.useState)(!1);
         e && "function" != typeof e && console.warn("First parameter must be a function or config object");
-        const b = c.context((() => {}), o),
+        const b = f.context((() => {}), o),
           y = () => b.revert(),
           p = n && n.length && !a;
         return r((() => {
@@ -48,7 +48,7 @@ _global.SENTRY_RELEASE = {
         }
       };
       i.register = e => {
-        c = e
+        f = e
       }, i.headless = !0
     }
   }

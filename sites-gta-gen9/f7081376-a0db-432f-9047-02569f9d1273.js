@@ -176,15 +176,15 @@ _global.SENTRY_RELEASE = {
       "use strict";
       t.r(o), t.d(o, {
         FormattedMessage: () => n.A,
-        POSIXLocales: () => c.FN,
+        POSIXLocales: () => d.FN,
         createDevLocaleHook: () => l.A,
         createIntl: () => s.E,
         defineMessages: () => r.YK,
-        englishLocale: () => c.Vm,
-        getCookieValueByName: () => d.h,
+        englishLocale: () => d.Vm,
+        getCookieValueByName: () => c.h,
         getLocale: () => u.A,
-        localeCookieHandler: () => d.A,
-        locales: () => c.Ay,
+        localeCookieHandler: () => c.A,
+        locales: () => d.Ay,
         onLanguageChange: () => b.w,
         splitLocale: () => p.A,
         useIntl: () => a.A,
@@ -197,19 +197,19 @@ _global.SENTRY_RELEASE = {
         i = t(95957),
         l = t(53287),
         u = t(38636),
-        d = t(61330),
-        c = t(61633),
+        c = t(61330),
+        d = t(61633),
         p = t(55953),
-        m = t(80441),
-        f = {};
-      for (const e in m)["default", "onLanguageChange", "FormattedMessage", "POSIXLocales", "createDevLocaleHook", "createIntl", "defineMessages", "englishLocale", "getCookieValueByName", "getLocale", "localeCookieHandler", "locales", "splitLocale", "useIntl", "withIntl"].indexOf(e) < 0 && (f[e] = () => m[e]);
-      t.d(o, f);
+        f = t(80441),
+        m = {};
+      for (const e in f)["default", "onLanguageChange", "FormattedMessage", "POSIXLocales", "createDevLocaleHook", "createIntl", "defineMessages", "englishLocale", "getCookieValueByName", "getLocale", "localeCookieHandler", "locales", "splitLocale", "useIntl", "withIntl"].indexOf(e) < 0 && (m[e] = () => f[e]);
+      t.d(o, m);
       var b = t(81595)
     },
     95957: (e, o, t) => {
       "use strict";
       t.d(o, {
-        QY: () => c
+        QY: () => d
       });
       var n = t(62229),
         s = t(40010),
@@ -225,10 +225,10 @@ _global.SENTRY_RELEASE = {
       function u(e, o) {
         return e[o] ?? {}
       }
-      var d = t(91029);
+      var c = t(91029);
 
-      function c(e, o, t, a) {
-        return c => {
+      function d(e, o, t, a) {
+        return d => {
           const p = (0, n.useMemo)((() => {
             if (o) return function(e, o) {
               return function(e, o) {
@@ -245,14 +245,14 @@ _global.SENTRY_RELEASE = {
               }(e, o)
             }(o, t)
           }), [t]);
-          return (0, d.jsx)(s.A, {
+          return (0, c.jsx)(s.A, {
             locale: p?.locale || i(),
             messages: {
               ...p?.messages
             },
             onError: a,
-            children: p && (0, d.jsx)(e, {
-              ...c
+            children: p && (0, c.jsx)(e, {
+              ...d
             })
           }, "intl-provider")
         }
@@ -298,9 +298,9 @@ _global.SENTRY_RELEASE = {
         })(e), i = r.Vm;
         let l = i;
         const u = `rockstarweb_lang.${o.cookieIdentifier}`,
-          d = (0, s.h)(u);
-        l = o.currentSite?.site === n.C.www ? r.Ay.find((e => e.subdomaincom === a)) || r.Ay.find((e => e.subdomaincom === t)) || i : r.Ay.find((e => e.iso === d)) || i;
-        const [c, p] = (0, s.A)(u, l.iso);
+          c = (0, s.h)(u);
+        l = o.currentSite?.site === n.C.www ? r.Ay.find((e => e.subdomaincom === a)) || r.Ay.find((e => e.subdomaincom === t)) || i : r.Ay.find((e => e.iso === c)) || i;
+        const [d, p] = (0, s.A)(u, l.iso);
         return [l, p]
       }
     },
@@ -437,20 +437,20 @@ _global.SENTRY_RELEASE = {
         const i = (0, n.A)(),
           [l, u] = (0, r.A)(),
           {
-            subdomaincom: d,
-            iso: c
+            subdomaincom: c,
+            iso: d
           } = o,
           p = (e => {
             let o = location.pathname.replace(/^\/|\/$/g, "");
             const t = o.split("/");
             return s.Ay.map((e => e.subdomaincom)).includes(t[0]) && (o = t.slice(1).join("/")), i.currentSite?.site === n.C.www ? "en" === e ? `${window.location.origin}/${o}${location.search}` : `${window.location.origin}/${e}/${o}${location.search}` : `${window.location.origin}/${o}${location.search}`
-          })(d);
+          })(c);
         t?.({
           event: "cta_other",
           link_url: p,
-          text: d,
+          text: c,
           element_placement: a
-        }), u(c), window.location.href = p
+        }), u(d), window.location.href = p
       }
     },
     55953: (e, o, t) => {

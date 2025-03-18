@@ -32,15 +32,15 @@ _global.SENTRY_RELEASE = {
       function l(e, a, t) {
         var o, r = {},
           l = null,
-          i = null;
-        for (o in void 0 !== t && (l = "" + t), void 0 !== a.key && (l = "" + a.key), void 0 !== a.ref && (i = a.ref), a) s.call(a, o) && !f.hasOwnProperty(o) && (r[o] = a[o]);
+          c = null;
+        for (o in void 0 !== t && (l = "" + t), void 0 !== a.key && (l = "" + a.key), void 0 !== a.ref && (c = a.ref), a) s.call(a, o) && !f.hasOwnProperty(o) && (r[o] = a[o]);
         if (e && e.defaultProps)
           for (o in a = e.defaultProps) void 0 === r[o] && (r[o] = a[o]);
         return {
           $$typeof: n,
           type: e,
           key: l,
-          ref: i,
+          ref: c,
           props: r,
           _owner: d.current
         }

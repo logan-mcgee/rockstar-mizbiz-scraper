@@ -181,12 +181,12 @@ _global.SENTRY_RELEASE = {
         createIntl: () => n.E,
         defineMessages: () => r.YK,
         englishLocale: () => d.Vm,
-        getCookieValueByName: () => c.h,
-        getLocale: () => u.A,
-        localeCookieHandler: () => c.A,
+        getCookieValueByName: () => u.h,
+        getLocale: () => c.A,
+        localeCookieHandler: () => u.A,
         locales: () => d.Ay,
         onLanguageChange: () => b.w,
-        splitLocale: () => m.A,
+        splitLocale: () => f.A,
         useIntl: () => a.A,
         withIntl: () => i.QY
       });
@@ -196,14 +196,14 @@ _global.SENTRY_RELEASE = {
         a = t(77467),
         i = t(95957),
         l = t(53287),
-        u = t(38636),
-        c = t(61330),
+        c = t(38636),
+        u = t(61330),
         d = t(61633),
-        m = t(55953),
-        p = t(80441),
-        f = {};
-      for (const e in p)["default", "onLanguageChange", "FormattedMessage", "POSIXLocales", "createDevLocaleHook", "createIntl", "defineMessages", "englishLocale", "getCookieValueByName", "getLocale", "localeCookieHandler", "locales", "splitLocale", "useIntl", "withIntl"].indexOf(e) < 0 && (f[e] = () => p[e]);
-      t.d(o, f);
+        f = t(55953),
+        m = t(80441),
+        p = {};
+      for (const e in m)["default", "onLanguageChange", "FormattedMessage", "POSIXLocales", "createDevLocaleHook", "createIntl", "defineMessages", "englishLocale", "getCookieValueByName", "getLocale", "localeCookieHandler", "locales", "splitLocale", "useIntl", "withIntl"].indexOf(e) < 0 && (p[e] = () => m[e]);
+      t.d(o, p);
       var b = t(81595)
     },
     95957: (e, o, t) => {
@@ -222,18 +222,18 @@ _global.SENTRY_RELEASE = {
         return (0, a.A)(o[1] ? o[0] : e, ["relativetimeformat", "pluralrules", "listformat"])
       }
 
-      function u(e, o) {
+      function c(e, o) {
         return e[o] ?? {}
       }
-      var c = t(91029);
+      var u = t(91029);
 
       function d(e, o, t, a) {
         return d => {
-          const m = (0, s.useMemo)((() => {
+          const f = (0, s.useMemo)((() => {
             if (o) return function(e, o) {
               return function(e, o) {
                 const t = o ?? (0, r.A)()[0].iso ?? i(),
-                  [, s] = [l(t), u(e, t)];
+                  [, s] = [l(t), c(e, t)];
                 var n;
                 return {
                   rsLocale: t,
@@ -245,13 +245,13 @@ _global.SENTRY_RELEASE = {
               }(e, o)
             }(o, t)
           }), [t]);
-          return (0, c.jsx)(n.A, {
-            locale: m?.locale || i(),
+          return (0, u.jsx)(n.A, {
+            locale: f?.locale || i(),
             messages: {
-              ...m?.messages
+              ...f?.messages
             },
             onError: a,
-            children: m && (0, c.jsx)(e, {
+            children: f && (0, u.jsx)(e, {
               ...d
             })
           }, "intl-provider")
@@ -297,11 +297,11 @@ _global.SENTRY_RELEASE = {
           return o?.split("=")[1]
         })(e), i = r.Vm;
         let l = i;
-        const u = `rockstarweb_lang.${o.cookieIdentifier}`,
-          c = (0, n.h)(u);
-        l = o.currentSite?.site === s.C.www ? r.Ay.find((e => e.subdomaincom === a)) || r.Ay.find((e => e.subdomaincom === t)) || i : r.Ay.find((e => e.iso === c)) || i;
-        const [d, m] = (0, n.A)(u, l.iso);
-        return [l, m]
+        const c = `rockstarweb_lang.${o.cookieIdentifier}`,
+          u = (0, n.h)(c);
+        l = o.currentSite?.site === s.C.www ? r.Ay.find((e => e.subdomaincom === a)) || r.Ay.find((e => e.subdomaincom === t)) || i : r.Ay.find((e => e.iso === u)) || i;
+        const [d, f] = (0, n.A)(c, l.iso);
+        return [l, f]
       }
     },
     61330: (e, o, t) => {
@@ -435,22 +435,22 @@ _global.SENTRY_RELEASE = {
           parent: a = ""
         } = e;
         const i = (0, s.A)(),
-          [l, u] = (0, r.A)(),
+          [l, c] = (0, r.A)(),
           {
-            subdomaincom: c,
+            subdomaincom: u,
             iso: d
           } = o,
-          m = (e => {
+          f = (e => {
             let o = location.pathname.replace(/^\/|\/$/g, "");
             const t = o.split("/");
             return n.Ay.map((e => e.subdomaincom)).includes(t[0]) && (o = t.slice(1).join("/")), i.currentSite?.site === s.C.www ? "en" === e ? `${window.location.origin}/${o}${location.search}` : `${window.location.origin}/${e}/${o}${location.search}` : `${window.location.origin}/${o}${location.search}`
-          })(c);
+          })(u);
         t?.({
           event: "cta_other",
-          link_url: m,
-          text: c,
+          link_url: f,
+          text: u,
           element_placement: a
-        }), u(d), window.location.href = m
+        }), c(d), window.location.href = f
       }
     },
     55953: (e, o, t) => {

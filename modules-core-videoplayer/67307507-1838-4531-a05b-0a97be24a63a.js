@@ -26,12 +26,12 @@ _global.SENTRY_RELEASE = {
           fn: function(e, a) {
             var l = String(e),
               o = l.split(/[ce]/),
-              d = o[1] || 0,
-              n = String(d ? Number(o[0]) * Math.pow(10, d) : l).split("."),
-              t = n[0],
-              r = !n[1],
+              n = o[1] || 0,
+              d = String(n ? Number(o[0]) * Math.pow(10, n) : l).split("."),
+              t = d[0],
+              r = !d[1],
               s = t.slice(-6);
-            return a ? 11 == e || 8 == e || 80 == e || 800 == e ? "many" : "other" : 1 == e && r ? "one" : 0 == d && 0 != t && 0 == s && r || d < 0 || d > 5 ? "many" : "other"
+            return a ? 11 == e || 8 == e || 80 == e || 800 == e ? "many" : "other" : 1 == e && r ? "one" : 0 == n && 0 != t && 0 == s && r || n < 0 || n > 5 ? "many" : "other"
           }
         },
         locale: "it"

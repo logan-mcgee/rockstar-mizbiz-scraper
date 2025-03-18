@@ -24,8 +24,8 @@ _global.SENTRY_RELEASE = {
       var m = t(62229),
         s = t(81788),
         r = t(95966),
-        o = t(87851),
-        c = t(2918),
+        c = t(87851),
+        o = t(2918),
         d = t(12363),
         i = t(45505);
       const g = {
@@ -56,7 +56,7 @@ _global.SENTRY_RELEASE = {
         } = e;
         const [l, h] = (0, m.useState)(!1), {
           inView: x
-        } = (0, o.useInView)({
+        } = (0, c.useInView)({
           threshold: .6
         }), [v, z] = (0, m.useState)({
           ratingDescriptors: a,
@@ -65,7 +65,7 @@ _global.SENTRY_RELEASE = {
           ratingUrl: f
         }), {
           track: N
-        } = (0, c.useGtmTrack)(), y = (0, s.useIntl)(), {
+        } = (0, o.useGtmTrack)(), y = (0, s.useIntl)(), {
           data: S
         } = (0, r.useQuery)(n.GameData, {
           variables: {
@@ -114,7 +114,7 @@ _global.SENTRY_RELEASE = {
     47313: (e, a, t) => {
       "use strict";
       t.d(a, {
-        A: () => o
+        A: () => c
       });
       var m = t(12363);
       const s = {
@@ -122,20 +122,20 @@ _global.SENTRY_RELEASE = {
         secondary: "rockstargames-sites-rockstargamesa3e6439dcaa4870840298d683db4831c"
       };
       var r = t(91029);
-      const o = e => {
+      const c = e => {
         let {
           className: a = "",
           children: t,
-          context: o = "",
-          to: c,
+          context: c = "",
+          to: o,
           onClick: d,
           target: i = "_self",
           ...g
         } = e;
-        const p = [s.button, s[o], a].join(" ");
-        return c ? (0, r.jsx)(m.A, {
+        const p = [s.button, s[c], a].join(" ");
+        return o ? (0, r.jsx)(m.A, {
           ...g,
-          to: c,
+          to: o,
           className: p,
           onClick: d,
           target: i,
@@ -157,14 +157,14 @@ _global.SENTRY_RELEASE = {
       var m = t(62229),
         s = t(95945),
         r = t.n(s);
-      const o = {
+      const c = {
         dropdownWrapper: "rockstargames-sites-rockstargamesbbf48ac7e790ff47ad1d5ee6fb7da4d9",
         items: "rockstargames-sites-rockstargamesa9afd60434d032bdba4ce040dbeb13b7",
         open: "rockstargames-sites-rockstargamesdf17f0cb21e0947d4f391f915bd797d2",
         opener: "rockstargames-sites-rockstargamescb53c003fd165ccb31dee0f32edca90f",
         secondary: "rockstargames-sites-rockstargamesfe6babf9fc35bb59a2b5225e4d6e7a50"
       };
-      var c = t(91029);
+      var o = t(91029);
       const d = e => {
         let {
           children: a,
@@ -173,16 +173,16 @@ _global.SENTRY_RELEASE = {
         } = e;
         const [d, i] = (0, m.useState)(!1);
         let g = null;
-        return g = r(), (0, c.jsx)(g, {
+        return g = r(), (0, o.jsx)(g, {
           disabled: !d,
-          children: (0, c.jsxs)("div", {
-            className: [o.dropdownWrapper, d ? o.open : "", void 0 !== t ? t : ""].join(" "),
-            children: [(0, c.jsx)("button", {
-              className: o.opener,
+          children: (0, o.jsxs)("div", {
+            className: [c.dropdownWrapper, d ? c.open : "", void 0 !== t ? t : ""].join(" "),
+            children: [(0, o.jsx)("button", {
+              className: c.opener,
               onClick: () => i(!d),
               children: s
-            }), d && (0, c.jsx)("div", {
-              className: o.items,
+            }), d && (0, o.jsx)("div", {
+              className: c.items,
               onClick: () => i(!1),
               children: a
             })]
@@ -193,7 +193,7 @@ _global.SENTRY_RELEASE = {
     45505: (e, a, t) => {
       "use strict";
       t.d(a, {
-        A: () => o
+        A: () => c
       });
       var m = t(62229);
       var s = t(91029);
@@ -222,7 +222,7 @@ _global.SENTRY_RELEASE = {
           }) : this.props.children
         }
       }
-      const o = function(e) {
+      const c = function(e) {
         let a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
           t = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
         return function(m) {
@@ -239,7 +239,7 @@ _global.SENTRY_RELEASE = {
     57087: (e, a, t) => {
       "use strict";
       t.d(a, {
-        A: () => c
+        A: () => o
       });
       var m = t(62229),
         s = t(95966);
@@ -248,12 +248,12 @@ _global.SENTRY_RELEASE = {
         wide: "rockstargames-sites-rockstargamesdc444c089b89129c0a39bc61845d531f",
         imgContentful: "rockstargames-sites-rockstargamesb9f3c994ce8a97ac6530cf0a85e5abe0"
       };
-      var o = t(91029);
+      var c = t(91029);
       (0, s.importAll)(t(86751));
-      const c = e => {
+      const o = e => {
         let {
           isWideCard: a = !1,
-          size: c = 640,
+          size: o = 640,
           title: d,
           titleSlug: i
         } = e;
@@ -261,10 +261,10 @@ _global.SENTRY_RELEASE = {
           isMobile: g
         } = (0, s.useWindowResize)(), p = (0, m.useMemo)((() => {
           let e = "";
-          return a && (e = g ? t(75877)(`./${i}/mobile.png`) : t(55889)(`./${i}/desktop.png`)), e || (e = t(39294)(`./${i}.jpg`), e += `?im=Resize=${c}`), e
+          return a && (e = g ? t(75877)(`./${i}/mobile.png`) : t(55889)(`./${i}/desktop.png`)), e || (e = t(39294)(`./${i}.jpg`), e += `?im=Resize=${o}`), e
         }), [g, i]), [n] = (0, s.usePreloadImg)(p);
         let f = p;
-        return (0, o.jsx)("div", {
+        return (0, c.jsx)("div", {
           role: "img",
           "aria-label": d,
           style: {
@@ -278,7 +278,7 @@ _global.SENTRY_RELEASE = {
       "use strict";
       t.d(a, {
         s: () => m.A,
-        N: () => c
+        N: () => o
       });
       var m = t(57087),
         s = t(12363);
@@ -286,28 +286,28 @@ _global.SENTRY_RELEASE = {
         fobLink: "rockstargames-sites-rockstargamesd30ff40ba02b7ed14124da3ca9cd4f2b",
         wide: "rockstargames-sites-rockstargamesc9686ec502f78b05e47568667e90bd17"
       };
-      var o = t(91029);
-      const c = e => {
+      var c = t(91029);
+      const o = e => {
         let {
           game: a,
           to: t
         } = e;
         const {
-          titleSlug: c,
+          titleSlug: o,
           urlOfficial: d = ""
-        } = a, i = ["VI"].includes(c.toUpperCase());
-        return (0, o.jsx)(s.A, {
+        } = a, i = ["VI"].includes(o.toUpperCase());
+        return (0, c.jsx)(s.A, {
           "data-gtm-category": "Games",
           "data-gtm-action": "Game Click-through",
-          "data-gtm-label": c,
-          "data-testid": `${c}-gamecard`,
+          "data-gtm-label": o,
+          "data-testid": `${o}-gamecard`,
           to: t ?? d,
           target: "_self",
           className: [r.fobLink, i ? r.wide : ""].join(" "),
           reloadDocument: i,
-          children: (0, o.jsx)(m.A, {
+          children: (0, c.jsx)(m.A, {
             title: a.title,
-            titleSlug: c,
+            titleSlug: o,
             isWideCard: i,
             size: i ? 1740 : 480
           })
@@ -322,8 +322,8 @@ _global.SENTRY_RELEASE = {
       var m = t(62229),
         s = t(9623),
         r = t(95966),
-        o = t(2918),
-        c = t(12363),
+        c = t(2918),
+        o = t(12363),
         d = t(4403);
       const i = {
         newswireBlock: "rockstargames-sites-rockstargamesb394b56c31488c36155ca82090c66e6f",
@@ -346,7 +346,7 @@ _global.SENTRY_RELEASE = {
         } = e;
         const {
           track: k
-        } = (0, o.useGtmTrack)(), [_] = (0, s.useSearchParams)(), j = p.preview_images_parsed.newswire_block, u = {
+        } = (0, c.useGtmTrack)(), [_] = (0, s.useSearchParams)(), j = p.preview_images_parsed.newswire_block, u = {
           default: 0 !== t || n ? j.square || j.d16x9 || j._fallback : j.d16x9 || j.square || j._fallback,
           mobile: j.square || j._fallback
         }, [b, l] = (0, r.usePreloadImg)(u.default), h = {
@@ -366,7 +366,7 @@ _global.SENTRY_RELEASE = {
             element_placement: a
           })
         }), [p]);
-        return (0, g.jsx)(c.A, {
+        return (0, g.jsx)(o.A, {
           to: p.url,
           className: [i.newswireBlock, n ? i.newswireBlockNoSpecialOrder : "", null !== b ? i.startAnimation : ""].join(" "),
           focused: f,
@@ -407,24 +407,24 @@ _global.SENTRY_RELEASE = {
     4403: (e, a, t) => {
       "use strict";
       t.d(a, {
-        A: () => o
+        A: () => c
       });
       var m = t(12363);
       const s = {
         tag: "rockstargames-sites-rockstargamesb660bb706132d84852c02df01cc6ed5a"
       };
       var r = t(91029);
-      const o = e => {
+      const c = e => {
         let {
           className: a,
           href: t,
-          title: o,
-          style: c
+          title: c,
+          style: o
         } = e;
         const d = (0, r.jsxs)("div", {
-          style: c,
+          style: o,
           className: [s.tag, a].join(" "),
-          children: [(0, r.jsx)("i", {}), o]
+          children: [(0, r.jsx)("i", {}), c]
         });
         return void 0 !== t ? (0, r.jsx)(m.A, {
           to: t,
@@ -435,7 +435,7 @@ _global.SENTRY_RELEASE = {
     37525: (e, a, t) => {
       "use strict";
       t.d(a, {
-        s: () => c,
+        s: () => o,
         N: () => d
       });
       var m = t(95966),
@@ -449,16 +449,16 @@ _global.SENTRY_RELEASE = {
         screencapLoaded: "rockstargames-sites-rockstargamesb8d4ef3e1a73c58f4002eab351d4eec2",
         gameTitle: "rockstargames-sites-rockstargamesa1fe577b937c0e16250bf38e9d775061"
       };
-      var o = t(91029);
-      const c = e => {
+      var c = t(91029);
+      const o = e => {
           let {
             video: a,
             size: t = 640
           } = e;
           const s = () => a.screencap.includes("akamai") ? `${a.screencap}?im=Resize=${t}` : a.screencap,
-            [c] = (0, m.usePreloadImg)(s());
-          return (0, o.jsx)("div", {
-            className: [r.screencap, c ? r.screencapLoaded : ""].join(" "),
+            [o] = (0, m.usePreloadImg)(s());
+          return (0, c.jsx)("div", {
+            className: [r.screencap, o ? r.screencapLoaded : ""].join(" "),
             style: {
               background: `url(${s()}) center/cover`
             }
@@ -479,19 +479,19 @@ _global.SENTRY_RELEASE = {
               "data-gtm-action": "Video Click-through",
               "data-gtm-label": g
             },
-            n = (0, o.jsxs)("div", {
+            n = (0, c.jsxs)("div", {
               className: r.card,
-              children: [(0, o.jsx)(c, {
+              children: [(0, c.jsx)(o, {
                 video: m,
                 size: d
-              }), (0, o.jsxs)("div", {
+              }), (0, c.jsxs)("div", {
                 className: r.info,
-                children: [a ? (0, o.jsx)("div", {
+                children: [a ? (0, c.jsx)("div", {
                   className: r.gameTitle,
                   dangerouslySetInnerHTML: {
                     __html: m.game.title
                   }
-                }) : "", (0, o.jsx)("h5", {
+                }) : "", (0, c.jsx)("h5", {
                   className: r.title,
                   dangerouslySetInnerHTML: {
                     __html: m.title
@@ -499,12 +499,12 @@ _global.SENTRY_RELEASE = {
                 })]
               })]
             });
-          return t ? (0, o.jsx)("a", {
+          return t ? (0, c.jsx)("a", {
             href: g,
             target: "_blank",
             ...p,
             children: n
-          }) : (0, o.jsx)(s.A, {
+          }) : (0, c.jsx)(s.A, {
             to: g,
             ...p,
             children: n
@@ -519,8 +519,8 @@ _global.SENTRY_RELEASE = {
       var m = t(62229),
         s = t(9623),
         r = t(12363),
-        o = t(47313),
-        c = t(71896),
+        c = t(47313),
+        o = t(71896),
         d = t(53459),
         i = t(81978),
         g = t(37525),
@@ -533,14 +533,14 @@ _global.SENTRY_RELEASE = {
           id: a,
           t: s
         } = e;
-        const [r, o] = (0, m.useState)([]);
+        const [r, c] = (0, m.useState)([]);
         return (0, m.useEffect)((() => {
           const e = [];
           for (let m = 1; m <= 4; m++) try {
             const s = t(72992)(`./${a}-${m}.jpg`);
             e.push(s)
           } catch (e) {}
-          o(e)
+          c(e)
         }), []), r.length ? (0, f.jsxs)("section", {
           className: "rockstargames-sites-rockstargamesa781ca361caa47e247f5734a9c28e212",
           children: [(0, f.jsx)("h4", {
@@ -560,7 +560,7 @@ _global.SENTRY_RELEASE = {
             purchases: a,
             t
           } = e;
-          return a?.length > 1 ? (0, f.jsx)(c.A, {
+          return a?.length > 1 ? (0, f.jsx)(o.A, {
             title: t("Buy Now"),
             children: a.map((e => {
               if (e?.platform?.name) return (0, f.jsx)(r.A, {
@@ -654,7 +654,7 @@ _global.SENTRY_RELEASE = {
                 noSpecialOrder: !0,
                 post: e
               }, e.id)))
-            }), (0, f.jsx)(o.A, {
+            }), (0, f.jsx)(c.A, {
               "data-gtm-category": "Games",
               "data-gtm-action": "Latest News",
               "data-gtm-label": `${a.title} - More Click`,
@@ -679,7 +679,7 @@ _global.SENTRY_RELEASE = {
                 video: e,
                 gameTitleNecessary: !1
               }, e.id)))
-            }), (0, f.jsx)(o.A, {
+            }), (0, f.jsx)(c.A, {
               "data-gtm-category": "Games",
               "data-gtm-action": "Latest Videos",
               "data-gtm-label": `${a.title} - View All Click`,
@@ -729,14 +729,14 @@ _global.SENTRY_RELEASE = {
           const {
             setBreadcrumb: t,
             setTitle: r
-          } = (0, _.b)(), o = (0, s.useParams)(), {
-            data: c
+          } = (0, _.b)(), c = (0, s.useParams)(), {
+            data: o
           } = (0, n.useQuery)(j.GameInfo, {
             autoSetLoading: !0,
             variables: {
-              titleSlug: o.gameTitlelug
+              titleSlug: c.gameTitlelug
             }
-          }), d = c?.game ?? null;
+          }), d = o?.game ?? null;
           return (0, m.useEffect)((() => (d && r(d.title), t([{
             href: "/games",
             title: a("Games")
@@ -1085,19 +1085,19 @@ _global.SENTRY_RELEASE = {
         };
         e.hasOwnProperty("loc") && (t.loc = e.loc);
         var r = m[a] || new Set,
-          o = new Set,
-          c = new Set;
+          c = new Set,
+          o = new Set;
         for (r.forEach((function(e) {
-            c.add(e)
-          })); c.size > 0;) {
-          var d = c;
-          c = new Set, d.forEach((function(e) {
-            o.has(e) || (o.add(e), (m[e] || new Set).forEach((function(e) {
-              c.add(e)
+            o.add(e)
+          })); o.size > 0;) {
+          var d = o;
+          o = new Set, d.forEach((function(e) {
+            c.has(e) || (c.add(e), (m[e] || new Set).forEach((function(e) {
+              o.add(e)
             })))
           }))
         }
-        return o.forEach((function(a) {
+        return c.forEach((function(a) {
           var m = s(e, a);
           m && t.definitions.push(m)
         })), t
@@ -1741,19 +1741,19 @@ _global.SENTRY_RELEASE = {
         };
         e.hasOwnProperty("loc") && (t.loc = e.loc);
         var r = m[a] || new Set,
-          o = new Set,
-          c = new Set;
+          c = new Set,
+          o = new Set;
         for (r.forEach((function(e) {
-            c.add(e)
-          })); c.size > 0;) {
-          var d = c;
-          c = new Set, d.forEach((function(e) {
-            o.has(e) || (o.add(e), (m[e] || new Set).forEach((function(e) {
-              c.add(e)
+            o.add(e)
+          })); o.size > 0;) {
+          var d = o;
+          o = new Set, d.forEach((function(e) {
+            c.has(e) || (c.add(e), (m[e] || new Set).forEach((function(e) {
+              o.add(e)
             })))
           }))
         }
-        return o.forEach((function(a) {
+        return c.forEach((function(a) {
           var m = s(e, a);
           m && t.definitions.push(m)
         })), t

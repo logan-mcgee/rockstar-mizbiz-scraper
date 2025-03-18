@@ -18,7 +18,7 @@ _global.SENTRY_RELEASE = {
   [9379], {
     80964: (e, a, s) => {
       s.r(a), s.d(a, {
-        default: () => y
+        default: () => b
       });
       var t = s(62229),
         n = s(81788),
@@ -26,20 +26,20 @@ _global.SENTRY_RELEASE = {
         o = s(95966),
         l = s(9137),
         r = s(82943),
-        i = s.n(r),
-        c = s(9830),
+        c = s.n(r),
+        i = s(9830),
         f = s(21932),
         u = s(79345),
         g = s(52542),
-        b = s(91029);
-      const y = (0, n.withIntl)((() => {
+        y = s(91029);
+      const b = (0, n.withIntl)((() => {
         const e = (0, n.useIntl)(),
           a = (0, o.useLocale)(),
           [s, r] = ((0, o.useQueryParams)(), (0, t.useState)({})),
           {
             data: g,
-            loading: y
-          } = (0, o.useQuery)(i(), {
+            loading: b
+          } = (0, o.useQuery)(c(), {
             variables: s,
             skip: !Object.entries(s).length,
             autoSetLoading: !0
@@ -55,30 +55,30 @@ _global.SENTRY_RELEASE = {
         const {
           content: _
         } = g?.companyInfo ?? "", m = g?.meta ?? "";
-        return (0, b.jsx)(b.Fragment, {
-          children: !y && g ? (0, b.jsxs)("div", {
+        return (0, y.jsx)(y.Fragment, {
+          children: !b && g ? (0, y.jsxs)("div", {
             className: f.A.safetyPageContainerStyles,
             "data-context": "safetyPage",
-            children: [(0, b.jsxs)("div", {
+            children: [(0, y.jsxs)("div", {
               className: f.A.mainContent,
-              children: [(0, b.jsx)(c.A, {
+              children: [(0, y.jsx)(i.A, {
                 heading: m?.title,
                 description: m?.description,
                 lastUpdatedDate: e.formatMessage(d.A.resources_last_updated_date)
-              }), (0, b.jsx)("div", {
+              }), (0, y.jsx)("div", {
                 className: f.A.bodyContent,
-                children: (0, b.jsx)("span", {
+                children: (0, y.jsx)("span", {
                   dangerouslySetInnerHTML: {
                     __html: _
                   }
                 })
               })]
-            }), (0, b.jsx)(u.A, {
+            }), (0, y.jsx)(u.A, {
               page: "resources"
             })]
-          }) : (0, b.jsx)("div", {
+          }) : (0, y.jsx)("div", {
             className: f.A.loading,
-            children: (0, b.jsx)(l.A, {})
+            children: (0, y.jsx)(l.A, {})
           })
         })
       }), g)

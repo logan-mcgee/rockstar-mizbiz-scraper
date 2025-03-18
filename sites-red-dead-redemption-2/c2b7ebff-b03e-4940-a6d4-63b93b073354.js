@@ -56,10 +56,10 @@ _global.SENTRY_RELEASE = {
           d = (0, n.CoerceOptionsToObject)(r),
           y = s(e);
         y.initializedPluralRules = !0;
-        var b = (0, n.GetOption)(d, "localeMatcher", "string", ["best fit", "lookup"], "best fit");
-        p.localeMatcher = b;
-        var _ = (0, o.ResolveLocale)(i, f, p, l, c, u);
-        return y.locale = _.locale, y.type = (0, n.GetOption)(d, "type", "string", ["cardinal", "ordinal"], "cardinal"), (0, n.SetNumberFormatDigitOptions)(y, d, 0, 3, "standard"), e
+        var _ = (0, n.GetOption)(d, "localeMatcher", "string", ["best fit", "lookup"], "best fit");
+        p.localeMatcher = _;
+        var b = (0, o.ResolveLocale)(i, f, p, l, c, u);
+        return y.locale = b.locale, y.type = (0, n.GetOption)(d, "type", "string", ["cardinal", "ordinal"], "cardinal"), (0, n.SetNumberFormatDigitOptions)(y, d, 0, 3, "standard"), e
       };
       var n = r(19550),
         o = r(36832)
@@ -209,13 +209,13 @@ _global.SENTRY_RELEASE = {
         __classPrivateFieldGet: () => L,
         __classPrivateFieldIn: () => F,
         __classPrivateFieldSet: () => k,
-        __createBinding: () => _,
+        __createBinding: () => b,
         __decorate: () => l,
         __disposeResources: () => A,
         __esDecorate: () => u,
         __exportStar: () => v,
         __extends: () => o,
-        __generator: () => b,
+        __generator: () => _,
         __importDefault: () => x,
         __importStar: () => T,
         __makeTemplateObject: () => E,
@@ -292,21 +292,21 @@ _global.SENTRY_RELEASE = {
         }
         for (var l, c = n.kind, u = "getter" === c ? "get" : "setter" === c ? "set" : "value", s = !t && e ? n.static ? e : e.prototype : null, f = t || (s ? Object.getOwnPropertyDescriptor(s, n.name) : {}), p = !1, d = r.length - 1; d >= 0; d--) {
           var y = {};
-          for (var b in n) y[b] = "access" === b ? {} : n[b];
-          for (var b in n.access) y.access[b] = n.access[b];
+          for (var _ in n) y[_] = "access" === _ ? {} : n[_];
+          for (var _ in n.access) y.access[_] = n.access[_];
           y.addInitializer = function(e) {
             if (p) throw new TypeError("Cannot add initializers after decoration has completed");
             a.push(i(e || null))
           };
-          var _ = (0, r[d])("accessor" === c ? {
+          var b = (0, r[d])("accessor" === c ? {
             get: f.get,
             set: f.set
           } : f[u], y);
           if ("accessor" === c) {
-            if (void 0 === _) continue;
-            if (null === _ || "object" != typeof _) throw new TypeError("Object expected");
-            (l = i(_.get)) && (f.get = l), (l = i(_.set)) && (f.set = l), (l = i(_.init)) && o.unshift(l)
-          } else(l = i(_)) && ("field" === c ? o.unshift(l) : f[u] = l)
+            if (void 0 === b) continue;
+            if (null === b || "object" != typeof b) throw new TypeError("Object expected");
+            (l = i(b.get)) && (f.get = l), (l = i(b.set)) && (f.set = l), (l = i(b.init)) && o.unshift(l)
+          } else(l = i(b)) && ("field" === c ? o.unshift(l) : f[u] = l)
         }
         s && Object.defineProperty(s, n.name, f), p = !0
       }
@@ -359,7 +359,7 @@ _global.SENTRY_RELEASE = {
         }))
       }
 
-      function b(e, t) {
+      function _(e, t) {
         var r, n, o, a = {
             label: 0,
             sent: function() {
@@ -431,7 +431,7 @@ _global.SENTRY_RELEASE = {
           }
         }
       }
-      var _ = Object.create ? function(e, t, r, n) {
+      var b = Object.create ? function(e, t, r, n) {
         void 0 === n && (n = r);
         var o = Object.getOwnPropertyDescriptor(t, r);
         o && !("get" in o ? !t.__esModule : o.writable || o.configurable) || (o = {
@@ -445,7 +445,7 @@ _global.SENTRY_RELEASE = {
       };
 
       function v(e, t) {
-        for (var r in e) "default" === r || Object.prototype.hasOwnProperty.call(t, r) || _(t, e, r)
+        for (var r in e) "default" === r || Object.prototype.hasOwnProperty.call(t, r) || b(t, e, r)
       }
 
       function h(e) {
@@ -618,7 +618,7 @@ _global.SENTRY_RELEASE = {
         if (e && e.__esModule) return e;
         var t = {};
         if (null != e)
-          for (var r = R(e), n = 0; n < r.length; n++) "default" !== r[n] && _(t, e, r[n]);
+          for (var r = R(e), n = 0; n < r.length; n++) "default" !== r[n] && b(t, e, r[n]);
         return I(t, e), t
       }
 
@@ -719,8 +719,8 @@ _global.SENTRY_RELEASE = {
         __setFunctionName: p,
         __metadata: d,
         __awaiter: y,
-        __generator: b,
-        __createBinding: _,
+        __generator: _,
+        __createBinding: b,
         __exportStar: v,
         __values: h,
         __read: g,

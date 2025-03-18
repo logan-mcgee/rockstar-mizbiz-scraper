@@ -16,9 +16,9 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_gta_gen9 = self.webpackChunk_rockstargames_sites_gta_gen9 || []).push([
   [9157], {
-    19157: (o, t, _) => {
-      _.r(t), _.d(t, {
-        Lightbox_Close_Button_Label: () => e,
+    19157: (o, t, e) => {
+      e.r(t), e.d(t, {
+        Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => l,
         Lightbox_Dialog_Description: () => p,
         Lightbox_Dialog_Title: () => f,
@@ -28,18 +28,18 @@ _global.SENTRY_RELEASE = {
         Lightbox_Reset_Zoom_Button_Label: () => d,
         Lightbox_Reset_Zoom_Button_Tooltip: () => g,
         Lightbox_Zoom_In_Button_Label: () => i,
-        Lightbox_Zoom_In_Button_Tooltip: () => n,
-        Lightbox_Zoom_Out_Button_Label: () => a,
+        Lightbox_Zoom_In_Button_Tooltip: () => a,
+        Lightbox_Zoom_Out_Button_Label: () => n,
         Lightbox_Zoom_Out_Button__Tooltip: () => b,
         Lightbox_Zoom_Slider_Label: () => s,
         Lightbox_Zoom_Slider_Tooltip: () => u,
         default: () => x
       });
-      var e = "ライトボックスを閉じる",
+      var _ = "ライトボックスを閉じる",
         l = "{shortcut}を押す",
         i = "ズームイン",
-        n = "{shortcut}を押す",
-        a = "ズームアウト",
+        a = "{shortcut}を押す",
+        n = "ズームアウト",
         b = "{shortcut}を押す",
         d = "リセット",
         g = "{shortcut}を押す",
@@ -51,11 +51,11 @@ _global.SENTRY_RELEASE = {
         f = "ライトボックスのイメージ",
         p = "Altテキスト：{alt}",
         x = {
-          Lightbox_Close_Button_Label: e,
+          Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: l,
           Lightbox_Zoom_In_Button_Label: i,
-          Lightbox_Zoom_In_Button_Tooltip: n,
-          Lightbox_Zoom_Out_Button_Label: a,
+          Lightbox_Zoom_In_Button_Tooltip: a,
+          Lightbox_Zoom_Out_Button_Label: n,
           Lightbox_Zoom_Out_Button__Tooltip: b,
           Lightbox_Reset_Zoom_Button_Label: d,
           Lightbox_Reset_Zoom_Button_Tooltip: g,

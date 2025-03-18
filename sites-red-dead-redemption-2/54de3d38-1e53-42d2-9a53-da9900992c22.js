@@ -45,13 +45,13 @@ _global.SENTRY_RELEASE = {
       }
 
       function s(e, t, n) {
-        const [a, r] = o(n?.in, e, t), s = d(a, r), i = Math.abs(function(e, t, n) {
+        const [a, r] = o(n?.in, e, t), s = d(a, r), f = Math.abs(function(e, t, n) {
           const [a, r] = o(n?.in, e, t);
           return a.getFullYear() - r.getFullYear()
         }(a, r));
         a.setFullYear(1584), r.setFullYear(1584);
-        const f = s * (i - +(d(a, r) === -s));
-        return 0 === f ? 0 : f
+        const i = s * (f - +(d(a, r) === -s));
+        return 0 === i ? 0 : i
       }
     },
     94061: (e, t, n) => {
@@ -104,12 +104,12 @@ _global.SENTRY_RELEASE = {
         const {
           years: o = 0,
           months: s = 0,
-          weeks: i = 0,
-          days: f = 0,
+          weeks: f = 0,
+          days: i = 0,
           hours: u = 0,
-          minutes: l = 0,
-          seconds: c = 0
-        } = t, b = r(d(e, s + 12 * o, n), f + 7 * i, n), g = 1e3 * (c + 60 * (l + 60 * u));
+          minutes: c = 0,
+          seconds: l = 0
+        } = t, b = r(d(e, s + 12 * o, n), i + 7 * f, n), g = 1e3 * (l + 60 * (c + 60 * u));
         return (0, a.w)(n?.in || e, +b - g)
       }
     },

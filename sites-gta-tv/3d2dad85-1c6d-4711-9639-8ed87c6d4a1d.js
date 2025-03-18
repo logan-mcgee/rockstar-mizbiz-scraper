@@ -36,14 +36,14 @@ _global.SENTRY_RELEASE = {
         downloadFile: () => dt,
         findPlatform: () => tt,
         getAccentColor: () => k,
-        getBase: () => b,
+        getBase: () => x,
         getCdnPrefix: () => lt,
         getConfigForDomain: () => g,
         getCookieValueByName: () => at,
         getGen8Consoles: () => ut,
         getGen9Consoles: () => ht,
         getLanguageLabel: () => mt,
-        getUriForGraphEnv: () => x,
+        getUriForGraphEnv: () => b,
         gql: () => wt.J1,
         gtmInit: () => Et,
         importAll: () => it,
@@ -240,21 +240,21 @@ _global.SENTRY_RELEASE = {
                 loading: !0
               }
             }
-            const b = await fetch(h, m),
-              x = await b.json();
+            const x = await fetch(h, m),
+              b = await x.json();
             return l && (f[k] = {
-              response: x,
+              response: b,
               loading: !1
-            }), x
+            }), b
           } catch (t) {
             console.error(`ScApi fetch error ${e}:`, t)
           }
-        }, k = e => e.includes("reddead") || e.includes("rdr") ? "#CC0000" : e.includes("bully") ? "#F8AD00" : "#FCAF17", b = () => {
+        }, k = e => e.includes("reddead") || e.includes("rdr") ? "#CC0000" : e.includes("bully") ? "#F8AD00" : "#FCAF17", x = () => {
           const e = document.currentScript,
             t = e?.src ? new URL(e.src).origin : "";
           let n = document.getElementsByTagName("base")[0]?.getAttribute("href") ?? `${t}/`;
           return n.endsWith("/") || (n = `${n}/`), n
-        }, x = e => {
+        }, b = e => {
           if (/^https{0,1}:\/\//.test(e)) return e;
           let t = "";
           switch (e) {
@@ -336,7 +336,7 @@ _global.SENTRY_RELEASE = {
         O = n(9937),
         B = n(7897),
         D = n(9030);
-      const F = b(),
+      const F = x(),
         H = () => F;
       var z = n(9094);
       const q = (0, I.UT)(document.documentElement.lang),
@@ -660,17 +660,17 @@ _global.SENTRY_RELEASE = {
           key: "resizeContext"
         }),
         {
-          Consumer: be
+          Consumer: xe
         } = ke,
-        xe = (0, I.UT)(ve()),
+        be = (0, I.UT)(ve()),
         ye = e => {
           let {
             children: t
           } = e;
-          const n = (0, z.q)(xe);
+          const n = (0, z.q)(be);
           return (0, L.useEffect)((() => {
             const e = () => {
-              xe(ve())
+              be(ve())
             };
             return window.addEventListener("resize", e), () => {
               window.removeEventListener("resize", e)
@@ -817,7 +817,7 @@ _global.SENTRY_RELEASE = {
             graphOptions: t,
             typePolicies: n = {}
           } = e;
-          const o = t?.env ? x(t?.env) : t?.uri,
+          const o = t?.env ? b(t?.env) : t?.uri,
             r = {
               ...t,
               uri: o
@@ -1060,13 +1060,13 @@ _global.SENTRY_RELEASE = {
         ft = n(4842),
         vt = n.n(ft);
       const kt = (0, n(6400).A)(),
-        bt = kt?.id,
-        xt = /Mobi/i.test(window.navigator.userAgent) ? "mobile" : "desktop",
+        xt = kt?.id,
+        bt = /Mobi/i.test(window.navigator.userAgent) ? "mobile" : "desktop",
         yt = e => {
           const t = {
             ...e,
-            environment: bt,
-            display_type: xt
+            environment: xt,
+            display_type: bt
           };
           vt().dataLayer({
             dataLayer: t

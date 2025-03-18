@@ -113,7 +113,7 @@ _global.SENTRY_RELEASE = {
       function h(e, t) {
         return e.scrollHeight - 1 <= t
       }
-      var b = function(e) {
+      var g = function(e) {
         function t(e) {
           ! function(e, t) {
             if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
@@ -167,24 +167,24 @@ _global.SENTRY_RELEASE = {
               i = this._parent,
               d = this._child,
               m = (0, f.innerWidth)(i),
-              b = (0, f.innerHeight)(i);
-            if (b <= 0 || isNaN(b)) console.warn("Can not process element without height. Make sure the element is displayed and has a static height.");
+              g = (0, f.innerHeight)(i);
+            if (g <= 0 || isNaN(g)) console.warn("Can not process element without height. Make sure the element is displayed and has a static height.");
             else if (m <= 0 || isNaN(m)) console.warn("Can not process element without width. Make sure the element is displayed and has a static width.");
             else {
-              var g = (0, u.default)();
-              this.pid = g;
+              var b = (0, u.default)();
+              this.pid = b;
               var w = function() {
-                  return g !== e.pid
+                  return b !== e.pid
                 },
                 y = "multi" === a ? function() {
-                  return h(d, b)
+                  return h(d, g)
                 } : function() {
                   return p(d, m)
                 },
                 v = "multi" === a ? function() {
                   return p(d, m)
                 } : function() {
-                  return h(d, b)
+                  return h(d, g)
                 },
                 x = void 0,
                 _ = r,
@@ -210,7 +210,7 @@ _global.SENTRY_RELEASE = {
                   x = parseInt((_ + k) / 2, 10), e.setState({
                     fontSize: x
                   }, (function() {
-                    return g !== e.pid ? t(!0) : (v() ? _ = x + 1 : k = x - 1, t())
+                    return b !== e.pid ? t(!0) : (v() ? _ = x + 1 : k = x - 1, t())
                   }))
                 }), t))
               }, function(t) {
@@ -264,7 +264,7 @@ _global.SENTRY_RELEASE = {
           }
         }]), t
       }(o.default.Component);
-      b.propTypes = {
+      g.propTypes = {
         children: s.default.node,
         text: s.default.string,
         min: s.default.number,
@@ -273,7 +273,7 @@ _global.SENTRY_RELEASE = {
         forceSingleModeWidth: s.default.bool,
         throttle: s.default.number,
         onReady: s.default.func
-      }, b.defaultProps = {
+      }, g.defaultProps = {
         min: 1,
         max: 100,
         mode: "multi",
@@ -281,7 +281,7 @@ _global.SENTRY_RELEASE = {
         throttle: 50,
         autoResize: !0,
         onReady: function() {}
-      }, t.default = b
+      }, t.default = g
     },
     16762: (e, t, r) => {
       "use strict";
@@ -688,9 +688,9 @@ _global.SENTRY_RELEASE = {
             className: m = "",
             attributes: p = {},
             role: h,
-            hero: b = !1
+            hero: g = !1
           } = e;
-          const g = (0, n.useMemo)((() => {
+          const b = (0, n.useMemo)((() => {
             if (u?.badge || u?.discountTxt || t || l) return (0, i.jsx)(o.A, {
               badge: u?.discountTxt ?? u?.badge ?? t ?? l,
               badgeType: r,
@@ -699,10 +699,10 @@ _global.SENTRY_RELEASE = {
             })
           }), [t, r, l, u, h, d]);
           return (0, i.jsx)(c, {
-            hero: b,
+            hero: g,
             children: (0, i.jsx)("figure", {
               children: (0, i.jsxs)("div", {
-                className: (0, a.classList)("rockstargames-modules-core-newswire-articled9ac792281efe15bcd4589b028d1c27b", b ? "rockstargames-modules-core-newswire-articlee430c4662cd185f58259d4a8d8b322de" : "", p?.hiddenMobile ? "hiddenMobile" : "", p?.hiddenLarge ? "hiddenLarge" : "", p?.className, m),
+                className: (0, a.classList)("rockstargames-modules-core-newswire-articled9ac792281efe15bcd4589b028d1c27b", g ? "rockstargames-modules-core-newswire-articlee430c4662cd185f58259d4a8d8b322de" : "", p?.hiddenMobile ? "hiddenMobile" : "", p?.hiddenLarge ? "hiddenLarge" : "", p?.className, m),
                 style: (0, a.safeStyles)({
                   ...f,
                   ...p?.style
@@ -711,7 +711,7 @@ _global.SENTRY_RELEASE = {
                 children: [(0, i.jsx)(s.A, {
                   image: u,
                   className: m
-                }), g, u?.caption && (0, i.jsx)("figcaption", {
+                }), b, u?.caption && (0, i.jsx)("figcaption", {
                   dangerouslySetInnerHTML: {
                     __html: u.caption
                   }

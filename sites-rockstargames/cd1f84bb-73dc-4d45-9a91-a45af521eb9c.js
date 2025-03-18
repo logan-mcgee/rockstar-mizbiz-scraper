@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "0233c17f-8b1a-4d33-a484-b01c2b062e27", e._sentryDebugIdIdentifier = "sentry-dbid-0233c17f-8b1a-4d33-a484-b01c2b062e27")
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "cd1f84bb-73dc-4d45-9a91-a45af521eb9c", e._sentryDebugIdIdentifier = "sentry-dbid-cd1f84bb-73dc-4d45-9a91-a45af521eb9c")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -449,9 +449,15 @@ _global.SENTRY_RELEASE = {
             currentCharId: t
           } = (0, m.A)(), r = (0, o.useRockstarToken)(), [n, i] = (0, s.useState)(), [c, _] = (0, o.useRockstarTokenReactive)(), l = (0, o.useRockstarTokenPing)(), [d, u] = (0, s.useState)(), [p, k] = (0, s.useState)(!1), [h, y] = (0, s.useState)(), w = void 0 === d, [v, x] = (0, s.useState)(1);
           return (0, s.useEffect)((() => {
-            e && x((e => e + 1))
+            e && (i({
+              ...n,
+              accountSynced: !1
+            }), x((e => e + 1)))
           }), [e]), (0, s.useEffect)((() => {
-            a && x((e => e + 1))
+            a && (i({
+              ...n,
+              accountSynced: !1
+            }), x((e => e + 1)))
           }), [a]), (0, s.useEffect)((() => {
             0 === v && i({
               ...n,

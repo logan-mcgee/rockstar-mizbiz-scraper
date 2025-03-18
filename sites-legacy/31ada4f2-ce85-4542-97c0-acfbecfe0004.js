@@ -27,8 +27,8 @@ _global.SENTRY_RELEASE = {
         l = i(92440),
         n = i(50216),
         r = i(80725),
-        g = i(87052),
-        c = i(2918);
+        c = i(87052),
+        g = i(2918);
       const o = (0, h.defineMessages)({
           cph_highlights_heading: {
             id: "cph_highlights_heading",
@@ -86,11 +86,11 @@ _global.SENTRY_RELEASE = {
             isActive: l,
             index: n,
             highlightsCount: r,
-            ...c
+            ...g
           } = e;
           const d = (0, h.useIntl)(),
             u = (0, a.useRef)(null);
-          return (0, p.jsxs)(g.motion.div, {
+          return (0, p.jsxs)(c.motion.div, {
             "aria-hidden": !l,
             "aria-label": d.formatMessage(o.cph_highlights_group_aria, {
               index: n + 1,
@@ -106,13 +106,13 @@ _global.SENTRY_RELEASE = {
             variants: f,
             animate: l ? "fadeIn" : "fadeOut",
             "data-testid": "textWrapper",
-            ...c,
+            ...g,
             children: [t && (0, p.jsx)("h1", {
               children: t || d.formatMessage(o.cph_highlights_heading)
             }), i && (0, p.jsx)("h2", {
               className: _.heading,
               children: i
-            }), (0, p.jsx)(g.motion.div, {
+            }), (0, p.jsx)(c.motion.div, {
               ref: u,
               className: _.summaryText,
               dangerouslySetInnerHTML: {
@@ -154,7 +154,7 @@ _global.SENTRY_RELEASE = {
             }),
             {
               track: f
-            } = (0, c.useGtmTrack)(),
+            } = (0, g.useGtmTrack)(),
             [x, y] = (0, a.useState)(!1),
             [v, k] = (0, a.useState)(!1),
             [w, j] = (0, a.useState)(0),
@@ -203,7 +203,7 @@ _global.SENTRY_RELEASE = {
                 k(!1)
               },
               children: [t.length > 1 && (0, p.jsxs)(p.Fragment, {
-                children: [(0, p.jsx)(g.motion.button, {
+                children: [(0, p.jsx)(c.motion.button, {
                   ref: P,
                   type: "button",
                   "aria-label": d.formatMessage(o.cph_highlights_previous),
@@ -215,7 +215,7 @@ _global.SENTRY_RELEASE = {
                     }), C && C.slidePrev()
                   },
                   disabled: w < 1
-                }), (0, p.jsx)(g.motion.button, {
+                }), (0, p.jsx)(c.motion.button, {
                   ref: z,
                   type: "button",
                   "aria-label": d.formatMessage(o.cph_highlights_next),

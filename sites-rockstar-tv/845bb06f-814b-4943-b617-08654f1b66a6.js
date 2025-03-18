@@ -21,30 +21,30 @@ _global.SENTRY_RELEASE = {
         s = Symbol.for("react.element"),
         n = (Symbol.for("react.fragment"), Object.prototype.hasOwnProperty),
         a = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        d = {
+        l = {
           key: !0,
           ref: !0,
           __self: !0,
           __source: !0
         };
 
-      function l(e, t, o) {
-        var r, l = {},
+      function d(e, t, o) {
+        var r, d = {},
           i = null,
           f = null;
-        for (r in void 0 !== o && (i = "" + o), void 0 !== t.key && (i = "" + t.key), void 0 !== t.ref && (f = t.ref), t) n.call(t, r) && !d.hasOwnProperty(r) && (l[r] = t[r]);
+        for (r in void 0 !== o && (i = "" + o), void 0 !== t.key && (i = "" + t.key), void 0 !== t.ref && (f = t.ref), t) n.call(t, r) && !l.hasOwnProperty(r) && (d[r] = t[r]);
         if (e && e.defaultProps)
-          for (r in t = e.defaultProps) void 0 === l[r] && (l[r] = t[r]);
+          for (r in t = e.defaultProps) void 0 === d[r] && (d[r] = t[r]);
         return {
           $$typeof: s,
           type: e,
           key: i,
           ref: f,
-          props: l,
+          props: d,
           _owner: a.current
         }
       }
-      t.jsx = l, t.jsxs = l
+      t.jsx = d, t.jsxs = d
     },
     1029: (e, t, o) => {
       e.exports = o(5039)

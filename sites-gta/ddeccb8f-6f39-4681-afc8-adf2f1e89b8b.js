@@ -2,21 +2,21 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "4a98b7e0-4038-4610-85af-db9bde040561", e._sentryDebugIdIdentifier = "sentry-dbid-4a98b7e0-4038-4610-85af-db9bde040561")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "ddeccb8f-6f39-4681-afc8-adf2f1e89b8b", e._sentryDebugIdIdentifier = "sentry-dbid-ddeccb8f-6f39-4681-afc8-adf2f1e89b8b")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
   release: "sentry-release-id",
-  packageName: "@rockstargames/sites-gta-gen9",
+  packageName: "@rockstargames/sites-gta",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
-}, (self.webpackChunk_rockstargames_sites_gta_gen9 = self.webpackChunk_rockstargames_sites_gta_gen9 || []).push([
+}, (self.webpackChunk_rockstargames_sites_gta = self.webpackChunk_rockstargames_sites_gta || []).push([
   [1041], {
-    41041: (e, t, a) => {
+    1041: (e, t, a) => {
       a.r(t), a.d(t, {
         GtmProvider: () => u,
         RockstarUserProvider: () => j,
@@ -24,8 +24,8 @@ _global.SENTRY_RELEASE = {
         useRockstarUser: () => D,
         useRockstarUserState: () => M
       });
-      var r = a(62229),
-        s = a(95966),
+      var r = a(2229),
+        s = a(5966),
         n = a(2894);
       const c = {
         pcalt: "PC",
@@ -35,7 +35,7 @@ _global.SENTRY_RELEASE = {
         xboxone: "XBOX ONE",
         xboxsx: "XBOX SERIES X|S"
       };
-      var o = a(91029);
+      var o = a(1029);
       const i = (0, s.setContextItem)({
           context: (0, r.createContext)(void 0),
           key: "gtmContext22"
@@ -52,7 +52,7 @@ _global.SENTRY_RELEASE = {
                 loggedIn: f
               } = D(), {
                 hasGtaPlus: p
-              } = d ?? {}, m = (0, n.bn)(), g = (e, r) => {
+              } = d ?? {}, m = (0, n.bn)(), k = (e, r) => {
                 const n = [];
                 e.forEach((e => {
                   if (-1 === t.indexOf(e)) {
@@ -66,14 +66,14 @@ _global.SENTRY_RELEASE = {
               };
               (0, r.useEffect)((() => {
                 if (d && null !== f) {
-                  const e = k(d);
-                  o.length && e && g(o, e), l(e)
-                } else e || o.length && g(o)
+                  const e = g(d);
+                  o.length && e && k(o, e), l(e)
+                } else e || o.length && k(o)
               }), [d, f, o]), (0, r.useEffect)((() => {
                 const e = o.filter((e => -1 === t.indexOf(e)));
                 i(e)
               }), [t]);
-              const k = e => {
+              const g = e => {
                 const t = [],
                   a = [],
                   r = [],
@@ -137,47 +137,47 @@ _global.SENTRY_RELEASE = {
           key: "jumpScMenuFocusReactive",
           value: (0, s.makeVar)(!1)
         }),
-        g = e => m(e),
-        k = (0, s.setMakeVarItem)({
+        k = e => m(e),
+        g = (0, s.setMakeVarItem)({
           key: "hasNotificationsReactive",
           value: (0, s.makeVar)(!1)
         }),
-        h = e => k(e),
+        h = e => g(e),
         v = (0, s.setMakeVarItem)({
           key: "currentCharIdReactive",
           value: (0, s.makeVar)((0, s.webSettingsReactive)()?.currentCharId)
         }),
-        b = e => v(e),
+        y = e => v(e),
         w = (0, s.setMakeVarItem)({
           key: "selectedCharacterTupleReactive",
           value: (0, s.makeVar)(null)
         }),
-        y = e => w(e),
-        _ = (0, s.setMakeVarItem)({
+        b = e => w(e),
+        C = (0, s.setMakeVarItem)({
           key: "rockstarIdReactive",
           value: (0, s.makeVar)(null)
         }),
-        C = (0, s.setMakeVarItem)({
+        _ = (0, s.setMakeVarItem)({
           key: "charactersNeededReactive",
           value: (0, s.makeVar)(!1)
         }),
-        x = e => C(e),
-        I = (0, s.setMakeVarItem)({
+        x = e => _(e),
+        S = (0, s.setMakeVarItem)({
           key: "crewsNeededReactive",
           value: (0, s.makeVar)(!1)
         }),
-        S = e => I(e),
+        I = e => S(e),
         R = (0, s.setMakeVarItem)({
           key: "userDataReactive",
           value: (0, s.makeVar)(null)
         }),
         E = e => R(e),
         M = () => {
-          const e = (0, s.useReactiveVar)(C),
-            t = (0, s.useReactiveVar)(I),
+          const e = (0, s.useReactiveVar)(_),
+            t = (0, s.useReactiveVar)(S),
             a = (0, s.useReactiveVar)(v),
             r = (0, s.useReactiveVar)(f),
-            n = (0, s.useReactiveVar)(k),
+            n = (0, s.useReactiveVar)(g),
             c = (0, s.useReactiveVar)(w);
           return {
             charactersNeeded: e,
@@ -189,42 +189,48 @@ _global.SENTRY_RELEASE = {
             selectedCharacterTuple: c,
             jumpScMenuFocus: (0, s.useReactiveVar)(m),
             setCharactersNeeded: x,
-            setCrewsNeeded: S,
-            setCurrentCharId: b,
+            setCrewsNeeded: I,
+            setCurrentCharId: y,
             setHasNotifications: h,
             setNavOpen: p,
-            setSelectedCharacterTuple: y,
+            setSelectedCharacterTuple: b,
             setUserData: E,
-            setJumpScMenuFocus: g
+            setJumpScMenuFocus: k
           }
         };
-      var V = a(43425),
+      var V = a(3425),
         A = a.n(V);
-      var P = a(29830),
-        N = a(90958);
+      var P = a(9830),
+        N = a(8004);
       const U = () => {
           const {
             charactersNeeded: e,
             crewsNeeded: t,
             currentCharId: a
-          } = M(), n = (0, s.useRockstarToken)(), [c, o] = (0, r.useState)(), [i, u] = (0, s.useRockstarTokenReactive)(), l = (0, s.useRockstarTokenPing)(), [d, f] = (0, r.useState)(), [p, m] = (0, r.useState)(!1), [g, k] = (0, r.useState)(), h = void 0 === d, [v, b] = (0, r.useState)(1);
+          } = M(), n = (0, s.useRockstarToken)(), [c, o] = (0, r.useState)(), [i, u] = (0, s.useRockstarTokenReactive)(), l = (0, s.useRockstarTokenPing)(), [d, f] = (0, r.useState)(), [p, m] = (0, r.useState)(!1), [k, g] = (0, r.useState)(), h = void 0 === d, [v, y] = (0, r.useState)(1);
           return (0, r.useEffect)((() => {
-            e && b((e => e + 1))
+            e && (o({
+              ...c,
+              accountSynced: !1
+            }), y((e => e + 1)))
           }), [e]), (0, r.useEffect)((() => {
-            t && b((e => e + 1))
+            t && (o({
+              ...c,
+              accountSynced: !1
+            }), y((e => e + 1)))
           }), [t]), (0, r.useEffect)((() => {
             0 === v && o({
               ...c,
               accountSynced: !0
             })
           }), [v]), (0, r.useEffect)((() => {
-            e && k("1" === c?.characters?.[e]?.[a]?.stats?.overview?.hasGtaPlus?.value)
+            e && g("1" === c?.characters?.[e]?.[a]?.stats?.overview?.hasGtaPlus?.value)
           }), [e, a, c]), (0, r.useEffect)((() => {
             o({
               ...c,
-              hasGtaPlus: g
+              hasGtaPlus: k
             })
-          }), [g]), (0, r.useEffect)((() => {
+          }), [k]), (0, r.useEffect)((() => {
             if (null === n) return void l();
             const e = !!n;
             if (e || p || ((async () => {
@@ -291,7 +297,7 @@ _global.SENTRY_RELEASE = {
               o({
                 ...c,
                 ...t
-              }), f(e), _(t.id)
+              }), f(e), C(t.id)
             }
           }), [n, p]), (0, r.useEffect)((() => {
             (async () => {
@@ -317,7 +323,7 @@ _global.SENTRY_RELEASE = {
                 o({
                   ...c,
                   crews: e
-                }), b((e => e - 1))
+                }), y((e => e - 1))
               }
             })()
           }), [c?.nickname, t, d]), (0, r.useEffect)((() => {
@@ -339,7 +345,7 @@ _global.SENTRY_RELEASE = {
                 o({
                   ...c,
                   gamesPlayed: e
-                }), b((e => e - 1))
+                }), y((e => e - 1))
               }
             })()
           }), [c?.nickname, d]), (0, r.useEffect)((() => {
@@ -422,7 +428,7 @@ _global.SENTRY_RELEASE = {
                     gtao: e
                   },
                   linkedAccounts: t
-                }), b((e => e - 1))
+                }), y((e => e - 1))
               }
             })()
           }), [e, c?.nickname, d]), {

@@ -144,16 +144,16 @@ _global.SENTRY_RELEASE = {
         successIcon: "rockstargames-sites-rockstargamesa331a1767f65b0f2a75e59db25d834ee",
         infoIcon: "rockstargames-sites-rockstargamesb12f9ef76dcba1eea78ba5412384725c"
       };
-      var b = a(91029);
+      var u = a(91029);
       const {
-        host: u
+        host: b
       } = (0, i.getConfigForDomain)(), f = (0, n.withIntl)((() => {
         const e = (0, n.useIntl)(),
           {
             track: s
           } = (0, o.useGtmTrack)(),
           [a, k] = (0, t.useState)(""),
-          f = `https://${u}.rockstargames.com/settings/email`,
+          f = `https://${b}.rockstargames.com/settings/email`,
           p = (0, i.useRockstarTokenPing)(),
           [g] = (0, r.useSearchParams)(),
           x = {
@@ -187,23 +187,23 @@ _global.SENTRY_RELEASE = {
             event: "virtualPageview",
             view_name: l[`unsubscribe_${a}_header`].defaultMessage
           })
-        }), [a]), (0, b.jsx)("div", {
+        }), [a]), (0, u.jsx)("div", {
           className: m.container,
-          children: a ? (0, b.jsxs)("div", {
+          children: a ? (0, u.jsxs)("div", {
             className: m.dialogModal,
-            children: [(0, b.jsx)("div", {
+            children: [(0, u.jsx)("div", {
               className: m[`${a}Icon`]
-            }), (0, b.jsxs)("div", {
+            }), (0, u.jsxs)("div", {
               className: m.textContent,
-              children: [(0, b.jsx)("h3", {
+              children: [(0, u.jsx)("h3", {
                 className: m.heading,
                 children: e.formatMessage(l[`unsubscribe_${a}_header`])
-              }), (0, b.jsx)("div", {
+              }), (0, u.jsx)("div", {
                 className: m.description,
                 children: e.formatMessage(l[`unsubscribe_${a}_description`])
               })]
-            }), (0, b.jsx)("div", {
-              children: (0, b.jsx)(c.A, {
+            }), (0, u.jsx)("div", {
+              children: (0, u.jsx)(c.A, {
                 to: f,
                 onClick: x ? () => s({
                   ...x
@@ -211,7 +211,7 @@ _global.SENTRY_RELEASE = {
                 children: e.formatMessage(l.email_settings_cta)
               })
             })]
-          }) : (0, b.jsx)(d.A, {})
+          }) : (0, u.jsx)(d.A, {})
         })
       }), k)
     }

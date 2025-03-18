@@ -16,39 +16,39 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_legacy = self.webpackChunk_rockstargames_sites_legacy || []).push([
   [1029], {
-    65039: (e, a, d) => {
-      var o = d(62229),
-        r = Symbol.for("react.element"),
-        t = Symbol.for("react.fragment"),
-        n = Object.prototype.hasOwnProperty,
-        l = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        s = {
+    65039: (e, a, o) => {
+      var r = o(62229),
+        t = Symbol.for("react.element"),
+        n = Symbol.for("react.fragment"),
+        d = Object.prototype.hasOwnProperty,
+        f = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        l = {
           key: !0,
           ref: !0,
           __self: !0,
           __source: !0
         };
 
-      function f(e, a, d) {
-        var o, t = {},
-          f = null,
+      function s(e, a, o) {
+        var r, n = {},
+          s = null,
           _ = null;
-        for (o in void 0 !== d && (f = "" + d), void 0 !== a.key && (f = "" + a.key), void 0 !== a.ref && (_ = a.ref), a) n.call(a, o) && !s.hasOwnProperty(o) && (t[o] = a[o]);
+        for (r in void 0 !== o && (s = "" + o), void 0 !== a.key && (s = "" + a.key), void 0 !== a.ref && (_ = a.ref), a) d.call(a, r) && !l.hasOwnProperty(r) && (n[r] = a[r]);
         if (e && e.defaultProps)
-          for (o in a = e.defaultProps) void 0 === t[o] && (t[o] = a[o]);
+          for (r in a = e.defaultProps) void 0 === n[r] && (n[r] = a[r]);
         return {
-          $$typeof: r,
+          $$typeof: t,
           type: e,
-          key: f,
+          key: s,
           ref: _,
-          props: t,
-          _owner: l.current
+          props: n,
+          _owner: f.current
         }
       }
-      a.Fragment = t, a.jsx = f, a.jsxs = f
+      a.Fragment = n, a.jsx = s, a.jsxs = s
     },
-    91029: (e, a, d) => {
-      e.exports = d(65039)
+    91029: (e, a, o) => {
+      e.exports = o(65039)
     }
   }
 ]);

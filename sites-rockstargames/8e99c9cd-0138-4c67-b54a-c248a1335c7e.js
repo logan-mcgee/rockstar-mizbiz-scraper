@@ -126,15 +126,15 @@ _global.SENTRY_RELEASE = {
         } = e;
         const {
           track: u
-        } = (0, r.useGtmTrack)(), [k] = (0, n.useSearchParams)(), f = l.preview_images_parsed.newswire_block, b = {
+        } = (0, r.useGtmTrack)(), [k] = (0, n.useSearchParams)(), f = l.preview_images_parsed.newswire_block, v = {
           default: 0 !== t || g ? f.square || f.d16x9 || f._fallback : f.d16x9 || f.square || f._fallback,
           mobile: f.square || f._fallback
-        }, [v, j] = (0, s.usePreloadImg)(b.default), h = {
+        }, [b, j] = (0, s.usePreloadImg)(v.default), h = {
           default: {
-            backgroundImage: `url(${b.default})`
+            backgroundImage: `url(${v.default})`
           },
           mobile: {
-            backgroundImage: `url(${b.mobile})`
+            backgroundImage: `url(${v.mobile})`
           }
         }, _ = (0, i.useCallback)((() => {
           u({
@@ -148,7 +148,7 @@ _global.SENTRY_RELEASE = {
         }), [l]);
         return (0, o.jsx)(d.A, {
           to: l.url,
-          className: [c.newswireBlock, g ? c.newswireBlockNoSpecialOrder : "", null !== v ? c.startAnimation : ""].join(" "),
+          className: [c.newswireBlock, g ? c.newswireBlockNoSpecialOrder : "", null !== b ? c.startAnimation : ""].join(" "),
           focused: p,
           onClick: _,
           children: (0, o.jsxs)(o.Fragment, {
@@ -367,8 +367,8 @@ _global.SENTRY_RELEASE = {
         u = t(49323),
         k = t(19083);
       const f = "rockstargames-sites-rockstargamesfd5351e921b874473f5256931420f405",
-        b = "rockstargames-sites-rockstargamescfd48749550b301dcc13f82e4b478494",
-        v = e => {
+        v = "rockstargames-sites-rockstargamescfd48749550b301dcc13f82e4b478494",
+        b = e => {
           let {
             loading: a,
             searchResponse: t,
@@ -455,7 +455,7 @@ _global.SENTRY_RELEASE = {
           }), [_, j]), Object.entries(l).length ? l.q ? null === m || N ? null : (0, d.jsxs)("div", {
             className: f,
             children: [(0, d.jsx)("section", {
-              className: b,
+              className: v,
               children: (0, d.jsxs)("div", {
                 className: "rockstargames-sites-rockstargamese054deca2519c2462fc96246266a5fbc",
                 children: [(0, d.jsxs)("h4", {
@@ -464,7 +464,7 @@ _global.SENTRY_RELEASE = {
                   children: a("%s").replace("%s", r.get("q"))
                 })]
               })
-            }), !N && m ? (0, d.jsx)(v, {
+            }), !N && m ? (0, d.jsx)(b, {
               searchResponse: _,
               searchTerm: t,
               activeTab: j,
@@ -473,7 +473,7 @@ _global.SENTRY_RELEASE = {
           }) : (0, d.jsx)("div", {
             className: f,
             children: (0, d.jsxs)("section", {
-              className: b,
+              className: v,
               children: [(0, d.jsx)("h3", {
                 children: a("Search")
               }), (0, d.jsx)(o.A, {})]

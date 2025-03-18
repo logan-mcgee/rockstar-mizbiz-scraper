@@ -2,66 +2,120 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "8273d542-bc8f-476c-aa12-c0f8c2667a6a", e._sentryDebugIdIdentifier = "sentry-dbid-8273d542-bc8f-476c-aa12-c0f8c2667a6a")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "48d2e064-77f5-4f0d-b474-17783cadbf0d", e._sentryDebugIdIdentifier = "sentry-dbid-48d2e064-77f5-4f0d-b474-17783cadbf0d")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
   release: "sentry-release-id",
-  packageName: "@rockstargames/sites-legacy",
+  packageName: "@rockstargames/sites-rockstargames",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
-}, (self.webpackChunk_rockstargames_sites_legacy = self.webpackChunk_rockstargames_sites_legacy || []).push([
-  [3422, 1029, 1041], {
-    65039: (e, t, a) => {
-      var r = a(62229),
-        s = Symbol.for("react.element"),
-        n = Symbol.for("react.fragment"),
-        c = Object.prototype.hasOwnProperty,
-        o = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        i = {
-          key: !0,
-          ref: !0,
-          __self: !0,
-          __source: !0
-        };
-
-      function u(e, t, a) {
-        var r, n = {},
-          u = null,
-          l = null;
-        for (r in void 0 !== a && (u = "" + a), void 0 !== t.key && (u = "" + t.key), void 0 !== t.ref && (l = t.ref), t) c.call(t, r) && !i.hasOwnProperty(r) && (n[r] = t[r]);
-        if (e && e.defaultProps)
-          for (r in t = e.defaultProps) void 0 === n[r] && (n[r] = t[r]);
-        return {
-          $$typeof: s,
-          type: e,
-          key: u,
-          ref: l,
-          props: n,
-          _owner: o.current
+}, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
+  [7904, 5523], {
+    18372: (e, t, a) => {
+      a.d(t, {
+        A: () => b,
+        K: () => m
+      });
+      var r = a(95966);
+      const s = (0, r.setMakeVarItem)({
+          key: "navOpenReactive",
+          value: (0, r.makeVar)(null)
+        }),
+        n = e => s(e),
+        c = (0, r.setMakeVarItem)({
+          key: "jumpScMenuFocusReactive",
+          value: (0, r.makeVar)(!1)
+        }),
+        o = e => c(e),
+        i = (0, r.setMakeVarItem)({
+          key: "hasNotificationsReactive",
+          value: (0, r.makeVar)(!1)
+        }),
+        u = e => i(e),
+        l = (0, r.setMakeVarItem)({
+          key: "currentCharIdReactive",
+          value: (0, r.makeVar)((0, r.webSettingsReactive)()?.currentCharId)
+        }),
+        d = e => l(e),
+        f = (0, r.setMakeVarItem)({
+          key: "selectedCharacterTupleReactive",
+          value: (0, r.makeVar)(null)
+        }),
+        p = e => f(e),
+        m = (0, r.setMakeVarItem)({
+          key: "rockstarIdReactive",
+          value: (0, r.makeVar)(null)
+        }),
+        k = (0, r.setMakeVarItem)({
+          key: "charactersNeededReactive",
+          value: (0, r.makeVar)(!1)
+        }),
+        g = e => k(e),
+        h = (0, r.setMakeVarItem)({
+          key: "crewsNeededReactive",
+          value: (0, r.makeVar)(!1)
+        }),
+        v = e => h(e),
+        y = (0, r.setMakeVarItem)({
+          key: "userDataReactive",
+          value: (0, r.makeVar)(null)
+        }),
+        w = e => y(e),
+        b = () => {
+          const e = (0, r.useReactiveVar)(k),
+            t = (0, r.useReactiveVar)(h),
+            a = (0, r.useReactiveVar)(l),
+            m = (0, r.useReactiveVar)(s),
+            b = (0, r.useReactiveVar)(i),
+            x = (0, r.useReactiveVar)(f);
+          return {
+            charactersNeeded: e,
+            crewsNeeded: t,
+            currentCharId: a,
+            hasNotifications: b,
+            navOpen: m,
+            userData: (0, r.useReactiveVar)(y),
+            selectedCharacterTuple: x,
+            jumpScMenuFocus: (0, r.useReactiveVar)(c),
+            setCharactersNeeded: g,
+            setCrewsNeeded: v,
+            setCurrentCharId: d,
+            setHasNotifications: u,
+            setNavOpen: n,
+            setSelectedCharacterTuple: p,
+            setUserData: w,
+            setJumpScMenuFocus: o
+          }
         }
-      }
-      t.Fragment = n, t.jsx = u, t.jsxs = u
     },
-    91029: (e, t, a) => {
-      e.exports = a(65039)
-    },
-    41041: (e, t, a) => {
+    7607: (e, t, a) => {
       a.r(t), a.d(t, {
-        GtmProvider: () => u,
-        RockstarUserProvider: () => j,
-        useGtmTrack: () => d,
-        useRockstarUser: () => B,
-        useRockstarUserState: () => M
+        GtmProvider: () => r.UN,
+        RockstarUserProvider: () => r.iR,
+        useGtmTrack: () => r.h,
+        useRockstarUser: () => r.Wx,
+        useRockstarUserState: () => s.A
+      });
+      var r = a(57269),
+        s = a(18372)
+    },
+    57269: (e, t, a) => {
+      a.d(t, {
+        UN: () => l,
+        iR: () => b,
+        h: () => f,
+        Wx: () => x
       });
       var r = a(62229),
         s = a(95966),
-        n = a(2894);
-      const c = {
+        n = a(7607),
+        c = a(2894);
+      const o = {
         pcalt: "PC",
         pc: "PC",
         ps4: "PS4",
@@ -69,24 +123,24 @@ _global.SENTRY_RELEASE = {
         xboxone: "XBOX ONE",
         xboxsx: "XBOX SERIES X|S"
       };
-      var o = a(91029);
-      const i = (0, s.setContextItem)({
+      var i = a(91029);
+      const u = (0, s.setContextItem)({
           context: (0, r.createContext)(void 0),
           key: "gtmContext22"
         }),
-        u = e => {
+        l = e => {
           let {
             checkUser: t,
             children: a
           } = e;
-          const u = function() {
+          const l = function() {
               let e = !(arguments.length > 0 && void 0 !== arguments[0]) || arguments[0];
-              const [t, a] = (0, r.useState)([]), [o, i] = (0, r.useState)([]), [u, l] = (0, r.useState)(null), {
-                data: d,
-                loggedIn: f
-              } = B(), {
-                hasGtaPlus: p
-              } = d ?? {}, m = (0, n.bn)(), k = (e, r) => {
+              const [t, a] = (0, r.useState)([]), [i, u] = (0, r.useState)([]), [l, d] = (0, r.useState)(null), {
+                data: f,
+                loggedIn: p
+              } = (0, n.useRockstarUser)(), {
+                hasGtaPlus: m
+              } = f ?? {}, k = (0, c.bn)(), g = (e, r) => {
                 const n = [];
                 e.forEach((e => {
                   if (-1 === t.indexOf(e)) {
@@ -99,15 +153,15 @@ _global.SENTRY_RELEASE = {
                 })), a([...t, ...n])
               };
               (0, r.useEffect)((() => {
-                if (d && null !== f) {
-                  const e = g(d);
-                  o.length && e && k(o, e), l(e)
-                } else e || o.length && k(o)
-              }), [d, f, o]), (0, r.useEffect)((() => {
-                const e = o.filter((e => -1 === t.indexOf(e)));
-                i(e)
+                if (f && null !== p) {
+                  const e = h(f);
+                  i.length && e && g(i, e), d(e)
+                } else e || i.length && g(i)
+              }), [f, p, i]), (0, r.useEffect)((() => {
+                const e = i.filter((e => -1 === t.indexOf(e)));
+                u(e)
               }), [t]);
-              const g = e => {
+              const h = e => {
                 const t = [],
                   a = [],
                   r = [],
@@ -128,140 +182,77 @@ _global.SENTRY_RELEASE = {
                   s.push(`${a}_${r}`), t.includes(r) || t.push(r)
                 })), {
                   member_id: e.id ?? void 0,
-                  login_state: f ?? !1,
-                  gta_plus_active: !!f && Boolean(p),
-                  platforms_played: t.length ? t.map((e => c[e] ?? e)).join("|").toUpperCase() : void 0,
+                  login_state: p ?? !1,
+                  gta_plus_active: !!p && Boolean(m),
+                  platforms_played: t.length ? t.map((e => o[e] ?? e)).join("|").toUpperCase() : void 0,
                   games_played: s.length ? s.join("|").toUpperCase() : void 0,
-                  gtao_platforms_played: a.length ? a.map((e => c[e] ?? e)).join("|").toUpperCase() : void 0,
-                  gta_plus_platforms: r.length ? r.map((e => c[e] ?? e)).join("|").toUpperCase() : void 0,
-                  use_enhanced_browser_features: m
+                  gtao_platforms_played: a.length ? a.map((e => o[e] ?? e)).join("|").toUpperCase() : void 0,
+                  gta_plus_platforms: r.length ? r.map((e => o[e] ?? e)).join("|").toUpperCase() : void 0,
+                  use_enhanced_browser_features: k
                 }
               };
               return {
                 track: e => {
-                  if (void 0 === f || !d || !u) {
-                    const t = [...o];
+                  if (void 0 === p || !f || !l) {
+                    const t = [...i];
                     return t.push({
                       ...e
-                    }), i(t)
+                    }), u(t)
                   }
                   return (0, s.track)({
                     ...e,
-                    ...u
+                    ...l
                   })
                 }
               }
             }(t),
-            l = (0, r.useMemo)((() => u), [u, t]);
-          return (0, o.jsx)(i.Provider, {
-            value: l,
+            d = (0, r.useMemo)((() => l), [l, t]);
+          return (0, i.jsx)(u.Provider, {
+            value: d,
             children: a
           })
         },
-        l = {
+        d = {
           track: () => null
         },
-        d = () => (0, r.useContext)(i) ?? l,
-        f = (0, s.setMakeVarItem)({
-          key: "navOpenReactive",
-          value: (0, s.makeVar)(null)
-        }),
-        p = e => f(e),
-        m = (0, s.setMakeVarItem)({
-          key: "jumpScMenuFocusReactive",
-          value: (0, s.makeVar)(!1)
-        }),
-        k = e => m(e),
-        g = (0, s.setMakeVarItem)({
-          key: "hasNotificationsReactive",
-          value: (0, s.makeVar)(!1)
-        }),
-        h = e => g(e),
-        v = (0, s.setMakeVarItem)({
-          key: "currentCharIdReactive",
-          value: (0, s.makeVar)((0, s.webSettingsReactive)()?.currentCharId)
-        }),
-        y = e => v(e),
-        w = (0, s.setMakeVarItem)({
-          key: "selectedCharacterTupleReactive",
-          value: (0, s.makeVar)(null)
-        }),
-        b = e => w(e),
-        _ = (0, s.setMakeVarItem)({
-          key: "rockstarIdReactive",
-          value: (0, s.makeVar)(null)
-        }),
-        x = (0, s.setMakeVarItem)({
-          key: "charactersNeededReactive",
-          value: (0, s.makeVar)(!1)
-        }),
-        C = e => x(e),
-        S = (0, s.setMakeVarItem)({
-          key: "crewsNeededReactive",
-          value: (0, s.makeVar)(!1)
-        }),
-        I = e => S(e),
-        R = (0, s.setMakeVarItem)({
-          key: "userDataReactive",
-          value: (0, s.makeVar)(null)
-        }),
-        E = e => R(e),
-        M = () => {
-          const e = (0, s.useReactiveVar)(x),
-            t = (0, s.useReactiveVar)(S),
-            a = (0, s.useReactiveVar)(v),
-            r = (0, s.useReactiveVar)(f),
-            n = (0, s.useReactiveVar)(g),
-            c = (0, s.useReactiveVar)(w);
-          return {
-            charactersNeeded: e,
-            crewsNeeded: t,
-            currentCharId: a,
-            hasNotifications: n,
-            navOpen: r,
-            userData: (0, s.useReactiveVar)(R),
-            selectedCharacterTuple: c,
-            jumpScMenuFocus: (0, s.useReactiveVar)(m),
-            setCharactersNeeded: C,
-            setCrewsNeeded: I,
-            setCurrentCharId: y,
-            setHasNotifications: h,
-            setNavOpen: p,
-            setSelectedCharacterTuple: b,
-            setUserData: E,
-            setJumpScMenuFocus: k
-          }
-        };
-      var P = a(43425),
-        V = a.n(P);
-      var A = a(29830),
-        N = a(48004);
-      const O = () => {
+        f = () => (0, r.useContext)(u) ?? d;
+      var p = a(18372);
+      var m = a(43425),
+        k = a.n(m);
+      var g = a(29830),
+        h = a(48004);
+      const v = () => {
           const {
             charactersNeeded: e,
             crewsNeeded: t,
             currentCharId: a
-          } = M(), n = (0, s.useRockstarToken)(), [c, o] = (0, r.useState)(), [i, u] = (0, s.useRockstarTokenReactive)(), l = (0, s.useRockstarTokenPing)(), [d, f] = (0, r.useState)(), [p, m] = (0, r.useState)(!1), [k, g] = (0, r.useState)(), h = void 0 === d, [v, y] = (0, r.useState)(1);
+          } = (0, p.A)(), n = (0, s.useRockstarToken)(), [c, o] = (0, r.useState)(), [i, u] = (0, s.useRockstarTokenReactive)(), l = (0, s.useRockstarTokenPing)(), [d, f] = (0, r.useState)(), [m, v] = (0, r.useState)(!1), [y, w] = (0, r.useState)(), b = void 0 === d, [x, C] = (0, r.useState)(1);
           return (0, r.useEffect)((() => {
-            e && y((e => e + 1))
+            e && (o({
+              ...c,
+              accountSynced: !1
+            }), C((e => e + 1)))
           }), [e]), (0, r.useEffect)((() => {
-            t && y((e => e + 1))
+            t && (o({
+              ...c,
+              accountSynced: !1
+            }), C((e => e + 1)))
           }), [t]), (0, r.useEffect)((() => {
-            0 === v && o({
+            0 === x && o({
               ...c,
               accountSynced: !0
             })
-          }), [v]), (0, r.useEffect)((() => {
-            e && g("1" === c?.characters?.[e]?.[a]?.stats?.overview?.hasGtaPlus?.value)
+          }), [x]), (0, r.useEffect)((() => {
+            e && w("1" === c?.characters?.[e]?.[a]?.stats?.overview?.hasGtaPlus?.value)
           }), [e, a, c]), (0, r.useEffect)((() => {
             o({
               ...c,
-              hasGtaPlus: k
+              hasGtaPlus: y
             })
-          }), [k]), (0, r.useEffect)((() => {
+          }), [y]), (0, r.useEffect)((() => {
             if (null === n) return void l();
             const e = !!n;
-            if (e || p || ((async () => {
+            if (e || m || ((async () => {
                 try {
                   await (async e => {
                     let {
@@ -273,7 +264,7 @@ _global.SENTRY_RELEASE = {
                       silentCheck: n
                     } = (0, s.getConfigForDomain)(), c = {
                       method: "POST",
-                      body: `fingerprint=${await V().get().then((e=>e))}`,
+                      body: `fingerprint=${await k().get().then((e=>e))}`,
                       credentials: "include",
                       headers: {
                         "X-Requested-With": "XMLHttpRequest",
@@ -295,12 +286,12 @@ _global.SENTRY_RELEASE = {
                     tokenPingExpires: u
                   })
                 } catch (e) {}
-              })(), m(!0)), !e && p && f(!1), e) {
+              })(), v(!0)), !e && m && f(!1), e) {
               const t = (e => {
                 let {
                   bearerToken: t
                 } = e;
-                const a = (0, A.s)(t),
+                const a = (0, g.s)(t),
                   {
                     host: r
                   } = (0, s.getConfigForDomain)(),
@@ -309,7 +300,7 @@ _global.SENTRY_RELEASE = {
                   o = "True" === (a?.["scAuth.IsAMinor"] ?? "True"),
                   i = new Date(a["scAuth.MemberSince"]),
                   u = new Date,
-                  l = (0, N.M)(u, i) < 12;
+                  l = (0, h.M)(u, i) < 12;
                 return {
                   id: n,
                   avatar: a["scAuth.AvatarUrl"],
@@ -325,9 +316,9 @@ _global.SENTRY_RELEASE = {
               o({
                 ...c,
                 ...t
-              }), f(e), _(t.id)
+              }), f(e), (0, p.K)(t.id)
             }
-          }), [n, p]), (0, r.useEffect)((() => {
+          }), [n, m]), (0, r.useEffect)((() => {
             (async () => {
               if (d && c && t && !c?.crews) {
                 const e = await (async e => {
@@ -351,7 +342,7 @@ _global.SENTRY_RELEASE = {
                 o({
                   ...c,
                   crews: e
-                }), y((e => e - 1))
+                }), C((e => e - 1))
               }
             })()
           }), [c?.nickname, t, d]), (0, r.useEffect)((() => {
@@ -373,7 +364,7 @@ _global.SENTRY_RELEASE = {
                 o({
                   ...c,
                   gamesPlayed: e
-                }), y((e => e - 1))
+                }), C((e => e - 1))
               }
             })()
           }), [c?.nickname, d]), (0, r.useEffect)((() => {
@@ -456,35 +447,35 @@ _global.SENTRY_RELEASE = {
                     gtao: e
                   },
                   linkedAccounts: t
-                }), y((e => e - 1))
+                }), C((e => e - 1))
               }
             })()
           }), [e, c?.nickname, d]), {
             data: c,
             loggedIn: d,
-            loading: h
+            loading: b
           }
         },
-        T = {},
-        U = (0, s.setContextItem)({
-          context: (0, r.createContext)(T),
+        y = {},
+        w = (0, s.setContextItem)({
+          context: (0, r.createContext)(y),
           key: "userContext"
         }),
-        j = e => {
+        b = e => {
           let {
             children: t
           } = e;
-          const a = O(),
+          const a = v(),
             s = (0, r.useMemo)((() => ({
               ...a,
               hasProvider: !0
             })), [a]);
-          return (0, o.jsx)(U.Provider, {
+          return (0, i.jsx)(w.Provider, {
             value: s,
             children: t
           })
         },
-        B = () => (0, r.useContext)(U)
+        x = () => (0, r.useContext)(w)
     }
   }
 ]);

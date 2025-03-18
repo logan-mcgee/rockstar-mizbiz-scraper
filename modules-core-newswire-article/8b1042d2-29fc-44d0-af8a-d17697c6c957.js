@@ -78,11 +78,11 @@ _global.SENTRY_RELEASE = {
             {
               meta: p = {}
             } = (0, i.i)() ?? {},
-            [u, b] = (0, l.useState)(c ?? p?.cdn ?? p?.prod ?? !0);
+            [u, g] = (0, l.useState)(c ?? p?.cdn ?? p?.prod ?? !0);
           (0, l.useEffect)((() => {
-            b(c ?? p?.cdn ?? p?.prod ?? !0)
+            g(c ?? p?.cdn ?? p?.prod ?? !0)
           }), [c, p]);
-          const g = (0, l.useCallback)((e => {
+          const b = (0, l.useCallback)((e => {
             const t = null !== d,
               a = e?.previewSrc ?? e ?? null;
             if (null === a || "string" != typeof a) return null;
@@ -94,8 +94,8 @@ _global.SENTRY_RELEASE = {
             alt: t,
             ariaLabel: s,
             src: {
-              mobile: g(d?.[m]?.mobile ?? d?.en_us?.mobile ?? a),
-              desktop: g(d?.[m]?.desktop ?? d?.en_us?.desktop ?? r)
+              mobile: b(d?.[m]?.mobile ?? d?.en_us?.mobile ?? a),
+              desktop: b(d?.[m]?.desktop ?? d?.en_us?.desktop ?? r)
             }
           }
         },
@@ -309,13 +309,13 @@ _global.SENTRY_RELEASE = {
           value: "calc(var(--grid-gap-static-xl) * -1)",
           label: "Xtra Large (Negative)"
         }],
-        b = {
+        g = {
           label: "Top",
           name: "top",
           description: "Distance from top for LAYERS (recommended to use %)",
           component: "text"
         },
-        g = {
+        b = {
           label: "Left",
           name: "left",
           description: "Distance from left for LAYERS (recommended to use %)",
@@ -790,9 +790,9 @@ _global.SENTRY_RELEASE = {
           const a = [{
               ...c("Position")
             }, {
-              ...b
-            }, {
               ...g
+            }, {
+              ...b
             }, {
               ...h
             }, {
@@ -1066,7 +1066,7 @@ _global.SENTRY_RELEASE = {
             component: () => (0, d.jsx)("hr", {})
           }
         },
-        be = e => {
+        ge = e => {
           let {
             name: t,
             label: a = t
@@ -1095,7 +1095,7 @@ _global.SENTRY_RELEASE = {
             }]
           }
         },
-        ge = [{
+        be = [{
           ...ue("Background Image Gradient")
         }, {
           ... function() {
@@ -1171,7 +1171,7 @@ _global.SENTRY_RELEASE = {
             name: "splitter",
             description: "Character that used as a line break for badge text. Default is a single space.",
             component: "text"
-          }, be({
+          }, ge({
             name: "sources.en_us",
             label: "Upload Global Images"
           }), {
@@ -1179,7 +1179,7 @@ _global.SENTRY_RELEASE = {
             label: "Upload Local Images",
             description: "The site will default to the global value, but use a local one on local sites if it exists here.",
             component: "group",
-            fields: ["de_de", "fr_fr", "it_it", "ja_jp", "ru_ru", "es_es", "es_mx", "pt_br", "ko_kr", "zh_tw", "pl_pl", "zh_hans"].map((e => be({
+            fields: ["de_de", "fr_fr", "it_it", "ja_jp", "ru_ru", "es_es", "es_mx", "pt_br", "ko_kr", "zh_tw", "pl_pl", "zh_hans"].map((e => ge({
               name: e
             })))
           }, Te({
@@ -1258,7 +1258,7 @@ _global.SENTRY_RELEASE = {
             label: "Background Repeat",
             component: "select",
             options: ["", "repeat", "no-repeat", "repeat-y", "repeat-x", "initial", "inherit"]
-          }), "Background Image" === a && l.push(...ge), {
+          }), "Background Image" === a && l.push(...be), {
             name: "image",
             label: a,
             component: "group",
@@ -1451,8 +1451,8 @@ _global.SENTRY_RELEASE = {
           name: m,
           label: p,
           description: u,
-          error: b,
-          children: g
+          error: g,
+          children: b
         } = e;
         const h = () => r ? (0, i.jsx)(n.c, {
           defaultSize: {
@@ -1462,8 +1462,8 @@ _global.SENTRY_RELEASE = {
           style: {
             paddingBottom: "10px"
           },
-          children: (0, l.cloneElement)(g, ...d)
-        }) : g;
+          children: (0, l.cloneElement)(b, ...d)
+        }) : b;
         return (0, i.jsxs)("div", {
           className: "rockstargames-modules-core-newswire-articlee8a5daf12553885a40529a38c92c1d67 FieldWrapper-sc-custom jpQZXK",
           style: t,
@@ -1474,9 +1474,9 @@ _global.SENTRY_RELEASE = {
               className: "rockstargames-modules-core-newswire-articlea0b2c6a5b66b849b487834caa1f6e3c8 FieldDescription-sc-custom cyKzVM",
               children: u ?? s?.description
             })]
-          }), (0, i.jsx)(h, {}), (b || c?.error) && (0, i.jsx)("div", {
+          }), (0, i.jsx)(h, {}), (g || c?.error) && (0, i.jsx)("div", {
             className: "FieldError_sc_custom",
-            children: b ?? c?.error
+            children: g ?? c?.error
           })]
         })
       }

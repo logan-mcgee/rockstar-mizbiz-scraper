@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "fb58099d-aa4c-41f1-9af3-d195a7ab6422", e._sentryDebugIdIdentifier = "sentry-dbid-fb58099d-aa4c-41f1-9af3-d195a7ab6422")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "9c7b544d-8734-4cda-934d-9281133c0497", e._sentryDebugIdIdentifier = "sentry-dbid-9c7b544d-8734-4cda-934d-9281133c0497")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -182,12 +182,12 @@ _global.SENTRY_RELEASE = {
           value: (0, s.makeVar)((0, s.webSettingsReactive)()?.currentCharId)
         }),
         y = e => v(e),
-        b = (0, s.setMakeVarItem)({
+        w = (0, s.setMakeVarItem)({
           key: "selectedCharacterTupleReactive",
           value: (0, s.makeVar)(null)
         }),
-        w = e => b(e),
-        _ = (0, s.setMakeVarItem)({
+        _ = e => w(e),
+        b = (0, s.setMakeVarItem)({
           key: "rockstarIdReactive",
           value: (0, s.makeVar)(null)
         }),
@@ -212,7 +212,7 @@ _global.SENTRY_RELEASE = {
             a = (0, s.useReactiveVar)(v),
             r = (0, s.useReactiveVar)(f),
             n = (0, s.useReactiveVar)(h),
-            c = (0, s.useReactiveVar)(b);
+            c = (0, s.useReactiveVar)(w);
           return {
             charactersNeeded: e,
             crewsNeeded: t,
@@ -227,7 +227,7 @@ _global.SENTRY_RELEASE = {
             setCurrentCharId: y,
             setHasNotifications: g,
             setNavOpen: p,
-            setSelectedCharacterTuple: w,
+            setSelectedCharacterTuple: _,
             setUserData: E,
             setJumpScMenuFocus: k
           }
@@ -243,9 +243,15 @@ _global.SENTRY_RELEASE = {
             currentCharId: a
           } = M(), n = (0, s.useRockstarToken)(), [c, o] = (0, r.useState)(), [i, u] = (0, s.useRockstarTokenReactive)(), l = (0, s.useRockstarTokenPing)(), [d, f] = (0, r.useState)(), [p, m] = (0, r.useState)(!1), [k, h] = (0, r.useState)(), g = void 0 === d, [v, y] = (0, r.useState)(1);
           return (0, r.useEffect)((() => {
-            e && y((e => e + 1))
+            e && (o({
+              ...c,
+              accountSynced: !1
+            }), y((e => e + 1)))
           }), [e]), (0, r.useEffect)((() => {
-            t && y((e => e + 1))
+            t && (o({
+              ...c,
+              accountSynced: !1
+            }), y((e => e + 1)))
           }), [t]), (0, r.useEffect)((() => {
             0 === v && o({
               ...c,
@@ -325,7 +331,7 @@ _global.SENTRY_RELEASE = {
               o({
                 ...c,
                 ...t
-              }), f(e), _(t.id)
+              }), f(e), b(t.id)
             }
           }), [n, p]), (0, r.useEffect)((() => {
             (async () => {

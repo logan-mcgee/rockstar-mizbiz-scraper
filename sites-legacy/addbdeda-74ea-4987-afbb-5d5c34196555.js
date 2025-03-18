@@ -21,13 +21,13 @@ _global.SENTRY_RELEASE = {
         value: !0
       });
       var n = r(35237),
-        o = r(48050),
-        a = r(19550);
-      (0, a.defineProperty)(Intl, "NumberFormat", {
+        a = r(48050),
+        o = r(19550);
+      (0, o.defineProperty)(Intl, "NumberFormat", {
         value: n.NumberFormat
-      }), (0, a.defineProperty)(Number.prototype, "toLocaleString", {
+      }), (0, o.defineProperty)(Number.prototype, "toLocaleString", {
         value: function(e, t) {
-          return (0, o.toLocaleString)(this, e, t)
+          return (0, a.toLocaleString)(this, e, t)
         }
       })
     },
@@ -36,31 +36,31 @@ _global.SENTRY_RELEASE = {
         value: !0
       }), t.NumberFormat = void 0;
       var n = r(11050),
-        o = r(19550),
-        a = r(47743),
+        a = r(19550),
+        o = r(47743),
         i = r(51451),
         l = n.__importDefault(r(10232)),
-        u = ["locale", "numberingSystem", "style", "currency", "currencyDisplay", "currencySign", "unit", "unitDisplay", "minimumIntegerDigits", "minimumFractionDigits", "maximumFractionDigits", "minimumSignificantDigits", "maximumSignificantDigits", "useGrouping", "notation", "compactDisplay", "signDisplay"];
+        c = ["locale", "numberingSystem", "style", "currency", "currencyDisplay", "currencySign", "unit", "unitDisplay", "minimumIntegerDigits", "minimumFractionDigits", "maximumFractionDigits", "minimumSignificantDigits", "maximumSignificantDigits", "useGrouping", "notation", "compactDisplay", "signDisplay"];
 
-      function c(e) {
-        return (0, o.FormatNumericToParts)(this, (0, o.ToIntlMathematicalValue)(e), {
+      function u(e) {
+        return (0, a.FormatNumericToParts)(this, (0, a.ToIntlMathematicalValue)(e), {
           getInternalSlots: l.default
         })
       }
       t.NumberFormat = function(e, r) {
-        if (!this || !(0, o.OrdinaryHasInstance)(t.NumberFormat, this)) return new t.NumberFormat(e, r);
-        (0, o.InitializeNumberFormat)(this, e, r, {
+        if (!this || !(0, a.OrdinaryHasInstance)(t.NumberFormat, this)) return new t.NumberFormat(e, r);
+        (0, a.InitializeNumberFormat)(this, e, r, {
           getInternalSlots: l.default,
           localeData: t.NumberFormat.localeData,
           availableLocales: t.NumberFormat.availableLocales,
           getDefaultLocale: t.NumberFormat.getDefaultLocale,
-          currencyDigitsData: a.currencyDigitsData,
+          currencyDigitsData: o.currencyDigitsData,
           numberingSystemNames: i.numberingSystemNames
         });
         var n = (0, l.default)(this),
-          u = n.dataLocale,
-          c = t.NumberFormat.localeData[u];
-        return (0, o.invariant)(void 0 !== c, "Cannot load locale-dependent data for ".concat(u, ".")), n.pl = (0, o.createMemoizedPluralRules)(u, {
+          c = n.dataLocale,
+          u = t.NumberFormat.localeData[c];
+        return (0, a.invariant)(void 0 !== u, "Cannot load locale-dependent data for ".concat(c, ".")), n.pl = (0, a.createMemoizedPluralRules)(c, {
           minimumFractionDigits: n.minimumFractionDigits,
           maximumFractionDigits: n.maximumFractionDigits,
           minimumIntegerDigits: n.minimumIntegerDigits,
@@ -69,33 +69,33 @@ _global.SENTRY_RELEASE = {
         }), this
       };
       try {
-        Object.defineProperty(c, "name", {
+        Object.defineProperty(u, "name", {
           value: "formatToParts",
           enumerable: !1,
           writable: !1,
           configurable: !0
         })
-      } catch (e) {}(0, o.defineProperty)(t.NumberFormat.prototype, "formatToParts", {
-        value: c
-      }), (0, o.defineProperty)(t.NumberFormat.prototype, "formatRange", {
+      } catch (e) {}(0, a.defineProperty)(t.NumberFormat.prototype, "formatToParts", {
+        value: u
+      }), (0, a.defineProperty)(t.NumberFormat.prototype, "formatRange", {
         value: function(e, t) {
-          return (0, o.FormatNumericRange)(this, (0, o.ToIntlMathematicalValue)(e), (0, o.ToIntlMathematicalValue)(t), {
+          return (0, a.FormatNumericRange)(this, (0, a.ToIntlMathematicalValue)(e), (0, a.ToIntlMathematicalValue)(t), {
             getInternalSlots: l.default
           })
         }
-      }), (0, o.defineProperty)(t.NumberFormat.prototype, "formatRangeToParts", {
+      }), (0, a.defineProperty)(t.NumberFormat.prototype, "formatRangeToParts", {
         value: function(e, t) {
-          return (0, o.FormatNumericRangeToParts)(this, (0, o.ToIntlMathematicalValue)(e), (0, o.ToIntlMathematicalValue)(t), {
+          return (0, a.FormatNumericRangeToParts)(this, (0, a.ToIntlMathematicalValue)(e), (0, a.ToIntlMathematicalValue)(t), {
             getInternalSlots: l.default
           })
         }
-      }), (0, o.defineProperty)(t.NumberFormat.prototype, "resolvedOptions", {
+      }), (0, a.defineProperty)(t.NumberFormat.prototype, "resolvedOptions", {
         value: function() {
-          if ("object" != typeof this || !(0, o.OrdinaryHasInstance)(t.NumberFormat, this)) throw TypeError("Method Intl.NumberFormat.prototype.resolvedOptions called on incompatible receiver");
-          for (var e = (0, l.default)(this), r = {}, n = 0, a = u; n < a.length; n++) {
-            var i = a[n],
-              c = e[i];
-            void 0 !== c && (r[i] = c)
+          if ("object" != typeof this || !(0, a.OrdinaryHasInstance)(t.NumberFormat, this)) throw TypeError("Method Intl.NumberFormat.prototype.resolvedOptions called on incompatible receiver");
+          for (var e = (0, l.default)(this), r = {}, n = 0, o = c; n < o.length; n++) {
+            var i = o[n],
+              u = e[i];
+            void 0 !== u && (r[i] = u)
           }
           return "morePrecision" === e.roundingType ? r.roundingPriority = "morePrecision" : "lessPrecision" === e.roundingType ? r.roundingPriority = "lessPrecision" : r.roundingPriority = "auto", r
         }
@@ -104,12 +104,12 @@ _global.SENTRY_RELEASE = {
         enumerable: !1,
         configurable: !0,
         get: function() {
-          if ("object" != typeof this || !(0, o.OrdinaryHasInstance)(t.NumberFormat, this)) throw TypeError("Intl.NumberFormat format property accessor called on incompatible receiver");
+          if ("object" != typeof this || !(0, a.OrdinaryHasInstance)(t.NumberFormat, this)) throw TypeError("Intl.NumberFormat format property accessor called on incompatible receiver");
           var e = (0, l.default)(this),
             r = e.boundFormat;
           if (void 0 === r) {
             r = function(t) {
-              return (0, o.FormatNumeric)(e, (0, o.ToIntlMathematicalValue)(t))
+              return (0, a.FormatNumeric)(e, (0, a.ToIntlMathematicalValue)(t))
             };
             try {
               Object.defineProperty(r, "name", {
@@ -132,24 +132,24 @@ _global.SENTRY_RELEASE = {
           value: "get format"
         })
       } catch (e) {}
-      Object.defineProperty(t.NumberFormat.prototype, "format", s), (0, o.defineProperty)(t.NumberFormat, "supportedLocalesOf", {
+      Object.defineProperty(t.NumberFormat.prototype, "format", s), (0, a.defineProperty)(t.NumberFormat, "supportedLocalesOf", {
         value: function(e, r) {
-          return (0, o.SupportedLocales)(t.NumberFormat.availableLocales, (0, o.CanonicalizeLocaleList)(e), r)
+          return (0, a.SupportedLocales)(t.NumberFormat.availableLocales, (0, a.CanonicalizeLocaleList)(e), r)
         }
       }), t.NumberFormat.__addLocaleData = function() {
         for (var e = [], r = 0; r < arguments.length; r++) e[r] = arguments[r];
-        for (var n = 0, o = e; n < o.length; n++) {
-          var a = o[n],
-            i = a.data,
-            l = a.locale,
-            u = new Intl.Locale(l).minimize().toString();
-          t.NumberFormat.localeData[l] = t.NumberFormat.localeData[u] = i, t.NumberFormat.availableLocales.add(u), t.NumberFormat.availableLocales.add(l), t.NumberFormat.__defaultLocale || (t.NumberFormat.__defaultLocale = u)
+        for (var n = 0, a = e; n < a.length; n++) {
+          var o = a[n],
+            i = o.data,
+            l = o.locale,
+            c = new Intl.Locale(l).minimize().toString();
+          t.NumberFormat.localeData[l] = t.NumberFormat.localeData[c] = i, t.NumberFormat.availableLocales.add(c), t.NumberFormat.availableLocales.add(l), t.NumberFormat.__defaultLocale || (t.NumberFormat.__defaultLocale = c)
         }
       }, t.NumberFormat.__addUnitData = function(e, r) {
         var n = t.NumberFormat.localeData[e];
         if (!n) throw new Error('Locale data for "'.concat(e, '" has not been loaded in NumberFormat. \nPlease __addLocaleData before adding additional unit data'));
-        for (var o in r.simple) n.units.simple[o] = r.simple[o];
-        for (var o in r.compound) n.units.compound[o] = r.compound[o]
+        for (var a in r.simple) n.units.simple[a] = r.simple[a];
+        for (var a in r.compound) n.units.compound[a] = r.compound[a]
       }, t.NumberFormat.__defaultLocale = "", t.NumberFormat.localeData = {}, t.NumberFormat.availableLocales = new Set, t.NumberFormat.getDefaultLocale = function() {
         return t.NumberFormat.__defaultLocale
       }, t.NumberFormat.polyfilled = !0;
@@ -281,7 +281,7 @@ _global.SENTRY_RELEASE = {
     11050: (e, t, r) => {
       r.r(t), r.d(t, {
         __addDisposableResource: () => R,
-        __assign: () => a,
+        __assign: () => o,
         __asyncDelegator: () => O,
         __asyncGenerator: () => D,
         __asyncValues: () => S,
@@ -293,15 +293,15 @@ _global.SENTRY_RELEASE = {
         __createBinding: () => b,
         __decorate: () => l,
         __disposeResources: () => A,
-        __esDecorate: () => c,
+        __esDecorate: () => u,
         __exportStar: () => _,
-        __extends: () => o,
+        __extends: () => a,
         __generator: () => y,
         __importDefault: () => E,
         __importStar: () => T,
         __makeTemplateObject: () => j,
         __metadata: () => d,
-        __param: () => u,
+        __param: () => c,
         __propKey: () => f,
         __read: () => g,
         __rest: () => i,
@@ -325,7 +325,7 @@ _global.SENTRY_RELEASE = {
         }, n(e, t)
       };
 
-      function o(e, t) {
+      function a(e, t) {
         if ("function" != typeof t && null !== t) throw new TypeError("Class extends value " + String(t) + " is not a constructor or null");
 
         function r() {
@@ -333,67 +333,67 @@ _global.SENTRY_RELEASE = {
         }
         n(e, t), e.prototype = null === t ? Object.create(t) : (r.prototype = t.prototype, new r)
       }
-      var a = function() {
-        return a = Object.assign || function(e) {
+      var o = function() {
+        return o = Object.assign || function(e) {
           for (var t, r = 1, n = arguments.length; r < n; r++)
-            for (var o in t = arguments[r]) Object.prototype.hasOwnProperty.call(t, o) && (e[o] = t[o]);
+            for (var a in t = arguments[r]) Object.prototype.hasOwnProperty.call(t, a) && (e[a] = t[a]);
           return e
-        }, a.apply(this, arguments)
+        }, o.apply(this, arguments)
       };
 
       function i(e, t) {
         var r = {};
         for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && t.indexOf(n) < 0 && (r[n] = e[n]);
         if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
-          var o = 0;
-          for (n = Object.getOwnPropertySymbols(e); o < n.length; o++) t.indexOf(n[o]) < 0 && Object.prototype.propertyIsEnumerable.call(e, n[o]) && (r[n[o]] = e[n[o]])
+          var a = 0;
+          for (n = Object.getOwnPropertySymbols(e); a < n.length; a++) t.indexOf(n[a]) < 0 && Object.prototype.propertyIsEnumerable.call(e, n[a]) && (r[n[a]] = e[n[a]])
         }
         return r
       }
 
       function l(e, t, r, n) {
-        var o, a = arguments.length,
-          i = a < 3 ? t : null === n ? n = Object.getOwnPropertyDescriptor(t, r) : n;
+        var a, o = arguments.length,
+          i = o < 3 ? t : null === n ? n = Object.getOwnPropertyDescriptor(t, r) : n;
         if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) i = Reflect.decorate(e, t, r, n);
         else
-          for (var l = e.length - 1; l >= 0; l--)(o = e[l]) && (i = (a < 3 ? o(i) : a > 3 ? o(t, r, i) : o(t, r)) || i);
-        return a > 3 && i && Object.defineProperty(t, r, i), i
+          for (var l = e.length - 1; l >= 0; l--)(a = e[l]) && (i = (o < 3 ? a(i) : o > 3 ? a(t, r, i) : a(t, r)) || i);
+        return o > 3 && i && Object.defineProperty(t, r, i), i
       }
 
-      function u(e, t) {
+      function c(e, t) {
         return function(r, n) {
           t(r, n, e)
         }
       }
 
-      function c(e, t, r, n, o, a) {
+      function u(e, t, r, n, a, o) {
         function i(e) {
           if (void 0 !== e && "function" != typeof e) throw new TypeError("Function expected");
           return e
         }
-        for (var l, u = n.kind, c = "getter" === u ? "get" : "setter" === u ? "set" : "value", s = !t && e ? n.static ? e : e.prototype : null, f = t || (s ? Object.getOwnPropertyDescriptor(s, n.name) : {}), m = !1, d = r.length - 1; d >= 0; d--) {
+        for (var l, c = n.kind, u = "getter" === c ? "get" : "setter" === c ? "set" : "value", s = !t && e ? n.static ? e : e.prototype : null, f = t || (s ? Object.getOwnPropertyDescriptor(s, n.name) : {}), m = !1, d = r.length - 1; d >= 0; d--) {
           var p = {};
           for (var y in n) p[y] = "access" === y ? {} : n[y];
           for (var y in n.access) p.access[y] = n.access[y];
           p.addInitializer = function(e) {
             if (m) throw new TypeError("Cannot add initializers after decoration has completed");
-            a.push(i(e || null))
+            o.push(i(e || null))
           };
-          var b = (0, r[d])("accessor" === u ? {
+          var b = (0, r[d])("accessor" === c ? {
             get: f.get,
             set: f.set
-          } : f[c], p);
-          if ("accessor" === u) {
+          } : f[u], p);
+          if ("accessor" === c) {
             if (void 0 === b) continue;
             if (null === b || "object" != typeof b) throw new TypeError("Object expected");
-            (l = i(b.get)) && (f.get = l), (l = i(b.set)) && (f.set = l), (l = i(b.init)) && o.unshift(l)
-          } else(l = i(b)) && ("field" === u ? o.unshift(l) : f[c] = l)
+            (l = i(b.get)) && (f.get = l), (l = i(b.set)) && (f.set = l), (l = i(b.init)) && a.unshift(l)
+          } else(l = i(b)) && ("field" === c ? a.unshift(l) : f[u] = l)
         }
         s && Object.defineProperty(s, n.name, f), m = !0
       }
 
       function s(e, t, r) {
-        for (var n = arguments.length > 2, o = 0; o < t.length; o++) r = n ? t[o].call(e, r) : t[o].call(e);
+        for (var n = arguments.length > 2, a = 0; a < t.length; a++) r = n ? t[a].call(e, r) : t[a].call(e);
         return n ? r : void 0
       }
 
@@ -413,39 +413,39 @@ _global.SENTRY_RELEASE = {
       }
 
       function p(e, t, r, n) {
-        return new(r || (r = Promise))((function(o, a) {
+        return new(r || (r = Promise))((function(a, o) {
           function i(e) {
             try {
-              u(n.next(e))
+              c(n.next(e))
             } catch (e) {
-              a(e)
+              o(e)
             }
           }
 
           function l(e) {
             try {
-              u(n.throw(e))
+              c(n.throw(e))
             } catch (e) {
-              a(e)
+              o(e)
             }
           }
 
-          function u(e) {
+          function c(e) {
             var t;
-            e.done ? o(e.value) : (t = e.value, t instanceof r ? t : new r((function(e) {
+            e.done ? a(e.value) : (t = e.value, t instanceof r ? t : new r((function(e) {
               e(t)
             }))).then(i, l)
           }
-          u((n = n.apply(e, t || [])).next())
+          c((n = n.apply(e, t || [])).next())
         }))
       }
 
       function y(e, t) {
-        var r, n, o, a = {
+        var r, n, a, o = {
             label: 0,
             sent: function() {
-              if (1 & o[0]) throw o[1];
-              return o[1]
+              if (1 & a[0]) throw a[1];
+              return a[1]
             },
             trys: [],
             ops: []
@@ -456,71 +456,71 @@ _global.SENTRY_RELEASE = {
         }), i;
 
         function l(l) {
-          return function(u) {
+          return function(c) {
             return function(l) {
               if (r) throw new TypeError("Generator is already executing.");
-              for (; i && (i = 0, l[0] && (a = 0)), a;) try {
-                if (r = 1, n && (o = 2 & l[0] ? n.return : l[0] ? n.throw || ((o = n.return) && o.call(n), 0) : n.next) && !(o = o.call(n, l[1])).done) return o;
-                switch (n = 0, o && (l = [2 & l[0], o.value]), l[0]) {
+              for (; i && (i = 0, l[0] && (o = 0)), o;) try {
+                if (r = 1, n && (a = 2 & l[0] ? n.return : l[0] ? n.throw || ((a = n.return) && a.call(n), 0) : n.next) && !(a = a.call(n, l[1])).done) return a;
+                switch (n = 0, a && (l = [2 & l[0], a.value]), l[0]) {
                   case 0:
                   case 1:
-                    o = l;
+                    a = l;
                     break;
                   case 4:
-                    return a.label++, {
+                    return o.label++, {
                       value: l[1],
                       done: !1
                     };
                   case 5:
-                    a.label++, n = l[1], l = [0];
+                    o.label++, n = l[1], l = [0];
                     continue;
                   case 7:
-                    l = a.ops.pop(), a.trys.pop();
+                    l = o.ops.pop(), o.trys.pop();
                     continue;
                   default:
-                    if (!((o = (o = a.trys).length > 0 && o[o.length - 1]) || 6 !== l[0] && 2 !== l[0])) {
-                      a = 0;
+                    if (!((a = (a = o.trys).length > 0 && a[a.length - 1]) || 6 !== l[0] && 2 !== l[0])) {
+                      o = 0;
                       continue
                     }
-                    if (3 === l[0] && (!o || l[1] > o[0] && l[1] < o[3])) {
-                      a.label = l[1];
+                    if (3 === l[0] && (!a || l[1] > a[0] && l[1] < a[3])) {
+                      o.label = l[1];
                       break
                     }
-                    if (6 === l[0] && a.label < o[1]) {
-                      a.label = o[1], o = l;
+                    if (6 === l[0] && o.label < a[1]) {
+                      o.label = a[1], a = l;
                       break
                     }
-                    if (o && a.label < o[2]) {
-                      a.label = o[2], a.ops.push(l);
+                    if (a && o.label < a[2]) {
+                      o.label = a[2], o.ops.push(l);
                       break
                     }
-                    o[2] && a.ops.pop(), a.trys.pop();
+                    a[2] && o.ops.pop(), o.trys.pop();
                     continue
                 }
-                l = t.call(e, a)
+                l = t.call(e, o)
               } catch (e) {
                 l = [6, e], n = 0
               } finally {
-                r = o = 0
+                r = a = 0
               }
               if (5 & l[0]) throw l[1];
               return {
                 value: l[0] ? l[1] : void 0,
                 done: !0
               }
-            }([l, u])
+            }([l, c])
           }
         }
       }
       var b = Object.create ? function(e, t, r, n) {
         void 0 === n && (n = r);
-        var o = Object.getOwnPropertyDescriptor(t, r);
-        o && !("get" in o ? !t.__esModule : o.writable || o.configurable) || (o = {
+        var a = Object.getOwnPropertyDescriptor(t, r);
+        a && !("get" in a ? !t.__esModule : a.writable || a.configurable) || (a = {
           enumerable: !0,
           get: function() {
             return t[r]
           }
-        }), Object.defineProperty(e, n, o)
+        }), Object.defineProperty(e, n, a)
       } : function(e, t, r, n) {
         void 0 === n && (n = r), e[n] = t[r]
       };
@@ -548,20 +548,20 @@ _global.SENTRY_RELEASE = {
       function g(e, t) {
         var r = "function" == typeof Symbol && e[Symbol.iterator];
         if (!r) return e;
-        var n, o, a = r.call(e),
+        var n, a, o = r.call(e),
           i = [];
         try {
           for (;
-            (void 0 === t || t-- > 0) && !(n = a.next()).done;) i.push(n.value)
+            (void 0 === t || t-- > 0) && !(n = o.next()).done;) i.push(n.value)
         } catch (e) {
-          o = {
+          a = {
             error: e
           }
         } finally {
           try {
-            n && !n.done && (r = a.return) && r.call(a)
+            n && !n.done && (r = o.return) && r.call(o)
           } finally {
-            if (o) throw o.error
+            if (a) throw a.error
           }
         }
         return i
@@ -575,15 +575,15 @@ _global.SENTRY_RELEASE = {
       function w() {
         for (var e = 0, t = 0, r = arguments.length; t < r; t++) e += arguments[t].length;
         var n = Array(e),
-          o = 0;
+          a = 0;
         for (t = 0; t < r; t++)
-          for (var a = arguments[t], i = 0, l = a.length; i < l; i++, o++) n[o] = a[i];
+          for (var o = arguments[t], i = 0, l = o.length; i < l; i++, a++) n[a] = o[i];
         return n
       }
 
       function P(e, t, r) {
         if (r || 2 === arguments.length)
-          for (var n, o = 0, a = t.length; o < a; o++) !n && o in t || (n || (n = Array.prototype.slice.call(t, 0, o)), n[o] = t[o]);
+          for (var n, a = 0, o = t.length; a < o; a++) !n && a in t || (n || (n = Array.prototype.slice.call(t, 0, a)), n[a] = t[a]);
         return e.concat(n || Array.prototype.slice.call(t))
       }
 
@@ -593,43 +593,43 @@ _global.SENTRY_RELEASE = {
 
       function D(e, t, r) {
         if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
-        var n, o = r.apply(e, t || []),
-          a = [];
+        var n, a = r.apply(e, t || []),
+          o = [];
         return n = Object.create(("function" == typeof AsyncIterator ? AsyncIterator : Object).prototype), i("next"), i("throw"), i("return", (function(e) {
           return function(t) {
-            return Promise.resolve(t).then(e, c)
+            return Promise.resolve(t).then(e, u)
           }
         })), n[Symbol.asyncIterator] = function() {
           return this
         }, n;
 
         function i(e, t) {
-          o[e] && (n[e] = function(t) {
+          a[e] && (n[e] = function(t) {
             return new Promise((function(r, n) {
-              a.push([e, t, r, n]) > 1 || l(e, t)
+              o.push([e, t, r, n]) > 1 || l(e, t)
             }))
           }, t && (n[e] = t(n[e])))
         }
 
         function l(e, t) {
           try {
-            (r = o[e](t)).value instanceof F ? Promise.resolve(r.value.v).then(u, c) : s(a[0][2], r)
+            (r = a[e](t)).value instanceof F ? Promise.resolve(r.value.v).then(c, u) : s(o[0][2], r)
           } catch (e) {
-            s(a[0][3], e)
+            s(o[0][3], e)
           }
           var r
         }
 
-        function u(e) {
+        function c(e) {
           l("next", e)
         }
 
-        function c(e) {
+        function u(e) {
           l("throw", e)
         }
 
         function s(e, t) {
-          e(t), a.shift(), a.length && l(a[0][0], a[0][1])
+          e(t), o.shift(), o.length && l(o[0][0], o[0][1])
         }
       }
 
@@ -641,13 +641,13 @@ _global.SENTRY_RELEASE = {
           return this
         }, t;
 
-        function n(n, o) {
+        function n(n, a) {
           t[n] = e[n] ? function(t) {
             return (r = !r) ? {
               value: F(e[n](t)),
               done: !1
-            } : o ? o(t) : t
-          } : o
+            } : a ? a(t) : t
+          } : a
         }
       }
 
@@ -660,7 +660,7 @@ _global.SENTRY_RELEASE = {
 
         function n(r) {
           t[r] = e[r] && function(t) {
-            return new Promise((function(n, o) {
+            return new Promise((function(n, a) {
               ! function(e, t, r, n) {
                 Promise.resolve(n).then((function(t) {
                   e({
@@ -668,7 +668,7 @@ _global.SENTRY_RELEASE = {
                     done: r
                   })
                 }), t)
-              }(n, o, (t = e[r](t)).done, t.value)
+              }(n, a, (t = e[r](t)).done, t.value)
             }))
           }
         }
@@ -715,11 +715,11 @@ _global.SENTRY_RELEASE = {
         return "m" === r ? n : "a" === r ? n.call(e) : n ? n.value : t.get(e)
       }
 
-      function k(e, t, r, n, o) {
+      function k(e, t, r, n, a) {
         if ("m" === n) throw new TypeError("Private method is not writable");
-        if ("a" === n && !o) throw new TypeError("Private accessor was defined without a setter");
-        if ("function" == typeof t ? e !== t || !o : !t.has(e)) throw new TypeError("Cannot write private member to an object whose class did not declare it");
-        return "a" === n ? o.call(e, r) : o ? o.value = r : t.set(e, r), r
+        if ("a" === n && !a) throw new TypeError("Private accessor was defined without a setter");
+        if ("function" == typeof t ? e !== t || !a : !t.has(e)) throw new TypeError("Cannot write private member to an object whose class did not declare it");
+        return "a" === n ? a.call(e, r) : a ? a.value = r : t.set(e, r), r
       }
 
       function M(e, t) {
@@ -730,19 +730,19 @@ _global.SENTRY_RELEASE = {
       function R(e, t, r) {
         if (null != t) {
           if ("object" != typeof t && "function" != typeof t) throw new TypeError("Object expected.");
-          var n, o;
+          var n, a;
           if (r) {
             if (!Symbol.asyncDispose) throw new TypeError("Symbol.asyncDispose is not defined.");
             n = t[Symbol.asyncDispose]
           }
           if (void 0 === n) {
             if (!Symbol.dispose) throw new TypeError("Symbol.dispose is not defined.");
-            n = t[Symbol.dispose], r && (o = n)
+            n = t[Symbol.dispose], r && (a = n)
           }
           if ("function" != typeof n) throw new TypeError("Object not disposable.");
-          o && (n = function() {
+          a && (n = function() {
             try {
-              o.call(this)
+              a.call(this)
             } catch (e) {
               return Promise.reject(e)
             }
@@ -766,13 +766,13 @@ _global.SENTRY_RELEASE = {
           e.error = e.hasError ? new x(t, e.error, "An error was suppressed during disposal.") : t, e.hasError = !0
         }
         var r, n = 0;
-        return function o() {
+        return function a() {
           for (; r = e.stack.pop();) try {
-            if (!r.async && 1 === n) return n = 0, e.stack.push(r), Promise.resolve().then(o);
+            if (!r.async && 1 === n) return n = 0, e.stack.push(r), Promise.resolve().then(a);
             if (r.dispose) {
-              var a = r.dispose.call(r.value);
-              if (r.async) return n |= 2, Promise.resolve(a).then(o, (function(e) {
-                return t(e), o()
+              var o = r.dispose.call(r.value);
+              if (r.async) return n |= 2, Promise.resolve(o).then(a, (function(e) {
+                return t(e), a()
               }))
             } else n |= 1
           } catch (e) {
@@ -784,17 +784,17 @@ _global.SENTRY_RELEASE = {
       }
 
       function C(e, t) {
-        return "string" == typeof e && /^\.\.?\//.test(e) ? e.replace(/\.(tsx)$|((?:\.d)?)((?:\.[^./]+?)?)\.([cm]?)ts$/i, (function(e, r, n, o, a) {
-          return r ? t ? ".jsx" : ".js" : !n || o && a ? n + o + "." + a.toLowerCase() + "js" : e
+        return "string" == typeof e && /^\.\.?\//.test(e) ? e.replace(/\.(tsx)$|((?:\.d)?)((?:\.[^./]+?)?)\.([cm]?)ts$/i, (function(e, r, n, a, o) {
+          return r ? t ? ".jsx" : ".js" : !n || a && o ? n + a + "." + o.toLowerCase() + "js" : e
         })) : e
       }
       const K = {
-        __extends: o,
-        __assign: a,
+        __extends: a,
+        __assign: o,
         __rest: i,
         __decorate: l,
-        __param: u,
-        __esDecorate: c,
+        __param: c,
+        __esDecorate: u,
         __runInitializers: s,
         __propKey: f,
         __setFunctionName: m,

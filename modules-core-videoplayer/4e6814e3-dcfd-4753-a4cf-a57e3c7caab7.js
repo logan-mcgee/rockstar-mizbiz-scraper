@@ -24,12 +24,12 @@ _global.SENTRY_RELEASE = {
             ordinal: ["other"]
           },
           fn: function(e, a) {
-            var d = String(e).split("."),
-              l = d[0],
-              o = !d[1],
-              n = l.slice(-1),
-              t = l.slice(-2);
-            return a ? "other" : 1 == e && o ? "one" : o && n >= 2 && n <= 4 && (t < 12 || t > 14) ? "few" : o && 1 != l && (0 == n || 1 == n) || o && n >= 5 && n <= 9 || o && t >= 12 && t <= 14 ? "many" : "other"
+            var l = String(e).split("."),
+              d = l[0],
+              o = !l[1],
+              n = d.slice(-1),
+              t = d.slice(-2);
+            return a ? "other" : 1 == e && o ? "one" : o && n >= 2 && n <= 4 && (t < 12 || t > 14) ? "few" : o && 1 != d && (0 == n || 1 == n) || o && n >= 5 && n <= 9 || o && t >= 12 && t <= 14 ? "many" : "other"
           }
         },
         locale: "pl"

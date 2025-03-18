@@ -211,7 +211,7 @@ _global.SENTRY_RELEASE = {
       "use strict";
       i.r(n), i.d(n, {
         Gif: () => y,
-        HashSelector: () => g
+        HashSelector: () => b
       });
       const a = "rockstargames-modules-core-gif-viewera19bcd2b98d91e60c43b9de146e20f4e";
       var t = i(1029);
@@ -235,14 +235,14 @@ _global.SENTRY_RELEASE = {
       };
       var r = i(310);
       var l = i(2229),
-        d = i(5966);
-      const s = (0, d.setContextItem)({
+        s = i(5966);
+      const d = (0, s.setContextItem)({
           context: (0, l.createContext)(),
           key: "tinaPayloadContext"
         }),
         {
           Provider: c
-        } = s,
+        } = d,
         u = function() {
           let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "";
           return {
@@ -271,8 +271,8 @@ _global.SENTRY_RELEASE = {
             height: a,
             resizable: o,
             field: r,
-            input: d,
-            meta: s,
+            input: s,
+            meta: d,
             name: c,
             label: u,
             description: f,
@@ -287,7 +287,7 @@ _global.SENTRY_RELEASE = {
             style: {
               paddingBottom: "10px"
             },
-            children: (0, l.cloneElement)(k, ...d)
+            children: (0, l.cloneElement)(k, ...s)
           }) : k;
           return (0, t.jsxs)("div", {
             className: "rockstargames-modules-core-gif-viewere8a5daf12553885a40529a38c92c1d67 FieldWrapper-sc-custom jpQZXK",
@@ -299,9 +299,9 @@ _global.SENTRY_RELEASE = {
                 className: "rockstargames-modules-core-gif-viewera0b2c6a5b66b849b487834caa1f6e3c8 FieldDescription-sc-custom cyKzVM",
                 children: f ?? r?.description
               })]
-            }), (0, t.jsx)(h, {}), (v || s?.error) && (0, t.jsx)("div", {
+            }), (0, t.jsx)(h, {}), (v || d?.error) && (0, t.jsx)("div", {
               className: "FieldError_sc_custom",
-              children: v ?? s?.error
+              children: v ?? d?.error
             })]
           })
         },
@@ -325,7 +325,7 @@ _global.SENTRY_RELEASE = {
         }
       };
       var p = i(4235);
-      const b = e => {
+      const g = e => {
           let {
             field: n,
             input: i,
@@ -333,7 +333,7 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             data: r
-          } = (0, d.useQuery)(p.GifsList);
+          } = (0, s.useQuery)(p.GifsList);
           return (0, t.jsx)(v, {
             name: i.name || n.name || n.label,
             label: n.label,
@@ -353,7 +353,7 @@ _global.SENTRY_RELEASE = {
             })
           })
         },
-        g = function() {
+        b = function() {
           let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
           return {
             label: e?.label ?? "Gif hash",
@@ -365,7 +365,7 @@ _global.SENTRY_RELEASE = {
                 input: i,
                 meta: a
               } = e;
-              return (0, t.jsx)(b, {
+              return (0, t.jsx)(g, {
                 field: n,
                 input: i,
                 meta: a
@@ -384,11 +384,11 @@ _global.SENTRY_RELEASE = {
               name: "name",
               component: "text",
               description: "Block label for internal use only"
-            }, g({
+            }, b({
               group: "hash.mobile",
               label: "Mobile Source",
               description: "(If responsive, only Mobile Source is needed)"
-            }), g({
+            }), b({
               group: "hash.desktop",
               label: "Desktop Source"
             }), (e = {
@@ -580,8 +580,8 @@ _global.SENTRY_RELEASE = {
         for (o.forEach((function(e) {
             l.add(e)
           })); l.size > 0;) {
-          var d = l;
-          l = new Set, d.forEach((function(e) {
+          var s = l;
+          l = new Set, s.forEach((function(e) {
             r.has(e) || (r.add(e), (a[e] || new Set).forEach((function(e) {
               l.add(e)
             })))
@@ -807,8 +807,8 @@ _global.SENTRY_RELEASE = {
         for (o.forEach((function(e) {
             l.add(e)
           })); l.size > 0;) {
-          var d = l;
-          l = new Set, d.forEach((function(e) {
+          var s = l;
+          l = new Set, s.forEach((function(e) {
             r.has(e) || (r.add(e), (a[e] || new Set).forEach((function(e) {
               l.add(e)
             })))

@@ -205,8 +205,8 @@ _global.SENTRY_RELEASE = {
           metaUrlOverride: u
         } = e;
         const p = (0, l.useIntl)(),
-          b = (0, t.useNavigate)(),
-          y = (0, t.useLocation)(),
+          y = (0, t.useNavigate)(),
+          b = (0, t.useLocation)(),
           v = (0, i.useLocale)(),
           h = (0, i.useQueryParams)(),
           N = (0, n.useRef)(),
@@ -217,8 +217,8 @@ _global.SENTRY_RELEASE = {
               o = n ?? t ?? null,
               r = h.get("country");
             if (e) {
-              const a = `${y.pathname}${h.get("country")?`?country=${r}`:""}${s}`;
-              b(a), e.preventDefault()
+              const a = `${b.pathname}${h.get("country")?`?country=${r}`:""}${s}`;
+              y(a), e.preventDefault()
             }
             o && window.scroll(0, o.offsetTop - N.current.getBoundingClientRect().height - 60)
           },
@@ -249,13 +249,13 @@ _global.SENTRY_RELEASE = {
                 const a = h.get("country"),
                   s = e.href.split("#")[1],
                   n = document.getElementsByTagName("base")[0]?.getAttribute("href");
-                e.setAttribute("href", `${n}${y.pathname.replace("/","")}${null!==a?`?country=${a}`:""}#${s}`)
+                e.setAttribute("href", `${n}${b.pathname.replace("/","")}${null!==a?`?country=${a}`:""}#${s}`)
               }
             })(e), e.addEventListener("click", (e => {
               w(e, !1)
             }))
-          })), "" !== y.hash && setTimeout((() => {
-            w(!1, y.hash)
+          })), "" !== b.hash && setTimeout((() => {
+            w(!1, b.hash)
           }), 10)
         }), [M]);
         const {
@@ -279,7 +279,7 @@ _global.SENTRY_RELEASE = {
                   country: p.formatMessage(g[`rockstargames_company_info_${e}`])
                 });
                 return (0, c.jsx)(r.A, {
-                  to: `${y.pathname}?country=${e}`,
+                  to: `${b.pathname}?country=${e}`,
                   className: k[e],
                   title: s,
                   children: (0, c.jsx)(d, {

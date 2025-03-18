@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "24381224-bdbd-4519-9094-90bc42245ae6", e._sentryDebugIdIdentifier = "sentry-dbid-24381224-bdbd-4519-9094-90bc42245ae6")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "b4bf1d2b-247e-443e-b1af-fdba4518530d", e._sentryDebugIdIdentifier = "sentry-dbid-b4bf1d2b-247e-443e-b1af-fdba4518530d")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -33,12 +33,12 @@ _global.SENTRY_RELEASE = {
         return function e(n, i, l) {
           l = l || 1, Object.keys(n).forEach((function(u) {
             const d = n[u],
-              p = r.safe && Array.isArray(d),
-              m = Object.prototype.toString.call(d),
-              f = t(d),
-              y = "[object Object]" === m || "[object Array]" === m,
+              f = r.safe && Array.isArray(d),
+              p = Object.prototype.toString.call(d),
+              m = t(d),
+              y = "[object Object]" === p || "[object Array]" === p,
               b = i ? i + a + s(u) : s(u);
-            if (!p && !f && y && Object.keys(d).length && (!r.maxDepth || l < o)) return e(d, b, l + 1);
+            if (!f && !m && y && Object.keys(d).length && (!r.maxDepth || l < o)) return e(d, b, l + 1);
             c[b] = d
           }))
         }(e), c
@@ -69,15 +69,15 @@ _global.SENTRY_RELEASE = {
           const n = t.split(s).map(i);
           let r = u(n.shift()),
             d = u(n[0]),
-            p = l;
+            f = l;
           for (; void 0 !== d;) {
             if ("__proto__" === r) return;
-            const e = Object.prototype.toString.call(p[r]),
+            const e = Object.prototype.toString.call(f[r]),
               t = "[object Object]" === e || "[object Array]" === e;
-            if (!c && !t && void 0 !== p[r]) return;
-            (c && !t || !c && null == p[r]) && (p[r] = "number" != typeof d || o.object ? {} : []), p = p[r], n.length > 0 && (r = u(n.shift()), d = u(n[0]))
+            if (!c && !t && void 0 !== f[r]) return;
+            (c && !t || !c && null == f[r]) && (f[r] = "number" != typeof d || o.object ? {} : []), f = f[r], n.length > 0 && (r = u(n.shift()), d = u(n[0]))
           }
-          p[r] = e(a[t], o)
+          f[r] = e(a[t], o)
         })), l
       }
     },
@@ -138,13 +138,13 @@ _global.SENTRY_RELEASE = {
       n.r(t), n.d(t, {
         InViewTracker: () => v,
         TinaParser: () => w,
-        TinaPayloadProvider: () => p.o,
+        TinaPayloadProvider: () => f.o,
         recursiveNestedTemplates: () => x,
         useGenerateCdnSource: () => O.jS,
         useGetCdnSource: () => O.C1,
         useImageParser: () => O.S1,
         useTinaComponents: () => d,
-        useTinaPayload: () => p.i,
+        useTinaPayload: () => f.i,
         useTranslations: () => b
       });
       var r = n(62229),
@@ -170,9 +170,9 @@ _global.SENTRY_RELEASE = {
           })
         },
         d = () => (0, r.useContext)(i);
-      var p = n(68430),
-        m = n(91689),
-        f = n.n(m),
+      var f = n(68430),
+        p = n(91689),
+        m = n.n(p),
         y = n(87024);
       const b = e => {
         let {
@@ -192,7 +192,7 @@ _global.SENTRY_RELEASE = {
             if (!e || !o().has(e, "key") || e.translated) return;
             const t = a[e.key] ?? null;
             if (!t) return;
-            const n = f()(t);
+            const n = m()(t);
             Object.keys(n).map((t => {
               o().set(e, t, n[t])
             })), o().set(e, "translated", !0), Object.freeze(e)
@@ -276,14 +276,14 @@ _global.SENTRY_RELEASE = {
                     whatever: 1
                   }
                 }),
-                p = [...e?.translations ?? []].reverse(),
-                m = `componentProps_${(0,g.A)()}`;
+                f = [...e?.translations ?? []].reverse(),
+                p = `componentProps_${(0,g.A)()}`;
               return (0, r.createElement)(d, {
                 ...n?.meta,
                 ...e,
                 ...a,
-                t: e => p.find((t => t?._key === e))?.value ?? e,
-                key: m
+                t: e => f.find((t => t?._key === e))?.value ?? e,
+                key: p
               }, i)
             };
             return n?.[y.ZH]?.length ? s(n) : null
@@ -300,11 +300,11 @@ _global.SENTRY_RELEASE = {
             components: n = {},
             componentProps: a = {}
           } = e;
-          const s = (0, p.i)(),
+          const s = (0, f.i)(),
             [i, l] = (0, r.useState)(null),
-            [m, f] = (0, r.useState)(null);
+            [p, m] = (0, r.useState)(null);
           (0, r.useEffect)((() => {
-            t?.payload && l(t.payload), t?.variables && f(t.variables)
+            t?.payload && l(t.payload), t?.variables && m(t.variables)
           }), [t]);
           const [y] = (0, r.useState)({
             ...n,
@@ -345,7 +345,7 @@ _global.SENTRY_RELEASE = {
             payload: i
           }), k = b({
             payload: i,
-            variables: m
+            variables: p
           });
           return (0, r.useMemo)((() => {
             if (!i) return null;
@@ -358,7 +358,7 @@ _global.SENTRY_RELEASE = {
                   prod: n
                 }
               };
-            return (0, c.jsx)(p.o, {
+            return (0, c.jsx)(f.o, {
               payload: r,
               children: (0, c.jsx)(u, {
                 components: y,

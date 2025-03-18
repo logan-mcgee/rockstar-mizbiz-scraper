@@ -90,15 +90,15 @@ _global.SENTRY_RELEASE = {
         };
       var o = s(31879),
         g = s.n(o),
-        b = s(92440),
-        m = s(95966);
+        m = s(92440),
+        b = s(95966);
       const f = e => {
           let {
             impressionTracking: a,
             gtm: s = {},
             children: t
           } = e;
-          return a?.shouldTrack ? (0, d.jsx)(b.InViewTracker, {
+          return a?.shouldTrack ? (0, d.jsx)(m.InViewTracker, {
             threshold: a?.threshold,
             gtm: s,
             children: t
@@ -144,7 +144,7 @@ _global.SENTRY_RELEASE = {
           } = e;
           return (0, d.jsx)("div", {
             style: s,
-            className: (0, m.classList)("rockstargames-sites-gta-gen9d38af92e8657708abd3dc5295e62476c", l),
+            className: (0, b.classList)("rockstargames-sites-gta-gen9d38af92e8657708abd3dc5295e62476c", l),
             id: i,
             "data-testid": "standard-group-of-items",
             children: a.map((e => (0, d.jsx)(f, {
@@ -153,7 +153,7 @@ _global.SENTRY_RELEASE = {
               children: (0, d.jsx)(u, {
                 to: e?.to,
                 children: (0, d.jsxs)("div", {
-                  className: (0, m.classList)("rockstargames-sites-gta-gen9a9b63d3aa2f18fa6c84b19c8993a7893", e.className),
+                  className: (0, b.classList)("rockstargames-sites-gta-gen9a9b63d3aa2f18fa6c84b19c8993a7893", e.className),
                   style: e?.style ?? {},
                   ...e?.props,
                   children: [e?.image || e?.videoId ? (0, d.jsx)(p, {
