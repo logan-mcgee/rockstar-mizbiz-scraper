@@ -286,7 +286,7 @@ _global.SENTRY_RELEASE = {
         __asyncGenerator: () => D,
         __asyncValues: () => S,
         __await: () => F,
-        __awaiter: () => d,
+        __awaiter: () => p,
         __classPrivateFieldGet: () => L,
         __classPrivateFieldIn: () => M,
         __classPrivateFieldSet: () => k,
@@ -300,7 +300,7 @@ _global.SENTRY_RELEASE = {
         __importDefault: () => E,
         __importStar: () => T,
         __makeTemplateObject: () => j,
-        __metadata: () => p,
+        __metadata: () => d,
         __param: () => c,
         __propKey: () => f,
         __read: () => h,
@@ -371,18 +371,18 @@ _global.SENTRY_RELEASE = {
           if (void 0 !== e && "function" != typeof e) throw new TypeError("Function expected");
           return e
         }
-        for (var l, c = n.kind, u = "getter" === c ? "get" : "setter" === c ? "set" : "value", s = !t && e ? n.static ? e : e.prototype : null, f = t || (s ? Object.getOwnPropertyDescriptor(s, n.name) : {}), m = !1, p = r.length - 1; p >= 0; p--) {
-          var d = {};
-          for (var y in n) d[y] = "access" === y ? {} : n[y];
-          for (var y in n.access) d.access[y] = n.access[y];
-          d.addInitializer = function(e) {
+        for (var l, c = n.kind, u = "getter" === c ? "get" : "setter" === c ? "set" : "value", s = !t && e ? n.static ? e : e.prototype : null, f = t || (s ? Object.getOwnPropertyDescriptor(s, n.name) : {}), m = !1, d = r.length - 1; d >= 0; d--) {
+          var p = {};
+          for (var y in n) p[y] = "access" === y ? {} : n[y];
+          for (var y in n.access) p.access[y] = n.access[y];
+          p.addInitializer = function(e) {
             if (m) throw new TypeError("Cannot add initializers after decoration has completed");
             o.push(i(e || null))
           };
-          var b = (0, r[p])("accessor" === c ? {
+          var b = (0, r[d])("accessor" === c ? {
             get: f.get,
             set: f.set
-          } : f[u], d);
+          } : f[u], p);
           if ("accessor" === c) {
             if (void 0 === b) continue;
             if (null === b || "object" != typeof b) throw new TypeError("Object expected");
@@ -408,11 +408,11 @@ _global.SENTRY_RELEASE = {
         })
       }
 
-      function p(e, t) {
+      function d(e, t) {
         if ("object" == typeof Reflect && "function" == typeof Reflect.metadata) return Reflect.metadata(e, t)
       }
 
-      function d(e, t, r, n) {
+      function p(e, t, r, n) {
         return new(r || (r = Promise))((function(a, o) {
           function i(e) {
             try {
@@ -798,8 +798,8 @@ _global.SENTRY_RELEASE = {
         __runInitializers: s,
         __propKey: f,
         __setFunctionName: m,
-        __metadata: p,
-        __awaiter: d,
+        __metadata: d,
+        __awaiter: p,
         __generator: y,
         __createBinding: b,
         __exportStar: _,

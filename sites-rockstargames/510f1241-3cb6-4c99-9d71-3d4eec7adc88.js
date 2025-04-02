@@ -20,8 +20,8 @@ _global.SENTRY_RELEASE = {
       s.r(a), s.d(a, {
         default: () => o
       });
-      var t = s(62229),
-        d = s(9623),
+      var d = s(62229),
+        t = s(9623),
         n = s(2918);
       const o = () => {
         const {
@@ -30,10 +30,10 @@ _global.SENTRY_RELEASE = {
           hasGtaPlus: a
         } = e ?? {}, {
           setCharactersNeeded: s
-        } = (0, n.useRockstarUserState)(), o = (0, d.useNavigate)();
-        return (0, t.useLayoutEffect)((() => (s("gtao"), () => {
+        } = (0, n.useRockstarUserState)(), o = (0, t.useNavigate)();
+        return (0, d.useLayoutEffect)((() => (s("gtao"), () => {
           s(null)
-        })), []), (0, t.useEffect)((() => {
+        })), []), (0, d.useEffect)((() => {
           void 0 !== a && o(a ? "./benefits" : "./join", {
             replace: !0
           })

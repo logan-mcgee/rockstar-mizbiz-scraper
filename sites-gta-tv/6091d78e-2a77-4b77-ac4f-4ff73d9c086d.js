@@ -19,8 +19,8 @@ _global.SENTRY_RELEASE = {
     2469: (e, t, o) => {
       var n = o(2229),
         s = Symbol.for("react.element"),
-        a = (Symbol.for("react.fragment"), Object.prototype.hasOwnProperty),
-        r = n.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        r = (Symbol.for("react.fragment"), Object.prototype.hasOwnProperty),
+        a = n.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         d = {
           key: !0,
           ref: !0,
@@ -32,7 +32,7 @@ _global.SENTRY_RELEASE = {
         var n, l = {},
           i = null,
           f = null;
-        for (n in void 0 !== o && (i = "" + o), void 0 !== t.key && (i = "" + t.key), void 0 !== t.ref && (f = t.ref), t) a.call(t, n) && !d.hasOwnProperty(n) && (l[n] = t[n]);
+        for (n in void 0 !== o && (i = "" + o), void 0 !== t.key && (i = "" + t.key), void 0 !== t.ref && (f = t.ref), t) r.call(t, n) && !d.hasOwnProperty(n) && (l[n] = t[n]);
         if (e && e.defaultProps)
           for (n in t = e.defaultProps) void 0 === l[n] && (l[n] = t[n]);
         return {
@@ -41,7 +41,7 @@ _global.SENTRY_RELEASE = {
           key: i,
           ref: f,
           props: l,
-          _owner: r.current
+          _owner: a.current
         }
       }
       t.jsx = l, t.jsxs = l
@@ -51,7 +51,7 @@ _global.SENTRY_RELEASE = {
     },
     62: (e, t, o) => {
       o.d(t, {
-        A: () => a,
+        A: () => r,
         C: () => n
       });
       const n = {
@@ -70,7 +70,7 @@ _global.SENTRY_RELEASE = {
           },
           cookieIdentifier: "prod"
         }],
-        a = () => {
+        r = () => {
           let e;
           const {
             location: t
@@ -80,12 +80,12 @@ _global.SENTRY_RELEASE = {
               site: n,
               subDomain: s
             }, !0)
-          })) >= 0)), a = s[n >= 0 ? n : 0];
+          })) >= 0)), r = s[n >= 0 ? n : 0];
           return e || (e = {
             site: "www",
             subDomain: "local"
           }), {
-            ...a,
+            ...r,
             currentSite: e
           }
         }

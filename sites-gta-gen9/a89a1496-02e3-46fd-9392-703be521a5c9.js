@@ -2,7 +2,7 @@
   try {
     var n = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       a = (new Error).stack;
-    a && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[a] = "1de350a3-c2f2-4b8c-9f00-6f404efe5774", n._sentryDebugIdIdentifier = "sentry-dbid-1de350a3-c2f2-4b8c-9f00-6f404efe5774")
+    a && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[a] = "a89a1496-02e3-46fd-9392-703be521a5c9", n._sentryDebugIdIdentifier = "sentry-dbid-a89a1496-02e3-46fd-9392-703be521a5c9")
   } catch (n) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -1201,9 +1201,9 @@ _global.SENTRY_RELEASE = {
                         level: 4,
                         className: [Nn.heading, Nn.fadeIn].join(" "),
                         children: "twitchdrops" === p ? (0, h.jsx)(mn.FormattedMessage, {
-                          ...En.ns_cta_title
-                        }) : (0, h.jsx)(mn.FormattedMessage, {
                           ...En.ns_cta_title_twitchdrops
+                        }) : (0, h.jsx)(mn.FormattedMessage, {
+                          ...En.ns_cta_title
                         })
                       }), (0, h.jsx)(fn.Paragraph, {
                         className: [Nn.copy, Nn.fadeIn].join(" "),

@@ -20,8 +20,8 @@ _global.SENTRY_RELEASE = {
       var o = r(62229),
         t = Symbol.for("react.element"),
         n = Symbol.for("react.fragment"),
-        s = Object.prototype.hasOwnProperty,
-        d = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        d = Object.prototype.hasOwnProperty,
+        s = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         f = {
           key: !0,
           ref: !0,
@@ -33,7 +33,7 @@ _global.SENTRY_RELEASE = {
         var o, n = {},
           l = null,
           c = null;
-        for (o in void 0 !== r && (l = "" + r), void 0 !== a.key && (l = "" + a.key), void 0 !== a.ref && (c = a.ref), a) s.call(a, o) && !f.hasOwnProperty(o) && (n[o] = a[o]);
+        for (o in void 0 !== r && (l = "" + r), void 0 !== a.key && (l = "" + a.key), void 0 !== a.ref && (c = a.ref), a) d.call(a, o) && !f.hasOwnProperty(o) && (n[o] = a[o]);
         if (e && e.defaultProps)
           for (o in a = e.defaultProps) void 0 === n[o] && (n[o] = a[o]);
         return {
@@ -42,7 +42,7 @@ _global.SENTRY_RELEASE = {
           key: l,
           ref: c,
           props: n,
-          _owner: d.current
+          _owner: s.current
         }
       }
       a.Fragment = n, a.jsx = l, a.jsxs = l

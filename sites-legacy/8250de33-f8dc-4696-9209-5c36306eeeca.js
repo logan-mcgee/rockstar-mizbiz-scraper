@@ -20,8 +20,8 @@ _global.SENTRY_RELEASE = {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => l,
-        Lightbox_Dialog_Description: () => c,
-        Lightbox_Dialog_Title: () => f,
+        Lightbox_Dialog_Description: () => f,
+        Lightbox_Dialog_Title: () => c,
         Lightbox_Download_Button_Label: () => L,
         Lightbox_Download_Button_Tooltip: () => h,
         Lightbox_Open_Button_Label: () => r,
@@ -48,8 +48,8 @@ _global.SENTRY_RELEASE = {
         L = "다운로드",
         h = "다운로드",
         r = "라이트박스에서 이미지 열기",
-        f = "라이트박스 이미지",
-        c = "대체 문구: {alt}",
+        c = "라이트박스 이미지",
+        f = "대체 문구: {alt}",
         p = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: l,
@@ -64,8 +64,8 @@ _global.SENTRY_RELEASE = {
           Lightbox_Download_Button_Label: L,
           Lightbox_Download_Button_Tooltip: h,
           Lightbox_Open_Button_Label: r,
-          Lightbox_Dialog_Title: f,
-          Lightbox_Dialog_Description: c
+          Lightbox_Dialog_Title: c,
+          Lightbox_Dialog_Description: f
         }
     }
   }

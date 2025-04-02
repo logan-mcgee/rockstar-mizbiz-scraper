@@ -29,23 +29,23 @@ _global.SENTRY_RELEASE = {
           __source: !0
         };
 
-      function f(e, a, t) {
+      function c(e, a, t) {
         var o, r = {},
-          f = null,
-          c = null;
-        for (o in void 0 !== t && (f = "" + t), void 0 !== a.key && (f = "" + a.key), void 0 !== a.ref && (c = a.ref), a) s.call(a, o) && !l.hasOwnProperty(o) && (r[o] = a[o]);
+          c = null,
+          f = null;
+        for (o in void 0 !== t && (c = "" + t), void 0 !== a.key && (c = "" + a.key), void 0 !== a.ref && (f = a.ref), a) s.call(a, o) && !l.hasOwnProperty(o) && (r[o] = a[o]);
         if (e && e.defaultProps)
           for (o in a = e.defaultProps) void 0 === r[o] && (r[o] = a[o]);
         return {
           $$typeof: n,
           type: e,
-          key: f,
-          ref: c,
+          key: c,
+          ref: f,
           props: r,
           _owner: d.current
         }
       }
-      a.Fragment = r, a.jsx = f, a.jsxs = f
+      a.Fragment = r, a.jsx = c, a.jsxs = c
     },
     73855: (e, a, t) => {
       e.exports = t(32469)

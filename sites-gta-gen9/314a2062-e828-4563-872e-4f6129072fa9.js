@@ -95,47 +95,47 @@ _global.SENTRY_RELEASE = {
         s6: () => l
       });
       var t = o(3709),
-        f = o(62229);
+        n = o(62229);
 
-      function n(...e) {
+      function f(...e) {
         return a => e.forEach((e => function(e, a) {
           "function" == typeof e ? e(a) : null != e && (e.current = a)
         }(e, a)))
       }
-      const d = (0, f.forwardRef)(((e, a) => {
+      const d = (0, n.forwardRef)(((e, a) => {
         const {
           children: o,
-          ...n
-        } = e, d = f.Children.toArray(o), c = d.find(r);
+          ...f
+        } = e, d = n.Children.toArray(o), c = d.find(r);
         if (c) {
           const e = c.props.children,
-            o = d.map((a => a === c ? f.Children.count(e) > 1 ? f.Children.only(null) : (0, f.isValidElement)(e) ? e.props.children : null : a));
-          return (0, f.createElement)(m, (0, t.A)({}, n, {
+            o = d.map((a => a === c ? n.Children.count(e) > 1 ? n.Children.only(null) : (0, n.isValidElement)(e) ? e.props.children : null : a));
+          return (0, n.createElement)(m, (0, t.A)({}, f, {
             ref: a
-          }), (0, f.isValidElement)(e) ? (0, f.cloneElement)(e, void 0, o) : null)
+          }), (0, n.isValidElement)(e) ? (0, n.cloneElement)(e, void 0, o) : null)
         }
-        return (0, f.createElement)(m, (0, t.A)({}, n, {
+        return (0, n.createElement)(m, (0, t.A)({}, f, {
           ref: a
         }), o)
       }));
       d.displayName = "Slot";
-      const m = (0, f.forwardRef)(((e, a) => {
+      const m = (0, n.forwardRef)(((e, a) => {
         const {
           children: o,
           ...t
         } = e;
-        return (0, f.isValidElement)(o) ? (0, f.cloneElement)(o, {
+        return (0, n.isValidElement)(o) ? (0, n.cloneElement)(o, {
           ...s(t, o.props),
-          ref: a ? n(a, o.ref) : o.ref
-        }) : f.Children.count(o) > 1 ? f.Children.only(null) : null
+          ref: a ? f(a, o.ref) : o.ref
+        }) : n.Children.count(o) > 1 ? n.Children.only(null) : null
       }));
       m.displayName = "SlotClone";
       const c = ({
         children: e
-      }) => (0, f.createElement)(f.Fragment, null, e);
+      }) => (0, n.createElement)(n.Fragment, null, e);
 
       function r(e) {
-        return (0, f.isValidElement)(e) && e.type === c
+        return (0, n.isValidElement)(e) && e.type === c
       }
 
       function s(e, a) {
@@ -143,14 +143,14 @@ _global.SENTRY_RELEASE = {
           ...a
         };
         for (const t in a) {
-          const f = e[t],
-            n = a[t];
-          /^on[A-Z]/.test(t) ? f && n ? o[t] = (...e) => {
-            n(...e), f(...e)
-          } : f && (o[t] = f) : "style" === t ? o[t] = {
-            ...f,
-            ...n
-          } : "className" === t && (o[t] = [f, n].filter(Boolean).join(" "))
+          const n = e[t],
+            f = a[t];
+          /^on[A-Z]/.test(t) ? n && f ? o[t] = (...e) => {
+            f(...e), n(...e)
+          } : n && (o[t] = n) : "style" === t ? o[t] = {
+            ...n,
+            ...f
+          } : "className" === t && (o[t] = [n, f].filter(Boolean).join(" "))
         }
         return {
           ...e,
@@ -160,14 +160,14 @@ _global.SENTRY_RELEASE = {
       var A = o(73855);
       o(44853);
       const i = ["a", "button", "div", "form", "h2", "h3", "img", "input", "label", "li", "nav", "ol", "p", "span", "svg", "ul"].reduce(((e, a) => {
-          const o = (0, f.forwardRef)(((e, o) => {
+          const o = (0, n.forwardRef)(((e, o) => {
             const {
-              asChild: n,
+              asChild: f,
               ...m
-            } = e, c = n ? d : a;
-            return (0, f.useEffect)((() => {
+            } = e, c = f ? d : a;
+            return (0, n.useEffect)((() => {
               window[Symbol.for("radix-ui")] = !0
-            }), []), (0, f.createElement)(c, (0, t.A)({}, m, {
+            }), []), (0, n.createElement)(c, (0, t.A)({}, m, {
               ref: o
             }))
           }));
@@ -176,7 +176,7 @@ _global.SENTRY_RELEASE = {
             [a]: o
           }
         }), {}),
-        p = (0, f.forwardRef)(((e, a) => (0, f.createElement)(i.span, (0, t.A)({}, e, {
+        p = (0, n.forwardRef)(((e, a) => (0, n.createElement)(i.span, (0, t.A)({}, e, {
           ref: a,
           style: {
             position: "absolute",
@@ -196,7 +196,7 @@ _global.SENTRY_RELEASE = {
           enabled: e = !0,
           ...a
         }) => {
-          const o = e ? p : f.Fragment;
+          const o = e ? p : n.Fragment;
           return (0, A.jsx)(o, {
             ...a
           })

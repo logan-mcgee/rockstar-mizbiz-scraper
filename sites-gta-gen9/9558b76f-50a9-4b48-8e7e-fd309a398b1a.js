@@ -20,8 +20,8 @@ _global.SENTRY_RELEASE = {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => l,
-        Lightbox_Dialog_Description: () => a,
-        Lightbox_Dialog_Title: () => i,
+        Lightbox_Dialog_Description: () => i,
+        Lightbox_Dialog_Title: () => a,
         Lightbox_Download_Button_Label: () => n,
         Lightbox_Download_Button_Tooltip: () => b,
         Lightbox_Open_Button_Label: () => g,
@@ -37,8 +37,8 @@ _global.SENTRY_RELEASE = {
       });
       var _ = "Close lightbox",
         l = "Press {shortcut}",
-        a = "Alt text: {alt}",
-        i = "Image lightbox",
+        i = "Alt text: {alt}",
+        a = "Image lightbox",
         n = "Download",
         b = "Download",
         g = "Open image in lightbox",
@@ -53,8 +53,8 @@ _global.SENTRY_RELEASE = {
         p = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: l,
-          Lightbox_Dialog_Description: a,
-          Lightbox_Dialog_Title: i,
+          Lightbox_Dialog_Description: i,
+          Lightbox_Dialog_Title: a,
           Lightbox_Download_Button_Label: n,
           Lightbox_Download_Button_Tooltip: b,
           Lightbox_Open_Button_Label: g,

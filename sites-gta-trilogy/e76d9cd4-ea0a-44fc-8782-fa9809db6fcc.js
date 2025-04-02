@@ -25,11 +25,11 @@ _global.SENTRY_RELEASE = {
           },
           fn: function(e, a) {
             var t = String(e).split("."),
-              l = t[0],
-              d = !t[1],
-              n = l.slice(-1),
-              o = l.slice(-2);
-            return a ? "other" : d && 1 == n && 11 != o ? "one" : d && n >= 2 && n <= 4 && (o < 12 || o > 14) ? "few" : d && 0 == n || d && n >= 5 && n <= 9 || d && o >= 11 && o <= 14 ? "many" : "other"
+              d = t[0],
+              l = !t[1],
+              n = d.slice(-1),
+              o = d.slice(-2);
+            return a ? "other" : l && 1 == n && 11 != o ? "one" : l && n >= 2 && n <= 4 && (o < 12 || o > 14) ? "few" : l && 0 == n || l && n >= 5 && n <= 9 || l && o >= 11 && o <= 14 ? "many" : "other"
           }
         },
         locale: "ru"

@@ -28,8 +28,8 @@ _global.SENTRY_RELEASE = {
       }
 
       function a(e, a) {
-        for (var o = {}, s = [], c = 0; c < e.length; c++) {
-          var i = e[c],
+        for (var o = {}, c = [], s = 0; s < e.length; s++) {
+          var i = e[s],
             u = a.base ? i[0] + a.base : i[0],
             d = o[u] || 0,
             f = "".concat(u, " ").concat(d);
@@ -45,15 +45,15 @@ _global.SENTRY_RELEASE = {
           if (-1 !== l) t[l].references++, t[l].updater(p);
           else {
             var v = r(p, a);
-            a.byIndex = c, t.splice(c, 0, {
+            a.byIndex = s, t.splice(s, 0, {
               identifier: f,
               updater: v,
               references: 1
             })
           }
-          s.push(f)
+          c.push(f)
         }
-        return s
+        return c
       }
 
       function r(e, t) {
@@ -70,9 +70,9 @@ _global.SENTRY_RELEASE = {
         var o = a(e = e || [], r = r || {});
         return function(e) {
           e = e || [];
-          for (var s = 0; s < o.length; s++) {
-            var c = n(o[s]);
-            t[c].references--
+          for (var c = 0; c < o.length; c++) {
+            var s = n(o[c]);
+            t[s].references--
           }
           for (var i = a(e, r), u = 0; u < o.length; u++) {
             var d = n(o[u]);
@@ -162,15 +162,15 @@ _global.SENTRY_RELEASE = {
           "string" == typeof e && (e = [
             [null, e, void 0]
           ]);
-          var s = {};
+          var c = {};
           if (a)
-            for (var c = 0; c < this.length; c++) {
-              var i = this[c][0];
-              null != i && (s[i] = !0)
+            for (var s = 0; s < this.length; s++) {
+              var i = this[s][0];
+              null != i && (c[i] = !0)
             }
           for (var u = 0; u < e.length; u++) {
             var d = [].concat(e[u]);
-            a && s[d[0]] || (void 0 !== o && (void 0 === d[5] || (d[1] = "@layer".concat(d[5].length > 0 ? " ".concat(d[5]) : "", " {").concat(d[1], "}")), d[5] = o), n && (d[2] ? (d[1] = "@media ".concat(d[2], " {").concat(d[1], "}"), d[2] = n) : d[2] = n), r && (d[4] ? (d[1] = "@supports (".concat(d[4], ") {").concat(d[1], "}"), d[4] = r) : d[4] = "".concat(r)), t.push(d))
+            a && c[d[0]] || (void 0 !== o && (void 0 === d[5] || (d[1] = "@layer".concat(d[5].length > 0 ? " ".concat(d[5]) : "", " {").concat(d[1], "}")), d[5] = o), n && (d[2] ? (d[1] = "@media ".concat(d[2], " {").concat(d[1], "}"), d[2] = n) : d[2] = n), r && (d[4] ? (d[1] = "@supports (".concat(d[4], ") {").concat(d[1], "}"), d[4] = r) : d[4] = "".concat(r)), t.push(d))
           }
         }, t
       }

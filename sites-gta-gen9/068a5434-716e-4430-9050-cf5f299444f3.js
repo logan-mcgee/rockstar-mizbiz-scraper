@@ -47,10 +47,10 @@ _global.SENTRY_RELEASE = {
       n.d(t, {
         C1: () => l,
         S1: () => d,
-        XC: () => u,
+        XC: () => f,
         jS: () => c,
         qg: () => i,
-        z0: () => f
+        z0: () => u
       });
       var a = n(62229),
         o = n(95966),
@@ -72,14 +72,14 @@ _global.SENTRY_RELEASE = {
             sources: c = null,
             prod: i = null
           } = e;
-          const f = (0, o.useLocale)(),
+          const u = (0, o.useLocale)(),
             {
-              meta: u = {}
+              meta: f = {}
             } = (0, r.i)() ?? {},
-            [p, g] = (0, a.useState)(i ?? u?.cdn ?? u?.prod ?? !0);
+            [p, g] = (0, a.useState)(i ?? f?.cdn ?? f?.prod ?? !0);
           (0, a.useEffect)((() => {
-            g(i ?? u?.cdn ?? u?.prod ?? !0)
-          }), [i, u]);
+            g(i ?? f?.cdn ?? f?.prod ?? !0)
+          }), [i, f]);
           const b = (0, a.useCallback)((e => {
             const t = null !== c,
               n = e?.previewSrc ?? e ?? null;
@@ -92,8 +92,8 @@ _global.SENTRY_RELEASE = {
             alt: t,
             ariaLabel: l,
             src: {
-              mobile: b(c?.[f]?.mobile ?? c?.en_us?.mobile ?? n),
-              desktop: b(c?.[f]?.desktop ?? c?.en_us?.desktop ?? d)
+              mobile: b(c?.[u]?.mobile ?? c?.en_us?.mobile ?? n),
+              desktop: b(c?.[u]?.desktop ?? c?.en_us?.desktop ?? d)
             }
           }
         },
@@ -120,11 +120,11 @@ _global.SENTRY_RELEASE = {
           }), [n])
         },
         i = e => e.full_src,
-        f = e => {
+        u = e => {
           const t = e?.previewSrc ?? e?.preview_src ?? e;
           return t?.startsWith("http") ? t : `${(0,o.getCdnPrefix)(!1)}${t}`
         },
-        u = e => e.meta.uploads_directory
+        f = e => e.meta.uploads_directory
     },
     16465: e => {
       e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/05f9a77c98ced3942631978d7672ad20.svg"

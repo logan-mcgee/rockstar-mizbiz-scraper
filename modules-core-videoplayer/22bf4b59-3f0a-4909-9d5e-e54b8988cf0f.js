@@ -148,11 +148,11 @@ _global.SENTRY_RELEASE = {
           value: (0, s.makeVar)((0, s.webSettingsReactive)()?.currentCharId)
         }),
         y = e => v(e),
-        b = (0, s.setMakeVarItem)({
+        w = (0, s.setMakeVarItem)({
           key: "selectedCharacterTupleReactive",
           value: (0, s.makeVar)(null)
         }),
-        w = e => b(e),
+        b = e => w(e),
         _ = (0, s.setMakeVarItem)({
           key: "rockstarIdReactive",
           value: (0, s.makeVar)(null)
@@ -178,7 +178,7 @@ _global.SENTRY_RELEASE = {
             a = (0, s.useReactiveVar)(v),
             r = (0, s.useReactiveVar)(f),
             n = (0, s.useReactiveVar)(h),
-            c = (0, s.useReactiveVar)(b);
+            c = (0, s.useReactiveVar)(w);
           return {
             charactersNeeded: e,
             crewsNeeded: t,
@@ -193,7 +193,7 @@ _global.SENTRY_RELEASE = {
             setCurrentCharId: y,
             setHasNotifications: g,
             setNavOpen: p,
-            setSelectedCharacterTuple: w,
+            setSelectedCharacterTuple: b,
             setUserData: E,
             setJumpScMenuFocus: k
           }
@@ -210,17 +210,17 @@ _global.SENTRY_RELEASE = {
             charactersNeeded: a,
             crewsNeeded: n,
             currentCharId: c
-          } = M(), o = (0, s.useRockstarToken)(), [i, u] = (0, r.useState)(), [l] = (0, s.useRockstarTokenReactive)(), d = (0, s.useRockstarTokenPing)(), [f, p] = (0, r.useState)(), [m, k] = (0, r.useState)(!1), [h, g] = (0, r.useState)(), v = void 0 === f, [y, b] = (0, r.useState)(1);
+          } = M(), o = (0, s.useRockstarToken)(), [i, u] = (0, r.useState)(), [l] = (0, s.useRockstarTokenReactive)(), d = (0, s.useRockstarTokenPing)(), [f, p] = (0, r.useState)(), [m, k] = (0, r.useState)(!1), [h, g] = (0, r.useState)(), v = void 0 === f, [y, w] = (0, r.useState)(1);
           return (0, r.useEffect)((() => {
             a && (u({
               ...i,
               accountSynced: !1
-            }), b((e => e + 1)))
+            }), w((e => e + 1)))
           }), [a]), (0, r.useEffect)((() => {
             n && (u({
               ...i,
               accountSynced: !1
-            }), b((e => e + 1)))
+            }), w((e => e + 1)))
           }), [n]), (0, r.useEffect)((() => {
             0 === y && u({
               ...i,
@@ -329,7 +329,7 @@ _global.SENTRY_RELEASE = {
                 u({
                   ...i,
                   crews: e
-                }), b((e => e - 1))
+                }), w((e => e - 1))
               }
             })()
           }), [i?.nickname, n, f]), (0, r.useEffect)((() => {
@@ -351,7 +351,7 @@ _global.SENTRY_RELEASE = {
               u({
                 ...i,
                 gamesPlayed: e
-              }), b((e => e - 1))
+              }), w((e => e - 1))
             })()
           }), [i?.nickname, f]), (0, r.useEffect)((() => {
             (async () => {
@@ -433,7 +433,7 @@ _global.SENTRY_RELEASE = {
                     gtao: e
                   },
                   linkedAccounts: t
-                }), b((e => e - 1))
+                }), w((e => e - 1))
               }
             })()
           }), [a, i?.nickname, f]), (0, r.useEffect)((() => {

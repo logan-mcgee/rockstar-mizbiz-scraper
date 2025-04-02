@@ -21,10 +21,10 @@ _global.SENTRY_RELEASE = {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => a,
         Lightbox_Dialog_Description: () => f,
-        Lightbox_Dialog_Title: () => c,
+        Lightbox_Dialog_Title: () => h,
         Lightbox_Download_Button_Label: () => u,
         Lightbox_Download_Button_Tooltip: () => L,
-        Lightbox_Open_Button_Label: () => h,
+        Lightbox_Open_Button_Label: () => c,
         Lightbox_Reset_Zoom_Button_Label: () => d,
         Lightbox_Reset_Zoom_Button_Tooltip: () => g,
         Lightbox_Zoom_In_Button_Label: () => l,
@@ -47,8 +47,8 @@ _global.SENTRY_RELEASE = {
         r = "{zoom}%",
         u = "Descargar",
         L = "Descargar",
-        h = "Abrir imagen",
-        c = "Imagen",
+        c = "Abrir imagen",
+        h = "Imagen",
         f = "Texto alt: {alt}",
         p = {
           Lightbox_Close_Button_Label: _,
@@ -63,8 +63,8 @@ _global.SENTRY_RELEASE = {
           Lightbox_Zoom_Slider_Tooltip: r,
           Lightbox_Download_Button_Label: u,
           Lightbox_Download_Button_Tooltip: L,
-          Lightbox_Open_Button_Label: h,
-          Lightbox_Dialog_Title: c,
+          Lightbox_Open_Button_Label: c,
+          Lightbox_Dialog_Title: h,
           Lightbox_Dialog_Description: f
         }
     }

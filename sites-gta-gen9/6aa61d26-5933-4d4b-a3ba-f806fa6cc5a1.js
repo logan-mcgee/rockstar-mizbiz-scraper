@@ -53,19 +53,19 @@ _global.SENTRY_RELEASE = {
       }();
       var s, u = [],
         c = !1,
-        f = -1;
+        l = -1;
 
-      function l() {
-        c && s && (c = !1, s.length ? u = s.concat(u) : f = -1, u.length && d())
+      function f() {
+        c && s && (c = !1, s.length ? u = s.concat(u) : l = -1, u.length && d())
       }
 
       function d() {
         if (!c) {
-          var e = i(l);
+          var e = i(f);
           c = !0;
           for (var t = u.length; t;) {
-            for (s = u, u = []; ++f < t;) s && s[f].run();
-            f = -1, t = u.length
+            for (s = u, u = []; ++l < t;) s && s[l].run();
+            l = -1, t = u.length
           }
           s = null, c = !1,
             function(e) {
@@ -88,7 +88,7 @@ _global.SENTRY_RELEASE = {
         this.fun = e, this.array = t
       }
 
-      function b() {}
+      function h() {}
       r.nextTick = function(e) {
         var t = new Array(arguments.length - 1);
         if (arguments.length > 1)
@@ -96,7 +96,7 @@ _global.SENTRY_RELEASE = {
         u.push(new g(e, t)), 1 !== u.length || c || i(d)
       }, g.prototype.run = function() {
         this.fun.apply(null, this.array)
-      }, r.title = "browser", r.browser = !0, r.env = {}, r.argv = [], r.version = "", r.versions = {}, r.on = b, r.addListener = b, r.once = b, r.off = b, r.removeListener = b, r.removeAllListeners = b, r.emit = b, r.prependListener = b, r.prependOnceListener = b, r.listeners = function(e) {
+      }, r.title = "browser", r.browser = !0, r.env = {}, r.argv = [], r.version = "", r.versions = {}, r.on = h, r.addListener = h, r.once = h, r.off = h, r.removeListener = h, r.removeAllListeners = h, r.emit = h, r.prependListener = h, r.prependOnceListener = h, r.listeners = function(e) {
         return []
       }, r.binding = function(e) {
         throw new Error("process.binding is not supported")

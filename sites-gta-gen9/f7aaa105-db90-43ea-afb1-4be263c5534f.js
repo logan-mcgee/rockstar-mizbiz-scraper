@@ -31,11 +31,11 @@ _global.SENTRY_RELEASE = {
         g = e.n(c),
         m = e(82510),
         h = e.n(m),
-        f = e(90675),
-        p = e.n(f),
+        p = e(90675),
+        f = e.n(p),
         b = e(44769),
         v = {};
-      v.styleTagTransform = p(), v.setAttributes = g(), v.insert = l().bind(null, "head"), v.domAPI = s(), v.insertStyleElement = h(), i()(b.A, v);
+      v.styleTagTransform = f(), v.setAttributes = g(), v.insert = l().bind(null, "head"), v.domAPI = s(), v.insertStyleElement = h(), i()(b.A, v);
       const u = b.A && b.A.locals ? b.A.locals : void 0;
       var x = e(73855);
       const A = n => {
@@ -89,8 +89,8 @@ _global.SENTRY_RELEASE = {
             type: m = "",
             ariaLabel: h
           } = n;
-          const f = [u.plusButton, u[m] ?? "", u[l] ?? "", u[t] ?? "", e].join(" "),
-            p = {
+          const p = [u.plusButton, u[m] ?? "", u[l] ?? "", u[t] ?? "", e].join(" "),
+            f = {
               "--hvr-color": a ?? o,
               "--hvr-bg-color": o ?? a,
               "--hvr-border-color": a ?? o
@@ -113,7 +113,7 @@ _global.SENTRY_RELEASE = {
               return (0, x.jsx)("span", {
                 onClick: s,
                 onKeyDown: s,
-                className: f,
+                className: p,
                 role: "button",
                 "aria-label": h,
                 tabIndex: 0,
@@ -125,10 +125,10 @@ _global.SENTRY_RELEASE = {
               })
             }
             return (0, x.jsx)(w, {
-              className: f,
+              className: p,
               onClick: s,
               style: {
-                ...p
+                ...f
               },
               to: g,
               ariaLabel: h,
@@ -136,10 +136,10 @@ _global.SENTRY_RELEASE = {
             })
           }
           return (0, x.jsx)(A, {
-            className: f,
+            className: p,
             onClick: s,
             style: {
-              ...p
+              ...f
             },
             ariaLabel: h,
             children: b

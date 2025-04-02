@@ -16,12 +16,12 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [888], {
-    10888: (o, t, e) => {
-      e.r(t), e.d(t, {
-        Lightbox_Close_Button_Label: () => _,
+    10888: (o, t, _) => {
+      _.r(t), _.d(t, {
+        Lightbox_Close_Button_Label: () => e,
         Lightbox_Close_Button_Tooltip: () => a,
-        Lightbox_Dialog_Description: () => c,
-        Lightbox_Dialog_Title: () => f,
+        Lightbox_Dialog_Description: () => f,
+        Lightbox_Dialog_Title: () => c,
         Lightbox_Download_Button_Label: () => r,
         Lightbox_Download_Button_Tooltip: () => L,
         Lightbox_Open_Button_Label: () => h,
@@ -35,7 +35,7 @@ _global.SENTRY_RELEASE = {
         Lightbox_Zoom_Slider_Tooltip: () => u,
         default: () => p
       });
-      var _ = "Закрыть всплывающее окно",
+      var e = "Закрыть всплывающее окно",
         a = "Нажмите {shortcut}",
         l = "Увеличить размер изображения",
         i = "Нажмите {shortcut}",
@@ -48,10 +48,10 @@ _global.SENTRY_RELEASE = {
         r = "Загрузить",
         L = "Загрузить",
         h = "Открыть изображение в всплывающем окне",
-        f = "Всплывающее окно",
-        c = "Замещающий текст: {alt}",
+        c = "Всплывающее окно",
+        f = "Замещающий текст: {alt}",
         p = {
-          Lightbox_Close_Button_Label: _,
+          Lightbox_Close_Button_Label: e,
           Lightbox_Close_Button_Tooltip: a,
           Lightbox_Zoom_In_Button_Label: l,
           Lightbox_Zoom_In_Button_Tooltip: i,
@@ -64,8 +64,8 @@ _global.SENTRY_RELEASE = {
           Lightbox_Download_Button_Label: r,
           Lightbox_Download_Button_Tooltip: L,
           Lightbox_Open_Button_Label: h,
-          Lightbox_Dialog_Title: f,
-          Lightbox_Dialog_Description: c
+          Lightbox_Dialog_Title: c,
+          Lightbox_Dialog_Description: f
         }
     }
   }
