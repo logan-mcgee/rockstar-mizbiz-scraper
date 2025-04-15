@@ -19,7 +19,7 @@ _global.SENTRY_RELEASE = {
     11735: (e, n, r) => {
       r.r(n), r.d(n, {
         Root: () => c,
-        Slot: () => a,
+        Slot: () => d,
         Slottable: () => i
       });
       var t = r(62229);
@@ -30,28 +30,28 @@ _global.SENTRY_RELEASE = {
         }(e, n)))
       }
       var o = r(73855),
-        a = t.forwardRef(((e, n) => {
+        d = t.forwardRef(((e, n) => {
           const {
             children: r,
             ...l
-          } = e, a = t.Children.toArray(r), i = a.find(s);
+          } = e, d = t.Children.toArray(r), i = d.find(s);
           if (i) {
             const e = i.props.children,
-              r = a.map((n => n === i ? t.Children.count(e) > 1 ? t.Children.only(null) : t.isValidElement(e) ? e.props.children : null : n));
-            return (0, o.jsx)(d, {
+              r = d.map((n => n === i ? t.Children.count(e) > 1 ? t.Children.only(null) : t.isValidElement(e) ? e.props.children : null : n));
+            return (0, o.jsx)(a, {
               ...l,
               ref: n,
               children: t.isValidElement(e) ? t.cloneElement(e, void 0, r) : null
             })
           }
-          return (0, o.jsx)(d, {
+          return (0, o.jsx)(a, {
             ...l,
             ref: n,
             children: r
           })
         }));
-      a.displayName = "Slot";
-      var d = t.forwardRef(((e, n) => {
+      d.displayName = "Slot";
+      var a = t.forwardRef(((e, n) => {
         const {
           children: r,
           ...o
@@ -69,7 +69,7 @@ _global.SENTRY_RELEASE = {
         }
         return t.Children.count(r) > 1 ? t.Children.only(null) : null
       }));
-      d.displayName = "SlotClone";
+      a.displayName = "SlotClone";
       var i = ({
         children: e
       }) => (0, o.jsx)(o.Fragment, {
@@ -99,7 +99,7 @@ _global.SENTRY_RELEASE = {
           ...r
         }
       }
-      var c = a
+      var c = d
     }
   }
 ]);

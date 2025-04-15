@@ -19,37 +19,37 @@ _global.SENTRY_RELEASE = {
     40553: (e, n, r) => {
       r.r(n), r.d(n, {
         Root: () => f,
-        Slot: () => o,
+        Slot: () => a,
         Slottable: () => s
       });
       var t = r(62229),
-        a = r(21423),
-        l = r(73855),
-        o = t.forwardRef(((e, n) => {
+        l = r(21423),
+        o = r(73855),
+        a = t.forwardRef(((e, n) => {
           const {
             children: r,
-            ...a
-          } = e, o = t.Children.toArray(r), s = o.find(i);
+            ...l
+          } = e, a = t.Children.toArray(r), s = a.find(i);
           if (s) {
             const e = s.props.children,
-              r = o.map((n => n === s ? t.Children.count(e) > 1 ? t.Children.only(null) : t.isValidElement(e) ? e.props.children : null : n));
-            return (0, l.jsx)(d, {
-              ...a,
+              r = a.map((n => n === s ? t.Children.count(e) > 1 ? t.Children.only(null) : t.isValidElement(e) ? e.props.children : null : n));
+            return (0, o.jsx)(d, {
+              ...l,
               ref: n,
               children: t.isValidElement(e) ? t.cloneElement(e, void 0, r) : null
             })
           }
-          return (0, l.jsx)(d, {
-            ...a,
+          return (0, o.jsx)(d, {
+            ...l,
             ref: n,
             children: r
           })
         }));
-      o.displayName = "Slot";
+      a.displayName = "Slot";
       var d = t.forwardRef(((e, n) => {
         const {
           children: r,
-          ...l
+          ...o
         } = e;
         if (t.isValidElement(r)) {
           const e = function(e) {
@@ -57,40 +57,40 @@ _global.SENTRY_RELEASE = {
                 r = n && "isReactWarning" in n && n.isReactWarning;
               return r ? e.ref : (n = Object.getOwnPropertyDescriptor(e, "ref")?.get, r = n && "isReactWarning" in n && n.isReactWarning, r ? e.props.ref : e.props.ref || e.ref)
             }(r),
-            o = function(e, n) {
+            a = function(e, n) {
               const r = {
                 ...n
               };
               for (const t in n) {
-                const a = e[t],
-                  l = n[t];
-                /^on[A-Z]/.test(t) ? a && l ? r[t] = (...e) => {
-                  l(...e), a(...e)
-                } : a && (r[t] = a) : "style" === t ? r[t] = {
-                  ...a,
-                  ...l
-                } : "className" === t && (r[t] = [a, l].filter(Boolean).join(" "))
+                const l = e[t],
+                  o = n[t];
+                /^on[A-Z]/.test(t) ? l && o ? r[t] = (...e) => {
+                  o(...e), l(...e)
+                } : l && (r[t] = l) : "style" === t ? r[t] = {
+                  ...l,
+                  ...o
+                } : "className" === t && (r[t] = [l, o].filter(Boolean).join(" "))
               }
               return {
                 ...e,
                 ...r
               }
-            }(l, r.props);
-          return r.type !== t.Fragment && (o.ref = n ? (0, a.t)(n, e) : e), t.cloneElement(r, o)
+            }(o, r.props);
+          return r.type !== t.Fragment && (a.ref = n ? (0, l.t)(n, e) : e), t.cloneElement(r, a)
         }
         return t.Children.count(r) > 1 ? t.Children.only(null) : null
       }));
       d.displayName = "SlotClone";
       var s = ({
         children: e
-      }) => (0, l.jsx)(l.Fragment, {
+      }) => (0, o.jsx)(o.Fragment, {
         children: e
       });
 
       function i(e) {
         return t.isValidElement(e) && e.type === s
       }
-      var f = o
+      var f = a
     }
   }
 ]);

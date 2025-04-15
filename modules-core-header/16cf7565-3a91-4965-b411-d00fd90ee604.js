@@ -33,7 +33,7 @@ _global.SENTRY_RELEASE = {
         Lightbox_Zoom_Out_Button__Tooltip: () => b,
         Lightbox_Zoom_Slider_Label: () => u,
         Lightbox_Zoom_Slider_Tooltip: () => r,
-        default: () => c
+        default: () => x
       });
       var _ = "Chiudi lightbox",
         i = "Premi {shortcut}",
@@ -50,7 +50,7 @@ _global.SENTRY_RELEASE = {
         L = "Apri immagine in lightbox",
         f = "Immagine lightbox",
         m = "Testo alternativo: {alt}",
-        c = {
+        x = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: i,
           Lightbox_Zoom_In_Button_Label: l,

@@ -2,7 +2,7 @@
   try {
     var n = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       e = (new Error).stack;
-    e && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[e] = "069784c3-e0bf-4ec9-a413-a8b312976c69", n._sentryDebugIdIdentifier = "sentry-dbid-069784c3-e0bf-4ec9-a413-a8b312976c69")
+    e && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[e] = "e585ebb1-99dc-4468-9e46-71c671c0ff49", n._sentryDebugIdIdentifier = "sentry-dbid-e585ebb1-99dc-4468-9e46-71c671c0ff49")
   } catch (n) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -15,47 +15,607 @@ var _global = "undefined" != typeof window ? window : "undefined" != typeof glob
 _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_footer = self.webpackChunk_rockstargames_modules_core_footer || []).push([
-  [1283], {
-    91283: (n, e, a) => {
-      a.r(e), a.d(e, {
-        default: () => L
+  [7793], {
+    77793: (n, e, o) => {
+      o.r(e), o.d(e, {
+        default: () => j
       });
-      var t = a(9623),
-        o = a(96711),
-        i = a(83534),
-        r = a(53178),
-        s = a.n(r),
-        l = a(27835),
-        d = a.n(l),
-        c = a(17529),
-        m = a.n(c),
-        f = a(72162),
-        g = a.n(f),
-        h = a(82510),
-        p = a.n(h),
-        A = a(90675),
-        u = a.n(A),
-        b = a(45378),
-        v = {};
-      v.styleTagTransform = u(), v.setAttributes = g(), v.insert = m().bind(null, "head"), v.domAPI = d(), v.insertStyleElement = p(), s()(b.A, v);
-      const x = b.A && b.A.locals ? b.A.locals : void 0;
-      var w = a(73855);
-      const y = n => {
+      var t = o(9623),
+        a = o(20074),
+        r = o(96711),
+        i = o(83534),
+        s = o(53178),
+        l = o.n(s),
+        d = o(94566),
+        c = o.n(d),
+        f = o(31610),
+        m = o.n(f),
+        g = o(82510),
+        p = o.n(g),
+        h = o(45378),
+        u = {
+          attributes: {
+            "data-shadowTarget": "@rockstargames/modules-core-footer"
+          }
+        };
+      u.setAttributes = m(), u.insert = n => {
+        const e = n.dataset.shadowtarget;
+        e && (window.__MFE_GLOBAL_HOOK__ = {
+          ...window.__MFE_GLOBAL_HOOK__,
+          stylesForShadowRoot: {
+            ...window.__MFE_GLOBAL_HOOK__?.stylesForShadowRoot,
+            [e]: n
+          }
+        })
+      }, u.domAPI = c(), u.insertStyleElement = p(), l()(h.A, u);
+      const A = h.A && h.A.locals ? h.A.locals : void 0;
+      var b = o(73855);
+      const w = n => {
         let {
           children: e,
-          ...a
+          ...o
         } = n;
-        return (0, w.jsx)("span", {
-          ...a,
-          className: x.visuallyHidden,
+        return (0, b.jsx)("span", {
+          ...o,
+          className: A.visuallyHidden,
           children: e
         })
       };
-      var k = a(20270),
-        C = a(2918),
-        _ = a(95966),
-        I = a(81788);
-      const z = (0, I.defineMessages)({
+      var x = o(20270),
+        y = o(2918),
+        v = o(95966),
+        k = o(62229),
+        _ = o(44853);
+      const C = [{
+          fontFamily: "HelveticaNowText",
+          fontWeight: "400",
+          fontStyle: "normal",
+          src: [{
+            url: o(66894),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "HelveticaNowText",
+          fontWeight: "400",
+          fontStyle: "italic",
+          src: [{
+            url: o(97439),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "HelveticaNowText",
+          fontWeight: "700",
+          fontStyle: "normal",
+          src: [{
+            url: o(24921),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "HelveticaNowDisplayBold",
+          fontWeight: "400",
+          fontStyle: "normal",
+          src: [{
+            url: o(52086),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "HelveticaNowDisplayMedium",
+          fontWeight: "400",
+          fontStyle: "normal",
+          src: [{
+            url: o(98230),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "HelveticaNeueLTW05",
+          fontWeight: "400",
+          fontStyle: "normal",
+          src: [{
+            url: o(26207),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "HelveticaNeueLTW05",
+          fontWeight: "400",
+          fontStyle: "italic",
+          src: [{
+            url: o(6903),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "HelveticaNeueLTW07",
+          fontWeight: "400",
+          fontStyle: "normal",
+          src: [{
+            url: o(22154),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "HelveticaNeueLTW07",
+          fontWeight: "400",
+          fontStyle: "italic",
+          src: [{
+            url: o(49200),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "HelveticaNeueLTW07",
+          fontWeight: "700",
+          fontStyle: "normal",
+          src: [{
+            url: o(20928),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "HelveticaNeueLTW07",
+          fontWeight: "700",
+          fontStyle: "italic",
+          src: [{
+            url: o(90768),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "HelveticaNeueLTW07-85Heavy",
+          fontWeight: "700",
+          fontStyle: "normal",
+          src: [{
+            url: o(29951),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "NeueHelveticaPaneuropean",
+          fontWeight: "400",
+          fontStyle: "normal",
+          src: [{
+            url: o(28255),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "SackersGothicW01-Square",
+          fontWeight: "400",
+          fontStyle: "normal",
+          src: [{
+            url: o(47594),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "Cabrito-Nordem",
+          fontWeight: "400",
+          fontStyle: "normal",
+          src: [{
+            url: o(54414),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "Droid-Serif-Pro",
+          fontWeight: "400",
+          fontStyle: "normal",
+          src: [{
+            url: o(5676),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "NotoSansSC",
+          fontWeight: "400",
+          fontStyle: "normal",
+          src: [{
+            url: o(28326),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "NotoSansSC",
+          fontWeight: "500",
+          fontStyle: "normal",
+          src: [{
+            url: o(50225),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "NotoSansSC",
+          fontWeight: "700",
+          fontStyle: "normal",
+          src: [{
+            url: o(32791),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "NotoSansSC",
+          fontWeight: "900",
+          fontStyle: "normal",
+          src: [{
+            url: o(92973),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "NotoSansTC",
+          fontWeight: "400",
+          fontStyle: "normal",
+          src: [{
+            url: o(25293),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "NotoSansTC",
+          fontWeight: "500",
+          fontStyle: "normal",
+          src: [{
+            url: o(46962),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "NotoSansTC",
+          fontWeight: "700",
+          fontStyle: "normal",
+          src: [{
+            url: o(66312),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "NotoSansTC",
+          fontWeight: "900",
+          fontStyle: "normal",
+          src: [{
+            url: o(44934),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "NotoSansJP",
+          fontWeight: "400",
+          fontStyle: "normal",
+          src: [{
+            url: o(66562),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "NotoSansJP",
+          fontWeight: "500",
+          fontStyle: "normal",
+          src: [{
+            url: o(81117),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "NotoSansJP",
+          fontWeight: "700",
+          fontStyle: "normal",
+          src: [{
+            url: o(62051),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "NotoSansJP",
+          fontWeight: "900",
+          fontStyle: "normal",
+          src: [{
+            url: o(68577),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "NotoSansKR",
+          fontWeight: "400",
+          fontStyle: "normal",
+          src: [{
+            url: o(9133),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "NotoSansKR",
+          fontWeight: "500",
+          fontStyle: "normal",
+          src: [{
+            url: o(93458),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "NotoSansKR",
+          fontWeight: "700",
+          fontStyle: "normal",
+          src: [{
+            url: o(77032),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "NotoSansKR",
+          fontWeight: "900",
+          fontStyle: "normal",
+          src: [{
+            url: o(44486),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "NotoSerifJP",
+          fontWeight: "700",
+          fontStyle: "normal",
+          src: [{
+            url: o(89307),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "NotoSerifJP",
+          fontWeight: "900",
+          fontStyle: "normal",
+          src: [{
+            url: o(58853),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "NotoSerifKR",
+          fontWeight: "700",
+          fontStyle: "normal",
+          src: [{
+            url: o(46010),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "NotoSerifKR",
+          fontWeight: "900",
+          fontStyle: "normal",
+          src: [{
+            url: o(46010),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "NotoSerifSC",
+          fontWeight: "700",
+          fontStyle: "normal",
+          src: [{
+            url: o(26739),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "NotoSerifSC",
+          fontWeight: "900",
+          fontStyle: "normal",
+          src: [{
+            url: o(68145),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "NotoSerifTC",
+          fontWeight: "700",
+          fontStyle: "normal",
+          src: [{
+            url: o(59792),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "NotoSerifTC",
+          fontWeight: "900",
+          fontStyle: "normal",
+          src: [{
+            url: o(79122),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "ChaletComprime",
+          fontWeight: "400",
+          fontStyle: "normal",
+          src: [{
+            url: o(50228),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "ChaletComprime",
+          fontWeight: "700",
+          fontStyle: "normal",
+          src: [{
+            url: o(304),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "Chalet",
+          fontWeight: "400",
+          fontStyle: "normal",
+          src: [{
+            url: o(79539),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "Chalet",
+          fontWeight: "700",
+          fontStyle: "normal",
+          src: [{
+            url: o(61494),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "Pricedown",
+          fontWeight: "700",
+          fontStyle: "normal",
+          src: [{
+            url: o(313),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "NeueHelveticaW05",
+          fontWeight: "400",
+          fontStyle: "normal",
+          src: [{
+            url: o(94904),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "NeueHelveticaW05",
+          fontWeight: "700",
+          fontStyle: "normal",
+          src: [{
+            url: o(49027),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "NeueHelveticaW05",
+          fontWeight: "900",
+          fontStyle: "normal",
+          src: [{
+            url: o(83493),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "FrizQuadrataW05",
+          fontWeight: "400",
+          fontStyle: "normal",
+          src: [{
+            url: o(53037),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "FrizQuadrataW05",
+          fontWeight: "400",
+          fontStyle: "italic",
+          src: [{
+            url: o(93803),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "FrizQuadrataW05",
+          fontWeight: "700",
+          fontStyle: "normal",
+          src: [{
+            url: o(69400),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "FrizQuadrataW05",
+          fontWeight: "700",
+          fontStyle: "italic",
+          src: [{
+            url: o(44840),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "CorporateW05",
+          fontWeight: "400",
+          fontStyle: "normal",
+          src: [{
+            url: o(28168),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "NimbusSansW05",
+          fontWeight: "400",
+          fontStyle: "normal",
+          src: [{
+            url: o(40792),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "NimbusSansW05",
+          fontWeight: "700",
+          fontStyle: "normal",
+          src: [{
+            url: o(31431),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "EurostileNextW05",
+          fontWeight: "700",
+          fontStyle: "normal",
+          src: [{
+            url: o(51594),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "Diploma",
+          fontWeight: "400",
+          fontStyle: "normal",
+          src: [{
+            url: o(21130),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "BrushScriptMT",
+          fontWeight: "400",
+          fontStyle: "normal",
+          src: [{
+            url: o(57390),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "BankGothicBT",
+          fontWeight: "400",
+          fontStyle: "normal",
+          src: [{
+            url: o(36606),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "MeltdownRegular",
+          fontWeight: "400",
+          fontStyle: "normal",
+          src: [{
+            url: o(36334),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "SharkSnackRegular",
+          fontWeight: "400",
+          fontStyle: "normal",
+          src: [{
+            url: o(89457),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "GTAArtDeco",
+          fontWeight: "400",
+          fontStyle: "normal",
+          src: [{
+            url: o(79215),
+            format: "woff"
+          }]
+        }, {
+          fontFamily: "GTAArtDeco",
+          fontWeight: "500",
+          fontStyle: "normal",
+          src: [{
+            url: o(34298),
+            format: "woff"
+          }]
+        }],
+        z = async n => {
+          let {
+            fontFamily: e,
+            fontWeight: o = "400",
+            fontStyle: t = "normal",
+            src: a
+          } = n;
+          const r = new FontFace(e, `url(${a[0].url})`, {
+            weight: o,
+            style: t
+          });
+          await r.load(), document.fonts.add(r)
+        }, S = n => {
+          let {
+            children: e,
+            packageName: o,
+            loadFonts: t = []
+          } = n;
+          const [a, r] = (0, k.useState)(!1), i = (0, k.useRef)(null), [s, l] = (0, k.useState)(), [d, c] = (0, k.useState)(!1), [f, m] = (0, k.useState)(!1), g = d && f;
+          return (0, k.useEffect)((() => {
+            i.current && !i.current.shadowRoot && (l(i.current.attachShadow({
+              mode: "open"
+            })), r(!0))
+          }), [a]), (0, k.useEffect)((() => {
+            if (s) {
+              if (!d) {
+                const n = window.__MFE_GLOBAL_HOOK__?.stylesForShadowRoot?.[o];
+                n && (n.innerHTML = n.innerHTML.replaceAll(":root", ".shadow-root-context")), n && s.prepend(n), c(!0)
+              }
+              f || (C.filter((n => t.includes(n.fontFamily))).forEach(z), m(!0))
+            }
+          }), [s, t, o]), (0, b.jsx)(b.Fragment, {
+            children: (0, b.jsx)("div", {
+              ref: i,
+              id: `${o}-shadow-host`,
+              "data-testid": `${o}-shadow-host`,
+              children: s && g && (0, _.createPortal)((0, b.jsx)("div", {
+                className: "shadow-root-context",
+                children: e
+              }), s)
+            })
+          })
+        };
+      var I = o(81788);
+      const N = (0, I.defineMessages)({
           footer_rockstar_games: {
             id: "footer_rockstar_games",
             defaultMessage: "Rockstar Games"
@@ -141,120 +701,133 @@ _global.SENTRY_RELEASE = {
             defaultMessage: "Privacy"
           }
         }),
-        E = JSON.parse('{"en-US":{"footer_careers":"Careers","footer_community_guidelines_label_text":"Community Guidelines","footer_contact_label_text":"Contact","footer_cookie_policy_label_text":"Cookie Policy","footer_cookie_settings_label_text":"Cookie Settings","footer_corporate":"Corporate","footer_donotsellmyinfo":"Do Not Sell or Share My Personal Information","footer_established_date_numerical":"1998","footer_established_date_roman":"MCMXCVIII","footer_legal":"Legal","footer_locations_bogota":"Bogotá","footer_locations_london":"London","footer_locations_new_york":"New York","footer_locations_paris":"Paris","footer_privacy":"Privacy","footer_rockstar_games":"Rockstar Games","footer_section_company_info":"Company Info","footer_section_contact_us":"Contact Us","footer_section_organization_info":"Organization Info","footer_section_social_icons":"Social Media","footer_subscribe":"Subscribe"}}');
-      var B = a(42386),
-        D = {};
-      D.styleTagTransform = u(), D.setAttributes = g(), D.insert = m().bind(null, "head"), D.domAPI = d(), D.insertStyleElement = p(), s()(B.A, D);
-      const N = B.A && B.A.locals ? B.A.locals : void 0,
+        F = JSON.parse('{"en-US":{"footer_careers":"Careers","footer_community_guidelines_label_text":"Community Guidelines","footer_contact_label_text":"Contact","footer_cookie_policy_label_text":"Cookie Policy","footer_cookie_settings_label_text":"Cookie Settings","footer_corporate":"Corporate","footer_donotsellmyinfo":"Do Not Sell or Share My Personal Information","footer_established_date_numerical":"1998","footer_established_date_roman":"MCMXCVIII","footer_legal":"Legal","footer_locations_bogota":"Bogotá","footer_locations_london":"London","footer_locations_new_york":"New York","footer_locations_paris":"Paris","footer_privacy":"Privacy","footer_rockstar_games":"Rockstar Games","footer_section_company_info":"Company Info","footer_section_contact_us":"Contact Us","footer_section_organization_info":"Organization Info","footer_section_social_icons":"Social Media","footer_subscribe":"Subscribe"}}');
+      var E = o(42386),
+        B = {
+          attributes: {
+            "data-shadowTarget": "@rockstargames/modules-core-footer"
+          }
+        };
+      B.setAttributes = m(), B.insert = n => {
+        const e = n.dataset.shadowtarget;
+        e && (window.__MFE_GLOBAL_HOOK__ = {
+          ...window.__MFE_GLOBAL_HOOK__,
+          stylesForShadowRoot: {
+            ...window.__MFE_GLOBAL_HOOK__?.stylesForShadowRoot,
+            [e]: n
+          }
+        })
+      }, B.domAPI = c(), B.insertStyleElement = p(), l()(E.A, B);
+      const D = E.A && E.A.locals ? E.A.locals : void 0,
         {
-          host: j
-        } = (0, _.getConfigForDomain)(),
+          host: L
+        } = (0, v.getConfigForDomain)(),
         M = n => {
           let {
             linkBase: e,
-            onLanguageChange: a,
-            ...r
+            onLanguageChange: o,
+            ...a
           } = n;
           const s = (0, I.useIntl)(),
             l = (0, t.useLocation)(),
             {
               track: d
-            } = (0, C.useGtmTrack)(),
-            c = (n, e, a, t) => () => {
+            } = (0, y.useGtmTrack)(),
+            c = (n, e, o, t) => () => {
               d({
                 event: n,
                 link_url: e,
-                text: a,
+                text: o,
                 element_placement: t
               })
             };
-          return (0, w.jsxs)("footer", {
-            className: N.siteFooter,
+          return (0, b.jsxs)("footer", {
+            className: D.siteFooter,
             "data-testid": "footer-nav",
             role: "navigation",
             title: "Footer",
-            ...r,
-            children: [(0, w.jsxs)("div", {
-              className: N.siteFooterFirstRow,
-              children: [(0, w.jsx)("nav", {
-                "aria-label": s.formatMessage(z.footer_section_contact_us),
-                className: N.contactUsLinks,
-                children: (0, w.jsxs)("ul", {
-                  className: N.contactUsLinksListElement,
-                  children: [(0, w.jsx)("li", {
-                    className: N.listElement,
-                    children: (0, w.jsx)(i.A, {
-                      className: N.contactUsLinksListItemElementContent,
+            ...a,
+            children: [(0, b.jsxs)("div", {
+              className: D.siteFooterFirstRow,
+              children: [(0, b.jsx)("nav", {
+                "aria-label": s.formatMessage(N.footer_section_contact_us),
+                className: D.contactUsLinks,
+                children: (0, b.jsxs)("ul", {
+                  className: D.contactUsLinksListElement,
+                  children: [(0, b.jsx)("li", {
+                    className: D.listElement,
+                    children: (0, b.jsx)(i.A, {
+                      className: D.contactUsLinksListItemElementContent,
                       "data-testid": "footer-contact-link",
                       onClick: c("cta_other", "/contact", "contact", "footer"),
                       to: `${e}/contact`,
-                      children: s.formatMessage(z.footer_contact_label_text)
+                      children: s.formatMessage(N.footer_contact_label_text)
                     })
-                  }), (0, w.jsx)("li", {
-                    className: N.listElement,
-                    children: (0, w.jsx)(i.A, {
-                      className: N.contactUsLinksListItemElementContent,
+                  }), (0, b.jsx)("li", {
+                    className: D.listElement,
+                    children: (0, b.jsx)(i.A, {
+                      className: D.contactUsLinksListItemElementContent,
                       "data-testid": "footer-careers-link",
                       onClick: c("cta_other", "/careers", "careers", "footer"),
                       to: `${e}/careers`,
-                      children: s.formatMessage(z.footer_careers)
+                      children: s.formatMessage(N.footer_careers)
                     })
-                  }), (0, w.jsx)("li", {
-                    className: N.listElement,
-                    children: (0, w.jsx)(i.A, {
-                      className: N.contactUsLinksListItemElementContent,
+                  }), (0, b.jsx)("li", {
+                    className: D.listElement,
+                    children: (0, b.jsx)(i.A, {
+                      className: D.contactUsLinksListItemElementContent,
                       "data-testid": "footer-community-guidelines-link",
                       onClick: c("cta_other", "/community-guidelines", "community guidelines", "footer"),
                       to: `${e}/community-guidelines`,
-                      children: s.formatMessage(z.footer_community_guidelines_label_text)
+                      children: s.formatMessage(N.footer_community_guidelines_label_text)
                     })
-                  }), (0, w.jsx)("li", {
-                    className: N.listElement,
-                    children: (0, w.jsx)(i.A, {
-                      className: N.contactUsLinksListItemElementContent,
+                  }), (0, b.jsx)("li", {
+                    className: D.listElement,
+                    children: (0, b.jsx)(i.A, {
+                      className: D.contactUsLinksListItemElementContent,
                       "data-testid": "footer-subscribe-link",
-                      onClick: c("cta_subscribe_news", `https://${j}.rockstargames.com/settings/email`, "subscribe", "footer"),
+                      onClick: c("cta_subscribe_news", `https://${L}.rockstargames.com/settings/email`, "subscribe", "footer"),
                       target: "_blank",
-                      to: `https://${j}.rockstargames.com/settings/email`,
-                      children: s.formatMessage(z.footer_subscribe)
+                      to: `https://${L}.rockstargames.com/settings/email`,
+                      children: s.formatMessage(N.footer_subscribe)
                     })
                   })]
                 })
-              }), (0, w.jsx)(k.LanguageSelector, {
+              }), (0, b.jsx)(x.LanguageSelector, {
                 theme: "footer",
                 location: l,
-                onLanguageChange: a,
+                onLanguageChange: o,
                 parent: "footer"
               })]
-            }), (0, w.jsxs)("div", {
-              className: N.siteFooterSecondRow,
-              children: [(0, w.jsx)("nav", {
-                "aria-label": s.formatMessage(z.footer_section_company_info),
-                className: N.companyInfoLinks,
-                children: (0, w.jsxs)("ul", {
-                  className: N.companyInfoLinksListElement,
-                  children: [(0, w.jsx)("li", {
-                    className: N.listElement,
-                    children: (0, w.jsx)(i.A, {
-                      className: N.companyInfoLinksListItemContent,
+            }), (0, b.jsxs)("div", {
+              className: D.siteFooterSecondRow,
+              children: [(0, b.jsx)("nav", {
+                "aria-label": s.formatMessage(N.footer_section_company_info),
+                className: D.companyInfoLinks,
+                children: (0, b.jsxs)("ul", {
+                  className: D.companyInfoLinksListElement,
+                  children: [(0, b.jsx)("li", {
+                    className: D.listElement,
+                    children: (0, b.jsx)(i.A, {
+                      className: D.companyInfoLinksListItemContent,
                       "data-testid": "footer-corporate-link",
                       onClick: c("cta_other", "/corpinfo", "corporate", "footer"),
                       to: `${e}/corpinfo`,
-                      children: s.formatMessage(z.footer_corporate)
+                      children: s.formatMessage(N.footer_corporate)
                     })
-                  }), (0, w.jsx)("li", {
-                    className: N.listElement,
-                    children: (0, w.jsx)(i.A, {
-                      className: N.companyInfoLinksListItemContent,
+                  }), (0, b.jsx)("li", {
+                    className: D.listElement,
+                    children: (0, b.jsx)(i.A, {
+                      className: D.companyInfoLinksListItemContent,
                       "data-testid": "footer-privacy-link",
                       onClick: c("cta_other", "/privacy", "privacy", "footer"),
                       to: `${e}/privacy`,
-                      children: s.formatMessage(z.footer_privacy)
+                      children: s.formatMessage(N.footer_privacy)
                     })
-                  }), (0, w.jsx)("li", {
-                    className: N.listElement,
-                    children: (0, w.jsx)("button", {
-                      className: N.companyInfoLinksListItemContent,
+                  }), (0, b.jsx)("li", {
+                    className: D.listElement,
+                    children: (0, b.jsx)("button", {
+                      className: D.companyInfoLinksListItemContent,
                       "data-testid": "footer-cookie-settings-button",
                       onClick: ("cta_other", "", "cookie settings", "footer", () => {
                         d({
@@ -264,138 +837,138 @@ _global.SENTRY_RELEASE = {
                           element_placement: "footer"
                         }), window.OneTrust?.ToggleInfoDisplay()
                       }),
-                      children: s.formatMessage(z.footer_cookie_settings_label_text)
+                      children: s.formatMessage(N.footer_cookie_settings_label_text)
                     })
-                  }), (0, w.jsx)("li", {
-                    className: N.listElement,
-                    children: (0, w.jsx)(i.A, {
-                      className: N.companyInfoLinksListItemContent,
+                  }), (0, b.jsx)("li", {
+                    className: D.listElement,
+                    children: (0, b.jsx)(i.A, {
+                      className: D.companyInfoLinksListItemContent,
                       "data-testid": "footer-cookie-policy-link",
                       onClick: c("cta_other", "/cookies", "cookie policy", "footer"),
                       to: `${e}/cookies`,
-                      children: s.formatMessage(z.footer_cookie_policy_label_text)
+                      children: s.formatMessage(N.footer_cookie_policy_label_text)
                     })
-                  }), (0, w.jsx)("li", {
-                    className: N.listElement,
-                    children: (0, w.jsx)(i.A, {
-                      className: N.companyInfoLinksListItemContent,
+                  }), (0, b.jsx)("li", {
+                    className: D.listElement,
+                    children: (0, b.jsx)(i.A, {
+                      className: D.companyInfoLinksListItemContent,
                       "data-testid": "footer-legal-link",
                       onClick: c("cta_other", "/legal", "legal", "footer"),
                       to: `${e}/legal`,
-                      children: s.formatMessage(z.footer_legal)
+                      children: s.formatMessage(N.footer_legal)
                     })
-                  }), (0, w.jsx)("li", {
-                    className: N.listElement,
-                    children: (0, w.jsx)(i.A, {
-                      className: N.companyInfoLinksListItemContent,
+                  }), (0, b.jsx)("li", {
+                    className: D.listElement,
+                    children: (0, b.jsx)(i.A, {
+                      className: D.companyInfoLinksListItemContent,
                       "data-testid": "footer-ccpa-link",
                       onClick: c("cta_other", "/ccpa", "do not sell my info", "footer"),
                       to: `${e}/ccpa`,
-                      children: s.formatMessage(z.footer_donotsellmyinfo)
+                      children: s.formatMessage(N.footer_donotsellmyinfo)
                     })
                   })]
                 })
-              }), (0, w.jsx)("nav", {
-                "aria-label": s.formatMessage(z.footer_section_social_icons),
-                className: N.socialIconLinks,
-                children: (0, w.jsxs)("ul", {
-                  className: N.socialIconLinksListElement,
-                  children: [(0, w.jsx)("li", {
-                    className: N.listElement,
-                    children: (0, w.jsx)(i.A, {
-                      className: N.linksListItemElementContent,
+              }), (0, b.jsx)("nav", {
+                "aria-label": s.formatMessage(N.footer_section_social_icons),
+                className: D.socialIconLinks,
+                children: (0, b.jsxs)("ul", {
+                  className: D.socialIconLinksListElement,
+                  children: [(0, b.jsx)("li", {
+                    className: D.listElement,
+                    children: (0, b.jsx)(i.A, {
+                      className: D.linksListItemElementContent,
                       "aria-label": "Rockstar Games X",
                       "data-testid": "twitter-link",
                       onClick: c("cta_other", "https://x.com/rockstargames", "twitter", "footer"),
                       target: "_blank",
                       title: "X",
                       to: "https://x.com/rockstargames",
-                      children: (0, w.jsx)(o.IconButton, {
+                      children: (0, b.jsx)(r.IconButton, {
                         appearance: "ghost",
                         icon: "Twitter",
                         size: "MD",
                         label: "Rockstar Games X"
                       })
                     })
-                  }), (0, w.jsx)("li", {
-                    className: N.listElement,
-                    children: (0, w.jsx)(i.A, {
-                      className: N.linksListItemElementContent,
+                  }), (0, b.jsx)("li", {
+                    className: D.listElement,
+                    children: (0, b.jsx)(i.A, {
+                      className: D.linksListItemElementContent,
                       "aria-label": "Rockstar Games Instagram",
                       "data-testid": "instagram-link",
                       onClick: c("cta_other", 'https://instagram.com/rockstargames"', "instagram", "footer"),
                       target: "_blank",
                       title: "Instagram",
                       to: "https://instagram.com/rockstargames",
-                      children: (0, w.jsx)(o.IconButton, {
+                      children: (0, b.jsx)(r.IconButton, {
                         appearance: "ghost",
                         icon: "Instagram",
                         size: "MD",
                         label: "Rockstar Games Instagram"
                       })
                     })
-                  }), (0, w.jsx)("li", {
-                    className: N.listElement,
-                    children: (0, w.jsx)(i.A, {
-                      className: N.linksListItemElementContent,
+                  }), (0, b.jsx)("li", {
+                    className: D.listElement,
+                    children: (0, b.jsx)(i.A, {
+                      className: D.linksListItemElementContent,
                       "aria-label": "Rockstar Games YouTube",
                       "data-testid": "youtube-link",
                       onClick: c("cta_other", "https://www.youtube.com/rockstargames", "youtube", "footer"),
                       target: "_blank",
                       title: "YouTube",
                       to: "https://www.youtube.com/rockstargames",
-                      children: (0, w.jsx)(o.IconButton, {
+                      children: (0, b.jsx)(r.IconButton, {
                         appearance: "ghost",
                         icon: "Youtube",
                         size: "MD",
                         label: "Rockstar Games YouTube"
                       })
                     })
-                  }), (0, w.jsx)("li", {
-                    className: N.listElement,
-                    children: (0, w.jsx)(i.A, {
-                      className: N.linksListItemElementContent,
+                  }), (0, b.jsx)("li", {
+                    className: D.listElement,
+                    children: (0, b.jsx)(i.A, {
+                      className: D.linksListItemElementContent,
                       "aria-label": "Rockstar Games Facebook",
                       "data-testid": "facebook-link",
                       onClick: c("cta_other", "https://www.facebook.com/rockstargames", "facebook", "footer"),
                       target: "_blank",
                       title: "Facebook",
                       to: "https://www.facebook.com/rockstargames",
-                      children: (0, w.jsx)(o.IconButton, {
+                      children: (0, b.jsx)(r.IconButton, {
                         appearance: "ghost",
                         icon: "Facebook",
                         size: "MD",
                         label: "Rockstar Games Facebook"
                       })
                     })
-                  }), (0, w.jsx)("li", {
-                    className: N.listElement,
-                    children: (0, w.jsx)(i.A, {
-                      className: N.linksListItemElementContent,
+                  }), (0, b.jsx)("li", {
+                    className: D.listElement,
+                    children: (0, b.jsx)(i.A, {
+                      className: D.linksListItemElementContent,
                       "aria-label": "Rockstar Games Twitch",
                       "data-testid": "twitch-link",
                       onClick: c("cta_other", "https://twitch.tv/rockstargames", "twitch", "footer"),
                       target: "_blank",
                       title: "Twitch",
                       to: "https://twitch.tv/rockstargames",
-                      children: (0, w.jsx)(o.IconButton, {
+                      children: (0, b.jsx)(r.IconButton, {
                         appearance: "ghost",
                         icon: "Twitch",
                         size: "MD",
                         label: "Rockstar Games Twitch"
                       })
                     })
-                  }), (0, w.jsx)("li", {
-                    className: N.listElement,
-                    children: (0, w.jsx)(i.A, {
-                      className: N.linksListItemElementContent,
+                  }), (0, b.jsx)("li", {
+                    className: D.listElement,
+                    children: (0, b.jsx)(i.A, {
+                      className: D.linksListItemElementContent,
                       "aria-label": "Rockstar Games Discord",
                       "data-testid": "discord-link",
                       onClick: c("cta_other", "https://discord.gg/rockstargames", "discord", "footer"),
                       target: "_blank",
                       title: "Discord",
                       to: "https://discord.gg/rockstargames",
-                      children: (0, w.jsx)(o.IconButton, {
+                      children: (0, b.jsx)(r.IconButton, {
                         appearance: "ghost",
                         icon: "Discord",
                         size: "MD",
@@ -405,98 +978,112 @@ _global.SENTRY_RELEASE = {
                   })]
                 })
               })]
-            }), (0, w.jsxs)("section", {
-              "aria-label": s.formatMessage(z.footer_section_organization_info),
-              className: N.siteFooterThirdRow,
-              children: [(0, w.jsx)("span", {
-                className: N.additionalInfoOrganization,
-                children: s.formatMessage(z.footer_rockstar_games)
-              }), (0, w.jsxs)("ul", {
-                className: N.additionalInfoLocationsListElement,
-                children: [(0, w.jsx)("li", {
-                  className: N.listElement,
-                  children: (0, w.jsx)("span", {
-                    children: s.formatMessage(z.footer_locations_new_york)
+            }), (0, b.jsxs)("section", {
+              "aria-label": s.formatMessage(N.footer_section_organization_info),
+              className: D.siteFooterThirdRow,
+              children: [(0, b.jsx)("span", {
+                className: D.additionalInfoOrganization,
+                children: s.formatMessage(N.footer_rockstar_games)
+              }), (0, b.jsxs)("ul", {
+                className: D.additionalInfoLocationsListElement,
+                children: [(0, b.jsx)("li", {
+                  className: D.listElement,
+                  children: (0, b.jsx)("span", {
+                    children: s.formatMessage(N.footer_locations_new_york)
                   })
-                }), (0, w.jsx)("li", {
-                  className: N.listElement,
-                  children: (0, w.jsx)("span", {
-                    children: s.formatMessage(z.footer_locations_london)
+                }), (0, b.jsx)("li", {
+                  className: D.listElement,
+                  children: (0, b.jsx)("span", {
+                    children: s.formatMessage(N.footer_locations_london)
                   })
-                }), (0, w.jsx)("li", {
-                  className: N.listElement,
-                  children: (0, w.jsx)("span", {
-                    children: s.formatMessage(z.footer_locations_paris)
+                }), (0, b.jsx)("li", {
+                  className: D.listElement,
+                  children: (0, b.jsx)("span", {
+                    children: s.formatMessage(N.footer_locations_paris)
                   })
-                }), (0, w.jsx)("li", {
-                  className: N.listElement,
-                  children: (0, w.jsx)("span", {
-                    children: s.formatMessage(z.footer_locations_bogota)
+                }), (0, b.jsx)("li", {
+                  className: D.listElement,
+                  children: (0, b.jsx)("span", {
+                    children: s.formatMessage(N.footer_locations_bogota)
                   })
                 })]
-              }), (0, w.jsxs)("span", {
-                className: N.additionalInfoEstablishedDate,
-                children: [(0, w.jsx)("span", {
-                  children: s.formatMessage(z.footer_established_date_roman)
-                }), (0, w.jsx)(y, {
-                  children: s.formatMessage(z.footer_established_date_numerical)
+              }), (0, b.jsxs)("span", {
+                className: D.additionalInfoEstablishedDate,
+                children: [(0, b.jsx)("span", {
+                  children: s.formatMessage(N.footer_established_date_roman)
+                }), (0, b.jsx)(w, {
+                  children: s.formatMessage(N.footer_established_date_numerical)
                 })]
               })]
             })]
           })
         },
-        L = (0, I.withIntl)((n => {
+        j = (0, I.withIntl)((n => {
           let {
             includeBrowserRouter: e = !1,
-            linkBase: a = "",
-            onLanguageChange: o,
+            linkBase: o = "",
+            onLanguageChange: r,
             ...i
           } = n;
-          return e ? (0, w.jsx)(t.BrowserRouter, {
-            children: (0, w.jsx)(M, {
-              linkBase: a,
-              onLanguageChange: o,
+          return e ? (0, b.jsx)(S, {
+            packageName: "@rockstargames/modules-core-footer",
+            loadFonts: ["HelveticaNowText", "HelveticaNowDisplayBold"],
+            children: (0, b.jsx)(a.NP, {
+              colorScheme: "dark",
+              defaultColorScheme: "dark",
+              defaultContrastMode: "normal",
+              defaultPlatformScale: "desktop",
+              children: (0, b.jsx)(t.BrowserRouter, {
+                children: (0, b.jsx)(M, {
+                  linkBase: o,
+                  onLanguageChange: r,
+                  ...i
+                })
+              })
+            })
+          }) : (0, b.jsx)(S, {
+            packageName: "@rockstargames/modules-core-footer",
+            loadFonts: ["HelveticaNowText", "HelveticaNowDisplayBold"],
+            children: (0, b.jsx)(M, {
+              linkBase: o,
+              onLanguageChange: r,
               ...i
             })
-          }) : (0, w.jsx)(M, {
-            linkBase: a,
-            onLanguageChange: o,
-            ...i
           })
-        }), E)
+        }), F)
     },
-    45378: (n, e, a) => {
-      a.d(e, {
+    45378: (n, e, o) => {
+      o.d(e, {
         A: () => s
       });
-      var t = a(42587),
-        o = a.n(t),
-        i = a(15081),
-        r = a.n(i)()(o());
-      r.push([n.id, ".rockstargames-modules-core-footeracd86b7f5778381df8fac4a3f7489f60{clip:rect(0 0 0 0);border:0;height:1px;overflow:hidden;padding:0;position:absolute;white-space:nowrap;width:1px}", "", {
+      var t = o(42587),
+        a = o.n(t),
+        r = o(15081),
+        i = o.n(r)()(a());
+      i.push([n.id, ".rockstargames-modules-core-footeracd86b7f5778381df8fac4a3f7489f60{clip:rect(0 0 0 0);border:0;height:1px;overflow:hidden;padding:0;position:absolute;white-space:nowrap;width:1px}", "", {
         version: 3,
         sources: ["webpack://./../../buildtime/components/src/VisuallyHidden/index.less"],
         names: [],
         mappings: "AAAA,mEAEI,kBAAA,CADA,QAAA,CAEA,UAAA,CACA,eAAA,CACA,SAAA,CACA,iBAAA,CACA,kBAAA,CACA,SACJ",
         sourcesContent: [".visuallyHidden {\n    border: 0;\n    clip: rect(0 0 0 0);\n    height: 1px;\n    overflow: hidden;\n    padding: 0;\n    position: absolute;\n    white-space: nowrap;\n    width: 1px;\n}"],
         sourceRoot: ""
-      }]), r.locals = {
+      }]), i.locals = {
         visuallyHidden: "rockstargames-modules-core-footeracd86b7f5778381df8fac4a3f7489f60"
       };
-      const s = r
+      const s = i
     },
-    42386: (n, e, a) => {
-      a.d(e, {
-        A: () => m
+    42386: (n, e, o) => {
+      o.d(e, {
+        A: () => f
       });
-      var t = a(42587),
-        o = a.n(t),
-        i = a(15081),
-        r = a.n(i),
-        s = a(22758),
-        l = a(44051),
-        d = a(60502),
-        c = r()(o());
+      var t = o(42587),
+        a = o.n(t),
+        r = o(15081),
+        i = o.n(r),
+        s = o(22758),
+        l = o(44051),
+        d = o(60502),
+        c = i()(a());
       c.i(s.A), c.i(l.A), c.i(d.A), c.push([n.id, '.rockstargames-modules-core-footerc3fe63f31b69138642a2826c7f92be54{align-items:center;background:var(--white-15);border:none;border-radius:100px;color:var(--white-100);cursor:pointer;display:flex;font-family:var(--font-family-body);font-size:20px;font-style:normal;font-weight:700;justify-content:center;line-height:var(--rem-125);min-width:var(--rem-6);padding:var(--padding-xs) var(--padding-sm);text-align:center;transition:background-color .3s ease-in-out}.rockstargames-modules-core-footerc3fe63f31b69138642a2826c7f92be54 img{height:var(--nav-icon-size);margin-left:var(--grid-gap-xs);transition:filter .3s ease-in-out;width:var(--nav-icon-size)}.rockstargames-modules-core-footerc3fe63f31b69138642a2826c7f92be54:focus,.rockstargames-modules-core-footerc3fe63f31b69138642a2826c7f92be54:hover{background-color:var(--white-40);outline:none}.rockstargames-modules-core-footerc3fe63f31b69138642a2826c7f92be54.rockstargames-modules-core-footerfd0264e741af69a6696c0723a8ed1875{background:var(--white-100);color:var(--black-200)}.rockstargames-modules-core-footerc3fe63f31b69138642a2826c7f92be54.rockstargames-modules-core-footerfd0264e741af69a6696c0723a8ed1875 img{filter:invert()}.rockstargames-modules-core-footerdc7cba777cf6589cf69816c269336f00{--rem-2:calc(var(--base-rem-size) * 2);--rem-4:calc(var(--base-rem-size) * 4);text-wrap:nowrap;align-items:center;background:var(--foundry-alias-color-background-bold-layer-0);box-sizing:border-box;color:var(--foundry-alias-color-text-standard);display:flex;flex-direction:column;gap:var(--foundry-global-spacing-dimensions-500);justify-content:center;padding:var(--alias-grid-margin,var(--padding-sides,7.5vw)) var(--rem-2);width:100%}@media (min-width:0px){.rockstargames-modules-core-footerdc7cba777cf6589cf69816c269336f00{--base-rem-size:16px}}@media (min-width:768px){.rockstargames-modules-core-footerdc7cba777cf6589cf69816c269336f00{--base-rem-size:18px}}@media (min-width:1024px){.rockstargames-modules-core-footerdc7cba777cf6589cf69816c269336f00{--base-rem-size:20px}}@media (min-width:1920px){.rockstargames-modules-core-footerdc7cba777cf6589cf69816c269336f00{--base-rem-size:22px}}@media (min-width:700px){.rockstargames-modules-core-footerdc7cba777cf6589cf69816c269336f00{gap:var(--foundry-global-spacing-dimensions-700);padding:var(--foundry-global-spacing-gap-600) var(--rem-4)}}@media (min-width:1440px){.rockstargames-modules-core-footerdc7cba777cf6589cf69816c269336f00{gap:var(--foundry-global-spacing-dimensions-800)}}.rockstargames-modules-core-footere8f1f37193e0a1bbf8c7ce706437b2c6{align-items:center;display:flex}.rockstargames-modules-core-footerbde93fdc93e6f33c7a2c70006f456584{align-items:flex-start;display:flex;flex-direction:row;gap:var(--foundry-global-spacing-dimensions-200);justify-content:space-between;width:100%}@media (min-width:1440px){.rockstargames-modules-core-footerbde93fdc93e6f33c7a2c70006f456584{align-items:center}}.rockstargames-modules-core-footerb5c24f103b44da188f8ba7091f2311c4{width:100%}.rockstargames-modules-core-footerf7236aa9d59194028c9a9dfa66f2a6ef{align-items:flex-start;display:flex;flex-direction:column;gap:var(--foundry-global-spacing-dimensions-200);list-style:none;margin:0;padding:var(--foundry-global-spacing-gap-150) 0 0}@media (min-width:1440px){.rockstargames-modules-core-footerf7236aa9d59194028c9a9dfa66f2a6ef{flex-direction:row;padding:0}}.rockstargames-modules-core-footerf37482c5332dc1534d66c900fe9940d0{background:none;border:none;color:var(--foundry-alias-color-text-header);cursor:pointer;font-family:var(--family-body,"Helvetica Now Text");font-size:var(--foundry-alias-font-size-body-paragraph);font-weight:var(--foundry-alias-font-weight-bold);margin:0;padding:0;text-decoration:none}.rockstargames-modules-core-footerb558515ca5ee01f23cce973848c4dc6f{align-items:flex-start;display:flex;flex-direction:column-reverse;gap:var(--foundry-global-spacing-dimensions-500);justify-content:flex-start;width:100%}@media (min-width:1440px){.rockstargames-modules-core-footerb558515ca5ee01f23cce973848c4dc6f{align-items:center;flex-direction:row;justify-content:space-between}}.rockstargames-modules-core-footerf853a5b845e59b2b47bfced9acc1007b{width:100%}.rockstargames-modules-core-footerfcbf7f59cd576b97bd48cbe031927b52{display:flex;flex-direction:column;gap:var(--foundry-global-spacing-dimensions-200);list-style:none;margin:0;padding:0}@media (min-width:1440px){.rockstargames-modules-core-footerfcbf7f59cd576b97bd48cbe031927b52{flex-direction:row}}.rockstargames-modules-core-footerc4a6ef30e36443c3593a46273a961911{background:none;border:none;color:var(--foundry-alias-color-text-header);cursor:pointer;font-family:var(--family-body,"Helvetica Now Text");font-size:var(--foundry-alias-font-size-body-caption);font-weight:var(--foundry-alias-font-weight-regular);margin:0;padding:0;text-decoration:none}.rockstargames-modules-core-footera3603e0dfe32e5e459646d5050e69da1{align-items:center;display:flex;width:100%}@media (min-width:700px){.rockstargames-modules-core-footera3603e0dfe32e5e459646d5050e69da1{justify-content:start}}@media (min-width:1440px){.rockstargames-modules-core-footera3603e0dfe32e5e459646d5050e69da1{justify-content:end}}.rockstargames-modules-core-footerabd430e51ed1a4ea694cb383af9418f6{align-items:center;display:flex;flex-direction:row;justify-content:space-between;list-style:none;margin:0;max-width:var(--foundry-global-spacing-dimensions-5000);padding:0;width:100%}.rockstargames-modules-core-footerd698977b857336c125cdfcb3b7654d5d{align-items:center;color:var(--foundry-alias-color-text-subdued);display:flex;flex-direction:column;font-family:var(--family-body,"Helvetica Now Text");font-size:var(--foundry-alias-font-size-body-caption);font-weight:var(--foundry-alias-font-weight-regular);gap:var(--foundry-global-spacing-dimensions-200);justify-content:center;width:100%}@media (min-width:700px){.rockstargames-modules-core-footerd698977b857336c125cdfcb3b7654d5d{flex-direction:row}}.rockstargames-modules-core-footerf21eb2a6c202cb30e8b192c4bda3731d{align-items:center;display:flex;flex-direction:row;gap:var(--foundry-global-spacing-dimensions-200);justify-content:center;list-style:none;margin:0;padding:0;width:100%}@media (min-width:700px){.rockstargames-modules-core-footerd0a638805e7b844a609f1e8bfbf5fc5f,.rockstargames-modules-core-footeraf4cfb9cce056156d3e4a4c7c270769d{flex:1 0 0}.rockstargames-modules-core-footerf21eb2a6c202cb30e8b192c4bda3731d{flex:2}.rockstargames-modules-core-footerd0a638805e7b844a609f1e8bfbf5fc5f{text-align:right}}', "", {
         version: 3,
         sources: ["webpack://./../../buildtime/legacy-design-system/less/gen9-mixins.less", "webpack://./src/Footer/index.less", "webpack://./../../buildtime/legacy-design-system/less/mixins.less"],
@@ -524,7 +1111,193 @@ _global.SENTRY_RELEASE = {
         additionalInfoEstablishedDate: "rockstargames-modules-core-footerd0a638805e7b844a609f1e8bfbf5fc5f",
         additionalInfoOrganization: "rockstargames-modules-core-footeraf4cfb9cce056156d3e4a4c7c270769d"
       };
-      const m = c
+      const f = c
+    },
+    36606: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/59de0d7e9b43e1cc0cab80a770e9efe6.woff"
+    },
+    57390: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/ab64825965d1d9e6e8721c549ca9b65a.woff"
+    },
+    50228: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/95ca59e1c2cf140daa8b024c6a139e4c.woff"
+    },
+    54414: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/63c1db80114374c24625111e06557170.woff"
+    },
+    79539: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/ee9fe642d516bd426445b83dfe08cd39.woff"
+    },
+    61494: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/ef44f43ca79bb1aee29fbc2d457e7dee.woff"
+    },
+    304: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/aa2a7321d65db9f2de3cafabeb37e354.woff"
+    },
+    28168: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/a8da93d3b93aa6f5b995c8fca0a49d56.woff"
+    },
+    21130: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/bc4df074e2a0a7a841c564dba3e08fe8.woff"
+    },
+    5676: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/6e2e46bc0a11279c325310a4ef9ce77c.woff"
+    },
+    51594: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/63234fb79c05a628350bb714e8b70f1d.woff"
+    },
+    69400: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/202c95f3c4658c54223b0f4166bd3825.woff"
+    },
+    44840: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/a5e4e77906b6b4b3cbf21f4c26271861.woff"
+    },
+    93803: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/db765ccb047ec8429212c1a913914694.woff"
+    },
+    53037: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/e4be9aed1e8beccc21ffb995f0a89da0.woff"
+    },
+    34298: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/62b84dbfc20341e064c88ec93455ccac.woff"
+    },
+    79215: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/20f419b63a6f61085c182ec2f1cd8fa0.woff"
+    },
+    26207: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/6f2bacca1d507ccd5eb7b82f9224a74f.woff"
+    },
+    6903: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/96a3e88142b1180d6a8f0c79b2f1683a.woff"
+    },
+    22154: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/2b00d9b63daf42f3a42cdbd63cf047ea.woff"
+    },
+    49200: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/774ad5166eb5921aca5e0c86b90e5acc.woff"
+    },
+    20928: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/97774bba32302ec2b24cfff140f0622b.woff"
+    },
+    90768: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/6cd147a8d9ee1f0d4c56a4613962581c.woff"
+    },
+    29951: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/85e45820f22a3efb16f495d218f310b2.woff"
+    },
+    52086: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/2182248632b4e44ebf3764bc8ac7aba2.woff"
+    },
+    98230: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/55aff5d02363927e69c11c450746bfd8.woff"
+    },
+    66894: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/63cfc284c204bd1597bc68464e18042b.woff"
+    },
+    24921: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/064abecda5d2f269d95fa7fd0f340e87.woff"
+    },
+    97439: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/ddff8a927395b3bbeb442818124b332e.woff"
+    },
+    28255: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/bf1c99f9a5316689221de8a3540abf38.woff"
+    },
+    36334: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/d063646155b907d60f49ada779b60713.woff"
+    },
+    94904: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/a531a5aaeac0ada2930fd697606d7e9e.woff"
+    },
+    49027: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/0c60fa85dfc771ab4d15d175246263b5.woff"
+    },
+    83493: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/acbb38cbe0ae2cdfc5f72a96cd32fe86.woff"
+    },
+    31431: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/c70a0570c2d0687a208d5612623a9fdc.woff"
+    },
+    40792: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/f09f2d938e708e14f4211b5c41b1ae2c.woff"
+    },
+    66562: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/0cd5b1e38f54ef83942d288ce01980e6.woff"
+    },
+    81117: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/e2838b19e760e3e6f50866c533aeb282.woff"
+    },
+    62051: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/010014d365bcd4b2fedd44df3f0e9728.woff"
+    },
+    68577: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/7935b57c9db57ab14bd5a876dbfb87f4.woff"
+    },
+    9133: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/c31221106dc90ced1c3479d73a5fe115.woff"
+    },
+    93458: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/e34f12fc5033d9cdc9f062f80c447b8f.woff"
+    },
+    77032: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/76a3f4e73b6671642a161e05923a968b.woff"
+    },
+    44486: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/a7d5ee48f5e8cb1f732d7206c9869112.woff"
+    },
+    28326: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/8517df1baaad4b49346c1293b195088a.woff"
+    },
+    50225: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/6ffa7afc52831edad562d5a1c17dc41e.woff"
+    },
+    32791: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/0782dca93011dc6ab08f338b6c31e1d6.woff"
+    },
+    92973: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/dd749523aef22373be9db64ea01d64bc.woff"
+    },
+    25293: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/90ef908f0a56e2fa2b7d9b2056d81bcc.woff"
+    },
+    46962: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/94d584a6e397820977db9932febb4b92.woff"
+    },
+    66312: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/f3472849022d6ce77ee5fc572d732db8.woff"
+    },
+    44934: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/4d21d448eea7cddea2f20b68968226c1.woff"
+    },
+    58853: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/86d40c5569b20fa82ce1ed87dea47810.woff"
+    },
+    46010: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/688eae524f5ac689bcae1c3cbc4549c0.woff"
+    },
+    68145: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/c5771270ac701867f740f52e82d886af.woff"
+    },
+    79122: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/c5dfa9c826b62645cced60df6042f7ef.woff"
+    },
+    89307: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/58a759aebd79ce94dbe18b5a67013eca.woff"
+    },
+    26739: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/b66ddc09c267984e4d637e9745c7fbf8.woff"
+    },
+    59792: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/6d335c7bdc0dedb8593d2740f9e9b8e0.woff"
+    },
+    313: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/099c158b47220bfa6b52c3aaf2ff3753.woff"
+    },
+    47594: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/decd41a7166cfa68918f81e92db8e1c1.woff"
+    },
+    89457: n => {
+      n.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/976c864a7229fe453650a438f00e0d3e.woff"
     }
   }
 ]);

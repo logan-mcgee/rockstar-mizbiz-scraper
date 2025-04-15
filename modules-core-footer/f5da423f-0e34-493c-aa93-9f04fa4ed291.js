@@ -20,7 +20,7 @@ _global.SENTRY_RELEASE = {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => l,
-        Lightbox_Dialog_Description: () => c,
+        Lightbox_Dialog_Description: () => p,
         Lightbox_Dialog_Title: () => h,
         Lightbox_Download_Button_Label: () => f,
         Lightbox_Download_Button_Tooltip: () => r,
@@ -33,7 +33,7 @@ _global.SENTRY_RELEASE = {
         Lightbox_Zoom_Out_Button__Tooltip: () => b,
         Lightbox_Zoom_Slider_Label: () => u,
         Lightbox_Zoom_Slider_Tooltip: () => s,
-        default: () => p
+        default: () => x
       });
       var _ = "關閉燈箱",
         l = "按 {shortcut}",
@@ -49,8 +49,8 @@ _global.SENTRY_RELEASE = {
         r = "下載",
         L = "在燈箱中開啟圖片",
         h = "圖片燈箱",
-        c = "圖片替代文字：{alt}",
-        p = {
+        p = "圖片替代文字：{alt}",
+        x = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: l,
           Lightbox_Zoom_In_Button_Label: a,
@@ -65,7 +65,7 @@ _global.SENTRY_RELEASE = {
           Lightbox_Download_Button_Tooltip: r,
           Lightbox_Open_Button_Label: L,
           Lightbox_Dialog_Title: h,
-          Lightbox_Dialog_Description: c
+          Lightbox_Dialog_Description: p
         }
     }
   }

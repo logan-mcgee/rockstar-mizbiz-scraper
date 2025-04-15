@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "8794615f-3efc-411a-9af3-11cf773b4b06", e._sentryDebugIdIdentifier = "sentry-dbid-8794615f-3efc-411a-9af3-11cf773b4b06")
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "3ed38ca2-9f99-4ba7-8cd6-cc6972af3213", e._sentryDebugIdIdentifier = "sentry-dbid-3ed38ca2-9f99-4ba7-8cd6-cc6972af3213")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -229,32 +229,25 @@ _global.SENTRY_RELEASE = {
             charactersNeeded: n,
             crewsNeeded: o,
             currentCharId: i
-          } = (0, g.A)(), s = (0, r.useRockstarToken)(), [d, l] = (0, t.useState)(), [c] = (0, r.useRockstarTokenReactive)(), A = (0, r.useRockstarTokenPing)(), [m, f] = (0, t.useState)(), [b, C] = (0, t.useState)(!1), [v, w] = (0, t.useState)(), x = void 0 === m, [y, k] = (0, t.useState)(1);
+          } = (0, g.A)(), s = (0, r.useRockstarToken)(), [d, l] = (0, t.useState)(), [c] = (0, r.useRockstarTokenReactive)(), A = (0, r.useRockstarTokenPing)(), [m, f] = (0, t.useState)(), [b, C] = (0, t.useState)(!1), v = void 0 === m, [w, x] = (0, t.useState)(1);
           return (0, t.useEffect)((() => {
-            n && (l({
+            "gtao" !== n || d?.characters?.gtao || (l({
               ...d,
               accountSynced: !1
-            }), k((e => e + 1)))
-          }), [n]), (0, t.useEffect)((() => {
-            o && (l({
+            }), x((e => e + 1)))
+          }), [n, d?.characters?.gtao]), (0, t.useEffect)((() => {
+            o && !d?.crews && (l({
               ...d,
               accountSynced: !1
-            }), k((e => e + 1)))
-          }), [o]), (0, t.useEffect)((() => {
-            0 === y && l({
+            }), x((e => e + 1)))
+          }), [o, d?.crews]), (0, t.useEffect)((() => {
+            0 === w && l({
               ...d,
               accountSynced: !0
             })
-          }), [y]), (0, t.useEffect)((() => {
+          }), [w]), (0, t.useEffect)((() => {
             a && c(a)
           }), [a]), (0, t.useEffect)((() => {
-            n && w("1" === d?.characters?.[n]?.[i]?.stats?.overview?.hasGtaPlus?.value)
-          }), [n, i, d]), (0, t.useEffect)((() => {
-            l({
-              ...d,
-              hasGtaPlus: v
-            })
-          }), [v]), (0, t.useEffect)((() => {
             "" !== s || A()
           }), [s]), (0, t.useEffect)((() => {
             if ("" === s) return;
@@ -348,7 +341,7 @@ _global.SENTRY_RELEASE = {
                 l({
                   ...d,
                   crews: e
-                }), k((e => e - 1))
+                }), x((e => e - 1))
               }
             })()
           }), [d?.nickname, o, m]), (0, t.useEffect)((() => {
@@ -370,7 +363,7 @@ _global.SENTRY_RELEASE = {
               l({
                 ...d,
                 gamesPlayed: e
-              }), k((e => e - 1))
+              }), x((e => e - 1))
             })()
           }), [d?.nickname, m]), (0, t.useEffect)((() => {
             (async () => {
@@ -451,8 +444,9 @@ _global.SENTRY_RELEASE = {
                     ...d.characters,
                     gtao: e
                   },
-                  linkedAccounts: a
-                }), k((e => e - 1))
+                  linkedAccounts: a,
+                  hasGtaPlus: "1" === e?.[i]?.stats?.overview?.hasGtaPlus?.value
+                }), x((e => e - 1))
               }
             })()
           }), [n, d?.nickname, m]), (0, t.useEffect)((() => {
@@ -460,7 +454,7 @@ _global.SENTRY_RELEASE = {
           }), [JSON.stringify(d)]), {
             data: d,
             loggedIn: m,
-            loading: x
+            loading: v
           }
         },
         C = {},

@@ -1,8 +1,8 @@
 ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "d7819a90-f5b8-490d-b2ec-4a2c479b2d76", e._sentryDebugIdIdentifier = "sentry-dbid-d7819a90-f5b8-490d-b2ec-4a2c479b2d76")
+      d = (new Error).stack;
+    d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "d7819a90-f5b8-490d-b2ec-4a2c479b2d76", e._sentryDebugIdIdentifier = "sentry-dbid-d7819a90-f5b8-490d-b2ec-4a2c479b2d76")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -16,12 +16,12 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [1474, 3855, 6236, 9093], {
-    32469: (e, a, o) => {
-      var r = o(62229),
-        d = Symbol.for("react.element"),
+    32469: (e, d, o) => {
+      var a = o(62229),
+        r = Symbol.for("react.element"),
         n = Symbol.for("react.fragment"),
         t = Object.prototype.hasOwnProperty,
-        f = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        f = a.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         l = {
           key: !0,
           ref: !0,
@@ -29,15 +29,15 @@ _global.SENTRY_RELEASE = {
           __source: !0
         };
 
-      function s(e, a, o) {
-        var r, n = {},
+      function s(e, d, o) {
+        var a, n = {},
           s = null,
           _ = null;
-        for (r in void 0 !== o && (s = "" + o), void 0 !== a.key && (s = "" + a.key), void 0 !== a.ref && (_ = a.ref), a) t.call(a, r) && !l.hasOwnProperty(r) && (n[r] = a[r]);
+        for (a in void 0 !== o && (s = "" + o), void 0 !== d.key && (s = "" + d.key), void 0 !== d.ref && (_ = d.ref), d) t.call(d, a) && !l.hasOwnProperty(a) && (n[a] = d[a]);
         if (e && e.defaultProps)
-          for (r in a = e.defaultProps) void 0 === n[r] && (n[r] = a[r]);
+          for (a in d = e.defaultProps) void 0 === n[a] && (n[a] = d[a]);
         return {
-          $$typeof: d,
+          $$typeof: r,
           type: e,
           key: s,
           ref: _,
@@ -45,9 +45,9 @@ _global.SENTRY_RELEASE = {
           _owner: f.current
         }
       }
-      a.Fragment = n, a.jsx = s, a.jsxs = s
+      d.Fragment = n, d.jsx = s, d.jsxs = s
     },
-    73855: (e, a, o) => {
+    73855: (e, d, o) => {
       e.exports = o(32469)
     }
   }

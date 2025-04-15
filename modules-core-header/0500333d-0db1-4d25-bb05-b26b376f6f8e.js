@@ -18,10 +18,10 @@ _global.SENTRY_RELEASE = {
   [3820, 3855, 6236, 9093, 1474], {
     32469: (e, o, r) => {
       var t = r(62229),
-        a = Symbol.for("react.element"),
+        d = Symbol.for("react.element"),
         n = Symbol.for("react.fragment"),
         s = Object.prototype.hasOwnProperty,
-        d = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        a = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         l = {
           key: !0,
           ref: !0,
@@ -37,12 +37,12 @@ _global.SENTRY_RELEASE = {
         if (e && e.defaultProps)
           for (t in o = e.defaultProps) void 0 === n[t] && (n[t] = o[t]);
         return {
-          $$typeof: a,
+          $$typeof: d,
           type: e,
           key: f,
           ref: i,
           props: n,
-          _owner: d.current
+          _owner: a.current
         }
       }
       o.Fragment = n, o.jsx = f, o.jsxs = f
@@ -61,7 +61,7 @@ _global.SENTRY_RELEASE = {
           support: "support",
           store: "store"
         },
-        a = [{
+        d = [{
           id: "prod",
           sites: {
             www: "www",
@@ -75,13 +75,13 @@ _global.SENTRY_RELEASE = {
           let e;
           const {
             location: o
-          } = window, r = o.hostname.substring(0, o.hostname.indexOf(".rockstargames.com")), t = a.findIndex((o => Object.entries(o.sites).findIndex((o => {
-            let [t, a] = o;
-            return a === r && (e = {
+          } = window, r = o.hostname.substring(0, o.hostname.indexOf(".rockstargames.com")), t = d.findIndex((o => Object.entries(o.sites).findIndex((o => {
+            let [t, d] = o;
+            return d === r && (e = {
               site: t,
-              subDomain: a
+              subDomain: d
             }, !0)
-          })) >= 0)), n = a[t >= 0 ? t : 0];
+          })) >= 0)), n = d[t >= 0 ? t : 0];
           return e || (e = {
             site: "www",
             subDomain: "local"

@@ -27,18 +27,18 @@ _global.SENTRY_RELEASE = {
         Lightbox_Open_Button_Label: () => h,
         Lightbox_Reset_Zoom_Button_Label: () => d,
         Lightbox_Reset_Zoom_Button_Tooltip: () => g,
-        Lightbox_Zoom_In_Button_Label: () => a,
-        Lightbox_Zoom_In_Button_Tooltip: () => l,
+        Lightbox_Zoom_In_Button_Label: () => l,
+        Lightbox_Zoom_In_Button_Tooltip: () => a,
         Lightbox_Zoom_Out_Button_Label: () => n,
         Lightbox_Zoom_Out_Button__Tooltip: () => b,
         Lightbox_Zoom_Slider_Label: () => u,
         Lightbox_Zoom_Slider_Tooltip: () => r,
-        default: () => c
+        default: () => x
       });
       var _ = "Chiudi lightbox",
         i = "Premi {shortcut}",
-        a = "Aumenta zoom",
-        l = "Premi {shortcut}",
+        l = "Aumenta zoom",
+        a = "Premi {shortcut}",
         n = "Diminuisci zoom",
         b = "Premi {shortcut}",
         d = "Ripristina",
@@ -50,11 +50,11 @@ _global.SENTRY_RELEASE = {
         h = "Apri immagine in lightbox",
         f = "Immagine lightbox",
         m = "Testo alternativo: {alt}",
-        c = {
+        x = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: i,
-          Lightbox_Zoom_In_Button_Label: a,
-          Lightbox_Zoom_In_Button_Tooltip: l,
+          Lightbox_Zoom_In_Button_Label: l,
+          Lightbox_Zoom_In_Button_Tooltip: a,
           Lightbox_Zoom_Out_Button_Label: n,
           Lightbox_Zoom_Out_Button__Tooltip: b,
           Lightbox_Reset_Zoom_Button_Label: d,

@@ -24,14 +24,14 @@ _global.SENTRY_RELEASE = {
             ordinal: ["one", "other"]
           },
           fn: function(e, a) {
-            var n = String(e),
-              o = n.split(/[ce]/),
-              l = o[1] || 0,
-              d = String(l ? Number(o[0]) * Math.pow(10, l) : n).split("."),
-              t = d[0],
-              r = !d[1],
+            var d = String(e),
+              n = d.split(/[ce]/),
+              o = n[1] || 0,
+              l = String(o ? Number(n[0]) * Math.pow(10, o) : d).split("."),
+              t = l[0],
+              r = !l[1],
               s = t.slice(-6);
-            return a ? 1 == e ? "one" : "other" : e >= 0 && e < 2 ? "one" : 0 == l && 0 != t && 0 == s && r || l < 0 || l > 5 ? "many" : "other"
+            return a ? 1 == e ? "one" : "other" : e >= 0 && e < 2 ? "one" : 0 == o && 0 != t && 0 == s && r || o < 0 || o > 5 ? "many" : "other"
           }
         },
         locale: "fr"

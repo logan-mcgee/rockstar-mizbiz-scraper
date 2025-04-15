@@ -19,8 +19,8 @@ _global.SENTRY_RELEASE = {
     32469: (e, o, r) => {
       var a = r(62229),
         t = Symbol.for("react.element"),
-        n = Symbol.for("react.fragment"),
-        d = Object.prototype.hasOwnProperty,
+        d = Symbol.for("react.fragment"),
+        n = Object.prototype.hasOwnProperty,
         l = a.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         f = {
           key: !0,
@@ -30,22 +30,22 @@ _global.SENTRY_RELEASE = {
         };
 
       function s(e, o, r) {
-        var a, n = {},
+        var a, d = {},
           s = null,
           i = null;
-        for (a in void 0 !== r && (s = "" + r), void 0 !== o.key && (s = "" + o.key), void 0 !== o.ref && (i = o.ref), o) d.call(o, a) && !f.hasOwnProperty(a) && (n[a] = o[a]);
+        for (a in void 0 !== r && (s = "" + r), void 0 !== o.key && (s = "" + o.key), void 0 !== o.ref && (i = o.ref), o) n.call(o, a) && !f.hasOwnProperty(a) && (d[a] = o[a]);
         if (e && e.defaultProps)
-          for (a in o = e.defaultProps) void 0 === n[a] && (n[a] = o[a]);
+          for (a in o = e.defaultProps) void 0 === d[a] && (d[a] = o[a]);
         return {
           $$typeof: t,
           type: e,
           key: s,
           ref: i,
-          props: n,
+          props: d,
           _owner: l.current
         }
       }
-      o.Fragment = n, o.jsx = s, o.jsxs = s
+      o.Fragment = d, o.jsx = s, o.jsxs = s
     },
     73855: (e, o, r) => {
       e.exports = r(32469)
@@ -57,15 +57,15 @@ _global.SENTRY_RELEASE = {
       });
       var a = r(62229),
         t = r(44853),
-        n = r(34730),
-        d = r(73855),
+        d = r(34730),
+        n = r(73855),
         l = ["a", "button", "div", "form", "h2", "h3", "img", "input", "label", "li", "nav", "ol", "p", "span", "svg", "ul"].reduce(((e, o) => {
           const r = a.forwardRef(((e, r) => {
             const {
               asChild: a,
               ...t
-            } = e, l = a ? n.Slot : o;
-            return "undefined" != typeof window && (window[Symbol.for("radix-ui")] = !0), (0, d.jsx)(l, {
+            } = e, l = a ? d.Slot : o;
+            return "undefined" != typeof window && (window[Symbol.for("radix-ui")] = !0), (0, n.jsx)(l, {
               ...t,
               ref: r
             })
@@ -79,12 +79,12 @@ _global.SENTRY_RELEASE = {
         s = a.forwardRef(((e, o) => {
           const {
             container: r,
-            ...n
+            ...d
           } = e, [s, i] = a.useState(!1);
           (0, f.N)((() => i(!0)), []);
           const u = r || s && globalThis?.document?.body;
-          return u ? t.createPortal((0, d.jsx)(l.div, {
-            ...n,
+          return u ? t.createPortal((0, n.jsx)(l.div, {
+            ...d,
             ref: o
           }), u) : null
         }));

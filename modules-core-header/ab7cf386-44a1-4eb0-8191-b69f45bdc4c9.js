@@ -50,7 +50,7 @@ _global.SENTRY_RELEASE = {
     },
     62294: (e, n, r) => {
       r.r(n), r.d(n, {
-        Root: () => c,
+        Root: () => f,
         Slot: () => a,
         Slottable: () => i
       });
@@ -122,7 +122,7 @@ _global.SENTRY_RELEASE = {
       function s(e) {
         return t.isValidElement(e) && e.type === i
       }
-      var c = a
+      var f = a
     }
   }
 ]);

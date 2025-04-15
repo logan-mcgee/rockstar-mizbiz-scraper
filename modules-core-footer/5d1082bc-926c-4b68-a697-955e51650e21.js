@@ -2,7 +2,7 @@
   try {
     var o = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       a = (new Error).stack;
-    a && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[a] = "05281f17-8fba-45b9-9419-abb8de9c5e84", o._sentryDebugIdIdentifier = "sentry-dbid-05281f17-8fba-45b9-9419-abb8de9c5e84")
+    a && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[a] = "5d1082bc-926c-4b68-a697-955e51650e21", o._sentryDebugIdIdentifier = "sentry-dbid-5d1082bc-926c-4b68-a697-955e51650e21")
   } catch (o) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -15,7 +15,7 @@ var _global = "undefined" != typeof window ? window : "undefined" != typeof glob
 _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_footer = self.webpackChunk_rockstargames_modules_core_footer || []).push([
-  [502], {
+  [7205], {
     60502: (o, a, l) => {
       l.d(a, {
         A: () => c
@@ -33,6 +33,12 @@ _global.SENTRY_RELEASE = {
         sourceRoot: ""
       }]), n.locals = {};
       const c = n
+    },
+    20074: (o, a, l) => {
+      l.d(a, {
+        NP: () => r.NP
+      });
+      var r = l(23476)
     }
   }
 ]);

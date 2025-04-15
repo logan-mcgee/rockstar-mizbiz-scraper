@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       o = (new Error).stack;
-    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "e8ae99b4-6688-4378-86d2-4123908b6083", e._sentryDebugIdIdentifier = "sentry-dbid-e8ae99b4-6688-4378-86d2-4123908b6083")
+    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "aadd3d1a-7fe7-45d2-86ac-261f4077fdff", e._sentryDebugIdIdentifier = "sentry-dbid-aadd3d1a-7fe7-45d2-86ac-261f4077fdff")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -15,7 +15,7 @@ var _global = "undefined" != typeof window ? window : "undefined" != typeof glob
 _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_footer = self.webpackChunk_rockstargames_modules_core_footer || []).push([
-  [1673, 3855, 4054], {
+  [1673, 4054], {
     94819: (e, o, t) => {
       var r = {
         "./de": [28206, 5259],
@@ -189,15 +189,15 @@ _global.SENTRY_RELEASE = {
       function u(e, o, t) {
         var r, s = {},
           u = null,
-          c = null;
-        for (r in void 0 !== t && (u = "" + t), void 0 !== o.key && (u = "" + o.key), void 0 !== o.ref && (c = o.ref), o) a.call(o, r) && !l.hasOwnProperty(r) && (s[r] = o[r]);
+          d = null;
+        for (r in void 0 !== t && (u = "" + t), void 0 !== o.key && (u = "" + o.key), void 0 !== o.ref && (d = o.ref), o) a.call(o, r) && !l.hasOwnProperty(r) && (s[r] = o[r]);
         if (e && e.defaultProps)
           for (r in o = e.defaultProps) void 0 === s[r] && (s[r] = o[r]);
         return {
           $$typeof: n,
           type: e,
           key: u,
-          ref: c,
+          ref: d,
           props: s,
           _owner: i.current
         }
@@ -212,17 +212,17 @@ _global.SENTRY_RELEASE = {
       "use strict";
       t.r(o), t.d(o, {
         FormattedMessage: () => r.A,
-        POSIXLocales: () => d.FN,
+        POSIXLocales: () => c.FN,
         createDevLocaleHook: () => l.A,
         createIntl: () => n.E,
         defineMessages: () => s.YK,
-        englishLocale: () => d.Vm,
-        getCookieValueByName: () => c.h,
+        englishLocale: () => c.Vm,
+        getCookieValueByName: () => d.h,
         getLocale: () => u.A,
-        localeCookieHandler: () => c.A,
-        locales: () => d.Ay,
+        localeCookieHandler: () => d.A,
+        locales: () => c.Ay,
         onLanguageChange: () => b.w,
-        splitLocale: () => p.A,
+        splitLocale: () => f.A,
         useIntl: () => a.A,
         withIntl: () => i.QY
       });
@@ -233,19 +233,19 @@ _global.SENTRY_RELEASE = {
         i = t(42425),
         l = t(42121),
         u = t(33586),
-        c = t(7308),
-        d = t(64479),
-        p = t(22675),
-        f = t(53335),
+        d = t(7308),
+        c = t(64479),
+        f = t(22675),
+        p = t(53335),
         m = {};
-      for (const e in f)["default", "onLanguageChange", "FormattedMessage", "POSIXLocales", "createDevLocaleHook", "createIntl", "defineMessages", "englishLocale", "getCookieValueByName", "getLocale", "localeCookieHandler", "locales", "splitLocale", "useIntl", "withIntl"].indexOf(e) < 0 && (m[e] = () => f[e]);
+      for (const e in p)["default", "onLanguageChange", "FormattedMessage", "POSIXLocales", "createDevLocaleHook", "createIntl", "defineMessages", "englishLocale", "getCookieValueByName", "getLocale", "localeCookieHandler", "locales", "splitLocale", "useIntl", "withIntl"].indexOf(e) < 0 && (m[e] = () => p[e]);
       t.d(o, m);
       var b = t(63921)
     },
     42425: (e, o, t) => {
       "use strict";
       t.d(o, {
-        QY: () => d
+        QY: () => c
       });
       var r = t(62229),
         n = t(91080),
@@ -261,11 +261,11 @@ _global.SENTRY_RELEASE = {
       function u(e, o) {
         return e[o] ?? {}
       }
-      var c = t(73855);
+      var d = t(73855);
 
-      function d(e, o, t, a) {
-        return d => {
-          const p = (0, r.useMemo)((() => {
+      function c(e, o, t, a) {
+        return c => {
+          const f = (0, r.useMemo)((() => {
             if (o) return function(e, o) {
               return function(e, o) {
                 const t = o ?? (0, s.A)()[0].iso ?? i(),
@@ -281,14 +281,14 @@ _global.SENTRY_RELEASE = {
               }(e, o)
             }(o, t)
           }), [t]);
-          return (0, c.jsx)(n.A, {
-            locale: p?.locale || i(),
+          return (0, d.jsx)(n.A, {
+            locale: f?.locale || i(),
             messages: {
-              ...p?.messages
+              ...f?.messages
             },
             onError: a,
-            children: p && (0, c.jsx)(e, {
-              ...d
+            children: f && (0, d.jsx)(e, {
+              ...c
             })
           }, "intl-provider")
         }
@@ -334,10 +334,10 @@ _global.SENTRY_RELEASE = {
         })(e), i = s.Vm;
         let l = i;
         const u = `rockstarweb_lang.${o.cookieIdentifier}`,
-          c = (0, n.h)(u);
-        l = o.currentSite?.site === r.C.www ? s.Ay.find((e => e.subdomaincom === a)) || s.Ay.find((e => e.subdomaincom === t)) || i : s.Ay.find((e => e.iso === c)) || i;
-        const [d, p] = (0, n.A)(u, l.iso);
-        return [l, p]
+          d = (0, n.h)(u);
+        l = o.currentSite?.site === r.C.www ? s.Ay.find((e => e.subdomaincom === a)) || s.Ay.find((e => e.subdomaincom === t)) || i : s.Ay.find((e => e.iso === d)) || i;
+        const [c, f] = (0, n.A)(u, l.iso);
+        return [l, f]
       }
     },
     7308: (e, o, t) => {
@@ -473,20 +473,20 @@ _global.SENTRY_RELEASE = {
         const i = (0, r.A)(),
           [l, u] = (0, s.A)(),
           {
-            subdomaincom: c,
-            iso: d
+            subdomaincom: d,
+            iso: c
           } = o,
-          p = (e => {
+          f = (e => {
             let o = location.pathname.replace(/^\/|\/$/g, "");
             const t = o.split("/");
             return n.Ay.map((e => e.subdomaincom)).includes(t[0]) && (o = t.slice(1).join("/")), i.currentSite?.site === r.C.www ? "en" === e ? `${window.location.origin}/${o}${location.search}` : `${window.location.origin}/${e}/${o}${location.search}` : `${window.location.origin}/${o}${location.search}`
-          })(c);
+          })(d);
         t?.({
           event: "cta_other",
-          link_url: p,
-          text: c,
+          link_url: f,
+          text: d,
           element_placement: a
-        }), u(d), window.location.href = p
+        }), u(c), window.location.href = f
       }
     },
     22675: (e, o, t) => {

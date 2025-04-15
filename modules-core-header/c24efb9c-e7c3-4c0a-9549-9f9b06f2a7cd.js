@@ -32,15 +32,15 @@ _global.SENTRY_RELEASE = {
       function s(e, n, r) {
         var t, l = {},
           s = null,
-          c = null;
-        for (t in void 0 !== r && (s = "" + r), void 0 !== n.key && (s = "" + n.key), void 0 !== n.ref && (c = n.ref), n) a.call(n, t) && !d.hasOwnProperty(t) && (l[t] = n[t]);
+          i = null;
+        for (t in void 0 !== r && (s = "" + r), void 0 !== n.key && (s = "" + n.key), void 0 !== n.ref && (i = n.ref), n) a.call(n, t) && !d.hasOwnProperty(t) && (l[t] = n[t]);
         if (e && e.defaultProps)
           for (t in n = e.defaultProps) void 0 === l[t] && (l[t] = n[t]);
         return {
           $$typeof: o,
           type: e,
           key: s,
-          ref: c,
+          ref: i,
           props: l,
           _owner: f.current
         }
@@ -84,7 +84,7 @@ _global.SENTRY_RELEASE = {
     },
     62294: (e, n, r) => {
       r.r(n), r.d(n, {
-        Root: () => c,
+        Root: () => i,
         Slot: () => a,
         Slottable: () => d
       });
@@ -156,7 +156,7 @@ _global.SENTRY_RELEASE = {
       function s(e) {
         return t.isValidElement(e) && e.type === d
       }
-      var c = a
+      var i = a
     }
   }
 ]);

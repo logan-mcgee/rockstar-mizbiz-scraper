@@ -2,7 +2,7 @@
   try {
     var n = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       e = (new Error).stack;
-    e && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[e] = "faafb474-92fa-4062-bfa4-d96b0180b224", n._sentryDebugIdIdentifier = "sentry-dbid-faafb474-92fa-4062-bfa4-d96b0180b224")
+    e && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[e] = "c65e4760-31ab-4a8f-bd41-b651a28bc384", n._sentryDebugIdIdentifier = "sentry-dbid-c65e4760-31ab-4a8f-bd41-b651a28bc384")
   } catch (n) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -18,10 +18,10 @@ _global.SENTRY_RELEASE = {
   [7911], {
     48999: (n, e, a) => {
       a.r(e), a.d(e, {
-        LanguageSelector: () => I,
-        Menu: () => ne,
-        MenuButton: () => te,
-        ProfileSwitcher: () => se
+        LanguageSelector: () => C,
+        Menu: () => Yn,
+        MenuButton: () => ne,
+        ProfileSwitcher: () => te
       });
       var r = a(62229),
         t = a(96711),
@@ -37,24 +37,33 @@ _global.SENTRY_RELEASE = {
       });
       var c = a(53178),
         m = a.n(c),
-        g = a(27835),
+        g = a(94566),
         h = a.n(g),
-        p = a(17529),
+        p = a(31610),
         f = a.n(p),
-        u = a(72162),
+        u = a(82510),
         A = a.n(u),
-        v = a(82510),
-        b = a.n(v),
-        x = a(90675),
-        w = a.n(x),
-        y = a(16633),
-        C = {};
-      C.styleTagTransform = w(), C.setAttributes = A(), C.insert = f().bind(null, "head"), C.domAPI = h(), C.insertStyleElement = b(), m()(y.A, C);
-      const k = y.A && y.A.locals ? y.A.locals : void 0,
-        z = JSON.parse('{"en-US":{"language_selector_default":"Select a Language","nofications_new":"New notifications","profile_selector_mugshot":"{userName} mugshot","profile_selector_profile_card":"Profile Card","profile_selector_rp_icon":"RP Category","profile_selector_switch_character":"Switch Character","profile_silhouette_mugshot":"Silhouette mugshot","sc_link_account":"Account","sc_link_activity_feed":"Activity Feed","sc_link_cookies_policy":"Cookies Policy","sc_link_cookies_settings":"Cookies Settings","sc_link_crews":"Crews","sc_link_do_not_sell_my_information":"Do Not Sell or Share My Personal Information","sc_link_find_friends":"Find Friends","sc_link_friends":"Friends","sc_link_game_activation":"Game Activation","sc_link_help":"Help","sc_link_import_friends":"Import Friends","sc_link_join_social_club":"Sign Up","sc_link_legal":"Legal","sc_link_log_out":"Log Out","sc_link_messages":"Messages","sc_link_my_friends":"My Friends","sc_link_notifications":"Notifications","sc_link_privacy_policy":"Privacy Policy","sc_link_settings":"Settings","sc_link_sign_in":"Sign In","sc_link_support":"Support","sc_link_view_my_profile":"View My Profile","sc_menu_close":"Close player menu","sc_menu_drag_handle":"Drag Menu Handle","sc_menu_open":"Open player menu"}}'),
-        B = n => (0, i.withIntl)(n, z);
-      var S = a(73855);
-      const I = B((n => {
+        v = a(16633),
+        b = {
+          attributes: {
+            "data-shadowTarget": "@rockstargames/modules-core-footer"
+          }
+        };
+      b.setAttributes = f(), b.insert = n => {
+        const e = n.dataset.shadowtarget;
+        e && (window.__MFE_GLOBAL_HOOK__ = {
+          ...window.__MFE_GLOBAL_HOOK__,
+          stylesForShadowRoot: {
+            ...window.__MFE_GLOBAL_HOOK__?.stylesForShadowRoot,
+            [e]: n
+          }
+        })
+      }, b.domAPI = h(), b.insertStyleElement = A(), m()(v.A, b);
+      const x = v.A && v.A.locals ? v.A.locals : void 0,
+        w = JSON.parse('{"en-US":{"language_selector_default":"Select a Language","nofications_new":"New notifications","profile_selector_mugshot":"{userName} mugshot","profile_selector_profile_card":"Profile Card","profile_selector_rp_icon":"RP Category","profile_selector_switch_character":"Switch Character","profile_silhouette_mugshot":"Silhouette mugshot","sc_link_account":"Account","sc_link_activity_feed":"Activity Feed","sc_link_cookies_policy":"Cookies Policy","sc_link_cookies_settings":"Cookies Settings","sc_link_crews":"Crews","sc_link_do_not_sell_my_information":"Do Not Sell or Share My Personal Information","sc_link_find_friends":"Find Friends","sc_link_friends":"Friends","sc_link_game_activation":"Game Activation","sc_link_help":"Help","sc_link_import_friends":"Import Friends","sc_link_join_social_club":"Sign Up","sc_link_legal":"Legal","sc_link_log_out":"Log Out","sc_link_messages":"Messages","sc_link_my_friends":"My Friends","sc_link_notifications":"Notifications","sc_link_privacy_policy":"Privacy Policy","sc_link_settings":"Settings","sc_link_sign_in":"Sign In","sc_link_support":"Support","sc_link_view_my_profile":"View My Profile","sc_menu_close":"Close player menu","sc_menu_drag_handle":"Drag Menu Handle","sc_menu_open":"Open player menu"}}'),
+        y = n => (0, i.withIntl)(n, w);
+      var k = a(73855);
+      const C = y((n => {
         let {
           theme: e,
           languageSelectorOpened: a,
@@ -66,7 +75,7 @@ _global.SENTRY_RELEASE = {
         } = n;
         const {
           track: f
-        } = (0, s.useGtmTrack)(), u = (0, i.useIntl)(), [A] = (0, i.getLocale)(), [v, b] = (0, r.useState)(!1), x = (0, r.useRef)(null), [w, y] = (0, r.useState)(0), C = "ontouchstart" in window || navigator?.maxTouchPoints > 0 || navigator?.msMaxTouchPoints > 0, z = n => {
+        } = (0, s.useGtmTrack)(), u = (0, i.useIntl)(), [A] = (0, i.getLocale)(), [v, b] = (0, r.useState)(!1), w = (0, r.useRef)(null), [y, C] = (0, r.useState)(0), z = "ontouchstart" in window || navigator?.maxTouchPoints > 0 || navigator?.msMaxTouchPoints > 0, B = n => {
           if (c && c(!1), A.subdomaincom === n || "none" === n) return void(c && c(!1));
           const e = i.locales.find((e => e.subdomaincom === n));
           e && h?.({
@@ -78,29 +87,29 @@ _global.SENTRY_RELEASE = {
         return (0, r.useEffect)((() => {
           void 0 !== a && !1 === a && !0 === v && b(!1)
         }), [a]), (0, r.useEffect)((() => {
-          x.current && y(x.current.scrollHeight)
-        }), [x]), "function" != typeof h ? null : (0, S.jsxs)(S.Fragment, {
-          children: [C && "sc-menu" === e && (0, S.jsx)("div", {
-            className: [k.languageSelector, v ? k.open : ""].join(" "),
+          w.current && C(w.current.scrollHeight)
+        }), [w]), "function" != typeof h ? null : (0, k.jsxs)(k.Fragment, {
+          children: [z && "sc-menu" === e && (0, k.jsx)("div", {
+            className: [x.languageSelector, v ? x.open : ""].join(" "),
             "data-theme": e,
             "data-testid": `${g}-language-selector`,
             ...p,
-            children: (0, S.jsx)("div", {
-              className: k.selectBoxWrapper,
-              children: (0, S.jsxs)("select", {
-                className: k.selectBox,
+            children: (0, k.jsx)("div", {
+              className: x.selectBoxWrapper,
+              children: (0, k.jsxs)("select", {
+                className: x.selectBox,
                 onClick: n => n.stopPropagation(),
                 onChange: n => {
                   const e = n.currentTarget.value;
-                  z(e)
+                  B(e)
                 },
                 "aria-label": u.formatMessage(l.language_selector_default),
                 "data-testid": `${g}-language-selector-button`,
-                children: [(0, S.jsx)("option", {
-                  className: k.selectBoxOption,
+                children: [(0, k.jsx)("option", {
+                  className: x.selectBoxOption,
                   value: "none",
                   "data-testid": `${g}-language-selector-current`,
-                  children: i.locales.find((n => n.subdomaincom === A.subdomaincom))?.label ?? (0, S.jsx)(i.FormattedMessage, {
+                  children: i.locales.find((n => n.subdomaincom === A.subdomaincom))?.label ?? (0, k.jsx)(i.FormattedMessage, {
                     ...l.language_selector_default
                   })
                 }), i.locales.map((n => {
@@ -108,49 +117,49 @@ _global.SENTRY_RELEASE = {
                     label: e,
                     subdomaincom: a
                   } = n;
-                  return (0, S.jsx)("option", {
-                    className: k.selectBoxOption,
+                  return (0, k.jsx)("option", {
+                    className: x.selectBoxOption,
                     value: a,
                     children: e
                   }, `mobile-${a}`)
                 }))]
               })
             })
-          }), (!C || "sc-menu" !== e) && "footer" !== e && (0, S.jsxs)("div", {
-            className: [k.languageSelector, v ? k.open : ""].join(" "),
+          }), (!z || "sc-menu" !== e) && "footer" !== e && (0, k.jsxs)("div", {
+            className: [x.languageSelector, v ? x.open : ""].join(" "),
             "data-theme": e,
             "data-testid": `${g}-language-selector`,
             ...p,
-            children: [(0, S.jsxs)("button", {
+            children: [(0, k.jsxs)("button", {
               onClick: n => {
                 n.stopPropagation(), c && c(!v), b(!v)
               },
               "data-testid": `${g}-language-selector-button`,
               type: "button",
               "aria-label": u.formatMessage(l.language_selector_default),
-              children: [(0, S.jsx)("i", {}), (0, S.jsx)("span", {
+              children: [(0, k.jsx)("i", {}), (0, k.jsx)("span", {
                 "data-testid": `${g}-language-selector-current`,
-                children: i.locales.find((n => n.subdomaincom === A.subdomaincom))?.label ?? (0, S.jsx)(i.FormattedMessage, {
+                children: i.locales.find((n => n.subdomaincom === A.subdomaincom))?.label ?? (0, k.jsx)(i.FormattedMessage, {
                   ...l.language_selector_default
                 })
               })]
-            }), (0, S.jsx)("div", {
-              className: k.linkWrapper,
-              ref: x,
+            }), (0, k.jsx)("div", {
+              className: x.linkWrapper,
+              ref: w,
               style: {
-                "--ls-linkWrapper-opened-height": `${w}px`
+                "--ls-linkWrapper-opened-height": `${y}px`
               },
-              children: (0, S.jsx)("div", {
-                className: k.links,
+              children: (0, k.jsx)("div", {
+                className: x.links,
                 children: i.locales.map((n => {
                   let {
                     subdomaincom: e,
                     label: a
                   } = n;
-                  return (0, S.jsx)(r.Fragment, {
-                    children: (0, S.jsx)(d.A, {
+                  return (0, k.jsx)(r.Fragment, {
+                    children: (0, k.jsx)(d.A, {
                       onClick: n => {
-                        n.preventDefault(), z(e)
+                        n.preventDefault(), B(e)
                       },
                       tabIndex: v ? 0 : -1,
                       "data-testid": `${g}-language-selector-${e}`,
@@ -160,27 +169,27 @@ _global.SENTRY_RELEASE = {
                 }))
               })
             })]
-          }), "footer" === e && (0, S.jsxs)("div", {
-            className: k.dropdownContainer,
+          }), "footer" === e && (0, k.jsxs)("div", {
+            className: x.dropdownContainer,
             "data-testid": `${g}-language-selector`,
             ...p,
-            children: [(0, S.jsx)(o.Globe, {
+            children: [(0, k.jsx)(o.Globe, {
               size: "MD",
               label: ""
-            }), (0, S.jsx)(t.Dropdown, {
-              className: k.dropdown,
+            }), (0, k.jsx)(t.Dropdown, {
+              className: x.dropdown,
               label: u.formatMessage(l.language_selector_default),
               hideLabel: !0,
               placeholder: i.locales.find((n => n.subdomaincom === A.subdomaincom))?.label ?? u.formatMessage(l.language_selector_default),
               onValueChange: n => {
-                z(n)
+                B(n)
               },
               children: i.locales.map((n => {
                 let {
                   subdomaincom: e,
                   label: a
                 } = n;
-                return (0, S.jsx)(t.Option, {
+                return (0, k.jsx)(t.Option, {
                   label: a,
                   value: e,
                   testId: `${g}-language-selector-${e}`
@@ -190,42 +199,42 @@ _global.SENTRY_RELEASE = {
           })]
         })
       }));
-      var M = a(87003),
-        E = a(95966);
-      const D = (0, E.makeVar)(!1),
-        _ = n => D(n),
-        F = (0, E.makeVar)(-1),
+      var z = a(87003),
+        B = a(95966);
+      const S = (0, B.makeVar)(!1),
+        I = n => S(n),
+        M = (0, B.makeVar)(-1),
+        _ = n => M(n),
+        E = (0, B.makeVar)(-1),
+        D = n => E(n),
+        F = (0, B.makeVar)(!0),
         N = n => F(n),
-        R = (0, E.makeVar)(-1),
-        T = n => R(n),
-        P = (0, E.makeVar)(!0),
-        j = n => P(n),
-        G = (0, E.makeVar)(!0),
-        L = n => G(n),
-        H = () => {
-          const n = (0, E.useReactiveVar)(D),
-            e = (0, E.useReactiveVar)(F),
-            a = (0, E.useReactiveVar)(R),
-            t = (0, E.useReactiveVar)(P),
-            o = (0, E.useReactiveVar)(G);
+        R = (0, B.makeVar)(!0),
+        L = n => R(n),
+        G = () => {
+          const n = (0, B.useReactiveVar)(S),
+            e = (0, B.useReactiveVar)(M),
+            a = (0, B.useReactiveVar)(E),
+            t = (0, B.useReactiveVar)(F),
+            o = (0, B.useReactiveVar)(R);
           return (0, r.useEffect)((() => {
-            o || (n && _(!1), t && (j(!1), N(-1)))
+            o || (n && I(!1), t && (N(!1), _(-1)))
           }), [o]), (0, r.useEffect)((() => {
-            !n && o && (t || j(!0))
+            !n && o && (t || N(!0))
           }), [n, o]), (0, r.useMemo)((() => ({
             languageSelectorOpened: n,
-            setLanguageSelectorOpened: _,
+            setLanguageSelectorOpened: I,
             activeSubNavId: e,
-            setActiveSubNavId: N,
+            setActiveSubNavId: _,
             subNavExtraHeight: a,
-            setSubNavExtraHeight: T,
+            setSubNavExtraHeight: D,
             navOpened: t,
-            setAccountNavOpened: j,
+            setAccountNavOpened: N,
             charListHidden: o,
             setCharListHidden: L
           })), [n, e, a, t, o])
         },
-        W = (0, i.defineMessages)({
+        T = (0, i.defineMessages)({
           sc_link_activity_feed: {
             id: "sc_link_activity_feed",
             defaultMessage: "Activity Feed"
@@ -355,95 +364,95 @@ _global.SENTRY_RELEASE = {
             defaultMessage: "New notifications"
           }
         });
-      var O = a(80098),
-        J = a.n(O),
-        U = a(30062);
-      const Q = {
+      var P = a(80098),
+        H = a.n(P),
+        j = a(30062);
+      const O = {
           event: "account_menu_click",
           element_placement: "Account Menu"
         },
-        q = n => ({
-          text: n.formatMessage(W.sc_link_help),
+        W = n => ({
+          text: n.formatMessage(T.sc_link_help),
           target: "_self",
           ga: {
-            ...Q,
-            text: W.sc_link_help.defaultMessage
+            ...O,
+            text: T.sc_link_help.defaultMessage
           },
           dataTestId: "helpButton",
           children: [{
-            text: n.formatMessage(W.sc_link_support),
+            text: n.formatMessage(T.sc_link_support),
             location: {
-              domain: U.C.support,
+              domain: j.C.support,
               path: "/"
             },
             target: "_self",
             ga: {
-              ...Q,
-              text: W.sc_link_support.defaultMessage
+              ...O,
+              text: T.sc_link_support.defaultMessage
             },
             dataTestId: "supportLink"
           }, {
-            text: n.formatMessage(W.sc_link_legal),
+            text: n.formatMessage(T.sc_link_legal),
             location: {
-              domain: U.C.www,
+              domain: j.C.www,
               path: "/legal"
             },
             target: "_self",
             ga: {
-              ...Q,
-              text: W.sc_link_legal.defaultMessage
+              ...O,
+              text: T.sc_link_legal.defaultMessage
             },
             dataTestId: "legalLink"
           }, {
-            text: n.formatMessage(W.sc_link_privacy_policy),
+            text: n.formatMessage(T.sc_link_privacy_policy),
             location: {
-              domain: U.C.www,
+              domain: j.C.www,
               path: "/privacy"
             },
             target: "_self",
             ga: {
-              ...Q,
-              text: W.sc_link_privacy_policy.defaultMessage
+              ...O,
+              text: T.sc_link_privacy_policy.defaultMessage
             },
             dataTestId: "privacyPolicyLink"
           }, {
-            text: n.formatMessage(W.sc_link_cookies_policy),
+            text: n.formatMessage(T.sc_link_cookies_policy),
             location: {
-              domain: U.C.www,
+              domain: j.C.www,
               path: "/cookies"
             },
             target: "_self",
             ga: {
-              ...Q,
-              text: W.sc_link_cookies_policy.defaultMessage
+              ...O,
+              text: T.sc_link_cookies_policy.defaultMessage
             },
             dataTestId: "cookiesPolicyLink"
           }, {
-            text: n.formatMessage(W.sc_link_cookies_settings),
+            text: n.formatMessage(T.sc_link_cookies_settings),
             onClickCallback: n => {
               n.preventDefault(), window.OneTrust?.ToggleInfoDisplay()
             },
             target: "_self",
             ga: {
-              ...Q,
-              text: W.sc_link_cookies_settings.defaultMessage
+              ...O,
+              text: T.sc_link_cookies_settings.defaultMessage
             },
             dataTestId: "cookiesSettingsLink"
           }, {
-            text: n.formatMessage(W.sc_link_do_not_sell_my_information),
+            text: n.formatMessage(T.sc_link_do_not_sell_my_information),
             location: {
-              domain: U.C.www,
+              domain: j.C.www,
               path: "/ccpa"
             },
             target: "_self",
             ga: {
-              ...Q,
-              text: W.sc_link_do_not_sell_my_information.defaultMessage
+              ...O,
+              text: T.sc_link_do_not_sell_my_information.defaultMessage
             },
             dataTestId: "doNotSellMyInformationLink"
           }]
         }),
-        Z = n => {
+        J = n => {
           let {
             to: e,
             target: a,
@@ -455,7 +464,7 @@ _global.SENTRY_RELEASE = {
             ...s
           } = n;
           const l = e?.startsWith("http");
-          return (0, S.jsx)("a", {
+          return (0, k.jsx)("a", {
             href: e,
             className: r,
             onClick: n => {
@@ -466,11 +475,24 @@ _global.SENTRY_RELEASE = {
             children: d
           })
         };
-      var Y = a(94307),
-        K = {};
-      K.styleTagTransform = w(), K.setAttributes = A(), K.insert = f().bind(null, "head"), K.domAPI = h(), K.insertStyleElement = b(), m()(Y.A, K);
-      const V = Y.A && Y.A.locals ? Y.A.locals : void 0,
-        X = n => {
+      var U = a(94307),
+        Q = {
+          attributes: {
+            "data-shadowTarget": "@rockstargames/modules-core-footer"
+          }
+        };
+      Q.setAttributes = f(), Q.insert = n => {
+        const e = n.dataset.shadowtarget;
+        e && (window.__MFE_GLOBAL_HOOK__ = {
+          ...window.__MFE_GLOBAL_HOOK__,
+          stylesForShadowRoot: {
+            ...window.__MFE_GLOBAL_HOOK__?.stylesForShadowRoot,
+            [e]: n
+          }
+        })
+      }, Q.domAPI = h(), Q.insertStyleElement = A(), m()(U.A, Q);
+      const q = U.A && U.A.locals ? U.A.locals : void 0,
+        K = n => {
           let {
             text: e,
             target: a,
@@ -487,15 +509,15 @@ _global.SENTRY_RELEASE = {
           } = n;
           const {
             track: f
-          } = (0, s.useGtmTrack)(), u = (0, U.A)(), A = (0, i.useIntl)();
+          } = (0, s.useGtmTrack)(), u = (0, j.A)(), A = (0, i.useIntl)();
           let v = r;
           t && (v = t.domain === u.currentSite?.site ? t.path : `https://${u.sites[t.domain]}.rockstargames.com${t.path}`);
           const b = {
             ...o,
             link_url: v
           };
-          return (0, S.jsxs)(Z, {
-            className: l ? V.scSubLink : V.scLink,
+          return (0, k.jsxs)(J, {
+            className: l ? q.scSubLink : q.scLink,
             "data-testid": d || "menuLink",
             title: e,
             to: v,
@@ -507,20 +529,33 @@ _global.SENTRY_RELEASE = {
               f(b), m(n)
             },
             onNavigate: p,
-            children: [e, c && (0, S.jsx)("div", {
-              className: V.accountLinkNotification,
-              children: (0, S.jsx)("span", {
-                className: V.visuallyHidden,
-                children: A.formatMessage(W.nofications_new)
+            children: [e, c && (0, k.jsx)("div", {
+              className: q.accountLinkNotification,
+              children: (0, k.jsx)("span", {
+                className: q.visuallyHidden,
+                children: A.formatMessage(T.nofications_new)
               })
             })]
           })
         };
-      var $ = a(94741),
-        nn = {};
-      nn.styleTagTransform = w(), nn.setAttributes = A(), nn.insert = f().bind(null, "head"), nn.domAPI = h(), nn.insertStyleElement = b(), m()($.A, nn);
-      const en = $.A && $.A.locals ? $.A.locals : void 0,
-        an = n => {
+      var Z = a(94741),
+        Y = {
+          attributes: {
+            "data-shadowTarget": "@rockstargames/modules-core-footer"
+          }
+        };
+      Y.setAttributes = f(), Y.insert = n => {
+        const e = n.dataset.shadowtarget;
+        e && (window.__MFE_GLOBAL_HOOK__ = {
+          ...window.__MFE_GLOBAL_HOOK__,
+          stylesForShadowRoot: {
+            ...window.__MFE_GLOBAL_HOOK__?.stylesForShadowRoot,
+            [e]: n
+          }
+        })
+      }, Y.domAPI = h(), Y.insertStyleElement = A(), m()(Z.A, Y);
+      const V = Z.A && Z.A.locals ? Z.A.locals : void 0,
+        X = n => {
           let {
             id: e,
             text: a,
@@ -541,54 +576,54 @@ _global.SENTRY_RELEASE = {
           const {
             windowWidth: v,
             windowHeight: b
-          } = (0, E.useWindowResize)(), {
+          } = (0, B.useWindowResize)(), {
             track: x
           } = (0, s.useGtmTrack)(), {
             navOpen: w
-          } = (0, s.useRockstarUserState)(), y = (0, r.useRef)(null), [C, k] = (0, r.useState)(0), [z, B] = (0, r.useState)(0), [I, M] = (0, r.useState)(!0);
+          } = (0, s.useRockstarUserState)(), y = (0, r.useRef)(null), [C, z] = (0, r.useState)(0), [S, I] = (0, r.useState)(0), [M, _] = (0, r.useState)(!0);
           return (0, r.useEffect)((() => {
-            g !== e && !1 === I && M(!0), g === e && M(!1)
+            g !== e && !1 === M && _(!0), g === e && _(!1)
           }), [g]), (0, r.useEffect)((() => {
             if (!y.current) return;
-            k(y?.current?.scrollHeight);
+            z(y?.current?.scrollHeight);
             const n = window.getComputedStyle(y.current);
             if (n) {
               let e = 16 * parseInt(n.getPropertyValue("--account-nav-opened-margin"), 10);
-              Number.isNaN(e) && (e = 0), B(e)
+              Number.isNaN(e) && (e = 0), I(e)
             }
-          }), [y, v, b]), m.length > 0 ? (0, S.jsxs)(S.Fragment, {
-            children: [(0, S.jsxs)("button", {
-              className: en.accountButton,
+          }), [y, v, b]), m.length > 0 ? (0, k.jsxs)(k.Fragment, {
+            children: [(0, k.jsxs)("button", {
+              className: V.accountButton,
               type: "button",
               "data-testid": c || "menuButton",
               title: a,
               tabIndex: w ? 0 : -1,
-              "data-children-hidden": I,
+              "data-children-hidden": M,
               onClick: n => {
-                n.stopPropagation(), x(d), g === e ? (h(-1), p(0)) : (h(e), p(C + z + z))
+                n.stopPropagation(), x(d), g === e ? (h(-1), p(0)) : (h(e), p(C + S + S))
               },
-              children: [(0, S.jsx)("span", {
-                className: en.accountButtonText,
+              children: [(0, k.jsx)("span", {
+                className: V.accountButtonText,
                 children: a
-              }), (0, S.jsx)("span", {
-                className: en.accountButtonIcon
+              }), (0, k.jsx)("span", {
+                className: V.accountButtonIcon
               })]
-            }, a), (0, S.jsx)("nav", {
-              className: en.accountNav,
+            }, a), (0, k.jsx)("nav", {
+              className: V.accountNav,
               ref: y,
-              "aria-hidden": I,
+              "aria-hidden": M,
               style: {
-                height: I ? 0 : `${C}px`
+                height: M ? 0 : `${C}px`
               },
-              children: m.map((n => (0, r.createElement)(X, {
+              children: m.map((n => (0, r.createElement)(K, {
                 ...n,
                 isSubLink: !0,
                 key: n.text,
-                tabIndex: I || !w ? -1 : 0,
+                tabIndex: M || !w ? -1 : 0,
                 onNavigate: A
               })))
             })]
-          }) : (0, S.jsx)(X, {
+          }) : (0, k.jsx)(K, {
             text: a,
             target: t,
             href: o,
@@ -603,11 +638,24 @@ _global.SENTRY_RELEASE = {
             onNavigate: A
           })
         };
-      var rn = a(72632),
-        tn = {};
-      tn.styleTagTransform = w(), tn.setAttributes = A(), tn.insert = f().bind(null, "head"), tn.domAPI = h(), tn.insertStyleElement = b(), m()(rn.A, tn);
-      const on = rn.A && rn.A.locals ? rn.A.locals : void 0,
-        dn = n => {
+      var $ = a(72632),
+        nn = {
+          attributes: {
+            "data-shadowTarget": "@rockstargames/modules-core-footer"
+          }
+        };
+      nn.setAttributes = f(), nn.insert = n => {
+        const e = n.dataset.shadowtarget;
+        e && (window.__MFE_GLOBAL_HOOK__ = {
+          ...window.__MFE_GLOBAL_HOOK__,
+          stylesForShadowRoot: {
+            ...window.__MFE_GLOBAL_HOOK__?.stylesForShadowRoot,
+            [e]: n
+          }
+        })
+      }, nn.domAPI = h(), nn.insertStyleElement = A(), m()($.A, nn);
+      const en = $.A && $.A.locals ? $.A.locals : void 0,
+        an = n => {
           let {
             sc: e,
             location: a,
@@ -616,46 +664,46 @@ _global.SENTRY_RELEASE = {
           const {
             windowWidth: o,
             windowHeight: d
-          } = (0, E.useWindowResize)(), l = (0, i.useIntl)(), {
+          } = (0, B.useWindowResize)(), l = (0, i.useIntl)(), {
             languageSelectorOpened: c,
             setLanguageSelectorOpened: m,
             activeSubNavId: g,
             setActiveSubNavId: h,
             subNavExtraHeight: p,
             setSubNavExtraHeight: f
-          } = H(), {
+          } = G(), {
             setSelectedCharacterTuple: u,
             navOpen: A
-          } = (0, s.useRockstarUserState)(), v = (0, E.useLocale)(), b = (0, E.toScLocaleString)(v), [x, w] = (0, r.useState)(""), y = `${e.login}?returnUrl=${x}&lang=${b}`, C = `${e.signup}&returnUrl=${x}&lang=${b}`, k = (0, r.useMemo)((() => (0, U.A)()), []), z = (0, r.useMemo)((() => {
+          } = (0, s.useRockstarUserState)(), v = (0, B.useLocale)(), b = (0, B.toScLocaleString)(v), [x, w] = (0, r.useState)(""), y = `${e.login}?returnUrl=${x}&lang=${b}`, z = `${e.signup}&returnUrl=${x}&lang=${b}`, S = (0, r.useMemo)((() => (0, j.A)()), []), I = (0, r.useMemo)((() => {
             const n = ((n, e, a) => [{
-              text: n.formatMessage(W.sc_link_sign_in),
+              text: n.formatMessage(T.sc_link_sign_in),
               href: e,
               ga: {
                 event: "cta_login",
-                text: W.sc_link_sign_in.defaultMessage,
+                text: T.sc_link_sign_in.defaultMessage,
                 element_placement: "Account Menu"
               },
               dataTestId: "loginLink"
             }, {
-              text: n.formatMessage(W.sc_link_join_social_club),
+              text: n.formatMessage(T.sc_link_join_social_club),
               href: a,
               ga: {
                 event: "cta_signup",
-                text: W.sc_link_join_social_club.defaultMessage,
+                text: T.sc_link_join_social_club.defaultMessage,
                 element_placement: "Account Menu"
               },
               dataTestId: "signUpLink"
-            }, q(n)])(l, y, C);
+            }, W(n)])(l, y, z);
             return n
-          }), [l, y, C, k]), [B, M] = (0, r.useState)(0), D = (0, r.createRef)(), _ = () => {
-            if (D.current) {
+          }), [l, y, z, S]), [M, _] = (0, r.useState)(0), E = (0, r.createRef)(), D = () => {
+            if (E.current) {
               const {
                 current: n
-              } = D, e = n?.scrollHeight, a = window.getComputedStyle(n);
+              } = E, e = n?.scrollHeight, a = window.getComputedStyle(n);
               if (a) {
                 let n = 16 * parseInt(a.getPropertyValue("--account-nav-opened-margin"), 10) * 2;
-                Number.isNaN(n) && (n = 0), M(e + n)
-              } else M(e)
+                Number.isNaN(n) && (n = 0), _(e + n)
+              } else _(e)
             }
           };
           return (0, r.useEffect)((() => {
@@ -664,20 +712,20 @@ _global.SENTRY_RELEASE = {
           }), [JSON.stringify(a)]), (0, r.useEffect)((() => {
             u(!1)
           }), []), (0, r.useEffect)((() => {
-            _(), J()((() => {
-              setTimeout(_, 0)
+            D(), H()((() => {
+              setTimeout(D, 0)
             }), 300)
-          }), [o, d]), (0, S.jsxs)(S.Fragment, {
-            children: [(0, S.jsx)("nav", {
-              className: on.nav,
-              children: (0, S.jsx)("div", {
-                className: on.navWrap,
+          }), [o, d]), (0, k.jsxs)(k.Fragment, {
+            children: [(0, k.jsx)("nav", {
+              className: en.nav,
+              children: (0, k.jsx)("div", {
+                className: en.navWrap,
                 "data-logged-in": "false",
-                ref: D,
+                ref: E,
                 style: {
-                  "--navWrap-max-height": `${p+B}px`
+                  "--navWrap-max-height": `${p+M}px`
                 },
-                children: z.map((n => (0, r.createElement)(an, {
+                children: I.map((n => (0, r.createElement)(X, {
                   ...n,
                   activeSubNavId: g,
                   setActiveSubNavId: h,
@@ -686,12 +734,12 @@ _global.SENTRY_RELEASE = {
                   key: n.text
                 })))
               })
-            }), (0, S.jsx)("div", {
-              className: on.languageSelector,
+            }), (0, k.jsx)("div", {
+              className: en.languageSelector,
               style: {
                 visibility: A ? null : "hidden"
               },
-              children: (0, S.jsx)(I, {
+              children: (0, k.jsx)(C, {
                 parent: "header",
                 theme: "sc-menu",
                 languageSelectorOpened: c,
@@ -704,16 +752,29 @@ _global.SENTRY_RELEASE = {
             })]
           })
         };
-      var sn = a(40296),
-        ln = a(4255),
-        cn = a(50271),
-        mn = {};
-      mn.styleTagTransform = w(), mn.setAttributes = A(), mn.insert = f().bind(null, "head"), mn.domAPI = h(), mn.insertStyleElement = b(), m()(cn.A, mn);
-      const gn = cn.A && cn.A.locals ? cn.A.locals : void 0;
-      var hn = a(53315),
-        pn = a.n(hn);
-      const fn = n => n < 100 ? "#2d6eb9" : n > 99 && n < 500 ? "#b48261" : n > 499 && n < 750 ? "#9699a1" : "#D6B563",
-        un = (0, r.forwardRef)((function(n, e) {
+      var rn = a(40296),
+        tn = a(4255),
+        on = a(50271),
+        dn = {
+          attributes: {
+            "data-shadowTarget": "@rockstargames/modules-core-footer"
+          }
+        };
+      dn.setAttributes = f(), dn.insert = n => {
+        const e = n.dataset.shadowtarget;
+        e && (window.__MFE_GLOBAL_HOOK__ = {
+          ...window.__MFE_GLOBAL_HOOK__,
+          stylesForShadowRoot: {
+            ...window.__MFE_GLOBAL_HOOK__?.stylesForShadowRoot,
+            [e]: n
+          }
+        })
+      }, dn.domAPI = h(), dn.insertStyleElement = A(), m()(on.A, dn);
+      const sn = on.A && on.A.locals ? on.A.locals : void 0;
+      var ln = a(53315),
+        cn = a.n(ln);
+      const mn = n => n < 100 ? "#2d6eb9" : n > 99 && n < 500 ? "#b48261" : n > 499 && n < 750 ? "#9699a1" : "#D6B563",
+        gn = (0, r.forwardRef)((function(n, e) {
           let {
             rank: a,
             className: r,
@@ -721,50 +782,63 @@ _global.SENTRY_RELEASE = {
             testId: o,
             ...i
           } = n;
-          const d = fn(a),
-            s = (0, ln.v6)(i, {
-              className: pn()(gn.rpLevel, r),
+          const d = mn(a),
+            s = (0, tn.v6)(i, {
+              className: cn()(sn.rpLevel, r),
               "data-testid": o
             });
-          return (0, S.jsxs)("div", {
+          return (0, k.jsxs)("div", {
             "data-size": "small",
             ref: e,
             ...s,
-            children: [(0, S.jsx)("svg", {
+            children: [(0, k.jsx)("svg", {
               role: "svg",
               "aria-label": t,
-              className: gn.rpIcon,
-              "data-rank": fn(a),
+              className: sn.rpIcon,
+              "data-rank": mn(a),
               "data-testid": "rp-icon",
               width: "44",
               height: "44",
               viewBox: "0 0 44 44",
               xmlns: "http://www.w3.org/2000/svg",
-              children: (0, S.jsx)("path", {
+              children: (0, k.jsx)("path", {
                 d: "M21.8679 0C9.79195 0 0 9.79195 0 21.8679C0 33.9438 9.79195 43.7358 21.8679 43.7358C33.9438 43.7358 43.7358 33.9438 43.7358 21.8679C43.7358 9.79195 33.9438 0 21.8679 0ZM13.6796 17.4457H30.2506C30.4814 20.3007 30.4935 23.508 30.1048 26.9461H13.7889C13.4123 23.4958 13.4244 20.2885 13.6674 17.4457H13.6796ZM33.9681 17.4457H39.508C39.8603 18.8671 40.0668 20.3371 40.0668 21.8679C40.0668 23.6295 39.7995 25.3424 39.3379 26.9582H33.8102C34.1868 23.5201 34.1868 20.325 33.9681 17.4579V17.4457ZM38.208 13.8618H33.5793C33.1541 10.9947 32.5588 8.56492 31.9757 6.68185C34.6363 8.46773 36.7866 10.9582 38.208 13.8618ZM27.2863 4.42217C27.8208 5.73424 29.0721 9.09947 29.8132 13.8618H14.1169C14.9066 8.89294 16.2308 5.46697 16.7046 4.34928C18.3447 3.86333 20.0699 3.59605 21.8679 3.59605C23.7509 3.59605 25.5733 3.88762 27.2863 4.42217ZM12.0273 6.51177C11.432 8.40699 10.8003 10.8975 10.3629 13.8618H5.52772C6.99772 10.861 9.24525 8.32194 12.0273 6.51177ZM4.21564 17.4457H9.94989C9.71906 20.325 9.71906 23.508 10.0714 26.9461H4.38573C3.91192 25.3303 3.6568 23.6295 3.6568 21.8557C3.6568 20.325 3.86333 18.855 4.21564 17.4336V17.4457ZM5.84358 30.5421H10.5816C10.9704 32.7411 11.5049 35.0129 12.246 37.3576C9.57327 35.6811 7.35004 33.3364 5.84358 30.5421ZM16.8626 39.4229C15.672 36.3614 14.8459 33.385 14.3235 30.5421H29.5581C29.0235 33.3728 28.1974 36.3371 27.0068 39.3865C25.3789 39.8724 23.6538 40.1397 21.8679 40.1397C20.082 40.1397 18.4541 39.8846 16.8626 39.4229ZM31.6355 37.2604C32.3645 34.9522 32.9112 32.7168 33.2999 30.5421H37.88C36.3979 33.2756 34.2354 35.5839 31.6355 37.2604Z",
                 fill: d
               })
-            }), (0, S.jsx)("span", {
+            }), (0, k.jsx)("span", {
               "data-testid": "rpCategory:rankValue",
               children: a
             })]
           })
         }));
-      var An = a(20338),
-        vn = {};
-      vn.styleTagTransform = w(), vn.setAttributes = A(), vn.insert = f().bind(null, "head"), vn.domAPI = h(), vn.insertStyleElement = b(), m()(An.A, vn);
-      const bn = An.A && An.A.locals ? An.A.locals : void 0;
-      let xn = null,
-        wn = null,
-        yn = "";
-      xn = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/91b881fc47ab8f61e9d3fbb515272656.svg", wn = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/9822b4be8e173b12a152443a538ee613.svg", yn = "PC Legacy";
-      let Cn = function(n) {
+      var hn = a(20338),
+        pn = {
+          attributes: {
+            "data-shadowTarget": "@rockstargames/modules-core-footer"
+          }
+        };
+      pn.setAttributes = f(), pn.insert = n => {
+        const e = n.dataset.shadowtarget;
+        e && (window.__MFE_GLOBAL_HOOK__ = {
+          ...window.__MFE_GLOBAL_HOOK__,
+          stylesForShadowRoot: {
+            ...window.__MFE_GLOBAL_HOOK__?.stylesForShadowRoot,
+            [e]: n
+          }
+        })
+      }, pn.domAPI = h(), pn.insertStyleElement = A(), m()(hn.A, pn);
+      const fn = hn.A && hn.A.locals ? hn.A.locals : void 0;
+      let un = null,
+        An = null,
+        vn = "";
+      un = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/91b881fc47ab8f61e9d3fbb515272656.svg", An = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/9822b4be8e173b12a152443a538ee613.svg", vn = "PC Legacy";
+      let bn = function(n) {
           return n.small = "small", n.large = "large", n
         }({}),
-        kn = function(n) {
+        xn = function(n) {
           return n.pc = "pc", n.pcAlt = "pcalt", n.ps4 = "ps4", n.ps5 = "ps5", n.ps = "ps", n.np = "np", n.xboxOne = "xboxone", n.xboxSeries = "xboxsx", n.xbox = "xbl", n
         }({});
-      const zn = n => {
+      const wn = n => {
         let {
           tagSize: e,
           platform: a
@@ -773,38 +847,38 @@ _global.SENTRY_RELEASE = {
           src: r,
           alt: t
         } = ((n, e) => {
-          const a = e === Cn.small;
+          const a = e === bn.small;
           switch (n) {
-            case kn.pc:
+            case xn.pc:
               return {
                 src: a ? "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/91b881fc47ab8f61e9d3fbb515272656.svg" : "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/9822b4be8e173b12a152443a538ee613.svg", alt: "PC Legacy"
               };
-            case kn.pcAlt:
+            case xn.pcAlt:
               return {
                 src: a ? "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/1b0c35912b602cae2ecdacb21a992ca7.svg" : "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/0f7ec13ed3fbe1c1389f38d189869ada.svg", alt: "PC Enhanced"
               };
-            case kn.ps4:
+            case xn.ps4:
               return {
                 src: a ? "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/6054f77c4450b075b6059eda658a510d.svg" : "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/941a1141a404ed211f7d23ed36ccee23.svg", alt: "PS4"
               };
-            case kn.ps5:
+            case xn.ps5:
               return {
                 src: a ? "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/c577e2612120d70330b797e6ee5487d9.svg" : "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/04d319f216248f3df7f9727df641b832.svg", alt: "PS5"
               };
-            case kn.xboxOne:
+            case xn.xboxOne:
               return {
                 src: a ? "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/1c8ee10e269f42d96c58c1eb016717e1.svg" : "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/3e18ef78074a128424a94ab6313dd332.svg", alt: "Xbox One"
               };
-            case kn.xboxSeries:
+            case xn.xboxSeries:
               return {
                 src: a ? "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/61f1cfebde0508725354fa6c2bdda0b4.svg" : "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/c91f19b5ea19868e280034220acf6740.svg", alt: "Xbox Series X|S"
               };
-            case kn.ps:
-            case kn.np:
+            case xn.ps:
+            case xn.np:
               return {
                 src: "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/9360dcc4d2c470d84e308ad6b5e4c037.svg", alt: "PS"
               };
-            case kn.xbox:
+            case xn.xbox:
               return {
                 src: "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/c0834bf9f8603f0af3841a1d42cff529.svg", alt: "Xbox"
               };
@@ -814,8 +888,8 @@ _global.SENTRY_RELEASE = {
               }
           }
         })(a, e);
-        return (0, S.jsx)("img", {
-          className: bn.platformTag,
+        return (0, k.jsx)("img", {
+          className: fn.platformTag,
           "data-testid": "platform-tag",
           "data-platform": a,
           "data-tag-size": e,
@@ -823,13 +897,26 @@ _global.SENTRY_RELEASE = {
           alt: t
         })
       };
-      var Bn = a(83777),
-        Sn = {};
-      Sn.styleTagTransform = w(), Sn.setAttributes = A(), Sn.insert = f().bind(null, "head"), Sn.domAPI = h(), Sn.insertStyleElement = b(), m()(Bn.A, Sn);
-      const In = Bn.A && Bn.A.locals ? Bn.A.locals : void 0;
-      let Mn = "";
-      Mn = "PC LEGACY";
-      const En = {
+      var yn = a(83777),
+        kn = {
+          attributes: {
+            "data-shadowTarget": "@rockstargames/modules-core-footer"
+          }
+        };
+      kn.setAttributes = f(), kn.insert = n => {
+        const e = n.dataset.shadowtarget;
+        e && (window.__MFE_GLOBAL_HOOK__ = {
+          ...window.__MFE_GLOBAL_HOOK__,
+          stylesForShadowRoot: {
+            ...window.__MFE_GLOBAL_HOOK__?.stylesForShadowRoot,
+            [e]: n
+          }
+        })
+      }, kn.domAPI = h(), kn.insertStyleElement = A(), m()(yn.A, kn);
+      const Cn = yn.A && yn.A.locals ? yn.A.locals : void 0;
+      let zn = "";
+      zn = "PC LEGACY";
+      const Bn = {
           pcalt: "PC ENHANCED",
           pc: "PC LEGACY",
           ps4: "PS4",
@@ -837,9 +924,9 @@ _global.SENTRY_RELEASE = {
           xboxone: "XBOX ONE",
           xboxsx: "XBOX SERIES X|S"
         },
-        Dn = "CharacterButton:characterName",
-        _n = "CharacterButton:avatar",
-        Fn = n => {
+        Sn = "CharacterButton:characterName",
+        In = "CharacterButton:avatar",
+        Mn = n => {
           let {
             characterData: e,
             setMobileCardWidth: t,
@@ -865,63 +952,76 @@ _global.SENTRY_RELEASE = {
             x = l === e.index;
           return (0, r.useEffect)((() => {
             g.current && t && t(g?.current?.offsetWidth)
-          }), [g]), (0, S.jsxs)("button", {
-            className: In.characterBtn,
+          }), [g]), (0, k.jsxs)("button", {
+            className: Cn.characterBtn,
             type: "button",
             "aria-hidden": x,
             onClick: n => {
               n.stopPropagation(), c(b), m({
                 event: "character_selector_select",
-                text: En[h] ?? h,
+                text: Bn[h] ?? h,
                 position: b
               })
             },
             ref: g,
             tabIndex: o,
-            children: [(0, S.jsx)("div", {
-              className: In.avatar,
+            children: [(0, k.jsx)("div", {
+              className: Cn.avatar,
               "data-size": "small",
-              children: (0, S.jsx)("img", {
+              children: (0, k.jsx)("img", {
                 src: A,
-                alt: d.formatMessage(W.profile_selector_mugshot, {
+                alt: d.formatMessage(T.profile_selector_mugshot, {
                   userName: p
                 }),
                 onError: () => {
                   v(a(5931))
                 },
-                "data-testid": _n
+                "data-testid": In
               })
-            }), (0, S.jsxs)("div", {
-              className: In.characterBtnStats,
-              children: [(0, S.jsxs)("div", {
-                className: In.scCharBtnNames,
-                children: [(0, S.jsx)(zn, {
-                  tagSize: Cn.large,
+            }), (0, k.jsxs)("div", {
+              className: Cn.characterBtnStats,
+              children: [(0, k.jsxs)("div", {
+                className: Cn.scCharBtnNames,
+                children: [(0, k.jsx)(wn, {
+                  tagSize: bn.large,
                   platform: h
-                }), (0, S.jsx)("div", {
-                  className: In.scUserName,
+                }), (0, k.jsx)("div", {
+                  className: Cn.scUserName,
                   "data-size": "small",
-                  "data-testid": Dn,
+                  "data-testid": Sn,
                   children: p
                 })]
-              }), (0, S.jsx)("div", {
-                className: In.scRp,
-                children: (0, S.jsx)(un, {
+              }), (0, k.jsx)("div", {
+                className: Cn.scRp,
+                children: (0, k.jsx)(gn, {
                   rank: parseInt(u.overview.rank.value)
                 })
               })]
             })]
           })
         };
-      var Nn = a(92161),
-        Rn = {};
-      Rn.styleTagTransform = w(), Rn.setAttributes = A(), Rn.insert = f().bind(null, "head"), Rn.domAPI = h(), Rn.insertStyleElement = b(), m()(Nn.A, Rn);
-      const Tn = Nn.A && Nn.A.locals ? Nn.A.locals : void 0,
-        Pn = "ProfileCard:characterName",
-        jn = "ProfileCard:avatar",
-        Gn = "ProfileCard:bankValue",
+      var _n = a(92161),
+        En = {
+          attributes: {
+            "data-shadowTarget": "@rockstargames/modules-core-footer"
+          }
+        };
+      En.setAttributes = f(), En.insert = n => {
+        const e = n.dataset.shadowtarget;
+        e && (window.__MFE_GLOBAL_HOOK__ = {
+          ...window.__MFE_GLOBAL_HOOK__,
+          stylesForShadowRoot: {
+            ...window.__MFE_GLOBAL_HOOK__?.stylesForShadowRoot,
+            [e]: n
+          }
+        })
+      }, En.domAPI = h(), En.insertStyleElement = A(), m()(_n.A, En);
+      const Dn = _n.A && _n.A.locals ? _n.A.locals : void 0,
+        Fn = "ProfileCard:characterName",
+        Nn = "ProfileCard:avatar",
+        Rn = "ProfileCard:bankValue",
         Ln = "ProfileCard:cashValue",
-        Hn = n => {
+        Gn = n => {
           let {
             character: e
           } = n;
@@ -930,34 +1030,34 @@ _global.SENTRY_RELEASE = {
           } = (0, s.useRockstarUser)(), {
             track: o
           } = (0, s.useGtmTrack)(), d = (0, i.useIntl)(), [l, c] = (0, r.useState)([]), [m, g] = (0, r.useState)(null), [h, p] = (0, r.useState)(null), [f, u] = (0, r.useState)(!1), [A, v] = (0, r.useState)(-1), [b, x] = (0, r.useState)([]), [w, y] = (0, r.useState)(0), C = a(5931), {
-            platform: k
-          } = e, [z, B] = (0, r.useState)("0"), [I, M] = (0, r.useState)("0"), E = n => parseInt(n, 10).toLocaleString("en-US", {
+            platform: z
+          } = e, [B, S] = (0, r.useState)("0"), [I, M] = (0, r.useState)("0"), _ = n => parseInt(n, 10).toLocaleString("en-US", {
             minimumFractionDigits: 0
-          }), D = () => {
-            F((0, S.jsx)("img", {
+          }), E = () => {
+            F((0, k.jsx)("img", {
               src: C,
-              alt: d.formatMessage(W.profile_selector_mugshot, {
+              alt: d.formatMessage(T.profile_selector_mugshot, {
                 userName: t.nickname
               })
             }))
-          }, [_, F] = (0, r.useState)((0, S.jsx)("img", {
-            className: Tn.avatarImg,
+          }, [D, F] = (0, r.useState)((0, k.jsx)("img", {
+            className: Dn.avatarImg,
             src: e.mugshotUrl,
-            alt: d.formatMessage(W.profile_selector_mugshot, {
+            alt: d.formatMessage(T.profile_selector_mugshot, {
               userName: t.nickname
             }),
-            onError: D,
-            "data-testid": jn
+            onError: E,
+            "data-testid": Nn
           }));
           (0, r.useEffect)((() => {
             c(t.crews ?? [])
           }), [t.crews]), (0, r.useEffect)((() => {
-            F((0, S.jsx)("img", {
+            F((0, k.jsx)("img", {
               src: e.mugshotUrl,
               alt: t.nickname,
-              onError: D,
-              "data-testid": jn
-            })), B(E(e.stats.overview.bank.value)), M(E(e.stats.overview.cash.value)), y(parseInt(e.stats.overview.rank.value))
+              onError: E,
+              "data-testid": Nn
+            })), S(_(e.stats.overview.bank.value)), M(_(e.stats.overview.cash.value)), y(parseInt(e.stats.overview.rank.value))
           }), [e, t.nickname]), (0, r.useEffect)((() => {
             l && l.forEach((n => {
               !0 === n.isPrimary && (g(n.crewTag), p(n.crewColour), v(n.rankOrder), u(!1), !0 === Object.prototype.hasOwnProperty.call(n, "crewType") && "rockstar" === n.crewType && u(!0))
@@ -965,8 +1065,8 @@ _global.SENTRY_RELEASE = {
           }), [l]), (0, r.useEffect)((() => {
             const n = [];
             if (!f && A > -1)
-              for (let e = 5; e > A; e -= 1) n.push((0, S.jsx)("div", {
-                className: Tn.scCrewRankBarItem,
+              for (let e = 5; e > A; e -= 1) n.push((0, k.jsx)("div", {
+                className: Dn.scCrewRankBarItem,
                 style: {
                   backgroundColor: null !== h ? h : ""
                 }
@@ -979,66 +1079,79 @@ _global.SENTRY_RELEASE = {
               element_placement: "character selector"
             })
           };
-          return (0, S.jsxs)("div", {
-            className: Tn.profileDetails,
+          return (0, k.jsxs)("div", {
+            className: Dn.profileDetails,
             onClick: N,
             onKeyUp: N,
             role: "button",
             tabIndex: -1,
-            children: [(0, S.jsxs)("div", {
-              className: Tn.avatar,
-              children: [_, (0, S.jsx)("div", {
-                className: Tn.avatarPlatform,
-                "data-platform": k,
-                children: (0, S.jsx)(zn, {
-                  tagSize: Cn.large,
-                  platform: k
+            children: [(0, k.jsxs)("div", {
+              className: Dn.avatar,
+              children: [D, (0, k.jsx)("div", {
+                className: Dn.avatarPlatform,
+                "data-platform": z,
+                children: (0, k.jsx)(wn, {
+                  tagSize: bn.large,
+                  platform: z
                 })
               })]
-            }), (0, S.jsxs)("div", {
-              className: Tn.profileStats,
-              children: [(0, S.jsx)("div", {
-                className: Tn.scNames,
-                children: (0, S.jsxs)("div", {
-                  className: Tn.scTagsNames,
-                  children: [(0, S.jsx)("span", {
-                    className: Tn.scUserName,
-                    "data-testid": Pn,
+            }), (0, k.jsxs)("div", {
+              className: Dn.profileStats,
+              children: [(0, k.jsx)("div", {
+                className: Dn.scNames,
+                children: (0, k.jsxs)("div", {
+                  className: Dn.scTagsNames,
+                  children: [(0, k.jsx)("span", {
+                    className: Dn.scUserName,
+                    "data-testid": Fn,
                     children: e.platformUsername
-                  }), m && (0, S.jsxs)("span", {
-                    className: Tn.scCrewName,
+                  }), m && (0, k.jsxs)("span", {
+                    className: Dn.scCrewName,
                     "data-arrow-tag": f,
-                    children: [m, !f && (0, S.jsx)("div", {
-                      className: Tn.scCrewRankBar,
+                    children: [m, !f && (0, k.jsx)("div", {
+                      className: Dn.scCrewRankBar,
                       children: b
                     })]
                   })]
                 })
-              }), (0, S.jsxs)("div", {
-                className: Tn.scProgress,
-                children: [(0, S.jsx)(un, {
+              }), (0, k.jsxs)("div", {
+                className: Dn.scProgress,
+                children: [(0, k.jsx)(gn, {
                   rank: w
-                }), (0, S.jsxs)("div", {
-                  className: Tn.scMoney,
-                  children: [(0, S.jsxs)("span", {
-                    className: Tn.scCash,
+                }), (0, k.jsxs)("div", {
+                  className: Dn.scMoney,
+                  children: [(0, k.jsxs)("span", {
+                    className: Dn.scCash,
                     "data-testid": Ln,
                     children: ["$", I]
-                  }), (0, S.jsxs)("span", {
-                    className: Tn.scBank,
-                    "data-testid": Gn,
-                    children: ["$", z]
+                  }), (0, k.jsxs)("span", {
+                    className: Dn.scBank,
+                    "data-testid": Rn,
+                    children: ["$", B]
                   })]
                 })]
               })]
             })]
           })
         };
-      var Wn = a(21165),
-        On = {};
-      On.styleTagTransform = w(), On.setAttributes = A(), On.insert = f().bind(null, "head"), On.domAPI = h(), On.insertStyleElement = b(), m()(Wn.A, On);
-      const Jn = Wn.A && Wn.A.locals ? Wn.A.locals : void 0,
-        Un = n => {
+      var Tn = a(21165),
+        Pn = {
+          attributes: {
+            "data-shadowTarget": "@rockstargames/modules-core-footer"
+          }
+        };
+      Pn.setAttributes = f(), Pn.insert = n => {
+        const e = n.dataset.shadowtarget;
+        e && (window.__MFE_GLOBAL_HOOK__ = {
+          ...window.__MFE_GLOBAL_HOOK__,
+          stylesForShadowRoot: {
+            ...window.__MFE_GLOBAL_HOOK__?.stylesForShadowRoot,
+            [e]: n
+          }
+        })
+      }, Pn.domAPI = h(), Pn.insertStyleElement = A(), m()(Tn.A, Pn);
+      const Hn = Tn.A && Tn.A.locals ? Tn.A.locals : void 0,
+        jn = n => {
           let {
             dragThreshold: e = 80,
             interactionDelay: a = 1e3,
@@ -1050,17 +1163,17 @@ _global.SENTRY_RELEASE = {
             disableSwiper: l = !1
           } = n;
           const c = (0, r.createRef)(),
-            m = (0, sn.ri)(c, !1),
+            m = (0, rn.ri)(c, !1),
             [g, h] = (0, r.useState)(!1),
             [p, f] = (0, r.useState)(0),
             [u, A] = (0, r.useState)(0),
             [v, b] = (0, r.useState)([t]),
             [x, w] = (0, r.useState)(v[0]),
             [y, C] = (0, r.useState)(252),
-            [k, z] = (0, r.useState)(0),
-            [B, I] = (0, r.useState)([]),
-            [M, E] = (0, r.useState)([]),
-            [D, _] = (0, r.useState)(!1),
+            [z, B] = (0, r.useState)(0),
+            [S, I] = (0, r.useState)([]),
+            [M, _] = (0, r.useState)([]),
+            [E, D] = (0, r.useState)(!1),
             F = n => {
               if (!0 === g || !0 === l) return;
               const e = void 0 !== n.changedTouches ? n.touches[0].screenX : n.screenX;
@@ -1092,13 +1205,13 @@ _global.SENTRY_RELEASE = {
               n.push((0, r.createRef)())
             })), I(n)
           }), [d]), (0, r.useEffect)((() => {
-            if (B.length < 1) return;
-            C(B[0]?.current?.clientWidth || 0);
-            const n = B[0]?.current.firstChild,
+            if (S.length < 1) return;
+            C(S[0]?.current?.clientWidth || 0);
+            const n = S[0]?.current.firstChild,
               e = Number(window.getComputedStyle(n).marginRight.replace("px", "")),
               a = Number(window.getComputedStyle(n).marginLeft.replace("px", ""));
-            z(a + e)
-          }), [B]), (0, r.useEffect)((() => {
+            B(a + e)
+          }), [S]), (0, r.useEffect)((() => {
             !1 !== g && setTimeout((() => {
               h(!1)
             }), a)
@@ -1106,8 +1219,8 @@ _global.SENTRY_RELEASE = {
             b(d.map(((n, e) => (n => {
               let e = 0;
               const a = d.length;
-              return 1 === a ? .5 * m - .5 * y - 2 * t + k : (0 === n && (e = t - n * y), n === a - 1 && a > 1 && (e = a * y * -1 + (m - (t - k))), n > 0 && n < a - 1 && (e = n * y * -1 + (.5 * m - .5 * y + .5 * k)), e)
-            })(e)))), 1 === d.length ? _(!0) : _(!1)
+              return 1 === a ? .5 * m - .5 * y - 2 * t + z : (0 === n && (e = t - n * y), n === a - 1 && a > 1 && (e = a * y * -1 + (m - (t - z))), n > 0 && n < a - 1 && (e = n * y * -1 + (.5 * m - .5 * y + .5 * z)), e)
+            })(e)))), 1 === d.length ? D(!0) : D(!1)
           }), [c.current, d, m]), (0, r.useEffect)((() => {
             const n = (e = p, d.map(((n, a) => {
               const r = {
@@ -1116,12 +1229,12 @@ _global.SENTRY_RELEASE = {
               return a === e && (r.active = !0), r
             })));
             var e;
-            E(n)
+            _(n)
           }), [d, p]), (0, r.useEffect)((() => {
             !0 !== s && !0 !== l || w(v[0])
-          }), [l, s, v]), (0, S.jsxs)(S.Fragment, {
-            children: [(0, S.jsx)("div", {
-              className: Jn.scCustomSwiper,
+          }), [l, s, v]), (0, k.jsxs)(k.Fragment, {
+            children: [(0, k.jsx)("div", {
+              className: Hn.scCustomSwiper,
               ref: c,
               onTouchStart: F,
               onTouchMove: N,
@@ -1135,33 +1248,46 @@ _global.SENTRY_RELEASE = {
               onKeyPress: () => null,
               tabIndex: -1,
               role: "presentation",
-              children: (0, S.jsx)("div", {
-                className: Jn.scCustomSwiperWrap,
+              children: (0, k.jsx)("div", {
+                className: Hn.scCustomSwiperWrap,
                 "data-interaction-blocked": g,
-                "data-single-item": D,
+                "data-single-item": E,
                 style: {
-                  transform: D ? null : `translateX(${x}px)`
+                  transform: E ? null : `translateX(${x}px)`
                 },
-                children: d.map(((n, e) => (0, S.jsx)("div", {
-                  className: Jn.scCustomSwiperItem,
-                  ref: B[e],
+                children: d.map(((n, e) => (0, k.jsx)("div", {
+                  className: Hn.scCustomSwiperItem,
+                  ref: S[e],
                   children: n
                 }, `csItem-${n.props.characterData.platformUsername}-${n.props.characterData.platform}-${n.props.characterData.characterSlot}`)))
               })
-            }), M.length > 1 && !1 === s && (0, S.jsx)("div", {
-              className: Jn.scPager,
-              children: M.map(((n, e) => (0, S.jsx)("div", {
-                className: Jn.scPagerItem,
+            }), M.length > 1 && !1 === s && (0, k.jsx)("div", {
+              className: Hn.scPager,
+              children: M.map(((n, e) => (0, k.jsx)("div", {
+                className: Hn.scPagerItem,
                 "data-active": n.active
               }, e)))
             })]
           })
         };
-      var Qn = a(23607),
-        qn = {};
-      qn.styleTagTransform = w(), qn.setAttributes = A(), qn.insert = f().bind(null, "head"), qn.domAPI = h(), qn.insertStyleElement = b(), m()(Qn.A, qn);
-      const Zn = Qn.A && Qn.A.locals ? Qn.A.locals : void 0,
-        Yn = n => {
+      var On = a(23607),
+        Wn = {
+          attributes: {
+            "data-shadowTarget": "@rockstargames/modules-core-footer"
+          }
+        };
+      Wn.setAttributes = f(), Wn.insert = n => {
+        const e = n.dataset.shadowtarget;
+        e && (window.__MFE_GLOBAL_HOOK__ = {
+          ...window.__MFE_GLOBAL_HOOK__,
+          stylesForShadowRoot: {
+            ...window.__MFE_GLOBAL_HOOK__?.stylesForShadowRoot,
+            [e]: n
+          }
+        })
+      }, Wn.domAPI = h(), Wn.insertStyleElement = A(), m()(On.A, Wn);
+      const Jn = On.A && On.A.locals ? On.A.locals : void 0,
+        Un = n => {
           let {
             sc: e,
             charListHidden: a,
@@ -1178,175 +1304,175 @@ _global.SENTRY_RELEASE = {
           const {
             windowWidth: f,
             windowHeight: u
-          } = (0, E.useWindowResize)(), A = (0, i.useIntl)(), {
+          } = (0, B.useWindowResize)(), A = (0, i.useIntl)(), {
             languageSelectorOpened: v,
             setLanguageSelectorOpened: b,
             activeSubNavId: x,
             setActiveSubNavId: w,
             subNavExtraHeight: y,
-            setSubNavExtraHeight: C,
-            navOpened: k,
-            setScNavOpened: z
-          } = H(), [B, M] = (0, r.useState)(""), {
-            webSettings: D
-          } = (0, E.useRockstarWebSettings)(), {
-            track: _
-          } = (0, s.useGtmTrack)(), F = (0, E.useRockstarTokenPing)(), {
+            setSubNavExtraHeight: z,
+            navOpened: S,
+            setScNavOpened: I
+          } = G(), [M, _] = (0, r.useState)(""), {
+            webSettings: E
+          } = (0, B.useRockstarWebSettings)(), {
+            track: D
+          } = (0, s.useGtmTrack)(), F = (0, B.useRockstarTokenPing)(), {
             data: N,
             loggedIn: R
           } = (0, s.useRockstarUser)(), {
-            charactersNeeded: T,
+            charactersNeeded: L,
             currentCharId: P,
-            hasNotifications: j,
-            navOpen: G,
-            setCurrentCharId: L,
-            setHasNotifications: O,
-            setSelectedCharacterTuple: Z,
-            setUserData: Y
-          } = (0, s.useRockstarUserState)(), [K, V] = (0, r.useState)(null), [X, $] = (0, r.useState)(!1), [nn, en] = (0, r.useState)(!1), [rn, tn] = (0, r.useState)(0), on = (0, r.createRef)(), dn = (0, sn.ri)(on, !1), ln = (0, r.createRef)(), [cn, mn] = (0, r.useState)(0), [gn, hn] = (0, r.useState)([]), [pn, fn] = (0, r.useState)(244), un = (0, r.useRef)(null), An = (0, r.useMemo)((() => (0, U.A)()), []), vn = (0, r.useMemo)((() => ((n, e, a, r, t) => [{
-            text: n.formatMessage(W.sc_link_activity_feed),
+            hasNotifications: J,
+            navOpen: U,
+            setCurrentCharId: Q,
+            setHasNotifications: q,
+            setSelectedCharacterTuple: K,
+            setUserData: Z
+          } = (0, s.useRockstarUserState)(), [Y, V] = (0, r.useState)(null), [$, nn] = (0, r.useState)(!1), [en, an] = (0, r.useState)(!1), [tn, on] = (0, r.useState)(0), dn = (0, r.createRef)(), sn = (0, rn.ri)(dn, !1), ln = (0, r.createRef)(), [cn, mn] = (0, r.useState)(0), [gn, hn] = (0, r.useState)([]), [pn, fn] = (0, r.useState)(244), un = (0, r.useRef)(null), An = (0, r.useMemo)((() => (0, j.A)()), []), vn = (0, r.useMemo)((() => ((n, e, a, r, t) => [{
+            text: n.formatMessage(T.sc_link_activity_feed),
             location: {
-              domain: U.C.socialClub,
+              domain: j.C.socialClub,
               path: "/"
             },
             target: "_self",
             ga: {
-              ...Q,
-              text: W.sc_link_activity_feed.defaultMessage
+              ...O,
+              text: T.sc_link_activity_feed.defaultMessage
             },
             dataTestId: "activityFeedLink"
           }, {
-            text: n.formatMessage(W.sc_link_account),
+            text: n.formatMessage(T.sc_link_account),
             target: "_self",
             dataTestId: "accountButton",
             children: [{
-              text: n.formatMessage(W.sc_link_settings),
+              text: n.formatMessage(T.sc_link_settings),
               location: {
-                domain: U.C.socialClub,
+                domain: j.C.socialClub,
                 path: "/settings"
               },
               target: "_self",
               ga: {
-                ...Q,
-                text: W.sc_link_settings.defaultMessage
+                ...O,
+                text: T.sc_link_settings.defaultMessage
               },
               dataTestId: "settingsLink"
             }, {
-              text: n.formatMessage(W.sc_link_view_my_profile),
+              text: n.formatMessage(T.sc_link_view_my_profile),
               href: a.profile_link,
               target: "_self",
               ga: {
-                ...Q,
-                text: W.sc_link_view_my_profile.defaultMessage
+                ...O,
+                text: T.sc_link_view_my_profile.defaultMessage
               },
               dataTestId: "viewMyProfileLink"
             }, {
-              text: n.formatMessage(W.sc_link_messages),
+              text: n.formatMessage(T.sc_link_messages),
               location: {
-                domain: U.C.socialClub,
+                domain: j.C.socialClub,
                 path: "/message"
               },
               target: "_self",
               ga: {
-                ...Q,
-                text: W.sc_link_messages.defaultMessage
+                ...O,
+                text: T.sc_link_messages.defaultMessage
               },
               dataTestId: "messagesLink"
             }, {
-              text: n.formatMessage(W.sc_link_game_activation),
+              text: n.formatMessage(T.sc_link_game_activation),
               location: {
-                domain: U.C.socialClub,
+                domain: j.C.socialClub,
                 path: "/activate"
               },
               target: "_self",
               ga: {
-                ...Q,
-                text: W.sc_link_game_activation.defaultMessage
+                ...O,
+                text: T.sc_link_game_activation.defaultMessage
               },
               dataTestId: "gameActivationLink"
             }]
           }, {
-            text: n.formatMessage(W.sc_link_notifications),
+            text: n.formatMessage(T.sc_link_notifications),
             location: {
-              domain: U.C.socialClub,
+              domain: j.C.socialClub,
               path: "/notifications"
             },
             target: "_self",
             hasNotifications: r,
             ga: {
-              ...Q,
-              text: W.sc_link_notifications.defaultMessage,
+              ...O,
+              text: T.sc_link_notifications.defaultMessage,
               location: {
-                domain: U.C.socialClub,
+                domain: j.C.socialClub,
                 path: "/notifications"
               }
             },
             dataTestId: "notificationsLink"
           }, {
-            text: n.formatMessage(W.sc_link_crews),
+            text: n.formatMessage(T.sc_link_crews),
             location: {
-              domain: U.C.socialClub,
+              domain: j.C.socialClub,
               path: `/member/${a.nickname}/crews`
             },
             target: "_self",
             ga: {
-              ...Q,
-              text: W.sc_link_crews.defaultMessage
+              ...O,
+              text: T.sc_link_crews.defaultMessage
             },
             dataTestId: "crewsLink"
           }, {
-            text: n.formatMessage(W.sc_link_friends),
+            text: n.formatMessage(T.sc_link_friends),
             target: "_self",
             dataTestId: "friendsButton",
             children: [{
-              text: n.formatMessage(W.sc_link_my_friends),
+              text: n.formatMessage(T.sc_link_my_friends),
               location: {
-                domain: U.C.socialClub,
+                domain: j.C.socialClub,
                 path: `/member/${a.nickname}/friends`
               },
               target: "_self",
               ga: {
-                ...Q,
-                text: W.sc_link_my_friends.defaultMessage
+                ...O,
+                text: T.sc_link_my_friends.defaultMessage
               },
               dataTestId: "myFriendsLink"
             }, {
-              text: n.formatMessage(W.sc_link_import_friends),
+              text: n.formatMessage(T.sc_link_import_friends),
               location: {
-                domain: U.C.socialClub,
+                domain: j.C.socialClub,
                 path: "/friends/import"
               },
               target: "_self",
               ga: {
-                ...Q,
-                text: W.sc_link_import_friends.defaultMessage
+                ...O,
+                text: T.sc_link_import_friends.defaultMessage
               },
               dataTestId: "importFriendsLink"
             }, {
-              text: n.formatMessage(W.sc_link_find_friends),
+              text: n.formatMessage(T.sc_link_find_friends),
               location: {
-                domain: U.C.socialClub,
+                domain: j.C.socialClub,
                 path: "/members"
               },
               target: "_self",
               ga: {
-                ...Q,
-                text: W.sc_link_import_friends.defaultMessage
+                ...O,
+                text: T.sc_link_import_friends.defaultMessage
               },
               dataTestId: "findFriendsLink"
             }]
-          }, q(n), {
-            text: n.formatMessage(W.sc_link_log_out),
+          }, W(n), {
+            text: n.formatMessage(T.sc_link_log_out),
             href: `${e.logout}?returnUrl=${t}`,
             target: "_self",
             reloadDocument: !0,
             ga: {
-              ...Q,
-              text: W.sc_link_log_out.defaultMessage
+              ...O,
+              text: T.sc_link_log_out.defaultMessage
             },
             dataTestId: "logoutButton"
-          }])(A, e, N, j, B, window)), [A, e, N, j, B, An]), bn = () => {
-            en(d + pn * rn < dn)
+          }])(A, e, N, J, M, window)), [A, e, N, J, M, An]), bn = () => {
+            an(d + pn * tn < sn)
           }, xn = () => {
             if (ln.current) {
               const {
@@ -1360,103 +1486,103 @@ _global.SENTRY_RELEASE = {
           };
           return (0, r.useEffect)((() => {
             let n = encodeURIComponent(`${document.location.pathname}${document.location.search}`);
-            An.currentSite?.site === U.C.socialClub && (n = encodeURIComponent("/")), M(n)
+            An.currentSite?.site === j.C.socialClub && (n = encodeURIComponent("/")), _(n)
           }), [h]), (0, r.useEffect)((() => {
-            hn(N?.characters?.[T] ?? [])
-          }), [N, T]), (0, r.useEffect)((() => {
-            N && Y(N)
+            hn(N?.characters?.[L] ?? [])
+          }), [N, L]), (0, r.useEffect)((() => {
+            N && Z(N)
           }), [N]), (0, r.useEffect)((() => {
             const n = N?.characters?.gtao ?? [];
-            if (null !== R && !n.length) return void Z(!1);
+            if (null !== R && !n.length) return void K(!1);
             if (null == P || !n.length) return;
             const e = n?.[P] ?? n?.[0] ?? null;
-            Z(!!e?.platform && [e.platform, e.characterSlot])
+            K(!!e?.platform && [e.platform, e.characterSlot])
           }), [P, N, R]), (0, r.useEffect)((() => {
             (async () => {
-              if (!N?.id || !G) return;
+              if (!N?.id || !U) return;
               const {
                 count: n
-              } = await (0, E.coreScApiFetch)("notification/count", {
+              } = await (0, B.coreScApiFetch)("notification/count", {
                 pingBearer: F
               });
-              O(n > 0)
+              q(n > 0)
             })()
-          }), [N, G]), (0, r.useEffect)((() => {
+          }), [N, U]), (0, r.useEffect)((() => {
             bn()
           }), [pn]), (0, r.useEffect)((() => {
             t(!0), g(f < 768), g(f < 768 || u < 649)
           }), [f, u]), (0, r.useEffect)((() => {
             let n = gn.length - 1;
-            n < 0 && (n = 0), tn(n);
+            n < 0 && (n = 0), on(n);
             const e = gn.length > 0 ? gn[P] ?? gn[0] : null;
-            e && (V(e), gn.length > 1 ? $(!0) : $(!1), c(gn.length - 1 > 3))
+            e && (V(e), gn.length > 1 ? nn(!0) : nn(!1), c(gn.length - 1 > 3))
           }), [P, gn]), (0, r.useEffect)((() => {
             bn()
-          }), [rn, m, f, gn]), (0, r.useEffect)((() => {
-            xn(), J()((() => {
+          }), [tn, m, f, gn]), (0, r.useEffect)((() => {
+            xn(), H()((() => {
               setTimeout(xn, 0)
             }), 300)
           }), [f, u]), (0, r.useEffect)((() => {
-            const n = D?.currentCharId ?? 0;
-            n !== P && L(Math.max(0, Math.min(n, gn.length - 1)))
-          }), [gn, D]), (0, S.jsxs)(S.Fragment, {
-            children: [null !== K && "gtao" === T && (0, S.jsxs)("div", {
-              className: Zn.scProfile,
+            const n = E?.currentCharId ?? 0;
+            n !== P && Q(Math.max(0, Math.min(n, gn.length - 1)))
+          }), [gn, E]), (0, k.jsxs)(k.Fragment, {
+            children: [null !== Y && "gtao" === L && (0, k.jsxs)("div", {
+              className: Jn.scProfile,
               ref: un,
               tabIndex: -1,
-              "aria-label": A.formatMessage(W.profile_selector_profile_card),
-              children: [(0, S.jsx)(Hn, {
-                s: Zn,
-                character: K
-              }), !0 === X && (0, S.jsxs)("div", {
-                className: Zn.scCharacterSelector,
-                children: [(0, S.jsx)("button", {
-                  className: Zn.scCharacterSelectBtn,
-                  "aria-hidden": !G,
+              "aria-label": A.formatMessage(T.profile_selector_profile_card),
+              children: [(0, k.jsx)(Gn, {
+                s: Jn,
+                character: Y
+              }), !0 === $ && (0, k.jsxs)("div", {
+                className: Jn.scCharacterSelector,
+                children: [(0, k.jsx)("button", {
+                  className: Jn.scCharacterSelectBtn,
+                  "aria-hidden": !U,
                   type: "button",
                   onClick: n => {
                     n.stopPropagation();
                     const e = !a;
-                    t(e), _({
+                    t(e), D({
                       event: e ? "character_selector_close" : "character_selector_open",
                       element_placement: "character selector"
                     })
                   },
                   "data-list-closed": a,
-                  children: (0, S.jsx)("span", {
-                    children: (0, S.jsx)(i.FormattedMessage, {
-                      ...W.profile_selector_switch_character
+                  children: (0, k.jsx)("span", {
+                    children: (0, k.jsx)(i.FormattedMessage, {
+                      ...T.profile_selector_switch_character
                     })
                   })
-                }), !m && (0, S.jsx)("div", {
-                  className: Zn.scCharacterList,
+                }), !m && (0, k.jsx)("div", {
+                  className: Jn.scCharacterList,
                   "data-long-list": l,
                   "aria-hidden": a,
                   ref: o,
-                  children: gn.map((n => (0, S.jsx)(Fn, {
+                  children: gn.map((n => (0, k.jsx)(Mn, {
                     tabIndex: a ? -1 : 0,
                     characterData: n,
                     setMobileCardWidth: fn
                   }, `${n.platformUsername}-${n.platform}-${n.characterSlot}`)))
-                }), m && (0, S.jsx)("div", {
-                  className: Zn.scCharacterList,
+                }), m && (0, k.jsx)("div", {
+                  className: Jn.scCharacterList,
                   "data-single-item": 2 === gn.length,
-                  "data-swiper-disabled": nn,
+                  "data-swiper-disabled": en,
                   "aria-hidden": a,
-                  ref: on,
-                  children: (0, S.jsx)(Un, {
+                  ref: dn,
+                  children: (0, k.jsx)(jn, {
                     interactionDelay: 350,
                     mobileGutterWidth: 17,
                     dragThreshold: 40,
                     slideChangeCallback: () => {
-                      _({
+                      D({
                         event: "carousel_swipe",
                         element_placement: "character selector"
                       })
                     },
-                    disablePager: nn,
-                    disableSwiper: nn,
-                    children: gn.filter(((n, e) => e !== P)).map((n => (0, r.createElement)(Fn, {
+                    disablePager: en,
+                    disableSwiper: en,
+                    children: gn.filter(((n, e) => e !== P)).map((n => (0, r.createElement)(Mn, {
                       characterData: n,
                       setMobileCardWidth: fn,
                       key: `${n.platformUsername}-${n.platform}-${n.characterSlot}`,
@@ -1465,46 +1591,46 @@ _global.SENTRY_RELEASE = {
                   })
                 })]
               })]
-            }), (0, S.jsxs)("nav", {
-              className: Zn.nav,
-              "aria-hidden": !G,
-              children: [(0, S.jsx)("button", {
-                className: Zn.navHeader,
+            }), (0, k.jsxs)("nav", {
+              className: Jn.nav,
+              "aria-hidden": !U,
+              children: [(0, k.jsx)("button", {
+                className: Jn.navHeader,
                 type: "button",
-                "data-opened": k,
-                "data-nav-opened": G,
-                tabIndex: k ? -1 : 0,
+                "data-opened": S,
+                "data-nav-opened": U,
+                tabIndex: S ? -1 : 0,
                 onClick: n => {
-                  n.stopPropagation(), k || z(!0)
+                  n.stopPropagation(), S || I(!0)
                 },
                 "data-testid": "playerButton",
-                children: (0, S.jsx)("span", {
+                children: (0, k.jsx)("span", {
                   children: N.nickname
                 })
-              }), (0, S.jsx)("div", {
-                className: Zn.navWrap,
-                "data-opened": k,
+              }), (0, k.jsx)("div", {
+                className: Jn.navWrap,
+                "data-opened": S,
                 "data-logged-in": "true",
                 ref: ln,
                 style: {
                   "--navWrap-max-height": `${cn+y}px`
                 },
-                children: vn.map(((n, e) => (0, r.createElement)(an, {
+                children: vn.map(((n, e) => (0, r.createElement)(X, {
                   ...n,
                   id: e,
                   activeSubNavId: x,
                   setActiveSubNavId: w,
-                  setSubNavExtraHeight: C,
+                  setSubNavExtraHeight: z,
                   onNavigate: p,
                   key: n.text
                 })))
               })]
-            }), (0, S.jsx)("div", {
-              className: Zn.scLanguageSelector,
+            }), (0, k.jsx)("div", {
+              className: Jn.scLanguageSelector,
               style: {
-                visibility: G ? null : "hidden"
+                visibility: U ? null : "hidden"
               },
-              children: (0, S.jsx)(I, {
+              children: (0, k.jsx)(C, {
                 parent: "header",
                 theme: "sc-menu",
                 languageSelectorOpened: v,
@@ -1515,19 +1641,32 @@ _global.SENTRY_RELEASE = {
             })]
           })
         };
-      var Kn = a(26601),
-        Vn = {};
-      Vn.styleTagTransform = w(), Vn.setAttributes = A(), Vn.insert = f().bind(null, "head"), Vn.domAPI = h(), Vn.insertStyleElement = b(), m()(Kn.A, Vn);
-      const Xn = Kn.A && Kn.A.locals ? Kn.A.locals : void 0,
-        $n = (0, E.getConfigForDomain)(),
-        ne = B((n => {
+      var Qn = a(26601),
+        qn = {
+          attributes: {
+            "data-shadowTarget": "@rockstargames/modules-core-footer"
+          }
+        };
+      qn.setAttributes = f(), qn.insert = n => {
+        const e = n.dataset.shadowtarget;
+        e && (window.__MFE_GLOBAL_HOOK__ = {
+          ...window.__MFE_GLOBAL_HOOK__,
+          stylesForShadowRoot: {
+            ...window.__MFE_GLOBAL_HOOK__?.stylesForShadowRoot,
+            [e]: n
+          }
+        })
+      }, qn.domAPI = h(), qn.insertStyleElement = A(), m()(Qn.A, qn);
+      const Kn = Qn.A && Qn.A.locals ? Qn.A.locals : void 0,
+        Zn = (0, B.getConfigForDomain)(),
+        Yn = y((n => {
           let {
             location: e,
             onNavigate: t
           } = n;
           const {
             windowHeight: o
-          } = (0, E.useWindowResize)(), d = (0, i.useIntl)(), {
+          } = (0, B.useWindowResize)(), d = (0, i.useIntl)(), {
             languageSelectorOpened: l,
             setLanguageSelectorOpened: c,
             setActiveSubNavId: m,
@@ -1535,9 +1674,9 @@ _global.SENTRY_RELEASE = {
             setAccountNavOpened: h,
             charListHidden: p,
             setCharListHidden: f
-          } = H(), [u, A] = (0, r.useState)(!1), {
+          } = G(), [u, A] = (0, r.useState)(!1), {
             navHidden: v = !1
-          } = (0, E.useState)(), {
+          } = (0, B.useState)(), {
             loggedIn: b
           } = (0, s.useRockstarUser)(), {
             currentCharId: x,
@@ -1545,26 +1684,26 @@ _global.SENTRY_RELEASE = {
             setNavOpen: y,
             userData: C
           } = (0, s.useRockstarUserState)(), {
-            track: k
-          } = (0, s.useGtmTrack)(), [z, B] = (0, r.useState)(!1), I = (0, r.useRef)(), [D, _] = (0, r.useState)(0), F = (0, r.createRef)(), [N, R] = (0, r.useState)(!1), [T, P] = (0, r.useState)(0), [j, G] = (0, r.useState)(!1), {
-            mutateWebSettings: L,
-            webSettings: O
-          } = (0, E.useRockstarWebSettings)(), J = (0, r.useCallback)((n => {
-            f(n), I.current && !0 === n && (I.current.scrollTop = 0)
-          }), [I]);
+            track: S
+          } = (0, s.useGtmTrack)(), [I, M] = (0, r.useState)(!1), _ = (0, r.useRef)(), [E, D] = (0, r.useState)(0), F = (0, r.createRef)(), [N, R] = (0, r.useState)(!1), [L, P] = (0, r.useState)(0), [H, j] = (0, r.useState)(!1), {
+            mutateWebSettings: O,
+            webSettings: W
+          } = (0, B.useRockstarWebSettings)(), J = (0, r.useCallback)((n => {
+            f(n), _.current && !0 === n && (_.current.scrollTop = 0)
+          }), [_]);
           return (0, r.useEffect)((() => {
-            null !== x && O.currentCharId !== x && L({
+            null !== x && W.currentCharId !== x && O({
               key: "currentCharId",
               value: x
-            }), !1 === b ? L({
+            }), !1 === b ? O({
               key: "currentCharId",
               value: null
-            }) : b && C && C.accountSynced && k({
+            }) : b && C && C.accountSynced && S({
               event: "account_synced"
             })
           }), [x, b, C?.accountSynced]), (0, r.useEffect)((() => {
-            I.current && (!1 === p && !1 === z && (I.current.style.height = `${I.current.scrollHeight}px`), !0 === p && (I.current.style.height = null))
-          }), [p, I, z]), (0, r.useEffect)((() => {
+            _.current && (!1 === p && !1 === I && (_.current.style.height = `${_.current.scrollHeight}px`), !0 === p && (_.current.style.height = null))
+          }), [p, _, I]), (0, r.useEffect)((() => {
             const n = () => {
                 y(!1), J(!0)
               },
@@ -1585,10 +1724,10 @@ _global.SENTRY_RELEASE = {
               const {
                 current: n
               } = F, e = window.getComputedStyle(n);
-              _(parseInt(e.paddingRight, 10) + parseInt(e.paddingLeft, 10))
+              D(parseInt(e.paddingRight, 10) + parseInt(e.paddingLeft, 10))
             }
           }), [F]), (0, r.useEffect)((() => {
-            G(window.navigator.userAgent.includes("Mac"))
+            j(window.navigator.userAgent.includes("Mac"))
           }), []), (0, r.useEffect)((() => {
             F.current && A(F?.current?.scrollHeight >= o)
           }), [F, o]), (0, r.useEffect)((() => {
@@ -1597,62 +1736,75 @@ _global.SENTRY_RELEASE = {
             l && (p || J(!0), g && (h(!1), m(-1)))
           }), [l]), (0, r.useEffect)((() => {
             g && (l && c(!1), p || J(!0))
-          }), [g]), void 0 === b ? null : (0, S.jsxs)(M.A, {
+          }), [g]), void 0 === b ? null : (0, k.jsxs)(z.A, {
             enabled: !!w,
             removeScrollBar: !1,
-            children: [(0, S.jsxs)("div", {
-              className: [Xn.menu, w ? Xn.navOpen : ""].join(" "),
+            children: [(0, k.jsxs)("div", {
+              className: [Kn.menu, w ? Kn.navOpen : ""].join(" "),
               "data-logged-in": b,
-              "data-mac-browser": j,
+              "data-mac-browser": H,
               "data-scroll-mode": u,
               ref: F,
               "aria-hidden": !w,
-              children: [(0, S.jsx)("button", {
-                className: Xn.dragHandleBtn,
+              children: [(0, k.jsx)("button", {
+                className: Kn.dragHandleBtn,
                 type: "button",
                 onTouchStart: n => {
                   const e = void 0 !== n.changedTouches ? n.touches[0].screenX : n.screenX;
                   P(e)
                 },
                 onTouchMove: n => {
-                  if (0 === T) return;
+                  if (0 === L) return;
                   const e = void 0 !== n.changedTouches ? n.changedTouches[0].screenX : n.screenX;
-                  Math.abs(T - e) > 1 && (P(0), y(!1))
+                  Math.abs(L - e) > 1 && (P(0), y(!1))
                 },
-                children: (0, S.jsx)("img", {
-                  className: Xn.dragHandle,
+                children: (0, k.jsx)("img", {
+                  className: Kn.dragHandle,
                   src: a(35902),
-                  alt: d.formatMessage(W.sc_menu_drag_handle)
+                  alt: d.formatMessage(T.sc_menu_drag_handle)
                 })
-              }), b ? (0, S.jsx)(Yn, {
-                sc: $n,
+              }), b ? (0, k.jsx)(Un, {
+                sc: Zn,
                 charListHidden: p,
                 hideCharacterList: J,
-                refCharacterListDesktop: I,
-                menuPadding: D,
-                longCharList: z,
-                setLongCharList: B,
+                refCharacterListDesktop: _,
+                menuPadding: E,
+                longCharList: I,
+                setLongCharList: M,
                 isMobileMode: N,
                 setIsMobileMode: R,
                 location: e,
                 onNavigate: t
-              }) : (0, S.jsx)(dn, {
-                sc: $n,
+              }) : (0, k.jsx)(an, {
+                sc: Zn,
                 navOpen: w,
                 location: e,
                 onNavigate: t
               })]
-            }), (0, S.jsx)("div", {
-              className: [Xn.scOverlay, w ? Xn.navOpen : ""].join(" "),
+            }), (0, k.jsx)("div", {
+              className: [Kn.scOverlay, w ? Kn.navOpen : ""].join(" "),
               "data-logged-in": b
             })]
           })
         }));
-      var ee = a(87953),
-        ae = {};
-      ae.styleTagTransform = w(), ae.setAttributes = A(), ae.insert = f().bind(null, "head"), ae.domAPI = h(), ae.insertStyleElement = b(), m()(ee.A, ae);
-      const re = ee.A && ee.A.locals ? ee.A.locals : void 0,
-        te = B((n => {
+      var Vn = a(87953),
+        Xn = {
+          attributes: {
+            "data-shadowTarget": "@rockstargames/modules-core-footer"
+          }
+        };
+      Xn.setAttributes = f(), Xn.insert = n => {
+        const e = n.dataset.shadowtarget;
+        e && (window.__MFE_GLOBAL_HOOK__ = {
+          ...window.__MFE_GLOBAL_HOOK__,
+          stylesForShadowRoot: {
+            ...window.__MFE_GLOBAL_HOOK__?.stylesForShadowRoot,
+            [e]: n
+          }
+        })
+      }, Xn.domAPI = h(), Xn.insertStyleElement = A(), m()(Vn.A, Xn);
+      const $n = Vn.A && Vn.A.locals ? Vn.A.locals : void 0,
+        ne = y((n => {
           let {
             setOtherHeaderDropdowns: e
           } = n;
@@ -1696,40 +1848,53 @@ _global.SENTRY_RELEASE = {
                   return v?.[c]?.mugshotUrl ?? o?.avatar
               }
             })())
-          }), [o, v, c, d]), (0, S.jsxs)("button", {
-            className: re.avatarBtn,
-            "aria-label": t.formatMessage(m ? W.sc_menu_close : W.sc_menu_open),
+          }), [o, v, c, d]), (0, k.jsxs)("button", {
+            className: $n.avatarBtn,
+            "aria-label": t.formatMessage(m ? T.sc_menu_close : T.sc_menu_open),
             "aria-expanded": m,
             type: "button",
             onClick: x,
             "data-mugshot": u,
             "data-testid": "avatarMenuButton",
             "data-logged-in": Boolean(d),
-            children: [(0, S.jsx)("img", {
-              className: re.avatarBtnUser,
+            children: [(0, k.jsx)("img", {
+              className: $n.avatarBtnUser,
               src: p,
               alt: o?.nickname || "",
               onError: () => {
                 let n = null;
                 n = a(u ? 5931 : 73091), f(n)
               }
-            }), d && u && (0, S.jsx)("div", {
-              className: re.avatarBtnPlatform,
-              children: (0, S.jsx)(zn, {
+            }), d && u && (0, k.jsx)("div", {
+              className: $n.avatarBtnPlatform,
+              children: (0, k.jsx)(wn, {
                 platform: v?.[c]?.platform,
-                tagSize: Cn.small
+                tagSize: bn.small
               })
-            }), d && (0, S.jsx)("div", {
-              className: re.avatarOutline,
+            }), d && (0, k.jsx)("div", {
+              className: $n.avatarOutline,
               "data-platform": v?.[c]?.platform ?? null
             })]
           })
         }));
-      var oe = a(21552),
-        ie = {};
-      ie.styleTagTransform = w(), ie.setAttributes = A(), ie.insert = f().bind(null, "head"), ie.domAPI = h(), ie.insertStyleElement = b(), m()(oe.A, ie);
-      const de = oe.A && oe.A.locals ? oe.A.locals : void 0,
-        se = n => {
+      var ee = a(21552),
+        ae = {
+          attributes: {
+            "data-shadowTarget": "@rockstargames/modules-core-footer"
+          }
+        };
+      ae.setAttributes = f(), ae.insert = n => {
+        const e = n.dataset.shadowtarget;
+        e && (window.__MFE_GLOBAL_HOOK__ = {
+          ...window.__MFE_GLOBAL_HOOK__,
+          stylesForShadowRoot: {
+            ...window.__MFE_GLOBAL_HOOK__?.stylesForShadowRoot,
+            [e]: n
+          }
+        })
+      }, ae.domAPI = h(), ae.insertStyleElement = A(), m()(ee.A, ae);
+      const re = ee.A && ee.A.locals ? ee.A.locals : void 0,
+        te = n => {
           let {
             charListHidden: e,
             hideCharacterList: a,
@@ -1742,7 +1907,7 @@ _global.SENTRY_RELEASE = {
           const m = (0, i.useIntl)(),
             {
               windowWidth: g
-            } = (0, E.useWindowResize)(),
+            } = (0, B.useWindowResize)(),
             {
               track: h
             } = (0, s.useGtmTrack)(),
@@ -1757,62 +1922,62 @@ _global.SENTRY_RELEASE = {
               setCharacterPlatform: w
             } = (0, s.useRockstarUserState)(),
             [y, C] = (0, r.useState)(null),
-            [k, z] = (0, r.useState)([]),
-            [B, I] = (0, r.useState)(!1),
-            [M, D] = (0, r.useState)(0),
-            [_, F] = (0, r.useState)(244),
+            [z, S] = (0, r.useState)([]),
+            [I, M] = (0, r.useState)(!1),
+            [_, E] = (0, r.useState)(0),
+            [D, F] = (0, r.useState)(244),
             [N, R] = (0, r.useState)(!1),
-            T = (0, r.useRef)(null),
-            P = (0, r.createRef)(),
-            j = (0, sn.ri)(P, !1),
+            L = (0, r.useRef)(null),
+            G = (0, r.createRef)(),
+            P = (0, rn.ri)(G, !1),
             {
-              webSettings: G
-            } = (0, E.useRockstarWebSettings)(),
+              webSettings: H
+            } = (0, B.useRockstarWebSettings)(),
             {
-              data: L,
-              loggedIn: H
+              data: j,
+              loggedIn: O
             } = (0, s.useRockstarUser)({
               fetchCharacters: !0
             }),
-            O = () => {
-              R(o + _ * M < j)
+            W = () => {
+              R(o + D * _ < P)
             };
           return (0, r.useEffect)((() => {
-            O()
-          }), [_]), (0, r.useEffect)((() => {
-            O()
-          }), [M, c, g, k]), (0, r.useEffect)((() => {
-            z(L.characters?.[p] ?? [])
-          }), [L, p]), (0, r.useEffect)((() => {
-            L && b(L)
-          }), [L]), (0, r.useEffect)((() => {
-            const n = L?.characters?.gtao;
-            if (null !== H && !n?.length) return void v(!1);
+            W()
+          }), [D]), (0, r.useEffect)((() => {
+            W()
+          }), [_, c, g, z]), (0, r.useEffect)((() => {
+            S(j.characters?.[p] ?? [])
+          }), [j, p]), (0, r.useEffect)((() => {
+            j && b(j)
+          }), [j]), (0, r.useEffect)((() => {
+            const n = j?.characters?.gtao;
+            if (null !== O && !n?.length) return void v(!1);
             if (null == f || !n?.length) return;
             const e = n?.[f] ?? n?.[0] ?? null;
             v(!!e?.platform && [e.platform, e.characterSlot])
-          }), [f, L, H]), (0, r.useEffect)((() => {
-            let n = k.length - 1;
-            n < 0 && (n = 0), D(n);
-            const e = k.length > 0 ? k[f] ?? k[0] : null;
-            if (e) return C(e), x(e.mugshotUrl), w(e.platform), k.length > 1 ? I(!0) : I(!1), l(k.length - 1 > 3), () => {
+          }), [f, j, O]), (0, r.useEffect)((() => {
+            let n = z.length - 1;
+            n < 0 && (n = 0), E(n);
+            const e = z.length > 0 ? z[f] ?? z[0] : null;
+            if (e) return C(e), x(e.mugshotUrl), w(e.platform), z.length > 1 ? M(!0) : M(!1), l(z.length - 1 > 3), () => {
               x(""), w("")
             }
-          }), [f, k]), (0, r.useEffect)((() => {
-            const n = G?.currentCharId ?? 0;
-            n !== f && A(Math.max(0, Math.min(n, k.length - 1)))
-          }), [k, G]), y && "gtao" === p ? (0, S.jsxs)("div", {
-            className: de.profile,
-            ref: T,
+          }), [f, z]), (0, r.useEffect)((() => {
+            const n = H?.currentCharId ?? 0;
+            n !== f && A(Math.max(0, Math.min(n, z.length - 1)))
+          }), [z, H]), y && "gtao" === p ? (0, k.jsxs)("div", {
+            className: re.profile,
+            ref: L,
             tabIndex: -1,
-            "aria-label": m.formatMessage(W.profile_selector_profile_card),
-            children: [(0, S.jsx)(Hn, {
-              s: de,
+            "aria-label": m.formatMessage(T.profile_selector_profile_card),
+            children: [(0, k.jsx)(Gn, {
+              s: re,
               character: y
-            }), !0 === B && (0, S.jsxs)("div", {
-              className: de.scCharacterSelector,
-              children: [(0, S.jsx)("button", {
-                className: de.scCharacterSelectBtn,
+            }), !0 === I && (0, k.jsxs)("div", {
+              className: re.scCharacterSelector,
+              children: [(0, k.jsx)("button", {
+                className: re.scCharacterSelectBtn,
                 "aria-hidden": !u,
                 type: "button",
                 onClick: n => {
@@ -1824,28 +1989,28 @@ _global.SENTRY_RELEASE = {
                   })
                 },
                 "data-list-closed": e,
-                children: (0, S.jsx)("span", {
-                  children: (0, S.jsx)(i.FormattedMessage, {
-                    ...W.profile_selector_switch_character
+                children: (0, k.jsx)("span", {
+                  children: (0, k.jsx)(i.FormattedMessage, {
+                    ...T.profile_selector_switch_character
                   })
                 })
-              }), !1 === c && (0, S.jsx)("div", {
-                className: de.scCharacterList,
+              }), !1 === c && (0, k.jsx)("div", {
+                className: re.scCharacterList,
                 "data-long-list": d,
                 "aria-hidden": e,
                 ref: t,
-                children: k.map((n => (0, S.jsx)(Fn, {
+                children: z.map((n => (0, k.jsx)(Mn, {
                   tabIndex: e ? -1 : 0,
                   characterData: n,
                   setMobileCardWidth: F
                 }, n.mugshotUrl)))
-              }), !0 === c && (0, S.jsx)("div", {
-                className: de.scCharacterList,
-                "data-single-item": 2 === k.length,
+              }), !0 === c && (0, k.jsx)("div", {
+                className: re.scCharacterList,
+                "data-single-item": 2 === z.length,
                 "data-swiper-disabled": N,
                 "aria-hidden": e,
-                ref: P,
-                children: (0, S.jsx)(Un, {
+                ref: G,
+                children: (0, k.jsx)(jn, {
                   interactionDelay: 350,
                   mobileGutterWidth: 17,
                   dragThreshold: 40,
@@ -1857,7 +2022,7 @@ _global.SENTRY_RELEASE = {
                   },
                   disablePager: N,
                   disableSwiper: N,
-                  children: k.filter(((n, e) => e !== f)).map((n => (0, r.createElement)(Fn, {
+                  children: z.filter(((n, e) => e !== f)).map((n => (0, r.createElement)(Mn, {
                     characterData: n,
                     setMobileCardWidth: F,
                     key: n.mugshotUrl,

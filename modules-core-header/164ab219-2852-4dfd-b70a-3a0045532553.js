@@ -32,11 +32,11 @@ _global.SENTRY_RELEASE = {
             ...s
           } = e, [f, b] = o.useState(!1);
           (0, l.N)((() => b(!0)), []);
-          const c = d || f && globalThis?.document?.body;
-          return c ? n.createPortal((0, r.jsx)(t.sG.div, {
+          const u = d || f && globalThis?.document?.body;
+          return u ? n.createPortal((0, r.jsx)(t.sG.div, {
             ...s,
             ref: a
-          }), c) : null
+          }), u) : null
         }));
       s.displayName = "Portal";
       var f = s

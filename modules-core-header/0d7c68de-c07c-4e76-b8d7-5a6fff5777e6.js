@@ -16,12 +16,12 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [5795, 3855, 6236, 9093, 1474, 8176], {
-    32469: (e, o, a) => {
-      var r = a(62229),
+    32469: (e, o, r) => {
+      var a = r(62229),
         d = Symbol.for("react.element"),
         t = Symbol.for("react.fragment"),
         n = Object.prototype.hasOwnProperty,
-        l = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        l = a.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         f = {
           key: !0,
           ref: !0,
@@ -29,13 +29,13 @@ _global.SENTRY_RELEASE = {
           __source: !0
         };
 
-      function s(e, o, a) {
-        var r, t = {},
+      function s(e, o, r) {
+        var a, t = {},
           s = null,
           i = null;
-        for (r in void 0 !== a && (s = "" + a), void 0 !== o.key && (s = "" + o.key), void 0 !== o.ref && (i = o.ref), o) n.call(o, r) && !f.hasOwnProperty(r) && (t[r] = o[r]);
+        for (a in void 0 !== r && (s = "" + r), void 0 !== o.key && (s = "" + o.key), void 0 !== o.ref && (i = o.ref), o) n.call(o, a) && !f.hasOwnProperty(a) && (t[a] = o[a]);
         if (e && e.defaultProps)
-          for (r in o = e.defaultProps) void 0 === t[r] && (t[r] = o[r]);
+          for (a in o = e.defaultProps) void 0 === t[a] && (t[a] = o[a]);
         return {
           $$typeof: d,
           type: e,
@@ -47,57 +47,57 @@ _global.SENTRY_RELEASE = {
       }
       o.Fragment = t, o.jsx = s, o.jsxs = s
     },
-    73855: (e, o, a) => {
-      e.exports = a(32469)
+    73855: (e, o, r) => {
+      e.exports = r(32469)
     },
-    95795: (e, o, a) => {
-      a.r(o), a.d(o, {
+    95795: (e, o, r) => {
+      r.r(o), r.d(o, {
         Portal: () => f,
         Root: () => s
       });
-      var r = a(62229),
-        d = a(44853),
-        t = a(60286),
-        n = a(92600),
-        l = a(73855),
-        f = r.forwardRef(((e, o) => {
+      var a = r(62229),
+        d = r(44853),
+        t = r(60286),
+        n = r(92600),
+        l = r(73855),
+        f = a.forwardRef(((e, o) => {
           const {
-            container: a,
+            container: r,
             ...f
-          } = e, [s, i] = r.useState(!1);
+          } = e, [s, i] = a.useState(!1);
           (0, n.N)((() => i(!0)), []);
-          const c = a || s && globalThis?.document?.body;
-          return c ? d.createPortal((0, l.jsx)(t.sG.div, {
+          const u = r || s && globalThis?.document?.body;
+          return u ? d.createPortal((0, l.jsx)(t.sG.div, {
             ...f,
             ref: o
-          }), c) : null
+          }), u) : null
         }));
       f.displayName = "Portal";
       var s = f
     },
-    60286: (e, o, a) => {
-      a.d(o, {
+    60286: (e, o, r) => {
+      r.d(o, {
         hO: () => f,
         sG: () => l
       });
-      var r = a(62229),
-        d = a(44853),
-        t = a(21222),
-        n = a(73855),
+      var a = r(62229),
+        d = r(44853),
+        t = r(21222),
+        n = r(73855),
         l = ["a", "button", "div", "form", "h2", "h3", "img", "input", "label", "li", "nav", "ol", "p", "span", "svg", "ul"].reduce(((e, o) => {
-          const a = r.forwardRef(((e, a) => {
+          const r = a.forwardRef(((e, r) => {
             const {
-              asChild: r,
+              asChild: a,
               ...d
-            } = e, l = r ? t.Slot : o;
+            } = e, l = a ? t.Slot : o;
             return "undefined" != typeof window && (window[Symbol.for("radix-ui")] = !0), (0, n.jsx)(l, {
               ...d,
-              ref: a
+              ref: r
             })
           }));
-          return a.displayName = `Primitive.${o}`, {
+          return r.displayName = `Primitive.${o}`, {
             ...e,
-            [o]: a
+            [o]: r
           }
         }), {});
 
@@ -105,12 +105,12 @@ _global.SENTRY_RELEASE = {
         e && d.flushSync((() => e.dispatchEvent(o)))
       }
     },
-    92600: (e, o, a) => {
-      a.d(o, {
+    92600: (e, o, r) => {
+      r.d(o, {
         N: () => d
       });
-      var r = a(62229),
-        d = Boolean(globalThis?.document) ? r.useLayoutEffect : () => {}
+      var a = r(62229),
+        d = Boolean(globalThis?.document) ? a.useLayoutEffect : () => {}
     }
   }
 ]);
