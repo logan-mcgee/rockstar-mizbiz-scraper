@@ -31,7 +31,7 @@ _global.SENTRY_RELEASE = {
         __createBinding: () => b,
         __decorate: () => c,
         __disposeResources: () => C,
-        __esDecorate: () => l,
+        __esDecorate: () => f,
         __exportStar: () => h,
         __extends: () => o,
         __generator: () => _,
@@ -43,7 +43,7 @@ _global.SENTRY_RELEASE = {
         __propKey: () => u,
         __read: () => v,
         __rest: () => i,
-        __runInitializers: () => f,
+        __runInitializers: () => l,
         __setFunctionName: () => p,
         __spread: () => g,
         __spreadArray: () => O,
@@ -103,12 +103,12 @@ _global.SENTRY_RELEASE = {
         }
       }
 
-      function l(e, t, r, n, o, a) {
+      function f(e, t, r, n, o, a) {
         function i(e) {
           if (void 0 !== e && "function" != typeof e) throw new TypeError("Function expected");
           return e
         }
-        for (var c, s = n.kind, l = "getter" === s ? "get" : "setter" === s ? "set" : "value", f = !t && e ? n.static ? e : e.prototype : null, u = t || (f ? Object.getOwnPropertyDescriptor(f, n.name) : {}), p = !1, d = r.length - 1; d >= 0; d--) {
+        for (var c, s = n.kind, f = "getter" === s ? "get" : "setter" === s ? "set" : "value", l = !t && e ? n.static ? e : e.prototype : null, u = t || (l ? Object.getOwnPropertyDescriptor(l, n.name) : {}), p = !1, d = r.length - 1; d >= 0; d--) {
           var y = {};
           for (var _ in n) y[_] = "access" === _ ? {} : n[_];
           for (var _ in n.access) y.access[_] = n.access[_];
@@ -119,17 +119,17 @@ _global.SENTRY_RELEASE = {
           var b = (0, r[d])("accessor" === s ? {
             get: u.get,
             set: u.set
-          } : u[l], y);
+          } : u[f], y);
           if ("accessor" === s) {
             if (void 0 === b) continue;
             if (null === b || "object" != typeof b) throw new TypeError("Object expected");
             (c = i(b.get)) && (u.get = c), (c = i(b.set)) && (u.set = c), (c = i(b.init)) && o.unshift(c)
-          } else(c = i(b)) && ("field" === s ? o.unshift(c) : u[l] = c)
+          } else(c = i(b)) && ("field" === s ? o.unshift(c) : u[f] = c)
         }
-        f && Object.defineProperty(f, n.name, u), p = !0
+        l && Object.defineProperty(l, n.name, u), p = !0
       }
 
-      function f(e, t, r) {
+      function l(e, t, r) {
         for (var n = arguments.length > 2, o = 0; o < t.length; o++) r = n ? t[o].call(e, r) : t[o].call(e);
         return n ? r : void 0
       }
@@ -349,9 +349,9 @@ _global.SENTRY_RELEASE = {
 
         function c(e, t) {
           try {
-            (r = o[e](t)).value instanceof j ? Promise.resolve(r.value.v).then(s, l) : f(a[0][2], r)
+            (r = o[e](t)).value instanceof j ? Promise.resolve(r.value.v).then(s, f) : l(a[0][2], r)
           } catch (e) {
-            f(a[0][3], e)
+            l(a[0][3], e)
           }
           var r
         }
@@ -360,11 +360,11 @@ _global.SENTRY_RELEASE = {
           c("next", e)
         }
 
-        function l(e) {
+        function f(e) {
           c("throw", e)
         }
 
-        function f(e, t) {
+        function l(e, t) {
           e(t), a.shift(), a.length && c(a[0][0], a[0][1])
         }
       }

@@ -26,8 +26,8 @@ _global.SENTRY_RELEASE = {
         o = s(95966),
         l = s(23066),
         r = s(82943),
-        c = s.n(r),
-        i = s(34365),
+        i = s.n(r),
+        c = s(34365),
         f = s(51451),
         u = s(39006),
         g = s(52542),
@@ -39,7 +39,7 @@ _global.SENTRY_RELEASE = {
           {
             data: g,
             loading: y
-          } = (0, o.useQuery)(c(), {
+          } = (0, o.useQuery)(i(), {
             variables: s,
             skip: !Object.entries(s).length,
             autoSetLoading: !0
@@ -61,7 +61,7 @@ _global.SENTRY_RELEASE = {
             "data-context": "safetyPage",
             children: [(0, b.jsxs)("div", {
               className: f.A.mainContent,
-              children: [(0, b.jsx)(i.A, {
+              children: [(0, b.jsx)(c.A, {
                 heading: m?.title,
                 description: m?.description,
                 lastUpdatedDate: e.formatMessage(d.A.resources_last_updated_date)

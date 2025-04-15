@@ -30,8 +30,8 @@ _global.SENTRY_RELEASE = {
               t = String(l ? Number(n[0]) * Math.pow(10, l) : d).split("."),
               o = t[0],
               s = !t[1],
-              r = o.slice(-6);
-            return a ? 1 == e ? "one" : "other" : e >= 0 && e < 2 ? "one" : 0 == l && 0 != o && 0 == r && s || l < 0 || l > 5 ? "many" : "other"
+              f = o.slice(-6);
+            return a ? 1 == e ? "one" : "other" : e >= 0 && e < 2 ? "one" : 0 == l && 0 != o && 0 == f && s || l < 0 || l > 5 ? "many" : "other"
           }
         },
         locale: "fr"

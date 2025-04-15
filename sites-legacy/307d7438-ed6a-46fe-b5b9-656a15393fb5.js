@@ -2,22 +2,22 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "08f17688-81c2-43e7-ad51-30699515f7b9", e._sentryDebugIdIdentifier = "sentry-dbid-08f17688-81c2-43e7-ad51-30699515f7b9")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "307d7438-ed6a-46fe-b5b9-656a15393fb5", e._sentryDebugIdIdentifier = "sentry-dbid-307d7438-ed6a-46fe-b5b9-656a15393fb5")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
   release: "sentry-release-id",
-  packageName: "@rockstargames/sites-gta",
+  packageName: "@rockstargames/sites-legacy",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
-}, (self.webpackChunk_rockstargames_sites_gta = self.webpackChunk_rockstargames_sites_gta || []).push([
-  [2035, 3820, 2772], {
-    2469: (e, t, a) => {
-      var r = a(2229),
+}, (self.webpackChunk_rockstargames_sites_legacy = self.webpackChunk_rockstargames_sites_legacy || []).push([
+  [391, 3855, 2772], {
+    32469: (e, t, a) => {
+      var r = a(62229),
         s = Symbol.for("react.element"),
         n = Symbol.for("react.fragment"),
         c = Object.prototype.hasOwnProperty,
@@ -47,20 +47,20 @@ _global.SENTRY_RELEASE = {
       }
       t.Fragment = n, t.jsx = u, t.jsxs = u
     },
-    3855: (e, t, a) => {
-      e.exports = a(2469)
+    73855: (e, t, a) => {
+      e.exports = a(32469)
     },
-    391: (e, t, a) => {
+    2772: (e, t, a) => {
       a.r(t), a.d(t, {
         GtmProvider: () => u,
-        RockstarUserProvider: () => D,
+        RockstarUserProvider: () => j,
         useGtmTrack: () => d,
-        useRockstarUser: () => j,
+        useRockstarUser: () => B,
         useRockstarUserState: () => M
       });
-      var r = a(2229),
-        s = a(5966),
-        n = a(296);
+      var r = a(62229),
+        s = a(95966),
+        n = a(40296);
       const c = {
         pcalt: "PC",
         pc: "PC",
@@ -69,7 +69,7 @@ _global.SENTRY_RELEASE = {
         xboxone: "XBOX ONE",
         xboxsx: "XBOX SERIES X|S"
       };
-      var o = a(3855);
+      var o = a(73855);
       const i = (0, s.setContextItem)({
           context: (0, r.createContext)(void 0),
           key: "gtmContext22"
@@ -84,7 +84,7 @@ _global.SENTRY_RELEASE = {
               const [t, a] = (0, r.useState)([]), [o, i] = (0, r.useState)([]), [u, l] = (0, r.useState)(null), {
                 data: d,
                 loggedIn: f
-              } = j(), {
+              } = B(), {
                 hasGtaPlus: p
               } = d ?? {}, m = (0, n.bn)(), k = (e, r) => {
                 const n = [];
@@ -181,61 +181,61 @@ _global.SENTRY_RELEASE = {
           key: "currentCharIdReactive",
           value: (0, s.makeVar)((0, s.webSettingsReactive)()?.currentCharId)
         }),
-        w = e => v(e),
-        y = (0, s.setMakeVarItem)({
+        y = e => v(e),
+        w = (0, s.setMakeVarItem)({
           key: "selectedCharacterTupleReactive",
           value: (0, s.makeVar)(null)
         }),
-        b = e => y(e),
+        b = e => w(e),
         _ = (0, s.setMakeVarItem)({
           key: "rockstarIdReactive",
           value: (0, s.makeVar)(null)
         }),
-        C = (0, s.setMakeVarItem)({
+        x = (0, s.setMakeVarItem)({
           key: "charactersNeededReactive",
           value: (0, s.makeVar)(!1)
         }),
-        x = e => C(e),
+        C = e => x(e),
         S = (0, s.setMakeVarItem)({
           key: "crewsNeededReactive",
           value: (0, s.makeVar)(!1)
         }),
         I = e => S(e),
-        E = (0, s.setMakeVarItem)({
+        R = (0, s.setMakeVarItem)({
           key: "userDataReactive",
           value: (0, s.makeVar)(null)
         }),
-        R = e => E(e),
+        E = e => R(e),
         M = () => {
-          const e = (0, s.useReactiveVar)(C),
+          const e = (0, s.useReactiveVar)(x),
             t = (0, s.useReactiveVar)(S),
             a = (0, s.useReactiveVar)(v),
             r = (0, s.useReactiveVar)(f),
             n = (0, s.useReactiveVar)(g),
-            c = (0, s.useReactiveVar)(y);
+            c = (0, s.useReactiveVar)(w);
           return {
             charactersNeeded: e,
             crewsNeeded: t,
             currentCharId: a,
             hasNotifications: n,
             navOpen: r,
-            userData: (0, s.useReactiveVar)(E),
+            userData: (0, s.useReactiveVar)(R),
             selectedCharacterTuple: c,
             jumpScMenuFocus: (0, s.useReactiveVar)(m),
-            setCharactersNeeded: x,
+            setCharactersNeeded: C,
             setCrewsNeeded: I,
-            setCurrentCharId: w,
+            setCurrentCharId: y,
             setHasNotifications: h,
             setNavOpen: p,
             setSelectedCharacterTuple: b,
-            setUserData: R,
+            setUserData: E,
             setJumpScMenuFocus: k
           }
         };
-      var V = a(7531),
-        A = a.n(V);
-      var N = a(7240),
-        P = a(5422);
+      var V = a(17531),
+        N = a.n(V);
+      var A = a(37240),
+        P = a(35422);
       const T = e => {
           let {
             privateToken: t
@@ -244,32 +244,25 @@ _global.SENTRY_RELEASE = {
             charactersNeeded: a,
             crewsNeeded: n,
             currentCharId: c
-          } = M(), o = (0, s.useRockstarToken)(), [i, u] = (0, r.useState)(), [l] = (0, s.useRockstarTokenReactive)(), d = (0, s.useRockstarTokenPing)(), [f, p] = (0, r.useState)(), [m, k] = (0, r.useState)(!1), [g, h] = (0, r.useState)(), v = void 0 === f, [w, y] = (0, r.useState)(1);
+          } = M(), o = (0, s.useRockstarToken)(), [i, u] = (0, r.useState)(), [l] = (0, s.useRockstarTokenReactive)(), d = (0, s.useRockstarTokenPing)(), [f, p] = (0, r.useState)(), [m, k] = (0, r.useState)(!1), g = void 0 === f, [h, v] = (0, r.useState)(1);
           return (0, r.useEffect)((() => {
-            a && (u({
+            "gtao" !== a || i?.characters?.gtao || (u({
               ...i,
               accountSynced: !1
-            }), y((e => e + 1)))
-          }), [a]), (0, r.useEffect)((() => {
-            n && (u({
+            }), v((e => e + 1)))
+          }), [a, i?.characters?.gtao]), (0, r.useEffect)((() => {
+            n && !i?.crews && (u({
               ...i,
               accountSynced: !1
-            }), y((e => e + 1)))
-          }), [n]), (0, r.useEffect)((() => {
-            0 === w && u({
+            }), v((e => e + 1)))
+          }), [n, i?.crews]), (0, r.useEffect)((() => {
+            0 === h && u({
               ...i,
               accountSynced: !0
             })
-          }), [w]), (0, r.useEffect)((() => {
+          }), [h]), (0, r.useEffect)((() => {
             t && l(t)
           }), [t]), (0, r.useEffect)((() => {
-            a && h("1" === i?.characters?.[a]?.[c]?.stats?.overview?.hasGtaPlus?.value)
-          }), [a, c, i]), (0, r.useEffect)((() => {
-            u({
-              ...i,
-              hasGtaPlus: g
-            })
-          }), [g]), (0, r.useEffect)((() => {
             "" !== o || d()
           }), [o]), (0, r.useEffect)((() => {
             if ("" === o) return;
@@ -285,7 +278,7 @@ _global.SENTRY_RELEASE = {
                       silentCheck: r
                     } = (0, s.getConfigForDomain)(), n = {
                       method: "POST",
-                      body: `fingerprint=${await A().get().then((e=>e))}`,
+                      body: `fingerprint=${await N().get().then((e=>e))}`,
                       credentials: "include",
                       headers: {
                         "X-Requested-With": "XMLHttpRequest",
@@ -310,7 +303,7 @@ _global.SENTRY_RELEASE = {
                 let {
                   bearerToken: t
                 } = e;
-                const a = (0, N.s)(t),
+                const a = (0, A.s)(t),
                   {
                     host: r
                   } = (0, s.getConfigForDomain)(),
@@ -363,7 +356,7 @@ _global.SENTRY_RELEASE = {
                 u({
                   ...i,
                   crews: e
-                }), y((e => e - 1))
+                }), v((e => e - 1))
               }
             })()
           }), [i?.nickname, n, f]), (0, r.useEffect)((() => {
@@ -385,7 +378,7 @@ _global.SENTRY_RELEASE = {
               u({
                 ...i,
                 gamesPlayed: e
-              }), y((e => e - 1))
+              }), v((e => e - 1))
             })()
           }), [i?.nickname, f]), (0, r.useEffect)((() => {
             (async () => {
@@ -466,8 +459,9 @@ _global.SENTRY_RELEASE = {
                     ...i.characters,
                     gtao: e
                   },
-                  linkedAccounts: t
-                }), y((e => e - 1))
+                  linkedAccounts: t,
+                  hasGtaPlus: "1" === e?.[c]?.stats?.overview?.hasGtaPlus?.value
+                }), v((e => e - 1))
               }
             })()
           }), [a, i?.nickname, f]), (0, r.useEffect)((() => {
@@ -475,7 +469,7 @@ _global.SENTRY_RELEASE = {
           }), [JSON.stringify(i)]), {
             data: i,
             loggedIn: f,
-            loading: v
+            loading: g
           }
         },
         O = {},
@@ -483,7 +477,7 @@ _global.SENTRY_RELEASE = {
           context: (0, r.createContext)(O),
           key: "userContext"
         }),
-        D = e => {
+        j = e => {
           let {
             children: t,
             privateToken: a
@@ -501,48 +495,7 @@ _global.SENTRY_RELEASE = {
             children: t
           })
         },
-        j = () => (0, r.useContext)(U)
-    },
-    62: (e, t, a) => {
-      a.d(t, {
-        A: () => n,
-        C: () => r
-      });
-      const r = {
-          www: "www",
-          socialClub: "socialClub",
-          support: "support",
-          store: "store"
-        },
-        s = [{
-          id: "prod",
-          sites: {
-            www: "www",
-            socialClub: "socialclub",
-            support: "support",
-            store: "store"
-          },
-          cookieIdentifier: "prod"
-        }],
-        n = () => {
-          let e;
-          const {
-            location: t
-          } = window, a = t.hostname.substring(0, t.hostname.indexOf(".rockstargames.com")), r = s.findIndex((t => Object.entries(t.sites).findIndex((t => {
-            let [r, s] = t;
-            return s === a && (e = {
-              site: r,
-              subDomain: s
-            }, !0)
-          })) >= 0)), n = s[r >= 0 ? r : 0];
-          return e || (e = {
-            site: "www",
-            subDomain: "local"
-          }), {
-            ...n,
-            currentSite: e
-          }
-        }
+        B = () => (0, r.useContext)(U)
     }
   }
 ]);

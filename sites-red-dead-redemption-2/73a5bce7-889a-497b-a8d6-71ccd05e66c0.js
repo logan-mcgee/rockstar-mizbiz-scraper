@@ -186,23 +186,23 @@ _global.SENTRY_RELEASE = {
           __source: !0
         };
 
-      function c(e, o, t) {
+      function d(e, o, t) {
         var r, s = {},
-          c = null,
-          d = null;
-        for (r in void 0 !== t && (c = "" + t), void 0 !== o.key && (c = "" + o.key), void 0 !== o.ref && (d = o.ref), o) a.call(o, r) && !l.hasOwnProperty(r) && (s[r] = o[r]);
+          d = null,
+          u = null;
+        for (r in void 0 !== t && (d = "" + t), void 0 !== o.key && (d = "" + o.key), void 0 !== o.ref && (u = o.ref), o) a.call(o, r) && !l.hasOwnProperty(r) && (s[r] = o[r]);
         if (e && e.defaultProps)
           for (r in o = e.defaultProps) void 0 === s[r] && (s[r] = o[r]);
         return {
           $$typeof: n,
           type: e,
-          key: c,
-          ref: d,
+          key: d,
+          ref: u,
           props: s,
           _owner: i.current
         }
       }
-      o.Fragment = s, o.jsx = c, o.jsxs = c
+      o.Fragment = s, o.jsx = d, o.jsxs = d
     },
     73855: (e, o, t) => {
       "use strict";
@@ -212,15 +212,15 @@ _global.SENTRY_RELEASE = {
       "use strict";
       t.r(o), t.d(o, {
         FormattedMessage: () => r.A,
-        POSIXLocales: () => u.FN,
+        POSIXLocales: () => c.FN,
         createDevLocaleHook: () => l.A,
         createIntl: () => n.E,
         defineMessages: () => s.YK,
-        englishLocale: () => u.Vm,
-        getCookieValueByName: () => d.h,
-        getLocale: () => c.A,
-        localeCookieHandler: () => d.A,
-        locales: () => u.Ay,
+        englishLocale: () => c.Vm,
+        getCookieValueByName: () => u.h,
+        getLocale: () => d.A,
+        localeCookieHandler: () => u.A,
+        locales: () => c.Ay,
         onLanguageChange: () => b.w,
         splitLocale: () => p.A,
         useIntl: () => a.A,
@@ -232,20 +232,20 @@ _global.SENTRY_RELEASE = {
         a = t(50365),
         i = t(42425),
         l = t(42121),
-        c = t(33586),
-        d = t(7308),
-        u = t(64479),
+        d = t(33586),
+        u = t(7308),
+        c = t(64479),
         p = t(22675),
-        m = t(53335),
-        f = {};
-      for (const e in m)["default", "onLanguageChange", "FormattedMessage", "POSIXLocales", "createDevLocaleHook", "createIntl", "defineMessages", "englishLocale", "getCookieValueByName", "getLocale", "localeCookieHandler", "locales", "splitLocale", "useIntl", "withIntl"].indexOf(e) < 0 && (f[e] = () => m[e]);
-      t.d(o, f);
+        f = t(53335),
+        m = {};
+      for (const e in f)["default", "onLanguageChange", "FormattedMessage", "POSIXLocales", "createDevLocaleHook", "createIntl", "defineMessages", "englishLocale", "getCookieValueByName", "getLocale", "localeCookieHandler", "locales", "splitLocale", "useIntl", "withIntl"].indexOf(e) < 0 && (m[e] = () => f[e]);
+      t.d(o, m);
       var b = t(63921)
     },
     42425: (e, o, t) => {
       "use strict";
       t.d(o, {
-        QY: () => u
+        QY: () => c
       });
       var r = t(62229),
         n = t(91080),
@@ -258,18 +258,18 @@ _global.SENTRY_RELEASE = {
         return (0, a.A)(o[1] ? o[0] : e, ["relativetimeformat", "pluralrules", "listformat"])
       }
 
-      function c(e, o) {
+      function d(e, o) {
         return e[o] ?? {}
       }
-      var d = t(73855);
+      var u = t(73855);
 
-      function u(e, o, t, a) {
-        return u => {
+      function c(e, o, t, a) {
+        return c => {
           const p = (0, r.useMemo)((() => {
             if (o) return function(e, o) {
               return function(e, o) {
                 const t = o ?? (0, s.A)()[0].iso ?? i(),
-                  [, r] = [l(t), c(e, t)];
+                  [, r] = [l(t), d(e, t)];
                 var n;
                 return {
                   rsLocale: t,
@@ -281,14 +281,14 @@ _global.SENTRY_RELEASE = {
               }(e, o)
             }(o, t)
           }), [t]);
-          return (0, d.jsx)(n.A, {
+          return (0, u.jsx)(n.A, {
             locale: p?.locale || i(),
             messages: {
               ...p?.messages
             },
             onError: a,
-            children: p && (0, d.jsx)(e, {
-              ...u
+            children: p && (0, u.jsx)(e, {
+              ...c
             })
           }, "intl-provider")
         }
@@ -333,10 +333,10 @@ _global.SENTRY_RELEASE = {
           return o?.split("=")[1]
         })(e), i = s.Vm;
         let l = i;
-        const c = `rockstarweb_lang.${o.cookieIdentifier}`,
-          d = (0, n.h)(c);
-        l = o.currentSite?.site === r.C.www ? s.Ay.find((e => e.subdomaincom === a)) || s.Ay.find((e => e.subdomaincom === t)) || i : s.Ay.find((e => e.iso === d)) || i;
-        const [u, p] = (0, n.A)(c, l.iso);
+        const d = `rockstarweb_lang.${o.cookieIdentifier}`,
+          u = (0, n.h)(d);
+        l = o.currentSite?.site === r.C.www ? s.Ay.find((e => e.subdomaincom === a)) || s.Ay.find((e => e.subdomaincom === t)) || i : s.Ay.find((e => e.iso === u)) || i;
+        const [c, p] = (0, n.A)(d, l.iso);
         return [l, p]
       }
     },
@@ -471,22 +471,22 @@ _global.SENTRY_RELEASE = {
           parent: a = ""
         } = e;
         const i = (0, r.A)(),
-          [l, c] = (0, s.A)(),
+          [l, d] = (0, s.A)(),
           {
-            subdomaincom: d,
-            iso: u
+            subdomaincom: u,
+            iso: c
           } = o,
           p = (e => {
             let o = location.pathname.replace(/^\/|\/$/g, "");
             const t = o.split("/");
             return n.Ay.map((e => e.subdomaincom)).includes(t[0]) && (o = t.slice(1).join("/")), i.currentSite?.site === r.C.www ? "en" === e ? `${window.location.origin}/${o}${location.search}` : `${window.location.origin}/${e}/${o}${location.search}` : `${window.location.origin}/${o}${location.search}`
-          })(d);
+          })(u);
         t?.({
           event: "cta_other",
           link_url: p,
-          text: d,
+          text: u,
           element_placement: a
-        }), c(u), window.location.href = p
+        }), d(c), window.location.href = p
       }
     },
     22675: (e, o, t) => {

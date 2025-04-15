@@ -34,14 +34,14 @@ _global.SENTRY_RELEASE = {
         h = a(17529),
         f = a.n(h),
         u = a(72162),
-        x = a.n(u),
-        b = a(82510),
-        v = a.n(b),
+        b = a.n(u),
+        x = a(82510),
+        v = a.n(x),
         A = a(90675),
         w = a.n(A),
         y = a(62852),
         k = {};
-      k.styleTagTransform = w(), k.setAttributes = x(), k.insert = f().bind(null, "head"), k.domAPI = p(), k.insertStyleElement = v(), m()(y.A, k);
+      k.styleTagTransform = w(), k.setAttributes = b(), k.insert = f().bind(null, "head"), k.domAPI = p(), k.insertStyleElement = v(), m()(y.A, k);
       const C = y.A && y.A.locals ? y.A.locals : void 0;
       var z = a(73855);
       const _ = Object.freeze({
@@ -61,8 +61,8 @@ _global.SENTRY_RELEASE = {
             data: p
           } = (0, l.Wx)(), {
             track: h
-          } = (0, l.h)(), f = (0, s.getCookieValueByName)("UAGC"), [u, x] = (0, t.useState)("1" === (b = f) ? _.PASSED : "0" === b ? _.FAILED : _.NOT_SUBMITTED);
-          var b;
+          } = (0, l.h)(), f = (0, s.getCookieValueByName)("UAGC"), [u, b] = (0, t.useState)("1" === (x = f) ? _.PASSED : "0" === x ? _.FAILED : _.NOT_SUBMITTED);
+          var x;
           const [v, A] = (0, t.useState)(), w = (0, t.createRef)(), y = (0, t.createRef)(), k = (0, t.createRef)(), {
             style: B
           } = c;
@@ -108,7 +108,7 @@ _global.SENTRY_RELEASE = {
                     text: "you may not view this content at this time"
                   });
                   const t = n ? "1" : "0";
-                  (0, s.setCookieValue)("UAGC", t), x(t)
+                  (0, s.setCookieValue)("UAGC", t), b(t)
                 }
               },
               "data-testid": "agegate-form",

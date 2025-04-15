@@ -36,9 +36,9 @@ _global.SENTRY_RELEASE = {
         f = e(90675),
         u = e.n(f),
         x = e(71040),
-        v = {};
-      v.styleTagTransform = u(), v.setAttributes = g(), v.insert = c().bind(null, "head"), v.domAPI = l(), v.insertStyleElement = h(), o()(x.A, v);
-      const b = x.A && x.A.locals ? x.A.locals : void 0;
+        b = {};
+      b.styleTagTransform = u(), b.setAttributes = g(), b.insert = c().bind(null, "head"), b.domAPI = l(), b.insertStyleElement = h(), o()(x.A, b);
+      const v = x.A && x.A.locals ? x.A.locals : void 0;
       var w = e(73855);
       const y = n => {
         let {
@@ -56,7 +56,7 @@ _global.SENTRY_RELEASE = {
           "data-testid": `${i}-gamecard`,
           to: e ?? o,
           target: "_self",
-          className: [b.fobLink, d ? b.wide : ""].join(" "),
+          className: [v.fobLink, d ? v.wide : ""].join(" "),
           reloadDocument: d,
           children: (0, w.jsx)(t.A, {
             title: a.title,

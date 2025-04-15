@@ -16,15 +16,15 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_gta_gen9 = self.webpackChunk_rockstargames_sites_gta_gen9 || []).push([
   [969], {
-    70969: (o, t, _) => {
-      _.r(t), _.d(t, {
-        Lightbox_Close_Button_Label: () => e,
+    70969: (o, t, e) => {
+      e.r(t), e.d(t, {
+        Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => l,
-        Lightbox_Dialog_Description: () => c,
-        Lightbox_Dialog_Title: () => f,
+        Lightbox_Dialog_Description: () => p,
+        Lightbox_Dialog_Title: () => r,
         Lightbox_Download_Button_Label: () => L,
-        Lightbox_Download_Button_Tooltip: () => h,
-        Lightbox_Open_Button_Label: () => r,
+        Lightbox_Download_Button_Tooltip: () => f,
+        Lightbox_Open_Button_Label: () => h,
         Lightbox_Reset_Zoom_Button_Label: () => d,
         Lightbox_Reset_Zoom_Button_Tooltip: () => g,
         Lightbox_Zoom_In_Button_Label: () => i,
@@ -33,9 +33,9 @@ _global.SENTRY_RELEASE = {
         Lightbox_Zoom_Out_Button__Tooltip: () => b,
         Lightbox_Zoom_Slider_Label: () => s,
         Lightbox_Zoom_Slider_Tooltip: () => u,
-        default: () => p
+        default: () => x
       });
-      var e = "關閉燈箱",
+      var _ = "關閉燈箱",
         l = "按 {shortcut}",
         i = "放大",
         n = "按 {shortcut}",
@@ -46,12 +46,12 @@ _global.SENTRY_RELEASE = {
         s = "縮放比例",
         u = "{zoom}%",
         L = "下載",
-        h = "下載",
-        r = "在燈箱中開啟圖片",
-        f = "圖片燈箱",
-        c = "圖片替代文字：{alt}",
-        p = {
-          Lightbox_Close_Button_Label: e,
+        f = "下載",
+        h = "在燈箱中開啟圖片",
+        r = "圖片燈箱",
+        p = "圖片替代文字：{alt}",
+        x = {
+          Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: l,
           Lightbox_Zoom_In_Button_Label: i,
           Lightbox_Zoom_In_Button_Tooltip: n,
@@ -62,10 +62,10 @@ _global.SENTRY_RELEASE = {
           Lightbox_Zoom_Slider_Label: s,
           Lightbox_Zoom_Slider_Tooltip: u,
           Lightbox_Download_Button_Label: L,
-          Lightbox_Download_Button_Tooltip: h,
-          Lightbox_Open_Button_Label: r,
-          Lightbox_Dialog_Title: f,
-          Lightbox_Dialog_Description: c
+          Lightbox_Download_Button_Tooltip: f,
+          Lightbox_Open_Button_Label: h,
+          Lightbox_Dialog_Title: r,
+          Lightbox_Dialog_Description: p
         }
     }
   }

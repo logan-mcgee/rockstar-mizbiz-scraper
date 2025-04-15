@@ -183,11 +183,11 @@ _global.SENTRY_RELEASE = {
         __classPrivateFieldGet: () => M,
         __classPrivateFieldIn: () => x,
         __classPrivateFieldSet: () => R,
-        __createBinding: () => v,
+        __createBinding: () => b,
         __decorate: () => l,
         __disposeResources: () => F,
         __esDecorate: () => s,
-        __exportStar: () => b,
+        __exportStar: () => v,
         __extends: () => o,
         __generator: () => y,
         __importDefault: () => N,
@@ -272,15 +272,15 @@ _global.SENTRY_RELEASE = {
             if (p) throw new TypeError("Cannot add initializers after decoration has completed");
             a.push(i(e || null))
           };
-          var v = (0, r[_])("accessor" === c ? {
+          var b = (0, r[_])("accessor" === c ? {
             get: f.get,
             set: f.set
           } : f[s], d);
           if ("accessor" === c) {
-            if (void 0 === v) continue;
-            if (null === v || "object" != typeof v) throw new TypeError("Object expected");
-            (l = i(v.get)) && (f.get = l), (l = i(v.set)) && (f.set = l), (l = i(v.init)) && o.unshift(l)
-          } else(l = i(v)) && ("field" === c ? o.unshift(l) : f[s] = l)
+            if (void 0 === b) continue;
+            if (null === b || "object" != typeof b) throw new TypeError("Object expected");
+            (l = i(b.get)) && (f.get = l), (l = i(b.set)) && (f.set = l), (l = i(b.init)) && o.unshift(l)
+          } else(l = i(b)) && ("field" === c ? o.unshift(l) : f[s] = l)
         }
         u && Object.defineProperty(u, n.name, f), p = !0
       }
@@ -405,7 +405,7 @@ _global.SENTRY_RELEASE = {
           }
         }
       }
-      var v = Object.create ? function(e, t, r, n) {
+      var b = Object.create ? function(e, t, r, n) {
         void 0 === n && (n = r);
         var o = Object.getOwnPropertyDescriptor(t, r);
         o && !("get" in o ? !t.__esModule : o.writable || o.configurable) || (o = {
@@ -418,8 +418,8 @@ _global.SENTRY_RELEASE = {
         void 0 === n && (n = r), e[n] = t[r]
       };
 
-      function b(e, t) {
-        for (var r in e) "default" === r || Object.prototype.hasOwnProperty.call(t, r) || v(t, e, r)
+      function v(e, t) {
+        for (var r in e) "default" === r || Object.prototype.hasOwnProperty.call(t, r) || b(t, e, r)
       }
 
       function h(e) {
@@ -592,7 +592,7 @@ _global.SENTRY_RELEASE = {
         if (e && e.__esModule) return e;
         var t = {};
         if (null != e)
-          for (var r = T(e), n = 0; n < r.length; n++) "default" !== r[n] && v(t, e, r[n]);
+          for (var r = T(e), n = 0; n < r.length; n++) "default" !== r[n] && b(t, e, r[n]);
         return E(t, e), t
       }
 
@@ -694,8 +694,8 @@ _global.SENTRY_RELEASE = {
         __metadata: _,
         __awaiter: d,
         __generator: y,
-        __createBinding: v,
-        __exportStar: b,
+        __createBinding: b,
+        __exportStar: v,
         __values: h,
         __read: w,
         __spread: m,

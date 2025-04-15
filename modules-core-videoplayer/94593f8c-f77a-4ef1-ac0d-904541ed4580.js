@@ -21,30 +21,30 @@ _global.SENTRY_RELEASE = {
         useGSAP: () => i
       });
       var t = n(62229),
-        a = n(13581),
-        o = n.n(a);
-      let r = "undefined" != typeof window ? t.useLayoutEffect : t.useEffect,
-        s = e => e && !Array.isArray(e) && "object" == typeof e,
-        l = [],
-        f = {},
-        c = o();
+        o = n(13581),
+        a = n.n(o);
+      let f = "undefined" != typeof window ? t.useLayoutEffect : t.useEffect,
+        r = e => e && !Array.isArray(e) && "object" == typeof e,
+        s = [],
+        l = {},
+        c = a();
       const i = function(e) {
-        let d = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : l,
-          n = f;
-        s(e) ? (n = e, e = null, d = "dependencies" in n ? n.dependencies : l) : s(d) && (n = d, d = "dependencies" in n ? n.dependencies : l);
+        let d = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : s,
+          n = l;
+        r(e) ? (n = e, e = null, d = "dependencies" in n ? n.dependencies : s) : r(d) && (n = d, d = "dependencies" in n ? n.dependencies : s);
         let {
-          scope: a,
-          revertOnUpdate: o
+          scope: o,
+          revertOnUpdate: a
         } = n, [i, u] = (0, t.useState)(!1);
         e && "function" != typeof e && console.warn("First parameter must be a function or config object");
-        const y = c.context((() => {}), a),
-          p = () => y.revert(),
-          b = d && d.length && !o;
-        return r((() => {
-          if (e && y.add(e, a), !b || !i) return p
-        }), d), b && r((() => (u(!0), p)), l), {
-          context: y,
-          contextSafe: e => y.add(null, e)
+        const b = c.context((() => {}), o),
+          y = () => b.revert(),
+          p = d && d.length && !a;
+        return f((() => {
+          if (e && b.add(e, o), !p || !i) return y
+        }), d), p && f((() => (u(!0), y)), s), {
+          context: b,
+          contextSafe: e => b.add(null, e)
         }
       };
       i.register = e => {

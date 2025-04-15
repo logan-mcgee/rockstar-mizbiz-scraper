@@ -25,7 +25,7 @@ _global.SENTRY_RELEASE = {
       });
       var r = t(62229);
 
-      function a(e, n, t) {
+      function o(e, n, t) {
         return n in e ? Object.defineProperty(e, n, {
           value: t,
           enumerable: !0,
@@ -34,7 +34,7 @@ _global.SENTRY_RELEASE = {
         }) : e[n] = t, e
       }
 
-      function o(e, n) {
+      function a(e, n) {
         var t = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
@@ -48,9 +48,9 @@ _global.SENTRY_RELEASE = {
       function i(e) {
         for (var n = 1; n < arguments.length; n++) {
           var t = null != arguments[n] ? arguments[n] : {};
-          n % 2 ? o(t, !0).forEach((function(n) {
-            a(e, n, t[n])
-          })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : o(t).forEach((function(n) {
+          n % 2 ? a(t, !0).forEach((function(n) {
+            o(e, n, t[n])
+          })) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : a(t).forEach((function(n) {
             Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
           }))
         }
@@ -61,23 +61,23 @@ _global.SENTRY_RELEASE = {
               unsupported: c = !("undefined" != typeof navigator && "connection" in navigator && "effectiveType" in navigator.connection),
               effectiveConnectionType: c ? e : navigator.connection.effectiveType
             },
-            a = function(e) {
+            o = function(e) {
               if (Array.isArray(e)) return e
             }(n = (0, r.useState)(t)) || function(e, n) {
               if (Symbol.iterator in Object(e) || "[object Arguments]" === Object.prototype.toString.call(e)) {
                 var t = [],
                   r = !0,
-                  a = !1,
-                  o = void 0;
+                  o = !1,
+                  a = void 0;
                 try {
                   for (var i, c = e[Symbol.iterator](); !(r = (i = c.next()).done) && (t.push(i.value), 2 !== t.length); r = !0);
                 } catch (e) {
-                  a = !0, o = e
+                  o = !0, a = e
                 } finally {
                   try {
                     r || null == c.return || c.return()
                   } finally {
-                    if (a) throw o
+                    if (o) throw a
                   }
                 }
                 return t
@@ -85,8 +85,8 @@ _global.SENTRY_RELEASE = {
             }(n) || function() {
               throw new TypeError("Invalid attempt to destructure non-iterable instance")
             }(),
-            o = a[0],
-            u = a[1];
+            a = o[0],
+            u = o[1];
           return (0, r.useEffect)((function() {
             if (!c) {
               var e = navigator.connection,
@@ -100,7 +100,7 @@ _global.SENTRY_RELEASE = {
                   e.removeEventListener("change", n)
                 }
             }
-          }), []), i({}, o, {
+          }), []), i({}, a, {
             setNetworkStatus: u
           })
         },

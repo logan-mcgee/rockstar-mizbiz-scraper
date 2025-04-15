@@ -131,8 +131,8 @@ _global.SENTRY_RELEASE = {
         d = r(44853),
         p = r(9005),
         y = r(38162),
-        m = r.n(y),
-        b = [],
+        b = r.n(y),
+        m = [],
         g = function(e, t, r) {
           void 0 === r && (r = {});
           var o = n.useRef(null),
@@ -140,7 +140,7 @@ _global.SENTRY_RELEASE = {
               onFirstUpdate: r.onFirstUpdate,
               placement: r.placement || "bottom",
               strategy: r.strategy || "absolute",
-              modifiers: r.modifiers || b
+              modifiers: r.modifiers || m
             },
             a = n.useState({
               styles: {
@@ -189,7 +189,7 @@ _global.SENTRY_RELEASE = {
                   enabled: !1
                 }])
               };
-              return m()(o.current, e) ? o.current || e : (o.current = e, e)
+              return b()(o.current, e) ? o.current || e : (o.current = e, e)
             }), [u.onFirstUpdate, u.placement, u.strategy, u.modifiers, s]),
             g = n.useRef();
           return l((function() {
@@ -227,10 +227,10 @@ _global.SENTRY_RELEASE = {
           d = e.onFirstUpdate,
           p = e.innerRef,
           y = e.children,
-          m = n.useContext(o),
-          b = n.useState(null),
-          _ = b[0],
-          E = b[1],
+          b = n.useContext(o),
+          m = n.useState(null),
+          _ = m[0],
+          E = m[1],
           S = n.useState(null),
           k = S[0],
           M = S[1];
@@ -251,7 +251,7 @@ _global.SENTRY_RELEASE = {
               }])
             }
           }), [r, a, d, c, k]),
-          P = g(l || m, _, O),
+          P = g(l || b, _, O),
           R = P.state,
           U = P.styles,
           x = P.forceUpdate,

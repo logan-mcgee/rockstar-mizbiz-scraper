@@ -109,8 +109,8 @@ _global.SENTRY_RELEASE = {
       p = Object.keys(p).reduce(((e, t) => (u.forEach((a => e[((e, t) => e + t.charAt(0).toUpperCase() + t.substring(1))(a, t)] = e[t])), e)), p);
       var c = /^(matrix|translate|scale|rotate|skew)/,
         f = /^(translate)/,
-        g = /^(rotate|skew)/,
-        b = (e, t) => s.is.num(e) && 0 !== e ? e + t : e,
+        b = /^(rotate|skew)/,
+        g = (e, t) => s.is.num(e) && 0 !== e ? e + t : e,
         m = (e, t) => s.is.arr(e) ? e.every((e => m(e, t))) : s.is.num(e) ? e === t : parseFloat(e) === t,
         h = class extends n.$s {
           constructor({
@@ -121,12 +121,12 @@ _global.SENTRY_RELEASE = {
           }) {
             const o = [],
               n = [];
-            (e || t || a) && (o.push([e || 0, t || 0, a || 0]), n.push((e => [`translate3d(${e.map((e=>b(e,"px"))).join(",")})`, m(e, 0)]))), (0, s.FI)(r, ((e, t) => {
+            (e || t || a) && (o.push([e || 0, t || 0, a || 0]), n.push((e => [`translate3d(${e.map((e=>g(e,"px"))).join(",")})`, m(e, 0)]))), (0, s.FI)(r, ((e, t) => {
               if ("transform" === t) o.push([e || ""]), n.push((e => [e, "" === e]));
               else if (c.test(t)) {
                 if (delete r[t], s.is.und(e)) return;
-                const a = f.test(t) ? "px" : g.test(t) ? "deg" : "";
-                o.push((0, s.$r)(e)), n.push("rotate3d" === t ? ([e, t, r, o]) => [`rotate3d(${e},${t},${r},${b(o,a)})`, m(o, 0)] : e => [`${t}(${e.map((e=>b(e,a))).join(",")})`, m(e, t.startsWith("scale") ? 1 : 0)])
+                const a = f.test(t) ? "px" : b.test(t) ? "deg" : "";
+                o.push((0, s.$r)(e)), n.push("rotate3d" === t ? ([e, t, r, o]) => [`rotate3d(${e},${t},${r},${g(o,a)})`, m(o, 0)] : e => [`${t}(${e.map((e=>g(e,a))).join(",")})`, m(e, t.startsWith("scale") ? 1 : 0)])
               }
             })), o.length && (r.transform = new y(o, n)), super(r)
           }
@@ -176,13 +176,13 @@ _global.SENTRY_RELEASE = {
               ...c
             } = t,
             f = Object.values(c),
-            g = Object.keys(c).map((t => a || e.hasAttribute(t) ? t : d[t] || (d[t] = t.replace(/([A-Z])/g, (e => "-" + e.toLowerCase())))));
+            b = Object.keys(c).map((t => a || e.hasAttribute(t) ? t : d[t] || (d[t] = t.replace(/([A-Z])/g, (e => "-" + e.toLowerCase())))));
           void 0 !== s && (e.textContent = s);
           for (const t in o)
             if (o.hasOwnProperty(t)) {
               const a = l(t, o[t]);
               i.test(t) ? e.style.setProperty(t, a) : e.style[t] = a
-            } g.forEach(((t, a) => {
+            } b.forEach(((t, a) => {
             e.setAttribute(t, f[a])
           })), void 0 !== r && (e.className = r), void 0 !== n && (e.scrollTop = n), void 0 !== p && (e.scrollLeft = p), void 0 !== u && e.setAttribute("viewBox", u)
         },

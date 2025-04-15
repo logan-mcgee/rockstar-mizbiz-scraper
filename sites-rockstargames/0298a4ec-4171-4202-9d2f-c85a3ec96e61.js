@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "510f1241-3cb6-4c99-9d71-3d4eec7adc88", e._sentryDebugIdIdentifier = "sentry-dbid-510f1241-3cb6-4c99-9d71-3d4eec7adc88")
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "0298a4ec-4171-4202-9d2f-c85a3ec96e61", e._sentryDebugIdIdentifier = "sentry-dbid-0298a4ec-4171-4202-9d2f-c85a3ec96e61")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -20,24 +20,28 @@ _global.SENTRY_RELEASE = {
       s.r(a), s.d(a, {
         default: () => o
       });
-      var d = s(62229),
-        t = s(9623),
+      var t = s(62229),
+        d = s(9623),
         n = s(2918);
       const o = () => {
         const {
-          data: e
+          data: e,
+          loggedIn: a
         } = (0, n.useRockstarUser)(), {
-          hasGtaPlus: a
+          hasGtaPlus: s,
+          accountSynced: o
         } = e ?? {}, {
-          setCharactersNeeded: s
-        } = (0, n.useRockstarUserState)(), o = (0, t.useNavigate)();
-        return (0, d.useLayoutEffect)((() => (s("gtao"), () => {
-          s(null)
-        })), []), (0, d.useEffect)((() => {
-          void 0 !== a && o(a ? "./benefits" : "./join", {
+          setCharactersNeeded: l
+        } = (0, n.useRockstarUserState)(), r = (0, d.useNavigate)();
+        return (0, t.useLayoutEffect)((() => (l("gtao"), () => {
+          l(null)
+        })), []), (0, t.useEffect)((() => {
+          !1 !== a ? o && r(s ? "./benefits" : "./join", {
+            replace: !0
+          }) : r("./join", {
             replace: !0
           })
-        }), [a, o]), null
+        }), [s, o, a, r]), null
       }
     }
   }

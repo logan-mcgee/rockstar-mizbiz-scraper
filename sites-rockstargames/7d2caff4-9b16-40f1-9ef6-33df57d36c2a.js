@@ -241,9 +241,9 @@ _global.SENTRY_RELEASE = {
         m = n(90675),
         v = n.n(m),
         g = n(84045),
-        y = {};
-      y.styleTagTransform = v(), y.setAttributes = f(), y.insert = d().bind(null, "head"), y.domAPI = c(), y.insertStyleElement = p(), o()(g.A, y);
-      const b = g.A && g.A.locals ? g.A.locals : void 0;
+        b = {};
+      b.styleTagTransform = v(), b.setAttributes = f(), b.insert = d().bind(null, "head"), b.domAPI = c(), b.insertStyleElement = p(), o()(g.A, b);
+      const y = g.A && g.A.locals ? g.A.locals : void 0;
       var h = n(73855);
       const w = () => {
         const [e] = (0, r.useSearchParams)(), t = e.get("src") ?? null;
@@ -252,9 +252,9 @@ _global.SENTRY_RELEASE = {
           hostname: n
         } = new URL(t);
         return ["media.rockstargames.com", "www.rockstargames.com"].includes(n) ? (0, h.jsx)("div", {
-          className: b.viewer,
+          className: y.viewer,
           children: (0, h.jsx)("div", {
-            className: b.img,
+            className: y.img,
             style: {
               background: `url(${t}) no-repeat center/contain`
             }

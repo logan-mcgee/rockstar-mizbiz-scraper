@@ -2,20 +2,20 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       t = (new Error).stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "b47890dd-55e0-47bb-a78b-01ad4fcd89c8", e._sentryDebugIdIdentifier = "sentry-dbid-b47890dd-55e0-47bb-a78b-01ad4fcd89c8")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "5abe4eb2-580c-49b1-98ee-f1a2a94abd95", e._sentryDebugIdIdentifier = "sentry-dbid-5abe4eb2-580c-49b1-98ee-f1a2a94abd95")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {
   release: "sentry-release-id",
-  packageName: "@rockstargames/modules-gtao-license-plate",
+  packageName: "@rockstargames/modules-core-videoplayer",
   dsn: "https://45716709f6ae4d08adc015d264f231ae@o432808.ingest.sentry.io/4504565542748160"
 };
 var _global = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
-}, (self.webpackChunk_rockstargames_modules_gtao_license_plate = self.webpackChunk_rockstargames_modules_gtao_license_plate || []).push([
-  [391, 2772], {
+}, (self.webpackChunk_rockstargames_modules_core_videoplayer = self.webpackChunk_rockstargames_modules_core_videoplayer || []).push([
+  [2772], {
     2772: (e, t, a) => {
       a.r(t), a.d(t, {
         GtmProvider: () => u,
@@ -201,7 +201,7 @@ _global.SENTRY_RELEASE = {
       var V = a(17531),
         A = a.n(V);
       var N = a(37240),
-        T = a(35422);
+        T = a(16425);
       const P = e => {
           let {
             privateToken: t
@@ -210,32 +210,25 @@ _global.SENTRY_RELEASE = {
             charactersNeeded: a,
             crewsNeeded: n,
             currentCharId: c
-          } = M(), o = (0, s.useRockstarToken)(), [i, u] = (0, r.useState)(), [l] = (0, s.useRockstarTokenReactive)(), d = (0, s.useRockstarTokenPing)(), [p, f] = (0, r.useState)(), [m, k] = (0, r.useState)(!1), [g, h] = (0, r.useState)(), v = void 0 === p, [y, b] = (0, r.useState)(1);
+          } = M(), o = (0, s.useRockstarToken)(), [i, u] = (0, r.useState)(), [l] = (0, s.useRockstarTokenReactive)(), d = (0, s.useRockstarTokenPing)(), [p, f] = (0, r.useState)(), [m, k] = (0, r.useState)(!1), g = void 0 === p, [h, v] = (0, r.useState)(1);
           return (0, r.useEffect)((() => {
-            a && (u({
+            "gtao" !== a || i?.characters?.gtao || (u({
               ...i,
               accountSynced: !1
-            }), b((e => e + 1)))
-          }), [a]), (0, r.useEffect)((() => {
-            n && (u({
+            }), v((e => e + 1)))
+          }), [a, i?.characters?.gtao]), (0, r.useEffect)((() => {
+            n && !i?.crews && (u({
               ...i,
               accountSynced: !1
-            }), b((e => e + 1)))
-          }), [n]), (0, r.useEffect)((() => {
-            0 === y && u({
+            }), v((e => e + 1)))
+          }), [n, i?.crews]), (0, r.useEffect)((() => {
+            0 === h && u({
               ...i,
               accountSynced: !0
             })
-          }), [y]), (0, r.useEffect)((() => {
+          }), [h]), (0, r.useEffect)((() => {
             t && l(t)
           }), [t]), (0, r.useEffect)((() => {
-            a && h("1" === i?.characters?.[a]?.[c]?.stats?.overview?.hasGtaPlus?.value)
-          }), [a, c, i]), (0, r.useEffect)((() => {
-            u({
-              ...i,
-              hasGtaPlus: g
-            })
-          }), [g]), (0, r.useEffect)((() => {
             "" !== o || d()
           }), [o]), (0, r.useEffect)((() => {
             if ("" === o) return;
@@ -329,7 +322,7 @@ _global.SENTRY_RELEASE = {
                 u({
                   ...i,
                   crews: e
-                }), b((e => e - 1))
+                }), v((e => e - 1))
               }
             })()
           }), [i?.nickname, n, p]), (0, r.useEffect)((() => {
@@ -351,7 +344,7 @@ _global.SENTRY_RELEASE = {
               u({
                 ...i,
                 gamesPlayed: e
-              }), b((e => e - 1))
+              }), v((e => e - 1))
             })()
           }), [i?.nickname, p]), (0, r.useEffect)((() => {
             (async () => {
@@ -432,8 +425,9 @@ _global.SENTRY_RELEASE = {
                     ...i.characters,
                     gtao: e
                   },
-                  linkedAccounts: t
-                }), b((e => e - 1))
+                  linkedAccounts: t,
+                  hasGtaPlus: "1" === e?.[c]?.stats?.overview?.hasGtaPlus?.value
+                }), v((e => e - 1))
               }
             })()
           }), [a, i?.nickname, p]), (0, r.useEffect)((() => {
@@ -441,7 +435,7 @@ _global.SENTRY_RELEASE = {
           }), [JSON.stringify(i)]), {
             data: i,
             loggedIn: p,
-            loading: v
+            loading: g
           }
         },
         U = {},

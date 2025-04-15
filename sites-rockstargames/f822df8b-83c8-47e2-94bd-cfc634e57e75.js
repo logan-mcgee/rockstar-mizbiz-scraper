@@ -1,8 +1,8 @@
 ! function() {
   try {
     var n = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      a = (new Error).stack;
-    a && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[a] = "f822df8b-83c8-47e2-94bd-cfc634e57e75", n._sentryDebugIdIdentifier = "sentry-dbid-f822df8b-83c8-47e2-94bd-cfc634e57e75")
+      e = (new Error).stack;
+    e && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[e] = "f822df8b-83c8-47e2-94bd-cfc634e57e75", n._sentryDebugIdIdentifier = "sentry-dbid-f822df8b-83c8-47e2-94bd-cfc634e57e75")
   } catch (n) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -16,58 +16,58 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [8386], {
-    29140: (n, a, e) => {
-      e.r(a), e.d(a, {
+    29140: (n, e, a) => {
+      a.r(e), a.d(e, {
         default: () => D
       });
-      var t = e(62229),
-        i = e(81788),
-        r = e(95966),
-        o = e(23066),
-        d = e(87893),
-        l = e(82943),
-        s = e.n(l),
-        c = e(34365),
-        g = e(39006),
-        m = e(51451),
-        h = e(53178),
-        p = e.n(h),
-        f = e(27835),
-        v = e.n(f),
-        u = e(17529),
-        b = e.n(u),
-        x = e(72162),
-        w = e.n(x),
-        y = e(82510),
-        k = e.n(y),
-        A = e(90675),
-        z = e.n(A),
-        C = e(8955),
+      var t = a(62229),
+        i = a(81788),
+        r = a(95966),
+        o = a(23066),
+        d = a(87893),
+        l = a(82943),
+        s = a.n(l),
+        c = a(34365),
+        g = a(39006),
+        m = a(51451),
+        h = a(53178),
+        p = a.n(h),
+        f = a(27835),
+        v = a.n(f),
+        u = a(17529),
+        b = a.n(u),
+        x = a(72162),
+        w = a.n(x),
+        y = a(82510),
+        k = a.n(y),
+        A = a(90675),
+        z = a.n(A),
+        C = a(8955),
         B = {};
       B.styleTagTransform = z(), B.setAttributes = w(), B.insert = b().bind(null, "head"), B.domAPI = v(), B.insertStyleElement = k(), p()(C.A, B);
       const _ = C.A && C.A.locals ? C.A.locals : void 0;
-      var I = e(52542),
-        M = e(73855);
+      var I = a(52542),
+        M = a(73855);
       const D = (0, i.withIntl)((() => {
         const n = (0, i.useIntl)(),
-          a = (0, r.useLocale)(),
-          [e, l] = ((0, r.useQueryParams)(), (0, t.useState)({})),
+          e = (0, r.useLocale)(),
+          [a, l] = ((0, r.useQueryParams)(), (0, t.useState)({})),
           {
             data: h,
             loading: p
           } = (0, r.useQuery)(s(), {
-            variables: e,
-            skip: !Object.entries(e).length,
+            variables: a,
+            skip: !Object.entries(a).length,
             autoSetLoading: !0
           });
         (0, t.useEffect)((() => {
           l({
             jsonType: "community-guidelines",
-            jsonLocale: a,
+            jsonLocale: e,
             metaUrl: "/community-guidelines",
-            locale: a
+            locale: e
           })
-        }), [a]);
+        }), [e]);
         const {
           content: f
         } = h?.companyInfo ?? "", v = h?.meta ?? "";
@@ -105,14 +105,14 @@ _global.SENTRY_RELEASE = {
         })
       }), I)
     },
-    8955: (n, a, e) => {
-      e.d(a, {
+    8955: (n, e, a) => {
+      a.d(e, {
         A: () => d
       });
-      var t = e(42587),
-        i = e.n(t),
-        r = e(15081),
-        o = e.n(r)()(i());
+      var t = a(42587),
+        i = a.n(t),
+        r = a(15081),
+        o = a.n(r)()(i());
       o.push([n.id, ".rockstargames-sites-rockstargamesaeff78337b98da14e23683567d6039f6{align-items:center;background:var(--white-15);border:none;border-radius:100px;color:var(--white-100);cursor:pointer;display:flex;font-family:var(--font-family-body);font-size:20px;font-style:normal;font-weight:700;justify-content:center;line-height:var(--rem-125);min-width:var(--rem-6);padding:var(--padding-xs) var(--padding-sm);text-align:center;transition:background-color .3s ease-in-out}.rockstargames-sites-rockstargamesaeff78337b98da14e23683567d6039f6 img{height:var(--nav-icon-size);margin-left:var(--grid-gap-xs);transition:filter .3s ease-in-out;width:var(--nav-icon-size)}.rockstargames-sites-rockstargamesaeff78337b98da14e23683567d6039f6:focus,.rockstargames-sites-rockstargamesaeff78337b98da14e23683567d6039f6:hover{background-color:var(--white-40);outline:none}.rockstargames-sites-rockstargamesaeff78337b98da14e23683567d6039f6.rockstargames-sites-rockstargamesc818139dcdad8ac2a06111f2d05d9fe0{background:var(--white-100);color:var(--black-200)}.rockstargames-sites-rockstargamesaeff78337b98da14e23683567d6039f6.rockstargames-sites-rockstargamesc818139dcdad8ac2a06111f2d05d9fe0 img{filter:invert()}.rockstargames-sites-rockstargamesa2528e5e73ca386e983044e5a393ede0{content:var(--community-guidelines-img-desktop);max-width:640px}@media (max-width:767px){.rockstargames-sites-rockstargamesa2528e5e73ca386e983044e5a393ede0{content:var(--community-guidelines-img-mobile)}}", "", {
         version: 3,
         sources: ["webpack://./../../buildtime/legacy-design-system/less/gen9-mixins.less", "webpack://./src/pages/Safety/CommunityGuidelines/index.less", "webpack://./../../buildtime/legacy-design-system/less/mixins.less"],

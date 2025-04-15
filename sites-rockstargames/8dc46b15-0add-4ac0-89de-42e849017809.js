@@ -25,16 +25,16 @@ _global.SENTRY_RELEASE = {
         d = n(27835),
         r = n.n(d),
         o = n(17529),
-        c = n.n(o),
-        i = n(72162),
-        g = n.n(i),
+        i = n.n(o),
+        c = n(72162),
+        g = n.n(c),
         l = n(82510),
         A = n.n(l),
         m = n(90675),
         b = n.n(m),
         f = n(120),
         p = {};
-      p.styleTagTransform = b(), p.setAttributes = g(), p.insert = c().bind(null, "head"), p.domAPI = r(), p.insertStyleElement = A(), t()(f.A, p);
+      p.styleTagTransform = b(), p.setAttributes = g(), p.insert = i().bind(null, "head"), p.domAPI = r(), p.insertStyleElement = A(), t()(f.A, p);
       const u = f.A && f.A.locals ? f.A.locals : void 0;
       var k = n(73855);
       const h = () => (0, k.jsxs)("div", {
@@ -55,10 +55,10 @@ _global.SENTRY_RELEASE = {
         d = n(15081),
         r = n.n(d),
         o = n(79908),
-        c = n.n(o),
-        i = new URL(n(37139), n.b),
+        i = n.n(o),
+        c = new URL(n(37139), n.b),
         g = r()(t()),
-        l = c()(i);
+        l = i()(c);
       g.push([e.id, `.rockstargames-sites-rockstargamesde90457c42504bea6b08059e335add00{grid-gap:2rem;align-content:center;display:grid;justify-items:center;min-height:calc(100vh - var(--header-height));padding:1rem;text-align:center}.rockstargames-sites-rockstargamesf42266067086be596ce3210aca0c54eb{background:url(${l}) no-repeat 50%/contain;width:245px}.rockstargames-sites-rockstargamesf42266067086be596ce3210aca0c54eb:after{content:"";display:block;padding-top:92.1875%}`, "", {
         version: 3,
         sources: ["webpack://./src/pages/StandardDeviation/index.less"],

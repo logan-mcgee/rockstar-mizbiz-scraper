@@ -1,8 +1,8 @@
 ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "01578521-8c5f-43f4-990f-5f4dbd64a5a0", e._sentryDebugIdIdentifier = "sentry-dbid-01578521-8c5f-43f4-990f-5f4dbd64a5a0")
+      t = (new Error).stack;
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "01578521-8c5f-43f4-990f-5f4dbd64a5a0", e._sentryDebugIdIdentifier = "sentry-dbid-01578521-8c5f-43f4-990f-5f4dbd64a5a0")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -16,9 +16,9 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_newswire_article = self.webpackChunk_rockstargames_modules_core_newswire_article || []).push([
   [7539], {
-    17539: (e, a, t) => {
+    17539: (e, t, a) => {
       "use strict";
-      t.d(a, {
+      a.d(t, {
         F2: () => oe,
         bY: () => se,
         Y4: () => ce,
@@ -39,7 +39,7 @@ _global.SENTRY_RELEASE = {
         Rv: () => Me,
         z9: () => De
       });
-      var n = t(42868);
+      var n = a(42868);
       const l = {
           alt: "Images Need Alt Text",
           badge: null,
@@ -49,11 +49,11 @@ _global.SENTRY_RELEASE = {
         },
         i = e => {
           let {
-            parent: a = null
+            parent: t = null
           } = e;
           return {
             label: "Aria Label",
-            name: a ? `${a}.ariaLabel` : "ariaLabel",
+            name: t ? `${t}.ariaLabel` : "ariaLabel",
             component: "text",
             description: "Label text that is used for screen readers"
           }
@@ -90,8 +90,8 @@ _global.SENTRY_RELEASE = {
             initialValues: "url()",
             format: e => e ? -1 !== e.indexOf("url(") ? `url(${e.split("url(")[1].split(")")[0]})` : `url(${e})` : "url()"
           };
-          let a;
-          return a = "grid" === (arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {
+          let t;
+          return t = "grid" === (arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {
             parent: "",
             post: null,
             filter: null
@@ -111,7 +111,7 @@ _global.SENTRY_RELEASE = {
             name: "backgroundPosition",
             label: "Background Position",
             component: "text"
-          }], a
+          }], t
         },
         s = function() {
           return "grid" === (arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {
@@ -130,7 +130,7 @@ _global.SENTRY_RELEASE = {
             options: ["", "repeat", "no-repeat", "repeat-y", "repeat-x", "initial", "inherit"]
           }]
         };
-      var c = t(73855);
+      var c = a(73855);
       const d = function() {
           let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "Label";
           return {
@@ -584,13 +584,13 @@ _global.SENTRY_RELEASE = {
           description: "Set the image min-height",
           component: "text"
         },
-        ae = {
+        te = {
           label: "Image Max-Height",
           name: "max-height",
           description: "Set the image max-height",
           component: "text"
         },
-        te = {
+        ae = {
           label: "Aspect Ratio",
           name: "--aspect-ratio",
           description: "Set the aspect ratio of the image or container",
@@ -673,9 +673,9 @@ _global.SENTRY_RELEASE = {
         },
         le = e => {
           let {
-            filter: a = null
+            filter: t = null
           } = e;
-          const t = [{
+          const a = [{
               ...d("Position")
             }, {
               ...g
@@ -741,7 +741,7 @@ _global.SENTRY_RELEASE = {
                 value: "var(--image-rounding-static-xs)"
               }]
             }, {
-              ...ne(a)
+              ...ne(t)
             }, {
               ...m("Box Model")
             }],
@@ -771,11 +771,11 @@ _global.SENTRY_RELEASE = {
             i = [{
               ...d("Background..")
             }, ...o({
-              filter: a
+              filter: t
             }), ...r({
-              filter: a
+              filter: t
             }), ...s({
-              filter: a
+              filter: t
             }), {
               ...m("Background")
             }],
@@ -817,7 +817,7 @@ _global.SENTRY_RELEASE = {
             }, {
               ...K
             }, {
-              ...te
+              ...ae
             }, {
               ...q
             }, {
@@ -829,38 +829,38 @@ _global.SENTRY_RELEASE = {
             }, {
               ...ee
             }, {
-              ...ae
+              ...te
             }, {
               ...m("Image")
             }],
-            u = [...n, ...t, ...l, ...i];
-          return "grid" === a && u.push(...c), ("image" === a || "layeredImage" === a || a?.startsWith("parallax")) && u.push(...p), "gridItem" === a && u.push({
+            u = [...n, ...a, ...l, ...i];
+          return "grid" === t && u.push(...c), ("image" === t || "layeredImage" === t || t?.startsWith("parallax")) && u.push(...p), "gridItem" === t && u.push({
             ...D
-          }), "title" === a && (u.push(W), u.push(X)), u
+          }), "title" === t && (u.push(W), u.push(X)), u
         },
         ie = e => {
           let {
-            filter: a = null,
-            name: t = "style",
+            filter: t = null,
+            name: a = "style",
             label: n = "CSS Variables"
           } = e;
           return {
             label: n,
-            name: t,
+            name: a,
             description: "Override CSS Variables",
             component: "group",
             fields: [...le({
-              filter: a
+              filter: t
             })]
           }
         },
         oe = e => {
           let {
-            parent: a = null,
-            filter: t = null
+            parent: t = null,
+            filter: a = null
           } = e;
           return {
-            name: a ? `${a}.attributes` : "attributes",
+            name: t ? `${t}.attributes` : "attributes",
             label: "Attributes",
             component: "group",
             fields: [{
@@ -885,16 +885,16 @@ _global.SENTRY_RELEASE = {
               label: "Hide on Desktop",
               component: "toggle"
             }, i({
-              parent: a
+              parent: t
             }), ie({
-              filter: t
+              filter: a
             })]
           }
         };
-      var re = t(19544);
+      var re = a(19544);
       const se = e => {
           let {
-            filter: a = null
+            filter: t = null
           } = e;
           return {
             name: "className",
@@ -956,12 +956,12 @@ _global.SENTRY_RELEASE = {
         },
         ge = e => {
           let {
-            name: a,
-            label: t = a
+            name: t,
+            label: a = t
           } = e;
           return {
-            name: a,
-            label: t,
+            name: t,
+            label: a,
             component: "group",
             description: "If responsive, only the Mobile Source is needed.",
             fields: [{
@@ -1042,8 +1042,8 @@ _global.SENTRY_RELEASE = {
         }],
         fe = e => {
           let {
-            game: a = null,
-            label: t = "Image Configuration"
+            game: t = null,
+            label: a = "Image Configuration"
           } = e;
           const n = [De({
             name: "alt",
@@ -1104,7 +1104,7 @@ _global.SENTRY_RELEASE = {
             label: "Translation Key",
             description: "Only used for images that were marked as translatable after they were created. This value must begin with `key_` and MUST BE UNIQUE."
           })];
-          return "rdo" !== a && "rdr2" !== a || n.push({
+          return "rdo" !== t && "rdr2" !== t || n.push({
             name: "role",
             label: "Role",
             description: "Add a role icon.",
@@ -1146,9 +1146,9 @@ _global.SENTRY_RELEASE = {
             label: "Background Repeat",
             component: "select",
             options: ["", "repeat", "no-repeat", "repeat-y", "repeat-x", "initial", "inherit"]
-          }), "Background Image" === t && n.push(...be), {
+          }), "Background Image" === a && n.push(...be), {
             name: "image",
-            label: t,
+            label: a,
             component: "group",
             fields: n,
             defaultItem: () => _e(l),
@@ -1157,8 +1157,8 @@ _global.SENTRY_RELEASE = {
             })
           }
         };
-      t(81788);
-      var Ae = t(50657);
+      a(81788);
+      var Ae = a(50657);
       (0, Ae.cG)("Background Image Gradient"), (0, Ae.ri)("Background Image Gradient"), (0, Ae.cG)("Background Image Gradient");
       const he = () => ({
           name: "impressionTracking",
@@ -1183,18 +1183,18 @@ _global.SENTRY_RELEASE = {
         }),
         ve = e => {
           let {
-            game: a = null,
-            filter: t = null
+            game: t = null,
+            filter: a = null
           } = e;
           const n = [De({
             label: "Title",
             name: "title",
             component: "text"
           }), fe({
-            game: a,
+            game: t,
             label: "Image Sources"
           })];
-          return "discounts" !== t && n.push(De({
+          return "discounts" !== a && n.push(De({
             label: "Description",
             name: "description",
             component: "html"
@@ -1210,9 +1210,9 @@ _global.SENTRY_RELEASE = {
             fields: [...n, se({
               filter: "grid"
             }), me(), we({
-              filter: t,
+              filter: a,
               fields: n,
-              game: a
+              game: t
             }), he(), de()],
             defaultItem: () => _e({
               image: _e(l)
@@ -1224,8 +1224,8 @@ _global.SENTRY_RELEASE = {
         },
         xe = e => {
           let {
-            filter: a = null,
-            game: t = null,
+            filter: t = null,
+            game: a = null,
             label: n = null,
             name: l = "items"
           } = e;
@@ -1234,8 +1234,8 @@ _global.SENTRY_RELEASE = {
             label: n ?? `Edit ${l}`,
             component: "blocks",
             templates: [ve({
-              filter: a,
-              game: t
+              filter: t,
+              game: a
             })],
             defaultItem: () => _e(),
             itemProps: e => Me(e, {})
@@ -1252,7 +1252,7 @@ _global.SENTRY_RELEASE = {
         }),
         ye = e => {
           let {
-            fields: a = []
+            fields: t = []
           } = e;
           return {
             label: "Media Query",
@@ -1264,7 +1264,7 @@ _global.SENTRY_RELEASE = {
               name: "mediaQueryString",
               description: "ex. (max-width: 600px)",
               component: "text"
-            }, ...a],
+            }, ...t],
             defaultItem: () => _e(),
             itemProps: e => Me(e, {
               label: `Media Query: ${e?.mediaQueryString??"New"}`
@@ -1273,8 +1273,8 @@ _global.SENTRY_RELEASE = {
         },
         we = e => {
           let {
-            fields: a = [],
-            filter: t = null
+            fields: t = [],
+            filter: a = null
           } = e;
           return {
             label: "Media Queries",
@@ -1282,8 +1282,8 @@ _global.SENTRY_RELEASE = {
             description: "Override styles based on screen size",
             component: "blocks",
             templates: [ye({
-              filter: t,
-              fields: a
+              filter: a,
+              fields: t
             })]
           }
         },
@@ -1293,13 +1293,13 @@ _global.SENTRY_RELEASE = {
           component: "text",
           description: "Block label for internal use only"
         });
-      t(95966), t(61398), t(92580);
+      a(95966), a(61398), a(92580);
       const Se = () => De({
         label: "Text",
         name: Be,
         component: "html"
       });
-      t(62229), t(10894);
+      a(62229), a(10894);
       const Be = "content",
         Ie = "_memoq",
         _e = function() {
@@ -1319,34 +1319,34 @@ _global.SENTRY_RELEASE = {
           name: `${Ie}.${e.name}`
         })
     },
-    92580: (e, a, t) => {
+    92580: (e, t, a) => {
       "use strict";
-      t.d(a, {
+      a.d(t, {
         A: () => k
       });
-      var n = t(62229),
-        l = t(14636),
-        i = t(53178),
-        o = t.n(i),
-        r = t(27835),
-        s = t.n(r),
-        c = t(17529),
-        d = t.n(c),
-        m = t(72162),
-        p = t.n(m),
-        u = t(82510),
-        g = t.n(u),
-        b = t(90675),
-        f = t.n(b),
-        A = t(36877),
+      var n = a(62229),
+        l = a(14636),
+        i = a(53178),
+        o = a.n(i),
+        r = a(27835),
+        s = a.n(r),
+        c = a(17529),
+        d = a.n(c),
+        m = a(72162),
+        p = a.n(m),
+        u = a(82510),
+        g = a.n(u),
+        b = a(90675),
+        f = a.n(b),
+        A = a(36877),
         h = {};
       h.styleTagTransform = f(), h.setAttributes = p(), h.insert = d().bind(null, "head"), h.domAPI = s(), h.insertStyleElement = g(), o()(A.A, h);
       const v = A.A && A.A.locals ? A.A.locals : void 0;
-      var x = t(73855);
+      var x = a(73855);
       const k = e => {
         let {
-          style: a,
-          width: t,
+          style: t,
+          width: a,
           height: i,
           resizable: o,
           field: r,
@@ -1360,7 +1360,7 @@ _global.SENTRY_RELEASE = {
         } = e;
         const b = () => o ? (0, x.jsx)(l.c, {
           defaultSize: {
-            width: t || "100%",
+            width: a || "100%",
             height: i || "500px"
           },
           style: {
@@ -1370,7 +1370,7 @@ _global.SENTRY_RELEASE = {
         }) : g;
         return (0, x.jsxs)("div", {
           className: `${v.FieldWrapper_sc_custom} FieldWrapper-sc-custom jpQZXK`,
-          style: a,
+          style: t,
           children: [(0, x.jsxs)("label", {
             className: `${v.FieldLabel_sc_custom} FieldLabel-sc-custom dzLxXV`,
             htmlFor: d ?? r?.name,
@@ -1385,18 +1385,18 @@ _global.SENTRY_RELEASE = {
         })
       }
     },
-    10894: (e, a, t) => {
+    10894: (e, t, a) => {
       "use strict";
-      t(73855)
+      a(73855)
     },
-    50657: (e, a, t) => {
+    50657: (e, t, a) => {
       "use strict";
-      t.d(a, {
+      a.d(t, {
         cG: () => l,
         cm: () => i.A,
         ri: () => o
       });
-      var n = t(73855);
+      var n = a(73855);
       const l = function() {
         let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "";
         return {
@@ -1405,8 +1405,8 @@ _global.SENTRY_RELEASE = {
           component: () => (0, n.jsx)("hr", {})
         }
       };
-      var i = t(92580);
-      t(10894);
+      var i = a(92580);
+      a(10894);
       const o = function() {
         let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "Label";
         return {
@@ -1422,18 +1422,18 @@ _global.SENTRY_RELEASE = {
         }
       }
     },
-    36877: (e, a, t) => {
+    36877: (e, t, a) => {
       "use strict";
-      t.d(a, {
+      a.d(t, {
         A: () => p
       });
-      var n = t(42587),
-        l = t.n(n),
-        i = t(15081),
-        o = t.n(i),
-        r = t(79908),
-        s = t.n(r),
-        c = new URL(t(75958), t.b),
+      var n = a(42587),
+        l = a.n(n),
+        i = a(15081),
+        o = a.n(i),
+        r = a(79908),
+        s = a.n(r),
+        c = new URL(a(75958), a.b),
         d = o()(l()),
         m = s()(c);
       d.push([e.id, `.rockstargames-modules-core-newswire-articlee8a5daf12553885a40529a38c92c1d67{margin-bottom:var(--tina-padding-big,20px);position:relative}.rockstargames-modules-core-newswire-articlee8a5daf12553885a40529a38c92c1d67,.rockstargames-modules-core-newswire-articlee8a5daf12553885a40529a38c92c1d67 *{box-sizing:border-box;font-family:Inter,sans-serif}.rockstargames-modules-core-newswire-articlee8a5daf12553885a40529a38c92c1d67 .rockstargames-modules-core-newswire-articleceac2b2784e621f05ce51dade558df8d{all:unset;color:var(--tina-color-grey-8,#433e52);display:block;font-family:Inter,sans-serif;font-size:var(--tina-font-size-1,13px);font-weight:600;-webkit-letter-spacing:.01em;-moz-letter-spacing:.01em;-ms-letter-spacing:.01em;letter-spacing:.01em;line-height:1.35;margin-bottom:8px;overflow:hidden;text-overflow:ellipsis;width:100%}.rockstargames-modules-core-newswire-articlee8a5daf12553885a40529a38c92c1d67 .rockstargames-modules-core-newswire-articlea0b2c6a5b66b849b487834caa1f6e3c8{all:unset;color:var(--tina-color-grey-6,#716c7f);display:block;font-family:Inter,sans-serif;font-size:var(--tina-font-size-0,12px);font-style:italic;font-weight:lighter;margin:0;padding-top:4px;white-space:normal}.rockstargames-modules-core-newswire-articlee8a5daf12553885a40529a38c92c1d67 input{box-shadow:0 0 0 2px transparent}.rockstargames-modules-core-newswire-articlee8a5daf12553885a40529a38c92c1d67 input,.rockstargames-modules-core-newswire-articlee8a5daf12553885a40529a38c92c1d67 select{background:var(--tina-color-grey-0,#fff);background-color:var(--tina-color-grey-0,#fff);border:1px solid var(--tina-color-grey-2,#edecf3);border-radius:var(--tina-radius-small,5px);font-size:var(--tina-font-size-2,15px);line-height:1.35;margin:0;outline:none;padding:var(--tina-padding-small,12px);position:relative;transition:all 85ms ease-out;width:100%}.rockstargames-modules-core-newswire-articlee8a5daf12553885a40529a38c92c1d67 select{-webkit-appearance:none;-moz-appearance:none;appearance:none;background-image:url(${m});background-position:right .7em top 50%;background-repeat:no-repeat;background-size:.65em auto;display:block;font-family:inherit;max-width:100%}.rockstargames-modules-core-newswire-articlee8a5daf12553885a40529a38c92c1d67 .rockstargames-modules-core-newswire-articled9b75ea1bc84f8562bd9c7c730ce7317,.rockstargames-modules-core-newswire-articlee8a5daf12553885a40529a38c92c1d67 .rockstargames-modules-core-newswire-articled84706d08967f65d5d2384427474feb5{color:var(--tina-color-error,#ec4815)}[class^=BlockMenuList-] button,button[class^=CreateButton-]{color:#000}`, "", {
@@ -1453,7 +1453,7 @@ _global.SENTRY_RELEASE = {
       const p = d
     },
     61398: e => {
-      var a = {
+      var t = {
         kind: "Document",
         definitions: [{
           kind: "OperationDefinition",
@@ -1566,21 +1566,21 @@ _global.SENTRY_RELEASE = {
         }
       };
 
-      function t(e, a) {
-        if ("FragmentSpread" === e.kind) a.add(e.name.value);
+      function a(e, t) {
+        if ("FragmentSpread" === e.kind) t.add(e.name.value);
         else if ("VariableDefinition" === e.kind) {
           var n = e.type;
-          "NamedType" === n.kind && a.add(n.name.value)
+          "NamedType" === n.kind && t.add(n.name.value)
         }
         e.selectionSet && e.selectionSet.selections.forEach((function(e) {
-          t(e, a)
+          a(e, t)
         })), e.variableDefinitions && e.variableDefinitions.forEach((function(e) {
-          t(e, a)
+          a(e, t)
         })), e.definitions && e.definitions.forEach((function(e) {
-          t(e, a)
+          a(e, t)
         }))
       }
-      a.loc.source = {
+      t.loc.source = {
         body: "query TagList($locale: String!, $context: Int) {\n    tagList(locale: $locale, context: $context) {\n        name\n        id\n    }\n}\n",
         name: "GraphQL request",
         locationOffset: {
@@ -1590,24 +1590,24 @@ _global.SENTRY_RELEASE = {
       };
       var n = {};
 
-      function l(e, a) {
-        for (var t = 0; t < e.definitions.length; t++) {
-          var n = e.definitions[t];
-          if (n.name && n.name.value == a) return n
+      function l(e, t) {
+        for (var a = 0; a < e.definitions.length; a++) {
+          var n = e.definitions[a];
+          if (n.name && n.name.value == t) return n
         }
       }
-      a.definitions.forEach((function(e) {
+      t.definitions.forEach((function(e) {
         if (e.name) {
-          var a = new Set;
-          t(e, a), n[e.name.value] = a
+          var t = new Set;
+          a(e, t), n[e.name.value] = t
         }
-      })), e.exports = a, e.exports.TagList = function(e, a) {
-        var t = {
+      })), e.exports = t, e.exports.TagList = function(e, t) {
+        var a = {
           kind: e.kind,
-          definitions: [l(e, a)]
+          definitions: [l(e, t)]
         };
-        e.hasOwnProperty("loc") && (t.loc = e.loc);
-        var i = n[a] || new Set,
+        e.hasOwnProperty("loc") && (a.loc = e.loc);
+        var i = n[t] || new Set,
           o = new Set,
           r = new Set;
         for (i.forEach((function(e) {
@@ -1620,11 +1620,11 @@ _global.SENTRY_RELEASE = {
             })))
           }))
         }
-        return o.forEach((function(a) {
-          var n = l(e, a);
-          n && t.definitions.push(n)
-        })), t
-      }(a, "TagList")
+        return o.forEach((function(t) {
+          var n = l(e, t);
+          n && a.definitions.push(n)
+        })), a
+      }(t, "TagList")
     },
     75958: e => {
       "use strict";

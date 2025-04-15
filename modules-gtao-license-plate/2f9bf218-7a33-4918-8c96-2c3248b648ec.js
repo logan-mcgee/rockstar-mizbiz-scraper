@@ -20,11 +20,11 @@ _global.SENTRY_RELEASE = {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => l,
-        Lightbox_Dialog_Description: () => f,
-        Lightbox_Dialog_Title: () => h,
+        Lightbox_Dialog_Description: () => c,
+        Lightbox_Dialog_Title: () => f,
         Lightbox_Download_Button_Label: () => r,
         Lightbox_Download_Button_Tooltip: () => L,
-        Lightbox_Open_Button_Label: () => c,
+        Lightbox_Open_Button_Label: () => h,
         Lightbox_Reset_Zoom_Button_Label: () => g,
         Lightbox_Reset_Zoom_Button_Tooltip: () => d,
         Lightbox_Zoom_In_Button_Label: () => a,
@@ -47,9 +47,9 @@ _global.SENTRY_RELEASE = {
         u = "{zoom}%",
         r = "Descargar",
         L = "Descargar",
-        c = "Abrir imagen en Lightbox",
-        h = "Imagen en Lightbox",
-        f = "Texto alternativo: {alt}",
+        h = "Abrir imagen en Lightbox",
+        f = "Imagen en Lightbox",
+        c = "Texto alternativo: {alt}",
         x = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: l,
@@ -63,9 +63,9 @@ _global.SENTRY_RELEASE = {
           Lightbox_Zoom_Slider_Tooltip: u,
           Lightbox_Download_Button_Label: r,
           Lightbox_Download_Button_Tooltip: L,
-          Lightbox_Open_Button_Label: c,
-          Lightbox_Dialog_Title: h,
-          Lightbox_Dialog_Description: f
+          Lightbox_Open_Button_Label: h,
+          Lightbox_Dialog_Title: f,
+          Lightbox_Dialog_Description: c
         }
     }
   }

@@ -1,8 +1,8 @@
 ! function() {
   try {
     var n = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      a = (new Error).stack;
-    a && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[a] = "93f9360f-3848-4a0c-98fe-00fb7dc4abd5", n._sentryDebugIdIdentifier = "sentry-dbid-93f9360f-3848-4a0c-98fe-00fb7dc4abd5")
+      e = (new Error).stack;
+    e && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[e] = "93f9360f-3848-4a0c-98fe-00fb7dc4abd5", n._sentryDebugIdIdentifier = "sentry-dbid-93f9360f-3848-4a0c-98fe-00fb7dc4abd5")
   } catch (n) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -16,34 +16,34 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [2824], {
-    92824: (n, a, e) => {
+    92824: (n, e, a) => {
       "use strict";
-      e.d(a, {
+      a.d(e, {
         A: () => k
       });
-      var t = e(62229),
-        r = e(95966),
-        i = e(53178),
-        o = e.n(i),
-        d = e(27835),
-        s = e.n(d),
-        m = e(17529),
-        c = e.n(m),
-        g = e(72162),
-        p = e.n(g),
-        l = e(82510),
-        f = e.n(l),
-        h = e(90675),
-        u = e.n(h),
-        b = e(60561),
+      var t = a(62229),
+        r = a(95966),
+        i = a(53178),
+        o = a.n(i),
+        d = a(27835),
+        s = a.n(d),
+        m = a(17529),
+        c = a.n(m),
+        g = a(72162),
+        p = a.n(g),
+        l = a(82510),
+        f = a.n(l),
+        h = a(90675),
+        u = a.n(h),
+        b = a(60561),
         x = {};
       x.styleTagTransform = u(), x.setAttributes = p(), x.insert = c().bind(null, "head"), x.domAPI = s(), x.insertStyleElement = f(), o()(b.A, x);
       const v = b.A && b.A.locals ? b.A.locals : void 0;
-      var w = e(73855);
-      (0, r.importAll)(e(86751));
+      var w = a(73855);
+      (0, r.importAll)(a(86751));
       const k = n => {
         let {
-          isWideCard: a = !1,
+          isWideCard: e = !1,
           size: i = 640,
           title: o,
           titleSlug: d
@@ -52,7 +52,7 @@ _global.SENTRY_RELEASE = {
           isMobile: s
         } = (0, r.useWindowResize)(), m = (0, t.useMemo)((() => {
           let n = "";
-          return a && (n = s ? e(75877)(`./${d}/mobile.png`) : e(55889)(`./${d}/desktop.png`)), n || (n = e(39294)(`./${d}.jpg`), n += `?im=Resize=${i}`), n
+          return e && (n = s ? a(75877)(`./${d}/mobile.png`) : a(55889)(`./${d}/desktop.png`)), n || (n = a(39294)(`./${d}.jpg`), n += `?im=Resize=${i}`), n
         }), [s, d]), [c] = (0, r.usePreloadImg)(m);
         let g = m;
         return (0, w.jsx)("div", {
@@ -61,19 +61,19 @@ _global.SENTRY_RELEASE = {
           style: {
             backgroundImage: `url(${g})`
           },
-          className: [v.img, c ? v.startAnimation : "", a ? v.wide : ""].join(" ")
+          className: [v.img, c ? v.startAnimation : "", e ? v.wide : ""].join(" ")
         })
       }
     },
-    60561: (n, a, e) => {
+    60561: (n, e, a) => {
       "use strict";
-      e.d(a, {
+      a.d(e, {
         A: () => d
       });
-      var t = e(42587),
-        r = e.n(t),
-        i = e(15081),
-        o = e.n(i)()(r());
+      var t = a(42587),
+        r = a.n(t),
+        i = a(15081),
+        o = a.n(i)()(r());
       o.push([n.id, ".rockstargames-sites-rockstargamesd87037fda2ea106061c7a614036a89df{--aspect-ratio-desktop:64/79;--aspect-ratio-mobile:var(--aspect-ratio-desktop);--image-rounding-dynamic:var(--image-rounding-static-sm);aspect-ratio:var(--aspect-ratio-mobile);background-repeat:no-repeat;background-size:cover;border-radius:var(--image-rounding-dynamic,0);display:flex;width:100%}.rockstargames-sites-rockstargamesd87037fda2ea106061c7a614036a89df.rockstargames-sites-rockstargamesdc444c089b89129c0a39bc61845d531f{--aspect-ratio-desktop:10/3;--aspect-ratio-mobile:16/9}@media (min-width:768px){.rockstargames-sites-rockstargamesd87037fda2ea106061c7a614036a89df{aspect-ratio:var(--aspect-ratio-desktop)}}.rockstargames-sites-rockstargamesb9f3c994ce8a97ac6530cf0a85e5abe0{--aspect-ratio-desktop:4/5}", "", {
         version: 3,
         sources: ["webpack://./../../buildtime/components/src/games/Card/Art/index.less", "webpack://./../../buildtime/legacy-design-system/less/mixins.less"],
@@ -88,7 +88,7 @@ _global.SENTRY_RELEASE = {
       };
       const d = o
     },
-    86751: (n, a, e) => {
+    86751: (n, e, a) => {
       var t = {
         "./GTAOnline.jpg": 10111,
         "./GTATrilogy.jpg": 84752,
@@ -149,14 +149,14 @@ _global.SENTRY_RELEASE = {
       };
 
       function r(n) {
-        var a = i(n);
-        return e(a)
+        var e = i(n);
+        return a(e)
       }
 
       function i(n) {
-        if (!e.o(t, n)) {
-          var a = new Error("Cannot find module '" + n + "'");
-          throw a.code = "MODULE_NOT_FOUND", a
+        if (!a.o(t, n)) {
+          var e = new Error("Cannot find module '" + n + "'");
+          throw e.code = "MODULE_NOT_FOUND", e
         }
         return t[n]
       }
@@ -164,7 +164,7 @@ _global.SENTRY_RELEASE = {
         return Object.keys(t)
       }, r.resolve = i, n.exports = r, r.id = 86751
     },
-    39294: (n, a, e) => {
+    39294: (n, e, a) => {
       var t = {
         "./GTAOnline.jpg": 10111,
         "./GTATrilogy.jpg": 84752,
@@ -223,14 +223,14 @@ _global.SENTRY_RELEASE = {
       };
 
       function r(n) {
-        var a = i(n);
-        return e(a)
+        var e = i(n);
+        return a(e)
       }
 
       function i(n) {
-        if (!e.o(t, n)) {
-          var a = new Error("Cannot find module '" + n + "'");
-          throw a.code = "MODULE_NOT_FOUND", a
+        if (!a.o(t, n)) {
+          var e = new Error("Cannot find module '" + n + "'");
+          throw e.code = "MODULE_NOT_FOUND", e
         }
         return t[n]
       }
@@ -238,20 +238,20 @@ _global.SENTRY_RELEASE = {
         return Object.keys(t)
       }, r.resolve = i, n.exports = r, r.id = 39294
     },
-    55889: (n, a, e) => {
+    55889: (n, e, a) => {
       var t = {
         "./VI/desktop.png": 3660
       };
 
       function r(n) {
-        var a = i(n);
-        return e(a)
+        var e = i(n);
+        return a(e)
       }
 
       function i(n) {
-        if (!e.o(t, n)) {
-          var a = new Error("Cannot find module '" + n + "'");
-          throw a.code = "MODULE_NOT_FOUND", a
+        if (!a.o(t, n)) {
+          var e = new Error("Cannot find module '" + n + "'");
+          throw e.code = "MODULE_NOT_FOUND", e
         }
         return t[n]
       }
@@ -259,20 +259,20 @@ _global.SENTRY_RELEASE = {
         return Object.keys(t)
       }, r.resolve = i, n.exports = r, r.id = 55889
     },
-    75877: (n, a, e) => {
+    75877: (n, e, a) => {
       var t = {
         "./VI/mobile.png": 96048
       };
 
       function r(n) {
-        var a = i(n);
-        return e(a)
+        var e = i(n);
+        return a(e)
       }
 
       function i(n) {
-        if (!e.o(t, n)) {
-          var a = new Error("Cannot find module '" + n + "'");
-          throw a.code = "MODULE_NOT_FOUND", a
+        if (!a.o(t, n)) {
+          var e = new Error("Cannot find module '" + n + "'");
+          throw e.code = "MODULE_NOT_FOUND", e
         }
         return t[n]
       }

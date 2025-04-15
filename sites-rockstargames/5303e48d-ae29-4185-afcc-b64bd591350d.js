@@ -27,10 +27,10 @@ _global.SENTRY_RELEASE = {
         d = e(10633),
         l = e(53178),
         s = e.n(l),
-        c = e(27835),
-        g = e.n(c),
-        m = e(17529),
-        p = e.n(m),
+        g = e(27835),
+        m = e.n(g),
+        c = e(17529),
+        p = e.n(c),
         h = e(72162),
         f = e.n(h),
         u = e(82510),
@@ -39,7 +39,7 @@ _global.SENTRY_RELEASE = {
         w = e.n(v),
         b = e(53669),
         y = {};
-      y.styleTagTransform = w(), y.setAttributes = f(), y.insert = p().bind(null, "head"), y.domAPI = g(), y.insertStyleElement = x(), s()(b.A, y);
+      y.styleTagTransform = w(), y.setAttributes = f(), y.insert = p().bind(null, "head"), y.domAPI = m(), y.insertStyleElement = x(), s()(b.A, y);
       const k = b.A && b.A.locals ? b.A.locals : void 0;
       var z = e(73855);
       const A = (0, i.withTranslations)((n => {

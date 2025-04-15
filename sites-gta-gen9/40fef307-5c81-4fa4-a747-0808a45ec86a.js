@@ -187,7 +187,7 @@ _global.SENTRY_RELEASE = {
         __decorate: () => l,
         __disposeResources: () => F,
         __esDecorate: () => s,
-        __exportStar: () => h,
+        __exportStar: () => b,
         __extends: () => o,
         __generator: () => y,
         __importDefault: () => N,
@@ -204,7 +204,7 @@ _global.SENTRY_RELEASE = {
         __spread: () => g,
         __spreadArray: () => O,
         __spreadArrays: () => m,
-        __values: () => b,
+        __values: () => h,
         default: () => G
       });
       var n = function(e, t) {
@@ -418,11 +418,11 @@ _global.SENTRY_RELEASE = {
         void 0 === n && (n = r), e[n] = t[r]
       };
 
-      function h(e, t) {
+      function b(e, t) {
         for (var r in e) "default" === r || Object.prototype.hasOwnProperty.call(t, r) || v(t, e, r)
       }
 
-      function b(e) {
+      function h(e) {
         var t = "function" == typeof Symbol && Symbol.iterator,
           r = t && e[t],
           n = 0;
@@ -547,7 +547,7 @@ _global.SENTRY_RELEASE = {
       function I(e) {
         if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
         var t, r = e[Symbol.asyncIterator];
-        return r ? r.call(e) : (e = b(e), t = {}, n("next"), n("throw"), n("return"), t[Symbol.asyncIterator] = function() {
+        return r ? r.call(e) : (e = h(e), t = {}, n("next"), n("throw"), n("return"), t[Symbol.asyncIterator] = function() {
           return this
         }, t);
 
@@ -695,8 +695,8 @@ _global.SENTRY_RELEASE = {
         __awaiter: d,
         __generator: y,
         __createBinding: v,
-        __exportStar: h,
-        __values: b,
+        __exportStar: b,
+        __values: h,
         __read: w,
         __spread: g,
         __spreadArrays: m,

@@ -16,45 +16,45 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_gta_gen9 = self.webpackChunk_rockstargames_sites_gta_gen9 || []).push([
   [7568], {
-    17568: (n, a, t) => {
-      t.r(a), t.d(a, {
+    17568: (n, a, e) => {
+      e.r(a), e.d(a, {
         default: () => S
       });
-      var e = t(35032),
-        r = t(4324),
-        i = t(16299),
-        o = t(53178),
-        d = t.n(o),
-        s = t(27835),
-        l = t.n(s),
-        c = t(17529),
-        g = t.n(c),
-        m = t(72162),
-        p = t.n(m),
-        h = t(82510),
-        f = t.n(h),
-        u = t(90675),
-        v = t.n(u),
-        x = t(32318),
+      var t = e(35032),
+        r = e(4324),
+        i = e(16299),
+        o = e(53178),
+        d = e.n(o),
+        s = e(27835),
+        l = e.n(s),
+        c = e(17529),
+        g = e.n(c),
+        m = e(72162),
+        p = e.n(m),
+        h = e(82510),
+        f = e.n(h),
+        u = e(90675),
+        v = e.n(u),
+        x = e(32318),
         b = {};
       b.styleTagTransform = v(), b.setAttributes = p(), b.insert = g().bind(null, "head"), b.domAPI = l(), b.insertStyleElement = f(), d()(x.A, b);
       const w = x.A && x.A.locals ? x.A.locals : void 0;
-      var y = t(73855);
+      var y = e(73855);
       const k = n => {
           let {
             to: a,
-            children: t
+            children: e
           } = n;
           return a ? (0, y.jsx)("a", {
             href: a,
             target: "_blank",
-            children: t
-          }) : t
+            children: e
+          }) : e
         },
         A = n => {
           let {
             items: a = [],
-            text: t = {},
+            text: e = {},
             style: o,
             className: d = "",
             id: s = null
@@ -90,46 +90,46 @@ _global.SENTRY_RELEASE = {
                   }
                 })]
               }, n?.key ?? n?.title)))
-            }), t?.title || t?.description ? (0, y.jsx)("div", {
+            }), e?.title || e?.description ? (0, y.jsx)("div", {
               className: w.padding,
-              style: t?.style ?? {},
-              children: (0, y.jsx)(e.A, {
-                item: t
+              style: e?.style ?? {},
+              children: (0, y.jsx)(t.A, {
+                item: e
               })
             }) : ""]
           }) : null
         };
-      var z = t(31879),
-        C = t.n(z),
-        D = t(92440),
-        M = t(95966),
-        N = t(68061),
+      var z = e(31879),
+        C = e.n(z),
+        D = e(92440),
+        M = e(95966),
+        N = e(68061),
         _ = {};
       _.styleTagTransform = v(), _.setAttributes = p(), _.insert = g().bind(null, "head"), _.domAPI = l(), _.insertStyleElement = f(), d()(N.A, _);
       const j = N.A && N.A.locals ? N.A.locals : void 0,
         R = n => {
           let {
             impressionTracking: a,
-            gtm: t = {},
-            children: e
+            gtm: e = {},
+            children: t
           } = n;
           return a?.shouldTrack ? (0, y.jsx)(D.InViewTracker, {
             threshold: a?.threshold,
-            gtm: t,
-            children: e
-          }) : e
+            gtm: e,
+            children: t
+          }) : t
         },
         B = n => {
           let {
             to: a,
-            children: t
+            children: e
           } = n;
           return a ? (0, y.jsx)("a", {
             href: a,
             target: "_blank",
             rel: "noreferrer",
-            children: t
-          }) : t
+            children: e
+          }) : e
         },
         T = n => {
           let {
@@ -153,12 +153,12 @@ _global.SENTRY_RELEASE = {
         I = n => {
           let {
             items: a,
-            style: t = {},
+            style: e = {},
             className: r = "",
             id: i = null
           } = n;
           return (0, y.jsx)("div", {
-            style: t,
+            style: e,
             className: (0, M.classList)(j.items, r),
             id: i,
             "data-testid": "standard-group-of-items",
@@ -173,7 +173,7 @@ _global.SENTRY_RELEASE = {
                   ...n?.props,
                   children: [n?.image || n?.videoId ? (0, y.jsx)(T, {
                     item: n
-                  }) : "", n.title || n.description ? (0, y.jsx)(e.A, {
+                  }) : "", n.title || n.description ? (0, y.jsx)(t.A, {
                     item: n,
                     className: j.descriptionArea
                   }) : ""]
@@ -185,27 +185,27 @@ _global.SENTRY_RELEASE = {
         S = n => {
           let {
             children: a = null,
-            text: t = {},
-            items: e = [],
+            text: e = {},
+            items: t = [],
             renderTemplate: r = "",
             style: i = {},
             id: o = null,
             ...d
           } = n;
-          if (!e.length) return null;
+          if (!t.length) return null;
           switch (r) {
             case "carousel":
               return (0, y.jsx)(A, {
-                text: t,
-                items: e,
+                text: e,
+                items: t,
                 style: i,
                 id: o,
                 children: a
               });
             case "carousel-panorama":
               return (0, y.jsx)(A, {
-                text: t,
-                items: e,
+                text: e,
+                items: t,
                 style: i,
                 className: "panorama",
                 id: o,
@@ -213,7 +213,7 @@ _global.SENTRY_RELEASE = {
               });
             default:
               return (0, y.jsx)(I, {
-                items: e,
+                items: t,
                 style: i,
                 id: o,
                 ...d,
@@ -222,14 +222,14 @@ _global.SENTRY_RELEASE = {
           }
         }
     },
-    32318: (n, a, t) => {
-      t.d(a, {
+    32318: (n, a, e) => {
+      e.d(a, {
         A: () => d
       });
-      var e = t(42587),
-        r = t.n(e),
-        i = t(15081),
-        o = t.n(i)()(r());
+      var t = e(42587),
+        r = e.n(t),
+        i = e(15081),
+        o = e.n(i)()(r());
       o.push([n.id, ".rockstargames-sites-gta-gen9ac767e959939b4d56b2358cb263d07ad{--padding-dynamic:var(--padding-static);--padding-dynamic-tb:var(--grid-gap-static-lg);padding:var(--padding-t,var(--padding-dynamic-tb,0)) var(--padding-dynamic,0) var(--padding-b,var(--padding-dynamic-tb,0)) var(--padding-dynamic,0)}[data-game=rdo][data-template=halloween] .rockstargames-sites-gta-gen9ac767e959939b4d56b2358cb263d07ad{--grid-gap-static-lg:0}[data-game^=gta] .rockstargames-sites-gta-gen9fabefc39343f6c494eb3d049757d89c5 h4{font-family:var(--font-family-std);font-size:var(--font-size-4)}[data-game=rdo] .rockstargames-sites-gta-gen9fabefc39343f6c494eb3d049757d89c5 h4,[data-game^=rdr] .rockstargames-sites-gta-gen9fabefc39343f6c494eb3d049757d89c5 h4{--color-h:#e8e8e8;font-family:var(--font-family-std)}.rockstargames-sites-gta-gen9e9e0ef1bfc3699b1e50c33dd0ce8e76a{padding-top:1.5rem}", "", {
         version: 3,
         sources: ["webpack://./../../buildtime/modules-core-group-of-items/src/components/Carousel/index.less", "webpack://./../../buildtime/legacy-design-system/less/mixins.less"],
@@ -244,14 +244,14 @@ _global.SENTRY_RELEASE = {
       };
       const d = o
     },
-    68061: (n, a, t) => {
-      t.d(a, {
+    68061: (n, a, e) => {
+      e.d(a, {
         A: () => d
       });
-      var e = t(42587),
-        r = t.n(e),
-        i = t(15081),
-        o = t.n(i)()(r());
+      var t = e(42587),
+        r = e.n(t),
+        i = e(15081),
+        o = e.n(i)()(r());
       o.push([n.id, ".rockstargames-sites-gta-gen9d38af92e8657708abd3dc5295e62476c{--padding-dynamic:var(--padding-static);--padding-dynamic-tb:initial;--grid-gap-dynamic:var(--grid-gap-static-lg);margin:0 auto;max-width:calc(var(--max-width-dynamic, var(--max-width-static-md)) + var(--padding-dynamic, 0px) * 2)!important;width:100%}.rockstargames-sites-gta-gen9a9b63d3aa2f18fa6c84b19c8993a7893,.rockstargames-sites-gta-gen9d38af92e8657708abd3dc5295e62476c{grid-gap:var(--grid-gap-dynamic);align-content:var(--grid-align-content);align-items:var(--grid-align-items);align-self:var(--grid-align-self);display:grid;grid-template-columns:repeat(var(--grid-num-columns,1),minmax(0,1fr));grid-template:var(--grid-template-override,auto/repeat(var(--grid-num-columns,1),minmax(0,1fr)));justify-content:var(--grid-justify-content);justify-items:var(--grid-justify-items);justify-self:var(--grid-justify-self);padding:var(--padding-t,var(--padding-dynamic-tb,0)) var(--padding-dynamic,0) var(--padding-b,var(--padding-dynamic-tb,0)) var(--padding-dynamic,0)}.rockstargames-sites-gta-gen9a9b63d3aa2f18fa6c84b19c8993a7893{--grid-gap-dynamic:var(--grid-gap-static-md);--background-color:var(--image-title-text-background,transparent);--padding-dynamic:initial;--padding-dynamic-tb:initial;background-color:var(--background-color,transparent)}.rockstargames-sites-gta-gen9a9b63d3aa2f18fa6c84b19c8993a7893 h1,.rockstargames-sites-gta-gen9a9b63d3aa2f18fa6c84b19c8993a7893 h1.rockstargames-sites-gta-gen9c638acf4c0c3b605c644c413db473d60{color:var(--color-h-dynamic,var(--color-h1,var(--color-h,inherit)))}.rockstargames-sites-gta-gen9a9b63d3aa2f18fa6c84b19c8993a7893 h2{color:var(--color-h-dynamic,var(--color-h2,var(--color-h,inherit)))}.rockstargames-sites-gta-gen9a9b63d3aa2f18fa6c84b19c8993a7893 h3{color:var(--color-h-dynamic,var(--color-h3,var(--color-h,inherit)))}.rockstargames-sites-gta-gen9a9b63d3aa2f18fa6c84b19c8993a7893 h3[data-context=newswire-subtitle]{color:var(--color-subtitle-dynamic,var(--color-h-dynamic,var(--color-h3,var(--color-h,inherit))))}.rockstargames-sites-gta-gen9a9b63d3aa2f18fa6c84b19c8993a7893 h4,.rockstargames-sites-gta-gen9a9b63d3aa2f18fa6c84b19c8993a7893 h5,.rockstargames-sites-gta-gen9a9b63d3aa2f18fa6c84b19c8993a7893 h6{color:var(--color-h-dynamic,var(--color-h,inherit))}.rockstargames-sites-gta-gen9a9b63d3aa2f18fa6c84b19c8993a7893 [template=community]{--time-color:var(--body-color,#2d2d2d);--breadcrumb-separator-filter-invert:invert(0)}.rockstargames-sites-gta-gen9a9b63d3aa2f18fa6c84b19c8993a7893 [template=community] main{color:var(--color-h,#161616)}.rockstargames-sites-gta-gen9a9b63d3aa2f18fa6c84b19c8993a7893 [template=community] p{color:var(--body-color,#2d2d2d)}.rockstargames-sites-gta-gen9a9b63d3aa2f18fa6c84b19c8993a7893 figure>div{--padding-sides:0px}.rockstargames-sites-gta-gen9a9b63d3aa2f18fa6c84b19c8993a7893 .rockstargames-sites-gta-gen9bc47d354556b20071313d2c1ccc3debd{--description-area-margin-top:0px}", "", {
         version: 3,
         sources: ["webpack://./../../buildtime/modules-core-group-of-items/src/components/Standard/index.less", "webpack://./../../buildtime/legacy-design-system/less/mixins.less"],

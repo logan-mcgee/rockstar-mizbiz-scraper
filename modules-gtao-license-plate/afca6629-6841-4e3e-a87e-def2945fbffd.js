@@ -23,8 +23,8 @@ _global.SENTRY_RELEASE = {
         Lightbox_Dialog_Description: () => p,
         Lightbox_Dialog_Title: () => h,
         Lightbox_Download_Button_Label: () => s,
-        Lightbox_Download_Button_Tooltip: () => L,
-        Lightbox_Open_Button_Label: () => f,
+        Lightbox_Download_Button_Tooltip: () => f,
+        Lightbox_Open_Button_Label: () => L,
         Lightbox_Reset_Zoom_Button_Label: () => d,
         Lightbox_Reset_Zoom_Button_Tooltip: () => g,
         Lightbox_Zoom_In_Button_Label: () => a,
@@ -33,7 +33,7 @@ _global.SENTRY_RELEASE = {
         Lightbox_Zoom_Out_Button__Tooltip: () => b,
         Lightbox_Zoom_Slider_Label: () => u,
         Lightbox_Zoom_Slider_Tooltip: () => r,
-        default: () => c
+        default: () => x
       });
       var _ = "Fermer la lightbox",
         l = "Appuyer sur {shortcut}",
@@ -46,11 +46,11 @@ _global.SENTRY_RELEASE = {
         u = "Niveau de zoom",
         r = "{zoom} %",
         s = "Télécharger",
-        L = "Télécharger",
-        f = "Ouvrir l'image dans la lightbox",
+        f = "Télécharger",
+        L = "Ouvrir l'image dans la lightbox",
         h = "Image de la lightbox",
         p = "Text alternatif : {alt}",
-        c = {
+        x = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: l,
           Lightbox_Zoom_In_Button_Label: a,
@@ -62,8 +62,8 @@ _global.SENTRY_RELEASE = {
           Lightbox_Zoom_Slider_Label: u,
           Lightbox_Zoom_Slider_Tooltip: r,
           Lightbox_Download_Button_Label: s,
-          Lightbox_Download_Button_Tooltip: L,
-          Lightbox_Open_Button_Label: f,
+          Lightbox_Download_Button_Tooltip: f,
+          Lightbox_Open_Button_Label: L,
           Lightbox_Dialog_Title: h,
           Lightbox_Dialog_Description: p
         }

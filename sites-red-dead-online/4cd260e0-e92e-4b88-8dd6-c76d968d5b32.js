@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "d05c33e4-d83d-49bd-bda6-b4e48700e903", e._sentryDebugIdIdentifier = "sentry-dbid-d05c33e4-d83d-49bd-bda6-b4e48700e903")
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "4cd260e0-e92e-4b88-8dd6-c76d968d5b32", e._sentryDebugIdIdentifier = "sentry-dbid-4cd260e0-e92e-4b88-8dd6-c76d968d5b32")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
