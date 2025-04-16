@@ -34,14 +34,14 @@ _global.SENTRY_RELEASE = {
         const [t] = (0, d.useSearchParams)(), n = (0, d.useNavigate)(), {
           setNormalLogo: f,
           setBreadcrumb: u,
-          setTitle: b
+          setTitle: g
         } = (0, r.b)(), {
-          videoId: g
+          videoId: b
         } = (0, d.useParams)(), {
           video: c,
           related: _
         } = (0, l.useVideoData)({
-          id: g
+          id: b
         }), y = t.get("resolution") ?? "_auto";
         return (0, s.useEffect)((() => (u([{
           href: "/videos",
@@ -49,11 +49,11 @@ _global.SENTRY_RELEASE = {
         }]), f(!1), () => {
           f(!0), u()
         })), []), (0, s.useEffect)((() => {
-          c && b(`${c.game.title} - ${c.title}`)
-        }), [c]), c && g ? (0, i.jsxs)(i.Fragment, {
+          c && g(`${c.game.title} - ${c.title}`)
+        }), [c]), c && b ? (0, i.jsxs)(i.Fragment, {
           children: [(0, i.jsx)(l.PlayerWithInfo, {
             resolution: y,
-            videoId: g,
+            videoId: b,
             videoChangeCallback: e => {
               n(`../videos/${e}`)
             }

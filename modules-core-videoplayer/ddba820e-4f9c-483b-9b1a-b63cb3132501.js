@@ -236,10 +236,10 @@ _global.SENTRY_RELEASE = {
         c = t(7308),
         d = t(64479),
         p = t(22675),
-        f = t(53335),
-        m = {};
-      for (const e in f)["default", "onLanguageChange", "FormattedMessage", "POSIXLocales", "createDevLocaleHook", "createIntl", "defineMessages", "englishLocale", "getCookieValueByName", "getLocale", "localeCookieHandler", "locales", "splitLocale", "useIntl", "withIntl"].indexOf(e) < 0 && (m[e] = () => f[e]);
-      t.d(o, m);
+        m = t(53335),
+        f = {};
+      for (const e in m)["default", "onLanguageChange", "FormattedMessage", "POSIXLocales", "createDevLocaleHook", "createIntl", "defineMessages", "englishLocale", "getCookieValueByName", "getLocale", "localeCookieHandler", "locales", "splitLocale", "useIntl", "withIntl"].indexOf(e) < 0 && (f[e] = () => m[e]);
+      t.d(o, f);
       var b = t(63921)
     },
     42425: (e, o, t) => {

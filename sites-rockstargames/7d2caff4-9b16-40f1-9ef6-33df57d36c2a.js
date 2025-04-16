@@ -32,9 +32,9 @@ _global.SENTRY_RELEASE = {
           var i = e[c],
             d = r.base ? i[0] + r.base : i[0],
             l = o[d] || 0,
-            f = "".concat(d, " ").concat(l);
+            u = "".concat(d, " ").concat(l);
           o[d] = l + 1;
-          var u = n(f),
+          var f = n(u),
             p = {
               css: i[1],
               media: i[2],
@@ -42,16 +42,16 @@ _global.SENTRY_RELEASE = {
               supports: i[4],
               layer: i[5]
             };
-          if (-1 !== u) t[u].references++, t[u].updater(p);
+          if (-1 !== f) t[f].references++, t[f].updater(p);
           else {
             var m = a(p, r);
             r.byIndex = c, t.splice(c, 0, {
-              identifier: f,
+              identifier: u,
               updater: m,
               references: 1
             })
           }
-          s.push(f)
+          s.push(u)
         }
         return s
       }
@@ -235,15 +235,15 @@ _global.SENTRY_RELEASE = {
         i = n(17529),
         d = n.n(i),
         l = n(72162),
-        f = n.n(l),
-        u = n(82510),
-        p = n.n(u),
+        u = n.n(l),
+        f = n(82510),
+        p = n.n(f),
         m = n(90675),
         v = n.n(m),
         g = n(84045),
-        b = {};
-      b.styleTagTransform = v(), b.setAttributes = f(), b.insert = d().bind(null, "head"), b.domAPI = c(), b.insertStyleElement = p(), o()(g.A, b);
-      const y = g.A && g.A.locals ? g.A.locals : void 0;
+        y = {};
+      y.styleTagTransform = v(), y.setAttributes = u(), y.insert = d().bind(null, "head"), y.domAPI = c(), y.insertStyleElement = p(), o()(g.A, y);
+      const b = g.A && g.A.locals ? g.A.locals : void 0;
       var h = n(73855);
       const w = () => {
         const [e] = (0, r.useSearchParams)(), t = e.get("src") ?? null;
@@ -252,9 +252,9 @@ _global.SENTRY_RELEASE = {
           hostname: n
         } = new URL(t);
         return ["media.rockstargames.com", "www.rockstargames.com"].includes(n) ? (0, h.jsx)("div", {
-          className: y.viewer,
+          className: b.viewer,
           children: (0, h.jsx)("div", {
-            className: y.img,
+            className: b.img,
             style: {
               background: `url(${t}) no-repeat center/contain`
             }

@@ -186,8 +186,8 @@ _global.SENTRY_RELEASE = {
           key: "selectedCharacterTupleReactive",
           value: (0, s.makeVar)(null)
         }),
-        b = e => w(e),
-        _ = (0, s.setMakeVarItem)({
+        _ = e => w(e),
+        b = (0, s.setMakeVarItem)({
           key: "rockstarIdReactive",
           value: (0, s.makeVar)(null)
         }),
@@ -227,7 +227,7 @@ _global.SENTRY_RELEASE = {
             setCurrentCharId: y,
             setHasNotifications: h,
             setNavOpen: p,
-            setSelectedCharacterTuple: b,
+            setSelectedCharacterTuple: _,
             setUserData: E,
             setJumpScMenuFocus: k
           }
@@ -465,7 +465,7 @@ _global.SENTRY_RELEASE = {
               }
             })()
           }), [a, i?.nickname, f]), (0, r.useEffect)((() => {
-            i?.id && i?.nonExpiredToken && (p(!0), _(i.id))
+            i?.id && i?.nonExpiredToken && (p(!0), b(i.id))
           }), [JSON.stringify(i)]), {
             data: i,
             loggedIn: f,

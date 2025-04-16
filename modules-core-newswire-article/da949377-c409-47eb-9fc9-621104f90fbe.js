@@ -21,10 +21,10 @@ _global.SENTRY_RELEASE = {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => l,
         Lightbox_Dialog_Description: () => c,
-        Lightbox_Dialog_Title: () => h,
+        Lightbox_Dialog_Title: () => f,
         Lightbox_Download_Button_Label: () => r,
         Lightbox_Download_Button_Tooltip: () => L,
-        Lightbox_Open_Button_Label: () => f,
+        Lightbox_Open_Button_Label: () => h,
         Lightbox_Reset_Zoom_Button_Label: () => d,
         Lightbox_Reset_Zoom_Button_Tooltip: () => g,
         Lightbox_Zoom_In_Button_Label: () => i,
@@ -47,8 +47,8 @@ _global.SENTRY_RELEASE = {
         s = "{zoom}%",
         r = "下载",
         L = "下载",
-        f = "在弹窗中打开图片",
-        h = "图片弹窗",
+        h = "在弹窗中打开图片",
+        f = "图片弹窗",
         c = "替代文本：{alt}",
         p = {
           Lightbox_Close_Button_Label: _,
@@ -63,8 +63,8 @@ _global.SENTRY_RELEASE = {
           Lightbox_Zoom_Slider_Tooltip: s,
           Lightbox_Download_Button_Label: r,
           Lightbox_Download_Button_Tooltip: L,
-          Lightbox_Open_Button_Label: f,
-          Lightbox_Dialog_Title: h,
+          Lightbox_Open_Button_Label: h,
+          Lightbox_Dialog_Title: f,
           Lightbox_Dialog_Description: c
         }
     }

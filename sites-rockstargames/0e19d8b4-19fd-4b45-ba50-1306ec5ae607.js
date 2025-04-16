@@ -16,13 +16,13 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [7214], {
-    7214: (e, a, d) => {
-      d.r(a), d.d(a, {
-        default: () => n
+    7214: (e, a, o) => {
+      o.r(a), o.d(a, {
+        default: () => d
       });
-      var o = d(6274),
-        t = d(73855);
-      const n = () => (0, t.jsx)(o.A, {
+      var t = o(6274),
+        n = o(73855);
+      const d = () => (0, n.jsx)(t.A, {
         jsonType: "corpinfo",
         titleKey: "Corporate Information",
         noCountrySelector: !0

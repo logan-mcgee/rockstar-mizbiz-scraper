@@ -31,15 +31,15 @@ _global.SENTRY_RELEASE = {
           n = o.transformKey || i,
           h = {};
         return function t(i, a, p) {
-          p = p || 1, Object.keys(i).forEach((function(d) {
-            const l = i[d],
-              c = o.safe && Array.isArray(l),
-              u = Object.prototype.toString.call(l),
-              f = e(l),
+          p = p || 1, Object.keys(i).forEach((function(l) {
+            const d = i[l],
+              c = o.safe && Array.isArray(d),
+              u = Object.prototype.toString.call(d),
+              f = e(d),
               g = "[object Object]" === u || "[object Array]" === u,
-              b = a ? a + s + n(d) : n(d);
-            if (!c && !f && g && Object.keys(l).length && (!o.maxDepth || p < r)) return t(l, b, p + 1);
-            h[b] = l
+              b = a ? a + s + n(l) : n(l);
+            if (!c && !f && g && Object.keys(d).length && (!o.maxDepth || p < r)) return t(d, b, p + 1);
+            h[b] = d
           }))
         }(t), h
       }
@@ -50,7 +50,7 @@ _global.SENTRY_RELEASE = {
           p = {};
         if (e(s) || "[object Object]" !== Object.prototype.toString.call(s)) return s;
 
-        function d(t) {
+        function l(t) {
           const e = Number(t);
           return isNaN(e) || -1 !== t.indexOf(".") || r.object ? t : e
         }
@@ -67,15 +67,15 @@ _global.SENTRY_RELEASE = {
           }(e, t, o(s[e], r))
         }), {}), Object.keys(s).forEach((function(e) {
           const i = e.split(n).map(a);
-          let o = d(i.shift()),
-            l = d(i[0]),
+          let o = l(i.shift()),
+            d = l(i[0]),
             c = p;
-          for (; void 0 !== l;) {
+          for (; void 0 !== d;) {
             if ("__proto__" === o) return;
             const t = Object.prototype.toString.call(c[o]),
               e = "[object Object]" === t || "[object Array]" === t;
             if (!h && !e && void 0 !== c[o]) return;
-            (h && !e || !h && null == c[o]) && (c[o] = "number" != typeof l || r.object ? {} : []), c = c[o], i.length > 0 && (o = d(i.shift()), l = d(i[0]))
+            (h && !e || !h && null == c[o]) && (c[o] = "number" != typeof d || r.object ? {} : []), c = c[o], i.length > 0 && (o = l(i.shift()), d = l(i[0]))
           }
           c[o] = t(s[e], r)
         })), p
@@ -121,12 +121,12 @@ _global.SENTRY_RELEASE = {
           left: "0px",
           cursor: "col-resize"
         },
-        d = {
+        l = {
           width: "20px",
           height: "20px",
           position: "absolute"
         },
-        l = {
+        d = {
           top: h(h({}, a), {
             top: "-5px"
           }),
@@ -141,22 +141,22 @@ _global.SENTRY_RELEASE = {
           left: h(h({}, p), {
             left: "-5px"
           }),
-          topRight: h(h({}, d), {
+          topRight: h(h({}, l), {
             right: "-10px",
             top: "-10px",
             cursor: "ne-resize"
           }),
-          bottomRight: h(h({}, d), {
+          bottomRight: h(h({}, l), {
             right: "-10px",
             bottom: "-10px",
             cursor: "se-resize"
           }),
-          bottomLeft: h(h({}, d), {
+          bottomLeft: h(h({}, l), {
             left: "-10px",
             bottom: "-10px",
             cursor: "sw-resize"
           }),
-          topLeft: h(h({}, d), {
+          topLeft: h(h({}, l), {
             left: "-10px",
             top: "-10px",
             cursor: "nw-resize"
@@ -177,7 +177,7 @@ _global.SENTRY_RELEASE = {
               style: h(h({
                 position: "absolute",
                 userSelect: "none"
-              }, l[this.props.direction]), this.props.replaceStyles || {}),
+              }, d[this.props.direction]), this.props.replaceStyles || {}),
               onMouseDown: this.onMouseDown,
               onTouchStart: this.onTouchStart
             }, this.props.children)
@@ -406,13 +406,13 @@ _global.SENTRY_RELEASE = {
             h = this.props,
             a = h.lockAspectRatio,
             p = h.lockAspectRatioExtraHeight,
-            d = h.lockAspectRatioExtraWidth,
-            l = n.width,
+            l = h.lockAspectRatioExtraWidth,
+            d = n.width,
             c = n.height,
             u = p || 0,
-            f = d || 0;
-          return y("right", r) && (l = n.width + (t - n.x) * o / i, a && (c = (l - f) / this.ratio + u)), y("left", r) && (l = n.width - (t - n.x) * o / i, a && (c = (l - f) / this.ratio + u)), y("bottom", r) && (c = n.height + (e - n.y) * o / i, a && (l = (c - u) * this.ratio + f)), y("top", r) && (c = n.height - (e - n.y) * o / i, a && (l = (c - u) * this.ratio + f)), {
-            newWidth: l,
+            f = l || 0;
+          return y("right", r) && (d = n.width + (t - n.x) * o / i, a && (c = (d - f) / this.ratio + u)), y("left", r) && (d = n.width - (t - n.x) * o / i, a && (c = (d - f) / this.ratio + u)), y("bottom", r) && (c = n.height + (e - n.y) * o / i, a && (d = (c - u) * this.ratio + f)), y("top", r) && (c = n.height - (e - n.y) * o / i, a && (d = (c - u) * this.ratio + f)), {
+            newWidth: d,
             newHeight: c
           }
         }, e.prototype.calculateNewSizeFromAspectRatio = function(t, e, i, o) {
@@ -422,21 +422,21 @@ _global.SENTRY_RELEASE = {
             h = s.lockAspectRatioExtraWidth,
             a = void 0 === o.width ? 10 : o.width,
             p = void 0 === i.width || i.width < 0 ? t : i.width,
-            d = void 0 === o.height ? 10 : o.height,
-            l = void 0 === i.height || i.height < 0 ? e : i.height,
+            l = void 0 === o.height ? 10 : o.height,
+            d = void 0 === i.height || i.height < 0 ? e : i.height,
             c = n || 0,
             u = h || 0;
           if (r) {
-            var f = (d - c) * this.ratio + u,
-              g = (l - c) * this.ratio + u,
+            var f = (l - c) * this.ratio + u,
+              g = (d - c) * this.ratio + u,
               w = (a - u) / this.ratio + c,
               y = (p - u) / this.ratio + c,
               v = Math.max(a, f),
               m = Math.min(p, g),
-              z = Math.max(d, w),
-              x = Math.min(l, y);
+              z = Math.max(l, w),
+              x = Math.min(d, y);
             t = b(t, v, m), e = b(e, z, x)
-          } else t = b(t, a, p), e = b(e, d, l);
+          } else t = b(t, a, p), e = b(e, l, d);
           return {
             newWidth: t,
             newHeight: e
@@ -511,11 +511,11 @@ _global.SENTRY_RELEASE = {
               h = i.minHeight,
               a = v(t) ? t.touches[0].clientX : t.clientX,
               p = v(t) ? t.touches[0].clientY : t.clientY,
-              d = this.state,
-              l = d.direction,
-              c = d.original,
-              u = d.width,
-              f = d.height,
+              l = this.state,
+              d = l.direction,
+              c = l.original,
+              u = l.width,
+              f = l.height,
               g = this.getParentSize(),
               b = function(t, e, i, o, s, r, n) {
                 return o = x(o, t.width, e, i), s = x(s, t.height, e, i), r = x(r, t.width, e, i), n = x(n, t.height, e, i), {
@@ -555,7 +555,7 @@ _global.SENTRY_RELEASE = {
             };
             "row" === this.flexDir ? k.flexBasis = k.width : "column" === this.flexDir && (k.flexBasis = k.height), (0, r.flushSync)((function() {
               e.setState(k)
-            })), this.props.onResize && this.props.onResize(t, l, this.resizable, _)
+            })), this.props.onResize && this.props.onResize(t, d, this.resizable, _)
           }
         }, e.prototype.onMouseUp = function(t) {
           var e = this.state,

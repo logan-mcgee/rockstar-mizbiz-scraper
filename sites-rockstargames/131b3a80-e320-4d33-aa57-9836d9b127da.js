@@ -1,8 +1,8 @@
 ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      s = (new Error).stack;
-    s && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[s] = "131b3a80-e320-4d33-aa57-9836d9b127da", e._sentryDebugIdIdentifier = "sentry-dbid-131b3a80-e320-4d33-aa57-9836d9b127da")
+      a = (new Error).stack;
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "131b3a80-e320-4d33-aa57-9836d9b127da", e._sentryDebugIdIdentifier = "sentry-dbid-131b3a80-e320-4d33-aa57-9836d9b127da")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -16,65 +16,65 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [3582], {
-    71201: (e, s, a) => {
-      a.r(s), a.d(s, {
+    71201: (e, a, s) => {
+      s.r(a), s.d(a, {
         default: () => p
       });
-      var n = a(9623),
-        t = a(53178),
-        d = a.n(t),
-        r = a(27835),
-        o = a.n(r),
-        l = a(17529),
-        c = a.n(l),
-        i = a(72162),
-        b = a.n(i),
-        f = a(82510),
-        g = a.n(f),
-        u = a(90675),
-        m = a.n(u),
-        A = a(84045),
+      var n = s(9623),
+        t = s(53178),
+        r = s.n(t),
+        o = s(27835),
+        d = s.n(o),
+        l = s(17529),
+        c = s.n(l),
+        i = s(72162),
+        g = s.n(i),
+        b = s(82510),
+        f = s.n(b),
+        u = s(90675),
+        m = s.n(u),
+        A = s(84045),
         k = {};
-      k.styleTagTransform = m(), k.setAttributes = b(), k.insert = c().bind(null, "head"), k.domAPI = o(), k.insertStyleElement = g(), d()(A.A, k);
+      k.styleTagTransform = m(), k.setAttributes = g(), k.insert = c().bind(null, "head"), k.domAPI = d(), k.insertStyleElement = f(), r()(A.A, k);
       const w = A.A && A.A.locals ? A.A.locals : void 0;
-      var y = a(73855);
+      var y = s(73855);
       const p = () => {
-        const [e] = (0, n.useSearchParams)(), s = e.get("src") ?? null;
-        if (!s) return null;
+        const [e] = (0, n.useSearchParams)(), a = e.get("src") ?? null;
+        if (!a) return null;
         const {
-          hostname: a
-        } = new URL(s);
-        return ["media.rockstargames.com", "www.rockstargames.com"].includes(a) ? (0, y.jsx)("div", {
+          hostname: s
+        } = new URL(a);
+        return ["media.rockstargames.com", "www.rockstargames.com"].includes(s) ? (0, y.jsx)("div", {
           className: w.viewer,
           children: (0, y.jsx)("div", {
             className: w.img,
             style: {
-              background: `url(${s}) no-repeat center/contain`
+              background: `url(${a}) no-repeat center/contain`
             }
           })
         }) : null
       }
     },
-    84045: (e, s, a) => {
-      a.d(s, {
-        A: () => o
+    84045: (e, a, s) => {
+      s.d(a, {
+        A: () => d
       });
-      var n = a(42587),
-        t = a.n(n),
-        d = a(15081),
-        r = a.n(d)()(t());
-      r.push([e.id, ".rockstargames-sites-rockstargamesd3d06437c2c029c4d95e42b4b1690f8e{background:#000;display:flex;flex:1}.rockstargames-sites-rockstargamescb8ab5c6a510d8d025142e899a0588f8{width:100%}", "", {
+      var n = s(42587),
+        t = s.n(n),
+        r = s(15081),
+        o = s.n(r)()(t());
+      o.push([e.id, ".rockstargames-sites-rockstargamesd3d06437c2c029c4d95e42b4b1690f8e{background:#000;display:flex;flex:1}.rockstargames-sites-rockstargamescb8ab5c6a510d8d025142e899a0588f8{width:100%}", "", {
         version: 3,
         sources: ["webpack://./../../buildtime/modules-core-screenshot-viewer/src/components/Root/index.less"],
         names: [],
         mappings: "AAAA,mEAEI,eAAA,CACA,YAAA,CAFA,MAGJ,CAEA,mEACI,UAAJ",
         sourcesContent: [".viewer {\n    flex: 1;\n    background: black;\n    display: flex;\n}\n\n.img {\n    width: 100%;\n}\n"],
         sourceRoot: ""
-      }]), r.locals = {
+      }]), o.locals = {
         viewer: "rockstargames-sites-rockstargamesd3d06437c2c029c4d95e42b4b1690f8e",
         img: "rockstargames-sites-rockstargamescb8ab5c6a510d8d025142e899a0588f8"
       };
-      const o = r
+      const d = o
     }
   }
 ]);

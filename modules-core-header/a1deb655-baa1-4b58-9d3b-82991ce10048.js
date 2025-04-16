@@ -31,9 +31,9 @@ _global.SENTRY_RELEASE = {
         DialogTrigger: () => z,
         Overlay: () => he,
         Portal: () => Ee,
-        Root: () => be,
+        Root: () => ye,
         Title: () => we,
-        Trigger: () => ye,
+        Trigger: () => be,
         WarningProvider: () => pe,
         createDialogScope: () => $
       });
@@ -107,7 +107,7 @@ _global.SENTRY_RELEASE = {
               const e = e => {
                   if (e.target && !r.current) {
                     let o = function() {
-                      y("dismissableLayer.pointerDownOutside", n, r, {
+                      b("dismissableLayer.pointerDownOutside", n, r, {
                         discrete: !0
                       })
                     };
@@ -138,7 +138,7 @@ _global.SENTRY_RELEASE = {
               r = o.useRef(!1);
             return o.useEffect((() => {
               const e = e => {
-                e.target && !r.current && y("dismissableLayer.focusOutside", n, {
+                e.target && !r.current && b("dismissableLayer.focusOutside", n, {
                   originalEvent: e
                 }, {
                   discrete: !1
@@ -156,11 +156,11 @@ _global.SENTRY_RELEASE = {
           return (0, p.U)((e => {
             P === D.layers.size - 1 && (u?.(e), !e.defaultPrevented && E && (e.preventDefault(), E()))
           }), _), o.useEffect((() => {
-            if (w) return n && (0 === D.layersWithOutsidePointerEventsDisabled.size && (a = _.body.style.pointerEvents, _.body.style.pointerEvents = "none"), D.layersWithOutsidePointerEventsDisabled.add(w)), D.layers.add(w), b(), () => {
+            if (w) return n && (0 === D.layersWithOutsidePointerEventsDisabled.size && (a = _.body.style.pointerEvents, _.body.style.pointerEvents = "none"), D.layersWithOutsidePointerEventsDisabled.add(w)), D.layers.add(w), y(), () => {
               n && 1 === D.layersWithOutsidePointerEventsDisabled.size && (_.body.style.pointerEvents = a)
             }
           }), [w, _, n, D]), o.useEffect((() => () => {
-            w && (D.layers.delete(w), D.layersWithOutsidePointerEventsDisabled.delete(w), b())
+            w && (D.layers.delete(w), D.layersWithOutsidePointerEventsDisabled.delete(w), y())
           }), [w, D]), o.useEffect((() => {
             const e = () => C({});
             return document.addEventListener(m, e), () => document.removeEventListener(m, e)
@@ -177,12 +177,12 @@ _global.SENTRY_RELEASE = {
           })
         }));
 
-      function b() {
+      function y() {
         const e = new CustomEvent(m);
         document.dispatchEvent(e)
       }
 
-      function y(e, t, n, {
+      function b(e, t, n, {
         discrete: o
       }) {
         const r = n.originalEvent.target,
@@ -222,7 +222,7 @@ _global.SENTRY_RELEASE = {
             onMountAutoFocus: u,
             onUnmountAutoFocus: a,
             ...c
-          } = e, [d, p] = o.useState(null), m = (0, f.c)(u), v = (0, f.c)(a), g = o.useRef(null), b = s(t, (e => p(e))), y = o.useRef({
+          } = e, [d, p] = o.useState(null), m = (0, f.c)(u), v = (0, f.c)(a), g = o.useRef(null), y = s(t, (e => p(e))), b = o.useRef({
             paused: !1,
             pause() {
               this.paused = !0
@@ -234,14 +234,14 @@ _global.SENTRY_RELEASE = {
           o.useEffect((() => {
             if (r) {
               let e = function(e) {
-                  if (y.paused || !d) return;
+                  if (b.paused || !d) return;
                   const t = e.target;
                   d.contains(t) ? g.current = t : O(g.current, {
                     select: !0
                   })
                 },
                 t = function(e) {
-                  if (y.paused || !d) return;
+                  if (b.paused || !d) return;
                   const t = e.relatedTarget;
                   null !== t && (d.contains(t) || O(g.current, {
                     select: !0
@@ -260,9 +260,9 @@ _global.SENTRY_RELEASE = {
                 document.removeEventListener("focusin", e), document.removeEventListener("focusout", t), o.disconnect()
               }
             }
-          }), [r, d, y.paused]), o.useEffect((() => {
+          }), [r, d, b.paused]), o.useEffect((() => {
             if (d) {
-              x.add(y);
+              x.add(b);
               const e = document.activeElement;
               if (!d.contains(e)) {
                 const t = new CustomEvent(E, D);
@@ -283,14 +283,14 @@ _global.SENTRY_RELEASE = {
                   const t = new CustomEvent(h, D);
                   d.addEventListener(h, v), d.dispatchEvent(t), t.defaultPrevented || O(e ?? document.body, {
                     select: !0
-                  }), d.removeEventListener(h, v), x.remove(y)
+                  }), d.removeEventListener(h, v), x.remove(b)
                 }), 0)
               }
             }
-          }), [d, m, v, y]);
+          }), [d, m, v, b]);
           const w = o.useCallback((e => {
             if (!n && !r) return;
-            if (y.paused) return;
+            if (b.paused) return;
             const t = "Tab" === e.key && !e.altKey && !e.ctrlKey && !e.metaKey,
               o = document.activeElement;
             if (t && o) {
@@ -305,11 +305,11 @@ _global.SENTRY_RELEASE = {
                 select: !0
               })) : o === t && e.preventDefault()
             }
-          }), [n, r, y.paused]);
+          }), [n, r, b.paused]);
           return (0, i.jsx)(l.sG.div, {
             tabIndex: -1,
             ...c,
-            ref: b,
+            ref: y,
             onKeyDown: w
           })
         }));
@@ -794,8 +794,8 @@ _global.SENTRY_RELEASE = {
             t && o && (document.getElementById(t) || console.warn(n))
           }), [n, e, t]), null
         },
-        be = B,
-        ye = z,
+        ye = B,
+        be = z,
         Ee = Z,
         he = Q,
         De = te,

@@ -31,9 +31,9 @@ _global.SENTRY_RELEASE = {
       });
       var o = n(82543),
         r = n(7393),
-        s = n.n(r),
-        a = n(16188),
-        i = n.n(a),
+        a = n.n(r),
+        s = n(16188),
+        i = n.n(s),
         c = n(82014),
         l = n(39151);
       const {
@@ -43,14 +43,14 @@ _global.SENTRY_RELEASE = {
           fetchOptions: t = {},
           finalFetchOptions: n = {},
           query: r = null,
-          pingBearer: a,
+          pingBearer: s,
           requireBearerToken: c = !0,
           useCache: l = !0
         } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
         try {
           const {
             bearerToken: m = null
-          } = await (a?.()) ?? {}, g = {
+          } = await (s?.()) ?? {}, g = {
             "X-Requested-With": "XMLHttpRequest",
             "X-AMC": !0,
             "Content-Type": "application/json",
@@ -64,7 +64,7 @@ _global.SENTRY_RELEASE = {
           const p = {
               headers: g
             },
-            f = s().all([p, t, n]),
+            f = a().all([p, t, n]),
             v = JSON.stringify({
               ...f,
               url: w
@@ -108,12 +108,12 @@ _global.SENTRY_RELEASE = {
       });
       const o = window?.env?.sc,
         r = window?.env?.marketing,
-        s = e => {
+        a = e => {
           let {
             apiHost: t,
             authHost: n,
-            clientId: s,
-            cms: a,
+            clientId: a,
+            cms: s,
             graphEnv: i,
             scHost: c,
             hostname: l,
@@ -124,7 +124,7 @@ _global.SENTRY_RELEASE = {
           const m = o?.apiHost ?? t,
             g = o?.authHost ?? n,
             w = o?.cdnBase ?? d,
-            p = o?.clientId ?? s,
+            p = o?.clientId ?? a,
             f = r?.marketingAuthTLD ?? h,
             v = o?.scHost ?? c,
             b = r?.pingBearerEndpoint ?? "auth/ping-bearer.json";
@@ -136,7 +136,7 @@ _global.SENTRY_RELEASE = {
             cdnBase: w,
             key: u,
             clientId: p,
-            cms: `https://${a}.rockstargames.com/graphql`,
+            cms: `https://${s}.rockstargames.com/graphql`,
             authHost: g,
             scBase: `https://${v}.rockstargames.com/`,
             login: `https://${g}.rockstargames.com/connect/authorize/${p}`,
@@ -147,7 +147,7 @@ _global.SENTRY_RELEASE = {
             pingBearer: `https://${f}/${b}`
           }
         },
-        a = [s({
+        s = [a({
           key: "prod",
           clientId: "rsg",
           cms: "cms-prod.ros",
@@ -158,7 +158,7 @@ _global.SENTRY_RELEASE = {
           hostname: /www/,
           cdnBase: "https://s.rsg.sc/sc",
           marketingAuthTLD: "www.rockstargames.com"
-        }), s({
+        }), a({
           key: "sc-prod",
           clientId: "socialclub",
           cms: "cms-prod.ros",
@@ -173,7 +173,7 @@ _global.SENTRY_RELEASE = {
         i = () => {
           const e = window?.env?.scEnv ?? null;
           if (e) {
-            const t = a.find((t => {
+            const t = s.find((t => {
               let {
                 key: n
               } = t;
@@ -181,12 +181,12 @@ _global.SENTRY_RELEASE = {
             })) ?? null;
             if (t) return t
           }
-          return a.find((e => {
+          return s.find((e => {
             let {
               hostname: t
             } = e;
             return new RegExp(t).test(document.location.hostname)
-          })) || a[0]
+          })) || s[0]
         }
     },
     4827: (e, t, n) => {
@@ -229,7 +229,7 @@ _global.SENTRY_RELEASE = {
       n.d(t, {
         RK: () => r,
         bn: () => L,
-        ri: () => a,
+        ri: () => s,
         vx: () => E,
         sb: () => C,
         Ym: () => i.A,
@@ -246,29 +246,29 @@ _global.SENTRY_RELEASE = {
       });
       const o = (0, n(46710).A)(),
         r = () => o;
-      var s = n(62229);
-      const a = (e, t) => {
-        const [n, o] = (0, s.useState)(0);
-        return (0, s.useEffect)((() => {
+      var a = n(62229);
+      const s = (e, t) => {
+        const [n, o] = (0, a.useState)(0);
+        return (0, a.useEffect)((() => {
           if (e.current) {
             const {
               current: n
             } = e, r = n.getBoundingClientRect(), {
-              width: s
+              width: a
             } = r;
-            let a = s;
+            let s = a;
             if (!0 === t) {
               const e = window.getComputedStyle(n);
-              a += parseInt(e.marginLeft, 10) + parseInt(e.marginRight, 10)
+              s += parseInt(e.marginLeft, 10) + parseInt(e.marginRight, 10)
             }
-            o(a)
+            o(s)
           }
         }), [e]), n
       };
       var i = n(96232);
       const c = e => {
-        const [t, n] = (0, s.useState)(null), [o, r] = (0, s.useState)(null), [a, i] = (0, s.useState)({});
-        return (0, s.useLayoutEffect)((() => {
+        const [t, n] = (0, a.useState)(null), [o, r] = (0, a.useState)(null), [s, i] = (0, a.useState)({});
+        return (0, a.useLayoutEffect)((() => {
           let t = new Image,
             o = !1;
           return t.addEventListener("load", (() => {
@@ -281,7 +281,7 @@ _global.SENTRY_RELEASE = {
           })), t.src = e, () => {
             o = !0, null !== t && (t.src = "")
           }
-        }), [e]), [t, a]
+        }), [e]), [t, s]
       };
       var l = n(9623);
       const d = () => {
@@ -291,8 +291,8 @@ _global.SENTRY_RELEASE = {
           return new URLSearchParams(e)
         },
         u = e => {
-          const t = (0, s.useRef)();
-          return (0, s.useEffect)((() => {
+          const t = (0, a.useRef)();
+          return (0, a.useEffect)((() => {
             t.current = e
           }), [e]), t.current
         };
@@ -304,22 +304,22 @@ _global.SENTRY_RELEASE = {
           fetchOptions: o = {},
           query: r = null
         } = t;
-        const a = (0, h.Es)(),
-          [i, c] = (0, s.useState)(null),
-          [l, d] = (0, s.useState)(!1),
-          [u, g] = (0, s.useState)(null),
-          w = (0, s.useCallback)((async function() {
+        const s = (0, h.Es)(),
+          [i, c] = (0, a.useState)(null),
+          [l, d] = (0, a.useState)(!1),
+          [u, g] = (0, a.useState)(null),
+          w = (0, a.useCallback)((async function() {
             let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
               n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
             try {
               const {
-                fetchOptions: s = {}
+                fetchOptions: a = {}
               } = t;
               g(null), c(null), d(!0);
               const i = await (0, m.A)(n ?? e, {
-                pingBearer: a,
+                pingBearer: s,
                 fetchOptions: o,
-                finalFetchOptions: s,
+                finalFetchOptions: a,
                 query: r
               });
               return i?.status || g(JSON.stringify(i?.error)), c(i), d(!1), i
@@ -328,7 +328,7 @@ _global.SENTRY_RELEASE = {
             }
             return null
           }), [e, o, r]);
-        return (0, s.useEffect)((() => {
+        return (0, a.useEffect)((() => {
           null === i && null === u && !l && n && w()
         }), [n, i, u, l, w]), {
           data: i,
@@ -355,13 +355,13 @@ _global.SENTRY_RELEASE = {
               e(o.detail)
             }))
           };
-          return (0, s.useMemo)((() => ({
+          return (0, a.useMemo)((() => ({
             dispatch: e
           })), [])
         },
         b = (e, t) => {
           if (!e) throw Error("Event name must be provided to work with custom events");
-          return (0, s.useEffect)((() => {
+          return (0, a.useEffect)((() => {
             const n = f(e);
             return window[p][n] || (window[p][n] = {
               eventQueue: [],
@@ -371,7 +371,7 @@ _global.SENTRY_RELEASE = {
             })), () => {
               window[p][n].subscribers = window[p][n].subscribers.filter((e => e !== t)), 0 === window[p][n].subscribers.length && delete window[p][n]
             }
-          }), [e, t]), (0, s.useMemo)((() => ({})), [])
+          }), [e, t]), (0, a.useMemo)((() => ({})), [])
         };
       var k = n(2833),
         x = (n(20025), n(39151));
@@ -379,25 +379,25 @@ _global.SENTRY_RELEASE = {
           const {
             authHost: n,
             clientId: o
-          } = (0, w.A)(), r = (0, i.A)(), s = (0, x.t)(r), a = (0, h.e9)();
+          } = (0, w.A)(), r = (0, i.A)(), a = (0, x.t)(r), s = (0, h.e9)();
           let c = "tpa/" + e + "/link/";
-          return c += "?cid=" + encodeURIComponent(o), c += "&lang=" + encodeURIComponent(s), c += "&returnUrl=" + encodeURIComponent(t ?? window.location.pathname), c += "&accessToken=" + encodeURIComponent(a), new URL(c, `https://${n}.rockstargames.com/`)
+          return c += "?cid=" + encodeURIComponent(o), c += "&lang=" + encodeURIComponent(a), c += "&returnUrl=" + encodeURIComponent(t ?? window.location.pathname), c += "&accessToken=" + encodeURIComponent(s), new URL(c, `https://${n}.rockstargames.com/`)
         },
         S = e => {
           const {
             signup: t,
             login: n
           } = (0, w.A)(), o = (0, i.A)(), r = (0, x.t)(o);
-          let s = "";
-          return s += "lang=" + encodeURIComponent(r), s += "&returnUrl=" + encodeURIComponent(e ?? window.location.pathname), {
-            signUpUrl: `${t}&${s}`,
-            signInUrl: `${n}?${s}`
+          let a = "";
+          return a += "lang=" + encodeURIComponent(r), a += "&returnUrl=" + encodeURIComponent(e ?? window.location.pathname), {
+            signUpUrl: `${t}&${a}`,
+            signInUrl: `${n}?${a}`
           }
         };
       n(42582);
       const E = () => {
-          const [e, t] = (0, s.useState)(!1);
-          return (0, s.useEffect)((() => {
+          const [e, t] = (0, a.useState)(!1);
+          return (0, a.useEffect)((() => {
             const e = window.matchMedia("(prefers-reduced-motion: reduce)"),
               n = e => {
                 t(e.matches)
@@ -408,8 +408,8 @@ _global.SENTRY_RELEASE = {
           }), []), e
         },
         C = () => {
-          const [e, t] = (0, s.useState)(!1);
-          return (0, s.useEffect)((() => {
+          const [e, t] = (0, a.useState)(!1);
+          return (0, a.useEffect)((() => {
             if ("connection" in navigator && "saveData" in navigator.connection) {
               const e = navigator?.connection;
               t(e.saveData);
@@ -425,43 +425,43 @@ _global.SENTRY_RELEASE = {
       var A = n(73002),
         P = n(12158);
       const L = () => {
-          const [e, t] = (0, s.useState)(!1), {
+          const [e, t] = (0, a.useState)(!1), {
             deviceMemory: n
           } = (0, A.XB)(), {
             effectiveConnectionType: o
           } = (0, A.M5)(), {
             numberOfLogicalProcessors: r
           } = (0, A.xV)(), {
-            saveData: a
+            saveData: s
           } = (0, A.zp)(), i = E(), c = () => {
-            const s = (() => {
+            const a = (() => {
               const e = e => !1 === e;
               if (i) return !1;
               if (P.n8 || P.lT || P.w || P.UX) return !1;
               const t = "Safari" === P.C0,
-                s = "Firefox" === P.C0,
+                a = "Firefox" === P.C0,
                 c = o && !["slow-2g", "2g", "3g", "other", "unknown", "none"].includes(o),
                 l = r && r >= 4,
                 d = n && n >= 4;
-              return !(e(!a) || e(c) || e(l) || !t && !s && e(d))
+              return !(e(!s) || e(c) || e(l) || !t && !a && e(d))
             })();
-            s !== e && t(s)
+            a !== e && t(a)
           };
-          return (0, s.useEffect)((() => (c(), window.addEventListener("online", c), window.addEventListener("offline", c), window.addEventListener("devicememory", c), () => {
+          return (0, a.useEffect)((() => (c(), window.addEventListener("online", c), window.addEventListener("offline", c), window.addEventListener("devicememory", c), () => {
             window.removeEventListener("online", c), window.removeEventListener("offline", c), window.removeEventListener("devicememory", c)
-          })), [n, o, e, r, a, i]), e
+          })), [n, o, e, r, s, i]), e
         },
         R = e => {
-          const [t, n] = (0, s.useState)(!1), o = (0, s.useRef)(null);
-          return (0, s.useEffect)((() => {
+          const [t, n] = (0, a.useState)(!1), o = (0, a.useRef)(null);
+          return (0, a.useEffect)((() => {
             const r = () => {
               if (t || !o.current) return;
-              const s = o.current,
+              const a = o.current,
                 {
-                  height: a
-                } = s.getBoundingClientRect(),
+                  height: s
+                } = a.getBoundingClientRect(),
                 i = window.innerHeight;
-              window.scrollY + i >= s.offsetTop + a * e && (n(!0), window.removeEventListener("scroll", r))
+              window.scrollY + i >= a.offsetTop + s * e && (n(!0), window.removeEventListener("scroll", r))
             };
             return window.addEventListener("scroll", r, {
               passive: !0
@@ -476,12 +476,12 @@ _global.SENTRY_RELEASE = {
     },
     96232: (e, t, n) => {
       n.d(t, {
-        A: () => a
+        A: () => s
       });
       var o = n(28567),
         r = n(95236);
-      const s = (0, o.UT)(document.documentElement.lang),
-        a = () => (0, r.q)(s)
+      const a = (0, o.UT)(document.documentElement.lang),
+        s = () => (0, r.q)(a)
     },
     48267: (e, t, n) => {
       n.r(t), n.d(t, {
@@ -501,11 +501,11 @@ _global.SENTRY_RELEASE = {
         coreScApiFetch: () => o.A,
         detectIfWeShouldAnchorSomewhere: () => te,
         downloadFile: () => we,
-        findPlatform: () => ae,
+        findPlatform: () => se,
         getAccentColor: () => r,
-        getBase: () => s.A,
+        getBase: () => a.A,
         getCdnPrefix: () => ge,
-        getConfigForDomain: () => a.A,
+        getConfigForDomain: () => s.A,
         getCookieValueByName: () => de,
         getGen8Consoles: () => pe,
         getGen9Consoles: () => fe,
@@ -565,8 +565,8 @@ _global.SENTRY_RELEASE = {
       });
       var o = n(43522);
       const r = e => e.includes("reddead") || e.includes("rdr") ? "#CC0000" : e.includes("bully") ? "#F8AD00" : "#FCAF17";
-      var s = n(46710),
-        a = n(82014);
+      var a = n(46710),
+        s = n(82014);
       const i = e => {
         if (/^https{0,1}:\/\//.test(e)) return e;
         let t = "";
@@ -656,8 +656,8 @@ _global.SENTRY_RELEASE = {
             },
             {
               data: r,
-              loading: s,
-              error: a,
+              loading: a,
+              error: s,
               ...i
             } = (0, C.IT)(e, o);
           return (0, m.useEffect)((() => {
@@ -670,17 +670,17 @@ _global.SENTRY_RELEASE = {
             }
           }), [r]), (0, m.useEffect)((() => (o.autoSetLoading && window.postMessage({
             type: "graph.loadingUpdate",
-            loading: s
+            loading: a
           }), () => {
             o.autoSetLoading && window.postMessage({
               type: "graph.loadingUpdate",
               loading: !1
             })
-          })), [s]), (0, m.useEffect)((() => {
-            if (o.autoSetError && a) throw new Error(String(a))
-          }), [a]), {
-            loading: s,
-            error: a,
+          })), [a]), (0, m.useEffect)((() => {
+            if (o.autoSetError && s) throw new Error(String(s))
+          }), [s]), {
+            loading: a,
+            error: s,
             data: r,
             ...i
           }
@@ -736,10 +736,10 @@ _global.SENTRY_RELEASE = {
               ...t,
               uri: o
             },
-            [s] = (0, m.useState)(new y.D({
+            [a] = (0, m.useState)(new y.D({
               typePolicies: n
             })),
-            a = N.concat((e => {
+            s = N.concat((e => {
               let {
                 token: t
               } = e;
@@ -762,8 +762,8 @@ _global.SENTRY_RELEASE = {
               fetch: F()
             }))(r)));
           return new S.R({
-            cache: s,
-            link: a
+            cache: a,
+            link: s
           })
         },
         G = e => {
@@ -891,13 +891,13 @@ _global.SENTRY_RELEASE = {
           googlePlay: new oe("ggle_play", "Google Play", 1023),
           pcalt: new oe("pcalt", "PC Enhanced", 22)
         }),
-        se = Object.freeze(Object.values(re));
+        ae = Object.freeze(Object.values(re));
 
-      function ae(e) {
+      function se(e) {
         if (!e) return;
         if (e instanceof oe) return e;
         const t = e.toString().toLowerCase();
-        return se.find((e => t === e.name || t === e.id.toString() || t === e.friendlyName.toLowerCase() || t === e.alias?.toLowerCase()))
+        return ae.find((e => t === e.name || t === e.id.toString() || t === e.friendlyName.toLowerCase() || t === e.alias?.toLowerCase()))
       }
       const ie = function() {
         for (var e = arguments.length, t = new Array(e), n = 0; n < e; n++) t[n] = arguments[n];
@@ -1069,11 +1069,11 @@ _global.SENTRY_RELEASE = {
         Ne = function(e) {
           let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 250;
           return n => ((e, t, n) => {
-            const [o, r] = (0, m.useState)(t), s = e => {
+            const [o, r] = (0, m.useState)(t), a = e => {
               let t = e;
               const n = t?.items;
               if (n?.length) {
-                const e = n.map((e => s(e)));
+                const e = n.map((e => a(e)));
                 t = {
                   ...t,
                   items: e
@@ -1089,7 +1089,7 @@ _global.SENTRY_RELEASE = {
             };
             return (0, m.useEffect)((() => {
               const e = l().debounce((() => {
-                r(s(t))
+                r(a(t))
               }), n);
               return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
             })), (0, g.jsx)(e, {
@@ -1138,15 +1138,15 @@ query Translations($locale: String!, $config: String!) {
       });
       var o = n(62229),
         r = n(28567),
-        s = n(4827),
-        a = n(37240),
+        a = n(4827),
+        s = n(37240),
         i = n(82014);
       var c = n(48267),
         l = n(73855);
       const d = {
           token: (0, r.UT)("")
         },
-        u = (0, s.A)({
+        u = (0, a.A)({
           context: (0, o.createContext)(d),
           key: "utilsTokenProvider"
         }),
@@ -1186,7 +1186,7 @@ query Translations($locale: String!, $config: String!) {
               if (e) {
                 const {
                   exp: t = 0
-                } = (0, a.s)(e) ?? {};
+                } = (0, s.s)(e) ?? {};
                 if (t - (new Date).getTime() / 1e3 > 0 && e) return {
                   bearerToken: e
                 }
@@ -1216,25 +1216,25 @@ query Translations($locale: String!, $config: String!) {
       });
       var o = n(62229),
         r = n(4827),
-        s = n(73855);
-      const a = (0, r.A)({
+        a = n(73855);
+      const s = (0, r.A)({
           context: (0, o.createContext)(null),
           key: "newswirePost"
         }),
         {
           Consumer: i
-        } = a,
+        } = s,
         c = e => {
           let {
             article: t,
             children: n
           } = e;
-          return (0, s.jsx)(a.Provider, {
+          return (0, a.jsx)(s.Provider, {
             value: t,
             children: n
           })
         },
-        l = () => (0, o.useContext)(a)
+        l = () => (0, o.useContext)(s)
     },
     42582: (e, t, n) => {
       n.d(t, {
@@ -1243,8 +1243,8 @@ query Translations($locale: String!, $config: String!) {
       });
       var o = n(62229),
         r = n(28567),
-        s = n(95236),
-        a = n(4827),
+        a = n(95236),
+        s = n(4827),
         i = n(73855);
       const c = {
           xxs: {
@@ -1284,10 +1284,10 @@ query Translations($locale: String!, $config: String!) {
             const {
               min: o,
               max: r
-            } = c[t], s = e >= o && e <= r, a = e >= o;
+            } = c[t], a = e >= o && e <= r, s = e >= o;
             n[t] = {
-              activeExact: s,
-              activeMin: a,
+              activeExact: a,
+              activeMin: s,
               min: o,
               max: r
             }
@@ -1299,7 +1299,7 @@ query Translations($locale: String!, $config: String!) {
             windowHeight: t
           }
         },
-        d = (0, a.A)({
+        d = (0, s.A)({
           context: (0, o.createContext)(l()),
           key: "resizeContext"
         }),
@@ -1311,7 +1311,7 @@ query Translations($locale: String!, $config: String!) {
           let {
             children: t
           } = e;
-          const n = (0, s.q)(h);
+          const n = (0, a.q)(h);
           return (0, o.useEffect)((() => {
             const e = () => {
               h(l())
@@ -1333,8 +1333,8 @@ query Translations($locale: String!, $config: String!) {
       });
       var o = n(62229),
         r = n(28567),
-        s = n(95236),
-        a = n(4827),
+        a = n(95236),
+        s = n(4827),
         i = n(52399),
         c = n(73855);
       const l = (0, i.A)({
@@ -1342,7 +1342,7 @@ query Translations($locale: String!, $config: String!) {
           value: (0, r.UT)(!1)
         }),
         d = e => l(e),
-        u = (0, a.A)({
+        u = (0, s.A)({
           context: (0, o.createContext)(null),
           key: "scrollContext"
         }),
@@ -1351,7 +1351,7 @@ query Translations($locale: String!, $config: String!) {
           let {
             children: t
           } = e;
-          const [n, r] = (0, o.useState)(window.pageYOffset), [a, i] = (0, o.useState)(null), [h, m] = (0, o.useState)(!1), g = (0, s.q)(l);
+          const [n, r] = (0, o.useState)(window.pageYOffset), [s, i] = (0, o.useState)(null), [h, m] = (0, o.useState)(!1), g = (0, a.q)(l);
           let w;
           const p = () => {
             m(!0), clearTimeout(w), w = setTimeout((() => {
@@ -1374,10 +1374,10 @@ query Translations($locale: String!, $config: String!) {
               pageYOffset: n,
               pauseUserShouldSeeMore: p,
               setFreezeUserShouldSeeMore: d,
-              userShouldSeeMore: a
+              userShouldSeeMore: s
             },
             children: t
-          })), [g, n, p, a])
+          })), [g, n, p, s])
         }
     }
   }

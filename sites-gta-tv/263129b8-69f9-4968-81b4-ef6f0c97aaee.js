@@ -28,8 +28,8 @@ _global.SENTRY_RELEASE = {
         s = Symbol.for("react.suspense"),
         l = Symbol.for("react.memo"),
         p = Symbol.for("react.lazy"),
-        d = Symbol.iterator,
-        y = {
+        y = Symbol.iterator,
+        d = {
           isMounted: function() {
             return !1
           },
@@ -41,13 +41,13 @@ _global.SENTRY_RELEASE = {
         b = {};
 
       function h(e, t, r) {
-        this.props = e, this.context = t, this.refs = b, this.updater = r || y
+        this.props = e, this.context = t, this.refs = b, this.updater = r || d
       }
 
       function m() {}
 
       function v(e, t, r) {
-        this.props = e, this.context = t, this.refs = b, this.updater = r || y
+        this.props = e, this.context = t, this.refs = b, this.updater = r || d
       }
       h.prototype.isReactComponent = {}, h.prototype.setState = function(e, t) {
         if ("object" != typeof e && "function" != typeof e && null != e) throw Error("setState(...): takes an object of state variables to update or a function which returns an object of state variables.");
@@ -144,7 +144,7 @@ _global.SENTRY_RELEASE = {
             var s = u + j(f = e[i], i);
             c += I(f, t, o, s, a)
           } else if (s = function(e) {
-              return null === e || "object" != typeof e ? null : "function" == typeof(e = d && e[d] || e["@@iterator"]) ? e : null
+              return null === e || "object" != typeof e ? null : "function" == typeof(e = y && e[y] || e["@@iterator"]) ? e : null
             }(e), "function" == typeof s)
             for (e = s.call(e), i = 0; !(f = e.next()).done;) c += I(f = f.value, t, o, s = u + j(f, i++), a);
           else if ("object" === f) throw t = String(e), Error("Objects are not valid as a React child (found: " + ("[object Object]" === t ? "object with keys {" + Object.keys(e).join(", ") + "}" : t) + "). If you meant to render a collection of children, use an array instead.");

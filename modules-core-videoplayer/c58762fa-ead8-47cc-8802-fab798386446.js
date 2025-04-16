@@ -44,10 +44,10 @@ _global.SENTRY_RELEASE = {
             };
           if (-1 !== g) e[g].references++, e[g].updater(p);
           else {
-            var f = r(p, t);
+            var h = r(p, t);
             t.byIndex = d, e.splice(d, 0, {
               identifier: m,
-              updater: f,
+              updater: h,
               references: 1
             })
           }
@@ -238,8 +238,8 @@ _global.SENTRY_RELEASE = {
         m = a.n(c),
         g = a(27835),
         p = a.n(g),
-        f = a(17529),
-        h = a.n(f),
+        h = a(17529),
+        f = a.n(h),
         u = a(72162),
         v = a.n(u),
         b = a(82510),
@@ -248,7 +248,7 @@ _global.SENTRY_RELEASE = {
         w = a.n(A),
         y = a(62852),
         k = {};
-      k.styleTagTransform = w(), k.setAttributes = v(), k.insert = h().bind(null, "head"), k.domAPI = p(), k.insertStyleElement = x(), m()(y.A, k);
+      k.styleTagTransform = w(), k.setAttributes = v(), k.insert = f().bind(null, "head"), k.domAPI = p(), k.insertStyleElement = x(), m()(y.A, k);
       const C = y.A && y.A.locals ? y.A.locals : void 0;
       var z = a(73855);
       const _ = Object.freeze({
@@ -267,14 +267,14 @@ _global.SENTRY_RELEASE = {
           const {
             data: p
           } = (0, s.useRockstarUser)(), {
-            track: f
-          } = (0, s.useGtmTrack)(), h = (0, l.getCookieValueByName)("UAGC"), [u, v] = (0, t.useState)("1" === (b = h) ? _.PASSED : "0" === b ? _.FAILED : _.NOT_SUBMITTED);
+            track: h
+          } = (0, s.useGtmTrack)(), f = (0, l.getCookieValueByName)("UAGC"), [u, v] = (0, t.useState)("1" === (b = f) ? _.PASSED : "0" === b ? _.FAILED : _.NOT_SUBMITTED);
           var b;
           const [x, A] = (0, t.useState)(), w = (0, t.createRef)(), y = (0, t.createRef)(), k = (0, t.createRef)(), {
             style: B
           } = c;
           return (0, t.useEffect)((() => {
-            f({
+            h({
               event: "age_gate_popup",
               element_placement: m.element_placement ?? ""
             })
@@ -306,7 +306,7 @@ _global.SENTRY_RELEASE = {
                   s = (0, i.f)(a) && (0, o.d)(a, t);
                 if (A(s), s) {
                   const n = (0, d.V)(new Date, a) >= e;
-                  f(n ? {
+                  h(n ? {
                     event: "age_gate_passed",
                     element_placement: m.element_placement ?? ""
                   } : {

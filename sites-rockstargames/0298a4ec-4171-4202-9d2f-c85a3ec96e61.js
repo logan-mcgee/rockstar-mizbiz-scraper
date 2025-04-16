@@ -21,18 +21,18 @@ _global.SENTRY_RELEASE = {
         default: () => o
       });
       var t = s(62229),
-        d = s(9623),
-        n = s(2918);
+        n = s(9623),
+        d = s(2918);
       const o = () => {
         const {
           data: e,
           loggedIn: a
-        } = (0, n.useRockstarUser)(), {
+        } = (0, d.useRockstarUser)(), {
           hasGtaPlus: s,
           accountSynced: o
         } = e ?? {}, {
           setCharactersNeeded: l
-        } = (0, n.useRockstarUserState)(), r = (0, d.useNavigate)();
+        } = (0, d.useRockstarUserState)(), r = (0, n.useNavigate)();
         return (0, t.useLayoutEffect)((() => (l("gtao"), () => {
           l(null)
         })), []), (0, t.useEffect)((() => {

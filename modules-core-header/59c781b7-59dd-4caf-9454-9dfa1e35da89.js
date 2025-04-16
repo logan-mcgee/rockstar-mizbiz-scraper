@@ -1,8 +1,8 @@
 ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      d = (new Error).stack;
-    d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "59c781b7-59dd-4caf-9454-9dfa1e35da89", e._sentryDebugIdIdentifier = "sentry-dbid-59c781b7-59dd-4caf-9454-9dfa1e35da89")
+      a = (new Error).stack;
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "59c781b7-59dd-4caf-9454-9dfa1e35da89", e._sentryDebugIdIdentifier = "sentry-dbid-59c781b7-59dd-4caf-9454-9dfa1e35da89")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -16,27 +16,27 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [6158], {
-    16158: (e, d, a) => {
-      a.r(d), a.d(d, {
+    16158: (e, a, d) => {
+      d.r(a), d.d(a, {
         Portal: () => s,
         Root: () => f
       });
-      var o = a(62229),
-        n = a(44853),
-        t = a(85413),
-        l = a(92600),
-        r = a(73855),
-        s = o.forwardRef(((e, d) => {
+      var o = d(62229),
+        n = d(44853),
+        t = d(85413),
+        l = d(92600),
+        r = d(73855),
+        s = o.forwardRef(((e, a) => {
           const {
-            container: a,
+            container: d,
             ...s
-          } = e, [f, b] = o.useState(!1);
-          (0, l.N)((() => b(!0)), []);
-          const c = a || f && globalThis?.document?.body;
-          return c ? n.createPortal((0, r.jsx)(t.sG.div, {
+          } = e, [f, c] = o.useState(!1);
+          (0, l.N)((() => c(!0)), []);
+          const b = d || f && globalThis?.document?.body;
+          return b ? n.createPortal((0, r.jsx)(t.sG.div, {
             ...s,
-            ref: d
-          }), c) : null
+            ref: a
+          }), b) : null
         }));
       s.displayName = "Portal";
       var f = s

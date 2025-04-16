@@ -23,8 +23,8 @@ _global.SENTRY_RELEASE = {
       });
       var a = n(95966),
         t = n(2973),
-        d = n.n(t),
-        s = n(45768),
+        s = n.n(t),
+        d = n(45768),
         l = n(2681),
         r = n(73855);
       const o = e => {
@@ -33,7 +33,7 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             sanitize: n
-          } = d();
+          } = s();
           return (0, r.jsxs)("div", {
             className: l.A.detail,
             children: [(0, r.jsx)("div", {
@@ -42,7 +42,7 @@ _global.SENTRY_RELEASE = {
               }
             }), i.album_cover ? (0, r.jsx)("div", {
               className: [l.A.album, l.A[i.album_cover]].join(" ")
-            }) : "", (0, r.jsx)(s.A, {
+            }) : "", (0, r.jsx)(d.A, {
               to: "/",
               children: (0, r.jsx)("div", {
                 className: l.A.rockstar
@@ -58,7 +58,7 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             sanitize: t
-          } = d();
+          } = s();
           return (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)("h1", {
               children: a("Music Credits")
@@ -79,7 +79,7 @@ _global.SENTRY_RELEASE = {
               })]
             }) : "", (0, r.jsx)("div", {
               className: [l.A.list, i && 55 === i[0].game_id ? l.A.warriors : ""].join(" "),
-              children: i && i.map(((e, d) => (0, r.jsxs)("div", {
+              children: i && i.map(((e, s) => (0, r.jsxs)("div", {
                 className: l.A.station,
                 children: [55 !== e.game_id ? (0, r.jsx)("div", {
                   className: [l.A.logo, l.A[e.slug]].join(" ")
@@ -99,8 +99,8 @@ _global.SENTRY_RELEASE = {
                     children: e.courtesy_of
                   }), e?.music_detail ? (0, r.jsx)("p", {
                     className: l.A.additional,
-                    children: (0, r.jsx)(s.A, {
-                      to: `music?gameId=${n}&stationId=${i[d].id}&songId=${e.id}`,
+                    children: (0, r.jsx)(d.A, {
+                      to: `music?gameId=${n}&stationId=${i[s].id}&songId=${e.id}`,
                       children: a("Lyrics/Info")
                     })
                   }) : ""]
@@ -116,29 +116,29 @@ _global.SENTRY_RELEASE = {
           i = Number(e.get("gameId")),
           n = Number(e.get("songId")),
           t = Number(e.get("stationId"));
-        let d = !1;
+        let s = !1;
         const {
-          data: s
+          data: d
         } = (0, a.useQuery)(m(), {
           variables: {
             gameId: i
           },
           autoSetLoading: !0
         });
-        if (!s) return null;
+        if (!d) return null;
         const {
           musicStations: u
-        } = s;
+        } = d;
         return Object.keys(u).length, u.map((e => {
           e.id === t && e.music_credits.map((e => {
-            e.id === n && (d = e.music_detail)
+            e.id === n && (s = e.music_detail)
           }))
         })), (0, r.jsxs)("div", {
           className: [l.A.music, 25 === i ? l.A.gtaiv : 26 === i ? l.A.tlad : 32 === i ? l.A.bogt : 28 === i ? l.A.eflc : 34 === i ? l.A.vcs : ""].join(" "),
           children: [(0, r.jsx)("div", {
             className: [l.A.gameLogo, 26 === i ? l.A.tlad : 32 === i ? l.A.bogt : 28 === i ? l.A.eflc : 25 === i ? l.A.gtaiv : 34 === i ? l.A.vcs : 55 === i ? l.A.warriors : ""].join(" ")
-          }), i && u ? t && n && d ? (0, r.jsx)(o, {
-            detail: d
+          }), i && u ? t && n && s ? (0, r.jsx)(o, {
+            detail: s
           }) : (0, r.jsx)(c, {
             stations: u,
             gameId: i
@@ -388,20 +388,20 @@ _global.SENTRY_RELEASE = {
           definitions: [t(e, i)]
         };
         e.hasOwnProperty("loc") && (n.loc = e.loc);
-        var d = a[i] || new Set,
-          s = new Set,
+        var s = a[i] || new Set,
+          d = new Set,
           l = new Set;
-        for (d.forEach((function(e) {
+        for (s.forEach((function(e) {
             l.add(e)
           })); l.size > 0;) {
           var r = l;
           l = new Set, r.forEach((function(e) {
-            s.has(e) || (s.add(e), (a[e] || new Set).forEach((function(e) {
+            d.has(e) || (d.add(e), (a[e] || new Set).forEach((function(e) {
               l.add(e)
             })))
           }))
         }
-        return s.forEach((function(i) {
+        return d.forEach((function(i) {
           var a = t(e, i);
           a && n.definitions.push(a)
         })), n

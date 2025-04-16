@@ -36,10 +36,10 @@ _global.SENTRY_RELEASE = {
               p = r.safe && Array.isArray(u),
               f = Object.prototype.toString.call(u),
               y = t(u),
-              b = "[object Object]" === f || "[object Array]" === f,
-              m = c ? c + o + s(d) : s(d);
-            if (!p && !y && b && Object.keys(u).length && (!r.maxDepth || l < a)) return e(u, m, l + 1);
-            i[m] = u
+              m = "[object Object]" === f || "[object Array]" === f,
+              b = c ? c + o + s(d) : s(d);
+            if (!p && !y && m && Object.keys(u).length && (!r.maxDepth || l < a)) return e(u, b, l + 1);
+            i[b] = u
           }))
         }(e), i
       }
@@ -93,7 +93,7 @@ _global.SENTRY_RELEASE = {
         useImageParser: () => w.S1,
         useTinaComponents: () => u,
         useTinaPayload: () => p.i,
-        useTranslations: () => m
+        useTranslations: () => b
       });
       var r = n(62229),
         o = n(17868),
@@ -121,8 +121,8 @@ _global.SENTRY_RELEASE = {
       var p = n(29960),
         f = n(34695),
         y = n.n(f),
-        b = n(58147);
-      const m = e => {
+        m = n(58147);
+      const b = e => {
         let {
           payload: t,
           variables: n
@@ -132,7 +132,7 @@ _global.SENTRY_RELEASE = {
             return a().cloneDeepWith(e, ((e, r, o) => {
               r === t && e && (n[o.key] = e)
             })), n
-          })(t, b.Qw),
+          })(t, m.Qw),
           o = JSON.parse(JSON.stringify(a().merge(JSON.parse(JSON.stringify(r)), JSON.parse(JSON.stringify(n?.keys ?? {}))))),
           s = JSON.parse(JSON.stringify(t));
         return a().cloneDeepWith(s, ((e, t, n) => {
@@ -203,7 +203,7 @@ _global.SENTRY_RELEASE = {
             } = e;
             const s = e => {
               let c = "";
-              if (c = Array.isArray(e?.[b.ZH]) ? e[b.ZH].map((e => s(e))) : e?.[b.ZH] ?? "", !e?._template) return c;
+              if (c = Array.isArray(e?.[m.ZH]) ? e[m.ZH].map((e => s(e))) : e?.[m.ZH] ?? "", !e?._template) return c;
               let l = e._template;
               "0" === l && (console.warn(`The _template "${l}" wasn't found in the available components. The _template "${l}" was replaced with "gen9.Hero".`, {
                 availableComponents: Object.keys(t),
@@ -234,7 +234,7 @@ _global.SENTRY_RELEASE = {
                 key: f
               }, c)
             };
-            return n?.[b.ZH]?.length ? s(n) : null
+            return n?.[m.ZH]?.length ? s(n) : null
           })({
             components: t,
             payload: n,
@@ -254,7 +254,7 @@ _global.SENTRY_RELEASE = {
           (0, r.useEffect)((() => {
             t?.payload && l(t.payload), t?.variables && y(t.variables)
           }), [t]);
-          const [b] = (0, r.useState)({
+          const [m] = (0, r.useState)({
             ...n,
             ...u() ?? {}
           }), g = (e => {
@@ -291,7 +291,7 @@ _global.SENTRY_RELEASE = {
             }), [t]), n
           })({
             payload: c
-          }), h = m({
+          }), h = b({
             payload: c,
             variables: f
           });
@@ -309,10 +309,10 @@ _global.SENTRY_RELEASE = {
             return (0, i.jsx)(p.o, {
               payload: r,
               children: (0, i.jsx)(d, {
-                components: b,
+                components: m,
                 children: (0, i.jsx)(k, {
                   payload: e,
-                  components: b,
+                  components: m,
                   componentProps: {
                     ...o,
                     tina: t

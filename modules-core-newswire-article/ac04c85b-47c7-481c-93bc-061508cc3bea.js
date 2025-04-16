@@ -31,10 +31,10 @@ _global.SENTRY_RELEASE = {
         for (var a = {}, c = [], s = 0; s < e.length; s++) {
           var i = e[s],
             u = r.base ? i[0] + r.base : i[0],
-            f = a[u] || 0,
-            d = "".concat(u, " ").concat(f);
-          a[u] = f + 1;
-          var l = n(d),
+            l = a[u] || 0,
+            f = "".concat(u, " ").concat(l);
+          a[u] = l + 1;
+          var d = n(f),
             p = {
               css: i[1],
               media: i[2],
@@ -42,16 +42,16 @@ _global.SENTRY_RELEASE = {
               supports: i[4],
               layer: i[5]
             };
-          if (-1 !== l) t[l].references++, t[l].updater(p);
+          if (-1 !== d) t[d].references++, t[d].updater(p);
           else {
             var y = o(p, r);
             r.byIndex = s, t.splice(s, 0, {
-              identifier: d,
+              identifier: f,
               updater: y,
               references: 1
             })
           }
-          c.push(d)
+          c.push(f)
         }
         return c
       }
@@ -75,8 +75,8 @@ _global.SENTRY_RELEASE = {
             t[s].references--
           }
           for (var i = r(e, o), u = 0; u < a.length; u++) {
-            var f = n(a[u]);
-            0 === t[f].references && (t[f].updater(), t.splice(f, 1))
+            var l = n(a[u]);
+            0 === t[l].references && (t[l].updater(), t.splice(l, 1))
           }
           a = i
         }
@@ -169,8 +169,8 @@ _global.SENTRY_RELEASE = {
               null != i && (c[i] = !0)
             }
           for (var u = 0; u < e.length; u++) {
-            var f = [].concat(e[u]);
-            r && c[f[0]] || (void 0 !== a && (void 0 === f[5] || (f[1] = "@layer".concat(f[5].length > 0 ? " ".concat(f[5]) : "", " {").concat(f[1], "}")), f[5] = a), n && (f[2] ? (f[1] = "@media ".concat(f[2], " {").concat(f[1], "}"), f[2] = n) : f[2] = n), o && (f[4] ? (f[1] = "@supports (".concat(f[4], ") {").concat(f[1], "}"), f[4] = o) : f[4] = "".concat(o)), t.push(f))
+            var l = [].concat(e[u]);
+            r && c[l[0]] || (void 0 !== a && (void 0 === l[5] || (l[1] = "@layer".concat(l[5].length > 0 ? " ".concat(l[5]) : "", " {").concat(l[1], "}")), l[5] = a), n && (l[2] ? (l[1] = "@media ".concat(l[2], " {").concat(l[1], "}"), l[2] = n) : l[2] = n), o && (l[4] ? (l[1] = "@supports (".concat(l[4], ") {").concat(l[1], "}"), l[4] = o) : l[4] = "".concat(o)), t.push(l))
           }
         }, t
       }
@@ -210,15 +210,15 @@ _global.SENTRY_RELEASE = {
       function u(e, t, n) {
         var r, a = {},
           u = null,
-          f = null;
-        for (r in void 0 !== n && (u = "" + n), void 0 !== t.key && (u = "" + t.key), void 0 !== t.ref && (f = t.ref), t) c.call(t, r) && !i.hasOwnProperty(r) && (a[r] = t[r]);
+          l = null;
+        for (r in void 0 !== n && (u = "" + n), void 0 !== t.key && (u = "" + t.key), void 0 !== t.ref && (l = t.ref), t) c.call(t, r) && !i.hasOwnProperty(r) && (a[r] = t[r]);
         if (e && e.defaultProps)
           for (r in t = e.defaultProps) void 0 === a[r] && (a[r] = t[r]);
         return {
           $$typeof: o,
           type: e,
           key: u,
-          ref: f,
+          ref: l,
           props: a,
           _owner: s.current
         }

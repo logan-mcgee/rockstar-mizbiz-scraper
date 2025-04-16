@@ -43,8 +43,8 @@ _global.SENTRY_RELEASE = {
             p = e.enabled,
             v = e.shards,
             m = e.sideCar,
-            b = e.noIsolation,
-            w = e.inert,
+            w = e.noIsolation,
+            b = e.inert,
             y = e.allowPinchZoom,
             _ = e.as,
             E = void 0 === _ ? "div" : _,
@@ -57,8 +57,8 @@ _global.SENTRY_RELEASE = {
             sideCar: l,
             removeScrollBar: g,
             shards: v,
-            noIsolation: b,
-            inert: w,
+            noIsolation: w,
+            inert: b,
             setCallbacks: u,
             allowPinchZoom: !!y,
             lockRef: t,
@@ -140,7 +140,7 @@ _global.SENTRY_RELEASE = {
             d = e.gap;
           return void 0 === t && (t = "margin"), "\n  .".concat("with-scroll-bars-hidden", " {\n   overflow: hidden ").concat(r, ";\n   padding-right: ").concat(d, "px ").concat(r, ";\n  }\n  body {\n    overflow: hidden ").concat(r, ";\n    overscroll-behavior: contain;\n    ").concat([n && "position: relative ".concat(r, ";"), "margin" === t && "\n    padding-left: ".concat(o, "px;\n    padding-top: ").concat(i, "px;\n    padding-right: ").concat(l, "px;\n    margin-left:0;\n    margin-top:0;\n    margin-right: ").concat(d, "px ").concat(r, ";\n    "), "padding" === t && "padding-right: ".concat(d, "px ").concat(r, ";")].filter(Boolean).join(""), "\n  }\n  \n  .").concat(a, " {\n    right: ").concat(d, "px ").concat(r, ";\n  }\n  \n  .").concat(c, " {\n    margin-right: ").concat(d, "px ").concat(r, ";\n  }\n  \n  .").concat(a, " .").concat(a, " {\n    right: 0 ").concat(r, ";\n  }\n  \n  .").concat(c, " .").concat(c, " {\n    margin-right: 0 ").concat(r, ";\n  }\n  \n  body {\n    ").concat("--removed-body-scroll-bar-size", ": ").concat(d, "px;\n  }\n")
         },
-        b = function(e) {
+        w = function(e) {
           var n = e.noRelative,
             t = e.noImportant,
             r = e.gapMode,
@@ -169,18 +169,18 @@ _global.SENTRY_RELEASE = {
             styles: m(c, !n, a, t ? "" : "!important")
           })
         },
-        w = !1;
+        b = !1;
       if ("undefined" != typeof window) try {
         var y = Object.defineProperty({}, "passive", {
           get: function() {
-            return w = !0, !0
+            return b = !0, !0
           }
         });
         window.addEventListener("test", y, y), window.removeEventListener("test", y, y)
       } catch (e) {
-        w = !1
+        b = !1
       }
-      var _ = !!w && {
+      var _ = !!b && {
           passive: !1
         },
         E = function(e, n) {
@@ -346,7 +346,7 @@ _global.SENTRY_RELEASE = {
           m = e.inert;
         return o.createElement(o.Fragment, null, m ? o.createElement(i, {
           styles: N(c)
-        }) : null, v ? o.createElement(b, {
+        }) : null, v ? o.createElement(w, {
           gapMode: e.gapMode
         }) : null)
       })), s);

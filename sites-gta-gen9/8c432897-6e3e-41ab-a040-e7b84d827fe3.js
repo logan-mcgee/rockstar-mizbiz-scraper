@@ -263,10 +263,10 @@ _global.SENTRY_RELEASE = {
             if (g <= 0 || isNaN(g)) console.warn("Can not process element without height. Make sure the element is displayed and has a static height.");
             else if (p <= 0 || isNaN(p)) console.warn("Can not process element without width. Make sure the element is displayed and has a static width.");
             else {
-              var b = (0, f.default)();
-              this.pid = b;
-              var m = function() {
-                  return b !== e.pid
+              var m = (0, f.default)();
+              this.pid = m;
+              var b = function() {
+                  return m !== e.pid
                 },
                 v = "multi" === o ? function() {
                   return y(c, g)
@@ -287,31 +287,31 @@ _global.SENTRY_RELEASE = {
                 return (0, s.default)((function() {
                   return O <= T
                 }), (function(t) {
-                  if (m()) return t(!0);
+                  if (b()) return t(!0);
                   _ = parseInt((O + T) / 2, 10), e.setState({
                     fontSize: _
                   }, (function() {
-                    return m() ? t(!0) : (v() ? O = _ + 1 : T = _ - 1, t())
+                    return b() ? t(!0) : (v() ? O = _ + 1 : T = _ - 1, t())
                   }))
                 }), t)
               }, function(t) {
                 return "single" === o && i || w() ? t() : (O = n, T = _, (0, s.default)((function() {
                   return O < T
                 }), (function(t) {
-                  if (m()) return t(!0);
+                  if (b()) return t(!0);
                   _ = parseInt((O + T) / 2, 10), e.setState({
                     fontSize: _
                   }, (function() {
-                    return b !== e.pid ? t(!0) : (w() ? O = _ + 1 : T = _ - 1, t())
+                    return m !== e.pid ? t(!0) : (w() ? O = _ + 1 : T = _ - 1, t())
                   }))
                 }), t))
               }, function(t) {
-                if (_ = Math.min(O, T), _ = Math.max(_, n), _ = Math.min(_, r), _ = Math.max(_, 0), m()) return t(!0);
+                if (_ = Math.min(O, T), _ = Math.max(_, n), _ = Math.min(_, r), _ = Math.max(_, 0), b()) return t(!0);
                 e.setState({
                   fontSize: _
                 }, t)
               }], (function(t) {
-                t || m() || e.setState({
+                t || b() || e.setState({
                   ready: !0
                 }, (function() {
                   return a(_)

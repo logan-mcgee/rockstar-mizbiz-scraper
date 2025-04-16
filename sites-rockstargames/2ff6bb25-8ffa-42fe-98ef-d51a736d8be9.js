@@ -25,8 +25,8 @@ _global.SENTRY_RELEASE = {
         r = e(45768),
         i = e(53178),
         o = e.n(i),
-        d = e(27835),
-        s = e.n(d),
+        s = e(27835),
+        d = e.n(s),
         l = e(17529),
         c = e.n(l),
         g = e(72162),
@@ -37,7 +37,7 @@ _global.SENTRY_RELEASE = {
         u = e.n(h),
         v = e(92024),
         x = {};
-      x.styleTagTransform = u(), x.setAttributes = m(), x.insert = c().bind(null, "head"), x.domAPI = s(), x.insertStyleElement = f(), o()(v.A, x);
+      x.styleTagTransform = u(), x.setAttributes = m(), x.insert = c().bind(null, "head"), x.domAPI = d(), x.insertStyleElement = f(), o()(v.A, x);
       const b = v.A && v.A.locals ? v.A.locals : void 0;
       var A = e(73855);
       const w = n => {
@@ -62,12 +62,12 @@ _global.SENTRY_RELEASE = {
             size: i,
             toExplicit: o
           } = n;
-          const d = o ?? `/videos/${t.id}`,
-            s = {
+          const s = o ?? `/videos/${t.id}`,
+            d = {
               className: b.videoPreview,
               "data-gtm-category": "Videos",
               "data-gtm-action": "Video Click-through",
-              "data-gtm-label": d
+              "data-gtm-label": s
             },
             l = (0, A.jsxs)("div", {
               className: b.card,
@@ -90,20 +90,20 @@ _global.SENTRY_RELEASE = {
               })]
             });
           return e ? (0, A.jsx)("a", {
-            href: d,
+            href: s,
             target: "_blank",
-            ...s,
+            ...d,
             children: l
           }) : (0, A.jsx)(r.A, {
-            to: d,
-            ...s,
+            to: s,
+            ...d,
             children: l
           })
         }
     },
     92024: (n, a, e) => {
       e.d(a, {
-        A: () => d
+        A: () => s
       });
       var t = e(42587),
         r = e.n(t),
@@ -125,7 +125,7 @@ _global.SENTRY_RELEASE = {
         screencapLoaded: "rockstargames-sites-rockstargamesb8d4ef3e1a73c58f4002eab351d4eec2",
         gameTitle: "rockstargames-sites-rockstargamesa1fe577b937c0e16250bf38e9d775061"
       };
-      const d = o
+      const s = o
     }
   }
 ]);

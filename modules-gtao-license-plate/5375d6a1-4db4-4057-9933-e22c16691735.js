@@ -20,15 +20,15 @@ _global.SENTRY_RELEASE = {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => l,
-        Lightbox_Dialog_Description: () => p,
-        Lightbox_Dialog_Title: () => f,
+        Lightbox_Dialog_Description: () => f,
+        Lightbox_Dialog_Title: () => p,
         Lightbox_Download_Button_Label: () => L,
         Lightbox_Download_Button_Tooltip: () => h,
         Lightbox_Open_Button_Label: () => r,
         Lightbox_Reset_Zoom_Button_Label: () => d,
         Lightbox_Reset_Zoom_Button_Tooltip: () => g,
-        Lightbox_Zoom_In_Button_Label: () => i,
-        Lightbox_Zoom_In_Button_Tooltip: () => a,
+        Lightbox_Zoom_In_Button_Label: () => a,
+        Lightbox_Zoom_In_Button_Tooltip: () => i,
         Lightbox_Zoom_Out_Button_Label: () => n,
         Lightbox_Zoom_Out_Button__Tooltip: () => b,
         Lightbox_Zoom_Slider_Label: () => u,
@@ -37,8 +37,8 @@ _global.SENTRY_RELEASE = {
       });
       var _ = "ライトボックスを閉じる",
         l = "{shortcut}を押す",
-        i = "ズームイン",
-        a = "{shortcut}を押す",
+        a = "ズームイン",
+        i = "{shortcut}を押す",
         n = "ズームアウト",
         b = "{shortcut}を押す",
         d = "リセット",
@@ -48,13 +48,13 @@ _global.SENTRY_RELEASE = {
         L = "ダウンロード",
         h = "ダウンロード",
         r = "ライトボックス内のイメージを開く",
-        f = "ライトボックスのイメージ",
-        p = "Altテキスト：{alt}",
+        p = "ライトボックスのイメージ",
+        f = "Altテキスト：{alt}",
         x = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: l,
-          Lightbox_Zoom_In_Button_Label: i,
-          Lightbox_Zoom_In_Button_Tooltip: a,
+          Lightbox_Zoom_In_Button_Label: a,
+          Lightbox_Zoom_In_Button_Tooltip: i,
           Lightbox_Zoom_Out_Button_Label: n,
           Lightbox_Zoom_Out_Button__Tooltip: b,
           Lightbox_Reset_Zoom_Button_Label: d,
@@ -64,8 +64,8 @@ _global.SENTRY_RELEASE = {
           Lightbox_Download_Button_Label: L,
           Lightbox_Download_Button_Tooltip: h,
           Lightbox_Open_Button_Label: r,
-          Lightbox_Dialog_Title: f,
-          Lightbox_Dialog_Description: p
+          Lightbox_Dialog_Title: p,
+          Lightbox_Dialog_Description: f
         }
     }
   }

@@ -16,13 +16,13 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [5765], {
-    65765: (e, a, d) => {
-      d.r(a), d.d(a, {
+    65765: (e, a, s) => {
+      s.r(a), s.d(a, {
         default: () => n
       });
-      var s = d(6274),
-        t = d(73855);
-      const n = () => (0, t.jsx)(s.A, {
+      var d = s(6274),
+        t = s(73855);
+      const n = () => (0, t.jsx)(d.A, {
         jsonType: "careers-privacy",
         titleKey: "Privacy Policy"
       })
