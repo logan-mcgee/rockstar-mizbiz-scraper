@@ -182,11 +182,11 @@ _global.SENTRY_RELEASE = {
           value: (0, s.makeVar)((0, s.webSettingsReactive)()?.currentCharId)
         }),
         w = e => v(e),
-        y = (0, s.setMakeVarItem)({
+        b = (0, s.setMakeVarItem)({
           key: "selectedCharacterTupleReactive",
           value: (0, s.makeVar)(null)
         }),
-        b = e => y(e),
+        y = e => b(e),
         _ = (0, s.setMakeVarItem)({
           key: "rockstarIdReactive",
           value: (0, s.makeVar)(null)
@@ -212,7 +212,7 @@ _global.SENTRY_RELEASE = {
             a = (0, s.useReactiveVar)(v),
             r = (0, s.useReactiveVar)(p),
             n = (0, s.useReactiveVar)(g),
-            c = (0, s.useReactiveVar)(y);
+            c = (0, s.useReactiveVar)(b);
           return {
             charactersNeeded: e,
             crewsNeeded: t,
@@ -227,7 +227,7 @@ _global.SENTRY_RELEASE = {
             setCurrentCharId: w,
             setHasNotifications: h,
             setNavOpen: f,
-            setSelectedCharacterTuple: b,
+            setSelectedCharacterTuple: y,
             setUserData: E,
             setJumpScMenuFocus: k
           }

@@ -28,10 +28,10 @@ _global.SENTRY_RELEASE = {
               l = n.split(/[ce]/),
               o = l[1] || 0,
               t = String(o ? Number(l[0]) * Math.pow(10, o) : n).split("."),
-              r = t[0],
-              d = !t[1],
-              s = r.slice(-6);
-            return a ? 1 == e ? "one" : "other" : e >= 0 && e < 2 ? "one" : 0 == o && 0 != r && 0 == s && d || o < 0 || o > 5 ? "many" : "other"
+              d = t[0],
+              r = !t[1],
+              f = d.slice(-6);
+            return a ? 1 == e ? "one" : "other" : e >= 0 && e < 2 ? "one" : 0 == o && 0 != d && 0 == f && r || o < 0 || o > 5 ? "many" : "other"
           }
         },
         locale: "fr"

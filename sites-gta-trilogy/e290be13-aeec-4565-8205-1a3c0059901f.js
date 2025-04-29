@@ -21,8 +21,8 @@ _global.SENTRY_RELEASE = {
         useBoolean: () => r,
         useClickAnyWhere: () => s,
         useCopyToClipboard: () => u,
-        useCountdown: () => a,
-        useCounter: () => i,
+        useCountdown: () => i,
+        useCounter: () => a,
         useDarkMode: () => c,
         useDebounce: () => l,
         useDocumentTitle: () => d,
@@ -32,8 +32,8 @@ _global.SENTRY_RELEASE = {
         useEventListener: () => v,
         useFetch: () => y,
         useHover: () => h,
-        useImageOnLoad: () => p,
-        useIntersectionObserver: () => b,
+        useImageOnLoad: () => b,
+        useIntersectionObserver: () => p,
         useInterval: () => m,
         useIsClient: () => k,
         useIsFirstRender: () => S,
@@ -85,34 +85,34 @@ _global.SENTRY_RELEASE = {
             }, new((r = void 0) || (r = Promise))((function(e, t) {
               function u(e) {
                 try {
-                  i(s.next(e))
+                  a(s.next(e))
                 } catch (e) {
                   t(e)
                 }
               }
 
-              function a(e) {
+              function i(e) {
                 try {
-                  i(s.throw(e))
+                  a(s.throw(e))
                 } catch (e) {
                   t(e)
                 }
               }
 
-              function i(t) {
+              function a(t) {
                 var n;
                 t.done ? e(t.value) : (n = t.value, n instanceof r ? n : new r((function(e) {
                   e(n)
-                }))).then(u, a)
+                }))).then(u, i)
               }
-              i((s = s.apply(n, o || [])).next())
+              a((s = s.apply(n, o || [])).next())
             }));
             var n, o, r, s
           }]
         },
-        a = function(e) {
-          let t, n, s, u, a = !1;
-          "seconds" in e ? (console.warn("[useCountdown:DEPRECATED] new interface is already available (see https://usehooks-ts.com/react-hook/use-countdown), the old version will retire on usehooks-ts@3."), a = !0, t = e.seconds, n = e.interval, s = e.isIncrement) : ({
+        i = function(e) {
+          let t, n, s, u, i = !1;
+          "seconds" in e ? (console.warn("[useCountdown:DEPRECATED] new interface is already available (see https://usehooks-ts.com/react-hook/use-countdown), the old version will retire on usehooks-ts@3."), i = !0, t = e.seconds, n = e.interval, s = e.isIncrement) : ({
             countStart: t,
             intervalMs: n,
             isIncrement: s,
@@ -123,7 +123,7 @@ _global.SENTRY_RELEASE = {
             increment: l,
             decrement: d,
             reset: f
-          } = i(t), {
+          } = a(t), {
             value: g,
             setTrue: w,
             setFalse: v
@@ -132,7 +132,7 @@ _global.SENTRY_RELEASE = {
           }, h = (0, o.useCallback)((() => {
             c !== u ? s ? l() : d() : v()
           }), [c, u, d, l, s, v]);
-          return m(h, g ? n : null), a ? [c, {
+          return m(h, g ? n : null), i ? [c, {
             start: w,
             stop: v,
             reset: y
@@ -142,7 +142,7 @@ _global.SENTRY_RELEASE = {
             resetCountdown: y
           }]
         },
-        i = function(e) {
+        a = function(e) {
           const [t, n] = (0, o.useState)(e || 0);
           return {
             count: t,
@@ -228,7 +228,7 @@ _global.SENTRY_RELEASE = {
               error: void 0,
               data: void 0
             },
-            [u, a] = (0, o.useReducer)(((e, t) => {
+            [u, i] = (0, o.useReducer)(((e, t) => {
               switch (t.type) {
                 case "loading":
                   return Object.assign({}, s);
@@ -246,11 +246,11 @@ _global.SENTRY_RELEASE = {
             }), s);
           return (0, o.useEffect)((() => {
             if (e) return r.current = !1, (() => {
-              var o, s, u, i;
-              o = this, s = void 0, i = function*() {
-                if (a({
+              var o, s, u, a;
+              o = this, s = void 0, a = function*() {
+                if (i({
                     type: "loading"
-                  }), n.current[e]) a({
+                  }), n.current[e]) i({
                   type: "fetched",
                   payload: n.current[e]
                 });
@@ -259,13 +259,13 @@ _global.SENTRY_RELEASE = {
                   if (!o.ok) throw new Error(o.statusText);
                   const s = yield o.json();
                   if (n.current[e] = s, r.current) return;
-                  a({
+                  i({
                     type: "fetched",
                     payload: s
                   })
                 } catch (e) {
                   if (r.current) return;
-                  a({
+                  i({
                     type: "error",
                     payload: e
                   })
@@ -273,7 +273,7 @@ _global.SENTRY_RELEASE = {
               }, new((u = void 0) || (u = Promise))((function(e, t) {
                 function n(e) {
                   try {
-                    a(i.next(e))
+                    i(a.next(e))
                   } catch (e) {
                     t(e)
                   }
@@ -281,19 +281,19 @@ _global.SENTRY_RELEASE = {
 
                 function r(e) {
                   try {
-                    a(i.throw(e))
+                    i(a.throw(e))
                   } catch (e) {
                     t(e)
                   }
                 }
 
-                function a(t) {
+                function i(t) {
                   var o;
                   t.done ? e(t.value) : (o = t.value, o instanceof u ? o : new u((function(e) {
                     e(o)
                   }))).then(n, r)
                 }
-                a((i = i.apply(o, s || [])).next())
+                i((a = a.apply(o, s || [])).next())
               }))
             })(), () => {
               r.current = !0
@@ -304,7 +304,7 @@ _global.SENTRY_RELEASE = {
           const [t, n] = (0, o.useState)(!1);
           return v("mouseenter", (() => n(!0)), e), v("mouseleave", (() => n(!1)), e), t
         },
-        p = function() {
+        b = function() {
           const [e, t] = (0, o.useState)(!1);
           return {
             handleImageOnLoad: () => {
@@ -323,16 +323,16 @@ _global.SENTRY_RELEASE = {
             }
           }
         },
-        b = function(e, t) {
+        p = function(e, t) {
           let {
             threshold: n = 0,
             root: r = null,
             rootMargin: s = "0%",
             freezeOnceVisible: u = !1
           } = t;
-          const [a, i] = (0, o.useState)(), c = (null == a ? void 0 : a.isIntersecting) && u, l = e => {
+          const [i, a] = (0, o.useState)(), c = (null == i ? void 0 : i.isIntersecting) && u, l = e => {
             let [t] = e;
-            i(t)
+            a(t)
           };
           return (0, o.useEffect)((() => {
             const t = null == e ? void 0 : e.current;
@@ -343,7 +343,7 @@ _global.SENTRY_RELEASE = {
               rootMargin: s
             });
             return o.observe(t), () => o.disconnect()
-          }), [null == e ? void 0 : e.current, JSON.stringify(n), r, s, c]), a
+          }), [null == e ? void 0 : e.current, JSON.stringify(n), r, s, c]), i
         },
         m = function(e, t) {
           const n = (0, o.useRef)(e);
@@ -403,10 +403,10 @@ _global.SENTRY_RELEASE = {
           (0, o.useEffect)((() => {
             s(n())
           }), []);
-          const a = (0, o.useCallback)((t => {
+          const i = (0, o.useCallback)((t => {
             (null == t ? void 0 : t.key) && t.key !== e || s(n())
           }), [e, n]);
-          return v("storage", a), v("local-storage", a), [r, u]
+          return v("storage", i), v("local-storage", i), [r, u]
         },
         L = function() {
           let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
@@ -521,22 +521,22 @@ _global.SENTRY_RELEASE = {
                 status: n
               }
             }(e);
-            let a = u.node;
-            if (a) r(null !== (o = null !== (n = u.status) && void 0 !== n ? n : s) && void 0 !== o ? o : "loading");
+            let i = u.node;
+            if (i) r(null !== (o = null !== (n = u.status) && void 0 !== n ? n : s) && void 0 !== o ? o : "loading");
             else {
-              a = document.createElement("script"), a.src = e, a.async = !0, a.setAttribute("data-status", "loading"), document.body.appendChild(a);
+              i = document.createElement("script"), i.src = e, i.async = !0, i.setAttribute("data-status", "loading"), document.body.appendChild(i);
               const t = e => {
                 const t = "load" === e.type ? "ready" : "error";
-                null == a || a.setAttribute("data-status", t)
+                null == i || i.setAttribute("data-status", t)
               };
-              a.addEventListener("load", t), a.addEventListener("error", t)
+              i.addEventListener("load", t), i.addEventListener("error", t)
             }
-            const i = t => {
+            const a = t => {
               const n = "load" === t.type ? "ready" : "error";
               r(n), D[e] = n
             };
-            return a.addEventListener("load", i), a.addEventListener("error", i), () => {
-              a && (a.removeEventListener("load", i), a.removeEventListener("error", i)), a && (null == t ? void 0 : t.removeOnUnmount) && a.remove()
+            return i.addEventListener("load", a), i.addEventListener("error", a), () => {
+              i && (i.removeEventListener("load", a), i.removeEventListener("error", a)), i && (null == t ? void 0 : t.removeOnUnmount) && i.remove()
             }
           }), [e, null == t ? void 0 : t.shouldPreventLoad, null == t ? void 0 : t.removeOnUnmount]), n
         },
@@ -571,10 +571,10 @@ _global.SENTRY_RELEASE = {
           (0, o.useEffect)((() => {
             s(n())
           }), []);
-          const a = (0, o.useCallback)((t => {
+          const i = (0, o.useCallback)((t => {
             (null == t ? void 0 : t.key) && t.key !== e || s(n())
           }), [e, n]);
-          return v("storage", a), v("session-storage", a), [r, u]
+          return v("storage", i), v("session-storage", i), [r, u]
         },
         $ = function() {
           const e = "undefined" != typeof window && window.document && window.document.documentElement;
@@ -588,16 +588,16 @@ _global.SENTRY_RELEASE = {
             const r = o instanceof Function ? o(t) : o;
             if (!(r >= 1 && r <= e)) throw new Error("Step not valid");
             n(r)
-          }), [e, t]), a = (0, o.useCallback)((() => {
+          }), [e, t]), i = (0, o.useCallback)((() => {
             r && n((e => e + 1))
-          }), [r]), i = (0, o.useCallback)((() => {
+          }), [r]), a = (0, o.useCallback)((() => {
             s && n((e => e - 1))
           }), [s]), c = (0, o.useCallback)((() => {
             n(1)
           }), []);
           return [t, {
-            goToNextStep: a,
-            goToPrevStep: i,
+            goToNextStep: i,
+            goToPrevStep: a,
             canGoToNextStep: r,
             canGoToPrevStep: s,
             setStep: u,

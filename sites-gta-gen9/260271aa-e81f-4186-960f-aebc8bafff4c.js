@@ -153,10 +153,10 @@ _global.SENTRY_RELEASE = {
           p = !e && !f && i(t),
           v = !e && !f && !p && c(t),
           l = e || f || p || v,
-          y = l ? n(t.length, String) : [],
-          b = y.length;
-        for (var d in t) !r && !s.call(t, d) || l && ("length" == d || p && ("offset" == d || "parent" == d) || v && ("buffer" == d || "byteLength" == d || "byteOffset" == d) || u(d, b)) || y.push(d);
-        return y
+          b = l ? n(t.length, String) : [],
+          y = b.length;
+        for (var d in t) !r && !s.call(t, d) || l && ("length" == d || p && ("offset" == d || "parent" == d) || v && ("buffer" == d || "byteLength" == d || "byteOffset" == d) || u(d, y)) || b.push(d);
+        return b
       }
     },
     10561: t => {
@@ -232,8 +232,8 @@ _global.SENTRY_RELEASE = {
         p = e(52215),
         v = e(5767),
         l = e(83148),
-        y = e(83608),
-        b = e(8528),
+        b = e(83608),
+        y = e(8528),
         d = e(51082),
         x = e(36170),
         h = e(47478),
@@ -255,9 +255,9 @@ _global.SENTRY_RELEASE = {
         if (!j(r)) return r;
         var D = h(r);
         if (D) {
-          if (k = b(r), !F) return s(r, k)
+          if (k = y(r), !F) return s(r, k)
         } else {
-          var N = y(r),
+          var N = b(r),
             C = N == S || "[object GeneratorFunction]" == N;
           if (g(r)) return c(r, F);
           if (N == P || N == m || C && !I) {
@@ -437,8 +437,8 @@ _global.SENTRY_RELEASE = {
         p = e(86275),
         v = e(22209),
         l = e(28362),
-        y = e(81382),
-        b = e(32640),
+        b = e(81382),
+        y = e(32640),
         d = e(23101),
         x = e(27693);
       t.exports = function(t, r, e, h, g, _, j) {
@@ -452,8 +452,8 @@ _global.SENTRY_RELEASE = {
           if (S) {
             var P = s(O),
               E = !P && p(O),
-              M = !P && !E && b(O);
-            m = O, P || E || M ? s(w) ? m = w : f(w) ? m = i(w) : E ? (S = !1, m = o(O, !0)) : M ? (S = !1, m = a(O, !0)) : m = [] : y(O) || c(O) ? (m = w, c(w) ? m = x(w) : l(w) && !v(w) || (m = u(O))) : S = !1
+              M = !P && !E && y(O);
+            m = O, P || E || M ? s(w) ? m = w : f(w) ? m = i(w) : E ? (S = !1, m = o(O, !0)) : M ? (S = !1, m = a(O, !0)) : m = [] : b(O) || c(O) ? (m = w, c(w) ? m = x(w) : l(w) && !v(w) || (m = u(O))) : S = !1
           }
           S && (j.set(O, m), g(m, O, h, _, j), j.delete(O)), n(t, e, m)
         }
@@ -485,13 +485,13 @@ _global.SENTRY_RELEASE = {
         if (!i(t)) return t;
         for (var s = -1, f = (r = o(r, t)).length, p = f - 1, v = t; null != v && ++s < f;) {
           var l = u(r[s]),
-            y = e;
+            b = e;
           if ("__proto__" === l || "constructor" === l || "prototype" === l) return t;
           if (s != p) {
-            var b = v[l];
-            void 0 === (y = c ? c(b, l, v) : void 0) && (y = i(b) ? b : a(r[s + 1]) ? [] : {})
+            var y = v[l];
+            void 0 === (b = c ? c(y, l, v) : void 0) && (b = i(y) ? y : a(r[s + 1]) ? [] : {})
           }
-          n(v, l, y), v = v[l]
+          n(v, l, b), v = v[l]
         }
         return t
       }
@@ -815,20 +815,20 @@ _global.SENTRY_RELEASE = {
         p = "[object Promise]",
         v = "[object Set]",
         l = "[object WeakMap]",
-        y = "[object DataView]",
-        b = s(n),
+        b = "[object DataView]",
+        y = s(n),
         d = s(o),
         x = s(a),
         h = s(i),
         g = s(u),
         _ = c;
-      (n && _(new n(new ArrayBuffer(1))) != y || o && _(new o) != f || a && _(a.resolve()) != p || i && _(new i) != v || u && _(new u) != l) && (_ = function(t) {
+      (n && _(new n(new ArrayBuffer(1))) != b || o && _(new o) != f || a && _(a.resolve()) != p || i && _(new i) != v || u && _(new u) != l) && (_ = function(t) {
         var r = c(t),
           e = "[object Object]" == r ? t.constructor : void 0,
           n = e ? s(e) : "";
         if (n) switch (n) {
-          case b:
-            return y;
+          case y:
+            return b;
           case d:
             return f;
           case x:
@@ -1274,8 +1274,8 @@ _global.SENTRY_RELEASE = {
         i = Math.max,
         u = Math.min;
       t.exports = function(t, r, e) {
-        var c, s, f, p, v, l, y = 0,
-          b = !1,
+        var c, s, f, p, v, l, b = 0,
+          y = !1,
           d = !1,
           x = !0;
         if ("function" != typeof t) throw new TypeError("Expected a function");
@@ -1283,12 +1283,12 @@ _global.SENTRY_RELEASE = {
         function h(r) {
           var e = c,
             n = s;
-          return c = s = void 0, y = r, p = t.apply(n, e)
+          return c = s = void 0, b = r, p = t.apply(n, e)
         }
 
         function g(t) {
           var e = t - l;
-          return void 0 === l || e >= r || e < 0 || d && t - y >= f
+          return void 0 === l || e >= r || e < 0 || d && t - b >= f
         }
 
         function _() {
@@ -1296,7 +1296,7 @@ _global.SENTRY_RELEASE = {
           if (g(t)) return j(t);
           v = setTimeout(_, function(t) {
             var e = r - (t - l);
-            return d ? u(e, f - (t - y)) : e
+            return d ? u(e, f - (t - b)) : e
           }(t))
         }
 
@@ -1309,14 +1309,14 @@ _global.SENTRY_RELEASE = {
             e = g(t);
           if (c = arguments, s = this, l = t, e) {
             if (void 0 === v) return function(t) {
-              return y = t, v = setTimeout(_, r), b ? h(t) : p
+              return b = t, v = setTimeout(_, r), y ? h(t) : p
             }(l);
             if (d) return clearTimeout(v), v = setTimeout(_, r), h(l)
           }
           return void 0 === v && (v = setTimeout(_, r)), p
         }
-        return r = a(r) || 0, n(e) && (b = !!e.leading, f = (d = "maxWait" in e) ? i(a(e.maxWait) || 0, r) : f, x = "trailing" in e ? !!e.trailing : x), w.cancel = function() {
-          void 0 !== v && clearTimeout(v), y = 0, c = l = s = v = void 0
+        return r = a(r) || 0, n(e) && (y = !!e.leading, f = (d = "maxWait" in e) ? i(a(e.maxWait) || 0, r) : f, x = "trailing" in e ? !!e.trailing : x), w.cancel = function() {
+          void 0 !== v && clearTimeout(v), b = 0, c = l = s = v = void 0
         }, w.flush = function() {
           return void 0 === v ? p : j(o())
         }, w

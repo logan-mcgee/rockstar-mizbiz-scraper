@@ -18,7 +18,7 @@ _global.SENTRY_RELEASE = {
   [4500], {
     22119: (e, n, l) => {
       l.r(n), l.d(n, {
-        Root: () => i,
+        Root: () => c,
         Slot: () => a,
         Slottable: () => s
       });
@@ -53,7 +53,7 @@ _global.SENTRY_RELEASE = {
           ...o
         } = e;
         return (0, t.isValidElement)(l) ? (0, t.cloneElement)(l, {
-          ...c(o, l.props),
+          ...i(o, l.props),
           ref: n ? r(n, l.ref) : l.ref
         }) : t.Children.count(l) > 1 ? t.Children.only(null) : null
       }));
@@ -66,7 +66,7 @@ _global.SENTRY_RELEASE = {
         return (0, t.isValidElement)(e) && e.type === s
       }
 
-      function c(e, n) {
+      function i(e, n) {
         const l = {
           ...n
         };
@@ -85,7 +85,7 @@ _global.SENTRY_RELEASE = {
           ...l
         }
       }
-      const i = a
+      const c = a
     }
   }
 ]);

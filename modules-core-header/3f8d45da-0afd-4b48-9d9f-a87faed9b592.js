@@ -18,7 +18,7 @@ _global.SENTRY_RELEASE = {
   [4454, 8425], {
     24454: (e, a, d) => {
       d.r(a), d.d(a, {
-        Root: () => f,
+        Root: () => s,
         VisuallyHidden: () => l
       });
       var n = d(3709),
@@ -29,10 +29,10 @@ _global.SENTRY_RELEASE = {
             const {
               asChild: t,
               ...l
-            } = e, f = t ? r.Slot : a;
+            } = e, s = t ? r.Slot : a;
             return (0, o.useEffect)((() => {
               window[Symbol.for("radix-ui")] = !0
-            }), []), (0, o.createElement)(f, (0, n.A)({}, l, {
+            }), []), (0, o.createElement)(s, (0, n.A)({}, l, {
               ref: d
             }))
           }));
@@ -57,7 +57,7 @@ _global.SENTRY_RELEASE = {
             ...e.style
           }
         })))),
-        f = l
+        s = l
     },
     3709: (e, a, d) => {
       function n() {

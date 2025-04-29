@@ -97,10 +97,10 @@ _global.SENTRY_RELEASE = {
           var _ = (0, o.GetOption)(l, "style", "string", ["long", "short", "narrow"], "long");
           (0, o.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "style", _);
           var p = u.dataLocale,
-            y = s[p];
-          (0, o.invariant)(!!y, "Missing locale data for ".concat(p));
-          var d = y[f][_];
-          (0, o.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templatePair", d.pair), (0, o.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templateStart", d.start), (0, o.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templateMiddle", d.middle), (0, o.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templateEnd", d.end)
+            d = s[p];
+          (0, o.invariant)(!!d, "Missing locale data for ".concat(p));
+          var y = d[f][_];
+          (0, o.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templatePair", y.pair), (0, o.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templateStart", y.start), (0, o.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templateMiddle", y.middle), (0, o.setInternalSlot)(e.__INTERNAL_SLOT_MAP__, this, "templateEnd", y.end)
         }
         return e.prototype.format = function(t) {
           i(this, "format");
@@ -179,17 +179,17 @@ _global.SENTRY_RELEASE = {
         __asyncGenerator: () => P,
         __asyncValues: () => I,
         __await: () => S,
-        __awaiter: () => y,
+        __awaiter: () => d,
         __classPrivateFieldGet: () => M,
         __classPrivateFieldIn: () => x,
         __classPrivateFieldSet: () => R,
-        __createBinding: () => v,
+        __createBinding: () => b,
         __decorate: () => l,
         __disposeResources: () => F,
         __esDecorate: () => s,
-        __exportStar: () => h,
+        __exportStar: () => v,
         __extends: () => o,
-        __generator: () => d,
+        __generator: () => y,
         __importDefault: () => N,
         __importStar: () => A,
         __makeTemplateObject: () => L,
@@ -204,7 +204,7 @@ _global.SENTRY_RELEASE = {
         __spread: () => g,
         __spreadArray: () => O,
         __spreadArrays: () => m,
-        __values: () => b,
+        __values: () => h,
         default: () => G
       });
       var n = function(e, t) {
@@ -265,22 +265,22 @@ _global.SENTRY_RELEASE = {
           return e
         }
         for (var l, c = n.kind, s = "getter" === c ? "get" : "setter" === c ? "set" : "value", u = !t && e ? n.static ? e : e.prototype : null, f = t || (u ? Object.getOwnPropertyDescriptor(u, n.name) : {}), _ = !1, p = r.length - 1; p >= 0; p--) {
-          var y = {};
-          for (var d in n) y[d] = "access" === d ? {} : n[d];
-          for (var d in n.access) y.access[d] = n.access[d];
-          y.addInitializer = function(e) {
+          var d = {};
+          for (var y in n) d[y] = "access" === y ? {} : n[y];
+          for (var y in n.access) d.access[y] = n.access[y];
+          d.addInitializer = function(e) {
             if (_) throw new TypeError("Cannot add initializers after decoration has completed");
             a.push(i(e || null))
           };
-          var v = (0, r[p])("accessor" === c ? {
+          var b = (0, r[p])("accessor" === c ? {
             get: f.get,
             set: f.set
-          } : f[s], y);
+          } : f[s], d);
           if ("accessor" === c) {
-            if (void 0 === v) continue;
-            if (null === v || "object" != typeof v) throw new TypeError("Object expected");
-            (l = i(v.get)) && (f.get = l), (l = i(v.set)) && (f.set = l), (l = i(v.init)) && o.unshift(l)
-          } else(l = i(v)) && ("field" === c ? o.unshift(l) : f[s] = l)
+            if (void 0 === b) continue;
+            if (null === b || "object" != typeof b) throw new TypeError("Object expected");
+            (l = i(b.get)) && (f.get = l), (l = i(b.set)) && (f.set = l), (l = i(b.init)) && o.unshift(l)
+          } else(l = i(b)) && ("field" === c ? o.unshift(l) : f[s] = l)
         }
         u && Object.defineProperty(u, n.name, f), _ = !0
       }
@@ -305,7 +305,7 @@ _global.SENTRY_RELEASE = {
         if ("object" == typeof Reflect && "function" == typeof Reflect.metadata) return Reflect.metadata(e, t)
       }
 
-      function y(e, t, r, n) {
+      function d(e, t, r, n) {
         return new(r || (r = Promise))((function(o, a) {
           function i(e) {
             try {
@@ -333,7 +333,7 @@ _global.SENTRY_RELEASE = {
         }))
       }
 
-      function d(e, t) {
+      function y(e, t) {
         var r, n, o, a = {
             label: 0,
             sent: function() {
@@ -405,7 +405,7 @@ _global.SENTRY_RELEASE = {
           }
         }
       }
-      var v = Object.create ? function(e, t, r, n) {
+      var b = Object.create ? function(e, t, r, n) {
         void 0 === n && (n = r);
         var o = Object.getOwnPropertyDescriptor(t, r);
         o && !("get" in o ? !t.__esModule : o.writable || o.configurable) || (o = {
@@ -418,11 +418,11 @@ _global.SENTRY_RELEASE = {
         void 0 === n && (n = r), e[n] = t[r]
       };
 
-      function h(e, t) {
-        for (var r in e) "default" === r || Object.prototype.hasOwnProperty.call(t, r) || v(t, e, r)
+      function v(e, t) {
+        for (var r in e) "default" === r || Object.prototype.hasOwnProperty.call(t, r) || b(t, e, r)
       }
 
-      function b(e) {
+      function h(e) {
         var t = "function" == typeof Symbol && Symbol.iterator,
           r = t && e[t],
           n = 0;
@@ -547,7 +547,7 @@ _global.SENTRY_RELEASE = {
       function I(e) {
         if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
         var t, r = e[Symbol.asyncIterator];
-        return r ? r.call(e) : (e = b(e), t = {}, n("next"), n("throw"), n("return"), t[Symbol.asyncIterator] = function() {
+        return r ? r.call(e) : (e = h(e), t = {}, n("next"), n("throw"), n("return"), t[Symbol.asyncIterator] = function() {
           return this
         }, t);
 
@@ -592,7 +592,7 @@ _global.SENTRY_RELEASE = {
         if (e && e.__esModule) return e;
         var t = {};
         if (null != e)
-          for (var r = T(e), n = 0; n < r.length; n++) "default" !== r[n] && v(t, e, r[n]);
+          for (var r = T(e), n = 0; n < r.length; n++) "default" !== r[n] && b(t, e, r[n]);
         return E(t, e), t
       }
 
@@ -692,11 +692,11 @@ _global.SENTRY_RELEASE = {
         __propKey: f,
         __setFunctionName: _,
         __metadata: p,
-        __awaiter: y,
-        __generator: d,
-        __createBinding: v,
-        __exportStar: h,
-        __values: b,
+        __awaiter: d,
+        __generator: y,
+        __createBinding: b,
+        __exportStar: v,
+        __values: h,
         __read: w,
         __spread: g,
         __spreadArrays: m,

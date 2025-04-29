@@ -221,13 +221,13 @@ _global.SENTRY_RELEASE = {
         l = a.n(s),
         d = a(2162),
         c = a.n(d),
-        A = a(2510),
-        f = a.n(A),
+        f = a(2510),
+        A = a.n(f),
         m = a(675),
         u = a.n(m),
         g = a(3627),
         p = {};
-      p.styleTagTransform = u(), p.setAttributes = c(), p.insert = l().bind(null, "head"), p.domAPI = r(), p.insertStyleElement = f(), t()(g.A, p);
+      p.styleTagTransform = u(), p.setAttributes = c(), p.insert = l().bind(null, "head"), p.domAPI = r(), p.insertStyleElement = A(), t()(g.A, p);
       const v = g.A && g.A.locals ? g.A.locals : void 0;
       var b = a(3855);
       const k = e => {
@@ -281,7 +281,7 @@ _global.SENTRY_RELEASE = {
       var E = a(2255),
         _ = a(6877),
         S = {};
-      S.styleTagTransform = u(), S.setAttributes = c(), S.insert = l().bind(null, "head"), S.domAPI = r(), S.insertStyleElement = f(), t()(_.A, S);
+      S.styleTagTransform = u(), S.setAttributes = c(), S.insert = l().bind(null, "head"), S.domAPI = r(), S.insertStyleElement = A(), t()(_.A, S);
       const I = _.A && _.A.locals ? _.A.locals : void 0,
         B = e => {
           let {
@@ -295,8 +295,8 @@ _global.SENTRY_RELEASE = {
             name: l,
             label: d,
             description: c,
-            error: A,
-            children: f
+            error: f,
+            children: A
           } = e;
           const m = () => t ? (0, b.jsx)(E.c, {
             defaultSize: {
@@ -306,8 +306,8 @@ _global.SENTRY_RELEASE = {
             style: {
               paddingBottom: "10px"
             },
-            children: (0, C.cloneElement)(f, ...r)
-          }) : f;
+            children: (0, C.cloneElement)(A, ...r)
+          }) : A;
           return (0, b.jsxs)("div", {
             className: `${I.FieldWrapper_sc_custom} FieldWrapper-sc-custom jpQZXK`,
             style: n,
@@ -318,9 +318,9 @@ _global.SENTRY_RELEASE = {
                 className: `${I.FieldDescription_sc_custom} FieldDescription-sc-custom cyKzVM`,
                 children: c ?? o?.description
               })]
-            }), (0, b.jsx)(m, {}), (A || s?.error) && (0, b.jsx)("div", {
+            }), (0, b.jsx)(m, {}), (f || s?.error) && (0, b.jsx)("div", {
               className: "FieldError_sc_custom",
-              children: A ?? s?.error
+              children: f ?? s?.error
             })]
           })
         },
@@ -464,7 +464,7 @@ _global.SENTRY_RELEASE = {
     6877: (e, n, a) => {
       "use strict";
       a.d(n, {
-        A: () => f
+        A: () => A
       });
       var i = a(2587),
         t = a.n(i),
@@ -474,8 +474,8 @@ _global.SENTRY_RELEASE = {
         l = a.n(s),
         d = new URL(a(5958), a.b),
         c = r()(t()),
-        A = l()(d);
-      c.push([e.id, `.rockstargames-modules-core-gif-viewere8a5daf12553885a40529a38c92c1d67{margin-bottom:var(--tina-padding-big,20px);position:relative}.rockstargames-modules-core-gif-viewere8a5daf12553885a40529a38c92c1d67,.rockstargames-modules-core-gif-viewere8a5daf12553885a40529a38c92c1d67 *{box-sizing:border-box;font-family:Inter,sans-serif}.rockstargames-modules-core-gif-viewere8a5daf12553885a40529a38c92c1d67 .rockstargames-modules-core-gif-viewerceac2b2784e621f05ce51dade558df8d{all:unset;color:var(--tina-color-grey-8,#433e52);display:block;font-family:Inter,sans-serif;font-size:var(--tina-font-size-1,13px);font-weight:600;-webkit-letter-spacing:.01em;-moz-letter-spacing:.01em;-ms-letter-spacing:.01em;letter-spacing:.01em;line-height:1.35;margin-bottom:8px;overflow:hidden;text-overflow:ellipsis;width:100%}.rockstargames-modules-core-gif-viewere8a5daf12553885a40529a38c92c1d67 .rockstargames-modules-core-gif-viewera0b2c6a5b66b849b487834caa1f6e3c8{all:unset;color:var(--tina-color-grey-6,#716c7f);display:block;font-family:Inter,sans-serif;font-size:var(--tina-font-size-0,12px);font-style:italic;font-weight:lighter;margin:0;padding-top:4px;white-space:normal}.rockstargames-modules-core-gif-viewere8a5daf12553885a40529a38c92c1d67 input{box-shadow:0 0 0 2px transparent}.rockstargames-modules-core-gif-viewere8a5daf12553885a40529a38c92c1d67 input,.rockstargames-modules-core-gif-viewere8a5daf12553885a40529a38c92c1d67 select{background:var(--tina-color-grey-0,#fff);background-color:var(--tina-color-grey-0,#fff);border:1px solid var(--tina-color-grey-2,#edecf3);border-radius:var(--tina-radius-small,5px);font-size:var(--tina-font-size-2,15px);line-height:1.35;margin:0;outline:none;padding:var(--tina-padding-small,12px);position:relative;transition:all 85ms ease-out;width:100%}.rockstargames-modules-core-gif-viewere8a5daf12553885a40529a38c92c1d67 select{-webkit-appearance:none;-moz-appearance:none;appearance:none;background-image:url(${A});background-position:right .7em top 50%;background-repeat:no-repeat;background-size:.65em auto;display:block;font-family:inherit;max-width:100%}.rockstargames-modules-core-gif-viewere8a5daf12553885a40529a38c92c1d67 .rockstargames-modules-core-gif-viewerd9b75ea1bc84f8562bd9c7c730ce7317,.rockstargames-modules-core-gif-viewere8a5daf12553885a40529a38c92c1d67 .rockstargames-modules-core-gif-viewerd84706d08967f65d5d2384427474feb5{color:var(--tina-color-error,#ec4815)}[class^=BlockMenuList-] button,button[class^=CreateButton-]{color:#000}`, "", {
+        f = l()(d);
+      c.push([e.id, `.rockstargames-modules-core-gif-viewere8a5daf12553885a40529a38c92c1d67{margin-bottom:var(--tina-padding-big,20px);position:relative}.rockstargames-modules-core-gif-viewere8a5daf12553885a40529a38c92c1d67,.rockstargames-modules-core-gif-viewere8a5daf12553885a40529a38c92c1d67 *{box-sizing:border-box;font-family:Inter,sans-serif}.rockstargames-modules-core-gif-viewere8a5daf12553885a40529a38c92c1d67 .rockstargames-modules-core-gif-viewerceac2b2784e621f05ce51dade558df8d{all:unset;color:var(--tina-color-grey-8,#433e52);display:block;font-family:Inter,sans-serif;font-size:var(--tina-font-size-1,13px);font-weight:600;-webkit-letter-spacing:.01em;-moz-letter-spacing:.01em;-ms-letter-spacing:.01em;letter-spacing:.01em;line-height:1.35;margin-bottom:8px;overflow:hidden;text-overflow:ellipsis;width:100%}.rockstargames-modules-core-gif-viewere8a5daf12553885a40529a38c92c1d67 .rockstargames-modules-core-gif-viewera0b2c6a5b66b849b487834caa1f6e3c8{all:unset;color:var(--tina-color-grey-6,#716c7f);display:block;font-family:Inter,sans-serif;font-size:var(--tina-font-size-0,12px);font-style:italic;font-weight:lighter;margin:0;padding-top:4px;white-space:normal}.rockstargames-modules-core-gif-viewere8a5daf12553885a40529a38c92c1d67 input{box-shadow:0 0 0 2px transparent}.rockstargames-modules-core-gif-viewere8a5daf12553885a40529a38c92c1d67 input,.rockstargames-modules-core-gif-viewere8a5daf12553885a40529a38c92c1d67 select{background:var(--tina-color-grey-0,#fff);background-color:var(--tina-color-grey-0,#fff);border:1px solid var(--tina-color-grey-2,#edecf3);border-radius:var(--tina-radius-small,5px);font-size:var(--tina-font-size-2,15px);line-height:1.35;margin:0;outline:none;padding:var(--tina-padding-small,12px);position:relative;transition:all 85ms ease-out;width:100%}.rockstargames-modules-core-gif-viewere8a5daf12553885a40529a38c92c1d67 select{-webkit-appearance:none;-moz-appearance:none;appearance:none;background-image:url(${f});background-position:right .7em top 50%;background-repeat:no-repeat;background-size:.65em auto;display:block;font-family:inherit;max-width:100%}.rockstargames-modules-core-gif-viewere8a5daf12553885a40529a38c92c1d67 .rockstargames-modules-core-gif-viewerd9b75ea1bc84f8562bd9c7c730ce7317,.rockstargames-modules-core-gif-viewere8a5daf12553885a40529a38c92c1d67 .rockstargames-modules-core-gif-viewerd84706d08967f65d5d2384427474feb5{color:var(--tina-color-error,#ec4815)}[class^=BlockMenuList-] button,button[class^=CreateButton-]{color:#000}`, "", {
         version: 3,
         sources: ["webpack://./../../buildtime/tina/src/ui/FieldWrapper/index.less"],
         names: [],
@@ -489,7 +489,7 @@ _global.SENTRY_RELEASE = {
         FieldError_sc_custom: "rockstargames-modules-core-gif-viewerd9b75ea1bc84f8562bd9c7c730ce7317",
         "field-error": "rockstargames-modules-core-gif-viewerd84706d08967f65d5d2384427474feb5"
       };
-      const f = c
+      const A = c
     },
     1398: e => {
       var n = {

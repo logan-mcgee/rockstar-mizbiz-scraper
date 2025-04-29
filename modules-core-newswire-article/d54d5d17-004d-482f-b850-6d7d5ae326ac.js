@@ -91,16 +91,16 @@ _global.SENTRY_RELEASE = {
             return n && e(t.prototype, n), A && e(t, A), t
           }
         }(),
-        o = f(n(62229)),
-        i = f(n(72817)),
-        a = f(n(14332)),
-        u = f(n(85177)),
-        l = f(n(94613)),
-        s = f(n(74844)),
-        d = f(n(54762)),
-        c = n(71319);
+        o = c(n(62229)),
+        i = c(n(72817)),
+        a = c(n(14332)),
+        u = c(n(85177)),
+        l = c(n(94613)),
+        s = c(n(74844)),
+        d = c(n(54762)),
+        f = n(71319);
 
-      function f(e) {
+      function c(e) {
         return e && e.__esModule ? e : {
           default: e
         }
@@ -166,10 +166,10 @@ _global.SENTRY_RELEASE = {
               i = t.onReady,
               a = this._parent,
               s = this._child,
-              f = (0, c.innerWidth)(a),
-              g = (0, c.innerHeight)(a);
+              c = (0, f.innerWidth)(a),
+              g = (0, f.innerHeight)(a);
             if (g <= 0 || isNaN(g)) console.warn("Can not process element without height. Make sure the element is displayed and has a static height.");
-            else if (f <= 0 || isNaN(f)) console.warn("Can not process element without width. Make sure the element is displayed and has a static width.");
+            else if (c <= 0 || isNaN(c)) console.warn("Can not process element without width. Make sure the element is displayed and has a static width.");
             else {
               var y = (0, d.default)();
               this.pid = y;
@@ -179,10 +179,10 @@ _global.SENTRY_RELEASE = {
                 b = "multi" === r ? function() {
                   return h(s, g)
                 } : function() {
-                  return p(s, f)
+                  return p(s, c)
                 },
                 m = "multi" === r ? function() {
-                  return p(s, f)
+                  return p(s, c)
                 } : function() {
                   return h(s, g)
                 },
@@ -244,22 +244,22 @@ _global.SENTRY_RELEASE = {
               l = this.state,
               s = l.fontSize,
               d = l.ready,
-              c = A({}, i, {
+              f = A({}, i, {
                 fontSize: s
               }),
-              f = {
+              c = {
                 display: d ? "block" : "inline-block"
               };
-            return "single" === a && (f.whiteSpace = "nowrap"), o.default.createElement("div", A({
+            return "single" === a && (c.whiteSpace = "nowrap"), o.default.createElement("div", A({
               ref: function(t) {
                 return e._parent = t
               },
-              style: c
+              style: f
             }, u), o.default.createElement("div", {
               ref: function(t) {
                 return e._child = t
               },
-              style: f
+              style: c
             }, r && "function" == typeof n ? d ? n(r) : r : n))
           }
         }]), t

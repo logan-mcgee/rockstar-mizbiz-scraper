@@ -44,32 +44,32 @@ _global.SENTRY_RELEASE = {
               }))
             }(n, Array.isArray(e) ? e : [e]);
             o[r] || (o[r] = new WeakMap);
-            var c = o[r],
-              i = [],
-              l = new Set,
+            var i = o[r],
+              l = [],
+              c = new Set,
               p = new Set(s),
               y = function(e) {
-                e && !l.has(e) && (l.add(e), y(e.parentNode))
+                e && !c.has(e) && (c.add(e), y(e.parentNode))
               };
             s.forEach(y);
             var b = function(e) {
               e && !p.has(e) && Array.prototype.forEach.call(e.children, (function(e) {
-                if (l.has(e)) b(e);
+                if (c.has(e)) b(e);
                 else {
                   var n = e.getAttribute(f),
                     o = null !== n && "false" !== n,
                     d = (t.get(e) || 0) + 1,
-                    u = (c.get(e) || 0) + 1;
-                  t.set(e, d), c.set(e, u), i.push(e), 1 === d && o && a.set(e, !0), 1 === u && e.setAttribute(r, "true"), o || e.setAttribute(f, "true")
+                    u = (i.get(e) || 0) + 1;
+                  t.set(e, d), i.set(e, u), l.push(e), 1 === d && o && a.set(e, !0), 1 === u && e.setAttribute(r, "true"), o || e.setAttribute(f, "true")
                 }
               }))
             };
-            return b(n), l.clear(), d++,
+            return b(n), c.clear(), d++,
               function() {
-                i.forEach((function(e) {
+                l.forEach((function(e) {
                   var n = t.get(e) - 1,
-                    o = c.get(e) - 1;
-                  t.set(e, n), c.set(e, o), n || (a.has(e) || e.removeAttribute(f), a.delete(e)), o || e.removeAttribute(r)
+                    o = i.get(e) - 1;
+                  t.set(e, n), i.set(e, o), n || (a.has(e) || e.removeAttribute(f), a.delete(e)), o || e.removeAttribute(r)
                 })), --d || (t = new WeakMap, t = new WeakMap, a = new WeakMap, o = {})
               }
           }(f, s, r, "aria-hidden")) : function() {
@@ -93,15 +93,15 @@ _global.SENTRY_RELEASE = {
       function s(e, n, r) {
         var t, o = {},
           s = null,
-          c = null;
-        for (t in void 0 !== r && (s = "" + r), void 0 !== n.key && (s = "" + n.key), void 0 !== n.ref && (c = n.ref), n) d.call(n, t) && !f.hasOwnProperty(t) && (o[t] = n[t]);
+          i = null;
+        for (t in void 0 !== r && (s = "" + r), void 0 !== n.key && (s = "" + n.key), void 0 !== n.ref && (i = n.ref), n) d.call(n, t) && !f.hasOwnProperty(t) && (o[t] = n[t]);
         if (e && e.defaultProps)
           for (t in n = e.defaultProps) void 0 === o[t] && (o[t] = n[t]);
         return {
           $$typeof: a,
           type: e,
           key: s,
-          ref: c,
+          ref: i,
           props: o,
           _owner: u.current
         }

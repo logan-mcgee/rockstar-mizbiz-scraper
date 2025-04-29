@@ -186,7 +186,7 @@ _global.SENTRY_RELEASE = {
         localeCookieHandler: () => c.A,
         locales: () => d.Ay,
         onLanguageChange: () => b.w,
-        splitLocale: () => m.A,
+        splitLocale: () => f.A,
         useIntl: () => a.A,
         withIntl: () => i.QY
       });
@@ -199,11 +199,11 @@ _global.SENTRY_RELEASE = {
         u = t(33586),
         c = t(7308),
         d = t(64479),
-        m = t(22675),
-        p = t(53335),
-        f = {};
-      for (const e in p)["default", "onLanguageChange", "FormattedMessage", "POSIXLocales", "createDevLocaleHook", "createIntl", "defineMessages", "englishLocale", "getCookieValueByName", "getLocale", "localeCookieHandler", "locales", "splitLocale", "useIntl", "withIntl"].indexOf(e) < 0 && (f[e] = () => p[e]);
-      t.d(o, f);
+        f = t(22675),
+        m = t(53335),
+        p = {};
+      for (const e in m)["default", "onLanguageChange", "FormattedMessage", "POSIXLocales", "createDevLocaleHook", "createIntl", "defineMessages", "englishLocale", "getCookieValueByName", "getLocale", "localeCookieHandler", "locales", "splitLocale", "useIntl", "withIntl"].indexOf(e) < 0 && (p[e] = () => m[e]);
+      t.d(o, p);
       var b = t(63921)
     },
     42425: (e, o, t) => {
@@ -229,7 +229,7 @@ _global.SENTRY_RELEASE = {
 
       function d(e, o, t, a) {
         return d => {
-          const m = (0, n.useMemo)((() => {
+          const f = (0, n.useMemo)((() => {
             if (o) return function(e, o) {
               return function(e, o) {
                 const t = o ?? (0, r.A)()[0].iso ?? i(),
@@ -246,12 +246,12 @@ _global.SENTRY_RELEASE = {
             }(o, t)
           }), [t]);
           return (0, c.jsx)(s.A, {
-            locale: m?.locale || i(),
+            locale: f?.locale || i(),
             messages: {
-              ...m?.messages
+              ...f?.messages
             },
             onError: a,
-            children: m && (0, c.jsx)(e, {
+            children: f && (0, c.jsx)(e, {
               ...d
             })
           }, "intl-provider")
@@ -300,8 +300,8 @@ _global.SENTRY_RELEASE = {
         const u = `rockstarweb_lang.${o.cookieIdentifier}`,
           c = (0, s.h)(u);
         l = o.currentSite?.site === n.C.www ? r.Ay.find((e => e.subdomaincom === a)) || r.Ay.find((e => e.subdomaincom === t)) || i : r.Ay.find((e => e.iso === c)) || i;
-        const [d, m] = (0, s.A)(u, l.iso);
-        return [l, m]
+        const [d, f] = (0, s.A)(u, l.iso);
+        return [l, f]
       }
     },
     7308: (e, o, t) => {
@@ -440,17 +440,17 @@ _global.SENTRY_RELEASE = {
             subdomaincom: c,
             iso: d
           } = o,
-          m = (e => {
+          f = (e => {
             let o = location.pathname.replace(/^\/|\/$/g, "");
             const t = o.split("/");
             return s.Ay.map((e => e.subdomaincom)).includes(t[0]) && (o = t.slice(1).join("/")), i.currentSite?.site === n.C.www ? "en" === e ? `${window.location.origin}/${o}${location.search}` : `${window.location.origin}/${e}/${o}${location.search}` : `${window.location.origin}/${o}${location.search}`
           })(c);
         t?.({
           event: "cta_other",
-          link_url: m,
+          link_url: f,
           text: c,
           element_placement: a
-        }), u(d), window.location.href = m
+        }), u(d), window.location.href = f
       }
     },
     22675: (e, o, t) => {

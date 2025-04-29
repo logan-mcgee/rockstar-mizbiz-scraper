@@ -18,11 +18,11 @@ _global.SENTRY_RELEASE = {
   [5765], {
     65765: (e, a, s) => {
       s.r(a), s.d(a, {
-        default: () => n
+        default: () => f
       });
       var d = s(6274),
         t = s(73855);
-      const n = () => (0, t.jsx)(d.A, {
+      const f = () => (0, t.jsx)(d.A, {
         jsonType: "careers-privacy",
         titleKey: "Privacy Policy"
       })

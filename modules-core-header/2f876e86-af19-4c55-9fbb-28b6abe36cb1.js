@@ -22,30 +22,30 @@ _global.SENTRY_RELEASE = {
         l = Symbol.for("react.fragment"),
         a = Object.prototype.hasOwnProperty,
         d = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        f = {
+        i = {
           key: !0,
           ref: !0,
           __self: !0,
           __source: !0
         };
 
-      function i(e, n, r) {
+      function f(e, n, r) {
         var t, l = {},
-          i = null,
+          f = null,
           s = null;
-        for (t in void 0 !== r && (i = "" + r), void 0 !== n.key && (i = "" + n.key), void 0 !== n.ref && (s = n.ref), n) a.call(n, t) && !f.hasOwnProperty(t) && (l[t] = n[t]);
+        for (t in void 0 !== r && (f = "" + r), void 0 !== n.key && (f = "" + n.key), void 0 !== n.ref && (s = n.ref), n) a.call(n, t) && !i.hasOwnProperty(t) && (l[t] = n[t]);
         if (e && e.defaultProps)
           for (t in n = e.defaultProps) void 0 === l[t] && (l[t] = n[t]);
         return {
           $$typeof: o,
           type: e,
-          key: i,
+          key: f,
           ref: s,
           props: l,
           _owner: d.current
         }
       }
-      n.Fragment = l, n.jsx = i, n.jsxs = i
+      n.Fragment = l, n.jsx = f, n.jsxs = f
     },
     73855: (e, n, r) => {
       e.exports = r(32469)
@@ -95,15 +95,15 @@ _global.SENTRY_RELEASE = {
         l = r(73855);
 
       function a(e) {
-        const n = f(e),
+        const n = i(e),
           r = t.forwardRef(((e, r) => {
             const {
               children: o,
               ...a
-            } = e, d = t.Children.toArray(o), f = d.find(u);
-            if (f) {
-              const e = f.props.children,
-                o = d.map((n => n === f ? t.Children.count(e) > 1 ? t.Children.only(null) : t.isValidElement(e) ? e.props.children : null : n));
+            } = e, d = t.Children.toArray(o), i = d.find(u);
+            if (i) {
+              const e = i.props.children,
+                o = d.map((n => n === i ? t.Children.count(e) > 1 ? t.Children.only(null) : t.isValidElement(e) ? e.props.children : null : n));
               return (0, l.jsx)(n, {
                 ...a,
                 ref: r,
@@ -120,7 +120,7 @@ _global.SENTRY_RELEASE = {
       }
       var d = a("Slot");
 
-      function f(e) {
+      function i(e) {
         const n = t.forwardRef(((e, n) => {
           const {
             children: r,
@@ -157,7 +157,7 @@ _global.SENTRY_RELEASE = {
         }));
         return n.displayName = `${e}.SlotClone`, n
       }
-      var i = Symbol("radix.slottable");
+      var f = Symbol("radix.slottable");
 
       function s(e) {
         const n = ({
@@ -165,12 +165,12 @@ _global.SENTRY_RELEASE = {
         }) => (0, l.jsx)(l.Fragment, {
           children: e
         });
-        return n.displayName = `${e}.Slottable`, n.__radixId = i, n
+        return n.displayName = `${e}.Slottable`, n.__radixId = f, n
       }
       var c = s("Slottable");
 
       function u(e) {
-        return t.isValidElement(e) && "function" == typeof e.type && "__radixId" in e.type && e.type.__radixId === i
+        return t.isValidElement(e) && "function" == typeof e.type && "__radixId" in e.type && e.type.__radixId === f
       }
     }
   }

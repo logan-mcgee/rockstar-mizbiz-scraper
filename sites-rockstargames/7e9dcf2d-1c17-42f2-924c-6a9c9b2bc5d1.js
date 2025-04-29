@@ -18,11 +18,11 @@ _global.SENTRY_RELEASE = {
   [9081], {
     99081: (e, a, d) => {
       d.r(a), d.d(a, {
-        default: () => n
+        default: () => t
       });
       var s = d(6274),
-        t = d(73855);
-      const n = () => (0, t.jsx)(s.A, {
+        f = d(73855);
+      const t = () => (0, f.jsx)(s.A, {
         jsonType: "legal",
         titleKey: "Terms of Service"
       })

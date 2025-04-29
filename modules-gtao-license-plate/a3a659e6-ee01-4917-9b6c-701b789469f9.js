@@ -31,10 +31,10 @@ _global.SENTRY_RELEASE = {
         for (var o = {}, s = [], c = 0; c < e.length; c++) {
           var i = e[c],
             u = a.base ? i[0] + a.base : i[0],
-            l = o[u] || 0,
-            d = "".concat(u, " ").concat(l);
-          o[u] = l + 1;
-          var f = n(d),
+            f = o[u] || 0,
+            d = "".concat(u, " ").concat(f);
+          o[u] = f + 1;
+          var l = n(d),
             p = {
               css: i[1],
               media: i[2],
@@ -42,7 +42,7 @@ _global.SENTRY_RELEASE = {
               supports: i[4],
               layer: i[5]
             };
-          if (-1 !== f) t[f].references++, t[f].updater(p);
+          if (-1 !== l) t[l].references++, t[l].updater(p);
           else {
             var v = r(p, a);
             a.byIndex = c, t.splice(c, 0, {
@@ -75,8 +75,8 @@ _global.SENTRY_RELEASE = {
             t[c].references--
           }
           for (var i = a(e, r), u = 0; u < o.length; u++) {
-            var l = n(o[u]);
-            0 === t[l].references && (t[l].updater(), t.splice(l, 1))
+            var f = n(o[u]);
+            0 === t[f].references && (t[f].updater(), t.splice(f, 1))
           }
           o = i
         }
@@ -169,8 +169,8 @@ _global.SENTRY_RELEASE = {
               null != i && (s[i] = !0)
             }
           for (var u = 0; u < e.length; u++) {
-            var l = [].concat(e[u]);
-            a && s[l[0]] || (void 0 !== o && (void 0 === l[5] || (l[1] = "@layer".concat(l[5].length > 0 ? " ".concat(l[5]) : "", " {").concat(l[1], "}")), l[5] = o), n && (l[2] ? (l[1] = "@media ".concat(l[2], " {").concat(l[1], "}"), l[2] = n) : l[2] = n), r && (l[4] ? (l[1] = "@supports (".concat(l[4], ") {").concat(l[1], "}"), l[4] = r) : l[4] = "".concat(r)), t.push(l))
+            var f = [].concat(e[u]);
+            a && s[f[0]] || (void 0 !== o && (void 0 === f[5] || (f[1] = "@layer".concat(f[5].length > 0 ? " ".concat(f[5]) : "", " {").concat(f[1], "}")), f[5] = o), n && (f[2] ? (f[1] = "@media ".concat(f[2], " {").concat(f[1], "}"), f[2] = n) : f[2] = n), r && (f[4] ? (f[1] = "@supports (".concat(f[4], ") {").concat(f[1], "}"), f[4] = r) : f[4] = "".concat(r)), t.push(f))
           }
         }, t
       }

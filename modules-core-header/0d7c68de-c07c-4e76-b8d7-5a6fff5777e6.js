@@ -22,62 +22,62 @@ _global.SENTRY_RELEASE = {
         t = Symbol.for("react.fragment"),
         n = Object.prototype.hasOwnProperty,
         l = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        f = {
+        s = {
           key: !0,
           ref: !0,
           __self: !0,
           __source: !0
         };
 
-      function s(e, o, a) {
+      function f(e, o, a) {
         var r, t = {},
-          s = null,
+          f = null,
           i = null;
-        for (r in void 0 !== a && (s = "" + a), void 0 !== o.key && (s = "" + o.key), void 0 !== o.ref && (i = o.ref), o) n.call(o, r) && !f.hasOwnProperty(r) && (t[r] = o[r]);
+        for (r in void 0 !== a && (f = "" + a), void 0 !== o.key && (f = "" + o.key), void 0 !== o.ref && (i = o.ref), o) n.call(o, r) && !s.hasOwnProperty(r) && (t[r] = o[r]);
         if (e && e.defaultProps)
           for (r in o = e.defaultProps) void 0 === t[r] && (t[r] = o[r]);
         return {
           $$typeof: d,
           type: e,
-          key: s,
+          key: f,
           ref: i,
           props: t,
           _owner: l.current
         }
       }
-      o.Fragment = t, o.jsx = s, o.jsxs = s
+      o.Fragment = t, o.jsx = f, o.jsxs = f
     },
     73855: (e, o, a) => {
       e.exports = a(32469)
     },
     95795: (e, o, a) => {
       a.r(o), a.d(o, {
-        Portal: () => f,
-        Root: () => s
+        Portal: () => s,
+        Root: () => f
       });
       var r = a(62229),
         d = a(44853),
         t = a(60286),
         n = a(92600),
         l = a(73855),
-        f = r.forwardRef(((e, o) => {
+        s = r.forwardRef(((e, o) => {
           const {
             container: a,
-            ...f
-          } = e, [s, i] = r.useState(!1);
+            ...s
+          } = e, [f, i] = r.useState(!1);
           (0, n.N)((() => i(!0)), []);
-          const u = a || s && globalThis?.document?.body;
+          const u = a || f && globalThis?.document?.body;
           return u ? d.createPortal((0, l.jsx)(t.sG.div, {
-            ...f,
+            ...s,
             ref: o
           }), u) : null
         }));
-      f.displayName = "Portal";
-      var s = f
+      s.displayName = "Portal";
+      var f = s
     },
     60286: (e, o, a) => {
       a.d(o, {
-        hO: () => f,
+        hO: () => s,
         sG: () => l
       });
       var r = a(62229),
@@ -101,7 +101,7 @@ _global.SENTRY_RELEASE = {
           }
         }), {});
 
-      function f(e, o) {
+      function s(e, o) {
         e && d.flushSync((() => e.dispatchEvent(o)))
       }
     },

@@ -22,37 +22,37 @@ _global.SENTRY_RELEASE = {
         d = Symbol.for("react.fragment"),
         n = Object.prototype.hasOwnProperty,
         l = a.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        f = {
+        s = {
           key: !0,
           ref: !0,
           __self: !0,
           __source: !0
         };
 
-      function s(e, o, r) {
+      function f(e, o, r) {
         var a, d = {},
-          s = null,
+          f = null,
           i = null;
-        for (a in void 0 !== r && (s = "" + r), void 0 !== o.key && (s = "" + o.key), void 0 !== o.ref && (i = o.ref), o) n.call(o, a) && !f.hasOwnProperty(a) && (d[a] = o[a]);
+        for (a in void 0 !== r && (f = "" + r), void 0 !== o.key && (f = "" + o.key), void 0 !== o.ref && (i = o.ref), o) n.call(o, a) && !s.hasOwnProperty(a) && (d[a] = o[a]);
         if (e && e.defaultProps)
           for (a in o = e.defaultProps) void 0 === d[a] && (d[a] = o[a]);
         return {
           $$typeof: t,
           type: e,
-          key: s,
+          key: f,
           ref: i,
           props: d,
           _owner: l.current
         }
       }
-      o.Fragment = d, o.jsx = s, o.jsxs = s
+      o.Fragment = d, o.jsx = f, o.jsxs = f
     },
     73855: (e, o, r) => {
       e.exports = r(32469)
     },
     28844: (e, o, r) => {
       r.r(o), r.d(o, {
-        Portal: () => s,
+        Portal: () => f,
         Root: () => i
       });
       var a = r(62229),
@@ -75,21 +75,21 @@ _global.SENTRY_RELEASE = {
             [o]: r
           }
         }), {}),
-        f = r(92600),
-        s = a.forwardRef(((e, o) => {
+        s = r(92600),
+        f = a.forwardRef(((e, o) => {
           const {
             container: r,
             ...d
-          } = e, [s, i] = a.useState(!1);
-          (0, f.N)((() => i(!0)), []);
-          const u = r || s && globalThis?.document?.body;
+          } = e, [f, i] = a.useState(!1);
+          (0, s.N)((() => i(!0)), []);
+          const u = r || f && globalThis?.document?.body;
           return u ? t.createPortal((0, n.jsx)(l.div, {
             ...d,
             ref: o
           }), u) : null
         }));
-      s.displayName = "Portal";
-      var i = s
+      f.displayName = "Portal";
+      var i = f
     },
     92600: (e, o, r) => {
       r.d(o, {

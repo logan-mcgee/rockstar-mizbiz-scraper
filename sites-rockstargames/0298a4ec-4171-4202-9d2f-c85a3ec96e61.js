@@ -21,27 +21,27 @@ _global.SENTRY_RELEASE = {
         default: () => o
       });
       var t = s(62229),
-        n = s(9623),
-        d = s(2918);
+        d = s(9623),
+        n = s(2918);
       const o = () => {
         const {
           data: e,
           loggedIn: a
-        } = (0, d.useRockstarUser)(), {
+        } = (0, n.useRockstarUser)(), {
           hasGtaPlus: s,
           accountSynced: o
         } = e ?? {}, {
-          setCharactersNeeded: l
-        } = (0, d.useRockstarUserState)(), r = (0, n.useNavigate)();
-        return (0, t.useLayoutEffect)((() => (l("gtao"), () => {
-          l(null)
+          setCharactersNeeded: f
+        } = (0, n.useRockstarUserState)(), l = (0, d.useNavigate)();
+        return (0, t.useLayoutEffect)((() => (f("gtao"), () => {
+          f(null)
         })), []), (0, t.useEffect)((() => {
-          !1 !== a ? o && r(s ? "./benefits" : "./join", {
+          !1 !== a ? o && l(s ? "./benefits" : "./join", {
             replace: !0
-          }) : r("./join", {
+          }) : l("./join", {
             replace: !0
           })
-        }), [s, o, a, r]), null
+        }), [s, o, a, l]), null
       }
     }
   }

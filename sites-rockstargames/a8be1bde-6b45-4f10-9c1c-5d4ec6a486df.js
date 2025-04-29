@@ -56,7 +56,7 @@ _global.SENTRY_RELEASE = {
         }
         return e
       }
-      var c, u, f, s, d = function(e) {
+      var c, f, u, s, d = function(e) {
           var n, t = {
               unsupported: c = !("undefined" != typeof navigator && "connection" in navigator && "effectiveType" in navigator.connection),
               effectiveConnectionType: c ? e : navigator.connection.effectiveType
@@ -86,12 +86,12 @@ _global.SENTRY_RELEASE = {
               throw new TypeError("Invalid attempt to destructure non-iterable instance")
             }(),
             o = a[0],
-            u = a[1];
+            f = a[1];
           return (0, r.useEffect)((function() {
             if (!c) {
               var e = navigator.connection,
                 n = function() {
-                  u({
+                  f({
                     effectiveConnectionType: e.effectiveType
                   })
                 };
@@ -101,22 +101,22 @@ _global.SENTRY_RELEASE = {
                 }
             }
           }), []), i({}, o, {
-            setNetworkStatus: u
+            setNetworkStatus: f
           })
         },
         l = function() {
           return {
-            unsupported: u = !("undefined" != typeof navigator && "connection" in navigator && "saveData" in navigator.connection),
-            saveData: u ? arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null : !0 === navigator.connection.saveData
+            unsupported: f = !("undefined" != typeof navigator && "connection" in navigator && "saveData" in navigator.connection),
+            saveData: f ? arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null : !0 === navigator.connection.saveData
           }
         };
-      if (f = !("undefined" != typeof navigator && "deviceMemory" in navigator)) s = {
-        unsupported: f
+      if (u = !("undefined" != typeof navigator && "deviceMemory" in navigator)) s = {
+        unsupported: u
       };
       else {
         var p = "memory" in performance ? performance.memory : null;
         s = {
-          unsupported: f,
+          unsupported: u,
           deviceMemory: navigator.deviceMemory,
           totalJSHeapSize: p ? p.totalJSHeapSize : null,
           usedJSHeapSize: p ? p.usedJSHeapSize : null,
@@ -124,7 +124,7 @@ _global.SENTRY_RELEASE = {
         }
       }
       var y, g = function(e) {
-        return f && e ? i({}, s, {}, e) : i({}, s)
+        return u && e ? i({}, s, {}, e) : i({}, s)
       };
       y = "undefined" != typeof navigator && "hardwareConcurrency" in navigator ? {
         unsupported: !1,

@@ -1,9 +1,9 @@
 ! function() {
   try {
-    var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      d = (new Error).stack;
-    d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "a949082d-7e11-429a-8fd1-c85cd4fd4937", e._sentryDebugIdIdentifier = "sentry-dbid-a949082d-7e11-429a-8fd1-c85cd4fd4937")
-  } catch (e) {}
+    var d = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
+      e = (new Error).stack;
+    e && (d._sentryDebugIds = d._sentryDebugIds || {}, d._sentryDebugIds[e] = "a949082d-7e11-429a-8fd1-c85cd4fd4937", d._sentryDebugIdIdentifier = "sentry-dbid-a949082d-7e11-429a-8fd1-c85cd4fd4937")
+  } catch (d) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
 _global2._sentryModuleMetadata = _global2._sentryModuleMetadata || {}, _global2._sentryModuleMetadata[(new Error).stack] = {

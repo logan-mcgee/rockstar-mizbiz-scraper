@@ -57,9 +57,9 @@ _global.SENTRY_RELEASE = {
         s = a(53178),
         d = a.n(s),
         g = a(27835),
-        l = a.n(g),
-        c = a(17529),
-        m = a.n(c),
+        c = a.n(g),
+        l = a(17529),
+        m = a.n(l),
         f = a(72162),
         b = a.n(f),
         p = a(82510),
@@ -68,7 +68,7 @@ _global.SENTRY_RELEASE = {
         u = a.n(A),
         v = a(85873),
         w = {};
-      w.styleTagTransform = u(), w.setAttributes = b(), w.insert = m().bind(null, "head"), w.domAPI = l(), w.insertStyleElement = h(), d()(v.A, w);
+      w.styleTagTransform = u(), w.setAttributes = b(), w.insert = m().bind(null, "head"), w.domAPI = c(), w.insertStyleElement = h(), d()(v.A, w);
       const k = v.A && v.A.locals ? v.A.locals : void 0;
       var x = a(73855);
       const {
@@ -82,8 +82,8 @@ _global.SENTRY_RELEASE = {
           className: s,
           game: d,
           noImg: g,
-          columns: l,
-          mobileColumns: c
+          columns: c,
+          mobileColumns: l
         } = n;
         const [m, f] = (0, t.useState)(null);
         if ((0, t.useEffect)((() => {
@@ -92,11 +92,11 @@ _global.SENTRY_RELEASE = {
         const b = {
           color: i?.color
         };
-        return delete i?.color, l && m ? (0, x.jsx)("div", {
+        return delete i?.color, c && m ? (0, x.jsx)("div", {
           className: k.grid,
           style: {
-            "--ordered-list-grid-column": l,
-            "--ordered-list-grid-column-mobile": c ?? l
+            "--ordered-list-grid-column": c,
+            "--ordered-list-grid-column-mobile": l ?? c
           },
           children: (0, x.jsx)("ol", {
             className: (0, o.classList)(k.itemList, k.noImg, k[r], k[d]),
@@ -130,8 +130,8 @@ _global.SENTRY_RELEASE = {
         s = a(79908),
         d = a.n(s),
         g = new URL(a(42563), a.b),
-        l = new URL(a(77381), a.b),
-        c = new URL(a(73715), a.b),
+        c = new URL(a(77381), a.b),
+        l = new URL(a(73715), a.b),
         m = new URL(a(9564), a.b),
         f = new URL(a(68918), a.b),
         b = new URL(a(51097), a.b),
@@ -146,8 +146,8 @@ _global.SENTRY_RELEASE = {
         y = new URL(a(4943), a.b),
         C = o()(r()),
         z = d()(g),
-        B = d()(l),
-        F = d()(c),
+        B = d()(c),
+        F = d()(l),
         I = d()(m),
         D = d()(f),
         _ = d()(b),

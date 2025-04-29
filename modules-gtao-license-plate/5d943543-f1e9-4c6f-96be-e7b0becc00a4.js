@@ -20,11 +20,11 @@ _global.SENTRY_RELEASE = {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => a,
-        Lightbox_Dialog_Description: () => f,
-        Lightbox_Dialog_Title: () => x,
+        Lightbox_Dialog_Description: () => x,
+        Lightbox_Dialog_Title: () => h,
         Lightbox_Download_Button_Label: () => u,
-        Lightbox_Download_Button_Tooltip: () => L,
-        Lightbox_Open_Button_Label: () => h,
+        Lightbox_Download_Button_Tooltip: () => f,
+        Lightbox_Open_Button_Label: () => L,
         Lightbox_Reset_Zoom_Button_Label: () => g,
         Lightbox_Reset_Zoom_Button_Tooltip: () => s,
         Lightbox_Zoom_In_Button_Label: () => l,
@@ -46,10 +46,10 @@ _global.SENTRY_RELEASE = {
         d = "Nível de zoom",
         r = "{zoom}%",
         u = "Baixar",
-        L = "Baixar",
-        h = "Abrir imagem na lightbox",
-        x = "lightbox da imagem",
-        f = "Texto alternativo: {alt}",
+        f = "Baixar",
+        L = "Abrir imagem na lightbox",
+        h = "lightbox da imagem",
+        x = "Texto alternativo: {alt}",
         p = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: a,
@@ -62,10 +62,10 @@ _global.SENTRY_RELEASE = {
           Lightbox_Zoom_Slider_Label: d,
           Lightbox_Zoom_Slider_Tooltip: r,
           Lightbox_Download_Button_Label: u,
-          Lightbox_Download_Button_Tooltip: L,
-          Lightbox_Open_Button_Label: h,
-          Lightbox_Dialog_Title: x,
-          Lightbox_Dialog_Description: f
+          Lightbox_Download_Button_Tooltip: f,
+          Lightbox_Open_Button_Label: L,
+          Lightbox_Dialog_Title: h,
+          Lightbox_Dialog_Description: x
         }
     }
   }

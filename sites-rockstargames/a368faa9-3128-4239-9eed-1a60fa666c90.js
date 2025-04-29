@@ -19,7 +19,7 @@ _global.SENTRY_RELEASE = {
     52234: (e, n, a) => {
       "use strict";
       a.r(n), a.d(n, {
-        default: () => c
+        default: () => f
       });
       var i = a(31144),
         t = a(95966),
@@ -28,7 +28,7 @@ _global.SENTRY_RELEASE = {
         d = a.n(s),
         r = a(92824),
         o = a(73855);
-      const c = (0, t.withTranslations)((e => {
+      const f = (0, t.withTranslations)((e => {
         let {
           t: n
         } = e;

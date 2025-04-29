@@ -18,11 +18,11 @@ _global.SENTRY_RELEASE = {
   [7214], {
     7214: (e, a, o) => {
       o.r(a), o.d(a, {
-        default: () => d
+        default: () => n
       });
-      var t = o(6274),
-        n = o(73855);
-      const d = () => (0, n.jsx)(t.A, {
+      var d = o(6274),
+        t = o(73855);
+      const n = () => (0, t.jsx)(d.A, {
         jsonType: "corpinfo",
         titleKey: "Corporate Information",
         noCountrySelector: !0

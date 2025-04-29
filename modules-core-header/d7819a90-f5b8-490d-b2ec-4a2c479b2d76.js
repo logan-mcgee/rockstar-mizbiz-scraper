@@ -21,8 +21,8 @@ _global.SENTRY_RELEASE = {
         r = Symbol.for("react.element"),
         n = Symbol.for("react.fragment"),
         t = Object.prototype.hasOwnProperty,
-        f = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        l = {
+        l = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        f = {
           key: !0,
           ref: !0,
           __self: !0,
@@ -33,7 +33,7 @@ _global.SENTRY_RELEASE = {
         var o, n = {},
           s = null,
           _ = null;
-        for (o in void 0 !== d && (s = "" + d), void 0 !== a.key && (s = "" + a.key), void 0 !== a.ref && (_ = a.ref), a) t.call(a, o) && !l.hasOwnProperty(o) && (n[o] = a[o]);
+        for (o in void 0 !== d && (s = "" + d), void 0 !== a.key && (s = "" + a.key), void 0 !== a.ref && (_ = a.ref), a) t.call(a, o) && !f.hasOwnProperty(o) && (n[o] = a[o]);
         if (e && e.defaultProps)
           for (o in a = e.defaultProps) void 0 === n[o] && (n[o] = a[o]);
         return {
@@ -42,7 +42,7 @@ _global.SENTRY_RELEASE = {
           key: s,
           ref: _,
           props: n,
-          _owner: f.current
+          _owner: l.current
         }
       }
       a.Fragment = n, a.jsx = s, a.jsxs = s

@@ -38,13 +38,13 @@ _global.SENTRY_RELEASE = {
         __importDefault: () => D,
         __importStar: () => T,
         __makeTemplateObject: () => k,
-        __metadata: () => d,
+        __metadata: () => p,
         __param: () => s,
-        __propKey: () => f,
+        __propKey: () => u,
         __read: () => v,
         __rest: () => i,
-        __runInitializers: () => u,
-        __setFunctionName: () => p,
+        __runInitializers: () => f,
+        __setFunctionName: () => d,
         __spread: () => g,
         __spreadArray: () => O,
         __spreadArrays: () => m,
@@ -108,44 +108,44 @@ _global.SENTRY_RELEASE = {
           if (void 0 !== e && "function" != typeof e) throw new TypeError("Function expected");
           return e
         }
-        for (var c, s = n.kind, l = "getter" === s ? "get" : "setter" === s ? "set" : "value", u = !t && e ? n.static ? e : e.prototype : null, f = t || (u ? Object.getOwnPropertyDescriptor(u, n.name) : {}), p = !1, d = r.length - 1; d >= 0; d--) {
+        for (var c, s = n.kind, l = "getter" === s ? "get" : "setter" === s ? "set" : "value", f = !t && e ? n.static ? e : e.prototype : null, u = t || (f ? Object.getOwnPropertyDescriptor(f, n.name) : {}), d = !1, p = r.length - 1; p >= 0; p--) {
           var y = {};
           for (var _ in n) y[_] = "access" === _ ? {} : n[_];
           for (var _ in n.access) y.access[_] = n.access[_];
           y.addInitializer = function(e) {
-            if (p) throw new TypeError("Cannot add initializers after decoration has completed");
+            if (d) throw new TypeError("Cannot add initializers after decoration has completed");
             a.push(i(e || null))
           };
-          var b = (0, r[d])("accessor" === s ? {
-            get: f.get,
-            set: f.set
-          } : f[l], y);
+          var b = (0, r[p])("accessor" === s ? {
+            get: u.get,
+            set: u.set
+          } : u[l], y);
           if ("accessor" === s) {
             if (void 0 === b) continue;
             if (null === b || "object" != typeof b) throw new TypeError("Object expected");
-            (c = i(b.get)) && (f.get = c), (c = i(b.set)) && (f.set = c), (c = i(b.init)) && o.unshift(c)
-          } else(c = i(b)) && ("field" === s ? o.unshift(c) : f[l] = c)
+            (c = i(b.get)) && (u.get = c), (c = i(b.set)) && (u.set = c), (c = i(b.init)) && o.unshift(c)
+          } else(c = i(b)) && ("field" === s ? o.unshift(c) : u[l] = c)
         }
-        u && Object.defineProperty(u, n.name, f), p = !0
+        f && Object.defineProperty(f, n.name, u), d = !0
       }
 
-      function u(e, t, r) {
+      function f(e, t, r) {
         for (var n = arguments.length > 2, o = 0; o < t.length; o++) r = n ? t[o].call(e, r) : t[o].call(e);
         return n ? r : void 0
       }
 
-      function f(e) {
+      function u(e) {
         return "symbol" == typeof e ? e : "".concat(e)
       }
 
-      function p(e, t, r) {
+      function d(e, t, r) {
         return "symbol" == typeof t && (t = t.description ? "[".concat(t.description, "]") : ""), Object.defineProperty(e, "name", {
           configurable: !0,
           value: r ? "".concat(r, " ", t) : t
         })
       }
 
-      function d(e, t) {
+      function p(e, t) {
         if ("object" == typeof Reflect && "function" == typeof Reflect.metadata) return Reflect.metadata(e, t)
       }
 
@@ -349,9 +349,9 @@ _global.SENTRY_RELEASE = {
 
         function c(e, t) {
           try {
-            (r = o[e](t)).value instanceof j ? Promise.resolve(r.value.v).then(s, l) : u(a[0][2], r)
+            (r = o[e](t)).value instanceof j ? Promise.resolve(r.value.v).then(s, l) : f(a[0][2], r)
           } catch (e) {
-            u(a[0][3], e)
+            f(a[0][3], e)
           }
           var r
         }
@@ -364,7 +364,7 @@ _global.SENTRY_RELEASE = {
           c("throw", e)
         }
 
-        function u(e, t) {
+        function f(e, t) {
           e(t), a.shift(), a.length && c(a[0][0], a[0][1])
         }
       }
@@ -509,7 +509,7 @@ _global.SENTRY_RELEASE = {
         __rest: i,
         __decorate: c,
         __param: s,
-        __metadata: d,
+        __metadata: p,
         __awaiter: y,
         __generator: _,
         __createBinding: b,

@@ -1,8 +1,8 @@
 ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "8b3e4f99-6b53-401b-900f-ab545582203b", e._sentryDebugIdIdentifier = "sentry-dbid-8b3e4f99-6b53-401b-900f-ab545582203b")
+      d = (new Error).stack;
+    d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "8b3e4f99-6b53-401b-900f-ab545582203b", e._sentryDebugIdIdentifier = "sentry-dbid-8b3e4f99-6b53-401b-900f-ab545582203b")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -23,9 +23,9 @@ _global.SENTRY_RELEASE = {
             cardinal: ["one", "other"],
             ordinal: ["other"]
           },
-          fn: function(e, a) {
-            var n = !String(e).split(".")[1];
-            return a ? "other" : 1 == e && n ? "one" : "other"
+          fn: function(e, d) {
+            var a = !String(e).split(".")[1];
+            return d ? "other" : 1 == e && a ? "one" : "other"
           }
         },
         locale: "de"

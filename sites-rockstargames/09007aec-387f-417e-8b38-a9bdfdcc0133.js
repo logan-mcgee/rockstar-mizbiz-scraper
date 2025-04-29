@@ -75,11 +75,11 @@ _global.SENTRY_RELEASE = {
             {
               meta: m = {}
             } = (0, o.i)() ?? {},
-            [u, g] = (0, t.useState)(d ?? m?.cdn ?? m?.prod ?? !0);
+            [u, f] = (0, t.useState)(d ?? m?.cdn ?? m?.prod ?? !0);
           (0, t.useEffect)((() => {
-            g(d ?? m?.cdn ?? m?.prod ?? !0)
+            f(d ?? m?.cdn ?? m?.prod ?? !0)
           }), [d, m]);
-          const f = (0, t.useCallback)((e => {
+          const g = (0, t.useCallback)((e => {
             const n = null !== c,
               a = e?.previewSrc ?? e ?? null;
             if (null === a || "string" != typeof a) return null;
@@ -91,8 +91,8 @@ _global.SENTRY_RELEASE = {
             alt: n,
             ariaLabel: l,
             src: {
-              mobile: f(c?.[A]?.mobile ?? c?.en_us?.mobile ?? a),
-              desktop: f(c?.[A]?.desktop ?? c?.en_us?.desktop ?? i)
+              mobile: g(c?.[A]?.mobile ?? c?.en_us?.mobile ?? a),
+              desktop: g(c?.[A]?.desktop ?? c?.en_us?.desktop ?? i)
             }
           }
         },
@@ -126,9 +126,9 @@ _global.SENTRY_RELEASE = {
         TinaParser: () => J,
         TinaPayloadProvider: () => m.o,
         recursiveNestedTemplates: () => R,
-        useGenerateCdnSource: () => f.jS,
-        useGetCdnSource: () => f.C1,
-        useImageParser: () => f.S1,
+        useGenerateCdnSource: () => g.jS,
+        useGetCdnSource: () => g.C1,
+        useImageParser: () => g.S1,
         useTinaComponents: () => A,
         useTinaPayload: () => m.i,
         useTranslations: () => L
@@ -158,8 +158,8 @@ _global.SENTRY_RELEASE = {
         A = () => (0, t.useContext)(l);
       var m = a(29960),
         u = a(34695),
-        g = a.n(u);
-      var f = a(19544);
+        f = a.n(u);
+      var g = a(19544);
       const p = function() {
         let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "";
         return {
@@ -220,7 +220,7 @@ _global.SENTRY_RELEASE = {
               if (!e || !o().has(e, "key") || e.translated) return;
               const n = r[e.key] ?? null;
               if (!n) return;
-              const a = g()(n);
+              const a = f()(n);
               Object.keys(a).map((n => {
                 o().set(e, n, a[n])
               })), o().set(e, "translated", !0), Object.freeze(e)
@@ -330,11 +330,11 @@ _global.SENTRY_RELEASE = {
           } = e;
           const s = (0, m.i)(),
             [l, c] = (0, t.useState)(null),
-            [u, g] = (0, t.useState)(null);
+            [u, f] = (0, t.useState)(null);
           (0, t.useEffect)((() => {
-            n?.payload && c(n.payload), n?.variables && g(n.variables)
+            n?.payload && c(n.payload), n?.variables && f(n.variables)
           }), [n]);
-          const [f] = (0, t.useState)({
+          const [g] = (0, t.useState)({
             ...a,
             ...A() ?? {}
           }), p = (e => {
@@ -389,10 +389,10 @@ _global.SENTRY_RELEASE = {
             return (0, i.jsx)(m.o, {
               payload: t,
               children: (0, i.jsx)(d, {
-                components: f,
+                components: g,
                 children: (0, i.jsx)($, {
                   payload: e,
-                  components: f,
+                  components: g,
                   componentProps: {
                     ...r,
                     tina: n

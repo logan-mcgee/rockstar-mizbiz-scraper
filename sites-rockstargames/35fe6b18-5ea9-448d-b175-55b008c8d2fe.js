@@ -18,7 +18,7 @@ _global.SENTRY_RELEASE = {
   [2185], {
     72185: (e, a, t) => {
       t.r(a), t.d(a, {
-        default: () => f
+        default: () => i
       });
       var s = t(62229),
         d = t(9623),
@@ -26,13 +26,13 @@ _global.SENTRY_RELEASE = {
         l = t(31879),
         n = t(95966),
         r = t(70241),
-        i = t(73855);
-      const f = (0, n.withTranslations)((e => {
+        f = t(73855);
+      const i = (0, n.withTranslations)((e => {
         let {
           t: a
         } = e;
         const [t] = (0, d.useSearchParams)(), n = (0, d.useNavigate)(), {
-          setNormalLogo: f,
+          setNormalLogo: i,
           setBreadcrumb: u,
           setTitle: g
         } = (0, r.b)(), {
@@ -46,18 +46,18 @@ _global.SENTRY_RELEASE = {
         return (0, s.useEffect)((() => (u([{
           href: "/videos",
           title: a("Videos")
-        }]), f(!1), () => {
-          f(!0), u()
+        }]), i(!1), () => {
+          i(!0), u()
         })), []), (0, s.useEffect)((() => {
           c && g(`${c.game.title} - ${c.title}`)
-        }), [c]), c && b ? (0, i.jsxs)(i.Fragment, {
-          children: [(0, i.jsx)(l.PlayerWithInfo, {
+        }), [c]), c && b ? (0, f.jsxs)(f.Fragment, {
+          children: [(0, f.jsx)(l.PlayerWithInfo, {
             resolution: y,
             videoId: b,
             videoChangeCallback: e => {
               n(`../videos/${e}`)
             }
-          }), _?.results?.length ? (0, i.jsx)(o.A, {
+          }), _?.results?.length ? (0, f.jsx)(o.A, {
             vids: _.results,
             title: a("Related Videos")
           }) : ""]

@@ -97,8 +97,8 @@ _global.SENTRY_RELEASE = {
         l = p(n(85177)),
         s = p(n(94613)),
         d = p(n(74844)),
-        c = p(n(54762)),
-        f = n(71319);
+        f = p(n(54762)),
+        c = n(71319);
 
       function p(e) {
         return e && e.__esModule ? e : {
@@ -152,7 +152,7 @@ _global.SENTRY_RELEASE = {
         }, {
           key: "componentWillUnmount",
           value: function() {
-            this.props.autoResize && window.removeEventListener("resize", this.handleWindowResize), this.pid = (0, c.default)()
+            this.props.autoResize && window.removeEventListener("resize", this.handleWindowResize), this.pid = (0, f.default)()
           }
         }, {
           key: "process",
@@ -166,12 +166,12 @@ _global.SENTRY_RELEASE = {
               a = t.onReady,
               u = this._parent,
               d = this._child,
-              p = (0, f.innerWidth)(u),
-              g = (0, f.innerHeight)(u);
+              p = (0, c.innerWidth)(u),
+              g = (0, c.innerHeight)(u);
             if (g <= 0 || isNaN(g)) console.warn("Can not process element without height. Make sure the element is displayed and has a static height.");
             else if (p <= 0 || isNaN(p)) console.warn("Can not process element without width. Make sure the element is displayed and has a static width.");
             else {
-              var m = (0, c.default)();
+              var m = (0, f.default)();
               this.pid = m;
               var b = function() {
                   return m !== e.pid
@@ -243,24 +243,24 @@ _global.SENTRY_RELEASE = {
               }(t, ["children", "text", "style", "min", "max", "mode", "forceWidth", "forceSingleModeWidth", "throttle", "autoResize", "onReady"])),
               s = this.state,
               d = s.fontSize,
-              c = s.ready,
-              f = r({}, a, {
+              f = s.ready,
+              c = r({}, a, {
                 fontSize: d
               }),
               p = {
-                display: c ? "block" : "inline-block"
+                display: f ? "block" : "inline-block"
               };
             return "single" === u && (p.whiteSpace = "nowrap"), i.default.createElement("div", r({
               ref: function(t) {
                 return e._parent = t
               },
-              style: f
+              style: c
             }, l), i.default.createElement("div", {
               ref: function(t) {
                 return e._child = t
               },
               style: p
-            }, o && "function" == typeof n ? c ? n(o) : o : n))
+            }, o && "function" == typeof n ? f ? n(o) : o : n))
           }
         }]), t
       }(i.default.Component);

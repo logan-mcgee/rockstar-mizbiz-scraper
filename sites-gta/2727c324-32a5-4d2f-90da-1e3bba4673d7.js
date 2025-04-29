@@ -27,8 +27,8 @@ _global.SENTRY_RELEASE = {
         i = Symbol.for("react.forward_ref"),
         s = Symbol.for("react.suspense"),
         l = Symbol.for("react.memo"),
-        p = Symbol.for("react.lazy"),
-        d = Symbol.iterator,
+        d = Symbol.for("react.lazy"),
+        p = Symbol.iterator,
         y = {
           isMounted: function() {
             return !1
@@ -37,17 +37,17 @@ _global.SENTRY_RELEASE = {
           enqueueReplaceState: function() {},
           enqueueSetState: function() {}
         },
-        _ = Object.assign,
-        b = {};
+        b = Object.assign,
+        _ = {};
 
       function h(e, t, r) {
-        this.props = e, this.context = t, this.refs = b, this.updater = r || y
+        this.props = e, this.context = t, this.refs = _, this.updater = r || y
       }
 
       function m() {}
 
       function v(e, t, r) {
-        this.props = e, this.context = t, this.refs = b, this.updater = r || y
+        this.props = e, this.context = t, this.refs = _, this.updater = r || y
       }
       h.prototype.isReactComponent = {}, h.prototype.setState = function(e, t) {
         if ("object" != typeof e && "function" != typeof e && null != e) throw Error("setState(...): takes an object of state variables to update or a function which returns an object of state variables.");
@@ -56,7 +56,7 @@ _global.SENTRY_RELEASE = {
         this.updater.enqueueForceUpdate(this, e, "forceUpdate")
       }, m.prototype = h.prototype;
       var g = v.prototype = new m;
-      g.constructor = v, _(g, h.prototype), g.isPureReactComponent = !0;
+      g.constructor = v, b(g, h.prototype), g.isPureReactComponent = !0;
       var w = Array.isArray,
         S = Object.prototype.hasOwnProperty,
         k = {
@@ -144,7 +144,7 @@ _global.SENTRY_RELEASE = {
             var s = u + j(c = e[i], i);
             f += I(c, t, o, s, a)
           } else if (s = function(e) {
-              return null === e || "object" != typeof e ? null : "function" == typeof(e = d && e[d] || e["@@iterator"]) ? e : null
+              return null === e || "object" != typeof e ? null : "function" == typeof(e = p && e[p] || e["@@iterator"]) ? e : null
             }(e), "function" == typeof s)
             for (e = s.call(e), i = 0; !(c = e.next()).done;) f += I(c = c.value, t, o, s = u + j(c, i++), a);
           else if ("object" === c) throw t = String(e), Error("Objects are not valid as a React child (found: " + ("[object Object]" === t ? "object with keys {" + Object.keys(e).join(", ") + "}" : t) + "). If you meant to render a collection of children, use an array instead.");
@@ -207,7 +207,7 @@ _global.SENTRY_RELEASE = {
         }
       }, t.Component = h, t.Fragment = o, t.Profiler = a, t.PureComponent = v, t.StrictMode = u, t.Suspense = s, t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = M, t.cloneElement = function(e, t, n) {
         if (null == e) throw Error("React.cloneElement(...): The argument must be a React element, but you passed " + e + ".");
-        var o = _({}, e.props),
+        var o = b({}, e.props),
           u = e.key,
           a = e.ref,
           c = e._owner;
@@ -258,7 +258,7 @@ _global.SENTRY_RELEASE = {
         }
       }, t.isValidElement = $, t.lazy = function(e) {
         return {
-          $$typeof: p,
+          $$typeof: d,
           _payload: {
             _status: -1,
             _result: e

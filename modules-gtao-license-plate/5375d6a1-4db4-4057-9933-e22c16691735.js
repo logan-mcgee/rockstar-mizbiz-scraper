@@ -20,11 +20,11 @@ _global.SENTRY_RELEASE = {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => l,
-        Lightbox_Dialog_Description: () => f,
-        Lightbox_Dialog_Title: () => p,
+        Lightbox_Dialog_Description: () => p,
+        Lightbox_Dialog_Title: () => r,
         Lightbox_Download_Button_Label: () => L,
-        Lightbox_Download_Button_Tooltip: () => h,
-        Lightbox_Open_Button_Label: () => r,
+        Lightbox_Download_Button_Tooltip: () => f,
+        Lightbox_Open_Button_Label: () => h,
         Lightbox_Reset_Zoom_Button_Label: () => d,
         Lightbox_Reset_Zoom_Button_Tooltip: () => g,
         Lightbox_Zoom_In_Button_Label: () => a,
@@ -46,10 +46,10 @@ _global.SENTRY_RELEASE = {
         u = "ズームの度合",
         s = "{zoom}%",
         L = "ダウンロード",
-        h = "ダウンロード",
-        r = "ライトボックス内のイメージを開く",
-        p = "ライトボックスのイメージ",
-        f = "Altテキスト：{alt}",
+        f = "ダウンロード",
+        h = "ライトボックス内のイメージを開く",
+        r = "ライトボックスのイメージ",
+        p = "Altテキスト：{alt}",
         x = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: l,
@@ -62,10 +62,10 @@ _global.SENTRY_RELEASE = {
           Lightbox_Zoom_Slider_Label: u,
           Lightbox_Zoom_Slider_Tooltip: s,
           Lightbox_Download_Button_Label: L,
-          Lightbox_Download_Button_Tooltip: h,
-          Lightbox_Open_Button_Label: r,
-          Lightbox_Dialog_Title: p,
-          Lightbox_Dialog_Description: f
+          Lightbox_Download_Button_Tooltip: f,
+          Lightbox_Open_Button_Label: h,
+          Lightbox_Dialog_Title: r,
+          Lightbox_Dialog_Description: p
         }
     }
   }

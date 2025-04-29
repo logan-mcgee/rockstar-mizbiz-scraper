@@ -27,8 +27,8 @@ _global.SENTRY_RELEASE = {
         o = a(24036),
         s = a.n(o),
         l = a(95966),
-        c = a(2918);
-      const d = {
+        d = a(2918);
+      const c = {
           open: {
             opacity: 0,
             transition: {
@@ -100,8 +100,8 @@ _global.SENTRY_RELEASE = {
             onClick: s,
             tabIndex: l
           } = e;
-          const c = o ?? (t.startsWith(document.location.origin) ? "_self" : "_blank"),
-            d = [z.platformButton, z[i]].join(" "),
+          const d = o ?? (t.startsWith(document.location.origin) ? "_self" : "_blank"),
+            c = [z.platformButton, z[i]].join(" "),
             g = i ? a(5328)(`./${i}.svg`) : null,
             m = (0, B.jsxs)(B.Fragment, {
               children: [g ? (0, B.jsx)("img", {
@@ -114,14 +114,14 @@ _global.SENTRY_RELEASE = {
             });
           return t.startsWith("http") ? (0, B.jsx)("a", {
             href: t,
-            className: d,
-            target: c,
+            className: c,
+            target: d,
             onClick: s,
             "aria-label": n,
             tabIndex: l,
             children: m
           }) : (0, B.jsx)(r.NavLink, {
-            className: d,
+            className: c,
             onClick: s,
             to: t,
             "aria-label": n,
@@ -143,7 +143,7 @@ _global.SENTRY_RELEASE = {
           } = e;
           const [_, v] = (0, t.useState)(!1), [x, k] = (0, t.useState)(!1), [w, y] = (0, t.useState)(200), {
             track: C
-          } = (0, c.useGtmTrack)(), G = (0, t.useRef)(null), E = (0, t.useRef)(_), R = (0, t.useRef)(null);
+          } = (0, d.useGtmTrack)(), G = (0, t.useRef)(null), E = (0, t.useRef)(_), R = (0, t.useRef)(null);
           (0, t.useEffect)((() => {
             E.current = _
           }), [_]), (0, t.useEffect)((() => {
@@ -189,7 +189,7 @@ _global.SENTRY_RELEASE = {
             children: [(0, B.jsx)(i.motion.div, {
               className: z.content,
               animate: _ ? "open" : "close",
-              variants: d,
+              variants: c,
               "aria-hidden": !!_,
               children: p
             }), (0, B.jsxs)(i.motion.div, {
@@ -288,7 +288,7 @@ _global.SENTRY_RELEASE = {
     23066: (e, n, a) => {
       "use strict";
       a.d(n, {
-        A: () => c
+        A: () => d
       });
       var t = a(28786),
         r = a.n(t);
@@ -299,7 +299,7 @@ _global.SENTRY_RELEASE = {
           SPINNING: "spinning",
           THREE_DOTS: "threeDots"
         },
-        c = e => {
+        d = e => {
           let n, {
             type: a = l.SPINNING
           } = e;
@@ -339,8 +339,8 @@ _global.SENTRY_RELEASE = {
       var o = a(9623),
         s = a(53178),
         l = a.n(s),
-        c = a(27835),
-        d = a.n(c),
+        d = a(27835),
+        c = a.n(d),
         g = a(17529),
         m = a.n(g),
         p = a(72162),
@@ -351,7 +351,7 @@ _global.SENTRY_RELEASE = {
         h = a.n(A),
         _ = a(11835),
         v = {};
-      v.styleTagTransform = h(), v.setAttributes = f(), v.insert = m().bind(null, "head"), v.domAPI = d(), v.insertStyleElement = b(), l()(_.A, v);
+      v.styleTagTransform = h(), v.setAttributes = f(), v.insert = m().bind(null, "head"), v.domAPI = c(), v.insertStyleElement = b(), l()(_.A, v);
       const x = _.A && _.A.locals ? _.A.locals : void 0;
       var k = a(94997),
         w = a(73855);
@@ -361,8 +361,8 @@ _global.SENTRY_RELEASE = {
           to: a = "#",
           reloadDocument: s = !1,
           alt: l = "",
-          autoBlank: c = !1,
-          role: d = "link",
+          autoBlank: d = !1,
+          role: c = "link",
           onClick: g = (() => {}),
           focused: m = !1,
           ...p
@@ -371,7 +371,7 @@ _global.SENTRY_RELEASE = {
           u = (0, r.useIntl)(),
           b = !/^(https?|mailto):/i.test(a),
           A = /^#/.test(a),
-          h = p?.target ?? (c ? "_blank" : "_self"),
+          h = p?.target ?? (d ? "_blank" : "_self"),
           {
             ..._
           } = p;
@@ -392,7 +392,7 @@ _global.SENTRY_RELEASE = {
             ..._,
             "aria-label": v,
             ref: f,
-            role: d,
+            role: c,
             children: [n, "_blank" === h && !v && (0, w.jsx)("span", {
               className: x.visuallyHidden,
               children: u.formatMessage(i.aria_label_open_new_window)
@@ -424,7 +424,7 @@ _global.SENTRY_RELEASE = {
           ...k,
           "aria-label": v,
           ref: f,
-          role: d,
+          role: c,
           children: [n, "_blank" === h && !v && (0, w.jsx)("span", {
             className: x.visuallyHidden,
             children: u.formatMessage(i.aria_label_open_new_window)

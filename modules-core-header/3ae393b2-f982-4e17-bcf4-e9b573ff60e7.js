@@ -54,7 +54,7 @@ _global.SENTRY_RELEASE = {
         Slot: () => d,
         Slottable: () => c,
         createSlot: () => a,
-        createSlottable: () => s
+        createSlottable: () => f
       });
       var r = t(62229),
         o = t(73964),
@@ -123,20 +123,20 @@ _global.SENTRY_RELEASE = {
         }));
         return n.displayName = `${e}.SlotClone`, n
       }
-      var f = Symbol("radix.slottable");
+      var s = Symbol("radix.slottable");
 
-      function s(e) {
+      function f(e) {
         const n = ({
           children: e
         }) => (0, l.jsx)(l.Fragment, {
           children: e
         });
-        return n.displayName = `${e}.Slottable`, n.__radixId = f, n
+        return n.displayName = `${e}.Slottable`, n.__radixId = s, n
       }
-      var c = s("Slottable");
+      var c = f("Slottable");
 
       function u(e) {
-        return r.isValidElement(e) && "function" == typeof e.type && "__radixId" in e.type && e.type.__radixId === f
+        return r.isValidElement(e) && "function" == typeof e.type && "__radixId" in e.type && e.type.__radixId === s
       }
     }
   }

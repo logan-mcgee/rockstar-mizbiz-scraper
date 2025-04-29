@@ -21,51 +21,51 @@ _global.SENTRY_RELEASE = {
         h: () => l,
         Wx: () => u
       });
-      var n = t(62229),
-        d = t(95966);
+      var d = t(62229),
+        n = t(95966);
       t(40296), t(73855);
-      const r = (0, d.setContextItem)({
-          context: (0, n.createContext)(void 0),
+      const r = (0, n.setContextItem)({
+          context: (0, d.createContext)(void 0),
           key: "gtmContext22"
         }),
         s = {
           track: () => null
         },
-        l = () => (0, n.useContext)(r) ?? s;
-      (0, d.setMakeVarItem)({
+        l = () => (0, d.useContext)(r) ?? s;
+      (0, n.setMakeVarItem)({
         key: "navOpenReactive",
-        value: (0, d.makeVar)(null)
-      }), (0, d.setMakeVarItem)({
+        value: (0, n.makeVar)(null)
+      }), (0, n.setMakeVarItem)({
         key: "jumpScMenuFocusReactive",
-        value: (0, d.makeVar)(!1)
-      }), (0, d.setMakeVarItem)({
+        value: (0, n.makeVar)(!1)
+      }), (0, n.setMakeVarItem)({
         key: "hasNotificationsReactive",
-        value: (0, d.makeVar)(!1)
-      }), (0, d.setMakeVarItem)({
+        value: (0, n.makeVar)(!1)
+      }), (0, n.setMakeVarItem)({
         key: "currentCharIdReactive",
-        value: (0, d.makeVar)((0, d.webSettingsReactive)()?.currentCharId)
-      }), (0, d.setMakeVarItem)({
+        value: (0, n.makeVar)((0, n.webSettingsReactive)()?.currentCharId)
+      }), (0, n.setMakeVarItem)({
         key: "selectedCharacterTupleReactive",
-        value: (0, d.makeVar)(null)
-      }), (0, d.setMakeVarItem)({
+        value: (0, n.makeVar)(null)
+      }), (0, n.setMakeVarItem)({
         key: "rockstarIdReactive",
-        value: (0, d.makeVar)(null)
-      }), (0, d.setMakeVarItem)({
+        value: (0, n.makeVar)(null)
+      }), (0, n.setMakeVarItem)({
         key: "charactersNeededReactive",
-        value: (0, d.makeVar)(!1)
-      }), (0, d.setMakeVarItem)({
+        value: (0, n.makeVar)(!1)
+      }), (0, n.setMakeVarItem)({
         key: "crewsNeededReactive",
-        value: (0, d.makeVar)(!1)
-      }), (0, d.setMakeVarItem)({
+        value: (0, n.makeVar)(!1)
+      }), (0, n.setMakeVarItem)({
         key: "userDataReactive",
-        value: (0, d.makeVar)(null)
+        value: (0, n.makeVar)(null)
       }), t(17531), t(37240), t(30763);
       const o = {},
-        c = (0, d.setContextItem)({
-          context: (0, n.createContext)(o),
+        c = (0, n.setContextItem)({
+          context: (0, d.createContext)(o),
           key: "userContext"
         }),
-        u = () => (0, n.useContext)(c)
+        u = () => (0, d.useContext)(c)
     }
   }
 ]);

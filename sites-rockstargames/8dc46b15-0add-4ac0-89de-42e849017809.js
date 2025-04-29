@@ -30,12 +30,12 @@ _global.SENTRY_RELEASE = {
         g = n.n(c),
         l = n(82510),
         A = n.n(l),
-        m = n(90675),
-        b = n.n(m),
-        f = n(120),
+        f = n(90675),
+        m = n.n(f),
+        b = n(120),
         p = {};
-      p.styleTagTransform = b(), p.setAttributes = g(), p.insert = i().bind(null, "head"), p.domAPI = d(), p.insertStyleElement = A(), t()(f.A, p);
-      const u = f.A && f.A.locals ? f.A.locals : void 0;
+      p.styleTagTransform = m(), p.setAttributes = g(), p.insert = i().bind(null, "head"), p.domAPI = d(), p.insertStyleElement = A(), t()(b.A, p);
+      const u = b.A && b.A.locals ? b.A.locals : void 0;
       var k = n(73855);
       const h = () => (0, k.jsxs)("div", {
         className: u.sd,

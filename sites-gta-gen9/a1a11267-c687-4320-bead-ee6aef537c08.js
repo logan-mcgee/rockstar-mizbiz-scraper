@@ -77,9 +77,9 @@ _global.SENTRY_RELEASE = {
           for (var c = a(e), y = a(n), g = 0; g < l.length; ++g) {
             var h = l[g];
             if (!(i[h] || o && o[h] || y && y[h] || c && c[h])) {
-              var w = d(n, h);
+              var b = d(n, h);
               try {
-                s(e, h, w)
+                s(e, h, b)
               } catch (t) {}
             }
           }
@@ -104,8 +104,8 @@ _global.SENTRY_RELEASE = {
         y = n ? Symbol.for("react.memo") : 60115,
         g = n ? Symbol.for("react.lazy") : 60116,
         h = n ? Symbol.for("react.block") : 60121,
-        w = n ? Symbol.for("react.fundamental") : 60117,
-        b = n ? Symbol.for("react.responder") : 60118,
+        b = n ? Symbol.for("react.fundamental") : 60117,
+        w = n ? Symbol.for("react.responder") : 60118,
         x = n ? Symbol.for("react.scope") : 60119;
 
       function v(t) {
@@ -167,7 +167,7 @@ _global.SENTRY_RELEASE = {
       }, e.isSuspense = function(t) {
         return v(t) === p
       }, e.isValidElementType = function(t) {
-        return "string" == typeof t || "function" == typeof t || t === i || t === u || t === c || t === l || t === p || t === m || "object" == typeof t && null !== t && (t.$$typeof === g || t.$$typeof === y || t.$$typeof === a || t.$$typeof === s || t.$$typeof === d || t.$$typeof === w || t.$$typeof === b || t.$$typeof === x || t.$$typeof === h)
+        return "string" == typeof t || "function" == typeof t || t === i || t === u || t === c || t === l || t === p || t === m || "object" == typeof t && null !== t && (t.$$typeof === g || t.$$typeof === y || t.$$typeof === a || t.$$typeof === s || t.$$typeof === d || t.$$typeof === b || t.$$typeof === w || t.$$typeof === x || t.$$typeof === h)
       }, e.typeOf = v
     },
     95463: (t, e, n) => {
@@ -378,8 +378,8 @@ _global.SENTRY_RELEASE = {
             fn: g
           } = a[n], {
             x: h,
-            y: w,
-            data: b,
+            y: b,
+            data: w,
             reset: x
           } = await g({
             x: u,
@@ -395,11 +395,11 @@ _global.SENTRY_RELEASE = {
               floating: e
             }
           });
-          u = null != h ? h : u, d = null != w ? w : d, m = {
+          u = null != h ? h : u, d = null != b ? b : d, m = {
             ...m,
             [l]: {
               ...m[l],
-              ...b
+              ...w
             }
           }, x && y <= 50 && (y++, "object" == typeof x && (x.placement && (p = x.placement), x.rects && (f = !0 === x.rects ? await c.getElementRects({
             reference: t,
@@ -439,18 +439,18 @@ _global.SENTRY_RELEASE = {
           boundary: f,
           rootBoundary: u,
           strategy: s
-        })), w = "floating" === d ? {
+        })), b = "floating" === d ? {
           ...c.floating,
           x: r,
           y: i
-        } : c.reference, b = await (null == l.getOffsetParent ? void 0 : l.getOffsetParent(a.floating)), x = await (null == l.isElement ? void 0 : l.isElement(b)) && await (null == l.getScale ? void 0 : l.getScale(b)) || {
+        } : c.reference, w = await (null == l.getOffsetParent ? void 0 : l.getOffsetParent(a.floating)), x = await (null == l.isElement ? void 0 : l.isElement(w)) && await (null == l.getScale ? void 0 : l.getScale(w)) || {
           x: 1,
           y: 1
         }, v = (0, o.B1)(l.convertOffsetParentRelativeRectToViewportRelativeRect ? await l.convertOffsetParentRelativeRectToViewportRelativeRect({
-          rect: w,
-          offsetParent: b,
+          rect: b,
+          offsetParent: w,
           strategy: s
-        }) : w);
+        }) : b);
         return {
           top: (h.top - v.top + y.top) / x.y,
           bottom: (v.bottom - h.bottom + y.bottom) / x.y,
@@ -484,8 +484,8 @@ _global.SENTRY_RELEASE = {
               y = (0, o.sq)(m),
               g = await c.getDimensions(f),
               h = "y" === m,
-              w = h ? "top" : "left",
-              b = h ? "bottom" : "right",
+              b = h ? "top" : "left",
+              w = h ? "bottom" : "right",
               x = h ? "clientHeight" : "clientWidth",
               v = l.reference[y] + l.reference[m] - p[m] - l.floating[y],
               E = p[m] - l.reference[m],
@@ -494,8 +494,8 @@ _global.SENTRY_RELEASE = {
             S && await (null == c.isElement ? void 0 : c.isElement(T)) || (S = a.floating[x] || l.floating[y]);
             const R = v / 2 - E / 2,
               _ = S / 2 - g[y] / 2 - 1,
-              C = (0, o.jk)(d[w], _),
-              A = (0, o.jk)(d[b], _),
+              C = (0, o.jk)(d[b], _),
+              A = (0, o.jk)(d[w], _),
               L = C,
               P = S - g[y] - A,
               D = S / 2 - g[y] / 2 + R,
@@ -535,19 +535,19 @@ _global.SENTRY_RELEASE = {
                 fallbackStrategy: y = "bestFit",
                 fallbackAxisSideDirection: g = "none",
                 flipAlignment: h = !0,
-                ...w
+                ...b
               } = (0, o._3)(t, e);
               if (null != (n = c.arrow) && n.alignmentOffset) return {};
-              const b = (0, o.C0)(i),
+              const w = (0, o.C0)(i),
                 x = (0, o.C0)(s) === s,
                 v = await (null == f.isRTL ? void 0 : f.isRTL(u.floating)),
                 E = m || (x || !h ? [(0, o.bV)(s)] : (0, o.WJ)(s));
               m || "none" === g || E.push(...(0, o.lP)(s, h, g, v));
               const T = [s, ...E],
-                S = await l(e, w),
+                S = await l(e, b),
                 R = [];
               let _ = (null == (r = c.flip) ? void 0 : r.overflows) || [];
-              if (d && R.push(S[b]), p) {
+              if (d && R.push(S[w]), p) {
                 const t = (0, o.w7)(i, a, v);
                 R.push(S[t[0]], S[t[1]])
               }
@@ -781,11 +781,11 @@ _global.SENTRY_RELEASE = {
                 m < e ? m = e : m > n && (m = n)
               }
               if (f) {
-                var w, b;
+                var b, w;
                 const t = "y" === p ? "width" : "height",
                   e = ["top", "left"].includes((0, o.C0)(i)),
-                  n = l.reference[d] - l.floating[t] + (e && (null == (w = c.offset) ? void 0 : w[d]) || 0) + (e ? 0 : h.crossAxis),
-                  r = l.reference[d] + l.reference[t] + (e ? 0 : (null == (b = c.offset) ? void 0 : b[d]) || 0) - (e ? h.crossAxis : 0);
+                  n = l.reference[d] - l.floating[t] + (e && (null == (b = c.offset) ? void 0 : b[d]) || 0) + (e ? 0 : h.crossAxis),
+                  r = l.reference[d] + l.reference[t] + (e ? 0 : (null == (w = c.offset) ? void 0 : w[d]) || 0) - (e ? h.crossAxis : 0);
                 y < n ? y = n : y > r && (y = r)
               }
               return {
@@ -814,17 +814,17 @@ _global.SENTRY_RELEASE = {
               } = r.floating;
               let g, h;
               "top" === u || "bottom" === u ? (g = u, h = d === (await (null == i.isRTL ? void 0 : i.isRTL(c.floating)) ? "start" : "end") ? "left" : "right") : (h = u, g = "end" === d ? "top" : "bottom");
-              const w = y - f[g],
-                b = m - f[h],
+              const b = y - f[g],
+                w = m - f[h],
                 x = !e.middlewareData.shift;
-              let v = w,
-                E = b;
+              let v = b,
+                E = w;
               if (p) {
                 const t = m - f.left - f.right;
-                E = d || x ? (0, o.jk)(b, t) : t
+                E = d || x ? (0, o.jk)(w, t) : t
               } else {
                 const t = y - f.top - f.bottom;
-                v = d || x ? (0, o.jk)(w, t) : t
+                v = d || x ? (0, o.jk)(b, t) : t
               }
               if (x && !d) {
                 const t = (0, o.T9)(f.left, 0),
@@ -918,7 +918,7 @@ _global.SENTRY_RELEASE = {
         return l(t).getComputedStyle(t)
       }
 
-      function w(t) {
+      function b(t) {
         return s(t) ? {
           scrollLeft: t.scrollLeft,
           scrollTop: t.scrollTop
@@ -928,14 +928,14 @@ _global.SENTRY_RELEASE = {
         }
       }
 
-      function b(t) {
+      function w(t) {
         if ("html" === i(t)) return t;
         const e = t.assignedSlot || t.parentNode || u(t) && t.host || c(t);
         return u(e) ? e.host : e
       }
 
       function x(t) {
-        const e = b(t);
+        const e = w(t);
         return g(e) ? t.ownerDocument ? t.ownerDocument.body : t.body : f(e) && d(e) ? e : x(e)
       }
 
@@ -1028,7 +1028,7 @@ _global.SENTRY_RELEASE = {
       }
 
       function A(t) {
-        return C(c(t)).left + w(t).scrollLeft
+        return C(c(t)).left + b(t).scrollLeft
       }
 
       function L(t, e, n) {
@@ -1055,7 +1055,7 @@ _global.SENTRY_RELEASE = {
         }(t, n);
         else if ("document" === e) r = function(t) {
           const e = c(t),
-            n = w(t),
+            n = b(t),
             r = t.ownerDocument.body,
             i = (0, o.T9)(e.scrollWidth, e.clientWidth, r.scrollWidth, r.clientWidth),
             l = (0, o.T9)(e.scrollHeight, e.clientHeight, r.scrollHeight, r.clientHeight);
@@ -1092,7 +1092,7 @@ _global.SENTRY_RELEASE = {
       }
 
       function P(t, e) {
-        const n = b(t);
+        const n = w(t);
         return !(n === e || !s(n) || g(n)) && ("fixed" === h(n).position || P(n, e))
       }
 
@@ -1107,7 +1107,7 @@ _global.SENTRY_RELEASE = {
         };
         const p = (0, o.Jx)(0);
         if (r || !r && !a)
-          if (("body" !== i(e) || d(l)) && (u = w(e)), r) {
+          if (("body" !== i(e) || d(l)) && (u = b(e)), r) {
             const t = C(e, !0, a, e);
             p.x = t.x + e.clientLeft, p.y = t.y + e.clientTop
           } else l && (p.x = A(l));
@@ -1129,10 +1129,10 @@ _global.SENTRY_RELEASE = {
         let o = O(t, e);
         for (; o && p(o) && "static" === h(o).position;) o = O(o, e);
         return o && ("html" === i(o) || "body" === i(o) && "static" === h(o).position && !m(o)) ? n : o || function(t) {
-          let e = b(t);
+          let e = w(t);
           for (; f(e) && !g(e);) {
             if (m(e)) return e;
-            e = b(e)
+            e = w(e)
           }
           return null
         }(t) || n
@@ -1153,7 +1153,7 @@ _global.SENTRY_RELEASE = {
             },
             u = (0, o.Jx)(1);
           const p = (0, o.Jx)(0);
-          if ((l || !l && "fixed" !== r) && (("body" !== i(n) || d(a)) && (s = w(n)), f(n))) {
+          if ((l || !l && "fixed" !== r) && (("body" !== i(n) || d(a)) && (s = b(n)), f(n))) {
             const t = C(n);
             u = S(n), p.x = t.x + n.clientLeft, p.y = t.y + n.clientTop
           }
@@ -1178,11 +1178,11 @@ _global.SENTRY_RELEASE = {
               let o = v(t, [], !1).filter((t => s(t) && "body" !== i(t))),
                 r = null;
               const l = "fixed" === h(t).position;
-              let c = l ? b(t) : t;
+              let c = l ? w(t) : t;
               for (; s(c) && !g(c);) {
                 const e = h(c),
                   n = m(c);
-                n || "fixed" !== e.position || (r = null), (l ? !n && !r : !n && "static" === e.position && r && ["absolute", "fixed"].includes(r.position) || d(c) && !n && P(t, c)) ? o = o.filter((t => t !== c)) : r = e, c = b(c)
+                n || "fixed" !== e.position || (r = null), (l ? !n && !r : !n && "static" === e.position && r && ["absolute", "fixed"].includes(r.position) || d(c) && !n && P(t, c)) ? o = o.filter((t => t !== c)) : r = e, c = w(c)
               }
               return e.set(t, o), o
             }(e, this._c) : [].concat(n), r],
@@ -1324,7 +1324,7 @@ _global.SENTRY_RELEASE = {
       n.d(e, {
         B1: () => R,
         C0: () => p,
-        Dz: () => w,
+        Dz: () => b,
         Jx: () => a,
         LI: () => l,
         PG: () => y,
@@ -1341,7 +1341,7 @@ _global.SENTRY_RELEASE = {
         qE: () => u,
         r_: () => o,
         sq: () => g,
-        w7: () => b
+        w7: () => w
       });
       const o = ["top", "right", "bottom", "left"],
         r = Math.min,
@@ -1391,14 +1391,14 @@ _global.SENTRY_RELEASE = {
         return ["top", "bottom"].includes(p(t)) ? "y" : "x"
       }
 
-      function w(t) {
+      function b(t) {
         return y(h(t))
       }
 
-      function b(t, e, n) {
+      function w(t, e, n) {
         void 0 === n && (n = !1);
         const o = m(t),
-          r = w(t),
+          r = b(t),
           i = g(r);
         let l = "x" === r ? o === (n ? "end" : "start") ? "right" : "left" : "start" === o ? "bottom" : "top";
         return e.reference[i] > e.floating[i] && (l = T(l)), [l, T(l)]

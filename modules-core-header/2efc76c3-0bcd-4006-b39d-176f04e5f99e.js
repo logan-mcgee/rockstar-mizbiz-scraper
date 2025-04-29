@@ -22,37 +22,37 @@ _global.SENTRY_RELEASE = {
         n = Symbol.for("react.fragment"),
         t = Object.prototype.hasOwnProperty,
         l = d.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        f = {
+        s = {
           key: !0,
           ref: !0,
           __self: !0,
           __source: !0
         };
 
-      function s(e, r, o) {
+      function f(e, r, o) {
         var d, n = {},
-          s = null,
+          f = null,
           i = null;
-        for (d in void 0 !== o && (s = "" + o), void 0 !== r.key && (s = "" + r.key), void 0 !== r.ref && (i = r.ref), r) t.call(r, d) && !f.hasOwnProperty(d) && (n[d] = r[d]);
+        for (d in void 0 !== o && (f = "" + o), void 0 !== r.key && (f = "" + r.key), void 0 !== r.ref && (i = r.ref), r) t.call(r, d) && !s.hasOwnProperty(d) && (n[d] = r[d]);
         if (e && e.defaultProps)
           for (d in r = e.defaultProps) void 0 === n[d] && (n[d] = r[d]);
         return {
           $$typeof: a,
           type: e,
-          key: s,
+          key: f,
           ref: i,
           props: n,
           _owner: l.current
         }
       }
-      r.Fragment = n, r.jsx = s, r.jsxs = s
+      r.Fragment = n, r.jsx = f, r.jsxs = f
     },
     73855: (e, r, o) => {
       e.exports = o(32469)
     },
     5783: (e, r, o) => {
       o.r(r), o.d(r, {
-        Root: () => f,
+        Root: () => s,
         VisuallyHidden: () => l
       });
       var d = o(62229),
@@ -92,7 +92,7 @@ _global.SENTRY_RELEASE = {
           }
         })));
       l.displayName = "VisuallyHidden";
-      var f = l
+      var s = l
     }
   }
 ]);

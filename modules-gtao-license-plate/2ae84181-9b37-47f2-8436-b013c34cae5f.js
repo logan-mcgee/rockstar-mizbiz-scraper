@@ -29,9 +29,9 @@ _global.SENTRY_RELEASE = {
               n = t[1] || 0,
               o = String(n ? Number(t[0]) * Math.pow(10, n) : l).split("."),
               d = o[0],
-              s = !o[1],
-              r = d.slice(-6);
-            return a ? "other" : 0 == d || 1 == d ? "one" : 0 == n && 0 != d && 0 == r && s || n < 0 || n > 5 ? "many" : "other"
+              f = !o[1],
+              s = d.slice(-6);
+            return a ? "other" : 0 == d || 1 == d ? "one" : 0 == n && 0 != d && 0 == s && f || n < 0 || n > 5 ? "many" : "other"
           }
         },
         locale: "pt"

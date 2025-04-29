@@ -43,7 +43,7 @@ _global.SENTRY_RELEASE = {
         CurrencyDigits: () => mr,
         DateFromTime: () => Tn,
         Day: () => Dn,
-        DayFromYear: () => bn,
+        DayFromYear: () => wn,
         DayWithinYear: () => Cn,
         DaysInYear: () => Nn,
         FormatApproximately: () => Nr,
@@ -89,10 +89,10 @@ _global.SENTRY_RELEASE = {
         ToRawPrecision: () => fr,
         ToString: () => cn,
         Type: () => hn,
-        WeekDay: () => wn,
+        WeekDay: () => bn,
         YearFromTime: () => En,
         ZERO: () => ze,
-        _formatToParts: () => wr,
+        _formatToParts: () => br,
         createDataProperty: () => nn,
         createMemoizedDateTimeFormat: () => un,
         createMemoizedListFormat: () => an,
@@ -132,8 +132,8 @@ _global.SENTRY_RELEASE = {
         v = m + "crypto unavailable",
         y = "[object Decimal]",
         D = Math.floor,
-        w = Math.pow,
-        b = /^0b([01]+(\.[01]*)?|\.[01]+)(p[+-]?\d+)?$/i,
+        b = Math.pow,
+        w = /^0b([01]+(\.[01]*)?|\.[01]+)(p[+-]?\d+)?$/i,
         F = /^0x([0-9a-f]+(\.[0-9a-f]*)?|\.[0-9a-f]+)(p[+-]?\d+)?$/i,
         E = /^0o([0-7]+(\.[0-7]*)?|\.[0-7]+)(p[+-]?\d+)?$/i,
         N = /^(\d+(\.\d*)?|\.\d+)(e[+-]?\d+)?$/i,
@@ -164,7 +164,7 @@ _global.SENTRY_RELEASE = {
       function M(e, n, r, t) {
         var i, u, o, s;
         for (u = e[0]; u >= 10; u /= 10) --n;
-        return --n < 0 ? (n += S, i = 0) : (i = Math.ceil((n + 1) / S), n %= S), u = w(10, S - n), s = e[i] % u | 0, null == t ? n < 3 ? (0 == n ? s = s / 100 | 0 : 1 == n && (s = s / 10 | 0), o = r < 4 && 99999 == s || r > 3 && 49999 == s || 5e4 == s || 0 == s) : o = (r < 4 && s + 1 == u || r > 3 && s + 1 == u / 2) && (e[i + 1] / u / 100 | 0) == w(10, n - 2) - 1 || (s == u / 2 || 0 == s) && 0 == (e[i + 1] / u / 100 | 0) : n < 4 ? (0 == n ? s = s / 1e3 | 0 : 1 == n ? s = s / 100 | 0 : 2 == n && (s = s / 10 | 0), o = (t || r < 4) && 9999 == s || !t && r > 3 && 4999 == s) : o = ((t || r < 4) && s + 1 == u || !t && r > 3 && s + 1 == u / 2) && (e[i + 1] / u / 1e3 | 0) == w(10, n - 3) - 1, o
+        return --n < 0 ? (n += S, i = 0) : (i = Math.ceil((n + 1) / S), n %= S), u = b(10, S - n), s = e[i] % u | 0, null == t ? n < 3 ? (0 == n ? s = s / 100 | 0 : 1 == n && (s = s / 10 | 0), o = r < 4 && 99999 == s || r > 3 && 49999 == s || 5e4 == s || 0 == s) : o = (r < 4 && s + 1 == u || r > 3 && s + 1 == u / 2) && (e[i + 1] / u / 100 | 0) == b(10, n - 2) - 1 || (s == u / 2 || 0 == s) && 0 == (e[i + 1] / u / 100 | 0) : n < 4 ? (0 == n ? s = s / 1e3 | 0 : 1 == n ? s = s / 100 | 0 : 2 == n && (s = s / 10 | 0), o = (t || r < 4) && 9999 == s || !t && r > 3 && 4999 == s) : o = ((t || r < 4) && s + 1 == u || !t && r > 3 && s + 1 == u / 2) && (e[i + 1] / u / 1e3 | 0) == b(10, n - 3) - 1, o
       }
 
       function B(e, n, r) {
@@ -215,7 +215,7 @@ _global.SENTRY_RELEASE = {
         var e, n, r, t, i, u, o, s, a, c, l = this,
           f = l.constructor;
         if (!l.isFinite() || l.isZero()) return new f(l);
-        for (g = !1, (u = l.s * w(l.s * l, 1 / 3)) && Math.abs(u) != 1 / 0 ? t = new f(u.toString()) : (r = O(l.d), (u = ((e = l.e) - r.length + 1) % 3) && (r += 1 == u || -2 == u ? "0" : "00"), u = w(r, 1 / 3), e = D((e + 1) / 3) - (e % 3 == (e < 0 ? -1 : 2)), (t = new f(r = u == 1 / 0 ? "5e" + e : (r = u.toExponential()).slice(0, r.indexOf("e") + 1) + e)).s = l.s), o = (e = f.precision) + 3;;)
+        for (g = !1, (u = l.s * b(l.s * l, 1 / 3)) && Math.abs(u) != 1 / 0 ? t = new f(u.toString()) : (r = O(l.d), (u = ((e = l.e) - r.length + 1) % 3) && (r += 1 == u || -2 == u ? "0" : "00"), u = b(r, 1 / 3), e = D((e + 1) / 3) - (e % 3 == (e < 0 ? -1 : 2)), (t = new f(r = u == 1 / 0 ? "5e" + e : (r = u.toExponential()).slice(0, r.indexOf("e") + 1) + e)).s = l.s), o = (e = f.precision) + 3;;)
           if (c = (a = (s = t).times(s).times(s)).plus(l), t = P(c.plus(l).times(s), c.plus(a), o + 2, 1), O(s.d).slice(0, o) === (r = O(t.d)).slice(0, o)) {
             if ("9999" != (r = r.slice(o - 3, o + 1)) && (i || "4999" != r)) {
               +r && (+r.slice(1) || "5" != r.charAt(0)) || (k(t, e + 1, 1), n = !t.times(t).times(t).eq(l));
@@ -484,7 +484,7 @@ _global.SENTRY_RELEASE = {
           h = m.d,
           v = m.constructor;
         if (!h) return new v(m);
-        if (c = r = new v(1), t = a = new v(0), o = (u = (n = new v(t)).e = q(h) - m.e - 1) % S, n.d[0] = w(10, o < 0 ? S + o : o), null == e) e = u > 0 ? n : c;
+        if (c = r = new v(1), t = a = new v(0), o = (u = (n = new v(t)).e = q(h) - m.e - 1) % S, n.d[0] = b(10, o < 0 ? S + o : o), null == e) e = u > 0 ? n : c;
         else {
           if (!(s = new v(e)).isInt() || s.lt(c)) throw Error(p + s);
           e = s.gt(n) ? u > 0 ? n : c : s
@@ -512,7 +512,7 @@ _global.SENTRY_RELEASE = {
         var n, r, t, i, u, o, s = this,
           a = s.constructor,
           c = +(e = new a(e));
-        if (!(s.d && e.d && s.d[0] && e.d[0])) return new a(w(+s, c));
+        if (!(s.d && e.d && s.d[0] && e.d[0])) return new a(b(+s, c));
         if ((s = new a(s)).eq(1)) return s;
         if (t = a.precision, u = a.rounding, e.eq(1)) return k(s, t, u);
         if ((n = D(e.e / S)) >= e.d.length - 1 && (r = c < 0 ? -c : c) <= 9007199254740991) return i = U(a, s, r, t), e.s < 0 ? new a(1).div(i) : k(i, t, u);
@@ -520,7 +520,7 @@ _global.SENTRY_RELEASE = {
           if (n < e.d.length - 1) return new a(NaN);
           if (0 == (1 & e.d[n]) && (o = 1), 0 == s.e && 1 == s.d[0] && 1 == s.d.length) return s.s = o, s
         }
-        return (n = 0 != (r = w(+s, c)) && isFinite(r) ? new a(r + "").e : D(c * (Math.log("0." + O(s.d)) / Math.LN10 + s.e + 1))) > a.maxE + 1 || n < a.minE - 1 ? new a(n > 0 ? o / 0 : 0) : (g = !1, a.rounding = s.s = 1, r = Math.min(12, (n + "").length), (i = G(e.times(W(s, t + r)), t)).d && M((i = k(i, t + 5, 1)).d, t, u) && (n = t + 10, +O((i = k(G(e.times(W(s, n + r)), n), n + 5, 1)).d).slice(t + 1, t + 15) + 1 == 1e14 && (i = k(i, t + 1, 0))), i.s = o, g = !0, a.rounding = u, k(i, t, u))
+        return (n = 0 != (r = b(+s, c)) && isFinite(r) ? new a(r + "").e : D(c * (Math.log("0." + O(s.d)) / Math.LN10 + s.e + 1))) > a.maxE + 1 || n < a.minE - 1 ? new a(n > 0 ? o / 0 : 0) : (g = !1, a.rounding = s.s = 1, r = Math.min(12, (n + "").length), (i = G(e.times(W(s, t + r)), t)).d && M((i = k(i, t + 5, 1)).d, t, u) && (n = t + 10, +O((i = k(G(e.times(W(s, n + r)), n), n + 5, 1)).d).slice(t + 1, t + 15) + 1 == 1e14 && (i = k(i, t + 1, 0))), i.s = o, g = !0, a.rounding = u, k(i, t, u))
       }, A.toPrecision = function(e, n) {
         var r, t = this,
           i = t.constructor;
@@ -565,31 +565,31 @@ _global.SENTRY_RELEASE = {
           for (; !e[0] && e.length > 1;) e.shift()
         }
         return function(t, i, o, s, a, c) {
-          var l, f, d, g, m, p, h, v, y, w, b, F, E, N, x, T, A, O, I, M, B = t.constructor,
+          var l, f, d, g, m, p, h, v, y, b, w, F, E, N, x, T, A, O, I, M, B = t.constructor,
             P = t.s == i.s ? 1 : -1,
             _ = t.d,
             j = i.d;
           if (!(_ && _[0] && j && j[0])) return new B(t.s && i.s && (_ ? !j || _[0] != j[0] : j) ? _ && 0 == _[0] || !j ? 0 * P : P / 0 : NaN);
-          for (c ? (m = 1, f = t.e - i.e) : (c = C, m = S, f = D(t.e / m) - D(i.e / m)), I = j.length, A = _.length, w = (y = new B(P)).d = [], d = 0; j[d] == (_[d] || 0); d++);
-          if (j[d] > (_[d] || 0) && f--, null == o ? (N = o = B.precision, s = B.rounding) : N = a ? o + (t.e - i.e) + 1 : o, N < 0) w.push(1), p = !0;
+          for (c ? (m = 1, f = t.e - i.e) : (c = C, m = S, f = D(t.e / m) - D(i.e / m)), I = j.length, A = _.length, b = (y = new B(P)).d = [], d = 0; j[d] == (_[d] || 0); d++);
+          if (j[d] > (_[d] || 0) && f--, null == o ? (N = o = B.precision, s = B.rounding) : N = a ? o + (t.e - i.e) + 1 : o, N < 0) b.push(1), p = !0;
           else {
             if (N = N / m + 2 | 0, d = 0, 1 == I) {
               for (g = 0, j = j[0], N++;
-                (d < A || g) && N--; d++) x = g * c + (_[d] || 0), w[d] = x / j | 0, g = x % j | 0;
+                (d < A || g) && N--; d++) x = g * c + (_[d] || 0), b[d] = x / j | 0, g = x % j | 0;
               p = g || d < A
             } else {
-              for ((g = c / (j[0] + 1) | 0) > 1 && (j = e(j, g, c), _ = e(_, g, c), I = j.length, A = _.length), T = I, F = (b = _.slice(0, I)).length; F < I;) b[F++] = 0;
+              for ((g = c / (j[0] + 1) | 0) > 1 && (j = e(j, g, c), _ = e(_, g, c), I = j.length, A = _.length), T = I, F = (w = _.slice(0, I)).length; F < I;) w[F++] = 0;
               (M = j.slice()).unshift(0), O = j[0], j[1] >= c / 2 && ++O;
               do {
-                g = 0, (l = n(j, b, I, F)) < 0 ? (E = b[0], I != F && (E = E * c + (b[1] || 0)), (g = E / O | 0) > 1 ? (g >= c && (g = c - 1), 1 == (l = n(h = e(j, g, c), b, v = h.length, F = b.length)) && (g--, r(h, I < v ? M : j, v, c))) : (0 == g && (l = g = 1), h = j.slice()), (v = h.length) < F && h.unshift(0), r(b, h, F, c), -1 == l && (l = n(j, b, I, F = b.length)) < 1 && (g++, r(b, I < F ? M : j, F, c)), F = b.length) : 0 === l && (g++, b = [0]), w[d++] = g, l && b[0] ? b[F++] = _[T] || 0 : (b = [_[T]], F = 1)
-              } while ((T++ < A || void 0 !== b[0]) && N--);
-              p = void 0 !== b[0]
+                g = 0, (l = n(j, w, I, F)) < 0 ? (E = w[0], I != F && (E = E * c + (w[1] || 0)), (g = E / O | 0) > 1 ? (g >= c && (g = c - 1), 1 == (l = n(h = e(j, g, c), w, v = h.length, F = w.length)) && (g--, r(h, I < v ? M : j, v, c))) : (0 == g && (l = g = 1), h = j.slice()), (v = h.length) < F && h.unshift(0), r(w, h, F, c), -1 == l && (l = n(j, w, I, F = w.length)) < 1 && (g++, r(w, I < F ? M : j, F, c)), F = w.length) : 0 === l && (g++, w = [0]), b[d++] = g, l && w[0] ? w[F++] = _[T] || 0 : (w = [_[T]], F = 1)
+              } while ((T++ < A || void 0 !== w[0]) && N--);
+              p = void 0 !== w[0]
             }
-            w[0] || w.shift()
+            b[0] || b.shift()
           }
           if (1 == m) y.e = f, u = p;
           else {
-            for (d = 1, g = w[0]; g >= 10; g /= 10) d++;
+            for (d = 1, g = b[0]; g >= 10; g /= 10) d++;
             y.e = d + f * m - 1, k(y, a ? o + y.e + 1 : o, s, p)
           }
           return y
@@ -601,17 +601,17 @@ _global.SENTRY_RELEASE = {
         e: if (null != n) {
           if (!(f = e.d)) return e;
           for (i = 1, s = f[0]; s >= 10; s /= 10) i++;
-          if ((u = n - i) < 0) u += S, o = n, a = (l = f[d = 0]) / w(10, i - o - 1) % 10 | 0;
+          if ((u = n - i) < 0) u += S, o = n, a = (l = f[d = 0]) / b(10, i - o - 1) % 10 | 0;
           else if ((d = Math.ceil((u + 1) / S)) >= (s = f.length)) {
             if (!t) break e;
             for (; s++ <= d;) f.push(0);
             l = a = 0, i = 1, o = (u %= S) - S + 1
           } else {
             for (l = s = f[d], i = 1; s >= 10; s /= 10) i++;
-            a = (o = (u %= S) - S + i) < 0 ? 0 : l / w(10, i - o - 1) % 10 | 0
+            a = (o = (u %= S) - S + i) < 0 ? 0 : l / b(10, i - o - 1) % 10 | 0
           }
-          if (t = t || n < 0 || void 0 !== f[d + 1] || (o < 0 ? l : l % w(10, i - o - 1)), c = r < 4 ? (a || t) && (0 == r || r == (e.s < 0 ? 3 : 2)) : a > 5 || 5 == a && (4 == r || t || 6 == r && (u > 0 ? o > 0 ? l / w(10, i - o) : 0 : f[d - 1]) % 10 & 1 || r == (e.s < 0 ? 8 : 7)), n < 1 || !f[0]) return f.length = 0, c ? (n -= e.e + 1, f[0] = w(10, (S - n % S) % S), e.e = -n || 0) : f[0] = e.e = 0, e;
-          if (0 == u ? (f.length = d, s = 1, d--) : (f.length = d + 1, s = w(10, S - u), f[d] = o > 0 ? (l / w(10, i - o) % w(10, o) | 0) * s : 0), c)
+          if (t = t || n < 0 || void 0 !== f[d + 1] || (o < 0 ? l : l % b(10, i - o - 1)), c = r < 4 ? (a || t) && (0 == r || r == (e.s < 0 ? 3 : 2)) : a > 5 || 5 == a && (4 == r || t || 6 == r && (u > 0 ? o > 0 ? l / b(10, i - o) : 0 : f[d - 1]) % 10 & 1 || r == (e.s < 0 ? 8 : 7)), n < 1 || !f[0]) return f.length = 0, c ? (n -= e.e + 1, f[0] = b(10, (S - n % S) % S), e.e = -n || 0) : f[0] = e.e = 0, e;
+          if (0 == u ? (f.length = d, s = 1, d--) : (f.length = d + 1, s = b(10, S - u), f[d] = o > 0 ? (l / b(10, i - o) % b(10, o) | 0) * s : 0), c)
             for (;;) {
               if (0 == d) {
                 for (u = 1, o = f[0]; o >= 10; o /= 10) u++;
@@ -703,7 +703,7 @@ _global.SENTRY_RELEASE = {
           p = d.precision;
         if (!e.d || !e.d[0] || e.e > 17) return new d(e.d ? e.d[0] ? e.s < 0 ? 0 : 1 / 0 : 1 : e.s ? e.s < 0 ? 0 : e : NaN);
         for (null == n ? (g = !1, a = p) : a = n, s = new d(.03125); e.e > -2;) e = e.times(s), f += 5;
-        for (a += t = Math.log(w(2, f)) / Math.LN10 * 2 + 5 | 0, r = u = o = new d(1), d.precision = a;;) {
+        for (a += t = Math.log(b(2, f)) / Math.LN10 * 2 + 5 | 0, r = u = o = new d(1), d.precision = a;;) {
           if (u = k(u.times(e), a, 1), r = r.times(++l), O((s = o.plus(P(u, r, a, 1))).d).slice(0, a) === O(o.d).slice(0, a)) {
             for (i = f; i--;) o = k(o.times(o), a, 1);
             if (null != n) return d.precision = p, o;
@@ -759,13 +759,13 @@ _global.SENTRY_RELEASE = {
           if (n = n.replace(/(\d)_(?=\d)/g, "$1"), N.test(n)) return $(e, n)
         } else if ("Infinity" === n || "NaN" === n) return +n || (e.s = NaN), e.e = NaN, e.d = null, e;
         if (F.test(n)) r = 16, n = n.toLowerCase();
-        else if (b.test(n)) r = 2;
+        else if (w.test(n)) r = 2;
         else {
           if (!E.test(n)) throw Error(p + n);
           r = 8
         }
         for ((u = n.search(/p/i)) > 0 ? (a = +n.slice(u + 1), n = n.substring(2, u)) : n = n.slice(2), o = (u = n.indexOf(".")) >= 0, t = e.constructor, o && (u = (s = (n = n.replace(".", "")).length) - u, i = U(t, new t(r), u, 2 * u)), u = l = (c = B(n, r, C)).length - 1; 0 === c[u]; --u) c.pop();
-        return u < 0 ? new t(0 * e.s) : (e.e = j(c, l), e.d = c, g = !1, o && (e = P(e, i, 4 * s)), a && (e = e.times(Math.abs(a) < 54 ? w(2, a) : Ze.pow(2, a))), g = !0, e)
+        return u < 0 ? new t(0 * e.s) : (e.e = j(c, l), e.d = c, g = !1, o && (e = P(e, i, 4 * s)), a && (e = e.times(Math.abs(a) < 54 ? b(2, a) : Ze.pow(2, a))), g = !0, e)
       }
 
       function J(e, n, r, t, i) {
@@ -933,11 +933,11 @@ _global.SENTRY_RELEASE = {
           } return g = !0, r.sqrt()
       }
 
-      function we(e) {
+      function be(e) {
         return e instanceof Ze || e && e.toStringTag === y || !1
       }
 
-      function be(e) {
+      function we(e) {
         return new this(e).ln()
       }
 
@@ -987,7 +987,7 @@ _global.SENTRY_RELEASE = {
           }
         else
           for (; u < t;) s[u++] = 1e7 * Math.random() | 0;
-        for (t = s[--u], e %= S, t && e && (i = w(10, S - e), s[u] = (t / i | 0) * i); 0 === s[u]; u--) s.pop();
+        for (t = s[--u], e %= S, t && e && (i = b(10, S - e), s[u] = (t / i | 0) * i); 0 === s[u]; u--) s.pop();
         if (u < 0) r = 0, s = [0];
         else {
           for (r = -1; 0 === s[0]; r -= S) s.shift();
@@ -1047,7 +1047,7 @@ _global.SENTRY_RELEASE = {
         function u(e) {
           var n, r, t, i = this;
           if (!(i instanceof u)) return new u(e);
-          if (i.constructor = u, we(e)) return i.s = e.s, void(g ? !e.d || e.e > u.maxE ? (i.e = NaN, i.d = null) : e.e < u.minE ? (i.e = 0, i.d = [0]) : (i.e = e.e, i.d = e.d.slice()) : (i.e = e.e, i.d = e.d ? e.d.slice() : e.d));
+          if (i.constructor = u, be(e)) return i.s = e.s, void(g ? !e.d || e.e > u.maxE ? (i.e = NaN, i.d = null) : e.e < u.minE ? (i.e = 0, i.d = [0]) : (i.e = e.e, i.d = e.d.slice()) : (i.e = e.e, i.d = e.d ? e.d.slice() : e.d));
           if ("number" == (t = typeof e)) {
             if (0 === e) return i.s = 1 / e < 0 ? -1 : 1, i.e = 0, void(i.d = [0]);
             if (e < 0 ? (e = -e, i.s = -1) : i.s = 1, e === ~~e && e < 1e7) {
@@ -1059,7 +1059,7 @@ _global.SENTRY_RELEASE = {
           if ("string" !== t) throw Error(p + e);
           return 45 === (r = e.charCodeAt(0)) ? (e = e.slice(1), i.s = -1) : (43 === r && (e = e.slice(1)), i.s = 1), N.test(e) ? $(i, e) : Y(i, e)
         }
-        if (u.prototype = A, u.ROUND_UP = 0, u.ROUND_DOWN = 1, u.ROUND_CEIL = 2, u.ROUND_FLOOR = 3, u.ROUND_HALF_UP = 4, u.ROUND_HALF_DOWN = 5, u.ROUND_HALF_EVEN = 6, u.ROUND_HALF_CEIL = 7, u.ROUND_HALF_FLOOR = 8, u.EUCLID = 9, u.config = u.set = ge, u.clone = e, u.isDecimal = we, u.abs = ne, u.acos = re, u.acosh = te, u.add = ie, u.asin = ue, u.asinh = oe, u.atan = se, u.atanh = ae, u.atan2 = ce, u.cbrt = le, u.ceil = fe, u.clamp = de, u.cos = me, u.cosh = pe, u.div = he, u.exp = ve, u.floor = ye, u.hypot = De, u.ln = be, u.log = Fe, u.log10 = Ne, u.log2 = Ee, u.max = Ce, u.min = Se, u.mod = xe, u.mul = Te, u.pow = Ae, u.random = Oe, u.round = Ie, u.sign = Me, u.sin = Be, u.sinh = Pe, u.sqrt = ke, u.sub = _e, u.sum = je, u.tan = Re, u.tanh = Le, u.trunc = qe, void 0 === n && (n = {}), n && !0 !== n.defaults)
+        if (u.prototype = A, u.ROUND_UP = 0, u.ROUND_DOWN = 1, u.ROUND_CEIL = 2, u.ROUND_FLOOR = 3, u.ROUND_HALF_UP = 4, u.ROUND_HALF_DOWN = 5, u.ROUND_HALF_EVEN = 6, u.ROUND_HALF_CEIL = 7, u.ROUND_HALF_FLOOR = 8, u.EUCLID = 9, u.config = u.set = ge, u.clone = e, u.isDecimal = be, u.abs = ne, u.acos = re, u.acosh = te, u.add = ie, u.asin = ue, u.asinh = oe, u.atan = se, u.atanh = ae, u.atan2 = ce, u.cbrt = le, u.ceil = fe, u.clamp = de, u.cos = me, u.cosh = pe, u.div = he, u.exp = ve, u.floor = ye, u.hypot = De, u.ln = we, u.log = Fe, u.log10 = Ne, u.log2 = Ee, u.max = Ce, u.min = Se, u.mod = xe, u.mul = Te, u.pow = Ae, u.random = Oe, u.round = Ie, u.sign = Me, u.sin = Be, u.sinh = Pe, u.sqrt = ke, u.sub = _e, u.sum = je, u.tan = Re, u.tanh = Le, u.trunc = qe, void 0 === n && (n = {}), n && !0 !== n.defaults)
           for (i = ["precision", "rounding", "toExpNeg", "toExpPos", "maxE", "minE", "modulo", "crypto"], r = 0; r < i.length;) n.hasOwnProperty(t = i[r++]) || (n[t] = this[t]);
         return u.config(n), u
       }(d);
@@ -1234,11 +1234,11 @@ _global.SENTRY_RELEASE = {
         return Math.floor(e / vn)
       }
 
-      function wn(e) {
+      function bn(e) {
         return yn(Dn(e) + 4, 7)
       }
 
-      function bn(e) {
+      function wn(e) {
         return Date.UTC(e, 0) / vn
       }
 
@@ -1255,7 +1255,7 @@ _global.SENTRY_RELEASE = {
       }
 
       function Cn(e) {
-        return Dn(e) - bn(En(e))
+        return Dn(e) - wn(En(e))
       }
 
       function Sn(e) {
@@ -1745,7 +1745,7 @@ _global.SENTRY_RELEASE = {
         yr = new RegExp("".concat(pr.source, "$")),
         Dr = /[#0](?:[\.,][#0]+)*/g;
 
-      function wr(e, n, r, t) {
+      function br(e, n, r, t) {
         var i, u, o, s = e.sign,
           a = e.exponent,
           c = e.magnitude,
@@ -1791,40 +1791,40 @@ _global.SENTRY_RELEASE = {
           var D = v.currencySpacing.beforeInsertBetween;
           D && !vr.test(u) && (o = o.replace("{0}¤", "{0}".concat(D, "¤")))
         }
-        for (var w = o.split(/({c:[^}]+}|\{0\}|[¤%\-\+])/g), b = [], F = n.numbers.symbols[d] || n.numbers.symbols[g], E = 0, N = w; E < N.length; E++)
+        for (var b = o.split(/({c:[^}]+}|\{0\}|[¤%\-\+])/g), w = [], F = n.numbers.symbols[d] || n.numbers.symbols[g], E = 0, N = b; E < N.length; E++)
           if (z = N[E]) switch (z) {
             case "{0}":
-              b.push.apply(b, br(F, e, l, a, d, !m && (null === (i = t.useGrouping) || void 0 === i || i), h, f, t.roundingIncrement, ar(t.roundingMode, -1 === s)));
+              w.push.apply(w, wr(F, e, l, a, d, !m && (null === (i = t.useGrouping) || void 0 === i || i), h, f, t.roundingIncrement, ar(t.roundingMode, -1 === s)));
               break;
             case "-":
-              b.push({
+              w.push({
                 type: "minusSign",
                 value: F.minusSign
               });
               break;
             case "+":
-              b.push({
+              w.push({
                 type: "plusSign",
                 value: F.plusSign
               });
               break;
             case "%":
-              b.push({
+              w.push({
                 type: "percentSign",
                 value: F.percentSign
               });
               break;
             case "¤":
-              b.push({
+              w.push({
                 type: "currency",
                 value: u
               });
               break;
             default:
-              /^\{c:/.test(z) ? b.push({
+              /^\{c:/.test(z) ? w.push({
                 type: "compact",
                 value: z.substring(3, z.length - 1)
-              }) : b.push({
+              }) : w.push({
                 type: "literal",
                 value: z
               })
@@ -1837,7 +1837,7 @@ _global.SENTRY_RELEASE = {
               C = x ? Er(r, e.roundedNumber.times(Ue.pow(10, a)).toNumber(), x.displayName) : t.currency;
               for (var T = [], A = 0, O = S.split(/(\{[01]\})/g); A < O.length; A++) switch (z = O[A]) {
                 case "{0}":
-                  T.push.apply(T, b);
+                  T.push.apply(T, w);
                   break;
                 case "{1}":
                   T.push({
@@ -1853,7 +1853,7 @@ _global.SENTRY_RELEASE = {
               }
               return T
             }
-            return b;
+            return w;
           case "unit":
             var I = t.unit,
               M = t.unitDisplay,
@@ -1880,7 +1880,7 @@ _global.SENTRY_RELEASE = {
               H ? (H[1] && T.push({
                 type: "literal",
                 value: H[1]
-              }), T.push.apply(T, b), H[2] && T.push({
+              }), T.push.apply(T, w), H[2] && T.push({
                 type: "literal",
                 value: H[2]
               })) : z && T.push({
@@ -1890,11 +1890,11 @@ _global.SENTRY_RELEASE = {
             }
             return T;
           default:
-            return b
+            return w
         }
       }
 
-      function br(e, n, r, t, i, u, o, s, a, c) {
+      function wr(e, n, r, t, i, u, o, s, a, c) {
         var l = [],
           f = n.formattedString,
           d = n.roundedNumber;
@@ -1916,13 +1916,13 @@ _global.SENTRY_RELEASE = {
         if ("always" === u ? v = !0 : "min2" === u ? v = d.greaterThanOrEqualTo(1e4) : ("auto" === u || u) && (v = "compact" !== r || d.greaterThanOrEqualTo(1e4)), v) {
           var y = "currency" === s && null != e.currencyGroup ? e.currencyGroup : e.group,
             D = [],
-            w = o.split(".")[0].split(","),
-            b = 3,
+            b = o.split(".")[0].split(","),
+            w = 3,
             F = 3;
-          w.length > 1 && (b = w[w.length - 1].length), w.length > 2 && (F = w[w.length - 2].length);
-          var E = m.length - b;
+          b.length > 1 && (w = b[b.length - 1].length), b.length > 2 && (F = b[b.length - 2].length);
+          var E = m.length - w;
           if (E > 0) {
-            for (D.push(m.slice(E, E + b)), E -= F; E > 0; E -= F) D.push(m.slice(E, E + F));
+            for (D.push(m.slice(E, E + w)), E -= F; E > 0; E -= F) D.push(m.slice(E, E + F));
             D.push(m.slice(0, E + F))
           } else D.push(m);
           for (; D.length > 0;) {
@@ -2024,7 +2024,7 @@ _global.SENTRY_RELEASE = {
           default:
             rn("negative" === g, 'signDisplay must be "negative"'), i = u.isNegative() && !u.isZero() ? -1 : 0
         }
-        return wr({
+        return br({
           roundedNumber: u,
           formattedString: t,
           exponent: f,
@@ -2162,15 +2162,15 @@ _global.SENTRY_RELEASE = {
         rn(!!v, "Missing locale data for ".concat(h.dataLocale));
         var y = u(e);
         y.locale = h.locale, y.dataLocale = h.dataLocale, y.numberingSystem = h.nu, y.dataLocaleData = v, _r(y, d);
-        var D, w, b = y.style,
+        var D, b, w = y.style,
           F = Gn(d, "notation", "string", ["standard", "scientific", "engineering", "compact"], "standard");
-        if (y.notation = F, "currency" === b && "standard" === F) {
+        if (y.notation = F, "currency" === w && "standard" === F) {
           var E = mr(y.currency, {
             currencyDigitsData: l
           });
-          D = E, w = E
-        } else D = 0, w = "percent" === b ? 0 : 3;
-        kr(y, d, D, w, F);
+          D = E, b = E
+        } else D = 0, b = "percent" === w ? 0 : 3;
+        kr(y, d, D, b, F);
         var N = Gn(d, "compactDisplay", "string", ["short", "long"], "short"),
           C = "auto";
         "compact" === F && (y.compactDisplay = N, C = "min2");

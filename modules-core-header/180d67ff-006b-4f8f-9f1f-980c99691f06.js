@@ -22,21 +22,21 @@ _global.SENTRY_RELEASE = {
         Root: () => s
       });
       var o = d(62229),
-        f = d(44853),
-        n = d(60286),
-        t = d(92600),
+        n = d(44853),
+        t = d(60286),
+        f = d(92600),
         l = d(73855),
         r = o.forwardRef(((e, a) => {
           const {
             container: d,
             ...r
-          } = e, [s, c] = o.useState(!1);
-          (0, t.N)((() => c(!0)), []);
-          const b = d || s && globalThis?.document?.body;
-          return b ? f.createPortal((0, l.jsx)(n.sG.div, {
+          } = e, [s, b] = o.useState(!1);
+          (0, f.N)((() => b(!0)), []);
+          const u = d || s && globalThis?.document?.body;
+          return u ? n.createPortal((0, l.jsx)(t.sG.div, {
             ...r,
             ref: a
-          }), b) : null
+          }), u) : null
         }));
       r.displayName = "Portal";
       var s = r

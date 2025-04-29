@@ -36,10 +36,10 @@ _global.SENTRY_RELEASE = {
           searchConfig: l,
           routeOptions: f
         } = e;
-        const c = (0, n.withRockstarGraph)(d.A, {
+        const i = (0, n.withRockstarGraph)(d.A, {
           env: s
         });
-        return (0, r.jsx)(c, {
+        return (0, r.jsx)(i, {
           navData: a,
           location: o,
           onNavigate: t,
@@ -50,7 +50,7 @@ _global.SENTRY_RELEASE = {
         graphEnv: f
       } = (0, n.getConfigForDomain)();
 
-      function c() {
+      function i() {
         const e = document.createElement("div");
         e.id = "global-nav-root", document.body.prepend(e);
         const a = (0, t.H)(e),
@@ -59,7 +59,7 @@ _global.SENTRY_RELEASE = {
           });
         a.render((0, r.jsx)(o, {}))
       }
-      "loading" === document.readyState ? document.addEventListener("DOMContentLoaded", c) : c()
+      "loading" === document.readyState ? document.addEventListener("DOMContentLoaded", i) : i()
     }
   }
 ]);

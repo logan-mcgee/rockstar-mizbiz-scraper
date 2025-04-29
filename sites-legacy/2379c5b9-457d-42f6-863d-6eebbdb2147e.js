@@ -1,8 +1,8 @@
 ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "2379c5b9-457d-42f6-863d-6eebbdb2147e", e._sentryDebugIdIdentifier = "sentry-dbid-2379c5b9-457d-42f6-863d-6eebbdb2147e")
+      t = (new Error).stack;
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "2379c5b9-457d-42f6-863d-6eebbdb2147e", e._sentryDebugIdIdentifier = "sentry-dbid-2379c5b9-457d-42f6-863d-6eebbdb2147e")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -16,26 +16,26 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_legacy = self.webpackChunk_rockstargames_sites_legacy || []).push([
   [2817], {
-    4797: (e, a, t) => {
+    4797: (e, t, n) => {
       "use strict";
-      var n = t(43790);
+      var a = n(43790);
 
       function o() {}
 
-      function r() {}
-      r.resetWarningCache = o, e.exports = function() {
-        function e(e, a, t, o, r, s) {
-          if (s !== n) {
-            var d = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
-            throw d.name = "Invariant Violation", d
+      function d() {}
+      d.resetWarningCache = o, e.exports = function() {
+        function e(e, t, n, o, d, r) {
+          if (r !== a) {
+            var s = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
+            throw s.name = "Invariant Violation", s
           }
         }
 
-        function a() {
+        function t() {
           return e
         }
         e.isRequired = e;
-        var t = {
+        var n = {
           array: e,
           bigint: e,
           bool: e,
@@ -45,24 +45,24 @@ _global.SENTRY_RELEASE = {
           string: e,
           symbol: e,
           any: e,
-          arrayOf: a,
+          arrayOf: t,
           element: e,
           elementType: e,
-          instanceOf: a,
+          instanceOf: t,
           node: e,
-          objectOf: a,
-          oneOf: a,
-          oneOfType: a,
-          shape: a,
-          exact: a,
-          checkPropTypes: r,
+          objectOf: t,
+          oneOf: t,
+          oneOfType: t,
+          shape: t,
+          exact: t,
+          checkPropTypes: d,
           resetWarningCache: o
         };
-        return t.PropTypes = t, t
+        return n.PropTypes = n, n
       }
     },
-    72817: (e, a, t) => {
-      e.exports = t(4797)()
+    72817: (e, t, n) => {
+      e.exports = n(4797)()
     },
     43790: e => {
       "use strict";

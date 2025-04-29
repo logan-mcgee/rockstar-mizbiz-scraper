@@ -61,7 +61,7 @@ _global.SENTRY_RELEASE = {
           const {
             children: r,
             ...o
-          } = e, a = t.Children.toArray(r), i = a.find(f);
+          } = e, a = t.Children.toArray(r), i = a.find(s);
           if (i) {
             const e = i.props.children,
               r = a.map((n => n === i ? t.Children.count(e) > 1 ? t.Children.only(null) : t.isValidElement(e) ? e.props.children : null : n));
@@ -90,7 +90,7 @@ _global.SENTRY_RELEASE = {
             return r ? e.ref : (n = Object.getOwnPropertyDescriptor(e, "ref")?.get, r = n && "isReactWarning" in n && n.isReactWarning, r ? e.props.ref : e.props.ref || e.ref)
           }(r);
           return t.cloneElement(r, {
-            ...s(l, r.props),
+            ...f(l, r.props),
             ref: n ? (0, o.t)(n, e) : e
           })
         }
@@ -103,11 +103,11 @@ _global.SENTRY_RELEASE = {
         children: e
       });
 
-      function f(e) {
+      function s(e) {
         return t.isValidElement(e) && e.type === i
       }
 
-      function s(e, n) {
+      function f(e, n) {
         const r = {
           ...n
         };

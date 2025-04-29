@@ -18,7 +18,7 @@ _global.SENTRY_RELEASE = {
   [2763], {
     2763: (e, d, a) => {
       a.r(d), a.d(d, {
-        Root: () => f,
+        Root: () => s,
         VisuallyHidden: () => r
       });
       var o = a(62229),
@@ -42,7 +42,7 @@ _global.SENTRY_RELEASE = {
           }
         })));
       r.displayName = "VisuallyHidden";
-      var f = r
+      var s = r
     }
   }
 ]);

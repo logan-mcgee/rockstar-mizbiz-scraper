@@ -24,8 +24,8 @@ _global.SENTRY_RELEASE = {
             ordinal: ["other"]
           },
           fn: function(e, a) {
-            var n = !String(e).split(".")[1];
-            return a ? "other" : 1 == e && n ? "one" : "other"
+            var d = !String(e).split(".")[1];
+            return a ? "other" : 1 == e && d ? "one" : "other"
           }
         },
         locale: "de"

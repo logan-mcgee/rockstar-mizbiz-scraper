@@ -16,49 +16,49 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_videoplayer = self.webpackChunk_rockstargames_modules_core_videoplayer || []).push([
   [6892], {
-    66892: (e, n, o) => {
-      o.r(n), o(44980), o(2876), o(74395), o(93180), o(43759), o(54936), o(66945), o(38585), o(71436), o(98073), o(30014), o(94323), o(6929), o(99598), o(26804), o(76580), o(32033), o(63612), o(62567);
-      var t = o(95966),
-        a = o(40347),
-        d = o(9623),
-        s = o(81788),
-        r = o(2918),
-        l = o(84700),
-        i = o(53178),
-        c = o.n(i),
-        u = o(27835),
-        g = o.n(u),
-        b = o(17529),
-        f = o.n(b),
-        p = o(72162),
-        m = o.n(p),
-        y = o(82510),
-        w = o.n(y),
-        h = o(90675),
-        A = o.n(h),
-        v = o(18418),
+    66892: (e, n, d) => {
+      d.r(n), d(44980), d(2876), d(74395), d(93180), d(43759), d(54936), d(66945), d(38585), d(71436), d(98073), d(30014), d(94323), d(6929), d(99598), d(26804), d(76580), d(32033), d(63612), d(62567);
+      var o = d(95966),
+        t = d(40347),
+        a = d(9623),
+        s = d(81788),
+        r = d(2918),
+        l = d(84700),
+        i = d(53178),
+        c = d.n(i),
+        u = d(27835),
+        b = d.n(u),
+        g = d(17529),
+        f = d.n(g),
+        p = d(72162),
+        m = d.n(p),
+        y = d(82510),
+        w = d.n(y),
+        h = d(90675),
+        A = d.n(h),
+        v = d(18418),
         _ = {};
-      _.styleTagTransform = A(), _.setAttributes = m(), _.insert = f().bind(null, "head"), _.domAPI = g(), _.insertStyleElement = w(), c()(v.A, _), v.A && v.A.locals && v.A.locals;
-      var k = o(52542),
-        E = o(73855);
+      _.styleTagTransform = A(), _.setAttributes = m(), _.insert = f().bind(null, "head"), _.domAPI = b(), _.insertStyleElement = w(), c()(v.A, _), v.A && v.A.locals && v.A.locals;
+      var k = d(52542),
+        E = d(73855);
       const I = window?.env?.graphEnv ?? "prod",
         x = (0, s.withIntl)((() => {
-          const [e, n] = (0, d.useSearchParams)(), [{
-            iso: o
-          }] = (0, s.getLocale)(), a = "true" === e.get("autoplay"), i = e.get("id"), c = e.get("resolution") ?? null, u = e.get("locale") ?? "en_us", g = Number(e.get("start") ?? 0);
-          return (0, E.jsx)(t.ResizeProvider, {
+          const [e, n] = (0, a.useSearchParams)(), [{
+            iso: d
+          }] = (0, s.getLocale)(), t = "true" === e.get("autoplay"), i = e.get("id"), c = e.get("resolution") ?? null, u = e.get("locale") ?? "en_us", b = Number(e.get("start") ?? 0);
+          return (0, E.jsx)(o.ResizeProvider, {
             children: (0, E.jsx)(r.GtmProvider, {
               children: (0, E.jsx)(l.A, {
-                autoplay: a,
+                autoplay: t,
                 context: "embed",
                 locale: u,
                 id: i,
                 resolution: c,
-                start: g,
+                start: b,
                 wrapper: !1,
                 videoChangeCallback: e => {
                   n({
-                    autoplay: a,
+                    autoplay: t,
                     id: e,
                     resolution: c
                   })
@@ -67,26 +67,26 @@ _global.SENTRY_RELEASE = {
             })
           })
         }), k),
-        C = (0, t.withRockstarGraph)((() => (0, E.jsx)(d.BrowserRouter, {
+        C = (0, o.withRockstarGraph)((() => (0, E.jsx)(a.BrowserRouter, {
           children: (0, E.jsx)(x, {})
         })), {
           env: I
         }),
         R = window?.env?.gtmId ?? null;
-      (0, t.gtmInit)({
+      (0, o.gtmInit)({
         id: R
       });
       const j = document.createElement("main");
-      document.body.appendChild(j), (0, a.H)(j).render((0, E.jsx)(C, {}))
+      document.body.appendChild(j), (0, t.H)(j).render((0, E.jsx)(C, {}))
     },
-    18418: (e, n, o) => {
-      o.d(n, {
+    18418: (e, n, d) => {
+      d.d(n, {
         A: () => r
       });
-      var t = o(42587),
-        a = o.n(t),
-        d = o(15081),
-        s = o.n(d)()(a());
+      var o = d(42587),
+        t = d.n(o),
+        a = d(15081),
+        s = d.n(a)()(t());
       s.push([e.id, "body,html{margin:0;overflow:hidden!important}main{height:100vh;width:100vw}", "", {
         version: 3,
         sources: ["webpack://./src/components/Root/index.less"],

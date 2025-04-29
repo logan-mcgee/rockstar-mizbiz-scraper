@@ -18,7 +18,7 @@ _global.SENTRY_RELEASE = {
   [5960, 3579], {
     85960: (e, n, t) => {
       t.r(n), t.d(n, {
-        Root: () => i,
+        Root: () => c,
         Slot: () => a,
         Slottable: () => s
       });
@@ -34,7 +34,7 @@ _global.SENTRY_RELEASE = {
         const {
           children: t,
           ...r
-        } = e, a = o.Children.toArray(t), s = a.find(f);
+        } = e, a = o.Children.toArray(t), s = a.find(i);
         if (s) {
           const e = s.props.children,
             t = a.map((n => n === s ? o.Children.count(e) > 1 ? o.Children.only(null) : (0, o.isValidElement)(e) ? e.props.children : null : n));
@@ -53,7 +53,7 @@ _global.SENTRY_RELEASE = {
           ...l
         } = e;
         return (0, o.isValidElement)(t) ? (0, o.cloneElement)(t, {
-          ...c(l, t.props),
+          ...f(l, t.props),
           ref: n ? r(n, t.ref) : t.ref
         }) : o.Children.count(t) > 1 ? o.Children.only(null) : null
       }));
@@ -62,11 +62,11 @@ _global.SENTRY_RELEASE = {
         children: e
       }) => (0, o.createElement)(o.Fragment, null, e);
 
-      function f(e) {
+      function i(e) {
         return (0, o.isValidElement)(e) && e.type === s
       }
 
-      function c(e, n) {
+      function f(e, n) {
         const t = {
           ...n
         };
@@ -85,7 +85,7 @@ _global.SENTRY_RELEASE = {
           ...t
         }
       }
-      const i = a
+      const c = a
     },
     3709: (e, n, t) => {
       function l() {

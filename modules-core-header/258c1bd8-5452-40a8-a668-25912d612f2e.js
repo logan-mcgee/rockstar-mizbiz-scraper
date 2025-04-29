@@ -18,7 +18,7 @@ _global.SENTRY_RELEASE = {
   [1332], {
     78951: (e, n, l) => {
       l.r(n), l.d(n, {
-        Root: () => i,
+        Root: () => c,
         Slot: () => d,
         Slottable: () => s
       });
@@ -34,7 +34,7 @@ _global.SENTRY_RELEASE = {
         const {
           children: l,
           ...r
-        } = e, d = t.Children.toArray(l), s = d.find(f);
+        } = e, d = t.Children.toArray(l), s = d.find(i);
         if (s) {
           const e = s.props.children,
             l = d.map((n => n === s ? t.Children.count(e) > 1 ? t.Children.only(null) : (0, t.isValidElement)(e) ? e.props.children : null : n));
@@ -53,7 +53,7 @@ _global.SENTRY_RELEASE = {
           ...o
         } = e;
         return (0, t.isValidElement)(l) ? (0, t.cloneElement)(l, {
-          ...c(o, l.props),
+          ...f(o, l.props),
           ref: n ? r(n, l.ref) : l.ref
         }) : t.Children.count(l) > 1 ? t.Children.only(null) : null
       }));
@@ -62,11 +62,11 @@ _global.SENTRY_RELEASE = {
         children: e
       }) => (0, t.createElement)(t.Fragment, null, e);
 
-      function f(e) {
+      function i(e) {
         return (0, t.isValidElement)(e) && e.type === s
       }
 
-      function c(e, n) {
+      function f(e, n) {
         const l = {
           ...n
         };
@@ -85,7 +85,7 @@ _global.SENTRY_RELEASE = {
           ...l
         }
       }
-      const i = d
+      const c = d
     }
   }
 ]);

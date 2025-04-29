@@ -45,7 +45,7 @@ _global.SENTRY_RELEASE = {
               t = document.documentElement
             }
             if (!o.element || 0 !== U(o.element).height && 0 !== U(o.element).width || (i = o.rect), !_(t)) {
-              const e = m(t);
+              const e = f(t);
               if (e && (e === window || "auto" === h(e))) return e
             }
             return t
@@ -134,10 +134,10 @@ _global.SENTRY_RELEASE = {
             a = getComputedStyle(o).getPropertyValue("--spatial-navigation-function"),
             r = i || U(t);
           let l, c;
-          return "grid" === a ? (c = e.filter((t => D(r, U(t), n))), c.length > 0 && (e = c), l = H) : l = W, f(t, e, n, l)
+          return "grid" === a ? (c = e.filter((t => D(r, U(t), n))), c.length > 0 && (e = c), l = H) : l = W, m(t, e, n, l)
         }
 
-        function f(t, e, n, o) {
+        function m(t, e, n, o) {
           let a = null;
           window.location === window.parent.location || "BODY" !== t.nodeName && "HTML" !== t.nodeName ? a = i || t.getBoundingClientRect() : (a = window.frameElement.getBoundingClientRect(), a.x = 0, a.y = 0);
           let r = Number.POSITIVE_INFINITY,
@@ -147,10 +147,10 @@ _global.SENTRY_RELEASE = {
               const i = o(a, U(e[t]), n);
               i < r ? (r = i, l = [e[t]]) : i === r && l.push(e[t])
             }
-          return 0 === l.length ? null : l.length > 1 && o === H ? f(t, l, n, B) : l[0]
+          return 0 === l.length ? null : l.length > 1 && o === H ? m(t, l, n, B) : l[0]
         }
 
-        function m(t) {
+        function f(t) {
           let e = t;
           do {
             if (!e.parentElement) {
@@ -324,7 +324,7 @@ _global.SENTRY_RELEASE = {
 
         function _(t) {
           const e = t.getBoundingClientRect();
-          let n = m(t),
+          let n = f(t),
             o = null;
           return o = n !== window ? U(n) : new DOMRect(0, 0, window.innerWidth, window.innerHeight), !(!A(o, e) || !A(o, e))
         }
@@ -452,7 +452,7 @@ _global.SENTRY_RELEASE = {
                 i = [Math.min(t.right, e.right), Math.min(t.bottom, e.bottom)];
               return n.width = Math.abs(o[0] - i[0]), n.height = Math.abs(o[1] - i[1]), o[0] >= i[0] || o[1] >= i[1] || (n.area = Math.sqrt(n.width * n.height)), n
             }(t, e),
-            f = s.area;
+            m = s.area;
           switch (n) {
             case "left":
             case "right":
@@ -465,7 +465,7 @@ _global.SENTRY_RELEASE = {
             default:
               u = 0, d = 0
           }
-          return c + u - d - f
+          return c + u - d - m
         }
 
         function B(t, e, n) {
@@ -655,19 +655,19 @@ _global.SENTRY_RELEASE = {
               })), n
             }(o);
           e || (e = {});
-          const m = o.getSpatialNavigationContainer();
-          let g = c(m);
-          const p = e.container || m;
-          e.container && m.contains(e.container) && (g = g.concat(c(p)));
+          const f = o.getSpatialNavigationContainer();
+          let g = c(f);
+          const p = e.container || f;
+          e.container && f.contains(e.container) && (g = g.concat(c(p)));
           const h = e.candidates && e.candidates.length > 0 ? e.candidates.filter((t => p.contains(t))) : g.filter((t => p.contains(t) && p !== t));
           if (h && h.length > 0) {
             h.forEach((t => {
               t !== o && (o.contains(t) && o !== t ? r : l).push(t)
             }));
             let e = d.filter((t => !r.includes(t))),
-              m = h.filter((t => b(t) && k(o, t))).map((t => t.focusableAreas())).flat().filter((t => t !== o));
-            if (r = r.concat(e).filter((t => p.contains(t))), l = l.concat(m).filter((t => p.contains(t))), l.length > 0 && (l = u(o, t, l, p)), i && (a = s(o, u(o, t, r, p), t)), r && r.length > 0 && "INPUT" !== o.nodeName && (a = function(t, e, o) {
-                return f(t, e, o, n ? F : V)
+              f = h.filter((t => b(t) && k(o, t))).map((t => t.focusableAreas())).flat().filter((t => t !== o));
+            if (r = r.concat(e).filter((t => p.contains(t))), l = l.concat(f).filter((t => p.contains(t))), l.length > 0 && (l = u(o, t, l, p)), i && (a = s(o, u(o, t, r, p), t)), r && r.length > 0 && "INPUT" !== o.nodeName && (a = function(t, e, o) {
+                return m(t, e, o, n ? F : V)
               }(o, r, t)), a = a || s(o, l, t), a && E(a)) {
               const e = c(a, {
                   mode: "all"

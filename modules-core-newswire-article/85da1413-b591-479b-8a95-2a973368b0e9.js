@@ -185,7 +185,7 @@ _global.SENTRY_RELEASE = {
         getLocale: () => u.A,
         localeCookieHandler: () => c.A,
         locales: () => d.Ay,
-        onLanguageChange: () => f.w,
+        onLanguageChange: () => b.w,
         splitLocale: () => m.A,
         useIntl: () => a.A,
         withIntl: () => i.QY
@@ -201,10 +201,10 @@ _global.SENTRY_RELEASE = {
         d = t(64479),
         m = t(22675),
         p = t(53335),
-        b = {};
-      for (const e in p)["default", "onLanguageChange", "FormattedMessage", "POSIXLocales", "createDevLocaleHook", "createIntl", "defineMessages", "englishLocale", "getCookieValueByName", "getLocale", "localeCookieHandler", "locales", "splitLocale", "useIntl", "withIntl"].indexOf(e) < 0 && (b[e] = () => p[e]);
-      t.d(o, b);
-      var f = t(63921)
+        f = {};
+      for (const e in p)["default", "onLanguageChange", "FormattedMessage", "POSIXLocales", "createDevLocaleHook", "createIntl", "defineMessages", "englishLocale", "getCookieValueByName", "getLocale", "localeCookieHandler", "locales", "splitLocale", "useIntl", "withIntl"].indexOf(e) < 0 && (f[e] = () => p[e]);
+      t.d(o, f);
+      var b = t(63921)
     },
     42425: (e, o, t) => {
       "use strict";

@@ -28,8 +28,8 @@ _global.SENTRY_RELEASE = {
               l = t[0],
               n = !t[1],
               o = l.slice(-1),
-              s = l.slice(-2);
-            return a ? "other" : 1 == e && n ? "one" : n && o >= 2 && o <= 4 && (s < 12 || s > 14) ? "few" : n && 1 != l && (0 == o || 1 == o) || n && o >= 5 && o <= 9 || n && s >= 12 && s <= 14 ? "many" : "other"
+              d = l.slice(-2);
+            return a ? "other" : 1 == e && n ? "one" : n && o >= 2 && o <= 4 && (d < 12 || d > 14) ? "few" : n && 1 != l && (0 == o || 1 == o) || n && o >= 5 && o <= 9 || n && d >= 12 && d <= 14 ? "many" : "other"
           }
         },
         locale: "pl"

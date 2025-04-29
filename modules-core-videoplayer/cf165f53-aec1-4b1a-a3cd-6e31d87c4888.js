@@ -28,7 +28,7 @@ _global.SENTRY_RELEASE = {
           d = Date.now;
 
         function v(t, e, n) {
-          return setTimeout(b(t, n), e)
+          return setTimeout(_(t, n), e)
         }
 
         function m(t, e, n) {
@@ -71,12 +71,12 @@ _global.SENTRY_RELEASE = {
             return T(t, e, !0)
           }), "merge", "Use `assign`.");
 
-        function _(t, e, n) {
+        function b(t, e, n) {
           var i, r = e.prototype;
           (i = t.prototype = Object.create(r)).constructor = t, i._super = r, n && u(i, n)
         }
 
-        function b(t, e) {
+        function _(t, e) {
           return function() {
             return t.apply(e, arguments)
           }
@@ -301,7 +301,7 @@ _global.SENTRY_RELEASE = {
         function pt() {
           this.evEl = ct, this.evWin = lt, this.pressed = !1, et.apply(this, arguments)
         }
-        _(pt, et, {
+        b(pt, et, {
           handler: function(t) {
             var e = ht[t.type];
             e & L && 0 === t.button && (this.pressed = !0), 2 & e && 1 !== t.which && (e = H), this.pressed && (e & H && (this.pressed = !1), this.callback(this.manager, e, {
@@ -331,7 +331,7 @@ _global.SENTRY_RELEASE = {
         function gt() {
           this.evEl = vt, this.evWin = mt, et.apply(this, arguments), this.store = this.manager.session.pointerEvents = []
         }
-        r.MSPointerEvent && !r.PointerEvent && (vt = "MSPointerDown", mt = "MSPointerMove MSPointerUp MSPointerCancel"), _(gt, et, {
+        r.MSPointerEvent && !r.PointerEvent && (vt = "MSPointerDown", mt = "MSPointerMove MSPointerUp MSPointerCancel"), b(gt, et, {
           handler: function(t) {
             var e = this.store,
               n = !1,
@@ -364,7 +364,7 @@ _global.SENTRY_RELEASE = {
             i = x(t.changedTouches);
           return e & (H | U) && (n = R(n.concat(i), "identifier", !0)), [n, i]
         }
-        _(Tt, et, {
+        b(Tt, et, {
           handler: function(t) {
             var e = yt[t.type];
             if (e === L && (this.started = !0), this.started) {
@@ -378,16 +378,16 @@ _global.SENTRY_RELEASE = {
             }
           }
         });
-        var _t = {
+        var bt = {
             touchstart: L,
             touchmove: 2,
             touchend: H,
             touchcancel: U
           },
-          bt = "touchstart touchmove touchend touchcancel";
+          _t = "touchstart touchmove touchend touchcancel";
 
         function It() {
-          this.evTarget = bt, this.targetIds = {}, et.apply(this, arguments)
+          this.evTarget = _t, this.targetIds = {}, et.apply(this, arguments)
         }
 
         function wt(t, e) {
@@ -404,9 +404,9 @@ _global.SENTRY_RELEASE = {
           for (r = 0; r < o.length;) i[o[r].identifier] && a.push(o[r]), e & (H | U) && delete i[o[r].identifier], r++;
           return a.length ? [R(s.concat(a), "identifier", !0), a] : void 0
         }
-        _(It, et, {
+        b(It, et, {
           handler: function(t) {
-            var e = _t[t.type],
+            var e = bt[t.type],
               n = wt.call(this, t, e);
             n && this.callback(this.manager, e, {
               pointers: n[0],
@@ -420,7 +420,7 @@ _global.SENTRY_RELEASE = {
 
         function Ct() {
           et.apply(this, arguments);
-          var t = b(this.handler, this);
+          var t = _(this.handler, this);
           this.touch = new It(this.manager, t), this.mouse = new pt(this.manager, t), this.primaryTouch = null, this.lastTouches = []
         }
 
@@ -453,7 +453,7 @@ _global.SENTRY_RELEASE = {
           }
           return !1
         }
-        _(Ct, et, {
+        b(Ct, et, {
           handler: function(t, e, n) {
             var i = n.pointerType == F,
               r = n.pointerType == W;
@@ -651,7 +651,7 @@ _global.SENTRY_RELEASE = {
           process: function(t) {},
           getTouchAction: function() {},
           reset: function() {}
-        }, _(jt, Lt, {
+        }, b(jt, Lt, {
           defaults: {
             pointers: 1
           },
@@ -666,7 +666,7 @@ _global.SENTRY_RELEASE = {
               r = this.attrTest(t);
             return i && (n & U || !r) ? 16 | e : i || r ? n & H ? 8 | e : 2 & e ? 4 | e : 2 : qt
           }
-        }), _(Gt, jt, {
+        }), b(Gt, jt, {
           defaults: {
             event: "pan",
             threshold: 10,
@@ -695,7 +695,7 @@ _global.SENTRY_RELEASE = {
             var e = Ut(t.direction);
             e && (t.additionalEvent = this.options.event + e), this._super.emit.call(this, t)
           }
-        }), _(Zt, jt, {
+        }), b(Zt, jt, {
           defaults: {
             event: "pinch",
             threshold: 0,
@@ -714,7 +714,7 @@ _global.SENTRY_RELEASE = {
             }
             this._super.emit.call(this, t)
           }
-        }), _(Bt, Lt, {
+        }), b(Bt, Lt, {
           defaults: {
             event: "press",
             pointers: 1,
@@ -742,7 +742,7 @@ _global.SENTRY_RELEASE = {
           emit: function(t) {
             8 === this.state && (t && t.eventType & H ? this.manager.emit(this.options.event + "up", t) : (this._input.timeStamp = d(), this.manager.emit(this.options.event, this._input)))
           }
-        }), _($t, jt, {
+        }), b($t, jt, {
           defaults: {
             event: "rotate",
             threshold: 0,
@@ -754,7 +754,7 @@ _global.SENTRY_RELEASE = {
           attrTest: function(t) {
             return this._super.attrTest.call(this, t) && (Math.abs(t.rotation) > this.options.threshold || 2 & this.state)
           }
-        }), _(Jt, jt, {
+        }), b(Jt, jt, {
           defaults: {
             event: "swipe",
             threshold: 10,
@@ -773,7 +773,7 @@ _global.SENTRY_RELEASE = {
             var e = Ut(t.offsetDirection);
             e && this.manager.emit(this.options.event + e, t), this.manager.emit(this.options.event, t)
           }
-        }), _(Kt, Lt, {
+        }), b(Kt, Lt, {
           defaults: {
             event: "tap",
             pointers: 1,
@@ -964,8 +964,8 @@ _global.SENTRY_RELEASE = {
           merge: E,
           extend: T,
           assign: u,
-          inherit: _,
-          bindFn: b,
+          inherit: b,
+          bindFn: _,
           prefixed: O
         }), (void 0 !== r ? r : "undefined" != typeof self ? self : {}).Hammer = Qt, (i = function() {
           return Qt

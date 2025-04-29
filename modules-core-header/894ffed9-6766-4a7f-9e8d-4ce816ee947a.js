@@ -50,7 +50,7 @@ _global.SENTRY_RELEASE = {
     },
     58014: (e, n, r) => {
       r.r(n), r.d(n, {
-        Root: () => s,
+        Root: () => f,
         Slot: () => a,
         Slottable: () => i
       });
@@ -61,7 +61,7 @@ _global.SENTRY_RELEASE = {
           const {
             children: r,
             ...o
-          } = e, a = t.Children.toArray(r), i = a.find(f);
+          } = e, a = t.Children.toArray(r), i = a.find(s);
           if (i) {
             const e = i.props.children,
               r = a.map((n => n === i ? t.Children.count(e) > 1 ? t.Children.only(null) : t.isValidElement(e) ? e.props.children : null : n));
@@ -119,10 +119,10 @@ _global.SENTRY_RELEASE = {
         children: e
       });
 
-      function f(e) {
+      function s(e) {
         return t.isValidElement(e) && e.type === i
       }
-      var s = a
+      var f = a
     }
   }
 ]);

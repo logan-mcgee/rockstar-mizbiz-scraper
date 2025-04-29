@@ -28,14 +28,14 @@ _global.SENTRY_RELEASE = {
         l = s(17529),
         c = s.n(l),
         i = s(72162),
-        g = s.n(i),
-        b = s(82510),
-        f = s.n(b),
+        f = s.n(i),
+        g = s(82510),
+        b = s.n(g),
         u = s(90675),
         m = s.n(u),
         A = s(84045),
         k = {};
-      k.styleTagTransform = m(), k.setAttributes = g(), k.insert = c().bind(null, "head"), k.domAPI = d(), k.insertStyleElement = f(), r()(A.A, k);
+      k.styleTagTransform = m(), k.setAttributes = f(), k.insert = c().bind(null, "head"), k.domAPI = d(), k.insertStyleElement = b(), r()(A.A, k);
       const w = A.A && A.A.locals ? A.A.locals : void 0;
       var y = s(73855);
       const p = () => {
