@@ -1,8 +1,8 @@
 ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "ad4164db-0984-4d51-a517-2e4418b5e74b", e._sentryDebugIdIdentifier = "sentry-dbid-ad4164db-0984-4d51-a517-2e4418b5e74b")
+      d = (new Error).stack;
+    d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "ad4164db-0984-4d51-a517-2e4418b5e74b", e._sentryDebugIdIdentifier = "sentry-dbid-ad4164db-0984-4d51-a517-2e4418b5e74b")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -16,52 +16,52 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [6463], {
-    28844: (e, a, d) => {
-      d.r(a), d.d(a, {
+    28844: (e, d, a) => {
+      a.r(d), a.d(d, {
         Portal: () => f,
-        Root: () => i
+        Root: () => b
       });
-      var o = d(62229),
-        n = d(44853),
-        t = d(34730),
-        l = d(73855),
-        r = ["a", "button", "div", "form", "h2", "h3", "img", "input", "label", "li", "nav", "ol", "p", "span", "svg", "ul"].reduce(((e, a) => {
-          const d = o.forwardRef(((e, d) => {
+      var o = a(62229),
+        n = a(44853),
+        t = a(34730),
+        l = a(73855),
+        r = ["a", "button", "div", "form", "h2", "h3", "img", "input", "label", "li", "nav", "ol", "p", "span", "svg", "ul"].reduce(((e, d) => {
+          const a = o.forwardRef(((e, a) => {
             const {
               asChild: o,
               ...n
-            } = e, r = o ? t.Slot : a;
+            } = e, r = o ? t.Slot : d;
             return "undefined" != typeof window && (window[Symbol.for("radix-ui")] = !0), (0, l.jsx)(r, {
               ...n,
-              ref: d
+              ref: a
             })
           }));
-          return d.displayName = `Primitive.${a}`, {
+          return a.displayName = `Primitive.${d}`, {
             ...e,
-            [a]: d
+            [d]: a
           }
         }), {}),
-        s = d(92600),
-        f = o.forwardRef(((e, a) => {
+        s = a(92600),
+        f = o.forwardRef(((e, d) => {
           const {
-            container: d,
+            container: a,
             ...t
-          } = e, [f, i] = o.useState(!1);
-          (0, s.N)((() => i(!0)), []);
-          const u = d || f && globalThis?.document?.body;
-          return u ? n.createPortal((0, l.jsx)(r.div, {
+          } = e, [f, b] = o.useState(!1);
+          (0, s.N)((() => b(!0)), []);
+          const i = a || f && globalThis?.document?.body;
+          return i ? n.createPortal((0, l.jsx)(r.div, {
             ...t,
-            ref: a
-          }), u) : null
+            ref: d
+          }), i) : null
         }));
       f.displayName = "Portal";
-      var i = f
+      var b = f
     },
-    92600: (e, a, d) => {
-      d.d(a, {
+    92600: (e, d, a) => {
+      a.d(d, {
         N: () => n
       });
-      var o = d(62229),
+      var o = a(62229),
         n = Boolean(globalThis?.document) ? o.useLayoutEffect : () => {}
     }
   }

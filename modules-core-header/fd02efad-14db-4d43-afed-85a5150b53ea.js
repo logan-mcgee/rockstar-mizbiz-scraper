@@ -19,7 +19,7 @@ _global.SENTRY_RELEASE = {
     38522: (e, n, t) => {
       t.r(n), t.d(n, {
         Root: () => c,
-        Slot: () => a,
+        Slot: () => d,
         Slottable: () => s
       });
       var l = t(3709),
@@ -30,24 +30,24 @@ _global.SENTRY_RELEASE = {
           "function" == typeof e ? e(n) : null != e && (e.current = n)
         }(e, n)))
       }
-      const a = (0, o.forwardRef)(((e, n) => {
+      const d = (0, o.forwardRef)(((e, n) => {
         const {
           children: t,
           ...r
-        } = e, a = o.Children.toArray(t), s = a.find(f);
+        } = e, d = o.Children.toArray(t), s = d.find(f);
         if (s) {
           const e = s.props.children,
-            t = a.map((n => n === s ? o.Children.count(e) > 1 ? o.Children.only(null) : (0, o.isValidElement)(e) ? e.props.children : null : n));
-          return (0, o.createElement)(d, (0, l.A)({}, r, {
+            t = d.map((n => n === s ? o.Children.count(e) > 1 ? o.Children.only(null) : (0, o.isValidElement)(e) ? e.props.children : null : n));
+          return (0, o.createElement)(a, (0, l.A)({}, r, {
             ref: n
           }), (0, o.isValidElement)(e) ? (0, o.cloneElement)(e, void 0, t) : null)
         }
-        return (0, o.createElement)(d, (0, l.A)({}, r, {
+        return (0, o.createElement)(a, (0, l.A)({}, r, {
           ref: n
         }), t)
       }));
-      a.displayName = "Slot";
-      const d = (0, o.forwardRef)(((e, n) => {
+      d.displayName = "Slot";
+      const a = (0, o.forwardRef)(((e, n) => {
         const {
           children: t,
           ...l
@@ -57,7 +57,7 @@ _global.SENTRY_RELEASE = {
           ref: n ? r(n, t.ref) : t.ref
         }) : o.Children.count(t) > 1 ? o.Children.only(null) : null
       }));
-      d.displayName = "SlotClone";
+      a.displayName = "SlotClone";
       const s = ({
         children: e
       }) => (0, o.createElement)(o.Fragment, null, e);
@@ -85,7 +85,7 @@ _global.SENTRY_RELEASE = {
           ...t
         }
       }
-      const c = a
+      const c = d
     },
     3709: (e, n, t) => {
       function l() {

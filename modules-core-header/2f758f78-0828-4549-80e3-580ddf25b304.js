@@ -315,8 +315,8 @@ _global.SENTRY_RELEASE = {
       const {
         cbrt: y,
         sqrt: v,
-        PI: h
-      } = Math, g = (e, t, n, r, o) => {
+        PI: b
+      } = Math, h = (e, t, n, r, o) => {
         const a = t + n * e,
           s = a ** 2 + r;
         if (s > 0) {
@@ -324,10 +324,10 @@ _global.SENTRY_RELEASE = {
           return y(a + e) + y(a - e) - o
         }
         const c = y(v(a * a - s)),
-          i = a ? Math.atan(v(-s) / a) : -h / 2;
+          i = a ? Math.atan(v(-s) / a) : -b / 2;
         let u;
-        return u = n < 0 ? (a > 0 ? 2 * h : h) - i : o < 0 ? (a > 0 ? 2 * h : -3 * h) + i : (a > 0 ? 0 : h) + i, 2 * c * Math.cos(u / 3) - o
-      }, b = (e, t, n, r) => ((t * e + 3 * n) * e + r) * e;
+        return u = n < 0 ? (a > 0 ? 2 * b : b) - i : o < 0 ? (a > 0 ? 2 * b : -3 * b) + i : (a > 0 ? 0 : b) + i, 2 * c * Math.cos(u / 3) - o
+      }, g = (e, t, n, r) => ((t * e + 3 * n) * e + r) * e;
 
       function m(e, t, n, r) {
         if (!(0 <= e && e <= 1 && 0 <= n && n <= 1)) throw new Error("Bezier x values must be in [0, 1] range");
@@ -343,10 +343,10 @@ _global.SENTRY_RELEASE = {
           l = d * d * d,
           y = 3 / o,
           v = 3 * t - 3 * r + 1,
-          h = r - 2 * t,
+          b = r - 2 * t,
           m = 3 * t,
-          _ = o ? g : p;
-        return e => 0 === e || 1 === e ? e : b(_(e, f, y, l, u), v, h, m)
+          _ = o ? h : p;
+        return e => 0 === e || 1 === e ? e : g(_(e, f, y, l, u), v, b, m)
       }
     }
   }

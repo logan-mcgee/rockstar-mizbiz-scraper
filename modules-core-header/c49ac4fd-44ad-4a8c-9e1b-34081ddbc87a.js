@@ -19,37 +19,37 @@ _global.SENTRY_RELEASE = {
     14144: (e, n, r) => {
       r.r(n), r.d(n, {
         Root: () => f,
-        Slot: () => d,
+        Slot: () => o,
         Slottable: () => s
       });
       var t = r(62229),
         l = r(21423),
-        a = r(73855),
-        d = t.forwardRef(((e, n) => {
+        d = r(73855),
+        o = t.forwardRef(((e, n) => {
           const {
             children: r,
             ...l
-          } = e, d = t.Children.toArray(r), s = d.find(i);
+          } = e, o = t.Children.toArray(r), s = o.find(i);
           if (s) {
             const e = s.props.children,
-              r = d.map((n => n === s ? t.Children.count(e) > 1 ? t.Children.only(null) : t.isValidElement(e) ? e.props.children : null : n));
-            return (0, a.jsx)(o, {
+              r = o.map((n => n === s ? t.Children.count(e) > 1 ? t.Children.only(null) : t.isValidElement(e) ? e.props.children : null : n));
+            return (0, d.jsx)(a, {
               ...l,
               ref: n,
               children: t.isValidElement(e) ? t.cloneElement(e, void 0, r) : null
             })
           }
-          return (0, a.jsx)(o, {
+          return (0, d.jsx)(a, {
             ...l,
             ref: n,
             children: r
           })
         }));
-      d.displayName = "Slot";
-      var o = t.forwardRef(((e, n) => {
+      o.displayName = "Slot";
+      var a = t.forwardRef(((e, n) => {
         const {
           children: r,
-          ...a
+          ...d
         } = e;
         if (t.isValidElement(r)) {
           const e = function(e) {
@@ -58,16 +58,16 @@ _global.SENTRY_RELEASE = {
             return r ? e.ref : (n = Object.getOwnPropertyDescriptor(e, "ref")?.get, r = n && "isReactWarning" in n && n.isReactWarning, r ? e.props.ref : e.props.ref || e.ref)
           }(r);
           return t.cloneElement(r, {
-            ...c(a, r.props),
+            ...c(d, r.props),
             ref: n ? (0, l.t)(n, e) : e
           })
         }
         return t.Children.count(r) > 1 ? t.Children.only(null) : null
       }));
-      o.displayName = "SlotClone";
+      a.displayName = "SlotClone";
       var s = ({
         children: e
-      }) => (0, a.jsx)(a.Fragment, {
+      }) => (0, d.jsx)(d.Fragment, {
         children: e
       });
 
@@ -81,20 +81,20 @@ _global.SENTRY_RELEASE = {
         };
         for (const t in n) {
           const l = e[t],
-            a = n[t];
-          /^on[A-Z]/.test(t) ? l && a ? r[t] = (...e) => {
-            a(...e), l(...e)
+            d = n[t];
+          /^on[A-Z]/.test(t) ? l && d ? r[t] = (...e) => {
+            d(...e), l(...e)
           } : l && (r[t] = l) : "style" === t ? r[t] = {
             ...l,
-            ...a
-          } : "className" === t && (r[t] = [l, a].filter(Boolean).join(" "))
+            ...d
+          } : "className" === t && (r[t] = [l, d].filter(Boolean).join(" "))
         }
         return {
           ...e,
           ...r
         }
       }
-      var f = d
+      var f = o
     }
   }
 ]);

@@ -225,8 +225,8 @@ _global.SENTRY_RELEASE = {
             v = e.className,
             y = e.removeScrollBar,
             m = e.enabled,
-            _ = e.shards,
-            b = e.sideCar,
+            b = e.shards,
+            _ = e.sideCar,
             g = e.noIsolation,
             w = e.inert,
             E = e.allowPinchZoom,
@@ -234,7 +234,7 @@ _global.SENTRY_RELEASE = {
             P = void 0 === S ? "div" : S,
             O = e.gapMode,
             k = (0, r.__rest)(e, ["forwardProps", "children", "className", "removeScrollBar", "enabled", "shards", "sideCar", "noIsolation", "inert", "allowPinchZoom", "as", "gapMode"]),
-            j = b,
+            j = _,
             x = function(e, t) {
               var n, r, a, l = (n = t || null, r = function(t) {
                 return e.forEach((function(e) {
@@ -274,7 +274,7 @@ _global.SENTRY_RELEASE = {
           return o.createElement(o.Fragment, null, m && o.createElement(j, {
             sideCar: s,
             removeScrollBar: y,
-            shards: _,
+            shards: b,
             noIsolation: g,
             inert: w,
             setCallbacks: d,
@@ -340,16 +340,16 @@ _global.SENTRY_RELEASE = {
         },
         m = !1;
       if ("undefined" != typeof window) try {
-        var _ = Object.defineProperty({}, "passive", {
+        var b = Object.defineProperty({}, "passive", {
           get: function() {
             return m = !0, !0
           }
         });
-        window.addEventListener("test", _, _), window.removeEventListener("test", _, _)
+        window.addEventListener("test", b, b), window.removeEventListener("test", b, b)
       } catch (e) {
         m = !1
       }
-      var b = !!m && {
+      var _ = !!m && {
           passive: !1
         },
         g = function(e, t) {
@@ -505,16 +505,16 @@ _global.SENTRY_RELEASE = {
               onScrollCapture: p,
               onWheelCapture: p,
               onTouchMoveCapture: v
-            }), document.addEventListener("wheel", s, b), document.addEventListener("touchmove", s, b), document.addEventListener("touchstart", d, b),
+            }), document.addEventListener("wheel", s, _), document.addEventListener("touchmove", s, _), document.addEventListener("touchstart", d, _),
             function() {
               C = C.filter((function(e) {
                 return e !== c
-              })), document.removeEventListener("wheel", s, b), document.removeEventListener("touchmove", s, b), document.removeEventListener("touchstart", d, b)
+              })), document.removeEventListener("wheel", s, _), document.removeEventListener("touchmove", s, _), document.removeEventListener("touchstart", d, _)
             }
         }), []);
         var m = e.removeScrollBar,
-          _ = e.inert;
-        return o.createElement(o.Fragment, null, _ ? o.createElement(c, {
+          b = e.inert;
+        return o.createElement(o.Fragment, null, b ? o.createElement(c, {
           styles: j(i)
         }) : null, m ? o.createElement(h.jp, {
           gapMode: e.gapMode
@@ -554,14 +554,14 @@ _global.SENTRY_RELEASE = {
         __metadata: () => p,
         __param: () => u,
         __propKey: () => f,
-        __read: () => b,
+        __read: () => _,
         __rest: () => i,
         __runInitializers: () => s,
         __setFunctionName: () => d,
         __spread: () => g,
         __spreadArray: () => E,
         __spreadArrays: () => w,
-        __values: () => _,
+        __values: () => b,
         default: () => L
       });
       var r = function(e, t) {
@@ -782,7 +782,7 @@ _global.SENTRY_RELEASE = {
         for (var n in e) "default" === n || Object.prototype.hasOwnProperty.call(t, n) || y(t, e, n)
       }
 
-      function _(e) {
+      function b(e) {
         var t = "function" == typeof Symbol && Symbol.iterator,
           n = t && e[t],
           r = 0;
@@ -798,7 +798,7 @@ _global.SENTRY_RELEASE = {
         throw new TypeError(t ? "Object is not iterable." : "Symbol.iterator is not defined.")
       }
 
-      function b(e, t) {
+      function _(e, t) {
         var n = "function" == typeof Symbol && e[Symbol.iterator];
         if (!n) return e;
         var r, o, a = n.call(e),
@@ -821,7 +821,7 @@ _global.SENTRY_RELEASE = {
       }
 
       function g() {
-        for (var e = [], t = 0; t < arguments.length; t++) e = e.concat(b(arguments[t]));
+        for (var e = [], t = 0; t < arguments.length; t++) e = e.concat(_(arguments[t]));
         return e
       }
 
@@ -903,7 +903,7 @@ _global.SENTRY_RELEASE = {
       function k(e) {
         if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
         var t, n = e[Symbol.asyncIterator];
-        return n ? n.call(e) : (e = _(e), t = {}, r("next"), r("throw"), r("return"), t[Symbol.asyncIterator] = function() {
+        return n ? n.call(e) : (e = b(e), t = {}, r("next"), r("throw"), r("return"), t[Symbol.asyncIterator] = function() {
           return this
         }, t);
 
@@ -1027,8 +1027,8 @@ _global.SENTRY_RELEASE = {
         __generator: v,
         __createBinding: y,
         __exportStar: m,
-        __values: _,
-        __read: b,
+        __values: b,
+        __read: _,
         __spread: g,
         __spreadArrays: w,
         __spreadArray: E,

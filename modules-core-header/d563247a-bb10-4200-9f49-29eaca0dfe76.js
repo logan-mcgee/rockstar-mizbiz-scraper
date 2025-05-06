@@ -19,7 +19,7 @@ _global.SENTRY_RELEASE = {
     22119: (e, n, l) => {
       l.r(n), l.d(n, {
         Root: () => c,
-        Slot: () => a,
+        Slot: () => d,
         Slottable: () => s
       });
       var o = l(3709),
@@ -30,24 +30,24 @@ _global.SENTRY_RELEASE = {
           "function" == typeof e ? e(n) : null != e && (e.current = n)
         }(e, n)))
       }
-      const a = (0, t.forwardRef)(((e, n) => {
+      const d = (0, t.forwardRef)(((e, n) => {
         const {
           children: l,
           ...r
-        } = e, a = t.Children.toArray(l), s = a.find(f);
+        } = e, d = t.Children.toArray(l), s = d.find(f);
         if (s) {
           const e = s.props.children,
-            l = a.map((n => n === s ? t.Children.count(e) > 1 ? t.Children.only(null) : (0, t.isValidElement)(e) ? e.props.children : null : n));
-          return (0, t.createElement)(d, (0, o.A)({}, r, {
+            l = d.map((n => n === s ? t.Children.count(e) > 1 ? t.Children.only(null) : (0, t.isValidElement)(e) ? e.props.children : null : n));
+          return (0, t.createElement)(a, (0, o.A)({}, r, {
             ref: n
           }), (0, t.isValidElement)(e) ? (0, t.cloneElement)(e, void 0, l) : null)
         }
-        return (0, t.createElement)(d, (0, o.A)({}, r, {
+        return (0, t.createElement)(a, (0, o.A)({}, r, {
           ref: n
         }), l)
       }));
-      a.displayName = "Slot";
-      const d = (0, t.forwardRef)(((e, n) => {
+      d.displayName = "Slot";
+      const a = (0, t.forwardRef)(((e, n) => {
         const {
           children: l,
           ...o
@@ -57,7 +57,7 @@ _global.SENTRY_RELEASE = {
           ref: n ? r(n, l.ref) : l.ref
         }) : t.Children.count(l) > 1 ? t.Children.only(null) : null
       }));
-      d.displayName = "SlotClone";
+      a.displayName = "SlotClone";
       const s = ({
         children: e
       }) => (0, t.createElement)(t.Fragment, null, e);
@@ -85,7 +85,7 @@ _global.SENTRY_RELEASE = {
           ...l
         }
       }
-      const c = a
+      const c = d
     }
   }
 ]);

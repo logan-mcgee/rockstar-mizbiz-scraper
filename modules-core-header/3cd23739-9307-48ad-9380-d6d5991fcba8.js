@@ -266,8 +266,8 @@ _global.SENTRY_RELEASE = {
             onFocusOutside: w,
             onInteractOutside: h,
             onDismiss: y,
-            ...E
-          } = e, b = r.useContext(f), [N, C] = r.useState(null), M = N?.ownerDocument ?? globalThis?.document, [, R] = r.useState({}), x = (0, s.s)(n, (e => C(e))), _ = Array.from(b.layers), [T] = [...b.layersWithOutsidePointerEventsDisabled].slice(-1), P = _.indexOf(T), D = N ? _.indexOf(N) : -1, L = b.layersWithOutsidePointerEventsDisabled.size > 0, O = D >= P, I = function(e, n = globalThis?.document) {
+            ...b
+          } = e, E = r.useContext(f), [N, C] = r.useState(null), M = N?.ownerDocument ?? globalThis?.document, [, R] = r.useState({}), x = (0, s.s)(n, (e => C(e))), _ = Array.from(E.layers), [T] = [...E.layersWithOutsidePointerEventsDisabled].slice(-1), P = _.indexOf(T), D = N ? _.indexOf(N) : -1, L = E.layersWithOutsidePointerEventsDisabled.size > 0, O = D >= P, I = function(e, n = globalThis?.document) {
             const t = (0, u.c)(e),
               o = r.useRef(!1),
               i = r.useRef((() => {}));
@@ -299,7 +299,7 @@ _global.SENTRY_RELEASE = {
             }
           }((e => {
             const n = e.target,
-              t = [...b.branches].some((e => e.contains(n)));
+              t = [...E.branches].some((e => e.contains(n)));
             O && !t && (g?.(e), h?.(e), e.defaultPrevented || y?.())
           }), M), j = function(e, n = globalThis?.document) {
             const t = (0, u.c)(e),
@@ -319,21 +319,21 @@ _global.SENTRY_RELEASE = {
             }
           }((e => {
             const n = e.target;
-            [...b.branches].some((e => e.contains(n))) || (w?.(e), h?.(e), e.defaultPrevented || y?.())
+            [...E.branches].some((e => e.contains(n))) || (w?.(e), h?.(e), e.defaultPrevented || y?.())
           }), M);
           return (0, c.U)((e => {
-            D === b.layers.size - 1 && (v?.(e), !e.defaultPrevented && y && (e.preventDefault(), y()))
+            D === E.layers.size - 1 && (v?.(e), !e.defaultPrevented && y && (e.preventDefault(), y()))
           }), M), r.useEffect((() => {
-            if (N) return t && (0 === b.layersWithOutsidePointerEventsDisabled.size && (o = M.body.style.pointerEvents, M.body.style.pointerEvents = "none"), b.layersWithOutsidePointerEventsDisabled.add(N)), b.layers.add(N), p(), () => {
-              t && 1 === b.layersWithOutsidePointerEventsDisabled.size && (M.body.style.pointerEvents = o)
+            if (N) return t && (0 === E.layersWithOutsidePointerEventsDisabled.size && (o = M.body.style.pointerEvents, M.body.style.pointerEvents = "none"), E.layersWithOutsidePointerEventsDisabled.add(N)), E.layers.add(N), p(), () => {
+              t && 1 === E.layersWithOutsidePointerEventsDisabled.size && (M.body.style.pointerEvents = o)
             }
-          }), [N, M, t, b]), r.useEffect((() => () => {
-            N && (b.layers.delete(N), b.layersWithOutsidePointerEventsDisabled.delete(N), p())
-          }), [N, b]), r.useEffect((() => {
+          }), [N, M, t, E]), r.useEffect((() => () => {
+            N && (E.layers.delete(N), E.layersWithOutsidePointerEventsDisabled.delete(N), p())
+          }), [N, E]), r.useEffect((() => {
             const e = () => R({});
             return document.addEventListener(d, e), () => document.removeEventListener(d, e)
           }), []), (0, l.jsx)(a.sG.div, {
-            ...E,
+            ...b,
             ref: x,
             style: {
               pointerEvents: L ? O ? "auto" : "none" : void 0,
@@ -380,8 +380,8 @@ _global.SENTRY_RELEASE = {
     },
     40648: (e, n, t) => {
       t.r(n), t.d(n, {
-        Content: () => be,
-        Indicator: () => Ee,
+        Content: () => Ee,
+        Indicator: () => be,
         Item: () => we,
         Link: () => ye,
         List: () => ge,
@@ -417,12 +417,12 @@ _global.SENTRY_RELEASE = {
         w = t(26727),
         h = t(63694),
         y = t(73855),
-        E = "NavigationMenu",
-        [b, N, C] = (0, v.N)(E),
-        [M, R, x] = (0, v.N)(E),
-        [_, T] = (0, i.A)(E, [C, x]),
-        [P, D] = _(E),
-        [L, O] = _(E),
+        b = "NavigationMenu",
+        [E, N, C] = (0, v.N)(b),
+        [M, R, x] = (0, v.N)(b),
+        [_, T] = (0, i.A)(b, [C, x]),
+        [P, D] = _(b),
+        [L, O] = _(b),
         I = o.forwardRef(((e, n) => {
           const {
             __scopeNavigationMenu: t,
@@ -434,7 +434,7 @@ _global.SENTRY_RELEASE = {
             orientation: v = "horizontal",
             dir: p,
             ...m
-          } = e, [g, w] = o.useState(null), h = (0, c.s)(n, (e => w(e))), E = (0, l.jH)(p), b = o.useRef(0), N = o.useRef(0), C = o.useRef(0), [M, R] = o.useState(!0), [x = "", _] = (0, u.i)({
+          } = e, [g, w] = o.useState(null), h = (0, c.s)(n, (e => w(e))), b = (0, l.jH)(p), E = o.useRef(0), N = o.useRef(0), C = o.useRef(0), [M, R] = o.useState(!0), [x = "", _] = (0, u.i)({
             prop: r,
             onChange: e => {
               const n = f > 0;
@@ -446,24 +446,24 @@ _global.SENTRY_RELEASE = {
           }), [_]), P = o.useCallback((e => {
             window.clearTimeout(N.current), _(e)
           }), [_]), D = o.useCallback((e => {
-            x === e ? window.clearTimeout(N.current) : b.current = window.setTimeout((() => {
+            x === e ? window.clearTimeout(N.current) : E.current = window.setTimeout((() => {
               window.clearTimeout(N.current), _(e)
             }), d)
           }), [x, _, d]);
           return o.useEffect((() => () => {
-            window.clearTimeout(b.current), window.clearTimeout(N.current), window.clearTimeout(C.current)
+            window.clearTimeout(E.current), window.clearTimeout(N.current), window.clearTimeout(C.current)
           }), []), (0, y.jsx)(k, {
             scope: t,
             isRootMenu: !0,
             value: x,
-            dir: E,
+            dir: b,
             orientation: v,
             rootNavigationMenu: g,
             onTriggerEnter: e => {
-              window.clearTimeout(b.current), M ? D(e) : P(e)
+              window.clearTimeout(E.current), M ? D(e) : P(e)
             },
             onTriggerLeave: () => {
-              window.clearTimeout(b.current), T()
+              window.clearTimeout(E.current), T()
             },
             onContentEnter: () => window.clearTimeout(N.current),
             onContentLeave: T,
@@ -474,13 +474,13 @@ _global.SENTRY_RELEASE = {
             children: (0, y.jsx)(s.sG.nav, {
               "aria-label": "Main",
               "data-orientation": v,
-              dir: E,
+              dir: b,
               ...m,
               ref: h
             })
           })
         }));
-      I.displayName = E;
+      I.displayName = b;
       var j = "NavigationMenuSub",
         S = o.forwardRef(((e, n) => {
           const {
@@ -528,7 +528,7 @@ _global.SENTRY_RELEASE = {
             onTriggerLeave: v,
             onContentEnter: p,
             onContentLeave: g
-          } = e, [h, E] = o.useState(null), [N, C] = o.useState(new Map), [M, R] = o.useState(null);
+          } = e, [h, b] = o.useState(null), [N, C] = o.useState(new Map), [M, R] = o.useState(null);
           return (0, y.jsx)(P, {
             scope: n,
             isRootMenu: t,
@@ -539,7 +539,7 @@ _global.SENTRY_RELEASE = {
             dir: i,
             orientation: a,
             viewport: h,
-            onViewportChange: E,
+            onViewportChange: b,
             indicatorTrack: M,
             onIndicatorTrackChange: R,
             onTriggerEnter: (0, w.c)(d),
@@ -554,7 +554,7 @@ _global.SENTRY_RELEASE = {
             onViewportContentRemove: o.useCallback((e => {
               C((n => n.has(e) ? (n.delete(e), new Map(n)) : n))
             }), []),
-            children: (0, y.jsx)(b.Provider, {
+            children: (0, y.jsx)(E.Provider, {
               scope: n,
               children: (0, y.jsx)(L, {
                 scope: n,
@@ -579,7 +579,7 @@ _global.SENTRY_RELEASE = {
               position: "relative"
             },
             ref: r.onIndicatorTrackChange,
-            children: (0, y.jsx)(b.Slot, {
+            children: (0, y.jsx)(E.Slot, {
               scope: t,
               children: r.isRootMenu ? (0, y.jsx)(re, {
                 asChild: !0,
@@ -643,7 +643,7 @@ _global.SENTRY_RELEASE = {
             ...i
           } = e, u = D(W, e.__scopeNavigationMenu), l = U(W, e.__scopeNavigationMenu), d = o.useRef(null), f = (0, c.s)(d, l.triggerRef, n), v = de(u.baseId, l.value), p = fe(u.baseId, l.value), m = o.useRef(!1), g = o.useRef(!1), w = l.value === u.value;
           return (0, y.jsxs)(y.Fragment, {
-            children: [(0, y.jsx)(b.ItemSlot, {
+            children: [(0, y.jsx)(E.ItemSlot, {
               scope: t,
               value: l.value,
               children: (0, y.jsx)(ae, {
@@ -844,7 +844,7 @@ _global.SENTRY_RELEASE = {
             onRootContentClose: l,
             onContentFocusOutside: d,
             ...f
-          } = e, v = D(Z, t), m = o.useRef(null), g = (0, c.s)(m, n), w = de(v.baseId, r), h = fe(v.baseId, r), E = N(t), b = o.useRef(null), {
+          } = e, v = D(Z, t), m = o.useRef(null), g = (0, c.s)(m, n), w = de(v.baseId, r), h = fe(v.baseId, r), b = N(t), E = o.useRef(null), {
             onItemDismiss: C
           } = v;
           o.useEffect((() => {
@@ -857,13 +857,13 @@ _global.SENTRY_RELEASE = {
             }
           }), [v.isRootMenu, e.value, i, C, l]);
           const M = o.useMemo((() => {
-            const e = E().map((e => e.value));
+            const e = b().map((e => e.value));
             "rtl" === v.dir && e.reverse();
             const n = e.indexOf(v.value),
               t = e.indexOf(v.previousValue),
               o = r === v.value,
               i = t === e.indexOf(r);
-            if (!o && !i) return b.current;
+            if (!o && !i) return E.current;
             const a = (() => {
               if (n !== t) {
                 if (o && -1 !== t) return n > t ? "from-end" : "from-start";
@@ -871,8 +871,8 @@ _global.SENTRY_RELEASE = {
               }
               return null
             })();
-            return b.current = a, a
-          }), [v.previousValue, v.value, v.dir, E, r]);
+            return E.current = a, a
+          }), [v.previousValue, v.value, v.dir, b, r]);
           return (0, y.jsx)(re, {
             asChild: !0,
             children: (0, y.jsx)(p.qW, {
@@ -897,7 +897,7 @@ _global.SENTRY_RELEASE = {
               })),
               onPointerDownOutside: (0, a.m)(e.onPointerDownOutside, (e => {
                 const n = e.target,
-                  t = E().some((e => e.ref.current?.contains(n))),
+                  t = b().some((e => e.ref.current?.contains(n))),
                   o = v.isRootMenu && v.viewport?.contains(n);
                 (t || o || !v.isRootMenu) && e.preventDefault()
               })),
@@ -936,19 +936,19 @@ _global.SENTRY_RELEASE = {
             __scopeNavigationMenu: t,
             children: r,
             ...i
-          } = e, u = D(ne, t), l = (0, c.s)(n, u.onViewportChange), f = O(Z, e.__scopeNavigationMenu), [v, p] = o.useState(null), [m, g] = o.useState(null), w = v ? v?.width + "px" : void 0, h = v ? v?.height + "px" : void 0, E = Boolean(u.value), b = E ? u.value : u.previousValue;
+          } = e, u = D(ne, t), l = (0, c.s)(n, u.onViewportChange), f = O(Z, e.__scopeNavigationMenu), [v, p] = o.useState(null), [m, g] = o.useState(null), w = v ? v?.width + "px" : void 0, h = v ? v?.height + "px" : void 0, b = Boolean(u.value), E = b ? u.value : u.previousValue;
           return ce(m, (() => {
             m && p({
               width: m.offsetWidth,
               height: m.offsetHeight
             })
           })), (0, y.jsx)(s.sG.div, {
-            "data-state": le(E),
+            "data-state": le(b),
             "data-orientation": u.orientation,
             ...i,
             ref: l,
             style: {
-              pointerEvents: !E && u.isRootMenu ? "none" : void 0,
+              pointerEvents: !b && u.isRootMenu ? "none" : void 0,
               "--radix-navigation-menu-viewport-width": w,
               "--radix-navigation-menu-viewport-height": h,
               ...i.style
@@ -960,7 +960,7 @@ _global.SENTRY_RELEASE = {
               forceMount: t,
               ...o
             }]) => {
-              const r = b === e;
+              const r = E === e;
               return (0, y.jsx)(d.C, {
                 present: t || r,
                 children: (0, y.jsx)(ee, {
@@ -1068,8 +1068,8 @@ _global.SENTRY_RELEASE = {
         we = G,
         he = $,
         ye = B,
-        Ee = q,
-        be = X,
+        be = q,
+        Ee = X,
         Ne = te
     },
     79315: (e, n, t) => {

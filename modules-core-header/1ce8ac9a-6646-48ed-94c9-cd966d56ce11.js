@@ -2,7 +2,7 @@
   try {
     var a = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       e = (new Error).stack;
-    e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "87a8dfb6-8da1-4329-baca-96f4b8c6e0bb", a._sentryDebugIdIdentifier = "sentry-dbid-87a8dfb6-8da1-4329-baca-96f4b8c6e0bb")
+    e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "1ce8ac9a-6646-48ed-94c9-cd966d56ce11", a._sentryDebugIdIdentifier = "sentry-dbid-1ce8ac9a-6646-48ed-94c9-cd966d56ce11")
   } catch (a) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -66,9 +66,9 @@ _global.SENTRY_RELEASE = {
         p = n(90675),
         u = n.n(p),
         h = n(60561),
-        b = {};
-      b.styleTagTransform = u(), b.setAttributes = m(), b.insert = v().bind(null, "head"), b.domAPI = i(), b.insertStyleElement = g(), o()(h.A, b);
-      const f = h.A && h.A.locals ? h.A.locals : void 0;
+        f = {};
+      f.styleTagTransform = u(), f.setAttributes = m(), f.insert = v().bind(null, "head"), f.domAPI = i(), f.insertStyleElement = g(), o()(h.A, f);
+      const b = h.A && h.A.locals ? h.A.locals : void 0;
       var w = n(73855);
       (0, r.importAll)(n(86751));
       const y = a => {
@@ -82,7 +82,7 @@ _global.SENTRY_RELEASE = {
           isMobile: i
         } = (0, r.useWindowResize)(), c = (0, _.useMemo)((() => {
           let a = "";
-          return e && (a = i ? n(75877)(`./${s}/mobile.png`) : n(55889)(`./${s}/desktop.png`)), a || (a = n(39294)(`./${s}.jpg`), a += `?im=Resize=${t}`), a
+          return e && (a = i ? n(24865)(`./${s}/mobile.jpg`) : n(53781)(`./${s}/desktop.jpg`)), a || (a = n(39294)(`./${s}.jpg`), a += `?im=Resize=${t}`), a
         }), [i, s]), [v] = (0, r.usePreloadImg)(c);
         let d = c;
         return (0, w.jsx)("div", {
@@ -91,7 +91,7 @@ _global.SENTRY_RELEASE = {
           style: {
             backgroundImage: `url(${d})`
           },
-          className: [f.img, v ? f.startAnimation : "", e ? f.wide : ""].join(" ")
+          className: [b.img, v ? b.startAnimation : "", e ? b.wide : ""].join(" ")
         })
       }
     },
@@ -166,8 +166,8 @@ _global.SENTRY_RELEASE = {
         "./GTATrilogy.jpg": 84752,
         "./IV.jpg": 73483,
         "./V.jpg": 98754,
-        "./VI/desktop.png": 3660,
-        "./VI/mobile.png": 96048,
+        "./VI/desktop.jpg": 67496,
+        "./VI/mobile.jpg": 92244,
         "./agent.jpg": 78323,
         "./beaterator.jpg": 23587,
         "./bully-scholarshipedition.jpg": 67181,
@@ -242,6 +242,8 @@ _global.SENTRY_RELEASE = {
         "./GTATrilogy.jpg": 84752,
         "./IV.jpg": 73483,
         "./V.jpg": 98754,
+        "./VI/desktop.jpg": 67496,
+        "./VI/mobile.jpg": 92244,
         "./agent.jpg": 78323,
         "./beaterator.jpg": 23587,
         "./bully-scholarshipedition.jpg": 67181,
@@ -310,9 +312,9 @@ _global.SENTRY_RELEASE = {
         return Object.keys(_)
       }, r.resolve = t, a.exports = r, r.id = 39294
     },
-    55889: (a, e, n) => {
+    53781: (a, e, n) => {
       var _ = {
-        "./VI/desktop.png": 3660
+        "./VI/desktop.jpg": 67496
       };
 
       function r(a) {
@@ -329,11 +331,11 @@ _global.SENTRY_RELEASE = {
       }
       r.keys = function() {
         return Object.keys(_)
-      }, r.resolve = t, a.exports = r, r.id = 55889
+      }, r.resolve = t, a.exports = r, r.id = 53781
     },
-    75877: (a, e, n) => {
+    24865: (a, e, n) => {
       var _ = {
-        "./VI/mobile.png": 96048
+        "./VI/mobile.jpg": 92244
       };
 
       function r(a) {
@@ -350,7 +352,7 @@ _global.SENTRY_RELEASE = {
       }
       r.keys = function() {
         return Object.keys(_)
-      }, r.resolve = t, a.exports = r, r.id = 75877
+      }, r.resolve = t, a.exports = r, r.id = 24865
     },
     10111: a => {
       "use strict";
@@ -368,13 +370,13 @@ _global.SENTRY_RELEASE = {
       "use strict";
       a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/ccac790d960f612fa0746c78b8052926.jpg"
     },
-    3660: a => {
+    67496: a => {
       "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/f1aba112359a3d6747ad694a8c02a07c.png"
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/372e91ece1e13eda3ec63d6dfc06f7ce.jpg"
     },
-    96048: a => {
+    92244: a => {
       "use strict";
-      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/26f95aa7677031d8cd56ea75250c7bdd.png"
+      a.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/4f086bb17e0de94d33c4031f30fff704.jpg"
     },
     78323: a => {
       "use strict";

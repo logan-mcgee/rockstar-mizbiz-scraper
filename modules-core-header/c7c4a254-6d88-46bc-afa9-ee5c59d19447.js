@@ -44,10 +44,10 @@ _global.SENTRY_RELEASE = {
             };
           if (-1 !== f) t[f].references++, t[f].updater(p);
           else {
-            var v = o(p, r);
+            var b = o(p, r);
             r.byIndex = c, t.splice(c, 0, {
               identifier: l,
-              updater: v,
+              updater: b,
               references: 1
             })
           }

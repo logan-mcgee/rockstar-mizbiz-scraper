@@ -17,11 +17,11 @@ _global.SENTRY_RELEASE = {
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [9169, 3855, 6236, 9093, 1474, 1550], {
     32469: (e, o, r) => {
-      var a = r(62229),
-        d = Symbol.for("react.element"),
+      var d = r(62229),
+        a = Symbol.for("react.element"),
         t = Symbol.for("react.fragment"),
         n = Object.prototype.hasOwnProperty,
-        l = a.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        l = d.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         s = {
           key: !0,
           ref: !0,
@@ -30,14 +30,14 @@ _global.SENTRY_RELEASE = {
         };
 
       function f(e, o, r) {
-        var a, t = {},
+        var d, t = {},
           f = null,
           i = null;
-        for (a in void 0 !== r && (f = "" + r), void 0 !== o.key && (f = "" + o.key), void 0 !== o.ref && (i = o.ref), o) n.call(o, a) && !s.hasOwnProperty(a) && (t[a] = o[a]);
+        for (d in void 0 !== r && (f = "" + r), void 0 !== o.key && (f = "" + o.key), void 0 !== o.ref && (i = o.ref), o) n.call(o, d) && !s.hasOwnProperty(d) && (t[d] = o[d]);
         if (e && e.defaultProps)
-          for (a in o = e.defaultProps) void 0 === t[a] && (t[a] = o[a]);
+          for (d in o = e.defaultProps) void 0 === t[d] && (t[d] = o[d]);
         return {
-          $$typeof: d,
+          $$typeof: a,
           type: e,
           key: f,
           ref: i,
@@ -55,19 +55,19 @@ _global.SENTRY_RELEASE = {
         Portal: () => s,
         Root: () => f
       });
-      var a = r(62229),
-        d = r(44853),
+      var d = r(62229),
+        a = r(44853),
         t = r(22728),
         n = r(92600),
         l = r(73855),
-        s = a.forwardRef(((e, o) => {
+        s = d.forwardRef(((e, o) => {
           const {
             container: r,
             ...s
-          } = e, [f, i] = a.useState(!1);
+          } = e, [f, i] = d.useState(!1);
           (0, n.N)((() => i(!0)), []);
           const u = r || f && globalThis?.document?.body;
-          return u ? d.createPortal((0, l.jsx)(t.sG.div, {
+          return u ? a.createPortal((0, l.jsx)(t.sG.div, {
             ...s,
             ref: o
           }), u) : null
@@ -80,18 +80,18 @@ _global.SENTRY_RELEASE = {
         hO: () => s,
         sG: () => l
       });
-      var a = r(62229),
-        d = r(44853),
+      var d = r(62229),
+        a = r(44853),
         t = r(21222),
         n = r(73855),
         l = ["a", "button", "div", "form", "h2", "h3", "img", "input", "label", "li", "nav", "ol", "p", "span", "svg", "ul"].reduce(((e, o) => {
-          const r = a.forwardRef(((e, r) => {
+          const r = d.forwardRef(((e, r) => {
             const {
-              asChild: a,
-              ...d
-            } = e, l = a ? t.Slot : o;
+              asChild: d,
+              ...a
+            } = e, l = d ? t.Slot : o;
             return "undefined" != typeof window && (window[Symbol.for("radix-ui")] = !0), (0, n.jsx)(l, {
-              ...d,
+              ...a,
               ref: r
             })
           }));
@@ -102,15 +102,15 @@ _global.SENTRY_RELEASE = {
         }), {});
 
       function s(e, o) {
-        e && d.flushSync((() => e.dispatchEvent(o)))
+        e && a.flushSync((() => e.dispatchEvent(o)))
       }
     },
     92600: (e, o, r) => {
       r.d(o, {
-        N: () => d
+        N: () => a
       });
-      var a = r(62229),
-        d = Boolean(globalThis?.document) ? a.useLayoutEffect : () => {}
+      var d = r(62229),
+        a = Boolean(globalThis?.document) ? d.useLayoutEffect : () => {}
     }
   }
 ]);

@@ -18,7 +18,7 @@ _global.SENTRY_RELEASE = {
   [7344], {
     4066: (e, t, a) => {
       a.d(t, {
-        A: () => b,
+        A: () => y,
         K: () => m
       });
       var r = a(95966);
@@ -61,25 +61,25 @@ _global.SENTRY_RELEASE = {
           value: (0, r.makeVar)(!1)
         }),
         v = e => g(e),
-        w = (0, r.setMakeVarItem)({
+        b = (0, r.setMakeVarItem)({
           key: "userDataReactive",
           value: (0, r.makeVar)(null)
         }),
-        y = e => w(e),
-        b = () => {
+        w = e => b(e),
+        y = () => {
           const e = (0, r.useReactiveVar)(k),
             t = (0, r.useReactiveVar)(g),
             a = (0, r.useReactiveVar)(l),
             m = (0, r.useReactiveVar)(s),
-            b = (0, r.useReactiveVar)(i),
+            y = (0, r.useReactiveVar)(i),
             _ = (0, r.useReactiveVar)(p);
           return {
             charactersNeeded: e,
             crewsNeeded: t,
             currentCharId: a,
-            hasNotifications: b,
+            hasNotifications: y,
             navOpen: m,
-            userData: (0, r.useReactiveVar)(w),
+            userData: (0, r.useReactiveVar)(b),
             selectedCharacterTuple: _,
             jumpScMenuFocus: (0, r.useReactiveVar)(c),
             setCharactersNeeded: h,
@@ -88,7 +88,7 @@ _global.SENTRY_RELEASE = {
             setHasNotifications: u,
             setNavOpen: n,
             setSelectedCharacterTuple: f,
-            setUserData: y,
+            setUserData: w,
             setJumpScMenuFocus: o
           }
         }
@@ -107,7 +107,7 @@ _global.SENTRY_RELEASE = {
     85712: (e, t, a) => {
       a.d(t, {
         UN: () => l,
-        iR: () => b,
+        iR: () => y,
         h: () => p,
         Wx: () => _
       });
@@ -229,7 +229,7 @@ _global.SENTRY_RELEASE = {
             charactersNeeded: a,
             crewsNeeded: n,
             currentCharId: c
-          } = (0, f.A)(), o = (0, s.useRockstarToken)(), [i, u] = (0, r.useState)(), [l] = (0, s.useRockstarTokenReactive)(), d = (0, s.useRockstarTokenPing)(), [p, m] = (0, r.useState)(), [v, w] = (0, r.useState)(!1), y = void 0 === p, [b, _] = (0, r.useState)(1);
+          } = (0, f.A)(), o = (0, s.useRockstarToken)(), [i, u] = (0, r.useState)(), [l] = (0, s.useRockstarTokenReactive)(), d = (0, s.useRockstarTokenPing)(), [p, m] = (0, r.useState)(), [v, b] = (0, r.useState)(!1), w = void 0 === p, [y, _] = (0, r.useState)(1);
           return (0, r.useEffect)((() => {
             "gtao" !== a || i?.characters?.gtao || (u({
               ...i,
@@ -241,11 +241,11 @@ _global.SENTRY_RELEASE = {
               accountSynced: !1
             }), _((e => e + 1)))
           }), [n, i?.crews]), (0, r.useEffect)((() => {
-            0 === b && u({
+            0 === y && u({
               ...i,
               accountSynced: !0
             })
-          }), [b]), (0, r.useEffect)((() => {
+          }), [y]), (0, r.useEffect)((() => {
             t && l(t)
           }), [t]), (0, r.useEffect)((() => {
             "" !== o || d()
@@ -283,7 +283,7 @@ _global.SENTRY_RELEASE = {
                     token: l
                   })
                 } catch (e) {}
-              })(), w(!0)), !e && v && m(!1), e) {
+              })(), b(!0)), !e && v && m(!1), e) {
               const e = (e => {
                 let {
                   bearerToken: t
@@ -454,15 +454,15 @@ _global.SENTRY_RELEASE = {
           }), [JSON.stringify(i)]), {
             data: i,
             loggedIn: p,
-            loading: y
+            loading: w
           }
         },
-        w = {},
-        y = (0, s.setContextItem)({
-          context: (0, r.createContext)(w),
+        b = {},
+        w = (0, s.setContextItem)({
+          context: (0, r.createContext)(b),
           key: "userContext"
         }),
-        b = e => {
+        y = e => {
           let {
             children: t,
             privateToken: a
@@ -475,12 +475,12 @@ _global.SENTRY_RELEASE = {
               privateToken: a,
               hasProvider: !0
             })), [s]);
-          return (0, i.jsx)(y.Provider, {
+          return (0, i.jsx)(w.Provider, {
             value: n,
             children: t
           })
         },
-        _ = () => (0, r.useContext)(y)
+        _ = () => (0, r.useContext)(w)
     }
   }
 ]);

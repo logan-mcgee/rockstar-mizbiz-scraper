@@ -112,8 +112,8 @@ _global.SENTRY_RELEASE = {
             m = e.className,
             p = e.removeScrollBar,
             g = e.enabled,
-            y = e.shards,
-            b = e.sideCar,
+            b = e.shards,
+            y = e.sideCar,
             w = e.noIsolation,
             E = e.inert,
             _ = e.allowPinchZoom,
@@ -121,7 +121,7 @@ _global.SENTRY_RELEASE = {
             S = void 0 === C ? "div" : C,
             k = e.gapMode,
             M = (0, r.__rest)(e, ["forwardProps", "children", "className", "removeScrollBar", "enabled", "shards", "sideCar", "noIsolation", "inert", "allowPinchZoom", "as", "gapMode"]),
-            N = b,
+            N = y,
             R = function(e, n) {
               var t, r, a, d = (t = n || null, r = function(n) {
                 return e.forEach((function(e) {
@@ -161,7 +161,7 @@ _global.SENTRY_RELEASE = {
           return o.createElement(o.Fragment, null, g && o.createElement(N, {
             sideCar: l,
             removeScrollBar: p,
-            shards: y,
+            shards: b,
             noIsolation: w,
             inert: E,
             setCallbacks: f,
@@ -227,16 +227,16 @@ _global.SENTRY_RELEASE = {
         },
         g = !1;
       if ("undefined" != typeof window) try {
-        var y = Object.defineProperty({}, "passive", {
+        var b = Object.defineProperty({}, "passive", {
           get: function() {
             return g = !0, !0
           }
         });
-        window.addEventListener("test", y, y), window.removeEventListener("test", y, y)
+        window.addEventListener("test", b, b), window.removeEventListener("test", b, b)
       } catch (e) {
         g = !1
       }
-      var b = !!g && {
+      var y = !!g && {
           passive: !1
         },
         w = function(e, n) {
@@ -392,16 +392,16 @@ _global.SENTRY_RELEASE = {
               onScrollCapture: h,
               onWheelCapture: h,
               onTouchMoveCapture: m
-            }), document.addEventListener("wheel", l, b), document.addEventListener("touchmove", l, b), document.addEventListener("touchstart", f, b),
+            }), document.addEventListener("wheel", l, y), document.addEventListener("touchmove", l, y), document.addEventListener("touchstart", f, y),
             function() {
               x = x.filter((function(e) {
                 return e !== i
-              })), document.removeEventListener("wheel", l, b), document.removeEventListener("touchmove", l, b), document.removeEventListener("touchstart", f, b)
+              })), document.removeEventListener("wheel", l, y), document.removeEventListener("touchmove", l, y), document.removeEventListener("touchstart", f, y)
             }
         }), []);
         var g = e.removeScrollBar,
-          y = e.inert;
-        return o.createElement(o.Fragment, null, y ? o.createElement(i, {
+          b = e.inert;
+        return o.createElement(o.Fragment, null, b ? o.createElement(i, {
           styles: N(c)
         }) : null, g ? o.createElement(v.jp, {
           gapMode: e.gapMode

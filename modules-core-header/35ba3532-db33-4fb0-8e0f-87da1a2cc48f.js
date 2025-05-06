@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "932634eb-e36d-4e5c-ae7b-1ecbbfffb9db", e._sentryDebugIdIdentifier = "sentry-dbid-932634eb-e36d-4e5c-ae7b-1ecbbfffb9db")
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "35ba3532-db33-4fb0-8e0f-87da1a2cc48f", e._sentryDebugIdIdentifier = "sentry-dbid-35ba3532-db33-4fb0-8e0f-87da1a2cc48f")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -24,7 +24,7 @@ _global.SENTRY_RELEASE = {
       o.r(a);
       var n = o(95966),
         t = o(40347),
-        d = o(68111),
+        d = o(39082),
         r = o(73855);
       const {
         graphEnv: s
