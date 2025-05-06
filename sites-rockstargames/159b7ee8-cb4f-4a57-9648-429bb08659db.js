@@ -23,7 +23,7 @@ _global.SENTRY_RELEASE = {
         createLocation: () => y,
         createMemoryHistory: () => H,
         createPath: () => w,
-        locationsAreEqual: () => m,
+        locationsAreEqual: () => b,
         parsePath: () => g
       });
       var o = e(3709);
@@ -139,11 +139,11 @@ _global.SENTRY_RELEASE = {
         return e && (i.key = e), r ? i.pathname ? "/" !== i.pathname.charAt(0) && (i.pathname = a(i.pathname, r.pathname)) : i.pathname = r.pathname : i.pathname || (i.pathname = "/"), i
       }
 
-      function m(n, t) {
+      function b(n, t) {
         return n.pathname === t.pathname && n.search === t.search && n.hash === t.hash && n.key === t.key && f(n.state, t.state)
       }
 
-      function b() {
+      function m() {
         var n = null,
           t = [];
         return {
@@ -208,7 +208,7 @@ _global.SENTRY_RELEASE = {
           u = void 0 === s ? P : s,
           h = a.keyLength,
           g = void 0 === h ? 6 : h,
-          m = n.basename ? p(l(n.basename)) : "";
+          b = n.basename ? p(l(n.basename)) : "";
 
         function E(n) {
           var t = n || {},
@@ -216,13 +216,13 @@ _global.SENTRY_RELEASE = {
             o = t.state,
             r = window.location,
             i = r.pathname + r.search + r.hash;
-          return m && (i = v(i, m)), y(i, o, e)
+          return b && (i = v(i, b)), y(i, o, e)
         }
 
         function T() {
           return Math.random().toString(36).substr(2, g)
         }
-        var L = b();
+        var L = m();
 
         function _(n) {
           (0, o.A)(q, n), q.length = e.length, L.notifyListeners(q.location, q.action)
@@ -257,7 +257,7 @@ _global.SENTRY_RELEASE = {
           j = [H.key];
 
         function R(n) {
-          return m + w(n)
+          return b + w(n)
         }
 
         function U(n) {
@@ -399,10 +399,10 @@ _global.SENTRY_RELEASE = {
           var n = h(I());
           return f && (n = v(n, f)), y(n)
         }
-        var m = b();
+        var b = m();
 
         function k(n) {
-          (0, o.A)(F, n), F.length = t.length, m.notifyListeners(F.location, F.action)
+          (0, o.A)(F, n), F.length = t.length, b.notifyListeners(F.location, F.action)
         }
         var A = !1,
           x = null;
@@ -420,7 +420,7 @@ _global.SENTRY_RELEASE = {
               function(n) {
                 if (A) A = !1, k();
                 else {
-                  m.confirmTransitionTo(n, "POP", i, (function(t) {
+                  b.confirmTransitionTo(n, "POP", i, (function(t) {
                     t ? k({
                       action: "POP",
                       location: n
@@ -463,7 +463,7 @@ _global.SENTRY_RELEASE = {
             push: function(n, t) {
               var e = "PUSH",
                 o = y(n, void 0, void 0, F.location);
-              m.confirmTransitionTo(o, e, i, (function(n) {
+              b.confirmTransitionTo(o, e, i, (function(n) {
                 if (n) {
                   var t = w(o),
                     r = u(f + t);
@@ -485,7 +485,7 @@ _global.SENTRY_RELEASE = {
             replace: function(n, t) {
               var e = "REPLACE",
                 o = y(n, void 0, void 0, F.location);
-              m.confirmTransitionTo(o, e, i, (function(n) {
+              b.confirmTransitionTo(o, e, i, (function(n) {
                 if (n) {
                   var t = w(o),
                     r = u(f + t);
@@ -506,14 +506,14 @@ _global.SENTRY_RELEASE = {
             },
             block: function(n) {
               void 0 === n && (n = !1);
-              var t = m.setPrompt(n);
+              var t = b.setPrompt(n);
               return D || (B(1), D = !0),
                 function() {
                   return D && (D = !1, B(-1)), t()
                 }
             },
             listen: function(n) {
-              var t = m.appendListener(n);
+              var t = b.appendListener(n);
               return B(1),
                 function() {
                   B(-1), t()
@@ -537,10 +537,10 @@ _global.SENTRY_RELEASE = {
           c = void 0 === a ? 0 : a,
           f = t.keyLength,
           s = void 0 === f ? 6 : f,
-          u = b();
+          u = m();
 
         function d(n) {
-          (0, o.A)(m, n), m.length = m.entries.length, u.notifyListeners(m.location, m.action)
+          (0, o.A)(b, n), b.length = b.entries.length, u.notifyListeners(b.location, b.action)
         }
 
         function l() {
@@ -553,8 +553,8 @@ _global.SENTRY_RELEASE = {
           p = w;
 
         function g(n) {
-          var t = M(m.index + n, 0, m.entries.length - 1),
-            o = m.entries[t];
+          var t = M(b.index + n, 0, b.entries.length - 1),
+            o = b.entries[t];
           u.confirmTransitionTo(o, "POP", e, (function(n) {
             n ? d({
               action: "POP",
@@ -563,7 +563,7 @@ _global.SENTRY_RELEASE = {
             }) : d()
           }))
         }
-        var m = {
+        var b = {
           length: v.length,
           action: "POP",
           location: v[h],
@@ -572,11 +572,11 @@ _global.SENTRY_RELEASE = {
           createHref: p,
           push: function(n, t) {
             var o = "PUSH",
-              r = y(n, t, l(), m.location);
+              r = y(n, t, l(), b.location);
             u.confirmTransitionTo(r, o, e, (function(n) {
               if (n) {
-                var t = m.index + 1,
-                  e = m.entries.slice(0);
+                var t = b.index + 1,
+                  e = b.entries.slice(0);
                 e.length > t ? e.splice(t, e.length - t, r) : e.push(r), d({
                   action: o,
                   location: r,
@@ -588,9 +588,9 @@ _global.SENTRY_RELEASE = {
           },
           replace: function(n, t) {
             var o = "REPLACE",
-              r = y(n, t, l(), m.location);
+              r = y(n, t, l(), b.location);
             u.confirmTransitionTo(r, o, e, (function(n) {
-              n && (m.entries[m.index] = r, d({
+              n && (b.entries[b.index] = r, d({
                 action: o,
                 location: r
               }))
@@ -604,8 +604,8 @@ _global.SENTRY_RELEASE = {
             g(1)
           },
           canGo: function(n) {
-            var t = m.index + n;
-            return t >= 0 && t < m.entries.length
+            var t = b.index + n;
+            return t >= 0 && t < b.entries.length
           },
           block: function(n) {
             return void 0 === n && (n = !1), u.setPrompt(n)
@@ -614,7 +614,7 @@ _global.SENTRY_RELEASE = {
             return u.appendListener(n)
           }
         };
-        return m
+        return b
       }
     },
     3709: (n, t, e) => {

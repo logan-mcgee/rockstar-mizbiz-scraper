@@ -25,13 +25,13 @@ _global.SENTRY_RELEASE = {
           },
           fn: function(e, a) {
             var t = String(e),
-              d = t.split(/[ce]/),
-              n = d[1] || 0,
-              o = String(n ? Number(d[0]) * Math.pow(10, n) : t).split("."),
-              l = o[0],
-              r = !o[1],
+              n = t.split(/[ce]/),
+              o = n[1] || 0,
+              d = String(o ? Number(n[0]) * Math.pow(10, o) : t).split("."),
+              l = d[0],
+              r = !d[1],
               s = l.slice(-6);
-            return a ? 1 == e ? "one" : "other" : e >= 0 && e < 2 ? "one" : 0 == n && 0 != l && 0 == s && r || n < 0 || n > 5 ? "many" : "other"
+            return a ? 1 == e ? "one" : "other" : e >= 0 && e < 2 ? "one" : 0 == o && 0 != l && 0 == s && r || o < 0 || o > 5 ? "many" : "other"
           }
         },
         locale: "fr"

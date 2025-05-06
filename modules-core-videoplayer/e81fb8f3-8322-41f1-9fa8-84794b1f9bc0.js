@@ -31,10 +31,10 @@ _global.SENTRY_RELEASE = {
         for (var r = {}, n = [], a = 0; a < t.length; a++) {
           var h = t[a],
             p = o.base ? h[0] + o.base : h[0],
-            d = r[p] || 0,
-            l = "".concat(p, " ").concat(d);
-          r[p] = d + 1;
-          var u = i(l),
+            l = r[p] || 0,
+            d = "".concat(p, " ").concat(l);
+          r[p] = l + 1;
+          var u = i(d),
             c = {
               css: h[1],
               media: h[2],
@@ -46,12 +46,12 @@ _global.SENTRY_RELEASE = {
           else {
             var f = s(c, o);
             o.byIndex = a, e.splice(a, 0, {
-              identifier: l,
+              identifier: d,
               updater: f,
               references: 1
             })
           }
-          n.push(l)
+          n.push(d)
         }
         return n
       }
@@ -75,8 +75,8 @@ _global.SENTRY_RELEASE = {
             e[a].references--
           }
           for (var h = o(t, s), p = 0; p < r.length; p++) {
-            var d = i(r[p]);
-            0 === e[d].references && (e[d].updater(), e.splice(d, 1))
+            var l = i(r[p]);
+            0 === e[l].references && (e[l].updater(), e.splice(l, 1))
           }
           r = h
         }
@@ -169,8 +169,8 @@ _global.SENTRY_RELEASE = {
               null != h && (n[h] = !0)
             }
           for (var p = 0; p < t.length; p++) {
-            var d = [].concat(t[p]);
-            o && n[d[0]] || (void 0 !== r && (void 0 === d[5] || (d[1] = "@layer".concat(d[5].length > 0 ? " ".concat(d[5]) : "", " {").concat(d[1], "}")), d[5] = r), i && (d[2] ? (d[1] = "@media ".concat(d[2], " {").concat(d[1], "}"), d[2] = i) : d[2] = i), s && (d[4] ? (d[1] = "@supports (".concat(d[4], ") {").concat(d[1], "}"), d[4] = s) : d[4] = "".concat(s)), e.push(d))
+            var l = [].concat(t[p]);
+            o && n[l[0]] || (void 0 !== r && (void 0 === l[5] || (l[1] = "@layer".concat(l[5].length > 0 ? " ".concat(l[5]) : "", " {").concat(l[1], "}")), l[5] = r), i && (l[2] ? (l[1] = "@media ".concat(l[2], " {").concat(l[1], "}"), l[2] = i) : l[2] = i), s && (l[4] ? (l[1] = "@supports (".concat(l[4], ") {").concat(l[1], "}"), l[4] = s) : l[4] = "".concat(s)), e.push(l))
           }
         }, e
       }
@@ -236,12 +236,12 @@ _global.SENTRY_RELEASE = {
           left: "0px",
           cursor: "col-resize"
         },
-        d = {
+        l = {
           width: "20px",
           height: "20px",
           position: "absolute"
         },
-        l = {
+        d = {
           top: a(a({}, h), {
             top: "-5px"
           }),
@@ -256,22 +256,22 @@ _global.SENTRY_RELEASE = {
           left: a(a({}, p), {
             left: "-5px"
           }),
-          topRight: a(a({}, d), {
+          topRight: a(a({}, l), {
             right: "-10px",
             top: "-10px",
             cursor: "ne-resize"
           }),
-          bottomRight: a(a({}, d), {
+          bottomRight: a(a({}, l), {
             right: "-10px",
             bottom: "-10px",
             cursor: "se-resize"
           }),
-          bottomLeft: a(a({}, d), {
+          bottomLeft: a(a({}, l), {
             left: "-10px",
             bottom: "-10px",
             cursor: "sw-resize"
           }),
-          topLeft: a(a({}, d), {
+          topLeft: a(a({}, l), {
             left: "-10px",
             top: "-10px",
             cursor: "nw-resize"
@@ -292,7 +292,7 @@ _global.SENTRY_RELEASE = {
               style: a(a({
                 position: "absolute",
                 userSelect: "none"
-              }, l[this.props.direction]), this.props.replaceStyles || {}),
+              }, d[this.props.direction]), this.props.replaceStyles || {}),
               onMouseDown: this.onMouseDown,
               onTouchStart: this.onTouchStart
             }, this.props.children)
@@ -521,13 +521,13 @@ _global.SENTRY_RELEASE = {
               a = this.props,
               h = a.lockAspectRatio,
               p = a.lockAspectRatioExtraHeight,
-              d = a.lockAspectRatioExtraWidth,
-              l = n.width,
+              l = a.lockAspectRatioExtraWidth,
+              d = n.width,
               u = n.height,
               c = p || 0,
-              f = d || 0;
-            return b("right", r) && (l = n.width + (t - n.x) * o / i, h && (u = (l - f) / this.ratio + c)), b("left", r) && (l = n.width - (t - n.x) * o / i, h && (u = (l - f) / this.ratio + c)), b("bottom", r) && (u = n.height + (e - n.y) * o / i, h && (l = (u - c) * this.ratio + f)), b("top", r) && (u = n.height - (e - n.y) * o / i, h && (l = (u - c) * this.ratio + f)), {
-              newWidth: l,
+              f = l || 0;
+            return b("right", r) && (d = n.width + (t - n.x) * o / i, h && (u = (d - f) / this.ratio + c)), b("left", r) && (d = n.width - (t - n.x) * o / i, h && (u = (d - f) / this.ratio + c)), b("bottom", r) && (u = n.height + (e - n.y) * o / i, h && (d = (u - c) * this.ratio + f)), b("top", r) && (u = n.height - (e - n.y) * o / i, h && (d = (u - c) * this.ratio + f)), {
+              newWidth: d,
               newHeight: u
             }
           }, e.prototype.calculateNewSizeFromAspectRatio = function(t, e, i, o) {
@@ -537,21 +537,21 @@ _global.SENTRY_RELEASE = {
               a = s.lockAspectRatioExtraWidth,
               h = void 0 === o.width ? 10 : o.width,
               p = void 0 === i.width || i.width < 0 ? t : i.width,
-              d = void 0 === o.height ? 10 : o.height,
-              l = void 0 === i.height || i.height < 0 ? e : i.height,
+              l = void 0 === o.height ? 10 : o.height,
+              d = void 0 === i.height || i.height < 0 ? e : i.height,
               u = n || 0,
               c = a || 0;
             if (r) {
-              var f = (d - u) * this.ratio + c,
-                g = (l - u) * this.ratio + c,
+              var f = (l - u) * this.ratio + c,
+                g = (d - u) * this.ratio + c,
                 w = (h - c) / this.ratio + u,
                 b = (p - c) / this.ratio + u,
                 m = Math.max(h, f),
                 y = Math.min(p, g),
-                z = Math.max(d, w),
-                x = Math.min(l, b);
+                z = Math.max(l, w),
+                x = Math.min(d, b);
               t = v(t, m, y), e = v(e, z, x)
-            } else t = v(t, h, p), e = v(e, d, l);
+            } else t = v(t, h, p), e = v(e, l, d);
             return {
               newWidth: t,
               newHeight: e
@@ -626,11 +626,11 @@ _global.SENTRY_RELEASE = {
                 a = i.minHeight,
                 h = m(t) ? t.touches[0].clientX : t.clientX,
                 p = m(t) ? t.touches[0].clientY : t.clientY,
-                d = this.state,
-                l = d.direction,
-                u = d.original,
-                c = d.width,
-                f = d.height,
+                l = this.state,
+                d = l.direction,
+                u = l.original,
+                c = l.width,
+                f = l.height,
                 g = this.getParentSize(),
                 v = function(t, e, i, o, s, r, n) {
                   return o = x(o, t.width, e, i), s = x(s, t.height, e, i), r = x(r, t.width, e, i), n = x(n, t.height, e, i), {
@@ -670,7 +670,7 @@ _global.SENTRY_RELEASE = {
               };
               "row" === this.flexDir ? k.flexBasis = k.width : "column" === this.flexDir && (k.flexBasis = k.height), (0, r.flushSync)((function() {
                 e.setState(k)
-              })), this.props.onResize && this.props.onResize(t, l, this.resizable, N)
+              })), this.props.onResize && this.props.onResize(t, d, this.resizable, N)
             }
           }, e.prototype.onMouseUp = function(t) {
             var e = this.state,
@@ -784,15 +784,15 @@ _global.SENTRY_RELEASE = {
       function p(t, e, i) {
         var o, r = {},
           p = null,
-          d = null;
-        for (o in void 0 !== i && (p = "" + i), void 0 !== e.key && (p = "" + e.key), void 0 !== e.ref && (d = e.ref), e) n.call(e, o) && !h.hasOwnProperty(o) && (r[o] = e[o]);
+          l = null;
+        for (o in void 0 !== i && (p = "" + i), void 0 !== e.key && (p = "" + e.key), void 0 !== e.ref && (l = e.ref), e) n.call(e, o) && !h.hasOwnProperty(o) && (r[o] = e[o]);
         if (t && t.defaultProps)
           for (o in e = t.defaultProps) void 0 === r[o] && (r[o] = e[o]);
         return {
           $$typeof: s,
           type: t,
           key: p,
-          ref: d,
+          ref: l,
           props: r,
           _owner: a.current
         }

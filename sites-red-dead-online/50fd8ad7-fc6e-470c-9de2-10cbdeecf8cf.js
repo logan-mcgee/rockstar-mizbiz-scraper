@@ -52,14 +52,14 @@ _global.SENTRY_RELEASE = {
           u = a.getDefaultLocale,
           s = a.getInternalSlots,
           f = (0, n.CanonicalizeLocaleList)(t),
-          d = Object.create(null),
-          p = (0, n.CoerceOptionsToObject)(r),
+          p = Object.create(null),
+          d = (0, n.CoerceOptionsToObject)(r),
           y = s(e);
         y.initializedPluralRules = !0;
-        var _ = (0, n.GetOption)(p, "localeMatcher", "string", ["best fit", "lookup"], "best fit");
-        d.localeMatcher = _;
-        var b = (0, o.ResolveLocale)(i, f, d, l, c, u);
-        return y.locale = b.locale, y.type = (0, n.GetOption)(p, "type", "string", ["cardinal", "ordinal"], "cardinal"), (0, n.SetNumberFormatDigitOptions)(y, p, 0, 3, "standard"), e
+        var _ = (0, n.GetOption)(d, "localeMatcher", "string", ["best fit", "lookup"], "best fit");
+        p.localeMatcher = _;
+        var b = (0, o.ResolveLocale)(i, f, p, l, c, u);
+        return y.locale = b.locale, y.type = (0, n.GetOption)(d, "type", "string", ["cardinal", "ordinal"], "cardinal"), (0, n.SetNumberFormatDigitOptions)(y, d, 0, 3, "standard"), e
       };
       var n = r(50721),
         o = r(85254)
@@ -219,14 +219,14 @@ _global.SENTRY_RELEASE = {
         __importDefault: () => x,
         __importStar: () => T,
         __makeTemplateObject: () => E,
-        __metadata: () => p,
+        __metadata: () => d,
         __param: () => c,
         __propKey: () => f,
         __read: () => g,
         __rest: () => i,
         __rewriteRelativeImportExtension: () => C,
         __runInitializers: () => s,
-        __setFunctionName: () => d,
+        __setFunctionName: () => p,
         __spread: () => m,
         __spreadArray: () => O,
         __spreadArrays: () => w,
@@ -290,15 +290,15 @@ _global.SENTRY_RELEASE = {
           if (void 0 !== e && "function" != typeof e) throw new TypeError("Function expected");
           return e
         }
-        for (var l, c = n.kind, u = "getter" === c ? "get" : "setter" === c ? "set" : "value", s = !t && e ? n.static ? e : e.prototype : null, f = t || (s ? Object.getOwnPropertyDescriptor(s, n.name) : {}), d = !1, p = r.length - 1; p >= 0; p--) {
+        for (var l, c = n.kind, u = "getter" === c ? "get" : "setter" === c ? "set" : "value", s = !t && e ? n.static ? e : e.prototype : null, f = t || (s ? Object.getOwnPropertyDescriptor(s, n.name) : {}), p = !1, d = r.length - 1; d >= 0; d--) {
           var y = {};
           for (var _ in n) y[_] = "access" === _ ? {} : n[_];
           for (var _ in n.access) y.access[_] = n.access[_];
           y.addInitializer = function(e) {
-            if (d) throw new TypeError("Cannot add initializers after decoration has completed");
+            if (p) throw new TypeError("Cannot add initializers after decoration has completed");
             a.push(i(e || null))
           };
-          var b = (0, r[p])("accessor" === c ? {
+          var b = (0, r[d])("accessor" === c ? {
             get: f.get,
             set: f.set
           } : f[u], y);
@@ -308,7 +308,7 @@ _global.SENTRY_RELEASE = {
             (l = i(b.get)) && (f.get = l), (l = i(b.set)) && (f.set = l), (l = i(b.init)) && o.unshift(l)
           } else(l = i(b)) && ("field" === c ? o.unshift(l) : f[u] = l)
         }
-        s && Object.defineProperty(s, n.name, f), d = !0
+        s && Object.defineProperty(s, n.name, f), p = !0
       }
 
       function s(e, t, r) {
@@ -320,14 +320,14 @@ _global.SENTRY_RELEASE = {
         return "symbol" == typeof e ? e : "".concat(e)
       }
 
-      function d(e, t, r) {
+      function p(e, t, r) {
         return "symbol" == typeof t && (t = t.description ? "[".concat(t.description, "]") : ""), Object.defineProperty(e, "name", {
           configurable: !0,
           value: r ? "".concat(r, " ", t) : t
         })
       }
 
-      function p(e, t) {
+      function d(e, t) {
         if ("object" == typeof Reflect && "function" == typeof Reflect.metadata) return Reflect.metadata(e, t)
       }
 
@@ -716,8 +716,8 @@ _global.SENTRY_RELEASE = {
         __esDecorate: u,
         __runInitializers: s,
         __propKey: f,
-        __setFunctionName: d,
-        __metadata: p,
+        __setFunctionName: p,
+        __metadata: d,
         __awaiter: y,
         __generator: _,
         __createBinding: b,

@@ -91,16 +91,16 @@ _global.SENTRY_RELEASE = {
             return n && e(t.prototype, n), A && e(t, A), t
           }
         }(),
-        o = c(n(62229)),
-        i = c(n(72817)),
-        a = c(n(14332)),
-        u = c(n(85177)),
-        l = c(n(94613)),
-        s = c(n(74844)),
-        d = c(n(54762)),
-        f = n(71319);
+        o = f(n(62229)),
+        i = f(n(72817)),
+        a = f(n(14332)),
+        u = f(n(85177)),
+        l = f(n(94613)),
+        s = f(n(74844)),
+        d = f(n(54762)),
+        c = n(71319);
 
-      function c(e) {
+      function f(e) {
         return e && e.__esModule ? e : {
           default: e
         }
@@ -166,23 +166,23 @@ _global.SENTRY_RELEASE = {
               i = t.onReady,
               a = this._parent,
               s = this._child,
-              c = (0, f.innerWidth)(a),
-              g = (0, f.innerHeight)(a);
+              f = (0, c.innerWidth)(a),
+              g = (0, c.innerHeight)(a);
             if (g <= 0 || isNaN(g)) console.warn("Can not process element without height. Make sure the element is displayed and has a static height.");
-            else if (c <= 0 || isNaN(c)) console.warn("Can not process element without width. Make sure the element is displayed and has a static width.");
+            else if (f <= 0 || isNaN(f)) console.warn("Can not process element without width. Make sure the element is displayed and has a static width.");
             else {
               var y = (0, d.default)();
               this.pid = y;
-              var w = function() {
+              var b = function() {
                   return y !== e.pid
                 },
-                b = "multi" === r ? function() {
+                w = "multi" === r ? function() {
                   return h(s, g)
                 } : function() {
-                  return p(s, c)
+                  return p(s, f)
                 },
                 m = "multi" === r ? function() {
-                  return p(s, c)
+                  return p(s, f)
                 } : function() {
                   return h(s, g)
                 },
@@ -195,18 +195,18 @@ _global.SENTRY_RELEASE = {
                 return (0, l.default)((function() {
                   return B <= Y
                 }), (function(t) {
-                  if (w()) return t(!0);
+                  if (b()) return t(!0);
                   v = parseInt((B + Y) / 2, 10), e.setState({
                     fontSize: v
                   }, (function() {
-                    return w() ? t(!0) : (b() ? B = v + 1 : Y = v - 1, t())
+                    return b() ? t(!0) : (w() ? B = v + 1 : Y = v - 1, t())
                   }))
                 }), t)
               }, function(t) {
                 return "single" === r && o || m() ? t() : (B = n, Y = v, (0, l.default)((function() {
                   return B < Y
                 }), (function(t) {
-                  if (w()) return t(!0);
+                  if (b()) return t(!0);
                   v = parseInt((B + Y) / 2, 10), e.setState({
                     fontSize: v
                   }, (function() {
@@ -214,12 +214,12 @@ _global.SENTRY_RELEASE = {
                   }))
                 }), t))
               }, function(t) {
-                if (v = Math.min(B, Y), v = Math.max(v, n), v = Math.min(v, A), v = Math.max(v, 0), w()) return t(!0);
+                if (v = Math.min(B, Y), v = Math.max(v, n), v = Math.min(v, A), v = Math.max(v, 0), b()) return t(!0);
                 e.setState({
                   fontSize: v
                 }, t)
               }], (function(t) {
-                t || w() || e.setState({
+                t || b() || e.setState({
                   ready: !0
                 }, (function() {
                   return i(v)
@@ -244,22 +244,22 @@ _global.SENTRY_RELEASE = {
               l = this.state,
               s = l.fontSize,
               d = l.ready,
-              f = A({}, i, {
+              c = A({}, i, {
                 fontSize: s
               }),
-              c = {
+              f = {
                 display: d ? "block" : "inline-block"
               };
-            return "single" === a && (c.whiteSpace = "nowrap"), o.default.createElement("div", A({
+            return "single" === a && (f.whiteSpace = "nowrap"), o.default.createElement("div", A({
               ref: function(t) {
                 return e._parent = t
               },
-              style: f
+              style: c
             }, u), o.default.createElement("div", {
               ref: function(t) {
                 return e._child = t
               },
-              style: c
+              style: f
             }, r && "function" == typeof n ? d ? n(r) : r : n))
           }
         }]), t

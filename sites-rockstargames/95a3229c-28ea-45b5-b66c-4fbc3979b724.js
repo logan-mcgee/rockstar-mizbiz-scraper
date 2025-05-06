@@ -31,15 +31,15 @@ _global.SENTRY_RELEASE = {
           n = o.transformKey || i,
           h = {};
         return function t(i, a, p) {
-          p = p || 1, Object.keys(i).forEach((function(l) {
-            const d = i[l],
-              u = o.safe && Array.isArray(d),
-              c = Object.prototype.toString.call(d),
-              f = e(d),
-              g = "[object Object]" === c || "[object Array]" === c,
-              b = a ? a + s + n(l) : n(l);
-            if (!u && !f && g && Object.keys(d).length && (!o.maxDepth || p < r)) return t(d, b, p + 1);
-            h[b] = d
+          p = p || 1, Object.keys(i).forEach((function(d) {
+            const l = i[d],
+              c = o.safe && Array.isArray(l),
+              u = Object.prototype.toString.call(l),
+              f = e(l),
+              g = "[object Object]" === u || "[object Array]" === u,
+              b = a ? a + s + n(d) : n(d);
+            if (!c && !f && g && Object.keys(l).length && (!o.maxDepth || p < r)) return t(l, b, p + 1);
+            h[b] = l
           }))
         }(t), h
       }
@@ -50,7 +50,7 @@ _global.SENTRY_RELEASE = {
           p = {};
         if (e(s) || "[object Object]" !== Object.prototype.toString.call(s)) return s;
 
-        function l(t) {
+        function d(t) {
           const e = Number(t);
           return isNaN(e) || -1 !== t.indexOf(".") || r.object ? t : e
         }
@@ -67,17 +67,17 @@ _global.SENTRY_RELEASE = {
           }(e, t, o(s[e], r))
         }), {}), Object.keys(s).forEach((function(e) {
           const i = e.split(n).map(a);
-          let o = l(i.shift()),
-            d = l(i[0]),
-            u = p;
-          for (; void 0 !== d;) {
+          let o = d(i.shift()),
+            l = d(i[0]),
+            c = p;
+          for (; void 0 !== l;) {
             if ("__proto__" === o) return;
-            const t = Object.prototype.toString.call(u[o]),
+            const t = Object.prototype.toString.call(c[o]),
               e = "[object Object]" === t || "[object Array]" === t;
-            if (!h && !e && void 0 !== u[o]) return;
-            (h && !e || !h && null == u[o]) && (u[o] = "number" != typeof d || r.object ? {} : []), u = u[o], i.length > 0 && (o = l(i.shift()), d = l(i[0]))
+            if (!h && !e && void 0 !== c[o]) return;
+            (h && !e || !h && null == c[o]) && (c[o] = "number" != typeof l || r.object ? {} : []), c = c[o], i.length > 0 && (o = d(i.shift()), l = d(i[0]))
           }
-          u[o] = t(s[e], r)
+          c[o] = t(s[e], r)
         })), p
       }
     },
@@ -121,12 +121,12 @@ _global.SENTRY_RELEASE = {
           left: "0px",
           cursor: "col-resize"
         },
-        l = {
+        d = {
           width: "20px",
           height: "20px",
           position: "absolute"
         },
-        d = {
+        l = {
           top: h(h({}, a), {
             top: "-5px"
           }),
@@ -141,28 +141,28 @@ _global.SENTRY_RELEASE = {
           left: h(h({}, p), {
             left: "-5px"
           }),
-          topRight: h(h({}, l), {
+          topRight: h(h({}, d), {
             right: "-10px",
             top: "-10px",
             cursor: "ne-resize"
           }),
-          bottomRight: h(h({}, l), {
+          bottomRight: h(h({}, d), {
             right: "-10px",
             bottom: "-10px",
             cursor: "se-resize"
           }),
-          bottomLeft: h(h({}, l), {
+          bottomLeft: h(h({}, d), {
             left: "-10px",
             bottom: "-10px",
             cursor: "sw-resize"
           }),
-          topLeft: h(h({}, l), {
+          topLeft: h(h({}, d), {
             left: "-10px",
             top: "-10px",
             cursor: "nw-resize"
           })
         },
-        u = function(t) {
+        c = function(t) {
           function e() {
             var e = null !== t && t.apply(this, arguments) || this;
             return e.onMouseDown = function(t) {
@@ -177,13 +177,13 @@ _global.SENTRY_RELEASE = {
               style: h(h({
                 position: "absolute",
                 userSelect: "none"
-              }, d[this.props.direction]), this.props.replaceStyles || {}),
+              }, l[this.props.direction]), this.props.replaceStyles || {}),
               onMouseDown: this.onMouseDown,
               onTouchStart: this.onTouchStart
             }, this.props.children)
           }, e
         }(s.PureComponent),
-        c = function() {
+        u = function() {
           var t = function(e, i) {
             return t = Object.setPrototypeOf || {
               __proto__: []
@@ -287,7 +287,7 @@ _global.SENTRY_RELEASE = {
             flexBasis: void 0
           }, i.onResizeStart = i.onResizeStart.bind(i), i.onMouseMove = i.onMouseMove.bind(i), i.onMouseUp = i.onMouseUp.bind(i), i
         }
-        c(e, t), Object.defineProperty(e.prototype, "parentNode", {
+        u(e, t), Object.defineProperty(e.prototype, "parentNode", {
           get: function() {
             return this.resizable ? this.resizable.parentNode : null
           },
@@ -406,14 +406,14 @@ _global.SENTRY_RELEASE = {
             h = this.props,
             a = h.lockAspectRatio,
             p = h.lockAspectRatioExtraHeight,
-            l = h.lockAspectRatioExtraWidth,
-            d = n.width,
-            u = n.height,
-            c = p || 0,
-            f = l || 0;
-          return y("right", r) && (d = n.width + (t - n.x) * o / i, a && (u = (d - f) / this.ratio + c)), y("left", r) && (d = n.width - (t - n.x) * o / i, a && (u = (d - f) / this.ratio + c)), y("bottom", r) && (u = n.height + (e - n.y) * o / i, a && (d = (u - c) * this.ratio + f)), y("top", r) && (u = n.height - (e - n.y) * o / i, a && (d = (u - c) * this.ratio + f)), {
-            newWidth: d,
-            newHeight: u
+            d = h.lockAspectRatioExtraWidth,
+            l = n.width,
+            c = n.height,
+            u = p || 0,
+            f = d || 0;
+          return y("right", r) && (l = n.width + (t - n.x) * o / i, a && (c = (l - f) / this.ratio + u)), y("left", r) && (l = n.width - (t - n.x) * o / i, a && (c = (l - f) / this.ratio + u)), y("bottom", r) && (c = n.height + (e - n.y) * o / i, a && (l = (c - u) * this.ratio + f)), y("top", r) && (c = n.height - (e - n.y) * o / i, a && (l = (c - u) * this.ratio + f)), {
+            newWidth: l,
+            newHeight: c
           }
         }, e.prototype.calculateNewSizeFromAspectRatio = function(t, e, i, o) {
           var s = this.props,
@@ -422,21 +422,21 @@ _global.SENTRY_RELEASE = {
             h = s.lockAspectRatioExtraWidth,
             a = void 0 === o.width ? 10 : o.width,
             p = void 0 === i.width || i.width < 0 ? t : i.width,
-            l = void 0 === o.height ? 10 : o.height,
-            d = void 0 === i.height || i.height < 0 ? e : i.height,
-            u = n || 0,
-            c = h || 0;
+            d = void 0 === o.height ? 10 : o.height,
+            l = void 0 === i.height || i.height < 0 ? e : i.height,
+            c = n || 0,
+            u = h || 0;
           if (r) {
-            var f = (l - u) * this.ratio + c,
-              g = (d - u) * this.ratio + c,
-              w = (a - c) / this.ratio + u,
-              y = (p - c) / this.ratio + u,
+            var f = (d - c) * this.ratio + u,
+              g = (l - c) * this.ratio + u,
+              w = (a - u) / this.ratio + c,
+              y = (p - u) / this.ratio + c,
               v = Math.max(a, f),
               m = Math.min(p, g),
-              z = Math.max(l, w),
-              x = Math.min(d, y);
+              z = Math.max(d, w),
+              x = Math.min(l, y);
             t = b(t, v, m), e = b(e, z, x)
-          } else t = b(t, a, p), e = b(e, l, d);
+          } else t = b(t, a, p), e = b(e, d, l);
           return {
             newWidth: t,
             newHeight: e
@@ -511,11 +511,11 @@ _global.SENTRY_RELEASE = {
               h = i.minHeight,
               a = v(t) ? t.touches[0].clientX : t.clientX,
               p = v(t) ? t.touches[0].clientY : t.clientY,
-              l = this.state,
-              d = l.direction,
-              u = l.original,
-              c = l.width,
-              f = l.height,
+              d = this.state,
+              l = d.direction,
+              c = d.original,
+              u = d.width,
+              f = d.height,
               g = this.getParentSize(),
               b = function(t, e, i, o, s, r, n) {
                 return o = x(o, t.width, e, i), s = x(s, t.height, e, i), r = x(r, t.width, e, i), n = x(n, t.height, e, i), {
@@ -545,17 +545,17 @@ _global.SENTRY_RELEASE = {
               S = 0 === j || Math.abs(E - S) <= j ? E : S, z = 0 === j || Math.abs(M - z) <= j ? M : z
             }
             var _ = {
-              width: S - u.width,
-              height: z - u.height
+              width: S - c.width,
+              height: z - c.height
             };
-            c && "string" == typeof c && (c.endsWith("%") ? S = S / g.width * 100 + "%" : c.endsWith("vw") ? S = S / this.window.innerWidth * 100 + "vw" : c.endsWith("vh") && (S = S / this.window.innerHeight * 100 + "vh")), f && "string" == typeof f && (f.endsWith("%") ? z = z / g.height * 100 + "%" : f.endsWith("vw") ? z = z / this.window.innerWidth * 100 + "vw" : f.endsWith("vh") && (z = z / this.window.innerHeight * 100 + "vh"));
+            u && "string" == typeof u && (u.endsWith("%") ? S = S / g.width * 100 + "%" : u.endsWith("vw") ? S = S / this.window.innerWidth * 100 + "vw" : u.endsWith("vh") && (S = S / this.window.innerHeight * 100 + "vh")), f && "string" == typeof f && (f.endsWith("%") ? z = z / g.height * 100 + "%" : f.endsWith("vw") ? z = z / this.window.innerWidth * 100 + "vw" : f.endsWith("vh") && (z = z / this.window.innerHeight * 100 + "vh"));
             var k = {
               width: this.createSizeForCssProperty(S, "width"),
               height: this.createSizeForCssProperty(z, "height")
             };
             "row" === this.flexDir ? k.flexBasis = k.width : "column" === this.flexDir && (k.flexBasis = k.height), (0, r.flushSync)((function() {
               e.setState(k)
-            })), this.props.onResize && this.props.onResize(t, d, this.resizable, _)
+            })), this.props.onResize && this.props.onResize(t, l, this.resizable, _)
           }
         }, e.prototype.onMouseUp = function(t) {
           var e = this.state,
@@ -590,7 +590,7 @@ _global.SENTRY_RELEASE = {
             a = e.handleComponent;
           if (!i) return null;
           var p = Object.keys(i).map((function(e) {
-            return !1 !== i[e] ? s.createElement(u, {
+            return !1 !== i[e] ? s.createElement(c, {
               key: e,
               direction: e,
               onResizeStart: t.onResizeStart,

@@ -16,13 +16,13 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [1235], {
-    51235: (e, a, s) => {
-      s.r(a), s.d(a, {
-        default: () => f
+    51235: (e, a, d) => {
+      d.r(a), d.d(a, {
+        default: () => t
       });
-      var d = s(6274),
-        o = s(73855);
-      const f = () => (0, o.jsx)(d.A, {
+      var s = d(6274),
+        o = d(73855);
+      const t = () => (0, o.jsx)(s.A, {
         jsonType: "cookies",
         titleKey: "Cookie Policy"
       })

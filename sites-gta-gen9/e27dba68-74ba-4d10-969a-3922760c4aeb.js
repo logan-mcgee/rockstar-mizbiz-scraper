@@ -27,8 +27,8 @@ _global.SENTRY_RELEASE = {
         d = e.n(o),
         s = e(27835),
         l = e.n(s),
-        c = e(17529),
-        g = e.n(c),
+        g = e(17529),
+        c = e.n(g),
         m = e(72162),
         p = e.n(m),
         h = e(82510),
@@ -37,7 +37,7 @@ _global.SENTRY_RELEASE = {
         v = e.n(u),
         x = e(32318),
         b = {};
-      b.styleTagTransform = v(), b.setAttributes = p(), b.insert = g().bind(null, "head"), b.domAPI = l(), b.insertStyleElement = f(), d()(x.A, b);
+      b.styleTagTransform = v(), b.setAttributes = p(), b.insert = c().bind(null, "head"), b.domAPI = l(), b.insertStyleElement = f(), d()(x.A, b);
       const w = x.A && x.A.locals ? x.A.locals : void 0;
       var y = e(73855);
       const k = n => {
@@ -105,7 +105,7 @@ _global.SENTRY_RELEASE = {
         M = e(95966),
         N = e(68061),
         _ = {};
-      _.styleTagTransform = v(), _.setAttributes = p(), _.insert = g().bind(null, "head"), _.domAPI = l(), _.insertStyleElement = f(), d()(N.A, _);
+      _.styleTagTransform = v(), _.setAttributes = p(), _.insert = c().bind(null, "head"), _.domAPI = l(), _.insertStyleElement = f(), d()(N.A, _);
       const j = N.A && N.A.locals ? N.A.locals : void 0,
         R = n => {
           let {

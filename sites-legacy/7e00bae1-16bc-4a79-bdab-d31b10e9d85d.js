@@ -35,11 +35,11 @@ _global.SENTRY_RELEASE = {
             const u = n[d],
               p = r.safe && Array.isArray(u),
               f = Object.prototype.toString.call(u),
-              y = t(u),
-              m = "[object Object]" === f || "[object Array]" === f,
-              b = c ? c + o + s(d) : s(d);
-            if (!p && !y && m && Object.keys(u).length && (!r.maxDepth || l < a)) return e(u, b, l + 1);
-            i[b] = u
+              b = t(u),
+              y = "[object Object]" === f || "[object Array]" === f,
+              m = c ? c + o + s(d) : s(d);
+            if (!p && !b && y && Object.keys(u).length && (!r.maxDepth || l < a)) return e(u, m, l + 1);
+            i[m] = u
           }))
         }(e), i
       }
@@ -93,7 +93,7 @@ _global.SENTRY_RELEASE = {
         useImageParser: () => w.S1,
         useTinaComponents: () => u,
         useTinaPayload: () => p.i,
-        useTranslations: () => b
+        useTranslations: () => m
       });
       var r = n(62229),
         o = n(17868),
@@ -120,9 +120,9 @@ _global.SENTRY_RELEASE = {
         u = () => (0, r.useContext)(c);
       var p = n(29960),
         f = n(34695),
-        y = n.n(f),
-        m = n(58147);
-      const b = e => {
+        b = n.n(f),
+        y = n(58147);
+      const m = e => {
         let {
           payload: t,
           variables: n
@@ -132,7 +132,7 @@ _global.SENTRY_RELEASE = {
             return a().cloneDeepWith(e, ((e, r, o) => {
               r === t && e && (n[o.key] = e)
             })), n
-          })(t, m.Qw),
+          })(t, y.Qw),
           o = JSON.parse(JSON.stringify(a().merge(JSON.parse(JSON.stringify(r)), JSON.parse(JSON.stringify(n?.keys ?? {}))))),
           s = JSON.parse(JSON.stringify(t));
         return a().cloneDeepWith(s, ((e, t, n) => {
@@ -140,7 +140,7 @@ _global.SENTRY_RELEASE = {
             if (!e || !a().has(e, "key") || e.translated) return;
             const t = o[e.key] ?? null;
             if (!t) return;
-            const n = y()(t);
+            const n = b()(t);
             Object.keys(n).map((t => {
               a().set(e, t, n[t])
             })), a().set(e, "translated", !0), Object.freeze(e)
@@ -203,7 +203,7 @@ _global.SENTRY_RELEASE = {
             } = e;
             const s = e => {
               let c = "";
-              if (c = Array.isArray(e?.[m.ZH]) ? e[m.ZH].map((e => s(e))) : e?.[m.ZH] ?? "", !e?._template) return c;
+              if (c = Array.isArray(e?.[y.ZH]) ? e[y.ZH].map((e => s(e))) : e?.[y.ZH] ?? "", !e?._template) return c;
               let l = e._template;
               "0" === l && (console.warn(`The _template "${l}" wasn't found in the available components. The _template "${l}" was replaced with "gen9.Hero".`, {
                 availableComponents: Object.keys(t),
@@ -234,7 +234,7 @@ _global.SENTRY_RELEASE = {
                 key: f
               }, c)
             };
-            return n?.[m.ZH]?.length ? s(n) : null
+            return n?.[y.ZH]?.length ? s(n) : null
           })({
             components: t,
             payload: n,
@@ -250,11 +250,11 @@ _global.SENTRY_RELEASE = {
           } = e;
           const s = (0, p.i)(),
             [c, l] = (0, r.useState)(null),
-            [f, y] = (0, r.useState)(null);
+            [f, b] = (0, r.useState)(null);
           (0, r.useEffect)((() => {
-            t?.payload && l(t.payload), t?.variables && y(t.variables)
+            t?.payload && l(t.payload), t?.variables && b(t.variables)
           }), [t]);
-          const [m] = (0, r.useState)({
+          const [y] = (0, r.useState)({
             ...n,
             ...u() ?? {}
           }), g = (e => {
@@ -291,7 +291,7 @@ _global.SENTRY_RELEASE = {
             }), [t]), n
           })({
             payload: c
-          }), h = b({
+          }), h = m({
             payload: c,
             variables: f
           });
@@ -309,10 +309,10 @@ _global.SENTRY_RELEASE = {
             return (0, i.jsx)(p.o, {
               payload: r,
               children: (0, i.jsx)(d, {
-                components: m,
+                components: y,
                 children: (0, i.jsx)(k, {
                   payload: e,
-                  components: m,
+                  components: y,
                   componentProps: {
                     ...o,
                     tina: t

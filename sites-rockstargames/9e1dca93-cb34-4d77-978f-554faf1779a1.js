@@ -31,11 +31,11 @@ _global.SENTRY_RELEASE = {
         l = s(82510),
         f = s.n(l),
         g = s(90675),
-        m = s.n(g),
-        b = s(90617),
+        b = s.n(g),
+        m = s(90617),
         p = {};
-      p.styleTagTransform = m(), p.setAttributes = c(), p.insert = i().bind(null, "head"), p.domAPI = o(), p.insertStyleElement = f(), t()(b.A, p);
-      const u = b.A && b.A.locals ? b.A.locals : void 0;
+      p.styleTagTransform = b(), p.setAttributes = c(), p.insert = i().bind(null, "head"), p.domAPI = o(), p.insertStyleElement = f(), t()(m.A, p);
+      const u = m.A && m.A.locals ? m.A.locals : void 0;
       var k = s(73855);
       const x = () => (0, k.jsx)("div", {
         className: u.maint,
@@ -55,7 +55,7 @@ _global.SENTRY_RELEASE = {
     },
     90617: (e, a, s) => {
       s.d(a, {
-        A: () => m
+        A: () => b
       });
       var n = s(42587),
         t = s.n(n),
@@ -80,7 +80,7 @@ _global.SENTRY_RELEASE = {
         content: "rockstargames-sites-rockstargamesf5e7ab9c74f01e6dc42bea36681208d9",
         logo: "rockstargames-sites-rockstargamesd8b754695ff6e6ac5f4e44b7dd6a6446"
       };
-      const m = l
+      const b = l
     },
     82271: e => {
       e.exports = "https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/69446ff620d0701f929f986380918d62.gif"

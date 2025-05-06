@@ -534,9 +534,9 @@ _global.SENTRY_RELEASE = {
           })(n)
         })), s
       };
-      var h = n(42868),
-        g = n(2772);
-      const b = {
+      var b = n(42868),
+        h = n(2772);
+      const g = {
           event: "page_section_impression",
           element_placement: null
         },
@@ -548,13 +548,13 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: a
-          } = (0, g.h)(), {
+          } = (0, h.h)(), {
             ref: i,
             scrollTracked: l
           } = (0, s.useScrollTracking)(t);
           return (0, r.useEffect)((() => {
             l && a({
-              ...b,
+              ...g,
               ...o
             })
           }), [l]), (0, c.jsx)("section", {
@@ -612,7 +612,7 @@ _global.SENTRY_RELEASE = {
                   }
                 }),
                 p = [...e?.translations ?? []].reverse(),
-                f = `componentProps_${(0,h.A)()}`;
+                f = `componentProps_${(0,b.A)()}`;
               return (0, r.createElement)(d, {
                 ...n?.meta,
                 ...e,
@@ -644,7 +644,7 @@ _global.SENTRY_RELEASE = {
           const [y] = (0, r.useState)({
             ...n,
             ...d() ?? {}
-          }), h = (e => {
+          }), b = (e => {
             let {
               payload: t
             } = e;
@@ -678,13 +678,13 @@ _global.SENTRY_RELEASE = {
             }), [t]), n
           })({
             payload: i
-          }), g = v({
+          }), h = v({
             payload: i,
             variables: f
           });
           return (0, r.useMemo)((() => {
             if (!i) return null;
-            const e = g,
+            const e = h,
               n = i?.meta?.prod ?? i?.meta?.cdn ?? s?.meta?.prod ?? s?.meta?.cdn ?? !1,
               r = {
                 ...i,
@@ -707,7 +707,7 @@ _global.SENTRY_RELEASE = {
                 })
               })
             })
-          }), [s, i, JSON.stringify(h), JSON.stringify(g)])
+          }), [s, i, JSON.stringify(b), JSON.stringify(h)])
         };
       var x = n(19544);
       const S = function() {

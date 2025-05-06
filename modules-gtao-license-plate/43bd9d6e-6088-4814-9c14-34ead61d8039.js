@@ -33,7 +33,7 @@ _global.SENTRY_RELEASE = {
         Lightbox_Zoom_Out_Button__Tooltip: () => b,
         Lightbox_Zoom_Slider_Label: () => s,
         Lightbox_Zoom_Slider_Tooltip: () => u,
-        default: () => x
+        default: () => c
       });
       var _ = "Zamknij podgląd",
         i = "Naciśnij {shortcut}",
@@ -50,7 +50,7 @@ _global.SENTRY_RELEASE = {
         f = "Otwórz obraz w podglądzie",
         h = "Podgląd obrazu",
         p = "Tekst alternatywny: {alt}",
-        x = {
+        c = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: i,
           Lightbox_Zoom_In_Button_Label: l,

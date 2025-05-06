@@ -37,15 +37,15 @@ _global.SENTRY_RELEASE = {
         k = a.n(g),
         A = a(17529),
         p = a.n(A),
-        y = a(72162),
-        b = a.n(y),
+        b = a(72162),
+        y = a.n(b),
         h = a(82510),
         w = a.n(h),
         N = a(90675),
         S = a.n(N),
         C = a(5764),
         _ = {};
-      _.styleTagTransform = S(), _.setAttributes = b(), _.insert = p().bind(null, "head"), _.domAPI = k(), _.insertStyleElement = w(), v()(C.A, _);
+      _.styleTagTransform = S(), _.setAttributes = y(), _.insert = p().bind(null, "head"), _.domAPI = k(), _.insertStyleElement = w(), v()(C.A, _);
       const x = C.A && C.A.locals ? C.A.locals : void 0;
       var I = a(73855);
       const E = (0, o.withTranslations)((e => {
@@ -62,11 +62,11 @@ _global.SENTRY_RELEASE = {
             url: g.replace(/\/$/, "")
           },
           setTitleDataPath: "metaUrlInfo.title"
-        }), p = (0, o.useLocale)(), y = k?.metaUrlInfo?.tina;
+        }), p = (0, o.useLocale)(), b = k?.metaUrlInfo?.tina;
         return (0, t.useEffect)((() => {
           const e = m.get("video");
-          if (!e || !y) return void a(null);
-          const t = Number(y?.payload?.content[0].content[0]?.tag ?? 0);
+          if (!e || !b) return void a(null);
+          const t = Number(b?.payload?.content[0].content[0]?.tag ?? 0);
           let i;
           i = 40 === t && "ru_ru" === p ? "en_us" : p;
           const d = (0, I.jsx)(c.VideoWithPlaylist, {
@@ -90,12 +90,12 @@ _global.SENTRY_RELEASE = {
             title: "Video Modal",
             contentClassName: x.noContentPadding
           })
-        }), [m.get("video"), p, y]), (0, t.useEffect)((() => () => a(null)), []), A || y ? A ? (0, I.jsx)("div", {
+        }), [m.get("video"), p, b]), (0, t.useEffect)((() => () => a(null)), []), A || b ? A ? (0, I.jsx)("div", {
           className: x.loading,
           children: (0, I.jsx)(d.A, {})
         }) : (0, I.jsx)(l.TinaParser, {
           components: f.componentsForTinaParser,
-          tina: y
+          tina: b
         }) : (0, I.jsx)(r.A, {})
       }))
     },
@@ -138,11 +138,11 @@ _global.SENTRY_RELEASE = {
         k = a(82510),
         A = a.n(k),
         p = a(90675),
-        y = a.n(p),
-        b = a(57003),
+        b = a.n(p),
+        y = a(57003),
         h = {};
-      h.styleTagTransform = y(), h.setAttributes = g(), h.insert = m().bind(null, "head"), h.domAPI = u(), h.insertStyleElement = A(), o()(b.A, h);
-      const w = b.A && b.A.locals ? b.A.locals : void 0;
+      h.styleTagTransform = b(), h.setAttributes = g(), h.insert = m().bind(null, "head"), h.domAPI = u(), h.insertStyleElement = A(), o()(y.A, h);
+      const w = y.A && y.A.locals ? y.A.locals : void 0;
       var N = a(73855);
       const S = e => {
         let {

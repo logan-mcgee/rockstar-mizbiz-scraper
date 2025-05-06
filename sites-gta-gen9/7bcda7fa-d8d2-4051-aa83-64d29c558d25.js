@@ -25,9 +25,9 @@ _global.SENTRY_RELEASE = {
           s = i.relevantExtensionKeys,
           u = i.localeData,
           f = i.getDefaultLocale,
-          d = l(e);
-        d.initializedRelativeTimeFormat = !0;
-        var p = (0, n.CanonicalizeLocaleList)(t),
+          p = l(e);
+        p.initializedRelativeTimeFormat = !0;
+        var d = (0, n.CanonicalizeLocaleList)(t),
           y = Object.create(null),
           _ = (0, n.CoerceOptionsToObject)(r),
           v = (0, n.GetOption)(_, "localeMatcher", "string", ["best fit", "lookup"], "best fit");
@@ -35,12 +35,12 @@ _global.SENTRY_RELEASE = {
         var b = (0, n.GetOption)(_, "numberingSystem", "string", void 0, void 0);
         if (void 0 !== b && !a.test(b)) throw new RangeError("Invalid numbering system ".concat(b));
         y.nu = b;
-        var m = (0, o.ResolveLocale)(c, p, y, s, u, f),
+        var m = (0, o.ResolveLocale)(c, d, y, s, u, f),
           h = m.locale,
           w = m.nu;
-        d.locale = h, d.style = (0, n.GetOption)(_, "style", "string", ["long", "narrow", "short"], "long"), d.numeric = (0, n.GetOption)(_, "numeric", "string", ["always", "auto"], "always");
+        p.locale = h, p.style = (0, n.GetOption)(_, "style", "string", ["long", "narrow", "short"], "long"), p.numeric = (0, n.GetOption)(_, "numeric", "string", ["always", "auto"], "always");
         var g = u[m.dataLocale];
-        return (0, n.invariant)(!!g, "Missing locale data for ".concat(m.dataLocale)), d.fields = g, d.numberFormat = (0, n.createMemoizedNumberFormat)(t), d.pluralRules = (0, n.createMemoizedPluralRules)(t), d.numberingSystem = w, e
+        return (0, n.invariant)(!!g, "Missing locale data for ".concat(m.dataLocale)), p.fields = g, p.numberFormat = (0, n.createMemoizedNumberFormat)(t), p.pluralRules = (0, n.createMemoizedPluralRules)(t), p.numberingSystem = w, e
       };
       var n = r(50721),
         o = r(85254),
@@ -82,13 +82,13 @@ _global.SENTRY_RELEASE = {
           s = l(e),
           u = s.fields,
           f = s.style,
-          d = s.numeric,
-          p = s.pluralRules,
+          p = s.numeric,
+          d = s.pluralRules,
           y = s.numberFormat,
           _ = c;
         "short" === f ? _ = "".concat(c, "-short") : "narrow" === f && (_ = "".concat(c, "-narrow")), _ in u || (_ = c);
         var v = u[_];
-        if ("auto" === d && (0, n.ToString)(t) in v) return [{
+        if ("auto" === p && (0, n.ToString)(t) in v) return [{
           type: "literal",
           value: v[(0, n.ToString)(t)]
         }];
@@ -100,7 +100,7 @@ _global.SENTRY_RELEASE = {
             value: y.format(Math.abs(t)),
             unit: r
           }],
-          w = m[p.select(t)];
+          w = m[d.select(t)];
         return (0, a.MakePartsList)(w, c, h)
       };
       var n = r(50721),
@@ -246,14 +246,14 @@ _global.SENTRY_RELEASE = {
         __importDefault: () => D,
         __importStar: () => x,
         __makeTemplateObject: () => E,
-        __metadata: () => p,
+        __metadata: () => d,
         __param: () => c,
         __propKey: () => f,
         __read: () => h,
         __rest: () => i,
         __rewriteRelativeImportExtension: () => C,
         __runInitializers: () => u,
-        __setFunctionName: () => d,
+        __setFunctionName: () => p,
         __spread: () => w,
         __spreadArray: () => O,
         __spreadArrays: () => g,
@@ -317,15 +317,15 @@ _global.SENTRY_RELEASE = {
           if (void 0 !== e && "function" != typeof e) throw new TypeError("Function expected");
           return e
         }
-        for (var l, c = n.kind, s = "getter" === c ? "get" : "setter" === c ? "set" : "value", u = !t && e ? n.static ? e : e.prototype : null, f = t || (u ? Object.getOwnPropertyDescriptor(u, n.name) : {}), d = !1, p = r.length - 1; p >= 0; p--) {
+        for (var l, c = n.kind, s = "getter" === c ? "get" : "setter" === c ? "set" : "value", u = !t && e ? n.static ? e : e.prototype : null, f = t || (u ? Object.getOwnPropertyDescriptor(u, n.name) : {}), p = !1, d = r.length - 1; d >= 0; d--) {
           var y = {};
           for (var _ in n) y[_] = "access" === _ ? {} : n[_];
           for (var _ in n.access) y.access[_] = n.access[_];
           y.addInitializer = function(e) {
-            if (d) throw new TypeError("Cannot add initializers after decoration has completed");
+            if (p) throw new TypeError("Cannot add initializers after decoration has completed");
             a.push(i(e || null))
           };
-          var v = (0, r[p])("accessor" === c ? {
+          var v = (0, r[d])("accessor" === c ? {
             get: f.get,
             set: f.set
           } : f[s], y);
@@ -335,7 +335,7 @@ _global.SENTRY_RELEASE = {
             (l = i(v.get)) && (f.get = l), (l = i(v.set)) && (f.set = l), (l = i(v.init)) && o.unshift(l)
           } else(l = i(v)) && ("field" === c ? o.unshift(l) : f[s] = l)
         }
-        u && Object.defineProperty(u, n.name, f), d = !0
+        u && Object.defineProperty(u, n.name, f), p = !0
       }
 
       function u(e, t, r) {
@@ -347,14 +347,14 @@ _global.SENTRY_RELEASE = {
         return "symbol" == typeof e ? e : "".concat(e)
       }
 
-      function d(e, t, r) {
+      function p(e, t, r) {
         return "symbol" == typeof t && (t = t.description ? "[".concat(t.description, "]") : ""), Object.defineProperty(e, "name", {
           configurable: !0,
           value: r ? "".concat(r, " ", t) : t
         })
       }
 
-      function p(e, t) {
+      function d(e, t) {
         if ("object" == typeof Reflect && "function" == typeof Reflect.metadata) return Reflect.metadata(e, t)
       }
 
@@ -743,8 +743,8 @@ _global.SENTRY_RELEASE = {
         __esDecorate: s,
         __runInitializers: u,
         __propKey: f,
-        __setFunctionName: d,
-        __metadata: p,
+        __setFunctionName: p,
+        __metadata: d,
         __awaiter: y,
         __generator: _,
         __createBinding: v,

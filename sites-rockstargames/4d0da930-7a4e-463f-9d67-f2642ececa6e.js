@@ -37,11 +37,11 @@ _global.SENTRY_RELEASE = {
         h = a.n(p),
         f = a(82510),
         k = a.n(f),
-        x = a(90675),
-        b = a.n(x),
+        b = a(90675),
+        x = a.n(b),
         w = a(33223),
         y = {};
-      y.styleTagTransform = b(), y.setAttributes = h(), y.insert = v().bind(null, "head"), y.domAPI = g(), y.insertStyleElement = k(), m()(w.A, y);
+      y.styleTagTransform = x(), y.setAttributes = h(), y.insert = v().bind(null, "head"), y.domAPI = g(), y.insertStyleElement = k(), m()(w.A, y);
       const N = w.A && w.A.locals ? w.A.locals : void 0;
       var S = a(81187),
         z = a(73855);
@@ -92,7 +92,7 @@ _global.SENTRY_RELEASE = {
           gtao: h,
           gtaVI: f,
           latest: k,
-          rdo: x
+          rdo: b
         } = u;
         return (0, z.jsx)("div", {
           className: N.videosIndex,
@@ -109,7 +109,7 @@ _global.SENTRY_RELEASE = {
                 vids: h.results,
                 title: e("Videos from %s").replace("%s", "Grand Theft Auto Online")
               }), (0, z.jsx)(d.A, {
-                vids: x.results,
+                vids: b.results,
                 title: e("Videos from %s").replace("%s", "Red Dead Online")
               }), (0, z.jsx)(d.A, {
                 games: p,

@@ -35,17 +35,17 @@ _global.SENTRY_RELEASE = {
             l = o[u] || 0,
             d = "".concat(u, " ").concat(l);
           o[u] = l + 1;
-          var m = n(d),
-            f = {
+          var f = n(d),
+            m = {
               css: s[1],
               media: s[2],
               sourceMap: s[3],
               supports: s[4],
               layer: s[5]
             };
-          if (-1 !== m) t[m].references++, t[m].updater(f);
+          if (-1 !== f) t[f].references++, t[f].updater(m);
           else {
-            var h = a(f, r);
+            var h = a(m, r);
             r.byIndex = c, t.splice(c, 0, {
               identifier: d,
               updater: h,
@@ -172,7 +172,7 @@ _global.SENTRY_RELEASE = {
         isWebKit: () => C,
         load: () => le,
         loadSources: () => A,
-        murmurX64Hash128: () => me,
+        murmurX64Hash128: () => fe,
         prepareForSources: () => se,
         sources: () => re,
         transformSource: () => E,
@@ -240,11 +240,11 @@ _global.SENTRY_RELEASE = {
         return n[3] += e[3] * t[3], n[2] += n[3] >>> 16, n[3] &= 65535, n[2] += e[2] * t[3], n[1] += n[2] >>> 16, n[2] &= 65535, n[2] += e[3] * t[2], n[1] += n[2] >>> 16, n[2] &= 65535, n[1] += e[1] * t[3], n[0] += n[1] >>> 16, n[1] &= 65535, n[1] += e[2] * t[2], n[0] += n[1] >>> 16, n[1] &= 65535, n[1] += e[3] * t[1], n[0] += n[1] >>> 16, n[1] &= 65535, n[0] += e[0] * t[3] + e[1] * t[2] + e[2] * t[1] + e[3] * t[0], n[0] &= 65535, [n[0] << 16 | n[1], n[2] << 16 | n[3]]
       }
 
-      function m(e, t) {
+      function f(e, t) {
         return 32 == (t %= 64) ? [e[1], e[0]] : t < 32 ? [e[0] << t | e[1] >>> 32 - t, e[1] << t | e[0] >>> 32 - t] : (t -= 32, [e[1] << t | e[0] >>> 32 - t, e[0] << t | e[1] >>> 32 - t])
       }
 
-      function f(e, t) {
+      function m(e, t) {
         return 0 == (t %= 64) ? e : t < 32 ? [e[0] << t | e[1] >>> 32 - t, e[1] << t] : [e[1] << t - 32, 0]
       }
 
@@ -266,38 +266,38 @@ _global.SENTRY_RELEASE = {
           s = [0, 0],
           u = [2277735313, 289559509],
           p = [1291169091, 658871167];
-        for (n = 0; n < a; n += 16) c = [255 & e.charCodeAt(n + 4) | (255 & e.charCodeAt(n + 5)) << 8 | (255 & e.charCodeAt(n + 6)) << 16 | (255 & e.charCodeAt(n + 7)) << 24, 255 & e.charCodeAt(n) | (255 & e.charCodeAt(n + 1)) << 8 | (255 & e.charCodeAt(n + 2)) << 16 | (255 & e.charCodeAt(n + 3)) << 24], s = [255 & e.charCodeAt(n + 12) | (255 & e.charCodeAt(n + 13)) << 8 | (255 & e.charCodeAt(n + 14)) << 16 | (255 & e.charCodeAt(n + 15)) << 24, 255 & e.charCodeAt(n + 8) | (255 & e.charCodeAt(n + 9)) << 8 | (255 & e.charCodeAt(n + 10)) << 16 | (255 & e.charCodeAt(n + 11)) << 24], c = m(c = d(c, u), 31), o = l(o = m(o = h(o, c = d(c, p)), 27), i), o = l(d(o, [0, 5]), [0, 1390208809]), s = m(s = d(s, p), 33), i = l(i = m(i = h(i, s = d(s, u)), 31), o), i = l(d(i, [0, 5]), [0, 944331445]);
+        for (n = 0; n < a; n += 16) c = [255 & e.charCodeAt(n + 4) | (255 & e.charCodeAt(n + 5)) << 8 | (255 & e.charCodeAt(n + 6)) << 16 | (255 & e.charCodeAt(n + 7)) << 24, 255 & e.charCodeAt(n) | (255 & e.charCodeAt(n + 1)) << 8 | (255 & e.charCodeAt(n + 2)) << 16 | (255 & e.charCodeAt(n + 3)) << 24], s = [255 & e.charCodeAt(n + 12) | (255 & e.charCodeAt(n + 13)) << 8 | (255 & e.charCodeAt(n + 14)) << 16 | (255 & e.charCodeAt(n + 15)) << 24, 255 & e.charCodeAt(n + 8) | (255 & e.charCodeAt(n + 9)) << 8 | (255 & e.charCodeAt(n + 10)) << 16 | (255 & e.charCodeAt(n + 11)) << 24], c = f(c = d(c, u), 31), o = l(o = f(o = h(o, c = d(c, p)), 27), i), o = l(d(o, [0, 5]), [0, 1390208809]), s = f(s = d(s, p), 33), i = l(i = f(i = h(i, s = d(s, u)), 31), o), i = l(d(i, [0, 5]), [0, 944331445]);
         switch (c = [0, 0], s = [0, 0], r) {
           case 15:
-            s = h(s, f([0, e.charCodeAt(n + 14)], 48));
+            s = h(s, m([0, e.charCodeAt(n + 14)], 48));
           case 14:
-            s = h(s, f([0, e.charCodeAt(n + 13)], 40));
+            s = h(s, m([0, e.charCodeAt(n + 13)], 40));
           case 13:
-            s = h(s, f([0, e.charCodeAt(n + 12)], 32));
+            s = h(s, m([0, e.charCodeAt(n + 12)], 32));
           case 12:
-            s = h(s, f([0, e.charCodeAt(n + 11)], 24));
+            s = h(s, m([0, e.charCodeAt(n + 11)], 24));
           case 11:
-            s = h(s, f([0, e.charCodeAt(n + 10)], 16));
+            s = h(s, m([0, e.charCodeAt(n + 10)], 16));
           case 10:
-            s = h(s, f([0, e.charCodeAt(n + 9)], 8));
+            s = h(s, m([0, e.charCodeAt(n + 9)], 8));
           case 9:
-            s = d(s = h(s, [0, e.charCodeAt(n + 8)]), p), i = h(i, s = d(s = m(s, 33), u));
+            s = d(s = h(s, [0, e.charCodeAt(n + 8)]), p), i = h(i, s = d(s = f(s, 33), u));
           case 8:
-            c = h(c, f([0, e.charCodeAt(n + 7)], 56));
+            c = h(c, m([0, e.charCodeAt(n + 7)], 56));
           case 7:
-            c = h(c, f([0, e.charCodeAt(n + 6)], 48));
+            c = h(c, m([0, e.charCodeAt(n + 6)], 48));
           case 6:
-            c = h(c, f([0, e.charCodeAt(n + 5)], 40));
+            c = h(c, m([0, e.charCodeAt(n + 5)], 40));
           case 5:
-            c = h(c, f([0, e.charCodeAt(n + 4)], 32));
+            c = h(c, m([0, e.charCodeAt(n + 4)], 32));
           case 4:
-            c = h(c, f([0, e.charCodeAt(n + 3)], 24));
+            c = h(c, m([0, e.charCodeAt(n + 3)], 24));
           case 3:
-            c = h(c, f([0, e.charCodeAt(n + 2)], 16));
+            c = h(c, m([0, e.charCodeAt(n + 2)], 16));
           case 2:
-            c = h(c, f([0, e.charCodeAt(n + 1)], 8));
+            c = h(c, m([0, e.charCodeAt(n + 1)], 8));
           case 1:
-            c = d(c = h(c, [0, e.charCodeAt(n)]), u), o = h(o, c = d(c = m(c, 31), p))
+            c = d(c = h(c, [0, e.charCodeAt(n)]), u), o = h(o, c = d(c = f(c, 31), p))
         }
         return o = l(o = h(o, [0, e.length]), i = h(i, [0, e.length])), i = l(i, o), o = l(o = g(o), i = g(i)), i = l(i, o), ("00000000" + (o[0] >>> 0).toString(16)).slice(-8) + ("00000000" + (o[1] >>> 0).toString(16)).slice(-8) + ("00000000" + (i[0] >>> 0).toString(16)).slice(-8) + ("00000000" + (i[1] >>> 0).toString(16)).slice(-8)
       }
@@ -828,14 +828,14 @@ _global.SENTRY_RELEASE = {
                       u = void 0 === s ? {} : s,
                       l = c[1],
                       d = void 0 === l ? "mmMwWLliI0fiflO&1" : l,
-                      m = e.createElement("span");
-                    m.textContent = d, m.style.whiteSpace = "nowrap";
-                    for (var f = 0, h = Object.keys(u); f < h.length; f++) {
-                      var g = h[f],
+                      f = e.createElement("span");
+                    f.textContent = d, f.style.whiteSpace = "nowrap";
+                    for (var m = 0, h = Object.keys(u); m < h.length; m++) {
+                      var g = h[m],
                         p = u[g];
-                      void 0 !== p && (m.style[g] = p)
+                      void 0 !== p && (f.style[g] = p)
                     }
-                    n[i] = m, t.appendChild(e.createElement("br")), t.appendChild(m)
+                    n[i] = f, t.appendChild(e.createElement("br")), t.appendChild(f)
                   }
                   for (var v = 0, b = Object.keys(ne); v < b.length; v++) r[i = b[v]] = n[i].getBoundingClientRect().width;
                   return r
@@ -1141,8 +1141,8 @@ _global.SENTRY_RELEASE = {
               u = ee.cos || te,
               l = ee.cosh || te,
               d = ee.tan || te,
-              m = ee.tanh || te,
-              f = ee.exp || te,
+              f = ee.tanh || te,
+              m = ee.exp || te,
               h = ee.expm1 || te,
               g = ee.log1p || te;
             return {
@@ -1162,9 +1162,9 @@ _global.SENTRY_RELEASE = {
               cosh: l(1),
               coshPf: (ee.exp(1) + 1 / ee.exp(1)) / 2,
               tan: d(-1e300),
-              tanh: m(1),
+              tanh: f(1),
               tanhPf: (ee.exp(2) - 1) / (ee.exp(2) + 1),
-              exp: f(1),
+              exp: m(1),
               expm1: h(1),
               expm1Pf: ee.exp(1) - 1,
               log1p: g(10),
@@ -1311,7 +1311,7 @@ _global.SENTRY_RELEASE = {
           hashComponents: ce,
           componentsToDebugString: ie
         },
-        me = p
+        fe = p
     },
     17531: (e, t, n) => {
       var r, a, o, i = n(61573);
@@ -1340,23 +1340,23 @@ _global.SENTRY_RELEASE = {
         return [e[0] ^ t[0], e[1] ^ t[1]]
       }
 
-      function m(e) {
+      function f(e) {
         return e = d(e, [0, e[0] >>> 1]), e = d(e = s(e, [4283543511, 3981806797]), [0, e[0] >>> 1]), d(e = s(e, [3301882366, 444984403]), [0, e[0] >>> 1])
       }
 
-      function f(e) {
+      function m(e) {
         return e.length > 32 ? function(e, t) {
           t = t || 0;
           let n, r = (e = e || "").length % 16,
             a = e.length - r,
             o = [0, t],
             i = [0, t],
-            f = [0, 0],
+            m = [0, 0],
             h = [0, 0],
             g = [2277735313, 289559509],
             p = [1291169091, 658871167];
-          for (n = 0; n < a; n += 16) f = [255 & e.charCodeAt(n + 4) | (255 & e.charCodeAt(n + 5)) << 8 | (255 & e.charCodeAt(n + 6)) << 16 | (255 & e.charCodeAt(n + 7)) << 24, 255 & e.charCodeAt(n) | (255 & e.charCodeAt(n + 1)) << 8 | (255 & e.charCodeAt(n + 2)) << 16 | (255 & e.charCodeAt(n + 3)) << 24], h = [255 & e.charCodeAt(n + 12) | (255 & e.charCodeAt(n + 13)) << 8 | (255 & e.charCodeAt(n + 14)) << 16 | (255 & e.charCodeAt(n + 15)) << 24, 255 & e.charCodeAt(n + 8) | (255 & e.charCodeAt(n + 9)) << 8 | (255 & e.charCodeAt(n + 10)) << 16 | (255 & e.charCodeAt(n + 11)) << 24], f = s(f, g), f = u(f, 31), f = s(f, p), o = d(o, f), o = u(o, 27), o = c(o, i), o = c(s(o, [0, 5]), [0, 1390208809]), h = s(h, p), h = u(h, 33), h = s(h, g), i = d(i, h), i = u(i, 31), i = c(i, o), i = c(s(i, [0, 5]), [0, 944331445]);
-          switch (f = [0, 0], h = [0, 0], r) {
+          for (n = 0; n < a; n += 16) m = [255 & e.charCodeAt(n + 4) | (255 & e.charCodeAt(n + 5)) << 8 | (255 & e.charCodeAt(n + 6)) << 16 | (255 & e.charCodeAt(n + 7)) << 24, 255 & e.charCodeAt(n) | (255 & e.charCodeAt(n + 1)) << 8 | (255 & e.charCodeAt(n + 2)) << 16 | (255 & e.charCodeAt(n + 3)) << 24], h = [255 & e.charCodeAt(n + 12) | (255 & e.charCodeAt(n + 13)) << 8 | (255 & e.charCodeAt(n + 14)) << 16 | (255 & e.charCodeAt(n + 15)) << 24, 255 & e.charCodeAt(n + 8) | (255 & e.charCodeAt(n + 9)) << 8 | (255 & e.charCodeAt(n + 10)) << 16 | (255 & e.charCodeAt(n + 11)) << 24], m = s(m, g), m = u(m, 31), m = s(m, p), o = d(o, m), o = u(o, 27), o = c(o, i), o = c(s(o, [0, 5]), [0, 1390208809]), h = s(h, p), h = u(h, 33), h = s(h, g), i = d(i, h), i = u(i, 31), i = c(i, o), i = c(s(i, [0, 5]), [0, 944331445]);
+          switch (m = [0, 0], h = [0, 0], r) {
             case 15:
               h = d(h, l([0, e.charCodeAt(n + 14)], 48));
               break;
@@ -1379,30 +1379,30 @@ _global.SENTRY_RELEASE = {
               h = d(h, [0, e.charCodeAt(n + 8)]), h = s(h, p), h = u(h, 33), h = s(h, g), i = d(i, h);
               break;
             case 8:
-              f = d(f, l([0, e.charCodeAt(n + 7)], 56));
+              m = d(m, l([0, e.charCodeAt(n + 7)], 56));
               break;
             case 7:
-              f = d(f, l([0, e.charCodeAt(n + 6)], 48));
+              m = d(m, l([0, e.charCodeAt(n + 6)], 48));
               break;
             case 6:
-              f = d(f, l([0, e.charCodeAt(n + 5)], 40));
+              m = d(m, l([0, e.charCodeAt(n + 5)], 40));
               break;
             case 5:
-              f = d(f, l([0, e.charCodeAt(n + 4)], 32));
+              m = d(m, l([0, e.charCodeAt(n + 4)], 32));
               break;
             case 4:
-              f = d(f, l([0, e.charCodeAt(n + 3)], 24));
+              m = d(m, l([0, e.charCodeAt(n + 3)], 24));
               break;
             case 3:
-              f = d(f, l([0, e.charCodeAt(n + 2)], 16));
+              m = d(m, l([0, e.charCodeAt(n + 2)], 16));
               break;
             case 2:
-              f = d(f, l([0, e.charCodeAt(n + 1)], 8));
+              m = d(m, l([0, e.charCodeAt(n + 1)], 8));
               break;
             case 1:
-              f = d(f, [0, e.charCodeAt(n)]), f = s(f, g), f = u(f, 31), f = s(f, p), o = d(o, f)
+              m = d(m, [0, e.charCodeAt(n)]), m = s(m, g), m = u(m, 31), m = s(m, p), o = d(o, m)
           }
-          return o = d(o, [0, e.length]), i = d(i, [0, e.length]), o = c(o, i), i = c(i, o), o = m(o), i = m(i), o = c(o, i), i = c(i, o), ("00000000" + (o[0] >>> 0).toString(16)).slice(-8) + ("00000000" + (o[1] >>> 0).toString(16)).slice(-8) + ("00000000" + (i[0] >>> 0).toString(16)).slice(-8) + ("00000000" + (i[1] >>> 0).toString(16)).slice(-8)
+          return o = d(o, [0, e.length]), i = d(i, [0, e.length]), o = c(o, i), i = c(i, o), o = f(o), i = f(i), o = c(o, i), i = c(i, o), ("00000000" + (o[0] >>> 0).toString(16)).slice(-8) + ("00000000" + (o[1] >>> 0).toString(16)).slice(-8) + ("00000000" + (i[0] >>> 0).toString(16)).slice(-8) + ("00000000" + (i[1] >>> 0).toString(16)).slice(-8)
         }(e, 31) : e
       }
 
@@ -1511,7 +1511,7 @@ _global.SENTRY_RELEASE = {
           }();
         r.appendChild(a);
         for (let e = 0, n = t.length; e < n; e++) i[t[e]] = d[e].offsetWidth, c[t[e]] = d[e].offsetHeight;
-        let m = function() {
+        let f = function() {
           let e = {};
           for (let r = 0, a = n.length; r < a; r++) {
             let a = [];
@@ -1524,9 +1524,9 @@ _global.SENTRY_RELEASE = {
           return e
         }();
         r.appendChild(o);
-        let f = [];
-        for (let e = 0, t = n.length; e < t; e++) l(m[n[e]]) && f.push(n[e]);
-        return r.removeChild(o), r.removeChild(a), f
+        let m = [];
+        for (let e = 0, t = n.length; e < t; e++) l(f[n[e]]) && m.push(n[e]);
+        return r.removeChild(o), r.removeChild(a), m
       }
       r = e.exports, Object.defineProperty(r, "__esModule", {
         value: !0,
@@ -1554,7 +1554,7 @@ _global.SENTRY_RELEASE = {
                 const r = n.components,
                   o = {
                     fp: {
-                      user_agent: f(navigator.userAgent),
+                      user_agent: m(navigator.userAgent),
                       language: navigator.language || navigator.userLanguage || navigator.browserLanguage || navigator.systemLanguage || "",
                       pixel_ratio: window.devicePixelRatio || "",
                       timezone_offset: (new Date).getTimezoneOffset(),
@@ -1565,17 +1565,17 @@ _global.SENTRY_RELEASE = {
                       cpu_class: r.cpuClass.value ? r.cpuClass.value : "unknown",
                       navigator_platform: r.platform.value ? r.platform.value : "unknown",
                       do_not_track: navigator.doNotTrack ? navigator.doNotTrack : "unknown",
-                      regular_plugins: f(h(r.plugins.value).join(";")),
+                      regular_plugins: m(h(r.plugins.value).join(";")),
                       canvas: null,
                       webgl: null,
-                      adblock: f(p()),
+                      adblock: m(p()),
                       has_lied_os: v(a),
                       touch_support: [r.touchSupport.value.maxTouchPoints, r.touchSupport.value.touchEvent, r.touchSupport.value.touchStart].join(";"),
                       device_name: b(e, a),
-                      js_fonts: f(w().join(";"))
+                      js_fonts: m(w().join(";"))
                     }
                   };
-                g() ? o.fp.canvas = f(function() {
+                g() ? o.fp.canvas = m(function() {
                     let e = [],
                       t = document.createElement("canvas");
                     t.width = 2e3, t.height = 200, t.style.display = "inline";
@@ -1591,7 +1591,7 @@ _global.SENTRY_RELEASE = {
                       e = !1
                     }
                     return !!window.WebGLRenderingContext && !!e
-                  }() ? o.fp.webgl = f(function() {
+                  }() ? o.fp.webgl = m(function() {
                     let e, t = function(t) {
                       return e.clearColor(0, 0, 0, 1), e.enable(e.DEPTH_TEST), e.depthFunc(e.LEQUAL), e.clear(e.COLOR_BUFFER_BIT | e.DEPTH_BUFFER_BIT), "[" + t[0] + ", " + t[1] + "]"
                     };

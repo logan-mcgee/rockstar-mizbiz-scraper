@@ -18,7 +18,7 @@ _global.SENTRY_RELEASE = {
   [621, 3002], {
     73002: (e, n, t) => {
       t.r(n), t.d(n, {
-        useHardwareConcurrency: () => v,
+        useHardwareConcurrency: () => b,
         useMemoryStatus: () => g,
         useNetworkStatus: () => d,
         useSaveData: () => l
@@ -56,10 +56,10 @@ _global.SENTRY_RELEASE = {
         }
         return e
       }
-      var f, u, c, s, d = function(e) {
+      var c, f, u, s, d = function(e) {
           var n, t = {
-              unsupported: f = !("undefined" != typeof navigator && "connection" in navigator && "effectiveType" in navigator.connection),
-              effectiveConnectionType: f ? e : navigator.connection.effectiveType
+              unsupported: c = !("undefined" != typeof navigator && "connection" in navigator && "effectiveType" in navigator.connection),
+              effectiveConnectionType: c ? e : navigator.connection.effectiveType
             },
             a = function(e) {
               if (Array.isArray(e)) return e
@@ -70,12 +70,12 @@ _global.SENTRY_RELEASE = {
                   a = !1,
                   o = void 0;
                 try {
-                  for (var i, f = e[Symbol.iterator](); !(r = (i = f.next()).done) && (t.push(i.value), 2 !== t.length); r = !0);
+                  for (var i, c = e[Symbol.iterator](); !(r = (i = c.next()).done) && (t.push(i.value), 2 !== t.length); r = !0);
                 } catch (e) {
                   a = !0, o = e
                 } finally {
                   try {
-                    r || null == f.return || f.return()
+                    r || null == c.return || c.return()
                   } finally {
                     if (a) throw o
                   }
@@ -86,12 +86,12 @@ _global.SENTRY_RELEASE = {
               throw new TypeError("Invalid attempt to destructure non-iterable instance")
             }(),
             o = a[0],
-            u = a[1];
+            f = a[1];
           return (0, r.useEffect)((function() {
-            if (!f) {
+            if (!c) {
               var e = navigator.connection,
                 n = function() {
-                  u({
+                  f({
                     effectiveConnectionType: e.effectiveType
                   })
                 };
@@ -101,22 +101,22 @@ _global.SENTRY_RELEASE = {
                 }
             }
           }), []), i({}, o, {
-            setNetworkStatus: u
+            setNetworkStatus: f
           })
         },
         l = function() {
           return {
-            unsupported: u = !("undefined" != typeof navigator && "connection" in navigator && "saveData" in navigator.connection),
-            saveData: u ? arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null : !0 === navigator.connection.saveData
+            unsupported: f = !("undefined" != typeof navigator && "connection" in navigator && "saveData" in navigator.connection),
+            saveData: f ? arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null : !0 === navigator.connection.saveData
           }
         };
-      if (c = !("undefined" != typeof navigator && "deviceMemory" in navigator)) s = {
-        unsupported: c
+      if (u = !("undefined" != typeof navigator && "deviceMemory" in navigator)) s = {
+        unsupported: u
       };
       else {
         var p = "memory" in performance ? performance.memory : null;
         s = {
-          unsupported: c,
+          unsupported: u,
           deviceMemory: navigator.deviceMemory,
           totalJSHeapSize: p ? p.totalJSHeapSize : null,
           usedJSHeapSize: p ? p.usedJSHeapSize : null,
@@ -124,7 +124,7 @@ _global.SENTRY_RELEASE = {
         }
       }
       var y, g = function(e) {
-        return c && e ? i({}, s, {}, e) : i({}, s)
+        return u && e ? i({}, s, {}, e) : i({}, s)
       };
       y = "undefined" != typeof navigator && "hardwareConcurrency" in navigator ? {
         unsupported: !1,
@@ -132,7 +132,7 @@ _global.SENTRY_RELEASE = {
       } : {
         unsupported: !0
       };
-      var v = function() {
+      var b = function() {
         return i({}, y)
       }
     }

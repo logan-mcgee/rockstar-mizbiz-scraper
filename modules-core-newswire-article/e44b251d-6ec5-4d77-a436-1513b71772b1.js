@@ -34,11 +34,11 @@ _global.SENTRY_RELEASE = {
           i = i || 1, Object.keys(n).forEach((function(u) {
             const d = n[u],
               p = r.safe && Array.isArray(d),
-              f = Object.prototype.toString.call(d),
-              m = t(d),
-              y = "[object Object]" === f || "[object Array]" === f,
+              m = Object.prototype.toString.call(d),
+              f = t(d),
+              y = "[object Object]" === m || "[object Array]" === m,
               b = c ? c + a + s(u) : s(u);
-            if (!p && !m && y && Object.keys(d).length && (!r.maxDepth || i < o)) return e(d, b, i + 1);
+            if (!p && !f && y && Object.keys(d).length && (!r.maxDepth || i < o)) return e(d, b, i + 1);
             l[b] = d
           }))
         }(e), l
@@ -195,18 +195,18 @@ _global.SENTRY_RELEASE = {
             {
               meta: p = {}
             } = (0, o.i)() ?? {},
-            [f, m] = (0, r.useState)(u ?? p?.cdn ?? p?.prod ?? !0);
+            [m, f] = (0, r.useState)(u ?? p?.cdn ?? p?.prod ?? !0);
           (0, r.useEffect)((() => {
-            m(u ?? p?.cdn ?? p?.prod ?? !0)
+            f(u ?? p?.cdn ?? p?.prod ?? !0)
           }), [u, p]);
           const y = (0, r.useCallback)((e => {
             const t = null !== i,
               n = e?.previewSrc ?? e ?? null;
             if (null === n || "string" != typeof n) return null;
             if (n.startsWith("http")) return s(n);
-            const r = `${t?(0,a.getCdnPrefix)(f):""}${n}`;
+            const r = `${t?(0,a.getCdnPrefix)(m):""}${n}`;
             return s(r)
-          }), [f, i]);
+          }), [m, i]);
           return {
             alt: t,
             ariaLabel: c,
@@ -283,8 +283,8 @@ _global.SENTRY_RELEASE = {
         },
         d = () => (0, r.useContext)(c);
       var p = n(29960),
-        f = n(34695),
-        m = n.n(f),
+        m = n(34695),
+        f = n.n(m),
         y = n(17539);
       const b = e => {
         let {
@@ -304,7 +304,7 @@ _global.SENTRY_RELEASE = {
             if (!e || !o().has(e, "key") || e.translated) return;
             const t = a[e.key] ?? null;
             if (!t) return;
-            const n = m()(t);
+            const n = f()(t);
             Object.keys(n).map((t => {
               o().set(e, t, n[t])
             })), o().set(e, "translated", !0), Object.freeze(e)
@@ -389,13 +389,13 @@ _global.SENTRY_RELEASE = {
                   }
                 }),
                 p = [...e?.translations ?? []].reverse(),
-                f = `componentProps_${(0,g.A)()}`;
+                m = `componentProps_${(0,g.A)()}`;
               return (0, r.createElement)(d, {
                 ...n?.meta,
                 ...e,
                 ...a,
                 t: e => p.find((t => t?._key === e))?.value ?? e,
-                key: f
+                key: m
               }, c)
             };
             return n?.[y.ZH]?.length ? s(n) : null
@@ -414,9 +414,9 @@ _global.SENTRY_RELEASE = {
           } = e;
           const s = (0, p.i)(),
             [c, i] = (0, r.useState)(null),
-            [f, m] = (0, r.useState)(null);
+            [m, f] = (0, r.useState)(null);
           (0, r.useEffect)((() => {
-            t?.payload && i(t.payload), t?.variables && m(t.variables)
+            t?.payload && i(t.payload), t?.variables && f(t.variables)
           }), [t]);
           const [y] = (0, r.useState)({
             ...n,
@@ -457,7 +457,7 @@ _global.SENTRY_RELEASE = {
             payload: c
           }), k = b({
             payload: c,
-            variables: f
+            variables: m
           });
           return (0, r.useMemo)((() => {
             if (!c) return null;

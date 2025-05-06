@@ -22,29 +22,29 @@ _global.SENTRY_RELEASE = {
         "use strict";
         var r = {}.hasOwnProperty;
 
-        function d() {
+        function a() {
           for (var e = "", t = 0; t < arguments.length; t++) {
             var n = arguments[t];
-            n && (e = o(e, a(n)))
+            n && (e = d(e, o(n)))
           }
           return e
         }
 
-        function a(e) {
+        function o(e) {
           if ("string" == typeof e || "number" == typeof e) return e;
           if ("object" != typeof e) return "";
-          if (Array.isArray(e)) return d.apply(null, e);
+          if (Array.isArray(e)) return a.apply(null, e);
           if (e.toString !== Object.prototype.toString && !e.toString.toString().includes("[native code]")) return e.toString();
           var t = "";
-          for (var n in e) r.call(e, n) && e[n] && (t = o(t, n));
+          for (var n in e) r.call(e, n) && e[n] && (t = d(t, n));
           return t
         }
 
-        function o(e, t) {
+        function d(e, t) {
           return t ? e ? e + " " + t : e + t : e
         }
-        e.exports ? (d.default = d, e.exports = d) : void 0 === (n = function() {
-          return d
+        e.exports ? (a.default = a, e.exports = a) : void 0 === (n = function() {
+          return a
         }.apply(t, [])) || (e.exports = n)
       }()
     }

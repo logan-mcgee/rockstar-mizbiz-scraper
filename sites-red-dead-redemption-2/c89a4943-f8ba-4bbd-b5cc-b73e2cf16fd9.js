@@ -28,7 +28,7 @@ _global.SENTRY_RELEASE = {
     },
     29114: (e, t, n) => {
       n.d(t, {
-        V: () => s
+        V: () => f
       });
       var a = n(92927);
 
@@ -44,13 +44,13 @@ _global.SENTRY_RELEASE = {
         return n < 0 ? -1 : n > 0 ? 1 : n
       }
 
-      function s(e, t, n) {
-        const [a, r] = o(n?.in, e, t), s = d(a, r), f = Math.abs(function(e, t, n) {
+      function f(e, t, n) {
+        const [a, r] = o(n?.in, e, t), f = d(a, r), s = Math.abs(function(e, t, n) {
           const [a, r] = o(n?.in, e, t);
           return a.getFullYear() - r.getFullYear()
         }(a, r));
         a.setFullYear(1584), r.setFullYear(1584);
-        const c = s * (f - +(d(a, r) === -s));
+        const c = f * (s - +(d(a, r) === -f));
         return 0 === c ? 0 : c
       }
     },
@@ -77,7 +77,7 @@ _global.SENTRY_RELEASE = {
     },
     87758: (e, t, n) => {
       n.d(t, {
-        j: () => s
+        j: () => f
       });
       var a = n(92927),
         o = n(66992);
@@ -95,21 +95,21 @@ _global.SENTRY_RELEASE = {
           if (isNaN(t)) return (0, a.w)(n?.in || e, NaN);
           if (!t) return r;
           const d = r.getDate(),
-            s = (0, a.w)(n?.in || e, r.getTime());
-          return s.setMonth(r.getMonth() + t + 1, 0), d >= s.getDate() ? s : (r.setFullYear(s.getFullYear(), s.getMonth(), d), r)
+            f = (0, a.w)(n?.in || e, r.getTime());
+          return f.setMonth(r.getMonth() + t + 1, 0), d >= f.getDate() ? f : (r.setFullYear(f.getFullYear(), f.getMonth(), d), r)
         }(e, -t, n)
       }
 
-      function s(e, t, n) {
+      function f(e, t, n) {
         const {
           years: o = 0,
-          months: s = 0,
-          weeks: f = 0,
+          months: f = 0,
+          weeks: s = 0,
           days: c = 0,
           hours: i = 0,
           minutes: u = 0,
           seconds: l = 0
-        } = t, b = r(d(e, s + 12 * o, n), c + 7 * f, n), g = 1e3 * (l + 60 * (u + 60 * i));
+        } = t, b = r(d(e, f + 12 * o, n), c + 7 * s, n), g = 1e3 * (l + 60 * (u + 60 * i));
         return (0, a.w)(n?.in || e, +b - g)
       }
     },

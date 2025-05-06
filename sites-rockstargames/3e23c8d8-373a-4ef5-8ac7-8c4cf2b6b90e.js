@@ -24,23 +24,23 @@ _global.SENTRY_RELEASE = {
         d = s(9623),
         n = s(9566),
         r = s(70241),
-        f = s(95966),
-        o = s(73855);
-      const l = (0, f.withTranslations)((e => {
+        o = s(95966),
+        f = s(73855);
+      const l = (0, o.withTranslations)((e => {
         let {
           t: a
         } = e;
         const s = (0, d.useParams)(),
           {
-            setBreadcrumb: f,
+            setBreadcrumb: o,
             setNormalLogo: l
           } = (0, r.b)();
-        return (0, t.useEffect)((() => (f([{
+        return (0, t.useEffect)((() => (o([{
           href: "/newswire",
           title: a("Newswire")
         }], ""), () => {
-          l(!0), f()
-        })), []), (0, o.jsx)(n.NewswireArticle, {
+          l(!0), o()
+        })), []), (0, f.jsx)(n.NewswireArticle, {
           idHash: String(s.articleId)
         })
       }))

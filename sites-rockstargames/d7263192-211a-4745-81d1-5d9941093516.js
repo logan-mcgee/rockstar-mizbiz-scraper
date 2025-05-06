@@ -16,9 +16,9 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [9214], {
-    9214: (o, t, _) => {
-      _.r(t), _.d(t, {
-        Lightbox_Close_Button_Label: () => e,
+    9214: (o, t, e) => {
+      e.r(t), e.d(t, {
+        Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => l,
         Lightbox_Dialog_Description: () => p,
         Lightbox_Dialog_Title: () => h,
@@ -35,7 +35,7 @@ _global.SENTRY_RELEASE = {
         Lightbox_Zoom_Slider_Tooltip: () => u,
         default: () => x
       });
-      var e = "關閉燈箱",
+      var _ = "關閉燈箱",
         l = "按 {shortcut}",
         a = "放大",
         i = "按 {shortcut}",
@@ -51,7 +51,7 @@ _global.SENTRY_RELEASE = {
         h = "圖片燈箱",
         p = "圖片替代文字：{alt}",
         x = {
-          Lightbox_Close_Button_Label: e,
+          Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: l,
           Lightbox_Zoom_In_Button_Label: a,
           Lightbox_Zoom_In_Button_Tooltip: i,

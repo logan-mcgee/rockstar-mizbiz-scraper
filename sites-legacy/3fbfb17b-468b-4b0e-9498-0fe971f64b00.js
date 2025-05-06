@@ -18,10 +18,10 @@ _global.SENTRY_RELEASE = {
   [8764, 6383], {
     56383: (e, t, i) => {
       i.r(t), i.d(t, {
-        InView: () => u,
+        InView: () => b,
         defaultFallbackInView: () => h,
         observe: () => c,
-        useInView: () => b
+        useInView: () => u
       });
       var n = i(62229),
         r = Object.defineProperty,
@@ -35,14 +35,14 @@ _global.SENTRY_RELEASE = {
         })(e, "symbol" != typeof t ? t + "" : t, i), i),
         o = new Map,
         a = new WeakMap,
-        d = 0,
-        l = void 0;
+        l = 0,
+        d = void 0;
 
       function h(e) {
-        l = e
+        d = e
       }
 
-      function c(e, t, i = {}, n = l) {
+      function c(e, t, i = {}, n = d) {
         if (void 0 === window.IntersectionObserver && void 0 !== n) {
           const r = e.getBoundingClientRect();
           return t(n, {
@@ -62,7 +62,7 @@ _global.SENTRY_RELEASE = {
         } = function(e) {
           const t = function(e) {
             return Object.keys(e).sort().filter((t => void 0 !== e[t])).map((t => {
-              return `${t}_${"root"===t?(i=e.root,i?(a.has(i)||(d+=1,a.set(i,d.toString())),a.get(i)):"0"):e[t]}`;
+              return `${t}_${"root"===t?(i=e.root,i?(a.has(i)||(l+=1,a.set(i,l.toString())),a.get(i)):"0"):e[t]}`;
               var i
             })).toString()
           }(e);
@@ -92,7 +92,7 @@ _global.SENTRY_RELEASE = {
             c.splice(c.indexOf(t), 1), 0 === c.length && (h.delete(e), s.unobserve(e)), 0 === h.size && (s.disconnect(), o.delete(r))
           }
       }
-      var u = class extends n.Component {
+      var b = class extends n.Component {
         constructor(e) {
           super(e), s(this, "node", null), s(this, "_unobserveCb", null), s(this, "handleNode", (e => {
             this.node && (this.unobserve(), e || this.props.triggerOnce || this.props.skip || this.setState({
@@ -164,21 +164,21 @@ _global.SENTRY_RELEASE = {
             root: s,
             rootMargin: o,
             onChange: a,
-            skip: d,
-            trackVisibility: l,
+            skip: l,
+            trackVisibility: d,
             delay: h,
             initialInView: c,
-            fallbackInView: u,
-            ...b
+            fallbackInView: b,
+            ...u
           } = this.props;
           return n.createElement(t || "div", {
             ref: this.handleNode,
-            ...b
+            ...u
           }, e)
         }
       };
 
-      function b({
+      function u({
         threshold: e,
         delay: t,
         trackVisibility: i,
@@ -186,19 +186,19 @@ _global.SENTRY_RELEASE = {
         root: s,
         triggerOnce: o,
         skip: a,
-        initialInView: d,
-        fallbackInView: l,
+        initialInView: l,
+        fallbackInView: d,
         onChange: h
       } = {}) {
-        var u;
-        const [b, f] = n.useState(null), p = n.useRef(), [g, y] = n.useState({
-          inView: !!d,
+        var b;
+        const [u, f] = n.useState(null), p = n.useRef(), [g, y] = n.useState({
+          inView: !!l,
           entry: void 0
         });
         p.current = h, n.useEffect((() => {
-          if (a || !b) return;
+          if (a || !u) return;
           let n;
-          return n = c(b, ((e, t) => {
+          return n = c(u, ((e, t) => {
             y({
               inView: e,
               entry: t
@@ -209,14 +209,14 @@ _global.SENTRY_RELEASE = {
             threshold: e,
             trackVisibility: i,
             delay: t
-          }, l), () => {
+          }, d), () => {
             n && n()
           }
-        }), [Array.isArray(e) ? e.toString() : e, b, s, r, o, a, i, l, t]);
-        const v = null == (u = g.entry) ? void 0 : u.target,
+        }), [Array.isArray(e) ? e.toString() : e, u, s, r, o, a, i, d, t]);
+        const v = null == (b = g.entry) ? void 0 : b.target,
           w = n.useRef();
-        b || !v || o || a || w.current === v || (w.current = v, y({
-          inView: !!d,
+        u || !v || o || a || w.current === v || (w.current = v, y({
+          inView: !!l,
           entry: void 0
         }));
         const k = [f, g.inView, g.entry];

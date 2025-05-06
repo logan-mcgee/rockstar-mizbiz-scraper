@@ -25,14 +25,14 @@ _global.SENTRY_RELEASE = {
         a = "right-scroll-bar-position",
         c = "width-before-scroll-bar",
         i = t(6433),
-        d = (0, t(2788).f)(),
-        l = function() {},
+        l = (0, t(2788).f)(),
+        d = function() {},
         u = o.forwardRef((function(e, n) {
           var t = o.useRef(null),
             a = o.useState({
-              onScrollCapture: l,
-              onWheelCapture: l,
-              onTouchMoveCapture: l
+              onScrollCapture: d,
+              onWheelCapture: d,
+              onTouchMoveCapture: d
             }),
             c = a[0],
             u = a[1],
@@ -54,7 +54,7 @@ _global.SENTRY_RELEASE = {
             R = (0, i.S)([t, n]),
             M = (0, r.__assign)((0, r.__assign)({}, k), c);
           return o.createElement(o.Fragment, null, p && o.createElement(S, {
-            sideCar: d,
+            sideCar: l,
             removeScrollBar: g,
             shards: v,
             noIsolation: b,
@@ -136,9 +136,9 @@ _global.SENTRY_RELEASE = {
         m = function(e, n, t, r) {
           var o = e.left,
             i = e.top,
-            d = e.right,
-            l = e.gap;
-          return void 0 === t && (t = "margin"), "\n  .".concat("with-scroll-bars-hidden", " {\n   overflow: hidden ").concat(r, ";\n   padding-right: ").concat(l, "px ").concat(r, ";\n  }\n  body {\n    overflow: hidden ").concat(r, ";\n    overscroll-behavior: contain;\n    ").concat([n && "position: relative ".concat(r, ";"), "margin" === t && "\n    padding-left: ".concat(o, "px;\n    padding-top: ").concat(i, "px;\n    padding-right: ").concat(d, "px;\n    margin-left:0;\n    margin-top:0;\n    margin-right: ").concat(l, "px ").concat(r, ";\n    "), "padding" === t && "padding-right: ".concat(l, "px ").concat(r, ";")].filter(Boolean).join(""), "\n  }\n  \n  .").concat(a, " {\n    right: ").concat(l, "px ").concat(r, ";\n  }\n  \n  .").concat(c, " {\n    margin-right: ").concat(l, "px ").concat(r, ";\n  }\n  \n  .").concat(a, " .").concat(a, " {\n    right: 0 ").concat(r, ";\n  }\n  \n  .").concat(c, " .").concat(c, " {\n    margin-right: 0 ").concat(r, ";\n  }\n  \n  body {\n    ").concat("--removed-body-scroll-bar-size", ": ").concat(l, "px;\n  }\n")
+            l = e.right,
+            d = e.gap;
+          return void 0 === t && (t = "margin"), "\n  .".concat("with-scroll-bars-hidden", " {\n   overflow: hidden ").concat(r, ";\n   padding-right: ").concat(d, "px ").concat(r, ";\n  }\n  body {\n    overflow: hidden ").concat(r, ";\n    overscroll-behavior: contain;\n    ").concat([n && "position: relative ".concat(r, ";"), "margin" === t && "\n    padding-left: ".concat(o, "px;\n    padding-top: ").concat(i, "px;\n    padding-right: ").concat(l, "px;\n    margin-left:0;\n    margin-top:0;\n    margin-right: ").concat(d, "px ").concat(r, ";\n    "), "padding" === t && "padding-right: ".concat(d, "px ").concat(r, ";")].filter(Boolean).join(""), "\n  }\n  \n  .").concat(a, " {\n    right: ").concat(d, "px ").concat(r, ";\n  }\n  \n  .").concat(c, " {\n    margin-right: ").concat(d, "px ").concat(r, ";\n  }\n  \n  .").concat(a, " .").concat(a, " {\n    right: 0 ").concat(r, ";\n  }\n  \n  .").concat(c, " .").concat(c, " {\n    margin-right: 0 ").concat(r, ";\n  }\n  \n  body {\n    ").concat("--removed-body-scroll-bar-size", ": ").concat(d, "px;\n  }\n")
         },
         b = function(e) {
           var n = e.noRelative,
@@ -233,15 +233,15 @@ _global.SENTRY_RELEASE = {
         for (var n = null; null !== e;) e instanceof ShadowRoot && (n = e.host, e = e.host), e = e.parentNode;
         return n
       }
-      const P = (d.useMedium((function(e) {
+      const P = (l.useMedium((function(e) {
         var n = o.useRef([]),
           t = o.useRef([0, 0]),
           a = o.useRef(),
           c = o.useState(T++)[0],
           i = o.useState(h)[0],
-          d = o.useRef(e);
+          l = o.useRef(e);
         o.useEffect((function() {
-          d.current = e
+          l.current = e
         }), [e]), o.useEffect((function() {
           if (e.inert) {
             document.body.classList.add("block-interactivity-".concat(c));
@@ -256,19 +256,19 @@ _global.SENTRY_RELEASE = {
               }
           }
         }), [e.inert, e.lockRef.current, e.shards]);
-        var l = o.useCallback((function(e, n) {
-            if ("touches" in e && 2 === e.touches.length) return !d.current.allowPinchZoom;
+        var d = o.useCallback((function(e, n) {
+            if ("touches" in e && 2 === e.touches.length) return !l.current.allowPinchZoom;
             var r, o = R(e),
               c = t.current,
               i = "deltaX" in e ? e.deltaX : c[0] - o[0],
-              l = "deltaY" in e ? e.deltaY : c[1] - o[1],
+              d = "deltaY" in e ? e.deltaY : c[1] - o[1],
               u = e.target,
-              s = Math.abs(i) > Math.abs(l) ? "h" : "v";
+              s = Math.abs(i) > Math.abs(d) ? "h" : "v";
             if ("touches" in e && "h" === s && "range" === u.type) return !1;
             var f = C(s, u);
             if (!f) return !0;
             if (f ? r = s : (r = "v" === s ? "h" : "v", f = C(s, u)), !f) return !1;
-            if (!a.current && "changedTouches" in e && (i || l) && (a.current = r), !r) return !0;
+            if (!a.current && "changedTouches" in e && (i || d) && (a.current = r), !r) return !0;
             var h = a.current || r;
             return function(e, n, t, r, o) {
               var a = function(e, n) {
@@ -276,8 +276,8 @@ _global.SENTRY_RELEASE = {
                 }(e, window.getComputedStyle(n).direction),
                 c = a * r,
                 i = t.target,
-                d = n.contains(i),
-                l = !1,
+                l = n.contains(i),
+                d = !1,
                 u = c > 0,
                 s = 0,
                 f = 0;
@@ -286,9 +286,9 @@ _global.SENTRY_RELEASE = {
                   g = h[0],
                   p = h[1] - h[2] - a * g;
                 (g || p) && k(e, i) && (s += p, f += g), i = i instanceof ShadowRoot ? i.host : i.parentNode
-              } while (!d && i !== document.body || d && (n.contains(i) || n === i));
-              return (u && (o && Math.abs(s) < 1 || !o && c > s) || !u && (o && Math.abs(f) < 1 || !o && -c > f)) && (l = !0), l
-            }(h, n, e, "h" === h ? i : l, !0)
+              } while (!l && i !== document.body || l && (n.contains(i) || n === i));
+              return (u && (o && Math.abs(s) < 1 || !o && c > s) || !u && (o && Math.abs(f) < 1 || !o && -c > f)) && (d = !0), d
+            }(h, n, e, "h" === h ? i : d, !0)
           }), []),
           u = o.useCallback((function(e) {
             var t = e;
@@ -300,10 +300,10 @@ _global.SENTRY_RELEASE = {
                 }))[0];
               if (o && o.should) t.cancelable && t.preventDefault();
               else if (!o) {
-                var a = (d.current.shards || []).map(L).filter(Boolean).filter((function(e) {
+                var a = (l.current.shards || []).map(L).filter(Boolean).filter((function(e) {
                   return e.contains(t.target)
                 }));
-                (a.length > 0 ? l(t, a[0]) : !d.current.noIsolation) && t.cancelable && t.preventDefault()
+                (a.length > 0 ? d(t, a[0]) : !l.current.noIsolation) && t.cancelable && t.preventDefault()
               }
             }
           }), []),
@@ -325,10 +325,10 @@ _global.SENTRY_RELEASE = {
             t.current = R(e), a.current = void 0
           }), []),
           g = o.useCallback((function(n) {
-            s(n.type, M(n), n.target, l(n, e.lockRef.current))
+            s(n.type, M(n), n.target, d(n, e.lockRef.current))
           }), []),
           p = o.useCallback((function(n) {
-            s(n.type, R(n), n.target, l(n, e.lockRef.current))
+            s(n.type, R(n), n.target, d(n, e.lockRef.current))
           }), []);
         o.useEffect((function() {
           return x.push(i), e.setCallbacks({

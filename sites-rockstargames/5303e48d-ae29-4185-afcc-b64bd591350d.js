@@ -36,11 +36,11 @@ _global.SENTRY_RELEASE = {
         u = e(82510),
         x = e.n(u),
         v = e(90675),
-        w = e.n(v),
-        b = e(53669),
+        b = e.n(v),
+        w = e(53669),
         y = {};
-      y.styleTagTransform = w(), y.setAttributes = f(), y.insert = p().bind(null, "head"), y.domAPI = m(), y.insertStyleElement = x(), s()(b.A, y);
-      const k = b.A && b.A.locals ? b.A.locals : void 0;
+      y.styleTagTransform = b(), y.setAttributes = f(), y.insert = p().bind(null, "head"), y.domAPI = m(), y.insertStyleElement = x(), s()(w.A, y);
+      const k = w.A && w.A.locals ? w.A.locals : void 0;
       var z = e(73855);
       const A = (0, i.withTranslations)((n => {
         let {

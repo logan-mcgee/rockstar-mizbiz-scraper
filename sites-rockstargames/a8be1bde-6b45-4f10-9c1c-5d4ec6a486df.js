@@ -18,8 +18,8 @@ _global.SENTRY_RELEASE = {
   [3002, 621], {
     73002: (e, n, t) => {
       t.r(n), t.d(n, {
-        useHardwareConcurrency: () => v,
-        useMemoryStatus: () => g,
+        useHardwareConcurrency: () => g,
+        useMemoryStatus: () => b,
         useNetworkStatus: () => d,
         useSaveData: () => l
       });
@@ -123,7 +123,7 @@ _global.SENTRY_RELEASE = {
           jsHeapSizeLimit: p ? p.jsHeapSizeLimit : null
         }
       }
-      var y, g = function(e) {
+      var y, b = function(e) {
         return u && e ? i({}, s, {}, e) : i({}, s)
       };
       y = "undefined" != typeof navigator && "hardwareConcurrency" in navigator ? {
@@ -132,7 +132,7 @@ _global.SENTRY_RELEASE = {
       } : {
         unsupported: !0
       };
-      var v = function() {
+      var g = function() {
         return i({}, y)
       }
     }

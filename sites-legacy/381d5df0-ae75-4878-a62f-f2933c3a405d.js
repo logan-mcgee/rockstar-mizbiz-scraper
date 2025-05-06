@@ -64,8 +64,8 @@ _global.SENTRY_RELEASE = {
       }
       var s = n(62229),
         l = n(57145),
-        d = n(75676).createFocusTrap,
-        f = n(45993).isFocusable,
+        f = n(75676).createFocusTrap,
+        d = n(45993).isFocusable,
         p = function(e) {
           ! function(e, t) {
             if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function");
@@ -79,7 +79,7 @@ _global.SENTRY_RELEASE = {
               writable: !1
             }), t && a(e, t)
           }(v, e);
-          var t, n, l, d, p = (l = v, d = function() {
+          var t, n, l, f, p = (l = v, f = function() {
             if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
             if (Reflect.construct.sham) return !1;
             if ("function" == typeof Proxy) return !0;
@@ -90,7 +90,7 @@ _global.SENTRY_RELEASE = {
             }
           }(), function() {
             var e, t = c(l);
-            if (d) {
+            if (f) {
               var n = c(this).constructor;
               e = Reflect.construct(t, arguments, n)
             } else e = t.apply(this, arguments);
@@ -186,7 +186,7 @@ _global.SENTRY_RELEASE = {
               var e = this,
                 t = function() {
                   var t = e.getReturnFocusNode(),
-                    n = !(!e.originalOptions.returnFocusOnDeactivate || null == t || !t.focus || e.outsideClick && (!e.outsideClick.allowDeactivation || f(e.outsideClick.target, e.internalOptions.tabbableOptions))),
+                    n = !(!e.originalOptions.returnFocusOnDeactivate || null == t || !t.focus || e.outsideClick && (!e.outsideClick.allowDeactivation || d(e.outsideClick.target, e.internalOptions.tabbableOptions))),
                     o = e.internalOptions.preventScroll,
                     r = void 0 !== o && o;
                   n && t.focus({
@@ -281,7 +281,7 @@ _global.SENTRY_RELEASE = {
         active: !0,
         paused: !1,
         focusTrapOptions: {},
-        _createFocusTrap: d
+        _createFocusTrap: f
       }, e.exports = p
     },
     75676: (e, t, n) => {
@@ -348,11 +348,11 @@ _global.SENTRY_RELEASE = {
             return !t(e) || (n = o, !1)
           })), n
         },
-        d = function(e) {
+        f = function(e) {
           for (var t = arguments.length, n = new Array(t > 1 ? t - 1 : 0), o = 1; o < t; o++) n[o - 1] = arguments[o];
           return "function" == typeof e ? e.apply(void 0, n) : e
         },
-        f = function(e) {
+        d = function(e) {
           return e.target.shadowRoot && "function" == typeof e.composedPath ? e.composedPath()[0] : e.target
         },
         p = [],
@@ -476,19 +476,19 @@ _global.SENTRY_RELEASE = {
                 n = e.event,
                 r = e.isBackward,
                 a = void 0 !== r && r;
-              t = t || f(n), O();
+              t = t || d(n), O();
               var c = null;
               if (h.tabbableGroups.length > 0) {
                 var u = m(t, n),
                   s = u >= 0 ? h.containerGroups[u] : void 0;
                 if (u < 0) c = a ? h.tabbableGroups[h.tabbableGroups.length - 1].lastTabbableNode : h.tabbableGroups[0].firstTabbableNode;
                 else if (a) {
-                  var d = l(h.tabbableGroups, (function(e) {
+                  var f = l(h.tabbableGroups, (function(e) {
                     var n = e.firstTabbableNode;
                     return t === n
                   }));
-                  if (d < 0 && (s.container === t || (0, o.isFocusable)(t, b.tabbableOptions) && !(0, o.isTabbable)(t, b.tabbableOptions) && !s.nextTabbableNode(t, !1)) && (d = u), d >= 0) {
-                    var p = 0 === d ? h.tabbableGroups.length - 1 : d - 1,
+                  if (f < 0 && (s.container === t || (0, o.isFocusable)(t, b.tabbableOptions) && !(0, o.isTabbable)(t, b.tabbableOptions) && !s.nextTabbableNode(t, !1)) && (f = u), f >= 0) {
+                    var p = 0 === f ? h.tabbableGroups.length - 1 : f - 1,
                       v = h.tabbableGroups[p];
                     c = (0, o.getTabIndex)(t) >= 0 ? v.lastTabbableNode : v.lastDomTabbableNode
                   } else i(n) || (c = s.nextTabbableNode(t, !1))
@@ -507,13 +507,13 @@ _global.SENTRY_RELEASE = {
               return c
             },
             F = function(e) {
-              var t = f(e);
-              m(t, e) >= 0 || (d(b.clickOutsideDeactivates, e) ? n.deactivate({
+              var t = d(e);
+              m(t, e) >= 0 || (f(b.clickOutsideDeactivates, e) ? n.deactivate({
                 returnFocus: b.returnFocusOnDeactivate
-              }) : d(b.allowOutsideClick, e) || e.preventDefault())
+              }) : f(b.allowOutsideClick, e) || e.preventDefault())
             },
             N = function(e) {
-              var t = f(e),
+              var t = d(e),
                 n = m(t, e) >= 0;
               if (n || t instanceof Document) n && (h.mostRecentlyFocusedNode = t);
               else {
@@ -544,7 +544,7 @@ _global.SENTRY_RELEASE = {
               h.recentNavEvent = void 0
             },
             P = function(e) {
-              if (("Escape" === (null == (t = e) ? void 0 : t.key) || "Esc" === (null == t ? void 0 : t.key) || 27 === (null == t ? void 0 : t.keyCode)) && !1 !== d(b.escapeDeactivates, e)) return e.preventDefault(), void n.deactivate();
+              if (("Escape" === (null == (t = e) ? void 0 : t.key) || "Esc" === (null == t ? void 0 : t.key) || 27 === (null == t ? void 0 : t.keyCode)) && !1 !== f(b.escapeDeactivates, e)) return e.preventDefault(), void n.deactivate();
               var t;
               (b.isKeyForward(e) || b.isKeyBackward(e)) && function(e) {
                 var t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
@@ -557,8 +557,8 @@ _global.SENTRY_RELEASE = {
               }(e, b.isKeyBackward(e))
             },
             S = function(e) {
-              var t = f(e);
-              m(t, e) >= 0 || d(b.clickOutsideDeactivates, e) || d(b.allowOutsideClick, e) || (e.preventDefault(), e.stopImmediatePropagation())
+              var t = d(e);
+              m(t, e) >= 0 || f(b.clickOutsideDeactivates, e) || f(b.allowOutsideClick, e) || (e.preventDefault(), e.stopImmediatePropagation())
             },
             R = function() {
               if (h.active) return function(e, t) {
@@ -666,7 +666,7 @@ _global.SENTRY_RELEASE = {
     45993: (e, t, n) => {
       n.r(t), n.d(t, {
         focusable: () => O,
-        getTabIndex: () => f,
+        getTabIndex: () => d,
         isFocusable: () => k,
         isTabbable: () => T,
         tabbable: () => w
@@ -698,17 +698,17 @@ _global.SENTRY_RELEASE = {
             if (!u(s, !1))
               if ("SLOT" === s.tagName) {
                 var l = s.assignedElements(),
-                  d = e(l.length ? l : s.children, !0, o);
-                o.flatten ? a.push.apply(a, d) : a.push({
+                  f = e(l.length ? l : s.children, !0, o);
+                o.flatten ? a.push.apply(a, f) : a.push({
                   scopeParent: s,
-                  candidates: d
+                  candidates: f
                 })
               } else {
                 i.call(s, r) && o.filter(s) && (n || !t.includes(s)) && a.push(s);
-                var f = s.shadowRoot || "function" == typeof o.getShadowRoot && o.getShadowRoot(s),
-                  p = !u(f, !1) && (!o.shadowRootFilter || o.shadowRootFilter(s));
-                if (f && p) {
-                  var v = e(!0 === f ? s.children : f.children, !0, o);
+                var d = s.shadowRoot || "function" == typeof o.getShadowRoot && o.getShadowRoot(s),
+                  p = !u(d, !1) && (!o.shadowRootFilter || o.shadowRootFilter(s));
+                if (d && p) {
+                  var v = e(!0 === d ? s.children : d.children, !0, o);
                   o.flatten ? a.push.apply(a, v) : a.push({
                     scopeParent: s,
                     candidates: v
@@ -718,15 +718,15 @@ _global.SENTRY_RELEASE = {
           }
           return a
         },
-        d = function(e) {
+        f = function(e) {
           return !isNaN(parseInt(e.getAttribute("tabindex"), 10))
         },
-        f = function(e) {
+        d = function(e) {
           if (!e) throw new Error("No node provided");
           return e.tabIndex < 0 && (/^(AUDIO|VIDEO|DETAILS)$/.test(e.tagName) || function(e) {
             var t, n = null == e || null === (t = e.getAttribute) || void 0 === t ? void 0 : t.call(e, "contenteditable");
             return "" === n || "true" === n
-          }(e)) && !d(e) ? 0 : e.tabIndex
+          }(e)) && !f(e) ? 0 : e.tabIndex
         },
         p = function(e, t) {
           return e.tabIndex === t.tabIndex ? e.documentOrder - t.documentOrder : e.tabIndex - t.tabIndex
@@ -767,8 +767,8 @@ _global.SENTRY_RELEASE = {
                     u = !1;
                   if (a && a !== e)
                     for (u = !!(null !== (n = i) && void 0 !== n && null !== (o = n.ownerDocument) && void 0 !== o && o.contains(i) || null != e && null !== (r = e.ownerDocument) && void 0 !== r && r.contains(e)); !u && i;) {
-                      var s, l, d;
-                      u = !(null === (l = i = null === (s = a = c(i)) || void 0 === s ? void 0 : s.host) || void 0 === l || null === (d = l.ownerDocument) || void 0 === d || !d.contains(i))
+                      var s, l, f;
+                      u = !(null === (l = i = null === (s = a = c(i)) || void 0 === s ? void 0 : s.host) || void 0 === l || null === (f = l.ownerDocument) || void 0 === f || !f.contains(i))
                     }
                   return u
                 }(e)) return !e.getClientRects().length;
@@ -816,7 +816,7 @@ _global.SENTRY_RELEASE = {
               }(t, e.form);
               return !r || r === e
             }(e)
-          }(t) || f(t) < 0 || !h(e, t))
+          }(t) || d(t) < 0 || !h(e, t))
         },
         m = function(e) {
           var t = parseInt(e.getAttribute("tabindex"), 10);
@@ -829,8 +829,8 @@ _global.SENTRY_RELEASE = {
             var a = !!t.scopeParent,
               i = a ? t.scopeParent : t,
               c = function(e, t) {
-                var n = f(e);
-                return n < 0 && t && !d(e) ? 0 : n
+                var n = d(e);
+                return n < 0 && t && !f(e) ? 0 : n
               }(i, a),
               u = a ? e(t.candidates) : i;
             0 === c ? a ? n.push.apply(n, u) : n.push(i) : o.push({

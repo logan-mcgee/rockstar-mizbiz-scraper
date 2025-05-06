@@ -22,12 +22,12 @@ _global.SENTRY_RELEASE = {
 
       function o() {}
 
-      function d() {}
-      d.resetWarningCache = o, e.exports = function() {
-        function e(e, n, a, o, d, r) {
-          if (r !== t) {
-            var s = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
-            throw s.name = "Invariant Violation", s
+      function r() {}
+      r.resetWarningCache = o, e.exports = function() {
+        function e(e, n, a, o, r, s) {
+          if (s !== t) {
+            var d = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
+            throw d.name = "Invariant Violation", d
           }
         }
 
@@ -55,7 +55,7 @@ _global.SENTRY_RELEASE = {
           oneOfType: n,
           shape: n,
           exact: n,
-          checkPropTypes: d,
+          checkPropTypes: r,
           resetWarningCache: o
         };
         return a.PropTypes = a, a

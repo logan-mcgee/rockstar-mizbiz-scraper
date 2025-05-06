@@ -23,19 +23,19 @@ _global.SENTRY_RELEASE = {
       var n = s(9623),
         t = s(53178),
         r = s.n(t),
-        o = s(27835),
-        d = s.n(o),
-        l = s(17529),
-        c = s.n(l),
+        d = s(27835),
+        o = s.n(d),
+        c = s(17529),
+        l = s.n(c),
         i = s(72162),
         f = s.n(i),
-        g = s(82510),
-        b = s.n(g),
+        b = s(82510),
+        g = s.n(b),
         u = s(90675),
         m = s.n(u),
         A = s(84045),
         k = {};
-      k.styleTagTransform = m(), k.setAttributes = f(), k.insert = c().bind(null, "head"), k.domAPI = d(), k.insertStyleElement = b(), r()(A.A, k);
+      k.styleTagTransform = m(), k.setAttributes = f(), k.insert = l().bind(null, "head"), k.domAPI = o(), k.insertStyleElement = g(), r()(A.A, k);
       const w = A.A && A.A.locals ? A.A.locals : void 0;
       var y = s(73855);
       const p = () => {
@@ -57,24 +57,24 @@ _global.SENTRY_RELEASE = {
     },
     84045: (e, a, s) => {
       s.d(a, {
-        A: () => d
+        A: () => o
       });
       var n = s(42587),
         t = s.n(n),
         r = s(15081),
-        o = s.n(r)()(t());
-      o.push([e.id, ".rockstargames-sites-rockstargamesd3d06437c2c029c4d95e42b4b1690f8e{background:#000;display:flex;flex:1}.rockstargames-sites-rockstargamescb8ab5c6a510d8d025142e899a0588f8{width:100%}", "", {
+        d = s.n(r)()(t());
+      d.push([e.id, ".rockstargames-sites-rockstargamesd3d06437c2c029c4d95e42b4b1690f8e{background:#000;display:flex;flex:1}.rockstargames-sites-rockstargamescb8ab5c6a510d8d025142e899a0588f8{width:100%}", "", {
         version: 3,
         sources: ["webpack://./../../buildtime/modules-core-screenshot-viewer/src/components/Root/index.less"],
         names: [],
         mappings: "AAAA,mEAEI,eAAA,CACA,YAAA,CAFA,MAGJ,CAEA,mEACI,UAAJ",
         sourcesContent: [".viewer {\n    flex: 1;\n    background: black;\n    display: flex;\n}\n\n.img {\n    width: 100%;\n}\n"],
         sourceRoot: ""
-      }]), o.locals = {
+      }]), d.locals = {
         viewer: "rockstargames-sites-rockstargamesd3d06437c2c029c4d95e42b4b1690f8e",
         img: "rockstargames-sites-rockstargamescb8ab5c6a510d8d025142e899a0588f8"
       };
-      const d = o
+      const o = d
     }
   }
 ]);
