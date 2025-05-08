@@ -29,23 +29,23 @@ _global.SENTRY_RELEASE = {
           __source: !0
         };
 
-      function s(e, n, r) {
+      function c(e, n, r) {
         var t, l = {},
-          s = null,
-          i = null;
-        for (t in void 0 !== r && (s = "" + r), void 0 !== n.key && (s = "" + n.key), void 0 !== n.ref && (i = n.ref), n) a.call(n, t) && !f.hasOwnProperty(t) && (l[t] = n[t]);
+          c = null,
+          s = null;
+        for (t in void 0 !== r && (c = "" + r), void 0 !== n.key && (c = "" + n.key), void 0 !== n.ref && (s = n.ref), n) a.call(n, t) && !f.hasOwnProperty(t) && (l[t] = n[t]);
         if (e && e.defaultProps)
           for (t in n = e.defaultProps) void 0 === l[t] && (l[t] = n[t]);
         return {
           $$typeof: o,
           type: e,
-          key: s,
-          ref: i,
+          key: c,
+          ref: s,
           props: l,
           _owner: d.current
         }
       }
-      n.Fragment = l, n.jsx = s, n.jsxs = s
+      n.Fragment = l, n.jsx = c, n.jsxs = c
     },
     73855: (e, n, r) => {
       e.exports = r(32469)
@@ -84,7 +84,7 @@ _global.SENTRY_RELEASE = {
     },
     62294: (e, n, r) => {
       r.r(n), r.d(n, {
-        Root: () => i,
+        Root: () => s,
         Slot: () => a,
         Slottable: () => f
       });
@@ -95,7 +95,7 @@ _global.SENTRY_RELEASE = {
           const {
             children: r,
             ...o
-          } = e, a = t.Children.toArray(r), f = a.find(s);
+          } = e, a = t.Children.toArray(r), f = a.find(c);
           if (f) {
             const e = f.props.children,
               r = a.map((n => n === f ? t.Children.count(e) > 1 ? t.Children.only(null) : t.isValidElement(e) ? e.props.children : null : n));
@@ -153,10 +153,10 @@ _global.SENTRY_RELEASE = {
         children: e
       });
 
-      function s(e) {
+      function c(e) {
         return t.isValidElement(e) && e.type === f
       }
-      var i = a
+      var s = a
     }
   }
 ]);

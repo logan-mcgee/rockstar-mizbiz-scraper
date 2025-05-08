@@ -17,11 +17,11 @@ _global.SENTRY_RELEASE = {
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [1547, 3855, 6236, 9093, 1474, 3928], {
     32469: (e, r, a) => {
-      var o = a(62229),
-        d = Symbol.for("react.element"),
+      var d = a(62229),
+        o = Symbol.for("react.element"),
         n = Symbol.for("react.fragment"),
         t = Object.prototype.hasOwnProperty,
-        l = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        l = d.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         s = {
           key: !0,
           ref: !0,
@@ -30,14 +30,14 @@ _global.SENTRY_RELEASE = {
         };
 
       function i(e, r, a) {
-        var o, n = {},
+        var d, n = {},
           i = null,
           f = null;
-        for (o in void 0 !== a && (i = "" + a), void 0 !== r.key && (i = "" + r.key), void 0 !== r.ref && (f = r.ref), r) t.call(r, o) && !s.hasOwnProperty(o) && (n[o] = r[o]);
+        for (d in void 0 !== a && (i = "" + a), void 0 !== r.key && (i = "" + r.key), void 0 !== r.ref && (f = r.ref), r) t.call(r, d) && !s.hasOwnProperty(d) && (n[d] = r[d]);
         if (e && e.defaultProps)
-          for (o in r = e.defaultProps) void 0 === n[o] && (n[o] = r[o]);
+          for (d in r = e.defaultProps) void 0 === n[d] && (n[d] = r[d]);
         return {
-          $$typeof: d,
+          $$typeof: o,
           type: e,
           key: i,
           ref: f,
@@ -55,30 +55,30 @@ _global.SENTRY_RELEASE = {
         hO: () => s,
         sG: () => l
       });
-      var o = a(62229),
-        d = a(44853),
+      var d = a(62229),
+        o = a(44853),
         n = a(78217),
         t = a(73855),
         l = ["a", "button", "div", "form", "h2", "h3", "img", "input", "label", "li", "nav", "ol", "p", "span", "svg", "ul"].reduce(((e, r) => {
           const a = (0, n.createSlot)(`Primitive.${r}`),
-            d = o.forwardRef(((e, o) => {
+            o = d.forwardRef(((e, d) => {
               const {
-                asChild: d,
+                asChild: o,
                 ...n
-              } = e, l = d ? a : r;
+              } = e, l = o ? a : r;
               return "undefined" != typeof window && (window[Symbol.for("radix-ui")] = !0), (0, t.jsx)(l, {
                 ...n,
-                ref: o
+                ref: d
               })
             }));
-          return d.displayName = `Primitive.${r}`, {
+          return o.displayName = `Primitive.${r}`, {
             ...e,
-            [r]: d
+            [r]: o
           }
         }), {});
 
       function s(e, r) {
-        e && d.flushSync((() => e.dispatchEvent(r)))
+        e && o.flushSync((() => e.dispatchEvent(r)))
       }
     },
     51547: (e, r, a) => {
@@ -86,10 +86,10 @@ _global.SENTRY_RELEASE = {
         Root: () => l,
         VisuallyHidden: () => t
       });
-      var o = a(62229),
-        d = a(67774),
+      var d = a(62229),
+        o = a(67774),
         n = a(73855),
-        t = o.forwardRef(((e, r) => (0, n.jsx)(d.sG.span, {
+        t = d.forwardRef(((e, r) => (0, n.jsx)(o.sG.span, {
           ...e,
           ref: r,
           style: {

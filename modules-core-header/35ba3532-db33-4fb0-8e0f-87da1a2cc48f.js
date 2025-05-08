@@ -23,43 +23,43 @@ _global.SENTRY_RELEASE = {
     24879: (e, a, o) => {
       o.r(a);
       var n = o(95966),
-        t = o(40347),
-        d = o(39082),
+        d = o(40347),
+        t = o(39082),
         r = o(73855);
       const {
         graphEnv: s
-      } = (0, n.getConfigForDomain)(), l = e => {
+      } = (0, n.getConfigForDomain)(), c = e => {
         let {
           navData: a,
           location: o,
-          onNavigate: t,
-          searchConfig: l,
-          routeOptions: f
+          onNavigate: d,
+          searchConfig: c,
+          routeOptions: l
         } = e;
-        const i = (0, n.withRockstarGraph)(d.A, {
+        const f = (0, n.withRockstarGraph)(t.A, {
           env: s
         });
-        return (0, r.jsx)(i, {
+        return (0, r.jsx)(f, {
           navData: a,
           location: o,
-          onNavigate: t,
-          searchConfig: l,
-          routeOptions: f
+          onNavigate: d,
+          searchConfig: c,
+          routeOptions: l
         })
       }, {
-        graphEnv: f
+        graphEnv: l
       } = (0, n.getConfigForDomain)();
 
-      function i() {
+      function f() {
         const e = document.createElement("div");
         e.id = "global-nav-root", document.body.prepend(e);
-        const a = (0, t.H)(e),
-          o = (0, n.withRockstarGraph)(l, {
-            env: f
+        const a = (0, d.H)(e),
+          o = (0, n.withRockstarGraph)(c, {
+            env: l
           });
         a.render((0, r.jsx)(o, {}))
       }
-      "loading" === document.readyState ? document.addEventListener("DOMContentLoaded", i) : i()
+      "loading" === document.readyState ? document.addEventListener("DOMContentLoaded", f) : f()
     }
   }
 ]);

@@ -2,7 +2,7 @@
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
       a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "f5869753-767d-4681-94f4-51fadd0dda81", e._sentryDebugIdIdentifier = "sentry-dbid-f5869753-767d-4681-94f4-51fadd0dda81")
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "64e81fc5-44f7-4c69-befb-5ee47bc827e7", e._sentryDebugIdIdentifier = "sentry-dbid-64e81fc5-44f7-4c69-befb-5ee47bc827e7")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -2308,6 +2308,10 @@ _global.SENTRY_RELEASE = {
             id: "games_menu_view_all",
             defaultMessage: "View All"
           },
+          games_menu_vi: {
+            id: "games_menu_vi",
+            defaultMessage: "Grand Theft Auto VI"
+          },
           games_menu_gta_v: {
             id: "games_menu_gta_v",
             defaultMessage: "Grand Theft Auto V"
@@ -3241,6 +3245,15 @@ _global.SENTRY_RELEASE = {
               path: "/games"
             },
             games: [{
+              titleSlug: "VI",
+              text: e.formatMessage(Vr.games_menu_vi),
+              gaText: "Grand Theft Auto VI",
+              location: {
+                domain: n,
+                path: "/VI"
+              },
+              dataTestId: "VI"
+            }, {
               titleSlug: "gta-v",
               text: e.formatMessage(Vr.games_menu_gta_v),
               gaText: "Grand Theft Auto V",
@@ -3276,15 +3289,6 @@ _global.SENTRY_RELEASE = {
                 path: "/reddeadredemption"
               },
               dataTestId: "rdr"
-            }, {
-              titleSlug: "reddeadonline",
-              text: e.formatMessage(Vr.games_menu_rdr_online),
-              gaText: "Red Dead Online",
-              location: {
-                domain: n,
-                path: "/reddeadonline"
-              },
-              dataTestId: "rdo"
             }]
           }
         },

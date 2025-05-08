@@ -292,15 +292,15 @@ _global.SENTRY_RELEASE = {
             y = e.removeScrollBar,
             m = e.enabled,
             _ = e.shards,
-            b = e.sideCar,
-            g = e.noIsolation,
+            g = e.sideCar,
+            b = e.noIsolation,
             w = e.inert,
             E = e.allowPinchZoom,
             S = e.as,
             P = void 0 === S ? "div" : S,
             O = e.gapMode,
             k = (0, r.__rest)(e, ["forwardProps", "children", "className", "removeScrollBar", "enabled", "shards", "sideCar", "noIsolation", "inert", "allowPinchZoom", "as", "gapMode"]),
-            j = b,
+            j = g,
             T = function(e, t) {
               var n, r, a, l = (n = t || null, r = function(t) {
                 return e.forEach((function(e) {
@@ -341,7 +341,7 @@ _global.SENTRY_RELEASE = {
             sideCar: l,
             removeScrollBar: y,
             shards: _,
-            noIsolation: g,
+            noIsolation: b,
             inert: w,
             setCallbacks: d,
             allowPinchZoom: !!E,
@@ -386,11 +386,11 @@ _global.SENTRY_RELEASE = {
             return "TEXTAREA" === e.tagName
           }(e) && "visible" === n[t])
         },
-        b = function(e, t) {
+        g = function(e, t) {
           var n = t.ownerDocument,
             r = t;
           do {
-            if ("undefined" != typeof ShadowRoot && r instanceof ShadowRoot && (r = r.host), g(e, r)) {
+            if ("undefined" != typeof ShadowRoot && r instanceof ShadowRoot && (r = r.host), b(e, r)) {
               var o = w(e, r);
               if (o[1] > o[2]) return !0
             }
@@ -398,7 +398,7 @@ _global.SENTRY_RELEASE = {
           } while (r && r !== n.body);
           return !1
         },
-        g = function(e, t) {
+        b = function(e, t) {
           return "v" === e ? function(e) {
             return _(e, "overflowY")
           }(t) : function(e) {
@@ -462,9 +462,9 @@ _global.SENTRY_RELEASE = {
               s = e.target,
               f = Math.abs(c) > Math.abs(l) ? "h" : "v";
             if ("touches" in e && "h" === f && "range" === s.type) return !1;
-            var d = b(f, s);
+            var d = g(f, s);
             if (!d) return !0;
-            if (d ? r = f : (r = "v" === f ? "h" : "v", d = b(f, s)), !d) return !1;
+            if (d ? r = f : (r = "v" === f ? "h" : "v", d = g(f, s)), !d) return !1;
             if (!a.current && "changedTouches" in e && (c || l) && (a.current = r), !r) return !0;
             var p = a.current || r;
             return function(e, t, n, r, o) {
@@ -482,7 +482,7 @@ _global.SENTRY_RELEASE = {
                 var p = w(e, c),
                   h = p[0],
                   v = p[1] - p[2] - a * h;
-                (h || v) && g(e, c) && (f += v, d += h), c = c instanceof ShadowRoot ? c.host : c.parentNode
+                (h || v) && b(e, c) && (f += v, d += h), c = c instanceof ShadowRoot ? c.host : c.parentNode
               } while (!u && c !== document.body || u && (t.contains(c) || t === c));
               return (s && (Math.abs(f) < 1 || !1) || !s && (Math.abs(d) < 1 || !1)) && (l = !0), l
             }(p, t, e, "h" === p ? c : l)
@@ -581,11 +581,11 @@ _global.SENTRY_RELEASE = {
         __metadata: () => p,
         __param: () => u,
         __propKey: () => f,
-        __read: () => b,
+        __read: () => g,
         __rest: () => i,
         __runInitializers: () => s,
         __setFunctionName: () => d,
-        __spread: () => g,
+        __spread: () => b,
         __spreadArray: () => E,
         __spreadArrays: () => w,
         __values: () => _,
@@ -825,7 +825,7 @@ _global.SENTRY_RELEASE = {
         throw new TypeError(t ? "Object is not iterable." : "Symbol.iterator is not defined.")
       }
 
-      function b(e, t) {
+      function g(e, t) {
         var n = "function" == typeof Symbol && e[Symbol.iterator];
         if (!n) return e;
         var r, o, a = n.call(e),
@@ -847,8 +847,8 @@ _global.SENTRY_RELEASE = {
         return i
       }
 
-      function g() {
-        for (var e = [], t = 0; t < arguments.length; t++) e = e.concat(b(arguments[t]));
+      function b() {
+        for (var e = [], t = 0; t < arguments.length; t++) e = e.concat(g(arguments[t]));
         return e
       }
 
@@ -1055,8 +1055,8 @@ _global.SENTRY_RELEASE = {
         __createBinding: y,
         __exportStar: m,
         __values: _,
-        __read: b,
-        __spread: g,
+        __read: g,
+        __spread: b,
         __spreadArrays: w,
         __spreadArray: E,
         __await: S,

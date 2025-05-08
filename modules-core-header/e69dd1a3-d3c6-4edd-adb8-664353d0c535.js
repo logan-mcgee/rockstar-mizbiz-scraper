@@ -19,73 +19,73 @@ _global.SENTRY_RELEASE = {
     8757: (e, n, t) => {
       t.r(n), t.d(n, {
         Root: () => f,
-        Slot: () => d,
-        Slottable: () => s
+        Slot: () => r,
+        Slottable: () => c
       });
       var l = t(3709),
-        o = t(62229);
+        d = t(62229);
 
-      function r(...e) {
+      function o(...e) {
         return n => e.forEach((e => function(e, n) {
           "function" == typeof e ? e(n) : null != e && (e.current = n)
         }(e, n)))
       }
-      const d = (0, o.forwardRef)(((e, n) => {
+      const r = (0, d.forwardRef)(((e, n) => {
         const {
           children: t,
-          ...r
-        } = e, d = o.Children.toArray(t), s = d.find(i);
-        if (s) {
-          const e = s.props.children,
-            t = d.map((n => n === s ? o.Children.count(e) > 1 ? o.Children.only(null) : (0, o.isValidElement)(e) ? e.props.children : null : n));
-          return (0, o.createElement)(a, (0, l.A)({}, r, {
+          ...o
+        } = e, r = d.Children.toArray(t), c = r.find(s);
+        if (c) {
+          const e = c.props.children,
+            t = r.map((n => n === c ? d.Children.count(e) > 1 ? d.Children.only(null) : (0, d.isValidElement)(e) ? e.props.children : null : n));
+          return (0, d.createElement)(a, (0, l.A)({}, o, {
             ref: n
-          }), (0, o.isValidElement)(e) ? (0, o.cloneElement)(e, void 0, t) : null)
+          }), (0, d.isValidElement)(e) ? (0, d.cloneElement)(e, void 0, t) : null)
         }
-        return (0, o.createElement)(a, (0, l.A)({}, r, {
+        return (0, d.createElement)(a, (0, l.A)({}, o, {
           ref: n
         }), t)
       }));
-      d.displayName = "Slot";
-      const a = (0, o.forwardRef)(((e, n) => {
+      r.displayName = "Slot";
+      const a = (0, d.forwardRef)(((e, n) => {
         const {
           children: t,
           ...l
         } = e;
-        return (0, o.isValidElement)(t) ? (0, o.cloneElement)(t, {
-          ...c(l, t.props),
-          ref: n ? r(n, t.ref) : t.ref
-        }) : o.Children.count(t) > 1 ? o.Children.only(null) : null
+        return (0, d.isValidElement)(t) ? (0, d.cloneElement)(t, {
+          ...i(l, t.props),
+          ref: n ? o(n, t.ref) : t.ref
+        }) : d.Children.count(t) > 1 ? d.Children.only(null) : null
       }));
       a.displayName = "SlotClone";
-      const s = ({
+      const c = ({
         children: e
-      }) => (0, o.createElement)(o.Fragment, null, e);
+      }) => (0, d.createElement)(d.Fragment, null, e);
 
-      function i(e) {
-        return (0, o.isValidElement)(e) && e.type === s
+      function s(e) {
+        return (0, d.isValidElement)(e) && e.type === c
       }
 
-      function c(e, n) {
+      function i(e, n) {
         const t = {
           ...n
         };
         for (const l in n) {
-          const o = e[l],
-            r = n[l];
-          /^on[A-Z]/.test(l) ? o && r ? t[l] = (...e) => {
-            r(...e), o(...e)
-          } : o && (t[l] = o) : "style" === l ? t[l] = {
-            ...o,
-            ...r
-          } : "className" === l && (t[l] = [o, r].filter(Boolean).join(" "))
+          const d = e[l],
+            o = n[l];
+          /^on[A-Z]/.test(l) ? d && o ? t[l] = (...e) => {
+            o(...e), d(...e)
+          } : d && (t[l] = d) : "style" === l ? t[l] = {
+            ...d,
+            ...o
+          } : "className" === l && (t[l] = [d, o].filter(Boolean).join(" "))
         }
         return {
           ...e,
           ...t
         }
       }
-      const f = d
+      const f = r
     },
     3709: (e, n, t) => {
       function l() {

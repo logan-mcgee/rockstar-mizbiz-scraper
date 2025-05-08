@@ -29,23 +29,23 @@ _global.SENTRY_RELEASE = {
           __source: !0
         };
 
-      function f(e, n, r) {
+      function c(e, n, r) {
         var t, l = {},
-          f = null,
-          s = null;
-        for (t in void 0 !== r && (f = "" + r), void 0 !== n.key && (f = "" + n.key), void 0 !== n.ref && (s = n.ref), n) a.call(n, t) && !i.hasOwnProperty(t) && (l[t] = n[t]);
+          c = null,
+          f = null;
+        for (t in void 0 !== r && (c = "" + r), void 0 !== n.key && (c = "" + n.key), void 0 !== n.ref && (f = n.ref), n) a.call(n, t) && !i.hasOwnProperty(t) && (l[t] = n[t]);
         if (e && e.defaultProps)
           for (t in n = e.defaultProps) void 0 === l[t] && (l[t] = n[t]);
         return {
           $$typeof: o,
           type: e,
-          key: f,
-          ref: s,
+          key: c,
+          ref: f,
           props: l,
           _owner: d.current
         }
       }
-      n.Fragment = l, n.jsx = f, n.jsxs = f
+      n.Fragment = l, n.jsx = c, n.jsxs = c
     },
     73855: (e, n, r) => {
       e.exports = r(32469)
@@ -86,9 +86,9 @@ _global.SENTRY_RELEASE = {
       r.r(n), r.d(n, {
         Root: () => d,
         Slot: () => d,
-        Slottable: () => c,
+        Slottable: () => s,
         createSlot: () => a,
-        createSlottable: () => s
+        createSlottable: () => f
       });
       var t = r(62229),
         o = r(65160),
@@ -157,20 +157,20 @@ _global.SENTRY_RELEASE = {
         }));
         return n.displayName = `${e}.SlotClone`, n
       }
-      var f = Symbol("radix.slottable");
+      var c = Symbol("radix.slottable");
 
-      function s(e) {
+      function f(e) {
         const n = ({
           children: e
         }) => (0, l.jsx)(l.Fragment, {
           children: e
         });
-        return n.displayName = `${e}.Slottable`, n.__radixId = f, n
+        return n.displayName = `${e}.Slottable`, n.__radixId = c, n
       }
-      var c = s("Slottable");
+      var s = f("Slottable");
 
       function u(e) {
-        return t.isValidElement(e) && "function" == typeof e.type && "__radixId" in e.type && e.type.__radixId === f
+        return t.isValidElement(e) && "function" == typeof e.type && "__radixId" in e.type && e.type.__radixId === c
       }
     }
   }

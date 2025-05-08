@@ -18,9 +18,9 @@ _global.SENTRY_RELEASE = {
   [8107, 488], {
     68107: (e, n, t) => {
       t.r(n), t.d(n, {
-        Root: () => f,
-        Slot: () => a,
-        Slottable: () => s
+        Root: () => i,
+        Slot: () => d,
+        Slottable: () => c
       });
       var l = t(3709),
         o = t(62229);
@@ -30,43 +30,43 @@ _global.SENTRY_RELEASE = {
           "function" == typeof e ? e(n) : null != e && (e.current = n)
         }(e, n)))
       }
-      const a = (0, o.forwardRef)(((e, n) => {
+      const d = (0, o.forwardRef)(((e, n) => {
         const {
           children: t,
           ...r
-        } = e, a = o.Children.toArray(t), s = a.find(i);
-        if (s) {
-          const e = s.props.children,
-            t = a.map((n => n === s ? o.Children.count(e) > 1 ? o.Children.only(null) : (0, o.isValidElement)(e) ? e.props.children : null : n));
-          return (0, o.createElement)(d, (0, l.A)({}, r, {
+        } = e, d = o.Children.toArray(t), c = d.find(s);
+        if (c) {
+          const e = c.props.children,
+            t = d.map((n => n === c ? o.Children.count(e) > 1 ? o.Children.only(null) : (0, o.isValidElement)(e) ? e.props.children : null : n));
+          return (0, o.createElement)(a, (0, l.A)({}, r, {
             ref: n
           }), (0, o.isValidElement)(e) ? (0, o.cloneElement)(e, void 0, t) : null)
         }
-        return (0, o.createElement)(d, (0, l.A)({}, r, {
+        return (0, o.createElement)(a, (0, l.A)({}, r, {
           ref: n
         }), t)
       }));
-      a.displayName = "Slot";
-      const d = (0, o.forwardRef)(((e, n) => {
+      d.displayName = "Slot";
+      const a = (0, o.forwardRef)(((e, n) => {
         const {
           children: t,
           ...l
         } = e;
         return (0, o.isValidElement)(t) ? (0, o.cloneElement)(t, {
-          ...c(l, t.props),
+          ...f(l, t.props),
           ref: n ? r(n, t.ref) : t.ref
         }) : o.Children.count(t) > 1 ? o.Children.only(null) : null
       }));
-      d.displayName = "SlotClone";
-      const s = ({
+      a.displayName = "SlotClone";
+      const c = ({
         children: e
       }) => (0, o.createElement)(o.Fragment, null, e);
 
-      function i(e) {
-        return (0, o.isValidElement)(e) && e.type === s
+      function s(e) {
+        return (0, o.isValidElement)(e) && e.type === c
       }
 
-      function c(e, n) {
+      function f(e, n) {
         const t = {
           ...n
         };
@@ -85,7 +85,7 @@ _global.SENTRY_RELEASE = {
           ...t
         }
       }
-      const f = a
+      const i = d
     },
     3709: (e, n, t) => {
       function l() {

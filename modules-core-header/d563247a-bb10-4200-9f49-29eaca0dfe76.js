@@ -18,43 +18,43 @@ _global.SENTRY_RELEASE = {
   [4500], {
     22119: (e, n, l) => {
       l.r(n), l.d(n, {
-        Root: () => c,
-        Slot: () => d,
+        Root: () => i,
+        Slot: () => r,
         Slottable: () => s
       });
       var o = l(3709),
         t = l(62229);
 
-      function r(...e) {
+      function d(...e) {
         return n => e.forEach((e => function(e, n) {
           "function" == typeof e ? e(n) : null != e && (e.current = n)
         }(e, n)))
       }
-      const d = (0, t.forwardRef)(((e, n) => {
+      const r = (0, t.forwardRef)(((e, n) => {
         const {
           children: l,
-          ...r
-        } = e, d = t.Children.toArray(l), s = d.find(f);
+          ...d
+        } = e, r = t.Children.toArray(l), s = r.find(c);
         if (s) {
           const e = s.props.children,
-            l = d.map((n => n === s ? t.Children.count(e) > 1 ? t.Children.only(null) : (0, t.isValidElement)(e) ? e.props.children : null : n));
-          return (0, t.createElement)(a, (0, o.A)({}, r, {
+            l = r.map((n => n === s ? t.Children.count(e) > 1 ? t.Children.only(null) : (0, t.isValidElement)(e) ? e.props.children : null : n));
+          return (0, t.createElement)(a, (0, o.A)({}, d, {
             ref: n
           }), (0, t.isValidElement)(e) ? (0, t.cloneElement)(e, void 0, l) : null)
         }
-        return (0, t.createElement)(a, (0, o.A)({}, r, {
+        return (0, t.createElement)(a, (0, o.A)({}, d, {
           ref: n
         }), l)
       }));
-      d.displayName = "Slot";
+      r.displayName = "Slot";
       const a = (0, t.forwardRef)(((e, n) => {
         const {
           children: l,
           ...o
         } = e;
         return (0, t.isValidElement)(l) ? (0, t.cloneElement)(l, {
-          ...i(o, l.props),
-          ref: n ? r(n, l.ref) : l.ref
+          ...f(o, l.props),
+          ref: n ? d(n, l.ref) : l.ref
         }) : t.Children.count(l) > 1 ? t.Children.only(null) : null
       }));
       a.displayName = "SlotClone";
@@ -62,30 +62,30 @@ _global.SENTRY_RELEASE = {
         children: e
       }) => (0, t.createElement)(t.Fragment, null, e);
 
-      function f(e) {
+      function c(e) {
         return (0, t.isValidElement)(e) && e.type === s
       }
 
-      function i(e, n) {
+      function f(e, n) {
         const l = {
           ...n
         };
         for (const o in n) {
           const t = e[o],
-            r = n[o];
-          /^on[A-Z]/.test(o) ? t && r ? l[o] = (...e) => {
-            r(...e), t(...e)
+            d = n[o];
+          /^on[A-Z]/.test(o) ? t && d ? l[o] = (...e) => {
+            d(...e), t(...e)
           } : t && (l[o] = t) : "style" === o ? l[o] = {
             ...t,
-            ...r
-          } : "className" === o && (l[o] = [t, r].filter(Boolean).join(" "))
+            ...d
+          } : "className" === o && (l[o] = [t, d].filter(Boolean).join(" "))
         }
         return {
           ...e,
           ...l
         }
       }
-      const c = d
+      const i = r
     }
   }
 ]);

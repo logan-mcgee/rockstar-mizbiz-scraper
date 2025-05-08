@@ -1,8 +1,8 @@
 ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "9c62e06b-8546-4180-8ebe-cd2520e32232", e._sentryDebugIdIdentifier = "sentry-dbid-9c62e06b-8546-4180-8ebe-cd2520e32232")
+      d = (new Error).stack;
+    d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "9c62e06b-8546-4180-8ebe-cd2520e32232", e._sentryDebugIdIdentifier = "sentry-dbid-9c62e06b-8546-4180-8ebe-cd2520e32232")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -16,33 +16,33 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [1982, 9601], {
-    21982: (e, a, d) => {
-      d.r(a), d.d(a, {
+    21982: (e, d, a) => {
+      a.r(d), a.d(d, {
         Root: () => s,
         VisuallyHidden: () => l
       });
-      var n = d(3709),
-        o = d(62229),
-        r = (d(44853), d(49061));
-      const t = ["a", "button", "div", "form", "h2", "h3", "img", "input", "label", "li", "nav", "ol", "p", "span", "svg", "ul"].reduce(((e, a) => {
-          const d = (0, o.forwardRef)(((e, d) => {
+      var n = a(3709),
+        o = a(62229),
+        r = (a(44853), a(49061));
+      const t = ["a", "button", "div", "form", "h2", "h3", "img", "input", "label", "li", "nav", "ol", "p", "span", "svg", "ul"].reduce(((e, d) => {
+          const a = (0, o.forwardRef)(((e, a) => {
             const {
               asChild: t,
               ...l
-            } = e, s = t ? r.Slot : a;
+            } = e, s = t ? r.Slot : d;
             return (0, o.useEffect)((() => {
               window[Symbol.for("radix-ui")] = !0
             }), []), (0, o.createElement)(s, (0, n.A)({}, l, {
-              ref: d
+              ref: a
             }))
           }));
-          return d.displayName = `Primitive.${a}`, {
+          return a.displayName = `Primitive.${d}`, {
             ...e,
-            [a]: d
+            [d]: a
           }
         }), {}),
-        l = (0, o.forwardRef)(((e, a) => (0, o.createElement)(t.span, (0, n.A)({}, e, {
-          ref: a,
+        l = (0, o.forwardRef)(((e, d) => (0, o.createElement)(t.span, (0, n.A)({}, e, {
+          ref: d,
           style: {
             position: "absolute",
             border: 0,
@@ -59,17 +59,17 @@ _global.SENTRY_RELEASE = {
         })))),
         s = l
     },
-    3709: (e, a, d) => {
+    3709: (e, d, a) => {
       function n() {
         return n = Object.assign ? Object.assign.bind() : function(e) {
-          for (var a = 1; a < arguments.length; a++) {
-            var d = arguments[a];
-            for (var n in d) Object.prototype.hasOwnProperty.call(d, n) && (e[n] = d[n])
+          for (var d = 1; d < arguments.length; d++) {
+            var a = arguments[d];
+            for (var n in a) Object.prototype.hasOwnProperty.call(a, n) && (e[n] = a[n])
           }
           return e
         }, n.apply(this, arguments)
       }
-      d.d(a, {
+      a.d(d, {
         A: () => n
       })
     }

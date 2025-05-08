@@ -30,10 +30,10 @@ _global.SENTRY_RELEASE = {
       function r(e, r) {
         for (var a = {}, s = [], c = 0; c < e.length; c++) {
           var i = e[c],
-            u = r.base ? i[0] + r.base : i[0],
-            d = a[u] || 0,
-            l = "".concat(u, " ").concat(d);
-          a[u] = d + 1;
+            d = r.base ? i[0] + r.base : i[0],
+            u = a[d] || 0,
+            l = "".concat(d, " ").concat(u);
+          a[d] = u + 1;
           var f = n(l),
             p = {
               css: i[1],
@@ -44,10 +44,10 @@ _global.SENTRY_RELEASE = {
             };
           if (-1 !== f) t[f].references++, t[f].updater(p);
           else {
-            var b = o(p, r);
+            var v = o(p, r);
             r.byIndex = c, t.splice(c, 0, {
               identifier: l,
-              updater: b,
+              updater: v,
               references: 1
             })
           }
@@ -74,9 +74,9 @@ _global.SENTRY_RELEASE = {
             var c = n(a[s]);
             t[c].references--
           }
-          for (var i = r(e, o), u = 0; u < a.length; u++) {
-            var d = n(a[u]);
-            0 === t[d].references && (t[d].updater(), t.splice(d, 1))
+          for (var i = r(e, o), d = 0; d < a.length; d++) {
+            var u = n(a[d]);
+            0 === t[u].references && (t[u].updater(), t.splice(u, 1))
           }
           a = i
         }
@@ -168,9 +168,9 @@ _global.SENTRY_RELEASE = {
               var i = this[c][0];
               null != i && (s[i] = !0)
             }
-          for (var u = 0; u < e.length; u++) {
-            var d = [].concat(e[u]);
-            r && s[d[0]] || (void 0 !== a && (void 0 === d[5] || (d[1] = "@layer".concat(d[5].length > 0 ? " ".concat(d[5]) : "", " {").concat(d[1], "}")), d[5] = a), n && (d[2] ? (d[1] = "@media ".concat(d[2], " {").concat(d[1], "}"), d[2] = n) : d[2] = n), o && (d[4] ? (d[1] = "@supports (".concat(d[4], ") {").concat(d[1], "}"), d[4] = o) : d[4] = "".concat(o)), t.push(d))
+          for (var d = 0; d < e.length; d++) {
+            var u = [].concat(e[d]);
+            r && s[u[0]] || (void 0 !== a && (void 0 === u[5] || (u[1] = "@layer".concat(u[5].length > 0 ? " ".concat(u[5]) : "", " {").concat(u[1], "}")), u[5] = a), n && (u[2] ? (u[1] = "@media ".concat(u[2], " {").concat(u[1], "}"), u[2] = n) : u[2] = n), o && (u[4] ? (u[1] = "@supports (".concat(u[4], ") {").concat(u[1], "}"), u[4] = o) : u[4] = "".concat(o)), t.push(u))
           }
         }, t
       }
@@ -207,23 +207,23 @@ _global.SENTRY_RELEASE = {
           __source: !0
         };
 
-      function u(e, t, n) {
+      function d(e, t, n) {
         var r, a = {},
-          u = null,
-          d = null;
-        for (r in void 0 !== n && (u = "" + n), void 0 !== t.key && (u = "" + t.key), void 0 !== t.ref && (d = t.ref), t) s.call(t, r) && !i.hasOwnProperty(r) && (a[r] = t[r]);
+          d = null,
+          u = null;
+        for (r in void 0 !== n && (d = "" + n), void 0 !== t.key && (d = "" + t.key), void 0 !== t.ref && (u = t.ref), t) s.call(t, r) && !i.hasOwnProperty(r) && (a[r] = t[r]);
         if (e && e.defaultProps)
           for (r in t = e.defaultProps) void 0 === a[r] && (a[r] = t[r]);
         return {
           $$typeof: o,
           type: e,
-          key: u,
-          ref: d,
+          key: d,
+          ref: u,
           props: a,
           _owner: c.current
         }
       }
-      t.Fragment = a, t.jsx = u, t.jsxs = u
+      t.Fragment = a, t.jsx = d, t.jsxs = d
     },
     73855: (e, t, n) => {
       e.exports = n(32469)
@@ -242,17 +242,17 @@ _global.SENTRY_RELEASE = {
           onClick: s,
           reloadDocument: c,
           children: i,
-          ...u
+          ...d
         } = e;
-        const d = t?.startsWith("http");
+        const u = t?.startsWith("http");
         return (0, r.jsx)("a", {
           href: t,
           className: o,
           onClick: e => {
-            s?.(e), d || c || (a ? (e.preventDefault(), a(t)) : (e.preventDefault(), window.history.pushState({}, "", t)))
+            s?.(e), u || c || (a ? (e.preventDefault(), a(t)) : (e.preventDefault(), window.history.pushState({}, "", t)))
           },
           target: n,
-          ...u,
+          ...d,
           children: i
         })
       }

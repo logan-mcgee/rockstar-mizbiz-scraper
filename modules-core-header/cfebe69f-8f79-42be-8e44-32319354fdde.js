@@ -1,8 +1,8 @@
 ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "cfebe69f-8f79-42be-8e44-32319354fdde", e._sentryDebugIdIdentifier = "sentry-dbid-cfebe69f-8f79-42be-8e44-32319354fdde")
+      d = (new Error).stack;
+    d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "cfebe69f-8f79-42be-8e44-32319354fdde", e._sentryDebugIdIdentifier = "sentry-dbid-cfebe69f-8f79-42be-8e44-32319354fdde")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -23,13 +23,13 @@ _global.SENTRY_RELEASE = {
             cardinal: ["one", "other"],
             ordinal: ["one", "two", "few", "other"]
           },
-          fn: function(e, a) {
-            var d = String(e).split("."),
-              o = !d[1],
-              l = Number(d[0]) == e,
-              n = l && d[0].slice(-1),
-              t = l && d[0].slice(-2);
-            return a ? 1 == n && 11 != t ? "one" : 2 == n && 12 != t ? "two" : 3 == n && 13 != t ? "few" : "other" : 1 == e && o ? "one" : "other"
+          fn: function(e, d) {
+            var a = String(e).split("."),
+              o = !a[1],
+              l = Number(a[0]) == e,
+              n = l && a[0].slice(-1),
+              t = l && a[0].slice(-2);
+            return d ? 1 == n && 11 != t ? "one" : 2 == n && 12 != t ? "two" : 3 == n && 13 != t ? "few" : "other" : 1 == e && o ? "one" : "other"
           }
         },
         locale: "en"

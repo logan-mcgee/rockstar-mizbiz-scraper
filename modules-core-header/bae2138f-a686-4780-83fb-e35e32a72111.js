@@ -29,32 +29,32 @@ _global.SENTRY_RELEASE = {
       }
 
       function r(e, r) {
-        for (var a = {}, s = [], i = 0; i < e.length; i++) {
-          var c = e[i],
-            u = r.base ? c[0] + r.base : c[0],
+        for (var a = {}, c = [], s = 0; s < e.length; s++) {
+          var i = e[s],
+            u = r.base ? i[0] + r.base : i[0],
             f = a[u] || 0,
             d = "".concat(u, " ").concat(f);
           a[u] = f + 1;
           var l = n(d),
             p = {
-              css: c[1],
-              media: c[2],
-              sourceMap: c[3],
-              supports: c[4],
-              layer: c[5]
+              css: i[1],
+              media: i[2],
+              sourceMap: i[3],
+              supports: i[4],
+              layer: i[5]
             };
           if (-1 !== l) t[l].references++, t[l].updater(p);
           else {
             var y = o(p, r);
-            r.byIndex = i, t.splice(i, 0, {
+            r.byIndex = s, t.splice(s, 0, {
               identifier: d,
               updater: y,
               references: 1
             })
           }
-          s.push(d)
+          c.push(d)
         }
-        return s
+        return c
       }
 
       function o(e, t) {
@@ -71,15 +71,15 @@ _global.SENTRY_RELEASE = {
         var a = r(e = e || [], o = o || {});
         return function(e) {
           e = e || [];
-          for (var s = 0; s < a.length; s++) {
-            var i = n(a[s]);
-            t[i].references--
+          for (var c = 0; c < a.length; c++) {
+            var s = n(a[c]);
+            t[s].references--
           }
-          for (var c = r(e, o), u = 0; u < a.length; u++) {
+          for (var i = r(e, o), u = 0; u < a.length; u++) {
             var f = n(a[u]);
             0 === t[f].references && (t[f].updater(), t.splice(f, 1))
           }
-          a = c
+          a = i
         }
       }
     },
@@ -169,15 +169,15 @@ _global.SENTRY_RELEASE = {
           "string" == typeof e && (e = [
             [null, e, void 0]
           ]);
-          var s = {};
+          var c = {};
           if (r)
-            for (var i = 0; i < this.length; i++) {
-              var c = this[i][0];
-              null != c && (s[c] = !0)
+            for (var s = 0; s < this.length; s++) {
+              var i = this[s][0];
+              null != i && (c[i] = !0)
             }
           for (var u = 0; u < e.length; u++) {
             var f = [].concat(e[u]);
-            r && s[f[0]] || (void 0 !== a && (void 0 === f[5] || (f[1] = "@layer".concat(f[5].length > 0 ? " ".concat(f[5]) : "", " {").concat(f[1], "}")), f[5] = a), n && (f[2] ? (f[1] = "@media ".concat(f[2], " {").concat(f[1], "}"), f[2] = n) : f[2] = n), o && (f[4] ? (f[1] = "@supports (".concat(f[4], ") {").concat(f[1], "}"), f[4] = o) : f[4] = "".concat(o)), t.push(f))
+            r && c[f[0]] || (void 0 !== a && (void 0 === f[5] || (f[1] = "@layer".concat(f[5].length > 0 ? " ".concat(f[5]) : "", " {").concat(f[1], "}")), f[5] = a), n && (f[2] ? (f[1] = "@media ".concat(f[2], " {").concat(f[1], "}"), f[2] = n) : f[2] = n), o && (f[4] ? (f[1] = "@supports (".concat(f[4], ") {").concat(f[1], "}"), f[4] = o) : f[4] = "".concat(o)), t.push(f))
           }
         }, t
       }
@@ -209,9 +209,9 @@ _global.SENTRY_RELEASE = {
       var r = n(62229),
         o = Symbol.for("react.element"),
         a = Symbol.for("react.fragment"),
-        s = Object.prototype.hasOwnProperty,
-        i = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        c = {
+        c = Object.prototype.hasOwnProperty,
+        s = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        i = {
           key: !0,
           ref: !0,
           __self: !0,
@@ -222,7 +222,7 @@ _global.SENTRY_RELEASE = {
         var r, a = {},
           u = null,
           f = null;
-        for (r in void 0 !== n && (u = "" + n), void 0 !== t.key && (u = "" + t.key), void 0 !== t.ref && (f = t.ref), t) s.call(t, r) && !c.hasOwnProperty(r) && (a[r] = t[r]);
+        for (r in void 0 !== n && (u = "" + n), void 0 !== t.key && (u = "" + t.key), void 0 !== t.ref && (f = t.ref), t) c.call(t, r) && !i.hasOwnProperty(r) && (a[r] = t[r]);
         if (e && e.defaultProps)
           for (r in t = e.defaultProps) void 0 === a[r] && (a[r] = t[r]);
         return {
@@ -231,7 +231,7 @@ _global.SENTRY_RELEASE = {
           key: u,
           ref: f,
           props: a,
-          _owner: i.current
+          _owner: s.current
         }
       }
       t.Fragment = a, t.jsx = u, t.jsxs = u
@@ -244,7 +244,7 @@ _global.SENTRY_RELEASE = {
     25181: (e, t, n) => {
       "use strict";
       n.d(t, {
-        v6: () => i
+        v6: () => s
       }), n(28793);
       var r = n(5060);
       const o = new Map;
@@ -257,13 +257,13 @@ _global.SENTRY_RELEASE = {
         return r ? (r.forEach((t => t(e))), e) : t
       }
 
-      function s(...e) {
+      function c(...e) {
         return (...t) => {
           for (const n of e) "function" == typeof n && n(...t)
         }
       }
 
-      function i(...e) {
+      function s(...e) {
         const t = {
           ...e[0]
         };
@@ -271,17 +271,17 @@ _global.SENTRY_RELEASE = {
           const o = e[n];
           for (const e in o) {
             const n = t[e],
-              i = o[e];
-            "function" == typeof n && "function" == typeof i && "o" === e[0] && "n" === e[1] && e.charCodeAt(2) >= 65 && e.charCodeAt(2) <= 90 ? t[e] = s(n, i) : "className" !== e && "UNSAFE_className" !== e || "string" != typeof n || "string" != typeof i ? "id" === e && n && i ? t.id = a(n, i) : t[e] = void 0 !== i ? i : n : t[e] = (0, r.A)(n, i)
+              s = o[e];
+            "function" == typeof n && "function" == typeof s && "o" === e[0] && "n" === e[1] && e.charCodeAt(2) >= 65 && e.charCodeAt(2) <= 90 ? t[e] = c(n, s) : "className" !== e && "UNSAFE_className" !== e || "string" != typeof n || "string" != typeof s ? "id" === e && n && s ? t.id = a(n, s) : t[e] = void 0 !== s ? s : n : t[e] = (0, r.A)(n, s)
           }
         }
         return t
       }
-      var c;
+      var i;
       n(55136), n(29276), n(22241), n(90614), n(8237), n(17341), n(80098),
         function(e) {
           e.Pending = "pending", e.Fulfilled = "fulfilled", e.Rejected = "rejected"
-        }(c || (c = {})), Symbol.toStringTag
+        }(i || (i = {})), Symbol.toStringTag
     }
   }
 ]);

@@ -1,8 +1,8 @@
 ! function() {
   try {
     var e = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {},
-      a = (new Error).stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "ff037449-5730-4fa1-bc0c-512e72450f91", e._sentryDebugIdIdentifier = "sentry-dbid-ff037449-5730-4fa1-bc0c-512e72450f91")
+      d = (new Error).stack;
+    d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "ff037449-5730-4fa1-bc0c-512e72450f91", e._sentryDebugIdIdentifier = "sentry-dbid-ff037449-5730-4fa1-bc0c-512e72450f91")
   } catch (e) {}
 }();
 var _global2 = "undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : {};
@@ -16,30 +16,30 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_modules_core_header = self.webpackChunk_rockstargames_modules_core_header || []).push([
   [7539], {
-    7539: (e, a, d) => {
-      d.r(a), d.d(a, {
-        Portal: () => s,
-        Root: () => f
+    7539: (e, d, a) => {
+      a.r(d), a.d(d, {
+        Portal: () => f,
+        Root: () => s
       });
-      var o = d(62229),
-        n = d(44853),
-        t = d(67774),
-        l = d(46217),
-        r = d(73855),
-        s = o.forwardRef(((e, a) => {
+      var o = a(62229),
+        n = a(44853),
+        t = a(67774),
+        l = a(46217),
+        r = a(73855),
+        f = o.forwardRef(((e, d) => {
           const {
-            container: d,
-            ...s
-          } = e, [f, b] = o.useState(!1);
-          (0, l.N)((() => b(!0)), []);
-          const u = d || f && globalThis?.document?.body;
-          return u ? n.createPortal((0, r.jsx)(t.sG.div, {
-            ...s,
-            ref: a
-          }), u) : null
+            container: a,
+            ...f
+          } = e, [s, c] = o.useState(!1);
+          (0, l.N)((() => c(!0)), []);
+          const b = a || s && globalThis?.document?.body;
+          return b ? n.createPortal((0, r.jsx)(t.sG.div, {
+            ...f,
+            ref: d
+          }), b) : null
         }));
-      s.displayName = "Portal";
-      var f = s
+      f.displayName = "Portal";
+      var s = f
     }
   }
 ]);

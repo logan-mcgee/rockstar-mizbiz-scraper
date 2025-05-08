@@ -20,8 +20,8 @@ _global.SENTRY_RELEASE = {
       var r = a(62229),
         s = Symbol.for("react.element"),
         n = Symbol.for("react.fragment"),
-        o = Object.prototype.hasOwnProperty,
-        c = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        c = Object.prototype.hasOwnProperty,
+        o = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         i = {
           key: !0,
           ref: !0,
@@ -33,7 +33,7 @@ _global.SENTRY_RELEASE = {
         var r, n = {},
           u = null,
           l = null;
-        for (r in void 0 !== a && (u = "" + a), void 0 !== t.key && (u = "" + t.key), void 0 !== t.ref && (l = t.ref), t) o.call(t, r) && !i.hasOwnProperty(r) && (n[r] = t[r]);
+        for (r in void 0 !== a && (u = "" + a), void 0 !== t.key && (u = "" + t.key), void 0 !== t.ref && (l = t.ref), t) c.call(t, r) && !i.hasOwnProperty(r) && (n[r] = t[r]);
         if (e && e.defaultProps)
           for (r in t = e.defaultProps) void 0 === n[r] && (n[r] = t[r]);
         return {
@@ -42,7 +42,7 @@ _global.SENTRY_RELEASE = {
           key: u,
           ref: l,
           props: n,
-          _owner: c.current
+          _owner: o.current
         }
       }
       t.Fragment = n, t.jsx = u, t.jsxs = u
@@ -61,11 +61,11 @@ _global.SENTRY_RELEASE = {
           value: (0, r.makeVar)(null)
         }),
         n = e => s(e),
-        o = (0, r.setMakeVarItem)({
+        c = (0, r.setMakeVarItem)({
           key: "jumpScMenuFocusReactive",
           value: (0, r.makeVar)(!1)
         }),
-        c = e => o(e),
+        o = e => c(e),
         i = (0, r.setMakeVarItem)({
           key: "hasNotificationsReactive",
           value: (0, r.makeVar)(!1)
@@ -115,7 +115,7 @@ _global.SENTRY_RELEASE = {
             navOpen: m,
             userData: (0, r.useReactiveVar)(w),
             selectedCharacterTuple: _,
-            jumpScMenuFocus: (0, r.useReactiveVar)(o),
+            jumpScMenuFocus: (0, r.useReactiveVar)(c),
             setCharactersNeeded: h,
             setCrewsNeeded: v,
             setCurrentCharId: d,
@@ -123,7 +123,7 @@ _global.SENTRY_RELEASE = {
             setNavOpen: n,
             setSelectedCharacterTuple: f,
             setUserData: y,
-            setJumpScMenuFocus: c
+            setJumpScMenuFocus: o
           }
         }
     },
@@ -148,8 +148,8 @@ _global.SENTRY_RELEASE = {
       var r = a(62229),
         s = a(95966),
         n = a(66369),
-        o = a(40296);
-      const c = {
+        c = a(40296);
+      const o = {
         pcalt: "PC",
         pc: "PC",
         ps4: "PS4",
@@ -174,7 +174,7 @@ _global.SENTRY_RELEASE = {
                 loggedIn: f
               } = (0, n.useRockstarUser)(), {
                 hasGtaPlus: m
-              } = p ?? {}, k = (0, o.bn)(), h = (e, r) => {
+              } = p ?? {}, k = (0, c.bn)(), h = (e, r) => {
                 const n = [];
                 e.forEach((e => {
                   if (-1 === t.indexOf(e)) {
@@ -201,15 +201,15 @@ _global.SENTRY_RELEASE = {
                   r = [],
                   s = [];
                 return Object.entries(e?.characters ?? []).forEach((e => {
-                  let [n, o] = e;
-                  o.length && o.forEach((e => {
-                    const o = (e => "pcalt" === e ? "pc" : e.toString())(e.platform);
+                  let [n, c] = e;
+                  c.length && c.forEach((e => {
+                    const c = (e => "pcalt" === e ? "pc" : e.toString())(e.platform);
                     if ("gtao" === n) {
-                      a.includes(o) || a.push(o), r.includes(o) || "1" !== e.stats?.overview?.hasGtaPlus?.value || r.push(o);
+                      a.includes(c) || a.push(c), r.includes(c) || "1" !== e.stats?.overview?.hasGtaPlus?.value || r.push(c);
                       const t = `${n}_${e.platform}`;
                       s.includes(t) || s.push(t)
                     }
-                    t.includes(o) || t.push(o)
+                    t.includes(c) || t.push(c)
                   }))
                 })), Object.entries(e?.gamesPlayed ?? []).forEach((e => {
                   let [a, r] = e;
@@ -218,10 +218,10 @@ _global.SENTRY_RELEASE = {
                   member_id: e.id ?? void 0,
                   login_state: f ?? !1,
                   gta_plus_active: !!f && Boolean(m),
-                  platforms_played: t.length ? t.map((e => c[e] ?? e)).join("|").toUpperCase() : void 0,
+                  platforms_played: t.length ? t.map((e => o[e] ?? e)).join("|").toUpperCase() : void 0,
                   games_played: s.length ? s.join("|").toUpperCase() : void 0,
-                  gtao_platforms_played: a.length ? a.map((e => c[e] ?? e)).join("|").toUpperCase() : void 0,
-                  gta_plus_platforms: r.length ? r.map((e => c[e] ?? e)).join("|").toUpperCase() : void 0,
+                  gtao_platforms_played: a.length ? a.map((e => o[e] ?? e)).join("|").toUpperCase() : void 0,
+                  gta_plus_platforms: r.length ? r.map((e => o[e] ?? e)).join("|").toUpperCase() : void 0,
                   use_enhanced_browser_features: k
                 }
               };
@@ -262,8 +262,8 @@ _global.SENTRY_RELEASE = {
           const {
             charactersNeeded: a,
             crewsNeeded: n,
-            currentCharId: o
-          } = (0, f.A)(), c = (0, s.useRockstarToken)(), [i, u] = (0, r.useState)(), [l] = (0, s.useRockstarTokenReactive)(), d = (0, s.useRockstarTokenPing)(), [p, m] = (0, r.useState)(), [v, w] = (0, r.useState)(!1), y = void 0 === p, [b, _] = (0, r.useState)(1);
+            currentCharId: c
+          } = (0, f.A)(), o = (0, s.useRockstarToken)(), [i, u] = (0, r.useState)(), [l] = (0, s.useRockstarTokenReactive)(), d = (0, s.useRockstarTokenPing)(), [p, m] = (0, r.useState)(), [v, w] = (0, r.useState)(!1), y = void 0 === p, [b, _] = (0, r.useState)(1);
           return (0, r.useEffect)((() => {
             "gtao" !== a || i?.characters?.gtao || (u({
               ...i,
@@ -282,10 +282,10 @@ _global.SENTRY_RELEASE = {
           }), [b]), (0, r.useEffect)((() => {
             t && l(t)
           }), [t]), (0, r.useEffect)((() => {
-            "" !== c || d()
-          }), [c]), (0, r.useEffect)((() => {
-            if ("" === c) return;
-            const e = !!c;
+            "" !== o || d()
+          }), [o]), (0, r.useEffect)((() => {
+            if ("" === o) return;
+            const e = !!o;
             if (e || v || ((async () => {
                 try {
                   await (async e => {
@@ -303,10 +303,10 @@ _global.SENTRY_RELEASE = {
                         "X-Requested-With": "XMLHttpRequest",
                         "Content-type": "application/x-www-form-urlencoded; charset=utf-8"
                       }
-                    }, o = await fetch(r, n);
-                    if (200 !== o.status) return void t(!1);
-                    const c = `${a}?code=${await o.json()}`,
-                      i = await fetch(c, {
+                    }, c = await fetch(r, n);
+                    if (200 !== c.status) return void t(!1);
+                    const o = `${a}?code=${await c.json()}`,
+                      i = await fetch(o, {
                         credentials: "include"
                       }),
                       {
@@ -327,8 +327,8 @@ _global.SENTRY_RELEASE = {
                     host: r
                   } = (0, s.getConfigForDomain)(),
                   n = parseInt(a.nameid),
-                  o = a["scAuth.Nickname"],
-                  c = "True" === (a?.["scAuth.IsAMinor"] ?? "True"),
+                  c = a["scAuth.Nickname"],
+                  o = "True" === (a?.["scAuth.IsAMinor"] ?? "True"),
                   i = new Date(a["scAuth.MemberSince"]),
                   u = new Date,
                   l = (0, g.M)(u, i) < 12,
@@ -338,20 +338,20 @@ _global.SENTRY_RELEASE = {
                   nonExpiredToken: (a?.exp ?? 0) - d > 0,
                   avatar: a["scAuth.AvatarUrl"],
                   bearer_token_expired: a.exp > Date.now(),
-                  isAMinor: c,
+                  isAMinor: o,
                   isNewAccount: l,
-                  nickname: o,
-                  profile_link: `https://${r}.rockstargames.com/member/${o}?id=${n}`
+                  nickname: c,
+                  profile_link: `https://${r}.rockstargames.com/member/${c}?id=${n}`
                 }
               })({
-                bearerToken: c
+                bearerToken: o
               });
               u({
                 ...i,
                 ...e
               })
             }
-          }), [c, v]), (0, r.useEffect)((() => {
+          }), [o, v]), (0, r.useEffect)((() => {
             (async () => {
               if (p && i && n && !i?.crews) {
                 const e = await (async e => {
@@ -412,10 +412,10 @@ _global.SENTRY_RELEASE = {
                     rockstarId: r
                   } = e;
                   const n = [],
-                    o = await (0, s.coreScApiFetch)("profile/playedplatforms?game=gtav", {
+                    c = await (0, s.coreScApiFetch)("profile/playedplatforms?game=gtav", {
                       pingBearer: t
                     });
-                  await (o?.platforms?.reduce((async (e, a) => {
+                  await (c?.platforms?.reduce((async (e, a) => {
                     if (await e, ["ps3", "xbox", "xbox360"].includes(a)) return;
                     const r = await (0, s.coreScApiFetch)(`games/gtao/characters?platform=${a}`, {
                       pingBearer: t
@@ -429,21 +429,21 @@ _global.SENTRY_RELEASE = {
                         rank: s
                       } = r;
                       if ("0" === s.value) return;
-                      const o = ["ps4", "ps5"].includes(a) ? e?.mugshotUrl.replace("cloud.rockstargames.com/", "ros.rockstargames.com/cloud/11/cloudservices/") : e?.mugshotUrl;
+                      const c = ["ps4", "ps5"].includes(a) ? e?.mugshotUrl.replace("cloud.rockstargames.com/", "ros.rockstargames.com/cloud/11/cloudservices/") : e?.mugshotUrl;
                       return n.push({
                         ...e,
-                        mugshotUrl: o,
+                        mugshotUrl: c,
                         platform: a
                       }), e
                     }))
                   }), Promise.resolve()));
                   const {
-                    status: c,
+                    status: o,
                     accounts: i
                   } = await (0, s.coreScApiFetch)(`profile/getprofile?nickname=${a}&maxFriends=0`, {
                     pingBearer: t
                   });
-                  if (!c || !i.length) return {
+                  if (!o || !i.length) return {
                     gtaoCharacters: n,
                     linkedAccounts: []
                   };
@@ -479,7 +479,7 @@ _global.SENTRY_RELEASE = {
                     gtao: e
                   },
                   linkedAccounts: t,
-                  hasGtaPlus: "1" === e?.[o]?.stats?.overview?.hasGtaPlus?.value
+                  hasGtaPlus: "1" === e?.[c]?.stats?.overview?.hasGtaPlus?.value
                 }), _((e => e - 1))
               }
             })()

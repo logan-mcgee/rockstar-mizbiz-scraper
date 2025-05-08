@@ -32,15 +32,15 @@ _global.SENTRY_RELEASE = {
       function f(e, o, r) {
         var a, t = {},
           f = null,
-          i = null;
-        for (a in void 0 !== r && (f = "" + r), void 0 !== o.key && (f = "" + o.key), void 0 !== o.ref && (i = o.ref), o) n.call(o, a) && !s.hasOwnProperty(a) && (t[a] = o[a]);
+          c = null;
+        for (a in void 0 !== r && (f = "" + r), void 0 !== o.key && (f = "" + o.key), void 0 !== o.ref && (c = o.ref), o) n.call(o, a) && !s.hasOwnProperty(a) && (t[a] = o[a]);
         if (e && e.defaultProps)
           for (a in o = e.defaultProps) void 0 === t[a] && (t[a] = o[a]);
         return {
           $$typeof: d,
           type: e,
           key: f,
-          ref: i,
+          ref: c,
           props: t,
           _owner: l.current
         }
@@ -64,13 +64,13 @@ _global.SENTRY_RELEASE = {
           const {
             container: r,
             ...s
-          } = e, [f, i] = a.useState(!1);
-          (0, n.N)((() => i(!0)), []);
-          const u = r || f && globalThis?.document?.body;
-          return u ? d.createPortal((0, l.jsx)(t.sG.div, {
+          } = e, [f, c] = a.useState(!1);
+          (0, n.N)((() => c(!0)), []);
+          const i = r || f && globalThis?.document?.body;
+          return i ? d.createPortal((0, l.jsx)(t.sG.div, {
             ...s,
             ref: o
-          }), u) : null
+          }), i) : null
         }));
       s.displayName = "Portal";
       var f = s

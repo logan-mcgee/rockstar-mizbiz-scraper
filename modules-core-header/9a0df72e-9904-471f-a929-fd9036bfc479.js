@@ -20,9 +20,9 @@ _global.SENTRY_RELEASE = {
       t.r(n), t.d(n, {
         Root: () => d,
         Slot: () => d,
-        Slottable: () => c,
+        Slottable: () => f,
         createSlot: () => a,
-        createSlottable: () => f
+        createSlottable: () => c
       });
       var r = t(62229),
         l = t(65160),
@@ -93,7 +93,7 @@ _global.SENTRY_RELEASE = {
       }
       var s = Symbol("radix.slottable");
 
-      function f(e) {
+      function c(e) {
         const n = ({
           children: e
         }) => (0, o.jsx)(o.Fragment, {
@@ -101,7 +101,7 @@ _global.SENTRY_RELEASE = {
         });
         return n.displayName = `${e}.Slottable`, n.__radixId = s, n
       }
-      var c = f("Slottable");
+      var f = c("Slottable");
 
       function u(e) {
         return r.isValidElement(e) && "function" == typeof e.type && "__radixId" in e.type && e.type.__radixId === s

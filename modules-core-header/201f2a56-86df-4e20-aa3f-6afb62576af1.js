@@ -18,9 +18,9 @@ _global.SENTRY_RELEASE = {
   [9448, 7067], {
     99448: (e, n, t) => {
       t.r(n), t.d(n, {
-        Root: () => c,
+        Root: () => i,
         Slot: () => a,
-        Slottable: () => s
+        Slottable: () => f
       });
       var l = t(3709),
         o = t(62229);
@@ -34,10 +34,10 @@ _global.SENTRY_RELEASE = {
         const {
           children: t,
           ...r
-        } = e, a = o.Children.toArray(t), s = a.find(f);
-        if (s) {
-          const e = s.props.children,
-            t = a.map((n => n === s ? o.Children.count(e) > 1 ? o.Children.only(null) : (0, o.isValidElement)(e) ? e.props.children : null : n));
+        } = e, a = o.Children.toArray(t), f = a.find(s);
+        if (f) {
+          const e = f.props.children,
+            t = a.map((n => n === f ? o.Children.count(e) > 1 ? o.Children.only(null) : (0, o.isValidElement)(e) ? e.props.children : null : n));
           return (0, o.createElement)(d, (0, l.A)({}, r, {
             ref: n
           }), (0, o.isValidElement)(e) ? (0, o.cloneElement)(e, void 0, t) : null)
@@ -53,20 +53,20 @@ _global.SENTRY_RELEASE = {
           ...l
         } = e;
         return (0, o.isValidElement)(t) ? (0, o.cloneElement)(t, {
-          ...i(l, t.props),
+          ...c(l, t.props),
           ref: n ? r(n, t.ref) : t.ref
         }) : o.Children.count(t) > 1 ? o.Children.only(null) : null
       }));
       d.displayName = "SlotClone";
-      const s = ({
+      const f = ({
         children: e
       }) => (0, o.createElement)(o.Fragment, null, e);
 
-      function f(e) {
-        return (0, o.isValidElement)(e) && e.type === s
+      function s(e) {
+        return (0, o.isValidElement)(e) && e.type === f
       }
 
-      function i(e, n) {
+      function c(e, n) {
         const t = {
           ...n
         };
@@ -85,7 +85,7 @@ _global.SENTRY_RELEASE = {
           ...t
         }
       }
-      const c = a
+      const i = a
     },
     3709: (e, n, t) => {
       function l() {

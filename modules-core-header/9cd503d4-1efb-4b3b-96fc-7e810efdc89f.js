@@ -29,8 +29,8 @@ _global.SENTRY_RELEASE = {
       }
 
       function n(e, n) {
-        for (var a = {}, s = [], c = 0; c < e.length; c++) {
-          var i = e[c],
+        for (var a = {}, c = [], s = 0; s < e.length; s++) {
+          var i = e[s],
             u = n.base ? i[0] + n.base : i[0],
             d = a[u] || 0,
             f = "".concat(u, " ").concat(d);
@@ -46,15 +46,15 @@ _global.SENTRY_RELEASE = {
           if (-1 !== l) t[l].references++, t[l].updater(p);
           else {
             var v = o(p, n);
-            n.byIndex = c, t.splice(c, 0, {
+            n.byIndex = s, t.splice(s, 0, {
               identifier: f,
               updater: v,
               references: 1
             })
           }
-          s.push(f)
+          c.push(f)
         }
-        return s
+        return c
       }
 
       function o(e, t) {
@@ -71,9 +71,9 @@ _global.SENTRY_RELEASE = {
         var a = n(e = e || [], o = o || {});
         return function(e) {
           e = e || [];
-          for (var s = 0; s < a.length; s++) {
-            var c = r(a[s]);
-            t[c].references--
+          for (var c = 0; c < a.length; c++) {
+            var s = r(a[c]);
+            t[s].references--
           }
           for (var i = n(e, o), u = 0; u < a.length; u++) {
             var d = r(a[u]);
@@ -169,15 +169,15 @@ _global.SENTRY_RELEASE = {
           "string" == typeof e && (e = [
             [null, e, void 0]
           ]);
-          var s = {};
+          var c = {};
           if (n)
-            for (var c = 0; c < this.length; c++) {
-              var i = this[c][0];
-              null != i && (s[i] = !0)
+            for (var s = 0; s < this.length; s++) {
+              var i = this[s][0];
+              null != i && (c[i] = !0)
             }
           for (var u = 0; u < e.length; u++) {
             var d = [].concat(e[u]);
-            n && s[d[0]] || (void 0 !== a && (void 0 === d[5] || (d[1] = "@layer".concat(d[5].length > 0 ? " ".concat(d[5]) : "", " {").concat(d[1], "}")), d[5] = a), r && (d[2] ? (d[1] = "@media ".concat(d[2], " {").concat(d[1], "}"), d[2] = r) : d[2] = r), o && (d[4] ? (d[1] = "@supports (".concat(d[4], ") {").concat(d[1], "}"), d[4] = o) : d[4] = "".concat(o)), t.push(d))
+            n && c[d[0]] || (void 0 !== a && (void 0 === d[5] || (d[1] = "@layer".concat(d[5].length > 0 ? " ".concat(d[5]) : "", " {").concat(d[1], "}")), d[5] = a), r && (d[2] ? (d[1] = "@media ".concat(d[2], " {").concat(d[1], "}"), d[2] = r) : d[2] = r), o && (d[4] ? (d[1] = "@supports (".concat(d[4], ") {").concat(d[1], "}"), d[4] = o) : d[4] = "".concat(o)), t.push(d))
           }
         }, t
       }
@@ -209,8 +209,8 @@ _global.SENTRY_RELEASE = {
       var n = r(62229),
         o = Symbol.for("react.element"),
         a = Symbol.for("react.fragment"),
-        s = Object.prototype.hasOwnProperty,
-        c = n.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        c = Object.prototype.hasOwnProperty,
+        s = n.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
         i = {
           key: !0,
           ref: !0,
@@ -222,7 +222,7 @@ _global.SENTRY_RELEASE = {
         var n, a = {},
           u = null,
           d = null;
-        for (n in void 0 !== r && (u = "" + r), void 0 !== t.key && (u = "" + t.key), void 0 !== t.ref && (d = t.ref), t) s.call(t, n) && !i.hasOwnProperty(n) && (a[n] = t[n]);
+        for (n in void 0 !== r && (u = "" + r), void 0 !== t.key && (u = "" + t.key), void 0 !== t.ref && (d = t.ref), t) c.call(t, n) && !i.hasOwnProperty(n) && (a[n] = t[n]);
         if (e && e.defaultProps)
           for (n in t = e.defaultProps) void 0 === a[n] && (a[n] = t[n]);
         return {
@@ -231,7 +231,7 @@ _global.SENTRY_RELEASE = {
           key: u,
           ref: d,
           props: a,
-          _owner: c.current
+          _owner: s.current
         }
       }
       t.Fragment = a, t.jsx = u, t.jsxs = u

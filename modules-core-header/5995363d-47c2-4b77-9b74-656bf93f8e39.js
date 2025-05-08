@@ -18,7 +18,7 @@ _global.SENTRY_RELEASE = {
   [59, 2440], {
     62440: (e, n, t) => {
       t.r(n), t.d(n, {
-        Root: () => c,
+        Root: () => i,
         Slot: () => d,
         Slottable: () => s
       });
@@ -34,7 +34,7 @@ _global.SENTRY_RELEASE = {
         const {
           children: t,
           ...r
-        } = e, d = o.Children.toArray(t), s = d.find(i);
+        } = e, d = o.Children.toArray(t), s = d.find(c);
         if (s) {
           const e = s.props.children,
             t = d.map((n => n === s ? o.Children.count(e) > 1 ? o.Children.only(null) : (0, o.isValidElement)(e) ? e.props.children : null : n));
@@ -62,7 +62,7 @@ _global.SENTRY_RELEASE = {
         children: e
       }) => (0, o.createElement)(o.Fragment, null, e);
 
-      function i(e) {
+      function c(e) {
         return (0, o.isValidElement)(e) && e.type === s
       }
 
@@ -85,7 +85,7 @@ _global.SENTRY_RELEASE = {
           ...t
         }
       }
-      const c = d
+      const i = d
     },
     3709: (e, n, t) => {
       function l() {

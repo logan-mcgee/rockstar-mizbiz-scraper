@@ -30,11 +30,11 @@ _global.SENTRY_RELEASE = {
         f = function(e, n, r) {
           void 0 === r && (r = "data-aria-hidden");
           var f = Array.from(Array.isArray(e) ? e : [e]),
-            s = n || function(e) {
+            c = n || function(e) {
               return "undefined" == typeof document ? null : (Array.isArray(e) ? e[0] : e).ownerDocument.body
             }(e);
-          return s ? (f.push.apply(f, Array.from(s.querySelectorAll("[aria-live]"))), function(e, n, r, f) {
-            var s = function(e, n) {
+          return c ? (f.push.apply(f, Array.from(c.querySelectorAll("[aria-live]"))), function(e, n, r, f) {
+            var c = function(e, n) {
               return n.map((function(n) {
                 if (e.contains(n)) return n;
                 var r = u(n);
@@ -44,35 +44,35 @@ _global.SENTRY_RELEASE = {
               }))
             }(n, Array.isArray(e) ? e : [e]);
             o[r] || (o[r] = new WeakMap);
-            var i = o[r],
-              l = [],
-              c = new Set,
-              p = new Set(s),
+            var s = o[r],
+              i = [],
+              l = new Set,
+              p = new Set(c),
               y = function(e) {
-                e && !c.has(e) && (c.add(e), y(e.parentNode))
+                e && !l.has(e) && (l.add(e), y(e.parentNode))
               };
-            s.forEach(y);
+            c.forEach(y);
             var b = function(e) {
               e && !p.has(e) && Array.prototype.forEach.call(e.children, (function(e) {
-                if (c.has(e)) b(e);
+                if (l.has(e)) b(e);
                 else {
                   var n = e.getAttribute(f),
                     o = null !== n && "false" !== n,
                     d = (t.get(e) || 0) + 1,
-                    u = (i.get(e) || 0) + 1;
-                  t.set(e, d), i.set(e, u), l.push(e), 1 === d && o && a.set(e, !0), 1 === u && e.setAttribute(r, "true"), o || e.setAttribute(f, "true")
+                    u = (s.get(e) || 0) + 1;
+                  t.set(e, d), s.set(e, u), i.push(e), 1 === d && o && a.set(e, !0), 1 === u && e.setAttribute(r, "true"), o || e.setAttribute(f, "true")
                 }
               }))
             };
-            return b(n), c.clear(), d++,
+            return b(n), l.clear(), d++,
               function() {
-                l.forEach((function(e) {
+                i.forEach((function(e) {
                   var n = t.get(e) - 1,
-                    o = i.get(e) - 1;
-                  t.set(e, n), i.set(e, o), n || (a.has(e) || e.removeAttribute(f), a.delete(e)), o || e.removeAttribute(r)
+                    o = s.get(e) - 1;
+                  t.set(e, n), s.set(e, o), n || (a.has(e) || e.removeAttribute(f), a.delete(e)), o || e.removeAttribute(r)
                 })), --d || (t = new WeakMap, t = new WeakMap, a = new WeakMap, o = {})
               }
-          }(f, s, r, "aria-hidden")) : function() {
+          }(f, c, r, "aria-hidden")) : function() {
             return null
           }
         }
@@ -90,23 +90,23 @@ _global.SENTRY_RELEASE = {
           __source: !0
         };
 
-      function s(e, n, r) {
+      function c(e, n, r) {
         var t, o = {},
-          s = null,
-          i = null;
-        for (t in void 0 !== r && (s = "" + r), void 0 !== n.key && (s = "" + n.key), void 0 !== n.ref && (i = n.ref), n) d.call(n, t) && !f.hasOwnProperty(t) && (o[t] = n[t]);
+          c = null,
+          s = null;
+        for (t in void 0 !== r && (c = "" + r), void 0 !== n.key && (c = "" + n.key), void 0 !== n.ref && (s = n.ref), n) d.call(n, t) && !f.hasOwnProperty(t) && (o[t] = n[t]);
         if (e && e.defaultProps)
           for (t in n = e.defaultProps) void 0 === o[t] && (o[t] = n[t]);
         return {
           $$typeof: a,
           type: e,
-          key: s,
-          ref: i,
+          key: c,
+          ref: s,
           props: o,
           _owner: u.current
         }
       }
-      n.Fragment = o, n.jsx = s, n.jsxs = s
+      n.Fragment = o, n.jsx = c, n.jsxs = c
     },
     73855: (e, n, r) => {
       e.exports = r(32469)
@@ -150,13 +150,13 @@ _global.SENTRY_RELEASE = {
         }({
           defaultProp: n,
           onChange: r
-        }), u = void 0 !== e, f = u ? e : o, s = (0, a.c)(r);
+        }), u = void 0 !== e, f = u ? e : o, c = (0, a.c)(r);
         return [f, t.useCallback((n => {
           if (u) {
             const r = "function" == typeof n ? n(e) : n;
-            r !== e && s(r)
+            r !== e && c(r)
           } else d(n)
-        }), [u, e, d, s])]
+        }), [u, e, d, c])]
       }
     },
     62865: (e, n, r) => {

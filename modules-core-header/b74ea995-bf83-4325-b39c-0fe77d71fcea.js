@@ -50,7 +50,7 @@ _global.SENTRY_RELEASE = {
     },
     3009: (e, n, r) => {
       r.r(n), r.d(n, {
-        Root: () => c,
+        Root: () => f,
         Slot: () => a,
         Slottable: () => i
       });
@@ -90,7 +90,7 @@ _global.SENTRY_RELEASE = {
             return r ? e.ref : (n = Object.getOwnPropertyDescriptor(e, "ref")?.get, r = n && "isReactWarning" in n && n.isReactWarning, r ? e.props.ref : e.props.ref || e.ref)
           }(r);
           return t.cloneElement(r, {
-            ...f(l, r.props),
+            ...c(l, r.props),
             ref: n ? (0, o.t)(n, e) : e
           })
         }
@@ -107,7 +107,7 @@ _global.SENTRY_RELEASE = {
         return t.isValidElement(e) && e.type === i
       }
 
-      function f(e, n) {
+      function c(e, n) {
         const r = {
           ...n
         };
@@ -126,7 +126,7 @@ _global.SENTRY_RELEASE = {
           ...r
         }
       }
-      var c = a
+      var f = a
     }
   }
 ]);

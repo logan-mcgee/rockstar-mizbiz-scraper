@@ -19,7 +19,7 @@ _global.SENTRY_RELEASE = {
     28844: (e, d, a) => {
       a.r(d), a.d(d, {
         Portal: () => f,
-        Root: () => b
+        Root: () => i
       });
       var o = a(62229),
         n = a(44853),
@@ -46,16 +46,16 @@ _global.SENTRY_RELEASE = {
           const {
             container: a,
             ...t
-          } = e, [f, b] = o.useState(!1);
-          (0, s.N)((() => b(!0)), []);
-          const i = a || f && globalThis?.document?.body;
-          return i ? n.createPortal((0, l.jsx)(r.div, {
+          } = e, [f, i] = o.useState(!1);
+          (0, s.N)((() => i(!0)), []);
+          const b = a || f && globalThis?.document?.body;
+          return b ? n.createPortal((0, l.jsx)(r.div, {
             ...t,
             ref: d
-          }), i) : null
+          }), b) : null
         }));
       f.displayName = "Portal";
-      var b = f
+      var i = f
     },
     92600: (e, d, a) => {
       a.d(d, {
