@@ -72,7 +72,7 @@ _global.SENTRY_RELEASE = {
     },
     29960: (A, e, t) => {
       t.d(e, {
-        i: () => l,
+        i: () => c,
         o: () => s
       });
       var n = t(62229),
@@ -95,15 +95,15 @@ _global.SENTRY_RELEASE = {
             children: e
           })
         },
-        l = () => (0, n.useContext)(a)
+        c = () => (0, n.useContext)(a)
     },
     19544: (A, e, t) => {
       t.d(e, {
         C1: () => s,
         S1: () => d,
         XC: () => u,
-        jS: () => l,
-        qg: () => c,
+        jS: () => c,
+        qg: () => l,
         z0: () => g
       });
       var n = t(62229),
@@ -123,31 +123,31 @@ _global.SENTRY_RELEASE = {
             mobile: t = null,
             desktop: d = null,
             ariaLabel: s = null,
-            sources: l = null,
-            prod: c = null
+            sources: c = null,
+            prod: l = null
           } = A;
           const g = (0, r.useLocale)(),
             {
               meta: u = {}
             } = (0, o.i)() ?? {},
-            [i, f] = (0, n.useState)(c ?? u?.cdn ?? u?.prod ?? !0);
+            [i, f] = (0, n.useState)(l ?? u?.cdn ?? u?.prod ?? !0);
           (0, n.useEffect)((() => {
-            f(c ?? u?.cdn ?? u?.prod ?? !0)
-          }), [c, u]);
+            f(l ?? u?.cdn ?? u?.prod ?? !0)
+          }), [l, u]);
           const B = (0, n.useCallback)((A => {
-            const e = null !== l,
+            const e = null !== c,
               t = A?.previewSrc ?? A ?? null;
             if (null === t || "string" != typeof t) return null;
             if (t.startsWith("http")) return a(t);
             const n = `${e?(0,r.getCdnPrefix)(i):""}${t}`;
             return a(n)
-          }), [i, l]);
+          }), [i, c]);
           return {
             alt: e,
             ariaLabel: s,
             src: {
-              mobile: B(l?.[g]?.mobile ?? l?.en_us?.mobile ?? t),
-              desktop: B(l?.[g]?.desktop ?? l?.en_us?.desktop ?? d)
+              mobile: B(c?.[g]?.mobile ?? c?.en_us?.mobile ?? t),
+              desktop: B(c?.[g]?.desktop ?? c?.en_us?.desktop ?? d)
             }
           }
         },
@@ -161,7 +161,7 @@ _global.SENTRY_RELEASE = {
             s(t?.cdn ?? t?.prod ?? !1)
           }), [t]), A ? A?.startsWith("http") ? a(A) : a(`${(0,r.getCdnPrefix)(d)}${A}`) : null
         },
-        l = () => {
+        c = () => {
           const A = (0, o.i)() ?? {},
             {
               meta: e = {}
@@ -173,7 +173,7 @@ _global.SENTRY_RELEASE = {
             return A ? A?.startsWith("http") ? a(A) : a(`${(0,r.getCdnPrefix)(n)}${A}`) : null
           }), [t])
         },
-        c = A => A.full_src,
+        l = A => A.full_src,
         g = A => {
           const e = A?.previewSrc ?? A?.preview_src ?? A;
           return e?.startsWith("http") ? e : `${(0,r.getCdnPrefix)(!1)}${e}`

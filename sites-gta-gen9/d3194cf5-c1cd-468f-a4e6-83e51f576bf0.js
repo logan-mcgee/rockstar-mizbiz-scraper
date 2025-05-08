@@ -56,10 +56,10 @@ _global.SENTRY_RELEASE = {
         }
       }
 
-      function c(e, r, u) {
-        (u = u || {}).arrayMerge = u.arrayMerge || o, u.isMergeableObject = u.isMergeableObject || t, u.cloneUnlessOtherwiseSpecified = n;
-        var s = Array.isArray(r);
-        return s === Array.isArray(e) ? s ? u.arrayMerge(e, r, u) : function(e, t, r) {
+      function c(e, r, f) {
+        (f = f || {}).arrayMerge = f.arrayMerge || o, f.isMergeableObject = f.isMergeableObject || t, f.cloneUnlessOtherwiseSpecified = n;
+        var u = Array.isArray(r);
+        return u === Array.isArray(e) ? u ? f.arrayMerge(e, r, f) : function(e, t, r) {
           var o = {};
           return r.isMergeableObject(e) && a(e).forEach((function(t) {
             o[t] = n(e[t], r)
@@ -72,7 +72,7 @@ _global.SENTRY_RELEASE = {
               return "function" == typeof r ? r : c
             }(a, r)(e[a], t[a], r) : o[a] = n(t[a], r))
           })), o
-        }(e, r, u) : n(r, u)
+        }(e, r, f) : n(r, f)
       }
       c.all = function(e, t) {
         if (!Array.isArray(e)) throw new Error("first argument should be an array");
@@ -80,8 +80,8 @@ _global.SENTRY_RELEASE = {
           return c(e, r, t)
         }), {})
       };
-      var u = c;
-      e.exports = u
+      var f = c;
+      e.exports = f
     },
     91299: (e, t, r) => {
       r.r(t), r.d(t, {
@@ -98,7 +98,7 @@ _global.SENTRY_RELEASE = {
         __createBinding: () => b,
         __decorate: () => c,
         __disposeResources: () => C,
-        __esDecorate: () => s,
+        __esDecorate: () => u,
         __exportStar: () => h,
         __extends: () => o,
         __generator: () => _,
@@ -106,11 +106,11 @@ _global.SENTRY_RELEASE = {
         __importStar: () => T,
         __makeTemplateObject: () => x,
         __metadata: () => y,
-        __param: () => u,
+        __param: () => f,
         __propKey: () => l,
         __read: () => v,
         __rest: () => i,
-        __runInitializers: () => f,
+        __runInitializers: () => s,
         __setFunctionName: () => p,
         __spread: () => g,
         __spreadArray: () => O,
@@ -164,18 +164,18 @@ _global.SENTRY_RELEASE = {
         return a > 3 && i && Object.defineProperty(t, r, i), i
       }
 
-      function u(e, t) {
+      function f(e, t) {
         return function(r, n) {
           t(r, n, e)
         }
       }
 
-      function s(e, t, r, n, o, a) {
+      function u(e, t, r, n, o, a) {
         function i(e) {
           if (void 0 !== e && "function" != typeof e) throw new TypeError("Function expected");
           return e
         }
-        for (var c, u = n.kind, s = "getter" === u ? "get" : "setter" === u ? "set" : "value", f = !t && e ? n.static ? e : e.prototype : null, l = t || (f ? Object.getOwnPropertyDescriptor(f, n.name) : {}), p = !1, y = r.length - 1; y >= 0; y--) {
+        for (var c, f = n.kind, u = "getter" === f ? "get" : "setter" === f ? "set" : "value", s = !t && e ? n.static ? e : e.prototype : null, l = t || (s ? Object.getOwnPropertyDescriptor(s, n.name) : {}), p = !1, y = r.length - 1; y >= 0; y--) {
           var d = {};
           for (var _ in n) d[_] = "access" === _ ? {} : n[_];
           for (var _ in n.access) d.access[_] = n.access[_];
@@ -183,20 +183,20 @@ _global.SENTRY_RELEASE = {
             if (p) throw new TypeError("Cannot add initializers after decoration has completed");
             a.push(i(e || null))
           };
-          var b = (0, r[y])("accessor" === u ? {
+          var b = (0, r[y])("accessor" === f ? {
             get: l.get,
             set: l.set
-          } : l[s], d);
-          if ("accessor" === u) {
+          } : l[u], d);
+          if ("accessor" === f) {
             if (void 0 === b) continue;
             if (null === b || "object" != typeof b) throw new TypeError("Object expected");
             (c = i(b.get)) && (l.get = c), (c = i(b.set)) && (l.set = c), (c = i(b.init)) && o.unshift(c)
-          } else(c = i(b)) && ("field" === u ? o.unshift(c) : l[s] = c)
+          } else(c = i(b)) && ("field" === f ? o.unshift(c) : l[u] = c)
         }
-        f && Object.defineProperty(f, n.name, l), p = !0
+        s && Object.defineProperty(s, n.name, l), p = !0
       }
 
-      function f(e, t, r) {
+      function s(e, t, r) {
         for (var n = arguments.length > 2, o = 0; o < t.length; o++) r = n ? t[o].call(e, r) : t[o].call(e);
         return n ? r : void 0
       }
@@ -220,7 +220,7 @@ _global.SENTRY_RELEASE = {
         return new(r || (r = Promise))((function(o, a) {
           function i(e) {
             try {
-              u(n.next(e))
+              f(n.next(e))
             } catch (e) {
               a(e)
             }
@@ -228,19 +228,19 @@ _global.SENTRY_RELEASE = {
 
           function c(e) {
             try {
-              u(n.throw(e))
+              f(n.throw(e))
             } catch (e) {
               a(e)
             }
           }
 
-          function u(e) {
+          function f(e) {
             var t;
             e.done ? o(e.value) : (t = e.value, t instanceof r ? t : new r((function(e) {
               e(t)
             }))).then(i, c)
           }
-          u((n = n.apply(e, t || [])).next())
+          f((n = n.apply(e, t || [])).next())
         }))
       }
 
@@ -263,7 +263,7 @@ _global.SENTRY_RELEASE = {
         }), a;
 
         function c(c) {
-          return function(u) {
+          return function(f) {
             return function(c) {
               if (r) throw new TypeError("Generator is already executing.");
               for (; a && (a = 0, c[0] && (i = 0)), i;) try {
@@ -315,7 +315,7 @@ _global.SENTRY_RELEASE = {
                 value: c[0] ? c[1] : void 0,
                 done: !0
               }
-            }([c, u])
+            }([c, f])
           }
         }
       }
@@ -416,22 +416,22 @@ _global.SENTRY_RELEASE = {
 
         function c(e, t) {
           try {
-            (r = o[e](t)).value instanceof j ? Promise.resolve(r.value.v).then(u, s) : f(a[0][2], r)
+            (r = o[e](t)).value instanceof j ? Promise.resolve(r.value.v).then(f, u) : s(a[0][2], r)
           } catch (e) {
-            f(a[0][3], e)
+            s(a[0][3], e)
           }
           var r
         }
 
-        function u(e) {
+        function f(e) {
           c("next", e)
         }
 
-        function s(e) {
+        function u(e) {
           c("throw", e)
         }
 
-        function f(e, t) {
+        function s(e, t) {
           e(t), a.shift(), a.length && c(a[0][0], a[0][1])
         }
       }
@@ -575,7 +575,7 @@ _global.SENTRY_RELEASE = {
         __assign: a,
         __rest: i,
         __decorate: c,
-        __param: u,
+        __param: f,
         __metadata: y,
         __awaiter: d,
         __generator: _,

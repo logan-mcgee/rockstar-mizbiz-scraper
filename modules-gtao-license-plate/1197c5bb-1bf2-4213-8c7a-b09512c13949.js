@@ -108,8 +108,8 @@ _global.SENTRY_RELEASE = {
         u = ["Webkit", "Ms", "Moz", "O"];
       p = Object.keys(p).reduce(((e, t) => (u.forEach((a => e[((e, t) => e + t.charAt(0).toUpperCase() + t.substring(1))(a, t)] = e[t])), e)), p);
       var c = /^(matrix|translate|scale|rotate|skew)/,
-        f = /^(translate)/,
-        b = /^(rotate|skew)/,
+        b = /^(translate)/,
+        f = /^(rotate|skew)/,
         g = (e, t) => s.is.num(e) && 0 !== e ? e + t : e,
         m = (e, t) => s.is.arr(e) ? e.every((e => m(e, t))) : s.is.num(e) ? e === t : parseFloat(e) === t,
         h = class extends n.$s {
@@ -125,7 +125,7 @@ _global.SENTRY_RELEASE = {
               if ("transform" === t) o.push([e || ""]), n.push((e => [e, "" === e]));
               else if (c.test(t)) {
                 if (delete r[t], s.is.und(e)) return;
-                const a = f.test(t) ? "px" : b.test(t) ? "deg" : "";
+                const a = b.test(t) ? "px" : f.test(t) ? "deg" : "";
                 o.push((0, s.$r)(e)), n.push("rotate3d" === t ? ([e, t, r, o]) => [`rotate3d(${e},${t},${r},${g(o,a)})`, m(o, 0)] : e => [`${t}(${e.map((e=>g(e,a))).join(",")})`, m(e, t.startsWith("scale") ? 1 : 0)])
               }
             })), o.length && (r.transform = new y(o, n)), super(r)
@@ -175,15 +175,15 @@ _global.SENTRY_RELEASE = {
               viewBox: u,
               ...c
             } = t,
-            f = Object.values(c),
-            b = Object.keys(c).map((t => a || e.hasAttribute(t) ? t : d[t] || (d[t] = t.replace(/([A-Z])/g, (e => "-" + e.toLowerCase())))));
+            b = Object.values(c),
+            f = Object.keys(c).map((t => a || e.hasAttribute(t) ? t : d[t] || (d[t] = t.replace(/([A-Z])/g, (e => "-" + e.toLowerCase())))));
           void 0 !== s && (e.textContent = s);
           for (const t in o)
             if (o.hasOwnProperty(t)) {
               const a = l(t, o[t]);
               i.test(t) ? e.style.setProperty(t, a) : e.style[t] = a
-            } b.forEach(((t, a) => {
-            e.setAttribute(t, f[a])
+            } f.forEach(((t, a) => {
+            e.setAttribute(t, b[a])
           })), void 0 !== r && (e.className = r), void 0 !== n && (e.scrollTop = n), void 0 !== p && (e.scrollLeft = p), void 0 !== u && e.setAttribute("viewBox", u)
         },
         createAnimatedStyle: e => new h(e),

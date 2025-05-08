@@ -25,16 +25,16 @@ _global.SENTRY_RELEASE = {
         r = s(27835),
         o = s.n(r),
         d = s(17529),
-        i = s.n(d),
-        A = s(72162),
-        c = s.n(A),
+        c = s.n(d),
+        i = s(72162),
+        A = s.n(i),
         l = s(82510),
         f = s.n(l),
         g = s(90675),
         b = s.n(g),
         m = s(90617),
         p = {};
-      p.styleTagTransform = b(), p.setAttributes = c(), p.insert = i().bind(null, "head"), p.domAPI = o(), p.insertStyleElement = f(), t()(m.A, p);
+      p.styleTagTransform = b(), p.setAttributes = A(), p.insert = c().bind(null, "head"), p.domAPI = o(), p.insertStyleElement = f(), t()(m.A, p);
       const u = m.A && m.A.locals ? m.A.locals : void 0;
       var k = s(73855);
       const x = () => (0, k.jsx)("div", {
@@ -62,12 +62,12 @@ _global.SENTRY_RELEASE = {
         r = s(15081),
         o = s.n(r),
         d = s(79908),
-        i = s.n(d),
-        A = new URL(s(82271), s.b),
-        c = new URL(s(17923), s.b),
+        c = s.n(d),
+        i = new URL(s(82271), s.b),
+        A = new URL(s(17923), s.b),
         l = o()(t()),
-        f = i()(A),
-        g = i()(c);
+        f = c()(i),
+        g = c()(A);
       l.push([e.id, `.rockstargames-sites-rockstargamesb2ef0f4b0fa8e8140d3b77bff10095b7{align-items:center;background:url(${f}) fixed;display:flex;flex:1;justify-content:center}.rockstargames-sites-rockstargamesf5e7ab9c74f01e6dc42bea36681208d9{grid-gap:1.5rem;-webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px);border-radius:5px;box-shadow:0 0 5px hsla(0,0%,100%,.25);display:grid;max-width:640px;padding:1.5rem;text-align:center}.rockstargames-sites-rockstargamesd8b754695ff6e6ac5f4e44b7dd6a6446{background:url(${g}) no-repeat 50%/contain;margin:0 auto;max-width:256px;width:100%}.rockstargames-sites-rockstargamesd8b754695ff6e6ac5f4e44b7dd6a6446:after{content:"";display:block;padding-top:28.125%;width:100%}`, "", {
         version: 3,
         sources: ["webpack://./src/pages/SCMaintenance/index.less"],

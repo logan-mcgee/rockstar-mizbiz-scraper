@@ -18,29 +18,29 @@ _global.SENTRY_RELEASE = {
   [3511], {
     33511: (e, a, s) => {
       s.r(a), s.d(a, {
-        default: () => l
+        default: () => f
       });
       var t = s(62229),
         d = s(9623),
         n = s(9566),
         r = s(70241),
         o = s(95966),
-        f = s(73855);
-      const l = (0, o.withTranslations)((e => {
+        l = s(73855);
+      const f = (0, o.withTranslations)((e => {
         let {
           t: a
         } = e;
         const s = (0, d.useParams)(),
           {
             setBreadcrumb: o,
-            setNormalLogo: l
+            setNormalLogo: f
           } = (0, r.b)();
         return (0, t.useEffect)((() => (o([{
           href: "/newswire",
           title: a("Newswire")
         }], ""), () => {
-          l(!0), o()
-        })), []), (0, f.jsx)(n.NewswireArticle, {
+          f(!0), o()
+        })), []), (0, l.jsx)(n.NewswireArticle, {
           idHash: String(s.articleId)
         })
       }))

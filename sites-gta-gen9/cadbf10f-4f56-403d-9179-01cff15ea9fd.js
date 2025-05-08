@@ -24,8 +24,8 @@ _global.SENTRY_RELEASE = {
         AccordionItem: () => ie,
         AccordionTrigger: () => ue,
         Content: () => ye,
-        Header: () => ge,
-        Item: () => be,
+        Header: () => be,
+        Item: () => ge,
         Root: () => me,
         Trigger: () => ve,
         createAccordionScope: () => Y
@@ -161,7 +161,7 @@ _global.SENTRY_RELEASE = {
         }
       }
 
-      function b(e, n, {
+      function g(e, n, {
         checkForDefaultPrevented: t = !0
       } = {}) {
         return function(r) {
@@ -169,7 +169,7 @@ _global.SENTRY_RELEASE = {
         }
       }
 
-      function g(e) {
+      function b(e) {
         const n = (0, o.useRef)(e);
         return (0, o.useEffect)((() => {
           n.current = e
@@ -191,14 +191,14 @@ _global.SENTRY_RELEASE = {
           const t = (0, o.useState)(e),
             [r] = t,
             a = (0, o.useRef)(r),
-            l = g(n);
+            l = b(n);
           return (0, o.useEffect)((() => {
             a.current !== r && (l(r), a.current = r)
           }), [r, a, l]), t
         }({
           defaultProp: n,
           onChange: t
-        }), l = void 0 !== e, c = l ? e : r, i = g(t);
+        }), l = void 0 !== e, c = l ? e : r, i = b(t);
         return [c, (0, o.useCallback)((n => {
           if (l) {
             const t = "function" == typeof n ? n(e) : n;
@@ -343,7 +343,7 @@ _global.SENTRY_RELEASE = {
             disabled: l.disabled
           }, a, {
             ref: n,
-            onClick: b(e.onClick, l.onOpenToggle)
+            onClick: g(e.onClick, l.onOpenToggle)
           }))
         })),
         x = "CollapsibleContent",
@@ -367,7 +367,7 @@ _global.SENTRY_RELEASE = {
             present: a,
             children: l,
             ...c
-          } = e, i = O(x, t), [d, u] = (0, o.useState)(a), f = (0, o.useRef)(null), p = s(n, f), m = (0, o.useRef)(0), b = m.current, g = (0, o.useRef)(0), v = g.current, y = i.open || d, A = (0, o.useRef)(y), w = (0, o.useRef)();
+          } = e, i = O(x, t), [d, u] = (0, o.useState)(a), f = (0, o.useRef)(null), p = s(n, f), m = (0, o.useRef)(0), g = m.current, b = (0, o.useRef)(0), v = b.current, y = i.open || d, A = (0, o.useRef)(y), w = (0, o.useRef)();
           return (0, o.useEffect)((() => {
             const e = requestAnimationFrame((() => A.current = !1));
             return () => cancelAnimationFrame(e)
@@ -379,7 +379,7 @@ _global.SENTRY_RELEASE = {
                 animationName: e.style.animationName
               }, e.style.transitionDuration = "0s", e.style.animationName = "none";
               const n = e.getBoundingClientRect();
-              m.current = n.height, g.current = n.width, A.current || (e.style.transitionDuration = w.current.transitionDuration, e.style.animationName = w.current.animationName), u(a)
+              m.current = n.height, b.current = n.width, A.current || (e.style.transitionDuration = w.current.transitionDuration, e.style.animationName = w.current.animationName), u(a)
             }
           }), [i.open, a]), (0, o.createElement)(E.div, (0, r.A)({
             "data-state": U(i.open),
@@ -389,7 +389,7 @@ _global.SENTRY_RELEASE = {
           }, c, {
             ref: p,
             style: {
-              "--radix-collapsible-content-height": b ? `${b}px` : void 0,
+              "--radix-collapsible-content-height": g ? `${g}px` : void 0,
               "--radix-collapsible-content-width": v ? `${v}px` : void 0,
               ...e.style
             }
@@ -542,7 +542,7 @@ _global.SENTRY_RELEASE = {
         } = e, d = s(o.useRef(null), n), u = q(t), f = "ltr" === function(e) {
           const n = (0, o.useContext)(j);
           return e || n || "ltr"
-        }(l), p = b(e.onKeyDown, (e => {
+        }(l), p = g(e.onKeyDown, (e => {
           var n;
           if (!F.includes(e.key)) return;
           const t = e.target,
@@ -666,8 +666,8 @@ _global.SENTRY_RELEASE = {
         return e ? "open" : "closed"
       }
       const me = G,
-        be = ie,
-        ge = se,
+        ge = ie,
+        be = se,
         ve = ue,
         ye = fe
     },

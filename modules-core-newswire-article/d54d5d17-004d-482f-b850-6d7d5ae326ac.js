@@ -173,10 +173,10 @@ _global.SENTRY_RELEASE = {
             else {
               var y = (0, d.default)();
               this.pid = y;
-              var b = function() {
+              var w = function() {
                   return y !== e.pid
                 },
-                w = "multi" === r ? function() {
+                b = "multi" === r ? function() {
                   return h(s, g)
                 } : function() {
                   return p(s, f)
@@ -195,18 +195,18 @@ _global.SENTRY_RELEASE = {
                 return (0, l.default)((function() {
                   return B <= Y
                 }), (function(t) {
-                  if (b()) return t(!0);
+                  if (w()) return t(!0);
                   v = parseInt((B + Y) / 2, 10), e.setState({
                     fontSize: v
                   }, (function() {
-                    return b() ? t(!0) : (w() ? B = v + 1 : Y = v - 1, t())
+                    return w() ? t(!0) : (b() ? B = v + 1 : Y = v - 1, t())
                   }))
                 }), t)
               }, function(t) {
                 return "single" === r && o || m() ? t() : (B = n, Y = v, (0, l.default)((function() {
                   return B < Y
                 }), (function(t) {
-                  if (b()) return t(!0);
+                  if (w()) return t(!0);
                   v = parseInt((B + Y) / 2, 10), e.setState({
                     fontSize: v
                   }, (function() {
@@ -214,12 +214,12 @@ _global.SENTRY_RELEASE = {
                   }))
                 }), t))
               }, function(t) {
-                if (v = Math.min(B, Y), v = Math.max(v, n), v = Math.min(v, A), v = Math.max(v, 0), b()) return t(!0);
+                if (v = Math.min(B, Y), v = Math.max(v, n), v = Math.min(v, A), v = Math.max(v, 0), w()) return t(!0);
                 e.setState({
                   fontSize: v
                 }, t)
               }], (function(t) {
-                t || b() || e.setState({
+                t || w() || e.setState({
                   ready: !0
                 }, (function() {
                   return i(v)

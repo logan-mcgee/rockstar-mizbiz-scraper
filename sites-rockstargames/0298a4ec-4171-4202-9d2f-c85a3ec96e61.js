@@ -31,17 +31,17 @@ _global.SENTRY_RELEASE = {
           hasGtaPlus: s,
           accountSynced: o
         } = e ?? {}, {
-          setCharactersNeeded: f
-        } = (0, n.useRockstarUserState)(), l = (0, d.useNavigate)();
-        return (0, t.useLayoutEffect)((() => (f("gtao"), () => {
-          f(null)
+          setCharactersNeeded: l
+        } = (0, n.useRockstarUserState)(), r = (0, d.useNavigate)();
+        return (0, t.useLayoutEffect)((() => (l("gtao"), () => {
+          l(null)
         })), []), (0, t.useEffect)((() => {
-          !1 !== a ? o && l(s ? "./benefits" : "./join", {
+          !1 !== a ? o && r(s ? "./benefits" : "./join", {
             replace: !0
-          }) : l("./join", {
+          }) : r("./join", {
             replace: !0
           })
-        }), [s, o, a, l]), null
+        }), [s, o, a, r]), null
       }
     }
   }

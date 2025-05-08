@@ -31,10 +31,10 @@ _global.SENTRY_RELEASE = {
         for (var o = {}, s = [], c = 0; c < e.length; c++) {
           var i = e[c],
             d = r.base ? i[0] + r.base : i[0],
-            f = o[d] || 0,
-            l = "".concat(d, " ").concat(f);
-          o[d] = f + 1;
-          var u = n(l),
+            l = o[d] || 0,
+            f = "".concat(d, " ").concat(l);
+          o[d] = l + 1;
+          var u = n(f),
             p = {
               css: i[1],
               media: i[2],
@@ -46,12 +46,12 @@ _global.SENTRY_RELEASE = {
           else {
             var m = a(p, r);
             r.byIndex = c, t.splice(c, 0, {
-              identifier: l,
+              identifier: f,
               updater: m,
               references: 1
             })
           }
-          s.push(l)
+          s.push(f)
         }
         return s
       }
@@ -75,8 +75,8 @@ _global.SENTRY_RELEASE = {
             t[c].references--
           }
           for (var i = r(e, a), d = 0; d < o.length; d++) {
-            var f = n(o[d]);
-            0 === t[f].references && (t[f].updater(), t.splice(f, 1))
+            var l = n(o[d]);
+            0 === t[l].references && (t[l].updater(), t.splice(l, 1))
           }
           o = i
         }
@@ -169,8 +169,8 @@ _global.SENTRY_RELEASE = {
               null != i && (s[i] = !0)
             }
           for (var d = 0; d < e.length; d++) {
-            var f = [].concat(e[d]);
-            r && s[f[0]] || (void 0 !== o && (void 0 === f[5] || (f[1] = "@layer".concat(f[5].length > 0 ? " ".concat(f[5]) : "", " {").concat(f[1], "}")), f[5] = o), n && (f[2] ? (f[1] = "@media ".concat(f[2], " {").concat(f[1], "}"), f[2] = n) : f[2] = n), a && (f[4] ? (f[1] = "@supports (".concat(f[4], ") {").concat(f[1], "}"), f[4] = a) : f[4] = "".concat(a)), t.push(f))
+            var l = [].concat(e[d]);
+            r && s[l[0]] || (void 0 !== o && (void 0 === l[5] || (l[1] = "@layer".concat(l[5].length > 0 ? " ".concat(l[5]) : "", " {").concat(l[1], "}")), l[5] = o), n && (l[2] ? (l[1] = "@media ".concat(l[2], " {").concat(l[1], "}"), l[2] = n) : l[2] = n), a && (l[4] ? (l[1] = "@supports (".concat(l[4], ") {").concat(l[1], "}"), l[4] = a) : l[4] = "".concat(a)), t.push(l))
           }
         }, t
       }
@@ -205,15 +205,15 @@ _global.SENTRY_RELEASE = {
       function d(e, t, n) {
         var r, o = {},
           d = null,
-          f = null;
-        for (r in void 0 !== n && (d = "" + n), void 0 !== t.key && (d = "" + t.key), void 0 !== t.ref && (f = t.ref), t) s.call(t, r) && !i.hasOwnProperty(r) && (o[r] = t[r]);
+          l = null;
+        for (r in void 0 !== n && (d = "" + n), void 0 !== t.key && (d = "" + t.key), void 0 !== t.ref && (l = t.ref), t) s.call(t, r) && !i.hasOwnProperty(r) && (o[r] = t[r]);
         if (e && e.defaultProps)
           for (r in t = e.defaultProps) void 0 === o[r] && (o[r] = t[r]);
         return {
           $$typeof: a,
           type: e,
           key: d,
-          ref: f,
+          ref: l,
           props: o,
           _owner: c.current
         }
@@ -234,15 +234,15 @@ _global.SENTRY_RELEASE = {
         c = n.n(s),
         i = n(17529),
         d = n.n(i),
-        f = n(72162),
-        l = n.n(f),
+        l = n(72162),
+        f = n.n(l),
         u = n(82510),
         p = n.n(u),
         m = n(90675),
         b = n.n(m),
         v = n(84045),
         g = {};
-      g.styleTagTransform = b(), g.setAttributes = l(), g.insert = d().bind(null, "head"), g.domAPI = c(), g.insertStyleElement = p(), o()(v.A, g);
+      g.styleTagTransform = b(), g.setAttributes = f(), g.insert = d().bind(null, "head"), g.domAPI = c(), g.insertStyleElement = p(), o()(v.A, g);
       const y = v.A && v.A.locals ? v.A.locals : void 0;
       var h = n(73855);
       const w = () => {

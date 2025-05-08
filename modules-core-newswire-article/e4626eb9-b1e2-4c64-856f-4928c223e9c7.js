@@ -534,8 +534,8 @@ _global.SENTRY_RELEASE = {
           })(n)
         })), s
       };
-      var b = n(42868),
-        h = n(2772);
+      var h = n(42868),
+        b = n(2772);
       const g = {
           event: "page_section_impression",
           element_placement: null
@@ -548,7 +548,7 @@ _global.SENTRY_RELEASE = {
           } = e;
           const {
             track: a
-          } = (0, h.h)(), {
+          } = (0, b.h)(), {
             ref: i,
             scrollTracked: l
           } = (0, s.useScrollTracking)(t);
@@ -612,7 +612,7 @@ _global.SENTRY_RELEASE = {
                   }
                 }),
                 p = [...e?.translations ?? []].reverse(),
-                f = `componentProps_${(0,b.A)()}`;
+                f = `componentProps_${(0,h.A)()}`;
               return (0, r.createElement)(d, {
                 ...n?.meta,
                 ...e,
@@ -644,7 +644,7 @@ _global.SENTRY_RELEASE = {
           const [y] = (0, r.useState)({
             ...n,
             ...d() ?? {}
-          }), b = (e => {
+          }), h = (e => {
             let {
               payload: t
             } = e;
@@ -678,13 +678,13 @@ _global.SENTRY_RELEASE = {
             }), [t]), n
           })({
             payload: i
-          }), h = v({
+          }), b = v({
             payload: i,
             variables: f
           });
           return (0, r.useMemo)((() => {
             if (!i) return null;
-            const e = h,
+            const e = b,
               n = i?.meta?.prod ?? i?.meta?.cdn ?? s?.meta?.prod ?? s?.meta?.cdn ?? !1,
               r = {
                 ...i,
@@ -707,7 +707,7 @@ _global.SENTRY_RELEASE = {
                 })
               })
             })
-          }), [s, i, JSON.stringify(b), JSON.stringify(h)])
+          }), [s, i, JSON.stringify(h), JSON.stringify(b)])
         };
       var x = n(19544);
       const S = function() {

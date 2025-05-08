@@ -16,15 +16,15 @@ _global.SENTRY_RELEASE = {
   id: "sentry-release-id"
 }, (self.webpackChunk_rockstargames_sites_rockstargames = self.webpackChunk_rockstargames_sites_rockstargames || []).push([
   [5142], {
-    55142: (o, t, e) => {
-      e.r(t), e.d(t, {
-        Lightbox_Close_Button_Label: () => _,
+    55142: (o, t, _) => {
+      _.r(t), _.d(t, {
+        Lightbox_Close_Button_Label: () => e,
         Lightbox_Close_Button_Tooltip: () => a,
-        Lightbox_Dialog_Description: () => c,
-        Lightbox_Dialog_Title: () => h,
+        Lightbox_Dialog_Description: () => f,
+        Lightbox_Dialog_Title: () => c,
         Lightbox_Download_Button_Label: () => r,
         Lightbox_Download_Button_Tooltip: () => L,
-        Lightbox_Open_Button_Label: () => f,
+        Lightbox_Open_Button_Label: () => h,
         Lightbox_Reset_Zoom_Button_Label: () => d,
         Lightbox_Reset_Zoom_Button_Tooltip: () => s,
         Lightbox_Zoom_In_Button_Label: () => l,
@@ -35,7 +35,7 @@ _global.SENTRY_RELEASE = {
         Lightbox_Zoom_Slider_Tooltip: () => u,
         default: () => p
       });
-      var _ = "关闭弹窗",
+      var e = "关闭弹窗",
         a = "按 {shortcut}",
         l = "放大",
         i = "按 {shortcut}",
@@ -47,11 +47,11 @@ _global.SENTRY_RELEASE = {
         u = "{zoom}%",
         r = "下载",
         L = "下载",
-        f = "在弹窗中打开图片",
-        h = "图片弹窗",
-        c = "替代文本：{alt}",
+        h = "在弹窗中打开图片",
+        c = "图片弹窗",
+        f = "替代文本：{alt}",
         p = {
-          Lightbox_Close_Button_Label: _,
+          Lightbox_Close_Button_Label: e,
           Lightbox_Close_Button_Tooltip: a,
           Lightbox_Zoom_In_Button_Label: l,
           Lightbox_Zoom_In_Button_Tooltip: i,
@@ -63,9 +63,9 @@ _global.SENTRY_RELEASE = {
           Lightbox_Zoom_Slider_Tooltip: u,
           Lightbox_Download_Button_Label: r,
           Lightbox_Download_Button_Tooltip: L,
-          Lightbox_Open_Button_Label: f,
-          Lightbox_Dialog_Title: h,
-          Lightbox_Dialog_Description: c
+          Lightbox_Open_Button_Label: h,
+          Lightbox_Dialog_Title: c,
+          Lightbox_Dialog_Description: f
         }
     }
   }

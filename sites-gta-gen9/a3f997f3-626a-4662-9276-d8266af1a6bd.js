@@ -18,38 +18,38 @@ _global.SENTRY_RELEASE = {
   [7250, 4869], {
     27250: (e, n, t) => {
       t.r(n), t.d(n, {
-        useGSAP: () => b
+        useGSAP: () => c
       });
-      var d = t(62229),
-        a = t(13581),
-        o = t.n(a);
-      let s = "undefined" != typeof window ? d.useLayoutEffect : d.useEffect,
-        f = e => e && !Array.isArray(e) && "object" == typeof e,
+      var a = t(62229),
+        d = t(13581),
+        f = t.n(d);
+      let o = "undefined" != typeof window ? a.useLayoutEffect : a.useEffect,
+        s = e => e && !Array.isArray(e) && "object" == typeof e,
         r = [],
         l = {},
-        i = o();
-      const b = function(e) {
+        i = f();
+      const c = function(e) {
         let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r,
           t = l;
-        f(e) ? (t = e, e = null, n = "dependencies" in t ? t.dependencies : r) : f(n) && (t = n, n = "dependencies" in t ? t.dependencies : r);
+        s(e) ? (t = e, e = null, n = "dependencies" in t ? t.dependencies : r) : s(n) && (t = n, n = "dependencies" in t ? t.dependencies : r);
         let {
-          scope: a,
-          revertOnUpdate: o
-        } = t, [b, u] = (0, d.useState)(!1);
+          scope: d,
+          revertOnUpdate: f
+        } = t, [c, u] = (0, a.useState)(!1);
         e && "function" != typeof e && console.warn("First parameter must be a function or config object");
-        const c = i.context((() => {}), a),
-          g = () => c.revert(),
-          y = n && n.length && !o;
-        return s((() => {
-          if (e && c.add(e, a), !y || !b) return g
-        }), n), y && s((() => (u(!0), g)), r), {
-          context: c,
-          contextSafe: e => c.add(null, e)
+        const g = i.context((() => {}), d),
+          b = () => g.revert(),
+          y = n && n.length && !f;
+        return o((() => {
+          if (e && g.add(e, d), !y || !c) return b
+        }), n), y && o((() => (u(!0), b)), r), {
+          context: g,
+          contextSafe: e => g.add(null, e)
         }
       };
-      b.register = e => {
+      c.register = e => {
         i = e
-      }, b.headless = !0
+      }, c.headless = !0
     }
   }
 ]);

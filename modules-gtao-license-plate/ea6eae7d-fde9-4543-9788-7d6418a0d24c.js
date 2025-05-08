@@ -20,11 +20,11 @@ _global.SENTRY_RELEASE = {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => l,
-        Lightbox_Dialog_Description: () => p,
-        Lightbox_Dialog_Title: () => r,
+        Lightbox_Dialog_Description: () => c,
+        Lightbox_Dialog_Title: () => f,
         Lightbox_Download_Button_Label: () => L,
-        Lightbox_Download_Button_Tooltip: () => f,
-        Lightbox_Open_Button_Label: () => h,
+        Lightbox_Download_Button_Tooltip: () => h,
+        Lightbox_Open_Button_Label: () => r,
         Lightbox_Reset_Zoom_Button_Label: () => d,
         Lightbox_Reset_Zoom_Button_Tooltip: () => g,
         Lightbox_Zoom_In_Button_Label: () => a,
@@ -33,7 +33,7 @@ _global.SENTRY_RELEASE = {
         Lightbox_Zoom_Out_Button__Tooltip: () => b,
         Lightbox_Zoom_Slider_Label: () => u,
         Lightbox_Zoom_Slider_Tooltip: () => s,
-        default: () => x
+        default: () => p
       });
       var _ = "Закрыть всплывающее окно",
         l = "Нажмите {shortcut}",
@@ -46,11 +46,11 @@ _global.SENTRY_RELEASE = {
         u = "Масштаб",
         s = "{zoom}%",
         L = "Загрузить",
-        f = "Загрузить",
-        h = "Открыть изображение в всплывающем окне",
-        r = "Всплывающее окно",
-        p = "Замещающий текст: {alt}",
-        x = {
+        h = "Загрузить",
+        r = "Открыть изображение в всплывающем окне",
+        f = "Всплывающее окно",
+        c = "Замещающий текст: {alt}",
+        p = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: l,
           Lightbox_Zoom_In_Button_Label: a,
@@ -62,10 +62,10 @@ _global.SENTRY_RELEASE = {
           Lightbox_Zoom_Slider_Label: u,
           Lightbox_Zoom_Slider_Tooltip: s,
           Lightbox_Download_Button_Label: L,
-          Lightbox_Download_Button_Tooltip: f,
-          Lightbox_Open_Button_Label: h,
-          Lightbox_Dialog_Title: r,
-          Lightbox_Dialog_Description: p
+          Lightbox_Download_Button_Tooltip: h,
+          Lightbox_Open_Button_Label: r,
+          Lightbox_Dialog_Title: f,
+          Lightbox_Dialog_Description: c
         }
     }
   }

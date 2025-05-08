@@ -120,7 +120,7 @@ _global.SENTRY_RELEASE = {
             }]
           }
         },
-        m = (s("Grid"), function() {
+        d = (s("Grid"), function() {
           (arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "Label").toLowerCase().split(" ").join("_")
         }("Grid"), r("style.--grid-num-columns-mobile", "Grid Number of Columns (Mobile)"), r("style.--grid-num-columns-desktop", "Grid Number of Columns (Desktop)"), s("Grid"), e => {
           let {
@@ -145,7 +145,7 @@ _global.SENTRY_RELEASE = {
             })
           }
         }),
-        d = e => {
+        m = e => {
           let {
             game: t = null,
             label: n = "Image",
@@ -491,7 +491,7 @@ _global.SENTRY_RELEASE = {
                   label: "Discount Items Carousel"
                 }), h({
                   game: n
-                }), m({
+                }), d({
                   parent: t
                 }), b({
                   game: n
@@ -540,7 +540,7 @@ _global.SENTRY_RELEASE = {
         T = n(17523);
       const C = () => {
           const e = {
-            ...d({})
+            ...m({})
           };
           return e.fields.push({
             name: "objectPosition",
@@ -957,10 +957,10 @@ _global.SENTRY_RELEASE = {
       n.d(t, {
         OD: () => i,
         lv: () => s,
-        pP: () => d,
+        pP: () => m,
         wC: () => o,
         PE: () => w,
-        rB: () => m,
+        rB: () => d,
         yh: () => v,
         Ap: () => p,
         Xs: () => y,
@@ -1033,13 +1033,13 @@ _global.SENTRY_RELEASE = {
         }),
         r = Object.freeze(Object.values(s));
 
-      function m(e) {
+      function d(e) {
         if (!e) return;
         if (e instanceof i) return e;
         const t = e.toString().toLowerCase();
         return r.find((e => t === e.name || t === e.id.toString() || t === e.friendlyName.toLowerCase() || t === e.alias?.toLowerCase()))
       }
-      const d = function() {
+      const m = function() {
         for (var e = arguments.length, t = new Array(e), n = 0; n < e; n++) t[n] = arguments[n];
         return [...t].filter(Boolean).join(" ")
       };

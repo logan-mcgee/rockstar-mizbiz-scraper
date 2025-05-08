@@ -20,25 +20,25 @@ _global.SENTRY_RELEASE = {
       e.r(t), e.d(t, {
         Lightbox_Close_Button_Label: () => _,
         Lightbox_Close_Button_Tooltip: () => l,
-        Lightbox_Dialog_Description: () => p,
-        Lightbox_Dialog_Title: () => r,
+        Lightbox_Dialog_Description: () => f,
+        Lightbox_Dialog_Title: () => c,
         Lightbox_Download_Button_Label: () => L,
-        Lightbox_Download_Button_Tooltip: () => f,
-        Lightbox_Open_Button_Label: () => h,
+        Lightbox_Download_Button_Tooltip: () => h,
+        Lightbox_Open_Button_Label: () => r,
         Lightbox_Reset_Zoom_Button_Label: () => d,
         Lightbox_Reset_Zoom_Button_Tooltip: () => g,
-        Lightbox_Zoom_In_Button_Label: () => a,
-        Lightbox_Zoom_In_Button_Tooltip: () => i,
+        Lightbox_Zoom_In_Button_Label: () => i,
+        Lightbox_Zoom_In_Button_Tooltip: () => a,
         Lightbox_Zoom_Out_Button_Label: () => n,
         Lightbox_Zoom_Out_Button__Tooltip: () => b,
         Lightbox_Zoom_Slider_Label: () => s,
         Lightbox_Zoom_Slider_Tooltip: () => u,
-        default: () => x
+        default: () => p
       });
       var _ = "Закрыть всплывающее окно",
         l = "Нажмите {shortcut}",
-        a = "Увеличить размер изображения",
-        i = "Нажмите {shortcut}",
+        i = "Увеличить размер изображения",
+        a = "Нажмите {shortcut}",
         n = "Уменьшить размер изображения",
         b = "Нажмите {shortcut}",
         d = "Вернуться к стандартному размеру изображения",
@@ -46,15 +46,15 @@ _global.SENTRY_RELEASE = {
         s = "Масштаб",
         u = "{zoom}%",
         L = "Загрузить",
-        f = "Загрузить",
-        h = "Открыть изображение в всплывающем окне",
-        r = "Всплывающее окно",
-        p = "Замещающий текст: {alt}",
-        x = {
+        h = "Загрузить",
+        r = "Открыть изображение в всплывающем окне",
+        c = "Всплывающее окно",
+        f = "Замещающий текст: {alt}",
+        p = {
           Lightbox_Close_Button_Label: _,
           Lightbox_Close_Button_Tooltip: l,
-          Lightbox_Zoom_In_Button_Label: a,
-          Lightbox_Zoom_In_Button_Tooltip: i,
+          Lightbox_Zoom_In_Button_Label: i,
+          Lightbox_Zoom_In_Button_Tooltip: a,
           Lightbox_Zoom_Out_Button_Label: n,
           Lightbox_Zoom_Out_Button__Tooltip: b,
           Lightbox_Reset_Zoom_Button_Label: d,
@@ -62,10 +62,10 @@ _global.SENTRY_RELEASE = {
           Lightbox_Zoom_Slider_Label: s,
           Lightbox_Zoom_Slider_Tooltip: u,
           Lightbox_Download_Button_Label: L,
-          Lightbox_Download_Button_Tooltip: f,
-          Lightbox_Open_Button_Label: h,
-          Lightbox_Dialog_Title: r,
-          Lightbox_Dialog_Description: p
+          Lightbox_Download_Button_Tooltip: h,
+          Lightbox_Open_Button_Label: r,
+          Lightbox_Dialog_Title: c,
+          Lightbox_Dialog_Description: f
         }
     }
   }

@@ -32,9 +32,9 @@ _global.SENTRY_RELEASE = {
           var i = e[s],
             u = a.base ? i[0] + a.base : i[0],
             d = o[u] || 0,
-            f = "".concat(u, " ").concat(d);
+            l = "".concat(u, " ").concat(d);
           o[u] = d + 1;
-          var l = n(f),
+          var f = n(l),
             p = {
               css: i[1],
               media: i[2],
@@ -42,16 +42,16 @@ _global.SENTRY_RELEASE = {
               supports: i[4],
               layer: i[5]
             };
-          if (-1 !== l) t[l].references++, t[l].updater(p);
+          if (-1 !== f) t[f].references++, t[f].updater(p);
           else {
             var b = r(p, a);
             a.byIndex = s, t.splice(s, 0, {
-              identifier: f,
+              identifier: l,
               updater: b,
               references: 1
             })
           }
-          c.push(f)
+          c.push(l)
         }
         return c
       }

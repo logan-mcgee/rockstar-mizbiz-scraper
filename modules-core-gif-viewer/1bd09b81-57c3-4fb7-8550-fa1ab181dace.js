@@ -27,16 +27,16 @@ _global.SENTRY_RELEASE = {
         d = e(7835),
         l = e.n(d),
         s = e(7529),
-        m = e.n(s),
-        c = e(2162),
-        g = e.n(c),
+        c = e.n(s),
+        m = e(2162),
+        g = e.n(m),
         h = e(2510),
         p = e.n(h),
         f = e(675),
         u = e.n(f),
         v = e(9646),
         b = {};
-      b.styleTagTransform = u(), b.setAttributes = g(), b.insert = m().bind(null, "head"), b.domAPI = l(), b.insertStyleElement = p(), o()(v.A, b), v.A && v.A.locals && v.A.locals;
+      b.styleTagTransform = u(), b.setAttributes = g(), b.insert = c().bind(null, "head"), b.domAPI = l(), b.insertStyleElement = p(), o()(v.A, b), v.A && v.A.locals && v.A.locals;
       var x = e(3855);
       const w = () => {
         const {

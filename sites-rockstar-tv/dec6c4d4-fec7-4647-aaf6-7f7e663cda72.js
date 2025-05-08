@@ -115,21 +115,21 @@ _global.SENTRY_RELEASE = {
           v5Compat: a = !1
         } = e;
         t = r.map(((e, t) => h(e, "string" == typeof e ? null : e.state, 0 === t ? "default" : void 0)));
-        let i = u(null == o ? t.length - 1 : o),
+        let i = c(null == o ? t.length - 1 : o),
           s = n.Pop,
           l = null;
 
-        function u(e) {
+        function c(e) {
           return Math.min(Math.max(e, 0), t.length - 1)
         }
 
-        function c() {
+        function u() {
           return t[i]
         }
 
         function h(e, r, n) {
           void 0 === r && (r = null);
-          let o = f(t ? c().pathname : "/", e, r, n);
+          let o = f(t ? u().pathname : "/", e, r, n);
           return d("/" === o.pathname.charAt(0), "relative pathnames are not supported in memory history: " + JSON.stringify(e)), o
         }
 
@@ -144,7 +144,7 @@ _global.SENTRY_RELEASE = {
             return s
           },
           get location() {
-            return c()
+            return u()
           },
           createHref: v,
           createURL: e => new URL(v(e), "http://localhost"),
@@ -176,7 +176,7 @@ _global.SENTRY_RELEASE = {
           },
           go(e) {
             s = n.Pop;
-            let r = u(i + e),
+            let r = c(i + e),
               o = t[r];
             i = r, l && l({
               action: s,
@@ -207,7 +207,7 @@ _global.SENTRY_RELEASE = {
         }), null, e)
       }
 
-      function u(e) {
+      function c(e) {
         return void 0 === e && (e = {}), v((function(e, t) {
           let {
             pathname: r = "/",
@@ -233,7 +233,7 @@ _global.SENTRY_RELEASE = {
         }), e)
       }
 
-      function c(e, t) {
+      function u(e, t) {
         if (!1 === e || null == e) throw new Error(t)
       }
 
@@ -290,10 +290,10 @@ _global.SENTRY_RELEASE = {
         let {
           window: s = document.defaultView,
           v5Compat: l = !1
-        } = o, u = s.history, d = n.Pop, m = null, v = g();
+        } = o, c = s.history, d = n.Pop, m = null, v = g();
 
         function g() {
-          return (u.state || {
+          return (c.state || {
             idx: null
           }).idx
         }
@@ -312,9 +312,9 @@ _global.SENTRY_RELEASE = {
         function b(e) {
           let t = "null" !== s.location.origin ? s.location.origin : s.location.href,
             r = "string" == typeof e ? e : p(e);
-          return c(t, "No window.location.(origin|href) available to create URL for href: " + r), new URL(r, t)
+          return u(t, "No window.location.(origin|href) available to create URL for href: " + r), new URL(r, t)
         }
-        null == v && (v = 0, u.replaceState(a({}, u.state, {
+        null == v && (v = 0, c.replaceState(a({}, c.state, {
           idx: v
         }), ""));
         let w = {
@@ -322,7 +322,7 @@ _global.SENTRY_RELEASE = {
             return d
           },
           get location() {
-            return e(s, u)
+            return e(s, c)
           },
           listen(e) {
             if (m) throw new Error("A history only accepts one active listener");
@@ -347,7 +347,7 @@ _global.SENTRY_RELEASE = {
             let a = h(o, v),
               i = w.createHref(o);
             try {
-              u.pushState(a, "", i)
+              c.pushState(a, "", i)
             } catch (e) {
               if (e instanceof DOMException && "DataCloneError" === e.name) throw e;
               s.location.assign(i)
@@ -364,13 +364,13 @@ _global.SENTRY_RELEASE = {
             r && r(o, e), v = g();
             let a = h(o, v),
               i = w.createHref(o);
-            u.replaceState(a, "", i), l && m && m({
+            c.replaceState(a, "", i), l && m && m({
               action: d,
               location: w.location,
               delta: 0
             })
           },
-          go: e => u.go(e)
+          go: e => c.go(e)
         };
         return w
       }
@@ -384,7 +384,7 @@ _global.SENTRY_RELEASE = {
         return void 0 === r && (r = []), void 0 === n && (n = {}), e.map(((e, o) => {
           let i = [...r, o],
             s = "string" == typeof e.id ? e.id : i.join("-");
-          if (c(!0 !== e.index || !e.children, "Cannot specify children on an index route"), c(!n[s], 'Found a route id collision on id "' + s + "\".  Route id's must be globally unique within Data Router usages"), function(e) {
+          if (u(!0 !== e.index || !e.children, "Cannot specify children on an index route"), u(!n[s], 'Found a route id collision on id "' + s + "\".  Route id's must be globally unique within Data Router usages"), function(e) {
               return !0 === e.index
             }(e)) {
             let r = a({}, e, t(e), {
@@ -440,10 +440,10 @@ _global.SENTRY_RELEASE = {
             childrenIndex: o,
             route: e
           };
-          i.relativePath.startsWith("/") && (c(i.relativePath.startsWith(n), 'Absolute route path "' + i.relativePath + '" nested under path "' + n + '" is not valid. An absolute child route path must start with the combined path of all its parent routes.'), i.relativePath = i.relativePath.slice(n.length));
+          i.relativePath.startsWith("/") && (u(i.relativePath.startsWith(n), 'Absolute route path "' + i.relativePath + '" nested under path "' + n + '" is not valid. An absolute child route path must start with the combined path of all its parent routes.'), i.relativePath = i.relativePath.slice(n.length));
           let s = z([n, i.relativePath]),
             l = r.concat(i);
-          e.children && e.children.length > 0 && (c(!0 !== e.index, 'Index routes must not have child routes. Please remove all child routes from route path "' + s + '".'), R(e.children, t, l, s)), (null != e.path || e.index) && t.push({
+          e.children && e.children.length > 0 && (u(!0 !== e.index, 'Index routes must not have child routes. Please remove all child routes from route path "' + s + '".'), R(e.children, t, l, s)), (null != e.path || e.index) && t.push({
             path: s,
             score: A(s, e.index),
             routesMeta: l
@@ -488,20 +488,20 @@ _global.SENTRY_RELEASE = {
           let i = r[e],
             s = e === r.length - 1,
             l = "/" === o ? t : t.slice(o.length) || "/",
-            u = U({
+            c = U({
               path: i.relativePath,
               caseSensitive: i.caseSensitive,
               end: s
             }, l);
-          if (!u) return null;
-          Object.assign(n, u.params);
-          let c = i.route;
+          if (!c) return null;
+          Object.assign(n, c.params);
+          let u = i.route;
           a.push({
             params: n,
-            pathname: z([o, u.pathname]),
-            pathnameBase: W(z([o, u.pathnameBase])),
-            route: c
-          }), "/" !== u.pathnameBase && (o = z([o, u.pathnameBase]))
+            pathname: z([o, c.pathname]),
+            pathnameBase: W(z([o, c.pathnameBase])),
+            route: u
+          }), "/" !== c.pathnameBase && (o = z([o, c.pathnameBase]))
         }
         return a
       }
@@ -518,7 +518,7 @@ _global.SENTRY_RELEASE = {
           if (a) {
             const [, e, r] = a;
             let n = t[e];
-            return c("?" === r || null != n, 'Missing ":' + e + '" param'), o(n)
+            return u("?" === r || null != n, 'Missing ":' + e + '" param'), o(n)
           }
           return e.replace(/\?$/g, "")
         })).filter((e => !!e)).join("/")
@@ -605,7 +605,7 @@ _global.SENTRY_RELEASE = {
 
       function I(e, t, r, n) {
         let o;
-        void 0 === n && (n = !1), "string" == typeof e ? o = m(e) : (o = a({}, e), c(!o.pathname || !o.pathname.includes("?"), B("?", "pathname", "search", o)), c(!o.pathname || !o.pathname.includes("#"), B("#", "pathname", "hash", o)), c(!o.search || !o.search.includes("#"), B("#", "search", "hash", o)));
+        void 0 === n && (n = !1), "string" == typeof e ? o = m(e) : (o = a({}, e), u(!o.pathname || !o.pathname.includes("?"), B("?", "pathname", "search", o)), u(!o.pathname || !o.pathname.includes("#"), B("#", "pathname", "hash", o)), u(!o.search || !o.search.includes("#"), B("#", "search", "hash", o)));
         let i, s = "" === e || "" === o.pathname,
           l = s ? "/" : o.pathname;
         if (n || null == l) i = r;
@@ -619,10 +619,10 @@ _global.SENTRY_RELEASE = {
           }
           i = e >= 0 ? t[e] : "/"
         }
-        let u = N(o, i),
+        let c = N(o, i),
           d = l && "/" !== l && l.endsWith("/"),
           h = (s || "." === l) && r.endsWith("/");
-        return u.pathname.endsWith("/") || !d && !h || (u.pathname += "/"), u
+        return c.pathname.endsWith("/") || !d && !h || (c.pathname += "/"), c
       }
       const z = e => e.join("/").replace(/\/\/+/g, "/"),
         W = e => e.replace(/\/+$/, "").replace(/^\/*/, "/"),
@@ -642,7 +642,7 @@ _global.SENTRY_RELEASE = {
       class q {
         constructor(e, t) {
           let r;
-          this.pendingKeysSet = new Set, this.subscribers = new Set, this.deferredKeys = [], c(e && "object" == typeof e && !Array.isArray(e), "defer() only accepts plain objects"), this.abortPromise = new Promise(((e, t) => r = t)), this.controller = new AbortController;
+          this.pendingKeysSet = new Set, this.subscribers = new Set, this.deferredKeys = [], u(e && "object" == typeof e && !Array.isArray(e), "defer() only accepts plain objects"), this.abortPromise = new Promise(((e, t) => r = t)), this.controller = new AbortController;
           let n = () => r(new J("Deferred data aborted"));
           this.unlistenAbortSignal = () => this.controller.signal.removeEventListener("abort", n), this.controller.signal.addEventListener("abort", n), this.data = Object.entries(e).reduce(((e, t) => {
             let [r, n] = t;
@@ -700,7 +700,7 @@ _global.SENTRY_RELEASE = {
           return 0 === this.pendingKeysSet.size
         }
         get unwrappedData() {
-          return c(null !== this.data && this.done, "Can only unwrap data on initialized and settled deferreds"), Object.entries(this.data).reduce(((e, t) => {
+          return u(null !== this.data && this.done, "Can only unwrap data on initialized and settled deferreds"), Object.entries(this.data).reduce(((e, t) => {
             let [r, n] = t;
             return Object.assign(e, {
               [r]: V(n)
@@ -780,8 +780,8 @@ _global.SENTRY_RELEASE = {
           reset: void 0,
           location: void 0
         },
-        ue = /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i,
-        ce = e => ({
+        ce = /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i,
+        ue = e => ({
           hasErrorBoundary: Boolean(e.hasErrorBoundary)
         }),
         de = "remix-router-transitions";
@@ -791,15 +791,15 @@ _global.SENTRY_RELEASE = {
           r = void 0 !== t && void 0 !== t.document && void 0 !== t.document.createElement,
           o = !r;
         let i;
-        if (c(e.routes.length > 0, "You must provide a non-empty routes array to createRouter"), e.mapRouteProperties) i = e.mapRouteProperties;
+        if (u(e.routes.length > 0, "You must provide a non-empty routes array to createRouter"), e.mapRouteProperties) i = e.mapRouteProperties;
         else if (e.detectErrorBoundary) {
           let t = e.detectErrorBoundary;
           i = e => ({
             hasErrorBoundary: t(e)
           })
-        } else i = ce;
+        } else i = ue;
         let s, l = {},
-          u = b(e.routes, i, void 0, l),
+          c = b(e.routes, i, void 0, l),
           h = e.basename || "/",
           p = a({
             v7_normalizeFormMethod: !1,
@@ -811,7 +811,7 @@ _global.SENTRY_RELEASE = {
           R = null,
           x = null,
           S = null != e.hydrationData,
-          D = w(u, e.history.location, h),
+          D = w(c, e.history.location, h),
           C = null;
         if (null == D) {
           let t = Le(404, {
@@ -820,7 +820,7 @@ _global.SENTRY_RELEASE = {
             {
               matches: r,
               route: n
-            } = Ce(u);
+            } = Ce(c);
           D = r, C = {
             [n.id]: t
           }
@@ -868,13 +868,13 @@ _global.SENTRY_RELEASE = {
 
         function G(t, r) {
           var o, i;
-          let l, c = null != T.actionData && null != T.navigation.formMethod && Me(T.navigation.formMethod) && "loading" === T.navigation.state && !0 !== (null == (o = t.state) ? void 0 : o._isRedirect);
-          l = r.actionData ? Object.keys(r.actionData).length > 0 ? r.actionData : null : c ? T.actionData : null;
+          let l, u = null != T.actionData && null != T.navigation.formMethod && Me(T.navigation.formMethod) && "loading" === T.navigation.state && !0 !== (null == (o = t.state) ? void 0 : o._isRedirect);
+          l = r.actionData ? Object.keys(r.actionData).length > 0 ? r.actionData : null : u ? T.actionData : null;
           let d = r.loaderData ? Se(T.loaderData, r.loaderData, r.matches || [], r.errors) : T.loaderData,
             h = T.blockers;
           h.size > 0 && (h = new Map(h), h.forEach(((e, t) => h.set(t, le))));
           let f, p = !0 === _ || null != T.navigation.formMethod && Me(T.navigation.formMethod) && !0 !== (null == (i = t.state) ? void 0 : i._isRedirect);
-          if (s && (u = s, s = void 0), N || A === n.Pop || (A === n.Push ? e.history.push(t, t.state) : A === n.Replace && e.history.replace(t, t.state)), A === n.Pop) {
+          if (s && (c = s, s = void 0), N || A === n.Pop || (A === n.Push ? e.history.push(t, t.state) : A === n.Replace && e.history.replace(t, t.state)), A === n.Pop) {
             let e = U.get(T.location.pathname);
             e && e.has(t.pathname) ? f = {
               currentLocation: T.location,
@@ -911,9 +911,9 @@ _global.SENTRY_RELEASE = {
                 y[r] = x()
               }
             }(T.location, T.matches), _ = !0 === (o && o.preventScrollReset), M = !0 === (o && o.enableViewTransition);
-          let c = s || u,
+          let u = s || c,
             d = o && o.overrideNavigation,
-            f = w(c, r, h);
+            f = w(u, r, h);
           if (!f) {
             let e = Le(404, {
                 pathname: r.pathname
@@ -921,7 +921,7 @@ _global.SENTRY_RELEASE = {
               {
                 matches: t,
                 route: n
-              } = Ce(c);
+              } = Ce(u);
             return Oe(), void G(r, {
               matches: t,
               loaderData: {},
@@ -942,7 +942,7 @@ _global.SENTRY_RELEASE = {
           else if (o && o.submission && Me(o.submission.formMethod)) {
             let e = await async function(e, t, r, o, a) {
               void 0 === a && (a = {}), re();
-              let s, u = function(e, t) {
+              let s, c = function(e, t) {
                 return {
                   state: "submitting",
                   location: e,
@@ -955,11 +955,11 @@ _global.SENTRY_RELEASE = {
                 }
               }(t, r);
               X({
-                navigation: u
+                navigation: c
               });
-              let c = Ne(o, t);
-              if (c.route.action || c.route.lazy) {
-                if (s = await be("action", e, c, o, l, i, h), e.signal.aborted) return {
+              let u = Ne(o, t);
+              if (u.route.action || u.route.lazy) {
+                if (s = await be("action", e, u, o, l, i, h), e.signal.aborted) return {
                   shortCircuited: !0
                 }
               } else s = {
@@ -967,7 +967,7 @@ _global.SENTRY_RELEASE = {
                 error: Le(405, {
                   method: e.method,
                   pathname: t.pathname,
-                  routeId: c.route.id
+                  routeId: u.route.id
                 })
               };
               if (_e(s)) {
@@ -980,7 +980,7 @@ _global.SENTRY_RELEASE = {
                 }
               }
               if (Ae(s)) {
-                let e = De(o, c.route.id);
+                let e = De(o, u.route.id);
                 return !0 !== (a && a.replace) && (A = n.Push), {
                   pendingActionData: {},
                   pendingActionError: {
@@ -993,7 +993,7 @@ _global.SENTRY_RELEASE = {
               });
               return {
                 pendingActionData: {
-                  [c.route.id]: s.data
+                  [u.route.id]: s.data
                 }
               }
             }(E, r, o.submission, f, {
@@ -1008,10 +1008,10 @@ _global.SENTRY_RELEASE = {
             shortCircuited: R,
             loaderData: S,
             errors: D
-          } = await async function(t, r, n, o, i, l, c, d, f) {
+          } = await async function(t, r, n, o, i, l, u, d, f) {
             let p = o || Fe(r, i),
               m = i || l || Be(p),
-              v = s || u,
+              v = s || c,
               [g, y] = me(e.history, T, n, m, r, B, F, I, J, K, v, h, d, f);
             if (Oe((e => !(n && n.some((t => t.route.id === e))) || g && g.some((t => t.route.id === e)))), H = ++W, 0 === g.length && 0 === y.length) {
               let e = ge();
@@ -1065,7 +1065,7 @@ _global.SENTRY_RELEASE = {
                 K.add(e)
               }
               return await ee(T, x.result, {
-                replace: c
+                replace: u
               }), {
                 shortCircuited: !0
               }
@@ -1104,17 +1104,17 @@ _global.SENTRY_RELEASE = {
         async function ee(o, i, s) {
           let {
             submission: l,
-            fetcherSubmission: u,
+            fetcherSubmission: c,
             replace: d
           } = void 0 === s ? {} : s;
           i.revalidate && (B = !0);
           let p = f(o.location, i.location, {
             _isRedirect: !0
           });
-          if (c(p, "Expected a location on the redirect navigation"), r) {
+          if (u(p, "Expected a location on the redirect navigation"), r) {
             let r = !1;
             if (i.reloadDocument) r = !0;
-            else if (ue.test(i.location)) {
+            else if (ce.test(i.location)) {
               const n = e.history.createURL(i.location);
               r = n.origin !== t.location.origin || null == O(n.pathname, h)
             }
@@ -1127,8 +1127,8 @@ _global.SENTRY_RELEASE = {
               formAction: g,
               formEncType: y
             } = o.navigation;
-          !l && !u && v && g && y && (l = Be(o.navigation));
-          let b = l || u;
+          !l && !c && v && g && y && (l = Be(o.navigation));
+          let b = l || c;
           if (ae.has(i.status) && b && Me(b.formMethod)) await Q(m, p, {
             submission: a({}, b, {
               formAction: i.location
@@ -1139,7 +1139,7 @@ _global.SENTRY_RELEASE = {
             let e = Fe(p, l);
             await Q(m, p, {
               overrideNavigation: e,
-              fetcherSubmission: u,
+              fetcherSubmission: c,
               preventScrollReset: _
             })
           }
@@ -1151,12 +1151,12 @@ _global.SENTRY_RELEASE = {
                 pathname: t.path
               })
             }))]),
-            u = s.slice(0, n.length),
-            c = s.slice(n.length);
-          return await Promise.all([Ue(t, n, u, u.map((() => a.signal)), !1, T.loaderData), Ue(t, o.map((e => e.match)), c, o.map((e => e.controller ? e.controller.signal : null)), !0)]), {
+            c = s.slice(0, n.length),
+            u = s.slice(n.length);
+          return await Promise.all([Ue(t, n, c, c.map((() => a.signal)), !1, T.loaderData), Ue(t, o.map((e => e.match)), u, o.map((e => e.controller ? e.controller.signal : null)), !0)]), {
             results: s,
-            loaderResults: u,
-            fetcherResults: c
+            loaderResults: c,
+            fetcherResults: u
           }
         }
 
@@ -1183,7 +1183,7 @@ _global.SENTRY_RELEASE = {
 
         function he(e) {
           let t = z.get(e);
-          c(t, "Expected fetch controller: " + e), t.abort(), z.delete(e)
+          u(t, "Expected fetch controller: " + e), t.abort(), z.delete(e)
         }
 
         function ve(e) {
@@ -1198,7 +1198,7 @@ _global.SENTRY_RELEASE = {
             t = !1;
           for (let r of K) {
             let n = T.fetchers.get(r);
-            c(n, "Expected fetcher: " + r), "loading" === n.state && (K.delete(r), e.push(r), t = !0)
+            u(n, "Expected fetcher: " + r), "loading" === n.state && (K.delete(r), e.push(r), t = !0)
           }
           return ve(e), t
         }
@@ -1208,7 +1208,7 @@ _global.SENTRY_RELEASE = {
           for (let [r, n] of $)
             if (n < e) {
               let e = T.fetchers.get(r);
-              c(e, "Expected fetcher: " + r), "loading" === e.state && (he(r), $.delete(r), t.push(r))
+              u(e, "Expected fetcher: " + r), "loading" === e.state && (he(r), $.delete(r), t.push(r))
             } return ve(t), t.length > 0
         }
 
@@ -1218,7 +1218,7 @@ _global.SENTRY_RELEASE = {
 
         function Re(e, t) {
           let r = T.blockers.get(e) || le;
-          c("unblocked" === r.state && "blocked" === t.state || "blocked" === r.state && "blocked" === t.state || "blocked" === r.state && "proceeding" === t.state || "blocked" === r.state && "unblocked" === t.state || "proceeding" === r.state && "unblocked" === t.state, "Invalid blocker state transition: " + r.state + " -> " + t.state);
+          u("unblocked" === r.state && "blocked" === t.state || "blocked" === r.state && "blocked" === t.state || "blocked" === r.state && "proceeding" === t.state || "blocked" === r.state && "unblocked" === t.state || "proceeding" === r.state && "unblocked" === t.state, "Invalid blocker state transition: " + r.state + " -> " + t.state);
           let n = new Map(T.blockers);
           n.set(e, t), X({
             blockers: n
@@ -1270,7 +1270,7 @@ _global.SENTRY_RELEASE = {
             return T
           },
           get routes() {
-            return u
+            return c
           },
           get window() {
             return t
@@ -1353,9 +1353,9 @@ _global.SENTRY_RELEASE = {
               {
                 path: s,
                 submission: l,
-                error: u
+                error: c
               } = pe(p.v7_normalizeFormMethod, !1, i, o),
-              c = T.location,
+              u = T.location,
               d = f(T.location, s, o && o.state);
             d = a({}, d, e.history.encodeLocation(d));
             let m = o && null != o.replace ? o.replace : void 0,
@@ -1363,13 +1363,13 @@ _global.SENTRY_RELEASE = {
             !0 === m ? v = n.Replace : !1 === m || null != l && Me(l.formMethod) && l.formAction === T.location.pathname + T.location.search && (v = n.Replace);
             let g = o && "preventScrollReset" in o ? !0 === o.preventScrollReset : void 0,
               y = Pe({
-                currentLocation: c,
+                currentLocation: u,
                 nextLocation: d,
                 historyAction: v
               });
             if (!y) return await Q(v, d, {
               submission: l,
-              pendingError: u,
+              pendingError: c,
               preventScrollReset: g,
               replace: o && o.replace,
               enableViewTransition: o && o.unstable_viewTransition
@@ -1396,7 +1396,7 @@ _global.SENTRY_RELEASE = {
           fetch: function(t, r, n, d) {
             if (o) throw new Error("router.fetch() was called during the server render, but it shouldn't be. You are likely calling a useFetcher() method in the body of your component. Try moving it to a useEffect or a callback.");
             z.has(t) && he(t);
-            let f = s || u,
+            let f = s || c,
               m = fe(T.location, T.matches, h, p.v7_prependBasename, n, r, null == d ? void 0 : d.relative),
               v = w(f, m, h);
             if (!v) return void ne(t, r, Le(404, {
@@ -1461,9 +1461,9 @@ _global.SENTRY_RELEASE = {
               });
               let b = T.navigation.location || T.location,
                 E = we(e.history, b, m.signal),
-                R = s || u,
+                R = s || c,
                 x = "idle" !== T.navigation.state ? w(R, T.navigation.location, h) : T.matches;
-              c(x, "Didn't find any matches after fetcher action");
+              u(x, "Didn't find any matches after fetcher action");
               let S = ++W;
               $.set(t, S);
               let D = Ie(f, y.data);
@@ -1505,7 +1505,7 @@ _global.SENTRY_RELEASE = {
                 T.fetchers.set(t, e)
               }
               let V = ye(S);
-              "loading" === T.navigation.state && S > H ? (c(A, "Expected pending action"), k && k.abort(), G(T.navigation.location, {
+              "loading" === T.navigation.state && S > H ? (u(A, "Expected pending action"), k && k.abort(), G(T.navigation.location, {
                 matches: x,
                 loaderData: O,
                 errors: N,
@@ -1520,8 +1520,8 @@ _global.SENTRY_RELEASE = {
               routeId: r,
               path: g
             }), async function(t, r, n, o, a, s) {
-              let u = T.fetchers.get(t),
-                d = Ie(s, u ? u.data : void 0);
+              let c = T.fetchers.get(t),
+                d = Ie(s, c ? c.data : void 0);
               T.fetchers.set(t, d), X({
                 fetchers: new Map(T.fetchers)
               });
@@ -1549,7 +1549,7 @@ _global.SENTRY_RELEASE = {
                   }
                 })
               }
-              c(!Te(v), "Unhandled fetcher deferred data");
+              u(!Te(v), "Unhandled fetcher deferred data");
               let g = ze(v.data);
               T.fetchers.set(t, g), X({
                 fetchers: new Map(T.fetchers)
@@ -1595,8 +1595,8 @@ _global.SENTRY_RELEASE = {
               break
             }
         } else s = t, l = t[t.length - 1];
-        let u = I(o || ".", F(s).map((e => e.pathnameBase)), O(e.pathname, r) || e.pathname, "path" === i);
-        return null == o && (u.search = e.search, u.hash = e.hash), null != o && "" !== o && "." !== o || !l || !l.route.index || Oe(u.search) || (u.search = u.search ? u.search.replace(/^\?/, "?index&") : "?index"), n && "/" !== r && (u.pathname = "/" === u.pathname ? r : z([r, u.pathname])), p(u)
+        let c = I(o || ".", F(s).map((e => e.pathnameBase)), O(e.pathname, r) || e.pathname, "path" === i);
+        return null == o && (c.search = e.search, c.hash = e.hash), null != o && "" !== o && "." !== o || !l || !l.route.index || Oe(c.search) || (c.search = c.search ? c.search.replace(/^\?/, "?index&") : "?index"), n && "/" !== r && (c.pathname = "/" === c.pathname ? r : z([r, c.pathname])), p(c)
       }
 
       function pe(e, t, r, n) {
@@ -1619,11 +1619,11 @@ _global.SENTRY_RELEASE = {
             })
           }),
           l = n.formMethod || "get",
-          u = e ? l.toUpperCase() : l.toLowerCase(),
+          c = e ? l.toUpperCase() : l.toLowerCase(),
           d = Pe(r);
         if (void 0 !== n.body) {
           if ("text/plain" === n.formEncType) {
-            if (!Me(u)) return s();
+            if (!Me(c)) return s();
             let e = "string" == typeof n.body ? n.body : n.body instanceof FormData || n.body instanceof URLSearchParams ? Array.from(n.body.entries()).reduce(((e, t) => {
               let [r, n] = t;
               return "" + e + r + "=" + n + "\n"
@@ -1631,7 +1631,7 @@ _global.SENTRY_RELEASE = {
             return {
               path: r,
               submission: {
-                formMethod: u,
+                formMethod: c,
                 formAction: d,
                 formEncType: n.formEncType,
                 formData: void 0,
@@ -1641,13 +1641,13 @@ _global.SENTRY_RELEASE = {
             }
           }
           if ("application/json" === n.formEncType) {
-            if (!Me(u)) return s();
+            if (!Me(c)) return s();
             try {
               let e = "string" == typeof n.body ? JSON.parse(n.body) : n.body;
               return {
                 path: r,
                 submission: {
-                  formMethod: u,
+                  formMethod: c,
                   formAction: d,
                   formEncType: n.formEncType,
                   formData: void 0,
@@ -1660,7 +1660,7 @@ _global.SENTRY_RELEASE = {
             }
           }
         }
-        if (c("function" == typeof FormData, "FormData is not available in this environment"), n.formData) a = Ee(n.formData), i = n.formData;
+        if (u("function" == typeof FormData, "FormData is not available in this environment"), n.formData) a = Ee(n.formData), i = n.formData;
         else if (n.body instanceof FormData) a = Ee(n.body), i = n.body;
         else if (n.body instanceof URLSearchParams) a = n.body, i = Re(a);
         else if (null == n.body) a = new URLSearchParams, i = new FormData;
@@ -1670,7 +1670,7 @@ _global.SENTRY_RELEASE = {
           return s()
         }
         let h = {
-          formMethod: u,
+          formMethod: c,
           formAction: d,
           formEncType: n && n.formEncType || "application/x-www-form-urlencoded",
           formData: i,
@@ -1688,7 +1688,7 @@ _global.SENTRY_RELEASE = {
         }
       }
 
-      function me(e, t, r, n, o, i, s, l, u, c, d, h, f, p) {
+      function me(e, t, r, n, o, i, s, l, c, u, d, h, f, p) {
         let m = p ? Object.values(p)[0] : f ? Object.values(f)[0] : void 0,
           v = e.createURL(t.location),
           g = e.createURL(o),
@@ -1721,7 +1721,7 @@ _global.SENTRY_RELEASE = {
             }))
           })),
           E = [];
-        return u.forEach(((e, o) => {
+        return c.forEach(((e, o) => {
           if (!r.some((t => t.route.id === e.routeId))) return;
           let s = w(d, e.path, h);
           if (!s) return void E.push({
@@ -1732,10 +1732,10 @@ _global.SENTRY_RELEASE = {
             match: null,
             controller: null
           });
-          let u = t.fetchers.get(o),
+          let c = t.fetchers.get(o),
             f = Ne(s, e.path),
             p = !1;
-          p = !c.has(o) && (!!l.includes(o) || (u && "idle" !== u.state && void 0 === u.data ? i : ge(f, a({
+          p = !u.has(o) && (!!l.includes(o) || (c && "idle" !== c.state && void 0 === c.data ? i : ge(f, a({
             currentUrl: v,
             currentParams: t.matches[t.matches.length - 1].params,
             nextUrl: g,
@@ -1771,7 +1771,7 @@ _global.SENTRY_RELEASE = {
         let n = await e.lazy();
         if (!e.lazy) return;
         let o = r[e.id];
-        c(o, "No route found in manifest");
+        u(o, "No route found in manifest");
         let i = {};
         for (let e in n) {
           let t = void 0 !== o[e] && "hasErrorBoundary" !== e;
@@ -1782,7 +1782,7 @@ _global.SENTRY_RELEASE = {
         }))
       }
       async function be(e, t, r, n, o, a, i, s) {
-        let l, u, d;
+        let l, c, d;
         void 0 === s && (s = {});
         let h = e => {
           let n, o = new Promise(((e, t) => n = t));
@@ -1800,7 +1800,7 @@ _global.SENTRY_RELEASE = {
                 e = t
               })), ye(r.route, a, o)]);
               if (e) throw e;
-              u = t[0]
+              c = t[0]
             } else {
               if (await ye(r.route, a, o), n = r.route[e], !n) {
                 if ("action" === e) {
@@ -1817,7 +1817,7 @@ _global.SENTRY_RELEASE = {
                   data: void 0
                 }
               }
-              u = await h(n)
+              c = await h(n)
             }
           else {
             if (!n) {
@@ -1826,19 +1826,19 @@ _global.SENTRY_RELEASE = {
                 pathname: e.pathname + e.search
               })
             }
-            u = await h(n)
+            c = await h(n)
           }
-          c(void 0 !== u, "You defined " + ("action" === e ? "an action" : "a loader") + ' for route "' + r.route.id + "\" but didn't return anything from your `" + e + "` function. Please return a value or `null`.")
+          u(void 0 !== c, "You defined " + ("action" === e ? "an action" : "a loader") + ' for route "' + r.route.id + "\" but didn't return anything from your `" + e + "` function. Please return a value or `null`.")
         } catch (e) {
-          l = g.error, u = e
+          l = g.error, c = e
         } finally {
           d && t.signal.removeEventListener("abort", d)
         }
-        if (null != (f = u) && "number" == typeof f.status && "string" == typeof f.statusText && "object" == typeof f.headers && void 0 !== f.body) {
-          let e, o = u.status;
+        if (null != (f = c) && "number" == typeof f.status && "string" == typeof f.statusText && "object" == typeof f.headers && void 0 !== f.body) {
+          let e, o = c.status;
           if (oe.has(o)) {
-            let e = u.headers.get("Location");
-            if (c(e, "Redirects returned/thrown from loaders/actions must have a Location header"), ue.test(e)) {
+            let e = c.headers.get("Location");
+            if (u(e, "Redirects returned/thrown from loaders/actions must have a Location header"), ce.test(e)) {
               if (!s.isStaticRequest) {
                 let r = new URL(t.url),
                   n = e.startsWith("//") ? new URL(r.protocol + e) : new URL(e),
@@ -1846,46 +1846,46 @@ _global.SENTRY_RELEASE = {
                 n.origin === r.origin && o && (e = n.pathname + n.search + n.hash)
               }
             } else e = fe(new URL(t.url), n.slice(0, n.indexOf(r) + 1), i, !0, e);
-            if (s.isStaticRequest) throw u.headers.set("Location", e), u;
+            if (s.isStaticRequest) throw c.headers.set("Location", e), c;
             return {
               type: g.redirect,
               status: o,
               location: e,
-              revalidate: null !== u.headers.get("X-Remix-Revalidate"),
-              reloadDocument: null !== u.headers.get("X-Remix-Reload-Document")
+              revalidate: null !== c.headers.get("X-Remix-Revalidate"),
+              reloadDocument: null !== c.headers.get("X-Remix-Reload-Document")
             }
           }
           if (s.isRouteRequest) throw {
             type: l === g.error ? g.error : g.data,
-            response: u
+            response: c
           };
-          let a = u.headers.get("Content-Type");
-          return e = a && /\bapplication\/json\b/.test(a) ? await u.json() : await u.text(), l === g.error ? {
+          let a = c.headers.get("Content-Type");
+          return e = a && /\bapplication\/json\b/.test(a) ? await c.json() : await c.text(), l === g.error ? {
             type: l,
-            error: new Q(o, u.statusText, e),
-            headers: u.headers
+            error: new Q(o, c.statusText, e),
+            headers: c.headers
           } : {
             type: g.data,
             data: e,
-            statusCode: u.status,
-            headers: u.headers
+            statusCode: c.status,
+            headers: c.headers
           }
         }
         var f, p, m;
         return l === g.error ? {
           type: l,
-          error: u
+          error: c
         } : function(e) {
           let t = e;
           return t && "object" == typeof t && "object" == typeof t.data && "function" == typeof t.subscribe && "function" == typeof t.cancel && "function" == typeof t.resolveData
-        }(u) ? {
+        }(c) ? {
           type: g.deferred,
-          deferredData: u,
-          statusCode: null == (p = u.init) ? void 0 : p.status,
-          headers: (null == (m = u.init) ? void 0 : m.headers) && new Headers(u.init.headers)
+          deferredData: c,
+          statusCode: null == (p = c.init) ? void 0 : p.status,
+          headers: (null == (m = c.init) ? void 0 : m.headers) && new Headers(c.init.headers)
         } : {
           type: g.data,
-          data: u
+          data: c
         }
       }
 
@@ -1920,25 +1920,25 @@ _global.SENTRY_RELEASE = {
 
       function xe(e, t, r, n, o, i, s, l) {
         let {
-          loaderData: u,
+          loaderData: c,
           errors: d
         } = function(e, t, r, n, o) {
           let a, i = {},
             s = null,
             l = !1,
-            u = {};
+            c = {};
           return r.forEach(((r, d) => {
             let h = t[d].route.id;
-            if (c(!_e(r), "Cannot handle redirect results in processLoaderData"), Ae(r)) {
+            if (u(!_e(r), "Cannot handle redirect results in processLoaderData"), Ae(r)) {
               let t = De(e, h),
                 o = r.error;
-              n && (o = Object.values(n)[0], n = void 0), s = s || {}, null == s[t.route.id] && (s[t.route.id] = o), i[h] = void 0, l || (l = !0, a = Z(r.error) ? r.error.status : 500), r.headers && (u[h] = r.headers)
-            } else Te(r) ? (o.set(h, r.deferredData), i[h] = r.deferredData.data) : i[h] = r.data, null == r.statusCode || 200 === r.statusCode || l || (a = r.statusCode), r.headers && (u[h] = r.headers)
+              n && (o = Object.values(n)[0], n = void 0), s = s || {}, null == s[t.route.id] && (s[t.route.id] = o), i[h] = void 0, l || (l = !0, a = Z(r.error) ? r.error.status : 500), r.headers && (c[h] = r.headers)
+            } else Te(r) ? (o.set(h, r.deferredData), i[h] = r.deferredData.data) : i[h] = r.data, null == r.statusCode || 200 === r.statusCode || l || (a = r.statusCode), r.headers && (c[h] = r.headers)
           })), n && (s = n, i[Object.keys(n)[0]] = void 0), {
             loaderData: i,
             errors: s,
             statusCode: a || 200,
-            loaderHeaders: u
+            loaderHeaders: c
           }
         }(t, r, n, o, l);
         for (let t = 0; t < i.length; t++) {
@@ -1947,7 +1947,7 @@ _global.SENTRY_RELEASE = {
             match: n,
             controller: o
           } = i[t];
-          c(void 0 !== s && void 0 !== s[t], "Did not find corresponding fetcher result");
+          u(void 0 !== s && void 0 !== s[t], "Did not find corresponding fetcher result");
           let l = s[t];
           if (!o || !o.signal.aborted)
             if (Ae(l)) {
@@ -1955,15 +1955,15 @@ _global.SENTRY_RELEASE = {
               d && d[t.route.id] || (d = a({}, d, {
                 [t.route.id]: l.error
               })), e.fetchers.delete(r)
-            } else if (_e(l)) c(!1, "Unhandled fetcher revalidation redirect");
-          else if (Te(l)) c(!1, "Unhandled fetcher deferred data");
+            } else if (_e(l)) u(!1, "Unhandled fetcher revalidation redirect");
+          else if (Te(l)) u(!1, "Unhandled fetcher deferred data");
           else {
             let t = ze(l.data);
             e.fetchers.set(r, t)
           }
         }
         return {
-          loaderData: u,
+          loaderData: c,
           errors: d
         }
       }
@@ -2042,11 +2042,11 @@ _global.SENTRY_RELEASE = {
           let s = r[i],
             l = t[i];
           if (!l) continue;
-          let u = e.find((e => e.route.id === l.route.id)),
-            d = null != u && !ve(u, l) && void 0 !== (a && a[l.route.id]);
+          let c = e.find((e => e.route.id === l.route.id)),
+            d = null != c && !ve(c, l) && void 0 !== (a && a[l.route.id]);
           if (Te(s) && (o || d)) {
             let e = n[i];
-            c(e, "Expected an AbortSignal for revalidating fetcher deferred result"), await je(s, e, o).then((e => {
+            u(e, "Expected an AbortSignal for revalidating fetcher deferred result"), await je(s, e, o).then((e => {
               e && (r[i] = e || r[i])
             }))
           }
@@ -2199,7 +2199,7 @@ _global.SENTRY_RELEASE = {
         let {
           relative: r
         } = void 0 === t ? {} : t;
-        Ge() || c(!1);
+        Ge() || u(!1);
         let {
           basename: n,
           navigator: a
@@ -2209,9 +2209,9 @@ _global.SENTRY_RELEASE = {
           search: l
         } = st(e, {
           relative: r
-        }), u = s;
-        return "/" !== n && (u = "/" === s ? n : z([n, s])), a.createHref({
-          pathname: u,
+        }), c = s;
+        return "/" !== n && (c = "/" === s ? n : z([n, s])), a.createHref({
+          pathname: c,
           search: l,
           hash: i
         })
@@ -2222,7 +2222,7 @@ _global.SENTRY_RELEASE = {
       }
 
       function Qe() {
-        return Ge() || c(!1), o.useContext(qe).location
+        return Ge() || u(!1), o.useContext(qe).location
       }
 
       function Ze() {
@@ -2230,7 +2230,7 @@ _global.SENTRY_RELEASE = {
       }
 
       function et(e) {
-        Ge() || c(!1);
+        Ge() || u(!1);
         let {
           pathname: t
         } = Qe();
@@ -2257,7 +2257,7 @@ _global.SENTRY_RELEASE = {
             }, o)))
           }), [e, t])
         }() : function() {
-          Ge() || c(!1);
+          Ge() || u(!1);
           let e = o.useContext(He),
             {
               basename: t,
@@ -2313,31 +2313,31 @@ _global.SENTRY_RELEASE = {
       }
 
       function lt(e, t) {
-        return ut(e, t)
+        return ct(e, t)
       }
 
-      function ut(e, t, r) {
-        Ge() || c(!1);
+      function ct(e, t, r) {
+        Ge() || u(!1);
         let {
           navigator: a
         } = o.useContext(Je), {
           matches: i
-        } = o.useContext(Ve), s = i[i.length - 1], l = s ? s.params : {}, u = (s && s.pathname, s ? s.pathnameBase : "/");
+        } = o.useContext(Ve), s = i[i.length - 1], l = s ? s.params : {}, c = (s && s.pathname, s ? s.pathnameBase : "/");
         s && s.route;
         let d, h = Qe();
         if (t) {
           var f;
           let e = "string" == typeof t ? m(t) : t;
-          "/" === u || (null == (f = e.pathname) ? void 0 : f.startsWith(u)) || c(!1), d = e
+          "/" === c || (null == (f = e.pathname) ? void 0 : f.startsWith(c)) || u(!1), d = e
         } else d = h;
         let p = d.pathname || "/",
           v = w(e, {
-            pathname: "/" === u ? p : p.slice(u.length) || "/"
+            pathname: "/" === c ? p : p.slice(c.length) || "/"
           }),
           g = pt(v && v.map((e => Object.assign({}, e, {
             params: Object.assign({}, l, e.params),
-            pathname: z([u, a.encodeLocation ? a.encodeLocation(e.pathname).pathname : e.pathname]),
-            pathnameBase: "/" === e.pathnameBase ? u : z([u, a.encodeLocation ? a.encodeLocation(e.pathnameBase).pathname : e.pathnameBase])
+            pathname: z([c, a.encodeLocation ? a.encodeLocation(e.pathname).pathname : e.pathname]),
+            pathnameBase: "/" === e.pathnameBase ? c : z([c, a.encodeLocation ? a.encodeLocation(e.pathnameBase).pathname : e.pathnameBase])
           }))), i, r);
         return t && g ? o.createElement(qe.Provider, {
           value: {
@@ -2353,7 +2353,7 @@ _global.SENTRY_RELEASE = {
         }, g) : g
       }
 
-      function ct() {
+      function ut() {
         let e = Lt(),
           t = Z(e) ? e.status + " " + e.statusText : e instanceof Error ? e.message : JSON.stringify(e),
           r = e instanceof Error ? e.stack : null,
@@ -2369,7 +2369,7 @@ _global.SENTRY_RELEASE = {
           style: n
         }, r) : null, null)
       }
-      const dt = o.createElement(ct, null);
+      const dt = o.createElement(ut, null);
       class ht extends o.Component {
         constructor(e) {
           super(e), this.state = {
@@ -2429,20 +2429,20 @@ _global.SENTRY_RELEASE = {
           s = null == (n = r) ? void 0 : n.errors;
         if (null != s) {
           let e = i.findIndex((e => e.route.id && (null == s ? void 0 : s[e.route.id])));
-          e >= 0 || c(!1), i = i.slice(0, Math.min(i.length, e + 1))
+          e >= 0 || u(!1), i = i.slice(0, Math.min(i.length, e + 1))
         }
         return i.reduceRight(((e, n, a) => {
           let l = n.route.id ? null == s ? void 0 : s[n.route.id] : null,
-            u = null;
-          r && (u = n.route.errorElement || dt);
-          let c = t.concat(i.slice(0, a + 1)),
+            c = null;
+          r && (c = n.route.errorElement || dt);
+          let u = t.concat(i.slice(0, a + 1)),
             d = () => {
               let t;
-              return t = l ? u : n.route.Component ? o.createElement(n.route.Component, null) : n.route.element ? n.route.element : e, o.createElement(ft, {
+              return t = l ? c : n.route.Component ? o.createElement(n.route.Component, null) : n.route.element ? n.route.element : e, o.createElement(ft, {
                 match: n,
                 routeContext: {
                   outlet: e,
-                  matches: c,
+                  matches: u,
                   isDataRoute: null != r
                 },
                 children: t
@@ -2451,12 +2451,12 @@ _global.SENTRY_RELEASE = {
           return r && (n.route.ErrorBoundary || n.route.errorElement || 0 === a) ? o.createElement(ht, {
             location: r.location,
             revalidation: r.revalidation,
-            component: u,
+            component: c,
             error: l,
             children: d(),
             routeContext: {
               outlet: null,
-              matches: c,
+              matches: u,
               isDataRoute: !0
             }
           }) : d()
@@ -2471,21 +2471,21 @@ _global.SENTRY_RELEASE = {
 
       function gt(e) {
         let t = o.useContext(He);
-        return t || c(!1), t
+        return t || u(!1), t
       }
 
       function yt(e) {
         let t = o.useContext($e);
-        return t || c(!1), t
+        return t || u(!1), t
       }
 
       function bt(e) {
         let t = function(e) {
             let t = o.useContext(Ve);
-            return t || c(!1), t
+            return t || u(!1), t
           }(),
           r = t.matches[t.matches.length - 1];
-        return r.route.id || c(!1), r.route.id
+        return r.route.id || u(!1), r.route.id
       }
 
       function wt() {
@@ -2526,7 +2526,7 @@ _global.SENTRY_RELEASE = {
 
       function Ct() {
         let e = yt(vt.UseActionData);
-        return o.useContext(Ve) || c(!1), Object.values((null == e ? void 0 : e.actionData) || {})[0]
+        return o.useContext(Ve) || u(!1), Object.values((null == e ? void 0 : e.actionData) || {})[0]
       }
 
       function Lt() {
@@ -2592,10 +2592,10 @@ _global.SENTRY_RELEASE = {
           initialIndex: a,
           v5Compat: !0
         }));
-        let u = l.current,
-          [c, d] = o.useState({
-            action: u.action,
-            location: u.location
+        let c = l.current,
+          [u, d] = o.useState({
+            action: c.action,
+            location: c.location
           }),
           {
             v7_startTransition: h
@@ -2603,12 +2603,12 @@ _global.SENTRY_RELEASE = {
           f = o.useCallback((e => {
             h && _t ? _t((() => d(e))) : d(e)
           }), [d, h]);
-        return o.useLayoutEffect((() => u.listen(f)), [u, f]), o.createElement(Nt, {
+        return o.useLayoutEffect((() => c.listen(f)), [c, f]), o.createElement(Nt, {
           basename: t,
           children: r,
-          location: c.location,
-          navigationType: c.action,
-          navigator: u
+          location: u.location,
+          navigationType: u.action,
+          navigator: c
         })
       }
 
@@ -2619,12 +2619,12 @@ _global.SENTRY_RELEASE = {
           state: n,
           relative: a
         } = e;
-        Ge() || c(!1);
+        Ge() || u(!1);
         let {
           matches: i
         } = o.useContext(Ve), {
           pathname: s
-        } = Qe(), l = rt(), u = I(t, F(i).map((e => e.pathnameBase)), s, "path" === a), d = JSON.stringify(u);
+        } = Qe(), l = rt(), c = I(t, F(i).map((e => e.pathnameBase)), s, "path" === a), d = JSON.stringify(c);
         return o.useEffect((() => l(JSON.parse(d), {
           replace: r,
           state: n,
@@ -2637,7 +2637,7 @@ _global.SENTRY_RELEASE = {
       }
 
       function Ot(e) {
-        c(!1)
+        u(!1)
       }
 
       function Nt(e) {
@@ -2649,13 +2649,13 @@ _global.SENTRY_RELEASE = {
           navigator: s,
           static: l = !1
         } = e;
-        Ge() && c(!1);
-        let u = t.replace(/^\/*/, "/"),
+        Ge() && u(!1);
+        let c = t.replace(/^\/*/, "/"),
           d = o.useMemo((() => ({
-            basename: u,
+            basename: c,
             navigator: s,
             static: l
-          })), [u, s, l]);
+          })), [c, s, l]);
         "string" == typeof a && (a = m(a));
         let {
           pathname: h = "/",
@@ -2664,7 +2664,7 @@ _global.SENTRY_RELEASE = {
           state: v = null,
           key: g = "default"
         } = a, y = o.useMemo((() => {
-          let e = O(h, u);
+          let e = O(h, c);
           return null == e ? null : {
             location: {
               pathname: e,
@@ -2675,7 +2675,7 @@ _global.SENTRY_RELEASE = {
             },
             navigationType: i
           }
-        }), [u, h, f, p, v, g, i]);
+        }), [c, h, f, p, v, g, i]);
         return null == y ? null : o.createElement(Je.Provider, {
           value: d
         }, o.createElement(qe.Provider, {
@@ -2776,7 +2776,7 @@ _global.SENTRY_RELEASE = {
           if (!o.isValidElement(e)) return;
           let a = [...t, n];
           if (e.type === o.Fragment) return void r.push.apply(r, $t(e.props.children, a));
-          e.type !== Ot && c(!1), e.props.index && e.props.children && c(!1);
+          e.type !== Ot && u(!1), e.props.index && e.props.children && u(!1);
           let i = {
             id: e.props.id || a.join("-"),
             caseSensitive: e.props.caseSensitive,
@@ -2926,7 +2926,7 @@ _global.SENTRY_RELEASE = {
           history: l({
             window: null == t ? void 0 : t.window
           }),
-          hydrationData: (null == t ? void 0 : t.hydrationData) || ur(),
+          hydrationData: (null == t ? void 0 : t.hydrationData) || cr(),
           routes: e,
           mapRouteProperties: Jt,
           window: null == t ? void 0 : t.window
@@ -2939,25 +2939,25 @@ _global.SENTRY_RELEASE = {
           future: Vt({}, null == t ? void 0 : t.future, {
             v7_prependBasename: !0
           }),
-          history: u({
+          history: c({
             window: null == t ? void 0 : t.window
           }),
-          hydrationData: (null == t ? void 0 : t.hydrationData) || ur(),
+          hydrationData: (null == t ? void 0 : t.hydrationData) || cr(),
           routes: e,
           mapRouteProperties: Jt,
           window: null == t ? void 0 : t.window
         }).initialize()
       }
 
-      function ur() {
+      function cr() {
         var e;
         let t = null == (e = window) ? void 0 : e.__staticRouterHydrationData;
         return t && t.errors && (t = Vt({}, t, {
-          errors: cr(t.errors)
+          errors: ur(t.errors)
         })), t
       }
 
-      function cr(e) {
+      function ur(e) {
         if (!e) return null;
         let t = Object.entries(e),
           r = {};
@@ -2999,7 +2999,7 @@ _global.SENTRY_RELEASE = {
           fallbackElement: t,
           router: r,
           future: n
-        } = e, [a, i] = o.useState(r.state), [s, l] = o.useState(), [u, c] = o.useState({
+        } = e, [a, i] = o.useState(r.state), [s, l] = o.useState(), [c, u] = o.useState({
           isTransitioning: !1
         }), [d, h] = o.useState(), [f, p] = o.useState(), [m, v] = o.useState(), {
           v7_startTransition: g
@@ -3015,15 +3015,15 @@ _global.SENTRY_RELEASE = {
             state: e,
             currentLocation: n.currentLocation,
             nextLocation: n.nextLocation
-          })) : (l(e), c({
+          })) : (l(e), u({
             isTransitioning: !0,
             currentLocation: n.currentLocation,
             nextLocation: n.nextLocation
           })) : y((() => i(e)))
         }), [y, f, d, r.window]);
         o.useLayoutEffect((() => r.subscribe(b)), [r, b]), o.useEffect((() => {
-          u.isTransitioning && h(new fr)
-        }), [u.isTransitioning]), o.useEffect((() => {
+          c.isTransitioning && h(new fr)
+        }), [c.isTransitioning]), o.useEffect((() => {
           if (d && s && r.window) {
             let e = s,
               t = d.promise,
@@ -3031,7 +3031,7 @@ _global.SENTRY_RELEASE = {
                 y((() => i(e))), await t
               }));
             n.finished.finally((() => {
-              h(void 0), p(void 0), l(void 0), c({
+              h(void 0), p(void 0), l(void 0), u({
                 isTransitioning: !1
               })
             })), p(n)
@@ -3039,12 +3039,12 @@ _global.SENTRY_RELEASE = {
         }), [y, s, d, r.window]), o.useEffect((() => {
           d && s && a.location.key === s.location.key && d.resolve()
         }), [d, f, a.location, s]), o.useEffect((() => {
-          !u.isTransitioning && m && (l(m.state), c({
+          !c.isTransitioning && m && (l(m.state), u({
             isTransitioning: !0,
             currentLocation: m.currentLocation,
             nextLocation: m.nextLocation
           }), v(void 0))
-        }), [u.isTransitioning, m]);
+        }), [c.isTransitioning, m]);
         let w = o.useMemo((() => ({
             createHref: r.createHref,
             encodeLocation: r.encodeLocation,
@@ -3071,7 +3071,7 @@ _global.SENTRY_RELEASE = {
         }, o.createElement($e.Provider, {
           value: a
         }, o.createElement(dr.Provider, {
-          value: u
+          value: c
         }, o.createElement(Nt, {
           basename: E,
           location: a.location,
@@ -3088,7 +3088,7 @@ _global.SENTRY_RELEASE = {
           routes: t,
           state: r
         } = e;
-        return ut(t, void 0, r)
+        return ct(t, void 0, r)
       }
 
       function vr(e) {
@@ -3103,7 +3103,7 @@ _global.SENTRY_RELEASE = {
           v5Compat: !0
         }));
         let s = i.current,
-          [u, c] = o.useState({
+          [c, u] = o.useState({
             action: s.action,
             location: s.location
           }),
@@ -3111,13 +3111,13 @@ _global.SENTRY_RELEASE = {
             v7_startTransition: d
           } = n || {},
           h = o.useCallback((e => {
-            d && hr ? hr((() => c(e))) : c(e)
-          }), [c, d]);
+            d && hr ? hr((() => u(e))) : u(e)
+          }), [u, d]);
         return o.useLayoutEffect((() => s.listen(h)), [s, h]), o.createElement(Nt, {
           basename: t,
           children: r,
-          location: u.location,
-          navigationType: u.action,
+          location: c.location,
+          navigationType: c.action,
           navigator: s
         })
       }
@@ -3129,12 +3129,12 @@ _global.SENTRY_RELEASE = {
           future: n,
           window: a
         } = e, i = o.useRef();
-        null == i.current && (i.current = u({
+        null == i.current && (i.current = c({
           window: a,
           v5Compat: !0
         }));
         let s = i.current,
-          [l, c] = o.useState({
+          [l, u] = o.useState({
             action: s.action,
             location: s.location
           }),
@@ -3142,8 +3142,8 @@ _global.SENTRY_RELEASE = {
             v7_startTransition: d
           } = n || {},
           h = o.useCallback((e => {
-            d && hr ? hr((() => c(e))) : c(e)
-          }), [c, d]);
+            d && hr ? hr((() => u(e))) : u(e)
+          }), [u, d]);
         return o.useLayoutEffect((() => s.listen(h)), [s, h]), o.createElement(Nt, {
           basename: t,
           children: r,
@@ -3164,10 +3164,10 @@ _global.SENTRY_RELEASE = {
           location: a.location
         }), {
           v7_startTransition: l
-        } = n || {}, u = o.useCallback((e => {
+        } = n || {}, c = o.useCallback((e => {
           l && hr ? hr((() => s(e))) : s(e)
         }), [s, l]);
-        return o.useLayoutEffect((() => a.listen(u)), [a, u]), o.createElement(Nt, {
+        return o.useLayoutEffect((() => a.listen(c)), [a, c]), o.createElement(Nt, {
           basename: t,
           children: r,
           location: i.location,
@@ -3184,8 +3184,8 @@ _global.SENTRY_RELEASE = {
               reloadDocument: i,
               replace: s,
               state: l,
-              target: u,
-              to: c,
+              target: c,
+              to: u,
               preventScrollReset: d,
               unstable_viewTransition: h
             } = e,
@@ -3194,19 +3194,19 @@ _global.SENTRY_RELEASE = {
               basename: p
             } = o.useContext(Je),
             m = !1;
-          if ("string" == typeof c && wr.test(c) && (r = c, br)) try {
+          if ("string" == typeof u && wr.test(u) && (r = u, br)) try {
             let e = new URL(window.location.href),
-              t = c.startsWith("//") ? new URL(e.protocol + c) : new URL(c),
+              t = u.startsWith("//") ? new URL(e.protocol + u) : new URL(u),
               r = O(t.pathname, p);
-            t.origin === e.origin && null != r ? c = r + t.search + t.hash : m = !0
+            t.origin === e.origin && null != r ? u = r + t.search + t.hash : m = !0
           } catch (e) {}
-          let v = Xe(c, {
+          let v = Xe(u, {
               relative: a
             }),
-            g = Tr(c, {
+            g = Tr(u, {
               replace: s,
               state: l,
-              target: u,
+              target: c,
               preventScrollReset: d,
               relative: a,
               unstable_viewTransition: h
@@ -3217,7 +3217,7 @@ _global.SENTRY_RELEASE = {
               n && n(e), e.defaultPrevented || g(e)
             },
             ref: t,
-            target: u
+            target: c
           }))
         })),
         Rr = o.forwardRef((function(e, t) {
@@ -3228,13 +3228,13 @@ _global.SENTRY_RELEASE = {
             end: i = !1,
             style: s,
             to: l,
-            unstable_viewTransition: u,
-            children: c
+            unstable_viewTransition: c,
+            children: u
           } = e, d = Yt(e, ar), h = st(l, {
             relative: d.relative
           }), f = Qe(), p = o.useContext($e), {
             navigator: m
-          } = o.useContext(Je), v = null != p && $r(h) && !0 === u, g = m.encodeLocation ? m.encodeLocation(h).pathname : h.pathname, y = f.pathname, b = p && p.navigation && p.navigation.location ? p.navigation.location.pathname : null;
+          } = o.useContext(Je), v = null != p && $r(h) && !0 === c, g = m.encodeLocation ? m.encodeLocation(h).pathname : h.pathname, y = f.pathname, b = p && p.navigation && p.navigation.location ? p.navigation.location.pathname : null;
           n || (y = y.toLowerCase(), b = b ? b.toLowerCase() : null, g = g.toLowerCase());
           let w, E = y === g || !i && y.startsWith(g) && "/" === y.charAt(g.length),
             R = null != b && (b === g || !i && b.startsWith(g) && "/" === b.charAt(g.length)),
@@ -3252,8 +3252,8 @@ _global.SENTRY_RELEASE = {
             ref: t,
             style: D,
             to: l,
-            unstable_viewTransition: u
-          }), "function" == typeof c ? c(x) : c)
+            unstable_viewTransition: c
+          }), "function" == typeof u ? u(x) : u)
         })),
         xr = o.forwardRef(((e, t) => {
           let r = Mr();
@@ -3270,12 +3270,12 @@ _global.SENTRY_RELEASE = {
             method: i = Xt,
             action: s,
             onSubmit: l,
-            submit: u,
-            relative: c,
+            submit: c,
+            relative: u,
             preventScrollReset: d,
             unstable_viewTransition: h
           } = e, f = Yt(e, ir), p = "get" === i.toLowerCase() ? "get" : "post", m = jr(s, {
-            relative: c
+            relative: u
           });
           return o.createElement("form", Vt({
             ref: t,
@@ -3286,11 +3286,11 @@ _global.SENTRY_RELEASE = {
               e.preventDefault();
               let t = e.nativeEvent.submitter,
                 r = (null == t ? void 0 : t.getAttribute("formmethod")) || i;
-              u(t || e.currentTarget, {
+              c(t || e.currentTarget, {
                 method: r,
                 replace: n,
                 state: a,
-                relative: c,
+                relative: u,
                 preventScrollReset: d,
                 unstable_viewTransition: h
               })
@@ -3312,12 +3312,12 @@ _global.SENTRY_RELEASE = {
 
       function kr(e) {
         let t = o.useContext(He);
-        return t || c(!1), t
+        return t || u(!1), t
       }
 
       function Pr(e) {
         let t = o.useContext($e);
-        return t || c(!1), t
+        return t || u(!1), t
       }
 
       function Tr(e, t) {
@@ -3328,7 +3328,7 @@ _global.SENTRY_RELEASE = {
           preventScrollReset: i,
           relative: s,
           unstable_viewTransition: l
-        } = void 0 === t ? {} : t, u = rt(), c = Qe(), d = st(e, {
+        } = void 0 === t ? {} : t, c = rt(), u = Qe(), d = st(e, {
           relative: s
         });
         return o.useCallback((t => {
@@ -3338,8 +3338,8 @@ _global.SENTRY_RELEASE = {
               }(e))
             }(t, r)) {
             t.preventDefault();
-            let r = void 0 !== n ? n : p(c) === p(d);
-            u(e, {
+            let r = void 0 !== n ? n : p(u) === p(d);
+            c(e, {
               replace: r,
               state: a,
               preventScrollReset: i,
@@ -3347,7 +3347,7 @@ _global.SENTRY_RELEASE = {
               unstable_viewTransition: l
             })
           }
-        }), [c, u, d, n, a, r, e, i, s, l])
+        }), [u, c, d, n, a, r, e, i, s, l])
       }
 
       function Ar(e) {
@@ -3387,12 +3387,12 @@ _global.SENTRY_RELEASE = {
             method: i,
             encType: s,
             formData: l,
-            body: u
+            body: c
           } = nr(n, t);
           e.navigate(o.action || a, {
             preventScrollReset: o.preventScrollReset,
             formData: l,
-            body: u,
+            body: c,
             formMethod: o.method || i,
             formEncType: o.encType || s,
             replace: o.replace,
@@ -3415,12 +3415,12 @@ _global.SENTRY_RELEASE = {
             action: i,
             method: s,
             encType: l,
-            formData: u,
+            formData: c,
             body: d
           } = nr(o, n);
-          null == t && c(!1), r.fetch(e, t, a.action || i, {
+          null == t && u(!1), r.fetch(e, t, a.action || i, {
             preventScrollReset: a.preventScrollReset,
-            formData: u,
+            formData: c,
             body: d,
             formMethod: a.method || s,
             formEncType: a.encType || l
@@ -3434,7 +3434,7 @@ _global.SENTRY_RELEASE = {
         } = void 0 === t ? {} : t, {
           basename: n
         } = o.useContext(Je), a = o.useContext(Ve);
-        a || c(!1);
+        a || u(!1);
         let [i] = a.matches.slice(-1), s = Vt({}, st(e || ".", {
           relative: r
         })), l = Qe();
@@ -3456,10 +3456,10 @@ _global.SENTRY_RELEASE = {
         let {
           router: t
         } = kr(Cr.UseFetcher), r = o.useContext(Ve);
-        r || c(!1);
+        r || u(!1);
         let n = null == (e = r.matches[r.matches.length - 1]) ? void 0 : e.route.id;
-        null == n && c(!1);
-        let [a] = o.useState((() => String(++Or))), [i] = o.useState((() => (n || c(!1), function(e, t) {
+        null == n && u(!1);
+        let [a] = o.useState((() => String(++Or))), [i] = o.useState((() => (n || u(!1), function(e, t) {
           return o.forwardRef(((r, n) => {
             let a = Ur(e, t);
             return o.createElement(Sr, Vt({}, r, {
@@ -3468,12 +3468,12 @@ _global.SENTRY_RELEASE = {
             }))
           }))
         }(a, n)))), [s] = o.useState((() => e => {
-          t || c(!1), n || c(!1), t.fetch(a, n, e)
-        })), l = Ur(a, n), u = t.getFetcher(a), d = o.useMemo((() => Vt({
+          t || u(!1), n || u(!1), t.fetch(a, n, e)
+        })), l = Ur(a, n), c = t.getFetcher(a), d = o.useMemo((() => Vt({
           Form: i,
           submit: l,
           load: s
-        }, u)), [u, i, l, s]);
+        }, c)), [c, i, l, s]);
         return o.useEffect((() => () => {
           t ? t.deleteFetcher(a) : console.warn("No router available to clean up from useFetcher()")
         }), [t, a]), d
@@ -3496,7 +3496,7 @@ _global.SENTRY_RELEASE = {
           preventScrollReset: i
         } = Pr(Lr.UseScrollRestoration), {
           basename: s
-        } = o.useContext(Je), l = Qe(), u = xt(), c = Et();
+        } = o.useContext(Je), l = Qe(), c = xt(), u = Et();
         o.useEffect((() => (window.history.scrollRestoration = "manual", () => {
             window.history.scrollRestoration = "auto"
           })), []),
@@ -3513,15 +3513,15 @@ _global.SENTRY_RELEASE = {
               }
             }), [e, r])
           }(o.useCallback((() => {
-            if ("idle" === c.state) {
-              let e = (t ? t(l, u) : null) || l.key;
+            if ("idle" === u.state) {
+              let e = (t ? t(l, c) : null) || l.key;
               Ir[e] = window.scrollY
             }
             try {
               sessionStorage.setItem(r || Fr, JSON.stringify(Ir))
             } catch (e) {}
             window.history.scrollRestoration = "auto"
-          }), [r, t, c.state, l, u])), "undefined" != typeof document && (o.useLayoutEffect((() => {
+          }), [r, t, u.state, l, c])), "undefined" != typeof document && (o.useLayoutEffect((() => {
             try {
               let e = sessionStorage.getItem(r || Fr);
               e && (Ir = JSON.parse(e))
@@ -3572,7 +3572,7 @@ _global.SENTRY_RELEASE = {
       function $r(e, t) {
         void 0 === t && (t = {});
         let r = o.useContext(dr);
-        null == r && c(!1);
+        null == r && u(!1);
         let {
           basename: n
         } = kr(Cr.useViewTransitionState), a = st(e, {

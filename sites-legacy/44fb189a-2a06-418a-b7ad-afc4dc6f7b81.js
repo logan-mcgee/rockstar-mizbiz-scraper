@@ -33,26 +33,26 @@ _global.SENTRY_RELEASE = {
           var i = e[c],
             l = r.base ? i[0] + r.base : i[0],
             u = a[l] || 0,
-            f = "".concat(l, " ").concat(u);
+            d = "".concat(l, " ").concat(u);
           a[l] = u + 1;
-          var d = n(f),
-            p = {
+          var p = n(d),
+            f = {
               css: i[1],
               media: i[2],
               sourceMap: i[3],
               supports: i[4],
               layer: i[5]
             };
-          if (-1 !== d) t[d].references++, t[d].updater(p);
+          if (-1 !== p) t[p].references++, t[p].updater(f);
           else {
-            var m = o(p, r);
+            var m = o(f, r);
             r.byIndex = c, t.splice(c, 0, {
-              identifier: f,
+              identifier: d,
               updater: m,
               references: 1
             })
           }
-          s.push(f)
+          s.push(d)
         }
         return s
       }
@@ -219,14 +219,14 @@ _global.SENTRY_RELEASE = {
           c = {};
         return function e(n, i, l) {
           l = l || 1, Object.keys(n).forEach((function(u) {
-            const f = n[u],
-              d = r.safe && Array.isArray(f),
-              p = Object.prototype.toString.call(f),
-              m = t(f),
-              y = "[object Object]" === p || "[object Array]" === p,
+            const d = n[u],
+              p = r.safe && Array.isArray(d),
+              f = Object.prototype.toString.call(d),
+              m = t(d),
+              y = "[object Object]" === f || "[object Array]" === f,
               b = i ? i + o + s(u) : s(u);
-            if (!d && !m && y && Object.keys(f).length && (!r.maxDepth || l < a)) return e(f, b, l + 1);
-            c[b] = f
+            if (!p && !m && y && Object.keys(d).length && (!r.maxDepth || l < a)) return e(d, b, l + 1);
+            c[b] = d
           }))
         }(e), c
       }
@@ -255,16 +255,16 @@ _global.SENTRY_RELEASE = {
         }), {}), Object.keys(o).forEach((function(t) {
           const n = t.split(s).map(i);
           let r = u(n.shift()),
-            f = u(n[0]),
-            d = l;
-          for (; void 0 !== f;) {
+            d = u(n[0]),
+            p = l;
+          for (; void 0 !== d;) {
             if ("__proto__" === r) return;
-            const e = Object.prototype.toString.call(d[r]),
+            const e = Object.prototype.toString.call(p[r]),
               t = "[object Object]" === e || "[object Array]" === e;
-            if (!c && !t && void 0 !== d[r]) return;
-            (c && !t || !c && null == d[r]) && (d[r] = "number" != typeof f || a.object ? {} : []), d = d[r], n.length > 0 && (r = u(n.shift()), f = u(n[0]))
+            if (!c && !t && void 0 !== p[r]) return;
+            (c && !t || !c && null == p[r]) && (p[r] = "number" != typeof d || a.object ? {} : []), p = p[r], n.length > 0 && (r = u(n.shift()), d = u(n[0]))
           }
-          d[r] = e(o[t], a)
+          p[r] = e(o[t], a)
         })), l
       }
     },
@@ -309,13 +309,13 @@ _global.SENTRY_RELEASE = {
       n.r(t), n.d(t, {
         InViewTracker: () => _,
         TinaParser: () => S,
-        TinaPayloadProvider: () => d.o,
+        TinaPayloadProvider: () => p.o,
         recursiveNestedTemplates: () => x,
         useGenerateCdnSource: () => k.jS,
         useGetCdnSource: () => k.C1,
         useImageParser: () => k.S1,
-        useTinaComponents: () => f,
-        useTinaPayload: () => d.i,
+        useTinaComponents: () => d,
+        useTinaPayload: () => p.i,
         useTranslations: () => b
       });
       var r = n(62229),
@@ -340,10 +340,10 @@ _global.SENTRY_RELEASE = {
             children: t
           })
         },
-        f = () => (0, r.useContext)(i);
-      var d = n(29960),
-        p = n(34695),
-        m = n.n(p),
+        d = () => (0, r.useContext)(i);
+      var p = n(29960),
+        f = n(34695),
+        m = n.n(f),
         y = n(58147);
       const b = e => {
         let {
@@ -434,7 +434,7 @@ _global.SENTRY_RELEASE = {
               }), l = "gen9.Hero");
               const u = a().get(t, l) ?? null;
               if (!u) return null;
-              const f = ((e, t) => n => ((e, t, n) => (0, c.jsx)(j, {
+              const d = ((e, t) => n => ((e, t, n) => (0, c.jsx)(j, {
                   impressionTracking: n?.impressionTracking,
                   gtm: n?.gtm,
                   children: (0, c.jsx)(e, {
@@ -447,14 +447,14 @@ _global.SENTRY_RELEASE = {
                     whatever: 1
                   }
                 }),
-                d = [...e?.translations ?? []].reverse(),
-                p = `componentProps_${(0,g.A)()}`;
-              return (0, r.createElement)(f, {
+                p = [...e?.translations ?? []].reverse(),
+                f = `componentProps_${(0,g.A)()}`;
+              return (0, r.createElement)(d, {
                 ...n?.meta,
                 ...e,
                 ...o,
-                t: e => d.find((t => t?._key === e))?.value ?? e,
-                key: p
+                t: e => p.find((t => t?._key === e))?.value ?? e,
+                key: f
               }, i)
             };
             return n?.[y.ZH]?.length ? s(n) : null
@@ -471,15 +471,15 @@ _global.SENTRY_RELEASE = {
             components: n = {},
             componentProps: o = {}
           } = e;
-          const s = (0, d.i)(),
+          const s = (0, p.i)(),
             [i, l] = (0, r.useState)(null),
-            [p, m] = (0, r.useState)(null);
+            [f, m] = (0, r.useState)(null);
           (0, r.useEffect)((() => {
             t?.payload && l(t.payload), t?.variables && m(t.variables)
           }), [t]);
           const [y] = (0, r.useState)({
             ...n,
-            ...f() ?? {}
+            ...d() ?? {}
           }), g = (e => {
             let {
               payload: t
@@ -516,7 +516,7 @@ _global.SENTRY_RELEASE = {
             payload: i
           }), h = b({
             payload: i,
-            variables: p
+            variables: f
           });
           return (0, r.useMemo)((() => {
             if (!i) return null;
@@ -529,7 +529,7 @@ _global.SENTRY_RELEASE = {
                   prod: n
                 }
               };
-            return (0, c.jsx)(d.o, {
+            return (0, c.jsx)(p.o, {
               payload: r,
               children: (0, c.jsx)(u, {
                 components: y,

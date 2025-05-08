@@ -51,23 +51,23 @@ _global.SENTRY_RELEASE = {
           n = a
         }
       }();
-      var s, u = [],
-        l = !1,
+      var f, s = [],
+        u = !1,
         c = -1;
 
-      function f() {
-        l && s && (l = !1, s.length ? u = s.concat(u) : c = -1, u.length && d())
+      function l() {
+        u && f && (u = !1, f.length ? s = f.concat(s) : c = -1, s.length && d())
       }
 
       function d() {
-        if (!l) {
-          var e = i(f);
-          l = !0;
-          for (var t = u.length; t;) {
-            for (s = u, u = []; ++c < t;) s && s[c].run();
-            c = -1, t = u.length
+        if (!u) {
+          var e = i(l);
+          u = !0;
+          for (var t = s.length; t;) {
+            for (f = s, s = []; ++c < t;) f && f[c].run();
+            c = -1, t = s.length
           }
-          s = null, l = !1,
+          f = null, u = !1,
             function(e) {
               if (n === clearTimeout) return clearTimeout(e);
               if ((n === a || !n) && clearTimeout) return n = clearTimeout, clearTimeout(e);
@@ -84,19 +84,19 @@ _global.SENTRY_RELEASE = {
         }
       }
 
-      function b(e, t) {
+      function g(e, t) {
         this.fun = e, this.array = t
       }
 
-      function g() {}
+      function h() {}
       r.nextTick = function(e) {
         var t = new Array(arguments.length - 1);
         if (arguments.length > 1)
           for (var n = 1; n < arguments.length; n++) t[n - 1] = arguments[n];
-        u.push(new b(e, t)), 1 !== u.length || l || i(d)
-      }, b.prototype.run = function() {
+        s.push(new g(e, t)), 1 !== s.length || u || i(d)
+      }, g.prototype.run = function() {
         this.fun.apply(null, this.array)
-      }, r.title = "browser", r.browser = !0, r.env = {}, r.argv = [], r.version = "", r.versions = {}, r.on = g, r.addListener = g, r.once = g, r.off = g, r.removeListener = g, r.removeAllListeners = g, r.emit = g, r.prependListener = g, r.prependOnceListener = g, r.listeners = function(e) {
+      }, r.title = "browser", r.browser = !0, r.env = {}, r.argv = [], r.version = "", r.versions = {}, r.on = h, r.addListener = h, r.once = h, r.off = h, r.removeListener = h, r.removeAllListeners = h, r.emit = h, r.prependListener = h, r.prependOnceListener = h, r.listeners = function(e) {
         return []
       }, r.binding = function(e) {
         throw new Error("process.binding is not supported")

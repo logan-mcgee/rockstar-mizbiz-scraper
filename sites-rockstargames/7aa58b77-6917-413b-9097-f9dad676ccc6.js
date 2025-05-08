@@ -22,30 +22,30 @@ _global.SENTRY_RELEASE = {
         r = Symbol.for("react.fragment"),
         s = Object.prototype.hasOwnProperty,
         d = o.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        f = {
+        l = {
           key: !0,
           ref: !0,
           __self: !0,
           __source: !0
         };
 
-      function l(e, a, t) {
+      function c(e, a, t) {
         var o, r = {},
-          l = null,
-          c = null;
-        for (o in void 0 !== t && (l = "" + t), void 0 !== a.key && (l = "" + a.key), void 0 !== a.ref && (c = a.ref), a) s.call(a, o) && !f.hasOwnProperty(o) && (r[o] = a[o]);
+          c = null,
+          f = null;
+        for (o in void 0 !== t && (c = "" + t), void 0 !== a.key && (c = "" + a.key), void 0 !== a.ref && (f = a.ref), a) s.call(a, o) && !l.hasOwnProperty(o) && (r[o] = a[o]);
         if (e && e.defaultProps)
           for (o in a = e.defaultProps) void 0 === r[o] && (r[o] = a[o]);
         return {
           $$typeof: n,
           type: e,
-          key: l,
-          ref: c,
+          key: c,
+          ref: f,
           props: r,
           _owner: d.current
         }
       }
-      a.Fragment = r, a.jsx = l, a.jsxs = l
+      a.Fragment = r, a.jsx = c, a.jsxs = c
     },
     73855: (e, a, t) => {
       e.exports = t(32469)
@@ -63,12 +63,12 @@ _global.SENTRY_RELEASE = {
           children: t,
           history: s
         } = e;
-        const [d, f] = (0, o.useState)({
+        const [d, l] = (0, o.useState)({
           action: s.action,
           location: s.location
         });
         return (0, o.useLayoutEffect)((() => s.listen(((e, a) => {
-          f({
+          l({
             location: e,
             action: a
           })

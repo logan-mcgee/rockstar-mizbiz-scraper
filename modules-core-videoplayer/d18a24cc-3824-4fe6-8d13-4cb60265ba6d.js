@@ -19,17 +19,17 @@ _global.SENTRY_RELEASE = {
     66892: (e, n, o) => {
       o.r(n), o(44980), o(2876), o(74395), o(93180), o(43759), o(54936), o(66945), o(38585), o(71436), o(98073), o(30014), o(94323), o(6929), o(99598), o(26804), o(76580), o(32033), o(63612), o(62567);
       var t = o(95966),
-        a = o(40347),
-        d = o(9623),
+        d = o(40347),
+        a = o(9623),
         s = o(81788),
         r = o(2918),
         l = o(84700),
         i = o(53178),
         c = o.n(i),
         u = o(27835),
-        f = o.n(u),
-        b = o(17529),
-        g = o.n(b),
+        b = o.n(u),
+        g = o(17529),
+        f = o.n(g),
         p = o(72162),
         m = o.n(p),
         y = o(82510),
@@ -38,27 +38,27 @@ _global.SENTRY_RELEASE = {
         A = o.n(h),
         v = o(18418),
         _ = {};
-      _.styleTagTransform = A(), _.setAttributes = m(), _.insert = g().bind(null, "head"), _.domAPI = f(), _.insertStyleElement = w(), c()(v.A, _), v.A && v.A.locals && v.A.locals;
+      _.styleTagTransform = A(), _.setAttributes = m(), _.insert = f().bind(null, "head"), _.domAPI = b(), _.insertStyleElement = w(), c()(v.A, _), v.A && v.A.locals && v.A.locals;
       var k = o(52542),
         E = o(73855);
       const I = window?.env?.graphEnv ?? "prod",
         x = (0, s.withIntl)((() => {
-          const [e, n] = (0, d.useSearchParams)(), [{
+          const [e, n] = (0, a.useSearchParams)(), [{
             iso: o
-          }] = (0, s.getLocale)(), a = "true" === e.get("autoplay"), i = e.get("id"), c = e.get("resolution") ?? null, u = e.get("locale") ?? "en_us", f = Number(e.get("start") ?? 0);
+          }] = (0, s.getLocale)(), d = "true" === e.get("autoplay"), i = e.get("id"), c = e.get("resolution") ?? null, u = e.get("locale") ?? "en_us", b = Number(e.get("start") ?? 0);
           return (0, E.jsx)(t.ResizeProvider, {
             children: (0, E.jsx)(r.GtmProvider, {
               children: (0, E.jsx)(l.A, {
-                autoplay: a,
+                autoplay: d,
                 context: "embed",
                 locale: u,
                 id: i,
                 resolution: c,
-                start: f,
+                start: b,
                 wrapper: !1,
                 videoChangeCallback: e => {
                   n({
-                    autoplay: a,
+                    autoplay: d,
                     id: e,
                     resolution: c
                   })
@@ -67,7 +67,7 @@ _global.SENTRY_RELEASE = {
             })
           })
         }), k),
-        C = (0, t.withRockstarGraph)((() => (0, E.jsx)(d.BrowserRouter, {
+        C = (0, t.withRockstarGraph)((() => (0, E.jsx)(a.BrowserRouter, {
           children: (0, E.jsx)(x, {})
         })), {
           env: I
@@ -77,16 +77,16 @@ _global.SENTRY_RELEASE = {
         id: R
       });
       const j = document.createElement("main");
-      document.body.appendChild(j), (0, a.H)(j).render((0, E.jsx)(C, {}))
+      document.body.appendChild(j), (0, d.H)(j).render((0, E.jsx)(C, {}))
     },
     18418: (e, n, o) => {
       o.d(n, {
         A: () => r
       });
       var t = o(42587),
-        a = o.n(t),
-        d = o(15081),
-        s = o.n(d)()(a());
+        d = o.n(t),
+        a = o(15081),
+        s = o.n(a)()(d());
       s.push([e.id, "body,html{margin:0;overflow:hidden!important}main{height:100vh;width:100vw}", "", {
         version: 3,
         sources: ["webpack://./src/components/Root/index.less"],

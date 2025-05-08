@@ -29,24 +29,24 @@ _global.SENTRY_RELEASE = {
         const o = (r = r || {}).delimiter || ".",
           a = r.maxDepth,
           s = r.transformKey || n,
-          i = {};
-        return function e(n, c, l) {
+          c = {};
+        return function e(n, i, l) {
           l = l || 1, Object.keys(n).forEach((function(d) {
             const u = n[d],
               p = r.safe && Array.isArray(u),
               f = Object.prototype.toString.call(u),
               b = t(u),
               y = "[object Object]" === f || "[object Array]" === f,
-              m = c ? c + o + s(d) : s(d);
+              m = i ? i + o + s(d) : s(d);
             if (!p && !b && y && Object.keys(u).length && (!r.maxDepth || l < a)) return e(u, m, l + 1);
-            i[m] = u
+            c[m] = u
           }))
-        }(e), i
+        }(e), c
       }
       e.exports = r, r.flatten = r, r.unflatten = function e(o, a) {
         const s = (a = a || {}).delimiter || ".",
-          i = a.overwrite || !1,
-          c = a.transformKey || n,
+          c = a.overwrite || !1,
+          i = a.transformKey || n,
           l = {};
         if (t(o) || "[object Object]" !== Object.prototype.toString.call(o)) return o;
 
@@ -66,7 +66,7 @@ _global.SENTRY_RELEASE = {
             }), t)
           }(t, e, r(o[t], a))
         }), {}), Object.keys(o).forEach((function(t) {
-          const n = t.split(s).map(c);
+          const n = t.split(s).map(i);
           let r = d(n.shift()),
             u = d(n[0]),
             p = l;
@@ -74,8 +74,8 @@ _global.SENTRY_RELEASE = {
             if ("__proto__" === r) return;
             const e = Object.prototype.toString.call(p[r]),
               t = "[object Object]" === e || "[object Array]" === e;
-            if (!i && !t && void 0 !== p[r]) return;
-            (i && !t || !i && null == p[r]) && (p[r] = "number" != typeof u || a.object ? {} : []), p = p[r], n.length > 0 && (r = d(n.shift()), u = d(n[0]))
+            if (!c && !t && void 0 !== p[r]) return;
+            (c && !t || !c && null == p[r]) && (p[r] = "number" != typeof u || a.object ? {} : []), p = p[r], n.length > 0 && (r = d(n.shift()), u = d(n[0]))
           }
           p[r] = e(o[t], a)
         })), l
@@ -99,25 +99,25 @@ _global.SENTRY_RELEASE = {
         o = n(17868),
         a = n.n(o);
       var s = n(95966),
-        i = n(73855);
-      const c = (0, s.setContextItem)({
+        c = n(73855);
+      const i = (0, s.setContextItem)({
           context: (0, r.createContext)(),
           key: "tinaParser"
         }),
         {
           Provider: l
-        } = c,
+        } = i,
         d = e => {
           let {
             children: t,
             components: n
           } = e;
-          return (0, i.jsx)(l, {
+          return (0, c.jsx)(l, {
             value: n,
             children: t
           })
         },
-        u = () => (0, r.useContext)(c);
+        u = () => (0, r.useContext)(i);
       var p = n(29960),
         f = n(34695),
         b = n.n(f),
@@ -162,7 +162,7 @@ _global.SENTRY_RELEASE = {
           const {
             track: a
           } = (0, h.useGtmTrack)(), {
-            ref: c,
+            ref: i,
             scrollTracked: l
           } = (0, s.useScrollTracking)(t);
           return (0, r.useEffect)((() => {
@@ -170,8 +170,8 @@ _global.SENTRY_RELEASE = {
               ..._,
               ...o
             })
-          }), [l]), (0, i.jsx)("section", {
-            ref: c,
+          }), [l]), (0, c.jsx)("section", {
+            ref: i,
             children: n
           })
         },
@@ -181,7 +181,7 @@ _global.SENTRY_RELEASE = {
             gtm: n = {},
             children: r
           } = e;
-          return t?.shouldTrack ? (0, i.jsx)(j, {
+          return t?.shouldTrack ? (0, c.jsx)(j, {
             threshold: t?.threshold,
             gtm: n,
             children: r
@@ -202,8 +202,8 @@ _global.SENTRY_RELEASE = {
               componentProps: o
             } = e;
             const s = e => {
-              let c = "";
-              if (c = Array.isArray(e?.[y.ZH]) ? e[y.ZH].map((e => s(e))) : e?.[y.ZH] ?? "", !e?._template) return c;
+              let i = "";
+              if (i = Array.isArray(e?.[y.ZH]) ? e[y.ZH].map((e => s(e))) : e?.[y.ZH] ?? "", !e?._template) return i;
               let l = e._template;
               "0" === l && (console.warn(`The _template "${l}" wasn't found in the available components. The _template "${l}" was replaced with "gen9.Hero".`, {
                 availableComponents: Object.keys(t),
@@ -211,10 +211,10 @@ _global.SENTRY_RELEASE = {
               }), l = "gen9.Hero");
               const d = a().get(t, l) ?? null;
               if (!d) return null;
-              const u = ((e, t) => n => ((e, t, n) => (0, i.jsx)(O, {
+              const u = ((e, t) => n => ((e, t, n) => (0, c.jsx)(O, {
                   impressionTracking: n?.impressionTracking,
                   gtm: n?.gtm,
-                  children: (0, i.jsx)(e, {
+                  children: (0, c.jsx)(e, {
                     ...t
                   })
                 }))(e, n, t))(d, {
@@ -232,7 +232,7 @@ _global.SENTRY_RELEASE = {
                 ...o,
                 t: e => p.find((t => t?._key === e))?.value ?? e,
                 key: f
-              }, c)
+              }, i)
             };
             return n?.[y.ZH]?.length ? s(n) : null
           })({
@@ -249,7 +249,7 @@ _global.SENTRY_RELEASE = {
             componentProps: o = {}
           } = e;
           const s = (0, p.i)(),
-            [c, l] = (0, r.useState)(null),
+            [i, l] = (0, r.useState)(null),
             [f, b] = (0, r.useState)(null);
           (0, r.useEffect)((() => {
             t?.payload && l(t.payload), t?.variables && b(t.variables)
@@ -290,27 +290,27 @@ _global.SENTRY_RELEASE = {
               return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
             }), [t]), n
           })({
-            payload: c
+            payload: i
           }), h = m({
-            payload: c,
+            payload: i,
             variables: f
           });
           return (0, r.useMemo)((() => {
-            if (!c) return null;
+            if (!i) return null;
             const e = h,
-              n = c?.meta?.prod ?? c?.meta?.cdn ?? s?.meta?.prod ?? s?.meta?.cdn ?? !1,
+              n = i?.meta?.prod ?? i?.meta?.cdn ?? s?.meta?.prod ?? s?.meta?.cdn ?? !1,
               r = {
-                ...c,
+                ...i,
                 meta: {
-                  ...c?.meta ?? {},
+                  ...i?.meta ?? {},
                   prod: n
                 }
               };
-            return (0, i.jsx)(p.o, {
+            return (0, c.jsx)(p.o, {
               payload: r,
-              children: (0, i.jsx)(d, {
+              children: (0, c.jsx)(d, {
                 components: y,
-                children: (0, i.jsx)(k, {
+                children: (0, c.jsx)(k, {
                   payload: e,
                   components: y,
                   componentProps: {
@@ -320,7 +320,7 @@ _global.SENTRY_RELEASE = {
                 })
               })
             })
-          }), [s, c, JSON.stringify(g), JSON.stringify(h)])
+          }), [s, i, JSON.stringify(g), JSON.stringify(h)])
         };
       var w = n(19544);
       const S = function() {

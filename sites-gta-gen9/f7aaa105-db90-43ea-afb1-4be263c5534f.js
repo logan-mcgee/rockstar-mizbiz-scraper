@@ -31,12 +31,12 @@ _global.SENTRY_RELEASE = {
         g = e.n(c),
         m = e(82510),
         h = e.n(m),
-        b = e(90675),
-        p = e.n(b),
-        f = e(44769),
+        f = e(90675),
+        p = e.n(f),
+        b = e(44769),
         v = {};
-      v.styleTagTransform = p(), v.setAttributes = g(), v.insert = l().bind(null, "head"), v.domAPI = s(), v.insertStyleElement = h(), i()(f.A, v);
-      const u = f.A && f.A.locals ? f.A.locals : void 0;
+      v.styleTagTransform = p(), v.setAttributes = g(), v.insert = l().bind(null, "head"), v.domAPI = s(), v.insertStyleElement = h(), i()(b.A, v);
+      const u = b.A && b.A.locals ? b.A.locals : void 0;
       var x = e(73855);
       const A = n => {
           let {
@@ -89,13 +89,13 @@ _global.SENTRY_RELEASE = {
             type: m = "",
             ariaLabel: h
           } = n;
-          const b = [u.plusButton, u[m] ?? "", u[l] ?? "", u[t] ?? "", e].join(" "),
+          const f = [u.plusButton, u[m] ?? "", u[l] ?? "", u[t] ?? "", e].join(" "),
             p = {
               "--hvr-color": a ?? o,
               "--hvr-bg-color": o ?? a,
               "--hvr-border-color": a ?? o
             },
-            f = (0, x.jsxs)(x.Fragment, {
+            b = (0, x.jsxs)(x.Fragment, {
               children: [i ? (0, x.jsx)("img", {
                 src: i,
                 alt: ""
@@ -113,36 +113,36 @@ _global.SENTRY_RELEASE = {
               return (0, x.jsx)("span", {
                 onClick: s,
                 onKeyDown: s,
-                className: b,
+                className: f,
                 role: "button",
                 "aria-label": h,
                 tabIndex: 0,
                 children: (0, x.jsx)("a", {
                   href: g,
                   target: n,
-                  children: f
+                  children: b
                 })
               })
             }
             return (0, x.jsx)(w, {
-              className: b,
+              className: f,
               onClick: s,
               style: {
                 ...p
               },
               to: g,
               ariaLabel: h,
-              children: f
+              children: b
             })
           }
           return (0, x.jsx)(A, {
-            className: b,
+            className: f,
             onClick: s,
             style: {
               ...p
             },
             ariaLabel: h,
-            children: f
+            children: b
           })
         }
     },

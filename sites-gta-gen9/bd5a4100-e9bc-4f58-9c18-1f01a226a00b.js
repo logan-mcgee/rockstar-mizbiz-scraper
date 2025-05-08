@@ -165,16 +165,16 @@ _global.SENTRY_RELEASE = {
             return t.readAsArrayBuffer(e), r
           }
 
-          function b(e) {
+          function g(e) {
             if (e.slice) return e.slice(0);
             var t = new Uint8Array(e.byteLength);
             return t.set(new Uint8Array(e)), t.buffer
           }
 
-          function g() {
+          function b() {
             return this.bodyUsed = !1, this._initBody = function(e) {
               var t;
-              this.bodyUsed = this.bodyUsed, this._bodyInit = e, e ? "string" == typeof e ? this._bodyText = e : a && Blob.prototype.isPrototypeOf(e) ? this._bodyBlob = e : s && FormData.prototype.isPrototypeOf(e) ? this._bodyFormData = e : i && URLSearchParams.prototype.isPrototypeOf(e) ? this._bodyText = e.toString() : u && a && (t = e) && DataView.prototype.isPrototypeOf(t) ? (this._bodyArrayBuffer = b(e.buffer), this._bodyInit = new Blob([this._bodyArrayBuffer])) : u && (ArrayBuffer.prototype.isPrototypeOf(e) || l(e)) ? this._bodyArrayBuffer = b(e) : this._bodyText = e = Object.prototype.toString.call(e) : (this._noBody = !0, this._bodyText = ""), this.headers.get("content-type") || ("string" == typeof e ? this.headers.set("content-type", "text/plain;charset=UTF-8") : this._bodyBlob && this._bodyBlob.type ? this.headers.set("content-type", this._bodyBlob.type) : i && URLSearchParams.prototype.isPrototypeOf(e) && this.headers.set("content-type", "application/x-www-form-urlencoded;charset=UTF-8"))
+              this.bodyUsed = this.bodyUsed, this._bodyInit = e, e ? "string" == typeof e ? this._bodyText = e : a && Blob.prototype.isPrototypeOf(e) ? this._bodyBlob = e : s && FormData.prototype.isPrototypeOf(e) ? this._bodyFormData = e : i && URLSearchParams.prototype.isPrototypeOf(e) ? this._bodyText = e.toString() : u && a && (t = e) && DataView.prototype.isPrototypeOf(t) ? (this._bodyArrayBuffer = g(e.buffer), this._bodyInit = new Blob([this._bodyArrayBuffer])) : u && (ArrayBuffer.prototype.isPrototypeOf(e) || l(e)) ? this._bodyArrayBuffer = g(e) : this._bodyText = e = Object.prototype.toString.call(e) : (this._noBody = !0, this._bodyText = ""), this.headers.get("content-type") || ("string" == typeof e ? this.headers.set("content-type", "text/plain;charset=UTF-8") : this._bodyBlob && this._bodyBlob.type ? this.headers.set("content-type", this._bodyBlob.type) : i && URLSearchParams.prototype.isPrototypeOf(e) && this.headers.set("content-type", "application/x-www-form-urlencoded;charset=UTF-8"))
             }, a && (this.blob = function() {
               var e = v(this);
               if (e) return e;
@@ -271,7 +271,7 @@ _global.SENTRY_RELEASE = {
             return new w(this, {
               body: this._bodyInit
             })
-          }, g.call(w.prototype), g.call(E.prototype), E.prototype.clone = function() {
+          }, b.call(w.prototype), b.call(E.prototype), E.prototype.clone = function() {
             return new E(this._bodyInit, {
               status: this.status,
               statusText: this.statusText,
@@ -582,8 +582,8 @@ _global.SENTRY_RELEASE = {
         v = "Opera",
         y = "Yandex",
         m = "Safari",
-        b = "Internet Explorer",
-        g = "Edge",
+        g = "Internet Explorer",
+        b = "Edge",
         _ = "Chromium",
         w = "IE",
         k = "Mobile Safari",
@@ -674,7 +674,7 @@ _global.SENTRY_RELEASE = {
           return e.name === _
         },
         ee = function(e) {
-          return e.name === g
+          return e.name === b
         },
         te = function(e) {
           return e.name === y
@@ -691,7 +691,7 @@ _global.SENTRY_RELEASE = {
         },
         oe = function(e) {
           var t = e.name;
-          return t === b || t === w
+          return t === g || t === w
         },
         ae = function(e) {
           return e.name === E
@@ -737,17 +737,17 @@ _global.SENTRY_RELEASE = {
         me = function() {
           return P("iPhone")
         },
-        be = function() {
+        ge = function() {
           return P("iPod")
         },
-        ge = function(e) {
+        be = function(e) {
           return A(e)
         };
       var _e = q(s),
         we = (N(s), V(s)),
         ke = (Q(s), ne(a) || ye(), Z(a), I(s) || ye(), C(s), j(s) || ye(), F(s), F(s), B(c), H(c), G(c) || ye(), Y(a), X(a), re(a), ie(a), oe(a)),
         Ee = (J(c), $(c), ue(a), ce(a), le(a)),
-        Oe = (L(s), z(s), fe(u), de(u), ge(l), ee(a) || pe(l), te(a), U(s), ve(), ye(), me(), be(), he(), pe(l), ee(a) && !pe(l));
+        Oe = (L(s), z(s), fe(u), de(u), be(l), ee(a) || pe(l), te(a), U(s), ve(), ye(), me(), ge(), he(), pe(l), ee(a) && !pe(l));
       W(c), K(c), ae(a), se(a);
       t.C0 = Ee, t.lT = ke, t.n8 = Oe, t.UX = _e, t.w = we
     },
@@ -869,8 +869,8 @@ _global.SENTRY_RELEASE = {
           v = "version",
           y = "architecture",
           m = "console",
-          b = "mobile",
-          g = "tablet",
+          g = "mobile",
+          b = "tablet",
           _ = "smarttv",
           w = "wearable",
           k = "embedded",
@@ -1102,269 +1102,269 @@ _global.SENTRY_RELEASE = {
             device: [
               [/\b(sch-i[89]0\d|shw-m380s|sm-[ptx]\w{2,4}|gt-[pn]\d{2,4}|sgh-t8[56]9|nexus 10)/i],
               [f, [p, q],
-                [h, g]
+                [h, b]
               ],
               [/\b((?:s[cgp]h|gt|sm)-\w+|sc[g-]?[\d]+a?|galaxy nexus)/i, /samsung[- ]([-\w]+)/i, /sec-(sgh\w+)/i],
               [f, [p, q],
-                [h, b]
+                [h, g]
               ],
               [/(?:\/|\()(ip(?:hone|od)[\w, ]*)(?:\/|;)/i],
               [f, [p, O],
-                [h, b]
+                [h, g]
               ],
               [/\((ipad);[-\w\),; ]+apple/i, /applecoremedia\/[\w\.]+ \((ipad)/i, /\b(ipad)\d\d?,\d\d?[;\]].+ios/i],
               [f, [p, O],
-                [h, g]
+                [h, b]
               ],
               [/(macintosh);/i],
               [f, [p, O]],
               [/\b(sh-?[altvz]?\d\d[a-ekm]?)/i],
               [f, [p, F],
-                [h, b]
+                [h, g]
               ],
               [/\b((?:ag[rs][23]?|bah2?|sht?|btv)-a?[lw]\d{2})\b(?!.+d\/s)/i],
               [f, [p, M],
-                [h, g]
+                [h, b]
               ],
               [/(?:huawei|honor)([-\w ]+)[;\)]/i, /\b(nexus 6p|\w{2,4}e?-[atu]?[ln][\dx][012359c][adn]?)\b(?!.+d\/s)/i],
               [f, [p, M],
-                [h, b]
+                [h, g]
               ],
               [/\b(poco[\w ]+|m2\d{3}j\d\d[a-z]{2})(?: bui|\))/i, /\b; (\w+) build\/hm\1/i, /\b(hm[-_ ]?note?[_ ]?(?:\d\w)?) bui/i, /\b(redmi[\-_ ]?(?:note|k)?[\w_ ]+)(?: bui|\))/i, /oid[^\)]+; (m?[12][0-389][01]\w{3,6}[c-y])( bui|; wv|\))/i, /\b(mi[-_ ]?(?:a\d|one|one[_ ]plus|note lte|max|cc)?[_ ]?(?:\d?\w?)[_ ]?(?:plus|se|lite)?)(?: bui|\))/i],
               [
                 [f, /_/g, " "],
                 [p, N],
-                [h, b]
+                [h, g]
               ],
               [/oid[^\)]+; (2\d{4}(283|rpbf)[cgl])( bui|\))/i, /\b(mi[-_ ]?(?:pad)(?:[\w_ ]+))(?: bui|\))/i],
               [
                 [f, /_/g, " "],
                 [p, N],
-                [h, g]
+                [h, b]
               ],
               [/; (\w+) bui.+ oppo/i, /\b(cph[12]\d{3}|p(?:af|c[al]|d\w|e[ar])[mt]\d0|x9007|a101op)\b/i],
               [f, [p, "OPPO"],
-                [h, b]
+                [h, g]
               ],
               [/\b(opd2\d{3}a?) bui/i],
               [f, [p, "OPPO"],
-                [h, g]
+                [h, b]
               ],
               [/vivo (\w+)(?: bui|\))/i, /\b(v[12]\d{3}\w?[at])(?: bui|;)/i],
               [f, [p, "Vivo"],
-                [h, b]
+                [h, g]
               ],
               [/\b(rmx[1-3]\d{3})(?: bui|;|\))/i],
               [f, [p, "Realme"],
-                [h, b]
+                [h, g]
               ],
               [/\b(milestone|droid(?:[2-4x]| (?:bionic|x2|pro|razr))?:?( 4g)?)\b[\w ]+build\//i, /\bmot(?:orola)?[- ](\w*)/i, /((?:moto[\w\(\) ]+|xt\d{3,4}|nexus 6)(?= bui|\)))/i],
               [f, [p, j],
-                [h, b]
+                [h, g]
               ],
               [/\b(mz60\d|xoom[2 ]{0,2}) build\//i],
               [f, [p, j],
-                [h, g]
+                [h, b]
               ],
               [/((?=lg)?[vl]k\-?\d{3}) bui| 3\.[-\w; ]{10}lg?-([06cv9]{3,4})/i],
               [f, [p, P],
-                [h, g]
+                [h, b]
               ],
               [/(lm(?:-?f100[nv]?|-[\w\.]+)(?= bui|\))|nexus [45])/i, /\blg[-e;\/ ]+((?!browser|netcast|android tv)\w+)/i, /\blg-?([\d\w]+) bui/i],
               [f, [p, P],
-                [h, b]
+                [h, g]
               ],
               [/(ideatab[-\w ]+)/i, /lenovo ?(s[56]000[-\w]+|tab(?:[\w ]+)|yt[-\d\w]{6}|tb[-\d\w]{6})/i],
               [f, [p, "Lenovo"],
-                [h, g]
+                [h, b]
               ],
               [/(?:maemo|nokia).*(n900|lumia \d+)/i, /nokia[-_ ]?([-\w\.]*)/i],
               [
                 [f, /_/g, " "],
                 [p, "Nokia"],
-                [h, b]
+                [h, g]
               ],
               [/(pixel c)\b/i],
               [f, [p, A],
-                [h, g]
+                [h, b]
               ],
               [/droid.+; (pixel[\daxl ]{0,6})(?: bui|\))/i],
               [f, [p, A],
-                [h, b]
+                [h, g]
               ],
               [/droid.+ (a?\d[0-2]{2}so|[c-g]\d{4}|so[-gl]\w+|xq-a\w[4-7][12])(?= bui|\).+chrome\/(?![1-6]{0,1}\d\.))/i],
               [f, [p, V],
-                [h, b]
+                [h, g]
               ],
               [/sony tablet [ps]/i, /\b(?:sony)?sgp\w+(?: bui|\))/i],
               [
                 [f, "Xperia Tablet"],
                 [p, V],
-                [h, g]
+                [h, b]
               ],
               [/ (kb2005|in20[12]5|be20[12][59])\b/i, /(?:one)?(?:plus)? (a\d0\d\d)(?: b|\))/i],
               [f, [p, "OnePlus"],
-                [h, b]
+                [h, g]
               ],
               [/(alexa)webm/i, /(kf[a-z]{2}wi|aeo[c-r]{2})( bui|\))/i, /(kf[a-z]+)( bui|\)).+silk\//i],
               [f, [p, E],
-                [h, g]
+                [h, b]
               ],
               [/((?:sd|kf)[0349hijorstuw]+)( bui|\)).+silk\//i],
               [
                 [f, /(.+)/g, "Fire Phone $1"],
                 [p, E],
-                [h, b]
+                [h, g]
               ],
               [/(playbook);[-\w\),; ]+(rim)/i],
-              [f, p, [h, g]],
+              [f, p, [h, b]],
               [/\b((?:bb[a-f]|st[hv])100-\d)/i, /\(bb10; (\w+)/i],
               [f, [p, T],
-                [h, b]
+                [h, g]
               ],
               [/(?:\b|asus_)(transfo[prime ]{4,10} \w+|eeepc|slider \w+|nexus 7|padfone|p00[cj])/i],
               [f, [p, S],
-                [h, g]
+                [h, b]
               ],
               [/ (z[bes]6[027][012][km][ls]|zenfone \d\w?)\b/i],
               [f, [p, S],
-                [h, b]
+                [h, g]
               ],
               [/(nexus 9)/i],
               [f, [p, "HTC"],
-                [h, g]
+                [h, b]
               ],
               [/(htc)[-;_ ]{1,2}([\w ]+(?=\)| bui)|\w+)/i, /(zte)[- ]([\w ]+?)(?: bui|\/|\))/i, /(alcatel|geeksphone|nexian|panasonic(?!(?:;|\.))|sony(?!-bra))[-_ ]?([-\w]*)/i],
               [p, [f, /_/g, " "],
-                [h, b]
+                [h, g]
               ],
               [/droid.+; ([ab][1-7]-?[0178a]\d\d?)/i],
               [f, [p, "Acer"],
-                [h, g]
+                [h, b]
               ],
               [/droid.+; (m[1-5] note) bui/i, /\bmz-([-\w]{2,})/i],
               [f, [p, "Meizu"],
-                [h, b]
+                [h, g]
               ],
               [/; ((?:power )?armor(?:[\w ]{0,8}))(?: bui|\))/i],
               [f, [p, "Ulefone"],
-                [h, b]
+                [h, g]
               ],
               [/(blackberry|benq|palm(?=\-)|sonyericsson|acer|asus|dell|meizu|motorola|polytron|infinix|tecno)[-_ ]?([-\w]*)/i, /(hp) ([\w ]+\w)/i, /(asus)-?(\w+)/i, /(microsoft); (lumia[\w ]+)/i, /(lenovo)[-_ ]?([-\w]+)/i, /(jolla)/i, /(oppo) ?([\w ]+) bui/i],
-              [p, f, [h, b]],
-              [/(kobo)\s(ereader|touch)/i, /(archos) (gamepad2?)/i, /(hp).+(touchpad(?!.+tablet)|tablet)/i, /(kindle)\/([\w\.]+)/i, /(nook)[\w ]+build\/(\w+)/i, /(dell) (strea[kpr\d ]*[\dko])/i, /(le[- ]+pan)[- ]+(\w{1,9}) bui/i, /(trinity)[- ]*(t\d{3}) bui/i, /(gigaset)[- ]+(q\w{1,9}) bui/i, /(vodafone) ([\w ]+)(?:\)| bui)/i],
               [p, f, [h, g]],
+              [/(kobo)\s(ereader|touch)/i, /(archos) (gamepad2?)/i, /(hp).+(touchpad(?!.+tablet)|tablet)/i, /(kindle)\/([\w\.]+)/i, /(nook)[\w ]+build\/(\w+)/i, /(dell) (strea[kpr\d ]*[\dko])/i, /(le[- ]+pan)[- ]+(\w{1,9}) bui/i, /(trinity)[- ]*(t\d{3}) bui/i, /(gigaset)[- ]+(q\w{1,9}) bui/i, /(vodafone) ([\w ]+)(?:\)| bui)/i],
+              [p, f, [h, b]],
               [/(surface duo)/i],
               [f, [p, C],
-                [h, g]
+                [h, b]
               ],
               [/droid [\d\.]+; (fp\du?)(?: b|\))/i],
               [f, [p, "Fairphone"],
-                [h, b]
+                [h, g]
               ],
               [/(u304aa)/i],
               [f, [p, "AT&T"],
-                [h, b]
+                [h, g]
               ],
               [/\bsie-(\w*)/i],
               [f, [p, "Siemens"],
-                [h, b]
+                [h, g]
               ],
               [/\b(rct\w+) b/i],
               [f, [p, "RCA"],
-                [h, g]
+                [h, b]
               ],
               [/\b(venue[\d ]{2,7}) b/i],
               [f, [p, "Dell"],
-                [h, g]
+                [h, b]
               ],
               [/\b(q(?:mv|ta)\w+) b/i],
               [f, [p, "Verizon"],
-                [h, g]
+                [h, b]
               ],
               [/\b(?:barnes[& ]+noble |bn[rt])([\w\+ ]*) b/i],
               [f, [p, "Barnes & Noble"],
-                [h, g]
+                [h, b]
               ],
               [/\b(tm\d{3}\w+) b/i],
               [f, [p, "NuVision"],
-                [h, g]
+                [h, b]
               ],
               [/\b(k88) b/i],
               [f, [p, "ZTE"],
-                [h, g]
+                [h, b]
               ],
               [/\b(nx\d{3}j) b/i],
               [f, [p, "ZTE"],
-                [h, b]
+                [h, g]
               ],
               [/\b(gen\d{3}) b.+49h/i],
               [f, [p, "Swiss"],
-                [h, b]
+                [h, g]
               ],
               [/\b(zur\d{3}) b/i],
               [f, [p, "Swiss"],
-                [h, g]
+                [h, b]
               ],
               [/\b((zeki)?tb.*\b) b/i],
               [f, [p, "Zeki"],
-                [h, g]
+                [h, b]
               ],
               [/\b([yr]\d{2}) b/i, /\b(dragon[- ]+touch |dt)(\w{5}) b/i],
               [
-                [p, "Dragon Touch"], f, [h, g]
+                [p, "Dragon Touch"], f, [h, b]
               ],
               [/\b(ns-?\w{0,9}) b/i],
               [f, [p, "Insignia"],
-                [h, g]
+                [h, b]
               ],
               [/\b((nxa|next)-?\w{0,9}) b/i],
               [f, [p, "NextBook"],
-                [h, g]
+                [h, b]
               ],
               [/\b(xtreme\_)?(v(1[045]|2[015]|[3469]0|7[05])) b/i],
               [
-                [p, "Voice"], f, [h, b]
+                [p, "Voice"], f, [h, g]
               ],
               [/\b(lvtel\-)?(v1[12]) b/i],
               [
-                [p, "LvTel"], f, [h, b]
+                [p, "LvTel"], f, [h, g]
               ],
               [/\b(ph-1) /i],
               [f, [p, "Essential"],
-                [h, b]
+                [h, g]
               ],
               [/\b(v(100md|700na|7011|917g).*\b) b/i],
               [f, [p, "Envizen"],
-                [h, g]
+                [h, b]
               ],
               [/\b(trio[-\w\. ]+) b/i],
               [f, [p, "MachSpeed"],
-                [h, g]
+                [h, b]
               ],
               [/\btu_(1491) b/i],
               [f, [p, "Rotor"],
-                [h, g]
+                [h, b]
               ],
               [/(shield[\w ]+) b/i],
               [f, [p, "Nvidia"],
-                [h, g]
+                [h, b]
               ],
               [/(sprint) (\w+)/i],
-              [p, f, [h, b]],
+              [p, f, [h, g]],
               [/(kin\.[onetw]{3})/i],
               [
                 [f, /\./g, " "],
                 [p, C],
-                [h, b]
+                [h, g]
               ],
               [/droid.+; (cc6666?|et5[16]|mc[239][23]x?|vc8[03]x?)\)/i],
               [f, [p, Q],
-                [h, g]
+                [h, b]
               ],
               [/droid.+; (ec30|ps20|tc[2-8]\d[kx])\)/i],
               [f, [p, Q],
-                [h, b]
+                [h, g]
               ],
               [/smart-tv.+(samsung)/i],
               [p, [h, _]],
@@ -1456,16 +1456,16 @@ _global.SENTRY_RELEASE = {
                 [h, k]
               ],
               [/droid .+?; ([^;]+?)(?: bui|; wv\)|\) applew).+? mobile safari/i],
-              [f, [h, b]],
-              [/droid .+?; ([^;]+?)(?: bui|\) applew).+?(?! mobile) safari/i],
               [f, [h, g]],
+              [/droid .+?; ([^;]+?)(?: bui|\) applew).+?(?! mobile) safari/i],
+              [f, [h, b]],
               [/\b((tablet|tab)[;\/]|focus\/\d(?!.+mobile))/i],
               [
-                [h, g]
+                [h, b]
               ],
               [/(phone|mobile(?:[;\/]| [ \w\/\.]*safari)|pda(?=.+windows ce))/i],
               [
-                [h, b]
+                [h, g]
               ],
               [/(android[-\w\. ]{0,9});.+buil/i],
               [f, [p, "Generic"]]
@@ -1549,7 +1549,7 @@ _global.SENTRY_RELEASE = {
               return e[y] = o, G.call(e, n, _.cpu), e
             }, this.getDevice = function() {
               var e = {};
-              return e[p] = o, e[f] = o, e[h] = o, G.call(e, n, _.device), w && !e[h] && m && m.mobile && (e[h] = b), w && "Macintosh" == e[f] && r && typeof r.standalone !== s && r.maxTouchPoints && r.maxTouchPoints > 2 && (e[f] = "iPad", e[h] = g), e
+              return e[p] = o, e[f] = o, e[h] = o, G.call(e, n, _.device), w && !e[h] && m && m.mobile && (e[h] = g), w && "Macintosh" == e[f] && r && typeof r.standalone !== s && r.maxTouchPoints && r.maxTouchPoints > 2 && (e[f] = "iPad", e[h] = b), e
             }, this.getEngine = function() {
               var e = {};
               return e[d] = o, e[v] = o, G.call(e, n, _.engine), e
@@ -1571,7 +1571,7 @@ _global.SENTRY_RELEASE = {
               return n = typeof e === c && e.length > 500 ? H(e, 500) : e, this
             }, this.setUA(n), this
           };
-        X.VERSION = "1.0.38", X.BROWSER = B([d, v, l]), X.CPU = B([y]), X.DEVICE = B([f, p, h, m, b, _, g, w, k]), X.ENGINE = X.OS = B([d, v]), typeof t !== s ? (e.exports && (t = e.exports = X), t.UAParser = X) : r.amdO ? (n = function() {
+        X.VERSION = "1.0.38", X.BROWSER = B([d, v, l]), X.CPU = B([y]), X.DEVICE = B([f, p, h, m, g, _, b, w, k]), X.ENGINE = X.OS = B([d, v]), typeof t !== s ? (e.exports && (t = e.exports = X), t.UAParser = X) : r.amdO ? (n = function() {
           return X
         }.call(t, r, t, e)) === o || (e.exports = n) : typeof i !== s && (i.UAParser = X);
         var Z = typeof i !== s && (i.jQuery || i.Zepto);
@@ -1714,10 +1714,10 @@ _global.SENTRY_RELEASE = {
               y = void 0 === a || "string" == typeof a ? a : this.identify(a),
               m = !!e[Symbol.for("apollo.dataMasking")];
             if (!1 !== globalThis.__DEV__) {
-              var b = o || (0, c.E4)(r).name.value;
-              y || !1 !== globalThis.__DEV__ && i.V1.warn(1, b)
+              var g = o || (0, c.E4)(r).name.value;
+              y || !1 !== globalThis.__DEV__ && i.V1.warn(1, g)
             }
-            var g, _ = (0, n.__assign)((0, n.__assign)({}, d), {
+            var b, _ = (0, n.__assign)((0, n.__assign)({}, d), {
               returnPartialData: !0,
               id: y,
               query: h,
@@ -1728,8 +1728,8 @@ _global.SENTRY_RELEASE = {
                 immediate: !0,
                 callback: function(i) {
                   var a = m ? (0, v.z)(i.result, r, t, o) : i.result;
-                  if (!g || !(0, p.a)(h, {
-                      data: null == g ? void 0 : g.result
+                  if (!b || !(0, p.a)(h, {
+                      data: null == b ? void 0 : b.result
                     }, {
                       data: a
                     })) {
@@ -1739,7 +1739,7 @@ _global.SENTRY_RELEASE = {
                     };
                     i.missing && (s.missing = (0, f.IM)(i.missing.map((function(e) {
                       return e.missing
-                    })))), g = (0, n.__assign)((0, n.__assign)({}, i), {
+                    })))), b = (0, n.__assign)((0, n.__assign)({}, i), {
                       result: a
                     }), e.next(s)
                   }
@@ -1805,8 +1805,8 @@ _global.SENTRY_RELEASE = {
           }
           return (0, n.__extends)(t, e), t
         }(Error),
-        b = r(27236),
-        g = r(31459),
+        g = r(27236),
+        b = r(31459),
         _ = r(49820),
         w = r(36284),
         k = r(76509),
@@ -1973,8 +1973,8 @@ _global.SENTRY_RELEASE = {
                         };
                         if ((0, k.A_)(p)) v(p);
                         else if (Array.isArray(p))
-                          for (var y = !1, m = void 0, b = 0, g = p; b < g.length; b++) {
-                            var _ = g[b];
+                          for (var y = !1, m = void 0, g = 0, b = p; g < b.length; g++) {
+                            var _ = b[g];
                             if ((0, k.A_)(_)) {
                               if (y = !0, v(_)) break
                             } else "object" == typeof _ && _ && r.policies.identify(_)[0] && (m = _);
@@ -2332,18 +2332,18 @@ _global.SENTRY_RELEASE = {
                     variables: a.variables,
                     from: n
                   }, a),
-                  b = (0, k.ue)(e);
-                void 0 === m ? g.XY.added(e) || (u = p.merge(u, ((r = {})[b] = "Can't find field '".concat(e.name.value, "' on ").concat((0, k.A_)(n) ? n.__ref + " object" : "object " + JSON.stringify(n, null, 2)), r))) : (0, A.c)(m) ? m.length > 0 && (m = v(t.executeSubSelectedArray({
+                  g = (0, k.ue)(e);
+                void 0 === m ? b.XY.added(e) || (u = p.merge(u, ((r = {})[g] = "Can't find field '".concat(e.name.value, "' on ").concat((0, k.A_)(n) ? n.__ref + " object" : "object " + JSON.stringify(n, null, 2)), r))) : (0, A.c)(m) ? m.length > 0 && (m = v(t.executeSubSelectedArray({
                   field: e,
                   array: m,
                   enclosingRef: o,
                   context: a
-                }), b)) : e.selectionSet ? null != m && (m = v(t.executeSelectionSet({
+                }), g)) : e.selectionSet ? null != m && (m = v(t.executeSelectionSet({
                   selectionSet: e.selectionSet,
                   objectOrReference: m,
                   enclosingRef: (0, k.A_)(m) ? m : o,
                   context: a
-                }), b)) : a.canonizeResults && (m = t.canon.pass(m)), void 0 !== m && h.push(((f = {})[b] = m, f))
+                }), g)) : a.canonizeResults && (m = t.canon.pass(m)), void 0 !== m && h.push(((f = {})[g] = m, f))
               } else {
                 var _ = (0, s.HQ)(e, a.lookupFragment);
                 if (!_ && e.kind === E.Kind.FRAGMENT_SPREAD) throw (0, i.vA)(10, e.name.value);
@@ -2354,8 +2354,8 @@ _global.SENTRY_RELEASE = {
               result: (0, f.IM)(h),
               missing: u
             },
-            b = a.canonizeResults ? this.canon.admit(m) : (0, x.G)(m);
-          return b.result && this.knownResults.set(b.result, r), b
+            g = a.canonizeResults ? this.canon.admit(m) : (0, x.G)(m);
+          return g.result && this.knownResults.set(g.result, r), g
         }, e.prototype.execSubSelectedArrayImpl = function(e) {
           var t, r = this,
             n = e.field,
@@ -2515,10 +2515,10 @@ _global.SENTRY_RELEASE = {
         me = function(e, t) {
           return t.fieldName
         },
-        be = function(e, t, r) {
+        ge = function(e, t, r) {
           return (0, r.mergeObjects)(e, t)
         },
-        ge = function(e, t) {
+        be = function(e, t) {
           return t
         },
         _e = function() {
@@ -2572,7 +2572,7 @@ _global.SENTRY_RELEASE = {
               o = t.fields;
 
             function a(e, t) {
-              e.merge = "function" == typeof t ? t : !0 === t ? be : !1 === t ? ge : e.merge
+              e.merge = "function" == typeof t ? t : !0 === t ? ge : !1 === t ? be : e.merge
             }
             a(n, t.merge), n.keyFn = !1 === i ? ye : (0, A.c)(i) ? se(i) : "function" == typeof i ? i : n.keyFn, o && Object.keys(o).forEach((function(t) {
               var n = r.getFieldPolicy(e, t, !0),
@@ -2703,7 +2703,7 @@ _global.SENTRY_RELEASE = {
             var o = r.field,
               a = r.typename,
               s = r.merge;
-            return s === be ? Ee(n.store)(e, t) : s === ge ? t : (n.overwrite && (e = void 0), s(e, t, we(this, void 0, {
+            return s === ge ? Ee(n.store)(e, t) : s === be ? t : (n.overwrite && (e = void 0), s(e, t, we(this, void 0, {
               typename: a,
               fieldName: o.name.value,
               field: o,
@@ -2897,13 +2897,13 @@ _global.SENTRY_RELEASE = {
                   y = t.processFieldValue(s, r, r.selectionSet ? Oe(e, !1, !1) : e, v),
                   m = void 0;
                 r.selectionSet && ((0, k.A_)(y) || N(y)) && (m = d("__typename", y));
-                var b = c.getMergeFunction(f, r.name.value, m);
-                b ? v.info = {
+                var g = c.getMergeFunction(f, r.name.value, m);
+                g ? v.info = {
                   field: r,
                   typename: f,
-                  merge: b
+                  merge: g
                 } : Ae(u, p), l = e.merge(l, ((n = {})[p] = y, n))
-              } else !1 === globalThis.__DEV__ || e.clientOnly || e.deferred || g.XY.added(r) || c.getReadFunction(f, r.name.value) || !1 !== globalThis.__DEV__ && i.V1.error(13, (0, k.ue)(r), o)
+              } else !1 === globalThis.__DEV__ || e.clientOnly || e.deferred || b.XY.added(r) || c.getReadFunction(f, r.name.value) || !1 !== globalThis.__DEV__ && i.V1.error(13, (0, k.ue)(r), o)
             }));
             try {
               var p = c.identify(o, {
@@ -2921,9 +2921,9 @@ _global.SENTRY_RELEASE = {
             }
             if ("string" == typeof r) {
               var m = (0, k.WU)(r),
-                b = s.written[r] || (s.written[r] = []);
-              if (b.indexOf(a) >= 0) return m;
-              if (b.push(a), this.reader && this.reader.isFresh(o, m, a, s)) return m;
+                g = s.written[r] || (s.written[r] = []);
+              if (g.indexOf(a) >= 0) return m;
+              if (g.push(a), this.reader && this.reader.isFresh(o, m, a, s)) return m;
               var _ = s.incomingById.get(r);
               return _ ? (_.storeObject = s.merge(_.storeObject, l), _.mergeTree = De(_.mergeTree, u), h.forEach((function(e) {
                 return _.fieldNodeSet.add(e)
@@ -3040,7 +3040,7 @@ _global.SENTRY_RELEASE = {
           function t(t) {
             void 0 === t && (t = {});
             var r = e.call(this) || this;
-            return r.watches = new Set, r.addTypenameTransform = new b.c(g.XY), r.assumeImmutableResults = !0, r.makeVar = ie.UT, r.txCount = 0, r.config = function(e) {
+            return r.watches = new Set, r.addTypenameTransform = new g.c(b.XY), r.assumeImmutableResults = !0, r.makeVar = ie.UT, r.txCount = 0, r.config = function(e) {
               return (0, S.o)(j, e)
             }(t), r.addTypename = !!r.config.addTypename, r.policies = new _e({
               cache: r,
@@ -3323,7 +3323,7 @@ _global.SENTRY_RELEASE = {
         y = r(27236),
         m = r(97860);
 
-      function b(e, t, r) {
+      function g(e, t, r) {
         return new m.c((function(n) {
           var i = {
             then: function(e) {
@@ -3362,16 +3362,16 @@ _global.SENTRY_RELEASE = {
           }
         }))
       }
-      var g = r(82345);
+      var b = r(82345);
 
       function _(e) {
         var t = w(e);
-        return (0, g.E)(t)
+        return (0, b.E)(t)
       }
 
       function w(e) {
-        var t = (0, g.E)(e.errors) ? e.errors.slice(0) : [];
-        return (0, f.ST)(e) && (0, g.E)(e.incremental) && e.incremental.forEach((function(e) {
+        var t = (0, b.E)(e.errors) ? e.errors.slice(0) : [];
+        return (0, f.ST)(e) && (0, b.E)(e.incremental) && e.incremental.forEach((function(e) {
           e.errors && t.push.apply(t, e.errors)
         })), t
       }
@@ -3940,8 +3940,8 @@ _global.SENTRY_RELEASE = {
         }, e.prototype.markResult = function(e, t, r, n) {
           var i = this,
             o = new U.ZI,
-            a = (0, g.E)(e.errors) ? e.errors.slice(0) : [];
-          if (this.reset(), "incremental" in e && (0, g.E)(e.incremental)) {
+            a = (0, b.E)(e.errors) ? e.errors.slice(0) : [];
+          if (this.reset(), "incremental" in e && (0, b.E)(e.incremental)) {
             var s = (0, f.bd)(this.getDiff().result, e);
             e.data = s
           } else if ("hasNext" in e && e.hasNext) {
@@ -4021,7 +4021,7 @@ _global.SENTRY_RELEASE = {
                 v = void 0 === p ? [] : p,
                 y = e.awaitRefetchQueries,
                 m = void 0 !== y && y,
-                g = e.update,
+                b = e.update,
                 k = e.onQueryUpdated,
                 E = e.fetchPolicy,
                 O = void 0 === E ? (null === (u = this.defaultOptions.mutate) || void 0 === u ? void 0 : u.fetchPolicy) || "network-only" : E,
@@ -4049,10 +4049,10 @@ _global.SENTRY_RELEASE = {
                       errorPolicy: T,
                       context: D,
                       updateQueries: h,
-                      update: g,
+                      update: b,
                       keepRootFields: x
                     }), this.broadcastQueries(), s = this, [2, new Promise((function(e, r) {
-                      return b(s.getObservableFromLink(l, (0, n.__assign)((0, n.__assign)({}, D), {
+                      return g(s.getObservableFromLink(l, (0, n.__assign)((0, n.__assign)({}, D), {
                         optimisticResponse: a ? d : void 0
                       }), f, {}, !1), (function(e) {
                         if (_(e) && "none" === T) throw new M.K4({
@@ -4068,7 +4068,7 @@ _global.SENTRY_RELEASE = {
                           fetchPolicy: O,
                           errorPolicy: T,
                           context: D,
-                          update: g,
+                          update: b,
                           updateQueries: h,
                           awaitRefetchQueries: m,
                           refetchQueries: v,
@@ -4109,7 +4109,7 @@ _global.SENTRY_RELEASE = {
                   dataId: "ROOT_MUTATION",
                   query: e.document,
                   variables: e.variables
-                }), (0, f.ST)(i) && (0, g.E)(i.incremental)) {
+                }), (0, f.ST)(i) && (0, b.E)(i.incremental)) {
                 var s = t.diff({
                     id: "ROOT_MUTATION",
                     query: this.getDocumentInfo(e.document).asQuery,
@@ -4446,20 +4446,20 @@ _global.SENTRY_RELEASE = {
                   extensions: i
                 };
               if (t = y.context, o) {
-                var g = (0, J.y)(f),
+                var b = (0, J.y)(f),
                   _ = (0, v.M)(r),
-                  w = h.lookup(g, _);
+                  w = h.lookup(b, _);
                 if (!(u = w.observable)) {
                   var E = new A([a(p, y)]);
                   u = w.observable = E, E.beforeNext((function() {
-                    h.remove(g, _)
+                    h.remove(b, _)
                   }))
                 }
               } else u = new A([a(p, y)])
             } else u = new A([m.c.of({
               data: {}
             })]), t = this.prepareContext(t);
-            return d && (u = b(u, (function(e) {
+            return d && (u = g(u, (function(e) {
               return c.localState.runResolvers({
                 document: d,
                 remoteResult: e,
@@ -4470,7 +4470,7 @@ _global.SENTRY_RELEASE = {
           }, e.prototype.getResultsFromLink = function(e, t, r) {
             var n = e.lastRequestId = this.generateRequestId(),
               i = this.cache.transformForLink(r.query);
-            return b(this.getObservableFromLink(i, r.context, r.variables), (function(o) {
+            return g(this.getObservableFromLink(i, r.context, r.variables), (function(o) {
               var a = w(o),
                 s = a.length > 0,
                 u = r.errorPolicy;
@@ -4506,8 +4506,8 @@ _global.SENTRY_RELEASE = {
               v = void 0 !== p && p,
               y = t.notifyOnNetworkStatusChange,
               m = void 0 !== y && y,
-              b = t.context,
-              g = void 0 === b ? {} : b,
+              g = t.context,
+              b = void 0 === g ? {} : g,
               _ = Object.assign({}, t, {
                 query: n,
                 variables: s,
@@ -4515,7 +4515,7 @@ _global.SENTRY_RELEASE = {
                 errorPolicy: h,
                 returnPartialData: v,
                 notifyOnNetworkStatusChange: m,
-                context: g
+                context: b
               }),
               w = function(e) {
                 _.variables = e;
@@ -4661,9 +4661,9 @@ _global.SENTRY_RELEASE = {
                   return u(e.data || void 0)
                 })) : "none" === c && r === P.pT.refetch && Array.isArray(t.missing) ? u(void 0) : u(s)
               },
-              b = "no-cache" === s ? 0 : r === P.pT.refetch && "merge" !== u ? 1 : 2,
-              g = function() {
-                return i.getResultsFromLink(e, b, {
+              g = "no-cache" === s ? 0 : r === P.pT.refetch && "merge" !== u ? 1 : 2,
+              b = function() {
+                return i.getResultsFromLink(e, g, {
                   query: o,
                   variables: a,
                   context: d,
@@ -4680,19 +4680,19 @@ _global.SENTRY_RELEASE = {
                   sources: [y(w, e.markReady())]
                 } : f || _ ? {
                   fromLink: !0,
-                  sources: [y(w), g()]
+                  sources: [y(w), b()]
                 } : {
                   fromLink: !0,
-                  sources: [g()]
+                  sources: [b()]
                 };
               case "cache-and-network":
                 var w;
                 return (w = v()).complete || f || _ ? {
                   fromLink: !0,
-                  sources: [y(w), g()]
+                  sources: [y(w), b()]
                 } : {
                   fromLink: !0,
-                  sources: [g()]
+                  sources: [b()]
                 };
               case "cache-only":
                 return {
@@ -4701,18 +4701,18 @@ _global.SENTRY_RELEASE = {
               case "network-only":
                 return _ ? {
                   fromLink: !0,
-                  sources: [y(v()), g()]
+                  sources: [y(v()), b()]
                 } : {
                   fromLink: !0,
-                  sources: [g()]
+                  sources: [b()]
                 };
               case "no-cache":
                 return _ ? {
                   fromLink: !0,
-                  sources: [y(e.getDiff()), g()]
+                  sources: [y(e.getDiff()), b()]
                 } : {
                   fromLink: !0,
-                  sources: [g()]
+                  sources: [b()]
                 };
               case "standby":
                 return {
@@ -4811,7 +4811,7 @@ _global.SENTRY_RELEASE = {
               var s, u, c, l, f, d, h, v, y, m;
               return void 0 === r && (r = {}), void 0 === i && (i = {}), void 0 === o && (o = function() {
                 return !0
-              }), void 0 === a && (a = !1), (0, n.__generator)(this, (function(b) {
+              }), void 0 === a && (a = !1), (0, n.__generator)(this, (function(g) {
                 return s = (0, k.Vn)(e), u = (0, k.zK)(e), c = (0, p.JG)(u), l = this.collectSelectionsToResolve(s, c), f = s.operation, d = f ? f.charAt(0).toUpperCase() + f.slice(1) : "Query", v = (h = this).cache, y = h.client, m = {
                   fragmentMap: c,
                   context: (0, n.__assign)((0, n.__assign)({}, r), {
@@ -4927,8 +4927,8 @@ _global.SENTRY_RELEASE = {
               v = e.ssrForceFetchDelay,
               y = void 0 === v ? 0 : v,
               m = e.connectToDevTools,
-              b = e.queryDeduplication,
-              g = void 0 === b || b,
+              g = e.queryDeduplication,
+              b = void 0 === g || g,
               _ = e.defaultOptions,
               w = e.defaultContext,
               k = e.assumeImmutableResults,
@@ -4945,7 +4945,7 @@ _global.SENTRY_RELEASE = {
               uri: a,
               credentials: u,
               headers: l
-            }) : o.C.empty()), this.link = M, this.cache = f, this.disableNetworkFetches = p || y > 0, this.queryDeduplication = g, this.defaultOptions = _ || Object.create(null), this.typeDefs = S, this.devtoolsConfig = (0, n.__assign)((0, n.__assign)({}, R), {
+            }) : o.C.empty()), this.link = M, this.cache = f, this.disableNetworkFetches = p || y > 0, this.queryDeduplication = b, this.defaultOptions = _ || Object.create(null), this.typeDefs = S, this.devtoolsConfig = (0, n.__assign)((0, n.__assign)({}, R), {
               enabled: null !== (t = null == R ? void 0 : R.enabled) && void 0 !== t ? t : m
             }), void 0 === this.devtoolsConfig.enabled && (this.devtoolsConfig.enabled = !1 !== globalThis.__DEV__), y && setTimeout((function() {
               return r.disableNetworkFetches = !1
@@ -4960,7 +4960,7 @@ _global.SENTRY_RELEASE = {
               defaultOptions: this.defaultOptions,
               defaultContext: w,
               documentTransform: d,
-              queryDeduplication: g,
+              queryDeduplication: b,
               ssrMode: p,
               dataMasking: !!A,
               clientAwareness: {
@@ -5163,14 +5163,14 @@ _global.SENTRY_RELEASE = {
             if (v && y) {
               var m = d.length;
               if (h.length !== m) return !1;
-              for (var b = 0; b < m; ++b)
-                if (!l(p, d[b], h[b], n)) return !1;
+              for (var g = 0; g < m; ++g)
+                if (!l(p, d[g], h[g], n)) return !1;
               return !0
             }
             return l(p, d, h, n)
           }
-          var g = (0, a.HQ)(e, n.fragmentMap);
-          return g ? !!f(g) || l(g.selectionSet, t, r, n) : void 0
+          var b = (0, a.HQ)(e, n.fragmentMap);
+          return b ? !!f(b) || l(b.selectionSet, t, r, n) : void 0
         }))
       }
 
@@ -5531,8 +5531,8 @@ _global.SENTRY_RELEASE = {
           throw r.name = "ServerParseError", r.response = e, r.statusCode = e.status, r.bodyText = t, r
         }
       }
-      var b = r(36284),
-        g = {
+      var g = r(36284),
+        b = {
           http: {
             includeQuery: !0,
             includeExtensions: !1,
@@ -5585,7 +5585,7 @@ _global.SENTRY_RELEASE = {
             operationName: s,
             variables: c
           };
-        return a.includeExtensions && (f.extensions = u), a.includeQuery && (f.query = t(l, b.y)), {
+        return a.includeExtensions && (f.extensions = u), a.includeQuery && (f.query = t(l, g.y)), {
           options: o,
           body: f
         }
@@ -5608,7 +5608,7 @@ _global.SENTRY_RELEASE = {
             r = void 0 === t ? "/graphql" : t,
             c = e.fetch,
             l = e.print,
-            b = void 0 === l ? _ : l,
+            g = void 0 === l ? _ : l,
             x = e.includeExtensions,
             D = e.preserveHeaderCase,
             R = e.useGETForQueries,
@@ -5651,7 +5651,7 @@ _global.SENTRY_RELEASE = {
               if (!j) return k(new Error("HttpLink: Trying to send a client-only query to the server. To send to the server, ensure a non-client field is added to the query or set the `transformOptions.removeClientFields` option to `true`."));
               e.query = j
             }
-            var I, q, F, V, N, Q = w(e, b, g, C, P),
+            var I, q, F, V, N, Q = w(e, g, b, C, P),
               L = Q.options,
               z = Q.body;
             z.variables && !M && (z.variables = (I = z.variables, q = e.query, F = (0, n.__assign)({}, I), V = new Set(Object.keys(I)), (0, E.visit)(q, {
@@ -5728,7 +5728,7 @@ _global.SENTRY_RELEASE = {
                   var i, o = null === (r = t.headers) || void 0 === r ? void 0 : r.get("content-type");
                   return null !== o && /^multipart\/mixed/i.test(o) ? function(e, t) {
                     return (0, n.__awaiter)(this, void 0, void 0, (function() {
-                      var r, i, o, a, s, u, c, l, d, v, b, g, _, w, k, E, O, S, T, x, D, R, A, M;
+                      var r, i, o, a, s, u, c, l, d, v, g, b, _, w, k, E, O, S, T, x, D, R, A, M;
                       return (0, n.__generator)(this, (function(P) {
                         switch (P.label) {
                           case 0:
@@ -5737,7 +5737,7 @@ _global.SENTRY_RELEASE = {
                           case 1:
                             return l ? [4, c.next()] : [3, 3];
                           case 2:
-                            for (d = P.sent(), v = d.value, b = d.done, g = "string" == typeof v ? v : r.decode(v), _ = u.length - s.length + 1, l = !b, w = (u += g).indexOf(s, _); w > -1;) {
+                            for (d = P.sent(), v = d.value, g = d.done, b = "string" == typeof v ? v : r.decode(v), _ = u.length - s.length + 1, l = !g, w = (u += b).indexOf(s, _); w > -1;) {
                               if (k = void 0, R = [u.slice(0, w), u.slice(w + s.length)], u = R[1], E = (k = R[0]).indexOf("\r\n\r\n"), O = y(k.slice(0, E)), (S = O["content-type"]) && -1 === S.toLowerCase().indexOf("application/json")) throw new Error("Unsupported patch content type: application/json is required.");
                               if (T = k.slice(E))
                                 if (x = m(e, T), Object.keys(x).length > 1 || "data" in x || "incremental" in x || "errors" in x || "payload" in x)
@@ -5831,8 +5831,8 @@ _global.SENTRY_RELEASE = {
             m = void 0 === y ? function(e) {
               return Promise.resolve(v((0, o.y)(e)))
             } : y,
-            b = p.disable,
-            g = p.retry,
+            g = p.disable,
+            b = p.retry,
             _ = p.useGETForHashedQueries,
             w = !0,
             k = function(e) {
@@ -5863,7 +5863,7 @@ _global.SENTRY_RELEASE = {
                       graphQLErrors: (0, s.E)(l) ? l : void 0,
                       meta: d(l)
                     };
-                    if ((w = !b(m)) || r(), g(m)) return u && u.unsubscribe(), e.setContext({
+                    if ((w = !g(m)) || r(), b(m)) return u && u.unsubscribe(), e.setContext({
                       http: {
                         includeQuery: !0,
                         includeExtensions: w
@@ -5970,10 +5970,10 @@ _global.SENTRY_RELEASE = {
           for (var p = 0, v = Array.from(e.entries()); p < v.length; p++) {
             var y = v[p],
               m = y[0],
-              b = y[1];
-            if (null !== b) {
-              var g = l(b, t, r, i, !1 !== globalThis.__DEV__ ? "".concat(s || "", "[").concat(m, "]") : void 0);
-              d.has(g) && d.add(h), h[m] = g
+              g = y[1];
+            if (null !== g) {
+              var b = l(g, t, r, i, !1 !== globalThis.__DEV__ ? "".concat(s || "", "[").concat(m, "]") : void 0);
+              d.has(b) && d.add(h), h[m] = b
             } else h[m] = null
           }
           return d.has(h) ? h : e
@@ -5985,7 +5985,7 @@ _global.SENTRY_RELEASE = {
             var O = (0, o.ue)(k),
               S = k.selectionSet;
             if (void 0 === (E = h[O] || e[O])) continue;
-            S && null !== E && (g = l(e[O], S, r, i, !1 !== globalThis.__DEV__ ? "".concat(s || "", ".").concat(O) : void 0), d.has(g) && (E = g)), !1 === globalThis.__DEV__ && (h[O] = E), !1 !== globalThis.__DEV__ && (i && "__typename" !== O && !(null === (c = Object.getOwnPropertyDescriptor(h, O)) || void 0 === c ? void 0 : c.value) ? Object.defineProperty(h, O, f(O, E, s || "", r.operationName, r.operationType)) : (delete h[O], h[O] = E))
+            S && null !== E && (b = l(e[O], S, r, i, !1 !== globalThis.__DEV__ ? "".concat(s || "", ".").concat(O) : void 0), d.has(b) && (E = b)), !1 === globalThis.__DEV__ && (h[O] = E), !1 !== globalThis.__DEV__ && (i && "__typename" !== O && !(null === (c = Object.getOwnPropertyDescriptor(h, O)) || void 0 === c ? void 0 : c.value) ? Object.defineProperty(h, O, f(O, E, s || "", r.operationName, r.operationType)) : (delete h[O], h[O] = E))
           }
           if (k.kind !== n.Kind.INLINE_FRAGMENT || k.typeCondition && !r.cache.fragmentMatches(k, e.__typename) || (E = l(e, k.selectionSet, r, i, s)), k.kind === n.Kind.FRAGMENT_SPREAD) {
             var T = k.name.value,
@@ -6165,11 +6165,11 @@ _global.SENTRY_RELEASE = {
           v = (0, a.SX)(h, p),
           y = v.obsQueryFields,
           m = v.result,
-          b = v.client,
-          g = v.resultData,
+          g = v.client,
+          b = v.resultData,
           _ = v.observable,
           w = v.onQueryExecuted,
-          k = _.options.initialFetchPolicy || (0, a.kk)(p.defaultOptions, b.defaultOptions),
+          k = _.options.initialFetchPolicy || (0, a.kk)(p.defaultOptions, g.defaultOptions),
           E = i.useReducer((function(e) {
             return e + 1
           }), 0)[1],
@@ -6215,13 +6215,13 @@ _global.SENTRY_RELEASE = {
                     }
                   })
                 }))
-              }(g, _, b, h, (0, n.__assign)((0, n.__assign)({}, t), {
+              }(b, _, g, h, (0, n.__assign)((0, n.__assign)({}, t), {
                 skip: !1
               }), w).then((function(e) {
                 return Object.assign(e, O)
               }));
             return r.catch((function() {})), r
-          }), [b, h, O, k, _, g, w]),
+          }), [g, h, O, k, _, b, w]),
           D = i.useRef(x);
         (0, s.E)((function() {
           D.current = x
@@ -6378,9 +6378,9 @@ _global.SENTRY_RELEASE = {
         v = r(82345),
         y = r(59110),
         m = Symbol.for("apollo.hook.wrappers"),
-        b = Object.prototype.hasOwnProperty;
+        g = Object.prototype.hasOwnProperty;
 
-      function g() {}
+      function b() {}
       var _ = Symbol();
 
       function w(e, t) {
@@ -6482,7 +6482,7 @@ _global.SENTRY_RELEASE = {
                 i && i.loading === o.loading && i.networkStatus === o.networkStatus && (0, s.L)(i.data, o.data) || T(o, e, t, r, c, n, h.current)
               },
               o = function(u) {
-                if (a.current.unsubscribe(), a.current = t.resubscribeAfterError(i, o), !b.call(u, "graphQLErrors")) throw u;
+                if (a.current.unsubscribe(), a.current = t.resubscribeAfterError(i, o), !g.call(u, "graphQLErrors")) throw u;
                 var l = e.current;
                 (!l || l && l.loading || !(0, s.L)(u, l.error)) && T({
                   data: l && l.data,
@@ -6505,8 +6505,8 @@ _global.SENTRY_RELEASE = {
             return y || x(e, t, h.current, c, r)
           }))
         }(E, k, r, t, P, l, v, u, {
-          onCompleted: t.onCompleted || g,
-          onError: t.onError || g
+          onCompleted: t.onCompleted || b,
+          onError: t.onError || b
         });
         return {
           result: j,
@@ -6716,12 +6716,12 @@ _global.SENTRY_RELEASE = {
         (0, o.V1)(1 === y.length, 73, e, y.length);
         var m = y[0];
         t = m.variableDefinitions || [];
-        var b = {
+        var g = {
           name: m.name && "Name" === m.name.kind ? m.name.value : "data",
           type: r,
           variables: t
         };
-        return i.set(e, b), b
+        return i.set(e, g), g
       }
 
       function f(e, t) {
@@ -7176,9 +7176,9 @@ _global.SENTRY_RELEASE = {
       "use strict";
       r.d(t, {
         Sf: () => v,
-        V1: () => b,
+        V1: () => g,
         no: () => p,
-        vA: () => g
+        vA: () => b
       });
       var n = r(91299),
         i = "Invariant Violation",
@@ -7236,7 +7236,7 @@ _global.SENTRY_RELEASE = {
           e.apply(void 0, [t].concat(r))
         }
       }
-      var b = Object.assign((function(e, t) {
+      var g = Object.assign((function(e, t) {
         for (var r = [], n = 2; n < arguments.length; n++) r[n - 2] = arguments[n];
         e || u(e, k(t, r) || E(t, r))
       }), {
@@ -7246,7 +7246,7 @@ _global.SENTRY_RELEASE = {
         error: m(u.error)
       });
 
-      function g(e) {
+      function b(e) {
         for (var t = [], r = 1; r < arguments.length; r++) t[r - 1] = arguments[r];
         return new s(k(e, t) || E(e, t))
       }
@@ -7586,8 +7586,8 @@ _global.SENTRY_RELEASE = {
         Kc: () => c,
         MB: () => v,
         WU: () => s,
-        dt: () => b,
-        kd: () => g,
+        dt: () => g,
+        kd: () => b,
         o5: () => p,
         ue: () => y
       });
@@ -7713,7 +7713,7 @@ _global.SENTRY_RELEASE = {
 
       function m(e, t, r) {
         for (var n, i = 0, a = t.selections; i < a.length; i++)
-          if (b(c = a[i])) {
+          if (g(c = a[i])) {
             if ("__typename" === c.name.value) return e[y(c)]
           } else n ? n.push(c) : n = [c];
         if ("string" == typeof e.__typename) return e.__typename;
@@ -7725,11 +7725,11 @@ _global.SENTRY_RELEASE = {
           }
       }
 
-      function b(e) {
+      function g(e) {
         return "Field" === e.kind
       }
 
-      function g(e) {
+      function b(e) {
         return "InlineFragment" === e.kind
       }
     },
@@ -7739,7 +7739,7 @@ _global.SENTRY_RELEASE = {
         XY: () => v,
         er: () => m,
         iz: () => p,
-        x3: () => b,
+        x3: () => g,
         zc: () => y
       });
       var n = r(91299),
@@ -7796,16 +7796,16 @@ _global.SENTRY_RELEASE = {
               n(e) && (t = r)
             })), t
           }),
-          b = function(e) {
+          g = function(e) {
             return (0, c.E)(e) && e.map(m).some((function(e) {
               return e && e.remove
             }))
           },
-          g = new Map,
+          b = new Map,
           _ = !1,
           w = {
             enter: function(e) {
-              if (b(e.directives)) return _ = !0, null
+              if (g(e.directives)) return _ = !0, null
             }
           },
           k = (0, o.visit)(t, {
@@ -7824,17 +7824,17 @@ _global.SENTRY_RELEASE = {
             },
             FragmentSpread: {
               enter: function(e, t, r, n, i) {
-                if (b(e.directives)) return _ = !0, null;
+                if (g(e.directives)) return _ = !0, null;
                 var o = u(i);
                 o && o.fragmentSpreads.add(e.name.value)
               }
             },
             FragmentDefinition: {
               enter: function(e, t, r, n) {
-                g.set(JSON.stringify(n), e)
+                b.set(JSON.stringify(n), e)
               },
               leave: function(e, t, r, n) {
-                return e === g.get(JSON.stringify(n)) ? e : l > 0 && e.selectionSet.selections.every((function(e) {
+                return e === b.get(JSON.stringify(n)) ? e : l > 0 && e.selectionSet.selections.every((function(e) {
                   return e.kind === o.Kind.FIELD && "__typename" === e.name.value
                 })) ? (s(e.name.value).removed = !0, _ = !0, null) : void 0
               }
@@ -7933,7 +7933,7 @@ _global.SENTRY_RELEASE = {
         }], e)
       }
 
-      function b(e) {
+      function g(e) {
         return (0, a.sw)(e), (0, o.visit)(e, {
           FragmentSpread: function(e) {
             var t;
@@ -8444,8 +8444,8 @@ _global.SENTRY_RELEASE = {
         } = e;
         "function" == typeof t && (e.unsubscribe = void 0, t())
       }
-      const b = [],
-        g = 100;
+      const g = [],
+        b = 100;
 
       function _(e, t) {
         if (!e) throw new Error(t || "assertion failure")
@@ -8504,10 +8504,10 @@ _global.SENTRY_RELEASE = {
           this.dispose()
         }
         dependOn(e) {
-          e.add(this), this.deps || (this.deps = b.pop() || new Set), this.deps.add(e)
+          e.add(this), this.deps || (this.deps = g.pop() || new Set), this.deps.add(e)
         }
         forgetDeps() {
-          this.deps && (y(this.deps).forEach((e => e.delete(this))), this.deps.clear(), b.push(this.deps), this.deps = null)
+          this.deps && (y(this.deps).forEach((e => e.delete(this))), this.deps.clear(), g.push(this.deps), this.deps = null)
         }
       }
 
@@ -8558,7 +8558,7 @@ _global.SENTRY_RELEASE = {
         const r = !x(e);
         if (e.dirtyChildren) {
           if (e.dirtyChildren.has(t)) return
-        } else e.dirtyChildren = b.pop() || new Set;
+        } else e.dirtyChildren = g.pop() || new Set;
         e.dirtyChildren.add(t), r && D(e)
       }
 
@@ -8570,7 +8570,7 @@ _global.SENTRY_RELEASE = {
 
       function C(e, t) {
         const r = e.dirtyChildren;
-        r && (r.delete(t), 0 === r.size && (b.length < g && b.push(r), e.dirtyChildren = null))
+        r && (r.delete(t), 0 === r.size && (g.length < b && g.push(r), e.dirtyChildren = null))
       }
 
       function j(e) {
@@ -8755,11 +8755,11 @@ _global.SENTRY_RELEASE = {
         }
       }
 
-      function b(e) {
+      function g(e) {
         e._observer = void 0, e._queue = void 0, e._state = "closed"
       }
 
-      function g(e, t, r) {
+      function b(e, t, r) {
         e._state = "running";
         var n = e._observer;
         try {
@@ -8769,11 +8769,11 @@ _global.SENTRY_RELEASE = {
               i && i.call(n, r);
               break;
             case "error":
-              if (b(e), !i) throw r;
+              if (g(e), !i) throw r;
               i.call(n, r);
               break;
             case "complete":
-              b(e), i && i.call(n)
+              g(e), i && i.call(n)
           }
         } catch (e) {
           v(e)
@@ -8791,10 +8791,10 @@ _global.SENTRY_RELEASE = {
               var t = e._queue;
               if (t) {
                 e._queue = void 0, e._state = "ready";
-                for (var r = 0; r < t.length && (g(e, t[r].type, t[r].value), "closed" !== e._state); ++r);
+                for (var r = 0; r < t.length && (b(e, t[r].type, t[r].value), "closed" !== e._state); ++r);
               }
             }(e)
-          }))) : void g(e, t, r);
+          }))) : void b(e, t, r);
           e._queue.push({
             type: t,
             value: r
@@ -8813,7 +8813,7 @@ _global.SENTRY_RELEASE = {
             "initializing" === this._state && (this._state = "ready")
           }
           return e.prototype.unsubscribe = function() {
-            "closed" !== this._state && (b(this), m(this))
+            "closed" !== this._state && (g(this), m(this))
           }, o(e, [{
             key: "closed",
             get: function() {

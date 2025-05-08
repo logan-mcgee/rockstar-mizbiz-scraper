@@ -19,41 +19,41 @@ _global.SENTRY_RELEASE = {
     32469: (e, r, n) => {
       var t = n(62229),
         o = Symbol.for("react.element"),
-        a = Symbol.for("react.fragment"),
-        l = Object.prototype.hasOwnProperty,
-        s = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
-        d = {
+        l = Symbol.for("react.fragment"),
+        a = Object.prototype.hasOwnProperty,
+        d = t.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,
+        s = {
           key: !0,
           ref: !0,
           __self: !0,
           __source: !0
         };
 
-      function f(e, r, n) {
-        var t, a = {},
-          f = null,
-          i = null;
-        for (t in void 0 !== n && (f = "" + n), void 0 !== r.key && (f = "" + r.key), void 0 !== r.ref && (i = r.ref), r) l.call(r, t) && !d.hasOwnProperty(t) && (a[t] = r[t]);
+      function i(e, r, n) {
+        var t, l = {},
+          i = null,
+          f = null;
+        for (t in void 0 !== n && (i = "" + n), void 0 !== r.key && (i = "" + r.key), void 0 !== r.ref && (f = r.ref), r) a.call(r, t) && !s.hasOwnProperty(t) && (l[t] = r[t]);
         if (e && e.defaultProps)
-          for (t in r = e.defaultProps) void 0 === a[t] && (a[t] = r[t]);
+          for (t in r = e.defaultProps) void 0 === l[t] && (l[t] = r[t]);
         return {
           $$typeof: o,
           type: e,
-          key: f,
-          ref: i,
-          props: a,
-          _owner: s.current
+          key: i,
+          ref: f,
+          props: l,
+          _owner: d.current
         }
       }
-      r.Fragment = a, r.jsx = f, r.jsxs = f
+      r.Fragment = l, r.jsx = i, r.jsxs = i
     },
     73855: (e, r, n) => {
       e.exports = n(32469)
     },
     11735: (e, r, n) => {
       n.d(r, {
-        DX: () => l,
-        xV: () => d
+        DX: () => a,
+        xV: () => s
       });
       var t = n(62229);
 
@@ -62,32 +62,32 @@ _global.SENTRY_RELEASE = {
           "function" == typeof e ? e(r) : null != e && (e.current = r)
         }(e, r)))
       }
-      var a = n(73855),
-        l = t.forwardRef(((e, r) => {
+      var l = n(73855),
+        a = t.forwardRef(((e, r) => {
           const {
             children: n,
             ...o
-          } = e, l = t.Children.toArray(n), d = l.find(f);
-          if (d) {
-            const e = d.props.children,
-              n = l.map((r => r === d ? t.Children.count(e) > 1 ? t.Children.only(null) : t.isValidElement(e) ? e.props.children : null : r));
-            return (0, a.jsx)(s, {
+          } = e, a = t.Children.toArray(n), s = a.find(i);
+          if (s) {
+            const e = s.props.children,
+              n = a.map((r => r === s ? t.Children.count(e) > 1 ? t.Children.only(null) : t.isValidElement(e) ? e.props.children : null : r));
+            return (0, l.jsx)(d, {
               ...o,
               ref: r,
               children: t.isValidElement(e) ? t.cloneElement(e, void 0, n) : null
             })
           }
-          return (0, a.jsx)(s, {
+          return (0, l.jsx)(d, {
             ...o,
             ref: r,
             children: n
           })
         }));
-      l.displayName = "Slot";
-      var s = t.forwardRef(((e, r) => {
+      a.displayName = "Slot";
+      var d = t.forwardRef(((e, r) => {
         const {
           children: n,
-          ...a
+          ...l
         } = e;
         if (t.isValidElement(n)) {
           const e = function(e) {
@@ -96,36 +96,36 @@ _global.SENTRY_RELEASE = {
             return n ? e.ref : (r = Object.getOwnPropertyDescriptor(e, "ref")?.get, n = r && "isReactWarning" in r && r.isReactWarning, n ? e.props.ref : e.props.ref || e.ref)
           }(n);
           return t.cloneElement(n, {
-            ...i(a, n.props),
+            ...f(l, n.props),
             ref: r ? o(r, e) : e
           })
         }
         return t.Children.count(n) > 1 ? t.Children.only(null) : null
       }));
-      s.displayName = "SlotClone";
-      var d = ({
+      d.displayName = "SlotClone";
+      var s = ({
         children: e
-      }) => (0, a.jsx)(a.Fragment, {
+      }) => (0, l.jsx)(l.Fragment, {
         children: e
       });
 
-      function f(e) {
-        return t.isValidElement(e) && e.type === d
+      function i(e) {
+        return t.isValidElement(e) && e.type === s
       }
 
-      function i(e, r) {
+      function f(e, r) {
         const n = {
           ...r
         };
         for (const t in r) {
           const o = e[t],
-            a = r[t];
-          /^on[A-Z]/.test(t) ? o && a ? n[t] = (...e) => {
-            a(...e), o(...e)
+            l = r[t];
+          /^on[A-Z]/.test(t) ? o && l ? n[t] = (...e) => {
+            l(...e), o(...e)
           } : o && (n[t] = o) : "style" === t ? n[t] = {
             ...o,
-            ...a
-          } : "className" === t && (n[t] = [o, a].filter(Boolean).join(" "))
+            ...l
+          } : "className" === t && (n[t] = [o, l].filter(Boolean).join(" "))
         }
         return {
           ...e,
