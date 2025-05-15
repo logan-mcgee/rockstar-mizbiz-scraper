@@ -1,0 +1,24 @@
+.rockstargames-sites-legacyf28d8b23b6a74f9954e121d94441fa56 {
+  align-items: center;
+  display: flex;
+  height: calc(100vh - var(--header-height));
+  justify-content: center
+}
+
+.rockstargames-sites-legacyc5573c7aa0bd0a87733a56baa8e82d49 {
+  --modal-content-padding: 0
+}
+
+.rockstargames-sites-legacybdf41fef2e2c09dce092e29717248436 {
+  --game-header-height: 80px;
+  display: flex;
+  flex: 1;
+  flex-flow: column;
+  justify-content: center
+}
+
+.rockstargames-sites-legacybdf41fef2e2c09dce092e29717248436[data-brand=reddeadredemption] {
+  --btn-active-color: #c00
+}
+
+/*# sourceMappingURL=52e55b769351b6e3f1602fe5d2baacd1.css.map*/

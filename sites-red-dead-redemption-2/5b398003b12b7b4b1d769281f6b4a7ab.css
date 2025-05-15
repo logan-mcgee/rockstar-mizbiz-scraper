@@ -1,0 +1,2823 @@
+.rockstargames-sites-red-dead-redemption-2edb30438bec02a28ec1d06d071bcf836 {
+  align-items: center;
+  background: var(--white-15);
+  border: none;
+  border-radius: 100px;
+  color: var(--white-100);
+  cursor: pointer;
+  display: flex;
+  font-family: var(--font-family-body);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  justify-content: center;
+  line-height: var(--rem-125);
+  min-width: var(--rem-6);
+  padding: var(--padding-xs) var(--padding-sm);
+  text-align: center;
+  transition: background-color .3s ease-in-out
+}
+
+.rockstargames-sites-red-dead-redemption-2edb30438bec02a28ec1d06d071bcf836 img {
+  height: var(--nav-icon-size);
+  margin-left: var(--grid-gap-xs);
+  transition: filter .3s ease-in-out;
+  width: var(--nav-icon-size)
+}
+
+.rockstargames-sites-red-dead-redemption-2edb30438bec02a28ec1d06d071bcf836:focus,
+.rockstargames-sites-red-dead-redemption-2edb30438bec02a28ec1d06d071bcf836:hover {
+  background-color: var(--white-40);
+  outline: none
+}
+
+.rockstargames-sites-red-dead-redemption-2edb30438bec02a28ec1d06d071bcf836.rockstargames-sites-red-dead-redemption-2c1ac4227ecc3c60c4a623f13dd4609b6 {
+  background: var(--white-100);
+  color: var(--black-200)
+}
+
+.rockstargames-sites-red-dead-redemption-2edb30438bec02a28ec1d06d071bcf836.rockstargames-sites-red-dead-redemption-2c1ac4227ecc3c60c4a623f13dd4609b6 img {
+  filter: invert()
+}
+
+.rockstargames-sites-red-dead-redemption-2ea8cf4797c830e5b5dad68b2ec814e67 {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px
+}
+
+.rockstargames-sites-red-dead-redemption-2d5c408a8b618087ef4bb452f96526b2b {
+  align-content: center;
+  background: #000;
+  display: grid;
+  height: 100%;
+  justify-items: center;
+  padding: .5rem;
+  grid-gap: 1rem;
+  grid-auto-rows: max-content
+}
+
+.rockstargames-sites-red-dead-redemption-2d5c408a8b618087ef4bb452f96526b2b,
+.rockstargames-sites-red-dead-redemption-2d5c408a8b618087ef4bb452f96526b2b h1 {
+  color: #fff
+}
+
+.rockstargames-sites-red-dead-redemption-2c3e95c84902dd75b827d3c95532e22dc {
+  --font-family-body: "Chalet";
+  --font-family-h: "ChaletComprime";
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --letter-spacing-body: 0;
+  --letter-spacing-h: 0;
+  --line-height-sm: 1;
+  --line-height-md: 1.1;
+  --line-height-lg: 1.6;
+  --black-200: #000;
+  --black-100: #121212;
+  --black-65: hsla(0, 0%, 7%, .65);
+  --black-40: hsla(0, 0%, 7%, .4);
+  --black-15: hsla(0, 0%, 7%, .15);
+  --text-dark: #2d2d2d;
+  --border-color: #2d2d2d;
+  --white-100: #fff;
+  --white-65: hsla(0, 0%, 100%, .65);
+  --white-40: hsla(0, 0%, 100%, .4);
+  --white-15: hsla(0, 0%, 100%, .15);
+  --text-light: #e8e8e8;
+  --focusring-blue: blue;
+  --red: #e03232;
+  --circoloco-red: #eb1818;
+  --rockstar-gold: #fcaf17;
+  --playstation-blue: #00439c;
+  --microsoft-green: #387a26;
+  --pc-legacy: #b2b2b2;
+  --pc-enhanced: #beb279;
+  --color-h: var(--white-100);
+  --color-body: var(--text-light);
+  --green-light: #c1f7bd;
+  --green-dark: #81da85;
+  --scroll-thumb-color: #7d7d7d;
+  --scroll-track-color: transparent;
+  --max-width-sm: 640px;
+  --max-width-md: 1088px;
+  --max-width-lg: 1920px;
+  --max-width-xl: 2560px;
+  --spacing-xxs: 0.25rem;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 8rem;
+  --grid-gap-xxs: var(--spacing-xxs);
+  --grid-gap-xs: var(--spacing-xs);
+  --grid-gap-sm: var(--spacing-sm);
+  --grid-gap-md: var(--spacing-md);
+  --grid-gap-lg: var(--spacing-lg);
+  --grid-gap-xl: var(--spacing-xl);
+  --padding-xxs: var(--spacing-xxs);
+  --padding-xs: var(--spacing-xs);
+  --padding-sm: var(--spacing-sm);
+  --padding-md: var(--spacing-md);
+  --padding-lg: var(--spacing-lg);
+  --padding-xl: var(--spacing-xl);
+  --margin-xxs: var(--spacing-xxs);
+  --margin-xs: var(--spacing-xs);
+  --margin-sm: var(--spacing-sm);
+  --margin-md: var(--spacing-md);
+  --margin-lg: var(--spacing-lg);
+  --margin-xl: var(--spacing-xl);
+  --border-radius-xs: 2px;
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 16px;
+  --gradient-overlay-bottom: linear-gradient(180.08deg, transparent 25%, rgba(0, 0, 0, .5) 65%, rgba(0, 0, 0, .6));
+  --gradient-overlay-right: linear-gradient(270deg, rgba(0, 0, 0, .9), transparent);
+  --promo-banner-z-index: 11500;
+  background-color: var(--black-200);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-sm);
+  color: #000;
+  display: grid;
+  font-size: 10px;
+  margin: 0 auto;
+  max-width: 270px;
+  padding: var(--padding-sm)
+}
+
+@media (min-width:2560px) {
+  .rockstargames-sites-red-dead-redemption-2c3e95c84902dd75b827d3c95532e22dc {
+    --max-width-md: 1440px
+  }
+}
+
+@media (max-width:767px) {
+  .rockstargames-sites-red-dead-redemption-2c3e95c84902dd75b827d3c95532e22dc {
+    --spacing-lg: 2rem;
+    --spacing-xl: 4rem
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2c3e95c84902dd75b827d3c95532e22dc.rockstargames-sites-red-dead-redemption-2b98963abfc7a63295bebc6c6d15b391a {
+  grid-template-columns: 72px 1fr;
+  grid-gap: var(--grid-gap-sm)
+}
+
+.rockstargames-sites-red-dead-redemption-2c3e95c84902dd75b827d3c95532e22dc.rockstargames-sites-red-dead-redemption-2b6339480b5fd086fb0c025930bfb7dcd {
+  max-width: calc(72px + (2 * var(--padding-sm)))
+}
+
+.rockstargames-sites-red-dead-redemption-2c3e95c84902dd75b827d3c95532e22dc hr {
+  background: var(--white-15);
+  border: 0;
+  height: 1px;
+  margin: 0;
+  width: 100%
+}
+
+.rockstargames-sites-red-dead-redemption-2c3e95c84902dd75b827d3c95532e22dc img {
+  width: 100%
+}
+
+.rockstargames-sites-red-dead-redemption-2babdd6ae2ff83f380dadc6982effa011 {
+  grid-gap: var(--grid-gap-xs);
+  align-content: center;
+  display: grid
+}
+
+.rockstargames-sites-red-dead-redemption-2babdd6ae2ff83f380dadc6982effa011 p {
+  color: var(--white-100) !important;
+  font-family: var(--font-family-body) !important;
+  font-size: 10px !important;
+  line-height: 1.25 !important
+}
+
+.rockstargames-sites-red-dead-redemption-2babdd6ae2ff83f380dadc6982effa011 p:empty {
+  display: none !important
+}
+
+.rockstargames-sites-red-dead-redemption-2babdd6ae2ff83f380dadc6982effa011 a {
+  font-weight: 700
+}
+
+.rockstargames-sites-red-dead-redemption-2d471258073cde8ed809858a6001f6e75 img {
+  width: 100%
+}
+
+form.rockstargames-sites-red-dead-redemption-2c9f16d9c2f4a943ae8f1f900f31b5f4b {
+  background: #111;
+  border-radius: var(--image-rounding-static-xs);
+  display: flex;
+  position: relative
+}
+
+@media (min-width:768px) {
+  form.rockstargames-sites-red-dead-redemption-2c9f16d9c2f4a943ae8f1f900f31b5f4b {
+    min-width: 20rem
+  }
+}
+
+form.rockstargames-sites-red-dead-redemption-2c9f16d9c2f4a943ae8f1f900f31b5f4b input {
+  background-color: initial;
+  border: none;
+  color: #fff;
+  outline: none;
+  padding: var(--grid-gap-static-sm);
+  width: 100%
+}
+
+form.rockstargames-sites-red-dead-redemption-2c9f16d9c2f4a943ae8f1f900f31b5f4b input::-webkit-input-placeholder {
+  color: hsla(0, 0%, 100%, .65);
+  font-style: normal;
+  letter-spacing: var(--letter-spacing-std)
+}
+
+form.rockstargames-sites-red-dead-redemption-2c9f16d9c2f4a943ae8f1f900f31b5f4b input:-moz-placeholder,
+form.rockstargames-sites-red-dead-redemption-2c9f16d9c2f4a943ae8f1f900f31b5f4b input::-moz-placeholder {
+  color: hsla(0, 0%, 100%, .65);
+  font-style: normal;
+  letter-spacing: var(--letter-spacing-std)
+}
+
+form.rockstargames-sites-red-dead-redemption-2c9f16d9c2f4a943ae8f1f900f31b5f4b input:-ms-input-placeholder {
+  color: hsla(0, 0%, 100%, .65);
+  font-style: normal;
+  letter-spacing: var(--letter-spacing-std)
+}
+
+form.rockstargames-sites-red-dead-redemption-2c9f16d9c2f4a943ae8f1f900f31b5f4b button {
+  background-color: initial;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724%27 height=%2724%27 fill=%27none%27%3E%3Cpath stroke=%27%23fff%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%272%27 d=%27M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16m9.998 2-4.35-4.35%27/%3E%3C/svg%3E");
+  background-origin: content-box;
+  background-position: 0;
+  background-repeat: no-repeat;
+  border: none;
+  content: "";
+  cursor: pointer;
+  margin: 0 0 0 var(--grid-gap-static-sm);
+  width: 36px
+}
+
+.rockstargames-sites-red-dead-redemption-2d0635ab9b06be2bdd2967e49648afe4e {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-flow: column;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: var(--max-width);
+  padding: var(--padding-top-bottom) var(--padding-sides);
+  width: 100%
+}
+
+.rockstargames-sites-red-dead-redemption-2d0635ab9b06be2bdd2967e49648afe4e>:not(:last-child) {
+  margin-bottom: var(--padding-top-bottom)
+}
+
+.rockstargames-sites-red-dead-redemption-2d0635ab9b06be2bdd2967e49648afe4e a {
+  background: transparent;
+  padding: 0;
+  position: relative;
+  z-index: 1
+}
+
+@media (min-width:0px) {
+
+  .rockstargames-sites-red-dead-redemption-2d0635ab9b06be2bdd2967e49648afe4e a,
+  .rockstargames-sites-red-dead-redemption-2d0635ab9b06be2bdd2967e49648afe4e a:before {
+    transition: all .2s ease
+  }
+
+  .rockstargames-sites-red-dead-redemption-2d0635ab9b06be2bdd2967e49648afe4e a:before {
+    background: var(--body-color);
+    border-radius: .25rem;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: -.1rem;
+    position: absolute;
+    width: calc(100% + .2rem);
+    z-index: -1
+  }
+
+  .rockstargames-sites-red-dead-redemption-2d0635ab9b06be2bdd2967e49648afe4e a:hover {
+    color: #161616
+  }
+
+  .rockstargames-sites-red-dead-redemption-2d0635ab9b06be2bdd2967e49648afe4e a:hover:before {
+    height: 100%;
+    left: -.25rem;
+    width: calc(100% + .5rem)
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2d0635ab9b06be2bdd2967e49648afe4e a img {
+  display: block
+}
+
+.rockstargames-sites-red-dead-redemption-2d0635ab9b06be2bdd2967e49648afe4e form {
+  border-top: 1px solid gray;
+  max-width: 450px;
+  width: 100%
+}
+
+.rockstargames-sites-red-dead-redemption-2ddcf01978552641193d1f1cea24a8ff2 {
+  align-items: center;
+  background: var(--white-15);
+  border: none;
+  border-radius: 100px;
+  color: var(--white-100);
+  cursor: pointer;
+  display: flex;
+  font-family: var(--font-family-body);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  justify-content: center;
+  line-height: var(--rem-125);
+  min-width: var(--rem-6);
+  padding: var(--padding-xs) var(--padding-sm);
+  text-align: center;
+  transition: background-color .3s ease-in-out
+}
+
+.rockstargames-sites-red-dead-redemption-2ddcf01978552641193d1f1cea24a8ff2 img {
+  height: var(--nav-icon-size);
+  margin-left: var(--grid-gap-xs);
+  transition: filter .3s ease-in-out;
+  width: var(--nav-icon-size)
+}
+
+.rockstargames-sites-red-dead-redemption-2ddcf01978552641193d1f1cea24a8ff2:focus,
+.rockstargames-sites-red-dead-redemption-2ddcf01978552641193d1f1cea24a8ff2:hover {
+  background-color: var(--white-40);
+  outline: none
+}
+
+.rockstargames-sites-red-dead-redemption-2ddcf01978552641193d1f1cea24a8ff2.rockstargames-sites-red-dead-redemption-2b7e4538a7398234dfd125cdc21b9bf22 {
+  background: var(--white-100);
+  color: var(--black-200)
+}
+
+.rockstargames-sites-red-dead-redemption-2ddcf01978552641193d1f1cea24a8ff2.rockstargames-sites-red-dead-redemption-2b7e4538a7398234dfd125cdc21b9bf22 img {
+  filter: invert()
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 {
+  --font-family-body: "Chalet";
+  --font-family-h: "ChaletComprime";
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --letter-spacing-body: 0;
+  --letter-spacing-h: 0;
+  --line-height-sm: 1;
+  --line-height-md: 1.1;
+  --line-height-lg: 1.6;
+  --black-200: #000;
+  --black-100: #121212;
+  --black-65: hsla(0, 0%, 7%, .65);
+  --black-40: hsla(0, 0%, 7%, .4);
+  --black-15: hsla(0, 0%, 7%, .15);
+  --text-dark: #2d2d2d;
+  --border-color: #2d2d2d;
+  --white-100: #fff;
+  --white-65: hsla(0, 0%, 100%, .65);
+  --white-40: hsla(0, 0%, 100%, .4);
+  --white-15: hsla(0, 0%, 100%, .15);
+  --text-light: #e8e8e8;
+  --focusring-blue: blue;
+  --red: #e03232;
+  --circoloco-red: #eb1818;
+  --rockstar-gold: #fcaf17;
+  --playstation-blue: #00439c;
+  --microsoft-green: #387a26;
+  --pc-legacy: #b2b2b2;
+  --pc-enhanced: #beb279;
+  --color-h: var(--white-100);
+  --color-body: var(--text-light);
+  --green-light: #c1f7bd;
+  --green-dark: #81da85;
+  --scroll-thumb-color: #7d7d7d;
+  --scroll-track-color: transparent;
+  --max-width-sm: 640px;
+  --max-width-md: 1088px;
+  --max-width-lg: 1920px;
+  --max-width-xl: 2560px;
+  --spacing-xxs: 0.25rem;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 8rem;
+  --grid-gap-xxs: var(--spacing-xxs);
+  --grid-gap-xs: var(--spacing-xs);
+  --grid-gap-sm: var(--spacing-sm);
+  --grid-gap-md: var(--spacing-md);
+  --grid-gap-lg: var(--spacing-lg);
+  --grid-gap-xl: var(--spacing-xl);
+  --padding-xxs: var(--spacing-xxs);
+  --padding-xs: var(--spacing-xs);
+  --padding-sm: var(--spacing-sm);
+  --padding-md: var(--spacing-md);
+  --padding-lg: var(--spacing-lg);
+  --padding-xl: var(--spacing-xl);
+  --margin-xxs: var(--spacing-xxs);
+  --margin-xs: var(--spacing-xs);
+  --margin-sm: var(--spacing-sm);
+  --margin-md: var(--spacing-md);
+  --margin-lg: var(--spacing-lg);
+  --margin-xl: var(--spacing-xl);
+  --border-radius-xs: 2px;
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 16px;
+  --gradient-overlay-bottom: linear-gradient(180.08deg, transparent 25%, rgba(0, 0, 0, .5) 65%, rgba(0, 0, 0, .6));
+  --gradient-overlay-right: linear-gradient(270deg, rgba(0, 0, 0, .9), transparent);
+  --promo-banner-z-index: 11500;
+  --accessible-red: #e34545;
+  align-items: center;
+  background-attachment: fixed;
+  background-color: #000;
+  background-size: contain;
+  flex-flow: column wrap !important;
+  margin: 20px auto;
+  width: 100%
+}
+
+@media (min-width:2560px) {
+  .rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 {
+    --max-width-md: 1440px
+  }
+}
+
+@media (max-width:767px) {
+  .rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 {
+    --spacing-lg: 2rem;
+    --spacing-xl: 4rem
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2cec0b5926683cb3da35407a12634ca49 {
+  margin-bottom: 40px;
+  max-width: 600px;
+  width: 100%
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2b91265926dd573bb91f6f224bbd4dab8 {
+  font-size: 55px;
+  margin-bottom: 25px
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .H1,
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .H2,
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .H3,
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .H4,
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .H5,
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 h1,
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 h2,
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 h3,
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 h4,
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 h5,
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 p {
+  font-family: var(--font-family-h);
+  text-transform: none
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 div {
+  align-items: center;
+  flex-flow: column wrap !important;
+  width: 100%
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 p {
+  margin: 0
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .H1,
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 h1 {
+  font-size: calc(var(--font-size-7) * var(--header-multiplier))
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .H2,
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 h2 {
+  font-size: 38px
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .H3,
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 h3 {
+  font-size: 26px
+}
+
+@media (min-width:1024px) {
+
+  .rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .H3,
+  .rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 h3 {
+    font-size: 32px
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .H4,
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 h4 {
+  font-size: calc(var(--font-size-4) * var(--header-multiplier));
+  margin-bottom: 4px
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .H5,
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 h5 {
+  font-size: calc(var(--font-size-3) * var(--header-multiplier));
+  margin-bottom: 4px
+}
+
+@media (max-width:1023px) {
+
+  .rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .H1,
+  .rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .H2,
+  .rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .H3 {
+    text-align: center
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2f9d5865f4fe4249cd287582f795266ee {
+  color: var(--accessible-red);
+  margin-bottom: 20px;
+  text-align: center
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2f9d5865f4fe4249cd287582f795266ee.rockstargames-sites-red-dead-redemption-2b2bd55cb257b91ee619393b505146d49 {
+  margin-bottom: 10px;
+  text-transform: capitalize
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2f9d5865f4fe4249cd287582f795266ee.rockstargames-sites-red-dead-redemption-2f8cd0b09671179d211115fb5f6b918af {
+  color: var(--white);
+  font-size: calc(var(--font-size-8) * 1.5)
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2f9d5865f4fe4249cd287582f795266ee.rockstargames-sites-red-dead-redemption-2f603c52e91e5070d269b73d623f8b8b3 {
+  color: var(--accessible-red);
+  font-size: calc(var(--font-size-3) * var(--header-multiplier));
+  margin-bottom: 0
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2b6818997e26d453623a91a3aa39cb3e6 {
+  margin-bottom: 25px
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2b6818997e26d453623a91a3aa39cb3e6 div {
+  margin: auto
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2f0979823f97527ed1c0b92049dd7350a {
+  flex-flow: row wrap !important;
+  max-width: 1024px;
+  padding: 0 10px;
+  width: 100%
+}
+
+@media (max-width:767px) {
+  .rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2f0979823f97527ed1c0b92049dd7350a {
+    flex-flow: column !important
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .one-per-row-then-two-per-row {
+  flex-flow: row wrap !important;
+  max-width: 1024px;
+  padding: 0 10px;
+  width: 100%
+}
+
+@media (max-width:767px) {
+  .rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .one-per-row-then-two-per-row {
+    flex-flow: column !important
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .one-per-row-then-two-per-row p {
+  flex-basis: 50%
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .one-per-row-then-two-per-row p:nth-of-type(2n) {
+  padding-right: 35px;
+  text-align: right
+}
+
+@media (max-width:767px) {
+  .rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .one-per-row-then-two-per-row p:nth-of-type(2n) {
+    padding-right: 0
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .one-per-row-then-two-per-row p:nth-of-type(odd) {
+  padding-left: 35px
+}
+
+@media (max-width:767px) {
+  .rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .one-per-row-then-two-per-row p:nth-of-type(odd) {
+    padding-left: 0
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .one-per-row-then-two-per-row p:first-child {
+  flex-basis: 100%;
+  flex-flow: column wrap !important;
+  padding-left: 0;
+  text-align: center
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .one-per-row-then-three-per-row {
+  flex-flow: row wrap !important;
+  max-width: 1024px;
+  padding: 0 10px;
+  width: 100%
+}
+
+@media (max-width:767px) {
+  .rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .one-per-row-then-three-per-row {
+    flex-flow: column !important
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .one-per-row-then-three-per-row p {
+  flex-basis: 33.3%
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .one-per-row-then-three-per-row p:nth-of-type(3n+2) {
+  text-align: right
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .one-per-row-then-three-per-row p:nth-of-type(3n+3) {
+  text-align: center
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .one-per-row-then-three-per-row p:first-child {
+  flex-basis: 100%;
+  flex-flow: column wrap !important;
+  padding-left: 0;
+  text-align: center
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .one-per-row-then-three-per-row-then-one-per-row {
+  flex-flow: row wrap !important;
+  justify-content: flex-start;
+  max-width: 1024px;
+  padding: 0 10px;
+  width: 100%
+}
+
+@media (max-width:767px) {
+  .rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .one-per-row-then-three-per-row-then-one-per-row {
+    flex-flow: column !important
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .one-per-row-then-three-per-row-then-one-per-row p {
+  flex-basis: 33.3%
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .one-per-row-then-three-per-row-then-one-per-row p:nth-of-type(3n+2) {
+  text-align: right
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .one-per-row-then-three-per-row-then-one-per-row p:nth-of-type(3n+3) {
+  text-align: center
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .one-per-row-then-three-per-row-then-one-per-row p:first-child {
+  flex-basis: 100%;
+  text-align: center
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .one-per-row-then-three-per-row-then-one-per-row p:last-child {
+  flex-basis: 100%;
+  text-align: center
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .two-per-row {
+  flex-flow: row wrap !important;
+  max-width: 1024px;
+  padding: 0 10px;
+  width: 100%
+}
+
+@media (max-width:767px) {
+  .rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .two-per-row {
+    flex-flow: column !important
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .two-per-row p {
+  flex-basis: 50%
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .two-per-row p:nth-of-type(odd) {
+  padding-right: 35px;
+  text-align: right
+}
+
+@media (max-width:767px) {
+  .rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .two-per-row p:nth-of-type(odd) {
+    padding-right: 0
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .two-per-row p:nth-of-type(2n) {
+  padding-left: 35px
+}
+
+@media (max-width:767px) {
+  .rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .two-per-row p:nth-of-type(2n) {
+    padding-left: 0
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .two-per-row-then-one-per-row {
+  flex-flow: row wrap !important;
+  margin-top: 10px;
+  max-width: 1024px;
+  padding: 0 10px;
+  width: 100%
+}
+
+@media (max-width:767px) {
+  .rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .two-per-row-then-one-per-row {
+    flex-flow: column !important
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .two-per-row-then-one-per-row p {
+  flex-basis: 50%
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .two-per-row-then-one-per-row p:nth-of-type(odd) {
+  padding-right: 35px;
+  text-align: right
+}
+
+@media (max-width:767px) {
+  .rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .two-per-row-then-one-per-row p:nth-of-type(odd) {
+    padding-right: 0
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .two-per-row-then-one-per-row p:nth-of-type(2n) {
+  padding-left: 35px
+}
+
+@media (max-width:767px) {
+  .rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .two-per-row-then-one-per-row p:nth-of-type(2n) {
+    padding-left: 0
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .two-per-row-then-one-per-row p:last-child {
+  flex-basis: 100%;
+  padding: 0 !important;
+  text-align: center
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .two-per-row-then-three-per-row {
+  flex-flow: row wrap !important;
+  max-width: 1024px;
+  padding: 0 10px;
+  width: 100%
+}
+
+@media (max-width:767px) {
+  .rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .two-per-row-then-three-per-row {
+    flex-flow: column !important
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .two-per-row-then-three-per-row p {
+  flex-basis: 33.3%
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .two-per-row-then-three-per-row p:nth-of-type(3n+3) {
+  text-align: right
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .two-per-row-then-three-per-row p:nth-of-type(3n+4) {
+  text-align: center
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .two-per-row-then-three-per-row p:first-child {
+  flex-basis: 50%;
+  padding-right: 35px;
+  text-align: right
+}
+
+@media (max-width:767px) {
+  .rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .two-per-row-then-three-per-row p:first-child {
+    padding-right: 0
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .two-per-row-then-three-per-row p:nth-child(2) {
+  flex-basis: 50%;
+  padding-left: 35px;
+  text-align: left
+}
+
+@media (max-width:767px) {
+  .rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .two-per-row-then-three-per-row p:nth-child(2) {
+    padding-left: 0
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .three-per-row {
+  flex-flow: row wrap !important;
+  justify-content: flex-start;
+  max-width: 1024px;
+  padding: 0 10px;
+  width: 100%
+}
+
+@media (max-width:767px) {
+  .rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .three-per-row {
+    flex-flow: column !important
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .three-per-row p {
+  flex-basis: 33.3%
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .three-per-row p:nth-of-type(3n+1) {
+  text-align: right
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .three-per-row p:nth-of-type(3n+2) {
+  text-align: center
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .three-per-row-then-one-per-row {
+  flex-flow: row wrap !important;
+  justify-content: flex-start;
+  margin-top: 10px;
+  max-width: 1024px;
+  padding: 0 10px;
+  width: 100%
+}
+
+@media (max-width:767px) {
+  .rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .three-per-row-then-one-per-row {
+    flex-flow: column !important
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .three-per-row-then-one-per-row p {
+  flex-basis: 33.3%
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .three-per-row-then-one-per-row p:nth-of-type(3n+1) {
+  text-align: right
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .three-per-row-then-one-per-row p:nth-of-type(3n+2) {
+  text-align: center
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .three-per-row-then-one-per-row p:last-child {
+  flex-basis: 100%;
+  padding: 0 !important;
+  text-align: center
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .three-per-row-then-two-per-row {
+  flex-flow: row wrap !important;
+  justify-content: flex-start;
+  max-width: 1024px;
+  padding: 0 10px;
+  width: 100%
+}
+
+@media (max-width:767px) {
+  .rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .three-per-row-then-two-per-row {
+    flex-flow: column !important
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .three-per-row-then-two-per-row p {
+  flex-basis: 33.3%
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .three-per-row-then-two-per-row p:nth-of-type(3n+1) {
+  text-align: right
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .three-per-row-then-two-per-row p:nth-of-type(3n+2) {
+  text-align: center
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .three-per-row-then-two-per-row p:nth-last-child(2) {
+  flex-basis: 50%;
+  padding-right: 35px;
+  text-align: right
+}
+
+@media (max-width:767px) {
+  .rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .three-per-row-then-two-per-row p:nth-last-child(2) {
+    padding-right: 0
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .three-per-row-then-two-per-row p:last-child {
+  flex-basis: 50%;
+  padding-left: 35px;
+  text-align: left
+}
+
+@media (max-width:767px) {
+  .rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .three-per-row-then-two-per-row p:last-child {
+    padding-left: 0
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .three-per-row-then-adding-space-in-between-the-last-two-names {
+  flex-flow: row wrap !important;
+  justify-content: space-between;
+  max-width: 1024px;
+  padding: 0 10px;
+  width: 100%
+}
+
+@media (max-width:767px) {
+  .rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .three-per-row-then-adding-space-in-between-the-last-two-names {
+    flex-flow: column !important
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .three-per-row-then-adding-space-in-between-the-last-two-names p {
+  flex-basis: 33.3%
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .three-per-row-then-adding-space-in-between-the-last-two-names p:nth-of-type(3n+1) {
+  text-align: right
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .three-per-row-then-adding-space-in-between-the-last-two-names p:nth-of-type(3n+2) {
+  text-align: center
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .three-per-row-then-adding-space-in-between-the-last-two-names p:last-child {
+  text-align: left
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 {
+  margin-top: 60px;
+  text-align: center
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a {
+  margin: 0 auto 60px;
+  max-width: 920px
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a h2 {
+  margin-bottom: 30px
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a h3 {
+  margin-bottom: 15px
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a span {
+  text-transform: none
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a span.rockstargames-sites-red-dead-redemption-2fd22955e755421f94638bc9e7f777d60:not(:last-of-type):after {
+  content: ",";
+  display: inline;
+  margin-right: 5px
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a .rockstargames-sites-red-dead-redemption-2d7509c7508404b06c295ad4db5c3fb2e {
+  margin-bottom: 40px
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a .rockstargames-sites-red-dead-redemption-2c1b7775e9be1f2a765e4bc5feb7874c8>span {
+  display: block
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a .rockstargames-sites-red-dead-redemption-2c1b7775e9be1f2a765e4bc5feb7874c8>span:after {
+  content: none !important
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a.rockstargames-sites-red-dead-redemption-2e53df96334423343f2ae6486d50fd23d .rockstargames-sites-red-dead-redemption-2d60e96ce7e8a4d212729c46f5bad5acd {
+  margin-bottom: 40px
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a.rockstargames-sites-red-dead-redemption-2c18946cacd415e1ebeda9a307b6d2214 {
+  max-width: 100%
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a.rockstargames-sites-red-dead-redemption-2b691ed8529cd4b2bc258ec357e3d4009 .rockstargames-sites-red-dead-redemption-2c46292e264d4badc282181792a78956e {
+  align-items: baseline
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a.rockstargames-sites-red-dead-redemption-2d2b249acf921bbe171a796b6a96e786c .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a:nth-of-type(4) span {
+  display: block
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a.rockstargames-sites-red-dead-redemption-2d2b249acf921bbe171a796b6a96e786c .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a:nth-of-type(4) span:after {
+  content: none
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a.rockstargames-sites-red-dead-redemption-2f117ccdce52a63a83d790ff7835f3f14 .rockstargames-sites-red-dead-redemption-2f11338e9982d77a3995ac294a160c633 {
+  margin-bottom: 30px
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a.rockstargames-sites-red-dead-redemption-2f117ccdce52a63a83d790ff7835f3f14 .rockstargames-sites-red-dead-redemption-2f11338e9982d77a3995ac294a160c633 p {
+  text-transform: none
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a .rockstargames-sites-red-dead-redemption-2a6dbf6ddfec2a5cc078fa1a448a0e51e,
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a .rockstargames-sites-red-dead-redemption-2e8641c4c949c4816d3863fbc65d00627 {
+  margin-bottom: 30px
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a .rockstargames-sites-red-dead-redemption-2a6dbf6ddfec2a5cc078fa1a448a0e51e p,
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a .rockstargames-sites-red-dead-redemption-2e8641c4c949c4816d3863fbc65d00627 p {
+  text-transform: none
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a .rockstargames-sites-red-dead-redemption-2cac789887cab6be2860a88c9dcf502e3 {
+  display: flex;
+  flex-flow: row wrap !important;
+  margin: auto;
+  max-width: 1216px;
+  padding: 0 10px;
+  text-transform: none;
+  width: 100%
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a .rockstargames-sites-red-dead-redemption-2cac789887cab6be2860a88c9dcf502e3>:nth-of-type(3n+1) {
+  flex-basis: 31%;
+  text-align: left
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a .rockstargames-sites-red-dead-redemption-2cac789887cab6be2860a88c9dcf502e3>:nth-of-type(3n+2) {
+  flex-basis: 38%;
+  text-align: center
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a .rockstargames-sites-red-dead-redemption-2cac789887cab6be2860a88c9dcf502e3>:nth-of-type(3n+3) {
+  flex-basis: 31%;
+  text-align: right
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a .rockstargames-sites-red-dead-redemption-2cac789887cab6be2860a88c9dcf502e3.rockstargames-sites-red-dead-redemption-2f12c5971751f89cf33e8875e7b95582e>:nth-of-type(3n+1),
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a .rockstargames-sites-red-dead-redemption-2cac789887cab6be2860a88c9dcf502e3.rockstargames-sites-red-dead-redemption-2f12c5971751f89cf33e8875e7b95582e>:nth-of-type(3n+2),
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a .rockstargames-sites-red-dead-redemption-2cac789887cab6be2860a88c9dcf502e3.rockstargames-sites-red-dead-redemption-2f12c5971751f89cf33e8875e7b95582e>:nth-of-type(3n+3) {
+  flex-basis: unset
+}
+
+@media (min-width:0px) and (max-width:767px) {
+  .rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a .rockstargames-sites-red-dead-redemption-2cac789887cab6be2860a88c9dcf502e3 {
+    font-size: 16px
+  }
+
+  .rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a .rockstargames-sites-red-dead-redemption-2cac789887cab6be2860a88c9dcf502e3>:nth-of-type(3n+2) {
+    font-size: 12px
+  }
+}
+
+@media (min-width:768px) and (max-width:1023px) {
+  .rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a .rockstargames-sites-red-dead-redemption-2cac789887cab6be2860a88c9dcf502e3 {
+    font-size: 21px
+  }
+
+  .rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a .rockstargames-sites-red-dead-redemption-2cac789887cab6be2860a88c9dcf502e3>:nth-of-type(3n+2) {
+    font-size: 14px
+  }
+}
+
+@media (min-width:1024px) and (max-width:1279px) {
+  .rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a .rockstargames-sites-red-dead-redemption-2cac789887cab6be2860a88c9dcf502e3 {
+    font-size: 28px
+  }
+
+  .rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a .rockstargames-sites-red-dead-redemption-2cac789887cab6be2860a88c9dcf502e3>:nth-of-type(3n+2) {
+    font-size: 19px
+  }
+}
+
+@media (min-width:1280px) and (max-width:1919px) {
+
+  .rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a .rockstargames-sites-red-dead-redemption-2cac789887cab6be2860a88c9dcf502e3,
+  .rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a .rockstargames-sites-red-dead-redemption-2cac789887cab6be2860a88c9dcf502e3>:nth-of-type(3n+2) {
+    font-size: 22px
+  }
+}
+
+@media (max-width:1279px) {
+  .rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a .rockstargames-sites-red-dead-redemption-2cac789887cab6be2860a88c9dcf502e3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 10px
+  }
+
+  .rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a .rockstargames-sites-red-dead-redemption-2cac789887cab6be2860a88c9dcf502e3>:nth-of-type(3n+1) {
+    grid-column: 1/2;
+    grid-row: 1/2
+  }
+
+  .rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a .rockstargames-sites-red-dead-redemption-2cac789887cab6be2860a88c9dcf502e3>:nth-of-type(3n+2) {
+    color: var(--accessible-red);
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: left
+  }
+
+  .rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a .rockstargames-sites-red-dead-redemption-2cac789887cab6be2860a88c9dcf502e3>:nth-of-type(3n+3) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: right
+  }
+
+  .rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a .rockstargames-sites-red-dead-redemption-2cac789887cab6be2860a88c9dcf502e3 .rockstargames-sites-red-dead-redemption-2b89d2fb07dfc56f63e5690c4daadff69 {
+    display: none
+  }
+}
+
+@media (min-width:1280px) {
+  .rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a .rockstargames-sites-red-dead-redemption-2cac789887cab6be2860a88c9dcf502e3 {
+    padding: 0
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a .rockstargames-sites-red-dead-redemption-2c81eabb301ce71fac565ecc9835ba1a7 {
+  flex-flow: row wrap !important;
+  justify-content: flex-start;
+  padding: 0 10px;
+  width: 100%
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a .rockstargames-sites-red-dead-redemption-2c81eabb301ce71fac565ecc9835ba1a7>* {
+  flex-basis: 50%
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a .rockstargames-sites-red-dead-redemption-2c81eabb301ce71fac565ecc9835ba1a7>:nth-of-type(odd) {
+  text-align: left
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a .rockstargames-sites-red-dead-redemption-2c81eabb301ce71fac565ecc9835ba1a7>:nth-of-type(2n+2) {
+  text-align: right
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a .rockstargames-sites-red-dead-redemption-2c81eabb301ce71fac565ecc9835ba1a7.rockstargames-sites-red-dead-redemption-2b495adb5262f3a84392dd7db3150a9c4 {
+  justify-content: space-between
+}
+
+.rockstargames-sites-red-dead-redemption-2dfd41a1a8c89f06465c06a6dfa9e9f90 .rockstargames-sites-red-dead-redemption-2d66a697e0b67cc5ae179659e5b5c6e17 .rockstargames-sites-red-dead-redemption-2b6dc7546dd9479e194296bd34576652a .rockstargames-sites-red-dead-redemption-2c81eabb301ce71fac565ecc9835ba1a7.rockstargames-sites-red-dead-redemption-2b495adb5262f3a84392dd7db3150a9c4>.rockstargames-sites-red-dead-redemption-2d7509c7508404b06c295ad4db5c3fb2e {
+  margin-bottom: 0;
+  text-align: center
+}
+
+.rockstargames-sites-red-dead-redemption-2c3f7cb4c4ea2baab490fd945f6ec7227 {
+  display: grid;
+  grid-gap: 4rem;
+  padding: var(--padding-sides);
+  width: 100%
+}
+
+.rockstargames-sites-red-dead-redemption-2c3f7cb4c4ea2baab490fd945f6ec7227 section {
+  display: grid;
+  grid-gap: 2rem;
+  text-align: center
+}
+
+.rockstargames-sites-red-dead-redemption-2bfb7620d665adcc04194f3d8b33930b6 {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(1, 1fr)
+}
+
+@media (min-width:768px) {
+  .rockstargames-sites-red-dead-redemption-2bfb7620d665adcc04194f3d8b33930b6 {
+    grid-template-columns: repeat(3, 1fr)
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2e7a8720eaa3e46e272672e70017b086c {
+  grid-template-columns: repeat(3, 1fr)
+}
+
+@media (min-width:768px) {
+  .rockstargames-sites-red-dead-redemption-2e7a8720eaa3e46e272672e70017b086c {
+    grid-template-columns: repeat(4, 1fr)
+  }
+}
+
+@media (min-width:1024px) {
+  .rockstargames-sites-red-dead-redemption-2e7a8720eaa3e46e272672e70017b086c {
+    grid-template-columns: repeat(5, 1fr)
+  }
+}
+
+@media (min-width:1920px) {
+  .rockstargames-sites-red-dead-redemption-2e7a8720eaa3e46e272672e70017b086c {
+    grid-template-columns: repeat(6, 1fr)
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2e5b4f30409a976db03106d4310c3ab78,
+.rockstargames-sites-red-dead-redemption-2ecf45ff00967a15d9620f28c32652e2e {
+  display: grid;
+  grid-gap: .5rem
+}
+
+.rockstargames-sites-red-dead-redemption-2ecf45ff00967a15d9620f28c32652e2e {
+  grid-auto-flow: column;
+  text-align: center
+}
+
+.rockstargames-sites-red-dead-redemption-2ecf45ff00967a15d9620f28c32652e2e a {
+  background: #000;
+  border: 1px solid #c00;
+  color: #c00;
+  font-size: 60%;
+  padding: .25rem;
+  text-transform: uppercase
+}
+
+.rockstargames-sites-red-dead-redemption-2ecf45ff00967a15d9620f28c32652e2e a:hover {
+  background: #c00;
+  color: #000
+}
+
+.rockstargames-sites-red-dead-redemption-2d9c8bc0c12a1850cb9bc0695c23d43e0 {
+  margin: 0 auto;
+  max-width: 1280px
+}
+
+.rockstargames-sites-red-dead-redemption-2d79d59d583aaf35d2f49cced21db3756 {
+  display: grid;
+  grid-gap: 2rem;
+  text-align: left
+}
+
+@media (min-width:1024px) {
+  .rockstargames-sites-red-dead-redemption-2d79d59d583aaf35d2f49cced21db3756 {
+    grid-template-columns: 350px 1fr
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2d78b4aec63f2952a75e34545934c4254 {
+  aspect-ratio: 1;
+  background: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/eddae2c60d38ca928a68ae420729a43a.png) no-repeat top/contain
+}
+
+.rockstargames-sites-red-dead-redemption-2e4ccd37eba62b35df9c55d8c07a94f25 {
+  display: grid;
+  grid-gap: 1rem;
+  align-content: flex-start
+}
+
+.rockstargames-sites-red-dead-redemption-2c5147142c75f423f6573394b278515d3 {
+  display: grid;
+  grid-gap: .5rem;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr)
+}
+
+.rockstargames-sites-red-dead-redemption-2c23a4665e92c160055ba168adb1ca7e4 {
+  display: grid;
+  grid-gap: .5rem
+}
+
+.rockstargames-sites-red-dead-redemption-2a702d69c2562e1995de6a9095a1e5ed1 {
+  aspect-ratio: 2.97959184;
+  background: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/4f3b5db2bdb935c6a56e101f636c6d14.png) no-repeat 50%/contain
+}
+
+.rockstargames-sites-red-dead-redemption-2a83af22d830d22e04b0d4b8a0b454fa0 {
+  aspect-ratio: 2.975;
+  background: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/97a8e8eca17bce914a4b0c5c6dc07bf0.svg) no-repeat 50%/contain
+}
+
+.rockstargames-sites-red-dead-redemption-2ce9841d86921e070ca37290adfb9e3ff {
+  aspect-ratio: 3.375;
+  background: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/8a442c2f454827d3321b594677917ea2.svg) no-repeat 50%/contain
+}
+
+.rockstargames-sites-red-dead-redemption-2d3bf0643a3c6ceb93b29bf0f88194d6b {
+  font-size: 50%;
+  grid-column: 1/-1
+}
+
+.rockstargames-sites-red-dead-redemption-2cf8b7f4f3125e47e506ee1990189ba19 {
+  align-content: center;
+  display: grid;
+  margin: 0 auto;
+  min-height: calc(100vh - var(--header-height) - var(--game-header-height));
+  padding: var(--padding-sides);
+  grid-gap: 1rem;
+  justify-items: center;
+  max-width: 1200px;
+  text-align: center
+}
+
+.rockstargames-sites-red-dead-redemption-2cf8b7f4f3125e47e506ee1990189ba19.rockstargames-sites-red-dead-redemption-2d0c19136f1e50edf7950b684fc000432 {
+  min-height: auto
+}
+
+.rockstargames-sites-red-dead-redemption-2d3da8a08722dba83ff131e587ea52471 {
+  background: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/d7eb22f11094bfec5856e1538f31f922.svg) no-repeat bottom/contain;
+  height: 20px;
+  padding-top: 5rem;
+  width: 20px
+}
+
+.rockstargames-sites-red-dead-redemption-2d35e52b4474996747ecdb0c309d74ef5 {
+  display: grid;
+  grid-gap: 1rem
+}
+
+.rockstargames-sites-red-dead-redemption-2d35e52b4474996747ecdb0c309d74ef5 :empty {
+  display: none
+}
+
+.rockstargames-sites-red-dead-redemption-2ca50e0753615639d58299fdc918cf681 {
+  display: grid;
+  justify-items: center;
+  padding: 0 var(--padding-sides);
+  width: 100%;
+  grid-gap: 4rem;
+  background: #000
+}
+
+.rockstargames-sites-red-dead-redemption-2ca50e0753615639d58299fdc918cf681 a {
+  text-decoration: underline
+}
+
+.rockstargames-sites-red-dead-redemption-2ca50e0753615639d58299fdc918cf681 a:hover {
+  color: #c00
+}
+
+.rockstargames-sites-red-dead-redemption-2cda92db8d24673ab5ea9d66dfe7a0876 {
+  padding: 0 var(--padding-sides)
+}
+
+.rockstargames-sites-red-dead-redemption-2e723737d2cc8bfce3f280611e3929422,
+.rockstargames-sites-red-dead-redemption-2cda92db8d24673ab5ea9d66dfe7a0876 {
+  display: grid;
+  width: 100%;
+  grid-gap: 1rem
+}
+
+.rockstargames-sites-red-dead-redemption-2c9cf3f819a41f1f47c33df86f4fc40b7 {
+  aspect-ratio: 16/9;
+  background: var(--img-postcard) no-repeat center /contain
+}
+
+.rockstargames-sites-red-dead-redemption-2f3aed8e51b6a8022442042b6c3a92231 {
+  background: var(--img-map) no-repeat center /cover;
+  display: grid;
+  padding: var(--padding-sides);
+  grid-gap: 2rem;
+  align-items: center
+}
+
+@media (min-width:1024px) {
+  .rockstargames-sites-red-dead-redemption-2f3aed8e51b6a8022442042b6c3a92231 {
+    grid-template-columns: repeat(2, 1fr)
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2ec2e7d873ed89660b97b433a5e7168d1 {
+  background: var(--img-logo) no-repeat right /contain;
+  background-position: 50%;
+  min-height: 150px
+}
+
+@media (min-width:1024px) {
+  .rockstargames-sites-red-dead-redemption-2ec2e7d873ed89660b97b433a5e7168d1 {
+    background-position: 100%
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2de3d85ed3993e6b0987402a98a401858 {
+  display: grid
+}
+
+@media (min-width:1024px) {
+  .rockstargames-sites-red-dead-redemption-2de3d85ed3993e6b0987402a98a401858 {
+    grid-template-columns: repeat(2, 1fr)
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2de3d85ed3993e6b0987402a98a401858 a {
+  aspect-ratio: 16/9
+}
+
+.rockstargames-sites-red-dead-redemption-2de3d85ed3993e6b0987402a98a401858 a:first-child {
+  background: var(--sc-1-thumb) no-repeat right /contain
+}
+
+.rockstargames-sites-red-dead-redemption-2de3d85ed3993e6b0987402a98a401858 a:nth-child(2) {
+  background: var(--sc-2-thumb) no-repeat right /contain
+}
+
+.rockstargames-sites-red-dead-redemption-2ab7ed3ff0fb21d911f16f8854c054977 {
+  display: grid;
+  grid-gap: 1rem;
+  justify-items: center;
+  width: 100%
+}
+
+.rockstargames-sites-red-dead-redemption-2ab7ed3ff0fb21d911f16f8854c054977 iframe {
+  border: 0;
+  border-radius: 10px;
+  height: 250px;
+  max-width: 700px;
+  width: 100%
+}
+
+.rockstargames-sites-red-dead-redemption-2d63f31efe588557c0b0aafeb61653100 {
+  aspect-ratio: 1;
+  border: 1px solid #3d3b3b;
+  justify-self: right;
+  max-width: 600px;
+  width: 100%
+}
+
+.rockstargames-sites-red-dead-redemption-2da1e7ec7946fbe31bec44486dca1a507 {
+  align-items: flex-start;
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr)
+}
+
+.rockstargames-sites-red-dead-redemption-2b90dd03a09ef0319be31c437915093e7 {
+  display: grid;
+  margin: 0;
+  grid-gap: .5rem
+}
+
+@media (min-width:1024px) {
+  .rockstargames-sites-red-dead-redemption-2b90dd03a09ef0319be31c437915093e7 {
+    grid-template-columns: repeat(2, 1fr)
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2b90dd03a09ef0319be31c437915093e7 dl {
+  align-content: flex-start;
+  display: grid;
+  line-height: 1.3;
+  margin: 0
+}
+
+.rockstargames-sites-red-dead-redemption-2b90dd03a09ef0319be31c437915093e7 dd {
+  font-size: 70%;
+  margin: 0
+}
+
+.rockstargames-sites-red-dead-redemption-2c0f2fb917284ee7fa6b992c601d5eef4 {
+  max-width: 1000px;
+  text-align: left
+}
+
+.rockstargames-sites-red-dead-redemption-2a62eddac038efad38d60f590427849b2 {
+  display: grid;
+  grid-gap: 1rem;
+  align-content: flex-start
+}
+
+.rockstargames-sites-red-dead-redemption-2d3fdc02ffc505b3ffc5534e2f2d18cac {
+  display: grid;
+  grid-gap: 1rem;
+  width: 100%
+}
+
+.rockstargames-sites-red-dead-redemption-2d3fdc02ffc505b3ffc5534e2f2d18cac h2 {
+  grid-column: 1/-1;
+  text-align: center
+}
+
+@media (min-width:768px) {
+  .rockstargames-sites-red-dead-redemption-2d3fdc02ffc505b3ffc5534e2f2d18cac {
+    grid-template-columns: repeat(2, 1fr)
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2fadc9b747df102da765e105eef030aa5 {
+  aspect-ratio: 4.62;
+  background: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/3af3ea7c6ee83c6162795857b2a93a84.svg) no-repeat 50%/contain;
+  max-width: 530px;
+  width: 100%
+}
+
+.rockstargames-sites-red-dead-redemption-2c16b17d7d830b2c49f95ba36ed832a04 {
+  display: grid;
+  justify-content: center;
+  width: 100%
+}
+
+.rockstargames-sites-red-dead-redemption-2a01c72210226d1b28e3b87916904fc61 {
+  --font-family-h: Redemption;
+  align-content: space-between;
+  aspect-ratio: 1080/1556;
+  background: var(--mobile) no-repeat center /contain;
+  display: grid;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative
+}
+
+@media (min-width:1024px) {
+  .rockstargames-sites-red-dead-redemption-2a01c72210226d1b28e3b87916904fc61 {
+    aspect-ratio: 1920/1080;
+    background: var(--desktop) no-repeat left bottom /contain, url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/c7183f93924e4730e4e5b0f90cd7b25f.jpg) no-repeat 50% /contain;
+    height: 100vh
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2a01c72210226d1b28e3b87916904fc61 h2 {
+  margin-top: 2rem;
+  padding: 1rem;
+  text-align: right
+}
+
+.rockstargames-sites-red-dead-redemption-2d9a93066ee20652f5ef5268aa4ce2aa5 {
+  background: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/38cf6d10d69560ba676ed4e3ce198253.png) no-repeat 50% 0/cover;
+  display: grid;
+  justify-items: center;
+  padding: 4rem var(--padding-sides) 1rem;
+  text-align: center
+}
+
+.rockstargames-sites-red-dead-redemption-2d9a93066ee20652f5ef5268aa4ce2aa5 p {
+  max-width: 800px
+}
+
+.rockstargames-sites-red-dead-redemption-2fb391750ee98e13562b920ca89cd622d {
+  --header-multiplier: 1.2;
+  justify-self: right;
+  max-width: 700px;
+  padding: 1rem;
+  text-align: right;
+  text-shadow: 2px 2px #000, 0 0 2px #000
+}
+
+.rockstargames-sites-red-dead-redemption-2d2bab84211fa51eba9bd8f41717cb81e img {
+  display: block;
+  width: 100%
+}
+
+.rockstargames-sites-red-dead-redemption-2f4f541905bc306fb6bfdca7a31f44d5a {
+  justify-items: center
+}
+
+.rockstargames-sites-red-dead-redemption-2f4f541905bc306fb6bfdca7a31f44d5a,
+.rockstargames-sites-red-dead-redemption-2e9d94d8e504599d8bed6d535b4d1adf5,
+.rockstargames-sites-red-dead-redemption-2d728d2a0a605bfd49d0669392b9aa3dc {
+  display: grid;
+  grid-gap: 1rem
+}
+
+@media (min-width:1024px) {
+  .rockstargames-sites-red-dead-redemption-2d728d2a0a605bfd49d0669392b9aa3dc {
+    grid-template-columns: repeat(2, 1fr)
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2d728d2a0a605bfd49d0669392b9aa3dc video {
+  width: 100%
+}
+
+.rockstargames-sites-red-dead-redemption-2fc189a70654df67f903d34c1fcdb3423 {
+  aspect-ratio: 16/9;
+  background: var(--bg-img) no-repeat center /100% 100%;
+  transition: background-size .15s ease, box-shadow .15s ease, filter .15s ease
+}
+
+.rockstargames-sites-red-dead-redemption-2fc189a70654df67f903d34c1fcdb3423:hover {
+  background-size: 105% 105%;
+  box-shadow: inset 0 0 2px 2px #c00;
+  filter: sepia(25%)
+}
+
+.rockstargames-sites-red-dead-redemption-2ce0bd9ce1fa6647a6b92c23b43560e7f {
+  display: grid;
+  grid-gap: .25rem;
+  background: #000;
+  width: 100%
+}
+
+@media (min-width:768px) {
+  .rockstargames-sites-red-dead-redemption-2ce0bd9ce1fa6647a6b92c23b43560e7f {
+    grid-template-columns: repeat(2, 1fr)
+  }
+}
+
+@media (min-width:1024px) {
+  .rockstargames-sites-red-dead-redemption-2ce0bd9ce1fa6647a6b92c23b43560e7f {
+    grid-template-columns: repeat(3, 1fr)
+  }
+}
+
+@media (min-width:1920px) {
+  .rockstargames-sites-red-dead-redemption-2ce0bd9ce1fa6647a6b92c23b43560e7f {
+    grid-template-columns: repeat(4, 1fr)
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2df3e1bd6d77b39d3067d5d098d03cff2 img {
+  display: block;
+  width: 100%
+}
+
+.rockstargames-sites-red-dead-redemption-2bf96699adbb2d8f39242c31a50a6b3fb {
+  background: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/62fd25d16605e42ee0b4d78313a91dac.jpg) no-repeat 50%/cover;
+  padding: 2rem
+}
+
+.rockstargames-sites-red-dead-redemption-2bf96699adbb2d8f39242c31a50a6b3fb p {
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center
+}
+
+.rockstargames-sites-red-dead-redemption-2c9555761665559db0a721882e42c4c08 {
+  background: #000;
+  display: grid;
+  grid-gap: 1rem
+}
+
+.rockstargames-sites-red-dead-redemption-2c9555761665559db0a721882e42c4c08 img {
+  display: block;
+  width: 100%
+}
+
+@media (min-width:1024px) {
+  .rockstargames-sites-red-dead-redemption-2c9555761665559db0a721882e42c4c08 {
+    grid-template-columns: repeat(3, 1fr)
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2ddfe088c7a0c684b60d08f4ec532c4ff {
+  --font-family-body: "Chalet";
+  --font-family-h: "ChaletComprime";
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --letter-spacing-body: 0;
+  --letter-spacing-h: 0;
+  --line-height-sm: 1;
+  --line-height-md: 1.1;
+  --line-height-lg: 1.6;
+  --black-200: #000;
+  --black-100: #121212;
+  --black-65: hsla(0, 0%, 7%, .65);
+  --black-40: hsla(0, 0%, 7%, .4);
+  --black-15: hsla(0, 0%, 7%, .15);
+  --text-dark: #2d2d2d;
+  --border-color: #2d2d2d;
+  --white-100: #fff;
+  --white-65: hsla(0, 0%, 100%, .65);
+  --white-40: hsla(0, 0%, 100%, .4);
+  --white-15: hsla(0, 0%, 100%, .15);
+  --text-light: #e8e8e8;
+  --focusring-blue: blue;
+  --red: #e03232;
+  --circoloco-red: #eb1818;
+  --rockstar-gold: #fcaf17;
+  --playstation-blue: #00439c;
+  --microsoft-green: #387a26;
+  --pc-legacy: #b2b2b2;
+  --pc-enhanced: #beb279;
+  --color-h: var(--white-100);
+  --color-body: var(--text-light);
+  --green-light: #c1f7bd;
+  --green-dark: #81da85;
+  --scroll-thumb-color: #7d7d7d;
+  --scroll-track-color: transparent;
+  --max-width-sm: 640px;
+  --max-width-md: 1088px;
+  --max-width-lg: 1920px;
+  --max-width-xl: 2560px;
+  --spacing-xxs: 0.25rem;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 8rem;
+  --grid-gap-xxs: var(--spacing-xxs);
+  --grid-gap-xs: var(--spacing-xs);
+  --grid-gap-sm: var(--spacing-sm);
+  --grid-gap-md: var(--spacing-md);
+  --grid-gap-lg: var(--spacing-lg);
+  --grid-gap-xl: var(--spacing-xl);
+  --padding-xxs: var(--spacing-xxs);
+  --padding-xs: var(--spacing-xs);
+  --padding-sm: var(--spacing-sm);
+  --padding-md: var(--spacing-md);
+  --padding-lg: var(--spacing-lg);
+  --padding-xl: var(--spacing-xl);
+  --margin-xxs: var(--spacing-xxs);
+  --margin-xs: var(--spacing-xs);
+  --margin-sm: var(--spacing-sm);
+  --margin-md: var(--spacing-md);
+  --margin-lg: var(--spacing-lg);
+  --margin-xl: var(--spacing-xl);
+  --border-radius-xs: 2px;
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 16px;
+  --gradient-overlay-bottom: linear-gradient(180.08deg, transparent 25%, rgba(0, 0, 0, .5) 65%, rgba(0, 0, 0, .6));
+  --gradient-overlay-right: linear-gradient(270deg, rgba(0, 0, 0, .9), transparent);
+  --promo-banner-z-index: 11500;
+  display: grid;
+  padding: 1rem;
+  text-align: center;
+  grid-gap: 1rem;
+  transition: color .2s ease
+}
+
+@media (min-width:2560px) {
+  .rockstargames-sites-red-dead-redemption-2ddfe088c7a0c684b60d08f4ec532c4ff {
+    --max-width-md: 1440px
+  }
+}
+
+@media (max-width:767px) {
+  .rockstargames-sites-red-dead-redemption-2ddfe088c7a0c684b60d08f4ec532c4ff {
+    --spacing-lg: 2rem;
+    --spacing-xl: 4rem
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2ddfe088c7a0c684b60d08f4ec532c4ff:hover {
+  --color-h3: #c00
+}
+
+.rockstargames-sites-red-dead-redemption-2ddfe088c7a0c684b60d08f4ec532c4ff:hover .rockstargames-sites-red-dead-redemption-2a08f7ac7eca4463288a478e9b345ebb1 img {
+  filter: sepia(25%);
+  transform: scale(1.1)
+}
+
+.rockstargames-sites-red-dead-redemption-2ddfe088c7a0c684b60d08f4ec532c4ff:focus-visible {
+  border: 1px solid var(--white-100);
+  outline: none
+}
+
+.rockstargames-sites-red-dead-redemption-2ddfe088c7a0c684b60d08f4ec532c4ff h3 {
+  transition: color .2s
+}
+
+.rockstargames-sites-red-dead-redemption-2a08f7ac7eca4463288a478e9b345ebb1 {
+  overflow: hidden;
+  position: relative
+}
+
+.rockstargames-sites-red-dead-redemption-2a08f7ac7eca4463288a478e9b345ebb1 img {
+  transition: all .2s
+}
+
+.rockstargames-sites-red-dead-redemption-2a08f7ac7eca4463288a478e9b345ebb1:before {
+  background: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/17d0e4a9833b67fffd09e8b6e2f920e8.png) no-repeat 50%/cover;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+  z-index: 1
+}
+
+.rockstargames-sites-red-dead-redemption-2ba52be9d6be88f2792eb7551d6e241fb {
+  --font-family-h: Redemption;
+  --line-height-h: 1.5;
+  text-align: center;
+  --header-multiplier: 2.2;
+  background: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/6d6a3fd6982f03567080c68330307882.jpg) repeat-x 50%/cover;
+  margin-bottom: -110px
+}
+
+.rockstargames-sites-red-dead-redemption-2ba52be9d6be88f2792eb7551d6e241fb:before {
+  background: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/6b7f68638dccae82265475555782d725.png) no-repeat 50%/cover
+}
+
+.rockstargames-sites-red-dead-redemption-2ba52be9d6be88f2792eb7551d6e241fb:after,
+.rockstargames-sites-red-dead-redemption-2ba52be9d6be88f2792eb7551d6e241fb:before {
+  content: "";
+  display: block;
+  height: 100px;
+  width: 100%
+}
+
+.rockstargames-sites-red-dead-redemption-2a8c7dabd9e9a889a6cfafa962dab998e {
+  display: grid;
+  padding: 2rem;
+  grid-gap: 4rem;
+  align-items: center;
+  grid-template-columns: 1fr;
+  justify-content: center
+}
+
+@media (min-width:768px) {
+  .rockstargames-sites-red-dead-redemption-2a8c7dabd9e9a889a6cfafa962dab998e {
+    padding: 2rem 4rem
+  }
+}
+
+@media (min-width:1024px) {
+  .rockstargames-sites-red-dead-redemption-2a8c7dabd9e9a889a6cfafa962dab998e {
+    grid-template-columns: minmax(360px, 640px) minmax(400px, 640px)
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2a8c7dabd9e9a889a6cfafa962dab998e img {
+  max-width: 100%
+}
+
+.rockstargames-sites-red-dead-redemption-2ffc8120825207491787e97b42c27e9de {
+  display: grid;
+  grid-gap: 1rem
+}
+
+.rockstargames-sites-red-dead-redemption-2bc25ec64410308d56e4dc097e81fb129 {
+  align-self: center;
+  background: transparent;
+  border: 1px solid var(--color-h);
+  border-radius: .25rem;
+  color: inherit;
+  color: var(--color-h);
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  line-height: 100%;
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  transition: all .2s ease
+}
+
+.rockstargames-sites-red-dead-redemption-2bc25ec64410308d56e4dc097e81fb129:focus,
+.rockstargames-sites-red-dead-redemption-2bc25ec64410308d56e4dc097e81fb129:hover {
+  background: var(--standard-color);
+  border-color: var(--standard-color);
+  color: #161616
+}
+
+.rockstargames-sites-red-dead-redemption-2bc25ec64410308d56e4dc097e81fb129.rockstargames-sites-red-dead-redemption-2a3e6439dcaa4870840298d683db4831c {
+  background: transparent;
+  border: none;
+  font-weight: 400;
+  line-height: unset;
+  outline: none;
+  padding: 0;
+  position: relative;
+  text-transform: none;
+  z-index: 1
+}
+
+@media (min-width:0px) {
+  .rockstargames-sites-red-dead-redemption-2bc25ec64410308d56e4dc097e81fb129.rockstargames-sites-red-dead-redemption-2a3e6439dcaa4870840298d683db4831c {
+    transition: all .2s ease
+  }
+
+  .rockstargames-sites-red-dead-redemption-2bc25ec64410308d56e4dc097e81fb129.rockstargames-sites-red-dead-redemption-2a3e6439dcaa4870840298d683db4831c:before {
+    background: var(--body-color);
+    border-radius: .25rem;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: -.1rem;
+    position: absolute;
+    transition: all .2s ease;
+    width: calc(100% + .2rem);
+    z-index: -1
+  }
+
+  .rockstargames-sites-red-dead-redemption-2bc25ec64410308d56e4dc097e81fb129.rockstargames-sites-red-dead-redemption-2a3e6439dcaa4870840298d683db4831c:hover {
+    color: #161616
+  }
+
+  .rockstargames-sites-red-dead-redemption-2bc25ec64410308d56e4dc097e81fb129.rockstargames-sites-red-dead-redemption-2a3e6439dcaa4870840298d683db4831c:hover:before {
+    height: 100%;
+    left: -.25rem;
+    width: calc(100% + .5rem)
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2bc25ec64410308d56e4dc097e81fb129.rockstargames-sites-red-dead-redemption-2a3e6439dcaa4870840298d683db4831c img {
+  display: block
+}
+
+@media (min-width:0px) {
+  .rockstargames-sites-red-dead-redemption-2bc25ec64410308d56e4dc097e81fb129.rockstargames-sites-red-dead-redemption-2a3e6439dcaa4870840298d683db4831c:before {
+    background: var(--standard-color);
+    height: 4px
+  }
+
+  .rockstargames-sites-red-dead-redemption-2bc25ec64410308d56e4dc097e81fb129.rockstargames-sites-red-dead-redemption-2a3e6439dcaa4870840298d683db4831c:focus:before,
+  .rockstargames-sites-red-dead-redemption-2bc25ec64410308d56e4dc097e81fb129.rockstargames-sites-red-dead-redemption-2a3e6439dcaa4870840298d683db4831c:hover:before {
+    height: 100%;
+    left: -.5rem;
+    width: calc(100% + 1rem)
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2bc25ec64410308d56e4dc097e81fb129[disabled] {
+  opacity: .5
+}
+
+.rockstargames-sites-red-dead-redemption-2b660bb706132d84852c02df01cc6ed5a {
+  color: var(--tag-color, var(--body-color));
+  display: inline-block;
+  font-size: var(--font-size-2);
+  font-weight: 700;
+  line-height: 1.6;
+  padding: 0 .75rem 0 0
+}
+
+.rockstargames-sites-red-dead-redemption-2b394b56c31488c36155ca82090c66e6f {
+  border-radius: var(--image-rounding-dynamic, 0);
+  --image-rounding-dynamic: var(--image-rounding-static-sm);
+  background: var(--card-background-color);
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-flow: column;
+  overflow: hidden;
+  transition: transform .2s ease
+}
+
+.rockstargames-sites-red-dead-redemption-2b394b56c31488c36155ca82090c66e6f .rockstargames-sites-red-dead-redemption-2ea1c51ae745531c2aeabbe3fcf603842 {
+  --grid-gap-dynamic: var(--grid-gap-static-md);
+  display: grid;
+  grid-template-columns: repeat(var(--grid-num-columns, 1), minmax(0, 1fr));
+  grid-template: var(--grid-template-override, auto/repeat(var(--grid-num-columns, 1), minmax(0, 1fr)));
+  grid-gap: var(--grid-gap-dynamic);
+  align-content: var(--grid-align-content);
+  align-items: var(--grid-align-items);
+  align-self: var(--grid-align-self);
+  justify-content: var(--grid-justify-content);
+  justify-items: var(--grid-justify-items);
+  justify-self: var(--grid-justify-self);
+  --grid-gap-dynamic: var(--grid-gap-static-xs);
+  padding: 2rem 1.5rem
+}
+
+.rockstargames-sites-red-dead-redemption-2b394b56c31488c36155ca82090c66e6f .rockstargames-sites-red-dead-redemption-2ea1c51ae745531c2aeabbe3fcf603842 .rockstargames-sites-red-dead-redemption-2f1dfe59c3d981dbe132559620885ecea {
+  --line-height-h: 1.3;
+  color: var(--color-h)
+}
+
+.rockstargames-sites-red-dead-redemption-2b394b56c31488c36155ca82090c66e6f {
+  animation: globalFadeInUp .75s;
+  animation-play-state: paused
+}
+
+.rockstargames-sites-red-dead-redemption-2b394b56c31488c36155ca82090c66e6f:not(.rockstargames-sites-red-dead-redemption-2c06d09374e8b5cc41f1732c691ee8e25):first-child {
+  background: var(--card-background-color);
+  border: none;
+  border-radius: 0;
+  display: grid;
+  grid-template-columns: 100%;
+  justify-content: flex-start;
+  margin-bottom: var(--grid-gap-static-lg);
+  margin-left: calc(var(--padding-sides) * 2 / -2);
+  margin-top: calc(var(--padding-top-bottom) * -1);
+  overflow: hidden;
+  position: relative;
+  width: 100vw
+}
+
+@media (min-width:1125px) {
+  .rockstargames-sites-red-dead-redemption-2b394b56c31488c36155ca82090c66e6f:not(.rockstargames-sites-red-dead-redemption-2c06d09374e8b5cc41f1732c691ee8e25):first-child {
+    grid-template-columns: 70% 1fr
+  }
+}
+
+@media (min-width:1920px) {
+  .rockstargames-sites-red-dead-redemption-2b394b56c31488c36155ca82090c66e6f:not(.rockstargames-sites-red-dead-redemption-2c06d09374e8b5cc41f1732c691ee8e25):first-child {
+    grid-template-columns: 65% 1fr;
+    margin-left: calc(((100vw - var(--max-width-static-lg)) + (var(--padding-sides) * 2)) / -2)
+  }
+}
+
+@media (min-width:2560px) {
+  .rockstargames-sites-red-dead-redemption-2b394b56c31488c36155ca82090c66e6f:not(.rockstargames-sites-red-dead-redemption-2c06d09374e8b5cc41f1732c691ee8e25):first-child {
+    grid-template-columns: 60% 1fr
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2b394b56c31488c36155ca82090c66e6f:not(.rockstargames-sites-red-dead-redemption-2c06d09374e8b5cc41f1732c691ee8e25):first-child .rockstargames-sites-red-dead-redemption-2ca2b587572d3c9a74cfc2fedf400ce8c {
+  --aspect-ratio: 16/9;
+  --aspect-ratio-default: 1;
+  align-items: center;
+  background-size: cover;
+  display: none;
+  position: relative;
+  transition: transform .3s;
+  width: 100%
+}
+
+@media (min-width:1024px) {
+  .rockstargames-sites-red-dead-redemption-2b394b56c31488c36155ca82090c66e6f:not(.rockstargames-sites-red-dead-redemption-2c06d09374e8b5cc41f1732c691ee8e25):first-child .rockstargames-sites-red-dead-redemption-2ca2b587572d3c9a74cfc2fedf400ce8c {
+    --aspect-ratio-default: 16/9
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2b394b56c31488c36155ca82090c66e6f:not(.rockstargames-sites-red-dead-redemption-2c06d09374e8b5cc41f1732c691ee8e25):first-child .rockstargames-sites-red-dead-redemption-2ca2b587572d3c9a74cfc2fedf400ce8c:before {
+  content: "";
+  display: block;
+  height: 0;
+  padding-bottom: calc(100% / calc(var(--aspect-ratio, var(--aspect-ratio-default))));
+  width: 100%
+}
+
+.rockstargames-sites-red-dead-redemption-2b394b56c31488c36155ca82090c66e6f:not(.rockstargames-sites-red-dead-redemption-2c06d09374e8b5cc41f1732c691ee8e25):first-child .rockstargames-sites-red-dead-redemption-2ca2b587572d3c9a74cfc2fedf400ce8c>* {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%
+}
+
+@media (min-width:768px) {
+  .rockstargames-sites-red-dead-redemption-2b394b56c31488c36155ca82090c66e6f:not(.rockstargames-sites-red-dead-redemption-2c06d09374e8b5cc41f1732c691ee8e25):first-child .rockstargames-sites-red-dead-redemption-2ca2b587572d3c9a74cfc2fedf400ce8c {
+    display: block
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2b394b56c31488c36155ca82090c66e6f:not(.rockstargames-sites-red-dead-redemption-2c06d09374e8b5cc41f1732c691ee8e25):first-child .rockstargames-sites-red-dead-redemption-2b3d4a8cfcc371ae39ce6220d009c5954 {
+  --aspect-ratio: 1/1;
+  --aspect-ratio-default: 1;
+  background-size: contain;
+  display: block;
+  position: relative
+}
+
+@media (min-width:1024px) {
+  .rockstargames-sites-red-dead-redemption-2b394b56c31488c36155ca82090c66e6f:not(.rockstargames-sites-red-dead-redemption-2c06d09374e8b5cc41f1732c691ee8e25):first-child .rockstargames-sites-red-dead-redemption-2b3d4a8cfcc371ae39ce6220d009c5954 {
+    --aspect-ratio-default: 16/9
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2b394b56c31488c36155ca82090c66e6f:not(.rockstargames-sites-red-dead-redemption-2c06d09374e8b5cc41f1732c691ee8e25):first-child .rockstargames-sites-red-dead-redemption-2b3d4a8cfcc371ae39ce6220d009c5954:before {
+  content: "";
+  display: block;
+  height: 0;
+  padding-bottom: calc(100% / calc(var(--aspect-ratio, var(--aspect-ratio-default))));
+  width: 100%
+}
+
+.rockstargames-sites-red-dead-redemption-2b394b56c31488c36155ca82090c66e6f:not(.rockstargames-sites-red-dead-redemption-2c06d09374e8b5cc41f1732c691ee8e25):first-child .rockstargames-sites-red-dead-redemption-2b3d4a8cfcc371ae39ce6220d009c5954>* {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%
+}
+
+@media (min-width:768px) {
+  .rockstargames-sites-red-dead-redemption-2b394b56c31488c36155ca82090c66e6f:not(.rockstargames-sites-red-dead-redemption-2c06d09374e8b5cc41f1732c691ee8e25):first-child .rockstargames-sites-red-dead-redemption-2b3d4a8cfcc371ae39ce6220d009c5954 {
+    display: none
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2b394b56c31488c36155ca82090c66e6f:not(.rockstargames-sites-red-dead-redemption-2c06d09374e8b5cc41f1732c691ee8e25):first-child .rockstargames-sites-red-dead-redemption-2ea1c51ae745531c2aeabbe3fcf603842 {
+  display: flex;
+  flex-direction: column;
+  padding: var(--grid-gap-static-lg) var(--grid-gap-static-md)
+}
+
+@media (max-width:1124px) {
+  .rockstargames-sites-red-dead-redemption-2b394b56c31488c36155ca82090c66e6f:not(.rockstargames-sites-red-dead-redemption-2c06d09374e8b5cc41f1732c691ee8e25):first-child .rockstargames-sites-red-dead-redemption-2ea1c51ae745531c2aeabbe3fcf603842 {
+    display: grid;
+    grid-gap: var(--grid-gap-static-xs)
+  }
+}
+
+@media (min-width:1024px) {
+  .rockstargames-sites-red-dead-redemption-2b394b56c31488c36155ca82090c66e6f:not(.rockstargames-sites-red-dead-redemption-2c06d09374e8b5cc41f1732c691ee8e25):first-child .rockstargames-sites-red-dead-redemption-2ea1c51ae745531c2aeabbe3fcf603842 {
+    grid-gap: var(--grid-gap-static-sm);
+    max-width: 1024px
+  }
+}
+
+@media (min-width:1920px) {
+  .rockstargames-sites-red-dead-redemption-2b394b56c31488c36155ca82090c66e6f:not(.rockstargames-sites-red-dead-redemption-2c06d09374e8b5cc41f1732c691ee8e25):first-child .rockstargames-sites-red-dead-redemption-2ea1c51ae745531c2aeabbe3fcf603842 {
+    padding: var(--grid-gap-static-lg)
+  }
+}
+
+@media (min-width:2560px) {
+  .rockstargames-sites-red-dead-redemption-2b394b56c31488c36155ca82090c66e6f:not(.rockstargames-sites-red-dead-redemption-2c06d09374e8b5cc41f1732c691ee8e25):first-child .rockstargames-sites-red-dead-redemption-2ea1c51ae745531c2aeabbe3fcf603842 {
+    padding: var(--grid-gap-static-xl)
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2b394b56c31488c36155ca82090c66e6f:not(.rockstargames-sites-red-dead-redemption-2c06d09374e8b5cc41f1732c691ee8e25):first-child .rockstargames-sites-red-dead-redemption-2ea1c51ae745531c2aeabbe3fcf603842 .rockstargames-sites-red-dead-redemption-2f1dfe59c3d981dbe132559620885ecea {
+  font-size: var(--font-size-5)
+}
+
+@media (min-width:768px) {
+  .rockstargames-sites-red-dead-redemption-2b394b56c31488c36155ca82090c66e6f:not(.rockstargames-sites-red-dead-redemption-2c06d09374e8b5cc41f1732c691ee8e25):first-child .rockstargames-sites-red-dead-redemption-2ea1c51ae745531c2aeabbe3fcf603842 .rockstargames-sites-red-dead-redemption-2f1dfe59c3d981dbe132559620885ecea {
+    font-size: var(--font-size-6)
+  }
+}
+
+@media (min-width:1920px) {
+  .rockstargames-sites-red-dead-redemption-2b394b56c31488c36155ca82090c66e6f:not(.rockstargames-sites-red-dead-redemption-2c06d09374e8b5cc41f1732c691ee8e25):first-child .rockstargames-sites-red-dead-redemption-2ea1c51ae745531c2aeabbe3fcf603842 .rockstargames-sites-red-dead-redemption-2f1dfe59c3d981dbe132559620885ecea {
+    font-size: var(--font-size-7)
+  }
+}
+
+@media (min-width:2560px) {
+  .rockstargames-sites-red-dead-redemption-2b394b56c31488c36155ca82090c66e6f:not(.rockstargames-sites-red-dead-redemption-2c06d09374e8b5cc41f1732c691ee8e25):first-child .rockstargames-sites-red-dead-redemption-2ea1c51ae745531c2aeabbe3fcf603842 .rockstargames-sites-red-dead-redemption-2f1dfe59c3d981dbe132559620885ecea {
+    font-size: var(--font-size-8)
+  }
+
+  .rockstargames-sites-red-dead-redemption-2b394b56c31488c36155ca82090c66e6f:not(.rockstargames-sites-red-dead-redemption-2c06d09374e8b5cc41f1732c691ee8e25):first-child .rockstargames-sites-red-dead-redemption-2ea1c51ae745531c2aeabbe3fcf603842 .rockstargames-sites-red-dead-redemption-2eee9c5d3b714a61ac265369800a6d4e0 div,
+  .rockstargames-sites-red-dead-redemption-2b394b56c31488c36155ca82090c66e6f:not(.rockstargames-sites-red-dead-redemption-2c06d09374e8b5cc41f1732c691ee8e25):first-child .rockstargames-sites-red-dead-redemption-2ea1c51ae745531c2aeabbe3fcf603842 time {
+    font-size: var(--font-size-3) !important
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2b394b56c31488c36155ca82090c66e6f.rockstargames-sites-red-dead-redemption-2a56af3c95449fe8452485dfb6c89fc29 {
+  animation-play-state: running
+}
+
+.rockstargames-sites-red-dead-redemption-2b394b56c31488c36155ca82090c66e6f iframe {
+  pointer-events: none
+}
+
+.rockstargames-sites-red-dead-redemption-2b394b56c31488c36155ca82090c66e6f time {
+  color: var(--tag-color, var(--body-color));
+  font-size: var(--font-size-2);
+  font-weight: 700;
+  font-weight: 400;
+  line-height: 1.6;
+  opacity: .65
+}
+
+.rockstargames-sites-red-dead-redemption-2ea1c51ae745531c2aeabbe3fcf603842 .rockstargames-sites-red-dead-redemption-2eee9c5d3b714a61ac265369800a6d4e0 {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  grid-row-gap: vaR(--grid-gap-static-xs)
+}
+
+.rockstargames-sites-red-dead-redemption-2ea1c51ae745531c2aeabbe3fcf603842 .rockstargames-sites-red-dead-redemption-2f1dfe59c3d981dbe132559620885ecea {
+  font-family: var(--font-family-h)
+}
+
+.rockstargames-sites-red-dead-redemption-2ca2b587572d3c9a74cfc2fedf400ce8c {
+  --aspect-ratio: 1/1;
+  --aspect-ratio-default: 1;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative
+}
+
+@media (min-width:1024px) {
+  .rockstargames-sites-red-dead-redemption-2ca2b587572d3c9a74cfc2fedf400ce8c {
+    --aspect-ratio-default: 16/9
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2ca2b587572d3c9a74cfc2fedf400ce8c:before {
+  content: "";
+  display: block;
+  height: 0;
+  padding-bottom: calc(100% / calc(var(--aspect-ratio, var(--aspect-ratio-default))));
+  width: 100%
+}
+
+.rockstargames-sites-red-dead-redemption-2ca2b587572d3c9a74cfc2fedf400ce8c>* {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%
+}
+
+.rockstargames-sites-red-dead-redemption-2f2d003dd0e6a129a56ea07208548787c {
+  align-items: center;
+  background: var(--white-15);
+  border: none;
+  border-radius: 100px;
+  color: var(--white-100);
+  cursor: pointer;
+  display: flex;
+  font-family: var(--font-family-body);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  justify-content: center;
+  line-height: var(--rem-125);
+  min-width: var(--rem-6);
+  padding: var(--padding-xs) var(--padding-sm);
+  text-align: center;
+  transition: background-color .3s ease-in-out
+}
+
+.rockstargames-sites-red-dead-redemption-2f2d003dd0e6a129a56ea07208548787c img {
+  height: var(--nav-icon-size);
+  margin-left: var(--grid-gap-xs);
+  transition: filter .3s ease-in-out;
+  width: var(--nav-icon-size)
+}
+
+.rockstargames-sites-red-dead-redemption-2f2d003dd0e6a129a56ea07208548787c:focus,
+.rockstargames-sites-red-dead-redemption-2f2d003dd0e6a129a56ea07208548787c:hover {
+  background-color: var(--white-40);
+  outline: none
+}
+
+.rockstargames-sites-red-dead-redemption-2f2d003dd0e6a129a56ea07208548787c.rockstargames-sites-red-dead-redemption-2f94728c4a438800b9abab11a8b3e3c0a {
+  background: var(--white-100);
+  color: var(--black-200)
+}
+
+.rockstargames-sites-red-dead-redemption-2f2d003dd0e6a129a56ea07208548787c.rockstargames-sites-red-dead-redemption-2f94728c4a438800b9abab11a8b3e3c0a img {
+  filter: invert()
+}
+
+.rockstargames-sites-red-dead-redemption-2b8a63bb419c1f2a8f94e099e1e650e48 {
+  --padding-b: var(--grid-gap-static-xl);
+  --max-width-dynamic: var(--max-width-static-xl);
+  --grid-gap-dynamic: 0;
+  margin: 0 auto;
+  max-width: calc(var(--max-width-dynamic, 1000000px) + var(--padding-dynamic, 0px) * 2) !important;
+  width: 100%;
+  --padding-dynamic: var(--padding-static);
+  --padding-dynamic-tb: initial;
+  padding: var(--padding-t, var(--padding-dynamic-tb, 0)) var(--padding-dynamic, 0) var(--padding-b, var(--padding-dynamic-tb, 0)) var(--padding-dynamic, 0);
+  --grid-gap-dynamic: var(--grid-gap-static-md);
+  display: grid;
+  grid-template-columns: repeat(var(--grid-num-columns, 1), minmax(0, 1fr));
+  grid-template: var(--grid-template-override, auto/repeat(var(--grid-num-columns, 1), minmax(0, 1fr)));
+  grid-gap: var(--grid-gap-dynamic);
+  align-content: var(--grid-align-content);
+  align-items: var(--grid-align-items);
+  align-self: var(--grid-align-self);
+  justify-content: var(--grid-justify-content);
+  justify-items: var(--grid-justify-items);
+  justify-self: var(--grid-justify-self)
+}
+
+.rockstargames-sites-red-dead-redemption-2b8a63bb419c1f2a8f94e099e1e650e48 .rockstargames-sites-red-dead-redemption-2cfe09d4dc8447b1e606404300d040e7a {
+  --font-family-body: "Chalet";
+  --font-family-h: "ChaletComprime";
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --letter-spacing-body: 0;
+  --letter-spacing-h: 0;
+  --line-height-sm: 1;
+  --line-height-md: 1.1;
+  --line-height-lg: 1.6;
+  --black-200: #000;
+  --black-100: #121212;
+  --black-65: hsla(0, 0%, 7%, .65);
+  --black-40: hsla(0, 0%, 7%, .4);
+  --black-15: hsla(0, 0%, 7%, .15);
+  --text-dark: #2d2d2d;
+  --border-color: #2d2d2d;
+  --white-100: #fff;
+  --white-65: hsla(0, 0%, 100%, .65);
+  --white-40: hsla(0, 0%, 100%, .4);
+  --white-15: hsla(0, 0%, 100%, .15);
+  --text-light: #e8e8e8;
+  --focusring-blue: blue;
+  --red: #e03232;
+  --circoloco-red: #eb1818;
+  --rockstar-gold: #fcaf17;
+  --playstation-blue: #00439c;
+  --microsoft-green: #387a26;
+  --pc-legacy: #b2b2b2;
+  --pc-enhanced: #beb279;
+  --color-h: var(--white-100);
+  --color-body: var(--text-light);
+  --green-light: #c1f7bd;
+  --green-dark: #81da85;
+  --scroll-thumb-color: #7d7d7d;
+  --scroll-track-color: transparent;
+  --max-width-sm: 640px;
+  --max-width-md: 1088px;
+  --max-width-lg: 1920px;
+  --max-width-xl: 2560px;
+  --spacing-xxs: 0.25rem;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 8rem;
+  --grid-gap-xxs: var(--spacing-xxs);
+  --grid-gap-xs: var(--spacing-xs);
+  --grid-gap-sm: var(--spacing-sm);
+  --grid-gap-md: var(--spacing-md);
+  --grid-gap-lg: var(--spacing-lg);
+  --grid-gap-xl: var(--spacing-xl);
+  --padding-xxs: var(--spacing-xxs);
+  --padding-xs: var(--spacing-xs);
+  --padding-sm: var(--spacing-sm);
+  --padding-md: var(--spacing-md);
+  --padding-lg: var(--spacing-lg);
+  --padding-xl: var(--spacing-xl);
+  --margin-xxs: var(--spacing-xxs);
+  --margin-xs: var(--spacing-xs);
+  --margin-sm: var(--spacing-sm);
+  --margin-md: var(--spacing-md);
+  --margin-lg: var(--spacing-lg);
+  --margin-xl: var(--spacing-xl);
+  --border-radius-xs: 2px;
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 16px;
+  --gradient-overlay-bottom: linear-gradient(180.08deg, transparent 25%, rgba(0, 0, 0, .5) 65%, rgba(0, 0, 0, .6));
+  --gradient-overlay-right: linear-gradient(270deg, rgba(0, 0, 0, .9), transparent);
+  --promo-banner-z-index: 11500;
+  --font-family-h: HelveticaNowDisplayBold;
+  overflow: scroll;
+  padding-bottom: var(--padding-xs);
+  -ms-overflow-style: none;
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: var(--standard-grid-gap);
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  --per-page: 4;
+  grid-auto-columns: calc(100% / var(--per-page) - (var(--per-page) - 1) / var(--per-page) * var(--standard-grid-gap));
+  scrollbar-color: var(--scroll-thumb-color) var(--scroll-track-color);
+  scrollbar-width: auto
+}
+
+@media (min-width:2560px) {
+  .rockstargames-sites-red-dead-redemption-2b8a63bb419c1f2a8f94e099e1e650e48 .rockstargames-sites-red-dead-redemption-2cfe09d4dc8447b1e606404300d040e7a {
+    --max-width-md: 1440px
+  }
+}
+
+@media (max-width:767px) {
+  .rockstargames-sites-red-dead-redemption-2b8a63bb419c1f2a8f94e099e1e650e48 .rockstargames-sites-red-dead-redemption-2cfe09d4dc8447b1e606404300d040e7a {
+    --spacing-lg: 2rem;
+    --spacing-xl: 4rem
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2b8a63bb419c1f2a8f94e099e1e650e48 .rockstargames-sites-red-dead-redemption-2cfe09d4dc8447b1e606404300d040e7a ::-webkit-scrollbar {
+  display: none
+}
+
+.rockstargames-sites-red-dead-redemption-2b8a63bb419c1f2a8f94e099e1e650e48 .rockstargames-sites-red-dead-redemption-2cfe09d4dc8447b1e606404300d040e7a>* {
+  scroll-snap-align: start
+}
+
+@media (max-width:1919px) {
+  .rockstargames-sites-red-dead-redemption-2b8a63bb419c1f2a8f94e099e1e650e48 .rockstargames-sites-red-dead-redemption-2cfe09d4dc8447b1e606404300d040e7a {
+    --per-page: 3
+  }
+}
+
+@media (max-width:1023px) {
+  .rockstargames-sites-red-dead-redemption-2b8a63bb419c1f2a8f94e099e1e650e48 .rockstargames-sites-red-dead-redemption-2cfe09d4dc8447b1e606404300d040e7a {
+    --per-page: 2
+  }
+}
+
+@media (max-width:767px) {
+  .rockstargames-sites-red-dead-redemption-2b8a63bb419c1f2a8f94e099e1e650e48 .rockstargames-sites-red-dead-redemption-2cfe09d4dc8447b1e606404300d040e7a {
+    --per-page: 1
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2b8a63bb419c1f2a8f94e099e1e650e48 .rockstargames-sites-red-dead-redemption-2cfe09d4dc8447b1e606404300d040e7a::-webkit-scrollbar {
+  width: 8px
+}
+
+.rockstargames-sites-red-dead-redemption-2b8a63bb419c1f2a8f94e099e1e650e48 .rockstargames-sites-red-dead-redemption-2cfe09d4dc8447b1e606404300d040e7a::-webkit-scrollbar-track {
+  background: transparent
+}
+
+.rockstargames-sites-red-dead-redemption-2b8a63bb419c1f2a8f94e099e1e650e48 .rockstargames-sites-red-dead-redemption-2cfe09d4dc8447b1e606404300d040e7a::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb-color);
+  border: none;
+  border-radius: 10px
+}
+
+.rockstargames-sites-red-dead-redemption-2b8a63bb419c1f2a8f94e099e1e650e48 h2 {
+  text-align: center
+}
+
+.rockstargames-sites-red-dead-redemption-2d46374473ed68a4121f88b44eba06359 {
+  justify-content: center
+}
+
+.rockstargames-sites-red-dead-redemption-2ea687097d9239d4830bc03090f0116f2 {
+  display: grid;
+  grid-gap: var(--standard-grid-gap);
+  margin-bottom: var(--grid-gap-static-md)
+}
+
+@media (min-width:0px) {
+  .rockstargames-sites-red-dead-redemption-2ea687097d9239d4830bc03090f0116f2 {
+    grid-template-columns: repeat(1, minmax(0, 1fr))
+  }
+}
+
+@media (min-width:768px) {
+  .rockstargames-sites-red-dead-redemption-2ea687097d9239d4830bc03090f0116f2 {
+    grid-template-columns: repeat(4, minmax(0, 1fr))
+  }
+}
+
+@media (min-width:1024px) {
+  .rockstargames-sites-red-dead-redemption-2ea687097d9239d4830bc03090f0116f2 {
+    grid-template-columns: repeat(6, minmax(0, 1fr))
+  }
+}
+
+@media (min-width:0px) {
+  .rockstargames-sites-red-dead-redemption-2ea687097d9239d4830bc03090f0116f2:not(.rockstargames-sites-red-dead-redemption-2d301334a72b626f8cc2f5b9733299e76)>:first-child {
+    grid-column: 1/-1
+  }
+}
+
+@media (min-width:768px) {
+  .rockstargames-sites-red-dead-redemption-2ea687097d9239d4830bc03090f0116f2:not(.rockstargames-sites-red-dead-redemption-2d301334a72b626f8cc2f5b9733299e76)>:first-child {
+    grid-column: 1/-1
+  }
+
+  .rockstargames-sites-red-dead-redemption-2ea687097d9239d4830bc03090f0116f2:not(.rockstargames-sites-red-dead-redemption-2d301334a72b626f8cc2f5b9733299e76)>:nth-child(n+2) {
+    grid-column: span 2
+  }
+}
+
+@media (min-width:1024px) {
+  .rockstargames-sites-red-dead-redemption-2ea687097d9239d4830bc03090f0116f2:not(.rockstargames-sites-red-dead-redemption-2d301334a72b626f8cc2f5b9733299e76)>:first-child {
+    grid-column: 1/-1
+  }
+
+  .rockstargames-sites-red-dead-redemption-2ea687097d9239d4830bc03090f0116f2:not(.rockstargames-sites-red-dead-redemption-2d301334a72b626f8cc2f5b9733299e76)>:nth-child(2),
+  .rockstargames-sites-red-dead-redemption-2ea687097d9239d4830bc03090f0116f2:not(.rockstargames-sites-red-dead-redemption-2d301334a72b626f8cc2f5b9733299e76)>:nth-child(3),
+  .rockstargames-sites-red-dead-redemption-2ea687097d9239d4830bc03090f0116f2:not(.rockstargames-sites-red-dead-redemption-2d301334a72b626f8cc2f5b9733299e76)>:nth-child(n+4) {
+    grid-column: span 2
+  }
+}
+
+@media (min-width:0px) {
+  .rockstargames-sites-red-dead-redemption-2ea687097d9239d4830bc03090f0116f2.rockstargames-sites-red-dead-redemption-2d301334a72b626f8cc2f5b9733299e76>:nth-child(n) {
+    grid-column: span 1
+  }
+}
+
+@media (min-width:768px) {
+  .rockstargames-sites-red-dead-redemption-2ea687097d9239d4830bc03090f0116f2.rockstargames-sites-red-dead-redemption-2d301334a72b626f8cc2f5b9733299e76>:nth-child(n) {
+    grid-column: span 2
+  }
+}
+
+@media (min-width:1024px) {
+  .rockstargames-sites-red-dead-redemption-2ea687097d9239d4830bc03090f0116f2.rockstargames-sites-red-dead-redemption-2d301334a72b626f8cc2f5b9733299e76>:nth-child(n) {
+    grid-column: span 2
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2e125d510192feb4ce2844cb97084b838 {
+  display: block;
+  margin: auto
+}
+
+.rockstargames-sites-red-dead-redemption-2e5e35f1e5bad05ce4a6664a62a5bef9b {
+  display: grid;
+  justify-items: center;
+  padding: var(--padding-sides)
+}
+
+.rockstargames-sites-red-dead-redemption-2dbf0670580dfb688ab859611ba720791 {
+  align-items: center;
+  background: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/4d55662ec489b9607723bd778e384e2b.jpg) repeat 50%/contain fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  padding: 0 var(--padding-sides) var(--padding-sides);
+  width: 100%
+}
+
+.rockstargames-sites-red-dead-redemption-2dbf0670580dfb688ab859611ba720791 a {
+  color: #c00
+}
+
+.rockstargames-sites-red-dead-redemption-2dbf0670580dfb688ab859611ba720791 ul {
+  margin: 0
+}
+
+.rockstargames-sites-red-dead-redemption-2dbf0670580dfb688ab859611ba720791 span {
+  font-weight: 700
+}
+
+.rockstargames-sites-red-dead-redemption-2ec975ef1a4b545a408fd08c76243438b {
+  aspect-ratio: 16/9;
+  height: 800px
+}
+
+.rockstargames-sites-red-dead-redemption-2ec975ef1a4b545a408fd08c76243438b a {
+  color: inherit
+}
+
+.rockstargames-sites-red-dead-redemption-2f55ebf69e0eda488e532b860c4531ab7 {
+  max-width: 800px;
+  text-align: center
+}
+
+.rockstargames-sites-red-dead-redemption-2c13265b1e31cafb853b997fd43480113 {
+  display: grid;
+  grid-gap: .5rem;
+  max-width: 640px
+}
+
+.rockstargames-sites-red-dead-redemption-2f601cd27e88069ef81cda7180abaafab {
+  grid-column: 1/-1;
+  max-width: 100%
+}
+
+.rockstargames-sites-red-dead-redemption-2dda87127480d7a45778d42ff8cdc6907 {
+  font-size: var(--font-size-2);
+  line-height: 1;
+  text-align: center
+}
+
+.rockstargames-sites-red-dead-redemption-2dda87127480d7a45778d42ff8cdc6907:empty {
+  display: none
+}
+
+.rockstargames-sites-red-dead-redemption-2b5bd483ebf811e8c9bb0eb94f95a3c7e {
+  aspect-ratio: 16/9;
+  background: var(--bg-img) no-repeat center /contain
+}
+
+.rockstargames-sites-red-dead-redemption-2a63e4732dd54c8274eaa0a824e4f45cd {
+  display: grid;
+  grid-gap: 2rem;
+  max-width: 1200px
+}
+
+@media (min-width:1024px) {
+  .rockstargames-sites-red-dead-redemption-2a63e4732dd54c8274eaa0a824e4f45cd {
+    grid-template-columns: repeat(2, 1fr)
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2f43589576536ca5a4427e64d7f7690ab {
+  display: grid;
+  grid-column: 1/-1;
+  text-align: center;
+  grid-gap: 1rem
+}
+
+.rockstargames-sites-red-dead-redemption-2a1b0d40e9660ccdf9625886576773883,
+.rockstargames-sites-red-dead-redemption-2d5c335c3e90a72562e0a1c2efa8d2447 {
+  display: grid;
+  text-align: left;
+  grid-gap: 1rem
+}
+
+@media (min-width:1024px) {
+  .rockstargames-sites-red-dead-redemption-2d5c335c3e90a72562e0a1c2efa8d2447 {
+    grid-template-columns: repeat(2, 1fr)
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2b90fe8665328ccab730b1fbd965279ae {
+  background: #000;
+  justify-items: center;
+  width: 100%
+}
+
+.rockstargames-sites-red-dead-redemption-2f500a7943cd5368d1594ca76b844e785,
+.rockstargames-sites-red-dead-redemption-2b90fe8665328ccab730b1fbd965279ae {
+  display: grid;
+  grid-gap: 2rem
+}
+
+.rockstargames-sites-red-dead-redemption-2f500a7943cd5368d1594ca76b844e785 {
+  max-width: 1400px
+}
+
+.rockstargames-sites-red-dead-redemption-2a2968fcc68d483f21b29cde750a1bc9c {
+  display: grid;
+  grid-gap: 2rem
+}
+
+@media (min-width:1024px) {
+  .rockstargames-sites-red-dead-redemption-2a2968fcc68d483f21b29cde750a1bc9c {
+    grid-template-columns: repeat(2, 1fr)
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2dd44b1f9a2d33dd7b1f3fbfacd3947d9 {
+  display: grid;
+  grid-gap: 1rem;
+  text-align: center
+}
+
+.rockstargames-sites-red-dead-redemption-2dd44b1f9a2d33dd7b1f3fbfacd3947d9 h3 {
+  transition: color .3s
+}
+
+.rockstargames-sites-red-dead-redemption-2dd44b1f9a2d33dd7b1f3fbfacd3947d9.rockstargames-sites-red-dead-redemption-2c02e68b9da56ffcbf3774b5cc397b453,
+.rockstargames-sites-red-dead-redemption-2dd44b1f9a2d33dd7b1f3fbfacd3947d9:hover {
+  --color-h3: #c00
+}
+
+.rockstargames-sites-red-dead-redemption-2dd44b1f9a2d33dd7b1f3fbfacd3947d9.rockstargames-sites-red-dead-redemption-2c02e68b9da56ffcbf3774b5cc397b453 .rockstargames-sites-red-dead-redemption-2a9b8aafd3239827934a1ce6329d536ab,
+.rockstargames-sites-red-dead-redemption-2dd44b1f9a2d33dd7b1f3fbfacd3947d9:hover .rockstargames-sites-red-dead-redemption-2a9b8aafd3239827934a1ce6329d536ab {
+  background-size: 105% 105%;
+  box-shadow: inset 0 0 2px 2px #c00;
+  filter: sepia(25%)
+}
+
+.rockstargames-sites-red-dead-redemption-2f98bad72286eb975f9f15759487a7aa0 {
+  display: grid;
+  grid-gap: 1rem;
+  padding: 0 var(--padding-sides)
+}
+
+@media (min-width:1024px) {
+  .rockstargames-sites-red-dead-redemption-2f98bad72286eb975f9f15759487a7aa0 {
+    grid-template-columns: repeat(3, 1fr)
+  }
+}
+
+.rockstargames-sites-red-dead-redemption-2a9b8aafd3239827934a1ce6329d536ab {
+  aspect-ratio: 16/9;
+  background: var(--bg-img) no-repeat center /100% 100%;
+  box-shadow: inset 0 0 0 0 #c00;
+  filter: sepia(0);
+  transition: background-size .15s ease, box-shadow .15s ease, filter .15s ease
+}
+
+@font-face {
+  font-family: Redemption;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/fonts/d83fe1be4c1e7239c409db49a3850103.woff) format("woff")
+}
+
+.rockstargames-sites-red-dead-redemption-2bb2305035c94d96f3ca9d1ae0a2a879b {
+  --standard-color: #c00;
+  --game-base-font: var(--rdr-font-family-std, HapnaSlabSerif);
+  --game-header-family: var(--rdr-font-family-h, RDRLino-Regular);
+  --font-family-h: RDRLino-Regular;
+  --game-header-transform: uppercase;
+  --game-header-weight: 400;
+  --tag-color: #fff;
+  --max-width: 1000px;
+  --body-color: #fff;
+  --padding-top-bottom: var(--padding-sides);
+  --font-weight-h: 100;
+  background-color: var(--background-color, transparent);
+  background: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/ba3f2da77296c0464a6d76cdc33ce645.jpg) no-repeat bottom/cover fixed;
+  display: grid;
+  font-family: var(--rdr-font-family-std)
+}
+
+.rockstargames-sites-red-dead-redemption-2bb2305035c94d96f3ca9d1ae0a2a879b h1,
+.rockstargames-sites-red-dead-redemption-2bb2305035c94d96f3ca9d1ae0a2a879b h1.rockstargames-sites-red-dead-redemption-2dac8786070c0eab72c8c85be2e428e37 {
+  color: var(--color-h-dynamic, var(--color-h1, var(--color-h, inherit)))
+}
+
+.rockstargames-sites-red-dead-redemption-2bb2305035c94d96f3ca9d1ae0a2a879b h2 {
+  color: var(--color-h-dynamic, var(--color-h2, var(--color-h, inherit)))
+}
+
+.rockstargames-sites-red-dead-redemption-2bb2305035c94d96f3ca9d1ae0a2a879b h3 {
+  color: var(--color-h-dynamic, var(--color-h3, var(--color-h, inherit)))
+}
+
+.rockstargames-sites-red-dead-redemption-2bb2305035c94d96f3ca9d1ae0a2a879b h3[data-context=newswire-subtitle] {
+  color: var(--color-subtitle-dynamic, var(--color-h-dynamic, var(--color-h3, var(--color-h, inherit))))
+}
+
+.rockstargames-sites-red-dead-redemption-2bb2305035c94d96f3ca9d1ae0a2a879b h4,
+.rockstargames-sites-red-dead-redemption-2bb2305035c94d96f3ca9d1ae0a2a879b h5,
+.rockstargames-sites-red-dead-redemption-2bb2305035c94d96f3ca9d1ae0a2a879b h6 {
+  color: var(--color-h-dynamic, var(--color-h, inherit))
+}
+
+.rockstargames-sites-red-dead-redemption-2bb2305035c94d96f3ca9d1ae0a2a879b [template=community] {
+  --time-color: var(--body-color, #2d2d2d);
+  --breadcrumb-separator-filter-invert: invert(0)
+}
+
+.rockstargames-sites-red-dead-redemption-2bb2305035c94d96f3ca9d1ae0a2a879b [template=community] main {
+  color: var(--color-h, #161616)
+}
+
+.rockstargames-sites-red-dead-redemption-2bb2305035c94d96f3ca9d1ae0a2a879b [template=community] p {
+  color: var(--body-color, #2d2d2d)
+}
+
+.rockstargames-sites-red-dead-redemption-2d5c29f4bcf686e03d896bfd0fda057ff {
+  --background-color: transparent;
+  --color-h: var(--color-h-dynamic, #fff);
+  align-items: center;
+  background-color: var(--background-color, transparent);
+  color: var(--body-color, #fff);
+  display: flex;
+  justify-content: center;
+  min-height: calc(100vh - var(--header-height) - var(--game-header-height));
+  transition: filter .5s;
+  width: 100vw
+}
+
+.rockstargames-sites-red-dead-redemption-2d5c29f4bcf686e03d896bfd0fda057ff.rockstargames-sites-red-dead-redemption-2d3591d704902be0ca8ebb27b73f95d6c {
+  --blur-because-in-bg: 10px
+}
+
+.rockstargames-sites-red-dead-redemption-2d5c29f4bcf686e03d896bfd0fda057ff h1,
+.rockstargames-sites-red-dead-redemption-2d5c29f4bcf686e03d896bfd0fda057ff h1.rockstargames-sites-red-dead-redemption-2dac8786070c0eab72c8c85be2e428e37 {
+  color: var(--color-h-dynamic, var(--color-h1, var(--color-h, inherit)))
+}
+
+.rockstargames-sites-red-dead-redemption-2d5c29f4bcf686e03d896bfd0fda057ff h2 {
+  color: var(--color-h-dynamic, var(--color-h2, var(--color-h, inherit)))
+}
+
+.rockstargames-sites-red-dead-redemption-2d5c29f4bcf686e03d896bfd0fda057ff h3 {
+  color: var(--color-h-dynamic, var(--color-h3, var(--color-h, inherit)))
+}
+
+.rockstargames-sites-red-dead-redemption-2d5c29f4bcf686e03d896bfd0fda057ff h3[data-context=newswire-subtitle] {
+  color: var(--color-subtitle-dynamic, var(--color-h-dynamic, var(--color-h3, var(--color-h, inherit))))
+}
+
+.rockstargames-sites-red-dead-redemption-2d5c29f4bcf686e03d896bfd0fda057ff h4,
+.rockstargames-sites-red-dead-redemption-2d5c29f4bcf686e03d896bfd0fda057ff h5,
+.rockstargames-sites-red-dead-redemption-2d5c29f4bcf686e03d896bfd0fda057ff h6 {
+  color: var(--color-h-dynamic, var(--color-h, inherit))
+}
+
+.rockstargames-sites-red-dead-redemption-2d5c29f4bcf686e03d896bfd0fda057ff [template=community] {
+  --time-color: var(--body-color, #2d2d2d);
+  --breadcrumb-separator-filter-invert: invert(0)
+}
+
+.rockstargames-sites-red-dead-redemption-2d5c29f4bcf686e03d896bfd0fda057ff [template=community] main {
+  color: var(--color-h, #161616)
+}
+
+.rockstargames-sites-red-dead-redemption-2d5c29f4bcf686e03d896bfd0fda057ff [template=community] p {
+  color: var(--body-color, #2d2d2d)
+}
+
+.rockstargames-sites-red-dead-redemption-2d5c29f4bcf686e03d896bfd0fda057ff.rockstargames-sites-red-dead-redemption-2d3591d704902be0ca8ebb27b73f95d6c {
+  filter: sepia(75%) blur(2px)
+}
+
+.rockstargames-sites-red-dead-redemption-2dda97e7202baf3e0c8e6afd2f9c65cf3 {
+  background: url(https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/06f351497e9f108950621c33b197e304.png) no-repeat top/cover;
+  display: grid;
+  padding-bottom: 20px;
+  padding-top: 50px;
+  grid-gap: 1rem;
+  position: relative;
+  transition: filter .5s;
+  z-index: 0
+}
+
+.rockstargames-sites-red-dead-redemption-2dda97e7202baf3e0c8e6afd2f9c65cf3.rockstargames-sites-red-dead-redemption-2d3591d704902be0ca8ebb27b73f95d6c {
+  filter: sepia(75%) blur(2px)
+}
+
+.rockstargames-sites-red-dead-redemption-2bbe816dd407872cd0a6efd1c12b5fec3 {
+  margin: 0 auto;
+  width: -moz-fit-content;
+  width: fit-content
+}
+
+.rockstargames-sites-red-dead-redemption-2e0b767d9e075303f96b30691d298ee69 {
+  font-family: Redemption, serif;
+  font-size: 2.55556em;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0 auto 5px;
+  text-transform: uppercase;
+  width: -moz-max-content;
+  width: max-content;
+  word-spacing: -.07em
+}
+
+/*# sourceMappingURL=5b398003b12b7b4b1d769281f6b4a7ab.css.map*/
